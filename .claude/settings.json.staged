@@ -1,0 +1,68 @@
+{
+  "_note": "STAGED 2026-09-22. Luke copies this to /Users/triton/PROTEUS/.claude/settings.json in one paste. The agent's own writes to settings.json are refused by the classifier. Rule syntax per reference_claude_code_permission_rule_syntax: double-slash paths are absolute, single-slash are relative to the settings dir.",
+  "permissions": {
+    "allow": [
+      "Read(//Users/triton/PROTEUS/**)",
+      "Edit(//Users/triton/PROTEUS/**)",
+      "Edit(//Users/triton/OBSIDIAN/TRITON-CORE/Proteus/**)",
+      "Bash(python3 /Users/triton/PROTEUS/*)",
+      "Bash(/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/*)",
+      "Bash(/Users/triton/PROTEUS/.venv/bin/python /Users/triton/PROTEUS/*)",
+      "Bash(node /Users/triton/PROTEUS/*)",
+      "Bash(bash /Users/triton/PROTEUS/bin/*)",
+      "Bash(/Users/triton/PROTEUS/bin/*)",
+      "Bash(git -C /Users/triton/PROTEUS status*)",
+      "Bash(git -C /Users/triton/PROTEUS log*)",
+      "Bash(git -C /Users/triton/PROTEUS diff*)",
+      "Bash(git -C /Users/triton/PROTEUS add *)",
+      "Bash(git -C /Users/triton/PROTEUS commit *)",
+      "Bash(git -C /Users/triton/PROTEUS push*)",
+      "Bash(git -C /Users/triton/PROTEUS pull*)",
+      "Bash(gh repo view *)",
+      "Bash(gh api *)",
+      "Bash(curl *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(jq *)",
+      "Bash(date*)",
+      "Bash(find /Users/triton/PROTEUS*)",
+      "Bash(mkdir -p /Users/triton/PROTEUS/*)",
+      "Bash(touch /Users/triton/PROTEUS/*)",
+      "WebFetch",
+      "WebSearch",
+      "mcp__Claude_Browser__navigate",
+      "mcp__Claude_Browser__get_page_text",
+      "mcp__Claude_Browser__read_page",
+      "mcp__Claude_Browser__find",
+      "mcp__Claude_Browser__computer",
+      "mcp__Claude_Browser__tabs_context",
+      "mcp__Claude_Browser__tabs_create",
+      "mcp__Claude_Browser__tabs_close"
+    ],
+    "deny": [
+      "Edit(//Users/triton/OBSIDIAN/TRITON-CORE/Systems/flywheel/**)",
+      "Edit(//Users/triton/OBSIDIAN/XXIX/**)",
+      "Edit(//Users/triton/.openclaw/**)",
+      "Read(//Users/triton/OBSIDIAN/XXIX/**)",
+      "Read(//Users/triton/OBSIDIAN/TRITON-CORE/Systems/flywheel/ledger.yaml)",
+      "Bash(rm -rf *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/triton/PROTEUS/.claude/hooks/unattended-decide.py"
+          }
+        ]
+      }
+    ]
+  }
+}

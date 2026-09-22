@@ -1,0 +1,2 @@
+- [Who Luke is, in five lines](user_luke_five_lines.md) — the only thing Proteus knows about Luke
+- [The charter is the rules](project_charter_is_the_rules.md) — CHARTER.md at the root, nothing from the OBSIDIAN vault binds Proteus

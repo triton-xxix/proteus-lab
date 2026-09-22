@@ -1,0 +1,33 @@
+{
+ "built_at": "2026-09-22 00:26 UTC",
+ "commit": "n/a",
+ "grinder": {
+  "bankroll_start": 100.0,
+  "bankroll_now": 100.0,
+  "opened": 0,
+  "scored_24h": 0,
+  "hit_rate": null,
+  "expectancy": null,
+  "rugged": 0
+ },
+ "pitch": {
+  "committed_before_kickoff": 0,
+  "committed_late_excluded": 0,
+  "scored": 0,
+  "brier_model": null,
+  "brier_market": null,
+  "clv_mean": null,
+  "bankroll_now": 100.0
+ },
+ "field_notes": {
+  "weekly_notes": 0,
+  "things_run": 0,
+  "luke_gates_opened": 0
+ },
+ "spend": {
+  "cap_gbp": 50.0,
+  "months": {
+   "2026-09": 0.0
+  }
+ }
+}

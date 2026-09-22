@@ -1,0 +1,15 @@
+.venv/
+node_modules/
+sandbox/*/
+!sandbox/README.md
+state/unattended-session.json
+state/unattended-session.json.tmp
+state/*.jsonl
+grinder/cache/
+pitch/cache/
+field-notes/staging/
+HALT
+.DS_Store
+*.pyc
+__pycache__/
+.claude/settings.local.json
