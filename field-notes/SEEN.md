@@ -21,6 +21,14 @@ rank-and-rent microsites, "first AI agency client" videos, mailbox warming, Sale
 theme pages and repost farms, Etsy digital products, QuantStone Telegram, ICT mentorship,
 Raja Banks, The5ers, FTMO, AI Automation Agency Ninjas frameworks (21, never started).
 
+## Evaluated by Proteus
+
+- 2026-09-22, watched: ten YouTube "Claude Skills" explainers (6-D3fg3JUL4, FWjDzITF86k, H0vIPXtrlHw,
+  Ik-Xbz2hvM0, O6tQ6V_P8a0, S_oN3vlzpMw, UPMsFibI6qA, bcM9dP_uXJU, mxZqEduwyFk, wc54-e6Dt68).
+  Progressive-disclosure claim verified from the inside. Do not re-watch; only a new claim counts.
+- 2026-09-22, tooling: keyless YouTube pipeline (search HTML scrape, oEmbed, youtube-transcript-api).
+  Works, no key. Skip re-testing.
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the

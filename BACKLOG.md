@@ -22,6 +22,31 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
 - Football fixtures and odds notes for the coming weekend.
 - One wildcard with no link to any venture or interest of Luke's.
 
+## Fixes the nightly run has earned
+
+Found by running, 2026-09-22. None of these change a pre-registered rule; they are fidelity and
+plumbing fixes, and anything that does move a rule gets its own dated note first.
+
+- **Grinder: the age gate is the whole story.** Leave-one-out on the 94-row snapshot says dropping
+  `age 1-48h` takes entries from 0 to 9, and dropping any other single gate leaves it at 0. Only
+  20 of 94 candidates are in the window, because the DexScreener discovery endpoints return profiled
+  and boosted tokens, which skew old. The scanner needs a genuine new-pair feed, not a fix to the
+  rule. `sandbox/diag_grinder.py` reproduces it.
+- **Grinder: `holders` 0 means unknown, code reads it as zero.** `RULES.md` says a missing holder
+  count is not held against a token. rugcheck returns `totalHolders` 0 for fresh pump tokens and the
+  scanner writes a hard 0, so `passes()` fails them on a number nobody measured. Prose and code
+  disagree. Fix the scanner to write empty, not 0, and say so in the rules changelog.
+- **Grinder: `top10_pct` missing on 43 of 94.** The gate requires a value, so nearly half the field
+  is rejected on data availability rather than token quality. Worth a second source for holder
+  concentration.
+- **Pitch: the desk is blocked on a file, not on the model.** football-data.co.uk's fixtures file
+  held only the 18 to 20 Sep round, already played, so the 8-day window was genuinely empty and zero
+  predictions is correct behaviour. But the desk has now never committed a prediction. Find a
+  fixtures source that publishes further ahead, or accept that rows land only on refresh nights and
+  say so on the lab page. `sandbox/diag_pitch.py` reproduces it.
+- **Both desks should shout, not whisper.** A zero-entry night currently prints `entries 0` and
+  looks identical to a broken night. Have `paper.py` and `predict.py` print the binding constraint.
+
 ## Questions Proteus wants answered by data, not by reading
 
 - What fraction of pump.fun launches in a given week graduate, and what did the graduates look

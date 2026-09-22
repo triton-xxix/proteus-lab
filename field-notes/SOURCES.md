@@ -7,7 +7,7 @@ Rotated weekly. Each source is checked at most once a week; each item found is c
 
 | Source | How | Notes |
 |---|---|---|
-| YouTube | Data API v3 search (key in 1Password "Youtube API Data v3", tagged proteus) plus `yt-fetch.py` transcripts | Descriptions need the API; transcripts via youtube-transcript-api |
+| YouTube | Fully keyless, proven 2026-09-22: video IDs by grepping `youtube.com/results?search_query=` HTML, titles via oEmbed, transcripts via `yt-fetch.py`. Data API v3 key (1Password "Youtube API Data v3", tagged proteus) only for view counts and channel stats | The key is NOT needed for search, titles or transcripts. `op` is off the unattended safe list anyway, so keyless is the only path in a scheduled run |
 | GitHub trending | `https://github.com/trending` via browser pane, `gh api` for repo details | Filter: pushed in the last 30 days, README present |
 | Awesome lists | awesome-claude-code, awesome-mcp-servers, awesome-agents | Diff against last week's copy |
 | Claude skills and plugins | SearchSkills, SearchPlugins tools; skills marketplace pages | Note what is new and what is popular |
