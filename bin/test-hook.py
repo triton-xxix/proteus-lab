@@ -48,6 +48,13 @@ CASES = [
     ("Bash", {"command": "rm " + ROOT + "HALT"}, "deny"),
     ("mcp__Claude_Browser__get_page_text", {}, "allow"),
     ("Agent", {"prompt": "x"}, "deny"),
+    # found by the first nightly run, 2026-09-22
+    ("Bash", {"command": "git -C /Users/triton/PROTEUS status --short"}, "allow"),
+    ("Bash", {"command": "git -C /Users/triton/PROTEUS commit -m \"nightly: pre-register for 2026-09-22\n\nGrinder: 94 rows\""}, "allow"),
+    ("Bash", {"command": "grep -ohiE '(token|1024|frontmatter)' /Users/triton/PROTEUS/field-notes/x.md"}, "allow"),
+    ("Bash", {"command": "git -C /Users/triton/PROTEUS commit -m \"$(cat /etc/passwd)\""}, "deny"),
+    ("Bash", {"command": "echo \"a; b\" && rm -rf /"}, "deny"),
+    ("ToolSearch", {"query": "select:WebFetch"}, "allow"),
 ]
 
 

@@ -160,6 +160,31 @@ def apply_rules():
             opened += 1
     save_ledger(ledger)
     print("exits", sum(1 for r in open_rows if r.get("exit_at")), "entries", opened, "open", len([r for r in ledger if not r.get("exit_at")]))
+    if opened == 0:
+        print("binding constraints:", binding(latest_snapshot()))
+
+
+GATES = {
+    "age": lambda r: (fnum(r.get("age_h")) is not None and RULES["age_h_min"] <= fnum(r.get("age_h")) <= RULES["age_h_max"]),
+    "mint_auth": lambda r: (r.get("mint_auth") or "") in ("", "None"),
+    "freeze_auth": lambda r: (r.get("freeze_auth") or "") in ("", "None"),
+    "liq": lambda r: (fnum(r.get("liq_usd")) or 0) >= RULES["liq_usd_min"],
+    "vol_h24": lambda r: (fnum(r.get("vol_h24")) or 0) >= RULES["vol_h24_min"],
+    "vol_h1": lambda r: (fnum(r.get("vol_h1")) or 0) >= RULES["vol_h1_min"],
+    "top10": lambda r: fnum(r.get("top10_pct")) is not None and fnum(r.get("top10_pct")) <= RULES["top10_pct_max"],
+    "holders": lambda r: fnum(r.get("holders")) is None or fnum(r.get("holders")) >= RULES["holders_min"],
+    "lp": lambda r: fnum(r.get("lp_locked_pct")) is None or fnum(r.get("lp_locked_pct")) >= RULES["lp_locked_min"],
+    "price": lambda r: fnum(r.get("price_usd")) not in (None, 0.0),
+}
+
+
+def binding(snap):
+    """Which gate rejects the most candidates. A zero-entry night should say why, not whisper."""
+    if not snap:
+        return "no snapshot rows"
+    fails = {g: sum(1 for r in snap if not f(r)) for g, f in GATES.items()}
+    order = sorted(fails.items(), key=lambda x: -x[1])
+    return "%d candidates; fails per gate: %s" % (len(snap), ", ".join("%s=%d" % kv for kv in order))
 
 
 def score():

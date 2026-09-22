@@ -143,7 +143,9 @@ def snapshot(limit):
                 "sells_h1": ((p.get("txns") or {}).get("h1") or {}).get("sells"),
                 "chg_h1": (p.get("priceChange") or {}).get("h1"), "chg_h24": (p.get("priceChange") or {}).get("h24"),
                 "mint_auth": a["mint_auth"], "freeze_auth": a["freeze_auth"], "top10_pct": top10,
-                "holders": r["holders"], "lp_locked_pct": r["lp_locked"], "rug_score": r["score"],
+                # rugcheck reports totalHolders 0 for fresh tokens it has not indexed; 0 means unknown, so
+            # write empty and let the rules treat it as unmeasured (found by the first nightly run).
+            "holders": (r["holders"] if r["holders"] else None), "lp_locked_pct": r["lp_locked"], "rug_score": r["score"],
                 "rug_risks": ";".join(x for x in r["risks"] if x), "socials": len((p.get("info") or {}).get("socials") or []),
             }
             rows.append(row)

@@ -49,7 +49,7 @@ READ_ROOTS = ("/Users/triton/",)
 
 # Tools that cannot prompt and cannot act outside the session.
 FREE_TOOLS = {"Read", "Glob", "Grep", "TodoWrite", "NotebookRead", "BashOutput", "KillShell", "Skill",
-              "WebFetch", "WebSearch"}
+              "WebFetch", "WebSearch", "ToolSearch", "SearchSkills", "SearchPlugins", "ListSkills"}
 
 # First token of each pipe segment must be one of these.
 SAFE_CMDS = {
@@ -139,16 +139,30 @@ def deny(reason):
 
 
 def _under_root(p):
-    return p.startswith(PROTEUS_ROOT)
+    return p.startswith(PROTEUS_ROOT) or p == PROTEUS_ROOT.rstrip("/")
+
+
+QUOTED = re.compile(r'"(?:[^"\\]|\\.)*"|\'[^\']*\'', re.S)
+
+
+def _mask_quotes(cmd):
+    """Replace the inside of quoted arguments with a neutral token. A commit message containing the
+    word "for", a newline, or a regex with "|" is an argument, not shell syntax (found by the first
+    nightly run, 2026-09-22). Command substitution and backticks inside double quotes still
+    execute, so those are checked on the raw string first."""
+    return QUOTED.sub('"ARG"', cmd)
 
 
 def bash_ok(cmd):
     """Return None if the command is safe to auto-allow, else the reason it is not."""
-    if COMPLEX.search(cmd):
+    if "$(" in cmd or "`" in cmd:
+        return "Command substitution or backticks are not verifiable here, even inside quotes."
+    masked = _mask_quotes(cmd)
+    if COMPLEX.search(masked):
         return "Compound shell (loop, ';', '&&', '$()' or backticks) is not verifiable here."
-    if REDIRECT.search(cmd):
+    if REDIRECT.search(masked):
         return "Shell redirection writes files outside the permission model; use the Write tool."
-    for seg in cmd.split("|"):
+    for seg in masked.split("|"):
         seg = seg.strip()
         if not seg:
             return "Empty pipe segment."
