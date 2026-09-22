@@ -100,4 +100,5 @@ spend). Runs still write their log. Clear with `rm`.
 
 ## Signature
 
-Luke Boyd, date: ____________
+Luke Boyd, date: 22/09/2026
+Signed

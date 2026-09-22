@@ -13,3 +13,5 @@ HALT
 *.pyc
 __pycache__/
 .claude/settings.local.json
+.obsidian/
+.claude/settings.json

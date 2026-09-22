@@ -5,7 +5,7 @@ each). Prepaid balances count when drawn down. Month resets on the 1st. Mirrored
 
 ## Card status
 
-Not yet loaded (2026-09-22). Proteus is on free tiers and existing keys until it names a service.
+Card exists in 1Password as "proteus debit Card", tagged proteus, not yet loaded (2026-09-22). Proteus is on free tiers and existing keys until it names a service.
 
 ## September 2026
 
