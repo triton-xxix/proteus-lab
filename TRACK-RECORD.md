@@ -3,7 +3,7 @@
 Every number here is computed from the committed ledgers by `bin/score.py`, never typed by hand.
 A losing record is published in exactly the same format as a winning one.
 
-Rebuilt 2026-09-22 00:26 UTC at commit n/a.
+Rebuilt 2026-09-22 00:41 UTC at commit 4c385e3.
 
 ## The Grinder (meme-coin paper desk)
 

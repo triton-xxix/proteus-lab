@@ -1,38 +1,39 @@
 # The Pitch: forecast rules (v0, written before the first prediction)
 
-Question under test: does a weekly-refit Dixon-Coles model blended with Elo beat the closing line
-on English football, and if so, where.
+Question under test: does a weekly-refit Dixon-Coles model beat the closing line on English
+football, and if so, where.
 
-## Data
+## Data (keyless, proven 2026-09-22)
 
-- football-data.org free tier: fixtures, results, standings (Premier League, Championship).
-- Understat: expected goals per match for the attack and defence strength priors.
-- The Odds API free tier (500 requests a month): pre-match and closing 1X2 and totals odds.
-  Key exists in 1Password; Luke tags it `proteus`.
+football-data.co.uk: results, expected goals, opening and closing odds for the Premier League (E0)
+and Championship (E1), last three seasons, plus the fixtures file with current average odds. No API
+key, no account. The Odds API key in 1Password stays in reserve for a live closing-line feed.
 
-## Model
+## Model, version 0
 
-Dixon-Coles bivariate Poisson with time decay (half-life 3 months), home advantage, and the
-low-score correction, refit every Sunday on the last 2 seasons plus the current one. Blended 70/30
-with an Elo rating updated per match. Output per fixture: P(home), P(draw), P(away), P(over 2.5).
+Dixon-Coles bivariate Poisson with the low-score correction and exponential time decay (xi 0.0065
+per day), fitted jointly on both divisions so promoted and relegated sides keep their strength. Home
+advantage is one shared parameter. Light L2 shrinkage on attack and defence. Refit before every
+prediction run. Output per fixture: P(home), P(draw), P(away), P(over 2.5).
+
+Version 1 (not claimed yet): Elo blend, expected-goals priors, per-division home advantage.
 
 ## Publication rule
 
-Predictions for the coming week are committed by 23:59 the day before the earliest kickoff. Any
-prediction committed after its kickoff is excluded from scoring automatically (`score.py` compares
-commit time to kickoff).
+A prediction is committed with a UTC timestamp. Any row committed at or after kickoff is marked
+LATE by `score.py` and excluded from every average. The git history is the proof.
 
 ## Scoring
 
-Brier score per prediction and mean, against the market's implied probabilities (overround
-removed proportionally) on the same matches. Closing-line value: the model's probability minus the
-closing implied probability on the side the paper bankroll backed. Calibration in ten bins.
+Brier score on 1X2 per prediction (0 is perfect; a uniform guess scores 0.667 on three outcomes) and
+its mean, beside the market's Brier from the closing average odds with overround removed
+proportionally. Closing-line value on backed sides: model probability minus closing implied
+probability. Calibration in ten bins on the lab page once there are enough rows.
 
 ## Paper bankroll
 
-£100, fractional Kelly at one quarter, backing any side where model probability exceeds the
-closing implied probability by more than 3 points. Flat £2 comparison line beside it. Bookmaker
-odds at the time of commit, not the best available.
+£100, quarter Kelly, backing the 1X2 side where model minus market exceeds 3 points, capped at £10
+a bet, at the fixture file's average odds at commit time. No bet when no side clears the edge.
 
 ## Honesty line
 
