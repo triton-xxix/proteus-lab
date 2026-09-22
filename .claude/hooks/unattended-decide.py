@@ -26,7 +26,6 @@ Test: python3 /Users/triton/PROTEUS/bin/test-hook.py
 """
 import json
 import os
-import re
 import sys
 import time
 
@@ -62,8 +61,9 @@ GIT_READ = ("status", "log", "show", "diff", "rev-parse", "-C", "branch", "remot
 GIT_WRITE = ("add", "commit", "push", "pull", "fetch")
 GH_READ = ("repo", "api", "auth")
 
-COMPLEX = re.compile(r"(;|&&|\|\||\$\(|`|\bfor\b|\bwhile\b|\bdo\b|\bdone\b|\bif\b|\bthen\b|\n)")
-REDIRECT = re.compile(r"(?<![0-9])>>?")
+# Shell syntax is decided by _scan() below, which tracks quote state the way bash does.
+# There is deliberately no regex over the raw command: text inside quotes is an argument,
+# and text outside quotes is syntax, and no pattern can tell those apart reliably.
 
 
 def marker_active(session_id):
@@ -138,35 +138,147 @@ def deny(reason):
                             "note the skip in the run log.]")
 
 
+def _norm(p):
+    """Absolute, '..'-free, symlink-free form of p, or None if p is not an absolute path.
+
+    Relative paths return None on purpose. Resolving them against the cwd would make a
+    bare word like "upstream" look like a path inside the folder whenever the run happens
+    to start there, which would quietly defeat the git remote check.
+    """
+    if not p.startswith("/") and not p.startswith("~"):
+        return None
+    try:
+        return os.path.realpath(os.path.expanduser(p))
+    except Exception:
+        return None
+
+
+def _under(p, root):
+    q = _norm(p)
+    if q is None:
+        return False
+    r = os.path.realpath(root)
+    return q == r or q.startswith(r + os.sep)
+
+
 def _under_root(p):
-    return p.startswith(PROTEUS_ROOT) or p == PROTEUS_ROOT.rstrip("/")
+    """True for the Proteus folder itself and anything inside it.
+
+    Both halves matter. The folder without a trailing slash is what `git -C` is normally
+    given, and '..' has to be resolved before comparing or /Users/triton/PROTEUS/../OBSIDIAN
+    reads as being inside the folder (both found 2026-09-22).
+    """
+    return _under(p, PROTEUS_ROOT)
 
 
-QUOTED = re.compile(r'"(?:[^"\\]|\\.)*"|\'[^\']*\'', re.S)
+def _scan(cmd):
+    """Split a command into pipeline segments of argv tokens, honouring bash quoting rules.
 
+    Returns (segments, None) or (None, reason). Each segment is a list of tokens with quotes
+    removed, so the caller sees the same argv bash would build.
 
-def _mask_quotes(cmd):
-    """Replace the inside of quoted arguments with a neutral token. A commit message containing the
-    word "for", a newline, or a regex with "|" is an argument, not shell syntax (found by the first
-    nightly run, 2026-09-22). Command substitution and backticks inside double quotes still
-    execute, so those are checked on the raw string first."""
-    return QUOTED.sub('"ARG"', cmd)
+    The point is that quoting is tracked character by character rather than pattern-matched.
+    A ';' inside quotes is text; a ';' outside quotes starts a second command; and an escaped
+    \\' is a literal apostrophe that does NOT open a quoted string, which is exactly where a
+    regex over the raw string goes wrong (found 2026-09-22: `echo a\\'b; rm -rf /` was allowed).
+    """
+    segs, words, tok, quote = [], [], None, None
+    i, n = 0, len(cmd)
+
+    def subst_at(j):
+        return cmd[j] == "`" or cmd.startswith("$(", j) or cmd.startswith("${", j)
+
+    while i < n:
+        c = cmd[i]
+
+        if quote == "'":                      # single quotes: everything is literal
+            if c == "'":
+                quote = None
+            else:
+                tok.append(c)
+            i += 1
+            continue
+
+        if quote == '"':                      # double quotes: still expand and substitute
+            if c == "\\" and i + 1 < n and cmd[i + 1] in '"\\$`':
+                tok.append(cmd[i + 1])
+                i += 2
+                continue
+            if c == '"':
+                quote = None
+                i += 1
+                continue
+            if subst_at(i) or c == "$":
+                return None, "Substitution inside double quotes still runs; not verifiable here."
+            tok.append(c)
+            i += 1
+            continue
+
+        # unquoted from here
+        if c == "\\":
+            if i + 1 >= n:
+                return None, "Trailing backslash."
+            tok = tok if tok is not None else []
+            tok.append(cmd[i + 1])
+            i += 2
+            continue
+
+        if c in ("'", '"'):
+            quote = c
+            tok = tok if tok is not None else []
+            i += 1
+            continue
+
+        if subst_at(i) or c == "$":
+            return None, "Command or variable substitution is not verifiable here."
+
+        if c == "|":
+            if cmd.startswith("||", i):
+                return None, "'||' chains two commands and is not verifiable here."
+            if tok is not None:
+                words.append("".join(tok))
+                tok = None
+            segs.append(words)
+            words = []
+            i += 1
+            continue
+
+        if c in ";&":
+            return None, "'%s' outside quotes chains or backgrounds a command." % c
+        if c in "<>":
+            return None, "Shell redirection writes files outside the permission model; use the Write tool."
+        if c in "()":
+            return None, "Subshell grouping is not verifiable here."
+        if c == "\n":
+            return None, "A newline outside quotes starts a second command."
+
+        if c.isspace():
+            if tok is not None:
+                words.append("".join(tok))
+                tok = None
+            i += 1
+            continue
+
+        tok = tok if tok is not None else []
+        tok.append(c)
+        i += 1
+
+    if quote:
+        return None, "Unbalanced quote."
+    if tok is not None:
+        words.append("".join(tok))
+    segs.append(words)
+    return segs, None
 
 
 def bash_ok(cmd):
     """Return None if the command is safe to auto-allow, else the reason it is not."""
-    if "$(" in cmd or "`" in cmd:
-        return "Command substitution or backticks are not verifiable here, even inside quotes."
-    masked = _mask_quotes(cmd)
-    if COMPLEX.search(masked):
-        return "Compound shell (loop, ';', '&&', '$()' or backticks) is not verifiable here."
-    if REDIRECT.search(masked):
-        return "Shell redirection writes files outside the permission model; use the Write tool."
-    for seg in masked.split("|"):
-        seg = seg.strip()
-        if not seg:
+    segs, why = _scan(cmd)
+    if why is not None:
+        return why
+    for parts in segs:
+        if not parts:
             return "Empty pipe segment."
-        parts = seg.split()
         head = parts[0]
         if _under_root(head):
             continue
@@ -227,13 +339,13 @@ def main():
 
     if tool in FREE_TOOLS:
         path = ti.get("file_path") or ti.get("path") or ""
-        if path and not path.startswith(READ_ROOTS):
+        if path and not any(_under(path, r) for r in READ_ROOTS):
             deny("%s outside %s." % (tool, READ_ROOTS[0]))
         decide("allow", "%s is read-only and inside the run's scope." % tool)
 
     if tool in ("Write", "Edit", "MultiEdit", "NotebookEdit"):
         path = ti.get("file_path") or ti.get("notebook_path") or ""
-        if path.startswith(WRITE_ROOTS):
+        if any(_under(path, r) for r in WRITE_ROOTS):
             decide("allow", "Inside the Proteus write roots.")
         deny("%s to %s is outside the Proteus write roots (%s). Proteus writes its own folder and "
              "the vault mirror folder, nothing else." % (tool, path or "(no path)", ", ".join(WRITE_ROOTS)))

@@ -55,6 +55,31 @@ CASES = [
     ("Bash", {"command": "git -C /Users/triton/PROTEUS commit -m \"$(cat /etc/passwd)\""}, "deny"),
     ("Bash", {"command": "echo \"a; b\" && rm -rf /"}, "deny"),
     ("ToolSearch", {"query": "select:WebFetch"}, "allow"),
+    # bypasses in the quote-masking fix, found by probing it 2026-09-22. All six were allowed.
+    # Escaped quotes are literal to bash and do NOT open a quoted string, so a regex that pairs
+    # them up reads the rest of the line as an argument and misses the ';'.
+    ("Bash", {"command": "echo a\\'b; rm -rf /tmp/x\\'c"}, "deny"),
+    ("Bash", {"command": "echo \\'; rm -rf /tmp/y; echo \\'"}, "deny"),
+    # '2>' is redirection too; the old regex only refused '>' when not preceded by a digit.
+    ("Bash", {"command": "curl -s https://example.com 2>/Users/triton/.zshrc"}, "deny"),
+    # '..' has to be resolved before the prefix comparison, or the folder check means nothing.
+    ("Bash", {"command": "git -C /Users/triton/PROTEUS/../OBSIDIAN add -A"}, "deny"),
+    ("Bash", {"command": "mkdir -p /Users/triton/PROTEUS/../../evil"}, "deny"),
+    # KNOWN GAP, pinned here rather than fixed, because closing it is a policy call for Luke and
+    # not a defect. The Read tool is held to READ_ROOTS, but cat/head/tail/grep via Bash are held
+    # to nothing, so Bash can read anything on the disk. Tonight that freedom was used well (the
+    # Field Notes item verified a claim against ~/.claude/skills), which is why it is not simply
+    # clamped to the folder. A deny-list for .ssh/.aws/.gnupg/op config would be the cheap fix.
+    ("Bash", {"command": "cat /Users/triton/PROTEUS/../.ssh/id_rsa"}, "allow"),
+    ("Write", {"file_path": ROOT + "../OBSIDIAN/XXIX/IVY_ROSE/HOME.md"}, "deny"),
+    ("Read", {"file_path": "/Users/triton/../../etc/passwd"}, "deny"),
+    # variable expansion is not verifiable either, quoted or not
+    ("Bash", {"command": "cat $HOME/.ssh/id_rsa"}, "deny"),
+    ("Bash", {"command": "echo \"$HOME\""}, "deny"),
+    # ...but the same characters inside single quotes are just text
+    ("Bash", {"command": "grep -c 'a;b' " + ROOT + "x.md"}, "allow"),
+    ("Bash", {"command": "grep -c 'cost $5 & up' " + ROOT + "x.md"}, "allow"),
+    ("Bash", {"command": "git -C " + ROOT + " commit -m \"fix: for and while, 2>1; done\""}, "allow"),
 ]
 
 
