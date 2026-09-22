@@ -23,7 +23,7 @@ import requests
 ROOT = "/Users/triton/PROTEUS/"
 CACHE = ROOT + "grinder/cache/"
 SNAP_CSV = ROOT + "grinder/SNAPSHOTS.csv"
-UA = {"User-Agent": "proteus-lab/0.1 (+https://github.com/triton-xxix/proteus-lab)"}
+UA = {"User-Agent": "proteus-lab/0.1 (+https://github.com/triton-xxix/proteus-lab)", "Accept": "application/json"}
 RPC = "https://api.mainnet-beta.solana.com"
 SNAP_FIELDS = [
     "ts", "mint", "symbol", "name", "dex", "pair", "pair_created_at", "age_h", "price_usd",
@@ -56,13 +56,68 @@ def rpc(method, params):
         return None
 
 
+GT = "https://api.geckoterminal.com/api/v2/networks/solana/"
+WATCHLIST = CACHE + "watchlist.jsonl"
+WATCH_H = 48
+
+
+def gecko(path):
+    """GeckoTerminal public API, keyless, about 30 calls a minute. Returns base-token mints in order."""
+    d = get(GT + path) or {}
+    out = []
+    for p in d.get("data", []) or []:
+        try:
+            tid = p["relationships"]["base_token"]["data"]["id"]
+            if tid.startswith("solana_"):
+                out.append((tid.split("_", 1)[1], (p.get("attributes") or {}).get("pool_created_at")))
+        except Exception:
+            continue
+    time.sleep(2.1)
+    return out
+
+
+def watchlist_update(new_items):
+    """Append tonight's brand-new pools; return every mint first seen within WATCH_H hours. This is
+    how a pool that is minutes old tonight becomes a 1-to-48h candidate on the next run."""
+    os.makedirs(CACHE, exist_ok=True)
+    now = time.time()
+    seen = {}
+    if os.path.exists(WATCHLIST):
+        for line in open(WATCHLIST):
+            try:
+                e = json.loads(line); seen[e["mint"]] = e["first_seen"]
+            except Exception:
+                continue
+    with open(WATCHLIST, "a") as fh:
+        for mint, created in new_items:
+            if mint in seen:
+                continue
+            seen[mint] = now
+            fh.write(json.dumps({"mint": mint, "first_seen": now, "pool_created_at": created}) + "\n")
+    return [m for m, t in seen.items() if now - t <= WATCH_H * 3600]
+
+
 def discover(limit):
-    """Candidate Solana mints from DexScreener's public discovery endpoints plus rugcheck's feeds."""
+    """Candidate Solana mints. Order matters: GeckoTerminal's active young pools and the watchlist
+    first (the first nightly run showed DexScreener's profile and boost feeds skew old), then
+    DexScreener and rugcheck discovery to fill the remainder."""
     mints = []
 
     def add(addr):
         if addr and addr not in mints:
             mints.append(addr)
+
+    fresh = []
+    for page in (1, 2, 3):
+        fresh += gecko("new_pools?page=%d" % page)
+    for m in watchlist_update(fresh):
+        add(m)
+    for dex in ("pump-fun", "pumpswap"):
+        for page in (1, 2):
+            for m, _ in gecko("dexes/%s/pools?page=%d&sort=h24_tx_count_desc" % (dex, page)):
+                add(m)
+    for m, _ in gecko("trending_pools?page=1"):
+        add(m)
 
     for url in ("https://api.dexscreener.com/token-profiles/latest/v1",
                 "https://api.dexscreener.com/token-boosts/latest/v1",
