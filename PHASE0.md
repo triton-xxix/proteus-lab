@@ -1,46 +1,24 @@
 # Phase 0: Luke's one sitting
 
-The agent's session was refused three actions by the Claude Code classifier (self-modification for
-the permission file, data exfiltration for the public push) even with your approval on record. They
-are yours to run, once, from any terminal. Idempotent.
+Steps 1 to 5 done 2026-09-22 (settings in place, repo public, Pages live at
+https://triton-xxix.github.io/proteus-lab/, charter signed, card in 1Password tagged `proteus`,
+five API items tagged). One step left.
 
-## 1. Permission file (so a scheduled Proteus run can never hang on a prompt)
+## 6. Load the two scheduled runs, from a session opened IN this folder
 
-```bash
-cp /Users/triton/PROTEUS/.claude/settings.json.staged /Users/triton/PROTEUS/.claude/settings.json
+A scheduled task inherits the working folder of the session that creates it. Created from a vault
+session, the runs start in the vault, the Proteus hook never applies, and the first write raises a
+prompt nobody answers (this happened on the first attempt tonight; both tasks were deleted). So:
+
+1. In the Claude desktop app, start a **new session with the folder set to `/Users/triton/PROTEUS`**
+   (not the vault).
+2. Paste this, exactly:
+
+```
+Read scheduled-tasks/proteus-nightly/SKILL.md and scheduled-tasks/proteus-weekly/SKILL.md. Create two scheduled tasks with create_scheduled_task using each file's body (everything below the frontmatter) as the prompt and its description line as the description: taskId proteus-nightly, title "Proteus nightly expedition", cronExpression "15 23 * * *"; taskId proteus-weekly, title "Proteus Sunday Field Notes", cronExpression "0 18 * * 0". Then call run_scheduled_task on proteus-nightly once as the proof run, wait for it, and report whether state/unattended-session.json ended as "closed" and how many denials state/unattended-decisions-<today>.jsonl holds.
 ```
 
-## 2. Public repo and lab page
+3. Confirm in the Scheduled section of the sidebar that both show, then check
+   `/Users/triton/PROTEUS/state/runs/` for the proof run's log.
 
-```bash
-gh repo create proteus-lab --public --description "Proteus: an AI persona that explores instead of executes. Paper desks, public track record, field notes." --source /Users/triton/PROTEUS --remote origin --push
-```
-
-```bash
-gh api -X POST repos/triton-xxix/proteus-lab/pages -f "source[branch]=main" -f "source[path]=/docs"
-```
-
-The lab page then lives at https://triton-xxix.github.io/proteus-lab/ after the first Pages build
-(about a minute).
-
-## 3. Sign the charter
-
-Open `/Users/triton/PROTEUS/CHARTER.md`, read it, put your name and the date at the bottom.
-
-## 4. 1Password
-
-Tag these existing items `proteus` so Proteus may read them at runtime: The Odds API,
-SportsGameOdds API, Youtube API Data v3, Browserless API, Gemini API - Florist Lab. Nothing new to
-create today.
-
-## 5. Card
-
-Load a virtual card with a £50 monthly cap and keep the details to yourself. Proteus names a
-service in Field Notes when a free tier runs out; you enter the card there once.
-
-## 6. In a session with the agent, same sitting
-
-Load the two scheduled tasks from `scheduled-tasks/proteus-nightly/SKILL.md` and
-`scheduled-tasks/proteus-weekly/SKILL.md`, and add the two rows to
-`TRITON-CORE/Systems/automation-registry.md`. Job control needs you present; the agent does the
-typing.
+After that, nothing else needs you until Sunday's email.
