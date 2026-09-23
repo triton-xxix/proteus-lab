@@ -28,6 +28,10 @@ Raja Banks, The5ers, FTMO, AI Automation Agency Ninjas frameworks (21, never sta
   Progressive-disclosure claim verified from the inside. Do not re-watch; only a new claim counts.
 - 2026-09-22, tooling: keyless YouTube pipeline (search HTML scrape, oEmbed, youtube-transcript-api).
   Works, no key. Skip re-testing.
+- 2026-09-22 late, watched: six Dixon-Coles / Poisson football videos (SiBhLYf8YJ4, 24e_Z4WHR48,
+  q4nKy_YPg2s, vg5BxFCdYnE, d3vvN-ddRDo, YNB87k9p4tA). Transcripts for all six staged; only SiBhLYf8YJ4, q4nKy_YPg2s and d3vvN-ddRDo read in
+  full, the other three still count as unwatched. Claims checked in `sandbox/check_claims.py`.
+  EPL rho -0.13 holds (desk fit -0.116); "55-56% BTTS-no at 1.4 v 1.1" is wrong (about 48%).
 
 ## Rule
 
