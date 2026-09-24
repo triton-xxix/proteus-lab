@@ -63,10 +63,11 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   every league. Verdict and decisions in `pitch/RULES.md` (note of 2026-09-24): stakes parked, desk
   widened to nine leagues, live model stays v0 for the out-of-sample check on the harness.
   **Next in the harness, not live:** real xG once football-data's 2026-27 columns are a season
-  deep; Pinnacle closing (PSCH) instead of the average as the line to beat; a bookmaker-disagreement
+  deep; a bookmaker-disagreement
   feature (Max minus Avg); the Elo draw model is crude (ordered logit only) and worth a proper
   bivariate version. Any of these earns a live slot only with a pool weight above zero out of sample.
   Also: the 2026-27 slice shows weights of 0.6 on 50 matches, a reminder to never read a partial season.
+  Struck 2026-09-24 by probe P-0003: Pinnacle closing as the line to beat changes nothing and is missing on 2026-27.
 
 - **Probe loop (2026-09-24).** `bin/probe.py` runs the nightly's spare time as probes from its own
   queue, one verdict committed per probe, until deadline, call cap or probe cap, or until the queue
