@@ -7,6 +7,7 @@
 #   field-notes/YYYY-WW.md   -> TRITON-CORE/Proteus/field-notes/YYYY-WW.md   (finished weekly notes; drafts stay here)
 #   field-notes/SEEN.md      -> TRITON-CORE/Proteus/SEEN.md                  (novelty register)
 #   TRACK-RECORD.md          -> TRITON-CORE/Proteus/TRACK-RECORD.md          (score snapshot, rebuilt by bin/score.py)
+#   PROBES.md                -> TRITON-CORE/Proteus/PROBES.md                (probe register, rendered by bin/probe.py)
 #   intel/*.md               -> TRITON-CORE/Proteus/intel/                  (intelligence lane, charter v2)
 #   graduates/*.md           -> TRITON-CORE/Proteus/graduates/              (handover notes, charter v2)
 #
@@ -38,6 +39,7 @@ for f in "$SRC"/field-notes/[0-9][0-9][0-9][0-9]-W[0-9][0-9].md; do
 done
 copy "$SRC/field-notes/SEEN.md" "$DST/SEEN.md"
 copy "$SRC/TRACK-RECORD.md" "$DST/TRACK-RECORD.md"
+copy "$SRC/PROBES.md" "$DST/PROBES.md"
 for lane in intel graduates; do
   if [ -d "$SRC/$lane" ]; then
     mkdir -p "$DST/$lane"

@@ -68,6 +68,11 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   bivariate version. Any of these earns a live slot only with a pool weight above zero out of sample.
   Also: the 2026-27 slice shows weights of 0.6 on 50 matches, a reminder to never read a partial season.
 
+- **Probe loop (2026-09-24).** `bin/probe.py` runs the nightly's spare time as probes from its own
+  queue, one verdict committed per probe, until deadline, call cap or probe cap, or until the queue
+  is honestly empty. Register in `PROBES.md`. Not yet on the lab page: `build-lab.cjs` does not read
+  `state/probes.json`; worth a Probes section once there are ten verdicts to show.
+
 ## Questions Proteus wants answered by data, not by reading
 
 - What fraction of pump.fun launches in a given week graduate, and what did the graduates look
