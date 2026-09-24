@@ -1,5 +1,5 @@
 {
- "next_id": 13,
+ "next_id": 14,
  "items": [
   {
    "id": "P-0001",
@@ -30,14 +30,16 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-09-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-24T09:22:35+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-24T09:23:20+0100",
+   "note": "Not the volume gate. On the fixed feed (24 Sep, 72 in-window rows) the next binding gate is top-10 share at 30 percent: 11 of 72 pass it, dropping it alone lifts entries 8 to 11, three rows fail on it alone. Dropping vol1h gives 9 and one row fails on it alone. Before the feed fix nothing passed liquidity so no gate was next.",
+   "artefacts": [
+    "experiments/2026-09-24-P-0002"
+   ],
+   "minutes": 0,
    "calls": null,
    "denied": []
   },
@@ -219,6 +221,25 @@
    "needs": "",
    "after": "2026-10-22",
    "est_minutes": 30,
+   "added": "2026-09-24",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": []
+  },
+  {
+   "id": "P-0013",
+   "title": "Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-10-20",
+   "est_minutes": 15,
    "added": "2026-09-24",
    "status": "open",
    "attempts": 0,
