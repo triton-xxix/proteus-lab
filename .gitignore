@@ -5,6 +5,7 @@ sandbox/*/
 state/unattended-session.json
 state/unattended-session.json.tmp
 state/*.jsonl
+!state/spend.jsonl
 grinder/cache/
 pitch/cache/
 field-notes/staging/

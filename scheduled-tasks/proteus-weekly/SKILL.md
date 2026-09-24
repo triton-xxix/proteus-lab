@@ -20,7 +20,9 @@ If `/Users/triton/PROTEUS/HALT` exists (try to Read it), write the Field Notes d
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/score.py`
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --score`
 `python3 /Users/triton/PROTEUS/bin/score.py --write`
-(rewrites TRACK-RECORD.md and docs/data.json from the ledgers). If `/Users/triton/PROTEUS/state/spend.jsonl` has entries, update the month table in `/Users/triton/PROTEUS/SPEND.md` to match.
+(rewrites TRACK-RECORD.md and docs/data.json from the ledgers). If `/Users/triton/PROTEUS/state/spend.jsonl` has entries, update the month table in `/Users/triton/PROTEUS/SPEND.md` to match. Then
+`node /Users/triton/PROTEUS/audit/recompute.js --worktree`
+(recomputes every published line without score.py and compares; exit 0 agrees, exit 1 disagrees). If it disagrees, do not fix the ledgers or the numbers by hand: publish anyway, put its full table at the very top of Field Notes under `## The scorer disagrees with its audit`, before the opening paragraph, and write what you think is wrong in one line. The same rule applies to any scoring bug found during the week: it leads the note, as prominently as a win would.
 
 **Review Sundays only: 15 Nov 2026 (2026-W46, the week-8 review) and 13 Dec 2026 (2026-W50, the second and last date for any desk that was INCONCLUSIVE or CHANGE at week 8).** Also run
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/review.py`

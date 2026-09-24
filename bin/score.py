@@ -4,25 +4,54 @@
     python3 /Users/triton/PROTEUS/bin/score.py          # print the numbers
     python3 /Users/triton/PROTEUS/bin/score.py --write  # rewrite TRACK-RECORD.md and docs/data.json
 
-Inputs: grinder/LEDGER.csv, pitch/PREDICTIONS.csv, state/spend.jsonl (optional), field-notes/*.md,
-git log (for luke-gate count we simply assert 0: Proteus has no path to the ledger).
+Inputs: grinder/LEDGER.csv, pitch/PREDICTIONS.csv, state/spend.jsonl (optional), field-notes/*.md.
+The luke-gate count is asserted 0, not computed: Proteus has no path to the ledger, and nothing in
+this tree can prove a negative.
+
+Every number here is recomputed by an independent script that shares no code with this file:
+audit/recompute.js, run monthly on GitHub's machines (.github/workflows/audit.yml) and on every
+Sunday rebuild. audit/README.md is the prose definition both are written against. When the two
+disagree, the audit fails loudly and the disagreement leads the next Field Notes.
+
+Provenance: data.json carries the git blob id of every input file as read, so a stranger can
+confirm the numbers came from bytes that are in the history, and which commit holds them. The
+"commit" field is HEAD at build time; the build's own output normally lands in the next commit.
 """
 import csv
 import glob
+import hashlib
 import json
+import math
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
 
 ROOT = "/Users/triton/PROTEUS/"
+INPUTS = ["grinder/LEDGER.csv", "pitch/PREDICTIONS.csv", "state/spend.jsonl"]
 
 
 def fnum(x):
+    """A plain finite number, else None. 'nan' and 'inf' parse as floats in Python and would
+    poison a sum, so they are rejected here (found by the audit, 2026-09-24)."""
     try:
-        return float(x)
+        v = float(x)
     except Exception:
         return None
+    return v if math.isfinite(v) else None
+
+
+def blob_sha(path):
+    """git's blob id for the file's bytes, computed without git so it names exactly what was read."""
+    try:
+        data = open(ROOT + path, "rb").read()
+    except FileNotFoundError:
+        return None
+    h = hashlib.sha1()
+    h.update(b"blob %d\0" % len(data))
+    h.update(data)
+    return h.hexdigest()
 
 
 def grinder():
@@ -36,6 +65,7 @@ def grinder():
         "bankroll_start": 100.0,
         "bankroll_now": round(100.0 + sum(pnl), 2),
         "opened": opened,
+        "closed": len(pnl),
         "scored_24h": len(scored),
         "hit_rate": round(len(hits) / len(pnl), 3) if pnl else None,
         "expectancy": round(sum(pnl) / len(pnl), 2) if pnl else None,
@@ -55,27 +85,39 @@ def pitch():
         except Exception:
             continue
     scored = [r for r in valid if fnum(r.get("brier")) is not None]
-    mb = [fnum(r["brier"]) for r in scored]
-    mk = [fnum(r["market_brier"]) for r in scored if fnum(r.get("market_brier")) is not None]
+    # The headline Brier scores are paired: both means are over the rows that have BOTH a model
+    # and a market Brier, so "same matches" in the table is true by construction. Before
+    # 2026-09-24 the model mean was over every scored row and the market mean over a subset,
+    # and the label claimed they were the same matches. Found by writing the audit spec.
+    paired = [r for r in scored if fnum(r.get("market_brier")) is not None]
+    mb = [fnum(r["brier"]) for r in paired]
+    mk = [fnum(r["market_brier"]) for r in paired]
     clv = [fnum(r["clv"]) for r in scored if fnum(r.get("clv")) is not None]
     pnl = [fnum(r["pnl_gbp"]) for r in scored if fnum(r.get("pnl_gbp")) is not None]
     return {
         "committed_before_kickoff": len(valid),
         "committed_late_excluded": len(rows) - len(valid),
         "scored": len(scored),
+        "paired": len(paired),
         "brier_model": round(sum(mb) / len(mb), 4) if mb else None,
         "brier_market": round(sum(mk) / len(mk), 4) if mk else None,
+        "brier_diff": round(sum(m - k for m, k in zip(mb, mk)) / len(mb), 4) if mb else None,
         "clv_mean": round(sum(clv) / len(clv), 4) if clv else None,
         "bankroll_now": round(100.0 + sum(pnl), 2),
     }
+
+
+RAN_IT = re.compile(r"^##\s+ran it", re.IGNORECASE | re.MULTILINE)
 
 
 def field_notes():
     notes = sorted(glob.glob(ROOT + "field-notes/20??-W??.md"))
     ran = 0
     for n in notes:
-        txt = open(n).read().lower()
-        ran += txt.count("## ran it")
+        # A "Ran it" section is a line starting "## Ran it". Counted per section, not per item
+        # inside it, so a note with three things run under one heading counts once. Understated
+        # on purpose; the audit script counts the same way.
+        ran += len(RAN_IT.findall(open(n).read()))
     return {"weekly_notes": len(notes), "things_run": ran, "luke_gates_opened": 0}
 
 
@@ -113,6 +155,8 @@ def render_md(d):
         "",
         "Every number here is computed from the committed ledgers by `bin/score.py`, never typed by hand.",
         "A losing record is published in exactly the same format as a winning one.",
+        "An independent script that shares no code with the scorer recomputes every line monthly and on",
+        "every rebuild; see `audit/README.md` to run it yourself.",
         "",
         "Rebuilt %s at commit %s." % (d["built_at"], d["commit"]),
         "",
@@ -121,6 +165,7 @@ def render_md(d):
         "| Measure | Value |", "|---|---|",
         "| Paper bankroll | £%.2f (started £100.00) |" % g["bankroll_now"],
         "| Positions opened | %d |" % g["opened"],
+        "| Positions closed | %d |" % g["closed"],
         "| Positions scored at 24h | %d |" % g["scored_24h"],
         "| Hit rate | %s |" % na(g["hit_rate"]),
         "| Expectancy per position | %s |" % ("n/a" if g["expectancy"] is None else "£%.2f" % g["expectancy"]),
@@ -132,8 +177,10 @@ def render_md(d):
         "| Predictions committed before kickoff | %d |" % p["committed_before_kickoff"],
         "| Predictions committed late (excluded) | %d |" % p["committed_late_excluded"],
         "| Predictions scored | %d |" % p["scored"],
-        "| Brier score, model (lower is better; 0.25 is a coin flip on 1X2) | %s |" % na(p["brier_model"]),
+        "| Predictions scored with a market line (the paired set) | %d |" % p["paired"],
+        "| Brier score, model (lower is better; 0.667 is a uniform guess on three outcomes) | %s |" % na(p["brier_model"]),
         "| Brier score, market, same matches | %s |" % na(p["brier_market"]),
+        "| Paired Brier, model minus market (negative means the model is better) | %s |" % na(p["brier_diff"]),
         "| Closing-line value, mean | %s |" % na(p["clv_mean"]),
         "| Paper bankroll, quarter Kelly | £%.2f (started £100.00) |" % p["bankroll_now"],
         "",
@@ -142,7 +189,7 @@ def render_md(d):
         "| Measure | Value |", "|---|---|",
         "| Things installed and run | %d |" % f["things_run"],
         "| Weekly notes shipped | %d |" % f["weekly_notes"],
-        "| Luke-gates opened | %d (must stay 0) |" % f["luke_gates_opened"],
+        "| Luke-gates opened | %d (must stay 0; asserted, not computed) |" % f["luke_gates_opened"],
         "",
         "## Spend",
         "",
@@ -155,9 +202,12 @@ def render_md(d):
 
 
 def main():
+    notes = sorted(glob.glob(ROOT + "field-notes/20??-W??.md"))
+    inputs = INPUTS + [n[len(ROOT):] for n in notes]
     d = {
         "built_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "commit": git_head(),
+        "input_blobs": {p: blob_sha(p) for p in inputs},
         "grinder": grinder(),
         "pitch": pitch(),
         "field_notes": field_notes(),

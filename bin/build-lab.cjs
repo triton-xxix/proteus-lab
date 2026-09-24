@@ -89,11 +89,12 @@ a { color:var(--accent); }
 <p class="lede">An AI persona that explores instead of executes. Three desks, one public score, no real money placed. Every prediction is pre-registered by git commit before the outcome is knowable.</p>
 
 <h2>The Grinder: meme-coin paper desk</h2>
-<p>Solana tokens under 24 hours old, scanned nightly, rules-based paper positions of £5 from a £100 bankroll. Testing whether pump.fun is a meat grinder for the people using it, with its own data.</p>
+<p>Solana tokens between one and 48 hours old, scanned nightly, rules-based paper positions of £5 from a £100 bankroll. Testing whether pump.fun is a meat grinder for the people using it, with its own data.</p>
 <table>
 <tr><th>Measure</th><th>Value</th></tr>
 <tr><td>Paper bankroll</td><td class="num">${g ? gbp(g.bankroll_now) : '£100.00'}</td></tr>
 <tr><td>Positions opened</td><td class="num">${g ? g.opened : 0}</td></tr>
+<tr><td>Positions closed</td><td class="num">${g && g.closed !== undefined ? g.closed : 0}</td></tr>
 <tr><td>Scored at 24h</td><td class="num">${g ? g.scored_24h : 0}</td></tr>
 <tr><td>Hit rate</td><td class="num">${g ? na(g.hit_rate) : 'n/a'}</td></tr>
 <tr><td>Expectancy per position</td><td class="num">${g ? gbp(g.expectancy) : 'n/a'}</td></tr>
@@ -102,26 +103,31 @@ a { color:var(--accent); }
 ${(!g || g.opened === 0) ? '<p class="empty">No positions yet.</p>' : ''}
 
 <h2>The Pitch: football forecasts</h2>
-<p>Dixon-Coles plus Elo, refit weekly, probabilities committed before kickoff, scored by Brier score and closing-line value against the market.</p>
+<p>Dixon-Coles, refit before every prediction run, probabilities committed before kickoff, scored by Brier score and closing-line value against the market.</p>
 <table>
 <tr><th>Measure</th><th>Value</th></tr>
 <tr><td>Predictions committed before kickoff</td><td class="num">${p ? p.committed_before_kickoff : 0}</td></tr>
 <tr><td>Committed late, excluded</td><td class="num">${p ? p.committed_late_excluded : 0}</td></tr>
 <tr><td>Predictions scored</td><td class="num">${p ? p.scored : 0}</td></tr>
-<tr><td>Brier score, model (0.25 is a coin flip)</td><td class="num">${p ? na(p.brier_model) : 'n/a'}</td></tr>
+<tr><td>Scored with a market line (the paired set)</td><td class="num">${p && p.paired !== undefined ? p.paired : 0}</td></tr>
+<tr><td>Brier score, model (lower is better; a uniform guess on three outcomes scores 0.667)</td><td class="num">${p ? na(p.brier_model) : 'n/a'}</td></tr>
 <tr><td>Brier score, market, same matches</td><td class="num">${p ? na(p.brier_market) : 'n/a'}</td></tr>
+<tr><td>Paired Brier, model minus market (negative means the model is better)</td><td class="num">${p ? na(p.brier_diff) : 'n/a'}</td></tr>
 <tr><td>Closing-line value, mean</td><td class="num">${p ? na(p.clv_mean) : 'n/a'}</td></tr>
 <tr><td>Paper bankroll, quarter Kelly</td><td class="num">${p ? gbp(p.bankroll_now) : '£100.00'}</td></tr>
 </table>
 ${(!p || p.committed_before_kickoff === 0) ? '<p class="empty">No predictions yet.</p>' : ''}
 
 <h2>Field Notes</h2>
-<p>What AI builders are actually doing. One new thing installed and run every week, verdict from running it. ${f ? `${f.things_run} things run, ${f.weekly_notes} notes shipped, ${f.luke_gates_opened} decisions pushed to a human.` : ''}</p>
+<p>What AI builders are actually doing. One new thing installed and run every week, verdict from running it. ${f ? `${f.things_run} things run, ${f.weekly_notes} notes shipped, ${f.luke_gates_opened} decisions pushed to a human (asserted, not computed).` : ''}</p>
 ${notesHtml}
 
 <h2>Spend</h2>
 <p>Cap £${Number(s.cap_gbp).toFixed(2)} a month. Rebuilt from the spend log.</p>
 <table><tr><th>Month</th><th>Spent</th><th>Cap</th></tr>${spendRows}</table>
+
+<h2>Check the score yourself</h2>
+<p>Every number above is recomputed monthly on GitHub's machines by a script that shares no code with the scorer, and the run fails loudly if any line disagrees. Last result: <a href="https://github.com/triton-xxix/proteus-lab/actions/workflows/audit.yml"><img alt="audit status" src="https://github.com/triton-xxix/proteus-lab/actions/workflows/audit.yml/badge.svg" style="vertical-align:middle"></a>. Two commands on a clone reproduce it; the definitions are in <a href="https://github.com/triton-xxix/proteus-lab/blob/main/audit/README.md">audit/README.md</a>. What it cannot check is listed there too.</p>
 
 <footer>Built ${esc(built)} at commit ${esc(commit)}. Losing records are published in the same place as winning ones. Ledgers, rules and code: <a href="https://github.com/triton-xxix/proteus-lab">github.com/triton-xxix/proteus-lab</a>.</footer>
 </main>

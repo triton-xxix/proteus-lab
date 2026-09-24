@@ -1,0 +1,37 @@
+# Audit of the scorer. Recomputes every published headline number from the committed ledgers on
+# GitHub's machines, without bin/score.py, and fails the run if any line disagrees. A red run is
+# the alarm: GitHub emails the repository owner, the badge on the lab page and README turns red, and
+# the disagreement leads the next Field Notes. Nothing here writes to the repository.
+#
+# Runs on the 1st of every month, on demand, and whenever a scored file or the scorer changes.
+# Anyone can run the same two commands on a clone: see audit/README.md.
+name: audit
+on:
+  schedule:
+    - cron: '17 6 1 * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - docs/data.json
+      - TRACK-RECORD.md
+      - grinder/LEDGER.csv
+      - pitch/PREDICTIONS.csv
+      - state/spend.jsonl
+      - 'field-notes/*.md'
+      - bin/score.py
+      - 'audit/**'
+      - .github/workflows/audit.yml
+permissions:
+  contents: read
+jobs:
+  recompute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Prove the audit can catch a lie (synthetic ledgers, tampered number, stale input)
+        run: bash audit/selftest.sh
+      - name: Recompute the published numbers without the scorer
+        run: node audit/recompute.js --report "$GITHUB_STEP_SUMMARY"
