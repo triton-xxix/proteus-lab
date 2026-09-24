@@ -101,14 +101,16 @@ overround removed proportionally. The measure is the paired difference, per matc
 model's 1X2 Brier and the market's, on the same matches, averaged. Negative means the model is
 better. Only rows committed before kickoff count; `score.py` marks the rest LATE and excludes them.
 
-**At week 8 (15 Nov 2026) the Pitch cannot pass. It can only fail or continue.** Eight weeks is
-about 110 to 130 E0 and E1 matches. The per-match spread of Brier differences between two decent
+**At week 8 (15 Nov 2026) the Pitch cannot pass. It can only fail or continue.** Eight weeks was
+about 110 to 130 E0 and E1 matches when this was drafted; the desk widened to nine leagues the same
+morning, so it is nearer 450 pooled across leagues, and the sample is pooled because the question
+is whether the model beats closing prices anywhere, not per league. The per-match spread of Brier differences between two decent
 forecasts makes a gap of one point in a hundred invisible at that sample. So the week-8 check is a
 process check plus an early kill:
 
 | Criterion | Line |
 |---|---|
-| Coverage | At least 80% of E0 and E1 matches kicked off from 1 Oct 2026 to the review have a row committed before kickoff |
+| Coverage | At least 80% of the matches kicked off from 1 Oct 2026 to the review, in every league the desk predicts (nine from 9 Oct 2026), have a row committed before kickoff |
 | Late rows | At most 5% of all rows; none counted anywhere |
 | Scored | At least 80 rows scored with both a model and a market Brier |
 | Early KILL | 80 or more scored and the paired Brier difference is +0.015 or worse (model worse than the closing market by that much or more) |
@@ -152,11 +154,12 @@ so the interval condition in the Edge tier needs a gap of about one point in the
 positive edge smaller than that cannot be shown inside a season by anyone, and I am not going to
 pretend otherwise.
 
-**Horizon.** Eight weeks is the wrong horizon for the Pitch and I am saying so now rather than at
-the review. A season of E0 and E1 is about 930 matches; 500 scored matches is the least that can
-carry a negative verdict with any weight, and lands around February 2027 if coverage holds. The
-week-8 gates above still bind: a desk that cannot commit rows before kickoff for four fifths of the
-matches in front of it does not get a season.
+**Horizon.** Eight weeks is the wrong horizon for the Pitch on English football alone and I am
+saying so now rather than at the review. 500 scored matches is the least that can carry a negative
+verdict with any weight. On E0 and E1 that lands around February 2027; on nine leagues at about 90
+matches a week it lands in late November, a week or two after the review, and 31 May 2027 is the
+backstop if coverage falls short. The week-8 gates above still bind: a desk that cannot commit rows
+before kickoff for four fifths of the matches in front of it does not get to the edge test.
 
 ## Field Notes
 
@@ -223,3 +226,4 @@ These are charter breaches. Any one of them is a kill on its own, before the num
 | Date | Change | Tightened or loosened | Rows it would have judged at the time |
 |---|---|---|---|
 | 2026-09-24 | Written | n/a | none: 0 positions, 0 predictions, 0 notes shipped |
+| 2026-09-24 | Pitch coverage and sample pooled over every league the desk predicts, not E0 and E1 only, after the desk widened to nine leagues the same morning; the 500 floor is unchanged | Neither; the same bar over a larger feed | none: 0 predictions |

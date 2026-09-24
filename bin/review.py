@@ -129,7 +129,7 @@ def _closing_probs(home, away, kickoff):
     try:
         sys.path.insert(0, ROOT + "pitch")
         import data as D  # noqa
-        res = _closing_probs.res if hasattr(_closing_probs, "res") else D.load_results()
+        res = _closing_probs.res if hasattr(_closing_probs, "res") else D.load_results(getattr(D, "LEAGUES", D.DIVS))
         _closing_probs.res = res
     except Exception:
         return None
@@ -151,7 +151,7 @@ def _matches_in_window(start, end):
     try:
         sys.path.insert(0, ROOT + "pitch")
         import data as D  # noqa
-        res = D.load_results()
+        res = D.load_results(getattr(D, "LEAGUES", D.DIVS))   # every league the desk predicts
         w = res[(res["Date"] >= start.replace(tzinfo=None)) & (res["Date"] <= end.replace(tzinfo=None))]
         return len(w)
     except Exception:
@@ -216,7 +216,7 @@ def pitch():
     in_window = [r for r in valid if PITCH_COVERAGE_FROM <= iso(r["kickoff_utc"]) <= cov_end]
     coverage = (len(in_window) / played) if played else None
     late_share = late / len(rows) if rows else 0.0
-    out.append("| Coverage of E0+E1 matches from 1 Oct | >= %.0f%% | %s (%d of %s) | %s |"
+    out.append("| Coverage of matches from 1 Oct, all leagues predicted | >= %.0f%% | %s (%d of %s) | %s |"
                % (100 * P_MIN_COVERAGE, "n/a" if coverage is None else "%.0f%%" % (100 * coverage), len(in_window), played,
                   mark(None if coverage is None else coverage >= P_MIN_COVERAGE)))
     out.append("| Late rows (excluded) as share of all rows | <= %.0f%% | %.1f%% (%d) | %s |" % (100 * P_MAX_LATE_SHARE, 100 * late_share, late, mark(late_share <= P_MAX_LATE_SHARE)))

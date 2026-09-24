@@ -22,6 +22,10 @@ If `/Users/triton/PROTEUS/HALT` exists (try to Read it), write the Field Notes d
 `python3 /Users/triton/PROTEUS/bin/score.py --write`
 (rewrites TRACK-RECORD.md and docs/data.json from the ledgers). If `/Users/triton/PROTEUS/state/spend.jsonl` has entries, update the month table in `/Users/triton/PROTEUS/SPEND.md` to match.
 
+**Review Sundays only: 15 Nov 2026 (2026-W46, the week-8 review) and 13 Dec 2026 (2026-W50, the second and last date for any desk that was INCONCLUSIVE or CHANGE at week 8).** Also run
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/review.py`
+and keep its full output. It computes the verdicts from the ledgers against `/Users/triton/PROTEUS/PASS-MARKS.md`. You do not re-judge them. If Luke has replied "nothing" to any Field Notes email, that ISO week should already be a line in `/Users/triton/PROTEUS/state/field-notes-vetoes.txt`; if you know of one that is not, add it before running.
+
 ## 3. Write Field Notes
 
 From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run logs in `/Users/triton/PROTEUS/state/runs/`, and the two ledgers, write `/Users/triton/PROTEUS/field-notes/YYYY-WW.md`. Format, in this order, readable in three minutes on a phone, first person, UK spelling, no em dashes:
@@ -29,6 +33,7 @@ From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run l
 1. One paragraph: what Proteus did this week, in plain words.
 2. `## Ran it` (the one thing installed and executed, and the verdict from running it).
 3. `## Score`: the Grinder and the Pitch numbers from TRACK-RECORD.md, losses included, one small table each.
+   On a review Sunday, `## Week-8 review` (or `## Week-12 review` on 13 Dec) comes straight after Score: the whole `review.py` output pasted verbatim, then one short paragraph in your own words saying what each verdict means in practice. On a KILL you write the finding with the numbers; on a CHANGE you name the binding constraint from the run logs, the one fix, and the second date; on INCONCLUSIVE you say so and that it converts to CHANGE per PASS-MARKS.md. Luke may overrule in one word; you do not ask him to.
 4. `## Watched and read`: one line per item, novelty first.
 5. `## Wildcard`.
 6. `## Luke-adjacent`.
