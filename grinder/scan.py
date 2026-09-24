@@ -98,42 +98,45 @@ def watchlist_update(new_items):
 
 
 def discover(limit):
-    """Candidate Solana mints. Order matters: GeckoTerminal's active young pools and the watchlist
-    first (the first nightly run showed DexScreener's profile and boost feeds skew old), then
-    DexScreener and rugcheck discovery to fill the remainder."""
+    """Candidate Solana mints, in the order they are scanned (the limit cuts the tail).
+
+    Order changed 2026-09-24 after two nights of zero entries. The v0.2 order put GeckoTerminal's
+    new_pools first: pools minutes old with a few thousand dollars in them, which cannot clear a
+    $20k liquidity or $200k volume gate by construction, and the limit then cut everything else.
+    The gate never got a fair test. Now the feeds that surface pools already trading in size come
+    first: GeckoTerminal trending pools over 1h, 6h and 24h, then the pump-fun and pumpswap pools
+    by 24h transactions, then DexScreener boosts and profiles. The new_pools watchlist still runs
+    (a pool minutes old tonight is a 1-to-48h candidate tomorrow) but its mints go last.
+    """
     mints = []
 
     def add(addr):
         if addr and addr not in mints:
             mints.append(addr)
 
+    for dur in ("1h", "6h", "24h"):
+        for m, _ in gecko("trending_pools?page=1&duration=%s" % dur):
+            add(m)
+    for dex in ("pump-fun", "pumpswap"):
+        for page in (1, 2):
+            for m, _ in gecko("dexes/%s/pools?page=%d&sort=h24_tx_count_desc" % (dex, page)):
+                add(m)
+
+    for url in ("https://api.dexscreener.com/token-boosts/top/v1",
+                "https://api.dexscreener.com/token-boosts/latest/v1",
+                "https://api.dexscreener.com/token-profiles/latest/v1"):
+        for t in (get(url) or []):
+            if t.get("chainId") == "solana":
+                add(t.get("tokenAddress"))
+    for url in ("https://api.rugcheck.xyz/v1/stats/trending", "https://api.rugcheck.xyz/v1/stats/recent"):
+        for t in (get(url) or []):
+            add(t.get("mint") or t.get("address"))
+
     fresh = []
     for page in (1, 2, 3):
         fresh += gecko("new_pools?page=%d" % page)
     for m in watchlist_update(fresh):
         add(m)
-    for dex in ("pump-fun", "pumpswap"):
-        for page in (1, 2):
-            for m, _ in gecko("dexes/%s/pools?page=%d&sort=h24_tx_count_desc" % (dex, page)):
-                add(m)
-    for m, _ in gecko("trending_pools?page=1"):
-        add(m)
-
-    for url in ("https://api.dexscreener.com/token-profiles/latest/v1",
-                "https://api.dexscreener.com/token-boosts/latest/v1",
-                "https://api.dexscreener.com/token-boosts/top/v1"):
-        for t in (get(url) or []):
-            if t.get("chainId") == "solana":
-                add(t.get("tokenAddress"))
-    for q in ("pump", "pumpswap", "bonk", "meme", "cat", "dog", "trump", "ai"):
-        d = get("https://api.dexscreener.com/latest/dex/search?q=" + q) or {}
-        for p in d.get("pairs", []):
-            if p.get("chainId") == "solana":
-                add((p.get("baseToken") or {}).get("address"))
-    for url in ("https://api.rugcheck.xyz/v1/stats/new_tokens", "https://api.rugcheck.xyz/v1/stats/trending",
-                "https://api.rugcheck.xyz/v1/stats/recent"):
-        for t in (get(url) or []):
-            add(t.get("mint") or t.get("address"))
     return mints[:limit]
 
 
@@ -148,10 +151,17 @@ def best_pair(mint):
 def rug(mint):
     rep = get("https://api.rugcheck.xyz/v1/tokens/%s/report" % mint)
     if not rep:
+        time.sleep(1.5)
+        rep = get("https://api.rugcheck.xyz/v1/tokens/%s/report" % mint)
+    if not rep:
         summ = get("https://api.rugcheck.xyz/v1/tokens/%s/report/summary" % mint) or {}
         return {"score": summ.get("score_normalised"), "risks": [r.get("name") for r in summ.get("risks", [])],
                 "lp_locked": summ.get("lpLockedPct"), "holders": None, "top10": None}
-    top = rep.get("topHolders") or []
+    # rugcheck's topHolders list includes the liquidity pool's own token account (checked 2026-09-24:
+    # the pumpswap pool sat first at 7.5 percent). The rule is about holders, so accounts owned by a
+    # market are left out of the top-10 share.
+    pools = {m.get("pubkey") for m in (rep.get("markets") or []) if m.get("pubkey")}
+    top = [h for h in (rep.get("topHolders") or []) if h.get("owner") not in pools and h.get("address") not in pools]
     top10 = sum(float(h.get("pct") or 0) for h in top[:10]) if top else None
     return {"score": rep.get("score_normalised"), "risks": [r.get("name") for r in rep.get("risks", [])],
             "lp_locked": (rep.get("markets") or [{}])[0].get("lp", {}).get("lpLockedPct") if rep.get("markets") else None,
@@ -159,15 +169,13 @@ def rug(mint):
 
 
 def authorities(mint):
+    """Mint and freeze authority from the public RPC. Top-10 share is NOT read here any more:
+    getTokenLargestAccounts answers 429 "Too many requests for a specific RPC call" on the public
+    endpoint even for a single call (checked 2026-09-24), which is why two thirds of snapshot rows
+    had no top10_pct. rugcheck's full report carries the top holders and is used instead."""
     res = rpc("getAccountInfo", [mint, {"encoding": "jsonParsed"}]) or {}
     info = (((res.get("value") or {}).get("data") or {}).get("parsed") or {}).get("info") or {}
-    supply = float(info.get("supply") or 0)
-    top10 = None
-    if supply > 0:
-        la = rpc("getTokenLargestAccounts", [mint]) or {}
-        vals = [float(a.get("amount") or 0) for a in (la.get("value") or [])[:10]]
-        top10 = round(100.0 * sum(vals) / supply, 2) if vals else None
-    return {"mint_auth": info.get("mintAuthority"), "freeze_auth": info.get("freezeAuthority"), "top10": top10}
+    return {"mint_auth": info.get("mintAuthority"), "freeze_auth": info.get("freezeAuthority"), "top10": None}
 
 
 def snapshot(limit):

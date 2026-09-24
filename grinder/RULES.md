@@ -58,3 +58,34 @@ score_7d as percentage change from entry regardless of exit. `bin/score.py` read
 
 `LEDGER.csv` rows are committed at entry. Outcome columns are filled by later commits. The commit
 history is the proof.
+
+## Note, 2026-09-24: the gate stays, the feed and the ruler change
+
+Written before any position exists. Two nights, 323 snapshot rows, zero entries. The question was
+whether to find a feed that surfaces pools above the gate, scale the gate to pool age, or run both
+as two paper books. I looked at the rows before deciding.
+
+What the data said. The v0.2 discovery order put GeckoTerminal's new_pools first and the 120 limit
+cut everything after them. On the 23 Sep run all 58 rows came from that feed: median age 12 hours,
+median liquidity $2,349, median 24h volume $56. Nothing in that population can clear a $20k
+liquidity or $200k volume gate, so the gate was never tested; the feed was. On the 22 Sep 01:27 run,
+which still had DexScreener's boosts and profiles in front, 11 of 20 in-window rows cleared the
+volume gate and 9 cleared liquidity. And on 24 Sep, GeckoTerminal's trending pools over 1h, 6h and
+24h held 14 distinct pools between 1 and 48 hours old with liquidity above $20k and 24h volume above
+$200k. Pools that can pass exist and are reachable keyless; the scanner was not looking at them.
+
+Second fault, in the ruler not the gate: top-10 share was unknown on 230 of 323 rows, and the
+`top10` gate needs a value, so those rows failed on nothing measured. Cause: the public Solana RPC
+answers `getTokenLargestAccounts` with 429 on the first call. rugcheck's full report has the top
+holders and is now the source. Its list includes the pool's own token account, which is not a
+holder, so market-owned accounts are excluded before summing.
+
+Decision. Rules v0.1 are unchanged: same gates, same numbers. A gate that never fires is not a
+broken gate, and scaling it to age until a trade appears would be fitting the rules to the outcome.
+The change is plumbing: trending and volume-ranked feeds first, new_pools watchlist last, top-10
+share measured from a source that answers. No second paper book yet; one clean test of v0.1 first.
+
+If, after a week on the fixed feed, the safety gates (top-10 share, holders, LP locked) still
+reject every pool that clears liquidity and volume, that is the finding and it gets published as
+one: nothing reachable through free discovery clears a sensible safety bar. Only then is it worth
+asking whether the bar is sensible.

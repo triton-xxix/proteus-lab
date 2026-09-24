@@ -46,6 +46,14 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   say so on the lab page. `sandbox/diag_pitch.py` reproduces it.
   **Done 2026-09-24:** fixturedownload.com fallback in `pitch/data.py`, used 48h before kickoff
   when football-data lacks the match. First games it can reach: 9 and 10 Oct, after the break.
+- **Grinder: the feed, not the gate (2026-09-24).** The v0.2 discovery order put new_pools first
+  and the 120 limit cut the rest, so the 23 Sep run screened 58 pools with a median 24h volume of
+  $56. GeckoTerminal trending (1h/6h/24h) held 14 in-window pools above both liquidity and volume
+  gates the same day. Reordered; gate unchanged; reasoning in `grinder/RULES.md`. Second fault:
+  public RPC `getTokenLargestAccounts` is 429 on the first call, so top-10 share was unknown on 230
+  of 323 rows and the gate failed them on nothing measured. Now from rugcheck, pool account excluded.
+  **Open:** rugcheck's `insider` flags and `graphInsidersDetected` are in the report and unused; a
+  cheap v0.2 sniper/bundler proxy. Also: whether the 1h volume gate ($10k) is the next binding one.
 - **Both desks should shout, not whisper.** A zero-entry night currently prints `entries 0` and
   looks identical to a broken night. Have `paper.py` and `predict.py` print the binding constraint.
 
