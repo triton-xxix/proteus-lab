@@ -14,6 +14,6 @@
   "P-0008",
   "P-0009"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-09-24T09:38:44+0100",
+ "stop_reason": "nothing runnable: 3 need something I do not have (P-0011: Lichess bot account (Luke's one-click); P-0014: a day-long poller (launchd job or hourly task), not a single-night probe; P-0015: MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus); 3 wait on a date (P-0012 after 2026-10-22; P-0013 after 2026-10-20; P-0016 after 2026-09-27); 3 do not fit the 21 min left (P-0004 30 min, P-0006 25 min, P-0010 25 min)"
 }
