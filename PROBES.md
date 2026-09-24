@@ -7,13 +7,12 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 5 works, 0 broken, 1 blocked, 1 not worth it.
+Verdicts so far: 5 works, 0 broken, 1 blocked, 2 not worth it.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
-| P-0004 | Pitch harness: bookmaker disagreement (MaxH minus AvgH) as a feature on E0, pool weight | backlog | none |  | 0 | 30 min |
 | P-0006 | GeckoTerminal new pools: of pools first seen on one day, what fraction still trade with any volume at 24h | backlog | none |  | 0 | 25 min |
 | P-0010 | Wikipedia pageviews for the 20 Premier League clubs: does a pageview spike precede or follow results | persona | none |  | 0 | 25 min |
 | P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account (Luke's one-click) |  | 0 | 20 min |
@@ -23,10 +22,11 @@ Verdicts so far: 5 works, 0 broken, 1 blocked, 1 not worth it.
 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
 
-## Verdicts (7)
+## Verdicts (8)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-24 | P-0004 | Pitch harness: bookmaker disagreement (MaxH minus AvgH) as a feature on E0, pool weight | **not-worth-it** | On the desk's DC model the feature earns nothing: adjusted DC takes 0.00 pool weight against the close in every season across nine leagues (n=6766) and out-of-sample log loss moves 0.0006. Faint lead on the market only: pre-close shaded away from outlying Max prices takes pool weight 0.08 to 0.29 v close, a 0.0005 log-loss gain against a 0.0021 gap. | `experiments/2026-09-24-P-0004` | 1 min, 10 calls, 0 denied |
 | 2026-09-24 | P-0009 | TfL unified API without a key: rate limit measured, one line's arrivals pulled | **works** | Keyless reads work: 286 live Victoria line predictions in 0.27 s and every tube line status in 0.08 s. Anonymous limit measured at 48 calls a minute: the 49th in 12 s drew a 429 with Retry-After 48, no rate headers before it. | `experiments/2026-09-24-P-0009` | 0 min |
 | 2026-09-24 | P-0008 | DVSA MOT history: is there a keyless path, and what one car's public trail looks like | **works** | Keyless path exists for the aggregate: DVSA anonymised MOT results on data.gov.uk, 2023 zip 1.19 GB, 3.66 GB CSV, Deflate64 so Python zipfile refuses it, lookup tables 254 KB. A named car needs the MOT History API (401 MOTH-UA-01 without a client key; free registration, human job) and the GOV.UK check page is a 403 bot wall to curl. | `experiments/2026-09-24-P-0008` | 1 min |
 | 2026-09-24 | P-0007 | Metaculus API without an account: can I pull open questions and community forecasts, and at what rate | **blocked** | Every listing endpoint (posts, questions, api2) returns 403 "only available to authenticated users" with plain and browser user agents. Throttle measured in front of the auth check: 9 calls in 1.9 s drew a 429 with Retry-After 10. Reruns unchanged once a token exists. | `experiments/2026-09-24-P-0007` | 1 min |
