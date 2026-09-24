@@ -49,8 +49,22 @@ The commit timestamp is the proof. If there is nothing to commit, say so in the 
 
 Pick one slot from `/Users/triton/PROTEUS/field-notes/SOURCES.md` by weekday (Monday ran-it, Tuesday watched-it, Wednesday read-it, Thursday wildcard, Friday Luke-adjacent, Saturday catch-up, Sunday skip this step). Check `/Users/triton/PROTEUS/field-notes/SEEN.md` first; skip anything already there. Write the item into `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` under the matching heading (create the file from the existing draft's layout if missing). Under 200 words. A ran-it item means you installed and executed something inside `/Users/triton/PROTEUS/sandbox/` and the verdict comes from running it. Append anything new you evaluated to SEEN.md. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh` so the vault's copy of SEEN.md and the track record stay current (it copies changed files only and prints what it copied).
 
+## Sub-agents
+
+Allowed under the charter's Fan-out section (enforced by the hook, tested 2026-09-24). A child inherits your hook, your write roots and your Bash rules, and is held to tighter ones on top. Use one only when a task would swell your own context: reading many transcripts or pages, a diagnostic that grinds through data, a pull that ends in a short summary. Never for the desk scripts, the commit, the run log or the marker; those are yours.
+
+Rules, each one a denial if missed:
+- At most **four** spawns a night. The fifth is refused.
+- Every spawn sets `subagent_type` to `general-purpose` or `Explore` **and** `model` to `haiku` or `sonnet`. A spawn without `model` is refused, because it would inherit Opus. No `isolation`.
+- A child cannot spawn, cannot run `git`, cannot run desk scripts or anything in `bin/`, and can write only under `/Users/triton/PROTEUS/sandbox/` or `/Users/triton/PROTEUS/state/agents/YYYY-MM-DD/`. Tell it so in the brief, with absolute paths, and tell it that a refusal is a result to report, not a problem to route around.
+- A child's report comes back only to you. Copy what you keep into the desk or the draft yourself, then commit yourself.
+- Wait for every child to return before step 6. Then read today's decisions log: child lines carry `agent_id` and `agent_type`; yours carry neither. One line per child in the run log: agent id, what it was for, calls made, calls denied, tokens if the hand-back shows them.
+- A refused or stalled child is not respawned with the same brief. Note it and move on.
+
+Cost mark from the test: a child making about ten calls used about 56k tokens. Four is a real bill, not a free lunch.
+
 ## 6. Run log and release
 
-Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned. Then release the marker.
+Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned, and one line per sub-agent if any ran (see Sub-agents). Then release the marker.
 
 Time budget 90 minutes. Finishing imperfectly beats hanging perfectly. You never open a Flywheel card, never email anyone, never spend outside the charter, never touch XXIX.
