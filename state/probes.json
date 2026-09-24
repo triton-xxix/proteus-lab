@@ -114,15 +114,17 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-24T23:29:27+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-24T23:30:18+0100",
+   "note": "Of 183 mints the Grinder first saw under a day old on 22 and 23 Sep, 83 (45 percent) still show any 24h volume, 23 (13 percent) at least 1k USD, 15 (8 percent) at least 10k, 30 traded in the last hour; the one-day cohort (n=29) reads 48/21/10/10. Only 4 of 108 pump.fun-curve launches moved to another dex. Unlisted read as dead, unproven.",
+   "artefacts": [
+    "experiments/2026-09-24-P-0006"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": []
   },
   {
