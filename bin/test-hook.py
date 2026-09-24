@@ -145,6 +145,29 @@ FANOUT_CASES = [
 ]
 
 
+# Kill switch cases run with a HALT file present (created for the block, removed after; a real
+# one, if present, is left alone and the block is skipped). Side effects are refused, the run log
+# and the marker release are not, so a halted run can still say what happened.
+HALT_FILE = ROOT + "HALT"
+HALT_CASES = [
+    ("Bash", {"command": "git -C " + ROOT + " push origin main"}, "deny"),
+    ("Bash", {"command": "git -C " + ROOT + " commit -m x"}, "deny"),
+    ("Bash", {"command": "git -C " + ROOT + " add -A"}, "deny"),
+    ("Bash", {"command": "git push origin main"}, "deny"),
+    ("Bash", {"command": "bash " + ROOT + "bin/send-field-notes.sh " + ROOT + "field-notes/2026-W39.md"}, "deny"),
+    ("Bash", {"command": ROOT + "bin/send-field-notes.sh " + ROOT + "field-notes/2026-W39.md"}, "deny"),
+    ("Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "deny"),
+    ("Bash", {"command": "git -C " + ROOT + " status --short"}, "allow"),
+    ("Bash", {"command": "git -C " + ROOT + " fetch origin main"}, "allow"),
+    ("Bash", {"command": "cat " + ROOT + "HALT"}, "allow"),
+    ("Bash", {"command": "python3 " + ROOT + "bin/halt-check.py --report"}, "allow"),
+    ("Bash", {"command": "bash " + ROOT + "bin/mirror-vault.sh"}, "allow"),
+    ("Write", {"file_path": ROOT + "state/runs/2026-09-24.md"}, "allow"),
+    ("Write", {"file_path": ROOT + "state/unattended-session.json"}, "allow"),
+    ("Read", {"file_path": ROOT + "CHARTER.md"}, "allow"),
+]
+
+
 def run(tool, ti, sid=SID, who=None, env=None):
     payload = {"session_id": sid, "tool_name": tool, "tool_input": ti, "permission_mode": "default"}
     payload.update(who or {})
@@ -189,13 +212,27 @@ def main():
         ok = got == "deny"
         fails += 0 if ok else 1
         print(("PASS" if ok else "FAIL"), "fanout off", "Agent", "want deny got", got)
+        # kill switch: HALT present, under the parent's rules, feature flags untouched
+        if os.path.exists(HALT_FILE):
+            print("SKIP halt block: a real HALT file is present; not touching it")
+        else:
+            with open(HALT_FILE, "w") as fh:
+                fh.write("test-hook.py: temporary, removed when the block ends\n")
+            try:
+                for tool, ti, want in HALT_CASES:
+                    got = run(tool, ti, sid=FANOUT_SID, env=ON)
+                    ok = got == want
+                    fails += 0 if ok else 1
+                    print(("PASS" if ok else "FAIL"), "halted", tool, json.dumps(ti)[:60], "want", want, "got", got)
+            finally:
+                os.remove(HALT_FILE)
     finally:
         if saved is None:
             os.remove(MARKER)
         else:
             with open(MARKER, "w") as fh:
                 fh.write(saved)
-    print("%d cases, %d failed" % (len(CASES) + len(FANOUT_CASES) + 1, fails))
+    print("%d cases, %d failed" % (len(CASES) + len(FANOUT_CASES) + 1 + len(HALT_CASES), fails))
     sys.exit(1 if fails else 0)
 
 

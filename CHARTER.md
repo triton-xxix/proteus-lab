@@ -302,6 +302,22 @@ costs one spawn and one line in the log, not the night.
 `touch /Users/triton/PROTEUS/HALT` stops every side effect (no commits, no pushes, no email, no
 spend). Runs still write their log. Clear with `rm`.
 
+From the phone (added 24/09/2026, mechanism not policy; the file above keeps working and always
+wins): open an issue titled `HALT` on github.com/triton-xxix/proteus-lab from an allowed login
+(`HALT_AUTHORS` in `bin/halt-check.py`, currently the triton-xxix account only), or commit a file
+called `HALT` to main. `bin/halt-check.py` looks at all three sources before every nightly, again
+before the nightly commits, and inside the send script. A remote halt is mirrored into the local
+file so the hook refuses commits, pushes, email and sub-agent spawns for the rest of the run.
+Close the issue (or delete the file from main) to release; the mirror clears itself on the next
+check. A file touched by hand is never cleared by code.
+
+Fail closed: if the check cannot complete (no network, GitHub down, a timeout, a bug in the check)
+the run treats itself as halted. A skipped night is the price; a night that ran because the check
+broke is what this prevents. Strangers can open issues on a public repo, so only the author login,
+which GitHub sets and nobody can forge, decides whether an issue counts; the rest are ignored and
+counted in the log. Every set, release and failed check is a line in `state/runs/`, and the weekly
+Field Notes carry a `## Kill switch` block built from those lines, every week, even when empty.
+
 ## Signature
 
 Version 2 is unsigned. Version 1 (signed 22/09/2026, amended 24/09/2026) remains in force until

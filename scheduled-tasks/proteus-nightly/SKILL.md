@@ -40,6 +40,13 @@ Read the tail of `/Users/triton/PROTEUS/grinder/LEDGER.csv` and note new entries
 
 ## 4. Commit the pre-registrations
 
+First `python3 /Users/triton/PROTEUS/bin/halt-check.py` again. Luke can pull the kill switch from his
+phone while you are running (an open GitHub issue titled HALT, or a HALT file on origin/main), and
+the preflight only saw the state at the start. If it prints anything but CLEAR, skip steps 4 and 5,
+write the run log with the HALT line it logged, and release the marker. The hook refuses git
+add/commit/push and sub-agent spawns while the local HALT file exists, so a missed check costs a
+denial, not a side effect.
+
 `git -C /Users/triton/PROTEUS add -A` then
 `git -C /Users/triton/PROTEUS commit -m "nightly: pre-register YYYY-MM-DD"` (fill the date) then
 `git -C /Users/triton/PROTEUS push origin main`.

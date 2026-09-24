@@ -391,6 +391,43 @@ def agent_ok(ti, session_id):
     return None
 
 
+HALT_FILE = PROTEUS_ROOT + "HALT"
+HALT_SCRIPTS = (FLY_BIN + "send-field-notes.sh",)   # scripts that are side effects in themselves
+
+
+def halt_blocks(tool, ti):
+    """Reason the call is refused because the kill switch is set, else None.
+
+    Checked on every call, so a HALT that appears mid-run (touched on the Mac, or mirrored from
+    GitHub by bin/halt-check.py) bites at the next side effect. The charter's list: no commits, no
+    pushes, no email, no spend. Reads, the run log and the marker release stay allowed so the run
+    can still say what happened. Sub-agent spawns are spend, so they are refused too.
+    """
+    if not os.path.exists(HALT_FILE):
+        return None
+    if tool == "Agent":
+        return "HALT is set; no sub-agent spawns under the kill switch."
+    if tool != "Bash":
+        return None
+    segs, why = _scan((ti.get("command", "") or "").strip())
+    if why is not None:
+        return None   # bash_ok refuses it anyway
+    for parts in segs:
+        if not parts:
+            continue
+        head = parts[0]
+        if head == "git":
+            verb = parts[1] if len(parts) > 1 else ""
+            if verb == "-C" and len(parts) > 3:
+                verb = parts[3]
+            if verb in ("add", "commit", "push"):
+                return "HALT is set; git %s is a side effect the kill switch stops. Write the run log and release the marker." % verb
+        for p in parts:
+            if p in HALT_SCRIPTS:
+                return "HALT is set; %s sends email, which the kill switch stops." % os.path.basename(p)
+    return None
+
+
 def child_bash_extra(cmd):
     """Tighter Bash rules for a sub-agent, applied after bash_ok() has passed.
 
@@ -444,6 +481,10 @@ def main():
         decide("allow", "%s is read-only and inside the run's scope." % tool)
 
     child = bool(CTX.get("agent_id"))
+
+    halted = halt_blocks(tool, ti)
+    if halted is not None:
+        deny(halted)
 
     if tool in ("Write", "Edit", "MultiEdit", "NotebookEdit"):
         path = ti.get("file_path") or ti.get("notebook_path") or ""

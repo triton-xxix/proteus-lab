@@ -12,7 +12,9 @@ if [ -z "$BODY" ] || [ ! -f "$BODY" ]; then
   echo "usage: send-field-notes.sh <body-file>" >&2
   exit 2
 fi
-if [ -f "$ROOT/HALT" ]; then
+# Kill switch: local file, HALT file on origin/main, or an open HALT issue by an allowed login.
+# Any non-zero exit, including the check breaking, means not sent. The check logs its own line.
+if ! /usr/bin/env python3 "$ROOT/bin/halt-check.py"; then
   echo "HALTED: Field Notes not sent." >&2
   exit 0
 fi

@@ -13,7 +13,7 @@ Write `{"session_id": null, "task": "proteus-weekly"}` to `/Users/triton/PROTEUS
 
 ## 1. HALT check
 
-If `/Users/triton/PROTEUS/HALT` exists (try to Read it), write the Field Notes draft only, send nothing, push nothing, and stop after releasing the marker.
+`python3 /Users/triton/PROTEUS/bin/halt-check.py`. It checks the local HALT file, a HALT file on origin/main, and any open GitHub issue titled HALT by an allowed login, and it fails closed (a check that cannot complete counts as halted). If it prints anything but CLEAR, write the Field Notes draft only, send nothing, push nothing, and stop after releasing the marker. The send script runs the same check itself, so a halt set during the run still stops the email.
 
 ## 2. Score and rebuild
 
@@ -33,14 +33,15 @@ and keep its full output. It computes the verdicts from the ledgers against `/Us
 From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run logs in `/Users/triton/PROTEUS/state/runs/`, and the two ledgers, write `/Users/triton/PROTEUS/field-notes/YYYY-WW.md`. Format, in this order, readable in three minutes on a phone, first person, UK spelling, no em dashes:
 
 1. One paragraph: what Proteus did this week, in plain words.
-2. `## Ran it` (the one thing installed and executed, and the verdict from running it).
-3. `## Score`: the Grinder and the Pitch numbers from TRACK-RECORD.md, losses included, one small table each.
+2. `## Kill switch`: the output of `python3 /Users/triton/PROTEUS/bin/halt-check.py --report`, pasted verbatim, every week. When nothing happened it is one line saying so. When a halt was set, cleared or a check failed, every logged line appears here, with who set it and when, so a halt never passes unnoticed. This block is never omitted and never edited.
+3. `## Ran it` (the one thing installed and executed, and the verdict from running it).
+4. `## Score`: the Grinder and the Pitch numbers from TRACK-RECORD.md, losses included, one small table each.
    On a review Sunday, `## Week-8 review` (or `## Week-12 review` on 13 Dec) comes straight after Score: the whole `review.py` output pasted verbatim, then one short paragraph in your own words saying what each verdict means in practice. On a KILL you write the finding with the numbers; on a CHANGE you name the binding constraint from the run logs, the one fix, and the second date; on INCONCLUSIVE you say so and that it converts to CHANGE per PASS-MARKS.md. Luke may overrule in one word; you do not ask him to.
-4. `## Watched and read`: one line per item, novelty first.
-5. `## Wildcard`.
-6. `## Luke-adjacent`.
-7. `## Next week`: the Big Expedition step from BACKLOG.md.
-8. `## If you feel like it`: one-line asks for Luke's hands, if any. Omit the heading when empty. Never a chase, never a card.
+5. `## Watched and read`: one line per item, novelty first.
+6. `## Wildcard`.
+7. `## Luke-adjacent`.
+8. `## Next week`: the Big Expedition step from BACKLOG.md.
+9. `## If you feel like it`: one-line asks for Luke's hands, if any. Omit the heading when empty. Never a chase, never a card.
 
 ## 4. Publish
 
