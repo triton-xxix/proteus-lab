@@ -108,6 +108,13 @@ def log(session_id, permission_mode, tool, ti, outcome):
                 "tool": tool,
                 "outcome": outcome,
                 "detail": str(detail)[:400],
+                # Added 2026-09-24 for the sub-agent experiment: which caller the input names.
+                # agent_id/agent_type are what Claude Code attaches to a sub-agent's calls, if it
+                # attaches anything. "keys" lists the top-level input fields so the shape is on record.
+                "agent_id": CTX.get("agent_id"),
+                "agent_type": CTX.get("agent_type"),
+                "cwd": CTX.get("cwd"),
+                "keys": CTX.get("keys"),
             }) + "\n")
     except Exception:
         pass
@@ -336,6 +343,10 @@ def main():
     tool = data.get("tool_name", "") or ""
     ti = data.get("tool_input", {}) or {}
     CTX["session"], CTX["mode"], CTX["tool"], CTX["ti"] = session_id, data.get("permission_mode"), tool, ti
+    CTX["agent_id"] = data.get("agent_id")
+    CTX["agent_type"] = data.get("agent_type")
+    CTX["cwd"] = data.get("cwd")
+    CTX["keys"] = sorted(data.keys())
 
     if tool in FREE_TOOLS:
         path = ti.get("file_path") or ti.get("path") or ""
