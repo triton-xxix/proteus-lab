@@ -50,9 +50,9 @@ READ_ROOTS = ("/Users/triton/",)
 # experiments/2026-09-24-subagent-guardrails/REPORT.md. A child's calls arrive here with the
 # parent's session_id plus agent_id/agent_type, so the hook can hold children to tighter rules.
 #
-# OFF until Luke signs the charter's Fan-out section. Flip FANOUT_ENABLED to True, nothing else.
-# (The test harness overrides it with PROTEUS_FANOUT_OVERRIDE=1; nothing in a run sets that.)
-FANOUT_ENABLED = False
+# Switched on 2026-09-24 when Luke pasted the charter's Fan-out section. Set False to close it.
+# (The test harness overrides it with PROTEUS_FANOUT_OVERRIDE=1 or =0; nothing in a run sets that.)
+FANOUT_ENABLED = True
 FANOUT_MAX_SPAWNS = 4                          # per run; the fifth Agent call is denied
 FANOUT_TYPES = {"general-purpose", "Explore"}
 FANOUT_MODELS = {"haiku", "sonnet"}            # must be stated; inheriting Opus is not allowed
@@ -344,7 +344,12 @@ def bash_ok(cmd):
 
 
 def fanout_enabled():
-    return FANOUT_ENABLED or os.environ.get("PROTEUS_FANOUT_OVERRIDE") == "1"
+    override = os.environ.get("PROTEUS_FANOUT_OVERRIDE")
+    if override == "1":
+        return True
+    if override == "0":
+        return False
+    return FANOUT_ENABLED
 
 
 def spawns_today(session_id):

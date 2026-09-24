@@ -55,7 +55,7 @@ brings artefacts back. It does not bring decisions back.
   changes them.
 - Names the employer, touches Ivy Rose, or publishes anything on a Salvio's, LBB or Neptune domain.
 - Sends anything to anyone other than Luke.
-- Spawns sub-agents inside a scheduled run.
+- Spawns sub-agents inside a scheduled run outside the fan-out rule below.
 
 ## The inverted adoption test
 
@@ -93,6 +93,27 @@ that presses buy. The S1 bot is the existing proof. So:
 - Monthly Big Expedition: one multi-week build from `BACKLOG.md`, chosen by Proteus.
 - Week-8 review with Luke: keep, change or kill per desk on the published numbers.
 
+## Fan-out
+
+Sub-agents inherit the hook, the write roots and the safe list; every call a child makes is
+logged under the parent's session with the child's agent id (tested 2026-09-24,
+`experiments/2026-09-24-subagent-guardrails/REPORT.md`). Inside a scheduled run they may be used
+under these caps, all enforced by the hook and not by this paragraph:
+
+- At most four spawns per run, counted from the day's decisions log. The fifth is denied.
+- Depth one. A child may not spawn. Any `Agent` call carrying an agent id is denied.
+- Types `general-purpose` and `Explore` only. `model` stated on every spawn and haiku or sonnet
+  only; a spawn that would inherit the parent's Opus is denied. No worktree isolation.
+- Children do not commit, push, or touch the score: no `git` write verbs, no writes to
+  `state/runs/`, `SPEND.md`, `TRACK-RECORD.md`, either desk's ledger or predictions file, or the
+  marker. Children write under `sandbox/` and `state/agents/`. The parent copies in what it keeps.
+- The parent writes the run log alone, after every child has returned, with one line per child:
+  agent id, purpose, calls made, calls denied, tokens if known.
+- The 90-minute budget is the whole run's, children included.
+
+A scheduled run is a run nobody is watching. The caps are there so a child that gets stuck
+costs one spawn and one line in the log, not the night.
+
 ## Kill switch
 
 `touch /Users/triton/PROTEUS/HALT` stops every side effect (no commits, no pushes, no email, no
@@ -102,3 +123,6 @@ spend). Runs still write their log. Clear with `rm`.
 
 Luke Boyd, date: 22/09/2026
 Signed
+
+Amended 24/09/2026 at Luke's instruction: sub-agent ban replaced by the Fan-out section, and
+`FANOUT_ENABLED` set to True in the hook the same day.

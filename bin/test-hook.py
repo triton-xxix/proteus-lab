@@ -183,8 +183,9 @@ def main():
             fails += 0 if ok else 1
             label = "child " if who else "parent"
             print(("PASS" if ok else "FAIL"), "fanout", label, tool, json.dumps(ti)[:60], "want", want, "got", got)
-        # and with the feature off, the parent's Agent call is denied whatever it asks for
-        got = run("Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, sid=FANOUT_SID)
+        # and with the feature forced off, the parent's Agent call is denied whatever it asks for
+        got = run("Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, sid=FANOUT_SID,
+                  env={"PROTEUS_FANOUT_OVERRIDE": "0"})
         ok = got == "deny"
         fails += 0 if ok else 1
         print(("PASS" if ok else "FAIL"), "fanout off", "Agent", "want deny got", got)
