@@ -198,15 +198,17 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-24T23:30:23+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-24T23:31:52+0100",
+   "note": "Spikes follow results, they do not precede them: pre-match abnormal views v points over the closing price r = -0.015 (CI -0.10 to +0.07, 569 team-matches), while the day after a win views run x1.38 and after a shock win about x1.95. Only 14 of 20 clubs: Wikimedia 429s the 15th call in two runs, with or without a 1s pause.",
+   "artefacts": [
+    "experiments/2026-09-24-P-0010"
+   ],
+   "minutes": 1,
+   "calls": 7,
    "denied": []
   },
   {
