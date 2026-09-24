@@ -7,7 +7,8 @@
 #   field-notes/YYYY-WW.md   -> TRITON-CORE/Proteus/field-notes/YYYY-WW.md   (finished weekly notes; drafts stay here)
 #   field-notes/SEEN.md      -> TRITON-CORE/Proteus/SEEN.md                  (novelty register)
 #   TRACK-RECORD.md          -> TRITON-CORE/Proteus/TRACK-RECORD.md          (score snapshot, rebuilt by bin/score.py)
-#   intelligence/*.md        -> TRITON-CORE/Proteus/intelligence/            (once that lane exists)
+#   intel/*.md               -> TRITON-CORE/Proteus/intel/                  (intelligence lane, charter v2)
+#   graduates/*.md           -> TRITON-CORE/Proteus/graduates/              (handover notes, charter v2)
 #
 # Never deletes anything in the vault folder and never touches files it did not copy, so a one-way
 # feed written from the vault side can sit in the same folder. Replaces the symlink to the working
@@ -37,11 +38,13 @@ for f in "$SRC"/field-notes/[0-9][0-9][0-9][0-9]-W[0-9][0-9].md; do
 done
 copy "$SRC/field-notes/SEEN.md" "$DST/SEEN.md"
 copy "$SRC/TRACK-RECORD.md" "$DST/TRACK-RECORD.md"
-if [ -d "$SRC/intelligence" ]; then
-  mkdir -p "$DST/intelligence"
-  for f in "$SRC"/intelligence/*.md; do
-    [ -e "$f" ] && copy "$f" "$DST/intelligence/$(basename "$f")"
-  done
-fi
+for lane in intel graduates; do
+  if [ -d "$SRC/$lane" ]; then
+    mkdir -p "$DST/$lane"
+    for f in "$SRC"/$lane/*.md; do
+      [ -e "$f" ] && copy "$f" "$DST/$lane/$(basename "$f")"
+    done
+  fi
+done
 echo "mirror done: $copied file(s) copied"
 exit 0
