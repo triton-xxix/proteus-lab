@@ -3,10 +3,14 @@
 
     /Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming [--days 8]
 
-Refreshes data, fits Dixon-Coles as of today, and appends one row per fixture in the window that
-has no row yet. Market probabilities come from the fixtures file's average odds with the overround
-removed proportionally. Paper stake: quarter Kelly where model minus market exceeds 3 points on the
-1X2 side, else no bet. committed_at is now (UTC); score.py excludes any row committed after kickoff.
+Refreshes data, fits Dixon-Coles as of today (one fit per country group, see data.GROUPS), and
+appends one row per fixture in the window that has no row yet, across all nine leagues in
+data.LEAGUES. Market probabilities come from the fixtures file's average odds with the overround
+removed proportionally. The backed side is still chosen by the desk rule (model minus market over 3
+points, quarter Kelly) so closing-line value gets scored, but since the 2026-09-24 backtest the stake
+is recorded as 0: no model earned a pooling weight against the closing line, so the paper bankroll
+is parked (see RULES.md, note of 2026-09-24). committed_at is now (UTC); score.py excludes any row
+committed after kickoff.
 """
 import argparse
 import csv
@@ -29,6 +33,7 @@ EDGE = 0.03
 KELLY_FRACTION = 0.25
 BANKROLL = 100.0
 FALLBACK_HOURS = 48
+STAKES_ON = False    # RULES.md note 2026-09-24: shadow stakes until a model earns pool weight > 0 out of sample
 
 
 def implied(oh, od, oa):
@@ -66,10 +71,11 @@ def main():
         ap.print_help(); return
     if not a.no_refresh:
         D.refresh()
-    res = D.load_results(); fx = D.load_fixtures()
+    res = D.load_results(D.LEAGUES); fx = D.load_fixtures()
     if res.empty or fx.empty:
         print("no data"); return
-    params = M.fit(res)
+    group_of = {div: g for g, divs in D.GROUPS.items() for div in divs}
+    params = {g: M.fit(res[res["Div"].isin(divs)]) for g, divs in D.GROUPS.items()}
     os.makedirs(ROOT + "pitch/cache", exist_ok=True)
     json.dump(params, open(PARAMS, "w"))
     now = datetime.now(timezone.utc)
@@ -92,7 +98,8 @@ def main():
         key = (ko.strftime("%Y-%m-%d"), f["HomeTeam"], f["AwayTeam"])
         if key in have:
             continue
-        pr = M.predict(params, f["HomeTeam"], f["AwayTeam"])
+        pg = params.get(group_of.get(f["Div"]))
+        pr = M.predict(pg, f["HomeTeam"], f["AwayTeam"]) if pg else None
         if not pr:
             print("skip unknown team", f["HomeTeam"], f["AwayTeam"]); continue
         mh, md, ma = implied(f.get("AvgH"), f.get("AvgD"), f.get("AvgA"))
@@ -105,7 +112,7 @@ def main():
                 fr = kelly(best[1], float(best[3])) * KELLY_FRACTION
                 st = round(min(bankroll * fr, 10.0), 2)
                 if st >= 0.5:
-                    backed, stake, odds_taken = best[0], st, best[3]
+                    backed, stake, odds_taken = best[0], (st if STAKES_ON else 0.0), best[3]
         new.append({
             "id": "P-%04d" % (len(existing) + len(new) + 1), "committed_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "kickoff_utc": ko.strftime("%Y-%m-%dT%H:%M:%SZ"), "competition": f["Div"], "home": f["HomeTeam"], "away": f["AwayTeam"],
@@ -119,8 +126,13 @@ def main():
             w.writeheader()
         for r in new:
             w.writerow({k: r.get(k, "") for k in FIELDS})
-    print("model as of", params["as_of"], "matches", params["n_matches"], "converged", params["converged"])
-    print("new predictions", len(new), "backed", sum(1 for r in new if r["backed"]))
+    for g, pg in params.items():
+        print("model", g, "as of", pg["as_of"], "matches", pg["n_matches"], "converged", pg["converged"])
+    print("new predictions", len(new), "backed (shadow)" if not STAKES_ON else "backed", sum(1 for r in new if r["backed"]))
+    if not new:
+        fut = fx[fx["Kickoff"].notna() & (fx["Kickoff"] > now.replace(tzinfo=None))]
+        print("binding constraint: fixtures in the %d-day window: 0 of %d fixture rows; next kickoff on file: %s"
+              % (a.days, len(fx), fut["Kickoff"].min() if len(fut) else "none"))
 
 
 if __name__ == "__main__":

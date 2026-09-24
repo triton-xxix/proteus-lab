@@ -20,6 +20,13 @@ CACHE = ROOT + "pitch/cache/"
 BASE = "https://www.football-data.co.uk/"
 UA = {"User-Agent": "Mozilla/5.0 (proteus-lab)"}
 DIVS = ("E0", "E1")
+# Every league the desk holds history for (added 2026-09-24 for the backtest). football-data
+# publishes all of these free of charge with average and closing 1X2 odds. Fitting groups: leagues
+# in the same country share teams through promotion and are fitted jointly; the rest stand alone.
+LEAGUES = ("E0", "E1", "SP1", "D1", "I1", "F1", "N1", "P1", "SC0")
+GROUPS = {"ENG": ("E0", "E1"), "ESP": ("SP1",), "GER": ("D1",), "ITA": ("I1",), "FRA": ("F1",),
+          "NED": ("N1",), "POR": ("P1",), "SCO": ("SC0",)}
+SEASONS_HELD = 5
 # Fallback fixtures: fixturedownload.com publishes the whole season ahead, keyless, but no odds.
 # football-data's fixtures.csv only carries the next round and refreshes late in the week.
 FD_SLUGS = {"E0": "epl", "E1": "championship"}
@@ -46,8 +53,8 @@ def fetch(path):
 
 def refresh():
     os.makedirs(CACHE, exist_ok=True)
-    for code in season_codes():
-        for div in DIVS:
+    for code in season_codes(SEASONS_HELD):
+        for div in LEAGUES:
             try:
                 txt = fetch("mmz4281/%s/%s.csv" % (code, div))
                 open(CACHE + "%s-%s.csv" % (div, code), "w").write(txt)
@@ -75,10 +82,11 @@ def _read(path):
     return df
 
 
-def load_results():
+def load_results(divs=DIVS):
+    """Played matches for the given leagues, every season in the cache, oldest first."""
     frames = []
     for f in sorted(os.listdir(CACHE)) if os.path.exists(CACHE) else []:
-        if f[:2] in DIVS and f != "fixtures.csv" and f.endswith(".csv"):
+        if f.endswith(".csv") and "-" in f and f.split("-")[0] in divs:
             df = _read(CACHE + f)
             df = df.dropna(subset=["FTHG", "FTAG"])
             frames.append(df)
@@ -113,7 +121,7 @@ def load_fixtures():
     df = pd.DataFrame()
     if os.path.exists(p):
         df = _read(p)
-        df = df[df["Div"].isin(DIVS)]
+        df = df[df["Div"].isin(LEAGUES)]
         if "Time" in df.columns:
             df["Kickoff"] = pd.to_datetime(df["Date"].dt.strftime("%Y-%m-%d") + " " + df["Time"].fillna("15:00"), errors="coerce")
         else:
