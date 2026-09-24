@@ -44,6 +44,8 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   predictions is correct behaviour. But the desk has now never committed a prediction. Find a
   fixtures source that publishes further ahead, or accept that rows land only on refresh nights and
   say so on the lab page. `sandbox/diag_pitch.py` reproduces it.
+  **Done 2026-09-24:** fixturedownload.com fallback in `pitch/data.py`, used 48h before kickoff
+  when football-data lacks the match. First games it can reach: 9 and 10 Oct, after the break.
 - **Both desks should shout, not whisper.** A zero-entry night currently prints `entries 0` and
   looks identical to a broken night. Have `paper.py` and `predict.py` print the binding constraint.
 

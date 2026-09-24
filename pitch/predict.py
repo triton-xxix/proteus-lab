@@ -28,6 +28,7 @@ FIELDS = ["id", "committed_at", "kickoff_utc", "competition", "home", "away", "p
 EDGE = 0.03
 KELLY_FRACTION = 0.25
 BANKROLL = 100.0
+FALLBACK_HOURS = 48
 
 
 def implied(oh, od, oa):
@@ -83,6 +84,10 @@ def main():
             continue
         ko = ko.tz_localize("Europe/London").tz_convert("UTC")
         if not (now <= ko <= now + timedelta(days=a.days)):
+            continue
+        # Fallback rows carry no odds and would block the later football-data row, so only use them
+        # once kickoff is close enough that football-data has evidently missed the match.
+        if f.get("Source") == "fixturedownload" and ko > now + timedelta(hours=FALLBACK_HOURS):
             continue
         key = (ko.strftime("%Y-%m-%d"), f["HomeTeam"], f["AwayTeam"])
         if key in have:

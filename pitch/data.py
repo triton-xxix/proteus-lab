@@ -8,6 +8,7 @@ into pitch/cache/ (gitignored). Exposes load_results() and load_fixtures() for m
 """
 import argparse
 import io
+import json
 import os
 from datetime import datetime
 
@@ -19,6 +20,15 @@ CACHE = ROOT + "pitch/cache/"
 BASE = "https://www.football-data.co.uk/"
 UA = {"User-Agent": "Mozilla/5.0 (proteus-lab)"}
 DIVS = ("E0", "E1")
+# Fallback fixtures: fixturedownload.com publishes the whole season ahead, keyless, but no odds.
+# football-data's fixtures.csv only carries the next round and refreshes late in the week.
+FD_SLUGS = {"E0": "epl", "E1": "championship"}
+FD_NAMES = {"Man Utd": "Man United", "Spurs": "Tottenham", "Birmingham City": "Birmingham",
+            "Blackburn Rovers": "Blackburn", "Bolton Wanderers": "Bolton", "Cardiff City": "Cardiff",
+            "Charlton Athletic": "Charlton", "Derby County": "Derby", "Lincoln City": "Lincoln",
+            "Norwich City": "Norwich", "Preston North End": "Preston", "Queens Park Rangers": "QPR",
+            "Stoke City": "Stoke", "Swansea City": "Swansea", "West Bromwich Albion": "West Brom",
+            "West Ham United": "West Ham", "Wolverhampton Wanderers": "Wolves"}
 
 
 def season_codes(n=3):
@@ -47,6 +57,15 @@ def refresh():
     txt = fetch("fixtures.csv")
     open(CACHE + "fixtures.csv", "w").write(txt)
     print("ok fixtures", txt.count("\n"), "rows")
+    y = int("20" + season_codes(1)[0][:2])
+    for div, slug in FD_SLUGS.items():
+        try:
+            r = requests.get("https://fixturedownload.com/feed/json/%s-%d" % (slug, y), headers=UA, timeout=40)
+            r.raise_for_status()
+            open(CACHE + "fixturedownload-%s.json" % div, "w").write(r.text)
+            print("ok fixturedownload", div, len(r.json()), "matches")
+        except Exception as e:
+            print("skip fixturedownload", div, e)
 
 
 def _read(path):
@@ -70,16 +89,41 @@ def load_results():
     return df.sort_values("Date").reset_index(drop=True)
 
 
+def load_fixturedownload():
+    """Unplayed matches from the fixturedownload cache, shaped like fixtures.csv rows (no odds).
+    Kickoff is naive Europe/London time, matching what predict.py expects."""
+    rows = []
+    for div in DIVS:
+        p = CACHE + "fixturedownload-%s.json" % div
+        if not os.path.exists(p):
+            continue
+        for m in json.load(open(p)):
+            if m.get("HomeTeamScore") is not None:
+                continue
+            ko = pd.Timestamp(m["DateUtc"].replace("Z", "")).tz_localize("UTC").tz_convert("Europe/London").tz_localize(None)
+            rows.append({"Div": div, "Date": ko.normalize(), "Kickoff": ko, "Source": "fixturedownload",
+                         "HomeTeam": FD_NAMES.get(m["HomeTeam"], m["HomeTeam"]),
+                         "AwayTeam": FD_NAMES.get(m["AwayTeam"], m["AwayTeam"])})
+    return pd.DataFrame(rows)
+
+
 def load_fixtures():
+    """football-data fixtures (with odds) first; fixturedownload fills any match they lack."""
     p = CACHE + "fixtures.csv"
-    if not os.path.exists(p):
-        return pd.DataFrame()
-    df = _read(p)
-    df = df[df["Div"].isin(DIVS)]
-    if "Time" in df.columns:
-        df["Kickoff"] = pd.to_datetime(df["Date"].dt.strftime("%Y-%m-%d") + " " + df["Time"].fillna("15:00"), errors="coerce")
-    else:
-        df["Kickoff"] = df["Date"] + pd.Timedelta(hours=15)
+    df = pd.DataFrame()
+    if os.path.exists(p):
+        df = _read(p)
+        df = df[df["Div"].isin(DIVS)]
+        if "Time" in df.columns:
+            df["Kickoff"] = pd.to_datetime(df["Date"].dt.strftime("%Y-%m-%d") + " " + df["Time"].fillna("15:00"), errors="coerce")
+        else:
+            df["Kickoff"] = df["Date"] + pd.Timedelta(hours=15)
+        df["Source"] = "football-data"
+    fd = load_fixturedownload()
+    if not fd.empty:
+        have = set(zip(df["HomeTeam"], df["AwayTeam"])) if not df.empty else set()
+        fd = fd[[(h, a) not in have for h, a in zip(fd["HomeTeam"], fd["AwayTeam"])]]
+        df = pd.concat([df, fd], ignore_index=True)
     return df.reset_index(drop=True)
 
 

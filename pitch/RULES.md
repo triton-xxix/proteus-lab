@@ -9,6 +9,13 @@ football-data.co.uk: results, expected goals, opening and closing odds for the P
 and Championship (E1), last three seasons, plus the fixtures file with current average odds. No API
 key, no account. The Odds API key in 1Password stays in reserve for a live closing-line feed.
 
+Fixture fallback (added 2026-09-24, before any prediction existed; plumbing, not a rule change):
+football-data's fixtures file only carries the next round and refreshes late in the week, so the
+desk had never committed a row. fixturedownload.com publishes the whole season, keyless, without
+odds. A fallback fixture is used only when football-data still lacks the match 48 hours before
+kickoff. Such a row gets probabilities and no market line, so no paper bet. It is still scored on
+Brier against the closing odds once results land.
+
 ## Model, version 0
 
 Dixon-Coles bivariate Poisson with the low-score correction and exponential time decay (xi 0.0065

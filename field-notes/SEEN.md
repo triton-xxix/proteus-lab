@@ -32,6 +32,9 @@ Raja Banks, The5ers, FTMO, AI Automation Agency Ninjas frameworks (21, never sta
   q4nKy_YPg2s, vg5BxFCdYnE, d3vvN-ddRDo, YNB87k9p4tA). Transcripts for all six staged; only SiBhLYf8YJ4, q4nKy_YPg2s and d3vvN-ddRDo read in
   full, the other three still count as unwatched. Claims checked in `sandbox/check_claims.py`.
   EPL rho -0.13 holds (desk fit -0.116); "55-56% BTTS-no at 1.4 v 1.1" is wrong (about 48%).
+- 2026-09-23, read: arXiv football forecasting, newest 8 (2609.21674, 2608.11505, 2608.05030,
+  2608.03416, 2607.18084, 2607.01722, 2606.17503, 2606.11120). Abstracts only. Three written up.
+  2608.11505 (DC weight 0.000 against Serie A close) is the one to read in full and maybe rerun.
 
 ## Rule
 

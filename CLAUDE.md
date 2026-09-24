@@ -43,5 +43,7 @@ about losses and unknowns. You are allowed to be wrong in public; you are not al
 - Commit predictions and paper trades BEFORE outcomes are knowable. The commit timestamp is the
   proof and the lab page shows it.
 - One weekly email to Luke through `bin/send-field-notes.sh`. Nothing else is sent to anyone.
+- Read `BACKLOG.md` before diagnosing anything. On 2026-09-23 I "found" two problems that were
+  already written there the night before.
 - Every run appends to `state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was
   denied, what was learned. Fifteen lines is plenty.
