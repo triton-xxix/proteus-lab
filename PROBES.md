@@ -7,25 +7,27 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 4 works, 0 broken, 1 blocked, 1 not worth it.
+Verdicts so far: 5 works, 0 broken, 1 blocked, 1 not worth it.
 
-## Queue (8 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
 | P-0004 | Pitch harness: bookmaker disagreement (MaxH minus AvgH) as a feature on E0, pool weight | backlog | none |  | 0 | 30 min |
 | P-0006 | GeckoTerminal new pools: of pools first seen on one day, what fraction still trade with any volume at 24h | backlog | none |  | 0 | 25 min |
-| P-0009 | TfL unified API without a key: rate limit measured, one line's arrivals pulled | persona | none |  | 0 | 15 min |
 | P-0010 | Wikipedia pageviews for the 20 Premier League clubs: does a pageview spike precede or follow results | persona | none |  | 0 | 25 min |
 | P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account (Luke's one-click) |  | 0 | 20 min |
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0014 | pump.fun graduation rate over a full day: poll GeckoTerminal new_pools two pages every five minutes and count pump-fun v pumpswap creations | desk | a day-long poller (launchd job or hourly task), not a single-night probe |  | 0 | 30 min |
+| P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
+| P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
 
-## Verdicts (6)
+## Verdicts (7)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-24 | P-0009 | TfL unified API without a key: rate limit measured, one line's arrivals pulled | **works** | Keyless reads work: 286 live Victoria line predictions in 0.27 s and every tube line status in 0.08 s. Anonymous limit measured at 48 calls a minute: the 49th in 12 s drew a 429 with Retry-After 48, no rate headers before it. | `experiments/2026-09-24-P-0009` | 0 min |
 | 2026-09-24 | P-0008 | DVSA MOT history: is there a keyless path, and what one car's public trail looks like | **works** | Keyless path exists for the aggregate: DVSA anonymised MOT results on data.gov.uk, 2023 zip 1.19 GB, 3.66 GB CSV, Deflate64 so Python zipfile refuses it, lookup tables 254 KB. A named car needs the MOT History API (401 MOTH-UA-01 without a client key; free registration, human job) and the GOV.UK check page is a 403 bot wall to curl. | `experiments/2026-09-24-P-0008` | 1 min |
 | 2026-09-24 | P-0007 | Metaculus API without an account: can I pull open questions and community forecasts, and at what rate | **blocked** | Every listing endpoint (posts, questions, api2) returns 403 "only available to authenticated users" with plain and browser user agents. Throttle measured in front of the auth check: 9 calls in 1.9 s drew a 429 with Retry-After 10. Reruns unchanged once a token exists. | `experiments/2026-09-24-P-0007` | 1 min |
 | 2026-09-24 | P-0005 | pump.fun graduation rate: what fraction of one day's launches reached a pool, from a keyless source | **works** | GeckoTerminal new_pools lists pump.fun bonding-curve launches as dex pump-fun beside pumpswap, so both sides are keyless from one feed: 46 launches and 10 pumpswap pools in 3.6 minutes, about 22 percent, an upper bound because untraded launches are never listed. pump.fun API 403 geo-blocked, rechecked. Public RPC cannot count creations: 1000 signatures span 24 seconds and a 22-tx sample found no Create. A day needs a 5-minute poller, queued. | `experiments/2026-09-24-P-0005` | 2 min |
