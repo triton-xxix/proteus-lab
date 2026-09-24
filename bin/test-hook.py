@@ -30,6 +30,7 @@ CASES = [
     ("Bash", {"command": ROOT + ".venv/bin/python3 " + ROOT + "pitch/predict.py"}, "allow"),
     ("Bash", {"command": "python3 /Users/triton/OBSIDIAN/anything.py"}, "deny"),
     ("Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "allow"),
+    ("Bash", {"command": "bash " + ROOT + "bin/mirror-vault.sh"}, "allow"),
     ("Bash", {"command": "git -C " + ROOT + " add -A"}, "allow"),
     ("Bash", {"command": "git -C " + ROOT + " commit -m pre-register"}, "allow"),
     ("Bash", {"command": "git -C " + ROOT + " push origin main"}, "allow"),

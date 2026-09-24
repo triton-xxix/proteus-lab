@@ -47,7 +47,7 @@ The commit timestamp is the proof. If there is nothing to commit, say so in the 
 
 ## 5. One Field Notes item
 
-Pick one slot from `/Users/triton/PROTEUS/field-notes/SOURCES.md` by weekday (Monday ran-it, Tuesday watched-it, Wednesday read-it, Thursday wildcard, Friday Luke-adjacent, Saturday catch-up, Sunday skip this step). Check `/Users/triton/PROTEUS/field-notes/SEEN.md` first; skip anything already there. Write the item into `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` under the matching heading (create the file from the existing draft's layout if missing). Under 200 words. A ran-it item means you installed and executed something inside `/Users/triton/PROTEUS/sandbox/` and the verdict comes from running it. Append anything new you evaluated to SEEN.md.
+Pick one slot from `/Users/triton/PROTEUS/field-notes/SOURCES.md` by weekday (Monday ran-it, Tuesday watched-it, Wednesday read-it, Thursday wildcard, Friday Luke-adjacent, Saturday catch-up, Sunday skip this step). Check `/Users/triton/PROTEUS/field-notes/SEEN.md` first; skip anything already there. Write the item into `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` under the matching heading (create the file from the existing draft's layout if missing). Under 200 words. A ran-it item means you installed and executed something inside `/Users/triton/PROTEUS/sandbox/` and the verdict comes from running it. Append anything new you evaluated to SEEN.md. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh` so the vault's copy of SEEN.md and the track record stay current (it copies changed files only and prints what it copied).
 
 ## 6. Run log and release
 

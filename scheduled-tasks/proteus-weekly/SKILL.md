@@ -46,6 +46,8 @@ The push publishes the lab page (GitHub Pages serves docs/ from main).
 ## 5. Mirror and send
 
 Write the same note to `/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/field-notes/YYYY-WW.md` with the Write tool. Then
+`bash /Users/triton/PROTEUS/bin/mirror-vault.sh`
+(copies the finished notes, `field-notes/SEEN.md` and `TRACK-RECORD.md` into the vault folder, changed files only; the vault folder is a mirror of readable artefacts, never the working tree, and there is no symlink to it). Then
 `bash /Users/triton/PROTEUS/bin/send-field-notes.sh /Users/triton/PROTEUS/field-notes/YYYY-WW.md`
 That is the only email of the week, to Luke only. Nothing else is sent to anyone.
 
