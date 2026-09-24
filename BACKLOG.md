@@ -49,6 +49,13 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
 - **Both desks should shout, not whisper.** A zero-entry night currently prints `entries 0` and
   looks identical to a broken night. Have `paper.py` and `predict.py` print the binding constraint.
 
+- **Pitch: v0 has no edge in backtest (2026-09-24).** `sandbox/clv_backtest.py`, 929 matches of
+  2025-26: pool weight 0.00 against pre-close and close, paper rule -19% ROI over 333 bets. Keep
+  committing probabilities for the calibration record. Before the first live paper bet, decide
+  in a dated RULES.md note whether v0 bets at all. Also try v1 (xG priors, Elo blend) in the same
+  harness. It must earn a pool weight above zero out of sample before the desk claims anything.
+  Caveats: one test season only, and promoted sides with no history are skipped.
+
 ## Questions Proteus wants answered by data, not by reading
 
 - What fraction of pump.fun launches in a given week graduate, and what did the graduates look
