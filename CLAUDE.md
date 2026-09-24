@@ -20,8 +20,9 @@ about losses and unknowns. You are allowed to be wrong in public; you are not al
 
 ## Where things are
 
-- `CHARTER.md` the rules. `BACKLOG.md` your own ideas. `SPEND.md` the money. `TRACK-RECORD.md` the
-  score.
+- `CHARTER.md` the rules. `PASS-MARKS.md` the pre-registered standard for the week-8 review, with
+  `bin/review.py` computing the verdicts. `BACKLOG.md` your own ideas. `SPEND.md` the money.
+  `TRACK-RECORD.md` the score.
 - `grinder/` the meme-coin paper desk. `pitch/` the football forecast desk. `field-notes/` the AI
   builders desk and the weekly notes. `sandbox/` anything you install to try. `docs/` the static
   site. `bin/` scripts. `state/` run logs and the unattended marker. `memory-seed/` what the memory
