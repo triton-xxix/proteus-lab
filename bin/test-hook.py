@@ -84,9 +84,73 @@ CASES = [
 ]
 
 
-def run(tool, ti):
-    payload = {"session_id": SID, "tool_name": tool, "tool_input": ti, "permission_mode": "default"}
-    p = subprocess.run([sys.executable, HOOK], input=json.dumps(payload), capture_output=True, text=True)
+# Fan-out cases run with FANOUT_ENABLED overridden on, under a fresh session id each time so the
+# spawn counter (which reads today's decisions log) starts from zero. The id begins with 't', which
+# no real session id does (they are hex), so `grep -v '"session": "t'` drops every test line.
+FANOUT_SID = "t%07x" % (int(time.time()) & 0xFFFFFFF)
+CHILD = {"agent_id": "a-test-child-0001", "agent_type": "general-purpose"}
+PARENT = {}
+ON = {"PROTEUS_FANOUT_OVERRIDE": "1"}
+FANOUT_CASES = [
+    # (who, tool, tool_input, expected)
+    # parent spawning, caps on type, isolation, model
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 1
+    (PARENT, "Agent", {"subagent_type": "Explore", "model": "sonnet", "prompt": "x"}, "allow"),          # 2
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "opus", "prompt": "x"}, "deny"),
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "prompt": "x"}, "deny"),                       # model absent
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "isolation": "worktree", "prompt": "x"}, "deny"),
+    (PARENT, "Agent", {"subagent_type": "Plan", "model": "haiku", "prompt": "x"}, "deny"),
+    (PARENT, "Agent", {"subagent_type": "claude-code-guide", "model": "haiku", "prompt": "x"}, "deny"),
+    # depth one
+    (CHILD, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "deny"),
+    # child writes: scratch only
+    (CHILD, "Write", {"file_path": ROOT + "sandbox/probe/out.txt"}, "allow"),
+    (CHILD, "Write", {"file_path": ROOT + "state/agents/2026-09-24/child.md"}, "allow"),
+    (CHILD, "Edit", {"file_path": ROOT + "state/runs/2026-09-24.md"}, "deny"),
+    (CHILD, "Write", {"file_path": ROOT + "SPEND.md"}, "deny"),
+    (CHILD, "Write", {"file_path": ROOT + "TRACK-RECORD.md"}, "deny"),
+    (CHILD, "Write", {"file_path": ROOT + "grinder/LEDGER.csv"}, "deny"),
+    (CHILD, "Write", {"file_path": ROOT + "pitch/PREDICTIONS.csv"}, "deny"),
+    (CHILD, "Write", {"file_path": ROOT + "state/unattended-session.json"}, "deny"),
+    (CHILD, "Write", {"file_path": "/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/field-notes/x.md"}, "deny"),
+    (CHILD, "Write", {"file_path": ROOT + "sandbox/../SPEND.md"}, "deny"),
+    # child bash: no git writes, scripts from sandbox only, mkdir/touch in scratch only
+    (CHILD, "Bash", {"command": "git -C " + ROOT + " status --short"}, "allow"),
+    (CHILD, "Bash", {"command": "git -C " + ROOT + " add -A"}, "deny"),
+    (CHILD, "Bash", {"command": "git -C " + ROOT + " commit -m x"}, "deny"),
+    (CHILD, "Bash", {"command": "git -C " + ROOT + " push origin main"}, "deny"),
+    (CHILD, "Bash", {"command": "git push origin main"}, "deny"),
+    (CHILD, "Bash", {"command": "python3 " + ROOT + "sandbox/check_claims.py"}, "allow"),
+    (CHILD, "Bash", {"command": ROOT + ".venv/bin/python3 " + ROOT + "sandbox/diag_pitch.py"}, "allow"),
+    (CHILD, "Bash", {"command": ROOT + ".venv/bin/python3 " + ROOT + "grinder/paper.py --apply-rules"}, "deny"),
+    (CHILD, "Bash", {"command": "bash " + ROOT + "bin/send-field-notes.sh"}, "deny"),
+    (CHILD, "Bash", {"command": ROOT + "bin/run-nightly.sh"}, "deny"),
+    (CHILD, "Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "deny"),
+    (CHILD, "Bash", {"command": "curl -s https://api.dexscreener.com/latest/dex/search?q=pump"}, "allow"),
+    (CHILD, "Bash", {"command": "cat " + ROOT + "CHARTER.md"}, "allow"),
+    (CHILD, "Bash", {"command": "mkdir -p " + ROOT + "sandbox/probe"}, "allow"),
+    (CHILD, "Bash", {"command": "mkdir -p " + ROOT + "grinder/cache"}, "deny"),
+    (CHILD, "Bash", {"command": "touch " + ROOT + "state/agents/x"}, "allow"),
+    (CHILD, "Bash", {"command": "touch " + ROOT + "HALT"}, "deny"),
+    (CHILD, "Bash", {"command": "echo one; echo two"}, "deny"),                                      # parent rules still apply
+    # child reads and browser: unchanged from the parent
+    (CHILD, "Read", {"file_path": ROOT + "CHARTER.md"}, "allow"),
+    (CHILD, "Read", {"file_path": "/etc/hosts"}, "deny"),
+    (CHILD, "mcp__Claude_Browser__get_page_text", {}, "allow"),
+    # the spawn cap: two allowed above, two more here, the fifth is denied
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 3
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "sonnet", "prompt": "x"}, "allow"),  # 4
+    (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "deny"),    # 5, cap
+    (PARENT, "Agent", {"subagent_type": "Explore", "model": "sonnet", "prompt": "x"}, "deny"),           # still capped
+]
+
+
+def run(tool, ti, sid=SID, who=None, env=None):
+    payload = {"session_id": sid, "tool_name": tool, "tool_input": ti, "permission_mode": "default"}
+    payload.update(who or {})
+    full_env = dict(os.environ)
+    full_env.update(env or {})
+    p = subprocess.run([sys.executable, HOOK], input=json.dumps(payload), capture_output=True, text=True, env=full_env)
     if not p.stdout.strip():
         return "silent"
     try:
@@ -110,13 +174,27 @@ def main():
             ok = got == want
             fails += 0 if ok else 1
             print(("PASS" if ok else "FAIL"), tool, json.dumps(ti)[:70], "want", want, "got", got)
+        # fan-out: rebind the marker to the fresh id, switch the feature on for the subprocess only
+        with open(MARKER, "w") as fh:
+            json.dump({"session_id": FANOUT_SID, "task": "test", "bound_at": time.time()}, fh)
+        for who, tool, ti, want in FANOUT_CASES:
+            got = run(tool, ti, sid=FANOUT_SID, who=who, env=ON)
+            ok = got == want
+            fails += 0 if ok else 1
+            label = "child " if who else "parent"
+            print(("PASS" if ok else "FAIL"), "fanout", label, tool, json.dumps(ti)[:60], "want", want, "got", got)
+        # and with the feature off, the parent's Agent call is denied whatever it asks for
+        got = run("Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, sid=FANOUT_SID)
+        ok = got == "deny"
+        fails += 0 if ok else 1
+        print(("PASS" if ok else "FAIL"), "fanout off", "Agent", "want deny got", got)
     finally:
         if saved is None:
             os.remove(MARKER)
         else:
             with open(MARKER, "w") as fh:
                 fh.write(saved)
-    print("%d cases, %d failed" % (len(CASES), fails))
+    print("%d cases, %d failed" % (len(CASES) + len(FANOUT_CASES) + 1, fails))
     sys.exit(1 if fails else 0)
 
 

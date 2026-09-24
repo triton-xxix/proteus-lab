@@ -46,6 +46,19 @@ WRITE_ROOTS = (
 
 READ_ROOTS = ("/Users/triton/",)
 
+# Fan-out: sub-agents inside an unattended run. Tested 2026-09-24, see
+# experiments/2026-09-24-subagent-guardrails/REPORT.md. A child's calls arrive here with the
+# parent's session_id plus agent_id/agent_type, so the hook can hold children to tighter rules.
+#
+# OFF until Luke signs the charter's Fan-out section. Flip FANOUT_ENABLED to True, nothing else.
+# (The test harness overrides it with PROTEUS_FANOUT_OVERRIDE=1; nothing in a run sets that.)
+FANOUT_ENABLED = False
+FANOUT_MAX_SPAWNS = 4                          # per run; the fifth Agent call is denied
+FANOUT_TYPES = {"general-purpose", "Explore"}
+FANOUT_MODELS = {"haiku", "sonnet"}            # must be stated; inheriting Opus is not allowed
+CHILD_WRITE_ROOTS = (PROTEUS_ROOT + "sandbox/", PROTEUS_ROOT + "state/agents/")
+CHILD_EXEC_ROOT = PROTEUS_ROOT + "sandbox/"    # the only place a child may run scripts from
+
 # Tools that cannot prompt and cannot act outside the session.
 FREE_TOOLS = {"Read", "Glob", "Grep", "TodoWrite", "NotebookRead", "BashOutput", "KillShell", "Skill",
               "WebFetch", "WebSearch", "ToolSearch", "SearchSkills", "SearchPlugins", "ListSkills"}
@@ -330,6 +343,77 @@ def bash_ok(cmd):
     return None
 
 
+def fanout_enabled():
+    return FANOUT_ENABLED or os.environ.get("PROTEUS_FANOUT_OVERRIDE") == "1"
+
+
+def spawns_today(session_id):
+    """Agent calls this session has already been allowed today, from the decisions log."""
+    path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d") + ".jsonl"
+    short = str(session_id)[:8]
+    n = 0
+    try:
+        with open(path) as fh:
+            for line in fh:
+                try:
+                    rec = json.loads(line)
+                except Exception:
+                    continue
+                if rec.get("session") == short and rec.get("tool") == "Agent" and rec.get("outcome") == "allow":
+                    n += 1
+    except Exception:
+        pass
+    return n
+
+
+def agent_ok(ti, session_id):
+    """Return None if this Agent call may go ahead, else the reason it may not."""
+    if not fanout_enabled():
+        return "Sub-agents are switched off in unattended runs (FANOUT_ENABLED is False)."
+    if CTX.get("agent_id"):
+        return "Depth one: a sub-agent may not spawn a sub-agent."
+    kind = ti.get("subagent_type") or "general-purpose"
+    if kind not in FANOUT_TYPES:
+        return "subagent_type '%s' is not on the fan-out list %s." % (kind, sorted(FANOUT_TYPES))
+    if ti.get("isolation"):
+        return "isolation '%s' is not allowed; children work in this folder." % ti.get("isolation")
+    model = ti.get("model")
+    if model not in FANOUT_MODELS:
+        return "model must be stated and one of %s; got %r." % (sorted(FANOUT_MODELS), model)
+    n = spawns_today(session_id)
+    if n >= FANOUT_MAX_SPAWNS:
+        return "Spawn cap reached: %d of %d sub-agents already used this run." % (n, FANOUT_MAX_SPAWNS)
+    return None
+
+
+def child_bash_extra(cmd):
+    """Tighter Bash rules for a sub-agent, applied after bash_ok() has passed.
+
+    Children explore; the parent keeps the score. So no git writes, scripts only from sandbox/,
+    mkdir/touch only under the child write roots. Read-only commands and curl are unchanged.
+    """
+    segs, _ = _scan(cmd)
+    for parts in segs or []:
+        head = parts[0]
+        if head == "git":
+            verb = parts[3] if len(parts) > 3 and parts[1] == "-C" else (parts[1] if len(parts) > 1 else "")
+            if verb in GIT_WRITE:
+                return "Sub-agents do not run git %s; the parent commits." % verb
+            continue
+        script = None
+        if _under_root(head):
+            script = head
+        elif head in ("node", "bash", "sh", "python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 1 and _under_root(parts[1]):
+            script = parts[1]
+        if script is not None and not _under(script, CHILD_EXEC_ROOT):
+            return "Sub-agents run scripts only under %s; %s is the parent's." % (CHILD_EXEC_ROOT, script)
+        if head in ("mkdir", "touch"):
+            targets = [p for p in parts[1:] if not p.startswith("-")]
+            if not all(any(_under(t, r) for r in CHILD_WRITE_ROOTS) for t in targets):
+                return "Sub-agents may %s only under %s." % (head, ", ".join(CHILD_WRITE_ROOTS))
+    return None
+
+
 def main():
     try:
         data = json.load(sys.stdin)
@@ -354,17 +438,33 @@ def main():
             deny("%s outside %s." % (tool, READ_ROOTS[0]))
         decide("allow", "%s is read-only and inside the run's scope." % tool)
 
+    child = bool(CTX.get("agent_id"))
+
     if tool in ("Write", "Edit", "MultiEdit", "NotebookEdit"):
         path = ti.get("file_path") or ti.get("notebook_path") or ""
+        if child:
+            if any(_under(path, r) for r in CHILD_WRITE_ROOTS):
+                decide("allow", "Inside the sub-agent write roots.")
+            deny("Sub-agent %s to %s is outside the sub-agent write roots (%s). Children write scratch; "
+                 "the parent copies in what it keeps." % (tool, path or "(no path)", ", ".join(CHILD_WRITE_ROOTS)))
         if any(_under(path, r) for r in WRITE_ROOTS):
             decide("allow", "Inside the Proteus write roots.")
         deny("%s to %s is outside the Proteus write roots (%s). Proteus writes its own folder and "
              "the vault mirror folder, nothing else." % (tool, path or "(no path)", ", ".join(WRITE_ROOTS)))
 
     if tool == "Bash":
-        why = bash_ok((ti.get("command", "") or "").strip())
+        cmd = (ti.get("command", "") or "").strip()
+        why = bash_ok(cmd)
+        if why is None and child:
+            why = child_bash_extra(cmd)
         if why is None:
             decide("allow", "On the Proteus unattended Bash safe list.")
+        deny(why)
+
+    if tool == "Agent":
+        why = agent_ok(ti, session_id)
+        if why is None:
+            decide("allow", "Sub-agent within the fan-out caps.")
         deny(why)
 
     if tool.startswith("mcp__Claude_Browser__"):

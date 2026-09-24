@@ -109,7 +109,8 @@ and add a section after "Cadence":
 >
 > - At most **four** spawns per run, counted from the day's decisions log. The fifth is denied.
 > - **Depth one.** A child may not spawn. Any `Agent` call carrying an agent id is denied.
-> - Types `general-purpose` and `Explore` only, `model` haiku or sonnet only, no worktree isolation.
+> - Types `general-purpose` and `Explore` only. `model` stated on every spawn and haiku or sonnet
+>   only; a spawn that would inherit the parent's Opus is denied. No worktree isolation.
 > - Children do not commit, push, or touch the score: no `git` write verbs, no writes to
 >   `state/runs/`, `SPEND.md`, `TRACK-RECORD.md`, either desk's ledger or predictions file, or the
 >   marker. Children write under `sandbox/` and `state/agents/`. The parent copies in what it keeps.
@@ -120,21 +121,37 @@ and add a section after "Cadence":
 > A scheduled run is a run nobody is watching. The caps are there so a child that gets stuck
 > costs one spawn and one line in the log, not the night.
 
-## Hook changes needed before the ban is lifted
+## Hook changes, made the same day and switched off
 
-Not made. The charter says the ban stands until Luke changes it, and the hook denies `Agent` today.
-When the wording is agreed, the hook needs:
+Luke asked for the hook changes and the tests, so they are in, behind one constant:
+`FANOUT_ENABLED = False` at the top of `.claude/hooks/unattended-decide.py`. While it is False the
+hook denies `Agent` exactly as before, so tonight's run behaves as it did last night. Flipping it
+to True is the only edit needed once the charter wording is signed.
 
-1. `Agent` allowed for the parent when `tool_input.subagent_type` is on the list, `isolation`
-   is absent, `model` is absent or in `{haiku, sonnet}`, and today's log holds fewer than four
-   `Agent`/allow lines for this session. Denied otherwise, with the count in the reason.
-2. When `agent_id` is present in the input: deny `Agent`; deny `git add/commit/push/pull/fetch`;
-   deny Write/Edit to the protected paths above; otherwise the existing rules apply unchanged.
-3. `bin/test-hook.py` cases for each of those, with a fake `agent_id`, before the first live use.
-4. Optional belt and braces, Luke's paste: `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1` in the
-   settings `env` block, so nesting is off even if the hook is bypassed.
+What the code does when it is on:
+
+1. Parent `Agent` calls pass only if `subagent_type` is `general-purpose` or `Explore`, `isolation`
+   is absent, `model` is stated and is `haiku` or `sonnet`, and today's decisions log holds fewer
+   than four `Agent`/allow lines for this session. The denial reason carries the count.
+2. Any call carrying `agent_id` is a child. A child's `Agent` is denied (depth one). A child's
+   Write/Edit must land under `sandbox/` or `state/agents/`. A child's Bash goes through the normal
+   safe list and then a second gate: no `git add/commit/push/pull/fetch`, scripts run only from
+   `sandbox/` (so no desk scripts, no `bin/`, no send path), `mkdir`/`touch` only in the child roots.
+   Reads, `curl` and the browser tools are unchanged.
+3. `bin/test-hook.py` now runs 93 cases: the original 48, 44 fan-out cases under a fresh test
+   session id with the override on, and one check that the parent is denied with it off. The
+   fan-out cases cover every rule above including the fifth spawn being refused. 93 of 93 pass.
+   Test session ids start with `t`, which no real session id does, so `grep -v '"session": "t'`
+   drops every test line from a decisions log.
+4. Not done, and Luke's paste if wanted: `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1` in the settings
+   `env` block, so nesting is off even if the hook is ever bypassed.
+
+Known gap, stated rather than hidden: a child's `curl` can still fetch anything, and a child's
+Bash `cat` can still read anything on disk, exactly as the parent's can. The fan-out rules narrow
+what a child may change, not what it may see.
 
 ## Verdict
 
-Inheritance holds. The ban can be replaced by caps. The ban stays until Luke signs the wording and
-the hook is changed; nothing in this report changes what a scheduled run may do tonight.
+Inheritance holds. The ban can be replaced by caps, and the caps are built and tested. The ban
+stays until Luke signs the wording and flips `FANOUT_ENABLED`; nothing here changes what a
+scheduled run may do tonight.
