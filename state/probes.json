@@ -1,5 +1,5 @@
 {
- "next_id": 17,
+ "next_id": 18,
  "items": [
   {
    "id": "P-0001",
@@ -313,6 +313,25 @@
    "needs": "",
    "after": "2026-09-27",
    "est_minutes": 60,
+   "added": "2026-09-24",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": []
+  },
+  {
+   "id": "P-0017",
+   "title": "Wikimedia pageviews quota: fill the six clubs P-0010 lost to 429 and measure the window (calls per minute, per hour) from this address",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
    "added": "2026-09-24",
    "status": "open",
    "attempts": 0,
