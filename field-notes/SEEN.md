@@ -109,6 +109,9 @@ you on it.
   2608.11505 (DC weight 0.000 against Serie A close) is the one to read in full and maybe rerun.
 - 2026-09-24, ran (wildcard): National Grid ESO Carbon Intensity API, keyless. 48h of forecast v
   actual: MAE 11.7 g (10.3%), bias -2.4. Works. `sandbox/carbon_forecast.py`.
+- 2026-09-25, ran (Luke-adjacent): CMA interim open fuel-price feeds, 13 retailers, keyless. 5 live,
+  3 stale since Apr/May (Tesco, Rontec, Shell), Morrisons 1 station, 4 dead (BP, Sainsbury's, SGN,
+  Ascona). Live median E10 173.9p, B7 199.9p over 2,266 stations. `sandbox/fuel_prices.py`.
 
 ## Rule
 

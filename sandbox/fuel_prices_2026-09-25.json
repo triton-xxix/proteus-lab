@@ -1,0 +1,172 @@
+{
+ "pulled_at": "2026-09-25T22:29:34Z",
+ "feeds": {
+  "Asda": {
+   "url": "https://storelocator.asda.com/fuel_prices_data.json",
+   "status": 200,
+   "seconds": 0.11,
+   "error": null,
+   "last_updated": "25/09/2026 11:04:22",
+   "stations": 790,
+   "e10_n": 790,
+   "e10_median": 173.7,
+   "e10_min": 162.7,
+   "e10_max": 199.9,
+   "b7_n": 790,
+   "b7_median": 198.7,
+   "age_days": 1.0
+  },
+  "BP": {
+   "url": "https://www.bp.com/en_gb/united-kingdom/home/fuelprices/fuel_prices_data.json",
+   "status": null,
+   "seconds": 0.11,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "Esso/Tesco Alliance": {
+   "url": "https://fuelprices.esso.co.uk/latestdata.json",
+   "status": 200,
+   "seconds": 0.07,
+   "error": null,
+   "last_updated": "25/09/2026 00:05:17",
+   "stations": 193,
+   "e10_n": 193,
+   "e10_median": 172.9,
+   "e10_min": 165.9,
+   "e10_max": 176.9,
+   "b7_n": 193,
+   "b7_median": 196.9,
+   "age_days": 1.0
+  },
+  "JET": {
+   "url": "https://jetlocal.co.uk/fuel_prices_data.json",
+   "status": 200,
+   "seconds": 0.13,
+   "error": null,
+   "last_updated": "25/09/2026 10:45:51",
+   "stations": 11,
+   "e10_n": 11,
+   "e10_median": 169.9,
+   "e10_min": 167.9,
+   "e10_max": 170.9,
+   "b7_n": 11,
+   "b7_median": 198.9,
+   "age_days": 1.0
+  },
+  "Morrisons": {
+   "url": "https://www.morrisons.com/fuel-prices/fuel.json",
+   "status": 200,
+   "seconds": 0.04,
+   "error": null,
+   "last_updated": "24/09/2026 10:30:19",
+   "stations": 1,
+   "e10_n": 1,
+   "e10_median": 150.6,
+   "e10_min": 150.6,
+   "e10_max": 150.6,
+   "b7_n": 1,
+   "b7_median": 143.1,
+   "age_days": 2.0
+  },
+  "Moto": {
+   "url": "https://moto-way.com/fuel-price/fuel_prices.json",
+   "status": 200,
+   "seconds": 0.05,
+   "error": null,
+   "last_updated": "25/09/2026 21:58:05",
+   "stations": 47,
+   "e10_n": 47,
+   "e10_median": 199.9,
+   "e10_min": 179.9,
+   "e10_max": 199.9,
+   "b7_n": 47,
+   "b7_median": 219.9,
+   "age_days": 1.0
+  },
+  "MFG": {
+   "url": "https://fuel.motorfuelgroup.com/fuel_prices_data.json",
+   "status": 200,
+   "seconds": 0.4,
+   "error": null,
+   "last_updated": "25/09/2026 00:00:01",
+   "stations": 1225,
+   "e10_n": 1225,
+   "e10_median": 173.9,
+   "e10_min": 131.9,
+   "e10_max": 189.9,
+   "b7_n": 1225,
+   "b7_median": 199.9,
+   "age_days": 1.0
+  },
+  "Rontec": {
+   "url": "https://www.rontec-servicestations.co.uk/fuel-prices/data/fuel_prices_data.json",
+   "status": 200,
+   "seconds": 0.13,
+   "error": null,
+   "last_updated": "01/05/2026 10:55:06",
+   "stations": 265,
+   "e10_n": 265,
+   "e10_median": 157.9,
+   "e10_min": 151.9,
+   "e10_max": 163.9,
+   "b7_n": 265,
+   "b7_median": 189.9,
+   "age_days": 148.0
+  },
+  "Sainsbury's": {
+   "url": "https://api.sainsburys.co.uk/v1/exports/latest/fuel_prices_data.json",
+   "status": null,
+   "seconds": 0.0,
+   "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  "SGN": {
+   "url": "https://www.sgnretail.uk/files/data/SGN_daily_fuel_prices.json",
+   "status": null,
+   "seconds": 20.0,
+   "error": "URLError: <urlopen error timed out>"
+  },
+  "Shell": {
+   "url": "https://www.shell.co.uk/fuel-prices-data.html",
+   "status": 200,
+   "seconds": 0.52,
+   "error": null,
+   "last_updated": "13/05/2026 00:00:00",
+   "stations": 546,
+   "e10_n": 546,
+   "e10_median": 160.9,
+   "e10_min": 142.9,
+   "e10_max": 184.9,
+   "b7_n": 546,
+   "b7_median": 189.9,
+   "age_days": 136.0
+  },
+  "Tesco": {
+   "url": "https://www.tesco.com/fuel_prices/fuel_prices_data.json",
+   "status": 200,
+   "seconds": 0.42,
+   "error": null,
+   "last_updated": "29/04/2026 11:18:22",
+   "stations": 515,
+   "e10_n": 514,
+   "e10_median": 153.9,
+   "e10_min": 147.9,
+   "e10_max": 158.9,
+   "b7_n": 515,
+   "b7_median": 186.9,
+   "age_days": 150.0
+  },
+  "Ascona": {
+   "url": "https://fuelprices.asconagroup.co.uk/newfuel.json",
+   "status": null,
+   "seconds": 0.09,
+   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certi"
+  }
+ },
+ "national": {
+  "e10_n": 2266,
+  "e10_median": 173.9,
+  "e10_p10": 169.9,
+  "e10_p90": 177.9,
+  "b7_n": 2266,
+  "b7_median": 199.9
+ }
+}
