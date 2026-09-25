@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
-"""The Grinder: paper bankroll over the nightly snapshots. Rules v0.1 (see RULES.md).
+"""The Grinder: paper bankroll over the nightly snapshots. Rules v0.2 (see RULES.md); v0.1 rows
+still open close under v0.1's nightly rules.
 
     /Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-rules
     /Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --score
 
---apply-rules: close open positions that hit an exit rule (fresh price from DexScreener), then open
-new positions from the latest snapshot that pass every entry rule. Appends to LEDGER.csv.
+--apply-rules: close open positions that hit an exit rule (v0.2: the first minute candle that
+crossed a level, via paths.py; v0.1: a fresh DexScreener price), then open new v0.2 positions from
+the latest snapshot that pass every entry rule, then refresh PATHS.csv for every row.
 --score: fill score_24h and score_7d from later snapshots or a fresh price. No real money anywhere.
 """
 import argparse
 import csv
+import json
 import os
+import sys
 import time
 from datetime import datetime, timezone, timedelta
 
 import requests
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import paths  # noqa: E402
 
 ROOT = "/Users/triton/PROTEUS/"
 LEDGER = ROOT + "grinder/LEDGER.csv"
@@ -24,14 +31,19 @@ FIELDS = ["id", "entered_at", "token", "mint", "entry_price_usd", "size_gbp", "r
           "exit_at", "exit_price_usd", "exit_reason", "pnl_gbp", "score_24h", "score_7d", "rugged"]
 
 RULES = {
-    "version": "v0.1",
-    "bankroll_gbp": 100.0, "size_gbp": 5.0, "max_open": 4,
+    "version": "v0.2",
+    "bankroll_gbp": 1000.0, "size_gbp": 100.0, "max_open": 4,
     "age_h_min": 1.0, "age_h_max": 48.0,
     "liq_usd_min": 20000, "vol_h24_min": 200000, "vol_h1_min": 10000,
     "top10_pct_max": 30.0, "holders_min": 300, "lp_locked_min": 90.0,
     "take_profit": 1.00, "stop_loss": -0.50, "time_stop_h": 24.0, "rug_drop": -0.90,
-    "fee_pct": 0.01, "fee_flat_usd": 1.5, "gbpusd": 1.30,
+    "gbpusd": 1.30,  # costs: paths.pnl_v02
 }
+# v0.1's exits and fee model, for the v0.1 rows still open. Entries under v0.1 closed 2026-09-25.
+RULES_V01 = {"take_profit": 1.00, "stop_loss": -0.50, "time_stop_h": 24.0, "rug_drop": -0.90,
+             "fee_pct": 0.01, "fee_flat_usd": 1.5, "gbpusd": 1.30}
+BOOKS = json.load(open(ROOT + "grinder/BOOKS.json"))
+assert BOOKS["current"] == RULES["version"], "grinder/BOOKS.json current version disagrees with paper.py"
 
 
 def now():
@@ -90,11 +102,66 @@ def price_now(mint):
 
 
 def pnl_gbp(entry, exit_, size_gbp):
-    """Paper P&L in GBP after 1 percent each way and a flat fee. Optimistic for meme coins; stated in RULES."""
-    usd = size_gbp * RULES["gbpusd"]
-    units = usd * (1 - RULES["fee_pct"]) / entry
-    out = units * exit_ * (1 - RULES["fee_pct"]) - RULES["fee_flat_usd"] * 2
-    return round((out - usd) / RULES["gbpusd"], 2)
+    """v0.1 paper P&L in GBP after 1 percent each way and a $1.50 flat fee per side. v0.1 rows only."""
+    usd = size_gbp * RULES_V01["gbpusd"]
+    units = usd * (1 - RULES_V01["fee_pct"]) / entry
+    out = units * exit_ * (1 - RULES_V01["fee_pct"]) - RULES_V01["fee_flat_usd"] * 2
+    return round((out - usd) / RULES_V01["gbpusd"], 2)
+
+
+def exit_v01(r, t):
+    """v0.1: one fresh price a night, compared with the levels."""
+    entry = fnum(r["entry_price_usd"]); px, liq = price_now(r["mint"])
+    if entry is None or px is None:
+        return
+    change = px / entry - 1
+    held_h = (t - parse(r["entered_at"])).total_seconds() / 3600
+    entry_liq = fnum(r.get("entry_liq_usd"))
+    reason = None
+    if change <= RULES_V01["rug_drop"] or (entry_liq and liq is not None and liq < 0.1 * entry_liq):
+        reason = "rug"
+    elif change >= RULES_V01["take_profit"]:
+        reason = "take_profit"
+    elif change <= RULES_V01["stop_loss"]:
+        reason = "stop_loss"
+    elif held_h >= RULES_V01["time_stop_h"]:
+        reason = "time_stop"
+    if reason:
+        r["exit_at"] = iso(t); r["exit_price_usd"] = px; r["exit_reason"] = reason
+        r["pnl_gbp"] = pnl_gbp(entry, px, fnum(r["size_gbp"]))
+        r["rugged"] = "1" if reason == "rug" else "0"
+
+
+def exit_v02(r, t):
+    """v0.2: the first minute candle that crossed a level (paths.walk). No candles at all: the v0.1
+    nightly logic at the v0.2 cost model, reason suffixed _nightly."""
+    entry = fnum(r["entry_price_usd"])
+    rec, ex = paths.evaluate(r, t.timestamp())
+    if rec.get("status") == "no-candles":
+        px, liq = price_now(r["mint"])
+        if entry is None or px is None:
+            return
+        change = px / entry - 1
+        held_h = (t - parse(r["entered_at"])).total_seconds() / 3600
+        entry_liq = fnum(r.get("entry_liq_usd"))
+        if change <= RULES["rug_drop"] or (entry_liq and liq is not None and liq < 0.1 * entry_liq):
+            reason = "rug"
+        elif change >= RULES["take_profit"]:
+            reason = "take_profit"
+        elif change <= RULES["stop_loss"]:
+            reason = "stop_loss"
+        elif held_h >= RULES["time_stop_h"]:
+            reason = "time_stop"
+        else:
+            return
+        ex = (t.timestamp(), px, reason + "_nightly")
+    if not ex:
+        return
+    ts, fill, reason = ex
+    later = paths.min_liq_between(r["mint"], r["entered_at"], paths.iso(ts))
+    r["exit_at"] = paths.iso(ts); r["exit_price_usd"] = fill; r["exit_reason"] = reason
+    r["pnl_gbp"] = paths.pnl_v02(entry, fill, reason, fnum(r["size_gbp"]), fnum(r.get("entry_liq_usd")), later)
+    r["rugged"] = "1" if reason.startswith("rug") else "0"
 
 
 def passes(r):
@@ -119,33 +186,19 @@ def apply_rules():
     ledger = load_ledger()
     open_rows = [r for r in ledger if not r.get("exit_at")]
     t = now()
-    # exits
+    # exits, each row under the rules it was opened under
     for r in open_rows:
-        entry = fnum(r["entry_price_usd"]); px, liq = price_now(r["mint"])
-        if entry is None or px is None:
-            continue
-        change = px / entry - 1
-        held_h = (t - parse(r["entered_at"])).total_seconds() / 3600
-        reason = None
-        entry_liq = fnum(r.get("entry_liq_usd"))
-        if change <= RULES["rug_drop"] or (entry_liq and liq is not None and liq < 0.1 * entry_liq):
-            reason = "rug"
-        elif change >= RULES["take_profit"]:
-            reason = "take_profit"
-        elif change <= RULES["stop_loss"]:
-            reason = "stop_loss"
-        elif held_h >= RULES["time_stop_h"]:
-            reason = "time_stop"
-        if reason:
-            r["exit_at"] = iso(t); r["exit_price_usd"] = px; r["exit_reason"] = reason
-            r["pnl_gbp"] = pnl_gbp(entry, px, fnum(r["size_gbp"]))
-            r["rugged"] = "1" if reason == "rug" else "0"
+        if r.get("rule_version") == "v0.1":
+            exit_v01(r, t)
+        else:
+            exit_v02(r, t)
         time.sleep(0.3)
-    # entries
-    still_open = [r for r in ledger if not r.get("exit_at")]
+    # entries: the current book only; its open count and bankroll are its own
+    book = [r for r in ledger if r.get("rule_version") == RULES["version"]]
+    still_open = [r for r in book if not r.get("exit_at")]
     held = {r["mint"] for r in ledger}
     slots = RULES["max_open"] - len(still_open)
-    realised = sum(fnum(r["pnl_gbp"]) or 0 for r in ledger if r.get("pnl_gbp"))
+    realised = sum(fnum(r["pnl_gbp"]) or 0 for r in book if r.get("pnl_gbp"))
     bankroll = RULES["bankroll_gbp"] + realised - RULES["size_gbp"] * len(still_open)
     opened = 0
     if slots > 0 and bankroll >= RULES["size_gbp"]:
@@ -160,6 +213,8 @@ def apply_rules():
             opened += 1
     save_ledger(ledger)
     print("exits", sum(1 for r in open_rows if r.get("exit_at")), "entries", opened, "open", len([r for r in ledger if not r.get("exit_at")]))
+    recs = paths.write_paths(ledger, t.timestamp())
+    print("paths", len(recs), "rows,", sum(1 for x in recs if x.get("status") == "no-candles"), "without candles")
     if opened == 0:
         print("binding constraints:", binding(latest_snapshot()))
 

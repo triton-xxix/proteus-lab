@@ -124,7 +124,11 @@ holding window and the time of each, the path-aware exit, what the rule captured
 high reaches the take-profit, triggers the exit. If both are reached inside the same candle, the
 stop is taken (the order inside a minute is unknown, so the worse case). If the candle opened
 beyond the level (a gap), the fill is the open, not the level. A fill at or below -90% from entry
-is logged as a rug. With no trigger by entry plus 24 hours, the time stop fills at the close of the
+is logged as a rug. **Tightened 2026-09-25, an hour after the above was committed and after seeing
+the case that broke it:** if the trigger candle's low also reaches the rug level (-90%), the fill is
+that candle's close (or the gap fill, if lower) and the exit is a rug. G-0005 opened its stop minute
+at -27% and closed it at -98% on $11k of volume; a fill at the -50% level inside a one-minute rug is
+not a price anyone got. Tightening only, before any v0.2 row. With no trigger by entry plus 24 hours, the time stop fills at the close of the
 last candle before that time. The entry minute itself is not used, so no price that printed before
 the entry can trigger an exit.
 

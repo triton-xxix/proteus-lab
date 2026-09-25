@@ -29,7 +29,7 @@ import sys
 from datetime import datetime, timezone
 
 ROOT = "/Users/triton/PROTEUS/"
-INPUTS = ["grinder/LEDGER.csv", "pitch/PREDICTIONS.csv", "state/spend.jsonl"]
+INPUTS = ["grinder/LEDGER.csv", "grinder/BOOKS.json", "pitch/PREDICTIONS.csv", "state/spend.jsonl"]
 
 
 def fnum(x):
@@ -54,23 +54,37 @@ def blob_sha(path):
     return h.hexdigest()
 
 
-def grinder():
-    rows = list(csv.DictReader(open(ROOT + "grinder/LEDGER.csv")))
-    opened = len(rows)
+def book_stats(rows, stake, bankroll):
     scored = [r for r in rows if fnum(r.get("score_24h")) is not None]
     pnl = [fnum(r.get("pnl_gbp")) for r in rows if fnum(r.get("pnl_gbp")) is not None]
     hits = [p for p in pnl if p > 0]
     rugged = [r for r in rows if (r.get("rugged") or "").lower() in ("1", "true", "yes")]
     return {
-        "bankroll_start": 100.0,
-        "bankroll_now": round(100.0 + sum(pnl), 2),
-        "opened": opened,
+        "stake_gbp": stake,
+        "bankroll_start": bankroll,
+        "bankroll_now": round(bankroll + sum(pnl), 2),
+        "opened": len(rows),
         "closed": len(pnl),
         "scored_24h": len(scored),
         "hit_rate": round(len(hits) / len(pnl), 3) if pnl else None,
         "expectancy": round(sum(pnl) / len(pnl), 2) if pnl else None,
+        "expectancy_pct_stake": round(100 * sum(pnl) / len(pnl) / stake, 1) if pnl else None,
         "rugged": len(rugged),
     }
+
+
+def grinder():
+    """The headline is the current rule version's book (grinder/BOOKS.json). Every version is also
+    published as its own book: a stake change makes one pooled expectancy meaningless."""
+    rows = list(csv.DictReader(open(ROOT + "grinder/LEDGER.csv")))
+    if not os.path.exists(ROOT + "grinder/BOOKS.json"):  # a tree from before v0.2, or the audit self-test: one £100 book
+        return dict(book_stats(rows, 5.0, 100.0), version="v0.1", books={})
+    books = json.load(open(ROOT + "grinder/BOOKS.json"))
+    cur = books["current"]
+    out = {"version": cur}
+    out.update(book_stats([r for r in rows if r.get("rule_version") == cur], books["books"][cur]["stake_gbp"], books["books"][cur]["bankroll_gbp"]))
+    out["books"] = {v: book_stats([r for r in rows if r.get("rule_version") == v], b["stake_gbp"], b["bankroll_gbp"]) for v, b in books["books"].items()}
+    return out
 
 
 def pitch():
@@ -162,14 +176,29 @@ def render_md(d):
         "",
         "## The Grinder (meme-coin paper desk)",
         "",
+        "Current rules %s, £%.2f a position. Earlier rule versions are their own books, in the table below." % (g["version"], g["stake_gbp"]),
+        "",
         "| Measure | Value |", "|---|---|",
-        "| Paper bankroll | £%.2f (started £100.00) |" % g["bankroll_now"],
+        "| Paper bankroll | £%.2f (started £%.2f) |" % (g["bankroll_now"], g["bankroll_start"]),
         "| Positions opened | %d |" % g["opened"],
         "| Positions closed | %d |" % g["closed"],
         "| Positions scored at 24h | %d |" % g["scored_24h"],
         "| Hit rate | %s |" % na(g["hit_rate"]),
         "| Expectancy per position | %s |" % ("n/a" if g["expectancy"] is None else "£%.2f" % g["expectancy"]),
+        "| Expectancy as a share of the stake | %s |" % na(g["expectancy_pct_stake"], "%"),
         "| Positions that rugged | %d |" % g["rugged"],
+        "",
+        "| Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |",
+        "|---|---|---|---|---|---|---|---|",
+    ] + [
+        "| %s | £%.2f | %d | %d | %s | %s | £%.2f (from £%.2f) | %d |" % (
+            v, b["stake_gbp"], b["opened"], b["closed"], "n/a" if b["expectancy"] is None else "£%.2f" % b["expectancy"],
+            na(b["expectancy_pct_stake"], "%"), b["bankroll_now"], b["bankroll_start"], b["rugged"])
+        for v, b in sorted(g["books"].items())
+    ] + [
+        "",
+        "Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside",
+        "what the ledger recorded, so a stop honoured late shows next to the stop the rule said.",
         "",
         "## The Pitch (football forecast desk)",
         "",

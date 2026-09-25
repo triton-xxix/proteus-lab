@@ -52,13 +52,19 @@ meant and the scorer is wrong.
 text) is not a number. A timestamp is UTC in the form `2026-09-24T07:36:07Z`; any other shape is
 not a valid stamp.
 
-**The Grinder**, from `grinder/LEDGER.csv`, one row per paper position.
+**The Grinder**, from `grinder/LEDGER.csv`, one row per paper position, and `grinder/BOOKS.json`,
+which names the current rule version and each version's stake and starting bankroll. Each rule
+version is a separate book (a £5 book and a £100 book pooled into one expectancy would mean nothing).
+The headline lines below are computed over rows whose `rule_version` is `current`; the same lines
+are published per version under `grinder.books.<version>` in data.json, plus `expectancy_pct_stake`
+(expectancy divided by that book's stake, times 100, published to 1 decimal). If BOOKS.json is
+absent (any commit before 25 Sep 2026), every row is one book with a £100 bankroll.
 
 | Line | Definition |
 |---|---|
 | Positions opened | Number of rows |
-| Positions closed | Rows where `pnl_gbp` is a number. P&L is written by the exit rule after the fee model in `grinder/RULES.md`, and is not recomputed here |
-| Paper bankroll | £100 plus the sum of `pnl_gbp` over closed rows. Open positions are not marked to market |
+| Positions closed | Rows where `pnl_gbp` is a number. P&L is written by the exit rule after the cost model in `grinder/RULES.md`, and is not recomputed here |
+| Paper bankroll | The book's starting bankroll from BOOKS.json plus the sum of `pnl_gbp` over its closed rows. Open positions are not marked to market |
 | Positions scored at 24h | Rows where `score_24h` is a number |
 | Hit rate | Closed rows with `pnl_gbp` above zero, divided by closed rows; published to 3 decimals |
 | Expectancy per position | Mean of `pnl_gbp` over closed rows; published to 2 decimals |

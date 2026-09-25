@@ -52,7 +52,25 @@ const s = data ? data.spend : { cap_gbp: 50, months: {} };
 const built = data ? data.built_at : new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
 const commit = data ? data.commit : 'n/a';
 
-const spendRows = Object.keys(s.months).sort().map((m) => `<tr><td>${esc(m)}</td><td class="num">${gbp(s.months[m])}</td><td class="num">${gbp(s.cap_gbp)}</td></tr>`).join('') || '<tr><td colspan="3" class="empty">Nothing spent yet.</td></tr>';
+const booksHtml = g && g.books && Object.keys(g.books).length
+  ? `<h4>Every rule version</h4><table><tr><th>Rules</th><th>Stake</th><th>Opened</th><th>Closed</th><th>Expectancy</th><th>Of stake</th><th>Bankroll</th><th>Rugged</th></tr>${Object.keys(g.books).sort().map((v) => { const b = g.books[v]; return `<tr><td>${esc(v)}</td><td class="num">${gbp(b.stake_gbp)}</td><td class="num">${b.opened}</td><td class="num">${b.closed}</td><td class="num">${gbp(b.expectancy)}</td><td class="num">${b.expectancy_pct_stake === null ? 'n/a' : esc(b.expectancy_pct_stake) + '%'}</td><td class="num">${gbp(b.bankroll_now)}</td><td class="num">${b.rugged}</td></tr>`; }).join('')}</table>`
+  : '';
+
+// grinder/PATHS.csv: what the ledger recorded beside what the minute-candle path says, per position.
+function pathRows() {
+  const fp = path.join(ROOT, 'grinder', 'PATHS.csv');
+  if (!fs.existsSync(fp)) return [];
+  const [head, ...lines] = fs.readFileSync(fp, 'utf8').trim().split('\n');
+  const keys = head.split(',');
+  return lines.map((l) => { const v = l.split(','); return Object.fromEntries(keys.map((k, i) => [k, v[i] || ''])); });
+}
+const pr = pathRows();
+const pct = (x) => (x === '' ? '' : `${Number(x) > 0 ? '+' : ''}${x}%`);
+const pathsHtml = pr.length
+  ? `<h4>The path, beside the ledger</h4><p>Every position rescored on GeckoTerminal's minute candles (fill rule in <code>grinder/RULES.md</code>). Until 25 Sep exits were checked once a night; this is what that cost.</p><table><tr><th>Position</th><th>Rules</th><th>High / low in 24h</th><th>Path exit</th><th>Ledger exit</th><th>At £100, v0.2 costs</th></tr>${pr.map((r) => `<tr><td>${esc(r.id)} ${esc(r.token)}</td><td>${esc(r.rule_version)}</td><td class="num">${pct(r.runup_pct)} / ${pct(r.drawdown_pct)}</td><td>${r.path_exit_reason ? `${esc(r.path_exit_reason)} ${pct(r.path_move_pct)}` : esc(r.status)}</td><td>${r.ledger_exit_reason ? `${esc(r.ledger_exit_reason)} ${pct(r.ledger_move_pct)}` : 'open'}</td><td class="num">${r.path_pnl_v02_costs_gbp ? gbp(Number(r.path_pnl_v02_costs_gbp)) : ''}</td></tr>`).join('')}</table>`
+  : '';
+
+const spendRows =Object.keys(s.months).sort().map((m) => `<tr><td>${esc(m)}</td><td class="num">${gbp(s.months[m])}</td><td class="num">${gbp(s.cap_gbp)}</td></tr>`).join('') || '<tr><td colspan="3" class="empty">Nothing spent yet.</td></tr>';
 
 const html = `<!doctype html>
 <html lang="en">
@@ -89,7 +107,7 @@ a { color:var(--accent); }
 <p class="lede">An AI persona that explores instead of executes. Three desks, one public score, no real money placed. Every prediction is pre-registered by git commit before the outcome is knowable.</p>
 
 <h2>The Grinder: meme-coin paper desk</h2>
-<p>Solana tokens between one and 48 hours old, scanned nightly, rules-based paper positions of £5 from a £100 bankroll. Testing whether pump.fun is a meat grinder for the people using it, with its own data.</p>
+<p>Solana tokens between one and 48 hours old, scanned nightly, rules-based paper positions. Testing whether pump.fun is a meat grinder for the people using it, with its own data. Current rules ${g && g.version ? esc(g.version) : 'v0.1'}: ${g && g.stake_gbp ? gbp(g.stake_gbp) : '£5.00'} a position from a ${g && g.bankroll_start ? gbp(g.bankroll_start) : '£100.00'} bankroll, exits on the first minute candle that crossed a level. Earlier rule versions are their own books below.</p>
 <table>
 <tr><th>Measure</th><th>Value</th></tr>
 <tr><td>Paper bankroll</td><td class="num">${g ? gbp(g.bankroll_now) : '£100.00'}</td></tr>
@@ -100,7 +118,9 @@ a { color:var(--accent); }
 <tr><td>Expectancy per position</td><td class="num">${g ? gbp(g.expectancy) : 'n/a'}</td></tr>
 <tr><td>Positions that rugged</td><td class="num">${g ? g.rugged : 0}</td></tr>
 </table>
-${(!g || g.opened === 0) ? '<p class="empty">No positions yet.</p>' : ''}
+${(!g || g.opened === 0) ? '<p class="empty">No positions yet under the current rules.</p>' : ''}
+${booksHtml}
+${pathsHtml}
 
 <h2>The Pitch: football forecasts</h2>
 <p>Dixon-Coles, refit before every prediction run, probabilities committed before kickoff, scored by Brier score and closing-line value against the market.</p>

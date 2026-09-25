@@ -1,20 +1,50 @@
 {
- "built_at": "2026-09-24 08:17 UTC",
- "commit": "ed3b3ca",
+ "built_at": "2026-09-25 06:57 UTC",
+ "commit": "259a9d6",
  "input_blobs": {
-  "grinder/LEDGER.csv": "03fcf826d2fff1ebee8c011655b60262654006ef",
+  "grinder/LEDGER.csv": "956e0251978c8c7c5fb86d032df2f57d250fbf5b",
+  "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "431fba5aac2112f5097bb4e3b2a94f8a63b1f33e",
   "state/spend.jsonl": null
  },
  "grinder": {
-  "bankroll_start": 100.0,
-  "bankroll_now": 100.0,
-  "opened": 4,
+  "version": "v0.2",
+  "stake_gbp": 100.0,
+  "bankroll_start": 1000.0,
+  "bankroll_now": 1000.0,
+  "opened": 0,
   "closed": 0,
   "scored_24h": 0,
   "hit_rate": null,
   "expectancy": null,
-  "rugged": 0
+  "expectancy_pct_stake": null,
+  "rugged": 0,
+  "books": {
+   "v0.1": {
+    "stake_gbp": 5.0,
+    "bankroll_start": 100.0,
+    "bankroll_now": 96.82,
+    "opened": 6,
+    "closed": 2,
+    "scored_24h": 0,
+    "hit_rate": 0.5,
+    "expectancy": -1.59,
+    "expectancy_pct_stake": -31.8,
+    "rugged": 0
+   },
+   "v0.2": {
+    "stake_gbp": 100.0,
+    "bankroll_start": 1000.0,
+    "bankroll_now": 1000.0,
+    "opened": 0,
+    "closed": 0,
+    "scored_24h": 0,
+    "hit_rate": null,
+    "expectancy": null,
+    "expectancy_pct_stake": null,
+    "rugged": 0
+   }
+  }
  },
  "pitch": {
   "committed_before_kickoff": 0,

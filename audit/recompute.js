@@ -97,18 +97,29 @@ const TS = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})$/;
 const ts = (s) => (TS.test(String(s || '').trim()) ? Date.parse(String(s).trim()) : NaN);
 
 // ---- the recompute ------------------------------------------------------------------------------
-function grinder(csv) {
-  const rows = parseCsv(csv);
+// One rule version's book. Since 2026-09-25 the headline is the current version's book, named in
+// grinder/BOOKS.json; a tree without that file (before v0.2, or the self-test) is one £100 book.
+function book(rows, stake, bankroll) {
   const pnl = rows.map((r) => num(r.pnl_gbp)).filter((v) => v !== null);
+  const exp = mean(pnl);
   return {
-    bankroll_now: 100 + pnl.reduce((a, b) => a + b, 0),
+    bankroll_now: bankroll + pnl.reduce((a, b) => a + b, 0),
     opened: rows.length,
     closed: pnl.length,
     scored_24h: rows.filter((r) => num(r.score_24h) !== null).length,
     hit_rate: pnl.length ? pnl.filter((v) => v > 0).length / pnl.length : null,
-    expectancy: mean(pnl),
+    expectancy: exp,
+    expectancy_pct_stake: exp === null ? null : (100 * exp) / stake,
     rugged: rows.filter((r) => truthy(r.rugged)).length,
   };
+}
+function grinder(csv, booksJson) {
+  const rows = parseCsv(csv);
+  if (!booksJson) return { ...book(rows, 5, 100), books: {} };
+  const b = JSON.parse(booksJson);
+  const out = { ...book(rows.filter((r) => r.rule_version === b.current), b.books[b.current].stake_gbp, b.books[b.current].bankroll_gbp), books: {} };
+  for (const [v, cfg] of Object.entries(b.books)) out.books[v] = book(rows.filter((r) => r.rule_version === v), cfg.stake_gbp, cfg.bankroll_gbp);
+  return out;
 }
 
 function pitch(csv) {
@@ -192,7 +203,7 @@ const fmt = (v, dp, extra = 0) => (v === null || v === undefined ? (v === undefi
 
 const builtMonth = (pub.built_at || '').slice(0, 7) || null;
 const mine = {
-  grinder: grinder(read('grinder/LEDGER.csv') || ''),
+  grinder: grinder(read('grinder/LEDGER.csv') || '', read('grinder/BOOKS.json')),
   pitch: pitch(read('pitch/PREDICTIONS.csv') || ''),
   field_notes: fieldNotes(listFieldNotes()),
   spend: spend(read('state/spend.jsonl'), builtMonth),
@@ -233,6 +244,17 @@ for (const [sec, key, dp, label] of LINES) {
   const verdict = okJson === false || okMd === false ? 'FAIL' : (okJson === null ? 'SKIP' : 'OK');
   if (verdict === 'FAIL') fails++;
   results.push({ line: `${sec}.${key}`, json: fmt(p, dp), md: label === null ? '' : fmt(tv, dp), mine: fmt(exact, dp, 2), verdict });
+}
+
+// Grinder books, one per rule version (data.json only; the markdown table is rendered from the same values).
+const pubBooks = (pub.grinder && pub.grinder.books) || {};
+for (const [v, mb] of Object.entries(mine.grinder.books)) {
+  for (const [key, dp] of [['opened', 0], ['closed', 0], ['expectancy', 2], ['expectancy_pct_stake', 1], ['bankroll_now', 2], ['rugged', 0]]) {
+    const p = pubBooks[v] ? pubBooks[v][key] : undefined;
+    const ok = p === undefined ? false : agrees(p, mb[key], dp);
+    if (!ok) fails++;
+    results.push({ line: `grinder.books.${v}.${key}`, json: fmt(p, dp), md: '', mine: fmt(mb[key], dp, 2), verdict: ok ? 'OK' : 'FAIL' });
+  }
 }
 
 // Spend: month by month, from the committed spend log, for the month the score was built in and every month in it.

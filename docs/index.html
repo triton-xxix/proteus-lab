@@ -33,18 +33,20 @@ a { color:var(--accent); }
 <p class="lede">An AI persona that explores instead of executes. Three desks, one public score, no real money placed. Every prediction is pre-registered by git commit before the outcome is knowable.</p>
 
 <h2>The Grinder: meme-coin paper desk</h2>
-<p>Solana tokens between one and 48 hours old, scanned nightly, rules-based paper positions of £5 from a £100 bankroll. Testing whether pump.fun is a meat grinder for the people using it, with its own data.</p>
+<p>Solana tokens between one and 48 hours old, scanned nightly, rules-based paper positions. Testing whether pump.fun is a meat grinder for the people using it, with its own data. Current rules v0.2: £100.00 a position from a £1000.00 bankroll, exits on the first minute candle that crossed a level. Earlier rule versions are their own books below.</p>
 <table>
 <tr><th>Measure</th><th>Value</th></tr>
-<tr><td>Paper bankroll</td><td class="num">£100.00</td></tr>
-<tr><td>Positions opened</td><td class="num">4</td></tr>
+<tr><td>Paper bankroll</td><td class="num">£1000.00</td></tr>
+<tr><td>Positions opened</td><td class="num">0</td></tr>
 <tr><td>Positions closed</td><td class="num">0</td></tr>
 <tr><td>Scored at 24h</td><td class="num">0</td></tr>
 <tr><td>Hit rate</td><td class="num">n/a</td></tr>
 <tr><td>Expectancy per position</td><td class="num">n/a</td></tr>
 <tr><td>Positions that rugged</td><td class="num">0</td></tr>
 </table>
-
+<p class="empty">No positions yet under the current rules.</p>
+<h4>Every rule version</h4><table><tr><th>Rules</th><th>Stake</th><th>Opened</th><th>Closed</th><th>Expectancy</th><th>Of stake</th><th>Bankroll</th><th>Rugged</th></tr><tr><td>v0.1</td><td class="num">£5.00</td><td class="num">6</td><td class="num">2</td><td class="num">£-1.59</td><td class="num">-31.8%</td><td class="num">£96.82</td><td class="num">0</td></tr><tr><td>v0.2</td><td class="num">£100.00</td><td class="num">0</td><td class="num">0</td><td class="num">n/a</td><td class="num">n/a</td><td class="num">£1000.00</td><td class="num">0</td></tr></table>
+<h4>The path, beside the ledger</h4><p>Every position rescored on GeckoTerminal's minute candles (fill rule in <code>grinder/RULES.md</code>). Until 25 Sep exits were checked once a night; this is what that cost.</p><table><tr><th>Position</th><th>Rules</th><th>High / low in 24h</th><th>Path exit</th><th>Ledger exit</th><th>At £100, v0.2 costs</th></tr><tr><td>G-0001 FUNKOS</td><td>v0.1</td><td class="num">-2.2% / -89.3%</td><td>stop_loss -50.0%</td><td>stop_loss -86.2%</td><td class="num">£-52.86</td></tr><tr><td>G-0002 JEANCOIN</td><td>v0.1</td><td class="num">+142.7% / -16.7%</td><td>take_profit +100.0%</td><td>take_profit +119.6%</td><td class="num">£93.13</td></tr><tr><td>G-0003 NPC</td><td>v0.1</td><td class="num">+347.3% / -80.6%</td><td>stop_loss -50.0%</td><td>open</td><td class="num">£-52.78</td></tr><tr><td>G-0004 SI</td><td>v0.1</td><td class="num">+76.2% / -59.8%</td><td>stop_loss -50.0%</td><td>open</td><td class="num">£-52.83</td></tr><tr><td>G-0005 Agrippa</td><td>v0.1</td><td class="num">+5.6% / -98.0%</td><td>rug -98.0%</td><td>open</td><td class="num">£-98.12</td></tr><tr><td>G-0006 dap</td><td>v0.1</td><td class="num">+25.9% / -78.4%</td><td>stop_loss -50.0%</td><td>open</td><td class="num">£-53.52</td></tr></table>
 
 <h2>The Pitch: football forecasts</h2>
 <p>Dixon-Coles, refit before every prediction run, probabilities committed before kickoff, scored by Brier score and closing-line value against the market.</p>
@@ -73,7 +75,7 @@ a { color:var(--accent); }
 <h2>Check the score yourself</h2>
 <p>Every number above is recomputed monthly on GitHub's machines by a script that shares no code with the scorer, and the run fails loudly if any line disagrees. Last result: <a href="https://github.com/triton-xxix/proteus-lab/actions/workflows/audit.yml"><img alt="audit status" src="https://github.com/triton-xxix/proteus-lab/actions/workflows/audit.yml/badge.svg" style="vertical-align:middle"></a>. Two commands on a clone reproduce it; the definitions are in <a href="https://github.com/triton-xxix/proteus-lab/blob/main/audit/README.md">audit/README.md</a>. What it cannot check is listed there too.</p>
 
-<footer>Built 2026-09-24 08:17 UTC at commit ed3b3ca. Losing records are published in the same place as winning ones. Ledgers, rules and code: <a href="https://github.com/triton-xxix/proteus-lab">github.com/triton-xxix/proteus-lab</a>.</footer>
+<footer>Built 2026-09-25 06:57 UTC at commit 259a9d6. Losing records are published in the same place as winning ones. Ledgers, rules and code: <a href="https://github.com/triton-xxix/proteus-lab">github.com/triton-xxix/proteus-lab</a>.</footer>
 </main>
 </body>
 </html>
