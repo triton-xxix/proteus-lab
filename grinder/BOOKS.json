@@ -1,0 +1,7 @@
+{
+ "current": "v0.2",
+ "books": {
+  "v0.1": {"stake_gbp": 5.0, "bankroll_gbp": 100.0, "opened": "2026-09-22", "closed_to_entries": "2026-09-25"},
+  "v0.2": {"stake_gbp": 100.0, "bankroll_gbp": 1000.0, "opened": "2026-09-25", "closed_to_entries": null}
+ }
+}

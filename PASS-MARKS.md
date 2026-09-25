@@ -62,19 +62,71 @@ answer, either way. A closed position is a ledger row with `pnl_gbp` filled, aft
 |---|---|
 | Sample floor for any verdict | 40 closed positions under one rule version |
 | Sample after which INCONCLUSIVE is no longer available | 100 closed positions |
-| KEEP | Expectancy at least +£0.50 per position (10% of the £5 stake) after fees, still at or above £0.00 with the single best position removed, and at most 10% of positions logged as rugs |
-| KILL | Expectancy at or below -£0.50 per position at 40 or more positions; or anything below +£0.50 at 100 or more positions |
+| KEEP | Expectancy at least +10% of the stake per position after costs (£0.50 at v0.1's £5, £10 at v0.2's £100), still at or above zero with the single best position removed, and at most 10% of positions logged as rugs |
+| KILL | Expectancy at or below -10% of the stake per position at 40 or more positions; or anything below +10% at 100 or more positions |
 | INCONCLUSIVE | Under 40 positions, or between the lines under 100 positions, or a KEEP condition missed under 100 positions |
+
+The lines are stated as a share of the stake from 2026-09-25, when the stake moved from £5 to £100
+(`grinder/RULES.md`, v0.2). At £5 they are the same numbers as before to the penny. Only rows under
+the current rule version (`grinder/BOOKS.json`, `current`) are judged; each earlier version's rows
+stay published as their own book and are judged under their own stake.
 
 A KILL here means the hypothesis is confirmed for this rule set. The paper book closes, the
 result is published, and the scanner and its snapshots are free to become the rug-check CLI in the
 backlog, which is a different artefact with a different purpose, not a reason to keep the book open.
 
 **Executor bar** (the charter's "if the record earns it"): 200 closed positions under one unchanged
-rule version, expectancy at least +£1.00 (20% of stake) after fees, at least +£0.50 with the best
+rule version, expectancy at least +20% of stake after costs, at least +10% of stake with the best
 three positions removed, positive expectancy in each half of the sample, rug rate at most 5%, and
 at least 20 of those positions filled at prices from a live quote at entry and exit, not the
 nightly snapshot price. Nothing below this line gets an executor written.
+
+**Why the stake moved, 2026-09-25, written before any v0.2 row.** Under v0.1's fee model a £5
+position paid $3 flat plus 1% each way, about 46% round trip. A clean take-profit netted about
++£2.54 and a clean stop about -£4.88, so KEEP needed the take-profit to come first about 72% of the
+time. A coin with no drift reaches +100% before -50% half the time, and this desk's hypothesis is
+that these coins drift down. The line was unreachable by construction, and a KILL under it would
+have measured the fee model, not the tokens. The $1.50 was also invented: a Solana swap's network
+cost is cents. v0.2 drops it, keeps the 1% pool fee, adds price impact from the pool's own
+liquidity and an execution slippage on every exit, and stakes £100 (inside the "£100 to £150 a
+real trade would be" range Luke named). Round-trip cost falls to roughly 5 to 9% at the
+liquidity gate. This is a rule change: the clock resets, v0.1's six rows stay published as their
+own book. The cost model is lower than v0.1's, so on the cost line this is a loosening, and it is
+logged as one. No pass line moved: every line is the same share of the stake it always was.
+
+## The Grinder: rule candidates, the replay, and promotion
+
+Written 2026-09-25, before the harness exists and before any candidate has been replayed.
+
+**What the replay is, named honestly.** Replaying the snapshots since 22 Sep against rule variants
+is in-sample fitting on the same weeks the live book trades. Its best variant will look better than
+it is, by an amount that grows with the number of variants tried. So the replay can earn a variant
+a trial, never a result. Only forward rows decide.
+
+1. **Variants are listed before they run.** Every variant goes into `grinder/harness/VARIANTS.md`
+   with its parameters, committed before the first replay. The count N is the number of rows in
+   that file, including ones that later fail to run. Adding a variant after seeing results is
+   allowed and costs: it increases N for every variant.
+2. **Same costs, same fills.** A variant may change entry gates, the stop, the take-profit, the time
+   stop, the check interval and the stake. It may not change the cost model, the fill rule or the
+   candle record. A variant that only wins on cheaper assumptions has not won.
+3. **Second paper book.** A variant earns one book beside the current rules if, on the replay: at
+   least 40 replayed closed positions; expectancy at least +10% of stake; expectancy still at or
+   above zero with its best three positions removed; and expectancy above the current rules'
+   replay expectancy by at least 10 points of stake plus 1 point for every variant in N beyond ten.
+   Only the single best qualifying variant by trimmed expectancy opens a book. One second book at a
+   time, and never during a CHANGE window.
+4. **Replacing the current rules.** Only on forward rows, closed after the second book opened, over
+   the same nights for both books: at least 40 closed positions in each; the candidate's
+   expectancy at least +10% of stake and at least 10 points above the incumbent's; the candidate's
+   trimmed expectancy (best position removed) at or above zero. Replay rows never count here. A
+   replacement is a rule change and resets the clock.
+5. **Closing a second book.** If it has not met item 4 by 100 closed positions, or if it is at or
+   below -10% of stake at 40, it closes and stays published as its own book.
+6. **The record.** Exits are decided on the committed minute candles (RULES.md). If an hourly
+   poller is ever added and it disagrees with the candles on a fill, the candles are the record and
+   the disagreement is logged. At the executor rung this flips: a live quote that could have been
+   traded beats any chart.
 
 Why these lines. The fee model in `RULES.md` costs £5 positions about 46% round trip ($3 flat plus
 1% each way on $6.50), so a position needs +49% just to break even and a flat exit at the time stop
@@ -227,3 +279,5 @@ These are charter breaches. Any one of them is a kill on its own, before the num
 |---|---|---|---|
 | 2026-09-24 | Written | n/a | none: 0 positions, 0 predictions, 0 notes shipped |
 | 2026-09-24 | Pitch coverage and sample pooled over every league the desk predicts, not E0 and E1 only, after the desk widened to nine leagues the same morning; the 500 floor is unchanged | Neither; the same bar over a larger feed | none: 0 predictions |
+| 2026-09-25 | Grinder lines restated as a share of the stake (10% keep, -10% kill, executor 20% and 10% trimmed); only the current rule version is judged; the Grinder moves to v0.2 (stake £100, cost model replaced, exits on minute candles), which resets its clock | Pass lines: neither, same share of stake. Cost model: loosened (cheaper than v0.1's), logged as such | v0.1: 6 opened, 2 closed (G-0001 -£6.63, G-0002 +£3.45), judged as their own book. v0.2: none |
+| 2026-09-25 | Rule candidates, replay and promotion section added, before the harness exists | Tightened: adds a bar where there was none | none: no candidate replayed |

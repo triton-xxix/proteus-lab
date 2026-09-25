@@ -29,12 +29,14 @@ FIELD_NOTES_WEEKS = [(2026, w) for w in range(39, 47)]         # W39 (27 Sep) to
 # ---- Grinder (PASS-MARKS.md, "The Grinder") -----------------------------------------------------
 G_FLOOR = 40            # closed positions before any verdict
 G_FLOOR_FINAL = 100     # closed positions after which "inconclusive" is no longer available
-G_KEEP_EXP = 0.50       # GBP per position after fees
-G_KILL_EXP = -0.50
+# Expectancy lines are shares of the stake since 2026-09-25 (same pence at v0.1's £5 stake).
+# Only rows under the current rule version in grinder/BOOKS.json are judged.
+G_KEEP_EXP = 0.10       # share of stake per position after costs
+G_KILL_EXP = -0.10
 G_MAX_RUG = 0.10
 G_EXEC_N = 200
-G_EXEC_EXP = 1.00
-G_EXEC_EXP_TRIMMED = 0.50   # after removing the best three positions
+G_EXEC_EXP = 0.20
+G_EXEC_EXP_TRIMMED = 0.10   # after removing the best three positions
 G_EXEC_MAX_RUG = 0.05
 
 # ---- Pitch (PASS-MARKS.md, "The Pitch") ---------------------------------------------------------
@@ -72,10 +74,14 @@ def mark(ok):
 
 # =================================================================================================
 def grinder():
-    rows = list(csv.DictReader(open(ROOT + "grinder/LEDGER.csv")))
+    books = json.load(open(ROOT + "grinder/BOOKS.json"))
+    cur = books["current"]
+    stake = books["books"][cur]["stake_gbp"]
+    rows = [r for r in csv.DictReader(open(ROOT + "grinder/LEDGER.csv")) if r.get("rule_version") == cur]
     closed = [r for r in rows if fnum(r.get("pnl_gbp")) is not None]
     n = len(closed)
-    out = ["## The Grinder", "", "| Criterion | Threshold | Value | Result |", "|---|---|---|---|"]
+    out = ["## The Grinder", "", "Rule version %s, stake £%.2f. Earlier versions are their own books and are not judged here." % (cur, stake), "",
+           "| Criterion | Threshold | Value | Result |", "|---|---|---|---|"]
     if n == 0:
         out += ["| Closed positions | >= %d | 0 | INCONCLUSIVE |" % G_FLOOR, "",
                 "**Verdict: INCONCLUSIVE.** No closed positions. Change with a deadline (PASS-MARKS.md, Inconclusive)."]
@@ -84,6 +90,7 @@ def grinder():
     exp = sum(pnl) / n
     exp_trim1 = sum(pnl[1:]) / max(1, n - 1)
     exp_trim3 = sum(pnl[3:]) / max(1, n - 3)
+    keep_l, kill_l, ex_l, ex3_l = G_KEEP_EXP * stake, G_KILL_EXP * stake, G_EXEC_EXP * stake, G_EXEC_EXP_TRIMMED * stake
     rugs = sum(1 for r in closed if (r.get("rugged") or "").lower() in ("1", "true", "yes"))
     rug_rate = rugs / n
     versions = sorted({r.get("rule_version", "") for r in closed})
@@ -94,13 +101,13 @@ def grinder():
     floor_ok = n >= G_FLOOR
     out.append("| Closed positions | >= %d | %d | %s |" % (G_FLOOR, n, mark(floor_ok)))
     out.append("| Rule versions in sample | 1 | %s | %s |" % (", ".join(v or "?" for v in versions), mark(len(versions) == 1)))
-    out.append("| Expectancy per position, after fees | >= £%.2f keep, <= £%.2f kill | £%.2f | %s |"
-               % (G_KEEP_EXP, G_KILL_EXP, exp, mark(None if not floor_ok else (exp >= G_KEEP_EXP if exp >= G_KEEP_EXP or exp <= G_KILL_EXP else None))))
+    out.append("| Expectancy per position, after costs | >= £%.2f keep, <= £%.2f kill | £%.2f | %s |"
+               % (keep_l, kill_l, exp, mark(None if not floor_ok else (exp >= keep_l if exp >= keep_l or exp <= kill_l else None))))
     out.append("| Expectancy without the best position | >= £0.00 | £%.2f | %s |" % (exp_trim1, mark(None if not floor_ok else exp_trim1 >= 0)))
     out.append("| Rug rate | <= %.0f%% | %.1f%% (%d) | %s |" % (100 * G_MAX_RUG, 100 * rug_rate, rugs, mark(None if not floor_ok else rug_rate <= G_MAX_RUG)))
     out.append("| Executor: closed positions | >= %d | %d | %s |" % (G_EXEC_N, n, mark(n >= G_EXEC_N)))
-    out.append("| Executor: expectancy | >= £%.2f | £%.2f | %s |" % (G_EXEC_EXP, exp, mark(exp >= G_EXEC_EXP if n >= G_EXEC_N else None)))
-    out.append("| Executor: expectancy without best three | >= £%.2f | £%.2f | %s |" % (G_EXEC_EXP_TRIMMED, exp_trim3, mark(exp_trim3 >= G_EXEC_EXP_TRIMMED if n >= G_EXEC_N else None)))
+    out.append("| Executor: expectancy | >= £%.2f | £%.2f | %s |" % (ex_l, exp, mark(exp >= ex_l if n >= G_EXEC_N else None)))
+    out.append("| Executor: expectancy without best three | >= £%.2f | £%.2f | %s |" % (ex3_l, exp_trim3, mark(exp_trim3 >= ex3_l if n >= G_EXEC_N else None)))
     out.append("| Executor: both halves positive | > £0.00 each | £%.2f, £%.2f | %s |" % (exp_first, exp_second, mark((exp_first > 0 and exp_second > 0) if n >= G_EXEC_N else None)))
     out.append("| Executor: rug rate | <= %.0f%% | %.1f%% | %s |" % (100 * G_EXEC_MAX_RUG, 100 * rug_rate, mark(rug_rate <= G_EXEC_MAX_RUG if n >= G_EXEC_N else None)))
 
@@ -110,10 +117,10 @@ def grinder():
     elif len(versions) != 1:
         verdict = "INCONCLUSIVE"
         why = "the sample mixes rule versions; only positions under the current rules count"
-    elif exp <= G_KILL_EXP or (n >= G_FLOOR_FINAL and exp < G_KEEP_EXP):
+    elif exp <= kill_l or (n >= G_FLOOR_FINAL and exp < keep_l):
         verdict = "KILL"
         why = "expectancy £%.2f over %d positions; the hypothesis is confirmed for this rule set, publish and close the paper book" % (exp, n)
-    elif exp >= G_KEEP_EXP and exp_trim1 >= 0 and rug_rate <= G_MAX_RUG:
+    elif exp >= keep_l and exp_trim1 >= 0 and rug_rate <= G_MAX_RUG:
         verdict = "KEEP"
         why = "expectancy £%.2f over %d positions, survives removing the best position, rug rate %.1f%%" % (exp, n, 100 * rug_rate)
     else:

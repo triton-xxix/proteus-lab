@@ -1,4 +1,10 @@
-# The Grinder: paper rules (v0.1, written before the first position)
+# The Grinder: paper rules
+
+v0.1 was written before the first position (22 Sep) and governs G-0001 to G-0006. v0.2 is at the
+bottom, written 2026-09-25 before any v0.2 row and before the path rescoring code was run. It
+governs every position opened from then on. v0.1 is kept below exactly as it was.
+
+# v0.1
 
 Hypothesis under test: pump.fun is a meat grinder for the people using it. This desk finds out with
 its own data instead of repeating the verdict.
@@ -89,3 +95,58 @@ If, after a week on the fixed feed, the safety gates (top-10 share, holders, LP 
 reject every pool that clears liquidity and volume, that is the finding and it gets published as
 one: nothing reachable through free discovery clears a sensible safety bar. Only then is it worth
 asking whether the bar is sensible.
+
+# v0.2 (2026-09-25): exits on the price path, a real stake, a measured cost model
+
+Kind of change: a rule change (exit, sizing, fee model). The Grinder's clock resets. v0.1's rows
+stay in the ledger under `rule_version` v0.1, close under v0.1's nightly rules, and are published
+as their own book. Why: G-0001 passed through its -50% stop 34 minutes after entry (08:10 UTC,
+24 Sep, on GeckoTerminal's minute candles) and was sold 14 hours later at -86% by a check that
+runs once a night. A token can go 10x and back between two checks and the ledger would show
+neither. That is a diary, not a desk.
+
+**Unchanged from v0.1:** every entry gate and its number, the ranking by 1h volume, the maximum of
+four open positions, take-profit +100%, stop -50%, time stop 24h, rug at -90%.
+
+**Stake and bankroll.** £100 per position, the size a real trade would be (Luke, 25 Sep: £100 to
+£150). Paper bankroll £1,000, so four open positions commit 40% of it. GBP/USD fixed at 1.30.
+
+**The record is the candle path.** For each position, GeckoTerminal's keyless minute candles
+(`/pools/{pool}/ohlcv/minute`, USD, base token) for the pool the scan entered on, from the first
+full minute after entry to entry plus 24 hours. Measured 25 Sep: one call returns up to 1,000
+candles, paging with `before_timestamp` reaches the pool's first trade, and minutes with no trades
+are absent rather than zero. The candles used are committed under `grinder/candles/` when a
+position closes, so the record does not move if the source revises them. Every run records, for
+every position of either version, in `grinder/PATHS.csv`: highest high and lowest low in the
+holding window and the time of each, the path-aware exit, what the rule captured, and the gap.
+
+**Fill rule.** Walk the candles in order. The first candle whose low reaches the stop, or whose
+high reaches the take-profit, triggers the exit. If both are reached inside the same candle, the
+stop is taken (the order inside a minute is unknown, so the worse case). If the candle opened
+beyond the level (a gap), the fill is the open, not the level. A fill at or below -90% from entry
+is logged as a rug. With no trigger by entry plus 24 hours, the time stop fills at the close of the
+last candle before that time. The entry minute itself is not used, so no price that printed before
+the entry can trigger an exit.
+
+**Cost model, applied to every entry and exit.**
+
+- Pool fee 1% per side (unchanged from v0.1, conservative for most Solana pools).
+- Network and priority fee $0.05 per side (replaces v0.1's invented $1.50).
+- Price impact from the pool's own depth, constant product: buying $x against a quote side of Q
+  pays a price (1 + x/Q) times the mid; selling a value v receives v / (1 + v/Q). Q at entry is half
+  the entry liquidity. Q at exit is Q at entry times the square root of exit price over entry price,
+  which is what a constant-product pool's quote side does when price moves and nobody adds or pulls
+  liquidity, capped by half of any lower liquidity a later snapshot observed before the exit.
+- Execution slippage on the exit fill: 3% adverse on stops and rugs (a market sell into a falling
+  book), 1% on take-profits and time stops.
+- At the $20k liquidity gate a £100 position pays about 5 to 8% round trip in total.
+
+**Fallback.** If the pool returns no candles (delisted, 404), the position closes at the next run
+under v0.1's nightly logic at the DexScreener price, and the exit reason carries `_nightly` so it
+is counted and visible.
+
+**What the candle record cannot see:** a liquidity pull that happens without trades, and the
+order of prints inside a minute. Both are why the fill rule is pessimistic.
+
+**If a poller is ever added** (hourly or faster), it is a cross-check. Where it disagrees with the
+committed candles on a fill, the candles are the record and the disagreement is logged.
