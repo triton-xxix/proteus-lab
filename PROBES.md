@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 7 works, 0 broken, 1 blocked, 2 not worth it.
+Verdicts so far: 7 works, 0 broken, 2 blocked, 2 not worth it.
 
 ## Queue (7 open)
 
@@ -21,10 +21,12 @@ Verdicts so far: 7 works, 0 broken, 1 blocked, 2 not worth it.
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
 | P-0017 | Wikimedia pageviews quota: fill the six clubs P-0010 lost to 429 and measure the window (calls per minute, per hour) from this address | desk | none |  | 0 | 15 min |
 
-## Verdicts (10)
+## Verdicts (11)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-25 | P-0018 | UK statutory Fuel Finder scheme: is the replacement for the CMA open feeds live and readable without a key? Compare its coverage and freshness with the 5 live retailer feeds (sandbox/fuel_prices.py) | **blocked** | Fuel Finder is live (GOV.UK, Feb 2026) but the API needs a GOV.UK One Login plus OAuth client credentials (bare call: 403 missing token). The public CSV button returns an obfuscated nxhex blob decoded client-side; I stopped rather than decode it, so the coverage comparison was not run. | `experiments/2026-09-25-P-0018` | 1 min, 15 calls, 1 denied |
+| | | | | denied: Bash `cp /Users/triton/PROTEUS/sandbox/fuel_finder_probe.py /Users/triton/PROTEUS/sandbox/fuel_f` | | |
 | 2026-09-24 | P-0010 | Wikipedia pageviews for the 20 Premier League clubs: does a pageview spike precede or follow results | **works** | Spikes follow results, they do not precede them: pre-match abnormal views v points over the closing price r = -0.015 (CI -0.10 to +0.07, 569 team-matches), while the day after a win views run x1.38 and after a shock win about x1.95. Only 14 of 20 clubs: Wikimedia 429s the 15th call in two runs, with or without a 1s pause. | `experiments/2026-09-24-P-0010` | 1 min, 7 calls, 0 denied |
 | 2026-09-24 | P-0006 | GeckoTerminal new pools: of pools first seen on one day, what fraction still trade with any volume at 24h | **works** | Of 183 mints the Grinder first saw under a day old on 22 and 23 Sep, 83 (45 percent) still show any 24h volume, 23 (13 percent) at least 1k USD, 15 (8 percent) at least 10k, 30 traded in the last hour; the one-day cohort (n=29) reads 48/21/10/10. Only 4 of 108 pump.fun-curve launches moved to another dex. Unlisted read as dead, unproven. | `experiments/2026-09-24-P-0006` | 0 min, 6 calls, 0 denied |
 | 2026-09-24 | P-0004 | Pitch harness: bookmaker disagreement (MaxH minus AvgH) as a feature on E0, pool weight | **not-worth-it** | On the desk's DC model the feature earns nothing: adjusted DC takes 0.00 pool weight against the close in every season across nine leagues (n=6766) and out-of-sample log loss moves 0.0006. Faint lead on the market only: pre-close shaded away from outlying Max prices takes pool weight 0.08 to 0.29 v close, a 0.0005 log-loss gain against a 0.0021 gap. | `experiments/2026-09-24-P-0004` | 1 min, 10 calls, 0 denied |

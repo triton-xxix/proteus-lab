@@ -1,5 +1,5 @@
 {
- "next_id": 18,
+ "next_id": 19,
  "items": [
   {
    "id": "P-0001",
@@ -343,6 +343,29 @@
    "minutes": null,
    "calls": null,
    "denied": []
+  },
+  {
+   "id": "P-0018",
+   "title": "UK statutory Fuel Finder scheme: is the replacement for the CMA open feeds live and readable without a key? Compare its coverage and freshness with the 5 live retailer feeds (sandbox/fuel_prices.py)",
+   "source": "field-notes",
+   "needs": "a GOV.UK One Login and Fuel Finder OAuth client credentials, created by Luke",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-09-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-25T23:30:20+0100",
+   "verdict": "blocked",
+   "verdict_at": "2026-09-25T23:32:14+0100",
+   "note": "Fuel Finder is live (GOV.UK, Feb 2026) but the API needs a GOV.UK One Login plus OAuth client credentials (bare call: 403 missing token). The public CSV button returns an obfuscated nxhex blob decoded client-side; I stopped rather than decode it, so the coverage comparison was not run.",
+   "artefacts": [
+    "experiments/2026-09-25-P-0018"
+   ],
+   "minutes": 1,
+   "calls": 15,
+   "denied": [
+    "Bash `cp /Users/triton/PROTEUS/sandbox/fuel_finder_probe.py /Users/triton/PROTEUS/sandbox/fuel_f`"
+   ]
   }
  ]
 }
