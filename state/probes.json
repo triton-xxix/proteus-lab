@@ -333,15 +333,17 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-09-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-25T23:32:18+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-25T23:33:58+0100",
+   "note": "All six missing clubs filled at a 2 s pace, no 429. Burst at 0.5 s spacing refused on call 9 (Retry-After 31) and cleared in 15 s, so it is a short-window rate limit, not the per-address quota P-0010 claimed; with 20 clubs the follow effect holds (r +0.20) and precede stays nil (r -0.03).",
+   "artefacts": [
+    "experiments/2026-09-25-P-0017"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": []
   },
   {

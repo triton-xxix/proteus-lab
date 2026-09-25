@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 7 works, 0 broken, 2 blocked, 2 not worth it.
+Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
 
-## Queue (7 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,12 +19,12 @@ Verdicts so far: 7 works, 0 broken, 2 blocked, 2 not worth it.
 | P-0014 | pump.fun graduation rate over a full day: poll GeckoTerminal new_pools two pages every five minutes and count pump-fun v pumpswap creations | desk | a day-long poller (launchd job or hourly task), not a single-night probe |  | 0 | 30 min |
 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
-| P-0017 | Wikimedia pageviews quota: fill the six clubs P-0010 lost to 429 and measure the window (calls per minute, per hour) from this address | desk | none |  | 0 | 15 min |
 
-## Verdicts (11)
+## Verdicts (12)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-25 | P-0017 | Wikimedia pageviews quota: fill the six clubs P-0010 lost to 429 and measure the window (calls per minute, per hour) from this address | **works** | All six missing clubs filled at a 2 s pace, no 429. Burst at 0.5 s spacing refused on call 9 (Retry-After 31) and cleared in 15 s, so it is a short-window rate limit, not the per-address quota P-0010 claimed; with 20 clubs the follow effect holds (r +0.20) and precede stays nil (r -0.03). | `experiments/2026-09-25-P-0017` | 1 min, 10 calls, 0 denied |
 | 2026-09-25 | P-0018 | UK statutory Fuel Finder scheme: is the replacement for the CMA open feeds live and readable without a key? Compare its coverage and freshness with the 5 live retailer feeds (sandbox/fuel_prices.py) | **blocked** | Fuel Finder is live (GOV.UK, Feb 2026) but the API needs a GOV.UK One Login plus OAuth client credentials (bare call: 403 missing token). The public CSV button returns an obfuscated nxhex blob decoded client-side; I stopped rather than decode it, so the coverage comparison was not run. | `experiments/2026-09-25-P-0018` | 1 min, 15 calls, 1 denied |
 | | | | | denied: Bash `cp /Users/triton/PROTEUS/sandbox/fuel_finder_probe.py /Users/triton/PROTEUS/sandbox/fuel_f` | | |
 | 2026-09-24 | P-0010 | Wikipedia pageviews for the 20 Premier League clubs: does a pageview spike precede or follow results | **works** | Spikes follow results, they do not precede them: pre-match abnormal views v points over the closing price r = -0.015 (CI -0.10 to +0.07, 569 team-matches), while the day after a win views run x1.38 and after a shock win about x1.95. Only 14 of 20 clubs: Wikimedia 429s the 15th call in two runs, with or without a 1s pause. | `experiments/2026-09-24-P-0010` | 1 min, 7 calls, 0 denied |
