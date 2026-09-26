@@ -1,0 +1,27 @@
+[
+  {
+    "label": "install",
+    "cmd": [
+      "npm",
+      "install",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "golive@alpha"
+    ],
+    "rc": 0,
+    "secs": 2.1,
+    "out": "\nadded 1 package in 2s\n"
+  },
+  {
+    "label": "ls",
+    "cmd": [
+      "npm",
+      "ls",
+      "--all"
+    ],
+    "rc": 0,
+    "secs": 0.7,
+    "out": "p0023@ /Users/triton/PROTEUS/sandbox/golive-probe\n`-- golive@0.1.0-alpha.4\n\n"
+  }
+]

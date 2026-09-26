@@ -461,15 +461,17 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-26",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-26T23:42:16+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-26T23:44:00+0100",
+   "note": "golive 0.1.0-alpha.4 in a fake HOME: detect found Next plus Supabase, Stripe, Resend and flagged 2 client-exposed env names correctly; plan gave id aa01065b3dc3 but only 5 human login steps, provider steps omitted without accounts; apply refused without --plan, then without --yes, writing nothing.",
+   "artefacts": [
+    "experiments/2026-09-26-P-0023"
+   ],
+   "minutes": 1,
+   "calls": 21,
    "denied": []
   }
  ]

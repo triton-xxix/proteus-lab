@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 11 works, 0 broken, 2 blocked, 2 not worth it.
+Verdicts so far: 12 works, 0 broken, 2 blocked, 2 not worth it.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 11 works, 0 broken, 2 blocked, 2 not worth it.
 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
-| P-0023 | golive-skill: does detect/plan work account-free, and does apply refuse without --yes? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (15)
+## Verdicts (16)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-26 | P-0023 | golive-skill: does detect/plan work account-free, and does apply refuse without --yes? | **works** | golive 0.1.0-alpha.4 in a fake HOME: detect found Next plus Supabase, Stripe, Resend and flagged 2 client-exposed env names correctly; plan gave id aa01065b3dc3 but only 5 human login steps, provider steps omitted without accounts; apply refused without --plan, then without --yes, writing nothing. | `experiments/2026-09-26-P-0023` | 1 min, 21 calls, 0 denied |
 | 2026-09-26 | P-0022 | magpie: does its config edit touch only the target key and leave the rest of settings.json untouched? | **works** | Ran magpie's own internal/edit SetJSON/DelJSON (Go 1.27.1 fetched to sandbox) on 9 copies of a commented JSONC settings.json: every edit changed only the target span, comments, order and commas intact, all parse. Quirks cosmetic: new top-level key lands above the header comment; tab indent guessed file-wide. App and gateway not run. | `experiments/2026-09-26-P-0022` | 2 min, 12 calls, 0 denied |
 | 2026-09-26 | P-0020 | Reladraw: does npm install plus a 3-node diagram definition render to an image keylessly? | **works** | reladraw 0.5.0 installs with zero dependencies in 1.7 s and renders a 3-node text diagram to well-formed SVG in 0.3 s, byte-identical twice. Gap-is-a-minimum claim holds exactly: 56 px apart alone, 342 px with a 230 px node wedged in (230 + 2x56). | `experiments/2026-09-26-P-0020` | 1 min, 14 calls, 0 denied |
 | 2026-09-26 | P-0019 | hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4? | **works** | Tarball fetch (git clone denied), npm install --ignore-scripts, demo, lint 0/0, draft render rc 0 in 60 s: h264 1920x1080 30fps 8.000 s mp4, 1.26 MB, no key or account. Studio preview not run; render used a browser already cached on this Mac. | `experiments/2026-09-26-P-0019` | 3 min, 18 calls, 1 denied |
