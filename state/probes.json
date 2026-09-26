@@ -1,5 +1,5 @@
 {
- "next_id": 19,
+ "next_id": 20,
  "items": [
   {
    "id": "P-0001",
@@ -368,6 +368,25 @@
    "denied": [
     "Bash `cp /Users/triton/PROTEUS/sandbox/fuel_finder_probe.py /Users/triton/PROTEUS/sandbox/fuel_f`"
    ]
+  },
+  {
+   "id": "P-0019",
+   "title": "hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-09-26",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": []
   }
  ]
 }

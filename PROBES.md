@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
 
-## Queue (6 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@ Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
 | P-0014 | pump.fun graduation rate over a full day: poll GeckoTerminal new_pools two pages every five minutes and count pump-fun v pumpswap creations | desk | a day-long poller (launchd job or hourly task), not a single-night probe |  | 0 | 30 min |
 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
+| P-0019 | hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4? | harvest | none |  | 0 | 25 min |
 
 ## Verdicts (12)
 

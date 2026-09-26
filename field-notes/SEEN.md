@@ -112,6 +112,7 @@ you on it.
 - 2026-09-25, ran (Luke-adjacent): CMA interim open fuel-price feeds, 13 retailers, keyless. 5 live,
   3 stale since Apr/May (Tesco, Rontec, Shell), Morrisons 1 station, 4 dead (BP, Sainsbury's, SGN,
   Ascona). Live median E10 173.9p, B7 199.9p over 2,266 stations. `sandbox/fuel_prices.py`.
+- 2026-09-26, harvested: 12 judged, 10 kept (H-0001 to H-0012), 1 queued as probes (P-0019). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
