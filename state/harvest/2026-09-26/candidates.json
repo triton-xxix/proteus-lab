@@ -1,20 +1,50 @@
 {
  "date": "2026-09-26",
- "pulled_at": "2026-09-26T11:15:11+0100",
- "seconds": 67.3,
+ "pulled_at": "2026-09-26T23:31:15+0100",
+ "seconds": 73.8,
  "by_source": {
-  "hn": 10,
+  "hn": 12,
   "github": 28,
   "arxiv": 22,
   "youtube": 12
  },
  "errors": [],
  "notes": [
-  "awesome awesome-claude-code: baseline saved, 190 links, nothing taken on the first pass",
-  "awesome awesome-mcp-servers: baseline saved, 4319 links, nothing taken on the first pass",
-  "awesome awesome-ai-agents: baseline saved, 116 links, nothing taken on the first pass"
+  "awesome awesome-claude-code: 0 new of 190",
+  "awesome awesome-mcp-servers: 0 new of 4319",
+  "awesome awesome-ai-agents: 0 new of 116"
  ],
  "candidates": [
+  {
+   "key": "hn:49857528",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: A Claude Code skill to analyze your chess games",
+   "url": "https://github.com/brumar/chess-postmortem-skills",
+   "hn_url": "https://news.ycombinator.com/item?id=49857528",
+   "meta": {
+    "points": 68,
+    "comments": 51,
+    "created": "2026-09-26T15:34:53Z"
+   },
+   "body": "Hello HN, It started as an experiment: can Claude play chess properly if it uses vision instead of PGN notation? Somehow it can. The next experiment was to see whether Claude + Stockfish could explain a game. Somehow it can too. A few sessions later, I had a system that takes my live audio notes (or text, for that matter) and a vague instruction like \"analyze my last lichess game\", and gives me a commented video of the game. The result is not perfect and it takes time to deliver (an hour or so), but for me it is a much more pleasant and memorable experience than clicking around Stockfish branches. It burns tokens, so make sure you have enough quota. From the session logs, the last analyzed game would have cost around $15 at API prices. The fact that it reflects on my own thinking during the game makes it interesting from a teaching point of view, so I thought it was worth sharing.",
+   "score": 6.209728363887973
+  },
+  {
+   "key": "hn:49849986",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Ekselio – Loveable for finance workflows (local first)",
+   "url": "https://www.gptbeyond.com/try?home=1",
+   "hn_url": "https://news.ycombinator.com/item?id=49849986",
+   "meta": {
+    "points": 21,
+    "comments": 6,
+    "created": "2026-09-25T21:09:28Z"
+   },
+   "body": "Hi everyone, I am KD - Back in my college days, I dabbled with coding, learned the basics, HTML, CSS etc. but somehow I ended up in Finance which consumed the next 20 years. Then, during covid I picked up coding again, learned react, typescript, etc - even built a rudimentary site - and then came the chatgpt moment, followed by Claude etc. So, as a side project, considering that I had spent 20 years in finance and M&A I started building Ekselio, loveable for finance workflows. Differently from other vibe coding tools, this is local first - meaning the workflows are orchestrated by the LLM based on the file schema but then the execution happens in the browser - the cool thing is that you can see the canvas, the previews of each node, and the code base (SQl) - see the Canvas tab. That said I did include a home tab, which is more of a visual, mainly because people think it's easier to relate to how folks operate, although I know finance and accounting folks usually like the workflow and full transparency - the other thing is that once you create a workflow you can save it and then next month,you can just click Run and it runs it again with no LLM tokes involved - so the infrastructure is minimal. Everything can be exported in an excel data pack with M code in case someone would want to reproduce - think Audit ready. And, I also connected to quickbooks on line so someone can directly pull in and manipulate their financials live - I also connected to Fred which carries literally 8",
+   "score": 4.063997527885973
+  },
   {
    "key": "hn:49848295",
    "source": "hn",
@@ -23,12 +53,12 @@
    "url": "https://www.youtube.com/watch?v=Cjntrqhn8pk",
    "hn_url": "https://news.ycombinator.com/item?id=49848295",
    "meta": {
-    "points": 139,
-    "comments": 25,
+    "points": 143,
+    "comments": 30,
     "created": "2026-09-25T18:37:05Z"
    },
    "body": "The following explanation is taken from https://news.ycombinator.com/item?id=49622607 : Alan Kay performs an improvisational avant garde layered audio feedback loop about Claude Shannon, live online during Kristen Nygaard's 100-year birthday celebration. Alan was scheduled to talk about how encountering Simula sparked his early thoughts about objects. During setup, somebody had the live stream playing out loud near an open Zoom mic, so his own voice kept arriving back in his ears about 21 seconds late, over and over. What he said was not random: \"Shannon gave us a way of dealing with noisy channels.\" And: \"I think about that almost every day. I realize what the fuck is going on and it's just so amazing.\" Shannon's noisy channel coding theorem is the math for exactly the kind of channel that was garbling him as he praised it. Alan joked it was \"being rerouted to Mars and back.\" At the speed of light, a 21 second round trip is about 3 million km one way -- eight trips to the Moon and back, but only about a seventeenth of the way to Mars at closest approach. This is an accidental Zoom performance of Alvin Lucier's \"I Am Sitting in a Room\" (1969), where Lucier re-recorded his own voice in a room until only the room's resonance remained. Here what remains is the network: delay, compression, dropouts. Bonus noise: YouTube's auto-transcript bleeps Alan's enthusiasm into [ __ ]. So the full chain is: Alan's voice, Zoom, stream, room, Zoom again times three, my screen recording, YouTu",
-   "score": 6.570690691620045
+   "score": 6.686806901818574
   },
   {
    "key": "hn:49846391",
@@ -68,12 +98,12 @@
    "url": "https://github.com/devdotfast/whiteboard",
    "hn_url": "https://news.ycombinator.com/item?id=49833867",
    "meta": {
-    "points": 402,
-    "comments": 133,
+    "points": 409,
+    "comments": 140,
     "created": "2026-09-24T17:21:36Z"
    },
    "body": "Hello! We’re Sid, Alex, Ketan, and Milan. We’re building Whiteboard ( https://whiteboard.dev.fast/ ), an open-source desktop app where humans and agents can architect software together in a common workspace. Here’s our repo: https://github.com/devdotfast/whiteboard . We were missing the feeling of a “whiteboard session” with another dev where you leave with a deep understanding of a system, so we built this app for ourselves. Whiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work. We began with an MVP based on HTML artifacts and started rethinking the app as we ran into limitations: 1. Built on top of CodeOSS: We found that in pure HTML tools it was hard to connect a spec or diagram to code. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box. We’ve found this is especially valuable because tradeoffs are often only discovered after a first pass at implementation (re: slop) 2. Semantic diff viewer: we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you [1]. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and large documentation changes ar",
-   "score": 8.447856461922138
+   "score": 8.490537104887437
   },
   {
    "key": "hn:49831231",
@@ -91,19 +121,19 @@
    "score": 3.6379323002732664
   },
   {
-   "key": "hn:49814947",
+   "key": "hn:49858513",
    "source": "hn",
-   "query": "claude code",
-   "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
-   "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
-   "hn_url": "https://news.ycombinator.com/item?id=49814947",
+   "query": "agent skills",
+   "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+   "url": "https://github.com/reladraw/reladraw",
+   "hn_url": "https://news.ycombinator.com/item?id=49858513",
    "meta": {
-    "points": 481,
-    "comments": 282,
-    "created": "2026-09-23T12:15:33Z"
+    "points": 116,
+    "comments": 31,
+    "created": "2026-09-26T17:10:40Z"
    },
-   "body": "",
-   "score": 9.00066756287222
+   "body": "I love making diagrams to help understand, plan, etc. However, the options are (A) auto-placement languages like Mermaid or Graphviz (which don't let me decide how the diagram looks), or (B) software like Draw.io which are powerful but are very time consuming (and inefficient for agents to manipulate). I wanted to have the benefits of both, where you can define a diagram in a diagram language, but also retain a high degree of control over what the diagram looks like. I also wanted this to work well for humans and agents. On the Github link, there's a playground where you can try it out without installation. There's also instructions for a simple npm install and for installing a skill you can use with Claude or other agents.",
+   "score": 6.49504188619762
   },
   {
    "key": "hn:49826029",
@@ -114,26 +144,11 @@
    "hn_url": "https://news.ycombinator.com/item?id=49826029",
    "meta": {
     "points": 30,
-    "comments": 47,
+    "comments": 48,
     "created": "2026-09-24T03:48:41Z"
    },
    "body": "Just to preface, this isn't the typical \"Am I being replaced by vibe coding\" post. I just had a talk with one of my first ongoing clients, who sort of helped me kickstart my freelancing \"career\". He is one of those people who has a broad understanding of the tech out there, and what its capabilities are, but is not a programmer. He wanted to show me, and get my opinion on a restaurant management app that he's been using Lovable to develop. Admittedly, a lot of it is very impressive, and he has obviously become very good at using these tools. Part of that scares me, but I've largely accepted the reality that my skillset has to expand beyond being a React code monkey (wish is not what I am, but you get the point). I've always been a curious generalist, so picking up new stuff comes easily, and I'll manage. Anyways, here's the part that feels really gross. He's working on a feature that does some automated marketing using Higgsfield, so automated slop posting. Also a feature that consumes reviews from vendors, and he intends to use agents to post reviews as well. I'm 43, I managed to convince my parents to get AOL when I was 12. I made a Geocities site at 14. I've been obsessed with computers and the internet for my entire life. I'm also an artist who had a somewhat successful run as a touring musician, much to the detriment of my career growth (not much money in Punk). I feel the hobbies that I've been nurturing for my entire life are being destroyed by people who have finally ",
-   "score": 5.369587709939092
-  },
-  {
-   "key": "hn:49821086",
-   "source": "hn",
-   "query": "mcp server",
-   "title": "Show HN: I built a post-mortem debugger for native Windows x64/x86 crashes",
-   "url": "https://www.forensicdbg.com",
-   "hn_url": "https://news.ycombinator.com/item?id=49821086",
-   "meta": {
-    "points": 37,
-    "comments": 7,
-    "created": "2026-09-23T19:15:55Z"
-   },
-   "body": "Hello HN! I've spent years debugging Windows crashes with tools that were either friendly but limited (e.g. Visual Studio) or powerful but archaic (e.g. WinDbg). I developed patterns and methods for understanding what was going on, and decided to build it into a much more effective debugging tool called ForensicDbg. I built a modern interface to minimize the friction when debugging. All of the data shown to you is analyzed, interpreted, and presented to you clearly, so you can focus on what matters. Everything is interlinked so you can quickly and intuitivly navigate through the process space. ForensicDbg comes with an MCP server which allows for agenic debugging. The work done to interpret and interlink your data also benefits AI tools. It removes the risk of hallucinations while building a stable foundation for them to work from without spending tokens. If you want to try it out you can sign up and get a free beta license here: https://www.forensicdbg.com/beta",
-   "score": 4.677306930566304
+   "score": 5.37989735354046
   },
   {
    "key": "hn:49823738",
@@ -143,12 +158,12 @@
    "url": "https://bastardica.mitpit.com",
    "hn_url": "https://news.ycombinator.com/item?id=49823738",
    "meta": {
-    "points": 848,
+    "points": 852,
     "comments": 123,
     "created": "2026-09-23T22:53:28Z"
    },
    "body": "A joke tool that abuses OpenType's ligature feature to mix fonts. It works pretty fast on client-side by loading Python in WASM.",
-   "score": 9.154199969113867
+   "score": 9.158900330294198
   },
   {
    "key": "hn:49828019",
@@ -158,12 +173,68 @@
    "url": "https://news.ycombinator.com/item?id=49828019",
    "hn_url": "https://news.ycombinator.com/item?id=49828019",
    "meta": {
-    "points": 23,
-    "comments": 15,
+    "points": 24,
+    "comments": 16,
     "created": "2026-09-24T08:54:57Z"
    },
    "body": "Hacker News helps me stay in touch with the world of technology without putting in extensive web browsing work, and I love it for that reason. I am interested in financial markets and wanted a “Hacker News for finance”, but Googling produced surprisingly poor results. So I forked the great HN clone, shark [1], and added some market focused twists. The result is: https://tradernews.fyi Trader News is the Hacker News interface you are familiar with, with a difference. Above the article area is a live feed (up to a ~30 min delay) of market data. I show the major indexes and every company within them. E.g click on Nasdaq-100 to see how the index performing, and then scroll the list of companies and click on META to get more detail on its specific performance (and links to Yahoo Finance + it’s investor relations). This gives you a single place to read finance related articles and stay in touch with the markets. The CSS for Trader News is linked to global market performance. On days when stocks are down, Trader News is red. On days where stocks are up, Trader News is green. I have an agent running a 24 hour cron job to research articles and post them to the site to keep it a stimulating place to read. I will tone this down if user submissions pick up. If there are sources you think I should include, please leave a comment. I also added a basic “chat” panel with polling every 30 seconds for casual market related chat. It’s open source and I’m very interested in feature pull requests",
-   "score": 4.564348191467836
+   "score": 4.635482496896309
+  },
+  {
+   "key": "hn:49861047",
+   "source": "hn",
+   "query": "car data",
+   "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+   "url": "https://news.ycombinator.com/item?id=49861047",
+   "hn_url": "https://news.ycombinator.com/item?id=49861047",
+   "meta": {
+    "points": 44,
+    "comments": 9,
+    "created": "2026-09-26T22:15:32Z"
+   },
+   "body": "My OpenAI CODEX account went rogue and from a simple request took the autonomous decision to launch 826 parallel agents / threads without any authorization on my side and without reporting any result of any sort but consuming nearly 2,146 trillions tokens, consuming a total of roughly USD 78,000 and deleting all records of what was done: I have a ticket open with OpenAI since 2 weeks but it is impossible to get an hold of a human operator. On July 10, 2026 I opened a normal Codex task from VS Code. The task was running: GPT-5.5 / Medium reasoning My prompt was very simple and asked for a UX/UI validation on a specific module within my product. What I found in the next days after hard analysis was: The task with Root ID 019f4b90-4169-7201-bfdd-732940d8631e with reasoning GPT-5.5 / Medium created 826 children recorded as GPT-5.6 Sol / Ultra (notice the difference in reasoning level and in model selection) This was not 826 messages inside one conversation, they are 826 distinct child task records with their own IDs. A particularly strange group consists of 104 child tasks. They all preserve the same initial message as the original task, are recorded as GPT-5.6 Sol/Ultra, and have no recorded agent_role or agent_path. Those 104 tasks alone account for approximately 147.9 billion local final task-token counters. Their titles show that my request to inspect UI/UX had expanded into work involving backend infrastructure, OAuth, metering, hardening, audits, certification, implementati",
+   "score": 4.957955036267343
+  },
+  {
+   "key": "gh:johnheibel/pdoomvideo",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "JohnHeibel/PDoomVideo: Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)",
+   "url": "https://github.com/JohnHeibel/PDoomVideo",
+   "repo": "JohnHeibel/PDoomVideo",
+   "meta": {
+    "stars": 1039,
+    "created": "2026-09-22",
+    "pushed": "2026-09-25",
+    "language": "JavaScript",
+    "topics": []
+   },
+   "body": "",
+   "score": 6.946975992135418
+  },
+  {
+   "key": "gh:yetone/magpie",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+   "url": "https://github.com/yetone/magpie",
+   "repo": "yetone/magpie",
+   "meta": {
+    "stars": 992,
+    "created": "2026-09-23",
+    "pushed": "2026-09-26",
+    "language": "Go",
+    "topics": [
+     "claude-code",
+     "codex",
+     "deepseek",
+     "gemini-cli",
+     "llm",
+     "macos"
+    ]
+   },
+   "body": "",
+   "score": 6.900730664045173
   },
   {
    "key": "gh:mikehasa/golive-skill",
@@ -173,7 +244,7 @@
    "url": "https://github.com/mikehasa/golive-skill",
    "repo": "mikehasa/golive-skill",
    "meta": {
-    "stars": 961,
+    "stars": 978,
     "created": "2026-09-23",
     "pushed": "2026-09-26",
     "language": "TypeScript",
@@ -189,48 +260,7 @@
     ]
    },
    "body": "",
-   "score": 6.8690144506657065
-  },
-  {
-   "key": "gh:johnheibel/pdoomvideo",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "JohnHeibel/PDoomVideo: Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)",
-   "url": "https://github.com/JohnHeibel/PDoomVideo",
-   "repo": "JohnHeibel/PDoomVideo",
-   "meta": {
-    "stars": 952,
-    "created": "2026-09-22",
-    "pushed": "2026-09-25",
-    "language": "JavaScript",
-    "topics": []
-   },
-   "body": "",
-   "score": 6.859614903654202
-  },
-  {
-   "key": "gh:yetone/magpie",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-   "url": "https://github.com/yetone/magpie",
-   "repo": "yetone/magpie",
-   "meta": {
-    "stars": 833,
-    "created": "2026-09-23",
-    "pushed": "2026-09-26",
-    "language": "Go",
-    "topics": [
-     "claude-code",
-     "codex",
-     "deepseek",
-     "gemini-cli",
-     "llm",
-     "macos"
-    ]
-   },
-   "body": "",
-   "score": 6.726233402358747
+   "score": 6.88653164253051
   },
   {
    "key": "gh:haleclipse/cometixcode",
@@ -240,53 +270,14 @@
    "url": "https://github.com/Haleclipse/CometixCode",
    "repo": "Haleclipse/CometixCode",
    "meta": {
-    "stars": 549,
+    "stars": 564,
     "created": "2026-09-20",
     "pushed": "2026-09-26",
     "language": "Rust",
     "topics": []
    },
    "body": "",
-   "score": 6.309918278226516
-  },
-  {
-   "key": "gh:samyost1/3dicon",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "samyost1/3dicon: One prompt in, a looping animated 3D icon out — with real transparency. A Claude Code skill.",
-   "url": "https://github.com/samyost1/3dicon",
-   "repo": "samyost1/3dicon",
-   "meta": {
-    "stars": 444,
-    "created": "2026-09-23",
-    "pushed": "2026-09-23",
-    "language": "Python",
-    "topics": []
-   },
-   "body": "",
-   "score": 6.09807428216624
-  },
-  {
-   "key": "gh:minorun365/minorun-marp-skill",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "minorun365/minorun-marp-skill: Marpで登壇スライドを作るための、ストーリー・図・デザインバランスのスキル集と黒地テーマ、検査ツール",
-   "url": "https://github.com/minorun365/minorun-marp-skill",
-   "repo": "minorun365/minorun-marp-skill",
-   "meta": {
-    "stars": 384,
-    "created": "2026-09-20",
-    "pushed": "2026-09-20",
-    "language": "Python",
-    "topics": [
-     "agent-skills",
-     "claude-code",
-     "marp",
-     "presentation"
-    ]
-   },
-   "body": "",
-   "score": 5.953243334287785
+   "score": 6.336825731146441
   },
   {
    "key": "gh:alexgreensh/anidoodle",
@@ -296,7 +287,7 @@
    "url": "https://github.com/alexgreensh/anidoodle",
    "repo": "alexgreensh/anidoodle",
    "meta": {
-    "stars": 365,
+    "stars": 469,
     "created": "2026-09-22",
     "pushed": "2026-09-25",
     "language": "TypeScript",
@@ -312,7 +303,46 @@
     ]
    },
    "body": "",
-   "score": 5.902633333401366
+   "score": 6.152732694704104
+  },
+  {
+   "key": "gh:samyost1/3dicon",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "samyost1/3dicon: One prompt in, a looping animated 3D icon out — with real transparency. A Claude Code skill.",
+   "url": "https://github.com/samyost1/3dicon",
+   "repo": "samyost1/3dicon",
+   "meta": {
+    "stars": 462,
+    "created": "2026-09-23",
+    "pushed": "2026-09-23",
+    "language": "Python",
+    "topics": []
+   },
+   "body": "",
+   "score": 6.137727054086234
+  },
+  {
+   "key": "gh:minorun365/minorun-marp-skill",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "minorun365/minorun-marp-skill: Marpで登壇スライドを作るための、ストーリー・図・デザインバランスのスキル集と黒地テーマ、検査ツール",
+   "url": "https://github.com/minorun365/minorun-marp-skill",
+   "repo": "minorun365/minorun-marp-skill",
+   "meta": {
+    "stars": 385,
+    "created": "2026-09-20",
+    "pushed": "2026-09-20",
+    "language": "Python",
+    "topics": [
+     "agent-skills",
+     "claude-code",
+     "marp",
+     "presentation"
+    ]
+   },
+   "body": "",
+   "score": 5.955837369464831
   },
   {
    "key": "gh:leter/zh-tech-writing",
@@ -322,7 +352,7 @@
    "url": "https://github.com/leter/zh-tech-writing",
    "repo": "leter/zh-tech-writing",
    "meta": {
-    "stars": 247,
+    "stars": 277,
     "created": "2026-09-24",
     "pushed": "2026-09-24",
     "language": null,
@@ -336,7 +366,7 @@
     ]
    },
    "body": "",
-   "score": 5.5134287461649825
+   "score": 5.627621113690637
   },
   {
    "key": "gh:xiaopuouo/openchatx-mcp",
@@ -346,7 +376,7 @@
    "url": "https://github.com/XiaoPuOuO/openchatx-mcp",
    "repo": "XiaoPuOuO/openchatx-mcp",
    "meta": {
-    "stars": 119,
+    "stars": 129,
     "created": "2026-09-23",
     "pushed": "2026-09-26",
     "language": "TypeScript",
@@ -362,7 +392,7 @@
     ]
    },
    "body": "",
-   "score": 4.787491742782046
+   "score": 4.867534450455582
   },
   {
    "key": "gh:springvoiceswell/semrush-ai-tool",
@@ -372,7 +402,7 @@
    "url": "https://github.com/springvoiceswell/semrush-ai-tool",
    "repo": "springvoiceswell/semrush-ai-tool",
    "meta": {
-    "stars": 48,
+    "stars": 73,
     "created": "2026-09-25",
     "pushed": "2026-09-26",
     "language": "JavaScript",
@@ -388,33 +418,7 @@
     ]
    },
    "body": "",
-   "score": 3.8918202981106265
-  },
-  {
-   "key": "gh:breakstageaxe61/genspark-claw",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "breakstageaxe61/genspark-claw: 🦀⚡ Community skill pack & CLI for Genspark Claw, OpenClaw & Hermes agents — 5 production-ready SKILL.md skills (deep research, reports, slides, browser automation, AI call prep), zero-dependency Node.js installer, MCP server, one-line install",
-   "url": "https://github.com/breakstageaxe61/genspark-claw",
-   "repo": "breakstageaxe61/genspark-claw",
-   "meta": {
-    "stars": 44,
-    "created": "2026-09-26",
-    "pushed": "2026-09-26",
-    "language": "JavaScript",
-    "topics": [
-     "agent-skills",
-     "ai-agent",
-     "ai-assistants",
-     "ai-tools",
-     "awesome-genspark",
-     "genspark-agent",
-     "genspark-claw",
-     "genspark-mcp"
-    ]
-   },
-   "body": "",
-   "score": 3.8066624897703196
+   "score": 4.30406509320417
   },
   {
    "key": "gh:graygnatconsole/mcp-audit-tool",
@@ -424,7 +428,7 @@
    "url": "https://github.com/graygnatconsole/mcp-audit-tool",
    "repo": "graygnatconsole/mcp-audit-tool",
    "meta": {
-    "stars": 43,
+    "stars": 69,
     "created": "2026-09-26",
     "pushed": "2026-09-26",
     "language": "Python",
@@ -440,7 +444,33 @@
     ]
    },
    "body": "",
-   "score": 3.784189633918261
+   "score": 4.248495242049359
+  },
+  {
+   "key": "gh:breakstageaxe61/genspark-claw",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "breakstageaxe61/genspark-claw: 🦀⚡ Community skill pack & CLI for Genspark Claw, OpenClaw & Hermes agents — 5 production-ready SKILL.md skills (deep research, reports, slides, browser automation, AI call prep), zero-dependency Node.js installer, MCP server, one-line install",
+   "url": "https://github.com/breakstageaxe61/genspark-claw",
+   "repo": "breakstageaxe61/genspark-claw",
+   "meta": {
+    "stars": 69,
+    "created": "2026-09-26",
+    "pushed": "2026-09-26",
+    "language": "JavaScript",
+    "topics": [
+     "agent-skills",
+     "ai-agent",
+     "ai-assistants",
+     "ai-tools",
+     "awesome-genspark",
+     "genspark-agent",
+     "genspark-claw",
+     "genspark-mcp"
+    ]
+   },
+   "body": "",
+   "score": 4.248495242049359
   },
   {
    "key": "gh:zkousama/morocco-communes",
@@ -450,9 +480,9 @@
    "url": "https://github.com/zkousama/morocco-communes",
    "repo": "zkousama/morocco-communes",
    "meta": {
-    "stars": 40,
+    "stars": 41,
     "created": "2026-09-21",
-    "pushed": "2026-09-25",
+    "pushed": "2026-09-26",
     "language": "TypeScript",
     "topics": [
      "api",
@@ -464,7 +494,7 @@
     ]
    },
    "body": "",
-   "score": 3.713572066704308
+   "score": 3.7376696182833684
   },
   {
    "key": "gh:machina-sports/sports-skills",
@@ -543,7 +573,7 @@
    "url": "https://github.com/chainstacklabs/pumpfun-bonkfun-bot",
    "repo": "chainstacklabs/pumpfun-bonkfun-bot",
    "meta": {
-    "stars": 1014,
+    "stars": 1015,
     "created": "2024-09-09",
     "pushed": "2026-09-26",
     "language": "Python",
@@ -559,7 +589,7 @@
     ]
    },
    "body": "",
-   "score": 6.922643891475888
+   "score": 6.923628628138427
   },
   {
    "key": "gh:xu-shawn/lichess-bots-blocklist",
@@ -627,7 +657,7 @@
    "url": "https://github.com/nexmoe/VidBee",
    "repo": "nexmoe/VidBee",
    "meta": {
-    "stars": 10700,
+    "stars": 10699,
     "created": "2025-10-22",
     "pushed": "2026-09-26",
     "language": "TypeScript",
@@ -640,7 +670,7 @@
     ]
    },
    "body": "",
-   "score": 9.278092474027002
+   "score": 9.277999020449997
   },
   {
    "key": "gh:nateherkai/hyperframes-student-kit",
@@ -650,7 +680,7 @@
    "url": "https://github.com/nateherkai/hyperframes-student-kit",
    "repo": "nateherkai/hyperframes-student-kit",
    "meta": {
-    "stars": 974,
+    "stars": 1011,
     "created": "2026-04-18",
     "pushed": "2026-09-25",
     "language": "HTML",
@@ -664,7 +694,7 @@
     ]
    },
    "body": "",
-   "score": 6.882437470997847
+   "score": 6.919683849847411
   },
   {
    "key": "gh:zeropointrepo/youtube-skills",
@@ -674,7 +704,7 @@
    "url": "https://github.com/ZeroPointRepo/youtube-skills",
    "repo": "ZeroPointRepo/youtube-skills",
    "meta": {
-    "stars": 960,
+    "stars": 964,
     "created": "2026-02-01",
     "pushed": "2026-09-22",
     "language": null,
@@ -688,7 +718,7 @@
     ]
    },
    "body": "",
-   "score": 6.8679744089702925
+   "score": 6.872128101338986
   },
   {
    "key": "gh:jkawamoto/mcp-youtube-transcript",
@@ -719,7 +749,7 @@
    "url": "https://github.com/zlxlabs/VideoTranscriptAPI",
    "repo": "zlxlabs/VideoTranscriptAPI",
    "meta": {
-    "stars": 216,
+    "stars": 217,
     "created": "2025-04-27",
     "pushed": "2026-09-26",
     "language": "Python",
@@ -728,7 +758,7 @@
     ]
    },
    "body": "",
-   "score": 5.37989735354046
+   "score": 5.384495062789089
   },
   {
    "key": "gh:ericmmartin/youtube-transcript-plus",
@@ -740,7 +770,7 @@
    "meta": {
     "stars": 161,
     "created": "2025-01-19",
-    "pushed": "2026-09-25",
+    "pushed": "2026-09-26",
     "language": "TypeScript",
     "topics": [
      "proxy",
@@ -786,7 +816,7 @@
    "url": "https://github.com/guimatheus92/mcp-video-analyzer",
    "repo": "guimatheus92/mcp-video-analyzer",
    "meta": {
-    "stars": 77,
+    "stars": 78,
     "created": "2026-03-09",
     "pushed": "2026-09-20",
     "language": "TypeScript",
@@ -802,7 +832,7 @@
     ]
    },
    "body": "",
-   "score": 4.356708826689592
+   "score": 4.3694478524670215
   },
   {
    "key": "arxiv:2609.30137",
@@ -1281,19 +1311,6 @@
    "score": 1.0
   },
   {
-   "key": "yt:vssd36X5Y2c",
-   "source": "youtube",
-   "query": "pump.fun sniper bot how it works",
-   "title": "Pump Fun Sniper Bot Full Tutorial | Solana MEV Bot step-by-step how to use",
-   "url": "https://www.youtube.com/watch?v=vssd36X5Y2c",
-   "meta": {
-    "channel": "Pump Fun Solana BOT",
-    "rank": 1
-   },
-   "body": "",
-   "score": 1.0
-  },
-  {
    "key": "yt:X6fE1C3IKRw",
    "source": "youtube",
    "query": "pump.fun sniper bot how it works",
@@ -1301,32 +1318,45 @@
    "url": "https://www.youtube.com/watch?v=X6fE1C3IKRw",
    "meta": {
     "channel": "Pump Dot Fun Dev",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:vssd36X5Y2c",
+   "source": "youtube",
+   "query": "pump.fun sniper bot how it works",
+   "title": "Pump Fun Sniper Bot Full Tutorial | Solana MEV Bot step-by-step how to use",
+   "url": "https://www.youtube.com/watch?v=vssd36X5Y2c",
+   "meta": {
+    "channel": "Pump Fun Solana BOT",
     "rank": 2
    },
    "body": "",
    "score": 0.5
   },
   {
-   "key": "yt:8GVd3-T5r1w",
+   "key": "yt:YCYkK0yUBXA",
    "source": "youtube",
    "query": "pump.fun sniper bot how it works",
-   "title": "I Tested the Best Pump Fun Sniper Bot So You Don't Have To",
-   "url": "https://www.youtube.com/watch?v=8GVd3-T5r1w",
+   "title": "Stop Losing Trades: Why I Switched to PumpSniper | Solana Sniper BOT",
+   "url": "https://www.youtube.com/watch?v=YCYkK0yUBXA",
    "meta": {
-    "channel": "Travelinglong14",
+    "channel": "PumpFun Sniper",
     "rank": 3
    },
    "body": "",
    "score": 0.3333333333333333
   },
   {
-   "key": "yt:9Qhnc1B4ZhI",
+   "key": "yt:vE0Oq-ssjGg",
    "source": "youtube",
    "query": "pump.fun sniper bot how it works",
-   "title": "How To SNIPE Pump Fun Memecoins & AVOID RUGS",
-   "url": "https://www.youtube.com/watch?v=9Qhnc1B4ZhI",
+   "title": "I Let a Solana Sniper Bot Trade for 7 Days — Here's What Happened",
+   "url": "https://www.youtube.com/watch?v=vE0Oq-ssjGg",
    "meta": {
-    "channel": "Sajad",
+    "channel": "kleocjus (Joined Jun 5, 2008)",
     "rank": 4
    },
    "body": "",
@@ -1372,30 +1402,17 @@
    "score": 0.3333333333333333
   },
   {
-   "key": "yt:BjP_fxQ-iGk",
+   "key": "yt:rFxRGGHKp4g",
    "source": "youtube",
    "query": "lichess bot python engine",
-   "title": "This Chess Bot Gets 4X STRONGER If I CAPTURE! (CRAZY STRATEGY)",
-   "url": "https://www.youtube.com/watch?v=BjP_fxQ-iGk",
+   "title": "LEVY EXPOSES LICHESS",
+   "url": "https://www.youtube.com/watch?v=rFxRGGHKp4g",
    "meta": {
-    "channel": "BotGambit",
+    "channel": "jesgluckner",
     "rank": 4
    },
    "body": "",
    "score": 0.25
-  },
-  {
-   "key": "yt:gRRWBTRwmTQ",
-   "source": "youtube",
-   "query": "MOT data analysis uk",
-   "title": "What does my MOT result mean",
-   "url": "https://www.youtube.com/watch?v=gRRWBTRwmTQ",
-   "meta": {
-    "channel": "Eden Tyres & Servicing",
-    "rank": 1
-   },
-   "body": "",
-   "score": 1.0
   },
   {
    "key": "yt:QigAkv4Ion0",
@@ -1405,32 +1422,45 @@
    "url": "https://www.youtube.com/watch?v=QigAkv4Ion0",
    "meta": {
     "channel": "The Car Edition Ltd",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:3-nZZPICCt8",
+   "source": "youtube",
+   "query": "MOT data analysis uk",
+   "title": "DVSA Enforcement Action August 2026 | What MOT Testers & AEs Need to Know #mottester #mechanic #dvsa",
+   "url": "https://www.youtube.com/watch?v=3-nZZPICCt8",
+   "meta": {
+    "channel": "MOT Expert",
     "rank": 2
    },
    "body": "",
    "score": 0.5
   },
   {
-   "key": "yt:2ggcAn_028I",
+   "key": "yt:x-adGaN2pNI",
    "source": "youtube",
    "query": "MOT data analysis uk",
-   "title": "DVSA Photos at MOT Test - what does it mean for MOT Testers, AEs and testing stations?",
-   "url": "https://www.youtube.com/watch?v=2ggcAn_028I",
+   "title": "Life of a Data Analyst: Expectation vs Reality",
+   "url": "https://www.youtube.com/watch?v=x-adGaN2pNI",
    "meta": {
-    "channel": "MOT Expert",
+    "channel": "Data Engineer Academy",
     "rank": 3
    },
    "body": "",
    "score": 0.3333333333333333
   },
   {
-   "key": "yt:fMZk1sGMcc0",
+   "key": "yt:gRRWBTRwmTQ",
    "source": "youtube",
    "query": "MOT data analysis uk",
-   "title": "Are Electric Cars More Reliable Than Petrol? | UK MOT Data #ElectricCars #EVs",
-   "url": "https://www.youtube.com/watch?v=fMZk1sGMcc0",
+   "title": "What does my MOT result mean",
+   "url": "https://www.youtube.com/watch?v=gRRWBTRwmTQ",
    "meta": {
-    "channel": "Parking Ticket Pal",
+    "channel": "Eden Tyres & Servicing",
     "rank": 4
    },
    "body": "",

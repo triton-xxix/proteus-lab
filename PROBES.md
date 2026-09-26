@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
 
-## Queue (7 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,10 @@ Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
 | P-0019 | hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4? | harvest | none |  | 0 | 25 min |
+| P-0020 | Reladraw: does npm install plus a 3-node diagram definition render to an image keylessly? | harvest | none |  | 0 | 20 min |
+| P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
+| P-0022 | magpie: does its config edit touch only the target key and leave the rest of settings.json untouched? | harvest | none |  | 0 | 20 min |
+| P-0023 | golive-skill: does detect/plan work account-free, and does apply refuse without --yes? | harvest | none |  | 0 | 25 min |
 
 ## Verdicts (12)
 
