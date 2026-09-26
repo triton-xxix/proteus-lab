@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="538" height="127" viewBox="0 0 538 127" font-family="'DejaVu Sans Mono', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace" font-size="14px">
+  <defs>
+  </defs>
+  <rect x="0" y="0" width="538" height="127" fill="#111111"/>
+  <path d="M452 40 H490 a8 8 0 0 1 8 8 V79 a8 8 0 0 1 -8 8 H452 a8 8 0 0 1 -8 -8 V48 a8 8 0 0 1 8 -8 Z" fill="#191728" stroke="#4f5367"/>
+  <text x="471" y="68.4" fill="#d9d9d9" text-anchor="middle">Hub</text>
+  <path d="M48 40 H94 a8 8 0 0 1 8 8 V79 a8 8 0 0 1 -8 8 H48 a8 8 0 0 1 -8 -8 V48 a8 8 0 0 1 8 -8 Z" fill="#191728" stroke="#4f5367"/>
+  <text x="71" y="68.4" fill="#d9d9d9" text-anchor="middle">Side</text>
+  <path d="M166 40 H380 a8 8 0 0 1 8 8 V79 a8 8 0 0 1 -8 8 H166 a8 8 0 0 1 -8 -8 V48 a8 8 0 0 1 8 -8 Z" fill="#191728" stroke="#4f5367"/>
+  <text x="273" y="68.4" fill="#d9d9d9" text-anchor="middle">A much wider wedged node</text>
+</svg>

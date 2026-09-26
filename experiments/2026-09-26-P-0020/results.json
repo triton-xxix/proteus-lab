@@ -1,0 +1,78 @@
+{
+  "install": {
+    "rc": 0,
+    "secs": 0.8,
+    "out": "\nup to date in 492ms\n"
+  },
+  "deps": "p0020@ /Users/triton/PROTEUS/sandbox/reladraw\n\u2514\u2500\u2500 reladraw@0.5.0\n\n",
+  "three": {
+    "rc": 0,
+    "secs": 0.3,
+    "out": "/Users/triton/PROTEUS/experiments/2026-09-26-P-0020/three.svg\n",
+    "bytes": 1842,
+    "sha": "c3640837d2a41250",
+    "well_formed": true,
+    "elements": 18,
+    "viewBox": "0 0 364 287"
+  },
+  "three_again": {
+    "rc": 0,
+    "secs": 0.3,
+    "out": "/Users/triton/PROTEUS/experiments/2026-09-26-P-0020/three_again.svg\n",
+    "bytes": 1842,
+    "sha": "c3640837d2a41250",
+    "well_formed": true,
+    "elements": 18,
+    "viewBox": "0 0 364 287"
+  },
+  "deterministic": true,
+  "pair": {
+    "rc": 0,
+    "secs": 0.3,
+    "out": "/Users/triton/PROTEUS/experiments/2026-09-26-P-0020/pair.svg\n",
+    "bytes": 709,
+    "sha": "660c78528a31c428",
+    "well_formed": true,
+    "elements": 7,
+    "viewBox": "0 0 252 127"
+  },
+  "between": {
+    "rc": 0,
+    "secs": 0.3,
+    "out": "/Users/triton/PROTEUS/experiments/2026-09-26-P-0020/between.svg\n",
+    "bytes": 940,
+    "sha": "a68b8c166d447d3a",
+    "well_formed": true,
+    "elements": 9,
+    "viewBox": "0 0 538 127"
+  },
+  "gap_test": {
+    "pair": {
+      "side": [
+        40.0,
+        102.0
+      ],
+      "hub": [
+        158.0,
+        212.0
+      ],
+      "wedge": null,
+      "side_to_hub": 56.0
+    },
+    "between": {
+      "side": [
+        40.0,
+        102.0
+      ],
+      "hub": [
+        444.0,
+        498.0
+      ],
+      "wedge": [
+        158.0,
+        388.0
+      ],
+      "side_to_hub": 342.0
+    }
+  }
+}

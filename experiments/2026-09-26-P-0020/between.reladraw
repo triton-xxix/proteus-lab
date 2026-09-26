@@ -1,0 +1,3 @@
+node hub    "Hub"
+node side   "Side"    left of hub
+node wedge  "A much wider wedged node"  right of side  left of hub  level with hub
