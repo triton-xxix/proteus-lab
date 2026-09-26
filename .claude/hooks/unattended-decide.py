@@ -61,7 +61,11 @@ CHILD_EXEC_ROOT = PROTEUS_ROOT + "sandbox/"    # the only place a child may run 
 
 # Tools that cannot prompt and cannot act outside the session.
 FREE_TOOLS = {"Read", "Glob", "Grep", "TodoWrite", "NotebookRead", "BashOutput", "KillShell", "Skill",
-              "WebFetch", "WebSearch", "ToolSearch", "SearchSkills", "SearchPlugins", "ListSkills"}
+              "WebFetch", "WebSearch", "ToolSearch", "SearchSkills", "SearchPlugins", "ListSkills",
+              # A child's report back to its parent. Found denied 2026-09-26 on the first harvest run: the
+              # child had written its file and the hook refused its hand-back twice, so the parent saw
+              # "ended without delivering a report". It cannot act outside the session; it only talks to the parent.
+              "SubagentHandback"}
 
 # First token of each pipe segment must be one of these.
 SAFE_CMDS = {

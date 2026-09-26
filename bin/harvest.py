@@ -446,7 +446,7 @@ For each item, decide and write a JSON object with these fields:
 - "lens": "mechanism" (how it works), "vendor" (an assessment of the thing as a product), or "both".
 - "mechanism": two to four sentences on how it actually works: the moving parts, what it depends on, what it calls, where the numbers come from. Not the marketing.
 - "claim": one sentence on what the source says it does, with the number if it gives one.
-- "testable": true if Proteus could run it keyless tonight in /Users/triton/PROTEUS/sandbox/ inside 30 minutes and reach a verdict (works, broken, blocked, not worth it) from running it. No accounts, no keys, no spend, no logins.
+- "testable": true if Proteus could run it keyless tonight in /Users/triton/PROTEUS/sandbox/ inside 30 minutes and reach a verdict (works, broken, blocked, not worth it) from running it. No accounts, no keys, no spend, no logins. The question may be narrower than the thing's purpose: a bot's listener run read-only against a public endpoint, a library's parser on public data, a claim in a README checked against a number Proteus can pull. Mark testable when such a slice exists and put the slice in "verdict_question".
 - "why_not_testable": one sentence when testable is false, else "".
 - "verdict_question": the one question a run tonight would answer, phrased so the answer is a number or a yes/no.
 - "probe_title": under 140 characters, starts with the thing being tested, then a colon, then the question. Only when testable.
@@ -459,7 +459,7 @@ For each item, decide and write a JSON object with these fields:
 Write the whole array, in the brief's order, with the Write tool to exactly this path and nothing else:
 /Users/triton/PROTEUS/state/agents/{date}/harvest.json
 
-Rules: absolute paths only. No Bash except ls, cat, head, grep on files under /Users/triton/PROTEUS. Do not write anywhere else. If a tool call is refused, that is a result: do not retry it, put it in your final message. Your final message is three lines: how many kept, how many testable, and any refusals or fetch failures. Do not paste the JSON into the message."""
+Rules: absolute paths only. No Bash except ls, cat, head, grep on files under /Users/triton/PROTEUS, one command per call, no `;`, no `&&`, no `2>&1`, no redirection: the hook denies the whole call otherwise. Do not write anywhere else. If a tool call is refused, that is a result: do not retry it, put it in your final message. Your final message is three lines: how many kept, how many testable, and any refusals or fetch failures. Do not paste the JSON into the message."""
 
 
 def cmd_shortlist(a):

@@ -37,7 +37,7 @@ From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run l
 3. `## Ran it` (the one thing installed and executed, and the verdict from running it).
 4. `## Score`: the Grinder and the Pitch numbers from TRACK-RECORD.md, losses included, one small table each.
    On a review Sunday, `## Week-8 review` (or `## Week-12 review` on 13 Dec) comes straight after Score: the whole `review.py` output pasted verbatim, then one short paragraph in your own words saying what each verdict means in practice. On a KILL you write the finding with the numbers; on a CHANGE you name the binding constraint from the run logs, the one fix, and the second date; on INCONCLUSIVE you say so and that it converts to CHANGE per PASS-MARKS.md. Luke may overrule in one word; you do not ask him to.
-5. `## Watched and read`: one line per item, novelty first.
+5. `## Watched and read`: one line per item, novelty first. Run `python3 /Users/triton/PROTEUS/bin/harvest.py digest` first: it prints the week's kept harvest entries as ready lines, testable first, with the probe id and verdict where the loop reached one. Use those lines here; an entry whose probe reached a verdict goes under `## Ran it` instead, in the probe's own words. The mechanisms in full are in `field-notes/HARVEST.md`, mirrored to the vault; do not paste them.
 6. `## Wildcard`.
 7. `## Luke-adjacent`.
 8. `## Next week`: the Big Expedition step from BACKLOG.md.

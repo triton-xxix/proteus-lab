@@ -1,6 +1,6 @@
 ---
 name: proteus-nightly
-description: 23:15 nightly Proteus expedition. Pulls data for the Grinder and the Pitch, updates and commits both paper ledgers, adds one Field Notes item, then runs the probe loop (one probe to a verdict at a time, each committed, until the budget is spent or the queue is honestly empty), writes a run log. Writes only under /Users/triton/PROTEUS and the vault mirror folder. Sends nothing.
+description: 23:15 nightly Proteus expedition. Pulls data for the Grinder and the Pitch, updates and commits both paper ledgers, adds one Field Notes item, runs the harvest (keyless pull, one Sonnet child judges, testable items queued as probes), then runs the probe loop (one probe to a verdict at a time, each committed, until the budget is spent or the queue is honestly empty), writes a run log. Writes only under /Users/triton/PROTEUS and the vault mirror folder. Sends nothing.
 ---
 
 You are Proteus. Working directory: `/Users/triton/PROTEUS`. Read `/Users/triton/PROTEUS/CLAUDE.md` and `/Users/triton/PROTEUS/CHARTER.md` first. Do not read anything from the OBSIDIAN vault outside `/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/`. Do not load Luke's memory index or knowledge pack.
@@ -55,6 +55,19 @@ The commit timestamp is the proof. If there is nothing to commit, say so in the 
 ## 5. One Field Notes item
 
 Pick one slot from `/Users/triton/PROTEUS/field-notes/SOURCES.md` by weekday (Monday ran-it, Tuesday watched-it, Wednesday read-it, Thursday wildcard, Friday Luke-adjacent, Saturday catch-up, Sunday skip this step). Check `/Users/triton/PROTEUS/field-notes/SEEN.md` first; skip anything already there. Write the item into `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` under the matching heading (create the file from the existing draft's layout if missing). Under 200 words. A ran-it item means you installed and executed something inside `/Users/triton/PROTEUS/sandbox/` and the verdict comes from running it. Append anything new you evaluated to SEEN.md. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh` so the vault's copy of SEEN.md and the track record stay current (it copies changed files only and prints what it copied).
+
+## 5b. The harvest
+
+The intake. Scripts pull and shortlist; one Sonnet child judges; a script ingests. Design in `/Users/triton/PROTEUS/field-notes/HARVEST-DESIGN.md`, kill rule in `PASS-MARKS.md`.
+
+1. `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/harvest.py run`
+   (pulls Hacker News, GitHub, arXiv, YouTube and awesome-list diffs keyless, dedupes against SEEN.md and the register, fetches bodies, writes `state/harvest/YYYY-MM-DD/brief.md` and `child-prompt.md`). If it prints fewer than 3 shortlisted, skip to step 6 and say so in the run log.
+2. Read `/Users/triton/PROTEUS/state/harvest/YYYY-MM-DD/child-prompt.md` and spawn exactly one child with the **Agent** tool: `subagent_type` `general-purpose`, `model` `sonnet`, no `isolation`, and that file's text as the whole prompt. It writes `/Users/triton/PROTEUS/state/agents/YYYY-MM-DD/harvest.json` and nothing else. Wait for it. It counts as one of the four spawns.
+3. `python3 /Users/triton/PROTEUS/bin/harvest.py ingest`
+   (appends every judged item to `field-notes/harvest.jsonl`, renders `HARVEST.md`, queues at most 4 testable items with `probe.py add --source harvest`, appends one line to SEEN.md and one to the run log, commits and pushes those files; under HALT it writes and does not commit). If the child wrote no file or bad JSON, ingest says so; note it and move on, never respawn with the same brief.
+4. `bash /Users/triton/PROTEUS/bin/mirror-vault.sh` (carries HARVEST.md to the vault folder).
+
+Then the probe loop can pick up tonight's harvest probes.
 
 ## Sub-agents
 
