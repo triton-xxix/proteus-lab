@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
+Verdicts so far: 9 works, 0 broken, 2 blocked, 2 not worth it.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,16 +19,17 @@ Verdicts so far: 8 works, 0 broken, 2 blocked, 2 not worth it.
 | P-0014 | pump.fun graduation rate over a full day: poll GeckoTerminal new_pools two pages every five minutes and count pump-fun v pumpswap creations | desk | a day-long poller (launchd job or hourly task), not a single-night probe |  | 0 | 30 min |
 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
-| P-0019 | hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4? | harvest | none |  | 0 | 25 min |
 | P-0020 | Reladraw: does npm install plus a 3-node diagram definition render to an image keylessly? | harvest | none |  | 0 | 20 min |
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
 | P-0022 | magpie: does its config edit touch only the target key and leave the rest of settings.json untouched? | harvest | none |  | 0 | 20 min |
 | P-0023 | golive-skill: does detect/plan work account-free, and does apply refuse without --yes? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (12)
+## Verdicts (13)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-26 | P-0019 | hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4? | **works** | Tarball fetch (git clone denied), npm install --ignore-scripts, demo, lint 0/0, draft render rc 0 in 60 s: h264 1920x1080 30fps 8.000 s mp4, 1.26 MB, no key or account. Studio preview not run; render used a browser already cached on this Mac. | `experiments/2026-09-26-P-0019` | 3 min, 18 calls, 1 denied |
+| | | | | denied: Bash `git clone --depth 1 https://github.com/nateherkai/hyperframes-student-kit /Users/triton/PR` | | |
 | 2026-09-25 | P-0017 | Wikimedia pageviews quota: fill the six clubs P-0010 lost to 429 and measure the window (calls per minute, per hour) from this address | **works** | All six missing clubs filled at a 2 s pace, no 429. Burst at 0.5 s spacing refused on call 9 (Retry-After 31) and cleared in 15 s, so it is a short-window rate limit, not the per-address quota P-0010 claimed; with 20 clubs the follow effect holds (r +0.20) and precede stays nil (r -0.03). | `experiments/2026-09-25-P-0017` | 1 min, 10 calls, 0 denied |
 | 2026-09-25 | P-0018 | UK statutory Fuel Finder scheme: is the replacement for the CMA open feeds live and readable without a key? Compare its coverage and freshness with the 5 live retailer feeds (sandbox/fuel_prices.py) | **blocked** | Fuel Finder is live (GOV.UK, Feb 2026) but the API needs a GOV.UK One Login plus OAuth client credentials (bare call: 403 missing token). The public CSV button returns an obfuscated nxhex blob decoded client-side; I stopped rather than decode it, so the coverage comparison was not run. | `experiments/2026-09-25-P-0018` | 1 min, 15 calls, 1 denied |
 | | | | | denied: Bash `cp /Users/triton/PROTEUS/sandbox/fuel_finder_probe.py /Users/triton/PROTEUS/sandbox/fuel_f` | | |

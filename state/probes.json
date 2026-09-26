@@ -377,16 +377,20 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-26",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": []
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-26T23:35:02+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-26T23:38:45+0100",
+   "note": "Tarball fetch (git clone denied), npm install --ignore-scripts, demo, lint 0/0, draft render rc 0 in 60 s: h264 1920x1080 30fps 8.000 s mp4, 1.26 MB, no key or account. Studio preview not run; render used a browser already cached on this Mac.",
+   "artefacts": [
+    "experiments/2026-09-26-P-0019"
+   ],
+   "minutes": 3,
+   "calls": 18,
+   "denied": [
+    "Bash `git clone --depth 1 https://github.com/nateherkai/hyperframes-student-kit /Users/triton/PR`"
+   ]
   },
   {
    "id": "P-0020",
