@@ -6,7 +6,7 @@
     python3 /Users/triton/PROTEUS/bin/probe.py verdict P-0007 --verdict works|broken|blocked|not-worth-it \
                                               --note "..." [--artefact PATH ...]
     python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."
-    python3 /Users/triton/PROTEUS/bin/probe.py add "title" [--source backlog|intel|persona|desk|field-notes]
+    python3 /Users/triton/PROTEUS/bin/probe.py add "title" [--source backlog|intel|persona|desk|field-notes|harvest]
                                               [--needs "..."] [--after YYYY-MM-DD] [--est MINUTES]
     python3 /Users/triton/PROTEUS/bin/probe.py status | queue | render
 
@@ -52,7 +52,7 @@ DECISIONS = ROOT + "state/unattended-decisions-%s.jsonl"
 NO_GIT = os.environ.get("PROBE_NO_GIT") == "1"
 
 VERDICTS = ("works", "broken", "blocked", "not-worth-it")
-SOURCE_RANK = {"backlog": 1, "intel": 2, "persona": 3, "field-notes": 3, "desk": 4}
+SOURCE_RANK = {"backlog": 1, "intel": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4}
 DEFAULT_MAX_MINUTES = 60      # the loop's own ceiling, whatever the night's deadline says
 DEFAULT_MAX_CALLS = 150       # hook-logged tool calls, the token proxy
 DEFAULT_MAX_PROBES = 6

@@ -8,6 +8,7 @@
 #   field-notes/SEEN.md      -> TRITON-CORE/Proteus/SEEN.md                  (novelty register)
 #   TRACK-RECORD.md          -> TRITON-CORE/Proteus/TRACK-RECORD.md          (score snapshot, rebuilt by bin/score.py)
 #   PROBES.md                -> TRITON-CORE/Proteus/PROBES.md                (probe register, rendered by bin/probe.py)
+#   field-notes/HARVEST.md   -> TRITON-CORE/Proteus/HARVEST.md               (harvest register, rendered by bin/harvest.py)
 #   intel/*.md               -> TRITON-CORE/Proteus/intel/                  (intelligence lane, charter v2)
 #   graduates/*.md           -> TRITON-CORE/Proteus/graduates/              (handover notes, charter v2)
 #
@@ -40,6 +41,7 @@ done
 copy "$SRC/field-notes/SEEN.md" "$DST/SEEN.md"
 copy "$SRC/TRACK-RECORD.md" "$DST/TRACK-RECORD.md"
 copy "$SRC/PROBES.md" "$DST/PROBES.md"
+copy "$SRC/field-notes/HARVEST.md" "$DST/HARVEST.md"
 for lane in intel graduates; do
   if [ -d "$SRC/$lane" ]; then
     mkdir -p "$DST/$lane"

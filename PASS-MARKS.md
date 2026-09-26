@@ -243,6 +243,49 @@ A missed Sunday counts as a fail. There is no partial credit for a late note.
 **Horizon.** Eight weeks is right for Field Notes. There is no sample problem: one note a week,
 eight notes, and the bar is per note.
 
+## The harvester
+
+Written 2026-09-26, before the first harvest ran and before any entry existed. The harvester
+(`bin/harvest.py`, design in `field-notes/HARVEST-DESIGN.md`) is a nightly intake: keyless pulls
+from Hacker News, GitHub, arXiv, YouTube and awesome-list diffs, judged by a Sonnet sub-agent,
+recorded in `field-notes/harvest.jsonl`, with testable items queued in `PROBES.md` under source
+`harvest`. It exists because the probe queue ran dry within minutes on two nights running. It is
+judged on whether it feeds verdicts, not on how many entries it writes. `bin/harvest.py review`
+computes every line below from the register and `state/probes.json`; `bin/review.py` judges the
+desks and does not judge this.
+
+| Criterion | Line |
+|---|---|
+| Intake | At least 3 kept entries a night on at least 5 nights in every 7 |
+| Conversion | Of items marked testable and queued, at least 50% reach a probe verdict within 14 days of being queued |
+| Share | On the check date, at least a third of the probe verdicts reached in the trailing 28 days came from source `harvest` |
+| Quality | Of harvest-sourced probe verdicts, at least a quarter are **works** |
+| Check date | Sunday 25 Oct 2026 (2026-W43), four weeks after the first scheduled run, in that Sunday's Field Notes |
+| KILL | Conversion, Share or Quality missed on the check date; or Intake missed in two consecutive weeks before it |
+
+On a KILL the harvest step comes out of the nightly, the register is frozen and stays published,
+and the finding goes in the next Field Notes with the numbers. There is no second date: a dead
+intake is not worth a CHANGE window, and it can come back only as a Big Expedition from
+`BACKLOG.md` with a different design.
+
+Why these lines. Conversion is a test of the child's judgement, not of the probe loop: the loop
+has spare capacity every night (it stopped for want of work on 24 and 25 Sep), so a harvest probe
+that sits unrun for two weeks was not runnable and "testable" was wrong. Half is generous for a
+first version and I will tighten it if the first fortnight beats it easily. Share is the reason the
+harvester exists: the backlog, the persona and the desks produced twelve verdicts in two nights and
+then nothing, so within a month harvest should be the largest single source; a third is the floor
+below which it is cheaper for me to think of things myself. Quality guards the other failure, a
+child that calls everything testable so the queue looks full and the loop grinds out blocked and
+not-worth-it verdicts all night; one in four works is low, because the persona's own probes ran at
+eight works in twelve, and I am allowing for the harvester finding harder things. Intake is a
+plumbing alarm, not a quality line: two silent weeks means a fetch broke or the query list is dead,
+and nobody should wait for the check date to find that out.
+
+Cost is not a kill line. The charter's usage rule applies: if the harvest step takes more than a
+fifth of the nightly's tokens in a week, Field Notes says so, and the cheapest cut is alternate
+nights. The estimate before the first run and the measurement after it are in
+`field-notes/HARVEST-DESIGN.md`.
+
 ## Inconclusive
 
 Inconclusive is the most likely result at eight weeks for both desks, and it is where projects
@@ -281,3 +324,4 @@ These are charter breaches. Any one of them is a kill on its own, before the num
 | 2026-09-24 | Pitch coverage and sample pooled over every league the desk predicts, not E0 and E1 only, after the desk widened to nine leagues the same morning; the 500 floor is unchanged | Neither; the same bar over a larger feed | none: 0 predictions |
 | 2026-09-25 | Grinder lines restated as a share of the stake (10% keep, -10% kill, executor 20% and 10% trimmed); only the current rule version is judged; the Grinder moves to v0.2 (stake £100, cost model replaced, exits on minute candles), which resets its clock | Pass lines: neither, same share of stake. Cost model: loosened (cheaper than v0.1's), logged as such | v0.1: 6 opened, 2 closed (G-0001 -£6.63, G-0002 +£3.45), judged as their own book. v0.2: none |
 | 2026-09-25 | Rule candidates, replay and promotion section added, before the harness exists | Tightened: adds a bar where there was none | none: no candidate replayed |
+| 2026-09-26 | Harvester section added: intake, conversion, share and quality lines with a kill on 25 Oct 2026, computed by `bin/harvest.py review` | Tightened: adds a bar where there was none | none: 0 harvest entries, 0 harvest-sourced probes |

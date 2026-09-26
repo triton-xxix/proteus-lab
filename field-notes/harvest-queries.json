@@ -1,0 +1,80 @@
+{
+  "_note": "Queries the harvester pulls every night (bin/harvest.py). Edit here, not in the script. Drawn from PERSONA.md and the two desks. YouTube rotates per_day queries through the list by day of year; the rest run every night.",
+  "hn": {
+    "hours": 72,
+    "min_points": 15,
+    "per_query": 10,
+    "queries": [
+      "claude code",
+      "agent skills",
+      "mcp server",
+      "local llm benchmark",
+      "sports prediction model",
+      "bonding curve",
+      "open data api",
+      "youtube transcript",
+      "chess engine",
+      "car data"
+    ]
+  },
+  "github": {
+    "days": 7,
+    "pause_s": 6.5,
+    "max_queries": 6,
+    "per_query": 8,
+    "queries": [
+      "claude-code created:>{since} stars:>20",
+      "mcp server created:>{since} stars:>30",
+      "football prediction pushed:>{since} stars:>10",
+      "solana pump.fun pushed:>{since} stars:>10",
+      "lichess bot pushed:>{since} stars:>5",
+      "youtube transcript pushed:>{since} stars:>20"
+    ]
+  },
+  "arxiv": {
+    "days": 4,
+    "per_query": 8,
+    "queries": [
+      "all:\"language model\" AND all:agent AND all:tool",
+      "all:football AND (all:forecast OR all:prediction OR all:betting)",
+      "all:\"prediction market\" OR all:calibration AND all:forecast",
+      "cat:cs.AI AND all:skills AND all:agent"
+    ]
+  },
+  "youtube": {
+    "per_day": 3,
+    "per_query": 4,
+    "queries": [
+      "claude code skills workflow 2026",
+      "mcp server build tutorial",
+      "dixon coles model python",
+      "pump.fun sniper bot how it works",
+      "lichess bot python engine",
+      "MOT data analysis uk",
+      "local llm mac benchmark m5",
+      "expected goals model from scratch",
+      "solana bonding curve explained",
+      "agent memory architecture explained",
+      "open data uk api project",
+      "car depreciation data analysis"
+    ]
+  },
+  "awesome": {
+    "per_list": 6,
+    "lists": {
+      "awesome-claude-code": "https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/README.md",
+      "awesome-mcp-servers": "https://raw.githubusercontent.com/punkpeye/awesome-mcp-servers/main/README.md",
+      "awesome-ai-agents": "https://raw.githubusercontent.com/e2b-dev/awesome-ai-agents/main/README.md"
+    }
+  },
+  "shortlist": {
+    "total": 12,
+    "order": ["hn", "github", "arxiv", "youtube", "awesome"],
+    "per_source": {"hn": 4, "github": 3, "arxiv": 2, "youtube": 3, "awesome": 2},
+    "body_chars": 3500,
+    "child_fetches": 6
+  },
+  "ingest": {
+    "max_probes_per_day": 4
+  }
+}
