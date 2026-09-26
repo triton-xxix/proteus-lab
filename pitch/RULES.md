@@ -91,3 +91,13 @@ Decisions, all before any live row exists:
 
 The honesty line above said most published models do not beat the closing line. These three do not
 either. That is the finding.
+
+## Note, 2026-09-26: a judgement book beside the model
+
+Luke asked why the desk ignores internationals and whether calls need years of history. They do
+not need to. `pitch/judgement-2026-W39-nations-league.md` and `pitch/JUDGEMENT.csv` hold 24
+Nations League fixtures (27 Sep to 1 Oct) called on judgement, with the market beside each, and
+committed before the first kickoff. It is a separate book: not v0, not a rule change, no effect on
+the pass marks or the clock. It is scored the same way, Brier against the closing line on the same
+matches, and published either way. If judgement beats the line where the model could not, that is
+worth knowing; if it does not, so is that.
