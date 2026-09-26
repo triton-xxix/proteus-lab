@@ -1,6 +1,6 @@
 # P-0020: Reladraw, keyless install and a text diagram to an image
 
-Run 26 Sep 2026, 23:52 to 00:00, from the nightly. Source: harvest H-0013 (Show HN). Script:
+Run 26 Sep 2026, about 23:38 to 23:40, from the nightly. Source: harvest H-0013 (Show HN). Script:
 `sandbox/p0020_reladraw.py`; everything it measured is in `results.json`, the SVGs and their
 `.reladraw` sources sit beside it.
 

@@ -1,6 +1,6 @@
 # P-0023: golive-skill, account-free detect and plan, and does apply refuse without --yes?
 
-Run 27 Sep 2026, about 00:14 to 00:24, from the nightly. Source: harvest H-0022
+Run 26 Sep 2026, about 23:42 to 23:44, from the nightly. Source: harvest H-0022
 (mikehasa/golive-skill). Script: `sandbox/p0023_golive.py`. Full CLI output in `results-run.json`.
 
 ## How it was isolated

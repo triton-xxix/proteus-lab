@@ -1,6 +1,6 @@
 # P-0022: magpie's config writer, does it touch only the target key?
 
-Run 26 Sep 2026, around 00:00 to 00:12, from the nightly. Source: harvest H-0018
+Run 26 Sep 2026, about 23:40 to 23:42, from the nightly. Source: harvest H-0018
 (yetone/magpie). Script: `sandbox/p0022_magpie.py` (setup, test, diff). Everything measured is in
 `results.json`; the input and every edited copy are in `cases/`.
 

@@ -1,6 +1,6 @@
 # P-0019: hyperframes-student-kit, does the keyless demo lint and render?
 
-Run 26 Sep 2026, 23:35 to 23:50, from the nightly. Source: harvest H-0010. Script:
+Run 26 Sep 2026, from about 23:35 (probe.py logged 3 minutes), from the nightly. Source: harvest H-0010. Script:
 `sandbox/p0019_student_kit.py` (steps fetch, install, demo, lint, render, probe). Step log with
 timings and output tails: `steps.jsonl`. The rendered file stays in the experiment folder as
 `demo.mp4` (1.26 MB).
