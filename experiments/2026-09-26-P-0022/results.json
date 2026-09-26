@@ -1,0 +1,108 @@
+{
+  "go": {
+    "version": "go1.27.1",
+    "bytes": 71621873,
+    "secs": 28.2
+  },
+  "magpie": {
+    "bytes": 9504688,
+    "secs": 2.6
+  },
+  "go_test": {
+    "rc": 0,
+    "secs": 18.0,
+    "tail": "=== RUN   TestDelJSONMiddleKeepsLayout\n--- PASS: TestDelJSONMiddleKeepsLayout (0.01s)\n=== RUN   TestDelJSONCompactAndComments\n--- PASS: TestDelJSONCompactAndComments (0.00s)\n=== RUN   TestJSONReplaceKeepsEverything\n--- PASS: TestJSONReplaceKeepsEverything (0.00s)\n=== RUN   TestJSONInsertTopLevel\n--- PASS: TestJSONInsertTopLevel (0.00s)\n=== RUN   TestJSONInsertNestedIntoExistingObject\n--- PASS: TestJSONInsertNestedIntoExistingObject (0.00s)\n=== RUN   TestJSONInsertNestedCreatesParents\n--- PASS: TestJSONInsertNestedCreatesParents (0.00s)\n=== RUN   TestJSONScalarParentBecomesObject\n--- PASS: TestJSONScalarParentBecomesObject (0.00s)\n=== RUN   TestJSONCKeepsComments\n--- PASS: TestJSONCKeepsComments (0.00s)\n=== RUN   TestJSONEmptyAndMissingFile\n--- PASS: TestJSONEmptyAndMissingFile (0.00s)\n=== RUN   TestJSONCompact\n--- PASS: TestJSONCompact (0.00s)\n=== RUN   TestJSONBracesInStrings\n--- PASS: TestJSONBracesInStrings (0.00s)\n=== RUN   TestProteusProbe\n--- PASS: TestProteusProbe (0.01s)\n=== RUN   TestDelTOMLTableKeepsChildArrayTables\n--- PASS: TestDelTOMLTableKeepsChildArrayTables (0.00s)\n=== RUN   TestSetAndDelTOMLTable\n--- PASS: TestSetAndDelTOMLTable (0.00s)\n=== RUN   TestSetTOMLTableMiddle\n--- PASS: TestSetTOMLTableMiddle (0.00s)\n=== RUN   TestDelTOMLTop\n--- PASS: TestDelTOMLTop (0.00s)\n=== RUN   TestSetTOMLKeyPreservesValueSurroundings\n--- PASS: TestSetTOMLKeyPreservesValueSurroundings (0.01s)\n=== RUN   TestSetTOMLTables\n--- PASS: TestSetTOMLTables (0.00s)\n=== RUN   TestSetTOMLTablesUsesParsedBlocks\n=== RUN   TestSetTOMLTablesUsesParsedBlocks/replace\n=== RUN   TestSetTOMLTablesUsesParsedBlocks/remove\n=== RUN   TestSetTOMLTablesUsesParsedBlocks/only_fake_headers\n--- PASS: TestSetTOMLTablesUsesParsedBlocks (0.01s)\n    --- PASS: TestSetTOMLTablesUsesParsedBlocks/replace (0.00s)\n    --- PASS: TestSetTOMLTablesUsesParsedBlocks/remove (0.00s)\n    --- PASS: TestSetTOMLTablesUsesParsedBlocks/only_fake_headers (0.00s)\n=== RUN   TestJSONToYAML\n--- PASS: TestJSONToYAML (0.00s)\nPASS\nok  \tgithub.com/yetone/magpie/internal/edit\t0.827s\ngo: downloading github.com/pelletier/go-toml/v2 v2.2.4\ngo: downloading github.com/tidwall/gjson v1.19.0\ngo: downloading gopkg.in/yaml.v3 v3.0.1\ngo: downloading github.com/tidwall/jsonc v0.3.3\ngo: downloading github.com/tidwall/match v1.1.1\ngo: downloading github.com/tidwall/pretty v1.2.0\n"
+  },
+  "cases": {
+    "replace_nested": {
+      "op": "set",
+      "path": "env.ANTHROPIC_BASE_URL",
+      "err": "ok",
+      "lines_removed": 1,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -6 +6 @@\n-    \"ANTHROPIC_BASE_URL\": \"https://api.anthropic.com\",  // keep the comment\n+    \"ANTHROPIC_BASE_URL\": \"http://127.0.0.1:3425\",  // keep the comment\n"
+    },
+    "replace_top": {
+      "op": "set",
+      "path": "model",
+      "err": "ok",
+      "lines_removed": 1,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -4 +4 @@\n-  \"model\": \"opus\", /* the default */\n+  \"model\": \"kimi-k2\", /* the default */\n"
+    },
+    "insert_into_existing": {
+      "op": "set",
+      "path": "env.ANTHROPIC_MODEL",
+      "err": "ok",
+      "lines_removed": 0,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -5,0 +6 @@\n+    \"ANTHROPIC_MODEL\": \"deepseek-chat\",\n"
+    },
+    "insert_new_parent": {
+      "op": "set",
+      "path": "magpie.enabled",
+      "err": "ok",
+      "lines_removed": 0,
+      "lines_added": 3,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -1,0 +2,3 @@\n+  \"magpie\": {\n+    \"enabled\": true\n+  },\n"
+    },
+    "replace_scalar_with_object": {
+      "op": "set",
+      "path": "model.name",
+      "err": "ok",
+      "lines_removed": 1,
+      "lines_added": 3,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -4 +4,3 @@\n-  \"model\": \"opus\", /* the default */\n+  \"model\": {\n+  \t\"name\": \"x\"\n+  }, /* the default */\n"
+    },
+    "replace_in_tab_block": {
+      "op": "set",
+      "path": "statusLine.type",
+      "err": "ok",
+      "lines_removed": 1,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -15 +15 @@\n-\t\"type\": \"command\"\n+\t\"type\": \"static\"\n"
+    },
+    "delete_member": {
+      "op": "del",
+      "path": "env.DISABLE_TELEMETRY",
+      "err": "ok",
+      "lines_removed": 2,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -6,2 +6 @@\n-    \"ANTHROPIC_BASE_URL\": \"https://api.anthropic.com\",  // keep the comment\n-    \"DISABLE_TELEMETRY\": \"1\"\n+    \"ANTHROPIC_BASE_URL\": \"https://api.anthropic.com\"  // keep the comment\n"
+    },
+    "delete_last_member": {
+      "op": "del",
+      "path": "permissions.deny",
+      "err": "ok",
+      "lines_removed": 2,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -10,2 +10 @@\n-    \"allow\": [\"Bash(ls:*)\", \"Read\"],\n-    \"deny\": []\n+    \"allow\": [\"Bash(ls:*)\", \"Read\"]\n"
+    },
+    "key_with_wildcard": {
+      "op": "set",
+      "path": "env.WEIRD?KEY",
+      "err": "ok",
+      "lines_removed": 0,
+      "lines_added": 1,
+      "comments_kept": true,
+      "parses": true,
+      "diff": "@@ -5,0 +6 @@\n+    \"WEIRD?KEY\": \"v\",\n"
+    }
+  }
+}
