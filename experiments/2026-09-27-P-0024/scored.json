@@ -1,0 +1,231 @@
+{
+  "summary": {
+    "scored": 8,
+    "pending": 16,
+    "unmapped": [],
+    "mean_brier": 0.5722,
+    "mean_market_brier": 0.5586,
+    "mean_rps": 0.2063,
+    "mean_market_rps": 0.2026,
+    "mean_o25_brier": 0.2069,
+    "mean_market_o25_brier": 0.22
+  },
+  "rows": [
+    {
+      "id": "J-0001",
+      "match": "Lithuania v Azerbaijan",
+      "kickoff": "2026-09-27T13:00:00Z",
+      "score": "1-1",
+      "tournament_code": "END",
+      "flipped": false,
+      "call": "no view",
+      "brier": 0.7166,
+      "market_brier": 0.7135,
+      "rps": 0.1203,
+      "market_rps": 0.1201,
+      "o25_brier": 0.1444,
+      "market_o25_brier": 0.1436
+    },
+    {
+      "id": "J-0002",
+      "match": "Gibraltar v Andorra",
+      "kickoff": "2026-09-27T16:00:00Z",
+      "score": "0-0",
+      "tournament_code": "END",
+      "flipped": false,
+      "call": "under 2.5",
+      "brier": 0.645,
+      "market_brier": 0.6624,
+      "rps": 0.1113,
+      "market_rps": 0.1134,
+      "o25_brier": 0.0625,
+      "market_o25_brier": 0.09
+    },
+    {
+      "id": "J-0003",
+      "match": "Austria v Kosovo",
+      "kickoff": "2026-09-27T16:00:00Z",
+      "score": "3-1",
+      "tournament_code": "ENB",
+      "flipped": false,
+      "call": "draw or Kosovo (double chance)",
+      "brier": 0.3192,
+      "market_brier": 0.2288,
+      "rps": 0.1258,
+      "market_rps": 0.0891,
+      "o25_brier": 0.25,
+      "market_o25_brier": 0.2144
+    },
+    {
+      "id": "J-0004",
+      "match": "Denmark v Wales",
+      "kickoff": "2026-09-27T16:00:00Z",
+      "score": "2-0",
+      "tournament_code": "ENA",
+      "flipped": false,
+      "call": "Wales or draw (double chance)",
+      "brier": 0.3062,
+      "market_brier": 0.1882,
+      "rps": 0.1193,
+      "market_rps": 0.072,
+      "o25_brier": 0.25,
+      "market_o25_brier": 0.2927
+    },
+    {
+      "id": "J-0005",
+      "match": "Serbia v Netherlands",
+      "kickoff": "2026-09-27T16:00:00Z",
+      "score": "1-2",
+      "tournament_code": "ENA",
+      "flipped": false,
+      "call": "Netherlands win",
+      "brier": 0.1976,
+      "market_brier": 0.1658,
+      "rps": 0.0746,
+      "market_rps": 0.0636,
+      "o25_brier": 0.2025,
+      "market_o25_brier": 0.1731
+    },
+    {
+      "id": "J-0006",
+      "match": "Germany v Greece",
+      "kickoff": "2026-09-27T18:45:00Z",
+      "score": "0-1",
+      "tournament_code": "ENA",
+      "flipped": false,
+      "call": "under 2.5",
+      "brier": 1.1018,
+      "market_brier": 1.2409,
+      "rps": 0.5244,
+      "market_rps": 0.6026,
+      "o25_brier": 0.2704,
+      "market_o25_brier": 0.4032
+    },
+    {
+      "id": "J-0007",
+      "match": "Israel v Republic of Ireland",
+      "kickoff": "2026-09-27T18:45:00Z",
+      "score": "0-3",
+      "tournament_code": "ENB",
+      "flipped": true,
+      "call": "Ireland win, under 2.5",
+      "brier": 0.5774,
+      "market_brier": 0.6569,
+      "rps": 0.2467,
+      "market_rps": 0.2862,
+      "o25_brier": 0.36,
+      "market_o25_brier": 0.3102
+    },
+    {
+      "id": "J-0008",
+      "match": "Norway v Portugal",
+      "kickoff": "2026-09-27T18:45:00Z",
+      "score": "1-2",
+      "tournament_code": "ENA",
+      "flipped": false,
+      "call": "Norway win, over 2.5",
+      "brier": 0.7136,
+      "market_brier": 0.6127,
+      "rps": 0.328,
+      "market_rps": 0.2738,
+      "o25_brier": 0.1156,
+      "market_o25_brier": 0.1332
+    },
+    {
+      "id": "J-0009",
+      "match": "Armenia v Montenegro",
+      "kickoff": "2026-09-28T16:00:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0010",
+      "match": "Latvia v Cyprus",
+      "kickoff": "2026-09-28T16:00:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0011",
+      "match": "Georgia v Ukraine",
+      "kickoff": "2026-09-28T16:00:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0012",
+      "match": "Belgium v France",
+      "kickoff": "2026-09-28T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0013",
+      "match": "Romania v Bosnia & Herzegovina",
+      "kickoff": "2026-09-28T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0014",
+      "match": "Northern Ireland v Hungary",
+      "kickoff": "2026-09-28T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0015",
+      "match": "Turkey v Italy",
+      "kickoff": "2026-09-28T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0016",
+      "match": "Sweden v Poland",
+      "kickoff": "2026-09-28T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0017",
+      "match": "Spain v Croatia",
+      "kickoff": "2026-09-29T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0018",
+      "match": "Czech Republic v England",
+      "kickoff": "2026-09-29T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0019",
+      "match": "Slovenia v North Macedonia",
+      "kickoff": "2026-09-29T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0020",
+      "match": "Scotland v Switzerland",
+      "kickoff": "2026-09-29T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0021",
+      "match": "Denmark v Portugal",
+      "kickoff": "2026-10-01T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0022",
+      "match": "Germany v Serbia",
+      "kickoff": "2026-10-01T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0023",
+      "match": "Greece v Netherlands",
+      "kickoff": "2026-10-01T18:45:00Z",
+      "status": "no result"
+    },
+    {
+      "id": "J-0024",
+      "match": "Wales v Norway",
+      "kickoff": "2026-10-01T18:45:00Z",
+      "status": "no result"
+    }
+  ]
+}

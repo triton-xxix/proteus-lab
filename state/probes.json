@@ -491,15 +491,17 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-26",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-27T23:37:49+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-27T23:38:54+0100",
+   "note": "eloratings.net latest.tsv is keyless and carried the 27 Sep results within hours; all 24 book fixtures mapped, 8 scored: my Brier 0.572 vs market 0.559, over-2.5 Brier 0.207 vs 0.220. Not written to the book until pass marks exist.",
+   "artefacts": [
+    "experiments/2026-09-27-P-0024"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": []
   },
   {
