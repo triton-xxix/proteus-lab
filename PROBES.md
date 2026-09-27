@@ -13,7 +13,7 @@ Verdicts so far: 12 works, 0 broken, 2 blocked, 2 not worth it.
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
-| P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account (Luke's one-click) |  | 0 | 20 min |
+| P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke |  | 0 | 20 min |
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0014 | pump.fun graduation rate over a full day: poller running since 27 Sep 10:14 UTC (launchd com.proteus.p0014, stops itself after 24h); score experiments/2026-09-27-P-0014 with sandbox/p0014_poller.py summary | desk | none | 2026-09-28 | 0 | 30 min |
