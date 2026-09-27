@@ -286,6 +286,42 @@ fifth of the nightly's tokens in a week, Field Notes says so, and the cheapest c
 nights. The estimate before the first run and the measurement after it are in
 `field-notes/HARVEST-DESIGN.md`.
 
+## The judgement book
+
+Written 2026-09-27 at about 23:50, which is late, and I say how late. The charter wants pass marks
+before the first scored row. No row in `pitch/JUDGEMENT.csv` had been scored in the book, but I had
+already scored the first eight privately tonight (P-0024, `experiments/2026-09-27-P-0024/`), so
+I wrote these lines knowing that J-0001 to J-0008 came out Brier 0.572 against the market's 0.559.
+Those eight are therefore **excluded from every line below**. They stay published as their own
+"seen" book and are never counted toward a verdict. Everything from J-0009 on counts.
+
+Question under test: when I call a match on judgement rather than a model, do I beat the market
+price I wrote down beside the call? The measure is the paired difference, per call, between my 1X2
+Brier and the recorded market's, averaged over calls. Negative means I am better. The over 2.5 Brier
+difference is published beside it and is not a criterion. Only rows committed before kickoff count.
+`pitch/score_judgement.py` computes it from eloratings.net results; `bin/review.py` does not judge
+this book.
+
+| Criterion | Line |
+|---|---|
+| Counted rows | J-0009 onwards, committed before kickoff, scored with both Briers |
+| Sample floor for any verdict | 60 counted rows |
+| KILL | At 60 or more counted rows, paired Brier difference of +0.010 or worse; or at 100 counted rows, anything not at or below -0.005 |
+| KEEP | At 60 or more counted rows, paired difference at or below -0.005, on all counted rows and on the rows where my biggest lean was 0.03 or more |
+| INCONCLUSIVE | Everything else under 100 counted rows |
+| Horizon | 100 counted rows or 31 May 2027, whichever is first; at the horizon anything not KEEP is KILL |
+
+On a KILL I stop making judgement calls, the book is frozen and published, and the finding goes in
+Field Notes. On KEEP the book continues; it does not earn an executor on its own.
+
+Why these lines. Matching the market is not knowledge, same as the Pitch, so there is no tier for
+"close enough" at the horizon. The leaned subset is in the KEEP line because a book that only wins
+where it agreed with the market has shown nothing. Sixty is two and a half international windows at
+this window's 24 calls, and at that size I do not know the standard error: my probabilities sit
+within about five points of the market, so the per-call spread of the difference should be well
+under the Pitch's 0.13, but I have not measured it and will not pretend to. The eight seen rows are
+excluded rather than included because a line written after seeing results has to cost something.
+
 ## Inconclusive
 
 Inconclusive is the most likely result at eight weeks for both desks, and it is where projects
@@ -325,3 +361,4 @@ These are charter breaches. Any one of them is a kill on its own, before the num
 | 2026-09-25 | Grinder lines restated as a share of the stake (10% keep, -10% kill, executor 20% and 10% trimmed); only the current rule version is judged; the Grinder moves to v0.2 (stake £100, cost model replaced, exits on minute candles), which resets its clock | Pass lines: neither, same share of stake. Cost model: loosened (cheaper than v0.1's), logged as such | v0.1: 6 opened, 2 closed (G-0001 -£6.63, G-0002 +£3.45), judged as their own book. v0.2: none |
 | 2026-09-25 | Rule candidates, replay and promotion section added, before the harness exists | Tightened: adds a bar where there was none | none: no candidate replayed |
 | 2026-09-26 | Harvester section added: intake, conversion, share and quality lines with a kill on 25 Oct 2026, computed by `bin/harvest.py review` | Tightened: adds a bar where there was none | none: 0 harvest entries, 0 harvest-sourced probes |
+| 2026-09-27 | Judgement book section added after eight rows had been scored privately; those eight are excluded from every line | Tightened: adds a bar where there was none | J-0001 to J-0008 seen (Brier 0.572 vs market 0.559) and excluded; J-0009 to J-0024 unplayed |
