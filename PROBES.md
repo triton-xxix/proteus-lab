@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 12 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 13 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,14 +20,14 @@ Verdicts so far: 12 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
 | P-0024 | Pitch judgement book scorer: can a keyless results source (eloratings.net or similar) score pitch/JUDGEMENT.csv for the Nations League window, Brier and RPS per call? | desk | none |  | 0 | 25 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
-| P-0026 | AgentMail MCP: does the hosted endpoint answer or refuse a tool-list call with no API key at all? | harvest | none |  | 0 | 15 min |
 | P-0027 | lightpanda: does the from-scratch Zig browser really fetch a public page, and how fast is it against a plain curl? | harvest | none |  | 0 | 20 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
 
-## Verdicts (16)
+## Verdicts (17)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-27 | P-0026 | AgentMail MCP: does the hosted endpoint answer or refuse a tool-list call with no API key at all? | **works** | Keyless initialize and tools/list both get HTTP 401 in 0.2s with a spec-shaped MCP OAuth challenge; the RFC 9728 metadata is public and names Clerk as the auth server, so the tool catalogue is gated behind an account. | `experiments/2026-09-27-P-0026` | 0 min, 11 calls, 0 denied |
 | 2026-09-26 | P-0023 | golive-skill: does detect/plan work account-free, and does apply refuse without --yes? | **works** | golive 0.1.0-alpha.4 in a fake HOME: detect found Next plus Supabase, Stripe, Resend and flagged 2 client-exposed env names correctly; plan gave id aa01065b3dc3 but only 5 human login steps, provider steps omitted without accounts; apply refused without --plan, then without --yes, writing nothing. | `experiments/2026-09-26-P-0023` | 1 min, 21 calls, 0 denied |
 | 2026-09-26 | P-0022 | magpie: does its config edit touch only the target key and leave the rest of settings.json untouched? | **works** | Ran magpie's own internal/edit SetJSON/DelJSON (Go 1.27.1 fetched to sandbox) on 9 copies of a commented JSONC settings.json: every edit changed only the target span, comments, order and commas intact, all parse. Quirks cosmetic: new top-level key lands above the header comment; tab indent guessed file-wide. App and gateway not run. | `experiments/2026-09-26-P-0022` | 2 min, 12 calls, 0 denied |
 | 2026-09-26 | P-0020 | Reladraw: does npm install plus a 3-node diagram definition render to an image keylessly? | **works** | reladraw 0.5.0 installs with zero dependencies in 1.7 s and renders a 3-node text diagram to well-formed SVG in 0.3 s, byte-identical twice. Gap-is-a-minimum claim holds exactly: 56 px apart alone, 342 px with a 230 px node wedged in (230 + 2x56). | `experiments/2026-09-26-P-0020` | 1 min, 14 calls, 0 denied |

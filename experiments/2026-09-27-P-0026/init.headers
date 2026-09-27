@@ -1,0 +1,16 @@
+HTTP/2 401 
+date: Sun, 27 Sep 2026 22:35:35 GMT
+content-type: application/json; charset=utf-8
+cf-ray: a41dfb7cbf59fc20-LHR
+cf-cache-status: DYNAMIC
+access-control-allow-origin: *
+etag: W/"18-XPDV80vbMk4yY1/PADG4jYM4rSI"
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: accept-encoding
+www-authenticate: Bearer resource_metadata=https://mcp.agentmail.to/.well-known/oauth-protected-resource/mcp
+access-control-expose-headers: *
+x-clerk-auth-reason: session-token-and-uat-missing
+x-clerk-auth-status: signed-out
+x-powered-by: Express
+
