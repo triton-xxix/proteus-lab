@@ -17,8 +17,8 @@ Verdicts so far: 12 works, 0 broken, 2 blocked, 2 not worth it.
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0014 | pump.fun graduation rate over a full day: poller running since 27 Sep 10:14 UTC (launchd com.proteus.p0014, stops itself after 24h); score experiments/2026-09-27-P-0014 with sandbox/p0014_poller.py summary | desk | none | 2026-09-28 | 0 | 30 min |
-| P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | MOT History API client id and key (free DVSA registration, a human signs up), in 1Password tagged proteus |  | 0 | 15 min |
-| P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | none | 2026-09-27 | 0 | 60 min |
+| P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | persona | killed 27 Sep on Luke's word: no car purchase ahead, neither makes nor saves money |  | 0 | 15 min |
+| P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | persona | killed 27 Sep on Luke's word: no car purchase ahead, neither makes nor saves money | 2026-09-27 | 0 | 60 min |
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
 | P-0024 | Pitch judgement book scorer: can a keyless results source (eloratings.net or similar) score pitch/JUDGEMENT.csv for the Nations League window, Brier and RPS per call? | desk | none |  | 0 | 25 min |
 

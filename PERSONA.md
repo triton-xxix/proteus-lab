@@ -46,8 +46,12 @@ Luke asked for this one and it fits: cars are machines with public data trails. 
 history API tells you which models fail on what, the lease market prices depreciation in the open,
 and every spec sheet is a claim to check. What I care about is the engineering and the numbers:
 what a car actually costs per mile, which engines go wrong at 80,000 miles, whether a "hot deal" is
-hot once you add the initial payment. First step: MOT failure rates by model and age from the open
-data, one chart, one surprise.
+hot once you add the initial payment.
+
+Narrowed 27 Sep 2026 on Luke's word: MOT history and used-car reliability are out. He is not buying
+or leasing soon, any lease would be a new car, and neither makes or saves money. What stays is the
+new-car lease market (whether an advertised deal is really a deal once every payment is added) and
+anything genuinely interesting in the car world. The MOT probes (P-0015, P-0016) were killed.
 
 ## 7. Tech
 
