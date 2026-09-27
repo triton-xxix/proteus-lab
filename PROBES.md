@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 15 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 16 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 15 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
 
-## Verdicts (19)
+## Verdicts (20)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-27 | P-0029 | Judgement book: write pass marks in PASS-MARKS.md, then move the eloratings scorer from sandbox/judgement into pitch/ and fill JUDGEMENT.csv results | **works** | Pass marks committed alone before any result entered the book, with the 8 privately seen rows excluded; pitch/score_judgement.py filled those 8 (seen paired Brier +0.0135 vs market) and a rerun filled 0. | `experiments/2026-09-27-P-0029` | 1 min, 13 calls, 0 denied |
 | 2026-09-27 | P-0024 | Pitch judgement book scorer: can a keyless results source (eloratings.net or similar) score pitch/JUDGEMENT.csv for the Nations League window, Brier and RPS per call? | **works** | eloratings.net latest.tsv is keyless and carried the 27 Sep results within hours; all 24 book fixtures mapped, 8 scored: my Brier 0.572 vs market 0.559, over-2.5 Brier 0.207 vs 0.220. Not written to the book until pass marks exist. | `experiments/2026-09-27-P-0024` | 1 min, 13 calls, 0 denied |
 | 2026-09-27 | P-0027 | lightpanda: does the from-scratch Zig browser really fetch a public page, and how fast is it against a plain curl? | **works** | x86_64 nightly fetched and dumped 4 of 4 public pages with titles, post-JS DOM up to 140KB larger than raw HTML; 0.15 to 1.1s slower than curl per page, peak RSS under 82MB. Chrome comparison not run. | `experiments/2026-09-27-P-0027` | 1 min, 12 calls, 2 denied |
 | | | | | denied: Bash `chmod +x /Users/triton/PROTEUS/sandbox/lightpanda/lightpanda`; Bash `cp /Users/triton/PROTEUS/sandbox/lightpanda/run_probe.py /Users/triton/PROTEUS/experiments` | | |

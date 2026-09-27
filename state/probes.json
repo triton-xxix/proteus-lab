@@ -1,5 +1,5 @@
 {
- "next_id": 29,
+ "next_id": 30,
  "items": [
   {
    "id": "P-0001",
@@ -588,6 +588,28 @@
    "artefacts": [],
    "minutes": null,
    "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0029",
+   "title": "Judgement book: write pass marks in PASS-MARKS.md, then move the eloratings scorer from sandbox/judgement into pitch/ and fill JUDGEMENT.csv results",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-09-27",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-27T23:39:05+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-27T23:40:24+0100",
+   "note": "Pass marks committed alone before any result entered the book, with the 8 privately seen rows excluded; pitch/score_judgement.py filled those 8 (seen paired Brier +0.0135 vs market) and a rerun filled 0.",
+   "artefacts": [
+    "experiments/2026-09-27-P-0029"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": [],
    "luke": false
   }
