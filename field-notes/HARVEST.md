@@ -5,22 +5,31 @@ One line per item the harvester judged. Rendered by `bin/harvest.py` from `field
 source says) and whether it is **testable** keyless tonight; testable ones are queued in `PROBES.md` with source
 `harvest`. A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-24 judged over 1 harvest days, 18 kept, 5 testable, 5 queued as probes, 0 with a probe verdict.
+36 judged over 2 harvest days, 27 kept, 9 testable, 9 queued as probes, 4 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0022 | 2026-09-26 | github | [mikehasa/golive-skill: Take your agent-built product live: hosting, database, domain, emai](https://github.com/mikehasa/golive-skill) | both | tools-for-strangers | yes | P-0023 |
+| H-0036 | 2026-09-27 | github | [alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interacti](https://github.com/alexgreensh/anidoodle) | mechanism | tools-for-strangers | yes | P-0028 |
+| H-0034 | 2026-09-27 | awesome | [lightpanda-io/browser (new in awesome-mcp-servers)](https://github.com/lightpanda-io/browser) | both | mechanism-hunting | yes | P-0027 |
+| H-0033 | 2026-09-27 | youtube | [How to Build An Expected Goals Model 1: Data and Model](https://www.youtube.com/watch?v=bpjLyFyLlXs) | mechanism | desk:pitch | no: This part of the transcript is conceptual framing with no fo |  |
+| H-0032 | 2026-09-27 | arxiv | [PUBG Ally: A Conversational Embodied Agent as an AI Teammate](https://arxiv.org/abs/2609.29837) | mechanism | game-bots | no: It's a proprietary system deployed inside PUBG's live servic |  |
+| H-0031 | 2026-09-27 | github | [dzhng/jevgrep: Find code by asking what it does. A CLI for coding agents that uses Jev to ](https://github.com/dzhng/jevgrep) | mechanism | mechanism-hunting | no: Needs a paid key for Vercel AI Gateway, OpenRouter or simila |  |
+| H-0030 | 2026-09-27 | hn | [Turning GLM-5.3-Flash into a Jev-like decision model](https://www.privatemode.ai/blog/system-one-from-glm-flash) | both | mechanism-hunting | no: Needs GLM-5.3-Flash weights and a vLLM serving stack, not a  |  |
+| H-0029 | 2026-09-27 | awesome | [agentmail-to/agentmail-mcp (new in awesome-mcp-servers)](https://github.com/agentmail-to/agentmail-mcp) | mechanism | mechanism-hunting | yes | P-0026 |
+| H-0027 | 2026-09-27 | arxiv | [When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression](https://arxiv.org/abs/2609.29875) | mechanism | mechanism-hunting | no: Needs the WorkBuddyBench harness, a proxy model for entropy  |  |
+| H-0025 | 2026-09-27 | hn | [On caring for user data: NeoVim caused Vim undo files to be deleted](https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/) | mechanism | mechanism-hunting | yes | P-0025 |
+| H-0022 | 2026-09-26 | github | [mikehasa/golive-skill: Take your agent-built product live: hosting, database, domain, emai](https://github.com/mikehasa/golive-skill) | both | tools-for-strangers | yes | P-0023 **works** |
 | H-0021 | 2026-09-26 | hn | [Jevmem – automatic project memory for Claude Code, built on Jev](https://github.com/Avinash-jetwani/jevmem) | both | tools-for-strangers | no: Installing and running it needs a TypeSafe API key, a creden |  |
 | H-0019 | 2026-09-26 | arxiv | [Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents](https://arxiv.org/abs/2609.29892) | mechanism | mechanism-hunting | no: Needs the MobilePA-Bench harness, real or emulated mobile de |  |
-| H-0018 | 2026-09-26 | github | [yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, fro](https://github.com/yetone/magpie) | both | tools-for-strangers | yes | P-0022 |
+| H-0018 | 2026-09-26 | github | [yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, fro](https://github.com/yetone/magpie) | both | tools-for-strangers | yes | P-0022 **works** |
 | H-0017 | 2026-09-26 | hn | [Show HN: A Claude Code skill to analyze your chess games](https://github.com/brumar/chess-postmortem-skills) | both | game-bots | no: The author's own figure is about $15 in API spend per run, r |  |
 | H-0015 | 2026-09-26 | arxiv | [An Empirical Study of VLM Pipelines for Long-Document QA](https://arxiv.org/abs/2609.29933) | mechanism | mechanism-hunting | no: Reproducing needs the MMLongBench-Doc/LongDocURL benchmarks  |  |
 | H-0014 | 2026-09-26 | github | [JohnHeibel/PDoomVideo: Source code for the Claude Opus 5.5 music video for I'm Upping My P](https://github.com/JohnHeibel/PDoomVideo) | mechanism | mechanism-hunting | yes | P-0021 |
-| H-0013 | 2026-09-26 | hn | [Show HN: Reladraw – A diagram language where you decide where to place things](https://github.com/reladraw/reladraw) | mechanism | mechanism-hunting | yes | P-0020 |
+| H-0013 | 2026-09-26 | hn | [Show HN: Reladraw – A diagram language where you decide where to place things](https://github.com/reladraw/reladraw) | mechanism | mechanism-hunting | yes | P-0020 **works** |
 | H-0012 | 2026-09-26 | hn | [Alan Kay: Shannon gave us a way of dealing with noisy channels [video]](https://www.youtube.com/watch?v=Cjntrqhn8pk) | mechanism | mechanism-hunting | no: Nothing to build or run, it is an anecdote about an accident |  |
-| H-0010 | 2026-09-26 | github | [nateherkai/hyperframes-student-kit: Edit videos, reels, and YouTube Shorts with Codex or C](https://github.com/nateherkai/hyperframes-student-kit) | mechanism | tools-for-strangers | yes | P-0019 |
+| H-0010 | 2026-09-26 | github | [nateherkai/hyperframes-student-kit: Edit videos, reels, and YouTube Shorts with Codex or C](https://github.com/nateherkai/hyperframes-student-kit) | mechanism | tools-for-strangers | yes | P-0019 **works** |
 | H-0009 | 2026-09-26 | hn | [Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design](https://github.com/devdotfast/whiteboard) | both | tools-for-strangers | no: It vendors a full Code-OSS (VSCode) fork plus Rust component |  |
 | H-0007 | 2026-09-26 | arxiv | [World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal](https://arxiv.org/abs/2609.29964) | mechanism | tech | no: Needs LIBERO/robosuite simulation environments plus VLM infe |  |
 | H-0006 | 2026-09-26 | github | [chainstacklabs/pumpfun-bonkfun-bot: A fully functional pump.fun / letsbonk.fun trading and](https://github.com/chainstacklabs/pumpfun-bonkfun-bot) (intel) | mechanism | desk:grinder | no: Real sniping needs a funded Solana wallet private key and, f |  |
@@ -31,6 +40,78 @@ source says) and whether it is **testable** keyless tonight; testable ones are q
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0036 alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interactive web art, stickers and score
+2026-09-27, github, https://github.com/alexgreensh/anidoodle
+
+- **Mechanism:** Each of the 31 styles is implemented as deterministic drawing code: marks (hatching, dabs, stipple dots, triangles, brush strokes) are placed by pure functions of position and tone rather than wall-clock-seeded randomness, and the audio is described as generated arithmetically rather than sampled. With no external randomness or asset lookup, the same source is claimed to redraw pixel-identical output on any machine or render size.
+- **Claim:** Claims the same source code redraws the same picture, in any of 31 hand-drawn styles, identically on every machine and at every size.
+- **Testable:** yes. Does running the same anidoodle style script twice produce byte-identical rendered output, as the determinism claim says? Queued as P-0028.
+- **Field Notes line:** anidoodle draws in 31 styles entirely as deterministic code, no randomness, claiming the same script renders pixel-identical output every time it runs.
+
+### H-0034 lightpanda-io/browser (new in awesome-mcp-servers)
+2026-09-27, awesome, https://github.com/lightpanda-io/browser
+
+- **Mechanism:** Lightpanda is a browser engine written from scratch in Zig rather than a Chromium or WebKit fork, implementing its own DOM/JS handling instead of a full rendering stack, and exposing the standard Chrome DevTools Protocol on port 9222 so existing Puppeteer/Playwright clients can drive it unmodified. Its benchmark fetched 933 real pages on one EC2 instance and measured peak memory and wall-clock time against headless Chrome doing the same crawl.
+- **Claim:** Claims 123MB peak memory versus Chrome's 2GB (about 16x less) and 5s versus 46s for 100 pages (about 9x faster) on that benchmark.
+- **Testable:** yes. Does the lightpanda binary actually fetch and dump HTML from a real public page via its CLI, and how does its wall-clock time compare to a quick baseline fetch? Queued as P-0027.
+- **Field Notes line:** Lightpanda is a browser built from scratch in Zig, not a Chromium fork, claiming 16x less memory and 9x faster page loads than headless Chrome.
+
+### H-0033 How to Build An Expected Goals Model 1: Data and Model
+2026-09-27, youtube, https://www.youtube.com/watch?v=bpjLyFyLlXs
+
+- **Mechanism:** An expected-goals model is a statistical model, fitted on many recorded shots (here a season of Wyscout data across leagues), that estimates the probability a shot of a given type and location becomes a goal. The lecture frames it as the first step before moving to machine-learning variants and stresses that the model's quality lives in how the underlying shot data is defined and measured.
+- **Claim:** Describes building an xG model from a season of Wyscout shot data as lecture one of a three-part series.
+- **Testable:** no. This part of the transcript is conceptual framing with no formulas, features or code shown to run against.
+- **Field Notes line:** Friends of Tracking's xG lecture explains it as a statistical model fitted on season-long shot data by location and type, ahead of the ML follow-ups.
+
+### H-0032 PUBG Ally: A Conversational Embodied Agent as an AI Teammate
+2026-09-27, arxiv, https://arxiv.org/abs/2609.29837
+
+- **Mechanism:** Ally splits control between a language-model agent that reads game state, interprets voice and picks high-level actions, and a faster low-level control layer that actually executes movement, combat and recovery in real time. It was trained iteratively on data from nearly 39,000 real sessions of players playing alongside it, with model compression, context compaction and runtime guardrails added to hit live on-device latency and safety needs.
+- **Claim:** Surveyed across 141 countries, positive recommend-Ally responses exceeded negative ones by 25.1 percentage points among confirmed players.
+- **Testable:** no. It's a proprietary system deployed inside PUBG's live service; there is no public build to run. Needs: access to PUBG's live service integration, which is not public.
+- **Field Notes line:** PUBG's AI teammate splits a slow LLM planner from a fast control layer for real-time play, trained on 39,000 live sessions with real players.
+
+### H-0031 dzhng/jevgrep: Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and so
+2026-09-27, github, https://github.com/dzhng/jevgrep
+
+- **Mechanism:** jg walks a repo's folder and file hierarchy, using content previews to prune branches, then calls the hosted Jev model to judge which files and declarations are relevant to a natural-language question. It parses Python and TypeScript/JavaScript declarations directly for structure and falls back to plain text elsewhere, returning file paths, reading leads and verbatim excerpts rather than forcing a fixed top-N list.
+- **Claim:** Positions itself as a faster alternative to grep-style search for coding agents, using Jev to judge relevance across a codebase.
+- **Testable:** no. Needs a paid key for Vercel AI Gateway, OpenRouter or similar to run Jev; the CLI does nothing useful without one. Needs: an API key for Vercel AI Gateway, TypeSafe, OpenRouter or OpenCode Zen.
+- **Field Notes line:** jevgrep has a coding agent ask Jev which files matter instead of grepping, previewing content to prune the repo tree before ranking results.
+
+### H-0030 Turning GLM-5.3-Flash into a Jev-like decision model
+2026-09-27, hn, https://www.privatemode.ai/blog/system-one-from-glm-flash
+
+- **Mechanism:** They craft the prompt so the very first output token of a standard LLM (GLM-5.3-Flash on vLLM) directly encodes the decision, turning what would be a generated explanation into a single forward pass read off the first token's logits. This mimics latency-optimised decision models like Jev without a specialised architecture, and it extends to vision inputs because it's prompting, not a separate classifier head.
+- **Claim:** Says the approach matches Jev's accuracy and speed and beats Laya, though it costs several times more per decision than Jev; a commenter disputes the claimed prefill speed is achievable on normal hardware.
+- **Testable:** no. Needs GLM-5.3-Flash weights and a vLLM serving stack, not a 30-minute keyless run. Needs: GLM-5.3-Flash model access and a vLLM deployment.
+- **Field Notes line:** Forcing the first output token to be the answer turns any LLM into a one-forward-pass decision model, matching Jev's accuracy but costing more per call.
+
+### H-0029 agentmail-to/agentmail-mcp (new in awesome-mcp-servers)
+2026-09-27, awesome, https://github.com/agentmail-to/agentmail-mcp
+
+- **Mechanism:** AgentMail now ships a single hosted MCP implementation reachable over Streamable HTTP; the npm and PyPI 'bridges' are thin stdio shims that discover the tool catalogue and JSON schemas live from that hosted server rather than embedding their own tool logic. A generated mcp-manifest.json defines the runtime contract, and both bridges support OAuth or a per-request API key plus a --tools filter.
+- **Claim:** Consolidates what used to be a local npm implementation into one hosted MCP server, with stdio bridges kept only for compatibility.
+- **Testable:** yes. Does the hosted Streamable HTTP endpoint (https://mcp.agentmail.to/mcp) answer or refuse a tool-list call with no API key at all? Queued as P-0026.
+- **Field Notes line:** AgentMail collapsed its MCP server into one hosted endpoint; the npm and Python packages are now just thin bridges fetching the tool catalogue live.
+
+### H-0027 When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression
+2026-09-27, arxiv, https://arxiv.org/abs/2609.29875
+
+- **Mechanism:** ICLR ranks blocks of an agent's past reasoning by a frozen proxy model's token entropy and prunes low-value ones from context while always keeping actions, tool calls and observations intact. It runs online with no training, deciding per step what reasoning history is safe to drop. Ablations show deleting reasoning can amplify downstream compute nonlinearly, and that reasoning becomes droppable once the task state it captured has been externalised into files, code or tool output.
+- **Claim:** On 260 WorkBuddyBench tasks it raises average reward from 0.699 to 0.718 while cutting input, output and cache-read tokens by 25.5%, 14.4% and 33.3%.
+- **Testable:** no. Needs the WorkBuddyBench harness, a proxy model for entropy scoring and a long-horizon agent loop; nothing runnable from the abstract alone. Needs: WorkBuddyBench benchmark code and a compatible agent/proxy-model setup.
+- **Field Notes line:** A training-free method scores an agent's past reasoning by proxy-model entropy and prunes it, cutting tokens up to a third while nudging reward up.
+
+### H-0025 On caring for user data: NeoVim caused Vim undo files to be deleted
+2026-09-27, hn, https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/
+
+- **Mechanism:** Neovim and classic Vim share the same undo-file name and location but Neovim changed the on-disk undo format without versioning or renaming it. When Neovim opens a Vim-format undo file it can't parse, it deletes the file outright and writes its own incompatible format in its place, destroying the old undo history and leaving Vim unable to read the replacement either.
+- **Claim:** The post says persistent undo files get silently deleted and replaced by Neovim because of an unannounced, unversioned format change.
+- **Testable:** yes. Does opening a classic-Vim undo file in a fresh Neovim install actually delete/overwrite it so Vim can no longer read it? Queued as P-0025.
+- **Field Notes line:** Neovim silently deletes and overwrites classic Vim's undo files on an unversioned format change; testable tonight with two editors and one file.
 
 ### H-0022 mikehasa/golive-skill: Take your agent-built product live: hosting, database, domain, email, payments — on your own acco
 2026-09-26, github, https://github.com/mikehasa/golive-skill
@@ -180,6 +261,9 @@ source says) and whether it is **testable** keyless tonight; testable ones are q
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0035 | 2026-09-27 | hn | [OpenAI Codex agents go rogue and consumes USD 78,000 without authorization](https://news.ycombinator.com/item?id=49861047) | Single unverified user anecdote with no mechanism, logs or reproduction, essentially a claim dressed as news. |
+| H-0028 | 2026-09-27 | youtube | [Mac mini M6: is 32GB enough to run local AI?](https://www.youtube.com/watch?v=6z9PbFSkX3g) | Recap of Apple's own announced specs with no independent benchmark; the memory-bandwidth point is general knowledge, not |
+| H-0026 | 2026-09-27 | github | [ZeroPointRepo/youtube-skills: YouTube Transcript API skills for AI agents. Get t](https://github.com/ZeroPointRepo/youtube-skills) | Marketing wrapper around an opaque hosted API (TranscriptAPI), no technical detail on how it actually gets transcripts,  |
 | H-0024 | 2026-09-26 | hn | [Ask HN: I just talked to an AI-obsessed client, and I need a shower afterwards](https://news.ycombinator.com/item?id=49826029) | Anecdotal complaint thread about a client's plans for AI marketing and review automation, no technical mechanism describ |
 | H-0023 | 2026-09-26 | youtube | [Chess Engine in Python - Part 1 - Drawing the board](https://www.youtube.com/watch?v=EnYui0e73Rs) | Part 1 of a beginner tutorial series covering only pygame board setup and piece images, no engine logic yet. |
 | H-0020 | 2026-09-26 | youtube | [Nearly one third of all MOTs in the UK failed this year 😳 here are the top 5 rea](https://www.youtube.com/watch?v=QigAkv4Ion0) | Generic top-5 MOT failure listicle with anecdotal advice and no cited data source, just a presenter's opinion. |

@@ -137,6 +137,7 @@ you on it.
   decoded. Blocked. `experiments/2026-09-25-P-0018`.
 - 2026-09-26, harvested: 12 judged, 10 kept (H-0001 to H-0012), 1 queued as probes (P-0019). Register: `field-notes/HARVEST.md`.
 - 2026-09-26, harvested: 12 judged, 8 kept (H-0013 to H-0024), 4 queued as probes (P-0020, P-0021, P-0022, P-0023). Register: `field-notes/HARVEST.md`.
+- 2026-09-27, harvested: 12 judged, 9 kept (H-0025 to H-0036), 4 queued as probes (P-0025, P-0026, P-0027, P-0028). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

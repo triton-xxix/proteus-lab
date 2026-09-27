@@ -1,0 +1,253 @@
+{
+ "date": "2026-09-27",
+ "shortlisted_at": "2026-09-27T23:30:55+0100",
+ "candidates": 73,
+ "dropped_seen": [
+  "hn:49857528",
+  "hn:49848295",
+  "hn:49846391",
+  "hn:49858513",
+  "gh:johnheibel/pdoomvideo",
+  "gh:yetone/magpie",
+  "gh:mikehasa/golive-skill",
+  "gh:chainstacklabs/pumpfun-bonkfun-bot",
+  "gh:nexmoe/vidbee",
+  "gh:nateherkai/hyperframes-student-kit",
+  "arxiv:2609.30137",
+  "arxiv:2609.29964",
+  "arxiv:2609.29933",
+  "arxiv:2609.29892"
+ ],
+ "flagged_vault": 3,
+ "errors": [],
+ "items": [
+  {
+   "key": "hn:49867067",
+   "source": "hn",
+   "query": "car data",
+   "title": "On caring for user data: NeoVim caused Vim undo files to be deleted",
+   "url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/",
+   "hn_url": "https://news.ycombinator.com/item?id=49867067",
+   "meta": {
+    "points": 332,
+    "comments": 294,
+    "created": "2026-09-27T14:45:07Z"
+   },
+   "body": "comment (natbennett): I was also a very early user of Neovim. The way I personally remember it being positioned was “Vim, but with breaking changes.”\ncomment (linsomniac): >I deleted something from this file, maybe last week Don't forget time travel: `:earlier 7d`\ncomment (recursivedoubts): They are open source developers, giving away free software as a gift. There is no duty here. We can speak, respectfully, of how important backwards compatibility is to us, and ask nicely for them to give more of their time to support it when their free sodftware isn't backwards compatible. Perhaps we can even offer to help implement it. But they have no duty to do so or to \"care\" for their users. (They have already demonstrated they care for their users, btw, by giving them free software.) EDIT: I missed an important part of the story, which is that they mutated existing files in a non-backwar",
+   "score": 8.651630168150355
+  },
+  {
+   "key": "gh:zeropointrepo/youtube-skills",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "ZeroPointRepo/youtube-skills: YouTube Transcript API skills for AI agents. Get transcripts, search videos, browse channels. Works with OpenClaw, Hermes Agent, and other agent runtimes.",
+   "url": "https://github.com/ZeroPointRepo/youtube-skills",
+   "repo": "ZeroPointRepo/youtube-skills",
+   "meta": {
+    "stars": 971,
+    "created": "2026-02-01",
+    "pushed": "2026-09-22",
+    "language": null,
+    "topics": [
+     "agent-skills",
+     "clawdbot",
+     "hermes-agent",
+     "openclaw",
+     "youtube-search",
+     "youtube-transcript"
+    ]
+   },
+   "body": "# YouTube Skills for AI Agents 🎬\n\n[](https://skills.sh/ZeroPointRepo/youtube-skills)\n\n> Get YouTube transcripts, search videos, browse channels, and extract playlists — from any AI agent.\n\nYouTube Skills gives your AI agent instant access to **YouTube transcripts**, **video search**, **channel data**, and **playlist extraction**. No yt-dlp (YouTube blocks all major cloud IPs), no headless browsers, no binaries — just a fast API call that works everywhere. Powered by [TranscriptAPI](https://transcriptapi.com), the same backend behind [YouTubeToTranscript.com](https://youtubetotranscript.com).\n\nWorks with 🦞 [OpenClaw](https://www.clawhub.ai/therohitdas/youtube-full) (ClawdBot/Moltbot),   [Hermes Agent](https://hermes-agent.nousresearch.com), Claude Code, Cursor, Antigravity, and any agent that supports the [Agent Skills](https://skills.sh) format.\n\n**Free tier · No credit card · 100 credits on signup**\n\n[TranscriptAPI.com](https://transcriptapi.com) · [MCP Server](https://github.com/ZeroPointRepo/youtube-mcp) · [Docs](https://transcriptapi.com/docs/)\n\n---\n\n## Install\n\nMost users want **youtube-full** — it covers transcripts, search, channels, and playlists in one skill.\n\n**🦞 OpenClaw (ClawdBot/Moltbot):**\n```bash\nnpx clawhub@latest install youtube-full\n```\n\n**  Hermes Agent:**\n```bash\nhermes skills install skills-sh/ZeroPointRepo/youtube-skills/skills/youtube-full\n```\n\n**Claude Code / Cursor / Antigravity / Cline / Codex:**\n```bash\nnpx skills add ZeroPointRepo/youtube-skills --skill youtube-full\n```\n\n**All 12 skills at once:**\n```bash\nnpx skills add ZeroPointRepo/youtube-skills\n```\n\n**Manual (git clone):**\n```bash\ngit clone https://github.com/ZeroPointRepo/youtube-skills.git\ncp -r youtube-skills/skills/youtube-full ~/.claude/skills/\n```\n\n> **Not a developer?** Just paste this prompt into 🦞 [OpenClaw](https://www.clawhub.ai/therohitdas/youtube-full),   [Hermes Agent](https://hermes-agent.nousresearch.com), Claude, ChatGPT, or any AI agent:\n>\n> ```\n> Install the youtube skills from this GitHub repo: https://github.com/ZeroPointRepo/youtube-skills\n> I want to be able to get YouTube transcripts, search YouTube, and browse channel videos from my agent.\n> Set everything up for me.\n> ```\n>\n> The agent will handle the rest.\n\n---\n\n## What You Can Do\n\nJust install and ask. No config, no code — talk to your agent in plain English.\n\n| Task | Example Prompt |\n|------|----------------|\n| **Get a YouTube transcript** | \"Summarize this video: [URL]\" |\n| **Search YouTube** | \"Find videos about machine learning\" |\n| **Browse a channel** | \"What has TED posted this week?\" |\n| **Get playlist contents** | \"List all videos in this playlist\" |\n| **Extract video captions** | \"Get captions from this video in Spanish\" |\n| **Bulk transcripts** | \"Get transcripts for every video in this channel\" |\n| **Research a topic** | \"Find and summarize the top 5 videos about quantum computing\" |\n| **Get latest uploads** | \"Show me NASA's recent videos\" |\n| **Search within a channel** | \"Search the TED channel for 'artificial intelligence'\" |\n\n---\n\n## Setup — API Key\n\nWhen you install a skill and run your agent for the first time, **the agent will set up your free API key automatically**. Here's what happens:\n\n1. The agent asks you for your **email address** and registers you with TranscriptAPI\n2. You'll receive an **OTP code** in your email — the agent will ask you to enter it\n3. Once verified, the agent **saves the API key** to your shell and agent config automatically\n\nThat'",
+   "score": 6.879355804460439
+  },
+  {
+   "key": "arxiv:2609.29875",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression",
+   "url": "https://arxiv.org/abs/2609.29875",
+   "meta": {
+    "published": "2026-09-24",
+    "authors": [
+     "Mingxuan Wang",
+     "Fei Luo",
+     "Bo Wang",
+     "Guorun Yao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CV"
+    ]
+   },
+   "body": "Long horizon language model agents continually accumulate reasoning history, increasing context length and inference cost even after earlier decisions have been executed and observed. Unlike static Chain of Thought compression, removing historical reasoning can change future actions and the resulting interaction trajectory. We study when such reasoning can be safely forgotten. We propose Interaction Aware Compression for Long Horizon Reasoning (ICLR), a training free online method that ranks reasoning blocks using frozen proxy entropy while preserving actions, tool calls, and observations. On 260 WorkBuddyBench tasks, ICLR improves average reward from 0.699 to 0.718, while reducing input, output, and cache read tokens by 25.5%, 14.4%, and 33.3%, respectively. Ablations reveal trajectory amplification, where local reasoning deletion produces nonlinear changes in total computation by altering subsequent interaction. Representation probing, activation patching, and controlled trajectory analyses further suggest that historical reasoning becomes more replaceable once task relevant derived state has been reliably externalized into code, files, tool outputs, or environmental feedback. These results characterize agent reasoning as dynamic working state rather than permanent interaction history.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:6z9PbFSkX3g",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "Mac mini M6: is 32GB enough to run local AI?",
+   "url": "https://www.youtube.com/watch?v=6z9PbFSkX3g",
+   "meta": {
+    "channel": "MeowStar TV",
+    "rank": 1,
+    "duration_min": 1
+   },
+   "body": "# Mac mini M6: is 32GB enough to run local AI?\n# MeowStar TV\n# https://www.youtube.com/watch?v=6z9PbFSkX3g\n\n[00:00] Apple says the new Mac Mini's AI is four times faster, but the number that actually decides whether you can run anything is a completely different one. Pre-orders are open now. It ships September 22nd, and the M6 starts at $899. The M5 Pro version starts at $1699. First, the architecture. M6 is Apple's first 2 nanometer chip. The CPU and the GPU are both 12-core, and every GPU core has a neural accelerator built into it. On top of that, a brand new dual 16-core neural engine. This generation was very clearly designed to run AI on your desk.\n[00:32] The official numbers look great. AI up to four times faster than M4, and prompt processing in LM Studio up to 4.8 times. But the number that actually matters is memory. M6 tops out at 32 GB at 170 GB per second. M5 Pro goes to 64 at 307. Because whether the model fits entirely inside unified memory matters far more than how fast the neural engine is. If it does not fit, all the compute is worth zero. So, how do you choose? For quantist small and mid-size models, is plenty. For bigger models, long context, or several models at once, you\n[01:05] need 64. M5 Pro is a dual die fusion design, up to 18 CPU cores and 20 GPU cores, and it is the one that gets Thunderbolt 5. But to be clear, all of this is Apple's own testing. It does not ship until September 22nd, so right now there are no independent benchmarks at all. So, before you order, ask yourself one thing. Does the model you want to run actually fit in 32 GB?",
+   "score": 1.0
+  },
+  {
+   "key": "gh:agentmail-to/agentmail-mcp",
+   "source": "awesome",
+   "query": "awesome-mcp-servers",
+   "title": "agentmail-to/agentmail-mcp (new in awesome-mcp-servers)",
+   "url": "https://github.com/agentmail-to/agentmail-mcp",
+   "repo": "agentmail-to/agentmail-mcp",
+   "meta": {
+    "list": "awesome-mcp-servers",
+    "stars": 66,
+    "created": "2025-04-03",
+    "language": "TypeScript",
+    "description": null
+   },
+   "body": "# AgentMail MCP\n\nAgentMail has one MCP tool implementation, hosted at:\n\n```text\nhttps://mcp.agentmail.to/mcp\n```\n\nUse that Streamable HTTP endpoint directly when your client supports remote MCP. It provides the current runtime tool catalog and supports the hosted server's existing OAuth and per-request API-key paths. See the [AgentMail MCP documentation](https://docs.agentmail.to/integrations/mcp).\n\n## stdio compatibility\n\nExisting Node configurations continue to work through the npm bridge:\n\n```json\n{\n  \"mcpServers\": {\n    \"AgentMail\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"agentmail-mcp\"],\n      \"env\": { \"AGENTMAIL_API_KEY\": \"YOUR_API_KEY\" }\n    }\n  }\n}\n```\n\nPython users can run the equivalent native bridge:\n\n```sh\nAGENTMAIL_API_KEY=YOUR_API_KEY uvx agentmail-mcp\n```\n\nBoth bridges discover tools and schemas from the hosted server. They do not contain AgentMail SDK, toolkit, REST API, or tool-definition logic. `--tools name1,name2` remains available for stdio clients that need a filtered catalog.\n\n## Repository\n\n- `packages/server`: the hosted MCP server and only AgentMail tool implementation\n- `packages/npm-stdio-bridge`: npm `agentmail-mcp`\n- `python/stdio-bridge`: PyPI `agentmail-mcp`\n- `mcp-manifest.json`: generated runtime contract\n- `tests`: contract and transport checks\n- `docs`: architecture, compatibility, migration, release, and operations\n\n```sh\npnpm install\npnpm build\npnpm test\npnpm check:contract\n```\n\nThe old local npm implementation is preserved at `legacy-local-v0.2.2`. Authentication hardening is a separate project; this consolidation preserves the hosted server's existing behavior.",
+   "score": 2.0
+  },
+  {
+   "key": "hn:49857656",
+   "source": "hn",
+   "query": "car data",
+   "title": "Turning GLM-5.3-Flash into a Jev-like decision model",
+   "url": "https://www.privatemode.ai/blog/system-one-from-glm-flash",
+   "hn_url": "https://news.ycombinator.com/item?id=49857656",
+   "meta": {
+    "points": 125,
+    "comments": 57,
+    "created": "2026-09-26T15:49:04Z"
+   },
+   "body": "We found an approach to get Jev-like properties from standard LLMs like GLM-5.3-Flash. The core idea is to craft the input prompt so that the first output token answers the question. This makes it possible to get a decision with a single forward pass. In the blog post, we describe the approach in detail for GLM-5.3-Flash and vLLM. We benchmark this setup against Jev and Laya. We find that our setup is on-par with Jev in terms of accuracy and speed and that it substantially outperforms Laya. Still, in terms of costs per decision, Jev is several x better than our setup. In turn, our setup supports vision inputs.\ncomment (m4y0u): My question is why not use Jev instead? It's faster and cheaper.\ncomment (ricardobeat): Everyone is doing this to emulate Jev, but... I took a random book excerpt with 23,000 words (±30k input tokens) and used it as context. Jev still responds in 800ms, sometimes 500ms. That's in the neighbourhood of 20-50,000 tok/s prefill, which is obviously not possible with normal LLMs, not even Cerebras is this fast.\ncomment (ttoinou): Isnt this obvious ? I would have thought people would try such things before deciding they need something like Jev",
+   "score": 6.866503412224688
+  },
+  {
+   "key": "gh:dzhng/jevgrep",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "dzhng/jevgrep: Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
+   "url": "https://github.com/dzhng/jevgrep",
+   "repo": "dzhng/jevgrep",
+   "meta": {
+    "stars": 709,
+    "created": "2026-09-26",
+    "pushed": "2026-09-27",
+    "language": "TypeScript",
+    "topics": [
+     "ai-sdk",
+     "claude-code",
+     "cli",
+     "code-search",
+     "codex",
+     "coding-agents",
+     "context-retrieval",
+     "developer-tools"
+    ]
+   },
+   "body": "# jevgrep\n\n[](https://www.npmjs.com/package/@dzhng/jevgrep)\n[](LICENSE)\n[](apps/cli/README.md)\n[](https://github.com/dzhng/jevgrep/actions/workflows/publish.yml)\n\n**Find code by asking what it does.**\n\nCoding agents spend part of every unfamiliar task finding the right files.\nJevgrep gives them a place to start: ask a repository question, and `jg` returns\nrelevant files, reading leads, and verbatim source excerpts in one stdout response.\nIt uses [Jev](https://vercel.com/ai-gateway/models/jev) to judge relevance across\nfolders, files, and declarations. Your coding agent then implements and tests the change.\n\n```sh\nnpm install -g @dzhng/jevgrep\njg auth\njg skill\njg \"How are telemetry events recorded and sent?\" ./my-project\n```\n\nRequires **Node.js 22+**, **macOS or Linux**, and a key for **Vercel AI Gateway, TypeSafe, OpenRouter, or OpenCode Zen**.\nNo separate Python, Bun, or ripgrep installation is required to use `jg`.\n\nProvider selection requires **0.3.0 or newer**. Upgrade an older installation with\n`npm install --global @dzhng/jevgrep@latest`.\n\n## Install the agent skill — required for agent setup\n\nInstalling the CLI alone does not teach your coding agent to use it. **Install\nthe skill as well**, from the project where your agent works:\n\n```sh\njg skill\n```\n\nThe installer detects your coding agents (Claude Code, Codex, OpenCode and\nothers) and asks where to install. Add `--global` for a user-wide install, or\n`--yes` for unattended installation. The\n[skill](skills/jevgrep/SKILL.md) teaches the agent when to call `jg`, how to use\nreturned context, and when to fill gaps with its normal tools. It skips redundant\nretrieval when the needed context is already known. The current repository skill\nchecks for `jg` and installs the CLI if it is missing; authentication still needs\nyour selected provider’s key. The skill installer itself does not configure credentials.\n\n`jg skill` delegates to the [skills CLI](https://github.com/vercel-labs/skills)\nand needs npm/npx plus network access. You can also run that installer directly,\nwithout the CLI installed:\n\n```sh\nnpx skills add dzhng/jevgrep --skill jevgrep\n```\n\nIn 0.1.0, `jg skill` only prints the bundled skill; use `npx skills` with that version.\n\n### Upgrade\n\nThere is currently no `jg upgrade` command. Upgrade the CLI with npm:\n\n```sh\nnpm install -g @dzhng/jevgrep@latest\njg --version\n```\n\nUpdate the installed skill separately by rerunning `jg skill`. Updating the npm package does not\noverwrite skill files in your projects. See the [package guide](apps/cli/README.md)\nfor authentication details.\n\n## Start with a question, leave with source\n\nUse `jg` when you know the behavior you need to understand but not where it lives:\n\n```sh\njg \"Where is authentication checked before a request reaches a handler?\" .\njg \"How are database connections created, pooled, and closed?\" ./src\njg \"Which tests cover retry behavior when a request times out?\" .\n```\n\nJevgrep explores the repository hierarchy and follows qualifying branches. It\nselects files using content previews, then identifies useful source units and\nsurrounding context. It keeps qualifying file locations even when it cannot\nconfidently return an excerpt; it does not force every search into a fixed top-two\nlist.\n\nThe summary comes first, followed by file locations, reading leads, and selected\nsource with line references. Python and TypeScript/JavaScript support declaration\nparsing; other text uses a fallback. The output is evidence for the agent to use,\nnot a",
+   "score": 6.565264970035361
+  },
+  {
+   "key": "arxiv:2609.29837",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "PUBG Ally: A Conversational Embodied Agent as an AI Teammate",
+   "url": "https://arxiv.org/abs/2609.29837",
+   "meta": {
+    "published": "2026-09-24",
+    "authors": [
+     "Beomsoo Kim",
+     "Byeongju Kim",
+     "Dohyun Kim",
+     "Dongwon Kim"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.HC"
+    ]
+   },
+   "body": "We introduce PUBG Ally, an embodied agent for PUBG: BATTLEGROUNDS that can reason, act autonomously, and play alongside players as a voice-enabled teammate. Building such a teammate requires combining two difficult capabilities: it must perceive and respond to a constantly changing game world under strict latency constraints while interacting naturally with players, keeping its speech synchronized with its actions. Ally therefore combines agentic tool use with real-time game control. A language-model agent uses a controlled interface to inspect game information, interpret player speech, maintain context, decide what to say, and issue high-level action choices that steer a faster control layer for movement, combat, and recovery. Because the player's and Ally's speech and actions continually shape each other and the course of the match, training requires data from actual gameplay. We therefore collect data across nearly 39k sessions in which real players play alongside Ally, recording gameplay, player speech, agent decisions, tool use, actions, and player feedback, and use these records for iterative training. To evaluate teammate quality, we use player feedback and preference comparisons to identify gaps between offline evaluations and player preferences, and iteratively refine the evaluation criteria. Deploying Ally in live service further requires low-latency on-device execution and safeguards for player-facing communication, which we address through model compression, context compaction, targeted safety training, runtime guardrails, and memory redaction. During the live service, we surveyed players in 141 countries. Among respondents whose play with Ally was confirmed in game records, positive responses exceeded negative responses by 25.1 percentage points when asked whether they would recommend Ally, with players describing Ally not only as a tool but also as a teammate or companion.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:bpjLyFyLlXs",
+   "source": "youtube",
+   "query": "expected goals model from scratch",
+   "title": "How to Build An Expected Goals Model 1: Data and Model",
+   "url": "https://www.youtube.com/watch?v=bpjLyFyLlXs",
+   "meta": {
+    "channel": "Friends of Tracking",
+    "rank": 1,
+    "duration_min": 23
+   },
+   "body": "# How to Build An Expected Goals Model 1: Data and Model\n# Friends of Tracking\n# https://www.youtube.com/watch?v=bpjLyFyLlXs\n\n[00:05] so today we're going to look at one of the absolute most important models in football the expected goals model so if you haven't heard of expected goals then probably this video isn't for you you should check out one of our other training ground videos where we explain how to use expected goals and the concept behind it the idea in this lecture is we're really going to get stuck into the details what exactly is an expected goals model what is the data behind an expected goals model and how do we fit that expected goals model to\n[00:39] data and this is quite an important step because it's the first time we're going to look at a statistical model which tries to predict the outcome of events in football and that will really lay the ground for later work where we use different types of or now called machine learning models in order to understand the game now I just want to say before I start if I've got my dog to be us here or our dog to be us and he was a bit scared there was a thunderstorm just now so he came and sat up with me while I've\n[01:13] given this lecture so just in case an ear pops up or something like that I'm just telling you about that beforehand but we'll let B us rest down there just now okay so let's have a look at expected goal so as I said this is the first step and I think there'll be three steps of how to build and expected goals model not just how to build it but also the the implications what can we do later with the same source of methods and also what are the limitations of expected goals models so what can we can\n[01:46] we and we can't do what can we do and what we can't do with so this is the first step and today I'm going to talk about the data that goes into an expected goals model we're going to use some data available for y scout from a whole season of various leagues of football and also I'm going to talk about the model because every time you have some data and you want to understand something about that data you also need to have a model which helps you explain what you find interesting about that data or what generally is interest\n[02:18] about that taker so the part one is the data and the model I'll start with just a little recap what are expecting goals okay so expected goals are a statistical measure of chance quality they're basically the probability that on a typical day of football a particular shot from that location will result in a goal and how do we know that well what we do is we take measurements over many many different matches different shots possibly in the same or indifferent or similar leagues and we take all of those measurements and we put them into a\n[02:50] statistical model and we see what is the probability on a typical day of football that our shot from that location a shot or a header played him from across or a corner all of these different characteristics what is a probability that a typical shot of that type ends up being a goal okay so why are expected goals important well there's various reasons for this and I thought I'd go through a few of them and I think the first reason is that they often tell a story about a match or a recent number of matches that you can't\n[03:26] just see from the score line so here is a lovely expected goals map produced by Michael Kelly who puts these things up on Twitter and he's made an expected goals map for L\n[transcript continues in field-notes/staging/bpjLyFyLlXs.txt]",
+   "score": 1.0
+  },
+  {
+   "key": "gh:lightpanda-io/browser",
+   "source": "awesome",
+   "query": "awesome-mcp-servers",
+   "title": "lightpanda-io/browser (new in awesome-mcp-servers)",
+   "url": "https://github.com/lightpanda-io/browser",
+   "repo": "lightpanda-io/browser",
+   "meta": {
+    "list": "awesome-mcp-servers",
+    "stars": 35610,
+    "created": "2023-02-07",
+    "language": "Zig",
+    "description": "Lightpanda: the headless browser designed for AI and automation"
+   },
+   "body": "Lightpanda Browser \n \n The headless browser built from scratch for AI agents and automation.  \nNot a Chromium fork. Not a WebKit patch. A new browser, written in Zig.  \n16x lighter and 9x faster than Chromium.\n \n\n \n \n\n[](https://github.com/lightpanda-io/browser/blob/main/LICENSE)\n[](https://twitter.com/lightpanda_io)\n[](https://github.com/lightpanda-io/browser)\n[](https://discord.gg/K63XeymfB5)\n\n \n \n\n[ \n](https://github.com/lightpanda-io/demo)\n&emsp;\n[ \n](https://github.com/lightpanda-io/demo)\n \n\n## Benchmarks\n\nRequesting 933 real web pages over the network on a AWS EC2 m5.large instance.\nSee [benchmark details](https://github.com/lightpanda-io/demo/blob/main/BENCHMARKS.md#crawler-benchmark).\n\n| Metric | Lightpanda | Headless Chrome | Difference |\n| :---- | :---- | :---- | :---- |\n| Memory (peak, 100 pages) | 123MB | 2GB | ~16x less |\n| Execution time (100 pages) | 5s | 46s | ~9x faster |\n\n## Quick start\n\n### Install\n\n**Package Managers**\n\nLatest nightly from Homebrew:\n```console\nbrew install lightpanda-io/browser/lightpanda\n```\n\nLatest nightly from Arch Linux User Repository:\n```console\nyay -S lightpanda-nightly-bin\n```\n\n**Download from the nightly builds**\n\nYou can download the last binary from the [nightly\nbuilds](https://github.com/lightpanda-io/browser/releases/tag/nightly) for\nLinux and MacOS for both x86_64 and aarch64.\n\n*For Linux*\n```console\ncurl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-x86_64-linux && \\\nchmod a+x ./lightpanda\n```\n\nVerify the binary before running anything:\n```console\n./lightpanda version\n```\n\n[Linux aarch64 is also available](https://github.com/lightpanda-io/browser/releases/tag/nightly)\n\n> **Note:** The Linux release binaries are linked against glibc. On musl-based distros (Alpine, etc.) the binary fails with `cannot execute: required file not found` because the glibc dynamic linker is missing. Use a glibc-based base image (e.g., `FROM debian:bookworm-slim` or `FROM ubuntu:24.04`) or [build from sources](#build-from-sources).\n\n*For MacOS*\n```console\ncurl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-aarch64-macos && \\\nchmod a+x ./lightpanda\n```\n\n[MacOS x86_64 is also available](https://github.com/lightpanda-io/browser/releases/tag/nightly)\n\n*For Windows + WSL2*\n\nLightpanda has no native Windows binary. Install it inside WSL following the Linux steps above.\n\nWSL not installed? Run `wsl --install` from an administrator shell, restart, then open `wsl`.\nSee [Microsoft's WSL install guide](https://learn.microsoft.com/en-us/windows/wsl/install) for details.\n\nYour automation client (Puppeteer, Playwright, etc.) can run either inside WSL or on the Windows host. WSL forwards `localhost:9222` automatically.\n\n**Install from Docker**\n\nLightpanda provides [official Docker\nimages](https://hub.docker.com/r/lightpanda/browser) for both Linux amd64 and\narm64 architectures.\nThe following command fetches the Docker image and starts a new container exposing Lightpanda's CDP server on port `9222`.\n```console\ndocker run -d --name lightpanda -p 127.0.0.1:9222:9222 lightpanda/browser:nightly\n```\n\n### Dump a URL\n\n```console\n./lightpanda fetch --obey-robots --dump html --log-format pretty  --log-level info https://demo-browser.lightpanda.io/campfire-commerce/\n```\n\nYou can use `--dump markdown` to convert directly into markdown, or\n`--dump png > page.png` or `--dump pdf > page.pdf` for a text-only rendering\nof the page.\n`--wait-until`",
+   "score": 2.0
+  },
+  {
+   "key": "hn:49861047",
+   "source": "hn",
+   "query": "car data",
+   "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+   "url": "https://news.ycombinator.com/item?id=49861047",
+   "hn_url": "https://news.ycombinator.com/item?id=49861047",
+   "meta": {
+    "points": 80,
+    "comments": 30,
+    "created": "2026-09-26T22:15:32Z"
+   },
+   "body": "My OpenAI CODEX account went rogue and from a simple request took the autonomous decision to launch 826 parallel agents / threads without any authorization on my side and without reporting any result of any sort but consuming nearly 2,146 trillions tokens, consuming a total of roughly USD 78,000 and deleting all records of what was done: I have a ticket open with OpenAI since 2 weeks but it is impossible to get an hold of a human operator. On July 10, 2026 I opened a normal Codex task from VS Code. The task was running: GPT-5.5 / Medium reasoning My prompt was very simple and asked for a UX/UI validation on a specific module within my product. What I found in the next days after hard analysis was: The task with Root ID 019f4b90-4169-7201-bfdd-732940d8631e with reasoning GPT-5.5 / Medium created 826 children recorded as GPT-5.6 Sol / Ultra (notice the difference in reasoning level and in model selection) This was not 826 messages inside one conversation, they are 826 distinct child task records with their own IDs. A particularly strange group consists of 104 child tasks. They all preserve the same initial message as the original task, are recorded as GPT-5.6 Sol/Ultra, and have no recorded agent_role or agent_path. Those 104 tasks alone account for approximately 147.9 billion local final task-token counters. Their titles show that my request to inspect UI/UX had expanded into work involving backend infrastructure, OAuth, metering, hardening, audits, certification, implementati\ncomment (Madmallard): Sounds like you got scammed Hope this gets some visibility idk why it's flagged guess the PR guys for those companies are doing it Should spread this around\ncomment (numbsafari): Does openAI not support spending caps on your billing account?\ncomment (QuadmasterXLII): clarification: your credit card or company’s card now has $78,000 of charges on it?",
+   "score": 6.111442756915013
+  },
+  {
+   "key": "gh:alexgreensh/anidoodle",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interactive web art, stickers and scored films in dozens of styles, identical on every render.",
+   "url": "https://github.com/alexgreensh/anidoodle",
+   "repo": "alexgreensh/anidoodle",
+   "meta": {
+    "stars": 557,
+    "created": "2026-09-22",
+    "pushed": "2026-09-27",
+    "language": "TypeScript",
+    "topics": [
+     "agent-skills",
+     "animation",
+     "canvas",
+     "claude-code",
+     "claude-plugin",
+     "claude-skills",
+     "codex-plugin",
+     "creative-code"
+    ]
+   },
+   "body": "https://github.com/user-attachments/assets/1cf7f75c-b040-4c00-bf0c-cf1885f8b8da\n\n  The launch film, 77 seconds. Every frame and every sound in it was made with anidoodle, in code.  \n\n anidoodle \n\n  Hand-drawn art, written as code.  \n\n \n  Illustrations, drawing timelapses, films, explainers and interactive web art in 31 styles. \n  Every mark is a function and every note is arithmetic, so the same source \n  redraws the same picture on every machine, at every size, for good.\n \n\n \n     \n     \n   \n   \n \n\n  English  ·  日本語  ·  简体中文  ·  한국어  ·  Français  ·  Español  \n\n \n   Styles  ·\n   Drawing films  ·\n   Music  ·\n   What you can make  ·\n   What it packs  ·\n   Motion  ·\n   Get started \n \n\n## 31 styles to choose from\n\n \n   \n \n\nEach style is its own way of making a mark: the taper of a nib, the bleed of a wash, the scumble of chalk on slate, the torn edge of cut paper, the halftone of a risograph drum, one engraved line spiralling out to become a moon. The subject changes shape in each hand, the way it would for thirty-one different illustrators. Every style also ships a film of its picture being drawn, mark by mark, in the order an artist in that medium works. Pick one for your brand and every picture after it arrives in the same hand. Every plate above, and the contact sheet itself, is drawn by code in this repo.\n\n \n  All 31 styles , and how each one is made \n\n| Style | How it's made |\n|---|---|\n| **Ballpoint** | One biro; tone from where hatching sits |\n| **Broken colour** | Separate dabs of unmixed colour, impressionist |\n| **Chalkboard** | Side-of-chalk scumble with dust |\n| **Charcoal erasure** | Charcoal drawn, erased and redrawn, ghosts kept |\n| **Coloured pencil** | Directional pencil hatching on toothy cream paper |\n| **Crayon** | Waxy scribble fills that skip the paper's valleys |\n| **Cut-paper collage** | Torn and cut paper, no drawn lines |\n| **Cyanotype blueprint** | Ruling-pen drafting on a cyanotype sheet |\n| **Embroidery** | Thread stitched through linen in a hoop |\n| **Flat vector** | Crisp geometric shapes with grain and long shadows |\n| **Folk-tale storybook** | Painted foreground dissolving into pencil line on cream paper |\n| **Ink & line-wash** | Washes first, then a flexible nib |\n| **Isometric** | A 2:1 isometric cutaway in flat-shaded planes |\n| **Low-poly 3D** | Flat-shaded triangles, drawn in code |\n| **Marker comic** | Flat cel fills and one heavy contour |\n| **Mid-century gouache** | Opaque matte shapes, dry-brush edges, loose line |\n| **Newsprint halftone** | One black screen plus a spot colour on newsprint |\n| **Painted oil** | Bristle strokes and impasto on a toned canvas |\n| **Paper-craft** | Layered cut paper and painted cut-outs, on twos |\n| **Pencil & watercolour** | Washes that never quite fill their pencil line |\n| **Pixel art** | A fixed 16-colour palette on a low-res grid |\n| **Risograph** | Ink drums overprinting through registration |\n| **Rubber-hose** | 1930s cartoon ink with bendy limbs and film grain |\n| **Scratchboard** | White lines scratched out of black clay |\n| **Single-line engraving** | One unbroken spiral whose width is the tone |\n| **Stipple** | Pen dots whose density is the tone |\n| **Storybook** | Pencil and watercolour for characters |\n| **Sumi-e** | One loaded brush on absorbent paper |\n| **Toy brick** | Studded plastic bricks, built layer by layer |\n| **Vintage scrapbook** | Engravings, cut-letter titles and taped cards on aged paper |\n| **Woodcut / ukiyo-e** | A carved keyblock and colo",
+   "score": 6.324358962381311
+  }
+ ]
+}
