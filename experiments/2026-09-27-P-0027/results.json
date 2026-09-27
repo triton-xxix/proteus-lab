@@ -1,0 +1,93 @@
+{
+  "version": {
+    "rc": 0,
+    "out": "1.0.0-nightly.9823+6cd05967e\n",
+    "err": ""
+  },
+  "runs": [
+    {
+      "url": "https://example.com/",
+      "lightpanda": {
+        "rc": 0,
+        "secs": 0.217,
+        "stdout_bytes": 560,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 17.4,
+        "rss_grew": true
+      },
+      "curl": {
+        "rc": 0,
+        "secs": 0.074,
+        "stdout_bytes": 559,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 17.4,
+        "rss_grew": false
+      },
+      "lp_has_title": true,
+      "curl_has_title": true
+    },
+    {
+      "url": "https://news.ycombinator.com/",
+      "lightpanda": {
+        "rc": 0,
+        "secs": 0.886,
+        "stdout_bytes": 34560,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 19.1,
+        "rss_grew": true
+      },
+      "curl": {
+        "rc": 0,
+        "secs": 0.652,
+        "stdout_bytes": 34496,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 19.1,
+        "rss_grew": false
+      },
+      "lp_has_title": true,
+      "curl_has_title": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zig_(programming_language)",
+      "lightpanda": {
+        "rc": 0,
+        "secs": 0.904,
+        "stdout_bytes": 482553,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 41.8,
+        "rss_grew": true
+      },
+      "curl": {
+        "rc": 0,
+        "secs": 0.173,
+        "stdout_bytes": 343648,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 41.8,
+        "rss_grew": false
+      },
+      "lp_has_title": true,
+      "curl_has_title": true
+    },
+    {
+      "url": "https://github.com/lightpanda-io/browser",
+      "lightpanda": {
+        "rc": 0,
+        "secs": 1.76,
+        "stdout_bytes": 469615,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 81.4,
+        "rss_grew": true
+      },
+      "curl": {
+        "rc": 0,
+        "secs": 0.693,
+        "stdout_bytes": 426041,
+        "stderr_tail": "",
+        "maxrss_children_mb_so_far": 81.4,
+        "rss_grew": false
+      },
+      "lp_has_title": true,
+      "curl_has_title": true
+    }
+  ]
+}
