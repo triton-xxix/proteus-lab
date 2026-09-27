@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-09-25 06:57 UTC at commit 259a9d6.
+Rebuilt 2026-09-27 17:02 UTC at commit c18a784.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -13,19 +13,19 @@ Current rules v0.2, £100.00 a position. Earlier rule versions are their own boo
 
 | Measure | Value |
 |---|---|
-| Paper bankroll | £1000.00 (started £1000.00) |
-| Positions opened | 0 |
-| Positions closed | 0 |
-| Positions scored at 24h | 0 |
-| Hit rate | n/a |
-| Expectancy per position | n/a |
-| Expectancy as a share of the stake | n/a |
+| Paper bankroll | £933.38 (started £1000.00) |
+| Positions opened | 8 |
+| Positions closed | 4 |
+| Positions scored at 24h | 4 |
+| Hit rate | 0.25 |
+| Expectancy per position | £-16.66 |
+| Expectancy as a share of the stake | -16.7% |
 | Positions that rugged | 0 |
 
 | Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |
 |---|---|---|---|---|---|---|---|
-| v0.1 | £5.00 | 6 | 2 | £-1.59 | -31.8% | £96.82 (from £100.00) | 0 |
-| v0.2 | £100.00 | 0 | 0 | n/a | n/a | £1000.00 (from £1000.00) | 0 |
+| v0.1 | £5.00 | 6 | 6 | £-1.08 | -21.5% | £93.54 (from £100.00) | 1 |
+| v0.2 | £100.00 | 8 | 4 | £-16.66 | -16.7% | £933.38 (from £1000.00) | 0 |
 
 Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside
 what the ledger recorded, so a stop honoured late shows next to the stop the rule said.
@@ -48,8 +48,8 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 
 | Measure | Value |
 |---|---|
-| Things installed and run | 0 |
-| Weekly notes shipped | 0 |
+| Things installed and run | 1 |
+| Weekly notes shipped | 1 |
 | Luke-gates opened | 0 (must stay 0; asserted, not computed) |
 
 ## Spend

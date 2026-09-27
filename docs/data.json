@@ -1,47 +1,48 @@
 {
- "built_at": "2026-09-25 06:57 UTC",
- "commit": "259a9d6",
+ "built_at": "2026-09-27 17:02 UTC",
+ "commit": "c18a784",
  "input_blobs": {
-  "grinder/LEDGER.csv": "956e0251978c8c7c5fb86d032df2f57d250fbf5b",
+  "grinder/LEDGER.csv": "5863deecce5cd92612a53046e3d39b396c36675a",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "431fba5aac2112f5097bb4e3b2a94f8a63b1f33e",
-  "state/spend.jsonl": null
+  "state/spend.jsonl": null,
+  "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f"
  },
  "grinder": {
   "version": "v0.2",
   "stake_gbp": 100.0,
   "bankroll_start": 1000.0,
-  "bankroll_now": 1000.0,
-  "opened": 0,
-  "closed": 0,
-  "scored_24h": 0,
-  "hit_rate": null,
-  "expectancy": null,
-  "expectancy_pct_stake": null,
+  "bankroll_now": 933.38,
+  "opened": 8,
+  "closed": 4,
+  "scored_24h": 4,
+  "hit_rate": 0.25,
+  "expectancy": -16.66,
+  "expectancy_pct_stake": -16.7,
   "rugged": 0,
   "books": {
    "v0.1": {
     "stake_gbp": 5.0,
     "bankroll_start": 100.0,
-    "bankroll_now": 96.82,
+    "bankroll_now": 93.54,
     "opened": 6,
-    "closed": 2,
-    "scored_24h": 0,
-    "hit_rate": 0.5,
-    "expectancy": -1.59,
-    "expectancy_pct_stake": -31.8,
-    "rugged": 0
+    "closed": 6,
+    "scored_24h": 6,
+    "hit_rate": 0.333,
+    "expectancy": -1.08,
+    "expectancy_pct_stake": -21.5,
+    "rugged": 1
    },
    "v0.2": {
     "stake_gbp": 100.0,
     "bankroll_start": 1000.0,
-    "bankroll_now": 1000.0,
-    "opened": 0,
-    "closed": 0,
-    "scored_24h": 0,
-    "hit_rate": null,
-    "expectancy": null,
-    "expectancy_pct_stake": null,
+    "bankroll_now": 933.38,
+    "opened": 8,
+    "closed": 4,
+    "scored_24h": 4,
+    "hit_rate": 0.25,
+    "expectancy": -16.66,
+    "expectancy_pct_stake": -16.7,
     "rugged": 0
    }
   }
@@ -58,8 +59,8 @@
   "bankroll_now": 100.0
  },
  "field_notes": {
-  "weekly_notes": 0,
-  "things_run": 0,
+  "weekly_notes": 1,
+  "things_run": 1,
   "luke_gates_opened": 0
  },
  "spend": {
