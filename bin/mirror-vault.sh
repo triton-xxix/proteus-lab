@@ -44,6 +44,12 @@ copy "$SRC/PROBES.md" "$DST/PROBES.md"
 copy "$SRC/field-notes/HARVEST.md" "$DST/HARVEST.md"
 copy "$SRC/USAGE.md" "$DST/USAGE.md"
 copy "$SRC/GRADUATES.md" "$DST/GRADUATES.md"
+# the documents decisions are made in, so Luke can read them in Obsidian (added 2026-09-27)
+copy "$SRC/CHARTER.md" "$DST/CHARTER.md"
+copy "$SRC/BACKLOG.md" "$DST/BACKLOG.md"
+copy "$SRC/PASS-MARKS.md" "$DST/PASS-MARKS.md"
+copy "$SRC/SPEND.md" "$DST/SPEND.md"
+copy "$SRC/PERSONA.md" "$DST/PERSONA.md"
 for lane in intel graduates; do
   if [ -d "$SRC/$lane" ]; then
     mkdir -p "$DST/$lane"
