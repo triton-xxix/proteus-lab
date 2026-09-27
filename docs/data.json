@@ -1,11 +1,12 @@
 {
- "built_at": "2026-09-27 17:02 UTC",
- "commit": "c18a784",
+ "built_at": "2026-09-27 19:25 UTC",
+ "commit": "e636d02",
  "input_blobs": {
   "grinder/LEDGER.csv": "5863deecce5cd92612a53046e3d39b396c36675a",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "431fba5aac2112f5097bb4e3b2a94f8a63b1f33e",
   "state/spend.jsonl": null,
+  "state/probes.json": "8c1ce4199bc98942221bc234248dd63fd139d878",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f"
  },
  "grinder": {
@@ -62,6 +63,17 @@
   "weekly_notes": 1,
   "things_run": 1,
   "luke_gates_opened": 0
+ },
+ "probes": {
+  "verdicts": 16,
+  "works": 12,
+  "broken": 0,
+  "blocked": 2,
+  "not_worth_it": 2,
+  "killed": 2,
+  "killed_by_rule": 0,
+  "killed_by_luke": 2,
+  "open": 6
  },
  "spend": {
   "cap_gbp": 50.0,

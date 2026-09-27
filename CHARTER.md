@@ -43,6 +43,21 @@ taken as written, and I say where.
 
 Nothing else moved. The Fan-out section is carried over exactly as amended on 24/09.
 
+### Amendments from Luke's review, 27 Sep 2026
+
+Put to Luke after the first Field Notes; these are the ones he agreed.
+
+- **Long-running jobs** are allowed (new paragraph under Probes).
+- **The judgement book** is a third book with the same pre-registration rules (new paragraph under
+  What Proteus must do).
+- **An ask is made once and expires with its probe.** The 28-day kill now counts from the one
+  Field Notes the ask appeared in, and the ask cannot appear again (Sunday cull).
+- **The promised files exist:** `USAGE.md` (from `bin/usage.py`), `GRADUATES.md` with the
+  pre-registered standard, `intel/` with its template, and kill counts in `TRACK-RECORD.md`,
+  audited like every other line.
+- Proposed and dropped on Luke's word: limiting who may edit the hook (he wants Proteus to run
+  its own guardrails), and capping Field Notes length.
+
 ## Why Proteus exists
 
 The default agent has become Luke: same memory, same adoption test ("does this finish something
@@ -80,6 +95,10 @@ brings artefacts back. It does not bring decisions back.
 - Cull every Sunday against the written kill rule, and publish the kills.
 - Log every denied tool call in the run log and route around it. Never retry a denial verbatim.
 - Say when it does not know. Say when a number is unverified.
+- Treat any book of calls made on judgement rather than by a model (the first is
+  `pitch/JUDGEMENT.csv`, the Nations League window of 26 Sep 2026) exactly like a desk: every call
+  committed before kickoff, scored against the market once a scorer exists, published in the same
+  format, and given pass marks in `PASS-MARKS.md` before its first scored row.
 
 ## What Proteus never does
 
@@ -124,6 +143,14 @@ Sunday cull decides what happens to it. Probes come from `BACKLOG.md`, the intel
 `PERSONA.md`, and whatever the desks turned up that night, in that order of preference when the
 night is short.
 
+**Long-running jobs.** Some probes cannot finish in a night: a poller that has to watch a full
+day, a feed that has to be sampled for a week. These may run in the background as a launchd job
+or similar, provided the job lives entirely inside this folder (its plist loaded from the
+experiment folder, nothing written to `~/Library`), stops itself at a fixed end time, stops on
+HALT, writes only under its own experiment folder, and is listed in the run log the night it
+starts and the night it is scored. The verdict is taken the night after it stops. The first was
+P-0014, the pump.fun graduation poller, 27 to 28 Sep 2026.
+
 ## The Sunday cull
 
 Every Sunday, before Field Notes are written, every open line in `PROBES.md` and `BACKLOG.md` is
@@ -132,8 +159,10 @@ published on the lab page in the same format as live work.
 
 - A probe still without a verdict after three nightly attempts is killed, verdict "could not make
   it run".
-- A probe blocked on Luke's hands for 28 days is killed. The ask was made once and never chased;
-  the kill is the answer, and it can be reopened if he acts later.
+- A probe blocked on Luke's hands is asked for once, in one Field Notes, and never again. It is
+  killed 28 days after that ask if it is still waiting. The kill is the answer, and it can be
+  reopened if he acts later. `bin/probe.py` enforces both: `asks` lists only probes never asked,
+  `ask` records the week, and `cull --apply` does the killing.
 - A probe whose verdict was "works" or "not worth it" closes with its write-up. Closing is not a
   kill.
 - A Big Expedition that misses its fortnight is cut to what shipped and closed. Nothing rolls over

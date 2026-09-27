@@ -8,6 +8,9 @@
     python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."
     python3 /Users/triton/PROTEUS/bin/probe.py add "title" [--source backlog|intel|persona|desk|field-notes|harvest]
                                               [--needs "..."] [--after YYYY-MM-DD] [--est MINUTES]
+    python3 /Users/triton/PROTEUS/bin/probe.py kill P-0015 --by rule|luke --reason "..."
+    python3 /Users/triton/PROTEUS/bin/probe.py ask P-0011 --week YYYY-WW
+    python3 /Users/triton/PROTEUS/bin/probe.py asks | cull [--apply]
     python3 /Users/triton/PROTEUS/bin/probe.py status | queue | render
 
 Design (2026-09-24, Luke's prompt 5):
@@ -28,6 +31,14 @@ Design (2026-09-24, Luke's prompt 5):
     measured; time alone governs.
   - A probe left in_progress by a dead session counts as an attempt. Three attempts without a
     verdict and the item waits for the Sunday cull, which kills it as "could not make it run".
+
+Kills and asks (2026-09-27, Luke's review of charter v2):
+  - A kill is its own status, not a note in the needs column: killed_at, killed_by (rule or
+    luke) and the reason. Kills render in PROBES.md and are counted by bin/score.py.
+  - An ask for Luke's hands is made once. `ask` records the Field Notes week it appeared in;
+    `asks` prints only the items that need Luke and have never been asked, so the weekly cannot
+    repeat an ask. `cull` kills anything asked 28 days ago and still waiting, and anything at
+    three attempts. Without --apply it only prints what it would do.
 
 No sub-agents are used or spawned here. The loop is sequential inside one session.
 """
@@ -61,6 +72,7 @@ INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is foun
 NIGHTLY_LENGTH_MIN = 90
 NIGHTLY_RESERVE_MIN = 10      # kept back for the run log and the marker release
 MAX_ATTEMPTS = 3
+ASK_EXPIRY_DAYS = 28          # a probe blocked on Luke's hands this long after the ask is killed
 LOOP_STALE_H = 3              # a loop older than this without a stop is a dead run
 
 
@@ -229,6 +241,12 @@ def commit(paths, message):
     return h
 
 
+def ask_expiry(it):
+    """The date a probe asked of Luke is killed if it is still waiting on him."""
+    d = datetime.strptime(it["asked_at"][:10], "%Y-%m-%d") + timedelta(days=ASK_EXPIRY_DAYS)
+    return d.strftime("%Y-%m-%d")
+
+
 # ---------------------------------------------------------------- rendering
 
 def cost_str(it):
@@ -241,9 +259,11 @@ def cost_str(it):
 
 
 def render(st):
-    open_items = [i for i in st["items"] if i["status"] != "done"]
+    open_items = [i for i in st["items"] if i["status"] not in ("done", "killed")]
     done = sorted([i for i in st["items"] if i["status"] == "done"],
                   key=lambda i: (i.get("verdict_at") or "", i["id"]), reverse=True)
+    killed = sorted([i for i in st["items"] if i["status"] == "killed"],
+                    key=lambda i: (i.get("killed_at") or "", i["id"]), reverse=True)
     tally = {v: sum(1 for i in done if i["verdict"] == v) for v in VERDICTS}
     out = [
         "# Probes",
@@ -255,8 +275,8 @@ def render(st):
         "and denials the unattended hook logged during the probe (calls are not measured in an",
         "interactive session).",
         "",
-        "Verdicts so far: %d works, %d broken, %d blocked, %d not worth it." % (
-            tally["works"], tally["broken"], tally["blocked"], tally["not-worth-it"]),
+        "Verdicts so far: %d works, %d broken, %d blocked, %d not worth it. Killed: %d." % (
+            tally["works"], tally["broken"], tally["blocked"], tally["not-worth-it"], len(killed)),
         "",
         "## Queue (%d open)" % len(open_items),
         "",
@@ -269,8 +289,12 @@ def render(st):
             att += " (awaiting cull)"
         if i["status"] == "in_progress":
             att += " (in progress)"
+        needs = i.get("needs") or "none"
+        if i.get("asked_at"):
+            needs += " (asked once, %s; killed %s if still waiting)" % (
+                i.get("asked_in") or i["asked_at"], ask_expiry(i))
         out.append("| %s | %s | %s | %s | %s | %s | %s min |" % (
-            i["id"], i["title"], i.get("source", ""), i.get("needs") or "none",
+            i["id"], i["title"], i.get("source", ""), needs.replace("|", "/"),
             i.get("after") or "", att, i.get("est_minutes", "")))
     out += ["", "## Verdicts (%d)" % len(done), "",
             "| date | id | what | verdict | note | artefact | cost |",
@@ -282,6 +306,16 @@ def render(st):
             (i.get("verdict_at") or "")[:10], i["id"], i["title"], i["verdict"], note, arts, cost_str(i)))
         if i.get("denied"):
             out.append("| | | | | denied: %s | | |" % "; ".join(d.replace("|", "/") for d in i["denied"]))
+    out += ["", "## Kills (%d)" % len(killed), "",
+            "Published in the same format as live work. A kill can be reopened with a new probe if the",
+            "reason goes away.", "",
+            "| date | id | what | killed by | reason |",
+            "|---|---|---|---|---|"]
+    for i in killed:
+        out.append("| %s | %s | %s | %s | %s |" % (
+            (i.get("killed_at") or "")[:10], i["id"], i["title"].replace("|", "/"),
+            "Luke's word" if i.get("killed_by") == "luke" else "the cull rule",
+            (i.get("kill_reason") or "").replace("|", "/")))
     with open(REGISTER, "w") as fh:
         fh.write("\n".join(out) + "\n")
 
@@ -525,6 +559,7 @@ def cmd_add(a):
         "after": a.after or "", "est_minutes": a.est, "added": now().strftime("%Y-%m-%d"),
         "status": "open", "attempts": 0, "started_at": None, "verdict": None, "verdict_at": None,
         "note": "", "artefacts": [], "minutes": None, "calls": None, "denied": [],
+        "luke": bool(a.luke),
     })
     save_state(st)
     render(st)
@@ -554,10 +589,78 @@ def cmd_status(a):
     print("verdicts: %d" % len(done))
 
 
+def kill(it, by, reason, when=None):
+    it["status"] = "killed"
+    it["killed_at"] = iso(when or now())
+    it["killed_by"] = by
+    it["kill_reason"] = reason.strip()
+    it["started_at"] = None
+
+
+def cmd_kill(a):
+    st = load_state()
+    it = find(st, a.id)
+    if it["status"] in ("done", "killed"):
+        sys.exit("%s is already %s" % (it["id"], it["status"]))
+    kill(it, a.by, a.reason)
+    save_state(st)
+    render(st)
+    print("%s killed (%s): %s" % (it["id"], a.by, it["kill_reason"]))
+
+
+def cmd_ask(a):
+    """Record that this probe's ask for Luke's hands appeared in a Field Notes. Once only."""
+    st = load_state()
+    it = find(st, a.id)
+    if it.get("asked_at"):
+        sys.exit("%s was already asked in %s; an ask is made once and never chased" % (
+            it["id"], it.get("asked_in") or it["asked_at"]))
+    it["luke"] = True
+    it["asked_at"] = a.date or now().strftime("%Y-%m-%d")
+    it["asked_in"] = a.week
+    save_state(st)
+    render(st)
+    print("%s asked in %s; killed %s if still waiting" % (it["id"], a.week, ask_expiry(it)))
+
+
+def cmd_asks(a):
+    """Open probes that need Luke's hands and have never been asked: the only asks the weekly may make."""
+    st = load_state()
+    fresh = [i for i in st["items"] if i["status"] == "open" and i.get("luke") and not i.get("asked_at")]
+    if not fresh:
+        print("no new asks")
+    for i in fresh:
+        print("%s: %s (needs %s)" % (i["id"], i["title"], i.get("needs") or "Luke"))
+
+
+def cmd_cull(a):
+    """The Sunday cull, as far as the probe register goes. Prints; writes only with --apply."""
+    st = load_state()
+    today = now().strftime("%Y-%m-%d")
+    kills = []
+    for i in st["items"]:
+        if i["status"] not in ("open", "in_progress"):
+            continue
+        if i.get("attempts", 0) >= MAX_ATTEMPTS:
+            kills.append((i, "could not make it run: %d attempts without a verdict" % i["attempts"]))
+        elif i.get("asked_at") and ask_expiry(i) <= today:
+            kills.append((i, "blocked on Luke's hands %d days after the ask in %s; never chased, reopen if he acts" % (
+                ASK_EXPIRY_DAYS, i.get("asked_in") or i["asked_at"])))
+    if not kills:
+        print("cull: nothing to kill by rule")
+    for i, why in kills:
+        print("%s %s: %s" % ("KILL" if a.apply else "would kill", i["id"], why))
+        if a.apply:
+            kill(i, "rule", why)
+    if a.apply and kills:
+        save_state(st)
+        render(st)
+
+
 def cmd_queue(a):
     st = load_state()
     for i in st["items"]:
-        if i["status"] != "done":
+        if i["status"] not in ("done", "killed"):
             print("%s [%s, %s min, attempts %d, needs %s] %s" % (
                 i["id"], i.get("source"), i.get("est_minutes"), i.get("attempts", 0), i.get("needs") or "none", i["title"]))
 
@@ -594,7 +697,23 @@ def main():
     s.add_argument("--needs", default="")
     s.add_argument("--after", default="")
     s.add_argument("--est", type=int, default=20)
+    s.add_argument("--luke", action="store_true", help="the need is Luke's hands: asked once, expires in 28 days")
     s.set_defaults(fn=cmd_add)
+    s = sub.add_parser("kill")
+    s.add_argument("id")
+    s.add_argument("--by", required=True, choices=("rule", "luke"))
+    s.add_argument("--reason", required=True)
+    s.set_defaults(fn=cmd_kill)
+    s = sub.add_parser("ask")
+    s.add_argument("id")
+    s.add_argument("--week", required=True, help="the Field Notes week the ask appeared in, YYYY-WNN")
+    s.add_argument("--date", help="YYYY-MM-DD, default today")
+    s.set_defaults(fn=cmd_ask)
+    s = sub.add_parser("asks")
+    s.set_defaults(fn=cmd_asks)
+    s = sub.add_parser("cull")
+    s.add_argument("--apply", action="store_true")
+    s.set_defaults(fn=cmd_cull)
     for name, fn in (("status", cmd_status), ("queue", cmd_queue), ("render", cmd_render)):
         sub.add_parser(name).set_defaults(fn=fn)
     a = p.parse_args()

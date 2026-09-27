@@ -92,6 +92,16 @@ novelty register are not counted).
 | Weekly notes shipped | Number of files named `YYYY-WW.md` in `field-notes/` |
 | Things installed and run | Number of lines beginning `## Ran it` across those files, ignoring case. One heading with three things under it counts once; understated on purpose |
 
+**Probes**, from `state/probes.json` (added 2026-09-27; the charter makes kill counts part of the
+score). The file holds `items`, each with a `status`. Absent file means zero everywhere.
+
+| Line | Definition |
+|---|---|
+| Probe verdicts | Items with status `done` |
+| Works, Broken, Blocked, Not worth it | Items with status `done` and `verdict` of `works`, `broken`, `blocked`, `not-worth-it` |
+| Killed | Items with status `killed`; split by `killed_by` of `rule` (the Sunday cull) or `luke` (his word) |
+| Still open | Items with status `open` or `in_progress` |
+
 **Spend**, from `state/spend.jsonl`, one JSON object per line with `date` and `amount_gbp`.
 Sum of `amount_gbp` by calendar month of `date`, to 2 decimals. The month the score was built in
 is present at £0.00 even when nothing was spent. Lines that are not JSON are ignored. The file is

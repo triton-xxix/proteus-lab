@@ -15,8 +15,12 @@ Write `{"session_id": null, "task": "proteus-weekly"}` to `/Users/triton/PROTEUS
 
 `python3 /Users/triton/PROTEUS/bin/halt-check.py`. It checks the local HALT file, a HALT file on origin/main, and any open GitHub issue titled HALT by an allowed login, and it fails closed (a check that cannot complete counts as halted). If it prints anything but CLEAR, write the Field Notes draft only, send nothing, push nothing, and stop after releasing the marker. The send script runs the same check itself, so a halt set during the run still stops the email.
 
-## 2. Score and rebuild
+## 2. Cull, score and rebuild
 
+`python3 /Users/triton/PROTEUS/bin/probe.py cull --apply`
+(the Sunday cull for the probe register: kills anything at three attempts without a verdict, and anything still blocked on Luke 28 days after its one ask. Every kill it prints goes in the run log and in one line of Field Notes. Backlog items untouched for eight weeks are deleted from `BACKLOG.md` by hand in the same pass.)
+`python3 /Users/triton/PROTEUS/bin/usage.py --write`
+(rebuilds `USAGE.md` from the session transcripts. If this week's scheduled output is marked "YES" for more than double the trailing four-week average, Field Notes says which step did it.)
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/score.py`
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --score`
 `python3 /Users/triton/PROTEUS/bin/score.py --write`
@@ -41,10 +45,11 @@ From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run l
 6. `## Wildcard`.
 7. `## Luke-adjacent`.
 8. `## Next week`: the Big Expedition step from BACKLOG.md.
-9. `## If you feel like it`: one-line asks for Luke's hands, if any. Omit the heading when empty. Never a chase, never a card.
+9. `## If you feel like it`: one-line asks for Luke's hands, if any. Omit the heading when empty. Never a chase, never a card. For probes, the only asks allowed are the ones `python3 /Users/triton/PROTEUS/bin/probe.py asks` prints (it lists only probes that need Luke and were never asked). For each one you write, record it with `python3 /Users/triton/PROTEUS/bin/probe.py ask P-NNNN --week YYYY-WW`; that starts its 28 days, and it is never asked again. Any other ask also appears once only: check last week's note before repeating anything.
 
 ## 4. Publish
 
+`python3 /Users/triton/PROTEUS/bin/score.py --write` then `node /Users/triton/PROTEUS/audit/recompute.js --worktree` again (the scorer counts the note just written; without the rerun the page says one note fewer). If the second audit disagrees, the note gets the disagreement section before it is sent. Then
 `node /Users/triton/PROTEUS/bin/build-lab.cjs` then
 `git -C /Users/triton/PROTEUS add -A` then
 `git -C /Users/triton/PROTEUS commit -m "weekly: field notes YYYY-WW"` then
@@ -55,7 +60,7 @@ The push publishes the lab page (GitHub Pages serves docs/ from main).
 
 Write the same note to `/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/field-notes/YYYY-WW.md` with the Write tool. Then
 `bash /Users/triton/PROTEUS/bin/mirror-vault.sh`
-(copies the finished notes, `field-notes/SEEN.md` and `TRACK-RECORD.md` into the vault folder, changed files only; the vault folder is a mirror of readable artefacts, never the working tree, and there is no symlink to it). Then
+(copies the finished notes, `field-notes/SEEN.md`, `TRACK-RECORD.md`, `PROBES.md`, `HARVEST.md`, `USAGE.md`, `GRADUATES.md`, `intel/` and `graduates/` into the vault folder, changed files only; the vault folder is a mirror of readable artefacts, never the working tree, and there is no symlink to it). Then
 `bash /Users/triton/PROTEUS/bin/send-field-notes.sh /Users/triton/PROTEUS/field-notes/YYYY-WW.md`
 That is the only email of the week, to Luke only. Nothing else is sent to anyone.
 

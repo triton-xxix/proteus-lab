@@ -228,7 +228,10 @@
    "artefacts": [],
    "minutes": null,
    "calls": null,
-   "denied": []
+   "denied": [],
+   "luke": true,
+   "asked_at": "2026-09-27",
+   "asked_in": "2026-W39"
   },
   {
    "id": "P-0012",
@@ -291,7 +294,7 @@
    "id": "P-0015",
    "title": "MOT History API with a registered key: one car trail end to end, rate limits measured",
    "source": "persona",
-   "needs": "killed 27 Sep on Luke's word: no car purchase ahead, neither makes nor saves money",
+   "needs": "",
    "after": "",
    "est_minutes": 15,
    "added": "2026-09-24",
@@ -304,13 +307,16 @@
    "artefacts": [],
    "minutes": null,
    "calls": null,
-   "denied": []
+   "denied": [],
+   "killed_at": "2026-09-27T10:37:00+0100",
+   "killed_by": "luke",
+   "kill_reason": "No car purchase ahead and any lease would be new; neither makes nor saves money."
   },
   {
    "id": "P-0016",
    "title": "Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV",
    "source": "persona",
-   "needs": "killed 27 Sep on Luke's word: no car purchase ahead, neither makes nor saves money",
+   "needs": "",
    "after": "2026-09-27",
    "est_minutes": 60,
    "added": "2026-09-24",
@@ -323,7 +329,10 @@
    "artefacts": [],
    "minutes": null,
    "calls": null,
-   "denied": []
+   "denied": [],
+   "killed_at": "2026-09-27T10:37:00+0100",
+   "killed_by": "luke",
+   "kill_reason": "No car purchase ahead and any lease would be new; neither makes nor saves money."
   },
   {
    "id": "P-0017",

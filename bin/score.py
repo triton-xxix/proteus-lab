@@ -4,7 +4,8 @@
     python3 /Users/triton/PROTEUS/bin/score.py          # print the numbers
     python3 /Users/triton/PROTEUS/bin/score.py --write  # rewrite TRACK-RECORD.md and docs/data.json
 
-Inputs: grinder/LEDGER.csv, pitch/PREDICTIONS.csv, state/spend.jsonl (optional), field-notes/*.md.
+Inputs: grinder/LEDGER.csv, pitch/PREDICTIONS.csv, state/spend.jsonl (optional),
+state/probes.json (optional), field-notes/*.md.
 The luke-gate count is asserted 0, not computed: Proteus has no path to the ledger, and nothing in
 this tree can prove a negative.
 
@@ -29,7 +30,9 @@ import sys
 from datetime import datetime, timezone
 
 ROOT = "/Users/triton/PROTEUS/"
-INPUTS = ["grinder/LEDGER.csv", "grinder/BOOKS.json", "pitch/PREDICTIONS.csv", "state/spend.jsonl"]
+INPUTS = ["grinder/LEDGER.csv", "grinder/BOOKS.json", "pitch/PREDICTIONS.csv", "state/spend.jsonl",
+          "state/probes.json"]
+PROBE_VERDICTS = ("works", "broken", "blocked", "not-worth-it")
 
 
 def fnum(x):
@@ -135,6 +138,26 @@ def field_notes():
     return {"weekly_notes": len(notes), "things_run": ran, "luke_gates_opened": 0}
 
 
+def probes():
+    """The probe register (state/probes.json): verdicts by kind, and kills by who killed them.
+    The charter makes kill counts part of the score (added 2026-09-27). A tree without the file
+    scores zero everywhere."""
+    try:
+        items = json.load(open(ROOT + "state/probes.json")).get("items", [])
+    except FileNotFoundError:
+        items = []
+    done = [i for i in items if i.get("status") == "done"]
+    killed = [i for i in items if i.get("status") == "killed"]
+    out = {"verdicts": len(done)}
+    for v in PROBE_VERDICTS:
+        out[v.replace("-", "_")] = sum(1 for i in done if i.get("verdict") == v)
+    out["killed"] = len(killed)
+    out["killed_by_rule"] = sum(1 for i in killed if i.get("killed_by") == "rule")
+    out["killed_by_luke"] = sum(1 for i in killed if i.get("killed_by") == "luke")
+    out["open"] = sum(1 for i in items if i.get("status") in ("open", "in_progress"))
+    return out
+
+
 def spend():
     path = ROOT + "state/spend.jsonl"
     months = {}
@@ -220,6 +243,20 @@ def render_md(d):
         "| Weekly notes shipped | %d |" % f["weekly_notes"],
         "| Luke-gates opened | %d (must stay 0; asserted, not computed) |" % f["luke_gates_opened"],
         "",
+        "## Probes",
+        "",
+        "One new thing a night taken to a verdict. Kills are published here in the same table as wins.",
+        "",
+        "| Measure | Value |", "|---|---|",
+        "| Probe verdicts | %d |" % d["probes"]["verdicts"],
+        "| Works | %d |" % d["probes"]["works"],
+        "| Broken | %d |" % d["probes"]["broken"],
+        "| Blocked | %d |" % d["probes"]["blocked"],
+        "| Not worth it | %d |" % d["probes"]["not_worth_it"],
+        "| Killed | %d (%d by the cull rule, %d on Luke's word) |" % (
+            d["probes"]["killed"], d["probes"]["killed_by_rule"], d["probes"]["killed_by_luke"]),
+        "| Still open | %d |" % d["probes"]["open"],
+        "",
         "## Spend",
         "",
         "| Month | Spent | Cap |", "|---|---|---|",
@@ -240,6 +277,7 @@ def main():
         "grinder": grinder(),
         "pitch": pitch(),
         "field_notes": field_notes(),
+        "probes": probes(),
         "spend": spend(),
     }
     if "--write" in sys.argv:

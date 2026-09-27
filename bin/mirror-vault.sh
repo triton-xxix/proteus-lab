@@ -42,6 +42,8 @@ copy "$SRC/field-notes/SEEN.md" "$DST/SEEN.md"
 copy "$SRC/TRACK-RECORD.md" "$DST/TRACK-RECORD.md"
 copy "$SRC/PROBES.md" "$DST/PROBES.md"
 copy "$SRC/field-notes/HARVEST.md" "$DST/HARVEST.md"
+copy "$SRC/USAGE.md" "$DST/USAGE.md"
+copy "$SRC/GRADUATES.md" "$DST/GRADUATES.md"
 for lane in intel graduates; do
   if [ -d "$SRC/$lane" ]; then
     mkdir -p "$DST/$lane"

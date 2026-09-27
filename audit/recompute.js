@@ -151,6 +151,24 @@ function fieldNotes(names) {
   return { weekly_notes: names.length, things_run: ran };
 }
 
+// The probe register: a verdict is an item whose status is "done", a kill one whose status is
+// "killed". Counted from the raw JSON; no code shared with bin/probe.py or bin/score.py.
+function probes(text) {
+  let items = [];
+  if (text) { try { items = JSON.parse(text).items || []; } catch (e) { items = []; } }
+  const done = items.filter((i) => i && i.status === 'done');
+  const killed = items.filter((i) => i && i.status === 'killed');
+  const by = (v) => done.filter((i) => i.verdict === v).length;
+  return {
+    verdicts: done.length,
+    works: by('works'), broken: by('broken'), blocked: by('blocked'), not_worth_it: by('not-worth-it'),
+    killed: killed.length,
+    killed_by_rule: killed.filter((i) => i.killed_by === 'rule').length,
+    killed_by_luke: killed.filter((i) => i.killed_by === 'luke').length,
+    open: items.filter((i) => i && (i.status === 'open' || i.status === 'in_progress')).length,
+  };
+}
+
 function spend(jsonl, builtMonth) {
   const months = {};
   for (const line of (jsonl || '').split('\n')) {
@@ -206,6 +224,7 @@ const mine = {
   grinder: grinder(read('grinder/LEDGER.csv') || '', read('grinder/BOOKS.json')),
   pitch: pitch(read('pitch/PREDICTIONS.csv') || ''),
   field_notes: fieldNotes(listFieldNotes()),
+  probes: probes(read('state/probes.json')),
   spend: spend(read('state/spend.jsonl'), builtMonth),
 };
 
@@ -229,6 +248,15 @@ const LINES = [
   ['pitch', 'bankroll_now', 2, 'Paper bankroll, quarter Kelly'],
   ['field_notes', 'weekly_notes', 0, 'Weekly notes shipped'],
   ['field_notes', 'things_run', 0, 'Things installed and run'],
+  ['probes', 'verdicts', 0, 'Probe verdicts'],
+  ['probes', 'works', 0, 'Works'],
+  ['probes', 'broken', 0, 'Broken'],
+  ['probes', 'blocked', 0, 'Blocked'],
+  ['probes', 'not_worth_it', 0, 'Not worth it'],
+  ['probes', 'killed', 0, 'Killed'],
+  ['probes', 'killed_by_rule', 0, null],
+  ['probes', 'killed_by_luke', 0, null],
+  ['probes', 'open', 0, 'Still open'],
 ];
 
 const results = [];
@@ -236,9 +264,11 @@ let fails = 0;
 for (const [sec, key, dp, label] of LINES) {
   const p = pub[sec] ? pub[sec][key] : undefined;
   const exact = mine[sec][key];
-  const okJson = p === undefined ? (key === 'closed' || key === 'paired' || key === 'brier_diff' ? null : false) : agrees(p, exact, dp);
-  // Rows added to the scorer on 2026-09-24 (closed, paired, brier_diff) are allowed to be absent
-  // from a data.json built before then; every other absence is a failure.
+  const lateRow = key === 'closed' || key === 'paired' || key === 'brier_diff' || (sec === 'probes' && !pub.probes);
+  const okJson = p === undefined ? (lateRow ? null : false) : agrees(p, exact, dp);
+  // Rows added to the scorer on 2026-09-24 (closed, paired, brier_diff) and the probes section
+  // added on 2026-09-27 are allowed to be absent from a data.json built before then; every other
+  // absence is a failure.
   const tv = label ? trackNumber(label) : undefined;
   const okMd = label === null ? null : (tv === undefined ? (okJson === null ? null : false) : agrees(tv, exact, dp));
   const verdict = okJson === false || okMd === false ? 'FAIL' : (okJson === null ? 'SKIP' : 'OK');

@@ -70,6 +70,38 @@ const pathsHtml = pr.length
   ? `<h4>The path, beside the ledger</h4><p>Every position rescored on GeckoTerminal's minute candles (fill rule in <code>grinder/RULES.md</code>). Until 25 Sep exits were checked once a night; this is what that cost.</p><table><tr><th>Position</th><th>Rules</th><th>High / low in 24h</th><th>Path exit</th><th>Ledger exit</th><th>At £100, v0.2 costs</th></tr>${pr.map((r) => `<tr><td>${esc(r.id)} ${esc(r.token)}</td><td>${esc(r.rule_version)}</td><td class="num">${pct(r.runup_pct)} / ${pct(r.drawdown_pct)}</td><td>${r.path_exit_reason ? `${esc(r.path_exit_reason)} ${pct(r.path_move_pct)}` : esc(r.status)}</td><td>${r.ledger_exit_reason ? `${esc(r.ledger_exit_reason)} ${pct(r.ledger_move_pct)}` : 'open'}</td><td class="num">${r.path_pnl_v02_costs_gbp ? gbp(Number(r.path_pnl_v02_costs_gbp)) : ''}</td></tr>`).join('')}</table>`
   : '';
 
+// Probes, from data.json (scored by bin/score.py, audited like every other line).
+const pb = data ? data.probes : null;
+const probesHtml = pb
+  ? `<table><tr><th>Measure</th><th>Value</th></tr><tr><td>Verdicts</td><td class="num">${pb.verdicts}</td></tr><tr><td>Works / broken / blocked / not worth it</td><td class="num">${pb.works} / ${pb.broken} / ${pb.blocked} / ${pb.not_worth_it}</td></tr><tr><td>Killed</td><td class="num">${pb.killed} (${pb.killed_by_rule} by the cull rule, ${pb.killed_by_luke} on Luke's word)</td></tr><tr><td>Still open</td><td class="num">${pb.open}</td></tr></table>`
+  : '<p class="empty">No probe register yet.</p>';
+
+// Usage, the "By month" table of USAGE.md (rebuilt by bin/usage.py from the session transcripts).
+function usageRows() {
+  const fp = path.join(ROOT, 'USAGE.md');
+  if (!fs.existsSync(fp)) return '';
+  const md = fs.readFileSync(fp, 'utf8');
+  const sec = (md.split('## By month')[1] || '').split('\n## ')[0];
+  return sec.split('\n').filter((l) => /^\|\s*\d{4}-\d{2}/.test(l))
+    .map((l) => `<tr>${l.split('|').slice(1, -1).map((c) => `<td>${esc(c.trim())}</td>`).join('')}</tr>`).join('');
+}
+const ur = usageRows();
+const usageHtml = ur
+  ? `<table><tr><th>Month</th><th>Who</th><th>Output</th><th>Cache reads</th><th>Cache writes</th><th>Uncached input</th></tr>${ur}</table>`
+  : '<p class="empty">No usage table yet.</p>';
+
+// Shelves: graduates/*.md and intel/*.md, one line each, title from the first heading.
+function shelf(dir) {
+  const d = path.join(ROOT, dir);
+  if (!fs.existsSync(d)) return [];
+  return fs.readdirSync(d).filter((x) => x.endsWith('.md') && x !== 'README.md').sort().map((x) => {
+    const first = (fs.readFileSync(path.join(d, x), 'utf8').match(/^#\s+(.+)$/m) || [])[1] || x;
+    return `<li><a href="https://github.com/triton-xxix/proteus-lab/blob/main/${dir}/${encodeURIComponent(x)}">${esc(first)}</a></li>`;
+  });
+}
+const grads = shelf('graduates');
+const intel = shelf('intel');
+
 const spendRows =Object.keys(s.months).sort().map((m) => `<tr><td>${esc(m)}</td><td class="num">${gbp(s.months[m])}</td><td class="num">${gbp(s.cap_gbp)}</td></tr>`).join('') || '<tr><td colspan="3" class="empty">Nothing spent yet.</td></tr>';
 
 const html = `<!doctype html>
@@ -142,9 +174,25 @@ ${(!p || p.committed_before_kickoff === 0) ? '<p class="empty">No predictions ye
 <p>What AI builders are actually doing. One new thing installed and run every week, verdict from running it. ${f ? `${f.things_run} things run, ${f.weekly_notes} notes shipped, ${f.luke_gates_opened} decisions pushed to a human (asserted, not computed).` : ''}</p>
 ${notesHtml}
 
+<h2>Probes</h2>
+<p>One thing never run before, taken to a verdict each night. Kills are published in the same place as wins. The full register is <a href="https://github.com/triton-xxix/proteus-lab/blob/main/PROBES.md">PROBES.md</a>.</p>
+${probesHtml}
+
+<h2>Intelligence</h2>
+<p>One write-up per subject: what it is, what it costs, how it works, how it is detected, and what was and was not run. Detection is the point.</p>
+${intel.length ? `<ul>${intel.join('')}</ul>` : '<p class="empty">No write-ups yet.</p>'}
+
+<h2>Graduates</h2>
+<p>Finds that were run, kept a public record through two Sunday culls, and need something only a human has for the next step. The standard is pre-registered in <a href="https://github.com/triton-xxix/proteus-lab/blob/main/GRADUATES.md">GRADUATES.md</a>.</p>
+${grads.length ? `<ul>${grads.join('')}</ul>` : '<p class="empty">None yet.</p>'}
+
 <h2>Spend</h2>
 <p>Cap £${Number(s.cap_gbp).toFixed(2)} a month. Rebuilt from the spend log.</p>
 <table><tr><th>Month</th><th>Spent</th><th>Cap</th></tr>${spendRows}</table>
+
+<h2>Usage</h2>
+<p>What this costs in Claude, in tokens, from the session transcripts. Scheduled runs are kept apart from the owner's own sessions. Detail by session in <a href="https://github.com/triton-xxix/proteus-lab/blob/main/USAGE.md">USAGE.md</a>.</p>
+${usageHtml}
 
 <h2>Check the score yourself</h2>
 <p>Every number above is recomputed monthly on GitHub's machines by a script that shares no code with the scorer, and the run fails loudly if any line disagrees. Last result: <a href="https://github.com/triton-xxix/proteus-lab/actions/workflows/audit.yml"><img alt="audit status" src="https://github.com/triton-xxix/proteus-lab/actions/workflows/audit.yml/badge.svg" style="vertical-align:middle"></a>. Two commands on a clone reproduce it; the definitions are in <a href="https://github.com/triton-xxix/proteus-lab/blob/main/audit/README.md">audit/README.md</a>. What it cannot check is listed there too.</p>
