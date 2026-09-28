@@ -1,0 +1,434 @@
+# How you can use DIXON-COLES to beat football markets - YouTube
+Have you ever looked at the betting
+markets and seen Manchester City at 13
+to8 and wondered how did they come up
+with that price? How can I come up with
+my own price and can I beat the book
+makers and the betting exchanges? Well,
+my name is Tom Brownley from
+bookiebashing.net And in this video, I
+want to show you how to come up with
+your own price for Manchester City to
+beat Newcastle United. We'll break it
+down into step by step. And look, you're
+not going to need a PhD in statistics to
+understand this. It is fairly
+straightforward. You won't even need a
+subscription to any value betting
+software. All you're going to need is a
+pen and paper or preferably Microsoft
+Excel. and I'll show you how you can put
+together a worksheet to model the
+probability of correct score and match
+odds so that you can see if you can get
+an edge over the market. And people
+often say, well, you can't beat the
+millions of pounds that the traders have
+got in their odds compiling departments
+at the book makers. I promise you, you
+can. And I'll show you at the end of
+this video how profitable this
+methodology would be historically on bet
+fair exchange.
+So let's start by looking at an example
+tonight. Here is Newcastle versus
+Manchester City on bet fair exchange. So
+this is meant to be efficient. The
+back's 100.7 and the lay is 99.6. So the
+fair odds are somewhere in between
+these. Newcastle are 2.8. 84 Manchester
+City are 2.58
+and the draw is 3.75 to back. So how are
+we going to come up with our own
+probabilities to compare against these
+odds? Well, our input into the model is
+going to be XG, expected goals, the
+average number of goals we expect these
+teams to score in this match. There's a
+variety of ways of estimating XG. we can
+look at their last 10, 20, 30 games and
+then weight this average against the
+current opposition. So if they've been
+playing weaker teams and you know
+Manchester City is a stronger team
+presumably than most teams Newcastle
+have played recently, we can weight that
+number. Another way of doing it is just
+borrowing XG from the markets. That is a
+lot faster. You can go on to any spread
+betting site and then just have a look
+at the number of expected goals in the
+game. For me, I've got my own numbers.
+I've got 1.5 for Newcastle and 1.58
+expected goals for Manchester City. So,
+let's plug these into an Excel sheet.
+So, if I have my XG here and Newcastle
+is the home team, Manchester City the
+away team, and I predict there's going
+to be 1.5 goals for Newcastle and 1.58
+goals for Manchester City. And so now my
+objective is to turn these figures into
+probability of Newcastle winning the
+game, Manchester City winning the game
+and some correct score numbers as well.
+So the question is how do I turn these
+numbers into match odds for home away
+and draw. So before I do that, just a
+little bit of mathematical background.
+This is the only bit of maths we're
+really going to touch on in the entire
+video. We're going to use a pluson
+probability distribution. Don't fall
+asleep. Wake up at the back. It's not as
+dull as it sounds. And we're only going
+to skirt over this. What is a plus on
+probability distribution? It's a
+discrete probability distribution that
+estimates the number of events that will
+occur in a fixed interval of time and
+space given that those events are random
+like goals. What do we mean by discrete?
+Well, we mean the events are countable
+like 0 1 2 3 4 and they go up in those
+whole number integers. So, we don't
+score in 1.5s and 2.5s. And this isn't
+rugby or NFL. It's great for football.
+So, we're going to use pluson as a first
+model for taking those average expected
+goals and creating a correct score
+market. Let's do that now. So, our first
+step is going to be to create a correct
+score market. We want to know the
+probability of nil nil. Why? Why does
+that help us work out the probability of
+the match odds? Well, what is the
+probability of a draw? It's just the
+probability of 0 0 + 1 1 + 2 2 + 3 3 + 4
+4 and 55. I mean, we can keep on going
+until it's statistically irrelevant. We
+might not want to work out the
+probability of 330 against 330 because
+330 330 has never happened in football.
+So, we can stop at some statistically
+relevant juncture. Breaking this down,
+let's start with just working out the
+probability that this match is going to
+finish nil nil. If I put my home score
+here and I put my away score here and
+I'm going to have nil and I'm going to
+have nil. Now, as we said, we're going
+to use our pluson distribution, but we
+don't need to do any funky maths or use
+a calculator. This is why I've asked to
+have access to a Microsoft Excel
+spreadsheet. All we need to do is plug
+the following equation into Microsoft
+Excel. And look, if you don't want to
+follow the equations on this video,
+there's a link in the description that
+will take you to a blog where I've got a
+spreadsheet. In fact, this spreadsheet
+that you're looking at, you can download
+it. You can use the equations there. So,
+I'm going to use a plus on distribution.
+Let's put it here. And to do that in
+Excel, I'm just going to type in equals
+pluson
+dot dist plus distribution. Open the
+bracket and it's going to ask me what
+target are you looking at? Well, the
+target I'm looking at happens to be
+zero. So I could type in zero here or I
+could just make it this cell. And then
+what is the mean? Well, the mean
+is 1.5. That's how many goals we expect
+Newcastle to get.
+And then we finish the equation with
+false because we want exactly zero
+goals. And that will give us the
+probability of Newcastle scoring zero.
+So to get nil nil, we just have to take
+that and multiply it by the pluson.ist
+of Manchester City getting zero which is
+E4 given Manchester City's XG which is
+B5 and again false. And when we do all
+of that, Excel tells us that the
+probability of nil nil in this game is
+4.59%.
+So that's nil nil. Now let's build up
+the probability of a few different score
+lines. So I'm going to assume that
+Newcastle are going to score up to 10
+goals. And I kind of don't care. I think
+it's going to be statistically
+irrelevant after 10. I don't really see
+a lot of 11 goals scored by a team in
+this match. The only exception sometimes
+I have is if I'm modeling something like
+USA women versus Thailand women.
+Occasionally then you might want to
+consider modeling past 10 goals and
+bookie bashing. We go up to 2020. Um
+haven't ever found a need to go further
+than that. So I have all of my score
+lines of Newcastle to score between zero
+and 10 goals and Manchester City to get
+zero goals. So let's just repeat this
+pattern, but we'll repeat it with
+Manchester City getting one goal. And by
+doing this, we can build up a correct
+score grid. So that's all score lines
+from nil nil to 10-10. And I can just
+copy my column H all the way to the
+bottom.
+And I now have my probabilities. If I
+sum all of my probabilities up, I sum to
+100.00%.
+So I know that I statistically don't
+really need to go beyond 1010. The odds
+of something happening beyond 1010 are
+0.0
+to two significant figures. Now that's
+the correct scores. But what about the
+outcome of the match? What about the
+match odds? Well, as we said, the sum of
+all the draws is just the draw price.
+And the sum of all the home wins is the
+home price and the sum of all the away
+wins is the away price. So in this
+column F, I just need to know what is
+the outcome. And the outcome is well, if
+they equal each other, it's going to be
+a draw obviously.
+And if the home score is higher than the
+away score, then it'll be at home win,
+which is one. And if it's neither of
+those things, it has to be an away win
+of two. I can copy that outcome all the
+way down. Now let's summarize all of
+those probabilities. So we have the home
+win, the draw, and the away win here.
+And when we do that, Excel will tell us
+that the probability of Newcastle
+winning this match using PON is 36.3.
+The draw is 23.9 and the away is 39.7.
+And if we want to get decimal odds out
+of that probability, we just take the
+reciprocal to the power of minus one.
+And we see that Newcastle are 2.75, the
+draw is 4.18,
+and Manchester City is 2.51.
+Now, the astute amongst you might be
+looking at those odds and you might
+think, "But hold on, the exchange said
+that the draw was 3.75. Here we have
+4.18." And you'd be absolutely right.
+Because whilst pson can generate a
+correct score market, it's been proven
+not to be perfect. What tends to happen
+with pson is it underestimates the
+probability of 0 0 and to a lesser
+extent 1 one and it overestimates the
+probability of narrow wins of 1 nil and
+nil one. The reason for this is right
+back at the beginning, we said that we
+needed a discrete probability
+distribution because we assumed that the
+goals were random and happened at fixed
+intervals. In reality, the longer the
+match goes on at nil nil, the higher the
+probability that it's going to finish
+nil nil relative to pre-match
+expectations. And that's because as a
+match goes on and no goals are scored,
+teams start to get defensive, less
+attacked minded and so there are
+realworld changes. The events aren't
+quite random and fixed in nature. So we
+can't just use a pure pluson probability
+distribution to model this problem.
+Step Forward. Mark Dixon and Stuart
+Coohl's with their landmark paper
+modeling football association scores and
+inefficiencies in the football betting
+market from the journal of the Royal
+Statistical Society series C applied
+statistics 1997 which was a hugely
+influential piece of work in the world
+of sports analytics and predicting
+football matches and is still used as
+the gold standard of models.
+to predict the outcome of a football
+match. So what does Dixon Coohl's do?
+Well, it takes those four score lines
+whereon underestimates and overestimates
+and it just adjusts them to make them
+more accurate. So it takes nil nil and
+to a lesser extent 1 one and it adjusts
+them so that the output no longer
+underestimates the probability and it
+takes 1 nil and nil one and it adjusts
+them so that the output no longer
+overestimates
+these probabilities from 2-nil onwards
+it's exactly the same it matches plus on
+so how much does Dixon calls adjust nil
+nil 1 nil nil one and 1-1. Well,
+actually it can vary by competitions.
+Some competitions you see a lot of
+underestimation in nil nil. Other
+competitions there's less so. And this
+adjustment factor is called a row
+number. Now, we don't really need to
+know what this is. All we need to know
+is that other people have done a lot of
+work on the row number and we have a
+list of row numbers by competition over
+at bookiebashing.net. net if you are
+ever interested to do this particular
+exercise but you've got a game in La
+Liga or the Bundesliga in the Premier
+League historically it has been shown to
+be minus 0.13
+so that's what we're going to use in our
+model here and in column I next to
+proson I'm now going to have my Dixon
+Kohl's number now here in nil nil what I
+want to do is I want adjust this nil nil
+by a function of Newcastle's goals,
+Manchester City's goals and this
+particular row number. And here is the
+equation that I've stuck into Excel. It
+just takes the probability of pluson for
+nil nil and it multiplies it by 1 minus
+the home xG times the away xG times the
+row number. And if we do that, we end up
+with 6.01%. 01%.
+For 1 nil, it's a slightly different
+equation because it is overestimating 1
+nil plus hon is. And so what we're going
+to do is we're going to take the plus on
+probability and we're going to multiply
+that by 1 plus Manchester City's xG
+multiplied by the row number. The
+opposite will apply for nil one where
+we're going to multiply by 1 +
+Newcastle's xG multiplied by the row
+number. And for one one finally it's
+just going to be the probability of plus
+on multiplied by one minus the row
+number. Every other probability will be
+the same as plus on. And so now let's
+see what match odds probability we get
+with the Dixon Coohl's method. So if I
+copy over the plus on to the Dixon
+Coohl's, we now see that Dixon Coohl's
+estimates the probability of Newcastle
+to be 34.9%
+the draw at 26.8%.
+And if I turn these into decimal odds,
+we see 2.87 for Newcastle, 3.74 for the
+draw, and 2.61 for Manchester City. And
+what we see is those numbers align
+perfectly with the efficient exchange
+market. So now we know we can take an xG
+of 1.50 for Newcastle and 1.58 for
+Manchester City and by using a row
+number of minus0.13.
+We get exactly the same numbers that
+they get on the exchange. Okay, we have
+some confidence that the model works.
+And if you want to give it a go
+yourself, you can download the
+spreadsheet from the blog. The link is
+in the description below this video. All
+of that's very nice. But now you might
+be thinking, great, what a wonderful
+academic exercise, but how can I make
+some money out of this?
+So, can we make any money using Dixon
+Coals? Let's have a look at 3,090
+football matches in the Premier League
+and the Championship between 2022 and
+the beginning of 2026.
+And we're going to take the correct
+scores in there because I've got all of
+the closing lines for the correct
+scores. And we're going to back with a
+unit win strategy to win £100 in every
+single bet. So, you adjust the stake
+based on the magnitude of the odds.
+First of all, let's take a look at bare
+exchange. we would see this graph here.
+It's an efficient market. It converges
+to zero. Actually, about a 0.1%
+profit. That's what you would expect
+with an efficient market. It doesn't
+include commission. If we include
+commission, we see a £5,000 loss minus
+one and a half% return on investment.
+Almost all of which goes to bet fair
+exchange in commission. Now, let's have
+a look at Dixon Coohl's. Let's use a
+strategy where we're only going to back
+where the bet fair price, the exchange
+price is higher than the Dixon Coohl's
+method. And if we do that, we see this
+graph here. This is to win £100 on each
+bet with commission of 2% applied at the
+exchange. And now we go from minus
+£5,000 to plus £15,000. Look, of course,
+there are some caveats. We did go in a
+three and a half thousand bet break even
+run right at the beginning of that and
+it does assume we're able to bet on all
+of these markets with enough liquidity
+at the closing lines. But it does show
+that there is potential to beat the
+markets with dicks and coals. So look,
+you don't need any fancy software to do
+this. You can mock up your own Excel
+spreadsheet. If you want to use mine,
+the one I've used in the video, there is
+a link in the description below this
+video. It will take you to a blog. You
+can download the spreadsheet used in
+this video for free. Use it to model
+Dixs and Coals by yourself. All you'll
+need is XG as input, which you can
+generate yourself by looking
+historically. will do a video on how to
+do that sometime in the future or even
+just borrow it from the markets by using
+an inverse plus on probability
+distribution from over 2.5 goals looking
+at the spreads. There's a number of
+different ways of taking it from the
+markets or even just use some value
+betting software which does speed up the
+process for you. At bookiebashing.net
+net. We have a list of all matches in
+primary, secondary, even tertiary
+competitions with the xG for home and
+away teams. We even have a Dixon Coohl's
+calculator that will tell you the
+correct score market and the win odds
+and your Asian handicap and match odds
+of both teams to score and all markets
+that relate to home and away and match
+goals in football matches. Now there are
+more advanced statistical techniques
+that can be used to analyze the
+performance of predictive models such as
+the Brier test, the log loss test, but
+they all show the same thing as the 100
+pound unit win analysis and that is that
+Dixon Coohl's can be a profitable model
+for predicting correct scores match odds
+in football matches. My name's Tom
+Brownley from bookiebashing.net. If you
+enjoyed this video, don't forget to
+click like and subscribe below. And you
+can watch another video like this just
+up here.
+[cheering]

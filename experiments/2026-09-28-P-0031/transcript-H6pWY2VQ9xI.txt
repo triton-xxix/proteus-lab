@@ -1,0 +1,1377 @@
+# Give Me 1 Hour, I'll Make Probability Click Forever - YouTube
+You're not bad at probability. You just
+haven't been taught this. See, everyone
+teaches probability backwards. They
+start with formulas, rules, axioms. Your
+brain memorizes them for a test. Then
+poof, gone. You're left with nothing.
+But here's what they should have taught
+you first. Your brain already
+understands probability intuitively. You
+don't need formulas for that.
+So, in the next hour, we're doing
+something different. We're building
+probability the way your brain actually
+works. Intuition first, formalization
+second. Check out these topics. We'll
+master sample spaces, conditional
+probability, B rule, law of total
+probability, expected value, random
+variables. Everything that seemed
+impossible will feel obvious. By minute
+60, you'll understand probability better
+than most statistics graduates.
+Here's the deal. After this video,
+there's an hour of practice problems
+waiting. Your brain will struggle. Good.
+That struggle is literally rewiring your
+neural pathways. No pain, no gain. Let's
+transform how you think about
+probability starting now.
+[Music]
+Let's start your transformation.
+You've seen this notation everywhere. P
+of E equals 0.5.
+You know P stands for probability. But
+what exactly is E? What are we actually
+calculating the probability of?
+Here's what 90% of people get completely
+wrong about probability and it breaks
+everything else they try to learn. Most
+people think E is an outcome, like
+getting heads or drawing a red card.
+They think probability is about single
+things happening.
+That's fundamentally wrong. And this
+misconception is why probability feels
+so confusing.
+It's not about outcomes, it's about
+events. So what's an event? Let me show
+you with an example that will rewire how
+you think.
+You've got this bag with 10 marbles. Now
+watch carefully. Each marble is unique.
+Let's number them. Red one, red two, red
+three, red four, red five, blue one,
+blue two, blue three, green one, green
+two.
+When you reach in blindfolded and grab
+one, what could happen? You could grab
+red one or red two or blue one or any of
+the 10 marbles.
+Each individual marble has a 1 in 10
+chance of being grabbed. These 10
+individual possibilities. That's your
+sample space. Literally every single
+thing that could happen.
+Now comes the breakthrough moment. When
+someone asks, "What's the probability of
+drawing a red marble?" They're not
+asking about one outcome. They're asking
+about multiple outcomes grouped
+together. Drawing red means you draw red
+one or you draw red two or you draw red
+three or you draw red four or you draw
+red five. That's five different
+outcomes. Look at this. This collection
+of outcomes is an event. An event is a
+set of outcomes. Not one outcome, a
+whole set. So when we calculate P of red
+marble equals P of E, we're really doing
+number of outcomes in the event divided
+by total number of outcomes. That's 5 /
+10, which equals 50%.
+Let's drive this home with coins. You
+flip two coins. Quick, what's your
+sample space? Think about all the ways
+those two coins could land.
+Heads, heads, heads, tails, tails,
+heads, tails, tails. Four outcomes, not
+three. Heads, tails, and tails heads are
+different. The order matters because
+they're different coins.
+Now, the fun part. What events could we
+define? Exactly one head. That's head
+tails and tails heads. At least one
+head. That's head heads. Heads tails and
+tails heads. First coin is heads. That's
+head heads and head tails. Both coins
+match. That's head head and tails tails.
+Each event is a different grouping of
+outcomes. So P of at least one head
+equals P of E equals 3 out of 4 which is
+75%.
+We're counting how many outcomes are in
+our event? Three. How many total
+outcomes exist? Four. Done. This is the
+fundamental insight. Probability
+operates on events, sets of outcomes,
+not individual outcomes. Yes, you could
+treat a single outcome like heads heads
+as a singleton event. That's why people
+get sloppy and say probability of heads.
+But that's just a special case where
+your set has one element. Master this
+distinction that E is a set, not a
+single thing and everything else in
+probability clicks into place. Miss it
+and you'll struggle forever.
+But hold on. How do we know this
+calculation is even valid? Here's
+something mindblowing. Every probability
+calculation in existence, from coin
+flips to AI models to quantum mechanics,
+follows the same three fundamental laws.
+These aren't just rules someone made up.
+These are mathematical truths as
+fundamental as 2 + 2= 4.
+Without them, probability doesn't exist.
+The three axioms of probability.
+First, probabilities can't be negative.
+P of E is greater than or equal to zero.
+Common sense, right?
+Second, something must happen. P of S
+equals 1. The probability of the entire
+sample space is 100%.
+Third, if events can't overlap, just
+add. For disjoint events, P of A union B
+equals P of A plus P of B.
+Let me show you these laws in action
+with something we all know, a simple die
+roll.
+First, let's define our events. Event A
+rolling less than three, that's one and
+two. Event B rolling a five, that's just
+five. Now, watch how the axioms validate
+everything. Axiom 1, P of A= 2 / 6,
+which is 1/3. Is it non- negative?
+Obviously, yes. Axiom 2. The whole
+sample space 1 2 3 4 5 6 has probability
+6 / 6 = 1. Something must happen. Axiom
+3. A and B can't happen together. You
+can't roll both less than three and
+five. So, P of A union B= P of A + P of
+B. That's 2 6 + 1 6 = 36, which is 12.
+The math just works.
+Here's your transformation moment. These
+three simple laws are the DNA of
+probability. Every complex formula
+you'll ever see is just these laws in
+disguise. From now on, every problem
+follows this pattern. Identify sample
+space, define events, apply the laws.
+Feel that clarity. That's your
+mathematical intuition growing stronger.
+You're not just learning probability,
+you're rewiring how you think about
+uncertainty.
+Now that you understand events are sets,
+here's where things get really powerful.
+You're playing poker. You draw a card
+from a standard deck. What questions
+might you ask? Did I get a king? Sure,
+that's one event. But real life is
+messier. Did I get a king or an ace? Did
+I get a red card and a face card? Did I
+not get a heart? These aren't simple
+events. They're combinations.
+And here's what most people don't
+realize. There's a beautiful
+mathematical structure for handling
+exactly these situations.
+Let me show you with actual cards. From
+our 52 card deck, let's define event A.
+Draw a king. That's four cards. Event B,
+draw a heart. That's 13 cards. Now watch
+what happens when we combine these
+events in different ways.
+The not operation complement.
+Not a king means everything except the
+kings. That's 48 cards out of 52.
+So the probability of not getting a
+king. 48 out of 52. But here's the
+elegant shortcut. Since we know there's
+a 4 out of 52 chance of getting a king,
+we can flip it around. The probability
+of not getting a king. Well, that's just
+1 minus 450 seconds, which gives us 4850
+seconds. This is the complement rule in
+action. Whatever the chance of something
+happening, the chance of it not
+happening is just 1 minus that number.
+Why does this work? Because either A
+happens or it doesn't. Those are the
+only two possibilities and they must add
+to one.
+The and operation intersection king and
+heart. Which cards are both? Just this
+one card king of hearts. The
+intersection is where the two events
+overlap. Only the king of hearts
+satisfies both conditions. So the
+probability of getting both king and
+heart just one out of 52.
+The ore operation union king or heart.
+Now, this is where 80% of people mess
+up. Your instinct says four kings plus
+13 hearts equals 17 cards. Simple
+addition, right? Wrong. Look at this
+card. Is it a king? Yes. Is it a heart?
+Also, yes. We counted the king of hearts
+twice. Once as a king, once as a heart.
+So the real answer, four kings plus 13
+hearts minus one overlap equals 16
+cards. The probability of getting king
+or heart 16 out of 52.
+Let me draw what mathematicians call a
+ven diagram to show you exactly what's
+happening. First I'll draw a rectangle.
+This represents our entire sample space,
+all 52 cards.
+Now inside I'll draw two circles. Circle
+A contains all four kings. Circle B
+contains all 13 hearts.
+But wait, these circles overlap. The
+king of hearts sits right in that
+overlapping region. Aha moment. See it.
+Now the king of hearts is in both
+circles. That's why we counted it twice.
+This is why we need here's the addition
+rule doing its magic.
+Let me show you how this works with our
+cards. The chance of getting a king,
+four out of 52. The chance of getting a
+heart, 13 out of 52. And that one card
+that's both the king of hearts, just one
+out of 52.
+Now watch what happens when we calculate
+king or heart.
+We take our four kings, add our 13
+hearts. But wait, we counted the king of
+hearts twice. Once as a king, once as a
+heart. So we subtract that one card we
+double counted.
+4 + 13 - 1 equals 16. 16 cards out of 52
+satisfy our condition. The formula
+automatically fixes the double counting.
+Special case. What if events can't
+overlap like drawing a king versus
+drawing a queen?
+Well, a card can't be both a king and a
+queen, right? So, there's zero overlap.
+When that happens, the formula becomes
+beautifully simple. You just add the
+probabilities together. Four kings plus
+four queens equals eight cards. Easy. No
+double counting to worry about.
+Let's use all three tools.
+In a deck, what's P of red card or face
+card?
+So, let's figure this out together. In a
+deck, what counts as red? Well, you've
+got all your hearts and all your
+diamonds. That's 26 cards total. And
+face cards, those are your jacks,
+queens, and kings across all four suits.
+So, 12 cards there. But wait, here's
+where it gets interesting. Some cards
+are both red and face cards, right?
+Think about it. the Jack of Hearts,
+Queen of Hearts, King of Hearts, Jack of
+Diamonds, Queen of Diamonds, King of
+Diamonds, that's six cards that we'd be
+counting twice if we're not careful.
+So, when we work out the probability of
+getting either a red card or a face
+card, we take our 26 red cards, add our
+12 face cards, but then, and this is
+crucial, we subtract those six cards we
+counted twice. That gives us 32 cards
+out of 52 that satisfy our condition.
+Do the math and you get about 61 12%.
+See how that addition rule automatically
+fixes our double counting problem.
+Another example, what's the probability
+of getting at least one head in three
+coin flips? Instead of listing all
+possibilities, use the compliment.
+Think about it this way. What's the only
+way to not get at least one head? You'd
+have to get all tails, right? Tails,
+tails, tails. What's the chance of that?
+Well, each flip has a 1/2 chance of
+tails, and you need all three to be
+tails.
+So, that's 1/2 * 1/2 * 1/2, which gives
+us 1/8. So, if there's a 1/8 chance of
+getting no heads, then there must be a
+7/8 chance of getting at least one head.
+One calculation instead of seven. That's
+the power of thinking and compliments.
+Your transformation toolkit is now
+complete.
+When you see not in a problem, that's
+your signal to use the compliment. When
+you see and, you're looking for the
+intersection, what satisfies both
+conditions.
+When you see or, time for the addition
+rule, but always watch for that overlap.
+Feel that clarity. You're thinking like
+a probabilist now.
+But wait, we just counted 32 cards out
+of 52. That was manageable. What happens
+when the numbers get astronomical?
+You're trying to crack a fourdigit lock.
+Quick question. How many combinations do
+you need to try in the worst case? Most
+people guess, well, four digits each can
+be 0 to 9, so maybe a few hundred.
+Actually,
+it's 10,000 possibilities from 000000 to
+99999.
+That's 10 * 10 * 10 * 10, which equals
+10^ 4th power.
+Now, imagine a 6 character password
+using lowercase letters. That's 26 to
+the 6th power. Over 300 million
+possibilities.
+Here's the problem we face in
+probability. Our formula says P of E
+equals favorable outcomes divided by
+total outcomes. But when there are
+millions or billions of outcomes, you
+can't list them all. You'd die before
+finishing.
+So, how do we count when the numbers get
+astronomical?
+Look at these three situations.
+First, creating a four-digit pin like 1
+2 3 4 or 555.
+Second, selecting four lottery balls
+from 40. No repeats allowed. Third,
+choosing a threeperson committee from 10
+people. They all involve choosing or
+selecting,
+but the counting is completely
+different. Why?
+The secret lies in two simple questions
+that change everything.
+First question, can I repeat? Can I use
+the same thing twice?
+Second question, does order matter? Is
+ABC different from CBA?
+Let me show you why these questions
+change everything. First question, can I
+repeat? Think about a four-digit pin
+code. Can you use the same digit twice?
+Of course, you could have 1 one one or 1
+2 3 4 or 555
+when you can repeat. First digit 10
+choices 0 through 9. Second digit still
+10 choices. Third digit still 10
+choices. Fourth digit still 10 choices.
+Total 10 * 10 * 10 * 10 equals 10,000
+possible pins.
+Now think about a lottery drawing four
+balls from 10 numbered balls.
+Once a ball is drawn, it's gone. You
+can't repeat when you can't repeat.
+First ball, 10 choices. Second ball,
+only nine left. Third ball, only eight
+left. Fourth ball, only seven left.
+That's about 5,000 possible drawings.
+See the massive difference? With
+repetition allowed, you get 10,000.
+Without repetition, only about 5,000.
+That's why this question matters.
+Quick math note. Factorials. You might
+see this in the formulas. Factorial just
+means multiply all the numbers down to
+one. So 4 factorial, that's 24. That's
+all there is to it.
+Here are the three formulas you need.
+Check out these formulas. When you can
+repeat and order matters, just multiply
+n by itself k times. Example, fourdigit
+pin, that's 10,000 possibilities.
+Formulas 2 and three, no repetition.
+This is where the second question comes
+in. Does order matter?
+When order matters, use permutations.
+Think about this. You're choosing a
+president, vice president, and secretary
+from 10 people. Alice is president. Bob
+is VP. Charlie is secretary. Charlie is
+president. Alice as VP, Bob is
+secretary. These are different outcomes.
+The roles matter.
+When order matters, we use permutations.
+The calculation for president, you have
+10 choices. For VP, nine left. For
+secretary, eight left.
+That's 720 different ways. Look at the
+formula, but honestly, just remember
+multiply down K times
+when order doesn't matter. Use
+combinations.
+Now, same club, but you're choosing a
+threeperson committee. No special roles.
+Choosing Alice, Bob, and Charlie.
+choosing Charlie, Alice, and Bob.
+These are the same committee. Order
+doesn't matter here.
+Here's the key insight. Every committee
+can be arranged six different ways, but
+they're all the same committee.
+So, we take our 720 permutations
+and divide by the redundancy.
+That gives us 120 committees.
+Think of it as permutations divided by
+redundancy.
+The power move your decision tree.
+Before any counting problem, ask can I
+repeat?
+If yes and order matters, multiply in by
+itself k times.
+If no, go to question two. Does order
+matter? If yes, use permutation for
+arrangements, rankings, passwords.
+If no, use combination for groups,
+committees, hands of cards.
+Quick test. A password needs four
+different digits. How many possible
+passwords?
+Think. Can digits repeat?
+No. It says different.
+Does order matter?
+Yes, order definitely matters for
+passwords. So, it's a permutation.
+Multiply down four times and you get
+about 5,000 passwords.
+You just solved a complex counting
+problem in 10 seconds. That
+transformation,
+that's the power of asking the right
+questions.
+But so far, we've been calculating
+probabilities in a static world where we
+know nothing has happened yet. What
+about when things start happening and we
+get new information?
+[Music]
+The weather app says 30% chance of rain
+today. You're about to leave home
+without an umbrella, but then you look
+outside. Dark clouds everywhere. Wind
+picking up. Does that 30% still apply?
+Of course not. The probability just
+changed based on what you observed.
+Let me show you exactly how this works
+with something we can calculate. You
+draw two marbles from this bag without
+replacement. Meaning once you draw a
+marble, it's gone.
+First marble blue.
+Now the critical question. What's the
+probability the second marble is red?
+Think about what just happened. Before
+drawing anything, there were 10 marbles
+total. But now there are only nine
+marbles left in the bag. And crucially,
+all five red marbles are still there. So
+the probability of getting red second
+given we drew blue first. Five out of
+nine. That vertical bar means given
+that. It's how we write conditional
+probability.
+Notice something profound here. The
+probability of drawing red changed from
+1/2 to 5 9ths. The blue marble being
+gone literally changed our universe.
+This is the intuition behind conditional
+probability. When you gain information,
+you're working in a new smaller
+universe.
+Check out the formula. The probability
+of A given B equals the probability of
+both happening divided by the
+probability of B. But why does this
+formula work? Let me show you. Think
+about all the ways to get first blue
+then red. That probability is 16th.
+And the probability of drawing blue
+first 3/10.
+So when we divide we get 5 9ths.
+exactly what we calculated intuitively.
+The formula is just the mathematical way
+to shrink the universe.
+Here's what the formula really does.
+Think about it this way. The top part of
+the fraction counts all the ways both
+things happen together. The bottom part
+that counts all the ways your condition
+happens. So when you divide them, you're
+basically asking out of all the times B
+happened, how often did A also happen?
+It's like zooming in on just the B cases
+and seeing what fraction of those also
+have A.
+Let's see this with cards. You draw a
+card and see it's a king. What's the
+probability it's specifically the king
+of hearts? The intuitive way is to think
+about your new universe. You've got just
+the four kings now. And out of those
+four kings, how many are the king of
+hearts? just one. So the probability is
+1/4. Using the formula, the king of
+hearts is one out of 52 cards total,
+while any king is four out of 52. When
+you divide these, you get 1/4. Same
+answer. See how the formula
+automatically does the shrinking. The
+denominator represents our new smaller
+universe of just kings.
+Practice problem.
+A family has two children. You know, at
+least one is a girl. What's the
+probability both are girls? Let's think
+step by step. All the possibilities for
+two children are boy boy, boy girl, girl
+boy, and girl girl. But wait, we know at
+least one is a girl. So that rules out
+boy. That leaves us with boy girl, girl
+boy, and girl girl. Now of these three
+remaining possibilities, how many have
+both girls? Just the one. Girl, girl. So
+the probability is 1/3, not 1/2. The
+condition changes everything.
+your transformation. You now understand
+that probability isn't fixed. It updates
+as you gain information. Every time you
+learn something new, you're essentially
+working in a smaller, more focused
+sample space. This is the foundation of
+how AI learns, how doctors diagnose, and
+how we make decisions under uncertainty.
+Feel that power growing.
+So far, we've been dealing with single
+events. But what happens when you want
+to track two things at the same time?
+Let me show you with a simple example.
+Imagine you're tracking students in a
+class. For each student, you record two
+things. Whether they pass the midterm,
+yes or no, and whether they pass the
+final, yes or no.
+Out of 100 students, here's what you
+found.
+50 students passed both exams. 10
+students passed midterm but failed
+final. Five students failed midterm but
+passed final. 35 students failed both.
+Look at this table. It shows joint
+probabilities, the probability of both
+things happening together. Half the
+students passed both exams.
+But here's where it gets powerful. From
+this same table, you can calculate
+marginal probabilities. the probability
+of just one event ignoring the other.
+What's the overall probability of
+passing the midterm? Add up all the
+cases where midterm was passed. Passed
+both 50 students. Passed midterm, failed
+final, 10 students. Total who passed
+midterm? 60 out of 100. That's 60%.
+That's a marginal probability. It's
+called marginal because you literally
+write it in the margin of your table.
+[Music]
+Check out the complete picture. The
+joint probabilities live in the cells of
+the table. Those are the combinations of
+both events. Meanwhile, the marginal
+probabilities sit in the margins where
+we write the totals.
+That's actually why they're called
+marginal. They're literally in the
+margins.
+This isn't just for exams. Anytime you
+have two events, medical test results
+and actual disease, weather and
+accidents, age and voting preference,
+you can use a joint probability table to
+see the complete picture.
+Now that you understand joint and
+marginal probabilities, here's a
+profound question. How can you tell if
+two events are connected or independent?
+Look at our exam data. The marginal
+probability of passing the midterm is
+60%. The marginal probability of passing
+the final is 55%.
+If these exams were completely
+independent, if performance on one had
+nothing to do with performance on the
+other, then we'd expect
+about 33% to pass both.
+But our actual data shows 50% passed
+both. That's way higher than expected.
+This tells us the exams are not
+independent.
+Students who do well on the midterm tend
+to also do well on the final.
+This is the independence test. If the
+joint probability equals the product of
+the marginalss, they're independent. If
+not, they're dependent.
+Now, let's see true independence. You
+roll a dieice and flip a coin
+simultaneously.
+Think about it. Does the die care what
+the coin shows? Does the coin care about
+the die? Of course not. They're
+completely separate.
+Let's create a joint probability table.
+We observe 600 trials.
+Now calculate the marginalss.
+Probability of rolling sixth.
+Probability of getting heads 1/2.
+Probability of both 112th. Check for
+independence. Does 16 * 1/2 equal 112th?
+Yes, they're independent.
+When events are independent, the
+multiplication rule emerges naturally.
+Just multiply the individual
+probabilities.
+But watch what happens when events do
+affect each other.
+Now let's build a joint probability
+table for drawing two cards without
+replacement.
+When we work out all the probabilities
+for drawing two cards, something
+interesting happens. The marginal
+probability of getting a king on any
+single draw about 7.7%.
+If the draws were independent, we'd
+expect both kings about 0.59%
+of the time. But our actual calculation
+gives us about 0.45%.
+They're not equal. The events are
+dependent. Drawing the first card
+changes the probabilities for the
+second. So how do you know if events are
+independent? Well, there are three
+equivalent ways to check. First way, see
+if the joint probability equals the
+product of the marginalss. Second way,
+check if condition on one event doesn't
+change the probability of the other. And
+the third way, which is really
+intuitive, ask yourself if knowing one
+thing changes your belief about the
+other. If it doesn't, they're
+independent.
+Let me give you an example that trips
+people up. Someone might say, "Having a
+cold and wearing a jacket are
+independent, right?" Let's check with
+data. Winter observations out of 10,00
+people.
+Marginals show 40% have colds, 70% wear
+jackets. If independent, we'd expect 28%
+to have both, but actually 30% have
+both. They're not independent. Why? Both
+are connected by season. Winter makes
+you more likely to be cold and more
+likely to wear a jacket. They're
+connected through the hidden factor of
+season.
+True independence means A doesn't cause
+B, B doesn't cause A, and there's no
+hidden factor affecting both.
+Your new superpower.
+Before calculating any and probability,
+always check if the events are
+independent first. If they are
+independent, life is easy. Just multiply
+the probabilities. But if they're
+dependent, you'll need to use
+conditional probability instead.
+Independence isn't just a math concept.
+It's how we understand causation,
+correlation, and the structure of
+reality itself. When you master this,
+you're thinking like a scientist.
+[Music]
+All right, here's where probability
+becomes truly powerful. Up until now,
+we've been dealing with outcomes like
+heads, red marble, or king of hearts.
+But what if we want to work with actual
+numbers?
+Let me show you what I mean. Let's say
+we're playing a simple game. You flip
+two coins. For every head you get, you
+win $5. For every tail, you lose $2.
+Now, the sample space for flipping two
+coins is still the same. Heads, heads,
+heads, tails, tails, heads, tails,
+tails. But instead of just caring about
+the pattern, we care about how much
+money you make or lose. This is where
+random variables come in. A random
+variable is just a function that assigns
+a number to every outcome in your sample
+space. Think of it as a translator that
+converts random outcomes into numbers we
+can actually work with.
+Let's call our random variable X and it
+represents your total winnings. Let's
+work through each outcome. Heads heads
+two heads. So you win $10. Heads tails
+one head one tail. So you win five but
+lose two. That's $3. Tails heads same
+thing $3.
+tails, tails, two tails. So, you lose
+$4.
+Now, look what we've done. We've taken
+this random process and turned it into
+something mathematical. Instead of
+talking about heads and tails, we're
+talking about the numbers 10, 3, and -4.
+Here's the beautiful part. We can now
+ask mathematical questions. What's the
+probability you win exactly $3? Well,
+that happens with heads, tails, or tails
+heads. Two out of four outcomes, so 50%.
+What's the probability you make money?
+That's three out of four outcomes, so
+75%.
+Random variables are everywhere, the
+number of cars passing through an
+intersection in an hour, your test
+score, the time it takes for your pizza
+to arrive, the temperature tomorrow,
+stock prices. All of these are random
+variables. The power is that once we
+have numbers, we can use all the tools
+of mathematics. We can add them,
+multiply them, take averages, and much
+more. We've just transformed the messy
+world of randomness into the clean world
+of numbers. All right, here's where
+probability gets practical. Once you
+have a random variable, the single most
+important question you can ask is what's
+the average value in the long run? This
+is called the expected value, and it's
+everywhere. When a casino sets the odds
+on a game, they're using expected value.
+When an insurance company decides your
+premium, expected value. When you're
+deciding whether to take an umbrella
+based on weather forecasts, you're
+intuitively thinking about expected
+value. Let me show you how this works
+with a simple game. You roll a dieice.
+If you roll a six, you win $12. Roll a
+four or five, win $3. Roll 1 through
+three, lose $6. Should you play this
+game? Well, let's figure out the
+expected value. The expected value is
+the weighted average of all outcomes.
+Probability of rolling a six 1 and six
+win $12. Probability of four or five 1/3
+win $3. Probability of 1 through 3 1/2
+lose $6. When we calculate the weighted
+average, we get exactly $0. So the
+expected value of this game is exactly
+zero. This means if you played this game
+thousands of times, you'd expect to
+break even on average. Sometimes you'd
+win, sometimes you'd lose, but over the
+long haul, you'd neither gain nor lose
+money. This is what we call a fair game.
+Most casino games, by the way, have
+negative expected values for players and
+positive expected values for the house.
+That's how casinos make money.
+But expected value isn't just about
+gambling. Let's say you're trying to
+decide whether to buy insurance for your
+phone. The phone costs $800. There's a
+5% chance you'll break it this year. The
+insurance costs $100. Without insurance,
+your expected loss is $40. With
+insurance, you definitely lose $100. So,
+from a pure expected value standpoint,
+insurance doesn't make sense. But here's
+the thing. Expected value doesn't
+capture everything. It doesn't account
+for how much losing $800 would hurt you
+personally. That's where the concept
+gets more nuanced.
+The beautiful thing about expected value
+is that it gives you a single number to
+compare different random situations.
+It's the center of gravity of all
+possible outcomes. And once you start
+seeing the world through the lens of
+expected value, you'll make better
+decisions in everything from investments
+to career choices to daily life. But
+what if we want to add two random
+variables and compute the expectation of
+their sum? Let me show you with a simple
+example. You roll a dieice with this
+payout. Roll one through three, win $4.
+Roll four through six, win $8. Now,
+here's the twist. We're tracking two
+random variables from this single game.
+X is your winnings in dollars. Y is the
+number you rolled.
+The expected value of X, let's see, $4
+half the time, $8 the other half. That
+gives us $6.
+The expected value of Y, well, that's
+just the average of 1 through six, three
+and a half. So, what about X + Y? Your
+winnings plus the number you rolled.
+Let me walk through what happens. If you
+roll a one, you win $4 plus the one you
+rolled, that's five total. Roll a two. 4
++ 2 makes six. A three gives you seven.
+But then it jumps. Roll a four and
+suddenly you're getting $8 + 4, 12
+total. A 5 13 and a 6 14.
+So our possible outcomes are 5 6 7 12 13
+and 14. The average
+9 and 1/2. Wait a minute. E X is 6. E Y
+is 3 and 1/2. And 6 + 3 and 1/2 is 9 and
+1/2.
+This is not an accident. You might be
+thinking, "Hold on, this feels wrong. X
+and Y are completely dependent. If I
+know one, I automatically know the
+other. How can their expectations just
+add up like that?" Here's what's about
+to blow your mind. Expected values
+always add, even when variables are
+completely dependent.
+Don't believe me? Look closer at what's
+really happening. See what I'm doing?
+I'm separating every outcome into its X
+part and Y part. The X contributions 4
+44 888. The Y contributions 1 2 3 4 5 6.
+Now, here's the magic trick. Average
+each part separately.
+Average of the X parts. That's four
+three times and eight three times.
+divide by six. $6. That's exactly our
+expected value of x. Average of the y
+parts. 1 + 2 + 3 + 4 + 5 + 6ide by 6. 3
+and 1/2. That's exactly our expected
+value of y. The dependencies between x
+and y are completely irrelevant. When we
+break everything apart and average
+separately, we automatically get back to
+the original expectations. This is
+linearity of expectation. One of the
+most powerful shortcuts in all of
+probability.
+Check this out. Even though X and Y are
+completely dependent on each other, when
+we break apart the math and regroup it,
+the dependencies automatically wash out.
+It's like the math doesn't care about
+the dependencies. It just naturally
+separates things back to their original
+form.
+Important. This only works for addition.
+For multiplication, you need
+independence.
+So far, we've been dealing with things
+you can count. Coin flips, dice rolls,
+number of customers. But what about
+things you measure? Height, weight,
+time, temperature. These don't come in
+neat little packages. They flow
+continuously.
+Let me show you what I mean. Imagine you
+have an automated bread slicer that's
+supposed to cut loaves exactly 16 in
+long. But like any machine, it's not
+perfect. Sometimes it cuts a little
+long, sometimes a little short. Let's
+say the actual length varies uniformly
+between 14 and 18 in. What does
+uniformly mean? It means every length in
+that range is equally likely. The
+machine isn't biased toward any
+particular length within that range.
+Now, here's the mindbending part. What's
+the probability that a loaf is exactly
+1600
+0 in long? Not 16.1,
+not 15.9,
+but exactly 16 with infinite precision.
+The answer is zero. Absolutely zero. I
+know that sounds crazy, but think about
+it. There are infinitely many possible
+lengths between 14 and 18 in. Any
+specific exact value has zero
+probability because it's one point out
+of infinitely many.
+But here's what we can calculate. The
+probability that a loaf is between say
+15 and 17 in long. That's like asking
+for the area under a curve between those
+two points. Since our distribution is
+uniform from 14 to 18 in, we can think
+of it as a rectangle. The total width is
+4 in. The height has to be 1/4 because
+the total area under any probability
+curve must equal 1.
+So to find the probability that a loaf
+is between 15 and 17 in,
+we calculate the area of a rectangle
+that's 2 in wide and 1/4 tall. That's
+50%.
+[Music]
+This is the fundamental shift when
+dealing with continuous variables. Let
+me introduce some terminology here
+because it's important.
+For discrete variables like dice rolls,
+we use something called a PMF
+probability mass function. We can ask
+what's the probability of getting
+exactly six. But for continuous
+variables, we use a PDF,
+probability density function.
+We can't ask for exact values because
+that's always zero. Instead, we ask
+about ranges.
+Now, don't panic if you haven't learned
+integration in calculus yet. Integration
+is just a fancy way of computing the
+area under a curve. When we want the
+probability that our bread length is
+between 15 and 17 in, we're finding the
+area under the PDF curve between those
+two points.
+In our uniform distribution example,
+that curve is just a flat rectangle. So
+the integration is simple
+multiplication,
+width time height. But for more complex
+distributions, the curves can be
+bell-shaped or have other interesting
+forms.
+It's like the difference between asking
+what's the chance of hitting this exact
+point on a dart board versus what's the
+chance of hitting somewhere in this
+region. The first is essentially zero.
+The second is meaningful and calculated
+by finding the area of that region. So
+to summarize, discrete variables use
+PMFs and we add up probabilities.
+Continuous variables use PDFs and we
+integrate to find areas. Same intuition,
+different mathematical tools.
+[Music]
+Continuous variables are everywhere in
+the real world. Stock prices, arrival
+times, measurement errors, biological
+traits.
+And once you understand that we're
+dealing with PDFs and integration
+instead of PMFs and addition, a whole
+new world of mathematical modeling opens
+up.
+The beautiful thing is that the same
+probabilistic intuition applies. We're
+still asking about likelihood. We're
+still calculating expected values. We're
+still thinking about distributions.
+We've just moved from a world of
+discrete chunks to a world of smooth
+curves.
+All right, here's where probability
+becomes a problem-solving superpower.
+Sometimes you face a probability
+question that seems impossible to
+calculate directly. But there's an
+elegant technique that breaks complex
+problems into manageable pieces.
+Let me show you what I mean. Imagine you
+have two bags of marbles. Bag A has five
+red marbles and five blue marbles.
+perfectly balanced. Bag B has one red
+marble and seven blue marbles, heavily
+biased toward blue. Now, here's the
+setup. You randomly choose one of the
+bags. There's a 70% chance you pick bag
+A and a 30% chance you pick bag B. You
+then draw one marble from whichever bag
+you chose. The question is, what's the
+overall probability of drawing a blue
+marble?
+This might seem tricky at first, but
+here's the insight. There are exactly
+two ways you can end up with a blue
+marble. Either you pick bag A and draw
+blue from it, or you pick bag B and draw
+blue from it. These are the only two
+paths to your desired outcome. So, let's
+calculate each path. What's the
+probability you pick bag A and then draw
+blue? Well, you've got a 70% chance of
+picking bag A. And if you do, there's a
+50% chance of drawing blue from it.
+That gives us 35% for this path. What
+about the other path? Picking bag B and
+then drawing blue. That's 30% chance of
+picking bag B times, let's see, seven
+out of eight marbles are blue. So about
+87.5%.
+That's about 26% for this path. Since
+these are the only two ways to get blue,
+we add them up. 35% plus 26% equals
+about 61% total.
+This technique is called the law of
+total probability. The formal way to
+write it involves summing over all
+possible scenarios. But don't get caught
+up in the notation. The intuition is
+simple. Break the problem into all the
+different ways your outcome can happen.
+Calculate the probability of each path,
+then add them all up.
+Think of it like this. You're trying to
+get to a destination, but there are
+multiple routes. Each route has its own
+probability of being taken and its own
+probability of success once you're on
+it. The total probability is just the
+sum of all the root probabilities.
+This shows up everywhere. In medical
+diagnosis, you might get symptoms
+through different diseases, each with
+different base rates. In quality
+control, defective products might come
+from different machines with different
+failure rates. In finance, market
+crashes might happen through different
+economic scenarios. The law of total
+probability is your Swiss Army knife for
+complex probability problems. When
+direct calculation seems impossible, ask
+yourself, what are all the different
+ways this outcome could happen?
+Calculate each pathway, add them up, and
+you've got your answer. Now, we come to
+the crown jewel of probability theory.
+Baze rule is the mathematical foundation
+of how we learn, how AI works, and how
+we update our beliefs when we get new
+information.
+Let me start with a story that will
+shock you.
+A disease affects only 1% of the
+population.
+There's a test for this disease that's
+99% accurate.
+Meaning, if you have the disease, the
+test will be positive 99% of the time.
+And if you don't have the disease, the
+test will be negative 99% of the time.
+You take the test and it comes back
+positive.
+What's the probability you actually have
+the disease?
+Most people, including doctors, would
+guess around 99%.
+After all, the test is 99% accurate,
+right?
+The real answer will blow your mind.
+It's only about 50%.
+Let me show you why. Imagine we test
+1,000 people. Since the disease affects
+1% of the population, about 10 people
+actually have it and 990 people don't.
+Of those 10 people who have the disease,
+the test will correctly identify about
+10 of them as positive.
+But here's the kicker.
+Of the 990 people who don't have the
+disease, the test will incorrectly
+identify about 10 of them as positive,
+too.
+That's the 1% false positive rate.
+So out of everyone who tests positive,
+we have about 10 true positives and
+about 10 false positives.
+That means only about half of the
+positive tests actually indicate the
+disease.
+This is BA's rule in action. It's
+teaching us something profound.
+The accuracy of a test isn't the same as
+the probability you have the condition
+given a positive test.
+You have to account for the base rate.
+how common the condition is in the first
+place. All right, let's connect this
+back to our bag problem. Remember the
+setup. We have two bags. Bag A is
+perfectly balanced with five red and
+five blue marbles. Bag B is blue biased
+with only one red and seven blue
+marbles. We said there was a 70% chance
+we'd pick bag A and a 30% chance we'd
+pick bag. From that, we calculated the
+overall probability of drawing a blue
+marble is 61.25%.
+But now let's flip the question. If
+someone reaches into a bag and pulls out
+a blue marble, what's the probability it
+came from bag A?
+This is the exact kind of question that
+BA's rule is built to answer. Here is
+the formula in its formal glory. It says
+the probability of A given B is equal to
+the probability of B given A times the
+probability of A all divided by the
+probability of B. Now, I know that can
+look a little intimidating. So let's
+apply it to our problem because it's
+much more intuitive than it looks. We
+have three key pieces of information.
+Our prior belief, this is our starting
+point. The initial chance of picking bag
+A was 70%. The likelihood, this is the
+chance of our evidence happening given
+our prior belief. So the probability of
+drawing a blue marble from bag A is 50%.
+and the evidence. This is the total
+chance of drawing a blue marble from
+either bag, which we already figured out
+is 61.25%.
+Now, we just plug those values in. The
+probability that we have bag A, given
+that we drew a blue marble, is 50% *
+70%, all divided by 61.25%.
+That simplifies to 35% divided by
+61.25%,
+which gives us our answer, approximately
+57.1%.
+Now, notice what just happened here. We
+started out with a 70% confidence that
+we were holding bag A. But the moment we
+saw the new evidence, the blue marble,
+our confidence dropped to 57.1%.
+Why did it go down? Because drawing a
+blue marble is actually stronger
+evidence that you might be holding bag B
+since it's so heavily biased towards
+blue. Seeing blue is evidence in favor
+of bag B. If the formula feels a bit
+clunky, there's a more intuitive way to
+think about it. We calculated that the
+specific pathway of choosing bag A and
+then drawing a blue marble was 35%.
+We also knew the total chance of getting
+any blue marble was 61.25%.
+So the probability that it came from bag
+A is just the specific pathways
+probability divided by the total
+evidence. 35% divided by 61.25%.
+It's the exact same calculation.
+This right here is the essence of
+learning. You start with prior beliefs.
+You observe evidence and you update your
+beliefs accordingly.
+This isn't just for abstract thought
+experiments. It's how spam filters learn
+what is and isn't junk. It's how
+recommendation systems work. It's even
+how medical AI diagnoses diseases by
+constantly updating its beliefs as it
+gets more information.
+Baze rule is the mathematical
+formalization of rational thinking. It
+tells us exactly how much we should
+update our beliefs when we get new
+information
+in a world full of data and uncertainty.
+That makes it one of the most powerful
+tools humanity has ever discovered. All
+right, here's where probability gets
+mindbending. Sometimes you encounter
+problems where the answer depends on the
+answer itself.
+These are called recursive problems and
+they show up in some of the most elegant
+places in probability.
+Let me show you what I mean with a
+simple question that's actually quite
+deep. How many coin flips do you expect
+to need before you get your first heads?
+Now, you might think this is impossible
+to calculate because theoretically you
+could flip tails forever. The sample
+space is infinite. heads, tails, heads,
+tails, tails, heads, and so on. How do
+you add up infinitely many
+possibilities?
+Actually, it is mathematically possible
+to add up infinite sequences like this.
+Even though there are infinite outcomes,
+each has exponentially decreasing
+probability. The probability of getting
+heads on the first flip is 1/2. Tails
+then heads is 1/4. Tails, tails, then
+heads is 1/8, and so on. The infinite
+sum actually converges to exactly one,
+which makes sense since something has to
+happen eventually. But calculating that
+infinite sum directly would be tedious.
+Here's where recursion gives us an
+elegant shortcut. Instead of trying to
+enumerate every possibility, let's think
+recursively.
+Let's assume that we know the expected
+number of flips to get the first heads.
+And let's call this unknown value e.
+Here's the recursive insight. We can
+define E in terms of itself by thinking
+about what happens on the very first
+flip. You flip once. That always costs
+you exactly one flip. Now, there are two
+possibilities. Either you get heads or
+you get tails. If you get heads, which
+happens with probability 1/2, you're
+done. You needed exactly one flip total.
+If you get tails, which also happens
+with probability 1/2, you're right back
+where you started. You still need to get
+your first heads and you still expect
+that to take e more flips.
+So here's the equation. E equals one
+flip that you definitely take plus 1/2 *
+0 additional flips if you get heads plus
+12 * e additional flips if you get
+tails. That gives us e = 1 + 0 + e / 2.
+simplifying e = 1 + e / 2.
+Now we solve for e. Subtract e / 2 from
+both sides and you get e minus e / 2 =
+1. That's e / 2 = 1. So e= 2. You expect
+to need exactly two flips to get your
+first heads. Even though you could
+theoretically flip forever, the average
+is just two.
+Let's push this further.
+What if you want two heads in a row? Now
+we need to think about states. Let E be
+the expected flips starting from
+scratch.
+Let E subH be the expected additional
+flips after you've just gotten one head.
+Starting from scratch, you flip once. If
+you get tails, you're back to the start
+and expect e more flips.
+If you get heads, you're in the one head
+state and expect E subH more flips. So E
+= 1 + 1/2 * E + 1/2 * E subH.
+From the one head state, you flip once.
+If you get heads again, you're done. If
+you get tails, you're back to square 1.
+So e subh = 1 + 12 * 0 + 12 * e.
+[Music]
+From the second equation, e subh= 1 + e
+/ 2. Substituting into the first
+equation and solving, you get e= 6. You
+expect to need six flips to get two
+heads in a row.
+Recursive power.
+The power of recursion is that it turns
+impossible infinite sums into simple
+algebra.
+Instead of trying to calculate every
+possible sequence, you just identify the
+states, figure out how they connect to
+each other, and solve the resulting
+equations.
+This technique shows up everywhere in
+analyzing algorithms, in modeling random
+walks, in game theory, in queuing
+systems. Once you master recursive
+thinking and probability, you've
+unlocked a whole new level of problem
+solving power.
+All right, we've done it. We've
+completely rebuilt your understanding of
+probability from the ground up. You've
+gone from thinking probability was about
+memorizing formulas to understanding
+that it's about building mathematical
+intuition.
+You now know how to identify sample
+spaces and events. You can use set
+operations like a pro. You understand
+conditional probability and
+independence. You can handle random
+variables, joint probabilities, and
+expected values. You've seen the power
+of BA's rule, and the elegance of
+recursive thinking. But here's the
+brutal truth I told you at the
+beginning. You're going to forget this
+tomorrow.
+Not because you're not smart, not
+because the material is too hard, but
+because that's how the human brain
+works. Without practice, without
+repetition, without that systematic
+training we talked about, these concepts
+will fade back into Swiss cheese
+knowledge.
+Remember what I promised you at the
+start, the hour-long practice video, the
+systematic training, the no pain, no
+gain approach that builds lasting
+understanding. Here's what you need to
+do right now. Click on this practice
+video. This isn't optional. This is
+where the real learning happens. You're
+going to work through dozens of
+problems. You're going to feel that
+mental burn we talked about. Your brain
+is going to struggle and you're going to
+think, "This is hard." And that's
+exactly when you know you're growing.
+You practice every day. At first, it
+feels difficult, but then something
+magical happens. It gets easier and
+easier. Finally, these concepts become
+part of your mathematical intuition
+forever.
+The choice is yours. You can close this
+video and let everything fade away. Or
+you can click that practice video and
+transform how you think about
+uncertainty, data, and the random world
+around us. The concepts are in your head
+right now. But will they still be there
+tomorrow? That depends on what you do in
+the next 10 seconds. Click the practice
+video, feel the burn, build the
+intuition, transform your mathematical
+thinking forever. Your future self will
+thank you.

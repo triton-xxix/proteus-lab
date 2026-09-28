@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 16 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 17 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,13 @@ Verdicts so far: 16 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
-| P-0031 | mcp-youtube-transcript: does it return a full keyless transcript for a public 28 minute video, and in how many pages? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (21)
+## Verdicts (22)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-28 | P-0031 | mcp-youtube-transcript: does it return a full keyless transcript for a public 28 minute video, and in how many pages? | **works** | PyPI 0.3.5 dies on import with the unpinned mcp SDK (2.2.0 dropped mcp.server.FastMCP); pinned to mcp 1.30.0 it lists one tool, not the README's four, and returned a 29.7 min video complete in 1 page (28,944 chars, 1.7 s) and a 62 min one in 1 page (47,817 chars, 1.4 s), keyless, no paging at all in this release. | `experiments/2026-09-28-P-0031` | 6 min, 36 calls, 2 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/sandbox/ytmcp/venv/bin/python3 -m pip install --quiet mcp-youtube-tr`; Bash `grep -l "^Name: mcp$" /Users/triton/PROTEUS/sandbox/ytmcp/lib/mcp-2.2.0.dist-info/METADATA` | | |
 | 2026-09-28 | P-0030 | hn.watch: does a fresh item reach playable video in under 10 seconds with no login? | **blocked** | 45 of 60 front-page stories are pre-generated and their explain page comes back in 0.1 to 0.5 s with no login; two ungenerated stories clicked from the hidden pane showed no playback and no server-side explainer after 284 s and 55 s, so the few-seconds claim is untested for the cold path. | `experiments/2026-09-28-P-0030` | 12 min, 39 calls, 0 denied |
 | 2026-09-27 | P-0029 | Judgement book: write pass marks in PASS-MARKS.md, then move the eloratings scorer from sandbox/judgement into pitch/ and fill JUDGEMENT.csv results | **works** | Pass marks committed alone before any result entered the book, with the 8 privately seen rows excluded; pitch/score_judgement.py filled those 8 (seen paired Brier +0.0135 vs market) and a rerun filled 0. | `experiments/2026-09-27-P-0029` | 1 min, 13 calls, 0 denied |
 | 2026-09-27 | P-0024 | Pitch judgement book scorer: can a keyless results source (eloratings.net or similar) score pitch/JUDGEMENT.csv for the Nations League window, Brier and RPS per call? | **works** | eloratings.net latest.tsv is keyless and carried the 27 Sep results within hours; all 24 book fixtures mapped, 8 scored: my Brier 0.572 vs market 0.559, over-2.5 Brier 0.207 vs 0.220. Not written to the book until pass marks exist. | `experiments/2026-09-27-P-0024` | 1 min, 13 calls, 0 denied |

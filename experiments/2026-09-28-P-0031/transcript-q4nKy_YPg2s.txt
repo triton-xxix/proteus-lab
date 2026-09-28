@@ -1,0 +1,341 @@
+# I Built a Python Algorithm to Trade 100 Football Matches — Here's What Happened - YouTube
+If you ask any football fan on a
+Saturday morning, what bet they like,
+the majority will say that both teams to
+score will be somewhere close to the top
+of their list.
+Think about it. Nobody invites their
+mates over and says, "You know what I
+really want to watch today? A grim,
+freezing nil-nil draw where both teams
+forget how to pass."
+We want goals. We want 90th minute
+drama.
+And bookmakers know this better than
+anyone because millions of everyday
+punters blindly throw their money onto
+both teams to score yes. Because
+millions of everyday punters blindly
+throw their money onto both teams to
+score yes, sports books deliberately
+shorten those odds. They tax your
+excitement.
+This means that if you want a genuine
+mathematical edge, you have to look
+where the crowd refuses to look. Clean
+sheets. Both teams to score no.
+What I'm about to show you requires no
+coding skills. All code can be generated
+with AI. All you need to bring to the
+table are the ideas and vision.
+You will need CGM bet to follow what I'm
+doing. If you don't yet have this
+software, check the link in the
+description below for a massive lessons
+in logic discount on the software.
+Over the past month, I built an
+automated selection bot in Python to
+test the theory of both teams to score
+no across European football
+predominantly with some South American
+games thrown in. We modeled real goal
+probabilities using Dixon Coles Poisson
+regressions. Benchmarked our ideas over
+52,000 professional matches.
+Survived brutal variance swings. Hit the
+100 bet century milestone. And used
+market closing lines to prove whether we
+were actually beating the sharpest
+sports syndicates in the world. We have
+officially logged and tracked 121 trades
+to date.
+At this stage, they are just paper
+trades whilst we are tweaking.
+We are already on version seven of the
+code.
+So, let me start with a question that
+fools almost every casual better.
+Imagine team A averages about 1.4 goals
+a game and team B averages around 1.1
+goals per game.
+Is the most likely outcome that both
+teams will score?
+Most people say, of course, both teams
+average over one goal a game.
+In reality, football doesn't work like
+rolling dice. Averages are deceiving.
+Even when two decent attacking teams
+play, think about how often strange
+match states occur.
+A goalkeeper pulls up a miracle save. A
+striker hits the post from 6 yd out. Or
+the favorite scores in the 10th minute
+and parks the bus for the next 80
+minutes.
+Statistically, in a game like that,
+there's still roughly a 55 to 56% chance
+that at least one team fails to score.
+Now, look at the bookmaker odds. Because
+the public want goals, bookmakers
+routinely offer odds over two on both
+teams to score no. Think about that for
+a second.
+If a coin lands heads 55% of the time,
+and someone is willing to pay you more
+than double your money every time it
+lands on heads, you take that bet all
+day long.
+That is what quantitative trading is all
+about. Finding mispriced probability.
+Once the engine was set up, I hit a
+massive fork in the road. How should our
+model judge team attacking strength?
+Actual goals are far too rare and lucky
+to rely on. So, analysts look at shot
+counts. And that led to an interesting
+dilemma I had.
+Should we look at total shots or only
+shots on target? My initial feeling was
+total shots.
+Think about it. A team that dominates a
+match, are rattling the crossbar,
+whipping shots inches wide of the post,
+and putting the defense under siege.
+Surely that shows danger, right? Instead
+of guessing, I opened up the CGM bet
+sandbox again and ran another Python
+script, and ran a head-to-head test. And
+the data was completely ruthless.
+Total shots was almost entirely useless.
+Why?
+Over 90% of off-target shots were wild
+desperate prayers from 30 yd out
+straight into the stands.
+A model looking at total shots sees an
+energetic attack.
+Shots on target correctly identifies a
+toothless side that cannot test the
+keeper. Shots on target carried over
+three times more predictive power.
+The data set of the debate instantly.
+So, really on today's games then it's um
+goes through every single league. So, we
+can see here it's found games in 73
+leagues and there's one here from the
+Mexican league which is tomorrow. And
+it's looking whether it's shots on
+target data in the database. So, in the
+Mexican Primera Primera Division
+uh it's found 681 valid matches out of
+682.
+And there's 31.85%
+rate on that. So, we can see that
+expected goals are 2.22 for Toluca, 0.66
+for Santos Laguna.
+Uh the model probability is 55.21%
+of both teams to score no
+which is fair odds at 1.81.
+And the bookmaker odds are 2.11 on that.
+So, 16.49%
+uh value bets on that.
+And it's saying uh 0.93% of your
+bankroll which is 1/16 Kelly and we're
+capping it at 1.25%.
+So, looking at this one here
+this one actually has been played
+already today. Sao Paulo Internacional.
+Uh Sao Paulo 1.26, Internacional 0.88.
+Uh it's in the fair odds at 1.7 and the
+bookmaker odds are 1.92. So, let's see
+if we can find out how this game
+actually did finish.
+Uh we can see there it finished 1-0 to
+Sao Paulo. So, that one would have
+actually been a winner for us.
+And it goes down all of the leagues.
+And you select them all. You come down
+find the ones there's one there
+insufficient data again.
+Um
+there's one here from France League 1
+nil uh Nice against Lille.
+And what you do is you come down and
+you'd add all these to your games.
+And by the end of the day then you'll
+have a list here of all the games that
+you're looking at.
+So, how are we getting on with this
+strategy?
+Scrolling through the historical bet
+ledger,
+uh green winning cells interchange with
+red losing cells.
+Through our first 40 bets, which we call
+phase one, we were finding our feet and
+uncovered two massive leaks.
+The both teams to score yes trap,
+betting on goals was losing money hand
+over fist.
+Minus 7.3% bankroll drag because heavy
+favorites kept winning 3-0 or 4-0, and
+shutting out the other team.
+And also the long shot trap. The model
+took clean sheets at 2.6 or 3.4 in crazy
+second tier leagues, which almost always
+ended in wild shootouts.
+So, what did we do? We cut both teams to
+score yes and capped the odds at 2.25 as
+we entered phase two.
+Midweek, things took off. We went on a
+five win, three loss streak. And then
+came Friday the 18th of September.
+Bets 98 to 101.
+Friday was an absolute wipeout.
+Four bets placed, zero wins, four
+losses.
+And our bankroll drawdown hit a project
+low of 19.74%.
+This happened right as we hit the 100
+bet century milestone.
+Now, in sports betting, there are two
+golden rules.
+Never make emotional changes after one
+bad night, and never refuse to make
+structural changes when you reach your
+planned 100 bet review milestone.
+I opened up Python and conducted a full
+statistical autopsy on all 101 bets.
+When we look at why Friday failed, the
+data revealed three exact structural
+leaks.
+Leak one, the 1-1 score magnet.
+Three of our four throwaway losses
+finished exactly 1-1.
+In defensive low-scoring divisions like
+French League 2 or Italian Serie B,
+standard math sees low goals and screams
+clean sheet, but in real life, teams
+score, sit back, and the other team
+equalizes.
+1-1 is the single most common scoreline.
+League two, sector concentration risk.
+On Friday, we had three bets in exactly
+the same league kicking off at exactly
+the same minute, 7:00 p.m. in French
+League Two.
+When that round of fixtures played, the
+entire card died together.
+League three, fragile sub 1.85 prices.
+Historically, when we backed clean
+sheets below 185, our win rate was
+terrible.
+The short odds, a single 90th minute
+deflection destroys your bankroll
+without enough payout upside to
+compensate.
+We didn't scrap the model, however. We
+built phase three.
+Strict odds between 1.85 and 2.20.
+A mandatory 10% edge hurdle.
+Total isolation between kickoffs and
+defensive 1/16 Kelly staking. On
+Saturday, September 19th, the phase
+three engine outputted a 20-match card
+across Europe. We executed every single
+trade mechanically. Here's what happened
+on the pitch.
+So, you can see we've had this a good
+series of winners here at good prices as
+well.
+Uh in total, out of 20 matches, the card
+finished with 11 wins and nine losses.
+A solid 55% strike rate.
+Now, if you are betting short price
+favorites, 55% barely covers the
+bookmaker's commission.
+Because of the high average odds,
+Saturday generated 2.64 flat units, a
+17.03%
+single day return on investment, and
+reclaimed nearly three full percentage
+points of bankroll drawdown in 10 hours.
+But Saturday's financial profit wasn't
+even the most exciting part.
+The real shock came when I ran our
+closing line value audit.
+Remember, closing line value is the gold
+standard of sports trading. It measures
+whether your price was better than the
+final price right before kickoff after
+millions of pounds of sharp syndicate
+money have moved the market.
+Look at the progression across our
+settled trades.
+Phase one, the calibration stage.
+This beat the closing value 25% of the
+time
+and we were getting bad prices.
+Phase two is the refinements. We beat
+the closing line 29 and a half percent
+of the time
+and the drift had flattened out.
+Phase three, which is our precision
+architecture,
+we're now beating at 63.6% of the time.
+14 out of the 22 matches in this phase
+saw the bookmaker shorten their odds
+after our model signaled them.
+Even on bets that conceded late
+equalizers, we were constantly buying
+assets at massive discounts to their
+fair value.
+When a quantitative model beats closing
+price this often,
+long-term mathematical probability is
+highly likely.
+So, looking at our position overall,
+we're currently sitting on 121 trades.
+We've survived two major drawdowns,
+plugged three major leaks,
+engineered phase three,
+and proved we are now getting back
+towards break even. I say this is at at
+the moment it is a losing profit,
+but we're now going in the right
+direction.
+If you want to transform from a casual
+better to an analytical sports trader,
+remember these four rules. Stop betting
+with the herd.
+Recreation of money creates an emotional
+tax on goals.
+True price is hidden in clean sheets.
+Isolate true signal over volume.
+In 52,000 matches, shots on target was
+the only shooting metric that clearly
+predicted future goals.
+Raw shots are mostly noise.
+Size for the drawdown, not the streak.
+Fractional Kelly and hard exposure caps
+allowed us to survive one win 60 feet
+Monday and a zero win four defeat Friday
+without ever threatening the bankroll.
+Trust closing line value.
+Judge your process by whether you beat
+the closing line price before kick-off,
+not by an unlucky deflection in the 93rd
+minute.
+So, hopefully you can see from this
+video how powerful the Python sandbox in
+CGM bets is.
+We've demonstrated several scripts build
+a story about how the market is
+behaving.
+If you appreciate 100% transparent
+data-driven sports trading breakdowns
+without fake tips to hype, hit that
+subscribe button.
+Let me know in the comments what market
+you want us to model next, and I'll
+catch you in the next video.
+Thank you for watching.

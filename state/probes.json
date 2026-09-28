@@ -643,16 +643,21 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-09-28",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-28T23:45:58+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-28T23:52:28+0100",
+   "note": "PyPI 0.3.5 dies on import with the unpinned mcp SDK (2.2.0 dropped mcp.server.FastMCP); pinned to mcp 1.30.0 it lists one tool, not the README's four, and returned a 29.7 min video complete in 1 page (28,944 chars, 1.7 s) and a 62 min one in 1 page (47,817 chars, 1.4 s), keyless, no paging at all in this release.",
+   "artefacts": [
+    "experiments/2026-09-28-P-0031"
+   ],
+   "minutes": 6,
+   "calls": 36,
+   "denied": [
+    "Bash `/Users/triton/PROTEUS/sandbox/ytmcp/venv/bin/python3 -m pip install --quiet mcp-youtube-tr`",
+    "Bash `grep -l \"^Name: mcp$\" /Users/triton/PROTEUS/sandbox/ytmcp/lib/mcp-2.2.0.dist-info/METADATA`"
+   ],
    "luke": false
   }
  ]

@@ -1,0 +1,782 @@
+# Probability and Statistics: Overview - YouTube
+welcome back I'm Steve Brunton a
+professor at the University of
+Washington in Seattle and I am super
+excited to introduce a new short course
+on probability and statistics this is
+one of my absolute favorite topics in
+all of mathematics because it is one of
+the most powerful tools we have to
+describe the complexity we observe in
+the real world so probability and stats
+is up there with differential equations
+calculus and linear algebra in terms of
+the most kind of foundational tools and
+it's a important in the modern era now
+that we're thinking about data and
+machine learning this is really one of
+the foundational mathematical topics so
+I've been looking forward to teaching
+this class for over a decade um I was
+actually fortunate to learn probability
+and statistics when I was a teenager I
+was a 17-year-old kid in Texas uh at the
+University of North Texas in Denton and
+I learned probability and stats from one
+of the true greats kind of alltime
+greats Dr John Quintanilla uh in fact I
+still have his uh lecture notes here so
+this is my uh bound copy of his lecture
+notes my wife uh has told me that I've
+had this since before I met her this is
+one of my most prize possessions uh and
+Dr Quintanilla's notes were really and
+lectures were incredible and Brilliant
+and changed my life and so a lot of what
+I'm going to tell you about in this
+course is going to kind of Channel um
+hopefully some of that inspiration I got
+when I learned it from Dr Q uh 20 years
+ago okay so I'm super excited to launch
+into this this is going to be a short
+course about 10 hours of probability and
+about 10 hours of Statistics starting
+with pretty introductory um essential
+material and then getting into special
+Advanced topics pretty quickly so about
+half and half intermediate and advanced
+topics probability and stats about 10
+hours each um and I'll probably keep
+adding videos and lectures along the way
+because there's so many interesting
+topics you could just you know there's
+there's no end to the interesting uses
+um and properties of probability and
+stats so in this introductory overview
+video I'm going to give you some
+examples uh of how we use probability in
+the real world I'll give you an outline
+of what this course is going to look
+like especially the first half on
+probability um again I hope you are as
+excited about this as I am this is a new
+tool set in Your Arsenal if you haven't
+seen this before that's going to open up
+a ton of possibilities for modeling the
+complex real world around us so let's
+jump in um let's start with some
+examples I think examples are how I
+always uh I always think about this so
+let's talk about some examples of what
+we model in the world with uh with
+probability and again I'm going to keep
+using this word uncertainty the real
+world is complex it's uncertain and it's
+uncertain specifically in my ability to
+measure everything and to model all of
+the physics and and behavior and so
+that's what I mean by uncertainty if
+something is too complex to model or
+measure then it's very good candidate
+for building a probability model of so
+maybe the first uh kind of classic
+example I think of is going from you
+know gas molecules to descriptions like
+temperature and entropy so going from
+something like a gas you know we have 10
+to the
+23 um gas molecules in avagadro's number
+in a mole of you know of air or nitrogen
+or oxygen and that's too many degrees of
+freedom first off to measure I can't
+measure the position and velocity of
+every molecule of air in this room um
+and I don't want to and it's also too
+complicated to simulate all of those
+particles and so we have built this
+incredibly efficient elegant beautiful
+description of this very complex
+physical system this gas in terms of a
+few thermodynamic properties the
+temperature uh the entropy and so on and
+so forth you know density and so this is
+one of the successes of all of modern
+physics one of the kind of real uh
+Cornerstone successes of modern physics
+is this thermodynamic description of gas
+in terms of these simplified statistical
+Quant quties just a few numbers
+characterize this you know
+astronomically complex system okay
+that's a great example of something to
+model probabilistically you know you
+could model this with a boltzman
+distribution or Maxwell's distribution
+things like that to get um these simple
+statistical
+quantities um and you know fast forward
+about a hundred years we're still trying
+to build these kinds of thermodynamic
+closures for systems like turbulence um
+so a turbulent fluid um like you know
+the the air over the wing of an airplane
+or in your coffee when you stir it that
+is also a very very complex system with
+so many degrees of freedom so many
+particles um that we can't measure all
+of them with certainty and we can't
+describe their motion their behavior um
+it's too complicated and so turbulence
+is a great candidate again for
+probabilistic and statistical
+models um one of the classics again even
+before uh our thermodynamic description
+of gases is the notion of measurement
+error so we have been modeling
+measurement
+error um measurement error so uh if you
+do some experiment you're trying to
+measure you know uh the acceleration of
+gravity that's a great one or the speed
+of light or the mass of an electron or
+the charge of an electron if you're
+doing some physical measurement there's
+going to be error associated with that
+so if you repeat that measurement 30
+times you're going to get 30 slightly
+different values and it turns out that
+often times that measurement error
+behaves according to this normal or
+gausian distribution which is a
+probability
+distribution um so this is actually in
+my mind one of the Genesis points of
+modern probability and statistics llas
+um so our our great French mathematician
+llas any of you who know me know that I
+you know am a huge fan of llas from
+differential equations llas was also
+essentially one of the Pioneers one of
+the founders of modern probability and
+statistics so he developed a lot of the
+theory that we use today and the
+nomenclature the perspective the
+philosophy um really to understand this
+notion of measurement error in physical
+systems to start quantifying the
+uncertainty in our models of the real
+world uh and in fact you know beian
+statistics is one of the most important
+topics in statistics it was discovered
+by Baye and a couple of years later laas
+independently discovered it and
+massively extended it generalized it
+popularized it I think Bean statistics
+should be called Bay LL statistics um
+but again modeling measurement error
+which tends to be a gausian distributed
+random variable was a huge kind of
+Cornerstone um event in probability Lelo
+brought this into the kind of modern
+era um other things that are important
+if you like control theory like I do or
+dynamical systems you'll remember the
+Colman filter the Colman filter um is a
+great example of merging kind of
+Dynamics and control with a
+probabilistic perspective
+again if I'm taking measurements of a
+system to do feedback control those
+measurements have error we typically
+assume a gusan we also assume that my
+system is being kind of externally
+forced by things that are beyond my
+ability to model uncertainty maybe I'm
+trying to build a cruise controller for
+an automobile but I don't know if it's
+windy outside or if it's raining or if
+I'm going uphill or downhill those
+uncertainties are often modeled
+probabilistically in things like a
+common filter and this is going to very
+naturally segue into the topic of of
+stochastic differential equations where
+my differential equation itself is
+forced with a probability distribution
+or a random variable that has a
+distribution and so SD is a topic I'm
+going to cover a lot later this is one
+of those special topics for later but
+super super important and interesting
+for Dynamics and control um and the list
+goes on and on there's so many great
+examples um I think weather and human
+behavior are really good ones um so
+weather and let's just say human
+behavior is a catchall um for tons of
+complexity
+behavior um sometimes good behavior
+sometimes bad behavior typically
+interesting and
+complex um and it's interesting that if
+you think back to the very very you know
+earliest history of of human thought and
+communication the you know earliest oral
+traditions and written Traditions people
+have always tried to wrestle with the
+uncertainty in the complex real world
+including human behavior weather
+phenomena you know is the weather going
+to be favorable for tomorrow's battle is
+the weather going to be favorable for
+planting my crops for this year's crop
+yield um you know things like that those
+are the kinds of things people have been
+wrestling with this massive uncertainty
+for Millennia from the dawn of human um
+kind of tradition we have been modeling
+uncertainty and I think it's fascinating
+that one of the ways we model
+uncertainty have modeled uncertainty
+historically we call this divination
+essentially are things like astrology or
+augury or te reading um reading the tea
+leaves stirring up your tea and reading
+the tea leaves um rolling the bones of
+animals and seeing how they scatter to
+predict something about our uncertain
+real world it's quite fascinating that
+one of the ways humans have grappled
+with uncertainty and the probabilistic
+nature of the complex real world is to
+actually try to analyze it and
+understand it with another random
+process like rolling the bones of
+animals or how tea leaves dry in a cup
+of tea or things like that pyromancy um
+how the flame patterns move there's
+hundreds of words for different types of
+divination it's one of the most common
+themes throughout all of human history
+is trying to Grapple with our observed
+uncertainty of the real world of the
+complexity of the real world like
+weather and human behavior by trying to
+simplify it into a simple or random
+process that we can maybe try to analyze
+or and understand like rolling the bones
+or something like that fascinating I
+think of this you know all the time when
+I think about probability and statistics
+there's a rich history and tradition um
+and again llas did a a huge service kind
+of making this a mathematical
+quantifiable science and a lot of the
+the thought leaders at that time really
+changed kind of our our world from this
+astrology to you know scientific
+astronomy kind of alchemy to chemistry
+uh you know divination to probability
+and statistics huge sea change in how we
+think about the world whe
+is inherently uh chaotic it's a chaotic
+dynamical system and this is one of the
+things I really want to to point out is
+that these probability and statistics
+systems often times actually are
+fundamentally deterministic they're not
+actually random if I think about a coin
+This Is My Fair coin if I flip this coin
+this technically is not a random system
+this is governed by force equals mass
+time acceleration f equals ma it has
+wind resistance mass inertia it's under
+the effect of gravity um this is a
+deterministic physical system that
+technically I could model on a computer
+with equations and do a pretty good job
+of predicting but as far as I'm
+concerned as a human Observer there is
+too much uncertainty in my measurements
+in my ability to model this in my head
+so for me a coin flip is a random or
+uncertain uh event that I have to model
+probabilistically okay and I can use
+this uh to Generate random numbers kind
+of
+um because it it does have this kind of
+chaotic Randomness in the the wind
+resistance and its motion and so a lot
+of these systems turbulence gas Dynamics
+weather phenomenon those are actually
+fundamentally deterministic dynamical
+systems they're they are predictable
+often the chaos in that dynamical system
+means that my prediction Horizon is is
+finite and after some point for all
+intents and purposes I have to model it
+with probability models so there's this
+fine line between deterministic uh
+systems of that I could model if I had
+enough information and us actually
+having to model them probabilistically
+because there's so much uncertainty in
+our physics models in our uh
+measurements of the initial conditions
+of things like that good okay um so now
+I'm going to give you an overview of
+what we're actually going to learn in
+this first kind of 10hour block on
+probability and I'll hint at some of the
+ways this is going to tie to statistics
+these are intimately connected so you
+can't really separate these um so I'm
+going to give you the outline of the
+topics here what I really want to do
+first is is point out just kind of a
+definition here so
+probability is essentially assuming that
+you have a model of your system so you
+assume um that you have kind of a known
+probability distribution you
+assume a
+known uh probability distribution and
+I'll tell you what a probability
+distribution is in a minute it's thing
+it's something like a gaussian something
+where uh you expect to find your
+variable at this value with some
+probability it's a probability
+distribution uh so you assume your
+probity distribution is known and you
+try to say something about future data
+you might observe so you essentially uh
+don't know the samples from the future
+samples are
+unknown in statistics we often call our
+data samples so the data from the future
+is unknown in this Fair coin I have a
+model of its probability there's a 50%
+chance of flipping heads but if I but I
+don't know what will actually happen
+what the exact sequence will be if I
+flip 10 uh coins in a row so probability
+will give me some way of quantifying the
+likelihood of seeing let's say five
+heads out of 10 flips or seven heads out
+of 10 flips or 10 heads out of 10 flips
+so I don't know the future and I'm
+trying to say something quantifiable
+about what the future might look like
+based on a known probability
+distribution statistics is the flip side
+of that where we actually um the data is
+known the samples are known so we have
+data data is known so let's say I flip
+the coin 10 times or 100 times and I
+measure I observe that system and now
+we're trying to say something about the
+probability distribution so the
+probability uh distribution is
+unknown and so these are really flip
+sides of the same coin they're dual
+problems um in probability we're going
+to start with ility because that it
+gives us the family of models that we're
+going to then use when we have data so
+we're going to learn about probability
+and how to model probabilistic systems
+and then once we have that mathematics
+under our belt then when we collect data
+we can say really really precise things
+about that data using uh kind of these
+probability models we learned earlier so
+let's get into it um so things you're
+going to learn in this class I'm going
+to break this into a few key chunks or
+sections that I thought were nice break
+points we're going to start with
+essentially um introductory probability
+so this is really kind of uh
+introduction intro to
+probability and introduction to
+probability involves things like um
+building intuition and doing a lot of
+examples what is the chance of of
+flipping seven heads in 10 coin flips
+we'll be able to precisely quantify that
+how many types of poker hands can I deal
+off of a 52 card deck um if I roll three
+dice what's the chance that they add up
+the numbers add up to 13 okay those are
+the kinds of things that we're going to
+to look at initially this might seem
+like a slow introduction if you already
+have some background and probability you
+can probably skip this or you know watch
+this at one and a half speed but really
+this is going to be examples and
+intuition examples and
+intuition and especially this notion
+that probability is really if you boil
+it down it's all about counting sets of
+things that can happen counting sets
+it's it's an advanced way of counting uh
+and
+grouping events into things that can
+happen in different ways and Counting
+them so we're going to build a lot of
+intuition and give a lot of examples
+here this will be pretty rapid actually
+if you think about the thermodynamic
+closure of gases when you learned this
+in school you might have learned about
+the you know canonical Ensemble or the
+boltman distribution that's essentially
+a fancy way of counting the different
+ways molecules can be arranged and and
+uh and turning that counting into a
+notion of entropy okay so a lot of
+intuition here and then very quickly
+we're going to get into the meat we're
+going to get into an abstraction That's
+essential the abstraction of a random
+variable so uh maybe I'll do this again
+in blue so this is the abstraction of a
+random
+variable a random variable uh we're
+going to call this X and functions of
+random
+variables uh and distributions um let's
+say and distributions this is the key
+Point okay good um and so a random
+variable just like in regular
+Mathematics algebra and calculus you
+have a variable that can take a specific
+value in probability we now have random
+variables that have a probability of
+taking a certain value so this random
+variable we now say um we would
+essentially say that we have some random
+variable X and it has a
+probability of taking on some specific
+value given some parameters um that that
+specify that system so if I have a
+gausian if I have a normally distributed
+random variable that I'm using to
+represent my measurement error it
+probably has a mean an average value a
+mean and maybe a standard deviation okay
+those are two numbers two parameters
+Theta that I need to specify this
+probability distribution and that tells
+me the probability of finding my random
+variable at a particular value V okay
+very useful generalization of this
+notion of a variable and a function from
+calculus now you have variables and
+functions in probability and statistics
+and those variables have a probability
+associated with finding them in a
+certain value but you can do still do
+things like you can take the square of
+this you can take the log of x you can
+plot you can do calculus on this very
+very useful notion of random variable
+and we're going to build up a bunch of
+distributions probab distributions that
+describe different kinds of events so
+for example um we're going to have the
+beri uh random variable this is a
+probability
+distribution that describes the
+probability of let's say coin flips
+systems that have two outcomes you know
+heads or tails success or failure up or
+down beri random variables is the
+distribution the the the probability
+distribution to describe those kinds of
+events if I have a bunch of coin flips
+if I flip you know 10 or 12 coins in a
+row and I want to know how many heads do
+I get that's something called a binomial
+distributed random variable binomial
+very very very very important um
+distribution we'll use a lot it's the
+sum of a bunch of independent beri
+random variables and if I have a large
+sample size a large number of coin flips
+in my binomial distribution it starts to
+tend towards a normal distribution a
+normally distributed random variable and
+that's actually kind of where this
+notion of gausian measurement error
+comes in gausian and normal are the same
+thing they they're the same name for the
+same distribution sorry different names
+for the same distribution is if my
+measurement error comes from a bunch of
+different factors you know like the
+temperature and the wind and all of
+these different factors that kind of add
+up to give me a measurement error it
+turns out that if you add up a bunch of
+random variables very often their sum
+starts to look normally distributed even
+if individually they have a weird
+distribution them eles so measurement
+error there's this like
+uncanny uh fact that measurement error
+tends to often look gausian and that's a
+very fundamental probab probability
+property um that we'll talk about later
+called the central limit theorem so
+large uh n limit the limit of of a large
+number of events in a binomial
+distribution tends to be normal if they
+are rare events then they tend to be
+Plus on these are both limits of the
+binomial distribution in the large n
+limit Plus on for rare events like um
+light bulbs failing or the radioactive
+um emissions you know alpha particle
+emissions from a radioactive element
+that's a Pon distributed random variable
+these are two of the most important uh
+probability distributions we'll talk
+about they're used everywhere across the
+board in probability and statistics all
+the time super foundational uh stuff and
+then a bunch of other ones we'll talk
+about things like um the exponential
+distribution um exponential
+distribution exponential distribution is
+tells me the probability of waiting
+times between Pon events like
+radioactive decay if I have alpha
+particles being emitted what's the
+probability that it'll be 0.5 seconds
+until the next one that is an
+exponentially distributed random
+variable and dot dot dot dot dot dot dot
+there's dozens of these I'll probably
+tell you about 10 of them the 10 most
+useful ones that you'll use all the time
+in probability and
+statistics um good and so this is a
+model of the likelihood of finding my
+random variable at a value given some
+parameters that characterize that system
+statistics is going to flip it on its
+head and given data we're going to find
+the probability of the parameters of my
+distribution again that's the that's the
+statistics problem but but today we're
+talking mostly about
+probability good um and sometimes the
+distribution is known I'll make a little
+note of this uh
+sometimes
+sometimes the distribution
+is
+unknown for lots of complex Real World
+Systems the probability distribution we
+believe there is one like in turbulence
+but it might not be known that is
+essentially a machine learning problem
+so when we don't know the distribution
+but we have data and we're trying to
+learn the distribution from data that's
+essentially a machine learning problem
+so that's how this really connects to
+machine learning is we're learning these
+distribution functions from measurement
+data for much more complex systems like
+turbulence and weather and human
+behavior Behavior things like that okay
+good uh let's keep going so uh topic
+three big big topic here is um now we're
+going to talk now that we have random
+variables and distributions we're going
+to talk a lot more about functions of
+random variables um things like the
+expectation value so the expected
+value um the expected
+value what like literally what value do
+I expect my variable to take if I have
+this distribution what's the expected
+value what's the variance um or standard
+deviation of that value like how much
+spread do I have in my prediction uh
+things like the median these are robust
+predictions that are related to the mean
+essentially how do I quantify this
+probability distribution in a few
+numbers that tells me the essential
+things I need to know that's very much
+like this Gas Distribution going to
+temperature and entropy there is a
+distribution for my gas but there are a
+few numbers like the expected value and
+the stand deviation that I really need
+to know um to say a lot about that
+system so this is also going to be super
+important to tie back to statistics
+because when we have data these are the
+things we're actually going to be
+estimating about our probability
+distribution often we're going to be
+estimating the mean the variance the
+median things like that from data to say
+things about our probability
+distribution okay um good and then I'm
+going to kind of end the course um on
+something that is really near and dear
+to my heart which is the central limit
+theorem Central limit theorem and it's
+one of the most important topics again
+in all of probability and it's a
+Cornerstone of Statistics so this is
+really where we start transitioning from
+probability to
+statistics it says that if I have a
+bunch of random variables that have the
+same distribution and I add up those
+random variables or I average those
+random variables that new average
+quantity start starts to look like a
+normally distributed random variable
+regardless of what the original
+distribution was we use this all the
+time in statistics when you take large
+samples of data you can estimate things
+like their average value using the
+central limit theorem um it's used in
+every single one of these examples in
+some way or another so the central limit
+theorem it's so important I'll actually
+just give you kind of an idea if I have
+a bunch of random variables um let's say
+x i I can be 1 to n so I've got like a
+bunch of
+data then the average of this literally
+we call it xbar it's called The the
+sample mean the average it's you know 1/
+n * the sum of all of these variables or
+all this data this quantity this sum of
+random variables tends to be normally
+distributed normally distributed with
+some mean uh and variance that's what we
+call the mean invariance this tends to
+look like a normally distributed random
+variable
+regardless of what these distri how this
+data was distributed this data could be
+distributed as a Pon binomial
+exponential you name it some weird
+machine learning distribution and if I
+add up those variables if I take their
+average it starts to look like a normal
+distribution again that's where this
+gausian measurement error kind of comes
+from is the central limit theorem and
+this is the Cornerstone uh of kind of
+modern probability Theory and modern
+statistics and in fact this is where
+we're going to very naturally segue into
+the next set of lectures on
+statistics um and I'll just give you a
+tiny sneak peek of what we're going to
+see in statistics um this is all kind of
+flipping the probability on its head so
+instead of having a model of a coin and
+then saying things about what's likely
+to happen in the future in statistics
+I'll have data from a from coin flips
+I'll have 10 coin flips or 100 coin
+flips and I'll start asking the
+questions is this a Fair coin what's the
+probability of heads can estimate that
+from the data I have so um there's going
+to be things like hypothesis testing um
+hypothesis testing this is um you know
+if I run a drug trial let's say I have a
+clinical trial for a new cancer
+treatment does that cancer drug work or
+not that's a hypothesis that I would
+test with data I collect data from a a
+trial and I use some models from
+probability to say very quantifiable
+things like I'm 95% confident that this
+drug does work or doesn't work that's
+what we mean by hypothesis testing um
+other things we'll be able to do things
+called survey sampling um survey
+sampling if I have a large population
+like the population of the United States
+you know 300 plus million people if I
+take a small sample of maybe a thousand
+people and I I ask them questions or I
+measure their height can I get
+information about the larger population
+from that small sample that's very very
+closely related to these topics variance
+standard deviation expected value and
+Central limit theorem but again this is
+based on data I'm trying to say
+something about the probability
+distribution and so here we had you know
+a probability of my data given some
+parameters of the distribution like the
+mean and the variance statistics is all
+about finding the probability of the the
+parameters given the data what's the
+most likely model what's the most likely
+model parameters given the data this is
+the statistics problem and this Theta
+doesn't have to be the parameters of a
+named distribution these could be the
+par parameters of a neural network that
+I'm using to model an unknown
+distribution in machine learning we
+model probability distributions using
+things like neural networks the weights
+of the nodes the weights of that neural
+network are these parameters I'm trying
+to estimate from my data I'm trying to
+learn my parameters from my data that's
+fundamentally a statistics
+problem uh and then the list goes was on
+and on and on dot dot dot dot dot you
+know fitting uh
+distributions uh estimating
+parameters and so on and so forth and
+eventually you know getting to this
+machine learning idea so How likely you
+know are our parameters given our data
+that's a statistics problem it's very
+intimately related to beijan statistics
+there is this um very useful notion of
+basian Statistics where you can
+incorporate prior information and data
+to get a better uh statistical or
+probabilistic model and that's really
+really commonly used in machine learning
+today as this kind of notion of
+statistics and especially beian
+statistics where you mix data and some
+prior knowledge about what your
+distribution might look like okay this
+is the thumbnail sketch the mile high
+overview of the first half of this new
+course on probability and statistics
+we're going to start with probability
+build our intuition build the
+mathematical models these are the tools
+we're going to use when we then have
+data and we're trying to say statistical
+things from that data I'm super excited
+to walk you through this I've been
+waiting for this for literally over a
+decade um and I hope you get as much
+value out of this as I do thank you
