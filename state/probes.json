@@ -1,5 +1,5 @@
 {
- "next_id": 33,
+ "next_id": 34,
  "items": [
   {
    "id": "P-0001",
@@ -670,6 +670,28 @@
    "source": "desk",
    "needs": "",
    "after": "",
+   "est_minutes": 30,
+   "added": "2026-09-28",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-28T23:53:12+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-28T23:56:21+0100",
+   "note": "Built and loaded (launchctl bootstrap rc 0 via the script): 6 pages every 2 min with trimmed first-sight and 5-minute snapshots for pump-fun and pumpswap pools; hand poll of 10 pages drew 429 from page 6, so 6 pages 4 s apart with one retry; first launchd poll returned 120 rows in 33 s with one 429 recovered. Runs until 29 Sep 22:54 UTC; scored by P-0033 after 30 Sep.",
+   "artefacts": [
+    "experiments/2026-09-28-P-0032"
+   ],
+   "minutes": 3,
+   "calls": 22,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0033",
+   "title": "Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-09-30",
    "est_minutes": 30,
    "added": "2026-09-28",
    "status": "open",

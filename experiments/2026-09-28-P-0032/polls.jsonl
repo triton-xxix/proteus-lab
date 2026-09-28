@@ -1,0 +1,2 @@
+{"ts": "2026-09-28T22:54:36Z", "rows": 100, "new": 100, "snaps": 156, "pending": 0, "last_page_all_new": 0, "secs": 17.0, "errors": ["page 6: HTTP Error 429: Too Many Requests", "page 7: HTTP Error 429: Too Many Requests", "page 8: HTTP Error 429: Too Many Requests", "page 9: HTTP Error 429: Too Many Requests", "page 10: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T22:56:08Z", "rows": 120, "new": 20, "snaps": 36, "pending": 0, "last_page_all_new": 1, "secs": 33.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
