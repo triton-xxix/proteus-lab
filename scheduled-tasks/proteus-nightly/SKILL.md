@@ -36,7 +36,9 @@ Read the tail of `/Users/triton/PROTEUS/grinder/LEDGER.csv` and note new entries
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming --days 8`
 (refreshes data, refits, commits predictions for fixtures that do not yet have one; zero new rows is normal when the fixtures file has not refreshed) then
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/score.py`
-(scores finished matches). Note counts for the run log.
+(scores finished matches). Note counts for the run log. Then
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/score_judgement.py`
+(scores the judgement book, blind and anchored columns, from eloratings.net results; it never rewrites a filled row). Do not add judgement calls in a scheduled run: blind and anchored calls are made interactively with `pitch/judgement.py` and committed in order, blind before odds.
 
 ## 4. Commit the pre-registrations
 
