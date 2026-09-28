@@ -1,5 +1,5 @@
 {
- "next_id": 32,
+ "next_id": 33,
  "items": [
   {
    "id": "P-0001",
@@ -279,16 +279,20 @@
    "after": "2026-09-28",
    "est_minutes": 30,
    "added": "2026-09-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": []
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-28T23:52:33+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-28T23:53:08+0100",
+   "note": "First long-running job held: 284 polls at 5 min over 24h, 0 errors, stopped and unloaded itself (launchctl finds no service). 9,910 pools, 7,326 pump.fun launches (a floor: the 40-row feed saturated on 129 of 284 polls) and 757 pumpswap graduations, about 1 in 10, upper bound since untraded launches never list; matched by name, median launch-to-graduation 11 min, p90 4.8 h. Scored in step 5 tonight; write-up in the 27 Sep folder.",
+   "artefacts": [
+    "experiments/2026-09-27-P-0014"
+   ],
+   "minutes": 0,
+   "calls": 7,
+   "denied": [
+    "Bash `launchctl print gui/501/com.proteus.p0014`"
+   ]
   },
   {
    "id": "P-0015",
@@ -658,6 +662,26 @@
     "Bash `/Users/triton/PROTEUS/sandbox/ytmcp/venv/bin/python3 -m pip install --quiet mcp-youtube-tr`",
     "Bash `grep -l \"^Name: mcp$\" /Users/triton/PROTEUS/sandbox/ytmcp/lib/mcp-2.2.0.dist-info/METADATA`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0032",
+   "title": "pump.fun poller v2: 10 pages a poll at 2 min, plus each new pump-fun pool's attributes at first sight, so launches are not missed (P-0014 saw half) and the backlog question about minute five gets data",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-09-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
    "luke": false
   }
  ]

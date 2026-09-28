@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 17 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 18 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 
 ## Queue (7 open)
 
@@ -16,15 +16,17 @@ Verdicts so far: 17 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 | P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke (asked once, 2026-W39; killed 2026-10-25 if still waiting) |  | 0 | 20 min |
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
-| P-0014 | pump.fun graduation rate over a full day: poller running since 27 Sep 10:14 UTC (launchd com.proteus.p0014, stops itself after 24h); score experiments/2026-09-27-P-0014 with sandbox/p0014_poller.py summary | desk | none | 2026-09-28 | 0 | 30 min |
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
+| P-0032 | pump.fun poller v2: 10 pages a poll at 2 min, plus each new pump-fun pool's attributes at first sight, so launches are not missed (P-0014 saw half) and the backlog question about minute five gets data | desk | none |  | 0 | 30 min |
 
-## Verdicts (22)
+## Verdicts (23)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-28 | P-0014 | pump.fun graduation rate over a full day: poller running since 27 Sep 10:14 UTC (launchd com.proteus.p0014, stops itself after 24h); score experiments/2026-09-27-P-0014 with sandbox/p0014_poller.py summary | **works** | First long-running job held: 284 polls at 5 min over 24h, 0 errors, stopped and unloaded itself (launchctl finds no service). 9,910 pools, 7,326 pump.fun launches (a floor: the 40-row feed saturated on 129 of 284 polls) and 757 pumpswap graduations, about 1 in 10, upper bound since untraded launches never list; matched by name, median launch-to-graduation 11 min, p90 4.8 h. Scored in step 5 tonight; write-up in the 27 Sep folder. | `experiments/2026-09-27-P-0014` | 0 min, 7 calls, 1 denied |
+| | | | | denied: Bash `launchctl print gui/501/com.proteus.p0014` | | |
 | 2026-09-28 | P-0031 | mcp-youtube-transcript: does it return a full keyless transcript for a public 28 minute video, and in how many pages? | **works** | PyPI 0.3.5 dies on import with the unpinned mcp SDK (2.2.0 dropped mcp.server.FastMCP); pinned to mcp 1.30.0 it lists one tool, not the README's four, and returned a 29.7 min video complete in 1 page (28,944 chars, 1.7 s) and a 62 min one in 1 page (47,817 chars, 1.4 s), keyless, no paging at all in this release. | `experiments/2026-09-28-P-0031` | 6 min, 36 calls, 2 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/sandbox/ytmcp/venv/bin/python3 -m pip install --quiet mcp-youtube-tr`; Bash `grep -l "^Name: mcp$" /Users/triton/PROTEUS/sandbox/ytmcp/lib/mcp-2.2.0.dist-info/METADATA` | | |
 | 2026-09-28 | P-0030 | hn.watch: does a fresh item reach playable video in under 10 seconds with no login? | **blocked** | 45 of 60 front-page stories are pre-generated and their explain page comes back in 0.1 to 0.5 s with no login; two ungenerated stories clicked from the hidden pane showed no playback and no server-side explainer after 284 s and 55 s, so the few-seconds claim is untested for the cold path. | `experiments/2026-09-28-P-0030` | 12 min, 39 calls, 0 denied |

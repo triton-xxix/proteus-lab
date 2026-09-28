@@ -1,0 +1,303 @@
+{
+ "window_utc": [
+  "2026-09-27T10:14:25Z",
+  "2026-09-28T10:12:29Z"
+ ],
+ "hours": 23.97,
+ "polls": 284,
+ "polls_with_errors": 0,
+ "poll_gap_seconds": {
+  "min": 304.0,
+  "median": 305.0,
+  "max": 308.0
+ },
+ "rows_per_poll": [
+  [
+   40,
+   284
+  ]
+ ],
+ "polls_saturated_all_rows_new": 129,
+ "pools_total": 9910,
+ "by_dex": [
+  [
+   "pump-fun",
+   7326
+  ],
+  [
+   "meteora-damm-v2",
+   873
+  ],
+  [
+   "pumpswap",
+   757
+  ],
+  [
+   "meteora-dbc",
+   615
+  ],
+  [
+   "stonkfun",
+   126
+  ],
+  [
+   "bags-fm",
+   47
+  ],
+  [
+   "fluxbeam",
+   29
+  ],
+  [
+   "raydium-launchlab",
+   28
+  ],
+  [
+   "raydium",
+   25
+  ],
+  [
+   "orca",
+   25
+  ],
+  [
+   "meteora",
+   18
+  ],
+  [
+   "moonshot",
+   15
+  ],
+  [
+   "raydium-clmm",
+   14
+  ],
+  [
+   "manifest",
+   7
+  ],
+  [
+   "letsbonk-fun",
+   4
+  ],
+  [
+   "moonit",
+   1
+  ]
+ ],
+ "launches_pump_fun": 7326,
+ "graduations_pumpswap": 757,
+ "raw_ratio_pct": 10.33,
+ "in_window_launches": 7298,
+ "in_window_graduations": 754,
+ "graduations_matched_to_a_window_launch_by_name": 385,
+ "matched_pct_of_window_launches": 5.28,
+ "first_half_launches": 3656,
+ "first_half_launches_graduated_by_end": 249,
+ "first_half_pct": 6.81,
+ "lag_minutes_launch_to_graduation": {
+  "n": 385,
+  "p10": 0.0,
+  "median": 10.9,
+  "p90": 285.5
+ },
+ "launch_names_used_more_than_once": 849,
+ "launches_per_hour_utc": [
+  [
+   "00",
+   354
+  ],
+  [
+   "01",
+   287
+  ],
+  [
+   "02",
+   259
+  ],
+  [
+   "03",
+   327
+  ],
+  [
+   "04",
+   239
+  ],
+  [
+   "05",
+   355
+  ],
+  [
+   "06",
+   261
+  ],
+  [
+   "07",
+   323
+  ],
+  [
+   "08",
+   313
+  ],
+  [
+   "09",
+   288
+  ],
+  [
+   "10",
+   242
+  ],
+  [
+   "11",
+   305
+  ],
+  [
+   "12",
+   263
+  ],
+  [
+   "13",
+   308
+  ],
+  [
+   "14",
+   276
+  ],
+  [
+   "15",
+   329
+  ],
+  [
+   "16",
+   286
+  ],
+  [
+   "17",
+   367
+  ],
+  [
+   "18",
+   347
+  ],
+  [
+   "19",
+   297
+  ],
+  [
+   "20",
+   309
+  ],
+  [
+   "21",
+   344
+  ],
+  [
+   "22",
+   312
+  ],
+  [
+   "23",
+   307
+  ]
+ ],
+ "graduations_per_hour_utc": [
+  [
+   "00",
+   30
+  ],
+  [
+   "01",
+   31
+  ],
+  [
+   "02",
+   35
+  ],
+  [
+   "03",
+   36
+  ],
+  [
+   "04",
+   32
+  ],
+  [
+   "05",
+   25
+  ],
+  [
+   "06",
+   40
+  ],
+  [
+   "07",
+   30
+  ],
+  [
+   "08",
+   34
+  ],
+  [
+   "09",
+   33
+  ],
+  [
+   "10",
+   30
+  ],
+  [
+   "11",
+   37
+  ],
+  [
+   "12",
+   31
+  ],
+  [
+   "13",
+   40
+  ],
+  [
+   "14",
+   32
+  ],
+  [
+   "15",
+   35
+  ],
+  [
+   "16",
+   33
+  ],
+  [
+   "17",
+   24
+  ],
+  [
+   "18",
+   26
+  ],
+  [
+   "19",
+   30
+  ],
+  [
+   "20",
+   27
+  ],
+  [
+   "21",
+   37
+  ],
+  [
+   "22",
+   18
+  ],
+  [
+   "23",
+   28
+  ]
+ ],
+ "launches_per_hour_mean": 304.5,
+ "graduations_per_hour_mean": 31.5
+}
