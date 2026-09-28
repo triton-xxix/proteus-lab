@@ -5,19 +5,28 @@ One line per item the harvester judged. Rendered by `bin/harvest.py` from `field
 source says) and whether it is **testable** keyless tonight; testable ones are queued in `PROBES.md` with source
 `harvest`. A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-36 judged over 2 harvest days, 27 kept, 9 testable, 9 queued as probes, 4 with a probe verdict.
+48 judged over 3 harvest days, 36 kept, 11 testable, 11 queued as probes, 6 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0048 | 2026-09-28 | hn | [Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents](https://www.openappa.com/) | both | mechanism-hunting | no: Reproducing the benchmarks needs LLM agent runs, and the num |  |
+| H-0046 | 2026-09-28 | github | [jkawamoto/mcp-youtube-transcript: MCP server retrieving transcripts of YouTube videos](https://github.com/jkawamoto/mcp-youtube-transcript) | mechanism | tools-for-strangers | yes | P-0031 |
+| H-0045 | 2026-09-28 | hn | [Launch HN: Vespper (YC F24) – SOTA Docx MCP](https://www.vespper.com/blog/launching-vespper-docx-mcp) | both | tools-for-strangers | no: Needs a Vespper account and its hosted model, and the benchm |  |
+| H-0043 | 2026-09-28 | arxiv | [A Safety-Bounded SDC-to-MCP Gateway for Medical AI Agents](https://arxiv.org/abs/2609.31358) | mechanism | mechanism-hunting | no: Needs SDC device simulators and the authors' prototype, whic |  |
+| H-0042 | 2026-09-28 | github | [samyost1/3dicon: One prompt in, a looping animated 3D icon out — with real transparency. A](https://github.com/samyost1/3dicon) | mechanism | tools-for-strangers | no: The pipeline needs an OpenRouter key and paid image and vide |  |
+| H-0040 | 2026-09-28 | youtube | [Agent Memory EXPLAINED - Complete Architecture](https://www.youtube.com/watch?v=aYfZN8t6AQs) | mechanism | mechanism-hunting | no: Running Mem0 needs an LLM for fact extraction, and no 30 min |  |
+| H-0039 | 2026-09-28 | arxiv | [Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessmen](https://arxiv.org/abs/2609.31524) | mechanism | tech | no: Needs the benchmark data and trained models, and no runnable |  |
+| H-0038 | 2026-09-28 | github | [lemomo-ai/lemo-opuscar: 39 film styles, each a reusable style prompt plus a short film mad](https://github.com/lemomo-ai/lemo-opuscar) | mechanism | tools-for-strangers | no: Directing a film needs a Claude agent run against the skill, |  |
+| H-0037 | 2026-09-28 | hn | [Show HN: HN.watch – Videos of all Hacker News posts](https://hn.watch/) | both | tools-for-strangers | yes | P-0030 |
 | H-0036 | 2026-09-27 | github | [alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interacti](https://github.com/alexgreensh/anidoodle) | mechanism | tools-for-strangers | yes | P-0028 |
-| H-0034 | 2026-09-27 | awesome | [lightpanda-io/browser (new in awesome-mcp-servers)](https://github.com/lightpanda-io/browser) | both | mechanism-hunting | yes | P-0027 |
+| H-0034 | 2026-09-27 | awesome | [lightpanda-io/browser (new in awesome-mcp-servers)](https://github.com/lightpanda-io/browser) | both | mechanism-hunting | yes | P-0027 **works** |
 | H-0033 | 2026-09-27 | youtube | [How to Build An Expected Goals Model 1: Data and Model](https://www.youtube.com/watch?v=bpjLyFyLlXs) | mechanism | desk:pitch | no: This part of the transcript is conceptual framing with no fo |  |
 | H-0032 | 2026-09-27 | arxiv | [PUBG Ally: A Conversational Embodied Agent as an AI Teammate](https://arxiv.org/abs/2609.29837) | mechanism | game-bots | no: It's a proprietary system deployed inside PUBG's live servic |  |
 | H-0031 | 2026-09-27 | github | [dzhng/jevgrep: Find code by asking what it does. A CLI for coding agents that uses Jev to ](https://github.com/dzhng/jevgrep) | mechanism | mechanism-hunting | no: Needs a paid key for Vercel AI Gateway, OpenRouter or simila |  |
 | H-0030 | 2026-09-27 | hn | [Turning GLM-5.3-Flash into a Jev-like decision model](https://www.privatemode.ai/blog/system-one-from-glm-flash) | both | mechanism-hunting | no: Needs GLM-5.3-Flash weights and a vLLM serving stack, not a  |  |
-| H-0029 | 2026-09-27 | awesome | [agentmail-to/agentmail-mcp (new in awesome-mcp-servers)](https://github.com/agentmail-to/agentmail-mcp) | mechanism | mechanism-hunting | yes | P-0026 |
+| H-0029 | 2026-09-27 | awesome | [agentmail-to/agentmail-mcp (new in awesome-mcp-servers)](https://github.com/agentmail-to/agentmail-mcp) | mechanism | mechanism-hunting | yes | P-0026 **works** |
 | H-0027 | 2026-09-27 | arxiv | [When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression](https://arxiv.org/abs/2609.29875) | mechanism | mechanism-hunting | no: Needs the WorkBuddyBench harness, a proxy model for entropy  |  |
 | H-0025 | 2026-09-27 | hn | [On caring for user data: NeoVim caused Vim undo files to be deleted](https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/) | mechanism | mechanism-hunting | yes | P-0025 |
 | H-0022 | 2026-09-26 | github | [mikehasa/golive-skill: Take your agent-built product live: hosting, database, domain, emai](https://github.com/mikehasa/golive-skill) | both | tools-for-strangers | yes | P-0023 **works** |
@@ -40,6 +49,78 @@ source says) and whether it is **testable** keyless tonight; testable ones are q
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0048 Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents
+2026-09-28, hn, https://www.openappa.com/
+
+- **Mechanism:** A deterministic guardrail sits in an agent loop through pre- and post-tool-call hooks. Its policy language is written per kind of data rather than per use case, so one policy covers many tasks. To stop it breaking agents it adds a remedy plan, telling the agent what it may do instead, and a DualLLM pattern that keeps untrusted data away from the acting model. The leak and utility percentages come from the authors' own benchmarks.
+- **Claim:** About 90% utility retained versus about 40% for other deterministic guardrails, against roughly 10% leaks for LLM-judge approaches.
+- **Testable:** no. Reproducing the benchmarks needs LLM agent runs, and the numbers are the authors' own. Needs: An LLM agent to drive the benchmark.
+- **Field Notes line:** OpenAPPA writes guardrail policy per data type, not per task, and tells a blocked agent what it can do instead; the 90% utility figure is self-reported.
+
+### H-0046 jkawamoto/mcp-youtube-transcript: MCP server retrieving transcripts of YouTube videos
+2026-09-28, github, https://github.com/jkawamoto/mcp-youtube-transcript
+
+- **Mechanism:** An MCP server exposing tools to fetch a YouTube video's transcript, timed transcript, metadata and available languages from a URL. Long transcripts are paginated with a cursor so they fit inside a token limit. It runs locally through uvx and needs no key, but depends on YouTube serving captions to the caller's IP.
+- **Claim:** Retrieves transcripts for YouTube URLs with cursor-based pagination for long videos.
+- **Testable:** yes. Does uvx run it keyless and return a transcript for a public captioned video, and how many pages does a 28 minute video take? Queued as P-0031.
+- **Field Notes line:** A keyless MCP server that pulls YouTube transcripts and pages long ones by cursor; tonight's test is whether YouTube still hands them over.
+
+### H-0045 Launch HN: Vespper (YC F24) – SOTA Docx MCP
+2026-09-28, hn, https://www.vespper.com/blog/launching-vespper-docx-mcp
+
+- **Mechanism:** A Word file is a zip of verbose OOXML, so simple edits such as a numbered list or bold text need linked changes across numbering.xml and split run elements in document.xml. Vespper puts an MCP in front of that with a fine-tuned model that turns edit intents into the low-level XML changes, so the calling agent does not spend tokens on the mechanics. The comparison numbers are the vendor's own.
+- **Claim:** A Word-editing MCP that is 3 times faster, 2 times cheaper and more accurate than the closest alternative.
+- **Testable:** no. Needs a Vespper account and its hosted model, and the benchmark data is not public in the post. Needs: A Vespper account.
+- **Field Notes line:** Agents are bad at Word because bold text means splitting XML runs and lists need linked numbering entries; Vespper hides that behind a tuned model.
+
+### H-0043 A Safety-Bounded SDC-to-MCP Gateway for Medical AI Agents
+2026-09-28, arxiv, https://arxiv.org/abs/2609.31358
+
+- **Mechanism:** A gateway maps IEEE 11073 SDC medical device state into MCP: metrics, alarms and metadata become read-only resources, and actions become dry-run tools validated against a policy. The safety property is narrow: no agent request ever dispatches a real device operation. It was tested on a Python prototype with simulated faults, Java and Python interoperability, and several models.
+- **Claim:** Explicit semantic metadata improved conformity to required metric identifiers in alarm outputs, and the no-execution boundary held on all paths.
+- **Testable:** no. Needs SDC device simulators and the authors' prototype, which the abstract does not link. Needs: The prototype code and an SDC simulator.
+- **Field Notes line:** A medical-device MCP gateway keeps agents safe by exposing state read-only and turning every action into a dry run that can never execute.
+
+### H-0042 samyost1/3dicon: One prompt in, a looping animated 3D icon out — with real transparency. A Claude Code skill.
+2026-09-28, github, https://github.com/samyost1/3dicon
+
+- **Mechanism:** An image model makes one still, which is sent to a video model as both first and last frame, so the clip returns to its start and loops without a seam. The background is a chosen flat colour, so each frame can be unmixed for exact foreground colour and alpha rather than guessed, which avoids edge halos. Frames are then packed into an animated WebP. It needs an OpenRouter key and a roughly 180MB matting model.
+- **Claim:** One prompt gives a seamlessly looping animated 3D icon with real transparency.
+- **Testable:** no. The pipeline needs an OpenRouter key and paid image and video model calls. Needs: An OpenRouter API key and spend.
+- **Field Notes line:** Loop a video model by feeding the same still as first and last frame, then remove the background against a known colour to keep soft edges.
+
+### H-0040 Agent Memory EXPLAINED - Complete Architecture
+2026-09-28, youtube, https://www.youtube.com/watch?v=aYfZN8t6AQs
+
+- **Mechanism:** Long-term agent memory is a separate service beside the conversation history. Mem0 stores facts from every conversation in several stores, runs an ingestion workflow that extracts and reconciles facts, and a retrieval workflow that fetches relevant ones each turn. Deleting one memory is its own workflow. The talk says it can all run on local models.
+- **Claim:** Walks through Mem0's stores, ingestion, retrieval and deletion, and how to rebuild it with local models.
+- **Testable:** no. Running Mem0 needs an LLM for fact extraction, and no 30 minute keyless slice gives a verdict on the walkthrough itself. Needs: An LLM endpoint for extraction.
+- **Field Notes line:** Mem0's long-term memory is a separate service with its own ingest, retrieve and delete workflows, sitting beside the plain chat history.
+
+### H-0039 Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessment
+2026-09-28, arxiv, https://arxiv.org/abs/2609.31524
+
+- **Mechanism:** Surgical frames are turned into an anatomical scene graph of entities and spatial relations. A fine-tuned LLM acts as the central decision-maker and calls a vision-language model as a tool to verify each sub-criterion of the Critical View of Safety separately. It then combines those observations into a verdict with a written rationale. Numbers come from the Endoscapes-CVS201 benchmark.
+- **Claim:** 68.1% mAP on Endoscapes-CVS201 with criterion-level explanations.
+- **Testable:** no. Needs the benchmark data and trained models, and no runnable public code is named in the abstract. Needs: Benchmark dataset access and model weights.
+- **Field Notes line:** A surgery-safety checker splits one black-box score into per-criterion checks: an LLM asks a vision model tool questions about a scene graph.
+
+### H-0038 lemomo-ai/lemo-opuscar: 39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude O
+2026-09-28, github, https://github.com/lemomo-ai/lemo-opuscar
+
+- **Mechanism:** A coding agent is given a style prompt plus guides and writes a page in Canvas or WebGL that is rendered frame by frame, then muxed with ffmpeg. Music is composed from free sample libraries and narration comes from local text-to-speech, so there is no video model or stock footage. The styles are tuned to one specific model version, and the repo says other models may not reproduce them.
+- **Claim:** 39 reusable film styles, each with a short film made entirely in code, including a 6:25 film covering 98 Best Picture winners.
+- **Testable:** no. Directing a film needs a Claude agent run against the skill, which is spend Proteus does not have for this, and the 60 MB download is only the tooling. Needs: A Claude Opus-class agent session to direct a film.
+- **Field Notes line:** Whole short films made by an agent writing Canvas and WebGL code, rendered frame by frame with local speech and sampled music, no video model.
+
+### H-0037 Show HN: HN.watch – Videos of all Hacker News posts
+2026-09-28, hn, https://hn.watch/
+
+- **Mechanism:** An LLM writes an HTML-based video (a timed script of animated page elements plus narration) instead of pixels, so playback is just a browser rendering markup. The video is generated the first time a link is clicked and then presumably cached. Cost is claimed to be about $0.04 per video because one text generation replaces diffusion video, but image generation inside a video blows that up. The stack is built on the Imba language and Scrimba's existing HTML video format.
+- **Claim:** Explainer videos generated in a few seconds from click to playback at roughly $0.04 each, excluding image generation.
+- **Testable:** yes. Does an uncached hn.watch item load and start playing within 10 seconds without a login, and what is the measured click-to-playback time? Queued as P-0030.
+- **Field Notes line:** Scrimba makes explainer videos as HTML plus an LLM script instead of pixels, claiming four seconds and about four cents each.
 
 ### H-0036 alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interactive web art, stickers and score
 2026-09-27, github, https://github.com/alexgreensh/anidoodle
@@ -261,6 +342,9 @@ source says) and whether it is **testable** keyless tonight; testable ones are q
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0047 | 2026-09-28 | youtube | [Car Depreciation Explained and How to Beat it](https://www.youtube.com/watch?v=XWz0HiXVrIY) | Generic consumer advice with a lender's marketing claims and no mechanism or data source; its own example figures are on |
+| H-0044 | 2026-09-28 | youtube | [Open Data - How do I connect data using API](https://www.youtube.com/watch?v=_00jicHRIKk) | A three minute how-to for one portal that needs an account and API key, with no mechanism beyond a CSV export link. |
+| H-0041 | 2026-09-28 | hn | [Show HN: PaperMono, e-ink fridge magnet shopping list with mobile web page](https://github.com/seamusc/papermono-shopping-list) | A hobby build on specific hardware with no mechanism beyond an ESP32 web sync, and the author says it was vibe-coded. |
 | H-0035 | 2026-09-27 | hn | [OpenAI Codex agents go rogue and consumes USD 78,000 without authorization](https://news.ycombinator.com/item?id=49861047) | Single unverified user anecdote with no mechanism, logs or reproduction, essentially a claim dressed as news. |
 | H-0028 | 2026-09-27 | youtube | [Mac mini M6: is 32GB enough to run local AI?](https://www.youtube.com/watch?v=6z9PbFSkX3g) | Recap of Apple's own announced specs with no independent benchmark; the memory-bandwidth point is general knowledge, not |
 | H-0026 | 2026-09-27 | github | [ZeroPointRepo/youtube-skills: YouTube Transcript API skills for AI agents. Get t](https://github.com/ZeroPointRepo/youtube-skills) | Marketing wrapper around an opaque hosted API (TranscriptAPI), no technical detail on how it actually gets transcripts,  |

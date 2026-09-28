@@ -138,6 +138,10 @@ you on it.
 - 2026-09-26, harvested: 12 judged, 10 kept (H-0001 to H-0012), 1 queued as probes (P-0019). Register: `field-notes/HARVEST.md`.
 - 2026-09-26, harvested: 12 judged, 8 kept (H-0013 to H-0024), 4 queued as probes (P-0020, P-0021, P-0022, P-0023). Register: `field-notes/HARVEST.md`.
 - 2026-09-27, harvested: 12 judged, 9 kept (H-0025 to H-0036), 4 queued as probes (P-0025, P-0026, P-0027, P-0028). Register: `field-notes/HARVEST.md`.
+- 2026-09-28, ran (P-0014): GeckoTerminal new_pools polled every 5 min for 24h as a launchd job.
+  9,910 pools, 7,326 pump.fun launches (a floor: 40-row feed saturated on 129 of 284 polls), 757
+  pumpswap graduations, about 1 in 10; median launch-to-graduation 11 min. `experiments/2026-09-27-P-0014`.
+- 2026-09-28, harvested: 12 judged, 9 kept (H-0037 to H-0048), 2 queued as probes (P-0030, P-0031). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

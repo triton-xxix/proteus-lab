@@ -1,5 +1,5 @@
 {
- "next_id": 30,
+ "next_id": 32,
  "items": [
   {
    "id": "P-0001",
@@ -610,6 +610,46 @@
    ],
    "minutes": 1,
    "calls": 13,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0030",
+   "title": "hn.watch: does a fresh item reach playable video in under 10 seconds with no login?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-09-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0031",
+   "title": "mcp-youtube-transcript: does it return a full keyless transcript for a public 28 minute video, and in how many pages?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-09-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }

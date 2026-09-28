@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 16 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
 
-## Queue (7 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,8 @@ Verdicts so far: 16 works, 0 broken, 2 blocked, 2 not worth it. Killed: 2.
 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
+| P-0030 | hn.watch: does a fresh item reach playable video in under 10 seconds with no login? | harvest | none |  | 0 | 15 min |
+| P-0031 | mcp-youtube-transcript: does it return a full keyless transcript for a public 28 minute video, and in how many pages? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (20)
 
