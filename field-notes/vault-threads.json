@@ -1,0 +1,642 @@
+{
+  "source": "TRITON-CORE/Research/verdicts.yaml (threads), rendered by proteus-seen-export.cjs; one way, do not edit",
+  "statuses": {
+    "open": "go and investigate",
+    "intel": "understand it and how it is detected, never operate it",
+    "adopted": "the vault already does this",
+    "dead": "leave it"
+  },
+  "count": 70,
+  "threads": [
+    {
+      "date": "2026-09-27",
+      "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Pay-per-view clipping through Content Rewards",
+      "note": "The commodity volume game natejbiz warns against; income claims in the kit are unevidenced",
+      "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+    },
+    {
+      "date": "2026-09-27",
+      "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "A cheap starter kit used as a qualifier that routes buyers to a private sales call",
+      "note": "The 5 dollar price puts a card on file; the real offer lands on the one-to-one, and the guarantee covers budget allocation, not earnings",
+      "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+    },
+    {
+      "date": "2026-09-27",
+      "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "Media-buying commission taken as a share of a brand's ad budget",
+      "note": "Named as the kit's second angle at 20 percent of a 100k budget; not assessed in the write-up",
+      "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+    },
+    {
+      "date": "2026-09-27",
+      "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "Flat monthly editing retainer for businesses already producing content",
+      "note": "Priced at two to six thousand dollars a month; deliverable with the existing stack and no purchase",
+      "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+    },
+    {
+      "date": "2026-09-27",
+      "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "AI model courses titled for OnlyFans but guaranteed against Fanvue",
+      "note": "OnlyFans requires a verified real person in the content; Fanvue permits declared AI creators, so the name and the guarantee point at different platforms",
+      "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md"
+    },
+    {
+      "date": "2026-09-27",
+      "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "Low lifetime course price that depends on paid generation-app subscriptions",
+      "note": "77 euros up front, but required subscriptions make the real cost about 950 euros a year",
+      "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md"
+    },
+    {
+      "date": "2026-09-27",
+      "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Deepfake techniques applied to real people in explicit content",
+      "note": "Creating sexually explicit images of a real person without consent is a UK criminal offence at creation; age verification also required since July 2025",
+      "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Mass clipping of big personalities for per-view payouts",
+      "note": "A volume game in a crowded 2026 market, not worth the time",
+      "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Post-production for businesses that have long-form content but cannot cut it into short-form",
+      "note": "The stack already owns the expensive half, HyperFrames, avatars, ElevenLabs, captions and compose; a trades client is the live test case",
+      "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "Cryptonary 100x Chaser",
+      "kind": "service",
+      "status": "intel",
+      "theme": "One sales page template with psychographic persona variants making contradictory promises at one price",
+      "note": "Found by reading the JavaScript bundles; one variant promises asymmetric plays while another warns against risking what you cannot lose",
+      "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "Cryptonary 100x Chaser",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Trading performance quoted only at peak prices with no entry and exit record",
+      "note": "No audited record, figures drift between their own bundles; a peak gain says nothing about what a subscriber actually made",
+      "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "Cryptonary 100x Chaser",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Cryptoasset promotions to UK consumers missing mandatory risk warnings",
+      "note": "No FCA risk warning, cooling-off, capital-at-risk line or geoblock, all required under the October 2023 financial promotions regime",
+      "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "Cryptonary 100x Chaser",
+      "kind": "service",
+      "status": "open",
+      "theme": "Learning crypto research from a source with an independently verifiable track record",
+      "note": "Nobody in the vault has named such a source yet; the test is audited entry and exit pairs, not peak figures",
+      "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "EasyInfluencers.ai",
+      "kind": "service",
+      "status": "intel",
+      "theme": "AI influencer vendors selling undetectable fake people with consistent appearances",
+      "note": "Same shape as Butter and its antidetect cloud phones; the feature is what platforms try to stop, and DMCC practice 25 bans traders posing as consumers",
+      "where": "TRITON-CORE/Research/links/2026-09-26-easyinfluencers.md"
+    },
+    {
+      "date": "2026-09-26",
+      "subject": "EasyInfluencers.ai",
+      "kind": "service",
+      "status": "open",
+      "theme": "Consistent AI character content with clear AI disclosure",
+      "note": "The character may entertain; it must not recommend products while appearing to be an ordinary person",
+      "where": "TRITON-CORE/Research/links/2026-09-26-easyinfluencers.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "@alliecatbuildai reel (comment CLAUDE for the free tutorial)",
+      "kind": "account",
+      "status": "adopted",
+      "theme": "Three-signal filter for comment-bait reels: keyword for a freebie, bare disclaimer, no verifiable output",
+      "note": "Kept in the write-up as The pattern; any two signals and the link is binned without a full assessment",
+      "where": "TRITON-CORE/Research/links/2026-09-24-alliecatbuildai-reel-eromify.md (and \"The pattern\")"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "@alliecatbuildai reel (comment CLAUDE for the free tutorial)",
+      "kind": "account",
+      "status": "intel",
+      "theme": "Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied income",
+      "note": "A near 1 to 1 like to comment ratio marks the automation; CAP Code and ASA rulings make both advertiser and influencer liable",
+      "where": "TRITON-CORE/Research/links/2026-09-24-alliecatbuildai-reel-eromify.md (and \"The pattern\")"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Gifting product to creators and hoping they post about it",
+      "note": "Works only for physical consumer products; 94 percent of marketers gift but only 19 percent see meaningful advocacy, and ROI figures are vendor-published",
+      "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "Partnership ads run through a local client's own social handle",
+      "note": "Local trust sits with their page; permission-based, legal and sellable as a service rather than a trick",
+      "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "Give free work away first, then pay to amplify whichever piece performs",
+      "note": "Applies seed-then-amplify to audits and scans already given away, instead of picking the case study in advance",
+      "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "DMCC compliance review for small firms using testimonials and incentivised reviews",
+      "note": "Rules changed under DMCC Act 2024 and most local firms do not know; can be priced today with nothing to build",
+      "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Butter (hellobutter.io)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Auto-posting one asset across many accounts through antidetect cloud phones",
+      "note": "Vendor documents the evasion; X, TikTok, Instagram and YouTube rules name the behaviour; agency risk",
+      "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Butter (hellobutter.io)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "How account farms and antidetect cloud phones work and how platforms detect them",
+      "note": "The write-up already carries the platform rule dates; defender's view only",
+      "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Butter (hellobutter.io)",
+      "kind": "service",
+      "status": "open",
+      "theme": "Generating many platform-native variants (hooks, colour grades, overlays) from one filmed asset",
+      "note": "What transfers; the vault has a renderer but no variant loop",
+      "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Butter (hellobutter.io)",
+      "kind": "service",
+      "status": "open",
+      "theme": "Per-post CPM tracked per account feeding back into what gets made next",
+      "note": "The one idea the write-up says to steal",
+      "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Higgsfield AI (higgsfield.ai)",
+      "kind": "service",
+      "status": "open",
+      "theme": "Photoreal moving footage of a subject you cannot film, one consistent face and a directed camera move",
+      "note": "The one real gap it fills; belongs inside the existing HeyGen and Tavus bake-off as one Starter month, not a new lane",
+      "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Higgsfield AI (higgsfield.ai)",
+      "kind": "service",
+      "status": "adopted",
+      "theme": "Composing, captioning, voicing and still-image generation for short video",
+      "note": "HyperFrames owns compose and captions, ElevenLabs owns audio, Gemini owns stills; Higgsfield replaces none of them",
+      "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Higgsfield AI (higgsfield.ai)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Running client material through a video service that trains on inputs and outputs by default",
+      "note": "Only Enterprise gets contractual no-training and consumer opt-out is deletion, which cannot untrain; nothing under client NDA goes through it",
+      "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Cloning a trending paid community's copy, images, name or member counts",
+      "note": "Copying material is CDPA 1988, branding is trade marks or passing off, invented member counts or reviews are banned under DMCC Act 2024",
+      "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "A community whose product is teaching members to sell the same community",
+      "note": "Edges into pyramid promotional scheme territory, a banned practice",
+      "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "Niche paid community on owned material, borrowing only a proven model and price point",
+      "note": "Copying a model and price is lawful; needs honest metrics, correct disclaimers and VAT",
+      "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Paid UGC creator work (via @oliver.hustles reel)",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Filming UGC clips yourself for brands via marketplaces",
+      "note": "A beginner month is low hundreds, the failure mode is no briefs, and JoinBrands lists AI video at 5 dollars against a 25 dollar human floor",
+      "where": "TRITON-CORE/Research/links/2026-09-24-paid-ugc-oliver-hustles-reel.md"
+    },
+    {
+      "date": "2026-09-24",
+      "subject": "Paid UGC creator work (via @oliver.hustles reel)",
+      "kind": "scheme",
+      "status": "open",
+      "theme": "Buying real human UGC clips from marketplaces and reselling them inside a client retainer",
+      "note": "Clips cost 25 to 60 dollars; a real human face is the one asset HyperFrames, avatars and ElevenLabs cannot produce",
+      "where": "TRITON-CORE/Research/links/2026-09-24-paid-ugc-oliver-hustles-reel.md"
+    },
+    {
+      "date": "2026-09-21",
+      "subject": "@tradewithjarvisss Instagram reel",
+      "kind": "account",
+      "status": "intel",
+      "theme": "Anonymous trading account demos an unnamed app so viewers must DM to learn what it is",
+      "note": "Matches the Instagram to DM to Telegram pattern documented by F-Secure and Bitdefender; no firm name means no regulator warning-list check is possible",
+      "where": "TRITON-CORE/Research/links/2026-09-21-tradewithjarvisss-reel.md"
+    },
+    {
+      "date": "2026-09-21",
+      "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+      "kind": "repo",
+      "status": "open",
+      "theme": "Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to Gemini",
+      "note": "Frames via ffmpeg and captions or Whisper fallback is the only mechanism; Gemini reads public YouTube URLs on its free tier, no install",
+      "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md"
+    },
+    {
+      "date": "2026-09-21",
+      "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+      "kind": "repo",
+      "status": "dead",
+      "theme": "Two models reading the same video and reconciling into confirmed, single-source or conflict lines",
+      "note": "Neither model knows which read is right; a tutorial fails as code correct on screen and wrong in your stack, so you still run it",
+      "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md"
+    },
+    {
+      "date": "2026-09-21",
+      "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+      "kind": "repo",
+      "status": "intel",
+      "theme": "Prompt injection through video transcripts, on-screen text and captions addressed to reading agents",
+      "note": "The reel caption told any reading agent to install the tool; piping a stranger's transcript into an agent with a shell is an injection surface",
+      "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md"
+    },
+    {
+      "date": "2026-09-21",
+      "subject": "TCFX / Trading Central FX (@amirscentral)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Free trading community paid per lot its members trade through an offshore introducing-broker rebate",
+      "note": "Its own Trustpilot reply admits a required 1-lot trade triggers commission; broker discloses 75.2 percent of retail accounts lose; on the FCA Warning List twice",
+      "where": "TRITON-CORE/Research/links/2026-09-21-tcfx-amirscentral.md"
+    },
+    {
+      "date": "2026-09-21",
+      "subject": "TCFX / Trading Central FX (@amirscentral)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Educational-only disclaimers used to front investment promotions under UK financial promotion law",
+      "note": "The s21 FSMA test is whether a communication induces investment activity; a broker referral link does, so the disclaimer is no defence",
+      "where": "TRITON-CORE/Research/links/2026-09-21-tcfx-amirscentral.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Build a mock-up site for the prospect and send a 90-second Loom after a two-line permission ask",
+      "note": "Shows the fix rather than describing the gap; consent-first sequencing is workable under PECR",
+      "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Door-knocking local trades with a spec site on a phone",
+      "note": "Corey Ganim measured two bookings from two door-knocks against none from 13 cold-call conversations; outside PECR",
+      "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "Google Maps sweep of local trades qualified on no site, weak site or few reviews",
+      "note": "The agency lane already runs this sweep with a Companies House gate instead of a ChatGPT prompt",
+      "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Cold Facebook DMs, SMS and WhatsApp to sole traders",
+      "note": "Electronic mail under PECR reg 22 needs prior consent; the videos ignore UK rules",
+      "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation governance",
+      "note": "Legitimises the rails, not any operator; Agent402 uses the official packages",
+      "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Hashcash proof of work as a rate limiter buying one free tool call",
+      "note": "Signed single-use challenge per tool, CPU finds a nonce; not mining, but no client-side ceiling or timeout",
+      "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "MCP servers launched with npx -y on a floating version tag",
+      "note": "Fetches the newest release every start, so any audit is void on update; pin the version",
+      "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Third-party MCP catalogue text injected into the agent's tool list each session",
+      "note": "Remote-controlled text lands in context; treat it as untrusted data, a high bar on a machine with secrets",
+      "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+      "kind": "company",
+      "status": "open",
+      "theme": "UK shape of selling booking software through trade job software and profile booking buttons",
+      "note": "Unknown which job software UK trades run; ServiceM8 and SimPro are not it; Reserve with Google needs partner approval",
+      "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+      "kind": "company",
+      "status": "dead",
+      "theme": "The booking and lead-capture widget itself as a product",
+      "note": "Weeks of work with AI tooling and already cloned by Leva Relay, Chime Labs, LANA, Johnni.ai, Fully Booked",
+      "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+      "kind": "company",
+      "status": "intel",
+      "theme": "Launch site carrying template placeholder social proof",
+      "note": "Site claimed thousands of businesses and 1,560 reviews in 2024 template copy; revenue figure is the founder's word only",
+      "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Templates, thumbnails, overlays and pre-launch guides sold or published to creators before a big game launch",
+      "note": "Fastest lane with no publisher IP exposure; guides and search sites need three to six months so the window is short",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles",
+      "note": "The sanctioned version of paid mods; unsanctioned paid mods breach Take-Two policy and draw legal threats",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "Account boosting and grey-market sale of game accounts and in-game items",
+      "note": "Needs handed-over credentials, breaches terms, gets accounts banned; Take-Two is suing PlayerAuctions over it",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Real-money betting site on video game outcomes",
+      "note": "Criminal in the UK without a Gambling Commission licence; the FUT Galaxy prosecution is the precedent",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Invo (invoapp.com referral link)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Copy-trading crypto perpetual futures on Hyperliquid",
+      "note": "Crypto derivatives banned for sale to UK retail since January 2021; unregulated, no FSCS",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 4)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Invo (invoapp.com referral link)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Multi-tier referral scheme paying on recruits' trading revenue, spread through referral links",
+      "note": "Four tiers, uncapped, retroactive; whoever sends the link is paid, so promotion is optimised for recruitment",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 4)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Jev AI (TypeSafe AI)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "A cheap model call returning a typed judgement inside code",
+      "note": "Haiku already does this at pennies for the Flywheel triage, lead scoring and social rails, with reasoning and text",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Jev AI (TypeSafe AI)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Swapping a small chat model for a typed-decision model by asking the same single question",
+      "note": "Independent 2,000-email test scored 62.6 percent against Haiku at 81.3; speed and price are real but accuracy fell, and Haiku costs pennies at low volume",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Jev AI (TypeSafe AI)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Decomposing one classification into several narrow questions with weights fitted on a labelled set",
+      "note": "Reached 95 percent on held-out emails; needs a labelled training set and pays off at millions of calls, model-agnostic technique",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Keza Studio \"10 app templates\"",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "App planning documents sold as templates",
+      "note": "Ten generic PRD-style files, no code; free starters like shadcn/ui, Vercel templates and Expo give working code",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Keza Studio \"10 app templates\"",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Phone-gated lead magnet to free workshop to done-for-you app build agency",
+      "note": "How a UK agency packages a founder funnel; SMS-verified phone gate is a deliberately higher-value capture",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Keza Studio \"10 app templates\"",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "Homepage logo wall mixing platform integrations with client logos",
+      "note": "Instagram, Slack, X and YouTube shown beside apparent clients as social proof",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Potion Alpha (Orangie) and trader Kimchi",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Paid trading community whose credibility rests on self-reported PnL screenshots and a legend it interviewed itself",
+      "note": "No working leaderboard found; the trader legend traces to an interview by the community's own founder",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 5)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "Potion Alpha (Orangie) and trader Kimchi",
+      "kind": "service",
+      "status": "open",
+      "theme": "Public on-chain leaderboards as the check on any trader's claimed record",
+      "note": "Kolscan, GMGN, Solana Tracker and Dune are the genuine ones; none belong to the paid community",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 5)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "pump.fun",
+      "kind": "service",
+      "status": "open",
+      "theme": "Tooling, leaderboards and data products built around a token launchpad",
+      "note": "The only lane that is not extraction from traders; the launchpad acquires these firms, as with Kolscan and Padre",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "pump.fun",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Sniping bots and copy trading on new memecoin launches",
+      "note": "Zero-sum latency race against 200 plus funded bots; copiers become the copied wallet's exit liquidity",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "pump.fun",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Promoter statistic that most wallets are profitable",
+      "note": "True but hides size; most winners made under 500 dollars, no bot filtering, unsold bags excluded",
+      "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "sideshift.app",
+      "kind": "service",
+      "status": "open",
+      "theme": "UGC creator marketplace that sources creator applications for brands fast",
+      "note": "The marketplace model itself is untested here; this domain scores badly on reputation checkers, likely automated",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "sideshift.app",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Lookalike domain colliding with a known crypto swap service",
+      "note": "Name collision can serve as bait and switch; only sideshift.ai is the swap service",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)"
+    },
+    {
+      "date": "2026-09-20",
+      "subject": "sideshift.app",
+      "kind": "service",
+      "status": "dead",
+      "theme": "No-KYC crypto swap services as a way to skip identity checks",
+      "note": "Exchanges freeze deposits routed through them and the service itself asks for ID to release flagged swaps",
+      "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)"
+    }
+  ]
+}

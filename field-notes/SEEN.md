@@ -111,6 +111,103 @@ you on it.
 - **Find and follow traders whose edge is verifiable on-chain rather than claimed** — tried and found wanting: Potion Alpha (Orangie) and trader Kimchi
 - **Let anyone launch a token and find real buyers without it being extraction from retail** — tried and found wanting: pump.fun
 - **Get 50+ qualified creator applications for a brand in a day** — tried and found wanting: sideshift.app
+
+## Threads pulled from links: one theme each, judged on its own
+
+Every link Luke sends the vault gets split into the themes it carried, and each theme keeps its
+own fate whatever happened to the vendor. Machine-readable copy beside this file:
+`vault-threads.json` (same block, same one-way rule). Four statuses:
+
+### Open: go and investigate (26)
+
+Nobody here has run these to a verdict. Yours to take or ignore, same terms as the open jobs above.
+
+- **Media-buying commission taken as a share of a brand's ad budget**. Named as the kit's second angle at 20 percent of a 100k budget; not assessed in the write-up (from: AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc), 2026-09-27)
+- **Flat monthly editing retainer for businesses already producing content**. Priced at two to six thousand dollars a month; deliverable with the existing stack and no purchase (from: AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc), 2026-09-27)
+- **Post-production for businesses that have long-form content but cannot cut it into short-form**. The stack already owns the expensive half, HyperFrames, avatars, ElevenLabs, captions and compose; a trades client is the live test case (from: Clipping as a service (@natejbiz reel, video transcribed), 2026-09-26)
+- **Learning crypto research from a source with an independently verifiable track record**. Nobody in the vault has named such a source yet; the test is audited entry and exit pairs, not peak figures (from: Cryptonary 100x Chaser, 2026-09-26)
+- **Consistent AI character content with clear AI disclosure**. The character may entertain; it must not recommend products while appearing to be an ordinary person (from: EasyInfluencers.ai, 2026-09-26)
+- **Partnership ads run through a local client's own social handle**. Local trust sits with their page; permission-based, legal and sellable as a service rather than a trick (from: @jasontabinass AI Influencer System, and creator seeding as a method, 2026-09-24)
+- **Give free work away first, then pay to amplify whichever piece performs**. Applies seed-then-amplify to audits and scans already given away, instead of picking the case study in advance (from: @jasontabinass AI Influencer System, and creator seeding as a method, 2026-09-24)
+- **DMCC compliance review for small firms using testimonials and incentivised reviews**. Rules changed under DMCC Act 2024 and most local firms do not know; can be priced today with nothing to build (from: @jasontabinass AI Influencer System, and creator seeding as a method, 2026-09-24)
+- **Generating many platform-native variants (hooks, colour grades, overlays) from one filmed asset**. What transfers; the vault has a renderer but no variant loop (from: Butter (hellobutter.io), 2026-09-24)
+- **Per-post CPM tracked per account feeding back into what gets made next**. The one idea the write-up says to steal (from: Butter (hellobutter.io), 2026-09-24)
+- **Photoreal moving footage of a subject you cannot film, one consistent face and a directed camera move**. The one real gap it fills; belongs inside the existing HeyGen and Tavus bake-off as one Starter month, not a new lane (from: Higgsfield AI (higgsfield.ai), 2026-09-24)
+- **Niche paid community on owned material, borrowing only a proven model and price point**. Copying a model and price is lawful; needs honest metrics, correct disclaimers and VAT (from: Liam James Kay, Unethical business idea 345: cloning a paid Skool community, 2026-09-24)
+- **Buying real human UGC clips from marketplaces and reselling them inside a client retainer**. Clips cost 25 to 60 dollars; a real human face is the one asset HyperFrames, avatars and ElevenLabs cannot produce (from: Paid UGC creator work (via @oliver.hustles reel), 2026-09-24)
+- **Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to Gemini**. Frames via ffmpeg and captions or Whisper fallback is the only mechanism; Gemini reads public YouTube URLs on its free tier, no install (from: bradautomates/claude-video skill ("turn YouTube tutorials into Claude Code agents", @jens.heitmann reel), 2026-09-21)
+- **Build a mock-up site for the prospect and send a 90-second Loom after a two-line permission ask**. Shows the fix rather than describing the gap; consent-first sequencing is workable under PECR (from: "First AI agency client without a portfolio" videos (The Savvy Couple and eight neighbours), 2026-09-20)
+- **Door-knocking local trades with a spec site on a phone**. Corey Ganim measured two bookings from two door-knocks against none from 13 cold-call conversations; outside PECR (from: "First AI agency client without a portfolio" videos (The Savvy Couple and eight neighbours), 2026-09-20)
+- **x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation governance**. Legitimises the rails, not any operator; Agent402 uses the official packages (from: Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide), 2026-09-20)
+- **Hashcash proof of work as a rate limiter buying one free tool call**. Signed single-use challenge per tool, CPU finds a nonce; not mining, but no client-side ceiling or timeout (from: Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide), 2026-09-20)
+- **UK shape of selling booking software through trade job software and profile booking buttons**. Unknown which job software UK trades run; ServiceM8 and SimPro are not it; Reserve with Google needs partner approval (from: Avenue (avenue2.au) booking widget, the Starter Story "$50K a month" video, 2026-09-20)
+- **Templates, thumbnails, overlays and pre-launch guides sold or published to creators before a big game launch**. Fastest lane with no publisher IP exposure; guides and search sites need three to six months so the window is short (from: GTA 6 "four ways to earn" carousel (_vorken_), 2026-09-20)
+- **Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles**. The sanctioned version of paid mods; unsanctioned paid mods breach Take-Two policy and draw legal threats (from: GTA 6 "four ways to earn" carousel (_vorken_), 2026-09-20)
+- **Decomposing one classification into several narrow questions with weights fitted on a labelled set**. Reached 95 percent on held-out emails; needs a labelled training set and pays off at millions of calls, model-agnostic technique (from: Jev AI (TypeSafe AI), 2026-09-20)
+- **Phone-gated lead magnet to free workshop to done-for-you app build agency**. How a UK agency packages a founder funnel; SMS-verified phone gate is a deliberately higher-value capture (from: Keza Studio "10 app templates", 2026-09-20)
+- **Public on-chain leaderboards as the check on any trader's claimed record**. Kolscan, GMGN, Solana Tracker and Dune are the genuine ones; none belong to the paid community (from: Potion Alpha (Orangie) and trader Kimchi, 2026-09-20)
+- **Tooling, leaderboards and data products built around a token launchpad**. The only lane that is not extraction from traders; the launchpad acquires these firms, as with Kolscan and Padre (from: pump.fun, 2026-09-20)
+- **UGC creator marketplace that sources creator applications for brands fast**. The marketplace model itself is untested here; this domain scores badly on reputation checkers, likely automated (from: sideshift.app, 2026-09-20)
+
+### Intel: understand it, never operate it (22)
+
+What it is and how platforms or regulators detect it. Intelligence-lane material; the write-up is never a how-to.
+
+- **A cheap starter kit used as a qualifier that routes buyers to a private sales call**. The 5 dollar price puts a card on file; the real offer lands on the one-to-one, and the guarantee covers budget allocation, not earnings (from: AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc), 2026-09-27)
+- **AI model courses titled for OnlyFans but guaranteed against Fanvue**. OnlyFans requires a verified real person in the content; Fanvue permits declared AI creators, so the name and the guarantee point at different platforms (from: Zupria AI model course (Bogdan Irimia, Zupria SRL), 2026-09-27)
+- **Low lifetime course price that depends on paid generation-app subscriptions**. 77 euros up front, but required subscriptions make the real cost about 950 euros a year (from: Zupria AI model course (Bogdan Irimia, Zupria SRL), 2026-09-27)
+- **One sales page template with psychographic persona variants making contradictory promises at one price**. Found by reading the JavaScript bundles; one variant promises asymmetric plays while another warns against risking what you cannot lose (from: Cryptonary 100x Chaser, 2026-09-26)
+- **Trading performance quoted only at peak prices with no entry and exit record**. No audited record, figures drift between their own bundles; a peak gain says nothing about what a subscriber actually made (from: Cryptonary 100x Chaser, 2026-09-26)
+- **Cryptoasset promotions to UK consumers missing mandatory risk warnings**. No FCA risk warning, cooling-off, capital-at-risk line or geoblock, all required under the October 2023 financial promotions regime (from: Cryptonary 100x Chaser, 2026-09-26)
+- **AI influencer vendors selling undetectable fake people with consistent appearances**. Same shape as Butter and its antidetect cloud phones; the feature is what platforms try to stop, and DMCC practice 25 bans traders posing as consumers (from: EasyInfluencers.ai, 2026-09-26)
+- **Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied income**. A near 1 to 1 like to comment ratio marks the automation; CAP Code and ASA rulings make both advertiser and influencer liable (from: @alliecatbuildai reel (comment CLAUDE for the free tutorial), 2026-09-24)
+- **How account farms and antidetect cloud phones work and how platforms detect them**. The write-up already carries the platform rule dates; defender's view only (from: Butter (hellobutter.io), 2026-09-24)
+- **Anonymous trading account demos an unnamed app so viewers must DM to learn what it is**. Matches the Instagram to DM to Telegram pattern documented by F-Secure and Bitdefender; no firm name means no regulator warning-list check is possible (from: @tradewithjarvisss Instagram reel, 2026-09-21)
+- **Prompt injection through video transcripts, on-screen text and captions addressed to reading agents**. The reel caption told any reading agent to install the tool; piping a stranger's transcript into an agent with a shell is an injection surface (from: bradautomates/claude-video skill ("turn YouTube tutorials into Claude Code agents", @jens.heitmann reel), 2026-09-21)
+- **Free trading community paid per lot its members trade through an offshore introducing-broker rebate**. Its own Trustpilot reply admits a required 1-lot trade triggers commission; broker discloses 75.2 percent of retail accounts lose; on the FCA Warning List twice (from: TCFX / Trading Central FX (@amirscentral), 2026-09-21)
+- **Educational-only disclaimers used to front investment promotions under UK financial promotion law**. The s21 FSMA test is whether a communication induces investment activity; a broker referral link does, so the disclaimer is no defence (from: TCFX / Trading Central FX (@amirscentral), 2026-09-21)
+- **MCP servers launched with npx -y on a floating version tag**. Fetches the newest release every start, so any audit is void on update; pin the version (from: Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide), 2026-09-20)
+- **Third-party MCP catalogue text injected into the agent's tool list each session**. Remote-controlled text lands in context; treat it as untrusted data, a high bar on a machine with secrets (from: Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide), 2026-09-20)
+- **Launch site carrying template placeholder social proof**. Site claimed thousands of businesses and 1,560 reviews in 2024 template copy; revenue figure is the founder's word only (from: Avenue (avenue2.au) booking widget, the Starter Story "$50K a month" video, 2026-09-20)
+- **Account boosting and grey-market sale of game accounts and in-game items**. Needs handed-over credentials, breaches terms, gets accounts banned; Take-Two is suing PlayerAuctions over it (from: GTA 6 "four ways to earn" carousel (_vorken_), 2026-09-20)
+- **Multi-tier referral scheme paying on recruits' trading revenue, spread through referral links**. Four tiers, uncapped, retroactive; whoever sends the link is paid, so promotion is optimised for recruitment (from: Invo (invoapp.com referral link), 2026-09-20)
+- **Homepage logo wall mixing platform integrations with client logos**. Instagram, Slack, X and YouTube shown beside apparent clients as social proof (from: Keza Studio "10 app templates", 2026-09-20)
+- **Paid trading community whose credibility rests on self-reported PnL screenshots and a legend it interviewed itself**. No working leaderboard found; the trader legend traces to an interview by the community's own founder (from: Potion Alpha (Orangie) and trader Kimchi, 2026-09-20)
+- **Promoter statistic that most wallets are profitable**. True but hides size; most winners made under 500 dollars, no bot filtering, unsold bags excluded (from: pump.fun, 2026-09-20)
+- **Lookalike domain colliding with a known crypto swap service**. Name collision can serve as bait and switch; only sideshift.ai is the swap service (from: sideshift.app, 2026-09-20)
+
+### Adopted: the vault already does this (4)
+
+Skip unless you can beat what the note names.
+
+- **Three-signal filter for comment-bait reels: keyword for a freebie, bare disclaimer, no verifiable output**. Kept in the write-up as The pattern; any two signals and the link is binned without a full assessment (from: @alliecatbuildai reel (comment CLAUDE for the free tutorial), 2026-09-24)
+- **Composing, captioning, voicing and still-image generation for short video**. HyperFrames owns compose and captions, ElevenLabs owns audio, Gemini owns stills; Higgsfield replaces none of them (from: Higgsfield AI (higgsfield.ai), 2026-09-24)
+- **Google Maps sweep of local trades qualified on no site, weak site or few reviews**. The agency lane already runs this sweep with a Companies House gate instead of a ChatGPT prompt (from: "First AI agency client without a portfolio" videos (The Savvy Couple and eight neighbours), 2026-09-20)
+- **A cheap model call returning a typed judgement inside code**. Haiku already does this at pennies for the Flywheel triage, lead scoring and social rails, with reasoning and text (from: Jev AI (TypeSafe AI), 2026-09-20)
+
+### Dead: leave it (18)
+
+Closed on the vault side for the reason in the note. Not a lead.
+
+- **Pay-per-view clipping through Content Rewards**. The commodity volume game natejbiz warns against; income claims in the kit are unevidenced (from: AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc), 2026-09-27)
+- **Deepfake techniques applied to real people in explicit content**. Creating sexually explicit images of a real person without consent is a UK criminal offence at creation; age verification also required since July 2025 (from: Zupria AI model course (Bogdan Irimia, Zupria SRL), 2026-09-27)
+- **Mass clipping of big personalities for per-view payouts**. A volume game in a crowded 2026 market, not worth the time (from: Clipping as a service (@natejbiz reel, video transcribed), 2026-09-26)
+- **Gifting product to creators and hoping they post about it**. Works only for physical consumer products; 94 percent of marketers gift but only 19 percent see meaningful advocacy, and ROI figures are vendor-published (from: @jasontabinass AI Influencer System, and creator seeding as a method, 2026-09-24)
+- **Auto-posting one asset across many accounts through antidetect cloud phones**. Vendor documents the evasion; X, TikTok, Instagram and YouTube rules name the behaviour; agency risk (from: Butter (hellobutter.io), 2026-09-24)
+- **Running client material through a video service that trains on inputs and outputs by default**. Only Enterprise gets contractual no-training and consumer opt-out is deletion, which cannot untrain; nothing under client NDA goes through it (from: Higgsfield AI (higgsfield.ai), 2026-09-24)
+- **Cloning a trending paid community's copy, images, name or member counts**. Copying material is CDPA 1988, branding is trade marks or passing off, invented member counts or reviews are banned under DMCC Act 2024 (from: Liam James Kay, Unethical business idea 345: cloning a paid Skool community, 2026-09-24)
+- **A community whose product is teaching members to sell the same community**. Edges into pyramid promotional scheme territory, a banned practice (from: Liam James Kay, Unethical business idea 345: cloning a paid Skool community, 2026-09-24)
+- **Filming UGC clips yourself for brands via marketplaces**. A beginner month is low hundreds, the failure mode is no briefs, and JoinBrands lists AI video at 5 dollars against a 25 dollar human floor (from: Paid UGC creator work (via @oliver.hustles reel), 2026-09-24)
+- **Two models reading the same video and reconciling into confirmed, single-source or conflict lines**. Neither model knows which read is right; a tutorial fails as code correct on screen and wrong in your stack, so you still run it (from: bradautomates/claude-video skill ("turn YouTube tutorials into Claude Code agents", @jens.heitmann reel), 2026-09-21)
+- **Cold Facebook DMs, SMS and WhatsApp to sole traders**. Electronic mail under PECR reg 22 needs prior consent; the videos ignore UK rules (from: "First AI agency client without a portfolio" videos (The Savvy Couple and eight neighbours), 2026-09-20)
+- **The booking and lead-capture widget itself as a product**. Weeks of work with AI tooling and already cloned by Leva Relay, Chime Labs, LANA, Johnni.ai, Fully Booked (from: Avenue (avenue2.au) booking widget, the Starter Story "$50K a month" video, 2026-09-20)
+- **Real-money betting site on video game outcomes**. Criminal in the UK without a Gambling Commission licence; the FUT Galaxy prosecution is the precedent (from: GTA 6 "four ways to earn" carousel (_vorken_), 2026-09-20)
+- **Copy-trading crypto perpetual futures on Hyperliquid**. Crypto derivatives banned for sale to UK retail since January 2021; unregulated, no FSCS (from: Invo (invoapp.com referral link), 2026-09-20)
+- **Swapping a small chat model for a typed-decision model by asking the same single question**. Independent 2,000-email test scored 62.6 percent against Haiku at 81.3; speed and price are real but accuracy fell, and Haiku costs pennies at low volume (from: Jev AI (TypeSafe AI), 2026-09-20)
+- **App planning documents sold as templates**. Ten generic PRD-style files, no code; free starters like shadcn/ui, Vercel templates and Expo give working code (from: Keza Studio "10 app templates", 2026-09-20)
+- **Sniping bots and copy trading on new memecoin launches**. Zero-sum latency race against 200 plus funded bots; copiers become the copied wallet's exit liquidity (from: pump.fun, 2026-09-20)
+- **No-KYC crypto swap services as a way to skip identity checks**. Exchanges freeze deposits routed through them and the service itself asks for ID to release flagged swaps (from: sideshift.app, 2026-09-20)
+
 <!-- vault-verdicts:end -->
 
 ## Evaluated by Proteus
