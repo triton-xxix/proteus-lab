@@ -14,6 +14,13 @@ Design (2026-09-26, field-notes/HARVEST-DESIGN.md):
     under state/agents/DATE/ and nothing else.
   - Sources are keyless: Hacker News Algolia, GitHub search, arXiv Atom, YouTube results HTML plus
     oEmbed plus transcripts, and diffs of awesome lists. Queries live in field-notes/harvest-queries.json.
+  - Sixth source (2026-09-29): the vault's one-way thread feed, field-notes/vault-threads.json. Every
+    link Luke sends the vault is split into themes there; open, intel and dead threads all come in,
+    with the vault's status and reason attached as context, and the child judges the idea on its
+    own. The body is the vault's note plus the parent verdict's paragraph from SEEN.md, plus any
+    transcript the vault put in the feed.
+  - Every kept item carries a breakdown (how it would be done, what tools it needs, which the stack
+    has, which to fetch). Tools to fetch go to field-notes/toolshelf.jsonl, rendered in HARVEST.md.
   - Every candidate is checked against field-notes/SEEN.md and field-notes/harvest.jsonl first. An
     exact id already seen is dropped. A vault verdict on the vendor does not drop the item; it is
     flagged so the child records the mechanism, not the vendor.
@@ -44,6 +51,8 @@ CFG = ROOT + "field-notes/harvest-queries.json"
 SEEN = ROOT + "field-notes/SEEN.md"
 REGISTER_JSONL = ROOT + "field-notes/harvest.jsonl"
 REGISTER_MD = ROOT + "field-notes/HARVEST.md"
+VAULT_THREADS = ROOT + "field-notes/vault-threads.json"
+SHELF_JSONL = ROOT + "field-notes/toolshelf.jsonl"
 STAGING = ROOT + "field-notes/staging/"
 WORK = ROOT + "state/harvest/"
 AGENTS = ROOT + "state/agents/"
@@ -138,6 +147,24 @@ def run_log(date, line):
     os.makedirs(RUNS, exist_ok=True)
     with open(RUNS + date + ".md", "a") as fh:
         fh.write(line.rstrip("\n") + "\n")
+
+
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")[:60]
+
+
+def shelf_rows():
+    rows = []
+    if os.path.exists(SHELF_JSONL):
+        with open(SHELF_JSONL) as fh:
+            for line in fh:
+                line = line.strip()
+                if line:
+                    try:
+                        rows.append(json.loads(line))
+                    except Exception:
+                        pass
+    return rows
 
 
 # ---------------------------------------------------------------- pull
@@ -279,11 +306,78 @@ def pull_awesome(cfg, out, errors, notes):
             errors.append("awesome %s: %s" % (name, exc))
 
 
+VAULT_STATUS = {
+    "open": "nobody on the vault side has run it to a verdict",
+    "intel": "the vault wants it understood and how it is detected, never operated",
+    "dead": "the vault closed it, for the reason in the note; that reason may be about the vendor or Luke's time rather than the idea",
+    "adopted": "the vault already does this",
+}
+
+
+def pull_vault(cfg, out, errors, notes):
+    """Threads the vault split out of links Luke sent it. One way: the vault writes the file, we read it."""
+    doc = read_json(VAULT_THREADS)
+    if not doc or not isinstance(doc.get("threads"), list):
+        notes.append("vault: no readable %s" % VAULT_THREADS)
+        return
+    take = cfg.get("statuses", ["open", "intel", "dead"])
+    rows = []
+    for t in doc["threads"]:
+        st = t.get("status")
+        if st not in take or not t.get("theme"):
+            continue
+        rows.append({
+            "key": "vault:%s:%s" % (t.get("date", ""), slug(t["theme"])), "source": "vault", "query": st,
+            "title": t["theme"], "url": t.get("url") or "",
+            "meta": {"vault_status": st, "kind": t.get("kind"), "subject": t.get("subject"), "date": t.get("date"),
+                     "where": t.get("where"), "has_transcript": bool(t.get("transcript"))},
+            "body": "", "score": 0.0, "thread": t,
+        })
+    # Status tiers in the configured order (open first), and inside a tier one thread per parent link
+    # in turn, so a night's three vault rows come from three of Luke's links rather than three themes
+    # of one. The feed is newest first, and that order is kept inside each parent.
+    ordered = []
+    for st in take:
+        tier = [r for r in rows if r["query"] == st]
+        by_subject = {}
+        for r in tier:
+            by_subject.setdefault(r["meta"].get("subject") or r["key"], []).append(r)
+        queues = list(by_subject.values())
+        while queues:
+            for q in list(queues):
+                ordered.append(q.pop(0))
+                if not q:
+                    queues.remove(q)
+    for i, r in enumerate(ordered):
+        r["score"] = 100.0 - i          # the shortlist sorts by score; keep this order through it
+        out.append(r)
+    notes.append("vault: %d threads taken of %d in the feed (statuses %s), one per parent link in turn" % (
+        len(ordered), len(doc["threads"]), ", ".join(take)))
+
+
+def vault_parent(date, subject):
+    """The vault's verdict paragraph on the parent link, from SEEN.md's generated block."""
+    try:
+        with open(SEEN) as fh:
+            text = fh.read()
+    except Exception:
+        return ""
+    if not date or not subject:
+        return ""
+    m = re.search(r"^- \*\*%s · %s\*\* \(([^)]*)\): (.*)$" % (re.escape(date), re.escape(subject)), text, re.M)
+    if not m:
+        return ""
+    body = re.sub(r"\s*Write-up: `[^`]*`\s*$", "", m.group(2)).strip()
+    return "(%s) %s" % (m.group(1), body)
+
+
 def cmd_pull(a):
     cfg = load_cfg()
     date = today()
     out, errors, notes = [], [], []
     t0 = time.time()
+    if cfg.get("vault"):
+        pull_vault(cfg["vault"], out, errors, notes)
     pull_hn(cfg["hn"], out, errors)
     pull_github(cfg["github"], out, errors)
     pull_arxiv(cfg["arxiv"], out, errors)
@@ -430,6 +524,17 @@ def enrich(c, cfg, errors):
             c["body"] = txt[:limit] + ("\n[transcript continues in field-notes/staging/%s.txt]" % vid if len(txt) > limit else "")
         elif src == "arxiv":
             pass
+        elif src == "vault":
+            t = c.get("thread") or {}
+            parts = ["Vault status: %s, meaning %s." % (t.get("status"), VAULT_STATUS.get(t.get("status"), "")),
+                     "The vault's note on this theme: %s" % (t.get("note") or "(none)")]
+            parent = vault_parent(t.get("date"), t.get("subject"))
+            if parent:
+                parts.append("The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: %s" % parent)
+            for f in ("transcript", "caption", "text"):
+                if t.get(f):
+                    parts.append("%s from the link, as the vault pulled it:\n%s" % (f.capitalize(), str(t[f])[:limit]))
+            c["body"] = "\n\n".join(parts)[:limit]
     except Exception as exc:
         errors.append("enrich %s: %s: %s" % (c["key"], type(exc).__name__, exc))
         c["body"] = (c.get("body") or "") + "\n[body unavailable: %s]" % type(exc).__name__
@@ -437,7 +542,11 @@ def enrich(c, cfg, errors):
 
 CHILD_PROMPT = """You are a sub-agent of Proteus, the explorer persona, doing tonight's harvest judgement. You run on Sonnet. You may not spawn agents, run git, or run scripts. You read; you write exactly one file.
 
-Read /Users/triton/PROTEUS/state/harvest/{date}/brief.md. It holds {n} harvested items (Hacker News, GitHub, arXiv, YouTube, awesome-list diffs), each with a source, a title, a URL, metadata, a SEEN flag where the vault already has a verdict on the vendor, and a body (story text, README, abstract or transcript). If a body is thin you may WebFetch that item's URL, at most {fetches} fetches in total.
+Read {root}state/harvest/{date}/brief.md. It holds {n} harvested items (Hacker News, GitHub, arXiv, YouTube, awesome-list diffs, and vault threads), each with a source, a title, a URL, metadata, a SEEN flag where the vault already has a verdict on the vendor, and a body (story text, README, abstract, transcript, or the vault's note and parent verdict). If a body is thin you may WebFetch that item's URL, at most {fetches} fetches in total; vault threads usually have no URL, so judge them from the body.
+
+A VAULT THREAD is one theme split out of a link Luke sent his other agent. That agent judges vendors and Luke's time; you judge the idea. Its status (open, intel, dead) and note are context, not a verdict on the idea. Keep a vault thread unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). For a vault thread the breakdown fields below matter most: how it would be done, and what tools it takes.
+
+The stack already here, for "tools_have": Claude Code with skills and sub-agents; HyperFrames (video compose, captions, render); ElevenLabs (voice); HeyGen and Tavus (avatars); Gemini (stills); a keyless YouTube search, oEmbed and transcript pipeline; GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder); football-data and a Dixon-Coles paper desk (the Pitch); launchd long-running pollers; local transcription; Ollama with a qwen model; freqtrade. Anything else is a tool to fetch.
 
 For each item, decide and write a JSON object with these fields:
 - "key": copied exactly from the brief.
@@ -455,9 +564,14 @@ For each item, decide and write a JSON object with these fields:
 - "intel": true if this is intelligence-lane material (grey-market tooling, automation and scraping services, farms, detection). For these, "mechanism" records what it is and how platforms detect it. Never write a recipe for evading detection (passing reposts as new content, spoofed devices, fake engagement). Say what it is and how it gets caught, then move on.
 - "interest": one of "mechanism-hunting", "forecasting", "game-bots", "open-data", "tools-for-strangers", "cars", "tech", "desk:grinder", "desk:pitch", "none".
 - "one_line": the line that would go in Sunday Field Notes, under 30 words, plain English, UK spelling, no em dashes, novelty first.
+- "idea": for kept items, "sound", "unsound" or "needs-a-run": the idea judged on its own merits, whoever is selling it. "idea_why": one sentence.
+- "breakdown": for kept items, three to six sentences on how it would actually be done from here: the steps, what would be built or wired together, where the data or the audience comes from, and what a hired person would do if there is a job in it that no script covers. Not whether Luke has time and not whether it is profitable; those are someone else's questions.
+- "tools_have": list of strings, the parts of the stack above that cover a piece of it. Empty list if none.
+- "tools_fetch": list of objects {{"name", "url", "why"}}: tools, repos, datasets or services named in the item or plainly needed that the stack lacks. Public, free or with a free tier, no account where possible; a URL if the item gives one, else "". Each goes on a shelf to install and run on a later night, so name things that can be fetched, not categories. Empty list if none.
+- "missing": one sentence on what nobody has and would have to be made, bought or hired. "" if nothing.
 
 Write the whole array, in the brief's order, with the Write tool to exactly this path and nothing else:
-/Users/triton/PROTEUS/state/agents/{date}/harvest.json
+{root}state/agents/{date}/harvest.json
 
 Rules: absolute paths only. No Bash except ls, cat, head, grep on files under /Users/triton/PROTEUS, one command per call, no `;`, no `&&`, no `2>&1`, no redirection: the hook denies the whole call otherwise. Do not write anywhere else. If a tool call is refused, that is a result: do not retry it, put it in your final message. Your final message is three lines: how many kept, how many testable, and any refusals or fetch failures. Do not paste the JSON into the message."""
 
@@ -525,7 +639,9 @@ def cmd_shortlist(a):
             lines.append("discussion: %s" % c["hn_url"])
         lines.append("meta: %s" % json.dumps(c.get("meta", {}), ensure_ascii=False))
         lines.append("query: %s" % c.get("query", ""))
-        if c.get("seen_vault"):
+        if c["source"] == "vault":
+            lines.append("VAULT THREAD, status %s: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism." % c["meta"].get("vault_status"))
+        elif c.get("seen_vault"):
             lines.append("SEEN: the vault already judged this vendor (%s). Record the mechanism only if it is new; do not re-judge the vendor." % c["seen_vault"])
         lines.append("")
         lines.append(c.get("body") or "[no body]")
@@ -535,7 +651,7 @@ def cmd_shortlist(a):
     doc = {"date": date, "shortlisted_at": now().strftime("%Y-%m-%dT%H:%M:%S%z"), "candidates": len(cand["candidates"]),
            "dropped_seen": dropped, "flagged_vault": flagged, "errors": errors, "items": picked}
     write_json(wd + "shortlist.json", doc)
-    prompt = CHILD_PROMPT.format(date=date, n=len(picked), fetches=cfg["shortlist"].get("child_fetches", 6))
+    prompt = CHILD_PROMPT.format(root=ROOT, date=date, n=len(picked), fetches=cfg["shortlist"].get("child_fetches", 6))
     with open(wd + "child-prompt.md", "w") as fh:
         fh.write(prompt + "\n")
     os.makedirs(AGENTS + date, exist_ok=True)
@@ -558,8 +674,8 @@ def cmd_run(a):
 REQUIRED = ("key", "keep", "lens", "mechanism", "claim", "testable", "one_line")
 
 
-def probe_add(title, est, needs):
-    cmd = [sys.executable, PROBE_PY, "add", title, "--source", "harvest", "--est", str(int(est))]
+def probe_add(title, est, needs, source="harvest"):
+    cmd = [sys.executable, PROBE_PY, "add", title, "--source", source, "--est", str(int(est))]
     if needs:
         cmd += ["--needs", needs]
     env = dict(os.environ)
@@ -611,12 +727,18 @@ def cmd_ingest(a):
             "verdict_question": j.get("verdict_question", ""), "probe_title": j.get("probe_title", ""),
             "est_minutes": j.get("est_minutes"), "needs": j.get("needs", ""), "intel": bool(j.get("intel")),
             "interest": j.get("interest", "none"), "one_line": j.get("one_line", ""), "probe_id": None,
+            "idea": j.get("idea", ""), "idea_why": j.get("idea_why", ""), "breakdown": j.get("breakdown", ""),
+            "tools_have": [str(x) for x in (j.get("tools_have") or []) if x],
+            "tools_fetch": [x for x in (j.get("tools_fetch") or []) if isinstance(x, dict) and x.get("name")],
+            "missing": j.get("missing", ""),
+            "vault_status": c.get("meta", {}).get("vault_status") if c["source"] == "vault" else None,
         }
         next_id += 1
         if row["keep"]:
             kept.append(row)
             if row["testable"] and len(queued) < per_day_cap and row["probe_title"]:
-                pid, out = probe_add(row["probe_title"], row.get("est_minutes") or 20, row.get("needs") or "")
+                pid, out = probe_add(row["probe_title"], row.get("est_minutes") or 20, row.get("needs") or "",
+                                     "vault" if c["source"] == "vault" else "harvest")
                 row["probe_id"] = pid
                 if pid:
                     queued.append((pid, row["id"]))
@@ -628,6 +750,7 @@ def cmd_ingest(a):
     with open(REGISTER_JSONL, "a") as fh:
         for r in new_rows:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+    shelved = shelf_add(kept, date)
     render()
     if new_rows:
         seen_line = "- %s, harvested: %d judged, %d kept (%s to %s), %d queued as probes%s. Register: `field-notes/HARVEST.md`." % (
@@ -645,10 +768,11 @@ def cmd_ingest(a):
         except Exception as exc:
             bad.append("SEEN append failed: %s" % exc)
     src_counts = short.get("candidates", 0)
-    line = "- Harvest: %d candidates pulled, %d shortlisted, %d kept, %d skipped, %d queued as probes%s; %d dropped as already seen. Brief `state/harvest/%s/brief.md`, judgements `state/agents/%s/harvest.json`." % (
+    vault_rows = [r for r in new_rows if r.get("vault_status")]
+    line = "- Harvest: %d candidates pulled, %d shortlisted, %d kept, %d skipped, %d queued as probes%s; %d dropped as already seen; %d vault threads judged (%d kept); %d tools shelved. Brief `state/harvest/%s/brief.md`, judgements `state/agents/%s/harvest.json`." % (
         src_counts, len(short["items"]), len(kept), len(skipped), len(queued),
         (" (" + ", ".join("%s from %s" % (p, h) for p, h in queued) + ")") if queued else "",
-        len(short.get("dropped_seen", [])), date, date)
+        len(short.get("dropped_seen", [])), len(vault_rows), len([r for r in vault_rows if r["keep"]]), shelved, date, date)
     if bad:
         line += " Problems: " + "; ".join(bad)[:400]
     run_log(date, line)
@@ -658,7 +782,7 @@ def cmd_ingest(a):
     elif NO_GIT:
         committed = "HARVEST_NO_GIT, not committed"
     else:
-        paths = [REGISTER_JSONL, REGISTER_MD, SEEN, PROBES_JSON, ROOT + "PROBES.md", wd, AGENTS + date, WORK + "awesome", RUNS + date + ".md"]
+        paths = [REGISTER_JSONL, REGISTER_MD, SHELF_JSONL, SEEN, PROBES_JSON, ROOT + "PROBES.md", wd, AGENTS + date, WORK + "awesome", RUNS + date + ".md"]
         paths = [p for p in paths if os.path.exists(p)]
         git(["add", "--"] + paths)
         msg = "harvest %s: %d kept of %d judged, %d probes queued" % (date, len(kept), len(new_rows), len(queued))
@@ -679,6 +803,30 @@ def probe_lookup():
     return {i["id"]: i for i in st.get("items", [])}
 
 
+def shelf_add(kept, date):
+    """Every tool the judge said to fetch goes on the shelf once, keyed by URL or name."""
+    rows = shelf_rows()
+    have = set()
+    for r in rows:
+        have.add(("url:" + norm_url(r["url"])) if r.get("url") else ("name:" + r["name"].lower()))
+    next_id = 1 + max([int(r["id"][2:]) for r in rows if r.get("id", "").startswith("T-")] or [0])
+    added = 0
+    with open(SHELF_JSONL, "a") as fh:
+        for r in kept:
+            for t in r.get("tools_fetch") or []:
+                url = (t.get("url") or "").strip()
+                key = ("url:" + norm_url(url)) if url else ("name:" + t["name"].strip().lower())
+                if key in have:
+                    continue
+                have.add(key)
+                fh.write(json.dumps({"id": "T-%04d" % next_id, "date": date, "name": t["name"].strip(), "url": url,
+                                     "why": (t.get("why") or "").strip(), "from": r["id"], "from_title": r["title"][:80],
+                                     "status": "shelf", "probe_id": None}, ensure_ascii=False) + "\n")
+                next_id += 1
+                added += 1
+    return added
+
+
 def render():
     rows = register_rows()
     probes = probe_lookup()
@@ -689,8 +837,9 @@ def render():
     out = ["# Harvest register", "",
            "One line per item the harvester judged. Rendered by `bin/harvest.py` from `field-notes/harvest.jsonl`; design in",
            "`field-notes/HARVEST-DESIGN.md`. Each kept entry records the **mechanism** (how it works), the **claim** (what the",
-           "source says) and whether it is **testable** keyless tonight; testable ones are queued in `PROBES.md` with source",
-           "`harvest`. A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.",
+           "source says), whether it is **testable** keyless tonight, and since 29 Sep a **breakdown** of how it would be done and",
+           "what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).",
+           "A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.",
            "", "%d judged over %d harvest days, %d kept, %d testable, %d queued as probes, %d with a probe verdict." % (
                len(rows), len(days), len(kept), len(testable), len([r for r in testable if r.get("probe_id")]), len(with_verdict)), ""]
     out += ["## Kept", "", "| id | date | source | what | lens | interest | testable | probe |", "|---|---|---|---|---|---|---|---|"]
@@ -714,7 +863,45 @@ def render():
             out.append("- **Testable:** yes. %s%s" % (r.get("verdict_question", ""), (" Queued as %s." % r["probe_id"]) if r.get("probe_id") else " Not queued (daily cap)."))
         else:
             out.append("- **Testable:** no. %s%s" % (r.get("why_not_testable", ""), (" Needs: %s." % r["needs"]) if r.get("needs") else ""))
+        if r.get("breakdown"):
+            out.append("- **Idea on its own:** %s. %s" % (r.get("idea") or "unjudged", r.get("idea_why", "")))
+            out.append("- **How it would be done:** " + r["breakdown"])
+            if r.get("tools_have"):
+                out.append("- **Stack already covers:** " + ", ".join(r["tools_have"]))
+            if r.get("tools_fetch"):
+                out.append("- **To fetch:** " + "; ".join("%s%s (%s)" % (t["name"], (" " + t["url"]) if t.get("url") else "", t.get("why", "")) for t in r["tools_fetch"]))
+            if r.get("missing"):
+                out.append("- **Missing:** " + r["missing"])
         out.append("- **Field Notes line:** " + r.get("one_line", ""))
+        out.append("")
+    vault = [r for r in rows if r.get("vault_status")]
+    if vault:
+        out += ["## Vault threads: Luke's links, judged as ideas", "",
+                "Themes the vault split out of links Luke sent it, read from `field-notes/vault-threads.json` (one way). The vault's status",
+                "is what its side decided about the vendor or Luke's time; the idea column is this side's view of the idea alone.", "",
+                "| id | date | theme | vault said | idea | testable | probe |", "|---|---|---|---|---|---|---|"]
+        for r in sorted(vault, key=lambda r: r["id"], reverse=True):
+            p = r.get("probe_id") or ""
+            pi = probes.get(p, {}) if p else {}
+            idea = (r.get("idea") or "unjudged") if r.get("keep") else ("skipped: " + (r.get("skip_reason") or "")[:60])
+            out.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+                r["id"], r["date"], r["title"].replace("|", "/")[:90], r.get("vault_status", ""), idea.replace("|", "/"),
+                "yes" if r.get("testable") else "no", (p + ((" **%s**" % pi["verdict"]) if pi.get("verdict") else "")) if p else ""))
+        out.append("")
+    shelf = shelf_rows()
+    if shelf:
+        out += ["## Tools shelf", "",
+                "Tools, repos and datasets the judge said to fetch, kept here even when nothing needs them today. Each is a candidate",
+                "for a ran-it night: install it in `sandbox/`, run it, write the verdict.", "",
+                "| id | date | tool | why | from | status |", "|---|---|---|---|---|---|"]
+        for t in sorted(shelf, key=lambda t: t["id"], reverse=True):
+            name = ("[%s](%s)" % (t["name"], t["url"])) if t.get("url") else t["name"]
+            st = t.get("status", "shelf")
+            if t.get("probe_id"):
+                pi = probes.get(t["probe_id"], {})
+                st = "%s%s" % (t["probe_id"], (" **%s**" % pi["verdict"]) if pi.get("verdict") else "")
+            out.append("| %s | %s | %s | %s | %s (%s) | %s |" % (
+                t["id"], t["date"], name.replace("|", "/"), (t.get("why") or "").replace("|", "/")[:120], t.get("from", ""), (t.get("from_title") or "")[:50].replace("|", "/"), st))
         out.append("")
     out += ["## Skipped", "", "| id | date | source | what | why |", "|---|---|---|---|---|"]
     for r in sorted([r for r in rows if not r.get("keep")], key=lambda r: r["id"], reverse=True):
@@ -744,7 +931,12 @@ def cmd_digest(a):
         if r.get("probe_id"):
             pi = probes.get(r["probe_id"], {})
             tail = " [%s%s]" % (r["probe_id"], (": " + pi["verdict"] + ", " + (pi.get("note") or "")[:140]) if pi.get("verdict") else ": queued")
-        print("- %s (%s, %s): %s%s" % (r["id"], r["source"], r["url"], r.get("one_line", ""), tail))
+        print("- %s (%s, %s): %s%s" % (r["id"], r["source"], r["url"] or r.get("vault_status", ""), r.get("one_line", ""), tail))
+        if r.get("vault_status") and r.get("breakdown"):
+            print("    idea %s: %s" % (r.get("idea", ""), r.get("idea_why", "")))
+            print("    how: %s" % r["breakdown"])
+            if r.get("tools_fetch"):
+                print("    fetch: %s" % "; ".join(t["name"] for t in r["tools_fetch"]))
 
 
 def cmd_review(a):

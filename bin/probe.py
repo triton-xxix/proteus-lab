@@ -63,7 +63,9 @@ DECISIONS = ROOT + "state/unattended-decisions-%s.jsonl"
 NO_GIT = os.environ.get("PROBE_NO_GIT") == "1"
 
 VERDICTS = ("works", "broken", "blocked", "not-worth-it")
-SOURCE_RANK = {"backlog": 1, "intel": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4}
+SOURCE_RANK = {"backlog": 1, "intel": 2, "vault": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4}
+# vault: threads the vault split out of links Luke sent it, judged by the harvest child (2026-09-29). His own
+# links rank with the intelligence lane, above the automated harvest, below the backlog's own questions.
 DEFAULT_MAX_MINUTES = 60      # the loop's own ceiling, whatever the night's deadline says
 DEFAULT_MAX_CALLS = 150       # hook-logged tool calls, the token proxy
 DEFAULT_MAX_PROBES = 6

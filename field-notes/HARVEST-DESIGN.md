@@ -165,3 +165,59 @@ USAGE line: `harvest: 1 Sonnet child, 12k out / 2.1M cache read / 0.22M cache wr
 - One YouTube transcript of three was unusable (music and boilerplate); another was a
   zero-minute consumer explainer. The YouTube queries are the weakest part of the list and are the
   first thing to tune.
+
+## The vault source: Luke's links, judged as ideas (added 2026-09-29)
+
+Luke's brief of 28 Sep (`briefs/2026-09-28-vault-threads.md`) and his words on 29 Sep. He scrolls,
+sends links to the vault's agent, and that agent often closes them because the vendor is dodgy, the
+company is untraceable, or Luke has no time. His question was never about the vendor. It was: is
+the idea sound, how would it be done, what tools does it take, which do we lack, could a hired
+person do the job. That is the lens Proteus was built for, so the vault's thread feed is now the
+sixth harvest source.
+
+- **Feed.** `field-notes/vault-threads.json`, written by the vault side at 22:45 and whenever its
+  register changes. One way: the vault writes, Proteus reads, nothing goes back. Each thread is one
+  theme split out of one link, with the vault's status (`open`, `intel`, `dead`, `adopted`) and note.
+- **What comes in.** `open`, `intel` and `dead`, all three. `dead` comes in on purpose: the vault
+  kills for its reasons (no time, already cloned, vendor unregistered) and those are not verdicts on
+  the idea. Only `adopted` is skipped, because the note says where the vault already does it. The
+  statuses and their order are in `harvest-queries.json` under `vault`.
+- **Key and body.** `vault:<date>:<slug of theme>`. The body is the vault's note, the parent link's
+  verdict paragraph lifted from `SEEN.md`'s generated block (so the judge sees what the vault
+  decided and why), and any transcript or caption the vault put in the feed. Luke is asking the
+  vault side to include the original URL and the transcript it pulled; until then the judge works
+  from the vault's summary, and the brief says so.
+- **The judge's lens.** The brief marks each as a VAULT THREAD and says: judge the idea on its own;
+  the status and note are context about the vendor and Luke's time; keep it unless the mechanism
+  itself is unlawful or crosses the charter's line. The child prompt says the same.
+- **New fields, for every kept item from any source.** `idea` (sound, unsound, needs-a-run) with
+  `idea_why`; `breakdown`, how it would actually be done from here; `tools_have`, the parts of the
+  stack that cover a piece (the prompt lists the stack); `tools_fetch`, named tools, repos or
+  datasets to go and get; `missing`, what would have to be made, bought or hired. The register and
+  `HARVEST.md` carry them, and a `## Vault threads` table shows the vault's status beside this
+  side's idea verdict.
+- **Tools shelf.** Every `tools_fetch` entry lands once in `field-notes/toolshelf.jsonl` (`T-0001`
+  upward, keyed by URL or name) and renders under `## Tools shelf` in `HARVEST.md`. Nothing is
+  queued from the shelf automatically; it is the list a ran-it night draws from, so a find that
+  nobody needs today is kept rather than dropped.
+- **Caps and rank.** Three vault rows a brief, ahead of the other sources in the round robin so
+  they are never squeezed out; the brief total is 14. Testable vault threads are queued with
+  `--source vault`, which ranks with `intel` in `probe.py`, above the automated harvest and below
+  the backlog. The probe cap of four a night is unchanged.
+- **Still true.** `open` means nobody ran it. It opens no card and is not a request. Most threads
+  are ventures, so most will be kept with a breakdown and no probe; that is the intended output,
+  not a failure of the testable rule.
+
+Dry run 29 Sep in a scratch root (`PROTEUS_ROOT`, `HARVEST_NO_GIT=1`): 66 of 70 threads taken,
+three led the brief with the parent verdict attached; numbers from the judge below when it ran.
+
+**Measured, dry run 29 Sep 22:10.** Pull 129 candidates in 64 s (vault 66, github 27, arxiv 14,
+youtube 12, hn 10). Brief 12 items, three of them vault threads, each carrying the parent verdict.
+Judge (Sonnet, 3 calls, 73k tokens, 56 s): kept 6 of 12, the three vault threads all kept with
+`idea` sound, sound and needs-a-run, a breakdown each, stack coverage named, nothing to fetch,
+and the same missing piece each time (a client and their footage). Six tools shelved from the
+other kept items. Two probes queued, both harvest. YouTube refused all three transcripts with an
+IP block that day, so those three were skipped for no visible mechanism; nothing to do with the
+vault source, but the YouTube pull is now the weakest source twice over. After the run, the vault
+pull was changed to take one thread per parent link in turn, because the first three rows had all
+come from the same link.

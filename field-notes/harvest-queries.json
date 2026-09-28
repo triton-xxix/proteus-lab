@@ -1,5 +1,9 @@
 {
-  "_note": "Queries the harvester pulls every night (bin/harvest.py). Edit here, not in the script. Drawn from PERSONA.md and the two desks. YouTube rotates per_day queries through the list by day of year; the rest run every night.",
+  "_note": "Queries the harvester pulls every night (bin/harvest.py). Edit here, not in the script. Drawn from PERSONA.md and the two desks. YouTube rotates per_day queries through the list by day of year; the rest run every night. The vault block reads field-notes/vault-threads.json (Luke's links, split into themes by the vault, one way): statuses lists which fates come in, score sets their order (newest first within a status).",
+  "vault": {
+    "statuses": ["open", "intel", "dead"],
+    "score": {"open": 3.0, "intel": 2.0, "dead": 1.0}
+  },
   "hn": {
     "hours": 72,
     "min_points": 15,
@@ -68,9 +72,9 @@
     }
   },
   "shortlist": {
-    "total": 12,
-    "order": ["hn", "github", "arxiv", "youtube", "awesome"],
-    "per_source": {"hn": 4, "github": 3, "arxiv": 2, "youtube": 3, "awesome": 2},
+    "total": 14,
+    "order": ["vault", "hn", "github", "arxiv", "youtube", "awesome"],
+    "per_source": {"vault": 3, "hn": 4, "github": 3, "arxiv": 2, "youtube": 3, "awesome": 2},
     "body_chars": 3500,
     "child_fetches": 6
   },
