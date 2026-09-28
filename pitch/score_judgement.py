@@ -3,6 +3,7 @@
 Fills result, home_goals, away_goals, brier and market_brier on rows that have none yet.
 Never rewrites a filled row. Prints the paired Brier difference on counted rows (PASS-MARKS.md,
 "The judgement book": J-0009 onwards; J-0001 to J-0008 were seen before the lines were written).
+Blind rows (blind_* columns, committed before odds_seen_at) get blind_brier and their own paired line.
 Found and tested in P-0024 (experiments/2026-09-27-P-0024/).
 """
 import csv, os, urllib.request
@@ -46,7 +47,7 @@ def main():
 
     filled, unmapped = 0, []
     for r in rows:
-        if r["result"]:
+        if r["result"] or not r["market_home"]:
             continue
         hc = name2code.get(ALIAS.get(r["home"], r["home"]))
         ac = name2code.get(ALIAS.get(r["away"], r["away"]))
@@ -61,10 +62,14 @@ def main():
         else:
             continue
         o = (1, 0, 0) if hg > ag else (0, 1, 0) if hg == ag else (0, 0, 1)
-        me = [float(r[k]) for k in ("p_home", "p_draw", "p_away")]
+        me = [float(r[k]) for k in ("p_home", "p_draw", "p_away")] if r.get("p_home") else None
         mk = [float(r[k]) for k in ("market_home", "market_draw", "market_away")]
-        r.update(result="HDA"[o.index(1)], home_goals=hg, away_goals=ag,
-                 brier=round(brier(me, o), 4), market_brier=round(brier(mk, o), 4))
+        r.update(result="HDA"[o.index(1)], home_goals=hg, away_goals=ag, market_brier=round(brier(mk, o), 4))
+        if r.get("p_home"):
+            r["brier"] = round(brier(me, o), 4)
+        if r.get("blind_home"):
+            bl = [float(r[k]) for k in ("blind_home", "blind_draw", "blind_away")]
+            r["blind_brier"] = round(brier(bl, o), 4)
         filled += 1
 
     if filled:
@@ -73,6 +78,9 @@ def main():
             w.writeheader()
             w.writerows(rows)
 
+    blind = [r for r in rows if r.get("blind_brier") and r["market_brier"]
+             and r["blind_committed_at"] < r["kickoff_utc"] and r["blind_committed_at"] < r["odds_seen_at"]]
+    both = [r for r in blind if r["brier"]]
     scored = [r for r in rows if r["brier"]]
     counted = [r for r in scored if r["id"] not in SEEN and r["committed_at"] < r["kickoff_utc"]]
     leaned = [r for r in counted if float(r["lean_size"] or 0) >= LEAN_MIN]
@@ -82,6 +90,10 @@ def main():
 
     print(f"filled {filled}, scored {len(scored)}, seen {len(scored) - len([r for r in scored if r['id'] not in SEEN])}, "
           f"counted {len(counted)}, unmapped {len(unmapped)}")
+    print(f"blind rows counted {len(blind)}: blind minus market "
+          f"{round(sum(float(r['blind_brier']) - float(r['market_brier']) for r in blind) / len(blind), 4) if blind else None}; "
+          f"on {len(both)} rows with both columns, blind minus anchored "
+          f"{round(sum(float(r['blind_brier']) - float(r['brier']) for r in both) / len(both), 4) if both else None}")
     print(f"paired Brier diff (me minus market): seen {diff([r for r in scored if r['id'] in SEEN])}, "
           f"counted {diff(counted)}, counted leaned {diff(leaned)} over {len(leaned)}")
 

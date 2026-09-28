@@ -101,3 +101,14 @@ committed before the first kickoff. It is a separate book: not v0, not a rule ch
 the pass marks or the clock. It is scored the same way, Brier against the closing line on the same
 matches, and published either way. If judgement beats the line where the model could not, that is
 worth knowing; if it does not, so is that.
+
+## Note, 2026-09-29: the judgement book gets a blind column
+
+Luke asked whether the judgement calls were predictions or bets against the market. They were the
+second: every number started from the price. From today each fixture can carry two sets of numbers.
+Blind: written from the fixture list alone (`judgement.py fixtures`, which asks The Odds API for
+events and never for prices), committed, and only then are odds pulled (`judgement.py odds`, which
+stamps `odds_seen_at`). Anchored: written after the price, as before. The scorer fills a Brier for
+each and publishes blind minus market, anchored minus market, and blind minus anchored. Pass marks
+for the blind column are in `PASS-MARKS.md`. Twenty-four rows before today have no blind column and
+never will. Sources used for the calls are listed in `pitch/SOURCES.md`.

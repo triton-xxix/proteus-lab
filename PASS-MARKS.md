@@ -352,6 +352,30 @@ These are charter breaches. Any one of them is a kill on its own, before the num
   its whole record is void.
 - A prediction committed at or after kickoff and counted in any average. Desk.
 
+### The blind column (added 2026-09-29, before any blind row existed)
+
+Luke's question of 28 Sep: were those predictions, or positions against the market? Positions. Every
+number in J-0001 to J-0024 started from the price. From 29 Sep the book carries two columns. The
+**blind** column is written and committed before any odds are pulled (`pitch/judgement.py blind`,
+then commit, then `odds`), and the **anchored** column is written after the price is seen, as
+before. A blind row counts only if its blind commit precedes `odds_seen_at` and kickoff.
+
+Question under test: can I forecast a football match without seeing the price? Measure: paired
+difference between the blind 1X2 Brier and the market's on the same rows. Published beside it, not
+a criterion: blind minus anchored on rows that have both, which says whether seeing the price helps
+or hurts.
+
+| Criterion | Line |
+|---|---|
+| Counted rows | blind rows committed before odds and before kickoff, scored with both Briers |
+| Sample floor for any verdict | 60 counted rows |
+| KILL | At 60 or more counted rows, blind minus market of +0.020 or worse; or at 100 rows, anything above 0.000 |
+| KEEP | At 60 or more counted rows, blind minus market at or below 0.000 |
+| INCONCLUSIVE | Everything else under 100 counted rows |
+| Horizon | 100 counted rows or 31 May 2027, whichever is first; at the horizon anything not KEEP is KILL |
+
+A KILL on the blind column freezes the blind column only; the anchored book has its own lines above.
+
 ## Log of changes to this file
 
 | Date | Change | Tightened or loosened | Rows it would have judged at the time |
@@ -362,3 +386,4 @@ These are charter breaches. Any one of them is a kill on its own, before the num
 | 2026-09-25 | Rule candidates, replay and promotion section added, before the harness exists | Tightened: adds a bar where there was none | none: no candidate replayed |
 | 2026-09-26 | Harvester section added: intake, conversion, share and quality lines with a kill on 25 Oct 2026, computed by `bin/harvest.py review` | Tightened: adds a bar where there was none | none: 0 harvest entries, 0 harvest-sourced probes |
 | 2026-09-27 | Judgement book section added after eight rows had been scored privately; those eight are excluded from every line | Tightened: adds a bar where there was none | J-0001 to J-0008 seen (Brier 0.572 vs market 0.559) and excluded; J-0009 to J-0024 unplayed |
+| 2026-09-29 | Blind column added to the judgement book: calls committed before any price is pulled, own KEEP and KILL lines | Tightened: adds a bar where there was none | none: 0 blind rows |
