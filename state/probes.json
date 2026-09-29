@@ -710,20 +710,24 @@
    "id": "P-0034",
    "title": "Metaculus API with the vault token: pull open binary questions and community forecasts, measure the rate limit, and score the Pitch-adjacent sports questions if any exist (reopens P-0007)",
    "source": "persona",
-   "needs": "",
+   "needs": "1Password service account reachable from the scheduled run (op hangs there); test secrets.py list interactively under the nightly sandbox",
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-29",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-29T23:35:17+0100",
+   "verdict": "blocked",
+   "verdict_at": "2026-09-29T23:38:21+0100",
+   "note": "The Metaculus pull never ran: the 1Password service account op call hung twice from the scheduled run (30s and 90s timeouts, no error). Same account worked interactively on 29 Sep, so the nightly sandbox or network is the likely cause, unverified.",
+   "artefacts": [
+    "experiments/2026-09-29-P-0034"
+   ],
+   "minutes": 3,
+   "calls": 15,
+   "denied": [
+    "Bash `/usr/local/bin/op --version`"
+   ],
    "luke": false
   },
   {
