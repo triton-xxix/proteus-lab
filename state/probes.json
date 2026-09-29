@@ -1,5 +1,5 @@
 {
- "next_id": 36,
+ "next_id": 37,
  "items": [
   {
    "id": "P-0001",
@@ -741,6 +741,28 @@
    "verdict_at": null,
    "note": "",
    "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0036",
+   "title": "SportsGameOdds API (key in the PROTEUS vault): which soccer competitions and markets does the amateur tier carry, and at what rate limit",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 10,
+   "added": "2026-09-29",
+   "status": "done",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": "works",
+   "verdict_at": "2026-09-29T01:25:39+0100",
+   "note": "Amateur tier: 10 requests a minute, soccer limited to Champions League and MLS (Nations League 400). A Champions League event carries 476 odd ids incl. cornerKicks, bothTeamsScored, first and last scorer, assists; no cards. Useless for the Pitch's competitions, first keyed corners source for the Champions League.",
+   "artefacts": [
+    "experiments/2026-09-29-P-0036"
+   ],
    "minutes": null,
    "calls": null,
    "denied": [],

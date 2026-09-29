@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 19 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 20 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 
 ## Queue (9 open)
 
@@ -23,10 +23,11 @@ Verdicts so far: 19 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 | P-0034 | Metaculus API with the vault token: pull open binary questions and community forecasts, measure the rate limit, and score the Pitch-adjacent sports questions if any exist (reopens P-0007) | persona | none |  | 0 | 25 min |
 | P-0035 | Browserless API (key already in the vault): can a hosted browser open a page, wait for a postMessage and screenshot it, so viewer-gated probes like hn.watch (P-0030) can run at night | persona | none |  | 0 | 25 min |
 
-## Verdicts (24)
+## Verdicts (25)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-29 | P-0036 | SportsGameOdds API (key in the PROTEUS vault): which soccer competitions and markets does the amateur tier carry, and at what rate limit | **works** | Amateur tier: 10 requests a minute, soccer limited to Champions League and MLS (Nations League 400). A Champions League event carries 476 odd ids incl. cornerKicks, bothTeamsScored, first and last scorer, assists; no cards. Useless for the Pitch's competitions, first keyed corners source for the Champions League. | `experiments/2026-09-29-P-0036` | not run |
 | 2026-09-28 | P-0032 | pump.fun poller v2: 10 pages a poll at 2 min, plus each new pump-fun pool's attributes at first sight, so launches are not missed (P-0014 saw half) and the backlog question about minute five gets data | **works** | Built and loaded (launchctl bootstrap rc 0 via the script): 6 pages every 2 min with trimmed first-sight and 5-minute snapshots for pump-fun and pumpswap pools; hand poll of 10 pages drew 429 from page 6, so 6 pages 4 s apart with one retry; first launchd poll returned 120 rows in 33 s with one 429 recovered. Runs until 29 Sep 22:54 UTC; scored by P-0033 after 30 Sep. | `experiments/2026-09-28-P-0032` | 3 min, 22 calls, 0 denied |
 | 2026-09-28 | P-0014 | pump.fun graduation rate over a full day: poller running since 27 Sep 10:14 UTC (launchd com.proteus.p0014, stops itself after 24h); score experiments/2026-09-27-P-0014 with sandbox/p0014_poller.py summary | **works** | First long-running job held: 284 polls at 5 min over 24h, 0 errors, stopped and unloaded itself (launchctl finds no service). 9,910 pools, 7,326 pump.fun launches (a floor: the 40-row feed saturated on 129 of 284 polls) and 757 pumpswap graduations, about 1 in 10, upper bound since untraded launches never list; matched by name, median launch-to-graduation 11 min, p90 4.8 h. Scored in step 5 tonight; write-up in the 27 Sep folder. | `experiments/2026-09-27-P-0014` | 0 min, 7 calls, 1 denied |
 | | | | | denied: Bash `launchctl print gui/501/com.proteus.p0014` | | |
