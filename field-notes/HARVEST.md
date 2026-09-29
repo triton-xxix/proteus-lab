@@ -2,24 +2,33 @@
 
 One line per item the harvester judged. Rendered by `bin/harvest.py` from `field-notes/harvest.jsonl`; design in
 `field-notes/HARVEST-DESIGN.md`. Each kept entry records the **mechanism** (how it works), the **claim** (what the
-source says) and whether it is **testable** keyless tonight; testable ones are queued in `PROBES.md` with source
-`harvest`. A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
+source says), whether it is **testable** keyless tonight, and since 29 Sep a **breakdown** of how it would be done and
+what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
+A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-48 judged over 3 harvest days, 36 kept, 11 testable, 11 queued as probes, 6 with a probe verdict.
+60 judged over 4 harvest days, 44 kept, 13 testable, 13 queued as probes, 8 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0059 | 2026-09-29 | github | [Barty-Bart/motion-graphics: Motion-graphics skills for Claude Code and Codex.](https://github.com/Barty-Bart/motion-graphics) | mechanism | tools-for-strangers | yes | P-0038 |
+| H-0058 | 2026-09-29 | vault | [Post-production for businesses that have long-form content but cannot cut it into short-fo](https://www.instagram.com/reel/DcU_MNWtIkg/) | mechanism | tools-for-strangers | no: The value is in a client engagement, and a keyless run would |  |
+| H-0056 | 2026-09-29 | arxiv | [Harness Learning Enables Generalizable Test-Time Adaptation](https://arxiv.org/abs/2609.35738) | mechanism | mechanism-hunting | no: It needs reinforcement learning training of a proposer model |  |
+| H-0055 | 2026-09-29 | github | [CaptureGrubEnchant/SolidWorks: SolidWorks MCP Server connects an AI assistant to a running](https://github.com/CaptureGrubEnchant/SolidWorks) | both | tech | no: It needs Windows and a licensed SolidWorks, and the install  |  |
+| H-0054 | 2026-09-29 | vault | [Media-buying commission taken as a share of a brand's ad budget]() | mechanism | mechanism-hunting | no: It is a service arrangement with clients and ad accounts, an |  |
+| H-0052 | 2026-09-29 | arxiv | [TokenCast: Forecasting Token Consumption During LLM Agent Execution](https://arxiv.org/abs/2609.35760) | mechanism | forecasting | yes | P-0037 |
+| H-0051 | 2026-09-29 | github | [AgentSystemLabs/agent-office: A cartoon 3D office where your team hires Claude Code worker](https://github.com/AgentSystemLabs/agent-office) | both | tools-for-strangers | no: It needs a signed-in agent CLI and gh auth, and installs thr |  |
+| H-0049 | 2026-09-29 | vault | [Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-]() | mechanism | tools-for-strangers | no: The classroom sits behind a paid login and the pull needs an |  |
 | H-0048 | 2026-09-28 | hn | [Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents](https://www.openappa.com/) | both | mechanism-hunting | no: Reproducing the benchmarks needs LLM agent runs, and the num |  |
-| H-0046 | 2026-09-28 | github | [jkawamoto/mcp-youtube-transcript: MCP server retrieving transcripts of YouTube videos](https://github.com/jkawamoto/mcp-youtube-transcript) | mechanism | tools-for-strangers | yes | P-0031 |
+| H-0046 | 2026-09-28 | github | [jkawamoto/mcp-youtube-transcript: MCP server retrieving transcripts of YouTube videos](https://github.com/jkawamoto/mcp-youtube-transcript) | mechanism | tools-for-strangers | yes | P-0031 **works** |
 | H-0045 | 2026-09-28 | hn | [Launch HN: Vespper (YC F24) – SOTA Docx MCP](https://www.vespper.com/blog/launching-vespper-docx-mcp) | both | tools-for-strangers | no: Needs a Vespper account and its hosted model, and the benchm |  |
 | H-0043 | 2026-09-28 | arxiv | [A Safety-Bounded SDC-to-MCP Gateway for Medical AI Agents](https://arxiv.org/abs/2609.31358) | mechanism | mechanism-hunting | no: Needs SDC device simulators and the authors' prototype, whic |  |
 | H-0042 | 2026-09-28 | github | [samyost1/3dicon: One prompt in, a looping animated 3D icon out — with real transparency. A](https://github.com/samyost1/3dicon) | mechanism | tools-for-strangers | no: The pipeline needs an OpenRouter key and paid image and vide |  |
 | H-0040 | 2026-09-28 | youtube | [Agent Memory EXPLAINED - Complete Architecture](https://www.youtube.com/watch?v=aYfZN8t6AQs) | mechanism | mechanism-hunting | no: Running Mem0 needs an LLM for fact extraction, and no 30 min |  |
 | H-0039 | 2026-09-28 | arxiv | [Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessmen](https://arxiv.org/abs/2609.31524) | mechanism | tech | no: Needs the benchmark data and trained models, and no runnable |  |
 | H-0038 | 2026-09-28 | github | [lemomo-ai/lemo-opuscar: 39 film styles, each a reusable style prompt plus a short film mad](https://github.com/lemomo-ai/lemo-opuscar) | mechanism | tools-for-strangers | no: Directing a film needs a Claude agent run against the skill, |  |
-| H-0037 | 2026-09-28 | hn | [Show HN: HN.watch – Videos of all Hacker News posts](https://hn.watch/) | both | tools-for-strangers | yes | P-0030 |
+| H-0037 | 2026-09-28 | hn | [Show HN: HN.watch – Videos of all Hacker News posts](https://hn.watch/) | both | tools-for-strangers | yes | P-0030 **blocked** |
 | H-0036 | 2026-09-27 | github | [alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interacti](https://github.com/alexgreensh/anidoodle) | mechanism | tools-for-strangers | yes | P-0028 |
 | H-0034 | 2026-09-27 | awesome | [lightpanda-io/browser (new in awesome-mcp-servers)](https://github.com/lightpanda-io/browser) | both | mechanism-hunting | yes | P-0027 **works** |
 | H-0033 | 2026-09-27 | youtube | [How to Build An Expected Goals Model 1: Data and Model](https://www.youtube.com/watch?v=bpjLyFyLlXs) | mechanism | desk:pitch | no: This part of the transcript is conceptual framing with no fo |  |
@@ -49,6 +58,108 @@ source says) and whether it is **testable** keyless tonight; testable ones are q
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0059 Barty-Bart/motion-graphics: Motion-graphics skills for Claude Code and Codex.
+2026-09-29, github, https://github.com/Barty-Bart/motion-graphics
+
+- **Mechanism:** Each clip is a small HTML file on a shared engine where every frame is a pure function of time, with springs as closed-form step responses and a sum of one spring per target change. Headless Chromium via Playwright captures four sub-frames per frame across a 180 degree shutter, and ffmpeg blends them into motion blur. A skill plans clips from a transcript with estimated word timings, then renders MP4 or transparent ProRes 4444.
+- **Claim:** Given a video and a transcript, Claude Code plans, animates and renders motion-graphic B-roll timed to the words.
+- **Testable:** yes. Does the shipped opus-aoe2 example render locally through Playwright and ffmpeg, and are two renders of the same clip byte-identical? Queued as P-0038.
+- **Idea on its own:** sound. Time-pure frames make any frame renderable alone and blur by sub-frame averaging is a standard, correct technique.
+- **How it would be done:** Clone the repo, run the example clips through its Playwright capture and ffmpeg blend, then hash two renders to test determinism. To use it for the clipping service, feed it a transcript and let the plan table choose cutaways versus side panels, then compare against what HyperFrames produces for the same script. The part worth borrowing is the closed-form spring engine and the 180 degree shutter blend, which could be ported into a HyperFrames composition.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents, local transcription
+- **To fetch:** motion-graphics https://github.com/Barty-Bart/motion-graphics (The skill, engine and worked example.); Playwright https://github.com/microsoft/playwright (Headless Chromium frame capture.); ffmpeg https://ffmpeg.org/ (Sub-frame blending and ProRes 4444 encoding.)
+- **Field Notes line:** motion-broll renders animation as pure functions of time, with motion blur from four blended sub-frames per frame; same idea as HyperFrames' seek-safe rule.
+
+### H-0058 Post-production for businesses that have long-form content but cannot cut it into short-form
+2026-09-29, vault, https://www.instagram.com/reel/DcU_MNWtIkg/
+
+- **Mechanism:** A business already publishes long-form video such as talks, podcasts or site footage. A service takes that footage, picks the strongest moments, cuts them into short vertical clips with captions and a hook, and supplies them on a monthly retainer for the client to post. The engine is transcription to find moments, an editor or composer to cut and caption, and a review step, with the client's leads as the measure of success.
+- **Claim:** Cutting a company's long-form content into short-form that brings leads underpins an agency that reports 747,000 dollars personal income in 12 months, unaudited.
+- **Testable:** no. The value is in a client engagement, and a keyless run would only test the cutting pipeline, not the idea. Needs: A client with long-form footage and posting access..
+- **Idea on its own:** sound. Businesses with long-form content and no editing capacity are a real, standing need, and the claimed earnings are marketing rather than evidence.
+- **How it would be done:** Transcribe the client's footage locally, have a child rank candidate segments by hook strength and self-contained meaning, then cut each with ffmpeg and compose captions and framing in HyperFrames. Produce a batch per month and send it for approval before posting. A person handles the client conversation, the choice of what suits the brand, and any compliance sign-off. A live test case is a client with a single piece of footage that already worked.
+- **Stack already covers:** HyperFrames (video compose, captions, render), local transcription, ElevenLabs (voice), Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org/ (Cutting, cropping to vertical, and burning captions.); OpusClip alternatives: ClipsAI https://github.com/ClipsAI/clipsai (Open-source library that finds clip-worthy segments in long video.)
+- **Missing:** A first paying client and a portfolio of before and after clips.
+- **Field Notes line:** Clipping as a service: transcribe a business's long video, pick the moments, cut captioned shorts on a retainer; the stack already owns the cutting half.
+
+### H-0056 Harness Learning Enables Generalizable Test-Time Adaptation
+2026-09-29, arxiv, https://arxiv.org/abs/2609.35738
+
+- **Mechanism:** The agent is split into a solver model and a harness, the program that orchestrates its calls and tools. A separate proposer model is trained with reinforcement learning to rewrite the harness code using feedback from executing it, with the reward being the task score of the revised harness. At test time the proposer refines the harness over several runs on a new task with no weight updates. Experiments are on reasoning and multi-hop question answering.
+- **Claim:** A trained proposer that revises an agent's harness from execution feedback improves revision quality and transfers to unseen tasks.
+- **Testable:** no. It needs reinforcement learning training of a proposer model, which no keyless 30 minute run can reproduce. Needs: GPU training and a model to fine-tune..
+- **Idea on its own:** needs-a-run. Revising code from execution feedback is plausible, but gains are shown only on reasoning and multi-hop QA and revision sequences help inconsistently.
+- **How it would be done:** A cheap version needs no training: after each nightly run, give a child the run log and the current skill or script, ask for one revision, and keep it only if a fixed score on a small test set rises. That copies the loop without the reinforcement learning. The paper's own value would be the reward design and the test sets, which can be read from the paper and code if released.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** arXiv 2609.35738 https://arxiv.org/abs/2609.35738 (Check for a linked code release and the evaluation sets.)
+- **Missing:** A trained proposer model; nobody outside the authors has one.
+- **Field Notes line:** Harness learning trains a model to rewrite an agent's own scaffolding from run feedback, using edits to code as the update step instead of weights.
+
+### H-0055 CaptureGrubEnchant/SolidWorks: SolidWorks MCP Server connects an AI assistant to a running SolidWorks instance. Sketch, 
+2026-09-29, github, https://github.com/CaptureGrubEnchant/SolidWorks
+
+- **Mechanism:** An MCP server in Node drives a running SolidWorks over Windows COM using the winax bridge. A parameter counter routes calls: 12 or fewer arguments go straight through COM, and 13 or more, such as FeatureExtrusion3 with over 20, are turned into a generated VBA macro that SolidWorks runs itself, with fallback on failure. It walks the feature tree rather than selecting by name. The README admits most tools are unvalidated on a live instance.
+- **Claim:** Lets an AI assistant sketch, extrude, fillet and export STEP or STL in a running SolidWorks.
+- **Testable:** no. It needs Windows and a licensed SolidWorks, and the install steps pipe scripts from unrelated domains that should not be run. Needs: Windows, a SolidWorks licence, and a trustworthy install source..
+- **Idea on its own:** sound. Routing awkward many-argument COM calls through generated macros is a genuine workaround, though this repo's install path points to unrelated domains and warns most tools are untested.
+- **How it would be done:** The pattern applies to any desktop CAD or Office app with a COM or scripting API: expose small tools over MCP, count parameters, and emit a macro for the heavy calls. Building it would mean writing a handful of tools against a real instance and validating each, which the repo has not done. Read the source only from the GitHub repo, not the zip or the PowerShell one-liner, since those come from other domains.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** FreeCAD https://github.com/FreeCAD/FreeCAD (Free CAD with a Python API on macOS, a safe place to try the same agent-drives-CAD idea.); CadQuery https://github.com/CadQuery/cadquery (Pure Python parametric CAD that an agent can drive with no GUI or licence.)
+- **Missing:** A validated, safely distributed SolidWorks bridge does not exist here; this one's install chain is suspect.
+- **Field Notes line:** A SolidWorks MCP server routes long CAD calls through generated VBA because COM bridges choke past 12 arguments; treat its install script as hostile.
+
+### H-0054 Media-buying commission taken as a share of a brand's ad budget
+2026-09-29, vault, 
+
+- **Mechanism:** An operator buys or places ads on a brand's behalf and takes a percentage of the ad budget as fee, here quoted as 20 percent of a 100k budget. The service is allocation and optimisation: choosing channels, creatives and audiences, then reporting results, with the brand paying platforms directly or through the agency. Revenue scales with spend managed, not with hours, so it depends on the operator's record of return on ad spend.
+- **Claim:** Media buying for a brand is paid at 20 percent of a 100k ad budget.
+- **Testable:** no. It is a service arrangement with clients and ad accounts, and there is nothing to run keyless. Needs: A client with an ad budget and ad platform account access..
+- **Idea on its own:** needs-a-run. Commission on spend is a standard agency model, but the 20 percent figure is high against typical 10 to 15 percent norms and rests on a claim nobody has audited.
+- **How it would be done:** The work is: get access to the client's ad accounts, set up tracking, launch tests across creatives, read the results daily and move budget toward what converts, then send a weekly report. A script can generate creative variants and pull platform reports, but the judgement of where to shift money and the client relationship is a person's job. A hired media buyer would run the accounts, with the agency owning creative production, which is where the video stack fits.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), HeyGen and Tavus (avatars), Claude Code with skills and sub-agents
+- **To fetch:** Meta Ad Library https://www.facebook.com/ads/library/ (Public data for seeing what a brand's competitors run before pitching.)
+- **Missing:** A track record of return on ad spend on real budgets, which nobody in the stack holds.
+- **Field Notes line:** A media buyer's fee is a cut of ad spend, so income scales with budget managed; the quoted 20 percent of 100k is the kit's number, unverified.
+
+### H-0052 TokenCast: Forecasting Token Consumption During LLM Agent Execution
+2026-09-29, arxiv, https://arxiv.org/abs/2609.35760
+
+- **Mechanism:** TokenCast splits an agent run into execution segments and learns for each segment two numbers: its own token use and how much context it adds. Composing segments gives a cumulative forecast that includes the re-read cost, since every later call re-sends earlier context. As the run proceeds, observed segments replace guesses and the forecast updates with no extra LLM call. It is trained on traces from SWE-bench Verified and three other suites across six models.
+- **Claim:** Forecasts agent token use with 14.5% lower mean absolute error than the best comparator, and budget control uses 21.3% fewer tokens at matched completion.
+- **Testable:** yes. Does the TokenCast repo ship trace data and a script that reproduces a mean absolute error on one suite within a factor of two of the paper's figure? Queued as P-0037.
+- **Idea on its own:** sound. Context re-read makes agent cost superlinear in steps, so a running cumulative forecast with segment-level features is a reasonable design and is cheap to check against traces.
+- **How it would be done:** Clone the repo, find the released traces and the evaluation script, and run the baseline and TokenCast on one suite to compare error. To use it here, log per-call input and output tokens from the sub-agent transcripts Proteus already parses for USAGE.md, cut them into segments by tool call, and fit the same composition on Proteus's own runs. The output would be a nightly forecast against a call cap, which feeds the probe loop's budget check.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** TokenCast https://github.com/DEFENSE-SEU/TokenCast (The paper's code and evaluation scripts.); SWE-bench Verified https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified (The task suite whose traces the paper evaluates on.)
+- **Field Notes line:** TokenCast predicts an agent's total token bill mid-run in 33 milliseconds by adding up per-step costs plus the re-read tax; the code is public.
+
+### H-0051 AgentSystemLabs/agent-office: A cartoon 3D office where your team hires Claude Code workers at desks, shares live termin
+2026-09-29, github, https://github.com/AgentSystemLabs/agent-office
+
+- **Mechanism:** A Node server spawns Claude Code, Codex or OpenCode CLIs inside pseudo-terminals per worker, one git worktree per task, and streams each terminal over a websocket to a browser client drawn as a 3D office. Status (needs input, finished) is inferred from the terminal and shown as an animated worker. GitHub issues and PRs come from the gh CLI and are pinned to boards, and the same state is exposed in a 2D /lite view for phones.
+- **Claim:** A shared 3D office where a team runs Claude Code workers at desks, shares live terminals and tracks GitHub issues and PRs.
+- **Testable:** no. It needs a signed-in agent CLI and gh auth, and installs through a curl-pipe-bash script, none of which fit a keyless sandbox run. Needs: A signed-in agent CLI and GitHub CLI login..
+- **Idea on its own:** needs-a-run. The useful part, a pty-per-agent dashboard with a longest-waiting queue, is sound, but the author warns it is one person's workflow and changes weekly.
+- **How it would be done:** The transferable piece is a small supervisor: launch each agent in a pty with tmux or node-pty, give each its own git worktree, and detect the waiting state from terminal output or hooks. Expose the list over a tiny web page with a 'longest waiting first' sort. That can be built in an evening without the 3D layer. Reading docs/how-it-works.md would show how they detect the waiting state, which is the one hard part.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** agent-office https://github.com/AgentSystemLabs/agent-office (Read docs/how-it-works.md for the waiting-state detection.); node-pty https://github.com/microsoft/node-pty (Pseudo-terminal spawning for a home-built supervisor.); tmux https://github.com/tmux/tmux (Simplest way to keep many agent sessions alive and inspectable.)
+- **Missing:** Nobody has a reliable, agent-agnostic signal for 'this agent is waiting for a human'.
+- **Field Notes line:** Agent Office turns parallel coding agents into desks in a 3D room, with a worktree each and a ding when one needs you; the idea is the queue, not the cartoon.
+
+### H-0049 Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-video-bootcamp, cancel before 
+2026-09-29, vault, 
+
+- **Mechanism:** A paid Skool community holds its course as a classroom of video lessons. The idea is to join for a single billing month, pull each lesson's video, transcribe it locally, and file the transcripts as notes so the content can be searched and mined by agents after the membership ends. It depends on the classroom videos being streamable to a logged-in browser session, and on local transcription turning them into text at a fraction of real time.
+- **Claim:** A nine dollar a month AI video course with nine phases can be extracted into text and cancelled before renewal.
+- **Testable:** no. The classroom sits behind a paid login and the pull needs an interactive browser session, so nothing can be run keyless tonight. Needs: A paid Skool membership and an interactive logged-in browser session..
+- **Idea on its own:** sound. Transcribing lessons you paid for into private notes is a plain learning workflow, provided the transcripts stay private and are not republished.
+- **How it would be done:** Join, then in an interactive browser session list every lesson in the classroom and record each video URL or stream manifest. Download each video the platform already serves to the member, run local transcription on the audio track, and write one markdown note per lesson with the phase and title as headings. Hand batches of transcripts to Haiku or Sonnet children to digest into a mechanism summary per phase, and keep only the digests in the shared notes. Set a calendar stop before day 28 so the cancel happens with a margin. A person would only be needed for the login and the cancel click.
+- **Stack already covers:** local transcription, Claude Code with skills and sub-agents, keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** yt-dlp https://github.com/yt-dlp/yt-dlp (Pulls embedded lesson videos (Loom, Vimeo, YouTube) that a Skool classroom links to.); whisper.cpp https://github.com/ggml-org/whisper.cpp (Fast local transcription on the Mac if the current local pipeline is slow.)
+- **Missing:** Nobody has the Skool login flow scripted; it needs a person present in an interactive session.
+- **Field Notes line:** Rent a course for a month, transcribe every lesson locally, keep the text, cancel before renewal: a course becomes a searchable note pile for nine dollars.
 
 ### H-0048 Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents
 2026-09-28, hn, https://www.openappa.com/
@@ -338,10 +449,48 @@ source says) and whether it is **testable** keyless tonight; testable ones are q
 - **Testable:** no. It is judged by visual appearance in a browser, not by a headless pass/fail from a sandbox script.
 - **Field Notes line:** A joke web tool remixes fonts by hijacking OpenType ligature substitution, all computed live in-browser via a Python interpreter compiled to WASM.
 
+## Vault threads: Luke's links, judged as ideas
+
+Themes the vault split out of links Luke sent it, read from `field-notes/vault-threads.json` (one way). The vault's status
+is what its side decided about the vendor or Luke's time; the idea column is this side's view of the idea alone.
+
+| id | date | theme | vault said | idea | testable | probe |
+|---|---|---|---|---|---|---|
+| H-0058 | 2026-09-29 | Post-production for businesses that have long-form content but cannot cut it into short-fo | open | sound | no |  |
+| H-0054 | 2026-09-29 | Media-buying commission taken as a share of a brand's ad budget | open | needs-a-run | no |  |
+| H-0049 | 2026-09-29 | Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai- | open | sound | no |  |
+
+## Tools shelf
+
+Tools, repos and datasets the judge said to fetch, kept here even when nothing needs them today. Each is a candidate
+for a ran-it night: install it in `sandbox/`, run it, write the verdict.
+
+| id | date | tool | why | from | status |
+|---|---|---|---|---|---|
+| T-0015 | 2026-09-29 | [Playwright](https://github.com/microsoft/playwright) | Headless Chromium frame capture. | H-0059 (Barty-Bart/motion-graphics: Motion-graphics skills) | shelf |
+| T-0014 | 2026-09-29 | [motion-graphics](https://github.com/Barty-Bart/motion-graphics) | The skill, engine and worked example. | H-0059 (Barty-Bart/motion-graphics: Motion-graphics skills) | shelf |
+| T-0013 | 2026-09-29 | [OpusClip alternatives: ClipsAI](https://github.com/ClipsAI/clipsai) | Open-source library that finds clip-worthy segments in long video. | H-0058 (Post-production for businesses that have long-form) | shelf |
+| T-0012 | 2026-09-29 | [ffmpeg](https://ffmpeg.org/) | Cutting, cropping to vertical, and burning captions. | H-0058 (Post-production for businesses that have long-form) | shelf |
+| T-0011 | 2026-09-29 | [arXiv 2609.35738](https://arxiv.org/abs/2609.35738) | Check for a linked code release and the evaluation sets. | H-0056 (Harness Learning Enables Generalizable Test-Time A) | shelf |
+| T-0010 | 2026-09-29 | [CadQuery](https://github.com/CadQuery/cadquery) | Pure Python parametric CAD that an agent can drive with no GUI or licence. | H-0055 (CaptureGrubEnchant/SolidWorks: SolidWorks MCP Serv) | shelf |
+| T-0009 | 2026-09-29 | [FreeCAD](https://github.com/FreeCAD/FreeCAD) | Free CAD with a Python API on macOS, a safe place to try the same agent-drives-CAD idea. | H-0055 (CaptureGrubEnchant/SolidWorks: SolidWorks MCP Serv) | shelf |
+| T-0008 | 2026-09-29 | [Meta Ad Library](https://www.facebook.com/ads/library/) | Public data for seeing what a brand's competitors run before pitching. | H-0054 (Media-buying commission taken as a share of a bran) | shelf |
+| T-0007 | 2026-09-29 | [SWE-bench Verified](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified) | The task suite whose traces the paper evaluates on. | H-0052 (TokenCast: Forecasting Token Consumption During LL) | shelf |
+| T-0006 | 2026-09-29 | [TokenCast](https://github.com/DEFENSE-SEU/TokenCast) | The paper's code and evaluation scripts. | H-0052 (TokenCast: Forecasting Token Consumption During LL) | shelf |
+| T-0005 | 2026-09-29 | [tmux](https://github.com/tmux/tmux) | Simplest way to keep many agent sessions alive and inspectable. | H-0051 (AgentSystemLabs/agent-office: A cartoon 3D office ) | shelf |
+| T-0004 | 2026-09-29 | [node-pty](https://github.com/microsoft/node-pty) | Pseudo-terminal spawning for a home-built supervisor. | H-0051 (AgentSystemLabs/agent-office: A cartoon 3D office ) | shelf |
+| T-0003 | 2026-09-29 | [agent-office](https://github.com/AgentSystemLabs/agent-office) | Read docs/how-it-works.md for the waiting-state detection. | H-0051 (AgentSystemLabs/agent-office: A cartoon 3D office ) | shelf |
+| T-0002 | 2026-09-29 | [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Fast local transcription on the Mac if the current local pipeline is slow. | H-0049 (Join for one month with Skool neptune, transcribe ) | shelf |
+| T-0001 | 2026-09-29 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Pulls embedded lesson videos (Loom, Vimeo, YouTube) that a Skool classroom links to. | H-0049 (Join for one month with Skool neptune, transcribe ) | shelf |
+
 ## Skipped
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0060 | 2026-09-29 | youtube | [Building a Real App with Claude Code (Start to Finish)](https://www.youtube.com/watch?v=misjUj4Q_ho) | Transcript unavailable and a generic build-an-app tutorial with no mechanism to record. |
+| H-0057 | 2026-09-29 | youtube | [MCP Servers Explained & Built](https://www.youtube.com/watch?v=He8tUwLzLnU) | Transcript unavailable and a generic MCP tutorial title with no mechanism to record. |
+| H-0053 | 2026-09-29 | youtube | [Claude Code Full Course 2026 / How Senior Engineers Actually Build with AI](https://www.youtube.com/watch?v=u2QqWkMv3Lg) | Transcript unavailable and the title is a generic beginner course claim with no mechanism. |
+| H-0050 | 2026-09-29 | hn | [Show HN: Durable Actor Session Protocol](https://dasp-protocol.github.io/dasp/) | The post text names a protocol and its motivation but gives no mechanism, and the comments show the author has not yet a |
 | H-0047 | 2026-09-28 | youtube | [Car Depreciation Explained and How to Beat it](https://www.youtube.com/watch?v=XWz0HiXVrIY) | Generic consumer advice with a lender's marketing claims and no mechanism or data source; its own example figures are on |
 | H-0044 | 2026-09-28 | youtube | [Open Data - How do I connect data using API](https://www.youtube.com/watch?v=_00jicHRIKk) | A three minute how-to for one portal that needs an account and API key, with no mechanism beyond a CSV export link. |
 | H-0041 | 2026-09-28 | hn | [Show HN: PaperMono, e-ink fridge magnet shopping list with mobile web page](https://github.com/seamusc/papermono-shopping-list) | A hobby build on specific hardware with no mechanism beyond an ESP32 web sync, and the author says it was vibe-coded. |

@@ -1,5 +1,5 @@
 {
- "next_id": 37,
+ "next_id": 39,
  "items": [
   {
    "id": "P-0001",
@@ -763,6 +763,46 @@
    "artefacts": [
     "experiments/2026-09-29-P-0036"
    ],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0037",
+   "title": "TokenCast: does the public repo reproduce its token-forecast error on one suite from shipped traces?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-09-29",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0038",
+   "title": "motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-09-29",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
    "minutes": null,
    "calls": null,
    "denied": [],

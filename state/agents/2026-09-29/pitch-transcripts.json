@@ -1,0 +1,112 @@
+{
+  "videos": [
+    {
+      "id": "24e_Z4WHR48",
+      "title": "Predict the Outcome of Football Matches Using this Model",
+      "channel": "Kie Millett",
+      "summary": "A step-by-step Excel build of a plain independent-Poisson match model from understat home/away goals (or xG) per game, using attack and defence strengths relative to the league average, then deriving 1X2, under/over and correct-score odds to compare with Betfair. It is not Dixon-Coles: there is no low-score correction, no time decay and no fitted parameters, and he says himself it should be one input among several.",
+      "claims": [
+        {
+          "quote": "the older the data goes it becomes less and less relevant",
+          "where": "about 03:19",
+          "checkable": "yes",
+          "how": "Backtest rolling windows (last 5, 10, 20 games, full season, exponential decay) on EPL results and compare RPS or log loss.",
+          "suspicious": "no, but he gives no evidence and says there is 'no perfect number' of games"
+        },
+        {
+          "quote": "the home team of a 23.98 chance of scoring two goals",
+          "where": "about 13:47",
+          "checkable": "yes (arithmetic only)",
+          "how": "Recompute the Poisson pmf; a 23.98% P(2) implies a mean of roughly 1.4 or 2.9. The specific fixture is not named, so only the method can be checked, not the input.",
+          "suspicious": "no, the number is plausible"
+        },
+        {
+          "quote": "people have been doing this since the 1970s and 1980s",
+          "where": "about 02:14",
+          "checkable": "no",
+          "how": "Literature check only (Moroney 1951, Reep 1971, Maher 1982, Dixon-Coles 1997), not results data.",
+          "suspicious": "slightly loose: the earliest work is 1950s, and the video ignores Dixon-Coles"
+        },
+        {
+          "quote": "there is subtle differences sometimes significant differences",
+          "where": "about 19:17",
+          "checkable": "partly",
+          "how": "Compare a goals-based and an xG-based Poisson on the same EPL matches; needs xG data (understat), not results alone. Results alone can test only the goals version.",
+          "suspicious": "no numbers given, so there is nothing to falsify; the claim is qualitative"
+        }
+      ]
+    },
+    {
+      "id": "vg5BxFCdYnE",
+      "title": "Project Football Matches with the POISSON Distribution | Excel Beginner Tutorial",
+      "channel": "Excel LADZ",
+      "summary": "An Excel tutorial building attack and defence ratings (goals per game over league average), expected goals per fixture, a Poisson score grid and win/draw/loss probabilities, using a Premier League table with Man City vs Everton and Southampton vs Everton as examples. Ratings use total-season goals with no home/away split, so home advantage is not modelled at all, and there is no Dixon-Coles correction.",
+      "claims": [
+        {
+          "quote": "on average a team scores 1.42 goals a game in this competition",
+          "where": "about 00:36",
+          "checkable": "yes",
+          "how": "Mean goals per team per match in the EPL season shown; 1.42 (2.84 per game) matches recent EPL seasons, so the season can be identified and confirmed from results data.",
+          "suspicious": "no"
+        },
+        {
+          "quote": "57 chance of scoring one goal",
+          "where": "about 10:33",
+          "checkable": "yes (arithmetic)",
+          "how": "The maximum Poisson P(1 goal) is 36.8% (mean 1.0), so 57% is impossible for a Poisson. Likely a transcription or speech error (possibly 37 or 35).",
+          "suspicious": "yes, mathematically impossible under the stated model"
+        },
+        {
+          "quote": "Manchester city are the overwhelming favorites to win the match at 84.48",
+          "where": "about 13:57",
+          "checkable": "yes",
+          "how": "Compare with the actual home win rate of a top-two side against bottom-half sides in EPL results. A model with no home advantage and season-average strengths tends to overstate extremes; a calibration table would show it.",
+          "suspicious": "mildly: high, and no calibration is shown. Also, City's stated 5% P(0), 16.24% P(1) and 23.33% P(2) are mutually inconsistent for any one mean (ratios imply about 3.25 and 2.87), so the 5% is probably a transcript error"
+        },
+        {
+          "quote": "the most likely score line is a one nil Everton win with a 14.2 percent",
+          "where": "about 19:04",
+          "checkable": "yes",
+          "how": "Internally consistent: 39.01% x 31.82% gives 12.4% for 0-0 and 14.2% for 0-1 with means near 0.94 and 1.15. Externally, compare predicted modal scoreline frequency with the observed frequency of 1-0 results (roughly 10 to 12% of EPL matches).",
+          "suspicious": "no, arithmetic checks out. Note 'attack rating 1.84' then '1.85' and 'scores 1.85 more goals' are garbled statements of a ratio"
+        }
+      ]
+    },
+    {
+      "id": "YNB87k9p4tA",
+      "title": "Lesson 2: Statistical models of football",
+      "channel": "David Sumpter",
+      "summary": "A university-style lesson covering linear regression (age vs minutes played, La Liga), logistic regression for expected goals (shot angle and distance, StatsBomb/Wyscout style data) and a brief pointer to Poisson regression for goals, with no Dixon-Coles content or match-forecasting results. Its only Poisson-relevant statement is that goals are infrequent and roughly independent.",
+      "claims": [
+        {
+          "quote": "the r squared in this in this case is about 14",
+          "where": "about 09:36 and again 12:26",
+          "checkable": "no",
+          "how": "Needs La Liga player minutes and age data, not EPL match results.",
+          "suspicious": "yes: he states 14% for the linear fit on 20 points, then says he gave the wrong answer and the full-data model is also 14, and that the linear one is lower. The transcript is self-contradictory"
+        },
+        {
+          "quote": "penalties have scored about 75 percent of the time",
+          "where": "about 25:22",
+          "checkable": "no",
+          "how": "Needs shot-level penalty data (Understat, FBref, Opta), not match results. Published EPL conversion is about 76 to 79%, so it is plausible.",
+          "suspicious": "no"
+        },
+        {
+          "quote": "their goals tend to be relatively independent of each other",
+          "where": "about 27:35",
+          "checkable": "yes",
+          "how": "On EPL results test the home-goals vs away-goals correlation and the Poisson dispersion (variance vs mean). Dixon-Coles exists because low scores (0-0, 1-1) are not quite independent.",
+          "suspicious": "overstated: 'Poisson is the best' for such events is a strong claim and independence is only approximate"
+        },
+        {
+          "quote": "probability of a goal is seven percent it's 15 and it's 30",
+          "where": "about 23:42",
+          "checkable": "no",
+          "how": "Contour levels on an angle-based xG model; needs shot coordinates.",
+          "suspicious": "no, they are just the contour levels chosen for the plot"
+        }
+      ]
+    }
+  ]
+}
