@@ -5,7 +5,11 @@ each). Prepaid balances count when drawn down. Month resets on the 1st. Mirrored
 
 ## Card status
 
-Card exists in 1Password as "proteus debit Card", tagged proteus, not yet loaded (2026-09-22). Proteus is on free tiers and existing keys until it names a service.
+Card exists in 1Password as "proteus debit Card", tagged proteus. Loaded with **£40.00** by Luke on 2026-09-29 (his
+figure, given in session; not yet confirmed against a statement). That is the autonomous line for the rest of
+September: £40 on the card, inside the charter's £50. Proteus is on free tiers and existing keys until it names a
+service. Keys live in the 1Password vault "Proteus", read at night through the service account (`bin/secrets.py`);
+the card item stays in Luke's own vault, because no script ever needs it.
 
 ## September 2026
 

@@ -2,7 +2,8 @@
 
 Version 1 was drafted 2026-09-22 and signed by Luke the same day, then amended 24/09/2026 with the
 Fan-out section. Version 2 was drafted 2026-09-24 by the agent from Luke's notes of that day and
-two nights of run logs. It is unsigned. Version 1 stays in force until Luke signs this one. This is
+two nights of run logs, amended from his review of 27 Sep, and signed 29/09/2026 on his express
+word given in session (Signature below). Version 2 is in force. This is
 the only rules file Proteus reads. Nothing in the OBSIDIAN vault's policy.yaml, CHARTER.md or ledger
 binds Proteus unless it is copied in here.
 
@@ -349,7 +350,12 @@ Field Notes carry a `## Kill switch` block built from those lines, every week, e
 
 ## Signature
 
-Version 2 is unsigned. Version 1 (signed 22/09/2026, amended 24/09/2026) remains in force until
-Luke writes his name and the date below.
+Luke Boyd, 29/09/2026. Signed by Proteus on Luke's express instruction, given in an interactive
+session on 29 September 2026 ("Sign the charter V2. You have my explicit express permission to
+sign that so we can move on to V2"). Version 1 (signed 22/09/2026, amended 24/09/2026) is
+superseded from this date.
 
-Luke Boyd, date:
+Same session, same day, recorded here because the charter's money section is where they bite:
+the Proteus virtual card was loaded with £40, so the autonomous line for the rest of September
+2026 is £40, not £50, and `SPEND.md` says so. The 1Password service account `proteus-nightly`
+exists with read-only access to the vault called Proteus, read by `bin/secrets.py`.
