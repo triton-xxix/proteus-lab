@@ -806,16 +806,20 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-29",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-29T23:39:40+0100",
+   "verdict": "works",
+   "verdict_at": "2026-09-29T23:43:56+0100",
+   "note": "Example clip rendered offline twice from one self-contained HTML: 186 frames 1080p, 101s cold and 70s warm, byte-identical sha256 both times. Motion blur is four visible ghost samples, not a smooth smear.",
+   "artefacts": [
+    "experiments/2026-09-29-P-0038"
+   ],
+   "minutes": 4,
+   "calls": 21,
+   "denied": [
+    "Bash `/usr/bin/time -p /usr/local/bin/node /Users/triton/PROTEUS/sandbox/motion-broll/run-render`"
+   ],
    "luke": false
   }
  ]

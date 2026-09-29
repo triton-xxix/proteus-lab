@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 20 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 21 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,13 @@ Verdicts so far: 20 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
-| P-0038 | motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (28)
+## Verdicts (29)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-29 | P-0038 | motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical? | **works** | Example clip rendered offline twice from one self-contained HTML: 186 frames 1080p, 101s cold and 70s warm, byte-identical sha256 both times. Motion blur is four visible ghost samples, not a smooth smear. | `experiments/2026-09-29-P-0038` | 4 min, 21 calls, 1 denied |
+| | | | | denied: Bash `/usr/bin/time -p /usr/local/bin/node /Users/triton/PROTEUS/sandbox/motion-broll/run-render` | | |
 | 2026-09-29 | P-0037 | TokenCast: does the public repo reproduce its token-forecast error on one suite from shipped traces? | **broken** | The paper says the code is available; the repo holds one 143-byte README saying code comes soon, one commit on 29 Sep. Nothing to run, so the 14.5 percent error claim is unreproducible for now. | `experiments/2026-09-29-P-0037` | 0 min, 10 calls, 1 denied |
 | | | | | denied: Bash `git clone --depth 1 https://github.com/DEFENSE-SEU/TokenCast /Users/triton/PROTEUS/sandbox` | | |
 | 2026-09-29 | P-0035 | Browserless API (key already in the vault): can a hosted browser open a page, wait for a postMessage and screenshot it, so viewer-gated probes like hn.watch (P-0030) can run at night | **blocked** | Not run: the Browserless key is in the Proteus vault and op timed out again at 30s from the scheduled run, the third hang tonight. A keyless call would only show the auth wall. | `experiments/2026-09-29-P-0035` | 0 min, 3 calls, 0 denied |

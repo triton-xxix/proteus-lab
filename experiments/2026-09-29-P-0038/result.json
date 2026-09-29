@@ -1,0 +1,48 @@
+{
+ "runs": {
+  "a": {
+   "secs": 100.9,
+   "rc": 0,
+   "stdout": "rendered /Users/triton/PROTEUS/sandbox/motion-broll/out/a.mp4 186 frames",
+   "stderr": "",
+   "bytes": 464106,
+   "sha256": "17bf02a4feeffaa665457013e4214d64f2f37a8f64e4068474a1884b9e568727",
+   "probe": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "30000/1001",
+    "nb_read_frames": "186"
+   },
+   "framemd5": "eb09e24e4493287efe35499c77a2f1513b5db6ccef1630bf8c6b1ae110aa1100"
+  },
+  "b": {
+   "secs": 69.6,
+   "rc": 0,
+   "stdout": "rendered /Users/triton/PROTEUS/sandbox/motion-broll/out/b.mp4 186 frames",
+   "stderr": "",
+   "bytes": 464106,
+   "sha256": "17bf02a4feeffaa665457013e4214d64f2f37a8f64e4068474a1884b9e568727",
+   "probe": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "30000/1001",
+    "nb_read_frames": "186"
+   },
+   "framemd5": "eb09e24e4493287efe35499c77a2f1513b5db6ccef1630bf8c6b1ae110aa1100"
+  }
+ },
+ "summary": {
+  "file_identical": true,
+  "decoded_frames_identical": true,
+  "frames": [
+   186,
+   186
+  ],
+  "frames_differing": 0,
+  "first_diffs": []
+ }
+}
