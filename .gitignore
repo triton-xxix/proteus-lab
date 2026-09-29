@@ -16,3 +16,6 @@ __pycache__/
 .claude/settings.local.json
 .obsidian/
 .claude/settings.json
+
+# raw third-party course text and transcripts: local only, this repo is public
+field-notes/skool/
