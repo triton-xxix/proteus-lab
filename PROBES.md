@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 20 works, 0 broken, 4 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 20 works, 0 broken, 5 blocked, 2 not worth it. Killed: 2.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,14 +20,14 @@ Verdicts so far: 20 works, 0 broken, 4 blocked, 2 not worth it. Killed: 2.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
-| P-0035 | Browserless API (key already in the vault): can a hosted browser open a page, wait for a postMessage and screenshot it, so viewer-gated probes like hn.watch (P-0030) can run at night | persona | none |  | 0 | 25 min |
 | P-0037 | TokenCast: does the public repo reproduce its token-forecast error on one suite from shipped traces? | harvest | none |  | 0 | 30 min |
 | P-0038 | motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (26)
+## Verdicts (27)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-29 | P-0035 | Browserless API (key already in the vault): can a hosted browser open a page, wait for a postMessage and screenshot it, so viewer-gated probes like hn.watch (P-0030) can run at night | **blocked** | Not run: the Browserless key is in the Proteus vault and op timed out again at 30s from the scheduled run, the third hang tonight. A keyless call would only show the auth wall. | `experiments/2026-09-29-P-0035` | 0 min, 3 calls, 0 denied |
 | 2026-09-29 | P-0034 | Metaculus API with the vault token: pull open binary questions and community forecasts, measure the rate limit, and score the Pitch-adjacent sports questions if any exist (reopens P-0007) | **blocked** | The Metaculus pull never ran: the 1Password service account op call hung twice from the scheduled run (30s and 90s timeouts, no error). Same account worked interactively on 29 Sep, so the nightly sandbox or network is the likely cause, unverified. | `experiments/2026-09-29-P-0034` | 3 min, 15 calls, 1 denied |
 | | | | | denied: Bash `/usr/local/bin/op --version` | | |
 | 2026-09-29 | P-0036 | SportsGameOdds API (key in the PROTEUS vault): which soccer competitions and markets does the amateur tier carry, and at what rate limit | **works** | Amateur tier: 10 requests a minute, soccer limited to Champions League and MLS (Nations League 400). A Champions League event carries 476 odd ids incl. cornerKicks, bothTeamsScored, first and last scorer, assists; no cards. Useless for the Pitch's competitions, first keyed corners source for the Champions League. | `experiments/2026-09-29-P-0036` | not run |
