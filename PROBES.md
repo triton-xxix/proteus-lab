@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 19 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 
-## Queue (7 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,8 @@ Verdicts so far: 19 works, 0 broken, 3 blocked, 2 not worth it. Killed: 2.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
+| P-0034 | Metaculus API with the vault token: pull open binary questions and community forecasts, measure the rate limit, and score the Pitch-adjacent sports questions if any exist (reopens P-0007) | persona | none |  | 0 | 25 min |
+| P-0035 | Browserless API (key already in the vault): can a hosted browser open a page, wait for a postMessage and screenshot it, so viewer-gated probes like hn.watch (P-0030) can run at night | persona | none |  | 0 | 25 min |
 
 ## Verdicts (24)
 
