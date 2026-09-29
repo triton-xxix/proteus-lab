@@ -1,2 +1,557 @@
 {"ts": "2026-09-28T22:54:36Z", "rows": 100, "new": 100, "snaps": 156, "pending": 0, "last_page_all_new": 0, "secs": 17.0, "errors": ["page 6: HTTP Error 429: Too Many Requests", "page 7: HTTP Error 429: Too Many Requests", "page 8: HTTP Error 429: Too Many Requests", "page 9: HTTP Error 429: Too Many Requests", "page 10: HTTP Error 429: Too Many Requests"]}
 {"ts": "2026-09-28T22:56:08Z", "rows": 120, "new": 20, "snaps": 36, "pending": 0, "last_page_all_new": 1, "secs": 33.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T22:58:46Z", "rows": 100, "new": 68, "snaps": 102, "pending": 0, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:01:11Z", "rows": 120, "new": 99, "snaps": 140, "pending": 0, "last_page_all_new": 1, "secs": 24.9, "errors": []}
+{"ts": "2026-09-28T23:03:48Z", "rows": 100, "new": 77, "snaps": 126, "pending": 0, "last_page_all_new": 0, "secs": 36.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:06:13Z", "rows": 120, "new": 94, "snaps": 154, "pending": 0, "last_page_all_new": 0, "secs": 24.8, "errors": []}
+{"ts": "2026-09-28T23:08:51Z", "rows": 100, "new": 66, "snaps": 98, "pending": 0, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:11:17Z", "rows": 120, "new": 109, "snaps": 106, "pending": 72, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-28T23:13:54Z", "rows": 100, "new": 56, "snaps": 45, "pending": 117, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:16:19Z", "rows": 120, "new": 82, "snaps": 67, "pending": 184, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-28T23:18:57Z", "rows": 100, "new": 58, "snaps": 47, "pending": 231, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:21:22Z", "rows": 120, "new": 102, "snaps": 81, "pending": 312, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-28T23:24:00Z", "rows": 100, "new": 67, "snaps": 53, "pending": 365, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:26:38Z", "rows": 100, "new": 77, "snaps": 67, "pending": 432, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:29:11Z", "rows": 120, "new": 53, "snaps": 42, "pending": 474, "last_page_all_new": 0, "secs": 33.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:31:49Z", "rows": 100, "new": 87, "snaps": 70, "pending": 544, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:34:14Z", "rows": 120, "new": 91, "snaps": 79, "pending": 623, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-28T23:36:52Z", "rows": 100, "new": 73, "snaps": 59, "pending": 682, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:39:17Z", "rows": 120, "new": 88, "snaps": 65, "pending": 747, "last_page_all_new": 1, "secs": 25.0, "errors": []}
+{"ts": "2026-09-28T23:41:55Z", "rows": 100, "new": 77, "snaps": 66, "pending": 813, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:44:21Z", "rows": 120, "new": 99, "snaps": 84, "pending": 897, "last_page_all_new": 1, "secs": 25.3, "errors": []}
+{"ts": "2026-09-28T23:46:58Z", "rows": 100, "new": 68, "snaps": 50, "pending": 947, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:49:24Z", "rows": 120, "new": 92, "snaps": 70, "pending": 1017, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-28T23:52:02Z", "rows": 100, "new": 71, "snaps": 51, "pending": 1068, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:54:40Z", "rows": 100, "new": 65, "snaps": 59, "pending": 1127, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-28T23:57:06Z", "rows": 120, "new": 84, "snaps": 68, "pending": 1195, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-28T23:59:43Z", "rows": 100, "new": 68, "snaps": 54, "pending": 1249, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:02:09Z", "rows": 120, "new": 23, "snaps": 54, "pending": 1233, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T00:04:47Z", "rows": 100, "new": 78, "snaps": 134, "pending": 1231, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:07:13Z", "rows": 120, "new": 47, "snaps": 78, "pending": 1223, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T00:09:51Z", "rows": 100, "new": 68, "snaps": 120, "pending": 1223, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:12:16Z", "rows": 120, "new": 108, "snaps": 123, "pending": 1270, "last_page_all_new": 1, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T00:14:54Z", "rows": 100, "new": 80, "snaps": 57, "pending": 1327, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:17:19Z", "rows": 120, "new": 68, "snaps": 50, "pending": 1377, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T00:19:57Z", "rows": 100, "new": 93, "snaps": 72, "pending": 1449, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:22:23Z", "rows": 120, "new": 57, "snaps": 49, "pending": 1498, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T00:25:01Z", "rows": 100, "new": 90, "snaps": 74, "pending": 1572, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:27:38Z", "rows": 100, "new": 50, "snaps": 48, "pending": 1600, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:30:04Z", "rows": 120, "new": 86, "snaps": 71, "pending": 1669, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T00:32:42Z", "rows": 100, "new": 49, "snaps": 37, "pending": 1706, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:35:08Z", "rows": 120, "new": 66, "snaps": 74, "pending": 1748, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T00:37:45Z", "rows": 100, "new": 67, "snaps": 47, "pending": 1795, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:40:11Z", "rows": 120, "new": 30, "snaps": 43, "pending": 1790, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T00:42:49Z", "rows": 100, "new": 94, "snaps": 80, "pending": 1870, "last_page_all_new": 0, "secs": 37.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:45:14Z", "rows": 120, "new": 78, "snaps": 58, "pending": 1928, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T00:47:52Z", "rows": 100, "new": 72, "snaps": 54, "pending": 1982, "last_page_all_new": 0, "secs": 37.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T00:50:17Z", "rows": 120, "new": 55, "snaps": 49, "pending": 2021, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T00:52:43Z", "rows": 120, "new": 67, "snaps": 66, "pending": 2063, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T00:55:09Z", "rows": 120, "new": 58, "snaps": 53, "pending": 2116, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T00:57:47Z", "rows": 100, "new": 45, "snaps": 42, "pending": 2158, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:00:13Z", "rows": 120, "new": 67, "snaps": 50, "pending": 2208, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T01:03:06Z", "rows": 120, "new": 59, "snaps": 47, "pending": 2255, "last_page_all_new": 0, "secs": 52.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:05:44Z", "rows": 100, "new": 71, "snaps": 59, "pending": 2314, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:08:32Z", "rows": 120, "new": 69, "snaps": 54, "pending": 2368, "last_page_all_new": 0, "secs": 47.7, "errors": []}
+{"ts": "2026-09-29T01:11:11Z", "rows": 120, "new": 78, "snaps": 69, "pending": 2421, "last_page_all_new": 0, "secs": 38.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:13:49Z", "rows": 100, "new": 73, "snaps": 58, "pending": 2479, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:16:15Z", "rows": 120, "new": 70, "snaps": 58, "pending": 2537, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T01:18:52Z", "rows": 100, "new": 55, "snaps": 41, "pending": 2578, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:21:18Z", "rows": 120, "new": 81, "snaps": 56, "pending": 2634, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T01:23:56Z", "rows": 100, "new": 55, "snaps": 39, "pending": 2673, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:26:23Z", "rows": 120, "new": 81, "snaps": 63, "pending": 2736, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T01:29:01Z", "rows": 100, "new": 55, "snaps": 37, "pending": 2773, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:31:38Z", "rows": 100, "new": 49, "snaps": 58, "pending": 2785, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:34:13Z", "rows": 120, "new": 24, "snaps": 62, "pending": 2757, "last_page_all_new": 0, "secs": 33.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:36:50Z", "rows": 100, "new": 70, "snaps": 106, "pending": 2759, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:39:16Z", "rows": 120, "new": 98, "snaps": 81, "pending": 2840, "last_page_all_new": 1, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T01:41:55Z", "rows": 100, "new": 55, "snaps": 43, "pending": 2883, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:44:20Z", "rows": 120, "new": 70, "snaps": 58, "pending": 2941, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T01:46:58Z", "rows": 100, "new": 63, "snaps": 45, "pending": 2986, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:49:24Z", "rows": 120, "new": 79, "snaps": 64, "pending": 3050, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T01:52:02Z", "rows": 100, "new": 53, "snaps": 45, "pending": 3095, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:54:28Z", "rows": 120, "new": 81, "snaps": 58, "pending": 3153, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T01:57:06Z", "rows": 100, "new": 50, "snaps": 33, "pending": 3186, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T01:59:44Z", "rows": 100, "new": 68, "snaps": 52, "pending": 3238, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:02:21Z", "rows": 120, "new": 66, "snaps": 69, "pending": 3277, "last_page_all_new": 0, "secs": 35.9, "errors": []}
+{"ts": "2026-09-29T02:05:00Z", "rows": 100, "new": 54, "snaps": 46, "pending": 3323, "last_page_all_new": 0, "secs": 38.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:07:38Z", "rows": 100, "new": 60, "snaps": 48, "pending": 3371, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:10:05Z", "rows": 120, "new": 64, "snaps": 48, "pending": 3419, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T02:13:08Z", "rows": 120, "new": 79, "snaps": 66, "pending": 3467, "last_page_all_new": 0, "secs": 62.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:15:46Z", "rows": 100, "new": 57, "snaps": 41, "pending": 3508, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:18:11Z", "rows": 120, "new": 53, "snaps": 51, "pending": 3547, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T02:20:49Z", "rows": 100, "new": 57, "snaps": 42, "pending": 3589, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:23:15Z", "rows": 120, "new": 76, "snaps": 74, "pending": 3641, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T02:25:53Z", "rows": 100, "new": 43, "snaps": 31, "pending": 3666, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:28:18Z", "rows": 120, "new": 59, "snaps": 44, "pending": 3710, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T02:30:56Z", "rows": 100, "new": 59, "snaps": 51, "pending": 3745, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:33:23Z", "rows": 120, "new": 47, "snaps": 84, "pending": 3735, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T02:36:01Z", "rows": 100, "new": 42, "snaps": 63, "pending": 3742, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:38:39Z", "rows": 100, "new": 76, "snaps": 96, "pending": 3768, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:41:34Z", "rows": 120, "new": 69, "snaps": 74, "pending": 3810, "last_page_all_new": 0, "secs": 54.9, "errors": []}
+{"ts": "2026-09-29T02:44:08Z", "rows": 120, "new": 82, "snaps": 64, "pending": 3874, "last_page_all_new": 0, "secs": 33.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:46:43Z", "rows": 120, "new": 75, "snaps": 56, "pending": 3930, "last_page_all_new": 0, "secs": 34.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:49:09Z", "rows": 120, "new": 77, "snaps": 59, "pending": 3989, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T02:51:47Z", "rows": 100, "new": 57, "snaps": 51, "pending": 4040, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T02:54:13Z", "rows": 120, "new": 88, "snaps": 70, "pending": 4110, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T02:56:39Z", "rows": 120, "new": 74, "snaps": 70, "pending": 4168, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T02:59:05Z", "rows": 120, "new": 65, "snaps": 55, "pending": 4223, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T03:01:43Z", "rows": 100, "new": 56, "snaps": 38, "pending": 4261, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:04:09Z", "rows": 120, "new": 70, "snaps": 51, "pending": 4312, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T03:06:47Z", "rows": 100, "new": 62, "snaps": 44, "pending": 4356, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:09:13Z", "rows": 120, "new": 77, "snaps": 67, "pending": 4423, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T03:11:51Z", "rows": 100, "new": 64, "snaps": 47, "pending": 4470, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:14:17Z", "rows": 120, "new": 78, "snaps": 62, "pending": 4532, "last_page_all_new": 0, "secs": 26.2, "errors": []}
+{"ts": "2026-09-29T03:16:44Z", "rows": 120, "new": 69, "snaps": 50, "pending": 4582, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T03:19:09Z", "rows": 120, "new": 49, "snaps": 52, "pending": 4614, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T03:21:47Z", "rows": 100, "new": 69, "snaps": 51, "pending": 4665, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:24:13Z", "rows": 120, "new": 87, "snaps": 71, "pending": 4736, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T03:26:51Z", "rows": 100, "new": 57, "snaps": 52, "pending": 4780, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:29:17Z", "rows": 120, "new": 38, "snaps": 48, "pending": 4788, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T03:31:56Z", "rows": 100, "new": 66, "snaps": 47, "pending": 4835, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:34:22Z", "rows": 120, "new": 71, "snaps": 57, "pending": 4892, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T03:37:00Z", "rows": 100, "new": 46, "snaps": 43, "pending": 4927, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:39:38Z", "rows": 100, "new": 64, "snaps": 46, "pending": 4973, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:42:12Z", "rows": 120, "new": 63, "snaps": 47, "pending": 5020, "last_page_all_new": 0, "secs": 33.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:44:49Z", "rows": 100, "new": 84, "snaps": 68, "pending": 5088, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:47:15Z", "rows": 120, "new": 64, "snaps": 51, "pending": 5139, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T03:49:52Z", "rows": 100, "new": 51, "snaps": 40, "pending": 5179, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:52:18Z", "rows": 120, "new": 100, "snaps": 89, "pending": 5262, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T03:54:56Z", "rows": 100, "new": 28, "snaps": 24, "pending": 5286, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T03:57:22Z", "rows": 120, "new": 90, "snaps": 95, "pending": 5331, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T04:00:01Z", "rows": 100, "new": 6, "snaps": 65, "pending": 5276, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:02:39Z", "rows": 100, "new": 18, "snaps": 42, "pending": 5262, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:05:05Z", "rows": 120, "new": 62, "snaps": 106, "pending": 5262, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T04:07:43Z", "rows": 100, "new": 39, "snaps": 68, "pending": 5262, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:10:09Z", "rows": 120, "new": 88, "snaps": 111, "pending": 5301, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T04:12:47Z", "rows": 100, "new": 95, "snaps": 75, "pending": 5376, "last_page_all_new": 0, "secs": 38.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:15:13Z", "rows": 120, "new": 58, "snaps": 47, "pending": 5419, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T04:17:51Z", "rows": 100, "new": 48, "snaps": 42, "pending": 5445, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:20:17Z", "rows": 120, "new": 68, "snaps": 67, "pending": 5490, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T04:22:55Z", "rows": 100, "new": 57, "snaps": 59, "pending": 5531, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:25:21Z", "rows": 120, "new": 63, "snaps": 69, "pending": 5560, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T04:27:59Z", "rows": 100, "new": 55, "snaps": 44, "pending": 5598, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:30:37Z", "rows": 100, "new": 48, "snaps": 34, "pending": 5632, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:33:11Z", "rows": 120, "new": 73, "snaps": 69, "pending": 5689, "last_page_all_new": 0, "secs": 33.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:35:49Z", "rows": 100, "new": 67, "snaps": 52, "pending": 5741, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:38:15Z", "rows": 120, "new": 62, "snaps": 44, "pending": 5785, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T04:40:53Z", "rows": 100, "new": 82, "snaps": 69, "pending": 5854, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:43:19Z", "rows": 120, "new": 42, "snaps": 48, "pending": 5872, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T04:45:57Z", "rows": 100, "new": 66, "snaps": 55, "pending": 5927, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:48:23Z", "rows": 120, "new": 58, "snaps": 53, "pending": 5958, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T04:51:01Z", "rows": 100, "new": 57, "snaps": 48, "pending": 6006, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:53:39Z", "rows": 100, "new": 39, "snaps": 39, "pending": 6035, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T04:56:05Z", "rows": 120, "new": 85, "snaps": 88, "pending": 6091, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T04:58:43Z", "rows": 100, "new": 62, "snaps": 45, "pending": 6136, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:01:09Z", "rows": 120, "new": 72, "snaps": 67, "pending": 6191, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T05:03:47Z", "rows": 100, "new": 54, "snaps": 50, "pending": 6229, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:06:13Z", "rows": 120, "new": 82, "snaps": 67, "pending": 6292, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T05:08:51Z", "rows": 100, "new": 46, "snaps": 38, "pending": 6330, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:11:17Z", "rows": 120, "new": 75, "snaps": 65, "pending": 6389, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T05:13:56Z", "rows": 100, "new": 55, "snaps": 56, "pending": 6417, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:16:22Z", "rows": 120, "new": 61, "snaps": 42, "pending": 6459, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T05:19:00Z", "rows": 100, "new": 53, "snaps": 42, "pending": 6501, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:21:38Z", "rows": 100, "new": 76, "snaps": 65, "pending": 6544, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:24:12Z", "rows": 120, "new": 53, "snaps": 42, "pending": 6578, "last_page_all_new": 0, "secs": 34.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:26:38Z", "rows": 120, "new": 67, "snaps": 70, "pending": 6618, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T05:29:12Z", "rows": 120, "new": 13, "snaps": 57, "pending": 6583, "last_page_all_new": 0, "secs": 33.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:31:50Z", "rows": 100, "new": 43, "snaps": 88, "pending": 6569, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:34:16Z", "rows": 120, "new": 106, "snaps": 135, "pending": 6608, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T05:36:54Z", "rows": 100, "new": 53, "snaps": 65, "pending": 6617, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:39:21Z", "rows": 120, "new": 86, "snaps": 74, "pending": 6687, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T05:41:59Z", "rows": 100, "new": 61, "snaps": 51, "pending": 6738, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:44:25Z", "rows": 120, "new": 74, "snaps": 57, "pending": 6795, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T05:47:03Z", "rows": 100, "new": 64, "snaps": 50, "pending": 6845, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:49:41Z", "rows": 100, "new": 78, "snaps": 62, "pending": 6907, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:52:07Z", "rows": 120, "new": 56, "snaps": 40, "pending": 6947, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T05:54:45Z", "rows": 100, "new": 66, "snaps": 53, "pending": 7000, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T05:57:10Z", "rows": 120, "new": 93, "snaps": 80, "pending": 7080, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T05:59:48Z", "rows": 100, "new": 71, "snaps": 58, "pending": 7138, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:02:14Z", "rows": 120, "new": 83, "snaps": 72, "pending": 7210, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T06:04:52Z", "rows": 100, "new": 63, "snaps": 54, "pending": 7264, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:07:18Z", "rows": 120, "new": 54, "snaps": 62, "pending": 7292, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T06:09:56Z", "rows": 100, "new": 59, "snaps": 46, "pending": 7332, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:12:22Z", "rows": 120, "new": 80, "snaps": 69, "pending": 7379, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T06:15:00Z", "rows": 100, "new": 46, "snaps": 37, "pending": 7416, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:17:39Z", "rows": 100, "new": 74, "snaps": 60, "pending": 7476, "last_page_all_new": 0, "secs": 38.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:20:05Z", "rows": 120, "new": 66, "snaps": 57, "pending": 7527, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T06:22:43Z", "rows": 100, "new": 74, "snaps": 62, "pending": 7589, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:25:09Z", "rows": 120, "new": 50, "snaps": 54, "pending": 7621, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T06:27:47Z", "rows": 100, "new": 43, "snaps": 44, "pending": 7649, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:30:13Z", "rows": 120, "new": 64, "snaps": 61, "pending": 7696, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T06:32:51Z", "rows": 100, "new": 53, "snaps": 47, "pending": 7743, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:35:17Z", "rows": 120, "new": 93, "snaps": 77, "pending": 7820, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T06:37:55Z", "rows": 100, "new": 61, "snaps": 52, "pending": 7872, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:40:21Z", "rows": 120, "new": 76, "snaps": 71, "pending": 7935, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T06:42:59Z", "rows": 100, "new": 71, "snaps": 56, "pending": 7991, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:45:37Z", "rows": 100, "new": 72, "snaps": 61, "pending": 8052, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:48:12Z", "rows": 120, "new": 57, "snaps": 49, "pending": 8093, "last_page_all_new": 0, "secs": 34.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:50:38Z", "rows": 120, "new": 73, "snaps": 63, "pending": 8156, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T06:53:12Z", "rows": 120, "new": 59, "snaps": 65, "pending": 8189, "last_page_all_new": 0, "secs": 33.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:55:51Z", "rows": 100, "new": 56, "snaps": 43, "pending": 8232, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T06:58:17Z", "rows": 120, "new": 39, "snaps": 66, "pending": 8238, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T07:00:43Z", "rows": 120, "new": 93, "snaps": 73, "pending": 8303, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T07:03:09Z", "rows": 120, "new": 67, "snaps": 76, "pending": 8345, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T07:05:47Z", "rows": 100, "new": 60, "snaps": 50, "pending": 8395, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:08:12Z", "rows": 120, "new": 80, "snaps": 75, "pending": 8442, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T07:10:51Z", "rows": 100, "new": 64, "snaps": 45, "pending": 8487, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:13:17Z", "rows": 120, "new": 55, "snaps": 54, "pending": 8523, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T07:15:55Z", "rows": 100, "new": 46, "snaps": 35, "pending": 8558, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:18:21Z", "rows": 120, "new": 67, "snaps": 57, "pending": 8615, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T07:20:59Z", "rows": 100, "new": 68, "snaps": 57, "pending": 8672, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:23:37Z", "rows": 100, "new": 83, "snaps": 74, "pending": 8746, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:26:05Z", "rows": 120, "new": 49, "snaps": 59, "pending": 8769, "last_page_all_new": 0, "secs": 27.5, "errors": []}
+{"ts": "2026-09-29T07:28:43Z", "rows": 100, "new": 72, "snaps": 58, "pending": 8819, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:31:09Z", "rows": 120, "new": 79, "snaps": 87, "pending": 8872, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T07:33:47Z", "rows": 100, "new": 29, "snaps": 46, "pending": 8880, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:36:13Z", "rows": 120, "new": 65, "snaps": 77, "pending": 8915, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T07:38:52Z", "rows": 100, "new": 64, "snaps": 50, "pending": 8965, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:41:18Z", "rows": 120, "new": 86, "snaps": 70, "pending": 9035, "last_page_all_new": 1, "secs": 26.3, "errors": []}
+{"ts": "2026-09-29T07:43:56Z", "rows": 100, "new": 65, "snaps": 43, "pending": 9078, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:46:23Z", "rows": 120, "new": 54, "snaps": 62, "pending": 9112, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T07:49:01Z", "rows": 100, "new": 71, "snaps": 56, "pending": 9168, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:51:39Z", "rows": 100, "new": 57, "snaps": 48, "pending": 9216, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:54:05Z", "rows": 120, "new": 81, "snaps": 66, "pending": 9274, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T07:56:44Z", "rows": 100, "new": 59, "snaps": 54, "pending": 9320, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T07:59:10Z", "rows": 120, "new": 55, "snaps": 43, "pending": 9355, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T08:01:48Z", "rows": 100, "new": 69, "snaps": 50, "pending": 9405, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:04:14Z", "rows": 120, "new": 60, "snaps": 41, "pending": 9446, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T08:06:53Z", "rows": 100, "new": 59, "snaps": 48, "pending": 9486, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:09:19Z", "rows": 120, "new": 58, "snaps": 52, "pending": 9522, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T08:11:58Z", "rows": 100, "new": 64, "snaps": 51, "pending": 9573, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:14:24Z", "rows": 120, "new": 54, "snaps": 50, "pending": 9609, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T08:16:58Z", "rows": 120, "new": 57, "snaps": 60, "pending": 9651, "last_page_all_new": 0, "secs": 33.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:19:24Z", "rows": 120, "new": 59, "snaps": 52, "pending": 9669, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T08:22:03Z", "rows": 100, "new": 45, "snaps": 45, "pending": 9698, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:24:41Z", "rows": 100, "new": 42, "snaps": 53, "pending": 9715, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:27:07Z", "rows": 120, "new": 48, "snaps": 71, "pending": 9722, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T08:29:45Z", "rows": 100, "new": 55, "snaps": 40, "pending": 9762, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:32:11Z", "rows": 120, "new": 53, "snaps": 60, "pending": 9778, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T08:34:49Z", "rows": 100, "new": 61, "snaps": 57, "pending": 9819, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:37:15Z", "rows": 120, "new": 45, "snaps": 52, "pending": 9835, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T08:39:53Z", "rows": 100, "new": 79, "snaps": 65, "pending": 9900, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:42:19Z", "rows": 120, "new": 45, "snaps": 58, "pending": 9914, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T08:44:57Z", "rows": 100, "new": 44, "snaps": 47, "pending": 9923, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:47:24Z", "rows": 120, "new": 39, "snaps": 52, "pending": 9937, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T08:50:02Z", "rows": 100, "new": 74, "snaps": 52, "pending": 9989, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:52:40Z", "rows": 100, "new": 61, "snaps": 49, "pending": 10026, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T08:55:06Z", "rows": 120, "new": 43, "snaps": 52, "pending": 10036, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T08:57:44Z", "rows": 100, "new": 61, "snaps": 61, "pending": 10073, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:00:10Z", "rows": 120, "new": 40, "snaps": 57, "pending": 10084, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T09:02:49Z", "rows": 100, "new": 63, "snaps": 60, "pending": 10118, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:05:15Z", "rows": 120, "new": 57, "snaps": 50, "pending": 10160, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T09:07:42Z", "rows": 120, "new": 71, "snaps": 53, "pending": 10209, "last_page_all_new": 0, "secs": 26.1, "errors": []}
+{"ts": "2026-09-29T09:10:07Z", "rows": 120, "new": 50, "snaps": 54, "pending": 10249, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T09:12:47Z", "rows": 100, "new": 61, "snaps": 53, "pending": 10302, "last_page_all_new": 0, "secs": 38.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:15:13Z", "rows": 120, "new": 46, "snaps": 58, "pending": 10324, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T09:17:52Z", "rows": 100, "new": 57, "snaps": 48, "pending": 10372, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:20:19Z", "rows": 120, "new": 64, "snaps": 61, "pending": 10417, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T09:22:57Z", "rows": 100, "new": 73, "snaps": 62, "pending": 10479, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:25:23Z", "rows": 120, "new": 38, "snaps": 58, "pending": 10491, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T09:28:01Z", "rows": 100, "new": 80, "snaps": 65, "pending": 10556, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:30:39Z", "rows": 100, "new": 55, "snaps": 43, "pending": 10599, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:33:05Z", "rows": 120, "new": 72, "snaps": 63, "pending": 10658, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T09:35:43Z", "rows": 100, "new": 58, "snaps": 45, "pending": 10703, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:38:10Z", "rows": 120, "new": 40, "snaps": 61, "pending": 10706, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T09:40:36Z", "rows": 120, "new": 60, "snaps": 95, "pending": 10719, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T09:43:09Z", "rows": 120, "new": 56, "snaps": 54, "pending": 10761, "last_page_all_new": 0, "secs": 33.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:45:47Z", "rows": 100, "new": 78, "snaps": 68, "pending": 10829, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:48:13Z", "rows": 120, "new": 29, "snaps": 41, "pending": 10840, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T09:50:39Z", "rows": 120, "new": 95, "snaps": 100, "pending": 10898, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T09:53:06Z", "rows": 120, "new": 41, "snaps": 51, "pending": 10907, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T09:55:44Z", "rows": 100, "new": 70, "snaps": 60, "pending": 10967, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T09:58:10Z", "rows": 120, "new": 48, "snaps": 74, "pending": 10981, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T10:00:48Z", "rows": 100, "new": 67, "snaps": 57, "pending": 11038, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:03:14Z", "rows": 120, "new": 49, "snaps": 61, "pending": 11059, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T10:05:53Z", "rows": 100, "new": 60, "snaps": 39, "pending": 11098, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:08:20Z", "rows": 120, "new": 71, "snaps": 61, "pending": 11153, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T10:10:58Z", "rows": 100, "new": 49, "snaps": 43, "pending": 11184, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:13:25Z", "rows": 120, "new": 51, "snaps": 59, "pending": 11211, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T10:16:03Z", "rows": 100, "new": 40, "snaps": 43, "pending": 11238, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:18:41Z", "rows": 100, "new": 60, "snaps": 61, "pending": 11273, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:21:06Z", "rows": 120, "new": 54, "snaps": 60, "pending": 11299, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T10:23:44Z", "rows": 100, "new": 63, "snaps": 47, "pending": 11346, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:26:10Z", "rows": 120, "new": 40, "snaps": 51, "pending": 11363, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T10:28:48Z", "rows": 100, "new": 59, "snaps": 63, "pending": 11392, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:31:14Z", "rows": 120, "new": 69, "snaps": 54, "pending": 11446, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T10:33:52Z", "rows": 100, "new": 54, "snaps": 48, "pending": 11494, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:36:17Z", "rows": 120, "new": 95, "snaps": 77, "pending": 11559, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T10:38:55Z", "rows": 100, "new": 58, "snaps": 40, "pending": 11599, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:41:20Z", "rows": 120, "new": 86, "snaps": 71, "pending": 11670, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T10:43:58Z", "rows": 100, "new": 63, "snaps": 44, "pending": 11714, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:46:25Z", "rows": 120, "new": 80, "snaps": 58, "pending": 11772, "last_page_all_new": 0, "secs": 26.1, "errors": []}
+{"ts": "2026-09-29T10:49:03Z", "rows": 100, "new": 46, "snaps": 36, "pending": 11808, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:51:41Z", "rows": 100, "new": 74, "snaps": 57, "pending": 11865, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:54:07Z", "rows": 120, "new": 47, "snaps": 53, "pending": 11882, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T10:56:45Z", "rows": 100, "new": 68, "snaps": 46, "pending": 11928, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T10:59:11Z", "rows": 120, "new": 31, "snaps": 66, "pending": 11914, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T11:01:49Z", "rows": 100, "new": 0, "snaps": 47, "pending": 11867, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:04:15Z", "rows": 120, "new": 0, "snaps": 2, "pending": 11865, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T11:06:53Z", "rows": 100, "new": 0, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:09:20Z", "rows": 120, "new": 0, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T11:11:58Z", "rows": 100, "new": 31, "snaps": 23, "pending": 11888, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:14:24Z", "rows": 120, "new": 0, "snaps": 23, "pending": 11865, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T11:17:02Z", "rows": 100, "new": 0, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:19:41Z", "rows": 100, "new": 1, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:22:07Z", "rows": 120, "new": 0, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T11:24:46Z", "rows": 100, "new": 37, "snaps": 25, "pending": 11890, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:27:12Z", "rows": 120, "new": 1, "snaps": 1, "pending": 11891, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T11:29:38Z", "rows": 120, "new": 0, "snaps": 26, "pending": 11865, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T11:32:12Z", "rows": 120, "new": 0, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 33.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:34:51Z", "rows": 100, "new": 3, "snaps": 3, "pending": 11868, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:37:16Z", "rows": 120, "new": 12, "snaps": 6, "pending": 11874, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T11:39:54Z", "rows": 100, "new": 0, "snaps": 9, "pending": 11865, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:42:20Z", "rows": 120, "new": 2, "snaps": 0, "pending": 11865, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T11:44:59Z", "rows": 100, "new": 24, "snaps": 25, "pending": 11876, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:47:37Z", "rows": 100, "new": 72, "snaps": 137, "pending": 11865, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:50:11Z", "rows": 120, "new": 60, "snaps": 104, "pending": 11865, "last_page_all_new": 0, "secs": 33.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:52:49Z", "rows": 100, "new": 83, "snaps": 136, "pending": 11865, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T11:55:16Z", "rows": 120, "new": 69, "snaps": 87, "pending": 11876, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T11:57:54Z", "rows": 100, "new": 100, "snaps": 87, "pending": 11943, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:00:20Z", "rows": 120, "new": 20, "snaps": 96, "pending": 11881, "last_page_all_new": 1, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T12:02:57Z", "rows": 100, "new": 0, "snaps": 5, "pending": 11876, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:05:23Z", "rows": 120, "new": 4, "snaps": 4, "pending": 11876, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T12:07:48Z", "rows": 120, "new": 1, "snaps": 0, "pending": 11876, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T12:10:14Z", "rows": 120, "new": 80, "snaps": 116, "pending": 11876, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T12:12:52Z", "rows": 100, "new": 84, "snaps": 100, "pending": 11908, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:15:18Z", "rows": 120, "new": 76, "snaps": 52, "pending": 11960, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T12:17:57Z", "rows": 100, "new": 64, "snaps": 53, "pending": 12013, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:20:23Z", "rows": 120, "new": 76, "snaps": 56, "pending": 12069, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T12:22:50Z", "rows": 120, "new": 81, "snaps": 61, "pending": 12130, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T12:25:16Z", "rows": 120, "new": 58, "snaps": 39, "pending": 12169, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T12:27:55Z", "rows": 100, "new": 37, "snaps": 44, "pending": 12185, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:30:21Z", "rows": 120, "new": 47, "snaps": 73, "pending": 12180, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T12:32:59Z", "rows": 100, "new": 62, "snaps": 90, "pending": 12198, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:35:37Z", "rows": 100, "new": 30, "snaps": 89, "pending": 12165, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:38:11Z", "rows": 120, "new": 89, "snaps": 98, "pending": 12207, "last_page_all_new": 1, "secs": 33.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:40:49Z", "rows": 100, "new": 85, "snaps": 71, "pending": 12278, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:43:15Z", "rows": 120, "new": 67, "snaps": 55, "pending": 12333, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T12:45:53Z", "rows": 100, "new": 79, "snaps": 60, "pending": 12393, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:48:19Z", "rows": 120, "new": 63, "snaps": 52, "pending": 12445, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T12:50:57Z", "rows": 100, "new": 93, "snaps": 80, "pending": 12525, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:53:23Z", "rows": 120, "new": 75, "snaps": 67, "pending": 12592, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T12:56:01Z", "rows": 100, "new": 65, "snaps": 50, "pending": 12642, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T12:58:41Z", "rows": 100, "new": 55, "snaps": 43, "pending": 12685, "last_page_all_new": 0, "secs": 39.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:01:08Z", "rows": 120, "new": 75, "snaps": 60, "pending": 12745, "last_page_all_new": 0, "secs": 26.1, "errors": []}
+{"ts": "2026-09-29T13:03:49Z", "rows": 100, "new": 59, "snaps": 48, "pending": 12793, "last_page_all_new": 0, "secs": 40.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:06:16Z", "rows": 120, "new": 86, "snaps": 65, "pending": 12858, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T13:08:53Z", "rows": 100, "new": 66, "snaps": 53, "pending": 12911, "last_page_all_new": 0, "secs": 37.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:11:19Z", "rows": 120, "new": 87, "snaps": 70, "pending": 12981, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T13:13:57Z", "rows": 100, "new": 78, "snaps": 59, "pending": 13040, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:16:24Z", "rows": 120, "new": 83, "snaps": 65, "pending": 13105, "last_page_all_new": 0, "secs": 26.2, "errors": []}
+{"ts": "2026-09-29T13:19:02Z", "rows": 100, "new": 76, "snaps": 50, "pending": 13155, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:21:41Z", "rows": 100, "new": 91, "snaps": 64, "pending": 13219, "last_page_all_new": 0, "secs": 38.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:24:06Z", "rows": 120, "new": 105, "snaps": 78, "pending": 13297, "last_page_all_new": 1, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T13:26:44Z", "rows": 100, "new": 61, "snaps": 46, "pending": 13343, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:29:12Z", "rows": 120, "new": 92, "snaps": 68, "pending": 13411, "last_page_all_new": 0, "secs": 26.4, "errors": []}
+{"ts": "2026-09-29T13:31:50Z", "rows": 100, "new": 71, "snaps": 55, "pending": 13466, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:34:17Z", "rows": 120, "new": 68, "snaps": 51, "pending": 13517, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T13:36:56Z", "rows": 100, "new": 66, "snaps": 51, "pending": 13568, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:39:23Z", "rows": 120, "new": 94, "snaps": 68, "pending": 13636, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T13:42:01Z", "rows": 100, "new": 57, "snaps": 51, "pending": 13675, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:44:40Z", "rows": 100, "new": 72, "snaps": 59, "pending": 13734, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:47:07Z", "rows": 120, "new": 94, "snaps": 75, "pending": 13809, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T13:49:45Z", "rows": 100, "new": 62, "snaps": 46, "pending": 13855, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:52:13Z", "rows": 120, "new": 96, "snaps": 83, "pending": 13938, "last_page_all_new": 0, "secs": 26.5, "errors": []}
+{"ts": "2026-09-29T13:54:51Z", "rows": 100, "new": 60, "snaps": 42, "pending": 13980, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T13:57:18Z", "rows": 120, "new": 55, "snaps": 64, "pending": 14006, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T13:59:56Z", "rows": 100, "new": 78, "snaps": 63, "pending": 14069, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:02:23Z", "rows": 120, "new": 66, "snaps": 46, "pending": 14115, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T14:04:49Z", "rows": 120, "new": 58, "snaps": 54, "pending": 14143, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T14:07:15Z", "rows": 120, "new": 51, "snaps": 37, "pending": 14180, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T14:09:55Z", "rows": 100, "new": 79, "snaps": 64, "pending": 14244, "last_page_all_new": 0, "secs": 38.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:12:21Z", "rows": 120, "new": 83, "snaps": 64, "pending": 14308, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T14:15:00Z", "rows": 100, "new": 24, "snaps": 39, "pending": 14303, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:17:38Z", "rows": 100, "new": 84, "snaps": 63, "pending": 14366, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:20:05Z", "rows": 120, "new": 66, "snaps": 52, "pending": 14418, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T14:22:44Z", "rows": 100, "new": 70, "snaps": 54, "pending": 14472, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:25:10Z", "rows": 120, "new": 74, "snaps": 63, "pending": 14535, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T14:27:49Z", "rows": 100, "new": 47, "snaps": 42, "pending": 14561, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:30:15Z", "rows": 120, "new": 105, "snaps": 95, "pending": 14656, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T14:32:54Z", "rows": 100, "new": 65, "snaps": 52, "pending": 14708, "last_page_all_new": 0, "secs": 38.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:35:21Z", "rows": 120, "new": 39, "snaps": 77, "pending": 14693, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T14:37:48Z", "rows": 120, "new": 61, "snaps": 97, "pending": 14692, "last_page_all_new": 0, "secs": 26.2, "errors": []}
+{"ts": "2026-09-29T14:40:15Z", "rows": 120, "new": 78, "snaps": 133, "pending": 14683, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T14:42:53Z", "rows": 100, "new": 68, "snaps": 42, "pending": 14725, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:45:20Z", "rows": 120, "new": 86, "snaps": 62, "pending": 14787, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T14:47:47Z", "rows": 120, "new": 43, "snaps": 29, "pending": 14816, "last_page_all_new": 0, "secs": 26.8, "errors": []}
+{"ts": "2026-09-29T14:50:14Z", "rows": 120, "new": 58, "snaps": 41, "pending": 14857, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T14:52:53Z", "rows": 100, "new": 68, "snaps": 52, "pending": 14909, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T14:55:20Z", "rows": 120, "new": 76, "snaps": 55, "pending": 14964, "last_page_all_new": 0, "secs": 26.4, "errors": []}
+{"ts": "2026-09-29T14:58:00Z", "rows": 100, "new": 57, "snaps": 45, "pending": 15009, "last_page_all_new": 0, "secs": 38.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:00:34Z", "rows": 120, "new": 82, "snaps": 63, "pending": 15072, "last_page_all_new": 0, "secs": 34.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:03:10Z", "rows": 120, "new": 78, "snaps": 49, "pending": 15121, "last_page_all_new": 0, "secs": 34.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:05:49Z", "rows": 100, "new": 74, "snaps": 52, "pending": 15173, "last_page_all_new": 0, "secs": 38.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:08:16Z", "rows": 120, "new": 65, "snaps": 44, "pending": 15217, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T15:10:56Z", "rows": 100, "new": 72, "snaps": 53, "pending": 15270, "last_page_all_new": 0, "secs": 38.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:13:22Z", "rows": 120, "new": 95, "snaps": 63, "pending": 15333, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T15:16:02Z", "rows": 100, "new": 53, "snaps": 42, "pending": 15375, "last_page_all_new": 0, "secs": 38.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:18:41Z", "rows": 100, "new": 92, "snaps": 61, "pending": 15436, "last_page_all_new": 0, "secs": 38.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:21:08Z", "rows": 120, "new": 77, "snaps": 68, "pending": 15504, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T15:23:34Z", "rows": 120, "new": 61, "snaps": 46, "pending": 15550, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T15:26:09Z", "rows": 120, "new": 57, "snaps": 47, "pending": 15597, "last_page_all_new": 0, "secs": 33.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:28:35Z", "rows": 120, "new": 100, "snaps": 85, "pending": 15682, "last_page_all_new": 0, "secs": 26.0, "errors": []}
+{"ts": "2026-09-29T15:31:12Z", "rows": 120, "new": 44, "snaps": 48, "pending": 15718, "last_page_all_new": 0, "secs": 35.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:33:52Z", "rows": 100, "new": 77, "snaps": 65, "pending": 15783, "last_page_all_new": 0, "secs": 38.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:36:18Z", "rows": 120, "new": 91, "snaps": 79, "pending": 15862, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T15:38:57Z", "rows": 100, "new": 88, "snaps": 67, "pending": 15929, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:41:27Z", "rows": 120, "new": 57, "snaps": 42, "pending": 15971, "last_page_all_new": 0, "secs": 28.8, "errors": []}
+{"ts": "2026-09-29T15:44:04Z", "rows": 100, "new": 82, "snaps": 67, "pending": 16038, "last_page_all_new": 0, "secs": 37.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:46:42Z", "rows": 100, "new": 74, "snaps": 60, "pending": 16098, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:49:08Z", "rows": 120, "new": 88, "snaps": 76, "pending": 16174, "last_page_all_new": 1, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T15:51:46Z", "rows": 100, "new": 62, "snaps": 51, "pending": 16225, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:54:12Z", "rows": 120, "new": 108, "snaps": 85, "pending": 16310, "last_page_all_new": 1, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T15:56:51Z", "rows": 100, "new": 76, "snaps": 65, "pending": 16375, "last_page_all_new": 0, "secs": 38.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T15:59:17Z", "rows": 120, "new": 92, "snaps": 73, "pending": 16448, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T16:01:56Z", "rows": 100, "new": 82, "snaps": 65, "pending": 16513, "last_page_all_new": 0, "secs": 38.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:04:23Z", "rows": 120, "new": 91, "snaps": 75, "pending": 16588, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T16:07:01Z", "rows": 100, "new": 70, "snaps": 60, "pending": 16648, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:09:39Z", "rows": 100, "new": 61, "snaps": 48, "pending": 16696, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:12:05Z", "rows": 120, "new": 81, "snaps": 70, "pending": 16766, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T16:14:32Z", "rows": 120, "new": 64, "snaps": 59, "pending": 16825, "last_page_all_new": 1, "secs": 26.3, "errors": []}
+{"ts": "2026-09-29T16:17:07Z", "rows": 120, "new": 80, "snaps": 61, "pending": 16886, "last_page_all_new": 0, "secs": 34.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:19:45Z", "rows": 100, "new": 67, "snaps": 54, "pending": 16940, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:22:12Z", "rows": 120, "new": 83, "snaps": 66, "pending": 17006, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T16:24:50Z", "rows": 100, "new": 52, "snaps": 42, "pending": 17048, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:27:15Z", "rows": 120, "new": 70, "snaps": 61, "pending": 17107, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T16:29:54Z", "rows": 100, "new": 65, "snaps": 47, "pending": 17154, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:32:19Z", "rows": 120, "new": 87, "snaps": 71, "pending": 17225, "last_page_all_new": 1, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T16:34:57Z", "rows": 100, "new": 71, "snaps": 55, "pending": 17280, "last_page_all_new": 0, "secs": 37.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:37:23Z", "rows": 120, "new": 56, "snaps": 42, "pending": 17322, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T16:39:49Z", "rows": 120, "new": 59, "snaps": 53, "pending": 17375, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T16:42:15Z", "rows": 120, "new": 66, "snaps": 58, "pending": 17433, "last_page_all_new": 1, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T16:44:53Z", "rows": 100, "new": 57, "snaps": 45, "pending": 17478, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:47:20Z", "rows": 120, "new": 60, "snaps": 51, "pending": 17529, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T16:49:45Z", "rows": 120, "new": 80, "snaps": 64, "pending": 17593, "last_page_all_new": 1, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T16:52:12Z", "rows": 120, "new": 73, "snaps": 63, "pending": 17656, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T16:54:50Z", "rows": 100, "new": 80, "snaps": 56, "pending": 17712, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T16:57:17Z", "rows": 120, "new": 88, "snaps": 77, "pending": 17789, "last_page_all_new": 0, "secs": 26.1, "errors": []}
+{"ts": "2026-09-29T16:59:56Z", "rows": 100, "new": 40, "snaps": 44, "pending": 17815, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:02:24Z", "rows": 120, "new": 73, "snaps": 67, "pending": 17882, "last_page_all_new": 0, "secs": 27.1, "errors": []}
+{"ts": "2026-09-29T17:04:51Z", "rows": 120, "new": 64, "snaps": 53, "pending": 17935, "last_page_all_new": 0, "secs": 26.3, "errors": []}
+{"ts": "2026-09-29T17:07:18Z", "rows": 120, "new": 88, "snaps": 89, "pending": 17994, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T17:09:57Z", "rows": 100, "new": 78, "snaps": 59, "pending": 18053, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:12:24Z", "rows": 120, "new": 91, "snaps": 75, "pending": 18128, "last_page_all_new": 1, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T17:15:02Z", "rows": 100, "new": 69, "snaps": 55, "pending": 18183, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:17:43Z", "rows": 100, "new": 65, "snaps": 54, "pending": 18237, "last_page_all_new": 0, "secs": 38.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:20:10Z", "rows": 120, "new": 93, "snaps": 80, "pending": 18317, "last_page_all_new": 1, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T17:22:49Z", "rows": 100, "new": 93, "snaps": 77, "pending": 18394, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:25:15Z", "rows": 120, "new": 77, "snaps": 68, "pending": 18462, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T17:27:54Z", "rows": 100, "new": 61, "snaps": 47, "pending": 18509, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:30:20Z", "rows": 120, "new": 89, "snaps": 75, "pending": 18584, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T17:32:59Z", "rows": 100, "new": 73, "snaps": 67, "pending": 18651, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:35:37Z", "rows": 100, "new": 80, "snaps": 67, "pending": 18718, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:38:11Z", "rows": 120, "new": 71, "snaps": 60, "pending": 18778, "last_page_all_new": 0, "secs": 33.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:40:49Z", "rows": 100, "new": 75, "snaps": 70, "pending": 18848, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:43:15Z", "rows": 120, "new": 78, "snaps": 64, "pending": 18912, "last_page_all_new": 1, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T17:45:53Z", "rows": 100, "new": 79, "snaps": 63, "pending": 18975, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:48:19Z", "rows": 120, "new": 77, "snaps": 64, "pending": 19039, "last_page_all_new": 1, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T17:50:58Z", "rows": 100, "new": 71, "snaps": 55, "pending": 19094, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:53:24Z", "rows": 120, "new": 78, "snaps": 59, "pending": 19153, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T17:56:02Z", "rows": 100, "new": 59, "snaps": 52, "pending": 19205, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T17:58:40Z", "rows": 100, "new": 61, "snaps": 45, "pending": 19250, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:01:07Z", "rows": 120, "new": 101, "snaps": 85, "pending": 19335, "last_page_all_new": 1, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T18:03:48Z", "rows": 100, "new": 52, "snaps": 41, "pending": 19376, "last_page_all_new": 0, "secs": 39.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:06:14Z", "rows": 120, "new": 68, "snaps": 85, "pending": 19409, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T18:08:53Z", "rows": 100, "new": 73, "snaps": 76, "pending": 19467, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:11:20Z", "rows": 120, "new": 56, "snaps": 49, "pending": 19516, "last_page_all_new": 0, "secs": 26.2, "errors": []}
+{"ts": "2026-09-29T18:13:58Z", "rows": 100, "new": 77, "snaps": 67, "pending": 19583, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:16:25Z", "rows": 120, "new": 63, "snaps": 58, "pending": 19641, "last_page_all_new": 0, "secs": 25.9, "errors": []}
+{"ts": "2026-09-29T18:19:04Z", "rows": 100, "new": 80, "snaps": 68, "pending": 19709, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:21:42Z", "rows": 100, "new": 70, "snaps": 59, "pending": 19768, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:24:08Z", "rows": 120, "new": 83, "snaps": 68, "pending": 19834, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T18:26:48Z", "rows": 100, "new": 85, "snaps": 72, "pending": 19906, "last_page_all_new": 0, "secs": 38.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:29:14Z", "rows": 120, "new": 78, "snaps": 58, "pending": 19964, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T18:31:57Z", "rows": 100, "new": 80, "snaps": 59, "pending": 20023, "last_page_all_new": 0, "secs": 41.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:34:23Z", "rows": 120, "new": 66, "snaps": 58, "pending": 20081, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T18:36:49Z", "rows": 120, "new": 67, "snaps": 55, "pending": 20136, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T18:39:16Z", "rows": 120, "new": 85, "snaps": 60, "pending": 20196, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T18:41:42Z", "rows": 120, "new": 81, "snaps": 60, "pending": 20256, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T18:44:09Z", "rows": 120, "new": 71, "snaps": 45, "pending": 20301, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T18:46:47Z", "rows": 100, "new": 86, "snaps": 73, "pending": 20374, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:49:14Z", "rows": 120, "new": 56, "snaps": 46, "pending": 20420, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T18:51:53Z", "rows": 100, "new": 67, "snaps": 62, "pending": 20482, "last_page_all_new": 0, "secs": 37.9, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:54:19Z", "rows": 120, "new": 81, "snaps": 64, "pending": 20546, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T18:56:58Z", "rows": 100, "new": 73, "snaps": 64, "pending": 20610, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T18:59:24Z", "rows": 120, "new": 83, "snaps": 74, "pending": 20684, "last_page_all_new": 1, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T19:02:02Z", "rows": 100, "new": 56, "snaps": 45, "pending": 20729, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:04:42Z", "rows": 100, "new": 58, "snaps": 49, "pending": 20778, "last_page_all_new": 0, "secs": 38.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:07:08Z", "rows": 120, "new": 101, "snaps": 84, "pending": 20862, "last_page_all_new": 1, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T19:09:47Z", "rows": 100, "new": 64, "snaps": 53, "pending": 20915, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:12:13Z", "rows": 120, "new": 89, "snaps": 73, "pending": 20988, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T19:14:52Z", "rows": 100, "new": 61, "snaps": 46, "pending": 21034, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:17:18Z", "rows": 120, "new": 86, "snaps": 73, "pending": 21107, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T19:19:57Z", "rows": 100, "new": 60, "snaps": 50, "pending": 21157, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:22:23Z", "rows": 120, "new": 90, "snaps": 71, "pending": 21228, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T19:25:02Z", "rows": 100, "new": 64, "snaps": 51, "pending": 21279, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:27:41Z", "rows": 100, "new": 65, "snaps": 50, "pending": 21329, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:30:07Z", "rows": 120, "new": 84, "snaps": 63, "pending": 21392, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T19:32:46Z", "rows": 100, "new": 73, "snaps": 60, "pending": 21452, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:35:12Z", "rows": 120, "new": 79, "snaps": 69, "pending": 21521, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T19:37:51Z", "rows": 100, "new": 63, "snaps": 54, "pending": 21575, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:40:17Z", "rows": 120, "new": 70, "snaps": 56, "pending": 21631, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T19:42:55Z", "rows": 100, "new": 80, "snaps": 60, "pending": 21691, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:45:22Z", "rows": 120, "new": 103, "snaps": 78, "pending": 21769, "last_page_all_new": 1, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T19:47:48Z", "rows": 120, "new": 60, "snaps": 50, "pending": 21819, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T19:50:14Z", "rows": 120, "new": 107, "snaps": 81, "pending": 21900, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T19:52:53Z", "rows": 100, "new": 71, "snaps": 60, "pending": 21960, "last_page_all_new": 0, "secs": 38.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T19:55:20Z", "rows": 120, "new": 98, "snaps": 82, "pending": 22042, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T19:57:58Z", "rows": 100, "new": 46, "snaps": 33, "pending": 22075, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:00:24Z", "rows": 120, "new": 100, "snaps": 77, "pending": 22152, "last_page_all_new": 1, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T20:03:03Z", "rows": 100, "new": 50, "snaps": 36, "pending": 22188, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:05:42Z", "rows": 100, "new": 98, "snaps": 78, "pending": 22266, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:08:08Z", "rows": 120, "new": 99, "snaps": 76, "pending": 22342, "last_page_all_new": 0, "secs": 25.0, "errors": []}
+{"ts": "2026-09-29T20:10:47Z", "rows": 100, "new": 72, "snaps": 55, "pending": 22397, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:13:13Z", "rows": 120, "new": 56, "snaps": 42, "pending": 22439, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T20:15:52Z", "rows": 100, "new": 93, "snaps": 70, "pending": 22509, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:18:18Z", "rows": 120, "new": 60, "snaps": 46, "pending": 22555, "last_page_all_new": 0, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T20:20:57Z", "rows": 100, "new": 93, "snaps": 72, "pending": 22627, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:23:24Z", "rows": 120, "new": 42, "snaps": 35, "pending": 22662, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T20:26:03Z", "rows": 100, "new": 79, "snaps": 61, "pending": 22723, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:28:42Z", "rows": 100, "new": 66, "snaps": 39, "pending": 22762, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:31:09Z", "rows": 120, "new": 64, "snaps": 49, "pending": 22811, "last_page_all_new": 0, "secs": 26.7, "errors": []}
+{"ts": "2026-09-29T20:33:48Z", "rows": 100, "new": 69, "snaps": 47, "pending": 22858, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:36:14Z", "rows": 120, "new": 83, "snaps": 70, "pending": 22928, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T20:38:53Z", "rows": 100, "new": 95, "snaps": 68, "pending": 22996, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:41:20Z", "rows": 120, "new": 43, "snaps": 31, "pending": 23027, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T20:43:58Z", "rows": 100, "new": 50, "snaps": 36, "pending": 23063, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:46:25Z", "rows": 120, "new": 68, "snaps": 53, "pending": 23116, "last_page_all_new": 0, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T20:49:04Z", "rows": 100, "new": 64, "snaps": 48, "pending": 23164, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:51:42Z", "rows": 100, "new": 69, "snaps": 54, "pending": 23218, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:54:09Z", "rows": 120, "new": 95, "snaps": 75, "pending": 23293, "last_page_all_new": 1, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T20:56:47Z", "rows": 100, "new": 82, "snaps": 69, "pending": 23362, "last_page_all_new": 0, "secs": 37.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T20:59:14Z", "rows": 120, "new": 87, "snaps": 74, "pending": 23434, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T21:01:52Z", "rows": 100, "new": 72, "snaps": 51, "pending": 23485, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:04:19Z", "rows": 120, "new": 59, "snaps": 48, "pending": 23533, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T21:06:58Z", "rows": 100, "new": 85, "snaps": 71, "pending": 23604, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:09:25Z", "rows": 120, "new": 64, "snaps": 44, "pending": 23648, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T21:12:03Z", "rows": 100, "new": 94, "snaps": 64, "pending": 23712, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:14:42Z", "rows": 100, "new": 60, "snaps": 42, "pending": 23754, "last_page_all_new": 0, "secs": 37.8, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:17:08Z", "rows": 120, "new": 96, "snaps": 75, "pending": 23829, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T21:19:47Z", "rows": 100, "new": 64, "snaps": 45, "pending": 23874, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:22:13Z", "rows": 120, "new": 104, "snaps": 78, "pending": 23952, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T21:24:52Z", "rows": 100, "new": 83, "snaps": 63, "pending": 24015, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:27:19Z", "rows": 120, "new": 87, "snaps": 69, "pending": 24084, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T21:29:58Z", "rows": 100, "new": 62, "snaps": 50, "pending": 24134, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:32:24Z", "rows": 120, "new": 80, "snaps": 65, "pending": 24199, "last_page_all_new": 0, "secs": 25.5, "errors": []}
+{"ts": "2026-09-29T21:35:03Z", "rows": 100, "new": 78, "snaps": 60, "pending": 24259, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:37:42Z", "rows": 100, "new": 72, "snaps": 62, "pending": 24321, "last_page_all_new": 0, "secs": 37.5, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:40:08Z", "rows": 120, "new": 92, "snaps": 70, "pending": 24391, "last_page_all_new": 1, "secs": 25.1, "errors": []}
+{"ts": "2026-09-29T21:42:34Z", "rows": 120, "new": 56, "snaps": 46, "pending": 24437, "last_page_all_new": 0, "secs": 25.2, "errors": []}
+{"ts": "2026-09-29T21:45:09Z", "rows": 120, "new": 62, "snaps": 51, "pending": 24488, "last_page_all_new": 0, "secs": 33.6, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:47:48Z", "rows": 100, "new": 69, "snaps": 55, "pending": 24543, "last_page_all_new": 0, "secs": 37.7, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:50:14Z", "rows": 120, "new": 73, "snaps": 62, "pending": 24605, "last_page_all_new": 0, "secs": 25.6, "errors": []}
+{"ts": "2026-09-29T21:52:53Z", "rows": 100, "new": 63, "snaps": 47, "pending": 24652, "last_page_all_new": 0, "secs": 38.0, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T21:55:20Z", "rows": 120, "new": 63, "snaps": 46, "pending": 24698, "last_page_all_new": 0, "secs": 25.4, "errors": []}
+{"ts": "2026-09-29T21:57:58Z", "rows": 100, "new": 86, "snaps": 66, "pending": 24764, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:00:37Z", "rows": 100, "new": 50, "snaps": 45, "pending": 24793, "last_page_all_new": 0, "secs": 37.2, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:03:12Z", "rows": 120, "new": 77, "snaps": 88, "pending": 24829, "last_page_all_new": 0, "secs": 34.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:05:50Z", "rows": 100, "new": 55, "snaps": 138, "pending": 24793, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:08:17Z", "rows": 120, "new": 7, "snaps": 14, "pending": 24793, "last_page_all_new": 0, "secs": 25.8, "errors": []}
+{"ts": "2026-09-29T22:10:56Z", "rows": 100, "new": 98, "snaps": 140, "pending": 24813, "last_page_all_new": 0, "secs": 37.3, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:13:22Z", "rows": 120, "new": 75, "snaps": 56, "pending": 24869, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T22:16:00Z", "rows": 100, "new": 60, "snaps": 46, "pending": 24915, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:18:39Z", "rows": 100, "new": 44, "snaps": 37, "pending": 24952, "last_page_all_new": 0, "secs": 37.4, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:21:05Z", "rows": 120, "new": 105, "snaps": 83, "pending": 25035, "last_page_all_new": 1, "secs": 25.7, "errors": []}
+{"ts": "2026-09-29T22:23:43Z", "rows": 100, "new": 63, "snaps": 54, "pending": 25089, "last_page_all_new": 0, "secs": 37.1, "errors": ["page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
+{"ts": "2026-09-29T22:26:10Z", "rows": 120, "new": 77, "snaps": 57, "pending": 25146, "last_page_all_new": 0, "secs": 25.3, "errors": []}
+{"ts": "2026-09-29T22:29:25Z", "rows": 80, "new": 70, "snaps": 53, "pending": 25199, "last_page_all_new": 0, "secs": 73.9, "errors": ["page 1 try 1: HTTP Error 429: Too Many Requests", "page 2 try 1: HTTP Error 429: Too Many Requests", "page 3 try 1: HTTP Error 429: Too Many Requests", "page 3 try 2: HTTP Error 429: Too Many Requests", "page 5 try 1: HTTP Error 429: Too Many Requests", "page 6 try 1: HTTP Error 429: Too Many Requests", "page 6 try 2: HTTP Error 429: Too Many Requests"]}
