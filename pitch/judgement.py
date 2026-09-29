@@ -28,8 +28,14 @@ def now():
 
 
 def key():
-    k = subprocess.run(["op", "item", "get", "The Odds API", "--vault", "Tritons World", "--fields", "label=credential", "--reveal"],
-                       capture_output=True, text=True).stdout.strip()
+    """The Odds API key: service account first (works in a scheduled run), desktop op as fallback."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(HERE), "bin"))
+        import secrets as proteus_secrets
+        k = proteus_secrets.get("The Odds API")
+    except Exception:
+        k = subprocess.run(["op", "item", "get", "The Odds API", "--vault", "PROTEUS", "--fields", "label=credential", "--reveal"],
+                           capture_output=True, text=True).stdout.strip()
     if len(k) != 32:
         sys.exit("The Odds API key not readable from 1Password")
     return k
