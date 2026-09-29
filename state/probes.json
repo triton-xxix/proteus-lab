@@ -782,16 +782,20 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-09-29",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-09-29T23:39:12+0100",
+   "verdict": "broken",
+   "verdict_at": "2026-09-29T23:39:36+0100",
+   "note": "The paper says the code is available; the repo holds one 143-byte README saying code comes soon, one commit on 29 Sep. Nothing to run, so the 14.5 percent error claim is unreproducible for now.",
+   "artefacts": [
+    "experiments/2026-09-29-P-0037"
+   ],
+   "minutes": 0,
+   "calls": 10,
+   "denied": [
+    "Bash `git clone --depth 1 https://github.com/DEFENSE-SEU/TokenCast /Users/triton/PROTEUS/sandbox`"
+   ],
    "luke": false
   },
   {
