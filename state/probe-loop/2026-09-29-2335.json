@@ -14,6 +14,6 @@
   "P-0037",
   "P-0038"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-09-29T23:44:01+0100",
+ "stop_reason": "nothing runnable: 4 need something I do not have (P-0011: Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke; P-0021: a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes); P-0025: vim and neovim binaries (brew install if not already present, no accounts); P-0028: Node/npm in the sandbox, no account needed); 3 wait on a date (P-0012 after 2026-10-22; P-0013 after 2026-10-20; P-0033 after 2026-09-30)"
 }
