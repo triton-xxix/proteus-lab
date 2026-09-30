@@ -70,6 +70,7 @@ def _run(coro_fn):
 # Nothing else in any other vault is read; there is no listing of other vaults.
 ALLOWED_OUTSIDE = {
     ("Tritons World", "XAI API Credentials"): "Luke in session, 30 Sep 2026: 'u can use the xai key if we have one'",
+    ("Tritons World", "Api-Sports"): "Luke in session, 30 Sep 2026: 'wire in api-sports'",
 }
 
 

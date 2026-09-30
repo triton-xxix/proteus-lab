@@ -24,7 +24,7 @@ import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = "/Users/triton/PROTEUS/"
-sys.path.insert(0, ROOT + "bin"); sys.path.insert(0, ROOT + "grinder"); sys.path.insert(0, HERE)
+sys.path.insert(0, ROOT + "grinder"); sys.path.insert(0, HERE)
 UA = {"User-Agent": "proteus-lab/0.1 research (+https://github.com/triton-xxix/proteus-lab)"}
 FEEDS = {  # news RSS, keyless; the register records which answer
     "CoinDesk": "https://www.coindesk.com/arc/outboundfeeds/rss/",
@@ -38,6 +38,15 @@ FEEDS = {  # news RSS, keyless; the register records which answer
     "Bankless": "https://www.bankless.com/rss/feed",
 }
 TG_NARRATIVE = ["cryptonary", "WatcherGuru"]   # public previews; Cryptonary's research itself is paid
+
+def _vault():
+    """bin/secrets.py by file path: on sys.path it would shadow the standard library's secrets module,
+    which numpy imports (found 30 Sep 2026)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("proteus_secrets", "/Users/triton/PROTEUS/bin/secrets.py")
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    return mod
+
 
 
 def day():
@@ -96,7 +105,7 @@ def reddit_top(after, before):
 
 
 def x_narrative():
-    import secrets as vault
+    vault = _vault()
     key = vault.get("XAI API Credentials", vault="Tritons World")
     since = (datetime.now(timezone.utc) - timedelta(hours=24)).strftime("%Y-%m-%d")
     body = {"model": "grok-4.20-0309-non-reasoning", "tools": [{"type": "x_search", "from_date": since}],

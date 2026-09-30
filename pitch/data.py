@@ -115,6 +115,21 @@ def load_fixturedownload():
     return pd.DataFrame(rows)
 
 
+def load_apisports():
+    """API-Football, today and tomorrow only (Free plan), with average bookmaker odds (pitch/apisports.py)."""
+    p = CACHE + "apisports.json"
+    if not os.path.exists(p):
+        return pd.DataFrame()
+    rows = json.load(open(p)).get("rows", [])
+    if not rows:
+        return pd.DataFrame()
+    df = pd.DataFrame(rows)
+    ko = pd.to_datetime(df["kickoff_utc"], utc=True).dt.tz_convert("Europe/London").dt.tz_localize(None)
+    df["Kickoff"] = ko; df["Date"] = ko.dt.normalize(); df["Time"] = ko.dt.strftime("%H:%M")
+    df["Source"] = "apisports"
+    return df[df["Div"].isin(LEAGUES)]
+
+
 def load_fixtures():
     """football-data fixtures (with odds) first; fixturedownload fills any match they lack."""
     p = CACHE + "fixtures.csv"
@@ -127,6 +142,11 @@ def load_fixtures():
         else:
             df["Kickoff"] = df["Date"] + pd.Timedelta(hours=15)
         df["Source"] = "football-data"
+    ap = load_apisports()
+    if not ap.empty:
+        have = set(zip(df["HomeTeam"], df["AwayTeam"])) if not df.empty else set()
+        ap = ap[[(h, a) not in have for h, a in zip(ap["HomeTeam"], ap["AwayTeam"])]]
+        df = pd.concat([df, ap], ignore_index=True)
     fd = load_fixturedownload()
     if not fd.empty:
         have = set(zip(df["HomeTeam"], df["AwayTeam"])) if not df.empty else set()

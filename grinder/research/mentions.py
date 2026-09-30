@@ -26,7 +26,7 @@ import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = "/Users/triton/PROTEUS/"
-sys.path.insert(0, ROOT + "bin"); sys.path.insert(0, ROOT + "grinder"); sys.path.insert(0, ROOT + "grinder/harness")
+sys.path.insert(0, ROOT + "grinder"); sys.path.insert(0, ROOT + "grinder/harness")
 import paper  # noqa: E402
 
 OUT = HERE + "/MENTIONS.csv"
@@ -35,6 +35,15 @@ FIELDS = ["mint", "symbol", "night", "asof", "source", "count", "authors", "firs
 UA = {"User-Agent": "proteus-lab/0.1 research (+https://github.com/triton-xxix/proteus-lab)"}
 XAI_MODEL = "grok-4.20-0309-non-reasoning"
 AS = "https://arctic-shift.photon-reddit.com/api/"
+
+def _vault():
+    """bin/secrets.py by file path: on sys.path it would shadow the standard library's secrets module,
+    which numpy imports (found 30 Sep 2026)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("proteus_secrets", "/Users/triton/PROTEUS/bin/secrets.py")
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    return mod
+
 
 
 def ts(s):
@@ -59,7 +68,7 @@ def append(rows):
 
 def x_mentions(mint, symbol, asof):
     """One xAI call. Returns a row dict; never raises."""
-    import secrets as vault
+    vault = _vault()
     key = vault.get("XAI API Credentials", vault="Tritons World")
     start = (asof - timedelta(hours=24)).strftime("%Y-%m-%d")
     end = asof.strftime("%Y-%m-%d")

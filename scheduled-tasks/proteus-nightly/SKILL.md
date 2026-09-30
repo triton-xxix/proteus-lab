@@ -1,6 +1,6 @@
 ---
 name: proteus-nightly
-description: 23:15 nightly Proteus expedition. Pulls data for the Grinder and the Pitch, updates and commits both paper ledgers, adds one Field Notes item, runs the harvest (keyless pull, one Sonnet child judges, testable items queued as probes), reads up to two Skool groups on lesser-model children, then runs the probe loop (one probe to a verdict at a time, each committed, until the budget is spent or the queue is honestly empty), writes a run log. Writes only under /Users/triton/PROTEUS and the vault mirror folder. Sends nothing.
+description: 23:15 nightly Proteus expedition. Pulls data for the Grinder and the Pitch, updates and commits both paper ledgers, adds one Field Notes item, runs the harvest (keyless pull, one Sonnet child judges, testable items queued as probes), reads up to two Skool groups on lesser-model children, reports the graduation book, pulls API-Football fixtures, runs the research desk (per-token X, Reddit, Telegram and paid-promotion signals, a nightly narrative digest), then runs the probe loop (one probe to a verdict at a time, each committed, until the budget is spent or the queue is honestly empty), writes a run log. Writes only under /Users/triton/PROTEUS and the vault mirror folder. Sends nothing.
 ---
 
 You are Proteus. Working directory: `/Users/triton/PROTEUS`. Read `/Users/triton/PROTEUS/CLAUDE.md` and `/Users/triton/PROTEUS/CHARTER.md` first. Do not read anything from the OBSIDIAN vault outside `/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/`. Do not load Luke's memory index or knowledge pack.
@@ -30,9 +30,22 @@ then
 then
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --score`
 Read the tail of `/Users/triton/PROTEUS/grinder/LEDGER.csv` and note new entries, exits and rugs for the run log.
+Then the research desk's per-token signals for tonight's gate-passers, before the commit so they are
+dated with the snapshot:
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/mentions.py tonight --x-cap 8`
+(X via xAI, Reddit, Telegram, DexScreener paid orders, Jupiter; appends to `grinder/research/MENTIONS.csv`;
+prints the xAI spend, which goes in the run log).
+Then the graduation book, a long-running paper job (rules `grinder/graduates/RULES.md`):
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/graduates/watcher.py summary`
+One run-log line: closed, counted, open, median latency, primary expectancy. If it says the job has
+stopped or the counts have not moved since last night, say so; do not restart it in a scheduled run.
 
 ## 3. The Pitch
 
+First the one-day-ahead fixtures and odds from API-Football (Luke's key, Free plan: today and
+tomorrow only, 100 requests a day):
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/apisports.py fetch`
+Note any "unmapped" teams in the run log. Then
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming --days 8`
 (refreshes data, refits, commits predictions for fixtures that do not yet have one; zero new rows is normal when the fixtures file has not refreshed) then
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/score.py`
@@ -90,6 +103,24 @@ do this, need this". Plan in `/Users/triton/PROTEUS/field-notes/SKOOL-READING-PL
    commits the queue, the digests and the draft. A digest with verdict TRY: add its "one thing worth
    trying" as a probe yourself, at most one a night:
    `python3 /Users/triton/PROTEUS/bin/probe.py add "..." --source field-notes --est 20`.
+
+## 5d. The research desk's digest
+
+Design in `/Users/triton/PROTEUS/grinder/research/README.md`, sources in `grinder/research/SOURCES.md`.
+
+1. `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/narrative.py pull`
+   (news RSS, CoinGecko trending, Reddit, Telegram, one xAI summary of X, tonight's picks with their
+   mention rows; writes `state/research/YYYY-MM-DD/narrative.md` and `child-prompt.md`, prints the xAI spend).
+2. Read that `child-prompt.md` and spawn one child: `subagent_type` `general-purpose`, `model` `sonnet`,
+   no `isolation`, the file's text as the whole prompt. It writes
+   `/Users/triton/PROTEUS/state/agents/research/YYYY-MM-DD-digest.md`. This is the fourth spawn with the
+   harvest and two Skool children; if the Skool step used fewer, nothing else takes the slot.
+   It may run alongside the Skool children: spawn them in one message.
+3. `python3 /Users/triton/PROTEUS/grinder/research/narrative.py ingest` (copies the digest to
+   `grinder/research/digests/`, one run-log line, commits the digest and `MENTIONS.csv`).
+
+Record tonight's xAI spend (mentions plus narrative) in the run log. It lands on Luke's xAI account,
+not the Proteus card, and goes in `SPEND.md` on Sunday under its own line.
 
 ## Sub-agents
 
