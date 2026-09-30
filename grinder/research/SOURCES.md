@@ -12,7 +12,7 @@ whether its dated claims came true. Trust comes from that column, not from the n
 |---|---|---|---|---|
 | X | xAI Responses API, `x_search`, key named by Luke 30 Sep | $0.04 a token measured (58 for $2.51), 8 a night | day-granular search window; the prompt asks for posts before the snapshot, not enforced by the API | backfill 30 Sep: 21 of 58 had any post; those did far better at 24h than the 37 silent ones (seen, forward test M07) |
 | Reddit | Arctic Shift archive, six subreddits bulk-pulled per 24h window, matched locally on mint or $TICKER | free | yes | backfill 30 Sep: 2 hits in 58 tokens; near useless for 1 to 48 hour tokens |
-| Telegram | public previews `t.me/s/solana_pumpfun_calls`, `t.me/s/alphacalls`, matched on contract address | free | yes | backfill 30 Sep: 0 hits in 58; both channels post only a few times a day |
+| Telegram | 23 public channels in `telegram-channels.json` (found and measured 30 Sep: 3 aggregators incl. SpyDefiLiveSol, 3 alert bots, 17 human callers), matched on contract address; per-channel history cached | free | yes | the first two channels (0 hits in 58) were dropped; solana_pumpfun_calls turned out to be a shill and casino board |
 | DexScreener paid | `orders/v1/solana/<mint>`: paid profile and ads with payment time, boosts without | free | orders yes, boosts no | none yet |
 | Jupiter | `lite-api.jup.ag/tokens/v2/search`: organic score, holders, audit flags | free | no: current values only, backfilled rows say "NOW" | none yet |
 

@@ -143,57 +143,86 @@ def reddit_mentions(mint, symbol, asof):
             "detail": ",".join("%s:%d" % kv for kv in sorted(per.items()))}
 
 
-TG_CALLS = ["solana_pumpfun_calls", "alphacalls"]   # vetted by the 30 Sep survey: public previews, carry contract addresses
+TG_LIST = HERE + "/telegram-channels.json"
 TG_CACHE = ROOT + "state/research/telegram/"
 
 
-def telegram_window(channel, after, before):
-    """Messages from a public channel's t.me/s preview between two epoch seconds, paged backwards."""
+def tg_channels():
+    return json.load(open(TG_LIST))["channels"]
+
+
+def telegram_history(channel, need_from):
+    """All messages of a public channel back to need_from (epoch s), from its t.me/s preview, cached per
+    channel and extended only as far as needed. Pages are about 20 messages; capped at 600 pages."""
     import html as h
     os.makedirs(TG_CACHE, exist_ok=True)
-    path = TG_CACHE + "%s-%d-%d.jsonl" % (channel, after, before)
+    path = TG_CACHE + channel + ".jsonl"
+    have = {}
     if os.path.exists(path):
-        return [json.loads(l) for l in open(path)]
-    items, url = [], "https://t.me/s/%s" % channel
-    for _ in range(40):
-        try:
-            page = requests.get(url, headers=UA, timeout=30).text
-        except Exception:
+        for l in open(path):
+            m = json.loads(l); have[m["id"]] = m
+    def fetch(url):
+        for attempt in range(4):
+            try:
+                r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+                if r.status_code == 200:
+                    return r.text
+            except Exception:
+                pass
+            time.sleep(3 * (attempt + 1))
+        return ""
+    def parse(page):
+        out = []
+        for mid, body in re.findall(r'data-post="[^/]+/(\d+)"(.*?)(?=data-post="|\Z)', page, re.S):
+            t = re.search(r'<time datetime="([^"]+)"', body)
+            if not t:
+                continue
+            txt = re.search(r'tgme_widget_message_text[^>]*>(.*?)</div>', body, re.S)
+            links = " ".join(re.findall(r'href="([^"]+)"', body))
+            text = h.unescape(re.sub(r"<[^>]+>", " ", txt.group(1) if txt else "")) + " " + links
+            out.append({"id": int(mid), "t": datetime.fromisoformat(t.group(1).replace("Z", "+00:00")).timestamp(),
+                        "text": re.sub(r"\s+", " ", text)[:3000]})
+        return out
+    # Page back from the newest message. Stop when the page reaches need_from, or when it runs into
+    # messages already cached and the cache itself already reaches need_from.
+    cache_ok = bool(have) and min(m["t"] for m in have.values()) <= need_from
+    cached_ids = set(have)
+    batch, pages = parse(fetch("https://t.me/s/%s" % channel)), 0
+    while batch and pages < 600:
+        for m in batch:
+            have[m["id"]] = m
+        oldest = min(batch, key=lambda m: m["id"])
+        if oldest["t"] <= need_from:
             break
-        blocks = re.findall(r'data-post="[^/]+/(\d+)".*?<time datetime="([^"]+)"', page, re.S)
-        texts = re.findall(r'data-post="[^/]+/(\d+)"(.*?)(?=data-post="|\Z)', page, re.S)
-        tmap = dict(texts)
-        if not blocks:
+        if cache_ok and any(m["id"] in cached_ids for m in batch):
             break
-        oldest = None
-        for mid, dt in blocks:
-            t = datetime.fromisoformat(dt.replace("Z", "+00:00")).timestamp()
-            oldest = t if oldest is None or t < oldest else oldest
-            if after <= t < before:
-                body = h.unescape(re.sub(r"<[^>]+>", " ", tmap.get(mid, "")))
-                items.append({"id": int(mid), "t": t, "text": re.sub(r"\s+", " ", body)[:2000]})
-        if oldest is None or oldest < after:
-            break
-        url = "https://t.me/s/%s?before=%s" % (channel, min(int(m) for m, _ in blocks))
-        time.sleep(1.5)
+        time.sleep(1.2)
+        batch = parse(fetch("https://t.me/s/%s?before=%d" % (channel, oldest["id"])))
+        pages += 1
     with open(path, "w") as fh:
-        for it in items:
-            fh.write(json.dumps(it) + "\n")
-    return items
+        for i in sorted(have):
+            fh.write(json.dumps(have[i]) + "\n")
+    return list(have.values())
+
+
+_TG_MEM = {}
 
 
 def telegram_mentions(mint, symbol, asof):
-    before = int(asof.timestamp()); after = before - 86400
-    after -= after % 3600; before -= before % 3600
-    hits, first, per = 0, None, {}
-    for ch in TG_CALLS:
-        for it in telegram_window(ch, after, before):
-            if mint in it["text"]:
-                hits += 1; per[ch] = per.get(ch, 0) + 1
-                first = it["t"] if first is None or it["t"] < first else first
+    before = asof.timestamp(); after = before - 86400
+    hits, first, per, kinds = 0, None, {}, {}
+    for c in tg_channels():
+        ch = c["channel"]
+        if ch not in _TG_MEM or min((m["t"] for m in _TG_MEM[ch]), default=9e18) > after:
+            _TG_MEM[ch] = telegram_history(ch, after)
+        for m in _TG_MEM[ch]:
+            if after <= m["t"] < before and mint in m["text"]:
+                hits += 1; per[ch] = per.get(ch, 0) + 1; kinds[c["kind"]] = kinds.get(c["kind"], 0) + 1
+                first = m["t"] if first is None or m["t"] < first else first
     return {"source": "telegram", "count": hits, "authors": len(per),
             "first_seen": datetime.fromtimestamp(first, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") if first else "",
-            "detail": ",".join("%s:%d" % kv for kv in sorted(per.items()))}
+            "paid": ",".join("%s:%d" % kv for kv in sorted(kinds.items())),
+            "detail": ",".join("%s:%d" % kv for kv in sorted(per.items()))[:200]}
 
 
 def jupiter(mint, asof):

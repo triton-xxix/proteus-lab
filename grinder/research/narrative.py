@@ -151,10 +151,10 @@ def pull():
     except Exception as e:
         errors.append("reddit: " + str(e)[:80])
     L += ["", "## Telegram channels, last 24h"]
-    from mentions import telegram_window
+    from mentions import telegram_history
     for ch in TG_NARRATIVE:
         try:
-            msgs = telegram_window(ch, b - 86400, b)
+            msgs = [m for m in telegram_history(ch, b - 86400) if b - 86400 <= m["t"] < b]
             L.append("### t.me/%s: %d messages" % (ch, len(msgs)))
             L += ["- " + m["text"][:220] for m in msgs[-10:]]
         except Exception as e:
