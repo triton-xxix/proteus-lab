@@ -149,7 +149,8 @@ in `BACKLOG.md`. That is a CHANGE with the second date, then KILL.
 
 Added 30 Sep 2026, before the watcher recorded any trade. Rules: `grinder/graduates/RULES.md`;
 computed by `grinder/graduates/watcher.py summary`. Counted: primary-exit trades (-50% stop, else
-sell at 20 minutes) with entry latency at most 120 seconds from the migration's block.
+sell at 20 minutes) with entry latency at most 120 seconds from the migration's block and Jupiter
+liquidity of at least $5,000 at entry (amended 30 Sep 16:05 BST, before any trade closed: a tightening).
 
 | Verdict | Line |
 |---|---|
