@@ -44,10 +44,13 @@ def candles(addr, created):
         return json.load(open(p))
     r = None
     for attempt in range(8):
-        r = requests.get("https://api.geckoterminal.com/api/v2/networks/solana/pools/%s/ohlcv/minute" % addr,
-                         params={"aggregate": 1, "limit": 100, "currency": "usd", "token": "base",
-                                 "before_timestamp": int(created + 75 * 60)},
-                         headers={"Accept": "application/json", "User-Agent": "proteus-lab/0.2"}, timeout=30)
+        try:
+            r = requests.get("https://api.geckoterminal.com/api/v2/networks/solana/pools/%s/ohlcv/minute" % addr,
+                             params={"aggregate": 1, "limit": 100, "currency": "usd", "token": "base",
+                                     "before_timestamp": int(created + 75 * 60)},
+                             headers={"Accept": "application/json", "User-Agent": "proteus-lab/0.2"}, timeout=30)
+        except requests.RequestException:
+            r = None; time.sleep(20); continue
         if r.status_code == 429:
             time.sleep(30 * (attempt + 1)); continue
         break
@@ -57,6 +60,25 @@ def candles(addr, created):
     json.dump(c, open(p, "w"))
     time.sleep(3.0)
     return c
+
+
+def clean(c):
+    """Drop isolated upward prints. A candle whose close or high is more than 5x above the median close of
+    its neighbours (five either side) is dropped as a bad tick or
+    a fill nobody else could get. Found 30 Sep: single-trade candles 10x to 30,000x the running price, often
+    the last trade in a pool's first hour, were being used as exit prices."""
+    if not c:
+        return c
+    closes = [x[4] for x in c]
+    out = []
+    for i, x in enumerate(c):
+        nb = closes[max(0, i - 5):i] + closes[i + 1:i + 6]
+        if nb:
+            m = st.median(nb)
+            if max(x[2], x[4]) > 5 * m:          # upward spikes only: a lone low print may be a real rug, and is kept
+                continue
+        out.append(x)
+    return out or c[:1]
 
 
 def exit_at(c, t_entry, entry, minutes, stop=None):
@@ -87,11 +109,13 @@ def main():
     for i, p in enumerate(sample):
         addr = p["id"].split("_", 1)[1]
         created, seen = ts(p["created"]), ts(p["seen"])
-        c = candles(addr, created)
+        c = clean(candles(addr, created))
         if (i + 1) % 50 == 0:
             print("candles %d/%d" % (i + 1, len(sample)), flush=True)
         if not c:
             rows.append({"id": addr, "status": "no-candles"}); continue
+        if not any(x[0] < created + 3600 for x in c):
+            rows.append({"id": addr, "status": "no-early-candles"}); continue
         snap = first.get(p["id"], {})
         if DEX == "pump-fun":
             depth = VIRTUAL_QUOTE_USD + (float(snap.get("reserve") or 0) / 2)
