@@ -42,3 +42,16 @@ round-1 exit with the best trimmed-free showing). The pair counts as two variant
 +10% of stake, at least 40 closed positions, best three removed at or above zero, and at least
 10 + 41 = 51 points of stake above V01 on the same rows. That is a high bar, on purpose: most of
 these will fail it and the ones that clear it will have earned the book.
+
+## Added 30 Sep 2026, after seeing the backfill and the gate replay (forward-only, N rises)
+
+Written after `MENTIONS-REPLAY.txt` and `GATES.md` were read, so these are seen and count only
+snapshots after 2026-09-30T12:00Z. Each at V01 and V17: 4 more variants, **N = 55**.
+
+| ID | Entry rule | Why it is here |
+|---|---|---|
+| M07 | X: at least one post by anyone in the 24h before the snapshot | on the 58, the 37 silent tokens were up at 24h 5 times (V01 -£36.9); the 21 talked-about 8 times (about -£2.4) |
+| E06 | the v0.2 gates except age, with age above 48h instead of at most 48h (needs the scanner to surface older pools) | the 20 age-rejected tokens older than 48h averaged about -£2.9 at V01 against -£24 for the passers; the 5 under 1h all died |
+
+M01 to M04 on the 58 (unseen, pre-registered): none clears the bar. M01 and M03 have 1 and 4
+rows; M02 (quiet, 41 rows) is -£26.5 at V01; Reddit has 2 hits in 58 and Telegram 0.

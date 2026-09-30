@@ -1,0 +1,16 @@
+coverage: x rows with authors 55 of 58 | reddit >0: 2 | telegram >0: 0
+X authors distribution: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7, 7, 10]
+all 58                                 V01 n=58 exp  -24.4  less best3  -30.8  up@24h 13  median move  -71%
+all 58                                 V17 n=58 exp    7.4  less best3  -31.2  up@24h 13  median move  -71%
+M01 X authors >= 10                    V01 n= 1 exp   93.1  less best3    nan  up@24h  1  median move +156%
+M01 X authors >= 10                    V17 n= 1 exp  -14.9  less best3    nan  up@24h  1  median move +156%
+M02 X authors <= 3                     V01 n=41 exp  -26.5  less best3  -35.9  up@24h  9  median move  -75%
+M02 X authors <= 3                     V17 n=41 exp   18.8  less best3  -36.1  up@24h  9  median move  -75%
+M03 X shill share <= 0.5               V01 n= 4 exp  -28.1  less best3  -98.1  up@24h  2  median move  +77%
+M03 X shill share <= 0.5               V17 n= 4 exp  -18.7  less best3  -98.1  up@24h  2  median move  +77%
+M04 Reddit mention >= 1                V01 n= 2 exp  -52.9  less best3    nan  up@24h  0  median move  -77%
+M04 Reddit mention >= 1                V17 n= 2 exp  -39.9  less best3    nan  up@24h  0  median move  -77%
+(info) Telegram mention >= 1           n=0
+(info) X silent (0 posts)              V01 n=37 exp  -36.9  less best3  -48.3  up@24h  5  median move  -79%
+(info) X silent (0 posts)              V17 n=37 exp   19.1  less best3  -38.9  up@24h  5  median move  -79%
+bar for a second book: exp >= +10, n >= 40, less-best-3 >= 0, and >= V01 all-58 (-24.4) + 51

@@ -17,6 +17,7 @@ Every row carries the as-of time; nothing after the snapshot time is counted.
 import csv
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timezone, timedelta
@@ -142,6 +143,75 @@ def reddit_mentions(mint, symbol, asof):
             "detail": ",".join("%s:%d" % kv for kv in sorted(per.items()))}
 
 
+TG_CALLS = ["solana_pumpfun_calls", "alphacalls"]   # vetted by the 30 Sep survey: public previews, carry contract addresses
+TG_CACHE = ROOT + "state/research/telegram/"
+
+
+def telegram_window(channel, after, before):
+    """Messages from a public channel's t.me/s preview between two epoch seconds, paged backwards."""
+    import html as h
+    os.makedirs(TG_CACHE, exist_ok=True)
+    path = TG_CACHE + "%s-%d-%d.jsonl" % (channel, after, before)
+    if os.path.exists(path):
+        return [json.loads(l) for l in open(path)]
+    items, url = [], "https://t.me/s/%s" % channel
+    for _ in range(40):
+        try:
+            page = requests.get(url, headers=UA, timeout=30).text
+        except Exception:
+            break
+        blocks = re.findall(r'data-post="[^/]+/(\d+)".*?<time datetime="([^"]+)"', page, re.S)
+        texts = re.findall(r'data-post="[^/]+/(\d+)"(.*?)(?=data-post="|\Z)', page, re.S)
+        tmap = dict(texts)
+        if not blocks:
+            break
+        oldest = None
+        for mid, dt in blocks:
+            t = datetime.fromisoformat(dt.replace("Z", "+00:00")).timestamp()
+            oldest = t if oldest is None or t < oldest else oldest
+            if after <= t < before:
+                body = h.unescape(re.sub(r"<[^>]+>", " ", tmap.get(mid, "")))
+                items.append({"id": int(mid), "t": t, "text": re.sub(r"\s+", " ", body)[:2000]})
+        if oldest is None or oldest < after:
+            break
+        url = "https://t.me/s/%s?before=%s" % (channel, min(int(m) for m, _ in blocks))
+        time.sleep(1.5)
+    with open(path, "w") as fh:
+        for it in items:
+            fh.write(json.dumps(it) + "\n")
+    return items
+
+
+def telegram_mentions(mint, symbol, asof):
+    before = int(asof.timestamp()); after = before - 86400
+    after -= after % 3600; before -= before % 3600
+    hits, first, per = 0, None, {}
+    for ch in TG_CALLS:
+        for it in telegram_window(ch, after, before):
+            if mint in it["text"]:
+                hits += 1; per[ch] = per.get(ch, 0) + 1
+                first = it["t"] if first is None or it["t"] < first else first
+    return {"source": "telegram", "count": hits, "authors": len(per),
+            "first_seen": datetime.fromtimestamp(first, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") if first else "",
+            "detail": ",".join("%s:%d" % kv for kv in sorted(per.items()))}
+
+
+def jupiter(mint, asof):
+    """Jupiter's token record: organic score, holder count, audit flags. Current values only, so a
+    backfilled row is marked as-of now, not as-of the snapshot."""
+    try:
+        d = requests.get("https://lite-api.jup.ag/tokens/v2/search", params={"query": mint}, headers=UA, timeout=20).json()
+        t = next((x for x in d if x.get("id") == mint), None) if isinstance(d, list) else None
+        if not t:
+            return {"source": "jupiter", "detail": "not found"}
+        late = datetime.now(timezone.utc) - asof > timedelta(hours=2)
+        return {"source": "jupiter", "count": t.get("organicScore"), "authors": t.get("holderCount"),
+                "paid": t.get("organicScoreLabel") or "",
+                "detail": ("NOW not as-of; " if late else "") + json.dumps({k: t.get(k) for k in ("isVerified", "tags", "audit")})[:180]}
+    except Exception as e:
+        return {"source": "jupiter", "detail": "error: %s" % str(e)[:100]}
+
+
 def dex_paid(mint, asof):
     """DexScreener orders: paid profile / boosts / ads. The endpoint has no history, so it is only
     meaningful tonight; a backfilled row says so."""
@@ -165,7 +235,7 @@ def run(tokens, x_cap):
         mint, sym, night = t["mint"], t["symbol"], t["ts"]
         asof = ts(night)
         base = {"mint": mint, "symbol": sym, "night": night, "asof": night}
-        for src in ("dexpaid", "reddit", "x"):
+        for src in ("dexpaid", "jupiter", "reddit", "telegram", "x"):
             if (mint, night, src) in have:
                 continue
             if src == "x":
@@ -175,6 +245,10 @@ def run(tokens, x_cap):
                 row = x_mentions(mint, sym, asof); spent += row.get("cost_usd") or 0
             elif src == "reddit":
                 row = reddit_mentions(mint, sym, asof)
+            elif src == "telegram":
+                row = telegram_mentions(mint, sym, asof)
+            elif src == "jupiter":
+                row = jupiter(mint, asof)
             else:
                 row = dex_paid(mint, asof)
             row.update(base); row["pulled_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

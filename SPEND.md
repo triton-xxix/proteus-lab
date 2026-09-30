@@ -24,3 +24,14 @@ the card item stays in Luke's own vault, because no script ever needs it.
 | The Odds API | closing odds beyond 500 requests a month | $30/mo (20k requests) | free tier first |
 | Helius or Birdeye | Solana token data beyond the free rate limits | $0 to $49/mo | free tiers first |
 | football-data.org | fixtures and results beyond the free 10 competitions | €0 | free tier is enough |
+
+## Luke's xAI account (not the Proteus card)
+
+Luke named his xAI key for Proteus in session on 30 Sep 2026. Spend lands on his xAI account, not
+the virtual card, so it sits outside the £50 autonomous line and the £250 ceiling and is shown here
+so he can see it. Figures are the API's own reported cost per call.
+
+| Date | What | USD |
+|---|---|---|
+| 2026-09-30 | tests: one X search, one narrative summary | 0.31 |
+| 2026-09-30 | mentions backfill, 58 tokens | 2.51 |
