@@ -66,15 +66,26 @@ def _run(coro_fn):
         raise SecretError("1Password SDK failed: %s" % str(exc)[:200])
 
 
-def _check_vault(vault):
-    if vault.upper() != VAULT:
-        raise SecretError("refused: this code reads only the %s vault" % VAULT)
+# Items outside the PROTEUS vault that Luke has named for use, one line each with his word and date.
+# Nothing else in any other vault is read; there is no listing of other vaults.
+ALLOWED_OUTSIDE = {
+    ("Tritons World", "XAI API Credentials"): "Luke in session, 30 Sep 2026: 'u can use the xai key if we have one'",
+}
+
+
+def _check_vault(vault, item=None):
+    if vault.upper() == VAULT:
+        return
+    if (vault, item) in ALLOWED_OUTSIDE:
+        return
+    raise SecretError("refused: this code reads only the %s vault, plus the items Luke named in ALLOWED_OUTSIDE" % VAULT)
 
 
 def get(item, field="credential", vault=VAULT):
     """The secret's value, for use inside a script. Do not print it."""
-    _check_vault(vault)
-    return _run(lambda c: c.secrets.resolve("op://%s/%s/%s" % (VAULT, item, field))).rstrip("\n")
+    _check_vault(vault, item)
+    v = VAULT if vault.upper() == VAULT else vault
+    return _run(lambda c: c.secrets.resolve("op://%s/%s/%s" % (v, item, field))).rstrip("\n")
 
 
 def titles(vault=VAULT):
