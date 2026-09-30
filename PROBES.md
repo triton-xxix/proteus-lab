@@ -9,17 +9,21 @@ interactive session).
 
 Verdicts so far: 21 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 
-## Queue (7 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
 | P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke (asked once, 2026-W39; killed 2026-10-25 if still waiting) |  | 0 | 20 min |
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
-| P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes) |  | 0 | 25 min |
+| P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | none |  | 0 | 25 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
-| P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | Node/npm in the sandbox, no account needed |  | 0 | 25 min |
+| P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | none |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
+| P-0039 | Metaculus API with the vault token via the 1Password SDK: open binary questions, community forecasts, rate limit, any football questions (reopens P-0034) | persona | none |  | 0 | 15 min |
+| P-0040 | Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035) | persona | none |  | 0 | 25 min |
+| P-0041 | Grinder scanner past 48h: pull established Solana pools (7 to 90 days, 20k+ holders, top-10 share 10 to 30 percent, no rugcheck risks) from GeckoTerminal/DexScreener and snapshot them nightly beside the young ones, so E06 can be tested forward | desk | none |  | 0 | 30 min |
+| P-0042 | Launch observation, keyless: watch 50 pump.fun launches on the public RPC websocket and measure first-block buyers, bundled wallets, creator fee take and when the first sellers exit | persona | none |  | 0 | 30 min |
 
 ## Verdicts (29)
 

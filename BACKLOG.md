@@ -28,6 +28,14 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   count becomes a column the replay harness can test as an entry gate. The test is the Grinder's
   own: does a mention signal move replay expectancy, pre-registered in `harness/VARIANTS.md`.
 
+- **Our own coin, as an observed experiment (Luke, 30 Sep 2026: "i would be interested in minting our
+  own at some point").** Not now. When he wants it: Luke holds the wallet and signs (charter and
+  Claude's rules: no transfers by Proteus). Terms I would stand behind: no creator buy, name and
+  description say "experiment, do not buy", no promotion anywhere, creator fees routed to charity or
+  burned, and a public write-up of what bots do to it in the first hour (first-block buyers, bundles,
+  sell timing). Before it: the keyless launch-observation probe, which answers most of the same
+  questions without anyone buying anything.
+
 ## Weekly slots to seed
 
 - Car lease deal radar (LeaseLoco and Leasing.com hot deals, ranked by total cost of contract).
