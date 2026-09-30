@@ -1,0 +1,309 @@
+{
+  "sha": "e8d610adcf946367430c8b43a97aad8059befaad",
+  "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/e8d610adcf946367430c8b43a97aad8059befaad",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9bb9cd21520ccced28a6cd8ce71d5891691c0db",
+      "size": 38,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/c9bb9cd21520ccced28a6cd8ce71d5891691c0db"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5088d7b73eda8bdf7acdefe02a5d31e82bbfe495",
+      "size": 1260,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/5088d7b73eda8bdf7acdefe02a5d31e82bbfe495"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eb5d0d59fe59eea58201c9a869571af0b05bde6",
+      "size": 3563,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/0eb5d0d59fe59eea58201c9a869571af0b05bde6"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3769b2d41e2cc1b05639c58b7daf988cc115a0e",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/a3769b2d41e2cc1b05639c58b7daf988cc115a0e"
+    },
+    {
+      "path": "docs/demo-cutaway.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56d83610364d1056b2fab6ecc8b85dd49f5baf7c",
+      "size": 600526,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/56d83610364d1056b2fab6ecc8b85dd49f5baf7c"
+    },
+    {
+      "path": "docs/demo-panel.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d0762aaa31ee0c657c804a8d2f9cf27395aaa86",
+      "size": 2989829,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/7d0762aaa31ee0c657c804a8d2f9cf27395aaa86"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4016555f7fcffb8b96a4c770ea881af43e616a2e",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/4016555f7fcffb8b96a4c770ea881af43e616a2e"
+    },
+    {
+      "path": "skills/motion-broll",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "91e73cc90f3073a79ef490fbea30afbee963c186",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/91e73cc90f3073a79ef490fbea30afbee963c186"
+    },
+    {
+      "path": "skills/motion-broll/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23b5b935dfa7df5b1dcb3560afed656e8fc06151",
+      "size": 8851,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/23b5b935dfa7df5b1dcb3560afed656e8fc06151"
+    },
+    {
+      "path": "skills/motion-broll/engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01764af0ba8d7b39762fda26771e96bbed2f58f1",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/01764af0ba8d7b39762fda26771e96bbed2f58f1"
+    },
+    {
+      "path": "skills/motion-broll/engine/base.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4631cce2b219eeb23552695deb34fde2c5d96123",
+      "size": 1356,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/4631cce2b219eeb23552695deb34fde2c5d96123"
+    },
+    {
+      "path": "skills/motion-broll/engine/beats.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e688a51800e1ec28a67234cdc33a922fa10675a",
+      "size": 1213,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/5e688a51800e1ec28a67234cdc33a922fa10675a"
+    },
+    {
+      "path": "skills/motion-broll/engine/build.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76d4dc69eeb18d323001cf99dde5a92307a18c73",
+      "size": 1711,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/76d4dc69eeb18d323001cf99dde5a92307a18c73"
+    },
+    {
+      "path": "skills/motion-broll/engine/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a75992940e0965f809baad0dd4c5a415bf15d86",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/1a75992940e0965f809baad0dd4c5a415bf15d86"
+    },
+    {
+      "path": "skills/motion-broll/engine/fonts/Geist-Variable.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c5999d617e106753ce406898cacc94a169bbb24",
+      "size": 69652,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/5c5999d617e106753ce406898cacc94a169bbb24"
+    },
+    {
+      "path": "skills/motion-broll/engine/fonts/GeistMono-Medium.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db3b40a54a666a32cad89d999bf6b9872871d749",
+      "size": 51500,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/db3b40a54a666a32cad89d999bf6b9872871d749"
+    },
+    {
+      "path": "skills/motion-broll/engine/fonts/OFL-Geist.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d003fec6b8a0f9f866ab1038579b6ea20926ac4",
+      "size": 4368,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/8d003fec6b8a0f9f866ab1038579b6ea20926ac4"
+    },
+    {
+      "path": "skills/motion-broll/engine/motion.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6c8b6178b577c85bbaa2874ea52723de56a4b1f",
+      "size": 8623,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/c6c8b6178b577c85bbaa2874ea52723de56a4b1f"
+    },
+    {
+      "path": "skills/motion-broll/engine/render.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6e4eb0da89c88eeec2f07169cdffa95dcaa1275",
+      "size": 2159,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/d6e4eb0da89c88eeec2f07169cdffa95dcaa1275"
+    },
+    {
+      "path": "skills/motion-broll/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a019c3e40fe279a415ef53b52279ac96c286fbec",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/a019c3e40fe279a415ef53b52279ac96c286fbec"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37281d0112246de288ee4a71115e60dc1edaf6c0",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/37281d0112246de288ee4a71115e60dc1edaf6c0"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/01-opus-drop.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5004261fb78f0d7ed9582c7e33edb7fd6602de7b",
+      "size": 2791,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/5004261fb78f0d7ed9582c7e33edb7fd6602de7b"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/02-pip-builds.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "677e9011d6280afa2e790c3d8876fee10d5b4527",
+      "size": 8932,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/677e9011d6280afa2e790c3d8876fee10d5b4527"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/03-effort-slider.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67d2ff6468457188ecbaa68ac2c04c09ea5e7002",
+      "size": 2979,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/67d2ff6468457188ecbaa68ac2c04c09ea5e7002"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/04-master-prompt.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a328ca073e469a34c5d230fd70891359752b56d",
+      "size": 5172,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/8a328ca073e469a34c5d230fd70891359752b56d"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/05-low-vs-max.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f5b558557a62eaa104dc1e93391e173ffb00dc5",
+      "size": 4186,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/7f5b558557a62eaa104dc1e93391e173ffb00dc5"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/06-chapter.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "675646469963600192cbfd7a37bbb8b153085962",
+      "size": 1066,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/675646469963600192cbfd7a37bbb8b153085962"
+    },
+    {
+      "path": "skills/motion-broll/examples/opus-aoe2/plan.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3684d01dc913e428b7671331b4d9896a52ebea3",
+      "size": 1606,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/a3684d01dc913e428b7671331b4d9896a52ebea3"
+    },
+    {
+      "path": "skills/motion-broll/reference",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67090cc372ce4f763eaad797f4208eb201d17089",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/67090cc372ce4f763eaad797f4208eb201d17089"
+    },
+    {
+      "path": "skills/motion-broll/reference/engine-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c67dec128e631f810debeecf9ffd9b16410d90a1",
+      "size": 5994,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/c67dec128e631f810debeecf9ffd9b16410d90a1"
+    },
+    {
+      "path": "skills/motion-broll/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b9ca0feb3ada07584e16ecd9cbae7e6df4eb6bb",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/7b9ca0feb3ada07584e16ecd9cbae7e6df4eb6bb"
+    },
+    {
+      "path": "skills/motion-broll/scripts/composite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79cece7d191818c07ac372b08751f39014fc1464",
+      "size": 1138,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/79cece7d191818c07ac372b08751f39014fc1464"
+    },
+    {
+      "path": "skills/motion-broll/scripts/inspect_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8a5409464825460949e781a87a2a4d20682aa77",
+      "size": 2574,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/e8a5409464825460949e781a87a2a4d20682aa77"
+    },
+    {
+      "path": "skills/motion-broll/scripts/make_pages.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f47ad792ece045d2d845f04eb4108039034d4f3",
+      "size": 3076,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/4f47ad792ece045d2d845f04eb4108039034d4f3"
+    },
+    {
+      "path": "skills/motion-broll/scripts/setup.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f6f642ee9563e10d92c0d54916a14aa6e547433d",
+      "size": 1094,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/f6f642ee9563e10d92c0d54916a14aa6e547433d"
+    },
+    {
+      "path": "skills/motion-broll/scripts/words.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d710b6b6296474ced541d2fe96cece92d2efe660",
+      "size": 738,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/d710b6b6296474ced541d2fe96cece92d2efe660"
+    },
+    {
+      "path": "skills/motion-broll/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b251270393389e1eb247bf1a47a5c8f6b9484b31",
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/trees/b251270393389e1eb247bf1a47a5c8f6b9484b31"
+    },
+    {
+      "path": "skills/motion-broll/templates/compare.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93ae4a8141842b1647bdaef2056586f47bdc8752",
+      "size": 10224,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/93ae4a8141842b1647bdaef2056586f47bdc8752"
+    },
+    {
+      "path": "skills/motion-broll/templates/viewer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbf18e334c03ae864563b0ab1c5f71a8dcf079d4",
+      "size": 7109,
+      "url": "https://api.github.com/repos/Barty-Bart/motion-graphics/git/blobs/bbf18e334c03ae864563b0ab1c5f71a8dcf079d4"
+    }
+  ],
+  "truncated": false
+}

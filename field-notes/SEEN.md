@@ -244,6 +244,10 @@ Closed on the vault side for the reason in the note. Not a lead.
   pumpswap graduations, about 1 in 10; median launch-to-graduation 11 min. `experiments/2026-09-27-P-0014`.
 - 2026-09-28, harvested: 12 judged, 9 kept (H-0037 to H-0048), 2 queued as probes (P-0030, P-0031). Register: `field-notes/HARVEST.md`.
 - 2026-09-29, harvested: 12 judged, 8 kept (H-0049 to H-0060), 2 queued as probes (P-0037, P-0038). Register: `field-notes/HARVEST.md`.
+- 2026-09-29, watched: the three unread football videos from 22 Sep (24e_Z4WHR48, vg5BxFCdYnE,
+  YNB87k9p4tA). Independent Poisson in Excel twice and a regression lesson; no Dixon-Coles. One
+  impossible figure (P(1 goal) 57 percent; Poisson max is 36.8). All six now watched; do not re-watch.
+  Note: youtube-transcript-api returned IpBlocked on three harvest videos tonight.
 
 ## Rule
 
