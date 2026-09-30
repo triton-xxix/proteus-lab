@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 22 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 23 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 22 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
 | P-0039 | Metaculus API with the vault token via the 1Password SDK: open binary questions, community forecasts, rate limit, any football questions (reopens P-0034) | persona | none |  | 0 | 15 min |
 | P-0040 | Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035) | persona | none |  | 0 | 25 min |
-| P-0042 | Launch observation, keyless: watch 50 pump.fun launches on the public RPC websocket and measure first-block buyers, bundled wallets, creator fee take and when the first sellers exit | persona | none |  | 0 | 30 min |
 
-## Verdicts (30)
+## Verdicts (31)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-30 | P-0042 | Launch observation, keyless: watch 50 pump.fun launches on the public RPC websocket and measure first-block buyers, bundled wallets, creator fee take and when the first sellers exit | **works** | 30 pump.fun launches read from the chain, keyless: creator buys in the creation tx 83 percent, a sniper in the same block 70 percent, first sell at 2 s, creator sells at median 12.5 s (73 percent within 30 min), median last trade 40 s after creation, 4 buyers. Public RPC allows one getTransaction every 2 s; version-1 transactions need maxSupportedTransactionVersion 1. | `experiments/2026-09-30-P-0042` | not run |
 | 2026-09-30 | P-0041 | Grinder scanner past 48h: pull established Solana pools (7 to 90 days, 20k+ holders, top-10 share 10 to 30 percent, no rugcheck risks) from GeckoTerminal/DexScreener and snapshot them nightly beside the young ones, so E06 can be tested forward | **works** | Scanner now snapshots up to 40 established pools (7 to 400 days) a night with the young ones, from a standing list seeded with the 20 age-rejected tokens; 34 on first run. The live book is unchanged; E06 can be tested forward. | `experiments/2026-09-30-P-0041` | not run |
 | 2026-09-29 | P-0038 | motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical? | **works** | Example clip rendered offline twice from one self-contained HTML: 186 frames 1080p, 101s cold and 70s warm, byte-identical sha256 both times. Motion blur is four visible ghost samples, not a smooth smear. | `experiments/2026-09-29-P-0038` | 4 min, 21 calls, 1 denied |
 | | | | | denied: Bash `/usr/bin/time -p /usr/local/bin/node /Users/triton/PROTEUS/sandbox/motion-broll/run-render` | | |

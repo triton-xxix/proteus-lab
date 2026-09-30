@@ -161,7 +161,7 @@ def report(rows):
          "| Other wallets buying in the creation slot (first block) | %s | %d%% had any |" % (med("first_block_buyers"), share(lambda r: r["first_block_buyers"] > 0)),
          "| Wallets buying in the first 3 slots (about 1.2 s) | %s | |" % med("first_3_slot_buyers"),
          "| Buyers in the first 60 s | %s | |" % med("buyers_first_60s"),
-         "| Buyers in 30 min (of the first 300 txs) | %s | |" % med("buyers_total"),
+         "| Buyers seen (first 40 transactions) | %s | |" % med("buyers_total"),
          "| Seconds to the first sell | %s | |" % med("first_sell_s"),
          "| Creator sold within 30 min | | %d%% |" % share(lambda r: r["creator_first_sell_s"] is not None),
          "| Seconds to the creator's first sell, where they sold | %s | |" % med("creator_first_sell_s"),
