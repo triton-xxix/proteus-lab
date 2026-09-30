@@ -82,7 +82,7 @@ def mint_of(sig):
     """The graduated token from the migration transaction; None if the RPC has not got it yet."""
     try:
         d = requests.post(RPC, json={"jsonrpc": "2.0", "id": 1, "method": "getTransaction",
-                                     "params": [sig, {"encoding": "jsonParsed", "maxSupportedTransactionVersion": 0, "commitment": "confirmed"}]},
+                                     "params": [sig, {"encoding": "jsonParsed", "maxSupportedTransactionVersion": 1, "commitment": "confirmed"}]},
                           headers=UA, timeout=20).json()
         res = d.get("result")
         if not res:

@@ -37,3 +37,16 @@ The one lead is graduations. Bought one minute after a token moves to PumpSwap a
 minutes: +£19 to +£27 a trade, about 60% winners, still positive (+£3 to +£10) with the best three
 removed. By the time a two-minute poller sees it, most of that is gone. One day, 150 pools,
 in-sample: a lead for a forward paper test, not a result.
+
+## Correction, 30 Sep 2026 evening: the graduation lead looks like an artefact
+
+The graduation book (`grinder/graduates/`) started forward the same afternoon. After 98 counted
+trades, entered 1 to 8 seconds after each migration at Jupiter prices that match GeckoTerminal's
+candles, the primary exit is **-£32.8 a trade**, with 22% winners and 70% of trades at or below -50%
+within 20 minutes.
+
+The likely reason this study looked positive: the first PumpSwap minute candle often opens at a
+pool-seeding price nobody trades at. One example: dnt9SMdP opened at 0.0000494, then traded at
+0.000244 in the same minute. Entries at "the first traded minute" and, less so, "one minute later"
+inherited that low price. The forward book has no such bias. It keeps running to its pre-registered
+200-trade check, where -£10 or worse is a KILL.
