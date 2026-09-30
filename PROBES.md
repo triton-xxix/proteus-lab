@@ -7,16 +7,15 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 23 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 23 works, 1 broken, 6 blocked, 2 not worth it. Killed: 2.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
 | P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke (asked once, 2026-W39; killed 2026-10-25 if still waiting) |  | 0 | 20 min |
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
-| P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | harvest | none |  | 0 | 25 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | harvest | none |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
@@ -25,10 +24,12 @@ Verdicts so far: 23 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 | P-0043 | Fit the log-opinion-pool weight on the Pitch desk's scored predictions against the de-vigged market (arXiv 2608.11505 method): weight, full log-loss profile on 0 to 1, and whether it is a boundary solution | field-notes | none |  | 0 | 20 min |
 | P-0044 | motion-video-kit scripts: do frozen-time and loudness checks run keyless on a generated test video and give numbers? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (31)
+## Verdicts (32)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-30 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | **blocked** | Tarball pulled by curl after git clone was denied; npm install denied by the unattended hook, so nothing rendered. Source hardcodes a Windows Chrome path and a d3d11 ANGLE flag, so a Mac run needs --chrome= at least. | `experiments/2026-09-30-P-0021` | 0 min, 9 calls, 2 denied |
+| | | | | denied: Bash `git clone --depth 1 https://github.com/JohnHeibel/PDoomVideo /Users/triton/PROTEUS/sandbox`; Bash `npm --prefix /Users/triton/PROTEUS/sandbox/pdoomvideo/PDoomVideo-HEAD install --no-audit -` | | |
 | 2026-09-30 | P-0042 | Launch observation, keyless: watch 50 pump.fun launches on the public RPC websocket and measure first-block buyers, bundled wallets, creator fee take and when the first sellers exit | **works** | 30 pump.fun launches read from the chain, keyless: creator buys in the creation tx 83 percent, a sniper in the same block 70 percent, first sell at 2 s, creator sells at median 12.5 s (73 percent within 30 min), median last trade 40 s after creation, 4 buyers. Public RPC allows one getTransaction every 2 s; version-1 transactions need maxSupportedTransactionVersion 1. | `experiments/2026-09-30-P-0042` | not run |
 | 2026-09-30 | P-0041 | Grinder scanner past 48h: pull established Solana pools (7 to 90 days, 20k+ holders, top-10 share 10 to 30 percent, no rugcheck risks) from GeckoTerminal/DexScreener and snapshot them nightly beside the young ones, so E06 can be tested forward | **works** | Scanner now snapshots up to 40 established pools (7 to 400 days) a night with the young ones, from a standing list seeded with the 20 age-rejected tokens; 34 on first run. The live book is unchanged; E06 can be tested forward. | `experiments/2026-09-30-P-0041` | not run |
 | 2026-09-29 | P-0038 | motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical? | **works** | Example clip rendered offline twice from one self-contained HTML: 186 frames 1080p, 101s cold and 70s warm, byte-identical sha256 both times. Motion blur is four visible ghost samples, not a smooth smear. | `experiments/2026-09-29-P-0038` | 4 min, 21 calls, 1 denied |
