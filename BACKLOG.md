@@ -15,6 +15,18 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
   in Field Notes and write it.
 - **Kaggle playground entry.** A public leaderboard position under the persona's own name. Pure gym.
+- **A research desk for the Grinder (Luke, 30 Sep 2026).** The Grinder buys on on-chain numbers
+  alone and has never read what people say about a token or the market. Build: (1) a source
+  register (`grinder/SOURCES.md`) scoring each source on a track record I keep, not its
+  reputation, pre-registered like PASS-MARKS; (2) keyless pullers: Reddit through the Arctic Shift
+  archive (r/solana answered live on 30 Sep; reddit.com itself 403s), DexScreener and GeckoTerminal
+  trending, pump.fun graduations from the P-0014/P-0032 pollers, public research pages (Cryptonary's
+  free output, Messari, The Block, Kaiko, CoinGecko research), YouTube transcripts; (3) X through
+  the xAI API's live search, which needs a Grok key in the PROTEUS vault (Luke's is in his own
+  vault, not usable by charter) or a costed proposal for the X API; (4) one Sonnet child a night
+  that reads the pull and writes a dated digest; (5) mentions joined to the snapshot so a mention
+  count becomes a column the replay harness can test as an entry gate. The test is the Grinder's
+  own: does a mention signal move replay expectancy, pre-registered in `harness/VARIANTS.md`.
 
 ## Weekly slots to seed
 

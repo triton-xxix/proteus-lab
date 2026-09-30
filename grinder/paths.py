@@ -27,7 +27,10 @@ UA = {"User-Agent": "proteus-lab/0.2", "Accept": "application/json"}
 # v0.2 exits and costs (RULES.md). Exit levels are unchanged from v0.1.
 TAKE_PROFIT, STOP_LOSS, RUG_DROP, TIME_STOP_H = 1.00, -0.50, -0.90, 24.0
 POOL_FEE, NET_FEE_USD, GBPUSD = 0.01, 0.05, 1.30
-SLIP = {"stop_loss": 0.03, "rug": 0.03, "take_profit": 0.01, "time_stop": 0.01}
+SLIP = {"stop_loss": 0.03, "trail_stop": 0.03, "rug": 0.03, "take_profit": 0.01, "time_stop": 0.01}
+# Exit levels for books other than v0.2, set by paper.py from BOOKS.json "second":
+# {version: (take_profit, stop_loss, trail, time_stop_h)}.
+LEVELS_BY_VERSION = {}
 # v0.1's own fee model, kept so v0.1 rows can be rescored on their own terms.
 V01_FEE_PCT, V01_FLAT_USD = 0.01, 1.5
 
@@ -145,6 +148,36 @@ def walk(candles, entry, t_entry, now_ts):
     return None
 
 
+def walk_rules(candles, entry, t_entry, now_ts, tp, sl, trail=None, hold_h=TIME_STOP_H):
+    """The v0.2 fill rule with the levels as parameters, plus an optional trailing stop (harness
+    VARIANTS.md): a stop at the running high of earlier candles times (1 - trail), live once that
+    high is above entry; the effective stop is the higher of it and the fixed stop, and it fills and
+    slips like a stop. tp or sl None switches that level off. Returns (ts, fill, reason) or None."""
+    horizon = t_entry + hold_h * 3600
+    rug = entry * (1 + RUG_DROP)
+    top = entry
+    for ts, o, h, l, c, v in candles:
+        if ts < t_entry:
+            continue
+        if ts >= horizon:
+            break
+        stop, reason = (entry * (1 + sl) if sl is not None else None), "stop_loss"
+        if trail is not None and top > entry and (stop is None or top * (1 - trail) > stop):
+            stop, reason = top * (1 - trail), "trail_stop"
+        if l <= rug:
+            lvl = stop if stop is not None else rug
+            return ts, min(c, o if o <= lvl else lvl), "rug"
+        if stop is not None and l <= stop:
+            return ts, (o if o <= stop else stop), reason
+        if tp is not None and h >= entry * (1 + tp):
+            return ts, (o if o >= entry * (1 + tp) else entry * (1 + tp)), "take_profit"
+        top = max(top, h)
+    if now_ts >= horizon:
+        last = [x for x in candles if t_entry <= x[0] < horizon]
+        return (last[-1][0], last[-1][4], "time_stop") if last else (horizon, entry, "time_stop")
+    return None
+
+
 def pnl_v02(entry, fill, reason, stake_gbp, entry_liq, later_liq=None):
     """Paper P&L in GBP under the v0.2 cost model: 1% pool fee and $0.05 per side, constant-product
     impact from the pool's depth, execution slippage on the exit fill."""
@@ -186,7 +219,8 @@ def evaluate(row, now_ts=None):
         hi = max(win, key=lambda x: x[2]); lo = min(win, key=lambda x: x[3])
         out.update({"high": hi[2], "high_at": iso(hi[0]), "runup_pct": round(100 * (hi[2] / entry - 1), 1),
                     "low": lo[3], "low_at": iso(lo[0]), "drawdown_pct": round(100 * (lo[3] / entry - 1), 1)})
-    ex = walk(c, entry, t_entry, now_ts)
+    lv = LEVELS_BY_VERSION.get(row.get("rule_version"))
+    ex = walk_rules(c, entry, t_entry, now_ts, *lv) if lv else walk(c, entry, t_entry, now_ts)
     stake = fnum(row.get("size_gbp")) or 5.0
     entry_liq = fnum(row.get("entry_liq_usd")) or snap_liq
     if ex:

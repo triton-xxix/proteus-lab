@@ -154,3 +154,21 @@ order of prints inside a minute. Both are why the fill rule is pessimistic.
 
 **If a poller is ever added** (hourly or faster), it is a cross-check. Where it disagrees with the
 committed candles on a fill, the candles are the record and the disagreement is logged.
+
+# Replay, 30 Sep 2026: no v0.3
+
+Luke asked for a v0.3 after I showed him a what-if on the 16 closed v0.2 positions, where TP +50 /
+SL -20 turned -£397 into +£36. The procedure in PASS-MARKS says a second book is earned on a
+replay, not a what-if, so 29 variants were committed first (`harness/VARIANTS.md`, `bacfa31`, 25
+of them already seen and counted in N) and replayed over every first-pass gate-passer from six
+nights: 58 positions (`harness/REPLAY.md`).
+
+None qualified. V05, the hindsight winner on 16, is -£12.3 a position on 58. Every exit variant
+loses. The only positive expectancies are pure holds (4h, 12h, 24h: +£7 to +£16), and all of them
+go deeply negative with their best three removed, which is one or two tokens carrying the rest.
+The population itself: median 24-hour move -71%, 13 of 58 up.
+
+So the exits are not what is wrong. The gate picks tokens that mostly die inside a day, and no
+exit rule turns that into an edge. v0.2 continues unchanged; no second book opens. The next
+variant has to change what gets bought, not when it is sold. `paper.py` can carry a second book
+from `BOOKS.json` "second" when one is earned; until then it is inert.

@@ -44,6 +44,11 @@ RULES_V01 = {"take_profit": 1.00, "stop_loss": -0.50, "time_stop_h": 24.0, "rug_
              "fee_pct": 0.01, "fee_flat_usd": 1.5, "gbpusd": 1.30}
 BOOKS = json.load(open(ROOT + "grinder/BOOKS.json"))
 assert BOOKS["current"] == RULES["version"], "grinder/BOOKS.json current version disagrees with paper.py"
+# A second paper book beside the current rules (PASS-MARKS, rule candidates item 3), opened only by
+# a qualifying replay. Same gates, same costs and fill rule; its own exits, slots and bankroll.
+SECOND = BOOKS.get("second")
+if SECOND:
+    paths.LEVELS_BY_VERSION[SECOND["version"]] = (SECOND["take_profit"], SECOND["stop_loss"], SECOND.get("trail"), SECOND["time_stop_h"])
 
 
 def now():
@@ -164,6 +169,44 @@ def exit_v02(r, t):
     r["rugged"] = "1" if reason.startswith("rug") else "0"
 
 
+def exit_second(r, t):
+    """The second book: paths.walk_rules at the book's own levels on the same minute candles."""
+    b = SECOND
+    entry = fnum(r["entry_price_usd"]); t_entry = parse(r["entered_at"]).timestamp()
+    pool, _, _ = paths.pool_for(r["mint"], r["entered_at"])
+    c = paths.candles_for(r, pool, False) if pool else None
+    if c is None:
+        return   # no candles: left open and visible in PATHS.csv; the 24h horizon closes it once candles return
+    ex = paths.walk_rules(c, entry, t_entry, t.timestamp(), b["take_profit"], b["stop_loss"], b.get("trail"), b["time_stop_h"])
+    if not ex:
+        return
+    ts, fill, reason = ex
+    later = paths.min_liq_between(r["mint"], r["entered_at"], paths.iso(ts))
+    r["exit_at"] = paths.iso(ts); r["exit_price_usd"] = fill; r["exit_reason"] = reason
+    r["pnl_gbp"] = paths.pnl_v02(entry, fill, reason, fnum(r["size_gbp"]), fnum(r.get("entry_liq_usd")), later)
+    r["rugged"] = "1" if reason.startswith("rug") else "0"
+
+
+def open_book(ledger, version, max_open, stake, bankroll_start, held, t, afford_each=False):
+    book = [r for r in ledger if r.get("rule_version") == version]
+    still_open = [r for r in book if not r.get("exit_at")]
+    slots = max_open - len(still_open)
+    realised = sum(fnum(r["pnl_gbp"]) or 0 for r in book if r.get("pnl_gbp"))
+    bankroll = bankroll_start + realised - stake * len(still_open)
+    opened = 0
+    if slots > 0 and bankroll >= stake:
+        cands = [s for s in latest_snapshot() if s["mint"] not in held and passes(s)]
+        cands.sort(key=lambda s: -(fnum(s.get("vol_h1")) or 0))
+        for s in cands[:min(slots, int(bankroll // stake)) if afford_each else slots]:   # v0.2 as written: one bankroll check
+            ledger.append({
+                "id": "G-%04d" % (len(ledger) + 1), "entered_at": iso(t), "token": s.get("symbol"), "mint": s["mint"],
+                "entry_price_usd": s["price_usd"], "size_gbp": stake, "rule_version": version,
+                "entry_liq_usd": s.get("liq_usd"), "rugged": "",
+            })
+            opened += 1
+    return opened
+
+
 def passes(r):
     age = fnum(r.get("age_h")); liq = fnum(r.get("liq_usd")); v24 = fnum(r.get("vol_h24")); v1 = fnum(r.get("vol_h1"))
     top10 = fnum(r.get("top10_pct")); holders = fnum(r.get("holders")); lp = fnum(r.get("lp_locked_pct"))
@@ -190,29 +233,23 @@ def apply_rules():
     for r in open_rows:
         if r.get("rule_version") == "v0.1":
             exit_v01(r, t)
+        elif SECOND and r.get("rule_version") == SECOND["version"]:
+            exit_second(r, t)
         else:
             exit_v02(r, t)
         time.sleep(0.3)
-    # entries: the current book only; its open count and bankroll are its own
-    book = [r for r in ledger if r.get("rule_version") == RULES["version"]]
-    still_open = [r for r in book if not r.get("exit_at")]
-    held = {r["mint"] for r in ledger}
-    slots = RULES["max_open"] - len(still_open)
-    realised = sum(fnum(r["pnl_gbp"]) or 0 for r in book if r.get("pnl_gbp"))
-    bankroll = RULES["bankroll_gbp"] + realised - RULES["size_gbp"] * len(still_open)
-    opened = 0
-    if slots > 0 and bankroll >= RULES["size_gbp"]:
-        cands = [s for s in latest_snapshot() if s["mint"] not in held and passes(s)]
-        cands.sort(key=lambda s: -(fnum(s.get("vol_h1")) or 0))
-        for s in cands[:slots]:
-            ledger.append({
-                "id": "G-%04d" % (len(ledger) + 1), "entered_at": iso(t), "token": s.get("symbol"), "mint": s["mint"],
-                "entry_price_usd": s["price_usd"], "size_gbp": RULES["size_gbp"], "rule_version": RULES["version"],
-                "entry_liq_usd": s.get("liq_usd"), "rugged": "",
-            })
-            opened += 1
+    # entries: the current book skips any mint ever held outside the second book (unchanged
+    # behaviour); the second book skips only mints it has held itself, so both can hold one token
+    second_v = SECOND["version"] if SECOND else None
+    held = {r["mint"] for r in ledger if r.get("rule_version") != second_v}
+    opened = open_book(ledger, RULES["version"], RULES["max_open"], RULES["size_gbp"], RULES["bankroll_gbp"], held, t)
+    opened2 = 0
+    if SECOND:
+        held2 = {r["mint"] for r in ledger if r.get("rule_version") == second_v}
+        opened2 = open_book(ledger, second_v, SECOND["max_open"], SECOND["stake_gbp"], SECOND["bankroll_gbp"], held2, t, afford_each=True)
     save_ledger(ledger)
-    print("exits", sum(1 for r in open_rows if r.get("exit_at")), "entries", opened, "open", len([r for r in ledger if not r.get("exit_at")]))
+    print("exits", sum(1 for r in open_rows if r.get("exit_at")), "entries", opened,
+          ("entries %s %d" % (second_v, opened2)) if SECOND else "", "open", len([r for r in ledger if not r.get("exit_at")]))
     recs = paths.write_paths(ledger, t.timestamp())
     print("paths", len(recs), "rows,", sum(1 for x in recs if x.get("status") == "no-candles"), "without candles")
     if opened == 0:
