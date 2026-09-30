@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 24 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 25 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,14 +18,14 @@ Verdicts so far: 24 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
-| P-0040 | Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035) | persona | none |  | 0 | 25 min |
 | P-0043 | Fit the log-opinion-pool weight on the Pitch desk's scored predictions against the de-vigged market (arXiv 2608.11505 method): weight, full log-loss profile on 0 to 1, and whether it is a boundary solution | field-notes | none |  | 0 | 20 min |
 | P-0044 | motion-video-kit scripts: do frozen-time and loudness checks run keyless on a generated test video and give numbers? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (34)
+## Verdicts (35)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-09-30 | P-0040 | Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035) | **works** | One /function call with the vault key: page posted itself a message at 1.5s, hosted Chrome waited for it and returned text and an 8,993-byte PNG; 3.23s wall, 1,628ms in-browser. No unit headers, so cost per call unverified; the only unattended way to drive a real browser without local node. | `experiments/2026-09-30-P-0040` | 0 min, 9 calls, 0 denied |
 | 2026-09-30 | P-0039 | Metaculus API with the vault token via the 1Password SDK: open binary questions, community forecasts, rate limit, any football questions (reopens P-0034) | **works** | Token read by the 1Password SDK unattended in 2s (op hung last night); 100 open binary posts per call, but community forecast null on all 100 even with with_cp=true and on a 68-forecaster question past its reveal time. 429 at call 8 in 4.9s, Retry-After 10; no match-level football questions. | `experiments/2026-09-30-P-0039` | 1 min, 13 calls, 0 denied |
 | 2026-09-30 | P-0028 | anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says? | **blocked** | Rendering needs node, not allowed unattended. Static grep: no clock or Math.random in the art core, and a shipped gate.mjs lint fails the build on them, so same-machine determinism is designed in; cross-machine raster identity is unmeasured. | `experiments/2026-09-30-P-0028` | 0 min, 9 calls, 0 denied |
 | 2026-09-30 | P-0021 | PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone? | **blocked** | Tarball pulled by curl after git clone was denied; npm install denied by the unattended hook, so nothing rendered. Source hardcodes a Windows Chrome path and a d3d11 ANGLE flag, so a Mac run needs --chrome= at least. | `experiments/2026-09-30-P-0021` | 0 min, 9 calls, 2 denied |
