@@ -55,3 +55,13 @@ snapshots after 2026-09-30T12:00Z. Each at V01 and V17: 4 more variants, **N = 5
 
 M01 to M04 on the 58 (unseen, pre-registered): none clears the bar. M01 and M03 have 1 and 4
 rows; M02 (quiet, 41 rows) is -£26.5 at V01; Reddit has 2 hits in 58 and Telegram 0.
+
+## Added 30 Sep 2026, after the 23-channel Telegram backfill (forward-only, N rises)
+
+Seen on the 58 before writing: any Telegram mention 50 tokens, -£16.3 at V01; none 8, -£75.2;
+X and Telegram both 17 tokens, 7 up at 24h, +£9.3 at V01. At V01 and V17: 4 more, **N = 59**.
+
+| ID | Entry rule | Data it may use |
+|---|---|---|
+| M08 | at least one post on X and at least one mention in the 23 Telegram channels, 24h before the snapshot | after 30 Sep 12:00Z only |
+| M09 | at least one mention in the 23 Telegram channels | after 30 Sep 12:00Z only |
