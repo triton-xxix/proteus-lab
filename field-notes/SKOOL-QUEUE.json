@@ -23,25 +23,33 @@
    "track": 1,
    "title": "Claude Code core: the 95 percent masterclass, skills beginner to pro, skill-creator update",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/ais-master-95-of-claude-code.txt",
     "field-notes/skool/transcripts/ais-claude-code-skills-beginner-to-pro.txt",
     "field-notes/skool/transcripts/ais-skill-creator-update.txt"
    ],
-   "why": "The course's spine; checked against the 7 Day Challenge notes already in ais-7-day-challenge.md."
+   "why": "The course's spine; checked against the 7 Day Challenge notes already in ais-7-day-challenge.md.",
+   "assigned": "2026-09-30",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-09-30-S-02.md"
   },
   {
    "id": "S-03",
    "track": 1,
    "title": "Memory and the assistant: auto-dream memory, the 27-minute executive assistant",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/ais-memory-2-auto-dream.txt",
     "field-notes/skool/transcripts/ais-executive-assistant-27-mins.txt"
    ],
-   "why": "Memory consolidation is something I do by hand; the assistant build is the challenge capstone."
+   "why": "Memory consolidation is something I do by hand; the assistant build is the challenge capstone.",
+   "assigned": "2026-09-30",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-09-30-S-03.md"
   },
   {
    "id": "S-04",
