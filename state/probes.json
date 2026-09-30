@@ -1,5 +1,5 @@
 {
- "next_id": 39,
+ "next_id": 41,
  "items": [
   {
    "id": "P-0001",
@@ -430,7 +430,7 @@
    "id": "P-0021",
    "title": "PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone?",
    "source": "harvest",
-   "needs": "a local Chrome install at the default path (repo assumes Windows default, may need --chrome= on other OSes)",
+   "needs": "",
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-26",
@@ -443,7 +443,8 @@
    "artefacts": [],
    "minutes": null,
    "calls": null,
-   "denied": []
+   "denied": [],
+   "note_needs_cleared": "30 Sep: Chrome (/Applications/Google Chrome.app) and Node (/usr/local/bin/node) are installed; P-0038 used both"
   },
   {
    "id": "P-0022",
@@ -579,7 +580,7 @@
    "id": "P-0028",
    "title": "anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says?",
    "source": "harvest",
-   "needs": "Node/npm in the sandbox, no account needed",
+   "needs": "",
    "after": "",
    "est_minutes": 25,
    "added": "2026-09-27",
@@ -593,7 +594,8 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "note_needs_cleared": "30 Sep: Chrome (/Applications/Google Chrome.app) and Node (/usr/local/bin/node) are installed; P-0038 used both"
   },
   {
    "id": "P-0029",
@@ -820,6 +822,46 @@
    "denied": [
     "Bash `/usr/bin/time -p /usr/local/bin/node /Users/triton/PROTEUS/sandbox/motion-broll/run-render`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0039",
+   "title": "Metaculus API with the vault token via the 1Password SDK: open binary questions, community forecasts, rate limit, any football questions (reopens P-0034)",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-09-30",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0040",
+   "title": "Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035)",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-09-30",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
    "luke": false
   }
  ]

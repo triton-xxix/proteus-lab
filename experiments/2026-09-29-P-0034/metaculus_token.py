@@ -17,8 +17,7 @@ def done():
 
 t = time.time()
 try:
-    items = json.loads(vault._op(["item", "list", "--vault", vault.VAULT, "--format", "json"], timeout=90))
-    names = [i.get("title", "") for i in items]
+    names = vault.titles()
     L.append("Vault listing: %d items in %.1fs." % (len(names), time.time() - t))
 except vault.SecretError as e:
     L.append("Vault listing failed after %.1fs: %s" % (time.time() - t, e))
@@ -31,7 +30,7 @@ if not hits:
 token = None
 for field in ("credential", "token", "password", "api_token"):
     try:
-        token = vault._op(["read", "op://%s/%s/%s" % (vault.VAULT, hits[0], field)], timeout=60).strip()
+        token = vault.get(hits[0], field).strip()
         L.append("Token read from field '%s', length %d." % (field, len(token)))
         break
     except vault.SecretError as e:
