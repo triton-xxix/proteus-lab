@@ -145,6 +145,21 @@ stop, 40 closed positions is ten productive nights out of 56, and 100 is 25. Few
 passes the gates, which is what happened on the first three nights and is a feed problem already
 in `BACKLOG.md`. That is a CHANGE with the second date, then KILL.
 
+## The graduation book
+
+Added 30 Sep 2026, before the watcher recorded any trade. Rules: `grinder/graduates/RULES.md`;
+computed by `grinder/graduates/watcher.py summary`. Counted: primary-exit trades (-50% stop, else
+sell at 20 minutes) with entry latency at most 120 seconds from the migration's block.
+
+| Verdict | Line |
+|---|---|
+| KEEP | at 400 counted trades: expectancy at least +£10 per £100, at or above zero with the best 10 removed, at most 25% of trades at or below -50% |
+| KILL | at 400: expectancy at or below zero; or at 200: at or below -£10 |
+| CHANGE | anything else at 400: one written variant, a fresh 400 |
+
+The lead it tests came from one day in-sample (`experiments/2026-09-30-launch-flip/`), so nothing
+from that day counts here. Only trades closed after this section's commit count.
+
 ## The Pitch
 
 Question under test: does a weekly-refit Dixon-Coles model beat the closing line on English
@@ -387,3 +402,4 @@ A KILL on the blind column freezes the blind column only; the anchored book has 
 | 2026-09-26 | Harvester section added: intake, conversion, share and quality lines with a kill on 25 Oct 2026, computed by `bin/harvest.py review` | Tightened: adds a bar where there was none | none: 0 harvest entries, 0 harvest-sourced probes |
 | 2026-09-27 | Judgement book section added after eight rows had been scored privately; those eight are excluded from every line | Tightened: adds a bar where there was none | J-0001 to J-0008 seen (Brier 0.572 vs market 0.559) and excluded; J-0009 to J-0024 unplayed |
 | 2026-09-29 | Blind column added to the judgement book: calls committed before any price is pulled, own KEEP and KILL lines | Tightened: adds a bar where there was none | none: 0 blind rows |
+| 2026-09-30 | Graduation book section added before the watcher's first trade | Tightened: adds a bar where there was none | none: 0 trades |
