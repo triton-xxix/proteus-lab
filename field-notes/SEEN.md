@@ -248,6 +248,10 @@ Closed on the vault side for the reason in the note. Not a lead.
   YNB87k9p4tA). Independent Poisson in Excel twice and a regression lesson; no Dixon-Coles. One
   impossible figure (P(1 goal) 57 percent; Poisson max is 36.8). All six now watched; do not re-watch.
   Note: youtube-transcript-api returned IpBlocked on three harvest videos tonight.
+- 2026-09-30, read: arXiv 2608.11505 (Pitcan, Serie A DC v Shin-devigged close) in full, via the
+  arXiv HTML. Log-pool weight on DC 0.000 (profile monotone), SoT model 0.35 v DC and 0.000 v market,
+  RPS 0.1972 v 0.1905. Do not re-read; the pooling-weight test is queued as a probe on our own book.
+- 2026-09-30, harvested: 14 judged, 11 kept (H-0061 to H-0074), 1 queued as probes (P-0044). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 23 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 
-## Queue (9 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,8 @@ Verdicts so far: 23 works, 1 broken, 5 blocked, 2 not worth it. Killed: 2.
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
 | P-0039 | Metaculus API with the vault token via the 1Password SDK: open binary questions, community forecasts, rate limit, any football questions (reopens P-0034) | persona | none |  | 0 | 15 min |
 | P-0040 | Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035) | persona | none |  | 0 | 25 min |
+| P-0043 | Fit the log-opinion-pool weight on the Pitch desk's scored predictions against the de-vigged market (arXiv 2608.11505 method): weight, full log-loss profile on 0 to 1, and whether it is a boundary solution | field-notes | none |  | 0 | 20 min |
+| P-0044 | motion-video-kit scripts: do frozen-time and loudness checks run keyless on a generated test video and give numbers? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (31)
 

@@ -6,18 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-60 judged over 4 harvest days, 44 kept, 13 testable, 13 queued as probes, 8 with a probe verdict.
+74 judged over 5 harvest days, 55 kept, 14 testable, 14 queued as probes, 10 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0059 | 2026-09-29 | github | [Barty-Bart/motion-graphics: Motion-graphics skills for Claude Code and Codex.](https://github.com/Barty-Bart/motion-graphics) | mechanism | tools-for-strangers | yes | P-0038 |
+| H-0073 | 2026-09-30 | github | [echris6/motion-video-kit: Claude Code skill kit for premium AI-assisted business videos: i](https://github.com/echris6/motion-video-kit) | mechanism | tools-for-strangers | yes | P-0044 |
+| H-0072 | 2026-09-30 | hn | [Show HN: Parrot – Open-Source Smart Meeting Recorder with Co-Pilot on Mac](https://openparrot.app) | mechanism | tools-for-strangers | no: It is a Mac GUI app needing build and live call audio. |  |
+| H-0071 | 2026-09-30 | vault | [Partnership ads run through a local client's own social handle](https://www.instagram.com/reel/DcWYAsmtqFr/) | mechanism | tools-for-strangers | no: Needs a Meta ad account and a client handle. |  |
+| H-0070 | 2026-09-30 | youtube | [How to Make PUMP.FUN CALLOUTS (Step by Step) #pumpfun #crypto #memecoin](https://www.youtube.com/watch?v=MA6Ecac4P-Y) | mechanism | desk:grinder | no: Payouts and call attribution are not visible from a keyless  |  |
+| H-0069 | 2026-09-30 | arxiv | [UserProxyBench: Evaluating LLM User Simulators for Agent Benchmarks and Training](https://arxiv.org/abs/2609.38043) | mechanism | tech | no: Needs tau-bench, a frontier agent and paid calls. |  |
+| H-0068 | 2026-09-30 | github | [rehan-remade/universal-modder: Point Claude at any game. Skills, tools and the fal MCP tha](https://github.com/rehan-remade/universal-modder) | mechanism | game-bots | no: Needs a fal key for assets, owned games on the machine, and  |  |
+| H-0066 | 2026-09-30 | vault | [Consistent AI character content with clear AI disclosure](https://www.instagram.com/p/Ddr0Ds3MsI5/) | mechanism | tools-for-strangers | no: It is a content production job, not a script with a yes or n |  |
+| H-0064 | 2026-09-30 | arxiv | [MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation](https://arxiv.org/abs/2609.38078) | mechanism | tech | no: Needs a robot or the LIBERO-PRO simulator and a paid VLM. |  |
+| H-0063 | 2026-09-30 | github | [Louis-CFM/coucou: A tiny friend that lives in your notch (macOS) or at the top of your scr](https://github.com/Louis-CFM/coucou) | mechanism | tools-for-strangers | no: It is an unnotarised Swift GUI that needs Xcode and a build, |  |
+| H-0062 | 2026-09-30 | hn | [Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents](https://github.com/magnitudedev/magnitude) | mechanism | tech | no: A fair test needs a multi-GB model download and a matched ll |  |
+| H-0061 | 2026-09-30 | vault | [Learning crypto research from a source with an independently verifiable track record](https://cryptonary.com/landing-100x-chaser) | mechanism | desk:grinder | no: No source with a capturable call history has been named, so  |  |
+| H-0059 | 2026-09-29 | github | [Barty-Bart/motion-graphics: Motion-graphics skills for Claude Code and Codex.](https://github.com/Barty-Bart/motion-graphics) | mechanism | tools-for-strangers | yes | P-0038 **works** |
 | H-0058 | 2026-09-29 | vault | [Post-production for businesses that have long-form content but cannot cut it into short-fo](https://www.instagram.com/reel/DcU_MNWtIkg/) | mechanism | tools-for-strangers | no: The value is in a client engagement, and a keyless run would |  |
 | H-0056 | 2026-09-29 | arxiv | [Harness Learning Enables Generalizable Test-Time Adaptation](https://arxiv.org/abs/2609.35738) | mechanism | mechanism-hunting | no: It needs reinforcement learning training of a proposer model |  |
 | H-0055 | 2026-09-29 | github | [CaptureGrubEnchant/SolidWorks: SolidWorks MCP Server connects an AI assistant to a running](https://github.com/CaptureGrubEnchant/SolidWorks) | both | tech | no: It needs Windows and a licensed SolidWorks, and the install  |  |
 | H-0054 | 2026-09-29 | vault | [Media-buying commission taken as a share of a brand's ad budget]() | mechanism | mechanism-hunting | no: It is a service arrangement with clients and ad accounts, an |  |
-| H-0052 | 2026-09-29 | arxiv | [TokenCast: Forecasting Token Consumption During LLM Agent Execution](https://arxiv.org/abs/2609.35760) | mechanism | forecasting | yes | P-0037 |
+| H-0052 | 2026-09-29 | arxiv | [TokenCast: Forecasting Token Consumption During LLM Agent Execution](https://arxiv.org/abs/2609.35760) | mechanism | forecasting | yes | P-0037 **broken** |
 | H-0051 | 2026-09-29 | github | [AgentSystemLabs/agent-office: A cartoon 3D office where your team hires Claude Code worker](https://github.com/AgentSystemLabs/agent-office) | both | tools-for-strangers | no: It needs a signed-in agent CLI and gh auth, and installs thr |  |
 | H-0049 | 2026-09-29 | vault | [Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-]() | mechanism | tools-for-strangers | no: The classroom sits behind a paid login and the pull needs an |  |
 | H-0048 | 2026-09-28 | hn | [Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents](https://www.openappa.com/) | both | mechanism-hunting | no: Reproducing the benchmarks needs LLM agent runs, and the num |  |
@@ -58,6 +69,140 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0073 echris6/motion-video-kit: Claude Code skill kit for premium AI-assisted business videos: independent critic loop, motion
+2026-09-30, github, https://github.com/echris6/motion-video-kit
+
+- **Mechanism:** A Claude Code skill that makes commercials through a builder-versus-critic loop: a fresh critic agent judges the actual render, items are verified one by one and a ledger records findings. It pairs motion rules from 28 launch films with measurable checks (frozen-time detection, loudness via ffmpeg ebur128, contrast, brand colour) scripted in Python. Rendering is HyperFrames or Three.js.
+- **Claim:** Premium launch-style business videos from an independent-critic quality loop.
+- **Testable:** yes. Does the kit's frozen-time and loudness script run on a local ffmpeg-generated test video and report a loudness figure in LUFS and a frozen-frame count? Queued as P-0044.
+- **Idea on its own:** sound. Independent critics plus measured checks address the known self-grading failure of generate-and-review loops.
+- **How it would be done:** Clone the repo, copy the skill into place and run its measurement scripts on a render. Wire the critic prompts into a sub-agent that never sees the builder's reasoning. Use HyperFrames for output. The business playbook is where a person picks verticals and price anchors.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents, ElevenLabs (voice)
+- **To fetch:** motion-video-kit https://github.com/echris6/motion-video-kit (The skill and measurement scripts.); ffmpeg ebur128 filter https://ffmpeg.org/ffmpeg-filters.html#ebur128-1 (Loudness measurement the scripts need.)
+- **Field Notes line:** A video skill kit ships scripted render checks for frozen frames and loudness, plus a separate critic agent that judges the real render.
+
+### H-0072 Show HN: Parrot – Open-Source Smart Meeting Recorder with Co-Pilot on Mac
+2026-09-30, hn, https://openparrot.app
+
+- **Mechanism:** A Mac app records system audio and microphone, transcribes locally or via Deepgram, and runs a co-pilot that matches questions heard in the call against the user's uploaded files and shows answers on screen. Local mode needs no account or API call; cloud mode hooks Claude and Deepgram. A thread reports echo from duplicate audio streams.
+- **Claim:** Open-source, local-first meeting recorder with a retrieval co-pilot.
+- **Testable:** no. It is a Mac GUI app needing build and live call audio. Needs: Xcode build and audio permissions..
+- **Idea on its own:** sound. System audio capture plus local transcription and retrieval over user files is a proven, simple pattern.
+- **How it would be done:** Capture system audio and mic with ScreenCaptureKit, transcribe with a local Whisper model, embed the uploaded files and match detected questions to passages. Export transcripts as markdown, which a commenter asks for. Local transcription is already in the stack.
+- **Stack already covers:** local transcription, Ollama with a qwen model
+- **To fetch:** Parrot https://github.com/turantekin/Parrot (Source for the capture and co-pilot design.)
+- **Field Notes line:** A local-first Mac recorder listens to calls and answers questions from your own files, with no account.
+
+### H-0071 Partnership ads run through a local client's own social handle
+2026-09-30, vault, https://www.instagram.com/reel/DcWYAsmtqFr/
+
+- **Mechanism:** Meta's Partnership Ads let a business run paid ads that appear from a creator or client's own Instagram handle after the handle owner grants permission in Meta's tools. The ad borrows the page's local trust while the advertiser pays for reach. It depends on permission being granted on-platform and on the ad carrying the platform's paid partnership label.
+- **Claim:** Ads run through a local client's own handle carry more local trust than a brand page.
+- **Testable:** no. Needs a Meta ad account and a client handle. Needs: A Meta Business account and a consenting client..
+- **Idea on its own:** sound. It is a sanctioned platform feature with consent and a visible label.
+- **How it would be done:** Agree a written permission with the local business, get the handle's admin to grant partnership access in Meta Business Suite, then produce and label the creative and run a small test budget. Record results in a shared sheet. Content can be made with HyperFrames; the account setup and consent step need a person.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice)
+- **Missing:** A consenting local business willing to grant handle access.
+- **Field Notes line:** Partnership ads let a business borrow a local client's own handle with permission, labelled, which is legal and sellable as a service.
+
+### H-0070 How to Make PUMP.FUN CALLOUTS (Step by Step) #pumpfun #crypto #memecoin
+2026-09-30, youtube, https://www.youtube.com/watch?v=MA6Ecac4P-Y. Vault verdict on the vendor exists (vault verdict: pump.fun); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A pump.fun feature where a user posts a short call-out on a coin after buying a small amount, and earns a share of trading fees on volume that call drives. A daily pool is paid out in USD in proportion to volume attributed to each caller, so payout rewards calling early. The video claims the top 50 split $700,000 in two weeks, with most calls on coins under 100K market cap.
+- **Claim:** Top 50 callers split $700,000 in two weeks; one earned $6,800 from almost 2,500 calls.
+- **Testable:** no. Payouts and call attribution are not visible from a keyless public endpoint and the figures are a creator's claim. Needs: A pump.fun account and a source of call-out data..
+- **Idea on its own:** needs-a-run. The incentive is real but it rewards volume drivers, so callers are paid even when followers lose money.
+- **How it would be done:** Measure it from the outside: log call-outs and the coin's later volume and price, and check whether early callers' coins outperform launches with no call-outs. Pay attention to whether the payout creates a pump incentive in the Grinder's data. No account is needed for the observational version if call-out data is public.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers, Solana paper desk (the Grinder)
+- **Missing:** Public access to call-out timestamps and payout data.
+- **Field Notes line:** Pump.fun pays a daily pool to people who post early call-outs, which turns attention itself into a fee-share incentive.
+
+### H-0069 UserProxyBench: Evaluating LLM User Simulators for Agent Benchmarks and Training
+2026-09-30, arxiv, https://arxiv.org/abs/2609.38043
+
+- **Mechanism:** An evaluation layer over tau-bench scores the simulated user, not the agent, against the private instructions it was given, using task-grounded rubrics scored independently of agent success. Holding the agent fixed and swapping the user model changes reward by 15.2 points. The main failure is premature disclosure, which leaves reward unchanged but reduces the agent's tool calls.
+- **Claim:** 24.4% of successful episodes contain a user-simulator violation, and proxy choice shifts reward by 15.2 points.
+- **Testable:** no. Needs tau-bench, a frontier agent and paid calls. Needs: tau-bench and model API spend..
+- **Idea on its own:** sound. Scoring the simulator against its own instructions is a cheap, obvious missing control.
+- **How it would be done:** Take transcripts from a benchmark, write rubric items from each task's hidden user instructions and have a judge model score each transcript independently of reward. Report the violation rate and compare proxies on cost. Applies to any agent test Proteus builds with a simulated user.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **To fetch:** tau-bench https://github.com/sierra-research/tau-bench (The benchmark family the layer sits over.)
+- **Field Notes line:** Agent benchmark scores swing 15 points depending on the simulated user, and a quarter of passes hide a user mistake.
+
+### H-0068 rehan-remade/universal-modder: Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost a
+2026-09-30, github, https://github.com/rehan-remade/universal-modder
+
+- **Mechanism:** A Claude Code plugin of skills and a Python CLI that runs a fixed loop: scan for installed games and fingerprint engine, anti-cheat and save folders, choose a modding route, read decompiled code, build a slice, generate assets with fal, test in the running game and record. It leans on existing tools (ILSpy, Ghidra, Frida, Cheat Engine, Blender) and playbooks per engine. Asset generation needs a fal key.
+- **Claim:** Claude Code can mod almost any PC game you own, from recon to showcase video.
+- **Testable:** no. Needs a fal key for assets, owned games on the machine, and is Windows-first. Needs: A fal API key, a game install and Blender..
+- **Idea on its own:** sound. The loop mirrors how human modders work and each step uses established reverse-engineering tools.
+- **How it would be done:** Install the plugin, run the scan step to fingerprint installed games, then let the skill write a modding plan. Build one slice with the engine's playbook and test it in the running game with screenshots. Assets need a generator; a local substitute would replace fal. Anti-cheat titles need a human to judge what is safe.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), Gemini (stills), ElevenLabs (voice)
+- **To fetch:** universal-modder https://github.com/rehan-remade/universal-modder (The plugin and um CLI.); ILSpy https://github.com/icsharpcode/ILSpy (Decompiler for .NET games.); Ghidra https://github.com/NationalSecurityAgency/ghidra (Native reverse engineering.)
+- **Field Notes line:** A Claude Code plugin packages game modding as recon, route, read code, build, test, record, with a scanner that fingerprints engines.
+
+### H-0066 Consistent AI character content with clear AI disclosure
+2026-09-30, vault, https://www.instagram.com/p/Ddr0Ds3MsI5/
+
+- **Mechanism:** A fixed character is kept consistent across posts by generating from a locked reference image set or a fine-tuned image model, then animating and voicing it. Disclosure is added by labelling each post with the platform's AI-content label and a visible caption line, and by keeping the character to entertainment rather than endorsement. Platforms detect undisclosed synthetic media through provenance metadata such as C2PA and classifiers.
+- **Claim:** A branded AI character can post consistent content at volume.
+- **Testable:** no. It is a content production job, not a script with a yes or no answer tonight.
+- **Idea on its own:** sound. Disclosed synthetic characters are lawful and platform-sanctioned when they do not pose as ordinary consumers recommending products.
+- **How it would be done:** Generate a reference sheet of the character with Gemini stills, then produce scenes with image-to-video and voice with ElevenLabs. Compose and caption in HyperFrames, apply the platform AI label on upload and add a fixed disclosure line in the caption. Keep scripts to entertainment and explicit sponsor labels. A person would review each post for label compliance and likeness drift.
+- **Stack already covers:** Gemini (stills), ElevenLabs (voice), HeyGen and Tavus (avatars), HyperFrames (video compose, captions, render)
+- **To fetch:** C2PA c2patool https://github.com/contentauth/c2patool (Embed and inspect provenance metadata for disclosure.)
+- **Missing:** A compliance check for UK DMCC and platform labelling rules on each post.
+- **Field Notes line:** A consistent AI character can be run openly by locking reference stills and labelling every post as AI, entertainment only.
+
+### H-0064 MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation
+2026-09-30, arxiv, https://arxiv.org/abs/2609.38078
+
+- **Mechanism:** A harness lets a general vision-language model drive a robot by proposing mid-level actions (move to, grasp, place) that a deterministic controller executes, with feedback returned to the model. Asynchronous monitoring watches execution while background memory updates keep context, and no coding agent, action expert or SAM3 grounding is used. Scores come from LIBERO-PRO simulation and a real xArm6.
+- **Claim:** 66.7% success on base LIBERO-PRO versus at most 13.3% for prior zero-shot methods, and 95% on a real xArm6.
+- **Testable:** no. Needs a robot or the LIBERO-PRO simulator and a paid VLM. Needs: A robot or simulator and a frontier VLM key..
+- **Idea on its own:** needs-a-run. Numbers are self-reported on a benchmark the authors chose, but the harness design is cheap to replicate in principle.
+- **How it would be done:** Define a small action vocabulary, wrap a simulator or arm in deterministic executors, and loop the VLM over camera frames with a monitor thread flagging failures. Would need the LIBERO-PRO simulator and GPU. No relevance to current desks except as a harness pattern.
+- **To fetch:** LIBERO https://github.com/Lifelong-Robot-Learning/LIBERO (Simulation benchmark the paper builds on.)
+- **Missing:** A robot or GPU simulator.
+- **Field Notes line:** A plain VLM plus a thin mid-level action layer and async monitor beat specialised robot policies zero-shot, by a wide margin.
+
+### H-0063 Louis-CFM/coucou: A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows) and keeps an eye
+2026-09-30, github, https://github.com/Louis-CFM/coucou
+
+- **Mechanism:** A native menubar app that shows Claude Code sessions in the MacBook notch. It receives events from the running sessions (tool calls, permission requests) and renders Allow and Deny buttons that answer the permission prompt, which points to Claude Code's hooks being used as the event channel. Keys for integrations sit in the macOS Keychain and there is no telemetry.
+- **Claim:** See every Claude Code session and approve permissions from the notch; 1,099 stars in three days.
+- **Testable:** no. It is an unnotarised Swift GUI that needs Xcode and a build, and its value is visual. Needs: Xcode 16 and XcodeGen..
+- **Idea on its own:** sound. Hook-driven approval forwarding is a real, supported pattern for remote sign-off.
+- **How it would be done:** A hook script posts each permission request to a local socket or HTTP endpoint and waits for a decision. A small UI reads that endpoint and writes the answer back. Proteus could reuse only the hook-to-decision pattern, not the UI, for the unattended-decide hook.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** coucou https://github.com/Louis-CFM/coucou (Source to read for the hook event format.)
+- **Field Notes line:** Claude Code permission prompts can be answered from outside the terminal by a hook, and someone has made it a notch app.
+
+### H-0062 Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents
+2026-09-30, hn, https://github.com/magnitudedev/magnitude
+
+- **Mechanism:** An inference engine that compiles and autotunes its GPU kernels on the user's own device before loading a model, so one parametrised kernel set reaches hardware-specific speed on Mac, Linux and Windows. It writes tuned kernels only for popular open-weight model families and is built for long, concurrent agent sessions on a machine that is also in use. The speed claim rests on a chart against llama.cpp; the thread asks for configuration and MLX comparisons.
+- **Claim:** Up to 2x faster than llama.cpp on the same hardware, for local agents.
+- **Testable:** no. A fair test needs a multi-GB model download and a matched llama.cpp configuration, which does not fit 30 minutes. Needs: Model weights and time to match llama.cpp settings..
+- **Idea on its own:** needs-a-run. Per-device autotuning is proven in other compilers, but the 2x figure has no published method.
+- **How it would be done:** Install the release binary, pull the same quantised qwen model Ollama already uses, and run identical prompts through both with fixed context length and thread count. Measure tokens per second for prefill and decode, and run two sessions at once to test the concurrency claim. Compare against MLX as the thread asks. No hiring needed.
+- **Stack already covers:** Ollama with a qwen model
+- **To fetch:** Magnitude https://github.com/magnitudedev/magnitude (The engine under test.); llama.cpp llama-bench https://github.com/ggml-org/llama.cpp (Baseline benchmark tool with fixed settings.)
+- **Field Notes line:** Magnitude tunes its own kernels on your machine at first run, claiming double llama.cpp speed, but the benchmark is one image.
+
+### H-0061 Learning crypto research from a source with an independently verifiable track record
+2026-09-30, vault, https://cryptonary.com/landing-100x-chaser
+
+- **Mechanism:** Score a crypto research source by reconstructing its calls as dated entry and exit pairs, then pricing each from public candle data at the time of the call rather than at the peak. The moving parts are a timestamped archive of each call (screenshots, posts, archive.org copies), a price history source, and a fixed exit rule applied to every call, compared with a baseline such as holding the same basket.
+- **Claim:** A source's track record can be checked independently if you log audited entries and exits instead of quoting peak gains.
+- **Testable:** no. No source with a capturable call history has been named, so there is nothing to score tonight. Needs: A named source with timestamped, archived calls..
+- **Idea on its own:** sound. Fixed-rule entry and exit scoring against a baseline is the standard way to strip survivorship and peak bias from any tipster.
+- **How it would be done:** Pick a source that publishes dated calls and snapshot them to an archive at the time they appear. For each call, pull the price at the call timestamp from GeckoTerminal or DexScreener history and apply one pre-declared exit rule (for example 24h, 7d, 30d). Net off slippage and fees, then compare the book with buy-and-hold on the same tokens. The Grinder already has the paper-desk plumbing, so the scoring is a thin layer on it. A hired person would only be needed to capture calls from paywalled or members-only channels.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers, Solana paper desk (the Grinder), keyless YouTube search and transcript pipeline
+- **To fetch:** Wayback Machine CDX API https://archive.org/help/wayback_api.php (Independent timestamps for when a call was published.)
+- **Missing:** A source that actually publishes timestamped calls in a capturable form.
+- **Field Notes line:** Judge a crypto caller by fixed-rule entry and exit pairs priced from public candles, not by their best-ever multiple.
 
 ### H-0059 Barty-Bart/motion-graphics: Motion-graphics skills for Claude Code and Codex.
 2026-09-29, github, https://github.com/Barty-Bart/motion-graphics
@@ -456,6 +601,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0071 | 2026-09-30 | Partnership ads run through a local client's own social handle | open | sound | no |  |
+| H-0066 | 2026-09-30 | Consistent AI character content with clear AI disclosure | open | sound | no |  |
+| H-0061 | 2026-09-30 | Learning crypto research from a source with an independently verifiable track record | open | sound | no |  |
 | H-0058 | 2026-09-29 | Post-production for businesses that have long-form content but cannot cut it into short-fo | open | sound | no |  |
 | H-0054 | 2026-09-29 | Media-buying commission taken as a share of a brand's ad budget | open | needs-a-run | no |  |
 | H-0049 | 2026-09-29 | Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai- | open | sound | no |  |
@@ -467,6 +615,19 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0028 | 2026-09-30 | [ffmpeg ebur128 filter](https://ffmpeg.org/ffmpeg-filters.html#ebur128-1) | Loudness measurement the scripts need. | H-0073 (echris6/motion-video-kit: Claude Code skill kit fo) | shelf |
+| T-0027 | 2026-09-30 | [motion-video-kit](https://github.com/echris6/motion-video-kit) | The skill and measurement scripts. | H-0073 (echris6/motion-video-kit: Claude Code skill kit fo) | shelf |
+| T-0026 | 2026-09-30 | [Parrot](https://github.com/turantekin/Parrot) | Source for the capture and co-pilot design. | H-0072 (Show HN: Parrot – Open-Source Smart Meeting Record) | shelf |
+| T-0025 | 2026-09-30 | [tau-bench](https://github.com/sierra-research/tau-bench) | The benchmark family the layer sits over. | H-0069 (UserProxyBench: Evaluating LLM User Simulators for) | shelf |
+| T-0024 | 2026-09-30 | [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Native reverse engineering. | H-0068 (rehan-remade/universal-modder: Point Claude at any) | shelf |
+| T-0023 | 2026-09-30 | [ILSpy](https://github.com/icsharpcode/ILSpy) | Decompiler for .NET games. | H-0068 (rehan-remade/universal-modder: Point Claude at any) | shelf |
+| T-0022 | 2026-09-30 | [universal-modder](https://github.com/rehan-remade/universal-modder) | The plugin and um CLI. | H-0068 (rehan-remade/universal-modder: Point Claude at any) | shelf |
+| T-0021 | 2026-09-30 | [C2PA c2patool](https://github.com/contentauth/c2patool) | Embed and inspect provenance metadata for disclosure. | H-0066 (Consistent AI character content with clear AI disc) | shelf |
+| T-0020 | 2026-09-30 | [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) | Simulation benchmark the paper builds on. | H-0064 (MotorMind: Scaffolding General Vision Language Mod) | shelf |
+| T-0019 | 2026-09-30 | [coucou](https://github.com/Louis-CFM/coucou) | Source to read for the hook event format. | H-0063 (Louis-CFM/coucou: A tiny friend that lives in your) | shelf |
+| T-0018 | 2026-09-30 | [llama.cpp llama-bench](https://github.com/ggml-org/llama.cpp) | Baseline benchmark tool with fixed settings. | H-0062 (Launch HN: Magnitude (YC S25) – Self-optimizing in) | shelf |
+| T-0017 | 2026-09-30 | [Magnitude](https://github.com/magnitudedev/magnitude) | The engine under test. | H-0062 (Launch HN: Magnitude (YC S25) – Self-optimizing in) | shelf |
+| T-0016 | 2026-09-30 | [Wayback Machine CDX API](https://archive.org/help/wayback_api.php) | Independent timestamps for when a call was published. | H-0061 (Learning crypto research from a source with an ind) | shelf |
 | T-0015 | 2026-09-29 | [Playwright](https://github.com/microsoft/playwright) | Headless Chromium frame capture. | H-0059 (Barty-Bart/motion-graphics: Motion-graphics skills) | shelf |
 | T-0014 | 2026-09-29 | [motion-graphics](https://github.com/Barty-Bart/motion-graphics) | The skill, engine and worked example. | H-0059 (Barty-Bart/motion-graphics: Motion-graphics skills) | shelf |
 | T-0013 | 2026-09-29 | [OpusClip alternatives: ClipsAI](https://github.com/ClipsAI/clipsai) | Open-source library that finds clip-worthy segments in long video. | H-0058 (Post-production for businesses that have long-form) | shelf |
@@ -487,6 +648,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0074 | 2026-09-30 | youtube | [Chess Engine in Python - Part 2 - Moving the pieces](https://www.youtube.com/watch?v=o24J3WcBGLg) | Beginner tutorial on mouse input for a chess GUI, no mechanism relevant to a bot. |
+| H-0067 | 2026-09-30 | hn | [Show HN: A working 3D model of an Enigma machine](https://enigma.design) | A 3D explainer site with no reusable mechanism beyond prompt-built models. |
+| H-0065 | 2026-09-30 | youtube | [day in the life of a wfh data analyst.](https://www.youtube.com/watch?v=RC30UibhowE) | Lifestyle vlog with no transcript and no mechanism. |
 | H-0060 | 2026-09-29 | youtube | [Building a Real App with Claude Code (Start to Finish)](https://www.youtube.com/watch?v=misjUj4Q_ho) | Transcript unavailable and a generic build-an-app tutorial with no mechanism to record. |
 | H-0057 | 2026-09-29 | youtube | [MCP Servers Explained & Built](https://www.youtube.com/watch?v=He8tUwLzLnU) | Transcript unavailable and a generic MCP tutorial title with no mechanism to record. |
 | H-0053 | 2026-09-29 | youtube | [Claude Code Full Course 2026 / How Senior Engineers Actually Build with AI](https://www.youtube.com/watch?v=u2QqWkMv3Lg) | Transcript unavailable and the title is a generic beginner course claim with no mechanism. |
