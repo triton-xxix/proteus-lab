@@ -98,6 +98,7 @@ def mint_of(sig):
 class Book:
     def __init__(self):
         self.open = json.load(open(OPEN)) if os.path.exists(OPEN) else {}
+        self.claimed = set(self.open)
 
     def save(self):
         tmp = OPEN + ".tmp"
@@ -112,8 +113,9 @@ class Book:
             await asyncio.sleep(2)
         if not mint:
             log("no_mint", sig=sig); return
-        if any(p["mint"] == mint for p in self.open.values()):
+        if mint in self.claimed:
             return
+        self.claimed.add(mint)
         for _ in range(20):
             px = (await asyncio.to_thread(jup_prices, [mint])).get(mint)
             if px:
@@ -203,8 +205,8 @@ async def run():
 
 def summary():
     rows = [json.loads(l) for l in open(CLOSED)] if os.path.exists(CLOSED) else []
-    ok = [r for r in rows if r["latency_s"] is not None and r["latency_s"] <= 120]
-    print("closed %d, counted (latency <= 120 s) %d, open %d" % (len(rows), len(ok), len(json.load(open(OPEN))) if os.path.exists(OPEN) else 0))
+    ok = [r for r in rows if r["latency_s"] is not None and r["latency_s"] <= 120 and (r["liq"] or 0) >= 5000]
+    print("closed %d, counted (latency <= 120 s, liquidity >= $5k) %d, open %d" % (len(rows), len(ok), len(json.load(open(OPEN))) if os.path.exists(OPEN) else 0))
     if rows:
         print("latency s: median %.0f, p90 %.0f" % (st.median(r["latency_s"] or 0 for r in rows), sorted(r["latency_s"] or 0 for r in rows)[int(.9 * (len(rows) - 1))]))
     for k in ("P", "A", "B", "D"):

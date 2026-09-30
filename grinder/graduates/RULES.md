@@ -55,3 +55,13 @@ Counted on primary-exit trades with latency at most 120 seconds, closed after th
 `watcher.py`, one long-running process under launchd (`com.proteus.graduates.plist`, loaded from
 this folder, nothing written to `~/Library`). Stops itself 7 days after first start or on HALT.
 Writes only under `grinder/graduates/`. Restarted by launchd only if it crashes.
+
+## Amendment, 30 Sep 2026 16:05 BST, before any trade had closed
+
+Seen in the first 12 entries: some Jupiter prices at entry had almost no liquidity behind them ($9
+to $11, prices about 400 times below the pool's) and one token was entered twice when two migration
+messages for it raced. Neither can be traded. So, before any outcome existed:
+
+- **Counted** trades now also need Jupiter liquidity of at least **$5,000 at entry**. Entries below it
+  are still recorded and reported, never counted. This is a tightening.
+- A token is entered at most once; the watcher now claims the mint before it prices it.
