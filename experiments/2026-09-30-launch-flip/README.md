@@ -23,7 +23,11 @@ print can be a real rug. The first published tables (before the fix) were wrong 
 | pump.fun launches | 300 | -11.3 | 2% | -12.7 |
 | bags.fm launches | 100 | -9.7 | 3% | -10.7 |
 | PumpSwap (tokens just graduated from pump.fun) | 150 | +6.3 (+11.5 with a -50% stop) | 50% | -5.1 (+0.1 with the stop) |
-| Meteora DBC, stonkfun | running | | | |
+| Meteora DBC launches (letsbonk and similar) | 150 | -2.8 | 6% | -6.1 |
+| stonkfun launches | 100 | -10.8 | 4% | -11.8 |
+
+Meteora DBC's first-minute fill shows +£36.9 (33% winners), but 96% of DBC pools traded in five or fewer
+minutes and the depth used for its curve is assumed, so that fantasy row is the least trustworthy number here.
 
 Most launches never trade again: 77% of pump.fun launches trade in five or fewer of their first 75
 minutes. Buying new launches loses at every entry we could get. Even the fantasy first-minute fill
