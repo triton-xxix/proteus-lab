@@ -140,6 +140,38 @@ def discover(limit):
     return mints[:limit]
 
 
+EST_MIN_D, EST_MAX_D, EST_LIMIT = 7, 400, 40
+MAJORS = {"So11111111111111111111111111111111111111112", "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB", "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"}
+
+
+def discover_established(skip):
+    """P-0041 (30 Sep 2026): established meme pools, 7 to 180 days old, by 24h volume, for rule E06
+    (grinder/harness/VARIANTS-2.md). They share the night's snapshot time and fail v0.2's 48h age gate,
+    so the live book never enters them; they are recorded so older tokens can be tested forward."""
+    out = []
+    now = time.time()
+    for dex in ("pumpswap", "meteora", "raydium"):
+        for page in (1, 2):
+            for m, created in gecko("dexes/%s/pools?page=%d&sort=h24_volume_usd_desc" % (dex, page)):
+                if m in skip or m in out or m in MAJORS or not created:
+                    continue
+                try:
+                    age_d = (now - datetime.fromisoformat(created.replace("Z", "+00:00")).timestamp()) / 86400
+                except Exception:
+                    continue
+                if EST_MIN_D <= age_d <= EST_MAX_D:
+                    out.append(m)
+    # A standing list, so a night when GeckoTerminal throttles still records the established set.
+    path = ROOT + "grinder/established.json"
+    kept = json.load(open(path)) if os.path.exists(path) else []
+    for m in out:
+        if m not in kept:
+            kept.append(m)
+    json.dump(kept, open(path, "w"), indent=1)
+    return [m for m in kept if m not in skip][:EST_LIMIT]
+
+
 def best_pair(mint):
     pairs = get("https://api.dexscreener.com/token-pairs/v1/solana/" + mint) or []
     pairs = [p for p in pairs if (p.get("quoteToken") or {}).get("symbol") in ("SOL", "WSOL", "USDC", "USDT")]
@@ -184,6 +216,9 @@ def snapshot(limit):
     os.makedirs(CACHE, exist_ok=True)
     mints = discover(limit)
     print("candidates", len(mints), file=sys.stderr)
+    est = discover_established(set(mints))
+    print("established", len(est), file=sys.stderr)
+    mints = mints + est
     rows = []
     with open(CACHE + "snapshots-%s.jsonl" % ts.strftime("%Y-%m-%d"), "a") as raw:
         for i, mint in enumerate(mints):
