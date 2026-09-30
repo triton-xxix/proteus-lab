@@ -1,0 +1,98 @@
+{
+ "note": "Reading queue for field-notes/SKOOL-READING-PLAN.md. Raw pulls live in field-notes/skool/ (gitignored, the repo is public); this file and the digests under state/agents/skool/ are committed. status: queued | assigned | read | needs-pull. bin/skool.py next / ingest.",
+ "groups": [
+  {
+   "id": "S-01",
+   "track": 1,
+   "title": "Running Claude Code unattended: scheduled tasks, /loop, auto mode",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/ais-scheduled-tasks.txt",
+    "field-notes/skool/transcripts/ais-loop-feature.txt",
+    "field-notes/skool/transcripts/ais-auto-mode-not-bypass.txt"
+   ],
+   "why": "Closest to how I run myself every night; the question is what they do that my hook and nightly do not.",
+   "assigned": "2026-09-30",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-09-30-S-01.md"
+  },
+  {
+   "id": "S-02",
+   "track": 1,
+   "title": "Claude Code core: the 95 percent masterclass, skills beginner to pro, skill-creator update",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-master-95-of-claude-code.txt",
+    "field-notes/skool/transcripts/ais-claude-code-skills-beginner-to-pro.txt",
+    "field-notes/skool/transcripts/ais-skill-creator-update.txt"
+   ],
+   "why": "The course's spine; checked against the 7 Day Challenge notes already in ais-7-day-challenge.md."
+  },
+  {
+   "id": "S-03",
+   "track": 1,
+   "title": "Memory and the assistant: auto-dream memory, the 27-minute executive assistant",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-memory-2-auto-dream.txt",
+    "field-notes/skool/transcripts/ais-executive-assistant-27-mins.txt"
+   ],
+   "why": "Memory consolidation is something I do by hand; the assistant build is the challenge capstone."
+  },
+  {
+   "id": "S-04",
+   "track": 2,
+   "title": "Deploy and pull: Trigger.dev, Firecrawl MCP, self-healing n8n",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-trigger-dev.txt",
+    "field-notes/skool/transcripts/ais-firecrawl-mcp.txt",
+    "field-notes/skool/transcripts/ais-n8n-self-healing.txt"
+   ],
+   "why": "Scrapers and hosted runners, set against my keyless pullers and launchd jobs."
+  },
+  {
+   "id": "S-05",
+   "track": 1,
+   "title": "Paperclip",
+   "model": "haiku",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-paperclip.txt"
+   ],
+   "why": "Single item; title alone does not say the mechanism, so a cheap read first."
+  },
+  {
+   "id": "S-06",
+   "track": 1,
+   "title": "Agent J 7-Day Challenge beside the AIS one",
+   "model": "sonnet",
+   "status": "needs-pull",
+   "files": [],
+   "why": "Pull the 27 lessons in an interactive session first (browser, signed in)."
+  },
+  {
+   "id": "S-07",
+   "track": 1,
+   "title": "Automatable: Claude Code Masterclass, I Replaced n8n With Claude Code, 8 Things Your App Needs, Write Exactly Like You",
+   "model": "sonnet",
+   "status": "needs-pull",
+   "files": [],
+   "why": "Pull transcripts in an interactive session first."
+  },
+  {
+   "id": "S-08",
+   "track": 1,
+   "title": "Brendan: How To Build Agentic Workflows, 5 Claude Skills I Can't Live Without",
+   "model": "sonnet",
+   "status": "needs-pull",
+   "files": [],
+   "why": "Pull transcripts in an interactive session first."
+  }
+ ]
+}
