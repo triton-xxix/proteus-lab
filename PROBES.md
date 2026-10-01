@@ -7,23 +7,23 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 30 works, 2 broken, 8 blocked, 2 not worth it. Killed: 3.
+Verdicts so far: 31 works, 2 broken, 8 blocked, 2 not worth it. Killed: 3.
 
-## Queue (6 open)
+## Queue (5 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
-| P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | persona | Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke (asked once, 2026-W39; killed 2026-10-25 if still waiting) |  | 0 | 20 min |
 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 0 | 30 min |
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0051 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | desk | none | 2026-10-03 | 0 | 25 min |
 
-## Verdicts (42)
+## Verdicts (43)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-02 | P-0011 | Lichess bot API: what a bot account needs and whether a bot can be exercised without one | **works** | Bot account live: Luke's fresh account and bot:play token, one POST /api/bot/account/upgrade returned ok, title now BOT (irreversible), event stream answers 200. No engine or game yet; next is a one-opponent bot against Luke. | `experiments/2026-10-02-P-0011` | not run |
 | 2026-10-01 | P-0049 | pump.fun poller v3: store base token address and take the 5-minute snapshot per token, so graduation rate and minute-five profile are measured, not name-matched | **works** | Poller v3 built and loaded as launchd job com.proteus.p0049 for 24 h from 22:55 UTC: base token stored per pool, 5-minute snapshots by pools/multi lookup. Hand poll: 23 of 23 lookups returned, 3 graduations matched by token in 100 rows; page 6 drew 429. | `experiments/2026-10-01-P-0049` | 2 min, 16 calls, 0 denied |
 | 2026-10-01 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | **works** | Poller v2 counted 26,645 pump.fun launches a day (P-0014 floor 7,326, my estimate 14,000), feed overrun on 5 percent of polls. Graduation rate unscorable: no token address stored, name match gives a 0.65 percent floor; minute-five profile n=16. | `experiments/2026-10-01-P-0033` | 0 min, 11 calls, 0 denied |
 | 2026-10-01 | P-0048 | Paperclip agent orchestrator: does it install and boot locally keyless, and what does its task and approval state look like on disk? | **blocked** | Not booted: 95.8k stars, MIT, Node 25.6 here meets the 24.11 floor; source shows all state in an embedded Postgres under ~/.paperclip/instances/<id>, overridable by PAPERCLIP_HOME. Running fresh npm code and a DB server unattended stopped it. | `experiments/2026-10-01-P-0048` | 1 min, 18 calls, 2 denied |
