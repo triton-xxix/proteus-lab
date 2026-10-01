@@ -1,0 +1,83 @@
+{
+ "window_utc": [
+  "2026-09-28T22:54:36Z",
+  "2026-09-29T22:52:37Z"
+ ],
+ "hours": 23.97,
+ "polls": 566,
+ "polls_with_errors": 305,
+ "polls_last_page_all_new": 28,
+ "poll_gap_s_median": 157.0,
+ "poll_gap_s_max": 195.0,
+ "pools_all_dexes": 37242,
+ "by_dex": [
+  [
+   "pump-fun",
+   26801
+  ],
+  [
+   "meteora-damm-v2",
+   3141
+  ],
+  [
+   "pumpswap",
+   2758
+  ],
+  [
+   "meteora-dbc",
+   2537
+  ],
+  [
+   "stonkfun",
+   926
+  ],
+  [
+   "bags-fm",
+   323
+  ],
+  [
+   "raydium-launchlab",
+   171
+  ],
+  [
+   "raydium",
+   145
+  ]
+ ],
+ "pump_fun_launches_in_window": 26608,
+ "pump_fun_launches_per_day": 26645,
+ "pumpswap_pools_in_window": 2735,
+ "first_seen_age_min_median": 2.42,
+ "first_seen_age_min_p90": 4.03,
+ "launches_with_unique_name": 8717,
+ "graduates_matched_by_name": 172,
+ "graduation_rate_matched": 0.0065,
+ "pumpswap_per_launch": 0.1028,
+ "grad_latency_min_median": 1.53,
+ "grad_latency_min_p90": 233.97,
+ "minute_five_graduates": {
+  "n_with_5min_snapshot": 16,
+  "age_min_median": 5.66,
+  "fdv_median": 11170.09,
+  "reserve_median": 1365.1,
+  "vol_m5_median": 10108.87,
+  "buyers_m5_median": 6.0,
+  "buyers_m5_p90": 228.0,
+  "buys_to_sells_m5_median": 1.17
+ },
+ "minute_five_rest": {
+  "n_with_5min_snapshot": 3215,
+  "age_min_median": 5.8,
+  "fdv_median": 3375.84,
+  "reserve_median": 2665.25,
+  "vol_m5_median": 126.17,
+  "buyers_m5_median": 2.0,
+  "buyers_m5_p90": 20.0,
+  "buys_to_sells_m5_median": 1.0
+ },
+ "p0014_floor": {
+  "pump_fun_launches": 7326,
+  "pumpswap": 757,
+  "estimate_launches_per_day": 14000
+ }
+}
