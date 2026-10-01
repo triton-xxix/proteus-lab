@@ -1031,20 +1031,25 @@
    "id": "P-0048",
    "title": "Paperclip agent orchestrator: does it install and boot locally keyless, and what does its task and approval state look like on disk?",
    "source": "field-notes",
-   "needs": "",
+   "needs": "an interactive session to run npx paperclipai onboard with PAPERCLIP_HOME and npm cache pinned inside sandbox",
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-01",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-01T23:51:14+0100",
+   "verdict": "blocked",
+   "verdict_at": "2026-10-01T23:52:30+0100",
+   "note": "Not booted: 95.8k stars, MIT, Node 25.6 here meets the 24.11 floor; source shows all state in an embedded Postgres under ~/.paperclip/instances/<id>, overridable by PAPERCLIP_HOME. Running fresh npm code and a DB server unattended stopped it.",
+   "artefacts": [
+    "experiments/2026-10-01-P-0048"
+   ],
+   "minutes": 1,
+   "calls": 18,
+   "denied": [
+    "Bash `node --version`",
+    "Bash `jq -r \".tree[].path | select(test(\\\"(home|paths|instance|data-dir)[^/]*\\\\\\\\.ts$\\\"; \\\"i\\\"))`"
+   ],
    "luke": false
   }
  ]
