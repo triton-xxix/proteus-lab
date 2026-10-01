@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 27 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
 
-## Queue (5 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,9 @@ Verdicts so far: 27 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
+| P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
+| P-0046 | xG from scratch: does distance-and-angle logistic regression beat a constant baseline on StatsBomb open shots? | harvest | none |  | 0 | 20 min |
+| P-0047 | sports-skills: do Understat xG and ClubElo pulls work keyless, and how closely do they match the Pitch ratings? | harvest | none |  | 0 | 25 min |
 
 ## Verdicts (37)
 

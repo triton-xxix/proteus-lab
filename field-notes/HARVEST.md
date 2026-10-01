@@ -6,13 +6,25 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-74 judged over 5 harvest days, 55 kept, 14 testable, 14 queued as probes, 10 with a probe verdict.
+88 judged over 6 harvest days, 67 kept, 17 testable, 17 queued as probes, 13 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0073 | 2026-09-30 | github | [echris6/motion-video-kit: Claude Code skill kit for premium AI-assisted business videos: i](https://github.com/echris6/motion-video-kit) | mechanism | tools-for-strangers | yes | P-0044 |
+| H-0087 | 2026-10-01 | github | [machina-sports/sports-skills: Open-source agent skills for live sports data and prediction](https://github.com/machina-sports/sports-skills) | mechanism | desk:pitch | yes | P-0047 |
+| H-0086 | 2026-10-01 | hn | [Show HN: Corral – Kill every command your agent starts](https://github.com/Cardinal44/corral) | mechanism | tools-for-strangers | no: It is Linux only (cgroups and /proc) and this machine is mac |  |
+| H-0085 | 2026-10-01 | vault | [Inbound AI receptionist demo line built from the home services voice prompt]() | mechanism | tools-for-strangers | no: It needs a telephony account, a phone number and a voice-age |  |
+| H-0084 | 2026-10-01 | youtube | [What is Expected Goals?](https://www.youtube.com/watch?v=tysc21gAT58) | mechanism | desk:pitch | yes | P-0046 |
+| H-0083 | 2026-10-01 | arxiv | [SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models](https://arxiv.org/abs/2609.39847) (intel) | mechanism | mechanism-hunting | no: It needs six audio language models and the benchmark data is |  |
+| H-0082 | 2026-10-01 | github | [edenfunf/reelmimic: Show it a video you love. Get a new video in the same style. An AI cre](https://github.com/edenfunf/reelmimic) | mechanism | tools-for-strangers | no: A real run takes hours of Claude Code usage and the shot ana |  |
+| H-0080 | 2026-10-01 | vault | [One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API]() | mechanism | tools-for-strangers | no: It needs an account, a key and spend. |  |
+| H-0079 | 2026-10-01 | youtube | [Finally, The CORRECT Way to Run Local AI on a Mac](https://www.youtube.com/watch?v=JpJaEPGzPF4) | mechanism | tech | yes | P-0045 |
+| H-0078 | 2026-10-01 | arxiv | [Learning from Research: Toward Lifelong Agent Harness Evolution](https://arxiv.org/abs/2609.40169) | mechanism | mechanism-hunting | no: It needs the AppWorld and Tau2 harnesses, model runs and hou |  |
+| H-0077 | 2026-10-01 | github | [nanaism/yomiyasu: AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated ](https://github.com/nanaism/yomiyasu) | mechanism | tools-for-strangers | no: Judging naturalness of Japanese needs a native reader, and P |  |
+| H-0076 | 2026-10-01 | hn | [Show HN: Open-source model routing for coding agents at Astra-level performance](https://news.ycombinator.com/item?id=49911500) | both | tech | no: It needs paid model keys on several providers and the benchm |  |
+| H-0075 | 2026-10-01 | vault | [Adapt the web design CLAUDE.md for phone-first UK local business sites]() | mechanism | tools-for-strangers | no: The source file is behind the vault's course extract and the |  |
+| H-0073 | 2026-09-30 | github | [echris6/motion-video-kit: Claude Code skill kit for premium AI-assisted business videos: i](https://github.com/echris6/motion-video-kit) | mechanism | tools-for-strangers | yes | P-0044 **works** |
 | H-0072 | 2026-09-30 | hn | [Show HN: Parrot – Open-Source Smart Meeting Recorder with Co-Pilot on Mac](https://openparrot.app) | mechanism | tools-for-strangers | no: It is a Mac GUI app needing build and live call audio. |  |
 | H-0071 | 2026-09-30 | vault | [Partnership ads run through a local client's own social handle](https://www.instagram.com/reel/DcWYAsmtqFr/) | mechanism | tools-for-strangers | no: Needs a Meta ad account and a client handle. |  |
 | H-0070 | 2026-09-30 | youtube | [How to Make PUMP.FUN CALLOUTS (Step by Step) #pumpfun #crypto #memecoin](https://www.youtube.com/watch?v=MA6Ecac4P-Y) | mechanism | desk:grinder | no: Payouts and call attribution are not visible from a keyless  |  |
@@ -40,7 +52,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0039 | 2026-09-28 | arxiv | [Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessmen](https://arxiv.org/abs/2609.31524) | mechanism | tech | no: Needs the benchmark data and trained models, and no runnable |  |
 | H-0038 | 2026-09-28 | github | [lemomo-ai/lemo-opuscar: 39 film styles, each a reusable style prompt plus a short film mad](https://github.com/lemomo-ai/lemo-opuscar) | mechanism | tools-for-strangers | no: Directing a film needs a Claude agent run against the skill, |  |
 | H-0037 | 2026-09-28 | hn | [Show HN: HN.watch – Videos of all Hacker News posts](https://hn.watch/) | both | tools-for-strangers | yes | P-0030 **blocked** |
-| H-0036 | 2026-09-27 | github | [alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interacti](https://github.com/alexgreensh/anidoodle) | mechanism | tools-for-strangers | yes | P-0028 |
+| H-0036 | 2026-09-27 | github | [alexgreensh/anidoodle: Art and animation, written as code. Illustrations, loops, interacti](https://github.com/alexgreensh/anidoodle) | mechanism | tools-for-strangers | yes | P-0028 **blocked** |
 | H-0034 | 2026-09-27 | awesome | [lightpanda-io/browser (new in awesome-mcp-servers)](https://github.com/lightpanda-io/browser) | both | mechanism-hunting | yes | P-0027 **works** |
 | H-0033 | 2026-09-27 | youtube | [How to Build An Expected Goals Model 1: Data and Model](https://www.youtube.com/watch?v=bpjLyFyLlXs) | mechanism | desk:pitch | no: This part of the transcript is conceptual framing with no fo |  |
 | H-0032 | 2026-09-27 | arxiv | [PUBG Ally: A Conversational Embodied Agent as an AI Teammate](https://arxiv.org/abs/2609.29837) | mechanism | game-bots | no: It's a proprietary system deployed inside PUBG's live servic |  |
@@ -55,7 +67,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0018 | 2026-09-26 | github | [yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, fro](https://github.com/yetone/magpie) | both | tools-for-strangers | yes | P-0022 **works** |
 | H-0017 | 2026-09-26 | hn | [Show HN: A Claude Code skill to analyze your chess games](https://github.com/brumar/chess-postmortem-skills) | both | game-bots | no: The author's own figure is about $15 in API spend per run, r |  |
 | H-0015 | 2026-09-26 | arxiv | [An Empirical Study of VLM Pipelines for Long-Document QA](https://arxiv.org/abs/2609.29933) | mechanism | mechanism-hunting | no: Reproducing needs the MMLongBench-Doc/LongDocURL benchmarks  |  |
-| H-0014 | 2026-09-26 | github | [JohnHeibel/PDoomVideo: Source code for the Claude Opus 5.5 music video for I'm Upping My P](https://github.com/JohnHeibel/PDoomVideo) | mechanism | mechanism-hunting | yes | P-0021 |
+| H-0014 | 2026-09-26 | github | [JohnHeibel/PDoomVideo: Source code for the Claude Opus 5.5 music video for I'm Upping My P](https://github.com/JohnHeibel/PDoomVideo) | mechanism | mechanism-hunting | yes | P-0021 **blocked** |
 | H-0013 | 2026-09-26 | hn | [Show HN: Reladraw – A diagram language where you decide where to place things](https://github.com/reladraw/reladraw) | mechanism | mechanism-hunting | yes | P-0020 **works** |
 | H-0012 | 2026-09-26 | hn | [Alan Kay: Shannon gave us a way of dealing with noisy channels [video]](https://www.youtube.com/watch?v=Cjntrqhn8pk) | mechanism | mechanism-hunting | no: Nothing to build or run, it is an anecdote about an accident |  |
 | H-0010 | 2026-09-26 | github | [nateherkai/hyperframes-student-kit: Edit videos, reels, and YouTube Shorts with Codex or C](https://github.com/nateherkai/hyperframes-student-kit) | mechanism | tools-for-strangers | yes | P-0019 **works** |
@@ -69,6 +81,154 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0087 machina-sports/sports-skills: Open-source agent skills for live sports data and prediction markets. Football, F1, Kalshi
+2026-10-01, github, https://github.com/machina-sports/sports-skills
+
+- **Mechanism:** A Python package and SKILL.md set that wraps public endpoints: ESPN scoreboards, Understat xG, ClubElo ratings, FPL, Kalshi and Polymarket prices. Each skill exposes commands that fetch and normalise JSON, with a catalog.json declaring risk metadata. It depends on the upstream sites staying open.
+- **Claim:** Agent skills for live sports data and prediction markets with zero API keys.
+- **Testable:** yes. Does pip install sports-skills return non-empty current Understat xG and ClubElo data with no key, and how many of 20 Premier League teams match the Pitch desk's ratings ranking? Queued as P-0047.
+- **Idea on its own:** needs-a-run. Wrapping public endpoints is easy, so the value depends on whether they still return clean data.
+- **How it would be done:** Install the package in a venv, call the Understat and ClubElo commands for the current league, save the output and compare team order against the Pitch desk's Dixon-Coles ratings. Prediction market prices would give a blind baseline to compare predictions with.
+- **Stack already covers:** football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** sports-skills https://github.com/machina-sports/sports-skills (The package under test.); ClubElo API http://clubelo.com/API (Free Elo ratings, no key.)
+- **Field Notes line:** A keyless Python wrapper over Understat xG, ClubElo and prediction market prices could feed the Pitch desk extra inputs.
+
+### H-0086 Show HN: Corral – Kill every command your agent starts
+2026-10-01, hn, https://github.com/Cardinal44/corral
+
+- **Mechanism:** Corral runs a command in its own session and tracks every descendant, so nothing survives. With cgroups it kills the whole tree at once; without, it walks /proc and kills descendants, and exits 120 if it cannot confirm they are dead. Commenters note escapes such as spawning through sshd or handing work to systemd.
+- **Claim:** corral --wall 30s -- cmd leaves no process of that command running when it finishes.
+- **Testable:** no. It is Linux only (cgroups and /proc) and this machine is macOS. Needs: A Linux host or container.
+- **Idea on its own:** sound. Leaked background processes from agent shells are real and tree-wide killing fixes most of them.
+- **How it would be done:** On a Linux box, run commands that double fork and background a tail, wrapped in the tool, and check for survivors. On macOS an equivalent would need process group tracking with kqueue or a launchd job with AbandonProcessGroup off.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Corral https://github.com/Cardinal44/corral (The tool.)
+- **Field Notes line:** A wrapper that kills every process an agent's command started, using cgroups or a /proc walk, because plain timeouts miss double forks.
+
+### H-0085 Inbound AI receptionist demo line built from the home services voice prompt
+2026-10-01, vault, 
+
+- **Mechanism:** A phone number routes inbound calls to a voice-agent platform: speech to text, an LLM with a long system prompt (business hours, services, booking rules), text to speech back, and tool calls that write bookings to a calendar or send an SMS. Retell or Vapi host the loop and Make or n8n handle the follow-up. In the UK, call recording and AI disclosure at the start are needed.
+- **Claim:** A home services voice prompt turns into a working inbound receptionist demo line.
+- **Testable:** no. It needs a telephony account, a phone number and a voice-agent platform key. Needs: Voice-agent platform account and a UK phone number.
+- **Idea on its own:** sound. Inbound handling of missed calls is lawful and the components are mature.
+- **How it would be done:** Take one of the free voice prompts, adapt it to a fictional UK trade business, wire a number into a hosted voice-agent platform, and give it a calendar booking tool. Test with scripted calls, including interruptions and unclear requests. A person must play the caller and handle the business owner onboarding.
+- **Stack already covers:** ElevenLabs (voice)
+- **To fetch:** Retell AI https://www.retellai.com (Hosted voice-agent loop with a free tier.); Vapi https://vapi.ai (Alternative voice-agent platform.); n8n https://github.com/n8n-io/n8n (Self-hosted follow-up workflows.)
+- **Missing:** A UK phone number and a real business willing to trial it.
+- **Field Notes line:** An inbound AI receptionist is a phone number, a speech loop, a long prompt and a calendar tool call.
+
+### H-0084 What is Expected Goals?
+2026-10-01, youtube, https://www.youtube.com/watch?v=tysc21gAT58
+
+- **Mechanism:** Expected goals is a classifier: each shot gets a probability of scoring from features such as location, angle, body part and defender positions, fitted on thousands of historical shots. Usually this is logistic regression or gradient boosting, and team xG is the sum of shot probabilities.
+- **Claim:** An equation using data from thousands of similar shots assigns each chance a value between 0 and 1.
+- **Testable:** yes. Does a logistic model on distance and angle from StatsBomb open data beat a constant goal-rate baseline on held-out log loss? Queued as P-0046.
+- **Idea on its own:** sound. It is a standard, well understood model whose skill can be checked on held-out shots.
+- **How it would be done:** Download StatsBomb open data shots, compute distance and angle from the coordinates, fit logistic regression and compare log loss and Brier score against a constant rate on a held-out set. Then add body part and shot type. The result can feed the Pitch desk as a team strength input.
+- **Stack already covers:** football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** StatsBomb open-data https://github.com/statsbomb/open-data (Free shot-level event data with coordinates.); scikit-learn https://github.com/scikit-learn/scikit-learn (Logistic regression and scoring.)
+- **Field Notes line:** Expected goals is just a shot-level logistic model; fitting one on free open data shows how much distance and angle alone explain.
+
+### H-0083 SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models
+2026-10-01, arxiv, https://arxiv.org/abs/2609.39847
+
+- **Mechanism:** SEAR tests whether audio language models detect deepfake speech for the right acoustic reasons. A four-task question benchmark asks for evidence identification, quantification, verdict and rationale, and BAEA gives a frozen model controlled acoustic measurement tools, fixed or adaptive, comparing against bona fide audio. Feeding misleading evidence lowers both detection and grounding.
+- **Claim:** Models give plausible rationales that lack verifiable acoustic evidence, and BAEA-Fixed improves verdicts and rationales.
+- **Testable:** no. It needs six audio language models and the benchmark data is not confirmed public. Needs: Audio language model access and the SEAR dataset.
+- **Idea on its own:** sound. Making a detector cite measurable evidence is a sound way to test whether its reasoning is real.
+- **How it would be done:** Pull the benchmark if released, run a model with and without simple measurement tools (spectral features, pitch, noise floor from librosa), and check whether the cited evidence matches the measured values. This is the detection side only.
+- **Stack already covers:** local transcription
+- **To fetch:** librosa https://github.com/librosa/librosa (Acoustic measurements as evidence tools.)
+- **Field Notes line:** Audio models that call a deepfake often cannot back the call with real acoustic evidence; giving them measurement tools helps.
+
+### H-0082 edenfunf/reelmimic: Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans
+2026-10-01, github, https://github.com/edenfunf/reelmimic
+
+- **Mechanism:** It decomposes a reference video into shot lengths, BPM, transitions, colours, framing and camera moves, then writes a storyboard plan for approval. Up to six agents build different segments in parallel through engines such as HyperFrames, and every finished shot is reviewed by a fresh agent, with fixes needing before and after screenshots. Styles are Markdown files.
+- **Claim:** A reference video plus a one-line brief yields a new 30 to 60 second video in the same style, in 1 to 3.5 hours.
+- **Testable:** no. A real run takes hours of Claude Code usage and the shot analysis step is not clearly separable. Needs: Hours of Claude Code or Codex usage.
+- **Idea on its own:** needs-a-run. Separating the builder from the reviewer is sound, but output quality on 2D styles is only shown by the author's samples.
+- **How it would be done:** Clone it, feed it a short public-domain clip and a one-line brief, and let it run overnight. Compare the shot analysis with ffmpeg scene detection to see how accurate the breakdown is. The reference should be licensed or self-made, and a person must approve the plan.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** ReelMimic https://github.com/edenfunf/reelmimic (The tool itself.); painted-animation https://github.com/tuzhechen2005/painted-animation (Hand-painted engine it builds on.)
+- **Field Notes line:** A Claude Code crew takes a video apart into shots, rhythm and style, then rebuilds a new one with a fresh agent reviewing every shot.
+
+### H-0080 One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API
+2026-10-01, vault, 
+
+- **Mechanism:** fal is an inference aggregator: one API key and a queue endpoint per model, where a client submits a job, polls or takes a webhook, and downloads the result file. Video, image and lip-sync models from different labs sit behind one calling pattern billed per second or per generation. It depends on the hosted model being available and on each model's content rules.
+- **Claim:** One pay-as-you-go account reaches Seedance, Kling, Wan and lip-sync models by API.
+- **Testable:** no. It needs an account, a key and spend. Needs: fal account and API key.
+- **Idea on its own:** sound. Aggregator APIs with a uniform submit-and-poll pattern are a proven way to swap models without rewriting code.
+- **How it would be done:** Write one small wrapper that takes a model id and a prompt, submits to the queue, polls and saves the file with its cost recorded. Add a table of draft route and final route per video job. A person is still needed for any shot with a real face, which these models refuse.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Gemini (stills), HeyGen and Tavus (avatars)
+- **To fetch:** fal client https://github.com/fal-ai/fal (Python client for the queue API.)
+- **Field Notes line:** One queue-style API fronts many video models, so a script can pick a draft model and a final model per job.
+
+### H-0079 Finally, The CORRECT Way to Run Local AI on a Mac
+2026-10-01, youtube, https://www.youtube.com/watch?v=JpJaEPGzPF4
+
+- **Mechanism:** oMLX wraps Apple's MLX LM library with an OpenAI-style server and a two-tier KV cache: hot blocks stay in RAM, cold blocks are written to SSD as safetensors under least-recently-used eviction. Previously seen prompt prefixes are restored across requests and server restarts rather than recomputed, which cuts time to first token on long agent contexts.
+- **Claim:** SSD-persisted prefix cache makes cold starts and long contexts faster than plain MLX LM on a Mac.
+- **Testable:** yes. With a small public MLX model, is time to first token on a 4k-token repeated prefix after a server restart at least 2x faster than the first cold run? Queued as P-0045.
+- **Idea on its own:** needs-a-run. Prefix caching is a sound technique, but the speedup on a small model on this Mac is the question.
+- **How it would be done:** Install oMLX, load a small MLX model, send a 4k-token prompt, time it, restart the server and send it again. Compare against the Ollama qwen already here for the same prompt. If the gain holds, point child agents at it for long-context reading jobs.
+- **Stack already covers:** Ollama with a qwen model, local transcription
+- **To fetch:** oMLX (The server under test; find the repo via the video description.); mlx-lm https://github.com/ml-explore/mlx-lm (The underlying library and baseline.)
+- **Field Notes line:** A Mac local-model server that parks its prompt cache on the SSD so restarts skip recomputing long prefixes.
+
+### H-0078 Learning from Research: Toward Lifelong Agent Harness Evolution
+2026-10-01, arxiv, https://arxiv.org/abs/2609.40169
+
+- **Mechanism:** ScholarEvolve keeps the model fixed and evolves the agent harness (tool use, memory, task execution). It mines new papers, topic-models them into improvement strategies per harness module, has a coding agent implement each, then evaluates combinations on the benchmark and keeps winners. New publications can be fed in over time.
+- **Claim:** Raises Qwen3.5-27B goal completion on AppWorld Challenge from 49.6% to 63.6%, and GPT-5.4-mini pass@1 on Tau2-Bench Telecom from 72.7% to 81.9%.
+- **Testable:** no. It needs the AppWorld and Tau2 harnesses, model runs and hours of compute, not a 30 minute keyless check. Needs: Benchmark harnesses and model access.
+- **Idea on its own:** needs-a-run. Evaluate-and-keep loops do improve harnesses, but gains from paper mining versus plain search are not isolated here.
+- **How it would be done:** Take a small harness Proteus owns (the harvester or the probe loop), define a score, then have a child agent propose changes drawn from recent arXiv abstracts and keep only those that raise the score on a fixed task set. The paper feed already exists through the arXiv pull. A held-out set is needed so the loop does not overfit.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** AppWorld https://github.com/StonyBrookNLP/appworld (Benchmark used to score harness changes.)
+- **Missing:** A scored task set for Proteus's own harness.
+- **Field Notes line:** An agent harness that reads new research papers and rewrites itself with them lifted a small model's task score by 14 points.
+
+### H-0077 nanaism/yomiyasu: AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese
+2026-10-01, github, https://github.com/nanaism/yomiyasu
+
+- **Mechanism:** It is a prompt-only Agent Skill: seven rewrite principles (restore subject and object, dissolve inanimate subjects, replace metaphor verbs with literal actions, cut preambles, preserve numbers, limit sentence length to about 30 to 45 characters and 0 to 2 commas) loaded into the agent as a skill file. The numeric targets make the output checkable by a simple script. It addresses a known failure of ban-list prompts, where banned words are swapped for new vague ones.
+- **Claim:** The skill rewrites AI-sounding Japanese into natural, dense Japanese, validated against open-licence corpora.
+- **Testable:** no. Judging naturalness of Japanese needs a native reader, and Proteus has no Japanese ground truth. Needs: A Japanese reader to judge output.
+- **Idea on its own:** sound. Structural rules with measurable limits beat word ban lists, and the same pattern would work for English house style.
+- **How it would be done:** Copy the skill structure, replace the Japanese rules with English equivalents (name the actor, no abstract subjects, sentence length cap, no filler openers), and run it over a few drafts. A small script can then count sentence length and comma density as a regression check. A native editor would be needed to confirm it reads naturally.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** yomiyasu https://github.com/nanaism/yomiyasu (Reference skill layout and rule set to adapt.)
+- **Field Notes line:** A skill that fixes AI-sounding prose by enforcing sentence structure rules with numeric targets, not by banning words.
+
+### H-0076 Show HN: Open-source model routing for coding agents at Astra-level performance
+2026-10-01, hn, https://news.ycombinator.com/item?id=49911500
+
+- **Mechanism:** A router sits between a coding agent and several LLM back ends and picks a model per step. It is a trained routing model (RL plus a prior, with an HMM mentioned in comments that assigns the session to a model bucket) that weighs model capability, price and prompt-cache state, since switching model throws away the cache. Savings come from sending easy edits to a cheap model and hard debugging to the strong one.
+- **Claim:** Router 2.0 matches GPT-6 Astra pass rates on Terminal Bench 4.0 and SWE Atlas at about 52 to 54 percent of the cost and 2.2 to 2.5x faster.
+- **Testable:** no. It needs paid model keys on several providers and the benchmarks are the vendor's own, so nothing can be checked keyless tonight. Needs: API keys for two or more model providers.
+- **Idea on its own:** needs-a-run. Cost-aware routing is plausible but the headline numbers are self-reported on the vendor's benchmark runs.
+- **How it would be done:** Install the open-source router, point a coding agent at it, and run the same 20 tasks through it and through the single strong model, logging cost, time and pass rate. The comparison needs several provider keys and a task set Proteus can score itself. A crude rule-based router (cheap model for edits under N lines) is a useful baseline to see how much the trained part adds.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Weave Router https://github.com/weave-os/router (The open-source router to run against a baseline.)
+- **Missing:** A scored task set and keys for the cheap and strong models.
+- **Field Notes line:** A trained router that hands easy coding steps to cheap models and hard ones to the strong one claims half the cost at equal pass rate, with cache loss priced in.
+
+### H-0075 Adapt the web design CLAUDE.md for phone-first UK local business sites
+2026-10-01, vault, 
+
+- **Mechanism:** A CLAUDE.md file sits in a website project and pins design rules (mobile-first layout, tap-target sizes, local trust signals, click-to-call, schema.org LocalBusiness markup) so every Claude Code session builds pages to the same standard. Adapting it for UK local trades means swapping US conventions for UK ones (postcodes, VAT, UK phone formats, Google Business Profile). The output is static HTML or a small framework site that can be checked against Lighthouse mobile scores.
+- **Claim:** A web design CLAUDE.md steers Claude Code to produce consistent, mobile-first small business sites.
+- **Testable:** no. The source file is behind the vault's course extract and the real question (does a rule file improve sites) needs a judged build, not a 30 minute run.
+- **Idea on its own:** sound. Persistent rule files reliably shape agent output, and mobile performance is measurable with free tools.
+- **How it would be done:** Write or take the rule file, adapt it to UK local business conventions, then have Claude Code build a sample site for a fictional plumber from a short brief. Score it with Lighthouse mobile and a tap-target check, then iterate the rules where scores drop. Real trade businesses would need photos, reviews and a domain, which is a human job: someone has to collect them and approach the owner.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Lighthouse CLI https://github.com/GoogleChrome/lighthouse (Free mobile performance and accessibility scoring to judge generated sites.)
+- **Missing:** The real client photos, reviews and domain access for any actual business.
+- **Field Notes line:** A single CLAUDE.md rule file can hold a whole web design standard, so phone-first local business sites come out consistent every time.
 
 ### H-0073 echris6/motion-video-kit: Claude Code skill kit for premium AI-assisted business videos: independent critic loop, motion
 2026-09-30, github, https://github.com/echris6/motion-video-kit
@@ -601,6 +761,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0085 | 2026-10-01 | Inbound AI receptionist demo line built from the home services voice prompt | open | sound | no |  |
+| H-0080 | 2026-10-01 | One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API | open | sound | no |  |
+| H-0075 | 2026-10-01 | Adapt the web design CLAUDE.md for phone-first UK local business sites | open | sound | no |  |
 | H-0071 | 2026-09-30 | Partnership ads run through a local client's own social handle | open | sound | no |  |
 | H-0066 | 2026-09-30 | Consistent AI character content with clear AI disclosure | open | sound | no |  |
 | H-0061 | 2026-09-30 | Learning crypto research from a source with an independently verifiable track record | open | sound | no |  |
@@ -615,6 +778,24 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0046 | 2026-10-01 | [ClubElo API](http://clubelo.com/API) | Free Elo ratings, no key. | H-0087 (machina-sports/sports-skills: Open-source agent sk) | shelf |
+| T-0045 | 2026-10-01 | [sports-skills](https://github.com/machina-sports/sports-skills) | The package under test. | H-0087 (machina-sports/sports-skills: Open-source agent sk) | shelf |
+| T-0044 | 2026-10-01 | [Corral](https://github.com/Cardinal44/corral) | The tool. | H-0086 (Show HN: Corral – Kill every command your agent st) | shelf |
+| T-0043 | 2026-10-01 | [n8n](https://github.com/n8n-io/n8n) | Self-hosted follow-up workflows. | H-0085 (Inbound AI receptionist demo line built from the h) | shelf |
+| T-0042 | 2026-10-01 | [Vapi](https://vapi.ai) | Alternative voice-agent platform. | H-0085 (Inbound AI receptionist demo line built from the h) | shelf |
+| T-0041 | 2026-10-01 | [Retell AI](https://www.retellai.com) | Hosted voice-agent loop with a free tier. | H-0085 (Inbound AI receptionist demo line built from the h) | shelf |
+| T-0040 | 2026-10-01 | [scikit-learn](https://github.com/scikit-learn/scikit-learn) | Logistic regression and scoring. | H-0084 (What is Expected Goals?) | shelf |
+| T-0039 | 2026-10-01 | [StatsBomb open-data](https://github.com/statsbomb/open-data) | Free shot-level event data with coordinates. | H-0084 (What is Expected Goals?) | shelf |
+| T-0038 | 2026-10-01 | [librosa](https://github.com/librosa/librosa) | Acoustic measurements as evidence tools. | H-0083 (SEAR: Spoofing Evidence-Grounded Audio Reasoning B) | shelf |
+| T-0037 | 2026-10-01 | [painted-animation](https://github.com/tuzhechen2005/painted-animation) | Hand-painted engine it builds on. | H-0082 (edenfunf/reelmimic: Show it a video you love. Get ) | shelf |
+| T-0036 | 2026-10-01 | [ReelMimic](https://github.com/edenfunf/reelmimic) | The tool itself. | H-0082 (edenfunf/reelmimic: Show it a video you love. Get ) | shelf |
+| T-0035 | 2026-10-01 | [fal client](https://github.com/fal-ai/fal) | Python client for the queue API. | H-0080 (One pay-as-you-go fal account to run Seedance, Kli) | shelf |
+| T-0034 | 2026-10-01 | [mlx-lm](https://github.com/ml-explore/mlx-lm) | The underlying library and baseline. | H-0079 (Finally, The CORRECT Way to Run Local AI on a Mac) | shelf |
+| T-0033 | 2026-10-01 | oMLX | The server under test; find the repo via the video description. | H-0079 (Finally, The CORRECT Way to Run Local AI on a Mac) | shelf |
+| T-0032 | 2026-10-01 | [AppWorld](https://github.com/StonyBrookNLP/appworld) | Benchmark used to score harness changes. | H-0078 (Learning from Research: Toward Lifelong Agent Harn) | shelf |
+| T-0031 | 2026-10-01 | [yomiyasu](https://github.com/nanaism/yomiyasu) | Reference skill layout and rule set to adapt. | H-0077 (nanaism/yomiyasu: AI生成の日本語を自然な日本語へ推敲するAgent Skill ) | shelf |
+| T-0030 | 2026-10-01 | [Weave Router](https://github.com/weave-os/router) | The open-source router to run against a baseline. | H-0076 (Show HN: Open-source model routing for coding agen) | shelf |
+| T-0029 | 2026-10-01 | [Lighthouse CLI](https://github.com/GoogleChrome/lighthouse) | Free mobile performance and accessibility scoring to judge generated sites. | H-0075 (Adapt the web design CLAUDE.md for phone-first UK ) | shelf |
 | T-0028 | 2026-09-30 | [ffmpeg ebur128 filter](https://ffmpeg.org/ffmpeg-filters.html#ebur128-1) | Loudness measurement the scripts need. | H-0073 (echris6/motion-video-kit: Claude Code skill kit fo) | shelf |
 | T-0027 | 2026-09-30 | [motion-video-kit](https://github.com/echris6/motion-video-kit) | The skill and measurement scripts. | H-0073 (echris6/motion-video-kit: Claude Code skill kit fo) | shelf |
 | T-0026 | 2026-09-30 | [Parrot](https://github.com/turantekin/Parrot) | Source for the capture and co-pilot design. | H-0072 (Show HN: Parrot – Open-Source Smart Meeting Record) | shelf |
@@ -648,6 +829,8 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0088 | 2026-10-01 | youtube | [What is a Bonding Curve? Explained in Less Than 1 Minute! #defi #daos #blockchai](https://www.youtube.com/watch?v=LI8WkvWpJJc) | A one-minute generic explainer of bonding curves with no mechanism beyond the definition the Grinder already covers. |
+| H-0081 | 2026-10-01 | hn | [Show HN: Strata – an expressive semantic layer that can say no to your LLM](https://strata.do/) | A product pitch for a semantic layer with claims but no inspectable mechanism beyond naming rules. |
 | H-0074 | 2026-09-30 | youtube | [Chess Engine in Python - Part 2 - Moving the pieces](https://www.youtube.com/watch?v=o24J3WcBGLg) | Beginner tutorial on mouse input for a chess GUI, no mechanism relevant to a bot. |
 | H-0067 | 2026-09-30 | hn | [Show HN: A working 3D model of an Enigma machine](https://enigma.design) | A 3D explainer site with no reusable mechanism beyond prompt-built models. |
 | H-0065 | 2026-09-30 | youtube | [day in the life of a wfh data analyst.](https://www.youtube.com/watch?v=RC30UibhowE) | Lifestyle vlog with no transcript and no mechanism. |

@@ -283,6 +283,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-01, ran: Wikimedia pageviews top API (en.wikipedia, 30 Sep, all-access v desktop), keyless.
   Desktop share splits the top 25: news pages 5 to 25 percent, Neatsville KY 99, .xyz and Instagram
   91. Wildcard item W40. Do not re-run as new; a week-long series would be.
+- 2026-10-01, harvested: 14 judged, 12 kept (H-0075 to H-0088), 3 queued as probes (P-0045, P-0046, P-0047). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

@@ -1,0 +1,3731 @@
+{
+ "date": "2026-10-01",
+ "pulled_at": "2026-10-01T23:43:49+0100",
+ "seconds": 50.5,
+ "by_source": {
+  "vault": 85,
+  "hn": 7,
+  "github": 29,
+  "arxiv": 24,
+  "youtube": 12
+ },
+ "errors": [],
+ "notes": [
+  "vault: 85 threads taken of 92 in the feed (statuses open, intel, dead), one per parent link in turn",
+  "awesome awesome-claude-code: 0 new of 190",
+  "awesome awesome-mcp-servers: 0 new of 4081",
+  "awesome awesome-ai-agents: 0 new of 116"
+ ],
+ "candidates": [
+  {
+   "key": "vault:2026-10-01:adapt-the-web-design-claude-md-for-phone-first-uk-local-busi",
+   "source": "vault",
+   "query": "open",
+   "title": "Adapt the web design CLAUDE.md for phone-first UK local business sites",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "AI Automation Society (Skool, Nate Herk), free tier",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Education/Courses/ai-automation-society/DIGEST.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 100.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI Automation Society (Skool, Nate Herk), free tier",
+    "kind": "service",
+    "status": "open",
+    "theme": "Adapt the web design CLAUDE.md for phone-first UK local business sites",
+    "note": "",
+    "where": "TRITON-CORE/Education/Courses/ai-automation-society/DIGEST.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:one-pay-as-you-go-fal-account-to-run-seedance-kling-wan-and-",
+   "source": "vault",
+   "query": "open",
+   "title": "One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "tool",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 99.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "kind": "tool",
+    "status": "open",
+    "theme": "One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API",
+    "note": "the single addition that changes the workflow most",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:inbound-ai-receptionist-demo-line-built-from-the-home-servic",
+   "source": "vault",
+   "query": "open",
+   "title": "Inbound AI receptionist demo line built from the home services voice prompt",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Education/Courses/brendans-ai-community/DIGEST.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 98.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
+    "kind": "service",
+    "status": "open",
+    "theme": "Inbound AI receptionist demo line built from the home services voice prompt",
+    "note": "",
+    "where": "TRITON-CORE/Education/Courses/brendans-ai-community/DIGEST.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-29:join-for-one-month-with-skool-neptune-transcribe-the-classro",
+   "source": "vault",
+   "query": "open",
+   "title": "Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-video-bootcamp, cancel before renewal",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
+    "date": "2026-09-29",
+    "where": "TRITON-CORE/Research/links/2026-09-29-ai-video-bootcamp-skool.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 97.0,
+   "thread": {
+    "date": "2026-09-29",
+    "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
+    "kind": "service",
+    "status": "open",
+    "theme": "Join for one month with Skool neptune, transcribe the classroom into Education/Courses/ai-video-bootcamp, cancel before renewal",
+    "note": "",
+    "where": "TRITON-CORE/Research/links/2026-09-29-ai-video-bootcamp-skool.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:media-buying-commission-taken-as-a-share-of-a-brand-s-ad-bud",
+   "source": "vault",
+   "query": "open",
+   "title": "Media-buying commission taken as a share of a brand's ad budget",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 96.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Media-buying commission taken as a share of a brand's ad budget",
+    "note": "Named as the kit's second angle at 20 percent of a 100k budget; not assessed in the write-up",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:post-production-for-businesses-that-have-long-form-content-b",
+   "source": "vault",
+   "query": "open",
+   "title": "Post-production for businesses that have long-form content but cannot cut it into short-form",
+   "url": "https://www.instagram.com/reel/DcU_MNWtIkg/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 95.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Post-production for businesses that have long-form content but cannot cut it into short-form",
+    "note": "The stack already owns the expensive half, HyperFrames, avatars, ElevenLabs, captions and compose; a trades client is the live test case",
+    "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md",
+    "url": "https://www.instagram.com/reel/DcU_MNWtIkg/"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:learning-crypto-research-from-a-source-with-an-independently",
+   "source": "vault",
+   "query": "open",
+   "title": "Learning crypto research from a source with an independently verifiable track record",
+   "url": "https://cryptonary.com/landing-100x-chaser",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Cryptonary 100x Chaser",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 94.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Cryptonary 100x Chaser",
+    "kind": "service",
+    "status": "open",
+    "theme": "Learning crypto research from a source with an independently verifiable track record",
+    "note": "Nobody in the vault has named such a source yet; the test is audited entry and exit pairs, not peak figures",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "url": "https://cryptonary.com/landing-100x-chaser"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:consistent-ai-character-content-with-clear-ai-disclosure",
+   "source": "vault",
+   "query": "open",
+   "title": "Consistent AI character content with clear AI disclosure",
+   "url": "https://www.instagram.com/p/Ddr0Ds3MsI5/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "EasyInfluencers.ai",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-easyinfluencers.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 93.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "EasyInfluencers.ai",
+    "kind": "service",
+    "status": "open",
+    "theme": "Consistent AI character content with clear AI disclosure",
+    "note": "The character may entertain; it must not recommend products while appearing to be an ordinary person",
+    "where": "TRITON-CORE/Research/links/2026-09-26-easyinfluencers.md",
+    "url": "https://www.instagram.com/p/Ddr0Ds3MsI5/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:partnership-ads-run-through-a-local-client-s-own-social-hand",
+   "source": "vault",
+   "query": "open",
+   "title": "Partnership ads run through a local client's own social handle",
+   "url": "https://www.instagram.com/reel/DcWYAsmtqFr/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 92.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Partnership ads run through a local client's own social handle",
+    "note": "Local trust sits with their page; permission-based, legal and sellable as a service rather than a trick",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "url": "https://www.instagram.com/reel/DcWYAsmtqFr/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:generating-many-platform-native-variants-hooks-colour-grades",
+   "source": "vault",
+   "query": "open",
+   "title": "Generating many platform-native variants (hooks, colour grades, overlays) from one filmed asset",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Butter (hellobutter.io)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 91.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Butter (hellobutter.io)",
+    "kind": "service",
+    "status": "open",
+    "theme": "Generating many platform-native variants (hooks, colour grades, overlays) from one filmed asset",
+    "note": "What transfers; the vault has a renderer but no variant loop",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:photoreal-moving-footage-of-a-subject-you-cannot-film-one-co",
+   "source": "vault",
+   "query": "open",
+   "title": "Photoreal moving footage of a subject you cannot film, one consistent face and a directed camera move",
+   "url": "https://www.instagram.com/reel/DdoiRHMmyel/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Higgsfield AI (higgsfield.ai)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 90.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Higgsfield AI (higgsfield.ai)",
+    "kind": "service",
+    "status": "open",
+    "theme": "Photoreal moving footage of a subject you cannot film, one consistent face and a directed camera move",
+    "note": "The one real gap it fills; belongs inside the existing HeyGen and Tavus bake-off as one Starter month, not a new lane",
+    "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md",
+    "url": "https://www.instagram.com/reel/DdoiRHMmyel/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:niche-paid-community-on-owned-material-borrowing-only-a-prov",
+   "source": "vault",
+   "query": "open",
+   "title": "Niche paid community on owned material, borrowing only a proven model and price point",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 89.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Niche paid community on owned material, borrowing only a proven model and price point",
+    "note": "Copying a model and price is lawful; needs honest metrics, correct disclaimers and VAT",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:buying-real-human-ugc-clips-from-marketplaces-and-reselling-",
+   "source": "vault",
+   "query": "open",
+   "title": "Buying real human UGC clips from marketplaces and reselling them inside a client retainer",
+   "url": "https://www.instagram.com/reel/DdK9uWfRVRT/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "Paid UGC creator work (via @oliver.hustles reel)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-paid-ugc-oliver-hustles-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 88.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Paid UGC creator work (via @oliver.hustles reel)",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Buying real human UGC clips from marketplaces and reselling them inside a client retainer",
+    "note": "Clips cost 25 to 60 dollars; a real human face is the one asset HyperFrames, avatars and ElevenLabs cannot produce",
+    "where": "TRITON-CORE/Research/links/2026-09-24-paid-ugc-oliver-hustles-reel.md",
+    "url": "https://www.instagram.com/reel/DdK9uWfRVRT/"
+   }
+  },
+  {
+   "key": "vault:2026-09-21:getting-a-video-into-an-agent-as-scene-change-frames-plus-tr",
+   "source": "vault",
+   "query": "open",
+   "title": "Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to Gemini",
+   "url": "https://www.instagram.com/reel/Db1USzsMNnZ/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "repo",
+    "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+    "date": "2026-09-21",
+    "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 87.0,
+   "thread": {
+    "date": "2026-09-21",
+    "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+    "kind": "repo",
+    "status": "open",
+    "theme": "Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to Gemini",
+    "note": "Frames via ffmpeg and captions or Whisper fallback is the only mechanism; Gemini reads public YouTube URLs on its free tier, no install",
+    "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md",
+    "url": "https://www.instagram.com/reel/Db1USzsMNnZ/"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:build-a-mock-up-site-for-the-prospect-and-send-a-90-second-l",
+   "source": "vault",
+   "query": "open",
+   "title": "Build a mock-up site for the prospect and send a 90-second Loom after a two-line permission ask",
+   "url": "https://www.youtube.com/watch?v=aidr_Ny1rvI",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 86.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Build a mock-up site for the prospect and send a 90-second Loom after a two-line permission ask",
+    "note": "Shows the fix rather than describing the gap; consent-first sequencing is workable under PECR",
+    "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md",
+    "url": "https://www.youtube.com/watch?v=aidr_Ny1rvI"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:x402-per-call-payment-rails-for-agents-coinbase-originated-n",
+   "source": "vault",
+   "query": "open",
+   "title": "x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation governance",
+   "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk",
+   "meta": {
+    "vault_status": "open",
+    "kind": "tool",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 85.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "kind": "tool",
+    "status": "open",
+    "theme": "x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation governance",
+    "note": "Legitimises the rails, not any operator; Agent402 uses the official packages",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:uk-shape-of-selling-booking-software-through-trade-job-softw",
+   "source": "vault",
+   "query": "open",
+   "title": "UK shape of selling booking software through trade job software and profile booking buttons",
+   "url": "https://www.youtube.com/watch?v=mr4YV-9MY0Q",
+   "meta": {
+    "vault_status": "open",
+    "kind": "company",
+    "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 84.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+    "kind": "company",
+    "status": "open",
+    "theme": "UK shape of selling booking software through trade job software and profile booking buttons",
+    "note": "Unknown which job software UK trades run; ServiceM8 and SimPro are not it; Reserve with Google needs partner approval",
+    "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md",
+    "url": "https://www.youtube.com/watch?v=mr4YV-9MY0Q"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:templates-thumbnails-overlays-and-pre-launch-guides-sold-or-",
+   "source": "vault",
+   "query": "open",
+   "title": "Templates, thumbnails, overlays and pre-launch guides sold or published to creators before a big game launch",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 83.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Templates, thumbnails, overlays and pre-launch guides sold or published to creators before a big game launch",
+    "note": "Fastest lane with no publisher IP exposure; guides and search sites need three to six months so the window is short",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:decomposing-one-classification-into-several-narrow-questions",
+   "source": "vault",
+   "query": "open",
+   "title": "Decomposing one classification into several narrow questions with weights fitted on a labelled set",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "tool",
+    "subject": "Jev AI (TypeSafe AI)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 82.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Jev AI (TypeSafe AI)",
+    "kind": "tool",
+    "status": "open",
+    "theme": "Decomposing one classification into several narrow questions with weights fitted on a labelled set",
+    "note": "Reached 95 percent on held-out emails; needs a labelled training set and pays off at millions of calls, model-agnostic technique",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:phone-gated-lead-magnet-to-free-workshop-to-done-for-you-app",
+   "source": "vault",
+   "query": "open",
+   "title": "Phone-gated lead magnet to free workshop to done-for-you app build agency",
+   "url": "https://keza.studio/10-app-templates",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "Keza Studio \"10 app templates\"",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 81.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Keza Studio \"10 app templates\"",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Phone-gated lead magnet to free workshop to done-for-you app build agency",
+    "note": "How a UK agency packages a founder funnel; SMS-verified phone gate is a deliberately higher-value capture",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)",
+    "url": "https://keza.studio/10-app-templates"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:public-on-chain-leaderboards-as-the-check-on-any-trader-s-cl",
+   "source": "vault",
+   "query": "open",
+   "title": "Public on-chain leaderboards as the check on any trader's claimed record",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Potion Alpha (Orangie) and trader Kimchi",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 5)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 80.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Potion Alpha (Orangie) and trader Kimchi",
+    "kind": "service",
+    "status": "open",
+    "theme": "Public on-chain leaderboards as the check on any trader's claimed record",
+    "note": "Kolscan, GMGN, Solana Tracker and Dune are the genuine ones; none belong to the paid community",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 5)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:tooling-leaderboards-and-data-products-built-around-a-token-",
+   "source": "vault",
+   "query": "open",
+   "title": "Tooling, leaderboards and data products built around a token launchpad",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "pump.fun",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 79.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "pump.fun",
+    "kind": "service",
+    "status": "open",
+    "theme": "Tooling, leaderboards and data products built around a token launchpad",
+    "note": "The only lane that is not extraction from traders; the launchpad acquires these firms, as with Kolscan and Padre",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:ugc-creator-marketplace-that-sources-creator-applications-fo",
+   "source": "vault",
+   "query": "open",
+   "title": "UGC creator marketplace that sources creator applications for brands fast",
+   "url": "https://sideshift.app/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "sideshift.app",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 78.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "sideshift.app",
+    "kind": "service",
+    "status": "open",
+    "theme": "UGC creator marketplace that sources creator applications for brands fast",
+    "note": "The marketplace model itself is untested here; this domain scores badly on reputation checkers, likely automated",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
+    "url": "https://sideshift.app/"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:flat-monthly-editing-retainer-for-businesses-already-produci",
+   "source": "vault",
+   "query": "open",
+   "title": "Flat monthly editing retainer for businesses already producing content",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 77.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Flat monthly editing retainer for businesses already producing content",
+    "note": "Priced at two to six thousand dollars a month; deliverable with the existing stack and no purchase",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:give-free-work-away-first-then-pay-to-amplify-whichever-piec",
+   "source": "vault",
+   "query": "open",
+   "title": "Give free work away first, then pay to amplify whichever piece performs",
+   "url": "https://www.instagram.com/reel/DcWYAsmtqFr/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 76.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Give free work away first, then pay to amplify whichever piece performs",
+    "note": "Applies seed-then-amplify to audits and scans already given away, instead of picking the case study in advance",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "url": "https://www.instagram.com/reel/DcWYAsmtqFr/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:per-post-cpm-tracked-per-account-feeding-back-into-what-gets",
+   "source": "vault",
+   "query": "open",
+   "title": "Per-post CPM tracked per account feeding back into what gets made next",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Butter (hellobutter.io)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 75.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Butter (hellobutter.io)",
+    "kind": "service",
+    "status": "open",
+    "theme": "Per-post CPM tracked per account feeding back into what gets made next",
+    "note": "The one idea the write-up says to steal",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:door-knocking-local-trades-with-a-spec-site-on-a-phone",
+   "source": "vault",
+   "query": "open",
+   "title": "Door-knocking local trades with a spec site on a phone",
+   "url": "https://www.youtube.com/watch?v=aidr_Ny1rvI",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 74.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Door-knocking local trades with a spec site on a phone",
+    "note": "Corey Ganim measured two bookings from two door-knocks against none from 13 cold-call conversations; outside PECR",
+    "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md",
+    "url": "https://www.youtube.com/watch?v=aidr_Ny1rvI"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:hashcash-proof-of-work-as-a-rate-limiter-buying-one-free-too",
+   "source": "vault",
+   "query": "open",
+   "title": "Hashcash proof of work as a rate limiter buying one free tool call",
+   "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk",
+   "meta": {
+    "vault_status": "open",
+    "kind": "tool",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 73.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "kind": "tool",
+    "status": "open",
+    "theme": "Hashcash proof of work as a rate limiter buying one free tool call",
+    "note": "Signed single-use challenge per tool, CPU finds a nonce; not mining, but no client-side ceiling or timeout",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:rockstar-s-own-cfx-marketplace-for-selling-fivem-and-redm-sc",
+   "source": "vault",
+   "query": "open",
+   "title": "Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 72.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles",
+    "note": "The sanctioned version of paid mods; unsanctioned paid mods breach Take-Two policy and draw legal threats",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:dmcc-compliance-review-for-small-firms-using-testimonials-an",
+   "source": "vault",
+   "query": "open",
+   "title": "DMCC compliance review for small firms using testimonials and incentivised reviews",
+   "url": "https://www.instagram.com/reel/DcWYAsmtqFr/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 71.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "DMCC compliance review for small firms using testimonials and incentivised reviews",
+    "note": "Rules changed under DMCC Act 2024 and most local firms do not know; can be priced today with nothing to build",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "url": "https://www.instagram.com/reel/DcWYAsmtqFr/"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:speed-to-lead-follow-up-on-new-enquiries-needs-no-old-databa",
+   "source": "vault",
+   "query": "intel",
+   "title": "Speed to lead follow-up on new enquiries needs no old database",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Ventures/Neptune-Marketing/research/SKOOL-DBR-COMMUNITY-2026-10-01.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 70.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Speed to lead follow-up on new enquiries needs no old database",
+    "note": "",
+    "where": "TRITON-CORE/Ventures/Neptune-Marketing/research/SKOOL-DBR-COMMUNITY-2026-10-01.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:skill-debugging-checklist-and-per-job-status-file-for-statel",
+   "source": "vault",
+   "query": "intel",
+   "title": "Skill debugging checklist and per-job status file for stateless scheduled sessions",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "AI Automation Society (Skool, Nate Herk), free tier",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Education/Courses/ai-automation-society/DIGEST.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 69.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI Automation Society (Skool, Nate Herk), free tier",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Skill debugging checklist and per-job status file for stateless scheduled sessions",
+    "note": "",
+    "where": "TRITON-CORE/Education/Courses/ai-automation-society/DIGEST.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:the-ad-strategy-and-script-frameworks-are-the-durable-part-a",
+   "source": "vault",
+   "query": "intel",
+   "title": "The ad strategy and script frameworks are the durable part and work once the proof is real",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "AI Video Bootcamp course, judged after building a framework from it",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Systems/video-bootcamp/README.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 68.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI Video Bootcamp course, judged after building a framework from it",
+    "kind": "service",
+    "status": "intel",
+    "theme": "The ad strategy and script frameworks are the durable part and work once the proof is real",
+    "note": "",
+    "where": "TRITON-CORE/Systems/video-bootcamp/README.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:heygen-web-app-costs-about-a-third-of-its-api-per-minute-and",
+   "source": "vault",
+   "query": "intel",
+   "title": "HeyGen web app costs about a third of its API per minute and its free plan covers a first lip-sync",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "tool",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 67.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "kind": "tool",
+    "status": "intel",
+    "theme": "HeyGen web app costs about a third of its API per minute and its free plan covers a first lip-sync",
+    "note": "",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:speed-to-lead-workflow-chain-and-themed-ad-group-keyword-met",
+   "source": "vault",
+   "query": "intel",
+   "title": "Speed-to-lead workflow chain and themed ad group keyword method from the call recordings",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Automatable Free (Skool, Jono Catliff), free tier",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Education/Courses/automatable-free/DIGEST.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 66.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "Automatable Free (Skool, Jono Catliff), free tier",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Speed-to-lead workflow chain and themed ad group keyword method from the call recordings",
+    "note": "",
+    "where": "TRITON-CORE/Education/Courses/automatable-free/DIGEST.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:voice-prompt-rules-times-as-words-spelled-out-emails-spoken-",
+   "source": "vault",
+   "query": "intel",
+   "title": "Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Education/Courses/brendans-ai-community/DIGEST.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 65.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency",
+    "note": "",
+    "where": "TRITON-CORE/Education/Courses/brendans-ai-community/DIGEST.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:how-a-copy-trade-funnel-turns-one-trade-into-many-testimonia",
+   "source": "vault",
+   "query": "intel",
+   "title": "How a copy-trade funnel turns one trade into many testimonials: shared timestamp and prices, lot size the only variable, Day-tab balance shown as wealth",
+   "url": "https://t.me/c/2308862086/8413",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "scheme",
+    "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 64.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+    "kind": "scheme",
+    "status": "intel",
+    "theme": "How a copy-trade funnel turns one trade into many testimonials: shared timestamp and prices, lot size the only variable, Day-tab balance shown as wealth",
+    "note": "Spot the shared timestamp before reading anything else",
+    "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+    "url": "https://t.me/c/2308862086/8413"
+   }
+  },
+  {
+   "key": "vault:2026-09-29:character-consistency-ai-ads-and-cloning-phases-feed-the-wf-",
+   "source": "vault",
+   "query": "intel",
+   "title": "Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
+    "date": "2026-09-29",
+    "where": "TRITON-CORE/Research/links/2026-09-29-ai-video-bootcamp-skool.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 63.0,
+   "thread": {
+    "date": "2026-09-29",
+    "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off",
+    "note": "",
+    "where": "TRITON-CORE/Research/links/2026-09-29-ai-video-bootcamp-skool.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:a-cheap-starter-kit-used-as-a-qualifier-that-routes-buyers-t",
+   "source": "vault",
+   "query": "intel",
+   "title": "A cheap starter kit used as a qualifier that routes buyers to a private sales call",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "scheme",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 62.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "kind": "scheme",
+    "status": "intel",
+    "theme": "A cheap starter kit used as a qualifier that routes buyers to a private sales call",
+    "note": "The 5 dollar price puts a card on file; the real offer lands on the one-to-one, and the guarantee covers budget allocation, not earnings",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:ai-model-courses-titled-for-onlyfans-but-guaranteed-against-",
+   "source": "vault",
+   "query": "intel",
+   "title": "AI model courses titled for OnlyFans but guaranteed against Fanvue",
+   "url": "https://zupria.com/create-and-monetize-an-ai-onlyfans-model/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "scheme",
+    "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 61.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+    "kind": "scheme",
+    "status": "intel",
+    "theme": "AI model courses titled for OnlyFans but guaranteed against Fanvue",
+    "note": "OnlyFans requires a verified real person in the content; Fanvue permits declared AI creators, so the name and the guarantee point at different platforms",
+    "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md",
+    "url": "https://zupria.com/create-and-monetize-an-ai-onlyfans-model/"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:one-sales-page-template-with-psychographic-persona-variants-",
+   "source": "vault",
+   "query": "intel",
+   "title": "One sales page template with psychographic persona variants making contradictory promises at one price",
+   "url": "https://cryptonary.com/landing-100x-chaser",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Cryptonary 100x Chaser",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 60.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Cryptonary 100x Chaser",
+    "kind": "service",
+    "status": "intel",
+    "theme": "One sales page template with psychographic persona variants making contradictory promises at one price",
+    "note": "Found by reading the JavaScript bundles; one variant promises asymmetric plays while another warns against risking what you cannot lose",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "url": "https://cryptonary.com/landing-100x-chaser"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:ai-influencer-vendors-selling-undetectable-fake-people-with-",
+   "source": "vault",
+   "query": "intel",
+   "title": "AI influencer vendors selling undetectable fake people with consistent appearances",
+   "url": "https://www.instagram.com/p/Ddr0Ds3MsI5/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "EasyInfluencers.ai",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-easyinfluencers.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 59.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "EasyInfluencers.ai",
+    "kind": "service",
+    "status": "intel",
+    "theme": "AI influencer vendors selling undetectable fake people with consistent appearances",
+    "note": "Same shape as Butter and its antidetect cloud phones; the feature is what platforms try to stop, and DMCC practice 25 bans traders posing as consumers",
+    "where": "TRITON-CORE/Research/links/2026-09-26-easyinfluencers.md",
+    "url": "https://www.instagram.com/p/Ddr0Ds3MsI5/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:keyword-comment-auto-dm-funnels-pushing-affiliate-products-w",
+   "source": "vault",
+   "query": "intel",
+   "title": "Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied income",
+   "url": "https://www.instagram.com/reel/DbPWHkDszu_/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "account",
+    "subject": "@alliecatbuildai reel (comment CLAUDE for the free tutorial)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-alliecatbuildai-reel-eromify.md (and \"The pattern\")",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 58.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "@alliecatbuildai reel (comment CLAUDE for the free tutorial)",
+    "kind": "account",
+    "status": "intel",
+    "theme": "Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied income",
+    "note": "A near 1 to 1 like to comment ratio marks the automation; CAP Code and ASA rulings make both advertiser and influencer liable",
+    "where": "TRITON-CORE/Research/links/2026-09-24-alliecatbuildai-reel-eromify.md (and \"The pattern\")",
+    "url": "https://www.instagram.com/reel/DbPWHkDszu_/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:how-account-farms-and-antidetect-cloud-phones-work-and-how-p",
+   "source": "vault",
+   "query": "intel",
+   "title": "How account farms and antidetect cloud phones work and how platforms detect them",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Butter (hellobutter.io)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 57.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Butter (hellobutter.io)",
+    "kind": "service",
+    "status": "intel",
+    "theme": "How account farms and antidetect cloud phones work and how platforms detect them",
+    "note": "The write-up already carries the platform rule dates; defender's view only",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-21:anonymous-trading-account-demos-an-unnamed-app-so-viewers-mu",
+   "source": "vault",
+   "query": "intel",
+   "title": "Anonymous trading account demos an unnamed app so viewers must DM to learn what it is",
+   "url": "https://www.instagram.com/reel/DdUmxThJ5k2/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "account",
+    "subject": "@tradewithjarvisss Instagram reel",
+    "date": "2026-09-21",
+    "where": "TRITON-CORE/Research/links/2026-09-21-tradewithjarvisss-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 56.0,
+   "thread": {
+    "date": "2026-09-21",
+    "subject": "@tradewithjarvisss Instagram reel",
+    "kind": "account",
+    "status": "intel",
+    "theme": "Anonymous trading account demos an unnamed app so viewers must DM to learn what it is",
+    "note": "Matches the Instagram to DM to Telegram pattern documented by F-Secure and Bitdefender; no firm name means no regulator warning-list check is possible",
+    "where": "TRITON-CORE/Research/links/2026-09-21-tradewithjarvisss-reel.md",
+    "url": "https://www.instagram.com/reel/DdUmxThJ5k2/"
+   }
+  },
+  {
+   "key": "vault:2026-09-21:prompt-injection-through-video-transcripts-on-screen-text-an",
+   "source": "vault",
+   "query": "intel",
+   "title": "Prompt injection through video transcripts, on-screen text and captions addressed to reading agents",
+   "url": "https://www.instagram.com/reel/Db1USzsMNnZ/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "repo",
+    "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+    "date": "2026-09-21",
+    "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 55.0,
+   "thread": {
+    "date": "2026-09-21",
+    "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+    "kind": "repo",
+    "status": "intel",
+    "theme": "Prompt injection through video transcripts, on-screen text and captions addressed to reading agents",
+    "note": "The reel caption told any reading agent to install the tool; piping a stranger's transcript into an agent with a shell is an injection surface",
+    "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md",
+    "url": "https://www.instagram.com/reel/Db1USzsMNnZ/"
+   }
+  },
+  {
+   "key": "vault:2026-09-21:free-trading-community-paid-per-lot-its-members-trade-throug",
+   "source": "vault",
+   "query": "intel",
+   "title": "Free trading community paid per lot its members trade through an offshore introducing-broker rebate",
+   "url": "https://www.instagram.com/p/DdgEcsPsrpe/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "TCFX / Trading Central FX (@amirscentral)",
+    "date": "2026-09-21",
+    "where": "TRITON-CORE/Research/links/2026-09-21-tcfx-amirscentral.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 54.0,
+   "thread": {
+    "date": "2026-09-21",
+    "subject": "TCFX / Trading Central FX (@amirscentral)",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Free trading community paid per lot its members trade through an offshore introducing-broker rebate",
+    "note": "Its own Trustpilot reply admits a required 1-lot trade triggers commission; broker discloses 75.2 percent of retail accounts lose; on the FCA Warning List twice",
+    "where": "TRITON-CORE/Research/links/2026-09-21-tcfx-amirscentral.md",
+    "url": "https://www.instagram.com/p/DdgEcsPsrpe/"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:mcp-servers-launched-with-npx-y-on-a-floating-version-tag",
+   "source": "vault",
+   "query": "intel",
+   "title": "MCP servers launched with npx -y on a floating version tag",
+   "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "tool",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 53.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "kind": "tool",
+    "status": "intel",
+    "theme": "MCP servers launched with npx -y on a floating version tag",
+    "note": "Fetches the newest release every start, so any audit is void on update; pin the version",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:launch-site-carrying-template-placeholder-social-proof",
+   "source": "vault",
+   "query": "intel",
+   "title": "Launch site carrying template placeholder social proof",
+   "url": "https://www.youtube.com/watch?v=mr4YV-9MY0Q",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "company",
+    "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 52.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+    "kind": "company",
+    "status": "intel",
+    "theme": "Launch site carrying template placeholder social proof",
+    "note": "Site claimed thousands of businesses and 1,560 reviews in 2024 template copy; revenue figure is the founder's word only",
+    "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md",
+    "url": "https://www.youtube.com/watch?v=mr4YV-9MY0Q"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:account-boosting-and-grey-market-sale-of-game-accounts-and-i",
+   "source": "vault",
+   "query": "intel",
+   "title": "Account boosting and grey-market sale of game accounts and in-game items",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "idea",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 51.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "kind": "idea",
+    "status": "intel",
+    "theme": "Account boosting and grey-market sale of game accounts and in-game items",
+    "note": "Needs handed-over credentials, breaches terms, gets accounts banned; Take-Two is suing PlayerAuctions over it",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:multi-tier-referral-scheme-paying-on-recruits-trading-revenu",
+   "source": "vault",
+   "query": "intel",
+   "title": "Multi-tier referral scheme paying on recruits' trading revenue, spread through referral links",
+   "url": "https://invoapp.com/join/tradewzay",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Invo (invoapp.com referral link)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 4)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 50.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Invo (invoapp.com referral link)",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Multi-tier referral scheme paying on recruits' trading revenue, spread through referral links",
+    "note": "Four tiers, uncapped, retroactive; whoever sends the link is paid, so promotion is optimised for recruitment",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 4)",
+    "url": "https://invoapp.com/join/tradewzay"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:homepage-logo-wall-mixing-platform-integrations-with-client-",
+   "source": "vault",
+   "query": "intel",
+   "title": "Homepage logo wall mixing platform integrations with client logos",
+   "url": "https://keza.studio/10-app-templates",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "idea",
+    "subject": "Keza Studio \"10 app templates\"",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 49.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Keza Studio \"10 app templates\"",
+    "kind": "idea",
+    "status": "intel",
+    "theme": "Homepage logo wall mixing platform integrations with client logos",
+    "note": "Instagram, Slack, X and YouTube shown beside apparent clients as social proof",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)",
+    "url": "https://keza.studio/10-app-templates"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:paid-trading-community-whose-credibility-rests-on-self-repor",
+   "source": "vault",
+   "query": "intel",
+   "title": "Paid trading community whose credibility rests on self-reported PnL screenshots and a legend it interviewed itself",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Potion Alpha (Orangie) and trader Kimchi",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 5)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 48.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Potion Alpha (Orangie) and trader Kimchi",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Paid trading community whose credibility rests on self-reported PnL screenshots and a legend it interviewed itself",
+    "note": "No working leaderboard found; the trader legend traces to an interview by the community's own founder",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 5)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:promoter-statistic-that-most-wallets-are-profitable",
+   "source": "vault",
+   "query": "intel",
+   "title": "Promoter statistic that most wallets are profitable",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "pump.fun",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 47.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "pump.fun",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Promoter statistic that most wallets are profitable",
+    "note": "True but hides size; most winners made under 500 dollars, no bot filtering, unsold bags excluded",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:lookalike-domain-colliding-with-a-known-crypto-swap-service",
+   "source": "vault",
+   "query": "intel",
+   "title": "Lookalike domain colliding with a known crypto swap service",
+   "url": "https://sideshift.app/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "sideshift.app",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 46.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "sideshift.app",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Lookalike domain colliding with a known crypto swap service",
+    "note": "Name collision can serve as bait and switch; only sideshift.ai is the swap service",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
+    "url": "https://sideshift.app/"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:gemini-omni-blocks-uploaded-video-edits-for-uk-accounts-and-",
+   "source": "vault",
+   "query": "intel",
+   "title": "Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human faces",
+   "url": "",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "tool",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 45.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "kind": "tool",
+    "status": "intel",
+    "theme": "Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human faces",
+    "note": "",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:volume-churning-on-gold-22-lots-for-a-77-cent-move-as-the-op",
+   "source": "vault",
+   "query": "intel",
+   "title": "Volume churning on gold, 22 lots for a 77 cent move, as the operator revenue via introducing-broker rebates per lot",
+   "url": "https://t.me/c/2308862086/8413",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "scheme",
+    "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 44.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+    "kind": "scheme",
+    "status": "intel",
+    "theme": "Volume churning on gold, 22 lots for a 77 cent move, as the operator revenue via introducing-broker rebates per lot",
+    "note": "Explains enormous lots on tiny moves",
+    "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+    "url": "https://t.me/c/2308862086/8413"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:low-lifetime-course-price-that-depends-on-paid-generation-ap",
+   "source": "vault",
+   "query": "intel",
+   "title": "Low lifetime course price that depends on paid generation-app subscriptions",
+   "url": "https://zupria.com/create-and-monetize-an-ai-onlyfans-model/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "scheme",
+    "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 43.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+    "kind": "scheme",
+    "status": "intel",
+    "theme": "Low lifetime course price that depends on paid generation-app subscriptions",
+    "note": "77 euros up front, but required subscriptions make the real cost about 950 euros a year",
+    "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md",
+    "url": "https://zupria.com/create-and-monetize-an-ai-onlyfans-model/"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:trading-performance-quoted-only-at-peak-prices-with-no-entry",
+   "source": "vault",
+   "query": "intel",
+   "title": "Trading performance quoted only at peak prices with no entry and exit record",
+   "url": "https://cryptonary.com/landing-100x-chaser",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Cryptonary 100x Chaser",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 42.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Cryptonary 100x Chaser",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Trading performance quoted only at peak prices with no entry and exit record",
+    "note": "No audited record, figures drift between their own bundles; a peak gain says nothing about what a subscriber actually made",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "url": "https://cryptonary.com/landing-100x-chaser"
+   }
+  },
+  {
+   "key": "vault:2026-09-21:educational-only-disclaimers-used-to-front-investment-promot",
+   "source": "vault",
+   "query": "intel",
+   "title": "Educational-only disclaimers used to front investment promotions under UK financial promotion law",
+   "url": "https://www.instagram.com/p/DdgEcsPsrpe/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "TCFX / Trading Central FX (@amirscentral)",
+    "date": "2026-09-21",
+    "where": "TRITON-CORE/Research/links/2026-09-21-tcfx-amirscentral.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 41.0,
+   "thread": {
+    "date": "2026-09-21",
+    "subject": "TCFX / Trading Central FX (@amirscentral)",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Educational-only disclaimers used to front investment promotions under UK financial promotion law",
+    "note": "The s21 FSMA test is whether a communication induces investment activity; a broker referral link does, so the disclaimer is no defence",
+    "where": "TRITON-CORE/Research/links/2026-09-21-tcfx-amirscentral.md",
+    "url": "https://www.instagram.com/p/DdgEcsPsrpe/"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:third-party-mcp-catalogue-text-injected-into-the-agent-s-too",
+   "source": "vault",
+   "query": "intel",
+   "title": "Third-party MCP catalogue text injected into the agent's tool list each session",
+   "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "tool",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 40.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
+    "kind": "tool",
+    "status": "intel",
+    "theme": "Third-party MCP catalogue text injected into the agent's tool list each session",
+    "note": "Remote-controlled text lands in context; treat it as untrusted data, a high bar on a machine with secrets",
+    "where": "TRITON-CORE/Research/links/2026-09-20-agent402.md",
+    "url": "https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:cryptoasset-promotions-to-uk-consumers-missing-mandatory-ris",
+   "source": "vault",
+   "query": "intel",
+   "title": "Cryptoasset promotions to UK consumers missing mandatory risk warnings",
+   "url": "https://cryptonary.com/landing-100x-chaser",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Cryptonary 100x Chaser",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 39.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Cryptonary 100x Chaser",
+    "kind": "service",
+    "status": "intel",
+    "theme": "Cryptoasset promotions to UK consumers missing mandatory risk warnings",
+    "note": "No FCA risk warning, cooling-off, capital-at-risk line or geoblock, all required under the October 2023 financial promotions regime",
+    "where": "TRITON-CORE/Research/links/2026-09-26-cryptonary-100x-chaser.md",
+    "url": "https://cryptonary.com/landing-100x-chaser"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:selling-database-reactivation-cold-to-small-local-businesses",
+   "source": "vault",
+   "query": "dead",
+   "title": "Selling database reactivation cold to small local businesses that have no list",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Ventures/Neptune-Marketing/research/SKOOL-DBR-COMMUNITY-2026-10-01.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 38.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Selling database reactivation cold to small local businesses that have no list",
+    "note": "",
+    "where": "TRITON-CORE/Ventures/Neptune-Marketing/research/SKOOL-DBR-COMMUNITY-2026-10-01.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:generated-creators-posing-as-customers-watermark-removal-and",
+   "source": "vault",
+   "query": "dead",
+   "title": "Generated creators posing as customers, watermark removal and engagement pods",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "AI Video Bootcamp course, judged after building a framework from it",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Systems/video-bootcamp/README.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 37.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI Video Bootcamp course, judged after building a framework from it",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Generated creators posing as customers, watermark removal and engagement pods",
+    "note": "break UK ad rules or platform rules",
+    "where": "TRITON-CORE/Systems/video-bootcamp/README.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:promptwise-as-our-platform",
+   "source": "vault",
+   "query": "dead",
+   "title": "Promptwise as our platform",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "tool",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 36.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+    "kind": "tool",
+    "status": "dead",
+    "theme": "Promptwise as our platform",
+    "note": "no public API and nothing in the method needs it",
+    "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:scraped-list-cold-voice-sms-and-email-blueprints-for-uk-pros",
+   "source": "vault",
+   "query": "dead",
+   "title": "Scraped-list cold voice, SMS and email blueprints for UK prospects",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "Automatable Free (Skool, Jono Catliff), free tier",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Education/Courses/automatable-free/DIGEST.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 35.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "Automatable Free (Skool, Jono Catliff), free tier",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Scraped-list cold voice, SMS and email blueprints for UK prospects",
+    "note": "",
+    "where": "TRITON-CORE/Education/Courses/automatable-free/DIGEST.md"
+   }
+  },
+  {
+   "key": "vault:2026-10-01:connecting-a-broker-account-to-a-telegram-ai-bot-that-claims",
+   "source": "vault",
+   "query": "dead",
+   "title": "Connecting a broker account to a Telegram AI bot that claims a 100 percent win rate",
+   "url": "https://t.me/c/2308862086/8413",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+    "date": "2026-10-01",
+    "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 34.0,
+   "thread": {
+    "date": "2026-10-01",
+    "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "Connecting a broker account to a Telegram AI bot that claims a 100 percent win rate",
+    "note": "One trade dressed as three testimonials, unregulated, operator paid on volume",
+    "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+    "url": "https://t.me/c/2308862086/8413"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:pay-per-view-clipping-through-content-rewards",
+   "source": "vault",
+   "query": "dead",
+   "title": "Pay-per-view clipping through Content Rewards",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 33.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "Pay-per-view clipping through Content Rewards",
+    "note": "The commodity volume game natejbiz warns against; income claims in the kit are unevidenced",
+    "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-27:deepfake-techniques-applied-to-real-people-in-explicit-conte",
+   "source": "vault",
+   "query": "dead",
+   "title": "Deepfake techniques applied to real people in explicit content",
+   "url": "https://zupria.com/create-and-monetize-an-ai-onlyfans-model/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+    "date": "2026-09-27",
+    "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 32.0,
+   "thread": {
+    "date": "2026-09-27",
+    "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "Deepfake techniques applied to real people in explicit content",
+    "note": "Creating sexually explicit images of a real person without consent is a UK criminal offence at creation; age verification also required since July 2025",
+    "where": "TRITON-CORE/Research/links/2026-09-27-zupria-ai-model-course.md",
+    "url": "https://zupria.com/create-and-monetize-an-ai-onlyfans-model/"
+   }
+  },
+  {
+   "key": "vault:2026-09-26:mass-clipping-of-big-personalities-for-per-view-payouts",
+   "source": "vault",
+   "query": "dead",
+   "title": "Mass clipping of big personalities for per-view payouts",
+   "url": "https://www.instagram.com/reel/DcU_MNWtIkg/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "idea",
+    "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+    "date": "2026-09-26",
+    "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 31.0,
+   "thread": {
+    "date": "2026-09-26",
+    "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
+    "kind": "idea",
+    "status": "dead",
+    "theme": "Mass clipping of big personalities for per-view payouts",
+    "note": "A volume game in a crowded 2026 market, not worth the time",
+    "where": "TRITON-CORE/Research/links/2026-09-26-natejbiz-clipping-as-a-service-reel.md",
+    "url": "https://www.instagram.com/reel/DcU_MNWtIkg/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:gifting-product-to-creators-and-hoping-they-post-about-it",
+   "source": "vault",
+   "query": "dead",
+   "title": "Gifting product to creators and hoping they post about it",
+   "url": "https://www.instagram.com/reel/DcWYAsmtqFr/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 30.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "Gifting product to creators and hoping they post about it",
+    "note": "Works only for physical consumer products; 94 percent of marketers gift but only 19 percent see meaningful advocacy, and ROI figures are vendor-published",
+    "where": "TRITON-CORE/Research/links/2026-09-24-jasontabinass-creator-seeding.md",
+    "url": "https://www.instagram.com/reel/DcWYAsmtqFr/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:auto-posting-one-asset-across-many-accounts-through-antidete",
+   "source": "vault",
+   "query": "dead",
+   "title": "Auto-posting one asset across many accounts through antidetect cloud phones",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "Butter (hellobutter.io)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 29.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Butter (hellobutter.io)",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Auto-posting one asset across many accounts through antidetect cloud phones",
+    "note": "Vendor documents the evasion; X, TikTok, Instagram and YouTube rules name the behaviour; agency risk",
+    "where": "TRITON-CORE/Research/links/2026-09-24-butter.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:running-client-material-through-a-video-service-that-trains-",
+   "source": "vault",
+   "query": "dead",
+   "title": "Running client material through a video service that trains on inputs and outputs by default",
+   "url": "https://www.instagram.com/reel/DdoiRHMmyel/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "Higgsfield AI (higgsfield.ai)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 28.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Higgsfield AI (higgsfield.ai)",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Running client material through a video service that trains on inputs and outputs by default",
+    "note": "Only Enterprise gets contractual no-training and consumer opt-out is deletion, which cannot untrain; nothing under client NDA goes through it",
+    "where": "TRITON-CORE/Research/links/2026-09-24-higgsfield.md",
+    "url": "https://www.instagram.com/reel/DdoiRHMmyel/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:cloning-a-trending-paid-community-s-copy-images-name-or-memb",
+   "source": "vault",
+   "query": "dead",
+   "title": "Cloning a trending paid community's copy, images, name or member counts",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 27.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "Cloning a trending paid community's copy, images, name or member counts",
+    "note": "Copying material is CDPA 1988, branding is trade marks or passing off, invented member counts or reviews are banned under DMCC Act 2024",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:filming-ugc-clips-yourself-for-brands-via-marketplaces",
+   "source": "vault",
+   "query": "dead",
+   "title": "Filming UGC clips yourself for brands via marketplaces",
+   "url": "https://www.instagram.com/reel/DdK9uWfRVRT/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "Paid UGC creator work (via @oliver.hustles reel)",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-paid-ugc-oliver-hustles-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 26.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Paid UGC creator work (via @oliver.hustles reel)",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "Filming UGC clips yourself for brands via marketplaces",
+    "note": "A beginner month is low hundreds, the failure mode is no briefs, and JoinBrands lists AI video at 5 dollars against a 25 dollar human floor",
+    "where": "TRITON-CORE/Research/links/2026-09-24-paid-ugc-oliver-hustles-reel.md",
+    "url": "https://www.instagram.com/reel/DdK9uWfRVRT/"
+   }
+  },
+  {
+   "key": "vault:2026-09-21:two-models-reading-the-same-video-and-reconciling-into-confi",
+   "source": "vault",
+   "query": "dead",
+   "title": "Two models reading the same video and reconciling into confirmed, single-source or conflict lines",
+   "url": "https://www.instagram.com/reel/Db1USzsMNnZ/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "repo",
+    "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+    "date": "2026-09-21",
+    "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 25.0,
+   "thread": {
+    "date": "2026-09-21",
+    "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
+    "kind": "repo",
+    "status": "dead",
+    "theme": "Two models reading the same video and reconciling into confirmed, single-source or conflict lines",
+    "note": "Neither model knows which read is right; a tutorial fails as code correct on screen and wrong in your stack, so you still run it",
+    "where": "TRITON-CORE/Research/links/2026-09-21-claude-video-skill-jens-heitmann-reel.md",
+    "url": "https://www.instagram.com/reel/Db1USzsMNnZ/"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:cold-facebook-dms-sms-and-whatsapp-to-sole-traders",
+   "source": "vault",
+   "query": "dead",
+   "title": "Cold Facebook DMs, SMS and WhatsApp to sole traders",
+   "url": "https://www.youtube.com/watch?v=aidr_Ny1rvI",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "idea",
+    "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 24.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
+    "kind": "idea",
+    "status": "dead",
+    "theme": "Cold Facebook DMs, SMS and WhatsApp to sole traders",
+    "note": "Electronic mail under PECR reg 22 needs prior consent; the videos ignore UK rules",
+    "where": "TRITON-CORE/Research/links/2026-09-20-first-ai-agency-client-videos.md",
+    "url": "https://www.youtube.com/watch?v=aidr_Ny1rvI"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:the-booking-and-lead-capture-widget-itself-as-a-product",
+   "source": "vault",
+   "query": "dead",
+   "title": "The booking and lead-capture widget itself as a product",
+   "url": "https://www.youtube.com/watch?v=mr4YV-9MY0Q",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "company",
+    "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 23.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
+    "kind": "company",
+    "status": "dead",
+    "theme": "The booking and lead-capture widget itself as a product",
+    "note": "Weeks of work with AI tooling and already cloned by Leva Relay, Chime Labs, LANA, Johnni.ai, Fully Booked",
+    "where": "TRITON-CORE/Research/links/2026-09-20-avenue-widget-starter-story.md",
+    "url": "https://www.youtube.com/watch?v=mr4YV-9MY0Q"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:real-money-betting-site-on-video-game-outcomes",
+   "source": "vault",
+   "query": "dead",
+   "title": "Real-money betting site on video game outcomes",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "idea",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 22.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
+    "kind": "idea",
+    "status": "dead",
+    "theme": "Real-money betting site on video game outcomes",
+    "note": "Criminal in the UK without a Gambling Commission licence; the FUT Galaxy prosecution is the precedent",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (sections 1 to 3)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:copy-trading-crypto-perpetual-futures-on-hyperliquid",
+   "source": "vault",
+   "query": "dead",
+   "title": "Copy-trading crypto perpetual futures on Hyperliquid",
+   "url": "https://invoapp.com/join/tradewzay",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "Invo (invoapp.com referral link)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 4)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 21.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Invo (invoapp.com referral link)",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Copy-trading crypto perpetual futures on Hyperliquid",
+    "note": "Crypto derivatives banned for sale to UK retail since January 2021; unregulated, no FSCS",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 4)",
+    "url": "https://invoapp.com/join/tradewzay"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:swapping-a-small-chat-model-for-a-typed-decision-model-by-as",
+   "source": "vault",
+   "query": "dead",
+   "title": "Swapping a small chat model for a typed-decision model by asking the same single question",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "tool",
+    "subject": "Jev AI (TypeSafe AI)",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 20.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Jev AI (TypeSafe AI)",
+    "kind": "tool",
+    "status": "dead",
+    "theme": "Swapping a small chat model for a typed-decision model by asking the same single question",
+    "note": "Independent 2,000-email test scored 62.6 percent against Haiku at 81.3; speed and price are real but accuracy fell, and Haiku costs pennies at low volume",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 2), follow-up in links/2026-09-22-jev-ai-jack-roberts-video.md"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:app-planning-documents-sold-as-templates",
+   "source": "vault",
+   "query": "dead",
+   "title": "App planning documents sold as templates",
+   "url": "https://keza.studio/10-app-templates",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "idea",
+    "subject": "Keza Studio \"10 app templates\"",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 19.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "Keza Studio \"10 app templates\"",
+    "kind": "idea",
+    "status": "dead",
+    "theme": "App planning documents sold as templates",
+    "note": "Ten generic PRD-style files, no code; free starters like shadcn/ui, Vercel templates and Expo give working code",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 5)",
+    "url": "https://keza.studio/10-app-templates"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:sniping-bots-and-copy-trading-on-new-memecoin-launches",
+   "source": "vault",
+   "query": "dead",
+   "title": "Sniping bots and copy trading on new memecoin launches",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "pump.fun",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 18.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "pump.fun",
+    "kind": "service",
+    "status": "dead",
+    "theme": "Sniping bots and copy trading on new memecoin launches",
+    "note": "Zero-sum latency race against 200 plus funded bots; copiers become the copied wallet's exit liquidity",
+    "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)"
+   }
+  },
+  {
+   "key": "vault:2026-09-20:no-kyc-crypto-swap-services-as-a-way-to-skip-identity-checks",
+   "source": "vault",
+   "query": "dead",
+   "title": "No-KYC crypto swap services as a way to skip identity checks",
+   "url": "https://sideshift.app/",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "service",
+    "subject": "sideshift.app",
+    "date": "2026-09-20",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 17.0,
+   "thread": {
+    "date": "2026-09-20",
+    "subject": "sideshift.app",
+    "kind": "service",
+    "status": "dead",
+    "theme": "No-KYC crypto swap services as a way to skip identity checks",
+    "note": "Exchanges freeze deposits routed through them and the service itself asks for ID to release flagged swaps",
+    "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
+    "url": "https://sideshift.app/"
+   }
+  },
+  {
+   "key": "vault:2026-09-24:a-community-whose-product-is-teaching-members-to-sell-the-sa",
+   "source": "vault",
+   "query": "dead",
+   "title": "A community whose product is teaching members to sell the same community",
+   "url": "",
+   "meta": {
+    "vault_status": "dead",
+    "kind": "scheme",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 16.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "kind": "scheme",
+    "status": "dead",
+    "theme": "A community whose product is teaching members to sell the same community",
+    "note": "Edges into pyramid promotional scheme territory, a banned practice",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+   }
+  },
+  {
+   "key": "hn:49911500",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Open-source model routing for coding agents at Astra-level performance",
+   "url": "https://news.ycombinator.com/item?id=49911500",
+   "hn_url": "https://news.ycombinator.com/item?id=49911500",
+   "meta": {
+    "points": 70,
+    "comments": 20,
+    "created": "2026-09-30T16:58:24Z"
+   },
+   "body": "A few months ago we started building a model router for coding agents because we thought we could outperform any single model with an ensemble approach. Recently we’ve achieved that milestone and I want to talk about how we did it. First of all, a quick explanation: the Weave Router ( https://github.com/weave-os/router ) plugs into any coding agent (e.g. Claude Code or Codex) and intelligently switches between LLMs. So, for example, Astra handles tricky debugging or complex system design tasks, and Deepseek v4 Flash handles simple frontend updates. What we’re announcing today is our new routing model, which we’re calling Weave Router 2.0. We benchmarked 2.0 against GPT-6 Astra on Terminal Bench 4.0 and SWE Atlas. On both benchmarks, the router had equivalent pass rates. On Terminal Bench, the router hit 52% of Astra’s cost, and completed tasks 2.2x faster. On SWE Atlas, the router cost 54% as much as Astra and ran 2.5x faster. (Full results on our website at https://weaveos.com/router !) It turns out training a model to route effectively - taking into consideration model capabilities, costs, cache awareness, and more - is a really hard problem! I want to talk about three ways we were able to improve so much over the last few months: 1) a new architecture, 2) larger training data set size, and 3) smarter cache-eviction impact calculation. 1) a new architecture. Our initial approach used an RL model without many priors. While RL is still an important part of the story, the cost",
+   "score": 5.784941095903027
+  },
+  {
+   "key": "hn:49910328",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Parrot – Open-Source Smart Meeting Recorder with Co-Pilot on Mac",
+   "url": "https://openparrot.app",
+   "hn_url": "https://news.ycombinator.com/item?id=49910328",
+   "meta": {
+    "points": 35,
+    "comments": 29,
+    "created": "2026-09-30T15:33:12Z"
+   },
+   "body": "Hello Hacker News I am Uygar, I am an entrepreneur from London. I run my businesses on calls everyday, customers, partners and suppliers. And i have a horrible memory i forgot things. So months ago with the help of Claude i have built Parrot. I have designed and coded for my work and what i need. An to be honest worked very well and helped me alot. Parrot records what your mac hears and everything stays in your computer if you use local models, no account, no API calls. There is something called copilot which made my life easier, you can upload your files and when parrot hears that question on the screen recommends the answer. Which i believe very handy. If you want to make it smarter and dont mind cloud you can hook up your Claude API and Deepgram account, that gives super powers to Parrot. You still keep it locally but eventually you need to make API calls. So local or cloud totally up to you. Then after months of thinking i have decided share it as open source and this is my first open source project, so please go easy on me :) No account, no membership, open source and free. Code: https://github.com/turantekin/Parrot This project made me so excited and really would like to share with you guys so i hope can help you too. Again, i am new so go easy on me and if you have any feedback i would like to hear. Thank you Uygar",
+   "score": 5.284117629287188
+  },
+  {
+   "key": "hn:49886422",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Corral – Kill every command your agent starts",
+   "url": "https://github.com/Cardinal44/corral",
+   "hn_url": "https://news.ycombinator.com/item?id=49886422",
+   "meta": {
+    "points": 19,
+    "comments": 6,
+    "created": "2026-09-29T00:35:05Z"
+   },
+   "body": "This summer I got to intern on the backend of an AI agent and I noticed that it would run commands like tail -f or some random background jobs and exit without terminating any of these. I got curious and looked up how Claude Code handles stuff like this, and it turns out they have similar problems. There are issues about background processes from the Bash tool not getting cleaned up when the session ends, and one where a timeout sends SIGTERM to the whole process group and ends up killing Claude Code itself. Most runners only kill the process they started, so anything that double forks, runs in the background, or keeps stdout open either survives or makes the runner hang. Corral was me attempting to make a fix for this problem, while also trying to learn about processes and signals in Linux. You run corral --wall 30s -- yourcommand and by the time it's done, nothing it started should be running. The command gets its own session so killing it can't kill you, and there's a mode where it runs in its own cgroup so the whole tree gets killed at once, including processes that may have changed sessions or process groups. If there's no cgroup available it tracks the tree through /proc instead (this is a bit weaker, it still catches processes that changed sessions once their parent dies, but it can't kill anything running as a different user or anything handed off to another service like systemd), and if it can't confirm everything is dead it exits with 120. Would love any feedback an",
+   "score": 3.9686873480816476
+  },
+  {
+   "key": "hn:49911995",
+   "source": "hn",
+   "query": "local llm benchmark",
+   "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+   "url": "https://github.com/magnitudedev/magnitude",
+   "hn_url": "https://news.ycombinator.com/item?id=49911995",
+   "meta": {
+    "points": 191,
+    "comments": 96,
+    "created": "2026-09-30T17:37:40Z"
+   },
+   "body": "Hey HN, Anders and Tom here. We're building Magnitude, an inference engine for agents that optimizes itself to run as fast as possible on your hardware. It works on Mac, Linux, and Windows on any hardware and is up to 2x faster than llama.cpp. We're both software engineers and previously built an open source browser agent to 4k+ GH stars and 100k+ downloads. We increasingly wanted to run it on local models, but found that no inference engine worked for our use case. Inference engines today all make a performance tradeoff. They are either: - Built for batched inference on datacenter hardware at the cost of single-session performance (vLLM, SGLang) - Designed for broad compatibility instead of optimizing for specific hardware (llama.cpp, Ollama) - Specialized for specific hardware or models but lacking engine completeness (oMLX, ds4) Plus none of them are designed for running agents locally. Sessions are long, several often run at once, and you still want to use your computer for other things. Magnitude is built for maximum performance on your hardware and running local agents: - On-device compilation and tuning: Kernels are written with flexible parameters that are tuned on your actual device before the model runs. This gives you broad hardware compatibility with the same performance ceiling as hardware-specific kernels. - Focus on best architectures: We write our tunable, highly efficient kernels for the most popular open-weights families. This allows us to achieve and surpas",
+   "score": 7.544850861279473
+  },
+  {
+   "key": "hn:49909980",
+   "source": "hn",
+   "query": "open data api",
+   "title": "Show HN: An old school forum on an open protocol – your identity is a keypair",
+   "url": "https://nostr-proto.org/",
+   "hn_url": "https://news.ycombinator.com/item?id=49909980",
+   "meta": {
+    "points": 17,
+    "comments": 2,
+    "created": "2026-09-30T15:05:17Z"
+   },
+   "body": "I'm a bit old-fashioned when it comes to online discussions. I like good, slow, asynchronous discussions. Readable and searchable archives are essential. Most communities have abandoned forums in favor of group chats. With the rise in popularity of Discord and Telegram groups, the same questions get posted over and over, and good answers get lost in a sea of chats. For this reason I created Squalk ( https://github.com/dtonon/squalk ), a classic forum built on the Nostr open protocol. https://nostr-proto.org is the pilot community, about the protocol itself. Nostr, as open protocol, offers some interesting points: * There are no classic accounts controller by a central entity; you sign in with a cryptographic keypair, and your identity and post history are portable: the same key works on every other Nostr app. * The forum is just a view over data hosted by a \"relay\", that is actually a very simple server. Any other client that speaks the same spec, like Flotilla or Nostrord, can read and write the same conversations. If my website dies, the community and its history do not. * A complex web server is optional. Squalk builds either as a static SPA or as a server rendered Node app from the same codebase (SvelteKit); the SSR mode exists so threads are crawlable and land in search engines, which is half the point of a forum. I admit it, each room still has a chat sidebar. I started pointing out that chat eats knowledge, but the trick is deciding what it is allowed to eat. Quick and",
+   "score": 3.4396779022302195
+  },
+  {
+   "key": "hn:49909913",
+   "source": "hn",
+   "query": "open data api",
+   "title": "Show HN: Strata – an expressive semantic layer that can say no to your LLM",
+   "url": "https://strata.do/",
+   "hn_url": "https://news.ycombinator.com/item?id=49909913",
+   "meta": {
+    "points": 21,
+    "comments": 15,
+    "created": "2026-09-30T14:59:57Z"
+   },
+   "body": "Hello HN, I'm Ajo and I built Strata. I spent 4 years at Netflix solving self service for non-technical business users. I think I cracked it with my unique approach to semantic layer design. The key challenge is balancing expressiveness with ease of use for our non technical colleagues. It just so happens that focus made it work pretty well with LLMs too. Strata is a full stack solution. It includes a semantic layer, dashboards, subscriptions, and google sheets exports. All of it can be done view agent conversation or via MCP. Some key concepts and features: - Names are strict. Only one thing called Revenue can exist in a project. If revenue is mapped to multiple tables, the query grain plus speed will decide table. - Strict naming conventions lends itself to enabling Automatic data blending acrros fact domains. - Partition and Aggregate aware semantic routing. This allows you to load a portion of your data into a faster compute engine like Druid or ClickHose, while keeping full history in trino or something cheaper. The query engine will choose the faster tier if the query can be resolved there. - Complex measures: out of the box support for snapshot, LOD (include/exclude), Compound, and Auto leveling compound measures. - On top of the semantic layer users can create custom calculations that span fact domains. - Another interesting feature is the ability to create cohorts and apply as filter to an entire query or single measure within a query. We are deliberately not buildin",
+   "score": 4.477336814478207
+  },
+  {
+   "key": "hn:49896757",
+   "source": "hn",
+   "query": "car data",
+   "title": "Show HN: A working 3D model of an Enigma machine",
+   "url": "https://enigma.design",
+   "hn_url": "https://news.ycombinator.com/item?id=49896757",
+   "meta": {
+    "points": 107,
+    "comments": 40,
+    "created": "2026-09-29T17:15:56Z"
+   },
+   "body": "I watched the excellent Veritasium video [1] on the Enigma machine, and watched the full animation by Jared Owen [2], but was still a bit confused on how the inner mechanics of an Enigma machine work. I used Astra to build out the inner components through a combination of reference images, writing out hundreds of extremely detailed prompts, and building my own inspection tools to ensure that every part is sized and positioned in a historically accurate way. It's still a work in progress, but would love any feedback on the experience so far! 1. https://www.youtube.com/watch?v=JsBZOcqZerk 2. https://www.youtube.com/watch?v=ybkkiGtJmkM",
+   "score": 6.538917260476374
+  },
+  {
+   "key": "gh:louis-cfm/coucou",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "Louis-CFM/coucou: A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows) and keeps an eye on your Claude Code sessions.",
+   "url": "https://github.com/Louis-CFM/coucou",
+   "repo": "Louis-CFM/coucou",
+   "meta": {
+    "stars": 2443,
+    "created": "2026-09-27",
+    "pushed": "2026-10-01",
+    "language": "Swift",
+    "topics": [
+     "ai-agents",
+     "anthropic",
+     "claude",
+     "claude-code",
+     "dynamic-island",
+     "macos",
+     "macos-app",
+     "menubar-app"
+    ]
+   },
+   "body": "",
+   "score": 7.8013913202914855
+  },
+  {
+   "key": "gh:dzhng/jevgrep",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "dzhng/jevgrep: Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
+   "url": "https://github.com/dzhng/jevgrep",
+   "repo": "dzhng/jevgrep",
+   "meta": {
+    "stars": 1996,
+    "created": "2026-09-26",
+    "pushed": "2026-10-01",
+    "language": "TypeScript",
+    "topics": [
+     "ai-sdk",
+     "claude-code",
+     "cli",
+     "code-search",
+     "codex",
+     "coding-agents",
+     "context-retrieval",
+     "developer-tools"
+    ]
+   },
+   "body": "",
+   "score": 7.599401333415815
+  },
+  {
+   "key": "gh:rehan-remade/universal-modder",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "rehan-remade/universal-modder: Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+   "url": "https://github.com/rehan-remade/universal-modder",
+   "repo": "rehan-remade/universal-modder",
+   "meta": {
+    "stars": 1517,
+    "created": "2026-09-30",
+    "pushed": "2026-09-30",
+    "language": "Python",
+    "topics": [
+     "age-of-empires",
+     "claude-code",
+     "claude-code-plugin",
+     "fal",
+     "game-assets",
+     "game-modding",
+     "mcp",
+     "modding"
+    ]
+   },
+   "body": "",
+   "score": 7.325148957955575
+  },
+  {
+   "key": "gh:nanaism/yomiyasu",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "nanaism/yomiyasu: AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
+   "url": "https://github.com/nanaism/yomiyasu",
+   "repo": "nanaism/yomiyasu",
+   "meta": {
+    "stars": 918,
+    "created": "2026-09-30",
+    "pushed": "2026-10-01",
+    "language": "Python",
+    "topics": [
+     "agent-skills",
+     "ai-writing",
+     "antigravity",
+     "claude-code",
+     "codex",
+     "cursor",
+     "gemini",
+     "japanese"
+    ]
+   },
+   "body": "",
+   "score": 6.823286122355687
+  },
+  {
+   "key": "gh:echris6/motion-video-kit",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "echris6/motion-video-kit: Claude Code skill kit for premium AI-assisted business videos: independent critic loop, motion principles from 28 launch films, quality bar, sound design, business offers, Three.js patterns, scripts",
+   "url": "https://github.com/echris6/motion-video-kit",
+   "repo": "echris6/motion-video-kit",
+   "meta": {
+    "stars": 872,
+    "created": "2026-09-27",
+    "pushed": "2026-09-28",
+    "language": "Python",
+    "topics": []
+   },
+   "body": "",
+   "score": 6.771935555839602
+  },
+  {
+   "key": "gh:lemomo-ai/lemo-opuscar",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "lemomo-ai/lemo-opuscar: 43 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5. Pick a style, bring your own story, and let your agent direct. | Opus5.5 x 43 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南",
+   "url": "https://github.com/lemomo-ai/lemo-opuscar",
+   "repo": "lemomo-ai/lemo-opuscar",
+   "meta": {
+    "stars": 760,
+    "created": "2026-09-26",
+    "pushed": "2026-09-30",
+    "language": "JavaScript",
+    "topics": [
+     "ai-agents",
+     "ai-video",
+     "animation",
+     "canvas",
+     "claude",
+     "claude-code",
+     "creative-coding",
+     "ffmpeg"
+    ]
+   },
+   "body": "",
+   "score": 6.634633357861686
+  },
+  {
+   "key": "gh:edenfunf/reelmimic",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "edenfunf/reelmimic: Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+   "url": "https://github.com/edenfunf/reelmimic",
+   "repo": "edenfunf/reelmimic",
+   "meta": {
+    "stars": 685,
+    "created": "2026-09-28",
+    "pushed": "2026-10-01",
+    "language": "JavaScript",
+    "topics": [
+     "2d-animation",
+     "ai-agents",
+     "ai-video",
+     "animation",
+     "claude-code",
+     "codex",
+     "multi-agent",
+     "style-transfer"
+    ]
+   },
+   "body": "",
+   "score": 6.530877627725885
+  },
+  {
+   "key": "gh:agentsystemlabs/agent-office",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "AgentSystemLabs/agent-office: A cartoon 3D office where your team hires Claude Code workers at desks, shares live terminals, talks over voice, and tracks GitHub issues and PRs.",
+   "url": "https://github.com/AgentSystemLabs/agent-office",
+   "repo": "AgentSystemLabs/agent-office",
+   "meta": {
+    "stars": 477,
+    "created": "2026-09-26",
+    "pushed": "2026-09-30",
+    "language": "TypeScript",
+    "topics": []
+   },
+   "body": "",
+   "score": 6.169610732491456
+  },
+  {
+   "key": "gh:capturegrubenchant/solidworks",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "CaptureGrubEnchant/SolidWorks: SolidWorks MCP Server connects an AI assistant to a running SolidWorks instance. Sketch, extrude, fillet, export STEP/STL, generate macros.",
+   "url": "https://github.com/CaptureGrubEnchant/SolidWorks",
+   "repo": "CaptureGrubEnchant/SolidWorks",
+   "meta": {
+    "stars": 182,
+    "created": "2026-09-25",
+    "pushed": "2026-10-01",
+    "language": "TypeScript",
+    "topics": [
+     "3d-modelling",
+     "3d-modelling-software",
+     "3d-rendering",
+     "3d-rendering-software",
+     "3d-rendering-tools",
+     "3dexperience",
+     "3dprinting",
+     "cad-tools"
+    ]
+   },
+   "body": "",
+   "score": 5.209486152841421
+  },
+  {
+   "key": "gh:admte/orc-claude-plugin",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "admte/orc-claude-plugin: Claude plugin for the ORC8R Cloud MCP server",
+   "url": "https://github.com/admte/orc-claude-plugin",
+   "repo": "admte/orc-claude-plugin",
+   "meta": {
+    "stars": 74,
+    "created": "2026-09-26",
+    "pushed": "2026-09-27",
+    "language": null,
+    "topics": []
+   },
+   "body": "",
+   "score": 4.31748811353631
+  },
+  {
+   "key": "gh:breakstageaxe61/genspark-claw",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "breakstageaxe61/genspark-claw: 🦀⚡ Community skill pack & CLI for Genspark Claw, OpenClaw & Hermes agents — 5 production-ready SKILL.md skills (deep research, reports, slides, browser automation, AI call prep), zero-dependency Node.js installer, MCP server, one-line install",
+   "url": "https://github.com/breakstageaxe61/genspark-claw",
+   "repo": "breakstageaxe61/genspark-claw",
+   "meta": {
+    "stars": 39,
+    "created": "2026-09-26",
+    "pushed": "2026-09-26",
+    "language": "JavaScript",
+    "topics": [
+     "agent-skills",
+     "ai-agent",
+     "ai-assistants",
+     "ai-tools",
+     "awesome-genspark",
+     "genspark-agent",
+     "genspark-claw",
+     "genspark-mcp"
+    ]
+   },
+   "body": "",
+   "score": 3.6888794541139363
+  },
+  {
+   "key": "gh:graygnatconsole/mcp-audit-tool",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "graygnatconsole/mcp-audit-tool: 🛡️ Security audit CLI for Model Context Protocol (MCP) servers — scan AI agent configs for tool poisoning, rug pulls, hardcoded secrets, command injection & supply-chain risks. Pure Python, SARIF + CI ready.",
+   "url": "https://github.com/graygnatconsole/mcp-audit-tool",
+   "repo": "graygnatconsole/mcp-audit-tool",
+   "meta": {
+    "stars": 38,
+    "created": "2026-09-26",
+    "pushed": "2026-09-26",
+    "language": "Python",
+    "topics": [
+     "agent-security",
+     "agentic-ai",
+     "ai-security",
+     "cursor",
+     "llm-guardrails",
+     "llm-security",
+     "mcp",
+     "mcp-audit"
+    ]
+   },
+   "body": "",
+   "score": 3.6635616461296463
+  },
+  {
+   "key": "gh:springvoiceswell/semrush-ai-tool",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "springvoiceswell/semrush-ai-tool: Semrush SEO AI-powered analysis tool MCP server & CLI for keyword research, domain analytics, backlink analysis",
+   "url": "https://github.com/springvoiceswell/semrush-ai-tool",
+   "repo": "springvoiceswell/semrush-ai-tool",
+   "meta": {
+    "stars": 36,
+    "created": "2026-09-25",
+    "pushed": "2026-09-26",
+    "language": "JavaScript",
+    "topics": [
+     "ai-seo",
+     "backlink-analysis",
+     "claude-desktop",
+     "cursor-pro",
+     "semrush",
+     "semrush-alternative",
+     "semrush-api",
+     "semrush-features"
+    ]
+   },
+   "body": "",
+   "score": 3.6109179126442243
+  },
+  {
+   "key": "gh:machina-sports/sports-skills",
+   "source": "github",
+   "query": "football prediction pushed:>{since} stars:>10",
+   "title": "machina-sports/sports-skills: Open-source agent skills for live sports data and prediction markets. Football, F1, Kalshi, Polymarket. Zero API keys. SKILL.md format.",
+   "url": "https://github.com/machina-sports/sports-skills",
+   "repo": "machina-sports/sports-skills",
+   "meta": {
+    "stars": 240,
+    "created": "2026-02-16",
+    "pushed": "2026-09-29",
+    "language": "Python",
+    "topics": []
+   },
+   "body": "",
+   "score": 5.484796933490655
+  },
+  {
+   "key": "gh:rinomakin21/w5-football-prediction",
+   "source": "github",
+   "query": "football prediction pushed:>{since} stars:>10",
+   "title": "rinomakin21/w5-football-prediction: ⚽ Predict football match outcomes using the W-5 Multi-Agent AI Consensus Framework, achieving high accuracy with a blend of AI and machine learning techniques.",
+   "url": "https://github.com/rinomakin21/w5-football-prediction",
+   "repo": "rinomakin21/w5-football-prediction",
+   "meta": {
+    "stars": 25,
+    "created": "2023-06-13",
+    "pushed": "2026-10-01",
+    "language": "Python",
+    "topics": [
+     "ai-consensus",
+     "deep-learning",
+     "ensemble-learning",
+     "football-prediction",
+     "large-language-models",
+     "llm",
+     "machine-learning",
+     "multi-agent-systems"
+    ]
+   },
+   "body": "",
+   "score": 3.258096538021482
+  },
+  {
+   "key": "gh:cbratkovics/fantasy-football-ai",
+   "source": "github",
+   "query": "football prediction pushed:>{since} stars:>10",
+   "title": "cbratkovics/fantasy-football-ai: Weekly NFL fantasy point predictions from nflverse data. As-of feature engineering, temporally validated RF models vs a causal baseline, GMM draft tiers, artifact-backed evaluation with rolling-origin folds, autonomous weekly scoring via GitHub Actions. FastAPI on Hugging Face + Next.js on Vercel, $0/month.",
+   "url": "https://github.com/cbratkovics/fantasy-football-ai",
+   "repo": "cbratkovics/fantasy-football-ai",
+   "meta": {
+    "stars": 16,
+    "created": "2025-07-28",
+    "pushed": "2026-09-29",
+    "language": "Python",
+    "topics": [
+     "fantasy-football",
+     "fastapi",
+     "mlops",
+     "nflverse",
+     "python",
+     "sports-analysis",
+     "sports-analytics",
+     "time-series"
+    ]
+   },
+   "body": "",
+   "score": 2.833213344056216
+  },
+  {
+   "key": "gh:chainstacklabs/pumpfun-bonkfun-bot",
+   "source": "github",
+   "query": "solana pump.fun pushed:>{since} stars:>10",
+   "title": "chainstacklabs/pumpfun-bonkfun-bot: A fully functional pump.fun / letsbonk.fun trading and sniping bot not relying on any 3rd party APIs",
+   "url": "https://github.com/chainstacklabs/pumpfun-bonkfun-bot",
+   "repo": "chainstacklabs/pumpfun-bonkfun-bot",
+   "meta": {
+    "stars": 1019,
+    "created": "2024-09-09",
+    "pushed": "2026-09-28",
+    "language": "Python",
+    "topics": [
+     "bonkbot",
+     "bonkfun",
+     "letsbonk",
+     "letsbonkfun",
+     "pumpdotfun",
+     "sniper",
+     "solana",
+     "trading"
+    ]
+   },
+   "body": "",
+   "score": 6.927557906278317
+  },
+  {
+   "key": "gh:knightlightst/solana-copytrading-bot",
+   "source": "github",
+   "query": "solana pump.fun pushed:>{since} stars:>10",
+   "title": "knightlightst/solana-copytrading-bot: copytrading bot for the Solana blockchain. It monitors transactions like swaps, transfers, and NFTs across platforms like Raydium, PUMP.FUN, Photon, BonkBot, and more — with support for sniping, liquidity management, and token creation filters.",
+   "url": "https://github.com/knightlightst/solana-copytrading-bot",
+   "repo": "knightlightst/solana-copytrading-bot",
+   "meta": {
+    "stars": 49,
+    "created": "2025-03-24",
+    "pushed": "2026-09-29",
+    "language": "Rust",
+    "topics": [
+     "amm",
+     "arbitragebot",
+     "blockchain",
+     "crypto",
+     "moonshot",
+     "pumpfun-buy-bot",
+     "raydium-sinper",
+     "solana-jupiter"
+    ]
+   },
+   "body": "",
+   "score": 3.912023005428146
+  },
+  {
+   "key": "gh:xu-shawn/lichess-bots-blocklist",
+   "source": "github",
+   "query": "lichess bot pushed:>{since} stars:>5",
+   "title": "xu-shawn/lichess-bots-blocklist: List of Lichess BOT accounts running Stockfish & other strong engine clones",
+   "url": "https://github.com/xu-shawn/lichess-bots-blocklist",
+   "repo": "xu-shawn/lichess-bots-blocklist",
+   "meta": {
+    "stars": 18,
+    "created": "2025-05-04",
+    "pushed": "2026-10-01",
+    "language": "C++",
+    "topics": []
+   },
+   "body": "",
+   "score": 2.9444389791664403
+  },
+  {
+   "key": "gh:theyobots/libot-lb",
+   "source": "github",
+   "query": "lichess bot pushed:>{since} stars:>5",
+   "title": "TheYoBots/libot-lb: A leaderboard for all Lichess Bots",
+   "url": "https://github.com/TheYoBots/libot-lb",
+   "repo": "TheYoBots/libot-lb",
+   "meta": {
+    "stars": 8,
+    "created": "2023-07-12",
+    "pushed": "2026-10-01",
+    "language": "HTML",
+    "topics": []
+   },
+   "body": "",
+   "score": 2.1972245773362196
+  },
+  {
+   "key": "gh:heiaha/asynclio-bot",
+   "source": "github",
+   "query": "lichess bot pushed:>{since} stars:>5",
+   "title": "Heiaha/asyncLio-bot: A bridge between UCI chess engines and Lichess.",
+   "url": "https://github.com/Heiaha/asyncLio-bot",
+   "repo": "Heiaha/asyncLio-bot",
+   "meta": {
+    "stars": 7,
+    "created": "2022-07-06",
+    "pushed": "2026-09-25",
+    "language": "Python",
+    "topics": [
+     "chess",
+     "chess-engine",
+     "lichess",
+     "lichess-api",
+     "lichess-bot",
+     "python"
+    ]
+   },
+   "body": "",
+   "score": 2.0794415416798357
+  },
+  {
+   "key": "gh:nexmoe/vidbee",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "nexmoe/VidBee: Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
+   "url": "https://github.com/nexmoe/VidBee",
+   "repo": "nexmoe/VidBee",
+   "meta": {
+    "stars": 10731,
+    "created": "2025-10-22",
+    "pushed": "2026-09-30",
+    "language": "TypeScript",
+    "topics": [
+     "downloader",
+     "facebook",
+     "tiktok",
+     "twitter",
+     "youtube"
+    ]
+   },
+   "body": "",
+   "score": 9.280985211545515
+  },
+  {
+   "key": "gh:nateherkai/hyperframes-student-kit",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "nateherkai/hyperframes-student-kit: Edit videos, reels, and YouTube Shorts with Codex or Claude Code. 14 skills, transcript-driven cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates.",
+   "url": "https://github.com/nateherkai/hyperframes-student-kit",
+   "repo": "nateherkai/hyperframes-student-kit",
+   "meta": {
+    "stars": 1133,
+    "created": "2026-04-18",
+    "pushed": "2026-09-28",
+    "language": "HTML",
+    "topics": [
+     "claude-code",
+     "codex",
+     "hyperframes",
+     "motion-graphics",
+     "reels",
+     "video-editing"
+    ]
+   },
+   "body": "",
+   "score": 7.033506484287697
+  },
+  {
+   "key": "gh:zeropointrepo/youtube-skills",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "ZeroPointRepo/youtube-skills: YouTube Transcript API skills for AI agents. Get transcripts, search videos, browse channels. Works with OpenClaw, Hermes Agent, and other agent runtimes.",
+   "url": "https://github.com/ZeroPointRepo/youtube-skills",
+   "repo": "ZeroPointRepo/youtube-skills",
+   "meta": {
+    "stars": 996,
+    "created": "2026-02-01",
+    "pushed": "2026-09-29",
+    "language": null,
+    "topics": [
+     "agent-skills",
+     "clawdbot",
+     "hermes-agent",
+     "openclaw",
+     "youtube-search",
+     "youtube-transcript"
+    ]
+   },
+   "body": "",
+   "score": 6.904750769961838
+  },
+  {
+   "key": "gh:zlxlabs/videotranscriptapi",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "zlxlabs/VideoTranscriptAPI: 基于 Python 3.11+ FastAPI 的异步音视频转录服务，支持 YouTube、小宇宙、Bilibili、视频号等多平台解析，本地部署可实现说话人区分转录，调用 LLM 完成文本智能校对与内容总结，配套网页端查看 / 导出功能，支持企业微信消息推送",
+   "url": "https://github.com/zlxlabs/VideoTranscriptAPI",
+   "repo": "zlxlabs/VideoTranscriptAPI",
+   "meta": {
+    "stars": 219,
+    "created": "2025-04-27",
+    "pushed": "2026-10-01",
+    "language": "Python",
+    "topics": [
+     "personal"
+    ]
+   },
+   "body": "",
+   "score": 5.393627546352362
+  },
+  {
+   "key": "gh:ericmmartin/youtube-transcript-plus",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js package designed to fetch and process YouTube video transcripts (captions).",
+   "url": "https://github.com/ericmmartin/youtube-transcript-plus",
+   "repo": "ericmmartin/youtube-transcript-plus",
+   "meta": {
+    "stars": 162,
+    "created": "2025-01-19",
+    "pushed": "2026-10-01",
+    "language": "TypeScript",
+    "topics": [
+     "proxy",
+     "transcript",
+     "youtube",
+     "youtube-captions"
+    ]
+   },
+   "body": "",
+   "score": 5.093750200806762
+  },
+  {
+   "key": "gh:timmacy/youtubealchemy",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "TimMacy/YouTubeAlchemy: This userscript for YouTube offers 250+ layout changes and features such as tab view, speed control, miniplayer support, export transcripts, square design, auto-theater mode, and much more—all easily customizable via settings panels.",
+   "url": "https://github.com/TimMacy/YouTubeAlchemy",
+   "repo": "TimMacy/YouTubeAlchemy",
+   "meta": {
+    "stars": 104,
+    "created": "2024-12-24",
+    "pushed": "2026-09-30",
+    "language": "JavaScript",
+    "topics": [
+     "accessibility",
+     "browser-extension",
+     "chrome",
+     "client-side",
+     "customizable",
+     "dark-mode",
+     "firefox",
+     "language-selector"
+    ]
+   },
+   "body": "",
+   "score": 4.653960350157523
+  },
+  {
+   "key": "gh:guimatheus92/mcp-video-analyzer",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "guimatheus92/mcp-video-analyzer: MCP server that turns any video — YouTube, Instagram, TikTok, Loom, X, Vimeo, direct URLs, local files — into transcripts, key frames, OCR text, and metadata for AI agents.",
+   "url": "https://github.com/guimatheus92/mcp-video-analyzer",
+   "repo": "guimatheus92/mcp-video-analyzer",
+   "meta": {
+    "stars": 84,
+    "created": "2026-03-09",
+    "pushed": "2026-09-29",
+    "language": "TypeScript",
+    "topics": [
+     "ai",
+     "claude",
+     "frames",
+     "instagram",
+     "loom",
+     "mcp",
+     "mcp-server",
+     "model-context-protocol"
+    ]
+   },
+   "body": "",
+   "score": 4.442651256490317
+  },
+  {
+   "key": "gh:houseofloops/headwater",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "HouseofLoops/headwater: One self-hosted API for Google Maps, News, Trends and Autocomplete, plus YouTube transcripts. Normalised JSON, no per-call vendor pricing, runs in Docker.",
+   "url": "https://github.com/HouseofLoops/headwater",
+   "repo": "HouseofLoops/headwater",
+   "meta": {
+    "stars": 65,
+    "created": "2024-10-30",
+    "pushed": "2026-09-29",
+    "language": "Python",
+    "topics": [
+     "api",
+     "autocomplete",
+     "docker",
+     "fastapi",
+     "google-maps",
+     "google-news",
+     "google-trends",
+     "python"
+    ]
+   },
+   "body": "",
+   "score": 4.189654742026425
+  },
+  {
+   "key": "arxiv:2609.40169",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+   "url": "https://arxiv.org/abs/2609.40169",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Jingbo Yang",
+     "Kwei-Herng Lai",
+     "Xiaowen Wang",
+     "Yaar Harari"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Language agents are expected to solve increasingly complex tasks, creating a growing need for continual improvement. One promising approach is to evolve the agent harness, the software that governs tool use, memory management, and task execution, while keeping the underlying language model fixed. Recent methods automate this process by using a meta coding agent to modify the harness based on execution feedback. However, relying on that agent's existing knowledge and observed failures can restrict exploration and make adaptation reactive. Inspired by how human experts learn from the research literature for new solutions, we introduce ScholarEvolve, a framework that automatically draws on state-of-the-art research to guide harness evolution. ScholarEvolve organizes the harness evolution directions into functional modules and uses topic modeling to identify distinct improvement strategies for each module. It implements these strategies and evaluates their combinations to improve task performance. Moreover, the framework is designed to incorporate new publications over time, allowing research advances to drive proactive lifelong evolution. Experiments demonstrate improvements on AppWorld and Tau2-Bench. ScholarEvolve raises Qwen3.5-27B task goal completion from 49.6% to 63.6% on AppWorld Challenge, and raises GPT-5.4-mini pass@1 from 72.7% to 81.9% on Tau2-Bench Telecom.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39847",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models",
+   "url": "https://arxiv.org/abs/2609.39847",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Rong Wan",
+     "Suliu Qin",
+     "Jiaxi Li",
+     "Wei Xie"
+    ],
+    "categories": [
+     "cs.SD",
+     "cs.LG"
+    ]
+   },
+   "body": "Audio language models (ALMs) are increasingly used for audio deepfake detection (ADD), yet existing benchmarks assess their verdicts or rationale plausibility without verifying the underlying acoustic evidence. To address this issue, we first introduce spoofing evidence-grounded audio reasoning (SEAR), a four-task AQA benchmark to evaluate ALM-based ADD through acoustic evidence identification and quantification, deepfake detection, and forensic rationale generation. We further propose a bona-fide-based acoustic evidence agent (BAEA), which equips a frozen ALM with controlled acoustic tools under \\textsc{fixed} or \\textsc{adaptive} evidence-acquisition policies. Experiments with six ALMs reveal a clear gap between plausible rationales and verifiable acoustic evidence reasoning, while BAEA-\\textsc{Fixed} improves final verdicts and forensic rationales on both evaluation partitions. Controlled interventions further show that misleading evidence degrades both detection and grounding performance.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39819",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Capture the lifecycle: KV Cache management in ReAct Agents with KVTether",
+   "url": "https://arxiv.org/abs/2609.39819",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Kaihua Fu",
+     "Yukun Zhou",
+     "Chaokun Chang",
+     "Yinghao Yu"
+    ],
+    "categories": [
+     "cs.OS"
+    ]
+   },
+   "body": "Efficient serving of long-context reasoning-and-acting (ReAct) agents relies on KV cache reuse to reduce large language model (LLM) prefill latency and monetary cost. However, a semantic gap exists between agent harnesses and the underlying serving stack. Through context mutation, tool execution, and subagent coordination, context messages may become actively engaged, permanently discarded, and temporarily unused, while the serving stack only observes accesses to the corresponding KV cache. This lifecycle blindness prevents recency-only policies such as LRU from reclaiming dead KV promptly and from preserving older KV that will be reused sooner than newer entries. We present KVTether, a lifecycle-aware KV cache management framework for ReAct agents. By tracing semantic primitives embedded in agent harnesses, KVTether captures runtime lifecycle semantics during highly dynamic execution. KVTether then translates message-level semantics into KV-level lifecycle states and uses these states to drive state-prioritized cache management without exposing physical complexities to agent harnesses. After reclaiming dead KV, KVTether preferentially preserves live-but-idle KV that is waiting for reuse, reducing premature eviction before reuse. Across agent benchmarks and production workloads, KVTether reduces end-to-end request latency by up to 26.3% and 17.4% relative to LMCache and MORI, respectively, and lowers estimated task cost by 40.0% and 33.2% on average.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39433",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "The AI crisis for teaching: \"Train your own neural network!\"",
+   "url": "https://arxiv.org/abs/2609.39433",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Douglas Scott"
+    ],
+    "categories": [
+     "astro-ph.IM"
+    ]
+   },
+   "body": "Everyone seems to be thinking about so-called artificial intelligence (AI) these days. As scientists, we understand that we're not about to have a conscious computer intelligence taking over the world, but we're nevertheless concerned about how \"large language models\" (LLMs) and AI \"agents\" are impacting the way that we do science. This concern has generated several recent essays about the effects of AI on research, including in my own field of astronomy and astrophysics. These opinion pieces tend to miss the biggest current concern for those whose jobs combine teaching with research - although the threat to future scientific research as we know it is probably a bit concerning, the effect on teaching is an existential crisis right now! We need to hang on to the parts of education that we think are at its core - so that students coming out of degree programmes are actually able to think for themselves, \"like an astrophysicist\". This means emphasising to students that they should use AI tools to support their education and not to replace it. One way of explaining the importance of this principle is to point out that students should be training their own neural networks.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39420",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "QuantCode Model: Specializing Language Models for Executable Algorithmic Trading Code",
+   "url": "https://arxiv.org/abs/2609.39420",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Alexey Chernysh",
+     "Orkhan Ekhtibarov",
+     "Dmitry Zmitrovich"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.LG",
+     "q-fin.TR"
+    ]
+   },
+   "body": "Large language models are strong general-purpose code generators, but executable algorithmic trading remains a demanding specialization target: a model must translate a natural-language strategy specification into correct program logic for a specialized trading framework, execute on historical data, produce trades, and remain semantically faithful to the request. We study two complementary mechanisms for specializing language models for this setting: continued pretraining on algorithmic-trading framework code and supervised fine-tuning (SFT) on agent-validated request-to-code pairs. Evaluation is centered on QuantCode-Bench, our 400-task benchmark for Backtrader strategy generation, together with a repository-level SWE-bench-like track. Continued pretraining improves single-turn Judge Pass from 41.5% to 47.5% for Qwen3.5-397B-A17B and from 27.8% to 33.0% for Qwen3.6-35B-A3B. SFT applied after continued pretraining yields a larger gain for Qwen3.6-35B-A3B, reaching 58.2% Judge Pass and 83.5% successful backtests; in agentic evaluation it raises first-turn success from 22.3% to 58.3% and final success after up to 10 turns from 47.5% to 79.5%. Continued pretraining alone improves first-turn agentic success but lowers final success after repair from 47.5% to 32.5%, consistent with degraded instruction following, whereas SFT improves both. We also identify a capability-retention failure: domain specialization degrades parser-conformant structured tool calling, and targeted recovery SFT restores tool-call formatting but not the base checkpoint's repository-level agent performance. The results show that framework-oriented pretraining, validated SFT, and explicit capability-retention evaluation address distinct failure modes in domain-specific executable code generation.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39112",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "CamAgent: An LLM-Agent Framework for Multi-Species Camera-Trap Workflows",
+   "url": "https://arxiv.org/abs/2609.39112",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Yutong Deng",
+     "Qi Song",
+     "Xi Guo",
+     "Tianming Wang"
+    ],
+    "categories": [
+     "cs.CV"
+    ]
+   },
+   "body": "Camera traps accumulated vast, multidimensional data for wildlife monitoring, yet translating raw media archives into meaningful ecological insights remains highly fragmented. Current research workflows require laboriously stitching together disparate analysis tools and scripts, creating steep programming hurdles and complicating end-to-end spatiotemporal analyses. To overcome this fragmentation, we present CamAgent, an autonomous Large Language Model (LLM) agent framework that integrates camera-trap analytical workflows into a unified intelligent ecosystem. CamAgent interprets natural-language ecological intent, schedules computational routing, and executes specialized tools spanning computer-vision perception (e.g., SpeciesNet), CamtrapDP-compatible data management, detection-corrected occupancy modeling, temporal activity analysis, and species co-occurrence networks. The framework automates multi-stage analytical pipelines while maintaining essential data-quality controls and analytical conventions. Consequently, CamAgent significantly reduces manual programming overhead for conservationists, establishing a transparent, scalable, and fully integrated paradigm for camera-trap ecology. Our project is available at https://anonymous.4open.science/r/artifact72c6f4.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39066",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Agentic Tool-Augmented Reasoning for Explainable Image Forgery Detection",
+   "url": "https://arxiv.org/abs/2609.39066",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Zhiya Tan",
+     "Jing Huang",
+     "Changtao Miao",
+     "Lin Tan"
+    ],
+    "categories": [
+     "cs.CV"
+    ]
+   },
+   "body": "Conventional image forgery detection methods produce binary scores or pixel-level masks without interpretable evidence, while recent multimodal large language model (MLLM)-based approaches generate post-hoc explanations of predetermined classification results rather than reasoning from evidence. Inspired by the forensic workflow of human judicial experts, we propose Agentic Tool-Augmented Reasoning (ATAR), a framework integrating 22 specialized forensic tools across seven complementary domains to autonomously detect, localize, and explain image forgeries through multi-turn reasoning. A Dual-Stream Forensic Reasoning paradigm combines a high-level semantic anomaly path, which magnifies suspicious regions for fine-grained inspection, with a low-level forgery artifact path, which invokes forensic tools to extract objective evidence. We further introduce Forensics Curriculum Learning: during General Experience SFT, an automated teacher-student mentoring pipeline synthesizes multi-turn tool-usage reasoning trajectories; during Forensic Scene RL, a Tool Prior Curriculum guides early tool exploration and progressively transfers control to the agent, while a Structured Evidence Reward provides fine-grained process-level supervision. Experiments across IMDL, Deepfake detection, DMDL, and AIGC detection show that ATAR achieves 78.5% average image-level F1 on six zero-shot IMDL benchmarks, surpassing the strongest MLLM baseline by 11.8 percentage points, and remains competitive with specialized detectors on other tasks while producing substantially more faithful and grounded explanations.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.38912",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Composing Task-specific Agent Harnesses at Test Time with Reusable Primitives",
+   "url": "https://arxiv.org/abs/2609.38912",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Peng Kuang",
+     "Haibo Jin",
+     "Dehao Wu",
+     "Feiyang Deng"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Agent harnesses govern how large language models (LLMs) gather context, invoke tools, verify results, preserve state, and terminate, largely affecting agent performance. However, the value of each harness mechanism can differ across heterogeneous tasks: a mechanism that improves one task may impose overhead or context distraction on another, leading to the suboptimality of a global harness. We characterize this suboptimality as a mismatch induced by fixed mechanism choices, motivating task-specific harness construction. Nonetheless, generating harness code for each task introduces generation and debugging costs, with execution risks that can compound as more mechanisms are generated. To address those challenges, we introduce Harness Primitives, reusable harness mechanisms with clear application scope and composition contract mined from failed task trajectories. Based on Harness Primitives, we propose STITCH, a framework that Selects suitable primitives given Task Information and compiles them into Task-speCific Harnesses at test time. This separation enables task-specific harnesses without generating or repairing mechanism code at test time. Extensive experiments demonstrate that STITCH not only improves harness adaptability and robustness, but also scales with the primitive library size, boosting task success rates by up to 12 points over fixed harness baselines, surpassing human-designed harnesses like Codex CLI while maintaining a minimal test-time harness composition overhead of only 2.7%, 638 times more efficient than generating task-specific harnesses from scratch. Ultimately, our work demonstrates that building task-adaptive harnesses can be beneficial for completing diverse tasks and that building reusable primitives can be a promising path towards this goal.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39166",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds",
+   "url": "https://arxiv.org/abs/2609.39166",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Mingjian Gao",
+     "Zhaocheng Li",
+     "Haoyang Huang",
+     "Wenqiao Zhang"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Persistent spatial memory enables embodied agents to navigate familiar environments across repeated visits. However, targets may move while unobserved, including during navigation, making remembered locations unreliable by the time an agent arrives. Despite advances in memory retrieval and state prediction, accounting for continued hidden world evolution and revising beliefs under limited visibility remain challenging. We study Evolving-World Navigation, where agents infer target locations from intermittent observations, predict their states at inspection time, and revise beliefs using visual evidence. We propose EvolvingNav, which constructs a time-indexed belief from timestamped 3D object histories through a structured persistence-relocation model. The belief distinguishes persistence at the last observed location from relocation to alternative locations and retains probability mass outside the known candidate set. An event-driven filter propagates the current belief as time elapses, forecasts target occupancy at candidate inspection times, and incorporates new RGB-D evidence. Negative observations downweight location hypotheses according to calibrated, visibility-conditioned detection probabilities, while evidence tracking prevents repeated use of the same observations. A frozen, zero-shot vision-language controller uses the updated belief to choose actions and replan. We further introduce EvoWorld-Bench, a benchmark grounded in human activity traces, comprising 54 scenes and 803,680 tasks with controlled changes before and during navigation. In simulation and real-robot experiments, EvolvingNav improves navigation success and search efficiency over the evaluated baselines. Paired experiments show the clearest gains under learnable temporal patterns, while ablations demonstrate the value of preserving uncertainty and incorporating visibility-aware evidence.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39005",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "C-STRIDE: An Observation-Driven AI Digital Twin for Predicting Basin-Wide Flood Fields from Sparse Stream-Gauge Histories",
+   "url": "https://arxiv.org/abs/2609.39005",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Yanjie Tong",
+     "Phillip Si",
+     "Yuan Qiu",
+     "Peng Chen"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Emergency managers need to know where floodwater is, how deep it is, and how it will change over the coming hours across an entire river basin. During a flood, however, real-time measurements come from only a handful of stream gauges, and high-resolution hydrodynamic models are too costly to rerun each time new data arrive or to run as large ensembles. We present C-STRIDE, an observation-driven AI digital twin that turns short records from a few stream gauges, together with terrain and rainfall, into basin-wide maps of water depth and extends these predictions up to a day ahead. It is trained on simulations from a calibrated two-dimensional hydrodynamic model and needs no separate data-assimilation step. In the Des Plaines River basin near Chicago, six gauges inform predictions over 4.2 million 30-m grid cells. Terrain improves the predictions most, rainfall keeps errors from growing over longer horizons, and together they reduce errors by about 40% compared with gauge records alone. When future rainfall is known, errors remain near 15% one day ahead, compared with nearly 40% without rainfall. Given real instead of simulated gauge records, the model shifts its predictions toward the observed hydrographs at three of six gauges without retraining, and it runs about 150 times faster than the hydrodynamic model. These results show how sparse gauges, terrain, and rainfall can be combined into fast, continuously updated flood predictions, a step toward operational flood digital twins that still requires testing with real-time data and rainfall forecasts.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.38632",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Proper Scoring Rule-based Diffusion for Probabilistic Weather Forecasting",
+   "url": "https://arxiv.org/abs/2609.38632",
+   "meta": {
+    "published": "2026-09-29",
+    "authors": [
+     "Joonhyeong Park",
+     "Giung Nam",
+     "Hyungi Lee",
+     "Kyunghyun Cho"
+    ],
+    "categories": [
+     "cs.LG"
+    ]
+   },
+   "body": "Recent probabilistic weather forecasters train stochastic predictors with the continuous ranked probability score (CRPS) to generate each ensemble member in a single forward pass. These models learn the predictive distribution from the forecast context alone, which becomes difficult at longer forecast horizons where uncertainty is high. To learn the predictive distribution more effectively, we introduce auxiliary conditional denoising tasks that predict the same future state from the context and its corrupted version, which provides partial future information that can reduce prediction ambiguity. Building on distributional diffusion models, we learn the conditional distributions of these tasks with a single stochastic predictor by minimizing a proper scoring rule across noise levels. At inference, the predictor can still generate each ensemble member in a single forward pass at the fully corrupted endpoint. Standard CRPS training is recovered as the endpoint-only special case of our formulation, so our framework extends existing CRPS-based forecasters with only additional conditioning inputs. Controlled experiments show that the auxiliary tasks improve one-step forecasting across architectures, with larger gains at longer forecast horizons. The gains extend to high-dimensional global weather forecasting under both training from scratch and fine-tuning, along with improved calibration and potential benefits for generalization under distribution shift.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.37694",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "GARDiff: Graph-Aligned Residual Diffusion for Probabilistic Multivariate Time-Series Forecasting",
+   "url": "https://arxiv.org/abs/2609.37694",
+   "meta": {
+    "published": "2026-09-29",
+    "authors": [
+     "Rui Han",
+     "Min Yang",
+     "Xu Zhang",
+     "Xinghao Yang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ]
+   },
+   "body": "Diffusion models have recently shown strong potential for probabilistic multivariate time-series forecasting by modeling complex conditional distributions. Recent decoupled diffusion frameworks further separate forecasting into deterministic prediction and stochastic residual generation, making it natural to derive dependency graphs from deterministic representations and use them to guide residual diffusion. However, we show that this direct structural transfer is unreliable. Although deterministic-derived graphs encode useful global dependency priors, they exhibit substantial edge-level misalignment with residual dependency structures, introducing inaccurate or redundant conditions during residual generation. This reveals a previously overlooked deterministic-to-residual structural alignment problem in decoupled diffusion forecasting. To address this problem, we propose GARDiff, a Graph-Aligned Residual Diffusion framework for probabilistic multivariate time-series forecasting. Instead of treating deterministic-derived graphs as fixed diffusion conditions, GARDiff progressively adapts them to residual generation. Specifically, GARDiff estimates residual uncertainty to distinguish high- and low-uncertainty regions, enabling uncertainty-aware structural refinement, and further performs timestep-aware edge sparsification during reverse diffusion to evolve graph conditions from broad dependency aggregation to localized residual refinement. Extensive experiments on six real-world benchmarks demonstrate that GARDiff consistently improves probabilistic forecasting performance and uncertainty calibration over strong baselines.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.37119",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Unlocking the Critic: Reward-Free Policy Optimization for LLM Post-Training",
+   "url": "https://arxiv.org/abs/2609.37119",
+   "meta": {
+    "published": "2026-09-29",
+    "authors": [
+     "Hongyang Li",
+     "Xiao Li",
+     "Caesar Wu",
+     "Said Mammar"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL"
+    ]
+   },
+   "body": "Recent approaches to reinforcement learning (RL) post-training for large language models increasingly remove the critic to reduce training instability and memory overhead. Even where a critic is trained, it is discarded once training ends, although it has learned to predict outcomes. We revisit this trend and show that a pretrained critic's ability to predict future outcomes can make it a valuable asset for efficient long-horizon reasoning. First, we find that instability in critic-based RL for long chain-of-thought reasoning is largely an optimization artifact: keeping policy updates small and low in variance restores stable convergence. Second, a well-pretrained critic estimates the posterior probability of eventual success from later trajectory states and unfinished prefixes. Its predictions provide outcome-derived, dense, per-prefix learning signals that, during policy optimization, require neither completed rollouts, step-level annotations, nor external reward labels. Building on this insight, we introduce Reward-Free Policy Optimization (RFPO), which repurposes a single calibrated, frozen critic as a rollout-level reward, a value baseline for generalized advantage estimation, and a success forecaster for unfinished prefixes. We further show that binarizing the debiased score stops the policy from exploiting the critic's length bias. Binarized, RFPO matches supervised PPO without a single label in the training loop, while cutting compute and memory overhead. This makes RFPO well suited to long-horizon reasoning tasks, where outcomes arrive late and generation dominates cost: because rollouts can be rewarded before they finish, training no longer has to pay for waiting on every trajectory to complete. Our findings challenge the prevailing critic-free paradigm and establish critic-based, reward-free optimization as a scalable and computationally efficient path for LLM post-training.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.36689",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "CHAIN: Calibrated LLM Forecasting via Causal-Temporal Hypergraph Inference",
+   "url": "https://arxiv.org/abs/2609.36689",
+   "meta": {
+    "published": "2026-09-29",
+    "authors": [
+     "Wenjin Liu",
+     "Chenxi Wang",
+     "Yue Lu",
+     "Zhe Cui"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ]
+   },
+   "body": "Large language models have achieved significant progress in event forecasting, yet their probability outputs exhibit systematic calibration bias that varies heterogeneously across different domains and question types, undermining the trustworthiness of probabilistic outputs for decision-making under uncertainty. However, existing calibration methods typically correct probability outputs after prediction is complete, without modeling the structural sources of bias within the prediction process itself. To address this challenge, we decompose probabilistic prediction over causal-temporal hypergraphs into three stages, evidence weighting, evidence aggregation, and source fusion, and propose CHAIN, which designs stage-specific mechanisms to mitigate bias at each stage: (i) modulating the temporal decay function by causal topological distance, (ii) aggregating approximately independent causal chains via Noisy-OR after direction-aware deduplication, and (iii) driving adaptive fusion by causal coverage and directional balance. Experimental results on cross-domain forecasting benchmarks show CHAIN outperforms existing methods in expected calibration error, Brier score, and accuracy. Our project is available at https://github.com/QwenQKing/Chain.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.35675",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Explainable Deep Learning for Probabilistic Nowcasting of Radar Reflectivity in Tornadic Storms",
+   "url": "https://arxiv.org/abs/2609.35675",
+   "meta": {
+    "published": "2026-09-28",
+    "authors": [
+     "Nathan Erickson",
+     "Amy McGovern",
+     "Aaron Hill"
+    ],
+    "categories": [
+     "physics.ao-ph"
+    ]
+   },
+   "body": "Tornadoes pose substantial risk to human life and property in the United States, causing more than 50 fatalities and \\$100 million of property damage on average annually. When tornadoes are likely, weather radar provides critical information for forecasters by providing information on storm morphology, storm motion, and intensity trends. Additional tools such as satellite and numerical weather prediction model runs can provide useful short-term information for understanding changes in storm characteristics. This work demonstrates a U-Net deep-learning system for nowcasting the evolution of radar reflectivity following tornadogenesis, which can provide value to forecasters by synthesizing large amounts of input data (e.g., radar imagery, near-storm environment data) and generating predictions of radar reflectivity from its inputs. Inputs to the model are radar imagery from the Multi-Radar Multi-Sensor (MRMS) dataset and near-storm environment data from the High-Resolution Rapid Refresh (HRRR) numerical weather prediction model. The U-Net is trained on a dataset of tornadic storms to produce 30 minutes of probabilistic predictions of radar reflectivity following tornadogenesis, with probabilistic predictions obtained by predicting parameters of the SinhArcSinh, or SHASH, distribution. The model produces physically realistic predictions of radar evolution, achieves comparable skill to next-hour forecasts from the HRRR, demonstrates reasonable probabilistic calibration and is accompanied by a variety of explainability methods to improve understanding by end users. Additionally, predictions from the model can be obtained much more quickly than those from a numerical weather prediction model. With further development, this model could be extended to nowcast radar reflectivity evolution in an operational setting.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.35236",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Long-Horizon Scaling: How Model Capabilities Shape the Returns to Computation",
+   "url": "https://arxiv.org/abs/2609.35236",
+   "meta": {
+    "published": "2026-09-28",
+    "authors": [
+     "Haoyu Zheng",
+     "Zhengyu Chen",
+     "Huaisheng Zhu",
+     "Ruishan Fang"
+    ],
+    "categories": [
+     "cs.LG"
+    ]
+   },
+   "body": "Long-horizon agents improve solutions through sustained interaction, execution, and task feedback. Scaling studies relate performance to resources and capabilities, yet how existing capabilities shape returns to extended interaction remains less understood. To address this gap, we analyze AutoLab and EdgeBench, two long-horizon benchmarks. We find that starting performance and subsequent growth are associated with different capabilities: within a task category, similar early scores can precede different later gains. To formalize this finding, we model capability-time scaling with category-specific logistic power laws shared across models. Fitted to early trajectories, these curves extrapolate the observed models' category-average scores to later computation. However, rising average scores mask narrowing improvement opportunities: later gains concentrate among fewer improving models. High final scores and continued improvement also have distinct capability profiles. Predicted mean gains estimate each model's fraction of improving tasks; averaging these estimates forecasts the average share of improving models. These uneven returns motivate deciding whether a specific run should continue. We therefore derive a continuation policy to save time and compute with limited score loss. The policy conditions growth predictions on the run's observed progress and weighs immediate and delayed gains against computation costs. In replay with training and price calibration based on other models' histories, the policy saves roughly one-third of full-run time, with relative score losses of 2.4% on AutoLab individual runs and 3.3% on EdgeBench published mean curves. Our repository is available at https://github.com/Chihaya-Anon-chan/long-horizon-scaling.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.40306",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
+   "url": "https://arxiv.org/abs/2609.40306",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Haoyuan Deng",
+     "Jiebin Liu",
+     "Tengxiao Zhang",
+     "Langning Yan"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.AI",
+     "cs.LG"
+    ]
+   },
+   "body": "Pretrained robot policies provide useful action priors, but long-horizon manipulation still requires coordination between semantic reasoning and physical execution. Semantic reasoning operates at a coarser timescale than physical interaction, while episode-level failures provide limited guidance on which system component should be revised. We propose DynaHarness, a dynamic physical harness that couples semantic reasoning with physical governance through a shared execution contract and turns failure evidence into validated capability revisions. To be more specific, the slow brain proposes capabilities and symbolic arguments, while the fast brain grounds and monitors commands, refuses unresolved actions, substitutes capabilities, and requests replans when needed. The physical execution contract bounds each accepted command and records execution evidence across analytic skills, recovery skills, and the frozen VLA. Failure attribution localizes faults in these records and directs targeted revisions of reusable capabilities or execution mechanisms. Paired regression checks govern admission or rejection, closing the self-evolution loop. On LIBERO-Pro, DynaHarness achieves 75.2% on 800 newly sampled initial states, compared with 17.5% for the frozen policy. With the same capability library, full dynamic execution reaches 74.0% versus 63.9% under nominal one-step replanning. This demonstrates the value of DynaHarness as a dynamic physical harness that governs how existing capabilities are grounded, monitored, and coordinated during execution. Our project page is at https://denghaoyuan123.github.io/Dynaharness_page/.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.40137",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "Game-Guided Skill Discovery through Self-Play for Playable Agent Control",
+   "url": "https://arxiv.org/abs/2609.40137",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Seungeun Rho",
+     "Jeonghwan Kim",
+     "Xue Bin Peng",
+     "Sehoon Ha"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.RO"
+    ]
+   },
+   "body": "We present Game-Guided Skill Discovery (GGSD), a framework that uses self-play in games to discover motor skills that are directly playable by humans. Playable skills provide a compact abstraction for controlling embodied agents through a small set of learned behaviors rather than low-level actions. To be effective, these skills should be semantically distinct, interpretable, and expressive; properties that existing unsupervised skill-discovery methods often fail to achieve simultaneously. GGSD achieves these desiderata by grounding skill discovery in competitive gameplay. A hierarchical agent competes against its past selves, with a high-level policy selecting from a small discrete skill set and a skill-conditioned low-level policy learning the corresponding behaviors. After training, a human can replace the high-level policy and directly control the agent through the same discrete skills. Despite the small number of high-level actions, skill transitions give rise to emergent combo behaviors, expanding expressivity beyond individual primitives. Across Ant, Franka-arm, and Unitree G1 environments, we show that GGSD produces human-playable skills that humans can compose to solve unseen tasks, such as Maze and CubePush, without additional training. An interactive demo is available at https://ggsd-demo.github.io.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.40134",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "Tactile Curiosity Drives Robot Interaction",
+   "url": "https://arxiv.org/abs/2609.40134",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Klemens Iten",
+     "Alexander Proshkin",
+     "Bhavya Sukhija",
+     "Stelian Coros"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.AI"
+    ]
+   },
+   "body": "Mastering robot manipulation skills via reinforcement learning (RL) remains largely sample-inefficient. The most common RL algorithms rely on random action sampling to discover new strategies, resulting in agents that allocate most of their training budget to motions in free space, away from the contacts from which manipulation skills emerge. Existing intrinsic motivation methods based on model disagreement or epistemic uncertainty improve on isotropic noise, but they can also reward uncertainty in functionally irrelevant transitions, such as erratic motions in free space. In this work, we argue that tactile feedback provides a natural signal for exploration, and introduce TacEx, a framework that incorporates touch into epistemic uncertainty-driven exploration by decomposing model uncertainty across sensory modalities and directing curiosity toward the tactile channel. By anchoring curiosity to the sense of touch, TacEx drives the robot to discover complex contact dynamics, learning to manipulate and grasp objects without task rewards or expert demonstrations during exploration. The interaction-dense dataset collected through this tactile-driven curiosity supports offline learning of downstream pick-and-place policies without additional environment interaction. We further use tactile-driven exploration to post-train vision-language-action (VLA) models. Although the VLAs are initially pre-trained without tactile feedback, post-training with TacEx substantially improves downstream performance while remaining highly sample-efficient.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39933",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "ConflictGuide: AutoResearch Improves When Competing Behaviors Are Made Visible",
+   "url": "https://arxiv.org/abs/2609.39933",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Binqian Xu",
+     "Qiran Zou",
+     "Xiangbo Shu",
+     "Dianbo Liu"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.LG"
+    ]
+   },
+   "body": "When designing machine learning models, desirable properties are often in tension: improving one behavior can impair another, so task progress can depend on alleviating the conflict. LLM-based AutoResearch systems, which iteratively edit model code and retain edits based on scalar task-performance feedback, have largely ignored this trade-off. We find that scalar feedback supports broad exploration early in search, but it does not reveal how edits affect competing behaviors. In matched-budget experiments, introducing competing-behavior feedback as task gains diminish increases the share of proposals that improve both behaviors and sustains progress beyond scalar-only plateaus. Obtaining this feedback for a given model requires identifying its competing behaviors and designing probes to measure them. To make competing-behavior feedback actionable, we introduce ConflictGuide. Its reusable ConflictGuide-Skill combines a literature-grounded taxonomy with model-specific evidence to identify competing behaviors and specify probes for a code agent to implement as metrics. Evolution proceeds in two stages: Stage I explores with task feedback; Stage II uses probe feedback to steer proposals toward conflict alleviation and retains marginal-gain edits only when probes indicate sufficient alleviation. Across five diverse model families, ConflictGuide reduces task and conflict-related errors by up to 28% and 14%, respectively, relative to scalar-only AutoResearch, with gains extending to other code agents.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39665",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "ChronoGraph: Functional 4D Scene Graphs with Vision-Language Models for Interaction Understanding and Grounded Planning",
+   "url": "https://arxiv.org/abs/2609.39665",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Chenyangguang Zhang",
+     "Malgorzata Gwiazda",
+     "Guanlong Jiao",
+     "Yuanchen Ju"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Embodied agents must determine where to act, anticipate the resulting scene changes, and interpret observed outcomes to guide subsequent actions. This requires connecting 4D interaction understanding, which explains how past actions changed the scene, with spatially grounded planning, which determines how and where to act toward a goal and anticipates the resulting scene changes. We introduce ChronoGraph, a functional 4D scene graph that links actions on affordance parts to semantic and geometric state changes. By representing observed and anticipated transitions in the same form, it provides a shared basis for understanding and planning. We construct ChronoGraphBench through an automatic data engine that converts human-interaction videos and simulated robot trajectories into graph-annotated questions for training and evaluating Vision-Language Models (VLMs) on both tasks. Using these annotations, we train ChronoGraphVLM by adapting pretrained VLMs in two stages. Graph-as-Chain-of-Thought supervised fine-tuning teaches the models to reconstruct observed transitions and predict future ones as graph traces before answering. Subsequent joint 4D graph reinforcement learning directly rewards graph properties and answer correctness. Experiments across model scales show improvements over the corresponding pretrained baselines and zero-shot transfer to VLM4D. Real-world demonstrations further show that graph-based planning and affordance grounding support mobile manipulation through existing robot skills without additional fine-tuning.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39607",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "Pretext: Defeating Malicious Skill Detection Frameworks for AI Agents",
+   "url": "https://arxiv.org/abs/2609.39607",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Tobias Kaisar",
+     "Aritra Dhar"
+    ],
+    "categories": [
+     "cs.CR",
+     "cs.AI"
+    ]
+   },
+   "body": "Skills extend an agent's capabilities by injecting instructions and information into the context, and are widely used by agents such as OpenClaw and Claude Code. Prior work shows third-party marketplaces host malicious skills that give attackers direct influence over the victim's agent. The emerging defense scans skills before installation, pairing deterministic static checks with an LLM-based semantic judge, as in NVIDIA's SkillSpector. We show that such defenses fall to an attacker who knows the detector. Our white-box LLM attacker, Pretext, iteratively crafts skills that evade detection while still delivering the payload and performing the benign task: moving the payload from code into natural language leaves static analysis inert, while framing it as the skill's legitimate purpose and splitting instructions across files keeps the LLM stage below its blocking threshold. Across three open-source models, Pretext achieves up to 97\\% and 77\\% against a frozen detector and a co-adaptive one, respectively, revealing major gaps in current skill scanners.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39450",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "ActionGuard: Tool Call Authorization under Poisoned Skills",
+   "url": "https://arxiv.org/abs/2609.39450",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Jihun Han",
+     "Yejin Jang",
+     "Byung Il Kwak",
+     "Mee Lan Han"
+    ],
+    "categories": [
+     "cs.CR",
+     "cs.AI"
+    ]
+   },
+   "body": "LLM-based agents extend their capabilities through third-party skills that provide task-specific instructions, scripts, and tool-use procedures. However, malicious instructions inserted into an otherwise benign skill can cause a benign user request to trigger dangerous Tool Calls, including data exfiltration, file deletion, or unauthorized code execution. This paper presents ActionGuard, which inspects skill-influenced Tool Calls immediately before execution. ActionGuard separates the target agent's action-generation context from the safeguard's authorization context. The target agent may use the original skill for planning, but the Reviewer does not receive the potentially poisoned raw skill text. Instead, it determines whether each action is justified by the trusted user request using a balanced skill profile, current and recent Tool Calls, and local script contents. ActionGuard intercepts each Tool Call at OpenClaw's before-tool-call stage and enforces the Reviewer's ALLOW or DENY decision under a fail-closed policy. We evaluate ActionGuard on 139 contextual and 180 obvious injections in a SKILL-INJECT-based setting against Dynamic Guardian and SkillGuard, using three open-source and two commercial Reviewer models. Each condition is repeated three times and evaluated using Attack Success Rate (ASR) and Task Success Rate (TSR). Overall, ActionGuard reduced ASR by 35.54 to 46.11 percent relative to existing safeguards and by 70.44 percent relative to No Safeguard, while maintaining high benign-task completion. These results show that execution-boundary authorization grounded in trusted user intent and runtime evidence can restrict unauthorized Tool Calls induced by skill injection.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2609.39382",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "SkillFM: Generating Skills for LLM Agents via Latent Flow Matching",
+   "url": "https://arxiv.org/abs/2609.39382",
+   "meta": {
+    "published": "2026-09-30",
+    "authors": [
+     "Zuming Zhang",
+     "Jie He",
+     "Yizhe Zhang",
+     "Jeff Z. Pan"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Textual skills provide reusable guidance for large language model agents, but existing approaches often rely on manually curated skill banks or reinforcement learning with indirect and delayed feedback. We introduce SkillFM (Skill Flow Matching), a generative framework that synthesizes task-conditioned textual skills directly without test-time skill retrieval. Our framework combines a codec for encoding and reconstructing textual skills in a continuous latent space with a conditional flow model trained using improved MeanFlow. At inference time, the learned velocity field enables single-step latent sampling, and an LLM-based decoder converts the sampled representation into textual guidance for a frozen downstream agent. We evaluate the framework on embodied tasks, question answering, and web shopping. On ALFWorld and Search-QA, our method achieves the best overall performance among the compared vector-based skill approaches. Our analyses further demonstrate that latent skill generation is an effective alternative to retrieval-based skill augmentation. Our code and training skill libraries are available at https://github.com/lulushang999/SkillFM.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:JpJaEPGzPF4",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "Finally, The CORRECT Way to Run Local AI on a Mac",
+   "url": "https://www.youtube.com/watch?v=JpJaEPGzPF4",
+   "meta": {
+    "channel": "Samuel Gregory",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:_yrw6c5gw3E",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "M5 Ultra vs 2 DGX Sparks… The Number You're Not Looking At",
+   "url": "https://www.youtube.com/watch?v=_yrw6c5gw3E",
+   "meta": {
+    "channel": "Alex Ziskind",
+    "rank": 2
+   },
+   "body": "",
+   "score": 0.5
+  },
+  {
+   "key": "yt:zu1VAxPkVgQ",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "Final Verdict on Local AI with M5 MacBook Pro",
+   "url": "https://www.youtube.com/watch?v=zu1VAxPkVgQ",
+   "meta": {
+    "channel": "Samuel Gregory",
+    "rank": 3
+   },
+   "body": "",
+   "score": 0.3333333333333333
+  },
+  {
+   "key": "yt:dWz9XgRK_uQ",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "Can We Finally Code on M5 MacBook Pro with Local AI?",
+   "url": "https://www.youtube.com/watch?v=dWz9XgRK_uQ",
+   "meta": {
+    "channel": "Samuel Gregory",
+    "rank": 4
+   },
+   "body": "",
+   "score": 0.25
+  },
+  {
+   "key": "yt:tysc21gAT58",
+   "source": "youtube",
+   "query": "expected goals model from scratch",
+   "title": "What is Expected Goals?",
+   "url": "https://www.youtube.com/watch?v=tysc21gAT58",
+   "meta": {
+    "channel": "Tifo Football by The Athletic",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:yUD073LrqVc",
+   "source": "youtube",
+   "query": "expected goals model from scratch",
+   "title": "What Is xG? Expected Goals Explained",
+   "url": "https://www.youtube.com/watch?v=yUD073LrqVc",
+   "meta": {
+    "channel": "FootGraph",
+    "rank": 2
+   },
+   "body": "",
+   "score": 0.5
+  },
+  {
+   "key": "yt:bZ2HeZe_NNw",
+   "source": "youtube",
+   "query": "expected goals model from scratch",
+   "title": "Why xG is Lying To Us 🤷‍♂️🤷‍♂️",
+   "url": "https://www.youtube.com/watch?v=bZ2HeZe_NNw",
+   "meta": {
+    "channel": "Off Topic Footy",
+    "rank": 3
+   },
+   "body": "",
+   "score": 0.3333333333333333
+  },
+  {
+   "key": "yt:w7N3RKUb1d0",
+   "source": "youtube",
+   "query": "expected goals model from scratch",
+   "title": "What is xG? (Expected Goals Explained With Examples)",
+   "url": "https://www.youtube.com/watch?v=w7N3RKUb1d0",
+   "meta": {
+    "channel": "ALGOGAME",
+    "rank": 4
+   },
+   "body": "",
+   "score": 0.25
+  },
+  {
+   "key": "yt:LI8WkvWpJJc",
+   "source": "youtube",
+   "query": "solana bonding curve explained",
+   "title": "What is a Bonding Curve? Explained in Less Than 1 Minute! #defi #daos #blockchain #bondingcurve",
+   "url": "https://www.youtube.com/watch?v=LI8WkvWpJJc",
+   "meta": {
+    "channel": "CodeChain",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:PpjZ9GZsN20",
+   "source": "youtube",
+   "query": "solana bonding curve explained",
+   "title": "Boosting SORA Token Value: The Power of Token Bonding Curve #XOR #VAL #PSWAP #economics #shorts",
+   "url": "https://www.youtube.com/watch?v=PpjZ9GZsN20",
+   "meta": {
+    "channel": "Soranauts: SORA Blockchain & DeFi Education",
+    "rank": 2
+   },
+   "body": "",
+   "score": 0.5
+  },
+  {
+   "key": "yt:ZdAfA18EK_s",
+   "source": "youtube",
+   "query": "solana bonding curve explained",
+   "title": "Solana DeFi  Bridging Stocks and Crypto Seamlessly @PaulBarronNetwork",
+   "url": "https://www.youtube.com/watch?v=ZdAfA18EK_s",
+   "meta": {
+    "channel": "PapaSennaClip",
+    "rank": 3
+   },
+   "body": "",
+   "score": 0.3333333333333333
+  },
+  {
+   "key": "yt:9UAA8iN49cQ",
+   "source": "youtube",
+   "query": "solana bonding curve explained",
+   "title": "Bonding Curve Maximize Your Trading Profits #trading #crypto #bitcoin #sol #memecoin #investing",
+   "url": "https://www.youtube.com/watch?v=9UAA8iN49cQ",
+   "meta": {
+    "channel": "Crypto News",
+    "rank": 4
+   },
+   "body": "",
+   "score": 0.25
+  }
+ ]
+}
