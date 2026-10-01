@@ -15,6 +15,6 @@
   "P-0033",
   "P-0049"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-10-01T23:55:55+0100",
+ "stop_reason": "nothing runnable: 3 need something I do not have (P-0011: Lichess bot account: Luke said yes 27 Sep and will create it when he has time (fresh account, no games, bot:play token in 1Password tagged proteus); first game planned against Luke; P-0025: vim and neovim binaries (brew install if not already present, no accounts); P-0045: A small free model download from Hugging Face; Apple silicon); 3 wait on a date (P-0012 after 2026-10-22; P-0013 after 2026-10-20; P-0051 after 2026-10-03)"
 }
