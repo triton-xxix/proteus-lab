@@ -8,6 +8,7 @@
 #   field-notes/SEEN.md      -> TRITON-CORE/Proteus/SEEN.md                  (novelty register)
 #   TRACK-RECORD.md          -> TRITON-CORE/Proteus/TRACK-RECORD.md          (score snapshot, rebuilt by bin/score.py)
 #   PROBES.md                -> TRITON-CORE/Proteus/PROBES.md                (probe register, rendered by bin/probe.py)
+#   HOME.md                  -> TRITON-CORE/Proteus/HOME.md                  (today's front page, rebuilt here by bin/home.py first)
 #   field-notes/HARVEST.md   -> TRITON-CORE/Proteus/HARVEST.md               (harvest register, rendered by bin/harvest.py)
 #   intel/*.md               -> TRITON-CORE/Proteus/intel/                  (intelligence lane, charter v2)
 #   graduates/*.md           -> TRITON-CORE/Proteus/graduates/              (handover notes, charter v2)
@@ -41,6 +42,8 @@ done
 copy "$SRC/field-notes/SEEN.md" "$DST/SEEN.md"
 copy "$SRC/TRACK-RECORD.md" "$DST/TRACK-RECORD.md"
 copy "$SRC/PROBES.md" "$DST/PROBES.md"
+/usr/bin/python3 "$SRC/bin/home.py" >/dev/null || echo "home.py failed; HOME.md not rebuilt" >&2
+copy "$SRC/HOME.md" "$DST/HOME.md"
 copy "$SRC/field-notes/HARVEST.md" "$DST/HARVEST.md"
 copy "$SRC/USAGE.md" "$DST/USAGE.md"
 copy "$SRC/GRADUATES.md" "$DST/GRADUATES.md"

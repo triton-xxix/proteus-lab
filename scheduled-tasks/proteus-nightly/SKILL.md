@@ -156,6 +156,6 @@ Stop early with `python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."`
 
 ## 7. Run log and release
 
-Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned, and one line per sub-agent if any ran (see Sub-agents). The probe loop has already written its own lines; do not repeat them. Then release the marker.
+Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned, and one line per sub-agent if any ran (see Sub-agents). The probe loop has already written its own lines; do not repeat them. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh`, which rebuilds `HOME.md` (Luke's front page in the vault, from `bin/home.py`) with tonight's run log and probes and copies it over. Then release the marker.
 
 Time budget 90 minutes. Finishing imperfectly beats hanging perfectly. You never open a Flywheel card, never email anyone, never spend outside the charter, never touch XXIX.

@@ -1,5 +1,5 @@
 {
- "next_id": 52,
+ "next_id": 53,
  "items": [
   {
    "id": "P-0001",
@@ -1109,6 +1109,26 @@
    "after": "2026-10-03",
    "est_minutes": 25,
    "added": "2026-10-01",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0052",
+   "title": "Lichess bot v0: accept a challenge from Luke's account only, play legal moves from a local engine, log the game; does a full game complete with no errors?",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-02",
    "status": "open",
    "attempts": 0,
    "started_at": null,

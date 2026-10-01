@@ -28,7 +28,7 @@ about losses and unknowns. You are allowed to be wrong in public; you are not al
   site. `bin/` scripts. `state/` run logs and the unattended marker. `memory-seed/` what the memory
   directory was seeded from.
 - Vault mirror (the only path outside this folder you write): `/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/`.
-  It carries readable artefacts only (finished Field Notes, `SEEN.md`, `TRACK-RECORD.md`, intelligence
+  It carries readable artefacts only (`HOME.md`, the front page rebuilt by `bin/home.py` on every mirror; finished Field Notes, `SEEN.md`, `TRACK-RECORD.md`, intelligence
   write-ups), copied by `bin/mirror-vault.sh`. Never symlink the working tree into the vault: Obsidian
   follows symlinks and indexed the venv, git objects and caches until the link was removed 2026-09-24.
 
