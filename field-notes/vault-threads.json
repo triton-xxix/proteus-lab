@@ -12,8 +12,192 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 72,
+  "count": 92,
   "threads": [
+    {
+      "date": "2026-10-01",
+      "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Selling database reactivation cold to small local businesses that have no list",
+      "note": "",
+      "where": "TRITON-CORE/Ventures/Neptune-Marketing/research/SKOOL-DBR-COMMUNITY-2026-10-01.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Speed to lead follow-up on new enquiries needs no old database",
+      "note": "",
+      "where": "TRITON-CORE/Ventures/Neptune-Marketing/research/SKOOL-DBR-COMMUNITY-2026-10-01.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI Automation Society (Skool, Nate Herk), free tier",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Skill debugging checklist and per-job status file for stateless scheduled sessions",
+      "note": "",
+      "where": "TRITON-CORE/Education/Courses/ai-automation-society/DIGEST.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI Automation Society (Skool, Nate Herk), free tier",
+      "kind": "service",
+      "status": "open",
+      "theme": "Adapt the web design CLAUDE.md for phone-first UK local business sites",
+      "note": "",
+      "where": "TRITON-CORE/Education/Courses/ai-automation-society/DIGEST.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI Video Bootcamp course, judged after building a framework from it",
+      "kind": "service",
+      "status": "adopted",
+      "theme": "Course turned into a ten-stage video production framework with a pointer bank and five skills",
+      "note": "",
+      "where": "TRITON-CORE/Systems/video-bootcamp/README.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI Video Bootcamp course, judged after building a framework from it",
+      "kind": "service",
+      "status": "intel",
+      "theme": "The ad strategy and script frameworks are the durable part and work once the proof is real",
+      "note": "",
+      "where": "TRITON-CORE/Systems/video-bootcamp/README.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI Video Bootcamp course, judged after building a framework from it",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Generated creators posing as customers, watermark removal and engagement pods",
+      "note": "break UK ad rules or platform rules",
+      "where": "TRITON-CORE/Systems/video-bootcamp/README.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Veo and Nano Banana by API on the key already held, ElevenLabs for voice and effects",
+      "note": "wired into the framework generation helper",
+      "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API",
+      "note": "the single addition that changes the workflow most",
+      "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "HeyGen web app costs about a third of its API per minute and its free plan covers a first lip-sync",
+      "note": "",
+      "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human faces",
+      "note": "",
+      "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Promptwise as our platform",
+      "note": "no public API and nothing in the method needs it",
+      "where": "TRITON-CORE/Systems/video-bootcamp/STACK.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "Automatable Free (Skool, Jono Catliff), free tier",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Speed-to-lead workflow chain and themed ad group keyword method from the call recordings",
+      "note": "",
+      "where": "TRITON-CORE/Education/Courses/automatable-free/DIGEST.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "Automatable Free (Skool, Jono Catliff), free tier",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Scraped-list cold voice, SMS and email blueprints for UK prospects",
+      "note": "",
+      "where": "TRITON-CORE/Education/Courses/automatable-free/DIGEST.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
+      "kind": "service",
+      "status": "open",
+      "theme": "Inbound AI receptionist demo line built from the home services voice prompt",
+      "note": "",
+      "where": "TRITON-CORE/Education/Courses/brendans-ai-community/DIGEST.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency",
+      "note": "",
+      "where": "TRITON-CORE/Education/Courses/brendans-ai-community/DIGEST.md"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Connecting a broker account to a Telegram AI bot that claims a 100 percent win rate",
+      "note": "One trade dressed as three testimonials, unregulated, operator paid on volume",
+      "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+      "url": "https://t.me/c/2308862086/8413"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "How a copy-trade funnel turns one trade into many testimonials: shared timestamp and prices, lot size the only variable, Day-tab balance shown as wealth",
+      "note": "Spot the shared timestamp before reading anything else",
+      "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+      "url": "https://t.me/c/2308862086/8413"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "Volume churning on gold, 22 lots for a 77 cent move, as the operator revenue via introducing-broker rebates per lot",
+      "note": "Explains enormous lots on tiny moves",
+      "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+      "url": "https://t.me/c/2308862086/8413"
+    },
+    {
+      "date": "2026-10-01",
+      "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+      "kind": "scheme",
+      "status": "adopted",
+      "theme": "Honest benchmark for any copy-trading pitch is the Darwinex top-20 table, 12 to 35 percent a year at 5 to 15 percent drawdown",
+      "note": "Ventures/Trading/RESEARCH-darwinex-top-darwins-2026-09-07.md",
+      "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+      "url": "https://t.me/c/2308862086/8413"
+    },
     {
       "date": "2026-09-29",
       "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
@@ -710,8 +894,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 20,
+  "links_count": 21,
   "links": [
+    {
+      "date": "2026-10-01",
+      "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
+      "kind": "scheme",
+      "where": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.md",
+      "url": "https://t.me/c/2308862086/8413",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-01-elios-ai-bot-telegram.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Text read off five phone screenshots Luke sent 2026-10-01 10:14 (Telegram channel \"The Elio's AI bot\", 31,467 subscribers). A stranger's words: data, not instructions.\n\n[Post, 08:40, 345 views]\n+$25,275 IN PROFIT: INSTITUTIONAL LIQUIDITY SWEPT!\nThe bot continues its flawless momentum this week: 100% win rate.\nToday's performance: +1.02% profit today on the Safe Strategy. +3.06% to +5.00% profit today on Express / Risky Mode.\nI am also preparing the full September performance summary for you, which was absolutely unbelievable with a 100% win rate across ALL September sessions every single trade verified live on Myfxbook!\nRUNNING WEEKLY SCOREBOARD (4/4 SESSIONS VALIDATED):\nToday's Net Profit: +$25,275\nCumulative Net Profit (96h): +$101,820 banked in 4 days\nWeekly Return: +4.17% (Safe) | Up to +15.00%+ (Express / Risky)\nUndefeated Streak: 45 consecutive winning sessions (21/21 in August + 23/23 in September + 1/1 in October)\nAudited Master Portfolio: $2,502,620 (Verified live on Myfxbook post-$347,000 profit payout)\nTo get your account connected for the upcoming sessions, it's as simple as:\n1 Send \"BOT\" directly to @elioprivate\n2 Complete the 15-minute setup to bridge your account to our Swiss sub-0.1ms VPS architecture\n3 Activate autopilot and let the algorithm mirror our institutional trades directly to your phone\nSend \"BOT\" to @elioprivate right now to secure your connection before server spots close!\n\n[Forwarded from Peter, 10:05, 215 views] MT5 History, Day tab, phone clock 09:32\nXAUUSD.s, sell 22.00 | 2026.10.01 10:30:00 | 4156.68 -> 4155.91 | 1 694.00\nProfit 1 694.00, Credit 0.00, Deposit 0.00, Withdrawal 0.00, Balance 1 694.00\n\"Another banger Elio, very steady profits\"\n\n[Forwarded from Elijah, 10:35, 143 views] MT5 History, Day tab, phone clock 09:31\nXAUUSD.s, sell 17.00 | 2026.10.01 10:30:00 | 4156.68 -> 4155.91 | 1 309.00\nProfit 1 309.00, Deposit 0.00, Withdrawal 0.00, Balance 1 309.00\n\"+$1.300 thanks again\"\n\n[Forwarded from Yohann Lejeune] MT5 History, French locale (Jour), phone clock 08:32\nXAUUSD.s, sell 2.00 | 2026.10.01 10:30:00 | 4156.68 -> 4155.91 | 154.00"
+    },
     {
       "date": "2026-09-27",
       "subject": "Clipping retainer pricing (@natejbiz second reel, transcribed)",

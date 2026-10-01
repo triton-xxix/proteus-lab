@@ -1,223 +1,259 @@
-# Narrative pull 2026-09-30 10:55Z
+# Narrative pull 2026-09-30 22:40Z
 
 ## News headlines, last 24h
 ### CoinDesk
-- OpenAI, Google and Meta pledge outside AI audits under voluntary White House deal (Wed, 30 Sep 2026)
+- Crypto industry gave $8 million to Clarity Act lobbyists who didn't close the deal (Wed, 30 Sep 2026)
+- Open USD takes on Tether, Circle with a different stablecoin model that's 'building money' (Wed, 30 Sep 2026)
+- U.S. CFTC  seeks event contract definitions that may defy states' gambling claims (Wed, 30 Sep 2026)
+- Crypto Long & Short: What will the AI agents run on? (Wed, 30 Sep 2026)
+- Clock's ticking: UK's crypto regulatory application window opens with February deadline (Wed, 30 Sep 2026)
+- Cardano tapped by Brazil’s state oil giant to track cleaner jet fuel and diesel (Wed, 30 Sep 2026)
+- A stronger dollar is a weaker threat to bitcoin than traders think (Wed, 30 Sep 2026)
+- Bitget hackers move $4 million into Zcash’s private pool, making funds harder to trace (Wed, 30 Sep 2026)
+- The SEC Is finally modernizing transfer-agent rules. Wall Street must not repeat the ‘paperwork crisis’ (Wed, 30 Sep 2026)
+- OpenAI, Google and Meta pledge independent AI safety audits under voluntary White House deal (Wed, 30 Sep 2026)
 - Metaplanet directors push back against shareholder fury over a controversial executive payout plan (Wed, 30 Sep 2026)
-- Live updates: Bitcoin below $84,000 ahead of PCE inflation data, Micron earnings (Wed, 30 Sep 2026)
+- Live updates: Bitcoin closing out best quarter since 2024, ether its best since 2021 (Wed, 30 Sep 2026)
 - Bitcoin stalls near $83,000 while lighter drops 17% on Robinhood perps plan (Wed, 30 Sep 2026)
 - OpenAI seeks $30 billion in funding at whopping $1.4 trillion valuation after delaying IPO (Wed, 30 Sep 2026)
 - Winklevoss-owned Gemini switches Zcash software ahead of faster 25-second blocks (Wed, 30 Sep 2026)
-- How European investors can now buy bitcoin without taking on U.S. dollar risk (Wed, 30 Sep 2026)
-- Bitcoin bulls have one price level to defend (Wed, 30 Sep 2026)
-- Robinhood unveils an AI that trades your money 24/7, and you carry all the risk (Wed, 30 Sep 2026)
-- XRP Ledger starts carrying fund records from Brazil operator overseeing $4 trillion (Wed, 30 Sep 2026)
-- Bitcoin rally shows signs of cooling even as a 'bull score' gauge nears its perfect score (Wed, 30 Sep 2026)
-- Robinhood adds AI agents, perps and weekend trading in push to win active traders (Tue, 29 Sep 2026)
-- Cboe, S&P Dow Jones may explore tokenized options contracts under extended licensing deal (Tue, 29 Sep 2026)
-- Ethereum users get another way to pay privately as zk.money returns after three years (Tue, 29 Sep 2026)
-- Democrats killed the Clarity Act (Tue, 29 Sep 2026)
 ### Decrypt
+- Dogecoin Is Getting Apps as DogeOS Opens Its Public Testnet (Wed, 30 Sep 2026)
+- FBI Tells Its Employees to Assume Hackers Have Their Personal Data (Wed, 30 Sep 2026)
+- Coinbase-Backed Crypto Group Reveals Midterm Endorsements After Clarity Act Collapse (Wed, 30 Sep 2026)
+- Bitget Hacker Turns to Zcash Privacy Pool After Near Rejects $50M in Swaps (Wed, 30 Sep 2026)
+- US Government's New AI Chatbot Has a Weird Minecraft Secret (Wed, 30 Sep 2026)
+- CFTC Sends White House New Rules to Cement Its Grip on Prediction Markets (Wed, 30 Sep 2026)
+- Bitcoin ETFs Extend Win Streak to 9 Days, Matching August Rally (Wed, 30 Sep 2026)
+- Introducing The Information Exchange on Solana, Powered by Decrypt and MYR (Wed, 30 Sep 2026)
+- Trump Unveils 'Morally Binding' AI Accord Signed by OpenAI, Google and Nvidia (Wed, 30 Sep 2026)
+- Bitcoin Jumps on Cool PCE Inflation Data as Bond Yields Hit 20-Year Highs (Wed, 30 Sep 2026)
+- Ex-NCA Officer Must Repay $2.4M for Bitcoin He Stole When It Was Worth $77K (Wed, 30 Sep 2026)
+- Morning Minute: Robinhood Adds Perps, Weekend Stocks, and AI Traders (Wed, 30 Sep 2026)
+- CFTC Investigating Adam Kinzinger Over Kalshi Bets on His Own Pardon: Report (Wed, 30 Sep 2026)
+- McDonald's AI ‘Pricing Engine’ Gauges What Customers Will Pay for a Big Mac: Report (Wed, 30 Sep 2026)
 - US Senator Blumenthal Calls Tether's USDT a 'Superhighway' for Iranian Sanctions Evasion (Wed, 30 Sep 2026)
-- Ethereum Gets Another Privacy Boost as Aztec Brings Back zk.money (Tue, 29 Sep 2026)
-- Cboe's New S&amp;P Deal Opens the Door to Tokenized Options (Tue, 29 Sep 2026)
-- Bitwise Launches First US Spot Near ETF After Token Nearly Triples Since August (Tue, 29 Sep 2026)
-- Anthropic Lost $42 Billion Last Year. It Wants to Go Public at $2 Trillion (Tue, 29 Sep 2026)
-- Someone Finally Jailbroke the PS5—Just After Sony Said Players Don’t Own Their Games (Tue, 29 Sep 2026)
-- OpenAI Gave AI Agents Their Own Computers at DevDay 2026. Here's Everything It Announced (Tue, 29 Sep 2026)
-- Crypto ETFs Surge as Bitcoin Funds Add $2.95 Billion in 30 Days (Tue, 29 Sep 2026)
-- BBC Director-General Deems AI-Generated Doctor Who Episode 'Pretty Good' (Tue, 29 Sep 2026)
-- Is the Red September Curse Over? Bitcoin Set for Best September on Record (Tue, 29 Sep 2026)
-- Bitcoin Hovers at $84K as Treasury Yields Hold Near Multi-Year Highs (Tue, 29 Sep 2026)
-- Morning Minute: Citi and Coinbase Just Made Stablecoins Invisible (Tue, 29 Sep 2026)
 ### Cointelegraph
+- Standard Chartered sees Ethena’s USDe reaching $40B, ENA hitting $2 (Wed, 30 Sep 2026)
+- Here’s what happened in crypto today (Wed, 30 Sep 2026)
+- Crypto advocacy group announces picks for US Congress as midterms loom (Wed, 30 Sep 2026)
+- Base completes Cobalt upgrade, adds new tools for tokenized assets (Wed, 30 Sep 2026)
+- Bloomberg brings onchain stablecoin data to its Terminal (Wed, 30 Sep 2026)
+- Brazil’s Petrobras uses Cardano to track sustainable aviation fuel, renewable diesel (Wed, 30 Sep 2026)
+- Bitget ‘gradually back to usual’ as protection fund reaches $309M (Wed, 30 Sep 2026)
+- Could THORChain face prosecution over stolen Bitget funds? Legal opinion (Wed, 30 Sep 2026)
+- Singapore crypto activity grows 55% as broader region contracts (Wed, 30 Sep 2026)
+- FCA opens crypto authorization window ahead of 2027 UK regime (Wed, 30 Sep 2026)
+- Altcoin exchange deposit count jumps 160% in 2 weeks (Wed, 30 Sep 2026)
+- A single market worth protecting: Getting the MiCA review right (Wed, 30 Sep 2026)
 - Bitcoin ETFs stretch $3.1B inflow streak as Ether funds turn red (Wed, 30 Sep 2026)
 - Crypto hardware wallets compared for 2026 (Wed, 30 Sep 2026)
 - SlowMist traces Bitget hack activity to Aug. 31 zero-day exploit (Wed, 30 Sep 2026)
-- European stablecoin issuer AllUnity launches USD stablecoin USDAU (Wed, 30 Sep 2026)
-- Here’s what happened in crypto today (Wed, 30 Sep 2026)
-- Kalshi in advanced talks to raise new funding at $40B valuation: Reuters (Wed, 30 Sep 2026)
-- Illinois draft crypto tax rules detail DeFi, stablecoin treatment (Wed, 30 Sep 2026)
-- Crypto.com AI agent still in ‘stealth mode’ nearly 8 months after Super Bowl debut (Wed, 30 Sep 2026)
-- Binance Pay lets visitors spend crypto at PayPay merchants in Japan (Wed, 30 Sep 2026)
-- Trump accord calls for tech firms to ‘self police’ their own frontier AI (Wed, 30 Sep 2026)
-- Crypto regulation at SEC, CFTC to come down to 3 commissioners following key resignation (Tue, 29 Sep 2026)
-- OpenAI valuation could hit $1.4T in new funding round: Report (Tue, 29 Sep 2026)
-- Kakaopay partners with Dinari, Ondo to explore tokenized Korean stocks (Tue, 29 Sep 2026)
-- Bitwise launches first US spot NEAR ETF after token’s recent surge (Tue, 29 Sep 2026)
-- Bitcoin gives back gains as long-term holder supply keeps $85K out of reach (Tue, 29 Sep 2026)
 ### The Block
+- Clarity Act’s failure gave crypto ‘faster’ regulatory wins, Bitwise CIO says (Wed, 30 Sep 2026)
+- CFTC secures over $30 million judgment against defendants in Fundsz fraud case (Wed, 30 Sep 2026)
+- Base launches Cobalt upgrade with conditional transactions and new B20 asset functions (Wed, 30 Sep 2026)
+- DogeOS launches testnet to bring EVM smart contracts to Dogecoin (Wed, 30 Sep 2026)
+- White House weighs new CFTC event contract rules in growing prediction market power struggle (Wed, 30 Sep 2026)
+- Bitcoin steadies as soft PCE cools October Fed rate hike bets (Wed, 30 Sep 2026)
+- Hyperliquid Co-founder Jeff Yan says 24-hour clock is not onchain finance’s true differentiator (Wed, 30 Sep 2026)
+- FCA starts accepting crypto authorization applications ahead of 2027 regime (Wed, 30 Sep 2026)
+- Standard Chartered sees over 600% upside for ENA, expects USDe to hit $40 billion by 2028 (Wed, 30 Sep 2026)
+- Crypto advocacy group Stand With Crypto rolls out its first round of Senate endorsements after failed Clarity vote (Wed, 30 Sep 2026)
 - Kalshi to end liquidity incentive program amid wash trading allegations (Wed, 30 Sep 2026)
 - Robinhood to launch perps, weekend stock trading for US users (Wed, 30 Sep 2026)
-- CryptoQuant says bitcoin correction could be near as traders’ unrealized profit hits 21-month high (Tue, 29 Sep 2026)
-- Comer presses Crypto.com, Hyperliquid and PredictIt on identity checks and suspicious trades (Tue, 29 Sep 2026)
-- Aztec relaunches zk.money privacy wallet on its Ethereum Layer 2 (Tue, 29 Sep 2026)
-- Bitcoin tests long-term holder supply cluster as leverage clears, analysts say (Tue, 29 Sep 2026)
-- Bitwise launches first US spot NEAR ETF with staking rewards (Tue, 29 Sep 2026)
-- Ondo Perps CEO sees ‘huge opportunity’ for perps in US market, under different model (Tue, 29 Sep 2026)
 ### Blockworks
 - (none)
 ### Cointelegraph Solana
 - (none)
 ### Decrypt Solana
+- Dogecoin Is Getting Apps as DogeOS Opens Its Public Testnet (Wed, 30 Sep 2026)
+- FBI Tells Its Employees to Assume Hackers Have Their Personal Data (Wed, 30 Sep 2026)
+- Coinbase-Backed Crypto Group Reveals Midterm Endorsements After Clarity Act Collapse (Wed, 30 Sep 2026)
+- Bitget Hacker Turns to Zcash Privacy Pool After Near Rejects $50M in Swaps (Wed, 30 Sep 2026)
+- US Government's New AI Chatbot Has a Weird Minecraft Secret (Wed, 30 Sep 2026)
+- CFTC Sends White House New Rules to Cement Its Grip on Prediction Markets (Wed, 30 Sep 2026)
+- Bitcoin ETFs Extend Win Streak to 9 Days, Matching August Rally (Wed, 30 Sep 2026)
+- Introducing The Information Exchange on Solana, Powered by Decrypt and MYR (Wed, 30 Sep 2026)
+- Trump Unveils 'Morally Binding' AI Accord Signed by OpenAI, Google and Nvidia (Wed, 30 Sep 2026)
+- Bitcoin Jumps on Cool PCE Inflation Data as Bond Yields Hit 20-Year Highs (Wed, 30 Sep 2026)
+- Ex-NCA Officer Must Repay $2.4M for Bitcoin He Stole When It Was Worth $77K (Wed, 30 Sep 2026)
+- Morning Minute: Robinhood Adds Perps, Weekend Stocks, and AI Traders (Wed, 30 Sep 2026)
+- CFTC Investigating Adam Kinzinger Over Kalshi Bets on His Own Pardon: Report (Wed, 30 Sep 2026)
+- McDonald's AI ‘Pricing Engine’ Gauges What Customers Will Pay for a Big Mac: Report (Wed, 30 Sep 2026)
 - US Senator Blumenthal Calls Tether's USDT a 'Superhighway' for Iranian Sanctions Evasion (Wed, 30 Sep 2026)
-- Ethereum Gets Another Privacy Boost as Aztec Brings Back zk.money (Tue, 29 Sep 2026)
-- Cboe's New S&amp;P Deal Opens the Door to Tokenized Options (Tue, 29 Sep 2026)
-- Bitwise Launches First US Spot Near ETF After Token Nearly Triples Since August (Tue, 29 Sep 2026)
-- Anthropic Lost $42 Billion Last Year. It Wants to Go Public at $2 Trillion (Tue, 29 Sep 2026)
-- Someone Finally Jailbroke the PS5—Just After Sony Said Players Don’t Own Their Games (Tue, 29 Sep 2026)
-- OpenAI Gave AI Agents Their Own Computers at DevDay 2026. Here's Everything It Announced (Tue, 29 Sep 2026)
-- Crypto ETFs Surge as Bitcoin Funds Add $2.95 Billion in 30 Days (Tue, 29 Sep 2026)
-- BBC Director-General Deems AI-Generated Doctor Who Episode 'Pretty Good' (Tue, 29 Sep 2026)
-- Is the Red September Curse Over? Bitcoin Set for Best September on Record (Tue, 29 Sep 2026)
-- Bitcoin Hovers at $84K as Treasury Yields Hold Near Multi-Year Highs (Tue, 29 Sep 2026)
-- Morning Minute: Citi and Coinbase Just Made Stablecoins Invisible (Tue, 29 Sep 2026)
 ### The Defiant
+- OFAC Sanctions Tren de Aragua ATM Network, Lists Seven Tron Addresses (Wed, 30 Sep 2026)
+- Uniswap Labs Plans OUSD Rewards Hook for Liquidity Providers (Wed, 30 Sep 2026)
+- Daines Unveils Crypto Tax Bill Pairing Payment Relief With Wash-Sale Rules (Wed, 30 Sep 2026)
+- UK FCA Opens Crypto Authorization Window Ahead of 2027 Regime (Wed, 30 Sep 2026)
+- Base Ships Cobalt With Conditional Transactions And A Seize Function (Wed, 30 Sep 2026)
+- Arc Packages USDC Funding and Morpho Lending for Apps (Wed, 30 Sep 2026)
+- Chainlink Unveils Fulcrum for Cross-Chain Institutional Repo (Wed, 30 Sep 2026)
+- Open USD Launches as Stripe's Default Stablecoin (Wed, 30 Sep 2026)
+- Lloyds and Visa Settle $750,000 in USDC in Cross-Border Pilot (Wed, 30 Sep 2026)
+- Aave V4 TVL Climbs 82% in September as Arc Reaches $181 Million (Wed, 30 Sep 2026)
+- ESMA Proposes MiCA Rules for DeFi Gateways, Staking and Lending (Wed, 30 Sep 2026)
+- Most Tokenized Cash Never Trades, Dune Finds (Wed, 30 Sep 2026)
+- Ostium Recovery Plan Repays 3,321 Wallets In Full, Leaves 345 To Choose (Wed, 30 Sep 2026)
 - Gate: Same-Name Error Triggers Liquidations in Perp Market (Wed, 30 Sep 2026)
 - Stable Announces Visa Direct Integration for Bank and Mobile Wallet Payouts (Wed, 30 Sep 2026)
-- HSBC Names Hong Kong Stablecoin 'RedCoin' Ahead of Retail Rollout (Wed, 30 Sep 2026)
-- Standard Chartered Initiates ENA Coverage With $2 Target (Wed, 30 Sep 2026)
-- Kalshi Files to End Volume Incentive Program (Wed, 30 Sep 2026)
-- Lighter Token Drops After Robinhood Perps Plan (Wed, 30 Sep 2026)
-- Morgan Stanley Sets Up Lab to Test Stablecoins and DeFi (Wed, 30 Sep 2026)
-- Robinhood Unveils In-App AI Agents for Crypto and Stock Trading (Wed, 30 Sep 2026)
-- Kalshi in Advanced Talks for $1B Raise at $40B Valuation: Reuters (Wed, 30 Sep 2026)
-- Abracadabra Proposes Winding Down MIM at Four Cents on the Dollar (Wed, 30 Sep 2026)
-- Robinhood Begins US Crypto Perps Rollout With Up to 10x Leverage (Tue, 29 Sep 2026)
-- BlackRock Sees Stablecoins Powering AI Agent Payments (Tue, 29 Sep 2026)
-- SEC Sues Cryptoaiml and TSAI Over Alleged $15 Million AI Trading Scams (Tue, 29 Sep 2026)
-- Balancer Sets Shutdown Dates After BAL Holders Approve Wind-Down (Tue, 29 Sep 2026)
-- Balancer Holders Approve Wind-Down, Reject Official Fork (Tue, 29 Sep 2026)
 ### Bankless
-- NEAR Stopped Bitget's Hackers Without Breaking Privacy (Tue, 29 Sep 2026)
+- 🏴 Robinhood Wants Everything (Wed, 30 Sep 2026)
+- Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors (Wed, 30 Sep 2026)
+- What Was Revealed at Robinhood's HOOD Summit (Wed, 30 Sep 2026)
 
 ## CoinGecko trending
-- Moonriver (MOVR), rank 834
+- Concordium (CCD), rank 520
 - Official Trump (TRUMP), rank 108
-- Quant (QNT), rank 32
+- Edel (EDEL), rank 916
+- Quant (QNT), rank 33
+- Pudgy Penguins (PENGU), rank 105
+- Backpack (BP), rank 145
 - NEAR Protocol (NEAR), rank 21
-- Pudgy Penguins (PENGU), rank 100
-- Lighter (LIT), rank 82
-- Ethena (ENA), rank 42
-- Grass (GRASS), rank 115
-- Pearl (PRL), rank 124
-- RHEA (RHEA), rank 564
-- Aster (ASTER), rank 53
-- Pump.fun (PUMP), rank 41
-- Backpack (BP), rank 158
+- Moonriver (MOVR), rank 757
+- Lighter (LIT), rank 81
+- Ondo (ONDO), rank 45
+- Stellar (XLM), rank 20
+- STONK (STONK), rank 188
 - Chainlink (LINK), rank 13
-- Venice Token (VVV), rank 70
+- Kinetiq (KNTQ), rank 276
+- Pons (PONS), rank 134
 
 ## Reddit, six subreddits, last 24h
-### r/SolanaMemeCoins: 54 posts, 129 comments in the window
-- Earning RDDT stock, holding $MOD? It's actually true. r/MODonSTONK $MOD/RDDT is a StonkFun rewards token. Our ultimate goal is to accumulate enough stock to hold a board-seat. PAY 
-- Earning $RDDT stock holding $MOD/RDDT?! It's actually true. [r/MODonSTONK](https://www.reddit.com/r/MODonSTONK/) $MOD/RDDT is a StonkFun rewards token. Our ultimate goal is to accu
-- Project WHO wants to launch a project on pump.fun for some Quick cash and excitement https://www.reddit.com/r/SolanaMemeCoins/comments/1wt685w/project/
-- looking for traders yo guys, 21m from south africa here. realized lately that my irl friends and my actual interests don't really line up anymore. most people around me just want t
-- https://memethrone.pages.dev/ [removed] https://i.redd.it/s8z9amutzfsh1.png
-- 🐧⚡ TURBO PENGUIN IS LIVE The fastest penguin on Solana. Too fast to waddle. 🐧 $TPEG CA: 218sEfPdcFHsr7MVw7y1xfy64wmspBnZ3EckPzS1pump 🔗 Pump.fun \#Solana #TPEG #MemeCoin https://www
-- 🐧⚡ TURBO PENGUIN IS LIVE 🐧⚡ TURBO PENGUIN IS LIVE The fastest penguin on Solana. Too fast to waddle. 🐧 $TPEG CA: 218sEfPdcFHsr7MVw7y1xfy64wmspBnZ3EckPzS1pump 🔗 Pump.fun \#Solana #T
-- solana memes refuse to be normal https://i.redd.it/w4kkei8vdgsh1.png
-- MadobeOS Guys, someone made a desktop privacy OS themed around the OS-tans — all 16 Madobes get their own theme [https://x.com/Madobe\_OS](https://x.com/Madobe_OS) https://i.redd.i
-- Trade Now on Pump.fun 🐧⚡ TURBO PENGUIN IS LIVE 218sEfPdcFHsr7MVw7y1xfy64wmspBnZ3EckPzS1pump https://www.reddit.com/r/SolanaMemeCoins/comments/1wt90hz/trade_now_on_pumpfun/
-- i think i accidentally created something big so yeah. $GAGGED. i didnt set out to invent the next "revolutionary protocol" or whatever people paste into every launch thread. i just
-- MadobeOS Guys, someone made a desktop privacy OS themed around the OS-tans — all 16 Madobes get their own theme https://i.redd.it/fb3vpb0qhgsh1.jpeg
-### r/memecoins: 36 posts, 176 comments in the window
-- This HAS to blow up right? [removed] https://i.redd.it/3l9s09l7xfsh1.jpeg
-- Satellite Dust ($SATDST) – tiny Solana pump.fun coin built around space art, honest status inside [removed] https://www.reddit.com/r/memecoins/comments/1wt8q72/satellite_dust_satds
-- MadobeOS [removed] https://i.redd.it/5gi7t5d0egsh1.jpeg
-- MadobeOS, privacy OS themed [removed] https://i.redd.it/xgkexvceigsh1.jpeg
-- My Pump.fun bot performs well on PAPER but badly LIVE — is ~500ms already too slow? [removed] https://www.reddit.com/r/memecoins/comments/1wtb64j/my_pumpfun_bot_performs_well_on_pa
-- My Pump.fun bot performs well on PAPER but badly LIVE — is ~500ms already too slow? [removed] https://www.reddit.com/r/memecoins/comments/1wtbtt8/my_pumpfun_bot_performs_well_on_pa
-- XFIN TOKEN - Tokenizing Real World Assets Platform [removed] https://www.reddit.com/r/memecoins/comments/1wtcwk1/xfin_token_tokenizing_real_world_assets_platform/
-- Best websites to use for memecoins So i moved, left my pc behind but im going back for it eventually. What websites do i use for memecoins what’re the best ? + extra info, what wal
-- $Jeanphil [removed] https://i.redd.it/opsa4w9bchsh1.jpeg
-- I’ve got $500 on pump.fun and I wanna go all in Not splitting it between 10 memes. I wanna pick one and send the whole $500. Drop the tickers you’re watching right now pls https://
-- pls help me out 😭 [removed] https://i.redd.it/ps135efnlhsh1.jpeg
-- pls help md out [removed] https://www.reddit.com/r/memecoins/comments/1wtf7vg/pls_help_md_out/
-### r/CryptoMoonShots: 11 posts, 19 comments in the window
-- How I try to spot a legit Web3 project before it blows up (or rugs) [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wt7vdm/how_i_try_to_spot_a_legit_web3_project_befor
-- 🚨 $SPENG — THE SMOKING PENGUIN JUST LANDED ON SOLANA 🐧🚬 [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wt9mjt/speng_the_smoking_penguin_just_landed_on_solana/
-- 🚨🐧 the smoking penguin just landed on solana. [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wt9rhi/the_smoking_penguin_just_landed_on_solana/
-- Why I’m building a self-hosted Pump.fun signals engine instead of following TG call channels [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wtaf0s/why_im_building_a_s
-- Date you will remember: 09.29.26, 19:00 UTC... Velqbit Launch # After months of building, testing, community activity, and preparing for launch, today is the day for Velqbit. The $
-- Update on my weekly NEXO/USDT technical analysis Hi guys. On the weekly chart, price bounced off the 50 SMA, which is proving to be a strong support and also corresponds pretty wel
-- Jeanphil - is looking more and more interesting [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wte9sm/jeanphil_is_looking_more_and_more_interesting/
-- I think I found the one guys. [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wtmxje/i_think_i_found_the_one_guys/
-- I think this is the gem [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wtmzlk/i_think_this_is_the_gem/
+### r/SolanaMemeCoins: 51 posts, 134 comments in the window
+- are meme coin legit or a scam /r/CryptoScams/comments/1wtolcb/are_meme_coin_legit_or_a_scam/
+- 47 tabs open. One of them is playing music. Meet ONE MORE TAB ($OMTAB). 46 tabs you swear you'll read later. 1 playing music. You open another to figure out which one. We made ONE 
+- I’ve got $500 on pump.fun and I wanna go all in /r/memecoins/comments/1wtemrc/ive_got_500_on_pumpfun_and_i_wanna_go_all_in/
+- 🏛️ UNIVERSAL LUCK ($LUCK) - The Protocol of Pure Intent 🎇🚀👊 [removed] https://www.reddit.com/r/SolanaMemeCoins/comments/1wtruit/universal_luck_luck_the_protocol_of_pure_intent/
+- WTF are these bot charts i keep seeing https://i.redd.it/2dhrlkop7ksh1.png
+- Looking for a few serious Solana memecoin traders — not beginners chasing 100x [removed] https://www.reddit.com/r/SolanaMemeCoins/comments/1wtsfx2/looking_for_a_few_serious_solana_
+- ENTELΞKRON - Better Human Tomorrow /r/EnteleKRON/comments/1wtsp9i/entelξkron_better_human_tomorrow/
+- All bc of a simple tweet One White House tweet is all it took https://i.redd.it/7to3sy91eksh1.png
+- Infinity Coin to the moon! 🌙 Infinity coin is going to the moon! Great community behind it. $INFI https://www.reddit.com/r/SolanaMemeCoins/comments/1wtt53e/infinity_coin_to_the_moo
+- Retired at 21 ask me questions in the DMs I’m bored https://i.redd.it/exehnaurnksh1.jpeg
+- NOISE [removed] https://www.reddit.com/r/SolanaMemeCoins/comments/1wtucpv/noise/
+- Emoji Munch . Com 🤠🎮 $POEM 🚀 https://i.redd.it/eetsr3v5uksh1.png
+### r/memecoins: 43 posts, 193 comments in the window
+- 💭 If You Could Turn $5 Into a Million-Dollar Movement, What Would You Build? [removed] https://www.reddit.com/r/memecoins/comments/1wtnwyj/if_you_could_turn_5_into_a_milliondollar_
+- The real diamond hands are the people who won't close a tab from 2022. $OMTAB [removed] https://i.redd.it/us83x544qjsh1.png
+- Shill me your moons on pump Got 2-3 sol to burn tonight, one coin each and tell me why it’s not complete shit https://www.reddit.com/r/memecoins/comments/1wtrhsv/shill_me_your_moon
+- Infinity Coin to the moon! 🌙 [removed] https://www.reddit.com/r/memecoins/comments/1wtrnv9/infinity_coin_to_the_moon/
+- Looking for any community [removed] https://www.reddit.com/r/memecoins/comments/1wtroq6/looking_for_any_community/
+- 🏛️ UNIVERSAL LUCK ($LUCK) - The Protocol of Pure Intent 🎇🚀👊 [removed] https://www.reddit.com/r/memecoins/comments/1wtruiz/universal_luck_luck_the_protocol_of_pure_intent/
+- UDR Coin I’ve been seeing this IG post about this United Dividend coin UDR all day throughout my algorithm. Is there anything legitimate behind this? Just wondering. https://www.re
+- Emoji Munch . Com $POEM https://i.redd.it/4q91ayzarksh1.png
+- How do I start memecoin trading? https://www.reddit.com/r/memecoins/comments/1wtv4ac/how_do_i_start_memecoin_trading/
+- Check out my project, built with Netlify [removed] https://startling-dasik-0766cd.netlify.app/?utm_source=go-live&utm_content=reddit
+- Got into cate at 130k [removed] https://www.reddit.com/r/memecoins/comments/1wtwu55/got_into_cate_at_130k/
+- Download the app and input my referral code SolHotBaron! https://pump.fun/join/SolHotBaron Download the app and input my referral code SolHotBaron! https://pump.fun/join/SolHotBaro
+### r/CryptoMoonShots: 10 posts, 27 comments in the window
 - 🏛️ UNIVERSAL LUCK ($LUCK) - The Protocol of Pure Intent 🎇🚀👊 [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wtrumq/universal_luck_luck_the_protocol_of_pure_intent/
 - The thinking behind $CCAT — why we built a meme-coin around accountability instead of hype [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wtye00/the_thinking_behind_c
-### r/solana: 35 posts, 146 comments in the window
-- If I buy Tesla on Solana, do I actually own Tesla? [removed] https://www.reddit.com/r/solana/comments/1wt6t79/if_i_buy_tesla_on_solana_do_i_actually_own_tesla/
-- well come to solvix core https://i.redd.it/uelupadrwfsh1.png
-- The easiest way to reclaim stuck SOL? I’ve googled the way to reclaim my solana and found dozens of sites like https://solmoon.gg/claim-your-sol but how can I make sure this is all
-- Backpack Introduces New Rates Dashboard for Treasury Yields and ETFs Backpack has launched its Rates dashboard, giving traders a clear view of live Treasury yields, inflation data,
-- MadobeOS, privacy OS themed OS-tans [removed] https://i.redd.it/s9q5t17fegsh1.jpeg
-- MadobeOS, privacy OS themed [removed] https://i.redd.it/108os1haigsh1.jpeg
-- My cat is not impressed by my yacht. He wants a bigger one [removed] https://i.redd.it/asdkebu5kgsh1.jpeg
-- 🚨🐧 il pinguino fumante è appena atterrato su Solana. /r/SolanaMemeCoins/comments/1wt9sf1/the_smoking_penguin_just_landed_on_solana/
-- Solana hangi fiyatlara gider? [removed] https://i.redd.it/lkrp0u00mgsh1.jpeg
-- Why I’m building a self-hosted Pump.fun signals engine instead of another call bot [removed] https://v.redd.it/n34kqd0vkgsh1
-- Shower idea: Would you use a platform that let's you build your own algo trading model without writing code? [removed] https://i.redd.it/2i6rm36rqgsh1.png
-- Metaplex Introduces MPL-3643, A New Standard For Permissioned Real-world Assets And Tokenized Securities On Solana **Source:** [https://x.com/metaplex/status/2104935742309019933](h
-### r/pumpfun: 14 posts, 58 comments in the window
-- MadobeOS Guys, someone made a desktop privacy OS themed around the OS-tans — all 16 Madobes get their own theme [https://x.com/Madobe\_OS](https://x.com/Madobe_OS) https://i.redd.i
-- new launch has 2000 holders already but I’m not convinced Saw a new coin sitting around 2k holders way faster than I expected so I started digging into it on pump. The chart looks 
-- MadobeOS, privacy OS themed Guys, someone made a desktop privacy OS themed around the OS-tans — all 16 Madobes get their own theme https://i.redd.it/aun1pxxbigsh1.jpeg
-- Why are you still following T.G call Channels into someone else’s exit liquidity? WTF!! I’ve been digging into how T.G call channels work, and my conclusion is pretty simple: a cal
-- Darren Woods Exxon Mobil memcoin Company https://i.redd.it/t53raae7qgsh1.jpeg
-- i've created my first coin on solana [removed] https://i.redd.it/z1v88u2x3hsh1.jpeg
-- "Loaded my wallet with SOL, literally just waiting for your signal. $SOLKU 🟠 CA: 7vq7JQyY2MLy9A7raLbY5gkRAq2frTBSXR88iF7Ppump https://www.reddit.com/r/pumpfun/comments/1wtecqz/load
-- Introducing Introducing Repoken 🐈 $Repoken CA: 12qmDF3Jh5CxA1KczHsbmfqr7Hdjntfn93oKvkEfpump Turn any GitHub repo into a token on-chain — no contracts to write. → Sign in with GitHu
+- HWARs on Robinhood I am a solo dev who spend quite some time working on a platform for the meme communities to host some arcade gaming events. Wager their tokens, challenge other c
+- [ Removed by moderator ] [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wu2ae6/hwars_on_robinhood_chain/
+- 1000 PayFi Early Access Users Before TGE I’ve been following Remittix and the last few updates from their X account are worth breaking down. The biggest one, IMO, is the 1000 PayFi
+- I’ve been down a rabbit hole the last few days looking into Nami, and I honestly think it’s one of the more interesting DeFi launches I’ve seen in a while. [removed] https://www.re
+- I think we’re about to find out whether AI agents are actually useful or whether they’re just fancy chatbots. [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wu8j00/i_
+- SAAR TOKEN NOW IS BINGX [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wuasgy/saar_token_now_is_bingx/
+- Ace of Clovers (AoC) 🍀 [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wudeu3/ace_of_clovers_aoc/
+- Pump.fun chrome extension! [removed] https://www.reddit.com/r/CryptoMoonShots/comments/1wuhhrx/pumpfun_chrome_extension/
+### r/solana: 41 posts, 109 comments in the window
+- are meme coin legit or a scam /r/CryptoScams/comments/1wtolcb/are_meme_coin_legit_or_a_scam/
+- 30k+ holders later, NEET is a wild Pump success story 2021 made memecoins impossible to ignore and NEET gives me a bit of that same stupid internet money energy just in a different
+- Solandy - Rebuild you Programs for SBPFv3 [Solana Tutorial] - Sept 23rd '26 https://www.youtube.com/watch?v=1IcxDQa8hE0
+- All bc of a simple tweet One White House tweet and people made bank https://i.redd.it/xgczxzv8gksh1.png
+- Wallets holding stablecoins on Solana grew from 7.84M in Sept '25 to 8.83M on Jan 1 and to 13.07M today — up 16% QoQ, 48% YTD, and 67% YoY. [removed] https://i.redd.it/solavloh6lsh
+- please give me 0.000005 solona [removed] https://www.reddit.com/r/solana/comments/1wtw4jj/please_give_me_0000005_solona/
+- Built on Solana specifically because of what the chain makes verifiable — the thinking behind $CCAT [removed] https://www.reddit.com/r/solana/comments/1wtyoxh/built_on_solana_speci
+- $19 tool, defi app, check em out [removed] https://www.reddit.com/r/solana/comments/1wtz7ve/19_tool_defi_app_check_em_out/
+- 💰 Making $100K+ Monthly With Connect Wallet Gaming Scripts [removed] https://www.reddit.com/r/solana/comments/1wtza7l/making_100k_monthly_with_connect_wallet_gaming/
+- I built a $19 tool to track myfarming across [removed] https://www.reddit.com/r/solana/comments/1wtzfp5/i_built_a_19_tool_to_track_myfarming_across/
+- JUST IN: Bitwise ETF clients buy $5.75 million worth of SOL https://www.reddit.com/gallery/1wu04ns
+- What’s the future? Don’t miss the chance! https://i.redd.it/efk1pmv7qmsh1.jpeg
+### r/pumpfun: 19 posts, 51 comments in the window
 - How are people actually makeing profit in memecoins? Ive made a few buck from pump fun and I consider my self relatively new to the memecoin space but my profits is nowhere near th
 - Meet $OMTAB: the browser tab you refuse to close You close the chart. Open it again. Open a second one to confirm. Somehow there are now 47 tabs and your laptop sounds like an airp
 - Follow and follow back Every person follow me on pumpfun I will follow back, username: @RarePlacidMind https://www.reddit.com/r/pumpfun/comments/1wtsqaw/follow_and_follow_back/
 - Need some like-minded people [removed] https://www.reddit.com/r/pumpfun/comments/1wtxawi/need_some_likeminded_people/
-### r/CryptoCurrency: 79 posts, 509 comments in the window
-- Altseason starts October 1st ,2026 . Render network will hit 50-100 dollars then drop to 5-15 dollars in 2027. 🤙 [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt64sz/
-- We're so back https://www.youtube.com/watch?v=7XyXcvllObg&list=RD7XyXcvllObg
-- What is one thing you would change about crypto today?What would you improve? https://i.redd.it/b7h8cyw0lfsh1.jpeg
-- Call for investment [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt7h7w/call_for_investment/
-- Quoted $15k/year for Ivan on Tech's Bullmania... Is this a joke [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt8agq/quoted_15kyear_for_ivan_on_techs_bullmania_is/
-- What are your thoughts on Rabbithole’s new Ambassador Program and its bounty tier structure? [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt8ep5/what_are_your_though
-- Clearing house and Quant [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt8fb4/clearing_house_and_quant/
-- Crypto Play to Earn Games [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt8lhc/crypto_play_to_earn_games/
-- Quoted $15,000/year for Ivan on Tech's "Bullmania"... Is anyone actually paying this? Just finished an onboarding call with the team for Ivan on Tech’s **Bullmania** suite (which i
-- Risk taker ka ba? Join ka na dito #DDI https://i.redd.it/d3761qbbfgsh1.jpeg
-- Gnosis Chain is retiring its validators and settling on Ethereum instead. The L1 premium is gone. [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wt953w/gnosis_chain_is
-- Vitalik Buterin: Ethereum to Evolve Beyond a Traditional Blockchain by 2030 [removed] https://i.redd.it/2qe1rzbdigsh1.jpeg
+- memecoin group I'm a secondary market trader. Recently, I've been observing and learning about meme trading. Everyone can share what they want to discuss. https://www.reddit.com/r/
+- QATAR FALCON $QATAR - $3.3K MC - 2 Holders only - Super Early Gem 🦅🇶🇦 [removed] https://i.redd.it/4pf4ssv1ylsh1.jpeg
+- QATAR FALCON 🦅 - Richest country narrative, still $3K MC early [removed] https://i.redd.it/5lsf5zfvxmsh1.jpeg
+- Pump fun Tenho interesse em aprender sobre a pump fun, mas não acho conteúdos em português, alguém que entenda teria interesse em ensinar e cobrar um valor que eu possa pagar? http
+- BagPieBench's update on pump.fun https://pump.fun/callouts/E1LZZ1tH9vpyNMvJ6SLRKCnedTj2uS6rtm7e44PBpump/d75e0b7d-e37f-4704-9b7d-da2cc75dbfa9/d14e6edd-a706-4d96-82b2-c42d45ab92d4?sh
+- best way to use Callouts without getting cooked? Callouts are way more useful when you treat them like a filter instead of a signal to ape. i’m checking who keeps showing up, what 
+- Who wants volume and exposure to multiple assets I am willing to help out anyone who wants to get their pump coins moving https://www.reddit.com/r/pumpfun/comments/1wu86xu/who_want
+- sorry Im new There’s something I don’t understand some people say that if you want to get into meme coins, you need a lot of money that you can't make much with just 10 or 20 dolla
+### r/CryptoCurrency: 82 posts, 543 comments in the window
+- are meme coin legit or a scam /r/CryptoScams/comments/1wtolcb/are_meme_coin_legit_or_a_scam/
+- self-custody or exchange? https://i.redd.it/eqqg0qhfljsh1.jpeg
+- 🔐 VaultForgeBot — Crypto Wallet Generator [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wtq64g/vaultforgebot_crypto_wallet_generator/
+- [SERIOUS] Need help, money sent to incorrect wallet [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wtq8rd/serious_need_help_money_sent_to_incorrect_wallet/
+- Will October be a bullish month? [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wtqvvb/will_october_be_a_bullish_month/
+- Pump it bro please [deleted] 
+- "You a crypto millionaire?" "Yeah how did you know?" https://i.redd.it/1b9woxno2ksh1.png
+- Hackindia Hackathon [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wtrmy2/hackindia_hackathon/
+- Is Bitcoin setting up for another move higher, or are we due a deeper correction? [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wtrsd4/is_bitcoin_setting_up_for_anoth
+- Hi bitcoin [removed] https://www.reddit.com/r/CryptoCurrency/comments/1wtrtl2/hi_bitcoin/
+- Anu suggestions [removed] https://i.redd.it/ygr2onj69ksh1.jpeg
+- Schwab Crypto Has Opened! [removed] https://i.redd.it/3plpgzwmbksh1.jpeg
 
 ## Telegram channels, last 24h
 ### t.me/cryptonary: 0 messages
-### t.me/WatcherGuru: 12 messages
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyODQsInQiOjE3OTA3NjU3ODQsImgiOiJlMGRlNzkzMjYwNWJjZDFhMTcifQ"> Watcher Guru JUST IN: Anthropic's Claude AI is currently down for many users worldwide. @WatcherGuru 1 🤣 381 🤡 104 
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyODUsInQiOjE3OTA3NjU3ODQsImgiOiI0N2M4ZDBjNWYyODJlNzQxZTEifQ"> Watcher Guru JUST IN: 🇺🇸 US 30-year Treasury yield rises to highest level since 2002. @WatcherGuru 🤣 429 🔥 212 🤡 12
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyODYsInQiOjE3OTA3NjU3ODQsImgiOiIxN2ZiNzIyYzIzYzM0NTYxY2UifQ"> Watcher Guru JUST IN: OpenAI targets $30,000,000,000 funding round at $1.4 trillion valuation. @WatcherGuru 🤡 473 🔥
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyODcsInQiOjE3OTA3NjU3ODQsImgiOiIxMDE2NWJmMTg3YmJkNDZjZDAifQ"> Watcher Guru JUST IN: 🇺🇸 President Trump says a new "Super Intelligence Czar" will be named soon. @WatcherGuru 🤡 43
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyODgsInQiOjE3OTA3NjU3ODQsImgiOiJkZTA4MTMyYzI3ZDdlZWJiYjAifQ"> Watcher Guru JUST IN: 🇺🇸 Illinois releases draft rules to tax crypto transactions regardless of profit or loss, sta
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyODksInQiOjE3OTA3NjU3ODQsImgiOiJkNjZmNTAwODM4MzhjMGY4OTgifQ"> Watcher Guru JUST IN: Jim Cramer says "I think a bond short squeeze could actually occur." @WatcherGuru 2 🤣 457 🤡 1
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyOTAsInQiOjE3OTA3NjU3ODQsImgiOiI3ZjQzMGQ4Njk0NmM4NjFkN2UifQ"> Watcher Guru JUST IN: 🇺🇸 Robinhood $HOOD launches crypto and stock perpetual futures trading. @WatcherGuru 🔥 379 ❤ 
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyOTEsInQiOjE3OTA3NjU3ODQsImgiOiJhOWZhMmI1M2IxMjU0ZmFhZjAifQ"> Watcher Guru JUST IN: 🇯🇵 Binance Pay launches $USDT payments at millions of PayPay-supported locations across Japan
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6IjE1MjkyZyIsInQiOjE3OTA3NjU3ODQsImgiOiJmYTVhMzc4YzNlZmQ5MDczZTgifQ"> Watcher Guru JUST IN: Tom Lee says crypto has entered a "bull market." @WatcherGuru 🔥 533 🤣 301 🤡 126 ❤ 96 💩 42
--  data-view="eyJjIjotMTU1NjA1NDc1MywicCI6MTUyOTQsInQiOjE3OTA3NjU3ODQsImgiOiIxYTkwYTljYzE0Y2Q3NTQ4YmYifQ"> Watcher Guru JUST IN: 🇺🇸 President Trump tells Americans to trust AI companies to police themselves. @WatcherGuru 🤣
+### t.me/WatcherGuru: 18 messages
+-  JUST IN: 🇺🇸 Federal Reserve is no longer projected to hike interest rates at the next FOMC meeting. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15301?single https://t.me/Watch
+-  JUST IN: 🇺🇸 $META classified Mark Zuckerberg as a "researcher" to claim a $355,000,000 tax break on his $4 billion compensation, NYT reports. The IRS is now trying to recover the $355 million in tax savings. @WatcherGur
+-  JUST IN: 🇺🇸 SEC Chair Paul Atkins says the agency is working to provide regulatory clarity for crypto and digital finance innovation. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGu
+-  JUST IN: 🇺🇸 Senate Republicans officially introduce crypto tax bill. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15305
+-  JUST IN: 🇺🇸 Florida Governor Ron DeSantis says the US should "never" have a Central Bank Digital Currency (CBDC). @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/Watc
+-  JUST IN: 🇺🇸 OpenAI CEO Sam Altman to skip Congressional hearing on AI. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15307
+-  JUST IN: 🇺🇸 President Trump says Federal Reserve's Jerome Powell should be "forced to resign" from the board. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15308?single https://
+-  JUST IN: Google $GOOGL officially unveils its most powerful 'Gemini 4' AI model. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15310
+-  JUST IN: Jim Cramer says "I think a bond short squeeze could actually occur." @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15289 https://t.me/WatcherGuru https://t.me/WatcherGu
+-  JUST IN: 🇺🇸 Robinhood $HOOD launches crypto and stock perpetual futures trading. @WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru https://t.me/WatcherGuru/15290 /s/WatcherGuru?afte
 
 ## X, summarised by xAI (Grok) with x_search
-- **Heavy activity on pump.fun launches and referrals** (~15+ posts): Multiple fair launches announced, referral campaigns with SOL giveaways for sign-ups.[[1]](https://x.com/MeteorFancyBeat/status/2105246511777145011)
-- **$QRCAT pumping hard (CA: aD2P7HNY4F5Pqp6QcBWEDAkEgcT1QqPUsafajS1AAea)** (~8 posts): Multiple calls of 14x–57x gains from low MCAP, TG community pushing it.[[2]](https://x.com/_FalconGems/status/2105248395036069940)
-- **New launches on pump.fun dominant** (~10 posts): Coins like $THRU ("Radical Throughputism", thru.money), $BUD (community-first, CA: HNRh2RCZuuCG75mQAKJD4Rod9GEK9Y6qaaQ2YwvVpump), $SI (Solana Inu at 300k MC), generic new memes.[[3]](https://x.com/EthSince18/status/2105248682904015334)
-- **Ongoing warnings about rugs/scams in Solana memes** (~6 posts): Users citing personal rugs, wallet drains, farming; one detailed scam alert on a bundled launch with sniper wallets (CA ending in pump, flagged by @CryptoScamHuntO).[[4]](https://x.com/pellinskii/status/2105240326386704395)
-- **$SWORDCAT / cat wif sword narrative gaining traction** (~5 posts): Viral medieval cat meme turning into Solana token via pump.fun (CA: 5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump); multiple accounts pushing lore/remixes (one account heavy on this).[[5]](https://x.com/mrKatanaETH/status/2104880415076954578)
-- **Platform news: pump.fun reclaiming dominance** (~4 posts): 73% market share, fees printing, $PUMP token up, beating copycats like StonkFun; tokenized stock memes (NVDA/SPY) as emerging meta.[[6]](https://x.com/nyx_cryptooo/status/2105009662907306093)
-- **Established memes mentioned ($GOAT, $BONK)** (~4 posts): $GOAT noise with airdrop links (one account); $BONK as ecosystem staple/under-dog story.[[7]](https://x.com/ImThat84499120/status/2105247817422025088)
-- **General fatigue with rugs leading to exits** (~3 posts): One trader (@pellinskii) quitting Solana memes after multiple rugs/drains, moving to ETH plays.[[4]](https://x.com/pellinskii/status/2105240326386704395)
-- **Low-cap gems and cat cults pushed** (~3 posts): Mentions of dedicated communities (e.g., one cat-themed with strong memetics).[[8]](https://x.com/bncryptoworld/status/2104858610337484944)
-- **Caution on multi-chain duplicates** (~2 posts): $SWORDCAT variants across networks; verify CA on Solana/pump.fun.[[9]](https://x.com/DogiDogi21/status/2104882985430364216)
+- **Heavy promotion of $SI (multiple CAs mentioned, e.g. 9rJsqPD1UqeXo1dgPybwTKm7Luga8bXVQ5A3EiYFhfeA and EmLPFwLkzaPdT548oKXT9CMh9bSB9Ez93fBgmmoapump) with rapid pumps (30-94x claims from low MC)**: ~15 posts (mostly from a handful of alpha/TG promo accounts; one account drove repeated updates).[[1]](https://x.com/DegenPhantvae/status/2105426982502613286)
+
+- **AI-signal style alerts on new/low-cap Solana memecoins (bundler wallets, dev sells, concentration risks noted)**: ~8 posts (primarily from @bitecong and similar alert accounts).[[2]](https://x.com/bitecong/status/2105424594752753991)
+
+- **New/anti-vamp launchpad news: Garlic on pump.fun (PVP battles, X-native payouts, vote via $GARLIC hold)**: ~3 posts (one account).[[3]](https://x.com/usegarlics/status/2105425005970587755)
+
+- **Repopad multichain launchpad updates (Meteora on Solana, repo-based launches)**: ~2 posts (one account).[[4]](https://x.com/repopad_rh/status/2105425407596208367)
+
+- **$GITFUEL narrative (GitHub repos → pump.fun markets, creator fees, buybacks)**: ~2 posts (one account at ~$10K MC).[[5]](https://x.com/guywithgut/status/2105425169493942664)
+
+- **$SPEED (IShowSpeed) breakout from pump.fun to Pump AMM, LP burnt, low rug metric**: ~2 posts (one account).[[6]](https://x.com/GemChaserSOL/status/2105426625546395823)
+
+- **$SONIC shilled as long-hold on pump.fun (CA given)**: ~2 posts (one account).[[7]](https://x.com/ZionistElon/status/2105426437574668528)
+
+- **$FI (Football Inu, CA: EVvu28CjN6nQWmi33j4yoAxVbuVz6cxX8hRtjFf147g8) Raydium launch with bundlers/smart buys**: ~2 posts (one account).[[2]](https://x.com/bitecong/status/2105424594752753991)
+
+- **$Arthur multibuys on Meteora (dev history flagged as potential runner/rug)**: ~2 posts (one account).[[8]](https://x.com/corahalesol/status/2105424605724721224)
+
+- **$LGATR thematic memecoin on pump.fun (CA given)**: ~2 posts (one account).[[9]](https://x.com/LGATRmeme/status/2105423438458339445)
+
+- **General Solana memecoin pump fatigue, bleeding portfolios, BTC dominance reminder**: ~4 posts.[[10]](https://x.com/Shashik49289844/status/2105424654269837657)
+
+- **AI + DeFi + Solana + memecoins as next narrative combo**: ~3 posts.[[11]](https://x.com/cryptohope47/status/2105424701816480095)
+
+- **Scam/rug warnings on bundled launches and hidden sniping groups (e.g. one flagged CSEC_1897 CA)**: ~4 posts (rests partly on dedicated scam-hunter accounts).[[12]](https://x.com/CryptoScamHuntO/status/2104914209939099689)
+
+- **High-risk flags on new tokens (bundlers, dev sold out, concentration, high death-rate stats)**: ~6 posts (mostly from one alert account).[[13]](https://x.com/bitecong/status/2105422609861214462)
+
+- **pump.fun remains dominant launch platform; mentions of Raydium migrations and Meteora DBC**: ~5 posts.[[2]](https://x.com/bitecong/status/2105424594752753991)
+
+- **letsbonk received no notable mentions in sampled posts**. 0 posts.
 
 ## Tonight's Grinder picks and their mention rows
 - G-0023 ECTF eNBcJZ2yWFs45326ifVxaHWtszPTwCdmgHzH2pTpump, entry 2026-09-29T22:26:42Z; mentions: none pulled
 - G-0024 SI 97SkmPTaFH5zT4QD2KjSsmxaPmKG3PL9kxb3KMtsJwfs, entry 2026-09-29T22:26:42Z; mentions: none pulled
-- G-0025 PARASITE 3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump, entry 2026-09-29T22:26:42Z; mentions: none pulled
+- G-0025 PARASITE 3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump, entry 2026-09-29T22:26:42Z; mentions: dexpaid count 2 authors  orders 1 paid-before-asof 1, boosts 1 (boost times not given; jupiter count 75 authors 7575 {"isVerified": null, "tags": ["unknown", "token-2022"], "aud; reddit count 0 authors 0 ; telegram count 0 authors 0 
 - G-0026 cNFTs A71Uf3jwg57fNedSao9eFwm9eKSLYFbVJ85T4fuXpump, entry 2026-09-29T22:26:42Z; mentions: none pulled
+- G-0027 SI 9aqmJjCnnMQv42TXLk921ceUkN35nea2QP969n1caqjj, entry 2026-09-30T22:27:25Z; mentions: dexpaid count 1 authors  orders 1 paid-before-asof 1, boosts 0 (boost times not given; jupiter count 75 authors 11511 {"isVerified": null, "tags": ["unknown", "token-2022"], "aud; reddit count 0 authors 0 ; telegram count 77 authors 6 Doraemon_Call:1,SpyDefiLive:5,SpyDefiLiveSol:5,TWOSICCsPICCs; x count 9 authors 5 Only exact contract matches counted; many $SI refer to other
+- G-0028 AIRPAD 6ZG6fMHaE7NpubJr16G8nFLBg91rH5kU5SVpqUmQpump, entry 2026-09-30T22:27:25Z; mentions: dexpaid count 2 authors  orders 1 paid-before-asof 1, boosts 1 (boost times not given; jupiter count 58.92248001235158 authors 477 {"isVerified": null, "tags": ["unknown", "token-2022"], "aud; reddit count 0 authors 0 ; telegram count 3 authors 2 dexscreener_trending:1,spydefi:2; x count 0 authors 0 no matching posts
+- G-0029 BANDIT JCX5nDG99k1CWB9AttJ3U57NmjSgnCoagFaZhqfEf7Ah, entry 2026-09-30T22:27:25Z; mentions: dexpaid count 1 authors  orders 1 paid-before-asof 1, boosts 0 (boost times not given; jupiter count 75 authors 5000 {"isVerified": null, "tags": ["unknown", "token-2022"], "aud; reddit count 0 authors 0 ; telegram count 14 authors 6 MoonTrending:1,SpyDefiLive:1,SpyDefiLiveSol:1,dexscreener_tr; x count 0 authors 0 no matching posts
+- G-0030 Meridian GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G, entry 2026-09-30T22:27:25Z; mentions: dexpaid count 0 authors  orders 0 paid-before-asof 0, boosts 0 (boost times not given; jupiter count 63.0040038213097 authors 1002 {"isVerified": null, "tags": ["unknown", "token-2022"], "aud; reddit count 0 authors 0 ; telegram count 10 authors 3 SpyDefiLive:1,SpyDefiLiveSol:1,spydefi:8; x count 0 authors 0 no matching posts
 
 ## Pull errors
 - none
