@@ -1,0 +1,254 @@
+[
+ {
+  "kickoff_utc": "2026-10-02T16:00:00Z",
+  "home": "Cyprus",
+  "away": "Armenia",
+  "elo_diff_with_home": 43,
+  "we": 0.562,
+  "total": 2.4,
+  "p": [
+   0.425,
+   0.274,
+   0.301
+  ],
+  "over25": 0.43
+ },
+ {
+  "kickoff_utc": "2026-10-02T18:45:00Z",
+  "home": "Bosnia & Herzegovina",
+  "away": "Sweden",
+  "elo_diff_with_home": -4,
+  "we": 0.494,
+  "total": 2.35,
+  "p": [
+   0.354,
+   0.28,
+   0.366
+  ],
+  "over25": 0.418
+ },
+ {
+  "kickoff_utc": "2026-10-02T18:45:00Z",
+  "home": "Faroe Islands",
+  "away": "Slovakia",
+  "elo_diff_with_home": -193,
+  "we": 0.248,
+  "total": 2.76,
+  "p": [
+   0.143,
+   0.208,
+   0.648
+  ],
+  "over25": 0.52
+ },
+ {
+  "kickoff_utc": "2026-10-02T18:45:00Z",
+  "home": "France",
+  "away": "Italy",
+  "elo_diff_with_home": 321,
+  "we": 0.864,
+  "total": 3.05,
+  "p": [
+   0.793,
+   0.142,
+   0.065
+  ],
+  "over25": 0.588
+ },
+ {
+  "kickoff_utc": "2026-10-02T18:45:00Z",
+  "home": "Hungary",
+  "away": "Georgia",
+  "elo_diff_with_home": 161,
+  "we": 0.716,
+  "total": 2.67,
+  "p": [
+   0.604,
+   0.225,
+   0.171
+  ],
+  "over25": 0.5
+ },
+ {
+  "kickoff_utc": "2026-10-02T18:45:00Z",
+  "home": "Poland",
+  "away": "Romania",
+  "elo_diff_with_home": 191,
+  "we": 0.75,
+  "total": 2.75,
+  "p": [
+   0.645,
+   0.21,
+   0.145
+  ],
+  "over25": 0.519
+ },
+ {
+  "kickoff_utc": "2026-10-02T18:45:00Z",
+  "home": "Ukraine",
+  "away": "Northern Ireland",
+  "elo_diff_with_home": 168,
+  "we": 0.725,
+  "total": 2.69,
+  "p": [
+   0.614,
+   0.222,
+   0.165
+  ],
+  "over25": 0.504
+ },
+ {
+  "kickoff_utc": "2026-10-03T13:00:00Z",
+  "home": "Finland",
+  "away": "Albania",
+  "elo_diff_with_home": 0,
+  "we": 0.5,
+  "total": 2.35,
+  "p": [
+   0.36,
+   0.28,
+   0.36
+  ],
+  "over25": 0.417
+ },
+ {
+  "kickoff_utc": "2026-10-03T16:00:00Z",
+  "home": "Belarus",
+  "away": "San Marino",
+  "elo_diff_with_home": 693,
+  "we": 0.982,
+  "total": 3.42,
+  "p": [
+   0.93,
+   0.059,
+   0.01
+  ],
+  "over25": 0.664
+ },
+ {
+  "kickoff_utc": "2026-10-03T16:00:00Z",
+  "home": "Croatia",
+  "away": "England",
+  "elo_diff_with_home": -123,
+  "we": 0.33,
+  "total": 2.57,
+  "p": [
+   0.208,
+   0.244,
+   0.548
+  ],
+  "over25": 0.475
+ },
+ {
+  "kickoff_utc": "2026-10-03T16:00:00Z",
+  "home": "Estonia",
+  "away": "Luxembourg",
+  "elo_diff_with_home": 44,
+  "we": 0.563,
+  "total": 2.4,
+  "p": [
+   0.426,
+   0.274,
+   0.3
+  ],
+  "over25": 0.43
+ },
+ {
+  "kickoff_utc": "2026-10-03T16:00:00Z",
+  "home": "Iceland",
+  "away": "Bulgaria",
+  "elo_diff_with_home": 268,
+  "we": 0.824,
+  "total": 2.94,
+  "p": [
+   0.74,
+   0.168,
+   0.092
+  ],
+  "over25": 0.563
+ },
+ {
+  "kickoff_utc": "2026-10-03T18:45:00Z",
+  "home": "North Macedonia",
+  "away": "Scotland",
+  "elo_diff_with_home": -131,
+  "we": 0.32,
+  "total": 2.59,
+  "p": [
+   0.2,
+   0.24,
+   0.56
+  ],
+  "over25": 0.48
+ },
+ {
+  "kickoff_utc": "2026-10-03T18:45:00Z",
+  "home": "Spain",
+  "away": "Czech Republic",
+  "elo_diff_with_home": 722,
+  "we": 0.985,
+  "total": 3.43,
+  "p": [
+   0.93,
+   0.059,
+   0.011
+  ],
+  "over25": 0.665
+ },
+ {
+  "kickoff_utc": "2026-10-03T18:45:00Z",
+  "home": "Switzerland",
+  "away": "Slovenia",
+  "elo_diff_with_home": 374,
+  "we": 0.896,
+  "total": 3.15,
+  "p": [
+   0.837,
+   0.118,
+   0.045
+  ],
+  "over25": 0.609
+ },
+ {
+  "kickoff_utc": "2026-10-04T18:45:00Z",
+  "home": "Netherlands",
+  "away": "Serbia",
+  "elo_diff_with_home": 383,
+  "we": 0.901,
+  "total": 3.16,
+  "p": [
+   0.844,
+   0.114,
+   0.042
+  ],
+  "over25": 0.612
+ },
+ {
+  "kickoff_utc": "2026-10-04T18:45:00Z",
+  "home": "Portugal",
+  "away": "Norway",
+  "elo_diff_with_home": 239,
+  "we": 0.798,
+  "total": 2.87,
+  "p": [
+   0.706,
+   0.184,
+   0.11
+  ],
+  "over25": 0.547
+ },
+ {
+  "kickoff_utc": "2026-10-04T18:45:00Z",
+  "home": "Republic of Ireland",
+  "away": "Israel",
+  "elo_diff_with_home": 204,
+  "we": 0.764,
+  "total": 2.78,
+  "p": [
+   0.663,
+   0.203,
+   0.135
+  ],
+  "over25": 0.527
+ }
+]
