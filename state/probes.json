@@ -1,5 +1,5 @@
 {
- "next_id": 49,
+ "next_id": 50,
  "items": [
   {
    "id": "P-0001",
@@ -1052,6 +1052,28 @@
     "Bash `node --version`",
     "Bash `jq -r \".tree[].path | select(test(\\\"(home|paths|instance|data-dir)[^/]*\\\\\\\\.ts$\\\"; \\\"i\\\"))`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0049",
+   "title": "pump.fun poller v3: store base token address and take the 5-minute snapshot per token, so graduation rate and minute-five profile are measured, not name-matched",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-01",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-01T23:53:31+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-01T23:55:31+0100",
+   "note": "Poller v3 built and loaded as launchd job com.proteus.p0049 for 24 h from 22:55 UTC: base token stored per pool, 5-minute snapshots by pools/multi lookup. Hand poll: 23 of 23 lookups returned, 3 graduations matched by token in 100 rows; page 6 drew 429.",
+   "artefacts": [
+    "experiments/2026-10-01-P-0049"
+   ],
+   "minutes": 2,
+   "calls": 16,
+   "denied": [],
    "luke": false
   }
  ]
