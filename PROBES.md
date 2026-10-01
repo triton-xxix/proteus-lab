@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 28 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
+Verdicts so far: 28 works, 2 broken, 7 blocked, 2 not worth it. Killed: 2.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,13 +19,13 @@ Verdicts so far: 28 works, 1 broken, 7 blocked, 2 not worth it. Killed: 2.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0033 | Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation counts against P-0014's floor, and what graduates looked like at minute five from snapshots.jsonl | desk | none | 2026-09-30 | 0 | 30 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0047 | sports-skills: do Understat xG and ClubElo pulls work keyless, and how closely do they match the Pitch ratings? | harvest | none |  | 0 | 25 min |
 | P-0048 | Paperclip agent orchestrator: does it install and boot locally keyless, and what does its task and approval state look like on disk? | field-notes | none |  | 0 | 20 min |
 
-## Verdicts (38)
+## Verdicts (39)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-01 | P-0047 | sports-skills: do Understat xG and ClubElo pulls work keyless, and how closely do they match the Pitch ratings? | **broken** | Upstream sources failed tonight: api.clubelo.com gave HTTP 502 then timed out over https, Understat timed out twice; clubelo.com itself answered 301, so comparison with Pitch ratings never started. Cause unknown: outage, rate limit or sandbox filter. | `experiments/2026-10-01-P-0047` | 3 min, 9 calls, 0 denied |
 | 2026-10-01 | P-0046 | xG from scratch: does distance-and-angle logistic regression beat a constant baseline on StatsBomb open shots? | **works** | Yes: on 843 held-out non-penalty shots (WC 2022 and Euro 2024), distance and angle logistic scores log loss 0.280 v constant 0.308 v StatsBomb xG 0.249; adding a header flag gives 0.268, 69 percent of the gap closed. | `experiments/2026-10-01-P-0046` | 1 min, 5 calls, 0 denied |
 | 2026-09-30 | P-0044 | motion-video-kit scripts: do frozen-time and loudness checks run keyless on a generated test video and give numbers? | **works** | On a 6s test video built with known answers, frozen-time.sh reported 2.9s near-frozen against about 3.0 and loudness.sh -21.8 LUFS against a pre-computed -21.8, each in under 0.25s, keyless, ffmpeg only. Short-term column blank for the first 3s. | `experiments/2026-09-30-P-0044` | 0 min, 9 calls, 0 denied |
 | 2026-09-30 | P-0043 | Fit the log-opinion-pool weight on the Pitch desk's scored predictions against the de-vigged market (arXiv 2608.11505 method): weight, full log-loss profile on 0 to 1, and whether it is a boundary solution | **works** | On the 24 Sep walk-forward backtest (6,265 fit, 501 test matches) the fitted log-pool weight is 0.00 for DC, Elo and SoT against both open and close, fit profile monotone in all six; unconstrained minimum negative (DC -0.175 v the paper's -0.225). Live book has no scored rows yet. | `experiments/2026-09-30-P-0043` | 1 min, 8 calls, 0 denied |
