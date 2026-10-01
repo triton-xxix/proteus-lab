@@ -34,7 +34,10 @@ Then the research desk's per-token signals for tonight's gate-passers, before th
 dated with the snapshot:
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/mentions.py tonight --x-cap 8`
 (X via xAI, Reddit, Telegram, DexScreener paid orders, Jupiter; appends to `grinder/research/MENTIONS.csv`;
-prints the xAI spend, which goes in the run log).
+prints the xAI spend and appends it to the run log itself). It can take over ten minutes: run it with
+`run_in_background` true and carry on with the graduation book and The Pitch, then check
+`grinder/research/MENTIONS.csv` and the run log's "Mentions:" line before the commit in step 4. Never
+Read the background task's output file; it sits outside the write roots and the hook denies it.
 Then the graduation book, a long-running paper job (rules `grinder/graduates/RULES.md`):
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/graduates/watcher.py summary`
 One run-log line: closed, counted, open, median latency, primary expectancy. If it says the job has
@@ -116,7 +119,7 @@ Design in `/Users/triton/PROTEUS/grinder/research/README.md`, sources in `grinde
    `/Users/triton/PROTEUS/state/agents/research/YYYY-MM-DD-digest.md`. This is the fourth spawn with the
    harvest and two Skool children; if the Skool step used fewer, nothing else takes the slot.
    It may run alongside the Skool children: spawn them in one message.
-3. `python3 /Users/triton/PROTEUS/grinder/research/narrative.py ingest` (copies the digest to
+3. `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/narrative.py ingest` (copies the digest to
    `grinder/research/digests/`, one run-log line, commits the digest and `MENTIONS.csv`).
 
 Record tonight's xAI spend (mentions plus narrative) in the run log. It lands on Luke's xAI account,
@@ -149,7 +152,7 @@ It sets tonight's deadline from the preflight header (80 minutes after it, so 10
    For blocked, add `--needs "what it is blocked on"`. Put the note in single quotes if it contains a `$` sign (the hook denies `$` inside double quotes). It counts the calls and denials the hook logged since the probe started, writes the register line in `PROBES.md`, the run-log entry, and commits and pushes those files. Under HALT it logs and does not commit.
 4. Back to 1.
 
-Stop early with `python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."` when the rest of the queue needs something I do not have, or a probe shows the night's data is not there. Add anything the desks turned up with `python3 /Users/triton/PROTEUS/bin/probe.py add "..." --source desk --est 15`. A short honest run beats a long busy one: an empty queue is a reason to stop, not to invent work.
+Stop early with `python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."` when the rest of the queue needs something I do not have, or a probe shows the night's data is not there. Add anything the desks turned up with `python3 /Users/triton/PROTEUS/bin/probe.py add "..." --source desk --est 15`. A probe that scores a long-running job always gets `--after YYYY-MM-DD` (the day after the job stops): the queue has no edit command, and on 1 Oct a scoring probe added without it had to be killed and re-added. A short honest run beats a long busy one: an empty queue is a reason to stop, not to invent work.
 
 ## 7. Run log and release
 

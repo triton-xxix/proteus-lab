@@ -292,7 +292,12 @@ def run(tokens, x_cap):
             row.update(base); row["pulled_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             rows.append(row); append([row])
             print("%s %-10s %-7s count=%s authors=%s %s" % (night[:10], sym[:10], src, row.get("count"), row.get("authors"), row.get("detail", "")[:60]), flush=True)
-    print("rows %d, x calls %d, x spend $%.2f" % (len(rows), x_used, spent))
+    line = "rows %d, x calls %d, x spend $%.2f" % (len(rows), x_used, spent)
+    print(line)
+    # The run log carries the spend too: on 1 Oct the pull outran the 10-minute Bash timeout, finished in
+    # the background, and its printed spend was lost.
+    with open(ROOT + "state/runs/%s.md" % datetime.now().strftime("%Y-%m-%d"), "a") as fh:
+        fh.write("- Mentions: %s.\n" % line)
     return spent
 
 

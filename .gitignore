@@ -1,6 +1,17 @@
 .venv/
 node_modules/
 sandbox/*/
+# loose downloads and media in the sandbox root; scripts there stay tracked
+sandbox/*.tar.gz
+sandbox/*.zip
+sandbox/*.mp4
+sandbox/*.mov
+sandbox/*.html
+sandbox/*.ts
+sandbox/*.txt
+sandbox/*.csv
+sandbox/gt-*.json
+sandbox/paperclip-*
 !sandbox/README.md
 state/unattended-session.json
 state/unattended-session.json.tmp
