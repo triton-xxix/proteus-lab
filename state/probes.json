@@ -1,5 +1,5 @@
 {
- "next_id": 48,
+ "next_id": 49,
  "items": [
   {
    "id": "P-0001",
@@ -991,6 +991,28 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-01",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-01T23:46:30+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-01T23:48:04+0100",
+   "note": "Yes: on 843 held-out non-penalty shots (WC 2022 and Euro 2024), distance and angle logistic scores log loss 0.280 v constant 0.308 v StatsBomb xG 0.249; adding a header flag gives 0.268, 69 percent of the gap closed.",
+   "artefacts": [
+    "experiments/2026-10-01-P-0046"
+   ],
+   "minutes": 1,
+   "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0047",
+   "title": "sports-skills: do Understat xG and ClubElo pulls work keyless, and how closely do they match the Pitch ratings?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-01",
    "status": "open",
    "attempts": 0,
    "started_at": null,
@@ -1004,12 +1026,12 @@
    "luke": false
   },
   {
-   "id": "P-0047",
-   "title": "sports-skills: do Understat xG and ClubElo pulls work keyless, and how closely do they match the Pitch ratings?",
-   "source": "harvest",
+   "id": "P-0048",
+   "title": "Paperclip agent orchestrator: does it install and boot locally keyless, and what does its task and approval state look like on disk?",
+   "source": "field-notes",
    "needs": "",
    "after": "",
-   "est_minutes": 25,
+   "est_minutes": 20,
    "added": "2026-10-01",
    "status": "open",
    "attempts": 0,

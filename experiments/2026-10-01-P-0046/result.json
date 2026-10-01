@@ -1,0 +1,26 @@
+{
+  "matches": 115,
+  "shots_train": 1891,
+  "shots_test": 843,
+  "goal_rate_train": 0.091,
+  "test": {
+    "constant": [
+      0.3084,
+      0.084
+    ],
+    "dist_angle": [
+      0.2804,
+      0.0778
+    ],
+    "dist_angle_head": [
+      0.2678,
+      0.0741
+    ],
+    "statsbomb_xg": [
+      0.2493,
+      0.0688
+    ]
+  },
+  "test_goals": 78,
+  "note": "scores are (log loss, Brier), lower is better; penalties excluded; split by match, seed 46"
+}
