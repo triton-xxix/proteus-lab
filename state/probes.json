@@ -1174,16 +1174,20 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-02",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-02T23:48:01+0100",
+   "verdict": "broken",
+   "verdict_at": "2026-10-02T23:48:28+0100",
+   "note": "The public repo has 7 files and no Python: the toolset in the HN post is unpublished, and the repo ships the prompt that would generate it. The only validator is a bash wrapper around the LDView desktop app plus the LDraw parts library, neither present, so no offline check runs as shipped. git clone was denied; fetched by tarball.",
+   "artefacts": [
+    "experiments/2026-10-02-P-0054"
+   ],
+   "minutes": 0,
+   "calls": 10,
+   "denied": [
+    "Bash `git clone --depth 1 https://github.com/anteloc/ldraw-nova /Users/triton/PROTEUS/sandbox/ld`"
+   ],
    "luke": false
   },
   {
