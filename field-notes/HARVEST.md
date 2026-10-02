@@ -6,16 +6,25 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-88 judged over 6 harvest days, 67 kept, 17 testable, 17 queued as probes, 13 with a probe verdict.
+102 judged over 7 harvest days, 76 kept, 20 testable, 20 queued as probes, 15 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0087 | 2026-10-01 | github | [machina-sports/sports-skills: Open-source agent skills for live sports data and prediction](https://github.com/machina-sports/sports-skills) | mechanism | desk:pitch | yes | P-0047 |
+| H-0101 | 2026-10-02 | github | [ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js packag](https://github.com/ericmmartin/youtube-transcript-plus) | mechanism | tools-for-strangers | yes | P-0056 |
+| H-0100 | 2026-10-02 | hn | [Show HN: Breadcrumb, record everything on your mac + context manager for AI](https://innerloop.works/breadcrumb) | mechanism | tools-for-strangers | no: It is a closed Mac app that records the screen and needs ins |  |
+| H-0099 | 2026-10-02 | vault | [human reads flagged threads from alert links]() | mechanism | tools-for-strangers | yes | P-0055 |
+| H-0098 | 2026-10-02 | awesome | [elithril/blender-kiln (new in awesome-claude-code)](https://github.com/elithril/blender-kiln) | mechanism | tools-for-strangers | no: It needs Blender with an MCP server running and a paid model |  |
+| H-0095 | 2026-10-02 | hn | [Show HN: Made an open-source Lego AI generator](https://github.com/anteloc/ldraw-nova) | mechanism | tools-for-strangers | yes | P-0054 |
+| H-0094 | 2026-10-02 | vault | [Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7 ](https://www.instagram.com/reel/Dd-BvW5Jych/) | mechanism | tools-for-strangers | no: It is a paid hosted service needing an account and spend, an |  |
+| H-0091 | 2026-10-02 | github | [Edwardxlai/easyread: 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in com](https://github.com/Edwardxlai/easyread) | mechanism | tools-for-strangers | no: It is an Electron app that needs a model login or key to tra |  |
+| H-0090 | 2026-10-02 | hn | [Show HN: Rhun, an open-source code editor written in assembly](https://rhun.app/) | mechanism | tech | no: It means installing an unverified binary or building an asse |  |
+| H-0089 | 2026-10-02 | vault | [Whether multi-buy and net-flow signals from tracked wallets predict price, measured on pap](https://youtu.be/2ikSD3rr5v8) | mechanism | desk:grinder | no: It needs timestamped wallet-level trades and forward prices  |  |
+| H-0087 | 2026-10-01 | github | [machina-sports/sports-skills: Open-source agent skills for live sports data and prediction](https://github.com/machina-sports/sports-skills) | mechanism | desk:pitch | yes | P-0047 **broken** |
 | H-0086 | 2026-10-01 | hn | [Show HN: Corral – Kill every command your agent starts](https://github.com/Cardinal44/corral) | mechanism | tools-for-strangers | no: It is Linux only (cgroups and /proc) and this machine is mac |  |
 | H-0085 | 2026-10-01 | vault | [Inbound AI receptionist demo line built from the home services voice prompt]() | mechanism | tools-for-strangers | no: It needs a telephony account, a phone number and a voice-age |  |
-| H-0084 | 2026-10-01 | youtube | [What is Expected Goals?](https://www.youtube.com/watch?v=tysc21gAT58) | mechanism | desk:pitch | yes | P-0046 |
+| H-0084 | 2026-10-01 | youtube | [What is Expected Goals?](https://www.youtube.com/watch?v=tysc21gAT58) | mechanism | desk:pitch | yes | P-0046 **works** |
 | H-0083 | 2026-10-01 | arxiv | [SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models](https://arxiv.org/abs/2609.39847) (intel) | mechanism | mechanism-hunting | no: It needs six audio language models and the benchmark data is |  |
 | H-0082 | 2026-10-01 | github | [edenfunf/reelmimic: Show it a video you love. Get a new video in the same style. An AI cre](https://github.com/edenfunf/reelmimic) | mechanism | tools-for-strangers | no: A real run takes hours of Claude Code usage and the shot ana |  |
 | H-0080 | 2026-10-01 | vault | [One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API]() | mechanism | tools-for-strangers | no: It needs an account, a key and spend. |  |
@@ -81,6 +90,115 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0101 ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js package designed to fetch and proces
+2026-10-02, github, https://github.com/ericmmartin/youtube-transcript-plus
+
+- **Mechanism:** It makes three HTTP calls: the video page, a POST to YouTube's Innertube player endpoint to get caption track URLs, then a GET of the transcript data. Fetch functions can be swapped for a proxy, which exists because YouTube blocks datacentre and repeated IPs. It uses an unofficial interface, so it breaks when YouTube changes it.
+- **Claim:** Fetches YouTube transcripts through the unofficial Innertube API, with custom fetch hooks for proxies and a user agent.
+- **Testable:** yes. Does fetchTranscript return non-empty caption text for three public videos from this Mac with no proxy, yes or no, and how many fail with a block? Queued as P-0056.
+- **Idea on its own:** needs-a-run. It depends on an unofficial endpoint that blocks some IPs, which only a run from this machine shows.
+- **How it would be done:** Install the package in the sandbox, call fetchTranscript on three public videos with captions and record success, text length and any block error. Compare against the existing keyless transcript pipeline on the same IDs. If blocked, the library's fetch hooks show where a proxy would sit, though no proxy is added tonight. A person would only be needed to buy proxy access, which is outside this test.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** youtube-transcript-plus https://github.com/ericmmartin/youtube-transcript-plus (The library under test); Node.js 20+ https://nodejs.org (Runtime the package requires)
+- **Field Notes line:** This Innertube transcript library is the same route that returned IpBlocked in tonight's harvest, so a direct run shows if this IP is blocked.
+
+### H-0100 Show HN: Breadcrumb, record everything on your mac + context manager for AI
+2026-10-02, hn, https://innerloop.works/breadcrumb
+
+- **Mechanism:** A local recorder captures screen, meetings with timestamped screenshots, AI session transcripts and sub-agent activity, encrypted on disk. It indexes this and exposes more than 30 MCP tools so Claude Code, Codex or Cursor can search past work. Stored rules are injected by context, and a commenter raises the cost of loading all tool definitions each request.
+- **Claim:** Records everything on your Mac and turns it into searchable memory for your AI, with 30+ MCP tools.
+- **Testable:** no. It is a closed Mac app that records the screen and needs install and permissions, so it is not a keyless sandbox run. Needs: The macOS app and screen-recording permission.
+- **Idea on its own:** needs-a-run. More recorded context helps recall, but retrieval quality and tool-definition overhead decide whether it pays.
+- **How it would be done:** Capture sources to local storage, extract text by OCR and transcription, and index with timestamps. Expose search over MCP and load tools lazily to avoid definition bloat. Add a rules layer matched by project or file context. A person decides what must never be recorded, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, local transcription
+- **To fetch:** Breadcrumb MCP tool definitions https://innerloop.works/breadcrumb/mcp (Read the tool list to measure definition size)
+- **Field Notes line:** Screen, meeting and agent transcripts indexed behind 30 MCP tools; the token cost of those tool definitions is the open question.
+
+### H-0099 human reads flagged threads from alert links
+2026-10-02, vault, 
+
+- **Mechanism:** Keyword alerts arrive by email with a thread link, and the agent browsers refuse reddit.com, so a person reads each flagged thread. The open question is whether the public RSS or JSON views of a thread, which are plain HTTP, can be read by a script instead. If they return thread text keyless from this machine, the human step becomes a fallback.
+- **Claim:** The vault says the Reddit listening lane depends on a human reading flagged threads because agent browsers are blocked.
+- **Testable:** yes. Does a plain HTTP request to a public subreddit RSS feed and a thread RSS URL from this Mac return HTTP 200 with thread text, yes or no? Queued as P-0055.
+- **Idea on its own:** needs-a-run. Whether public feeds survive rate limiting and blocking is unknown until requested.
+- **How it would be done:** Request a subreddit .rss and a thread .rss with a descriptive user agent and light spacing, then record status and body size. If both work, parse titles, bodies and top comments into a digest per alert. Keep the human read for threads that return blocked or truncated text. Request volume stays low and follows the site's published rules.
+- **Stack already covers:** launchd long-running pollers, Claude Code with skills and sub-agents
+- **Field Notes line:** Agent browsers refuse Reddit, but plain RSS fetches might still return thread text with no key.
+
+### H-0098 elithril/blender-kiln (new in awesome-claude-code)
+2026-10-02, awesome, https://github.com/elithril/blender-kiln. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A Claude Code skill drives Blender through an MCP server. Its new part is a fidelity loop: render the model at the reference photo's camera, list silhouette gaps per height band, then re-measure the exported, compressed GLB rather than the .blend. A bench scores each rebuild against the real asset from five sides, using Poly Haven previews as references.
+- **Claim:** Rebuilds an object from one photo as a GLB, with shape scores of 0.897, 0.950 and 0.750 on three assets at roughly 4 to 6 dollars each.
+- **Testable:** no. It needs Blender with an MCP server running and a paid model session per asset. Needs: Blender 4.4+ with a Blender MCP, and a Claude session budget.
+- **Idea on its own:** sound. Measuring against the reference from the same camera and scoring the shipped file is a real feedback loop, not a claim.
+- **How it would be done:** Install Blender and a Blender MCP, then load the skill. Give it a photo and let it inventory parts, texture from CC0 sets and build in scripted Blender. Run the fidelity check at the photo camera, fix gaps, then optimise and validate the GLB. The same render-and-measure loop could be reused for other generated assets, and a person judges final taste.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** blender-kiln https://github.com/elithril/blender-kiln (The skill and the fidelity_check script); Blender https://www.blender.org (Required runtime); Poly Haven https://polyhaven.com (CC0 textures and reference models)
+- **Field Notes line:** A scoring loop that renders a 3D model from the photo's camera and measures the gap is what makes agent-built assets improve.
+
+### H-0095 Show HN: Made an open-source Lego AI generator
+2026-10-02, hn, https://github.com/anteloc/ldraw-nova
+
+- **Mechanism:** LDraw is a plain-text format where each line places one brick with a colour, position and rotation matrix, so a model is a short program. The project gives an LLM agent a Python toolset, instructions and docs to write .ldr or .mpd files, check them, and view them through LDView or LeoCAD. It ships as a dockerised web app that can call OpenAI, Claude or OpenRouter.
+- **Claim:** Frontier models can generate high-quality LEGO CAD models by writing LDraw source, packaged as an open-source web app.
+- **Testable:** yes. Does the repo's Python toolset validate and parse a hand-written LDraw file offline, yes or no, and how many of its checks pass? Queued as P-0054.
+- **Idea on its own:** needs-a-run. The idea is sound but quality depends on the validation tools, which a run on a sample file can show.
+- **How it would be done:** Clone the repo, read its tool list and run the validators on a small known-good LDraw file and a deliberately broken one. Check whether collisions, floating parts and missing part files are caught. If they work, wrap them as a Claude Code skill so an agent loops write, validate, render. The LDraw part library is public and free, and a person would judge whether the finished model looks right.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** ldraw-nova https://github.com/anteloc/ldraw-nova (The toolset under test); LDraw parts library https://www.ldraw.org/parts/latest-parts.html (Part definitions needed for validation); LDView https://tcobbs.github.io/ldview/ (Renderer for checking models)
+- **Field Notes line:** LEGO models are just text files of brick placements, so an agent with a validator can write them.
+
+### H-0094 Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7 dollars per 15 seconds at 1080
+2026-10-02, vault, https://www.instagram.com/reel/Dd-BvW5Jych/
+
+- **Mechanism:** Film a person performing, supply a reference image of the target avatar, and a video model recasts the whole frame: body motion and timing are taken from the source clip while identity, clothes and background come from the reference. It is the same family as Kling Motion Control, run as a hosted generation per clip. The price quoted is about 7 dollars per 15 seconds at 1080p.
+- **Claim:** Whole-frame motion transfer so an AI avatar repeats your exact performance, about 7 dollars per 15 seconds at 1080p.
+- **Testable:** no. It is a paid hosted service needing an account and spend, and Proteus has no filmed source performance. Needs: A Higgsfield account and credits, plus a filmed own-performance clip.
+- **Idea on its own:** sound. Driving a generated character from a real performance is an established technique and cuts retakes for consistent-avatar video.
+- **How it would be done:** Film the performance against a plain background with the camera framing the target shot needs. Prepare a clean avatar still, then run both through the motion-transfer model and review each take from a contact sheet. Compare the same pair on Kling Motion Control for fidelity and cost per second, then pick one route. A person still performs and approves the footage, since no script covers the acting.
+- **Stack already covers:** HyperFrames (video compose, captions, render), HeyGen and Tavus (avatars), Gemini (stills), ElevenLabs (voice)
+- **To fetch:** Kling Motion Control https://klingai.com (Comparison route for the same source clip); Higgsfield https://higgsfield.ai (Genjutsu route under test)
+- **Missing:** A filmed reference performance clip of the person to be recast.
+- **Field Notes line:** Motion transfer now recasts the whole frame from one filmed performance, at roughly 7 dollars per 15 seconds.
+
+### H-0091 Edwardxlai/easyread: 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.
+2026-10-02, github, https://github.com/Edwardxlai/easyread
+
+- **Mechanism:** Each PDF page is rendered, then a chosen model (Claude Code or Codex CLI on the user's login, an API, or local Ollama) translates it page by page. The agent can look at the page image to check formulas, which are re-typeset with KaTeX, and the translation is kept apart from AI explanations shown in the margin. A local server writes edits to files, with failed pages retried and token use logged per call.
+- **Claim:** Translates English papers into readable Chinese with side-by-side original, margin notes and an ask-AI panel, 601 stars within days of creation.
+- **Testable:** no. It is an Electron app that needs a model login or key to translate, so a keyless run would not test the mechanism. Needs: A model engine login (Claude Code, Codex) or local model run through its settings.
+- **Idea on its own:** sound. Per-page translation with the page image as ground truth and a strict split between translation and commentary is a sound design.
+- **How it would be done:** Split the PDF into page images and text blocks, send each page to a model with the image attached, and ask for a faithful translation only. Re-render formulas with KaTeX and tables as three-line tables, store output per page so retries are cheap. Put commentary in a separate channel so the reader can trust the main text. A bilingual reviewer would spot-check a sample of pages, since nothing scripted verifies translation quality.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **To fetch:** easyread https://github.com/Edwardxlai/easyread (Reference implementation of per-page translation); KaTeX https://katex.org (Formula re-typesetting)
+- **Field Notes line:** A paper reader that sends each PDF page image to a CLI agent so formulas get checked against the page, not just the text.
+
+### H-0090 Show HN: Rhun, an open-source code editor written in assembly
+2026-10-02, hn, https://rhun.app/
+
+- **Mechanism:** The editor and its pixel renderer share one x86-64 assembly core. For Apple silicon a build-time translator converts that assembly to AArch64, with thin per-platform adapters for windowing and input. On top sit Vim mode, a terminal, git diffs and a panel that hosts Claude Code or Codex sessions, plus commit-message drafting through local Ollama or an existing CLI subscription.
+- **Claim:** A small MIT-licensed editor in assembly for Linux, Windows and Apple silicon, with Claude Code and Codex panels, keeping launch time and footprint minimal.
+- **Testable:** no. It means installing an unverified binary or building an assembly toolchain, which does not fit a keyless 30 minute sandbox verdict.
+- **Idea on its own:** sound. Build-time ISA translation of a small hand-written core is a coherent way to keep one codebase tiny across platforms.
+- **How it would be done:** Write the core in one assembly dialect, with a stable interface to platform adapters. A translator script maps instructions and calling conventions to AArch64 at build, then each adapter is linked per platform. Testing means diffing behaviour of the translated core against the original on the same inputs. A person would still hand-check the translator output for the instructions it cannot map.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **To fetch:** rhun https://rhun.app/ (Source and releases to read the translator approach)
+- **Field Notes line:** One assembly core, translated to ARM at build time, runs an editor on three operating systems.
+
+### H-0089 Whether multi-buy and net-flow signals from tracked wallets predict price, measured on paper against public leaderboards
+2026-10-02, vault, https://youtu.be/2ikSD3rr5v8
+
+- **Mechanism:** Take a list of wallets ranked by realised profit on a public leaderboard (Kolscan, GMGN). Count how many distinct tracked wallets buy the same token inside a window (multi-buy) and the net SOL flow of those wallets into it (buys minus sells). Log the signal at the moment it fires with entry price, then measure forward returns at fixed horizons against a baseline of tokens that did not fire. The numbers come from on-chain swap history or the leaderboard's own wallet pages.
+- **Claim:** The video says buying where several tracked wallets pile in is a repeatable edge, with a claimed 30K made part-time.
+- **Testable:** no. It needs timestamped wallet-level trades and forward prices collected over days, and the leaderboard data is not confirmed keyless. Needs: Wallet trade history source (Kolscan or GMGN scrape, or a Solana indexer) and several days of forward data.
+- **Idea on its own:** needs-a-run. Wallet confluence is plausible but survivorship and copy-lag usually erase it, and only a pre-registered paper run shows which.
+- **How it would be done:** Pick a fixed wallet list from the leaderboard and freeze it before measuring, to avoid picking winners after the fact. Poll swaps for those wallets (public Solana RPC or a free indexer tier) and write each multi-buy event with its timestamp, then log price at 5 min, 1h and 24h from GeckoTerminal. Compare against a matched control set of tokens of similar age and liquidity that had no wallet buys. Commit the rule before outcomes exist so the Grinder timestamp is the proof. No human job is needed beyond choosing the wallet list policy.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers, Solana paper desk (the Grinder), launchd long-running pollers
+- **To fetch:** Kolscan leaderboard https://kolscan.io (Public ranked wallet list to seed the tracked set); GMGN wallet pages https://gmgn.ai (Per-wallet trade history for multi-buy and net-flow counts); Solana public RPC / Helius free tier https://www.helius.dev (Swap history per wallet if the leaderboard sites block scraping)
+- **Missing:** A frozen, timestamped record of tracked-wallet buys joined to forward prices does not exist anywhere public.
+- **Field Notes line:** Nobody has measured whether several leaderboard wallets buying the same coin predicts price; the Grinder can pre-register that test on paper.
 
 ### H-0087 machina-sports/sports-skills: Open-source agent skills for live sports data and prediction markets. Football, F1, Kalshi
 2026-10-01, github, https://github.com/machina-sports/sports-skills
@@ -761,6 +879,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0099 | 2026-10-02 | human reads flagged threads from alert links | open | needs-a-run | yes | P-0055 |
+| H-0094 | 2026-10-02 | Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7  | open | sound | no |  |
+| H-0089 | 2026-10-02 | Whether multi-buy and net-flow signals from tracked wallets predict price, measured on pap | open | needs-a-run | no |  |
 | H-0085 | 2026-10-01 | Inbound AI receptionist demo line built from the home services voice prompt | open | sound | no |  |
 | H-0080 | 2026-10-01 | One pay-as-you-go fal account to run Seedance, Kling, Wan and lip-sync models by API | open | sound | no |  |
 | H-0075 | 2026-10-01 | Adapt the web design CLAUDE.md for phone-first UK local business sites | open | sound | no |  |
@@ -778,6 +899,23 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0063 | 2026-10-02 | [Node.js 20+](https://nodejs.org) | Runtime the package requires | H-0101 (ericmmartin/youtube-transcript-plus: YouTube Trans) | shelf |
+| T-0062 | 2026-10-02 | [youtube-transcript-plus](https://github.com/ericmmartin/youtube-transcript-plus) | The library under test | H-0101 (ericmmartin/youtube-transcript-plus: YouTube Trans) | shelf |
+| T-0061 | 2026-10-02 | [Breadcrumb MCP tool definitions](https://innerloop.works/breadcrumb/mcp) | Read the tool list to measure definition size | H-0100 (Show HN: Breadcrumb, record everything on your mac) | shelf |
+| T-0060 | 2026-10-02 | [Poly Haven](https://polyhaven.com) | CC0 textures and reference models | H-0098 (elithril/blender-kiln (new in awesome-claude-code)) | shelf |
+| T-0059 | 2026-10-02 | [Blender](https://www.blender.org) | Required runtime | H-0098 (elithril/blender-kiln (new in awesome-claude-code)) | shelf |
+| T-0058 | 2026-10-02 | [blender-kiln](https://github.com/elithril/blender-kiln) | The skill and the fidelity_check script | H-0098 (elithril/blender-kiln (new in awesome-claude-code)) | shelf |
+| T-0057 | 2026-10-02 | [LDView](https://tcobbs.github.io/ldview/) | Renderer for checking models | H-0095 (Show HN: Made an open-source Lego AI generator) | shelf |
+| T-0056 | 2026-10-02 | [LDraw parts library](https://www.ldraw.org/parts/latest-parts.html) | Part definitions needed for validation | H-0095 (Show HN: Made an open-source Lego AI generator) | shelf |
+| T-0055 | 2026-10-02 | [ldraw-nova](https://github.com/anteloc/ldraw-nova) | The toolset under test | H-0095 (Show HN: Made an open-source Lego AI generator) | shelf |
+| T-0054 | 2026-10-02 | [Higgsfield](https://higgsfield.ai) | Genjutsu route under test | H-0094 (Higgsfield Genjutsu as the final route for motion ) | shelf |
+| T-0053 | 2026-10-02 | [Kling Motion Control](https://klingai.com) | Comparison route for the same source clip | H-0094 (Higgsfield Genjutsu as the final route for motion ) | shelf |
+| T-0052 | 2026-10-02 | [KaTeX](https://katex.org) | Formula re-typesetting | H-0091 (Edwardxlai/easyread: 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照) | shelf |
+| T-0051 | 2026-10-02 | [easyread](https://github.com/Edwardxlai/easyread) | Reference implementation of per-page translation | H-0091 (Edwardxlai/easyread: 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照) | shelf |
+| T-0050 | 2026-10-02 | [rhun](https://rhun.app/) | Source and releases to read the translator approach | H-0090 (Show HN: Rhun, an open-source code editor written ) | shelf |
+| T-0049 | 2026-10-02 | [Solana public RPC / Helius free tier](https://www.helius.dev) | Swap history per wallet if the leaderboard sites block scraping | H-0089 (Whether multi-buy and net-flow signals from tracke) | shelf |
+| T-0048 | 2026-10-02 | [GMGN wallet pages](https://gmgn.ai) | Per-wallet trade history for multi-buy and net-flow counts | H-0089 (Whether multi-buy and net-flow signals from tracke) | shelf |
+| T-0047 | 2026-10-02 | [Kolscan leaderboard](https://kolscan.io) | Public ranked wallet list to seed the tracked set | H-0089 (Whether multi-buy and net-flow signals from tracke) | shelf |
 | T-0046 | 2026-10-01 | [ClubElo API](http://clubelo.com/API) | Free Elo ratings, no key. | H-0087 (machina-sports/sports-skills: Open-source agent sk) | shelf |
 | T-0045 | 2026-10-01 | [sports-skills](https://github.com/machina-sports/sports-skills) | The package under test. | H-0087 (machina-sports/sports-skills: Open-source agent sk) | shelf |
 | T-0044 | 2026-10-01 | [Corral](https://github.com/Cardinal44/corral) | The tool. | H-0086 (Show HN: Corral – Kill every command your agent st) | shelf |
@@ -829,6 +967,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0102 | 2026-10-02 | youtube | [Why Cars Lose Their Value So Fast](https://www.youtube.com/watch?v=Ao7fbajRSKI) | No transcript came back (IpBlocked) and a generic news explainer carries no mechanism. |
+| H-0097 | 2026-10-02 | youtube | [Tutorial 1: Getting Started with the UK Data Service Open Data API](https://www.youtube.com/watch?v=JIh6h8mx0Zk) | No transcript came back (IpBlocked) and a beginner tutorial title gives no mechanism. |
+| H-0096 | 2026-10-02 | github | [zlxlabs/VideoTranscriptAPI: 基于 Python 3.11+ FastAPI 的异步音视频转录服务，支持 YouTube、小宇宙、Bi](https://github.com/zlxlabs/VideoTranscriptAPI) | Duplicates the transcript pipeline already in the stack and its parsing depends on a paid referral API key. |
+| H-0093 | 2026-10-02 | awesome | [dailydotdev/daily (new in awesome-claude-code)](https://github.com/dailydotdev/daily) | Vault has judged the vendor and the README shows a standard tag-based news feed with nothing new. |
+| H-0092 | 2026-10-02 | youtube | [Agent memory architecture explained #agentmemory #workingmemory #episodicmemory](https://www.youtube.com/watch?v=Ir0Q9s6P050) | No transcript came back (IpBlocked) and the title alone carries no mechanism. |
 | H-0088 | 2026-10-01 | youtube | [What is a Bonding Curve? Explained in Less Than 1 Minute! #defi #daos #blockchai](https://www.youtube.com/watch?v=LI8WkvWpJJc) | A one-minute generic explainer of bonding curves with no mechanism beyond the definition the Grinder already covers. |
 | H-0081 | 2026-10-01 | hn | [Show HN: Strata – an expressive semantic layer that can say no to your LLM](https://strata.do/) | A product pitch for a semantic layer with claims but no inspectable mechanism beyond naming rules. |
 | H-0074 | 2026-09-30 | youtube | [Chess Engine in Python - Part 2 - Moving the pieces](https://www.youtube.com/watch?v=o24J3WcBGLg) | Beginner tutorial on mouse input for a chess GUI, no mechanism relevant to a bot. |

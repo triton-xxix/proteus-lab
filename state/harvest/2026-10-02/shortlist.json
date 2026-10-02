@@ -1,0 +1,318 @@
+{
+ "date": "2026-10-02",
+ "shortlisted_at": "2026-10-02T23:35:29+0100",
+ "candidates": 148,
+ "dropped_seen": [
+  "vault:2026-10-01:adapt-the-web-design-claude-md-for-phone-first-uk-local-busi",
+  "vault:2026-10-01:one-pay-as-you-go-fal-account-to-run-seedance-kling-wan-and-",
+  "vault:2026-10-01:inbound-ai-receptionist-demo-line-built-from-the-home-servic",
+  "vault:2026-09-29:join-for-one-month-with-skool-neptune-transcribe-the-classro",
+  "vault:2026-09-27:media-buying-commission-taken-as-a-share-of-a-brand-s-ad-bud",
+  "vault:2026-09-26:post-production-for-businesses-that-have-long-form-content-b",
+  "vault:2026-09-26:learning-crypto-research-from-a-source-with-an-independently",
+  "vault:2026-09-26:consistent-ai-character-content-with-clear-ai-disclosure",
+  "vault:2026-09-24:partnership-ads-run-through-a-local-client-s-own-social-hand",
+  "vault:2026-09-24:give-free-work-away-first-then-pay-to-amplify-whichever-piec",
+  "vault:2026-09-24:dmcc-compliance-review-for-small-firms-using-testimonials-an",
+  "vault:2026-09-26:one-sales-page-template-with-psychographic-persona-variants-",
+  "vault:2026-09-26:ai-influencer-vendors-selling-undetectable-fake-people-with-",
+  "vault:2026-09-26:trading-performance-quoted-only-at-peak-prices-with-no-entry",
+  "vault:2026-09-26:cryptoasset-promotions-to-uk-consumers-missing-mandatory-ris",
+  "vault:2026-09-26:mass-clipping-of-big-personalities-for-per-view-payouts",
+  "vault:2026-09-24:gifting-product-to-creators-and-hoping-they-post-about-it",
+  "hn:49911500",
+  "hn:49910328",
+  "hn:49911995",
+  "hn:49909913",
+  "gh:louis-cfm/coucou",
+  "gh:rehan-remade/universal-modder",
+  "gh:dzhng/jevgrep",
+  "gh:nanaism/yomiyasu",
+  "gh:echris6/motion-video-kit",
+  "gh:edenfunf/reelmimic",
+  "gh:lemomo-ai/lemo-opuscar",
+  "gh:machina-sports/sports-skills",
+  "gh:chainstacklabs/pumpfun-bonkfun-bot",
+  "gh:nexmoe/vidbee",
+  "gh:nateherkai/hyperframes-student-kit",
+  "gh:zeropointrepo/youtube-skills",
+  "yt:aYfZN8t6AQs",
+  "yt:_00jicHRIKk",
+  "yt:XWz0HiXVrIY"
+ ],
+ "flagged_vault": 8,
+ "errors": [
+  "enrich yt:Ir0Q9s6P050: IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=Ir0Q9s6P050! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!",
+  "enrich yt:JIh6h8mx0Zk: IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=JIh6h8mx0Zk! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!",
+  "enrich yt:Ao7fbajRSKI: IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=Ao7fbajRSKI! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!"
+ ],
+ "items": [
+  {
+   "key": "vault:2026-10-02:whether-multi-buy-and-net-flow-signals-from-tracked-wallets-",
+   "source": "vault",
+   "query": "open",
+   "title": "Whether multi-buy and net-flow signals from tracked wallets predict price, measured on paper against public leaderboards",
+   "url": "https://youtu.be/2ikSD3rr5v8",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
+    "date": "2026-10-02",
+    "where": "TRITON-CORE/Research/links/2026-10-02-fomo-solana-memecoins-part-time.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: Nobody in the vault has tested confluence rather than taken a side on it; Kolscan and GMGN are the data\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (idea) Method video that is a funnel for the presenter's own tools (Azura referral, his Telegram-call aggregator, his Ocula wallet tracker). The 30k is asserted, never shown; the three trades he opens net about 11k before the losers he skips. He states himself that trading on wallet confluence makes him sell too early and too late, which is the pump.fun dead thread from a practitioner's mouth. Not a lane for Luke. The one non-extractive piece is the tooling, which is Proteus desk material. Job: Trade memecoins part-time on a repeatable edge rather than screen time (still open) Write-up: `TRITON-CORE/Research/links/2026-10-02-fomo-solana-memecoins-part-time.md` Link: https://youtu.be/2ikSD3rr5v8",
+   "score": 100.0,
+   "thread": {
+    "date": "2026-10-02",
+    "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Whether multi-buy and net-flow signals from tracked wallets predict price, measured on paper against public leaderboards",
+    "note": "Nobody in the vault has tested confluence rather than taken a side on it; Kolscan and GMGN are the data",
+    "where": "TRITON-CORE/Research/links/2026-10-02-fomo-solana-memecoins-part-time.md",
+    "url": "https://youtu.be/2ikSD3rr5v8"
+   }
+  },
+  {
+   "key": "hn:49926726",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Rhun, an open-source code editor written in assembly",
+   "url": "https://rhun.app/",
+   "hn_url": "https://news.ycombinator.com/item?id=49926726",
+   "meta": {
+    "points": 59,
+    "comments": 46,
+    "created": "2026-10-01T20:32:18Z"
+   },
+   "body": "I found that I'm not using even 1/3 of vim/vscode features anymore. That's wht I'm building rhun - a small code editor for Linux, Windows and Apple silicon Macs. It obviously has Vim mode, a terminal, Git diffs and a panel for Claude Code or Codex sessions. The editor and pixel renderer share an x86-64 assembly core. For Apple silicon, a build-time translator converts that core to AArch64, with separate platform adapters around it. The latest release can draft commit messages using a local Ollama model or an existing Claude Code or Codex subscription. It's a solo project, MIT licensed and still early.\ncomment (vladcodes): The plan is to add as less new features as possible and keep the same performance/launch time/memory and disk footprint as it is currently.\ncomment (xorl): This bring me joy :)\ncomment (rgbrgb): can you talk about why you do this in assembly?",
+   "score": 6.019418363077129
+  },
+  {
+   "key": "gh:edwardxlai/easyread",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "Edwardxlai/easyread: 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
+   "url": "https://github.com/Edwardxlai/easyread",
+   "repo": "Edwardxlai/easyread",
+   "meta": {
+    "stars": 601,
+    "created": "2026-09-30",
+    "pushed": "2026-10-02",
+    "language": "Python",
+    "topics": [
+     "academic",
+     "arxiv",
+     "chinese",
+     "claude-code",
+     "codex",
+     "electron",
+     "llm",
+     "paper-reading"
+    ]
+   },
+   "body": "EasyRead \n  让你更舒服地读论文  \n导入 PDF，后台逐页翻译；公式、表格照原文排好，随时对照原文，边读边划线、记笔记、提问。 \n本地运行，文献库默认保存在电脑上，也可以放进你自己的网盘同步文件夹 \n\n  简体中文  ·  English  \n\n   ▶ 在线试读一篇   ·  项目主页  ·  下载  \n\n \n     \n     \n   \n   \n \n\n   \n\n## 它和“把 PDF 丢给翻译软件”有什么不一样\n\n- **像读一本排好版的中文书。** 宋体正文、舒服的行宽和行距，公式用 KaTeX 按原文重排，表格是三线表，参考文献保留原文。顶栏一键切深色。\n- **随时核对原文。** 一键切“对照”，每段下面附英文；右侧可以开原页，跟着阅读位置翻页，还会框出当前段落在原页的位置。\n- **翻译和解释分开。** 正文只放忠实的译文；AI 的解释、回答放在页边，一眼就能分清哪句是论文说的。\n- **边读边问 AI。** 右侧“问 AI”面板实时对话，回答逐字流出来；可以一次引用好几段（选中文字拖进输入框就行）。问“我标红的那些公式有什么联系”，它会按颜色找出你的划线。可以开多个对话，模型单独选：Claude、GPT（Codex）、DeepSeek、通义、本机 Ollama……好的回答一键放到页边。\n- **ASD-STE100 问答。** 在“问 AI”的“回答方式”里选择这个模式，用简明中文回答问题或总结论文，保留专业术语、公式和数值。模式按对话保存，支持复制、放到页边和导出 Markdown。[ASD-STE100](https://www.asd-ste100.org/STE_faq.html) 是英文标准；这个模式借鉴其短句、主动表达和术语一致等原则，提供中文写作辅助，不将中文答案标为符合英文标准或已认证。正文过长时只提供节选，回答需说明依据范围。\n  中文提示词另参考 [asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill) 的语义保留原则：保留条件、范围和“可能／建议／必须”等语气强度，不为简短而丢失精度。\n- **边读边批注。** 选中文字四色荧光笔或下划线、写笔记、提问；问题一键让 AI 回答，笔记可以让 AI 点评。所有笔记按原文顺序汇总，可以勾选导出成 Markdown（放进 Obsidian、Notion）。\n- **译文可以改。** 双击一段直接改；术语表里改一个译法，全文替换。\n- **不只是 arXiv。** 拖进任何 PDF；或者填 arXiv 编号、DOI、论文标题、论文网页（OpenReview、ACL、NeurIPS、bioRxiv、PMC、期刊页面），自动找到公开的 PDF 并补全作者、年份、出处。\n- **文献库。** 侧栏像聊天软件：论文和分类都能置顶；自己建分类（右键改名、删除，把论文拖进去），内置分类可以隐藏；最近阅读、搜索、未读 / 在读 / 已读、星标、阅读进度、复制引用（GB/T 7714、APA、BibTeX）、导出单文件离线 HTML 发给别人。删掉的论文先进回收站，可以恢复。快捷键可以自定义。\n- **云文献库与批量引用。** 在“设置 → 云文献库”里把文献库迁移到其他磁盘或网盘同步文件夹，也能接入已有的库；原库保留，复制后核对，重启生效。论文列表和分类支持批量复制或保存 GB/T 7714、APA、BibTeX 引用\n- **用了多少心里有数。** 每次翻译、每条 AI 回答都记下用了多少 token；用 Claude 订阅时，还能看到 5 小时 / 7 天额度用到多少、什么时候重置。\n- **不会丢东西。** 每次修改先存在浏览器，本地服务确认写进文件才删；翻译方后来改了你改过的段落，只提示，不覆盖。\n\n   \n\n   \n\n## 翻译用什么模型：你来选\n\n| 引擎 | 要什么 | 说明 |\n|---|---|---|\n| **Claude Code**（推荐） | 装好并登录 [Claude Code](https://docs.claude.com/en/docs/claude-code/setup) | 不用 Key，用你订阅的额度；会自己看原页图核对公式，译文最好 |\n| **Codex CLI** | 装好并登录 [Codex](https://github.com/openai/codex) | 不用 Key，用 ChatGPT 账号 |\n| **API 接口 · 国内直连**：DeepSeek / 智谱 / 阿里云百炼 / Kimi / 硅基流动 / 魔搭 | API Key | 智谱 GLM-4.7-Flash、硅基流动小模型免费；DeepSeek 一篇 20 页论文几毛钱 |\n| **API 接口 · 海外（要梯子）**：OpenAI / Anthropic / Gemini / OpenRouter / Groq / Cerebras | API Key | Gemini、OpenRouter、Groq、Cerebras 有免费额度 |\n| **API 接口 · 本机**：Ollama / LM Studio | 本机装 [Ollama](https://ollama.com) 或 [LM Studio](https://lmstudio.ai) | 完全离线、免费，推荐 qwen3.5:9b（显卡小用 4b） |\n| **API 接口 · 自定义地址**：任意 OpenAI 兼容接口、中转站 | 地址 + Key | Chat Completions 和 Responses 两种格式都支持；点“获取模型列表”从接口拉模型名 |\n\n不想让它导入后马上翻译，在设置里关掉“导入后自动开始翻译”就行，之后可以让对话里的 agent 来译。\n\n设置里会自动检测本机装了什么，点“试译一句”马上知道能不能用。某一页翻译失败（限流、网络、额度）会自动重试，还不行就先跳过、接着译后面的页，最后一键“重试失败的页”。\n\n   \n\n## 安装\n\n**最省事：下载安装包**（不用装 Python）。在 [Releases](https://github.com/Edwardxlai/easyread/releases/latest) 下载：\n\n- **Windows**：`EasyRead-Setup-x.x.x.exe`，双击安装。没有代码签名，如果弹出“Windows 已保护你的电脑”，点“更多信息 → 仍要运行”。\n- **macOS**（Apple 芯片）：`EasyRead-x.x.x-arm64.dmg`，把 EasyRead 拖进“应用程序”；第一次打开被系统拦截时，按下面对应的提示处理\n- **Linux**：`EasyRead-x.x.x.AppImage`，`chmod +x` 后运行。\n\n安装版的论文和设置存在用户目录下的 `EasyRead` 文件夹（和 pip 安装版同一个位置），卸载重装不会丢。\n\n### macOS 首次打开\n\n1. **提示“无法验证开发者”或“Apple 无法验证是否包含恶意软件”**：先点“完成”（不要点“移到废纸篓”），打开“系统设置 → 隐私与安全性”，向下找到安全性提示，点“仍要打开”；在确认窗口点“打开”，按提示输入登录密码或使用 Touch ID\n2. **提示“已损坏，无法打开”**：先从 [EasyRead 官方 Releases](https://github.com/Edwardxlai/easyread/releases/latest) 重新下载，并把应用拖进“应用程序”；文件也可能确实损坏或被改动，不能只凭这条提示判断原因。只有确认文件来自这个官方仓库、并信任该文件后，才在“终端”执行下面的命令，再重新打开 EasyRead；这条命令移除隔离属性，不会修复损坏的文件\n\n   ```bash\n   xattr -dr com.apple.quarantine /Applications/EasyRead.app\n   ```\n\n3. **为什么会出现验证提示**：目前的 macOS 安装包只做了临时签名，没有 Apple 开发者证书，也没有经过公证，因此可能被系统拦截；代码完全开源，也可以[从源码运行](#run-from-source)\n\n如果系统提",
+   "score": 6.400257445308821
+  },
+  {
+   "key": "yt:Ir0Q9s6P050",
+   "source": "youtube",
+   "query": "agent memory architecture explained",
+   "title": "Agent memory architecture explained #agentmemory #workingmemory #episodicmemory",
+   "url": "https://www.youtube.com/watch?v=Ir0Q9s6P050",
+   "meta": {
+    "channel": "Saturn Leap",
+    "rank": 2
+   },
+   "body": "\n[body unavailable: IpBlocked]",
+   "score": 0.5
+  },
+  {
+   "key": "gh:dailydotdev/daily",
+   "source": "awesome",
+   "query": "awesome-claude-code",
+   "title": "dailydotdev/daily (new in awesome-claude-code)",
+   "url": "https://github.com/dailydotdev/daily",
+   "repo": "dailydotdev/daily",
+   "meta": {
+    "list": "awesome-claude-code",
+    "stars": 20087,
+    "created": "2017-11-10",
+    "language": "JavaScript",
+    "description": "daily.dev is the personalized developer news feed and community. Get the best tech content from all over the web in your browser new tab or on mobile. Free and open source."
+   },
+   "body": "# Welcome to the daily.dev repository\n\nWe know how hard it is to be a developer. It doesn't have to be.  \ndaily.dev is the homepage every developer deserves.  \nA personalized developer news feed, dev communities, and search. Free, and open source. Much better than what's out there. Maybe ;)\n\n[Product Docs][product-docs-link] · [Changelog][changelog-link] · [Report a Bug][report-bug-link] · [Request a Feature][github-discussions-link] · [Swag Store][swag-store-link] · [Brand Assets][brand-book-link]\n\n \n\n[![][chrome-users-shield]][chrome-users-link]\n[![][chrome-rating-shield]][chrome-users-link]\n[![][latest-version-shield]][latest-version-link] \n[![][github-stars-shield]][github-stars-link]\n[![][github-license-shield]][github-license-link] \n\n**Help more developers suffer less by sharing daily.dev**\n\n[![][share-x-shield]][share-x-link]\n[![][share-telegram-shield]][share-telegram-link]\n[![][share-whatsapp-shield]][share-whatsapp-link]\n[![][share-reddit-shield]][share-reddit-link]\n[![][share-mastodon-shield]][share-mastodon-link]\n[![][share-linkedin-shield]][share-linkedin-link]\n\n \n \n  👀 Watch daily.dev in action →   \n\n \n\n## 💜 About daily.dev\n\n> [!IMPORTANT]\n> Star us to show your support and love for daily.dev ⭐️\n\ndaily.dev is a free, open source personalized news feed for developers, used by millions of developers worldwide. It aggregates articles, tutorials, release notes, and news from 2,000+ trusted sources across the web, and personalizes your feed based on the tags you follow (like #webdev, #ai, #devops) and what you read.\n\nYou can use daily.dev as a new tab browser extension for Chrome and Edge, as a web app, or with the daily.dev mobile apps for iOS and Android. Beyond the feed, daily.dev is a community: join Squads to share and discuss content with other developers, comment on posts, bookmark what you want to read later, and search across everything.\n\n### ✨ What you get with daily.dev\n\n* 📰 **Personalized feed**: the best developer content from 2,000+ sources, tuned to your stack via tags and your reading activity\n* 🧩 **New tab extension**: turn every new browser tab into your developer homepage (Chrome and Edge)\n* 📱 **Mobile apps**: the same feed and community on iOS and Android\n* 👥 **Squads**: developer communities for sharing and discussing content with your team or people who share your interests\n* 💬 **Discussions**: comment on posts and learn from how other developers think\n* 🔖 **Bookmarks and reading list**: save posts to read later, wherever you are\n* 🔍 **Search**: find posts, tags, sources, and discussions across the entire network\n\n \n\n## 📌 Get daily.dev\n\ndaily.dev is available as a browser extension for Google Chrome and Microsoft Edge, as a web app, and as a mobile app for iOS and Android.\n\nGet it now on:\n\n \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n \n\n## 📯 Philosophy\n\nWe recognize that developers today have the greatest power as a professional group to drive change and affect the lives of billions. Many platforms provide developers with tools that serve their success or the goals of their workplace, but daily.dev is by design for developers themselves.\n\nWe, as developers, know how challenging it is to grow professionally with so much going on, and that's why we built daily.dev: to make it easy for us to navigate the abundant content out there and discover all the knowledge we need with zero effort.\n\nYou can use daily.dev to:\n\n* 👨‍💻 Learn and stay up-to-date\n\n* 🙌 Interact bas",
+   "score": 2.0,
+   "seen_vault": "vault: tools and repos"
+  },
+  {
+   "key": "vault:2026-10-02:higgsfield-genjutsu-as-the-final-route-for-motion-transfer-w",
+   "source": "vault",
+   "query": "open",
+   "title": "Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7 dollars per 15 seconds at 1080p",
+   "url": "https://www.instagram.com/reel/Dd-BvW5Jych/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "Rashawn Leche reel via @slavenameflick: motion control with Higgsfield Genjutsu and the Auratar",
+    "date": "2026-10-02",
+    "where": "TRITON-CORE/Research/links/2026-10-02-rashawn-leche-genjutsu-motion-control-reel.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: Test against Kling Motion Control on the first real run; own performances only, Higgsfield trains on inputs by default\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (idea) A Kick streamer explaining motion control: film your own movement, put it through Higgsfield Genjutsu, your AI avatar repeats the exact motion with background and clothes swapped. The technique is already the bootcamp motion-transfer track; Genjutsu is a new third route worth one test against Kling Motion Control, about 7 dollars per 15 seconds at 1080p, own performances only since Higgsfield trains on inputs. The title's stealing videos use is the one the track already marks avoid. Job: Produce performance video of a consistent avatar without filming the final look (solved) Write-up: `TRITON-CORE/Research/links/2026-10-02-rashawn-leche-genjutsu-motion-control-reel.md` Link: https://www.instagram.com/reel/Dd-BvW5Jych/",
+   "score": 99.0,
+   "thread": {
+    "date": "2026-10-02",
+    "subject": "Rashawn Leche reel via @slavenameflick: motion control with Higgsfield Genjutsu and the Auratar",
+    "kind": "idea",
+    "status": "open",
+    "theme": "Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7 dollars per 15 seconds at 1080p",
+    "note": "Test against Kling Motion Control on the first real run; own performances only, Higgsfield trains on inputs by default",
+    "where": "TRITON-CORE/Research/links/2026-10-02-rashawn-leche-genjutsu-motion-control-reel.md",
+    "url": "https://www.instagram.com/reel/Dd-BvW5Jych/"
+   }
+  },
+  {
+   "key": "hn:49937916",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Made an open-source Lego AI generator",
+   "url": "https://github.com/anteloc/ldraw-nova",
+   "hn_url": "https://news.ycombinator.com/item?id=49937916",
+   "meta": {
+    "points": 45,
+    "comments": 27,
+    "created": "2026-10-02T20:00:15Z"
+   },
+   "body": "Hi there :-) New on HN, first time posting. Past year, around December, I started experimenting with making ChatGPT and Claude generate source code in LDraw language. This LDraw is literally an \"assembly\" language, a low-level programming language that describes how to assemble LEGO pieces together into models, one placement instruction at a time. When executed by specific tools, like e.g. LDView, LeoCAD, Studio... these instructions become LEGO CAD models, that can be interacted with, modified, etc. Or, in other words: one LDraw source file in .mpd or .ldr format is equivalent to one LEGO CAD model. So, the idea I had was: if I manage for maybe ChatGPT or Claude to generate high-quality LDraw source files... then, they would actually be generating high-quality LEGO CAD models, right? Then, after months of iterations and trying one thing after the other... it worked!!! Long story short: using GPT-6 Astra and Opus 5.5, I've managed to create a python toolset, instructions, and docs for agents in general. Now, these can be used by them to generate LDraw models. I've packed it all as a dockerized web app for others to try and experiment, with several providers (and agents) to choose from: OpenAI, Claude and OpenRouter. I'd really appreciate feedback and comments, let's see where this goes =)\ncomment (antelocnova): Hi there :-) New on HN, first time posting, and (I guess) my post on Show HN was rejected... Anyway, I hope I'm not bothering anyone by posting this outside Show HN, or posting almost the same thing twice. Past year, around December, I started experimenting with making ChatGPT and Claude generate source code in LDraw language. This LDraw is literally an \"assembly\" language, a low-level programming language that describes how to assemble LEGO pieces together into models, one placement instruction at a time. When executed by specific tools, like e.g. LDView, LeoCAD, Studio... these instructions \ncomment (vunderba): Nice job. I actually read a paper on Arxiv last year about this exact thing - using LLMs to drive model building through LDraw that might be worth reading [1]. They had some interesting experiments like giving the LLM a fixed set of parts as a constraint and asked it to \"build\" tools out of those available lego. I think they were using Opus 4.5 so I'm sure with even more powerful models it'll be even better. [1] - https://arxiv.org/pdf/2512.15743\ncomment (dy): Thanks for sharing - I'm actually working with my kid on something similar but with physics modeling for First Lego League. Cool to see your approach!",
+   "score": 5.494743651576697
+  },
+  {
+   "key": "gh:zlxlabs/videotranscriptapi",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "zlxlabs/VideoTranscriptAPI: 基于 Python 3.11+ FastAPI 的异步音视频转录服务，支持 YouTube、小宇宙、Bilibili、视频号等多平台解析，本地部署可实现说话人区分转录，调用 LLM 完成文本智能校对与内容总结，配套网页端查看 / 导出功能，支持企业微信消息推送",
+   "url": "https://github.com/zlxlabs/VideoTranscriptAPI",
+   "repo": "zlxlabs/VideoTranscriptAPI",
+   "meta": {
+    "stars": 220,
+    "created": "2025-04-27",
+    "pushed": "2026-10-02",
+    "language": "Python",
+    "topics": [
+     "personal"
+    ]
+   },
+   "body": "# 视频转录 API (Video Transcript API)\n\n> 基于 Python 3.11+ 的异步视频转录服务，支持多平台下载、双引擎转录、智能文本处理和企业级功能集成。\n\n[](https://www.python.org/downloads/)\n[](https://fastapi.tiangolo.com/)\n[](LICENSE)\n\n开发契机和玩法分享：[LLM 吞噬一切，我用 AI 长出来的那些工具](https://mp.weixin.qq.com/s/w8VnWJcUp5VkD5J-fYCUrg)\n\n---\n\n## 核心特性\n\n- **多平台支持**：YouTube、Bilibili、抖音、小红书、微信视频号与 X(Twitter)（经 MediaResolverAPI）、小宇宙播客、Apple Podcast，工厂模式自动匹配下载器\n- **双引擎转录**：[CapsWriter ASR Server](https://github.com/zlxlabs/CapsWriter-ASR-Server) 协议 v2（通用转录）+ FunASR（说话人识别）\n- **智能文本处理**：LLM 自动校对 ASR 错误、专有名词纠错、按说话人采样+置信度降级的说话人推断、内容总结\n- **处理深度可控**：`processing_options` 开关按任务控制是否校对/总结，分层缓存产物只增不减，重复请求自动复用已有层\n- **诚实状态模型**：校对（full/partial/none/disabled）与总结（generated/skipped_short/failed/pending/disabled）状态全链路透传，不再用占位字符串掩盖失败\n- **企业级功能**：SQLite + 文件系统双层缓存、多用户管理、审计日志（含 LLM token 用量统计）、多渠道通知（企业微信 + 飞书）、任务历史浏览器\n- **风控系统**：敏感词检测、多策略文本脱敏、风险模型自动切换\n\n## 外部依赖\n\n- [Tikhub API key，用于音视频解析下载。有 aff](https://user.tikhub.io/register?referral_code=YArXsaWi)\n- [funasr_spk_server：funasr server 对应暴露 api，支持音视频转写，分角色，自动合并相同人物的话。](https://github.com/zj1123581321/funasr_spk_server)\n- [CapsWriter ASR Server：局域网语音识别服务。本项目通过官方 SDK 使用协议 v2，不再使用手写 v1 帧。字段与错误码以协议文档为准。](https://github.com/zlxlabs/CapsWriter-ASR-Server/blob/master/docs/reference/protocol.md)\n- [youtube_download_api：YouTube 视频下载服务，作为 yt-dlp 的可选替代后端。](https://github.com/zj1123581321/youtube_download_api)（可选）\n- [MediaResolverAPI](https://github.com/zlxlabs/MediaResolverAPI)：短视频/视频号 URL → 无水印直链 + 元数据的集中解析服务，接管抖音/小红书/微信视频号/X(Twitter) 解析（见[使用指南](docs/guides/media_resolver.md)，X 自动选最低码率 variants 档提速）。\n- OpenAI 兼容的 API，比如 Deepseek，量大管饱。\n\n---\n\n## 快速开始\n\n### 环境要求\n\n- Python 3.11+\n- FFmpeg\n- 转录服务器（[CapsWriter ASR Server 协议 v2](https://github.com/zlxlabs/CapsWriter-ASR-Server) / FunASR 二选一或同时部署）\n\n### 本地安装\n\n```bash\n# 克隆仓库\ngit clone  \ncd video-transcript-api\n\n# 安装依赖（使用 uv）\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nuv sync\n\n# 配置服务\ncp config/config.example.jsonc config/config.jsonc\n# 编辑 config.jsonc，填写 api.auth_token、tikhub.api_key 等\n# 可选：抖音/小红书改走 MediaResolverAPI 集中解析（微信视频号与 X 依赖该开关开启），设\n#   downloaders.use_media_resolver=true 并配置 media_resolver 段\n#   （使用指南：docs/guides/media_resolver.md）\n\n# 启动\nuv run python main.py --start\n```\n\n可在启动前执行无副作用配置预检；该命令不会连接外部服务、迁移数据库或启动线程：\n\n```bash\nuv run python main.py --check-config --config config/config.jsonc\n```\n\n### Docker 部署\n\n```bash\n# 准备配置\ncp config/config.example.jsonc config/config.jsonc\n\n# 本地构建并启动（使用固定的 dev 标签，不用于生产部署）\ncd docker/\ndocker compose up -d --build\n```\n\n**Docker 镜像**：[`ghcr.io/zj1123581321/video-transcript-api`](https://ghcr.io/zj1123581321/video-transcript-api)\n\n镜像内置 ffmpeg、BBDown、yt-dlp，无需额外安装。\n\n生产部署禁止使用 `latest`。构建脚本会拒绝包含已跟踪或未跟踪修改的脏工作区，只从干净提交以 12 位 Git SHA 生成唯一 tag；部署脚本拉取该 tag 后按同一镜像仓库解析并固定 registry digest。候选镜像会先运行 `--check-config`，失败时不重启当前服务，启动后健康检查失败则恢复上一个 digest：\n\n```bash\n./docker/push_to_ghcr.sh\n# 在 docker/deploy_targets.json 指定的 n305:/opt/media/VideoTranscriptAPI 上执行：\n./docker/pull_and_deploy.sh ghcr.io/zj1123581321/video-transcript-api: \n```\n\n本仓库只提供部署能力；脚本不会自行 SSH 或自动上线。服务器首次运行会从 `docker/docker-compose.deploy.yml` 生成根目录 `docker-compose.yml`，配置文件位于 ` /config/config.jsonc`，成功使用的 digest 记录在 ` /.deploy-image`。同一项目目录的部署由 `.deploy.lock` 串行化；所有 Compose 操作固定使用部署根目录作为 project directory，并与候选预检加载同一份根目录 `.env`。重启前还会确认现有 Compose 文件确实把服务渲染为候选 digest。旧 Compose 不兼容时会先备份为 `docker-compose.yml.pre-digest.bak`，再迁移到仓库模板；候选失败回滚时会恢复原 Compose，并叠加仅覆盖镜像的配置把旧版本固定到记录的 digest。首次切换硬化脚本时，旧容器即使由 tag 启动也会先按原仓库解析为可回滚 digest；若旧镜像还没有 Docker `HEALTHCHECK`，回滚验证会改用容器内 `/livez` 探测。候",
+   "score": 5.3981627015177525
+  },
+  {
+   "key": "yt:JIh6h8mx0Zk",
+   "source": "youtube",
+   "query": "open data uk api project",
+   "title": "Tutorial 1: Getting Started with the UK Data Service Open Data API",
+   "url": "https://www.youtube.com/watch?v=JIh6h8mx0Zk",
+   "meta": {
+    "channel": "AppChallenge",
+    "rank": 2
+   },
+   "body": "\n[body unavailable: IpBlocked]",
+   "score": 0.5
+  },
+  {
+   "key": "gh:elithril/blender-kiln",
+   "source": "awesome",
+   "query": "awesome-claude-code",
+   "title": "elithril/blender-kiln (new in awesome-claude-code)",
+   "url": "https://github.com/elithril/blender-kiln",
+   "repo": "elithril/blender-kiln",
+   "meta": {
+    "list": "awesome-claude-code",
+    "stars": 26,
+    "created": "2026-04-01",
+    "language": "Python",
+    "description": "Blender skill and plugin for Claude Code — 3D asset pipeline from text brief to production GLB: Blender MCP, Hunyuan3D generation, texturing, rigging, batch mode"
+   },
+   "body": "blender-kiln — The 3D Asset Forge \n\n \n     \n     \n     \n   \n   \n     \n \n\n**A Claude Code skill that turns a text brief — or a photo — into a production-ready GLB\nthrough Blender.** Blender MCP servers give an agent hands in Blender; kiln gives it the\nproduction method on top — sourcing, cleanup, texturing, optimization, validation,\nexport — and works on both of them: [ahujasid's `mcp-for-blender`](https://github.com/ahujasid/mcp-for-blender)\nand the Blender Foundation's [official Blender Lab MCP](https://projects.blender.org/lab/blender_mcp),\nthe server behind Claude's Blender connector.\n\n Cited in   3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code   (Google DeepMind, USC, 2026), §1. \n\n \n   \n \n  From one photo each, no marketplace, no AI generation: scripted in Blender, textured from CC0 scans,\nmeasured against the real object. Shape scores against the real assets:  0.897 ,  0.950 ,  0.750  —\n how they are measured .  \n\n## Quickstart\n\n```\n/plugin marketplace add elithril/blender-kiln\n/plugin install blender-kiln@blender-kiln\n/kiln setup\n/kiln A hanging iron lantern for a medieval inn, stylized, for the web\n```\n\n`/kiln setup` detects Blender, the MCP server and the optional tools, and says what\nis missing. Blender 4.4+ with a Blender MCP running — see [Requirements](#requirements).\nGive it a photo and it rebuilds the object: `/kiln Rebuild the lamp in ./lamp.png as a game asset`.\n\n## How it works, from a photo\n\n \n   \n \n  Every panel is a file the session itself wrote while rebuilding the ammo box above — nothing re-staged.  \n\n1. **Read the photo before modeling.** An inventory of every part and how it meets the next,\n   from enlarged crops; the real size, the camera's height and angle — asked, or stated as\n   assumptions. Given a 3D mesh generated from the same photo, its proportions are measured\n   instead ([TRELLIS.2, locally](plugin/references/ai-generation.md)) — never shipped.\n2. **Texture from scans, not noise.** A Poly Haven CC0 texture set of the material family,\n   chosen by eye against the photo, tinted to its palette, worn by the form.\n3. **Measure against the photo.** [`plugin/tools/fidelity_check.py`](plugin/tools/fidelity_check.py) renders\n   the model at the photo's camera under a studio light and lists the gaps — silhouette per\n   height band, materials, metal that cannot exist.\n4. **Look at every joint.** Each end of a long part that touches another is rendered alone: a\n   part that joins another enters it.\n5. **Ship, and measure the file that ships.** Optimized (Draco, WebP), validated, re-measured\n   as a GLB — what the user gets, not the `.blend`.\n\n## Measured, not claimed\n\nA [quality bench](bench/README.md) runs the skill headless, each session in a sandbox,\nand measures every GLB it ships after re-importing it. Photo references are Poly Haven\npreviews, so the real 3D asset exists: each rebuild is scored against it from five sides —\nan asset the session never sees. Blender 5.2.2, Opus 5.5, one run each:\n\n| From a photo | before the photo method | **kiln 2.0** | shipped | cost |\n|---|---:|---:|---:|---:|\n| Hurricane lantern | 0.830 | **0.897** | 229 KB | $5.04 |\n| Ammo box | 0.854 | **0.950** | 187 KB | $3.80 |\n| Gothic chair | 0.445 | **0.750** | 239 KB | $6.13 |\n\n| Five text briefs, before → after | ahujasid MCP | Official Lab MCP |\n|---|---:|---:|\n| Shipped | 32.9 MB → **0.96 MB** | 3.9 MB → **0.75 MB** |\n| Final GLBs compressed (Draco, WebP) | 0 of 7 → **7 of 7** | 0 of 7 → **7 of 7** |\n| Defects ",
+   "score": 2.0,
+   "seen_vault": "vault: tools and repos"
+  },
+  {
+   "key": "vault:2026-10-02:human-reads-flagged-threads-from-alert-links",
+   "source": "vault",
+   "query": "open",
+   "title": "human reads flagged threads from alert links",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Reading Reddit threads from an agent browser",
+    "date": "2026-10-02",
+    "where": "TRITON-CORE/Systems/flywheel/listening/reddit-neptune.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: the lane now depends on it\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) Hard no. The Claude built-in browser pane and the Claude in Chrome extension both refuse reddit.com and old.reddit.com as a safety restriction, and Anthropic WebFetch is refused too. Keyword alerts still arrive by email, but the thread itself has to be read by a person. Job: Listen to Reddit for every venture without an API key (still open)",
+   "score": 98.0,
+   "thread": {
+    "date": "2026-10-02",
+    "subject": "Reading Reddit threads from an agent browser",
+    "kind": "service",
+    "status": "open",
+    "theme": "human reads flagged threads from alert links",
+    "note": "the lane now depends on it",
+    "where": "TRITON-CORE/Systems/flywheel/listening/reddit-neptune.md"
+   }
+  },
+  {
+   "key": "hn:49924943",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Breadcrumb, record everything on your mac + context manager for AI",
+   "url": "https://innerloop.works/breadcrumb",
+   "hn_url": "https://news.ycombinator.com/item?id=49924943",
+   "meta": {
+    "points": 41,
+    "comments": 5,
+    "created": "2026-10-01T17:58:37Z"
+   },
+   "body": "Hi HN, I'm Justin. Breadcrumb records everything you do on your Mac (screen + meetings + AI transcripts + what you and your AI decided) and turns it into memory your AI can search. It's local and encrypted. You can also teach it rules by talking to it and it makes sure the right rules turn up in the right context. Works with Claude Code / Codex / Cursor / opencode. All of this is exposed to your AI as 30+ MCP tools (here's the definitions): https://innerloop.works/breadcrumb/mcp I started it in June because I wanted to understand what was going on with my AI dev work. Then it just kept growing as I jammed on it 10 hours a day for 3 months. I started by recording every screen so I could jump back to a moment and see what I'd been doing with the AI. Then I added MCP so the AI could search it. Then time tracking. Then meetings with transcripts and timestamped screenshots. After that I started feeding the data back in. At first it was just a few relevant memories in the prompt. Then I started adding rules and rules modules. Then I started recording the AI transcripts and all the other stuff the AI did (subagents, tools etc). I wanted a complete record so I could go back and see what the AI did and why. I found the more data the AI had the more useful it became. One example. I got off a zoom call with the team at the day job and said: \"Review the meeting I just had, find all the bugs we discussed, and create JIRA tickets with screenshots.\" It read the transcript. Found every bug w\ncomment (jsh42): I use this. My focus in in wringing the most ROI possible from my AI Interns. Breadcrumb is like upgrading to a better model and a better brain simultaneously.\ncomment (Bjartr): This is what I wanted Windows Recall to be\ncomment (aidiveyt): Do all 30+ tools load every request? Claude Code's 24 built-ins already cost ~85,500 chars of definitions before any MCP server.",
+   "score": 4.633549352897396
+  },
+  {
+   "key": "gh:ericmmartin/youtube-transcript-plus",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js package designed to fetch and process YouTube video transcripts (captions).",
+   "url": "https://github.com/ericmmartin/youtube-transcript-plus",
+   "repo": "ericmmartin/youtube-transcript-plus",
+   "meta": {
+    "stars": 162,
+    "created": "2025-01-19",
+    "pushed": "2026-10-01",
+    "language": "TypeScript",
+    "topics": [
+     "proxy",
+     "transcript",
+     "youtube",
+     "youtube-captions"
+    ]
+   },
+   "body": "# youtube-transcript-plus\n\n[](https://badge.fury.io/js/youtube-transcript-plus)\n[](https://github.com/ericmmartin/youtube-transcript-plus/actions/workflows/ci.yml)\n[](https://scorecard.dev/viewer/?uri=github.com/ericmmartin/youtube-transcript-plus)\n\nA Node.js library to fetch transcripts from YouTube videos. This package uses YouTube's unofficial API, so it may break if YouTube changes its internal structure.\n\n**Note:** This project was originally forked from [https://github.com/Kakulukian/youtube-transcript](https://github.com/Kakulukian/youtube-transcript).\n\n## Requirements\n\n- Node.js >= 20.0.0 (Node 20.x reaches EOL in September 2026)\n\n## Installation\n\n```bash\n$ npm install youtube-transcript-plus\n```\n\nor\n\n```bash\n$ yarn add youtube-transcript-plus\n```\n\n## Usage\n\n### Basic Usage\n\n```javascript\nimport { fetchTranscript } from 'youtube-transcript-plus';\n\n// Fetch transcript using default settings\nfetchTranscript('videoId_or_URL').then(console.log).catch(console.error);\n```\n\n### Custom User-Agent\n\nYou can pass a custom `userAgent` string to mimic different browsers or devices.\n\n```javascript\nfetchTranscript('videoId_or_URL', {\n  userAgent:\n    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n})\n  .then(console.log)\n  .catch(console.error);\n```\n\n### HTTP Support\n\nYou can disable HTTPS and use HTTP instead for YouTube requests by setting the `disableHttps` option to `true`. This might be necessary in certain environments where HTTPS connections are restricted.\n\n```javascript\nfetchTranscript('videoId_or_URL', {\n  disableHttps: true, // Use HTTP instead of HTTPS\n})\n  .then(console.log)\n  .catch(console.error);\n```\n\n**Security Warning:** Using HTTP instead of HTTPS removes transport layer security and is not recommended for production environments. Only use this option when absolutely necessary.\n\n### Custom Fetch Functions\n\nYou can inject custom `videoFetch`, `playerFetch`, and `transcriptFetch` functions to modify the fetch behavior, such as using a proxy or custom headers. The library makes three types of HTTP requests:\n\n1. **`videoFetch`**: Fetches the YouTube video page (GET request)\n2. **`playerFetch`**: Calls YouTube's Innertube API to get caption tracks (POST request)\n3. **`transcriptFetch`**: Downloads the actual transcript data (GET request)\n\n```javascript\nfetchTranscript('videoId_or_URL', {\n  videoFetch: async ({ url, lang, userAgent }) => {\n    // Custom logic for video page fetch (GET)\n    return fetch(`https://my-proxy-server.com/?url=${encodeURIComponent(url)}`, {\n      headers: {\n        ...(lang && { 'Accept-Language': lang }),\n        'User-Agent': userAgent,\n      },\n    });\n  },\n  playerFetch: async ({ url, method, body, headers, lang, userAgent }) => {\n    // Custom logic for Innertube API call (POST)\n    return fetch(`https://my-proxy-server.com/?url=${encodeURIComponent(url)}`, {\n      method,\n      headers: {\n        ...(lang && { 'Accept-Language': lang }),\n        'User-Agent': userAgent,\n        ...headers,\n      },\n      body,\n    });\n  },\n  transcriptFetch: async ({ url, lang, userAgent }) => {\n    // Custom logic for transcript data fetch (GET)\n    return fetch(`https://my-proxy-server.com/?url=${encodeURIComponent(url)}`, {\n      headers: {\n        ...(lang && { 'Accept-Language': lang }),\n        'User-Agent': userAgent,\n      },\n    });\n  },\n})\n  .then(console.log)\n  .catch(console.error);\n```\n\n### Language Support\n\nYou can specify the langu",
+   "score": 5.093750200806762
+  },
+  {
+   "key": "yt:Ao7fbajRSKI",
+   "source": "youtube",
+   "query": "car depreciation data analysis",
+   "title": "Why Cars Lose Their Value So Fast",
+   "url": "https://www.youtube.com/watch?v=Ao7fbajRSKI",
+   "meta": {
+    "channel": "CNBC",
+    "rank": 2
+   },
+   "body": "\n[body unavailable: IpBlocked]",
+   "score": 0.5
+  }
+ ]
+}

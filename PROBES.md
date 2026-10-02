@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 32 works, 2 broken, 8 blocked, 2 not worth it. Killed: 4.
 
-## Queue (5 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,9 @@ Verdicts so far: 32 works, 2 broken, 8 blocked, 2 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0051 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | desk | none | 2026-10-03 | 0 | 25 min |
+| P-0054 | ldraw-nova: does its Python toolset validate a hand-written LDraw model offline with no LLM or key? | harvest | none |  | 0 | 20 min |
+| P-0055 | Reddit RSS: does a keyless HTTP fetch of a public subreddit and thread feed return text from this machine? | vault | none |  | 0 | 10 min |
+| P-0056 | youtube-transcript-plus: does it return captions for 3 public videos from this IP with no proxy? | harvest | none |  | 0 | 15 min |
 
 ## Verdicts (44)
 
