@@ -1,0 +1,29 @@
+{
+ "bots_online": 60,
+ "tried": [
+  [
+   "leelapieceodds",
+   2000,
+   "declined: I'm not accepting challenges from bots."
+  ],
+  [
+   "leelaqueenforknight",
+   2000,
+   "declined: I'm not accepting challenges from bots."
+  ],
+  [
+   "charibot",
+   2000,
+   "accepted"
+  ]
+ ],
+ "opponent": [
+  "charibot",
+  2000
+ ],
+ "status": "mate",
+ "moves_sent": 17,
+ "errors": [],
+ "my_colour": "black",
+ "game_id": "L8DoZpEZ"
+}
