@@ -1,0 +1,92 @@
+[
+ {
+  "status": 200,
+  "bytes": 93386,
+  "secs": 1.07,
+  "ctype": "application/atom+xml; charset=UTF-8",
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:media=\"http://search.yahoo.com/mrss/\"><category term=\"solana\" label=\"r/sol",
+  "name": "sub_rss",
+  "url": "https://www.reddit.com/r/solana/.rss",
+  "ua": "browser",
+  "entries": 25
+ },
+ {
+  "status": 200,
+  "bytes": 93386,
+  "secs": 1.12,
+  "ctype": "application/atom+xml; charset=UTF-8",
+  "head": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:media=\"http://search.yahoo.com/mrss/\"><category term=\"solana\" label=\"r/sol",
+  "name": "sub_rss",
+  "url": "https://www.reddit.com/r/solana/.rss",
+  "ua": "script",
+  "entries": 25
+ },
+ {
+  "status": 200,
+  "bytes": 323898,
+  "secs": 0.93,
+  "ctype": "text/html; charset=utf-8",
+  "head": "\n    <!DOCTYPE html>\n    <html lang=\"en-US\" class=\"theme-beta\" dir=\"ltr\" device=\"desktop\">\n      <head prefix=\"og: https://ogp.me/ns#\">\n        <title>Welcome t",
+  "name": "sub_rss_old",
+  "url": "https://old.reddit.com/r/solana/.rss",
+  "ua": "browser"
+ },
+ {
+  "status": 200,
+  "bytes": 324016,
+  "secs": 0.77,
+  "ctype": "text/html; charset=utf-8",
+  "head": "\n    <!DOCTYPE html>\n    <html lang=\"en-US\" class=\"theme-beta\" dir=\"ltr\" device=\"desktop\">\n      <head prefix=\"og: https://ogp.me/ns#\">\n        <title>Welcome t",
+  "name": "sub_rss_old",
+  "url": "https://old.reddit.com/r/solana/.rss",
+  "ua": "script"
+ },
+ {
+  "status": 403,
+  "error": "HTTP Error 403: Blocked",
+  "secs": 0.13,
+  "name": "sub_json",
+  "url": "https://www.reddit.com/r/solana/new.json?limit=10",
+  "ua": "browser"
+ },
+ {
+  "status": 403,
+  "error": "HTTP Error 403: Blocked",
+  "secs": 0.12,
+  "name": "sub_json",
+  "url": "https://www.reddit.com/r/solana/new.json?limit=10",
+  "ua": "script"
+ },
+ {
+  "status": 429,
+  "error": "HTTP Error 429: Too Many Requests",
+  "secs": 0.2,
+  "name": "search_rss",
+  "url": "https://www.reddit.com/search.rss?q=pump.fun&sort=new",
+  "ua": "browser"
+ },
+ {
+  "status": 429,
+  "error": "HTTP Error 429: Too Many Requests",
+  "secs": 0.22,
+  "name": "search_rss",
+  "url": "https://www.reddit.com/search.rss?q=pump.fun&sort=new",
+  "ua": "script"
+ },
+ {
+  "status": 429,
+  "error": "HTTP Error 429: Too Many Requests",
+  "secs": 0.2,
+  "name": "thread_rss",
+  "url": "https://www.reddit.com/r/solana/comments/1jmghap/welcome_to_rsolana_read_this_to_get_started/",
+  "ua": "browser"
+ },
+ {
+  "status": 429,
+  "error": "HTTP Error 429: Too Many Requests",
+  "secs": 0.14,
+  "name": "thread_rss",
+  "url": "https://www.reddit.com/r/solana/comments/1jmghap/welcome_to_rsolana_read_this_to_get_started/",
+  "ua": "script"
+ }
+]

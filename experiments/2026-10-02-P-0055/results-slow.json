@@ -1,0 +1,49 @@
+[
+ {
+  "url": "sub_rss",
+  "status": 200,
+  "bytes": 93386,
+  "secs": 0.87,
+  "ratelimit": {
+   "x-ratelimit-used": "1",
+   "x-ratelimit-remaining": "0.0",
+   "x-ratelimit-reset": "43"
+  }
+ },
+ {
+  "url": "https://www.reddit.com/r/solana/comments/1jmghap/welcome_to_rsolana_read_this_to_get_started/",
+  "status": 429,
+  "bytes": 0,
+  "secs": 0.31,
+  "entries": 0,
+  "ratelimit": {
+   "x-ratelimit-used": "1",
+   "x-ratelimit-remaining": "0.0",
+   "x-ratelimit-reset": "32"
+  }
+ },
+ {
+  "url": "https://www.reddit.com/r/solana/comments/1wu47aq/frontier_traders_seoul_showdown_live_broadcast/",
+  "status": 429,
+  "bytes": 0,
+  "secs": 0.22,
+  "entries": 0,
+  "ratelimit": {
+   "x-ratelimit-used": "1",
+   "x-ratelimit-remaining": "0.0",
+   "x-ratelimit-reset": "21"
+  }
+ },
+ {
+  "url": "https://www.reddit.com/r/solana/comments/1ww31is/top_solana_launchpad_by_7d_bonding_curve_volume/",
+  "status": 429,
+  "bytes": 0,
+  "secs": 0.13,
+  "entries": 0,
+  "ratelimit": {
+   "x-ratelimit-used": "1",
+   "x-ratelimit-remaining": "0.0",
+   "x-ratelimit-reset": "11"
+  }
+ }
+]
