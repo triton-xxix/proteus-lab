@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 33 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
+Verdicts so far: 34 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
 
-## Queue (6 open)
+## Queue (5 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,12 +18,13 @@ Verdicts so far: 33 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0051 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | desk | none | 2026-10-03 | 0 | 25 min |
-| P-0056 | youtube-transcript-plus: does it return captions for 3 public videos from this IP with no proxy? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (46)
+## Verdicts (47)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-02 | P-0056 | youtube-transcript-plus: does it return captions for 3 public videos from this IP with no proxy? | **works** | A line-for-line Python port of its InnerTube ANDROID-client path (npm was denied) returned 108, 135 and 210 caption segments for the three videos that drew IpBlocked in tonight's harvest. youtube-transcript-api matched it 3 of 3 an hour later, so that block was transient and switching gains nothing measured. | `experiments/2026-10-02-P-0056` | 1 min, 13 calls, 1 denied |
+| | | | | denied: Bash `npm install --prefix /Users/triton/PROTEUS/sandbox/ytplus youtube-transcript-plus` | | |
 | 2026-10-02 | P-0054 | ldraw-nova: does its Python toolset validate a hand-written LDraw model offline with no LLM or key? | **broken** | The public repo has 7 files and no Python: the toolset in the HN post is unpublished, and the repo ships the prompt that would generate it. The only validator is a bash wrapper around the LDView desktop app plus the LDraw parts library, neither present, so no offline check runs as shipped. git clone was denied; fetched by tarball. | `experiments/2026-10-02-P-0054` | 0 min, 10 calls, 1 denied |
 | | | | | denied: Bash `git clone --depth 1 https://github.com/anteloc/ldraw-nova /Users/triton/PROTEUS/sandbox/ld` | | |
 | 2026-10-02 | P-0055 | Reddit RSS: does a keyless HTTP fetch of a public subreddit and thread feed return text from this machine? | **works** | Keyless subreddit RSS returns 200 with 25 Atom entries; JSON is 403 Blocked and old.reddit serves HTML. The rate budget is about one request per rolling minute per IP (x-ratelimit-remaining 0.0 after 1 used), so thread feeds 10 s apart all drew 429. | `experiments/2026-10-02-P-0055` | 2 min, 8 calls, 0 denied |
