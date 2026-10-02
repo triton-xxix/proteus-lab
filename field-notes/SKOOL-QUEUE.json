@@ -86,19 +86,27 @@
   {
    "id": "S-06",
    "track": 1,
-   "title": "Agent J 7-Day Challenge beside the AIS one",
+   "title": "Agent J 7-Day Challenge (Start Here, Days 1-2; drip-fed) beside the AIS one",
    "model": "sonnet",
-   "status": "needs-pull",
-   "files": [],
-   "why": "Pull the 27 lessons in an interactive session first (browser, signed in)."
+   "status": "queued",
+   "files": [
+    "field-notes/skool/agentj-7-day-challenge.md",
+    "field-notes/skool/ais-7-day-challenge.md"
+   ],
+   "why": "Two 7-day challenges side by side show what is teaching and what is packaging. Agent J unlocks a day every 24 h: Days 3-7 need re-pulls (S-18)."
   },
   {
    "id": "S-07",
    "track": 1,
    "title": "Automatable: Claude Code Masterclass, I Replaced n8n With Claude Code, 8 Things Your App Needs, Write Exactly Like You",
    "model": "sonnet",
-   "status": "needs-pull",
-   "files": [],
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/auto-claude-code-masterclass.txt",
+    "field-notes/skool/transcripts/auto-replaced-n8n-with-claude-code.txt",
+    "field-notes/skool/transcripts/auto-8-things-claude-code-app-needs.txt",
+    "field-notes/skool/transcripts/auto-write-exactly-like-you.txt"
+   ],
    "why": "Pull transcripts in an interactive session first."
   },
   {
@@ -106,9 +114,134 @@
    "track": 1,
    "title": "Brendan: How To Build Agentic Workflows, 5 Claude Skills I Can't Live Without",
    "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/brendan-agentic-workflows-claude-code.txt",
+    "field-notes/skool/transcripts/brendan-5-claude-skills.txt"
+   ],
+   "why": "Pull transcripts in an interactive session first."
+  },
+  {
+   "id": "S-09",
+   "track": 2,
+   "title": "Scrapers 1: Automatable \"This AI Agent Can Scrape ANYTHING\", n8n + Apify",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/auto-scrape-anything-agent.txt",
+    "field-notes/skool/transcripts/auto-n8n-apify-scrape.txt"
+   ],
+   "why": "Open-data archaeology and the harvester: what do these do that my keyless pullers do not?"
+  },
+  {
+   "id": "S-10",
+   "track": 2,
+   "title": "Scrapers 2: Google Maps contact scraper, Apollo lead scraper, LinkedIn jobs scraper",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/auto-google-maps-contact-scraper.txt",
+    "field-notes/skool/transcripts/auto-apollo-lead-scraper.txt",
+    "field-notes/skool/transcripts/auto-linkedin-jobs-scraper.txt"
+   ],
+   "why": "Lead scrapers: the mechanism, the paid API underneath, and how platforms detect them (intel lane)."
+  },
+  {
+   "id": "S-11",
+   "track": 3,
+   "title": "Voice agents 1: Brendan compares every AI phone caller platform, and which to choose",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/brendan-compared-every-ai-caller-platform.txt",
+    "field-notes/skool/transcripts/brendan-which-ai-caller-platform.txt"
+   ],
+   "why": "Mechanism hunting: what actually sits under Vapi, Retell, Bland and the rest."
+  },
+  {
+   "id": "S-12",
+   "track": 3,
+   "title": "Voice agents 2: making callers quicker, more realistic, prompt hacks",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/brendan-ai-callers-quicker.txt",
+    "field-notes/skool/transcripts/brendan-ai-callers-realistic.txt",
+    "field-notes/skool/transcripts/brendan-voice-prompt-hacks.txt"
+   ],
+   "why": "Latency and realism are the hard parts; are these real fixes or tricks?"
+  },
+  {
+   "id": "S-13",
+   "track": 3,
+   "title": "Voice agents 3: LiveKit builder guide, and a voice agent that took every call for two years",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/brendan-livekit-voice-agent-guide.txt",
+    "field-notes/skool/transcripts/brendan-voice-agent-2-years.txt"
+   ],
+   "why": "Open-source stack against two years in production: how a caller books, transfers and fails."
+  },
+  {
+   "id": "S-14",
+   "track": 1,
+   "title": "AIS: Zero to your first CC workflow, $10K agentic workflows, watch my agents work",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-zero-to-first-cc-workflow.txt",
+    "field-notes/skool/transcripts/ais-10k-agentic-workflows.txt",
+    "field-notes/skool/transcripts/ais-watch-agents-real-time.txt"
+   ],
+   "why": "Claude Code as an operating layer, against how Proteus already runs."
+  },
+  {
+   "id": "S-15",
+   "track": 1,
+   "title": "AIS: Stop learning n8n, build n8n flows with CC, build anything with n8n and CC",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-stop-learning-n8n.txt",
+    "field-notes/skool/transcripts/ais-build-n8n-flows-with-cc.txt",
+    "field-notes/skool/transcripts/ais-build-anything-n8n-cc.txt"
+   ],
+   "why": "The n8n versus Claude Code argument from the side that teaches both."
+  },
+  {
+   "id": "S-16",
+   "track": 4,
+   "title": "Inside Agent-J+: 17 previews of the paid room",
+   "model": "haiku",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/agentj-inside-plus.md"
+   ],
+   "why": "Evidence for or against ever proposing the paid tier, nothing else. Already local."
+  },
+  {
+   "id": "S-17",
+   "track": 1,
+   "title": "AIS small tools: iMessage, /computer, Remote Control, Google CLI",
+   "model": "haiku",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/ais-imessage.txt",
+    "field-notes/skool/transcripts/ais-computer.txt",
+    "field-notes/skool/transcripts/ais-remote-control.txt",
+    "field-notes/skool/transcripts/ais-google-cli.txt"
+   ],
+   "why": "Short videos, one cheap pass: anything Proteus could use tomorrow?"
+  },
+  {
+   "id": "S-18",
+   "track": 1,
+   "title": "Agent J 7-Day Challenge, Days 3-7 (re-pull as each day unlocks)",
+   "model": "sonnet",
    "status": "needs-pull",
    "files": [],
-   "why": "Pull transcripts in an interactive session first."
+   "why": "Drip-fed course; Day 3 should unlock about 3 Oct. Interactive pull."
   }
  ]
 }

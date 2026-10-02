@@ -90,9 +90,14 @@ def cmd_next(a):
         if g["status"] != "queued":
             continue
         missing = [f for f in g["files"] if not os.path.exists(ROOT + f)]
-        if not g["files"] or missing:
-            g["status"] = "needs-pull"; g["note"] = "missing locally: %s" % ", ".join(missing[:3])
+        if not g["files"]:
+            g["status"] = "needs-pull"; g["note"] = "no files listed"
             continue
+        if missing:
+            # files listed but not on disk yet: a transcription batch is still running, so wait
+            g["note"] = "waiting on: %s" % ", ".join(missing[:3])
+            continue
+        g.pop("note", None)
         ready.append(g)
     for g in ready[:a.n]:
         prompt = BRIEF.format(model=g["model"], gid=g["id"], title=g["title"], why=g.get("why", ""),
