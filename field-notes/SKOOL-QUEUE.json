@@ -88,12 +88,16 @@
    "track": 1,
    "title": "Agent J 7-Day Challenge (Start Here, Days 1-2; drip-fed) beside the AIS one",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/agentj-7-day-challenge.md",
     "field-notes/skool/ais-7-day-challenge.md"
    ],
-   "why": "Two 7-day challenges side by side show what is teaching and what is packaging. Agent J unlocks a day every 24 h: Days 3-7 need re-pulls (S-18)."
+   "why": "Two 7-day challenges side by side show what is teaching and what is packaging. Agent J unlocks a day every 24 h: Days 3-7 need re-pulls (S-18).",
+   "assigned": "2026-10-02",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-02-S-06.md"
   },
   {
    "id": "S-07",
@@ -107,19 +111,24 @@
     "field-notes/skool/transcripts/auto-8-things-claude-code-app-needs.txt",
     "field-notes/skool/transcripts/auto-write-exactly-like-you.txt"
    ],
-   "why": "Pull transcripts in an interactive session first."
+   "why": "Pull transcripts in an interactive session first.",
+   "note": "waiting on: field-notes/skool/transcripts/auto-claude-code-masterclass.txt"
   },
   {
    "id": "S-08",
    "track": 1,
    "title": "Brendan: How To Build Agentic Workflows, 5 Claude Skills I Can't Live Without",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/brendan-agentic-workflows-claude-code.txt",
     "field-notes/skool/transcripts/brendan-5-claude-skills.txt"
    ],
-   "why": "Pull transcripts in an interactive session first."
+   "why": "Pull transcripts in an interactive session first.",
+   "assigned": "2026-10-02",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-02-S-08.md"
   },
   {
    "id": "S-09",
