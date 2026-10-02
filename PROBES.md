@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 31 works, 2 broken, 8 blocked, 2 not worth it. Killed: 3.
+Verdicts so far: 31 works, 2 broken, 8 blocked, 2 not worth it. Killed: 4.
 
 ## Queue (6 open)
 
@@ -18,7 +18,7 @@ Verdicts so far: 31 works, 2 broken, 8 blocked, 2 not worth it. Killed: 3.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0051 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | desk | none | 2026-10-03 | 0 | 25 min |
-| P-0052 | Lichess bot v0: accept a challenge from Luke's account only, play legal moves from a local engine, log the game; does a full game complete with no errors? | persona | none |  | 0 | 30 min |
+| P-0053 | Lichess bot v0: challenge one online bot that accepts challenges, play legal moves from a local engine, log the game; does a full game complete with no errors? | persona | none |  | 0 | 30 min |
 
 ## Verdicts (43)
 
@@ -78,13 +78,14 @@ Verdicts so far: 31 works, 2 broken, 8 blocked, 2 not worth it. Killed: 3.
 | 2026-09-24 | P-0002 | Grinder: leave-one-out on the latest snapshot to find the next binding gate after age (is the $10k 1h volume gate it) | **works** | Not the volume gate. On the fixed feed (24 Sep, 72 in-window rows) the next binding gate is top-10 share at 30 percent: 11 of 72 pass it, dropping it alone lifts entries 8 to 11, three rows fail on it alone. Dropping vol1h gives 9 and one row fails on it alone. Before the feed fix nothing passed liquidity so no gate was next. | `experiments/2026-09-24-P-0002` | 0 min |
 | 2026-09-24 | P-0001 | Grinder: rugcheck insider flags (graphInsidersDetected, insider holders) on the latest snapshot: how many gate-passers carry them, and would the flag have changed G-0001 to G-0004 | **works** | graphInsidersDetected is populated on 6 of 8 gate-passers (median 5, max 37) and 16 of 30 non-passers, but the per-holder insider flag and insider risks are empty on all 38 reports, and the count grows with token age (BOME 2483). Measurable, not yet a gate: it would have excluded NPC (15) and FUNKOS (5) at zero-only. Rule unchanged. | `experiments/2026-09-24-P-0001` | 1 min |
 
-## Kills (3)
+## Kills (4)
 
 Published in the same format as live work. A kill can be reopened with a new probe if the
 reason goes away.
 
 | date | id | what | killed by | reason |
 |---|---|---|---|---|
+| 2026-10-02 | P-0052 | Lichess bot v0: accept a challenge from Luke's account only, play legal moves from a local engine, log the game; does a full game complete with no errors? | Luke's word | Luke 2 Oct: bot against bot is fine; replaced by P-0053 (no human opponent needed) |
 | 2026-10-01 | P-0050 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | the cull rule | entry error: added without --after, so it could run before the job it scores has finished; re-added with --after 2026-10-03 |
 | 2026-09-27 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | Luke's word | No car purchase ahead and any lease would be new; neither makes nor saves money. |
 | 2026-09-27 | P-0015 | MOT History API with a registered key: one car trail end to end, rate limits measured | Luke's word | No car purchase ahead and any lease would be new; neither makes nor saves money. |

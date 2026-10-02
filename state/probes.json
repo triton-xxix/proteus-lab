@@ -1,5 +1,5 @@
 {
- "next_id": 53,
+ "next_id": 54,
  "items": [
   {
    "id": "P-0001",
@@ -1124,6 +1124,29 @@
   {
    "id": "P-0052",
    "title": "Lichess bot v0: accept a challenge from Luke's account only, play legal moves from a local engine, log the game; does a full game complete with no errors?",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-02",
+   "status": "killed",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "killed_at": "2026-10-02T01:13:21+0100",
+   "killed_by": "luke",
+   "kill_reason": "Luke 2 Oct: bot against bot is fine; replaced by P-0053 (no human opponent needed)"
+  },
+  {
+   "id": "P-0053",
+   "title": "Lichess bot v0: challenge one online bot that accepts challenges, play legal moves from a local engine, log the game; does a full game complete with no errors?",
    "source": "persona",
    "needs": "",
    "after": "",
