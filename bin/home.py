@@ -169,7 +169,7 @@ def spend():
     xai = sum(float(x) for x in re.findall(r"^\| 20\d\d-\d\d-\d\d \|[^|]*\| ([0-9.]+) \|\s*$", text.split("## Luke's xAI account")[-1], re.M)) if "## Luke's xAI account" in text else 0.0
     logged = []
     for path in sorted(glob.glob(ROOT + "state/runs/2*.md"))[-7:]:
-        logged += [float(x) for x in re.findall(r"x spend \$([0-9.]+)", open(path).read())]
+        logged += [float(x) for x in re.findall(r"x spend \$([0-9]+(?:\.[0-9]+)?)", open(path).read())]
     return ["## Money", "",
             "- Proteus card, %s: %s (cap £50 autonomous, £250 all-in). [[SPEND]]" % (month, card),
             "- Luke's xAI account: $%.2f in SPEND.md (updated Sundays); mentions spend logged this week $%.2f." % (xai, sum(logged)), ""]
