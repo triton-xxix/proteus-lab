@@ -1244,15 +1244,17 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-10-03",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-03T23:44:20+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-03T23:45:02+0100",
+   "note": "335 skill reference files on this Mac, 184 over 100 lines, 170 of those (92%) with no contents list in the first 40 lines; hyperframes-animation alone has 58. Count only, not tested whether it changes what a model reads.",
+   "artefacts": [
+    "experiments/2026-10-03-P-0057"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }

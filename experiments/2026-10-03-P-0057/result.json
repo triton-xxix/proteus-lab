@@ -1,0 +1,102 @@
+{
+ "skill_dirs": 31,
+ "reference_files": 335,
+ "over_100": 184,
+ "over_100_no_toc": 170,
+ "share_no_toc": 0.924,
+ "median_lines_over_100": 176,
+ "worst_skills": [
+  [
+   "hyperframes-animation",
+   58
+  ],
+  [
+   "hyperframes-creative",
+   13
+  ],
+  [
+   "media-use",
+   8
+  ],
+  [
+   "skill-creator",
+   8
+  ],
+  [
+   "command-development",
+   8
+  ],
+  [
+   "build-mcp-server",
+   7
+  ],
+  [
+   "hyperframes-registry",
+   5
+  ],
+  [
+   "hyperframes-core",
+   5
+  ],
+  [
+   "plugin-structure",
+   5
+  ],
+  [
+   "agent-development",
+   5
+  ]
+ ],
+ "longest_no_toc": [
+  [
+   "media-use",
+   "media-treatment-recipes.md",
+   929
+  ],
+  [
+   "command-development",
+   "interactive-commands.md",
+   920
+  ],
+  [
+   "command-development",
+   "marketplace-considerations.md",
+   904
+  ],
+  [
+   "plugin-structure",
+   "advanced-plugin.md",
+   765
+  ],
+  [
+   "command-development",
+   "documentation-patterns.md",
+   739
+  ],
+  [
+   "command-development",
+   "advanced-workflows.md",
+   722
+  ],
+  [
+   "command-development",
+   "testing-strategies.md",
+   702
+  ],
+  [
+   "pdf",
+   "REFERENCE.md",
+   612
+  ],
+  [
+   "plugin-structure",
+   "standard-plugin.md",
+   587
+  ],
+  [
+   "plugin-structure",
+   "component-patterns.md",
+   567
+  ]
+ ]
+}
