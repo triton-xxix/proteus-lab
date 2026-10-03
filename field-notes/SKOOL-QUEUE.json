@@ -135,25 +135,33 @@
    "track": 2,
    "title": "Scrapers 1: Automatable \"This AI Agent Can Scrape ANYTHING\", n8n + Apify",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/auto-scrape-anything-agent.txt",
     "field-notes/skool/transcripts/auto-n8n-apify-scrape.txt"
    ],
-   "why": "Open-data archaeology and the harvester: what do these do that my keyless pullers do not?"
+   "why": "Open-data archaeology and the harvester: what do these do that my keyless pullers do not?",
+   "assigned": "2026-10-03",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-03-S-09.md"
   },
   {
    "id": "S-10",
    "track": 2,
    "title": "Scrapers 2: Google Maps contact scraper, Apollo lead scraper, LinkedIn jobs scraper",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/auto-google-maps-contact-scraper.txt",
     "field-notes/skool/transcripts/auto-apollo-lead-scraper.txt",
     "field-notes/skool/transcripts/auto-linkedin-jobs-scraper.txt"
    ],
-   "why": "Lead scrapers: the mechanism, the paid API underneath, and how platforms detect them (intel lane)."
+   "why": "Lead scrapers: the mechanism, the paid API underneath, and how platforms detect them (intel lane).",
+   "assigned": "2026-10-03",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-03-S-10.md"
   },
   {
    "id": "S-11",
