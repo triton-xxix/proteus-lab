@@ -6,17 +6,24 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-102 judged over 7 harvest days, 76 kept, 20 testable, 20 queued as probes, 15 with a probe verdict.
+116 judged over 8 harvest days, 83 kept, 22 testable, 21 queued as probes, 18 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0101 | 2026-10-02 | github | [ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js packag](https://github.com/ericmmartin/youtube-transcript-plus) | mechanism | tools-for-strangers | yes | P-0056 |
+| H-0116 | 2026-10-03 | youtube | [Everything You Know About Skills IS OUTDATED](https://www.youtube.com/watch?v=e7TY56-yIvM) | mechanism | tech | yes | P-0057 |
+| H-0113 | 2026-10-03 | vault | [Photoreal moving footage of a subject you cannot film, one consistent face and a directed ](https://www.instagram.com/reel/DdoiRHMmyel/) | mechanism | tools-for-strangers | no: Video generation models need accounts and paid credits. |  |
+| H-0111 | 2026-10-03 | arxiv | [Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control](https://arxiv.org/abs/2610.02038) | mechanism | forecasting | no: Needs the authors' simulator, site data and code, which are  |  |
+| H-0110 | 2026-10-03 | github | [zhuyansen/awesome-claude-video-skills: Open-source skills and toolkits that let Claude Cod](https://github.com/zhuyansen/awesome-claude-video-skills) | both | tools-for-strangers | no: It is a list; running it would only mean fetching other repo |  |
+| H-0108 | 2026-10-03 | vault | [Generating many platform-native variants (hooks, colour grades, overlays) from one filmed ]() (intel) | mechanism | tools-for-strangers | no: The useful part needs a filmed asset and owned accounts, and |  |
+| H-0106 | 2026-10-03 | arxiv | [OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning](https://arxiv.org/abs/2610.02181) | mechanism | tech | no: Needs a trained omni-LLM checkpoint and GPU, and the paper g |  |
+| H-0103 | 2026-10-03 | vault | [Whether a fees-paid threshold removes rugs without removing the launches that ran, on a da](https://www.instagram.com/reel/Db6WNI9BSQX/) | mechanism | desk:grinder | yes |  |
+| H-0101 | 2026-10-02 | github | [ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js packag](https://github.com/ericmmartin/youtube-transcript-plus) | mechanism | tools-for-strangers | yes | P-0056 **works** |
 | H-0100 | 2026-10-02 | hn | [Show HN: Breadcrumb, record everything on your mac + context manager for AI](https://innerloop.works/breadcrumb) | mechanism | tools-for-strangers | no: It is a closed Mac app that records the screen and needs ins |  |
-| H-0099 | 2026-10-02 | vault | [human reads flagged threads from alert links]() | mechanism | tools-for-strangers | yes | P-0055 |
+| H-0099 | 2026-10-02 | vault | [human reads flagged threads from alert links]() | mechanism | tools-for-strangers | yes | P-0055 **works** |
 | H-0098 | 2026-10-02 | awesome | [elithril/blender-kiln (new in awesome-claude-code)](https://github.com/elithril/blender-kiln) | mechanism | tools-for-strangers | no: It needs Blender with an MCP server running and a paid model |  |
-| H-0095 | 2026-10-02 | hn | [Show HN: Made an open-source Lego AI generator](https://github.com/anteloc/ldraw-nova) | mechanism | tools-for-strangers | yes | P-0054 |
+| H-0095 | 2026-10-02 | hn | [Show HN: Made an open-source Lego AI generator](https://github.com/anteloc/ldraw-nova) | mechanism | tools-for-strangers | yes | P-0054 **broken** |
 | H-0094 | 2026-10-02 | vault | [Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7 ](https://www.instagram.com/reel/Dd-BvW5Jych/) | mechanism | tools-for-strangers | no: It is a paid hosted service needing an account and spend, an |  |
 | H-0091 | 2026-10-02 | github | [Edwardxlai/easyread: 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in com](https://github.com/Edwardxlai/easyread) | mechanism | tools-for-strangers | no: It is an Electron app that needs a model login or key to tra |  |
 | H-0090 | 2026-10-02 | hn | [Show HN: Rhun, an open-source code editor written in assembly](https://rhun.app/) | mechanism | tech | no: It means installing an unverified binary or building an asse |  |
@@ -90,6 +97,91 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0116 Everything You Know About Skills IS OUTDATED
+2026-10-03, youtube, https://www.youtube.com/watch?v=e7TY56-yIvM
+
+- **Mechanism:** The claim is that when a skill points to a long reference file, Claude may open only the first 100 lines (a head -100 call) to decide whether the file is relevant, so rules after that point can go unseen. The stated fix is a contents list at the top of any reference file over 100 lines so the model can see the whole map or jump to a section. A second rule scales how exact a skill's instructions are to how fragile the task is.
+- **Claim:** Reference files over 100 lines with no contents list are rarely used in full, and Anthropic's best-practice guide has six new rules.
+- **Testable:** yes. How many reference files under the local skills folders exceed 100 lines, have no contents list, and have key rules after line 100? Queued as P-0057.
+- **Idea on its own:** needs-a-run. The head-100 behaviour is plausible but secondhand, and only an audit of real skills plus a controlled read shows whether it matters here.
+- **How it would be done:** Scan every skill folder under the Claude skills directories and list reference files by line count and whether a contents block sits in the first ten lines. Flag those over 100 lines that lack one and note headings sitting past line 100. To check the behaviour itself, a later run in an interactive session would place a marker rule at line 150 of a test reference and see whether the skill follows it. Fixing is a short edit per file.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** A claim that Claude reads only the first 100 lines of a skill's reference file, so long files without a contents list hide their own rules.
+
+### H-0113 Photoreal moving footage of a subject you cannot film, one consistent face and a directed camera move
+2026-10-03, vault, https://www.instagram.com/reel/DdoiRHMmyel/
+
+- **Mechanism:** A routing layer sends a prompt and reference stills to a video model such as Veo, Kling or Seedance, with camera-move presets expanded into the prompt. Face consistency across shots comes from feeding the same reference images or a character sheet into each generation, then picking takes. The quality lives in the underlying models, so the same result can be had by calling those models directly with a prompt bank.
+- **Claim:** Photoreal moving footage of a subject you cannot film, with one consistent face and a directed camera move.
+- **Testable:** no. Video generation models need accounts and paid credits. Needs: An account and credits for a video model, or a free-tier allowance..
+- **Idea on its own:** needs-a-run. Reference-image conditioning does improve consistency, but how far it holds across a five-shot sequence is only known by generating one.
+- **How it would be done:** Make a character sheet in Gemini stills, then write a prompt per shot that carries the same reference images and a named camera move. Generate each shot on one video model, review the takes on a contact sheet, and cut with HyperFrames. Use fictional or consented subjects only. A person is useful to judge whether the face really holds and to redo failed takes.
+- **Stack already covers:** Gemini (stills), HyperFrames (video compose, captions, render), HeyGen and Tavus (avatars)
+- **To fetch:** Kling AI https://klingai.com (Video model with a free daily credit allowance for a reference-image consistency test.)
+- **Field Notes line:** Camera-move presets plus the same reference stills in every shot is how these tools hold one face across a sequence.
+
+### H-0111 Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control
+2026-10-03, arxiv, https://arxiv.org/abs/2610.02038
+
+- **Mechanism:** The LLM never acts directly. It outputs a structured proposal, a deterministic soil-water simulator numerically checks it, the LLM revises, and a bounded deterministic selector picks the action. A slower loop distils recurring failures into persistent written principles that condition future proposals, while the simulator, evaluator and action limits stay immutable.
+- **Claim:** Lowest aggregate control cost among compared methods and about 51 percent less irrigation than historical schedule replay.
+- **Testable:** no. Needs the authors' simulator, site data and code, which are not confirmed released. Needs: The paper's code and soil and weather data..
+- **Idea on its own:** sound. Keeping truth and action authority in deterministic code while the LLM proposes and learns notes is a sound pattern for long-horizon decisions with compounding errors.
+- **How it would be done:** The pattern maps onto a paper desk: the LLM proposes a position, a deterministic check (a liquidity cap, a Dixon-Coles probability, a size limit) accepts or clips it, and a nightly pass writes failure patterns into a notes file that conditions the next proposals without touching the checker. Build it as a wrapper around the Grinder or Pitch desk with the rules file committed so changes are dated. No hired person is needed for the pattern; real irrigation would need an agronomist and field hardware.
+- **Stack already covers:** Claude Code with skills and sub-agents, GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), football-data and a Dixon-Coles paper desk (the Pitch)
+- **Missing:** The paper's implementation, if any is released.
+- **Field Notes line:** Mimir lets an LLM propose farm irrigation but only a fixed simulator and hard limits can act, and the LLM learns written rules from its own failures.
+
+### H-0110 zhuyansen/awesome-claude-video-skills: Open-source skills and toolkits that let Claude Code, Codex and other coding agen
+2026-10-03, github, https://github.com/zhuyansen/awesome-claude-video-skills
+
+- **Mechanism:** A curated index of about 230 repos that let coding agents make video, sorted into ten types. A decision model reads each README to answer inclusion questions and assign a security grade, refreshed every eight hours, so the grades are model opinions rather than audits. Inclusion needs a README and either 50 stars or a quality bar plus a few stars.
+- **Claim:** 180 to 230 open-source video skills and toolkits, each read and security-graded.
+- **Testable:** no. It is a list; running it would only mean fetching other repos, which are separate items.
+- **Idea on its own:** sound. A shelf of candidate tools is useful, with the caveat that the security grades come from a model reading READMEs, not from code review.
+- **How it would be done:** Pull the README and the category lists, then filter to the Frameworks, Editing and Shorts types. Check each shortlisted repo's licence and install route, then queue the few that fill gaps next to HyperFrames for sandbox runs on later nights. Treat the SAFE grade as a hint and read the install script before running anything.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **To fetch:** awesome-claude-video-skills https://github.com/zhuyansen/awesome-claude-video-skills (The list itself, source for further video-skill repos.); Remotion https://github.com/remotion-dev/remotion (The best-known alternative React video renderer to compare with HyperFrames.)
+- **Field Notes line:** A model-graded index of 230 video skills for coding agents is a ready shelf to mine for HyperFrames alternatives and extras.
+
+### H-0108 Generating many platform-native variants (hooks, colour grades, overlays) from one filmed asset
+2026-10-03, vault, 
+
+- **Mechanism:** One filmed asset is fed through a loop that swaps hooks, applies colour grades, adds overlays and re-crops per platform, producing many renders from one source. The render half is ordinary templated video composition. The vendor's distribution half routes posts through antidetect cloud phones, one spoofed device per account, which is grey-market automation: platforms catch it with device and network fingerprinting, behavioural similarity across accounts, and near-duplicate content matching, and treat it as inauthentic content.
+- **Claim:** Turn one video into many platform-native variants and post them across accounts automatically.
+- **Testable:** no. The useful part needs a filmed asset and owned accounts, and the posting half is the evasion tooling, so no keyless slice exists. Needs: A filmed source asset and owned, disclosed accounts for any real posting..
+- **Idea on its own:** sound. Producing hook and format variants of one's own footage for A/B testing on owned accounts is standard practice; only the spoofed-device posting is the problem.
+- **How it would be done:** Define a variants table of hooks, grades, overlays and aspect crops, and render each row from the single source through a templated HyperFrames composition. Add per-variant tracking so each post's performance can be compared, which is the per-post idea worth keeping. Posting is done by a person through each platform's own scheduler on accounts the owner runs openly, with the AI label where required. A hired editor covers the first filmed asset and the judgement on which hooks are worth testing.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org (Crops, grades and re-encodes for per-platform specs.)
+- **Missing:** A variant-planning loop that maps hooks and grades to renders and tracks each variant's results.
+- **Field Notes line:** Variant loops are plain templated rendering; the grey part is posting through spoofed phones, which platforms detect by device fingerprint and near-duplicate matching.
+
+### H-0106 OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning
+2026-10-03, arxiv, https://arxiv.org/abs/2610.02181
+
+- **Mechanism:** An omni-modal LLM is trained to act as a multi-turn agent that chooses whether to look or listen and over which time window, then gets the raw audio or video segment appended to its context. It is cold-started with supervised fine-tuning on 170K synthetic multi-hop trajectories, then refined with two-stage reinforcement learning on verifiable rewards. An extra reward fires only when a successful answer genuinely needed both audio and vision, which discourages single-modality shortcuts.
+- **Claim:** Active evidence seeking over long audio-visual context improves audio-visual reasoning across a wide range of benchmarks.
+- **Testable:** no. Needs a trained omni-LLM checkpoint and GPU, and the paper gives no runnable keyless artefact. Needs: Model weights and GPU, if released..
+- **Idea on its own:** sound. Fetching sparse evidence on demand is a sensible fix for long-context media, and the both-modalities reward targets a known shortcut.
+- **How it would be done:** The same pattern can be built crudely without training: a transcript or scene index acts as a map, and an agent requests specific time windows (a frame grab or an audio snippet) as tool calls. For the YouTube pipeline that means search the transcript first, then pull only the frames around the matching timestamps. Reproducing the trained model would need the released checkpoint or a research team to rebuild the data engine.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, local transcription, Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org (Cut frame and audio windows on demand for a look-or-listen tool.)
+- **Missing:** A released OmniSeek checkpoint or the OmniTraj-170K data; neither is confirmed available.
+- **Field Notes line:** OmniSeek teaches a model to choose which minute of audio or video to fetch next, instead of swallowing the whole clip in one pass.
+
+### H-0103 Whether a fees-paid threshold removes rugs without removing the launches that ran, on a dated sample
+2026-10-03, vault, https://www.instagram.com/reel/Db6WNI9BSQX/
+
+- **Mechanism:** Total SOL fees (priority fees plus Jito tips) paid by a token's traders so far is read from on-chain transactions that touch the token's pool. The idea is that a rug is cheap to launch but organic buyers of a real run pay real fees, so a minimum fees-paid figure screens out launches nobody traded seriously. The number comes from summing the fee field across the pool's transactions, via an indexer such as Dune or Solana RPC history. Whether it separates rugs from runners is an empirical question on a dated sample.
+- **Claim:** A three-column terminal filter with a fees-paid threshold is said to remove about 90 percent of rugs.
+- **Testable:** yes. On the Grinder's already-tracked launches with known outcomes, does a fees-paid threshold remove at least 80 percent of the rugged ones while keeping at least 70 percent of those that ran? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. Fees paid is a real cost borne by traders so it plausibly proxies genuine activity, but wash trading can inflate it and the 90 percent figure has no sample behind it.
+- **How it would be done:** Take the Grinder's closed launches that are already labelled rugged or ran, with dates. For each, pull the pool's recent transaction signatures from public Solana RPC and sum the fee field to get fees paid up to a fixed time after launch. Sweep a few thresholds and compute rugs removed and runners kept at each, on a time-ordered split so the threshold is not fitted on the same launches it is judged on. Record the confusion matrix and commit the threshold before applying it to new launches. A Dune query over a larger dated sample would be the next step if the slice is promising.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), launchd long-running pollers
+- **To fetch:** Solana public JSON-RPC https://api.mainnet-beta.solana.com (Keyless getSignaturesForAddress and getTransaction to sum fees per pool, rate limited.); Dune https://dune.com (Free tier SQL over Solana transactions for a larger dated sample, needs an account so later.)
+- **Field Notes line:** Fees paid by a token's own traders as an anti-rug filter: cheap to compute, and we can check it against launches we already tracked.
 
 ### H-0101 ericmmartin/youtube-transcript-plus: YouTube Transcript Plus is an advanced Node.js package designed to fetch and proces
 2026-10-02, github, https://github.com/ericmmartin/youtube-transcript-plus
@@ -879,7 +971,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0099 | 2026-10-02 | human reads flagged threads from alert links | open | needs-a-run | yes | P-0055 |
+| H-0113 | 2026-10-03 | Photoreal moving footage of a subject you cannot film, one consistent face and a directed  | open | needs-a-run | no |  |
+| H-0108 | 2026-10-03 | Generating many platform-native variants (hooks, colour grades, overlays) from one filmed  | open | sound | no |  |
+| H-0103 | 2026-10-03 | Whether a fees-paid threshold removes rugs without removing the launches that ran, on a da | open | needs-a-run | yes |  |
+| H-0099 | 2026-10-02 | human reads flagged threads from alert links | open | needs-a-run | yes | P-0055 **works** |
 | H-0094 | 2026-10-02 | Higgsfield Genjutsu as the final route for motion transfer, whole-frame recast at about 7  | open | sound | no |  |
 | H-0089 | 2026-10-02 | Whether multi-buy and net-flow signals from tracked wallets predict price, measured on pap | open | needs-a-run | no |  |
 | H-0085 | 2026-10-01 | Inbound AI receptionist demo line built from the home services voice prompt | open | sound | no |  |
@@ -899,6 +994,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0067 | 2026-10-03 | [Remotion](https://github.com/remotion-dev/remotion) | The best-known alternative React video renderer to compare with HyperFrames. | H-0110 (zhuyansen/awesome-claude-video-skills: Open-source) | shelf |
+| T-0066 | 2026-10-03 | [awesome-claude-video-skills](https://github.com/zhuyansen/awesome-claude-video-skills) | The list itself, source for further video-skill repos. | H-0110 (zhuyansen/awesome-claude-video-skills: Open-source) | shelf |
+| T-0065 | 2026-10-03 | [Dune](https://dune.com) | Free tier SQL over Solana transactions for a larger dated sample, needs an account so later. | H-0103 (Whether a fees-paid threshold removes rugs without) | shelf |
+| T-0064 | 2026-10-03 | [Solana public JSON-RPC](https://api.mainnet-beta.solana.com) | Keyless getSignaturesForAddress and getTransaction to sum fees per pool, rate limited. | H-0103 (Whether a fees-paid threshold removes rugs without) | shelf |
 | T-0063 | 2026-10-02 | [Node.js 20+](https://nodejs.org) | Runtime the package requires | H-0101 (ericmmartin/youtube-transcript-plus: YouTube Trans) | shelf |
 | T-0062 | 2026-10-02 | [youtube-transcript-plus](https://github.com/ericmmartin/youtube-transcript-plus) | The library under test | H-0101 (ericmmartin/youtube-transcript-plus: YouTube Trans) | shelf |
 | T-0061 | 2026-10-02 | [Breadcrumb MCP tool definitions](https://innerloop.works/breadcrumb/mcp) | Read the tool list to measure definition size | H-0100 (Show HN: Breadcrumb, record everything on your mac) | shelf |
@@ -967,6 +1066,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0115 | 2026-10-03 | github | [TimMacy/YouTubeAlchemy: This userscript for YouTube offers 250+ layout changes a](https://github.com/TimMacy/YouTubeAlchemy) | A browser UI userscript; its transcript export is clipboard and DOM scraping that the keyless pipeline already covers. |
+| H-0114 | 2026-10-03 | hn | [Show HN: Pi pod – Run your pi coding agent in sandboxes on your own server](https://pipod.dev/) | Self-hosted sandbox for one coding agent; comments say it matches running a container, with no new mechanism. |
+| H-0112 | 2026-10-03 | youtube | [Building an MCP server in 2 minutes....](https://www.youtube.com/watch?v=Fhy_VFMlE9s) | Generic two-minute MCP server tutorial. |
+| H-0109 | 2026-10-03 | hn | [Show HN: Offrun – manage every coding agent from one workspace](https://offrun.dev/) | Product launch for an agent dashboard; claim only, comments ask what it adds over existing tools. |
+| H-0107 | 2026-10-03 | youtube | [Claude Code: The Advanced Guide (99% of Devs Skip These Features)](https://www.youtube.com/watch?v=kt5a-TXmWew) | Beginner listicle of Claude Code features Proteus already runs. |
+| H-0105 | 2026-10-03 | github | [nykooi1/vibe-wise: A Claude Code plugin that helps you learn how to build while ](https://github.com/nykooi1/vibe-wise) | A teaching-style plugin that makes Claude ask for the approach first; no mechanism Proteus needs beyond ordinary skills  |
+| H-0104 | 2026-10-03 | hn | [Getting the most out of Opus 5.5 in Claude and Claude Code](https://claude.dev/blog/getting-the-most-out-of-opus-5-5/) | Opinion thread praising a model with anecdotes and no mechanism. |
 | H-0102 | 2026-10-02 | youtube | [Why Cars Lose Their Value So Fast](https://www.youtube.com/watch?v=Ao7fbajRSKI) | No transcript came back (IpBlocked) and a generic news explainer carries no mechanism. |
 | H-0097 | 2026-10-02 | youtube | [Tutorial 1: Getting Started with the UK Data Service Open Data API](https://www.youtube.com/watch?v=JIh6h8mx0Zk) | No transcript came back (IpBlocked) and a beginner tutorial title gives no mechanism. |
 | H-0096 | 2026-10-02 | github | [zlxlabs/VideoTranscriptAPI: 基于 Python 3.11+ FastAPI 的异步音视频转录服务，支持 YouTube、小宇宙、Bi](https://github.com/zlxlabs/VideoTranscriptAPI) | Duplicates the transcript pipeline already in the stack and its parsing depends on a paid referral API key. |

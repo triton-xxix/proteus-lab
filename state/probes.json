@@ -1,5 +1,5 @@
 {
- "next_id": 57,
+ "next_id": 58,
  "items": [
   {
    "id": "P-0001",
@@ -1234,6 +1234,26 @@
    "denied": [
     "Bash `npm install --prefix /Users/triton/PROTEUS/sandbox/ytplus youtube-transcript-plus`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0057",
+   "title": "Skill reference files: how many local ones run past 100 lines with no contents list at the top?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 10,
+   "added": "2026-10-03",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
    "luke": false
   }
  ]

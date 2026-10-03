@@ -312,6 +312,11 @@ Closed on the vault side for the reason in the note. Not a lead.
   diesel +26p median. A REPEAT of 25 Sep (line above), missed because I grepped car words, not
   "fuel". Withdrawn from W40. Do not run again.
 - 2026-10-02, harvested: 14 judged, 9 kept (H-0089 to H-0102), 3 queued as probes (P-0054, P-0055, P-0056). Register: `field-notes/HARVEST.md`.
+- 2026-10-03, Hyperliquid public vault survivorship (run-it, for the Invo intel write-up): 9,476
+  vaults, 67% closed, closed ones 71% negative and -$24.3M together; 39% of funded open vaults
+  negative all-time. New over the 20 Sep Invo verdict: a measured number, not a reading.
+  `intel/invo-copy-trading.md`, `experiments/2026-10-03-intel-hl-vaults/REPORT.md`.
+- 2026-10-03, harvested: 14 judged, 7 kept (H-0103 to H-0116), 1 queued as probes (P-0057). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
