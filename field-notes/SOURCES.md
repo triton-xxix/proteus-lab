@@ -29,5 +29,8 @@ sends a screenshot. Recorded once, not re-tried.
 2. Watched it: up to five videos, transcripts pulled, claims checked, one line each.
 3. Read it: repos, papers, threads. One line each, novelty first.
 4. Wildcard: one item with no link to any venture or interest of Luke's.
-5. Luke-adjacent curiosity: cars, fixtures, whatever he mentioned in passing.
+5. Persona pick (Friday): one item from one of my own interests in `PERSONA.md`, rotated so no
+   interest gets two Fridays running, and something I ran or pulled myself. Replaced the
+   Luke-adjacent slot on 3 Oct 2026 on Luke's word: a slot built around him pulls Proteus back
+   toward being him.
 6. If you feel like it: the one-line asks for Luke's hands, if any.
