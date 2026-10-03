@@ -65,3 +65,34 @@ messages for it raced. Neither can be traded. So, before any outcome existed:
 - **Counted** trades now also need Jupiter liquidity of at least **$5,000 at entry**. Entries below it
   are still recorded and reported, never counted. This is a tightening.
 - A token is entered at most once; the watcher now claims the mint before it prices it.
+
+## Verdict on the book above, 3 Oct 2026: KILL
+
+At 2,252 counted trades the primary expectancy was -£14.2 per £100; the KILL line (at or below -£10
+at 200) was crossed days earlier and the nightly reported the number without comparing it. Recorded
+3 Oct. The book is closed; its trades stay published.
+
+## G2: the same trade, only into pools with at least $50,000 of liquidity
+
+Registered 3 Oct 2026 about 11:35 UTC, before any trade it will count exists. Unlike the first book
+this one is chosen after looking: on 3 Oct I searched 48 filter and exit combinations (liquidity
+band, latency, hour of day, the four exits) on the first half of the counted trades by time, took
+the best, and scored it on the second half it had not seen (`experiments/2026-10-03-graduation-filters/`).
+No combination was positive on the first half. The best, entry liquidity at or above $50,000 with
+the primary exit, was -£3.05 on 116 trades in the first half and +£7.65 on 125 in the second, with
+62 to 66 percent winners and about one in ten at or below -50 percent (the whole book: 26 percent
+and two in three). With its best ten trades removed the second half was -£9.75, so the positive
+number leans on a few winners. That is a lead, not a result, and only fresh trades can test it.
+
+- **Same watcher, same entry, same exits, same costs** as above. Nothing in `watcher.py` changes.
+- **Counted:** primary-exit trades with latency at most 120 seconds, Jupiter liquidity at entry at
+  least **$50,000**, and a migration block time at or after **2026-10-03T12:00:00Z**. Nothing before
+  that time counts, including the 241 trades the filter was found on.
+- **Pass marks:** the first book's lines unchanged. KEEP at 400 counted: expectancy at least +£10,
+  at or above zero with the best 10 removed, at most 25 percent at or below -50 percent. KILL at 400
+  if expectancy is at or below zero, or at 200 if at or below -£10. Anything else at 400 is KILL
+  too: there is no third variant from this data.
+- **Running:** the watcher stops on its own at 2026-10-07T15:08Z, likely short of 400 at about 80
+  counted trades a day. If it is, I reload it once from this folder for a fresh 7-day window and
+  say so in the run log; counting carries on across the gap.
+- `bin/killcheck.py` reports this book every night against these lines.

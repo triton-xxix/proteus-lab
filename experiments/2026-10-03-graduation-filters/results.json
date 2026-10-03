@@ -1,0 +1,128 @@
+{
+ "counted": 2663,
+ "first_half": 1331,
+ "second_half": 1332,
+ "first_span": [
+  1790780986,
+  1790892518
+ ],
+ "baseline_P_all": {
+  "n": 2663,
+  "exp": -15.89,
+  "exp_less_best10": -26.69,
+  "win": 0.255,
+  "le_minus50": 0.677
+ },
+ "combos_searched": 48,
+ "best_on_first_half": {
+  "filter": "liq 50000-inf",
+  "exit": "P",
+  "first": {
+   "n": 116,
+   "exp": -3.05,
+   "exp_less_best10": -6.66,
+   "win": 0.655,
+   "le_minus50": 0.069
+  },
+  "second": {
+   "n": 125,
+   "exp": 7.65,
+   "exp_less_best10": -9.75,
+   "win": 0.616,
+   "le_minus50": 0.096
+  }
+ },
+ "top5_with_second_half": [
+  {
+   "filter": "liq 50000-inf",
+   "exit": "P",
+   "first": {
+    "n": 116,
+    "exp": -3.05,
+    "exp_less_best10": -6.66,
+    "win": 0.655,
+    "le_minus50": 0.069
+   },
+   "second": {
+    "n": 125,
+    "exp": 7.65,
+    "exp_less_best10": -9.75,
+    "win": 0.616,
+    "le_minus50": 0.096
+   }
+  },
+  {
+   "filter": "liq 50000-inf",
+   "exit": "A",
+   "first": {
+    "n": 116,
+    "exp": -3.05,
+    "exp_less_best10": -6.66,
+    "win": 0.655,
+    "le_minus50": 0.069
+   },
+   "second": {
+    "n": 125,
+    "exp": 7.52,
+    "exp_less_best10": -9.89,
+    "win": 0.616,
+    "le_minus50": 0.096
+   }
+  },
+  {
+   "filter": "liq 50000-inf",
+   "exit": "D",
+   "first": {
+    "n": 116,
+    "exp": -6.34,
+    "exp_less_best10": -10.66,
+    "win": 0.664,
+    "le_minus50": 0.112
+   },
+   "second": {
+    "n": 125,
+    "exp": 7.01,
+    "exp_less_best10": -10.93,
+    "win": 0.68,
+    "le_minus50": 0.112
+   }
+  },
+  {
+   "filter": "liq 50000-inf",
+   "exit": "B",
+   "first": {
+    "n": 116,
+    "exp": -6.35,
+    "exp_less_best10": -10.66,
+    "win": 0.664,
+    "le_minus50": 0.112
+   },
+   "second": {
+    "n": 125,
+    "exp": 6.87,
+    "exp_less_best10": -11.08,
+    "win": 0.68,
+    "le_minus50": 0.112
+   }
+  },
+  {
+   "filter": "liq 20000-inf",
+   "exit": "P",
+   "first": {
+    "n": 549,
+    "exp": -22.23,
+    "exp_less_best10": -27.19,
+    "win": 0.359,
+    "le_minus50": 0.577
+   },
+   "second": {
+    "n": 574,
+    "exp": -12.73,
+    "exp_less_best10": -21.46,
+    "win": 0.411,
+    "le_minus50": 0.519
+   }
+  }
+ ],
+ "share_of_combos_positive_on_first_half": 0.0
+}
