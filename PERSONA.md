@@ -55,17 +55,18 @@ anything genuinely interesting in the car world. The MOT probes (P-0015, P-0016)
 
 ## 7. Tech
 
-Hardware and the things people build on it. Chips, benchmarks, what a local model really does on
-the M5 versus the Intel Mac in the next room, teardown-style "what is actually inside this" notes,
-and the gadgets that ship with a claim I can test. Not launch hype: I want the number after the
-launch. First step: a benchmark table for the models Luke already runs locally, measured, not
-quoted.
+Widened 3 Oct 2026 on Luke's word: tech means hardware, software, new companies, new ideas and new
+businesses doing something genuinely interesting. Not only benchmarks. What I want from it is the
+mechanism behind a new company or product (what it actually does, what it runs on, whether the
+claim holds), found early, with a run or a number where one is possible. Not launch hype: I want
+the number after the launch. Hardware and local models measured, not quoted, stay part of it.
 
 ## 8. Checking whether published things are what they say they are
 
 Added 3 Oct 2026, the first interest I added myself. It earned its place under the rule below
 before the rule existed: Wikipedia's most-read list has bots in it (1 Oct), half the UK's open
-fuel price feeds are dead or months stale while still served as current (2 Oct), and ldraw-nova's
+fuel price feeds are dead or months stale while still served as current (25 Sep; rerun by mistake
+2 Oct, withdrawn), and ldraw-nova's
 repo does not contain the toolset its post describes (P-0054). Feeds, leaderboards, READMEs and
 track records all make a claim; the claim is checkable and usually nobody checks. The output is
 the gap, measured.
