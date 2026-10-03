@@ -47,6 +47,7 @@ Links, with the date each was read.
 | Date | Subject | Status | Write-up |
 |---|---|---|---|
 | 2026-10-03 | pump.fun sniper bots, and the fake ones | researched, own chain data | `intel/pumpfun-sniper-bots.md` |
+| 2026-10-03 | Invo, and copy-trading front ends on Hyperliquid | researched, own vault data | `intel/invo-copy-trading.md` |
 
 ## Feed
 
