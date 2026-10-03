@@ -1,0 +1,162 @@
+{
+ "polls": 469,
+ "first": "2026-10-01T22:55:12Z",
+ "last": "2026-10-02T22:53:46Z",
+ "polls_with_errors": 460,
+ "error_lines_429": 1700,
+ "polls_last_page_all_new": 69,
+ "pools": 35083,
+ "by_dex": [
+  [
+   "pump-fun",
+   25165
+  ],
+  [
+   "meteora-damm-v2",
+   3231
+  ],
+  [
+   "meteora-dbc",
+   2938
+  ],
+  [
+   "pumpswap",
+   2446
+  ],
+  [
+   "stonkfun",
+   527
+  ],
+  [
+   "bags-fm",
+   176
+  ]
+ ],
+ "launch_pools": 25165,
+ "launch_tokens": 25165,
+ "pumpswap_pools": 2446,
+ "graduated_tokens": 574,
+ "graduation_rate_by_token": 0.0228,
+ "pumpswap_with_unseen_launch": 1872,
+ "grad_latency_min_median": 0.0,
+ "grad_latency_min_p90": 16.5,
+ "snapshot_outcome_per_launch": [
+  [
+   "5min",
+   25014
+  ],
+  [
+   "never",
+   114
+  ],
+  [
+   "missed",
+   37
+  ]
+ ],
+ "missed_or_gone_share": 0.006,
+ "minute5_graduates": {
+  "n": 570,
+  "fdv_med": 12926.4,
+  "vol_m5_med": 958.8,
+  "buyers_m5_med": 1.0,
+  "sellers_m5_med": 0.0,
+  "chg_m5_med": 0.0,
+  "reserve_med": 0.0
+ },
+ "minute5_rest": {
+  "n": 24444,
+  "fdv_med": 3420.1,
+  "vol_m5_med": 25.41,
+  "buyers_m5_med": 1.0,
+  "sellers_m5_med": 1.0,
+  "chg_m5_med": 0.0,
+  "reserve_med": 2706.07
+ },
+ "screen_buyers_m5": [
+  {
+   "buyers_m5_at_least": 5,
+   "picked": 5458,
+   "graduates_in_pick": 227,
+   "precision": 0.042,
+   "recall": 0.398
+  },
+  {
+   "buyers_m5_at_least": 10,
+   "picked": 3175,
+   "graduates_in_pick": 191,
+   "precision": 0.06,
+   "recall": 0.335
+  },
+  {
+   "buyers_m5_at_least": 20,
+   "picked": 1849,
+   "graduates_in_pick": 149,
+   "precision": 0.081,
+   "recall": 0.261
+  },
+  {
+   "buyers_m5_at_least": 30,
+   "picked": 1258,
+   "graduates_in_pick": 115,
+   "precision": 0.091,
+   "recall": 0.202
+  },
+  {
+   "buyers_m5_at_least": 50,
+   "picked": 835,
+   "graduates_in_pick": 96,
+   "precision": 0.115,
+   "recall": 0.168
+  }
+ ],
+ "grads_latency_le_7min": 472,
+ "grads_latency_gt_7min": 102,
+ "clean_base_rate": 0.0042,
+ "minute5_late_graduates": {
+  "n": 102,
+  "fdv_med": 7285.44,
+  "vol_m5_med": 2363.53,
+  "buyers_m5_med": 24.0,
+  "sellers_m5_med": 22.0,
+  "chg_m5_med": 0.58,
+  "reserve_med": 4431.47
+ },
+ "screen_buyers_m5_clean": [
+  {
+   "buyers_m5_at_least": 5,
+   "picked": 5310,
+   "late_graduates_in_pick": 79,
+   "precision": 0.0149,
+   "recall": 0.775
+  },
+  {
+   "buyers_m5_at_least": 10,
+   "picked": 3051,
+   "late_graduates_in_pick": 67,
+   "precision": 0.022,
+   "recall": 0.657
+  },
+  {
+   "buyers_m5_at_least": 20,
+   "picked": 1754,
+   "late_graduates_in_pick": 54,
+   "precision": 0.0308,
+   "recall": 0.529
+  },
+  {
+   "buyers_m5_at_least": 30,
+   "picked": 1189,
+   "late_graduates_in_pick": 46,
+   "precision": 0.0387,
+   "recall": 0.451
+  },
+  {
+   "buyers_m5_at_least": 50,
+   "picked": 775,
+   "late_graduates_in_pick": 36,
+   "precision": 0.0465,
+   "recall": 0.353
+  }
+ ]
+}
