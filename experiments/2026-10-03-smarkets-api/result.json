@@ -1,0 +1,203 @@
+{
+ "politics_events": {
+  "status": 200,
+  "n": 50
+ },
+ "with_markets": [
+  {
+   "event": "Next Fianna F\u00e1il Leader After Miche\u00e1l Martin",
+   "id": "41761772",
+   "parent": "148128",
+   "markets": [
+    "Next Fianna F\u00e1il leader"
+   ],
+   "n": 1
+  },
+  {
+   "event": "2027 French Presidential Election",
+   "id": "42702202",
+   "parent": "41607866",
+   "markets": [
+    "2027 French Presidential Election Winner"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Northern Ireland Assembly Elections",
+   "id": "42981569",
+   "parent": "41664418",
+   "markets": [
+    "Northern Ireland Assembly Elections: Most seats"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Donald Trump to serve as president for 9+ years by end of 2030",
+   "id": "43780069",
+   "parent": "784698",
+   "markets": [
+    "Donald Trump to serve as president for 9+ years by end of 2030"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Next General Election - Most Seats",
+   "id": "44131545",
+   "parent": "41607298",
+   "markets": [
+    "Next General Election - Most Seats"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Next General Election Conservative Leader",
+   "id": "44131559",
+   "parent": "802894",
+   "markets": [
+    "Next General Election Conservative Leader - Kemi Badenoch",
+    "Next General Election Conservative Leader - Boris Johnson",
+    "Next General Election Conservative Leader - Robert Jenrick"
+   ],
+   "n": 3
+  },
+  {
+   "event": "2028 Presidential Election Winner",
+   "id": "44136686",
+   "parent": "44136685",
+   "markets": [
+    "2028 Presidential Election Winner"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Next Prime Minister",
+   "id": "44148041",
+   "parent": "603174",
+   "markets": [
+    "Next Prime Minister To Replace Andy Burnham"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Emmanuel Macron Resignation",
+   "id": "44183092",
+   "parent": "41607866",
+   "markets": [
+    "Emmanuel Macron To Resign"
+   ],
+   "n": 1
+  },
+  {
+   "event": "2028 Winning Party",
+   "id": "44255012",
+   "parent": "44136685",
+   "markets": [
+    "2028 Winning Party"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Which party will control the House after the midterm elections?",
+   "id": "44276763",
+   "parent": "44276743",
+   "markets": [
+    "Which party will control the House after the midterm elections?"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Trump Exit Date",
+   "id": "44298572",
+   "parent": "784698",
+   "markets": [
+    "Trump To Serve Second Term In Full"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Impeachment",
+   "id": "44319208",
+   "parent": "784698",
+   "markets": [
+    "House of Representatives To Pass Articles Of Impeachment"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Next General Election - Overall Majority",
+   "id": "44447820",
+   "parent": "41607298",
+   "markets": [
+    "Next General Election - Overall Majority"
+   ],
+   "n": 1
+  },
+  {
+   "event": "2028 Democratic Presidential Nominee",
+   "id": "44766117",
+   "parent": "44136685",
+   "markets": [
+    "Democratic Presidential Nominee"
+   ],
+   "n": 1
+  },
+  {
+   "event": "2028 Republican Presidential Nominee",
+   "id": "44766118",
+   "parent": "44136685",
+   "markets": [
+    "Republican Presidential Nominee"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Which party will control the Senate after the midterm elections?",
+   "id": "44807396",
+   "parent": "44276743",
+   "markets": [
+    "Which party will control the Senate after the midterm elections?"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Next Federal Election",
+   "id": "44848895",
+   "parent": "44848894",
+   "markets": [
+    "Party to Provide the Next Prime Minister of Australia"
+   ],
+   "n": 1
+  },
+  {
+   "event": "Victorian State Election 2026",
+   "id": "44848906",
+   "parent": "44848905",
+   "markets": [
+    "Winning Party"
+   ],
+   "n": 1
+  }
+ ],
+ "events_with_markets": 19,
+ "contracts": {
+  "status": 200,
+  "sample": [
+   "Albert Dolan",
+   "Anne Rabbitte",
+   "Dara Calleary",
+   "Darragh O'Brien",
+   "Eamon O'Cuiv",
+   "Jack Chambers",
+   "James Browne",
+   "James Lawless"
+  ]
+ },
+ "last_executed": {
+  "status": 200,
+  "sample": "{\"last_executed_prices\": {\"10212910\": [{\"contract_id\": \"245132567\", \"last_executed_price\": \"0.4\", \"timestamp\": \"2024-12-17T22:56:30.898454Z\"}, {\"contract_id\": \"35798655\", \"last_executed_price\": \"0\", \"timestamp\": \"2026-03-27T11:58:19.594379Z\"}, {\"contract_id\": \"35798658\", \"last_executed_price\": \"0\", \"timestamp\": \"2026-03-27T11:58:19.594379Z\"}, {\"contract_id\": \"35798643\", \"last_executed_price\": \"43."
+ },
+ "quotes": {
+  "status": 200,
+  "sample": "{\"245132567\": {\"bids\": [], \"offers\": [{\"price\": 9999, \"quantity\": 494949}]}, \"35798643\": {\"bids\": [{\"price\": 4310, \"quantity\": 182549}], \"offers\": [{\"price\": 9999, \"quantity\": 494949}]}, \"35798644\": {\"bids\": [], \"offers\": [{\"price\": 9999, \"quantity\": 494949}]}, \"35798645\": {\"bids\": [], \"offers\": [{\"price\": 9999, \"quantity\": 494949}]}, \"35798646\": {\"bids\": [], \"offers\": [{\"price\": 9999, \"quantity\":"
+ }
+}

@@ -553,6 +553,17 @@ def cmd_stop(a):
 
 
 def cmd_add(a):
+    # Repeat guard (3 Oct 2026, after the fuel feeds ran twice): the title's own words against the
+    # register. A REPEAT is refused unless --repeat-ok says why it is not one; the harvest already
+    # dedupes against SEEN.md, so its adds only warn.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import seen
+    verdict, report = seen.check(a.title, show=3)
+    if verdict == "REPEAT":
+        print("\n".join(report))
+        if a.source != "harvest" and not a.repeat_ok:
+            print("not added: looks like a repeat. Re-run with --repeat-ok \"why it is new\" if it is not.")
+            sys.exit(1)
     st = load_state()
     pid = "P-%04d" % st["next_id"]
     st["next_id"] += 1
@@ -700,6 +711,7 @@ def main():
     s.add_argument("--after", default="")
     s.add_argument("--est", type=int, default=20)
     s.add_argument("--luke", action="store_true", help="the need is Luke's hands: asked once, expires in 28 days")
+    s.add_argument("--repeat-ok", default="", help="why a title the repeat guard flags is new after all")
     s.set_defaults(fn=cmd_add)
     s = sub.add_parser("kill")
     s.add_argument("id")

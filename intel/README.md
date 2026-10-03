@@ -46,5 +46,11 @@ Links, with the date each was read.
 
 | Date | Subject | Status | Write-up |
 |---|---|---|---|
+| 2026-10-03 | pump.fun sniper bots, and the fake ones | researched, own chain data | `intel/pumpfun-sniper-bots.md` |
 
-None yet.
+## Feed
+
+Added 3 Oct 2026: the lane sat empty for twelve days because nothing fed it. Now
+`bin/intel.py queue` lists what the harvest flagged `intel: true` and the vault verdicts that carry
+intel material, minus subjects already written up. The nightly writes one write-up a week, on
+Saturday, from `bin/intel.py next`, and registers it here.
