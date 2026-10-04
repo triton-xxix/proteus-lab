@@ -168,25 +168,33 @@
    "track": 3,
    "title": "Voice agents 1: Brendan compares every AI phone caller platform, and which to choose",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/brendan-compared-every-ai-caller-platform.txt",
     "field-notes/skool/transcripts/brendan-which-ai-caller-platform.txt"
    ],
-   "why": "Mechanism hunting: what actually sits under Vapi, Retell, Bland and the rest."
+   "why": "Mechanism hunting: what actually sits under Vapi, Retell, Bland and the rest.",
+   "assigned": "2026-10-04",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-04-S-11.md"
   },
   {
    "id": "S-12",
    "track": 3,
    "title": "Voice agents 2: making callers quicker, more realistic, prompt hacks",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/brendan-ai-callers-quicker.txt",
     "field-notes/skool/transcripts/brendan-ai-callers-realistic.txt",
     "field-notes/skool/transcripts/brendan-voice-prompt-hacks.txt"
    ],
-   "why": "Latency and realism are the hard parts; are these real fixes or tricks?"
+   "why": "Latency and realism are the hard parts; are these real fixes or tricks?",
+   "assigned": "2026-10-04",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-04-S-12.md"
   },
   {
    "id": "S-13",
