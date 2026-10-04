@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 38 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 
-## Queue (5 open)
+## Queue (4 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,12 +17,12 @@ Verdicts so far: 38 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0058 | Pitch results feed: is the latest football-data result really 20 Sep, so 26 Sep onwards matches are unscored and the refit is stuck? | desk | none |  | 0 | 15 min |
 
-## Verdicts (52)
+## Verdicts (53)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-04 | P-0058 | Pitch results feed: is the latest football-data result really 20 Sep, so 26 Sep onwards matches are unscored and the refit is stuck? | **works** | Not stuck: football-data files end 20 Sep (Last-Modified 21 Sep) because no league match has been played since; first unplayed PL match is number 51 on 10 Oct. Check as_of moves past 9 Oct by the 13 Oct nightly. | `experiments/2026-10-04-P-0058` | 0 min, 10 calls, 0 denied |
 | 2026-10-04 | P-0061 | replica-skill: does its recon tooling turn a public help page into a features.csv of 10+ rows? | **not-worth-it** | Recon has no tooling: it is a SKILL.md and an 18-row template CSV the model fills; the only scripts are a parity counter (ran, scored the template 0/100) and a keyword ranker over a reviews CSV you supply. | `experiments/2026-10-04-P-0061` | 0 min, 13 calls, 0 denied |
 | 2026-10-04 | P-0060 | live-panel-skill: does render.py make an mp4 from its example config and does check_frames.py pass? | **works** | render.py made a 30 s 1200x1500 H.264 mp4 from the codex-agents config in 142 s; check_frames.py --repeat passed 124 time points and replayed frames were pixel-identical (max delta 0). | `experiments/2026-10-04-P-0060` | 3 min, 12 calls, 0 denied |
 | 2026-10-04 | P-0059 | answer-me-with-html: does its bundled CLI render a Markdown draft to an HTML page in under a second offline? | **works** | Bundled am.mjs rendered three Markdown drafts to self-contained HTML in 0.33 to 0.39 s each, zero external refs, and my guessed flow block laid out as SVG first time; the 7.4x token claim was not tested. | `experiments/2026-10-04-P-0059` | 1 min, 17 calls, 1 denied |

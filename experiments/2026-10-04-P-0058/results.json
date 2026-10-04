@@ -1,0 +1,118 @@
+{
+  "cache": {
+    "E0": {
+      "rows": 50,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:10.744465828"
+    },
+    "E1": {
+      "rows": 95,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:11.124992371"
+    },
+    "SP1": {
+      "rows": 69,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:11.554042339"
+    },
+    "D1": {
+      "rows": 36,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:11.824540615"
+    },
+    "I1": {
+      "rows": 50,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:12.173414230"
+    },
+    "F1": {
+      "rows": 45,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:12.790099621"
+    },
+    "N1": {
+      "rows": 63,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:13.186137676"
+    },
+    "P1": {
+      "rows": 62,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:13.505754471"
+    },
+    "SC0": {
+      "rows": 42,
+      "max_date": "2026-09-20",
+      "mtime": "2026-10-04T22:33:13.823085308"
+    }
+  },
+  "live": {
+    "E0": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:49 GMT",
+      "rows": 50,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "E1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:49 GMT",
+      "rows": 95,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "SP1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:50 GMT",
+      "rows": 69,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "D1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:51 GMT",
+      "rows": 36,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "I1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:50 GMT",
+      "rows": 50,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "F1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:51 GMT",
+      "rows": 45,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "N1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:52 GMT",
+      "rows": 63,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "P1": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:52 GMT",
+      "rows": 62,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    },
+    "SC0": {
+      "status": 200,
+      "last_modified": "Mon, 21 Sep 2026 17:50:50 GMT",
+      "rows": 42,
+      "max_date": "2026-09-20",
+      "after_20sep": 0
+    }
+  },
+  "fixturedownload_files": {
+    "fixturedownload-E0.json": "2026-10-04T22:33:30.387780666",
+    "fixturedownload-E1.json": "2026-10-04T22:33:30.734610081"
+  }
+}
