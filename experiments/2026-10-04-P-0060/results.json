@@ -1,0 +1,16 @@
+{
+  "render": {
+    "rc": 0,
+    "seconds": 142.1,
+    "stdout": "",
+    "stderr": "\n0/900 frames\n30/900 frames\n60/900 frames\n90/900 frames\n120/900 frames\n150/900 frames\n180/900 frames\n210/900 frames\n240/900 frames\n270/900 frames\n300/900 frames\n330/900 frames\n360/900 frames\n390/900 frames\n420/900 frames\n450/900 frames\n480/900 frames\n510/900 frames\n540/900 frames\n570/900 frames\n600/900 frames\n630/900 frames\n660/900 frames\n690/900 frames\n720/900 frames\n750/900 frames\n780/900 frames\n810/900 frames\n840/900 frames\n870/900 frames\nwrote /Users/triton/PROTEUS/sandbox/p0060/codex-agents.mp4 (900 frames, 1200x1500@30)\n",
+    "mp4_bytes": 1980181
+  },
+  "ffprobe": "{\n    \"programs\": [\n\n    ],\n    \"stream_groups\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"h264\",\n            \"width\": 1200,\n            \"height\": 1500,\n            \"r_frame_rate\": \"30/1\"\n        },\n        {\n            \"codec_name\": \"aac\",\n            \"r_frame_rate\": \"0/0\"\n        }\n    ],\n    \"format\": {\n        \"duration\": \"30.000000\"\n    }\n}\n",
+  "check": {
+    "rc": 0,
+    "seconds": 5.2,
+    "stdout": "replay t=3.75s: 0 pixels differ visibly (max channel delta 0) -> identical\nreplay t=11.25s: 0 pixels differ visibly (max channel delta 0) -> identical\nreplay t=18.75s: 0 pixels differ visibly (max channel delta 0) -> identical\nreplay t=26.25s: 0 pixels differ visibly (max channel delta 0) -> identical\nchecked 124 time points, 0 distinct problems; PNGs in /Users/triton/PROTEUS/experiments/2026-10-04-P-0060/frames\n",
+    "stderr": ""
+  }
+}
