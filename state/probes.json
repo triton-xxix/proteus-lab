@@ -1288,16 +1288,20 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-04",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-04T23:46:06+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-04T23:47:16+0100",
+   "note": "Bundled am.mjs rendered three Markdown drafts to self-contained HTML in 0.33 to 0.39 s each, zero external refs, and my guessed flow block laid out as SVG first time; the 7.4x token claim was not tested.",
+   "artefacts": [
+    "experiments/2026-10-04-P-0059"
+   ],
+   "minutes": 1,
+   "calls": 17,
+   "denied": [
+    "Bash `/usr/bin/time -p node /Users/triton/PROTEUS/sandbox/p0059/answer-me-with-html-HEAD/skills/`"
+   ],
    "luke": false
   },
   {

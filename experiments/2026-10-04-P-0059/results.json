@@ -1,0 +1,50 @@
+[
+  {
+    "name": "tcp.en",
+    "rc": 0,
+    "seconds": [
+      0.348,
+      0.345,
+      0.39
+    ],
+    "html_bytes": 32806,
+    "svg_count": 2,
+    "table_count": 1,
+    "external_refs": [],
+    "md_words": 237,
+    "stderr_tail": "",
+    "stdout_tail": "\u2713 /Users/triton/PROTEUS/experiments/2026-10-04-P-0059/tcp.en.html\n  sheet \u00b7 blueprint \u00b7 4 \u9762\u677f \u00b7 sequence\u00d71 callout\u00d71 flow\u00d71\n  STE \u2713 0 \u6761\u8b66\u544a\n"
+  },
+  {
+    "name": "architecture",
+    "rc": 0,
+    "seconds": [
+      0.37,
+      0.346,
+      0.346
+    ],
+    "html_bytes": 32504,
+    "svg_count": 2,
+    "table_count": 1,
+    "external_refs": [],
+    "md_words": 183,
+    "stderr_tail": "",
+    "stdout_tail": "\u2713 /Users/triton/PROTEUS/experiments/2026-10-04-P-0059/architecture.html\n  doc \u00b7 shadcn \u00b7 4 \u9762\u677f \u00b7 flow\u00d71 callout\u00d71 tree\u00d71 sequence\u00d71\n  STE \u2713 0 \u6761\u8b66\u544a\n"
+  },
+  {
+    "name": "draft",
+    "rc": 0,
+    "seconds": [
+      0.336,
+      0.349,
+      0.328
+    ],
+    "html_bytes": 26740,
+    "svg_count": 1,
+    "table_count": 1,
+    "external_refs": [],
+    "md_words": 91,
+    "stderr_tail": "",
+    "stdout_tail": "\u2713 /Users/triton/PROTEUS/experiments/2026-10-04-P-0059/draft.html\n  sheet \u00b7 blueprint \u00b7 3 \u9762\u677f \u00b7 flow\u00d71\n  STE 1 \u6761\u8b66\u544a\uff08\u4fee\u6b63\u7a3f\u4ef6\u540e\u91cd\u65b0\u6267\u884c\uff09\uff1a\n  L24 [passive] \u7591\u4f3c\u88ab\u52a8\u8bed\u6001\uff1a\"are committed\" \u2192 \u6539\u4e3a\u4e3b\u52a8\u8bed\u6001\n"
+  }
+]

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 36 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
+Verdicts so far: 37 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,14 +18,15 @@ Verdicts so far: 36 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0058 | Pitch results feed: is the latest football-data result really 20 Sep, so 26 Sep onwards matches are unscored and the refit is stuck? | desk | none |  | 0 | 15 min |
-| P-0059 | answer-me-with-html: does its bundled CLI render a Markdown draft to an HTML page in under a second offline? | harvest | none |  | 0 | 15 min |
 | P-0060 | live-panel-skill: does render.py make an mp4 from its example config and does check_frames.py pass? | harvest | none |  | 0 | 25 min |
 | P-0061 | replica-skill: does its recon tooling turn a public help page into a features.csv of 10+ rows? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (49)
+## Verdicts (50)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-04 | P-0059 | answer-me-with-html: does its bundled CLI render a Markdown draft to an HTML page in under a second offline? | **works** | Bundled am.mjs rendered three Markdown drafts to self-contained HTML in 0.33 to 0.39 s each, zero external refs, and my guessed flow block laid out as SVG first time; the 7.4x token claim was not tested. | `experiments/2026-10-04-P-0059` | 1 min, 17 calls, 1 denied |
+| | | | | denied: Bash `/usr/bin/time -p node /Users/triton/PROTEUS/sandbox/p0059/answer-me-with-html-HEAD/skills/` | | |
 | 2026-10-03 | P-0051 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | **works** | Poller v3 ran 24h and stopped itself; 99.4 pct of 25,165 launches snapshotted despite 429s on 460 of 469 polls. 2.28 pct graduate by token, 82 pct of them inside 7 min; for the slow rest, 50+ buyers at minute five lifts precision from 0.42 to 4.7 pct at 35 pct recall. | `experiments/2026-10-03-P-0051` | 1 min, 14 calls, 0 denied |
 | 2026-10-03 | P-0057 | Skill reference files: how many local ones run past 100 lines with no contents list at the top? | **works** | 335 skill reference files on this Mac, 184 over 100 lines, 170 of those (92%) with no contents list in the first 40 lines; hyperframes-animation alone has 58. Count only, not tested whether it changes what a model reads. | `experiments/2026-10-03-P-0057` | 0 min, 7 calls, 0 denied |
 | 2026-10-02 | P-0056 | youtube-transcript-plus: does it return captions for 3 public videos from this IP with no proxy? | **works** | A line-for-line Python port of its InnerTube ANDROID-client path (npm was denied) returned 108, 135 and 210 caption segments for the three videos that drew IpBlocked in tonight's harvest. youtube-transcript-api matched it 3 of 3 an hour later, so that block was transient and switching gains nothing measured. | `experiments/2026-10-02-P-0056` | 1 min, 13 calls, 1 denied |
