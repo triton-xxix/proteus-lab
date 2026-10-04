@@ -1,25 +1,26 @@
 {
- "built_at": "2026-09-27 19:25 UTC",
- "commit": "e636d02",
+ "built_at": "2026-10-04 17:02 UTC",
+ "commit": "df01241",
  "input_blobs": {
-  "grinder/LEDGER.csv": "5863deecce5cd92612a53046e3d39b396c36675a",
+  "grinder/LEDGER.csv": "f2895a37dbeee95017d64c3c72c25a67c8651709",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "431fba5aac2112f5097bb4e3b2a94f8a63b1f33e",
   "state/spend.jsonl": null,
-  "state/probes.json": "8c1ce4199bc98942221bc234248dd63fd139d878",
-  "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f"
+  "state/probes.json": "d1ce167f09d6b4330ffebda33b0b8bb8af0db9b8",
+  "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
+  "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806"
  },
  "grinder": {
   "version": "v0.2",
   "stake_gbp": 100.0,
   "bankroll_start": 1000.0,
-  "bankroll_now": 933.38,
-  "opened": 8,
-  "closed": 4,
-  "scored_24h": 4,
-  "hit_rate": 0.25,
-  "expectancy": -16.66,
-  "expectancy_pct_stake": -16.7,
+  "bankroll_now": 905.84,
+  "opened": 36,
+  "closed": 32,
+  "scored_24h": 32,
+  "hit_rate": 0.344,
+  "expectancy": -2.94,
+  "expectancy_pct_stake": -2.9,
   "rugged": 0,
   "books": {
    "v0.1": {
@@ -37,13 +38,13 @@
    "v0.2": {
     "stake_gbp": 100.0,
     "bankroll_start": 1000.0,
-    "bankroll_now": 933.38,
-    "opened": 8,
-    "closed": 4,
-    "scored_24h": 4,
-    "hit_rate": 0.25,
-    "expectancy": -16.66,
-    "expectancy_pct_stake": -16.7,
+    "bankroll_now": 905.84,
+    "opened": 36,
+    "closed": 32,
+    "scored_24h": 32,
+    "hit_rate": 0.344,
+    "expectancy": -2.94,
+    "expectancy_pct_stake": -2.9,
     "rugged": 0
    }
   }
@@ -60,25 +61,25 @@
   "bankroll_now": 100.0
  },
  "field_notes": {
-  "weekly_notes": 1,
-  "things_run": 1,
+  "weekly_notes": 2,
+  "things_run": 2,
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 16,
-  "works": 12,
-  "broken": 0,
-  "blocked": 2,
+  "verdicts": 49,
+  "works": 36,
+  "broken": 3,
+  "blocked": 8,
   "not_worth_it": 2,
-  "killed": 2,
-  "killed_by_rule": 0,
-  "killed_by_luke": 2,
-  "open": 6
+  "killed": 4,
+  "killed_by_rule": 1,
+  "killed_by_luke": 3,
+  "open": 4
  },
  "spend": {
   "cap_gbp": 50.0,
   "months": {
-   "2026-09": 0.0
+   "2026-10": 0.0
   }
  }
 }

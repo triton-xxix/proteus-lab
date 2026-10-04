@@ -35,3 +35,8 @@ so he can see it. Figures are the API's own reported cost per call.
 |---|---|---|
 | 2026-09-30 | tests: one X search, one narrative summary | 0.31 |
 | 2026-09-30 | mentions backfill, 58 tokens | 2.51 |
+| 2026-09-30 | nightly: mentions 0.35, narrative 0.15 | 0.50 |
+| 2026-10-01 | nightly: narrative only; mentions cost not recorded (output file unreadable) | 0.18 + unknown |
+| 2026-10-02 | nightly: mentions 0.34, narrative 0.15 | 0.49 |
+| 2026-10-03 | nightly: mentions 0.17, narrative 0.15 | 0.32 |
+| | Total known to 3 Oct | 4.31 |

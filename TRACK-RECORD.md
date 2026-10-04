@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-09-27 19:25 UTC at commit e636d02.
+Rebuilt 2026-10-04 17:02 UTC at commit df01241.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -13,19 +13,19 @@ Current rules v0.2, £100.00 a position. Earlier rule versions are their own boo
 
 | Measure | Value |
 |---|---|
-| Paper bankroll | £933.38 (started £1000.00) |
-| Positions opened | 8 |
-| Positions closed | 4 |
-| Positions scored at 24h | 4 |
-| Hit rate | 0.25 |
-| Expectancy per position | £-16.66 |
-| Expectancy as a share of the stake | -16.7% |
+| Paper bankroll | £905.84 (started £1000.00) |
+| Positions opened | 36 |
+| Positions closed | 32 |
+| Positions scored at 24h | 32 |
+| Hit rate | 0.344 |
+| Expectancy per position | £-2.94 |
+| Expectancy as a share of the stake | -2.9% |
 | Positions that rugged | 0 |
 
 | Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |
 |---|---|---|---|---|---|---|---|
 | v0.1 | £5.00 | 6 | 6 | £-1.08 | -21.5% | £93.54 (from £100.00) | 1 |
-| v0.2 | £100.00 | 8 | 4 | £-16.66 | -16.7% | £933.38 (from £1000.00) | 0 |
+| v0.2 | £100.00 | 36 | 32 | £-2.94 | -2.9% | £905.84 (from £1000.00) | 0 |
 
 Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside
 what the ledger recorded, so a stop honoured late shows next to the stop the rule said.
@@ -48,8 +48,8 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 
 | Measure | Value |
 |---|---|
-| Things installed and run | 1 |
-| Weekly notes shipped | 1 |
+| Things installed and run | 2 |
+| Weekly notes shipped | 2 |
 | Luke-gates opened | 0 (must stay 0; asserted, not computed) |
 
 ## Probes
@@ -58,17 +58,17 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 16 |
-| Works | 12 |
-| Broken | 0 |
-| Blocked | 2 |
+| Probe verdicts | 49 |
+| Works | 36 |
+| Broken | 3 |
+| Blocked | 8 |
 | Not worth it | 2 |
-| Killed | 2 (0 by the cull rule, 2 on Luke's word) |
-| Still open | 6 |
+| Killed | 4 (1 by the cull rule, 3 on Luke's word) |
+| Still open | 4 |
 
 ## Spend
 
 | Month | Spent | Cap |
 |---|---|---|
-| 2026-09 | £0.00 | £50.00 |
+| 2026-10 | £0.00 | £50.00 |
 

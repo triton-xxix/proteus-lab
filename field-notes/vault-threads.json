@@ -12,8 +12,103 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 108,
+  "count": 118,
   "threads": [
+    {
+      "date": "2026-10-04",
+      "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "NVIDIA Build free endpoint: OpenAI-compatible, no card, about 40 RPM, evaluation-only terms, personal data barred, training statements conflict",
+      "note": "Assume prompts may be retained",
+      "where": "TRITON-CORE/Research/links/2026-10-04-futurewalt-nvidia-free-models-post.md",
+      "url": "https://www.instagram.com/p/DdwbLoEgVKY/"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
+      "kind": "service",
+      "status": "open",
+      "theme": "Benchmark DeepSeek, GLM and Kimi against the M5 qwen3.6 on non-personal rewrite and summary jobs through the free endpoint before downloading weights",
+      "note": "Synthetic or public inputs only, 40 RPM is enough for a bake-off",
+      "where": "TRITON-CORE/Research/links/2026-10-04-futurewalt-nvidia-free-models-post.md",
+      "url": "https://www.instagram.com/p/DdwbLoEgVKY/"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Routing the Triton Telegram chat or any vault pipeline through the free tier",
+      "note": "Family, case and finance material against a no-personal-data, evaluation-only tier",
+      "where": "TRITON-CORE/Research/links/2026-10-04-futurewalt-nvidia-free-models-post.md",
+      "url": "https://www.instagram.com/p/DdwbLoEgVKY/"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Aggregator accounts turning a long-standing free developer tier into a giving-away headline",
+      "note": "The hook is the brand name, not the news",
+      "where": "TRITON-CORE/Research/links/2026-10-04-futurewalt-nvidia-free-models-post.md",
+      "url": "https://www.instagram.com/p/DdwbLoEgVKY/"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "eToro public API demo copy-trading endpoints",
+      "kind": "service",
+      "status": "open",
+      "theme": "replication gap measured on demo",
+      "note": "proposed, waits on a demo key",
+      "where": "TRITON-CORE/Ventures/Trading/ETORO-DEMO-COPY-TEST-2026-10-04.md",
+      "url": "https://api-portal.etoro.com/changelog"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "HeyGen API v3 (talking heads and speech by API)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "HeyGen v3 video and speech endpoints",
+      "note": "wired into the Bootcamp gen tool; the older avatar-engine adapter must move off v2 before 31 Oct",
+      "where": "TRITON-CORE/Systems/video-bootcamp/platforms/heygen.md"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "Kling 3.0 vs Veo 3.1 Lite, image to video from the same stills",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Kling 3.0 for image to video",
+      "note": "the course's pick, confirmed blind 3-0",
+      "where": "TRITON-CORE/Systems/video-bootcamp/FIELD-NOTES.md"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "Kling 3.0 vs Veo 3.1 Lite, image to video from the same stills",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Veo 3.1 Lite as cheap draft",
+      "note": "fine for drafts, has an API, drifts identity",
+      "where": "TRITON-CORE/Systems/video-bootcamp/FIELD-NOTES.md"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "Promptwise (AI video course platform), first trial day",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Promptwise MCP is read-only",
+      "note": "cannot generate or spend",
+      "where": "TRITON-CORE/Systems/video-bootcamp/platforms/aggregators.md"
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "Promptwise (AI video course platform), first trial day",
+      "kind": "service",
+      "status": "open",
+      "theme": "node canvas workflows (Flows)",
+      "note": "judged after Phase 6",
+      "where": "TRITON-CORE/Systems/video-bootcamp/platforms/aggregators.md"
+    },
     {
       "date": "2026-10-03",
       "subject": "@mattwayne.io reel: my best memecoin trading filter, the three-column terminal filter",
@@ -1052,8 +1147,28 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 24,
+  "links_count": 26,
   "links": [
+    {
+      "date": "2026-10-04",
+      "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
+      "kind": "service",
+      "where": "TRITON-CORE/Research/links/2026-10-04-futurewalt-nvidia-free-models-post.md",
+      "url": "https://www.instagram.com/p/DdwbLoEgVKY/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-04-futurewalt-nvidia-free-models-post.transcript.txt",
+      "transcript_state": "refused",
+      "transcript": null
+    },
+    {
+      "date": "2026-10-04",
+      "subject": "eToro public API demo copy-trading endpoints",
+      "kind": "service",
+      "where": "TRITON-CORE/Ventures/Trading/ETORO-DEMO-COPY-TEST-2026-10-04.md",
+      "url": "https://api-portal.etoro.com/changelog",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-03",
       "subject": "@mattwayne.io reel: my best memecoin trading filter, the three-column terminal filter",
