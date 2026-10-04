@@ -1,5 +1,5 @@
 {
- "next_id": 62,
+ "next_id": 63,
  "items": [
   {
    "id": "P-0001",
@@ -1347,6 +1347,26 @@
    ],
    "minutes": 0,
    "calls": 13,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0062",
+   "title": "Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-04",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }

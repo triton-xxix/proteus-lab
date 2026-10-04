@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 
-## Queue (4 open)
+## Queue (5 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,6 +17,7 @@ Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
+| P-0062 | Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0? | desk | none |  | 0 | 15 min |
 
 ## Verdicts (53)
 
