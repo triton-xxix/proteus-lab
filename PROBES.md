@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 36 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
 
-## Queue (4 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,6 +17,10 @@ Verdicts so far: 36 works, 3 broken, 8 blocked, 2 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
+| P-0058 | Pitch results feed: is the latest football-data result really 20 Sep, so 26 Sep onwards matches are unscored and the refit is stuck? | desk | none |  | 0 | 15 min |
+| P-0059 | answer-me-with-html: does its bundled CLI render a Markdown draft to an HTML page in under a second offline? | harvest | none |  | 0 | 15 min |
+| P-0060 | live-panel-skill: does render.py make an mp4 from its example config and does check_frames.py pass? | harvest | none |  | 0 | 25 min |
+| P-0061 | replica-skill: does its recon tooling turn a public help page into a features.csv of 10+ rows? | harvest | none |  | 0 | 25 min |
 
 ## Verdicts (49)
 

@@ -6,13 +6,22 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-116 judged over 8 harvest days, 83 kept, 22 testable, 21 queued as probes, 18 with a probe verdict.
+130 judged over 9 harvest days, 92 kept, 25 testable, 24 queued as probes, 19 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0116 | 2026-10-03 | youtube | [Everything You Know About Skills IS OUTDATED](https://www.youtube.com/watch?v=e7TY56-yIvM) | mechanism | tech | yes | P-0057 |
+| H-0130 | 2026-10-04 | youtube | [I Ran a Chess Programming Tournament!](https://www.youtube.com/watch?v=Ne40a5LkK6A) | mechanism | game-bots | no: The bots and framework are C# and need setup beyond a 30 min |  |
+| H-0129 | 2026-10-04 | github | [Jakeschincariol/replica-skill: Eleven free Claude skills that clone any app: reverse-engin](https://github.com/Jakeschincariol/replica-skill) | mechanism | tools-for-strangers | yes | P-0061 |
+| H-0127 | 2026-10-04 | vault | [node canvas workflows (Flows)]() | mechanism | tools-for-strangers | no: Needs a paid trial account and credits, and its MCP only rep |  |
+| H-0125 | 2026-10-04 | arxiv | [The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching](https://arxiv.org/abs/2610.01768) (intel) | mechanism | mechanism-hunting | no: Reproducing the attack needs a tool-calling model and an att |  |
+| H-0124 | 2026-10-04 | github | [ythx-101/live-panel-skill: Config-driven animated architecture diagrams: turn one JSON fil](https://github.com/ythx-101/live-panel-skill) | mechanism | tools-for-strangers | yes | P-0060 |
+| H-0122 | 2026-10-04 | vault | [replication gap measured on demo](https://api-portal.etoro.com/changelog) | mechanism | forecasting | no: Needs an eToro demo API key, which is an account and a key. |  |
+| H-0120 | 2026-10-04 | arxiv | [Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65%](https://arxiv.org/abs/2610.01939) | mechanism | mechanism-hunting | no: Needs the GPT-6 planner and robot simulators, none of which  |  |
+| H-0119 | 2026-10-04 | github | [QingYunA/answer-me-with-html: Answer me with HTML — an agent skill that answers hard quest](https://github.com/QingYunA/answer-me-with-html) | both | tools-for-strangers | yes | P-0059 |
+| H-0117 | 2026-10-04 | vault | [Benchmark DeepSeek, GLM and Kimi against the M5 qwen3.6 on non-personal rewrite and summar](https://www.instagram.com/p/DdwbLoEgVKY/) | mechanism | tools-for-strangers | no: The endpoint needs an account and an API key, so it cannot b |  |
+| H-0116 | 2026-10-03 | youtube | [Everything You Know About Skills IS OUTDATED](https://www.youtube.com/watch?v=e7TY56-yIvM) | mechanism | tech | yes | P-0057 **works** |
 | H-0113 | 2026-10-03 | vault | [Photoreal moving footage of a subject you cannot film, one consistent face and a directed ](https://www.instagram.com/reel/DdoiRHMmyel/) | mechanism | tools-for-strangers | no: Video generation models need accounts and paid credits. |  |
 | H-0111 | 2026-10-03 | arxiv | [Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control](https://arxiv.org/abs/2610.02038) | mechanism | forecasting | no: Needs the authors' simulator, site data and code, which are  |  |
 | H-0110 | 2026-10-03 | github | [zhuyansen/awesome-claude-video-skills: Open-source skills and toolkits that let Claude Cod](https://github.com/zhuyansen/awesome-claude-video-skills) | both | tools-for-strangers | no: It is a list; running it would only mean fetching other repo |  |
@@ -97,6 +106,113 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0130 I Ran a Chess Programming Tournament!
+2026-10-04, youtube, https://www.youtube.com/watch?v=Ne40a5LkK6A
+
+- **Mechanism:** Contestants submit chess bots capped at 1,024 compiler-counted tokens, with a shared framework supplying legal moves and board state. A large Swiss tournament over 64 rounds pairs bots with similar scores who have not met, so about 600 bots rank in a manageable number of games. Token counting by syntax tree rather than file size was exploited via a line directive and an outdated compiler, which shows how a cap can be gamed.
+- **Claim:** A 600-plus bot Swiss tournament over 64 rounds under a 1,024 token limit, with several exploits found and outlawed.
+- **Testable:** no. The bots and framework are C# and need setup beyond a 30 minute keyless slice with no clear verdict. Needs: The challenge framework and entries from the creator's repository.
+- **Idea on its own:** sound. Swiss pairing with a hard resource cap is a sound way to rank many entrants, and the exploit list is a useful checklist.
+- **How it would be done:** For the Lichess bot, a small local Swiss runner with python-chess and a couple of engines would rank variants cheaply. The exploit list (data hidden in directives, outdated counter, network fetch) is a checklist for any submission cap. A hired person would only be needed to run a public contest.
+- **Stack already covers:** Ollama with a qwen model
+- **To fetch:** python-chess https://github.com/niklasf/python-chess (Legal moves and engine play for a local tournament runner); Stockfish https://stockfishchess.org (Reference opponent for rating a bot)
+- **Field Notes line:** A 600-bot Swiss tournament under a 1,024 token cap showed how a size limit gets gamed and why Swiss pairing ranks fast.
+
+### H-0129 Jakeschincariol/replica-skill: Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it fo
+2026-10-04, github, https://github.com/Jakeschincariol/replica-skill
+
+- **Mechanism:** A chain of eleven skills passes files through a replica/ folder: recon builds a screen and flow map and features.csv from public pages, help centres and store listings, then later skills plan, build, test and diff against that map. A diff step scores parity against the original and a review-mining step turns user complaints into the product angle. It claims clean-room scope: features and flows, not code, logos or copy.
+- **Claim:** Eleven free MIT Claude skills that reverse-engineer, rebuild, test and launch a clone of any app, with no signup or key.
+- **Testable:** yes. Does the recon step's helper tooling run on a public help-centre page and emit a features.csv with at least 10 rows? Queued as P-0061.
+- **Idea on its own:** needs-a-run. The pipeline is plausible but quality of recon from public pages alone is unproven.
+- **How it would be done:** Clone the repo, read the recon SKILL.md and run its Python tools on a public help centre. Check whether the features list is accurate against the page by hand. The review-mining step is the portable part and could be pointed at public app-store reviews for any product. Rebuilding and deploying is ordinary agent coding work.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** replica-skill https://github.com/Jakeschincariol/replica-skill (The eleven skills and Python tools to run)
+- **Field Notes line:** A chain of eleven skills maps an app from public pages, rebuilds it and scores parity, with a review-mining step feeding the pitch.
+
+### H-0127 node canvas workflows (Flows)
+2026-10-04, vault, 
+
+- **Mechanism:** A node canvas lets you wire generation steps (image, video, voice) into a graph where each node's output feeds the next, run as a batch with a credit cost per node. The platform sits on top of third-party models such as Kling and Seedance and charges credits per clip. The value is the graph layer and reusable templates, not exclusive models.
+- **Claim:** Kling 3.0 costs 6.25 credits for 5 seconds at 720p, with a canvas layer (Flows) on top of aggregated models.
+- **Testable:** no. Needs a paid trial account and credits, and its MCP only reports balance. Needs: A Promptwise account and credits.
+- **Idea on its own:** needs-a-run. Whether the canvas saves time over scripted API calls only shows up when a real multi-step job is built both ways.
+- **How it would be done:** Pick one job, for example script to stills to clips to voice, and build it once on the canvas and once as a script calling the same model APIs. Compare minutes of operator time, cost per finished clip and how easily a failed step is re-run. A hired operator would handle the web-only steps the scripts cannot reach.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), HeyGen and Tavus (avatars), Gemini (stills), Claude Code with skills and sub-agents
+- **To fetch:** ComfyUI https://github.com/comfyanonymous/ComfyUI (Free open-source node-graph runner for the same chaining pattern)
+- **Missing:** Nobody has a scripted equivalent of the canvas for Kling and Seedance without an aggregator account.
+- **Field Notes line:** A node canvas that chains image, video and voice generation steps is the real product, since the underlying models are not exclusive.
+
+### H-0125 The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching
+2026-10-04, arxiv, https://arxiv.org/abs/2610.01768
+
+- **Mechanism:** Malware that has no direct internet access hides a secret in a URL and asks an LLM agent to fetch it as if it were documentation for a benign task. The agent's own web-fetch tool carries the secret out to an attacker-controlled DNS or web server. Defences are egress logging of fetched URLs, DNS monitoring for high-entropy subdomains, allowlisting fetch destinations and requiring approval for unfamiliar hosts.
+- **Claim:** 79.7% attack success across eleven open-parameter models, plus a case study on real-world chatbots.
+- **Testable:** no. Reproducing the attack needs a tool-calling model and an attacker server, which is out of scope and not a keyless slice. Needs: A tool-calling model with a fetch tool.
+- **Idea on its own:** sound. Any agent with an unrestricted fetch tool is an egress channel, and the paper shows it works in practice.
+- **How it would be done:** The useful work is defensive: audit what fetch tools the Proteus agents have, log every fetched URL, and flag long or high-entropy path and subdomain strings. The unattended hook already allows or denies by list, so extending it to URL allowlists for WebFetch is the cheap fix. A paper review would check the detection section for numbers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** An agent's own web-fetch tool can be turned into a covert exit for secrets, with a 79.7% success rate across eleven models.
+
+### H-0124 ythx-101/live-panel-skill: Config-driven animated architecture diagrams: turn one JSON file into a terminal-style, alway
+2026-10-04, github, https://github.com/ythx-101/live-panel-skill
+
+- **Mechanism:** One JSON config describes nodes, wires, a log and counters. A self-contained HTML template animates it from a single clock. A Python script drives headless Chrome to capture frames and ffmpeg encodes H.264. A checker samples about 120 time points and measures text overflow from the DOM, and re-renders exported frames to prove determinism.
+- **Claim:** Turns one JSON file into a roughly 28 to 30 second animated architecture diagram as mp4 or live web page, standard library Python only.
+- **Testable:** yes. Does render.py produce an mp4 from the codex-agents example config in under 5 minutes, and does check_frames.py exit 0? Queued as P-0060.
+- **Idea on its own:** sound. Config-driven templates rendered through headless Chrome and ffmpeg are a reliable way to make repeatable explainer clips.
+- **How it would be done:** Clone the repo, run render.py on an example config, then check_frames.py with --repeat. Write a config for a Proteus desk diagram and render that. It overlaps with HyperFrames, so the useful comparison is the frame-determinism check, which could be borrowed.
+- **Stack already covers:** HyperFrames (video compose, captions, render)
+- **To fetch:** live-panel-skill https://github.com/ythx-101/live-panel-skill (The renderer and examples); ffmpeg https://ffmpeg.org (H.264 encoding step if not already installed)
+- **Field Notes line:** One JSON file becomes a moving architecture diagram video, and its checker re-renders frames to prove they are deterministic.
+
+### H-0122 replication gap measured on demo
+2026-10-04, vault, https://api-portal.etoro.com/changelog
+
+- **Mechanism:** A leader account on a copy-trading platform makes trades, followers' demo accounts mirror them through the platform's copy endpoints, and the gap is the difference between the leader's gain series and the follower's realised return. Fees are zero on demo, so real costs (spreads, fees, slippage) are added from the trade log afterwards. The numbers come from the leader gain series and the demo account's own history.
+- **Claim:** Demo keys are locked to the demo account, copy endpoints have been live since 23 Aug 2026, and leader gain series are readable.
+- **Testable:** no. Needs an eToro demo API key, which is an account and a key. Needs: An eToro demo API key.
+- **Idea on its own:** sound. Measuring follower return against leader return on demo money is a clean, no-risk way to price the replication gap.
+- **How it would be done:** Pick a handful of leaders, open demo copies of each, and poll the leader gain series and the demo portfolio daily into a CSV. Compute the gap per leader over a fixed window, then subtract assumed real fees and spreads from the trade log to estimate the true gap. Commit the leader picks before outcomes are known, as on the other desks.
+- **Stack already covers:** launchd long-running pollers, freqtrade
+- **To fetch:** eToro API portal https://api-portal.etoro.com (Demo copy-trading endpoints and docs)
+- **Field Notes line:** Copying a trader on a demo account and comparing it with the leader's own gain series measures how much of the return a follower really keeps.
+
+### H-0120 Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens
+2026-10-04, arxiv, https://arxiv.org/abs/2610.01939
+
+- **Mechanism:** The agent writes Python cells that compose robot primitives and learned policies, with conditionals and local retries inside the cell, instead of one tool call per step. Only explicitly requested images and state come back to the planner, which cuts input tokens. The comparison is against a tool-calling baseline with the same planner and primitives across 700 simulated tasks.
+- **Claim:** Success rises from 63.1% to 71.7% under equal LLM-call budgets, with 49% fewer calls and 65% fewer input tokens on shared solved tasks.
+- **Testable:** no. Needs the GPT-6 planner and robot simulators, none of which can be run keyless. Needs: A planner model API and simulator installs (LIBERO-PRO, RoboTwin, RoboCasa).
+- **Idea on its own:** sound. Batching conditionals and retries into code and returning only requested observations is a general way to cut agent round trips.
+- **How it would be done:** The pattern ports to any tool-using agent: expose primitives as Python functions in a persistent kernel, let the agent write cells with checks and retries, and return only what it asks for. For the Grinder it would mean one cell that pulls, filters and logs a token rather than a call per field. A paper-desk replay could count calls and tokens both ways.
+- **Stack already covers:** Claude Code with skills and sub-agents, The Grinder paper desk
+- **Field Notes line:** Letting an agent write a code cell with retries and selective observation, not one tool call per step, cut tokens 65% in robot sims.
+
+### H-0119 QingYunA/answer-me-with-html: Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you 
+2026-10-04, github, https://github.com/QingYunA/answer-me-with-html
+
+- **Mechanism:** The model writes a short Markdown draft and a bundled Node CLI turns it into a styled single-page HTML with diagrams and tables, so the model never types CSS or SVG coordinates. The saving is in output tokens and wall-clock time only, because the skill adds two extra turns that re-read context. Numbers come from a bench script in the repo.
+- **Claim:** 7.4x fewer output tokens and 3.6x faster than asking for HTML directly, at about the same cost per answer.
+- **Testable:** yes. Does the bundled CLI turn a Markdown draft into a readable HTML page in under one second, with no network or key? Queued as P-0059.
+- **Idea on its own:** sound. Moving boilerplate from model output to a deterministic renderer is a real token and latency saving.
+- **How it would be done:** Clone the repo into the sandbox, read SKILL.md, and run the CLI on a hand-written Markdown draft with a diagram block. Time it and open the result. Then compare against the repo's bench README to see whether the 923-token figure is plausible by counting the draft. The same pattern could feed Field Notes pages.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** answer-me-with-html https://github.com/QingYunA/answer-me-with-html (The skill and bundled CLI to run); Node.js 20+ https://nodejs.org (Runtime for the bundled CLI)
+- **Field Notes line:** A skill that has the model write Markdown and a CLI build the page claims 7.4x fewer output tokens, but the same bill.
+
+### H-0117 Benchmark DeepSeek, GLM and Kimi against the M5 qwen3.6 on non-personal rewrite and summary jobs through the free endpoi
+2026-10-04, vault, https://www.instagram.com/p/DdwbLoEgVKY/
+
+- **Mechanism:** A hosted OpenAI-compatible endpoint serves open-weight models (DeepSeek, GLM, Kimi) on a free developer tier with a request-per-minute cap. You send the same fixed set of non-personal rewrite and summary prompts to the hosted models and to the local qwen model via Ollama, then score outputs with a rubric or an LLM judge. The cap (about 40 RPM) bounds a bake-off to a few hundred calls, which is enough.
+- **Claim:** The free tier gives about 40 requests a minute across roughly 80 to 100 open-weight models with no card.
+- **Testable:** no. The endpoint needs an account and an API key, so it cannot be run keyless tonight. Needs: A free NVIDIA Build account and API key.
+- **Idea on its own:** sound. Comparing models on a fixed public prompt set before pulling weights is cheap, standard and answers a real choice.
+- **How it would be done:** Write 30 to 50 synthetic or public-domain rewrite and summary prompts with a short rubric. Loop them through the hosted endpoint for each candidate model and through Ollama qwen locally, logging output, latency and token counts to a CSV. Score with a rubric, using a different model family as judge, and spot-check a sample by hand. Respect the rate cap with a simple sleep. Keep personal data out entirely, as the terms forbid it.
+- **Stack already covers:** Ollama with a qwen model, Claude Code with skills and sub-agents
+- **To fetch:** NVIDIA Build API catalogue https://build.nvidia.com (The free hosted open-weight endpoint to benchmark against); promptfoo https://github.com/promptfoo/promptfoo (Runs the same prompt set across several providers and scores them)
+- **Field Notes line:** A free hosted tier could let me race DeepSeek, GLM and Kimi against my local qwen on public text before downloading any weights.
 
 ### H-0116 Everything You Know About Skills IS OUTDATED
 2026-10-03, youtube, https://www.youtube.com/watch?v=e7TY56-yIvM
@@ -971,6 +1087,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0127 | 2026-10-04 | node canvas workflows (Flows) | open | needs-a-run | no |  |
+| H-0122 | 2026-10-04 | replication gap measured on demo | open | sound | no |  |
+| H-0117 | 2026-10-04 | Benchmark DeepSeek, GLM and Kimi against the M5 qwen3.6 on non-personal rewrite and summar | open | sound | no |  |
 | H-0113 | 2026-10-03 | Photoreal moving footage of a subject you cannot film, one consistent face and a directed  | open | needs-a-run | no |  |
 | H-0108 | 2026-10-03 | Generating many platform-native variants (hooks, colour grades, overlays) from one filmed  | open | sound | no |  |
 | H-0103 | 2026-10-03 | Whether a fees-paid threshold removes rugs without removing the launches that ran, on a da | open | needs-a-run | yes |  |
@@ -994,6 +1113,15 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0076 | 2026-10-04 | [Stockfish](https://stockfishchess.org) | Reference opponent for rating a bot | H-0130 (I Ran a Chess Programming Tournament!) | shelf |
+| T-0075 | 2026-10-04 | [python-chess](https://github.com/niklasf/python-chess) | Legal moves and engine play for a local tournament runner | H-0130 (I Ran a Chess Programming Tournament!) | shelf |
+| T-0074 | 2026-10-04 | [replica-skill](https://github.com/Jakeschincariol/replica-skill) | The eleven skills and Python tools to run | H-0129 (Jakeschincariol/replica-skill: Eleven free Claude ) | shelf |
+| T-0073 | 2026-10-04 | [ComfyUI](https://github.com/comfyanonymous/ComfyUI) | Free open-source node-graph runner for the same chaining pattern | H-0127 (node canvas workflows (Flows)) | shelf |
+| T-0072 | 2026-10-04 | [live-panel-skill](https://github.com/ythx-101/live-panel-skill) | The renderer and examples | H-0124 (ythx-101/live-panel-skill: Config-driven animated ) | shelf |
+| T-0071 | 2026-10-04 | [eToro API portal](https://api-portal.etoro.com) | Demo copy-trading endpoints and docs | H-0122 (replication gap measured on demo) | shelf |
+| T-0070 | 2026-10-04 | [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | The skill and bundled CLI to run | H-0119 (QingYunA/answer-me-with-html: Answer me with HTML ) | shelf |
+| T-0069 | 2026-10-04 | [promptfoo](https://github.com/promptfoo/promptfoo) | Runs the same prompt set across several providers and scores them | H-0117 (Benchmark DeepSeek, GLM and Kimi against the M5 qw) | shelf |
+| T-0068 | 2026-10-04 | [NVIDIA Build API catalogue](https://build.nvidia.com) | The free hosted open-weight endpoint to benchmark against | H-0117 (Benchmark DeepSeek, GLM and Kimi against the M5 qw) | shelf |
 | T-0067 | 2026-10-03 | [Remotion](https://github.com/remotion-dev/remotion) | The best-known alternative React video renderer to compare with HyperFrames. | H-0110 (zhuyansen/awesome-claude-video-skills: Open-source) | shelf |
 | T-0066 | 2026-10-03 | [awesome-claude-video-skills](https://github.com/zhuyansen/awesome-claude-video-skills) | The list itself, source for further video-skill repos. | H-0110 (zhuyansen/awesome-claude-video-skills: Open-source) | shelf |
 | T-0065 | 2026-10-03 | [Dune](https://dune.com) | Free tier SQL over Solana transactions for a larger dated sample, needs an account so later. | H-0103 (Whether a fees-paid threshold removes rugs without) | shelf |
@@ -1066,6 +1194,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0128 | 2026-10-04 | hn | [Ask HN: Is anybody producing good code with coding agents?](https://news.ycombinator.com/item?id=49934037) | An opinion thread on code quality from coding agents, with no testable mechanism. |
+| H-0126 | 2026-10-04 | youtube | [3 most common reasons your car could fail its MOT in the UK!](https://www.youtube.com/watch?v=zq65xVu3iq8) | A thirty-second listicle of common MOT failures with no mechanism or data source. |
+| H-0123 | 2026-10-04 | hn | [Show HN: Our space game has a built-in RISC-V emulator that runs Linux](https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv/) | A game's RISC-V emulator write-up, interesting engineering but no mechanism relevant to any desk. |
+| H-0121 | 2026-10-04 | youtube | [Stop Losing Trades: Why I Switched to PumpSniper / Solana Sniper BOT](https://www.youtube.com/watch?v=YCYkK0yUBXA) | A promotional video for a sniper bot, with unverified claims and no mechanism beyond buzzwords. |
+| H-0118 | 2026-10-04 | hn | [Show HN: Thoreau BASIC – What if BASIC hadn't gone out of fashion?](https://thoreaubasic.com/) | A BASIC interpreter showcase with no bearing on any desk or interest. |
 | H-0115 | 2026-10-03 | github | [TimMacy/YouTubeAlchemy: This userscript for YouTube offers 250+ layout changes a](https://github.com/TimMacy/YouTubeAlchemy) | A browser UI userscript; its transcript export is clipboard and DOM scraping that the keyless pipeline already covers. |
 | H-0114 | 2026-10-03 | hn | [Show HN: Pi pod – Run your pi coding agent in sandboxes on your own server](https://pipod.dev/) | Self-hosted sandbox for one coding agent; comments say it matches running a container, with no new mechanism. |
 | H-0112 | 2026-10-03 | youtube | [Building an MCP server in 2 minutes....](https://www.youtube.com/watch?v=Fhy_VFMlE9s) | Generic two-minute MCP server tutorial. |

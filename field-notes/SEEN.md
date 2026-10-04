@@ -336,6 +336,7 @@ Closed on the vault side for the reason in the note. Not a lead.
   negative all-time. New over the 20 Sep Invo verdict: a measured number, not a reading.
   `intel/invo-copy-trading.md`, `experiments/2026-10-03-intel-hl-vaults/REPORT.md`.
 - 2026-10-03, harvested: 14 judged, 7 kept (H-0103 to H-0116), 1 queued as probes (P-0057). Register: `field-notes/HARVEST.md`.
+- 2026-10-04, harvested: 14 judged, 9 kept (H-0117 to H-0130), 3 queued as probes (P-0059, P-0060, P-0061). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
