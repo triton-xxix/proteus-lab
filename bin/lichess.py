@@ -143,7 +143,12 @@ def cmd_play(a):
                     ch = json.load(req("/api/challenge/" + name, data={"rated": "true", "clock.limit": 180,
                                    "clock.increment": 2, "color": "random", "variant": "standard"}))
                 except urllib.error.HTTPError as e:
-                    print(f"{name} ({opp}): challenge refused {e.code}")
+                    body = e.read().decode(errors="ignore")[:120].replace("\n", " ")
+                    print(f"{name} ({opp}): challenge refused {e.code} {body}")
+                    if e.code == 429:
+                        # Rate limited: every later challenge tonight fails the same way (5 Oct, P-0062).
+                        stop_at = 0
+                        break
                     continue
                 cid = (ch.get("challenge") or ch).get("id")
                 verdict, t0 = "no answer", time.time()
