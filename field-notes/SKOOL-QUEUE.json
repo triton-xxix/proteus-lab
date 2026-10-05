@@ -201,25 +201,33 @@
    "track": 3,
    "title": "Voice agents 3: LiveKit builder guide, and a voice agent that took every call for two years",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/brendan-livekit-voice-agent-guide.txt",
     "field-notes/skool/transcripts/brendan-voice-agent-2-years.txt"
    ],
-   "why": "Open-source stack against two years in production: how a caller books, transfers and fails."
+   "why": "Open-source stack against two years in production: how a caller books, transfers and fails.",
+   "assigned": "2026-10-05",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-05-S-13.md"
   },
   {
    "id": "S-14",
    "track": 1,
    "title": "AIS: Zero to your first CC workflow, $10K agentic workflows, watch my agents work",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/ais-zero-to-first-cc-workflow.txt",
     "field-notes/skool/transcripts/ais-10k-agentic-workflows.txt",
     "field-notes/skool/transcripts/ais-watch-agents-real-time.txt"
    ],
-   "why": "Claude Code as an operating layer, against how Proteus already runs."
+   "why": "Claude Code as an operating layer, against how Proteus already runs.",
+   "assigned": "2026-10-05",
+   "tries": 1,
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-05-S-14.md"
   },
   {
    "id": "S-15",
