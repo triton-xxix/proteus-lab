@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 
-## Queue (5 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,8 @@ Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0062 | Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0? | desk | none |  | 0 | 15 min |
+| P-0063 | Nightwatch: can Open-Meteo hourly cloud cover alone give tonight's longest clear dark run for a UK site? | harvest | none |  | 0 | 20 min |
+| P-0064 | mesh-avatar-studio: does the bundled sample avatar install, load and lip-sync with no keys? | harvest | none |  | 0 | 15 min |
 
 ## Verdicts (53)
 

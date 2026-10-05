@@ -1,0 +1,342 @@
+{
+ "date": "2026-10-05",
+ "shortlisted_at": "2026-10-05T23:48:23+0100",
+ "candidates": 187,
+ "dropped_seen": [
+  "vault:2026-10-04:benchmark-deepseek-glm-and-kimi-against-the-m5-qwen3-6-on-no",
+  "vault:2026-10-04:replication-gap-measured-on-demo",
+  "vault:2026-10-04:node-canvas-workflows-flows",
+  "vault:2026-10-03:whether-a-fees-paid-threshold-removes-rugs-without-removing-",
+  "vault:2026-10-02:whether-multi-buy-and-net-flow-signals-from-tracked-wallets-",
+  "vault:2026-10-02:higgsfield-genjutsu-as-the-final-route-for-motion-transfer-w",
+  "vault:2026-10-02:human-reads-flagged-threads-from-alert-links",
+  "vault:2026-10-01:adapt-the-web-design-claude-md-for-phone-first-uk-local-busi",
+  "vault:2026-10-01:one-pay-as-you-go-fal-account-to-run-seedance-kling-wan-and-",
+  "vault:2026-10-01:inbound-ai-receptionist-demo-line-built-from-the-home-servic",
+  "vault:2026-09-29:join-for-one-month-with-skool-neptune-transcribe-the-classro",
+  "vault:2026-09-27:media-buying-commission-taken-as-a-share-of-a-brand-s-ad-bud",
+  "vault:2026-09-26:post-production-for-businesses-that-have-long-form-content-b",
+  "vault:2026-09-26:learning-crypto-research-from-a-source-with-an-independently",
+  "vault:2026-09-26:consistent-ai-character-content-with-clear-ai-disclosure",
+  "vault:2026-09-24:partnership-ads-run-through-a-local-client-s-own-social-hand",
+  "vault:2026-09-24:generating-many-platform-native-variants-hooks-colour-grades",
+  "vault:2026-09-24:photoreal-moving-footage-of-a-subject-you-cannot-film-one-co",
+  "vault:2026-10-02:a-telegram-call-aggregator-as-a-data-product-calls-per-contr",
+  "vault:2026-09-24:give-free-work-away-first-then-pay-to-amplify-whichever-piec",
+  "vault:2026-09-24:dmcc-compliance-review-for-small-firms-using-testimonials-an",
+  "vault:2026-10-04:nvidia-build-free-endpoint-openai-compatible-no-card-about-4",
+  "vault:2026-10-03:sol-fees-paid-as-an-anti-rug-screen-on-new-launches",
+  "vault:2026-10-02:fee-sharing-tokens-the-gap-between-what-the-crowd-expects-fr",
+  "vault:2026-10-02:the-auratar-as-a-streamer-s-ai-persona-and-a-free-game-clip-",
+  "vault:2026-09-26:one-sales-page-template-with-psychographic-persona-variants-",
+  "vault:2026-09-26:ai-influencer-vendors-selling-undetectable-fake-people-with-",
+  "vault:2026-10-04:aggregator-accounts-turning-a-long-standing-free-developer-t",
+  "vault:2026-10-03:filter-as-the-hook-cheat-sheet-behind-the-bio-link-as-the-le",
+  "vault:2026-10-02:position-sizing-decides-whether-you-can-hold-through-dips-in",
+  "vault:2026-09-26:trading-performance-quoted-only-at-peak-prices-with-no-entry",
+  "vault:2026-10-02:fake-copyright-dm-phishing-that-took-over-a-21k-follower-x-a",
+  "vault:2026-09-26:cryptoasset-promotions-to-uk-consumers-missing-mandatory-ris",
+  "vault:2026-10-04:routing-the-triton-telegram-chat-or-any-vault-pipeline-throu",
+  "vault:2026-10-03:memecoin-trading-on-terminal-filters-as-an-income-lane",
+  "vault:2026-10-02:part-time-memecoin-trading-on-social-wallet-confluence-as-an",
+  "vault:2026-10-02:other-people-s-videos-as-the-motion-source-with-an-avatar-pa",
+  "vault:2026-09-26:mass-clipping-of-big-personalities-for-per-view-payouts",
+  "vault:2026-09-24:gifting-product-to-creators-and-hoping-they-post-about-it",
+  "vault:2026-09-24:running-client-material-through-a-video-service-that-trains-",
+  "hn:49946567",
+  "hn:49942434",
+  "hn:49942103",
+  "gh:rehan-remade/universal-modder",
+  "gh:nykooi1/vibe-wise",
+  "gh:nanaism/yomiyasu",
+  "gh:qingyuna/answer-me-with-html",
+  "gh:edwardxlai/easyread",
+  "gh:ythx-101/live-panel-skill",
+  "gh:jakeschincariol/replica-skill",
+  "gh:machina-sports/sports-skills",
+  "gh:chainstacklabs/pumpfun-bonkfun-bot",
+  "gh:nexmoe/vidbee",
+  "gh:zeropointrepo/youtube-skills",
+  "gh:jkawamoto/mcp-youtube-transcript",
+  "gh:zlxlabs/videotranscriptapi",
+  "gh:ericmmartin/youtube-transcript-plus",
+  "gh:timmacy/youtubealchemy",
+  "yt:JpJaEPGzPF4",
+  "yt:tysc21gAT58",
+  "yt:LI8WkvWpJJc"
+ ],
+ "flagged_vault": 10,
+ "errors": [],
+ "items": [
+  {
+   "key": "vault:2026-10-05:scroll-driven-website-skill",
+   "source": "vault",
+   "query": "open",
+   "title": "scroll-driven website skill",
+   "url": "https://github.com/nateherkai/scroll-craft",
+   "meta": {
+    "vault_status": "open",
+    "kind": "repo",
+    "subject": "nateherkai/scroll-craft",
+    "date": "2026-10-05",
+    "where": "TRITON-CORE/Systems/site-studio/knowledge/scrollcraft.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: install after a script review\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (repo) The most developed premium website skill in that cluster: an eight-question brief, a device kit, layered depth heroes and a screenshot verifier, MIT. Read on GitHub, not installed; asset generation needs Kie.ai. Write-up: `TRITON-CORE/Systems/site-studio/knowledge/scrollcraft.md` Link: https://github.com/nateherkai/scroll-craft",
+   "score": 100.0,
+   "thread": {
+    "date": "2026-10-05",
+    "subject": "nateherkai/scroll-craft",
+    "kind": "repo",
+    "status": "open",
+    "theme": "scroll-driven website skill",
+    "note": "install after a script review",
+    "where": "TRITON-CORE/Systems/site-studio/knowledge/scrollcraft.md",
+    "url": "https://github.com/nateherkai/scroll-craft"
+   },
+   "seen_vault": "vault verdict: nateherkai/scroll-craft"
+  },
+  {
+   "key": "hn:49962012",
+   "source": "hn",
+   "query": "car data",
+   "title": "Denmark data breach exposes 8.8M people's personal data",
+   "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
+   "hn_url": "https://news.ycombinator.com/item?id=49962012",
+   "meta": {
+    "points": 453,
+    "comments": 325,
+    "created": "2026-10-05T08:09:36Z"
+   },
+   "body": "comment (johnwalker67): I am so done, my cpr is leaked oh no. Like I don't\ncomment (clan): CPR is the national register of all people (Central Person Register). CPR is the administrator. There is more information in the linked press release from the ministry: https://ufm.dk/aktuelt/pressemeddelelser/2026/oktober/omfatt... This is a huge headline story in Denmark today and I choose to link danish content as they are the primary source. The only current english language sources are paywalled: https://www.thelocal.dk/20261005/hackers-get-personal-info-o... https://www.bloomberg.com/news/articles/2026-10-05/denmark-d... Non-paywalled but major danish news outlet (National Brodcaster): h\ncomment (clan): For those not getting the scope of this. The following has been compromised for all living danish citizens and foreign nationals which have had recidence. And quite a few dead ones as well. - Social security number - Age - Sex - Family relations - Physical address - Protected addresses - Sex change This is a country with quite good health records. Unfortunately also previous problems with proper non-reversible anonymisation of said data when used for research.",
+   "score": 9.011545888724703
+  },
+  {
+   "key": "gh:lichess-bot-devs/lichess-bot",
+   "source": "github",
+   "query": "lichess bot pushed:>{since} stars:>5",
+   "title": "lichess-bot-devs/lichess-bot: A bridge between Lichess bots and chess engines",
+   "url": "https://github.com/lichess-bot-devs/lichess-bot",
+   "repo": "lichess-bot-devs/lichess-bot",
+   "meta": {
+    "stars": 1093,
+    "created": "2018-04-16",
+    "pushed": "2026-10-05",
+    "language": "Python",
+    "topics": [
+     "api",
+     "bot",
+     "bot-account",
+     "chess",
+     "lichess",
+     "lichess-api",
+     "lichess-bot",
+     "python"
+    ]
+   },
+   "body": "lichess-bot \n\n  A bridge between [lichess.org](https://lichess.org) and bots.\n   \n   [Explore lichess-bot docs »](https://github.com/lichess-bot-devs/lichess-bot/wiki) \n   \n   \n  [](https://github.com/lichess-bot-devs/lichess-bot/actions/workflows/python-build.yml)\n  [](https://github.com/lichess-bot-devs/lichess-bot/actions/workflows/python-test.yml)\n  [](https://github.com/lichess-bot-devs/lichess-bot/actions/workflows/mypy.yml)\n\n \n\n## Overview\n\n[lichess-bot](https://github.com/lichess-bot-devs/lichess-bot) is a free bridge\nbetween the [Lichess Bot API](https://lichess.org/api#tag/Bot) and chess engines.\n\nWith lichess-bot, you can create and operate a bot on lichess. Your bot will be able to play against humans and bots alike, and you will be able to view these games live on lichess.\n\nSee also the lichess-bot [documentation](https://github.com/lichess-bot-devs/lichess-bot/wiki) for further usage help.\n\n## Features\nSupports:\n- Every variant and time control\n- UCI, XBoard, and Homemade engines\n- Matchmaking (challenging other bots)\n- Offering Draws and Resigning\n- Participating in tournaments\n- Accepting move takeback requests from opponents\n- Saving games as PGN\n- Local & Online Opening Books\n- Local & Online Endgame Tablebases\n\nCan run on:\n- Python 3.10 and later\n- Windows, Linux and MacOS\n- Docker\n\n## Steps\n1. [Install lichess-bot](https://github.com/lichess-bot-devs/lichess-bot/wiki/How-to-Install)\n2. [Create a lichess OAuth token](https://github.com/lichess-bot-devs/lichess-bot/wiki/How-to-create-a-Lichess-OAuth-token)\n3. [Setup the engine](https://github.com/lichess-bot-devs/lichess-bot/wiki/Setup-the-engine)\n4. [Configure lichess-bot](https://github.com/lichess-bot-devs/lichess-bot/wiki/Configure-lichess-bot)\n5. [Upgrade to a BOT account](https://github.com/lichess-bot-devs/lichess-bot/wiki/Upgrade-to-a-BOT-account)\n6. [Run lichess-bot](https://github.com/lichess-bot-devs/lichess-bot/wiki/How-to-Run-lichess%E2%80%90bot)\n\n## Advanced options\n- [Create a homemade engine](https://github.com/lichess-bot-devs/lichess-bot/wiki/Create-a-homemade-engine)\n- [Add extra customizations](https://github.com/lichess-bot-devs/lichess-bot/wiki/Extra-customizations)\n\n \n\n## Acknowledgements\nThanks to the Lichess team, especially T. Alexander Lystad and Thibault Duplessis for working with the LeelaChessZero team to get this API up. Thanks to [Niklas Fiekas](https://github.com/niklasf) and his [python-chess](https://github.com/niklasf/python-chess) code which allows engine communication seamlessly.\n\n## License\nlichess-bot is licensed under the AGPLv3 (or any later version at your option). Check out the [LICENSE file](https://github.com/lichess-bot-devs/lichess-bot/blob/master/LICENSE) for the full text.\n\n## Citation\nIf this software has been used for research purposes, please cite it using the \"Cite this repository\" menu on the right sidebar. For more information, check the [CITATION file](https://github.com/lichess-bot-devs/lichess-bot/blob/master/CITATION.cff).",
+   "score": 6.9975959829819265
+  },
+  {
+   "key": "arxiv:2610.03631",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+   "url": "https://arxiv.org/abs/2610.03631",
+   "meta": {
+    "published": "2026-10-02",
+    "authors": [
+     "Lijie Ding",
+     "Changwoo Do"
+    ],
+    "categories": [
+     "cs.AI",
+     "physics.ins-det"
+    ]
+   },
+   "body": "Designing a scientific instrument tests whether language-model agents can do physics rather than recall it, provided the grading cannot be argued with. We introduce NeutronGym, to our knowledge the first executable environment for neutron instrument design: agents build instruments through validating tools, McStas ray-traces what they build, and a level-resolved ladder grades syntax, runtime, structure and science with no LLM judge. Procedural families supply unlimited instances of a fixed layout whose design parameters the agent must set, with held-out parameter regimes; a curated slice, McStasBench, adds 16 tasks from published instruments behind memorization probes and a sandbox. Seven models reproduce at most 7 of the 16, none retrieves a reference, and none meets an improvement target. The environment also trains. Reinforcement learning on its reward takes Qwen3-8B from 11% to 77% of held-out instances of a family whose targets come from a hidden design (69% at a second seed), past an untrained Qwen3-32B, and the recipe holds, at one seed each, on three further gated families. The analysis says what that gain is. Without the ladder's partial credit it collapses by 60 points. From reward alone the trained model reaches what a classical optimizer reaches, at the agent's simulation budget, only when handed the closed-form physics (77% against 81%, a gap that does not separate at this size), while frontier models still solve 98-99%. Getting a trustworthy result meant failing four task designs that no-model baselines could solve, and we release the probes that found them.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:XGe7ldwFLSE",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "Apple’s New M5 Max Changes the Local AI Story",
+   "url": "https://www.youtube.com/watch?v=XGe7ldwFLSE",
+   "meta": {
+    "channel": "Alex Ziskind",
+    "rank": 1,
+    "duration_min": 13
+   },
+   "body": "# Apple’s New M5 Max Changes the Local AI Story\n# Alex Ziskind\n# https://www.youtube.com/watch?v=XGe7ldwFLSE\n\n[00:00] This is the new M5 Max MacBook Pro and it's replacing my M4 Max MacBook Pro. Apple says this thing has a new GPU architecture with neural accelerators in every single GPU core and here I got the 40 core version and they claim it gets over four times the peak GPU compute for AI compared to the previous generation and up to 614 GB per second of memory bandwidth. Those are eye-popping numbers. So, I want to find out how much of that is real in the stuff I actually care about. and local AI. This is my first look and\n[00:32] I'll be digging into more of that in later videos as well as the new M5 Pro, M5 Air and the Neo. So, stay tuned for those. But today, I'm not just comparing it to my M4 Max. I also want to see how close this thing gets to the M3 Ultra Mac Studio because if Apple's numbers translate into real workloads, this laptop could get weirdly close to this desktop beast in some areas. As a software developer, there are a few things that I really care about. Single core performance matters for general system responsiveness as well as a lot of JavaScript heavy applications. Apple\n[01:06] has already been absurdly good in this for years and Apple again is positioning the M5 as having its fastest CPU core yet. Here's Speedometer. Boom and boom and boom. Speedometer 3.1 actually. This gives me a quick read on browser and JavaScript responsiveness which maps pretty well to the kind of day-to-day snappiness I actually feel. >> [laughter] >> This is the highest score I've ever seen in this test, 60.5 on the M5 Max and we're actually pretty much in line for the M3 single core which was on this machine, 49.6 and the\n[01:41] M4 single core on the M4 Max which is 56.7. Really good improvements there, but single core is only part of the story. What I really care about on this machine is multi-core because that affects IDEs, builds, code compiles and heavier parallel workloads. I'm using Mandelbrot, a real algorithm implemented in Python. It's named after a famous mathematician, Mandelbrot. You can also find it on the Benchmarks Game website if you want to run it yourself to compare. I love it because it absolutely hammers all the cores and I'm going to time it. Time python main and I'll give\n[02:14] it that 16,000 flag that's recommended. Boom, boom, boom. Let's see who's going to make noise first. Right now, everybody's quiet. Oh. Okay. Well, they're done. So, nobody made noise, but this is an intense, intense program. 14.6 seconds to run that on the M4 Max. There they are running on the M4 Max with 16 cores. 12 of those cores are performance cores and four are efficiency cores. This is one of the big architectural changes with the M5 Max because the M5 Max, unlike 16 cores on the M4 Max, has 18. Not only that, look\n[02:48] at that. They're named super and performance. There's no more efficiency cores. So, six super cores and 12 performance cores. I mean, that's really kind of a marketing thing if you ask me because the performance cores have been renamed to super cores and the new performance cores are kind of different than the old efficiency cores. So, that's why they had to make that name change. And of course, because this thing has a lot more cores, it's going to be faster in multi-core operations. So, I ran it twice on the M4 Max, got 14.6 and 15 seconds and on the M5 Max, 11.6 and 11.8 seconds. That is a big\n[03:24] imp\n[transcript continues in field-notes/staging/XGe7ldwFLSE.txt]",
+   "score": 1.0
+  },
+  {
+   "key": "vault:2026-10-05:gbp-setup-and-audit-checklist",
+   "source": "vault",
+   "query": "open",
+   "title": "GBP setup and audit checklist",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "paper",
+    "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+    "date": "2026-10-05",
+    "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: competitor categories, service-plus-city volume test, service areas, suspension flags; fits a free GBP audit\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (paper) Videos are medium at best (3 medium, 2 low, no high); the value sits in the linked public repos and docs, not the talk. 188 of 222 lesson videos are outdated (n8n, Antigravity era).",
+   "score": 99.0,
+   "thread": {
+    "date": "2026-10-05",
+    "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+    "kind": "paper",
+    "status": "open",
+    "theme": "GBP setup and audit checklist",
+    "note": "competitor categories, service-plus-city volume test, service areas, suspension flags; fits a free GBP audit",
+    "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+   }
+  },
+  {
+   "key": "hn:49952148",
+   "source": "hn",
+   "query": "bonding curve",
+   "title": "Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear",
+   "url": "https://github.com/rsutcliffe/nightwatch",
+   "hn_url": "https://news.ycombinator.com/item?id=49952148",
+   "meta": {
+    "points": 64,
+    "comments": 9,
+    "created": "2026-10-04T09:31:01Z"
+   },
+   "body": "Here in the north of England clear nights are at a premium, and it's never guaranteed that you'll be able to see anything but cloud. That's why I developed Nightwatch, so that I could be notified when one of those precious few nights where I could see into the heavens was available. Finding out whether tonight was worth setting up meant reading forecast charts every evening, usually to learn that it was not. Nightwatch does that reading for me. It sits in the Mac's menu bar and refreshes the forecast every 30 minutes. An hour before sunset it sends one notification, and only if there is an unbroken run of clear sky in astronomical darkness long enough to image in. Otherwise it says nothing: no news means \"clouds\". I hope this is useful for other hobbyist stargazers too! When I was a child I wanted desperately to be an astronaut or a dinosaur. I'm now old enough to be the latter and was born in a country where the former was never an option. I've had a fascination with the stars since a a friend of my father gifted me a telescope, and have faded memories of sharing time with my father staring at the stars. My father passed away a few years back and the memory of those nights came back, along with the want to share the same experience with my kids and grandchild. The app uses two forecasts: Apple's WeatherKit is the main source and Open-Meteo is a second opinion. When they disagree, the alert says so instead of averaging them. Thin high cloud counts for half. Stacking many shor\ncomment (leetrout): Awesome! Thank you for sharing! For iOS stargazers that don't already know (we've all been there) xasteria is a great option for your phone to compliment this (it also uses 7Timer!). https://apps.apple.com/us/app/xasteria-astronomy-weather/id9...\ncomment (Reason077): Impressive looking app! But I’d argue something like this doesn’t really belong in the Mac menu bar. The last thing most of us need is even more clutter in that space. It’s a shame because years ago macOS had the perfect place for “quick information at a glance” apps: the Dashboard. But the Dashboard got killed off in mysterious circumstances, and I still miss it! I had hopes that something like Dashboard would make a comeback with the advent of the new widgets framework, but that doesn’t seem to have happened. Widgets can only be buried in Notification Centre (where they get lost and forgotte\ncomment (asasidh): This is a great usecase for someone who likes photography. However I would have this as one of my tasks for my personal agent to check and alert me on time. I already have too many things on my menu bar.",
+   "score": 5.325679816392659
+  },
+  {
+   "key": "gh:shinshin86/mesh-avatar-studio",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "shinshin86/mesh-avatar-studio: Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
+   "url": "https://github.com/shinshin86/mesh-avatar-studio",
+   "repo": "shinshin86/mesh-avatar-studio",
+   "meta": {
+    "stars": 241,
+    "created": "2026-10-04",
+    "pushed": "2026-10-05",
+    "language": "TypeScript",
+    "topics": [
+     "2d-animation",
+     "avatar",
+     "claude-code",
+     "codex",
+     "mesh-deformation",
+     "vtuber",
+     "webgl"
+    ]
+   },
+   "body": "# Mesh Avatar Studio\n\n[日本語](README.ja.md)\n\nTurn a single illustration into an animated 2D mesh avatar: it blinks, talks, turns its head,\nbreathes and sways its hair. A coding agent prepares the avatar from your image; you fine-tune\nit in a local editor with a live preview.\n\n## Try the sample\n\nRequires Node.js 22.17+.\n\n```sh\nnpm install\nnpm run dev\n```\n\nOpen the URL printed in the terminal (for example `http://127.0.0.1:5173/`). The editor opens\nthe bundled sample, Miko in a qipao. Pick a part on the left, drag its dots on the image and\nwatch the preview on the right. The sample is read-only; when you change it, choose\n**Copy and keep editing** to continue in your own copy.\n\n### Using Windows\n\nUse `git clone` to download the repository when possible. If you use a ZIP, open its\nProperties in File Explorer and select **Unblock**, if shown, before extracting it.\n\nCreate `projects/` yourself under your Windows account before asking an agent to work in it.\nFolders created by another account or an agent running in a sandbox can have permissions\nthat prevent the editor from reading them. If a project cannot be read, use the folder's\n**Properties → Security** settings to grant your account access to the whole project,\nincluding its files and subfolders through permission inheritance.\n\n## How it works\n\nMaking an avatar from your own illustration takes four steps. Steps 1 and 4 are done by a\ncoding agent (Claude Code or Codex) working in this repository; steps 2 and 3 happen in the\neditor.\n\n### 1. Ask your agent to create the avatar\n\nOpen Claude Code or Codex in this repository folder and give it your illustration:\n\n> Create an avatar from this image following docs/agent-guide.md: `/path/to/your-image.png`\n\nThe agent follows [the agent guide](docs/agent-guide.md): it checks how accurately it reads\ncoordinates, places the rig on zoomed grids, cuts the image into layers and reviews the\navatar in fixed poses. The project is saved in `projects/ /`, which is never committed.\nBest results come from a front-facing, head-and-shoulders PNG with a transparent background.\nWhen no project is open, the editor shows this request ready to copy.\n\nRecommended setups:\n\n| Agent | Model |\n|---|---|\n| Claude Code | Claude Opus 5.5 |\n| Codex | GPT-6.1 Sol |\n\n### 2. Open the project and check it\n\nStart the editor (`npm run dev`), choose **Open project** and pick your project from the list.\nIn the preview, use **Pose test** to turn and tilt the head and close the eyes, and\n**Lip sync** to check the vowel mouth shapes.\n\n### 3. Fix what looks wrong by dragging\n\nSelect a part on the left. Its dots are highlighted on the image; drag them to fix the\nplacement. The preview follows your changes immediately. Some values also decide how the image\nis cut into layers: eye and hand outlines, and the head, hair and bun areas used for the hair\nmask. After changing those, a banner appears; choose **Save and rebuild layers** there. It takes\na few seconds.\n\nZoom with a pinch or Ctrl/Cmd+scroll, pan with two fingers or by dragging empty space, and use\n**Fit selected part** to jump to the current part.\n\n### 4. Get drawn eyes and mouths\n\nWithout drawings, the eyes and mouth move by mesh deformation alone. Drawn closed eyes and\nvowel mouths make blinking and talking look much more natural. In **Drawn variants**, check\n**Eyes**, **Mouth** or both, copy the message and paste it into Codex opened in this\nrepository folder. Codex draws them with its built-in image generation and imports them; th",
+   "score": 5.488937726156687
+  },
+  {
+   "key": "arxiv:2610.03591",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents",
+   "url": "https://arxiv.org/abs/2610.03591",
+   "meta": {
+    "published": "2026-10-02",
+    "authors": [
+     "Wangshu Zhu",
+     "Xueqi Cheng",
+     "Liang Wu",
+     "Yushun Dong"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Understanding and assessing natural hazards is essential for disaster preparedness and risk reduction. Recent advances in large language models have spurred growing interest in AI agents for hazard analysis, particularly their ability to integrate scientific data, models, and tools into automated workflows. However, effective automation requires agents to determine which scientific methods are appropriate for a given event and executable with the available data and tools. As new evidence and execution results become available, these conditions can change, requiring agents to reconsider their choices. We formulate this problem as state-dependent scientific route selection and introduce HazardWeaver. Specifically, HazardWeaver first leverages the Hazard Knowledge Compiler to extract evidence-linked conditions governing scientific applicability, then its Hazard Capability Graph represents executable scientific capabilities and checks compatibility between their inputs and outputs. Using these complementary representations, the Hazard Weaver Agent component selects applicable and executable routes, carries out their workflows, and revises its decisions as the analysis state changes. To evaluate both the scientific outputs and the decisions that produce them, we introduce the Hazard Weaver Benchmark, comprising 141 instances across seven single-hazard domains and four multi-hazard interaction classes. The benchmark accommodates multiple valid scientific routes and evaluates output correctness, route validity, and justified abstention. Extensive experiments on this benchmark show that HazardWeaver outperforms existing agent systems, with the largest gains on tasks with multiple eligible scientific routes. Our code is publicly available at https://github.com/LabRAI/HazardWeaver.",
+   "score": 1.0
+  },
+  {
+   "key": "yt:bZ2HeZe_NNw",
+   "source": "youtube",
+   "query": "expected goals model from scratch",
+   "title": "Why xG is Lying To Us 🤷‍♂️🤷‍♂️",
+   "url": "https://www.youtube.com/watch?v=bZ2HeZe_NNw",
+   "meta": {
+    "channel": "Off Topic Footy",
+    "rank": 2,
+    "duration_min": 1
+   },
+   "body": "# Why xG is Lying To Us 🤷‍♂️🤷‍♂️\n# Off Topic Footy\n# https://www.youtube.com/watch?v=bZ2HeZe_NNw\n\n[00:00] People always talk about goals. The game is so much more. What do you give to your team? Can you play on the right? Can you play on the left? Can you drop? Can you get that ball from midfield? Can you turn? Can you run at people? Can you ping a ball with your left and your right for your wingers? Can you slide the ball through? Can you hold it? Can you play alone up front away from home? Can you can you assist as a nine and always wait for people to feed you? You know how nine can be. You know, I always say when it bothers me when I hear people like, \"He's a nine. He's allowed to shoot.\" No, no, he's allowed to\n[00:33] score. He's not allowed to shoot. You mean we have to score? We have to score. I hate when you said he's a nine. You want your knight to shoot from there? No. I want my knight to make the right decision. And more often than not, obviously Harry Kane in a tight angle might be better than any other player in in because it's Harry Kane. You know, when sometime they gave you the XG, but they don't tell you what's behind the ball. What do you mean the an XG for Aric in that position is not the XG of another strike in that position?",
+   "score": 0.5
+  },
+  {
+   "key": "vault:2026-09-24:niche-paid-community-on-owned-material-borrowing-only-a-prov",
+   "source": "vault",
+   "query": "open",
+   "title": "Niche paid community on owned material, borrowing only a proven model and price point",
+   "url": "",
+   "meta": {
+    "vault_status": "open",
+    "kind": "scheme",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "date": "2026-09-24",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md",
+    "has_transcript": false
+   },
+   "body": "Vault status: open, meaning nobody on the vault side has run it to a verdict.\n\nThe vault's note on this theme: Copying a model and price is lawful; needs honest metrics, correct disclaimers and VAT\n\nThe vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (scheme) Video pulled via an embed proxy and transcribed, so this is what he actually says rather than a caption guess. The idea: find a trending paid Skool community, name a target (he names AI Video Bootcamp, 27,000 members at 9 dollars a month, about 243k a month gross), then use a Whop community blueprint to duplicate it; he shows his own clone, HyperReal Academy, 350 members. He is real: UK, 300k YouTube, ClickBank Platinum, company 11584991, and the reel funnels into his own paid mentorship. Verdict: real mechanism, mislabelled. Copying a model and a price point is lawful; copying copy, images or material is CDPA 1988, name or branding is trade marks or passing off, invented member counts or reviews is a banned practice under DMCC Act 2024 with CMA fines to 10 percent of global turnover, and a community whose product is teaching people to sell the same community edges into pyramid promotional scheme territory, also banned. The unethical versions are the ones he skips. Job: Sell niche paid education on owned material with honest metrics, correct disclaimers and VAT, rather than cloning someone else (still open)",
+   "score": 80.0,
+   "thread": {
+    "date": "2026-09-24",
+    "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
+    "kind": "scheme",
+    "status": "open",
+    "theme": "Niche paid community on owned material, borrowing only a proven model and price point",
+    "note": "Copying a model and price is lawful; needs honest metrics, correct disclaimers and VAT",
+    "where": "TRITON-CORE/Research/links/2026-09-24-liamjameskay-skool-clone-reel.md"
+   }
+  },
+  {
+   "key": "gh:voltagent/official-mcp-servers",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "VoltAgent/official-mcp-servers: A curated directory of 280+ official MCP servers from the companies behind the products. No unofficial forks, no abandoned projects.",
+   "url": "https://github.com/VoltAgent/official-mcp-servers",
+   "repo": "VoltAgent/official-mcp-servers",
+   "meta": {
+    "stars": 89,
+    "created": "2026-10-01",
+    "pushed": "2026-10-05",
+    "language": null,
+    "topics": [
+     "ai-tools",
+     "awesome-list",
+     "claude",
+     "claude-code",
+     "codex",
+     "cursor",
+     "mcp",
+     "mcp-server"
+    ]
+   },
+   "body": "# Official MCP Servers\n\n**The curated directory of official MCP servers.** \n**No unofficial forks, no abandoned projects, just servers you can trust.**\n\n[](https://awesome.re)\n\n[](https://s.voltagent.dev/discord)\n\n \n\n## What is MCP?\n\nThe Model Context Protocol (MCP) is an open standard that lets AI assistants connect to external tools and data. An MCP server exposes what a product can do (query a database, create a ticket, send an email), and any MCP client such as Claude, ChatGPT or Cursor can use it.\n\n## Why this list matters\n\nAn MCP server can read your data and act on your behalf, so who built it matters. Every entry here is an official server from the company behind the product, or a widely used open source project. Where there is no public repository, we link the vendor's official MCP docs.\n\n## Table of Contents\n\n| [Cloud and DevOps](#cloud-and-devops) | [Databases](#databases-and-data) | [Observability](#observability-and-analytics) | [Browser and Web](#browser-automation-and-web-data) |\n|---|---|---|---|\n| [Search](#search-and-research) | [Developer Tools](#developer-tools) | [Security](#security-and-code-quality) | [Productivity](#productivity-and-project-management) |\n| [Finance](#finance-and-payments) | [Messaging](#communication-and-messaging) | [AI and Media](#ai-media-and-data-visualization) | [Design](#design-and-collaboration) |\n| [Travel](#travel-and-lifestyle) | [Marketing](#web-marketing-and-product) |  |  |\n\n \n  Cloud and DevOps  \n\n- **[google/mcp](https://github.com/google/mcp)** - Google's collection of official MCP servers for Google and Google Cloud services\n- **[cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)** - Manage Workers, KV, R2, D1 and other Cloudflare services\n- **[TencentCloudBase/CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit)** - Build and deploy full-stack apps on Tencent CloudBase\n- **[vercel/next-devtools-mcp](https://github.com/vercel/next-devtools-mcp)** - Next.js development tools, docs and runtime diagnostics for coding agents\n- **[GoogleCloudPlatform/cloud-run-mcp](https://github.com/GoogleCloudPlatform/cloud-run-mcp)** - Deploy apps to Google Cloud Run from your AI assistant\n- **[TencentEdgeOne/edgeone-makers-mcp](https://github.com/TencentEdgeOne/edgeone-makers-mcp)** - Deploy HTML and sites to Tencent EdgeOne Pages\n- **[aliyun/alibabacloud-devops-mcp-server](https://github.com/aliyun/alibabacloud-devops-mcp-server)** - Alibaba Cloud DevOps (Yunxiao) projects, code and pipelines\n- **[hostinger/api-mcp-server](https://github.com/hostinger/api-mcp-server)** - Manage Hostinger hosting, domains and VPS through the API\n- **[harness/mcp-server](https://github.com/harness/mcp-server)** - Work with Harness pipelines, services and environments\n- **[CircleCI-Public/mcp-server-circleci](https://github.com/CircleCI-Public/mcp-server-circleci)** - Debug failed builds and manage CircleCI pipelines\n- **[netlify/netlify-mcp](https://github.com/netlify/netlify-mcp)** - Create, build and deploy sites on Netlify\n- **[buildkite/buildkite-mcp-server](https://github.com/buildkite/buildkite-mcp-server)** - Inspect Buildkite pipelines, builds and logs\n- **[Tencent/cos-mcp](https://github.com/Tencent/cos-mcp)** - Tencent Cloud COS object storage and data processing\n- **[Aiven-Open/mcp-aiven](https://github.com/Aiven-Open/mcp-aiven)** - Navigate Aiven projects and manage PostgreSQL, Kafka, ClickHouse and OpenSearch\n- **[Vercel](https://vercel.com",
+   "score": 4.499809670330265
+  },
+  {
+   "key": "yt:IEpfsf8fmnU",
+   "source": "youtube",
+   "query": "solana bonding curve explained",
+   "title": "Why Solana’s Momentum Is Only Going to Accelerate — MoonPay’s CEO Ivan Soto-Wright @moonpayhq",
+   "url": "https://www.youtube.com/watch?v=IEpfsf8fmnU",
+   "meta": {
+    "channel": "PhœnixPodcast",
+    "rank": 2,
+    "duration_min": 0
+   },
+   "body": "# Why Solana’s Momentum Is Only Going to Accelerate — MoonPay’s CEO Ivan Soto-Wright @moonpayhq\n# PhœnixPodcast\n# https://www.youtube.com/watch?v=IEpfsf8fmnU\n\n[00:00] And you look at Solana, Solana is moving, you know, I think number one in DEX volume trading on a weekly basis. You know, we're starting to see I think it's we're looking at around 27% penetration relative to centralized exchanges in terms of volume happening through DeFi. I think that's only going to continue to accelerate.",
+   "score": 0.5
+  }
+ ]
+}

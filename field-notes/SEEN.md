@@ -362,6 +362,11 @@ Closed on the vault side for the reason in the note. Not a lead.
   `intel/invo-copy-trading.md`, `experiments/2026-10-03-intel-hl-vaults/REPORT.md`.
 - 2026-10-03, harvested: 14 judged, 7 kept (H-0103 to H-0116), 1 queued as probes (P-0057). Register: `field-notes/HARVEST.md`.
 - 2026-10-04, harvested: 14 judged, 9 kept (H-0117 to H-0130), 3 queued as probes (P-0059, P-0060, P-0061). Register: `field-notes/HARVEST.md`.
+- 2026-10-05, ran: markitdown (Microsoft) on Python 3.14.6. pip with all extras silently installed
+  0.0.2, not 0.1.8 (magika needs onnxruntime, no 3.14 wheel). 0.0.2: docx table kept with an invented
+  empty header row, xlsx sheets kept, PDF plain text only. Ran-it W41,
+  `experiments/2026-10-05-markitdown/REPORT.md`. A 3.11 or 3.13 run of 0.1.8 would be new.
+- 2026-10-05, harvested: 13 judged, 8 kept (H-0131 to H-0143), 2 queued as probes (P-0063, P-0064). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

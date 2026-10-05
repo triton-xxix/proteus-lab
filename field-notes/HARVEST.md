@@ -6,20 +6,28 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-130 judged over 9 harvest days, 92 kept, 25 testable, 24 queued as probes, 19 with a probe verdict.
+143 judged over 10 harvest days, 100 kept, 28 testable, 26 queued as probes, 22 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0141 | 2026-10-05 | vault | [Niche paid community on owned material, borrowing only a proven model and price point]() | mechanism | tools-for-strangers | no: It needs a platform account and a paying audience, not a key |  |
+| H-0139 | 2026-10-05 | arxiv | [HazardWeaver: Scientific Route Selection for Hazard Analysis Agents](https://arxiv.org/abs/2610.03591) | mechanism | mechanism-hunting | no: It needs an LLM key and hazard datasets and models that are  |  |
+| H-0138 | 2026-10-05 | github | [shinshin86/mesh-avatar-studio: Turn one illustration into an animated 2D mesh avatar with ](https://github.com/shinshin86/mesh-avatar-studio) | mechanism | tools-for-strangers | yes | P-0064 |
+| H-0137 | 2026-10-05 | hn | [Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear](https://github.com/rsutcliffe/nightwatch) | mechanism | open-data | yes | P-0063 |
+| H-0136 | 2026-10-05 | vault | [GBP setup and audit checklist]() | mechanism | tools-for-strangers | no: Reading listings at scale needs a Places API key or a scrapi |  |
+| H-0134 | 2026-10-05 | arxiv | [NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents](https://arxiv.org/abs/2610.03631) | mechanism | mechanism-hunting | no: It needs the McStas simulator and an RL training run, which  |  |
+| H-0133 | 2026-10-05 | github | [lichess-bot-devs/lichess-bot: A bridge between Lichess bots and chess engines](https://github.com/lichess-bot-devs/lichess-bot) | mechanism | game-bots | no: The Bot API needs a Lichess OAuth token and a BOT account, s |  |
+| H-0131 | 2026-10-05 | vault | [scroll-driven website skill](https://github.com/nateherkai/scroll-craft) | mechanism | tools-for-strangers | yes |  |
 | H-0130 | 2026-10-04 | youtube | [I Ran a Chess Programming Tournament!](https://www.youtube.com/watch?v=Ne40a5LkK6A) | mechanism | game-bots | no: The bots and framework are C# and need setup beyond a 30 min |  |
-| H-0129 | 2026-10-04 | github | [Jakeschincariol/replica-skill: Eleven free Claude skills that clone any app: reverse-engin](https://github.com/Jakeschincariol/replica-skill) | mechanism | tools-for-strangers | yes | P-0061 |
+| H-0129 | 2026-10-04 | github | [Jakeschincariol/replica-skill: Eleven free Claude skills that clone any app: reverse-engin](https://github.com/Jakeschincariol/replica-skill) | mechanism | tools-for-strangers | yes | P-0061 **not-worth-it** |
 | H-0127 | 2026-10-04 | vault | [node canvas workflows (Flows)]() | mechanism | tools-for-strangers | no: Needs a paid trial account and credits, and its MCP only rep |  |
 | H-0125 | 2026-10-04 | arxiv | [The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching](https://arxiv.org/abs/2610.01768) (intel) | mechanism | mechanism-hunting | no: Reproducing the attack needs a tool-calling model and an att |  |
-| H-0124 | 2026-10-04 | github | [ythx-101/live-panel-skill: Config-driven animated architecture diagrams: turn one JSON fil](https://github.com/ythx-101/live-panel-skill) | mechanism | tools-for-strangers | yes | P-0060 |
+| H-0124 | 2026-10-04 | github | [ythx-101/live-panel-skill: Config-driven animated architecture diagrams: turn one JSON fil](https://github.com/ythx-101/live-panel-skill) | mechanism | tools-for-strangers | yes | P-0060 **works** |
 | H-0122 | 2026-10-04 | vault | [replication gap measured on demo](https://api-portal.etoro.com/changelog) | mechanism | forecasting | no: Needs an eToro demo API key, which is an account and a key. |  |
 | H-0120 | 2026-10-04 | arxiv | [Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65%](https://arxiv.org/abs/2610.01939) | mechanism | mechanism-hunting | no: Needs the GPT-6 planner and robot simulators, none of which  |  |
-| H-0119 | 2026-10-04 | github | [QingYunA/answer-me-with-html: Answer me with HTML — an agent skill that answers hard quest](https://github.com/QingYunA/answer-me-with-html) | both | tools-for-strangers | yes | P-0059 |
+| H-0119 | 2026-10-04 | github | [QingYunA/answer-me-with-html: Answer me with HTML — an agent skill that answers hard quest](https://github.com/QingYunA/answer-me-with-html) | both | tools-for-strangers | yes | P-0059 **works** |
 | H-0117 | 2026-10-04 | vault | [Benchmark DeepSeek, GLM and Kimi against the M5 qwen3.6 on non-personal rewrite and summar](https://www.instagram.com/p/DdwbLoEgVKY/) | mechanism | tools-for-strangers | no: The endpoint needs an account and an API key, so it cannot b |  |
 | H-0116 | 2026-10-03 | youtube | [Everything You Know About Skills IS OUTDATED](https://www.youtube.com/watch?v=e7TY56-yIvM) | mechanism | tech | yes | P-0057 **works** |
 | H-0113 | 2026-10-03 | vault | [Photoreal moving footage of a subject you cannot film, one consistent face and a directed ](https://www.instagram.com/reel/DdoiRHMmyel/) | mechanism | tools-for-strangers | no: Video generation models need accounts and paid credits. |  |
@@ -106,6 +114,110 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0141 Niche paid community on owned material, borrowing only a proven model and price point
+2026-10-05, vault, 
+
+- **Mechanism:** Pick a niche, copy only a proven structure (tier, price point, content cadence), and fill it with original material. Host it on a community platform such as Skool or Whop with a template, and take recurring payments. Honest metrics, disclaimers and VAT are required, and the mechanism fails if it copies another's material or invents numbers.
+- **Claim:** A trending paid community, 27,000 members at 9 dollars a month, is cited as roughly 243k a month gross.
+- **Testable:** no. It needs a platform account and a paying audience, not a keyless run. Needs: A Skool or Whop account and original content..
+- **Idea on its own:** needs-a-run. The structure works for some niches but the headline revenue is unverified and depends on audience, which a plan cannot show.
+- **How it would be done:** Choose a niche where original material exists, check the real price points of competing communities from their public pages, then build a lesson library and weekly cadence. Sign up for a platform, set up VAT and write the disclaimers. Audience comes from free content on YouTube and short video. A lawyer or accountant covers consumer law and VAT.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), ElevenLabs (voice)
+- **To fetch:** Whop https://whop.com (Community and checkout hosting with a free tier.)
+- **Missing:** An audience and original material.
+- **Field Notes line:** Copying a community's price and structure is lawful; the money sits in owned material, honest numbers and VAT, not the clone.
+
+### H-0139 HazardWeaver: Scientific Route Selection for Hazard Analysis Agents
+2026-10-05, arxiv, https://arxiv.org/abs/2610.03591
+
+- **Mechanism:** A compiler step extracts evidence-linked applicability conditions for scientific methods from literature. A capability graph records each executable tool's inputs and outputs and checks that they are compatible, and the agent picks a route through it, running it and re-picking as results arrive. The benchmark scores output correctness, route validity and justified abstention.
+- **Claim:** HazardWeaver outperforms existing agent systems on 141 hazard-analysis instances, most where several valid routes exist.
+- **Testable:** no. It needs an LLM key and hazard datasets and models that are heavy to set up. Needs: An LLM API key and hazard data..
+- **Idea on its own:** sound. Checking input-output compatibility before running a method, and allowing abstention, is a sensible guard for agent pipelines.
+- **How it would be done:** Read the repo and copy the capability-graph idea: list each tool's input and output types and refuse routes that do not connect. For Proteus desks it could decide which model suits a match given the data available. The paper's full system needs domain hazard models and a person to curate conditions.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** HazardWeaver https://github.com/LabRAI/HazardWeaver (Code released by the authors.)
+- **Missing:** Domain-expert curation of method applicability conditions.
+- **Field Notes line:** An agent that picks which scientific method fits the data and tools it has, and abstains when none does.
+
+### H-0138 shinshin86/mesh-avatar-studio: Turn one illustration into an animated 2D mesh avatar with a coding agent and a local edi
+2026-10-05, github, https://github.com/shinshin86/mesh-avatar-studio
+
+- **Mechanism:** A coding agent follows a written guide to read coordinates on zoomed grids, place rig points, cut one illustration into layers and review fixed poses. A local WebGL editor then deforms triangle meshes from those points for blink, head turn and breathing, with vowel mouth shapes for lip sync. Drawn eye and mouth variants are generated by an image model and imported.
+- **Claim:** Turns a single illustration into a blinking, talking animated 2D mesh avatar with a coding agent and a local editor.
+- **Testable:** yes. Does npm install and npm run dev start the editor with the bundled sample and does Lip sync move the mouth (yes/no)? Queued as P-0064.
+- **Idea on its own:** needs-a-run. Mesh deformation is a proven approach, but agent-placed rig points on arbitrary art are the unproven part.
+- **How it would be done:** Install Node 22 and run the sample to check the editor and lip sync. Then give the agent guide a front-facing PNG and review the fixed-pose output. Audio-driven mouth shapes could be wired to ElevenLabs output for talking clips. A person fixes bad rig points by dragging in the editor.
+- **Stack already covers:** Claude Code with skills and sub-agents, ElevenLabs (voice), Gemini (stills)
+- **To fetch:** mesh-avatar-studio https://github.com/shinshin86/mesh-avatar-studio (The editor and agent guide.); Node.js 22.17+ https://nodejs.org (Required runtime.)
+- **Missing:** Reliable automatic rig placement on arbitrary art.
+- **Field Notes line:** One illustration becomes a blinking, lip-syncing 2D avatar, with the agent doing the rigging and a local web editor for fixes.
+
+### H-0137 Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear
+2026-10-05, hn, https://github.com/rsutcliffe/nightwatch
+
+- **Mechanism:** It polls hourly cloud-cover forecasts every 30 minutes and finds the astronomical-dark window between dusk and dawn. It sends one alert an hour before sunset only if an unbroken clear run is long enough, and says nothing otherwise. Two forecast sources are compared and disagreement is reported instead of averaged, with thin high cloud counted as half.
+- **Claim:** A menu-bar app that notifies you only when there is an unbroken clear run in astronomical darkness.
+- **Testable:** yes. For one UK location, does Open-Meteo's keyless hourly cloud-cover data give a computable longest clear run in tonight's astronomical dark window (yes/no, and how many hours)? Queued as P-0063.
+- **Idea on its own:** sound. Thresholding a public forecast on a contiguous-run condition is simple and checks well against a second source.
+- **How it would be done:** Fetch hourly cloud cover low, mid and high from Open-Meteo for a coordinate and compute sun-below-18-degrees times locally. Weight high cloud at half, find the longest run under a threshold, and alert only if it exceeds a set number of hours. Compare against a second source such as 7Timer and print the disagreement. A scheduled poller delivers the alert. The same pattern fits any condition-run alert.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Open-Meteo API https://open-meteo.com/en/docs (Keyless hourly cloud cover by layer.); 7Timer http://www.7timer.info/doc.php (Free second forecast for disagreement checks.); astral https://github.com/sffjunkie/astral (Python sun position and twilight times.)
+- **Missing:** Nothing.
+- **Field Notes line:** A stargazing alert that stays silent unless a long clear dark window exists, and flags it when two forecasts disagree.
+
+### H-0136 GBP setup and audit checklist
+2026-10-05, vault, 
+
+- **Mechanism:** A Google Business Profile audit compares a business's primary and secondary categories with the top local competitors, checks that service areas are set, and counts search demand for service-plus-city phrases. Suspension flags such as keyword-stuffed names, address mismatches and virtual offices are checked against Google's published guidelines. The data comes from the public Maps listing and a keyword volume source.
+- **Claim:** A checklist of competitor categories, service-plus-city volume, service areas and suspension flags that makes a free GBP audit.
+- **Testable:** no. Reading listings at scale needs a Places API key or a scraping account. Needs: A Google Places API key or a keyword volume source..
+- **Idea on its own:** sound. Category comparison and demand counting against public listings is a legitimate, checkable audit.
+- **How it would be done:** Take a business name and city, pull the listing and the top ten competitors in the map pack, and tabulate categories, review counts and service areas. Add a demand count for each service-plus-city phrase from a keyword tool. Flag anything on the suspension checklist and write the result as a short PDF. A person would still make the sales call and verify the business owns the listing.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Google Places API (New) https://developers.google.com/maps/documentation/places/web-service/overview (Structured listing and category data, with a free monthly credit.); Google Keyword Planner https://ads.google.com/home/tools/keyword-planner/ (Search volume for service-plus-city phrases.)
+- **Missing:** Nothing; it needs an API key and a template.
+- **Field Notes line:** A free local-business audit is a competitor category diff plus a service-plus-city demand check, and the output is a one-page report.
+
+### H-0134 NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents
+2026-10-05, arxiv, https://arxiv.org/abs/2610.03631
+
+- **Mechanism:** Agents build a neutron instrument description through validating tools, a McStas ray-trace simulates it, and a four-level ladder (syntax, runtime, structure, science) scores it with no LLM judge. Procedural task families with held-out parameter regimes give unlimited instances, and partial credit across the ladder is what lets reinforcement learning work. The authors also released probes that showed four task designs were solvable without a model.
+- **Claim:** RL on the environment's reward lifts Qwen3-8B from 11% to 77% on held-out instances of one family.
+- **Testable:** no. It needs the McStas simulator and an RL training run, which will not fit in 30 minutes. Needs: McStas, GPU time for RL..
+- **Idea on its own:** sound. Verifiable graded rewards with held-out regimes and no-model baselines is a rigorous way to build agent evals.
+- **How it would be done:** The transferable part is the method: write a simulator-backed task with a deterministic grader, split the score into levels, and run no-model baselines to find tasks that can be solved by tricks. Proteus could copy that for a desk, for example grading a forecast pipeline stage by stage. The paper's own build needs McStas and an RL stack. A physicist would be needed to design real instrument tasks.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **To fetch:** McStas https://mcstas.org (The neutron ray-trace simulator the grader runs.)
+- **Missing:** A public NeutronGym release was not confirmed in the abstract.
+- **Field Notes line:** A physics-design gym grades agents with a four-step ladder and no LLM judge, and partial credit is what made the RL gain appear.
+
+### H-0133 lichess-bot-devs/lichess-bot: A bridge between Lichess bots and chess engines
+2026-10-05, github, https://github.com/lichess-bot-devs/lichess-bot
+
+- **Mechanism:** A Python bridge that opens the Lichess Bot API event stream (long-lived streaming HTTP with an OAuth token), accepts challenges that pass config filters, then streams each game and relays positions to a UCI or XBoard engine through python-chess. It adds matchmaking, draw and resign rules, opening books and tablebases around that loop.
+- **Claim:** A free bridge between the Lichess Bot API and chess engines supporting every variant and time control.
+- **Testable:** no. The Bot API needs a Lichess OAuth token and a BOT account, so a live run is not keyless. Needs: A Lichess OAuth token (Proteus already runs its own bot, P-0011)..
+- **Idea on its own:** sound. Stream events, filter challenges, hand moves to an engine is a proven design that is easy to compare against a home-built bot.
+- **How it would be done:** Read the lichess-bot source for how it handles reconnects, challenge filters and game state, and diff that against the existing Proteus bot. Any gap such as clock handling or takeback logic can be copied as a small patch. Engines would be Stockfish or a homemade engine over UCI. Matchmaking against other bots needs a token, so a human has to authorise it.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** python-chess https://github.com/niklasf/python-chess (Engine communication and board state library the bridge builds on.); Stockfish https://stockfishchess.org (Free UCI engine to plug into a bot.)
+- **Missing:** Nothing; it is a reference to compare against.
+- **Field Notes line:** The standard Lichess bot bridge is a thin stream listener plus python-chess engine plumbing, which is a useful reference for Proteus's own bot.
+
+### H-0131 scroll-driven website skill
+2026-10-05, vault, https://github.com/nateherkai/scroll-craft. Vault verdict on the vendor exists (vault verdict: nateherkai/scroll-craft); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A Claude Code skill that forces an eight-question brief, then plans a scroll journey and builds a hero from separate visual planes that move at different rates. Photoreal assets come from supplied files or an image API (Kie.ai). A headless-browser screenshot verifier captures desktop, mobile and reduced-motion scroll states so the agent can check its own output.
+- **Claim:** A skill that produces premium scroll-driven landing pages with layered depth heroes and a screenshot verifier.
+- **Testable:** yes. Does the repo's screenshot verifier run on a local static page without keys and produce desktop and mobile scroll captures (yes/no)? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. Layered parallax plus a self-check loop is a sound pattern, but whether the verifier works without paid assets is unproven.
+- **How it would be done:** Clone the repo, read the scripts, then point the verifier at a hand-made static HTML page with CSS layers. Step through scroll positions with Playwright, save screenshots at 390 and 1440 pixel widths, and check the reduced-motion path. Heroes would then be built from supplied stills or Gemini stills in place of Kie.ai. A designer would still be needed to judge whether the result avoids the template look.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills), HyperFrames (video compose, captions, render)
+- **To fetch:** scroll-craft https://github.com/nateherkai/scroll-craft (The skill and verifier itself, MIT licensed.); Playwright https://playwright.dev (Headless browser used to capture scroll-state screenshots.)
+- **Missing:** Nobody has shown the layered-hero output holds up without paid image generation.
+- **Field Notes line:** A web-design skill that makes the agent screenshot its own scroll states at desktop and mobile widths before it calls a page finished.
 
 ### H-0130 I Ran a Chess Programming Tournament!
 2026-10-04, youtube, https://www.youtube.com/watch?v=Ne40a5LkK6A
@@ -1087,6 +1199,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0141 | 2026-10-05 | Niche paid community on owned material, borrowing only a proven model and price point | open | needs-a-run | no |  |
+| H-0136 | 2026-10-05 | GBP setup and audit checklist | open | sound | no |  |
+| H-0131 | 2026-10-05 | scroll-driven website skill | open | needs-a-run | yes |  |
 | H-0127 | 2026-10-04 | node canvas workflows (Flows) | open | needs-a-run | no |  |
 | H-0122 | 2026-10-04 | replication gap measured on demo | open | sound | no |  |
 | H-0117 | 2026-10-04 | Benchmark DeepSeek, GLM and Kimi against the M5 qwen3.6 on non-personal rewrite and summar | open | sound | no |  |
@@ -1113,6 +1228,17 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0087 | 2026-10-05 | [Whop](https://whop.com) | Community and checkout hosting with a free tier. | H-0141 (Niche paid community on owned material, borrowing ) | shelf |
+| T-0086 | 2026-10-05 | [HazardWeaver](https://github.com/LabRAI/HazardWeaver) | Code released by the authors. | H-0139 (HazardWeaver: Scientific Route Selection for Hazar) | shelf |
+| T-0085 | 2026-10-05 | [mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio) | The editor and agent guide. | H-0138 (shinshin86/mesh-avatar-studio: Turn one illustrati) | shelf |
+| T-0084 | 2026-10-05 | [astral](https://github.com/sffjunkie/astral) | Python sun position and twilight times. | H-0137 (Show HN: Nightwatch – a Mac menu-bar app that tell) | shelf |
+| T-0083 | 2026-10-05 | [7Timer](http://www.7timer.info/doc.php) | Free second forecast for disagreement checks. | H-0137 (Show HN: Nightwatch – a Mac menu-bar app that tell) | shelf |
+| T-0082 | 2026-10-05 | [Open-Meteo API](https://open-meteo.com/en/docs) | Keyless hourly cloud cover by layer. | H-0137 (Show HN: Nightwatch – a Mac menu-bar app that tell) | shelf |
+| T-0081 | 2026-10-05 | [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) | Search volume for service-plus-city phrases. | H-0136 (GBP setup and audit checklist) | shelf |
+| T-0080 | 2026-10-05 | [Google Places API (New)](https://developers.google.com/maps/documentation/places/web-service/overview) | Structured listing and category data, with a free monthly credit. | H-0136 (GBP setup and audit checklist) | shelf |
+| T-0079 | 2026-10-05 | [McStas](https://mcstas.org) | The neutron ray-trace simulator the grader runs. | H-0134 (NeutronGym: Physics-Graded Neutron Instrument Desi) | shelf |
+| T-0078 | 2026-10-05 | [Playwright](https://playwright.dev) | Headless browser used to capture scroll-state screenshots. | H-0131 (scroll-driven website skill) | shelf |
+| T-0077 | 2026-10-05 | [scroll-craft](https://github.com/nateherkai/scroll-craft) | The skill and verifier itself, MIT licensed. | H-0131 (scroll-driven website skill) | shelf |
 | T-0076 | 2026-10-04 | [Stockfish](https://stockfishchess.org) | Reference opponent for rating a bot | H-0130 (I Ran a Chess Programming Tournament!) | shelf |
 | T-0075 | 2026-10-04 | [python-chess](https://github.com/niklasf/python-chess) | Legal moves and engine play for a local tournament runner | H-0130 (I Ran a Chess Programming Tournament!) | shelf |
 | T-0074 | 2026-10-04 | [replica-skill](https://github.com/Jakeschincariol/replica-skill) | The eleven skills and Python tools to run | H-0129 (Jakeschincariol/replica-skill: Eleven free Claude ) | shelf |
@@ -1194,6 +1320,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0143 | 2026-10-05 | youtube | [Why Solana’s Momentum Is Only Going to Accelerate — MoonPay’s CEO Ivan Soto-Wrig](https://www.youtube.com/watch?v=IEpfsf8fmnU) | A CEO interview claim with no mechanism. |
+| H-0142 | 2026-10-05 | github | [VoltAgent/official-mcp-servers: A curated directory of 280+ official MCP servers](https://github.com/VoltAgent/official-mcp-servers) | A curated link list with no mechanism of its own. |
+| H-0140 | 2026-10-05 | youtube | [Why xG is Lying To Us 🤷‍♂️🤷‍♂️](https://www.youtube.com/watch?v=bZ2HeZe_NNw) | Pundit talk with no model or mechanism. |
+| H-0135 | 2026-10-05 | youtube | [Apple’s New M5 Max Changes the Local AI Story](https://www.youtube.com/watch?v=XGe7ldwFLSE) | A hardware first-look with benchmark numbers and no reusable mechanism. |
+| H-0132 | 2026-10-05 | hn | [Denmark data breach exposes 8.8M people's personal data](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger) | News of a national register breach with stolen personal data and no mechanism to record. |
 | H-0128 | 2026-10-04 | hn | [Ask HN: Is anybody producing good code with coding agents?](https://news.ycombinator.com/item?id=49934037) | An opinion thread on code quality from coding agents, with no testable mechanism. |
 | H-0126 | 2026-10-04 | youtube | [3 most common reasons your car could fail its MOT in the UK!](https://www.youtube.com/watch?v=zq65xVu3iq8) | A thirty-second listicle of common MOT failures with no mechanism or data source. |
 | H-0123 | 2026-10-04 | hn | [Show HN: Our space game has a built-in RISC-V emulator that runs Linux](https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv/) | A game's RISC-V emulator write-up, interesting engineering but no mechanism relevant to any desk. |
