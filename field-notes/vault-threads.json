@@ -12,8 +12,163 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 118,
+  "count": 135,
   "threads": [
+    {
+      "date": "2026-10-05",
+      "subject": "nateherkai/scroll-craft",
+      "kind": "repo",
+      "status": "open",
+      "theme": "scroll-driven website skill",
+      "note": "install after a script review",
+      "where": "TRITON-CORE/Systems/site-studio/knowledge/scrollcraft.md",
+      "url": "https://github.com/nateherkai/scroll-craft"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "nateherkai/scroll-craft",
+      "kind": "repo",
+      "status": "adopted",
+      "theme": "pinned install after script review",
+      "note": "user skill at commit 75d81f7; no telemetry; network only to its image API, unused without a key",
+      "where": "TRITON-CORE/Systems/site-studio/knowledge/scrollcraft.md",
+      "url": "https://github.com/nateherkai/scroll-craft"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "one platform, organic short-form",
+      "note": "every interviewee dropped bought and black-hat traffic for Instagram Reels; 20 accounts cut to 3 earned more",
+      "where": "TRITON-CORE/Education/Courses/ofm-conquest/TAKEAWAYS-interviews.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "proven content formats per client",
+      "note": "the most cited lever; plan the format set before launch, repeat what pops",
+      "where": "TRITON-CORE/Education/Courses/ofm-conquest/TAKEAWAYS-interviews.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "outbound with follow-ups",
+      "note": "daily tracked outreach, up to ten touches before a reply; never rely on referrals alone",
+      "where": "TRITON-CORE/Education/Courses/ofm-conquest/TAKEAWAYS-interviews.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "client tiering and concentration",
+      "note": "tier clients by value; one client at 80 percent of revenue, or one staffer holding every relationship, sank two agencies",
+      "where": "TRITON-CORE/Education/Courses/ofm-conquest/TAKEAWAYS-interviews.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "spend everything you have",
+      "note": "the funnel pitch; several interviewees bet their last savings",
+      "where": "TRITON-CORE/Education/Courses/ofm-conquest/TAKEAWAYS-interviews.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool $10k websites lessons (Nate Herk and Jono Catliff, 16 videos)",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "screenshot loop for Claude-built sites",
+      "note": "two rounds minimum, not on animated elements",
+      "where": "TRITON-CORE/Education/Courses/10k-websites/00-INDEX.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool $10k websites lessons (Nate Herk and Jono Catliff, 16 videos)",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "one hero asset carries the page",
+      "note": "loop from first and last frame, or 120 WebP frames scrubbed by scroll",
+      "where": "TRITON-CORE/Education/Courses/10k-websites/00-INDEX.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool $10k websites lessons (Nate Herk and Jono Catliff, 16 videos)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "hiding third-party badges under a gradient",
+      "note": "refused, pay for the plan or use Three.js",
+      "where": "TRITON-CORE/Education/Courses/10k-websites/00-INDEX.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+      "kind": "paper",
+      "status": "open",
+      "theme": "GBP setup and audit checklist",
+      "note": "competitor categories, service-plus-city volume test, service areas, suspension flags; fits a free GBP audit",
+      "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+      "kind": "paper",
+      "status": "open",
+      "theme": "service x city landing pages",
+      "note": "one page per service and town with matching headline; Site Studio pattern, watch thin-content risk",
+      "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+      "kind": "paper",
+      "status": "intel",
+      "theme": "Google Ads leak checklist",
+      "note": "location presence setting, auto-recommendations, no negatives, generic landing page; talking points for trades already running ads",
+      "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+      "kind": "paper",
+      "status": "open",
+      "theme": "form-triggered personalised AI video",
+      "note": "inbound only; must not claim it was recorded by hand",
+      "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+      "kind": "paper",
+      "status": "dead",
+      "theme": "review gating",
+      "note": "4-5 stars to Google, 1-3 kept private breaches Google policy and UK fake-review rules",
+      "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
+      "kind": "paper",
+      "status": "dead",
+      "theme": "Upwork playbook for Neptune",
+      "note": "trades buyers are not on Upwork; two tactics game the platform",
+      "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md"
+    },
+    {
+      "date": "2026-10-05",
+      "subject": "Veo 3.1 Fast vs Veo 3.1 Lite for animal action from a still",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Veo 3.1 Fast for keepers",
+      "note": "API route, nobody at a screen",
+      "where": "TRITON-CORE/Systems/video-bootcamp/FIELD-NOTES.md"
+    },
     {
       "date": "2026-10-04",
       "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
@@ -1147,8 +1302,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 26,
+  "links_count": 27,
   "links": [
+    {
+      "date": "2026-10-05",
+      "subject": "nateherkai/scroll-craft",
+      "kind": "repo",
+      "where": "TRITON-CORE/Systems/site-studio/knowledge/scrollcraft.md",
+      "url": "https://github.com/nateherkai/scroll-craft",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-04",
       "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
