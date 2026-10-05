@@ -13,7 +13,9 @@ BOOK = os.path.join(HERE, "JUDGEMENT.csv")
 RESULTS_URL = "https://www.eloratings.net/latest.tsv"
 TEAMS_URL = "https://www.eloratings.net/en.teams.tsv"
 # eloratings names that differ from the book's. Match name to code, never guess codes (NI is Nicaragua).
-ALIAS = {"Republic of Ireland": "Ireland", "Czech Republic": "Czechia", "North Macedonia": "Macedonia"}
+# "North Macedonia" needs no alias: it is NM. "Macedonia" is MK, which has no current results, and
+# the old alias to it left J-0019 and J-0052 unscored for days (found 5 Oct 2026).
+ALIAS = {"Republic of Ireland": "Ireland", "Czech Republic": "Czechia"}
 SEEN = {f"J-{i:04d}" for i in range(1, 9)}
 LEAN_MIN = 0.03
 
