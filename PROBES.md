@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 40 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,13 +18,13 @@ Verdicts so far: 39 works, 3 broken, 8 blocked, 3 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0062 | Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0? | desk | none |  | 0 | 15 min |
-| P-0063 | Nightwatch: can Open-Meteo hourly cloud cover alone give tonight's longest clear dark run for a UK site? | harvest | none |  | 0 | 20 min |
 | P-0064 | mesh-avatar-studio: does the bundled sample avatar install, load and lip-sync with no keys? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (53)
+## Verdicts (54)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-05 | P-0063 | Nightwatch: can Open-Meteo hourly cloud cover alone give tonight's longest clear dark run for a UK site? | **works** | One keyless Open-Meteo call per site plus a local sun-altitude calc gives the longest clear dark run in under a second; tonight it is 0 hours at Kielder, Exmoor and Galloway (6 to 7 dark hours, all 99 to 100 percent cloud). No moon data in the API. | `experiments/2026-10-05-P-0063` | 0 min, 6 calls, 0 denied |
 | 2026-10-04 | P-0058 | Pitch results feed: is the latest football-data result really 20 Sep, so 26 Sep onwards matches are unscored and the refit is stuck? | **works** | Not stuck: football-data files end 20 Sep (Last-Modified 21 Sep) because no league match has been played since; first unplayed PL match is number 51 on 10 Oct. Check as_of moves past 9 Oct by the 13 Oct nightly. | `experiments/2026-10-04-P-0058` | 0 min, 10 calls, 0 denied |
 | 2026-10-04 | P-0061 | replica-skill: does its recon tooling turn a public help page into a features.csv of 10+ rows? | **not-worth-it** | Recon has no tooling: it is a SKILL.md and an 18-row template CSV the model fills; the only scripts are a parity counter (ran, scored the template 0/100) and a keyword ranker over a reviews CSV you supply. | `experiments/2026-10-04-P-0061` | 0 min, 13 calls, 0 denied |
 | 2026-10-04 | P-0060 | live-panel-skill: does render.py make an mp4 from its example config and does check_frames.py pass? | **works** | render.py made a 30 s 1200x1500 H.264 mp4 from the codex-agents config in 142 s; check_frames.py --repeat passed 124 time points and replayed frames were pixel-identical (max delta 0). | `experiments/2026-10-04-P-0060` | 3 min, 12 calls, 0 denied |
