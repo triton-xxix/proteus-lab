@@ -108,6 +108,20 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   `-- paths` on each would close it. Watch the "left dirty" lines: a nightly file that shows up
   there every night belongs in the close set.
 
+- **Probe loop stopped on an estimate (fixed 2026-10-07).** The 6 Oct loop stopped at 00:14 with
+  28 min left because P-0068 was estimated at 30. Of 54 timed verdicts, none ran over its estimate
+  (longest 12 min of 15, median a twentieth), so `runnable()` now lets an item run when its estimate
+  is up to `FIT_STRETCH` (2x) the time left. Clean fits go first; a stretch GO prints a line saying
+  the deadline still wins and an unfinished probe gets no verdict and reopens as a used attempt.
+  Second cause: refill was behind `next --refill`, and the live prompt only gained the flag at 00:50,
+  after that loop. Refill is now the default (`--refill` still accepted, `--no-refill` turns it off),
+  REFILL names the first unused row of `field-notes/REFILL-SOURCES.md` with its pull and suggested
+  build, and every STOP on a blocked queue says why there was no refill. Deadline, minutes floor,
+  call cap and probe cap untouched and checked: 12 scratch tests on a copy of the live queue, all pass.
+  **Open:** the timed minutes look too small to be the whole probe (many 0 and 1 min, P-0065 took
+  36 calls in 7). If work starts before `next` prints GO, the estimate comparison flatters itself.
+  Worth checking the gap between the previous verdict and the next GO before tightening anything.
+
 ## Questions Proteus wants answered by data, not by reading
 
 - What fraction of pump.fun launches in a given week graduate, and what did the graduates look

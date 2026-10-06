@@ -19,9 +19,12 @@ Design (2026-09-24, Luke's prompt 5):
   - `start` opens tonight's loop file under state/probe-loop/ with a hard deadline, a call cap and
     a probe cap. Nothing in this script can move the deadline once set.
   - `next` checks, in this order: HALT file, deadline, minutes floor, probe cap, call cap, then
-    picks the first runnable item. If nothing runnable is left it stops the loop with the reason
-    in plain words (queue empty; everything left needs something I do not have; everything left
-    is waiting on a date or on the Sunday cull). It never invents work.
+    picks the first runnable item. An item whose estimate is over the time left but within
+    FIT_STRETCH times it is runnable, after the ones that fit cleanly (7 Oct 2026). If nothing
+    runnable is left it prints REFILL with the next unused source in REFILL-SOURCES.md (6 Oct,
+    capped), and otherwise stops the loop with the reason in plain words (queue empty; everything
+    left needs something I do not have; everything left is waiting on a date or on the Sunday
+    cull; why no refill). It never invents a probe itself: a refill is a source to learn from.
   - `verdict` counts the tool calls and denials the unattended hook logged for this session since
     the probe started, writes the register line and the run-log entry, then commits and pushes
     just those files. Under HALT it logs and does not commit. One commit per probe: the timestamp
@@ -70,12 +73,20 @@ DEFAULT_MAX_MINUTES = 60      # the loop's own ceiling, whatever the night's dea
 DEFAULT_MAX_CALLS = 150       # hook-logged tool calls, the token proxy
 DEFAULT_MAX_PROBES = 6
 MIN_PROBE_MINUTES = 8         # do not start a probe with less than this left
-# Refill (6 Oct 2026, Luke: "ran out of anything runnable" read as doing the bare minimum). With
-# `next --refill`, an empty or blocked queue with time left prints REFILL instead of STOP: go out to
+# Fit slack (7 Oct 2026). On 6 Oct the loop stopped with 28 min left because P-0068 was estimated at
+# 30. Of 54 timed verdicts to that night, none ran over its estimate; the longest took 12 min of 15
+# and the median took a twentieth. So the estimate only has to be within FIT_STRETCH times the time
+# left. Probes that fit cleanly go first; a stretch probe is started only when nothing fits cleanly,
+# and the deadline, call cap and probe cap still stop the loop exactly as before.
+FIT_STRETCH = 2.0
+# Refill (6 Oct 2026, Luke: "ran out of anything runnable" read as doing the bare minimum). An empty
+# or blocked queue with time left prints REFILL instead of STOP: go out to the first unused source in
 # field-notes/REFILL-SOURCES.md, learn one thing, queue one build with `add --source refill`, then
-# ask `next` again. At most REFILL_MAX a night, only with REFILL_MIN_LEFT minutes left.
+# ask `next` again. At most REFILL_MAX a night, only with REFILL_MIN_LEFT minutes left. On by default
+# since 7 Oct (the 6 Oct loop ran on a prompt without `--refill` and stopped); `--no-refill` turns it off.
 REFILL_MAX = 2
 REFILL_MIN_LEFT = 25
+REFILL_SOURCES = ROOT + "field-notes/REFILL-SOURCES.md"
 INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is found
 NIGHTLY_LENGTH_MIN = 90
 NIGHTLY_RESERVE_MIN = 10      # kept back for the run log and the marker release
@@ -438,12 +449,31 @@ def runnable(st, left_minutes):
             why["needs"].append(i)
         elif i.get("after") and i["after"] > today:
             why["after"].append(i)
-        elif int(i.get("est_minutes") or 0) > left_minutes:
+        elif int(i.get("est_minutes") or 0) > left_minutes * FIT_STRETCH:
             why["fit"].append(i)
         else:
             fit.append(i)
-    fit.sort(key=lambda i: (SOURCE_RANK.get(i.get("source"), 9), i.get("attempts", 0), i["id"]))
+    # clean fits first, then stretch fits; within each, the usual source order
+    fit.sort(key=lambda i: (int(i.get("est_minutes") or 0) > left_minutes,
+                            SOURCE_RANK.get(i.get("source"), 9), i.get("attempts", 0), i["id"]))
     return fit, why, pool
+
+
+def next_refill_source():
+    """(number, source, how, build) for the first row of REFILL-SOURCES.md with an empty `used`, or None."""
+    try:
+        txt = open(REFILL_SOURCES).read()
+    except FileNotFoundError:
+        return None
+    for line in txt.splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) != 5 or not cells[0].isdigit():
+            continue
+        if cells[1].startswith("~~"):
+            continue
+        if not cells[4]:
+            return cells[:4]
+    return None
 
 
 def cmd_next(a):
@@ -471,18 +501,30 @@ def cmd_next(a):
             print(bline)
             return
     fit, why, pool = runnable(st, left)
-    if not fit and getattr(a, "refill", False) and left >= REFILL_MIN_LEFT and lp.get("refills", 0) < REFILL_MAX:
+    refill_on = not getattr(a, "no_refill", False)
+    src = next_refill_source() if refill_on and not fit else None
+    if not fit and src and left >= REFILL_MIN_LEFT and lp.get("refills", 0) < REFILL_MAX:
         lp["refills"] = lp.get("refills", 0) + 1
         save_loop(lp)
         print("REFILL %d of %d: nothing runnable in the queue and %d min left." % (lp["refills"], REFILL_MAX, left))
-        print("do: pick the next unused source in %sfield-notes/REFILL-SOURCES.md, pull it keyless, and queue ONE build" % ROOT)
-        print("    you can finish tonight: python3 %sbin/probe.py add \"...\" --source refill --est 25" % ROOT)
-        print("    then mark the source used in REFILL-SOURCES.md and run `probe.py next --refill` again.")
+        print("source: #%s %s" % (src[0], src[1]))
+        print("pull: %s (keyless; no git clone, no npm)" % src[2])
+        print("build it suggests: %s" % src[3])
+        print("do: learn one thing in under ten minutes, then queue ONE build you can finish tonight:")
+        print("    python3 %sbin/probe.py add \"...\" --source refill --est 25" % ROOT)
+        print("    write today's date in row %s's `used` column of %s, then run `probe.py next` again." % (src[0], REFILL_SOURCES))
         print(bline)
         return
     if not fit:
+        if refill_on:
+            if not src:
+                refill_why = "every source in REFILL-SOURCES.md is used; add new ones"
+            elif lp.get("refills", 0) >= REFILL_MAX:
+                refill_why = "%d of %d refills used tonight" % (lp.get("refills", 0), REFILL_MAX)
+            else:
+                refill_why = "%d min left, under the %d needed for a refill" % (left, REFILL_MIN_LEFT)
         if not pool:
-            return stop_loop(lp, "queue empty", st)
+            return stop_loop(lp, "queue empty" + ("; no refill: " + refill_why if refill_on else ""), st)
         parts = []
         if why["needs"]:
             parts.append("%d need something I do not have (%s)" % (
@@ -494,8 +536,11 @@ def cmd_next(a):
             parts.append("%d had three attempts and wait for the Sunday cull (%s)" % (
                 len(why["cull"]), ", ".join(i["id"] for i in why["cull"])))
         if why["fit"]:
-            parts.append("%d do not fit the %d min left (%s)" % (
-                len(why["fit"]), left, ", ".join("%s %s min" % (i["id"], i.get("est_minutes")) for i in why["fit"])))
+            parts.append("%d estimated over %g times the %d min left (%s)" % (
+                len(why["fit"]), FIT_STRETCH, left,
+                ", ".join("%s %s min" % (i["id"], i.get("est_minutes")) for i in why["fit"])))
+        if refill_on:
+            parts.append("no refill: " + refill_why)
         return stop_loop(lp, "nothing runnable: " + "; ".join(parts), st)
     it = fit[0]
     it["status"] = "in_progress"
@@ -506,6 +551,10 @@ def cmd_next(a):
     print("title: " + it["title"])
     print("source: %s, attempt %d of %d, est %s min" % (it.get("source"), it["attempts"], MAX_ATTEMPTS, it.get("est_minutes")))
     print(bline)
+    if int(it.get("est_minutes") or 0) > left:
+        print("stretch: estimated %s min against %d left. Go anyway (estimates run long); if the deadline %s comes first,"
+              % (it.get("est_minutes"), left, hm(parse_iso(lp["deadline"]))))
+        print("    record no verdict: `next` stops the loop and the next start reopens it as a used attempt.")
     print("artefact: write under %sexperiments/%s-%s/ (sandbox/ is gitignored)" % (ROOT, lp["date"], it["id"]))
     print("then: python3 %sbin/probe.py verdict %s --verdict works|broken|blocked|not-worth-it --note \"...\" --artefact PATH" % (ROOT, it["id"]))
 
@@ -708,7 +757,8 @@ def main():
     s.add_argument("--probes", type=int, default=DEFAULT_MAX_PROBES)
     s.set_defaults(fn=cmd_start)
     s = sub.add_parser("next")
-    s.add_argument("--refill", action="store_true", help="on an empty or blocked queue with time left, print REFILL instead of STOP")
+    s.add_argument("--refill", action="store_true", help="kept for old prompts; refill is now the default")
+    s.add_argument("--no-refill", action="store_true", help="on an empty or blocked queue, STOP instead of REFILL")
     s.set_defaults(fn=cmd_next)
     s = sub.add_parser("verdict")
     s.add_argument("id")
