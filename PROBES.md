@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 43 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 44 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (5 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,11 +18,13 @@ Verdicts so far: 43 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | harvest | none |  | 0 | 30 min |
+| P-0069 | Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my model.py skips | desk | none |  | 0 | 60 min |
 
-## Verdicts (59)
+## Verdicts (60)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0070 | mg-styles-15 rerun of P-0065: does 01-flat-vector's audio.py render on a Python 3.12 inside the folder and mux into the 10s mp4? | **works** | Interactive rerun. python-build-standalone 3.12.15 x86_64 unpacked to sandbox/python312, venv sandbox/py312-venv; the hook allows it because its realpath stays inside PROTEUS. Real cause was 3.14 on Intel: numba, llvmlite, pedalboard, onnxruntime have 3.14 wheels for arm64 only; on 3.12 x86_64 numba is capped at 0.62.1. audio.py rendered 10.000 s at -14.04 LUFS in 77 s; muxed with the 21 s picture into a 10.000 s h264+AAC mp4. P-0065 stands as recorded, corrected in its report. | `experiments/2026-10-07-P-0065/REPORT.md` | not run |
 | 2026-10-07 | P-0067 | 3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' keyless? | **works** | Server not run (npm). Its endpoints called directly: 7 of 19 sources tested, all answered keyless; 6 have tree assets (BlenderKit 1314 free, licence per result; Poly Haven 33 CC0); ambientCG 0 (materials only); 3 are link-only by design, 9 untested. | `experiments/2026-10-07-P-0067` | 1 min, 12 calls, 0 denied |
 | 2026-10-07 | P-0066 | Wikidata nested conditions: can a 3-condition query that replaces a named entity still return exactly one answer? | **works** | Keyless, 183 SPARQL calls: all 5 famous targets were unique on one rare claim; nested 3-condition versions stayed unique for 3 of 5 (90 and 342 answers for the others), and 2 of those 3 leaked the answer or leaned on a disambiguation property. Uniqueness alone passes bad questions. | `experiments/2026-10-07-P-0066` | 4 min, 4 calls, 0 denied |
 | 2026-10-07 | P-0065 | mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes? | **blocked** | Picture renders keyless: a 90-line Python CDP stand-in for render.mjs made 300 frames, 10.0 s, in 21 s once missing-font loads were made to fail soft. No audio: pedalboard has no Python 3.14 build and numba stops below 3.11. | `experiments/2026-10-07-P-0065` | 7 min, 36 calls, 2 denied |

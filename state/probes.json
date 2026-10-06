@@ -1,5 +1,5 @@
 {
- "next_id": 69,
+ "next_id": 71,
  "items": [
   {
    "id": "P-0001",
@@ -1500,6 +1500,48 @@
    "verdict_at": null,
    "note": "",
    "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0069",
+   "title": "Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my model.py skips",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 60,
+   "added": "2026-10-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0070",
+   "title": "mg-styles-15 rerun of P-0065: does 01-flat-vector's audio.py render on a Python 3.12 inside the folder and mux into the 10s mp4?",
+   "source": "backlog",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-07",
+   "status": "done",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-07T00:51:17+0100",
+   "note": "Interactive rerun. python-build-standalone 3.12.15 x86_64 unpacked to sandbox/python312, venv sandbox/py312-venv; the hook allows it because its realpath stays inside PROTEUS. Real cause was 3.14 on Intel: numba, llvmlite, pedalboard, onnxruntime have 3.14 wheels for arm64 only; on 3.12 x86_64 numba is capped at 0.62.1. audio.py rendered 10.000 s at -14.04 LUFS in 77 s; muxed with the 21 s picture into a 10.000 s h264+AAC mp4. P-0065 stands as recorded, corrected in its report.",
+   "artefacts": [
+    "experiments/2026-10-07-P-0065/REPORT.md"
+   ],
    "minutes": null,
    "calls": null,
    "denied": [],
