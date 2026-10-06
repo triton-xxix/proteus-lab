@@ -33,6 +33,18 @@ reader can check.
 probability and the anchored mid by Brier. The measure is me minus market, averaged over settled
 calls. Negative means I am better. Voided markets are dropped, not scored.
 
+A contract goes `open`, then `halted` from the event start, and stays halted until Smarkets
+resolves it to `winner` or `loser`. Halted is not settled: the call waits, however long that takes.
+
+**No anchor.** `anchor` is tried once per call, the first run after its commit. If the contract has
+no two-sided price at that moment (only a bid, or only an offer), the call is recorded with
+`mid_at` set and `market_mid` empty, and that is final. It is never re-anchored later, because a
+later price is better informed than the one I called against, and after the event it is a
+post-result price. A call with no anchor is still settled and its own Brier published in the book,
+but it has nothing to be compared with, so it is outside me minus market and does not count toward
+the 60 and 100 floors (the Counted line below already requires a two-sided price at anchor).
+Written 7 Oct 2026 after X-0001 and X-0002 (Quebec, PQ) hit a one-sided book: bid 94.3, no offer.
+
 ## Pass marks (also in PASS-MARKS.md)
 
 | Criterion | Line |

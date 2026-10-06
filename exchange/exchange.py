@@ -178,9 +178,12 @@ def committed(cid):
 
 
 def cmd_anchor(a):
+    # One attempt per call. mid_at set with market_mid empty means "no two-sided price at anchor": final, never
+    # retried, because a retry the next night reads a later price (and after the event, a post-result one).
+    # Until 7 Oct this skipped on market_mid alone, so X-0001/2 were re-anchored nightly past the Quebec vote.
     rows, n = book(), 0
     for r in rows:
-        if r.get("market_mid"):
+        if r.get("market_mid") or r.get("mid_at"):
             continue
         if not committed(r["id"]):
             print(f"{r['id']}: not committed yet; commit the call first")
@@ -189,15 +192,21 @@ def cmd_anchor(a):
         r["market_mid"] = "" if mid is None else round(mid / 10000, 4)
         r["mid_at"] = now()
         n += 1
-        print(f"{r['id']}: market mid {r['market_mid']} against my {r['p']}")
+        if mid is None:
+            print(f"{r['id']}: no two-sided price, no anchor (final): scored for the record, not against the market")
+        else:
+            print(f"{r['id']}: market mid {r['market_mid']} against my {r['p']}")
     save(rows)
     print(f"anchored {n}")
 
 
 def cmd_score(a):
-    rows, n = book(), 0
+    # Settlement is the contract's state_or_outcome: open, then halted from the event start until Smarkets
+    # resolves it to winner or loser (void is dropped). Every anchored call is settled, with or without a mid;
+    # market_brier stays empty without one, which keeps it out of me minus market (RULES.md, No anchor).
+    rows, n, waiting = book(), 0, []
     for r in rows:
-        if r.get("outcome") or not r.get("market_mid"):
+        if r.get("outcome") or not r.get("mid_at"):
             continue
         cs = {c["id"]: c for c in get(f"/markets/{r['market_id']}/contracts/").get("contracts", [])}
         st = (cs.get(r["contract_id"]) or {}).get("state_or_outcome")
@@ -205,16 +214,24 @@ def cmd_score(a):
             o = 1.0 if st == "winner" else 0.0
             r["outcome"] = st
             r["brier"] = round((float(r["p"]) - o) ** 2, 4)
-            r["market_brier"] = round((float(r["market_mid"]) - o) ** 2, 4)
+            r["market_brier"] = round((float(r["market_mid"]) - o) ** 2, 4) if r.get("market_mid") else ""
             r["settled_at"] = now()
             n += 1
+        elif st == "void":
+            r["outcome"], r["settled_at"] = "void", now()
+            n += 1
+        else:
+            waiting.append(f"{r['id']} {st}")
     save(rows)
-    done = [r for r in rows if r.get("brier")]
+    done = [r for r in rows if r.get("brier") and r.get("market_brier")]
+    unanchored = sum(1 for r in rows if r.get("brier") and not r.get("market_brier"))
+    still = sum(1 for r in rows if not r.get("outcome"))
+    print(f"settled {n} tonight; {still} open" + (f" (unresolved: {', '.join(waiting)})" if waiting else ""))
     if done:
         d = sum(float(r["brier"]) - float(r["market_brier"]) for r in done) / len(done)
-        print(f"settled {n} tonight; {len(done)} settled in all, me minus market {d:+.4f} (negative is better)")
-    else:
-        print(f"settled {n} tonight; {len(rows)} calls open, none settled yet")
+        print(f"{len(done)} counted, me minus market {d:+.4f} (negative is better); {unanchored} settled without an anchor")
+    elif unanchored:
+        print(f"none counted yet; {unanchored} settled without an anchor")
 
 
 def main():
