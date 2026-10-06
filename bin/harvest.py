@@ -698,6 +698,17 @@ def probe_add(title, est, needs, source="harvest"):
     return (m.group(1) if m else None), (res.stdout + res.stderr).strip()
 
 
+def add_failure(out):
+    # The guard's report opens with a long word list; cutting it at 120 characters (6 Oct 2026, H-0155)
+    # logged the words and lost the verdict. Keep the top match and the verdict lines instead.
+    lines = [l.strip() for l in out.splitlines() if l.strip()]
+    top = next((l.rsplit(None, 1)[-1] for l in lines if re.match(r"\d+ distinctive ", l)), "")
+    verdict = [l for l in lines if l.startswith(("REPEAT:", "NEAR:", "not added:"))]
+    if not verdict:
+        return " ".join(lines)[-300:]
+    return ("top match %s. " % top if top else "") + " ".join(verdict)
+
+
 def git(args):
     if NO_GIT:
         return "no-git: " + " ".join(args)
@@ -757,7 +768,7 @@ def cmd_ingest(a):
                 if pid:
                     queued.append((pid, row["id"]))
                 else:
-                    bad.append("probe add failed for %s: %s" % (row["id"], out[:120]))
+                    bad.append("probe add failed for %s: %s" % (row["id"], add_failure(out)))
         else:
             skipped.append(row)
         new_rows.append(row)
@@ -788,7 +799,7 @@ def cmd_ingest(a):
         (" (" + ", ".join("%s from %s" % (p, h) for p, h in queued) + ")") if queued else "",
         len(short.get("dropped_seen", [])), len(vault_rows), len([r for r in vault_rows if r["keep"]]), shelved, date, date)
     if bad:
-        line += " Problems: " + "; ".join(bad)[:400]
+        line += " Problems: " + "; ".join(bad)
     run_log(date, line)
     committed = "skipped"
     if os.path.exists(HALT):
