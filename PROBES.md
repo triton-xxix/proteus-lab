@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 41 works, 3 broken, 9 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 41 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,15 +17,16 @@ Verdicts so far: 41 works, 3 broken, 9 blocked, 3 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0065 | mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes? | harvest | none |  | 0 | 25 min |
 | P-0066 | Wikidata nested conditions: can a 3-condition query that replaces a named entity still return exactly one answer? | harvest | none |  | 0 | 20 min |
 | P-0067 | 3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' keyless? | harvest | none |  | 0 | 20 min |
 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (56)
+## Verdicts (57)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0065 | mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes? | **blocked** | Picture renders keyless: a 90-line Python CDP stand-in for render.mjs made 300 frames, 10.0 s, in 21 s once missing-font loads were made to fail soft. No audio: pedalboard has no Python 3.14 build and numba stops below 3.11. | `experiments/2026-10-07-P-0065` | 7 min, 36 calls, 2 denied |
+| | | | | denied: Bash `ffmpeg -hide_banner -loglevel error -y -ss 5 -i /Users/triton/PROTEUS/sandbox/p0065/01-fla`; Bash `cp /Users/triton/PROTEUS/sandbox/p0065/cdp_render.py /Users/triton/PROTEUS/sandbox/p0065/i` | | |
 | 2026-10-05 | P-0062 | Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0? | **works** | Above 2000, 1 of 25 bots accepted (9 declined, 14 refused with HTTP 400, 1 silent); the draw v 2990 cost 72 points, so rated games are not +0, only wins over far weaker bots are. The script then hit 57 straight HTTP 429s; it now stops on the first. | `experiments/2026-10-05-P-0062` | 0 min, 8 calls, 0 denied |
 | 2026-10-05 | P-0064 | mesh-avatar-studio: does the bundled sample avatar install, load and lip-sync with no keys? | **blocked** | Tarball fetched and read: sample avatar bundled, no keys or outbound calls in the source, 2 runtime deps. Lip-sync from audio is loudness only with a random vowel per syllable; never ran in a browser because npm is off the unattended list. | `experiments/2026-10-05-P-0064` | 0 min, 8 calls, 0 denied |
 | 2026-10-05 | P-0063 | Nightwatch: can Open-Meteo hourly cloud cover alone give tonight's longest clear dark run for a UK site? | **works** | One keyless Open-Meteo call per site plus a local sun-altitude calc gives the longest clear dark run in under a second; tonight it is 0 hours at Kielder, Exmoor and Galloway (6 to 7 dark hours, all 99 to 100 percent cloud). No moon data in the API. | `experiments/2026-10-05-P-0063` | 0 min, 6 calls, 0 denied |

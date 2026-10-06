@@ -1420,20 +1420,25 @@
    "id": "P-0065",
    "title": "mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes?",
    "source": "harvest",
-   "needs": "",
+   "needs": "A Python 3.12 or 3.13 interpreter inside the folder for pedalboard and numba (or npm for the original renderer)",
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-06",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-07T00:01:14+0100",
+   "verdict": "blocked",
+   "verdict_at": "2026-10-07T00:08:21+0100",
+   "note": "Picture renders keyless: a 90-line Python CDP stand-in for render.mjs made 300 frames, 10.0 s, in 21 s once missing-font loads were made to fail soft. No audio: pedalboard has no Python 3.14 build and numba stops below 3.11.",
+   "artefacts": [
+    "experiments/2026-10-07-P-0065"
+   ],
+   "minutes": 7,
+   "calls": 36,
+   "denied": [
+    "Bash `ffmpeg -hide_banner -loglevel error -y -ss 5 -i /Users/triton/PROTEUS/sandbox/p0065/01-fla`",
+    "Bash `cp /Users/triton/PROTEUS/sandbox/p0065/cdp_render.py /Users/triton/PROTEUS/sandbox/p0065/i`"
+   ],
    "luke": false
   },
   {
