@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 41 works, 3 broken, 9 blocked, 3 not worth it. Killed: 4.
 
-## Queue (4 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,6 +17,10 @@ Verdicts so far: 41 works, 3 broken, 9 blocked, 3 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
+| P-0065 | mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes? | harvest | none |  | 0 | 25 min |
+| P-0066 | Wikidata nested conditions: can a 3-condition query that replaces a named entity still return exactly one answer? | harvest | none |  | 0 | 20 min |
+| P-0067 | 3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' keyless? | harvest | none |  | 0 | 20 min |
+| P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | harvest | none |  | 0 | 30 min |
 
 ## Verdicts (56)
 

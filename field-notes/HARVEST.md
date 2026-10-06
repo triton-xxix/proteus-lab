@@ -6,16 +6,26 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-143 judged over 10 harvest days, 100 kept, 28 testable, 26 queued as probes, 22 with a probe verdict.
+157 judged over 11 harvest days, 110 kept, 33 testable, 30 queued as probes, 24 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0157 | 2026-10-06 | github | [Charlesmpc/by2kb: Forward videos from IM to transcript, Markdown, and your knowledge base ](https://github.com/Charlesmpc/by2kb) | mechanism | tools-for-strangers | yes | P-0068 |
+| H-0156 | 2026-10-06 | hn | [Show HN: OpenChart – OSS TradingView alternative with your own AI agent](https://github.com/longsurf-ai/openchart) | both | desk:grinder | no: The app is a macOS binary download from a third party and ne |  |
+| H-0155 | 2026-10-06 | vault | [Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to](https://www.instagram.com/reel/Db1USzsMNnZ/) | mechanism | tools-for-strangers | yes |  |
+| H-0153 | 2026-10-06 | arxiv | [HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention](https://arxiv.org/abs/2610.06563) | mechanism | mechanism-hunting | no: Needs the paper's benchmark, code and model access that are  |  |
+| H-0152 | 2026-10-06 | github | [arielshad/3d-asset-server: 3d assets api and mcp](https://github.com/arielshad/3d-asset-server) | mechanism | tools-for-strangers | yes | P-0067 |
+| H-0150 | 2026-10-06 | vault | [Buying real human UGC clips from marketplaces and reselling them inside a client retainer](https://www.instagram.com/reel/DdK9uWfRVRT/) | mechanism | none | no: Buying clips needs a marketplace account and payment. |  |
+| H-0149 | 2026-10-06 | awesome | [degordonstech/pwa2play (new in awesome-claude-code)](https://github.com/degordonstech/pwa2play) | mechanism | tools-for-strangers | no: A real run needs a Play developer account and a live PWA wit |  |
+| H-0147 | 2026-10-06 | arxiv | [Wikidata Search Traces: A Dataset for Training Knowledge Graph Search Agents](https://arxiv.org/abs/2610.06650) | mechanism | open-data | yes | P-0066 |
+| H-0146 | 2026-10-06 | github | [Vincentwei1021/mg-styles-15: 15 motion design styles, each made by Claude Opus 5.5 writing](https://github.com/Vincentwei1021/mg-styles-15) | mechanism | tools-for-strangers | yes | P-0065 |
+| H-0144 | 2026-10-06 | vault | [A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build a](https://www.skool.com/theadsclinic) | mechanism | none | no: It needs a client, an ad account and real spend. |  |
 | H-0141 | 2026-10-05 | vault | [Niche paid community on owned material, borrowing only a proven model and price point]() | mechanism | tools-for-strangers | no: It needs a platform account and a paying audience, not a key |  |
 | H-0139 | 2026-10-05 | arxiv | [HazardWeaver: Scientific Route Selection for Hazard Analysis Agents](https://arxiv.org/abs/2610.03591) | mechanism | mechanism-hunting | no: It needs an LLM key and hazard datasets and models that are  |  |
-| H-0138 | 2026-10-05 | github | [shinshin86/mesh-avatar-studio: Turn one illustration into an animated 2D mesh avatar with ](https://github.com/shinshin86/mesh-avatar-studio) | mechanism | tools-for-strangers | yes | P-0064 |
-| H-0137 | 2026-10-05 | hn | [Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear](https://github.com/rsutcliffe/nightwatch) | mechanism | open-data | yes | P-0063 |
+| H-0138 | 2026-10-05 | github | [shinshin86/mesh-avatar-studio: Turn one illustration into an animated 2D mesh avatar with ](https://github.com/shinshin86/mesh-avatar-studio) | mechanism | tools-for-strangers | yes | P-0064 **blocked** |
+| H-0137 | 2026-10-05 | hn | [Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear](https://github.com/rsutcliffe/nightwatch) | mechanism | open-data | yes | P-0063 **works** |
 | H-0136 | 2026-10-05 | vault | [GBP setup and audit checklist]() | mechanism | tools-for-strangers | no: Reading listings at scale needs a Places API key or a scrapi |  |
 | H-0134 | 2026-10-05 | arxiv | [NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents](https://arxiv.org/abs/2610.03631) | mechanism | mechanism-hunting | no: It needs the McStas simulator and an RL training run, which  |  |
 | H-0133 | 2026-10-05 | github | [lichess-bot-devs/lichess-bot: A bridge between Lichess bots and chess engines](https://github.com/lichess-bot-devs/lichess-bot) | mechanism | game-bots | no: The Bot API needs a Lichess OAuth token and a BOT account, s |  |
@@ -114,6 +124,127 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0157 Charlesmpc/by2kb: Forward videos from IM to transcript, Markdown, and your knowledge base — with raw and skill-updated o
+2026-10-06, github, https://github.com/Charlesmpc/by2kb
+
+- **Mechanism:** A pipeline fetches a Bilibili or YouTube video, transcribes it with local faster-whisper or cloud ASR, and writes three Markdown files: transcript, a short abstract and long study notes. The summaries come from the host agent's own model, and a topic search previews captions only before any audio download. Job history and models live under a home folder so upgrades keep them.
+- **Claim:** Forward a video link and get transcript, abstract and study notes saved into a local Markdown knowledge base.
+- **Testable:** yes. Does pipx install of by2kb with local Whisper transcribe one short public YouTube video to a Markdown transcript, and what is the real-time ratio? Queued as P-0068.
+- **Idea on its own:** needs-a-run. The pipeline is standard, so quality depends on install friction and transcription speed.
+- **How it would be done:** Install with pipx, run the init preset for a local agent, and download a small Whisper model. Feed it one short public video and check the three output files. Compare against the existing local transcription step and the keyless transcript fetch. Summaries need an agent or an OpenAI-compatible key, so the abstract step may be skipped keyless.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, local transcription, Claude Code with skills and sub-agents
+- **To fetch:** by2kb https://github.com/Charlesmpc/by2kb (The video to Markdown knowledge-base pipeline.); faster-whisper https://github.com/SYSTRAN/faster-whisper (Local speech recognition used by default.)
+- **Field Notes line:** A video URL becomes transcript, abstract and notes in Markdown using local Whisper, with a caption-only topic preview step.
+
+### H-0156 Show HN: OpenChart – OSS TradingView alternative with your own AI agent
+2026-10-06, hn, https://github.com/longsurf-ai/openchart
+
+- **Mechanism:** A local macOS app holds charts, indicators and research on the user's machine. A shape drawn on a chart becomes an alert condition, and when price crosses it the alert launches the user's own agent (Claude or Codex) to investigate and save notes. Indicators and conditions are written in a purpose-built language called Tea, with free market data and optional paid low-latency data.
+- **Claim:** An open-source TradingView alternative where agents annotate charts, write indicators and are triggered by price alerts.
+- **Testable:** no. The app is a macOS binary download from a third party and needs an agent login, so it is not a keyless run in the sandbox. Needs: A macOS app download and an agent subscription.
+- **Idea on its own:** sound. Alert-triggers-agent-writes-notes is a sensible loop and the same shape as the Grinder's pollers.
+- **How it would be done:** A threshold or line cross is detected by a poller on free price data, which then runs an agent with the chart context and appends the findings to a notes file. The Grinder already has pollers and readers for this. The Tea language and drawn-shape alerts would be the parts to fetch or copy.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), launchd long-running pollers, Claude Code with skills and sub-agents
+- **To fetch:** Tea language https://github.com/longsurf-ai/tea (The indicator and alert-condition language OpenChart uses.); OpenChart https://github.com/longsurf-ai/openchart (The app that wires alerts to an agent.)
+- **Field Notes line:** Price alerts that wake an AI agent to investigate the move and save notes, with indicators in a new language called Tea.
+
+### H-0155 Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to Gemini
+2026-10-06, vault, https://www.instagram.com/reel/Db1USzsMNnZ/
+
+- **Mechanism:** ffmpeg detects scene changes and saves one frame per cut, then captions are pulled from the video or Whisper transcribes the audio when none exist. Frames and timestamped transcript are handed to the model together. The alternative is giving a public YouTube URL directly to Gemini, which reads the video itself.
+- **Claim:** Scene-change frames plus a transcript, or a bare URL to Gemini, get a long video's content into an agent without watching it.
+- **Testable:** yes. For one public 10-minute video, how many scene-change frames does ffmpeg (select gt(scene,0.3)) produce, and do they line up with the transcript timestamps? Not queued (daily cap).
+- **Idea on its own:** sound. Scene frames plus timestamps are a well-understood compression of a video, though a talking-head video yields few useful frames.
+- **How it would be done:** Download captions with the existing keyless pipeline, run ffmpeg scene detection to extract frames, and pair each frame with the nearest transcript lines. Feed the pairs to a model and ask questions only answerable from the frames. Compare with local transcription alone to see what the frames add.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, local transcription, Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org/ (Scene-change frame extraction.)
+- **Field Notes line:** A video reaches an agent as ffmpeg scene-change frames matched to a transcript, with no install beyond ffmpeg.
+
+### H-0153 HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention
+2026-10-06, arxiv, https://arxiv.org/abs/2610.06563
+
+- **Mechanism:** Solvable tool-use tasks are mutated in controlled ways (for example removing a needed tool or fact) into verifiable infeasible twins, so the agent must abstain. Failures on earlier tasks drive edits to the harness prompts and rules and generate new environments aimed at those weaknesses, in a loop. The evolved harness is then tested on held-out tasks and other models.
+- **Claim:** Abstention accuracy rises from 61.7% to 83.3% and transfers to 19 other models for +15.3 points on average.
+- **Testable:** no. Needs the paper's benchmark, code and model access that are not confirmed public or keyless. Needs: The benchmark and a model with an API or local weights.
+- **Idea on its own:** sound. Making solvable and unsolvable pairs by controlled mutation gives checkable ground truth for abstention.
+- **How it would be done:** Take a set of solvable tool tasks, break each in one controlled way, and record the correct answer as abstain. Score a harness on both sets, collect failures, and ask a model to revise the harness and write new tasks aimed at those failures. Repeat for a few rounds and test on held-out tasks. The same loop could check whether a Proteus desk agent refuses when data is missing.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **Missing:** The paper's task set and code, if released.
+- **Field Notes line:** Agents learn when to say 'I cannot do this' if tasks are mutated into unsolvable twins and the harness is evolved against its own failures.
+
+### H-0152 arielshad/3d-asset-server: 3d assets api and mcp
+2026-10-06, github, https://github.com/arielshad/3d-asset-server
+
+- **Mechanism:** A Hono REST server and an MCP server share one search layer that fans a query out to 19 asset sites, merges and ranks results, and tags each with licence, free status and credit requirement. Downloads fetch glTF with bin and textures, PBR maps or HDRIs, and extract zips. Sites that block bots come back as links to their own search instead.
+- **Claim:** One query searches 19 3D asset sites and downloads files ready for a game or Three.js scene.
+- **Testable:** yes. How many of the 19 providers return at least one result with a licence field for the query 'low poly tree' when run keyless from the CLI? Queued as P-0067.
+- **Idea on its own:** needs-a-run. Fan-out scraping of many sites decays quickly, so the working-provider count is the real test.
+- **How it would be done:** Clone the repo, install with Node, and run the CLI search for a few queries. Record per-provider status, licence field and whether a download lands a usable file. Then register it as an MCP server in Claude Code and have an agent fetch assets into a project. Keeping it working over time means someone maintaining the provider adapters.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** 3d-asset-server https://github.com/arielshad/3d-asset-server (The server, CLI and MCP tools themselves.)
+- **Field Notes line:** One search box over 19 free 3D asset sites with licences shown, exposed as an MCP tool an agent can call.
+
+### H-0150 Buying real human UGC clips from marketplaces and reselling them inside a client retainer
+2026-10-06, vault, https://www.instagram.com/reel/DdK9uWfRVRT/
+
+- **Mechanism:** A brand briefs a creator marketplace, a creator films 15 to 60 seconds on a phone for a fee, and the brand owns the file and runs it as a paid ad. Reselling inside a retainer means buying the raw clip and adding captions, cuts and voice work in-house. The cost is the clip fee, and the output is judged on ad performance.
+- **Claim:** Real human clips cost 25 to 60 dollars each and supply a real face that avatar and voice tools cannot.
+- **Testable:** no. Buying clips needs a marketplace account and payment. Needs: A marketplace account and spend.
+- **Idea on its own:** sound. Buying licensed clips and editing them is an ordinary, lawful production route, provided the licence and any disclosure rules are followed.
+- **How it would be done:** Write a brief per client with the product, the claim to avoid and the shot list, then post it to a marketplace. Review the delivered clips against the brief and the licence terms. Caption, cut and add b-roll with HyperFrames, and export in ad formats. A person has to handle the creator relationship and any reshoots; scripts cannot.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), Claude Code with skills and sub-agents
+- **Missing:** A supply of real human creators and a payment route for them.
+- **Field Notes line:** Real human UGC clips can be bought for 25 to 60 dollars and finished in-house, giving ads a genuine face.
+
+### H-0149 degordonstech/pwa2play (new in awesome-claude-code)
+2026-10-06, awesome, https://github.com/degordonstech/pwa2play. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A Trusted Web Activity is a thin Android app that opens a website full screen once the site proves ownership via a /.well-known/assetlinks.json holding the app's signing SHA-256. Bubblewrap builds the bundle, and the plugin encodes the Play rules: reuse one signing key, raise the version code every upload, target the current API level. A small script reads package id, version code and SDK levels straight out of a built apk.
+- **Claim:** A Claude Code plugin that walks a PWA through packaging and Play Store upload while avoiding the common rejection traps.
+- **Testable:** no. A real run needs a Play developer account and a live PWA with a signing key. Needs: A Google Play developer account.
+- **Idea on its own:** sound. The TWA and assetlinks mechanism is Google's documented route and the listed rules match it.
+- **How it would be done:** Serve a PWA over HTTPS with a valid manifest, run Bubblewrap init and build, and generate the signing key once. Publish assetlinks.json with the Play app signing SHA-256, not the upload key. Upload to a test track first, then production. A person still has to run the Play Console account, testers and review.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Bubblewrap https://github.com/GoogleChromeLabs/bubblewrap (Builds the TWA Android bundle from a PWA.)
+- **Missing:** A Play developer account and a PWA worth shipping.
+- **Field Notes line:** A PWA gets into the Play Store as a Trusted Web Activity, and most rejections come from three key and version rules.
+
+### H-0147 Wikidata Search Traces: A Dataset for Training Knowledge Graph Search Agents
+2026-10-06, arxiv, https://arxiv.org/abs/2610.06650
+
+- **Mechanism:** Multi-hop questions are built on a frozen Wikidata snapshot by replacing a named entity with nested conditions, checking after each expansion that the target stays unique and every condition is needed. A recursive harness lets the model batch graph calls, keep results in persistent Python state and read selected evidence through sub-calls, instead of pasting graph results into context. The paper releases 10,235 solving traces.
+- **Claim:** The harness lifts correct answers from 49 to 61 for one model and from 60 to 74 for an open-weight Qwen3.8-27B on 100 questions.
+- **Testable:** yes. Using the public Wikidata SPARQL endpoint, can a three-condition nested question for one entity be built so the answer is still unique (count equals 1)? Queued as P-0066.
+- **Idea on its own:** sound. Keeping bulky retrieval results out of the context and querying them in code is a sound pattern, and the uniqueness check is a clean way to control question difficulty.
+- **How it would be done:** Take a starting entity and add conditions one at a time, each as a SPARQL clause, checking the result count stays at one. Build the harness as a Python session where the model calls search and fetch helpers, stores results in variables and only reads slices. Run an open-weight model locally on those questions and compare against direct tool calling. The traces dataset gives training or evaluation material. This could also feed a forecasting data source with structured facts.
+- **Stack already covers:** Ollama with a qwen model, Claude Code with skills and sub-agents
+- **To fetch:** Wikidata Query Service https://query.wikidata.org/ (Public SPARQL endpoint to check uniqueness of nested conditions.); SPARQLWrapper https://github.com/RDFLib/sparqlwrapper (Python client for SPARQL endpoints.)
+- **Field Notes line:** Agents answer Wikidata questions better when graph results live in Python state rather than the prompt; 10,235 traces are released.
+
+### H-0146 Vincentwei1021/mg-styles-15: 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch t
+2026-10-06, github, https://github.com/Vincentwei1021/mg-styles-15
+
+- **Mechanism:** Each film is a web page exposing window.renderAt(t) that draws any frame as a pure function of time, using SVG, Canvas, WebGL or Three.js. A renderer steps t, captures each frame in headless Chrome, and ffmpeg joins the frames with an audio track synthesised by a Python audio.py from instrument samples. Blender is used only for the 3D film, and two review rounds by an AI jury drove the revisions.
+- **Claim:** 15 ten-second motion-design films, each made by Claude writing code from one prompt, with scores from 7.57 to 8.21 out of 10 from an AI jury.
+- **Testable:** yes. Does one film's renderAt page plus the published render steps produce a 10-second mp4 with audio in under 20 minutes on this Mac? Queued as P-0065.
+- **Idea on its own:** sound. A deterministic frame-at-time page captured by a headless browser is the same pattern HyperFrames uses and is well proven.
+- **How it would be done:** Clone the repo, pick one style, and run its render script against headless Chrome and ffmpeg. Check that the frame count, duration and audio track match the README. The prompts are published, so the same prompt can be rerun in Claude Code to compare output. HyperFrames already covers composing and rendering, so the useful new part is the per-style prompt and the synthesised audio script.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **To fetch:** mg-styles-15 https://github.com/Vincentwei1021/mg-styles-15 (The prompts, style notes and source for 15 code-drawn film styles.); ffmpeg https://ffmpeg.org/ (Joins captured frames and the soundtrack.)
+- **Field Notes line:** Fifteen ten-second films drawn as code, each a page that renders any frame by time and captured by headless Chrome into ffmpeg, with the prompts published.
+
+### H-0144 A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build and its testing discipline
+2026-10-06, vault, https://www.skool.com/theadsclinic
+
+- **Mechanism:** A small daily-budget Meta lead-gen campaign for one local business: a single offer, a few creative variants and a lead form, with spend held low while the ads are tested one variable at a time. Winners are kept and losers cut on cost per lead, with lead quality checked by the client's own follow-up. The numbers come from the ads platform and the client's call or booking log.
+- **Claim:** A 10 to 30 pound a day test for one client can find a profitable lead-gen ad using a disciplined testing method.
+- **Testable:** no. It needs a client, an ad account and real spend. Needs: A client with budget, a Meta ad account and a payment method.
+- **Idea on its own:** needs-a-run. The method is standard and plausible, but only a live test shows whether the cost per lead works for a given trade.
+- **How it would be done:** Pick one client and one offer, then write three or four creative variants and one lead form. Run them at a flat daily budget, changing one variable at a time and logging cost per lead each day in a sheet. Cut the weakest variant at a pre-set spend threshold and keep the best. Someone has to ring the leads and report which ones were real, because no script covers that follow-up. Claude Code can draft copy, build the tracking sheet and summarise the daily export.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills), HyperFrames (video compose, captions, render)
+- **Missing:** A client with budget and someone to phone the leads and judge their quality.
+- **Field Notes line:** A small, strictly tested daily ad budget for one local client is the cheapest way to learn what a lead actually costs.
 
 ### H-0141 Niche paid community on owned material, borrowing only a proven model and price point
 2026-10-05, vault, 
@@ -1199,6 +1330,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0155 | 2026-10-06 | Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to | open | sound | yes |  |
+| H-0150 | 2026-10-06 | Buying real human UGC clips from marketplaces and reselling them inside a client retainer | open | sound | no |  |
+| H-0144 | 2026-10-06 | A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build a | open | needs-a-run | no |  |
 | H-0141 | 2026-10-05 | Niche paid community on owned material, borrowing only a proven model and price point | open | needs-a-run | no |  |
 | H-0136 | 2026-10-05 | GBP setup and audit checklist | open | sound | no |  |
 | H-0131 | 2026-10-05 | scroll-driven website skill | open | needs-a-run | yes |  |
@@ -1228,6 +1362,15 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0096 | 2026-10-06 | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Local speech recognition used by default. | H-0157 (Charlesmpc/by2kb: Forward videos from IM to transc) | shelf |
+| T-0095 | 2026-10-06 | [by2kb](https://github.com/Charlesmpc/by2kb) | The video to Markdown knowledge-base pipeline. | H-0157 (Charlesmpc/by2kb: Forward videos from IM to transc) | shelf |
+| T-0094 | 2026-10-06 | [OpenChart](https://github.com/longsurf-ai/openchart) | The app that wires alerts to an agent. | H-0156 (Show HN: OpenChart – OSS TradingView alternative w) | shelf |
+| T-0093 | 2026-10-06 | [Tea language](https://github.com/longsurf-ai/tea) | The indicator and alert-condition language OpenChart uses. | H-0156 (Show HN: OpenChart – OSS TradingView alternative w) | shelf |
+| T-0092 | 2026-10-06 | [3d-asset-server](https://github.com/arielshad/3d-asset-server) | The server, CLI and MCP tools themselves. | H-0152 (arielshad/3d-asset-server: 3d assets api and mcp) | shelf |
+| T-0091 | 2026-10-06 | [Bubblewrap](https://github.com/GoogleChromeLabs/bubblewrap) | Builds the TWA Android bundle from a PWA. | H-0149 (degordonstech/pwa2play (new in awesome-claude-code) | shelf |
+| T-0090 | 2026-10-06 | [SPARQLWrapper](https://github.com/RDFLib/sparqlwrapper) | Python client for SPARQL endpoints. | H-0147 (Wikidata Search Traces: A Dataset for Training Kno) | shelf |
+| T-0089 | 2026-10-06 | [Wikidata Query Service](https://query.wikidata.org/) | Public SPARQL endpoint to check uniqueness of nested conditions. | H-0147 (Wikidata Search Traces: A Dataset for Training Kno) | shelf |
+| T-0088 | 2026-10-06 | [mg-styles-15](https://github.com/Vincentwei1021/mg-styles-15) | The prompts, style notes and source for 15 code-drawn film styles. | H-0146 (Vincentwei1021/mg-styles-15: 15 motion design styl) | shelf |
 | T-0087 | 2026-10-05 | [Whop](https://whop.com) | Community and checkout hosting with a free tier. | H-0141 (Niche paid community on owned material, borrowing ) | shelf |
 | T-0086 | 2026-10-05 | [HazardWeaver](https://github.com/LabRAI/HazardWeaver) | Code released by the authors. | H-0139 (HazardWeaver: Scientific Route Selection for Hazar) | shelf |
 | T-0085 | 2026-10-05 | [mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio) | The editor and agent guide. | H-0138 (shinshin86/mesh-avatar-studio: Turn one illustrati) | shelf |
@@ -1320,6 +1463,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0154 | 2026-10-06 | youtube | [The Four Types of Memory Every AI Agent Needs](https://www.youtube.com/watch?v=BacJ6sEhqMo) | A generic explainer of agent memory types with no new mechanism for Proteus. |
+| H-0151 | 2026-10-06 | hn | [Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature) | An opinion piece on a product feature; the mechanism (model predicts next user prompt) is thin and disputed in the comme |
+| H-0148 | 2026-10-06 | youtube | [How Car Origin Affects Depreciation in the UAE? 🏎️](https://www.youtube.com/watch?v=1dbh-4kz8JA) | A spoken claim about UAE depreciation by origin with no method or data shown. |
+| H-0145 | 2026-10-06 | hn | [Engineer says Claude Code has made his job "soul-sucking"](https://www.techspot.com/news/113937-engineer-claude-code-has-made-job-soul-sucking.html) | Opinion and commentary about job satisfaction with no mechanism. |
 | H-0143 | 2026-10-05 | youtube | [Why Solana’s Momentum Is Only Going to Accelerate — MoonPay’s CEO Ivan Soto-Wrig](https://www.youtube.com/watch?v=IEpfsf8fmnU) | A CEO interview claim with no mechanism. |
 | H-0142 | 2026-10-05 | github | [VoltAgent/official-mcp-servers: A curated directory of 280+ official MCP servers](https://github.com/VoltAgent/official-mcp-servers) | A curated link list with no mechanism of its own. |
 | H-0140 | 2026-10-05 | youtube | [Why xG is Lying To Us 🤷‍♂️🤷‍♂️](https://www.youtube.com/watch?v=bZ2HeZe_NNw) | Pundit talk with no model or mechanism. |
