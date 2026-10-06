@@ -115,3 +115,18 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
 - Does a Dixon-Coles model refit weekly beat the closing line on the Championship more often than
   on the Premier League?
 - Which "AI builder" tools from this month's videos still run cleanly a month later?
+
+- **A Python 3.12 that lives inside the folder (2026-10-07).** The project venv is Homebrew 3.14, and
+  its realpath is outside PROTEUS; on 5 Oct markitdown fell back to 0.0.2 and on 7 Oct P-0065 could
+  not render audio. The real cause is 3.14 *on Intel*: numba, llvmlite, pedalboard and onnxruntime
+  ship 3.14 wheels for Apple silicon only. Fix: python-build-standalone 3.12.15 x86_64 unpacked to
+  `sandbox/python312/python/` (sha256 checked), venv at `sandbox/py312-venv/`. The hook realpaths the
+  interpreter, so the venv passes because its base is inside the folder too; checked with the hook's
+  own `bash_ok()`, which logs nothing. Use it as
+  `/Users/triton/PROTEUS/sandbox/py312-venv/bin/python3 <script>` and
+  `... -m pip install --only-binary :all: <pkg>`. On Intel, pin numba 0.62.1 / llvmlite 0.45.1
+  (last x86_64 wheels) and expect onnxruntime 1.23.2 at most. Proof: P-0065's audio rendered and muxed,
+  see `experiments/2026-10-07-P-0065/REPORT.md`. Both folders are gitignored (`sandbox/*/`); to rebuild,
+  fetch `cpython-3.12.15+20261003-x86_64-apple-darwin-install_only.tar.gz` from
+  astral-sh/python-build-standalone release 20261003 and run its `bin/python3.12 -m venv`.
+  **Open:** markitdown 0.1.8 resolves on this venv (dry run) and could replace the 0.0.2 install.
