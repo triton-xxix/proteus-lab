@@ -20,12 +20,16 @@ Differences from the vault hook, all deliberate:
     pre-registration proof). Remote names must start with "proteus-" or be omitted.
   - gh: repo/pages read verbs only; repo creation is an interactive-session job.
   - curl: allowed (API pulls). Redirection still refused; write results with the Write tool.
+  - ffmpeg/ffprobe, cp and one npm form (added 2026-10-07, see media_ok/cp_ok/npm_ok): every path
+    inside the folder, cp only between write roots, npm only into a sandbox/ prefix with
+    --ignore-scripts and a sandbox/ cache.
   - The vault's protect-vaults.py does not run here; the write roots make the vault unreachable.
 
 Test: python3 /Users/triton/PROTEUS/bin/test-hook.py
 """
 import json
 import os
+import re
 import sys
 import time
 
@@ -157,7 +161,9 @@ def deny(reason):
                             "prompt would hang the whole run. Do NOT retry this verbatim. Recompose "
                             "it from allowlisted pieces (absolute-path scripts under "
                             "/Users/triton/PROTEUS/; ls/cat/head/tail/grep/wc/jq/awk/curl; git "
-                            "add/commit/push; one command, no ';' '&&' '$()', no loops, no "
+                            "add/commit/push; ffmpeg/ffprobe/cp on absolute paths inside the folder; "
+                            "npm --prefix <sandbox/x> ci|install --ignore-scripts --cache "
+                            "<sandbox/.npm-cache>; one command, no ';' '&&' '$()', no loops, no "
                             "redirection), or do it with the Read/Write/Edit tools, or skip it and "
                             "note the skip in the run log.]")
 
@@ -295,6 +301,127 @@ def _scan(cmd):
     return segs, None
 
 
+# Added 2026-10-07. The 6 Oct nightly lost P-0065's frame grab (ffmpeg) and its evidence copy (cp)
+# to two denials, and npm being off the list blocked P-0021, P-0048, P-0056, P-0064 and the real
+# tools in P-0065 and P-0067. The charter already says "install and run anything inside sandbox/,
+# its own virtualenvs and node_modules"; these three let the shell do what the charter allows.
+SANDBOX = PROTEUS_ROOT + "sandbox/"
+MEDIA_CMDS = ("ffmpeg", "ffprobe")
+MEDIA_DENY_FLAGS = ("-dump_attachment",)        # writes files named by the input's own metadata
+_PROTOCOL = re.compile(r"[A-Za-z][A-Za-z0-9+.\-]*:")
+_RATIO = re.compile(r"[0-9.]+/[0-9.]+")         # -r 30000/1001, fps=1/2: not paths
+CP_FLAGS = re.compile(r"-[RrpnvfaPLH]+")        # no -i: it prompts, and a prompt hangs the run
+NPM_VERBS = ("ci", "install", "i")
+NPM_FLAGS = {"--ignore-scripts", "--no-audit", "--no-fund", "--no-save", "--save-exact",
+             "--omit=dev", "--omit=optional", "--legacy-peer-deps", "--no-package-lock",
+             "--prefer-offline", "--silent", "--quiet"}
+# Registry names only, optionally scoped and versioned. No git URLs, tarball URLs, file: paths or
+# npm: aliases, because those skip the registry's name and integrity checks.
+_NPM_SPEC = re.compile(r"(@[a-z0-9][a-z0-9._\-]*/)?[a-z0-9][a-z0-9._\-]*(@[A-Za-z0-9.^~<>=*|+\-]+)?")
+
+
+def media_ok(parts):
+    """ffmpeg/ffprobe: every path in the folder, no protocols but pipe:, cwd in the folder.
+
+    A token can be a plain path, an option value, or a filter string with paths inside it
+    (movie=/x, subtitles=/x, -progress /x), and reads and writes cannot be told apart from argv.
+    So every '/'-bearing piece of every token must be an absolute path under the folder, and
+    bare names (the output, -report, -passlogfile) land in the cwd, which must be the folder.
+    """
+    cwd = CTX.get("cwd")
+    if cwd and not _under_root(cwd):
+        return "%s writes bare names to the cwd, and the cwd %s is outside %s." % (parts[0], cwd, PROTEUS_ROOT)
+    for tok in parts[1:]:
+        if tok.split(":")[0] in MEDIA_DENY_FLAGS:      # -dump_attachment:t too
+            return "%s %s writes files named by the input; not allowed unattended." % (parts[0], tok)
+        if not tok.startswith("-") and _PROTOCOL.match(tok) and not tok.startswith("pipe:"):
+            return "%s protocol input/output (%s) is not allowed unattended; use a file under %s." % (parts[0], tok.split(":")[0], PROTEUS_ROOT)
+        for piece in re.split(r"[=,:;'\[\]]", tok):
+            if "/" not in piece or _RATIO.fullmatch(piece):
+                continue
+            if not _under_root(piece):
+                return "%s path %s must be absolute and inside %s." % (parts[0], piece, PROTEUS_ROOT)
+    return None
+
+
+def cp_ok(parts, roots):
+    """cp: plain flags, every source inside the write roots, the destination inside `roots`."""
+    args = parts[1:]
+    for a in args:
+        if a.startswith("-") and not CP_FLAGS.fullmatch(a):
+            return "cp flag %s is not allowed unattended (allowed: -R -r -p -n -v -f -a -P -L -H)." % a
+    paths = [a for a in args if not a.startswith("-")]
+    if len(paths) < 2:
+        return "cp needs a source and a destination."
+    for src in paths[:-1]:
+        if not any(_under(src, r) for r in WRITE_ROOTS):
+            return "cp source %s is outside the write roots (%s)." % (src, ", ".join(WRITE_ROOTS))
+    if not any(_under(paths[-1], r) for r in roots):
+        return "cp destination %s is outside %s." % (paths[-1], ", ".join(roots))
+    return None
+
+
+def npm_ok(parts):
+    """One npm form: an install into a sandbox/ project, lifecycle scripts off, cache in sandbox/.
+
+        npm --prefix /Users/triton/PROTEUS/sandbox/<x> ci --ignore-scripts --cache /Users/triton/PROTEUS/sandbox/.npm-cache
+        npm --prefix /Users/triton/PROTEUS/sandbox/<x> install --ignore-scripts --cache ... <name>[@version]
+
+    What --ignore-scripts buys: preinstall/install/postinstall/prepare do not run, which is the
+    route the self-spreading npm worms of 2025 used. What it does NOT buy: the code is still
+    unvetted, and the moment a script under sandbox/ requires it, it runs with full user rights,
+    no sandbox. A compromised version that does its work on import is untouched by this flag.
+    `ci` is preferred where a lockfile exists: it installs exactly the pinned versions and checks
+    their integrity hashes. The cache flag keeps ~/.npm (and npm's logs) out of it, so the write
+    roots hold.
+    """
+    args = parts[1:]
+    prefix = cache = verb = None
+    flags, specs = [], []
+    i = 0
+    while i < len(args):
+        a = args[i]
+        if a in ("--prefix", "--cache"):
+            if i + 1 >= len(args):
+                return "npm %s needs a value." % a
+            if a == "--prefix":
+                prefix = args[i + 1]
+            else:
+                cache = args[i + 1]
+            i += 2
+            continue
+        if a.startswith("--prefix="):
+            prefix = a.split("=", 1)[1]
+        elif a.startswith("--cache="):
+            cache = a.split("=", 1)[1]
+        elif a.startswith("-"):
+            flags.append(a)
+        elif verb is None:
+            verb = a
+        else:
+            specs.append(a)
+        i += 1
+    form = ("Allowed form: npm --prefix %s<x> ci|install --ignore-scripts --cache %s.npm-cache "
+            "[--no-audit --no-fund ...] [registry-name[@version] ...]." % (SANDBOX, SANDBOX))
+    if verb not in NPM_VERBS:
+        return "npm %s is not allowed unattended; only ci/install. %s" % (verb, form)
+    if prefix is None or not _under(prefix, SANDBOX) or _norm(prefix) == os.path.realpath(SANDBOX):
+        return "npm --prefix must be a project folder inside %s. %s" % (SANDBOX, form)
+    if cache is None or not _under(cache, SANDBOX):
+        return "npm --cache must be inside %s, or npm writes ~/.npm. %s" % (SANDBOX, form)
+    if "--ignore-scripts" not in flags:
+        return "npm install runs package lifecycle scripts unless --ignore-scripts is given. %s" % form
+    bad = [f for f in flags if f not in NPM_FLAGS]
+    if bad:
+        return "npm flag(s) %s not allowed unattended. %s" % (" ".join(bad), form)
+    if verb == "ci" and specs:
+        return "npm ci takes no package names; it installs the lockfile."
+    for s in specs:
+        if not _NPM_SPEC.fullmatch(s):
+            return "npm package %s is not a plain registry name; git, URL and file specs are not allowed unattended." % s
+    return None
+
+
 def bash_ok(cmd):
     """Return None if the command is safe to auto-allow, else the reason it is not."""
     segs, why = _scan(cmd)
@@ -335,6 +462,21 @@ def bash_ok(cmd):
                     return "gh %s %s is an interactive-session job." % (parts[1], parts[2])
                 continue
             return "gh is read-only here."
+        if head in MEDIA_CMDS:
+            why = media_ok(parts)
+            if why is not None:
+                return why
+            continue
+        if head == "cp":
+            why = cp_ok(parts, WRITE_ROOTS)
+            if why is not None:
+                return why
+            continue
+        if head == "npm":
+            why = npm_ok(parts)
+            if why is not None:
+                return why
+            continue
         if head in SAFE_CMDS:
             if head == "sed" and "-i" in parts:
                 return "sed -i edits in place; use the Edit tool."
@@ -457,6 +599,18 @@ def child_bash_extra(cmd):
             targets = [p for p in parts[1:] if not p.startswith("-")]
             if not all(any(_under(t, r) for r in CHILD_WRITE_ROOTS) for t in targets):
                 return "Sub-agents may %s only under %s." % (head, ", ".join(CHILD_WRITE_ROOTS))
+        if head == "cp":
+            why = cp_ok(parts, CHILD_WRITE_ROOTS)
+            if why is not None:
+                return "Sub-agents copy only into scratch: " + why
+        if head in MEDIA_CMDS:
+            # Which token is the output cannot be told from argv, so every path must be scratch:
+            # a child copies its input into sandbox/ first. Bare names still land in the cwd,
+            # which media_ok() has already held to the folder.
+            for t in parts[1:]:
+                for p in re.split(r"[=,:;'\[\]]", t):
+                    if p.startswith("/") and not any(_under(p, r) for r in CHILD_WRITE_ROOTS):
+                        return "Sub-agents run %s only on paths under %s." % (head, ", ".join(CHILD_WRITE_ROOTS))
     return None
 
 

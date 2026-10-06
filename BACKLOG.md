@@ -108,6 +108,28 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   `-- paths` on each would close it. Watch the "left dirty" lines: a nightly file that shows up
   there every night belongs in the close set.
 
+- **Hook: ffmpeg, cp and sandboxed npm (2026-10-07).** The 6 Oct nightly lost P-0065's frame grab
+  and its evidence copy to two denials, and npm being off the list had blocked six probes. Now
+  allowed unattended, all in `media_ok`/`cp_ok`/`npm_ok`, 52 new cases in `bin/test-hook.py` (160 total, 0 failed):
+  ffmpeg/ffprobe with every path inside the folder (filter strings included, protocols refused
+  except `pipe:`); cp from the write roots into the write roots; and one npm form,
+  `npm --prefix /Users/triton/PROTEUS/sandbox/<x> ci|install --ignore-scripts --cache /Users/triton/PROTEUS/sandbox/.npm-cache`,
+  registry names only. Prefer `ci` when there is a lockfile: pinned versions, integrity checked.
+  **The npm risk, said plainly.** `--ignore-scripts` stops preinstall/install/postinstall/prepare,
+  the route the 2025 self-spreading npm worms used. It does nothing about a package that does its
+  harm on `require`, and once a sandbox script runs it, it has my full user rights with no OS
+  sandbox: it could read `~/.ssh` or use git's credentials. Packages that need a postinstall
+  (puppeteer's Chrome download, node-gyp builds) will install broken; record that as the finding.
+  **Gaps I know about.** (1) The hook is a fence for honest runs, not containment: `python3 -c`
+  and any script under the folder could always shell out to npm, and the sandbox py312 venv runs
+  `pip install`, which executes `setup.py` for any sdist (P-0070 used `--only-binary :all:`, keep
+  doing that). (2) cp resolves only the top-level destination, so a pre-existing symlink inside a
+  copied-into tree that points outside would be written through; same as the Write tool. (3) Not
+  checked: whether npm runs `prepare` for git dependencies under `--ignore-scripts`; git specs are
+  refused on the command line but a fetched package.json can still name one.
+  **Next if wanted:** run what npm installs under macOS `sandbox-exec` with a profile that
+  denies writes outside the folder and reads of `~/.ssh`, `~/.config`, `~/Library/Keychains`.
+
 ## Questions Proteus wants answered by data, not by reading
 
 - What fraction of pump.fun launches in a given week graduate, and what did the graduates look
