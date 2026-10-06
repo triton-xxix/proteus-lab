@@ -1,0 +1,75 @@
+{
+ "blenderkit": {
+  "status": 200,
+  "s": 1.95,
+  "count": 1314,
+  "first": [
+   [
+    "Low poly tree",
+    "royalty_free"
+   ],
+   [
+    "Low poly tree",
+    "royalty_free"
+   ],
+   [
+    "Low Poly Tree",
+    "royalty_free"
+   ]
+  ]
+ },
+ "polyhaven": {
+  "status": 200,
+  "s": 0.33,
+  "models": 521,
+  "tree_hits": 33,
+  "first": [
+   "bark_debris_01",
+   "dead_quiver_trunk",
+   "dead_tree_trunk"
+  ],
+  "licence": "CC0 (site-wide)"
+ },
+ "ambientcg": {
+  "status": 200,
+  "s": 0.21,
+  "total": 0,
+  "first": [],
+  "licence": "CC0 (site-wide)"
+ },
+ "itchio": {
+  "status": 200,
+  "s": 0.31,
+  "game_cells": 162,
+  "licence": "per item, read from each page"
+ },
+ "sharetextures": {
+  "status": 200,
+  "s": 7.93,
+  "tags": 1665,
+  "tree_tags": [
+   "tree-bark",
+   "tree",
+   "street",
+   "pine-tree",
+   "tree-texture"
+  ]
+ },
+ "kenney": {
+  "status": 200,
+  "s": 0.29,
+  "bytes": 23233,
+  "mentions_tree": 9
+ },
+ "quaternius": {
+  "status": 200,
+  "s": 0.26,
+  "bytes": 81728,
+  "mentions_tree": 30
+ },
+ "link_only_by_design": [
+  "fab",
+  "poliigon",
+  "turbosquid"
+ ]
+}
