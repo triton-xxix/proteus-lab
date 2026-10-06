@@ -69,10 +69,12 @@ write the run log with the HALT line it logged, and release the marker. The hook
 add/commit/push and sub-agent spawns while the local HALT file exists, so a missed check costs a
 denial, not a side effect.
 
-`git -C /Users/triton/PROTEUS add -A` then
-`git -C /Users/triton/PROTEUS commit -m "nightly: pre-register YYYY-MM-DD"` (fill the date) then
-`git -C /Users/triton/PROTEUS push origin main`.
-The commit timestamp is the proof. If there is nothing to commit, say so in the run log and move on.
+`python3 /Users/triton/PROTEUS/bin/preregister.py pre --date YYYY-MM-DD` (fill the run's date).
+It commits and pushes only the desks' data files (`.csv`, `.json`, `.jsonl` under `grinder/`, `pitch/`,
+`exchange/`) and `state/runs/`, and writes one run-log line with the hash and every other dirty file it
+left alone. The commit timestamp is the proof, so it must hold nothing else: on 6 Oct `git add -A` swept
+an interactive session's experiment and Skool prompts into it. Never `git add -A` in this run. Files it
+left are the interactive session's to commit; name them in the run log and do not commit them yourself.
 Then, only after the push, `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py anchor` (records the market price beside each new call; it refuses an uncommitted call).
 
 ## 5. One Field Notes item
@@ -177,6 +179,6 @@ First `python3 /Users/triton/PROTEUS/bin/killcheck.py --log`. It judges every bo
 
 Then one improvement line. Every desk is meant to get better, and a tried idea that fails still counts. Each night pick one desk in rotation (Grinder, Pitch, exchange book, harvest, Lichess, the nightly itself) and write `- Improve (<desk>): what I tried or changed tonight, and what happened` into the run log, plus the same line under `## Improvements tried` in this week's Field Notes draft. If nothing was tried, the line says so and names the one thing to try tomorrow, which tomorrow's run then does. Re-run `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-06-grinder-fill-check/fillcheck.py` on Sundays as the Grinder's standing fill check.
 
-Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned, and one line per sub-agent if any ran (see Sub-agents). The probe loop has already written its own lines; do not repeat them. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh`, which rebuilds `HOME.md` (Luke's front page in the vault, from `bin/home.py`) with tonight's run log and probes and copies it over. Then, unless HALT, `git -C /Users/triton/PROTEUS add -A`, `git -C /Users/triton/PROTEUS commit -m "nightly: close YYYY-MM-DD"`, `git -C /Users/triton/PROTEUS push origin main`, so the anchors, games and run log are not left for tomorrow. Then release the marker.
+Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned, and one line per sub-agent if any ran (see Sub-agents). The probe loop has already written its own lines; do not repeat them. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh`, which rebuilds `HOME.md` (Luke's front page in the vault, from `bin/home.py`) with tonight's run log and probes and copies it over. Then `python3 /Users/triton/PROTEUS/bin/preregister.py close --date YYYY-MM-DD` (same date as step 4), so the anchors, games, run log, Field Notes draft, SEEN.md, research working files and any kill-check verdict in a desk's RULES.md are not left for tomorrow. It does nothing under HALT and leaves everything else dirty, as in step 4. Then release the marker.
 
 Time budget 90 minutes. Finishing imperfectly beats hanging perfectly. You never open a Flywheel card, never email anyone, never spend outside the charter, never touch XXIX.

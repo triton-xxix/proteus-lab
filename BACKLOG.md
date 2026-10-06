@@ -94,6 +94,20 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   is honestly empty. Register in `PROBES.md`. Not yet on the lab page: `build-lab.cjs` does not read
   `state/probes.json`; worth a Probes section once there are ten verdicts to show.
 
+- **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
+  `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's
+  `experiments/2026-10-06-grinder-fill-check/`, `field-notes/REFILL-SOURCES.md`, three Skool prompts,
+  `bin/probe.py` and the SKILL itself, and the close 749b9b6 carried a Skool survey. Every
+  pre-register commit since 3 Oct had something in it that was not a desk file. The commit is the
+  proof that predictions came first, so it now holds desk data only: `bin/preregister.py pre`
+  commits `.csv/.json/.jsonl` under `grinder/`, `pitch/`, `exchange/` plus `state/runs/`, by named
+  path, and lists everything else it left in the run log; `preregister.py close` adds games, the
+  draft, SEEN.md, research working files and desk RULES.md files. Both SKILL copies updated.
+  Still open: `harvest.py`, `narrative.py` and `skool.py` run `git commit` without a pathspec, so
+  anything staged by someone else would ride along with theirs. Nothing stages now, but a
+  `-- paths` on each would close it. Watch the "left dirty" lines: a nightly file that shows up
+  there every night belongs in the close set.
+
 ## Questions Proteus wants answered by data, not by reading
 
 - What fraction of pump.fun launches in a given week graduate, and what did the graduates look
