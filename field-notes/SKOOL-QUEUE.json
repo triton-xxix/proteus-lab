@@ -234,38 +234,44 @@
    "track": 1,
    "title": "AIS: Stop learning n8n, build n8n flows with CC, build anything with n8n and CC",
    "model": "sonnet",
-   "status": "queued",
+   "status": "assigned",
    "files": [
     "field-notes/skool/transcripts/ais-stop-learning-n8n.txt",
     "field-notes/skool/transcripts/ais-build-n8n-flows-with-cc.txt",
     "field-notes/skool/transcripts/ais-build-anything-n8n-cc.txt"
    ],
-   "why": "The n8n versus Claude Code argument from the side that teaches both."
+   "why": "The n8n versus Claude Code argument from the side that teaches both.",
+   "assigned": "2026-10-06",
+   "tries": 1
   },
   {
    "id": "S-16",
    "track": 4,
    "title": "Inside Agent-J+: 17 previews of the paid room",
    "model": "haiku",
-   "status": "queued",
+   "status": "assigned",
    "files": [
     "field-notes/skool/agentj-inside-plus.md"
    ],
-   "why": "Evidence for or against ever proposing the paid tier, nothing else. Already local."
+   "why": "Evidence for or against ever proposing the paid tier, nothing else. Already local.",
+   "assigned": "2026-10-06",
+   "tries": 1
   },
   {
    "id": "S-17",
    "track": 1,
    "title": "AIS small tools: iMessage, /computer, Remote Control, Google CLI",
    "model": "haiku",
-   "status": "queued",
+   "status": "assigned",
    "files": [
     "field-notes/skool/transcripts/ais-imessage.txt",
     "field-notes/skool/transcripts/ais-computer.txt",
     "field-notes/skool/transcripts/ais-remote-control.txt",
     "field-notes/skool/transcripts/ais-google-cli.txt"
    ],
-   "why": "Short videos, one cheap pass: anything Proteus could use tomorrow?"
+   "why": "Short videos, one cheap pass: anything Proteus could use tomorrow?",
+   "assigned": "2026-10-06",
+   "tries": 1
   },
   {
    "id": "S-18",

@@ -12,8 +12,58 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 135,
+  "count": 140,
   "threads": [
+    {
+      "date": "2026-10-06",
+      "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
+      "kind": "service",
+      "status": "adopted",
+      "theme": "Meta lead-gen funnel, local creative and geo-targeting rules for trades and dentists, with a Cornwall roof cleaner as the worked example",
+      "note": "Digest section 5; feeds the Neptune trades and dental lanes",
+      "where": "TRITON-CORE/Education/Courses/facebook-ads-clinic/DIGEST.md",
+      "url": "https://www.skool.com/theadsclinic"
+    },
+    {
+      "date": "2026-10-06",
+      "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
+      "kind": "service",
+      "status": "open",
+      "theme": "A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build and its testing discipline",
+      "note": "Needs a client with budget; the gas-engineering client is the candidate",
+      "where": "TRITON-CORE/Education/Courses/facebook-ads-clinic/DIGEST.md",
+      "url": "https://www.skool.com/theadsclinic"
+    },
+    {
+      "date": "2026-10-06",
+      "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "Scarcity lines, a templated testimonial and income-range calls to action in the course's own pages that would trip UK ad rules if copied",
+      "note": "Digest section 5",
+      "where": "TRITON-CORE/Education/Courses/facebook-ads-clinic/DIGEST.md",
+      "url": "https://www.skool.com/theadsclinic"
+    },
+    {
+      "date": "2026-10-06",
+      "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "A lesson teaching a conversion-tracking workaround for health-category ad accounts",
+      "note": "Against the platform's data rules; understand, never operate",
+      "where": "TRITON-CORE/Education/Courses/facebook-ads-clinic/DIGEST.md",
+      "url": "https://www.skool.com/theadsclinic"
+    },
+    {
+      "date": "2026-10-06",
+      "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "The ecommerce course and US high-ticket clinic case studies for Neptune",
+      "note": "No catalogue clients, US budgets",
+      "where": "TRITON-CORE/Education/Courses/facebook-ads-clinic/DIGEST.md",
+      "url": "https://www.skool.com/theadsclinic"
+    },
     {
       "date": "2026-10-05",
       "subject": "nateherkai/scroll-craft",
@@ -1302,8 +1352,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 27,
+  "links_count": 28,
   "links": [
+    {
+      "date": "2026-10-06",
+      "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
+      "kind": "service",
+      "where": "TRITON-CORE/Education/Courses/facebook-ads-clinic/DIGEST.md",
+      "url": "https://www.skool.com/theadsclinic",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-05",
       "subject": "nateherkai/scroll-craft",

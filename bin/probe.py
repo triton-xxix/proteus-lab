@@ -63,13 +63,19 @@ DECISIONS = ROOT + "state/unattended-decisions-%s.jsonl"
 NO_GIT = os.environ.get("PROBE_NO_GIT") == "1"
 
 VERDICTS = ("works", "broken", "blocked", "not-worth-it")
-SOURCE_RANK = {"backlog": 1, "intel": 2, "vault": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4}
+SOURCE_RANK = {"backlog": 1, "intel": 2, "vault": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4, "refill": 4}
 # vault: threads the vault split out of links Luke sent it, judged by the harvest child (2026-09-29). His own
 # links rank with the intelligence lane, above the automated harvest, below the backlog's own questions.
 DEFAULT_MAX_MINUTES = 60      # the loop's own ceiling, whatever the night's deadline says
 DEFAULT_MAX_CALLS = 150       # hook-logged tool calls, the token proxy
 DEFAULT_MAX_PROBES = 6
 MIN_PROBE_MINUTES = 8         # do not start a probe with less than this left
+# Refill (6 Oct 2026, Luke: "ran out of anything runnable" read as doing the bare minimum). With
+# `next --refill`, an empty or blocked queue with time left prints REFILL instead of STOP: go out to
+# field-notes/REFILL-SOURCES.md, learn one thing, queue one build with `add --source refill`, then
+# ask `next` again. At most REFILL_MAX a night, only with REFILL_MIN_LEFT minutes left.
+REFILL_MAX = 2
+REFILL_MIN_LEFT = 25
 INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is found
 NIGHTLY_LENGTH_MIN = 90
 NIGHTLY_RESERVE_MIN = 10      # kept back for the run log and the marker release
@@ -465,6 +471,15 @@ def cmd_next(a):
             print(bline)
             return
     fit, why, pool = runnable(st, left)
+    if not fit and getattr(a, "refill", False) and left >= REFILL_MIN_LEFT and lp.get("refills", 0) < REFILL_MAX:
+        lp["refills"] = lp.get("refills", 0) + 1
+        save_loop(lp)
+        print("REFILL %d of %d: nothing runnable in the queue and %d min left." % (lp["refills"], REFILL_MAX, left))
+        print("do: pick the next unused source in %sfield-notes/REFILL-SOURCES.md, pull it keyless, and queue ONE build" % ROOT)
+        print("    you can finish tonight: python3 %sbin/probe.py add \"...\" --source refill --est 25" % ROOT)
+        print("    then mark the source used in REFILL-SOURCES.md and run `probe.py next --refill` again.")
+        print(bline)
+        return
     if not fit:
         if not pool:
             return stop_loop(lp, "queue empty", st)
@@ -693,6 +708,7 @@ def main():
     s.add_argument("--probes", type=int, default=DEFAULT_MAX_PROBES)
     s.set_defaults(fn=cmd_start)
     s = sub.add_parser("next")
+    s.add_argument("--refill", action="store_true", help="on an empty or blocked queue with time left, print REFILL instead of STOP")
     s.set_defaults(fn=cmd_next)
     s = sub.add_parser("verdict")
     s.add_argument("id")
