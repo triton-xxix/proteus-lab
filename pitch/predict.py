@@ -19,6 +19,8 @@ import os
 import sys
 from datetime import datetime, timezone, timedelta
 
+import pandas as pd
+
 sys.path.insert(0, "/Users/triton/PROTEUS/pitch")
 import data as D  # noqa: E402
 import model as M  # noqa: E402
@@ -33,6 +35,7 @@ EDGE = 0.03
 KELLY_FRACTION = 0.25
 BANKROLL = 100.0
 FALLBACK_HOURS = 48
+FEED_GRACE_DAYS = 2  # football-data posts a weekend's results by Monday evening
 STAKES_ON = False    # RULES.md note 2026-09-24: shadow stakes until a model earns pool weight > 0 out of sample
 
 
@@ -61,6 +64,20 @@ def kelly(p, odds):
 
 def load_pred():
     return list(csv.DictReader(open(PRED))) if os.path.exists(PRED) else []
+
+
+def feed_status(as_of, fx, divs, now_local):
+    """Is a group's as_of the latest match played, or is the results feed behind? A fixture on the calendar
+    that kicked off after as_of and more than FEED_GRACE_DAYS ago is a result the feed owes us. Added
+    2026-10-07: two run logs read "as of 2026-09-20" as stale when no match had been played since."""
+    g = fx[fx["Div"].isin(divs) & fx["Kickoff"].notna()]
+    if g.empty:
+        return "unknown: no fixtures on file for this group"
+    owed = g[(g["Kickoff"].dt.normalize() > pd.Timestamp(as_of)) & (g["Kickoff"] < now_local - timedelta(days=FEED_GRACE_DAYS))]
+    if len(owed):
+        return "STALE: %d matches kicked off since as_of with no result, first %s" % (len(owed), owed["Kickoff"].min())
+    nxt = g[g["Kickoff"] >= now_local]["Kickoff"].min()
+    return "current, next match on calendar %s" % (nxt if nxt == nxt else "none on file")
 
 
 def main():
@@ -126,8 +143,10 @@ def main():
             w.writeheader()
         for r in new:
             w.writerow({k: r.get(k, "") for k in FIELDS})
+    now_local = pd.Timestamp(now).tz_convert("Europe/London").tz_localize(None)
     for g, pg in params.items():
-        print("model", g, "as of", pg["as_of"], "matches", pg["n_matches"], "converged", pg["converged"])
+        print("model", g, "as of", pg["as_of"], "matches", pg["n_matches"], "converged", pg["converged"],
+              "| feed", feed_status(pg["as_of"], fx, D.GROUPS[g], now_local))
     print("new predictions", len(new), "backed (shadow)" if not STAKES_ON else "backed", sum(1 for r in new if r["backed"]))
     if not new:
         fut = fx[fx["Kickoff"].notna() & (fx["Kickoff"] > now.replace(tzinfo=None))]
