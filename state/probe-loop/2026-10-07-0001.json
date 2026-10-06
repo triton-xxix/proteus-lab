@@ -13,6 +13,6 @@
   "P-0066",
   "P-0067"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-10-07T00:14:30+0100",
+ "stop_reason": "nothing runnable: 2 need something I do not have (P-0025: vim and neovim binaries (brew install if not already present, no accounts); P-0045: A small free model download from Hugging Face; Apple silicon); 2 wait on a date (P-0012 after 2026-10-22; P-0013 after 2026-10-20); 1 do not fit the 28 min left (P-0068 30 min)"
 }
