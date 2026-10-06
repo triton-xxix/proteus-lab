@@ -1,0 +1,140 @@
+{
+ "summary": {
+  "targets": 5,
+  "sparql_calls": 183,
+  "seconds": 237.1,
+  "unique_within_3": 5,
+  "nested_unique": 3
+ },
+ "results": [
+  {
+   "target": "Q7259",
+   "name": "Ada Lovelace",
+   "item_claims": 49,
+   "steps": [
+    {
+     "added": "P119=Church of St. Mary Magdalene, Hucknall",
+     "alone": 1,
+     "answers": 1
+    }
+   ],
+   "nested": {
+    "replaced": "P119=Church of St. Mary Magdalene, Hucknall",
+    "with": [
+     "P131=Hucknall",
+     "P131=Ashfield"
+    ],
+    "conditions": 3,
+    "answers": 1,
+    "target_in_answers": true,
+    "sample": [
+     "Q7259"
+    ]
+   }
+  },
+  {
+   "target": "Q7251",
+   "name": "Alan Turing",
+   "item_claims": 68,
+   "steps": [
+    {
+     "added": "P69=Hazlehurst Community Primary School",
+     "alone": 1,
+     "answers": 1
+    }
+   ],
+   "nested": {
+    "replaced": "P69=Hazlehurst Community Primary School",
+    "with": [
+     "P131=Bury",
+     "P17=United Kingdom"
+    ],
+    "conditions": 3,
+    "answers": 90,
+    "target_in_answers": true,
+    "sample": [
+     "Q7251",
+     "Q58235932",
+     "Q181875"
+    ]
+   }
+  },
+  {
+   "target": "Q42",
+   "name": "Douglas Adams",
+   "item_claims": 52,
+   "steps": [
+    {
+     "added": "P108=The Digital Village",
+     "alone": 1,
+     "answers": 1
+    }
+   ],
+   "nested": {
+    "replaced": "P108=The Digital Village",
+    "with": [
+     "P112=Douglas Adams",
+     "P159=Covent Garden"
+    ],
+    "conditions": 3,
+    "answers": 1,
+    "target_in_answers": true,
+    "sample": [
+     "Q42"
+    ]
+   }
+  },
+  {
+   "target": "Q7186",
+   "name": "Marie Curie",
+   "item_claims": 128,
+   "steps": [
+    {
+     "added": "P101=polonium",
+     "alone": 1,
+     "answers": 1
+    }
+   ],
+   "nested": {
+    "replaced": "P101=polonium",
+    "with": [
+     "P138=Poland",
+     "P1889=Element 84"
+    ],
+    "conditions": 3,
+    "answers": 1,
+    "target_in_answers": true,
+    "sample": [
+     "Q7186"
+    ]
+   }
+  },
+  {
+   "target": "Q80",
+   "name": "Tim Berners-Lee",
+   "item_claims": 102,
+   "steps": [
+    {
+     "added": "P108=School of Electronics and Computer Science, University of Southampton",
+     "alone": 1,
+     "answers": 1
+    }
+   ],
+   "nested": {
+    "replaced": "P108=School of Electronics and Computer Science, University of Southampton",
+    "with": [
+     "P131=Southampton",
+     "P17=United Kingdom"
+    ],
+    "conditions": 3,
+    "answers": 342,
+    "target_in_answers": false,
+    "sample": [
+     "Q56191799",
+     "Q125217735",
+     "Q264585"
+    ]
+   }
+  }
+ ]
+}

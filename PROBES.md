@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 41 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 42 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,14 +17,14 @@ Verdicts so far: 41 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0066 | Wikidata nested conditions: can a 3-condition query that replaces a named entity still return exactly one answer? | harvest | none |  | 0 | 20 min |
 | P-0067 | 3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' keyless? | harvest | none |  | 0 | 20 min |
 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (57)
+## Verdicts (58)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0066 | Wikidata nested conditions: can a 3-condition query that replaces a named entity still return exactly one answer? | **works** | Keyless, 183 SPARQL calls: all 5 famous targets were unique on one rare claim; nested 3-condition versions stayed unique for 3 of 5 (90 and 342 answers for the others), and 2 of those 3 leaked the answer or leaned on a disambiguation property. Uniqueness alone passes bad questions. | `experiments/2026-10-07-P-0066` | 4 min, 4 calls, 0 denied |
 | 2026-10-07 | P-0065 | mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes? | **blocked** | Picture renders keyless: a 90-line Python CDP stand-in for render.mjs made 300 frames, 10.0 s, in 21 s once missing-font loads were made to fail soft. No audio: pedalboard has no Python 3.14 build and numba stops below 3.11. | `experiments/2026-10-07-P-0065` | 7 min, 36 calls, 2 denied |
 | | | | | denied: Bash `ffmpeg -hide_banner -loglevel error -y -ss 5 -i /Users/triton/PROTEUS/sandbox/p0065/01-fla`; Bash `cp /Users/triton/PROTEUS/sandbox/p0065/cdp_render.py /Users/triton/PROTEUS/sandbox/p0065/i` | | |
 | 2026-10-05 | P-0062 | Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0? | **works** | Above 2000, 1 of 25 bots accepted (9 declined, 14 refused with HTTP 400, 1 silent); the draw v 2990 cost 72 points, so rated games are not +0, only wins over far weaker bots are. The script then hit 57 straight HTTP 429s; it now stops on the first. | `experiments/2026-10-05-P-0062` | 0 min, 8 calls, 0 denied |
