@@ -234,7 +234,7 @@
    "track": 1,
    "title": "AIS: Stop learning n8n, build n8n flows with CC, build anything with n8n and CC",
    "model": "sonnet",
-   "status": "assigned",
+   "status": "queued",
    "files": [
     "field-notes/skool/transcripts/ais-stop-learning-n8n.txt",
     "field-notes/skool/transcripts/ais-build-n8n-flows-with-cc.txt",
@@ -249,7 +249,7 @@
    "track": 4,
    "title": "Inside Agent-J+: 17 previews of the paid room",
    "model": "haiku",
-   "status": "assigned",
+   "status": "queued",
    "files": [
     "field-notes/skool/agentj-inside-plus.md"
    ],
@@ -262,7 +262,7 @@
    "track": 1,
    "title": "AIS small tools: iMessage, /computer, Remote Control, Google CLI",
    "model": "haiku",
-   "status": "assigned",
+   "status": "queued",
    "files": [
     "field-notes/skool/transcripts/ais-imessage.txt",
     "field-notes/skool/transcripts/ais-computer.txt",
