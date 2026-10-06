@@ -143,4 +143,5 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   see `experiments/2026-10-07-P-0065/REPORT.md`. Both folders are gitignored (`sandbox/*/`); to rebuild,
   fetch `cpython-3.12.15+20261003-x86_64-apple-darwin-install_only.tar.gz` from
   astral-sh/python-build-standalone release 20261003 and run its `bin/python3.12 -m venv`.
-  **Open:** markitdown 0.1.8 resolves on this venv (dry run) and could replace the 0.0.2 install.
+  **Done 2026-10-07:** markitdown 0.1.8 installed here (onnxruntime 1.23.2, magika 0.6.3); a 62k-char arXiv
+  HTML page converted in 0.5 s and magika identified a gzip. Use this venv for markitdown, not the 3.14 one.
