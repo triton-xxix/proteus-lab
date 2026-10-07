@@ -6,7 +6,7 @@ number. The point is the word: KILL, KEEP, CHANGE or RUNNING, said out loud ever
 Read-only. `--log` appends the lines to today's run log.
 
 Books: the graduation book (closed, G1) and G2 (grinder/graduates/RULES.md), the judgement book's
-anchored and blind columns (PASS-MARKS.md), the exchange book (exchange/RULES.md). The Grinder and the Pitch are judged at the week-8
+anchored and blind columns (PASS-MARKS.md), the exchange book (exchange/RULES.md), the systems book (systems/RULES.md). The Grinder and the Pitch are judged at the week-8
 review by bin/review.py, which has no nightly kill line to check.
 """
 import csv
@@ -93,12 +93,23 @@ def exchange():
     return f"Exchange book: {word}. {len(rows)} calls, {n} settled, me minus market {m:+.4f} (KILL at +0.020, KEEP at 0.000)"
 
 
+def systems():
+    """The systems book (systems/RULES.md, 7 Oct 2026). Its marks live beside its data in systems.py."""
+    sys.path.insert(0, str(ROOT / "systems"))
+    try:
+        import systems as book
+        return book.verdict()
+    except Exception as e:
+        return f"Systems book: could not judge ({type(e).__name__}: {e})"
+
+
 def main():
     rows = [json.loads(l) for l in open(ROOT / "grinder/graduates/closed.jsonl")]
     lines = [grad(rows, "Graduation book G1", 5000, 0, closed_word="KILL"),
              grad(rows, "Graduation book G2 (liq >= $50k, from 3 Oct 12:00Z)", 50000, G2_FROM)]
     lines += judgement()
     lines.append(exchange())
+    lines.append(systems())
     for l in lines:
         print(l)
     if "--log" in sys.argv:

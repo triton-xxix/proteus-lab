@@ -9,7 +9,7 @@ experiment, REFILL-SOURCES.md and three Skool prompts into "nightly: pre-registe
 survey into the close. The pre-register commit is the proof that predictions came before outcomes,
 so it now holds desk data only:
 
-  pre    data files (.csv .json .jsonl) under grinder/, pitch/, exchange/, plus state/runs/*.md
+  pre    data files (.csv .json .jsonl) under grinder/, pitch/, exchange/, systems/, plus state/runs/*.md
   close  the pre set, plus games/, field-notes/drafts/, field-notes/SEEN.md, the research desk's
          working files (state/research/, state/agents/research/; narrative.py commits only the copy),
          field-notes/vault-threads.json and the desks' RULES.md files (kill-check verdicts)
@@ -26,7 +26,7 @@ from datetime import datetime
 
 ROOT = "/Users/triton/PROTEUS"
 HALT = ROOT + "/HALT"
-DESKS = ("grinder/", "pitch/", "exchange/")
+DESKS = ("grinder/", "pitch/", "exchange/", "systems/")  # systems/ added 7 Oct 2026 (P-0083)
 DATA_EXT = (".csv", ".json", ".jsonl")
 CLOSE_PREFIXES = ("games/", "field-notes/drafts/", "state/research/", "state/agents/research/")
 CLOSE_FILES = ("field-notes/SEEN.md", "field-notes/vault-threads.json")

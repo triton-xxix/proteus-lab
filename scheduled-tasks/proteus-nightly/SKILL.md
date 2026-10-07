@@ -1,6 +1,6 @@
 ---
 name: proteus-nightly
-description: 23:15 nightly Proteus expedition. Pulls data for the Grinder and the Pitch, updates and commits both paper ledgers, adds one Field Notes item, runs the harvest (keyless pull, one Sonnet child judges, testable items queued as probes), reads up to two Skool groups on lesser-model children, reports the graduation book, pulls API-Football fixtures, runs the research desk (per-token X, Reddit, Telegram and paid-promotion signals, a nightly narrative digest), then runs the probe loop (one probe to a verdict at a time, each committed, until the budget is spent, refilling an empty queue from free sources up to twice), writes one improvement line and a run log. Writes only under /Users/triton/PROTEUS and the vault mirror folder. Sends nothing.
+description: 23:15 nightly Proteus expedition. Pulls data for the Grinder and the Pitch, updates and commits both paper ledgers and the systems book, adds one Field Notes item, runs the harvest (keyless pull, one Sonnet child judges, testable items queued as probes), reads up to two Skool groups on lesser-model children, reports the graduation book, pulls API-Football fixtures, runs the research desk (per-token X, Reddit, Telegram and paid-promotion signals, a nightly narrative digest), then runs the probe loop (one probe to a verdict at a time, each committed, until the budget is spent, refilling an empty queue from free sources up to twice), writes one improvement line and a run log. Writes only under /Users/triton/PROTEUS and the vault mirror folder. Sends nothing.
 ---
 
 You are Proteus. Working directory: `/Users/triton/PROTEUS`. Read `/Users/triton/PROTEUS/CLAUDE.md` and `/Users/triton/PROTEUS/CHARTER.md` first. Do not read anything from the OBSIDIAN vault outside `/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/`. Do not load Luke's memory index or knowledge pack.
@@ -60,6 +60,11 @@ The exchange book (rules `/Users/triton/PROTEUS/exchange/RULES.md`): Smarkets po
 2. Up to **two blind calls**: `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py markets --days 120` lists open markets by name with no prices. Pick markets where public sources (news, polls, official data; WebSearch is fine) let you form a real view. Do NOT open `exchange/SNAPSHOTS.csv`, the Smarkets site or any price for that market first. Then `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py call MARKET CONTRACT P 'one-line reason'`. No view, no call: skipping is fine.
 3. `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot` (every open market's price, the public history). The calls are committed in step 4 and anchored after it.
 
+The systems book (rules `/Users/triton/PROTEUS/systems/RULES.md`, from 7 Oct 2026): RSI(5) dip-buying on nine index ETFs, paper only, fully mechanical, no judgement calls.
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/systems/systems.py update` (logs tonight's signal row per market and last night's open fills; append-only, so never edit `SIGNALS.csv` or `EVENTS.csv` by hand) then
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/systems/systems.py score`.
+One run-log line: any buy or sell signals tonight, open positions, and the score's last line. A market whose fetch failed logs nothing and is caught up the next night; say so. The signals must be in step 4's commit, which lands before the 14:30 UK open; that commit is the proof for the next-open fills.
+
 ## 4. Commit the pre-registrations
 
 First `python3 /Users/triton/PROTEUS/bin/halt-check.py` again. Luke can pull the kill switch from his
@@ -71,7 +76,7 @@ denial, not a side effect.
 
 `python3 /Users/triton/PROTEUS/bin/preregister.py pre --date YYYY-MM-DD` (fill the run's date).
 It commits and pushes only the desks' data files (`.csv`, `.json`, `.jsonl` under `grinder/`, `pitch/`,
-`exchange/`) and `state/runs/`, and writes one run-log line with the hash and every other dirty file it
+`exchange/`, `systems/`) and `state/runs/`, and writes one run-log line with the hash and every other dirty file it
 left alone. The commit timestamp is the proof, so it must hold nothing else: on 6 Oct `git add -A` swept
 an interactive session's experiment and Skool prompts into it. Never `git add -A` in this run. Files it
 left are the interactive session's to commit; name them in the run log and do not commit them yourself.
@@ -175,9 +180,9 @@ Stop early with `python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."`
 
 ## 7. Kill check, run log and release
 
-First `python3 /Users/triton/PROTEUS/bin/killcheck.py --log`. It judges every book with a pre-registered kill line (graduation G1 and G2, the judgement book's anchored and blind columns, the exchange book) and appends one line to the run log. Any book that reads KILL or KEEP for the first time leads the run log and gets a dated verdict paragraph in its rules file tonight, and a line in this week's Field Notes draft. On 3 Oct the graduation book was found three days past its KILL line because the nightly printed the number and never compared it; this step is why.
+First `python3 /Users/triton/PROTEUS/bin/killcheck.py --log`. It judges every book with a pre-registered kill line (graduation G1 and G2, the judgement book's anchored and blind columns, the exchange book, the systems book) and appends one line to the run log. Any book that reads KILL or KEEP for the first time leads the run log and gets a dated verdict paragraph in its rules file tonight, and a line in this week's Field Notes draft. On 3 Oct the graduation book was found three days past its KILL line because the nightly printed the number and never compared it; this step is why.
 
-Then one improvement line. Every desk is meant to get better, and a tried idea that fails still counts. Each night pick one desk in rotation (Grinder, Pitch, exchange book, harvest, Lichess, the nightly itself) and write `- Improve (<desk>): what I tried or changed tonight, and what happened` into the run log, plus the same line under `## Improvements tried` in this week's Field Notes draft. If nothing was tried, the line says so and names the one thing to try tomorrow, which tomorrow's run then does. Re-run `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-06-grinder-fill-check/fillcheck.py` on Sundays as the Grinder's standing fill check.
+Then one improvement line. Every desk is meant to get better, and a tried idea that fails still counts. Each night pick one desk in rotation (Grinder, Pitch, exchange book, systems book, harvest, Lichess, the nightly itself) and write `- Improve (<desk>): what I tried or changed tonight, and what happened` into the run log, plus the same line under `## Improvements tried` in this week's Field Notes draft. If nothing was tried, the line says so and names the one thing to try tomorrow, which tomorrow's run then does. Re-run `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-06-grinder-fill-check/fillcheck.py` on Sundays as the Grinder's standing fill check.
 
 Append at most 15 lines to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`: what was pulled, what was committed, what was denied (read `/Users/triton/PROTEUS/state/unattended-decisions-YYYY-MM-DD.jsonl`), what was learned, and one line per sub-agent if any ran (see Sub-agents). The probe loop has already written its own lines; do not repeat them. Then `bash /Users/triton/PROTEUS/bin/mirror-vault.sh`, which rebuilds `HOME.md` (Luke's front page in the vault, from `bin/home.py`) with tonight's run log and probes and copies it over. Then `python3 /Users/triton/PROTEUS/bin/preregister.py close --date YYYY-MM-DD` (same date as step 4), so the anchors, games, run log, Field Notes draft, SEEN.md, research working files and any kill-check verdict in a desk's RULES.md are not left for tomorrow. It does nothing under HALT and leaves everything else dirty, as in step 4. Then release the marker.
 

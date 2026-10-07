@@ -138,29 +138,41 @@ def pf(rets, start):
 # Each returns an array of daily strategy log returns, index t = return earned over bar t.
 
 @njit(cache=True)
-def ma_filter_rets(o, c, n):
+def ma_filter_rp(o, c, n):
     """QS 1: close above SMA(n) -> long from next open; close below -> flat from next open."""
     m = sma(c, n)
     rets = np.zeros(c.size)
+    tid = np.zeros(c.size, dtype=np.int64)
     pos = 0
+    k = 0
     for t in range(c.size - 1):
         rets[t] = pos * (np.log(o[t + 1]) - np.log(o[t]))
+        tid[t] = k if pos else 0
         if not np.isnan(m[t]):
             if c[t] > m[t]:
+                if pos == 0:
+                    k += 1
                 pos = 1
             elif c[t] < m[t]:
                 pos = 0
-    return rets
+    return rets, tid
 
 
 @njit(cache=True)
-def rsi5_rets(c, variant):
+def ma_filter_rets(o, c, n):
+    return ma_filter_rp(o, c, n)[0]
+
+
+@njit(cache=True)
+def rsi5_rp(c, variant):
     """QS 2: SPY above SMA200, RSI(5)<30 -> buy at the close; RSI(5)>50 -> sell at the close.
     variant 1 simple, 2 adds RSI down three sessions running, 3 adds RSI three sessions ago < 60."""
     r = rsi_wilder(c, 5)
     m = sma(c, 200)
     rets = np.zeros(c.size)
+    tid = np.zeros(c.size, dtype=np.int64)
     pos = 0
+    k = 0
     for t in range(c.size - 1):
         if pos == 1:
             if r[t] > 50:
@@ -173,28 +185,40 @@ def rsi5_rets(c, variant):
                 ok = ok and r[t - 3] < 60
             if ok:
                 pos = 1
+                k += 1
         rets[t + 1] = pos * (np.log(c[t + 1]) - np.log(c[t]))
-    return rets
+        tid[t + 1] = k if pos else 0
+    return rets, tid
 
 
 @njit(cache=True)
-def rsi2_rets(o, h, c, thr, exit_kind):
+def rsi5_rets(c, variant):
+    return rsi5_rp(c, variant)[0]
+
+
+@njit(cache=True)
+def rsi2_rp(o, h, c, thr, exit_kind):
     """QS 3: SPY above SMA200 and RSI(2) < thr at the close -> buy next open. Exit candidates,
     because the video does not say: 0 close above yesterday's high, 1 RSI(2) > 50, 2 RSI(2) > 70,
     3 five-day hold; all exit at the close."""
     r = rsi_wilder(c, 2)
     m = sma(c, 200)
     rets = np.zeros(c.size)
+    tid = np.zeros(c.size, dtype=np.int64)
     state = 0          # 0 flat, 1 entry pending for next open, 2 long
     held = 0
+    k = 0
     for t in range(1, c.size):
         if state == 1:
             rets[t] = np.log(c[t]) - np.log(o[t])
             state = 2
             held = 1
+            k += 1
+            tid[t] = k
         elif state == 2:
             rets[t] = np.log(c[t]) - np.log(c[t - 1])
             held += 1
+            tid[t] = k
         if state == 2:
             out = False
             if exit_kind == 0:
@@ -210,19 +234,27 @@ def rsi2_rets(o, h, c, thr, exit_kind):
         if state == 0 and not np.isnan(m[t]) and not np.isnan(r[t]):
             if c[t] > m[t] and r[t] < thr:
                 state = 1
-    return rets
+    return rets, tid
 
 
 @njit(cache=True)
-def davey_rets(o, c, long_sig, short_sig, atr, mult):
+def rsi2_rets(o, h, c, thr, exit_kind):
+    return rsi2_rp(o, h, c, thr, exit_kind)[0]
+
+
+@njit(cache=True)
+def davey_rp(o, c, long_sig, short_sig, atr, mult):
     """Kevin Davey's frame: enter next open on a signal, stop and reverse on the opposite signal,
     exit next open when open position profit at the close falls mult*ATR below its running max."""
     rets = np.zeros(c.size)
+    tid = np.zeros(c.size, dtype=np.int64)
     pos = 0
+    k = 0
     entry = 0.0
     maxp = 0.0
     for t in range(c.size - 1):
         rets[t] = pos * (np.log(o[t + 1]) - np.log(o[t]))
+        tid[t] = k if pos else 0
         new = pos
         if pos != 0 and not np.isnan(atr[t]):
             openp = pos * (c[t] - entry)
@@ -239,9 +271,13 @@ def davey_rets(o, c, long_sig, short_sig, atr, mult):
             if pos != 0:
                 entry = o[t + 1]
                 maxp = 0.0
-        elif long_sig[t] or short_sig[t]:
-            pass
-    return rets
+                k += 1
+    return rets, tid
+
+
+@njit(cache=True)
+def davey_rets(o, c, long_sig, short_sig, atr, mult):
+    return davey_rp(o, c, long_sig, short_sig, atr, mult)[0]
 
 
 @njit(cache=True)
@@ -327,15 +363,13 @@ def ma_sweep_best(o, c, start, lo, hi):
 
 
 @njit(cache=True)
-def count_entries(rets):
+def count_entries(tid):
     k = 0
-    inpos = False
-    for i in range(rets.size):
-        if rets[i] != 0 and not inpos:
+    last = 0
+    for i in range(tid.size):
+        if tid[i] != 0 and tid[i] != last:
             k += 1
-            inpos = True
-        elif rets[i] == 0:
-            inpos = False
+        last = tid[i]
     return k
 
 
@@ -344,8 +378,8 @@ def rsi2_sweep_best(o, h, c, start, exit_kind, min_trades):
     best = 0.0
     bt = -1
     for thr in range(1, 51):
-        rr = rsi2_rets(o, h, c, float(thr), exit_kind)
-        if count_entries(rr) < min_trades:
+        rr, tid = rsi2_rp(o, h, c, float(thr), exit_kind)
+        if count_entries(tid) < min_trades:
             continue
         v = pf(rr, start)
         if v > best:
@@ -356,28 +390,30 @@ def rsi2_sweep_best(o, h, c, start, exit_kind, min_trades):
 
 # ------------------------------------------------------------------ trade-level stats (python)
 
-def trades_from_rets(rets, index):
-    """Group consecutive non-zero bars into trades. Approximation: a trade that exits and re-enters
-    on adjacent bars merges, which slightly undercounts; flagged in the report where it matters."""
-    out = []
-    cur = None
-    for i, r in enumerate(rets):
-        if r != 0:
-            if cur is None:
-                cur = [i, 0.0]
-            cur[1] += r
-        elif cur is not None:
-            out.append((index[cur[0]], index[i - 1], cur[1]))
-            cur = None
-    if cur is not None:
-        out.append((index[cur[0]], index[len(rets) - 1], cur[1]))
-    return out
+def trades_from_rp(rp, index):
+    """Trades from the strategy's own trade ids (7 Oct 2026). The first version grouped runs of
+    non-zero daily returns, so a day the price closed unchanged split one trade into two; the
+    systems book's replay caught it. Returns (entry date, last date, summed log return)."""
+    rets, tid = rp
+    out = {}
+    order = []
+    for i in range(len(rets)):
+        k = int(tid[i])
+        if k == 0:
+            continue
+        if k not in out:
+            out[k] = [i, i, 0.0]
+            order.append(k)
+        out[k][1] = i
+        out[k][2] += rets[i]
+    return [(index[out[k][0]], index[out[k][1]], out[k][2]) for k in order]
 
 
-def stats(rets, index, start=0):
-    rets = np.asarray(rets)[start:]
+def stats(rp, index, start=0):
+    rets = np.asarray(rp[0])[start:]
+    tid = np.asarray(rp[1])[start:]
     idx = index[start:]
-    tr = trades_from_rets(rets, idx)
+    tr = trades_from_rp((rets, tid), idx)
     simple = np.array([np.expm1(t[2]) for t in tr]) if tr else np.array([])
     eq = np.exp(np.cumsum(rets))
     dd = 1 - eq / np.maximum.accumulate(eq)
@@ -392,7 +428,7 @@ def stats(rets, index, start=0):
         "growth_x": round(float(eq[-1]), 2),
         "cagr_pct": round(float((eq[-1] ** (1 / years) - 1) * 100), 2),
         "max_dd_pct": round(float(dd.max() * 100), 2),
-        "exposure_pct": round(float((rets != 0).mean() * 100), 1),
+        "exposure_pct": round(float((tid != 0).mean() * 100), 1),
         "bar_pf": round(float(pf(np.asarray(rets), 0)), 3),
     }
 
@@ -428,8 +464,8 @@ def main():
                     "220": {"growth_x": 9.52}, "225": {"growth_x": 9.31}, "250": {"growth_x": 7.84}}}
     for label, df in (("adjusted", spy), ("price_only", spy_raw)):
         o, c = df["open"].to_numpy(), df["close"].to_numpy()
-        t1[label] = {str(n): stats(ma_filter_rets(o, c, n), idx) for n in (200, 220, 222, 225, 250)}
-        growth = {n: stats(ma_filter_rets(o, c, n), idx)["growth_x"] for n in range(20, 301)}
+        t1[label] = {str(n): stats(ma_filter_rp(o, c, n), idx) for n in (200, 220, 222, 225, 250)}
+        growth = {n: stats(ma_filter_rp(o, c, n), idx)["growth_x"] for n in range(20, 301)}
         top = sorted(growth.items(), key=lambda kv: -kv[1])[:5]
         t1[label]["sweep_top5_growth"] = top
     real, p, med = mcpt(lambda o, h, l, c: pf(ma_filter_rets(o, c, 200), WARM), O, H, L, C, 0, N_PERM)
@@ -446,7 +482,7 @@ def main():
                     "triple": {"trades": 90, "win_rate": 88.9, "avg_trade_pct": 1.25, "trade_pf": 5.53, "growth_pct": 201.6,
                                "exposure_pct": 5.2}}}
     for v, name in ((1, "simple"), (2, "double"), (3, "triple")):
-        t2[name] = stats(rsi5_rets(C, v), idx)
+        t2[name] = stats(rsi5_rp(C, v), idx)
         real, p, med = mcpt(lambda o, h, l, c, v=v: pf(rsi5_rets(c, v), WARM), O, H, L, C, 0, N_PERM)
         t2[name]["mcpt"] = {"real_bar_pf": round(real, 3), "p": round(p, 4), "perm_median_pf": round(med, 3), "n": N_PERM}
     res["qs_rsi5_simple_double_triple"] = t2
@@ -457,7 +493,7 @@ def main():
                     "15": {"trade_pf": 2.34}, "30": {"trades": 613, "trade_pf": 1.84, "avg_trade_pct": 0.33}}}
     names = {0: "close_above_prev_high", 1: "rsi2_above_50", 2: "rsi2_above_70", 3: "five_day_hold"}
     for k, nm in names.items():
-        t3[nm] = {str(thr): stats(rsi2_rets(O, H, C, float(thr), k), idx) for thr in (1, 9, 15, 30)}
+        t3[nm] = {str(thr): stats(rsi2_rp(O, H, C, float(thr), k), idx) for thr in (1, 9, 15, 30)}
     # pick the exit whose trade counts sit closest to the published 13 / 233 / 613
     target = {"1": 13, "9": 233, "30": 613}
     err = {nm: sum(abs(t3[nm][th]["trades"] - n) / n for th, n in target.items()) for nm in names.values()}
@@ -482,13 +518,13 @@ def main():
         start = max(int(np.searchsorted(df.index.values, np.datetime64("2007-01-01"))), 300)
         atr = atr_wilder(h, l, c, 14)
         up, dn = golden_signals(c, 50, 200)
-        st = stats(davey_rets(o, c, up, dn, atr, 6.0), df.index, start)
+        st = stats(davey_rp(o, c, up, dn, atr, 6.0), df.index, start)
         real, p, med = mcpt(lambda o, h, l, c: golden_best(o, h, l, c, start)[0], o, h, l, c, start, N_PERM_OPT)
         st.update({"best_of_48_bar_pf": round(real, 3), "best_of_48_p": round(p, 4), "perm_median_pf": round(med, 3),
                    "from": str(df.index[start].date())})
         t4[s] = st
         up, dn = rsi_cross_signals(c, 10, 25.0)
-        st = stats(davey_rets(o, c, up, dn, atr, 6.0), df.index, start)
+        st = stats(davey_rp(o, c, up, dn, atr, 6.0), df.index, start)
         real, p, med = mcpt(lambda o, h, l, c: rsi_best(o, h, l, c, start)[0], o, h, l, c, start, N_PERM_OPT)
         st.update({"best_of_48_bar_pf": round(real, 3), "best_of_48_p": round(p, 4), "perm_median_pf": round(med, 3),
                    "from": str(df.index[start].date())})
@@ -498,6 +534,22 @@ def main():
                                             "markets": t4}
     res["davey_rsi_cross_daily_etfs"] = {"fixed": "RSI(10) over 25 / under 75, ATR(14) x6 trail", "grid": "RSI 5-20, threshold 15-45, ATR x3/6/9 (his 48)",
                                          "markets": t5}
+    # After publication: Connors put RSI(2) in print in 2008, so 2009 on is the out-of-sample test.
+    # Shuffles start in 2009 and leave the earlier bars real.
+    s09 = int(np.searchsorted(idx.values, np.datetime64("2009-01-01")))
+    post = {}
+    for name, rp_fn, fn in (
+            ("rsi2_lt9", lambda: rsi2_rp(O, H, C, 9.0, k_best), lambda o, h, l, c: rsi2_rets(o, h, c, 9.0, k_best)),
+            ("rsi2_lt30", lambda: rsi2_rp(O, H, C, 30.0, k_best), lambda o, h, l, c: rsi2_rets(o, h, c, 30.0, k_best)),
+            ("rsi5_simple", lambda: rsi5_rp(C, 1), lambda o, h, l, c: rsi5_rets(c, 1)),
+            ("rsi5_triple", lambda: rsi5_rp(C, 3), lambda o, h, l, c: rsi5_rets(c, 3)),
+            ("ma200", lambda: ma_filter_rp(O, C, 200), lambda o, h, l, c: ma_filter_rets(o, c, 200))):
+        st = stats(rp_fn(), idx, s09)
+        real, p, med = mcpt(lambda o, h, l, c, fn=fn: pf(fn(o, h, l, c), s09), O, H, L, C, s09, N_PERM, seed0=5001)
+        st["mcpt_2009_on"] = {"real_bar_pf": round(real, 3), "p": round(p, 4), "perm_median_pf": round(med, 3), "n": N_PERM}
+        post[name] = st
+    res["post_publication_2009_on"] = post
+    print("post-2009 done", round(time.time() - t0), "s", flush=True)
     res["runtime_s"] = round(time.time() - t0)
     res["data"] = {"source": "Yahoo chart endpoint, keyless, daily, OHLC scaled by adjclose/close", "spy_from": str(idx[0].date()),
                    "spy_to": str(idx[-1].date())}
