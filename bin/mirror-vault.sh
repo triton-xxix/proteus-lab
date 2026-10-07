@@ -43,6 +43,7 @@ copy "$SRC/field-notes/SEEN.md" "$DST/SEEN.md"
 copy "$SRC/TRACK-RECORD.md" "$DST/TRACK-RECORD.md"
 copy "$SRC/PROBES.md" "$DST/PROBES.md"
 /usr/bin/python3 "$SRC/bin/home.py" >/dev/null || echo "home.py failed; HOME.md not rebuilt" >&2
+/usr/bin/python3 "$SRC/bin/dash.py" >/dev/null || echo "dash.py failed; dashboard not rebuilt" >&2
 copy "$SRC/HOME.md" "$DST/HOME.md"
 copy "$SRC/field-notes/HARVEST.md" "$DST/HARVEST.md"
 copy "$SRC/USAGE.md" "$DST/USAGE.md"

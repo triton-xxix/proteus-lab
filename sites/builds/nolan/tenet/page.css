@@ -196,7 +196,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--sc-accent); out
   .folio__act { font-size: 0.74rem; }
   .folio__day { display: none; }
   .divider__modes { position: fixed; top: auto; bottom: 0.8rem; left: 50%; transform: translateX(-50%); }
-  .act__name--pin { top: 3rem; }
+  .act__name--pin { top: 3rem; padding-top: 0.6rem; }
   .divider__films { display: none; }
   .cols { grid-template-columns: 1fr; }
   .col--inv { flex-direction: column; }
@@ -204,9 +204,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--sc-accent); out
   .act--flow .col--fwd .step { grid-column: 1; grid-row: calc(var(--k) * 2 + 1); background: var(--tn-fwd-ground); padding-right: 1rem; }
   .act--flow .col--inv .step { grid-column: 1; grid-row: calc(var(--k) * 2 + 2); background: var(--tn-inv-ground); padding-left: 1rem; border-top: 0; }
   .act--resolve .cols { grid-template-columns: 1fr; background: none; }
-  .act--pin .cols { grid-template-rows: 1fr 1fr; }
+  .act--pin .cols { grid-template-rows: 1fr 1fr; align-items: stretch; background: linear-gradient(var(--tn-fwd-ground) 50%, var(--tn-inv-ground) 50%); }
+  .act--pin .stage { background: var(--sc-canvas); }
   .act--pin .col { height: auto; min-height: 0; padding-top: 1rem; padding-bottom: 1rem; }
-  .act--pin .col--fwd { padding-top: 5.4rem; }
+  .act--pin .col--fwd { padding-top: 5.8rem; }
   .act--pin .step__fig { display: none; }
   .act--pin .col--inv .step { transform: scaleY(-1); }
   .act--pin .step__body { font-size: 0.95rem; }

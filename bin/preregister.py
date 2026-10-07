@@ -29,7 +29,7 @@ HALT = ROOT + "/HALT"
 DESKS = ("grinder/", "pitch/", "exchange/", "systems/")  # systems/ added 7 Oct 2026 (P-0083)
 DATA_EXT = (".csv", ".json", ".jsonl")
 CLOSE_PREFIXES = ("games/", "field-notes/drafts/", "state/research/", "state/agents/research/")
-CLOSE_FILES = ("field-notes/SEEN.md", "field-notes/vault-threads.json")
+CLOSE_FILES = ("field-notes/SEEN.md", "field-notes/vault-threads.json", "docs/dash/payload.json")
 
 
 def git(args, check=True, timeout=120):
@@ -79,6 +79,12 @@ def main():
     if os.path.exists(HALT):
         print("HALT set: nothing staged, nothing committed")
         return 0
+    if a.mode == "close":
+        try:  # the private dashboard rides in the close commit; a dash fault never blocks the close
+            import dash
+            dash.build()
+        except Exception as e:
+            print("dash not rebuilt: %s" % type(e).__name__)
     paths = dirty()
     take = [p for p in paths if owned(p, a.mode)]
     left = [p for p in paths if not owned(p, a.mode)]

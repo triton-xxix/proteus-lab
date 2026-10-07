@@ -23,6 +23,12 @@ PY="$(command -v python3 || true)"
 [ -z "$PY" ] && { echo "python3 not found" >&2; exit 1; }
 WEEK="$(date '+%G-W%V')"
 SUBJECT="Proteus Field Notes $WEEK"
+# The emailed copy, and only the emailed copy, carries the private dashboard's link and passphrase
+# (field-notes/staging/ is gitignored; the committed note stays clean).
+STAGED="$ROOT/field-notes/staging/$WEEK-email.md"
+if "$PY" "$ROOT/bin/dash.py" --email-body "$BODY" "$STAGED" >/dev/null 2>&1 && [ -s "$STAGED" ]; then
+  BODY="$STAGED"
+fi
 if "$PY" "$SENDER" "$TO" "$SUBJECT" "$BODY" --html-report; then
   printf '%s sent Field Notes %s\n' "$(date '+%Y-%m-%d %H:%M')" "$WEEK" >> "$ROOT/state/sends.log"
   exit 0

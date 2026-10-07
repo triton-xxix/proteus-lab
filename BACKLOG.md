@@ -168,3 +168,18 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   **Done 2026-10-07:** markitdown 0.1.8 installed here (onnxruntime 1.23.2, magika 0.6.3); a 62k-char arXiv
   HTML page converted in 0.5 s and magika identified a gzip. Use this venv for markitdown. (0.0.2 lives only in the 5 Oct experiment venv
   `sandbox/markitdown/venv`; the main .venv has no markitdown, and nothing in bin/ or the desks calls it.)
+
+- **Nolan site and the dashboard (2026-10-07, Luke's "cool things" session).** Live: the Tenet
+  timeline (`sites/nolan/tenet/`, both orders) at triton-xxix.github.io/proteus-nolan; one film a night
+  from `bin/nolan.py` (step 5f); the private dashboard at proteus-lab/dash/ sealed by `bin/dash.py`.
+  **Open:** (1) `bin/site-verify.sh`, a wrapper that starts scroll-craft's serve.mjs, runs the three
+  shoots with cwd set to the build folder and stops the server, so the nightly can re-verify a film
+  page under the hook (the skill's scripts live outside PROTEUS and are denied unattended). (2) The
+  hero's pointer lean, one embodiment, desktop only. (3) A real phone: headless Chrome cannot see
+  Safari's sticky stages or touch; deploy scroll-craft's `references/device-diag.html` on the first
+  report. (4) A fully private dashboard: a claude.ai Artifact fetching `docs/dash/payload.json`
+  client-side would be private to Luke's login with no key at all, if the artifact sandbox allows
+  the fetch; one probe. (5) The index's themes map and career timeline fill in as films land; review
+  the first child digest (Memento, 7 Oct night) for theme vocabulary drift and still captions, which
+  the child writes blind. (6) The hook's `READ_ROOTS` is all of `/Users/triton/`: the dashboard's
+  privacy rests on the key never entering a commit (`.gitignore`), not on the hook.

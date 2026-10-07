@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Proteus, now</title>
+<meta name="theme-color" content="#0B0D11">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B0D11'/><circle cx='16' cy='16' r='7' fill='%23E8A23B'/></svg>">
+<style>
+  :root { --bg: #0B0D11; --panel: #13171E; --line: #1E242D; --ink: #EEF1F4; --soft: #9AA6B2; --accent: #E8A23B; --red: #C8463A; --green: #5BB88A; --blue: #3C9AB4; }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  a { color: var(--accent); text-underline-offset: 0.15em; }
+  main { max-width: 64rem; margin: 0 auto; padding: 1rem; }
+  h1 { font-size: 1.15rem; margin: 0; letter-spacing: -0.01em; display: flex; gap: 0.6rem; align-items: baseline; flex-wrap: wrap; }
+  h1 small { color: var(--soft); font-weight: 400; font-size: 0.82rem; }
+  h2 { font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soft); margin: 0 0 0.6rem; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 0.9rem 1rem; margin: 0.8rem 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 0.8rem; }
+  .grid section { margin: 0; }
+  pre, .md { white-space: pre-wrap; font: 13.5px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; margin: 0; color: var(--ink); }
+  .md { font-family: inherit; font-size: 0.92rem; }
+  .md b { color: var(--ink); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+  td, th { text-align: left; padding: 0.3rem 0.5rem 0.3rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--soft); font-weight: 500; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  .pill { display: inline-block; padding: 0.1rem 0.55rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; }
+  .pill--ok { background: #163626; color: var(--green); } .pill--bad { background: #3A1512; color: #F0A098; } .pill--on { background: #1B2E3A; color: #8BD0E6; } .pill--off { background: #1E242D; color: var(--soft); }
+  .k { color: var(--soft); }
+  .gate { max-width: 26rem; margin: 18vh auto 0; text-align: center; }
+  .gate input { width: 100%; font: 1.05rem ui-monospace, Menlo, monospace; padding: 0.7rem 0.8rem; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); letter-spacing: 0.04em; }
+  .gate button { margin-top: 0.7rem; padding: 0.6rem 1.2rem; border-radius: 6px; border: 0; background: var(--accent); color: #141008; font-weight: 600; font-size: 0.95rem; }
+  .gate p { color: var(--soft); font-size: 0.88rem; }
+  .err { color: #F0A098; }
+  .commits li { list-style: none; font-size: 0.86rem; padding: 0.15rem 0; border-bottom: 1px solid var(--line); }
+  .commits ul { margin: 0; padding: 0; }
+  .sha { font-family: ui-monospace, Menlo, monospace; color: var(--soft); margin-right: 0.4rem; }
+  .ago { color: var(--soft); font-size: 0.8rem; }
+  footer { color: var(--soft); font-size: 0.8rem; padding: 1rem 0 2rem; }
+  .hidden { display: none; }
+  @media (max-width: 600px) { main { padding: 0.7rem; } section { padding: 0.75rem; } }
+</style>
+</head>
+<body>
+<main>
+  <div id="gate" class="gate">
+    <h1>Proteus, now</h1>
+    <p>A private page. Type the passphrase from the Field Notes email, or open the link that carries it.</p>
+    <form id="form"><input id="pass" type="password" autocomplete="current-password" placeholder="passphrase" autofocus><br><button type="submit">Unlock</button></form>
+    <p id="err" class="err"></p>
+    <p>It is remembered on this device.</p>
+  </div>
+  <div id="app" class="hidden"></div>
+  <footer id="foot" class="hidden">Every number here is already readable in the public repository; the lock hides the assembled view, not secrets. Built from the committed files, sealed on Proteus's Mac, served by GitHub Pages.</footer>
+</main>
+<script>
+(function () {
+  'use strict';
+  var app = document.getElementById('app'), gate = document.getElementById('gate'), err = document.getElementById('err'), foot = document.getElementById('foot');
+  var payload = null, derived = null;
+
+  function b64(s) { var bin = atob(s), u = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u; }
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function ago(iso) { if (!iso) return ''; var ms = Date.now() - new Date(iso).getTime(); if (isNaN(ms)) return ''; var m = Math.round(ms / 60000); if (m < 1) return 'just now'; if (m < 60) return m + ' min ago'; var h = Math.round(m / 60); if (h < 48) return h + ' h ago'; return Math.round(h / 24) + ' d ago'; }
+  function md(text) { return esc(text).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\[\[([^\]]+)\]\]/g, '$1'); }
+
+  async function fetchPayload() {
+    var r = await fetch('payload.json?v=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error('payload ' + r.status);
+    payload = await r.json();
+    payload._served = r.headers.get('last-modified') || '';
+  }
+  async function deriveKey(pass, saltB64) {
+    var base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
+    return crypto.subtle.deriveKey({ name: 'PBKDF2', hash: 'SHA-256', salt: b64(saltB64), iterations: payload.iter }, base, { name: 'AES-GCM', length: 256 }, true, ['decrypt']);
+  }
+  async function decrypt(key) {
+    var pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(payload.iv) }, key, b64(payload.ct));
+    return JSON.parse(new TextDecoder().decode(pt));
+  }
+  async function cacheKey(key) {
+    try { var raw = await crypto.subtle.exportKey('raw', key); localStorage.setItem('proteus-dash:' + payload.salt, btoa(String.fromCharCode.apply(null, new Uint8Array(raw)))); } catch (e) {}
+  }
+  async function cachedKey() {
+    try { var s = localStorage.getItem('proteus-dash:' + payload.salt); if (!s) return null; return await crypto.subtle.importKey('raw', b64(s), { name: 'AES-GCM' }, true, ['decrypt']); } catch (e) { return null; }
+  }
+  function forget() { try { Object.keys(localStorage).forEach(function (k) { if (k.indexOf('proteus-dash:') === 0) localStorage.removeItem(k); }); } catch (e) {} }
+
+  function section(title, body) { return '<section><h2>' + esc(title) + '</h2>' + body + '</section>'; }
+  function render(d) {
+    var n = d.now || {}, p = d.probes || {}, lc = d.lichess || {}, ex = d.expedition || {};
+    var halt = n.halt ? '<span class="pill pill--bad">HALT SET</span>' : '<span class="pill pill--ok">kill switch clear</span>';
+    var live = n.marker && n.marker.live ? '<span class="pill pill--on">' + esc(n.marker.task) + ' running</span>' : '<span class="pill pill--off">no scheduled run live</span>';
+    var loop = n.loop && n.loop.started_at ? ('probe loop ' + (n.loop.stopped_at ? 'stopped ' + esc(n.loop.stop_reason || '') : 'open since ' + esc((n.loop.started_at || '').slice(11, 16))) + (n.loop.probes ? ', ' + n.loop.probes.length + ' probes' : '')) : '';
+    var html = '<h1>Proteus, now <small id="pulse">payload built ' + ago(d.built_at) + '</small></h1>';
+    html += section('Now', '<p>' + halt + ' ' + live + ' <span id="halt-live"></span></p>' + (loop ? '<p class="k">' + loop + '</p>' : '') + '<p class="k">Last push: <span id="lastpush">from the payload, ' + ago(d.built_at) + '</span></p>' + (n.run_log_tail ? '<pre>' + esc(n.run_log_file) + '\n' + esc(n.run_log_tail) + '</pre>' : ''));
+    var q = (p.queue || []).map(function (x) { return '<tr><td>' + esc(x.id) + '</td><td>' + esc(x.title) + '</td><td class="k">' + esc(x.after ? 'after ' + x.after : (x.needs ? 'needs ' + x.needs : 'ready')) + '</td></tr>'; }).join('');
+    var ip = (p.in_progress || []).map(function (x) { return '<li><b>' + esc(x.id) + '</b> ' + esc(x.title) + ' <span class="ago">since ' + esc(x.since || '') + '</span></li>'; }).join('');
+    var last = (p.last || []).map(function (x) { return '<tr><td>' + esc(x.id) + '</td><td><b>' + esc(x.verdict) + '</b></td><td class="k">' + esc(x.when) + '</td><td>' + esc(x.note) + '</td></tr>'; }).join('');
+    var tally = Object.keys(p.tally || {}).map(function (k) { return k + ' ' + p.tally[k]; }).join(', ') + (p.killed ? ', killed ' + p.killed : '');
+    html += section('Probes', '<p class="k">' + esc(tally) + '</p>' + (ip ? '<ul class="commits">' + ip + '</ul>' : '') + (q ? '<table><tr><th>Queue</th><th></th><th></th></tr>' + q + '</table>' : '<p class="k">queue empty</p>') + (last ? '<table style="margin-top:.6rem"><tr><th>Last verdicts</th><th></th><th></th><th></th></tr>' + last + '</table>' : ''));
+    html += '<div class="grid">';
+    html += section('Grinder', '<div class="md">' + md(d.desks.grinder) + '</div>');
+    html += section('Pitch and judgement', '<div class="md">' + md(d.desks.pitch) + '</div>' + (d.desks.jobs ? '<div class="md" style="margin-top:.5rem">' + md(d.desks.jobs) + '</div>' : ''));
+    html += section('Big Expedition', (ex.chosen ? '<p><b>' + esc(ex.chosen.title) + '</b>, ' + esc(ex.chosen.from) + ' to ' + esc(ex.chosen.to) + '</p>' : '<p class="k">none recorded</p>') + (ex.lines && ex.lines.length ? '<pre>' + esc(ex.lines.join('\n')) + '</pre>' : ''));
+    html += section('Lichess', '<p>' + esc(lc.games || 0) + ' games, ' + esc((lc.wdl || {}).win || 0) + ' W ' + esc((lc.wdl || {}).draw || 0) + ' D ' + esc((lc.wdl || {}).loss || 0) + ' L. Last rating ' + esc(lc.rating || '?') + ' (' + esc(lc.last || '') + ' v ' + esc(lc.opponent || '') + ' ' + esc(lc.opp_rating || '') + ')</p><p id="lichess-live" class="k">live rating: fetching</p>');
+    html += section('Money', '<div class="md">' + md(d.money) + '</div>');
+    html += section('Usage', '<pre>' + esc(d.usage) + '</pre>');
+    html += section('This week’s draft', '<div class="md">' + md(d.draft) + '</div>');
+    html += section('Backlog', '<ul class="commits">' + (d.backlog || []).map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') + '</ul>');
+    if (d.sites && d.sites.length) html += section('Things I made', d.sites.map(function (s) { return '<p><a href="' + esc(s.url) + '">' + esc(s.name) + '</a>: ' + esc(s.live) + ' of ' + esc(s.total) + ' live, updated ' + esc(s.updated) + '</p>'; }).join(''));
+    html += '</div>';
+    html += section('Last commits', '<ul class="commits" id="commits">' + (d.commits || []).map(function (c) { return '<li><span class="sha">' + esc(c.sha) + '</span>' + esc(c.msg) + ' <span class="ago">' + ago(c.when) + '</span></li>'; }).join('') + '</ul>');
+    html += section('Registers', '<p><a href="https://github.com/triton-xxix/proteus-lab/blob/main/PROBES.md">PROBES</a> · <a href="https://github.com/triton-xxix/proteus-lab/blob/main/BACKLOG.md">BACKLOG</a> · <a href="https://github.com/triton-xxix/proteus-lab/blob/main/SPEND.md">SPEND</a> · <a href="https://github.com/triton-xxix/proteus-lab/blob/main/TRACK-RECORD.md">TRACK-RECORD</a> · <a href="https://github.com/triton-xxix/proteus-lab/blob/main/USAGE.md">USAGE</a> · <a href="https://github.com/triton-xxix/proteus-lab/blob/main/CHARTER.md">CHARTER</a> · <a href="../">the lab page</a> · <a href="#" id="lock">lock this device</a></p>');
+    app.innerHTML = html;
+    document.getElementById('lock').addEventListener('click', function (e) { e.preventDefault(); forget(); location.reload(); });
+    app.classList.remove('hidden'); foot.classList.remove('hidden'); gate.classList.add('hidden');
+    liveBits();
+  }
+
+  var liveTimer = null;
+  async function liveBits() {
+    try {
+      var r = await fetch('https://api.github.com/repos/triton-xxix/proteus-lab/commits?per_page=10');
+      if (r.ok) {
+        var cs = await r.json();
+        var el = document.getElementById('lastpush');
+        if (cs.length) el.textContent = ago(cs[0].commit.committer.date) + ' (' + cs[0].sha.slice(0, 7) + ')';
+        var ul = document.getElementById('commits');
+        if (ul) ul.innerHTML = cs.map(function (c) { return '<li><span class="sha">' + esc(c.sha.slice(0, 7)) + '</span>' + esc(c.commit.message.split('\n')[0]) + ' <span class="ago">' + ago(c.commit.committer.date) + '</span></li>'; }).join('');
+      }
+      var i = await fetch('https://api.github.com/repos/triton-xxix/proteus-lab/issues?state=open&per_page=20');
+      if (i.ok) {
+        var issues = await i.json();
+        var halt = issues.filter(function (x) { return /^HALT/i.test(x.title) && x.user && x.user.login === 'triton-xxix'; });
+        document.getElementById('halt-live').innerHTML = halt.length ? '<span class="pill pill--bad">HALT issue open on GitHub</span>' : '';
+      }
+      var l = await fetch('https://lichess.org/api/user/tritonxxix');
+      if (l.ok) {
+        var u = await l.json();
+        var b = (u.perfs && u.perfs.blitz) || {};
+        document.getElementById('lichess-live').textContent = 'live: blitz ' + (b.rating || '?') + (b.prov ? '?' : '') + ', ' + (b.games || 0) + ' games, ' + (u.online ? 'online now' : 'offline') + (u.playing ? ', playing' : '');
+      }
+    } catch (e) { /* offline is fine */ }
+    clearTimeout(liveTimer);
+    liveTimer = setTimeout(function () { if (!document.hidden) liveBits(); }, 5 * 60 * 1000);
+  }
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && payload) liveBits(); });
+
+  async function unlock(pass) {
+    err.textContent = '';
+    try {
+      var key = await deriveKey(pass, payload.salt);
+      var data = await decrypt(key);
+      await cacheKey(key);
+      render(data);
+    } catch (e) {
+      forget();
+      err.textContent = 'Wrong passphrase.';
+    }
+  }
+
+  window.addEventListener('hashchange', function () { var m = location.hash.match(/#k=([^&]+)/); if (m && payload) { history.replaceState(null, '', location.pathname); unlock(decodeURIComponent(m[1])); } });
+  document.getElementById('form').addEventListener('submit', function (e) { e.preventDefault(); unlock(document.getElementById('pass').value.trim()); });
+
+  (async function start() {
+    try { await fetchPayload(); } catch (e) { err.textContent = 'No payload yet (' + e.message + ').'; return; }
+    var m = location.hash.match(/#k=([^&]+)/);
+    if (m) { history.replaceState(null, '', location.pathname); await unlock(decodeURIComponent(m[1])); if (!app.classList.contains('hidden')) return; }
+    var k = await cachedKey();
+    if (k) { try { render(await decrypt(k)); return; } catch (e) { forget(); } }
+  })();
+})();
+</script>
+</body>
+</html>

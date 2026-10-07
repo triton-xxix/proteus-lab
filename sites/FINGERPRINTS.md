@@ -63,3 +63,7 @@ If you want to see what a filled-in table looks like, and which shapes tend to
 collide, read `EXAMPLES.md` in the scroll-craft repository. Treat it as
 illustration only: those rows are somebody else's builds and they do **not**
 constrain yours.
+
+| tenet (sites/builds/nolan/tenet, 7 Oct 2026) | Split stage | The divider is the chrome: FORWARD and INVERTED labels, a folio (act, watch or world number, the day or "day unstated"), the mode toggle, a Films link; a top strip on phones | Two halves of one still (a bullet hole in glass), warm on the left and cold mirrored on the right, five planes each (plate, masked-portrait cutout, drawn bullet trace, sill), the title across the pivot | 8 acts, pin 1.3 / flow / pin 1.8 / flow / pin 2.0 / flow / pin 3.6 / flow 1.2, about 12.9vh | The collapse: the divider travels to the right edge over the last act, the inverted column clips away, an amber string draws across, the forward column holds the colophon | Inverted content enters against the scroll and the whole page re-sorts into world order through the turnstile toggle | Film stills, graded red and blue, no generated media | 4521 |
+
+- Taken by `tenet`: split stage; the divider-as-chrome with a mode toggle; the collapse close; against-the-scroll inverted content; a pinned peak where scroll is a literal clock; 8 acts at about 12.9vh.

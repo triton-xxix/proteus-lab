@@ -226,6 +226,17 @@ def git(args, check=True, timeout=120):
     return r.stdout.strip()
 
 
+def dash_paths():
+    """The private dashboard payload, rebuilt so it rides in this commit. A dash fault never loses a verdict."""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import dash
+        out = dash.build()
+        return [out] if out else []
+    except Exception:
+        return []
+
+
 def commit(paths, message):
     """Commit just these paths. Returns the short hash, or the reason nothing was committed."""
     if halted():
@@ -368,7 +379,7 @@ def stop_loop(lp, reason, st=None):
         hm(now()), reason, len(done), tally, used, ctext)
     save_loop(lp)
     run_log_append(lp, [line])
-    res = commit([loop_path(lp), lp["run_log"], STATE, REGISTER],
+    res = commit([loop_path(lp), lp["run_log"], STATE, REGISTER] + dash_paths(),
                  "probe loop %s: %d probe(s), stopped: %s" % (lp["date"], len(done), reason[:60]))
     print("STOP: " + reason)
     print(line[2:])
@@ -599,6 +610,7 @@ def cmd_verdict(a):
         day = n.strftime("%Y-%m-%d")
         run_log_append({"run_log": RUNS + day + ".md"}, lines)
         paths.append(RUNS + day + ".md")
+    paths += dash_paths()
     res = commit(paths, "probe %s: %s, %s" % (it["id"], it["verdict"], it["title"][:70]))
     print("%s: %s (%s)" % (it["id"], it["verdict"], cost_str(it)))
     if it["denied"]:

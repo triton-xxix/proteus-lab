@@ -51,6 +51,7 @@ From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run l
 
 `python3 /Users/triton/PROTEUS/bin/score.py --write` then `node /Users/triton/PROTEUS/audit/recompute.js --worktree` again (the scorer counts the note just written; without the rerun the page says one note fewer). If the second audit disagrees, the note gets the disagreement section before it is sent. Then
 `node /Users/triton/PROTEUS/bin/build-lab.cjs` then
+`python3 /Users/triton/PROTEUS/bin/dash.py` (seals the private dashboard payload so it rides in this commit) then
 `git -C /Users/triton/PROTEUS add -A` then
 `git -C /Users/triton/PROTEUS commit -m "weekly: field notes YYYY-WW"` then
 `git -C /Users/triton/PROTEUS push origin main`.

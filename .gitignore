@@ -43,3 +43,8 @@ sites/builds/*/lab/
 sites/builds/*/node_modules/
 sites/builds/*/package-lock.json
 sites/nolan/*/img/raw/
+
+# private dashboard: the key never leaves this Mac
+state/dash.key
+state/dash.last
+.claude/launch.json

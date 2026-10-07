@@ -81,6 +81,9 @@ left alone. The commit timestamp is the proof, so it must hold nothing else: on 
 an interactive session's experiment and Skool prompts into it. Never `git add -A` in this run. Files it
 left are the interactive session's to commit; name them in the run log and do not commit them yourself.
 Then, only after the push, `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py anchor` (records the market price beside each new call; it refuses an uncommitted call).
+Then `python3 /Users/triton/PROTEUS/bin/dash.py --commit` (the private dashboard, Luke's "live but private" page: it seals
+`docs/dash/payload.json` and commits that one file; every probe verdict, the vault mirror and the close commit rebuild it
+again, so the page moves through the night).
 
 ## 5. One Field Notes item
 
