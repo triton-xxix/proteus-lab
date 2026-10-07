@@ -58,7 +58,7 @@ def population(now):
 def mentions():
     m = {}
     for r in csv.DictReader(open(MENTIONS)):
-        m.setdefault((r["mint"], r["night"]), {})[r["source"]] = r
+        m.setdefault((r["mint"], r["night"][:10]), {})[r["source"]] = r   # night is a full timestamp
     return m
 
 
@@ -137,7 +137,8 @@ def main():
                  sum(1 for r in pop_rows if r["_grp"] == "pass"), sum(1 for r in pop_rows if r["_grp"] == "old"), len({r["ts"][:10] for r in pop_rows}), missing,
                  sum(1 for r in pop_rows if replay.ts_of(r["ts"]) >= SEEN_FROM)),
              "Bar: n >= 40, exp >= +10, best-3 removed >= 0, exp >= V01 on the same rows + %d. Rows: measured = the variant's signal exists for the row; n = rows the rule selects." % (10 + N_TOTAL - 10),
-             "", "| Variant | Exit | Measured | n | Total £ | Exp £ | Exp less best 3 | Wins | Rugs | Up at 24h | V01 same rows | Bar | Qualifies |",
+             "The live book buys the top 4 by 1h volume a night; the Top-4 column is that slice of the variant's rows (what v0.2 would actually have bought).",
+             "", "| Variant | Exit | Measured | n | Total £ | Exp £ | Exp less best 3 | Wins | Rugs | Top-4/night exp (n) | V01 same rows | Bar | Qualifies |",
              "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     csvrows, qual = [], []
     for vid, (pred, seen_only, grp) in V.items():
@@ -150,24 +151,24 @@ def main():
             s = replay.stats(sel)
             v01_exp = replay.stats(same_v01)["exp"] if same_v01 else 0
             bar = v01_exp + 10 + (N_TOTAL - 10)
-            up = sum(1 for x in sel if x["reason"] == "time_stop" and x["move"] > 0) if ex == "V19" else None
+            s4 = replay.stats(replay.top_k(sel, 4))
             ok = s["n"] >= 40 and s["exp"] >= 10 and s["trim3"] >= 0 and s["exp"] >= bar
             if ok:
                 qual.append((s["trim3"], vid + "/" + ex))
-            lines.append("| %s | %s | %d | %d | %.1f | %.1f | %.1f | %d | %d | %s | %.1f | %.1f | %s |" % (
-                vid, ex, len(measured), s["n"], s["total"], s["exp"], s["trim3"], s["win"], s["rug"], "-" if up is None else up, v01_exp, bar, "yes" if ok else "no"))
-            csvrows.append(dict(variant=vid, exit=ex, measured=len(measured), **s, v01_same=v01_exp, bar=round(bar, 1), qualifies=ok))
+            lines.append("| %s | %s | %d | %d | %.1f | %.1f | %.1f | %d | %d | %.1f (%d) | %.1f | %.1f | %s |" % (
+                vid, ex, len(measured), s["n"], s["total"], s["exp"], s["trim3"], s["win"], s["rug"], s4["exp"], s4["n"], v01_exp, bar, "yes" if ok else "no"))
+            csvrows.append(dict(variant=vid, exit=ex, measured=len(measured), **s, top4_exp=s4["exp"], top4_n=s4["n"], v01_same=v01_exp, bar=round(bar, 1), qualifies=ok))
         # the complement, for reading
         rest = [(r, c) for r, c in measured if not pred(r)]
         for ex in EXITS:
             sel = [res[(ex, r["mint"], r["ts"][:10])] for r, c in rest if (ex, r["mint"], r["ts"][:10]) in res]
-            s = replay.stats(sel)
-            lines.append("| %s not | %s | %d | %d | %.1f | %.1f | %.1f | %d | %d | - | - | - | - |" % (vid, ex, len(measured), s["n"], s["total"], s["exp"], s["trim3"], s["win"], s["rug"]))
+            s = replay.stats(sel); s4 = replay.stats(replay.top_k(sel, 4))
+            lines.append("| %s not | %s | %d | %d | %.1f | %.1f | %.1f | %d | %d | %.1f (%d) | - | - | - |" % (vid, ex, len(measured), s["n"], s["total"], s["exp"], s["trim3"], s["win"], s["rug"], s4["exp"], s4["n"]))
     # baseline on the seen window
     for ex in EXITS:
         sel = [res[(ex, r["mint"], r["ts"][:10])] for r, c in pop if c and r["_grp"] == "pass" and replay.ts_of(r["ts"]) >= SEEN_FROM and (ex, r["mint"], r["ts"][:10]) in res]
-        s = replay.stats(sel)
-        lines.append("| all passers since 30 Sep | %s | %d | %d | %.1f | %.1f | %.1f | %d | %d | - | - | - | - |" % (ex, s["n"], s["n"], s["total"], s["exp"], s["trim3"], s["win"], s["rug"]))
+        s = replay.stats(sel); s4 = replay.stats(replay.top_k(sel, 4))
+        lines.append("| all passers since 30 Sep | %s | %d | %d | %.1f | %.1f | %.1f | %d | %d | %.1f (%d) | - | - | - |" % (ex, s["n"], s["n"], s["total"], s["exp"], s["trim3"], s["win"], s["rug"], s4["exp"], s4["n"]))
     lines += ["", "Qualifying: %s." % (", ".join(v for _, v in sorted(qual, reverse=True)) or "none"),
               "Opens a second book: %s." % (max(qual)[1] if qual else "none")]
     open(HERE + "/REPLAY-2.md", "w").write("\n".join(lines) + "\n")
