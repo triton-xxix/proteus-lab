@@ -1,0 +1,16 @@
+{
+ "key": "2026-10-07-2343",
+ "date": "2026-10-07",
+ "started_at": "2026-10-07T23:43:58+0100",
+ "deadline": "2026-10-08T00:43:00+0100",
+ "deadline_how": "nightly preflight 23:23 plus 80 min",
+ "max_calls": 150,
+ "max_probes": 6,
+ "session": "9fb93396",
+ "run_log": "/Users/triton/PROTEUS/state/runs/2026-10-07.md",
+ "probes": [
+  "P-0086"
+ ],
+ "stopped_at": null,
+ "stop_reason": null
+}

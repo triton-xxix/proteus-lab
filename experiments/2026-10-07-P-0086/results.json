@@ -1,0 +1,388 @@
+{
+ "rule": "12-day-high breakout, chase cap 0.75%, volume > 15-day avg, buy next open, exit next open after close > prior high",
+ "data": "as traded, not dividend-adjusted",
+ "spy": {
+  "vol_incl": {
+   "full": {
+    "trades": 282,
+    "win_rate": 73.0,
+    "avg_trade_pct": 0.31,
+    "trade_pf": 2.61,
+    "growth_x": 2.37,
+    "cagr_pct": 2.59,
+    "max_dd_pct": 7.27,
+    "exposure_pct": 13.5,
+    "bar_pf": 1.407
+   },
+   "since_2009": {
+    "trades": 156,
+    "win_rate": 77.6,
+    "avg_trade_pct": 0.38,
+    "trade_pf": 3.77,
+    "growth_x": 1.81,
+    "cagr_pct": 3.4,
+    "max_dd_pct": 7.27,
+    "exposure_pct": 13.1,
+    "bar_pf": 1.609
+   },
+   "eras": {
+    "1993-2004": {
+     "trades": 98,
+     "pf": 1.77,
+     "avg_pct": 0.23
+    },
+    "2005-2015": {
+     "trades": 85,
+     "pf": 3.23,
+     "avg_pct": 0.32
+    },
+    "2016-2026": {
+     "trades": 99,
+     "pf": 3.93,
+     "avg_pct": 0.38
+    }
+   }
+  },
+  "vol_excl": {
+   "full": {
+    "trades": 277,
+    "win_rate": 71.5,
+    "avg_trade_pct": 0.28,
+    "trade_pf": 2.34,
+    "growth_x": 2.12,
+    "cagr_pct": 2.26,
+    "max_dd_pct": 8.23,
+    "exposure_pct": 13.2,
+    "bar_pf": 1.361
+   },
+   "since_2009": {
+    "trades": 155,
+    "win_rate": 76.1,
+    "avg_trade_pct": 0.36,
+    "trade_pf": 3.52,
+    "growth_x": 1.73,
+    "cagr_pct": 3.13,
+    "max_dd_pct": 7.27,
+    "exposure_pct": 12.8,
+    "bar_pf": 1.574
+   },
+   "eras": {
+    "1993-2004": {
+     "trades": 93,
+     "pf": 1.71,
+     "avg_pct": 0.22
+    },
+    "2005-2015": {
+     "trades": 86,
+     "pf": 2.43,
+     "avg_pct": 0.26
+    },
+    "2016-2026": {
+     "trades": 98,
+     "pf": 3.56,
+     "avg_pct": 0.34
+    }
+   },
+   "luck_full": {
+    "real_bar_pf": 1.361,
+    "p": 0.011,
+    "perm_median_pf": 1.079,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.574,
+    "p": 0.014,
+    "perm_median_pf": 1.128,
+    "n": 1000
+   }
+  }
+ },
+ "nulls": {
+  "plain12": {
+   "full": {
+    "trades": 686,
+    "win_rate": 66.5,
+    "avg_trade_pct": 0.13,
+    "trade_pf": 1.38,
+    "growth_x": 2.25,
+    "cagr_pct": 2.44,
+    "max_dd_pct": 38.17,
+    "exposure_pct": 34.3,
+    "bar_pf": 1.115
+   },
+   "since_2009": {
+    "trades": 414,
+    "win_rate": 67.6,
+    "avg_trade_pct": 0.19,
+    "trade_pf": 1.67,
+    "growth_x": 2.14,
+    "cagr_pct": 4.37,
+    "max_dd_pct": 13.8,
+    "exposure_pct": 36.6,
+    "bar_pf": 1.209
+   },
+   "luck_full": {
+    "real_bar_pf": 1.115,
+    "p": 0.2697,
+    "perm_median_pf": 1.076,
+    "n": 1000
+   }
+  },
+  "no_cap": {
+   "full": {
+    "trades": 333,
+    "win_rate": 70.6,
+    "avg_trade_pct": 0.22,
+    "trade_pf": 1.86,
+    "growth_x": 2.03,
+    "cagr_pct": 2.13,
+    "max_dd_pct": 9.9,
+    "exposure_pct": 15.9,
+    "bar_pf": 1.245
+   }
+  },
+  "no_vol": {
+   "full": {
+    "trades": 620,
+    "win_rate": 67.1,
+    "avg_trade_pct": 0.14,
+    "trade_pf": 1.42,
+    "growth_x": 2.22,
+    "cagr_pct": 2.4,
+    "max_dd_pct": 29.71,
+    "exposure_pct": 31.2,
+    "bar_pf": 1.127
+   }
+  },
+  "random_entry_same_exit": {
+   "draws": 500,
+   "trades_each": 277,
+   "pf_median": 1.54,
+   "pf_p90": 2.04,
+   "pf_max": 2.83,
+   "share_pf_at_or_above_real": 0.03,
+   "avg_median_pct": 0.25,
+   "share_avg_at_or_above_real": 0.396
+  }
+ },
+ "sweep": {
+  "11": {
+   "trades": 282,
+   "trade_pf": 2.38,
+   "avg_trade_pct": 0.28
+  },
+  "12": {
+   "trades": 277,
+   "trade_pf": 2.34,
+   "avg_trade_pct": 0.28
+  },
+  "13": {
+   "trades": 273,
+   "trade_pf": 2.28,
+   "avg_trade_pct": 0.27
+  },
+  "16": {
+   "trades": 264,
+   "trade_pf": 2.61,
+   "avg_trade_pct": 0.3
+  },
+  "18": {
+   "trades": 258,
+   "trade_pf": 2.41,
+   "avg_trade_pct": 0.28
+  },
+  "20": {
+   "trades": 252,
+   "trade_pf": 2.39,
+   "avg_trade_pct": 0.27
+  }
+ },
+ "basket_2009_on": {
+  "SPY": {
+   "stats": {
+    "trades": 155,
+    "win_rate": 76.1,
+    "avg_trade_pct": 0.36,
+    "trade_pf": 3.52,
+    "growth_x": 1.73,
+    "cagr_pct": 3.13,
+    "max_dd_pct": 7.27,
+    "exposure_pct": 12.8,
+    "bar_pf": 1.574
+   },
+   "luck": {
+    "real_bar_pf": 1.574,
+    "p": 0.01,
+    "perm_median_pf": 1.107,
+    "n": 300
+   }
+  },
+  "QQQ": {
+   "stats": {
+    "trades": 142,
+    "win_rate": 69.0,
+    "avg_trade_pct": 0.24,
+    "trade_pf": 1.87,
+    "growth_x": 1.4,
+    "cagr_pct": 1.92,
+    "max_dd_pct": 10.44,
+    "exposure_pct": 11.9,
+    "bar_pf": 1.266
+   },
+   "luck": {
+    "real_bar_pf": 1.266,
+    "p": 0.2658,
+    "perm_median_pf": 1.145,
+    "n": 300
+   }
+  },
+  "DIA": {
+   "stats": {
+    "trades": 166,
+    "win_rate": 71.1,
+    "avg_trade_pct": 0.2,
+    "trade_pf": 1.72,
+    "growth_x": 1.38,
+    "cagr_pct": 1.84,
+    "max_dd_pct": 11.91,
+    "exposure_pct": 14.6,
+    "bar_pf": 1.241
+   },
+   "luck": {
+    "real_bar_pf": 1.241,
+    "p": 0.2093,
+    "perm_median_pf": 1.115,
+    "n": 300
+   }
+  },
+  "IWM": {
+   "stats": {
+    "trades": 102,
+    "win_rate": 61.8,
+    "avg_trade_pct": -0.08,
+    "trade_pf": 0.85,
+    "growth_x": 0.9,
+    "cagr_pct": -0.57,
+    "max_dd_pct": 21.04,
+    "exposure_pct": 11.1,
+    "bar_pf": 0.943
+   },
+   "luck": {
+    "real_bar_pf": 0.943,
+    "p": 0.8306,
+    "perm_median_pf": 1.069,
+    "n": 300
+   }
+  },
+  "EFA": {
+   "stats": {
+    "trades": 135,
+    "win_rate": 60.7,
+    "avg_trade_pct": 0.05,
+    "trade_pf": 1.09,
+    "growth_x": 1.05,
+    "cagr_pct": 0.26,
+    "max_dd_pct": 21.39,
+    "exposure_pct": 11.8,
+    "bar_pf": 1.029
+   },
+   "luck": {
+    "real_bar_pf": 1.029,
+    "p": 0.5581,
+    "perm_median_pf": 1.046,
+    "n": 300
+   }
+  },
+  "EEM": {
+   "stats": {
+    "trades": 137,
+    "win_rate": 57.7,
+    "avg_trade_pct": -0.08,
+    "trade_pf": 0.88,
+    "growth_x": 0.88,
+    "cagr_pct": -0.74,
+    "max_dd_pct": 31.16,
+    "exposure_pct": 12.1,
+    "bar_pf": 0.936
+   },
+   "luck": {
+    "real_bar_pf": 0.936,
+    "p": 0.804,
+    "perm_median_pf": 1.041,
+    "n": 300
+   }
+  },
+  "EWU": {
+   "stats": {
+    "trades": 116,
+    "win_rate": 61.2,
+    "avg_trade_pct": 0.14,
+    "trade_pf": 1.3,
+    "growth_x": 1.15,
+    "cagr_pct": 0.8,
+    "max_dd_pct": 18.54,
+    "exposure_pct": 10.2,
+    "bar_pf": 1.112
+   },
+   "luck": {
+    "real_bar_pf": 1.112,
+    "p": 0.289,
+    "perm_median_pf": 1.027,
+    "n": 300
+   }
+  },
+  "EWJ": {
+   "stats": {
+    "trades": 148,
+    "win_rate": 56.1,
+    "avg_trade_pct": 0.05,
+    "trade_pf": 1.11,
+    "growth_x": 1.06,
+    "cagr_pct": 0.35,
+    "max_dd_pct": 18.06,
+    "exposure_pct": 13.6,
+    "bar_pf": 1.033
+   },
+   "luck": {
+    "real_bar_pf": 1.033,
+    "p": 0.5116,
+    "perm_median_pf": 1.04,
+    "n": 300
+   }
+  },
+  "EWG": {
+   "stats": {
+    "trades": 108,
+    "win_rate": 56.5,
+    "avg_trade_pct": 0.0,
+    "trade_pf": 1.0,
+    "growth_x": 0.98,
+    "cagr_pct": -0.09,
+    "max_dd_pct": 26.0,
+    "exposure_pct": 9.3,
+    "bar_pf": 0.989
+   },
+   "luck": {
+    "real_bar_pf": 0.989,
+    "p": 0.6379,
+    "perm_median_pf": 1.046,
+    "n": 300
+   }
+  }
+ },
+ "pooled_2009_on": {
+  "trades": 1209,
+  "mean_pct": 0.111,
+  "win_pct": 63.9,
+  "t": 2.64,
+  "markets_p_lt_05": 1,
+  "markets_positive": 6
+ },
+ "spy_span": [
+  "1993-01-29",
+  "2026-10-06",
+  8479
+ ],
+ "headline_variant": "vol_excl",
+ "runtime_s": 19
+}
