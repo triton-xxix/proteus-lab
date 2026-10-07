@@ -271,7 +271,7 @@
    "track": 1,
    "title": "AIS small tools: iMessage, /computer, Remote Control, Google CLI",
    "model": "haiku",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/ais-imessage.txt",
     "field-notes/skool/transcripts/ais-computer.txt",
@@ -279,8 +279,10 @@
     "field-notes/skool/transcripts/ais-google-cli.txt"
    ],
    "why": "Short videos, one cheap pass: anything Proteus could use tomorrow?",
-   "tries": 0,
-   "note": "requeued 2026-10-07: prompts written 6 Oct but no child was spawned; that try does not count"
+   "tries": 1,
+   "assigned": "2026-10-07",
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-07-S-17.md"
   },
   {
    "id": "S-18",
