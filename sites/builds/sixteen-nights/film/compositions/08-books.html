@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f08-books</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+
+.books{position:absolute;left:112px;right:112px;top:290px;display:grid;grid-template-columns:repeat(3,1fr);gap:56px}
+.book{border-top:1px solid #232a33;padding-top:22px;min-width:0}
+.b-what{font-size:22px;color:#9a9486;margin-top:4px}
+.b-num{font-size:104px;margin:14px 0 8px}.b-num.kill{color:#c9473c}
+.b-line{font-size:25px}</style>
+<div id="root" data-composition-id="f08-books" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">03 Oct 2026 · 23:47</div>
+<div class="books"><div class="book hidden0" id="bk0"><div class="label">Lichess bot</div><div class="b-what">7 games · unbeaten</div><div class="b-num stat">4W 3D</div><div class="b-line body">rating 3032, peak 3129</div></div><div class="book hidden0" id="bk1"><div class="label">Judgement book</div><div class="b-what">57 calls, all scored</div><div class="b-num stat">+0.0067</div><div class="b-line body">behind the market (Brier gap, negative beats it)</div></div><div class="book hidden0" id="bk2"><div class="label">Graduation book G1</div><div class="b-what">pump.fun migrations · killed 3 Oct</div><div class="b-num stat kill">KILLED</div><div class="b-line body">2,252 trades · -£14.2 each · nearly missed</div></div></div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.00;
+  
+  var tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#bk0", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 0.30);
+  tl.fromTo("#bk1", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 2.50);
+  tl.fromTo("#bk2", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 3.90);
+  window.__timelines["f08-books"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

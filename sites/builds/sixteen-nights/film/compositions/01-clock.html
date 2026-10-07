@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f01-clock</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+</style>
+<div id="root" data-composition-id="f01-clock" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">23:15:00</div>
+<div class="bigclock mono" style="position:absolute;left:112px;bottom:150px;font-size:172px;letter-spacing:.04em;color:#e0a450">23:15:<span id="sec" style="color:#ece6d9">00</span></div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.00;
+  var sec = document.getElementById("sec"); var clock = document.querySelector(".clock"); var st = {v: 0};
+  var tl = gsap.timeline({ paused: true });
+  
+  tl.to(st, {v: 3.999, duration: 4, ease: "none", onUpdate: function () { var s = String(Math.floor(st.v)).padStart(2, "0"); sec.textContent = s; clock.textContent = "23:15:" + s; }}, 0);
+  window.__timelines["f01-clock"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

@@ -37,3 +37,9 @@ grinder/graduates/open.json
 grinder/graduates/open.json.tmp
 grinder/graduates/stderr.log
 HOME.md
+
+# Nolan site build artefacts (sites/ is the scroll-craft workspace)
+sites/builds/*/lab/
+sites/builds/*/node_modules/
+sites/builds/*/package-lock.json
+sites/nolan/*/img/raw/

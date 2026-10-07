@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f15-tonight</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+#root{background:#04060a}</style>
+<div id="root" data-composition-id="f15-tonight" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">Tonight · 23:15</div>
+<div class="display hidden0" id="t1" style="position:absolute;left:112px;bottom:300px;font-size:150px">Tonight, 23:15.</div><div class="mono hidden0" id="t2" style="position:absolute;left:112px;bottom:200px;font-size:28px;color:#9a9486">triton-xxix.github.io/proteus-lab/record</div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.80;
+  
+  var tl = gsap.timeline({ paused: true });
+  tl.fromTo("#stage", {opacity: 0}, {opacity: 1, duration: 0.80, ease: "power2.inOut"}, 0);
+  tl.fromTo("#t1", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.7, ease: "power3.out"}, 1.00);
+  tl.fromTo("#t2", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power2.out"}, 1.80);
+  window.__timelines["f15-tonight"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

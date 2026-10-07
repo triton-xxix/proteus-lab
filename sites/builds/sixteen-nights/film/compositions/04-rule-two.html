@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f04-rule-two</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+.words .w{display:inline-block;margin-right:.26em}</style>
+<div id="root" data-composition-id="f04-rule-two" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">29 Sep 2026 · v2 signed · e1ebe88</div>
+<div class="h2 words" style="position:absolute;left:112px;right:300px;top:330px;font-size:78px;line-height:1.08;text-wrap:balance"><span class="w hidden0" id="w0">A</span> <span class="w hidden0" id="w1">losing</span> <span class="w hidden0" id="w2">record</span> <span class="w hidden0" id="w3">is</span> <span class="w hidden0" id="w4">published</span> <span class="w hidden0" id="w5">in</span> <span class="w hidden0" id="w6">exactly</span> <span class="w hidden0" id="w7">the</span> <span class="w hidden0" id="w8">same</span> <span class="w hidden0" id="w9">place</span> <span class="w hidden0" id="w10">and</span> <span class="w hidden0" id="w11">format</span> <span class="w hidden0" id="w12">as</span> <span class="w hidden0" id="w13">a</span> <span class="w hidden0" id="w14">winning</span> <span class="w hidden0" id="w15">one.</span> </div><div class="mono hidden0" id="sub" style="position:absolute;left:112px;bottom:110px;font-size:22px">v1 signed 22 Sep · v2 signed 29 Sep 2026 · e1ebe88</div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.50;
+  
+  var tl = gsap.timeline({ paused: true });
+  tl.fromTo("#stage", {x: 1920}, {x: 0, duration: 0.50, ease: "power3.inOut"}, 0);
+  tl.set("#w0", {opacity: 1, y: 60}, 0.700); tl.to("#w0", {y: 0, duration: 0.17, ease: "power4.out"}, 0.700);
+  tl.set("#w1", {opacity: 1, y: 42}, 0.853); tl.to("#w1", {y: 0, duration: 0.14, ease: "power4.out"}, 0.853);
+  tl.set("#w2", {opacity: 1, y: 42}, 0.977); tl.to("#w2", {y: 0, duration: 0.14, ease: "power4.out"}, 0.977);
+  tl.set("#w3", {opacity: 1, y: 42}, 1.100); tl.to("#w3", {y: 0, duration: 0.12, ease: "power4.out"}, 1.100);
+  tl.set("#w4", {opacity: 1, y: 42}, 1.203); tl.to("#w4", {y: 0, duration: 0.14, ease: "power4.out"}, 1.203);
+  tl.set("#w5", {opacity: 1, y: 42}, 1.327); tl.to("#w5", {y: 0, duration: 0.12, ease: "power4.out"}, 1.327);
+  tl.set("#w6", {opacity: 1, y: 42}, 1.430); tl.to("#w6", {y: 0, duration: 0.14, ease: "power4.out"}, 1.430);
+  tl.set("#w7", {opacity: 1, y: 42}, 1.553); tl.to("#w7", {y: 0, duration: 0.12, ease: "power4.out"}, 1.553);
+  tl.set("#w8", {opacity: 1, y: 42}, 1.657); tl.to("#w8", {y: 0, duration: 0.12, ease: "power4.out"}, 1.657);
+  tl.set("#w9", {opacity: 1, y: 42}, 1.760); tl.to("#w9", {y: 0, duration: 0.14, ease: "power4.out"}, 1.760);
+  tl.set("#w10", {opacity: 1, y: 42}, 1.883); tl.to("#w10", {y: 0, duration: 0.12, ease: "power4.out"}, 1.883);
+  tl.set("#w11", {opacity: 1, y: 42}, 1.987); tl.to("#w11", {y: 0, duration: 0.14, ease: "power4.out"}, 1.987);
+  tl.set("#w12", {opacity: 1, y: 42}, 2.110); tl.to("#w12", {y: 0, duration: 0.12, ease: "power4.out"}, 2.110);
+  tl.set("#w13", {opacity: 1, y: 42}, 2.213); tl.to("#w13", {y: 0, duration: 0.12, ease: "power4.out"}, 2.213);
+  tl.set("#w14", {opacity: 1, y: 42}, 2.317); tl.to("#w14", {y: 0, duration: 0.14, ease: "power4.out"}, 2.317);
+  tl.set("#w15", {opacity: 1, y: 42}, 2.440); tl.to("#w15", {y: 0, duration: 0.12, ease: "power4.out"}, 2.440);
+  tl.fromTo("#sub", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.5, ease: "power2.out"}, 2.74);
+  window.__timelines["f04-rule-two"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f13-survivor</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+
+.cols{position:absolute;left:112px;right:112px;top:420px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.col{border-top:1px solid #232a33;padding-top:24px;position:relative;min-width:0}
+.col b{display:block}.col span{display:block;margin-top:10px;padding-right:90px;font-size:25px}
+.col i{position:absolute;right:0;top:18px;font-style:normal;font-size:56px}</style>
+<div id="root" data-composition-id="f13-survivor" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">07 Oct 2026 · 9fd339e</div>
+<div class="h2 hidden0" id="sh" style="position:absolute;left:112px;top:250px;font-size:64px">RSI(5) dip-buying, nine index ETFs</div><div class="cols"><div class="col hidden0" id="c0"><b class="label" style="font-size:30px">Makes money</b><span class="body">970 trades · +0.64% a trade · 75% winners</span><i style="color:#7fc8a9">✓</i></div><div class="col hidden0" id="c1"><b class="label" style="font-size:30px">Beats holding</b><span class="body">not yet tested forward</span><i style="color:#5d5a54">–</i></div><div class="col hidden0" id="c2"><b class="label" style="font-size:30px">Beats luck</b><span class="body">permutation test p 0.001</span><i style="color:#7fc8a9">✓</i></div></div><div class="body hidden0" id="sl" style="position:absolute;left:112px;bottom:120px;font-size:38px">It is not a route to the McLaren.</div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.50;
+  
+  var tl = gsap.timeline({ paused: true });
+  tl.fromTo("#stage", {y: 1080}, {y: 0, duration: 0.50, ease: "power3.inOut"}, 0);
+  tl.fromTo("#sh", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.5, ease: "power3.out"}, 0.70);
+  tl.fromTo("#c0", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "power3.out"}, 1.40);
+  tl.fromTo("#c1", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "power3.out"}, 1.90);
+  tl.fromTo("#c2", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "power3.out"}, 2.40);
+  tl.fromTo("#sl", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power2.out"}, 3.90);
+  window.__timelines["f13-survivor"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

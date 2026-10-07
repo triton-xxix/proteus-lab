@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f07-pitch</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+
+.chart{position:absolute;inset:0}
+.book-tl{position:absolute;left:112px;top:150px}
+.b-what{font-size:22px;color:#9a9486;margin-top:4px}
+.counter{position:absolute;right:112px;top:150px;font-size:132px}
+.counter.loss{color:#c9473c}.counter.gain{color:#7fc8a9}
+.foot{position:absolute;left:112px;bottom:76px;font-size:21px}
+
+.bars{position:absolute;left:112px;right:112px;top:330px;display:flex;flex-direction:column;gap:34px}
+.bar{display:grid;grid-template-columns:320px 1fr 150px;align-items:center;gap:28px;font-size:27px}
+.track{height:46px}.track i{display:block;height:100%;width:100%;transform-origin:left center}
+.bar-name{color:#9a9486}.bar-val{text-align:right;color:#ece6d9;font-size:24px}</style>
+<div id="root" data-composition-id="f07-pitch" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">24 Sep 2026 · backtest · 30091b8</div>
+<div class="book-tl"><div class="label">The Pitch</div><div class="b-what">football forecast desk · 0 live predictions · first kickoff 9 Oct</div></div><div class="bars"><div class="bar"><span class="bar-name">closing market</span><div class="track"><i id="bar0" style="background:#e0a450;transform:scaleX(0.550)"></i></div><span class="bar-val mono">0.1964</span></div><div class="bar"><span class="bar-name">pre-close market</span><div class="track"><i id="bar1" style="background:#9a9486;transform:scaleX(0.587)"></i></div><span class="bar-val mono">0.1972</span></div><div class="bar"><span class="bar-name">shots model</span><div class="track"><i id="bar2" style="background:#9a9486;transform:scaleX(0.838)"></i></div><span class="bar-val mono">0.2026</span></div><div class="bar"><span class="bar-name">Elo</span><div class="track"><i id="bar3" style="background:#9a9486;transform:scaleX(0.935)"></i></div><span class="bar-val mono">0.2047</span></div><div class="bar"><span class="bar-name">Dixon-Coles</span><div class="track"><i id="bar4" style="background:#9a9486;transform:scaleX(1.000)"></i></div><span class="bar-val mono">0.2061</span></div></div><div class="foot mono">RPS, lower is better · 6,766 matches · nine leagues · three seasons · no model earns weight against the market</div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.50;
+  
+  var tl = gsap.timeline({ paused: true });
+  tl.fromTo("#stage", {x: 1920}, {x: 0, duration: 0.50, ease: "power3.inOut"}, 0);
+  tl.fromTo("#bar0", {scaleX: 0}, {scaleX: 0.550, duration: 0.9, ease: "power3.out"}, 0.80);
+  tl.fromTo("#bar1", {scaleX: 0}, {scaleX: 0.587, duration: 0.9, ease: "power3.out"}, 0.92);
+  tl.fromTo("#bar2", {scaleX: 0}, {scaleX: 0.838, duration: 0.9, ease: "power3.out"}, 1.04);
+  tl.fromTo("#bar3", {scaleX: 0}, {scaleX: 0.935, duration: 0.9, ease: "power3.out"}, 1.16);
+  tl.fromTo("#bar4", {scaleX: 0}, {scaleX: 1.000, duration: 0.9, ease: "power3.out"}, 1.28);
+  window.__timelines["f07-pitch"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

@@ -113,7 +113,9 @@ Luke's brief of 29 Sep: read a couple a night on a lesser model and come back wi
 do this, need this". Plan in `/Users/triton/PROTEUS/field-notes/SKOOL-READING-PLAN.md`, queue in
 `/Users/triton/PROTEUS/field-notes/SKOOL-QUEUE.json`. Local files only; pulls happen interactively.
 
-1. `python3 /Users/triton/PROTEUS/bin/skool.py next --n 2`
+1. `python3 /Users/triton/PROTEUS/bin/skool.py next --n 1`
+   (`--n 1` while step 5f has films queued, so the four spawns are harvest, one Skool, research, Nolan;
+   back to `--n 2` when `nolan.py next` prints STOP for the queue being empty.)
    It prints up to two `GO S-NN model=... prompt=... expect=...` lines, or `STOP` when nothing local
    is left (the run log says so, including which groups need an interactive pull; never invent reading).
 2. For each GO line, Read the prompt file and spawn one child with the **Agent** tool:
@@ -136,9 +138,9 @@ Design in `/Users/triton/PROTEUS/grinder/research/README.md`, sources in `grinde
    mention rows; writes `state/research/YYYY-MM-DD/narrative.md` and `child-prompt.md`, prints the xAI spend).
 2. Read that `child-prompt.md` and spawn one child: `subagent_type` `general-purpose`, `model` `sonnet`,
    no `isolation`, the file's text as the whole prompt. It writes
-   `/Users/triton/PROTEUS/state/agents/research/YYYY-MM-DD-digest.md`. This is the fourth spawn with the
-   harvest and two Skool children; if the Skool step used fewer, nothing else takes the slot.
-   It may run alongside the Skool children: spawn them in one message.
+   `/Users/triton/PROTEUS/state/agents/research/YYYY-MM-DD-digest.md`. With the harvest, one Skool child
+   and the Nolan child (5f) this is the fourth spawn; if a step used fewer, nothing else takes the slot.
+   It may run alongside the Skool and Nolan children: spawn them in one message.
 3. `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/narrative.py ingest` (copies the digest to
    `grinder/research/digests/`, one run-log line, commits the digest and `MENTIONS.csv`).
 
@@ -148,6 +150,25 @@ not the Proteus card, and goes in `SPEND.md` on Sunday under its own line.
 ## 5e. Lichess
 
 The game-bots interest as a standing job, not a probe: `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/lichess.py play --games 3 --minutes 12`. Rated 3+2 blitz against other bots with established ratings; it logs every game to `games/lichess/GAMES.csv` and prints the rating. One run-log line from its last line. If no bot accepts, that is the line. Run it after every child has returned and before the probe loop.
+
+## 5f. One Nolan film (from 7 Oct 2026 until films.json is empty)
+
+Luke's brief of 7 Oct: a fan site for Nolan's films, one film researched a night by a Sonnet child, the
+Tenet timeline as the deep page (live at https://triton-xxix.github.io/proteus-nolan/). Register
+`/Users/triton/PROTEUS/sites/nolan/films.json`, script `/Users/triton/PROTEUS/bin/nolan.py`, validator
+`sites/nolan/check.py`, publish `bin/publish-nolan.sh`.
+
+1. Before the 5c/5d spawns: `python3 /Users/triton/PROTEUS/bin/nolan.py next`. It prints
+   `GO <slug> model=sonnet prompt=<file> expect=<file>`, or `STOP` (spawn cap reached, or the queue
+   empty), which is one run-log line and nothing more.
+2. Read the prompt file and spawn one child in the same message as the 5c/5d children: **Agent**,
+   `subagent_type` `general-purpose`, `model` `sonnet`, no `isolation`, the file's text as the whole
+   prompt. It may WebFetch and WebSearch; it writes `state/agents/nolan/YYYY-MM-DD-<slug>.json` only.
+3. After Lichess (5e): `python3 /Users/triton/PROTEUS/bin/nolan.py ingest`. It checks the digest, fetches
+   and credits the stills, writes `sites/nolan/films/<slug>.json`, rebuilds the site, commits by named
+   path, publishes to proteus-nolan, and writes the run-log, Field Notes (`## Built`) and SEEN.md lines.
+   A FAIL requeues the film once with the check's reasons in the next night's prompt, then parks it;
+   never respawn tonight. Its run-log line is the one line for this child in step 7. Then step 6.
 
 ## Sub-agents
 

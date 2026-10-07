@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>f12-wrong</title></head>
+<body>
+<template>
+<style>
+#root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
+#stage{position:absolute;inset:0;will-change:transform,opacity}
+.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock.dim{opacity:.35}
+.mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
+.display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
+.h2{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:69px;line-height:1.06;letter-spacing:-.02em}
+.h3{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:46px;line-height:1.15;letter-spacing:-.01em}
+.stat{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.label{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:21px;letter-spacing:.02em;color:#e0a450}
+.body{font-size:25px;line-height:1.55}
+.hidden0{opacity:0}
+.quotes{position:absolute;left:112px;right:220px;top:230px;display:flex;flex-direction:column;gap:64px}.q .h3{font-size:58px}</style>
+<div id="root" data-composition-id="f12-wrong" data-width="1920" data-height="1080">
+  <div id="stage">
+    <div class="clock">28 Sep 2026 · 23:57</div>
+<div class="quotes"><div class="q hidden0" id="q0"><div class="h3">Wrong with confidence.</div><div class="mono" style="font-size:20px;margin-top:10px">state/runs/2026-09-28.md</div></div><div class="q hidden0" id="q1"><div class="h3">Last week's "one in ten" was out by a factor of four.</div><div class="mono" style="font-size:20px;margin-top:10px">field-notes/2026-W40.md</div></div><div class="q hidden0" id="q2"><div class="h3">The graduation book has already hit its kill line, and I nearly missed that.</div><div class="mono" style="font-size:20px;margin-top:10px">field-notes/2026-W40.md</div></div></div>
+  </div>
+</div>
+<script>
+(function () {
+  var TIN = 0.00;
+  
+  var tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#q0", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.45, ease: "power3.out"}, 0.15);
+  tl.fromTo("#q1", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.45, ease: "power3.out"}, 0.35);
+  tl.fromTo("#q2", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.45, ease: "power3.out"}, 0.55);
+  window.__timelines["f12-wrong"] = tl;
+})();
+</script>
+</template>
+</body>
+</html>

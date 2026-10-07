@@ -1,0 +1,20 @@
+{
+  "note": "Controlled vocabulary for the themes map. A research child may propose a new id with new: true; the parent reviews it at ingest.",
+  "themes": [
+    { "id": "time", "name": "Time", "line": "Structure as subject: the order you learn things in is the story." },
+    { "id": "memory", "name": "Memory", "line": "What a character cannot remember, or cannot stop remembering." },
+    { "id": "identity", "name": "Identity", "line": "Who someone is when the evidence of it is gone or doubled." },
+    { "id": "obsession", "name": "Obsession", "line": "A pursuit that costs more than it can return." },
+    { "id": "deception", "name": "Deception", "line": "Tricks played on characters and on the audience, usually at once." },
+    { "id": "guilt", "name": "Guilt", "line": "A past act the film circles back to." },
+    { "id": "grief", "name": "Grief", "line": "Loss as the engine of a plot." },
+    { "id": "sacrifice", "name": "Sacrifice", "line": "Someone pays so that others can go on." },
+    { "id": "fathers-and-children", "name": "Fathers and children", "line": "A parent trying to get home, or a child left behind." },
+    { "id": "duality", "name": "Duality", "line": "Doubles, mirrors, rivals, two halves of one thing." },
+    { "id": "order-and-chaos", "name": "Order and chaos", "line": "Systems against the people who break them." },
+    { "id": "faith", "name": "Faith", "line": "Acting on something that cannot be proved." },
+    { "id": "fear", "name": "Fear", "line": "What a character is made of when afraid." },
+    { "id": "the-machine", "name": "The machine", "line": "A device, a method or a weapon that outgrows its maker." },
+    { "id": "duty", "name": "Duty", "line": "Doing the job in front of you, whatever it costs." }
+  ]
+}
