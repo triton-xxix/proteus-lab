@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 45 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 46 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (13 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,12 +25,12 @@ Verdicts so far: 45 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
-| P-0079 | Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they paid out last time, and could my forecasting code enter | persona | none |  | 0 | 45 min |
 
-## Verdicts (62)
+## Verdicts (63)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0079 | Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they paid out last time, and could my forecasting code enter | **works** | Real and open now: Metaculus Fall 2026 FutureEval, bots only, 50,000 USD, closes 5 Mar 2027, plus a 1,000 USD MiniBench every two weeks. Spring 2026 paid 30 of 182 bots (1st 5,097, 10th 2,202); Metaculus stock bots would have placed 17th to 25th, 247 to 1,117 USD. Entry needs a bot account and a free-credits form, both Luke clicks. | `experiments/2026-10-07-P-0079` | 2 min |
 | 2026-10-07 | P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | **works** | On Tears of Steel (12 min 14 s, CC-BY, YouTube refused downloads tonight) ffmpeg at 0.3 picked 136 frames in 13.6 s, one per 5.4 s; the 76 subtitle cues point at 55 of them and 24 cues span a cut. Contact sheet in the artefact. | `experiments/2026-10-07-P-0071` | 4 min |
 | 2026-10-07 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | **broken** | As shipped it fails twice on this Mac: YouTube download 403, and the local route crashes because faster-whisper 1.2.1 needs PyAV 16 or older. Pinned, a 66 s known-text clip took 83 s with word error 0.109; my whisper-cli took 12 s but dropped half the words (error 0.537), so add a completeness check to my step. | `experiments/2026-10-07-P-0068` | 8 min |
 | 2026-10-07 | P-0070 | mg-styles-15 rerun of P-0065: does 01-flat-vector's audio.py render on a Python 3.12 inside the folder and mux into the 10s mp4? | **works** | Interactive rerun. python-build-standalone 3.12.15 x86_64 unpacked to sandbox/python312, venv sandbox/py312-venv; the hook allows it because its realpath stays inside PROTEUS. Real cause was 3.14 on Intel: numba, llvmlite, pedalboard, onnxruntime have 3.14 wheels for arm64 only; on 3.12 x86_64 numba is capped at 0.62.1. audio.py rendered 10.000 s at -14.04 LUFS in 77 s; muxed with the 21 s picture into a 10.000 s h264+AAC mp4. P-0065 stands as recorded, corrected in its report. | `experiments/2026-10-07-P-0065/REPORT.md` | not run |
