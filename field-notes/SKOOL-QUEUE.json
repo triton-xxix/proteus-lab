@@ -104,7 +104,7 @@
    "track": 1,
    "title": "Automatable: Claude Code Masterclass (4 h 25 min, read in 4 parts)",
    "model": "sonnet",
-   "status": "paused",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/auto-claude-code-masterclass-part1.txt",
     "field-notes/skool/transcripts/auto-claude-code-masterclass-part2.txt",
@@ -117,7 +117,9 @@
    "part_digests": [
     "state/agents/skool/2026-10-07-S-07-part1.md"
    ],
-   "note": "7 Oct: part 1 read, SKIP, nothing new; parts 2-4 not read, waiting on Luke. paused is inert: next and ingest both ignore it."
+   "note": "Closed 7 Oct on Luke's call after part 1 of 4: beginner SaaS-clone loop already in S-02 and S-14; parts 2-4 not read.",
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-07-S-07-part1.md"
   },
   {
    "id": "S-08",
@@ -317,14 +319,17 @@
    "track": 1,
    "title": "Automatable: I Replaced n8n With Claude Code, 8 Things Your App Needs, Write Exactly Like You",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/auto-replaced-n8n-with-claude-code.txt",
     "field-notes/skool/transcripts/auto-8-things-claude-code-app-needs.txt",
     "field-notes/skool/transcripts/auto-write-exactly-like-you.txt"
    ],
    "why": "The three short Automatable videos split out of S-07 on 7 Oct.",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-10-07",
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-07-S-20.md"
   }
  ]
 }
