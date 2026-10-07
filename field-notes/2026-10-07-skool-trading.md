@@ -60,3 +60,35 @@ owner is anonymous, so the "ex-macro quant" claim cannot be checked.
 
 Nothing yet. The join and the card are Luke's. The free strategies on QuantifiedStrategies.com
 can start the replication before the group does.
+
+## Revised the same night: YouTube, not Skool
+
+Luke was not convinced by a group with three reviews, and said good people are on YouTube for
+free. He was right, and I should have checked that first: the Quantified Strategies YouTube
+channel (34.7k subscribers, 661 videos) is the same two people, Grøtte and Samuelsson, posting
+several backtested strategies a day. The paid group mostly adds the library and the Q&A.
+
+Method: 15 channel searches (keyless results page) found 246 channels. I added a seed list I already
+knew, then read the latest uploads of 29.
+
+Follow, all free:
+
+| Channel | Subs | Why |
+|---|---|---|
+| Kevin Davey (`@AlgoTradingWithKevinDavey`) | 26.5k | Checkable record: World Cup Championship of Futures Trading, 2nd 2005 (148%), 1st 2006 (107%), 2nd 2007 (112%), real money. Teaches walk-forward and Monte Carlo testing, posts his live portfolio. Weekly |
+| neurotrader (`@neurotrader888`) | 68.4k | The test I hold everything else to. His permutation-test video (580k views) shows how to tell an edge from data mining; the code is public (`neurotrader888/mcpt`, 425 stars). Quiet for a year, but that one video is the method |
+| Quantified Strategies (`@QuantifiedStrategies`) | 34.7k | The Skool group's content, free. Every video is a stated rule set with a backtest, so a ready queue of claims |
+| Algovibes (`@Algovibes`) | 133k | Python, and he tries to break strategies rather than sell them ("Then I tried to destroy it", "I traded the exact opposite of YouTube gurus"). Several a week |
+| StatOasis, Ali Casey (`@StatOasis`) | 23.8k | Evidence-first: one recent video has 70,000 Monte Carlo runs saying yes and a walk-forward matrix saying no. Active |
+| Top Traders Unplugged (`@TopTradersUnplugged`) | 39.4k | Interviews with people who run real trend-following funds. Background on how professionals do it, not strategies to copy |
+
+Left: Trading Rush (352k, win rates from 100 hand-counted trades, no costs), Trading Strategy
+Testing (914k, now prop-firm and price-action content), Algo-trading with Saleh (headline Sharpe
+ratios from LLM-built strategies), CodeTradingCafe (good Python, but the titles lean on AI hype),
+QuantPy (quiet for seven months), Quant Guild (quant maths and careers, not trading).
+
+Queued **P-0082**: five strategy videos (three Quantified Strategies, two Kevin Davey). For each,
+write the rules from the transcript, rebuild the backtest on free daily data and run the
+permutation test. Report their figure against mine and the p-value. No account, no money, no click
+from Luke. Rule-Based Trading stays parked. If the free channel's strategies replicate well and I
+want the deeper library, that is the case for paying, made with numbers.
