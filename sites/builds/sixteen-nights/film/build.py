@@ -117,10 +117,11 @@ for fid, slug, mn, voice, kind, tin, clock in FR:
 TOTAL = round(cursor, 2)
 
 # ------------------------------------------------------------------ shared scene scaffolding
-BASE_CSS = """
+FONT_CSS = open(os.path.join(HERE, "fonts", "fonts.css")).read()
+BASE_CSS = FONT_CSS + """
 #root{position:absolute;inset:0;background:%(canvas)s;color:%(ink)s;font-family:%(text)s;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:%(mono)s;font-size:27px;letter-spacing:.06em;color:%(amber)s;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:%(mono)s;font-size:27px;letter-spacing:.06em;color:%(amber)s;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:%(mono)s;letter-spacing:.04em;color:%(soft)s}
 .display{font-family:%(display)s;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -150,10 +151,10 @@ def write_scene(fr, inner, css="", setup="", timeline=""):
 <body>
 <template>
 <style>%(base)s%(css)s</style>
-<div id="root" data-composition-id="%(cid)s" data-width="1920" data-height="1080">
+<div id="root" data-composition-id="%(cid)s" data-width="1920" data-height="1080" data-duration="%(dur).2f">
   <div id="stage">
-    <div class="clock%(dim)s">%(clock)s</div>
 %(inner)s
+    <div class="clock%(dim)s" data-layout-allow-overlap data-layout-allow-occlusion>%(clock)s</div>
   </div>
 </div>
 <script>
@@ -163,6 +164,7 @@ def write_scene(fr, inner, css="", setup="", timeline=""):
   var tl = gsap.timeline({ paused: true });
   %(entrance)s
   %(timeline)s
+  tl.set({}, {}, %(dur).2f); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["%(cid)s"] = tl;
 })();
 </script>
@@ -170,7 +172,7 @@ def write_scene(fr, inner, css="", setup="", timeline=""):
 </body>
 </html>
 """ % dict(cid=cid, base=BASE_CSS, css=css, clock=esc(fr["clock"]), dim=" dim" if fr["id"] == "09" else "", inner=inner,
-           setup=setup, entrance=entrance, timeline=timeline, tin=fr["tin"])
+           setup=setup, entrance=entrance, timeline=timeline, tin=fr["tin"], dur=fr["dur"])
     open(os.path.join(COMP, "%s-%s.html" % (fr["id"], fr["slug"])), "w").write(html)
     return cid
 
@@ -209,7 +211,7 @@ base_y = xy(0, start_bank)[1]
 cross_i = next((i for i in range(low_i + 1, len(path)) if path[i - 1]["bankroll"] < start_bank <= path[i]["bankroll"]), None)
 days = sorted({p["at"][:10] for p in path[1:]})
 ticks_svg = "".join('<text x="%.1f" y="%d" font-size="17" fill="%s" font-family="Geist Mono, monospace" letter-spacing="1">%s</text>' % (
-    xy(next(i for i, p in enumerate(path) if p["at"][:10] == d), 0)[0] - 10, CH["y1"] + 36, C["hint"],
+    xy(next(i for i, p in enumerate(path) if p["at"][:10] == d), 0)[0] - 10, CH["y1"] + 36, C["soft"],
     _dt.date.fromisoformat(d).strftime("%-d %b")) for d in days[::2])
 BANK = json.dumps([round(p["bankroll"], 2) for p in path])
 CHART_CSS = """
@@ -227,7 +229,7 @@ def chart_svg(segments):
     return ('<svg class="chart" viewBox="0 0 1920 1080" width="1920" height="1080">'
             '<line x1="%d" y1="%.1f" x2="%d" y2="%.1f" stroke="%s" stroke-dasharray="8 8" stroke-width="1.5"/>'
             '<text x="%d" y="%.1f" text-anchor="end" font-size="18" fill="%s" font-family="Geist Mono, monospace">£1,000 start</text>'
-            '%s%s</svg>') % (CH["x0"], base_y, CH["x1"], base_y, C["hint"], CH["x1"], base_y - 12, C["hint"], ticks_svg, lines)
+            '%s%s</svg>') % (CH["x0"], base_y, CH["x1"], base_y, C["hint"], CH["x1"], base_y - 12, C["soft"], ticks_svg, lines)
 
 
 # ------------------------------------------------------------------ the scenes
@@ -460,7 +462,7 @@ def build_index(ids, cross_time):
         cid = ids[fr["id"]]
         slots.append('    <div id="el-%s" data-composition-id="%s" data-composition-src="compositions/%s-%s.html" data-start="%.2f" data-duration="%.2f" data-track-index="%d" data-width="1920" data-height="1080" style="z-index:%d"></div>' % (
             fr["id"], cid, fr["id"], fr["slug"], fr["start"], fr["dur"], 1 + (i % 2), 10 + i))
-    audio = ['    <audio id="bed" src="media/bed.mp3" data-start="0" data-duration="%.2f" data-track-index="11" data-volume="0.34"></audio>' % TOTAL]
+    audio = ['    <audio id="bed" src="media/bed.mp3" data-start="0" data-duration="%.2f" data-track-index="11" data-volume="0.20"></audio>' % TOTAL]
     for fr in frames:
         if fr["voice"]:
             audio.append('    <audio id="vo-%s" src="media/voice/%s.mp3" data-start="%.2f" data-duration="%.2f" data-track-index="10" data-volume="1"></audio>' % (fr["id"], fr["voice"], fr["voice_at"], fr["vdur"]))
@@ -478,7 +480,7 @@ def build_index(ids, cross_time):
     vol = {"tick": 0.5, "thud": 0.7, "cross": 0.55, "resolve": 0.6}
     mdur = {"tick": 0.09, "thud": 0.9, "cross": 1.6, "resolve": 4.0}
     for k, (name, t) in enumerate(marks):
-        audio.append('    <audio id="mk-%d-%s" src="media/marks/%s.wav" data-start="%.2f" data-duration="%.2f" data-track-index="12" data-volume="%.2f"></audio>' % (k, name, name, t, mdur[name], vol[name]))
+        audio.append('    <audio id="mk-%d-%s" src="media/marks/%s.wav" data-start="%.2f" data-duration="%.2f" data-track-index="%d" data-volume="%.2f"></audio>' % (k, name, name, t, mdur[name], 12 + k, vol[name]))
     grain = open(os.path.join(HERE, "compositions", "components", "grain-overlay.html")).read()
     grain_div = grain[grain.index("<div"):grain.index("</div>\n\n<style>") + 6] if "</div>\n\n<style>" in grain else ""
     grain_css = grain[grain.index("<style>") + 7:grain.index("</style>")]
@@ -488,14 +490,14 @@ def build_index(ids, cross_time):
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1920, height=1080" />
     <title>Sixteen Nights</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <style>
+%(fontcss)s
       * { box-sizing: border-box; }
       html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: %(canvas)s; }
       body { font-family: %(text)s; color: %(ink)s; }
       #root { position: relative; width: 100%%; height: 100%%; overflow: hidden; background: %(canvas)s; }
-      [data-composition-id="sixteen-nights"] > div[data-composition-src] { position: absolute; inset: 0; }
+      #root > div[data-composition-src] { position: absolute; inset: 0; }
       #grain-overlay .grain-texture { opacity: 0.07; }
 %(grain_css)s
     </style>
@@ -507,11 +509,12 @@ def build_index(ids, cross_time):
 %(grain)s
     </div>
     <script>
+      window.__timelines = window.__timelines || {};
       window.__timelines["sixteen-nights"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>
-""" % dict(C, text=FONT_TEXT, grain_css=grain_css, total=TOTAL, slots="\n".join(slots), audio="\n".join(audio), grain=grain_div.replace("z-index: 100", "z-index: 100"))
+""" % dict(C, text=FONT_TEXT, fontcss=FONT_CSS, grain_css=grain_css, total=TOTAL, slots="\n".join(slots), audio="\n".join(audio), grain=grain_div.replace("z-index: 100", "z-index: 100"))
     open(os.path.join(HERE, "index.html"), "w").write(html)
 
 

@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f13-survivor</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -21,10 +28,10 @@
 .col{border-top:1px solid #232a33;padding-top:24px;position:relative;min-width:0}
 .col b{display:block}.col span{display:block;margin-top:10px;padding-right:90px;font-size:25px}
 .col i{position:absolute;right:0;top:18px;font-style:normal;font-size:56px}</style>
-<div id="root" data-composition-id="f13-survivor" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">07 Oct 2026 · 9fd339e</div>
-<div class="h2 hidden0" id="sh" style="position:absolute;left:112px;top:250px;font-size:64px">RSI(5) dip-buying, nine index ETFs</div><div class="cols"><div class="col hidden0" id="c0"><b class="label" style="font-size:30px">Makes money</b><span class="body">970 trades · +0.64% a trade · 75% winners</span><i style="color:#7fc8a9">✓</i></div><div class="col hidden0" id="c1"><b class="label" style="font-size:30px">Beats holding</b><span class="body">not yet tested forward</span><i style="color:#5d5a54">–</i></div><div class="col hidden0" id="c2"><b class="label" style="font-size:30px">Beats luck</b><span class="body">permutation test p 0.001</span><i style="color:#7fc8a9">✓</i></div></div><div class="body hidden0" id="sl" style="position:absolute;left:112px;bottom:120px;font-size:38px">It is not a route to the McLaren.</div>
+<div data-hf-id="hf-s5vr" id="root" data-composition-id="f13-survivor" data-width="1920" data-height="1080" data-duration="7.40">
+  <div data-hf-id="hf-1rt5" id="stage">
+<div data-hf-id="hf-u6r4" class="h2 hidden0" id="sh" style="position:absolute;left:112px;top:250px;font-size:64px">RSI(5) dip-buying, nine index ETFs</div><div data-hf-id="hf-6ra9" class="cols"><div data-hf-id="hf-os2t" class="col hidden0" id="c0"><b data-hf-id="hf-96b8" class="label" style="font-size:30px">Makes money</b><span data-hf-id="hf-ipj2" class="body">970 trades · +0.64% a trade · 75% winners</span><i data-hf-id="hf-1avk" style="color:#7fc8a9">✓</i></div><div data-hf-id="hf-o0f0" class="col hidden0" id="c1"><b data-hf-id="hf-pb51" class="label" style="font-size:30px">Beats holding</b><span data-hf-id="hf-r268" class="body">not yet tested forward</span><i data-hf-id="hf-anz2" style="color:#5d5a54">–</i></div><div data-hf-id="hf-woav" class="col hidden0" id="c2"><b data-hf-id="hf-4mrf" class="label" style="font-size:30px">Beats luck</b><span data-hf-id="hf-sxy4" class="body">permutation test p 0.001</span><i data-hf-id="hf-szzc" style="color:#7fc8a9">✓</i></div></div><div data-hf-id="hf-p0gn" class="body hidden0" id="sl" style="position:absolute;left:112px;bottom:120px;font-size:38px">It is not a route to the McLaren.</div>
+    <div data-hf-id="hf-tbqb" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">07 Oct 2026 · 9fd339e</div>
   </div>
 </div>
 <script>
@@ -38,6 +45,7 @@
   tl.fromTo("#c1", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "power3.out"}, 1.90);
   tl.fromTo("#c2", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "power3.out"}, 2.40);
   tl.fromTo("#sl", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power2.out"}, 3.90);
+  tl.set({}, {}, 7.40); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f13-survivor"] = tl;
 })();
 </script>

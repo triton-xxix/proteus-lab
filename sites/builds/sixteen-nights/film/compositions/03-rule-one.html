@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f03-rule-one</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -17,10 +24,10 @@
 .body{font-size:25px;line-height:1.55}
 .hidden0{opacity:0}
 .words .w{display:inline-block;margin-right:.26em}</style>
-<div id="root" data-composition-id="f03-rule-one" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">22 Sep 2026 · signed · cdf6a27</div>
-<div class="h2 words" style="position:absolute;left:112px;right:300px;top:330px;font-size:78px;line-height:1.08;text-wrap:balance"><span class="w hidden0" id="w0">Pre-register</span> <span class="w hidden0" id="w1">every</span> <span class="w hidden0" id="w2">prediction</span> <span class="w hidden0" id="w3">and</span> <span class="w hidden0" id="w4">paper</span> <span class="w hidden0" id="w5">trade</span> <span class="w hidden0" id="w6">by</span> <span class="w hidden0" id="w7">git</span> <span class="w hidden0" id="w8">commit</span> <span class="w hidden0" id="w9">before</span> <span class="w hidden0" id="w10">the</span> <span class="w hidden0" id="w11">outcome</span> <span class="w hidden0" id="w12">is</span> <span class="w hidden0" id="w13">knowable.</span> </div><div class="mono hidden0" id="sub" style="position:absolute;left:112px;bottom:110px;font-size:22px">CHARTER.md · What Proteus must do · signed 22 Sep 2026 · cdf6a27</div>
+<div data-hf-id="hf-usdr" id="root" data-composition-id="f03-rule-one" data-width="1920" data-height="1080" data-duration="6.67">
+  <div data-hf-id="hf-1rt5" id="stage">
+<div data-hf-id="hf-e1mx" class="h2 words" style="position:absolute;left:112px;right:300px;top:330px;font-size:78px;line-height:1.08;text-wrap:balance"><span data-hf-id="hf-3o4e" class="w hidden0" id="w0">Pre-register</span> <span data-hf-id="hf-bbqh" class="w hidden0" id="w1">every</span> <span data-hf-id="hf-ee4g" class="w hidden0" id="w2">prediction</span> <span data-hf-id="hf-1xt5" class="w hidden0" id="w3">and</span> <span data-hf-id="hf-9ja3" class="w hidden0" id="w4">paper</span> <span data-hf-id="hf-xl24" class="w hidden0" id="w5">trade</span> <span data-hf-id="hf-nwrg" class="w hidden0" id="w6">by</span> <span data-hf-id="hf-z6n0" class="w hidden0" id="w7">git</span> <span data-hf-id="hf-srpm" class="w hidden0" id="w8">commit</span> <span data-hf-id="hf-ybgd" class="w hidden0" id="w9">before</span> <span data-hf-id="hf-4mr9" class="w hidden0" id="w10">the</span> <span data-hf-id="hf-crqd" class="w hidden0" id="w11">outcome</span> <span data-hf-id="hf-z73w" class="w hidden0" id="w12">is</span> <span data-hf-id="hf-6daw" class="w hidden0" id="w13">knowable.</span> </div><div data-hf-id="hf-45td" class="mono hidden0" id="sub" style="position:absolute;left:112px;bottom:110px;font-size:22px">CHARTER.md · What Proteus must do · signed 22 Sep 2026 · cdf6a27</div>
+    <div data-hf-id="hf-9i95" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">22 Sep 2026 · signed · cdf6a27</div>
   </div>
 </div>
 <script>
@@ -44,6 +51,7 @@
   tl.set("#w12", {opacity: 1, y: 42}, 2.230); tl.to("#w12", {y: 0, duration: 0.12, ease: "power4.out"}, 2.230);
   tl.set("#w13", {opacity: 1, y: 42}, 2.333); tl.to("#w13", {y: 0, duration: 0.14, ease: "power4.out"}, 2.333);
   tl.fromTo("#sub", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.5, ease: "power2.out"}, 2.66);
+  tl.set({}, {}, 6.67); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f03-rule-one"] = tl;
 })();
 </script>

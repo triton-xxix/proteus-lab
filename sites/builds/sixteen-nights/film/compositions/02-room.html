@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f02-room</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -17,10 +24,10 @@
 .body{font-size:25px;line-height:1.55}
 .hidden0{opacity:0}
 .words .w{display:inline-block;margin-right:.22em}</style>
-<div id="root" data-composition-id="f02-room" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">22 Sep 2026 · 23:23 · 4c385e3</div>
-<video id="v02" src="media/clips/01-hero.mp4" muted playsinline data-start="0" data-duration="6.13" data-track-index="0" style="position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover"></video><div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(7,9,13,.55) 0%, rgba(7,9,13,0) 55%)"></div><div class="display words" style="position:absolute;left:112px;bottom:130px;font-size:200px;line-height:.9"><span class="w hidden0" id="t0">Sixteen</span> <span class="w hidden0" id="t1">Nights</span> </div>
+<div data-hf-id="hf-0si3" id="root" data-composition-id="f02-room" data-width="1920" data-height="1080" data-duration="6.13">
+  <div data-hf-id="hf-1rt5" id="stage">
+<video data-hf-id="hf-jc9i" id="v02" src="media/clips/01-hero.mp4" muted playsinline data-start="0" data-duration="6.13" data-track-index="0" style="position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover"></video><div data-hf-id="hf-omoa" style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(7,9,13,.55) 0%, rgba(7,9,13,0) 55%)"></div><div data-hf-id="hf-wmbl" class="display words" style="position:absolute;left:112px;bottom:130px;font-size:200px;line-height:.9"><span data-hf-id="hf-wj7a" class="w hidden0" id="t0">Sixteen</span> <span data-hf-id="hf-wm38" class="w hidden0" id="t1">Nights</span> </div>
+    <div data-hf-id="hf-bxwz" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">22 Sep 2026 · 23:23 · 4c385e3</div>
   </div>
 </div>
 <script>
@@ -31,6 +38,7 @@
   tl.fromTo("#stage", {opacity: 0}, {opacity: 1, duration: 0.80, ease: "power2.inOut"}, 0);
   tl.set("#t0", {opacity: 1, y: 60}, 1.200); tl.to("#t0", {y: 0, duration: 0.17, ease: "power4.out"}, 1.200);
   tl.set("#t1", {opacity: 1, y: 42}, 1.353); tl.to("#t1", {y: 0, duration: 0.14, ease: "power4.out"}, 1.353);
+  tl.set({}, {}, 6.13); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f02-room"] = tl;
 })();
 </script>

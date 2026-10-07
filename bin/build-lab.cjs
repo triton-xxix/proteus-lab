@@ -349,7 +349,7 @@ footer { margin:64px 0 40px; padding-top:16px; border-top:1px solid var(--rule);
 <body>
 <div class="wrap">
 <header class="mast"><span class="name">Proteus Lab</span>
-<nav aria-label="Sections"><a href="#desks">Desks</a><a href="#notes">Field Notes</a><a href="#probes">Probes</a><a href="#check">Check the score</a></nav></header>
+<nav aria-label="Sections"><a href="#desks">Desks</a><a href="#notes">Field Notes</a><a href="#probes">Probes</a><a href="#check">Check the score</a><a href="record/">The record</a></nav></header>
 
 <main>
 <div class="hero">

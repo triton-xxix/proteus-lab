@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f07-pitch</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -28,10 +35,10 @@
 .bar{display:grid;grid-template-columns:320px 1fr 150px;align-items:center;gap:28px;font-size:27px}
 .track{height:46px}.track i{display:block;height:100%;width:100%;transform-origin:left center}
 .bar-name{color:#9a9486}.bar-val{text-align:right;color:#ece6d9;font-size:24px}</style>
-<div id="root" data-composition-id="f07-pitch" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">24 Sep 2026 · backtest · 30091b8</div>
-<div class="book-tl"><div class="label">The Pitch</div><div class="b-what">football forecast desk · 0 live predictions · first kickoff 9 Oct</div></div><div class="bars"><div class="bar"><span class="bar-name">closing market</span><div class="track"><i id="bar0" style="background:#e0a450;transform:scaleX(0.550)"></i></div><span class="bar-val mono">0.1964</span></div><div class="bar"><span class="bar-name">pre-close market</span><div class="track"><i id="bar1" style="background:#9a9486;transform:scaleX(0.587)"></i></div><span class="bar-val mono">0.1972</span></div><div class="bar"><span class="bar-name">shots model</span><div class="track"><i id="bar2" style="background:#9a9486;transform:scaleX(0.838)"></i></div><span class="bar-val mono">0.2026</span></div><div class="bar"><span class="bar-name">Elo</span><div class="track"><i id="bar3" style="background:#9a9486;transform:scaleX(0.935)"></i></div><span class="bar-val mono">0.2047</span></div><div class="bar"><span class="bar-name">Dixon-Coles</span><div class="track"><i id="bar4" style="background:#9a9486;transform:scaleX(1.000)"></i></div><span class="bar-val mono">0.2061</span></div></div><div class="foot mono">RPS, lower is better · 6,766 matches · nine leagues · three seasons · no model earns weight against the market</div>
+<div data-hf-id="hf-k04q" id="root" data-composition-id="f07-pitch" data-width="1920" data-height="1080" data-duration="8.10">
+  <div data-hf-id="hf-1rt5" id="stage">
+<div data-hf-id="hf-pdko" class="book-tl"><div data-hf-id="hf-p09r" class="label">The Pitch</div><div data-hf-id="hf-kzsw" class="b-what">football forecast desk · 0 live predictions · first kickoff 9 Oct</div></div><div data-hf-id="hf-umx2" class="bars"><div data-hf-id="hf-ufsv" class="bar"><span data-hf-id="hf-277h" class="bar-name">closing market</span><div data-hf-id="hf-64lp" class="track"><i data-hf-id="hf-d8pq" id="bar0" style="background:#e0a450;transform:scaleX(0.550)"></i></div><span data-hf-id="hf-43tl" class="bar-val mono">0.1964</span></div><div data-hf-id="hf-c51b" class="bar"><span data-hf-id="hf-j5e4" class="bar-name">pre-close market</span><div data-hf-id="hf-gav5" class="track"><i data-hf-id="hf-nfjt" id="bar1" style="background:#9a9486;transform:scaleX(0.587)"></i></div><span data-hf-id="hf-0ybm" class="bar-val mono">0.1972</span></div><div data-hf-id="hf-bqqa" class="bar"><span data-hf-id="hf-yd9o" class="bar-name">shots model</span><div data-hf-id="hf-hhs8" class="track"><i data-hf-id="hf-8kup" id="bar2" style="background:#9a9486;transform:scaleX(0.838)"></i></div><span data-hf-id="hf-rcl3" class="bar-val mono">0.2026</span></div><div data-hf-id="hf-bcf9" class="bar"><span data-hf-id="hf-zqzq" class="bar-name">Elo</span><div data-hf-id="hf-h3h7" class="track"><i data-hf-id="hf-uu82" id="bar3" style="background:#9a9486;transform:scaleX(0.935)"></i></div><span data-hf-id="hf-cvhq" class="bar-val mono">0.2047</span></div><div data-hf-id="hf-e4kg" class="bar"><span data-hf-id="hf-g723" class="bar-name">Dixon-Coles</span><div data-hf-id="hf-f3y2" class="track"><i data-hf-id="hf-1zlv" id="bar4" style="background:#9a9486;transform:scaleX(1.000)"></i></div><span data-hf-id="hf-ajk2" class="bar-val mono">0.2061</span></div></div><div data-hf-id="hf-45hg" class="foot mono">RPS, lower is better · 6,766 matches · nine leagues · three seasons · no model earns weight against the market</div>
+    <div data-hf-id="hf-mi3o" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">24 Sep 2026 · backtest · 30091b8</div>
   </div>
 </div>
 <script>
@@ -45,6 +52,7 @@
   tl.fromTo("#bar2", {scaleX: 0}, {scaleX: 0.838, duration: 0.9, ease: "power3.out"}, 1.04);
   tl.fromTo("#bar3", {scaleX: 0}, {scaleX: 0.935, duration: 0.9, ease: "power3.out"}, 1.16);
   tl.fromTo("#bar4", {scaleX: 0}, {scaleX: 1.000, duration: 0.9, ease: "power3.out"}, 1.28);
+  tl.set({}, {}, 8.10); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f07-pitch"] = tl;
 })();
 </script>

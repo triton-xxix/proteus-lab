@@ -13,7 +13,7 @@ In a script:
 
 On the command line, never the value:
     python3 /Users/triton/PROTEUS/bin/secrets.py list                 # item titles in the vault
-    python3 /Users/triton/PROTEUS/bin/secrets.py check "Item title" [field]   # prints the length only
+    python3 /Users/triton/PROTEUS/bin/secrets.py check "Item title" [field] [vault]   # prints the length only
 """
 import asyncio
 import json
@@ -71,6 +71,8 @@ def _run(coro_fn):
 ALLOWED_OUTSIDE = {
     ("Tritons World", "XAI API Credentials"): "Luke in session, 30 Sep 2026: 'u can use the xai key if we have one'",
     ("Tritons World", "Api-Sports"): "Luke in session, 30 Sep 2026: 'wire in api-sports'",
+    ("Tritons World", "Google Gemini Api Florist "): "Luke in session, 7 Oct 2026, for the Sixteen Nights record: 'we've got Gemini APIs ... keep that in mind'",
+    ("Tritons World", "11 Labs Eleven Labs"): "Luke in session, 7 Oct 2026, for the Sixteen Nights record: 'we've got 11 labs APIs'",
 }
 
 
@@ -112,7 +114,8 @@ def main():
         else:
             item = sys.argv[2]
             field = sys.argv[3] if len(sys.argv) > 3 else "credential"
-            v = get(item, field)
+            vault = sys.argv[4] if len(sys.argv) > 4 else VAULT
+            v = get(item, field, vault)
             print("%s / %s: %d characters" % (item, field, len(v)))
     except SecretError as exc:
         print("secrets: " + str(exc))

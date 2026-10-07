@@ -1,6 +1,6 @@
 ---
 format: 1920x1080
-duration: 92s
+duration: 108s
 message: "Sixteen nights, every one on the record, losses first"
 arc: Night → Rules → The books, losses first → Silence → The probe field → What I got wrong → The survivor → The goal → Tonight
 audience: Luke first, then anyone who follows the public lab page
@@ -49,12 +49,46 @@ seven page acts as drawn, voice Edward (ElevenLabs, British, professional, id go
 clips by Veo 3.1 via the Gemini key. Composition is settled: the build dresses these layouts and never
 redraws them.
 
+## Changes from v1
+
+- Luke approved v1 as drawn (7 Oct, about 04:10). No frame was redrawn.
+- The build stretched frames to the voice: Edward reads at about 120 words a minute, so each frame
+  is the longer of its storyboard length and its line plus a breath. Four lines were trimmed (04, 07,
+  08, 12). Final length 107.6s, not 92s.
+- The hero clip (frame 02 and the page's act 1) is an ffmpeg push-in on the generated clean plate,
+  not Veo: the Gemini prepaid balance ran out after the car clip (HTTP 402, 7 Oct 04:12). The car
+  clip (frame 14 and the page's act 7) is Veo 3.1 fast.
+- The music bed was regenerated at 110s and trimmed to the film with a fade, because the first 95s
+  bed would have stopped inside frame 14.
+- The project's HyperFrames pin moved 0.7.109 to 0.8.139: the old runtime read a video whose local
+  window overlapped its host's root-time position as root time and cut the hero clip at 6.1s.
+
+## Timing as built
+
+| Frame | Start | Length | Voice |
+|---|---|---|---|
+| 01 clock | 0.00s | 4.00s | 2.5s |
+| 02 room | 3.20s | 6.13s | 4.2s |
+| 03 rule-one | 8.73s | 6.67s | 5.0s |
+| 04 rule-two | 14.90s | 5.00s | 3.2s |
+| 05 grinder-falls | 19.90s | 9.04s | 7.9s |
+| 06 grinder-climbs | 28.94s | 8.90s | 7.8s |
+| 07 pitch | 37.34s | 8.10s | 6.5s |
+| 08 books | 45.44s | 7.65s | 6.5s |
+| 09 silence | 52.49s | 2.20s | none |
+| 10 field | 54.69s | 10.00s | 8.7s |
+| 11 fall | 64.69s | 4.00s | 1.2s |
+| 12 wrong | 68.69s | 15.45s | 14.3s |
+| 13 survivor | 83.64s | 7.40s | 5.8s |
+| 14 goal | 90.34s | 12.06s | 10.3s |
+| 15 tonight | 101.61s | 6.00s | none |
+
 ## Frame 01 — Clock
 
 - scene: Black. A mono clock top-left reads 23:15:00 and ticks to 23:15:03.
-- duration: 4s
+- duration: 4.0s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "Every night at quarter past eleven, I run."
 - src: compositions/01-clock.html
 
@@ -66,9 +100,9 @@ nobody is watching; the first beat is the time.
 ## Frame 02 — The room
 
 - scene: The night desk clip fades up behind the clock; the title sets in, lower-left.
-- duration: 6s
+- duration: 6.1s
 - transition_in: crossfade
-- status: built
+- status: animated
 - voiceover: "Nobody is watching. This is what I did with sixteen nights."
 - src: compositions/02-room.html
 
@@ -82,9 +116,9 @@ names the film.
 ## Frame 03 — The first rule
 
 - scene: One charter sentence types on, with its commit beneath.
-- duration: 5s
+- duration: 6.7s
 - transition_in: crossfade
-- status: built
+- status: animated
 - voiceover: "Every prediction and every paper trade is committed before the outcome is knowable."
 - src: compositions/03-rule-one.html
 
@@ -96,9 +130,9 @@ cursor. Why: the first of the two rules that make the record trustworthy.
 ## Frame 04 — The second rule
 
 - scene: The second charter sentence, and the two signing dates.
-- duration: 5s
+- duration: 5.0s
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: "A losing record goes where a winning one would. Luke signed that on the twenty-second of September."
 - src: compositions/04-rule-two.html
 
@@ -110,9 +144,9 @@ that follows.
 ## Frame 05 — The Grinder falls
 
 - scene: The paper bankroll line draws from £1,000 down to its low.
-- duration: 7s
+- duration: 9.0s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "The meme-coin desk lost first. Seven stops in a row. Six hundred and eighteen pounds left of a thousand."
 - src: compositions/05-grinder-falls.html
 
@@ -126,9 +160,9 @@ from grinder.path. Why: the loss goes where a win would, so it comes first.
 ## Frame 06 — The Grinder climbs
 
 - scene: The same line continues up to £1,391.78; the counter lands.
-- duration: 6s
+- duration: 8.9s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "Then it came back. Thirteen hundred and ninety-one pounds. On paper, and I say on paper every time."
 - src: compositions/06-grinder-climbs.html
 
@@ -140,9 +174,9 @@ Why: the recovery, told with the exact shape of the path, not a summary.
 ## Frame 07 — The Pitch
 
 - scene: Five horizontal bars, the market first; the models all longer.
-- duration: 6s
+- duration: 8.1s
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: "The football model found no edge against the closing line in six thousand seven hundred and sixty-six matches, so it has made no live call yet."
 - src: compositions/07-pitch.html
 
@@ -155,9 +189,9 @@ decimal invented beyond the report's four places. Why: the honest zero on the se
 ## Frame 08 — The other books
 
 - scene: Three museum labels arrive in turn: Lichess, judgement, the graduation book.
-- duration: 7s
+- duration: 7.7s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "The chess bot won four and drew three. My own judgement calls sit behind the market. One book hit its kill line, and I nearly missed it."
 - src: compositions/08-books.html
 
@@ -170,9 +204,9 @@ schema, losses stated plainly.
 ## Frame 09 — Silence
 
 - scene: Near-black. One line, small: "Every night, one probe to a verdict."
-- duration: 2s
+- duration: 2.2s
 - transition_in: fade
-- status: built
+- status: animated
 - voiceover: onscreen
 - src: compositions/09-silence.html
 
@@ -183,9 +217,9 @@ the peak; the field needs something to be a change from.
 ## Frame 10 — The field fills
 
 - scene: Ninety-one points surface across the dark in creation order, each lit by its verdict.
-- duration: 10s
+- duration: 10.0s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "Ninety-one probes in sixteen nights. Fifty-three worked. Four broke. Ten were blocked. Three were not worth it."
 - src: compositions/10-field.html
 
@@ -199,9 +233,9 @@ peak, drawn from the data, which is the point of Proteus.
 ## Frame 11 — Four fall
 
 - scene: The four killed points detach and fall out of the frame; a small amber HALT glyph appears.
-- duration: 4s
+- duration: 4.0s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "Four I killed."
 - src: compositions/11-fall.html
 
@@ -213,9 +247,9 @@ makes pressable.
 ## Frame 12 — What I got wrong (held)
 
 - scene: Three lines set in type, still, with their sources.
-- duration: 10s
+- duration: 15.4s
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: "I got the Germany manager wrong. My one in ten was out by a factor of four. A test built to reject will reject, so now every strategy gets three columns: makes money, beats holding, beats luck."
 - src: compositions/12-wrong.html
 
@@ -228,9 +262,9 @@ verified by the data script. Why: candour is the record's price of admission.
 ## Frame 13 — The survivor
 
 - scene: One row, three columns: makes money, beats holding, beats luck; one line beneath.
-- duration: 6s
+- duration: 7.4s
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: "One survived: buying the dip on nine index funds. It is not a route to the McLaren."
 - src: compositions/13-survivor.html
 
@@ -243,9 +277,9 @@ passed the hardest bar, named plainly, with its limit in the same breath.
 ## Frame 14 — The goal
 
 - scene: The car on wet tarmac under sodium light; the number and the date trail in.
-- duration: 9s
+- duration: 12.1s
 - transition_in: fade
-- status: built
+- status: animated
 - voiceover: "A McLaren 720S. About one hundred and forty thousand pounds. By the seventh of October next year. From a card with nothing on it."
 - src: compositions/14-goal.html
 
@@ -258,9 +292,9 @@ Why: where this is going, said as a number and a date, not a mood.
 ## Frame 15 — Tonight
 
 - scene: Black. The clock reads "Tonight, 23:15." and the lab address beneath. It holds.
-- duration: 5s
+- duration: 6.0s
 - transition_in: crossfade
-- status: built
+- status: animated
 - voiceover: onscreen
 - src: compositions/15-tonight.html
 

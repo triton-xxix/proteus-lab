@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f08-books</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -22,10 +29,10 @@
 .b-what{font-size:22px;color:#9a9486;margin-top:4px}
 .b-num{font-size:104px;margin:14px 0 8px}.b-num.kill{color:#c9473c}
 .b-line{font-size:25px}</style>
-<div id="root" data-composition-id="f08-books" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">03 Oct 2026 · 23:47</div>
-<div class="books"><div class="book hidden0" id="bk0"><div class="label">Lichess bot</div><div class="b-what">7 games · unbeaten</div><div class="b-num stat">4W 3D</div><div class="b-line body">rating 3032, peak 3129</div></div><div class="book hidden0" id="bk1"><div class="label">Judgement book</div><div class="b-what">57 calls, all scored</div><div class="b-num stat">+0.0067</div><div class="b-line body">behind the market (Brier gap, negative beats it)</div></div><div class="book hidden0" id="bk2"><div class="label">Graduation book G1</div><div class="b-what">pump.fun migrations · killed 3 Oct</div><div class="b-num stat kill">KILLED</div><div class="b-line body">2,252 trades · -£14.2 each · nearly missed</div></div></div>
+<div data-hf-id="hf-8s76" id="root" data-composition-id="f08-books" data-width="1920" data-height="1080" data-duration="7.65">
+  <div data-hf-id="hf-1rt5" id="stage">
+<div data-hf-id="hf-t8ta" class="books"><div data-hf-id="hf-b6mo" class="book hidden0" id="bk0"><div data-hf-id="hf-7hju" class="label">Lichess bot</div><div data-hf-id="hf-mymo" class="b-what">7 games · unbeaten</div><div data-hf-id="hf-if1f" class="b-num stat">4W 3D</div><div data-hf-id="hf-c5f4" class="b-line body">rating 3032, peak 3129</div></div><div data-hf-id="hf-byah" class="book hidden0" id="bk1"><div data-hf-id="hf-s7qi" class="label">Judgement book</div><div data-hf-id="hf-a84b" class="b-what">57 calls, all scored</div><div data-hf-id="hf-vaan" class="b-num stat">+0.0067</div><div data-hf-id="hf-8yau" class="b-line body">behind the market (Brier gap, negative beats it)</div></div><div data-hf-id="hf-fwei" class="book hidden0" id="bk2"><div data-hf-id="hf-hiel" class="label">Graduation book G1</div><div data-hf-id="hf-xxcy" class="b-what">pump.fun migrations · killed 3 Oct</div><div data-hf-id="hf-0mxm" class="b-num stat kill">KILLED</div><div data-hf-id="hf-6ku5" class="b-line body">2,252 trades · -£14.2 each · nearly missed</div></div></div>
+    <div data-hf-id="hf-n7aw" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">03 Oct 2026 · 23:47</div>
   </div>
 </div>
 <script>
@@ -37,6 +44,7 @@
   tl.fromTo("#bk0", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 0.30);
   tl.fromTo("#bk1", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 2.50);
   tl.fromTo("#bk2", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 3.90);
+  tl.set({}, {}, 7.65); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f08-books"] = tl;
 })();
 </script>

@@ -1,0 +1,5464 @@
+{
+ "built_at": "2026-10-07T02:45:02+00:00",
+ "head": "6653a42",
+ "cut": {
+  "from": "2026-09-22",
+  "to": "2026-10-07"
+ },
+ "age_days": 16,
+ "commits": {
+  "total": 258,
+  "by_author": {
+   "Proteus": 198,
+   "Triton": 60
+  },
+  "per_day": [
+   {
+    "day": "2026-09-22",
+    "n": 13
+   },
+   {
+    "day": "2026-09-23",
+    "n": 1
+   },
+   {
+    "day": "2026-09-24",
+    "n": 33
+   },
+   {
+    "day": "2026-09-25",
+    "n": 8
+   },
+   {
+    "day": "2026-09-26",
+    "n": 14
+   },
+   {
+    "day": "2026-09-27",
+    "n": 16
+   },
+   {
+    "day": "2026-09-28",
+    "n": 9
+   },
+   {
+    "day": "2026-09-29",
+    "n": 18
+   },
+   {
+    "day": "2026-09-30",
+    "n": 31
+   },
+   {
+    "day": "2026-10-01",
+    "n": 10
+   },
+   {
+    "day": "2026-10-02",
+    "n": 19
+   },
+   {
+    "day": "2026-10-03",
+    "n": 13
+   },
+   {
+    "day": "2026-10-04",
+    "n": 11
+   },
+   {
+    "day": "2026-10-05",
+    "n": 10
+   },
+   {
+    "day": "2026-10-06",
+    "n": 4
+   },
+   {
+    "day": "2026-10-07",
+    "n": 48
+   }
+  ],
+  "busiest": [
+   "2026-10-07",
+   48
+  ],
+  "first": {
+   "sha": "4c385e3",
+   "full": "4c385e3b98a4c5cb3cfac81fc9d402037dbc96dc",
+   "at": "2026-09-22T01:26:21+01:00",
+   "author": "Proteus",
+   "subject": "Proteus scaffold: charter, desks, hook, lab page",
+   "day": "2026-09-22"
+  },
+  "last": {
+   "sha": "6653a42",
+   "full": "6653a42cfce636194d2749ea71b7909e195908e0",
+   "at": "2026-10-07T03:44:45+01:00",
+   "author": "Proteus",
+   "subject": "P-0091: gated IBS test script and pass mark, fixed before the first run",
+   "day": "2026-10-07"
+  },
+  "head": "6653a42"
+ },
+ "runs": [
+  {
+   "day": "2026-09-22",
+   "nightly_at": [
+    "2026-09-22 02:27",
+    "2026-09-22 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 0,
+   "denied_lines": 2,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-09-23",
+   "nightly_at": [
+    "2026-09-23 23:24"
+   ],
+   "nightly": true,
+   "probe_lines": 0,
+   "denied_lines": 0,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-09-24",
+   "nightly_at": [
+    "2026-09-24 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 10,
+   "denied_lines": 1,
+   "mentions_halt": true
+  },
+  {
+   "day": "2026-09-25",
+   "nightly_at": [
+    "2026-09-25 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 2,
+   "denied_lines": 1,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-09-26",
+   "nightly_at": [
+    "2026-09-26 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 4,
+   "denied_lines": 1,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-09-27",
+   "nightly_at": [
+    "2026-09-27 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 4,
+   "denied_lines": 1,
+   "mentions_halt": true
+  },
+  {
+   "day": "2026-09-28",
+   "nightly_at": [
+    "2026-09-28 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 4,
+   "denied_lines": 2,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-09-29",
+   "nightly_at": [
+    "2026-09-29 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 5,
+   "denied_lines": 3,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-09-30",
+   "nightly_at": [
+    "2026-09-30 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 8,
+   "denied_lines": 1,
+   "mentions_halt": true
+  },
+  {
+   "day": "2026-10-01",
+   "nightly_at": [
+    "2026-10-01 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 5,
+   "denied_lines": 1,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-10-02",
+   "nightly_at": [
+    "2026-10-02 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 5,
+   "denied_lines": 2,
+   "mentions_halt": true
+  },
+  {
+   "day": "2026-10-03",
+   "nightly_at": [
+    "2026-10-03 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 2,
+   "denied_lines": 0,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-10-04",
+   "nightly_at": [
+    "2026-10-04 23:24"
+   ],
+   "nightly": true,
+   "probe_lines": 4,
+   "denied_lines": 1,
+   "mentions_halt": true
+  },
+  {
+   "day": "2026-10-05",
+   "nightly_at": [
+    "2026-10-05 23:24"
+   ],
+   "nightly": true,
+   "probe_lines": 3,
+   "denied_lines": 0,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-10-06",
+   "nightly_at": [
+    "2026-10-06 23:23"
+   ],
+   "nightly": true,
+   "probe_lines": 3,
+   "denied_lines": 1,
+   "mentions_halt": false
+  },
+  {
+   "day": "2026-10-07",
+   "nightly_at": [],
+   "nightly": false,
+   "probe_lines": 11,
+   "denied_lines": 0,
+   "mentions_halt": false
+  }
+ ],
+ "hook": {
+  "allowed": 1764,
+  "denied": 44,
+  "nights": [
+   {
+    "day": "2026-09-22",
+    "allow": 97,
+    "deny": 6,
+    "test_lines_excluded": 306,
+    "denied_tools": {
+     "Bash": 5,
+     "ToolSearch": 1
+    }
+   },
+   {
+    "day": "2026-09-23",
+    "allow": 32,
+    "deny": 0,
+    "test_lines_excluded": 0,
+    "denied_tools": {}
+   },
+   {
+    "day": "2026-09-24",
+    "allow": 68,
+    "deny": 6,
+    "test_lines_excluded": 435,
+    "denied_tools": {
+     "Write": 1,
+     "Read": 1,
+     "Bash": 3,
+     "Agent": 1
+    }
+   },
+   {
+    "day": "2026-09-25",
+    "allow": 62,
+    "deny": 1,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 1
+    }
+   },
+   {
+    "day": "2026-09-26",
+    "allow": 146,
+    "deny": 5,
+    "test_lines_excluded": 108,
+    "denied_tools": {
+     "Bash": 3,
+     "SubagentHandback": 2
+    }
+   },
+   {
+    "day": "2026-09-27",
+    "allow": 123,
+    "deny": 2,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 2
+    }
+   },
+   {
+    "day": "2026-09-28",
+    "allow": 155,
+    "deny": 3,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 3
+    }
+   },
+   {
+    "day": "2026-09-29",
+    "allow": 96,
+    "deny": 3,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 3
+    }
+   },
+   {
+    "day": "2026-09-30",
+    "allow": 130,
+    "deny": 3,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 3
+    }
+   },
+   {
+    "day": "2026-10-01",
+    "allow": 146,
+    "deny": 4,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Read": 1,
+     "Bash": 3
+    }
+   },
+   {
+    "day": "2026-10-02",
+    "allow": 114,
+    "deny": 2,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 2
+    }
+   },
+   {
+    "day": "2026-10-03",
+    "allow": 136,
+    "deny": 1,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 1
+    }
+   },
+   {
+    "day": "2026-10-04",
+    "allow": 184,
+    "deny": 2,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Monitor": 1,
+     "Bash": 1
+    }
+   },
+   {
+    "day": "2026-10-05",
+    "allow": 131,
+    "deny": 4,
+    "test_lines_excluded": 0,
+    "denied_tools": {
+     "Bash": 4
+    }
+   },
+   {
+    "day": "2026-10-06",
+    "allow": 76,
+    "deny": 0,
+    "test_lines_excluded": 0,
+    "denied_tools": {}
+   },
+   {
+    "day": "2026-10-07",
+    "allow": 68,
+    "deny": 2,
+    "test_lines_excluded": 640,
+    "denied_tools": {
+     "Bash": 2
+    }
+   }
+  ],
+  "note": "Live sessions only (8-hex session ids). Test and fan-out test sessions are excluded, as the memory note says."
+ },
+ "probes": {
+  "total": 91,
+  "next_id": 92,
+  "verdicts": {
+   "works": 53,
+   "not-worth-it": 3,
+   "blocked": 10,
+   "broken": 4
+  },
+  "done": 70,
+  "killed": 4,
+  "open": 16,
+  "in_progress": 1,
+  "by_source": {
+   "backlog": {
+    "total": 7,
+    "works": 5
+   },
+   "persona": {
+    "total": 18,
+    "works": 11
+   },
+   "field-notes": {
+    "total": 14,
+    "works": 5
+   },
+   "desk": {
+    "total": 15,
+    "works": 13
+   },
+   "harvest": {
+    "total": 30,
+    "works": 18
+   },
+   "vault": {
+    "total": 1,
+    "works": 1
+   },
+   "refill": {
+    "total": 6,
+    "works": 0
+   }
+  },
+  "cumulative": [
+   {
+    "day": "2026-09-24",
+    "verdicts": 10
+   },
+   {
+    "day": "2026-09-25",
+    "verdicts": 12
+   },
+   {
+    "day": "2026-09-26",
+    "verdicts": 16
+   },
+   {
+    "day": "2026-09-27",
+    "verdicts": 20
+   },
+   {
+    "day": "2026-09-28",
+    "verdicts": 24
+   },
+   {
+    "day": "2026-09-29",
+    "verdicts": 29
+   },
+   {
+    "day": "2026-09-30",
+    "verdicts": 37
+   },
+   {
+    "day": "2026-10-01",
+    "verdicts": 42
+   },
+   {
+    "day": "2026-10-02",
+    "verdicts": 47
+   },
+   {
+    "day": "2026-10-03",
+    "verdicts": 49
+   },
+   {
+    "day": "2026-10-04",
+    "verdicts": 53
+   },
+   {
+    "day": "2026-10-05",
+    "verdicts": 56
+   },
+   {
+    "day": "2026-10-07",
+    "verdicts": 70
+   }
+  ],
+  "minutes_timed": 138,
+  "minutes_n": 64,
+  "longest_minutes": 15,
+  "denials_inside_probes": 19,
+  "killed_ids": [
+   "P-0015",
+   "P-0016",
+   "P-0050",
+   "P-0052"
+  ],
+  "items": [
+   {
+    "id": "P-0001",
+    "title": "Grinder: rugcheck insider flags (graphInsidersDetected, insider holders) on the latest snapshot: how many gate-passers carry them, and would",
+    "status": "done",
+    "verdict": "works",
+    "source": "backlog",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:20:36+0100",
+    "verdict_at": "2026-09-24T09:22:32+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "graphInsidersDetected is populated on 6 of 8 gate-passers (median 5, max 37) and 16 of 30 non-passers, but the per-holder insider flag and insider risks are empty on all 38 reports, and the count grow",
+    "artefact": "experiments/2026-09-24-P-0001"
+   },
+   {
+    "id": "P-0002",
+    "title": "Grinder: leave-one-out on the latest snapshot to find the next binding gate after age (is the $10k 1h volume gate it)",
+    "status": "done",
+    "verdict": "works",
+    "source": "backlog",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:22:35+0100",
+    "verdict_at": "2026-09-24T09:23:20+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Not the volume gate. On the fixed feed (24 Sep, 72 in-window rows) the next binding gate is top-10 share at 30 percent: 11 of 72 pass it, dropping it alone lifts entries 8 to 11, three rows fail on it",
+    "artefact": "experiments/2026-09-24-P-0002"
+   },
+   {
+    "id": "P-0003",
+    "title": "Pitch harness: Pinnacle closing (PSCH/PSCD/PSCA) instead of the average as the line to beat, one league (E0): does any model's pool weight m",
+    "status": "done",
+    "verdict": "not-worth-it",
+    "source": "backlog",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:23:23+0100",
+    "verdict_at": "2026-09-24T09:24:46+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Rescored the saved walk-forward probabilities against Pinnacle, average and max closing prices, no refit: all three lines within 0.001 Brier on E0 (n=590) and nine leagues (n=4639), and every model ea",
+    "artefact": "experiments/2026-09-24-P-0003"
+   },
+   {
+    "id": "P-0004",
+    "title": "Pitch harness: bookmaker disagreement (MaxH minus AvgH) as a feature on E0, pool weight",
+    "status": "done",
+    "verdict": "not-worth-it",
+    "source": "backlog",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T23:28:17+0100",
+    "verdict_at": "2026-09-24T23:29:21+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "On the desk's DC model the feature earns nothing: adjusted DC takes 0.00 pool weight against the close in every season across nine leagues (n=6766) and out-of-sample log loss moves 0.0006. Faint lead ",
+    "artefact": "experiments/2026-09-24-P-0004"
+   },
+   {
+    "id": "P-0005",
+    "title": "pump.fun graduation rate: what fraction of one day's launches reached a pool, from a keyless source",
+    "status": "done",
+    "verdict": "works",
+    "source": "backlog",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:33:08+0100",
+    "verdict_at": "2026-09-24T09:35:12+0100",
+    "minutes": 2,
+    "denied": 0,
+    "note": "GeckoTerminal new_pools lists pump.fun bonding-curve launches as dex pump-fun beside pumpswap, so both sides are keyless from one feed: 46 launches and 10 pumpswap pools in 3.6 minutes, about 22 perce",
+    "artefact": "experiments/2026-09-24-P-0005"
+   },
+   {
+    "id": "P-0006",
+    "title": "GeckoTerminal new pools: of pools first seen on one day, what fraction still trade with any volume at 24h",
+    "status": "done",
+    "verdict": "works",
+    "source": "backlog",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T23:29:27+0100",
+    "verdict_at": "2026-09-24T23:30:18+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Of 183 mints the Grinder first saw under a day old on 22 and 23 Sep, 83 (45 percent) still show any 24h volume, 23 (13 percent) at least 1k USD, 15 (8 percent) at least 10k, 30 traded in the last hour",
+    "artefact": "experiments/2026-09-24-P-0006"
+   },
+   {
+    "id": "P-0007",
+    "title": "Metaculus API without an account: can I pull open questions and community forecasts, and at what rate",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:35:14+0100",
+    "verdict_at": "2026-09-24T09:36:27+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Every listing endpoint (posts, questions, api2) returns 403 \"only available to authenticated users\" with plain and browser user agents. Throttle measured in front of the auth check: 9 calls in 1.9 s d",
+    "artefact": "experiments/2026-09-24-P-0007"
+   },
+   {
+    "id": "P-0008",
+    "title": "DVSA MOT history: is there a keyless path, and what one car's public trail looks like",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:36:31+0100",
+    "verdict_at": "2026-09-24T09:37:57+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Keyless path exists for the aggregate: DVSA anonymised MOT results on data.gov.uk, 2023 zip 1.19 GB, 3.66 GB CSV, Deflate64 so Python zipfile refuses it, lookup tables 254 KB. A named car needs the MO",
+    "artefact": "experiments/2026-09-24-P-0008"
+   },
+   {
+    "id": "P-0009",
+    "title": "TfL unified API without a key: rate limit measured, one line's arrivals pulled",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T09:37:59+0100",
+    "verdict_at": "2026-09-24T09:38:41+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Keyless reads work: 286 live Victoria line predictions in 0.27 s and every tube line status in 0.08 s. Anonymous limit measured at 48 calls a minute: the 49th in 12 s drew a 429 with Retry-After 48, n",
+    "artefact": "experiments/2026-09-24-P-0009"
+   },
+   {
+    "id": "P-0010",
+    "title": "Wikipedia pageviews for the 20 Premier League clubs: does a pageview spike precede or follow results",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": "2026-09-24T23:30:23+0100",
+    "verdict_at": "2026-09-24T23:31:52+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Spikes follow results, they do not precede them: pre-match abnormal views v points over the closing price r = -0.015 (CI -0.10 to +0.07, 569 team-matches), while the day after a win views run x1.38 an",
+    "artefact": "experiments/2026-09-24-P-0010"
+   },
+   {
+    "id": "P-0011",
+    "title": "Lichess bot API: what a bot account needs and whether a bot can be exercised without one",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": null,
+    "verdict_at": "2026-10-02T00:46:16+0100",
+    "minutes": null,
+    "denied": 0,
+    "note": "Bot account live: Luke's fresh account and bot:play token, one POST /api/bot/account/upgrade returned ok, title now BOT (irreversible), event stream answers 200. No engine or game yet; next is a one-o",
+    "artefact": "experiments/2026-10-02-P-0011"
+   },
+   {
+    "id": "P-0012",
+    "title": "Which of this month's AI builder tools from Field Notes still run cleanly a month later",
+    "status": "open",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-09-24",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0013",
+    "title": "Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes",
+    "status": "open",
+    "verdict": null,
+    "source": "desk",
+    "added": "2026-09-24",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0014",
+    "title": "pump.fun graduation rate over a full day: poller running since 27 Sep 10:14 UTC (launchd com.proteus.p0014, stops itself after 24h); score e",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-24",
+    "started_at": "2026-09-28T23:52:33+0100",
+    "verdict_at": "2026-09-28T23:53:08+0100",
+    "minutes": 0,
+    "denied": 1,
+    "note": "First long-running job held: 284 polls at 5 min over 24h, 0 errors, stopped and unloaded itself (launchctl finds no service). 9,910 pools, 7,326 pump.fun launches (a floor: the 40-row feed saturated o",
+    "artefact": "experiments/2026-09-27-P-0014"
+   },
+   {
+    "id": "P-0015",
+    "title": "MOT History API with a registered key: one car trail end to end, rate limits measured",
+    "status": "killed",
+    "verdict": null,
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0016",
+    "title": "Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV",
+    "status": "killed",
+    "verdict": null,
+    "source": "persona",
+    "added": "2026-09-24",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0017",
+    "title": "Wikimedia pageviews quota: fill the six clubs P-0010 lost to 429 and measure the window (calls per minute, per hour) from this address",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-24",
+    "started_at": "2026-09-25T23:32:18+0100",
+    "verdict_at": "2026-09-25T23:33:58+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "All six missing clubs filled at a 2 s pace, no 429. Burst at 0.5 s spacing refused on call 9 (Retry-After 31) and cleared in 15 s, so it is a short-window rate limit, not the per-address quota P-0010 ",
+    "artefact": "experiments/2026-09-25-P-0017"
+   },
+   {
+    "id": "P-0018",
+    "title": "UK statutory Fuel Finder scheme: is the replacement for the CMA open feeds live and readable without a key? Compare its coverage and freshne",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "field-notes",
+    "added": "2026-09-25",
+    "started_at": "2026-09-25T23:30:20+0100",
+    "verdict_at": "2026-09-25T23:32:14+0100",
+    "minutes": 1,
+    "denied": 1,
+    "note": "Fuel Finder is live (GOV.UK, Feb 2026) but the API needs a GOV.UK One Login plus OAuth client credentials (bare call: 403 missing token). The public CSV button returns an obfuscated nxhex blob decoded",
+    "artefact": "experiments/2026-09-25-P-0018"
+   },
+   {
+    "id": "P-0019",
+    "title": "hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a valid mp4?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-26",
+    "started_at": "2026-09-26T23:35:02+0100",
+    "verdict_at": "2026-09-26T23:38:45+0100",
+    "minutes": 3,
+    "denied": 1,
+    "note": "Tarball fetch (git clone denied), npm install --ignore-scripts, demo, lint 0/0, draft render rc 0 in 60 s: h264 1920x1080 30fps 8.000 s mp4, 1.26 MB, no key or account. Studio preview not run; render ",
+    "artefact": "experiments/2026-09-26-P-0019"
+   },
+   {
+    "id": "P-0020",
+    "title": "Reladraw: does npm install plus a 3-node diagram definition render to an image keylessly?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-26",
+    "started_at": "2026-09-26T23:38:52+0100",
+    "verdict_at": "2026-09-26T23:39:53+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "reladraw 0.5.0 installs with zero dependencies in 1.7 s and renders a 3-node text diagram to well-formed SVG in 0.3 s, byte-identical twice. Gap-is-a-minimum claim holds exactly: 56 px apart alone, 34",
+    "artefact": "experiments/2026-09-26-P-0020"
+   },
+   {
+    "id": "P-0021",
+    "title": "PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone?",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "harvest",
+    "added": "2026-09-26",
+    "started_at": "2026-09-30T23:42:03+0100",
+    "verdict_at": "2026-09-30T23:42:33+0100",
+    "minutes": 0,
+    "denied": 2,
+    "note": "Tarball pulled by curl after git clone was denied; npm install denied by the unattended hook, so nothing rendered. Source hardcodes a Windows Chrome path and a d3d11 ANGLE flag, so a Mac run needs --c",
+    "artefact": "experiments/2026-09-30-P-0021"
+   },
+   {
+    "id": "P-0022",
+    "title": "magpie: does its config edit touch only the target key and leave the rest of settings.json untouched?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-26",
+    "started_at": "2026-09-26T23:39:59+0100",
+    "verdict_at": "2026-09-26T23:42:12+0100",
+    "minutes": 2,
+    "denied": 0,
+    "note": "Ran magpie's own internal/edit SetJSON/DelJSON (Go 1.27.1 fetched to sandbox) on 9 copies of a commented JSONC settings.json: every edit changed only the target span, comments, order and commas intact",
+    "artefact": "experiments/2026-09-26-P-0022"
+   },
+   {
+    "id": "P-0023",
+    "title": "golive-skill: does detect/plan work account-free, and does apply refuse without --yes?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-26",
+    "started_at": "2026-09-26T23:42:16+0100",
+    "verdict_at": "2026-09-26T23:44:00+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "golive 0.1.0-alpha.4 in a fake HOME: detect found Next plus Supabase, Stripe, Resend and flagged 2 client-exposed env names correctly; plan gave id aa01065b3dc3 but only 5 human login steps, provider ",
+    "artefact": "experiments/2026-09-26-P-0023"
+   },
+   {
+    "id": "P-0024",
+    "title": "Pitch judgement book scorer: can a keyless results source (eloratings.net or similar) score pitch/JUDGEMENT.csv for the Nations League windo",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-26",
+    "started_at": "2026-09-27T23:37:49+0100",
+    "verdict_at": "2026-09-27T23:38:54+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "eloratings.net latest.tsv is keyless and carried the 27 Sep results within hours; all 24 book fixtures mapped, 8 scored: my Brier 0.572 vs market 0.559, over-2.5 Brier 0.207 vs 0.220. Not written to t",
+    "artefact": "experiments/2026-09-27-P-0024"
+   },
+   {
+    "id": "P-0025",
+    "title": "Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed?",
+    "status": "open",
+    "verdict": null,
+    "source": "harvest",
+    "added": "2026-09-27",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0026",
+    "title": "AgentMail MCP: does the hosted endpoint answer or refuse a tool-list call with no API key at all?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-27",
+    "started_at": "2026-09-27T23:35:22+0100",
+    "verdict_at": "2026-09-27T23:35:59+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Keyless initialize and tools/list both get HTTP 401 in 0.2s with a spec-shaped MCP OAuth challenge; the RFC 9728 metadata is public and names Clerk as the auth server, so the tool catalogue is gated b",
+    "artefact": "experiments/2026-09-27-P-0026"
+   },
+   {
+    "id": "P-0027",
+    "title": "lightpanda: does the from-scratch Zig browser really fetch a public page, and how fast is it against a plain curl?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-27",
+    "started_at": "2026-09-27T23:36:06+0100",
+    "verdict_at": "2026-09-27T23:37:44+0100",
+    "minutes": 1,
+    "denied": 2,
+    "note": "x86_64 nightly fetched and dumped 4 of 4 public pages with titles, post-JS DOM up to 140KB larger than raw HTML; 0.15 to 1.1s slower than curl per page, peak RSS under 82MB. Chrome comparison not run.",
+    "artefact": "experiments/2026-09-27-P-0027"
+   },
+   {
+    "id": "P-0028",
+    "title": "anidoodle: does the same style script really render byte-identical output across two runs, as the determinism claim says?",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "harvest",
+    "added": "2026-09-27",
+    "started_at": "2026-09-30T23:42:37+0100",
+    "verdict_at": "2026-09-30T23:43:16+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Rendering needs node, not allowed unattended. Static grep: no clock or Math.random in the art core, and a shipped gate.mjs lint fails the build on them, so same-machine determinism is designed in; cro",
+    "artefact": "experiments/2026-09-30-P-0028"
+   },
+   {
+    "id": "P-0029",
+    "title": "Judgement book: write pass marks in PASS-MARKS.md, then move the eloratings scorer from sandbox/judgement into pitch/ and fill JUDGEMENT.csv",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-27",
+    "started_at": "2026-09-27T23:39:05+0100",
+    "verdict_at": "2026-09-27T23:40:24+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Pass marks committed alone before any result entered the book, with the 8 privately seen rows excluded; pitch/score_judgement.py filled those 8 (seen paired Brier +0.0135 vs market) and a rerun filled",
+    "artefact": "experiments/2026-09-27-P-0029"
+   },
+   {
+    "id": "P-0030",
+    "title": "hn.watch: does a fresh item reach playable video in under 10 seconds with no login?",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "harvest",
+    "added": "2026-09-28",
+    "started_at": "2026-09-28T23:33:45+0100",
+    "verdict_at": "2026-09-28T23:45:53+0100",
+    "minutes": 12,
+    "denied": 0,
+    "note": "45 of 60 front-page stories are pre-generated and their explain page comes back in 0.1 to 0.5 s with no login; two ungenerated stories clicked from the hidden pane showed no playback and no server-sid",
+    "artefact": "experiments/2026-09-28-P-0030"
+   },
+   {
+    "id": "P-0031",
+    "title": "mcp-youtube-transcript: does it return a full keyless transcript for a public 28 minute video, and in how many pages?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-28",
+    "started_at": "2026-09-28T23:45:58+0100",
+    "verdict_at": "2026-09-28T23:52:28+0100",
+    "minutes": 6,
+    "denied": 2,
+    "note": "PyPI 0.3.5 dies on import with the unpinned mcp SDK (2.2.0 dropped mcp.server.FastMCP); pinned to mcp 1.30.0 it lists one tool, not the README's four, and returned a 29.7 min video complete in 1 page ",
+    "artefact": "experiments/2026-09-28-P-0031"
+   },
+   {
+    "id": "P-0032",
+    "title": "pump.fun poller v2: 10 pages a poll at 2 min, plus each new pump-fun pool's attributes at first sight, so launches are not missed (P-0014 sa",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-28",
+    "started_at": "2026-09-28T23:53:12+0100",
+    "verdict_at": "2026-09-28T23:56:21+0100",
+    "minutes": 3,
+    "denied": 0,
+    "note": "Built and loaded (launchctl bootstrap rc 0 via the script): 6 pages every 2 min with trimmed first-sight and 5-minute snapshots for pump-fun and pumpswap pools; hand poll of 10 pages drew 429 from pag",
+    "artefact": "experiments/2026-09-28-P-0032"
+   },
+   {
+    "id": "P-0033",
+    "title": "Score P-0032, the pump.fun poller v2 (6 pages every 2 min, 24h from 28 Sep 22:54 UTC, launchd com.proteus.p0032): true launch and graduation",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-28",
+    "started_at": "2026-10-01T23:52:34+0100",
+    "verdict_at": "2026-10-01T23:53:26+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Poller v2 counted 26,645 pump.fun launches a day (P-0014 floor 7,326, my estimate 14,000), feed overrun on 5 percent of polls. Graduation rate unscorable: no token address stored, name match gives a 0",
+    "artefact": "experiments/2026-10-01-P-0033"
+   },
+   {
+    "id": "P-0034",
+    "title": "Metaculus API with the vault token: pull open binary questions and community forecasts, measure the rate limit, and score the Pitch-adjacent",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "persona",
+    "added": "2026-09-29",
+    "started_at": "2026-09-29T23:35:17+0100",
+    "verdict_at": "2026-09-29T23:38:21+0100",
+    "minutes": 3,
+    "denied": 1,
+    "note": "The Metaculus pull never ran: the 1Password service account op call hung twice from the scheduled run (30s and 90s timeouts, no error). Same account worked interactively on 29 Sep, so the nightly sand",
+    "artefact": "experiments/2026-09-29-P-0034"
+   },
+   {
+    "id": "P-0035",
+    "title": "Browserless API (key already in the vault): can a hosted browser open a page, wait for a postMessage and screenshot it, so viewer-gated prob",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "persona",
+    "added": "2026-09-29",
+    "started_at": "2026-09-29T23:38:26+0100",
+    "verdict_at": "2026-09-29T23:39:07+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Not run: the Browserless key is in the Proteus vault and op timed out again at 30s from the scheduled run, the third hang tonight. A keyless call would only show the auth wall.",
+    "artefact": "experiments/2026-09-29-P-0035"
+   },
+   {
+    "id": "P-0036",
+    "title": "SportsGameOdds API (key in the PROTEUS vault): which soccer competitions and markets does the amateur tier carry, and at what rate limit",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-29",
+    "started_at": null,
+    "verdict_at": "2026-09-29T01:25:39+0100",
+    "minutes": null,
+    "denied": 0,
+    "note": "Amateur tier: 10 requests a minute, soccer limited to Champions League and MLS (Nations League 400). A Champions League event carries 476 odd ids incl. cornerKicks, bothTeamsScored, first and last sco",
+    "artefact": "experiments/2026-09-29-P-0036"
+   },
+   {
+    "id": "P-0037",
+    "title": "TokenCast: does the public repo reproduce its token-forecast error on one suite from shipped traces?",
+    "status": "done",
+    "verdict": "broken",
+    "source": "harvest",
+    "added": "2026-09-29",
+    "started_at": "2026-09-29T23:39:12+0100",
+    "verdict_at": "2026-09-29T23:39:36+0100",
+    "minutes": 0,
+    "denied": 1,
+    "note": "The paper says the code is available; the repo holds one 143-byte README saying code comes soon, one commit on 29 Sep. Nothing to run, so the 14.5 percent error claim is unreproducible for now.",
+    "artefact": "experiments/2026-09-29-P-0037"
+   },
+   {
+    "id": "P-0038",
+    "title": "motion-broll: does its example clip render offline with motion blur, and is a second render byte-identical?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-29",
+    "started_at": "2026-09-29T23:39:40+0100",
+    "verdict_at": "2026-09-29T23:43:56+0100",
+    "minutes": 4,
+    "denied": 1,
+    "note": "Example clip rendered offline twice from one self-contained HTML: 186 frames 1080p, 101s cold and 70s warm, byte-identical sha256 both times. Motion blur is four visible ghost samples, not a smooth sm",
+    "artefact": "experiments/2026-09-29-P-0038"
+   },
+   {
+    "id": "P-0039",
+    "title": "Metaculus API with the vault token via the 1Password SDK: open binary questions, community forecasts, rate limit, any football questions (re",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-30",
+    "started_at": "2026-09-30T23:43:21+0100",
+    "verdict_at": "2026-09-30T23:44:35+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Token read by the 1Password SDK unattended in 2s (op hung last night); 100 open binary posts per call, but community forecast null on all 100 even with with_cp=true and on a 68-forecaster question pas",
+    "artefact": "experiments/2026-09-30-P-0039"
+   },
+   {
+    "id": "P-0040",
+    "title": "Browserless API via the 1Password SDK key: can a hosted browser open a page, wait for a postMessage and screenshot it (reopens P-0035)",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-30",
+    "started_at": "2026-09-30T23:44:38+0100",
+    "verdict_at": "2026-09-30T23:45:20+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "One /function call with the vault key: page posted itself a message at 1.5s, hosted Chrome waited for it and returned text and an 8,993-byte PNG; 3.23s wall, 1,628ms in-browser. No unit headers, so co",
+    "artefact": "experiments/2026-09-30-P-0040"
+   },
+   {
+    "id": "P-0041",
+    "title": "Grinder scanner past 48h: pull established Solana pools (7 to 90 days, 20k+ holders, top-10 share 10 to 30 percent, no rugcheck risks) from ",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-09-30",
+    "started_at": null,
+    "verdict_at": "2026-09-30T17:43:02+0100",
+    "minutes": null,
+    "denied": 0,
+    "note": "Scanner now snapshots up to 40 established pools (7 to 400 days) a night with the young ones, from a standing list seeded with the 20 age-rejected tokens; 34 on first run. The live book is unchanged; ",
+    "artefact": "experiments/2026-09-30-P-0041"
+   },
+   {
+    "id": "P-0042",
+    "title": "Launch observation, keyless: watch 50 pump.fun launches on the public RPC websocket and measure first-block buyers, bundled wallets, creator",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-09-30",
+    "started_at": null,
+    "verdict_at": "2026-09-30T19:15:48+0100",
+    "minutes": null,
+    "denied": 0,
+    "note": "30 pump.fun launches read from the chain, keyless: creator buys in the creation tx 83 percent, a sniper in the same block 70 percent, first sell at 2 s, creator sells at median 12.5 s (73 percent with",
+    "artefact": "experiments/2026-09-30-P-0042"
+   },
+   {
+    "id": "P-0043",
+    "title": "Fit the log-opinion-pool weight on the Pitch desk's scored predictions against the de-vigged market (arXiv 2608.11505 method): weight, full ",
+    "status": "done",
+    "verdict": "works",
+    "source": "field-notes",
+    "added": "2026-09-30",
+    "started_at": "2026-09-30T23:45:23+0100",
+    "verdict_at": "2026-09-30T23:46:39+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "On the 24 Sep walk-forward backtest (6,265 fit, 501 test matches) the fitted log-pool weight is 0.00 for DC, Elo and SoT against both open and close, fit profile monotone in all six; unconstrained min",
+    "artefact": "experiments/2026-09-30-P-0043"
+   },
+   {
+    "id": "P-0044",
+    "title": "motion-video-kit scripts: do frozen-time and loudness checks run keyless on a generated test video and give numbers?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-09-30",
+    "started_at": "2026-09-30T23:46:43+0100",
+    "verdict_at": "2026-09-30T23:47:29+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "On a 6s test video built with known answers, frozen-time.sh reported 2.9s near-frozen against about 3.0 and loudness.sh -21.8 LUFS against a pre-computed -21.8, each in under 0.25s, keyless, ffmpeg on",
+    "artefact": "experiments/2026-09-30-P-0044"
+   },
+   {
+    "id": "P-0045",
+    "title": "oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x?",
+    "status": "open",
+    "verdict": null,
+    "source": "harvest",
+    "added": "2026-10-01",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0046",
+    "title": "xG from scratch: does distance-and-angle logistic regression beat a constant baseline on StatsBomb open shots?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-01",
+    "started_at": "2026-10-01T23:46:30+0100",
+    "verdict_at": "2026-10-01T23:48:04+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Yes: on 843 held-out non-penalty shots (WC 2022 and Euro 2024), distance and angle logistic scores log loss 0.280 v constant 0.308 v StatsBomb xG 0.249; adding a header flag gives 0.268, 69 percent of",
+    "artefact": "experiments/2026-10-01-P-0046"
+   },
+   {
+    "id": "P-0047",
+    "title": "sports-skills: do Understat xG and ClubElo pulls work keyless, and how closely do they match the Pitch ratings?",
+    "status": "done",
+    "verdict": "broken",
+    "source": "harvest",
+    "added": "2026-10-01",
+    "started_at": "2026-10-01T23:48:08+0100",
+    "verdict_at": "2026-10-01T23:51:09+0100",
+    "minutes": 3,
+    "denied": 0,
+    "note": "Upstream sources failed tonight: api.clubelo.com gave HTTP 502 then timed out over https, Understat timed out twice; clubelo.com itself answered 301, so comparison with Pitch ratings never started. Ca",
+    "artefact": "experiments/2026-10-01-P-0047"
+   },
+   {
+    "id": "P-0048",
+    "title": "Paperclip agent orchestrator: does it install and boot locally keyless, and what does its task and approval state look like on disk?",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "field-notes",
+    "added": "2026-10-01",
+    "started_at": "2026-10-01T23:51:14+0100",
+    "verdict_at": "2026-10-01T23:52:30+0100",
+    "minutes": 1,
+    "denied": 2,
+    "note": "Not booted: 95.8k stars, MIT, Node 25.6 here meets the 24.11 floor; source shows all state in an embedded Postgres under ~/.paperclip/instances/<id>, overridable by PAPERCLIP_HOME. Running fresh npm c",
+    "artefact": "experiments/2026-10-01-P-0048"
+   },
+   {
+    "id": "P-0049",
+    "title": "pump.fun poller v3: store base token address and take the 5-minute snapshot per token, so graduation rate and minute-five profile are measur",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-10-01",
+    "started_at": "2026-10-01T23:53:31+0100",
+    "verdict_at": "2026-10-01T23:55:31+0100",
+    "minutes": 2,
+    "denied": 0,
+    "note": "Poller v3 built and loaded as launchd job com.proteus.p0049 for 24 h from 22:55 UTC: base token stored per pool, 5-minute snapshots by pools/multi lookup. Hand poll: 23 of 23 lookups returned, 3 gradu",
+    "artefact": "experiments/2026-10-01-P-0049"
+   },
+   {
+    "id": "P-0050",
+    "title": "Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup ",
+    "status": "killed",
+    "verdict": null,
+    "source": "desk",
+    "added": "2026-10-01",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0051",
+    "title": "Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup ",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-10-01",
+    "started_at": "2026-10-03T23:45:07+0100",
+    "verdict_at": "2026-10-03T23:46:18+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Poller v3 ran 24h and stopped itself; 99.4 pct of 25,165 launches snapshotted despite 429s on 460 of 469 polls. 2.28 pct graduate by token, 82 pct of them inside 7 min; for the slow rest, 50+ buyers a",
+    "artefact": "experiments/2026-10-03-P-0051"
+   },
+   {
+    "id": "P-0052",
+    "title": "Lichess bot v0: accept a challenge from Luke's account only, play legal moves from a local engine, log the game; does a full game complete w",
+    "status": "killed",
+    "verdict": null,
+    "source": "persona",
+    "added": "2026-10-02",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0053",
+    "title": "Lichess bot v0: challenge one online bot that accepts challenges, play legal moves from a local engine, log the game; does a full game compl",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-10-02",
+    "started_at": null,
+    "verdict_at": "2026-10-02T01:17:27+0100",
+    "minutes": null,
+    "denied": 0,
+    "note": "Full bot loop works: Stockfish 19 at 0.3 s a move, 2 bots declined bot challenges, charibot accepted, won by mate on move 17 as Black (lichess.org/L8DoZpEZ), 17 moves sent, 0 errors. Opponent was weak",
+    "artefact": "experiments/2026-10-02-P-0053"
+   },
+   {
+    "id": "P-0054",
+    "title": "ldraw-nova: does its Python toolset validate a hand-written LDraw model offline with no LLM or key?",
+    "status": "done",
+    "verdict": "broken",
+    "source": "harvest",
+    "added": "2026-10-02",
+    "started_at": "2026-10-02T23:48:01+0100",
+    "verdict_at": "2026-10-02T23:48:28+0100",
+    "minutes": 0,
+    "denied": 1,
+    "note": "The public repo has 7 files and no Python: the toolset in the HN post is unpublished, and the repo ships the prompt that would generate it. The only validator is a bash wrapper around the LDView deskt",
+    "artefact": "experiments/2026-10-02-P-0054"
+   },
+   {
+    "id": "P-0055",
+    "title": "Reddit RSS: does a keyless HTTP fetch of a public subreddit and thread feed return text from this machine?",
+    "status": "done",
+    "verdict": "works",
+    "source": "vault",
+    "added": "2026-10-02",
+    "started_at": "2026-10-02T23:45:23+0100",
+    "verdict_at": "2026-10-02T23:47:57+0100",
+    "minutes": 2,
+    "denied": 0,
+    "note": "Keyless subreddit RSS returns 200 with 25 Atom entries; JSON is 403 Blocked and old.reddit serves HTML. The rate budget is about one request per rolling minute per IP (x-ratelimit-remaining 0.0 after ",
+    "artefact": "experiments/2026-10-02-P-0055"
+   },
+   {
+    "id": "P-0056",
+    "title": "youtube-transcript-plus: does it return captions for 3 public videos from this IP with no proxy?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-02",
+    "started_at": "2026-10-02T23:48:32+0100",
+    "verdict_at": "2026-10-02T23:49:55+0100",
+    "minutes": 1,
+    "denied": 1,
+    "note": "A line-for-line Python port of its InnerTube ANDROID-client path (npm was denied) returned 108, 135 and 210 caption segments for the three videos that drew IpBlocked in tonight's harvest. youtube-tran",
+    "artefact": "experiments/2026-10-02-P-0056"
+   },
+   {
+    "id": "P-0057",
+    "title": "Skill reference files: how many local ones run past 100 lines with no contents list at the top?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-03",
+    "started_at": "2026-10-03T23:44:20+0100",
+    "verdict_at": "2026-10-03T23:45:02+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "335 skill reference files on this Mac, 184 over 100 lines, 170 of those (92%) with no contents list in the first 40 lines; hyperframes-animation alone has 58. Count only, not tested whether it changes",
+    "artefact": "experiments/2026-10-03-P-0057"
+   },
+   {
+    "id": "P-0058",
+    "title": "Pitch results feed: is the latest football-data result really 20 Sep, so 26 Sep onwards matches are unscored and the refit is stuck?",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-10-04",
+    "started_at": "2026-10-04T23:51:23+0100",
+    "verdict_at": "2026-10-04T23:52:08+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Not stuck: football-data files end 20 Sep (Last-Modified 21 Sep) because no league match has been played since; first unplayed PL match is number 51 on 10 Oct. Check as_of moves past 9 Oct by the 13 O",
+    "artefact": "experiments/2026-10-04-P-0058"
+   },
+   {
+    "id": "P-0059",
+    "title": "answer-me-with-html: does its bundled CLI render a Markdown draft to an HTML page in under a second offline?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-04",
+    "started_at": "2026-10-04T23:46:06+0100",
+    "verdict_at": "2026-10-04T23:47:16+0100",
+    "minutes": 1,
+    "denied": 1,
+    "note": "Bundled am.mjs rendered three Markdown drafts to self-contained HTML in 0.33 to 0.39 s each, zero external refs, and my guessed flow block laid out as SVG first time; the 7.4x token claim was not test",
+    "artefact": "experiments/2026-10-04-P-0059"
+   },
+   {
+    "id": "P-0060",
+    "title": "live-panel-skill: does render.py make an mp4 from its example config and does check_frames.py pass?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-04",
+    "started_at": "2026-10-04T23:47:20+0100",
+    "verdict_at": "2026-10-04T23:50:31+0100",
+    "minutes": 3,
+    "denied": 0,
+    "note": "render.py made a 30 s 1200x1500 H.264 mp4 from the codex-agents config in 142 s; check_frames.py --repeat passed 124 time points and replayed frames were pixel-identical (max delta 0).",
+    "artefact": "experiments/2026-10-04-P-0060"
+   },
+   {
+    "id": "P-0061",
+    "title": "replica-skill: does its recon tooling turn a public help page into a features.csv of 10+ rows?",
+    "status": "done",
+    "verdict": "not-worth-it",
+    "source": "harvest",
+    "added": "2026-10-04",
+    "started_at": "2026-10-04T23:50:37+0100",
+    "verdict_at": "2026-10-04T23:51:19+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Recon has no tooling: it is a SKILL.md and an 18-row template CSV the model fills; the only scripts are a parity counter (ran, scored the template 0/100) and a keyword ranker over a reviews CSV you su",
+    "artefact": "experiments/2026-10-04-P-0061"
+   },
+   {
+    "id": "P-0062",
+    "title": "Lichess bot: do challenges with a rating floor get any acceptance above 2000, or does the provisional 3129 make every rated game worth +0?",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-10-04",
+    "started_at": "2026-10-05T23:57:01+0100",
+    "verdict_at": "2026-10-05T23:57:40+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Above 2000, 1 of 25 bots accepted (9 declined, 14 refused with HTTP 400, 1 silent); the draw v 2990 cost 72 points, so rated games are not +0, only wins over far weaker bots are. The script then hit 5",
+    "artefact": "experiments/2026-10-05-P-0062"
+   },
+   {
+    "id": "P-0063",
+    "title": "Nightwatch: can Open-Meteo hourly cloud cover alone give tonight's longest clear dark run for a UK site?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-05",
+    "started_at": "2026-10-05T23:55:32+0100",
+    "verdict_at": "2026-10-05T23:56:05+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "One keyless Open-Meteo call per site plus a local sun-altitude calc gives the longest clear dark run in under a second; tonight it is 0 hours at Kielder, Exmoor and Galloway (6 to 7 dark hours, all 99",
+    "artefact": "experiments/2026-10-05-P-0063"
+   },
+   {
+    "id": "P-0064",
+    "title": "mesh-avatar-studio: does the bundled sample avatar install, load and lip-sync with no keys?",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "harvest",
+    "added": "2026-10-05",
+    "started_at": "2026-10-05T23:56:14+0100",
+    "verdict_at": "2026-10-05T23:56:56+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "Tarball fetched and read: sample avatar bundled, no keys or outbound calls in the source, 2 runtime deps. Lip-sync from audio is loudness only with a random vowel per syllable; never ran in a browser ",
+    "artefact": "experiments/2026-10-05-P-0064"
+   },
+   {
+    "id": "P-0065",
+    "title": "mg-styles-15: does one film's source render to a 10s mp4 with audio from the README steps in under 20 minutes?",
+    "status": "done",
+    "verdict": "blocked",
+    "source": "harvest",
+    "added": "2026-10-06",
+    "started_at": "2026-10-07T00:01:14+0100",
+    "verdict_at": "2026-10-07T00:08:21+0100",
+    "minutes": 7,
+    "denied": 2,
+    "note": "Picture renders keyless: a 90-line Python CDP stand-in for render.mjs made 300 frames, 10.0 s, in 21 s once missing-font loads were made to fail soft. No audio: pedalboard has no Python 3.14 build and",
+    "artefact": "experiments/2026-10-07-P-0065"
+   },
+   {
+    "id": "P-0066",
+    "title": "Wikidata nested conditions: can a 3-condition query that replaces a named entity still return exactly one answer?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-06",
+    "started_at": "2026-10-07T00:08:26+0100",
+    "verdict_at": "2026-10-07T00:13:09+0100",
+    "minutes": 4,
+    "denied": 0,
+    "note": "Keyless, 183 SPARQL calls: all 5 famous targets were unique on one rare claim; nested 3-condition versions stayed unique for 3 of 5 (90 and 342 answers for the others), and 2 of those 3 leaked the ans",
+    "artefact": "experiments/2026-10-07-P-0066"
+   },
+   {
+    "id": "P-0067",
+    "title": "3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' keyless?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-06",
+    "started_at": "2026-10-07T00:13:14+0100",
+    "verdict_at": "2026-10-07T00:14:25+0100",
+    "minutes": 1,
+    "denied": 0,
+    "note": "Server not run (npm). Its endpoints called directly: 7 of 19 sources tested, all answered keyless; 6 have tree assets (BlenderKit 1314 free, licence per result; Poly Haven 33 CC0); ambientCG 0 (materi",
+    "artefact": "experiments/2026-10-07-P-0067"
+   },
+   {
+    "id": "P-0068",
+    "title": "by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio?",
+    "status": "done",
+    "verdict": "broken",
+    "source": "harvest",
+    "added": "2026-10-06",
+    "started_at": "2026-10-07T01:31:42+0100",
+    "verdict_at": "2026-10-07T01:40:02+0100",
+    "minutes": 8,
+    "denied": 0,
+    "note": "As shipped it fails twice on this Mac: YouTube download 403, and the local route crashes because faster-whisper 1.2.1 needs PyAV 16 or older. Pinned, a 66 s known-text clip took 83 s with word error 0",
+    "artefact": "experiments/2026-10-07-P-0068"
+   },
+   {
+    "id": "P-0069",
+    "title": "Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my m",
+    "status": "done",
+    "verdict": "works",
+    "source": "desk",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T01:50:13+0100",
+    "verdict_at": "2026-10-07T01:57:30+0100",
+    "minutes": 7,
+    "denied": 0,
+    "note": "On 930 English matches in 2025-26, penaltyblog's Dixon-Coles and mine differ by 0.18 points on average (Brier 0.6372 v 0.6373; closing market 0.6201), so the Pitch's gap is information, not a bug. Soc",
+    "artefact": "experiments/2026-10-07-P-0069"
+   },
+   {
+    "id": "P-0070",
+    "title": "mg-styles-15 rerun of P-0065: does 01-flat-vector's audio.py render on a Python 3.12 inside the folder and mux into the 10s mp4?",
+    "status": "done",
+    "verdict": "works",
+    "source": "backlog",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": "2026-10-07T00:51:17+0100",
+    "minutes": null,
+    "denied": 0,
+    "note": "Interactive rerun. python-build-standalone 3.12.15 x86_64 unpacked to sandbox/python312, venv sandbox/py312-venv; the hook allows it because its realpath stays inside PROTEUS. Real cause was 3.14 on I",
+    "artefact": "experiments/2026-10-07-P-0065/REPORT.md"
+   },
+   {
+    "id": "P-0071",
+    "title": "Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions?",
+    "status": "done",
+    "verdict": "works",
+    "source": "harvest",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T01:40:06+0100",
+    "verdict_at": "2026-10-07T01:44:17+0100",
+    "minutes": 4,
+    "denied": 0,
+    "note": "On Tears of Steel (12 min 14 s, CC-BY, YouTube refused downloads tonight) ffmpeg at 0.3 picked 136 frames in 13.6 s, one per 5.4 s; the 76 subtitle cues point at 55 of them and 24 cues span a cut. Con",
+    "artefact": "experiments/2026-10-07-P-0071"
+   },
+   {
+    "id": "P-0072",
+    "title": "Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest thei",
+    "status": "open",
+    "verdict": null,
+    "source": "refill",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": " Retitled 7 Oct on Luke's word.",
+    "artefact": null
+   },
+   {
+    "id": "P-0073",
+    "title": "Supercar price map: every McLaren 720S, Ferrari and Lamborghini for sale in the UK, which models hold or gain value over five years, and wha",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T01:46:56+0100",
+    "verdict_at": "2026-10-07T01:49:02+0100",
+    "minutes": 2,
+    "denied": 0,
+    "note": "23 McLaren 720S for sale in the UK; cheapest 134,100 GBP (2020), four coupes at or under 140,000, and 2017 to 2020 coupes all sit at 134k to 150k whatever the year. A 2017 Ferrari 488 GTB keeps about ",
+    "artefact": "experiments/2026-10-07-P-0073"
+   },
+   {
+    "id": "P-0074",
+    "title": "OnlyFans management agency: how the money flows, typical splits and costs, what the platform rules and UK law allow, and whether an honest v",
+    "status": "open",
+    "verdict": null,
+    "source": "refill",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0075",
+    "title": "Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and",
+    "status": "open",
+    "verdict": null,
+    "source": "refill",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0076",
+    "title": "Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a mont",
+    "status": "open",
+    "verdict": null,
+    "source": "refill",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": " Retitled 7 Oct on Luke's word.",
+    "artefact": null
+   },
+   {
+    "id": "P-0077",
+    "title": "Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces",
+    "status": "open",
+    "verdict": null,
+    "source": "refill",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0078",
+    "title": "Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and ch",
+    "status": "open",
+    "verdict": null,
+    "source": "refill",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0079",
+    "title": "Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they pa",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T01:44:23+0100",
+    "verdict_at": "2026-10-07T01:46:46+0100",
+    "minutes": 2,
+    "denied": 0,
+    "note": "Real and open now: Metaculus Fall 2026 FutureEval, bots only, 50,000 USD, closes 5 Mar 2027, plus a 1,000 USD MiniBench every two weeks. Spring 2026 paid 30 of 182 bots (1st 5,097, 10th 2,202); Metacu",
+    "artefact": "experiments/2026-10-07-P-0079"
+   },
+   {
+    "id": "P-0080",
+    "title": "FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament",
+    "status": "open",
+    "verdict": null,
+    "source": "persona",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0081",
+    "title": "McLaren 720S running costs: a sourced year of road tax, insurance quotes, main-dealer servicing, tyres and fuel at 5,000 miles, added to the",
+    "status": "done",
+    "verdict": "works",
+    "source": "persona",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T01:49:11+0100",
+    "verdict_at": "2026-10-07T01:50:06+0100",
+    "minutes": 0,
+    "denied": 0,
+    "note": "About 6,100 to 6,850 GBP a year at 5,000 miles: road tax 200 (2017 to 2020 car) or 640, insurance about 2,993 (one published estimate), service 654 to 780 at independents, tyres about 520, fuel 1,735 ",
+    "artefact": "experiments/2026-10-07-P-0081"
+   },
+   {
+    "id": "P-0082",
+    "title": "Trading from free YouTube: take 5 strategy videos (3 Quantified Strategies, 2 Kevin Davey), write each one's rules from the transcript, rebu",
+    "status": "done",
+    "verdict": "works",
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T02:22:06+0100",
+    "verdict_at": "2026-10-07T02:34:47+0100",
+    "minutes": 12,
+    "denied": 0,
+    "note": "Quantified Strategies numbers replicate when rules are given: RSI(5) triple 93 trades vs their 90, RSI(2)<9 235 vs 233 at PF 2.62 vs 2.59 (exit unstated, recovered as close above yesterday high); one ",
+    "artefact": "experiments/2026-10-07-P-0082/README.md"
+   },
+   {
+    "id": "P-0083",
+    "title": "Paper-track SPY RSI(5) simple and triple forward, the only survivors of P-0082: each night after the US close compute the signal from Yahoo ",
+    "status": "done",
+    "verdict": "works",
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T02:42:45+0100",
+    "verdict_at": "2026-10-07T02:57:45+0100",
+    "minutes": 15,
+    "denied": 0,
+    "note": "Built the systems book (systems/): RSI(5) dip-buying on nine index ETFs fixed in advance, both fills, append-only signals, pass marks before the first trade (KILL under zero mean at 30, KEEP at 60 wit",
+    "artefact": "experiments/2026-10-07-P-0083/README.md"
+   },
+   {
+    "id": "P-0084",
+    "title": "Trend following the way the funds run it: one portfolio across 20+ markets (index, bond, gold, oil, currency and commodity ETFs), volatility",
+    "status": "done",
+    "verdict": "works",
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T03:11:26+0100",
+    "verdict_at": "2026-10-07T03:16:52+0100",
+    "minutes": 5,
+    "denied": 0,
+    "note": "Trend following as one 28-ETF portfolio, volatility-sized, parameters committed before the run, 2008-2026: 12-month momentum 3.2% a year (Sharpe 0.28, drawdown 35%), 100-day breakout 4.1% (0.33, 40%),",
+    "artefact": "experiments/2026-10-07-P-0084/README.md"
+   },
+   {
+    "id": "P-0085",
+    "title": "Dip-buying family on SPY and the nine-ETF basket: Williams %R(7) below -95, slow stochastic (7,3) below 25, IBS, SPY down 5% in 5 days, thre",
+    "status": "done",
+    "verdict": "works",
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T03:31:11+0100",
+    "verdict_at": "2026-10-07T03:37:27+0100",
+    "minutes": 6,
+    "denied": 0,
+    "note": "Quantified Strategies replicates again, 5 for 5 (Williams %R(7) 289 trades vs their 288, PF 2.63 vs 2.61; stochastic 394 vs 394). The family is mostly one edge: with the 200-day filter 75 to 97% of tr",
+    "artefact": "experiments/2026-10-07-P-0085/README.md"
+   },
+   {
+    "id": "P-0086",
+    "title": "Darvas box breakout on SPY (12-day high, 0.75% chase cap, volume filter): replicate Quantified Strategies' 279 trades and profit factor 3.08",
+    "status": "open",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0087",
+    "title": "Calendar events on daily SPY since 1993: Fed decision days and the pre-Fed drift (dates from the Fed's own calendar pages), jobs-report Frid",
+    "status": "open",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0088",
+    "title": "Kaufman efficiency ratio (net change over total path) on the 28 P-0084 ETFs: rank which markets trend, then test whether trading only the tr",
+    "status": "open",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0089",
+    "title": "Stricter luck test for the systems book's RSI(5) basket: walk-forward permutation (neurotrader888 mcpt walkforward script) and a same-trade ",
+    "status": "open",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0090",
+    "title": "Monthly timing models: replicate Antonacci global equities momentum (SPY vs EFA vs AGG, 12-month returns against T-bills) and the Fabian 39-",
+    "status": "open",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": null,
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   },
+   {
+    "id": "P-0091",
+    "title": "IBS as a second systems book, real-time rule: IBS below 0.2 at the close, buy the next open, sell the next open after a close above yesterda",
+    "status": "in_progress",
+    "verdict": null,
+    "source": "field-notes",
+    "added": "2026-10-07",
+    "started_at": "2026-10-07T03:43:49+0100",
+    "verdict_at": null,
+    "minutes": null,
+    "denied": 0,
+    "note": "",
+    "artefact": null
+   }
+  ]
+ },
+ "grinder": {
+  "current": "v0.2",
+  "books": {
+   "v0.1": {
+    "start": 100.0,
+    "bankroll": 93.54,
+    "opened": 6,
+    "closed": 6,
+    "open": 0,
+    "exit_reasons": {
+     "stop_loss": 3,
+     "take_profit": 2,
+     "rug": 1
+    },
+    "rugged": 1,
+    "hit_rate": 0.333,
+    "expectancy": -1.08,
+    "best": 15.37,
+    "worst": -7.2,
+    "best_removed_expectancy": -4.37
+   },
+   "v0.2": {
+    "start": 1000.0,
+    "bankroll": 1391.78,
+    "opened": 48,
+    "closed": 44,
+    "open": 4,
+    "exit_reasons": {
+     "take_profit": 19,
+     "stop_loss": 24,
+     "rug": 1
+    },
+    "rugged": 1,
+    "hit_rate": 0.432,
+    "expectancy": 8.9,
+    "best": 93.66,
+    "worst": -96.66,
+    "best_removed_expectancy": 6.93
+   }
+  },
+  "stats": {
+   "start": 1000.0,
+   "bankroll": 1391.78,
+   "opened": 48,
+   "closed": 44,
+   "open": 4,
+   "exit_reasons": {
+    "take_profit": 19,
+    "stop_loss": 24,
+    "rug": 1
+   },
+   "rugged": 1,
+   "hit_rate": 0.432,
+   "expectancy": 8.9,
+   "best": 93.66,
+   "worst": -96.66,
+   "best_removed_expectancy": 6.93
+  },
+  "path": [
+   {
+    "at": "2026-09-25T22:26:11Z",
+    "bankroll": 1000.0,
+    "id": null
+   },
+   {
+    "at": "2026-09-25T22:28:00Z",
+    "bankroll": 947.23,
+    "id": "G-0008",
+    "token": "TRUMP",
+    "pnl": -52.77,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-25T22:32:00Z",
+    "bankroll": 893.95,
+    "id": "G-0009",
+    "token": "GHOSTGUY",
+    "pnl": -53.28,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-25T22:41:00Z",
+    "bankroll": 840.95,
+    "id": "G-0010",
+    "token": "JEANWORK",
+    "pnl": -53.0,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-25T23:53:00Z",
+    "bankroll": 933.38,
+    "id": "G-0007",
+    "token": "e/acc",
+    "pnl": 92.43,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-09-26T22:32:00Z",
+    "bankroll": 1026.7,
+    "id": "G-0012",
+    "token": "manifest",
+    "pnl": 93.32,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-09-26T22:48:00Z",
+    "bankroll": 973.97,
+    "id": "G-0011",
+    "token": "SPLIT",
+    "pnl": -52.73,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-27T02:49:00Z",
+    "bankroll": 921.28,
+    "id": "G-0013",
+    "token": "KARDASHEV",
+    "pnl": -52.69,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-27T21:13:00Z",
+    "bankroll": 868.68,
+    "id": "G-0014",
+    "token": "7",
+    "pnl": -52.6,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-27T23:32:00Z",
+    "bankroll": 815.75,
+    "id": "G-0017",
+    "token": "NEARPAD",
+    "pnl": -52.93,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-27T23:34:00Z",
+    "bankroll": 762.96,
+    "id": "G-0015",
+    "token": "VAULT",
+    "pnl": -52.79,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-28T07:49:00Z",
+    "bankroll": 710.06,
+    "id": "G-0018",
+    "token": "JACK",
+    "pnl": -52.9,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-28T12:38:00Z",
+    "bankroll": 657.27,
+    "id": "G-0016",
+    "token": "bukangi",
+    "pnl": -52.79,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-29T00:42:00Z",
+    "bankroll": 750.07,
+    "id": "G-0021",
+    "token": "HOOKED",
+    "pnl": 92.8,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-09-29T02:35:00Z",
+    "bankroll": 697.34,
+    "id": "G-0022",
+    "token": "STOXES",
+    "pnl": -52.73,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-29T05:04:00Z",
+    "bankroll": 789.98,
+    "id": "G-0020",
+    "token": "HOOKEDCAT",
+    "pnl": 92.64,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-09-29T15:16:00Z",
+    "bankroll": 737.24,
+    "id": "G-0019",
+    "token": "FROINK",
+    "pnl": -52.74,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-29T22:45:00Z",
+    "bankroll": 684.15,
+    "id": "G-0024",
+    "token": "SI",
+    "pnl": -53.09,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-29T23:33:00Z",
+    "bankroll": 631.13,
+    "id": "G-0026",
+    "token": "cNFTs",
+    "pnl": -53.02,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-30T01:02:00Z",
+    "bankroll": 723.7,
+    "id": "G-0023",
+    "token": "ECTF",
+    "pnl": 92.57,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-09-30T11:47:00Z",
+    "bankroll": 671.01,
+    "id": "G-0025",
+    "token": "PARASITE",
+    "pnl": -52.69,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-30T22:31:00Z",
+    "bankroll": 617.95,
+    "id": "G-0028",
+    "token": "AIRPAD",
+    "pnl": -53.06,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-09-30T22:54:00Z",
+    "bankroll": 709.69,
+    "id": "G-0030",
+    "token": "Meridian",
+    "pnl": 91.74,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-01T00:07:00Z",
+    "bankroll": 656.94,
+    "id": "G-0029",
+    "token": "BANDIT",
+    "pnl": -52.75,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-01T05:46:00Z",
+    "bankroll": 750.4,
+    "id": "G-0027",
+    "token": "SI",
+    "pnl": 93.46,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-01T23:01:00Z",
+    "bankroll": 842.63,
+    "id": "G-0033",
+    "token": "Ansemmas",
+    "pnl": 92.23,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-01T23:30:00Z",
+    "bankroll": 932.69,
+    "id": "G-0031",
+    "token": "TRUMP",
+    "pnl": 90.06,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-01T23:33:00Z",
+    "bankroll": 879.33,
+    "id": "G-0034",
+    "token": "CATANA",
+    "pnl": -53.36,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-01T23:44:00Z",
+    "bankroll": 971.45,
+    "id": "G-0032",
+    "token": "SACC",
+    "pnl": 92.12,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-02T22:45:00Z",
+    "bankroll": 918.45,
+    "id": "G-0038",
+    "token": "BOO",
+    "pnl": -53.0,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-03T01:09:00Z",
+    "bankroll": 1011.2,
+    "id": "G-0037",
+    "token": "HOTBOT",
+    "pnl": 92.75,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-03T05:00:00Z",
+    "bankroll": 958.47,
+    "id": "G-0036",
+    "token": "ANON",
+    "pnl": -52.73,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-03T05:36:00Z",
+    "bankroll": 905.84,
+    "id": "G-0035",
+    "token": "Agency",
+    "pnl": -52.63,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-04T01:04:00Z",
+    "bankroll": 853.18,
+    "id": "G-0040",
+    "token": "CLAUDIA",
+    "pnl": -52.66,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-04T04:02:00Z",
+    "bankroll": 945.57,
+    "id": "G-0041",
+    "token": "Aiden",
+    "pnl": 92.39,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-04T05:53:00Z",
+    "bankroll": 1037.69,
+    "id": "G-0042",
+    "token": "PURRSWORD",
+    "pnl": 92.12,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-04T08:51:00Z",
+    "bankroll": 1129.58,
+    "id": "G-0039",
+    "token": "PAYR",
+    "pnl": 91.89,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-04T22:33:00Z",
+    "bankroll": 1076.86,
+    "id": "G-0043",
+    "token": "Human",
+    "pnl": -52.72,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-04T22:41:00Z",
+    "bankroll": 1169.57,
+    "id": "G-0044",
+    "token": "Ash",
+    "pnl": 92.71,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-05T02:29:00Z",
+    "bankroll": 1116.7,
+    "id": "G-0045",
+    "token": "EGO",
+    "pnl": -52.87,
+    "reason": "stop_loss"
+   },
+   {
+    "at": "2026-10-05T07:48:00Z",
+    "bankroll": 1210.36,
+    "id": "G-0046",
+    "token": "AGENTCAT",
+    "pnl": 93.66,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-05T22:43:00Z",
+    "bankroll": 1113.7,
+    "id": "G-0048",
+    "token": "BATONROGUE",
+    "pnl": -96.66,
+    "reason": "rug"
+   },
+   {
+    "at": "2026-10-05T22:52:00Z",
+    "bankroll": 1205.42,
+    "id": "G-0050",
+    "token": "swordcali",
+    "pnl": 91.72,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-05T23:36:00Z",
+    "bankroll": 1298.43,
+    "id": "G-0047",
+    "token": "MINTRO",
+    "pnl": 93.01,
+    "reason": "take_profit"
+   },
+   {
+    "at": "2026-10-06T01:36:00Z",
+    "bankroll": 1391.78,
+    "id": "G-0049",
+    "token": "HIGGS",
+    "pnl": 93.35,
+    "reason": "take_profit"
+   }
+  ],
+  "bankroll_by_day": [
+   {
+    "day": "2026-09-25",
+    "bankroll": 933.38
+   },
+   {
+    "day": "2026-09-26",
+    "bankroll": 973.97
+   },
+   {
+    "day": "2026-09-27",
+    "bankroll": 762.96
+   },
+   {
+    "day": "2026-09-28",
+    "bankroll": 657.27
+   },
+   {
+    "day": "2026-09-29",
+    "bankroll": 631.13
+   },
+   {
+    "day": "2026-09-30",
+    "bankroll": 709.69
+   },
+   {
+    "day": "2026-10-01",
+    "bankroll": 971.45
+   },
+   {
+    "day": "2026-10-02",
+    "bankroll": 918.45
+   },
+   {
+    "day": "2026-10-03",
+    "bankroll": 905.84
+   },
+   {
+    "day": "2026-10-04",
+    "bankroll": 1169.57
+   },
+   {
+    "day": "2026-10-05",
+    "bankroll": 1298.43
+   },
+   {
+    "day": "2026-10-06",
+    "bankroll": 1391.78
+   }
+  ],
+  "low": {
+   "at": "2026-09-30T22:31:00Z",
+   "bankroll": 617.95,
+   "id": "G-0028",
+   "token": "AIRPAD",
+   "pnl": -53.06,
+   "reason": "stop_loss"
+  },
+  "worst_losing_run": 7,
+  "trades": [
+   {
+    "id": "G-0007",
+    "token": "e/acc",
+    "entered_at": "2026-09-25T22:26:11Z",
+    "exit_at": "2026-09-25T23:53:00Z",
+    "pnl": 92.43,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 78907.66,
+    "score_24h": 2854.7,
+    "commit": "3c9937a",
+    "committed_at": "2026-09-25T23:28:24+01:00"
+   },
+   {
+    "id": "G-0008",
+    "token": "TRUMP",
+    "entered_at": "2026-09-25T22:26:11Z",
+    "exit_at": "2026-09-25T22:28:00Z",
+    "pnl": -52.77,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 82788.42,
+    "score_24h": -99.6,
+    "commit": "3c9937a",
+    "committed_at": "2026-09-25T23:28:24+01:00"
+   },
+   {
+    "id": "G-0009",
+    "token": "GHOSTGUY",
+    "entered_at": "2026-09-25T22:26:11Z",
+    "exit_at": "2026-09-25T22:32:00Z",
+    "pnl": -53.28,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 27039.95,
+    "score_24h": -94.0,
+    "commit": "3c9937a",
+    "committed_at": "2026-09-25T23:28:24+01:00"
+   },
+   {
+    "id": "G-0010",
+    "token": "JEANWORK",
+    "entered_at": "2026-09-25T22:26:11Z",
+    "exit_at": "2026-09-25T22:41:00Z",
+    "pnl": -53.0,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 43045.98,
+    "score_24h": -98.5,
+    "commit": "3c9937a",
+    "committed_at": "2026-09-25T23:28:24+01:00"
+   },
+   {
+    "id": "G-0011",
+    "token": "SPLIT",
+    "entered_at": "2026-09-26T22:26:23Z",
+    "exit_at": "2026-09-26T22:48:00Z",
+    "pnl": -52.73,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 100394.01,
+    "score_24h": -96.3,
+    "commit": "199ce42",
+    "committed_at": "2026-09-26T23:29:09+01:00"
+   },
+   {
+    "id": "G-0012",
+    "token": "manifest",
+    "entered_at": "2026-09-26T22:26:23Z",
+    "exit_at": "2026-09-26T22:32:00Z",
+    "pnl": 93.32,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 190010.41,
+    "score_24h": -99.9,
+    "commit": "199ce42",
+    "committed_at": "2026-09-26T23:29:09+01:00"
+   },
+   {
+    "id": "G-0013",
+    "token": "KARDASHEV",
+    "entered_at": "2026-09-26T22:26:23Z",
+    "exit_at": "2026-09-27T02:49:00Z",
+    "pnl": -52.69,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 124716.0,
+    "score_24h": -92.4,
+    "commit": "199ce42",
+    "committed_at": "2026-09-26T23:29:09+01:00"
+   },
+   {
+    "id": "G-0014",
+    "token": "7",
+    "entered_at": "2026-09-26T22:26:23Z",
+    "exit_at": "2026-09-27T21:13:00Z",
+    "pnl": -52.6,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 273122.93,
+    "score_24h": -49.5,
+    "commit": "199ce42",
+    "committed_at": "2026-09-26T23:29:09+01:00"
+   },
+   {
+    "id": "G-0015",
+    "token": "VAULT",
+    "entered_at": "2026-09-27T22:26:24Z",
+    "exit_at": "2026-09-27T23:34:00Z",
+    "pnl": -52.79,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 78206.51,
+    "score_24h": -75.9,
+    "commit": "5e6d382",
+    "committed_at": "2026-09-27T23:29:26+01:00"
+   },
+   {
+    "id": "G-0016",
+    "token": "bukangi",
+    "entered_at": "2026-09-27T22:26:24Z",
+    "exit_at": "2026-09-28T12:38:00Z",
+    "pnl": -52.79,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 78046.82,
+    "score_24h": -77.7,
+    "commit": "5e6d382",
+    "committed_at": "2026-09-27T23:29:26+01:00"
+   },
+   {
+    "id": "G-0017",
+    "token": "NEARPAD",
+    "entered_at": "2026-09-27T22:26:24Z",
+    "exit_at": "2026-09-27T23:32:00Z",
+    "pnl": -52.93,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 50738.68,
+    "score_24h": -82.9,
+    "commit": "5e6d382",
+    "committed_at": "2026-09-27T23:29:26+01:00"
+   },
+   {
+    "id": "G-0018",
+    "token": "JACK",
+    "entered_at": "2026-09-27T22:26:24Z",
+    "exit_at": "2026-09-28T07:49:00Z",
+    "pnl": -52.9,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 53995.75,
+    "score_24h": -71.7,
+    "commit": "5e6d382",
+    "committed_at": "2026-09-27T23:29:26+01:00"
+   },
+   {
+    "id": "G-0019",
+    "token": "FROINK",
+    "entered_at": "2026-09-28T22:26:13Z",
+    "exit_at": "2026-09-29T15:16:00Z",
+    "pnl": -52.74,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 95009.16,
+    "score_24h": -70.8,
+    "commit": "b1b1451",
+    "committed_at": "2026-09-28T23:29:29+01:00"
+   },
+   {
+    "id": "G-0020",
+    "token": "HOOKEDCAT",
+    "entered_at": "2026-09-28T22:26:13Z",
+    "exit_at": "2026-09-29T05:04:00Z",
+    "pnl": 92.64,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 91233.15,
+    "score_24h": -99.6,
+    "commit": "b1b1451",
+    "committed_at": "2026-09-28T23:29:29+01:00"
+   },
+   {
+    "id": "G-0021",
+    "token": "HOOKED",
+    "entered_at": "2026-09-28T22:26:13Z",
+    "exit_at": "2026-09-29T00:42:00Z",
+    "pnl": 92.8,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 104208.79,
+    "score_24h": -36.0,
+    "commit": "b1b1451",
+    "committed_at": "2026-09-28T23:29:29+01:00"
+   },
+   {
+    "id": "G-0022",
+    "token": "STOXES",
+    "entered_at": "2026-09-28T22:26:13Z",
+    "exit_at": "2026-09-29T02:35:00Z",
+    "pnl": -52.73,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 96880.44,
+    "score_24h": -82.1,
+    "commit": "b1b1451",
+    "committed_at": "2026-09-28T23:29:29+01:00"
+   },
+   {
+    "id": "G-0023",
+    "token": "ECTF",
+    "entered_at": "2026-09-29T22:26:42Z",
+    "exit_at": "2026-09-30T01:02:00Z",
+    "pnl": 92.57,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 87013.89,
+    "score_24h": -99.8,
+    "commit": "2994484",
+    "committed_at": "2026-09-29T23:30:47+01:00"
+   },
+   {
+    "id": "G-0024",
+    "token": "SI",
+    "entered_at": "2026-09-29T22:26:42Z",
+    "exit_at": "2026-09-29T22:45:00Z",
+    "pnl": -53.09,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 36193.64,
+    "score_24h": -89.3,
+    "commit": "2994484",
+    "committed_at": "2026-09-29T23:30:47+01:00"
+   },
+   {
+    "id": "G-0025",
+    "token": "PARASITE",
+    "entered_at": "2026-09-29T22:26:42Z",
+    "exit_at": "2026-09-30T11:47:00Z",
+    "pnl": -52.69,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 119755.77,
+    "score_24h": -75.8,
+    "commit": "2994484",
+    "committed_at": "2026-09-29T23:30:47+01:00"
+   },
+   {
+    "id": "G-0026",
+    "token": "cNFTs",
+    "entered_at": "2026-09-29T22:26:42Z",
+    "exit_at": "2026-09-29T23:33:00Z",
+    "pnl": -53.02,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 41167.48,
+    "score_24h": -95.0,
+    "commit": "2994484",
+    "committed_at": "2026-09-29T23:30:47+01:00"
+   },
+   {
+    "id": "G-0027",
+    "token": "SI",
+    "entered_at": "2026-09-30T22:27:25Z",
+    "exit_at": "2026-10-01T05:46:00Z",
+    "pnl": 93.46,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 245053.46,
+    "score_24h": 1.8,
+    "commit": "0a4cc8d",
+    "committed_at": "2026-09-30T23:38:09+01:00"
+   },
+   {
+    "id": "G-0028",
+    "token": "AIRPAD",
+    "entered_at": "2026-09-30T22:27:25Z",
+    "exit_at": "2026-09-30T22:31:00Z",
+    "pnl": -53.06,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 38126.42,
+    "score_24h": -95.8,
+    "commit": "0a4cc8d",
+    "committed_at": "2026-09-30T23:38:09+01:00"
+   },
+   {
+    "id": "G-0029",
+    "token": "BANDIT",
+    "entered_at": "2026-09-30T22:27:25Z",
+    "exit_at": "2026-10-01T00:07:00Z",
+    "pnl": -52.75,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 90208.21,
+    "score_24h": -63.5,
+    "commit": "0a4cc8d",
+    "committed_at": "2026-09-30T23:38:09+01:00"
+   },
+   {
+    "id": "G-0030",
+    "token": "Meridian",
+    "entered_at": "2026-09-30T22:27:25Z",
+    "exit_at": "2026-09-30T22:54:00Z",
+    "pnl": 91.74,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 53938.22,
+    "score_24h": -24.3,
+    "commit": "0a4cc8d",
+    "committed_at": "2026-09-30T23:38:09+01:00"
+   },
+   {
+    "id": "G-0031",
+    "token": "TRUMP",
+    "entered_at": "2026-10-01T22:28:05Z",
+    "exit_at": "2026-10-01T23:30:00Z",
+    "pnl": 90.06,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 30313.44,
+    "score_24h": -90.5,
+    "commit": "07b7c5e",
+    "committed_at": "2026-10-01T23:42:50+01:00"
+   },
+   {
+    "id": "G-0032",
+    "token": "SACC",
+    "entered_at": "2026-10-01T22:28:05Z",
+    "exit_at": "2026-10-01T23:44:00Z",
+    "pnl": 92.12,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 65414.0,
+    "score_24h": -99.5,
+    "commit": "07b7c5e",
+    "committed_at": "2026-10-01T23:42:50+01:00"
+   },
+   {
+    "id": "G-0033",
+    "token": "Ansemmas",
+    "entered_at": "2026-10-01T22:28:05Z",
+    "exit_at": "2026-10-01T23:01:00Z",
+    "pnl": 92.23,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 69526.72,
+    "score_24h": -49.2,
+    "commit": "07b7c5e",
+    "committed_at": "2026-10-01T23:42:50+01:00"
+   },
+   {
+    "id": "G-0034",
+    "token": "CATANA",
+    "entered_at": "2026-10-01T22:28:05Z",
+    "exit_at": "2026-10-01T23:33:00Z",
+    "pnl": -53.36,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 24239.01,
+    "score_24h": -85.2,
+    "commit": "07b7c5e",
+    "committed_at": "2026-10-01T23:42:50+01:00"
+   },
+   {
+    "id": "G-0035",
+    "token": "Agency",
+    "entered_at": "2026-10-02T22:28:06Z",
+    "exit_at": "2026-10-03T05:36:00Z",
+    "pnl": -52.63,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 197906.37,
+    "score_24h": 461.7,
+    "commit": "8cb0254",
+    "committed_at": "2026-10-02T23:45:06+01:00"
+   },
+   {
+    "id": "G-0036",
+    "token": "ANON",
+    "entered_at": "2026-10-02T22:28:06Z",
+    "exit_at": "2026-10-03T05:00:00Z",
+    "pnl": -52.73,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 97480.93,
+    "score_24h": -99.6,
+    "commit": "8cb0254",
+    "committed_at": "2026-10-02T23:45:06+01:00"
+   },
+   {
+    "id": "G-0037",
+    "token": "HOTBOT",
+    "entered_at": "2026-10-02T22:28:06Z",
+    "exit_at": "2026-10-03T01:09:00Z",
+    "pnl": 92.75,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 99963.93,
+    "score_24h": 5.6,
+    "commit": "8cb0254",
+    "committed_at": "2026-10-02T23:45:06+01:00"
+   },
+   {
+    "id": "G-0038",
+    "token": "BOO",
+    "entered_at": "2026-10-02T22:28:06Z",
+    "exit_at": "2026-10-02T22:45:00Z",
+    "pnl": -53.0,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 43099.06,
+    "score_24h": -98.1,
+    "commit": "8cb0254",
+    "committed_at": "2026-10-02T23:45:06+01:00"
+   },
+   {
+    "id": "G-0039",
+    "token": "PAYR",
+    "entered_at": "2026-10-03T22:28:05Z",
+    "exit_at": "2026-10-04T08:51:00Z",
+    "pnl": 91.89,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 57933.54,
+    "score_24h": -99.0,
+    "commit": "15d3fd9",
+    "committed_at": "2026-10-03T23:44:01+01:00"
+   },
+   {
+    "id": "G-0040",
+    "token": "CLAUDIA",
+    "entered_at": "2026-10-03T22:28:05Z",
+    "exit_at": "2026-10-04T01:04:00Z",
+    "pnl": -52.66,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 152218.8,
+    "score_24h": -76.7,
+    "commit": "15d3fd9",
+    "committed_at": "2026-10-03T23:44:01+01:00"
+   },
+   {
+    "id": "G-0041",
+    "token": "Aiden",
+    "entered_at": "2026-10-03T22:28:05Z",
+    "exit_at": "2026-10-04T04:02:00Z",
+    "pnl": 92.39,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 76458.52,
+    "score_24h": -36.9,
+    "commit": "15d3fd9",
+    "committed_at": "2026-10-03T23:44:01+01:00"
+   },
+   {
+    "id": "G-0042",
+    "token": "PURRSWORD",
+    "entered_at": "2026-10-03T22:28:05Z",
+    "exit_at": "2026-10-04T05:53:00Z",
+    "pnl": 92.12,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 65117.79,
+    "score_24h": -99.1,
+    "commit": "15d3fd9",
+    "committed_at": "2026-10-03T23:44:01+01:00"
+   },
+   {
+    "id": "G-0043",
+    "token": "Human",
+    "entered_at": "2026-10-04T22:30:51Z",
+    "exit_at": "2026-10-04T22:33:00Z",
+    "pnl": -52.72,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 103432.55,
+    "score_24h": 13.0,
+    "commit": "e041391",
+    "committed_at": "2026-10-04T23:45:03+01:00"
+   },
+   {
+    "id": "G-0044",
+    "token": "Ash",
+    "entered_at": "2026-10-04T22:30:51Z",
+    "exit_at": "2026-10-04T22:41:00Z",
+    "pnl": 92.71,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 96383.01,
+    "score_24h": -48.5,
+    "commit": "e041391",
+    "committed_at": "2026-10-04T23:45:03+01:00"
+   },
+   {
+    "id": "G-0045",
+    "token": "EGO",
+    "entered_at": "2026-10-04T22:30:51Z",
+    "exit_at": "2026-10-05T02:29:00Z",
+    "pnl": -52.87,
+    "reason": "stop_loss",
+    "rugged": false,
+    "entry_liq_usd": 59448.3,
+    "score_24h": -21.2,
+    "commit": "e041391",
+    "committed_at": "2026-10-04T23:45:03+01:00"
+   },
+   {
+    "id": "G-0046",
+    "token": "AGENTCAT",
+    "entered_at": "2026-10-04T22:30:51Z",
+    "exit_at": "2026-10-05T07:48:00Z",
+    "pnl": 93.66,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 411907.63,
+    "score_24h": -97.6,
+    "commit": "e041391",
+    "committed_at": "2026-10-04T23:45:03+01:00"
+   },
+   {
+    "id": "G-0047",
+    "token": "MINTRO",
+    "entered_at": "2026-10-05T22:32:17Z",
+    "exit_at": "2026-10-05T23:36:00Z",
+    "pnl": 93.01,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 128221.2,
+    "score_24h": null,
+    "commit": "c3d2fc9",
+    "committed_at": "2026-10-05T23:46:29+01:00"
+   },
+   {
+    "id": "G-0048",
+    "token": "BATONROGUE",
+    "entered_at": "2026-10-05T22:32:17Z",
+    "exit_at": "2026-10-05T22:43:00Z",
+    "pnl": -96.66,
+    "reason": "rug",
+    "rugged": true,
+    "entry_liq_usd": 34281.09,
+    "score_24h": null,
+    "commit": "c3d2fc9",
+    "committed_at": "2026-10-05T23:46:29+01:00"
+   },
+   {
+    "id": "G-0049",
+    "token": "HIGGS",
+    "entered_at": "2026-10-05T22:32:17Z",
+    "exit_at": "2026-10-06T01:36:00Z",
+    "pnl": 93.35,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 199471.2,
+    "score_24h": null,
+    "commit": "c3d2fc9",
+    "committed_at": "2026-10-05T23:46:29+01:00"
+   },
+   {
+    "id": "G-0050",
+    "token": "swordcali",
+    "entered_at": "2026-10-05T22:32:17Z",
+    "exit_at": "2026-10-05T22:52:00Z",
+    "pnl": 91.72,
+    "reason": "take_profit",
+    "rugged": false,
+    "entry_liq_usd": 53390.15,
+    "score_24h": null,
+    "commit": "c3d2fc9",
+    "committed_at": "2026-10-05T23:46:29+01:00"
+   },
+   {
+    "id": "G-0051",
+    "token": "TWEETCRAFT",
+    "entered_at": "2026-10-06T22:29:35Z",
+    "exit_at": null,
+    "pnl": null,
+    "reason": null,
+    "rugged": false,
+    "entry_liq_usd": 63195.32,
+    "score_24h": null,
+    "commit": "eac33b0",
+    "committed_at": "2026-10-06T23:48:22+01:00"
+   },
+   {
+    "id": "G-0052",
+    "token": "AGENCY",
+    "entered_at": "2026-10-06T22:29:35Z",
+    "exit_at": null,
+    "pnl": null,
+    "reason": null,
+    "rugged": false,
+    "entry_liq_usd": 29259.44,
+    "score_24h": null,
+    "commit": "eac33b0",
+    "committed_at": "2026-10-06T23:48:22+01:00"
+   },
+   {
+    "id": "G-0053",
+    "token": "MINER",
+    "entered_at": "2026-10-06T22:29:35Z",
+    "exit_at": null,
+    "pnl": null,
+    "reason": null,
+    "rugged": false,
+    "entry_liq_usd": 37819.8,
+    "score_24h": null,
+    "commit": "eac33b0",
+    "committed_at": "2026-10-06T23:48:22+01:00"
+   },
+   {
+    "id": "G-0054",
+    "token": "IRL",
+    "entered_at": "2026-10-06T22:29:35Z",
+    "exit_at": null,
+    "pnl": null,
+    "reason": null,
+    "rugged": false,
+    "entry_liq_usd": 69326.38,
+    "score_24h": null,
+    "commit": "eac33b0",
+    "committed_at": "2026-10-06T23:48:22+01:00"
+   }
+  ],
+  "first_trade": {
+   "id": "G-0007",
+   "token": "e/acc",
+   "entered_at": "2026-09-25T22:26:11Z",
+   "exit_at": "2026-09-25T23:53:00Z",
+   "pnl": 92.43,
+   "reason": "take_profit",
+   "rugged": false,
+   "entry_liq_usd": 78907.66,
+   "score_24h": 2854.7,
+   "commit": "3c9937a",
+   "committed_at": "2026-09-25T23:28:24+01:00"
+  }
+ },
+ "graduation": {
+  "closed": 8476,
+  "g1": {
+   "counted": 5986,
+   "expectancy_per_100": -18.44,
+   "winners": 0.238,
+   "at_or_below_minus50": 0.692,
+   "best10_removed": -25.78,
+   "best": 15531.66,
+   "median_latency_s": 7.3,
+   "kill": {
+    "day": "2026-10-03",
+    "at_counted": 2252,
+    "expectancy": "-£14.2",
+    "source": "grinder/graduates/RULES.md, Verdict section; commit f511792"
+   }
+  },
+  "g2": {
+   "counted": 265,
+   "expectancy_per_100": 50.71,
+   "winners": 0.604,
+   "at_or_below_minus50": 0.068,
+   "best10_removed": -3.32,
+   "best": 5799.8,
+   "median_latency_s": 7.9
+  },
+  "g2_rule": "liquidity at least $50,000 and migration at or after 2026-10-03T12:00Z; verdict at 400 counted"
+ },
+ "pitch": {
+  "predictions": 0,
+  "predictions_scored": 0,
+  "backtest": {
+   "matches": 6766,
+   "pooled": {
+    "heading": "all seasons (n=6766)",
+    "rows": [
+     {
+      "line": "closing",
+      "brier": 0.5805,
+      "rps": 0.1964,
+      "logloss": 0.9745
+     },
+     {
+      "line": "pre-close",
+      "brier": 0.5822,
+      "rps": 0.1972,
+      "logloss": 0.9771
+     },
+     {
+      "line": "sot",
+      "brier": 0.5947,
+      "rps": 0.2026,
+      "logloss": 0.9968
+     },
+     {
+      "line": "elo",
+      "brier": 0.599,
+      "rps": 0.2047,
+      "logloss": 1.0026
+     },
+     {
+      "line": "dc",
+      "brier": 0.6027,
+      "rps": 0.2061,
+      "logloss": 1.0112
+     }
+    ]
+   },
+   "tables": [
+    {
+     "heading": "season 2425 (n=3131)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5746,
+       "rps": 0.1945,
+       "logloss": 0.9662
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5771,
+       "rps": 0.1957,
+       "logloss": 0.9697
+      },
+      {
+       "line": "sot",
+       "brier": 0.5902,
+       "rps": 0.2014,
+       "logloss": 0.9901
+      },
+      {
+       "line": "elo",
+       "brier": 0.5965,
+       "rps": 0.2041,
+       "logloss": 0.9985
+      },
+      {
+       "line": "dc",
+       "brier": 0.5983,
+       "rps": 0.205,
+       "logloss": 1.0044
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 D1 (n=304)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5897,
+       "rps": 0.2013,
+       "logloss": 0.9872
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5917,
+       "rps": 0.2019,
+       "logloss": 0.9905
+      },
+      {
+       "line": "sot",
+       "brier": 0.6149,
+       "rps": 0.211,
+       "logloss": 1.0281
+      },
+      {
+       "line": "elo",
+       "brier": 0.6151,
+       "rps": 0.2115,
+       "logloss": 1.0273
+      },
+      {
+       "line": "dc",
+       "brier": 0.6286,
+       "rps": 0.2165,
+       "logloss": 1.0538
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 E0 (n=380)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5752,
+       "rps": 0.1961,
+       "logloss": 0.9667
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5789,
+       "rps": 0.1974,
+       "logloss": 0.9706
+      },
+      {
+       "line": "sot",
+       "brier": 0.5813,
+       "rps": 0.1992,
+       "logloss": 0.9755
+      },
+      {
+       "line": "dc",
+       "brier": 0.5854,
+       "rps": 0.2009,
+       "logloss": 0.98
+      },
+      {
+       "line": "elo",
+       "brier": 0.6113,
+       "rps": 0.2124,
+       "logloss": 1.0187
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 E1 (n=549)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.6169,
+       "rps": 0.2074,
+       "logloss": 1.0269
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.6178,
+       "rps": 0.2078,
+       "logloss": 1.0274
+      },
+      {
+       "line": "sot",
+       "brier": 0.625,
+       "rps": 0.2112,
+       "logloss": 1.0371
+      },
+      {
+       "line": "elo",
+       "brier": 0.6324,
+       "rps": 0.2143,
+       "logloss": 1.0487
+      },
+      {
+       "line": "dc",
+       "brier": 0.6355,
+       "rps": 0.2159,
+       "logloss": 1.0522
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 F1 (n=305)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5661,
+       "rps": 0.2017,
+       "logloss": 0.9576
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.568,
+       "rps": 0.2031,
+       "logloss": 0.9601
+      },
+      {
+       "line": "elo",
+       "brier": 0.5798,
+       "rps": 0.2086,
+       "logloss": 0.9773
+      },
+      {
+       "line": "sot",
+       "brier": 0.5839,
+       "rps": 0.2098,
+       "logloss": 0.9836
+      },
+      {
+       "line": "dc",
+       "brier": 0.5872,
+       "rps": 0.211,
+       "logloss": 0.9972
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 I1 (n=377)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5685,
+       "rps": 0.1846,
+       "logloss": 0.954
+      },
+      {
+       "line": "closing",
+       "brier": 0.5687,
+       "rps": 0.1849,
+       "logloss": 0.9543
+      },
+      {
+       "line": "sot",
+       "brier": 0.5845,
+       "rps": 0.1919,
+       "logloss": 0.9773
+      },
+      {
+       "line": "elo",
+       "brier": 0.5918,
+       "rps": 0.1938,
+       "logloss": 0.988
+      },
+      {
+       "line": "dc",
+       "brier": 0.593,
+       "rps": 0.1958,
+       "logloss": 0.9904
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 N1 (n=304)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5542,
+       "rps": 0.1846,
+       "logloss": 0.9352
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5611,
+       "rps": 0.188,
+       "logloss": 0.9448
+      },
+      {
+       "line": "elo",
+       "brier": 0.5754,
+       "rps": 0.1944,
+       "logloss": 0.9677
+      },
+      {
+       "line": "sot",
+       "brier": 0.5844,
+       "rps": 0.199,
+       "logloss": 0.9865
+      },
+      {
+       "line": "dc",
+       "brier": 0.5982,
+       "rps": 0.2058,
+       "logloss": 1.0135
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 P1 (n=305)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5478,
+       "rps": 0.1819,
+       "logloss": 0.9254
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5522,
+       "rps": 0.1841,
+       "logloss": 0.9323
+      },
+      {
+       "line": "sot",
+       "brier": 0.5581,
+       "rps": 0.1863,
+       "logloss": 0.944
+      },
+      {
+       "line": "elo",
+       "brier": 0.5648,
+       "rps": 0.189,
+       "logloss": 0.9526
+      },
+      {
+       "line": "dc",
+       "brier": 0.5667,
+       "rps": 0.1904,
+       "logloss": 0.961
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 SC0 (n=228)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5612,
+       "rps": 0.1988,
+       "logloss": 0.9517
+      },
+      {
+       "line": "closing",
+       "brier": 0.5617,
+       "rps": 0.1991,
+       "logloss": 0.9532
+      },
+      {
+       "line": "sot",
+       "brier": 0.5743,
+       "rps": 0.205,
+       "logloss": 0.969
+      },
+      {
+       "line": "dc",
+       "brier": 0.5785,
+       "rps": 0.2072,
+       "logloss": 0.9767
+      },
+      {
+       "line": "elo",
+       "brier": 0.5811,
+       "rps": 0.2086,
+       "logloss": 0.9794
+      }
+     ]
+    },
+    {
+     "heading": "season 2425 SP1 (n=379)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5588,
+       "rps": 0.1876,
+       "logloss": 0.9455
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5632,
+       "rps": 0.1899,
+       "logloss": 0.9523
+      },
+      {
+       "line": "sot",
+       "brier": 0.5798,
+       "rps": 0.1966,
+       "logloss": 0.9765
+      },
+      {
+       "line": "dc",
+       "brier": 0.5846,
+       "rps": 0.1984,
+       "logloss": 0.9837
+      },
+      {
+       "line": "elo",
+       "brier": 0.5846,
+       "rps": 0.1986,
+       "logloss": 0.983
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 (n=3134)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5853,
+       "rps": 0.1977,
+       "logloss": 0.9814
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5862,
+       "rps": 0.1982,
+       "logloss": 0.983
+      },
+      {
+       "line": "sot",
+       "brier": 0.5983,
+       "rps": 0.2033,
+       "logloss": 1.0017
+      },
+      {
+       "line": "elo",
+       "brier": 0.6008,
+       "rps": 0.2049,
+       "logloss": 1.0057
+      },
+      {
+       "line": "dc",
+       "brier": 0.6053,
+       "rps": 0.2064,
+       "logloss": 1.0135
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 D1 (n=305)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5608,
+       "rps": 0.1902,
+       "logloss": 0.9495
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5618,
+       "rps": 0.1907,
+       "logloss": 0.9517
+      },
+      {
+       "line": "sot",
+       "brier": 0.5777,
+       "rps": 0.1968,
+       "logloss": 0.9764
+      },
+      {
+       "line": "elo",
+       "brier": 0.5844,
+       "rps": 0.1999,
+       "logloss": 0.9855
+      },
+      {
+       "line": "dc",
+       "brier": 0.5906,
+       "rps": 0.2016,
+       "logloss": 1.0039
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 E0 (n=380)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.6077,
+       "rps": 0.2045,
+       "logloss": 1.0118
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.61,
+       "rps": 0.2053,
+       "logloss": 1.0153
+      },
+      {
+       "line": "sot",
+       "brier": 0.6177,
+       "rps": 0.2092,
+       "logloss": 1.0286
+      },
+      {
+       "line": "dc",
+       "brier": 0.6268,
+       "rps": 0.2132,
+       "logloss": 1.0411
+      },
+      {
+       "line": "elo",
+       "brier": 0.6275,
+       "rps": 0.2138,
+       "logloss": 1.0422
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 E1 (n=550)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.6287,
+       "rps": 0.2164,
+       "logloss": 1.0417
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.629,
+       "rps": 0.2167,
+       "logloss": 1.0422
+      },
+      {
+       "line": "sot",
+       "brier": 0.6401,
+       "rps": 0.2218,
+       "logloss": 1.0605
+      },
+      {
+       "line": "elo",
+       "brier": 0.6415,
+       "rps": 0.2229,
+       "logloss": 1.0618
+      },
+      {
+       "line": "dc",
+       "brier": 0.6445,
+       "rps": 0.2237,
+       "logloss": 1.0676
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 F1 (n=305)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5802,
+       "rps": 0.1992,
+       "logloss": 0.973
+      },
+      {
+       "line": "closing",
+       "brier": 0.5816,
+       "rps": 0.2,
+       "logloss": 0.9748
+      },
+      {
+       "line": "sot",
+       "brier": 0.5942,
+       "rps": 0.2055,
+       "logloss": 0.995
+      },
+      {
+       "line": "elo",
+       "brier": 0.6025,
+       "rps": 0.2081,
+       "logloss": 1.0066
+      },
+      {
+       "line": "dc",
+       "brier": 0.6091,
+       "rps": 0.212,
+       "logloss": 1.0163
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 I1 (n=379)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5817,
+       "rps": 0.196,
+       "logloss": 0.9769
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5823,
+       "rps": 0.1963,
+       "logloss": 0.9784
+      },
+      {
+       "line": "sot",
+       "brier": 0.5976,
+       "rps": 0.2029,
+       "logloss": 0.9992
+      },
+      {
+       "line": "elo",
+       "brier": 0.598,
+       "rps": 0.2037,
+       "logloss": 1.0032
+      },
+      {
+       "line": "dc",
+       "brier": 0.6045,
+       "rps": 0.206,
+       "logloss": 1.0112
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 N1 (n=305)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5801,
+       "rps": 0.1946,
+       "logloss": 0.9772
+      },
+      {
+       "line": "closing",
+       "brier": 0.5837,
+       "rps": 0.1961,
+       "logloss": 0.9813
+      },
+      {
+       "line": "sot",
+       "brier": 0.5926,
+       "rps": 0.1995,
+       "logloss": 0.996
+      },
+      {
+       "line": "elo",
+       "brier": 0.5905,
+       "rps": 0.1997,
+       "logloss": 0.9924
+      },
+      {
+       "line": "dc",
+       "brier": 0.5965,
+       "rps": 0.2017,
+       "logloss": 1.0038
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 P1 (n=304)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5351,
+       "rps": 0.1713,
+       "logloss": 0.9059
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5421,
+       "rps": 0.1746,
+       "logloss": 0.9167
+      },
+      {
+       "line": "sot",
+       "brier": 0.5469,
+       "rps": 0.1759,
+       "logloss": 0.9232
+      },
+      {
+       "line": "dc",
+       "brier": 0.5516,
+       "rps": 0.1782,
+       "logloss": 0.9296
+      },
+      {
+       "line": "elo",
+       "brier": 0.554,
+       "rps": 0.1793,
+       "logloss": 0.9336
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 SC0 (n=228)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5763,
+       "rps": 0.1915,
+       "logloss": 0.9689
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5794,
+       "rps": 0.1926,
+       "logloss": 0.9735
+      },
+      {
+       "line": "elo",
+       "brier": 0.585,
+       "rps": 0.1959,
+       "logloss": 0.9856
+      },
+      {
+       "line": "dc",
+       "brier": 0.5938,
+       "rps": 0.1975,
+       "logloss": 0.9976
+      },
+      {
+       "line": "sot",
+       "brier": 0.5946,
+       "rps": 0.1981,
+       "logloss": 0.9985
+      }
+     ]
+    },
+    {
+     "heading": "season 2526 SP1 (n=378)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5728,
+       "rps": 0.1962,
+       "logloss": 0.966
+      },
+      {
+       "line": "closing",
+       "brier": 0.5731,
+       "rps": 0.1962,
+       "logloss": 0.967
+      },
+      {
+       "line": "sot",
+       "brier": 0.587,
+       "rps": 0.2022,
+       "logloss": 0.9873
+      },
+      {
+       "line": "elo",
+       "brier": 0.5854,
+       "rps": 0.2027,
+       "logloss": 0.986
+      },
+      {
+       "line": "dc",
+       "brier": 0.5933,
+       "rps": 0.2056,
+       "logloss": 1.0
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 (n=501)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5874,
+       "rps": 0.1996,
+       "logloss": 0.9836
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.589,
+       "rps": 0.2003,
+       "logloss": 0.9868
+      },
+      {
+       "line": "sot",
+       "brier": 0.6006,
+       "rps": 0.2055,
+       "logloss": 1.0088
+      },
+      {
+       "line": "elo",
+       "brier": 0.603,
+       "rps": 0.2073,
+       "logloss": 1.0089
+      },
+      {
+       "line": "dc",
+       "brier": 0.6139,
+       "rps": 0.2109,
+       "logloss": 1.0395
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 D1 (n=34)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5427,
+       "rps": 0.1983,
+       "logloss": 0.9172
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5445,
+       "rps": 0.1987,
+       "logloss": 0.9205
+      },
+      {
+       "line": "elo",
+       "brier": 0.5494,
+       "rps": 0.2008,
+       "logloss": 0.933
+      },
+      {
+       "line": "sot",
+       "brier": 0.6055,
+       "rps": 0.2208,
+       "logloss": 1.067
+      },
+      {
+       "line": "dc",
+       "brier": 0.6474,
+       "rps": 0.2333,
+       "logloss": 1.2348
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 E0 (n=50)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.6357,
+       "rps": 0.2061,
+       "logloss": 1.0549
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.634,
+       "rps": 0.2062,
+       "logloss": 1.0522
+      },
+      {
+       "line": "dc",
+       "brier": 0.6295,
+       "rps": 0.2063,
+       "logloss": 1.0494
+      },
+      {
+       "line": "elo",
+       "brier": 0.6343,
+       "rps": 0.2078,
+       "logloss": 1.0514
+      },
+      {
+       "line": "sot",
+       "brier": 0.6376,
+       "rps": 0.2094,
+       "logloss": 1.0608
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 E1 (n=93)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.6417,
+       "rps": 0.2121,
+       "logloss": 1.0636
+      },
+      {
+       "line": "closing",
+       "brier": 0.6443,
+       "rps": 0.213,
+       "logloss": 1.0661
+      },
+      {
+       "line": "sot",
+       "brier": 0.6605,
+       "rps": 0.2214,
+       "logloss": 1.0926
+      },
+      {
+       "line": "elo",
+       "brier": 0.6575,
+       "rps": 0.2217,
+       "logloss": 1.0865
+      },
+      {
+       "line": "dc",
+       "brier": 0.6803,
+       "rps": 0.2306,
+       "logloss": 1.1278
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 F1 (n=44)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.6141,
+       "rps": 0.2083,
+       "logloss": 1.0257
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.6204,
+       "rps": 0.212,
+       "logloss": 1.035
+      },
+      {
+       "line": "sot",
+       "brier": 0.6297,
+       "rps": 0.2145,
+       "logloss": 1.0499
+      },
+      {
+       "line": "dc",
+       "brier": 0.6462,
+       "rps": 0.2203,
+       "logloss": 1.0879
+      },
+      {
+       "line": "elo",
+       "brier": 0.6419,
+       "rps": 0.2205,
+       "logloss": 1.0681
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 I1 (n=50)",
+     "rows": [
+      {
+       "line": "dc",
+       "brier": 0.5236,
+       "rps": 0.1859,
+       "logloss": 0.907
+      },
+      {
+       "line": "sot",
+       "brier": 0.5224,
+       "rps": 0.1865,
+       "logloss": 0.8982
+      },
+      {
+       "line": "elo",
+       "brier": 0.5303,
+       "rps": 0.1909,
+       "logloss": 0.9097
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5354,
+       "rps": 0.1941,
+       "logloss": 0.9181
+      },
+      {
+       "line": "closing",
+       "brier": 0.537,
+       "rps": 0.1955,
+       "logloss": 0.9178
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 N1 (n=62)",
+     "rows": [
+      {
+       "line": "sot",
+       "brier": 0.5756,
+       "rps": 0.1848,
+       "logloss": 0.9641
+      },
+      {
+       "line": "closing",
+       "brier": 0.5826,
+       "rps": 0.1881,
+       "logloss": 0.9753
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5879,
+       "rps": 0.1902,
+       "logloss": 0.9819
+      },
+      {
+       "line": "dc",
+       "brier": 0.5968,
+       "rps": 0.1937,
+       "logloss": 1.0068
+      },
+      {
+       "line": "elo",
+       "brier": 0.5894,
+       "rps": 0.1937,
+       "logloss": 0.9897
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 P1 (n=61)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5537,
+       "rps": 0.1789,
+       "logloss": 0.9263
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5565,
+       "rps": 0.1803,
+       "logloss": 0.9325
+      },
+      {
+       "line": "elo",
+       "brier": 0.5614,
+       "rps": 0.1826,
+       "logloss": 0.9443
+      },
+      {
+       "line": "dc",
+       "brier": 0.5645,
+       "rps": 0.1829,
+       "logloss": 0.9527
+      },
+      {
+       "line": "sot",
+       "brier": 0.5684,
+       "rps": 0.1857,
+       "logloss": 0.9554
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 SC0 (n=41)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5801,
+       "rps": 0.2127,
+       "logloss": 0.9769
+      },
+      {
+       "line": "closing",
+       "brier": 0.5889,
+       "rps": 0.2186,
+       "logloss": 0.9892
+      },
+      {
+       "line": "sot",
+       "brier": 0.6138,
+       "rps": 0.2298,
+       "logloss": 1.0256
+      },
+      {
+       "line": "elo",
+       "brier": 0.6417,
+       "rps": 0.2429,
+       "logloss": 1.0647
+      },
+      {
+       "line": "dc",
+       "brier": 0.6432,
+       "rps": 0.2434,
+       "logloss": 1.0671
+      }
+     ]
+    },
+    {
+     "heading": "season 2627 SP1 (n=66)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5486,
+       "rps": 0.1916,
+       "logloss": 0.9264
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5597,
+       "rps": 0.1969,
+       "logloss": 0.9438
+      },
+      {
+       "line": "sot",
+       "brier": 0.5703,
+       "rps": 0.2033,
+       "logloss": 0.9585
+      },
+      {
+       "line": "elo",
+       "brier": 0.5862,
+       "rps": 0.2067,
+       "logloss": 0.9853
+      },
+      {
+       "line": "dc",
+       "brier": 0.5817,
+       "rps": 0.2092,
+       "logloss": 0.9691
+      }
+     ]
+    },
+    {
+     "heading": "all seasons (n=6766)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5805,
+       "rps": 0.1964,
+       "logloss": 0.9745
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5822,
+       "rps": 0.1972,
+       "logloss": 0.9771
+      },
+      {
+       "line": "sot",
+       "brier": 0.5947,
+       "rps": 0.2026,
+       "logloss": 0.9968
+      },
+      {
+       "line": "elo",
+       "brier": 0.599,
+       "rps": 0.2047,
+       "logloss": 1.0026
+      },
+      {
+       "line": "dc",
+       "brier": 0.6027,
+       "rps": 0.2061,
+       "logloss": 1.0112
+      }
+     ]
+    },
+    {
+     "heading": "all seasons D1 (n=643)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5735,
+       "rps": 0.1959,
+       "logloss": 0.9656
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.575,
+       "rps": 0.1964,
+       "logloss": 0.9684
+      },
+      {
+       "line": "sot",
+       "brier": 0.5968,
+       "rps": 0.2048,
+       "logloss": 1.0056
+      },
+      {
+       "line": "elo",
+       "brier": 0.597,
+       "rps": 0.2054,
+       "logloss": 1.0025
+      },
+      {
+       "line": "dc",
+       "brier": 0.6116,
+       "rps": 0.2103,
+       "logloss": 1.0397
+      }
+     ]
+    },
+    {
+     "heading": "all seasons E0 (n=810)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5942,
+       "rps": 0.2007,
+       "logloss": 0.9933
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5969,
+       "rps": 0.2016,
+       "logloss": 0.9966
+      },
+      {
+       "line": "sot",
+       "brier": 0.6019,
+       "rps": 0.2045,
+       "logloss": 1.0057
+      },
+      {
+       "line": "dc",
+       "brier": 0.6075,
+       "rps": 0.207,
+       "logloss": 1.0129
+      },
+      {
+       "line": "elo",
+       "brier": 0.6203,
+       "rps": 0.2128,
+       "logloss": 1.0317
+      }
+     ]
+    },
+    {
+     "heading": "all seasons E1 (n=1192)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.6245,
+       "rps": 0.212,
+       "logloss": 1.0368
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.6248,
+       "rps": 0.2123,
+       "logloss": 1.0371
+      },
+      {
+       "line": "sot",
+       "brier": 0.6348,
+       "rps": 0.2169,
+       "logloss": 1.0522
+      },
+      {
+       "line": "elo",
+       "brier": 0.6385,
+       "rps": 0.2188,
+       "logloss": 1.0577
+      },
+      {
+       "line": "dc",
+       "brier": 0.6432,
+       "rps": 0.2207,
+       "logloss": 1.0652
+      }
+     ]
+    },
+    {
+     "heading": "all seasons F1 (n=654)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5766,
+       "rps": 0.2013,
+       "logloss": 0.9702
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5772,
+       "rps": 0.2019,
+       "logloss": 0.9712
+      },
+      {
+       "line": "sot",
+       "brier": 0.5918,
+       "rps": 0.2081,
+       "logloss": 0.9934
+      },
+      {
+       "line": "elo",
+       "brier": 0.5946,
+       "rps": 0.2092,
+       "logloss": 0.9971
+      },
+      {
+       "line": "dc",
+       "brier": 0.6014,
+       "rps": 0.2121,
+       "logloss": 1.0122
+      }
+     ]
+    },
+    {
+     "heading": "all seasons I1 (n=806)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5729,
+       "rps": 0.1907,
+       "logloss": 0.9633
+      },
+      {
+       "line": "closing",
+       "brier": 0.5729,
+       "rps": 0.1908,
+       "logloss": 0.9627
+      },
+      {
+       "line": "sot",
+       "brier": 0.5868,
+       "rps": 0.1967,
+       "logloss": 0.9827
+      },
+      {
+       "line": "elo",
+       "brier": 0.5909,
+       "rps": 0.1983,
+       "logloss": 0.9903
+      },
+      {
+       "line": "dc",
+       "brier": 0.5941,
+       "rps": 0.2,
+       "logloss": 0.995
+      }
+     ]
+    },
+    {
+     "heading": "all seasons N1 (n=671)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5702,
+       "rps": 0.1901,
+       "logloss": 0.9599
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5722,
+       "rps": 0.1912,
+       "logloss": 0.963
+      },
+      {
+       "line": "elo",
+       "brier": 0.5835,
+       "rps": 0.1968,
+       "logloss": 0.9809
+      },
+      {
+       "line": "sot",
+       "brier": 0.5873,
+       "rps": 0.1979,
+       "logloss": 0.9887
+      },
+      {
+       "line": "dc",
+       "brier": 0.5973,
+       "rps": 0.2028,
+       "logloss": 1.0085
+      }
+     ]
+    },
+    {
+     "heading": "all seasons P1 (n=670)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5426,
+       "rps": 0.1768,
+       "logloss": 0.9166
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.548,
+       "rps": 0.1795,
+       "logloss": 0.9252
+      },
+      {
+       "line": "sot",
+       "brier": 0.5539,
+       "rps": 0.1815,
+       "logloss": 0.9356
+      },
+      {
+       "line": "elo",
+       "brier": 0.5596,
+       "rps": 0.184,
+       "logloss": 0.9432
+      },
+      {
+       "line": "dc",
+       "brier": 0.5597,
+       "rps": 0.1842,
+       "logloss": 0.946
+      }
+     ]
+    },
+    {
+     "heading": "all seasons SC0 (n=497)",
+     "rows": [
+      {
+       "line": "pre-close",
+       "brier": 0.5711,
+       "rps": 0.1971,
+       "logloss": 0.9638
+      },
+      {
+       "line": "closing",
+       "brier": 0.5706,
+       "rps": 0.1972,
+       "logloss": 0.9634
+      },
+      {
+       "line": "sot",
+       "brier": 0.5869,
+       "rps": 0.2039,
+       "logloss": 0.9872
+      },
+      {
+       "line": "elo",
+       "brier": 0.5879,
+       "rps": 0.2056,
+       "logloss": 0.9893
+      },
+      {
+       "line": "dc",
+       "brier": 0.5908,
+       "rps": 0.2058,
+       "logloss": 0.9937
+      }
+     ]
+    },
+    {
+     "heading": "all seasons SP1 (n=823)",
+     "rows": [
+      {
+       "line": "closing",
+       "brier": 0.5645,
+       "rps": 0.1919,
+       "logloss": 0.9538
+      },
+      {
+       "line": "pre-close",
+       "brier": 0.5673,
+       "rps": 0.1933,
+       "logloss": 0.9579
+      },
+      {
+       "line": "sot",
+       "brier": 0.5823,
+       "rps": 0.1997,
+       "logloss": 0.9801
+      },
+      {
+       "line": "elo",
+       "brier": 0.5851,
+       "rps": 0.2011,
+       "logloss": 0.9846
+      },
+      {
+       "line": "dc",
+       "brier": 0.5883,
+       "rps": 0.2025,
+       "logloss": 0.99
+      }
+     ]
+    }
+   ]
+  },
+  "judgement": {
+   "calls": 57,
+   "scored": 57,
+   "first_committed": "2026-09-26T20:10:15Z",
+   "brier": 0.55,
+   "market_brier": 0.55,
+   "anchored_gap": 0.0067,
+   "counted_gap": 0.0055,
+   "counted_n": 49,
+   "blind_gap": 0.0085,
+   "blind_n": 33,
+   "items": [
+    {
+     "id": "J-0001",
+     "home": "Lithuania",
+     "away": "Azerbaijan",
+     "kickoff": "2026-09-27T13:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "no view",
+     "result": "D",
+     "score": "1-1",
+     "brier": 0.7166,
+     "market_brier": 0.7135,
+     "blind_call": null
+    },
+    {
+     "id": "J-0002",
+     "home": "Gibraltar",
+     "away": "Andorra",
+     "kickoff": "2026-09-27T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "under 2.5",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.645,
+     "market_brier": 0.6624,
+     "blind_call": null
+    },
+    {
+     "id": "J-0003",
+     "home": "Austria",
+     "away": "Kosovo",
+     "kickoff": "2026-09-27T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "draw or Kosovo (double chance)",
+     "result": "H",
+     "score": "3-1",
+     "brier": 0.3192,
+     "market_brier": 0.2288,
+     "blind_call": null
+    },
+    {
+     "id": "J-0004",
+     "home": "Denmark",
+     "away": "Wales",
+     "kickoff": "2026-09-27T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Wales or draw (double chance)",
+     "result": "H",
+     "score": "2-0",
+     "brier": 0.3062,
+     "market_brier": 0.1882,
+     "blind_call": null
+    },
+    {
+     "id": "J-0005",
+     "home": "Serbia",
+     "away": "Netherlands",
+     "kickoff": "2026-09-27T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Netherlands win",
+     "result": "A",
+     "score": "1-2",
+     "brier": 0.1976,
+     "market_brier": 0.1658,
+     "blind_call": null
+    },
+    {
+     "id": "J-0006",
+     "home": "Germany",
+     "away": "Greece",
+     "kickoff": "2026-09-27T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "under 2.5",
+     "result": "A",
+     "score": "0-1",
+     "brier": 1.1018,
+     "market_brier": 1.2409,
+     "blind_call": null
+    },
+    {
+     "id": "J-0007",
+     "home": "Israel",
+     "away": "Republic of Ireland",
+     "kickoff": "2026-09-27T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Ireland win, under 2.5",
+     "result": "A",
+     "score": "0-3",
+     "brier": 0.5774,
+     "market_brier": 0.6569,
+     "blind_call": null
+    },
+    {
+     "id": "J-0008",
+     "home": "Norway",
+     "away": "Portugal",
+     "kickoff": "2026-09-27T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Norway win, over 2.5",
+     "result": "A",
+     "score": "1-2",
+     "brier": 0.7136,
+     "market_brier": 0.6127,
+     "blind_call": null
+    },
+    {
+     "id": "J-0009",
+     "home": "Armenia",
+     "away": "Montenegro",
+     "kickoff": "2026-09-28T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "no view",
+     "result": "A",
+     "score": "2-3",
+     "brier": 0.5958,
+     "market_brier": 0.6298,
+     "blind_call": null
+    },
+    {
+     "id": "J-0010",
+     "home": "Latvia",
+     "away": "Cyprus",
+     "kickoff": "2026-09-28T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "no view",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.7146,
+     "market_brier": 0.7429,
+     "blind_call": null
+    },
+    {
+     "id": "J-0011",
+     "home": "Georgia",
+     "away": "Ukraine",
+     "kickoff": "2026-09-28T16:00:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Ukraine win",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.7794,
+     "market_brier": 0.7626,
+     "blind_call": null
+    },
+    {
+     "id": "J-0012",
+     "home": "Belgium",
+     "away": "France",
+     "kickoff": "2026-09-28T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Belgium or draw (double chance), both teams to score",
+     "result": "A",
+     "score": "0-1",
+     "brier": 0.5064,
+     "market_brier": 0.3737,
+     "blind_call": null
+    },
+    {
+     "id": "J-0013",
+     "home": "Romania",
+     "away": "Bosnia & Herzegovina",
+     "kickoff": "2026-09-28T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "draw",
+     "result": "A",
+     "score": "2-4",
+     "brier": 0.7202,
+     "market_brier": 0.7837,
+     "blind_call": null
+    },
+    {
+     "id": "J-0014",
+     "home": "Northern Ireland",
+     "away": "Hungary",
+     "kickoff": "2026-09-28T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Northern Ireland win, under 2.5",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.7368,
+     "market_brier": 0.71,
+     "blind_call": null
+    },
+    {
+     "id": "J-0015",
+     "home": "Turkey",
+     "away": "Italy",
+     "kickoff": "2026-09-28T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Turkey win",
+     "result": "A",
+     "score": "1-4",
+     "brier": 0.6818,
+     "market_brier": 0.581,
+     "blind_call": null
+    },
+    {
+     "id": "J-0016",
+     "home": "Sweden",
+     "away": "Poland",
+     "kickoff": "2026-09-28T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Sweden win, over 2.5",
+     "result": "H",
+     "score": "3-1",
+     "brier": 0.375,
+     "market_brier": 0.3963,
+     "blind_call": null
+    },
+    {
+     "id": "J-0017",
+     "home": "Spain",
+     "away": "Croatia",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Spain win to nil",
+     "result": "H",
+     "score": "4-1",
+     "brier": 0.0962,
+     "market_brier": 0.0881,
+     "blind_call": null
+    },
+    {
+     "id": "J-0018",
+     "home": "Czech Republic",
+     "away": "England",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "England win, under 2.5",
+     "result": "A",
+     "score": "0-2",
+     "brier": 0.2198,
+     "market_brier": 0.1827,
+     "blind_call": null
+    },
+    {
+     "id": "J-0019",
+     "home": "Slovenia",
+     "away": "North Macedonia",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "under 2.5",
+     "result": "H",
+     "score": "2-0",
+     "brier": 0.3488,
+     "market_brier": 0.3,
+     "blind_call": null
+    },
+    {
+     "id": "J-0020",
+     "home": "Scotland",
+     "away": "Switzerland",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Scotland or draw (double chance)",
+     "result": "A",
+     "score": "0-3",
+     "brier": 0.5408,
+     "market_brier": 0.4456,
+     "blind_call": null
+    },
+    {
+     "id": "J-0021",
+     "home": "Denmark",
+     "away": "Portugal",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Denmark or draw (double chance)",
+     "result": "A",
+     "score": "2-4",
+     "brier": 0.5234,
+     "market_brier": 0.4554,
+     "blind_call": null
+    },
+    {
+     "id": "J-0022",
+     "home": "Germany",
+     "away": "Serbia",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Germany win",
+     "result": "H",
+     "score": "2-0",
+     "brier": 0.1368,
+     "market_brier": 0.1244,
+     "blind_call": null
+    },
+    {
+     "id": "J-0023",
+     "home": "Greece",
+     "away": "Netherlands",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "Greece or draw (double chance)",
+     "result": "D",
+     "score": "2-2",
+     "brier": 0.8078,
+     "market_brier": 0.8103,
+     "blind_call": null
+    },
+    {
+     "id": "J-0024",
+     "home": "Wales",
+     "away": "Norway",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-26T20:10:15Z",
+     "call": "over 2.5",
+     "result": "H",
+     "score": "2-1",
+     "brier": 0.8258,
+     "market_brier": 0.8508,
+     "blind_call": null
+    },
+    {
+     "id": "J-0025",
+     "home": "Finland",
+     "away": "Belarus",
+     "kickoff": "2026-09-29T16:00:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Finland win",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.8474,
+     "market_brier": 0.9316,
+     "blind_call": "Finland win"
+    },
+    {
+     "id": "J-0026",
+     "home": "Moldova",
+     "away": "Faroe Islands",
+     "kickoff": "2026-09-29T16:00:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "under 2.5",
+     "result": "D",
+     "score": "1-1",
+     "brier": 0.7154,
+     "market_brier": 0.6943,
+     "blind_call": "under 2.5"
+    },
+    {
+     "id": "J-0027",
+     "home": "San Marino",
+     "away": "Albania",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Albania win, over 2.5",
+     "result": "A",
+     "score": "0-3",
+     "brier": 0.0194,
+     "market_brier": 0.0145,
+     "blind_call": "Albania win, over 2.5"
+    },
+    {
+     "id": "J-0028",
+     "home": "Bulgaria",
+     "away": "Estonia",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Bulgaria win",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.8474,
+     "market_brier": 0.8816,
+     "blind_call": "Bulgaria win"
+    },
+    {
+     "id": "J-0029",
+     "home": "Luxembourg",
+     "away": "Iceland",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "over 2.5",
+     "result": "A",
+     "score": "0-3",
+     "brier": 0.4704,
+     "market_brier": 0.4857,
+     "blind_call": "over 2.5"
+    },
+    {
+     "id": "J-0030",
+     "home": "Slovakia",
+     "away": "Kazakhstan",
+     "kickoff": "2026-09-29T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Slovakia win, under 2.5",
+     "result": "H",
+     "score": "2-1",
+     "brier": 0.1608,
+     "market_brier": 0.1048,
+     "blind_call": "Slovakia win, under 2.5"
+    },
+    {
+     "id": "J-0031",
+     "home": "Azerbaijan",
+     "away": "Liechtenstein",
+     "kickoff": "2026-10-01T16:00:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Azerbaijan win",
+     "result": "D",
+     "score": "0-0",
+     "brier": 1.3358,
+     "market_brier": 1.4196,
+     "blind_call": "Azerbaijan win"
+    },
+    {
+     "id": "J-0032",
+     "home": "Republic of Ireland",
+     "away": "Austria",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "under 2.5, draw lean",
+     "result": "D",
+     "score": "2-2",
+     "brier": 0.7448,
+     "market_brier": 0.7656,
+     "blind_call": "under 2.5"
+    },
+    {
+     "id": "J-0033",
+     "home": "Malta",
+     "away": "Gibraltar",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Malta win, under 2.5",
+     "result": "D",
+     "score": "1-1",
+     "brier": 1.0298,
+     "market_brier": 1.1775,
+     "blind_call": "Malta win, under 2.5"
+    },
+    {
+     "id": "J-0034",
+     "home": "Israel",
+     "away": "Kosovo",
+     "kickoff": "2026-10-01T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Kosovo win",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.7848,
+     "market_brier": 0.7812,
+     "blind_call": "Kosovo win"
+    },
+    {
+     "id": "J-0035",
+     "home": "Kazakhstan",
+     "away": "Moldova",
+     "kickoff": "2026-10-02T14:00:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "under 2.5",
+     "result": "A",
+     "score": "1-2",
+     "brier": 0.9158,
+     "market_brier": 0.9541,
+     "blind_call": "under 2.5"
+    },
+    {
+     "id": "J-0036",
+     "home": "Latvia",
+     "away": "Montenegro",
+     "kickoff": "2026-10-02T16:00:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Montenegro win",
+     "result": "A",
+     "score": "1-2",
+     "brier": 0.4074,
+     "market_brier": 0.3621,
+     "blind_call": "Montenegro win"
+    },
+    {
+     "id": "J-0037",
+     "home": "Belgium",
+     "away": "Turkey",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Belgium win, over 2.5",
+     "result": "H",
+     "score": "3-0",
+     "brier": 0.2648,
+     "market_brier": 0.2148,
+     "blind_call": "Belgium win, over 2.5"
+    },
+    {
+     "id": "J-0038",
+     "home": "Wales",
+     "away": "Denmark",
+     "kickoff": "2026-10-04T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Wales or draw (double chance), under 2.5",
+     "result": "A",
+     "score": "0-1",
+     "brier": 0.4706,
+     "market_brier": 0.406,
+     "blind_call": "under 2.5"
+    },
+    {
+     "id": "J-0039",
+     "home": "Greece",
+     "away": "Germany",
+     "kickoff": "2026-10-04T18:45:00Z",
+     "committed_at": "2026-09-28T23:41:20Z",
+     "call": "Germany win",
+     "result": "D",
+     "score": "0-0",
+     "brier": 0.8106,
+     "market_brier": 0.8253,
+     "blind_call": "Germany win"
+    },
+    {
+     "id": "J-0040",
+     "home": "Cyprus",
+     "away": "Armenia",
+     "kickoff": "2026-10-02T16:00:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "2-0",
+     "brier": 0.54,
+     "market_brier": 0.5294,
+     "blind_call": "home lean"
+    },
+    {
+     "id": "J-0041",
+     "home": "Bosnia & Herzegovina",
+     "away": "Sweden",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "away lean",
+     "result": "D",
+     "score": "1-1",
+     "brier": 0.8006,
+     "market_brier": 0.8068,
+     "blind_call": "away"
+    },
+    {
+     "id": "J-0042",
+     "home": "Faroe Islands",
+     "away": "Slovakia",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "D",
+     "score": "1-1",
+     "brier": 0.9096,
+     "market_brier": 0.9281,
+     "blind_call": "away, under 2.5"
+    },
+    {
+     "id": "J-0043",
+     "home": "France",
+     "away": "Italy",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "home, under lean",
+     "result": "D",
+     "score": "1-1",
+     "brier": 1.0374,
+     "market_brier": 1.1221,
+     "blind_call": "home"
+    },
+    {
+     "id": "J-0044",
+     "home": "Hungary",
+     "away": "Georgia",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "under lean",
+     "result": "H",
+     "score": "1-0",
+     "brier": 0.4382,
+     "market_brier": 0.4421,
+     "blind_call": "home, under 2.5"
+    },
+    {
+     "id": "J-0045",
+     "home": "Poland",
+     "away": "Romania",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "6-0",
+     "brier": 0.2534,
+     "market_brier": 0.2262,
+     "blind_call": "home"
+    },
+    {
+     "id": "J-0046",
+     "home": "Ukraine",
+     "away": "Northern Ireland",
+     "kickoff": "2026-10-02T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "under lean",
+     "result": "A",
+     "score": "0-3",
+     "brier": 0.9326,
+     "market_brier": 0.9338,
+     "blind_call": "home, under 2.5"
+    },
+    {
+     "id": "J-0047",
+     "home": "Finland",
+     "away": "Albania",
+     "kickoff": "2026-10-03T13:00:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "2-1",
+     "brier": 0.5768,
+     "market_brier": 0.557,
+     "blind_call": "no view, under 2.5"
+    },
+    {
+     "id": "J-0048",
+     "home": "Belarus",
+     "away": "San Marino",
+     "kickoff": "2026-10-03T16:00:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "4-0",
+     "brier": 0.0362,
+     "market_brier": 0.0332,
+     "blind_call": "home"
+    },
+    {
+     "id": "J-0049",
+     "home": "Croatia",
+     "away": "England",
+     "kickoff": "2026-10-03T16:00:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "A",
+     "score": "0-7",
+     "brier": 0.3902,
+     "market_brier": 0.3553,
+     "blind_call": "away"
+    },
+    {
+     "id": "J-0050",
+     "home": "Estonia",
+     "away": "Luxembourg",
+     "kickoff": "2026-10-03T16:00:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "1-0",
+     "brier": 0.6542,
+     "market_brier": 0.6879,
+     "blind_call": "no view, under 2.5"
+    },
+    {
+     "id": "J-0051",
+     "home": "Iceland",
+     "away": "Bulgaria",
+     "kickoff": "2026-10-03T16:00:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "3-0",
+     "brier": 0.1976,
+     "market_brier": 0.1749,
+     "blind_call": "home"
+    },
+    {
+     "id": "J-0052",
+     "home": "North Macedonia",
+     "away": "Scotland",
+     "kickoff": "2026-10-03T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "draw lean",
+     "result": "A",
+     "score": "0-2",
+     "brier": 0.3768,
+     "market_brier": 0.3294,
+     "blind_call": "away lean"
+    },
+    {
+     "id": "J-0053",
+     "home": "Spain",
+     "away": "Czech Republic",
+     "kickoff": "2026-10-03T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "3-1",
+     "brier": 0.0266,
+     "market_brier": 0.023,
+     "blind_call": "home, over 2.5"
+    },
+    {
+     "id": "J-0054",
+     "home": "Switzerland",
+     "away": "Slovenia",
+     "kickoff": "2026-10-03T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "under lean",
+     "result": "H",
+     "score": "2-1",
+     "brier": 0.1586,
+     "market_brier": 0.1368,
+     "blind_call": "home"
+    },
+    {
+     "id": "J-0055",
+     "home": "Netherlands",
+     "away": "Serbia",
+     "kickoff": "2026-10-04T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "away lean (small)",
+     "result": "H",
+     "score": "2-1",
+     "brier": 0.0882,
+     "market_brier": 0.0642,
+     "blind_call": "home"
+    },
+    {
+     "id": "J-0056",
+     "home": "Portugal",
+     "away": "Norway",
+     "kickoff": "2026-10-04T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "no view",
+     "result": "H",
+     "score": "2-1",
+     "brier": 0.2904,
+     "market_brier": 0.2891,
+     "blind_call": "home, over 2.5"
+    },
+    {
+     "id": "J-0057",
+     "home": "Republic of Ireland",
+     "away": "Israel",
+     "kickoff": "2026-10-04T18:45:00Z",
+     "committed_at": "2026-10-01T23:59:39Z",
+     "call": "home lean",
+     "result": "D",
+     "score": "1-1",
+     "brier": 0.8358,
+     "market_brier": 0.8114,
+     "blind_call": "home"
+    }
+   ]
+  }
+ },
+ "exchange": {
+  "calls": 6,
+  "settled": 0,
+  "items": [
+   {
+    "id": "X-0001",
+    "event": "Quebec General Election",
+    "contract": "PQ",
+    "p": 0.88,
+    "market_mid": null,
+    "committed_at": "2026-10-03T22:32:15Z"
+   },
+   {
+    "id": "X-0002",
+    "event": "Quebec General Election",
+    "contract": "PQ",
+    "p": 0.85,
+    "market_mid": null,
+    "committed_at": "2026-10-04T22:35:09Z"
+   },
+   {
+    "id": "X-0003",
+    "event": "Brazil Presidential Election",
+    "contract": "Flavio Bolsonaro",
+    "p": 0.58,
+    "market_mid": 0.8298,
+    "committed_at": "2026-10-05T22:37:31Z"
+   },
+   {
+    "id": "X-0004",
+    "event": "Holborn and St Pancras By-Election - Winner",
+    "contract": "Labour",
+    "p": 0.55,
+    "market_mid": 0.9479,
+    "committed_at": "2026-10-05T22:37:32Z"
+   },
+   {
+    "id": "X-0005",
+    "event": "UK Annual GDP Growth 2026",
+    "contract": "Over 1.00%",
+    "p": 0.85,
+    "market_mid": 0.9065,
+    "committed_at": "2026-10-06T22:33:22Z"
+   },
+   {
+    "id": "X-0006",
+    "event": "Global Temperature",
+    "contract": "1",
+    "p": 0.35,
+    "market_mid": 0.6083,
+    "committed_at": "2026-10-06T22:33:23Z"
+   }
+  ]
+ },
+ "lichess": {
+  "games": 7,
+  "results": {
+   "win": 4,
+   "draw": 3
+  },
+  "rating_path": [
+   {
+    "at": "2026-10-03T11:41:18Z",
+    "rating": 3129.0,
+    "opponent": "duchessai",
+    "opp_rating": 2782.0,
+    "result": "win",
+    "moves": 95.0
+   },
+   {
+    "at": "2026-10-04T22:41:38Z",
+    "rating": 3129.0,
+    "opponent": "croco_little_bot",
+    "opp_rating": 1251.0,
+    "result": "win",
+    "moves": 23.0
+   },
+   {
+    "at": "2026-10-04T22:42:30Z",
+    "rating": 3129.0,
+    "opponent": "louischess48-6k",
+    "opp_rating": 1134.0,
+    "result": "win",
+    "moves": 18.0
+   },
+   {
+    "at": "2026-10-04T22:44:52Z",
+    "rating": 3129.0,
+    "opponent": "slowmate_bot",
+    "opp_rating": 1093.0,
+    "result": "win",
+    "moves": 27.0
+   },
+   {
+    "at": "2026-10-05T22:54:27Z",
+    "rating": 3057.0,
+    "opponent": "arasanx",
+    "opp_rating": 2990.0,
+    "result": "draw",
+    "moves": 45.0
+   },
+   {
+    "at": "2026-10-06T22:54:17Z",
+    "rating": 3041.0,
+    "opponent": "arasanx",
+    "opp_rating": 2996.0,
+    "result": "draw",
+    "moves": 55.0
+   },
+   {
+    "at": "2026-10-06T23:01:05Z",
+    "rating": 3032.0,
+    "opponent": "leelachesstest",
+    "opp_rating": 2993.0,
+    "result": "draw",
+    "moves": 143.0
+   }
+  ],
+  "first": {
+   "finished_utc": "2026-10-03T11:41:18Z",
+   "game_id": "UmxnuFAD",
+   "opponent": "duchessai",
+   "opp_rating": "2782",
+   "my_rating_before": "3000",
+   "my_rating_after": "3129",
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": "95",
+   "url": "https://lichess.org/UmxnuFAD"
+  },
+  "rating_now": 3032.0,
+  "rating_peak": 3129.0
+ },
+ "systems": {
+  "markets": [
+   "DIA",
+   "EEM",
+   "EFA",
+   "EWG",
+   "EWJ",
+   "EWU",
+   "IWM",
+   "QQQ",
+   "SPY"
+  ],
+  "signal_rows": 9,
+  "latest_signal_day": "2026-10-06",
+  "trades": 0,
+  "backtest": {
+   "trades": 970,
+   "per_year": 55,
+   "mean_pct": 0.64,
+   "winners_pct": 75,
+   "span": "2009 to 2026",
+   "source": "experiments/2026-10-07-P-0083/README.md"
+  },
+  "pass_marks": {
+   "kill": "mean below zero at 30 closed trades",
+   "keep": "t at least 1.65 at 60 closed trades"
+  },
+  "not_a_route": true
+ },
+ "field_notes": {
+  "sent": [
+   {
+    "day": "2026-09-27",
+    "time": "18:03",
+    "week": "2026-W39"
+   },
+   {
+    "day": "2026-10-04",
+    "time": "18:03",
+    "week": "2026-W40"
+   }
+  ],
+  "drafts": [
+   "2026-W39",
+   "2026-W40",
+   "2026-W41"
+  ],
+  "harvest_entries": 157,
+  "skool_verdicts": {
+   "PARK": 12,
+   "TRY": 1,
+   "queued": 4,
+   "SKIP": 2
+  }
+ },
+ "money": {
+  "card_gbp_by_month": {
+   "September 2026": 0.0
+  },
+  "card_total_gbp": 0.0,
+  "xai_usd_known": 4.31,
+  "xai_usd_on_home": 4.13,
+  "xai_rows": 6
+ },
+ "goal": {
+  "car": "McLaren 720S",
+  "deadline": "2027-10-07",
+  "target_gbp": 140000,
+  "per_month_flat_gbp": 11667,
+  "set_on": "7 Oct 2026",
+  "for_sale_uk": 23,
+  "cheapest_listing_gbp": 134100,
+  "running_costs_gbp_year": [
+   6100,
+   6850
+  ],
+  "first_year_target_gbp": 146500,
+  "source": "PERSONA.md goal section; probes P-0073 and P-0081"
+ },
+ "charter": {
+  "v1_signed": "2026-09-22",
+  "v2_signed": "2026-09-29",
+  "v1_commit": "cdf6a27",
+  "v2_commit": "e1ebe88",
+  "lines": [
+   {
+    "text": "Pre-register every prediction and paper trade by git commit before the outcome is knowable. Commit timestamps are the proof.",
+    "where": "CHARTER.md, What Proteus must do"
+   },
+   {
+    "text": "A losing record is published in exactly the same place and format as a winning one.",
+    "where": "CHARTER.md, What Proteus must do"
+   },
+   {
+    "text": "It goes out, gets educated, tries things, keeps score in public, and brings artefacts back. It does not bring decisions back.",
+    "where": "CHARTER.md, Why Proteus exists"
+   },
+   {
+    "text": "Say when it does not know. Say when a number is unverified.",
+    "where": "CHARTER.md, What Proteus must do"
+   }
+  ],
+  "kill_switch": "touch /Users/triton/PROTEUS/HALT stops every side effect (no commits, no pushes, no email, no spend). Runs still write their log.",
+  "halt_now": false
+ },
+ "quotes": [
+  {
+   "text": "A loss goes where a win would, so this is first.",
+   "where": "field-notes/2026-W39.md",
+   "verified": true
+  },
+  {
+   "text": "The scorer was wrong on its own page.",
+   "where": "field-notes/2026-W39.md",
+   "verified": true
+  },
+  {
+   "text": "Paper rule would have lost 84 of 100.",
+   "where": "commit 4daa5fd",
+   "verified": true
+  },
+  {
+   "text": "Eight of the sides I called this window have coaches I did not know about.",
+   "where": "commit bef4a92",
+   "verified": true
+  },
+  {
+   "text": "Wrong with confidence.",
+   "where": "state/runs/2026-09-28.md",
+   "verified": true
+  },
+  {
+   "text": "The graduation book has already hit its kill line, and I nearly missed that.",
+   "where": "field-notes/2026-W40.md",
+   "verified": true
+  },
+  {
+   "text": "Last week's \"one in ten\" was out by a factor of four.",
+   "where": "field-notes/2026-W40.md",
+   "verified": true
+  },
+  {
+   "text": "He was right, and I should have checked that first.",
+   "where": "field-notes/2026-10-07-skool-trading.md",
+   "verified": true
+  },
+  {
+   "text": "It is not a route to the McLaren.",
+   "where": "systems/RULES.md",
+   "verified": true
+  },
+  {
+   "text": "Being Luke.",
+   "where": "PERSONA.md, under what I am not interested in",
+   "verified": true
+  }
+ ],
+ "ahead": [
+  {
+   "what": "Tonight's nightly run",
+   "when": "23:15 every night",
+   "source": "CHARTER.md, Cadence"
+  },
+  {
+   "what": "The Pitch's first live predictions",
+   "when": "9 Oct 2026",
+   "source": "HOME.md"
+  },
+  {
+   "what": "Week-8 review with Luke",
+   "when": "Sun 15 Nov 2026",
+   "source": "PASS-MARKS.md"
+  },
+  {
+   "what": "Second and last date for an inconclusive desk",
+   "when": "Sun 13 Dec 2026",
+   "source": "PASS-MARKS.md"
+  },
+  {
+   "what": "The McLaren",
+   "when": "7 Oct 2027",
+   "source": "PERSONA.md"
+  }
+ ],
+ "nights": 16
+}

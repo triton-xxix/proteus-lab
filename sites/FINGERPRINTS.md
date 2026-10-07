@@ -28,9 +28,9 @@ changes only grammar and world will fail it.
 
 | Build | Grammar | Nav treatment | Hero device | Act-sequence shape | Close pattern | Signature move | World | Port |
 |---|---|---|---|---|---|---|---|---|
+| sixteen-nights (2026-10-07) | Filmic one-shot | Fixed minimal bar: wordmark + one CTA (Watch the film); HALT control joins the chrome at the peak | scrub, three planes (clip, desk cutout, rain) | scrub, pin, pan, flow(silence), pin(peak), flow+reveal, scrub close; 7 acts, about 15.8vh | Pinned-style scrub close with holding cues: car clip, live countdown to 23:15, CTA, footer inside the stage | The kill switch: a HALT control that freezes every clip and the probe field, dims the ground, stamps a log line; releasing resumes | Nocturne (night London room, wet street; Nano Banana 2 stills, one Veo clip, one ffmpeg push-in) | docs/record on GitHub Pages |
 
-*(empty: your first build has nothing to clear, so build whatever the interview
-points at. From the second onwards, this table is the constraint.)*
+*(From the second build onwards, this table is the constraint.)*
 
 ---
 
@@ -41,7 +41,7 @@ reusing: a grammar, a nav treatment, a close pattern, a signature move, an
 act-count-and-length band. The shared columns are what the next build inherits
 as a constraint, so writing them down is the whole point.
 
-Nothing is taken yet.
+- sixteen-nights took: filmic one-shot; the fixed minimal bar with one CTA; a scrub hero with layered planes; a scrub close with holding cues and a live countdown; a probe-field canvas as the peak; the kill-switch signature move. The next build should not open on a scrub hero or close on a scrub with a countdown.
 
 ---
 

@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f11-fall</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -25,10 +32,10 @@
 .counters span{font-size:19px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
 .halt{position:absolute;right:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.14em;color:#e0a450;border:1px solid #e0a450;padding:10px 20px}
 </style>
-<div id="root" data-composition-id="f11-fall" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">Sunday culls · 4 killed</div>
-<canvas id="field" width="1920" height="1080"></canvas><div class="counters"><div><b class="stat" id="n-works" style="color:#7fc8a9">0</b><span class="mono">works</span></div><div><b class="stat" id="n-broken" style="color:#d96b5c">0</b><span class="mono">broken</span></div><div><b class="stat" id="n-blocked" style="color:#8d9bb5">0</b><span class="mono">blocked</span></div><div><b class="stat" id="n-not-worth-it" style="color:#6f6a62">0</b><span class="mono">not worth it</span></div><div><b class="stat" id="n-killed" style="color:#c9473c">0</b><span class="mono">killed</span></div><div><b class="stat" id="n-open" style="color:#4e5868">0</b><span class="mono">open</span></div></div><div class="halt hidden0" id="halt">HALT</div>
+<div data-hf-id="hf-luu7" id="root" data-composition-id="f11-fall" data-width="1920" data-height="1080" data-duration="4.00">
+  <div data-hf-id="hf-1rt5" id="stage">
+<canvas data-hf-id="hf-69ek" id="field" width="1920" height="1080"></canvas><div data-hf-id="hf-0jvj" class="counters"><div data-hf-id="hf-yeow"><b data-hf-id="hf-hogc" class="stat" id="n-works" style="color:#7fc8a9">0</b><span data-hf-id="hf-ka0a" class="mono">works</span></div><div data-hf-id="hf-y7yw"><b data-hf-id="hf-d9nc" class="stat" id="n-broken" style="color:#d96b5c">0</b><span data-hf-id="hf-ypdx" class="mono">broken</span></div><div data-hf-id="hf-x11t"><b data-hf-id="hf-rha0" class="stat" id="n-blocked" style="color:#8d9bb5">0</b><span data-hf-id="hf-y03c" class="mono">blocked</span></div><div data-hf-id="hf-xfcu"><b data-hf-id="hf-xodp" class="stat" id="n-not-worth-it" style="color:#6f6a62">0</b><span data-hf-id="hf-octu" class="mono">not worth it</span></div><div data-hf-id="hf-w8fr"><b data-hf-id="hf-w98g" class="stat" id="n-killed" style="color:#c9473c">0</b><span data-hf-id="hf-xb81" class="mono">killed</span></div><div data-hf-id="hf-wmqs"><b data-hf-id="hf-wyea" class="stat" id="n-open" style="color:#4e5868">0</b><span data-hf-id="hf-cn14" class="mono">open</span></div></div><div data-hf-id="hf-mqi9" class="halt hidden0" id="halt">HALT</div>
+    <div data-hf-id="hf-0w0p" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">Sunday culls · 4 killed</div>
   </div>
 </div>
 <script>
@@ -69,6 +76,7 @@ function drawField(t, fallT) {
   
   tl.to(st, {f: 3.0, duration: 3.0, ease: "none", onUpdate: function () { drawField(1.1, st.f); }}, 0.3);
   tl.fromTo("#halt", {opacity: 0}, {opacity: 1, duration: 0.3, ease: "power2.out"}, 1.9);
+  tl.set({}, {}, 4.00); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f11-fall"] = tl;
 })();
 </script>

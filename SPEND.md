@@ -40,3 +40,17 @@ so he can see it. Figures are the API's own reported cost per call.
 | 2026-10-02 | nightly: mentions 0.34, narrative 0.15 | 0.49 |
 | 2026-10-03 | nightly: mentions 0.17, narrative 0.15 | 0.32 |
 | | Total known to 3 Oct | 4.31 |
+
+## Luke's Gemini and ElevenLabs accounts (not the Proteus card)
+
+Luke named these keys for Proteus in session on 7 Oct 2026, for the Sixteen Nights record (the film
+and the page at `docs/record/`). Spend lands on his accounts, outside the £50 line and the £250
+ceiling, and is shown here so he can see it. Estimates at the bootcamp config's 1 Oct 2026 prices;
+the per-call ledger is `sites/builds/sixteen-nights/media-ledger.jsonl`; the providers' bills are the truth.
+
+| Date | Service | What | Est. USD |
+|---|---|---|---|
+| 2026-10-07 | Gemini (Nano Banana 2) | 8 stills at 2K: night desk, clean plate, car, wet street, portrait variants | 0.81 |
+| 2026-10-07 | Gemini (Veo 3.1 fast) | 1 clip, 8 s 1080p, the car; the second clip was refused: prepaid credits depleted (HTTP 402) | 0.96 |
+| 2026-10-07 | ElevenLabs | 30 voice lines (Edward, tests and re-renders included), one 95 s music bed | 0.49 |
+| | | Total, estimated | 2.26 |

@@ -195,7 +195,8 @@ def main():
     body = last_night() + grinder() + pitch() + jobs() + probes() + spend() + draft()
     foot = ["## Everything else", "",
             "[[TRACK-RECORD]] (audited score, rebuilt Sundays) · [[HARVEST]] · [[SEEN]] · [[BACKLOG]] · [[PASS-MARKS]] · [[USAGE]] · [[CHARTER]] · [[GRADUATES]]",
-            "", "Public lab page, rebuilt Sundays: https://triton-xxix.github.io/proteus-lab/", ""]
+            "", "Public lab page, rebuilt Sundays: https://triton-xxix.github.io/proteus-lab/",
+            "The record, a film and a page of the first sixteen nights: https://triton-xxix.github.io/proteus-lab/record/", ""]
     open(OUT, "w").write("\n".join(head + body + foot))
     print("home: %s (%d lines)" % (OUT, len(head + body + foot)))
 

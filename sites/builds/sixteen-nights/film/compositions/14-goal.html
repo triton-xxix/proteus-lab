@@ -1,12 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>f14-goal</title></head>
 <body>
 <template>
-<style>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
 #root{position:absolute;inset:0;background:#07090d;color:#ece6d9;font-family:'Geist', 'Helvetica Neue', Arial, sans-serif;overflow:hidden}
 #stage{position:absolute;inset:0;will-change:transform,opacity}
-.clock{position:absolute;left:112px;top:72px;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
+.clock{position:absolute;left:112px;top:72px;z-index:5;font-family:'Geist Mono', 'SF Mono', Menlo, monospace;font-size:27px;letter-spacing:.06em;color:#e0a450;white-space:nowrap}
 .clock.dim{opacity:.35}
 .mono{font-family:'Geist Mono', 'SF Mono', Menlo, monospace;letter-spacing:.04em;color:#9a9486}
 .display{font-family:'Archivo', 'Helvetica Neue', Arial, sans-serif;font-weight:900;letter-spacing:-.035em;line-height:.92}
@@ -17,10 +24,10 @@
 .body{font-size:25px;line-height:1.55}
 .hidden0{opacity:0}
 .goal{position:absolute;left:112px;bottom:110px}</style>
-<div id="root" data-composition-id="f14-goal" data-width="1920" data-height="1080">
-  <div id="stage">
-    <div class="clock">07 Oct 2026 · 00:13 · 23657e3</div>
-<video id="v14" src="media/clips/07-car.mp4" muted playsinline data-start="0" data-duration="12.06" data-playback-rate="0.70" data-track-index="0" style="position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover"></video><div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(7,9,13,.6) 0%, rgba(7,9,13,0) 50%)"></div><div class="goal"><div class="h2 hidden0" id="g0" style="font-size:66px">A McLaren 720S</div><div class="stat hidden0" id="g1" style="font-size:168px;margin:10px 0">£140,000</div><div class="h3 hidden0" id="g2" style="font-size:46px">7 October 2027</div><div class="mono hidden0" id="g3" style="font-size:24px;margin-top:16px">Card spend: £0.00 · cheapest UK listing £134,100 · 23 for sale</div></div>
+<div data-hf-id="hf-05d5" id="root" data-composition-id="f14-goal" data-width="1920" data-height="1080" data-duration="12.06">
+  <div data-hf-id="hf-1rt5" id="stage">
+<video data-hf-id="hf-aour" id="v14" src="media/clips/07-car.mp4" muted playsinline data-start="0" data-duration="12.06" data-playback-rate="0.70" data-track-index="0" style="position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover"></video><div data-hf-id="hf-730x" style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(7,9,13,.6) 0%, rgba(7,9,13,0) 50%)"></div><div data-hf-id="hf-liwh" class="goal"><div data-hf-id="hf-rrf9" class="h2 hidden0" id="g0" style="font-size:66px">A McLaren 720S</div><div data-hf-id="hf-nhqc" class="stat hidden0" id="g1" style="font-size:168px;margin:10px 0">£140,000</div><div data-hf-id="hf-d0yd" class="h3 hidden0" id="g2" style="font-size:46px">7 October 2027</div><div data-hf-id="hf-ttsp" class="mono hidden0" id="g3" style="font-size:24px;margin-top:16px">Card spend: £0.00 · cheapest UK listing £134,100 · 23 for sale</div></div>
+    <div data-hf-id="hf-ow9a" class="clock" data-layout-allow-overlap="" data-layout-allow-occlusion="">07 Oct 2026 · 00:13 · 23657e3</div>
   </div>
 </div>
 <script>
@@ -33,6 +40,7 @@
   tl.fromTo("#g1", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.55, ease: "power3.out"}, 3.60);
   tl.fromTo("#g2", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.55, ease: "power3.out"}, 6.70);
   tl.fromTo("#g3", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.55, ease: "power3.out"}, 9.10);
+  tl.set({}, {}, 12.06); // the scene's timeline runs the full slot, so media inside it is never cut short
   window.__timelines["f14-goal"] = tl;
 })();
 </script>

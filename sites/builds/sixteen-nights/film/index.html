@@ -1,17 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
     <title>Sixteen Nights</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Archivo-700.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Archivo-900.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Geist-400.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Geist-500.woff2') format('woff2')}
+@font-face{font-family:'Geist';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Geist-600.woff2') format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/GeistMono-500.woff2') format('woff2')}
+
       * { box-sizing: border-box; }
       html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #07090d; }
       body { font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; color: #ece6d9; }
       #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #07090d; }
-      [data-composition-id="sixteen-nights"] > div[data-composition-src] { position: absolute; inset: 0; }
+      #root > div[data-composition-src] { position: absolute; inset: 0; }
       #grain-overlay .grain-texture { opacity: 0.07; }
 
   @keyframes hf-grain-noise {
@@ -62,65 +69,63 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="sixteen-nights" data-start="0" data-width="1920" data-height="1080" data-duration="107.61">
-    <div id="el-01" data-composition-id="f01-clock" data-composition-src="compositions/01-clock.html" data-start="0.00" data-duration="4.00" data-track-index="1" data-width="1920" data-height="1080" style="z-index:10"></div>
-    <div id="el-02" data-composition-id="f02-room" data-composition-src="compositions/02-room.html" data-start="3.20" data-duration="6.13" data-track-index="2" data-width="1920" data-height="1080" style="z-index:11"></div>
-    <div id="el-03" data-composition-id="f03-rule-one" data-composition-src="compositions/03-rule-one.html" data-start="8.73" data-duration="6.67" data-track-index="1" data-width="1920" data-height="1080" style="z-index:12"></div>
-    <div id="el-04" data-composition-id="f04-rule-two" data-composition-src="compositions/04-rule-two.html" data-start="14.90" data-duration="5.00" data-track-index="2" data-width="1920" data-height="1080" style="z-index:13"></div>
-    <div id="el-05" data-composition-id="f05-grinder-falls" data-composition-src="compositions/05-grinder-falls.html" data-start="19.90" data-duration="9.04" data-track-index="1" data-width="1920" data-height="1080" style="z-index:14"></div>
-    <div id="el-06" data-composition-id="f06-grinder-climbs" data-composition-src="compositions/06-grinder-climbs.html" data-start="28.94" data-duration="8.90" data-track-index="2" data-width="1920" data-height="1080" style="z-index:15"></div>
-    <div id="el-07" data-composition-id="f07-pitch" data-composition-src="compositions/07-pitch.html" data-start="37.34" data-duration="8.10" data-track-index="1" data-width="1920" data-height="1080" style="z-index:16"></div>
-    <div id="el-08" data-composition-id="f08-books" data-composition-src="compositions/08-books.html" data-start="45.44" data-duration="7.65" data-track-index="2" data-width="1920" data-height="1080" style="z-index:17"></div>
-    <div id="el-09" data-composition-id="f09-silence" data-composition-src="compositions/09-silence.html" data-start="52.49" data-duration="2.20" data-track-index="1" data-width="1920" data-height="1080" style="z-index:18"></div>
-    <div id="el-10" data-composition-id="f10-field" data-composition-src="compositions/10-field.html" data-start="54.69" data-duration="10.00" data-track-index="2" data-width="1920" data-height="1080" style="z-index:19"></div>
-    <div id="el-11" data-composition-id="f11-fall" data-composition-src="compositions/11-fall.html" data-start="64.69" data-duration="4.00" data-track-index="1" data-width="1920" data-height="1080" style="z-index:20"></div>
-    <div id="el-12" data-composition-id="f12-wrong" data-composition-src="compositions/12-wrong.html" data-start="68.69" data-duration="15.45" data-track-index="2" data-width="1920" data-height="1080" style="z-index:21"></div>
-    <div id="el-13" data-composition-id="f13-survivor" data-composition-src="compositions/13-survivor.html" data-start="83.64" data-duration="7.40" data-track-index="1" data-width="1920" data-height="1080" style="z-index:22"></div>
-    <div id="el-14" data-composition-id="f14-goal" data-composition-src="compositions/14-goal.html" data-start="90.34" data-duration="12.06" data-track-index="2" data-width="1920" data-height="1080" style="z-index:23"></div>
-    <div id="el-15" data-composition-id="f15-tonight" data-composition-src="compositions/15-tonight.html" data-start="101.61" data-duration="6.00" data-track-index="1" data-width="1920" data-height="1080" style="z-index:24"></div>
-    <audio id="bed" src="media/bed.mp3" data-start="0" data-duration="107.61" data-track-index="11" data-volume="0.34"></audio>
-    <audio id="vo-01" src="media/voice/01.mp3" data-start="0.25" data-duration="2.46" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-02" src="media/voice/02.mp3" data-start="4.25" data-duration="4.23" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-03" src="media/voice/03.mp3" data-start="9.58" data-duration="4.97" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-04" src="media/voice/04.mp3" data-start="15.65" data-duration="3.16" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-05" src="media/voice/05.mp3" data-start="20.15" data-duration="7.94" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-06" src="media/voice/06.mp3" data-start="29.19" data-duration="7.80" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-07" src="media/voice/07.mp3" data-start="38.09" data-duration="6.50" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-08" src="media/voice/08.mp3" data-start="45.69" data-duration="6.55" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-10" src="media/voice/10.mp3" data-start="54.94" data-duration="8.73" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-11" src="media/voice/11.mp3" data-start="64.94" data-duration="1.16" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-12" src="media/voice/12.mp3" data-start="68.94" data-duration="14.35" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-13" src="media/voice/13.mp3" data-start="84.39" data-duration="5.80" data-track-index="10" data-volume="1"></audio>
-    <audio id="vo-14" src="media/voice/14.mp3" data-start="91.29" data-duration="10.26" data-track-index="10" data-volume="1"></audio>
-    <audio id="mk-0-tick" src="media/marks/tick.wav" data-start="0.20" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-1-tick" src="media/marks/tick.wav" data-start="1.20" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-2-tick" src="media/marks/tick.wav" data-start="2.20" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-3-tick" src="media/marks/tick.wav" data-start="3.20" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-4-tick" src="media/marks/tick.wav" data-start="55.19" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-5-tick" src="media/marks/tick.wav" data-start="55.76" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-6-tick" src="media/marks/tick.wav" data-start="56.32" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-7-tick" src="media/marks/tick.wav" data-start="56.89" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-8-tick" src="media/marks/tick.wav" data-start="57.46" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-9-tick" src="media/marks/tick.wav" data-start="58.02" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-10-tick" src="media/marks/tick.wav" data-start="58.59" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-11-tick" src="media/marks/tick.wav" data-start="59.16" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-12-tick" src="media/marks/tick.wav" data-start="59.72" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-13-tick" src="media/marks/tick.wav" data-start="60.29" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-14-tick" src="media/marks/tick.wav" data-start="60.86" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-15-tick" src="media/marks/tick.wav" data-start="61.42" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-16-tick" src="media/marks/tick.wav" data-start="61.99" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-17-tick" src="media/marks/tick.wav" data-start="62.56" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-18-tick" src="media/marks/tick.wav" data-start="63.12" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-19-tick" src="media/marks/tick.wav" data-start="63.69" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
-    <audio id="mk-20-thud" src="media/marks/thud.wav" data-start="65.34" data-duration="0.90" data-track-index="12" data-volume="0.70"></audio>
-    <audio id="mk-21-thud" src="media/marks/thud.wav" data-start="65.79" data-duration="0.90" data-track-index="12" data-volume="0.70"></audio>
-    <audio id="mk-22-thud" src="media/marks/thud.wav" data-start="66.24" data-duration="0.90" data-track-index="12" data-volume="0.70"></audio>
-    <audio id="mk-23-thud" src="media/marks/thud.wav" data-start="66.69" data-duration="0.90" data-track-index="12" data-volume="0.70"></audio>
-    <audio id="mk-24-cross" src="media/marks/cross.wav" data-start="31.20" data-duration="1.60" data-track-index="12" data-volume="0.55"></audio>
-    <audio id="mk-25-resolve" src="media/marks/resolve.wav" data-start="101.81" data-duration="4.00" data-track-index="12" data-volume="0.60"></audio>
-<div
-  id="grain-overlay"
-  style="
+    <div data-hf-id="hf-l8q8" id="root" data-composition-id="sixteen-nights" data-start="0" data-width="1920" data-height="1080" data-duration="107.61">
+    <div data-hf-id="hf-87hh" id="el-01" data-composition-id="f01-clock" data-composition-src="compositions/01-clock.html" data-start="0.00" data-duration="4.00" data-track-index="1" data-width="1920" data-height="1080" style="z-index:10"></div>
+    <div data-hf-id="hf-7xfb" id="el-02" data-composition-id="f02-room" data-composition-src="compositions/02-room.html" data-start="3.20" data-duration="6.13" data-track-index="2" data-width="1920" data-height="1080" style="z-index:11"></div>
+    <div data-hf-id="hf-35km" id="el-03" data-composition-id="f03-rule-one" data-composition-src="compositions/03-rule-one.html" data-start="8.73" data-duration="6.67" data-track-index="1" data-width="1920" data-height="1080" style="z-index:12"></div>
+    <div data-hf-id="hf-2045" id="el-04" data-composition-id="f04-rule-two" data-composition-src="compositions/04-rule-two.html" data-start="14.90" data-duration="5.00" data-track-index="2" data-width="1920" data-height="1080" style="z-index:13"></div>
+    <div data-hf-id="hf-wqyt" id="el-05" data-composition-id="f05-grinder-falls" data-composition-src="compositions/05-grinder-falls.html" data-start="19.90" data-duration="9.04" data-track-index="1" data-width="1920" data-height="1080" style="z-index:14"></div>
+    <div data-hf-id="hf-9aek" id="el-06" data-composition-id="f06-grinder-climbs" data-composition-src="compositions/06-grinder-climbs.html" data-start="28.94" data-duration="8.90" data-track-index="2" data-width="1920" data-height="1080" style="z-index:15"></div>
+    <div data-hf-id="hf-3lkf" id="el-07" data-composition-id="f07-pitch" data-composition-src="compositions/07-pitch.html" data-start="37.34" data-duration="8.10" data-track-index="1" data-width="1920" data-height="1080" style="z-index:16"></div>
+    <div data-hf-id="hf-i6xl" id="el-08" data-composition-id="f08-books" data-composition-src="compositions/08-books.html" data-start="45.44" data-duration="7.65" data-track-index="2" data-width="1920" data-height="1080" style="z-index:17"></div>
+    <div data-hf-id="hf-x537" id="el-09" data-composition-id="f09-silence" data-composition-src="compositions/09-silence.html" data-start="52.49" data-duration="2.20" data-track-index="1" data-width="1920" data-height="1080" style="z-index:18"></div>
+    <div data-hf-id="hf-71ds" id="el-10" data-composition-id="f10-field" data-composition-src="compositions/10-field.html" data-start="54.69" data-duration="10.00" data-track-index="2" data-width="1920" data-height="1080" style="z-index:19"></div>
+    <div data-hf-id="hf-pwtm" id="el-11" data-composition-id="f11-fall" data-composition-src="compositions/11-fall.html" data-start="64.69" data-duration="4.00" data-track-index="1" data-width="1920" data-height="1080" style="z-index:20"></div>
+    <div data-hf-id="hf-zfm6" id="el-12" data-composition-id="f12-wrong" data-composition-src="compositions/12-wrong.html" data-start="68.69" data-duration="15.45" data-track-index="2" data-width="1920" data-height="1080" style="z-index:21"></div>
+    <div data-hf-id="hf-vzeb" id="el-13" data-composition-id="f13-survivor" data-composition-src="compositions/13-survivor.html" data-start="83.64" data-duration="7.40" data-track-index="1" data-width="1920" data-height="1080" style="z-index:22"></div>
+    <div data-hf-id="hf-ezzj" id="el-14" data-composition-id="f14-goal" data-composition-src="compositions/14-goal.html" data-start="90.34" data-duration="12.06" data-track-index="2" data-width="1920" data-height="1080" style="z-index:23"></div>
+    <div data-hf-id="hf-ymj2" id="el-15" data-composition-id="f15-tonight" data-composition-src="compositions/15-tonight.html" data-start="101.61" data-duration="6.00" data-track-index="1" data-width="1920" data-height="1080" style="z-index:24"></div>
+    <audio data-hf-id="hf-vwol" id="bed" src="media/bed.mp3" data-start="0" data-duration="107.61" data-track-index="11" data-volume="0.20"></audio>
+    <audio data-hf-id="hf-sf6i" id="vo-01" src="media/voice/01.mp3" data-start="0.25" data-duration="2.46" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-rp55" id="vo-02" src="media/voice/02.mp3" data-start="4.25" data-duration="4.23" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-f0eh" id="vo-03" src="media/voice/03.mp3" data-start="9.58" data-duration="4.97" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-shay" id="vo-04" src="media/voice/04.mp3" data-start="15.65" data-duration="3.16" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-hou3" id="vo-05" src="media/voice/05.mp3" data-start="20.15" data-duration="7.94" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-rlrf" id="vo-06" src="media/voice/06.mp3" data-start="29.19" data-duration="7.80" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-1x7s" id="vo-07" src="media/voice/07.mp3" data-start="38.09" data-duration="6.50" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-mmeb" id="vo-08" src="media/voice/08.mp3" data-start="45.69" data-duration="6.55" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-ajot" id="vo-10" src="media/voice/10.mp3" data-start="54.94" data-duration="8.73" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-7zmg" id="vo-11" src="media/voice/11.mp3" data-start="64.94" data-duration="1.16" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-hio7" id="vo-12" src="media/voice/12.mp3" data-start="68.94" data-duration="14.35" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-k4l6" id="vo-13" src="media/voice/13.mp3" data-start="84.39" data-duration="5.80" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-c34j" id="vo-14" src="media/voice/14.mp3" data-start="91.29" data-duration="10.26" data-track-index="10" data-volume="1"></audio>
+    <audio data-hf-id="hf-y2zq" id="mk-0-tick" src="media/marks/tick.wav" data-start="0.20" data-duration="0.09" data-track-index="12" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-l78d" id="mk-1-tick" src="media/marks/tick.wav" data-start="1.20" data-duration="0.09" data-track-index="13" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-ulig" id="mk-2-tick" src="media/marks/tick.wav" data-start="2.20" data-duration="0.09" data-track-index="14" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-lscv" id="mk-3-tick" src="media/marks/tick.wav" data-start="3.20" data-duration="0.09" data-track-index="15" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-0gj6" id="mk-4-tick" src="media/marks/tick.wav" data-start="55.19" data-duration="0.09" data-track-index="16" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-re6v" id="mk-5-tick" src="media/marks/tick.wav" data-start="55.76" data-duration="0.09" data-track-index="17" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-qute" id="mk-6-tick" src="media/marks/tick.wav" data-start="56.32" data-duration="0.09" data-track-index="18" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-coqq" id="mk-7-tick" src="media/marks/tick.wav" data-start="56.89" data-duration="0.09" data-track-index="19" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-v2q9" id="mk-8-tick" src="media/marks/tick.wav" data-start="57.46" data-duration="0.09" data-track-index="20" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-w9uc" id="mk-9-tick" src="media/marks/tick.wav" data-start="58.02" data-duration="0.09" data-track-index="21" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-rg7r" id="mk-10-tick" src="media/marks/tick.wav" data-start="58.59" data-duration="0.09" data-track-index="22" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-tc5z" id="mk-11-tick" src="media/marks/tick.wav" data-start="59.16" data-duration="0.09" data-track-index="23" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-tq7d" id="mk-12-tick" src="media/marks/tick.wav" data-start="59.72" data-duration="0.09" data-track-index="24" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-5h71" id="mk-13-tick" src="media/marks/tick.wav" data-start="60.29" data-duration="0.09" data-track-index="25" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-n67k" id="mk-14-tick" src="media/marks/tick.wav" data-start="60.86" data-duration="0.09" data-track-index="26" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-uhcz" id="mk-15-tick" src="media/marks/tick.wav" data-start="61.42" data-duration="0.09" data-track-index="27" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-hgy3" id="mk-16-tick" src="media/marks/tick.wav" data-start="61.99" data-duration="0.09" data-track-index="28" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-36vp" id="mk-17-tick" src="media/marks/tick.wav" data-start="62.56" data-duration="0.09" data-track-index="29" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-8gtn" id="mk-18-tick" src="media/marks/tick.wav" data-start="63.12" data-duration="0.09" data-track-index="30" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-vrw5" id="mk-19-tick" src="media/marks/tick.wav" data-start="63.69" data-duration="0.09" data-track-index="31" data-volume="0.50"></audio>
+    <audio data-hf-id="hf-7r8q" id="mk-20-thud" src="media/marks/thud.wav" data-start="65.34" data-duration="0.90" data-track-index="32" data-volume="0.70"></audio>
+    <audio data-hf-id="hf-go7z" id="mk-21-thud" src="media/marks/thud.wav" data-start="65.79" data-duration="0.90" data-track-index="33" data-volume="0.70"></audio>
+    <audio data-hf-id="hf-xscg" id="mk-22-thud" src="media/marks/thud.wav" data-start="66.24" data-duration="0.90" data-track-index="34" data-volume="0.70"></audio>
+    <audio data-hf-id="hf-jrzh" id="mk-23-thud" src="media/marks/thud.wav" data-start="66.69" data-duration="0.90" data-track-index="35" data-volume="0.70"></audio>
+    <audio data-hf-id="hf-fbzn" id="mk-24-cross" src="media/marks/cross.wav" data-start="31.20" data-duration="1.60" data-track-index="36" data-volume="0.55"></audio>
+    <audio data-hf-id="hf-17l7" id="mk-25-resolve" src="media/marks/resolve.wav" data-start="101.81" data-duration="4.00" data-track-index="37" data-volume="0.60"></audio>
+<div data-hf-id="hf-cafo" id="grain-overlay" style="
     position: absolute;
     top: 0;
     left: 0;
@@ -128,12 +133,12 @@
     height: 100%;
     pointer-events: none;
     z-index: 100;
-  "
->
-  <div class="grain-texture"></div>
+  ">
+  <div data-hf-id="hf-0qtj" class="grain-texture"></div>
 </div>
     </div>
     <script>
+      window.__timelines = window.__timelines || {};
       window.__timelines["sixteen-nights"] = gsap.timeline({ paused: true });
     </script>
   </body>

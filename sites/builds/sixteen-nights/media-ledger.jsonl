@@ -39,3 +39,4 @@
 {"tool": "elevenlabs:tts:eleven_multilingual_v2", "units": 169, "unit": "characters", "est_usd": 0.0135, "voice": "goT3UYdM9bhm0n2lmKQx", "file": "film/media/voice/12.mp3", "at": "2026-10-07T04:05:40+0100"}
 {"tool": "gemini:gemini-3.1-flash-image", "units": 1, "unit": "image", "est_usd": 0.101, "file": "lab/raw/01-plate-16x9.png", "mime": "image/jpeg", "at": "2026-10-07T04:06:04+0100"}
 {"tool": "gemini:gemini-3.1-flash-image", "units": 1, "unit": "image", "est_usd": 0.101, "file": "lab/raw/07-car-9x16.png", "mime": "image/jpeg", "at": "2026-10-07T04:06:29+0100"}
+{"tool": "elevenlabs:music", "units": 110.0, "unit": "seconds", "est_usd": 0.275, "file": "film/media/bed-110.mp3", "at": "2026-10-07T10:35:58+0100"}
