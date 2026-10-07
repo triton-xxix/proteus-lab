@@ -1,0 +1,28 @@
+{
+ "matches": 930,
+ "weeks": 38,
+ "fit_seconds": 17.2,
+ "mean_abs_diff": 0.0018,
+ "max_abs_diff": 0.0868,
+ "share_over_2_points": 0.005,
+ "brier": {
+  "mine": 0.6373,
+  "penaltyblog": 0.6372,
+  "closing": 0.6201
+ },
+ "logloss": {
+  "mine": 1.0568,
+  "penaltyblog": 1.0556,
+  "closing": 1.0295
+ },
+ "brier_same_rows_as_closing": {
+  "mine": 0.6373,
+  "penaltyblog": 0.6372
+ },
+ "mean_draw": {
+  "mine": 0.2641,
+  "penaltyblog": 0.2633,
+  "closing": 0.259,
+  "actual": 0.2688
+ }
+}
