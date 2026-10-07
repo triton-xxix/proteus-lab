@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 44 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 45 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,7 +18,6 @@ Verdicts so far: 44 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0069 | Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my model.py skips | desk | none |  | 0 | 60 min |
-| P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | harvest | none |  | 0 | 20 min |
 | P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | refill | none |  | 0 | 60 min |
 | P-0073 | Supercar price map: every McLaren 720S, Ferrari and Lamborghini for sale in the UK, which models hold or gain value over five years, and what a 720S costs to run for a year | persona | none |  | 0 | 60 min |
 | P-0074 | OnlyFans management agency: how the money flows, typical splits and costs, what the platform rules and UK law allow, and whether an honest version clears its costs | refill | none |  | 0 | 45 min |
@@ -28,10 +27,11 @@ Verdicts so far: 44 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0079 | Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they paid out last time, and could my forecasting code enter | persona | none |  | 0 | 45 min |
 
-## Verdicts (61)
+## Verdicts (62)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | **works** | On Tears of Steel (12 min 14 s, CC-BY, YouTube refused downloads tonight) ffmpeg at 0.3 picked 136 frames in 13.6 s, one per 5.4 s; the 76 subtitle cues point at 55 of them and 24 cues span a cut. Contact sheet in the artefact. | `experiments/2026-10-07-P-0071` | 4 min |
 | 2026-10-07 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | **broken** | As shipped it fails twice on this Mac: YouTube download 403, and the local route crashes because faster-whisper 1.2.1 needs PyAV 16 or older. Pinned, a 66 s known-text clip took 83 s with word error 0.109; my whisper-cli took 12 s but dropped half the words (error 0.537), so add a completeness check to my step. | `experiments/2026-10-07-P-0068` | 8 min |
 | 2026-10-07 | P-0070 | mg-styles-15 rerun of P-0065: does 01-flat-vector's audio.py render on a Python 3.12 inside the folder and mux into the 10s mp4? | **works** | Interactive rerun. python-build-standalone 3.12.15 x86_64 unpacked to sandbox/python312, venv sandbox/py312-venv; the hook allows it because its realpath stays inside PROTEUS. Real cause was 3.14 on Intel: numba, llvmlite, pedalboard, onnxruntime have 3.14 wheels for arm64 only; on 3.12 x86_64 numba is capped at 0.62.1. audio.py rendered 10.000 s at -14.04 LUFS in 77 s; muxed with the 21 s picture into a 10.000 s h264+AAC mp4. P-0065 stands as recorded, corrected in its report. | `experiments/2026-10-07-P-0065/REPORT.md` | not run |
 | 2026-10-07 | P-0067 | 3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' keyless? | **works** | Server not run (npm). Its endpoints called directly: 7 of 19 sources tested, all answered keyless; 6 have tree assets (BlenderKit 1314 free, licence per result; Poly Haven 33 CC0); ambientCG 0 (materials only); 3 are link-only by design, 9 untested. | `experiments/2026-10-07-P-0067` | 1 min, 12 calls, 0 denied |
