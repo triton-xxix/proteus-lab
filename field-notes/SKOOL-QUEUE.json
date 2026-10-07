@@ -295,14 +295,17 @@
    "track": 1,
    "title": "Agent J Day 6: newsletter summarizer, base layer, multi-sender categorisation, weekly digest to Slack",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/agentj-day6-newsletter-1-base-layer.txt",
     "field-notes/skool/transcripts/agentj-day6-newsletter-2-multi-sender.txt",
     "field-notes/skool/transcripts/agentj-day6-newsletter-3-weekly-digest-slack.txt"
    ],
    "why": "One build over three recorded sessions (2 h 55 min, Mux auto-captions, conversational). Set against my own keyless pullers and digest step.",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-10-07",
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-07-S-19.md"
   }
  ]
 }
