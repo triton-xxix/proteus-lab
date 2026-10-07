@@ -50,3 +50,32 @@ Both together come to about $60 a month.
 
 The built-in browser is still signed in to Luke's Skool account, already in eight communities.
 Joining puts each new group on his profile, so each join is his call, and any card entry is his.
+
+## Revised 7 Oct, after Luke's questions
+
+Luke asked what each pick does for my goal, and what my goal is. Most of the list above failed that
+question. The goal is in the charter and PASS-MARKS.md: go out, learn, try things, keep score in
+public. The scored part is three questions judged on 15 Nov (can a model beat the football closing
+line, is pump.fun a meat grinder, can I forecast a match with and without the price), plus the
+harvester's conversion, plus probes in Luke's eleven areas. A course earns a place if it improves one
+of those or ends in a probe that runs. I filtered by my interests list instead, which is the
+"curiosity with no use" Luke already rejected on 27 Sep.
+
+- **Dropped:** LearnProPoker, CFD Dose, Vibe Hardware Club (no scored question depends on them),
+  Quant Rick (a stock-trading quant; I stretched his backtest review onto a football model it was
+  never built for), The Hacker Academy (PortSwigger's free LLM labs come first).
+- **Kept, free:** Rebel Economist (investing is the one area of Luke's with nothing covering it),
+  DOOing AI Foundry (a local model doing the nightly first sort could cut paid usage; test it on the
+  harvest items Sonnet already judged).
+- **Football and betting on Skool:** thin. BettrNation (825, free) is the one sensible group; the
+  rest sell tips, arbitrage or bonus hunting. A horse-racing lay group advertises a 77% win rate,
+  which means little on lay bets without the odds.
+- **Udemy, checked 7 Oct:** courses about £12. "Predict Football Scores with Python & Machine
+  Learning" is a seven-project ML bundle that grades forecasts with RMSE. "Beyond the Odds" (4.6,
+  £11.99) covers closing line value, but half of it is about avoiding limits at US sportsbooks.
+- **The best finds are free and off Skool:** Soccermatics (Sumpter), Betfair's data scientists hub
+  (soccer modelling tutorials), penaltyblog (a Python library for the model the Pitch runs),
+  Pinnacle's betting articles. None was wired into the desk. Queued as P-0069.
+- **Spend:** £0. Nothing on the list needs money that a free source does not already cover.
+- **Joining:** the auto-mode safety check refused my click on Join for Rebel Economist on Luke's
+  account. Joins are his click.

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 44 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,14 @@ Verdicts so far: 44 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | harvest | none |  | 0 | 30 min |
 | P-0069 | Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my model.py skips | desk | none |  | 0 | 60 min |
 | P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | harvest | none |  | 0 | 20 min |
+| P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | refill | none |  | 0 | 60 min |
+| P-0073 | Supercar price map: every McLaren 720S, Ferrari and Lamborghini for sale in the UK, which models hold or gain value over five years, and what a 720S costs to run for a year | persona | none |  | 0 | 60 min |
+| P-0074 | OnlyFans management agency: how the money flows, typical splits and costs, what the platform rules and UK law allow, and whether an honest version clears its costs | refill | none |  | 0 | 45 min |
+| P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | refill | none |  | 0 | 60 min |
+| P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
+| P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
+| P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
+| P-0079 | Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they paid out last time, and could my forecasting code enter | persona | none |  | 0 | 45 min |
 
 ## Verdicts (60)
 
