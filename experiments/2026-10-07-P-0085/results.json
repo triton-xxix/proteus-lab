@@ -1,0 +1,3134 @@
+{
+ "ibs_max": 0.2,
+ "data": "as traded, not dividend-adjusted",
+ "spy": {
+  "wr7": {
+   "full": {
+    "trades": 289,
+    "win_rate": 76.5,
+    "avg_trade_pct": 0.82,
+    "trade_pf": 2.63,
+    "growth_x": 9.66,
+    "cagr_pct": 6.96,
+    "max_dd_pct": 23.75,
+    "exposure_pct": 16.3,
+    "bar_pf": 1.414
+   },
+   "since_2009": {
+    "trades": 140,
+    "win_rate": 77.9,
+    "avg_trade_pct": 0.63,
+    "trade_pf": 2.13,
+    "growth_x": 2.3,
+    "cagr_pct": 4.81,
+    "max_dd_pct": 19.21,
+    "exposure_pct": 14.6,
+    "bar_pf": 1.293
+   },
+   "luck_full": {
+    "real_bar_pf": 1.414,
+    "p": 0.001,
+    "perm_median_pf": 1.078,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.293,
+    "p": 0.0859,
+    "perm_median_pf": 1.132,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 140,
+    "trades_overlapping_rsi5": 81,
+    "share_overlapping": 0.579,
+    "share_of_days_also_rsi5": 0.588,
+    "solo_trades": 59,
+    "solo_mean_pct": 0.753,
+    "solo_win_pct": 76.3
+   }
+  },
+  "stoch": {
+   "full": {
+    "trades": 394,
+    "win_rate": 72.8,
+    "avg_trade_pct": 0.68,
+    "trade_pf": 2.54,
+    "growth_x": 12.98,
+    "cagr_pct": 7.91,
+    "max_dd_pct": 19.36,
+    "exposure_pct": 20.3,
+    "bar_pf": 1.377
+   },
+   "since_2009": {
+    "trades": 192,
+    "win_rate": 72.4,
+    "avg_trade_pct": 0.53,
+    "trade_pf": 2.1,
+    "growth_x": 2.63,
+    "cagr_pct": 5.59,
+    "max_dd_pct": 19.36,
+    "exposure_pct": 18.2,
+    "bar_pf": 1.281
+   },
+   "luck_full": {
+    "real_bar_pf": 1.377,
+    "p": 0.001,
+    "perm_median_pf": 1.085,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.281,
+    "p": 0.049,
+    "perm_median_pf": 1.121,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 192,
+    "trades_overlapping_rsi5": 109,
+    "share_overlapping": 0.568,
+    "share_of_days_also_rsi5": 0.572,
+    "solo_trades": 83,
+    "solo_mean_pct": 0.649,
+    "solo_win_pct": 72.3
+   }
+  },
+  "stoch_close": {
+   "full": {
+    "trades": 394,
+    "win_rate": 77.4,
+    "avg_trade_pct": 0.72,
+    "trade_pf": 2.69,
+    "growth_x": 15.24,
+    "cagr_pct": 8.42,
+    "max_dd_pct": 19.79,
+    "exposure_pct": 15.6,
+    "bar_pf": 1.445
+   },
+   "since_2009": {
+    "trades": 192,
+    "win_rate": 77.6,
+    "avg_trade_pct": 0.62,
+    "trade_pf": 2.46,
+    "growth_x": 3.16,
+    "cagr_pct": 6.69,
+    "max_dd_pct": 14.82,
+    "exposure_pct": 13.9,
+    "bar_pf": 1.386
+   }
+  },
+  "ibs": {
+   "full": {
+    "trades": 911,
+    "win_rate": 70.6,
+    "avg_trade_pct": 0.41,
+    "trade_pf": 1.85,
+    "growth_x": 34.83,
+    "cagr_pct": 11.12,
+    "max_dd_pct": 31.42,
+    "exposure_pct": 52.4,
+    "bar_pf": 1.222
+   },
+   "since_2009": {
+    "trades": 471,
+    "win_rate": 72.8,
+    "avg_trade_pct": 0.39,
+    "trade_pf": 1.82,
+    "growth_x": 5.75,
+    "cagr_pct": 10.35,
+    "max_dd_pct": 26.93,
+    "exposure_pct": 47.8,
+    "bar_pf": 1.235
+   },
+   "luck_full": {
+    "real_bar_pf": 1.222,
+    "p": 0.001,
+    "perm_median_pf": 1.079,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.235,
+    "p": 0.021,
+    "perm_median_pf": 1.118,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 471,
+    "trades_overlapping_rsi5": 126,
+    "share_overlapping": 0.268,
+    "share_of_days_also_rsi5": 0.263,
+    "solo_trades": 345,
+    "solo_mean_pct": 0.632,
+    "solo_win_pct": 78.0
+   }
+  },
+  "dip5": {
+   "full": {
+    "trades": 82,
+    "win_rate": 58.5,
+    "avg_trade_pct": 1.15,
+    "trade_pf": 1.84,
+    "growth_x": 2.33,
+    "cagr_pct": 2.54,
+    "max_dd_pct": 29.04,
+    "exposure_pct": 4.8,
+    "bar_pf": 1.25
+   },
+   "since_2009": {
+    "trades": 40,
+    "win_rate": 57.5,
+    "avg_trade_pct": 0.57,
+    "trade_pf": 1.36,
+    "growth_x": 1.2,
+    "cagr_pct": 1.02,
+    "max_dd_pct": 29.04,
+    "exposure_pct": 4.5,
+    "bar_pf": 1.104
+   },
+   "luck_full": {
+    "real_bar_pf": 1.25,
+    "p": 0.1179,
+    "perm_median_pf": 1.075,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.104,
+    "p": 0.5235,
+    "perm_median_pf": 1.121,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 40,
+    "trades_overlapping_rsi5": 14,
+    "share_overlapping": 0.35,
+    "share_of_days_also_rsi5": 0.325,
+    "solo_trades": 26,
+    "solo_mean_pct": 0.493,
+    "solo_win_pct": 53.8
+   }
+  },
+  "low3": {
+   "full": {
+    "trades": 460,
+    "win_rate": 56.5,
+    "avg_trade_pct": 0.18,
+    "trade_pf": 1.28,
+    "growth_x": 2.04,
+    "cagr_pct": 2.14,
+    "max_dd_pct": 30.36,
+    "exposure_pct": 16.3,
+    "bar_pf": 1.121
+   },
+   "since_2009": {
+    "trades": 231,
+    "win_rate": 56.3,
+    "avg_trade_pct": 0.19,
+    "trade_pf": 1.29,
+    "growth_x": 1.47,
+    "cagr_pct": 2.19,
+    "max_dd_pct": 27.77,
+    "exposure_pct": 15.5,
+    "bar_pf": 1.137
+   },
+   "luck_full": {
+    "real_bar_pf": 1.121,
+    "p": 0.2168,
+    "perm_median_pf": 1.06,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.137,
+    "p": 0.4186,
+    "perm_median_pf": 1.112,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 231,
+    "trades_overlapping_rsi5": 98,
+    "share_overlapping": 0.424,
+    "share_of_days_also_rsi5": 0.364,
+    "solo_trades": 133,
+    "solo_mean_pct": 0.143,
+    "solo_win_pct": 57.1
+   }
+  },
+  "wr7_trend": {
+   "full": {
+    "trades": 155,
+    "win_rate": 80.0,
+    "avg_trade_pct": 0.77,
+    "trade_pf": 3.2,
+    "growth_x": 3.19,
+    "cagr_pct": 3.51,
+    "max_dd_pct": 14.75,
+    "exposure_pct": 9.0,
+    "bar_pf": 1.517
+   },
+   "since_2009": {
+    "trades": 92,
+    "win_rate": 80.4,
+    "avg_trade_pct": 0.55,
+    "trade_pf": 2.32,
+    "growth_x": 1.64,
+    "cagr_pct": 2.81,
+    "max_dd_pct": 14.75,
+    "exposure_pct": 9.7,
+    "bar_pf": 1.329
+   },
+   "luck_full": {
+    "real_bar_pf": 1.517,
+    "p": 0.001,
+    "perm_median_pf": 1.081,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.329,
+    "p": 0.1329,
+    "perm_median_pf": 1.122,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 92,
+    "trades_overlapping_rsi5": 78,
+    "share_overlapping": 0.848,
+    "share_of_days_also_rsi5": 0.839,
+    "solo_trades": 14,
+    "solo_mean_pct": 1.039,
+    "solo_win_pct": 92.9
+   }
+  },
+  "stoch_trend": {
+   "full": {
+    "trades": 243,
+    "win_rate": 74.1,
+    "avg_trade_pct": 0.61,
+    "trade_pf": 2.86,
+    "growth_x": 4.28,
+    "cagr_pct": 4.41,
+    "max_dd_pct": 14.2,
+    "exposure_pct": 12.2,
+    "bar_pf": 1.455
+   },
+   "since_2009": {
+    "trades": 140,
+    "win_rate": 72.9,
+    "avg_trade_pct": 0.47,
+    "trade_pf": 2.24,
+    "growth_x": 1.88,
+    "cagr_pct": 3.62,
+    "max_dd_pct": 14.2,
+    "exposure_pct": 12.8,
+    "bar_pf": 1.327
+   },
+   "luck_full": {
+    "real_bar_pf": 1.455,
+    "p": 0.001,
+    "perm_median_pf": 1.08,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.327,
+    "p": 0.0589,
+    "perm_median_pf": 1.114,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 140,
+    "trades_overlapping_rsi5": 105,
+    "share_overlapping": 0.75,
+    "share_of_days_also_rsi5": 0.776,
+    "solo_trades": 35,
+    "solo_mean_pct": 0.747,
+    "solo_win_pct": 77.1
+   }
+  },
+  "ibs_trend": {
+   "full": {
+    "trades": 631,
+    "win_rate": 71.5,
+    "avg_trade_pct": 0.36,
+    "trade_pf": 2.01,
+    "growth_x": 9.19,
+    "cagr_pct": 6.81,
+    "max_dd_pct": 15.05,
+    "exposure_pct": 36.3,
+    "bar_pf": 1.252
+   },
+   "since_2009": {
+    "trades": 363,
+    "win_rate": 73.0,
+    "avg_trade_pct": 0.3,
+    "trade_pf": 1.81,
+    "growth_x": 2.88,
+    "cagr_pct": 6.13,
+    "max_dd_pct": 14.04,
+    "exposure_pct": 37.5,
+    "bar_pf": 1.22
+   },
+   "luck_full": {
+    "real_bar_pf": 1.252,
+    "p": 0.001,
+    "perm_median_pf": 1.076,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.22,
+    "p": 0.0749,
+    "perm_median_pf": 1.113,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 363,
+    "trades_overlapping_rsi5": 123,
+    "share_overlapping": 0.339,
+    "share_of_days_also_rsi5": 0.326,
+    "solo_trades": 240,
+    "solo_mean_pct": 0.57,
+    "solo_win_pct": 80.4
+   }
+  },
+  "dip5_trend": {
+   "full": {
+    "trades": 16,
+    "win_rate": 75.0,
+    "avg_trade_pct": 2.13,
+    "trade_pf": 4.38,
+    "growth_x": 1.39,
+    "cagr_pct": 0.97,
+    "max_dd_pct": 7.49,
+    "exposure_pct": 0.9,
+    "bar_pf": 1.852
+   },
+   "since_2009": {
+    "trades": 8,
+    "win_rate": 75.0,
+    "avg_trade_pct": 0.86,
+    "trade_pf": 1.9,
+    "growth_x": 1.07,
+    "cagr_pct": 0.37,
+    "max_dd_pct": 7.49,
+    "exposure_pct": 0.9,
+    "bar_pf": 1.27
+   },
+   "luck_full": {
+    "real_bar_pf": 1.852,
+    "p": 0.01,
+    "perm_median_pf": 1.066,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.27,
+    "p": 0.3387,
+    "perm_median_pf": 1.103,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 8,
+    "trades_overlapping_rsi5": 8,
+    "share_overlapping": 1.0,
+    "share_of_days_also_rsi5": 0.9,
+    "solo_trades": 0,
+    "solo_mean_pct": null,
+    "solo_win_pct": null
+   }
+  },
+  "low3_trend": {
+   "full": {
+    "trades": 294,
+    "win_rate": 58.8,
+    "avg_trade_pct": 0.22,
+    "trade_pf": 1.49,
+    "growth_x": 1.85,
+    "cagr_pct": 1.84,
+    "max_dd_pct": 18.01,
+    "exposure_pct": 10.4,
+    "bar_pf": 1.222
+   },
+   "since_2009": {
+    "trades": 165,
+    "win_rate": 58.2,
+    "avg_trade_pct": 0.23,
+    "trade_pf": 1.52,
+    "growth_x": 1.45,
+    "cagr_pct": 2.09,
+    "max_dd_pct": 18.01,
+    "exposure_pct": 11.1,
+    "bar_pf": 1.248
+   },
+   "luck_full": {
+    "real_bar_pf": 1.222,
+    "p": 0.0849,
+    "perm_median_pf": 1.054,
+    "n": 1000
+   },
+   "luck_2009_on": {
+    "real_bar_pf": 1.248,
+    "p": 0.1888,
+    "perm_median_pf": 1.111,
+    "n": 1000
+   },
+   "overlap_rsi5_2009_on": {
+    "trades": 165,
+    "trades_overlapping_rsi5": 87,
+    "share_overlapping": 0.527,
+    "share_of_days_also_rsi5": 0.444,
+    "solo_trades": 78,
+    "solo_mean_pct": 0.373,
+    "solo_win_pct": 62.8
+   }
+  }
+ },
+ "basket_2009_on": {
+  "SPY": {
+   "wr7": {
+    "stats": {
+     "trades": 140,
+     "win_rate": 77.9,
+     "avg_trade_pct": 0.63,
+     "trade_pf": 2.13,
+     "growth_x": 2.3,
+     "cagr_pct": 4.81,
+     "max_dd_pct": 19.21,
+     "exposure_pct": 14.6,
+     "bar_pf": 1.293
+    },
+    "luck": {
+     "real_bar_pf": 1.293,
+     "p": 0.0699,
+     "perm_median_pf": 1.121,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 140,
+     "trades_overlapping_rsi5": 81,
+     "share_overlapping": 0.579,
+     "share_of_days_also_rsi5": 0.588,
+     "solo_trades": 59,
+     "solo_mean_pct": 0.753,
+     "solo_win_pct": 76.3
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 192,
+     "win_rate": 72.4,
+     "avg_trade_pct": 0.53,
+     "trade_pf": 2.1,
+     "growth_x": 2.63,
+     "cagr_pct": 5.59,
+     "max_dd_pct": 19.36,
+     "exposure_pct": 18.2,
+     "bar_pf": 1.281
+    },
+    "luck": {
+     "real_bar_pf": 1.281,
+     "p": 0.0419,
+     "perm_median_pf": 1.119,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 192,
+     "trades_overlapping_rsi5": 109,
+     "share_overlapping": 0.568,
+     "share_of_days_also_rsi5": 0.572,
+     "solo_trades": 83,
+     "solo_mean_pct": 0.649,
+     "solo_win_pct": 72.3
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 471,
+     "win_rate": 72.8,
+     "avg_trade_pct": 0.39,
+     "trade_pf": 1.82,
+     "growth_x": 5.75,
+     "cagr_pct": 10.35,
+     "max_dd_pct": 26.93,
+     "exposure_pct": 47.8,
+     "bar_pf": 1.235
+    },
+    "luck": {
+     "real_bar_pf": 1.235,
+     "p": 0.022,
+     "perm_median_pf": 1.124,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 471,
+     "trades_overlapping_rsi5": 126,
+     "share_overlapping": 0.268,
+     "share_of_days_also_rsi5": 0.263,
+     "solo_trades": 345,
+     "solo_mean_pct": 0.632,
+     "solo_win_pct": 78.0
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 40,
+     "win_rate": 57.5,
+     "avg_trade_pct": 0.57,
+     "trade_pf": 1.36,
+     "growth_x": 1.2,
+     "cagr_pct": 1.02,
+     "max_dd_pct": 29.04,
+     "exposure_pct": 4.5,
+     "bar_pf": 1.104
+    },
+    "luck": {
+     "real_bar_pf": 1.104,
+     "p": 0.5309,
+     "perm_median_pf": 1.123,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 40,
+     "trades_overlapping_rsi5": 14,
+     "share_overlapping": 0.35,
+     "share_of_days_also_rsi5": 0.325,
+     "solo_trades": 26,
+     "solo_mean_pct": 0.493,
+     "solo_win_pct": 53.8
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 231,
+     "win_rate": 56.3,
+     "avg_trade_pct": 0.19,
+     "trade_pf": 1.29,
+     "growth_x": 1.47,
+     "cagr_pct": 2.19,
+     "max_dd_pct": 27.77,
+     "exposure_pct": 15.5,
+     "bar_pf": 1.137
+    },
+    "luck": {
+     "real_bar_pf": 1.137,
+     "p": 0.3772,
+     "perm_median_pf": 1.111,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 231,
+     "trades_overlapping_rsi5": 98,
+     "share_overlapping": 0.424,
+     "share_of_days_also_rsi5": 0.364,
+     "solo_trades": 133,
+     "solo_mean_pct": 0.143,
+     "solo_win_pct": 57.1
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 92,
+     "win_rate": 80.4,
+     "avg_trade_pct": 0.55,
+     "trade_pf": 2.32,
+     "growth_x": 1.64,
+     "cagr_pct": 2.81,
+     "max_dd_pct": 14.75,
+     "exposure_pct": 9.7,
+     "bar_pf": 1.329
+    },
+    "luck": {
+     "real_bar_pf": 1.329,
+     "p": 0.1098,
+     "perm_median_pf": 1.119,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 92,
+     "trades_overlapping_rsi5": 78,
+     "share_overlapping": 0.848,
+     "share_of_days_also_rsi5": 0.839,
+     "solo_trades": 14,
+     "solo_mean_pct": 1.039,
+     "solo_win_pct": 92.9
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 140,
+     "win_rate": 72.9,
+     "avg_trade_pct": 0.47,
+     "trade_pf": 2.24,
+     "growth_x": 1.88,
+     "cagr_pct": 3.62,
+     "max_dd_pct": 14.2,
+     "exposure_pct": 12.8,
+     "bar_pf": 1.327
+    },
+    "luck": {
+     "real_bar_pf": 1.327,
+     "p": 0.0599,
+     "perm_median_pf": 1.116,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 140,
+     "trades_overlapping_rsi5": 105,
+     "share_overlapping": 0.75,
+     "share_of_days_also_rsi5": 0.776,
+     "solo_trades": 35,
+     "solo_mean_pct": 0.747,
+     "solo_win_pct": 77.1
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 363,
+     "win_rate": 73.0,
+     "avg_trade_pct": 0.3,
+     "trade_pf": 1.81,
+     "growth_x": 2.88,
+     "cagr_pct": 6.13,
+     "max_dd_pct": 14.04,
+     "exposure_pct": 37.5,
+     "bar_pf": 1.22
+    },
+    "luck": {
+     "real_bar_pf": 1.22,
+     "p": 0.1198,
+     "perm_median_pf": 1.118,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 363,
+     "trades_overlapping_rsi5": 123,
+     "share_overlapping": 0.339,
+     "share_of_days_also_rsi5": 0.326,
+     "solo_trades": 240,
+     "solo_mean_pct": 0.57,
+     "solo_win_pct": 80.4
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 8,
+     "win_rate": 75.0,
+     "avg_trade_pct": 0.86,
+     "trade_pf": 1.9,
+     "growth_x": 1.07,
+     "cagr_pct": 0.37,
+     "max_dd_pct": 7.49,
+     "exposure_pct": 0.9,
+     "bar_pf": 1.27
+    },
+    "luck": {
+     "real_bar_pf": 1.27,
+     "p": 0.3713,
+     "perm_median_pf": 1.149,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 8,
+     "trades_overlapping_rsi5": 8,
+     "share_overlapping": 1.0,
+     "share_of_days_also_rsi5": 0.9,
+     "solo_trades": 0,
+     "solo_mean_pct": null,
+     "solo_win_pct": null
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 165,
+     "win_rate": 58.2,
+     "avg_trade_pct": 0.23,
+     "trade_pf": 1.52,
+     "growth_x": 1.45,
+     "cagr_pct": 2.09,
+     "max_dd_pct": 18.01,
+     "exposure_pct": 11.1,
+     "bar_pf": 1.248
+    },
+    "luck": {
+     "real_bar_pf": 1.248,
+     "p": 0.1457,
+     "perm_median_pf": 1.097,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 165,
+     "trades_overlapping_rsi5": 87,
+     "share_overlapping": 0.527,
+     "share_of_days_also_rsi5": 0.444,
+     "solo_trades": 78,
+     "solo_mean_pct": 0.373,
+     "solo_win_pct": 62.8
+    }
+   }
+  },
+  "QQQ": {
+   "wr7": {
+    "stats": {
+     "trades": 138,
+     "win_rate": 78.3,
+     "avg_trade_pct": 0.84,
+     "trade_pf": 2.58,
+     "growth_x": 3.06,
+     "cagr_pct": 6.5,
+     "max_dd_pct": 16.74,
+     "exposure_pct": 14.8,
+     "bar_pf": 1.339
+    },
+    "luck": {
+     "real_bar_pf": 1.339,
+     "p": 0.0699,
+     "perm_median_pf": 1.151,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 138,
+     "trades_overlapping_rsi5": 89,
+     "share_overlapping": 0.645,
+     "share_of_days_also_rsi5": 0.617,
+     "solo_trades": 49,
+     "solo_mean_pct": 0.925,
+     "solo_win_pct": 81.6
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 190,
+     "win_rate": 70.5,
+     "avg_trade_pct": 0.5,
+     "trade_pf": 1.82,
+     "growth_x": 2.43,
+     "cagr_pct": 5.13,
+     "max_dd_pct": 24.23,
+     "exposure_pct": 18.5,
+     "bar_pf": 1.21
+    },
+    "luck": {
+     "real_bar_pf": 1.21,
+     "p": 0.2335,
+     "perm_median_pf": 1.151,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 190,
+     "trades_overlapping_rsi5": 123,
+     "share_overlapping": 0.647,
+     "share_of_days_also_rsi5": 0.625,
+     "solo_trades": 67,
+     "solo_mean_pct": 0.742,
+     "solo_win_pct": 74.6
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 459,
+     "win_rate": 74.7,
+     "avg_trade_pct": 0.52,
+     "trade_pf": 1.89,
+     "growth_x": 9.6,
+     "cagr_pct": 13.58,
+     "max_dd_pct": 22.37,
+     "exposure_pct": 47.8,
+     "bar_pf": 1.247
+    },
+    "luck": {
+     "real_bar_pf": 1.247,
+     "p": 0.0299,
+     "perm_median_pf": 1.147,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 459,
+     "trades_overlapping_rsi5": 144,
+     "share_overlapping": 0.314,
+     "share_of_days_also_rsi5": 0.299,
+     "solo_trades": 315,
+     "solo_mean_pct": 0.918,
+     "solo_win_pct": 83.5
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 65,
+     "win_rate": 64.6,
+     "avg_trade_pct": 1.22,
+     "trade_pf": 2.07,
+     "growth_x": 2.06,
+     "cagr_pct": 4.15,
+     "max_dd_pct": 22.19,
+     "exposure_pct": 7.3,
+     "bar_pf": 1.286
+    },
+    "luck": {
+     "real_bar_pf": 1.286,
+     "p": 0.1976,
+     "perm_median_pf": 1.144,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 65,
+     "trades_overlapping_rsi5": 32,
+     "share_overlapping": 0.492,
+     "share_of_days_also_rsi5": 0.449,
+     "solo_trades": 33,
+     "solo_mean_pct": 1.182,
+     "solo_win_pct": 60.6
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 217,
+     "win_rate": 58.5,
+     "avg_trade_pct": 0.31,
+     "trade_pf": 1.37,
+     "growth_x": 1.81,
+     "cagr_pct": 3.4,
+     "max_dd_pct": 36.57,
+     "exposure_pct": 14.6,
+     "bar_pf": 1.184
+    },
+    "luck": {
+     "real_bar_pf": 1.184,
+     "p": 0.3154,
+     "perm_median_pf": 1.122,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 217,
+     "trades_overlapping_rsi5": 104,
+     "share_overlapping": 0.479,
+     "share_of_days_also_rsi5": 0.419,
+     "solo_trades": 113,
+     "solo_mean_pct": 0.81,
+     "solo_win_pct": 64.6
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 98,
+     "win_rate": 79.6,
+     "avg_trade_pct": 0.84,
+     "trade_pf": 3.07,
+     "growth_x": 2.23,
+     "cagr_pct": 4.62,
+     "max_dd_pct": 12.58,
+     "exposure_pct": 10.3,
+     "bar_pf": 1.429
+    },
+    "luck": {
+     "real_bar_pf": 1.429,
+     "p": 0.0639,
+     "perm_median_pf": 1.142,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 98,
+     "trades_overlapping_rsi5": 84,
+     "share_overlapping": 0.857,
+     "share_of_days_also_rsi5": 0.829,
+     "solo_trades": 14,
+     "solo_mean_pct": 1.527,
+     "solo_win_pct": 100.0
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 143,
+     "win_rate": 72.7,
+     "avg_trade_pct": 0.42,
+     "trade_pf": 1.83,
+     "growth_x": 1.79,
+     "cagr_pct": 3.32,
+     "max_dd_pct": 13.82,
+     "exposure_pct": 13.4,
+     "bar_pf": 1.221
+    },
+    "luck": {
+     "real_bar_pf": 1.221,
+     "p": 0.2595,
+     "perm_median_pf": 1.134,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 143,
+     "trades_overlapping_rsi5": 119,
+     "share_overlapping": 0.832,
+     "share_of_days_also_rsi5": 0.829,
+     "solo_trades": 24,
+     "solo_mean_pct": 1.368,
+     "solo_win_pct": 100.0
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 363,
+     "win_rate": 74.9,
+     "avg_trade_pct": 0.43,
+     "trade_pf": 1.84,
+     "growth_x": 4.43,
+     "cagr_pct": 8.75,
+     "max_dd_pct": 16.14,
+     "exposure_pct": 38.6,
+     "bar_pf": 1.223
+    },
+    "luck": {
+     "real_bar_pf": 1.223,
+     "p": 0.1317,
+     "perm_median_pf": 1.138,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 363,
+     "trades_overlapping_rsi5": 141,
+     "share_overlapping": 0.388,
+     "share_of_days_also_rsi5": 0.363,
+     "solo_trades": 222,
+     "solo_mean_pct": 0.942,
+     "solo_win_pct": 87.4
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 27,
+     "win_rate": 66.7,
+     "avg_trade_pct": 0.86,
+     "trade_pf": 1.82,
+     "growth_x": 1.24,
+     "cagr_pct": 1.22,
+     "max_dd_pct": 12.64,
+     "exposure_pct": 3.0,
+     "bar_pf": 1.239
+    },
+    "luck": {
+     "real_bar_pf": 1.239,
+     "p": 0.3473,
+     "perm_median_pf": 1.127,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 27,
+     "trades_overlapping_rsi5": 27,
+     "share_overlapping": 1.0,
+     "share_of_days_also_rsi5": 0.919,
+     "solo_trades": 0,
+     "solo_mean_pct": null,
+     "solo_win_pct": null
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 161,
+     "win_rate": 56.5,
+     "avg_trade_pct": 0.11,
+     "trade_pf": 1.14,
+     "growth_x": 1.15,
+     "cagr_pct": 0.81,
+     "max_dd_pct": 31.53,
+     "exposure_pct": 10.8,
+     "bar_pf": 1.066
+    },
+    "luck": {
+     "real_bar_pf": 1.066,
+     "p": 0.6367,
+     "perm_median_pf": 1.12,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 161,
+     "trades_overlapping_rsi5": 94,
+     "share_overlapping": 0.584,
+     "share_of_days_also_rsi5": 0.503,
+     "solo_trades": 67,
+     "solo_mean_pct": 0.768,
+     "solo_win_pct": 64.2
+    }
+   }
+  },
+  "DIA": {
+   "wr7": {
+    "stats": {
+     "trades": 132,
+     "win_rate": 71.2,
+     "avg_trade_pct": 0.45,
+     "trade_pf": 1.71,
+     "growth_x": 1.74,
+     "cagr_pct": 3.16,
+     "max_dd_pct": 24.19,
+     "exposure_pct": 14.7,
+     "bar_pf": 1.2
+    },
+    "luck": {
+     "real_bar_pf": 1.2,
+     "p": 0.2096,
+     "perm_median_pf": 1.106,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 132,
+     "trades_overlapping_rsi5": 73,
+     "share_overlapping": 0.553,
+     "share_of_days_also_rsi5": 0.547,
+     "solo_trades": 59,
+     "solo_mean_pct": 0.635,
+     "solo_win_pct": 74.6
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 200,
+     "win_rate": 69.0,
+     "avg_trade_pct": 0.37,
+     "trade_pf": 1.64,
+     "growth_x": 1.97,
+     "cagr_pct": 3.88,
+     "max_dd_pct": 25.49,
+     "exposure_pct": 20.2,
+     "bar_pf": 1.19
+    },
+    "luck": {
+     "real_bar_pf": 1.19,
+     "p": 0.1657,
+     "perm_median_pf": 1.106,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 200,
+     "trades_overlapping_rsi5": 110,
+     "share_overlapping": 0.55,
+     "share_of_days_also_rsi5": 0.539,
+     "solo_trades": 90,
+     "solo_mean_pct": 0.569,
+     "solo_win_pct": 68.9
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 478,
+     "win_rate": 69.7,
+     "avg_trade_pct": 0.38,
+     "trade_pf": 1.79,
+     "growth_x": 5.6,
+     "cagr_pct": 10.19,
+     "max_dd_pct": 31.37,
+     "exposure_pct": 51.4,
+     "bar_pf": 1.236
+    },
+    "luck": {
+     "real_bar_pf": 1.236,
+     "p": 0.012,
+     "perm_median_pf": 1.103,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 478,
+     "trades_overlapping_rsi5": 124,
+     "share_overlapping": 0.259,
+     "share_of_days_also_rsi5": 0.25,
+     "solo_trades": 354,
+     "solo_mean_pct": 0.707,
+     "solo_win_pct": 78.0
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 35,
+     "win_rate": 62.9,
+     "avg_trade_pct": 0.84,
+     "trade_pf": 1.57,
+     "growth_x": 1.28,
+     "cagr_pct": 1.4,
+     "max_dd_pct": 32.13,
+     "exposure_pct": 3.9,
+     "bar_pf": 1.172
+    },
+    "luck": {
+     "real_bar_pf": 1.172,
+     "p": 0.3872,
+     "perm_median_pf": 1.099,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 35,
+     "trades_overlapping_rsi5": 14,
+     "share_overlapping": 0.4,
+     "share_of_days_also_rsi5": 0.377,
+     "solo_trades": 21,
+     "solo_mean_pct": 0.753,
+     "solo_win_pct": 61.9
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 236,
+     "win_rate": 51.3,
+     "avg_trade_pct": -0.01,
+     "trade_pf": 0.98,
+     "growth_x": 0.93,
+     "cagr_pct": -0.43,
+     "max_dd_pct": 28.06,
+     "exposure_pct": 15.8,
+     "bar_pf": 0.972
+    },
+    "luck": {
+     "real_bar_pf": 0.972,
+     "p": 0.8862,
+     "perm_median_pf": 1.095,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 236,
+     "trades_overlapping_rsi5": 99,
+     "share_overlapping": 0.419,
+     "share_of_days_also_rsi5": 0.36,
+     "solo_trades": 137,
+     "solo_mean_pct": 0.042,
+     "solo_win_pct": 54.0
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 89,
+     "win_rate": 71.9,
+     "avg_trade_pct": 0.37,
+     "trade_pf": 1.69,
+     "growth_x": 1.36,
+     "cagr_pct": 1.76,
+     "max_dd_pct": 14.92,
+     "exposure_pct": 10.0,
+     "bar_pf": 1.203
+    },
+    "luck": {
+     "real_bar_pf": 1.203,
+     "p": 0.2754,
+     "perm_median_pf": 1.11,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 89,
+     "trades_overlapping_rsi5": 72,
+     "share_overlapping": 0.809,
+     "share_of_days_also_rsi5": 0.79,
+     "solo_trades": 17,
+     "solo_mean_pct": 0.846,
+     "solo_win_pct": 88.2
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 138,
+     "win_rate": 72.5,
+     "avg_trade_pct": 0.32,
+     "trade_pf": 1.73,
+     "growth_x": 1.53,
+     "cagr_pct": 2.43,
+     "max_dd_pct": 12.05,
+     "exposure_pct": 13.9,
+     "bar_pf": 1.22
+    },
+    "luck": {
+     "real_bar_pf": 1.22,
+     "p": 0.1677,
+     "perm_median_pf": 1.102,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 138,
+     "trades_overlapping_rsi5": 108,
+     "share_overlapping": 0.783,
+     "share_of_days_also_rsi5": 0.771,
+     "solo_trades": 30,
+     "solo_mean_pct": 0.938,
+     "solo_win_pct": 86.7
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 355,
+     "win_rate": 68.5,
+     "avg_trade_pct": 0.22,
+     "trade_pf": 1.52,
+     "growth_x": 2.1,
+     "cagr_pct": 4.27,
+     "max_dd_pct": 14.69,
+     "exposure_pct": 39.7,
+     "bar_pf": 1.154
+    },
+    "luck": {
+     "real_bar_pf": 1.154,
+     "p": 0.2754,
+     "perm_median_pf": 1.099,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 355,
+     "trades_overlapping_rsi5": 122,
+     "share_overlapping": 0.344,
+     "share_of_days_also_rsi5": 0.321,
+     "solo_trades": 233,
+     "solo_mean_pct": 0.603,
+     "solo_win_pct": 80.3
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 9,
+     "win_rate": 66.7,
+     "avg_trade_pct": 0.82,
+     "trade_pf": 1.93,
+     "growth_x": 1.07,
+     "cagr_pct": 0.39,
+     "max_dd_pct": 11.18,
+     "exposure_pct": 1.0,
+     "bar_pf": 1.27
+    },
+    "luck": {
+     "real_bar_pf": 1.27,
+     "p": 0.3892,
+     "perm_median_pf": 1.124,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 9,
+     "trades_overlapping_rsi5": 9,
+     "share_overlapping": 1.0,
+     "share_of_days_also_rsi5": 0.956,
+     "solo_trades": 0,
+     "solo_mean_pct": null,
+     "solo_win_pct": null
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 172,
+     "win_rate": 53.5,
+     "avg_trade_pct": 0.08,
+     "trade_pf": 1.16,
+     "growth_x": 1.12,
+     "cagr_pct": 0.66,
+     "max_dd_pct": 14.31,
+     "exposure_pct": 11.6,
+     "bar_pf": 1.076
+    },
+    "luck": {
+     "real_bar_pf": 1.076,
+     "p": 0.5309,
+     "perm_median_pf": 1.09,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 172,
+     "trades_overlapping_rsi5": 92,
+     "share_overlapping": 0.535,
+     "share_of_days_also_rsi5": 0.455,
+     "solo_trades": 80,
+     "solo_mean_pct": 0.4,
+     "solo_win_pct": 63.7
+    }
+   }
+  },
+  "IWM": {
+   "wr7": {
+    "stats": {
+     "trades": 138,
+     "win_rate": 71.7,
+     "avg_trade_pct": 0.49,
+     "trade_pf": 1.57,
+     "growth_x": 1.81,
+     "cagr_pct": 3.39,
+     "max_dd_pct": 28.66,
+     "exposure_pct": 15.4,
+     "bar_pf": 1.152
+    },
+    "luck": {
+     "real_bar_pf": 1.152,
+     "p": 0.1856,
+     "perm_median_pf": 1.068,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 138,
+     "trades_overlapping_rsi5": 67,
+     "share_overlapping": 0.486,
+     "share_of_days_also_rsi5": 0.445,
+     "solo_trades": 71,
+     "solo_mean_pct": 0.718,
+     "solo_win_pct": 74.6
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 215,
+     "win_rate": 67.9,
+     "avg_trade_pct": 0.38,
+     "trade_pf": 1.44,
+     "growth_x": 1.97,
+     "cagr_pct": 3.9,
+     "max_dd_pct": 39.35,
+     "exposure_pct": 23.1,
+     "bar_pf": 1.122
+    },
+    "luck": {
+     "real_bar_pf": 1.122,
+     "p": 0.2595,
+     "perm_median_pf": 1.073,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 215,
+     "trades_overlapping_rsi5": 110,
+     "share_overlapping": 0.512,
+     "share_of_days_also_rsi5": 0.507,
+     "solo_trades": 105,
+     "solo_mean_pct": 0.666,
+     "solo_win_pct": 68.6
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 482,
+     "win_rate": 68.0,
+     "avg_trade_pct": 0.4,
+     "trade_pf": 1.54,
+     "growth_x": 5.72,
+     "cagr_pct": 10.32,
+     "max_dd_pct": 34.1,
+     "exposure_pct": 54.8,
+     "bar_pf": 1.154
+    },
+    "luck": {
+     "real_bar_pf": 1.154,
+     "p": 0.0339,
+     "perm_median_pf": 1.073,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 482,
+     "trades_overlapping_rsi5": 122,
+     "share_overlapping": 0.253,
+     "share_of_days_also_rsi5": 0.243,
+     "solo_trades": 360,
+     "solo_mean_pct": 0.81,
+     "solo_win_pct": 77.2
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 71,
+     "win_rate": 59.2,
+     "avg_trade_pct": 0.75,
+     "trade_pf": 1.5,
+     "growth_x": 1.53,
+     "cagr_pct": 2.43,
+     "max_dd_pct": 34.05,
+     "exposure_pct": 7.9,
+     "bar_pf": 1.141
+    },
+    "luck": {
+     "real_bar_pf": 1.141,
+     "p": 0.2375,
+     "perm_median_pf": 1.051,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 71,
+     "trades_overlapping_rsi5": 29,
+     "share_overlapping": 0.408,
+     "share_of_days_also_rsi5": 0.377,
+     "solo_trades": 42,
+     "solo_mean_pct": 1.109,
+     "solo_win_pct": 54.8
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 237,
+     "win_rate": 51.1,
+     "avg_trade_pct": 0.25,
+     "trade_pf": 1.3,
+     "growth_x": 1.67,
+     "cagr_pct": 2.92,
+     "max_dd_pct": 31.3,
+     "exposure_pct": 15.9,
+     "bar_pf": 1.139
+    },
+    "luck": {
+     "real_bar_pf": 1.139,
+     "p": 0.1717,
+     "perm_median_pf": 1.047,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 237,
+     "trades_overlapping_rsi5": 88,
+     "share_overlapping": 0.371,
+     "share_of_days_also_rsi5": 0.326,
+     "solo_trades": 149,
+     "solo_mean_pct": 0.462,
+     "solo_win_pct": 53.7
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 75,
+     "win_rate": 70.7,
+     "avg_trade_pct": 0.6,
+     "trade_pf": 1.98,
+     "growth_x": 1.52,
+     "cagr_pct": 2.4,
+     "max_dd_pct": 21.02,
+     "exposure_pct": 7.9,
+     "bar_pf": 1.271
+    },
+    "luck": {
+     "real_bar_pf": 1.271,
+     "p": 0.1038,
+     "perm_median_pf": 1.054,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 75,
+     "trades_overlapping_rsi5": 61,
+     "share_overlapping": 0.813,
+     "share_of_days_also_rsi5": 0.774,
+     "solo_trades": 14,
+     "solo_mean_pct": 0.9,
+     "solo_win_pct": 78.6
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 136,
+     "win_rate": 69.9,
+     "avg_trade_pct": 0.43,
+     "trade_pf": 1.69,
+     "growth_x": 1.73,
+     "cagr_pct": 3.13,
+     "max_dd_pct": 20.16,
+     "exposure_pct": 14.6,
+     "bar_pf": 1.197
+    },
+    "luck": {
+     "real_bar_pf": 1.197,
+     "p": 0.1457,
+     "perm_median_pf": 1.066,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 136,
+     "trades_overlapping_rsi5": 106,
+     "share_overlapping": 0.779,
+     "share_of_days_also_rsi5": 0.753,
+     "solo_trades": 30,
+     "solo_mean_pct": 0.711,
+     "solo_win_pct": 76.7
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 316,
+     "win_rate": 63.6,
+     "avg_trade_pct": 0.2,
+     "trade_pf": 1.29,
+     "growth_x": 1.75,
+     "cagr_pct": 3.19,
+     "max_dd_pct": 23.59,
+     "exposure_pct": 37.4,
+     "bar_pf": 1.081
+    },
+    "luck": {
+     "real_bar_pf": 1.081,
+     "p": 0.4311,
+     "perm_median_pf": 1.07,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 316,
+     "trades_overlapping_rsi5": 118,
+     "share_overlapping": 0.373,
+     "share_of_days_also_rsi5": 0.342,
+     "solo_trades": 198,
+     "solo_mean_pct": 0.763,
+     "solo_win_pct": 77.8
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 21,
+     "win_rate": 71.4,
+     "avg_trade_pct": 1.2,
+     "trade_pf": 2.27,
+     "growth_x": 1.26,
+     "cagr_pct": 1.33,
+     "max_dd_pct": 13.86,
+     "exposure_pct": 2.4,
+     "bar_pf": 1.382
+    },
+    "luck": {
+     "real_bar_pf": 1.382,
+     "p": 0.0739,
+     "perm_median_pf": 1.057,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 21,
+     "trades_overlapping_rsi5": 19,
+     "share_overlapping": 0.905,
+     "share_of_days_also_rsi5": 0.838,
+     "solo_trades": 2,
+     "solo_mean_pct": 4.35,
+     "solo_win_pct": 100.0
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 147,
+     "win_rate": 49.7,
+     "avg_trade_pct": 0.28,
+     "trade_pf": 1.46,
+     "growth_x": 1.46,
+     "cagr_pct": 2.17,
+     "max_dd_pct": 17.61,
+     "exposure_pct": 9.9,
+     "bar_pf": 1.218
+    },
+    "luck": {
+     "real_bar_pf": 1.218,
+     "p": 0.1257,
+     "perm_median_pf": 1.043,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 147,
+     "trades_overlapping_rsi5": 80,
+     "share_overlapping": 0.544,
+     "share_of_days_also_rsi5": 0.472,
+     "solo_trades": 67,
+     "solo_mean_pct": 0.338,
+     "solo_win_pct": 53.7
+    }
+   }
+  },
+  "EFA": {
+   "wr7": {
+    "stats": {
+     "trades": 154,
+     "win_rate": 61.0,
+     "avg_trade_pct": 0.03,
+     "trade_pf": 1.04,
+     "growth_x": 1.0,
+     "cagr_pct": -0.03,
+     "max_dd_pct": 24.08,
+     "exposure_pct": 14.9,
+     "bar_pf": 0.999
+    },
+    "luck": {
+     "real_bar_pf": 0.999,
+     "p": 0.6587,
+     "perm_median_pf": 1.047,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 154,
+     "trades_overlapping_rsi5": 63,
+     "share_overlapping": 0.409,
+     "share_of_days_also_rsi5": 0.381,
+     "solo_trades": 91,
+     "solo_mean_pct": -0.115,
+     "solo_win_pct": 59.3
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 260,
+     "win_rate": 65.8,
+     "avg_trade_pct": 0.23,
+     "trade_pf": 1.37,
+     "growth_x": 1.69,
+     "cagr_pct": 3.01,
+     "max_dd_pct": 26.53,
+     "exposure_pct": 22.4,
+     "bar_pf": 1.118
+    },
+    "luck": {
+     "real_bar_pf": 1.118,
+     "p": 0.1717,
+     "perm_median_pf": 1.044,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 260,
+     "trades_overlapping_rsi5": 116,
+     "share_overlapping": 0.446,
+     "share_of_days_also_rsi5": 0.402,
+     "solo_trades": 144,
+     "solo_mean_pct": 0.213,
+     "solo_win_pct": 64.6
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 506,
+     "win_rate": 62.6,
+     "avg_trade_pct": 0.13,
+     "trade_pf": 1.19,
+     "growth_x": 1.65,
+     "cagr_pct": 2.85,
+     "max_dd_pct": 33.56,
+     "exposure_pct": 47.5,
+     "bar_pf": 1.059
+    },
+    "luck": {
+     "real_bar_pf": 1.059,
+     "p": 0.3473,
+     "perm_median_pf": 1.041,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 506,
+     "trades_overlapping_rsi5": 110,
+     "share_overlapping": 0.217,
+     "share_of_days_also_rsi5": 0.19,
+     "solo_trades": 396,
+     "solo_mean_pct": 0.261,
+     "solo_win_pct": 66.7
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 58,
+     "win_rate": 60.3,
+     "avg_trade_pct": 0.75,
+     "trade_pf": 1.54,
+     "growth_x": 1.44,
+     "cagr_pct": 2.09,
+     "max_dd_pct": 24.67,
+     "exposure_pct": 6.5,
+     "bar_pf": 1.185
+    },
+    "luck": {
+     "real_bar_pf": 1.185,
+     "p": 0.2555,
+     "perm_median_pf": 1.056,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 58,
+     "trades_overlapping_rsi5": 17,
+     "share_overlapping": 0.293,
+     "share_of_days_also_rsi5": 0.259,
+     "solo_trades": 41,
+     "solo_mean_pct": 0.453,
+     "solo_win_pct": 58.5
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 237,
+     "win_rate": 50.6,
+     "avg_trade_pct": -0.0,
+     "trade_pf": 0.99,
+     "growth_x": 0.94,
+     "cagr_pct": -0.36,
+     "max_dd_pct": 36.65,
+     "exposure_pct": 15.9,
+     "bar_pf": 0.978
+    },
+    "luck": {
+     "real_bar_pf": 0.978,
+     "p": 0.8044,
+     "perm_median_pf": 1.057,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 237,
+     "trades_overlapping_rsi5": 76,
+     "share_overlapping": 0.321,
+     "share_of_days_also_rsi5": 0.294,
+     "solo_trades": 161,
+     "solo_mean_pct": -0.055,
+     "solo_win_pct": 48.4
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 74,
+     "win_rate": 70.3,
+     "avg_trade_pct": 0.41,
+     "trade_pf": 2.16,
+     "growth_x": 1.35,
+     "cagr_pct": 1.69,
+     "max_dd_pct": 10.22,
+     "exposure_pct": 6.6,
+     "bar_pf": 1.301
+    },
+    "luck": {
+     "real_bar_pf": 1.301,
+     "p": 0.0739,
+     "perm_median_pf": 1.027,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 74,
+     "trades_overlapping_rsi5": 56,
+     "share_overlapping": 0.757,
+     "share_of_days_also_rsi5": 0.78,
+     "solo_trades": 18,
+     "solo_mean_pct": 0.865,
+     "solo_win_pct": 83.3
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 152,
+     "win_rate": 69.1,
+     "avg_trade_pct": 0.28,
+     "trade_pf": 1.65,
+     "growth_x": 1.5,
+     "cagr_pct": 2.33,
+     "max_dd_pct": 14.67,
+     "exposure_pct": 12.2,
+     "bar_pf": 1.213
+    },
+    "luck": {
+     "real_bar_pf": 1.213,
+     "p": 0.0978,
+     "perm_median_pf": 1.037,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 152,
+     "trades_overlapping_rsi5": 108,
+     "share_overlapping": 0.711,
+     "share_of_days_also_rsi5": 0.703,
+     "solo_trades": 44,
+     "solo_mean_pct": 0.572,
+     "solo_win_pct": 72.7
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 313,
+     "win_rate": 61.7,
+     "avg_trade_pct": 0.08,
+     "trade_pf": 1.17,
+     "growth_x": 1.25,
+     "cagr_pct": 1.28,
+     "max_dd_pct": 25.56,
+     "exposure_pct": 29.4,
+     "bar_pf": 1.054
+    },
+    "luck": {
+     "real_bar_pf": 1.054,
+     "p": 0.3792,
+     "perm_median_pf": 1.033,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 313,
+     "trades_overlapping_rsi5": 100,
+     "share_overlapping": 0.319,
+     "share_of_days_also_rsi5": 0.284,
+     "solo_trades": 213,
+     "solo_mean_pct": 0.325,
+     "solo_win_pct": 69.0
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 8,
+     "win_rate": 50.0,
+     "avg_trade_pct": 0.4,
+     "trade_pf": 1.41,
+     "growth_x": 1.03,
+     "cagr_pct": 0.16,
+     "max_dd_pct": 6.84,
+     "exposure_pct": 0.9,
+     "bar_pf": 1.124
+    },
+    "luck": {
+     "real_bar_pf": 1.124,
+     "p": 0.4092,
+     "perm_median_pf": 1.056,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 8,
+     "trades_overlapping_rsi5": 8,
+     "share_overlapping": 1.0,
+     "share_of_days_also_rsi5": 0.975,
+     "solo_trades": 0,
+     "solo_mean_pct": null,
+     "solo_win_pct": null
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 133,
+     "win_rate": 54.9,
+     "avg_trade_pct": 0.07,
+     "trade_pf": 1.16,
+     "growth_x": 1.09,
+     "cagr_pct": 0.48,
+     "max_dd_pct": 18.51,
+     "exposure_pct": 8.9,
+     "bar_pf": 1.07
+    },
+    "luck": {
+     "real_bar_pf": 1.07,
+     "p": 0.4511,
+     "perm_median_pf": 1.043,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 133,
+     "trades_overlapping_rsi5": 64,
+     "share_overlapping": 0.481,
+     "share_of_days_also_rsi5": 0.434,
+     "solo_trades": 69,
+     "solo_mean_pct": 0.135,
+     "solo_win_pct": 58.0
+    }
+   }
+  },
+  "EEM": {
+   "wr7": {
+    "stats": {
+     "trades": 171,
+     "win_rate": 59.6,
+     "avg_trade_pct": 0.23,
+     "trade_pf": 1.32,
+     "growth_x": 1.42,
+     "cagr_pct": 1.98,
+     "max_dd_pct": 15.55,
+     "exposure_pct": 17.3,
+     "bar_pf": 1.085
+    },
+    "luck": {
+     "real_bar_pf": 1.085,
+     "p": 0.3273,
+     "perm_median_pf": 1.043,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 171,
+     "trades_overlapping_rsi5": 68,
+     "share_overlapping": 0.398,
+     "share_of_days_also_rsi5": 0.361,
+     "solo_trades": 103,
+     "solo_mean_pct": 0.149,
+     "solo_win_pct": 56.3
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 289,
+     "win_rate": 59.2,
+     "avg_trade_pct": 0.18,
+     "trade_pf": 1.24,
+     "growth_x": 1.55,
+     "cagr_pct": 2.51,
+     "max_dd_pct": 43.1,
+     "exposure_pct": 25.6,
+     "bar_pf": 1.076
+    },
+    "luck": {
+     "real_bar_pf": 1.076,
+     "p": 0.2934,
+     "perm_median_pf": 1.036,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 289,
+     "trades_overlapping_rsi5": 119,
+     "share_overlapping": 0.412,
+     "share_of_days_also_rsi5": 0.381,
+     "solo_trades": 170,
+     "solo_mean_pct": 0.206,
+     "solo_win_pct": 60.6
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 537,
+     "win_rate": 59.2,
+     "avg_trade_pct": 0.14,
+     "trade_pf": 1.18,
+     "growth_x": 1.78,
+     "cagr_pct": 3.29,
+     "max_dd_pct": 32.26,
+     "exposure_pct": 52.7,
+     "bar_pf": 1.052
+    },
+    "luck": {
+     "real_bar_pf": 1.052,
+     "p": 0.3852,
+     "perm_median_pf": 1.038,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 537,
+     "trades_overlapping_rsi5": 117,
+     "share_overlapping": 0.218,
+     "share_of_days_also_rsi5": 0.188,
+     "solo_trades": 420,
+     "solo_mean_pct": 0.309,
+     "solo_win_pct": 63.3
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 75,
+     "win_rate": 61.3,
+     "avg_trade_pct": 0.77,
+     "trade_pf": 1.62,
+     "growth_x": 1.64,
+     "cagr_pct": 2.84,
+     "max_dd_pct": 29.65,
+     "exposure_pct": 8.4,
+     "bar_pf": 1.191
+    },
+    "luck": {
+     "real_bar_pf": 1.191,
+     "p": 0.1377,
+     "perm_median_pf": 1.055,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 75,
+     "trades_overlapping_rsi5": 25,
+     "share_overlapping": 0.333,
+     "share_of_days_also_rsi5": 0.299,
+     "solo_trades": 50,
+     "solo_mean_pct": 0.667,
+     "solo_win_pct": 60.0
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 255,
+     "win_rate": 50.6,
+     "avg_trade_pct": -0.1,
+     "trade_pf": 0.9,
+     "growth_x": 0.72,
+     "cagr_pct": -1.86,
+     "max_dd_pct": 46.99,
+     "exposure_pct": 17.1,
+     "bar_pf": 0.918
+    },
+    "luck": {
+     "real_bar_pf": 0.918,
+     "p": 0.9062,
+     "perm_median_pf": 1.032,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 255,
+     "trades_overlapping_rsi5": 83,
+     "share_overlapping": 0.325,
+     "share_of_days_also_rsi5": 0.289,
+     "solo_trades": 172,
+     "solo_mean_pct": -0.07,
+     "solo_win_pct": 52.9
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 78,
+     "win_rate": 64.1,
+     "avg_trade_pct": 0.39,
+     "trade_pf": 1.81,
+     "growth_x": 1.34,
+     "cagr_pct": 1.66,
+     "max_dd_pct": 14.04,
+     "exposure_pct": 7.7,
+     "bar_pf": 1.206
+    },
+    "luck": {
+     "real_bar_pf": 1.206,
+     "p": 0.1337,
+     "perm_median_pf": 1.037,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 78,
+     "trades_overlapping_rsi5": 55,
+     "share_overlapping": 0.705,
+     "share_of_days_also_rsi5": 0.655,
+     "solo_trades": 23,
+     "solo_mean_pct": 0.208,
+     "solo_win_pct": 52.2
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 149,
+     "win_rate": 62.4,
+     "avg_trade_pct": 0.34,
+     "trade_pf": 1.7,
+     "growth_x": 1.63,
+     "cagr_pct": 2.77,
+     "max_dd_pct": 13.79,
+     "exposure_pct": 12.6,
+     "bar_pf": 1.228
+    },
+    "luck": {
+     "real_bar_pf": 1.228,
+     "p": 0.0559,
+     "perm_median_pf": 1.031,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 149,
+     "trades_overlapping_rsi5": 102,
+     "share_overlapping": 0.685,
+     "share_of_days_also_rsi5": 0.668,
+     "solo_trades": 47,
+     "solo_mean_pct": 0.826,
+     "solo_win_pct": 72.3
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 312,
+     "win_rate": 60.6,
+     "avg_trade_pct": 0.14,
+     "trade_pf": 1.23,
+     "growth_x": 1.47,
+     "cagr_pct": 2.2,
+     "max_dd_pct": 22.6,
+     "exposure_pct": 29.1,
+     "bar_pf": 1.074
+    },
+    "luck": {
+     "real_bar_pf": 1.074,
+     "p": 0.2754,
+     "perm_median_pf": 1.032,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 312,
+     "trades_overlapping_rsi5": 101,
+     "share_overlapping": 0.324,
+     "share_of_days_also_rsi5": 0.291,
+     "solo_trades": 211,
+     "solo_mean_pct": 0.471,
+     "solo_win_pct": 69.7
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 19,
+     "win_rate": 57.9,
+     "avg_trade_pct": 0.36,
+     "trade_pf": 1.39,
+     "growth_x": 1.06,
+     "cagr_pct": 0.34,
+     "max_dd_pct": 10.17,
+     "exposure_pct": 2.1,
+     "bar_pf": 1.11
+    },
+    "luck": {
+     "real_bar_pf": 1.11,
+     "p": 0.4152,
+     "perm_median_pf": 1.049,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 19,
+     "trades_overlapping_rsi5": 18,
+     "share_overlapping": 0.947,
+     "share_of_days_also_rsi5": 0.842,
+     "solo_trades": 1,
+     "solo_mean_pct": 0.866,
+     "solo_win_pct": 100.0
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 121,
+     "win_rate": 52.1,
+     "avg_trade_pct": -0.02,
+     "trade_pf": 0.98,
+     "growth_x": 0.96,
+     "cagr_pct": -0.23,
+     "max_dd_pct": 17.25,
+     "exposure_pct": 8.1,
+     "bar_pf": 0.974
+    },
+    "luck": {
+     "real_bar_pf": 0.974,
+     "p": 0.6886,
+     "perm_median_pf": 1.04,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 121,
+     "trades_overlapping_rsi5": 68,
+     "share_overlapping": 0.562,
+     "share_of_days_also_rsi5": 0.488,
+     "solo_trades": 53,
+     "solo_mean_pct": 0.333,
+     "solo_win_pct": 64.2
+    }
+   }
+  },
+  "EWU": {
+   "wr7": {
+    "stats": {
+     "trades": 141,
+     "win_rate": 65.2,
+     "avg_trade_pct": 0.1,
+     "trade_pf": 1.12,
+     "growth_x": 1.07,
+     "cagr_pct": 0.4,
+     "max_dd_pct": 27.6,
+     "exposure_pct": 13.3,
+     "bar_pf": 1.024
+    },
+    "luck": {
+     "real_bar_pf": 1.024,
+     "p": 0.515,
+     "perm_median_pf": 1.031,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 141,
+     "trades_overlapping_rsi5": 50,
+     "share_overlapping": 0.355,
+     "share_of_days_also_rsi5": 0.333,
+     "solo_trades": 91,
+     "solo_mean_pct": 0.225,
+     "solo_win_pct": 69.2
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 280,
+     "win_rate": 62.5,
+     "avg_trade_pct": 0.2,
+     "trade_pf": 1.32,
+     "growth_x": 1.6,
+     "cagr_pct": 2.67,
+     "max_dd_pct": 34.76,
+     "exposure_pct": 23.8,
+     "bar_pf": 1.099
+    },
+    "luck": {
+     "real_bar_pf": 1.099,
+     "p": 0.1976,
+     "perm_median_pf": 1.026,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 280,
+     "trades_overlapping_rsi5": 122,
+     "share_overlapping": 0.436,
+     "share_of_days_also_rsi5": 0.392,
+     "solo_trades": 158,
+     "solo_mean_pct": 0.164,
+     "solo_win_pct": 65.2
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 501,
+     "win_rate": 59.5,
+     "avg_trade_pct": 0.17,
+     "trade_pf": 1.25,
+     "growth_x": 1.97,
+     "cagr_pct": 3.88,
+     "max_dd_pct": 37.36,
+     "exposure_pct": 47.3,
+     "bar_pf": 1.08
+    },
+    "luck": {
+     "real_bar_pf": 1.08,
+     "p": 0.1776,
+     "perm_median_pf": 1.027,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 501,
+     "trades_overlapping_rsi5": 107,
+     "share_overlapping": 0.214,
+     "share_of_days_also_rsi5": 0.183,
+     "solo_trades": 394,
+     "solo_mean_pct": 0.338,
+     "solo_win_pct": 64.0
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 60,
+     "win_rate": 66.7,
+     "avg_trade_pct": 1.15,
+     "trade_pf": 1.84,
+     "growth_x": 1.84,
+     "cagr_pct": 3.49,
+     "max_dd_pct": 35.4,
+     "exposure_pct": 6.7,
+     "bar_pf": 1.306
+    },
+    "luck": {
+     "real_bar_pf": 1.306,
+     "p": 0.0659,
+     "perm_median_pf": 1.035,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 60,
+     "trades_overlapping_rsi5": 16,
+     "share_overlapping": 0.267,
+     "share_of_days_also_rsi5": 0.25,
+     "solo_trades": 44,
+     "solo_mean_pct": 1.3,
+     "solo_win_pct": 70.5
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 226,
+     "win_rate": 50.0,
+     "avg_trade_pct": -0.09,
+     "trade_pf": 0.89,
+     "growth_x": 0.76,
+     "cagr_pct": -1.53,
+     "max_dd_pct": 33.96,
+     "exposure_pct": 15.2,
+     "bar_pf": 0.912
+    },
+    "luck": {
+     "real_bar_pf": 0.912,
+     "p": 0.9142,
+     "perm_median_pf": 1.035,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 226,
+     "trades_overlapping_rsi5": 82,
+     "share_overlapping": 0.363,
+     "share_of_days_also_rsi5": 0.311,
+     "solo_trades": 144,
+     "solo_mean_pct": -0.186,
+     "solo_win_pct": 47.9
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 58,
+     "win_rate": 69.0,
+     "avg_trade_pct": 0.1,
+     "trade_pf": 1.16,
+     "growth_x": 1.05,
+     "cagr_pct": 0.27,
+     "max_dd_pct": 14.94,
+     "exposure_pct": 5.2,
+     "bar_pf": 1.056
+    },
+    "luck": {
+     "real_bar_pf": 1.056,
+     "p": 0.4431,
+     "perm_median_pf": 1.026,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 58,
+     "trades_overlapping_rsi5": 42,
+     "share_overlapping": 0.724,
+     "share_of_days_also_rsi5": 0.7,
+     "solo_trades": 16,
+     "solo_mean_pct": 0.557,
+     "solo_win_pct": 87.5
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 149,
+     "win_rate": 65.1,
+     "avg_trade_pct": 0.24,
+     "trade_pf": 1.56,
+     "growth_x": 1.4,
+     "cagr_pct": 1.91,
+     "max_dd_pct": 13.94,
+     "exposure_pct": 12.0,
+     "bar_pf": 1.188
+    },
+    "luck": {
+     "real_bar_pf": 1.188,
+     "p": 0.1058,
+     "perm_median_pf": 1.024,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 149,
+     "trades_overlapping_rsi5": 107,
+     "share_overlapping": 0.718,
+     "share_of_days_also_rsi5": 0.678,
+     "solo_trades": 42,
+     "solo_mean_pct": 0.387,
+     "solo_win_pct": 76.2
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 286,
+     "win_rate": 55.6,
+     "avg_trade_pct": -0.02,
+     "trade_pf": 0.97,
+     "growth_x": 0.91,
+     "cagr_pct": -0.51,
+     "max_dd_pct": 33.06,
+     "exposure_pct": 28.0,
+     "bar_pf": 0.979
+    },
+    "luck": {
+     "real_bar_pf": 0.979,
+     "p": 0.7425,
+     "perm_median_pf": 1.026,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 286,
+     "trades_overlapping_rsi5": 95,
+     "share_overlapping": 0.332,
+     "share_of_days_also_rsi5": 0.271,
+     "solo_trades": 191,
+     "solo_mean_pct": 0.244,
+     "solo_win_pct": 62.3
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 11,
+     "win_rate": 63.6,
+     "avg_trade_pct": 1.49,
+     "trade_pf": 2.72,
+     "growth_x": 1.17,
+     "cagr_pct": 0.89,
+     "max_dd_pct": 8.66,
+     "exposure_pct": 1.2,
+     "bar_pf": 1.646
+    },
+    "luck": {
+     "real_bar_pf": 1.646,
+     "p": 0.0359,
+     "perm_median_pf": 1.052,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 11,
+     "trades_overlapping_rsi5": 11,
+     "share_overlapping": 1.0,
+     "share_of_days_also_rsi5": 0.927,
+     "solo_trades": 0,
+     "solo_mean_pct": null,
+     "solo_win_pct": null
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 119,
+     "win_rate": 53.8,
+     "avg_trade_pct": 0.17,
+     "trade_pf": 1.33,
+     "growth_x": 1.21,
+     "cagr_pct": 1.06,
+     "max_dd_pct": 17.07,
+     "exposure_pct": 8.0,
+     "bar_pf": 1.153
+    },
+    "luck": {
+     "real_bar_pf": 1.153,
+     "p": 0.2335,
+     "perm_median_pf": 1.036,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 119,
+     "trades_overlapping_rsi5": 70,
+     "share_overlapping": 0.588,
+     "share_of_days_also_rsi5": 0.493,
+     "solo_trades": 49,
+     "solo_mean_pct": 0.337,
+     "solo_win_pct": 59.2
+    }
+   }
+  },
+  "EWJ": {
+   "wr7": {
+    "stats": {
+     "trades": 142,
+     "win_rate": 57.7,
+     "avg_trade_pct": 0.07,
+     "trade_pf": 1.09,
+     "growth_x": 1.06,
+     "cagr_pct": 0.33,
+     "max_dd_pct": 19.86,
+     "exposure_pct": 13.0,
+     "bar_pf": 1.022
+    },
+    "luck": {
+     "real_bar_pf": 1.022,
+     "p": 0.6267,
+     "perm_median_pf": 1.047,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 142,
+     "trades_overlapping_rsi5": 57,
+     "share_overlapping": 0.401,
+     "share_of_days_also_rsi5": 0.363,
+     "solo_trades": 85,
+     "solo_mean_pct": 0.221,
+     "solo_win_pct": 55.3
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 257,
+     "win_rate": 55.3,
+     "avg_trade_pct": 0.06,
+     "trade_pf": 1.08,
+     "growth_x": 1.09,
+     "cagr_pct": 0.48,
+     "max_dd_pct": 26.12,
+     "exposure_pct": 22.3,
+     "bar_pf": 1.019
+    },
+    "luck": {
+     "real_bar_pf": 1.019,
+     "p": 0.6287,
+     "perm_median_pf": 1.041,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 257,
+     "trades_overlapping_rsi5": 106,
+     "share_overlapping": 0.412,
+     "share_of_days_also_rsi5": 0.388,
+     "solo_trades": 151,
+     "solo_mean_pct": 0.225,
+     "solo_win_pct": 60.9
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 491,
+     "win_rate": 59.5,
+     "avg_trade_pct": 0.16,
+     "trade_pf": 1.27,
+     "growth_x": 1.96,
+     "cagr_pct": 3.88,
+     "max_dd_pct": 30.71,
+     "exposure_pct": 44.5,
+     "bar_pf": 1.087
+    },
+    "luck": {
+     "real_bar_pf": 1.087,
+     "p": 0.2275,
+     "perm_median_pf": 1.048,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 491,
+     "trades_overlapping_rsi5": 93,
+     "share_overlapping": 0.189,
+     "share_of_days_also_rsi5": 0.179,
+     "solo_trades": 398,
+     "solo_mean_pct": 0.344,
+     "solo_win_pct": 62.1
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 39,
+     "win_rate": 61.5,
+     "avg_trade_pct": 0.57,
+     "trade_pf": 1.43,
+     "growth_x": 1.2,
+     "cagr_pct": 1.03,
+     "max_dd_pct": 19.11,
+     "exposure_pct": 4.4,
+     "bar_pf": 1.143
+    },
+    "luck": {
+     "real_bar_pf": 1.143,
+     "p": 0.3653,
+     "perm_median_pf": 1.078,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 39,
+     "trades_overlapping_rsi5": 13,
+     "share_overlapping": 0.333,
+     "share_of_days_also_rsi5": 0.328,
+     "solo_trades": 26,
+     "solo_mean_pct": 0.669,
+     "solo_win_pct": 57.7
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 228,
+     "win_rate": 52.6,
+     "avg_trade_pct": 0.05,
+     "trade_pf": 1.08,
+     "growth_x": 1.08,
+     "cagr_pct": 0.41,
+     "max_dd_pct": 23.14,
+     "exposure_pct": 15.3,
+     "bar_pf": 1.026
+    },
+    "luck": {
+     "real_bar_pf": 1.026,
+     "p": 0.6707,
+     "perm_median_pf": 1.073,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 228,
+     "trades_overlapping_rsi5": 72,
+     "share_overlapping": 0.316,
+     "share_of_days_also_rsi5": 0.282,
+     "solo_trades": 156,
+     "solo_mean_pct": 0.082,
+     "solo_win_pct": 51.3
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 64,
+     "win_rate": 64.1,
+     "avg_trade_pct": -0.05,
+     "trade_pf": 0.94,
+     "growth_x": 0.95,
+     "cagr_pct": -0.28,
+     "max_dd_pct": 17.82,
+     "exposure_pct": 5.6,
+     "bar_pf": 0.952
+    },
+    "luck": {
+     "real_bar_pf": 0.952,
+     "p": 0.7106,
+     "perm_median_pf": 1.037,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 64,
+     "trades_overlapping_rsi5": 54,
+     "share_overlapping": 0.844,
+     "share_of_days_also_rsi5": 0.795,
+     "solo_trades": 10,
+     "solo_mean_pct": 0.699,
+     "solo_win_pct": 70.0
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 134,
+     "win_rate": 52.2,
+     "avg_trade_pct": -0.02,
+     "trade_pf": 0.97,
+     "growth_x": 0.95,
+     "cagr_pct": -0.3,
+     "max_dd_pct": 25.07,
+     "exposure_pct": 11.2,
+     "bar_pf": 0.974
+    },
+    "luck": {
+     "real_bar_pf": 0.974,
+     "p": 0.7066,
+     "perm_median_pf": 1.031,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 134,
+     "trades_overlapping_rsi5": 99,
+     "share_overlapping": 0.739,
+     "share_of_days_also_rsi5": 0.71,
+     "solo_trades": 35,
+     "solo_mean_pct": 0.219,
+     "solo_win_pct": 62.9
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 294,
+     "win_rate": 58.8,
+     "avg_trade_pct": 0.05,
+     "trade_pf": 1.09,
+     "growth_x": 1.11,
+     "cagr_pct": 0.59,
+     "max_dd_pct": 31.34,
+     "exposure_pct": 26.7,
+     "bar_pf": 1.024
+    },
+    "luck": {
+     "real_bar_pf": 1.024,
+     "p": 0.5768,
+     "perm_median_pf": 1.039,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 294,
+     "trades_overlapping_rsi5": 87,
+     "share_overlapping": 0.296,
+     "share_of_days_also_rsi5": 0.276,
+     "solo_trades": 207,
+     "solo_mean_pct": 0.355,
+     "solo_win_pct": 62.8
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 6,
+     "win_rate": 66.7,
+     "avg_trade_pct": 0.72,
+     "trade_pf": 1.71,
+     "growth_x": 1.04,
+     "cagr_pct": 0.22,
+     "max_dd_pct": 6.64,
+     "exposure_pct": 0.7,
+     "bar_pf": 1.221
+    },
+    "luck": {
+     "real_bar_pf": 1.221,
+     "p": 0.3513,
+     "perm_median_pf": 1.1,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 6,
+     "trades_overlapping_rsi5": 6,
+     "share_overlapping": 1.0,
+     "share_of_days_also_rsi5": 0.967,
+     "solo_trades": 0,
+     "solo_mean_pct": null,
+     "solo_win_pct": null
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 123,
+     "win_rate": 54.5,
+     "avg_trade_pct": 0.12,
+     "trade_pf": 1.28,
+     "growth_x": 1.15,
+     "cagr_pct": 0.77,
+     "max_dd_pct": 10.5,
+     "exposure_pct": 8.3,
+     "bar_pf": 1.113
+    },
+    "luck": {
+     "real_bar_pf": 1.113,
+     "p": 0.3932,
+     "perm_median_pf": 1.075,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 123,
+     "trades_overlapping_rsi5": 62,
+     "share_overlapping": 0.504,
+     "share_of_days_also_rsi5": 0.442,
+     "solo_trades": 61,
+     "solo_mean_pct": 0.203,
+     "solo_win_pct": 55.7
+    }
+   }
+  },
+  "EWG": {
+   "wr7": {
+    "stats": {
+     "trades": 144,
+     "win_rate": 64.6,
+     "avg_trade_pct": 0.28,
+     "trade_pf": 1.31,
+     "growth_x": 1.39,
+     "cagr_pct": 1.87,
+     "max_dd_pct": 31.84,
+     "exposure_pct": 14.2,
+     "bar_pf": 1.087
+    },
+    "luck": {
+     "real_bar_pf": 1.087,
+     "p": 0.2655,
+     "perm_median_pf": 1.031,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 144,
+     "trades_overlapping_rsi5": 54,
+     "share_overlapping": 0.375,
+     "share_of_days_also_rsi5": 0.362,
+     "solo_trades": 90,
+     "solo_mean_pct": 0.11,
+     "solo_win_pct": 64.4
+    }
+   },
+   "stoch": {
+    "stats": {
+     "trades": 265,
+     "win_rate": 64.2,
+     "avg_trade_pct": 0.17,
+     "trade_pf": 1.2,
+     "growth_x": 1.37,
+     "cagr_pct": 1.77,
+     "max_dd_pct": 35.26,
+     "exposure_pct": 23.4,
+     "bar_pf": 1.054
+    },
+    "luck": {
+     "real_bar_pf": 1.054,
+     "p": 0.3433,
+     "perm_median_pf": 1.03,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 265,
+     "trades_overlapping_rsi5": 108,
+     "share_overlapping": 0.408,
+     "share_of_days_also_rsi5": 0.376,
+     "solo_trades": 157,
+     "solo_mean_pct": 0.066,
+     "solo_win_pct": 63.1
+    }
+   },
+   "ibs": {
+    "stats": {
+     "trades": 506,
+     "win_rate": 63.4,
+     "avg_trade_pct": 0.22,
+     "trade_pf": 1.26,
+     "growth_x": 2.39,
+     "cagr_pct": 5.03,
+     "max_dd_pct": 50.6,
+     "exposure_pct": 49.3,
+     "bar_pf": 1.082
+    },
+    "luck": {
+     "real_bar_pf": 1.082,
+     "p": 0.1617,
+     "perm_median_pf": 1.029,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 506,
+     "trades_overlapping_rsi5": 93,
+     "share_overlapping": 0.184,
+     "share_of_days_also_rsi5": 0.165,
+     "solo_trades": 413,
+     "solo_mean_pct": 0.396,
+     "solo_win_pct": 68.3
+    }
+   },
+   "dip5": {
+    "stats": {
+     "trades": 86,
+     "win_rate": 62.8,
+     "avg_trade_pct": 1.08,
+     "trade_pf": 1.72,
+     "growth_x": 2.18,
+     "cagr_pct": 4.48,
+     "max_dd_pct": 29.09,
+     "exposure_pct": 9.6,
+     "bar_pf": 1.244
+    },
+    "luck": {
+     "real_bar_pf": 1.244,
+     "p": 0.0599,
+     "perm_median_pf": 1.025,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 86,
+     "trades_overlapping_rsi5": 22,
+     "share_overlapping": 0.256,
+     "share_of_days_also_rsi5": 0.235,
+     "solo_trades": 64,
+     "solo_mean_pct": 1.038,
+     "solo_win_pct": 64.1
+    }
+   },
+   "low3": {
+    "stats": {
+     "trades": 241,
+     "win_rate": 51.9,
+     "avg_trade_pct": 0.09,
+     "trade_pf": 1.11,
+     "growth_x": 1.15,
+     "cagr_pct": 0.78,
+     "max_dd_pct": 31.79,
+     "exposure_pct": 16.2,
+     "bar_pf": 1.04
+    },
+    "luck": {
+     "real_bar_pf": 1.04,
+     "p": 0.5269,
+     "perm_median_pf": 1.047,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 241,
+     "trades_overlapping_rsi5": 74,
+     "share_overlapping": 0.307,
+     "share_of_days_also_rsi5": 0.278,
+     "solo_trades": 167,
+     "solo_mean_pct": 0.003,
+     "solo_win_pct": 48.5
+    }
+   },
+   "wr7_trend": {
+    "stats": {
+     "trades": 61,
+     "win_rate": 67.2,
+     "avg_trade_pct": 0.56,
+     "trade_pf": 2.25,
+     "growth_x": 1.39,
+     "cagr_pct": 1.86,
+     "max_dd_pct": 12.48,
+     "exposure_pct": 5.6,
+     "bar_pf": 1.341
+    },
+    "luck": {
+     "real_bar_pf": 1.341,
+     "p": 0.0559,
+     "perm_median_pf": 1.022,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 61,
+     "trades_overlapping_rsi5": 46,
+     "share_overlapping": 0.754,
+     "share_of_days_also_rsi5": 0.798,
+     "solo_trades": 15,
+     "solo_mean_pct": 0.787,
+     "solo_win_pct": 80.0
+    }
+   },
+   "stoch_trend": {
+    "stats": {
+     "trades": 132,
+     "win_rate": 67.4,
+     "avg_trade_pct": 0.27,
+     "trade_pf": 1.48,
+     "growth_x": 1.37,
+     "cagr_pct": 1.8,
+     "max_dd_pct": 22.83,
+     "exposure_pct": 11.3,
+     "bar_pf": 1.147
+    },
+    "luck": {
+     "real_bar_pf": 1.147,
+     "p": 0.1816,
+     "perm_median_pf": 1.017,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 132,
+     "trades_overlapping_rsi5": 95,
+     "share_overlapping": 0.72,
+     "share_of_days_also_rsi5": 0.708,
+     "solo_trades": 37,
+     "solo_mean_pct": 0.216,
+     "solo_win_pct": 75.7
+    }
+   },
+   "ibs_trend": {
+    "stats": {
+     "trades": 307,
+     "win_rate": 64.2,
+     "avg_trade_pct": 0.16,
+     "trade_pf": 1.27,
+     "growth_x": 1.56,
+     "cagr_pct": 2.53,
+     "max_dd_pct": 22.76,
+     "exposure_pct": 29.1,
+     "bar_pf": 1.091
+    },
+    "luck": {
+     "real_bar_pf": 1.091,
+     "p": 0.1856,
+     "perm_median_pf": 1.022,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 307,
+     "trades_overlapping_rsi5": 81,
+     "share_overlapping": 0.264,
+     "share_of_days_also_rsi5": 0.24,
+     "solo_trades": 226,
+     "solo_mean_pct": 0.485,
+     "solo_win_pct": 73.0
+    }
+   },
+   "dip5_trend": {
+    "stats": {
+     "trades": 19,
+     "win_rate": 57.9,
+     "avg_trade_pct": 1.27,
+     "trade_pf": 2.88,
+     "growth_x": 1.26,
+     "cagr_pct": 1.31,
+     "max_dd_pct": 8.58,
+     "exposure_pct": 2.1,
+     "bar_pf": 1.47
+    },
+    "luck": {
+     "real_bar_pf": 1.47,
+     "p": 0.0479,
+     "perm_median_pf": 1.028,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 19,
+     "trades_overlapping_rsi5": 18,
+     "share_overlapping": 0.947,
+     "share_of_days_also_rsi5": 0.884,
+     "solo_trades": 1,
+     "solo_mean_pct": 2.53,
+     "solo_win_pct": 100.0
+    }
+   },
+   "low3_trend": {
+    "stats": {
+     "trades": 130,
+     "win_rate": 55.4,
+     "avg_trade_pct": 0.24,
+     "trade_pf": 1.46,
+     "growth_x": 1.34,
+     "cagr_pct": 1.67,
+     "max_dd_pct": 8.99,
+     "exposure_pct": 8.7,
+     "bar_pf": 1.209
+    },
+    "luck": {
+     "real_bar_pf": 1.209,
+     "p": 0.1617,
+     "perm_median_pf": 1.029,
+     "n": 500
+    },
+    "overlap": {
+     "trades": 130,
+     "trades_overlapping_rsi5": 60,
+     "share_overlapping": 0.462,
+     "share_of_days_also_rsi5": 0.41,
+     "solo_trades": 70,
+     "solo_mean_pct": 0.253,
+     "solo_win_pct": 52.9
+    }
+   }
+  }
+ },
+ "pooled_2009_on": {
+  "wr7": {
+   "trades": 1300,
+   "mean_pct": 0.338,
+   "win_pct": 67.2,
+   "t": 4.52,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.463,
+   "solo_trades": 698,
+   "solo_mean_pct": 0.333
+  },
+  "stoch": {
+   "trades": 2148,
+   "mean_pct": 0.27,
+   "win_pct": 64.5,
+   "t": 4.83,
+   "markets_p_lt_05": 1,
+   "share_overlapping_rsi5": 0.476,
+   "solo_trades": 1125,
+   "solo_mean_pct": 0.321
+  },
+  "ibs": {
+   "trades": 4431,
+   "mean_pct": 0.272,
+   "win_pct": 65.3,
+   "t": 7.67,
+   "markets_p_lt_05": 4,
+   "share_overlapping_rsi5": 0.234,
+   "solo_trades": 3395,
+   "solo_mean_pct": 0.505
+  },
+  "dip5": {
+   "trades": 529,
+   "mean_pct": 0.889,
+   "win_pct": 62.0,
+   "t": 4.09,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.344,
+   "solo_trades": 347,
+   "solo_mean_pct": 0.885
+  },
+  "low3": {
+   "trades": 2108,
+   "mean_pct": 0.073,
+   "win_pct": 52.5,
+   "t": 1.43,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.368,
+   "solo_trades": 1332,
+   "solo_mean_pct": 0.113
+  },
+  "wr7_trend": {
+   "trades": 689,
+   "mean_pct": 0.448,
+   "win_pct": 71.6,
+   "t": 6.02,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.795,
+   "solo_trades": 141,
+   "solo_mean_pct": 0.787
+  },
+  "stoch_trend": {
+   "trades": 1273,
+   "mean_pct": 0.308,
+   "win_pct": 67.2,
+   "t": 5.76,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.745,
+   "solo_trades": 324,
+   "solo_mean_pct": 0.631
+  },
+  "ibs_trend": {
+   "trades": 2909,
+   "mean_pct": 0.185,
+   "win_pct": 65.0,
+   "t": 5.61,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.333,
+   "solo_trades": 1941,
+   "solo_mean_pct": 0.534
+  },
+  "dip5_trend": {
+   "trades": 128,
+   "mean_pct": 0.918,
+   "win_pct": 64.1,
+   "t": 3.1,
+   "markets_p_lt_05": 2,
+   "share_overlapping_rsi5": 0.969,
+   "solo_trades": 4,
+   "solo_mean_pct": 3.024
+  },
+  "low3_trend": {
+   "trades": 1271,
+   "mean_pct": 0.146,
+   "win_pct": 54.4,
+   "t": 3.09,
+   "markets_p_lt_05": 0,
+   "share_overlapping_rsi5": 0.533,
+   "solo_trades": 594,
+   "solo_mean_pct": 0.351
+  }
+ },
+ "spy_baseline": {
+  "any_5day_pct": 0.197,
+  "any_3day_pct": 0.119
+ },
+ "ibs_trades_by_threshold": {
+  "0.05": 400,
+  "0.1": 639,
+  "0.15": 788,
+  "0.2": 911,
+  "0.25": 1026
+ },
+ "runtime_s": 107
+}
