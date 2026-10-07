@@ -241,15 +241,17 @@
    "track": 1,
    "title": "AIS: Stop learning n8n, build n8n flows with CC, build anything with n8n and CC",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/ais-stop-learning-n8n.txt",
     "field-notes/skool/transcripts/ais-build-n8n-flows-with-cc.txt",
     "field-notes/skool/transcripts/ais-build-anything-n8n-cc.txt"
    ],
    "why": "The n8n versus Claude Code argument from the side that teaches both.",
-   "tries": 0,
-   "note": "requeued 2026-10-07: prompts written 6 Oct but no child was spawned; that try does not count"
+   "tries": 1,
+   "assigned": "2026-10-07",
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-07-S-15.md"
   },
   {
    "id": "S-16",
