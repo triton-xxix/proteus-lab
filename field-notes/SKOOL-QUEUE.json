@@ -102,17 +102,22 @@
   {
    "id": "S-07",
    "track": 1,
-   "title": "Automatable: Claude Code Masterclass, I Replaced n8n With Claude Code, 8 Things Your App Needs, Write Exactly Like You",
+   "title": "Automatable: Claude Code Masterclass (4 h 25 min, read in 4 parts)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "paused",
    "files": [
-    "field-notes/skool/transcripts/auto-claude-code-masterclass.txt",
-    "field-notes/skool/transcripts/auto-replaced-n8n-with-claude-code.txt",
-    "field-notes/skool/transcripts/auto-8-things-claude-code-app-needs.txt",
-    "field-notes/skool/transcripts/auto-write-exactly-like-you.txt"
+    "field-notes/skool/transcripts/auto-claude-code-masterclass-part1.txt",
+    "field-notes/skool/transcripts/auto-claude-code-masterclass-part2.txt",
+    "field-notes/skool/transcripts/auto-claude-code-masterclass-part3.txt",
+    "field-notes/skool/transcripts/auto-claude-code-masterclass-part4.txt"
    ],
-   "why": "Pull transcripts in an interactive session first.",
-   "note": "waiting on: field-notes/skool/transcripts/auto-claude-code-masterclass.txt"
+   "why": "Split 7 Oct: whisper transcript is 267k chars, read part by part; stop early if part 1 adds nothing.",
+   "tries": 1,
+   "assigned": "2026-10-07",
+   "part_digests": [
+    "state/agents/skool/2026-10-07-S-07-part1.md"
+   ],
+   "note": "7 Oct: part 1 read, SKIP, nothing new; parts 2-4 not read, waiting on Luke. paused is inert: next and ingest both ignore it."
   },
   {
    "id": "S-08",
@@ -306,6 +311,20 @@
    "assigned": "2026-10-07",
    "verdict": "SKIP",
    "digest": "state/agents/skool/2026-10-07-S-19.md"
+  },
+  {
+   "id": "S-20",
+   "track": 1,
+   "title": "Automatable: I Replaced n8n With Claude Code, 8 Things Your App Needs, Write Exactly Like You",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/auto-replaced-n8n-with-claude-code.txt",
+    "field-notes/skool/transcripts/auto-8-things-claude-code-app-needs.txt",
+    "field-notes/skool/transcripts/auto-write-exactly-like-you.txt"
+   ],
+   "why": "The three short Automatable videos split out of S-07 on 7 Oct.",
+   "tries": 0
   }
  ]
 }
