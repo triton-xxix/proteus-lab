@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 54 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (16 open)
+## Queue (19 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -29,6 +29,9 @@ Verdicts so far: 54 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0088 | Kaufman efficiency ratio (net change over total path) on the 28 P-0084 ETFs: rank which markets trend, then test whether trading only the trendiest half, chosen on past data only, beats all 28 under the joint permutation test (TRADING-IDEAS.md B-01 B-11) | field-notes | none |  | 0 | 40 min |
 | P-0089 | Stricter luck test for the systems book's RSI(5) basket: walk-forward permutation (neurotrader888 mcpt walkforward script) and a same-trade random-entry control with 10,000 draws, reported beside the in-sample p-values from P-0083 (TRADING-IDEAS.md frameworks) | field-notes | none |  | 0 | 35 min |
 | P-0090 | Monthly timing models: replicate Antonacci global equities momentum (SPY vs EFA vs AGG, 12-month returns against T-bills) and the Fabian 39-week three-index model, luck-test both and score against 60/40 (TRADING-IDEAS.md A-13 A-12) | field-notes | none |  | 0 | 30 min |
+| P-0092 | Mortiflix: does the free no-Claude `mortiflix demo` run to a playable video on macOS, yes/no? | harvest | none |  | 0 | 25 min |
+| P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | harvest | none |  | 0 | 20 min |
+| P-0094 | Agent.reviews: can the public uv package page be read keylessly, and how many reviews does it show? | harvest | none |  | 0 | 10 min |
 
 ## Verdicts (71)
 

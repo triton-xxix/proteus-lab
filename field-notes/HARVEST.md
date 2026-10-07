@@ -6,21 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-157 judged over 11 harvest days, 110 kept, 33 testable, 30 queued as probes, 24 with a probe verdict.
+171 judged over 12 harvest days, 118 kept, 38 testable, 34 queued as probes, 29 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0157 | 2026-10-06 | github | [Charlesmpc/by2kb: Forward videos from IM to transcript, Markdown, and your knowledge base ](https://github.com/Charlesmpc/by2kb) | mechanism | tools-for-strangers | yes | P-0068 |
+| H-0171 | 2026-10-07 | hn | [Show HN: Agent.reviews – Where AI agents read and write reviews on tools](https://agent.reviews/) | both | open-data | yes | P-0094 |
+| H-0170 | 2026-10-07 | vault | [Build a mock-up site for the prospect and send a 90-second Loom after a two-line permissio](https://www.youtube.com/watch?v=aidr_Ny1rvI) | mechanism | tools-for-strangers | no: Needs real prospects, outbound messages and replies, not a k |  |
+| H-0169 | 2026-10-07 | awesome | [cvelasquez/agent-workbench (new in awesome-claude-code)](https://github.com/cvelasquez/agent-workbench) | mechanism | tools-for-strangers | yes | P-0093 |
+| H-0166 | 2026-10-07 | github | [GTKottman/mortiflix-oss: A motion design studio on your own machine: Claude makes the vide](https://github.com/GTKottman/mortiflix-oss) | mechanism | tools-for-strangers | yes | P-0092 |
+| H-0165 | 2026-10-07 | hn | [Show HN: Durable Actors – OSS Durable Objects with configurable compute](https://github.com/TerseAI/durable-actors) | both | tech | no: Needs a Kubernetes cluster or its runtime set up, beyond a 3 |  |
+| H-0164 | 2026-10-07 | vault | [A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun](https://www.forexfactory.com/) | mechanism | mechanism-hunting | yes |  |
+| H-0161 | 2026-10-07 | arxiv | [MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledg](https://arxiv.org/abs/2610.08327) | mechanism | tech | no: Needs model fine-tuning and medical benchmarks, not a 30 min |  |
+| H-0158 | 2026-10-07 | vault | [Insider cluster-buy signal from the free Form 4 filings page as a paper desk](https://finviz.com/) | mechanism | forecasting | yes |  |
+| H-0157 | 2026-10-06 | github | [Charlesmpc/by2kb: Forward videos from IM to transcript, Markdown, and your knowledge base ](https://github.com/Charlesmpc/by2kb) | mechanism | tools-for-strangers | yes | P-0068 **broken** |
 | H-0156 | 2026-10-06 | hn | [Show HN: OpenChart – OSS TradingView alternative with your own AI agent](https://github.com/longsurf-ai/openchart) | both | desk:grinder | no: The app is a macOS binary download from a third party and ne |  |
-| H-0155 | 2026-10-06 | vault | [Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to](https://www.instagram.com/reel/Db1USzsMNnZ/) | mechanism | tools-for-strangers | yes |  |
+| H-0155 | 2026-10-06 | vault | [Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to](https://www.instagram.com/reel/Db1USzsMNnZ/) | mechanism | tools-for-strangers | yes | P-0071 **works** |
 | H-0153 | 2026-10-06 | arxiv | [HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention](https://arxiv.org/abs/2610.06563) | mechanism | mechanism-hunting | no: Needs the paper's benchmark, code and model access that are  |  |
-| H-0152 | 2026-10-06 | github | [arielshad/3d-asset-server: 3d assets api and mcp](https://github.com/arielshad/3d-asset-server) | mechanism | tools-for-strangers | yes | P-0067 |
+| H-0152 | 2026-10-06 | github | [arielshad/3d-asset-server: 3d assets api and mcp](https://github.com/arielshad/3d-asset-server) | mechanism | tools-for-strangers | yes | P-0067 **works** |
 | H-0150 | 2026-10-06 | vault | [Buying real human UGC clips from marketplaces and reselling them inside a client retainer](https://www.instagram.com/reel/DdK9uWfRVRT/) | mechanism | none | no: Buying clips needs a marketplace account and payment. |  |
 | H-0149 | 2026-10-06 | awesome | [degordonstech/pwa2play (new in awesome-claude-code)](https://github.com/degordonstech/pwa2play) | mechanism | tools-for-strangers | no: A real run needs a Play developer account and a live PWA wit |  |
-| H-0147 | 2026-10-06 | arxiv | [Wikidata Search Traces: A Dataset for Training Knowledge Graph Search Agents](https://arxiv.org/abs/2610.06650) | mechanism | open-data | yes | P-0066 |
-| H-0146 | 2026-10-06 | github | [Vincentwei1021/mg-styles-15: 15 motion design styles, each made by Claude Opus 5.5 writing](https://github.com/Vincentwei1021/mg-styles-15) | mechanism | tools-for-strangers | yes | P-0065 |
+| H-0147 | 2026-10-06 | arxiv | [Wikidata Search Traces: A Dataset for Training Knowledge Graph Search Agents](https://arxiv.org/abs/2610.06650) | mechanism | open-data | yes | P-0066 **works** |
+| H-0146 | 2026-10-06 | github | [Vincentwei1021/mg-styles-15: 15 motion design styles, each made by Claude Opus 5.5 writing](https://github.com/Vincentwei1021/mg-styles-15) | mechanism | tools-for-strangers | yes | P-0065 **blocked** |
 | H-0144 | 2026-10-06 | vault | [A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build a](https://www.skool.com/theadsclinic) | mechanism | none | no: It needs a client, an ad account and real spend. |  |
 | H-0141 | 2026-10-05 | vault | [Niche paid community on owned material, borrowing only a proven model and price point]() | mechanism | tools-for-strangers | no: It needs a platform account and a paying audience, not a key |  |
 | H-0139 | 2026-10-05 | arxiv | [HazardWeaver: Scientific Route Selection for Hazard Analysis Agents](https://arxiv.org/abs/2610.03591) | mechanism | mechanism-hunting | no: It needs an LLM key and hazard datasets and models that are  |  |
@@ -125,6 +133,105 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 ## Entries
 
+### H-0171 Show HN: Agent.reviews – Where AI agents read and write reviews on tools
+2026-10-07, hn, https://agent.reviews/
+
+- **Mechanism:** A skill and npm CLI let coding agents look up reviews of a package before choosing it and post one after using it. Reviews pass three filters before publishing: deterministic rules for secrets, PII and URLs, a small trained classifier for leaks, and a small LLM check. The data is agent-reported friction, such as an SDK crashing on a missing key, aggregated per tool.
+- **Claim:** Thousands of agent-written reviews gathered in a few weeks, built on 50k+ measured agent sessions.
+- **Testable:** yes. Does a public agent.reviews package page such as /packages/uv return review text and a count readable without login, yes/no, and how many reviews? Queued as P-0094.
+- **Idea on its own:** needs-a-run. The feedback loop is real but reviews risk being gamed or low quality, which a read of the data can show.
+- **How it would be done:** Fetch the public package pages and inspect the review text, dates and rating spread. If readable, it is a dataset on which tools agents struggle with, usable as an input to the tools shelf. A person would be needed only to judge whether ratings look genuine.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline (fetch pattern)
+- **To fetch:** agent.reviews https://agent.reviews/ (Public site to read.); @armature-tech/agent-reviews https://www.npmjs.com/package/@armature-tech/agent-reviews (CLI to inspect how reviews are sent.)
+- **Field Notes line:** A review site written by coding agents about the tools they used, with a three-layer filter to stop secrets leaking into reviews.
+
+### H-0170 Build a mock-up site for the prospect and send a 90-second Loom after a two-line permission ask
+2026-10-07, vault, https://www.youtube.com/watch?v=aidr_Ny1rvI
+
+- **Mechanism:** Outreach is sequenced as a consent step first: a two-line message asks whether the business owner is happy to see a free redesign. Only on a yes is a mock-up of their own site built and a short screen-recorded walkthrough sent. This keeps the contact within UK electronic marketing rules because the sample is solicited, and the demo shows the fix rather than describing the gap.
+- **Claim:** Showing a built mock-up after a permission ask wins a first agency client without a portfolio.
+- **Testable:** no. Needs real prospects, outbound messages and replies, not a keyless sandbox run. Needs: Real prospects and a send channel; per-message approval from Luke.
+- **Idea on its own:** needs-a-run. Consent-first with a tangible demo is sound in principle, but reply rates are unevidenced in the source videos.
+- **How it would be done:** Pick a local trade with a weak site, build a one-page replica with Claude Code and a site skill, and record a 90 second walkthrough with screen capture and a voiceover. A person handles finding contacts, sending the permission ask, and following up. Tracking reply rate per batch is the measurable output.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), ElevenLabs (voice)
+- **To fetch:** Loom https://www.loom.com/ (Free tier for short walkthrough recordings.)
+- **Missing:** Prospect list and a human sender for each message.
+- **Field Notes line:** Ask permission in two lines, then send a mock-up of the prospect's own site with a 90 second walkthrough.
+
+### H-0169 cvelasquez/agent-workbench (new in awesome-claude-code)
+2026-10-07, awesome, https://github.com/cvelasquez/agent-workbench. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** It spawns the already-logged-in CLI (claude, codex, opencode) inside a server-side pseudo-terminal, so processes outlive the browser tab. A browser UI streams the terminal and reads each CLI's on-disk session logs to render history, conversation cards, context use and subagent status. Handoff to another CLI is done by passing a transcript of recent turns, not the real context.
+- **Claim:** One local UI for several coding-agent CLIs with tabs, history, context meter and git view, never touching credentials.
+- **Testable:** yes. Does `npx agent-workbench` start and list this machine's existing Claude Code sessions from the PROTEUS project without any network calls beyond npm install, yes/no? Queued as P-0093.
+- **Idea on its own:** sound. Wrapping a pty and parsing local transcripts is simple and credential-free by design.
+- **How it would be done:** Install into the sandbox with npm, start it bound to localhost, and check that it reads session logs under the Claude projects folder. The transcript-parsing code is the useful piece for the usage and run-log tooling. Nothing here needs a person beyond reading the UI.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agent-workbench https://github.com/cvelasquez/agent-workbench (The package under test.)
+- **Field Notes line:** A browser front end that wraps your logged-in coding CLIs in a pty and reads their session logs for history and context meters.
+
+### H-0166 GTKottman/mortiflix-oss: A motion design studio on your own machine: Claude makes the video step by step, you approve ev
+2026-10-07, github, https://github.com/GTKottman/mortiflix-oss
+
+- **Mechanism:** A harness that runs Claude in short sessions that each end at a human gate: brief, script, style frames, animatic, final. State carries between sessions through a journal and handoff file, and the rules are enforced in code, for example a submission is refused unless it reports every error check and answers each pinned note. Approved items are copied out of the session's reach, and a proposed new check, once approved, runs on every later video.
+- **Claim:** A local motion design studio where Claude builds video stage by stage and the user approves each one.
+- **Testable:** yes. Does `mortiflix demo` complete on this Mac with Node and ffmpeg and produce a playable video, yes/no? Queued as P-0092.
+- **Idea on its own:** sound. Gated sessions with a journal handoff match how reliable long agent work is done, and Proteus already uses code-enforced rules.
+- **How it would be done:** Clone the repo, run npm install and `mortiflix demo` which needs no Claude, then read the pipeline.json format to see how gates and checks are declared. The reusable piece is the gate-and-journal pattern, which could wrap the Field Notes or Nolan film builds. Real videos would use the existing Claude Code login. A person still judges taste at each gate.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), ElevenLabs (voice)
+- **To fetch:** mortiflix-oss https://github.com/GTKottman/mortiflix-oss (Repo to clone and run the demo.); ffmpeg https://ffmpeg.org/ (Required by the demo if not installed.)
+- **Field Notes line:** A video studio where every Claude session stops at a human approval gate and the rules are enforced in code, not prompts.
+
+### H-0165 Show HN: Durable Actors – OSS Durable Objects with configurable compute
+2026-10-07, hn, https://github.com/TerseAI/durable-actors
+
+- **Mechanism:** Each actor is a named singleton server with its own SQLite file that handles one request at a time, so concurrent agents touching shared data are serialised without locks. Clients reach an actor by name over websocket and the platform routes to the single instance anywhere in the cluster. It is self-hosted via a Helm chart on Kubernetes, with configurable compute per actor.
+- **Claim:** An MIT-licensed open-source alternative to Cloudflare Durable Objects built for multiplayer agent workloads.
+- **Testable:** no. Needs a Kubernetes cluster or its runtime set up, beyond a 30 minute keyless slice. Needs: Kubernetes or Docker runtime.
+- **Idea on its own:** sound. The single-writer virtual actor model is established and fits agent coordination.
+- **How it would be done:** Deploy the Helm chart or run the local dev build, create one actor per agent or per desk, and expose a websocket endpoint for each. Proteus could use it to serialise writes to a ledger instead of CSV files edited by several jobs. A person would handle cluster setup and schema versioning, the weakness a commenter flagged.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Durable Actors https://github.com/TerseAI/durable-actors (The open-source repo with Helm chart.)
+- **Missing:** A cluster or Docker host to run it.
+- **Field Notes line:** One named server per agent with its own SQLite and one request at a time, so many agents share data without races.
+
+### H-0164 A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window around high-impact USD events, scor
+2026-10-07, vault, https://www.forexfactory.com/. Vault verdict on the vendor exists (vault verdict: forexfactory.com); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A public weekly JSON calendar lists scheduled macro events with a low, medium or high impact tag and a timestamp. A filter blocks new entries and optionally flattens positions inside a window around high-impact USD events such as CPI, FOMC and payrolls. It works only if volatility around those events is reliably higher and the bot loses more there than elsewhere, which the paper record can show.
+- **Claim:** A free calendar feed can drive a news filter for the S1 crypto bot, scored on the paper record.
+- **Testable:** yes. Is BTC's mean absolute return in the hour after high-impact USD events at least 1.5 times its all-hours baseline over the last 12 months? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. Event-window volatility is well known, but whether skipping entries improves this bot's results is untested.
+- **How it would be done:** Pull the weekly calendar JSON (keyless) and keep a rolling archive of high-impact USD events as they appear; for history, list the 12 months of FOMC, CPI and NFP dates by hand from public schedules. Fetch hourly BTC candles from a public exchange endpoint and compute absolute return in the event hour versus all hours. Then replay the S1 paper trades with entries inside the window removed and compare PnL. No hire needed; the only manual part is the historical date list.
+- **Stack already covers:** launchd long-running pollers, freqtrade
+- **To fetch:** Faireconomy weekly calendar JSON https://nfs.faireconomy.media/ff_calendar_thisweek.json (Keyless weekly feed of events with impact ratings.); Binance public klines https://api.binance.com/api/v3/klines (Keyless hourly BTC candles for the volatility comparison.)
+- **Field Notes line:** Does BTC really move more after CPI and Fed days? I will check hourly candles against a free macro calendar before any filter touches the bot.
+
+### H-0161 MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation
+2026-10-07, arxiv, https://arxiv.org/abs/2610.08327
+
+- **Mechanism:** Two roles share one base model: an Examiner invents hard question-option pairs and a Reasoner answers them using multi-turn calls to external knowledge tools. Knowledge learned during a solve is kept in two tiers, a temporary exploratory store and a curated persistent store, and only the curated tier is promoted for later reuse. Training signal comes from agreement and the Examiner's difficulty targeting, not from human labels.
+- **Claim:** Up to 13.7 average accuracy points over the next-best self-evolving baseline on five medical benchmarks with 4B and 8B models.
+- **Testable:** no. Needs model fine-tuning and medical benchmarks, not a 30 minute keyless run. Needs: GPU training, benchmark data, code release not confirmed.
+- **Idea on its own:** needs-a-run. The staged-memory trick is plausible and portable, but the gains are self-reported on a narrow benchmark set.
+- **How it would be done:** Reimplementing means a generator prompt, a solver loop with a search tool, and a promote-or-discard gate for notes. The gate is the transferable part and could be tried on the Pitch desk as a notes store that only keeps rules that held up on past matches. A small model via Ollama could stand in for the 4B base. Medical use would need expert review, which no script covers.
+- **Stack already covers:** Ollama with a qwen model, Claude Code with skills and sub-agents
+- **To fetch:** MedZERO paper https://arxiv.org/abs/2610.08327 (Read for the promotion rule and check for a code link.)
+- **Missing:** A released implementation and a verifiable domain to run the loop on.
+- **Field Notes line:** A self-play loop where one model writes hard questions and another answers them, with a two-tier memory so bad notes never become permanent.
+
+### H-0158 Insider cluster-buy signal from the free Form 4 filings page as a paper desk
+2026-10-07, vault, https://finviz.com/. Vault verdict on the vendor exists (vault verdict: finviz.com); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** US insiders must file Form 4 within two business days of a trade, and the filings are public on SEC EDGAR as XML. A cluster-buy signal counts open-market purchases (transaction code P) by three or more distinct insiders at one issuer inside a short window, then measures forward returns against the index. The numbers come from the filings themselves plus a free daily price series; finviz is only a viewer over the same EDGAR data.
+- **Claim:** Insider cluster buys show small documented positive drift after filing, using free daily data.
+- **Testable:** yes. Do EDGAR Form 4 cluster buys (3+ insiders, code P, 14-day window) from 2025 beat SPY over the next 30 trading days, yes/no and by how many percentage points on average? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. The effect is documented in academic work but shrinks after costs and in small caps, so only a run on recent data says if it survives.
+- **How it would be done:** Pull the EDGAR daily or quarterly index of Form 4 filings with a descriptive User-Agent header (no key), parse the XML for code P non-derivative transactions, and group by issuer in rolling 14-day windows. Fetch daily closes from a keyless source such as Stooq CSVs for each flagged ticker and for SPY. Log each cluster as a paper entry on the filing date plus one trading day, committed before outcomes, and score at 30 and 60 days. A hired person would only be needed to sanity-check ticker mapping and delisted names; a script covers the rest.
+- **Stack already covers:** launchd long-running pollers, Dixon-Coles paper desk pattern (ledger and scoring approach)
+- **To fetch:** SEC EDGAR full-index and Form 4 XML https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4 (Free primary source for insider filings, no key, needs a User-Agent.); Stooq daily CSV https://stooq.com/ (Keyless daily price history for forward returns.)
+- **Field Notes line:** Insider cluster buys are public on EDGAR within two days; I will check whether three-plus insiders buying together actually beat the index.
+
 ### H-0157 Charlesmpc/by2kb: Forward videos from IM to transcript, Markdown, and your knowledge base — with raw and skill-updated o
 2026-10-06, github, https://github.com/Charlesmpc/by2kb
 
@@ -154,7 +261,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 - **Mechanism:** ffmpeg detects scene changes and saves one frame per cut, then captions are pulled from the video or Whisper transcribes the audio when none exist. Frames and timestamped transcript are handed to the model together. The alternative is giving a public YouTube URL directly to Gemini, which reads the video itself.
 - **Claim:** Scene-change frames plus a transcript, or a bare URL to Gemini, get a long video's content into an agent without watching it.
-- **Testable:** yes. For one public 10-minute video, how many scene-change frames does ffmpeg (select gt(scene,0.3)) produce, and do they line up with the transcript timestamps? Not queued (daily cap).
+- **Testable:** yes. For one public 10-minute video, how many scene-change frames does ffmpeg (select gt(scene,0.3)) produce, and do they line up with the transcript timestamps? Queued as P-0071.
 - **Idea on its own:** sound. Scene frames plus timestamps are a well-understood compression of a video, though a talking-head video yields few useful frames.
 - **How it would be done:** Download captions with the existing keyless pipeline, run ffmpeg scene detection to extract frames, and pair each frame with the nearest transcript lines. Feed the pairs to a model and ask questions only answerable from the frames. Compare with local transcription alone to see what the frames add.
 - **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, local transcription, Claude Code with skills and sub-agents
@@ -1330,7 +1437,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0155 | 2026-10-06 | Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to | open | sound | yes |  |
+| H-0170 | 2026-10-07 | Build a mock-up site for the prospect and send a 90-second Loom after a two-line permissio | open | needs-a-run | no |  |
+| H-0164 | 2026-10-07 | A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun | open | needs-a-run | yes |  |
+| H-0158 | 2026-10-07 | Insider cluster-buy signal from the free Form 4 filings page as a paper desk | open | needs-a-run | yes |  |
+| H-0155 | 2026-10-06 | Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to | open | sound | yes | P-0071 **works** |
 | H-0150 | 2026-10-06 | Buying real human UGC clips from marketplaces and reselling them inside a client retainer | open | sound | no |  |
 | H-0144 | 2026-10-06 | A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build a | open | needs-a-run | no |  |
 | H-0141 | 2026-10-05 | Niche paid community on owned material, borrowing only a proven model and price point | open | needs-a-run | no |  |
@@ -1362,6 +1472,17 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0107 | 2026-10-07 | [@armature-tech/agent-reviews](https://www.npmjs.com/package/@armature-tech/agent-reviews) | CLI to inspect how reviews are sent. | H-0171 (Show HN: Agent.reviews – Where AI agents read and ) | shelf |
+| T-0106 | 2026-10-07 | [agent.reviews](https://agent.reviews/) | Public site to read. | H-0171 (Show HN: Agent.reviews – Where AI agents read and ) | shelf |
+| T-0105 | 2026-10-07 | [Loom](https://www.loom.com/) | Free tier for short walkthrough recordings. | H-0170 (Build a mock-up site for the prospect and send a 9) | shelf |
+| T-0104 | 2026-10-07 | [agent-workbench](https://github.com/cvelasquez/agent-workbench) | The package under test. | H-0169 (cvelasquez/agent-workbench (new in awesome-claude-) | shelf |
+| T-0103 | 2026-10-07 | [mortiflix-oss](https://github.com/GTKottman/mortiflix-oss) | Repo to clone and run the demo. | H-0166 (GTKottman/mortiflix-oss: A motion design studio on) | shelf |
+| T-0102 | 2026-10-07 | [Durable Actors](https://github.com/TerseAI/durable-actors) | The open-source repo with Helm chart. | H-0165 (Show HN: Durable Actors – OSS Durable Objects with) | shelf |
+| T-0101 | 2026-10-07 | [Binance public klines](https://api.binance.com/api/v3/klines) | Keyless hourly BTC candles for the volatility comparison. | H-0164 (A high-impact news filter for the S1 crypto bot, s) | shelf |
+| T-0100 | 2026-10-07 | [Faireconomy weekly calendar JSON](https://nfs.faireconomy.media/ff_calendar_thisweek.json) | Keyless weekly feed of events with impact ratings. | H-0164 (A high-impact news filter for the S1 crypto bot, s) | shelf |
+| T-0099 | 2026-10-07 | [MedZERO paper](https://arxiv.org/abs/2610.08327) | Read for the promotion rule and check for a code link. | H-0161 (MedZERO: Self-Evolving Agents for Open-Ended Medic) | shelf |
+| T-0098 | 2026-10-07 | [Stooq daily CSV](https://stooq.com/) | Keyless daily price history for forward returns. | H-0158 (Insider cluster-buy signal from the free Form 4 fi) | shelf |
+| T-0097 | 2026-10-07 | [SEC EDGAR full-index and Form 4 XML](https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4) | Free primary source for insider filings, no key, needs a User-Agent. | H-0158 (Insider cluster-buy signal from the free Form 4 fi) | shelf |
 | T-0096 | 2026-10-06 | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Local speech recognition used by default. | H-0157 (Charlesmpc/by2kb: Forward videos from IM to transc) | shelf |
 | T-0095 | 2026-10-06 | [by2kb](https://github.com/Charlesmpc/by2kb) | The video to Markdown knowledge-base pipeline. | H-0157 (Charlesmpc/by2kb: Forward videos from IM to transc) | shelf |
 | T-0094 | 2026-10-06 | [OpenChart](https://github.com/longsurf-ai/openchart) | The app that wires alerts to an agent. | H-0156 (Show HN: OpenChart – OSS TradingView alternative w) | shelf |
@@ -1463,6 +1584,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0168 | 2026-10-07 | youtube | [MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)](https://www.youtube.com/watch?v=RhTiAOGwbYE) | Beginner MCP tutorial, transcript unavailable and nothing new. |
+| H-0167 | 2026-10-07 | arxiv | [M3SunAgent: Monocular 3D Spatial Understanding Agent for Metric Depth Estimation](https://arxiv.org/abs/2610.07982) | Vision research paper on depth estimation with no relevance or runnable slice for any desk. |
+| H-0163 | 2026-10-07 | awesome | [cooklang/cooklang-skills (new in awesome-claude-code)](https://github.com/cooklang/cooklang-skills) | A domain-specific skills pack over an MCP server; no new mechanism beyond skills plus MCP. |
+| H-0162 | 2026-10-07 | youtube | [Anthropic Just Revealed 10 NEW Rules for Claude Skills](https://www.youtube.com/watch?v=VQyYzLJ6xos) | Transcript unavailable and title is listicle hype with no visible mechanism. |
+| H-0160 | 2026-10-07 | github | [JimmySadek/video-fetcher-to-markdown: Portable AI-agent skill: turn YouTube, Ins](https://github.com/JimmySadek/video-fetcher-to-markdown) | Duplicates the existing keyless YouTube transcript pipeline and local transcription already in the stack. |
+| H-0159 | 2026-10-07 | hn | [Tell HN: Apple not letting removal of AI models on macOS 27 is outrageous](https://news.ycombinator.com/item?id=49993338) | Consumer complaint about Apple model storage with no mechanism worth recording. |
 | H-0154 | 2026-10-06 | youtube | [The Four Types of Memory Every AI Agent Needs](https://www.youtube.com/watch?v=BacJ6sEhqMo) | A generic explainer of agent memory types with no new mechanism for Proteus. |
 | H-0151 | 2026-10-06 | hn | [Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature) | An opinion piece on a product feature; the mechanism (model predicts next user prompt) is thin and disputed in the comme |
 | H-0148 | 2026-10-06 | youtube | [How Car Origin Affects Depreciation in the UAE? 🏎️](https://www.youtube.com/watch?v=1dbh-4kz8JA) | A spoken claim about UAE depreciation by origin with no method or data shown. |
