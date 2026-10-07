@@ -80,7 +80,7 @@ it is the candidate for a second systems book, because it trades on different da
 
 ## Caveats
 
-About 160 luck tests ran here, so a few p-values under 0.05 are expected by chance. The pattern
+About 110 luck tests ran here, so a few p-values under 0.05 are expected by chance. The pattern
 counts more than any one number: four of four US markets for IBS, none of nine for most of the
 others. No costs: on SPY, at 0.03% a round trip, they matter little against a 0.3% to 0.8% trade.
 On the smaller ETFs they would matter more.
