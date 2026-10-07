@@ -1,0 +1,74 @@
+{
+ "span": [
+  "1993-01-29",
+  "2026-10-06"
+ ],
+ "fed_day": {
+  "n": 85,
+  "mean_pct": 0.03,
+  "win_pct": 45.9,
+  "median_pct": -0.015,
+  "control_n": 2365,
+  "control_mean_pct": 0.056,
+  "control_win_pct": 55.3,
+  "boot_p_mean_at_or_above": 0.5824,
+  "boot_p_mean_at_or_below": 0.4176
+ },
+ "pre_fed": {
+  "n": 85,
+  "mean_pct": 0.085,
+  "win_pct": 50.6,
+  "median_pct": 0.005,
+  "control_n": 2365,
+  "control_mean_pct": 0.056,
+  "control_win_pct": 55.3,
+  "boot_p_mean_at_or_above": 0.415,
+  "boot_p_mean_at_or_below": 0.585
+ },
+ "fed_3day": {
+  "n": 85,
+  "mean_pct": 0.164,
+  "win_pct": 50.6,
+  "median_pct": 0.003,
+  "control_n": 2365,
+  "control_mean_pct": 0.158,
+  "control_win_pct": 59.6,
+  "boot_p_mean_at_or_above": 0.5104,
+  "boot_p_mean_at_or_below": 0.4896
+ },
+ "fed_dates_used": 85,
+ "jobs_friday": {
+  "n": 405,
+  "mean_pct": 0.153,
+  "win_pct": 58.5,
+  "median_pct": 0.174,
+  "control_n": 1292,
+  "control_mean_pct": -0.049,
+  "control_win_pct": 50.4,
+  "boot_p_mean_at_or_above": 0.0,
+  "boot_p_mean_at_or_below": 1.0
+ },
+ "weak_monday": {
+  "n": 355,
+  "mean_pct": 0.713,
+  "win_pct": 65.6,
+  "median_pct": 0.6,
+  "control_n": 1593,
+  "control_mean_pct": 0.146,
+  "control_win_pct": 56.0,
+  "boot_p_mean_at_or_above": 0.0,
+  "boot_p_mean_at_or_below": 1.0,
+  "claimed_pct": 0.6,
+  "since_2009": {
+   "n": 184,
+   "mean_pct": 0.687,
+   "win_pct": 63.0,
+   "median_pct": 0.525,
+   "control_n": 1593,
+   "control_mean_pct": 0.146,
+   "control_win_pct": 56.0,
+   "boot_p_mean_at_or_above": 0.0,
+   "boot_p_mean_at_or_below": 1.0
+  }
+ }
+}
