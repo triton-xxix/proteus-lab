@@ -1,5 +1,5 @@
 {
- "next_id": 80,
+ "next_id": 81,
  "items": [
   {
    "id": "P-0001",
@@ -1599,14 +1599,16 @@
    "after": "",
    "est_minutes": 60,
    "added": "2026-10-07",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": " Retitled 7 Oct on Luke's word.",
-   "artefacts": [],
-   "minutes": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-07T01:46:56+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-07T01:49:02+0100",
+   "note": "23 McLaren 720S for sale in the UK; cheapest 134,100 GBP (2020), four coupes at or under 140,000, and 2017 to 2020 coupes all sit at 134k to 150k whatever the year. A 2017 Ferrari 488 GTB keeps about 30k more (median 174,990). Running costs and the full Ferrari and Lamborghini map not done.",
+   "artefacts": [
+    "experiments/2026-10-07-P-0073"
+   ],
+   "minutes": 2,
    "calls": null,
    "denied": [],
    "luke": false
@@ -1732,6 +1734,26 @@
    "calls": null,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0080",
+   "title": "FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament",
+   "source": "persona",
+   "needs": "a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form",
+   "after": "",
+   "est_minutes": 60,
+   "added": "2026-10-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": true
   }
  ]
 }

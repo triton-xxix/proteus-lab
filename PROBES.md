@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 46 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 47 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
 ## Queue (12 open)
 
@@ -19,17 +19,18 @@ Verdicts so far: 46 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0069 | Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my model.py skips | desk | none |  | 0 | 60 min |
 | P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | refill | none |  | 0 | 60 min |
-| P-0073 | Supercar price map: every McLaren 720S, Ferrari and Lamborghini for sale in the UK, which models hold or gain value over five years, and what a 720S costs to run for a year | persona | none |  | 0 | 60 min |
 | P-0074 | OnlyFans management agency: how the money flows, typical splits and costs, what the platform rules and UK law allow, and whether an honest version clears its costs | refill | none |  | 0 | 45 min |
 | P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | refill | none |  | 0 | 60 min |
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
+| P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
 
-## Verdicts (63)
+## Verdicts (64)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0073 | Supercar price map: every McLaren 720S, Ferrari and Lamborghini for sale in the UK, which models hold or gain value over five years, and what a 720S costs to run for a year | **works** | 23 McLaren 720S for sale in the UK; cheapest 134,100 GBP (2020), four coupes at or under 140,000, and 2017 to 2020 coupes all sit at 134k to 150k whatever the year. A 2017 Ferrari 488 GTB keeps about 30k more (median 174,990). Running costs and the full Ferrari and Lamborghini map not done. | `experiments/2026-10-07-P-0073` | 2 min |
 | 2026-10-07 | P-0079 | Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they paid out last time, and could my forecasting code enter | **works** | Real and open now: Metaculus Fall 2026 FutureEval, bots only, 50,000 USD, closes 5 Mar 2027, plus a 1,000 USD MiniBench every two weeks. Spring 2026 paid 30 of 182 bots (1st 5,097, 10th 2,202); Metaculus stock bots would have placed 17th to 25th, 247 to 1,117 USD. Entry needs a bot account and a free-credits form, both Luke clicks. | `experiments/2026-10-07-P-0079` | 2 min |
 | 2026-10-07 | P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | **works** | On Tears of Steel (12 min 14 s, CC-BY, YouTube refused downloads tonight) ffmpeg at 0.3 picked 136 frames in 13.6 s, one per 5.4 s; the 76 subtitle cues point at 55 of them and 24 cues span a cut. Contact sheet in the artefact. | `experiments/2026-10-07-P-0071` | 4 min |
 | 2026-10-07 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | **broken** | As shipped it fails twice on this Mac: YouTube download 403, and the local route crashes because faster-whisper 1.2.1 needs PyAV 16 or older. Pinned, a 66 s known-text clip took 83 s with word error 0.109; my whisper-cli took 12 s but dropped half the words (error 0.537), so add a completeness check to my step. | `experiments/2026-10-07-P-0068` | 8 min |
