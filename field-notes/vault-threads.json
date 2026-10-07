@@ -12,8 +12,88 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 140,
+  "count": 148,
   "threads": [
+    {
+      "date": "2026-10-07",
+      "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Finviz free tier: screener, heat maps, news, insider filings, earnings, 1 minute delayed; Elite 39.50 a month for real-time, charts, alerts, export",
+      "note": "US markets only",
+      "where": "TRITON-CORE/Research/links/2026-10-07-finviz.md",
+      "url": "https://finviz.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Paying for Finviz Elite at Luke's pot size",
+      "note": "The 21 Sep TradingView verdict applies, eyes not edge, a certain monthly cost against an uncertain edge",
+      "where": "TRITON-CORE/Research/links/2026-10-07-finviz.md",
+      "url": "https://finviz.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Insider cluster-buy signal from the free Form 4 filings page as a paper desk",
+      "note": "Documented small positive drift, free daily data, nobody in the vault has tested it; Proteus material",
+      "where": "TRITON-CORE/Research/links/2026-10-07-finviz.md",
+      "url": "https://finviz.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "A weekly sector-heat line beside the eToro demo copy log so leader moves read against the market",
+      "note": "Cost-free, one line, agent job if Luke wants it",
+      "where": "TRITON-CORE/Research/links/2026-10-07-finviz.md",
+      "url": "https://finviz.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Free impact-rated economic calendar with a public weekly JSON feed, forums and news, broker-ad funded, no paid tier",
+      "note": "83 events this week, 5 high impact, read 2026-10-07",
+      "where": "TRITON-CORE/Research/links/2026-10-07-forexfactory.md",
+      "url": "https://www.forexfactory.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window around high-impact USD events, scored on the paper record first",
+      "note": "Free feed, agent work on WF-0313, nothing live",
+      "where": "TRITON-CORE/Research/links/2026-10-07-forexfactory.md",
+      "url": "https://www.forexfactory.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "The week's high-impact events as a context line beside the eToro demo copy log, paired with the Finviz sector line",
+      "note": "Cost-free, one line a week",
+      "where": "TRITON-CORE/Research/links/2026-10-07-forexfactory.md",
+      "url": "https://www.forexfactory.com/"
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "The forums as a secondary source for broker and prop-firm reputation",
+      "note": "Already cited in the 2026 trading groups ranking",
+      "where": "TRITON-CORE/Research/links/2026-10-07-forexfactory.md",
+      "url": "https://www.forexfactory.com/"
+    },
     {
       "date": "2026-10-06",
       "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
@@ -265,7 +345,7 @@
       "kind": "service",
       "status": "open",
       "theme": "replication gap measured on demo",
-      "note": "proposed, waits on a demo key",
+      "note": "live since 2026-10-04: ten demo copies at 330 dollars each, daily log at 22:15 in ETORO-DEMO-COPY-LOG.md, decision about 2026-11-04 (note updated 2026-10-07 by Proteus on Luke's word)",
       "where": "TRITON-CORE/Ventures/Trading/ETORO-DEMO-COPY-TEST-2026-10-04.md",
       "url": "https://api-portal.etoro.com/changelog"
     },
@@ -1352,8 +1432,28 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 28,
+  "links_count": 30,
   "links": [
+    {
+      "date": "2026-10-07",
+      "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-07-finviz.md",
+      "url": "https://finviz.com/",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
+    {
+      "date": "2026-10-07",
+      "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-07-forexfactory.md",
+      "url": "https://www.forexfactory.com/",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-06",
       "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",

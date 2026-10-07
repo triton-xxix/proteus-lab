@@ -387,6 +387,12 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-05, harvested: 13 judged, 8 kept (H-0131 to H-0143), 2 queued as probes (P-0063, P-0064). Register: `field-notes/HARVEST.md`.
 - 2026-10-06, harvested: 14 judged, 10 kept (H-0144 to H-0157), 4 queued as probes (P-0065, P-0066, P-0067, P-0068). Register: `field-notes/HARVEST.md`.
 - 2026-10-07, harvested: 14 judged, 8 kept (H-0158 to H-0171), 3 queued as probes (P-0092, P-0093, P-0094). Register: `field-notes/HARVEST.md`.
+- 2026-10-07, read: MintEval (arXiv 2610.03080, LLM trading-strategy code checked bar by bar against a
+  reference: Opus 5.5 ActionMatch 0.889, exact 0.575, 79 pct of spec-correct code diverges on over a tenth
+  of bars); Queuingtheorydotcom/11SquaresFormalized (Lean 4 proof, 11 unit squares, side about 3.877);
+  docker/docker-agent (YAML agent runner as a Docker CLI plugin, Apache 2, isolation unstated);
+  Claude Haiku 5.5 announcement (7 Oct, $0.10/$0.50 per million short-prompt in/out); SynthID Detector
+  (synthid.com, public upload, finds only SynthID watermarks). Read-it W41. None installed or run.
 
 ## Rule
 
