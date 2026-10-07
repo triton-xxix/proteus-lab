@@ -1,0 +1,464 @@
+{
+ "candidates": [
+  "rsi5_simple",
+  "rsi5_triple",
+  "wr7",
+  "stoch",
+  "ibs"
+ ],
+ "oos_years": [
+  2012,
+  2026
+ ],
+ "n_perm": 1000,
+ "n_random": 10000,
+ "markets": {
+  "SPY": {
+   "p0083_in_sample": {
+    "simple_close": 0.029,
+    "simple_next_open": 0.041,
+    "triple_close": 0.019,
+    "triple_next_open": 0.0519
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.366,
+    "p": 0.0849,
+    "perm_median_pf": 1.131,
+    "picks": {
+     "2012": "rsi5_triple",
+     "2013": "rsi5_triple",
+     "2014": "rsi5_triple",
+     "2015": "rsi5_triple",
+     "2016": "rsi5_triple",
+     "2017": "rsi5_triple",
+     "2018": "rsi5_triple",
+     "2019": "rsi5_triple",
+     "2020": "rsi5_triple",
+     "2021": "rsi5_triple",
+     "2022": "rsi5_triple",
+     "2023": "rsi5_triple",
+     "2024": "rsi5_triple",
+     "2025": "rsi5_triple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.3724
+   },
+   "random_entry": {
+    "real_trades": 112,
+    "real_mean_pct": 0.633,
+    "random_mean_median_pct": 0.185,
+    "random_mean_95th_pct": 0.35,
+    "p": 0.0001
+   },
+   "book_stats_2009_on": {
+    "trades": 112,
+    "win_rate": 75.0,
+    "avg_trade_pct": 0.63,
+    "trade_pf": 2.39,
+    "growth_x": 1.99,
+    "cagr_pct": 3.94,
+    "max_dd_pct": 14.73,
+    "exposure_pct": 15.2,
+    "bar_pf": 1.271
+   }
+  },
+  "QQQ": {
+   "p0083_in_sample": {
+    "simple_close": 0.0919,
+    "simple_next_open": 0.0879,
+    "triple_close": 0.0569,
+    "triple_next_open": 0.1209
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.322,
+    "p": 0.1319,
+    "perm_median_pf": 1.162,
+    "picks": {
+     "2012": "wr7",
+     "2013": "rsi5_simple",
+     "2014": "rsi5_simple",
+     "2015": "rsi5_simple",
+     "2016": "rsi5_simple",
+     "2017": "rsi5_simple",
+     "2018": "rsi5_simple",
+     "2019": "rsi5_simple",
+     "2020": "rsi5_simple",
+     "2021": "rsi5_simple",
+     "2022": "rsi5_simple",
+     "2023": "rsi5_simple",
+     "2024": "rsi5_simple",
+     "2025": "rsi5_simple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.8605
+   },
+   "random_entry": {
+    "real_trades": 129,
+    "real_mean_pct": 0.863,
+    "random_mean_median_pct": 0.276,
+    "random_mean_95th_pct": 0.468,
+    "p": 0.0001
+   },
+   "book_stats_2009_on": {
+    "trades": 129,
+    "win_rate": 81.4,
+    "avg_trade_pct": 0.86,
+    "trade_pf": 3.03,
+    "growth_x": 2.95,
+    "cagr_pct": 6.29,
+    "max_dd_pct": 12.24,
+    "exposure_pct": 17.1,
+    "bar_pf": 1.316
+   }
+  },
+  "DIA": {
+   "p0083_in_sample": {
+    "simple_close": 0.045,
+    "simple_next_open": 0.0549,
+    "triple_close": 0.2717,
+    "triple_next_open": 0.2987
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.259,
+    "p": 0.1638,
+    "perm_median_pf": 1.115,
+    "picks": {
+     "2012": "rsi5_simple",
+     "2013": "rsi5_simple",
+     "2014": "rsi5_simple",
+     "2015": "rsi5_simple",
+     "2016": "rsi5_simple",
+     "2017": "rsi5_simple",
+     "2018": "rsi5_simple",
+     "2019": "rsi5_simple",
+     "2020": "rsi5_simple",
+     "2021": "rsi5_simple",
+     "2022": "rsi5_simple",
+     "2023": "rsi5_simple",
+     "2024": "rsi5_simple",
+     "2025": "rsi5_simple",
+     "2026": "rsi5_simple"
+    },
+    "oos_total_log_return": 0.5331
+   },
+   "random_entry": {
+    "real_trades": 120,
+    "real_mean_pct": 0.54,
+    "random_mean_median_pct": 0.158,
+    "random_mean_95th_pct": 0.313,
+    "p": 0.0002
+   },
+   "book_stats_2009_on": {
+    "trades": 120,
+    "win_rate": 75.0,
+    "avg_trade_pct": 0.54,
+    "trade_pf": 2.34,
+    "growth_x": 1.88,
+    "cagr_pct": 3.61,
+    "max_dd_pct": 12.99,
+    "exposure_pct": 16.6,
+    "bar_pf": 1.257
+   }
+  },
+  "IWM": {
+   "p0083_in_sample": {
+    "simple_close": 0.3437,
+    "simple_next_open": 0.2388,
+    "triple_close": 0.046,
+    "triple_next_open": 0.037
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.579,
+    "p": 0.001,
+    "perm_median_pf": 1.083,
+    "picks": {
+     "2012": "rsi5_triple",
+     "2013": "rsi5_triple",
+     "2014": "rsi5_triple",
+     "2015": "rsi5_triple",
+     "2016": "rsi5_triple",
+     "2017": "rsi5_triple",
+     "2018": "rsi5_triple",
+     "2019": "rsi5_triple",
+     "2020": "rsi5_triple",
+     "2021": "rsi5_triple",
+     "2022": "rsi5_triple",
+     "2023": "rsi5_triple",
+     "2024": "rsi5_triple",
+     "2025": "rsi5_triple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.5527
+   },
+   "random_entry": {
+    "real_trades": 106,
+    "real_mean_pct": 0.768,
+    "random_mean_median_pct": 0.223,
+    "random_mean_95th_pct": 0.473,
+    "p": 0.0002
+   },
+   "book_stats_2009_on": {
+    "trades": 106,
+    "win_rate": 77.4,
+    "avg_trade_pct": 0.77,
+    "trade_pf": 1.95,
+    "growth_x": 2.04,
+    "cagr_pct": 4.09,
+    "max_dd_pct": 41.58,
+    "exposure_pct": 15.9,
+    "bar_pf": 1.201
+   }
+  },
+  "EFA": {
+   "p0083_in_sample": {
+    "simple_close": 0.0529,
+    "simple_next_open": 0.048,
+    "triple_close": 0.001,
+    "triple_next_open": 0.004
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.466,
+    "p": 0.013,
+    "perm_median_pf": 1.055,
+    "picks": {
+     "2012": "rsi5_triple",
+     "2013": "rsi5_triple",
+     "2014": "rsi5_triple",
+     "2015": "rsi5_triple",
+     "2016": "rsi5_triple",
+     "2017": "rsi5_triple",
+     "2018": "rsi5_triple",
+     "2019": "rsi5_triple",
+     "2020": "rsi5_triple",
+     "2021": "rsi5_triple",
+     "2022": "rsi5_triple",
+     "2023": "rsi5_triple",
+     "2024": "rsi5_triple",
+     "2025": "rsi5_triple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.2487
+   },
+   "random_entry": {
+    "real_trades": 96,
+    "real_mean_pct": 0.642,
+    "random_mean_median_pct": 0.139,
+    "random_mean_95th_pct": 0.357,
+    "p": 0.0002
+   },
+   "book_stats_2009_on": {
+    "trades": 96,
+    "win_rate": 72.9,
+    "avg_trade_pct": 0.64,
+    "trade_pf": 2.42,
+    "growth_x": 1.81,
+    "cagr_pct": 3.41,
+    "max_dd_pct": 12.93,
+    "exposure_pct": 13.9,
+    "bar_pf": 1.259
+   }
+  },
+  "EEM": {
+   "p0083_in_sample": {
+    "simple_close": 0.016,
+    "simple_next_open": 0.0759,
+    "triple_close": 0.0699,
+    "triple_next_open": 0.2687
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.051,
+    "p": 0.5055,
+    "perm_median_pf": 1.053,
+    "picks": {
+     "2012": "rsi5_simple",
+     "2013": "rsi5_triple",
+     "2014": "rsi5_simple",
+     "2015": "rsi5_simple",
+     "2016": "rsi5_simple",
+     "2017": "rsi5_simple",
+     "2018": "rsi5_simple",
+     "2019": "rsi5_simple",
+     "2020": "rsi5_simple",
+     "2021": "rsi5_simple",
+     "2022": "rsi5_simple",
+     "2023": "rsi5_simple",
+     "2024": "rsi5_simple",
+     "2025": "rsi5_simple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.1104
+   },
+   "random_entry": {
+    "real_trades": 97,
+    "real_mean_pct": 0.603,
+    "random_mean_median_pct": 0.166,
+    "random_mean_95th_pct": 0.422,
+    "p": 0.002
+   },
+   "book_stats_2009_on": {
+    "trades": 97,
+    "win_rate": 74.2,
+    "avg_trade_pct": 0.6,
+    "trade_pf": 1.95,
+    "growth_x": 1.74,
+    "cagr_pct": 3.16,
+    "max_dd_pct": 22.18,
+    "exposure_pct": 14.2,
+    "bar_pf": 1.191
+   }
+  },
+  "EWU": {
+   "p0083_in_sample": {
+    "simple_close": 0.039,
+    "simple_next_open": 0.1159,
+    "triple_close": 0.001,
+    "triple_next_open": 0.002
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.48,
+    "p": 0.01,
+    "perm_median_pf": 1.036,
+    "picks": {
+     "2012": "rsi5_triple",
+     "2013": "rsi5_triple",
+     "2014": "rsi5_triple",
+     "2015": "rsi5_triple",
+     "2016": "rsi5_triple",
+     "2017": "rsi5_triple",
+     "2018": "rsi5_triple",
+     "2019": "rsi5_triple",
+     "2020": "rsi5_triple",
+     "2021": "rsi5_triple",
+     "2022": "rsi5_triple",
+     "2023": "rsi5_triple",
+     "2024": "rsi5_triple",
+     "2025": "rsi5_triple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.2969
+   },
+   "random_entry": {
+    "real_trades": 92,
+    "real_mean_pct": 0.518,
+    "random_mean_median_pct": 0.105,
+    "random_mean_95th_pct": 0.352,
+    "p": 0.0028
+   },
+   "book_stats_2009_on": {
+    "trades": 92,
+    "win_rate": 70.7,
+    "avg_trade_pct": 0.52,
+    "trade_pf": 2.09,
+    "growth_x": 1.58,
+    "cagr_pct": 2.61,
+    "max_dd_pct": 17.44,
+    "exposure_pct": 13.7,
+    "bar_pf": 1.203
+   }
+  },
+  "EWJ": {
+   "p0083_in_sample": {
+    "simple_close": 0.3756,
+    "simple_next_open": 0.5694,
+    "triple_close": 0.4436,
+    "triple_next_open": 0.6843
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 0.982,
+    "p": 0.7742,
+    "perm_median_pf": 1.049,
+    "picks": {
+     "2012": "rsi5_triple",
+     "2013": "rsi5_triple",
+     "2014": "rsi5_triple",
+     "2015": "rsi5_triple",
+     "2016": "rsi5_triple",
+     "2017": "rsi5_triple",
+     "2018": "rsi5_triple",
+     "2019": "rsi5_triple",
+     "2020": "rsi5_triple",
+     "2021": "ibs",
+     "2022": "ibs",
+     "2023": "ibs",
+     "2024": "rsi5_simple",
+     "2025": "rsi5_simple",
+     "2026": "rsi5_simple"
+    },
+    "oos_total_log_return": -0.0524
+   },
+   "random_entry": {
+    "real_trades": 90,
+    "real_mean_pct": 0.318,
+    "random_mean_median_pct": 0.132,
+    "random_mean_95th_pct": 0.381,
+    "p": 0.1076
+   },
+   "book_stats_2009_on": {
+    "trades": 90,
+    "win_rate": 71.1,
+    "avg_trade_pct": 0.32,
+    "trade_pf": 1.51,
+    "growth_x": 1.29,
+    "cagr_pct": 1.45,
+    "max_dd_pct": 25.96,
+    "exposure_pct": 13.1,
+    "bar_pf": 1.093
+   }
+  },
+  "EWG": {
+   "p0083_in_sample": {
+    "simple_close": 0.1039,
+    "simple_next_open": 0.0679,
+    "triple_close": 0.003,
+    "triple_next_open": 0.027
+   },
+   "walk_forward": {
+    "real_oos_bar_pf": 1.329,
+    "p": 0.024,
+    "perm_median_pf": 1.04,
+    "picks": {
+     "2012": "rsi5_simple",
+     "2013": "rsi5_simple",
+     "2014": "rsi5_simple",
+     "2015": "rsi5_triple",
+     "2016": "rsi5_triple",
+     "2017": "rsi5_triple",
+     "2018": "rsi5_triple",
+     "2019": "rsi5_triple",
+     "2020": "rsi5_triple",
+     "2021": "rsi5_triple",
+     "2022": "rsi5_triple",
+     "2023": "rsi5_triple",
+     "2024": "rsi5_triple",
+     "2025": "rsi5_triple",
+     "2026": "rsi5_triple"
+    },
+    "oos_total_log_return": 0.3764
+   },
+   "random_entry": {
+    "real_trades": 89,
+    "real_mean_pct": 0.803,
+    "random_mean_median_pct": 0.175,
+    "random_mean_95th_pct": 0.469,
+    "p": 0.0002
+   },
+   "book_stats_2009_on": {
+    "trades": 89,
+    "win_rate": 70.8,
+    "avg_trade_pct": 0.8,
+    "trade_pf": 2.46,
+    "growth_x": 1.99,
+    "cagr_pct": 3.94,
+    "max_dd_pct": 13.71,
+    "exposure_pct": 13.9,
+    "bar_pf": 1.258
+   }
+  }
+ },
+ "summary": {
+  "markets_wf_p_lt_05": 4,
+  "markets_rand_p_lt_05": 8,
+  "markets_p0083_simple_next_open_p_lt_05": "see per market"
+ },
+ "runtime_s": 74
+}

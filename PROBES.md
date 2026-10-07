@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 56 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
+Verdicts so far: 57 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
 
-## Queue (17 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,17 +24,17 @@ Verdicts so far: 56 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
-| P-0089 | Stricter luck test for the systems book's RSI(5) basket: walk-forward permutation (neurotrader888 mcpt walkforward script) and a same-trade random-entry control with 10,000 draws, reported beside the in-sample p-values from P-0083 (TRADING-IDEAS.md frameworks) | field-notes | none |  | 0 | 35 min |
 | P-0090 | Monthly timing models: replicate Antonacci global equities momentum (SPY vs EFA vs AGG, 12-month returns against T-bills) and the Fabian 39-week three-index model, luck-test both and score against 60/40 (TRADING-IDEAS.md A-13 A-12) | field-notes | none |  | 0 | 30 min |
 | P-0092 | Mortiflix: does the free no-Claude `mortiflix demo` run to a playable video on macOS, yes/no? | harvest | none |  | 0 | 25 min |
 | P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | harvest | none |  | 0 | 20 min |
 | P-0094 | Agent.reviews: can the public uv package page be read keylessly, and how many reviews does it show? | harvest | none |  | 0 | 10 min |
 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | desk | none |  | 0 | 25 min |
 
-## Verdicts (74)
+## Verdicts (75)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0089 | Stricter luck test for the systems book's RSI(5) basket: walk-forward permutation (neurotrader888 mcpt walkforward script) and a same-trade random-entry control with 10,000 draws, reported beside the in-sample p-values from P-0083 (TRADING-IDEAS.md frameworks) | **works** | Random-entry control (same trend filter, same RSI(5) above 50 exit, same trade count, 10,000 draws a market): the book's real mean of +0.32 to +0.86 pct a trade beats random timing in 8 of 9 markets at p under 0.003, three to five times the random median; Japan fails (p 0.11). Walk-forward selection among five dip rules, 1,000 shuffles with the selection re-run: OOS bar PF 0.98 to 1.58, 4 of 9 markets under p 0.05 (IWM, EFA, EWU, EWG), EEM and EWJ nowhere. In-sample p flattered by about half. No rule changed. | `experiments/2026-10-07-P-0089` | 5 min, 17 calls, 0 denied |
 | 2026-10-07 | P-0088 | Kaufman efficiency ratio (net change over total path) on the 28 P-0084 ETFs: rank which markets trend, then test whether trading only the trendiest half, chosen on past data only, beats all 28 under the joint permutation test (TRADING-IDEAS.md B-01 B-11) | **not-worth-it** | One-year efficiency ratio ranks HYG, QQQ, SPY, LQD top and FXI, FXC, EWZ, TLT bottom (all about 0.05 to 0.10). Trading only the trailing-two-year trendiest 14 of 28 with P-0084's momentum rule: Sharpe 0.23 against 0.35 for all 28 and 0.36 for the least trendy 14; top minus bottom -0.13 with p 0.77 under the joint shuffle (500). Smoothness last year does not predict momentum profit next year. Side finding: the all-28 baseline re-runs at 0.35, not P-0084's recorded 0.28, on the same data files; unexplained, re-read P-0084 before quoting it. | `experiments/2026-10-07-P-0088` | 2 min, 11 calls, 0 denied |
 | 2026-10-07 | P-0087 | Calendar events on daily SPY since 1993: Fed decision days and the pre-Fed drift (dates from the Fed's own calendar pages), jobs-report Fridays, and the weak-Monday reversal (Monday closes below Friday's low, hold to Friday), each against random days of the same length (TRADING-IDEAS.md C-05 C-06 A-05) | **works** | Fed statement days 2016-26 (85 scheduled, dates from the Fed's pages) show nothing on daily bars: decision day +0.03 pct, the day before +0.09, three-day run-in +0.16, all level with other days (bootstrap p 0.4 to 0.6). Jobs Fridays (first Friday, 405 since 1993) average +0.15 pct against -0.05 for other Fridays, p 0.000. Weak Monday (close below Friday's low, hold to Friday close, 355 cases) +0.71 pct a trade, 66 pct winners, against +0.15 for any Monday, p 0.000; since 2009 +0.69. Claim of 0.6 reconciles. Not separated from a generic down-day dip; queued. | `experiments/2026-10-07-P-0087` | 1 min, 13 calls, 0 denied |
 | 2026-10-07 | P-0086 | Darvas box breakout on SPY (12-day high, 0.75% chase cap, volume filter): replicate Quantified Strategies' 279 trades and profit factor 3.08, then the permutation test and the nine-ETF basket (TRADING-IDEAS.md A-01) | **works** | Trade count replicates (277 to 282 v their 279) but profit factor does not (2.34 to 2.61 v 3.08; first era 1.7 v 2.7) and their 12-day-best sweep does not reproduce (16 days best here). Luck test passes on SPY (p 0.011 full, 0.014 from 2009, volume permuted with the bars) yet random entries with the same exit earn a median +0.25 pct a trade against the real +0.28, so the exit is the edge. Nine ETFs from 2009: SPY alone passes, pooled +0.11 pct, 1 of 9 under p 0.05. Not a book candidate. | `experiments/2026-10-07-P-0086` | 2 min, 21 calls, 0 denied |
