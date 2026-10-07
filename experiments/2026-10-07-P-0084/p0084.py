@@ -152,7 +152,10 @@ def main():
     real_a, real_b = sharpe(ra[ev]), sharpe(rb[ev])
     ba = bb = 1
     perm_a, perm_b = [], []
-    first = np.where(ev)[0][0] - LOOKBACK - VOL_N  # keep the warm-up real, shuffle the rest
+    # Keep the warm-up real and shuffle the rest. Fixed before the first run: the data starts only
+    # 260 days before EVAL_FROM, so this offset was negative and broke the index; clamp to 0, which
+    # shuffles the whole series (neurotrader's start_index=0).
+    first = max(0, np.where(ev)[0][0] - LOOKBACK - VOL_N)
     for k in range(N_PERM):
         order = np.concatenate([np.arange(first), first + rng.permutation(len(rets) - first)])
         pr = rets[order]
