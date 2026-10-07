@@ -33,6 +33,11 @@ interactive pull.
 | P-0089 | A stricter luck test for the systems book: walk-forward permutation and a same-trade random-entry control on the RSI(5) basket | D framework, C framework | The book's backtest has passed the in-sample test only; these are the harder bars |
 | P-0090 | Monthly timing models: Antonacci's global equities momentum and the Fabian 39-week model, replicated and luck-tested against 60/40 | A-13, A-12 | Complete rules, published records, one decision a month |
 
+**Results so far.** P-0085 (7 Oct): their numbers replicated 5 for 5. The family is mostly the
+RSI(5) trade again (75 to 97% overlap once the 200-day filter is added). The two "famous rules"
+fail the luck test. IBS is the exception: its trades with no RSI(5) trade open average +0.51%.
+The tradable version is queued as P-0091.
+
 ## Methods worth adopting (no probe needed, used from now on)
 
 - **Same-trade random control** (Algovibes): run the identical trade on random days or entries many
