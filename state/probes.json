@@ -1,5 +1,5 @@
 {
- "next_id": 84,
+ "next_id": 85,
  "items": [
   {
    "id": "P-0001",
@@ -1824,6 +1824,26 @@
     "systems/RULES.md"
    ],
    "minutes": 15,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0084",
+   "title": "Trend following the way the funds run it: one portfolio across 20+ markets (index, bond, gold, oil, currency and commodity ETFs), volatility-sized positions, a 100 to 250 day breakout or moving-average signal, scored against holding a 60/40 portfolio and with the permutation test on the whole portfolio, not one market at a time",
+   "source": "field-notes",
+   "needs": "",
+   "after": "",
+   "est_minutes": 45,
+   "added": "2026-10-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
    "calls": null,
    "denied": [],
    "luke": false

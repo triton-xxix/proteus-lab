@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 51 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (11 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,7 @@ Verdicts so far: 51 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
+| P-0084 | Trend following the way the funds run it: one portfolio across 20+ markets (index, bond, gold, oil, currency and commodity ETFs), volatility-sized positions, a 100 to 250 day breakout or moving-average signal, scored against holding a 60/40 portfolio and with the permutation test on the whole portfolio, not one market at a time | field-notes | none |  | 0 | 45 min |
 
 ## Verdicts (68)
 
