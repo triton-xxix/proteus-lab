@@ -276,13 +276,28 @@
   {
    "id": "S-18",
    "track": 1,
-   "title": "Agent J 7-Day Challenge, Days 3-7 (text of Days 3-5; Days 6-7 are video only)",
+   "title": "Agent J 7-Day Challenge, Days 3-5 (text) and Day 7 (vibe-coded app, localhost to deployment)",
    "model": "sonnet",
    "status": "queued",
    "files": [
-    "field-notes/skool/agentj-7-day-challenge-days3-7.md"
+    "field-notes/skool/agentj-7-day-challenge-days3-7.md",
+    "field-notes/skool/transcripts/agentj-day7-vibe-coded-app.txt"
    ],
-   "why": "Second half of S-06. Drip finished; pulled 7 Oct. Days 6-7 are four Skool-hosted videos (3 h 59 min), not transcribed: read the text and judge from titles.",
+   "why": "Second half of S-06. Drip finished; pulled 7 Oct. Day 7 transcript is Mux auto-captions (64 min). Day 6 is S-19.",
+   "tries": 0
+  },
+  {
+   "id": "S-19",
+   "track": 1,
+   "title": "Agent J Day 6: newsletter summarizer, base layer, multi-sender categorisation, weekly digest to Slack",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/agentj-day6-newsletter-1-base-layer.txt",
+    "field-notes/skool/transcripts/agentj-day6-newsletter-2-multi-sender.txt",
+    "field-notes/skool/transcripts/agentj-day6-newsletter-3-weekly-digest-slack.txt"
+   ],
+   "why": "One build over three recorded sessions (2 h 55 min, Mux auto-captions, conversational). Set against my own keyless pullers and digest step.",
    "tries": 0
   }
  ]
