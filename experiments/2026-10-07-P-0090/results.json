@@ -1,0 +1,140 @@
+{
+ "gem": {
+  "from": "2008-07-31",
+  "to": "2026-10-31",
+  "gem": {
+   "cagr_pct": 8.54,
+   "vol_pct": 12.53,
+   "sharpe": 0.719,
+   "max_dd_pct": 21.11,
+   "growth_x": 4.49,
+   "periods": 220
+  },
+  "spy": {
+   "cagr_pct": 12.37,
+   "vol_pct": 15.51,
+   "sharpe": 0.833,
+   "max_dd_pct": 41.8,
+   "growth_x": 8.48,
+   "periods": 220
+  },
+  "sixty_forty": {
+   "cagr_pct": 8.72,
+   "vol_pct": 9.61,
+   "sharpe": 0.921,
+   "max_dd_pct": 25.06,
+   "growth_x": 4.63,
+   "periods": 220
+  },
+  "switches_per_year": 1.85,
+  "months_in": {
+   "SPY": 144,
+   "EFA": 39,
+   "AGG": 37
+  },
+  "since_2010": {
+   "gem": {
+    "cagr_pct": 8.39,
+    "vol_pct": 12.9,
+    "sharpe": 0.691,
+    "max_dd_pct": 21.11,
+    "growth_x": 3.88,
+    "periods": 202
+   },
+   "spy": {
+    "cagr_pct": 14.23,
+    "vol_pct": 14.31,
+    "sharpe": 1.006,
+    "max_dd_pct": 23.93,
+    "growth_x": 9.39,
+    "periods": 202
+   },
+   "sixty_forty": {
+    "cagr_pct": 9.66,
+    "vol_pct": 8.84,
+    "sharpe": 1.091,
+    "max_dd_pct": 20.51,
+    "growth_x": 4.72,
+    "periods": 202
+   }
+  },
+  "spy_down_years": {
+   "2008": {
+    "spy": -28.5,
+    "gem": 6.7
+   },
+   "2018": {
+    "spy": -4.6,
+    "gem": -7.6
+   },
+   "2022": {
+    "spy": -18.2,
+    "gem": -16.9
+   }
+  },
+  "mcpt": {
+   "n": 1000,
+   "real_sharpe": 0.721,
+   "p": 0.1319,
+   "perm_median": 0.561,
+   "perm_95th": 0.804
+  }
+ },
+ "fabian": {
+  "from": "1993-10-29",
+  "to": "2026-10-09",
+  "fabian": {
+   "cagr_pct": 7.62,
+   "vol_pct": 10.56,
+   "sharpe": 0.748,
+   "max_dd_pct": 25.36,
+   "growth_x": 11.34,
+   "periods": 1720
+  },
+  "spy": {
+   "cagr_pct": 10.85,
+   "vol_pct": 17.13,
+   "sharpe": 0.688,
+   "max_dd_pct": 54.61,
+   "growth_x": 30.14,
+   "periods": 1720
+  },
+  "weeks_in_market_pct": 66.2,
+  "round_trips": 44,
+  "since_ief_2002": {
+   "fabian": {
+    "cagr_pct": 7.12,
+    "vol_pct": 10.46,
+    "sharpe": 0.71,
+    "max_dd_pct": 19.43,
+    "growth_x": 5.31,
+    "periods": 1263
+   },
+   "spy": {
+    "cagr_pct": 11.52,
+    "vol_pct": 17.18,
+    "sharpe": 0.722,
+    "max_dd_pct": 54.61,
+    "growth_x": 14.14,
+    "periods": 1263
+   },
+   "sixty_forty": {
+    "cagr_pct": 8.65,
+    "vol_pct": 10.05,
+    "sharpe": 0.877,
+    "max_dd_pct": 31.38,
+    "growth_x": 7.5,
+    "periods": 1263
+   },
+   "from": "2002-08-02"
+  },
+  "mcpt": {
+   "n": 1000,
+   "real_sharpe": 0.749,
+   "p": 0.041,
+   "perm_median": 0.526,
+   "perm_95th": 0.73
+  }
+ },
+ "runtime_s": 55
+}
