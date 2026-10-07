@@ -1,5 +1,5 @@
 {
- "next_id": 96,
+ "next_id": 97,
  "items": [
   {
    "id": "P-0001",
@@ -2087,6 +2087,28 @@
    "verdict_at": null,
    "note": "",
    "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0096",
+   "title": "Grinder round-2 replay: wire E01-E06 and M01-M09 into harness/replay.py and score them on every gate-passer snapshot since 30 Sep 12:00Z with the mentions rows joined, against the pre-registered bar in VARIANTS-2.md",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 40,
+   "added": "2026-10-08",
+   "status": "done",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-08T00:59:34+0100",
+   "note": "Replay of E01-E06 and M01-M09 on 150 gate-passers (77 since 30 Sep), mentions joined: nothing clears the item-3 bar (V01 plus 59), which is the wrong shape for a filter. Eighteen of the twenty rugs since 30 Sep carry at least one of three pre-entry markers: rugcheck names a risk (13 rugs in 17), price up in the hour before the snapshot (15 in 46), no Telegram mention (9 in 14); zero markers 29 rows +0.8 a position with 2 rugs, three markers 9 rows -79.6 with 7. X silence did not hold up (quiet tokens no worse). Clean rows are not profitable on their own; the live top-4 includes marked tokens that doubled first. R01 shadow book pre-registered in VARIANTS-3.md, DUE.md D-007 and D-008.",
+   "artefacts": [
+    "experiments/2026-10-08-P-0096"
+   ],
    "minutes": null,
    "calls": null,
    "denied": [],
