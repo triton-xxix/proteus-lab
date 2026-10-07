@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 52 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (11 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,12 @@ Verdicts so far: 52 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
+| P-0085 | Dip-buying family on SPY and the nine-ETF basket: Williams %R(7) below -95, slow stochastic (7,3) below 25, IBS, SPY down 5% in 5 days, three lower closes; each luck-tested, plus the share of trade days each has in common with the RSI(5) book, to see whether these are separate edges or one trade (TRADING-IDEAS.md A-03 A-04 A-16 A-22 A-24) | field-notes | none |  | 0 | 40 min |
+| P-0086 | Darvas box breakout on SPY (12-day high, 0.75% chase cap, volume filter): replicate Quantified Strategies' 279 trades and profit factor 3.08, then the permutation test and the nine-ETF basket (TRADING-IDEAS.md A-01) | field-notes | none |  | 0 | 30 min |
+| P-0087 | Calendar events on daily SPY since 1993: Fed decision days and the pre-Fed drift (dates from the Fed's own calendar pages), jobs-report Fridays, and the weak-Monday reversal (Monday closes below Friday's low, hold to Friday), each against random days of the same length (TRADING-IDEAS.md C-05 C-06 A-05) | field-notes | none |  | 0 | 40 min |
+| P-0088 | Kaufman efficiency ratio (net change over total path) on the 28 P-0084 ETFs: rank which markets trend, then test whether trading only the trendiest half, chosen on past data only, beats all 28 under the joint permutation test (TRADING-IDEAS.md B-01 B-11) | field-notes | none |  | 0 | 40 min |
+| P-0089 | Stricter luck test for the systems book's RSI(5) basket: walk-forward permutation (neurotrader888 mcpt walkforward script) and a same-trade random-entry control with 10,000 draws, reported beside the in-sample p-values from P-0083 (TRADING-IDEAS.md frameworks) | field-notes | none |  | 0 | 35 min |
+| P-0090 | Monthly timing models: replicate Antonacci global equities momentum (SPY vs EFA vs AGG, 12-month returns against T-bills) and the Fabian 39-week three-index model, luck-test both and score against 60/40 (TRADING-IDEAS.md A-13 A-12) | field-notes | none |  | 0 | 30 min |
 
 ## Verdicts (69)
 
