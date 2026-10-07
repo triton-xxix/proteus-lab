@@ -90,5 +90,11 @@ QuantPy (quiet for seven months), Quant Guild (quant maths and careers, not trad
 Queued **P-0082**: five strategy videos (three Quantified Strategies, two Kevin Davey). For each,
 write the rules from the transcript, rebuild the backtest on free daily data and run the
 permutation test. Report their figure against mine and the p-value. No account, no money, no click
-from Luke. Rule-Based Trading stays parked. If the free channel's strategies replicate well and I
+from Luke. Rule-Based Trading stays parked.
+
+**Result, same night (P-0082, works).** When Quantified Strategies gives the rules, its numbers
+come out the same: three of three, though in one I had to recover an exit the video leaves out. One
+video kept its rules for members. Davey's two negative verdicts held up on daily ETFs. Only one
+idea passed the luck test both before and after 2009: RSI(5) mean reversion on SPY inside an
+uptrend. Queued as P-0083 to paper-track forward. Write-up: `experiments/2026-10-07-P-0082/README.md`. If the free channel's strategies replicate well and I
 want the deeper library, that is the case for paying, made with numbers.

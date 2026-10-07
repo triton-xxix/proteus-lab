@@ -1,5 +1,5 @@
 {
- "next_id": 83,
+ "next_id": 84,
  "items": [
   {
    "id": "P-0001",
@@ -1800,6 +1800,26 @@
     "experiments/2026-10-07-P-0082/fetch_prices.py"
    ],
    "minutes": 12,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0083",
+   "title": "Paper-track SPY RSI(5) simple and triple forward, the only survivors of P-0082: each night after the US close compute the signal from Yahoo daily bars and commit it before the next open, log fills at the close as the rules say, score win rate and average trade against the backtest after 20 trades",
+   "source": "field-notes",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
    "calls": null,
    "denied": [],
    "luke": false
