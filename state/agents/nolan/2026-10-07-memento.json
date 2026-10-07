@@ -1,0 +1,227 @@
+{
+  "slug": "memento",
+  "title": "Memento",
+  "year": 2000,
+  "one_line": "A man who cannot make new memories hunts his wife's killer, and the film makes you share his confusion by running its story backwards.",
+  "facts": {
+    "release": {
+      "value": "2000-09-05 (Venice Film Festival premiere); 2001-03-16 (United States)",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    "runtime_min": {
+      "value": 113,
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    "writers": {
+      "value": ["Christopher Nolan (screenplay)", "Jonathan Nolan (short story \"Memento Mori\")"],
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    "dp": {
+      "value": "Wally Pfister",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    "editor": {
+      "value": "Dody Dorn",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    "composer": {
+      "value": "David Julyan",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    "budget_usd": {
+      "value": 9000000,
+      "note": "Box Office Mojo lists $9m; Wikipedia's infobox gives a range of $5-9m; one search snippet (unfetched page) said $4.5m. Sources disagree.",
+      "source": "https://www.boxofficemojo.com/title/tt0209144/"
+    },
+    "gross_usd": {
+      "value": 43262033,
+      "as_of": "2026-10-07",
+      "source": "https://www.boxofficemojo.com/title/tt0209144/"
+    },
+    "cast_top5": {
+      "value": [
+        { "name": "Guy Pearce", "role": "Leonard Shelby" },
+        { "name": "Carrie-Anne Moss", "role": "Natalie" },
+        { "name": "Joe Pantoliano", "role": "John Edward \"Teddy\" Gammell" },
+        { "name": "Mark Boone Junior", "role": "Burt, the motel clerk" }
+      ],
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    }
+  },
+  "time_structure": {
+    "kind": "interleaved-strands",
+    "summary": "Two strands are cut together. Colour scenes run in reverse order, each one starting where the previous colour scene ended, so the audience learns effects before causes. Black-and-white scenes run forwards, and the two strands meet when a Polaroid develops and the picture turns from black and white to colour.",
+    "sketch": {
+      "nesting": "interleaved",
+      "threads": [
+        {
+          "id": "a",
+          "label": "Colour sequences (the hunt, told in reverse blocks)",
+          "direction": "backward",
+          "level": 0,
+          "rate": 1,
+          "span": [0, 1],
+          "duration_label": "about two days of story, shown last scene first",
+          "style": "colour"
+        },
+        {
+          "id": "b",
+          "label": "Black-and-white sequences (Leonard in a motel room, told forwards)",
+          "direction": "forward",
+          "level": 0,
+          "rate": 1,
+          "span": [0, 0.95],
+          "duration_label": "one night and the next day, unverified",
+          "style": "mono"
+        }
+      ],
+      "joins": [
+        {
+          "from": "b",
+          "to": "a",
+          "kind": "converge",
+          "at": 0.95,
+          "label": "A Polaroid develops and black and white becomes colour"
+        }
+      ]
+    },
+    "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+  },
+  "themes": [
+    {
+      "id": "memory",
+      "name": "Memory",
+      "scene": "Leonard cannot hold onto anything new, so he relies on Polaroids, notes and tattoos as his memory. The film keeps showing that these records are only as trustworthy as whoever made them, and that he is the one who made them.",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)",
+      "new": false
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "scene": "The opening scene plays a Polaroid un-developing, a gunshot undone and a body restored, and we then watch the story move away from its own ending. The audience is put in Leonard's position of arriving mid-scene with no idea how it got there.",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)",
+      "new": false
+    },
+    {
+      "id": "deception",
+      "name": "Deception",
+      "scene": "Near the end Teddy tells Leonard what has really happened. Leonard decides not to keep that knowledge, and writes himself a note that sends his future self after Teddy. He deceives himself on purpose.",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)",
+      "new": false
+    },
+    {
+      "id": "grief",
+      "name": "Grief",
+      "scene": "Leonard's whole purpose is built on the death of his wife. Because he cannot move forward, his mourning has no end and his revenge can be restarted again and again, without the hunt ever concluding.",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)",
+      "new": false
+    },
+    {
+      "id": "guilt",
+      "name": "Guilt",
+      "scene": "The film slowly suggests Leonard played a part in his wife's death. Choosing to forget that fact and keep hunting someone else is his way of avoiding it.",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)",
+      "new": false
+    }
+  ],
+  "inspirations": [
+    {
+      "claim": "The idea came from Jonathan Nolan during a cross-country road trip in 1996; Christopher took it on as a screenplay while Jonathan wrote the short story \"Memento Mori\", which appeared in Esquire in 2001 and differs from the film.",
+      "who": "Jonathan Nolan",
+      "quote": "",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    {
+      "claim": "Christopher Nolan has pointed to Borges's story \"Funes the Memorious\" as an influence, describing the film as a strange cousin that inverts it, since Funes forgets nothing.",
+      "who": "Nolan",
+      "quote": "",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    {
+      "claim": "Nolan has linked the film's interest in memory to a street fight he saw in Camden as a student. The brothers still disagree about whether Jonathan was there, which showed Nolan how memory differs from what we assume.",
+      "who": "Nolan",
+      "quote": "Our memories don't work the way we think they work.",
+      "source": "https://faroutmagazine.co.uk/camden-street-brawl-that-inspired-memento/"
+    },
+    {
+      "claim": "Nolan drafted the script in order, then rearranged it into the screen structure to check the logic held. The Film Stage lists a documentary in which the cast and Nolan also cite Double Indemnity.",
+      "who": "Nolan",
+      "quote": "",
+      "source": "https://thefilmstage.com/spend-an-hour-exploring-memento-with-christopher-nolan"
+    }
+  ],
+  "collaborators": [
+    { "name": "Wally Pfister", "role": "Cinematographer", "also": ["insomnia", "batman-begins", "the-prestige", "the-dark-knight", "inception", "the-dark-knight-rises"] },
+    { "name": "Dody Dorn", "role": "Editor", "also": ["insomnia"] },
+    { "name": "David Julyan", "role": "Composer", "also": ["following", "insomnia", "the-prestige"] },
+    { "name": "Jonathan Nolan", "role": "Author of the source short story", "also": ["the-prestige", "the-dark-knight", "the-dark-knight-rises", "interstellar"] },
+    { "name": "Mark Boone Junior", "role": "Actor (Burt)", "also": ["batman-begins", "the-dark-knight"] }
+  ],
+  "reception": {
+    "at_release": {
+      "metacritic": {
+        "value": 83,
+        "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+      },
+      "rt": {
+        "value": 93,
+        "count": 184,
+        "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+      },
+      "summary": "Critics praised the reversed structure and its link to the main character's condition. It was a small-budget independent hit that grew by word of mouth into a mainstream success and an awards-season contender."
+    },
+    "now": {
+      "letterboxd": {
+        "value": null,
+        "as_of": "2026-10-07",
+        "source": "https://letterboxd.com/film/memento/"
+      },
+      "summary": "It is still regarded as a landmark of puzzle-box storytelling: the screenplay ranks highly in the Writers Guild's 21st-century list and the film was added to the National Film Registry in 2017. The Letterboxd page showed about 58,000 fans but no rating figure in the fetch (unverified)."
+    }
+  },
+  "missed": [
+    {
+      "point": "The black-and-white and colour strands do not just alternate: they meet exactly once, when a developing Polaroid turns the picture from monochrome to colour. That moment is where the film's two timelines join.",
+      "source": "https://en.wikipedia.org/wiki/Memento_(film)"
+    },
+    {
+      "point": "Pearce's voice-over was recorded by Nolan himself, and Nolan edited the film's trailers. The Film Stage also says Nolan's voice appears in the film itself.",
+      "source": "https://thefilmstage.com/spend-an-hour-exploring-memento-with-christopher-nolan"
+    },
+    {
+      "point": "The origin story itself is a memory dispute: Jonathan believes he was present at the Camden fight and Christopher says he was not, which neatly fits the film's subject.",
+      "source": "https://faroutmagazine.co.uk/camden-street-brawl-that-inspired-memento/"
+    }
+  ],
+  "images": [
+    { "url": "https://image.tmdb.org/t/p/original/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg", "caption": "A still from Memento (backdrop, 1920x1080)", "source": "https://www.themoviedb.org/movie/77-memento/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/8pwCb7amg8Tvr9FZZJGt7J4OwLV.jpg", "caption": "A still from Memento (backdrop, 3840x2160)", "source": "https://www.themoviedb.org/movie/77-memento/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/v4u9FnSOpLEjPIAhbKClM45LJoJ.jpg", "caption": "A still from Memento (backdrop, 1920x1080)", "source": "https://www.themoviedb.org/movie/77-memento/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/q2CtXYjp9IlnfBcPktNkBPsuAEO.jpg", "caption": "A still from Memento (backdrop, 1715x965)", "source": "https://www.themoviedb.org/movie/77-memento/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/epS46vDl8yeLDReM1LDFJJLj2yL.jpg", "caption": "A still from Memento (backdrop, 1500x844)", "source": "https://www.themoviedb.org/movie/77-memento/images/backdrops" }
+  ],
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Memento_(film)", "title": "Memento (film), Wikipedia", "fetched": true, "used_for": ["facts.release", "facts.runtime_min", "facts.writers", "facts.dp", "facts.editor", "facts.composer", "facts.cast_top5", "time_structure", "themes", "inspirations", "reception"] },
+    { "url": "https://www.boxofficemojo.com/title/tt0209144/", "title": "Memento, Box Office Mojo", "fetched": true, "used_for": ["facts.budget_usd", "facts.gross_usd"] },
+    { "url": "https://www.themoviedb.org/movie/77-memento/images/backdrops", "title": "Memento backdrops, TMDB", "fetched": true, "used_for": ["images"] },
+    { "url": "https://letterboxd.com/film/memento/", "title": "Memento, Letterboxd", "fetched": true, "used_for": ["reception.now"] },
+    { "url": "https://faroutmagazine.co.uk/camden-street-brawl-that-inspired-memento/", "title": "The Camden street brawl that inspired Memento, Far Out", "fetched": true, "used_for": ["inspirations", "missed"] },
+    { "url": "https://thefilmstage.com/spend-an-hour-exploring-memento-with-christopher-nolan", "title": "Spend an hour exploring Memento with Christopher Nolan, The Film Stage", "fetched": true, "used_for": ["inspirations", "missed"] },
+    { "url": "https://theplaylist.net/guillermo-del-toro-christopher-nolan-talk-memento-remaining-strange-20110209/", "title": "Del Toro and Nolan talk Memento, The Playlist", "fetched": false, "used_for": [] }
+  ],
+  "_child": {
+    "fetches": 9,
+    "searches": 3,
+    "fetch_failures": ["https://theplaylist.net/guillermo-del-toro-christopher-nolan-talk-memento-remaining-strange-20110209/ (HTTP 403)"],
+    "refusals": [],
+    "notes": "Metacritic, Rotten Tomatoes and Letterboxd were not fetched directly; MC 83 and RT 93% (184) are via Wikipedia. Letterboxd rating not returned. Image captions are generic as TMDB listing gave no scene context. Collaborator 'also' lists and the mono strand duration are from memory. The join point 0.95 is an estimate. Theme sources are Wikipedia's general summary and scene descriptions are my own reading.",
+    "unverified": [
+      "reception.now.letterboxd.value",
+      "reception.at_release (via Wikipedia, not primary)",
+      "collaborators[].also lists",
+      "time_structure.sketch durations and join position",
+      "theme scene descriptions (own reading)",
+      "cast_top5 fifth member not obtained"
+    ]
+  }
+}
