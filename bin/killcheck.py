@@ -98,9 +98,9 @@ def systems():
     sys.path.insert(0, str(ROOT / "systems"))
     try:
         import systems as book
-        return book.verdict()
+        return [book.verdict(), book.verdict2()]
     except Exception as e:
-        return f"Systems book: could not judge ({type(e).__name__}: {e})"
+        return [f"Systems book: could not judge ({type(e).__name__}: {e})"]
 
 
 def main():
@@ -109,7 +109,7 @@ def main():
              grad(rows, "Graduation book G2 (liq >= $50k, from 3 Oct 12:00Z)", 50000, G2_FROM)]
     lines += judgement()
     lines.append(exchange())
-    lines.append(systems())
+    lines += systems()
     for l in lines:
         print(l)
     if "--log" in sys.argv:
