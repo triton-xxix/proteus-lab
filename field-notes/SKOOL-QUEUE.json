@@ -257,14 +257,16 @@
    "id": "S-16",
    "track": 4,
    "title": "Inside Agent-J+: 17 previews of the paid room",
-   "model": "haiku",
-   "status": "queued",
+   "model": "sonnet",
+   "status": "read",
    "files": [
     "field-notes/skool/agentj-inside-plus.md"
    ],
    "why": "Evidence for or against ever proposing the paid tier, nothing else. Already local.",
-   "tries": 0,
-   "note": "requeued 2026-10-07: prompts written 6 Oct but no child was spawned; that try does not count"
+   "tries": 1,
+   "assigned": "2026-10-07",
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-07-S-16.md"
   },
   {
    "id": "S-17",
