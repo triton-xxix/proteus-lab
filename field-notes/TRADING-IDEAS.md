@@ -37,6 +37,8 @@ interactive pull.
 RSI(5) trade again (75 to 97% overlap once the 200-day filter is added). The two "famous rules"
 fail the luck test. IBS is the exception: its trades with no RSI(5) trade open average +0.51%.
 The tradable version is queued as P-0091.
+P-0091 (7 Oct): the tradable version passes narrowly (p 0.044 pooled, +0.27% a trade, US markets
+only). The +0.51% was hindsight. Now systems book 2, judged after costs.
 
 ## Methods worth adopting (no probe needed, used from now on)
 
