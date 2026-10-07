@@ -1,5 +1,5 @@
 {
- "next_id": 71,
+ "next_id": 72,
  "items": [
   {
    "id": "P-0001",
@@ -1542,6 +1542,26 @@
    "artefacts": [
     "experiments/2026-10-07-P-0065/REPORT.md"
    ],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0071",
+   "title": "Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
    "minutes": null,
    "calls": null,
    "denied": [],

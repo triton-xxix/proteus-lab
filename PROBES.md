@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 44 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 
-## Queue (6 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@ Verdicts so far: 44 works, 3 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0068 | by2kb: does local faster-whisper turn one short public YouTube video into a Markdown transcript, and at what speed ratio? | harvest | none |  | 0 | 30 min |
 | P-0069 | Pitch: does penaltyblog's Dixon-Coles match mine on the same backtest, and do the Soccermatics and Betfair soccer tutorials name a step my model.py skips | desk | none |  | 0 | 60 min |
+| P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (60)
 

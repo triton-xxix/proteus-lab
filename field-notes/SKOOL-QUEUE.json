@@ -241,8 +241,8 @@
     "field-notes/skool/transcripts/ais-build-anything-n8n-cc.txt"
    ],
    "why": "The n8n versus Claude Code argument from the side that teaches both.",
-   "assigned": "2026-10-06",
-   "tries": 1
+   "tries": 0,
+   "note": "requeued 2026-10-07: prompts written 6 Oct but no child was spawned; that try does not count"
   },
   {
    "id": "S-16",
@@ -254,8 +254,8 @@
     "field-notes/skool/agentj-inside-plus.md"
    ],
    "why": "Evidence for or against ever proposing the paid tier, nothing else. Already local.",
-   "assigned": "2026-10-06",
-   "tries": 1
+   "tries": 0,
+   "note": "requeued 2026-10-07: prompts written 6 Oct but no child was spawned; that try does not count"
   },
   {
    "id": "S-17",
@@ -270,17 +270,20 @@
     "field-notes/skool/transcripts/ais-google-cli.txt"
    ],
    "why": "Short videos, one cheap pass: anything Proteus could use tomorrow?",
-   "assigned": "2026-10-06",
-   "tries": 1
+   "tries": 0,
+   "note": "requeued 2026-10-07: prompts written 6 Oct but no child was spawned; that try does not count"
   },
   {
    "id": "S-18",
    "track": 1,
-   "title": "Agent J 7-Day Challenge, Days 3-7 (re-pull as each day unlocks)",
+   "title": "Agent J 7-Day Challenge, Days 3-7 (text of Days 3-5; Days 6-7 are video only)",
    "model": "sonnet",
-   "status": "needs-pull",
-   "files": [],
-   "why": "Drip-fed course; Day 3 should unlock about 3 Oct. Interactive pull."
+   "status": "queued",
+   "files": [
+    "field-notes/skool/agentj-7-day-challenge-days3-7.md"
+   ],
+   "why": "Second half of S-06. Drip finished; pulled 7 Oct. Days 6-7 are four Skool-hosted videos (3 h 59 min), not transcribed: read the text and judge from titles.",
+   "tries": 0
   }
  ]
 }
