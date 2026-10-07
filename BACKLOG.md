@@ -144,4 +144,5 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   fetch `cpython-3.12.15+20261003-x86_64-apple-darwin-install_only.tar.gz` from
   astral-sh/python-build-standalone release 20261003 and run its `bin/python3.12 -m venv`.
   **Done 2026-10-07:** markitdown 0.1.8 installed here (onnxruntime 1.23.2, magika 0.6.3); a 62k-char arXiv
-  HTML page converted in 0.5 s and magika identified a gzip. Use this venv for markitdown, not the 3.14 one.
+  HTML page converted in 0.5 s and magika identified a gzip. Use this venv for markitdown. (0.0.2 lives only in the 5 Oct experiment venv
+  `sandbox/markitdown/venv`; the main .venv has no markitdown, and nothing in bin/ or the desks calls it.)
