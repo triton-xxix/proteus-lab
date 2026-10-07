@@ -1,5 +1,5 @@
 {
- "next_id": 81,
+ "next_id": 82,
  "items": [
   {
    "id": "P-0001",
@@ -1754,6 +1754,28 @@
    "calls": null,
    "denied": [],
    "luke": true
+  },
+  {
+   "id": "P-0081",
+   "title": "McLaren 720S running costs: a sourced year of road tax, insurance quotes, main-dealer servicing, tyres and fuel at 5,000 miles, added to the 140,000 GBP target",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-07",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-07T01:49:11+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-07T01:50:06+0100",
+   "note": "About 6,100 to 6,850 GBP a year at 5,000 miles: road tax 200 (2017 to 2020 car) or 640, insurance about 2,993 (one published estimate), service 654 to 780 at independents, tyres about 520, fuel 1,735 to 1,910 at 23.2 mpg. First-year target becomes about 146,500.",
+   "artefacts": [
+    "experiments/2026-10-07-P-0081"
+   ],
+   "minutes": 0,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

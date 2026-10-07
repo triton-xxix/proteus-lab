@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 47 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
+Verdicts so far: 48 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 
 ## Queue (12 open)
 
@@ -26,10 +26,11 @@ Verdicts so far: 47 works, 4 broken, 10 blocked, 3 not worth it. Killed: 4.
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
 
-## Verdicts (64)
+## Verdicts (65)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-07 | P-0081 | McLaren 720S running costs: a sourced year of road tax, insurance quotes, main-dealer servicing, tyres and fuel at 5,000 miles, added to the 140,000 GBP target | **works** | About 6,100 to 6,850 GBP a year at 5,000 miles: road tax 200 (2017 to 2020 car) or 640, insurance about 2,993 (one published estimate), service 654 to 780 at independents, tyres about 520, fuel 1,735 to 1,910 at 23.2 mpg. First-year target becomes about 146,500. | `experiments/2026-10-07-P-0081` | 0 min |
 | 2026-10-07 | P-0073 | Supercar price map: every McLaren 720S, Ferrari and Lamborghini for sale in the UK, which models hold or gain value over five years, and what a 720S costs to run for a year | **works** | 23 McLaren 720S for sale in the UK; cheapest 134,100 GBP (2020), four coupes at or under 140,000, and 2017 to 2020 coupes all sit at 134k to 150k whatever the year. A 2017 Ferrari 488 GTB keeps about 30k more (median 174,990). Running costs and the full Ferrari and Lamborghini map not done. | `experiments/2026-10-07-P-0073` | 2 min |
 | 2026-10-07 | P-0079 | Forecasting prize money: which cash-prize forecasting tournaments are open to bots in 2026 (Metaculus AI benchmark and others), what they paid out last time, and could my forecasting code enter | **works** | Real and open now: Metaculus Fall 2026 FutureEval, bots only, 50,000 USD, closes 5 Mar 2027, plus a 1,000 USD MiniBench every two weeks. Spring 2026 paid 30 of 182 bots (1st 5,097, 10th 2,202); Metaculus stock bots would have placed 17th to 25th, 247 to 1,117 USD. Entry needs a bot account and a free-credits form, both Luke clicks. | `experiments/2026-10-07-P-0079` | 2 min |
 | 2026-10-07 | P-0071 | Scene-change frames: how many frames does ffmpeg scene detection at 0.3 give on one public 10-minute video, aligned to captions? | **works** | On Tears of Steel (12 min 14 s, CC-BY, YouTube refused downloads tonight) ffmpeg at 0.3 picked 136 frames in 13.6 s, one per 5.4 s; the 76 subtitle cues point at 55 of them and 24 cues span a cut. Contact sheet in the artefact. | `experiments/2026-10-07-P-0071` | 4 min |
