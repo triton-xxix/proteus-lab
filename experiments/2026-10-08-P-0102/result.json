@@ -1,0 +1,35 @@
+{
+ "candles": 17566,
+ "FOMC": {
+  "events": 8,
+  "baseline_hours": 232,
+  "range_median_ratio": 2.86,
+  "range_mean_ratio": 2.48,
+  "absret_median_ratio": 2.55,
+  "event_range_median_pct": 1.72,
+  "baseline_range_median_pct": 0.603,
+  "share_events_above_baseline_p75": 0.88
+ },
+ "CPI": {
+  "events": 10,
+  "baseline_hours": 232,
+  "range_median_ratio": 1.71,
+  "range_mean_ratio": 1.78,
+  "absret_median_ratio": 2.12,
+  "event_range_median_pct": 1.117,
+  "baseline_range_median_pct": 0.655,
+  "share_events_above_baseline_p75": 0.5
+ },
+ "NFP": {
+  "events": 11,
+  "baseline_hours": 232,
+  "range_median_ratio": 1.91,
+  "range_mean_ratio": 2.06,
+  "absret_median_ratio": 1.98,
+  "event_range_median_pct": 1.253,
+  "baseline_range_median_pct": 0.655,
+  "share_events_above_baseline_p75": 0.73
+ },
+ "pooled_median_ratio_vs_own_slot": 2.3,
+ "pooled_events": 29
+}

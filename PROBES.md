@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 60 works, 4 broken, 11 blocked, 4 not worth it. Killed: 4.
+Verdicts so far: 61 works, 4 broken, 11 blocked, 4 not worth it. Killed: 4.
 
-## Queue (21 open)
+## Queue (20 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -31,14 +31,14 @@ Verdicts so far: 60 works, 4 broken, 11 blocked, 4 not worth it. Killed: 4.
 | P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | harvest | none |  | 0 | 25 min |
 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
-| P-0102 | News filter: is BTC's hour after high-impact USD events 1.5x more volatile than baseline, last 12 months? | vault | none |  | 0 | 30 min |
 | P-0103 | Inducement filter: does one extra sweep after a structure shift beat entering on the shift, on BTCUSDT 5m? | vault | none |  | 0 | 30 min |
 | P-0104 | Five-rule 15m/5m box strategy: does it have positive expectancy after costs on two years of BTCUSDT? | vault | none |  | 0 | 30 min |
 
-## Verdicts (79)
+## Verdicts (80)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-08 | P-0102 | News filter: is BTC's hour after high-impact USD events 1.5x more volatile than baseline, last 12 months? | **works** | Yes: BTC's high-low range in the hour from release was 2.9x its same-slot weekday median for FOMC (8 events), 1.7x for CPI (10) and 1.9x for NFP (11), pooled 2.3x on 29 events, Binance 30m candles Oct 2025 to Oct 2026; small samples, dates from the Fed and BLS pages. | `experiments/2026-10-08-P-0102` | 2 min, 11 calls, 0 denied |
 | 2026-10-08 | P-0101 | Form 4 cluster buys: do 3+ insider open-market buys in 14 days beat SPY by 30 days, on 2025 EDGAR filings? | **blocked** | EDGAR returned 403 and a fair-access block page to automated requests without a declared contact email; the cluster script is written and untested on data. | `experiments/2026-10-08-P-0101` | 1 min, 13 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/experiments/2026-10-08-P-` | | |
 | 2026-10-08 | P-0096 | Grinder round-2 replay: wire E01-E06 and M01-M09 into harness/replay.py and score them on every gate-passer snapshot since 30 Sep 12:00Z with the mentions rows joined, against the pre-registered bar in VARIANTS-2.md | **works** | Replay of E01-E06 and M01-M09 on 150 gate-passers (77 since 30 Sep), mentions joined: nothing clears the item-3 bar (V01 plus 59), which is the wrong shape for a filter. Eighteen of the twenty rugs since 30 Sep carry at least one of three pre-entry markers: rugcheck names a risk (13 rugs in 17), price up in the hour before the snapshot (15 in 46), no Telegram mention (9 in 14); zero markers 29 rows +0.8 a position with 2 rugs, three markers 9 rows -79.6 with 7. X silence did not hold up (quiet tokens no worse). Clean rows are not profitable on their own; the live top-4 includes marked tokens that doubled first. R01 shadow book pre-registered in VARIANTS-3.md, DUE.md D-007 and D-008. | `experiments/2026-10-08-P-0096` | not run |
