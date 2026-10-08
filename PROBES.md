@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 61 works, 4 broken, 11 blocked, 6 not worth it. Killed: 4.
+Verdicts so far: 61 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,7 +24,6 @@ Verdicts so far: 61 works, 4 broken, 11 blocked, 6 not worth it. Killed: 4.
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
-| P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | harvest | none |  | 0 | 20 min |
 | P-0094 | Agent.reviews: can the public uv package page be read keylessly, and how many reviews does it show? | harvest | none |  | 0 | 10 min |
 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | desk | none |  | 0 | 25 min |
 | P-0097 | Knitting pattern PDF viewer that remembers the exact row and repeat count per pattern: one offline HTML file (PDF.js, row highlighter bar, repeat counter, saved per file in localStorage), README, from r/SomebodyMakeThis 8 Oct; check the thread for existing answers first | persona | none |  | 0 | 30 min |
@@ -32,10 +31,11 @@ Verdicts so far: 61 works, 4 broken, 11 blocked, 6 not worth it. Killed: 4.
 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
 
-## Verdicts (82)
+## Verdicts (83)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | **blocked** | Installed 0.5.2 in the sandbox (node-pty has darwin prebuilds); its server binds 127.0.0.1 with a token and only reads ~/.claude, but on macOS it writes config to ~/Library/Application Support and opens a browser, outside my write roots, so I did not start it. | `experiments/2026-10-09-P-0093` | 0 min, 11 calls, 0 denied |
 | 2026-10-08 | P-0104 | Five-rule 15m/5m box strategy: does it have positive expectancy after costs on two years of BTCUSDT? | **not-worth-it** | No: my mechanical reading of the five rules took 3094 BTCUSDT 5m trades over two years, 33% winners at 2R, -0.02R before costs and -0.67R after 0.1% round-trip costs (median stop 0.2% away), the same in both halves. | `experiments/2026-10-08-P-0104` | 7 min, 5 calls, 0 denied |
 | 2026-10-08 | P-0103 | Inducement filter: does one extra sweep after a structure shift beat entering on the shift, on BTCUSDT 5m? | **not-worth-it** | No: on 90 days of BTCUSDT 5m with fixed fractal rules, shift entry made 1128 trades at -0.44R after 0.1% costs, the inducement entry 421 trades at -0.91R; its win rate is higher (37% v 33% at 2R) but its tighter stops make costs eat it. | `experiments/2026-10-08-P-0103` | 1 min, 3 calls, 0 denied |
 | 2026-10-08 | P-0102 | News filter: is BTC's hour after high-impact USD events 1.5x more volatile than baseline, last 12 months? | **works** | Yes: BTC's high-low range in the hour from release was 2.9x its same-slot weekday median for FOMC (8 events), 1.7x for CPI (10) and 1.9x for NFP (11), pooled 2.3x on 29 events, Binance 30m candles Oct 2025 to Oct 2026; small samples, dates from the Fed and BLS pages. | `experiments/2026-10-08-P-0102` | 2 min, 11 calls, 0 denied |
