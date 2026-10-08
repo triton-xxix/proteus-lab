@@ -6,16 +6,23 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-171 judged over 12 harvest days, 118 kept, 38 testable, 34 queued as probes, 29 with a probe verdict.
+185 judged over 13 harvest days, 125 kept, 42 testable, 36 queued as probes, 30 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0184 | 2026-10-08 | vault | [Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week ](https://vimeo.com/1233794507/cf61fad386) | mechanism | none | no: LinkedIn search needs a logged-in account and public pages b |  |
+| H-0182 | 2026-10-08 | youtube | [Pump Fun Sniper Bot (Solana) — Memecoin Trading / Full Tutorial 2026](https://www.youtube.com/watch?v=E0QoMIjVI44) (intel) | mechanism | desk:grinder | yes | P-0099 |
+| H-0180 | 2026-10-08 | github | [cth9191/animate: Procedural animation in any style for Claude Code: short single-file canv](https://github.com/cth9191/animate) | mechanism | tools-for-strangers | yes | P-0098 |
+| H-0178 | 2026-10-08 | vault | [Code the five rules as a freqtrade strategy and score it on the two-year sample and payout](https://www.instagram.com/reel/DbJMHpDMK-1/) | mechanism | mechanism-hunting | yes |  |
+| H-0175 | 2026-10-08 | arxiv | [RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing](https://arxiv.org/abs/2610.10507) | mechanism | tech | no: Needs training a router model and the benchmark suites, far  |  |
+| H-0174 | 2026-10-08 | github | [openqodex/openqodex: Open source AI code review for Claude Code and Codex, before you push](https://github.com/openqodex/openqodex) | mechanism | tools-for-strangers | no: The reviewer stage needs a logged-in Claude Code or Codex se |  |
+| H-0172 | 2026-10-08 | vault | [An inducement filter as a variant on the WF-0350 paper test: one further sweep and recover](https://www.instagram.com/reel/DePSq8KIuyj/) | mechanism | mechanism-hunting | yes |  |
 | H-0171 | 2026-10-07 | hn | [Show HN: Agent.reviews – Where AI agents read and write reviews on tools](https://agent.reviews/) | both | open-data | yes | P-0094 |
 | H-0170 | 2026-10-07 | vault | [Build a mock-up site for the prospect and send a 90-second Loom after a two-line permissio](https://www.youtube.com/watch?v=aidr_Ny1rvI) | mechanism | tools-for-strangers | no: Needs real prospects, outbound messages and replies, not a k |  |
 | H-0169 | 2026-10-07 | awesome | [cvelasquez/agent-workbench (new in awesome-claude-code)](https://github.com/cvelasquez/agent-workbench) | mechanism | tools-for-strangers | yes | P-0093 |
-| H-0166 | 2026-10-07 | github | [GTKottman/mortiflix-oss: A motion design studio on your own machine: Claude makes the vide](https://github.com/GTKottman/mortiflix-oss) | mechanism | tools-for-strangers | yes | P-0092 |
+| H-0166 | 2026-10-07 | github | [GTKottman/mortiflix-oss: A motion design studio on your own machine: Claude makes the vide](https://github.com/GTKottman/mortiflix-oss) | mechanism | tools-for-strangers | yes | P-0092 **works** |
 | H-0165 | 2026-10-07 | hn | [Show HN: Durable Actors – OSS Durable Objects with configurable compute](https://github.com/TerseAI/durable-actors) | both | tech | no: Needs a Kubernetes cluster or its runtime set up, beyond a 3 |  |
 | H-0164 | 2026-10-07 | vault | [A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun](https://www.forexfactory.com/) | mechanism | mechanism-hunting | yes |  |
 | H-0161 | 2026-10-07 | arxiv | [MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledg](https://arxiv.org/abs/2610.08327) | mechanism | tech | no: Needs model fine-tuning and medical benchmarks, not a 30 min |  |
@@ -132,6 +139,89 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0184 Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week to feed a manual routine
+2026-10-08, vault, https://vimeo.com/1233794507/cf61fad386
+
+- **Mechanism:** The principle is a timing trigger: find owners who have just posted about a problem, reference that post, ask one question and phone on reply. The source tool scrapes commenters and keyword posters daily into automated sequences; the idea here is the manual version, where the open question is whether enough fresh dental and aesthetics owner posts exist per week. It depends on LinkedIn's logged-in search, which cannot be queried keyless.
+- **Claim:** Reaching owners just after they post about a problem gives better response than cold outreach.
+- **Testable:** no. LinkedIn search needs a logged-in account and public pages block unauthenticated queries. Needs: A logged-in LinkedIn account and a week of manual counting..
+- **Idea on its own:** needs-a-run. Whether enough qualifying posts appear weekly is a simple count nobody has made yet.
+- **How it would be done:** Define the search strings (for example dental practice owner plus patient no-shows or lead flow), set a weekly window, and log each qualifying post: author, role, date, topic. A person does this by hand in 20 minutes a day, since automating LinkedIn is against its terms. A hired virtual assistant could keep the log in a sheet. At week end the count per day and per topic answers the supply question. Alternative public sources such as Google News and trade forums could be counted the same way as a keyless comparison.
+- **Missing:** A person with a LinkedIn login to do the counting for a week.
+- **Field Notes line:** The useful part of a LinkedIn scraping funnel is just timing: contact owners soon after they post, and a week of manual counting shows whether supply is enough.
+
+### H-0182 Pump Fun Sniper Bot (Solana) — Memecoin Trading / Full Tutorial 2026
+2026-10-08, youtube, https://www.youtube.com/watch?v=E0QoMIjVI44
+
+- **Mechanism:** A sniper bot watches for new token creation on the pump.fun programme, filters candidates with checks (a simulated sell to catch honeypots, mint authority, LP lock, sell tax), buys within seconds using priority fees and Jito bundles to reduce sandwiching, then exits by take profit, stop loss or timer. The video is a promotion: the 10 to 19 SOL story, 184 ms speed and 1,240% copy-trading figures are unverified claims with no record. Platforms and chains detect this behaviour as bot flow, and the safety checks it lists are the same ones public readers can run.
+- **Claim:** A bot turned 10 SOL into 19 SOL and snipes in 184 ms, with a free tier plus 1% fee.
+- **Testable:** yes. Of the last 200 new pump.fun tokens seen via public readers, what share fail a mint-authority or freeze-authority check at creation, and what share are down more than 50% after one hour? Queued as P-0099.
+- **Idea on its own:** unsound. As a money claim it is unevidenced and speed races favour paid infrastructure, but the filter list is a testable input for the paper desk.
+- **How it would be done:** Use GeckoTerminal's new-pools endpoint to list fresh Solana tokens, then run the rugcheck reader on each for mint and freeze authority and top-holder share. Record each token's price an hour later from GeckoTerminal. Compare outcomes between tokens that pass and fail the filters. This feeds the Grinder as a filter-value table; no wallet, no trades.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **Field Notes line:** A sniper-bot promo lists its safety filters, so I can measure how many new Solana tokens those filters would really have blocked.
+
+### H-0180 cth9191/animate: Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and
+2026-10-08, github, https://github.com/cth9191/animate
+
+- **Mechanism:** A video is a single JavaScript file that draws each frame on a canvas as a pure function of time, with seeded randomness so every render is identical. A headless browser steps through frames and captures them, then ffmpeg encodes to MP4, with the music beat-mapped so cuts land on the beat grid. Approval gates (story beats, style frames, storyboard) come before the build, and measured checks run on the result.
+- **Claim:** A Claude Code skill that makes short procedural canvas videos in seven styles or one matched from references, in every format from one piece.
+- **Testable:** yes. Does the repo's bundled demo piece render to an MP4 locally from its render script, and is the output duration within 1 second of the piece's declared length? Queued as P-0098.
+- **Idea on its own:** sound. Deterministic frame-by-frame rendering from code is cheap, repeatable and overlaps with HyperFrames, which already does similar work.
+- **How it would be done:** Clone the repo into the sandbox, install its Node dependencies and run the render command on a demo piece folder. Check the MP4 exists, its duration and its frame count. Compare the process with HyperFrames: both are HTML or canvas, deterministic and rendered by a headless browser. The unique parts to borrow are the style kits and the beat-grid checks, which could become a Proteus caption or chart style.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **To fetch:** cth9191/animate https://github.com/cth9191/animate (The skill and demo pieces.); ffmpeg https://ffmpeg.org/ (Encoding step.); puppeteer https://pptr.dev/ (Headless browser frame capture, if not bundled.)
+- **Field Notes line:** A Claude Code skill draws whole videos as deterministic canvas code and renders with a headless browser and ffmpeg, no generative video model.
+
+### H-0178 Code the five rules as a freqtrade strategy and score it on the two-year sample and payout tests S1 used
+2026-10-08, vault, https://www.instagram.com/reel/DbJMHpDMK-1/. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** Five fully stated rules: a 15m bias, a 5m impulse box where a gap exists between candles one and three, a break of the prior low and return to the box, entry when the second candle closes past the first, stop at the first candle and take profit at 2R. Everything is derived from OHLC candles on two timeframes. The vault already has a two-year sample and a payout bar to score against.
+- **Claim:** An Instagram trader says this five-rule box setup is a reliable intraday entry, offering no record.
+- **Testable:** yes. Over two years of public BTCUSDT 5m and 15m candles, does the five-rule strategy have positive expectancy after 0.1% round-trip costs, and does it beat shuffled-entry baselines? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. Fully specified rules can be tested cheaply, and most such setups fail after costs, so only a run settles it.
+- **How it would be done:** Download 15m and 5m klines from a public exchange API, align timeframes without lookahead, and code the rules as a freqtrade strategy or a plain pandas backtest. Ambiguities (what counts as the bias, the gap definition) get fixed up front and written down before the results are seen. Report trade count, win rate, expectancy after costs and a shuffled-entry baseline. Then score the equity curve against the payout bar the vault already uses.
+- **Stack already covers:** freqtrade
+- **To fetch:** Binance public klines API https://developers.binance.com/docs/binance-spot-api-docs/rest-api/market-data-endpoints (Keyless candle history.)
+- **Field Notes line:** A viral five-rule trading setup is precise enough to code, so I am scoring it on two years of candles instead of trusting the reel.
+
+### H-0175 RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing
+2026-10-08, arxiv, https://arxiv.org/abs/2610.10507
+
+- **Mechanism:** A small trained RouterLM loops over a menu of primitive operations (retrieve, filter, aggregate, compute) and can specify custom operations in words, which a frozen CompilerLM turns into code that runs. Results come back as evidence items, and the router decides when evidence is enough and passes it to a frozen AnswerLM. The router is trained with supervised fine-tuning, then GRPO reinforcement learning on task success.
+- **Claim:** A 9B router with computed evidence reaches 75.6% mean success across six benchmark families, 15.9% above the strongest large-model baseline.
+- **Testable:** no. Needs training a router model and the benchmark suites, far beyond 30 minutes and without a published runnable artefact in the brief. Needs: GPU training and the six benchmark datasets..
+- **Idea on its own:** sound. Deriving evidence by computation rather than similarity search fits questions about aggregates, which retrieval alone handles badly.
+- **How it would be done:** The cheap version is to skip the training: give a frontier or local model a tool menu over a table set, let it write and run code to derive the numbers, and answer only from the executed output. Proteus could try this on its own CSV ledgers, asking aggregate questions with and without code execution and scoring both against a known answer. The trained router is the paper's contribution and would need the authors' code and a GPU.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **To fetch:** RECAST paper https://arxiv.org/abs/2610.10507 (Check for linked code or data.)
+- **Missing:** A trained RouterLM, if the exact method were wanted.
+- **Field Notes line:** Instead of retrieving text, a small router model decides which calculations to run over the sources and feeds the results to a frozen answerer.
+
+### H-0174 openqodex/openqodex: Open source AI code review for Claude Code and Codex, before you push. Scanners (SAST, secrets, dep
+2026-10-08, github, https://github.com/openqodex/openqodex
+
+- **Mechanism:** It builds a frozen copy of the unpushed change, runs scanners (SAST, secrets, dependencies, lint) matched to the changed files, and keeps only findings on changed lines. It then starts a separate Claude Code or Codex process as reviewer, which must rule on every scanner finding and sees every changed line. Scripts check the reviewer's answer for coverage and format before a report (HTML, Markdown, JSON, SARIF) is written. It uses the already logged-in agent CLI, so no extra key.
+- **Claim:** Pre-push AI code review where a second agent process verifies every scanner finding, with no other API key.
+- **Testable:** no. The reviewer stage needs a logged-in Claude Code or Codex session, which means spend on a model call, and the scanners are downloaded on init. Needs: A logged-in agent CLI for the reviewer stage..
+- **Idea on its own:** sound. Separating the finder from the judge and checking coverage by script is a sensible pattern for catching skipped findings.
+- **How it would be done:** Run npx openqodex init in a scratch repo, make a diff with a planted hardcoded secret and a vulnerable dependency, and run review. Compare the findings against the plants. To copy the pattern in a Proteus job, run semgrep or gitleaks on the changed lines, then hand the list to a child agent with a rule that each item needs a verdict, and check the verdict count by script.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** openqodex https://github.com/openqodex/openqodex (The tool itself.); semgrep https://github.com/semgrep/semgrep (Free SAST scanner of the kind it wraps.); gitleaks https://github.com/gitleaks/gitleaks (Secret scanner for the same pattern.)
+- **Field Notes line:** A code reviewer that is forced to answer every scanner finding in a second agent process, then has its answer checked by scripts.
+
+### H-0172 An inducement filter as a variant on the WF-0350 paper test: one further sweep and recovery after the structure shift be
+2026-10-08, vault, https://www.instagram.com/reel/DePSq8KIuyj/
+
+- **Mechanism:** After a market structure shift (a break of a recent swing high or low), the filter refuses to enter until price makes one further sweep of a nearby swing point and then closes back inside the range. It is defined purely from candle highs, lows and closes, so it is a boolean gate that can sit in front of any entry rule. Nothing in the source gives a hit rate, so the only evidence is whatever a paper run produces.
+- **Claim:** A mentor says waiting for one more liquidity sweep after the structure shift gives a better entry than entering on the shift itself.
+- **Testable:** yes. On the last 90 days of public BTCUSDT 5m candles, does the entry-after-extra-sweep variant have a higher win rate and expectancy than entry on the shift alone, over at least 30 signals each? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. The rule is precisely definable from candles but has no evidence behind it, and swing-point definitions leave room for overfitting.
+- **How it would be done:** Pull 5m candles from a public exchange endpoint (Binance or Bybit klines, no key). Write swing high and low detection with a fixed lookback, then define the structure shift as a close beyond the last swing. Code two variants: enter at the shift, or enter only after one further sweep of a swing and a close back inside. Use a fixed stop and 2R target for both so only the filter differs. Count signals, win rate and expectancy, with a shuffled-entry baseline for luck. Freqtrade can host it, but a plain pandas script is quicker for a first pass.
+- **Stack already covers:** freqtrade
+- **To fetch:** Binance public klines API https://developers.binance.com/docs/binance-spot-api-docs/rest-api/market-data-endpoints (Keyless 5m candle history for the test.); pandas https://pandas.pydata.org/ (Swing detection and signal counting.)
+- **Field Notes line:** A trading-mentor rule, wait for one more sweep after the structure shift, turns out to be codeable as a yes/no gate, so I can score it against plain entries.
 
 ### H-0171 Show HN: Agent.reviews – Where AI agents read and write reviews on tools
 2026-10-07, hn, https://agent.reviews/
@@ -1437,6 +1527,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0184 | 2026-10-08 | Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week  | open | needs-a-run | no |  |
+| H-0178 | 2026-10-08 | Code the five rules as a freqtrade strategy and score it on the two-year sample and payout | open | needs-a-run | yes |  |
+| H-0172 | 2026-10-08 | An inducement filter as a variant on the WF-0350 paper test: one further sweep and recover | open | needs-a-run | yes |  |
 | H-0170 | 2026-10-07 | Build a mock-up site for the prospect and send a 90-second Loom after a two-line permissio | open | needs-a-run | no |  |
 | H-0164 | 2026-10-07 | A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun | open | needs-a-run | yes |  |
 | H-0158 | 2026-10-07 | Insider cluster-buy signal from the free Form 4 filings page as a paper desk | open | needs-a-run | yes |  |
@@ -1472,6 +1565,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0115 | 2026-10-08 | [puppeteer](https://pptr.dev/) | Headless browser frame capture, if not bundled. | H-0180 (cth9191/animate: Procedural animation in any style) | shelf |
+| T-0114 | 2026-10-08 | [cth9191/animate](https://github.com/cth9191/animate) | The skill and demo pieces. | H-0180 (cth9191/animate: Procedural animation in any style) | shelf |
+| T-0113 | 2026-10-08 | [RECAST paper](https://arxiv.org/abs/2610.10507) | Check for linked code or data. | H-0175 (RECAST: Learning to Compute the Right Context thro) | shelf |
+| T-0112 | 2026-10-08 | [gitleaks](https://github.com/gitleaks/gitleaks) | Secret scanner for the same pattern. | H-0174 (openqodex/openqodex: Open source AI code review fo) | shelf |
+| T-0111 | 2026-10-08 | [semgrep](https://github.com/semgrep/semgrep) | Free SAST scanner of the kind it wraps. | H-0174 (openqodex/openqodex: Open source AI code review fo) | shelf |
+| T-0110 | 2026-10-08 | [openqodex](https://github.com/openqodex/openqodex) | The tool itself. | H-0174 (openqodex/openqodex: Open source AI code review fo) | shelf |
+| T-0109 | 2026-10-08 | [pandas](https://pandas.pydata.org/) | Swing detection and signal counting. | H-0172 (An inducement filter as a variant on the WF-0350 p) | shelf |
+| T-0108 | 2026-10-08 | [Binance public klines API](https://developers.binance.com/docs/binance-spot-api-docs/rest-api/market-data-endpoints) | Keyless 5m candle history for the test. | H-0172 (An inducement filter as a variant on the WF-0350 p) | shelf |
 | T-0107 | 2026-10-07 | [@armature-tech/agent-reviews](https://www.npmjs.com/package/@armature-tech/agent-reviews) | CLI to inspect how reviews are sent. | H-0171 (Show HN: Agent.reviews – Where AI agents read and ) | shelf |
 | T-0106 | 2026-10-07 | [agent.reviews](https://agent.reviews/) | Public site to read. | H-0171 (Show HN: Agent.reviews – Where AI agents read and ) | shelf |
 | T-0105 | 2026-10-07 | [Loom](https://www.loom.com/) | Free tier for short walkthrough recordings. | H-0170 (Build a mock-up site for the prospect and send a 9) | shelf |
@@ -1584,6 +1685,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0185 | 2026-10-08 | hn | [Show HN: TerrainSR – fast, realistic heightmap upscaling model](https://huggingface.co/joe-gibbs/terrainsr) | Game terrain upscaling model, unrelated to any desk or interest. |
+| H-0183 | 2026-10-08 | awesome | [larcane97/clausona (new in awesome-claude-code)](https://github.com/larcane97/clausona) | Account profile switcher with a vault verdict and no new mechanism beyond config-directory symlinks. |
+| H-0181 | 2026-10-08 | arxiv | [LOCAA: An Agentic System for Automated Lossy Compressor Tuning](https://arxiv.org/abs/2610.10487) | Narrow to scientific compressor tuning, and the agent-with-memory pattern is already common. |
+| H-0179 | 2026-10-08 | hn | [Show HN: Terse, a Claude Code plugin that halves reply length by cutting filler](https://github.com/lowenbjer/claude-terse) | The post describes a problem and weeks of trial, but no mechanism for how the plugin cuts reply length. |
+| H-0177 | 2026-10-08 | awesome | [1160054/claude-code-zsh-completion (new in awesome-claude-code)](https://github.com/1160054/claude-code-zsh-completion) | A shell completion script with a vault verdict and no new mechanism. |
+| H-0176 | 2026-10-08 | youtube | [DVSA Enforcement Action August 2026 / What MOT Testers & AEs Need to Know #motte](https://www.youtube.com/watch?v=3-nZZPICCt8) | Compliance news talk with no data pipeline or mechanism to record. |
+| H-0173 | 2026-10-08 | hn | [I think I found a planet nobody knew existed. I used Claude Code to find it](https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9) | Only a headline and joke comments in the brief, no mechanism described. |
 | H-0168 | 2026-10-07 | youtube | [MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)](https://www.youtube.com/watch?v=RhTiAOGwbYE) | Beginner MCP tutorial, transcript unavailable and nothing new. |
 | H-0167 | 2026-10-07 | arxiv | [M3SunAgent: Monocular 3D Spatial Understanding Agent for Metric Depth Estimation](https://arxiv.org/abs/2610.07982) | Vision research paper on depth estimation with no relevance or runnable slice for any desk. |
 | H-0163 | 2026-10-07 | awesome | [cooklang/cooklang-skills (new in awesome-claude-code)](https://github.com/cooklang/cooklang-skills) | A domain-specific skills pack over an MCP server; no new mechanism beyond skills plus MCP. |

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 60 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
 
-## Queue (14 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,9 @@ Verdicts so far: 60 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
 | P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | harvest | none |  | 0 | 20 min |
 | P-0094 | Agent.reviews: can the public uv package page be read keylessly, and how many reviews does it show? | harvest | none |  | 0 | 10 min |
 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | desk | none |  | 0 | 25 min |
+| P-0097 | Knitting pattern PDF viewer that remembers the exact row and repeat count per pattern: one offline HTML file (PDF.js, row highlighter bar, repeat counter, saved per file in localStorage), README, from r/SomebodyMakeThis 8 Oct; check the thread for existing answers first | persona | none |  | 0 | 30 min |
+| P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | harvest | none |  | 0 | 25 min |
+| P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 
 ## Verdicts (78)
 
