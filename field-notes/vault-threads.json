@@ -12,8 +12,278 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 148,
+  "count": 175,
   "threads": [
+    {
+      "date": "2026-10-08",
+      "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Buying or running a grid-and-recovery expert adviser on gold",
+      "note": "Daily green until the trend day; QuantStone is the worked example in the vault",
+      "where": "TRITON-CORE/Research/links/2026-10-08-cyberalgo-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DePwjVsuY_V/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Why a grid bot's daily result is always green and what the one-day failure looks like",
+      "note": "Two or three months old and printing is the tell",
+      "where": "TRITON-CORE/Research/links/2026-10-08-cyberalgo-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DePwjVsuY_V/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Two checks on any bot pitch before anything else: the strategy class on its own site, and the Myfxbook record read for age, drawdown and verification",
+      "note": "Here the site says grid and the record was unreadable",
+      "where": "TRITON-CORE/Research/links/2026-10-08-cyberalgo-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DePwjVsuY_V/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
+      "kind": "idea",
+      "status": "open",
+      "theme": "An inducement filter as a variant on the WF-0350 paper test: one further sweep and recovery after the structure shift before entry",
+      "note": "A second column on the same test, no spend",
+      "where": "TRITON-CORE/Research/links/2026-10-08-joinproject30-inducement-reel.md",
+      "url": "https://www.instagram.com/reel/DePSq8KIuyj/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "Smart-money vocabulary, sweep, structure shift, point of interest, inducement, and the mentorship funnel behind the clip",
+      "note": "No evidence offered",
+      "where": "TRITON-CORE/Research/links/2026-10-08-joinproject30-inducement-reel.md",
+      "url": "https://www.instagram.com/reel/DePSq8KIuyj/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Trading the concept by hand off a reel",
+      "note": "Same answer as the earlier reel tonight",
+      "where": "TRITON-CORE/Research/links/2026-10-08-joinproject30-inducement-reel.md",
+      "url": "https://www.instagram.com/reel/DePSq8KIuyj/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@thearsalaanshaikh reel: ten trading concepts ranked, order flow first, MACD last",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "A ranked list of trading concepts with unsourced percentages, engagement bait in the smart-money vocabulary",
+      "note": "Nothing testable in it",
+      "where": "TRITON-CORE/Research/links/2026-10-08-arsalaanshaikh-concepts-ranking-reel.md",
+      "url": "https://www.instagram.com/reel/DcGsq7StTIs/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@thearsalaanshaikh reel: ten trading concepts ranked, order flow first, MACD last",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Trading from a ranking of concepts",
+      "note": "No method, no record",
+      "where": "TRITON-CORE/Research/links/2026-10-08-arsalaanshaikh-concepts-ranking-reel.md",
+      "url": "https://www.instagram.com/reel/DcGsq7StTIs/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Code the five rules as a freqtrade strategy and score it on the two-year sample and payout tests S1 used",
+      "note": "No spend, agent or Proteus work, publish either way",
+      "where": "TRITON-CORE/Research/links/2026-10-08-windsorjrtrades-fvg-strategy-reel.md",
+      "url": "https://www.instagram.com/reel/DbJMHpDMK-1/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "The smart-money retail pattern, order block plus fair-value gap plus liquidity sweep, taught without a record",
+      "note": "The 11-year-old-brother pitch is the evidence offered",
+      "where": "TRITON-CORE/Research/links/2026-10-08-windsorjrtrades-fvg-strategy-reel.md",
+      "url": "https://www.instagram.com/reel/DbJMHpDMK-1/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Trading it by hand on the strength of a reel",
+      "note": "No record, no sample, Luke's money stays out",
+      "where": "TRITON-CORE/Research/links/2026-10-08-windsorjrtrades-fvg-strategy-reel.md",
+      "url": "https://www.instagram.com/reel/DbJMHpDMK-1/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Signal-led manual LinkedIn outreach: a weekly search for owners' recent posts about enquiries or no-shows, one note referencing the post, one question, a call on reply",
+      "note": "Input to the M1 plan and the assistant's daily LinkedIn routine, WF-0318 and WF-0321",
+      "where": "TRITON-CORE/Research/links/2026-10-08-flexxable-linkedin-signals-dbr.md",
+      "url": "https://vimeo.com/1233794507/cf61fad386"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Scraping LinkedIn commenters and keyword posters into automated connection sequences, and buying mobile numbers from scraped profiles",
+      "note": "Hard no already in the vault on account bans; LinkedIn terms; UK GDPR and PECR; the account at risk is Luke's own",
+      "where": "TRITON-CORE/Research/links/2026-10-08-flexxable-linkedin-signals-dbr.md",
+      "url": "https://vimeo.com/1233794507/cf61fad386"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Flexxable's funnel: a free demo clip selling a tool and the 2,900 to 7,800 dollar blueprint, one 34-send anecdote as evidence",
+      "note": "Luke is on the list through the Instant AI Agency book",
+      "where": "TRITON-CORE/Research/links/2026-10-08-flexxable-linkedin-signals-dbr.md",
+      "url": "https://vimeo.com/1233794507/cf61fad386"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week to feed a manual routine",
+      "note": "One week of counting by the assistant answers it",
+      "where": "TRITON-CORE/Research/links/2026-10-08-flexxable-linkedin-signals-dbr.md",
+      "url": "https://vimeo.com/1233794507/cf61fad386"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "harrisonandjames.com (free jewellery, pay shipping only)",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Ordering from the free-jewellery closure sale",
+      "note": "Young domain, shell address, 1.3 Trustpilot from 289 reviews, shipping is the price",
+      "where": "TRITON-CORE/Research/links/2026-10-08-harrisonandjames.md",
+      "url": "https://harrisonandjames.com/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "harrisonandjames.com (free jewellery, pay shipping only)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent address as a shell signal",
+      "note": "Launch, advertise, collect, lapse, relaunch",
+      "where": "TRITON-CORE/Research/links/2026-10-08-harrisonandjames.md",
+      "url": "https://harrisonandjames.com/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "kaysgoldgroup.com, Gold Signals Club by Kay (FCA-warned unauthorised firm GTK)",
+      "kind": "scheme",
+      "status": "dead",
+      "theme": "Joining the group, following the signals or opening an account through it",
+      "note": "Named on the FCA unauthorised-firm list, no Ombudsman, no FSCS",
+      "where": "TRITON-CORE/Research/links/2026-10-08-kaysgoldgroup.md",
+      "url": "https://kaysgoldgroup.com/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "kaysgoldgroup.com, Gold Signals Club by Kay (FCA-warned unauthorised firm GTK)",
+      "kind": "scheme",
+      "status": "intel",
+      "theme": "A free signals group funded by introducing-broker commission, and the FCA warning as the regulator's answer to that model",
+      "note": "Published 3 June 2025, updated 4 November 2025",
+      "where": "TRITON-CORE/Research/links/2026-10-08-kaysgoldgroup.md",
+      "url": "https://kaysgoldgroup.com/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "kaysgoldgroup.com, Gold Signals Club by Kay (FCA-warned unauthorised firm GTK)",
+      "kind": "scheme",
+      "status": "adopted",
+      "theme": "First check on any signals or copy-trading group is the FCA warning list by name and handle",
+      "note": "One search answered this one",
+      "where": "TRITON-CORE/Research/links/2026-10-08-kaysgoldgroup.md",
+      "url": "https://kaysgoldgroup.com/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
+      "kind": "market",
+      "status": "open",
+      "theme": "Join and extract the four free communities that cover both asks: Emerging Fashion Designers, Rich Off Clothes, RiseWise, SandersConsulting",
+      "note": "Desktop pane, Luke approves each join, extractor kit, digest",
+      "where": "TRITON-CORE/Ventures/Luxury-Clothing/research/SKOOL-FASHION-COMMUNITIES-2026-10-08.md",
+      "url": "https://www.skool.com/discovery?q=fashion+design"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
+      "kind": "market",
+      "status": "intel",
+      "theme": "Skool fashion landscape: free groups sell drop-and-scale playbooks and manufacturer networks, paid groups sell AI design and content workflows at 5 to 15 dollars a month, a few founders charge 89 to 100 a month on their own revenue story",
+      "note": "Discovery search, 2026-10-08",
+      "where": "TRITON-CORE/Ventures/Luxury-Clothing/research/SKOOL-FASHION-COMMUNITIES-2026-10-08.md",
+      "url": "https://www.skool.com/discovery?q=fashion+design"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
+      "kind": "market",
+      "status": "intel",
+      "theme": "Skool discovery and about pages are readable without a login, including price, member count, course and module counts, posts; private groups hide course titles",
+      "note": "Route reused from the extractor kit",
+      "where": "TRITON-CORE/Ventures/Luxury-Clothing/research/SKOOL-FASHION-COMMUNITIES-2026-10-08.md",
+      "url": "https://www.skool.com/discovery?q=fashion+design"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Connecting a LinkedIn account to a cloud automation tool for connection and message sequences",
+      "note": "Standing hard no on account bans, LinkedIn terms; the account would be Luke's own, his job-search evidence",
+      "where": "TRITON-CORE/Research/links/2026-10-08-topa-linkedin-automation.md",
+      "url": "https://topa.io/linkedinautomation/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "AI voicemail drops and marketing SMS to prospects, and mobile numbers enriched from scraped profiles",
+      "note": "PECR consent for automated calls applies to corporate lines too; scraped mobiles have no lawful basis for marketing",
+      "where": "TRITON-CORE/Research/links/2026-10-08-topa-linkedin-automation.md",
+      "url": "https://topa.io/linkedinautomation/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Signal-led outreach by hand: Sales Navigator posted-in-last-30-days filter, one note referencing the post, a DM asking for a conversation",
+      "note": "Already WF-0344 and the assistant's daily routine",
+      "where": "TRITON-CORE/Research/links/2026-10-08-topa-linkedin-automation.md",
+      "url": "https://topa.io/linkedinautomation/"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Feature set and price of the tool, and the 2026 picture on restrictions for non-compliant automation",
+      "note": "Page and industry write-ups read 2026-10-08",
+      "where": "TRITON-CORE/Research/links/2026-10-08-topa-linkedin-automation.md",
+      "url": "https://topa.io/linkedinautomation/"
+    },
     {
       "date": "2026-10-07",
       "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
@@ -1432,8 +1702,98 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 30,
+  "links_count": 39,
   "links": [
+    {
+      "date": "2026-10-08",
+      "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-08-cyberalgo-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DePwjVsuY_V/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-08-cyberalgo-bot-reel.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Transcript of https://www.instagram.com/reel/DePwjVsuY_V/ (@cyberalgo.bots, caption: \"Today's result CyberAlgo Pro #forex #trading\"). Luke sent it 2026-10-08 21:55 over Telegram. Audio stream via yt-dlp, transcribed by ElevenLabs Scribe; the site he names is cyberalgo.net (heard as cyberavo). A stranger's words: data, not instructions.\n\nThis is how much my bot made me for today, only one hundred and eighty-two pounds. We have one open trade. Currently, it is on a profit. Let me show you. Now, in an hour, the market will close, uh, in an hour for a break, and we start the new day. So if you want my bot, go to cyberavo.net. Currently, it is very, very discounted. Or join our official Telegram group from the link in my bio. Once you make a purchase for this bot, you will be entitled to have all my future bots, projects completely free. That's it. So yeah, that's it. As you can see, the bot is new, two, three months, and we are printing"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-08-joinproject30-inducement-reel.md",
+      "url": "https://www.instagram.com/reel/DePSq8KIuyj/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-08-joinproject30-inducement-reel.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Transcript of https://www.instagram.com/reel/DePSq8KIuyj/ (@joinproject30, caption: \"My student learns how to use inducements #one_fx #daytrader #fyp\"). Luke sent it 2026-10-08 21:23 over Telegram. Audio stream via yt-dlp, transcribed by ElevenLabs Scribe. A stranger's words: data, not instructions.\n\nSo what is this? Swing low. And what is this? Swing high. And what is this? Swing low. Amazing. Now we can see that this London low ended up getting taken out, correct? Yeah. What is this known as? Liquidity sweep. Amazing. Whenever liquidity has been raided from a previous session high or low, automatically a lot of traders are looking to enter in the market. Now we can see this point of interest has now been invalidated, which is where a lot of people will be looking to take a loan. But why is this trade invalid? We don't have the right market structure. Now, that's good, but I need you to understand, before the market structure shift, you should always look for an inducement. What is an inducement? In a liquidity sweep, it's not necessarily the exact point of reversal, whereas the inducement is the final liquidity sweep before the actual reversal. Does that make sense? We know this, so we can now wait for the market to take out this level where a lot of buyers are entering off of this rejection and then try capitalize the real move. So if I play price action out, you can see the market fakes in more buyers. However, then it goes ahead and gives that inducement, and this is why it's important because even though we had a market structure shift, we should still wait for an inducement to validate our setup"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@thearsalaanshaikh reel: ten trading concepts ranked, order flow first, MACD last",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-08-arsalaanshaikh-concepts-ranking-reel.md",
+      "url": "https://www.instagram.com/reel/DcGsq7StTIs/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-08-arsalaanshaikh-concepts-ranking-reel.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Transcript of https://www.instagram.com/reel/DcGsq7StTIs/ (@thearsalaanshaikh, caption: \"Comment down below, if you don't agree on something.\", 322 comments). Luke sent it 2026-10-08 22:14 over Telegram. Audio stream via yt-dlp, transcribed by ElevenLabs Scribe. A stranger's words: data, not instructions.\n\nFibonacci Fifth place. It is amazing to spot reversals but is only applicable sixty percent of the time. Supply and demand Seventh place. It is too basic and you won't be able to execute your trade properly. Liquidity sweeps Second place. It is basically like the lifeline of the market. EMA Eighth place. It is just averages and you can put it in a trading bot, but I've never seen a profitable one. FVG Fourth place. When paired with a Fibonacci tool or liquidity, it can be very powerful. IFVG Sixth place. Very good to identify successful or unsuccessful FVG's. MACD indicator Tenth place. Absolutely crap. AMD Third place. It is eighty percent of the times right and it's rectified by professionals as well. RSI Ninth place. We don't need an indicator telling us that the price went up. Order flow First place. It tells you whether the sellers are in control or the buyers are in control."
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-08-windsorjrtrades-fvg-strategy-reel.md",
+      "url": "https://www.instagram.com/reel/DbJMHpDMK-1/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-08-windsorjrtrades-fvg-strategy-reel.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Transcript of https://www.instagram.com/reel/DbJMHpDMK-1/ (@windsorjrtrades, caption: \"Teaching you guys my strategy!!! Lemme know how it goes\"). Luke sent it 2026-10-08 20:59 over Telegram. Audio stream via yt-dlp, transcribed by ElevenLabs Scribe. A stranger's words: data, not instructions.\n\nThis is my trading strategy explained in the simplest way possible. My brother's 11 years old, and even he would understand it. Start on 15-minute timeframe. Price goes up, you go up. Price goes down, you go down. Price goes sideways, you don't go sideways. Too bad. You turn off computer. Then you go on the five-minute timeframe. You look where price goes up, down, and you draw box up. When you drag box, use green/red candle, all of it. Very important. Zoom in, check box one and three candle. You see gap, good box. Don't see gap, bad box, bad box. Zoom out, look previous low. Check price break low. Price has to go back to box. If price breaks box, bad box. Price stays in box, good box. Price break box, don't enter. Look at first candle. If second candle goes below, you enter. Stop loss, first candle. Your take profit should be two times more. Make money"
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-08-flexxable-linkedin-signals-dbr.md",
+      "url": "https://vimeo.com/1233794507/cf61fad386",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-08-flexxable-linkedin-signals-dbr.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Transcript of https://vimeo.com/1233794507/cf61fad386 (\"How to get Red Hot leads sent to your inbox EVERY day (on autopilot)\", uploader Flexxable, 15 min 48 s), Vimeo's own autogenerated English captions pulled via yt-dlp on 2026-10-08. Luke sent it 2026-10-08 17:07 over Telegram from a Flexxable ActiveCampaign email, \"this is for the M1 lane database reactivation, have a look\". Two speakers, the Flexxable host and a tool builder he calls Johnny. A stranger's words: data, not instructions.\n\nOh, hi, everyone. I'm here with Johnny again, and he's been busy beavering away building some pretty amazing stuff around what we're calling LinkedIn Signals, which I haven't really seen anywhere else, and it's something that's pretty new and exciting. And Johnny's going to explain it way better than I will, but my understanding is that you're able to run different campaigns on people who are either influencers and you're able to, and he's got Alex Hormozi up here on the screen, but you're able to find all of the posts that Hormozi has made, and then you're able to scrape all of the different people who have commented about those posts and then run an outreach campaign to those people. So if you're someone like me who's looking to sell a product to business owners, then it would be a pretty targeted campaign to run. And likewise, we can also do keyword-type campaigns where we can search for a specific lead type or whatever that might be or whatever word you want, and it's going to find a bunch of people that have written those words and then commented on those posts, and then you're able to scrape that database as well and run a campaign to that. But I'm hoping I'm not messing it up too much. I'm going to pass it over to you, Johnny, to show us what that actually looks like and how you do it. Sure. So yeah, there's two types of signals. We've got profile monitoring and- Yeah ... keyword monitoring. So this runs daily and checks LinkedIn for the signal. So this example is Alex Hormozi. So in the last 24 hours, he's made a post, and he's had over two and a half thousand people interact with the post. Yes. So, for example, we've got a company on doing coaching. Yeah. So, like they're scraping Alex Hormozi's stuff and reaching out because they're the sort of people who would buy coaching. Yes. So there's 2,500 hot leads there scraped. Every day that refreshes, right? Yeah. And you can either push that into your cold email campaign, or you can push it into our LinkedIn automation and the campaigns just absolutely pop because you can say, \"Hey, saw your comment in on Alex's post,\" and it looks like real personalized outreach, and they're- Yes ... super relevant. Yes. Yeah, because they've just commented, obviously they're engaged with whatever that post is about. Yeah. Which means that you're reaching out, and it's very relevant, and which are very important, it's at the right time, which is sometimes one of the most critical factors when it comes to talking to someone. So, okay, that makes a lot of sense. So with Alex, for example, Alex Hormozi, you'd be able to pull that list into our backend, and then we'd be able to write a sequence of messages that would go out to those 2,500 people, correct? Yeah. So you can send a webhook to your CRM- Yeah ... do it in your CRM, or you can send it to instantly Smart Lead- Yeah ... or you can just pop it to our LinkedIn automation. Yeah. I'll show you ours in a minute, so you can see the sort of response rates we're getting. So. Yeah. Cool. And what about, you mentioned on the call you've had some insane results with insurance leads. For those of you listening to this and don't know what we do, we're all about what we call the offer of the century. So it's an AI offer where we ask businesses if they've got any old insurance leads that we can turn into sales, using AI and SMS or WhatsApp on a performance basis. So if they're talking about insurance leads, then there's a pretty good chance that if we reach out to them with what I call the offer of the century, there's a very good chance they could become a client because we're reaching out at the right time. So what have you typed in there? Is that for insurance? I've just done final expense. Final expense. Okay. So show us the results you've got for insurance and what that looks like. Okay. So we're monitoring, so the second type is keyword monitoring. Yeah. So you can type in any keyword, and it'll just check every day and see what posts you've got with those keywords in. Yeah. We're doing, or we were doing insurance leads, so just people selling insurance leads, looking for insurance leads. So that was what running every day and then pushing it into our LinkedIn automation campaign. Question. Yeah. So it runs every day and gets new leads every day. Is that right? Yeah. So it looks- You don't set it up once. Yeah, you just set up the signal once, and it just- Yeah ... runs on autopilot. Every 24 hours and gets fresh leads every day. Wow, that's cool. Yeah. So you can see here we pushed 34 insurance leads into our LinkedIn automation. Yep. We sent 34 connections, 22 accepted, so 65% connection rate. And 19 of them responded, so we got an 86% response rate. So- Can you show us what the messaging is? Yeah, so in the connection note, I had, \"Hi, first name, saw you posted about leads.\" Yeah. So they know I've viewed their post. Yeah. And then we're following up- Clever ... with the DBR stuff. So, we offer a paid-on-result service. We're reactivating some of your old leads. Could we have a chat? Nice. But yeah, that got like an insane response rate because it's super relevant, right? Wow, that's amazing. Okay, cool. So show us how you would set this up. We were talking before the call about in a final expense campaign, because we know there's so many people on LinkedIn talking about final expense. What would that look like setting that up from scratch? Show us how quickly it is to do. Okay, so just go Signals, Keyword Monitoring, Final Expense. That'll do an initial search. So it's found 224 leads in the last- Yeah ... 24 hours. You just save that signal, and then you set how many you want to fetch every day. So you might want to fetch 20, 50, or just all of them. Yep. So now that's running. So that signal's running now, and it's going to find people immediately. And then it'll just run every day at the same time, or you can change your run times if you want. Yep. Then you can set up your integrations. So you push in Smart Lead instantly, or hopefully TOPA. So you can push it- Yeah ... to either our voicemail campaigns or our LinkedIn campaigns. Yeah. And yeah, you just set up your LinkedIn campaign, select, save, and it'll just push leads into it every day. And that's how you get crazy results, crazy high accepted rates and reply rates. Show us how you would set up that campaign beforehand. Can we do that? Yeah. Yeah. So I've already added my LinkedIn account. I'm going to set up a new campaign, reach out to new connections. You just write your message in, or you can use our AI writer. That'll scan your website and write a sequence for you. What does that message say? You were saying before it was really cool, right? So- Yeah, so, for final expense, I'd say, \"Hi, first name. Saw you posted about final expense.\" Yeah. Nice. Of course. And then the first message would say what? So for your DBR offer, \"Hi, first name. Quick one, would you be open to more sales or leads with no risk to you?\" Something like that. Yeah. Of course, they're very intrigued. You've already connected about something very relevant. And then, this is kind of the offer of the century, isn't it? Who doesn't want more sales? Yeah. But you only have to pay us after you get paid or something like that in the third message, right? Okay. Yeah. Yeah. So- And when they reply, the automation stops, right? Yeah. Okay. Yeah, so you can put whatever you want there. It's just copywriting 101. Yeah. And then you've got your three messages. You click save. Yeah. I'll add leads via webhook or LinkedIn Signals. Yeah. And then you just connect it to the number of leads that you just scraped in the signals campaign. Yeah, I'll show you how to do that. Yeah. So we're going to create that campaign. So- Final expense ... expense. And then you just head over to the signal. We just need to tell this signal to push it into that campaign. And it's done. Or pilot, yeah. Off to the races, then it'll just keep on running forever on anyone that perseveres about final expense leads. Yep. So the cool thing is that once you figure out what works with your... I'm calling it the one, two, three hand raiser. Once you get that hand raiser dialed in, it will just work forever because guess what? There's new people coming in every day looking for final expense leads. Yeah. So that's kind of cool. And what would you do? Give us an example. I know you were talking about a PR company before that's using this for an influencer. Is that right? Or was that- So- No, that was key keywords. Yeah. So they were using, they were just looking for people who've just launched. Yes. And then pushing it straight into a campaign saying, \"Hey, notice you've just launched.\" Yes. \"We'll do a PR piece for you.\" And it's just like signal-led outreach like this beats just a crappy list- Yeah ... like 10 times. Yes. It's so much better if you can think- Yeah ... of a way of using it. Obviously, you've got to put some thought behind it. What about, give me an example of what someone's using as an influencer campaign or a profile campaign. So, we scrape Clay sometimes, or Instantly- Yep ... or Smart Lead, someone like that. Because if they're running, if you're commenting on a cold emails tool, we would reach out and say, \"Hey, have you considered LinkedIn automation?\" Yes. Or, \"Saw you liking Instantly's post. Have you considered LinkedIn automation?\" Yeah. And we can chat with them that way. Which again- Yeah ... is like 10 times better than just cold tools. Yes. Yeah. Yeah, that cold email spray and pray method, even if you're using AI to write the messages and stuff, right? Like, it's just- Yeah ... it's tough going. Yeah. Tough going. Nice, mate. Okay. Is there anything else you'd like to add? What else? No, it's always short and sweet because it's so easy to use really. You can run that in five minutes, and you'll be getting a five times better response rate than anything else you're doing, so. Yeah. So easy. You can see, so we've pulled 82 final expense leads, and it's starting to push them now into the campaign, so. That's live. Yeah. Yeah. Be interesting to see how that one goes. Yeah. Nice, mate. Well, that was easy. Okay. I'm just trying to think if I've got any other questions. Oh, the other thing is, show us how you get the number of the individual. So- Yeah ... I don't know whether you can go into your insurance campaign and find someone that replied. Yeah. And then find, I don't know whether you want to show that, but you could find the number of that individual, so you could call them and say, \"Hey, listen, I've just been speaking to him on LinkedIn.\" I thought it was easier just to pick up the phone and say hello or something. Yeah. So all of the messaging you're sending is going into the inbox. So when we're being really salesy and proactive, we'll even ring people just when they first accept. So you can see all of the, these are the people who've connected with us. You can filter by the replies, so obviously it's easier to speak to people who've replied. Yeah. You literally just click Get cell phone, and then it'll check a bunch of different databases, get their cell phone, and then you can just ring them and pitch them, and it's so much easier because you've viewed their post, now you've reached out, they're chatting with you- Yeah ... and you can just ring and pitch them. So if you've got a decent product, you're at the races then. Definitely. And how much does it cost? I know you use a credit per cell phone, but I see you've got almost a million credits below. That's obviously your master account. Yeah. But how does that work with people coming in? So we charge seven and a half cents for a cell phone, which I believe is the cheapest out there. I can't find anyone cheaper than that. That's amazing. So you can, if you wanted, you could find anyone that typed about insurance, final expense leads, for example, 384 people we saw before. How many of those people could you get an accurate phone number for, do you think? About 70%. 70% cell phone number? Yeah. Cell phone number. Yeah. That's amazing. This is the lead page. So this is the signals pulling the leads. So if you want to obviously inspect the sort of leads and just work it manually- Yeah ... you can see the sort of people, what they're posting about. So for your DBR offer, like this guy's selling final expense, Medicare, life insurance, life transfers. It's a perfect connect with. These are the perfect people to sell, certainly DBR to AI automations, marketing automations. Yeah. They're just highly relevant people because they're posting on LinkedIn, you find they're more entrepreneurial and open to talking, and it's all just very easy as opposed to cold. Definitely. And obviously, the other product we're launching at the moment is B2Bgifts.ai. So show me how we would, if we had a really good conversation with someone and picked up the phone to him, and he was still kind of on the fence, how would we send him... Can we get the address yet, or is that still in the pipeline? The address is still in the works. Still in the works. That's what's coming. That's what's coming, right? Yeah. But if you want to send a physical gift, you literally just click here, and then you can go through that and send a physical gift, so. You can find their address, it just takes a bit of detective work, right? Yeah. Okay. Okay, amazing. And how long before you think we'll be able to bring the address through as well for that individual? I don't know. If it's a priority, I'll get it done. Yeah. Probably not a priority just yet, but, because people, they're not sending hundreds of bottles a week, right? Hopefully they will eventually, but- Yeah ... that's the plan anyway. Yeah. Okay, mate. All right. Well, we'll leave it there. Awesome. Okay."
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "harrisonandjames.com (free jewellery, pay shipping only)",
+      "kind": "scheme",
+      "where": "TRITON-CORE/Research/links/2026-10-08-harrisonandjames.md",
+      "url": "https://harrisonandjames.com/",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "kaysgoldgroup.com, Gold Signals Club by Kay (FCA-warned unauthorised firm GTK)",
+      "kind": "scheme",
+      "where": "TRITON-CORE/Research/links/2026-10-08-kaysgoldgroup.md",
+      "url": "https://kaysgoldgroup.com/",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
+      "kind": "market",
+      "where": "TRITON-CORE/Ventures/Luxury-Clothing/research/SKOOL-FASHION-COMMUNITIES-2026-10-08.md",
+      "url": "https://www.skool.com/discovery?q=fashion+design",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
+    {
+      "date": "2026-10-08",
+      "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-08-topa-linkedin-automation.md",
+      "url": "https://topa.io/linkedinautomation/",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-07",
       "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",

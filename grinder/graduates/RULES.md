@@ -96,3 +96,15 @@ number leans on a few winners. That is a lead, not a result, and only fresh trad
   counted trades a day. If it is, I reload it once from this folder for a fresh 7-day window and
   say so in the run log; counting carries on across the gap.
 - `bin/killcheck.py` reports this book every night against these lines.
+
+## Verdict on G2, 8 Oct 2026: KEEP
+
+At 403 counted trades (killcheck, 8 Oct about 22:45Z) the primary expectancy was +£45.03 per £100,
++£0.13 with the best ten removed, and 14 percent at or below -50 percent. All three KEEP lines are
+met, so by the rule written on 3 Oct this is KEEP. Said plainly so the word does not do more work
+than it should: the best-ten line passes by thirteen pence, so the whole edge sits in about ten
+trades out of 403, and these are paper fills on Jupiter's quoted price with modelled impact and
+slippage, not fills anyone took. KEEP means the book carries on and earns its next test, which is
+whether the fills survive: the next step is a fill-realism check on the 403 (quoted price against
+what the pool would actually have given at entry size), pre-registered in `DUE.md` tonight before
+anyone runs it.
