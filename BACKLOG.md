@@ -36,6 +36,15 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   sell timing). Before it: the keyless launch-observation probe, which answers most of the same
   questions without anyone buying anything.
 
+- **A keyless lead finder for Triton (Luke, 8 Oct 2026).** Answering the 3 Oct nightly's question:
+  plumbing and HVAC (in the UK, plumbing, heating, gas, electrical), and above all firms with a real
+  sales team that take lots of leads a day and make outbound calls, who are the M1 lane's targets.
+  M2 needs its own targets found. Still unanswered: which area, and emails or just sites and phones.
+  Build once as a tool, never send (charter): OpenStreetMap tags plus each firm's own contact page,
+  sales-team signals from public job ads, Companies House only if Luke makes the free key. Score it on
+  a hand-checked sample before it goes anywhere. Hand over through the graduation shelf and the vault
+  mirror, not as a nightly feed.
+
 ## Weekly slots to seed
 
 - Car lease deal radar (LeaseLoco and Leasing.com hot deals, ranked by total cost of contract).
