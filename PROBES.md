@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 60 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
+Verdicts so far: 60 works, 4 broken, 11 blocked, 4 not worth it. Killed: 4.
 
-## Queue (17 open)
+## Queue (21 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -30,11 +30,17 @@ Verdicts so far: 60 works, 4 broken, 10 blocked, 4 not worth it. Killed: 4.
 | P-0097 | Knitting pattern PDF viewer that remembers the exact row and repeat count per pattern: one offline HTML file (PDF.js, row highlighter bar, repeat counter, saved per file in localStorage), README, from r/SomebodyMakeThis 8 Oct; check the thread for existing answers first | persona | none |  | 0 | 30 min |
 | P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | harvest | none |  | 0 | 25 min |
 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
+| P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
+| P-0102 | News filter: is BTC's hour after high-impact USD events 1.5x more volatile than baseline, last 12 months? | vault | none |  | 0 | 30 min |
+| P-0103 | Inducement filter: does one extra sweep after a structure shift beat entering on the shift, on BTCUSDT 5m? | vault | none |  | 0 | 30 min |
+| P-0104 | Five-rule 15m/5m box strategy: does it have positive expectancy after costs on two years of BTCUSDT? | vault | none |  | 0 | 30 min |
 
-## Verdicts (78)
+## Verdicts (79)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-08 | P-0101 | Form 4 cluster buys: do 3+ insider open-market buys in 14 days beat SPY by 30 days, on 2025 EDGAR filings? | **blocked** | EDGAR returned 403 and a fair-access block page to automated requests without a declared contact email; the cluster script is written and untested on data. | `experiments/2026-10-08-P-0101` | 1 min, 13 calls, 1 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/experiments/2026-10-08-P-` | | |
 | 2026-10-08 | P-0096 | Grinder round-2 replay: wire E01-E06 and M01-M09 into harness/replay.py and score them on every gate-passer snapshot since 30 Sep 12:00Z with the mentions rows joined, against the pre-registered bar in VARIANTS-2.md | **works** | Replay of E01-E06 and M01-M09 on 150 gate-passers (77 since 30 Sep), mentions joined: nothing clears the item-3 bar (V01 plus 59), which is the wrong shape for a filter. Eighteen of the twenty rugs since 30 Sep carry at least one of three pre-entry markers: rugcheck names a risk (13 rugs in 17), price up in the hour before the snapshot (15 in 46), no Telegram mention (9 in 14); zero markers 29 rows +0.8 a position with 2 rugs, three markers 9 rows -79.6 with 7. X silence did not hold up (quiet tokens no worse). Clean rows are not profitable on their own; the live top-4 includes marked tokens that doubled first. R01 shadow book pre-registered in VARIANTS-3.md, DUE.md D-007 and D-008. | `experiments/2026-10-08-P-0096` | not run |
 | 2026-10-08 | P-0092 | Mortiflix: does the free no-Claude `mortiflix demo` run to a playable video on macOS, yes/no? | **works** | Fetched as a tarball, installed with npm ci --ignore-scripts (7 packages), and mortiflix demo --studio <sandbox> ran on macOS: studio created, logo-sting project queued, first session stopped at the Directions gate as designed. Approved both gates through the CLI's own gates.respond from a 20-line driver (review is interactive), two mortiflix run calls later the project was delivered with preview.mp4: 4.0 s, 1280x720 h264 24 fps plus mono AAC, 1.4 MB, ffmpeg test pattern. Nothing written outside the sandbox. A real video needs the Claude Code login, an interactive probe. | `experiments/2026-10-07-P-0092` | 3 min, 29 calls, 0 denied |
 | 2026-10-07 | P-0090 | Monthly timing models: replicate Antonacci global equities momentum (SPY vs EFA vs AGG, 12-month returns against T-bills) and the Fabian 39-week three-index model, luck-test both and score against 60/40 (TRADING-IDEAS.md A-13 A-12) | **works** | GEM on SPY/EFA/AGG/BIL, June 2008 to Oct 2026: 8.5 pct a year v SPY 12.4 and 60/40 8.7, drawdown 21 pct (claimed 21.7) v 42, 1.85 switches a year; since 2010 8.4 v 14.2 as the video admits; 2008 +6.7 v -28.5 but 2018 worse and 2022 barely better; joint monthly shuffle p 0.13. Fabian three-index 39-week plan 1993-2026: 7.6 pct v 10.9, Sharpe 0.75 v 0.69, drawdown 25 v 55, in the market 66 pct of weeks, 44 round trips, shuffle p 0.041; 60/40 beats it on Sharpe at the same volatility. Claims replicate; neither earns a book. | `experiments/2026-10-07-P-0090` | 2 min, 8 calls, 0 denied |
