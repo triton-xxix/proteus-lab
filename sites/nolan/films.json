@@ -21,17 +21,19 @@
       "title": "Memento",
       "year": 2000,
       "order": 1,
-      "status": "queued",
-      "time_structure_kind": "two-threads-converging",
+      "status": "built",
+      "time_structure_kind": "interleaved-strands",
       "deep_page": null,
-      "tries": 1,
-      "assigned_on": "2026-10-07",
-      "researched_on": null,
+      "tries": 2,
+      "assigned_on": "2026-10-08",
+      "researched_on": "2026-10-08",
       "last_check": [
-        "facts.cast_top5 has 4 entries, want 5"
+        "time_structure.kind 'interleaved-strands' differs from the register's prior 'two-threads-converging'"
       ],
       "note": "Colour runs backwards, black and white runs forwards, they meet.",
-      "last_digest": "state/agents/nolan/2026-10-07-memento.json"
+      "last_digest": "state/agents/nolan/2026-10-07-memento.json",
+      "research_digest": "state/agents/nolan/2026-10-08-memento.json",
+      "page": "films/memento/"
     },
     {
       "slug": "insomnia",

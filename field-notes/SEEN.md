@@ -439,6 +439,8 @@ Closed on the vault side for the reason in the note. Not a lead.
   scores itself against its own reanalysis. Wildcard W41, `experiments/2026-10-08-london-tmax-error/`.
 - 2026-10-08, harvested: 14 judged, 7 kept (H-0172 to H-0185), 2 queued as probes (P-0098, P-0099). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-08: Nolan site, Memento (2000) researched and built (`sites/nolan/films/memento.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
