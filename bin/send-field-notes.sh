@@ -21,7 +21,10 @@ fi
 PY="$(command -v python3 || true)"
 [ -z "$PY" ] && for c in /usr/local/bin/python3 /opt/homebrew/bin/python3; do [ -x "$c" ] && PY="$c" && break; done
 [ -z "$PY" ] && { echo "python3 not found" >&2; exit 1; }
-WEEK="$(date '+%G-W%V')"
+# The week comes from the note's own filename (field-notes/2026-W40.md), not the clock: on 5 Oct a
+# resend of W40 would have gone out labelled W41. The clock is the fallback for an unnamed body.
+WEEK="$(basename "$BODY" | grep -oE '^[0-9]{4}-W[0-9]{2}' || true)"
+[ -z "$WEEK" ] && WEEK="$(date '+%G-W%V')"
 SUBJECT="Proteus Field Notes $WEEK"
 # The emailed copy, and only the emailed copy, carries the private dashboard's link and passphrase
 # (field-notes/staging/ is gitignored; the committed note stays clean).
