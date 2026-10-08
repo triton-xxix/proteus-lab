@@ -73,11 +73,16 @@ def feed_status(as_of, fx, divs, now_local):
     g = fx[fx["Div"].isin(divs) & fx["Kickoff"].notna()]
     if g.empty:
         return "unknown: no fixtures on file for this group"
-    owed = g[(g["Kickoff"].dt.normalize() > pd.Timestamp(as_of)) & (g["Kickoff"] < now_local - timedelta(days=FEED_GRACE_DAYS))]
+    # A placeholder kickoff sits on the round's first day; the round can run three days past it.
+    late = g["Kickoff"] + pd.to_timedelta(g["TimeTBC"].eq(True).astype(int) * 3, unit="D") if "TimeTBC" in g else g["Kickoff"]
+    owed = g[(g["Kickoff"].dt.normalize() > pd.Timestamp(as_of)) & (late < now_local - timedelta(days=FEED_GRACE_DAYS))]
     if len(owed):
         return "STALE: %d matches kicked off since as_of with no result, first %s" % (len(owed), owed["Kickoff"].min())
-    nxt = g[g["Kickoff"] >= now_local]["Kickoff"].min()
-    return "current, next match on calendar %s" % (nxt if nxt == nxt else "none on file")
+    up = g[g["Kickoff"] >= now_local]
+    if up.empty:
+        return "current, next match on calendar none on file"
+    nxt = up.loc[up["Kickoff"].idxmin()]
+    return "current, next match on calendar %s" % (nxt["Kickoff"].date() if nxt.get("TimeTBC") == True else nxt["Kickoff"])  # noqa: E712
 
 
 def main():
@@ -111,6 +116,9 @@ def main():
         # Fallback rows carry no odds and would block the later football-data row, so only use them
         # once kickoff is close enough that football-data has evidently missed the match.
         if f.get("Source") == "fixturedownload" and ko > now + timedelta(hours=FALLBACK_HOURS):
+            continue
+        # A placeholder kickoff (midnight on the round's first day) is not a kickoff: wait for a source with the time.
+        if f.get("TimeTBC") == True:  # noqa: E712 (numpy bool or NaN from the concat)
             continue
         key = (ko.strftime("%Y-%m-%d"), f["HomeTeam"], f["AwayTeam"])
         if key in have:
