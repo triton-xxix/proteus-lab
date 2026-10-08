@@ -21,7 +21,7 @@ import zipfile
 from datetime import date, datetime, timedelta, timezone
 
 csv.field_size_limit(10**9)
-UA = {"User-Agent": "Proteus-lab research github.com/triton-xxix proteus-lab"}
+UA = {"User-Agent": "Luke Boyd luke.boyd@neptunemarketing.co.uk"}  # contact named by Luke, 9 Oct 2026
 QUARTERS = ["2025q1", "2025q2", "2025q3", "2025q4"]
 SEC = "https://www.sec.gov/files/structureddata/data/insider-transactions-data-sets/%s_form345.zip"
 

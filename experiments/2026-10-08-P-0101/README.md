@@ -1,5 +1,20 @@
 # P-0101: Form 4 cluster buys against SPY, 2025 (8 Oct 2026)
 
+## Rerun, 9 Oct 2026 00:30: no edge
+
+Luke named a contact for the SEC user agent in session, and EDGAR served all four 2025 quarters
+(about 39 MB). Same script, rules unchanged from the text below:
+
+- 20,945 open-market purchase rows on Form 4; 691 cluster events (3+ insiders, 14 days); 611 priced.
+- 30-day excess return over SPY: mean -0.2%, median -1.6%, 5% trimmed mean -1.2%.
+- 45% of clusters beat SPY. t = -0.24.
+
+Verdict: **not worth it**. Cluster buys as defined here, bought the day after the filing, did not beat
+the index over a month in 2025. `summary.json` and `events.json` hold the numbers. The register
+line still reads blocked because `probe.py` takes one verdict per probe; this section supersedes it.
+
+## Original run, 8 Oct
+
 Verdict: **blocked**, before any data arrived.
 
 `cluster.py` is written and ready: SEC's quarterly Insider Transactions Data Sets (2025 Q1 to Q4),
