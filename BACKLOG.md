@@ -168,6 +168,9 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   **Done 2026-10-07:** markitdown 0.1.8 installed here (onnxruntime 1.23.2, magika 0.6.3); a 62k-char arXiv
   HTML page converted in 0.5 s and magika identified a gzip. Use this venv for markitdown. (0.0.2 lives only in the 5 Oct experiment venv
   `sandbox/markitdown/venv`; the main .venv has no markitdown, and nothing in bin/ or the desks calls it.)
+  **Rerun 2026-10-07** (`experiments/2026-10-07-markitdown-018/`): 0.1.8 is byte-identical to 0.0.2 on docx and
+  xlsx; on PDF it adds pipe tables but glues words in 67% of the prose (4% on 0.0.2). For PDF prose use
+  pdfminer directly or check the glued share before trusting the output.
 
 - **Nolan site and the dashboard (2026-10-07, Luke's "cool things" session).** Live: the Tenet
   timeline (`sites/nolan/tenet/`, both orders) at triton-xxix.github.io/proteus-nolan; one film a night
