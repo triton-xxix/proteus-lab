@@ -29,7 +29,15 @@ GROUPS = {"ENG": ("E0", "E1"), "ESP": ("SP1",), "GER": ("D1",), "ITA": ("I1",), 
 SEASONS_HELD = 5
 # Fallback fixtures: fixturedownload.com publishes the whole season ahead, keyless, but no odds.
 # football-data's fixtures.csv only carries the next round and refreshes late in the week.
-FD_SLUGS = {"E0": "epl", "E1": "championship"}
+FD_SLUGS = {"E0": "epl", "E1": "championship", "SP1": "la-liga", "D1": "bundesliga", "I1": "serie-a",
+            "F1": "ligue-1", "N1": "eredivisie", "P1": "primeira-liga", "SC0": "scottish-premiership"}
+# Seven leagues added 2026-10-08 so every group has a season calendar. Their names differ from
+# football-data's ("FC Bayern München"), so pitch/fd_names.py derives the map from matched results
+# into this file; FD_NAMES below stays the hand-written English map it falls back on.
+# Their unscheduled kickoffs are placeholders at midnight, UTC or league-local, on the round's first
+# day. Such rows are flagged TimeTBC: a calendar entry, never a kickoff to pre-register against.
+LEAGUE_TZ = {"E0": "Europe/London", "E1": "Europe/London", "SC0": "Europe/London", "P1": "Europe/Lisbon"}
+FD_NAMES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixturedownload-names.json")
 FD_NAMES = {"Man Utd": "Man United", "Spurs": "Tottenham", "Birmingham City": "Birmingham",
             "Blackburn Rovers": "Blackburn", "Bolton Wanderers": "Bolton", "Cardiff City": "Cardiff",
             "Charlton Athletic": "Charlton", "Derby County": "Derby", "Lincoln City": "Lincoln",
@@ -64,6 +72,10 @@ def refresh():
     txt = fetch("fixtures.csv")
     open(CACHE + "fixtures.csv", "w").write(txt)
     print("ok fixtures", txt.count("\n"), "rows")
+    refresh_fixturedownload()
+
+
+def refresh_fixturedownload():
     y = int("20" + season_codes(1)[0][:2])
     for div, slug in FD_SLUGS.items():
         try:
@@ -101,17 +113,21 @@ def load_fixturedownload():
     """Unplayed matches from the fixturedownload cache, shaped like fixtures.csv rows (no odds).
     Kickoff is naive Europe/London time, matching what predict.py expects."""
     rows = []
-    for div in DIVS:
+    names = json.load(open(FD_NAMES_FILE)) if os.path.exists(FD_NAMES_FILE) else {}
+    for div in FD_SLUGS:
         p = CACHE + "fixturedownload-%s.json" % div
         if not os.path.exists(p):
             continue
         for m in json.load(open(p)):
             if m.get("HomeTeamScore") is not None:
                 continue
-            ko = pd.Timestamp(m["DateUtc"].replace("Z", "")).tz_localize("UTC").tz_convert("Europe/London").tz_localize(None)
-            rows.append({"Div": div, "Date": ko.normalize(), "Kickoff": ko, "Source": "fixturedownload",
-                         "HomeTeam": FD_NAMES.get(m["HomeTeam"], m["HomeTeam"]),
-                         "AwayTeam": FD_NAMES.get(m["AwayTeam"], m["AwayTeam"])})
+            utc = pd.Timestamp(m["DateUtc"].replace("Z", "")).tz_localize("UTC")
+            local = utc.tz_convert(LEAGUE_TZ.get(div, "Europe/Paris"))
+            tbc = (utc.hour, utc.minute) == (0, 0) or (local.hour, local.minute) == (0, 0)
+            ko = utc.tz_convert("Europe/London").tz_localize(None)
+            rows.append({"Div": div, "Date": ko.normalize(), "Kickoff": ko, "Source": "fixturedownload", "TimeTBC": tbc,
+                         "HomeTeam": names.get(div + "|" + m["HomeTeam"], FD_NAMES.get(m["HomeTeam"], m["HomeTeam"])),
+                         "AwayTeam": names.get(div + "|" + m["AwayTeam"], FD_NAMES.get(m["AwayTeam"], m["AwayTeam"]))})
     return pd.DataFrame(rows)
 
 
@@ -157,8 +173,11 @@ def load_fixtures():
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--refresh", action="store_true")
+    ap.add_argument("--calendars", action="store_true", help="refresh only the fixturedownload season calendars")
     a = ap.parse_args()
-    if a.refresh:
+    if a.calendars:
+        refresh_fixturedownload()
+    elif a.refresh:
         refresh()
     else:
         print(load_results().shape, load_fixtures().shape)
