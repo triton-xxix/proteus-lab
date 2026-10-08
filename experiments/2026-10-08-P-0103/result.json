@@ -1,0 +1,15 @@
+{
+ "bars": 25920,
+ "A_shift_entry": {
+  "trades": 1128,
+  "win_rate": 0.329,
+  "mean_R_after_costs": -0.436,
+  "total_R": -492.3
+ },
+ "B_inducement_entry": {
+  "trades": 421,
+  "win_rate": 0.366,
+  "mean_R_after_costs": -0.907,
+  "total_R": -381.7
+ }
+}
