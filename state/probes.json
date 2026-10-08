@@ -1,5 +1,5 @@
 {
- "next_id": 105,
+ "next_id": 107,
  "items": [
   {
    "id": "P-0001",
@@ -2285,6 +2285,46 @@
    ],
    "minutes": 7,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0105",
+   "title": "Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-09",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0106",
+   "title": "Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-09",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }

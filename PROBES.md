@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 62 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
 
-## Queue (16 open)
+## Queue (18 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -29,6 +29,8 @@ Verdicts so far: 62 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
 | P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | harvest | none |  | 0 | 25 min |
 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
+| P-0105 | Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward | desk | none |  | 0 | 20 min |
+| P-0106 | Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more? | desk | none |  | 0 | 30 min |
 
 ## Verdicts (84)
 

@@ -1,0 +1,82 @@
+# Winners and losers, every gate-passer replayed under v0.2 exits (built 2026-10-09 00:48)
+
+## All gate-passers
+n 163: wins 41, stop-outs 78, rugs 33, time stops 11, mean £-21.0
+feature             winners   stopped      rugs | win rate by tercile low / mid / high (n)
+age_h                  8.10      6.90     19.00 | 33% / 24% / 18%  (163)
+liq_usd               65118     56319   1631819 | 20% / 37% / 18%  (163)
+mcap_usd             468456    340944 320349792 | 19% / 37% / 20%  (163)
+mcap_per_liq           6.74      5.49       196 | 20% / 33% / 22%  (163)
+vol_h1               178313     82455     45939 | 17% / 17% / 42%  (163)
+vol_h24             1884528   2540622   1137503 | 26% / 20% / 29%  (163)
+turnover_h1            2.18      1.49      0.02 |  6% / 31% / 38%  (163)
+h1_share_of_24h        0.07      0.04      0.03 | 15% / 19% / 42%  (163)
+trades_h1              2607      1741      3356 | 20% / 22% / 33%  (163)
+buy_share_h1           0.57      0.54      0.98 | 22% / 33% / 20%  (163)
+chg_h1                -4.15      2.50      3.14 | 31% / 20% / 24%  (163)
+chg_h24                 593       356    382021 | 17% / 35% / 24%  (162)
+top10_pct             16.45     17.50      1.15 | 22% / 22% / 31%  (163)
+holders                8067      7606      3058 | 19% / 28% / 29%  (163)
+lp_locked_pct           100       100       100 | 17% / 22% / 36%  (163)
+rug_score              1.00      1.00     53.00 | 20% / 35% / 20%  (163)
+rug_risk_named         0.00      0.00      1.00 | no: 30% of 126, yes:  8% of 37
+socials                1.00      1.00      0.00 | 15% / 30% / 31%  (163)
+pumpswap               1.00      1.00      1.00 | no: 20% of 10, yes: 25% of 153
+tg_mentions            7.00     14.00      0.00 | 18% / 39% / 22%  (148)
+reddit_mentions        0.00      0.00      0.00 | 
+x_mentions             0.00      0.00      0.00 |  8% / 47% / 35%  (109)
+paid_promo             1.00      1.00      0.00 | no:  7% of 28, yes: 31% of 120
+
+## Only the ones the live book bought
+n 48: wins 20, stop-outs 27, rugs 1, time stops 0, mean £6.7
+feature             winners   stopped      rugs | win rate by tercile low / mid / high (n)
+age_h                  4.70      4.40     24.80 | 50% / 38% / 38%  (48)
+liq_usd               82961     78047     34281 | 25% / 56% / 44%  (48)
+mcap_usd             712714    585503    108508 | 25% / 50% / 50%  (48)
+mcap_per_liq           8.08      7.11      3.17 | 19% / 50% / 56%  (48)
+vol_h1               427106    323843    367742 | 31% / 44% / 50%  (48)
+vol_h24             2944308   4416510   6262117 | 50% / 50% / 25%  (48)
+turnover_h1            3.80      4.73     10.73 | 38% / 56% / 31%  (48)
+h1_share_of_24h        0.12      0.08      0.06 | 25% / 50% / 50%  (48)
+trades_h1              4952      4523      5622 | 38% / 44% / 44%  (48)
+buy_share_h1           0.57      0.53      0.62 | 19% / 50% / 56%  (48)
+chg_h1                 0.59      9.33    -62.74 | 38% / 44% / 44%  (48)
+chg_h24                 956       666    -63.99 | 33% / 53% / 41%  (47)
+top10_pct             14.66     15.13      3.93 | 50% / 38% / 38%  (48)
+holders                8435      9412     17685 | 38% / 56% / 31%  (48)
+lp_locked_pct           100       100       100 | 19% / 56% / 50%  (48)
+rug_score              1.00      1.00      1.00 | 19% / 50% / 56%  (48)
+rug_risk_named         0.00      0.00      0.00 | no: 40% of 45, yes: 67% of 3
+socials                1.00      1.00      1.00 | 
+pumpswap               1.00      1.00      1.00 | no: 25% of 4, yes: 43% of 44
+tg_mentions            6.00     14.00      2.00 | 43% / 57% / 31%  (44)
+reddit_mentions        0.00      0.00      0.00 | no: 46% of 41, yes:  0% of 3
+x_mentions             0.00      0.00      7.00 | 21% / 50% / 56%  (44)
+paid_promo             1.00      1.00      1.00 | no: 100% of 1, yes: 42% of 43
+
+## Gate-passers the book did not buy
+n 115: wins 21, stop-outs 51, rugs 32, time stops 11, mean £-32.5
+feature             winners   stopped      rugs | win rate by tercile low / mid / high (n)
+age_h                 14.80     11.20     18.90 | 26% / 16% / 13%  (115)
+liq_usd               50446     47436   1685238 | 16% / 32% /  8%  (115)
+mcap_usd             277273    263253 341952900 | 18% / 29% /  8%  (115)
+mcap_per_liq           5.30      5.07       203 | 18% / 32% /  5%  (115)
+vol_h1                66750     47468     45869 | 13% / 16% / 26%  (115)
+vol_h24             1476898   2099188   1126028 | 21% / 16% / 18%  (115)
+turnover_h1            1.12      0.94      0.02 |  5% / 21% / 28%  (115)
+h1_share_of_24h        0.03      0.02      0.03 | 16% / 18% / 21%  (115)
+trades_h1              1041       888      3334 | 24% / 18% / 13%  (115)
+buy_share_h1           0.58      0.54      0.98 | 21% / 26% /  8%  (115)
+chg_h1                -4.51      1.82      3.23 | 26% / 13% / 15%  (115)
+chg_h24                 349       236    444037 | 13% / 29% / 13%  (115)
+top10_pct             17.96     18.38      1.15 | 11% / 21% / 23%  (115)
+holders                5663      7226      3056 | 16% / 16% / 23%  (115)
+lp_locked_pct           100       100       100 | 13% / 13% / 28%  (115)
+rug_score              1.00      1.00     53.00 | 21% / 24% / 10%  (115)
+rug_risk_named         0.00      0.00      1.00 | no: 25% of 81, yes:  3% of 34
+socials                1.00      1.00      0.00 |  5% / 24% / 26%  (115)
+pumpswap               1.00      1.00      1.00 | no: 17% of 6, yes: 18% of 109
+tg_mentions            7.00     16.00      0.00 | 12% / 29% / 17%  (104)
+reddit_mentions        0.00      0.00      0.00 | 
+x_mentions             2.00      0.00      0.00 |  0% / 29% / 35%  (65)
+paid_promo             1.00      1.00      0.00 | no:  4% of 27, yes: 25% of 77
