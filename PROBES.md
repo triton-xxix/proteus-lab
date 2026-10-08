@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 61 works, 4 broken, 11 blocked, 5 not worth it. Killed: 4.
+Verdicts so far: 61 works, 4 broken, 11 blocked, 6 not worth it. Killed: 4.
 
-## Queue (19 open)
+## Queue (18 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -31,12 +31,12 @@ Verdicts so far: 61 works, 4 broken, 11 blocked, 5 not worth it. Killed: 4.
 | P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | harvest | none |  | 0 | 25 min |
 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
-| P-0104 | Five-rule 15m/5m box strategy: does it have positive expectancy after costs on two years of BTCUSDT? | vault | none |  | 0 | 30 min |
 
-## Verdicts (81)
+## Verdicts (82)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-08 | P-0104 | Five-rule 15m/5m box strategy: does it have positive expectancy after costs on two years of BTCUSDT? | **not-worth-it** | No: my mechanical reading of the five rules took 3094 BTCUSDT 5m trades over two years, 33% winners at 2R, -0.02R before costs and -0.67R after 0.1% round-trip costs (median stop 0.2% away), the same in both halves. | `experiments/2026-10-08-P-0104` | 7 min, 5 calls, 0 denied |
 | 2026-10-08 | P-0103 | Inducement filter: does one extra sweep after a structure shift beat entering on the shift, on BTCUSDT 5m? | **not-worth-it** | No: on 90 days of BTCUSDT 5m with fixed fractal rules, shift entry made 1128 trades at -0.44R after 0.1% costs, the inducement entry 421 trades at -0.91R; its win rate is higher (37% v 33% at 2R) but its tighter stops make costs eat it. | `experiments/2026-10-08-P-0103` | 1 min, 3 calls, 0 denied |
 | 2026-10-08 | P-0102 | News filter: is BTC's hour after high-impact USD events 1.5x more volatile than baseline, last 12 months? | **works** | Yes: BTC's high-low range in the hour from release was 2.9x its same-slot weekday median for FOMC (8 events), 1.7x for CPI (10) and 1.9x for NFP (11), pooled 2.3x on 29 events, Binance 30m candles Oct 2025 to Oct 2026; small samples, dates from the Fed and BLS pages. | `experiments/2026-10-08-P-0102` | 2 min, 11 calls, 0 denied |
 | 2026-10-08 | P-0101 | Form 4 cluster buys: do 3+ insider open-market buys in 14 days beat SPY by 30 days, on 2025 EDGAR filings? | **blocked** | EDGAR returned 403 and a fair-access block page to automated requests without a declared contact email; the cluster script is written and untested on data. | `experiments/2026-10-08-P-0101` | 1 min, 13 calls, 1 denied |
