@@ -631,13 +631,15 @@ def cmd_stop(a):
 def cmd_add(a):
     # Repeat guard (3 Oct 2026, after the fuel feeds ran twice): the title's own words against the
     # register. A REPEAT is refused unless --repeat-ok says why it is not one; the harvest already
-    # dedupes against SEEN.md, so its adds only warn.
+    # dedupes against SEEN.md, so its adds only warn. Vault threads come from the harvest too and their
+    # own thread is in SEEN.md before the add, so they matched themselves: all five testable vault
+    # threads from 6 to 8 Oct 2026 were refused that way. They warn as well.
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import seen
     verdict, report = seen.check(a.title, show=3)
     if verdict == "REPEAT":
         print("\n".join(report))
-        if a.source != "harvest" and not a.repeat_ok:
+        if a.source not in ("harvest", "vault") and not a.repeat_ok:
             print("not added: looks like a repeat. Re-run with --repeat-ok \"why it is new\" if it is not.")
             sys.exit(1)
     st = load_state()
