@@ -1,0 +1,38 @@
+{
+ "best_match": {
+  "n": 90,
+  "bias": 0.29,
+  "mae": 0.55,
+  "sd": 0.64,
+  "within_0_5": 0.556,
+  "within_1": 0.878,
+  "same_whole_degree": 0.522
+ },
+ "ukmo_seamless": {
+  "n": 90,
+  "bias": 0.29,
+  "mae": 0.55,
+  "sd": 0.64,
+  "within_0_5": 0.556,
+  "within_1": 0.878,
+  "same_whole_degree": 0.522
+ },
+ "ecmwf_ifs025": {
+  "n": 90,
+  "bias": -0.09,
+  "mae": 0.25,
+  "sd": 0.32,
+  "within_0_5": 0.944,
+  "within_1": 0.978,
+  "same_whole_degree": 0.8
+ },
+ "gfs_seamless": {
+  "n": 90,
+  "bias": 0.28,
+  "mae": 0.63,
+  "sd": 0.78,
+  "within_0_5": 0.556,
+  "within_1": 0.811,
+  "same_whole_degree": 0.478
+ }
+}
