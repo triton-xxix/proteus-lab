@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 68 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 
-## Queue (20 open)
+## Queue (23 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -33,6 +33,9 @@ Verdicts so far: 68 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 | P-0112 | Pre-listing, cheaper X counts: the 5-pair X case-control (5 of 5 listed coins grew chatter more) cost 6.23 USD; find a way to count cashtag posts per day for under 0.05 USD a coin so it can run on 30 pairs and nightly | desk | none |  | 0 | 30 min |
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 | P-0118 | Grinder snapshots: fill mint_auth and freeze_auth from the Solana RPC instead of rugcheck (blank on 1,573 of 1,575 pump.fun mints, P-0099) | desk | none |  | 0 | 15 min |
+| P-0119 | Grinder harness: an entry-delay variant (buy one minute after the snapshot) (DUE.md D-003): experiments/2026-10-06-grinder-fill-check/REPORT.md "Next" | desk | none |  | 0 | 40 min |
+| P-0120 | P-0084 trend portfolio: its recorded Sharpe 0.28 against 0.35 on a re-run of the same script and data; re-read (DUE.md D-004): experiments/2026-10-07-P-0088/README.md | desk | none |  | 0 | 40 min |
+| P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 
 ## Verdicts (94)
 
