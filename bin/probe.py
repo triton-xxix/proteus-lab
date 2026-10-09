@@ -51,6 +51,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta
 
 ROOT = os.environ.get("PROTEUS_ROOT", "/Users/triton/PROTEUS/")
@@ -62,6 +63,7 @@ REGISTER = ROOT + "PROBES.md"
 RUNS = ROOT + "state/runs/"
 HALT = ROOT + "HALT"
 MARKER = ROOT + "state/unattended-session.json"
+MARKER_DIR = ROOT + "state/unattended/"      # per-task markers from bin/runlock.py (2026-10-09)
 DECISIONS = ROOT + "state/unattended-decisions-%s.jsonl"
 NO_GIT = os.environ.get("PROBE_NO_GIT") == "1"
 
@@ -71,7 +73,8 @@ SOURCE_RANK = {"backlog": 1, "intel": 2, "vault": 2, "persona": 3, "field-notes"
 # links rank with the intelligence lane, above the automated harvest, below the backlog's own questions.
 DEFAULT_MAX_MINUTES = 60      # the loop's own ceiling, whatever the night's deadline says
 DEFAULT_MAX_CALLS = 150       # hook-logged tool calls, the token proxy
-DEFAULT_MAX_PROBES = 6
+DEFAULT_MAX_PROBES = 10      # 6 until 9 Oct 2026: on 7 and 8 Oct six verdicts took 14 to 21 min of a 60-min loop,
+                             # so the cap, not the clock, ended the night and refill never got its turn
 MIN_PROBE_MINUTES = 8         # do not start a probe with less than this left
 # Fit slack (7 Oct 2026). On 6 Oct the loop stopped with 28 min left because P-0068 was estimated at
 # 30. Of 54 timed verdicts to that night, none ran over its estimate; the longest took 12 min of 15
@@ -163,20 +166,42 @@ def current_loop():
             continue
         if now() - parse_iso(lp["started_at"]) > timedelta(hours=LOOP_STALE_H):
             continue
+        # a loop 15 minutes past its own deadline with no stop is a dead run (2026-10-09), so a
+        # daytime slot is never told "a loop is already open" by a run that crashed hours ago
+        if lp.get("deadline") and now() - parse_iso(lp["deadline"]) > timedelta(minutes=15):
+            continue
         return lp
     return None
 
 
 def session_short():
-    """First 8 chars of the bound unattended session id, or None in an interactive session."""
+    """First 8 chars of the bound unattended session id, or None in an interactive session.
+
+    Since 9 Oct 2026 a run may be bound through state/unattended/<task>.json instead of the legacy
+    marker. bin/runlock.py allows one scheduled run at a time, so the most recently bound live
+    marker is this run's.
+    """
+    paths = [MARKER]
     try:
-        with open(MARKER) as fh:
-            sid = json.load(fh).get("session_id")
-    except Exception:
-        return None
-    if not sid or sid == "closed":
-        return None
-    return str(sid)[:8]
+        paths += [MARKER_DIR + n for n in os.listdir(MARKER_DIR) if n.endswith(".json")]
+    except FileNotFoundError:
+        pass
+    best = None
+    for path in paths:
+        try:
+            with open(path) as fh:
+                m = json.load(fh)
+        except Exception:
+            continue
+        sid = m.get("session_id")
+        if not sid or sid == "closed":
+            continue
+        bound = float(m.get("bound_at") or 0)
+        if time.time() - bound > LOOP_STALE_H * 3600:
+            continue
+        if best is None or bound > best[0]:
+            best = (bound, str(sid)[:8])
+    return best[1] if best else None
 
 
 def decisions_since(session, since):

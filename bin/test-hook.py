@@ -1,22 +1,29 @@
 #!/usr/bin/env python3
 """Test harness for .claude/hooks/unattended-decide.py (Proteus copy).
 
-Runs the hook as a subprocess with a bound marker and asserts allow/deny per case. Restores the
-marker file afterwards. Exit 0 on all pass, 1 otherwise.
+Runs the hook as a subprocess with a bound marker and asserts allow/deny per case. Exit 0 on all
+pass, 1 otherwise.
+
+Since 2026-10-09 every case runs against a temp state folder (PROTEUS_TEST_STATE): the marker, the
+per-task markers, the decisions log and HALT all live there, so a test can no longer steal a live
+run's binding, put test lines in the real log, or set a real kill switch mid-run.
 
     python3 /Users/triton/PROTEUS/bin/test-hook.py
 """
 import json
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
 import time
 
 ROOT = "/Users/triton/PROTEUS/"
-# The hook beside this script, so a worktree tests its own copy. The marker stays in ROOT because
-# that is where the hook reads it.
+# The hook beside this script, so a worktree tests its own copy.
 HOOK = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".claude/hooks/unattended-decide.py")
-MARKER = ROOT + "state/unattended-session.json"
+TEST_STATE = tempfile.mkdtemp(prefix="proteus-test-hook-") + "/"
+MARKER = TEST_STATE + "unattended-session.json"
+MARKER_DIR = TEST_STATE + "unattended/"
 SID = "test-session-0001"
 
 CASES = [
@@ -211,7 +218,7 @@ FANOUT_CASES = [
 # Kill switch cases run with a HALT file present (created for the block, removed after; a real
 # one, if present, is left alone and the block is skipped). Side effects are refused, the run log
 # and the marker release are not, so a halted run can still say what happened.
-HALT_FILE = ROOT + "HALT"
+HALT_FILE = TEST_STATE + "HALT"     # the hook reads HALT here under PROTEUS_TEST_STATE
 HALT_CASES = [
     ("Bash", {"command": "git -C " + ROOT + " push origin main"}, "deny"),
     ("Bash", {"command": "git -C " + ROOT + " commit -m x"}, "deny"),
@@ -235,6 +242,7 @@ def run(tool, ti, sid=SID, who=None, env=None):
     payload = {"session_id": sid, "tool_name": tool, "tool_input": ti, "permission_mode": "default"}
     payload.update(who or {})
     full_env = dict(os.environ)
+    full_env["PROTEUS_TEST_STATE"] = TEST_STATE
     full_env.update(env or {})
     p = subprocess.run([sys.executable, HOOK], input=json.dumps(payload), capture_output=True, text=True, env=full_env)
     if not p.stdout.strip():
@@ -245,15 +253,106 @@ def run(tool, ti, sid=SID, who=None, env=None):
         return "unparsable:" + p.stdout[:80]
 
 
-def main():
-    os.makedirs(ROOT + "state", exist_ok=True)
-    saved = None
-    if os.path.exists(MARKER):
-        with open(MARKER) as fh:
-            saved = fh.read()
-    with open(MARKER, "w") as fh:
-        json.dump({"session_id": SID, "task": "test", "bound_at": time.time()}, fh)
+def bind(path, sid, task="test", age=0):
+    with open(path, "w") as fh:
+        json.dump({"session_id": sid, "task": task, "bound_at": time.time() - age}, fh)
+
+
+def unbound(path, task, age=0):
+    with open(path, "w") as fh:
+        json.dump({"session_id": None, "task": task}, fh)
+    t = time.time() - age
+    os.utime(path, (t, t))
+
+
+def log_agents(day_offset, sessions):
+    """Append fake allowed-Agent lines to the temp decisions log for a day (0 today, -1 yesterday)."""
+    t = time.time() + day_offset * 86400
+    path = TEST_STATE + "unattended-decisions-" + time.strftime("%Y-%m-%d", time.localtime(t)) + ".jsonl"
+    with open(path, "a") as fh:
+        for sid in sessions:
+            fh.write(json.dumps({"ts": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime(t)), "session": sid[:8],
+                                 "tool": "Agent", "outcome": "allow"}) + "\n")
+
+
+def marker_cases():
+    """Several markers at once (2026-10-09). Returns the number of failures."""
     fails = 0
+    a, b, c, d = "aaaa0001-x", "bbbb0002-x", "cccc0003-x", "dddd0004-x"
+    ro = ("Read", {"file_path": ROOT + "CHARTER.md"})
+
+    def check(label, got, want):
+        ok = got == want
+        print(("PASS" if ok else "FAIL"), "markers", label, "want", want, "got", got)
+        return 0 if ok else 1
+
+    os.makedirs(MARKER_DIR, exist_ok=True)
+    bind(MARKER, a, "proteus-nightly")
+    bind(MARKER_DIR + "inspector.json", b, "inspector")
+    fails += check("legacy-bound session allowed", run(*ro, sid=a), "allow")
+    fails += check("task-bound session allowed", run(*ro, sid=b), "allow")
+    fails += check("third session untouched", run(*ro, sid=c), "silent")
+    # a fresh unbound task marker binds the next new session, and only that one
+    unbound(MARKER_DIR + "trials.json", "trials")
+    fails += check("fresh task marker binds", run(*ro, sid=c), "allow")
+    with open(MARKER_DIR + "trials.json") as fh:
+        fails += check("bound to that session", json.load(fh).get("session_id"), c)
+    fails += check("fourth session untouched", run(*ro, sid=d), "silent")
+    # a session already bound never takes a second fresh marker
+    unbound(MARKER_DIR + "smith.json", "smith")
+    run(*ro, sid=a)
+    with open(MARKER_DIR + "smith.json") as fh:
+        fails += check("bound session leaves a fresh marker alone", json.load(fh).get("session_id"), None)
+    # a task marker older than its 5-minute window is never bound
+    unbound(MARKER_DIR + "smith.json", "smith", age=600)
+    fails += check("stale task marker ignored", run(*ro, sid=d), "silent")
+    # a bound marker past 3 hours is a dead run
+    bind(MARKER_DIR + "inspector.json", b, "inspector", age=4 * 3600)
+    fails += check("dead bound run ignored", run(*ro, sid=b), "silent")
+    # the log records the task and the deny reason
+    run("Read", {"file_path": "/etc/hosts"}, sid=a)
+    path = TEST_STATE + "unattended-decisions-" + time.strftime("%Y-%m-%d") + ".jsonl"
+    with open(path) as fh:
+        last = json.loads(fh.readlines()[-1])
+    fails += check("log carries task", last.get("task"), "proteus-nightly")
+    fails += check("log carries reason", bool(last.get("reason")) and "[Unattended" not in last["reason"], True)
+    # background-task output under /private/tmp/claude-502 is readable, the rest of /tmp is not
+    fails += check("claude tmp output readable", run("Read", {"file_path": "/private/tmp/claude-502/x/tasks/b1.output"}, sid=a), "allow")
+    fails += check("other tmp still denied", run("Read", {"file_path": "/private/tmp/other/x"}, sid=a), "deny")
+    # skills and task prompts are inside the write roots
+    fails += check("skill write allowed", run("Write", {"file_path": ROOT + ".claude/skills/probe-to-verdict/SKILL.md"}, sid=a), "allow")
+    fails += check("task prompt write allowed", run("Write", {"file_path": ROOT + "tasks/smith.md"}, sid=a), "allow")
+    fails += check("live scheduler copy denied", run("Write", {"file_path": "/Users/triton/.claude/scheduled-tasks/proteus-nightly/SKILL.md"}, sid=a), "deny")
+    for n in os.listdir(MARKER_DIR):
+        os.remove(MARKER_DIR + n)
+    return fails
+
+
+def spawn_cases():
+    """The cap across midnight and the daily ceiling (2026-10-09)."""
+    fails = 0
+    spawn = ("Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"})
+    # four spawns logged yesterday for this session: a run crossing midnight is still capped
+    e = "eeee0005-x"
+    bind(MARKER, e, "proteus-nightly")
+    log_agents(-1, [e] * 4)
+    got = run(*spawn, sid=e, env=ON)
+    print(("PASS" if got == "deny" else "FAIL"), "spawns cap across midnight", "want deny got", got)
+    fails += 0 if got == "deny" else 1
+    # twelve spawns today by other scheduled runs: a fresh run is refused by the daily ceiling
+    f = "ffff0006-x"
+    bind(MARKER, f, "trials")
+    log_agents(0, ["11110000-x", "22220000-x", "33330000-x"] * 4)
+    got = run(*spawn, sid=f, env=ON)
+    print(("PASS" if got == "deny" else "FAIL"), "spawns daily ceiling", "want deny got", got)
+    fails += 0 if got == "deny" else 1
+    return fails
+
+
+def main():
+    bind(MARKER, SID)
+    fails = 0
+    n_extra = 0
     try:
         for tool, ti, want in CASES:
             got = run(tool, ti)
@@ -266,8 +365,7 @@ def main():
             fails += 0 if ok else 1
             print(("PASS" if ok else "FAIL"), "cwd", who["cwd"], tool, json.dumps(ti)[:50], "want", want, "got", got)
         # fan-out: rebind the marker to the fresh id, switch the feature on for the subprocess only
-        with open(MARKER, "w") as fh:
-            json.dump({"session_id": FANOUT_SID, "task": "test", "bound_at": time.time()}, fh)
+        bind(MARKER, FANOUT_SID)
         for who, tool, ti, want in FANOUT_CASES:
             got = run(tool, ti, sid=FANOUT_SID, who=who, env=ON)
             ok = got == want
@@ -280,27 +378,23 @@ def main():
         ok = got == "deny"
         fails += 0 if ok else 1
         print(("PASS" if ok else "FAIL"), "fanout off", "Agent", "want deny got", got)
-        # kill switch: HALT present, under the parent's rules, feature flags untouched
-        if os.path.exists(HALT_FILE):
-            print("SKIP halt block: a real HALT file is present; not touching it")
-        else:
-            with open(HALT_FILE, "w") as fh:
-                fh.write("test-hook.py: temporary, removed when the block ends\n")
-            try:
-                for tool, ti, want in HALT_CASES:
-                    got = run(tool, ti, sid=FANOUT_SID, env=ON)
-                    ok = got == want
-                    fails += 0 if ok else 1
-                    print(("PASS" if ok else "FAIL"), "halted", tool, json.dumps(ti)[:60], "want", want, "got", got)
-            finally:
-                os.remove(HALT_FILE)
+        # kill switch: HALT present in the temp state folder, under the parent's rules
+        with open(HALT_FILE, "w") as fh:
+            fh.write("test-hook.py: temporary\n")
+        try:
+            for tool, ti, want in HALT_CASES:
+                got = run(tool, ti, sid=FANOUT_SID, env=ON)
+                ok = got == want
+                fails += 0 if ok else 1
+                print(("PASS" if ok else "FAIL"), "halted", tool, json.dumps(ti)[:60], "want", want, "got", got)
+        finally:
+            os.remove(HALT_FILE)
+        fails += marker_cases()
+        fails += spawn_cases()
+        n_extra = 18   # 16 marker checks + 2 spawn checks
     finally:
-        if saved is None:
-            os.remove(MARKER)
-        else:
-            with open(MARKER, "w") as fh:
-                fh.write(saved)
-    print("%d cases, %d failed" % (len(CASES) + len(CWD_CASES) + len(FANOUT_CASES) + 1 + len(HALT_CASES), fails))
+        shutil.rmtree(TEST_STATE, ignore_errors=True)
+    print("%d cases, %d failed" % (len(CASES) + len(CWD_CASES) + len(FANOUT_CASES) + 1 + len(HALT_CASES) + n_extra, fails))
     sys.exit(1 if fails else 0)
 
 

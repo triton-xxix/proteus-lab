@@ -10,11 +10,16 @@ sandbox/*.html
 sandbox/*.ts
 sandbox/*.txt
 sandbox/*.csv
+sandbox/*.htm
 sandbox/gt-*.json
 sandbox/paperclip-*
 !sandbox/README.md
 state/unattended-session.json
 state/unattended-session.json.tmp
+# run lock and per-task markers (bin/runlock.py, 2026-10-09): live state, never history
+state/run.lock
+state/run.lock.tmp
+state/unattended/
 state/*.jsonl
 !state/spend.jsonl
 grinder/cache/

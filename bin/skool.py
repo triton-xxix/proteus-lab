@@ -151,7 +151,8 @@ def cmd_ingest(a):
         print("HALT set: written, not committed"); return
     files = [QUEUE, draft, OUT] if os.path.exists(draft) else [QUEUE, OUT]
     subprocess.run(["git", "-C", ROOT, "add"] + files, check=False)
-    r = subprocess.run(["git", "-C", ROOT, "commit", "-q", "-m", "skool: reading digests %s" % day], capture_output=True, text=True)
+    # named paths (2026-10-09): a bare commit took whatever another session had staged
+    r = subprocess.run(["git", "-C", ROOT, "commit", "-q", "-m", "skool: reading digests %s" % day, "--"] + files, capture_output=True, text=True)
     if r.returncode == 0:
         subprocess.run(["git", "-C", ROOT, "push", "-q", "origin", "main"], check=False)
         print("committed and pushed")

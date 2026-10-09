@@ -811,7 +811,7 @@ def cmd_ingest(a):
         paths = [p for p in paths if os.path.exists(p)]
         git(["add", "--"] + paths)
         msg = "harvest %s: %d kept of %d judged, %d probes queued" % (date, len(kept), len(new_rows), len(queued))
-        out = git(["commit", "-m", msg])
+        out = git(["commit", "-m", msg, "--"] + paths)   # named paths (2026-10-09), not whatever is staged
         if "nothing to commit" in out:
             committed = "nothing to commit"
         else:

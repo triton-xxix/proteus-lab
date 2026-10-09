@@ -47,14 +47,25 @@ def prompt_text(rec):
     """The text of a real user prompt, or None for tool results and system-injected records."""
     if rec.get("type") != "user" or rec.get("isMeta") or rec.get("isSidechain"):
         return None
+    # A child or background job finishing arrives as a user record (origin kind "task-notification").
+    # Until 9 Oct 2026 each one opened a new "interactive (Luke)" segment, so most of every nightly
+    # after its first child was booked to Luke (1 Oct: 44.6k nightly, 88.1k "Luke").
+    origin = (rec.get("origin") or {}).get("kind")
+    if origin is not None and origin != "human":
+        return None
     c = (rec.get("message") or {}).get("content")
+    if isinstance(c, str) and c.lstrip().startswith("<task-notification>"):
+        return None
     if isinstance(c, str):
         return c
     if isinstance(c, list):
         if any(isinstance(b, dict) and b.get("type") == "tool_result" for b in c):
             return None
         texts = [b.get("text", "") for b in c if isinstance(b, dict) and b.get("type") == "text"]
-        return "\n".join(texts) if texts else None
+        text = "\n".join(texts) if texts else None
+        if text and text.lstrip().startswith("<task-notification>"):
+            return None
+        return text
     return None
 
 

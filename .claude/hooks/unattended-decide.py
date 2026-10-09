@@ -9,7 +9,8 @@ Copied 2026-09-22 from /Users/triton/OBSIDIAN/.claude/hooks/unattended-decide.py
 
 A denial costs one tool call. A prompt costs the whole night. That asymmetry is the entire design.
 
-SCOPE. Acts only for the session the marker file state/unattended-session.json belongs to.
+SCOPE. Acts only for a session bound to a marker: state/unattended-session.json (nightly, weekly)
+or one of state/unattended/<task>.json (written by bin/runlock.py, 2026-10-09).
 Interactive sessions never match, so Luke's own sessions in this folder prompt as normal.
 
 Differences from the vault hook, all deliberate:
@@ -34,13 +35,20 @@ import sys
 import time
 
 PROTEUS_ROOT = "/Users/triton/PROTEUS/"
-MARKER = PROTEUS_ROOT + "state/unattended-session.json"
-LOG_DIR = PROTEUS_ROOT + "state/"
+# PROTEUS_TEST_STATE (set only by bin/test-hook.py) moves the marker, the per-task markers, the
+# decisions log and HALT into a temp folder, so a test can never steal a live run's binding, drop
+# test lines into the real log, or set a real kill switch (all three happened before 2026-10-09).
+_TEST_STATE = os.environ.get("PROTEUS_TEST_STATE")
+STATE_DIR = (_TEST_STATE.rstrip("/") + "/") if _TEST_STATE else PROTEUS_ROOT + "state/"
+MARKER = STATE_DIR + "unattended-session.json"   # the nightly's and weekly's marker, kept as is
+MARKER_DIR = STATE_DIR + "unattended/"           # one marker per task, written by bin/runlock.py
+LOG_DIR = STATE_DIR
 FLY_BIN = PROTEUS_ROOT + "bin/"
 VENV_PY = PROTEUS_ROOT + ".venv/bin/python3"
 VENV_PY_ALT = PROTEUS_ROOT + ".venv/bin/python"
 
 BIND_WINDOW_S = 900        # an unbound marker older than this is ignored, never bound
+BIND_WINDOW_TASK_S = 300   # per-task markers are written by runlock.py one call before binding
 BOUND_MAX_S = 3 * 3600     # a bound marker older than this is a dead run; ignore it
 
 WRITE_ROOTS = (
@@ -48,7 +56,9 @@ WRITE_ROOTS = (
     "/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/",
 )
 
-READ_ROOTS = ("/Users/triton/",)
+# /private/tmp/claude-502/ added 2026-10-09: Claude Code writes background-task output there, and
+# refusing the read lost the Lichess and mentions summaries on 3, 7 and 9 Oct. Read-only.
+READ_ROOTS = ("/Users/triton/", "/private/tmp/claude-502/", "/tmp/claude-502/")
 
 # Fan-out: sub-agents inside an unattended run. Tested 2026-09-24, see
 # experiments/2026-09-24-subagent-guardrails/REPORT.md. A child's calls arrive here with the
@@ -58,6 +68,7 @@ READ_ROOTS = ("/Users/triton/",)
 # (The test harness overrides it with PROTEUS_FANOUT_OVERRIDE=1 or =0; nothing in a run sets that.)
 FANOUT_ENABLED = True
 FANOUT_MAX_SPAWNS = 4                          # per run; the fifth Agent call is denied
+FANOUT_DAILY_MAX = 12                          # all scheduled runs in a day: 4 slots x 2 + nightly 4 (2026-10-09)
 FANOUT_TYPES = {"general-purpose", "Explore"}
 FANOUT_MODELS = {"haiku", "sonnet"}            # must be stated; inheriting Opus is not allowed
 CHILD_WRITE_ROOTS = (PROTEUS_ROOT + "sandbox/", PROTEUS_ROOT + "state/agents/")
@@ -87,37 +98,56 @@ GH_READ = ("repo", "api", "auth")
 # and text outside quotes is syntax, and no pattern can tell those apart reliably.
 
 
-def marker_active(session_id):
+def _markers():
+    """(path, mtime, marker, bind_window) for the legacy marker and every per-task marker."""
+    out = []
+    paths = [(MARKER, BIND_WINDOW_S)]
     try:
-        mtime = os.path.getmtime(MARKER)
-        with open(MARKER) as fh:
-            marker = json.load(fh)
+        paths += [(MARKER_DIR + n, BIND_WINDOW_TASK_S) for n in sorted(os.listdir(MARKER_DIR)) if n.endswith(".json")]
     except Exception:
-        return False
+        pass
+    for path, window in paths:
+        try:
+            mtime = os.path.getmtime(path)
+            with open(path) as fh:
+                out.append((path, mtime, json.load(fh), window))
+        except Exception:
+            continue
+    return out
 
+
+def marker_active(session_id):
+    """The task name this session is bound to, or None.
+
+    Several markers may exist at once since 2026-10-09 (the nightly's legacy file plus one per
+    daytime task under state/unattended/). A session already bound to one is matched first, so a
+    second fresh marker can never be taken by a run that already has one. Otherwise the session
+    binds the first unbound marker still inside its window.
+    """
     now = time.time()
-    bound = marker.get("session_id")
-
-    if bound is None:
-        if now - mtime > BIND_WINDOW_S:
-            return False
+    markers = _markers()
+    for path, mtime, marker, _ in markers:
+        if marker.get("session_id") == session_id:
+            if (now - float(marker.get("bound_at") or mtime)) <= BOUND_MAX_S:
+                return marker.get("task") or "unknown"
+            return None
+    for path, mtime, marker, window in markers:
+        if marker.get("session_id") is not None or now - mtime > window:
+            continue
         marker["session_id"] = session_id
         marker["bound_at"] = now
-        tmp = MARKER + ".tmp"
+        tmp = path + ".tmp"
         try:
             with open(tmp, "w") as fh:
                 json.dump(marker, fh)
-            os.replace(tmp, MARKER)
+            os.replace(tmp, path)
         except Exception:
-            return False
-        return True
-
-    if bound != session_id:
-        return False
-    return (now - float(marker.get("bound_at") or mtime)) <= BOUND_MAX_S
+            return None
+        return marker.get("task") or "unknown"
+    return None
 
 
-def log(session_id, permission_mode, tool, ti, outcome):
+def log(session_id, permission_mode, tool, ti, outcome, reason=""):
     try:
         detail = ti.get("command") or ti.get("file_path") or ti.get("notebook_path") or ti.get("url") or ""
         path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d") + ".jsonl"
@@ -136,6 +166,10 @@ def log(session_id, permission_mode, tool, ti, outcome):
                 "agent_type": CTX.get("agent_type"),
                 "cwd": CTX.get("cwd"),
                 "keys": CTX.get("keys"),
+                # Added 2026-10-09: which task's marker matched, and why a call was denied (the
+                # audit could count denials but not their reasons).
+                "task": CTX.get("task"),
+                "reason": str(reason)[:300] if outcome == "deny" else "",
             }) + "\n")
     except Exception:
         pass
@@ -145,7 +179,7 @@ CTX = {"session": "", "mode": None, "tool": "", "ti": {}}
 
 
 def decide(kind, reason):
-    log(CTX["session"], CTX["mode"], CTX["tool"], CTX["ti"], kind)
+    log(CTX["session"], CTX["mode"], CTX["tool"], CTX["ti"], kind, reason.split(" [Unattended Proteus run")[0])
     sys.stdout.write(json.dumps({
         "hookSpecificOutput": {
             "hookEventName": "PreToolUse",
@@ -498,23 +532,42 @@ def fanout_enabled():
     return FANOUT_ENABLED
 
 
-def spawns_today(session_id):
-    """Agent calls this session has already been allowed today, from the decisions log."""
-    path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d") + ".jsonl"
+def _agent_allows():
+    """(session, ts) for every allowed Agent call in yesterday's and today's decisions logs."""
+    out = []
+    for day in (time.time() - 86400, time.time()):
+        path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d", time.localtime(day)) + ".jsonl"
+        try:
+            with open(path) as fh:
+                for line in fh:
+                    if '"Agent"' not in line:
+                        continue
+                    try:
+                        rec = json.loads(line)
+                    except Exception:
+                        continue
+                    if rec.get("tool") == "Agent" and rec.get("outcome") == "allow":
+                        out.append((rec.get("session") or "", rec.get("ts") or ""))
+        except Exception:
+            pass
+    return out
+
+
+def spawns_this_run(session_id):
+    """Agent calls this session has been allowed, across midnight.
+
+    Until 2026-10-09 this read only today's log, so a nightly that started at 23:23 got a fresh
+    four after 00:00. Session ids are unique, so reading yesterday's log too closes that.
+    """
     short = str(session_id)[:8]
-    n = 0
-    try:
-        with open(path) as fh:
-            for line in fh:
-                try:
-                    rec = json.loads(line)
-                except Exception:
-                    continue
-                if rec.get("session") == short and rec.get("tool") == "Agent" and rec.get("outcome") == "allow":
-                    n += 1
-    except Exception:
-        pass
-    return n
+    return sum(1 for s, _ in _agent_allows() if s == short)
+
+
+def spawns_today_all():
+    """Agent calls allowed to every scheduled run since local midnight (the charter's daily ceiling).
+    Test sessions (ids starting 't', never hex) are left out."""
+    today = time.strftime("%Y-%m-%d")
+    return sum(1 for s, ts in _agent_allows() if ts.startswith(today) and not s.startswith("t"))
 
 
 def agent_ok(ti, session_id):
@@ -531,13 +584,16 @@ def agent_ok(ti, session_id):
     model = ti.get("model")
     if model not in FANOUT_MODELS:
         return "model must be stated and one of %s; got %r." % (sorted(FANOUT_MODELS), model)
-    n = spawns_today(session_id)
+    n = spawns_this_run(session_id)
     if n >= FANOUT_MAX_SPAWNS:
         return "Spawn cap reached: %d of %d sub-agents already used this run." % (n, FANOUT_MAX_SPAWNS)
+    d = spawns_today_all()
+    if d >= FANOUT_DAILY_MAX:
+        return "Daily spawn ceiling reached: %d of %d sub-agents used by scheduled runs today." % (d, FANOUT_DAILY_MAX)
     return None
 
 
-HALT_FILE = PROTEUS_ROOT + "HALT"
+HALT_FILE = (STATE_DIR + "HALT") if _TEST_STATE else PROTEUS_ROOT + "HALT"
 HALT_SCRIPTS = (FLY_BIN + "send-field-notes.sh",)   # scripts that are side effects in themselves
 
 
@@ -621,8 +677,10 @@ def main():
         sys.exit(0)
 
     session_id = data.get("session_id") or ""
-    if not session_id or not marker_active(session_id):
+    task = marker_active(session_id) if session_id else None
+    if not task:
         sys.exit(0)
+    CTX["task"] = task
 
     tool = data.get("tool_name", "") or ""
     ti = data.get("tool_input", {}) or {}

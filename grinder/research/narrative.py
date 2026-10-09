@@ -220,8 +220,10 @@ def ingest():
     print(line)
     if os.path.exists(ROOT + "HALT"):
         print("HALT set: written, not committed"); return
-    subprocess.run(["git", "-C", ROOT, "add", HERE + "/digests", HERE + "/MENTIONS.csv"], check=False)
-    r = subprocess.run(["git", "-C", ROOT, "commit", "-q", "-m", "research desk: digest and mentions %s" % day()], capture_output=True, text=True)
+    paths = [HERE + "/digests", HERE + "/MENTIONS.csv"]
+    subprocess.run(["git", "-C", ROOT, "add"] + paths, check=False)
+    # named paths (2026-10-09): a bare commit took whatever another session had staged
+    r = subprocess.run(["git", "-C", ROOT, "commit", "-q", "-m", "research desk: digest and mentions %s" % day(), "--"] + paths, capture_output=True, text=True)
     if r.returncode == 0:
         subprocess.run(["git", "-C", ROOT, "push", "-q", "origin", "main"], check=False)
         print("committed and pushed")
