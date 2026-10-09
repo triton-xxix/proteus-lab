@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 62 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (20 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -31,6 +31,8 @@ Verdicts so far: 62 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
 | P-0105 | Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward | desk | none |  | 0 | 20 min |
 | P-0106 | Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more? | desk | none |  | 0 | 30 min |
+| P-0107 | Exchange listing effect: from Binance, Coinbase and Crypto.com listing announcements over the last 12 months (public announcement pages or feeds, keyless), what did the token's spot price do from announcement to +1h, +24h and +7d, and is any of it catchable after the announcement is public? | desk | none |  | 0 | 30 min |
+| P-0108 | Funding rates as a spot signal: from keyless perp funding history (Bybit or OKX public endpoints) for BTC and ETH since 2022, do the most extreme funding readings predict next-7-day spot returns, spot only, no leverage? | desk | none |  | 0 | 25 min |
 
 ## Verdicts (84)
 
