@@ -1,7 +1,8 @@
 """Pre-listing tracker, paper only. Run by launchd every 60 s (label com.proteus.prelisting, plist in
 this folder, loaded from here, nothing written to ~/Library). Stops itself at END_UTC and on HALT or
 a DONE file, and unloads its own job. Writes only under track/ in this folder, plus one git commit a
-day of that day's candidate list (the commit timestamp is the proof the list came first).
+day of that day's candidate list (the commit timestamp is the proof the list came first; not
+pushed from here, the next nightly or interactive push publishes it).
 
 Every poll:
 - reads the Upbit trade notices (page 1), the Binance new-listing catalogue (page 1) and Bithumb's
@@ -184,8 +185,9 @@ def build_list():
         if c.returncode == 0:
             committed = time.time()
             h = subprocess.run(["/usr/bin/git", "-C", ROOT, "rev-parse", "--short", "HEAD"], capture_output=True, text=True).stdout.strip()
-            p = subprocess.run(["/usr/bin/git", "-C", ROOT, "push", "-q", "origin", "HEAD"], capture_output=True, text=True, timeout=60)
-            jl("lists.jsonl", {"day": day, "commit": h, "at": now_s(), "push_rc": p.returncode, "push_err": p.stderr[-160:]})
+            # no push from launchd: the keychain credential helper blocks there (9 Oct 2026). The commit
+            # timestamp is the proof; the next nightly or interactive push publishes it.
+            jl("lists.jsonl", {"day": day, "commit": h, "at": now_s()})
         else:
             jl("lists.jsonl", {"day": day, "commit": None, "at": now_s(), "err": (a.stderr + c.stderr + c.stdout)[-200:]})
     # the commit time decides which announcements the list can claim; an uncommitted list claims none
