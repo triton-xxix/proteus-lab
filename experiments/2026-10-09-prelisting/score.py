@@ -82,10 +82,24 @@ def live_sets():
     out["binance_spot"] = set(st["binance_spot_symbols"])
     out["coinbase"] = {x["base"] for x in st["coinbase_products"] if x["quote"] == "USD"}
     out["universe"] = (set(st["binance_spot_symbols"]) | set(st["binance_perp"]) | set(st["okx_spot"]) | set(st["okx_swap"])
-                       | set(st["bybit_spot_symbols"]) | set(st["bybit_perp"]))
+                       | set(st["bybit_spot_symbols"]) | set(st["bybit_perp"])) - set(st["noncrypto"]) - bstocks()
     out["new_symbols"] = {
         "bybit_spot": set(st["bybit_spot_symbols"]), "binance_spot_trading": set(st["binance_spot_symbols"]),
         "bithumb_krw": {m[4:] for m in st["bithumb_markets"] if m.startswith("KRW-")}, "coinbase_trading": out["coinbase"]}
+    return out
+
+
+def bstocks():
+    """Binance's tokenized stocks (bStocks) from the listing catalogue titles: tickers ending in B in those notices."""
+    import re
+    out = set()
+    for p in (os.path.join(HERE, "data", "binance_notices.json"), os.path.join(TRACK, "feed.jsonl")):
+        if not os.path.exists(p):
+            continue
+        rows = json.load(open(p)) if p.endswith(".json") else [json.loads(l) for l in open(p)]
+        for a in rows:
+            if "bStocks" in a.get("title", "") or "Stock" in a.get("title", ""):
+                out |= set(re.findall(r"\(([A-Z0-9]{2,12})\)", a["title"]))
     return out
 
 

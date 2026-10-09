@@ -144,7 +144,11 @@ def static_times():
     out = {}
     d = get("https://fapi.binance.com/fapi/v1/exchangeInfo") or {}
     out["binance_perp"] = {}
+    noncrypto = set()  # tokenized stocks, ETFs, commodities, forex: never Upbit or Coinbase crypto listings
     for s in d.get("symbols", []):
+        if s.get("underlyingType") not in (None, "COIN"):
+            noncrypto.add(strip_mult(s["baseAsset"]))
+            continue
         if s.get("contractType") == "PERPETUAL" and s.get("quoteAsset") == "USDT":
             b = strip_mult(s["baseAsset"])
             out["binance_perp"][b] = min(out["binance_perp"].get(b, 1e13), s["onboardDate"] / 1000)
@@ -153,6 +157,9 @@ def static_times():
         key = "okx_" + inst.lower()
         out[key] = {}
         for s in d.get("data", []):
+            if s.get("instCategory") not in (None, "", "1"):
+                noncrypto.add(s["baseCcy"] if inst == "SPOT" else strip_mult(s["instFamily"].split("-")[0]))
+                continue
             if inst == "SPOT" and s.get("quoteCcy") != "USDT":
                 continue
             if inst == "SWAP" and s.get("settleCcy") != "USDT":
@@ -165,6 +172,9 @@ def static_times():
         d = get("https://api.bybit.com/v5/market/instruments-info?category=linear&limit=1000&cursor=" + cursor) or {}
         r = d.get("result") or {}
         for s in r.get("list", []):
+            if s.get("symbolType") not in (None, "", "innovation"):
+                noncrypto.add(strip_mult(s["baseCoin"]))
+                continue
             if s.get("quoteCoin") == "USDT" and s.get("contractType") == "LinearPerpetual":
                 b = strip_mult(s["baseCoin"])
                 out["bybit_perp"][b] = min(out["bybit_perp"].get(b, 1e13), int(s["launchTime"]) / 1000)
@@ -179,8 +189,12 @@ def static_times():
     out["binance_alpha"] = {}
     out["binance_alpha_mcap"] = {}
     for s in d.get("data") or []:
+        if s.get("stockState") or s.get("rwaInfo"):
+            noncrypto.add(s["symbol"])
+            continue
         if s.get("listingTime"):
             out["binance_alpha"][s["symbol"]] = min(out["binance_alpha"].get(s["symbol"], 1e13), s["listingTime"] / 1000)
+    out["noncrypto"] = sorted(noncrypto)
     d = get("https://data-api.binance.vision/api/v3/exchangeInfo") or {}
     out["binance_spot_symbols"] = sorted({s["baseAsset"] for s in d.get("symbols", []) if s.get("quoteAsset") == "USDT"})
     d = get("https://api.upbit.com/v1/market/all") or []

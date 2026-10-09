@@ -1,0 +1,9697 @@
+{
+"summary": {
+"binance_alpha": {
+"trades": 45,
+"hits": 14,
+"mean_pct": 10.17,
+"median_pct": -4.27,
+"share_up": 0.47,
+"mean_hit_pct": 53.12,
+"mean_nonhit_pct": -9.23
+},
+"binance_perp": {
+"trades": 25,
+"hits": 6,
+"mean_pct": -14.37,
+"median_pct": -40.86,
+"share_up": 0.32,
+"mean_hit_pct": 30.02,
+"mean_nonhit_pct": -28.39
+},
+"binance_spot_announce": {
+"trades": 12,
+"hits": 3,
+"mean_pct": 7.0,
+"median_pct": -27.77,
+"share_up": 0.25,
+"mean_hit_pct": 121.43,
+"mean_nonhit_pct": -31.15
+},
+"binance_spot_trading": {
+"trades": 110,
+"hits": 6,
+"mean_pct": -2.95,
+"median_pct": -2.79,
+"share_up": 0.41,
+"mean_hit_pct": 69.46,
+"mean_nonhit_pct": -7.12
+},
+"bithumb_krw": {
+"trades": 47,
+"hits": 2,
+"mean_pct": -20.25,
+"median_pct": -24.17,
+"share_up": 0.19,
+"mean_hit_pct": -22.17,
+"mean_nonhit_pct": -20.16
+},
+"bybit_perp": {
+"trades": 25,
+"hits": 5,
+"mean_pct": 7.11,
+"median_pct": -22.06,
+"share_up": 0.32,
+"mean_hit_pct": 62.86,
+"mean_nonhit_pct": -6.83
+},
+"bybit_spot": {
+"trades": 41,
+"hits": 11,
+"mean_pct": 4.04,
+"median_pct": -7.29,
+"share_up": 0.32,
+"mean_hit_pct": 60.28,
+"mean_nonhit_pct": -16.59
+},
+"coinbase_post": {
+"trades": 10,
+"hits": 3,
+"mean_pct": 5.03,
+"median_pct": -11.67,
+"share_up": 0.3,
+"mean_hit_pct": 74.59,
+"mean_nonhit_pct": -24.79
+},
+"coinbase_roadmap": {
+"trades": 8,
+"hits": 0,
+"mean_pct": -13.79,
+"median_pct": -16.25,
+"share_up": 0.12,
+"mean_hit_pct": null,
+"mean_nonhit_pct": -13.79
+},
+"coinbase_trading": {
+"trades": 36,
+"hits": 13,
+"mean_pct": 21.41,
+"median_pct": -3.98,
+"share_up": 0.42,
+"mean_hit_pct": 80.04,
+"mean_nonhit_pct": -11.73
+},
+"gate_spot": {
+"trades": 39,
+"hits": 10,
+"mean_pct": 1.65,
+"median_pct": -17.14,
+"share_up": 0.28,
+"mean_hit_pct": 57.03,
+"mean_nonhit_pct": -17.44
+},
+"okx_spot": {
+"trades": 140,
+"hits": 9,
+"mean_pct": -0.48,
+"median_pct": -0.89,
+"share_up": 0.44,
+"mean_hit_pct": 31.01,
+"mean_nonhit_pct": -2.65
+},
+"okx_swap": {
+"trades": 37,
+"hits": 7,
+"mean_pct": -13.95,
+"median_pct": -18.35,
+"share_up": 0.38,
+"mean_hit_pct": 11.69,
+"mean_nonhit_pct": -19.94
+},
+"rank_jump": {
+"trades": 428,
+"hits": 2,
+"mean_pct": -9.98,
+"median_pct": -8.82,
+"share_up": 0.27,
+"mean_hit_pct": 23.59,
+"mean_nonhit_pct": -10.14
+},
+"upbit_btc_usdt_only": {
+"trades": 6,
+"hits": 1,
+"mean_pct": -15.58,
+"median_pct": -11.87,
+"share_up": 0.33,
+"mean_hit_pct": -69.69,
+"mean_nonhit_pct": -4.76
+},
+"upbit_krw": {
+"trades": 30,
+"hits": 3,
+"mean_pct": -17.15,
+"median_pct": -21.56,
+"share_up": 0.23,
+"mean_hit_pct": -0.71,
+"mean_nonhit_pct": -18.97
+},
+"volume_surge": {
+"trades": 545,
+"hits": 4,
+"mean_pct": -7.38,
+"median_pct": -7.08,
+"share_up": 0.3,
+"mean_hit_pct": 10.96,
+"mean_nonhit_pct": -7.52
+}
+},
+"trades": {
+"volume_surge": [
+{
+"symbol": "CAT",
+"t": 1759968000,
+"ret": -0.332,
+"why": "time"
+},
+{
+"symbol": "DBR",
+"t": 1759968000,
+"ret": -0.0647,
+"why": "time"
+},
+{
+"symbol": "VVV",
+"t": 1759968000,
+"ret": -0.3794,
+"why": "time"
+},
+{
+"symbol": "XVS",
+"t": 1759968000,
+"ret": -0.312,
+"why": "time"
+},
+{
+"symbol": "1000CAT",
+"t": 1759968000,
+"ret": -0.333,
+"why": "time"
+},
+{
+"symbol": "1000CHEEMS",
+"t": 1759968000,
+"ret": -0.3319,
+"why": "time"
+},
+{
+"symbol": "LISTA",
+"t": 1759968000,
+"ret": -0.3472,
+"why": "time"
+},
+{
+"symbol": "QTUM",
+"t": 1760054400,
+"ret": 0.0945,
+"why": "time"
+},
+{
+"symbol": "LAVA",
+"t": 1760054400,
+"ret": -0.0024,
+"why": "time"
+},
+{
+"symbol": "ZORA",
+"t": 1760054400,
+"ret": 0.2283,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "TOSHI",
+"t": 1760054400,
+"ret": -0.0666,
+"why": "time"
+},
+{
+"symbol": "SLP",
+"t": 1760054400,
+"ret": -0.0025,
+"why": "time"
+},
+{
+"symbol": "CELR",
+"t": 1760054400,
+"ret": 0.0289,
+"why": "time"
+},
+{
+"symbol": "ASP",
+"t": 1760054400,
+"ret": -0.231,
+"why": "time"
+},
+{
+"symbol": "ADX",
+"t": 1760054400,
+"ret": 0.0274,
+"why": "time"
+},
+{
+"symbol": "MBL",
+"t": 1760054400,
+"ret": -0.0361,
+"why": "time"
+},
+{
+"symbol": "MUBARAK",
+"t": 1760054400,
+"ret": 0.0708,
+"why": "time"
+},
+{
+"symbol": "TLM",
+"t": 1760054400,
+"ret": 0.0248,
+"why": "time"
+},
+{
+"symbol": "STRAX",
+"t": 1760054400,
+"ret": -0.024,
+"why": "time"
+},
+{
+"symbol": "WAN",
+"t": 1760054400,
+"ret": 0.0342,
+"why": "time"
+},
+{
+"symbol": "BMT",
+"t": 1760140800,
+"ret": 0.0496,
+"why": "time"
+},
+{
+"symbol": "WAL",
+"t": 1760140800,
+"ret": 0.1155,
+"why": "time"
+},
+{
+"symbol": "DATA",
+"t": 1760140800,
+"ret": -0.1521,
+"why": "time"
+},
+{
+"symbol": "FLOW",
+"t": 1760140800,
+"ret": 0.0024,
+"why": "time"
+},
+{
+"symbol": "RVN",
+"t": 1760140800,
+"ret": 0.0895,
+"why": "time"
+},
+{
+"symbol": "LTC",
+"t": 1760140800,
+"ret": 0.0339,
+"why": "time"
+},
+{
+"symbol": "ZEC",
+"t": 1760140800,
+"ret": -0.0561,
+"why": "time"
+},
+{
+"symbol": "TAO",
+"t": 1760140800,
+"ret": 0.3273,
+"why": "time"
+},
+{
+"symbol": "NEO",
+"t": 1760140800,
+"ret": 0.1516,
+"why": "time"
+},
+{
+"symbol": "GAS",
+"t": 1760140800,
+"ret": 0.0562,
+"why": "time"
+},
+{
+"symbol": "ICX",
+"t": 1760140800,
+"ret": 0.0898,
+"why": "time"
+},
+{
+"symbol": "MBOX",
+"t": 1760140800,
+"ret": 0.157,
+"why": "time"
+},
+{
+"symbol": "KERNEL",
+"t": 1760140800,
+"ret": 0.1538,
+"why": "time"
+},
+{
+"symbol": "GHST",
+"t": 1760140800,
+"ret": 0.0909,
+"why": "time"
+},
+{
+"symbol": "IOTX",
+"t": 1760140800,
+"ret": -0.13,
+"why": "time"
+},
+{
+"symbol": "RDNT",
+"t": 1760140800,
+"ret": -0.2714,
+"why": "time"
+},
+{
+"symbol": "BNSOL",
+"t": 1760140800,
+"ret": 0.103,
+"why": "time"
+},
+{
+"symbol": "COTI",
+"t": 1760140800,
+"ret": -0.0468,
+"why": "time"
+},
+{
+"symbol": "WBETH",
+"t": 1760140800,
+"ret": 0.058,
+"why": "time"
+},
+{
+"symbol": "EUR",
+"t": 1760140800,
+"ret": 0.0129,
+"why": "time"
+},
+{
+"symbol": "A",
+"t": 1760227200,
+"ret": -0.0279,
+"why": "time"
+},
+{
+"symbol": "DYDX",
+"t": 1760227200,
+"ret": -0.0586,
+"why": "time"
+},
+{
+"symbol": "ZEREBRO",
+"t": 1760227200,
+"ret": 0.1258,
+"why": "time"
+},
+{
+"symbol": "LUNC",
+"t": 1760227200,
+"ret": 0.1342,
+"why": "time"
+},
+{
+"symbol": "APE",
+"t": 1760227200,
+"ret": 0.0361,
+"why": "time"
+},
+{
+"symbol": "NOT",
+"t": 1760227200,
+"ret": -0.1204,
+"why": "time"
+},
+{
+"symbol": "SXT",
+"t": 1760227200,
+"ret": -0.1227,
+"why": "time"
+},
+{
+"symbol": "CTC",
+"t": 1760227200,
+"ret": 0.0026,
+"why": "time"
+},
+{
+"symbol": "BBSOL",
+"t": 1760227200,
+"ret": 0.0135,
+"why": "time"
+},
+{
+"symbol": "FET",
+"t": 1760227200,
+"ret": -0.2664,
+"why": "time"
+},
+{
+"symbol": "CATI",
+"t": 1760227200,
+"ret": 0.0554,
+"why": "time"
+},
+{
+"symbol": "CORE",
+"t": 1760227200,
+"ret": -0.1252,
+"why": "time"
+},
+{
+"symbol": "THETA",
+"t": 1760227200,
+"ret": -0.0155,
+"why": "time"
+},
+{
+"symbol": "ETHW",
+"t": 1760227200,
+"ret": -0.0623,
+"why": "time"
+},
+{
+"symbol": "BEL",
+"t": 1760227200,
+"ret": 0.1117,
+"why": "time"
+},
+{
+"symbol": "ACH",
+"t": 1760227200,
+"ret": -0.0666,
+"why": "time"
+},
+{
+"symbol": "ENJ",
+"t": 1760227200,
+"ret": -0.1101,
+"why": "time"
+},
+{
+"symbol": "ZK",
+"t": 1760227200,
+"ret": -0.172,
+"why": "time"
+},
+{
+"symbol": "CARV",
+"t": 1760227200,
+"ret": -0.1951,
+"why": "time"
+},
+{
+"symbol": "OKSOL",
+"t": 1760227200,
+"ret": 0.013,
+"why": "time"
+},
+{
+"symbol": "IOST",
+"t": 1760227200,
+"ret": -0.011,
+"why": "time"
+},
+{
+"symbol": "SOPH",
+"t": 1760227200,
+"ret": 0.2382,
+"why": "time"
+},
+{
+"symbol": "TRB",
+"t": 1760227200,
+"ret": 0.0416,
+"why": "time"
+},
+{
+"symbol": "ONT",
+"t": 1760227200,
+"ret": -0.0619,
+"why": "time"
+},
+{
+"symbol": "QKC",
+"t": 1760227200,
+"ret": -0.0084,
+"why": "time"
+},
+{
+"symbol": "STEEM",
+"t": 1760227200,
+"ret": -0.0657,
+"why": "time"
+},
+{
+"symbol": "MLN",
+"t": 1760227200,
+"ret": 0.3351,
+"why": "time"
+},
+{
+"symbol": "NIL",
+"t": 1760227200,
+"ret": 0.1978,
+"why": "time"
+},
+{
+"symbol": "KDA",
+"t": 1760227200,
+"ret": -0.7489,
+"why": "time"
+},
+{
+"symbol": "HOT",
+"t": 1760227200,
+"ret": -0.0194,
+"why": "time"
+},
+{
+"symbol": "XNO",
+"t": 1760227200,
+"ret": -0.005,
+"why": "time"
+},
+{
+"symbol": "CHR",
+"t": 1760227200,
+"ret": 0.0328,
+"why": "time"
+},
+{
+"symbol": "DENT",
+"t": 1760227200,
+"ret": 0.0319,
+"why": "time"
+},
+{
+"symbol": "TON",
+"t": 1760227200,
+"ret": -0.0252,
+"why": "time"
+},
+{
+"symbol": "SUSHI",
+"t": 1760313600,
+"ret": -0.1109,
+"why": "time"
+},
+{
+"symbol": "CSPR",
+"t": 1760313600,
+"ret": -0.0407,
+"why": "time"
+},
+{
+"symbol": "KAS",
+"t": 1760313600,
+"ret": -0.1201,
+"why": "time"
+},
+{
+"symbol": "SOLV",
+"t": 1760313600,
+"ret": -0.0756,
+"why": "time"
+},
+{
+"symbol": "SSV",
+"t": 1760313600,
+"ret": -0.0708,
+"why": "time"
+},
+{
+"symbol": "SNX",
+"t": 1760313600,
+"ret": -0.4967,
+"why": "time"
+},
+{
+"symbol": "JASMY",
+"t": 1760313600,
+"ret": -0.0897,
+"why": "time"
+},
+{
+"symbol": "ANIME",
+"t": 1760313600,
+"ret": -0.1114,
+"why": "time"
+},
+{
+"symbol": "RATS",
+"t": 1760313600,
+"ret": 0.1273,
+"why": "time"
+},
+{
+"symbol": "AR",
+"t": 1760313600,
+"ret": -0.1217,
+"why": "time"
+},
+{
+"symbol": "REQ",
+"t": 1760313600,
+"ret": -0.0689,
+"why": "time"
+},
+{
+"symbol": "HIVE",
+"t": 1760313600,
+"ret": -0.1352,
+"why": "time"
+},
+{
+"symbol": "FIO",
+"t": 1760313600,
+"ret": -0.0205,
+"why": "time"
+},
+{
+"symbol": "DF",
+"t": 1760313600,
+"ret": -0.0995,
+"why": "time"
+},
+{
+"symbol": "STORJ",
+"t": 1760313600,
+"ret": -0.1233,
+"why": "time"
+},
+{
+"symbol": "DEGO",
+"t": 1760313600,
+"ret": 0.206,
+"why": "time"
+},
+{
+"symbol": "MAGIC",
+"t": 1760400000,
+"ret": -0.0424,
+"why": "time"
+},
+{
+"symbol": "UMA",
+"t": 1760400000,
+"ret": -0.0394,
+"why": "time"
+},
+{
+"symbol": "SYS",
+"t": 1760400000,
+"ret": -0.0543,
+"why": "time"
+},
+{
+"symbol": "BANANAS31",
+"t": 1760400000,
+"ret": -0.1718,
+"why": "time"
+},
+{
+"symbol": "PSG",
+"t": 1760486400,
+"ret": -0.0905,
+"why": "time"
+},
+{
+"symbol": "METH",
+"t": 1760486400,
+"ret": -0.015,
+"why": "time"
+},
+{
+"symbol": "STETH",
+"t": 1760486400,
+"ret": -0.0251,
+"why": "time"
+},
+{
+"symbol": "H",
+"t": 1760486400,
+"ret": 1.1924,
+"why": "time"
+},
+{
+"symbol": "OM",
+"t": 1760486400,
+"ret": -0.1925,
+"why": "time"
+},
+{
+"symbol": "ARPA",
+"t": 1760486400,
+"ret": -0.0795,
+"why": "time"
+},
+{
+"symbol": "TA",
+"t": 1760572800,
+"ret": -0.1603,
+"why": "time"
+},
+{
+"symbol": "HOME",
+"t": 1760572800,
+"ret": -0.2671,
+"why": "time"
+},
+{
+"symbol": "RAD",
+"t": 1760572800,
+"ret": -0.1097,
+"why": "time"
+},
+{
+"symbol": "ACS",
+"t": 1760659200,
+"ret": -0.3126,
+"why": "time"
+},
+{
+"symbol": "OBT",
+"t": 1760659200,
+"ret": -0.1213,
+"why": "time"
+},
+{
+"symbol": "FORT",
+"t": 1760659200,
+"ret": -0.0306,
+"why": "time"
+},
+{
+"symbol": "YGG",
+"t": 1760659200,
+"ret": -0.172,
+"why": "time"
+},
+{
+"symbol": "D",
+"t": 1760659200,
+"ret": -0.142,
+"why": "time"
+},
+{
+"symbol": "AMP",
+"t": 1760745600,
+"ret": -0.0007,
+"why": "time"
+},
+{
+"symbol": "HEI",
+"t": 1760745600,
+"ret": -0.0046,
+"why": "time"
+},
+{
+"symbol": "TOWNS",
+"t": 1760832000,
+"ret": -0.0834,
+"why": "time"
+},
+{
+"symbol": "FHE",
+"t": 1760832000,
+"ret": 0.0051,
+"why": "time"
+},
+{
+"symbol": "MORPHO",
+"t": 1760918400,
+"ret": -0.048,
+"why": "time"
+},
+{
+"symbol": "ALCX",
+"t": 1760918400,
+"ret": -0.2287,
+"why": "time"
+},
+{
+"symbol": "TRU",
+"t": 1760918400,
+"ret": -0.2527,
+"why": "time"
+},
+{
+"symbol": "FARM",
+"t": 1760918400,
+"ret": -0.1242,
+"why": "time"
+},
+{
+"symbol": "VIC",
+"t": 1761004800,
+"ret": -0.2333,
+"why": "time"
+},
+{
+"symbol": "CPOOL",
+"t": 1761177600,
+"ret": -0.4146,
+"why": "time"
+},
+{
+"symbol": "VIRTUAL",
+"t": 1761436800,
+"ret": -0.0406,
+"why": "time"
+},
+{
+"symbol": "AIXBT",
+"t": 1761436800,
+"ret": -0.3094,
+"why": "time"
+},
+{
+"symbol": "MAVIA",
+"t": 1761523200,
+"ret": -0.6437,
+"why": "time"
+},
+{
+"symbol": "F",
+"t": 1761523200,
+"ret": -0.3063,
+"why": "time"
+},
+{
+"symbol": "XEC",
+"t": 1761523200,
+"ret": -0.0181,
+"why": "time"
+},
+{
+"symbol": "DIA",
+"t": 1761523200,
+"ret": -0.3387,
+"why": "time"
+},
+{
+"symbol": "FORTH",
+"t": 1761523200,
+"ret": -0.0673,
+"why": "time"
+},
+{
+"symbol": "SD",
+"t": 1761609600,
+"ret": -0.2395,
+"why": "time"
+},
+{
+"symbol": "TEL",
+"t": 1761609600,
+"ret": -0.1736,
+"why": "time"
+},
+{
+"symbol": "VANA",
+"t": 1761696000,
+"ret": 0.0557,
+"why": "time"
+},
+{
+"symbol": "PUFFER",
+"t": 1761696000,
+"ret": -0.2927,
+"why": "time"
+},
+{
+"symbol": "AVA",
+"t": 1761696000,
+"ret": -0.1046,
+"why": "time"
+},
+{
+"symbol": "OL",
+"t": 1761696000,
+"ret": -0.4001,
+"why": "time"
+},
+{
+"symbol": "PI",
+"t": 1761696000,
+"ret": -0.1375,
+"why": "time"
+},
+{
+"symbol": "MDT",
+"t": 1761696000,
+"ret": -0.209,
+"why": "time"
+},
+{
+"symbol": "PHB",
+"t": 1761696000,
+"ret": -0.2887,
+"why": "time"
+},
+{
+"symbol": "AVL",
+"t": 1761782400,
+"ret": -0.0706,
+"why": "time"
+},
+{
+"symbol": "FLM",
+"t": 1761782400,
+"ret": -0.3527,
+"why": "time"
+},
+{
+"symbol": "AURORA",
+"t": 1761868800,
+"ret": -0.1166,
+"why": "time"
+},
+{
+"symbol": "NFT",
+"t": 1761868800,
+"ret": -0.0355,
+"why": "time"
+},
+{
+"symbol": "LQTY",
+"t": 1761868800,
+"ret": -0.2145,
+"why": "time"
+},
+{
+"symbol": "PERP",
+"t": 1761868800,
+"ret": -0.334,
+"why": "time"
+},
+{
+"symbol": "LUMIA",
+"t": 1761868800,
+"ret": -0.0526,
+"why": "time"
+},
+{
+"symbol": "FUN",
+"t": 1761868800,
+"ret": -0.3609,
+"why": "time"
+},
+{
+"symbol": "ICNT",
+"t": 1761955200,
+"ret": -0.1327,
+"why": "time"
+},
+{
+"symbol": "VELODROME",
+"t": 1761955200,
+"ret": -0.0188,
+"why": "time"
+},
+{
+"symbol": "ASR",
+"t": 1761955200,
+"ret": -0.1438,
+"why": "time"
+},
+{
+"symbol": "ZEN",
+"t": 1762128000,
+"ret": -0.1835,
+"why": "time"
+},
+{
+"symbol": "SCR",
+"t": 1762128000,
+"ret": -0.2158,
+"why": "time"
+},
+{
+"symbol": "ICP",
+"t": 1762128000,
+"ret": 0.3956,
+"why": "time"
+},
+{
+"symbol": "MOG",
+"t": 1762128000,
+"ret": -0.1278,
+"why": "time"
+},
+{
+"symbol": "DASH",
+"t": 1762128000,
+"ret": -0.3136,
+"why": "time"
+},
+{
+"symbol": "DGB",
+"t": 1762128000,
+"ret": 0.107,
+"why": "time"
+},
+{
+"symbol": "DCR",
+"t": 1762214400,
+"ret": -0.0589,
+"why": "time"
+},
+{
+"symbol": "MOCA",
+"t": 1762300800,
+"ret": -0.3271,
+"why": "time"
+},
+{
+"symbol": "BICO",
+"t": 1762300800,
+"ret": -0.0371,
+"why": "time"
+},
+{
+"symbol": "HMSTR",
+"t": 1762300800,
+"ret": -0.2291,
+"why": "time"
+},
+{
+"symbol": "MOVR",
+"t": 1762300800,
+"ret": -0.0865,
+"why": "time"
+},
+{
+"symbol": "SCRT",
+"t": 1762300800,
+"ret": -0.2043,
+"why": "time"
+},
+{
+"symbol": "DIAM",
+"t": 1762387200,
+"ret": -0.1866,
+"why": "time"
+},
+{
+"symbol": "AVAIL",
+"t": 1762473600,
+"ret": -0.0676,
+"why": "time"
+},
+{
+"symbol": "RESOLV",
+"t": 1762473600,
+"ret": 0.5232,
+"why": "time"
+},
+{
+"symbol": "PROMPT",
+"t": 1762473600,
+"ret": -0.348,
+"why": "time"
+},
+{
+"symbol": "XVG",
+"t": 1762473600,
+"ret": -0.1617,
+"why": "time"
+},
+{
+"symbol": "OXT",
+"t": 1762473600,
+"ret": -0.1717,
+"why": "time"
+},
+{
+"symbol": "ARDR",
+"t": 1762473600,
+"ret": -0.1311,
+"why": "time"
+},
+{
+"symbol": "DUSK",
+"t": 1762473600,
+"ret": -0.317,
+"why": "time"
+},
+{
+"symbol": "ROSE",
+"t": 1762560000,
+"ret": -0.3141,
+"why": "time"
+},
+{
+"symbol": "MANTA",
+"t": 1762560000,
+"ret": -0.0032,
+"why": "time"
+},
+{
+"symbol": "PEOPLE",
+"t": 1762560000,
+"ret": -0.2479,
+"why": "time"
+},
+{
+"symbol": "SWELL",
+"t": 1762560000,
+"ret": -0.3402,
+"why": "time"
+},
+{
+"symbol": "SC",
+"t": 1762560000,
+"ret": -0.2298,
+"why": "time"
+},
+{
+"symbol": "PHA",
+"t": 1762560000,
+"ret": -0.2722,
+"why": "time"
+},
+{
+"symbol": "METIS",
+"t": 1762560000,
+"ret": -0.2688,
+"why": "time"
+},
+{
+"symbol": "FLUX",
+"t": 1762560000,
+"ret": -0.5032,
+"why": "time"
+},
+{
+"symbol": "SYN",
+"t": 1762560000,
+"ret": -0.2118,
+"why": "time"
+},
+{
+"symbol": "ORDI",
+"t": 1762646400,
+"ret": -0.2642,
+"why": "time"
+},
+{
+"symbol": "KSM",
+"t": 1762646400,
+"ret": -0.3116,
+"why": "time"
+},
+{
+"symbol": "ILV",
+"t": 1762646400,
+"ret": -0.3215,
+"why": "time"
+},
+{
+"symbol": "HIGH",
+"t": 1762646400,
+"ret": -0.2082,
+"why": "time"
+},
+{
+"symbol": "OGN",
+"t": 1762646400,
+"ret": -0.1935,
+"why": "time"
+},
+{
+"symbol": "PYR",
+"t": 1762646400,
+"ret": -0.3058,
+"why": "time"
+},
+{
+"symbol": "RLC",
+"t": 1762646400,
+"ret": -0.1982,
+"why": "time"
+},
+{
+"symbol": "STRK",
+"t": 1762732800,
+"ret": -0.1507,
+"why": "time"
+},
+{
+"symbol": "XCH",
+"t": 1762732800,
+"ret": -0.2859,
+"why": "time"
+},
+{
+"symbol": "WIN",
+"t": 1762732800,
+"ret": -0.1377,
+"why": "time"
+},
+{
+"symbol": "ALCH",
+"t": 1762905600,
+"ret": 0.1381,
+"why": "time"
+},
+{
+"symbol": "CFX",
+"t": 1762905600,
+"ret": -0.1316,
+"why": "time"
+},
+{
+"symbol": "LSK",
+"t": 1762905600,
+"ret": -0.3469,
+"why": "time"
+},
+{
+"symbol": "ACT",
+"t": 1762905600,
+"ret": 0.105,
+"why": "time"
+},
+{
+"symbol": "MTL",
+"t": 1762905600,
+"ret": -0.1039,
+"why": "time"
+},
+{
+"symbol": "ARK",
+"t": 1762905600,
+"ret": -0.134,
+"why": "time"
+},
+{
+"symbol": "PARTI",
+"t": 1762992000,
+"ret": 0.3054,
+"why": "time"
+},
+{
+"symbol": "POPCAT",
+"t": 1762992000,
+"ret": -0.1136,
+"why": "time"
+},
+{
+"symbol": "CRCLX",
+"t": 1762992000,
+"ret": -0.1051,
+"why": "time"
+},
+{
+"symbol": "BABY",
+"t": 1762992000,
+"ret": -0.293,
+"why": "time"
+},
+{
+"symbol": "SPELL",
+"t": 1762992000,
+"ret": -0.0785,
+"why": "time"
+},
+{
+"symbol": "POLYX",
+"t": 1762992000,
+"ret": -0.0871,
+"why": "time"
+},
+{
+"symbol": "BABY1",
+"t": 1763078400,
+"ret": -0.3794,
+"why": "time"
+},
+{
+"symbol": "SUPRA",
+"t": 1763078400,
+"ret": -0.4318,
+"why": "time"
+},
+{
+"symbol": "LRC",
+"t": 1763078400,
+"ret": -0.1139,
+"why": "time"
+},
+{
+"symbol": "OMI",
+"t": 1763078400,
+"ret": 0.4495,
+"why": "time"
+},
+{
+"symbol": "SANTOS",
+"t": 1763078400,
+"ret": 0.3754,
+"why": "time"
+},
+{
+"symbol": "TFUEL",
+"t": 1763078400,
+"ret": -0.0153,
+"why": "time"
+},
+{
+"symbol": "MET",
+"t": 1763251200,
+"ret": -0.2576,
+"why": "time"
+},
+{
+"symbol": "USUAL",
+"t": 1763251200,
+"ret": -0.0883,
+"why": "time"
+},
+{
+"symbol": "AUDIO",
+"t": 1763251200,
+"ret": -0.068,
+"why": "time"
+},
+{
+"symbol": "PRIME",
+"t": 1763337600,
+"ret": -0.1762,
+"why": "time"
+},
+{
+"symbol": "USDTB",
+"t": 1763510400,
+"ret": -0.0045,
+"why": "time"
+},
+{
+"symbol": "GOOGLX",
+"t": 1763510400,
+"ret": 0.0676,
+"why": "time"
+},
+{
+"symbol": "JITOSOL",
+"t": 1763510400,
+"ret": 0.0541,
+"why": "time"
+},
+{
+"symbol": "XAN",
+"t": 1763596800,
+"ret": -0.4442,
+"why": "time"
+},
+{
+"symbol": "NVDAX",
+"t": 1763596800,
+"ret": 0.0109,
+"why": "time"
+},
+{
+"symbol": "HOODX",
+"t": 1763596800,
+"ret": 0.2825,
+"why": "time"
+},
+{
+"symbol": "TNSR",
+"t": 1763596800,
+"ret": -0.5471,
+"why": "time"
+},
+{
+"symbol": "RARE",
+"t": 1763596800,
+"ret": -0.1756,
+"why": "time"
+},
+{
+"symbol": "TSLAX",
+"t": 1763683200,
+"ret": 0.1466,
+"why": "time"
+},
+{
+"symbol": "GRASS",
+"t": 1763683200,
+"ret": -0.0974,
+"why": "time"
+},
+{
+"symbol": "ZIG",
+"t": 1763683200,
+"ret": 0.0003,
+"why": "time"
+},
+{
+"symbol": "XAI",
+"t": 1763683200,
+"ret": -0.2354,
+"why": "time"
+},
+{
+"symbol": "A8",
+"t": 1763683200,
+"ret": 0.6617,
+"why": "time"
+},
+{
+"symbol": "CYBER",
+"t": 1763683200,
+"ret": 0.0893,
+"why": "time"
+},
+{
+"symbol": "DYM",
+"t": 1763683200,
+"ret": -0.2672,
+"why": "time"
+},
+{
+"symbol": "PIXEL",
+"t": 1763683200,
+"ret": -0.2393,
+"why": "time"
+},
+{
+"symbol": "NMR",
+"t": 1763683200,
+"ret": -0.0258,
+"why": "time"
+},
+{
+"symbol": "SAGA",
+"t": 1763683200,
+"ret": -0.2673,
+"why": "time"
+},
+{
+"symbol": "GNO",
+"t": 1763683200,
+"ret": -0.0246,
+"why": "time"
+},
+{
+"symbol": "IDEX",
+"t": 1763683200,
+"ret": 0.0148,
+"why": "time"
+},
+{
+"symbol": "CTSI",
+"t": 1763683200,
+"ret": -0.2155,
+"why": "time"
+},
+{
+"symbol": "NTRN",
+"t": 1763683200,
+"ret": -0.0473,
+"why": "time"
+},
+{
+"symbol": "UTK",
+"t": 1763683200,
+"ret": -0.078,
+"why": "time"
+},
+{
+"symbol": "GPS",
+"t": 1763769600,
+"ret": 0.0837,
+"why": "time"
+},
+{
+"symbol": "HFT",
+"t": 1763769600,
+"ret": -0.1103,
+"why": "time"
+},
+{
+"symbol": "MAV",
+"t": 1763769600,
+"ret": -0.2369,
+"why": "time"
+},
+{
+"symbol": "FLUID",
+"t": 1763856000,
+"ret": -0.0335,
+"why": "time"
+},
+{
+"symbol": "SWFTC",
+"t": 1763856000,
+"ret": -0.0451,
+"why": "time"
+},
+{
+"symbol": "NAVX",
+"t": 1764028800,
+"ret": 0.062,
+"why": "time"
+},
+{
+"symbol": "MCDX",
+"t": 1764115200,
+"ret": -0.0129,
+"why": "time"
+},
+{
+"symbol": "COINX",
+"t": 1764115200,
+"ret": 0.0142,
+"why": "time"
+},
+{
+"symbol": "REI",
+"t": 1764115200,
+"ret": -0.41,
+"why": "time"
+},
+{
+"symbol": "METAX",
+"t": 1764201600,
+"ret": 0.0242,
+"why": "time"
+},
+{
+"symbol": "PLUME",
+"t": 1764201600,
+"ret": -0.0582,
+"why": "hit coinbase"
+},
+{
+"symbol": "MERL",
+"t": 1764201600,
+"ret": 0.2594,
+"why": "time"
+},
+{
+"symbol": "ACE",
+"t": 1764201600,
+"ret": 0.0541,
+"why": "time"
+},
+{
+"symbol": "HEMI",
+"t": 1764201600,
+"ret": -0.3196,
+"why": "time"
+},
+{
+"symbol": "DODO",
+"t": 1764201600,
+"ret": -0.2127,
+"why": "time"
+},
+{
+"symbol": "TURBO",
+"t": 1764288000,
+"ret": -0.1855,
+"why": "time"
+},
+{
+"symbol": "ACM",
+"t": 1764288000,
+"ret": -0.0228,
+"why": "time"
+},
+{
+"symbol": "SFP",
+"t": 1764288000,
+"ret": -0.0194,
+"why": "time"
+},
+{
+"symbol": "SQD",
+"t": 1764374400,
+"ret": -0.2777,
+"why": "time"
+},
+{
+"symbol": "BANANA",
+"t": 1764374400,
+"ret": -0.1861,
+"why": "time"
+},
+{
+"symbol": "SAHARA",
+"t": 1764460800,
+"ret": -0.2911,
+"why": "time"
+},
+{
+"symbol": "SKL",
+"t": 1764460800,
+"ret": -0.1797,
+"why": "time"
+},
+{
+"symbol": "QNT",
+"t": 1764547200,
+"ret": -0.2594,
+"why": "time"
+},
+{
+"symbol": "BNT",
+"t": 1764547200,
+"ret": -0.0969,
+"why": "time"
+},
+{
+"symbol": "PORTAL",
+"t": 1764633600,
+"ret": 0.1696,
+"why": "time"
+},
+{
+"symbol": "BAND",
+"t": 1764633600,
+"ret": -0.2618,
+"why": "time"
+},
+{
+"symbol": "CHESS",
+"t": 1764633600,
+"ret": 0.1015,
+"why": "time"
+},
+{
+"symbol": "A2Z",
+"t": 1764633600,
+"ret": -0.3344,
+"why": "time"
+},
+{
+"symbol": "SXP",
+"t": 1764633600,
+"ret": 0.2718,
+"why": "time"
+},
+{
+"symbol": "BIFI",
+"t": 1764720000,
+"ret": -0.151,
+"why": "time"
+},
+{
+"symbol": "VOXEL",
+"t": 1764806400,
+"ret": -0.5534,
+"why": "time"
+},
+{
+"symbol": "CITY",
+"t": 1764892800,
+"ret": 0.0686,
+"why": "time"
+},
+{
+"symbol": "CLOUD",
+"t": 1764892800,
+"ret": -0.1657,
+"why": "time"
+},
+{
+"symbol": "FTT",
+"t": 1764979200,
+"ret": -0.2468,
+"why": "time"
+},
+{
+"symbol": "BOBA",
+"t": 1764979200,
+"ret": -0.1275,
+"why": "time"
+},
+{
+"symbol": "LUNA",
+"t": 1764979200,
+"ret": -0.2092,
+"why": "time"
+},
+{
+"symbol": "QI",
+"t": 1765065600,
+"ret": -0.1712,
+"why": "time"
+},
+{
+"symbol": "THE",
+"t": 1765065600,
+"ret": 0.0637,
+"why": "time"
+},
+{
+"symbol": "GLMR",
+"t": 1765152000,
+"ret": -0.3109,
+"why": "time"
+},
+{
+"symbol": "MOODENG",
+"t": 1765152000,
+"ret": -0.2372,
+"why": "time"
+},
+{
+"symbol": "RONIN",
+"t": 1765152000,
+"ret": -0.1728,
+"why": "time"
+},
+{
+"symbol": "ACA",
+"t": 1765152000,
+"ret": -0.2608,
+"why": "time"
+},
+{
+"symbol": "ATA",
+"t": 1765238400,
+"ret": -0.2089,
+"why": "time"
+},
+{
+"symbol": "DEGEN",
+"t": 1765324800,
+"ret": -0.2473,
+"why": "time"
+},
+{
+"symbol": "BAR",
+"t": 1765324800,
+"ret": -0.0785,
+"why": "time"
+},
+{
+"symbol": "SOMI",
+"t": 1765584000,
+"ret": -0.0442,
+"why": "time"
+},
+{
+"symbol": "JUV",
+"t": 1765584000,
+"ret": -0.0706,
+"why": "time"
+},
+{
+"symbol": "GUN",
+"t": 1765670400,
+"ret": -0.4033,
+"why": "time"
+},
+{
+"symbol": "MOVE",
+"t": 1765756800,
+"ret": -0.1096,
+"why": "time"
+},
+{
+"symbol": "BR",
+"t": 1765843200,
+"ret": 0.0641,
+"why": "time"
+},
+{
+"symbol": "EDEN",
+"t": 1765929600,
+"ret": 0.0413,
+"why": "time"
+},
+{
+"symbol": "FORM",
+"t": 1765929600,
+"ret": -0.0335,
+"why": "time"
+},
+{
+"symbol": "EPIC",
+"t": 1766016000,
+"ret": 0.272,
+"why": "time"
+},
+{
+"symbol": "APEX",
+"t": 1766102400,
+"ret": 0.2787,
+"why": "time"
+},
+{
+"symbol": "HAEDAL",
+"t": 1766102400,
+"ret": 0.1171,
+"why": "time"
+},
+{
+"symbol": "LEO",
+"t": 1766102400,
+"ret": 0.1835,
+"why": "time"
+},
+{
+"symbol": "XDC",
+"t": 1766361600,
+"ret": 0.1323,
+"why": "time"
+},
+{
+"symbol": "ALPINE",
+"t": 1766361600,
+"ret": -0.0114,
+"why": "time"
+},
+{
+"symbol": "OPEN",
+"t": 1766361600,
+"ret": 0.0568,
+"why": "time"
+},
+{
+"symbol": "COOK",
+"t": 1766448000,
+"ret": -0.0002,
+"why": "time"
+},
+{
+"symbol": "DOLO",
+"t": 1766534400,
+"ret": 0.0797,
+"why": "time"
+},
+{
+"symbol": "CC",
+"t": 1766534400,
+"ret": 0.3537,
+"why": "time"
+},
+{
+"symbol": "BAN",
+"t": 1766620800,
+"ret": -0.0883,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1766620800,
+"ret": -0.1954,
+"why": "time"
+},
+{
+"symbol": "0G",
+"t": 1766793600,
+"ret": -0.1547,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1766793600,
+"ret": -0.0395,
+"why": "time"
+},
+{
+"symbol": "FLOCK",
+"t": 1766793600,
+"ret": -0.1307,
+"why": "time"
+},
+{
+"symbol": "FXS",
+"t": 1766793600,
+"ret": 0.0992,
+"why": "time"
+},
+{
+"symbol": "SPK",
+"t": 1766966400,
+"ret": 0.049,
+"why": "time"
+},
+{
+"symbol": "ID",
+"t": 1766966400,
+"ret": 0.1437,
+"why": "time"
+},
+{
+"symbol": "BANK",
+"t": 1766966400,
+"ret": -0.0418,
+"why": "time"
+},
+{
+"symbol": "1MBABYDOGE",
+"t": 1767139200,
+"ret": 0.1598,
+"why": "time"
+},
+{
+"symbol": "WOO",
+"t": 1767225600,
+"ret": 0.0226,
+"why": "time"
+},
+{
+"symbol": "BROCCOLI714",
+"t": 1767225600,
+"ret": 0.1527,
+"why": "time"
+},
+{
+"symbol": "REZ",
+"t": 1767225600,
+"ret": 0.0317,
+"why": "time"
+},
+{
+"symbol": "TST",
+"t": 1767225600,
+"ret": -0.0172,
+"why": "time"
+},
+{
+"symbol": "CGPT",
+"t": 1767312000,
+"ret": 0.0732,
+"why": "time"
+},
+{
+"symbol": "TUT",
+"t": 1767312000,
+"ret": 0.0228,
+"why": "time"
+},
+{
+"symbol": "COS",
+"t": 1767312000,
+"ret": 0.0144,
+"why": "time"
+},
+{
+"symbol": "QUICK",
+"t": 1767312000,
+"ret": 0.1952,
+"why": "time"
+},
+{
+"symbol": "SONIC",
+"t": 1767398400,
+"ret": -0.0777,
+"why": "time"
+},
+{
+"symbol": "HOLO",
+"t": 1767398400,
+"ret": -0.1135,
+"why": "time"
+},
+{
+"symbol": "OG",
+"t": 1767398400,
+"ret": -0.3819,
+"why": "time"
+},
+{
+"symbol": "NEIRO",
+"t": 1767484800,
+"ret": -0.2087,
+"why": "time"
+},
+{
+"symbol": "CVX",
+"t": 1767484800,
+"ret": 0.048,
+"why": "time"
+},
+{
+"symbol": "BONK",
+"t": 1767571200,
+"ret": -0.2348,
+"why": "time"
+},
+{
+"symbol": "GOAT",
+"t": 1767571200,
+"ret": -0.2222,
+"why": "time"
+},
+{
+"symbol": "PNUT",
+"t": 1767571200,
+"ret": -0.2035,
+"why": "time"
+},
+{
+"symbol": "BOME",
+"t": 1767571200,
+"ret": -0.2513,
+"why": "time"
+},
+{
+"symbol": "FLOKI",
+"t": 1767571200,
+"ret": -0.2231,
+"why": "time"
+},
+{
+"symbol": "JOE",
+"t": 1767571200,
+"ret": -0.1582,
+"why": "time"
+},
+{
+"symbol": "BTTC",
+"t": 1767657600,
+"ret": -0.1161,
+"why": "time"
+},
+{
+"symbol": "CHILLGUY",
+"t": 1767744000,
+"ret": -0.2995,
+"why": "time"
+},
+{
+"symbol": "WIF",
+"t": 1767744000,
+"ret": -0.1383,
+"why": "time"
+},
+{
+"symbol": "CETUS",
+"t": 1767744000,
+"ret": -0.1371,
+"why": "time"
+},
+{
+"symbol": "WAXP",
+"t": 1767830400,
+"ret": -0.0763,
+"why": "time"
+},
+{
+"symbol": "EUL",
+"t": 1767830400,
+"ret": -0.4035,
+"why": "time"
+},
+{
+"symbol": "IOTA",
+"t": 1767916800,
+"ret": -0.1507,
+"why": "time"
+},
+{
+"symbol": "IQ",
+"t": 1767916800,
+"ret": -0.1267,
+"why": "time"
+},
+{
+"symbol": "TAIKO",
+"t": 1768003200,
+"ret": -0.0832,
+"why": "time"
+},
+{
+"symbol": "LMWR",
+"t": 1768003200,
+"ret": -0.0427,
+"why": "time"
+},
+{
+"symbol": "ACX",
+"t": 1768003200,
+"ret": -0.102,
+"why": "time"
+},
+{
+"symbol": "ZIL",
+"t": 1768262400,
+"ret": -0.1606,
+"why": "time"
+},
+{
+"symbol": "DEXE",
+"t": 1768262400,
+"ret": -0.1542,
+"why": "time"
+},
+{
+"symbol": "SAFE",
+"t": 1768348800,
+"ret": -0.1028,
+"why": "time"
+},
+{
+"symbol": "ARG",
+"t": 1768348800,
+"ret": -0.1404,
+"why": "time"
+},
+{
+"symbol": "OSMO",
+"t": 1768348800,
+"ret": -0.1632,
+"why": "time"
+},
+{
+"symbol": "1000SATS",
+"t": 1768348800,
+"ret": -0.2221,
+"why": "time"
+},
+{
+"symbol": "GNS",
+"t": 1768348800,
+"ret": -0.0518,
+"why": "time"
+},
+{
+"symbol": "RUNE",
+"t": 1768435200,
+"ret": -0.2246,
+"why": "time"
+},
+{
+"symbol": "SATS",
+"t": 1768435200,
+"ret": -0.2794,
+"why": "time"
+},
+{
+"symbol": "COOKIE",
+"t": 1768521600,
+"ret": -0.2986,
+"why": "time"
+},
+{
+"symbol": "DRIFT",
+"t": 1768521600,
+"ret": -0.329,
+"why": "time"
+},
+{
+"symbol": "PIVX",
+"t": 1768521600,
+"ret": -0.2374,
+"why": "time"
+},
+{
+"symbol": "PROM",
+"t": 1768608000,
+"ret": -0.6061,
+"why": "time"
+},
+{
+"symbol": "SPURS",
+"t": 1768694400,
+"ret": -0.1574,
+"why": "time"
+},
+{
+"symbol": "AI",
+"t": 1768694400,
+"ret": -0.3925,
+"why": "time"
+},
+{
+"symbol": "RON",
+"t": 1768694400,
+"ret": -0.3622,
+"why": "time"
+},
+{
+"symbol": "STO",
+"t": 1768694400,
+"ret": -0.2467,
+"why": "time"
+},
+{
+"symbol": "VANRY",
+"t": 1768780800,
+"ret": -0.3078,
+"why": "time"
+},
+{
+"symbol": "GALA",
+"t": 1768867200,
+"ret": -0.2546,
+"why": "time"
+},
+{
+"symbol": "SHELL",
+"t": 1768867200,
+"ret": -0.3762,
+"why": "time"
+},
+{
+"symbol": "MEME",
+"t": 1768953600,
+"ret": -0.3012,
+"why": "time"
+},
+{
+"symbol": "NFP",
+"t": 1768953600,
+"ret": -0.253,
+"why": "time"
+},
+{
+"symbol": "STG",
+"t": 1768953600,
+"ret": -0.0919,
+"why": "time"
+},
+{
+"symbol": "KAIA",
+"t": 1769212800,
+"ret": -0.427,
+"why": "time"
+},
+{
+"symbol": "RIF",
+"t": 1769212800,
+"ret": 0.0441,
+"why": "time"
+},
+{
+"symbol": "ORDER",
+"t": 1769299200,
+"ret": -0.2787,
+"why": "time"
+},
+{
+"symbol": "NOM",
+"t": 1769385600,
+"ret": -0.4856,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1769385600,
+"ret": -0.3273,
+"why": "time"
+},
+{
+"symbol": "MIRA",
+"t": 1769385600,
+"ret": -0.3178,
+"why": "time"
+},
+{
+"symbol": "ZETA",
+"t": 1769472000,
+"ret": -0.3081,
+"why": "time"
+},
+{
+"symbol": "ASTR",
+"t": 1769472000,
+"ret": -0.3637,
+"why": "time"
+},
+{
+"symbol": "BEAMX",
+"t": 1769472000,
+"ret": -0.2918,
+"why": "time"
+},
+{
+"symbol": "ONG",
+"t": 1769558400,
+"ret": -0.2131,
+"why": "time"
+},
+{
+"symbol": "SUN",
+"t": 1769644800,
+"ret": -0.1107,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1769731200,
+"ret": -0.0628,
+"why": "time"
+},
+{
+"symbol": "JUP",
+"t": 1769817600,
+"ret": -0.0838,
+"why": "time"
+},
+{
+"symbol": "INIT",
+"t": 1769817600,
+"ret": -0.1977,
+"why": "time"
+},
+{
+"symbol": "WBTC",
+"t": 1769904000,
+"ret": -0.1098,
+"why": "time"
+},
+{
+"symbol": "C98",
+"t": 1769904000,
+"ret": 0.6206,
+"why": "time"
+},
+{
+"symbol": "PORTO",
+"t": 1769990400,
+"ret": -0.0433,
+"why": "time"
+},
+{
+"symbol": "NKN",
+"t": 1770076800,
+"ret": -0.1255,
+"why": "time"
+},
+{
+"symbol": "ATM",
+"t": 1770249600,
+"ret": 0.9191,
+"why": "time"
+},
+{
+"symbol": "TWT",
+"t": 1770336000,
+"ret": -0.0407,
+"why": "time"
+},
+{
+"symbol": "NEXO",
+"t": 1770336000,
+"ret": 0.1472,
+"why": "time"
+},
+{
+"symbol": "NXPC",
+"t": 1770422400,
+"ret": -0.1086,
+"why": "time"
+},
+{
+"symbol": "EDU",
+"t": 1770422400,
+"ret": -0.0948,
+"why": "time"
+},
+{
+"symbol": "SIGN",
+"t": 1770595200,
+"ret": -0.1387,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1770768000,
+"ret": 0.3625,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1771113600,
+"ret": -0.023,
+"why": "time"
+},
+{
+"symbol": "RPL",
+"t": 1771286400,
+"ret": -0.1498,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1771286400,
+"ret": -0.3712,
+"why": "time"
+},
+{
+"symbol": "C",
+"t": 1771286400,
+"ret": -0.1579,
+"why": "time"
+},
+{
+"symbol": "ORBS",
+"t": 1771632000,
+"ret": 0.2278,
+"why": "time"
+},
+{
+"symbol": "MITO",
+"t": 1771632000,
+"ret": -0.1074,
+"why": "time"
+},
+{
+"symbol": "SAPIEN",
+"t": 1771804800,
+"ret": -0.2205,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1772236800,
+"ret": 0.0163,
+"why": "time"
+},
+{
+"symbol": "ALICE",
+"t": 1772236800,
+"ret": -0.0682,
+"why": "time"
+},
+{
+"symbol": "CTK",
+"t": 1772236800,
+"ret": -0.1012,
+"why": "time"
+},
+{
+"symbol": "ZKJ",
+"t": 1772323200,
+"ret": 0.0262,
+"why": "time"
+},
+{
+"symbol": "HUMA",
+"t": 1772755200,
+"ret": 0.0313,
+"why": "time"
+},
+{
+"symbol": "OKB",
+"t": 1772755200,
+"ret": -0.0665,
+"why": "time"
+},
+{
+"symbol": "HOOK",
+"t": 1772841600,
+"ret": -0.2219,
+"why": "time"
+},
+{
+"symbol": "DOGS",
+"t": 1773100800,
+"ret": -0.1137,
+"why": "time"
+},
+{
+"symbol": "NIGHT",
+"t": 1773273600,
+"ret": -0.0577,
+"why": "time"
+},
+{
+"symbol": "GTC",
+"t": 1773360000,
+"ret": -0.1839,
+"why": "time"
+},
+{
+"symbol": "POND",
+"t": 1773360000,
+"ret": -0.0944,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1773446400,
+"ret": -0.1305,
+"why": "time"
+},
+{
+"symbol": "DOOD",
+"t": 1773532800,
+"ret": -0.1363,
+"why": "time"
+},
+{
+"symbol": "TRA",
+"t": 1773532800,
+"ret": 0.1562,
+"why": "time"
+},
+{
+"symbol": "BB",
+"t": 1773619200,
+"ret": -0.2242,
+"why": "time"
+},
+{
+"symbol": "EIGEN",
+"t": 1773705600,
+"ret": -0.2435,
+"why": "time"
+},
+{
+"symbol": "S",
+"t": 1773705600,
+"ret": -0.1717,
+"why": "time"
+},
+{
+"symbol": "CAKE",
+"t": 1773792000,
+"ret": -0.0348,
+"why": "time"
+},
+{
+"symbol": "BRETT",
+"t": 1773878400,
+"ret": -0.156,
+"why": "time"
+},
+{
+"symbol": "VELO",
+"t": 1773878400,
+"ret": -0.0022,
+"why": "time"
+},
+{
+"symbol": "ZBCN",
+"t": 1774051200,
+"ret": 0.1314,
+"why": "time"
+},
+{
+"symbol": "ROBO",
+"t": 1774224000,
+"ret": -0.3041,
+"why": "time"
+},
+{
+"symbol": "LAZIO",
+"t": 1774483200,
+"ret": 0.0205,
+"why": "time"
+},
+{
+"symbol": "JST",
+"t": 1774569600,
+"ret": 0.1708,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1774569600,
+"ret": 0.5629,
+"why": "time"
+},
+{
+"symbol": "B3",
+"t": 1774656000,
+"ret": -0.0927,
+"why": "time"
+},
+{
+"symbol": "USAT",
+"t": 1774656000,
+"ret": -0.0064,
+"why": "time"
+},
+{
+"symbol": "FIDA",
+"t": 1775174400,
+"ret": -0.025,
+"why": "time"
+},
+{
+"symbol": "FIGHT",
+"t": 1775174400,
+"ret": 0.6658,
+"why": "time"
+},
+{
+"symbol": "BLAST",
+"t": 1775174400,
+"ret": 0.1866,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1775260800,
+"ret": 0.0046,
+"why": "time"
+},
+{
+"symbol": "AEVO",
+"t": 1775260800,
+"ret": 0.0709,
+"why": "time"
+},
+{
+"symbol": "FF",
+"t": 1775865600,
+"ret": -0.2207,
+"why": "time"
+},
+{
+"symbol": "ZAMA",
+"t": 1775865600,
+"ret": 0.4095,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "CKB",
+"t": 1775952000,
+"ret": 0.0799,
+"why": "time"
+},
+{
+"symbol": "GALFT",
+"t": 1776038400,
+"ret": -0.2493,
+"why": "time"
+},
+{
+"symbol": "GIGGLE",
+"t": 1776124800,
+"ret": -0.2996,
+"why": "time"
+},
+{
+"symbol": "TKO",
+"t": 1776124800,
+"ret": 0.0516,
+"why": "time"
+},
+{
+"symbol": "LDO",
+"t": 1776297600,
+"ret": -0.168,
+"why": "time"
+},
+{
+"symbol": "ATH",
+"t": 1776384000,
+"ret": -0.0928,
+"why": "time"
+},
+{
+"symbol": "NEIROCTO",
+"t": 1776384000,
+"ret": -0.1292,
+"why": "time"
+},
+{
+"symbol": "VINE",
+"t": 1776384000,
+"ret": -0.2479,
+"why": "time"
+},
+{
+"symbol": "MEW",
+"t": 1776470400,
+"ret": 0.005,
+"why": "time"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1776556800,
+"ret": -0.1412,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "IO",
+"t": 1776556800,
+"ret": 0.0237,
+"why": "time"
+},
+{
+"symbol": "MNT",
+"t": 1776643200,
+"ret": 0.0104,
+"why": "time"
+},
+{
+"symbol": "RSR",
+"t": 1776729600,
+"ret": 0.1018,
+"why": "time"
+},
+{
+"symbol": "SPX",
+"t": 1776902400,
+"ret": 0.0495,
+"why": "time"
+},
+{
+"symbol": "SKR",
+"t": 1777075200,
+"ret": 0.0261,
+"why": "time"
+},
+{
+"symbol": "BSB",
+"t": 1777075200,
+"ret": -0.1943,
+"why": "time"
+},
+{
+"symbol": "AT",
+"t": 1777507200,
+"ret": -0.0443,
+"why": "time"
+},
+{
+"symbol": "FOGO",
+"t": 1777939200,
+"ret": 0.1205,
+"why": "time"
+},
+{
+"symbol": "AIOZ",
+"t": 1778112000,
+"ret": -0.0423,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1778284800,
+"ret": -0.1132,
+"why": "time"
+},
+{
+"symbol": "DEEP",
+"t": 1778371200,
+"ret": -0.2494,
+"why": "time"
+},
+{
+"symbol": "CRO",
+"t": 1778544000,
+"ret": -0.1376,
+"why": "time"
+},
+{
+"symbol": "CRV",
+"t": 1778716800,
+"ret": -0.2385,
+"why": "time"
+},
+{
+"symbol": "EDGE",
+"t": 1778803200,
+"ret": -0.0223,
+"why": "time"
+},
+{
+"symbol": "BNB",
+"t": 1780272000,
+"ret": -0.1135,
+"why": "time"
+},
+{
+"symbol": "OPN",
+"t": 1780531200,
+"ret": -0.7146,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1780704000,
+"ret": -0.0708,
+"why": "time"
+},
+{
+"symbol": "KMNO",
+"t": 1781395200,
+"ret": 0.1154,
+"why": "time"
+},
+{
+"symbol": "ROAM",
+"t": 1781481600,
+"ret": -0.3169,
+"why": "time"
+},
+{
+"symbol": "ASTER",
+"t": 1781827200,
+"ret": 0.0218,
+"why": "time"
+},
+{
+"symbol": "TRIA",
+"t": 1781827200,
+"ret": -0.0849,
+"why": "time"
+},
+{
+"symbol": "USDY",
+"t": 1781827200,
+"ret": -0.0059,
+"why": "time"
+},
+{
+"symbol": "OFC",
+"t": 1782000000,
+"ret": -0.2202,
+"why": "time"
+},
+{
+"symbol": "CELO",
+"t": 1782345600,
+"ret": 0.0743,
+"why": "time"
+},
+{
+"symbol": "AIGENSYN",
+"t": 1782864000,
+"ret": -0.3059,
+"why": "time"
+},
+{
+"symbol": "MPLX",
+"t": 1783123200,
+"ret": -0.4895,
+"why": "time"
+},
+{
+"symbol": "SNDKB",
+"t": 1783209600,
+"ret": -0.2658,
+"why": "time"
+},
+{
+"symbol": "MUB",
+"t": 1783209600,
+"ret": -0.1673,
+"why": "time"
+},
+{
+"symbol": "YFI",
+"t": 1783382400,
+"ret": -0.0234,
+"why": "time"
+},
+{
+"symbol": "LAT",
+"t": 1783382400,
+"ret": 0.0534,
+"why": "time"
+},
+{
+"symbol": "CRCLB",
+"t": 1783555200,
+"ret": -0.0172,
+"why": "time"
+},
+{
+"symbol": "NVDAB",
+"t": 1783641600,
+"ret": -0.0238,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1783900800,
+"ret": -0.1083,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1784246400,
+"ret": 0.0217,
+"why": "time"
+},
+{
+"symbol": "MANTRA",
+"t": 1784246400,
+"ret": -0.1971,
+"why": "time"
+},
+{
+"symbol": "POR",
+"t": 1784246400,
+"ret": -0.071,
+"why": "time"
+},
+{
+"symbol": "INTCB",
+"t": 1784246400,
+"ret": -0.0561,
+"why": "time"
+},
+{
+"symbol": "EWYB",
+"t": 1784246400,
+"ret": -0.036,
+"why": "time"
+},
+{
+"symbol": "ONE",
+"t": 1784332800,
+"ret": 0.0486,
+"why": "time"
+},
+{
+"symbol": "QQQB",
+"t": 1784851200,
+"ret": 0.0519,
+"why": "time"
+},
+{
+"symbol": "TSLAB",
+"t": 1784851200,
+"ret": 0.0516,
+"why": "time"
+},
+{
+"symbol": "GMX",
+"t": 1784937600,
+"ret": -0.0451,
+"why": "time"
+},
+{
+"symbol": "IRYS",
+"t": 1785196800,
+"ret": 0.1324,
+"why": "time"
+},
+{
+"symbol": "ESE",
+"t": 1785369600,
+"ret": 0.5189,
+"why": "time"
+},
+{
+"symbol": "AMDB",
+"t": 1785369600,
+"ret": -0.0327,
+"why": "time"
+},
+{
+"symbol": "GAIB",
+"t": 1785456000,
+"ret": -0.1983,
+"why": "time"
+},
+{
+"symbol": "LITEB",
+"t": 1785456000,
+"ret": 0.303,
+"why": "time"
+},
+{
+"symbol": "SOXLB",
+"t": 1785456000,
+"ret": 0.2761,
+"why": "time"
+},
+{
+"symbol": "MSFTB",
+"t": 1785456000,
+"ret": 0.0682,
+"why": "time"
+},
+{
+"symbol": "DRAMB",
+"t": 1785456000,
+"ret": 0.1457,
+"why": "time"
+},
+{
+"symbol": "NBISB",
+"t": 1785456000,
+"ret": 0.4762,
+"why": "time"
+},
+{
+"symbol": "QCOMB",
+"t": 1785456000,
+"ret": 0.1202,
+"why": "time"
+},
+{
+"symbol": "METAB",
+"t": 1785456000,
+"ret": 0.0612,
+"why": "time"
+},
+{
+"symbol": "WDCB",
+"t": 1785456000,
+"ret": -0.0624,
+"why": "time"
+},
+{
+"symbol": "GLWB",
+"t": 1785456000,
+"ret": 0.2065,
+"why": "time"
+},
+{
+"symbol": "COINB",
+"t": 1785542400,
+"ret": 0.0234,
+"why": "time"
+},
+{
+"symbol": "CBRSB",
+"t": 1785542400,
+"ret": 0.1329,
+"why": "time"
+},
+{
+"symbol": "SPYB",
+"t": 1785801600,
+"ret": -0.0132,
+"why": "time"
+},
+{
+"symbol": "PLTRB",
+"t": 1785888000,
+"ret": 0.1174,
+"why": "time"
+},
+{
+"symbol": "AAPLX",
+"t": 1785974400,
+"ret": -0.0043,
+"why": "time"
+},
+{
+"symbol": "AMZNX",
+"t": 1785974400,
+"ret": -0.0489,
+"why": "time"
+},
+{
+"symbol": "SPCXB",
+"t": 1785974400,
+"ret": 0.1604,
+"why": "time"
+},
+{
+"symbol": "AAOIB",
+"t": 1786147200,
+"ret": -0.1885,
+"why": "time"
+},
+{
+"symbol": "GOOGLB",
+"t": 1786147200,
+"ret": -0.0424,
+"why": "time"
+},
+{
+"symbol": "XLITE",
+"t": 1786233600,
+"ret": -0.0424,
+"why": "time"
+},
+{
+"symbol": "XAMZN",
+"t": 1786233600,
+"ret": -0.0588,
+"why": "time"
+},
+{
+"symbol": "XMRVL",
+"t": 1786233600,
+"ret": 0.0841,
+"why": "time"
+},
+{
+"symbol": "NYM",
+"t": 1786406400,
+"ret": -0.1686,
+"why": "time"
+},
+{
+"symbol": "XNVDA",
+"t": 1786579200,
+"ret": -0.0039,
+"why": "time"
+},
+{
+"symbol": "XAAPL",
+"t": 1786579200,
+"ret": 0.0262,
+"why": "time"
+},
+{
+"symbol": "RKLBB",
+"t": 1786579200,
+"ret": -0.167,
+"why": "time"
+},
+{
+"symbol": "TSMB",
+"t": 1786579200,
+"ret": -0.0205,
+"why": "time"
+},
+{
+"symbol": "MSTRB",
+"t": 1786665600,
+"ret": 0.367,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1786752000,
+"ret": 0.1096,
+"why": "time"
+},
+{
+"symbol": "CRWVB",
+"t": 1786752000,
+"ret": -0.2016,
+"why": "time"
+},
+{
+"symbol": "QNTB",
+"t": 1786752000,
+"ret": -0.2094,
+"why": "time"
+},
+{
+"symbol": "XORCL",
+"t": 1786838400,
+"ret": -0.0132,
+"why": "time"
+},
+{
+"symbol": "PYBOBO",
+"t": 1787011200,
+"ret": -0.3443,
+"why": "time"
+},
+{
+"symbol": "XAVGO",
+"t": 1787184000,
+"ret": -0.0286,
+"why": "time"
+},
+{
+"symbol": "XQQQ",
+"t": 1787184000,
+"ret": 0.003,
+"why": "time"
+},
+{
+"symbol": "XCOIN",
+"t": 1787184000,
+"ret": 0.1056,
+"why": "time"
+},
+{
+"symbol": "XMSTR",
+"t": 1787184000,
+"ret": 0.2549,
+"why": "time"
+},
+{
+"symbol": "XDELL",
+"t": 1787184000,
+"ret": 0.1789,
+"why": "time"
+},
+{
+"symbol": "MRVLB",
+"t": 1787184000,
+"ret": -0.1633,
+"why": "time"
+},
+{
+"symbol": "AVGOB",
+"t": 1787184000,
+"ret": -0.0289,
+"why": "time"
+},
+{
+"symbol": "XHOOD",
+"t": 1787270400,
+"ret": 0.1167,
+"why": "time"
+},
+{
+"symbol": "ARMB",
+"t": 1787270400,
+"ret": 0.03,
+"why": "time"
+},
+{
+"symbol": "SNXXB",
+"t": 1787270400,
+"ret": 0.1479,
+"why": "time"
+},
+{
+"symbol": "BABAB",
+"t": 1787270400,
+"ret": -0.0552,
+"why": "time"
+},
+{
+"symbol": "XPLTR",
+"t": 1787356800,
+"ret": -0.0277,
+"why": "time"
+},
+{
+"symbol": "XHIMS",
+"t": 1787356800,
+"ret": -0.1791,
+"why": "time"
+},
+{
+"symbol": "XCRCL",
+"t": 1787356800,
+"ret": 0.1558,
+"why": "time"
+},
+{
+"symbol": "XBMNR",
+"t": 1787356800,
+"ret": 0.1057,
+"why": "time"
+},
+{
+"symbol": "HOODB",
+"t": 1787356800,
+"ret": 0.1736,
+"why": "time"
+},
+{
+"symbol": "GENIUS",
+"t": 1787443200,
+"ret": -0.092,
+"why": "time"
+},
+{
+"symbol": "NES",
+"t": 1787616000,
+"ret": -0.1012,
+"why": "time"
+},
+{
+"symbol": "IRENB",
+"t": 1787961600,
+"ret": 0.1887,
+"why": "time"
+},
+{
+"symbol": "ASMLB",
+"t": 1787961600,
+"ret": -0.0131,
+"why": "time"
+},
+{
+"symbol": "CARDS",
+"t": 1788134400,
+"ret": -0.313,
+"why": "time"
+},
+{
+"symbol": "FLR",
+"t": 1788220800,
+"ret": -0.0612,
+"why": "time"
+},
+{
+"symbol": "CRDOB",
+"t": 1788393600,
+"ret": 0.0115,
+"why": "time"
+},
+{
+"symbol": "BEB",
+"t": 1788480000,
+"ret": -0.0005,
+"why": "time"
+},
+{
+"symbol": "XBE",
+"t": 1788652800,
+"ret": 0.0035,
+"why": "time"
+},
+{
+"symbol": "XIREN",
+"t": 1789084800,
+"ret": 0.0039,
+"why": "time"
+},
+{
+"symbol": "ORCLB",
+"t": 1789084800,
+"ret": -0.0785,
+"why": "time"
+},
+{
+"symbol": "GMEB",
+"t": 1789084800,
+"ret": 0.103,
+"why": "time"
+},
+{
+"symbol": "XAAOI",
+"t": 1789516800,
+"ret": -0.0051,
+"why": "time"
+},
+{
+"symbol": "TQQQB",
+"t": 1789516800,
+"ret": 0.1345,
+"why": "time"
+},
+{
+"symbol": "FLNCB",
+"t": 1789689600,
+"ret": 0.0433,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1789948800,
+"ret": 0.0022,
+"why": "time"
+},
+{
+"symbol": "NS",
+"t": 1789948800,
+"ret": 0.0097,
+"why": "time"
+},
+{
+"symbol": "XMSFT",
+"t": 1790208000,
+"ret": 0.0486,
+"why": "time"
+},
+{
+"symbol": "XRKLB",
+"t": 1790208000,
+"ret": -0.0828,
+"why": "time"
+},
+{
+"symbol": "AMZNB",
+"t": 1790208000,
+"ret": 0.0185,
+"why": "time"
+},
+{
+"symbol": "SOXSB",
+"t": 1790208000,
+"ret": -0.0077,
+"why": "time"
+}
+],
+"rank_jump": [
+{
+"symbol": "1000CHEEMS",
+"t": 1759968000,
+"ret": -0.3319,
+"why": "time"
+},
+{
+"symbol": "WAL",
+"t": 1760140800,
+"ret": 0.1155,
+"why": "time"
+},
+{
+"symbol": "ZORA",
+"t": 1760140800,
+"ret": 0.4169,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BNSOL",
+"t": 1760140800,
+"ret": 0.103,
+"why": "time"
+},
+{
+"symbol": "WBETH",
+"t": 1760140800,
+"ret": 0.058,
+"why": "time"
+},
+{
+"symbol": "ZEREBRO",
+"t": 1760227200,
+"ret": 0.1258,
+"why": "time"
+},
+{
+"symbol": "RDNT",
+"t": 1760227200,
+"ret": -0.2827,
+"why": "time"
+},
+{
+"symbol": "BBSOL",
+"t": 1760313600,
+"ret": -0.0471,
+"why": "time"
+},
+{
+"symbol": "BEL",
+"t": 1760313600,
+"ret": -0.1757,
+"why": "time"
+},
+{
+"symbol": "ASTR",
+"t": 1760313600,
+"ret": -0.1655,
+"why": "time"
+},
+{
+"symbol": "XVS",
+"t": 1760313600,
+"ret": -0.1717,
+"why": "time"
+},
+{
+"symbol": "UMA",
+"t": 1760400000,
+"ret": -0.0394,
+"why": "time"
+},
+{
+"symbol": "MBOX",
+"t": 1760400000,
+"ret": -0.1128,
+"why": "time"
+},
+{
+"symbol": "TLM",
+"t": 1760400000,
+"ret": -0.1971,
+"why": "time"
+},
+{
+"symbol": "MAGIC",
+"t": 1760486400,
+"ret": -0.0064,
+"why": "time"
+},
+{
+"symbol": "ADX",
+"t": 1760486400,
+"ret": 0.2245,
+"why": "time"
+},
+{
+"symbol": "ARPA",
+"t": 1760486400,
+"ret": -0.0795,
+"why": "time"
+},
+{
+"symbol": "SYS",
+"t": 1760572800,
+"ret": -0.0858,
+"why": "time"
+},
+{
+"symbol": "TA",
+"t": 1760745600,
+"ret": -0.1394,
+"why": "time"
+},
+{
+"symbol": "D",
+"t": 1760832000,
+"ret": -0.159,
+"why": "time"
+},
+{
+"symbol": "DEGO",
+"t": 1760832000,
+"ret": -0.4295,
+"why": "time"
+},
+{
+"symbol": "TRU",
+"t": 1760918400,
+"ret": -0.2527,
+"why": "time"
+},
+{
+"symbol": "MLN",
+"t": 1760918400,
+"ret": -0.4116,
+"why": "time"
+},
+{
+"symbol": "JST",
+"t": 1761004800,
+"ret": 0.0212,
+"why": "time"
+},
+{
+"symbol": "TOWNS",
+"t": 1761004800,
+"ret": -0.1831,
+"why": "time"
+},
+{
+"symbol": "ALCX",
+"t": 1761004800,
+"ret": -0.1923,
+"why": "time"
+},
+{
+"symbol": "FARM",
+"t": 1761004800,
+"ret": -0.0877,
+"why": "time"
+},
+{
+"symbol": "SOPH",
+"t": 1761091200,
+"ret": -0.2007,
+"why": "time"
+},
+{
+"symbol": "CATI",
+"t": 1761177600,
+"ret": -0.233,
+"why": "time"
+},
+{
+"symbol": "CPOOL",
+"t": 1761177600,
+"ret": -0.4146,
+"why": "time"
+},
+{
+"symbol": "RAD",
+"t": 1761177600,
+"ret": -0.2128,
+"why": "time"
+},
+{
+"symbol": "KDA",
+"t": 1761177600,
+"ret": -0.6151,
+"why": "time"
+},
+{
+"symbol": "STORJ",
+"t": 1761177600,
+"ret": -0.0214,
+"why": "time"
+},
+{
+"symbol": "SIGN",
+"t": 1761264000,
+"ret": -0.0235,
+"why": "time"
+},
+{
+"symbol": "HOT",
+"t": 1761264000,
+"ret": 0.092,
+"why": "time"
+},
+{
+"symbol": "SYN",
+"t": 1761264000,
+"ret": -0.0313,
+"why": "time"
+},
+{
+"symbol": "VIC",
+"t": 1761264000,
+"ret": -0.0808,
+"why": "time"
+},
+{
+"symbol": "H",
+"t": 1761350400,
+"ret": -0.4638,
+"why": "time"
+},
+{
+"symbol": "MAVIA",
+"t": 1761523200,
+"ret": -0.6437,
+"why": "time"
+},
+{
+"symbol": "DIA",
+"t": 1761523200,
+"ret": -0.3387,
+"why": "time"
+},
+{
+"symbol": "EDU",
+"t": 1761523200,
+"ret": -0.1768,
+"why": "time"
+},
+{
+"symbol": "XEC",
+"t": 1761609600,
+"ret": -0.0419,
+"why": "time"
+},
+{
+"symbol": "DOOD",
+"t": 1761696000,
+"ret": -0.3291,
+"why": "time"
+},
+{
+"symbol": "AVA",
+"t": 1761696000,
+"ret": -0.1046,
+"why": "time"
+},
+{
+"symbol": "ORDER",
+"t": 1761696000,
+"ret": -0.3165,
+"why": "time"
+},
+{
+"symbol": "OL",
+"t": 1761696000,
+"ret": -0.4001,
+"why": "time"
+},
+{
+"symbol": "AMP",
+"t": 1761696000,
+"ret": -0.0203,
+"why": "time"
+},
+{
+"symbol": "PHB",
+"t": 1761696000,
+"ret": -0.2887,
+"why": "time"
+},
+{
+"symbol": "FUN",
+"t": 1761696000,
+"ret": -0.3665,
+"why": "time"
+},
+{
+"symbol": "PUFFER",
+"t": 1761782400,
+"ret": -0.1532,
+"why": "time"
+},
+{
+"symbol": "DBR",
+"t": 1761782400,
+"ret": -0.284,
+"why": "time"
+},
+{
+"symbol": "AVL",
+"t": 1761782400,
+"ret": -0.0706,
+"why": "time"
+},
+{
+"symbol": "FLOCK",
+"t": 1761782400,
+"ret": -0.1672,
+"why": "time"
+},
+{
+"symbol": "FLM",
+"t": 1761782400,
+"ret": -0.3527,
+"why": "time"
+},
+{
+"symbol": "MDT",
+"t": 1761782400,
+"ret": -0.1856,
+"why": "time"
+},
+{
+"symbol": "VANA",
+"t": 1761868800,
+"ret": -0.0719,
+"why": "time"
+},
+{
+"symbol": "PERP",
+"t": 1761868800,
+"ret": -0.334,
+"why": "time"
+},
+{
+"symbol": "LUMIA",
+"t": 1761868800,
+"ret": -0.0526,
+"why": "time"
+},
+{
+"symbol": "PYR",
+"t": 1761868800,
+"ret": 0.0952,
+"why": "time"
+},
+{
+"symbol": "ICNT",
+"t": 1761955200,
+"ret": -0.1327,
+"why": "time"
+},
+{
+"symbol": "LQTY",
+"t": 1761955200,
+"ret": -0.1779,
+"why": "time"
+},
+{
+"symbol": "ASR",
+"t": 1761955200,
+"ret": -0.1438,
+"why": "time"
+},
+{
+"symbol": "VELODROME",
+"t": 1762041600,
+"ret": -0.106,
+"why": "time"
+},
+{
+"symbol": "SCR",
+"t": 1762128000,
+"ret": -0.2158,
+"why": "time"
+},
+{
+"symbol": "MOG",
+"t": 1762128000,
+"ret": -0.1278,
+"why": "time"
+},
+{
+"symbol": "DGB",
+"t": 1762128000,
+"ret": 0.107,
+"why": "time"
+},
+{
+"symbol": "PIVX",
+"t": 1762128000,
+"ret": -0.1478,
+"why": "time"
+},
+{
+"symbol": "MOCA",
+"t": 1762214400,
+"ret": -0.3297,
+"why": "time"
+},
+{
+"symbol": "CKB",
+"t": 1762214400,
+"ret": -0.0005,
+"why": "time"
+},
+{
+"symbol": "DCR",
+"t": 1762214400,
+"ret": -0.0589,
+"why": "time"
+},
+{
+"symbol": "HMSTR",
+"t": 1762300800,
+"ret": -0.2291,
+"why": "time"
+},
+{
+"symbol": "MOVR",
+"t": 1762300800,
+"ret": -0.0865,
+"why": "time"
+},
+{
+"symbol": "SCRT",
+"t": 1762300800,
+"ret": -0.2043,
+"why": "time"
+},
+{
+"symbol": "NFT",
+"t": 1762387200,
+"ret": -0.0172,
+"why": "time"
+},
+{
+"symbol": "CARV",
+"t": 1762387200,
+"ret": -0.2567,
+"why": "time"
+},
+{
+"symbol": "XNO",
+"t": 1762387200,
+"ret": 0.0431,
+"why": "time"
+},
+{
+"symbol": "BICO",
+"t": 1762473600,
+"ret": -0.0815,
+"why": "time"
+},
+{
+"symbol": "RVN",
+"t": 1762473600,
+"ret": -0.2571,
+"why": "time"
+},
+{
+"symbol": "RESOLV",
+"t": 1762473600,
+"ret": 0.5232,
+"why": "time"
+},
+{
+"symbol": "XVG",
+"t": 1762473600,
+"ret": -0.1617,
+"why": "time"
+},
+{
+"symbol": "DUSK",
+"t": 1762473600,
+"ret": -0.317,
+"why": "time"
+},
+{
+"symbol": "ROSE",
+"t": 1762560000,
+"ret": -0.3141,
+"why": "time"
+},
+{
+"symbol": "DYM",
+"t": 1762560000,
+"ret": -0.0183,
+"why": "time"
+},
+{
+"symbol": "PHA",
+"t": 1762560000,
+"ret": -0.2722,
+"why": "time"
+},
+{
+"symbol": "PROMPT",
+"t": 1762560000,
+"ret": -0.3491,
+"why": "time"
+},
+{
+"symbol": "FLUX",
+"t": 1762560000,
+"ret": -0.5032,
+"why": "time"
+},
+{
+"symbol": "DIAM",
+"t": 1762646400,
+"ret": -0.1764,
+"why": "time"
+},
+{
+"symbol": "HIGH",
+"t": 1762646400,
+"ret": -0.2082,
+"why": "time"
+},
+{
+"symbol": "KSM",
+"t": 1762732800,
+"ret": -0.3003,
+"why": "time"
+},
+{
+"symbol": "COTI",
+"t": 1762732800,
+"ret": -0.4013,
+"why": "time"
+},
+{
+"symbol": "RLC",
+"t": 1762732800,
+"ret": -0.1659,
+"why": "time"
+},
+{
+"symbol": "LSK",
+"t": 1762905600,
+"ret": -0.3469,
+"why": "time"
+},
+{
+"symbol": "BABY",
+"t": 1763078400,
+"ret": -0.3791,
+"why": "time"
+},
+{
+"symbol": "SANTOS",
+"t": 1763078400,
+"ret": 0.3754,
+"why": "time"
+},
+{
+"symbol": "POLYX",
+"t": 1763078400,
+"ret": -0.0787,
+"why": "time"
+},
+{
+"symbol": "PARTI",
+"t": 1763164800,
+"ret": 0.3474,
+"why": "time"
+},
+{
+"symbol": "WIN",
+"t": 1763164800,
+"ret": -0.0813,
+"why": "time"
+},
+{
+"symbol": "ALCH",
+"t": 1763251200,
+"ret": 0.0113,
+"why": "time"
+},
+{
+"symbol": "STRAX",
+"t": 1763251200,
+"ret": -0.0228,
+"why": "time"
+},
+{
+"symbol": "AUDIO",
+"t": 1763251200,
+"ret": -0.068,
+"why": "time"
+},
+{
+"symbol": "BANANAS31",
+"t": 1763337600,
+"ret": 0.046,
+"why": "time"
+},
+{
+"symbol": "TEL",
+"t": 1763424000,
+"ret": -0.1825,
+"why": "time"
+},
+{
+"symbol": "ARK",
+"t": 1763424000,
+"ret": -0.005,
+"why": "time"
+},
+{
+"symbol": "XAN",
+"t": 1763596800,
+"ret": -0.4442,
+"why": "time"
+},
+{
+"symbol": "NXPC",
+"t": 1763596800,
+"ret": 0.0419,
+"why": "time"
+},
+{
+"symbol": "TNSR",
+"t": 1763596800,
+"ret": -0.5471,
+"why": "time"
+},
+{
+"symbol": "NIL",
+"t": 1763596800,
+"ret": -0.4217,
+"why": "time"
+},
+{
+"symbol": "RARE",
+"t": 1763596800,
+"ret": -0.1756,
+"why": "time"
+},
+{
+"symbol": "GRASS",
+"t": 1763683200,
+"ret": -0.0974,
+"why": "time"
+},
+{
+"symbol": "ZIG",
+"t": 1763683200,
+"ret": 0.0003,
+"why": "time"
+},
+{
+"symbol": "XAI",
+"t": 1763683200,
+"ret": -0.2354,
+"why": "time"
+},
+{
+"symbol": "CYBER",
+"t": 1763683200,
+"ret": 0.0893,
+"why": "time"
+},
+{
+"symbol": "JITOSOL",
+"t": 1763683200,
+"ret": 0.0319,
+"why": "time"
+},
+{
+"symbol": "CTSI",
+"t": 1763683200,
+"ret": -0.2155,
+"why": "time"
+},
+{
+"symbol": "NTRN",
+"t": 1763683200,
+"ret": -0.0473,
+"why": "time"
+},
+{
+"symbol": "PIXEL",
+"t": 1763769600,
+"ret": -0.1853,
+"why": "time"
+},
+{
+"symbol": "FLUID",
+"t": 1763856000,
+"ret": -0.0335,
+"why": "time"
+},
+{
+"symbol": "SPELL",
+"t": 1763856000,
+"ret": -0.0129,
+"why": "time"
+},
+{
+"symbol": "MAV",
+"t": 1763856000,
+"ret": -0.0027,
+"why": "time"
+},
+{
+"symbol": "HFT",
+"t": 1763942400,
+"ret": -0.1804,
+"why": "time"
+},
+{
+"symbol": "GPS",
+"t": 1764028800,
+"ret": -0.0905,
+"why": "time"
+},
+{
+"symbol": "NMR",
+"t": 1764028800,
+"ret": -0.0205,
+"why": "time"
+},
+{
+"symbol": "HOLO",
+"t": 1764115200,
+"ret": -0.1989,
+"why": "time"
+},
+{
+"symbol": "IOST",
+"t": 1764115200,
+"ret": -0.0991,
+"why": "time"
+},
+{
+"symbol": "AI",
+"t": 1764115200,
+"ret": -0.1678,
+"why": "time"
+},
+{
+"symbol": "IDEX",
+"t": 1764115200,
+"ret": -0.1129,
+"why": "time"
+},
+{
+"symbol": "CTC",
+"t": 1764201600,
+"ret": -0.0697,
+"why": "time"
+},
+{
+"symbol": "USUAL",
+"t": 1764201600,
+"ret": -0.1287,
+"why": "time"
+},
+{
+"symbol": "DODO",
+"t": 1764201600,
+"ret": -0.2127,
+"why": "time"
+},
+{
+"symbol": "ACE",
+"t": 1764288000,
+"ret": -0.0877,
+"why": "time"
+},
+{
+"symbol": "MITO",
+"t": 1764288000,
+"ret": -0.2341,
+"why": "time"
+},
+{
+"symbol": "SQD",
+"t": 1764374400,
+"ret": -0.2777,
+"why": "time"
+},
+{
+"symbol": "TURBO",
+"t": 1764374400,
+"ret": -0.039,
+"why": "time"
+},
+{
+"symbol": "SWFTC",
+"t": 1764374400,
+"ret": -0.2188,
+"why": "time"
+},
+{
+"symbol": "SAHARA",
+"t": 1764460800,
+"ret": -0.2911,
+"why": "time"
+},
+{
+"symbol": "FIDA",
+"t": 1764547200,
+"ret": -0.0802,
+"why": "time"
+},
+{
+"symbol": "CRCLX",
+"t": 1764547200,
+"ret": -0.0217,
+"why": "time"
+},
+{
+"symbol": "PORTAL",
+"t": 1764547200,
+"ret": 0.0519,
+"why": "time"
+},
+{
+"symbol": "BANANA",
+"t": 1764547200,
+"ret": -0.1415,
+"why": "time"
+},
+{
+"symbol": "DOGS",
+"t": 1764633600,
+"ret": -0.1058,
+"why": "time"
+},
+{
+"symbol": "CHESS",
+"t": 1764633600,
+"ret": 0.1015,
+"why": "time"
+},
+{
+"symbol": "HEI",
+"t": 1764633600,
+"ret": -0.4584,
+"why": "time"
+},
+{
+"symbol": "A2Z",
+"t": 1764633600,
+"ret": -0.3344,
+"why": "time"
+},
+{
+"symbol": "DEEP",
+"t": 1764720000,
+"ret": -0.1789,
+"why": "time"
+},
+{
+"symbol": "BAND",
+"t": 1764720000,
+"ret": -0.2963,
+"why": "time"
+},
+{
+"symbol": "SXP",
+"t": 1764720000,
+"ret": -0.0134,
+"why": "time"
+},
+{
+"symbol": "MERL",
+"t": 1764806400,
+"ret": -0.0022,
+"why": "time"
+},
+{
+"symbol": "MBL",
+"t": 1764806400,
+"ret": -0.2377,
+"why": "time"
+},
+{
+"symbol": "DEXE",
+"t": 1764806400,
+"ret": -0.1899,
+"why": "time"
+},
+{
+"symbol": "CITY",
+"t": 1764892800,
+"ret": 0.0686,
+"why": "time"
+},
+{
+"symbol": "A8",
+"t": 1764892800,
+"ret": -0.2573,
+"why": "time"
+},
+{
+"symbol": "ANIME",
+"t": 1764892800,
+"ret": -0.152,
+"why": "time"
+},
+{
+"symbol": "SKL",
+"t": 1764892800,
+"ret": -0.1757,
+"why": "time"
+},
+{
+"symbol": "VOXEL",
+"t": 1764892800,
+"ret": -0.4903,
+"why": "time"
+},
+{
+"symbol": "LUNC",
+"t": 1764979200,
+"ret": -0.3656,
+"why": "time"
+},
+{
+"symbol": "FTT",
+"t": 1764979200,
+"ret": -0.2468,
+"why": "time"
+},
+{
+"symbol": "LUNA",
+"t": 1764979200,
+"ret": -0.2092,
+"why": "time"
+},
+{
+"symbol": "DENT",
+"t": 1764979200,
+"ret": -0.1274,
+"why": "time"
+},
+{
+"symbol": "MOODENG",
+"t": 1765065600,
+"ret": -0.2203,
+"why": "time"
+},
+{
+"symbol": "GLMR",
+"t": 1765152000,
+"ret": -0.3109,
+"why": "time"
+},
+{
+"symbol": "NOT",
+"t": 1765152000,
+"ret": -0.1332,
+"why": "time"
+},
+{
+"symbol": "ACA",
+"t": 1765152000,
+"ret": -0.2608,
+"why": "time"
+},
+{
+"symbol": "FHE",
+"t": 1765238400,
+"ret": 0.1,
+"why": "time"
+},
+{
+"symbol": "FIS",
+"t": 1765238400,
+"ret": -0.2788,
+"why": "time"
+},
+{
+"symbol": "BAR",
+"t": 1765238400,
+"ret": -0.08,
+"why": "time"
+},
+{
+"symbol": "THE",
+"t": 1765238400,
+"ret": 0.089,
+"why": "time"
+},
+{
+"symbol": "ENJ",
+"t": 1765324800,
+"ret": -0.1818,
+"why": "time"
+},
+{
+"symbol": "LRC",
+"t": 1765411200,
+"ret": -0.0522,
+"why": "time"
+},
+{
+"symbol": "BTTC",
+"t": 1765497600,
+"ret": -0.1002,
+"why": "time"
+},
+{
+"symbol": "JUV",
+"t": 1765584000,
+"ret": -0.0706,
+"why": "time"
+},
+{
+"symbol": "QTUM",
+"t": 1765670400,
+"ret": -0.1163,
+"why": "time"
+},
+{
+"symbol": "CORE",
+"t": 1765670400,
+"ret": -0.2919,
+"why": "time"
+},
+{
+"symbol": "GUN",
+"t": 1765670400,
+"ret": -0.4033,
+"why": "time"
+},
+{
+"symbol": "MOVE",
+"t": 1765756800,
+"ret": -0.1096,
+"why": "time"
+},
+{
+"symbol": "MTL",
+"t": 1765843200,
+"ret": -0.0352,
+"why": "time"
+},
+{
+"symbol": "GOOGLX",
+"t": 1765929600,
+"ret": 0.049,
+"why": "time"
+},
+{
+"symbol": "SHELL",
+"t": 1765929600,
+"ret": 0.1346,
+"why": "time"
+},
+{
+"symbol": "XDC",
+"t": 1766016000,
+"ret": 0.1011,
+"why": "time"
+},
+{
+"symbol": "ATM",
+"t": 1766016000,
+"ret": 0.1172,
+"why": "time"
+},
+{
+"symbol": "SOMI",
+"t": 1766102400,
+"ret": -0.0703,
+"why": "time"
+},
+{
+"symbol": "DOLO",
+"t": 1766188800,
+"ret": 0.3383,
+"why": "time"
+},
+{
+"symbol": "EPIC",
+"t": 1766188800,
+"ret": 0.2942,
+"why": "time"
+},
+{
+"symbol": "NOM",
+"t": 1766275200,
+"ret": 0.1563,
+"why": "time"
+},
+{
+"symbol": "HAEDAL",
+"t": 1766275200,
+"ret": 0.1934,
+"why": "time"
+},
+{
+"symbol": "F",
+"t": 1766275200,
+"ret": -0.0372,
+"why": "time"
+},
+{
+"symbol": "FORM",
+"t": 1766275200,
+"ret": 0.197,
+"why": "time"
+},
+{
+"symbol": "OPEN",
+"t": 1766361600,
+"ret": 0.0568,
+"why": "time"
+},
+{
+"symbol": "GHST",
+"t": 1766448000,
+"ret": 0.1171,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1766620800,
+"ret": -0.1954,
+"why": "time"
+},
+{
+"symbol": "BANK",
+"t": 1766620800,
+"ret": 0.0369,
+"why": "time"
+},
+{
+"symbol": "BIFI",
+"t": 1766620800,
+"ret": -0.4602,
+"why": "time"
+},
+{
+"symbol": "OXT",
+"t": 1766620800,
+"ret": 0.0755,
+"why": "time"
+},
+{
+"symbol": "TST",
+"t": 1766620800,
+"ret": -0.0915,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1766707200,
+"ret": -0.0548,
+"why": "time"
+},
+{
+"symbol": "ALPINE",
+"t": 1766707200,
+"ret": -0.0313,
+"why": "time"
+},
+{
+"symbol": "MIRA",
+"t": 1766707200,
+"ret": 0.0229,
+"why": "time"
+},
+{
+"symbol": "FXS",
+"t": 1766793600,
+"ret": 0.0992,
+"why": "time"
+},
+{
+"symbol": "GAS",
+"t": 1766880000,
+"ret": -0.0484,
+"why": "time"
+},
+{
+"symbol": "ACT",
+"t": 1766880000,
+"ret": -0.406,
+"why": "time"
+},
+{
+"symbol": "ONT",
+"t": 1766880000,
+"ret": 0.0465,
+"why": "time"
+},
+{
+"symbol": "FLOW",
+"t": 1766966400,
+"ret": -0.1092,
+"why": "time"
+},
+{
+"symbol": "SPK",
+"t": 1766966400,
+"ret": 0.049,
+"why": "time"
+},
+{
+"symbol": "METIS",
+"t": 1766966400,
+"ret": -0.0011,
+"why": "time"
+},
+{
+"symbol": "STEEM",
+"t": 1766966400,
+"ret": -0.0369,
+"why": "time"
+},
+{
+"symbol": "HIVE",
+"t": 1766966400,
+"ret": -0.0136,
+"why": "time"
+},
+{
+"symbol": "ID",
+"t": 1767139200,
+"ret": 0.0474,
+"why": "time"
+},
+{
+"symbol": "BROCCOLI714",
+"t": 1767225600,
+"ret": 0.1527,
+"why": "time"
+},
+{
+"symbol": "MUBARAK",
+"t": 1767225600,
+"ret": 0.1957,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1767312000,
+"ret": -0.2178,
+"why": "time"
+},
+{
+"symbol": "WOO",
+"t": 1767312000,
+"ret": 0.036,
+"why": "time"
+},
+{
+"symbol": "TUT",
+"t": 1767312000,
+"ret": 0.0228,
+"why": "time"
+},
+{
+"symbol": "REZ",
+"t": 1767312000,
+"ret": -0.0161,
+"why": "time"
+},
+{
+"symbol": "HOME",
+"t": 1767398400,
+"ret": 0.3461,
+"why": "time"
+},
+{
+"symbol": "SLP",
+"t": 1767398400,
+"ret": 0.1553,
+"why": "time"
+},
+{
+"symbol": "COS",
+"t": 1767398400,
+"ret": 0.0038,
+"why": "time"
+},
+{
+"symbol": "CVX",
+"t": 1767484800,
+"ret": 0.048,
+"why": "time"
+},
+{
+"symbol": "1000CAT",
+"t": 1767571200,
+"ret": -0.1196,
+"why": "time"
+},
+{
+"symbol": "CGPT",
+"t": 1767657600,
+"ret": -0.1304,
+"why": "time"
+},
+{
+"symbol": "DATA",
+"t": 1767657600,
+"ret": -0.3141,
+"why": "time"
+},
+{
+"symbol": "BRETT",
+"t": 1767830400,
+"ret": -0.231,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1767830400,
+"ret": -0.2601,
+"why": "time"
+},
+{
+"symbol": "OG",
+"t": 1767916800,
+"ret": -0.0967,
+"why": "time"
+},
+{
+"symbol": "ACH",
+"t": 1768003200,
+"ret": 0.2531,
+"why": "time"
+},
+{
+"symbol": "C",
+"t": 1768003200,
+"ret": -0.1258,
+"why": "time"
+},
+{
+"symbol": "CRO",
+"t": 1768089600,
+"ret": -0.117,
+"why": "time"
+},
+{
+"symbol": "ZIL",
+"t": 1768262400,
+"ret": -0.1606,
+"why": "time"
+},
+{
+"symbol": "SONIC",
+"t": 1768262400,
+"ret": -0.1517,
+"why": "time"
+},
+{
+"symbol": "JASMY",
+"t": 1768262400,
+"ret": -0.2272,
+"why": "time"
+},
+{
+"symbol": "IOTA",
+"t": 1768262400,
+"ret": -0.1628,
+"why": "time"
+},
+{
+"symbol": "SATS",
+"t": 1768435200,
+"ret": -0.2794,
+"why": "time"
+},
+{
+"symbol": "AEVO",
+"t": 1768435200,
+"ret": -0.1996,
+"why": "time"
+},
+{
+"symbol": "1000SATS",
+"t": 1768435200,
+"ret": -0.2793,
+"why": "time"
+},
+{
+"symbol": "SAFE",
+"t": 1768521600,
+"ret": -0.2948,
+"why": "time"
+},
+{
+"symbol": "PROM",
+"t": 1768608000,
+"ret": -0.6061,
+"why": "time"
+},
+{
+"symbol": "A",
+"t": 1768694400,
+"ret": -0.2509,
+"why": "time"
+},
+{
+"symbol": "ILV",
+"t": 1768694400,
+"ret": -0.3139,
+"why": "time"
+},
+{
+"symbol": "STO",
+"t": 1768694400,
+"ret": -0.2467,
+"why": "time"
+},
+{
+"symbol": "RONIN",
+"t": 1768694400,
+"ret": -0.362,
+"why": "time"
+},
+{
+"symbol": "DRIFT",
+"t": 1768780800,
+"ret": -0.3593,
+"why": "time"
+},
+{
+"symbol": "VANRY",
+"t": 1768867200,
+"ret": -0.2737,
+"why": "time"
+},
+{
+"symbol": "STG",
+"t": 1768953600,
+"ret": -0.0919,
+"why": "time"
+},
+{
+"symbol": "SXT",
+"t": 1769040000,
+"ret": -0.3047,
+"why": "time"
+},
+{
+"symbol": "ALICE",
+"t": 1769212800,
+"ret": -0.2868,
+"why": "time"
+},
+{
+"symbol": "MANTA",
+"t": 1769385600,
+"ret": -0.1471,
+"why": "time"
+},
+{
+"symbol": "TAIKO",
+"t": 1769472000,
+"ret": -0.3635,
+"why": "time"
+},
+{
+"symbol": "BEAMX",
+"t": 1769472000,
+"ret": -0.2918,
+"why": "time"
+},
+{
+"symbol": "EUL",
+"t": 1769472000,
+"ret": -0.5488,
+"why": "time"
+},
+{
+"symbol": "KAIA",
+"t": 1769558400,
+"ret": -0.1626,
+"why": "time"
+},
+{
+"symbol": "USDTB",
+"t": 1769731200,
+"ret": -0.0057,
+"why": "time"
+},
+{
+"symbol": "SUN",
+"t": 1769904000,
+"ret": 0.0221,
+"why": "time"
+},
+{
+"symbol": "C98",
+"t": 1769904000,
+"ret": 0.6206,
+"why": "time"
+},
+{
+"symbol": "ZETA",
+"t": 1769990400,
+"ret": -0.0936,
+"why": "time"
+},
+{
+"symbol": "ARDR",
+"t": 1769990400,
+"ret": -0.1412,
+"why": "time"
+},
+{
+"symbol": "RIF",
+"t": 1770076800,
+"ret": -0.2332,
+"why": "time"
+},
+{
+"symbol": "OKSOL",
+"t": 1770336000,
+"ret": -0.0353,
+"why": "time"
+},
+{
+"symbol": "STETH",
+"t": 1770595200,
+"ret": -0.1238,
+"why": "time"
+},
+{
+"symbol": "QKC",
+"t": 1770595200,
+"ret": -0.0188,
+"why": "time"
+},
+{
+"symbol": "DF",
+"t": 1770595200,
+"ret": -0.5226,
+"why": "time"
+},
+{
+"symbol": "TWT",
+"t": 1770681600,
+"ret": 0.0288,
+"why": "time"
+},
+{
+"symbol": "NKN",
+"t": 1770768000,
+"ret": -0.1148,
+"why": "time"
+},
+{
+"symbol": "POPCAT",
+"t": 1770854400,
+"ret": -0.0346,
+"why": "time"
+},
+{
+"symbol": "COINX",
+"t": 1771027200,
+"ret": 0.0521,
+"why": "time"
+},
+{
+"symbol": "OM",
+"t": 1771027200,
+"ret": 0.121,
+"why": "time"
+},
+{
+"symbol": "ACM",
+"t": 1771027200,
+"ret": -0.0623,
+"why": "time"
+},
+{
+"symbol": "PSG",
+"t": 1771113600,
+"ret": -0.0247,
+"why": "time"
+},
+{
+"symbol": "METH",
+"t": 1771113600,
+"ret": -0.0079,
+"why": "time"
+},
+{
+"symbol": "VVV",
+"t": 1771200000,
+"ret": 0.7367,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1771200000,
+"ret": 0.2324,
+"why": "time"
+},
+{
+"symbol": "SAGA",
+"t": 1771200000,
+"ret": -0.1437,
+"why": "time"
+},
+{
+"symbol": "SAPIEN",
+"t": 1771200000,
+"ret": -0.0468,
+"why": "time"
+},
+{
+"symbol": "RPL",
+"t": 1771286400,
+"ret": -0.1498,
+"why": "time"
+},
+{
+"symbol": "TOSHI",
+"t": 1771286400,
+"ret": -0.0769,
+"why": "time"
+},
+{
+"symbol": "OGN",
+"t": 1771286400,
+"ret": -0.1889,
+"why": "time"
+},
+{
+"symbol": "EDEN",
+"t": 1771632000,
+"ret": 0.0007,
+"why": "time"
+},
+{
+"symbol": "BAN",
+"t": 1771718400,
+"ret": -0.1091,
+"why": "time"
+},
+{
+"symbol": "INIT",
+"t": 1771718400,
+"ret": -0.1019,
+"why": "time"
+},
+{
+"symbol": "HOODX",
+"t": 1771891200,
+"ret": 0.0662,
+"why": "time"
+},
+{
+"symbol": "SOSO",
+"t": 1771977600,
+"ret": -0.0371,
+"why": "time"
+},
+{
+"symbol": "LEO",
+"t": 1771977600,
+"ret": 0.0353,
+"why": "time"
+},
+{
+"symbol": "IOTX",
+"t": 1771977600,
+"ret": 0.1283,
+"why": "time"
+},
+{
+"symbol": "KMNO",
+"t": 1772150400,
+"ret": 0.0373,
+"why": "time"
+},
+{
+"symbol": "USAT",
+"t": 1772150400,
+"ret": -0.0049,
+"why": "time"
+},
+{
+"symbol": "YGG",
+"t": 1772236800,
+"ret": 0.0257,
+"why": "time"
+},
+{
+"symbol": "FIO",
+"t": 1772323200,
+"ret": -0.2985,
+"why": "time"
+},
+{
+"symbol": "CTK",
+"t": 1772323200,
+"ret": -0.042,
+"why": "time"
+},
+{
+"symbol": "PORTO",
+"t": 1772582400,
+"ret": 0.1004,
+"why": "time"
+},
+{
+"symbol": "COOKIE",
+"t": 1772668800,
+"ret": -0.1226,
+"why": "time"
+},
+{
+"symbol": "HOOK",
+"t": 1773014400,
+"ret": -0.357,
+"why": "time"
+},
+{
+"symbol": "PEOPLE",
+"t": 1773100800,
+"ret": -0.1268,
+"why": "time"
+},
+{
+"symbol": "AIXBT",
+"t": 1773100800,
+"ret": 0.0072,
+"why": "time"
+},
+{
+"symbol": "RSR",
+"t": 1773100800,
+"ret": -0.0044,
+"why": "time"
+},
+{
+"symbol": "BABY1",
+"t": 1773187200,
+"ret": -0.0687,
+"why": "time"
+},
+{
+"symbol": "ICX",
+"t": 1773273600,
+"ret": -0.0561,
+"why": "time"
+},
+{
+"symbol": "ACX",
+"t": 1773273600,
+"ret": -0.1402,
+"why": "time"
+},
+{
+"symbol": "SOLV",
+"t": 1773360000,
+"ret": -0.2483,
+"why": "time"
+},
+{
+"symbol": "GTC",
+"t": 1773446400,
+"ret": -0.1734,
+"why": "time"
+},
+{
+"symbol": "HUMA",
+"t": 1773532800,
+"ret": -0.0315,
+"why": "time"
+},
+{
+"symbol": "CETUS",
+"t": 1773532800,
+"ret": 0.4398,
+"why": "time"
+},
+{
+"symbol": "NFP",
+"t": 1773532800,
+"ret": -0.1905,
+"why": "time"
+},
+{
+"symbol": "LISTA",
+"t": 1773619200,
+"ret": -0.0886,
+"why": "time"
+},
+{
+"symbol": "BB",
+"t": 1773705600,
+"ret": -0.2022,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1773878400,
+"ret": -0.0901,
+"why": "time"
+},
+{
+"symbol": "WAXP",
+"t": 1774051200,
+"ret": -0.1236,
+"why": "time"
+},
+{
+"symbol": "CHR",
+"t": 1774051200,
+"ret": 0.3542,
+"why": "time"
+},
+{
+"symbol": "NEO",
+"t": 1774137600,
+"ret": 0.0661,
+"why": "time"
+},
+{
+"symbol": "FORTH",
+"t": 1774137600,
+"ret": -0.4909,
+"why": "time"
+},
+{
+"symbol": "NIGHT",
+"t": 1774310400,
+"ret": -0.1178,
+"why": "time"
+},
+{
+"symbol": "BR",
+"t": 1774310400,
+"ret": -0.1171,
+"why": "time"
+},
+{
+"symbol": "ZBCN",
+"t": 1774310400,
+"ret": 0.1792,
+"why": "time"
+},
+{
+"symbol": "CSPR",
+"t": 1774396800,
+"ret": -0.1938,
+"why": "time"
+},
+{
+"symbol": "KAS",
+"t": 1774483200,
+"ret": -0.1132,
+"why": "time"
+},
+{
+"symbol": "QNT",
+"t": 1774483200,
+"ret": 0.0013,
+"why": "time"
+},
+{
+"symbol": "IQ",
+"t": 1774569600,
+"ret": 0.0282,
+"why": "time"
+},
+{
+"symbol": "LAZIO",
+"t": 1774569600,
+"ret": 0.0387,
+"why": "time"
+},
+{
+"symbol": "B3",
+"t": 1774742400,
+"ret": -0.0527,
+"why": "time"
+},
+{
+"symbol": "ONG",
+"t": 1774828800,
+"ret": 0.3436,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1775174400,
+"ret": -0.0543,
+"why": "time"
+},
+{
+"symbol": "HEMI",
+"t": 1775174400,
+"ret": -0.0691,
+"why": "time"
+},
+{
+"symbol": "FIGHT",
+"t": 1775260800,
+"ret": 0.2244,
+"why": "time"
+},
+{
+"symbol": "JOE",
+"t": 1775692800,
+"ret": 0.0311,
+"why": "time"
+},
+{
+"symbol": "FF",
+"t": 1775952000,
+"ret": -0.123,
+"why": "time"
+},
+{
+"symbol": "CHILLGUY",
+"t": 1776124800,
+"ret": -0.1742,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1776124800,
+"ret": -0.3318,
+"why": "time"
+},
+{
+"symbol": "BLAST",
+"t": 1776297600,
+"ret": -0.0513,
+"why": "time"
+},
+{
+"symbol": "TRB",
+"t": 1776297600,
+"ret": -0.1872,
+"why": "time"
+},
+{
+"symbol": "ORDI",
+"t": 1776384000,
+"ret": -0.3816,
+"why": "time"
+},
+{
+"symbol": "BOME",
+"t": 1776384000,
+"ret": -0.0221,
+"why": "time"
+},
+{
+"symbol": "ETHW",
+"t": 1776470400,
+"ret": 0.0355,
+"why": "time"
+},
+{
+"symbol": "MEME",
+"t": 1776556800,
+"ret": 0.0058,
+"why": "time"
+},
+{
+"symbol": "NEIRO",
+"t": 1776556800,
+"ret": 0.06,
+"why": "time"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1776643200,
+"ret": 0.0549,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "PNUT",
+"t": 1776643200,
+"ret": 0.0371,
+"why": "time"
+},
+{
+"symbol": "REQ",
+"t": 1776643200,
+"ret": -0.1813,
+"why": "time"
+},
+{
+"symbol": "QI",
+"t": 1776729600,
+"ret": 0.0124,
+"why": "time"
+},
+{
+"symbol": "APE",
+"t": 1777075200,
+"ret": 0.0388,
+"why": "time"
+},
+{
+"symbol": "SKR",
+"t": 1777075200,
+"ret": 0.0261,
+"why": "time"
+},
+{
+"symbol": "ZKJ",
+"t": 1777334400,
+"ret": -0.5087,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1777420800,
+"ret": 0.0752,
+"why": "time"
+},
+{
+"symbol": "BSB",
+"t": 1777680000,
+"ret": -0.3668,
+"why": "time"
+},
+{
+"symbol": "RUNE",
+"t": 1777766400,
+"ret": -0.1448,
+"why": "time"
+},
+{
+"symbol": "AT",
+"t": 1777852800,
+"ret": -0.3497,
+"why": "time"
+},
+{
+"symbol": "GNO",
+"t": 1777939200,
+"ret": -0.1283,
+"why": "time"
+},
+{
+"symbol": "IO",
+"t": 1778198400,
+"ret": -0.1302,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1778198400,
+"ret": -0.0868,
+"why": "time"
+},
+{
+"symbol": "OSMO",
+"t": 1778544000,
+"ret": 0.0081,
+"why": "time"
+},
+{
+"symbol": "SD",
+"t": 1778630400,
+"ret": -0.1239,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1778716800,
+"ret": 0.0435,
+"why": "time"
+},
+{
+"symbol": "DEGEN",
+"t": 1778889600,
+"ret": 0.0023,
+"why": "time"
+},
+{
+"symbol": "ATA",
+"t": 1779062400,
+"ret": -0.755,
+"why": "time"
+},
+{
+"symbol": "GOAT",
+"t": 1779235200,
+"ret": -0.1541,
+"why": "time"
+},
+{
+"symbol": "SWELL",
+"t": 1779321600,
+"ret": -0.3369,
+"why": "time"
+},
+{
+"symbol": "XCH",
+"t": 1779494400,
+"ret": -0.3187,
+"why": "time"
+},
+{
+"symbol": "NVDAX",
+"t": 1779580800,
+"ret": -0.0557,
+"why": "time"
+},
+{
+"symbol": "POND",
+"t": 1779753600,
+"ret": -0.1076,
+"why": "time"
+},
+{
+"symbol": "APEX",
+"t": 1779840000,
+"ret": -0.2349,
+"why": "time"
+},
+{
+"symbol": "QUICK",
+"t": 1780185600,
+"ret": -0.056,
+"why": "time"
+},
+{
+"symbol": "OPG",
+"t": 1780358400,
+"ret": -0.0793,
+"why": "time"
+},
+{
+"symbol": "SUSHI",
+"t": 1780531200,
+"ret": -0.1287,
+"why": "time"
+},
+{
+"symbol": "OPN",
+"t": 1780531200,
+"ret": -0.7146,
+"why": "time"
+},
+{
+"symbol": "MET",
+"t": 1780617600,
+"ret": 0.2995,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1781222400,
+"ret": -0.2067,
+"why": "time"
+},
+{
+"symbol": "ROAM",
+"t": 1781654400,
+"ret": -0.1326,
+"why": "time"
+},
+{
+"symbol": "TRIA",
+"t": 1781654400,
+"ret": -0.3931,
+"why": "time"
+},
+{
+"symbol": "SPX",
+"t": 1781654400,
+"ret": -0.1851,
+"why": "time"
+},
+{
+"symbol": "OFC",
+"t": 1782000000,
+"ret": -0.2202,
+"why": "time"
+},
+{
+"symbol": "USDY",
+"t": 1782345600,
+"ret": -0.0039,
+"why": "time"
+},
+{
+"symbol": "CELO",
+"t": 1782345600,
+"ret": 0.0743,
+"why": "time"
+},
+{
+"symbol": "SNX",
+"t": 1782604800,
+"ret": 0.1081,
+"why": "time"
+},
+{
+"symbol": "SNDKB",
+"t": 1783209600,
+"ret": -0.2658,
+"why": "time"
+},
+{
+"symbol": "AIGENSYN",
+"t": 1783296000,
+"ret": -0.1193,
+"why": "time"
+},
+{
+"symbol": "YFI",
+"t": 1783382400,
+"ret": -0.0234,
+"why": "time"
+},
+{
+"symbol": "MPLX",
+"t": 1783468800,
+"ret": -0.2192,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1783814400,
+"ret": -0.0078,
+"why": "time"
+},
+{
+"symbol": "1MBABYDOGE",
+"t": 1783814400,
+"ret": -0.0202,
+"why": "time"
+},
+{
+"symbol": "EDGE",
+"t": 1783900800,
+"ret": -0.062,
+"why": "time"
+},
+{
+"symbol": "LAT",
+"t": 1783900800,
+"ret": -0.058,
+"why": "time"
+},
+{
+"symbol": "TSLAB",
+"t": 1783900800,
+"ret": -0.2213,
+"why": "time"
+},
+{
+"symbol": "MANTRA",
+"t": 1784246400,
+"ret": -0.1971,
+"why": "time"
+},
+{
+"symbol": "THETA",
+"t": 1784246400,
+"ret": -0.1422,
+"why": "time"
+},
+{
+"symbol": "INTCB",
+"t": 1784246400,
+"ret": -0.0561,
+"why": "time"
+},
+{
+"symbol": "EWYB",
+"t": 1784246400,
+"ret": -0.036,
+"why": "time"
+},
+{
+"symbol": "ARG",
+"t": 1784332800,
+"ret": -0.7202,
+"why": "time"
+},
+{
+"symbol": "ONE",
+"t": 1784419200,
+"ret": 0.0851,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1784678400,
+"ret": -0.0371,
+"why": "time"
+},
+{
+"symbol": "QQQB",
+"t": 1784851200,
+"ret": 0.0519,
+"why": "time"
+},
+{
+"symbol": "AURORA",
+"t": 1785110400,
+"ret": -0.1745,
+"why": "time"
+},
+{
+"symbol": "TSLAX",
+"t": 1785283200,
+"ret": 0.0964,
+"why": "time"
+},
+{
+"symbol": "IRYS",
+"t": 1785283200,
+"ret": 0.1051,
+"why": "time"
+},
+{
+"symbol": "NBISB",
+"t": 1785456000,
+"ret": 0.4762,
+"why": "time"
+},
+{
+"symbol": "GOOGLB",
+"t": 1785456000,
+"ret": -0.0247,
+"why": "time"
+},
+{
+"symbol": "QCOMB",
+"t": 1785456000,
+"ret": 0.1202,
+"why": "time"
+},
+{
+"symbol": "WDCB",
+"t": 1785542400,
+"ret": -0.074,
+"why": "time"
+},
+{
+"symbol": "RATS",
+"t": 1785628800,
+"ret": -0.321,
+"why": "time"
+},
+{
+"symbol": "AMDB",
+"t": 1785628800,
+"ret": 0.0443,
+"why": "time"
+},
+{
+"symbol": "COINB",
+"t": 1785715200,
+"ret": 0.0172,
+"why": "time"
+},
+{
+"symbol": "LITEB",
+"t": 1785801600,
+"ret": 0.0119,
+"why": "time"
+},
+{
+"symbol": "MSFTB",
+"t": 1785801600,
+"ret": -0.0231,
+"why": "time"
+},
+{
+"symbol": "SPYB",
+"t": 1785888000,
+"ret": -0.0071,
+"why": "time"
+},
+{
+"symbol": "GIGGLE",
+"t": 1785888000,
+"ret": 0.0059,
+"why": "time"
+},
+{
+"symbol": "GROVE",
+"t": 1786060800,
+"ret": -0.1145,
+"why": "time"
+},
+{
+"symbol": "AAOIB",
+"t": 1786147200,
+"ret": -0.1885,
+"why": "time"
+},
+{
+"symbol": "NVDAB",
+"t": 1786147200,
+"ret": -0.0429,
+"why": "time"
+},
+{
+"symbol": "XLITE",
+"t": 1786233600,
+"ret": -0.0424,
+"why": "time"
+},
+{
+"symbol": "PLTRB",
+"t": 1786233600,
+"ret": 0.0429,
+"why": "time"
+},
+{
+"symbol": "BMT",
+"t": 1786320000,
+"ret": -0.338,
+"why": "time"
+},
+{
+"symbol": "NYM",
+"t": 1786406400,
+"ret": -0.1686,
+"why": "time"
+},
+{
+"symbol": "ROBO",
+"t": 1786406400,
+"ret": 0.0141,
+"why": "time"
+},
+{
+"symbol": "PYBOBO",
+"t": 1787011200,
+"ret": -0.3443,
+"why": "time"
+},
+{
+"symbol": "XCOIN",
+"t": 1787184000,
+"ret": 0.1056,
+"why": "time"
+},
+{
+"symbol": "SC",
+"t": 1787529600,
+"ret": 0.1444,
+"why": "time"
+},
+{
+"symbol": "MSTRB",
+"t": 1787529600,
+"ret": 0.1498,
+"why": "time"
+},
+{
+"symbol": "SSV",
+"t": 1787788800,
+"ret": -0.028,
+"why": "time"
+},
+{
+"symbol": "METAB",
+"t": 1787788800,
+"ret": 0.1187,
+"why": "time"
+},
+{
+"symbol": "FLOKI",
+"t": 1787961600,
+"ret": -0.0321,
+"why": "time"
+},
+{
+"symbol": "BMNRB",
+"t": 1787961600,
+"ret": 0.0204,
+"why": "time"
+},
+{
+"symbol": "NES",
+"t": 1788048000,
+"ret": 0.3399,
+"why": "time"
+},
+{
+"symbol": "FLR",
+"t": 1788220800,
+"ret": -0.0612,
+"why": "time"
+},
+{
+"symbol": "0G",
+"t": 1788307200,
+"ret": 0.0149,
+"why": "time"
+},
+{
+"symbol": "HOODB",
+"t": 1788393600,
+"ret": -0.1225,
+"why": "time"
+},
+{
+"symbol": "FOGO",
+"t": 1788480000,
+"ret": -0.0481,
+"why": "time"
+},
+{
+"symbol": "XDELL",
+"t": 1788480000,
+"ret": 0.0886,
+"why": "time"
+},
+{
+"symbol": "BEB",
+"t": 1788825600,
+"ret": 0.0045,
+"why": "time"
+},
+{
+"symbol": "AVGOB",
+"t": 1788825600,
+"ret": -0.0063,
+"why": "time"
+},
+{
+"symbol": "XAVGO",
+"t": 1788912000,
+"ret": -0.0284,
+"why": "time"
+},
+{
+"symbol": "XAAPL",
+"t": 1789084800,
+"ret": 0.0216,
+"why": "time"
+},
+{
+"symbol": "TFUEL",
+"t": 1789171200,
+"ret": 0.0819,
+"why": "time"
+},
+{
+"symbol": "GENIUS",
+"t": 1789689600,
+"ret": -0.0432,
+"why": "time"
+},
+{
+"symbol": "CELR",
+"t": 1789862400,
+"ret": -0.0552,
+"why": "time"
+}
+],
+"okx_swap": [
+{
+"symbol": "ZORA",
+"t": 1760095801.229,
+"ret": 0.2283,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ZBT",
+"t": 1760700600.342,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "GIGGLE",
+"t": 1761375601.708,
+"ret": -0.4597,
+"why": "time"
+},
+{
+"symbol": "F",
+"t": 1761379201.201,
+"ret": -0.5057,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1761732001.294,
+"ret": -0.4025,
+"why": "time"
+},
+{
+"symbol": "OL",
+"t": 1761732900.938,
+"ret": -0.4001,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1761819300.976,
+"ret": -0.5256,
+"why": "time"
+},
+{
+"symbol": "ZEN",
+"t": 1762149601.773,
+"ret": -0.1835,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762259401.259,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "DASH",
+"t": 1762398000.994,
+"ret": -0.3599,
+"why": "time"
+},
+{
+"symbol": "ZEC",
+"t": 1762398900.578,
+"ret": 0.2189,
+"why": "time"
+},
+{
+"symbol": "SAPIEN",
+"t": 1762429500.524,
+"ret": -0.6225,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1762879500.659,
+"ret": 0.018,
+"why": "hit coinbase"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763263801.177,
+"ret": 0.3537,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1765200600.0,
+"ret": -0.5264,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765296000.0,
+"ret": 0.7169,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "SPACE",
+"t": 1769173200.0,
+"ret": -0.7033,
+"why": "time"
+},
+{
+"symbol": "TRIA",
+"t": 1770276600.0,
+"ret": -0.2589,
+"why": "time"
+},
+{
+"symbol": "BASED",
+"t": 1774866600.0,
+"ret": -0.458,
+"why": "time"
+},
+{
+"symbol": "EDGE",
+"t": 1775050200.0,
+"ret": 0.4926,
+"why": "time"
+},
+{
+"symbol": "BSB",
+"t": 1775124000.0,
+"ret": 0.1064,
+"why": "time"
+},
+{
+"symbol": "OFC",
+"t": 1775732400.0,
+"ret": 0.3412,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1777456800.0,
+"ret": -0.3046,
+"why": "time"
+},
+{
+"symbol": "AI",
+"t": 1777464000.0,
+"ret": -0.0444,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1778054400.0,
+"ret": 0.135,
+"why": "time"
+},
+{
+"symbol": "IRYS",
+"t": 1779880500.0,
+"ret": -0.3491,
+"why": "time"
+},
+{
+"symbol": "BB",
+"t": 1780304400.0,
+"ret": -0.1723,
+"why": "time"
+},
+{
+"symbol": "QNT",
+"t": 1780655400.0,
+"ret": 0.0865,
+"why": "time"
+},
+{
+"symbol": "ARX",
+"t": 1782131400.0,
+"ret": 0.5316,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "NES",
+"t": 1782307800.0,
+"ret": 0.0696,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1782477000.0,
+"ret": -0.3373,
+"why": "time"
+},
+{
+"symbol": "VVV",
+"t": 1783058400.0,
+"ret": -0.1495,
+"why": "time"
+},
+{
+"symbol": "AEON",
+"t": 1785151800.0,
+"ret": -0.4666,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785423600.0,
+"ret": 0.4305,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "CP",
+"t": 1788363600.0,
+"ret": -0.41,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FET",
+"t": 1788579000.0,
+"ret": 0.0698,
+"why": "time"
+},
+{
+"symbol": "FLOCK",
+"t": 1789207200.0,
+"ret": -0.081,
+"why": "time"
+}
+],
+"bithumb_krw": [
+{
+"symbol": "ASTER",
+"t": 1760108400.0,
+"ret": -0.1579,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1760713200.0,
+"ret": 0.0222,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760713200.0,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "DOOD",
+"t": 1760713200.0,
+"ret": 0.1502,
+"why": "time"
+},
+{
+"symbol": "ZORA",
+"t": 1761058800.0,
+"ret": -0.3984,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1761058800.0,
+"ret": -0.2937,
+"why": "time"
+},
+{
+"symbol": "CPOOL",
+"t": 1761145200.0,
+"ret": -0.4197,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1761750000.0,
+"ret": -0.4025,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762268400.0,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MET",
+"t": 1763478000.0,
+"ret": -0.2363,
+"why": "time"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763996400.0,
+"ret": 0.2102,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1764082800.0,
+"ret": -0.4086,
+"why": "time"
+},
+{
+"symbol": "SAPIEN",
+"t": 1764946800.0,
+"ret": -0.2417,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1765292400.0,
+"ret": -0.2856,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1765465200.0,
+"ret": -0.2724,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765810800.0,
+"ret": -0.1873,
+"why": "time"
+},
+{
+"symbol": "EDEN",
+"t": 1765897200.0,
+"ret": -0.1097,
+"why": "time"
+},
+{
+"symbol": "DEXE",
+"t": 1766156400.0,
+"ret": -0.0238,
+"why": "time"
+},
+{
+"symbol": "SKR",
+"t": 1769094000.0,
+"ret": -0.4712,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1769698800.0,
+"ret": -0.3435,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1770130800.0,
+"ret": -0.3945,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1771599600.0,
+"ret": -0.3876,
+"why": "time"
+},
+{
+"symbol": "GPS",
+"t": 1771945200.0,
+"ret": -0.1199,
+"why": "time"
+},
+{
+"symbol": "ROBO",
+"t": 1773846000.0,
+"ret": -0.2737,
+"why": "time"
+},
+{
+"symbol": "PHA",
+"t": 1774018800.0,
+"ret": 0.0215,
+"why": "time"
+},
+{
+"symbol": "VVV",
+"t": 1775055600.0,
+"ret": 0.2544,
+"why": "time"
+},
+{
+"symbol": "BASED",
+"t": 1776783600.0,
+"ret": -0.3151,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1777474800.0,
+"ret": -0.3046,
+"why": "time"
+},
+{
+"symbol": "AI",
+"t": 1779116400.0,
+"ret": -0.0993,
+"why": "time"
+},
+{
+"symbol": "OPG",
+"t": 1779462000.0,
+"ret": -0.2793,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1779980400.0,
+"ret": -0.1749,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1781622000.0,
+"ret": -0.2523,
+"why": "time"
+},
+{
+"symbol": "SPX",
+"t": 1781622000.0,
+"ret": -0.1388,
+"why": "time"
+},
+{
+"symbol": "CC",
+"t": 1782226800.0,
+"ret": -0.1413,
+"why": "time"
+},
+{
+"symbol": "ARX",
+"t": 1782486000.0,
+"ret": -0.3382,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1782831600.0,
+"ret": -0.4111,
+"why": "time"
+},
+{
+"symbol": "MPLX",
+"t": 1783090800.0,
+"ret": -0.2955,
+"why": "time"
+},
+{
+"symbol": "ICNT",
+"t": 1783436400.0,
+"ret": 0.0311,
+"why": "time"
+},
+{
+"symbol": "BANK",
+"t": 1785164400.0,
+"ret": -0.8902,
+"why": "time"
+},
+{
+"symbol": "AEON",
+"t": 1785337200.0,
+"ret": -0.5276,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785510000.0,
+"ret": 0.2535,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BSB",
+"t": 1786114800.0,
+"ret": -0.2164,
+"why": "time"
+},
+{
+"symbol": "TRB",
+"t": 1786546800.0,
+"ret": 0.3232,
+"why": "time"
+},
+{
+"symbol": "NEXO",
+"t": 1787324400.0,
+"ret": -0.0317,
+"why": "time"
+},
+{
+"symbol": "PROM",
+"t": 1787583600.0,
+"ret": 0.5435,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788879600.0,
+"ret": -0.2147,
+"why": "time"
+},
+{
+"symbol": "AVA",
+"t": 1789657200.0,
+"ret": -0.0255,
+"why": "time"
+}
+],
+"binance_spot_trading": [
+{
+"symbol": "WAL",
+"t": 1760140800.0,
+"ret": 0.1155,
+"why": "time"
+},
+{
+"symbol": "EUL",
+"t": 1760400000.0,
+"ret": -0.039,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1760486400.0,
+"ret": -0.2621,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1760572800.0,
+"ret": -0.0172,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760745600.0,
+"ret": -0.3995,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1761177600.0,
+"ret": -0.4227,
+"why": "time"
+},
+{
+"symbol": "F",
+"t": 1761436800.0,
+"ret": -0.4647,
+"why": "time"
+},
+{
+"symbol": "GIGGLE",
+"t": 1761436800.0,
+"ret": -0.116,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762300800.0,
+"ret": 0.0685,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "SAPIEN",
+"t": 1762473600.0,
+"ret": -0.5037,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1762905600.0,
+"ret": -0.5153,
+"why": "time"
+},
+{
+"symbol": "BANK",
+"t": 1763078400.0,
+"ret": -0.0656,
+"why": "time"
+},
+{
+"symbol": "MET",
+"t": 1763078400.0,
+"ret": -0.2979,
+"why": "time"
+},
+{
+"symbol": "AT",
+"t": 1764288000.0,
+"ret": -0.4554,
+"why": "time"
+},
+{
+"symbol": "BREV",
+"t": 1767744000.0,
+"ret": 0.0481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FOGO",
+"t": 1768521600.0,
+"ret": -0.0544,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769126400.0,
+"ret": 0.2918,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ZAMA",
+"t": 1770076800.0,
+"ret": -0.309,
+"why": "time"
+},
+{
+"symbol": "ESP",
+"t": 1770940800.0,
+"ret": 2.6411,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MANTRA",
+"t": 1772668800.0,
+"ret": -0.3497,
+"why": "time"
+},
+{
+"symbol": "ROBO",
+"t": 1772668800.0,
+"ret": -0.3682,
+"why": "time"
+},
+{
+"symbol": "OPN",
+"t": 1772755200.0,
+"ret": -0.1062,
+"why": "time"
+},
+{
+"symbol": "NIGHT",
+"t": 1773273600.0,
+"ret": -0.0577,
+"why": "time"
+},
+{
+"symbol": "KAT",
+"t": 1773878400.0,
+"ret": 0.9668,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "AIGENSYN",
+"t": 1778803200.0,
+"ret": -0.1367,
+"why": "time"
+},
+{
+"symbol": "GENIUS",
+"t": 1779494400.0,
+"ret": -0.3907,
+"why": "time"
+},
+{
+"symbol": "OPG",
+"t": 1779494400.0,
+"ret": -0.2919,
+"why": "time"
+},
+{
+"symbol": "SNDKB",
+"t": 1781222400.0,
+"ret": 0.0534,
+"why": "time"
+},
+{
+"symbol": "MUB",
+"t": 1781222400.0,
+"ret": 0.1433,
+"why": "time"
+},
+{
+"symbol": "CRCLB",
+"t": 1781222400.0,
+"ret": -0.0742,
+"why": "time"
+},
+{
+"symbol": "NVDAB",
+"t": 1781222400.0,
+"ret": -0.0674,
+"why": "time"
+},
+{
+"symbol": "TSLAB",
+"t": 1781222400.0,
+"ret": -0.0735,
+"why": "time"
+},
+{
+"symbol": "SPCXB",
+"t": 1781308800.0,
+"ret": -0.0849,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781827200.0,
+"ret": 0.1511,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "AMDB",
+"t": 1782259200.0,
+"ret": -0.0458,
+"why": "time"
+},
+{
+"symbol": "MSTRB",
+"t": 1782259200.0,
+"ret": -0.0318,
+"why": "time"
+},
+{
+"symbol": "INTCB",
+"t": 1782259200.0,
+"ret": -0.212,
+"why": "time"
+},
+{
+"symbol": "EWYB",
+"t": 1782259200.0,
+"ret": -0.1392,
+"why": "time"
+},
+{
+"symbol": "LITEB",
+"t": 1782864000.0,
+"ret": -0.0677,
+"why": "time"
+},
+{
+"symbol": "MSFTB",
+"t": 1782864000.0,
+"ret": 0.0288,
+"why": "time"
+},
+{
+"symbol": "QQQB",
+"t": 1782864000.0,
+"ret": -0.0137,
+"why": "time"
+},
+{
+"symbol": "PLTRB",
+"t": 1782864000.0,
+"ret": 0.0622,
+"why": "time"
+},
+{
+"symbol": "METAB",
+"t": 1782864000.0,
+"ret": 0.1051,
+"why": "time"
+},
+{
+"symbol": "GRAM",
+"t": 1783036800.0,
+"ret": -0.1197,
+"why": "time"
+},
+{
+"symbol": "COINB",
+"t": 1783468800.0,
+"ret": 0.0361,
+"why": "time"
+},
+{
+"symbol": "SOXLB",
+"t": 1783468800.0,
+"ret": -0.0894,
+"why": "time"
+},
+{
+"symbol": "SPYB",
+"t": 1783468800.0,
+"ret": -0.0021,
+"why": "time"
+},
+{
+"symbol": "CBRSB",
+"t": 1783468800.0,
+"ret": 0.1418,
+"why": "time"
+},
+{
+"symbol": "DRAMB",
+"t": 1783468800.0,
+"ret": -0.0675,
+"why": "time"
+},
+{
+"symbol": "NBISB",
+"t": 1783468800.0,
+"ret": 0.0383,
+"why": "time"
+},
+{
+"symbol": "GOOGLB",
+"t": 1783468800.0,
+"ret": -0.0924,
+"why": "time"
+},
+{
+"symbol": "QCOMB",
+"t": 1783468800.0,
+"ret": -0.0643,
+"why": "time"
+},
+{
+"symbol": "WDCB",
+"t": 1783468800.0,
+"ret": 0.0036,
+"why": "time"
+},
+{
+"symbol": "GLWB",
+"t": 1783468800.0,
+"ret": -0.1763,
+"why": "time"
+},
+{
+"symbol": "SKHYB",
+"t": 1783987200.0,
+"ret": -0.2931,
+"why": "time"
+},
+{
+"symbol": "AAOIB",
+"t": 1784160000.0,
+"ret": -0.03,
+"why": "time"
+},
+{
+"symbol": "IBMB",
+"t": 1784160000.0,
+"ret": 0.0195,
+"why": "time"
+},
+{
+"symbol": "MRVLB",
+"t": 1784160000.0,
+"ret": 0.044,
+"why": "time"
+},
+{
+"symbol": "NOKB",
+"t": 1784160000.0,
+"ret": -0.0957,
+"why": "time"
+},
+{
+"symbol": "AVGOB",
+"t": 1784160000.0,
+"ret": 0.033,
+"why": "time"
+},
+{
+"symbol": "RKLBB",
+"t": 1784160000.0,
+"ret": 0.0018,
+"why": "time"
+},
+{
+"symbol": "ARMB",
+"t": 1784160000.0,
+"ret": -0.0419,
+"why": "time"
+},
+{
+"symbol": "HOODB",
+"t": 1784160000.0,
+"ret": -0.1701,
+"why": "time"
+},
+{
+"symbol": "TSMB",
+"t": 1784160000.0,
+"ret": 0.0086,
+"why": "time"
+},
+{
+"symbol": "BABAB",
+"t": 1784160000.0,
+"ret": 0.0053,
+"why": "time"
+},
+{
+"symbol": "KORUB",
+"t": 1784764800.0,
+"ret": -0.2168,
+"why": "time"
+},
+{
+"symbol": "ORCLB",
+"t": 1784764800.0,
+"ret": 0.1616,
+"why": "time"
+},
+{
+"symbol": "MUUB",
+"t": 1784764800.0,
+"ret": -0.2484,
+"why": "time"
+},
+{
+"symbol": "CRWVB",
+"t": 1784764800.0,
+"ret": 0.0622,
+"why": "time"
+},
+{
+"symbol": "AXTIB",
+"t": 1784764800.0,
+"ret": 0.4331,
+"why": "time"
+},
+{
+"symbol": "SNXXB",
+"t": 1784764800.0,
+"ret": -0.456,
+"why": "time"
+},
+{
+"symbol": "MVLLB",
+"t": 1784764800.0,
+"ret": -0.0363,
+"why": "time"
+},
+{
+"symbol": "INTWB",
+"t": 1784764800.0,
+"ret": -0.1212,
+"why": "time"
+},
+{
+"symbol": "TQQQB",
+"t": 1784764800.0,
+"ret": 0.0772,
+"why": "time"
+},
+{
+"symbol": "QNTB",
+"t": 1784764800.0,
+"ret": 0.0309,
+"why": "time"
+},
+{
+"symbol": "AMZNB",
+"t": 1785369600.0,
+"ret": 0.0235,
+"why": "time"
+},
+{
+"symbol": "BEB",
+"t": 1785369600.0,
+"ret": 0.0825,
+"why": "time"
+},
+{
+"symbol": "SOXSB",
+"t": 1785369600.0,
+"ret": -0.2046,
+"why": "time"
+},
+{
+"symbol": "GSB",
+"t": 1785369600.0,
+"ret": 0.0126,
+"why": "time"
+},
+{
+"symbol": "SMHB",
+"t": 1785369600.0,
+"ret": 0.0712,
+"why": "time"
+},
+{
+"symbol": "PYPLB",
+"t": 1785369600.0,
+"ret": 0.0423,
+"why": "time"
+},
+{
+"symbol": "AAPLB",
+"t": 1785369600.0,
+"ret": -0.0294,
+"why": "time"
+},
+{
+"symbol": "DELLB",
+"t": 1785369600.0,
+"ret": 0.2455,
+"why": "time"
+},
+{
+"symbol": "FLNCB",
+"t": 1785369600.0,
+"ret": -0.0453,
+"why": "time"
+},
+{
+"symbol": "AMATB",
+"t": 1785369600.0,
+"ret": -0.0251,
+"why": "time"
+},
+{
+"symbol": "IRENB",
+"t": 1785974400.0,
+"ret": 0.1028,
+"why": "time"
+},
+{
+"symbol": "NFLXB",
+"t": 1785974400.0,
+"ret": 0.0828,
+"why": "time"
+},
+{
+"symbol": "ALABB",
+"t": 1785974400.0,
+"ret": -0.1507,
+"why": "time"
+},
+{
+"symbol": "ASTSB",
+"t": 1785974400.0,
+"ret": -0.0469,
+"why": "time"
+},
+{
+"symbol": "USARB",
+"t": 1785974400.0,
+"ret": -0.0393,
+"why": "time"
+},
+{
+"symbol": "SMCIB",
+"t": 1785974400.0,
+"ret": 0.2222,
+"why": "time"
+},
+{
+"symbol": "BMNRB",
+"t": 1785974400.0,
+"ret": 0.1697,
+"why": "time"
+},
+{
+"symbol": "ASMLB",
+"t": 1785974400.0,
+"ret": 0.0168,
+"why": "time"
+},
+{
+"symbol": "COHRB",
+"t": 1785974400.0,
+"ret": -0.1629,
+"why": "time"
+},
+{
+"symbol": "CRDOB",
+"t": 1785974400.0,
+"ret": -0.0077,
+"why": "time"
+},
+{
+"symbol": "GMEB",
+"t": 1786579200.0,
+"ret": -0.0249,
+"why": "time"
+},
+{
+"symbol": "DJTB",
+"t": 1787788800.0,
+"ret": -0.1014,
+"why": "time"
+},
+{
+"symbol": "STXB",
+"t": 1788393600.0,
+"ret": 0.008,
+"why": "time"
+},
+{
+"symbol": "MRNAB",
+"t": 1788393600.0,
+"ret": 0.0674,
+"why": "time"
+},
+{
+"symbol": "CRWDB",
+"t": 1788393600.0,
+"ret": 0.1411,
+"why": "time"
+},
+{
+"symbol": "SQQQB",
+"t": 1788393600.0,
+"ret": 0.002,
+"why": "time"
+},
+{
+"symbol": "MARSCOIN",
+"t": 1788566400.0,
+"ret": -0.5935,
+"why": "time"
+},
+{
+"symbol": "CRMB",
+"t": 1788998400.0,
+"ret": -0.0226,
+"why": "time"
+},
+{
+"symbol": "HIMSB",
+"t": 1788998400.0,
+"ret": 0.0614,
+"why": "time"
+},
+{
+"symbol": "BNCB",
+"t": 1789430400.0,
+"ret": 0.1909,
+"why": "time"
+},
+{
+"symbol": "RDDTB",
+"t": 1789603200.0,
+"ret": -0.0265,
+"why": "time"
+},
+{
+"symbol": "GPROB",
+"t": 1789603200.0,
+"ret": -0.0199,
+"why": "time"
+},
+{
+"symbol": "AGPUB",
+"t": 1790208000.0,
+"ret": 0.0064,
+"why": "time"
+},
+{
+"symbol": "AMCB",
+"t": 1790208000.0,
+"ret": -0.0085,
+"why": "time"
+},
+{
+"symbol": "CYPHB",
+"t": 1790208000.0,
+"ret": -0.2996,
+"why": "time"
+}
+],
+"binance_perp": [
+{
+"symbol": "EUL",
+"t": 1760365800.0,
+"ret": -0.1622,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1760432400.0,
+"ret": -0.471,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1760531400.0,
+"ret": -0.1811,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760700600.0,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1761145200.0,
+"ret": -0.4227,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762257600.0,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ALLO",
+"t": 1762869600.0,
+"ret": 0.018,
+"why": "hit coinbase"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763119800.0,
+"ret": 1.5179,
+"why": "time"
+},
+{
+"symbol": "GAIB",
+"t": 1763629200.0,
+"ret": -0.6394,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765350000.0,
+"ret": 0.0657,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ELSA",
+"t": 1769066700.0,
+"ret": -0.6097,
+"why": "time"
+},
+{
+"symbol": "SKR",
+"t": 1769078700.0,
+"ret": -0.4712,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1769168700.0,
+"ret": -0.7033,
+"why": "time"
+},
+{
+"symbol": "FIGHT",
+"t": 1769170500.0,
+"ret": -0.6927,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1769663700.0,
+"ret": 0.8129,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "TRIA",
+"t": 1770380100.0,
+"ret": -0.2916,
+"why": "time"
+},
+{
+"symbol": "MANTRA",
+"t": 1772611200.0,
+"ret": -0.4268,
+"why": "time"
+},
+{
+"symbol": "BSB",
+"t": 1774439100.0,
+"ret": 0.0317,
+"why": "time"
+},
+{
+"symbol": "BASED",
+"t": 1774864800.0,
+"ret": -0.458,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1778141700.0,
+"ret": 0.0524,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781791200.0,
+"ret": 1.3481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ARX",
+"t": 1782189900.0,
+"ret": -0.4086,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1782560700.0,
+"ret": -0.4185,
+"why": "time"
+},
+{
+"symbol": "GRAM",
+"t": 1782979200.0,
+"ret": -0.0955,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785501900.0,
+"ret": 0.2535,
+"why": "hit upbit_krw"
+}
+],
+"binance_alpha": [
+{
+"symbol": "ENSO",
+"t": 1760425200.0,
+"ret": -0.471,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1760522400.0,
+"ret": -0.0104,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1760529600.0,
+"ret": -0.1811,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760698800.0,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "MERL",
+"t": 1760774400.0,
+"ret": 0.0483,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1761138000.0,
+"ret": -0.4227,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762250400.0,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ALLO",
+"t": 1762858800.0,
+"ret": 0.018,
+"why": "hit coinbase"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763118000.0,
+"ret": 1.5179,
+"why": "time"
+},
+{
+"symbol": "GAIB",
+"t": 1763546400.0,
+"ret": -0.7083,
+"why": "time"
+},
+{
+"symbol": "SQD",
+"t": 1764493200.0,
+"ret": -0.2889,
+"why": "time"
+},
+{
+"symbol": "H",
+"t": 1764766800.0,
+"ret": 0.1318,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765288800.0,
+"ret": 0.7169,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "LAVA",
+"t": 1765360800.0,
+"ret": -0.1619,
+"why": "time"
+},
+{
+"symbol": "VOOI",
+"t": 1766055600.0,
+"ret": -0.5018,
+"why": "time"
+},
+{
+"symbol": "BREV",
+"t": 1767700800.0,
+"ret": 0.2982,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FOGO",
+"t": 1768478400.0,
+"ret": -0.2817,
+"why": "time"
+},
+{
+"symbol": "FUN",
+"t": 1768485600.0,
+"ret": -0.3402,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1768896000.0,
+"ret": 1.5839,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "SKR",
+"t": 1769069100.0,
+"ret": -0.4712,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769076000.0,
+"ret": 0.1841,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FIGHT",
+"t": 1769079600.0,
+"ret": -0.7408,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1769162400.0,
+"ret": -0.7033,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1769598000.0,
+"ret": 0.3556,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ZAMA",
+"t": 1770033600.0,
+"ret": -0.3602,
+"why": "time"
+},
+{
+"symbol": "TRIA",
+"t": 1770105600.0,
+"ret": -0.0427,
+"why": "time"
+},
+{
+"symbol": "ICNT",
+"t": 1770249600.001,
+"ret": 0.0793,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1770368400.0,
+"ret": 0.6205,
+"why": "time"
+},
+{
+"symbol": "ESP",
+"t": 1770894000.0,
+"ret": 2.1106,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BSB",
+"t": 1772618400.0,
+"ret": -0.1225,
+"why": "time"
+},
+{
+"symbol": "ROBO",
+"t": 1772625600.0,
+"ret": 0.0491,
+"why": "hit binance_spot"
+},
+{
+"symbol": "OPN",
+"t": 1772708400.0,
+"ret": -0.2178,
+"why": "time"
+},
+{
+"symbol": "KAT",
+"t": 1773831600.0,
+"ret": 0.7281,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BASED",
+"t": 1774857600.0,
+"ret": -0.458,
+"why": "time"
+},
+{
+"symbol": "EDGE",
+"t": 1774960200.0,
+"ret": 0.4641,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1777878000.0,
+"ret": 2.1502,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781784000.0,
+"ret": 1.3481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ARX",
+"t": 1782122400.0,
+"ret": 0.5316,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "NES",
+"t": 1782302400.0,
+"ret": 0.0696,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1782475200.0,
+"ret": -0.3373,
+"why": "time"
+},
+{
+"symbol": "AEON",
+"t": 1785146400.0,
+"ret": -0.4666,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785412800.0,
+"ret": 0.4305,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "KII",
+"t": 1786712400.0,
+"ret": -0.2365,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788505200.0,
+"ret": -0.2206,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MEME",
+"t": 1788949303.152,
+"ret": 0.1255,
+"why": "time"
+}
+],
+"bybit_perp": [
+{
+"symbol": "EUL",
+"t": 1760430633.0,
+"ret": -0.039,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1760433661.0,
+"ret": -0.471,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1760530869.0,
+"ret": -0.1811,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760706241.0,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1761145437.0,
+"ret": -0.4227,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1763123540.0,
+"ret": -0.3666,
+"why": "time"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763127243.0,
+"ret": 1.5179,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1763992686.0,
+"ret": -0.0828,
+"why": "time"
+},
+{
+"symbol": "FHE",
+"t": 1767771601.0,
+"ret": 2.8309,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1769066535.0,
+"ret": -0.6097,
+"why": "time"
+},
+{
+"symbol": "FIGHT",
+"t": 1769168536.0,
+"ret": -0.6927,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1769171029.0,
+"ret": -0.7033,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1769598765.0,
+"ret": 0.3556,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "TRIA",
+"t": 1770285700.0,
+"ret": -0.2589,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1770881266.0,
+"ret": 1.4062,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BSB",
+"t": 1774500541.0,
+"ret": 0.0652,
+"why": "time"
+},
+{
+"symbol": "BASED",
+"t": 1774859022.0,
+"ret": -0.458,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1777455508.0,
+"ret": -0.3046,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1778049738.0,
+"ret": 0.135,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781792305.0,
+"ret": 1.3481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ARX",
+"t": 1782186545.0,
+"ret": -0.4086,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1782703707.0,
+"ret": -0.2594,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785499299.0,
+"ret": 0.2535,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "AEON",
+"t": 1786611877.0,
+"ret": -0.1123,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788507720.0,
+"ret": -0.2206,
+"why": "hit upbit_krw"
+}
+],
+"gate_spot": [
+{
+"symbol": "ENSO",
+"t": 1760432400,
+"ret": -0.471,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1760526000,
+"ret": -0.0104,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1760598000,
+"ret": -0.0279,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760706000,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "TURTLE",
+"t": 1761145200,
+"ret": -0.4227,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762257600,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "CC",
+"t": 1762758000,
+"ret": -0.1834,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1762866000,
+"ret": 0.018,
+"why": "hit coinbase"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763125200,
+"ret": 1.5179,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1763996400,
+"ret": -0.0828,
+"why": "time"
+},
+{
+"symbol": "NEIRO",
+"t": 1764914400,
+"ret": -0.151,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1765198800,
+"ret": -0.5264,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765292400,
+"ret": 0.7169,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "VOOI",
+"t": 1766062800,
+"ret": -0.5018,
+"why": "time"
+},
+{
+"symbol": "BREV",
+"t": 1767708000,
+"ret": 0.2982,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FOGO",
+"t": 1768485600,
+"ret": -0.2817,
+"why": "time"
+},
+{
+"symbol": "FUN",
+"t": 1768485600,
+"ret": -0.3402,
+"why": "time"
+},
+{
+"symbol": "SKR",
+"t": 1768960800,
+"ret": -0.1714,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769083200,
+"ret": 0.1841,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ELSA",
+"t": 1769169600,
+"ret": -0.5155,
+"why": "time"
+},
+{
+"symbol": "ZAMA",
+"t": 1770037200,
+"ret": -0.3602,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1770109200,
+"ret": -0.3945,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1770879600,
+"ret": 1.4062,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ESP",
+"t": 1770901200,
+"ret": 2.1106,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MANTRA",
+"t": 1772611200,
+"ret": -0.4268,
+"why": "time"
+},
+{
+"symbol": "OPN",
+"t": 1772715600,
+"ret": -0.2178,
+"why": "time"
+},
+{
+"symbol": "KAT",
+"t": 1773838800,
+"ret": 0.7281,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "USAT",
+"t": 1774515600,
+"ret": -0.005,
+"why": "time"
+},
+{
+"symbol": "OFC",
+"t": 1775728800,
+"ret": 0.3412,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1777449600,
+"ret": -0.3046,
+"why": "time"
+},
+{
+"symbol": "AIGENSYN",
+"t": 1778763600,
+"ret": -0.276,
+"why": "time"
+},
+{
+"symbol": "IRYS",
+"t": 1779867000,
+"ret": -0.3491,
+"why": "time"
+},
+{
+"symbol": "USDY",
+"t": 1781247600,
+"ret": -0.0027,
+"why": "time"
+},
+{
+"symbol": "SPCXX",
+"t": 1781316000,
+"ret": -0.0729,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781791200,
+"ret": 1.3481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "VERONA",
+"t": 1782374400,
+"ret": -0.0587,
+"why": "time"
+},
+{
+"symbol": "NES",
+"t": 1782900000,
+"ret": 0.2483,
+"why": "time"
+},
+{
+"symbol": "AEON",
+"t": 1785150000,
+"ret": -0.4666,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788361200,
+"ret": -0.41,
+"why": "hit upbit_krw"
+}
+],
+"bybit_spot": [
+{
+"symbol": "ENSO",
+"t": 1760486400.0,
+"ret": -0.2621,
+"why": "time"
+},
+{
+"symbol": "YB",
+"t": 1760572800.0,
+"ret": -0.0172,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1760572800.0,
+"ret": -0.0279,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760745600.0,
+"ret": -0.3995,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762300800.0,
+"ret": 0.0685,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "CC",
+"t": 1762819200.0,
+"ret": -0.2401,
+"why": "time"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1763164800.0,
+"ret": -0.0311,
+"why": "time"
+},
+{
+"symbol": "GAIB",
+"t": 1763596800.0,
+"ret": -0.6394,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1764028800.0,
+"ret": -0.4086,
+"why": "time"
+},
+{
+"symbol": "STABLE",
+"t": 1765238400.0,
+"ret": -0.4733,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765324800.0,
+"ret": 0.0657,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "VOOI",
+"t": 1766102400.0,
+"ret": -0.5207,
+"why": "time"
+},
+{
+"symbol": "BREV",
+"t": 1767744000.0,
+"ret": 0.0481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FOGO",
+"t": 1768521600.0,
+"ret": -0.0544,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1768953600.0,
+"ret": 1.7712,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "SKR",
+"t": 1769040000.0,
+"ret": -0.4712,
+"why": "time"
+},
+{
+"symbol": "FIGHT",
+"t": 1769126400.0,
+"ret": -0.6927,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769126400.0,
+"ret": 0.2918,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "PYBOBO",
+"t": 1769472000.0,
+"ret": -0.2138,
+"why": "time"
+},
+{
+"symbol": "USAT",
+"t": 1769558400.0,
+"ret": -0.005,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1769644800.0,
+"ret": 0.8129,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ZAMA",
+"t": 1770076800.0,
+"ret": -0.309,
+"why": "time"
+},
+{
+"symbol": "TRIA",
+"t": 1770163200.0,
+"ret": -0.172,
+"why": "time"
+},
+{
+"symbol": "AEDZ",
+"t": 1770854400.0,
+"ret": -0.0054,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1770940800.0,
+"ret": 0.7801,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MANTRA",
+"t": 1772668800.0,
+"ret": -0.3497,
+"why": "time"
+},
+{
+"symbol": "BSB",
+"t": 1772668800.0,
+"ret": 0.0054,
+"why": "time"
+},
+{
+"symbol": "OPN",
+"t": 1772755200.0,
+"ret": -0.1062,
+"why": "time"
+},
+{
+"symbol": "BASED",
+"t": 1774915200.0,
+"ret": -0.1733,
+"why": "time"
+},
+{
+"symbol": "EDGE",
+"t": 1775001600.0,
+"ret": 0.4926,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1777075200.0,
+"ret": 2.5294,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BILL",
+"t": 1777939200.0,
+"ret": 1.5968,
+"why": "time"
+},
+{
+"symbol": "SPCXX",
+"t": 1781308800.0,
+"ret": -0.0729,
+"why": "time"
+},
+{
+"symbol": "SLX",
+"t": 1782172800.0,
+"ret": -0.236,
+"why": "time"
+},
+{
+"symbol": "ARX",
+"t": 1782172800.0,
+"ret": 0.3724,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "VERONA",
+"t": 1782345600.0,
+"ret": -0.0587,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1782518400.0,
+"ret": -0.4185,
+"why": "time"
+},
+{
+"symbol": "GROVE",
+"t": 1783468800.0,
+"ret": -0.577,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785456000.0,
+"ret": 0.2535,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "KII",
+"t": 1786752000.0,
+"ret": -0.1352,
+"why": "time"
+},
+{
+"symbol": "PONS",
+"t": 1790121600.0,
+"ret": -0.3626,
+"why": "hit coinbase"
+}
+],
+"upbit_krw": [
+{
+"symbol": "YGG",
+"t": 1760504400.0,
+"ret": -0.2465,
+"why": "time"
+},
+{
+"symbol": "ZORA",
+"t": 1760668200.0,
+"ret": -0.2822,
+"why": "time"
+},
+{
+"symbol": "ZBT",
+"t": 1760691606.0,
+"ret": -0.5442,
+"why": "time"
+},
+{
+"symbol": "CPOOL",
+"t": 1761110400.0,
+"ret": -0.4197,
+"why": "time"
+},
+{
+"symbol": "ORDER",
+"t": 1761286500.0,
+"ret": -0.4341,
+"why": "time"
+},
+{
+"symbol": "ENSO",
+"t": 1761719456.0,
+"ret": -0.4025,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762321679.0,
+"ret": -0.6289,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1763974893.0,
+"ret": -0.0828,
+"why": "time"
+},
+{
+"symbol": "PLUME",
+"t": 1764135002.0,
+"ret": -0.1413,
+"why": "hit coinbase"
+},
+{
+"symbol": "WET",
+"t": 1765782000.0,
+"ret": -0.1873,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1769059800.0,
+"ret": -0.6097,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1770102000.0,
+"ret": -0.3945,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1771563600.0,
+"ret": -0.3876,
+"why": "time"
+},
+{
+"symbol": "SKR",
+"t": 1771909200.0,
+"ret": -0.0731,
+"why": "time"
+},
+{
+"symbol": "CC",
+"t": 1776142800.0,
+"ret": -0.0105,
+"why": "time"
+},
+{
+"symbol": "PIEVERSE",
+"t": 1776661200.0,
+"ret": -0.2542,
+"why": "time"
+},
+{
+"symbol": "CHIP",
+"t": 1776752184.0,
+"ret": 0.06,
+"why": "hit binance_spot"
+},
+{
+"symbol": "BLEND",
+"t": 1777429411.0,
+"ret": -0.3046,
+"why": "time"
+},
+{
+"symbol": "MEGA",
+"t": 1777516206.0,
+"ret": 0.06,
+"why": "hit binance_spot"
+},
+{
+"symbol": "B3",
+"t": 1778125800.0,
+"ret": -0.4103,
+"why": "time"
+},
+{
+"symbol": "VVV",
+"t": 1778562000.0,
+"ret": 0.0191,
+"why": "time"
+},
+{
+"symbol": "BABY",
+"t": 1780651800.0,
+"ret": -0.214,
+"why": "time"
+},
+{
+"symbol": "SPX",
+"t": 1781575946.0,
+"ret": -0.1388,
+"why": "time"
+},
+{
+"symbol": "ARX",
+"t": 1782180000.0,
+"ret": -0.4086,
+"why": "time"
+},
+{
+"symbol": "CFX",
+"t": 1785474007.0,
+"ret": 0.0126,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785904951.0,
+"ret": 0.0056,
+"why": "time"
+},
+{
+"symbol": "CAP",
+"t": 1785981315.0,
+"ret": 1.1119,
+"why": "time"
+},
+{
+"symbol": "BSB",
+"t": 1786071316.0,
+"ret": -0.2164,
+"why": "time"
+},
+{
+"symbol": "PROM",
+"t": 1786500698.0,
+"ret": 0.5932,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788837704.0,
+"ret": -0.2147,
+"why": "time"
+}
+],
+"okx_spot": [
+{
+"symbol": "YB",
+"t": 1760522400.0,
+"ret": -0.0104,
+"why": "time"
+},
+{
+"symbol": "ASTER",
+"t": 1760677200.0,
+"ret": -0.1466,
+"why": "time"
+},
+{
+"symbol": "DOOD",
+"t": 1760695200.0,
+"ret": 0.1502,
+"why": "time"
+},
+{
+"symbol": "ZORA",
+"t": 1760698800.0,
+"ret": -0.2822,
+"why": "time"
+},
+{
+"symbol": "VIRTUAL",
+"t": 1761634800.0,
+"ret": -0.1132,
+"why": "time"
+},
+{
+"symbol": "MMT",
+"t": 1762254000.0,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ALLO",
+"t": 1762862400.0,
+"ret": 0.018,
+"why": "hit coinbase"
+},
+{
+"symbol": "ZEN",
+"t": 1763442000.0,
+"ret": -0.4557,
+"why": "time"
+},
+{
+"symbol": "ZEC",
+"t": 1763982000.0,
+"ret": -0.2251,
+"why": "time"
+},
+{
+"symbol": "DASH",
+"t": 1764154800.0,
+"ret": -0.3363,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765288800.0,
+"ret": 0.7169,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BRL1",
+"t": 1766743200.0,
+"ret": 0.0228,
+"why": "time"
+},
+{
+"symbol": "BREV",
+"t": 1767704400.0,
+"ret": 0.2982,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FOGO",
+"t": 1768482000.0,
+"ret": -0.2817,
+"why": "time"
+},
+{
+"symbol": "SPACE",
+"t": 1769166000.0,
+"ret": -0.7033,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769511600.0,
+"ret": 0.3583,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "USAT",
+"t": 1769522400.0,
+"ret": -0.0052,
+"why": "time"
+},
+{
+"symbol": "ZAMA",
+"t": 1770033600.0,
+"ret": -0.3602,
+"why": "time"
+},
+{
+"symbol": "CC",
+"t": 1770886800.0,
+"ret": 0.0493,
+"why": "time"
+},
+{
+"symbol": "ROBO",
+"t": 1772701200.0,
+"ret": -0.3682,
+"why": "time"
+},
+{
+"symbol": "KAT",
+"t": 1773835200.0,
+"ret": 0.7281,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MON",
+"t": 1774260000.0,
+"ret": 0.2515,
+"why": "time"
+},
+{
+"symbol": "BASED",
+"t": 1774861200.0,
+"ret": -0.458,
+"why": "time"
+},
+{
+"symbol": "OFC",
+"t": 1775725200.0,
+"ret": 0.3412,
+"why": "time"
+},
+{
+"symbol": "AUDM",
+"t": 1776837600.0,
+"ret": 0.0,
+"why": "time"
+},
+{
+"symbol": "AUDF",
+"t": 1776837600.0,
+"ret": -0.005,
+"why": "time"
+},
+{
+"symbol": "GRASS",
+"t": 1777035600.0,
+"ret": -0.0435,
+"why": "time"
+},
+{
+"symbol": "EDGE",
+"t": 1778061600.0,
+"ret": -0.0033,
+"why": "time"
+},
+{
+"symbol": "AI",
+"t": 1779440400.0,
+"ret": -0.2311,
+"why": "time"
+},
+{
+"symbol": "IRYS",
+"t": 1779872400.0,
+"ret": -0.3491,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781787600.0,
+"ret": 1.3481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "NES",
+"t": 1782302400.0,
+"ret": 0.0696,
+"why": "time"
+},
+{
+"symbol": "CARDS",
+"t": 1782385200.0,
+"ret": -0.3629,
+"why": "time"
+},
+{
+"symbol": "SLX",
+"t": 1783681200.0,
+"ret": -0.2889,
+"why": "time"
+},
+{
+"symbol": "XMU",
+"t": 1784163600.0,
+"ret": 0.0763,
+"why": "time"
+},
+{
+"symbol": "XNVDA",
+"t": 1784178000.0,
+"ret": -0.0495,
+"why": "time"
+},
+{
+"symbol": "XQQQ",
+"t": 1784178000.0,
+"ret": -0.0265,
+"why": "time"
+},
+{
+"symbol": "XSKHY",
+"t": 1784178000.0,
+"ret": 0.0041,
+"why": "time"
+},
+{
+"symbol": "XSNDK",
+"t": 1784178000.0,
+"ret": -0.019,
+"why": "time"
+},
+{
+"symbol": "XSPCX",
+"t": 1784178000.0,
+"ret": -0.117,
+"why": "time"
+},
+{
+"symbol": "XSPY",
+"t": 1784178000.0,
+"ret": -0.0134,
+"why": "time"
+},
+{
+"symbol": "XTSLA",
+"t": 1784178000.0,
+"ret": -0.2095,
+"why": "time"
+},
+{
+"symbol": "XAAPL",
+"t": 1784181600.0,
+"ret": -0.0702,
+"why": "time"
+},
+{
+"symbol": "XCRCL",
+"t": 1784181600.0,
+"ret": 0.0502,
+"why": "time"
+},
+{
+"symbol": "XEWY",
+"t": 1784181600.0,
+"ret": -0.002,
+"why": "time"
+},
+{
+"symbol": "XGOOGL",
+"t": 1784181600.0,
+"ret": -0.0663,
+"why": "time"
+},
+{
+"symbol": "XINTC",
+"t": 1784181600.0,
+"ret": -0.0092,
+"why": "time"
+},
+{
+"symbol": "XMRVL",
+"t": 1784181600.0,
+"ret": 0.0465,
+"why": "time"
+},
+{
+"symbol": "XMSFT",
+"t": 1784181600.0,
+"ret": 0.1162,
+"why": "time"
+},
+{
+"symbol": "XSOXL",
+"t": 1784181600.0,
+"ret": -0.1093,
+"why": "time"
+},
+{
+"symbol": "XAMD",
+"t": 1784187000.0,
+"ret": 0.0035,
+"why": "time"
+},
+{
+"symbol": "XAMZN",
+"t": 1784187000.0,
+"ret": 0.026,
+"why": "time"
+},
+{
+"symbol": "XAVGO",
+"t": 1784187000.0,
+"ret": 0.0339,
+"why": "time"
+},
+{
+"symbol": "XIWM",
+"t": 1784187000.0,
+"ret": -0.0137,
+"why": "time"
+},
+{
+"symbol": "XLITE",
+"t": 1784187000.0,
+"ret": 0.0076,
+"why": "time"
+},
+{
+"symbol": "XMETA",
+"t": 1784187000.0,
+"ret": -0.1898,
+"why": "time"
+},
+{
+"symbol": "XMSTR",
+"t": 1784187000.0,
+"ret": 0.0502,
+"why": "time"
+},
+{
+"symbol": "XTSM",
+"t": 1784187000.0,
+"ret": 0.0094,
+"why": "time"
+},
+{
+"symbol": "XIBM",
+"t": 1784790000.0,
+"ret": 0.1307,
+"why": "time"
+},
+{
+"symbol": "XHOOD",
+"t": 1784791800.0,
+"ret": -0.1062,
+"why": "time"
+},
+{
+"symbol": "XORCL",
+"t": 1784793600.0,
+"ret": 0.1652,
+"why": "time"
+},
+{
+"symbol": "XUSAR",
+"t": 1784795400.0,
+"ret": 0.1582,
+"why": "time"
+},
+{
+"symbol": "XCOIN",
+"t": 1784856600.0,
+"ret": -0.0401,
+"why": "time"
+},
+{
+"symbol": "XIREN",
+"t": 1784858400.0,
+"ret": 0.1137,
+"why": "time"
+},
+{
+"symbol": "XLLY",
+"t": 1784860200.0,
+"ret": -0.0126,
+"why": "time"
+},
+{
+"symbol": "XDELL",
+"t": 1784862000.0,
+"ret": 0.0357,
+"why": "time"
+},
+{
+"symbol": "XPLTR",
+"t": 1784876400.0,
+"ret": 0.3877,
+"why": "time"
+},
+{
+"symbol": "XNFLX",
+"t": 1784878200.0,
+"ret": 0.0533,
+"why": "time"
+},
+{
+"symbol": "XBMNR",
+"t": 1784880000.0,
+"ret": 0.1857,
+"why": "time"
+},
+{
+"symbol": "XASTS",
+"t": 1784881800.0,
+"ret": 0.2788,
+"why": "time"
+},
+{
+"symbol": "AEON",
+"t": 1785146400.0,
+"ret": -0.4666,
+"why": "time"
+},
+{
+"symbol": "XHIMS",
+"t": 1785225600.0,
+"ret": 0.046,
+"why": "time"
+},
+{
+"symbol": "XGME",
+"t": 1785227400.0,
+"ret": -0.1547,
+"why": "time"
+},
+{
+"symbol": "XCSCO",
+"t": 1785229200.0,
+"ret": 0.0276,
+"why": "time"
+},
+{
+"symbol": "XCRWD",
+"t": 1785231000.0,
+"ret": 0.2128,
+"why": "time"
+},
+{
+"symbol": "XASML",
+"t": 1785288600.0,
+"ret": 0.1553,
+"why": "time"
+},
+{
+"symbol": "XAMAT",
+"t": 1785290400.0,
+"ret": 0.2418,
+"why": "time"
+},
+{
+"symbol": "XXLE",
+"t": 1785292200.0,
+"ret": 0.0368,
+"why": "time"
+},
+{
+"symbol": "XADBE",
+"t": 1785294000.0,
+"ret": -0.0255,
+"why": "time"
+},
+{
+"symbol": "XONDS",
+"t": 1785308400.0,
+"ret": 0.4537,
+"why": "time"
+},
+{
+"symbol": "XGEV",
+"t": 1785310200.0,
+"ret": 0.1471,
+"why": "time"
+},
+{
+"symbol": "XVRT",
+"t": 1785312000.0,
+"ret": 0.2827,
+"why": "time"
+},
+{
+"symbol": "XTER",
+"t": 1785313800.0,
+"ret": 0.2247,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785416400.0,
+"ret": 0.4305,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "XTESTA",
+"t": 1786069800.0,
+"ret": -0.3105,
+"why": "time"
+},
+{
+"symbol": "XAAOI",
+"t": 1786600800.0,
+"ret": -0.1645,
+"why": "time"
+},
+{
+"symbol": "XNBIS",
+"t": 1786602600.0,
+"ret": -0.1817,
+"why": "time"
+},
+{
+"symbol": "XCBRS",
+"t": 1786604400.0,
+"ret": -0.2044,
+"why": "time"
+},
+{
+"symbol": "XARM",
+"t": 1786606200.0,
+"ret": -0.1085,
+"why": "time"
+},
+{
+"symbol": "XTQQQ",
+"t": 1786608000.0,
+"ret": -0.0653,
+"why": "time"
+},
+{
+"symbol": "XRKLB",
+"t": 1786609800.0,
+"ret": -0.1659,
+"why": "time"
+},
+{
+"symbol": "DOS",
+"t": 1786611600.0,
+"ret": -0.1579,
+"why": "time"
+},
+{
+"symbol": "XBE",
+"t": 1786611600.0,
+"ret": -0.0941,
+"why": "time"
+},
+{
+"symbol": "XCRWV",
+"t": 1786613400.0,
+"ret": -0.2019,
+"why": "time"
+},
+{
+"symbol": "XCOHR",
+"t": 1786687200.0,
+"ret": -0.15,
+"why": "time"
+},
+{
+"symbol": "XBSP",
+"t": 1786689000.0,
+"ret": 0.1293,
+"why": "time"
+},
+{
+"symbol": "XTWLO",
+"t": 1786690800.0,
+"ret": -0.0049,
+"why": "time"
+},
+{
+"symbol": "XON",
+"t": 1786692600.0,
+"ret": -0.1297,
+"why": "time"
+},
+{
+"symbol": "XALAB",
+"t": 1786694400.0,
+"ret": -0.0986,
+"why": "time"
+},
+{
+"symbol": "XAPP",
+"t": 1786696200.0,
+"ret": 0.0002,
+"why": "time"
+},
+{
+"symbol": "XSHAZ",
+"t": 1786698000.0,
+"ret": -0.3098,
+"why": "time"
+},
+{
+"symbol": "XSMCI",
+"t": 1786699800.0,
+"ret": -0.0737,
+"why": "time"
+},
+{
+"symbol": "XSNOW",
+"t": 1787036400.0,
+"ret": -0.0173,
+"why": "time"
+},
+{
+"symbol": "XBOT",
+"t": 1787038200.0,
+"ret": -0.1108,
+"why": "time"
+},
+{
+"symbol": "XDKNG",
+"t": 1787040000.0,
+"ret": -0.022,
+"why": "time"
+},
+{
+"symbol": "XNOW",
+"t": 1787041800.0,
+"ret": 0.1885,
+"why": "time"
+},
+{
+"symbol": "XHPE",
+"t": 1787043600.0,
+"ret": -0.0331,
+"why": "time"
+},
+{
+"symbol": "XCRM",
+"t": 1787045400.0,
+"ret": 0.3061,
+"why": "time"
+},
+{
+"symbol": "XXIAOMI",
+"t": 1787119200.0,
+"ret": -0.0042,
+"why": "time"
+},
+{
+"symbol": "XPOPMART",
+"t": 1787121000.0,
+"ret": 0.0152,
+"why": "time"
+},
+{
+"symbol": "XSMH",
+"t": 1787122800.0,
+"ret": -0.0267,
+"why": "time"
+},
+{
+"symbol": "XKO",
+"t": 1787124600.0,
+"ret": -0.0239,
+"why": "time"
+},
+{
+"symbol": "XLRCX",
+"t": 1787126400.0,
+"ret": -0.0757,
+"why": "time"
+},
+{
+"symbol": "XTTWO",
+"t": 1787128200.0,
+"ret": -0.0945,
+"why": "time"
+},
+{
+"symbol": "XRDDT",
+"t": 1787130000.0,
+"ret": 0.025,
+"why": "time"
+},
+{
+"symbol": "XCIEN",
+"t": 1787131800.0,
+"ret": -0.1297,
+"why": "time"
+},
+{
+"symbol": "XZM",
+"t": 1787205600.0,
+"ret": -0.0846,
+"why": "time"
+},
+{
+"symbol": "XBX",
+"t": 1787207400.0,
+"ret": -0.0323,
+"why": "time"
+},
+{
+"symbol": "XUNH",
+"t": 1787209200.0,
+"ret": 0.0393,
+"why": "time"
+},
+{
+"symbol": "XAPLD",
+"t": 1787211000.0,
+"ret": -0.098,
+"why": "time"
+},
+{
+"symbol": "XRIVN",
+"t": 1787212800.0,
+"ret": -0.0106,
+"why": "time"
+},
+{
+"symbol": "XISRG",
+"t": 1787214600.0,
+"ret": -0.0165,
+"why": "time"
+},
+{
+"symbol": "XOKTA",
+"t": 1787216400.0,
+"ret": 0.2653,
+"why": "time"
+},
+{
+"symbol": "XWDC",
+"t": 1787218200.0,
+"ret": -0.065,
+"why": "time"
+},
+{
+"symbol": "XGLW",
+"t": 1787292000.0,
+"ret": 0.0241,
+"why": "time"
+},
+{
+"symbol": "XQCOM",
+"t": 1787293800.0,
+"ret": 0.0391,
+"why": "time"
+},
+{
+"symbol": "XJNJ",
+"t": 1787295600.0,
+"ret": 0.0092,
+"why": "time"
+},
+{
+"symbol": "XKLAC",
+"t": 1787297400.0,
+"ret": -0.0011,
+"why": "time"
+},
+{
+"symbol": "XROK",
+"t": 1787299200.0,
+"ret": -0.0085,
+"why": "time"
+},
+{
+"symbol": "XSTRC",
+"t": 1787301000.0,
+"ret": 0.0132,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788355800.0,
+"ret": -0.41,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "XSHEIN",
+"t": 1788847200.0,
+"ret": -0.0783,
+"why": "time"
+},
+{
+"symbol": "XKORU",
+"t": 1788849000.0,
+"ret": -0.0212,
+"why": "time"
+},
+{
+"symbol": "XDRAM",
+"t": 1788850800.0,
+"ret": 0.0425,
+"why": "time"
+},
+{
+"symbol": "XSNXX",
+"t": 1788852600.0,
+"ret": 0.0918,
+"why": "time"
+},
+{
+"symbol": "XMUU",
+"t": 1788854400.0,
+"ret": 0.1022,
+"why": "time"
+},
+{
+"symbol": "XSOXS",
+"t": 1788856200.0,
+"ret": -0.2323,
+"why": "time"
+},
+{
+"symbol": "XMVLL",
+"t": 1788858000.0,
+"ret": 0.3197,
+"why": "time"
+},
+{
+"symbol": "XINTW",
+"t": 1788859800.0,
+"ret": 0.3565,
+"why": "time"
+},
+{
+"symbol": "VVV",
+"t": 1789477200.0,
+"ret": 0.2603,
+"why": "time"
+}
+],
+"coinbase_roadmap": [
+{
+"symbol": "BNB",
+"t": 1760546730.892,
+"ret": -0.0522,
+"why": "time"
+},
+{
+"symbol": "DBR",
+"t": 1761575895.527,
+"ret": -0.2326,
+"why": "time"
+},
+{
+"symbol": "ASTER",
+"t": 1762546674.882,
+"ret": 0.0616,
+"why": "time"
+},
+{
+"symbol": "FLUID",
+"t": 1762824841.636,
+"ret": -0.1423,
+"why": "time"
+},
+{
+"symbol": "NOM",
+"t": 1762824841.636,
+"ret": -0.1401,
+"why": "time"
+},
+{
+"symbol": "TON",
+"t": 1762999294.224,
+"ret": -0.1826,
+"why": "time"
+},
+{
+"symbol": "FUN",
+"t": 1767798321.22,
+"ret": -0.1909,
+"why": "time"
+},
+{
+"symbol": "DOOD",
+"t": 1769210508.873,
+"ret": -0.2245,
+"why": "time"
+}
+],
+"coinbase_trading": [
+{
+"symbol": "YB",
+"t": 1760572800,
+"ret": -0.0172,
+"why": "time"
+},
+{
+"symbol": "RECALL",
+"t": 1760572800,
+"ret": -0.0279,
+"why": "time"
+},
+{
+"symbol": "BNB",
+"t": 1761177600,
+"ret": -0.1615,
+"why": "time"
+},
+{
+"symbol": "DBR",
+"t": 1761782400,
+"ret": -0.284,
+"why": "time"
+},
+{
+"symbol": "ALLO",
+"t": 1762992000,
+"ret": -0.3379,
+"why": "time"
+},
+{
+"symbol": "NOM",
+"t": 1763078400,
+"ret": -0.1257,
+"why": "time"
+},
+{
+"symbol": "TON",
+"t": 1763510400,
+"ret": -0.0518,
+"why": "time"
+},
+{
+"symbol": "ASTER",
+"t": 1763683200,
+"ret": -0.1718,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1764028800,
+"ret": -0.4086,
+"why": "time"
+},
+{
+"symbol": "FLUID",
+"t": 1764115200,
+"ret": -0.0213,
+"why": "time"
+},
+{
+"symbol": "WET",
+"t": 1765324800,
+"ret": 0.0657,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "BREV",
+"t": 1767744000,
+"ret": 0.0481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ELSA",
+"t": 1768953600,
+"ret": 1.7712,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "SKR",
+"t": 1769040000,
+"ret": -0.4712,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769126400,
+"ret": 0.2918,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FIGHT",
+"t": 1769126400,
+"ret": -0.6927,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1769644800,
+"ret": 0.8129,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ZAMA",
+"t": 1770076800,
+"ret": -0.309,
+"why": "time"
+},
+{
+"symbol": "TRIA",
+"t": 1770163200,
+"ret": -0.172,
+"why": "time"
+},
+{
+"symbol": "DOOD",
+"t": 1770336000,
+"ret": -0.1197,
+"why": "time"
+},
+{
+"symbol": "DEEP",
+"t": 1770854400,
+"ret": 0.0496,
+"why": "time"
+},
+{
+"symbol": "AZTEC",
+"t": 1770940800,
+"ret": 0.7801,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ESP",
+"t": 1771027200,
+"ret": 2.7126,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "OPN",
+"t": 1772755200,
+"ret": -0.1062,
+"why": "time"
+},
+{
+"symbol": "KAT",
+"t": 1773878400,
+"ret": 0.9668,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ICNT",
+"t": 1774483200,
+"ret": -0.2934,
+"why": "time"
+},
+{
+"symbol": "BLEND",
+"t": 1777075200,
+"ret": 2.5294,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "AI",
+"t": 1777507200,
+"ret": 0.5221,
+"why": "time"
+},
+{
+"symbol": "BILL",
+"t": 1777939200,
+"ret": 1.5968,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781827200,
+"ret": 0.1511,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ARX",
+"t": 1782172800,
+"ret": 0.3724,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "CAP",
+"t": 1782518400,
+"ret": -0.4185,
+"why": "time"
+},
+{
+"symbol": "GROVE",
+"t": 1783382400,
+"ret": -0.6094,
+"why": "time"
+},
+{
+"symbol": "GRVT",
+"t": 1785456000,
+"ret": 0.2535,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "GRASS",
+"t": 1787788800,
+"ret": -0.0667,
+"why": "time"
+},
+{
+"symbol": "CP",
+"t": 1788393600,
+"ret": -0.3508,
+"why": "hit upbit_krw"
+}
+],
+"binance_spot_announce": [
+{
+"symbol": "GIGGLE",
+"t": 1761361338.417,
+"ret": -0.4597,
+"why": "time"
+},
+{
+"symbol": "BANK",
+"t": 1763028026.501,
+"ret": -0.1523,
+"why": "time"
+},
+{
+"symbol": "MET",
+"t": 1763028026.501,
+"ret": -0.1742,
+"why": "time"
+},
+{
+"symbol": "SENT",
+"t": 1769059554.238,
+"ret": 0.1841,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ZAMA",
+"t": 1770006523.224,
+"ret": -0.3602,
+"why": "time"
+},
+{
+"symbol": "ESP",
+"t": 1770881303.176,
+"ret": 2.1106,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "ROBO",
+"t": 1772629994.452,
+"ret": -0.3653,
+"why": "time"
+},
+{
+"symbol": "AIGENSYN",
+"t": 1778752803.676,
+"ret": -0.276,
+"why": "time"
+},
+{
+"symbol": "GENIUS",
+"t": 1779434315.961,
+"ret": -0.3168,
+"why": "time"
+},
+{
+"symbol": "OPG",
+"t": 1779434315.961,
+"ret": -0.2793,
+"why": "time"
+},
+{
+"symbol": "RE",
+"t": 1781776041.424,
+"ret": 1.3481,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "MARSCOIN",
+"t": 1788516901.87,
+"ret": -0.4193,
+"why": "time"
+}
+],
+"upbit_btc_usdt_only": [
+{
+"symbol": "MMT",
+"t": 1762248900.0,
+"ret": -0.6969,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "YB",
+"t": 1766722500.0,
+"ret": 0.0366,
+"why": "time"
+},
+{
+"symbol": "OPG",
+"t": 1781515802.0,
+"ret": -0.2057,
+"why": "time"
+},
+{
+"symbol": "MPLX",
+"t": 1783047600.0,
+"ret": -0.2955,
+"why": "time"
+},
+{
+"symbol": "NEXO",
+"t": 1787307565.0,
+"ret": -0.0317,
+"why": "time"
+},
+{
+"symbol": "REZ",
+"t": 1789014601.0,
+"ret": 0.2584,
+"why": "time"
+}
+],
+"coinbase_post": [
+{
+"symbol": "TON",
+"t": 1763408083.287,
+"ret": -0.1505,
+"why": "time"
+},
+{
+"symbol": "ASTER",
+"t": 1763583056.881,
+"ret": -0.2248,
+"why": "time"
+},
+{
+"symbol": "MON",
+"t": 1763991780.068,
+"ret": -0.0828,
+"why": "time"
+},
+{
+"symbol": "FLUID",
+"t": 1764003201.099,
+"ret": -0.0247,
+"why": "time"
+},
+{
+"symbol": "BREV",
+"t": 1767728436.598,
+"ret": 0.2982,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "FUN",
+"t": 1768507403.938,
+"ret": -0.3402,
+"why": "time"
+},
+{
+"symbol": "ELSA",
+"t": 1768927820.861,
+"ret": 1.5839,
+"why": "hit upbit_krw"
+},
+{
+"symbol": "SKR",
+"t": 1769005792.321,
+"ret": -0.1714,
+"why": "time"
+},
+{
+"symbol": "FIGHT",
+"t": 1769092737.687,
+"ret": -0.7408,
+"why": "time"
+},
+{
+"symbol": "BIRB",
+"t": 1769609140.295,
+"ret": 0.3556,
+"why": "hit upbit_krw"
+}
+]
+}
+}

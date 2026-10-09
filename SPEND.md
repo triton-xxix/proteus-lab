@@ -40,6 +40,8 @@ so he can see it. Figures are the API's own reported cost per call.
 | 2026-10-02 | nightly: mentions 0.34, narrative 0.15 | 0.49 |
 | 2026-10-03 | nightly: mentions 0.17, narrative 0.15 | 0.32 |
 | | Total known to 3 Oct | 4.31 |
+| 2026-10-09 | pre-listing research, on Luke's approval of up to $10 for it: 7 Coinbase-post searches 3.57, X mentions case-control (5 pairs) 6.23, tests 0.15; ledger experiments/2026-10-09-prelisting/xai-calls.jsonl | 9.95 |
+| | Total known (nightly mentions after 3 Oct not yet added here) | 14.26 |
 
 ## Luke's Gemini and ElevenLabs accounts (not the Proteus card)
 

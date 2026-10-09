@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.proteus.prelisting</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/triton/PROTEUS/.venv/bin/python3</string>
+    <string>/Users/triton/PROTEUS/experiments/2026-10-09-prelisting/poller.py</string>
+    <string>poll</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>60</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/triton/PROTEUS/experiments/2026-10-09-prelisting/track/stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/triton/PROTEUS/experiments/2026-10-09-prelisting/track/stderr.log</string>
+</dict>
+</plist>
