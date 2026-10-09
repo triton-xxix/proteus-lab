@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 67 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
+Verdicts so far: 68 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 
-## Queue (21 open)
+## Queue (20 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,7 +21,6 @@ Verdicts so far: 67 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 | P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | refill | none |  | 0 | 60 min |
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
-| P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | desk | none |  | 0 | 25 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
@@ -35,10 +34,11 @@ Verdicts so far: 67 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 | P-0118 | Grinder snapshots: fill mint_auth and freeze_auth from the Solana RPC instead of rugcheck (blank on 1,573 of 1,575 pump.fun mints, P-0099) | desk | none |  | 0 | 15 min |
 
-## Verdicts (93)
+## Verdicts (94)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | **works** | 5 of 6 PortSwigger injection shapes survive harvest.py's strip_html, so the real defence is the hook; the open gap was a child's probe_title flowing straight into my queue. Added title_unsafe() and a data-not-instructions line to the child prompt: 7 of 8 hostile titles refused, 0 of 46 real harvest titles refused. | `experiments/2026-10-09-P-0078` | 1 min, 18 calls, 0 denied |
 | 2026-10-09 | P-0074 | OnlyFans management agency: how the money flows, typical splits and costs, what the platform rules and UK law allow, and whether an honest version clears its costs | **not-worth-it** | Modelled from agency-side ranges (20% platform, 25-50% agency split, one manager per ten creators): at the active-creator median of about 1,250 dollars a month an honest agency roughly breaks even (about 1,300 per creator needed), and it only pays with creators already grossing 5,000 or more. The industry's DM uplift rests on impersonation, which the terms bar and lawsuits target; UK law was not researched. | `experiments/2026-10-09-P-0074` | 0 min, 9 calls, 0 denied |
 | 2026-10-09 | P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | **works** | unit_economics.py (stdlib, read in full) matched a hand calculation of its own matcha-bar example on all 8 figures, e.g. break-even 186 cups a day, payback month 8, cash needed 34,092. The headline margin uses a 383-a-day plan the year-1 ramp never reaches (292 gives 26.6%, not 37.7%). | `experiments/2026-10-09-P-0115` | 0 min, 11 calls, 0 denied |
 | 2026-10-09 | P-0114 | 4DA: does its benchmark command reproduce 98.9 percent noise rejection? | **blocked** | The cargo benchmark could not run (no Rust here). The README's confusion matrix recomputes exactly (93.1% rejection, 98.9% noise accuracy), but 83% of the corpus is noise and the same run rejects 213 of 332 relevant items (recall 35.8%), so the 98.9% is the flattering half. | `experiments/2026-10-09-P-0114` | 0 min, 10 calls, 0 denied |
