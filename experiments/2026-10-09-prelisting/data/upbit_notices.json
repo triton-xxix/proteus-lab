@@ -1,0 +1,1616 @@
+[
+{
+"cancelled": false,
+"id": 6645,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "KAIA",
+"t": 1791533206.0,
+"title": "\uce74\uc774\uc544(KAIA) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6644,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "PONS",
+"t": 1791427061.0,
+"title": "\ud3f0\uc988(PONS) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6642,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "NMR",
+"t": 1791286586.0,
+"title": "\ub274\uba54\ub808\ub974(NMR) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6635,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "POD",
+"t": 1790915841.0,
+"title": "\ub3cc\ud540(POD) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6618,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CASHCAT",
+"t": 1790573224.0,
+"title": "\uce90\uc2dc\ucea3(CASHCAT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6580,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "PYUSD",
+"t": 1789606081.0,
+"title": "\ud398\uc774\ud314\uc720\uc5d0\uc2a4\ub514(PYUSD), \uc81c\uc774\ud53c\uc640\uc774\ucf54\uc778(JPYC) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (JPYC \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6580,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "JPYC",
+"t": 1789606081.0,
+"title": "\ud398\uc774\ud314\uc720\uc5d0\uc2a4\ub514(PYUSD), \uc81c\uc774\ud53c\uc640\uc774\ucf54\uc778(JPYC) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (JPYC \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6560,
+"kind": "new",
+"markets": [
+"USDT"
+],
+"symbol": "REZ",
+"t": 1789014601.0,
+"title": "\ub80c\uc870(REZ) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6561,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "BFC",
+"t": 1789015200.0,
+"title": "\ubc14\uc774\ud504\ub85c\uc2a4\ud2b8(BFC) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": true,
+"id": 6558,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "HEMI",
+"t": 1788863132.0,
+"title": "\ud5e4\ubbf8(HEMI), \uc720\uc988\ub9ac\uc2a4(USELESS) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13) (\ud5e4\ubbf8(HEMI) \uac70\ub798\uc9c0\uc6d0 \ucde8\uc18c \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": true,
+"id": 6558,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "USELESS",
+"t": 1788863132.0,
+"title": "\ud5e4\ubbf8(HEMI), \uc720\uc988\ub9ac\uc2a4(USELESS) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13) (\ud5e4\ubbf8(HEMI) \uac70\ub798\uc9c0\uc6d0 \ucde8\uc18c \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6555,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CP",
+"t": 1788837704.0,
+"title": "\ud074\ub7ec\uc2a4\ud130\ud504\ub85c\ud1a0\ucf5c(CP) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6526,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "EURC",
+"t": 1787881785.0,
+"title": "\uc774\uc720\uc54c\ucf54\uc778(EURC) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6518,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "NCT",
+"t": 1787740335.0,
+"title": "\ud3f4\ub9ac\uc2a4\uc6dc(NCT) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6504,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "LIT",
+"t": 1787538882.0,
+"title": "\ub77c\uc774\ud130(LIT) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6503,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "FOLD",
+"t": 1787447649.0,
+"title": "\uc778\ud130\ud3f4\ub4dc(FOLD) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6496,
+"kind": "new",
+"markets": [
+"USDT"
+],
+"symbol": "NEXO",
+"t": 1787307565.0,
+"title": "\ub125\uc18c(NEXO) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6490,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "CRV",
+"t": 1787278960.0,
+"title": "\ucee4\ube0c(CRV) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6466,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "PROM",
+"t": 1786500698.0,
+"title": "\ud504\ub86c(PROM) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6463,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "DOS",
+"t": 1786415436.0,
+"title": "\ub311\uc624\uc5d0\uc2a4(DOS) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6450,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "KMNO",
+"t": 1786068585.0,
+"title": "\uce74\ubbf8\ub178\ud30c\uc774\ub0b8\uc2a4(KMNO) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00 (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6451,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "BSB",
+"t": 1786071316.0,
+"title": "\ube14\ub85d\uc2a4\ud2b8\ub9ac\ud2b8(BSB) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6446,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CAP",
+"t": 1785981315.0,
+"title": "\ucea1(CAP) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6441,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "GRVT",
+"t": 1785904951.0,
+"title": "\uadf8\ub798\ube44\ud2f0\ud1a0\ud070(GRVT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6440,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "QUID",
+"t": 1785837604.0,
+"title": "\uc2a4\ud034\ub4dc(QUID) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6437,
+"kind": "new",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "HOME",
+"t": 1785817817.0,
+"title": "\ub514\ud30c\uc774\uc571(HOME) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6428,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CFX",
+"t": 1785474007.0,
+"title": "\ucf58\ud50c\ub7ed\uc2a4(CFX) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6424,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "USDG",
+"t": 1785373814.0,
+"title": "\uae00\ub85c\ubc8c\ub2ec\ub7ec(USDG) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6420,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "META2",
+"t": 1785298588.0,
+"title": "\uba54\ud0c0\ub2e4\uc624(META2) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6418,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "RLUSD",
+"t": 1785206060.0,
+"title": "\ub9ac\ud50c\uc720\uc5d0\uc2a4\ub514(RLUSD) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6415,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "GEOD",
+"t": 1785122541.0,
+"title": "\uc9c0\uc624\ub4dc\ub137(GEOD) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6414,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "EUL",
+"t": 1785027361.0,
+"title": "\uc624\uc77c\ub7ec(EUL) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00 (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6411,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "MORPHO",
+"t": 1784965228.0,
+"title": "\ubaa8\ud3ec(MORPHO) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6404,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "O",
+"t": 1784772902.0,
+"title": "\uc624\uc6d0\uc775\uc2a4\uccb4\uc778\uc9c0(O) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6383,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "DRV",
+"t": 1784006102.0,
+"title": "\ub514\ub77c\uc774\ube0c(DRV) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6360,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "OPG",
+"t": 1783399188.0,
+"title": "\uc624\ud508\uadf8\ub77c\ub514\uc5b8\ud2b8(OPG) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6348,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "MPLX",
+"t": 1783047600.0,
+"title": "\uba54\ud0c0\ud50c\ub809\uc2a4(MPLX), \ub125\uc11c\uc2a4(NEX) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13) (MPLX, NEX \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6348,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "NEX",
+"t": 1783047600.0,
+"title": "\uba54\ud0c0\ud50c\ub809\uc2a4(MPLX), \ub125\uc11c\uc2a4(NEX) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13) (MPLX, NEX \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6335,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "AI",
+"t": 1782788455.0,
+"title": "\uc820\uc2e0(AI) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6314,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ARX",
+"t": 1782180000.0,
+"title": "\uc544\ub974\ud0a4\uc6c0(ARX) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6303,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "RE",
+"t": 1781859602.0,
+"title": "\ub9ac(RE) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6294,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "SPX",
+"t": 1781575946.0,
+"title": "\uc5d0\uc2a4\ud53c\uc5d1\uc2a46900(SPX) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6293,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "OPG",
+"t": 1781515802.0,
+"title": "\uc624\ud508\uadf8\ub77c\ub514\uc5b8\ud2b8(OPG) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6282,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "CTR",
+"t": 1780972202.0,
+"title": "\uc2dc\ud2b8\ub808\uc544(CTR) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6274,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "BABY",
+"t": 1780651800.0,
+"title": "\ubc14\ube4c\ub860(BABY) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6258,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "SLX",
+"t": 1780281900.0,
+"title": "\uc194\uc2a4\ud2f0\uc2a4(SLX) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ucd94\uac00 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6255,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "IO",
+"t": 1780045200.0,
+"title": "\uc544\uc774\uc624\ub137(IO) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6226,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "TRAC",
+"t": 1779080841.0,
+"title": "\uc624\ub9ac\uc9c4\ud2b8\ub808\uc77c(TRAC) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6222,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "IRYS",
+"t": 1778834467.0,
+"title": "\uc544\uc774\ub9ac\uc2a4(IRYS) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6218,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "UP2",
+"t": 1778664441.0,
+"title": "\uc288\ud37c\ud3fc(UP2) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uc77c\uc815 \uc815\uc815 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6215,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "VVV",
+"t": 1778562000.0,
+"title": "\ubca0\ub2c8\uc2a4\ud1a0\ud070(VVV) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6207,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "PROS",
+"t": 1778232600.0,
+"title": "\ud30c\ub85c\uc2a4(PROS) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6201,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "B3",
+"t": 1778125800.0,
+"title": "\ube44\uc4f0\ub9ac(B3) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00 (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6197,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "WIF",
+"t": 1778043600.0,
+"title": "\ub3c4\uadf8\uc704\ud504\ud587(WIF) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6184,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "MEGA",
+"t": 1777516206.0,
+"title": "\uba54\uac00\uc774\ub354(MEGA) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6178,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "BLEND",
+"t": 1777429411.0,
+"title": "\ud50c\ub8e8\uc5b8\ud2b8(BLEND) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6173,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "PRL",
+"t": 1777271400.0,
+"title": "\ud384(PRL) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uc720\ud1b5\ub7c9 \uc774\uc288\uc5d0 \ub300\ud55c \uc18c\uba85 \ubc0f \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6171,
+"kind": "new",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "XCN",
+"t": 1777266000.0,
+"title": "\uc624\ub2c9\uc2a4\ucf54\uc778(XCN) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6162,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "SPK",
+"t": 1776910800.0,
+"title": "\uc2a4\ud30c\ud06c(SPK) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6158,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CHIP",
+"t": 1776752184.0,
+"title": "\uc720\uc5d0\uc2a4\ub514\uc5d0\uc774\uc544\uc774(CHIP) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6154,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "PIEVERSE",
+"t": 1776661200.0,
+"title": "\ud30c\uc774\ubc84\uc2a4(PIEVERSE) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6150,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "SOON",
+"t": 1776402002.0,
+"title": "\uc468(SOON) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6144,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CC",
+"t": 1776142800.0,
+"title": "\uce94\ud1a4(CC) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uc785\ucd9c\uae08 \uc11c\ube44\uc2a4 \uac1c\uc2dc \uc548\ub0b4 \ubc0f \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6146,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ZAMA",
+"t": 1776152920.0,
+"title": "\uc790\ub9c8(ZAMA) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6102,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "SKY",
+"t": 1774924201.0,
+"title": "\uc2a4\uce74\uc774\ud504\ub85c\ud1a0\ucf5c(SKY), \uc720\uc5d0\uc2a4\ub514\uc5d0\uc2a4(USDS) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00 (USDS \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6102,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "USDS",
+"t": 1774924201.0,
+"title": "\uc2a4\uce74\uc774\ud504\ub85c\ud1a0\ucf5c(SKY), \uc720\uc5d0\uc2a4\ub514\uc5d0\uc2a4(USDS) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00 (USDS \uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6097,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "KAT",
+"t": 1774512470.0,
+"title": "\uce74\ud0c0\ub098(KAT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uba85\uce6d \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6079,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "ETHFI",
+"t": 1773888600.0,
+"title": "\uc774\ub354\ud30c\uc774(ETHFI) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6069,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ICP",
+"t": 1773208800.0,
+"title": "\uc778\ud130\ub137\ucef4\ud4e8\ud130(ICP) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6057,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "EDGE",
+"t": 1772603400.0,
+"title": "\ub514\ud53c\ub2c8\ud2f0\ube0c(EDGE) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6043,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CFG",
+"t": 1772074800.0,
+"title": "\uc13c\ud2b8\ub9ac\ud4e8\uc988(CFG) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6038,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ESP",
+"t": 1771913044.0,
+"title": "\uc5d0\uc2a4\ud504\ub808\uc18c(ESP) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6037,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "SKR",
+"t": 1771909200.0,
+"title": "\uc2dc\ucee4(SKR) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6025,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "AZTEC",
+"t": 1771563600.0,
+"title": "\uc544\uc988\ud14d(AZTEC) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 6021,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "TAO",
+"t": 1771218000.0,
+"title": "\ube44\ud2b8\ud150\uc11c(TAO) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5990,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "BIRB",
+"t": 1770102000.0,
+"title": "\ubb38\ubc84\ub4dc(BIRB) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5973,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "SENT",
+"t": 1769667307.0,
+"title": "\uc13c\ud2f0\uc5b8\ud2b8(SENT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5953,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ELSA",
+"t": 1769059800.0,
+"title": "\ud5e4\uc774\uc5d8\uc0ac(ELSA) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5934,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "USDE",
+"t": 1768373747.0,
+"title": "\uc720\uc5d0\uc2a4\ub514\uc774(USDE) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5914,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "BREV",
+"t": 1767752401.0,
+"title": "\ube0c\ub808\ube44\uc2a4(BREV) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5913,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ZK",
+"t": 1767684615.0,
+"title": "\uc9c0\ucf00\uc774\uc2f1\ud06c(ZK) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5900,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "XAUT",
+"t": 1767240000.0,
+"title": "\ud14c\ub354\uace8\ub4dc(XAUT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5885,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ZKP",
+"t": 1766729983.0,
+"title": "\uc9c0\ucf00\uc774\ud328\uc2a4(ZKP) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5884,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "YB",
+"t": 1766722500.0,
+"title": "\uc77c\ub4dc\ubca0\uc774\uc2dc\uc2a4(YB) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5860,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "WET",
+"t": 1765782000.0,
+"title": "\ud734\ubbf8\ub514\ud30c\uc774(WET) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ucd94\uac00 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5796,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "PLUME",
+"t": 1764135002.0,
+"title": "\ud50c\ub8f8(PLUME) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5790,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "MON",
+"t": 1763974893.0,
+"title": "\ubaa8\ub098\ub4dc(MON) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5769,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "MET2",
+"t": 1763446800.0,
+"title": "\uba54\ud14c\uc624\ub77c(MET2) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5727,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "TRUST",
+"t": 1762332256.0,
+"title": "\uc778\ud29c\uc774\uc158(TRUST) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5724,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "MMT",
+"t": 1762321679.0,
+"title": "\ubaa8\uba58\ud140(MMT) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5722,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "MMT",
+"t": 1762248900.0,
+"title": "\ubaa8\uba58\ud140(MMT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5716,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "KITE",
+"t": 1762157481.0,
+"title": "\uce74\uc774\ud2b8(KITE) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5697,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ENSO",
+"t": 1761719456.0,
+"title": "\uc5d4\uc18c(ENSO) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5693,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "KERNEL",
+"t": 1761634800.0,
+"title": "\ucee4\ub110\ub2e4\uc624(KERNEL) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5681,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "ORDER",
+"t": 1761286500.0,
+"title": "\uc624\ub35c\ub9ac(ORDER) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5671,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "CPOOL",
+"t": 1761110400.0,
+"title": "\ud074\ub9ac\uc5b4\ud480(CPOOL) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5666,
+"kind": "new",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "F",
+"t": 1761023400.0,
+"title": "\uc2e0\ud4e8\ucc98\uc2a4(F) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5662,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "BIO",
+"t": 1760942100.0,
+"title": "\ubc14\uc774\uc624\ud504\ub85c\ud1a0\ucf5c(BIO) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5654,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ZBT",
+"t": 1760691606.0,
+"title": "\uc81c\ub85c\ubca0\uc774\uc2a4(ZBT) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5648,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "ZORA",
+"t": 1760668200.0,
+"title": "\uc870\ub77c(ZORA) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5644,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "YGG",
+"t": 1760504400.0,
+"title": "\uc77c\ub4dc\uae38\ub4dc\uac8c\uc784\uc988(YGG) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5628,
+"kind": "add",
+"markets": [
+"KRW"
+],
+"symbol": "IN",
+"t": 1760076000.0,
+"title": "\uc778\ud53c\ub2db(IN) KRW \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5624,
+"kind": "new",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "DOOD",
+"t": 1759811700.0,
+"title": "\ub450\ub4e4\uc988(DOOD) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5606,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "2Z",
+"t": 1759364130.0,
+"title": "\ub354\ube14\uc81c\ub85c(2Z) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5599,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "SOMI",
+"t": 1759292781.0,
+"title": "\uc19c\ub2c8\uc544(SOMI) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubcc0\uacbd \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5592,
+"kind": "new",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "FF",
+"t": 1759138472.0,
+"title": "\ud314\ucf58\ud30c\uc774\ub0b8\uc2a4(FF) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5590,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "ORDER",
+"t": 1759136043.0,
+"title": "\uc624\ub35c\ub9ac(ORDER) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5589,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "SUPER",
+"t": 1759136031.0,
+"title": "\uc288\ud37c\ubc84\uc2a4(SUPER) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5585,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "MIRA",
+"t": 1758879076.0,
+"title": "\ubbf8\ub77c\ub124\ud2b8\uc6cc\ud06c(MIRA) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5572,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "XPL",
+"t": 1758765438.0,
+"title": "\ud50c\ub77c\uc988\ub9c8(XPL) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5571,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "IN",
+"t": 1758701401.0,
+"title": "\uc778\ud53c\ub2db(IN) BTC, USDT \ub9c8\ucf13, \ube44\uc4f0\ub9ac(B3) USDT \ub9c8\ucf13 \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5571,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "B3",
+"t": 1758701401.0,
+"title": "\uc778\ud53c\ub2db(IN) BTC, USDT \ub9c8\ucf13, \ube44\uc4f0\ub9ac(B3) USDT \ub9c8\ucf13 \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5570,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "FLUID",
+"t": 1758701400.0,
+"title": "\ud50c\ub8e8\uc774\ub4dc(FLUID) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5551,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "0G",
+"t": 1758516600.0,
+"title": "\uc81c\ub85c\uc9c0(0G) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uac70\ub798\uc9c0\uc6d0 \uac1c\uc2dc \uc2dc\uc810 \ubc0f \ub9e4\ub3c4 \ucd5c\uc800\uac00 \uae30\uc900 \uac00\uaca9 \uc548\ub0b4)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5549,
+"kind": "add",
+"markets": [
+"KRW",
+"USDT"
+],
+"symbol": "SUN",
+"t": 1758508200.0,
+"title": "\uc36c(SUN) KRW, USDT \ub9c8\ucf13 \ub514\uc9c0\ud138 \uc790\uc0b0 \ucd94\uac00",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5539,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "ETHFI",
+"t": 1758251400.0,
+"title": "\uc774\ub354\ud30c\uc774(ETHFI), \ub9ac\uc878\ube0c(RESOLV), \uc774\ub2c8\uc2dc\uc544(INIT), \uc2a4\ud30c\ud06c(SPK) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5539,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "RESOLV",
+"t": 1758251400.0,
+"title": "\uc774\ub354\ud30c\uc774(ETHFI), \ub9ac\uc878\ube0c(RESOLV), \uc774\ub2c8\uc2dc\uc544(INIT), \uc2a4\ud30c\ud06c(SPK) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5539,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "INIT",
+"t": 1758251400.0,
+"title": "\uc774\ub354\ud30c\uc774(ETHFI), \ub9ac\uc878\ube0c(RESOLV), \uc774\ub2c8\uc2dc\uc544(INIT), \uc2a4\ud30c\ud06c(SPK) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5539,
+"kind": "new",
+"markets": [
+"BTC",
+"USDT"
+],
+"symbol": "SPK",
+"t": 1758251400.0,
+"title": "\uc774\ub354\ud30c\uc774(ETHFI), \ub9ac\uc878\ube0c(RESOLV), \uc774\ub2c8\uc2dc\uc544(INIT), \uc2a4\ud30c\ud06c(SPK) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (BTC, USDT \ub9c8\ucf13)",
+"venue": "upbit"
+},
+{
+"cancelled": false,
+"id": 5536,
+"kind": "new",
+"markets": [
+"KRW",
+"BTC",
+"USDT"
+],
+"symbol": "BARD",
+"t": 1758189006.0,
+"title": "\ub86c\ubc14\ub4dc(BARD) \uc2e0\uaddc \uac70\ub798\uc9c0\uc6d0 \uc548\ub0b4 (KRW, BTC, USDT \ub9c8\ucf13) (\uc720\ud1b5\ub7c9 \uacc4\ud68d\ud45c \uc218\uc815 \uc548\ub0b4)",
+"venue": "upbit"
+}
+]
