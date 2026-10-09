@@ -1,0 +1,450 @@
+{
+ "events": 16,
+ "pess_1": {
+  "n": 16,
+  "median_pct": 0.95,
+  "mean_pct": 2.0,
+  "share_positive": 0.75,
+  "p25_pct": 0.19
+ },
+ "pess_2": {
+  "n": 16,
+  "median_pct": 1.56,
+  "mean_pct": 2.15,
+  "share_positive": 0.81,
+  "p25_pct": 0.29
+ },
+ "pess_3": {
+  "n": 16,
+  "median_pct": 1.78,
+  "mean_pct": 2.33,
+  "share_positive": 0.81,
+  "p25_pct": 0.41
+ },
+ "pess_5": {
+  "n": 16,
+  "median_pct": 1.56,
+  "mean_pct": 2.08,
+  "share_positive": 0.75,
+  "p25_pct": 0.24
+ },
+ "pess_10": {
+  "n": 16,
+  "median_pct": 1.09,
+  "mean_pct": 1.38,
+  "share_positive": 0.75,
+  "p25_pct": 0.02
+ },
+ "typ_1": {
+  "n": 16,
+  "median_pct": 2.55,
+  "mean_pct": 3.39,
+  "share_positive": 0.94,
+  "p25_pct": 0.54
+ },
+ "typ_2": {
+  "n": 16,
+  "median_pct": 2.48,
+  "mean_pct": 2.98,
+  "share_positive": 0.88,
+  "p25_pct": 0.63
+ },
+ "typ_3": {
+  "n": 16,
+  "median_pct": 2.57,
+  "mean_pct": 3.0,
+  "share_positive": 0.81,
+  "p25_pct": 0.54
+ },
+ "typ_5": {
+  "n": 16,
+  "median_pct": 1.68,
+  "mean_pct": 2.38,
+  "share_positive": 0.75,
+  "p25_pct": 0.48
+ },
+ "typ_10": {
+  "n": 16,
+  "median_pct": 1.78,
+  "mean_pct": 1.88,
+  "share_positive": 0.81,
+  "p25_pct": 0.27
+ },
+ "peak_30m": {
+  "n": 16,
+  "median_pct": 4.01,
+  "mean_pct": 7.13,
+  "share_positive": 1.0,
+  "p25_pct": 2.39
+ },
+ "peak_minute": {
+  "median": 0.5,
+  "share_in_first_3": 0.69,
+  "share_in_first_5": 0.81
+ },
+ "by_first_post_kind": {
+  "roadmap": {
+   "events": 14,
+   "pess_1": {
+    "n": 14,
+    "median_pct": 0.95,
+    "mean_pct": 2.0,
+    "share_positive": 0.79,
+    "p25_pct": 0.19
+   },
+   "pess_2": {
+    "n": 14,
+    "median_pct": 1.56,
+    "mean_pct": 2.21,
+    "share_positive": 0.86,
+    "p25_pct": 0.29
+   },
+   "pess_3": {
+    "n": 14,
+    "median_pct": 1.78,
+    "mean_pct": 2.35,
+    "share_positive": 0.86,
+    "p25_pct": 0.41
+   },
+   "pess_5": {
+    "n": 14,
+    "median_pct": 1.56,
+    "mean_pct": 2.15,
+    "share_positive": 0.79,
+    "p25_pct": 0.24
+   },
+   "pess_10": {
+    "n": 14,
+    "median_pct": 1.39,
+    "mean_pct": 1.52,
+    "share_positive": 0.79,
+    "p25_pct": 0.02
+   },
+   "typ_1": {
+    "n": 14,
+    "median_pct": 2.55,
+    "mean_pct": 3.55,
+    "share_positive": 1.0,
+    "p25_pct": 0.54
+   },
+   "typ_2": {
+    "n": 14,
+    "median_pct": 2.48,
+    "mean_pct": 3.1,
+    "share_positive": 0.93,
+    "p25_pct": 0.63
+   },
+   "typ_3": {
+    "n": 14,
+    "median_pct": 2.57,
+    "mean_pct": 3.06,
+    "share_positive": 0.86,
+    "p25_pct": 0.54
+   },
+   "typ_5": {
+    "n": 14,
+    "median_pct": 1.68,
+    "mean_pct": 2.46,
+    "share_positive": 0.79,
+    "p25_pct": 0.48
+   },
+   "typ_10": {
+    "n": 14,
+    "median_pct": 1.78,
+    "mean_pct": 1.98,
+    "share_positive": 0.79,
+    "p25_pct": 0.27
+   },
+   "peak_30m": {
+    "n": 14,
+    "median_pct": 4.01,
+    "mean_pct": 7.22,
+    "share_positive": 1.0,
+    "p25_pct": 2.39
+   },
+   "peak_minute": {
+    "median": 0.5,
+    "share_in_first_3": 0.71,
+    "share_in_first_5": 0.86
+   }
+  },
+  "deposits": {
+   "events": 0
+  },
+  "trading": {
+   "events": 2,
+   "pess_1": {
+    "n": 2,
+    "median_pct": 2.04,
+    "mean_pct": 2.04,
+    "share_positive": 0.5,
+    "p25_pct": -0.55
+   },
+   "pess_2": {
+    "n": 2,
+    "median_pct": 1.75,
+    "mean_pct": 1.75,
+    "share_positive": 0.5,
+    "p25_pct": -0.59
+   },
+   "pess_3": {
+    "n": 2,
+    "median_pct": 2.15,
+    "mean_pct": 2.15,
+    "share_positive": 0.5,
+    "p25_pct": -0.45
+   },
+   "pess_5": {
+    "n": 2,
+    "median_pct": 1.66,
+    "mean_pct": 1.66,
+    "share_positive": 0.5,
+    "p25_pct": -0.77
+   },
+   "pess_10": {
+    "n": 2,
+    "median_pct": 0.4,
+    "mean_pct": 0.4,
+    "share_positive": 0.5,
+    "p25_pct": -0.09
+   },
+   "typ_1": {
+    "n": 2,
+    "median_pct": 2.27,
+    "mean_pct": 2.27,
+    "share_positive": 0.5,
+    "p25_pct": -0.55
+   },
+   "typ_2": {
+    "n": 2,
+    "median_pct": 2.1,
+    "mean_pct": 2.1,
+    "share_positive": 0.5,
+    "p25_pct": -0.55
+   },
+   "typ_3": {
+    "n": 2,
+    "median_pct": 2.62,
+    "mean_pct": 2.62,
+    "share_positive": 0.5,
+    "p25_pct": -0.45
+   },
+   "typ_5": {
+    "n": 2,
+    "median_pct": 1.79,
+    "mean_pct": 1.79,
+    "share_positive": 0.5,
+    "p25_pct": -0.77
+   },
+   "typ_10": {
+    "n": 2,
+    "median_pct": 1.17,
+    "mean_pct": 1.17,
+    "share_positive": 1.0,
+    "p25_pct": 0.05
+   },
+   "peak_30m": {
+    "n": 2,
+    "median_pct": 6.48,
+    "mean_pct": 6.48,
+    "share_positive": 1.0,
+    "p25_pct": 1.37
+   },
+   "peak_minute": {
+    "median": 12.5,
+    "share_in_first_3": 0.5,
+    "share_in_first_5": 0.5
+   }
+  }
+ },
+ "dropped": [
+  [
+   "MON",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "WMTX",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "IRYS",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ABT",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "RLS",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "LIGHTER",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "BREV",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "MEGA",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ELSA",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ENERGY",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "SKR",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "FIGHT",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "BIRB",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "TRIA",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ZAMA",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "INX",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "RNBW",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "RAVE",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "AZTEC",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ESP",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "UP",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ROBO",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "BLEND",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "PRL",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "KAT",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "CHECK",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "MEZO",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "BASED1",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "EDGEX",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "NEX",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "META",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "DRV",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "CTR",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "O",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "ARX",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "RE",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "GEOD",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "CAP",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "GROVE",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "GRVT",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "PERP",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "BRL",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "CP",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "CT",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "BLUECHIP",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "RITUAL",
+   "no 1-minute bars around the post"
+  ],
+  [
+   "WHUF",
+   "no 1-minute bars around the post"
+  ]
+ ]
+}
