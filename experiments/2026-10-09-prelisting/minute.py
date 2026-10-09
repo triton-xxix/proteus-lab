@@ -159,5 +159,40 @@ def main():
     print(json.dumps(summary, indent=1))
 
 
+def main_coinbase():
+    """Added 9 Oct 2026, same rules: the first @CoinbaseMarkets post per asset (roadmap, deposits or
+    trading, whichever came first; data/coinbase_posts.json) is the announcement; price from Binance,
+    OKX or Bybit 1-minute bars. Writes minute_coinbase.json."""
+    posts = json.load(open(os.path.join(HERE, "data", "coinbase_posts.json")))["posts"]
+    first = {}
+    for p in posts:
+        if p.get("t") and (p["symbol"] not in first or p["t"] < first[p["symbol"]]["t"]):
+            first[p["symbol"]] = p
+    rows, dropped = [], []
+    for sym, p in sorted(first.items(), key=lambda kv: kv[1]["t"]):
+        t = p["t"]
+        ev = {"venue": "coinbase", "symbol": sym, "announced": datetime.fromtimestamp(t, timezone.utc).strftime("%Y-%m-%d %H:%M"),
+              "leak_24h_before": None}
+        got = None
+        for src in ("binance", "okx", "bybit"):
+            c = SOURCES[src](sym, int(t) - 1800, int(t) + 3600)
+            if c and any(x[0] + 60 <= t for x in c) and any(x[0] >= t + 600 for x in c):
+                got = measure(ev, t, src, c)
+                if got:
+                    got["first_post_kind"] = p["kind"]
+                    break
+        if got:
+            rows.append(got)
+        else:
+            dropped.append((sym, "no 1-minute bars around the post"))
+    s = summarise(rows)
+    s["by_first_post_kind"] = {k: summarise([r for r in rows if r["first_post_kind"] == k]) for k in ("roadmap", "deposits", "trading")}
+    s["dropped"] = dropped
+    json.dump(rows, open(os.path.join(HERE, "minute_coinbase.json"), "w"), indent=0)
+    json.dump(s, open(os.path.join(HERE, "minute_coinbase_summary.json"), "w"), indent=1)
+    print(json.dumps({k: v for k, v in s.items() if k != "by_first_post_kind"}, indent=1))
+    print({k: (v.get("events"), (v.get("pess_3") or {}).get("median_pct")) for k, v in s["by_first_post_kind"].items()})
+
+
 if __name__ == "__main__":
-    main()
+    main_coinbase() if sys.argv[1:] == ["coinbase"] else main()

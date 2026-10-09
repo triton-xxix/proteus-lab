@@ -1,0 +1,288 @@
+{
+ "upbit": {
+  "events": 58,
+  "pess_1": {
+   "n": 58,
+   "median_pct": 14.3,
+   "mean_pct": 22.08,
+   "share_positive": 0.9,
+   "p25_pct": 5.52
+  },
+  "pess_2": {
+   "n": 58,
+   "median_pct": 16.54,
+   "mean_pct": 24.05,
+   "share_positive": 0.91,
+   "p25_pct": 6.65
+  },
+  "pess_3": {
+   "n": 58,
+   "median_pct": 15.77,
+   "mean_pct": 25.87,
+   "share_positive": 0.91,
+   "p25_pct": 5.49
+  },
+  "pess_5": {
+   "n": 58,
+   "median_pct": 16.84,
+   "mean_pct": 26.39,
+   "share_positive": 0.91,
+   "p25_pct": 4.65
+  },
+  "pess_10": {
+   "n": 58,
+   "median_pct": 16.81,
+   "mean_pct": 27.42,
+   "share_positive": 0.88,
+   "p25_pct": 5.72
+  },
+  "typ_1": {
+   "n": 58,
+   "median_pct": 19.01,
+   "mean_pct": 28.6,
+   "share_positive": 0.91,
+   "p25_pct": 7.52
+  },
+  "typ_2": {
+   "n": 58,
+   "median_pct": 18.56,
+   "mean_pct": 28.1,
+   "share_positive": 0.91,
+   "p25_pct": 7.51
+  },
+  "typ_3": {
+   "n": 58,
+   "median_pct": 18.6,
+   "mean_pct": 29.57,
+   "share_positive": 0.91,
+   "p25_pct": 7.43
+  },
+  "typ_5": {
+   "n": 58,
+   "median_pct": 17.84,
+   "mean_pct": 28.52,
+   "share_positive": 0.91,
+   "p25_pct": 6.02
+  },
+  "typ_10": {
+   "n": 58,
+   "median_pct": 17.96,
+   "mean_pct": 29.98,
+   "share_positive": 0.88,
+   "p25_pct": 5.74
+  },
+  "peak_30m": {
+   "n": 58,
+   "median_pct": 32.69,
+   "mean_pct": 46.42,
+   "share_positive": 1.0,
+   "p25_pct": 17.48
+  },
+  "leak_24h_before": {
+   "n": 58,
+   "median_pct": 2.72,
+   "mean_pct": 53.4,
+   "share_positive": 0.64,
+   "p25_pct": -0.5
+  },
+  "peak_minute": {
+   "median": 0.0,
+   "share_in_first_3": 0.69,
+   "share_in_first_5": 0.72
+  }
+ },
+ "binance": {
+  "events": 8,
+  "pess_1": {
+   "n": 8,
+   "median_pct": 6.87,
+   "mean_pct": 7.86,
+   "share_positive": 0.88,
+   "p25_pct": 1.35
+  },
+  "pess_2": {
+   "n": 8,
+   "median_pct": 5.76,
+   "mean_pct": 9.55,
+   "share_positive": 0.88,
+   "p25_pct": 2.11
+  },
+  "pess_3": {
+   "n": 8,
+   "median_pct": 5.99,
+   "mean_pct": 10.76,
+   "share_positive": 0.88,
+   "p25_pct": 4.91
+  },
+  "pess_5": {
+   "n": 8,
+   "median_pct": 6.09,
+   "mean_pct": 11.19,
+   "share_positive": 0.88,
+   "p25_pct": 4.95
+  },
+  "pess_10": {
+   "n": 8,
+   "median_pct": 4.92,
+   "mean_pct": 12.84,
+   "share_positive": 0.88,
+   "p25_pct": 2.91
+  },
+  "typ_1": {
+   "n": 8,
+   "median_pct": 8.73,
+   "mean_pct": 10.73,
+   "share_positive": 0.88,
+   "p25_pct": 2.31
+  },
+  "typ_2": {
+   "n": 8,
+   "median_pct": 6.95,
+   "mean_pct": 12.17,
+   "share_positive": 0.88,
+   "p25_pct": 6.28
+  },
+  "typ_3": {
+   "n": 8,
+   "median_pct": 7.51,
+   "mean_pct": 11.89,
+   "share_positive": 0.88,
+   "p25_pct": 6.26
+  },
+  "typ_5": {
+   "n": 8,
+   "median_pct": 7.99,
+   "mean_pct": 12.45,
+   "share_positive": 0.88,
+   "p25_pct": 5.29
+  },
+  "typ_10": {
+   "n": 8,
+   "median_pct": 5.9,
+   "mean_pct": 14.81,
+   "share_positive": 0.88,
+   "p25_pct": 3.47
+  },
+  "peak_30m": {
+   "n": 8,
+   "median_pct": 14.49,
+   "mean_pct": 21.05,
+   "share_positive": 1.0,
+   "p25_pct": 9.82
+  },
+  "leak_24h_before": {
+   "n": 8,
+   "median_pct": -1.52,
+   "mean_pct": -1.75,
+   "share_positive": 0.12,
+   "p25_pct": -2.74
+  },
+  "peak_minute": {
+   "median": 4.0,
+   "share_in_first_3": 0.5,
+   "share_in_first_5": 0.5
+  }
+ },
+ "all": {
+  "events": 66,
+  "pess_1": {
+   "n": 66,
+   "median_pct": 12.63,
+   "mean_pct": 20.35,
+   "share_positive": 0.89,
+   "p25_pct": 5.22
+  },
+  "pess_2": {
+   "n": 66,
+   "median_pct": 14.04,
+   "mean_pct": 22.3,
+   "share_positive": 0.91,
+   "p25_pct": 5.39
+  },
+  "pess_3": {
+   "n": 66,
+   "median_pct": 14.6,
+   "mean_pct": 24.04,
+   "share_positive": 0.91,
+   "p25_pct": 5.48
+  },
+  "pess_5": {
+   "n": 66,
+   "median_pct": 14.68,
+   "mean_pct": 24.55,
+   "share_positive": 0.91,
+   "p25_pct": 4.65
+  },
+  "pess_10": {
+   "n": 66,
+   "median_pct": 16.16,
+   "mean_pct": 25.65,
+   "share_positive": 0.88,
+   "p25_pct": 4.35
+  },
+  "typ_1": {
+   "n": 66,
+   "median_pct": 16.19,
+   "mean_pct": 26.43,
+   "share_positive": 0.91,
+   "p25_pct": 6.89
+  },
+  "typ_2": {
+   "n": 66,
+   "median_pct": 15.92,
+   "mean_pct": 26.17,
+   "share_positive": 0.91,
+   "p25_pct": 6.7
+  },
+  "typ_3": {
+   "n": 66,
+   "median_pct": 16.48,
+   "mean_pct": 27.43,
+   "share_positive": 0.91,
+   "p25_pct": 6.88
+  },
+  "typ_5": {
+   "n": 66,
+   "median_pct": 15.98,
+   "mean_pct": 26.57,
+   "share_positive": 0.91,
+   "p25_pct": 5.37
+  },
+  "typ_10": {
+   "n": 66,
+   "median_pct": 17.04,
+   "mean_pct": 28.14,
+   "share_positive": 0.88,
+   "p25_pct": 5.06
+  },
+  "peak_30m": {
+   "n": 66,
+   "median_pct": 31.98,
+   "mean_pct": 43.35,
+   "share_positive": 1.0,
+   "p25_pct": 15.88
+  },
+  "leak_24h_before": {
+   "n": 66,
+   "median_pct": 1.72,
+   "mean_pct": 46.71,
+   "share_positive": 0.58,
+   "p25_pct": -2.06
+  },
+  "peak_minute": {
+   "median": 0.0,
+   "share_in_first_3": 0.67,
+   "share_in_first_5": 0.7
+  }
+ },
+ "dropped": [
+  [
+   "CASHCAT",
+   "no 1-minute bars around the announcement"
+  ],
+  [
+   "BFC",
+   "no 1-minute bars around the announcement"
+  ]
+ ]
+}

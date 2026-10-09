@@ -272,8 +272,34 @@ def tables(targets, before, avail, sig, turn, days, dix):
     return out
 
 
+def xmention_pairs(targets, before, avail, turn, days, dix, n=9):
+    """Cases and turnover-matched controls for xmentions.py (rules in its docstring)."""
+    lo = datetime(2026, 3, 1, tzinfo=timezone.utc).timestamp()
+    cases = sorted((t, s) for s, t in targets["upbit_krw"].items() if lo <= t <= W1 and avail.get(s, 1e12) < t and s not in STABLE)
+    step = max(1, len(cases) // n)
+    out = []
+    for t, s in cases[::step][:n]:
+        i = dix[int(t) // DAY * DAY - DAY]
+        r30 = sorted(((sum(turn[x][max(0, i - 29):i + 1]), x) for x in turn), reverse=True)
+        rk = {x: k for k, (v, x) in enumerate(r30)}
+        if s not in rk:
+            continue
+        best = None
+        for x, k in rk.items():
+            tt = targets["upbit_krw"].get(x)
+            if x == s or x in STABLE or avail.get(x, 1e12) > t or x in before["upbit_krw"] or (tt and abs(tt - t) < 90 * DAY):
+                continue
+            if best is None or abs(k - rk[s]) < abs(best[1] - rk[s]):
+                best = (x, k)
+        if best:
+            out.append({"case": s, "control": best[0], "t": t, "case_rank": rk[s] + 1, "control_rank": best[1] + 1})
+    json.dump(out, open(os.path.join(DATA, "xmention_pairs.json"), "w"), indent=0)
+    return out
+
+
 def main():
     st, targets, before, avail, sig, turn, days, dix, close = build()
+    print("x pairs:", [(p["case"], p["control"]) for p in xmention_pairs(targets, before, avail, turn, days, dix)])
     json.dump(sorted(sig, key=lambda x: x["t"]), open(os.path.join(HERE, "signals.json"), "w"), indent=0)
     res = tables(targets, before, avail, sig, turn, days, dix)
     json.dump(res, open(os.path.join(HERE, "research.json"), "w"), indent=1)
