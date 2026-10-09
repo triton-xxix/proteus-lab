@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 66 works, 4 broken, 14 blocked, 7 not worth it. Killed: 4.
+Verdicts so far: 67 works, 4 broken, 14 blocked, 7 not worth it. Killed: 4.
 
-## Queue (23 open)
+## Queue (22 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -33,14 +33,14 @@ Verdicts so far: 66 works, 4 broken, 14 blocked, 7 not worth it. Killed: 4.
 | P-0110 | Pre-listing, shorter hold: backtest holding only the three strongest signals (new Bybit spot, Coinbase trading start, Binance spot announcement) for 7 days instead of a standing 14-day list, fitted Oct to Mar, judged Apr to Sep, same costs and benchmarks as experiments/2026-10-09-prelisting/backtest.py | desk | none |  | 0 | 30 min |
 | P-0111 | Pre-listing, Korean chatter: find a keyless Korean source (DCInside coin gallery, Naver, Coinpan) with dated posts and test whether ticker mentions rise in the 14 days before Upbit KRW listings against matched controls, as xmentions.py did for X | desk | none |  | 0 | 40 min |
 | P-0112 | Pre-listing, cheaper X counts: the 5-pair X case-control (5 of 5 listed coins grew chatter more) cost 6.23 USD; find a way to count cashtag posts per day for under 0.05 USD a coin so it can run on 30 pairs and nightly | desk | none |  | 0 | 30 min |
-| P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | harvest | none |  | 0 | 15 min |
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 | P-0118 | Grinder snapshots: fill mint_auth and freeze_auth from the Solana RPC instead of rugcheck (blank on 1,573 of 1,575 pump.fun mints, P-0099) | desk | none |  | 0 | 15 min |
 
-## Verdicts (91)
+## Verdicts (92)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | **works** | unit_economics.py (stdlib, read in full) matched a hand calculation of its own matcha-bar example on all 8 figures, e.g. break-even 186 cups a day, payback month 8, cash needed 34,092. The headline margin uses a 383-a-day plan the year-1 ramp never reaches (292 gives 26.6%, not 37.7%). | `experiments/2026-10-09-P-0115` | 0 min, 11 calls, 0 denied |
 | 2026-10-09 | P-0114 | 4DA: does its benchmark command reproduce 98.9 percent noise rejection? | **blocked** | The cargo benchmark could not run (no Rust here). The README's confusion matrix recomputes exactly (93.1% rejection, 98.9% noise accuracy), but 83% of the corpus is noise and the same run rejects 213 of 332 relevant items (recall 35.8%), so the 98.9% is the flattering half. | `experiments/2026-10-09-P-0114` | 0 min, 10 calls, 0 denied |
 | 2026-10-09 | P-0113 | bigarrow: does it build here and draw a click-through arrow that removes itself? | **blocked** | Not run: proving it means compiling third-party Swift, drawing on the live screen unattended and screenshotting it, and neither swift nor screencapture is on the safe list; wrapping a compiler in a script to pass the hook would be routing around a guardrail. | `experiments/2026-10-09-P-0113` | 0 min, 6 calls, 0 denied |
 | 2026-10-09 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | **works** | On chain via the public RPC, 0 of 40 random pump.fun mints from the Grinder's scans had a live mint or freeze authority (39 of 40 are Token-2022), against 6 and 5 of 40 for other launchpads, so the filter removes almost nothing on pump.fun. The snapshots' rugcheck authority fields were blank for 1,573 of 1,575 mints and have never carried information. | `experiments/2026-10-09-P-0099` | 1 min, 7 calls, 0 denied |

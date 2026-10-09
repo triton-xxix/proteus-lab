@@ -1,0 +1,194 @@
+{
+ "rows": [
+  {
+   "field": "variable_per_unit",
+   "tool": 1.74,
+   "hand": 1.74,
+   "match": true
+  },
+  {
+   "field": "contribution",
+   "tool": 4.76,
+   "hand": 4.76,
+   "match": true
+  },
+  {
+   "field": "breakeven_per_day",
+   "tool": 185.8543417366947,
+   "hand": 185.8543,
+   "match": true
+  },
+  {
+   "field": "margin_at_plan",
+   "tool": 0.3769485171051751,
+   "hand": 0.3769,
+   "match": true
+  },
+  {
+   "field": "year1_revenue",
+   "tool": 563160.0,
+   "hand": 563160.0,
+   "match": true
+  },
+  {
+   "field": "year1_profit",
+   "tool": 93926.4,
+   "hand": 93926.4,
+   "match": true
+  },
+  {
+   "field": "payback_month",
+   "tool": 8,
+   "hand": 8,
+   "match": true
+  },
+  {
+   "field": "cash_needed",
+   "tool": 34092.0,
+   "hand": 34092.0,
+   "match": true
+  }
+ ],
+ "tool": {
+  "business": "Moss Matcha Bar (an example: a walk-in matcha caf\u00e9)",
+  "unit": "cup",
+  "price": 6.5,
+  "variable_per_unit": 1.74,
+  "contribution": 4.76,
+  "contribution_pct": 0.7323076923076923,
+  "fixed_monthly": 26540.0,
+  "startup": 25280.0,
+  "plan_per_day": 383.0,
+  "margin_at_plan": 0.3769485171051751,
+  "breakeven_per_day": 185.8543417366947,
+  "capacity_per_day": 600,
+  "year1_revenue": 563160.0,
+  "year1_profit": 93926.4,
+  "year1_after_startup": 68646.4,
+  "payback_month": 8,
+  "cash_needed": 34092.0,
+  "months": [
+   {
+    "month": 1,
+    "per_day": 140.0,
+    "units": 4200.0,
+    "revenue": 27300.0,
+    "variable": 7308.0,
+    "fixed": 26540.0,
+    "profit": -6548.0,
+    "cumulative": -31828.0
+   },
+   {
+    "month": 2,
+    "per_day": 170.0,
+    "units": 5100.0,
+    "revenue": 33150.0,
+    "variable": 8874.0,
+    "fixed": 26540.0,
+    "profit": -2264.0,
+    "cumulative": -34092.0
+   },
+   {
+    "month": 3,
+    "per_day": 195.0,
+    "units": 5850.0,
+    "revenue": 38025.0,
+    "variable": 10179.0,
+    "fixed": 26540.0,
+    "profit": 1306.0,
+    "cumulative": -32786.0
+   },
+   {
+    "month": 4,
+    "per_day": 215.0,
+    "units": 6450.0,
+    "revenue": 41925.0,
+    "variable": 11223.0,
+    "fixed": 26540.0,
+    "profit": 4162.0,
+    "cumulative": -28624.0
+   },
+   {
+    "month": 5,
+    "per_day": 235.0,
+    "units": 7050.0,
+    "revenue": 45825.0,
+    "variable": 12267.0,
+    "fixed": 26540.0,
+    "profit": 7018.0,
+    "cumulative": -21606.0
+   },
+   {
+    "month": 6,
+    "per_day": 250.0,
+    "units": 7500.0,
+    "revenue": 48750.0,
+    "variable": 13050.0,
+    "fixed": 26540.0,
+    "profit": 9160.0,
+    "cumulative": -12446.0
+   },
+   {
+    "month": 7,
+    "per_day": 262.0,
+    "units": 7860.0,
+    "revenue": 51090.0,
+    "variable": 13676.4,
+    "fixed": 26540.0,
+    "profit": 10873.599999999999,
+    "cumulative": -1572.4000000000015
+   },
+   {
+    "month": 8,
+    "per_day": 272.0,
+    "units": 8160.0,
+    "revenue": 53040.0,
+    "variable": 14198.4,
+    "fixed": 26540.0,
+    "profit": 12301.599999999999,
+    "cumulative": 10729.199999999997
+   },
+   {
+    "month": 9,
+    "per_day": 280.0,
+    "units": 8400.0,
+    "revenue": 54600.0,
+    "variable": 14616.0,
+    "fixed": 26540.0,
+    "profit": 13444.0,
+    "cumulative": 24173.199999999997
+   },
+   {
+    "month": 10,
+    "per_day": 287.0,
+    "units": 8610.0,
+    "revenue": 55965.0,
+    "variable": 14981.4,
+    "fixed": 26540.0,
+    "profit": 14443.599999999999,
+    "cumulative": 38616.799999999996
+   },
+   {
+    "month": 11,
+    "per_day": 290.0,
+    "units": 8700.0,
+    "revenue": 56550.0,
+    "variable": 15138.0,
+    "fixed": 26540.0,
+    "profit": 14872.0,
+    "cumulative": 53488.799999999996
+   },
+   {
+    "month": 12,
+    "per_day": 292.0,
+    "units": 8760.0,
+    "revenue": 56940.0,
+    "variable": 15242.4,
+    "fixed": 26540.0,
+    "profit": 15157.599999999999,
+    "cumulative": 68646.4
+   }
+  ],
+  "flags": []
+ }
+}
