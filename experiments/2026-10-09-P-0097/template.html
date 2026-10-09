@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Row Keeper</title>
+<style>
+  :root { --bg:#f6f3ee; --ink:#222; --bar:rgba(255,196,0,.35); --edge:#d08a00; --panel:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d1c1a; --ink:#eee; --panel:#2a2926; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.4 system-ui, sans-serif; }
+  header { position:sticky; top:0; z-index:5; background:var(--panel); padding:8px 12px; display:flex;
+           flex-wrap:wrap; gap:8px; align-items:center; box-shadow:0 1px 4px rgba(0,0,0,.15); }
+  header button { font-size:16px; min-width:44px; min-height:40px; border-radius:8px; border:1px solid #888;
+                  background:transparent; color:inherit; }
+  .count { font-variant-numeric:tabular-nums; font-weight:600; min-width:3.5em; text-align:center; }
+  #doc { position:relative; margin:12px auto; width:min(100%, 900px); }
+  #doc canvas { display:block; width:100%; margin-bottom:8px; background:#fff; }
+  #bar { position:absolute; left:0; right:0; height:28px; background:var(--bar); border-top:2px solid var(--edge);
+         border-bottom:2px solid var(--edge); cursor:ns-resize; display:none; touch-action:none; }
+  #hint { padding:24px; text-align:center; opacity:.7; }
+  label { font-size:13px; }
+  input[type=number] { width:4em; }
+</style>
+</head>
+<body>
+<header>
+  <input type="file" id="file" accept="application/pdf">
+  <span>Row</span><button id="rowDown" title="Row back (k)">&minus;</button><span class="count" id="row">0</span><button id="rowUp" title="Next row (j or space)">+</button>
+  <span>Repeat</span><button id="repDown">&minus;</button><span class="count" id="rep">0</span><button id="repUp">+</button>
+  <label>Rows per repeat <input type="number" id="per" min="0" value="0"></label>
+  <label>Bar step px <input type="number" id="step" min="4" value="28"></label>
+  <button id="reset" title="Clear saved place for this file">Reset</button>
+</header>
+<div id="hint">Open a pattern PDF. Your row, repeat count and bar position are saved for that file in this browser.</div>
+<div id="doc"><div id="bar"></div></div>
+<script>/*PDFJS*/</script>
+<script>
+(function () {
+  // the worker code is inlined above as a plain script, so PDF.js runs on the main thread, offline
+  const $ = id => document.getElementById(id);
+  const doc = $("doc"), bar = $("bar");
+  let key = null, st = null;
+
+  function load(k) {
+    try { return JSON.parse(localStorage.getItem(k)) || null; } catch (e) { return null; }
+  }
+  function save() {
+    if (!key) return;
+    st.scroll = window.scrollY;
+    try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) { /* private mode: works, forgets */ }
+  }
+  function show() {
+    $("row").textContent = st.row; $("rep").textContent = st.rep;
+    $("per").value = st.per; $("step").value = st.step;
+    bar.style.top = st.bar + "px"; bar.style.height = st.step + "px"; bar.style.display = "block";
+  }
+  function moveRow(d) {
+    st.row = Math.max(0, st.row + d);
+    st.bar = Math.max(0, Math.min(doc.scrollHeight - st.step, st.bar + d * st.step));
+    if (st.per > 0 && d > 0 && st.row > 0 && st.row % st.per === 0) st.rep += 1;
+    if (st.per > 0 && d < 0 && (st.row + 1) % st.per === 0 && st.rep > 0) st.rep -= 1;
+    show(); save();
+    const r = bar.getBoundingClientRect();
+    if (r.top < 90 || r.bottom > innerHeight - 40) window.scrollBy({top: r.top - innerHeight / 3, behavior: "smooth"});
+  }
+
+  $("file").addEventListener("change", async ev => {
+    const f = ev.target.files[0]; if (!f) return;
+    key = "rowkeeper:" + f.name + ":" + f.size;
+    st = Object.assign({row: 0, rep: 0, per: 0, step: 28, bar: 40, scroll: 0}, load(key) || {});
+    doc.querySelectorAll("canvas").forEach(c => c.remove());
+    show();   // counts first: the saved place must show even if the PDF is slow or fails
+    $("hint").textContent = "Loading " + f.name + "...";
+    try {
+      const pdf = await pdfjsLib.getDocument({data: new Uint8Array(await f.arrayBuffer())}).promise;
+      for (let i = 1; i <= pdf.numPages; i++) {
+        const page = await pdf.getPage(i);
+        const vp = page.getViewport({scale: 2});
+        const c = document.createElement("canvas"); c.width = vp.width; c.height = vp.height;
+        doc.insertBefore(c, bar);
+        await page.render({canvasContext: c.getContext("2d"), viewport: vp}).promise;
+      }
+      $("hint").textContent = f.name + ": " + pdf.numPages + " page(s). Saved place restored.";
+      window.scrollTo(0, st.scroll);
+    } catch (e) {
+      $("hint").textContent = "Could not open " + f.name + ": " + e.message;
+    }
+  });
+
+  $("rowUp").onclick = () => st && moveRow(1);
+  $("rowDown").onclick = () => st && moveRow(-1);
+  $("repUp").onclick = () => { if (st) { st.rep++; show(); save(); } };
+  $("repDown").onclick = () => { if (st) { st.rep = Math.max(0, st.rep - 1); show(); save(); } };
+  $("per").onchange = e => { if (st) { st.per = Math.max(0, +e.target.value | 0); save(); } };
+  $("step").onchange = e => { if (st) { st.step = Math.max(4, +e.target.value | 0); show(); save(); } };
+  $("reset").onclick = () => { if (key && confirm("Forget the saved place for this file?")) {
+    try { localStorage.removeItem(key); } catch (e) {}
+    st = {row: 0, rep: 0, per: 0, step: 28, bar: 40, scroll: 0}; show(); } };
+  document.addEventListener("keydown", e => {
+    if (!st || e.target.tagName === "INPUT") return;
+    if (e.key === "j" || e.key === " ") { e.preventDefault(); moveRow(1); }
+    if (e.key === "k") moveRow(-1);
+  });
+  // drag the bar to line it up with the chart row
+  let drag = null;
+  bar.addEventListener("pointerdown", e => { drag = {y: e.clientY, top: st.bar}; bar.setPointerCapture(e.pointerId); });
+  bar.addEventListener("pointermove", e => { if (drag) { st.bar = Math.max(0, drag.top + e.clientY - drag.y); show(); } });
+  bar.addEventListener("pointerup", () => { drag = null; save(); });
+  addEventListener("scroll", () => { clearTimeout(window._t); window._t = setTimeout(save, 300); });
+})();
+</script>
+</body>
+</html>
