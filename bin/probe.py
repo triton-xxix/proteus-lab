@@ -611,6 +611,8 @@ def cmd_verdict(a):
     else:
         it["minutes"], it["calls"], it["denied"] = None, None, []
     it["status"], it["verdict"], it["verdict_at"] = "done", a.verdict, iso(n)
+    if it.get("shot"):
+        it["shot"]["hit"] = a.verdict == it["shot"]["expect"]
     it["note"] = a.note.strip()
     if it["note"] and it["note"][-1] not in ".!?":
         it["note"] += "."
@@ -643,6 +645,39 @@ def cmd_verdict(a):
     print("commit: " + res)
     if lp:
         print(budget_lines(lp)[2])
+
+
+def cmd_shot(a):
+    """A called shot (9 Oct 2026): before running a probe, commit the verdict I expect, how sure I am,
+    and the one number I expect it to measure. Scored at the verdict. Pass marks in PASS-MARKS.md."""
+    st = load_state()
+    it = find(st, a.id)
+    if it["status"] == "done":
+        sys.exit("%s already has a verdict; a shot after the fact is not a shot" % it["id"])
+    if it.get("shot"):
+        sys.exit("%s already has a called shot (%s at %s); one per probe" % (it["id"], it["shot"]["expect"], it["shot"]["at"]))
+    if not 0.0 < a.p < 1.0:
+        sys.exit("--p is a probability strictly between 0 and 1")
+    it["shot"] = {"expect": a.expect, "p": round(a.p, 2), "number": a.number.strip(), "at": iso(now())}
+    save_state(st)
+    render(st)
+    res = commit([STATE, REGISTER], "called shot %s: %s at %.2f, %s" % (it["id"], a.expect, a.p, a.number[:60]))
+    print("SHOT %s: %s at %.2f; expect %s" % (it["id"], a.expect, a.p, a.number))
+    print("commit: " + res)
+
+
+def cmd_shots(a):
+    """The called-shot book: count, hit rate, Brier (lower is better; always saying 0.5 scores 0.25)."""
+    st = load_state()
+    rows = [i for i in st["items"] if i.get("shot") and i.get("status") == "done" and i.get("verdict")]
+    open_ = [i for i in st["items"] if i.get("shot") and i.get("status") != "done"]
+    if not rows:
+        print("called shots: %d scored, %d waiting" % (0, len(open_)))
+        return
+    hits = [1 if i["verdict"] == i["shot"]["expect"] else 0 for i in rows]
+    brier = sum((i["shot"]["p"] - h) ** 2 for i, h in zip(rows, hits)) / len(rows)
+    print("called shots: %d scored, %d waiting; hit rate %.2f; mean stated p %.2f; Brier %.3f (0.250 is a coin)"
+          % (len(rows), len(open_), sum(hits) / len(rows), sum(i["shot"]["p"] for i in rows) / len(rows), brier))
 
 
 def cmd_stop(a):
@@ -806,6 +841,14 @@ def main():
     s.add_argument("--artefact", action="append")
     s.add_argument("--needs", help="for blocked: what it is blocked on")
     s.set_defaults(fn=cmd_verdict)
+    s = sub.add_parser("shot")
+    s.add_argument("id")
+    s.add_argument("--expect", required=True, choices=VERDICTS)
+    s.add_argument("--p", type=float, required=True, help="how sure, 0 to 1")
+    s.add_argument("--number", required=True, help="the one number I expect the probe to measure")
+    s.set_defaults(fn=cmd_shot)
+    s = sub.add_parser("shots")
+    s.set_defaults(fn=cmd_shots)
     s = sub.add_parser("stop")
     s.add_argument("--reason", required=True)
     s.set_defaults(fn=cmd_stop)

@@ -392,6 +392,23 @@ or hurts.
 
 A KILL on the blind column freezes the blind column only; the anchored book has its own lines above.
 
+## Called shots (added 2026-10-09, before any shot existed)
+
+Before each daytime probe the Trials slot commits a called shot: the verdict it expects (works,
+broken, blocked, not worth it), how sure it is (p, 0 to 1), and the one number it expects the probe
+to measure (`probe.py shot`). Scored at the verdict by `probe.py shots`: hit if the verdict matches,
+Brier on p. Always saying 0.5 scores 0.250; always saying "works" at 0.77 (the share of works among
+the first 77 verdicts, 59 of them) scores 0.766 x 0.234 = 0.179, so that is the bar a judgement has to beat, not the coin.
+
+| Criterion | Line |
+|---|---|
+| Counted shots | committed before the probe's `next` GO, one per probe, verdict recorded |
+| Sample floor | 40 scored shots |
+| KEEP | Brier at or below 0.160 at 40 or more (beats the "always works" baseline) |
+| KILL | Brier above 0.200 at 40 or more: the shots are noise, the habit stops and the slot saves the call |
+| INCONCLUSIVE | Anything between, until 80 scored shots, then KILL unless KEEP |
+| The number | Recorded and published beside the verdict, not scored until a rule for it is written here |
+
 ## Log of changes to this file
 
 | Date | Change | Tightened or loosened | Rows it would have judged at the time |
@@ -407,3 +424,4 @@ A KILL on the blind column freezes the blind column only; the anchored book has 
 | 2026-10-03 | Exchange book added (`exchange/RULES.md`): blind calls on Smarkets politics and current-affairs markets, me minus market by Brier; KILL +0.020 at 60 or above 0 at 100, KEEP at or below 0 at 60 | Tightened: adds a bar where there was none | none: 0 calls |
 | 2026-10-03 | Graduation book judged KILL (2,252 counted, -£14.2, past the -£10 at 200 line). G2 registered in `grinder/graduates/RULES.md`: liquidity at least $50,000, counted from 2026-10-03T12:00Z only, the same lines, anything short of KEEP at 400 is KILL | Tightened: G2 has no CHANGE outcome | G2: none, counting starts after registration; the 241 trades the filter was found on never count |
 | 2026-10-07 | Exchange book: a call with no two-sided price at its one anchor attempt is settled for the record but never counted, and never re-anchored (`exchange/RULES.md`, No anchor) | Neither: restates the existing Counted line | X-0001 and X-0002 (Quebec, unresolved): excluded from the count |
+| 2026-10-09 | Called shots added for the daytime Trials slot: KEEP at Brier 0.160 or below at 40, KILL above 0.200 | Tightened: adds a bar where there was none | none: 0 shots |

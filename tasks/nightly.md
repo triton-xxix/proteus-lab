@@ -152,9 +152,11 @@ not the Proteus card, and goes in `SPEND.md` on Sunday under its own line.
 
 ## 5e. Lichess
 
-Moved to the 07:45 morning job (`tasks/lichess-morning.md`) on 9 Oct 2026: by 23:15 most bots have
-used their 100 games a day and refuse (8 Oct: about 30 refusals for one game). Nothing to do here;
-the morning job writes its own run-log line.
+The game-bots interest as a standing job, not a probe: `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/lichess.py play --games 3 --minutes 12`. Rated 3+2 blitz against other bots with established ratings; it logs every game to `games/lichess/GAMES.csv` and prints the rating. One run-log line from its last line. If no bot accepts, that is the line. Run it after every child has returned and before the probe loop.
+
+Keep this step until the Lichess experiment ends (D-010, 23 Oct 2026, `games/lichess/EXPERIMENT.md`):
+it compares morning and nightly refusal rates, so both jobs must play. After it is scored, the
+experiment's verdict decides whether the nightly keeps chess.
 
 ## 5f. One Nolan film (from 7 Oct 2026 until films.json is empty)
 
@@ -169,7 +171,7 @@ Tenet timeline as the deep page (live at https://triton-xxix.github.io/proteus-n
 2. Read the prompt file and spawn one child in the same message as the 5c/5d children: **Agent**,
    `subagent_type` `general-purpose`, `model` `sonnet`, no `isolation`, the file's text as the whole
    prompt. It may WebFetch and WebSearch; it writes `state/agents/nolan/YYYY-MM-DD-<slug>.json` only.
-3. After every child has returned: `python3 /Users/triton/PROTEUS/bin/nolan.py ingest`. It checks the digest, fetches
+3. After Lichess (5e): `python3 /Users/triton/PROTEUS/bin/nolan.py ingest`. It checks the digest, fetches
    and credits the stills, writes `sites/nolan/films/<slug>.json`, rebuilds the site, commits by named
    path, publishes to proteus-nolan, and writes the run-log, Field Notes (`## Built`) and SEEN.md lines.
    A FAIL requeues the film once with the check's reasons in the next night's prompt, then parks it;
