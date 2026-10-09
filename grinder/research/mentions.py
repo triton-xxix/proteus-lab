@@ -104,24 +104,38 @@ SUBS = ["SolanaMemeCoins", "memecoins", "CryptoMoonShots", "solana", "pumpfun", 
 CACHE = ROOT + "state/research/reddit/"
 
 
+REDDIT_DOWN = []   # set on the first page that fails every retry; later calls fail fast instead of grinding
+
+
 def reddit_window(sub, after, before):
-    """All posts and comments in one subreddit between two epoch seconds, cached per sub and window."""
+    """All posts and comments in one subreddit between two epoch seconds, cached per sub and window.
+    A page that fails every retry raises instead of returning a short list: on 9 Oct Arctic Shift answered
+    522 for the whole night, the old code cached empty files, and the night read as zero mentions."""
     os.makedirs(CACHE, exist_ok=True)
     path = CACHE + "%s-%d-%d.jsonl" % (sub, after, before)
-    if os.path.exists(path):
+    if os.path.exists(path) and os.path.getsize(path) > 0:
         return [json.loads(l) for l in open(path)]
+    if REDDIT_DOWN:
+        raise RuntimeError("arctic shift down earlier this run: " + REDDIT_DOWN[0])
     items = []
     for kind in ("posts", "comments"):
         cur = after
         for _ in range(40):                                   # 40 pages of 100 per kind at most
-            r = None
+            r, why = None, ""
             for attempt in range(4):
-                r = requests.get(AS + "%s/search" % kind, params={"subreddit": sub, "after": cur, "before": before,
-                                 "limit": 100, "sort": "asc"}, headers=UA, timeout=60)
-                if r.status_code == 200:
-                    break
+                try:
+                    r = requests.get(AS + "%s/search" % kind, params={"subreddit": sub, "after": cur, "before": before,
+                                     "limit": 100, "sort": "asc"}, headers=UA, timeout=60)
+                    if r.status_code == 200:
+                        break
+                    why = "HTTP %d" % r.status_code
+                except requests.RequestException as e:
+                    r, why = None, type(e).__name__
                 time.sleep(5 * (attempt + 1))
-            data = (r.json().get("data") or []) if r is not None and r.status_code == 200 else []
+            if r is None or r.status_code != 200:
+                REDDIT_DOWN.append("%s %s: %s" % (sub, kind, why))
+                raise RuntimeError("arctic shift %s %s: %s" % (sub, kind, why))
+            data = r.json().get("data") or []
             for p in data:
                 items.append({"kind": kind, "t": p.get("created_utc"), "author": p.get("author"),
                               "text": " ".join(str(p.get(k) or "") for k in ("title", "selftext", "body", "url"))})
@@ -143,7 +157,11 @@ def reddit_mentions(mint, symbol, asof):
     tag = re.compile(r"\$%s\b" % re.escape(symbol), re.I) if symbol and len(symbol) >= 3 else None
     hits, authors, first, per = 0, set(), None, {}
     for sub in SUBS:
-        for it in reddit_window(sub, after, before):
+        try:
+            window = reddit_window(sub, after, before)
+        except RuntimeError as e:
+            return {"source": "reddit", "count": None, "authors": None, "detail": "error: %s" % str(e)[:100]}
+        for it in window:
             if mint in it["text"] or (tag and tag.search(it["text"])):
                 hits += 1; authors.add(it["author"]); per[sub] = per.get(sub, 0) + 1
                 first = it["t"] if first is None or (it["t"] and it["t"] < first) else first
