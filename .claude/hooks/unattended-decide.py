@@ -149,7 +149,7 @@ def marker_active(session_id):
 
 def log(session_id, permission_mode, tool, ti, outcome, reason=""):
     try:
-        detail = ti.get("command") or ti.get("file_path") or ti.get("notebook_path") or ti.get("url") or ""
+        detail = ti.get("command") or ti.get("file_path") or ti.get("notebook_path") or ti.get("url") or ti.get("skill") or ""
         path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d") + ".jsonl"
         with open(path, "a") as fh:
             fh.write(json.dumps({
