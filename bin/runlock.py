@@ -5,8 +5,8 @@ Written 9 Oct 2026 for the daytime loop. Until then there was one marker file an
 so nothing stopped a second scheduled run from clobbering the first's binding (its calls would
 fall back to prompting and hang) or racing its pushes. This is the first call every task makes:
 
-  acquire TASK --minutes N   take the lock and write state/unattended/TASK.json (unbound); the
-                             hook binds it to this session on the next tool call. Prints
+  acquire TASK --minutes N   take the lock and write state/unattended/TASK.json, bound to this
+                             session (CLAUDE_CODE_SESSION_ID from the environment). Prints
                              ACQUIRED, or SKIP with who holds it (then the run logs one line and stops).
   release TASK               drop the lock and the task's marker. Safe to call twice.
   status                     who holds it, until when.
@@ -75,9 +75,21 @@ def acquire(task, minutes):
     os.makedirs(MARKER_DIR, exist_ok=True)
     deadline = now + minutes * 60
     write_json(LOCK, {"task": task, "start": now, "deadline": deadline, "pid": os.getppid()})
-    write_json(MARKER_DIR + task + ".json", {"session_id": None, "task": task})
-    print("ACQUIRED %s at %s, deadline %s (%d min). Marker state/unattended/%s.json binds on your next call."
-          % (task, hhmm(now), hhmm(deadline), minutes, task))
+    # Claude Code puts the session id in every Bash call's environment, so the marker is written
+    # already bound to this run. An unbound marker could be taken by any session in the folder that
+    # made a call first, Luke's included (the old single marker had a 15-minute window for that).
+    sid = os.environ.get("CLAUDE_CODE_SESSION_ID")
+    if sid:
+        write_json(MARKER_DIR + task + ".json", {"session_id": sid, "task": task, "bound_at": now})
+        how = "bound to session %s" % sid[:8]
+    else:
+        write_json(MARKER_DIR + task + ".json", {"session_id": None, "task": task})
+        how = "unbound; binds on your next call"
+    print("ACQUIRED %s at %s, deadline %s (%d min). Marker state/unattended/%s.json %s."
+          % (task, hhmm(now), hhmm(deadline), minutes, task, how))
+    if os.environ.get("CLAUDE_CODE_SESSION_ATTENDED") == "1":
+        print("NOTE: this session is attended; from now on the hook answers its calls (allow or deny, "
+              "no prompts) until `runlock.py release %s`." % task)
     return 0
 
 
