@@ -12,8 +12,66 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 175,
+  "count": 181,
   "threads": [
+    {
+      "date": "2026-10-09",
+      "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "A ten-week-old Skool car-flipping community with an unverifiable headline and a US no-money-down playbook",
+      "note": "65 members, 29 dollars a month, classroom hidden",
+      "where": "TRITON-CORE/Research/links/2026-10-09-ai-car-trader-skool.md",
+      "url": "https://www.skool.com/ai-car-trader-9959"
+    },
+    {
+      "date": "2026-10-09",
+      "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "The UK bite on car flipping: trader status by intent, Consumer Rights Act liability on every sale, motor trade insurance, Self Assessment over 1,000 pounds gross",
+      "note": "None of it in the pitch",
+      "where": "TRITON-CORE/Research/links/2026-10-09-ai-car-trader-skool.md",
+      "url": "https://www.skool.com/ai-car-trader-9959"
+    },
+    {
+      "date": "2026-10-09",
+      "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Paying for the community",
+      "note": "No verifiable record, US assumptions",
+      "where": "TRITON-CORE/Research/links/2026-10-09-ai-car-trader-skool.md",
+      "url": "https://www.skool.com/ai-car-trader-9959"
+    },
+    {
+      "date": "2026-10-09",
+      "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
+      "kind": "service",
+      "status": "open",
+      "theme": "A scoped UK test of one flip with the compliance costs priced first, only if Luke wants the lane",
+      "note": "Nothing starts without his word",
+      "where": "TRITON-CORE/Research/links/2026-10-09-ai-car-trader-skool.md",
+      "url": "https://www.skool.com/ai-car-trader-9959"
+    },
+    {
+      "date": "2026-10-09",
+      "subject": "xAI Grok 4.3 as an agent model provider",
+      "kind": "service",
+      "status": "adopted",
+      "theme": "Grok 4.3 as a cheap capable fallback model",
+      "note": "A fallback chain is only real if the second link has credit; a single-vendor chain is one dead card away from silence.",
+      "where": "TRITON-CORE/Agent/daily-logs/2026-10-09.md"
+    },
+    {
+      "date": "2026-10-09",
+      "subject": "xAI Grok 4.3 as an agent model provider",
+      "kind": "service",
+      "status": "intel",
+      "theme": "provider plugins that ship their own catalogue",
+      "note": "Hand-writing a provider block with costs and context windows duplicates what the plugin already knows and drifts from it; read the plugin's own preset and mirror it.",
+      "where": "TRITON-CORE/Agent/daily-logs/2026-10-09.md"
+    },
     {
       "date": "2026-10-08",
       "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
@@ -1702,8 +1760,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 39,
+  "links_count": 40,
   "links": [
+    {
+      "date": "2026-10-09",
+      "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
+      "kind": "service",
+      "where": "TRITON-CORE/Research/links/2026-10-09-ai-car-trader-skool.md",
+      "url": "https://www.skool.com/ai-car-trader-9959",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-08",
       "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
