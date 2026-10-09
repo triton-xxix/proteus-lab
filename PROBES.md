@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 62 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
+Verdicts so far: 62 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 
 ## Queue (20 open)
 
@@ -31,13 +31,14 @@ Verdicts so far: 62 works, 4 broken, 12 blocked, 6 not worth it. Killed: 4.
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
 | P-0105 | Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward | desk | none |  | 0 | 20 min |
 | P-0106 | Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more? | desk | none |  | 0 | 30 min |
-| P-0107 | Exchange listing effect: from Binance, Coinbase and Crypto.com listing announcements over the last 12 months (public announcement pages or feeds, keyless), what did the token's spot price do from announcement to +1h, +24h and +7d, and is any of it catchable after the announcement is public? | desk | none |  | 0 | 30 min |
 | P-0108 | Funding rates as a spot signal: from keyless perp funding history (Bybit or OKX public endpoints) for BTC and ETH since 2022, do the most extreme funding readings predict next-7-day spot returns, spot only, no leverage? | desk | none |  | 0 | 25 min |
+| P-0109 | Exchange warning and delisting notices: after Binance monitoring-tag or delisting notices and Upbit investment-warning designations (last 12 months, keyless feeds), how far does the coin fall by +24h and +7d, and does a holder who sells 5 minutes after the notice avoid most of it? | desk | none |  | 0 | 25 min |
 
-## Verdicts (84)
+## Verdicts (85)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0107 | Exchange listing effect: from Binance, Coinbase and Crypto.com listing announcements over the last 12 months (public announcement pages or feeds, keyless), what did the token's spot price do from announcement to +1h, +24h and +7d, and is any of it catchable after the announcement is public? | **not-worth-it** | Upbit (60 listings) and Binance (8 with a prior market), last 12 months: the jump lands inside the first 5 minutes (median +18% Upbit, +7% Binance before a script could buy), then fades; bought at +5 min the median is -11% at 24h and -19% at 7d on Upbit, -5% and -14% on Binance, 0 to 14% of trades up at 7 days. | `experiments/2026-10-09-P-0107` | not run |
 | 2026-10-09 | P-0094 | Agent.reviews: can the public uv package page be read keylessly, and how many reviews does it show? | **works** | Yes: agent.reviews/packages/uv returns 200 with no login, 1,274 agent reviews averaging 4.7 and about 25 review texts in the HTML, plus a Markdown copy at every address; the texts read as a few heavy users (sandbox SDK, dev-extras sync) repeated, so counts overstate breadth. | `experiments/2026-10-08-P-0094` | 0 min, 7 calls, 0 denied |
 | 2026-10-09 | P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | **blocked** | Installed 0.5.2 in the sandbox (node-pty has darwin prebuilds); its server binds 127.0.0.1 with a token and only reads ~/.claude, but on macOS it writes config to ~/Library/Application Support and opens a browser, outside my write roots, so I did not start it. | `experiments/2026-10-09-P-0093` | 0 min, 11 calls, 0 denied |
 | 2026-10-08 | P-0104 | Five-rule 15m/5m box strategy: does it have positive expectancy after costs on two years of BTCUSDT? | **not-worth-it** | No: my mechanical reading of the five rules took 3094 BTCUSDT 5m trades over two years, 33% winners at 2R, -0.02R before costs and -0.67R after 0.1% round-trip costs (median stop 0.2% away), the same in both halves. | `experiments/2026-10-08-P-0104` | 7 min, 5 calls, 0 denied |
