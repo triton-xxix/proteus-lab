@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 64 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
+Verdicts so far: 65 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 
-## Queue (26 open)
+## Queue (25 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,7 +25,6 @@ Verdicts so far: 64 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | desk | none |  | 0 | 25 min |
-| P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | harvest | none |  | 0 | 25 min |
 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
 | P-0105 | Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward | desk | none |  | 0 | 20 min |
@@ -40,10 +39,12 @@ Verdicts so far: 64 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 | P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | harvest | none |  | 0 | 15 min |
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 
-## Verdicts (87)
+## Verdicts (88)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | **works** | The riso demo built to one self-contained index.html and exported 144 frames at 1080x1920 in 30 s with a synthesised score; ffprobe reads 6.000 s video and audio against a declared 6.0 s and 144 frames. It needed a three-line patch to use the installed Chrome, since Playwright's browser download would write outside my roots. | `experiments/2026-10-09-P-0098` | 2 min, 26 calls, 1 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/experiments/2026-10-09-P-` | | |
 | 2026-10-09 | P-0097 | Knitting pattern PDF viewer that remembers the exact row and repeat count per pattern: one offline HTML file (PDF.js, row highlighter bar, repeat counter, saved per file in localStorage), README, from r/SomebodyMakeThis 8 Oct; check the thread for existing answers first | **works** | Built Row Keeper, one offline 1.4 MB HTML file (PDF.js inlined): headless Chrome twice on one profile rendered a 2-page test PDF, counted row 5 and repeat 1 from five presses, and restored row, repeat and bar on reload; the Reddit thread was unreadable (403, Arctic Shift down), so existing replies are unchecked. | `experiments/2026-10-09-P-0097` | 3 min, 30 calls, 1 denied |
 | | | | | denied: Bash `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless=new --disable-gp` | | |
 | 2026-10-09 | P-0116 | x402: does an unpaid call to a public endpoint return a parseable 402 challenge? | **works** | 21 of 25 endpoints from the keyless Coinbase Bazaar list answered an unpaid call with HTTP 402 and parseable JSON (20 on x402 v2, all on Base, 0.001 to 0.005 USDC a call); 3 were POST-only, 1 was a 404, and 14 of the 25 are one vendor. | `experiments/2026-10-09-P-0116` | 0 min, 7 calls, 0 denied |

@@ -2150,16 +2150,20 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-08",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-09T23:50:01+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-09T23:52:30+0100",
+   "note": "The riso demo built to one self-contained index.html and exported 144 frames at 1080x1920 in 30 s with a synthesised score; ffprobe reads 6.000 s video and audio against a declared 6.0 s and 144 frames. It needed a three-line patch to use the installed Chrome, since Playwright's browser download would write outside my roots.",
+   "artefacts": [
+    "experiments/2026-10-09-P-0098"
+   ],
+   "minutes": 2,
+   "calls": 26,
+   "denied": [
+    "Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/experiments/2026-10-09-P-`"
+   ],
    "luke": false
   },
   {
