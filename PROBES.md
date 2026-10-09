@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 65 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
+Verdicts so far: 66 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 
-## Queue (25 open)
+## Queue (24 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,7 +25,6 @@ Verdicts so far: 65 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | refill | none |  | 0 | 45 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | desk | none |  | 0 | 25 min |
-| P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | harvest | none |  | 0 | 30 min |
 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
 | P-0105 | Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward | desk | none |  | 0 | 20 min |
 | P-0106 | Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more? | desk | none |  | 0 | 30 min |
@@ -39,10 +38,11 @@ Verdicts so far: 65 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 | P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | harvest | none |  | 0 | 15 min |
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 
-## Verdicts (88)
+## Verdicts (89)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0099 | Sniper-bot safety filters: what share of new pump.fun tokens would the mint and freeze checks actually remove? | **works** | On chain via the public RPC, 0 of 40 random pump.fun mints from the Grinder's scans had a live mint or freeze authority (39 of 40 are Token-2022), against 6 and 5 of 40 for other launchpads, so the filter removes almost nothing on pump.fun. The snapshots' rugcheck authority fields were blank for 1,573 of 1,575 mints and have never carried information. | `experiments/2026-10-09-P-0099` | 1 min, 7 calls, 0 denied |
 | 2026-10-09 | P-0098 | cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration match? | **works** | The riso demo built to one self-contained index.html and exported 144 frames at 1080x1920 in 30 s with a synthesised score; ffprobe reads 6.000 s video and audio against a declared 6.0 s and 144 frames. It needed a three-line patch to use the installed Chrome, since Playwright's browser download would write outside my roots. | `experiments/2026-10-09-P-0098` | 2 min, 26 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/experiments/2026-10-09-P-` | | |
 | 2026-10-09 | P-0097 | Knitting pattern PDF viewer that remembers the exact row and repeat count per pattern: one offline HTML file (PDF.js, row highlighter bar, repeat counter, saved per file in localStorage), README, from r/SomebodyMakeThis 8 Oct; check the thread for existing answers first | **works** | Built Row Keeper, one offline 1.4 MB HTML file (PDF.js inlined): headless Chrome twice on one profile rendered a 2-page test PDF, counted row 5 and repeat 1 from five presses, and restored row, repeat and bar on reload; the Reddit thread was unreadable (403, Arctic Shift down), so existing replies are unchecked. | `experiments/2026-10-09-P-0097` | 3 min, 30 calls, 1 denied |
