@@ -6,27 +6,35 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-185 judged over 13 harvest days, 125 kept, 42 testable, 36 queued as probes, 30 with a probe verdict.
+199 judged over 14 harvest days, 133 kept, 46 testable, 44 queued as probes, 36 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0198 | 2026-10-09 | vault | [x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go](https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk) | mechanism | tools-for-strangers | yes | P-0116 |
+| H-0195 | 2026-10-09 | arxiv | [A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization](https://arxiv.org/abs/2610.12183) | mechanism | mechanism-hunting | no: Needs the benchmark harness plus LLM calls across domains; n |  |
+| H-0194 | 2026-10-09 | github | [Jakeschincariol/founder-skill: Eleven free Claude skills that test a business before you l](https://github.com/Jakeschincariol/founder-skill) | both | tools-for-strangers | yes | P-0115 |
+| H-0192 | 2026-10-09 | vault | [Join and extract the four free communities that cover both asks: Emerging Fashion Designer](https://www.skool.com/discovery?q=fashion+design) | mechanism | tools-for-strangers | no: Needs Luke to join each community in an interactive browser  |  |
+| H-0191 | 2026-10-09 | awesome | [4da-systems/4da (new in awesome-mcp-servers)](https://github.com/4da-systems/4da) | mechanism | tools-for-strangers | yes | P-0114 |
+| H-0189 | 2026-10-09 | arxiv | [Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for In](https://arxiv.org/abs/2610.12281) | mechanism | mechanism-hunting | no: Needs 458 trained models and genomics tooling; no keyless sl |  |
+| H-0188 | 2026-10-09 | github | [franzenzenhofer/big-arrow-on-the-screen: Let your AI agents paint big arrows, boxes and te](https://github.com/franzenzenhofer/big-arrow-on-the-screen) | mechanism | tools-for-strangers | yes | P-0113 |
+| H-0186 | 2026-10-09 | vault | [A scoped UK test of one flip with the compliance costs priced first, only if Luke wants th](https://www.skool.com/ai-car-trader-9959) | mechanism | cars | no: A real flip needs money, a car and insurance; no keyless sli |  |
 | H-0184 | 2026-10-08 | vault | [Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week ](https://vimeo.com/1233794507/cf61fad386) | mechanism | none | no: LinkedIn search needs a logged-in account and public pages b |  |
 | H-0182 | 2026-10-08 | youtube | [Pump Fun Sniper Bot (Solana) — Memecoin Trading / Full Tutorial 2026](https://www.youtube.com/watch?v=E0QoMIjVI44) (intel) | mechanism | desk:grinder | yes | P-0099 |
 | H-0180 | 2026-10-08 | github | [cth9191/animate: Procedural animation in any style for Claude Code: short single-file canv](https://github.com/cth9191/animate) | mechanism | tools-for-strangers | yes | P-0098 |
-| H-0178 | 2026-10-08 | vault | [Code the five rules as a freqtrade strategy and score it on the two-year sample and payout](https://www.instagram.com/reel/DbJMHpDMK-1/) | mechanism | mechanism-hunting | yes |  |
+| H-0178 | 2026-10-08 | vault | [Code the five rules as a freqtrade strategy and score it on the two-year sample and payout](https://www.instagram.com/reel/DbJMHpDMK-1/) | mechanism | mechanism-hunting | yes | P-0104 **not-worth-it** |
 | H-0175 | 2026-10-08 | arxiv | [RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing](https://arxiv.org/abs/2610.10507) | mechanism | tech | no: Needs training a router model and the benchmark suites, far  |  |
 | H-0174 | 2026-10-08 | github | [openqodex/openqodex: Open source AI code review for Claude Code and Codex, before you push](https://github.com/openqodex/openqodex) | mechanism | tools-for-strangers | no: The reviewer stage needs a logged-in Claude Code or Codex se |  |
-| H-0172 | 2026-10-08 | vault | [An inducement filter as a variant on the WF-0350 paper test: one further sweep and recover](https://www.instagram.com/reel/DePSq8KIuyj/) | mechanism | mechanism-hunting | yes |  |
-| H-0171 | 2026-10-07 | hn | [Show HN: Agent.reviews – Where AI agents read and write reviews on tools](https://agent.reviews/) | both | open-data | yes | P-0094 |
+| H-0172 | 2026-10-08 | vault | [An inducement filter as a variant on the WF-0350 paper test: one further sweep and recover](https://www.instagram.com/reel/DePSq8KIuyj/) | mechanism | mechanism-hunting | yes | P-0103 **not-worth-it** |
+| H-0171 | 2026-10-07 | hn | [Show HN: Agent.reviews – Where AI agents read and write reviews on tools](https://agent.reviews/) | both | open-data | yes | P-0094 **works** |
 | H-0170 | 2026-10-07 | vault | [Build a mock-up site for the prospect and send a 90-second Loom after a two-line permissio](https://www.youtube.com/watch?v=aidr_Ny1rvI) | mechanism | tools-for-strangers | no: Needs real prospects, outbound messages and replies, not a k |  |
-| H-0169 | 2026-10-07 | awesome | [cvelasquez/agent-workbench (new in awesome-claude-code)](https://github.com/cvelasquez/agent-workbench) | mechanism | tools-for-strangers | yes | P-0093 |
+| H-0169 | 2026-10-07 | awesome | [cvelasquez/agent-workbench (new in awesome-claude-code)](https://github.com/cvelasquez/agent-workbench) | mechanism | tools-for-strangers | yes | P-0093 **blocked** |
 | H-0166 | 2026-10-07 | github | [GTKottman/mortiflix-oss: A motion design studio on your own machine: Claude makes the vide](https://github.com/GTKottman/mortiflix-oss) | mechanism | tools-for-strangers | yes | P-0092 **works** |
 | H-0165 | 2026-10-07 | hn | [Show HN: Durable Actors – OSS Durable Objects with configurable compute](https://github.com/TerseAI/durable-actors) | both | tech | no: Needs a Kubernetes cluster or its runtime set up, beyond a 3 |  |
-| H-0164 | 2026-10-07 | vault | [A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun](https://www.forexfactory.com/) | mechanism | mechanism-hunting | yes |  |
+| H-0164 | 2026-10-07 | vault | [A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun](https://www.forexfactory.com/) | mechanism | mechanism-hunting | yes | P-0102 **works** |
 | H-0161 | 2026-10-07 | arxiv | [MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledg](https://arxiv.org/abs/2610.08327) | mechanism | tech | no: Needs model fine-tuning and medical benchmarks, not a 30 min |  |
-| H-0158 | 2026-10-07 | vault | [Insider cluster-buy signal from the free Form 4 filings page as a paper desk](https://finviz.com/) | mechanism | forecasting | yes |  |
+| H-0158 | 2026-10-07 | vault | [Insider cluster-buy signal from the free Form 4 filings page as a paper desk](https://finviz.com/) | mechanism | forecasting | yes | P-0101 **blocked** |
 | H-0157 | 2026-10-06 | github | [Charlesmpc/by2kb: Forward videos from IM to transcript, Markdown, and your knowledge base ](https://github.com/Charlesmpc/by2kb) | mechanism | tools-for-strangers | yes | P-0068 **broken** |
 | H-0156 | 2026-10-06 | hn | [Show HN: OpenChart – OSS TradingView alternative with your own AI agent](https://github.com/longsurf-ai/openchart) | both | desk:grinder | no: The app is a macOS binary download from a third party and ne |  |
 | H-0155 | 2026-10-06 | vault | [Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to](https://www.instagram.com/reel/Db1USzsMNnZ/) | mechanism | tools-for-strangers | yes | P-0071 **works** |
@@ -140,6 +148,106 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 ## Entries
 
+### H-0198 x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation governance
+2026-10-09, vault, https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk
+
+- **Mechanism:** A server answers an unpaid request with HTTP 402 and a body listing price, asset, network and pay-to address. The client signs a payment authorisation (stablecoin, e.g. USDC) and retries with it in a header; a facilitator verifies and settles it, then the server returns the resource. No per-service signup is needed, only a wallet. The challenge format is public and readable without paying.
+- **Claim:** Per-call payments for agents over plain HTTP, Coinbase-originated and now under Linux Foundation governance.
+- **Testable:** yes. Does an unpaid request to a public x402 endpoint return HTTP 402 with a parseable payment-requirements body (yes/no, list its fields)? Queued as P-0116.
+- **Idea on its own:** sound. Using the long-reserved 402 status with a signed payment header is a clean mechanism; the open question is adoption, not design.
+- **How it would be done:** Find a public x402 resource from the project's documentation or discovery listing and send a plain unpaid GET. Record the status, headers and the requirements JSON, and check them against the spec. Stop there: no wallet is created and nothing is paid. Later, a paper-only client could be built to show how an agent would decide whether a price is worth paying.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** x402 reference repo https://github.com/coinbase/x402 (Spec and example endpoints)
+- **Missing:** A wallet and spending policy, which are Luke's call and not tonight's.
+- **Field Notes line:** x402 turns HTTP 402 into a pay-per-call handshake; the challenge is readable without a wallet, so the format can be checked for free.
+
+### H-0195 A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization
+2026-10-09, arxiv, https://arxiv.org/abs/2610.12183
+
+- **Mechanism:** An LLM agent chooses and calls numerical optimisers (and its own proposals) over a fixed evaluation budget on black-box problems. The benchmark runs five domains under one finite-budget protocol and compares agent, direct LLM and classical optimisers. Findings: extra tools do not reliably help, task semantics help, and a numerical optimiser can absorb gains from the agent's early trajectory.
+- **Claim:** Agentic BBO beats direct LLM methods in all five domains and the best numerical optimisers in four.
+- **Testable:** no. Needs the benchmark harness plus LLM calls across domains; not a 30-minute keyless run. Needs: LLM API budget, the agentic-bbo repo.
+- **Idea on its own:** needs-a-run. Plausible and relevant to parameter tuning, but the benchmark's own claim has not been replicated by anyone here.
+- **How it would be done:** Take one Grinder or Pitch parameter search, give an LLM the first ten evaluations to propose region choices, then hand the history to a standard optimiser such as Optuna and compare against Optuna alone on the same budget. Use identical evaluation counts and a permutation check. The paper's repo supplies the protocol and baselines.
+- **Stack already covers:** freqtrade, Claude Code with skills and sub-agents
+- **To fetch:** agentic-bbo https://github.com/lamda-bbo/agentic-bbo (Benchmark code from the paper); Optuna https://github.com/optuna/optuna (Baseline optimiser to warm-start)
+- **Field Notes line:** Let an LLM warm-start a classical optimiser: the optimiser picks up the agent's early search path and keeps the gain.
+
+### H-0194 Jakeschincariol/founder-skill: Eleven free Claude skills that test a business before you launch it: a board trained on H
+2026-10-09, github, https://github.com/Jakeschincariol/founder-skill
+
+- **Mechanism:** Eleven Claude skills, each a prompt that spawns sub-agents. The board runs three agents, each applying one book's framework to the idea; the consumer panel generates 100 buyer personas with income, habits and an objection and tallies purchase decisions. A few Python tools do deterministic arithmetic such as unit economics and break-even. The panel's answers come from the model's own guesses, not real buyers.
+- **Claim:** Tests a business idea before launch with a board, a CFO and a 100-agent consumer panel, free and MIT.
+- **Testable:** yes. Do the repo's Python tools run with no install and does the CFO break-even figure match a hand calculation on the same inputs (yes/no)? Queued as P-0115.
+- **Idea on its own:** unsound. Synthetic buyers from the same model that wrote the idea will agree with its priors; only the deterministic maths is trustworthy.
+- **How it would be done:** Clone, read the Python tools, run them on a made-up product and check the break-even and margin against a spreadsheet. For the panel, a fair test would score its predicted purchase rate against a known real outcome, such as a product with published conversion. If it cannot beat a naive base rate it is theatre. The useful part to borrow is the unit-economics calculator.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** founder-skill https://github.com/Jakeschincariol/founder-skill (The skill pack and Python tools)
+- **Missing:** Real buyer data to calibrate the panel against.
+- **Field Notes line:** A free skill pack simulates 100 buyers with sub-agents; the buyers are the model's guesses, so only the arithmetic tools can be checked.
+
+### H-0192 Join and extract the four free communities that cover both asks: Emerging Fashion Designers, Rich Off Clothes, RiseWise,
+2026-10-09, vault, https://www.skool.com/discovery?q=fashion+design
+
+- **Mechanism:** Join free Skool communities, read their classroom pages and posts through a logged-in browser pane, and extract course lists, lesson text and video transcripts into notes. Transcripts come from the video host, summaries from a cheaper model reading in groups, and a digest goes to the vault. The access step is a human joining with consent; the rest is reading and summarising.
+- **Claim:** Four free fashion and clothing-brand communities cover both research asks (design and marketing), sized 297 to 1,067 members.
+- **Testable:** no. Needs Luke to join each community in an interactive browser session. Needs: Luke's login and tap to join each community.
+- **Idea on its own:** sound. Reading free community material for personal research is lawful and the extractor pattern already exists.
+- **How it would be done:** Luke taps join on each group in the desktop pane. A browser session lists classroom modules, and the existing transcript pipeline pulls each video's words. Haiku or Sonnet children read a couple of lessons a night and write digests; the parent reads digests only. The output is a per-community note: what is taught, which parts are real practice and which are filler.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, local transcription, Claude Code with skills and sub-agents
+- **Missing:** Luke's membership in each group.
+- **Field Notes line:** Four free Skool fashion groups hold the design and brand-marketing courses Luke wants; extraction only needs his join tap and a reading pass.
+
+### H-0191 4da-systems/4da (new in awesome-mcp-servers)
+2026-10-09, awesome, https://github.com/4da-systems/4da
+
+- **Mechanism:** Scores each incoming item on five axes (codebase context, declared interests, git activity, dependency matches, a held-out learned axis) and surfaces it only if two or more pass; single-axis matches are capped at 28 percent. Survivors go through twelve quality multipliers and then an LLM verifier with a 1 to 5 rubric, run on local Ollama or a user key. The numbers come from a 245-item labelled corpus across nine simulated personas.
+- **Claim:** Rejects 93 percent of content and 98.9 percent of labelled noise, reproducible in one command.
+- **Testable:** yes. Does the repo's one-command benchmark reproduce 98.9 percent noise rejection on its labelled corpus (yes/no, with the number)? Queued as P-0114.
+- **Idea on its own:** sound. Requiring agreement between independent cheap signals before an expensive LLM judge is a sensible gate, and the benchmark is falsifiable.
+- **How it would be done:** Clone the repo, find the benchmark section's command and run it in the sandbox, then compare the printed rejection numbers to the README. Separately, copy the two-signal gate idea into harvest.py as a pre-filter ahead of the Sonnet judge to cut candidates. The corpus is self-labelled, so a fair test would also score a small hand-labelled set from Proteus's own harvest. Rust build time is the main risk to the 30 minutes.
+- **Stack already covers:** Ollama with a qwen model, Claude Code with skills and sub-agents
+- **To fetch:** 4DA https://github.com/4da-systems/4da (Repo with the benchmark); Rust toolchain (rustup) https://rustup.rs/ (Likely needed to build the benchmark)
+- **Field Notes line:** A feed filter that only shows an item if two independent signals agree, claiming 98.9 percent of labelled noise rejected; the benchmark is checkable.
+
+### H-0189 Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide V
+2026-10-09, arxiv, https://arxiv.org/abs/2610.12281
+
+- **Mechanism:** A planner LLM chooses which evidence source to query next given current uncertainty, but every observation is interpreted by a deterministic verifier, and the system may abstain. Biology models (458 DNABERT binding models) and real databases (ADASTRA allele-specific binding, JASPAR motifs, ENCODE cCRE) supply the numbers; the LLM never invents evidence. Compared with a fixed-priority planner, the LLM reaches the same verdicts with fewer tool calls by skipping evidence that cannot resolve the claim.
+- **Claim:** Four divergent investigation paths for four transcription factors at one variant; the LLM planner matches fixed-order verdicts with fewer calls.
+- **Testable:** no. Needs 458 trained models and genomics tooling; no keyless slice fits 30 minutes. Needs: DNABERT TF models, genomics data access.
+- **Idea on its own:** sound. Separating deterministic checking from LLM planning, with an abstain option, is a sound pattern for any desk that must not hallucinate evidence.
+- **How it would be done:** The pattern ports directly: a planner chooses the next data pull, a script computes a pass/fail or abstain on each result, and only verified numbers reach the write-up. For the Pitch or Grinder that means the LLM proposes which feed to check and a coded rule judges it. Build it as a small wrapper around existing readers with an explicit abstain state logged per step. The genomics content itself would need a domain person.
+- **Stack already covers:** Claude Code with skills and sub-agents, football-data and a Dixon-Coles paper desk (the Pitch), GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** ADASTRA allele-specific binding database https://adastra.autosome.org/ (Public data source the paper queries); JASPAR https://jaspar.elixir.no/ (Open TF motif database)
+- **Missing:** A domain-neutral verifier template with an abstain state.
+- **Field Notes line:** Keep the LLM as planner only: a deterministic verifier checks every observation and the agent may abstain, which cut tool calls without changing verdicts.
+
+### H-0188 franzenzenhofer/big-arrow-on-the-screen: Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI
+2026-10-09, github, https://github.com/franzenzenhofer/big-arrow-on-the-screen
+
+- **Mechanism:** A single Swift binary opens a transparent, click-through window above all Spaces and draws an arrow and label. To point at a named control it queries the macOS Accessibility tree for an element by title and role in a given app, reads its on-screen frame, and aims the arrow there. Drawing itself needs no permission; finding elements by name needs the Accessibility grant. It removes itself after a timeout.
+- **Claim:** Lets an AI agent paint arrows and text on the Mac screen to guide a human click, with no daemon or telemetry.
+- **Testable:** yes. Does the repo build with swift on this Mac and does a coordinate-based arrow draw and self-remove within its timeout (yes/no)? Queued as P-0113.
+- **Idea on its own:** sound. Reading element frames from the accessibility tree and overlaying a window is a well-understood, low-risk mechanism.
+- **How it would be done:** Clone the repo into the sandbox and build with swift build. Run the coordinate form of the draw command with a short timeout and confirm by screenshot that the overlay appears, passes clicks through and disappears. Then wire it as a skill so an interactive session can point Luke at a permission dialog. The element-name form needs an Accessibility grant, which stays a human step.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** big-arrow-on-the-screen https://github.com/franzenzenhofer/big-arrow-on-the-screen (The CLI and skill itself); Swift toolchain (Xcode command line tools) https://developer.apple.com/xcode/ (Needed to build the binary)
+- **Field Notes line:** A tiny Mac tool lets an agent draw a click-through arrow on screen to point a human at the exact button, using the accessibility tree.
+
+### H-0186 A scoped UK test of one flip with the compliance costs priced first, only if Luke wants the lane
+2026-10-09, vault, https://www.skool.com/ai-car-trader-9959
+
+- **Mechanism:** Buy an undervalued used car, relist it at a higher price, and pocket the spread. AI prompts are used to pull listings, estimate resale value from comparable sold prices, and write the advert and haggling messages. In the UK the legal wrapper matters: repeat buying to resell makes you a trader, sales carry Consumer Rights Act duties (30-day right to reject, six-month fault presumption), and moving stock needs motor trade insurance. The edge is price discovery, not the prompts.
+- **Claim:** A Skool course says AI prompts let you flip cars part time, headlined by 100 million dollars in trades.
+- **Testable:** no. A real flip needs money, a car and insurance; no keyless slice answers whether it makes money. Needs: Capital for one car, motor trade insurance quote, a listings source that allows reading.
+- **Idea on its own:** needs-a-run. Spread-based flipping is real but margins in the UK are thin once insurance, fees and return liability are priced in.
+- **How it would be done:** Pull sold-price and asking-price data for one model range from public listings and build a simple fair-value table by age and mileage. Flag listings priced a set percentage under fair value, then log what they later sold at (a paper flip book, committed before outcomes). Price the fixed costs first: trade insurance quote, MOT, valet, advert fees, a warranty reserve for the six-month fault presumption. Only if the paper book clears those costs would one real car be bought. A hired person would do the viewing, the mechanical check and the handover, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** DVLA Vehicle Enquiry Service API https://developer-portal.driver-vehicle-licensing.api.gov.uk/ (Free-tier lookup of tax and MOT status to screen listings (needs a key, so a later-night fetch)); GOV.UK MOT history data https://www.gov.uk/check-mot-history (Mileage and failure history to spot clocked or problem cars)
+- **Missing:** A legal listings feed and a view-and-inspect person; nobody has a price table for UK used cars yet.
+- **Field Notes line:** A UK car flip is a pricing-spread business wrapped in trader law; the legal costs, not the AI prompts, decide whether it pays.
+
 ### H-0184 Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week to feed a manual routine
 2026-10-08, vault, https://vimeo.com/1233794507/cf61fad386
 
@@ -179,7 +287,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 - **Mechanism:** Five fully stated rules: a 15m bias, a 5m impulse box where a gap exists between candles one and three, a break of the prior low and return to the box, entry when the second candle closes past the first, stop at the first candle and take profit at 2R. Everything is derived from OHLC candles on two timeframes. The vault already has a two-year sample and a payout bar to score against.
 - **Claim:** An Instagram trader says this five-rule box setup is a reliable intraday entry, offering no record.
-- **Testable:** yes. Over two years of public BTCUSDT 5m and 15m candles, does the five-rule strategy have positive expectancy after 0.1% round-trip costs, and does it beat shuffled-entry baselines? Not queued (daily cap).
+- **Testable:** yes. Over two years of public BTCUSDT 5m and 15m candles, does the five-rule strategy have positive expectancy after 0.1% round-trip costs, and does it beat shuffled-entry baselines? Queued as P-0104.
 - **Idea on its own:** needs-a-run. Fully specified rules can be tested cheaply, and most such setups fail after costs, so only a run settles it.
 - **How it would be done:** Download 15m and 5m klines from a public exchange API, align timeframes without lookahead, and code the rules as a freqtrade strategy or a plain pandas backtest. Ambiguities (what counts as the bias, the gap definition) get fixed up front and written down before the results are seen. Report trade count, win rate, expectancy after costs and a shuffled-entry baseline. Then score the equity curve against the payout bar the vault already uses.
 - **Stack already covers:** freqtrade
@@ -216,7 +324,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 - **Mechanism:** After a market structure shift (a break of a recent swing high or low), the filter refuses to enter until price makes one further sweep of a nearby swing point and then closes back inside the range. It is defined purely from candle highs, lows and closes, so it is a boolean gate that can sit in front of any entry rule. Nothing in the source gives a hit rate, so the only evidence is whatever a paper run produces.
 - **Claim:** A mentor says waiting for one more liquidity sweep after the structure shift gives a better entry than entering on the shift itself.
-- **Testable:** yes. On the last 90 days of public BTCUSDT 5m candles, does the entry-after-extra-sweep variant have a higher win rate and expectancy than entry on the shift alone, over at least 30 signals each? Not queued (daily cap).
+- **Testable:** yes. On the last 90 days of public BTCUSDT 5m candles, does the entry-after-extra-sweep variant have a higher win rate and expectancy than entry on the shift alone, over at least 30 signals each? Queued as P-0103.
 - **Idea on its own:** needs-a-run. The rule is precisely definable from candles but has no evidence behind it, and swing-point definitions leave room for overfitting.
 - **How it would be done:** Pull 5m candles from a public exchange endpoint (Binance or Bybit klines, no key). Write swing high and low detection with a fixed lookback, then define the structure shift as a close beyond the last swing. Code two variants: enter at the shift, or enter only after one further sweep of a swing and a close back inside. Use a fixed stop and 2R target for both so only the filter differs. Count signals, win rate and expectancy, with a shuffled-entry baseline for luck. Freqtrade can host it, but a plain pandas script is quicker for a first pass.
 - **Stack already covers:** freqtrade
@@ -290,7 +398,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 - **Mechanism:** A public weekly JSON calendar lists scheduled macro events with a low, medium or high impact tag and a timestamp. A filter blocks new entries and optionally flattens positions inside a window around high-impact USD events such as CPI, FOMC and payrolls. It works only if volatility around those events is reliably higher and the bot loses more there than elsewhere, which the paper record can show.
 - **Claim:** A free calendar feed can drive a news filter for the S1 crypto bot, scored on the paper record.
-- **Testable:** yes. Is BTC's mean absolute return in the hour after high-impact USD events at least 1.5 times its all-hours baseline over the last 12 months? Not queued (daily cap).
+- **Testable:** yes. Is BTC's mean absolute return in the hour after high-impact USD events at least 1.5 times its all-hours baseline over the last 12 months? Queued as P-0102.
 - **Idea on its own:** needs-a-run. Event-window volatility is well known, but whether skipping entries improves this bot's results is untested.
 - **How it would be done:** Pull the weekly calendar JSON (keyless) and keep a rolling archive of high-impact USD events as they appear; for history, list the 12 months of FOMC, CPI and NFP dates by hand from public schedules. Fetch hourly BTC candles from a public exchange endpoint and compute absolute return in the event hour versus all hours. Then replay the S1 paper trades with entries inside the window removed and compare PnL. No hire needed; the only manual part is the historical date list.
 - **Stack already covers:** launchd long-running pollers, freqtrade
@@ -315,7 +423,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 
 - **Mechanism:** US insiders must file Form 4 within two business days of a trade, and the filings are public on SEC EDGAR as XML. A cluster-buy signal counts open-market purchases (transaction code P) by three or more distinct insiders at one issuer inside a short window, then measures forward returns against the index. The numbers come from the filings themselves plus a free daily price series; finviz is only a viewer over the same EDGAR data.
 - **Claim:** Insider cluster buys show small documented positive drift after filing, using free daily data.
-- **Testable:** yes. Do EDGAR Form 4 cluster buys (3+ insiders, code P, 14-day window) from 2025 beat SPY over the next 30 trading days, yes/no and by how many percentage points on average? Not queued (daily cap).
+- **Testable:** yes. Do EDGAR Form 4 cluster buys (3+ insiders, code P, 14-day window) from 2025 beat SPY over the next 30 trading days, yes/no and by how many percentage points on average? Queued as P-0101.
 - **Idea on its own:** needs-a-run. The effect is documented in academic work but shrinks after costs and in small caps, so only a run on recent data says if it survives.
 - **How it would be done:** Pull the EDGAR daily or quarterly index of Form 4 filings with a descriptive User-Agent header (no key), parse the XML for code P non-derivative transactions, and group by issuer in rolling 14-day windows. Fetch daily closes from a keyless source such as Stooq CSVs for each flagged ticker and for SPY. Log each cluster as a paper entry on the filing date plus one trading day, committed before outcomes, and score at 30 and 60 days. A hired person would only be needed to sanity-check ticker mapping and delisted names; a script covers the rest.
 - **Stack already covers:** launchd long-running pollers, Dixon-Coles paper desk pattern (ledger and scoring approach)
@@ -1527,12 +1635,15 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0198 | 2026-10-09 | x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go | open | sound | yes | P-0116 |
+| H-0192 | 2026-10-09 | Join and extract the four free communities that cover both asks: Emerging Fashion Designer | open | sound | no |  |
+| H-0186 | 2026-10-09 | A scoped UK test of one flip with the compliance costs priced first, only if Luke wants th | open | needs-a-run | no |  |
 | H-0184 | 2026-10-08 | Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week  | open | needs-a-run | no |  |
-| H-0178 | 2026-10-08 | Code the five rules as a freqtrade strategy and score it on the two-year sample and payout | open | needs-a-run | yes |  |
-| H-0172 | 2026-10-08 | An inducement filter as a variant on the WF-0350 paper test: one further sweep and recover | open | needs-a-run | yes |  |
+| H-0178 | 2026-10-08 | Code the five rules as a freqtrade strategy and score it on the two-year sample and payout | open | needs-a-run | yes | P-0104 **not-worth-it** |
+| H-0172 | 2026-10-08 | An inducement filter as a variant on the WF-0350 paper test: one further sweep and recover | open | needs-a-run | yes | P-0103 **not-worth-it** |
 | H-0170 | 2026-10-07 | Build a mock-up site for the prospect and send a 90-second Loom after a two-line permissio | open | needs-a-run | no |  |
-| H-0164 | 2026-10-07 | A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun | open | needs-a-run | yes |  |
-| H-0158 | 2026-10-07 | Insider cluster-buy signal from the free Form 4 filings page as a paper desk | open | needs-a-run | yes |  |
+| H-0164 | 2026-10-07 | A high-impact news filter for the S1 crypto bot, skip or flatten entries in a window aroun | open | needs-a-run | yes | P-0102 **works** |
+| H-0158 | 2026-10-07 | Insider cluster-buy signal from the free Form 4 filings page as a paper desk | open | needs-a-run | yes | P-0101 **blocked** |
 | H-0155 | 2026-10-06 | Getting a video into an agent as scene-change frames plus transcript, or via a bare URL to | open | sound | yes | P-0071 **works** |
 | H-0150 | 2026-10-06 | Buying real human UGC clips from marketplaces and reselling them inside a client retainer | open | sound | no |  |
 | H-0144 | 2026-10-06 | A 10 to 30 pound a day local lead-gen test for one Neptune client using the course build a | open | needs-a-run | no |  |
@@ -1565,6 +1676,18 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0127 | 2026-10-09 | [x402 reference repo](https://github.com/coinbase/x402) | Spec and example endpoints | H-0198 (x402 per-call payment rails for agents, Coinbase-o) | shelf |
+| T-0126 | 2026-10-09 | [Optuna](https://github.com/optuna/optuna) | Baseline optimiser to warm-start | H-0195 (A Closer Look at Agentic BBO: Benchmarking LLM Age) | shelf |
+| T-0125 | 2026-10-09 | [agentic-bbo](https://github.com/lamda-bbo/agentic-bbo) | Benchmark code from the paper | H-0195 (A Closer Look at Agentic BBO: Benchmarking LLM Age) | shelf |
+| T-0124 | 2026-10-09 | [founder-skill](https://github.com/Jakeschincariol/founder-skill) | The skill pack and Python tools | H-0194 (Jakeschincariol/founder-skill: Eleven free Claude ) | shelf |
+| T-0123 | 2026-10-09 | [Rust toolchain (rustup)](https://rustup.rs/) | Likely needed to build the benchmark | H-0191 (4da-systems/4da (new in awesome-mcp-servers)) | shelf |
+| T-0122 | 2026-10-09 | [4DA](https://github.com/4da-systems/4da) | Repo with the benchmark | H-0191 (4da-systems/4da (new in awesome-mcp-servers)) | shelf |
+| T-0121 | 2026-10-09 | [JASPAR](https://jaspar.elixir.no/) | Open TF motif database | H-0189 (Unlocking the Regulatory Genome by ARGUS: An Evide) | shelf |
+| T-0120 | 2026-10-09 | [ADASTRA allele-specific binding database](https://adastra.autosome.org/) | Public data source the paper queries | H-0189 (Unlocking the Regulatory Genome by ARGUS: An Evide) | shelf |
+| T-0119 | 2026-10-09 | [Swift toolchain (Xcode command line tools)](https://developer.apple.com/xcode/) | Needed to build the binary | H-0188 (franzenzenhofer/big-arrow-on-the-screen: Let your ) | shelf |
+| T-0118 | 2026-10-09 | [big-arrow-on-the-screen](https://github.com/franzenzenhofer/big-arrow-on-the-screen) | The CLI and skill itself | H-0188 (franzenzenhofer/big-arrow-on-the-screen: Let your ) | shelf |
+| T-0117 | 2026-10-09 | [GOV.UK MOT history data](https://www.gov.uk/check-mot-history) | Mileage and failure history to spot clocked or problem cars | H-0186 (A scoped UK test of one flip with the compliance c) | shelf |
+| T-0116 | 2026-10-09 | [DVLA Vehicle Enquiry Service API](https://developer-portal.driver-vehicle-licensing.api.gov.uk/) | Free-tier lookup of tax and MOT status to screen listings (needs a key, so a later-night fetch) | H-0186 (A scoped UK test of one flip with the compliance c) | shelf |
 | T-0115 | 2026-10-08 | [puppeteer](https://pptr.dev/) | Headless browser frame capture, if not bundled. | H-0180 (cth9191/animate: Procedural animation in any style) | shelf |
 | T-0114 | 2026-10-08 | [cth9191/animate](https://github.com/cth9191/animate) | The skill and demo pieces. | H-0180 (cth9191/animate: Procedural animation in any style) | shelf |
 | T-0113 | 2026-10-08 | [RECAST paper](https://arxiv.org/abs/2610.10507) | Check for linked code or data. | H-0175 (RECAST: Learning to Compute the Right Context thro) | shelf |
@@ -1685,6 +1808,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0199 | 2026-10-09 | hn | [Show HN: Apogee: Rebuilding Mozilla's Orbit, fully local and private](https://github.com/darshi1337/apogee) | Generic local summariser extension using Ollama and WebGPU; no new mechanism. |
+| H-0197 | 2026-10-09 | awesome | [a1-x-tech/mcp-google-crux (new in awesome-mcp-servers)](https://github.com/a1-x-tech/mcp-google-crux) | Thin wrapper over a public API that needs a Google Cloud key. |
+| H-0196 | 2026-10-09 | youtube | [How Expected Goals xG Actually Works](https://www.youtube.com/watch?v=h32AlMsWV-o) | Transcript blocked, and xG explainers carry no new mechanism for the Pitch. |
+| H-0193 | 2026-10-09 | hn | [Show HN: Edi Life OS – self-hosted life dashboard with an MCP server for AI](https://github.com/edrisranjbar/lifeos) | A generic self-hosted dashboard with an MCP wrapper; no new mechanism. |
+| H-0190 | 2026-10-09 | youtube | [Local AI on a Mac Is a Waste of Money (M5 Pro vs a $20 Subscription)](https://www.youtube.com/watch?v=kLNDGwaHohE) | Transcript blocked and the title is an opinion claim with no visible mechanism. |
+| H-0187 | 2026-10-09 | hn | [Yandex Takes a Second Data Center Hit in 48 Hours](https://united24media.com/war-in-ukraine/yandex-takes-a-second-data-center-hit-in-48-hours-now-its-biggest-russian-site-is-damaged-23277) | War news about a data centre strike with no mechanism to test. |
 | H-0185 | 2026-10-08 | hn | [Show HN: TerrainSR – fast, realistic heightmap upscaling model](https://huggingface.co/joe-gibbs/terrainsr) | Game terrain upscaling model, unrelated to any desk or interest. |
 | H-0183 | 2026-10-08 | awesome | [larcane97/clausona (new in awesome-claude-code)](https://github.com/larcane97/clausona) | Account profile switcher with a vault verdict and no new mechanism beyond config-directory symlinks. |
 | H-0181 | 2026-10-08 | arxiv | [LOCAA: An Agentic System for Automated Lossy Compressor Tuning](https://arxiv.org/abs/2610.10487) | Narrow to scientific compressor tuning, and the agent-with-memory pattern is already common. |

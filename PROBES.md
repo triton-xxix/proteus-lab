@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 62 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 
-## Queue (23 open)
+## Queue (27 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -36,6 +36,10 @@ Verdicts so far: 62 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 | P-0110 | Pre-listing, shorter hold: backtest holding only the three strongest signals (new Bybit spot, Coinbase trading start, Binance spot announcement) for 7 days instead of a standing 14-day list, fitted Oct to Mar, judged Apr to Sep, same costs and benchmarks as experiments/2026-10-09-prelisting/backtest.py | desk | none |  | 0 | 30 min |
 | P-0111 | Pre-listing, Korean chatter: find a keyless Korean source (DCInside coin gallery, Naver, Coinpan) with dated posts and test whether ticker mentions rise in the 14 days before Upbit KRW listings against matched controls, as xmentions.py did for X | desk | none |  | 0 | 40 min |
 | P-0112 | Pre-listing, cheaper X counts: the 5-pair X case-control (5 of 5 listed coins grew chatter more) cost 6.23 USD; find a way to count cashtag posts per day for under 0.05 USD a coin so it can run on 30 pairs and nightly | desk | none |  | 0 | 30 min |
+| P-0113 | bigarrow: does it build here and draw a click-through arrow that removes itself? | harvest | none |  | 0 | 20 min |
+| P-0114 | 4DA: does its benchmark command reproduce 98.9 percent noise rejection? | harvest | none |  | 0 | 30 min |
+| P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | harvest | none |  | 0 | 15 min |
+| P-0116 | x402: does an unpaid call to a public endpoint return a parseable 402 challenge? | vault | none |  | 0 | 15 min |
 
 ## Verdicts (85)
 

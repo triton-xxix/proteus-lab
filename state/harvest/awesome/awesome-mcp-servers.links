@@ -29,6 +29,7 @@
 3knightcz/codebeamer-mcp
 402signalhq/402signal
 411sst/gst-einvoice-mcp
+4da-systems/4da
 4dmrkey/cryptopolitan-mcp
 4everland/4everland-hosting-mcp
 5dive-ai/5dive-mcp
@@ -42,7 +43,14 @@
 9hannahnine-jpg/arc-gate-mcp
 a-25/ios-mcp-code-quality-server
 a-y-ibrahim/after-effects-mcp
+a1-x-tech/mcp-google-crux
+a1-x-tech/mcp-google-custom-search
+a1-x-tech/mcp-google-docs
+a1-x-tech/mcp-google-drive
 a1-x-tech/mcp-google-forms
+a1-x-tech/mcp-google-gmail
+a1-x-tech/mcp-google-search-console
+a1-x-tech/mcp-google-slides
 a1-x-tech/mcp-google-tagmanager
 a1-x-tech/mcp-yandex-audience
 a1-x-tech/mcp-yandex-dostavka
@@ -112,7 +120,9 @@ aeoess/agent-passport-mcp
 aeoess/mingle-mcp
 aetherwave-studio/aetherwave-mcp
 aethynio/aethyn-browser-mcp
+aetumiapp/aetumi-mcp
 afairai/afair
+afanasenkoa/instavision-mcp
 afghanfansmedia-ai/songcheck-mcp
 afiliptsov/pickadive-mcp
 afshinator/mcp-server-pexels
@@ -121,6 +131,7 @@ aganium/agenium
 agaveis/hiberden-mcp
 agent-blueprint/mcp-server
 agent-easy-use/mobile-easy-use
+agent360dk/browser-mcp
 agentavow/agentavow
 agentbase1/mcp-server
 agentbodegastore/agentbodega
@@ -184,6 +195,8 @@ aiops-tools/k8s-aiops
 aiops-tools/nutanix-aiops
 aiops-tools/postgres-aiops
 airblackbox/air-blackbox-mcp
+airblock2026/bit-monk-signal-mcp
+airsaiga/precis
 aisa-public/aisa-mcp-server
 aisenseapi/aamio-python
 aishwaryshrivastav/vibe-testing
@@ -271,6 +284,7 @@ amineelkouhen/mcp-cockroachdb
 amirdaraee/luxembourg-mcp
 amitesh-m/wealthville-integrations
 ammawla/encode-toolkit
+amos689/paper-preflight
 anaisbetts/mcp-installer
 anaisbetts/mcp-youtube
 ananddtyagi/gif-creator-mcp
@@ -283,6 +297,7 @@ andrelaptenok/redmine-mcp-stdio
 andrelyl/memkin
 andresdefi/zerodust
 andresolbach/nodriver-mcp-server
+andrewbabu/loggly-mcp
 andrewchmr/mxprobe
 andrewschreiber/desktopinsights-mcp
 andybrandt/mcp-simple-arxiv
@@ -293,6 +308,7 @@ andyliszewski/grounding-ai
 andyliszewski/webcrawl-mcp
 andypgray/resharper-cli-mcp
 andywang1688/sql-query-mcp
+aneal99/datafordeler-dar-mcp
 angelthebestone/normativa-colombiana-mcp
 angheljf/nyt
 anhmtk/agentshare-mcp
@@ -337,6 +353,7 @@ apiarya/wemo-mcp-server
 apify/actors-mcp-server
 apiguru-app/agent-kit
 apinetwork/piapi-mcp-server
+apipriceindex/mcp
 apireno/domshell
 apogeoapi/apogeoapi-mcp
 appcreationsca/bumpguard-mcp
@@ -448,6 +465,7 @@ automation-ai-labs/mcp-link
 automationsquados/mcp-samsara
 autonomad1/autonomad-travel
 autonsol/sol-mcp
+av-labs-co/cos-codex-bridge
 avansaber/tailtest-cline
 avazbek22/devprojex
 avierovich/openpitch
@@ -469,9 +487,11 @@ ayhammouda/python-docs-mcp-server
 aymericzip/intlayer
 ayushagrawal288/memex
 aywengo/kafka-schema-reg-mcp
+azeemkafridi/bulkpublish-api
 azer/react-analyzer-mcp
 azeth-protocol/mcp-server
 azmartone67/dchub-mcp-server
+b52tot/workbuddy-board
 bababoi-bibilabu/agent-mq
 babyblueviper1/invinoveritas
 back1ply/agent-skill-loader
@@ -539,6 +559,7 @@ bigsy/clojars-mcp-server
 billster45/mcp-chatgpt-responses
 billy12151/memory-arbiter-mcp
 bintocher/mcp-superset
+birkskyum/maplibre-mcp
 bishop81/imagedimensions-mcp
 bishop81/wpgoldmine-mcp
 bit2beat/bitrix24-mcp
@@ -551,6 +572,7 @@ bivex/kanboard-mcp
 blackwell-systems/agent-lsp
 blackwhite084/playwright-plus-python-mcp
 blakerouse/ssh-mcp
+blazephoenixxyz-crypto/blazephoenix-mcp
 blazickjp/arxiv-mcp-server
 blazingcdn/blazingcdn-mcp
 blinkingbit-oss/execkit
@@ -572,6 +594,7 @@ bothireagent/bothiremcpserver
 botmonster/image2svg-mcp
 botwallet-co/mcp
 bouncewatch/mcp
+bourhaouta/vscode-tailwindshades
 box/mcp-server-box-remote
 boxboxmari/my-pi
 boy-offi9-inc/hexforge-gateway
@@ -659,6 +682,7 @@ cavinooo/claude-find
 ccf/agentcairn
 cct15/war-dashboard-data
 cdeust/cortex
+cehha79/aka-recht
 ceki-me/mcp-server
 celineycn/quantdata-plugin
 centralmind/gateway
@@ -681,6 +705,7 @@ chatmcp/mcp-server-chatsum
 checkra1neth/xbird-skill
 chefcohen/corroborate-mcp
 chemiguel23/memorymesh
+chenxiachan/thoughtdag
 chevalgrand520/local-gpu-imagegen
 chigwell/telegram-mcp
 childrentime/reactuse
@@ -760,6 +785,7 @@ comet-ml/opik-mcp
 cometchat/docs-mcp
 comparedge/mcp-server-comparedge
 competlab/competlab-mcp-server
+complyeaze/bridge
 conan-io/conan-mcp
 conarti/mattermost-mcp
 conechoai/openai-websearch-mcp
@@ -941,6 +967,7 @@ devdizzle/gammarips-mcp
 developyn/laver-mcp
 devemberx/mcp-server-polarion
 devflowinc/trieve
+devhusnainai/zerodom
 devilcoder01/weather-mcp-server
 devopam/mcpg
 devroopsaha744/texmcp
@@ -990,9 +1017,11 @@ dockndevai/mcp-azure
 dockndevai/mcp-azure-devops
 dockndevai/mcp-clickhouse
 dockndevai/mcp-debezium
+dockndevai/mcp-grafana
 dockndevai/mcp-kafka
 dockndevai/mcp-keycloak
 dockndevai/mcp-kubernetes
+dockndevai/mcp-laya
 dockndevai/mcp-mac-control
 dockndevai/mcp-macos
 dockndevai/mcp-oci
@@ -1021,6 +1050,7 @@ dorukardahan/twitterapi-docs-mcp
 dot-realitytest/obsidian-codex-mcp
 dotemacs/domain-lookup-mcp
 doteyeso-ops/mcp-server-vibes-coded
+double2dev/boltpatternhq-mcp
 doublegate/cyberchef-mcp
 doucs91/hivelore
 douglasborthwick-crypto/mcp-server-insumer
@@ -1178,6 +1208,7 @@ fantasylab-ai/aurora
 fantomaskarus1/telegram-bot-mcp
 faouzi122/arsenal-quant-project
 fareastai/feode-mcp
+farenhytee/database-sentinel
 farukkolip/instapdown-mcp
 farukkolip/tiktapdown-mcp
 farukkolip/xtapdown-mcp
@@ -1187,10 +1218,12 @@ fatenava/fatenava-mcp
 fatwang2/search1api-mcp
 fayandxan/spectrawl
 faze79/wpfvisualtreemcp
+fbossiere/proton-safe-mcp
 fclairamb/solidping
 fdcommercial/property-finance-mcp
 feedthrough/feedthrough
 felixpg13-glitch/spendshield
+fenbs-ai/fenbs-mcp
 fenghaochang/loreroom
 ferdousbhai/investor-agent
 ferdousbhai/tasty-agent
@@ -1210,6 +1243,7 @@ filippopilo/cortex-connector
 findsaunaplunge/mcp
 finlynq/finlynq
 finmap-org/mcp-server
+finology-tech/finology-mcp
 firecrawl/firecrawl-mcp-server
 firelock-ai/kin
 fireostendere/mcp_diptrace
@@ -1241,6 +1275,7 @@ forever-healthy/evipedia-mcp
 forevertools/kiprio-mcp
 forgemeshlabs/anomaly-mcp
 forgemeshlabs/aso-audit-mcp
+forgemeshlabs/aso-score-mcp
 forgemeshlabs/coinopai-mcp
 forgemeshlabs/disruption-intelligence-mcp
 forgemeshlabs/gov-transparency-mcp
@@ -1271,6 +1306,7 @@ freema/mcp-design-system-extractor
 freema/mcp-gsheets
 freema/openclaw-mcp
 freepeak/db-mcp-server
+frelo/fvc-mcp
 friendlygeorge/docker-mcp-server
 frihet-io/frihet-mcp
 frndchagas/coolify-mcp
@@ -1308,6 +1344,7 @@ gavelcode/gavel
 gavelin-ai/mcp
 gavxm/ani-mcp
 gba3124/anyhook-mcp
+gbatistuta0/appfactory
 gblinproject/gblin-mcp
 gbrigandi/mcp-server-cortex
 gbrigandi/mcp-server-thehive
@@ -1353,6 +1390,7 @@ getrephonic/rephonic-mcp
 getsentry/sentry-mcp
 giacomomaria81/scorm-mcp-server
 gigamori/mcp-run-sql-connectorx
+gigatypeaura/memecorp-mcp
 giggal-ai/giggal-mcp
 gingugu/gingugu
 giskard09/argentum-core
@@ -1386,6 +1424,7 @@ goldentrii/agentrecall
 goldmembrane/cleaner-code
 gomarble-ai/facebook-ads-mcp-server
 gomarble-ai/google-ads-mcp-server
+gomission/mcp
 gondola-ai/gondola-mcp
 gonnagetapower/kelvia-mcp
 goodmeta/intelligence-mcp
@@ -1503,10 +1542,13 @@ hasdata/amazon-mcp
 hasdata/bing-mcp
 hasdata/booking-mcp
 hasdata/facebook-mcp
+hasdata/google-hotels-mcp
+hasdata/google-images-mcp
 hasdata/google-maps-mcp
 hasdata/google-scholar-mcp
 hasdata/google-trends-mcp
 hasdata/hasdata-mcp
+hasdata/indeed-mcp
 hasdata/instagram-mcp
 hasdata/redfin-mcp
 hasdata/tiktok-mcp
@@ -1704,6 +1746,7 @@ instantstudioai/instantclips-mcp
 integrallis/rankcli-mcp-server
 integromat/make-mcp-server
 intentos-labs/beeper-mcp
+inth3shadows/runecho
 intruder-io/intruder-mcp
 inventer-dev/mcp-internet-speed-test
 investorphem/abapay
@@ -1731,6 +1774,7 @@ itsalissonsilva/modelsafetymcp
 iunera/druid-mcp-server
 ivanamador/vercel-ai-docs-mcp
 ivanmurzak/unity-mcp
+ivenkoolab/loci
 ivnvxd/mcp-server-odoo
 ivo-toby/contentful-mcp
 ivy-innovation/cubelife
@@ -1764,6 +1808,7 @@ jaimenbell/rails-mcp
 jaimenbell/vllm-ops-mcp
 jaipandya/producthunt-mcp-server
 jakzaizzat/cukaimax-agent
+jamalofski/conv2pdf-mcp
 jamalofski/mailprobe-mcp
 jambozx/onlinecybertools-mcp-server
 james-chahwan/repo-graph
@@ -1956,6 +2001,7 @@ kenneives/design-token-bridge-mcp
 kensaurus/mushi-mushi
 kent-tokyo/shohei
 kentucky-ai/opentakeoff
+kenzolika/yandex-music-mcp
 kenzotp/mcp-server-zuuna
 kerbelp/metatron
 kestiny18/spring-nacos-mcp
@@ -2089,6 +2135,7 @@ kukapay/uniswap-trader-mcp
 kukapay/wallet-inspector-mcp
 kukapay/web3-jobs-mcp
 kukapay/whale-tracker-mcp
+kungie/gut
 kunickiaj/codemem
 kunwar-shah/claudex
 kushaim/practice-fusion-mcp
@@ -2120,6 +2167,7 @@ labs64/netlicensing-mcp
 lacausecrypto/mcp-sports-hub
 lacs-project/sysknife
 ladislavsopko/mcp-ai-server-visual-studio
+lamantinai/kaeru
 lambopoewert/mcp-server-madeonsol
 lamemind/mcp-server-multiverse
 lanchuske/local-mcp-releases
@@ -2189,6 +2237,7 @@ liquidiction/liquidiction-mcp
 lisamaraventano-spine/mcp-server
 litescrape/litescrape-mcp-server
 lithtrix/lithtrix-mcp
+litportnet/free-proxy-mcp
 littlebearapps/outlook-assistant
 liuboacean/agent-comm-hub
 live-direct-marketing/ldm-inbox-check-mcp
@@ -2259,6 +2308,7 @@ luqueee/kivgraph
 lvcidpsyche/auto-browser
 lwtlong/ai-dev-analytics
 lxman/obsbot-mcp
+ly8427/mcp-review-board
 lyonzin/knowledge-rag
 lyosis/claudeforsafari
 lyrenth/lyrenth-mcp
@@ -2294,18 +2344,22 @@ malonestar/gov-data-mcp
 mambalabsdev/mcp-ai-tooling-detector
 mambalabsdev/mcp-bluesky-brand-presence-mapper
 mambalabsdev/mcp-clay-to-instantly-smartlead-push
+mambalabsdev/mcp-company-change-event-feed
 mambalabsdev/mcp-company-contact-details-extractor
 mambalabsdev/mcp-company-firmographic-enricher
 mambalabsdev/mcp-company-social-presence-mapper
 mambalabsdev/mcp-domain-deliverability-checker
 mambalabsdev/mcp-domain-to-linkedin-url-resolver
 mambalabsdev/mcp-event-presence-index
+mambalabsdev/mcp-expert-witness-directory
 mambalabsdev/mcp-funding-press-signal-scanner
 mambalabsdev/mcp-github-organization-signal-scanner
 mambalabsdev/mcp-gtm-hiring-signal-scraper
+mambalabsdev/mcp-gtm-signals-aggregator
 mambalabsdev/mcp-gtm-suite
 mambalabsdev/mcp-gtm-tech-stack-signal-scraper
 mambalabsdev/mcp-icp-fit-scorer
+mambalabsdev/mcp-job-board-keyword-signal-scanner
 mambalabsdev/mcp-legal-entity-resolver
 mambalabsdev/mcp-linkedin-post-engager-capture
 mambalabsdev/mcp-pinterest-brand-presence-mapper
@@ -2314,6 +2368,7 @@ mamertofabian/mcp-everything-search
 manavmishra/zeroslop
 mandarelabs/mandare
 manganate006/openlmnp
+mankhonggarden/line-bot-ops-mcp
 manovagyanik1/clipy-mcp
 manusa/kubernetes-mcp-server
 mapsmith-ai/mapsmith
@@ -2354,6 +2409,7 @@ mastadoonprime/sylex-search
 masterplayspots/motionspec
 mastyf-ai/mastyf.ai
 matbel91765/gis-mcp-server
+mathbeal/avenir-mcp
 mathiaspaulenko/wavexis-mcp
 matiouscorp/google-ad-manager-mcp
 mattbusel/reddit-options-trader-rot-
@@ -2489,6 +2545,7 @@ modelcontextprotocol/servers
 modus-agendi/managed-agent-control-mcp
 mogacode-ma/elementor-mcp-agent
 mogacode-ma/infomaniak-mcp-agent
+mohabdo21/linux-mcp
 mohamed-ashraf-elsaed/loupe
 mohamed-khairy-5i/tossinbox
 mohamedabdallah-14/prompt-to-asset
@@ -2500,6 +2557,7 @@ moltycel/moltrust-mcp-server
 monadsag/capsulecrm-mcp
 monglong0214/commitlore
 montumodi/mongodb-atlas-mcp-server
+moorcheh-ai/memanto
 mopanc/depguard
 mordor-forge/gemini-media-mcp
 mordor-forge/trident-mcp
@@ -2587,6 +2645,7 @@ ndjordjevic/pinrag
 ndthanhdev/mcp-browser-kit
 nebula-block-data/nebulablock-mcp-server
 neem2004/android-mcp-server
+negm17111995/mcp-server
 negoro26/mcp-taiga
 neilberkman/editorconfig_mcp
 neo1228/spring-boot-starter-swagger-mcp
@@ -2615,6 +2674,7 @@ ni-c/calibreweb-mcp
 ni-c/carddav-mcp
 ni-c/freshrss-mcp
 ni-c/google-search-console-mcp
+ni-c/healthchecks-mcp
 ni-c/hetzner-dns-mcp
 ni-c/mcp-hub
 ni-c/mealie-mcp
@@ -2692,6 +2752,7 @@ octoeverywhere/mcp
 octonove/crbro-memory
 octotrip/rental-cars
 odd-innocent/den_archi_mcp
+odds-api-io/odds-api-mcp-server
 oddunits/pntr-cli
 odrin/rhizome-mcp
 oerc-s/primordia
@@ -2730,6 +2791,7 @@ omniologynow-rgb/profitspot-mcp
 omniologynow-rgb/scout-intel-mcp
 omnom62/freshdesk-mcp
 one8943/ai-furniture-hub
+oneappsworld/callchatsyn-mcp
 ontorata/ratary
 onvaou-app/onvaou-itineraires-mcp
 oomkapwn/enquire-mcp
@@ -2782,6 +2844,7 @@ osseni94/keyneg-mcp
 osseni94/oyemi-mcp
 ostapondo/plonk
 osulivan/skill4agent-mcp-server
+otha-labs/persuasion-mcp
 othmaneblial/term_mcp_deepseek
 ourthinktank/founders-os
 ouvreboite/openapi-to-mcp
@@ -2799,6 +2862,7 @@ pab1it0/prometheus-mcp-server
 pab1it0/tripadvisor-mcp
 packkitlabs/packkit-mcp
 pactlio-ai/pactlio-mcp
+pad01g/proxy-shopping-web
 pagerankcafe/mcp-server
 paigy-ai/mcp
 paipaipai666/nexus-browser-mcp
@@ -2858,6 +2922,8 @@ pearch-ai/mcp_pearch
 pedra-ai/pedra-mcp
 pendpost/pendpost
 penfieldlabs/penfield-mcp
+penmadebykisss/bitrix24-mcp
+penmadebykisss/ru-business-mcp
 pentagonal-ai/pentagonal
 peopleworks/signsofai
 pepabo/colormeshop-mcp
@@ -2869,10 +2935,12 @@ perufitlife/aviation-mcp
 perufitlife/postwire-mcp
 perufitlife/web-exposure-mcp
 peter-j-thompson/semanticapi-mcp
+petrovicistefan/mcp-security-guard
 peturgeorgievv-factory/postfast-mcp
 pexafy/pexafy-mcp
 pgalyen1987/gate402-mcp
 pghdma/callrail-mcp
+philflowio/dav-mcp
 philipad/health-export-mcp
 philongevity/phi-mcp-server
 philrox/ris-mcp-ts
@@ -2928,6 +2996,7 @@ postmcp/postmcp-mcp-server
 postoaklabs/ainumbers-mcp-apps
 powerdragonfire/platformio.mcp
 ppcvote/misp-mcp-server
+pprotocol-us/problee-mcp
 pradumnasaraf/aviationstack-mcp
 pragmar/mcp-server-webcrawl
 pranciskus/newsmcp
@@ -2943,6 +3012,7 @@ productofamerica/mcp-server-kicad
 professionalwiki/mediawiki-mcp-server
 profullstack/mcp-server
 project-feldspar-resources/feldspar-scan
+projectmakersde/horizon-mcp
 prompeteer/prompeteer-mcp
 promptexecution/just-mcp
 proofpane/releases
@@ -2967,6 +3037,7 @@ ptrinh/finalnotice-mcp
 publee-dev/mcp
 public-ui/kolibri
 publora/mcp-server
+pubship/pubship
 pubspro/pubmed-search
 pucilpet/crawlgraph-mcp
 pullkitsan/mobsf-mcp-server
@@ -3120,6 +3191,7 @@ richer-richard/fenestra
 ricocf/mcp-wolframalpha
 rightonpar-llc/mesh-connector
 rikarazome/prolog-reasoner
+rikinshah787/dotpals
 rinadelph/agent-mcp
 riponcm/projectmem
 rishijatia/fantasy-pl-mcp
@@ -3152,6 +3224,7 @@ rosasynthesiz/flstudio-mcp
 rosconl/intodns-mcp-server
 rosenvladimirov/odoo-claude-mcp
 rossshannon/weekly-weather-mcp.git
+roybogs/portveil-mcp
 roychri/mcp-server-asana
 rozetyp/grounder-mcp
 rper2001/rigshare-mcp
@@ -3169,7 +3242,6 @@ runapi-ai/mcp
 runcomfy-com/runcomfy-mcp
 runekaagaard/mcp-alchemy
 runtimeguard/runtime-guard
-runyourempire/4da
 rupinder2/mcp-orchestrator
 rushikeshmore/codecortex
 rusiaaman/wcgw
@@ -3320,6 +3392,7 @@ shakaran/symfony-agent-mcp
 shaqmughal/seekstone
 sharafutdinovdi/revit-model-mcp
 shareseer/shareseer-mcp-server
+sharimali/discp
 shariqriazz/google-ai-search-mcp
 sharozdawa/ai-visibility
 sharproduction/production-metadata-mcp
@@ -3427,6 +3500,7 @@ smythmyke/govtoolspro-mcp-server
 smythmyke/markitup-mcp-server
 smythmyke/patent-search-mcp-server
 snaggle-ai/openapi-mcp-server
+snapblock/hai-browser
 snapshot-site/snapshot-site-mcp
 snenenenenenene/transita-mcp-server
 snowflake-labs/mcp
@@ -3459,6 +3533,7 @@ sparkit-science/sparkit-mcp
 sparrow84001/mcp-seo
 specshield26/specshield-mcp-server
 speedwarnsf/scenef-mcp
+spikeycoder/website-auditor-mcp
 spix-hq/spix-mcp
 spl-bgu/planningcopilot
 spokenmd/spoken
@@ -3495,6 +3570,7 @@ startvest-llc/idealift-mcp-server
 stass/exif-mcp
 stass/lldb-mcp
 stefan-xyz/mcp-server-runescape
+stellify-software-ltd/stellify-mcp
 stevejford/shiply-mcp
 stevepridemore/graph-memory
 stevysmith/stacktree-mcp
@@ -3553,6 +3629,7 @@ synvoya/codeinspectus
 szhygulin/recon-crypto-mcp
 szhygulin/vaultpilot-mcp
 szp2005/llm-prices-cn
+t3ratech/market-pulse-mcp
 tacticlaunch/mcp-linear
 tactual-dev/tactual
 tadas-github/a2asearch-mcp
@@ -3846,6 +3923,7 @@ veezeehq/veezee-mcp
 velvetway/minreestr-mcp
 velyan/pdf-card-mcp
 venture-ai-labs/cryptodataapi-mcp
+verax-ai/verax
 vercel/next-devtools-mcp
 veridyia/autoeq-mcp
 verificateai/verificate-mcp-quickstart
@@ -3870,6 +3948,7 @@ vikramgorla/mcp-swiss
 vikrantsingh01/adaptive-cards-mcp
 vin-spiegel/htmldrop
 vinaybhosle/agentstamp
+vinayvobbili/jobwatch
 vince-gonzalez/opticquiz-mcp
 vincentvella/devloop
 vincentwei1021/agent-toolbox
@@ -3950,6 +4029,7 @@ windborne/zulipmcp
 wise-vision/mcp_server_ros_2
 wisflux/docmost-local-mcp
 wishfinity/wishfinity-mcp-plusw
+withgrokbot/verified-catalog
 withoneai/mcp
 wjgoarxiv/pymol-mcp
 wkalidev/multichain-mcp
@@ -4029,6 +4109,7 @@ yashshingvi/databricks-genie-mcp
 ybouhjira/claude-code-tts
 ycs77/apifable
 ydb-platform/ydb-mcp
+yehuoshun/yuque-ai-mcp
 yenchieh/diagramzu-mcp
 yeok-c/latex-mcp-server
 yepcode/mcp-server-js
@@ -4062,6 +4143,7 @@ yubinkim444/repo-memory
 yuchenssr/mindmap-mcp-server
 yuchenssr/multi-ai-advisor-mcp
 yuelinghuashu/story-cli
+yugantm/hvtracker-mcp
 yuliiakovalova/dotnet-template-mcp
 yuluo688/gen-image-mcp
 yuna0x0/anilist-mcp
