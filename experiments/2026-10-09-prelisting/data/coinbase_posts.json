@@ -1,0 +1,797 @@
+{
+"windows": [
+[
+"2025-10-01",
+"2025-11-30"
+],
+[
+"2025-12-01",
+"2026-01-31"
+],
+[
+"2026-02-01",
+"2026-03-31"
+],
+[
+"2026-04-01",
+"2026-05-31"
+],
+[
+"2026-10-01",
+"2026-10-09"
+],
+[
+"2026-06-01",
+"2026-07-31"
+],
+[
+"2026-08-01",
+"2026-09-30"
+]
+],
+"posts": [
+{
+"symbol": "RLS",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1994580882410123775",
+"t": 1764380114.544,
+"window": "2025-10-01"
+},
+{
+"symbol": "WMTX",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1990951184950079575",
+"t": 1763514727.233,
+"window": "2025-10-01"
+},
+{
+"symbol": "XPL",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1988789302218613127",
+"t": 1762999294.224,
+"window": "2025-10-01"
+},
+{
+"symbol": "TON",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1988789302218613127",
+"t": 1762999294.224,
+"window": "2025-10-01"
+},
+{
+"symbol": "FLUID",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1988057595030950242",
+"t": 1762824841.636,
+"window": "2025-10-01"
+},
+{
+"symbol": "NOM",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1988057595030950242",
+"t": 1762824841.636,
+"window": "2025-10-01"
+},
+{
+"symbol": "ASTER",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1986890879102005684",
+"t": 1762546674.882,
+"window": "2025-10-01"
+},
+{
+"symbol": "MON",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1985406081372229766",
+"t": 1762192671.517,
+"window": "2025-10-01"
+},
+{
+"symbol": "DBR",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1982819135370215859",
+"t": 1761575895.527,
+"window": "2025-10-01"
+},
+{
+"symbol": "BNB",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1978502506025025557",
+"t": 1760546730.892,
+"window": "2025-10-01"
+},
+{
+"symbol": "2Z",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1975367789650088145",
+"t": 1759799356.268,
+"window": "2025-10-01"
+},
+{
+"symbol": "MON",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/1992983503810572456",
+"t": 1763999269.808,
+"window": "2025-10-01"
+},
+{
+"symbol": "MON",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1992952089564033075",
+"t": 1763991780.068,
+"window": "2025-10-01"
+},
+{
+"symbol": "FLUID",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1992999992840077609",
+"t": 1764003201.099,
+"window": "2025-10-01"
+},
+{
+"symbol": "WMTX",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1992999992840077609",
+"t": 1764003201.099,
+"window": "2025-10-01"
+},
+{
+"symbol": "ASTER",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1991237780265906530",
+"t": 1763583056.881,
+"window": "2025-10-01"
+},
+{
+"symbol": "TON",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1990503887820787844",
+"t": 1763408083.287,
+"window": "2025-10-01"
+},
+{
+"symbol": "IRYS",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1993362386485477869",
+"t": 1764089602.477,
+"window": "2025-10-01"
+},
+{
+"symbol": "ASTER",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1993337647389929887",
+"t": 1764083704.217,
+"window": "2025-10-01"
+},
+{
+"symbol": "ABT",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1993442156543967550",
+"t": 1764108621.141,
+"window": "2025-10-01"
+},
+{
+"symbol": "IRYS",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1993442156543967550",
+"t": 1764108621.141,
+"window": "2025-10-01"
+},
+{
+"symbol": "WMTX",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1993367073444012471",
+"t": 1764090719.935,
+"window": "2025-10-01"
+},
+{
+"symbol": "FLUID",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1993762680780272009",
+"t": 1764185040.074,
+"window": "2025-10-01"
+},
+{
+"symbol": "XPL",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/1995595869991616696",
+"t": 1764622106.441,
+"window": "2025-12-01"
+},
+{
+"symbol": "LIGHTER",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/1999622324383858752",
+"t": 1765582087.976,
+"window": "2025-12-01"
+},
+{
+"symbol": "BREV",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2002147064847667353",
+"t": 1766184033.01,
+"window": "2025-12-01"
+},
+{
+"symbol": "MEGA",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2008634843232436401",
+"t": 1767730839.914,
+"window": "2025-12-01"
+},
+{
+"symbol": "RAY",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2008917880344080748",
+"t": 1767798321.22,
+"window": "2025-12-01"
+},
+{
+"symbol": "ELSA",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2008917880344080748",
+"t": 1767798321.22,
+"window": "2025-12-01"
+},
+{
+"symbol": "FUN",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2008917880344080748",
+"t": 1767798321.22,
+"window": "2025-12-01"
+},
+{
+"symbol": "ENERGY",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2008917880344080748",
+"t": 1767798321.22,
+"window": "2025-12-01"
+},
+{
+"symbol": "SKR",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2012355602320621759",
+"t": 1768617938.009,
+"window": "2025-12-01"
+},
+{
+"symbol": "FIGHT",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2012355602320621759",
+"t": 1768617938.009,
+"window": "2025-12-01"
+},
+{
+"symbol": "DOOD",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2014841024665837700",
+"t": 1769210508.873,
+"window": "2025-12-01"
+},
+{
+"symbol": "BIRB",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2014841024665837700",
+"t": 1769210508.873,
+"window": "2025-12-01"
+},
+{
+"symbol": "TRIA",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2016166316026044423",
+"t": 1769526482.956,
+"window": "2025-12-01"
+},
+{
+"symbol": "ZAMA",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2016166316026044423",
+"t": 1769526482.956,
+"window": "2025-12-01"
+},
+{
+"symbol": "INX",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2016556453146870145",
+"t": 1769619498.894,
+"window": "2025-12-01"
+},
+{
+"symbol": "HYPE",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2016641510876328325",
+"t": 1769639778.237,
+"window": "2025-12-01"
+},
+{
+"symbol": "LIGHTER",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2006049202158133710",
+"t": 1767114375.043,
+"window": "2025-12-01"
+},
+{
+"symbol": "BREV",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2008624762994499727",
+"t": 1767728436.598,
+"window": "2025-12-01"
+},
+{
+"symbol": "FUN",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2011891988824514672",
+"t": 1768507403.938,
+"window": "2025-12-01"
+},
+{
+"symbol": "ELSA",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2013655345206300876",
+"t": 1768927820.861,
+"window": "2025-12-01"
+},
+{
+"symbol": "SKR",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2013982381212860508",
+"t": 1769005792.321,
+"window": "2025-12-01"
+},
+{
+"symbol": "IMU",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2014341835024466404",
+"t": 1769091492.788,
+"window": "2025-12-01"
+},
+{
+"symbol": "FIGHT",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2014347056509251821",
+"t": 1769092737.687,
+"window": "2025-12-01"
+},
+{
+"symbol": "BIRB",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2016513006033662083",
+"t": 1769609140.295,
+"window": "2025-12-01"
+},
+{
+"symbol": "INX",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2017294668438909076",
+"t": 1769795503.135,
+"window": "2025-12-01"
+},
+{
+"symbol": "EDGEX",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2038711294400868468",
+"t": 1774901624.666,
+"window": "2026-02-01"
+},
+{
+"symbol": "BASED1",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2037251691087544817",
+"t": 1774553628.118,
+"window": "2026-02-01"
+},
+{
+"symbol": "BASED1",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2037623385069416887",
+"t": 1774642246.869,
+"window": "2026-02-01"
+},
+{
+"symbol": "BASED1",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2038543641174495581",
+"t": 1774861653.022,
+"window": "2026-02-01"
+},
+{
+"symbol": "KAT",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2033942959687663696",
+"t": 1773764765.079,
+"window": "2026-02-01"
+},
+{
+"symbol": "KAT",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2037484257472344532",
+"t": 1774609076.265,
+"window": "2026-02-01"
+},
+{
+"symbol": "MEZO",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2036821701955142099",
+"t": 1774451110.72,
+"window": "2026-02-01"
+},
+{
+"symbol": "PRL",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2033700115777511537",
+"t": 1773706866.579,
+"window": "2026-02-01"
+},
+{
+"symbol": "PRL",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2036540321853505536",
+"t": 1774384024.476,
+"window": "2026-02-01"
+},
+{
+"symbol": "PRL",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2036791684390928476",
+"t": 1774443953.975,
+"window": "2026-02-01"
+},
+{
+"symbol": "CHECK",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2036528704814284885",
+"t": 1774381254.758,
+"window": "2026-02-01"
+},
+{
+"symbol": "SIGN",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2036528704814284885",
+"t": 1774381254.758,
+"window": "2026-02-01"
+},
+{
+"symbol": "BLEND",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2030348857595351418",
+"t": 1772907864.365,
+"window": "2026-02-01"
+},
+{
+"symbol": "RNBW",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2019132783679971728",
+"t": 1770233743.959,
+"window": "2026-02-01"
+},
+{
+"symbol": "RAVE",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2019132783679971728",
+"t": 1770233743.959,
+"window": "2026-02-01"
+},
+{
+"symbol": "ROBO",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2024873593163669735",
+"t": 1771602459.599,
+"window": "2026-02-01"
+},
+{
+"symbol": "AZTEC",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2019171512817766437",
+"t": 1770242977.705,
+"window": "2026-02-01"
+},
+{
+"symbol": "ESP",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2019171512817766437",
+"t": 1770242977.705,
+"window": "2026-02-01"
+},
+{
+"symbol": "UP",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2019879482622877995",
+"t": 1770411770.86,
+"window": "2026-02-01"
+},
+{
+"symbol": "O",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2060033736381436400",
+"t": 1779985290.986,
+"window": "2026-04-01"
+},
+{
+"symbol": "META",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2056848547836780965",
+"t": 1779225882.859,
+"window": "2026-04-01"
+},
+{
+"symbol": "DRV",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2056848547836780965",
+"t": 1779225882.859,
+"window": "2026-04-01"
+},
+{
+"symbol": "NEX",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2052393820042461408",
+"t": 1778163792.988,
+"window": "2026-04-01"
+},
+{
+"symbol": "META",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2059301752009085014",
+"t": 1779810772.312,
+"window": "2026-04-01"
+},
+{
+"symbol": "DRV",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2059301752009085014",
+"t": 1779810772.312,
+"window": "2026-04-01"
+},
+{
+"symbol": "CTR",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2059258746660847965",
+"t": 1779800519.038,
+"window": "2026-04-01"
+},
+{
+"symbol": "META",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2060102394784919717",
+"t": 1780001660.425,
+"window": "2026-04-01"
+},
+{
+"symbol": "DRV",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2060032848698954005",
+"t": 1779985079.346,
+"window": "2026-04-01"
+},
+{
+"symbol": "CTR",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2059268314745000068",
+"t": 1779802800.247,
+"window": "2026-04-01"
+},
+{
+"symbol": "NEX",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2057123393472708967",
+"t": 1779291411.165,
+"window": "2026-04-01"
+},
+{
+"symbol": "NEX",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2057478951077851377",
+"t": 1779376182.704,
+"window": "2026-04-01"
+},
+{
+"symbol": "CTR",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2059354816950714635",
+"t": 1779823423.98,
+"window": "2026-04-01"
+},
+{
+"symbol": "PONS",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2107464172376035524",
+"t": 1791293588.142,
+"window": "2026-10-01"
+},
+{
+"symbol": "WHUF",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2107464172376035524",
+"t": 1791293588.142,
+"window": "2026-10-01"
+},
+{
+"symbol": "PONS",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2107885529815543854",
+"t": 1791394047.584,
+"window": "2026-10-01"
+},
+{
+"symbol": "WHUF",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2107886866640826394",
+"t": 1791394366.308,
+"window": "2026-10-01"
+},
+{
+"symbol": "PONS",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2107951652170813441",
+"t": 1791409812.382,
+"window": "2026-10-01"
+},
+{
+"symbol": "WHUF",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2108214739339771910",
+"t": 1791472537.251,
+"window": "2026-10-01"
+},
+{
+"symbol": "WHUF",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2108256633709019611",
+"t": 1791482525.647,
+"window": "2026-10-01"
+},
+{
+"symbol": "DATA",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2108259266591158664[[1]](https://x.com/CoinbaseMarkets/status/2107464172376035524)[[2]](https://x.com/CoinbaseMarkets/status/2107886866640826394)[[3]](https://x.com/CoinbaseMarkets/status/2107885529815543854)[[4]](https://x.com/CoinbaseMarkets/status/2107951652170813441)[[5]](https://x.com/CoinbaseMarkets/status/2108218223007060351)[[6]](https://x.com/CoinbaseMarkets/status/2108256633709019611)[[7]](https://x.com/CoinbaseMarkets/status/2108259266591158664",
+"t": 1791483153.375,
+"window": "2026-10-01"
+},
+{
+"symbol": "GRVT",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2074566058267070945",
+"t": 1783450066.521,
+"window": "2026-06-01"
+},
+{
+"symbol": "GROVE",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2069513222508490935",
+"t": 1782245376.599,
+"window": "2026-06-01"
+},
+{
+"symbol": "CAP",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2067685345869578709",
+"t": 1781809576.848,
+"window": "2026-06-01"
+},
+{
+"symbol": "GEOD",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2066865510709350623",
+"t": 1781614112.914,
+"window": "2026-06-01"
+},
+{
+"symbol": "ARX",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2064438302703288654",
+"t": 1781035421.43,
+"window": "2026-06-01"
+},
+{
+"symbol": "RE",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2064438302703288654",
+"t": 1781035421.43,
+"window": "2026-06-01"
+},
+{
+"symbol": "GRVT",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2082494715207835666",
+"t": 1785340405.643,
+"window": "2026-06-01"
+},
+{
+"symbol": "GRVT",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2082909826149916931",
+"t": 1785439375.804,
+"window": "2026-06-01"
+},
+{
+"symbol": "PERP",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2082754556056752482",
+"t": 1785402356.529,
+"window": "2026-06-01"
+},
+{
+"symbol": "PERP",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2082754556056752482",
+"t": 1785402356.529,
+"window": "2026-06-01"
+},
+{
+"symbol": "PERP",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2079175752520544615",
+"t": 1784549103.275,
+"window": "2026-06-01"
+},
+{
+"symbol": "PERP",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2079175752520544615",
+"t": 1784549103.275,
+"window": "2026-06-01"
+},
+{
+"symbol": "PERP",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2079175752520544615",
+"t": 1784549103.275,
+"window": "2026-06-01"
+},
+{
+"symbol": "BRL",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2080648678155362730",
+"t": 1784900276.112,
+"window": "2026-06-01"
+},
+{
+"symbol": "CT",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2097432362959196648",
+"t": 1788901818.395,
+"window": "2026-08-01"
+},
+{
+"symbol": "CP",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2094886755849711818",
+"t": 1788294898.365,
+"window": "2026-08-01"
+},
+{
+"symbol": "CT",
+"kind": "deposits",
+"url": "https://x.com/CoinbaseMarkets/status/2105003194023657684",
+"t": 1790706845.18,
+"window": "2026-08-01"
+},
+{
+"symbol": "WMTX",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2103546813974270340",
+"t": 1790359617.118,
+"window": "2026-08-01"
+},
+{
+"symbol": "DATA",
+"kind": "trading",
+"url": "https://x.com/CoinbaseMarkets/status/2104990853269758418",
+"t": 1790703902.915,
+"window": "2026-08-01"
+},
+{
+"symbol": "BLUECHIP",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2100210481801707685",
+"t": 1789564173.542,
+"window": "2026-08-01"
+},
+{
+"symbol": "RITUAL",
+"kind": "roadmap",
+"url": "https://x.com/CoinbaseMarkets/status/2100210481801707685",
+"t": 1789564173.542,
+"window": "2026-08-01"
+}
+]
+}

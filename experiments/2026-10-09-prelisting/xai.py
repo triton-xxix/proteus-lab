@@ -71,4 +71,6 @@ def search(tag, prompt, from_date, to_date, handles=None):
         fh.write(json.dumps({"at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "tag": tag,
                              "from": from_date, "to": to_date, "cost_usd": cost, "secs": round(time.time() - t0),
                              "status": r.status_code, "urls": len(urls), "error": d.get("error") if r.status_code != 200 else None}) + "\n")
+    if r.status_code != 200:
+        raise RuntimeError("xAI HTTP %d: %s" % (r.status_code, str(d.get("error"))[:120]))
     return text, urls, cost

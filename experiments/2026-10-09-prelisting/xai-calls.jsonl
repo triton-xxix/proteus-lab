@@ -1,0 +1,14 @@
+{"at": "2026-10-09T08:54:36Z", "tag": "coinbase-test", "from": "2026-09-01", "to": "2026-09-30", "cost_usd": 0.0052, "secs": 8, "status": 200, "urls": 0, "error": null}
+{"at": "2026-10-09T08:54:48Z", "tag": "coinbase-test2", "from": "2026-08-01", "to": "2026-09-30", "cost_usd": 0.0011, "secs": 6, "status": 200, "urls": 0, "error": null}
+{"tag": "raw-test", "cost_usd": 0.0144}
+{"at": "2026-10-09T08:55:22Z", "tag": "coinbase-test3", "from": "2026-09-01", "to": "2026-09-30", "cost_usd": 0.1241, "secs": 12, "status": 200, "urls": 17, "error": null}
+{"at": "2026-10-09T08:59:00Z", "tag": "coinbase-markets-2026-08", "from": "2026-08-01", "to": "2026-09-30", "cost_usd": 0.4011, "secs": 13, "status": 200, "urls": 39, "error": null}
+{"at": "2026-10-09T08:59:31Z", "tag": "coinbase-markets-2025-10-01", "from": "2025-10-01", "to": "2025-11-30", "cost_usd": 0.4334, "secs": 16, "status": 200, "urls": 50, "error": null}
+{"at": "2026-10-09T08:59:54Z", "tag": "coinbase-markets-2025-12-01", "from": "2025-12-01", "to": "2026-01-31", "cost_usd": 0.5504, "secs": 22, "status": 200, "urls": 54, "error": null}
+{"at": "2026-10-09T09:00:12Z", "tag": "coinbase-markets-2026-02-01", "from": "2026-02-01", "to": "2026-03-31", "cost_usd": 0.5918, "secs": 19, "status": 200, "urls": 46, "error": null}
+{"at": "2026-10-09T09:00:43Z", "tag": "coinbase-markets-2026-04-01", "from": "2026-04-01", "to": "2026-05-31", "cost_usd": 0.502, "secs": 31, "status": 200, "urls": 44, "error": null}
+{"at": "2026-10-09T09:00:45Z", "tag": "coinbase-markets-2026-06-01", "from": "2026-06-01", "to": "2026-07-31", "cost_usd": 0.0, "secs": 2, "status": 429, "urls": 0, "error": "The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-processing"}
+{"at": "2026-10-09T09:00:47Z", "tag": "coinbase-markets-2026-08-01", "from": "2026-08-01", "to": "2026-09-30", "cost_usd": 0.0, "secs": 2, "status": 429, "urls": 0, "error": "The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-processing"}
+{"at": "2026-10-09T09:01:09Z", "tag": "coinbase-markets-2026-10-01", "from": "2026-10-01", "to": "2026-10-09", "cost_usd": 0.3059, "secs": 22, "status": 200, "urls": 8, "error": null}
+{"at": "2026-10-09T09:01:41Z", "tag": "coinbase-markets-2026-06-01", "from": "2026-06-01", "to": "2026-07-31", "cost_usd": 0.3556, "secs": 20, "status": 200, "urls": 35, "error": null}
+{"at": "2026-10-09T09:02:07Z", "tag": "coinbase-markets-2026-08-01", "from": "2026-08-01", "to": "2026-09-30", "cost_usd": 0.4341, "secs": 27, "status": 200, "urls": 37, "error": null}

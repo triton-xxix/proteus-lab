@@ -259,7 +259,10 @@ def daily_binance(base):
 
 def pull_many(tag, keys, fn):
     out = {}
+    shard, shards = (int(x) for x in os.environ.get("SHARD", "0/1").split("/"))
     for i, k in enumerate(keys):
+        if i % shards != shard:
+            continue
         safe = re.sub(r"[^A-Za-z0-9_-]", "_", k)
         out[k] = cached("%s/%s.json" % (tag, safe), lambda: fn(k))
         if i % 100 == 0:
@@ -278,9 +281,10 @@ def main(what):
         st = cached("static.json", static_times)
         print({k: len(v) for k, v in st.items()})
     st = cached("static.json", static_times)
-    if what in ("all", "firsts"):
+    if what in ("all", "firsts", "bithumb"):
         bt = [m for m in st["bithumb_markets"] if m.startswith("KRW-")]
         pull_many("bithumb", bt, first_day_bithumb)
+    if what in ("all", "firsts", "coinbase"):
         cb = sorted({p["id"] for p in st["coinbase_products"] if p["quote"] == "USD"})
         pull_many("coinbase", cb, first_day_coinbase)
     if what in ("all", "volume"):
