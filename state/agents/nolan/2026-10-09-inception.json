@@ -1,0 +1,203 @@
+{
+  "slug": "inception",
+  "title": "Inception",
+  "year": 2010,
+  "one_line": "A thief who steals secrets from sleeping minds is hired to plant an idea instead, and the job unfolds across dreams stacked inside dreams.",
+  "facts": {
+    "release": {
+      "value": "2010-07-16 (United States and United Kingdom; premiere 2010-07-08, London)",
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    "runtime_min": {
+      "value": 148,
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    "writers": {
+      "value": ["Christopher Nolan"],
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    "dp": {
+      "value": "Wally Pfister",
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    "editor": {
+      "value": "Lee Smith",
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    "composer": {
+      "value": "Hans Zimmer",
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    "budget_usd": {
+      "value": 160000000,
+      "note": "Wikipedia and Box Office Mojo agree on $160 million; a search summary says it was split between Warner Bros. and Legendary (not fetched from a primary page).",
+      "source": "https://www.boxofficemojo.com/title/tt1375666/"
+    },
+    "gross_usd": {
+      "value": 839796627,
+      "as_of": "2026-10-09",
+      "source": "https://www.boxofficemojo.com/title/tt1375666/"
+    },
+    "cast_top5": {
+      "value": [
+        { "name": "Leonardo DiCaprio", "role": "Dom Cobb" },
+        { "name": "Ken Watanabe", "role": "Saito" },
+        { "name": "Joseph Gordon-Levitt", "role": "Arthur" },
+        { "name": "Marion Cotillard", "role": "Mal Cobb" },
+        { "name": "Elliot Page", "role": "Ariadne" }
+      ],
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    }
+  },
+  "time_structure": {
+    "kind": "nested-levels",
+    "summary": "A heist is carried out inside a dream, then inside a dream within that dream, and so on down. Each level runs slower than the one above it, so a few minutes at the top is hours below. The film cuts between all the levels at once, and each level's wake-up cue has to land at the same moment.",
+    "sketch": {
+      "nesting": "nested",
+      "threads": [
+        { "id": "a", "label": "Real world: the flight, the sleeping team", "direction": "forward", "level": 0, "rate": 1, "span": [0.0, 1.0], "duration_label": "one long flight", "style": "colour" },
+        { "id": "b", "label": "Level 1: rainy city and van chase", "direction": "forward", "level": 1, "rate": 20, "span": [0.3, 0.85], "duration_label": "about a week of dream time (unverified)", "style": "colour" },
+        { "id": "c", "label": "Level 2: the hotel with shifting gravity", "direction": "forward", "level": 2, "rate": 400, "span": [0.4, 0.85], "duration_label": "unverified", "style": "colour" },
+        { "id": "d", "label": "Level 3: the snow fortress", "direction": "forward", "level": 3, "rate": 8000, "span": [0.5, 0.85], "duration_label": "unverified", "style": "colour" },
+        { "id": "e", "label": "Limbo: raw dream space where time stretches furthest", "direction": "static", "level": 4, "rate": 160000, "span": [0.55, 0.9], "duration_label": "decades (unverified)", "style": "mono" }
+      ],
+      "joins": [
+        { "from": "a", "to": "b", "kind": "nest", "at": 0.3, "label": "the team falls asleep" },
+        { "from": "b", "to": "c", "kind": "nest", "at": 0.4, "label": "down a level" },
+        { "from": "c", "to": "d", "kind": "nest", "at": 0.5, "label": "down again" },
+        { "from": "d", "to": "e", "kind": "nest", "at": 0.55, "label": "falling into Limbo" },
+        { "from": "d", "to": "a", "kind": "converge", "at": 0.9, "label": "kicks wake each level in turn" }
+      ]
+    },
+    "source": "https://www.davidbordwell.net/blog/?p=9770"
+  },
+  "themes": [
+    {
+      "id": "guilt",
+      "name": "Guilt",
+      "scene": "Cobb's dead wife appears inside the dreams he builds and sabotages the jobs. Wikipedia's analysis reads her as a projection of his guilt over her death, which is why she keeps intruding when the team needs a clean run.",
+      "source": "https://en.wikipedia.org/wiki/Inception",
+      "new": false
+    },
+    {
+      "id": "grief",
+      "name": "Grief",
+      "scene": "Cobb cannot go home because of what happened to his wife. The whole job is a way to buy back his old life and see his children again, so a loss drives every decision he makes in the film.",
+      "source": "https://en.wikipedia.org/wiki/Inception",
+      "new": false
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "scene": "Nolan has said the heist framing was too shallow for a film about dream and memory, so he gave Cobb an emotional wound to carry. The dreams are built from remembered places and people, which is how the past leaks into the job.",
+      "source": "https://www.slashfilm.com/christopher-nolan-talks-inception/",
+      "new": false
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "scene": "In the hotel level, a fight plays out in a corridor that rotates through a full turn, while a van falls in slow motion on the level above. Different clocks run at once and the film cuts between them.",
+      "source": "https://en.wikipedia.org/wiki/Inception",
+      "new": false
+    },
+    {
+      "id": "deception",
+      "name": "Deception",
+      "scene": "The ending cuts away as the spinning top seems to wobble, leaving the audience unsure whether the final scene is real. Critics note the film keeps manipulating its characters and its viewers in the same move.",
+      "source": "https://en.wikipedia.org/wiki/Inception",
+      "new": false
+    }
+  ],
+  "inspirations": [
+    {
+      "claim": "Nolan says he has been fascinated by dreams since he was a child, and the idea of a mind building a whole world you do not notice is the core appeal.",
+      "who": "Christopher Nolan",
+      "quote": "I've been fascinated by dreams my whole life",
+      "source": "https://slashfilm.com/1098191/a-lifelong-fascination-led-christopher-nolan-to-inception"
+    },
+    {
+      "claim": "Nolan first wrote it as a conventional heist, then decided that was too shallow for a story about dream and memory, and raised the emotional stakes.",
+      "who": "Christopher Nolan",
+      "quote": "I realized I needed to raise the emotional stakes.",
+      "source": "https://www.slashfilm.com/christopher-nolan-talks-inception/"
+    },
+    {
+      "claim": "Wikipedia lists The Matrix, Dark City, The Thirteenth Floor, Memento, Borges and Blade Runner among influences; the link to Paprika is commonly drawn but not confirmed by Nolan.",
+      "who": "Wikipedia summary of press accounts",
+      "quote": null,
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    },
+    {
+      "claim": "Shone's book The Nolan Variations (2020) discusses the film's origins; cited as a book only, no excerpt fetched.",
+      "who": "Tom Shone",
+      "quote": null,
+      "source": null
+    }
+  ],
+  "collaborators": [
+    { "name": "Emma Thomas", "role": "producer", "also": ["following", "memento", "insomnia", "batman-begins", "the-prestige", "the-dark-knight", "the-dark-knight-rises", "interstellar", "dunkirk", "tenet", "oppenheimer", "the-odyssey"] },
+    { "name": "Wally Pfister", "role": "cinematographer", "also": ["memento", "insomnia", "batman-begins", "the-prestige", "the-dark-knight", "the-dark-knight-rises"] },
+    { "name": "Hans Zimmer", "role": "composer", "also": ["batman-begins", "the-dark-knight", "the-dark-knight-rises", "interstellar", "dunkirk"] },
+    { "name": "Lee Smith", "role": "editor", "also": ["batman-begins", "the-prestige", "the-dark-knight", "the-dark-knight-rises", "dunkirk", "tenet", "oppenheimer"] },
+    { "name": "Tom Hardy", "role": "actor (Eames)", "also": ["the-dark-knight-rises", "dunkirk"] },
+    { "name": "Michael Caine", "role": "actor (Miles)", "also": ["batman-begins", "the-prestige", "the-dark-knight", "the-dark-knight-rises", "interstellar", "tenet"] }
+  ],
+  "reception": {
+    "at_release": {
+      "metacritic": { "value": 74, "source": "via Wikipedia: https://en.wikipedia.org/wiki/Inception" },
+      "rt": { "value": 87, "count": 363, "source": "via Wikipedia: https://en.wikipedia.org/wiki/Inception" },
+      "summary": "Most critics admired the ambition and called it an inventive, big-budget puzzle. A minority found it too literal and rule-bound, with explanations that undercut the feel of dreaming. Audiences gave it a B+ CinemaScore."
+    },
+    "now": {
+      "letterboxd": { "value": null, "as_of": "2026-10-09", "source": "https://letterboxd.com/film/inception/" },
+      "summary": "Online discussion has been warmer than many print reviews, and Wikipedia notes it topped many critics' 2010 lists and is often named among the decade's best. The ending's ambiguity keeps it in conversation. Letterboxd rating not retrieved (page gave no figure; ratings page returned 403)."
+    }
+  },
+  "missed": [
+    {
+      "point": "The levels are not flashbacks. Because a dream within a dream is not earlier than the one around it, Nolan cuts between them as simultaneous strands, motivated by the plot's deadlines rather than by character memory.",
+      "source": "https://www.davidbordwell.net/blog/?p=9770"
+    },
+    {
+      "point": "The heist plan is not explained up front as in most heist films. Exposition runs almost continuously and the plan unfolds as we watch, which is why the audience learns it alongside the team.",
+      "source": "https://www.davidbordwell.net/blog/?p=9770"
+    },
+    {
+      "point": "Nolan has said the point of the last shot is that Cobb walks to his children and no longer looks at the top, not whether the top falls. Wikipedia also records that he credited Emma Thomas with the view that Cobb no longer cares.",
+      "source": "https://en.wikipedia.org/wiki/Inception"
+    }
+  ],
+  "images": [
+    { "url": "https://image.tmdb.org/t/p/original/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg", "caption": "A still from Inception (TMDB backdrop 1; page gives only the alt text 'Inception')", "source": "https://www.themoviedb.org/movie/27205-inception/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/ii8QGacT3MXESqBckQlyrATY0lT.jpg", "caption": "A still from Inception (TMDB backdrop 2)", "source": "https://www.themoviedb.org/movie/27205-inception/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg", "caption": "A still from Inception (TMDB backdrop 3)", "source": "https://www.themoviedb.org/movie/27205-inception/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/gqby0RhyehP3uRrzmdyUZ0CgPPe.jpg", "caption": "A still from Inception (TMDB backdrop 4)", "source": "https://www.themoviedb.org/movie/27205-inception/images/backdrops" },
+    { "url": "https://image.tmdb.org/t/p/original/28kKbSUvUz6P5RE1AuMJMO7IMfK.jpg", "caption": "A still from Inception (TMDB backdrop 5)", "source": "https://www.themoviedb.org/movie/27205-inception/images/backdrops" }
+  ],
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Inception", "title": "Inception (film) - Wikipedia", "fetched": true, "used_for": ["facts.release", "facts.runtime_min", "facts.writers", "facts.dp", "facts.editor", "facts.composer", "facts.cast_top5", "themes", "inspirations", "reception", "missed"] },
+    { "url": "https://www.boxofficemojo.com/title/tt1375666/", "title": "Inception - Box Office Mojo", "fetched": true, "used_for": ["facts.budget_usd", "facts.gross_usd"] },
+    { "url": "https://letterboxd.com/film/inception/", "title": "Inception - Letterboxd", "fetched": true, "used_for": ["facts.cast_top5 roles"] },
+    { "url": "https://letterboxd.com/film/inception/ratings/", "title": "Inception ratings - Letterboxd", "fetched": false, "used_for": ["reception.now.letterboxd"] },
+    { "url": "https://www.themoviedb.org/movie/27205-inception/images/backdrops", "title": "Inception backdrops - TMDB", "fetched": true, "used_for": ["images"] },
+    { "url": "https://slashfilm.com/1098191/a-lifelong-fascination-led-christopher-nolan-to-inception", "title": "A Lifelong Fascination Led Christopher Nolan To Inception - /Film", "fetched": true, "used_for": ["inspirations"] },
+    { "url": "https://www.slashfilm.com/christopher-nolan-talks-inception/", "title": "Christopher Nolan Talks Inception - /Film", "fetched": true, "used_for": ["inspirations", "themes.memory"] },
+    { "url": "https://www.davidbordwell.net/blog/?p=9770", "title": "Revisiting Inception - David Bordwell", "fetched": true, "used_for": ["time_structure", "missed"] }
+  ],
+  "_child": {
+    "fetches": 11,
+    "searches": 2,
+    "fetch_failures": ["https://letterboxd.com/film/inception/ratings/ (HTTP 403)", "https://letterboxd.com/film/inception/ (fetched but no rating figure on page)"],
+    "refusals": [],
+    "notes": "Metacritic and Rotten Tomatoes taken via Wikipedia, not their own pages. Box Office Mojo gross date is the fetch date; the page gave no as-of. Wikipedia reports $839,030,630 worldwide against BOM's $839,796,627. TMDB backdrop captions are generic because the page carries only the alt text 'Inception'. Fetch count includes the Letterboxd 403.",
+    "unverified": [
+      "reception.now.letterboxd (null)",
+      "time_structure rates (20x per level, Limbo) and level durations and spans: shape from the film from memory, no fetched source gives ratios",
+      "collaborators 'also' lists: from memory, no fetched filmography",
+      "Michael Caine as Miles: not read from a fetched page",
+      "inspirations[3] Tom Shone book: no excerpt fetched, source null",
+      "budget split between Warner Bros. and Legendary: search summary only",
+      "theme scene descriptions are drawn from Wikipedia's summaries, not from a viewing"
+    ]
+  }
+}

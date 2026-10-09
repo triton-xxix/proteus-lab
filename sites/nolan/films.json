@@ -99,11 +99,16 @@
       "status": "queued",
       "time_structure_kind": "nested-levels",
       "deep_page": null,
-      "tries": 0,
-      "assigned_on": null,
+      "tries": 1,
+      "assigned_on": "2026-10-09",
       "researched_on": null,
-      "last_check": [],
-      "note": "Each level runs about twenty times slower than the one above."
+      "last_check": [
+        "digest.inspirations[3]: source None was not fetched (or mark unverified: true)",
+        "digest.reception.at_release.metacritic: source 'via Wikipedia: https://en.wikipedia.org/wiki/Inception' was not fetched (or mark unverified: true)",
+        "digest.reception.at_release.rt: source 'via Wikipedia: https://en.wikipedia.org/wiki/Inception' was not fetched (or mark unverified: true)"
+      ],
+      "note": "Each level runs about twenty times slower than the one above.",
+      "last_digest": "state/agents/nolan/2026-10-09-inception.json"
     },
     {
       "slug": "the-dark-knight-rises",
