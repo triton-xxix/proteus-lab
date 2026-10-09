@@ -19,6 +19,6 @@
   "P-0074",
   "P-0078"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-10-09T23:58:25+0100",
+ "stop_reason": "125 of 150 calls used after 9 probes; the rest is kept for the kill check, run log and close"
 }
