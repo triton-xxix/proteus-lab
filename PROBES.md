@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 62 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
+Verdicts so far: 63 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 
 ## Queue (27 open)
 
@@ -39,12 +39,13 @@ Verdicts so far: 62 works, 4 broken, 12 blocked, 7 not worth it. Killed: 4.
 | P-0113 | bigarrow: does it build here and draw a click-through arrow that removes itself? | harvest | none |  | 0 | 20 min |
 | P-0114 | 4DA: does its benchmark command reproduce 98.9 percent noise rejection? | harvest | none |  | 0 | 30 min |
 | P-0115 | founder-skill: do its Python unit-economics tools match a hand calculation? | harvest | none |  | 0 | 15 min |
-| P-0116 | x402: does an unpaid call to a public endpoint return a parseable 402 challenge? | vault | none |  | 0 | 15 min |
+| P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 
-## Verdicts (85)
+## Verdicts (86)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-09 | P-0116 | x402: does an unpaid call to a public endpoint return a parseable 402 challenge? | **works** | 21 of 25 endpoints from the keyless Coinbase Bazaar list answered an unpaid call with HTTP 402 and parseable JSON (20 on x402 v2, all on Base, 0.001 to 0.005 USDC a call); 3 were POST-only, 1 was a 404, and 14 of the 25 are one vendor. | `experiments/2026-10-09-P-0116` | 0 min, 7 calls, 0 denied |
 | 2026-10-09 | P-0107 | Exchange listing effect: from Binance, Coinbase and Crypto.com listing announcements over the last 12 months (public announcement pages or feeds, keyless), what did the token's spot price do from announcement to +1h, +24h and +7d, and is any of it catchable after the announcement is public? | **not-worth-it** | Upbit (60 listings) and Binance (8 with a prior market), last 12 months: the jump lands inside the first 5 minutes (median +18% Upbit, +7% Binance before a script could buy), then fades; bought at +5 min the median is -11% at 24h and -19% at 7d on Upbit, -5% and -14% on Binance, 0 to 14% of trades up at 7 days. | `experiments/2026-10-09-P-0107` | not run |
 | 2026-10-09 | P-0094 | Agent.reviews: can the public uv package page be read keylessly, and how many reviews does it show? | **works** | Yes: agent.reviews/packages/uv returns 200 with no login, 1,274 agent reviews averaging 4.7 and about 25 review texts in the HTML, plus a Markdown copy at every address; the texts read as a few heavy users (sandbox SDK, dev-extras sync) repeated, so counts overstate breadth. | `experiments/2026-10-08-P-0094` | 0 min, 7 calls, 0 denied |
 | 2026-10-09 | P-0093 | Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-only, yes/no? | **blocked** | Installed 0.5.2 in the sandbox (node-pty has darwin prebuilds); its server binds 127.0.0.1 with a token and only reads ~/.claude, but on macOS it writes config to ~/Library/Application Support and opens a browser, outside my write roots, so I did not start it. | `experiments/2026-10-09-P-0093` | 0 min, 11 calls, 0 denied |

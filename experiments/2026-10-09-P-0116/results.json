@@ -1,0 +1,390 @@
+{
+ "summary": {
+  "listed_total": 50,
+  "tried": 25,
+  "status": {
+   "405": 3,
+   "402": 21,
+   "404": 1
+  },
+  "parseable_402_body": 21,
+  "challenge_in_header": 0,
+  "complete_fields": 1,
+  "price_matches_listing": 20,
+  "networks": {
+   "eip155:8453": 24,
+   "base": 1
+  }
+ },
+ "rows": [
+  {
+   "url": "https://www.ax1.vc/api/dashboard/q-verdict/resource",
+   "method": "GET",
+   "status": 405,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": false,
+   "body_head": "",
+   "payment_header": null
+  },
+  {
+   "url": "https://stableenrich.dev/api/fullenrich/people-search",
+   "method": "GET",
+   "status": 405,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": false,
+   "body_head": "",
+   "payment_header": null
+  },
+  {
+   "url": "https://crypto.apitoll.cloud/v1/crypto/price",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": null,
+   "missing_fields": [
+    "scheme",
+    "network",
+    "maxAmountRequired",
+    "resource",
+    "payTo",
+    "asset",
+    "maxTimeoutSeconds"
+   ],
+   "network": null,
+   "price": null,
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.exa.ai/search",
+   "method": "GET",
+   "status": 404,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": false,
+   "body_head": "{\"requestId\":\"f71d7e9594f535c695868bec371be46c\",\"error\":\"Not found\",\"tag\":\"NOT_FOUND\"}",
+   "payment_header": null
+  },
+  {
+   "url": "https://stableupload.dev/api/upload",
+   "method": "GET",
+   "status": 405,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": false,
+   "body_head": "",
+   "payment_header": null
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/erc20-balance",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "3000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "3000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/block-number",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "1000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "1000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/live-balance",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "3000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "3000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/contract/:address",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/erc20-transfers",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://laso.finance/get-card",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": null,
+   "missing_fields": [
+    "scheme",
+    "network",
+    "maxAmountRequired",
+    "resource",
+    "payTo",
+    "asset",
+    "maxTimeoutSeconds"
+   ],
+   "network": null,
+   "price": null,
+   "matches_listing": true
+  },
+  {
+   "url": "https://twitter.use.x402atlas.com/search",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "maxAmountRequired",
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": null,
+   "matches_listing": true
+  },
+  {
+   "url": "https://agi.apify.com/protocols/x402/prepaid-tokens",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "maxAmountRequired",
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": null,
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/block/:number",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "3000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "3000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.bitrefill.com/x402/gift-cards/search",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "maxAmountRequired",
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": null,
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/total-supply",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "3000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "3000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/deepstate/v1/book/:book",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/ens/:input",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/nonce/:address",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "3000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "3000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://cheaptokens.ai/api/buy",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": 1,
+   "missing_fields": [],
+   "network": "base",
+   "price": "1000000",
+   "matches_listing": false
+  },
+  {
+   "url": "https://websearch.use.x402atlas.com/search",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": null,
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "maxAmountRequired",
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": null,
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/deepstate/v1/stats/:book",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/deepstate/v1/candles/:book",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/network-info",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "1000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "1000",
+   "matches_listing": true
+  },
+  {
+   "url": "https://api.onesource.io/deepstate/v1/markets",
+   "method": "GET",
+   "status": 402,
+   "listed_network": "eip155:8453",
+   "listed_price": "5000",
+   "parseable": true,
+   "x402Version": 2,
+   "missing_fields": [
+    "resource"
+   ],
+   "network": "eip155:8453",
+   "price": "5000",
+   "matches_listing": true
+  }
+ ]
+}

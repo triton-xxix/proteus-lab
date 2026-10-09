@@ -1,5 +1,5 @@
 {
- "next_id": 117,
+ "next_id": 118,
  "items": [
   {
    "id": "P-0001",
@@ -2514,6 +2514,28 @@
    "id": "P-0116",
    "title": "x402: does an unpaid call to a public endpoint return a parseable 402 challenge?",
    "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-09T23:45:53+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-09T23:46:41+0100",
+   "note": "21 of 25 endpoints from the keyless Coinbase Bazaar list answered an unpaid call with HTTP 402 and parseable JSON (20 on x402 v2, all on Base, 0.001 to 0.005 USDC a call); 3 were POST-only, 1 was a 404, and 14 of the 25 are one vendor.",
+   "artefacts": [
+    "experiments/2026-10-09-P-0116"
+   ],
+   "minutes": 0,
+   "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0117",
+   "title": "Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C)",
+   "source": "desk",
    "needs": "",
    "after": "",
    "est_minutes": 15,
