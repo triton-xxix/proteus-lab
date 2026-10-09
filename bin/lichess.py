@@ -6,8 +6,11 @@ bot had played one game, on his word, and none since).
     lichess.py status                             my rating and record, from the log
 
 Opponents: online bots with an established (not provisional) blitz rating, nearest to mine first.
-v0 picked on a placeholder 2000 and drew a bot that hung its queen. Engine: Stockfish 19 at 0.3 s a
-move, as v0. Writes only `games/lichess/GAMES.csv` and `games/lichess/pgn/`. Stops on HALT, on the
+v0 picked on a placeholder 2000 and drew a bot that hung its queen. Engine: Stockfish 19. From 9 Oct
+2026 each game draws its think time at random, 0.3 s or 1.0 s a move, for the two-week test in
+`games/lichess/EXPERIMENT.md`; every challenge, accepted or not, goes to `CHALLENGES.csv` so cap
+refusals are counted from the file, not from stdout. Writes only `games/lichess/GAMES.csv`,
+`CHALLENGES.csv` and `pgn/`. Stops on HALT, on the
 game cap, or at the minute cap (an unfinished game is played out to its end, at most 20 minutes).
 The token comes from 1Password through bin/secrets.py and is never printed.
 """
@@ -17,6 +20,7 @@ import importlib.util
 import json
 import os
 import queue
+import random
 import threading
 import time
 import urllib.error
@@ -32,8 +36,48 @@ LOG = OUT + "/GAMES.csv"
 ENGINE = ROOT + "/sandbox/stockfish/stockfish/stockfish-macos-universal"
 API = "https://lichess.org"
 FIELDS = ["finished_utc", "game_id", "opponent", "opp_rating", "my_rating_before", "my_rating_after",
-          "colour", "result", "status", "moves", "url"]
+          "colour", "result", "status", "moves", "url", "think_s", "refusals", "draw_kind"]
+CHALLENGES = OUT + "/CHALLENGES.csv"
+CH_FIELDS = ["utc", "opponent", "opp_rating", "my_rating", "verdict", "detail"]
+THINK = [0.3, 1.0]
 H = {}
+
+
+def widen_log():
+    """Rewrite GAMES.csv under the current header when columns were added (9 Oct 2026: think_s,
+    refusals, draw_kind). Older rows keep blanks in the new columns."""
+    if not os.path.exists(LOG):
+        return
+    rows = list(csv.DictReader(open(LOG)))
+    if rows and set(FIELDS) <= set(rows[0].keys()):
+        return
+    with open(LOG, "w", newline="") as f:
+        w = csv.DictWriter(f, FIELDS)
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in FIELDS})
+
+
+def log_challenge(name, opp, mine, verdict, detail=""):
+    new = not os.path.exists(CHALLENGES)
+    with open(CHALLENGES, "a", newline="") as f:
+        w = csv.DictWriter(f, CH_FIELDS)
+        if new:
+            w.writeheader()
+        w.writerow({"utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "opponent": name,
+                    "opp_rating": opp, "my_rating": mine, "verdict": verdict, "detail": detail})
+
+
+def draw_kind(board, status):
+    if status == "stalemate" or board.is_stalemate():
+        return "stalemate"
+    if board.is_insufficient_material():
+        return "insufficient"
+    if board.is_repetition(3):
+        return "repetition"
+    if board.is_fifty_moves():
+        return "fifty"
+    return "other"
 
 
 def token():
@@ -77,7 +121,7 @@ def candidates(my_id, my_rating, tried):
     return sorted(out, key=lambda x: abs(x[1] - (my_rating or 1500)))
 
 
-def play(game_id, my_id):
+def play(game_id, my_id, think):
     q = queue.Queue()
     threading.Thread(target=stream, args=("/api/bot/game/stream/" + game_id, q), daemon=True).start()
     eng = chess.engine.SimpleEngine.popen_uci(ENGINE)
@@ -102,7 +146,7 @@ def play(game_id, my_id):
         for m in st["moves"].split():
             board.push_uci(m)
         if board.turn == (chess.WHITE if white else chess.BLACK):
-            mv = eng.play(board, chess.engine.Limit(time=0.3)).move
+            mv = eng.play(board, chess.engine.Limit(time=think)).move
             try:
                 req("/api/bot/game/%s/move/%s" % (game_id, mv.uci()), data={})
                 moves += 1
@@ -112,7 +156,13 @@ def play(game_id, my_id):
     w = st.get("winner")
     colour = "white" if white else "black"
     result = "draw" if st.get("status") in ("draw", "stalemate") or (st.get("status") != "started" and not w) else ("win" if w == colour else "loss")
-    return colour, result, st.get("status"), moves
+    kind = ""
+    if result == "draw":
+        board = chess.Board()
+        for m in st.get("moves", "").split():
+            board.push_uci(m)
+        kind = draw_kind(board, st.get("status"))
+    return colour, result, st.get("status"), moves, kind
 
 
 def cmd_play(a):
@@ -125,7 +175,8 @@ def cmd_play(a):
     print(f"me: {my_id}, blitz {rating}{' (provisional)' if prov else ''}, {games} rated games")
     events = queue.Queue()
     threading.Thread(target=stream, args=("/api/stream/event", events), daemon=True).start()
-    stop_at, played, tried = time.time() + a.minutes * 60, 0, set()
+    stop_at, played, tried, refused = time.time() + a.minutes * 60, 0, set(), 0
+    widen_log()
     new = not os.path.exists(LOG)
     with open(LOG, "a", newline="") as f:
         w = csv.DictWriter(f, FIELDS)
@@ -145,6 +196,8 @@ def cmd_play(a):
                 except urllib.error.HTTPError as e:
                     body = e.read().decode(errors="ignore")[:120].replace("\n", " ")
                     print(f"{name} ({opp}): challenge refused {e.code} {body}")
+                    log_challenge(name, opp, rating, "refused %d" % e.code, body)
+                    refused += 1
                     if e.code == 429:
                         # Rate limited: every later challenge tonight fails the same way (5 Oct, P-0062).
                         stop_at = 0
@@ -164,13 +217,19 @@ def cmd_play(a):
                         verdict = "declined"
                         break
                 print(f"{name} ({opp}): {verdict}")
+                reason = ""
+                if verdict == "declined":
+                    reason = ev["challenge"].get("declineReasonKey") or ev["challenge"].get("declineReason") or ""
+                log_challenge(name, opp, rating, verdict, reason)
                 if verdict != "accepted":
+                    refused += 1
                     try:
                         req("/api/challenge/%s/cancel" % cid, data={})
                     except Exception:
                         pass
                     continue
-                colour, result, status, moves = play(cid, my_id)
+                think = random.choice(THINK)
+                colour, result, status, moves, kind = play(cid, my_id, think)
                 time.sleep(3)
                 before = rating
                 my_id, rating, prov, games = me()
@@ -179,10 +238,13 @@ def cmd_play(a):
                 row = {"finished_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "game_id": cid,
                        "opponent": name, "opp_rating": opp, "my_rating_before": before, "my_rating_after": rating,
                        "colour": colour, "result": result, "status": status, "moves": moves,
-                       "url": f"https://lichess.org/{cid}"}
+                       "url": f"https://lichess.org/{cid}", "think_s": think, "refusals": refused,
+                       "draw_kind": kind}
                 w.writerow(row)
                 f.flush()
-                print(f"game {played + 1}: {result} v {name} ({opp}) as {colour}, {status}; rating {before} -> {rating}")
+                print(f"game {played + 1}: {result} v {name} ({opp}) as {colour}, {status}{' ' + kind if kind else ''}; "
+                      f"think {think}s; {refused} refused first; rating {before} -> {rating}")
+                refused = 0
                 played += 1
                 started = True
                 break
