@@ -1,0 +1,65 @@
+[
+{
+"case": "ICP",
+"control": "OPN",
+"t": 1773208800.0,
+"case_rank": 62,
+"control_rank": 63
+},
+{
+"case": "CC",
+"control": "ZBT",
+"t": 1776142800.0,
+"case_rank": 106,
+"control_rank": 105
+},
+{
+"case": "CHIP",
+"control": "CHESS",
+"t": 1776752184.0,
+"case_rank": 975,
+"control_rank": 976
+},
+{
+"case": "BLEND",
+"control": "HAEDAL",
+"t": 1777429411.0,
+"case_rank": 292,
+"control_rank": 293
+},
+{
+"case": "PROS",
+"control": "RDNT",
+"t": 1778232600.0,
+"case_rank": 822,
+"control_rank": 815
+},
+{
+"case": "BABY",
+"control": "BOME",
+"t": 1780651800.0,
+"case_rank": 208,
+"control_rank": 207
+},
+{
+"case": "AI",
+"control": "GRAM",
+"t": 1782788455.0,
+"case_rank": 67,
+"control_rank": 69
+},
+{
+"case": "EUL",
+"control": "SUN",
+"t": 1785027361.0,
+"case_rank": 231,
+"control_rank": 229
+},
+{
+"case": "CAP",
+"control": "SENT",
+"t": 1785981315.0,
+"case_rank": 52,
+"control_rank": 51
+}
+]

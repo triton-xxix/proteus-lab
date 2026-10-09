@@ -2,7 +2,9 @@
 the scorer fitted on the first half and judged on the second.
 
 Rules, fixed before the first run (9 Oct 2026):
-- Signals and targets exactly as analysis.py. A signal is "active" for 14 days after it is knowable.
+- Signals and targets exactly as analysis.py, except the two volume signals (volume_surge, rank_jump),
+  left out because their lift was under 2 and the live poller could not rebuild them (decided before
+  the first backtest run). A signal is "active" for 14 days after it is knowable.
 - Probability per (signal, target), fitted on TRAIN (signals 9 Oct 2025 to 31 Mar 2026 only):
   p = (hits + 20 * base) / (n + 20), shrunk toward the target's base rate.
 - Coin score on day d = 1 - product over targets the coin is not yet on, and over its active signals,
@@ -39,6 +41,7 @@ ACTIVE = 14 * DAY
 SHRINK = 20
 SIDE_COST = 0.0025
 SIZES = (10, 25, 50)
+LEFT_OUT = {"volume_surge", "rank_jump"}
 
 
 def fit(sig, targets, before, avail, base):
@@ -75,6 +78,7 @@ def pops():
 
 def run():
     st, targets, before, avail, sig, turn, days, dix, close = A.build()
+    sig = [x for x in sig if x["signal"] not in LEFT_OUT]
     res = A.tables(targets, before, avail, sig, turn, days, dix) if not os.path.exists(os.path.join(HERE, "research.json")) else json.load(open(os.path.join(HERE, "research.json")))
     base = {t: res[t]["base_rate_14d"] for t in targets}
     p = fit(sig, targets, before, avail, base)
