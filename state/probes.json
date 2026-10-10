@@ -1,5 +1,5 @@
 {
- "next_id": 125,
+ "next_id": 126,
  "items": [
   {
    "id": "P-0001",
@@ -2696,9 +2696,31 @@
    "id": "P-0124",
    "title": "Decomposed classification: does a fitted weight over five narrow questions beat one direct question on public spam data?",
    "source": "vault",
-   "needs": "",
+   "needs": "a local language model (Ollama or llama.cpp with a model)",
    "after": "",
    "est_minutes": 30,
+   "added": "2026-10-10",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-10T23:48:33+0100",
+   "verdict": "blocked",
+   "verdict_at": "2026-10-10T23:49:24+0100",
+   "note": "No local model on this Mac: nothing on port 11434, no Ollama binary or app, so the five-question fit could not be run. The harvest and Skool stack lines claimed Ollama; both corrected tonight.",
+   "artefacts": [
+    "experiments/2026-10-10-P-0124"
+   ],
+   "minutes": 0,
+   "calls": 12,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0125",
+   "title": "Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
    "added": "2026-10-10",
    "status": "open",
    "attempts": 0,
