@@ -1,5 +1,5 @@
 {
- "next_id": 126,
+ "next_id": 127,
  "items": [
   {
    "id": "P-0001",
@@ -2745,6 +2745,26 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-10",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0126",
+   "title": "Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 40,
+   "added": "2026-10-11",
    "status": "open",
    "attempts": 0,
    "started_at": null,
