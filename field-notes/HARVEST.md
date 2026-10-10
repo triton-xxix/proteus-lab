@@ -6,23 +6,32 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-199 judged over 14 harvest days, 133 kept, 46 testable, 44 queued as probes, 36 with a probe verdict.
+213 judged over 15 harvest days, 142 kept, 49 testable, 47 queued as probes, 42 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0198 | 2026-10-09 | vault | [x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go](https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk) | mechanism | tools-for-strangers | yes | P-0116 |
+| H-0212 | 2026-10-10 | vault | [Decomposing one classification into several narrow questions with weights fitted on a labe]() | mechanism | tools-for-strangers | yes | P-0124 |
+| H-0211 | 2026-10-10 | awesome | [bill10/agent-007 (new in awesome-claude-code)](https://github.com/bill10/agent-007) | mechanism | tools-for-strangers | no: Needs a web service, git repos and Claude Code or Codex agen |  |
+| H-0207 | 2026-10-10 | hn | [Can you use autoregressive diffusion to generate market data?](https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/) | mechanism | forecasting | no: Needs tick-level order book data and GPU training, not keyle |  |
+| H-0206 | 2026-10-10 | vault | [Templates, thumbnails, overlays and pre-launch guides sold or published to creators before]() | mechanism | tools-for-strangers | no: Needs a storefront and an audience, and the result takes wee |  |
+| H-0205 | 2026-10-10 | awesome | [automatis-tools/agents-can-communicate (new in awesome-claude-code)](https://github.com/automatis-tools/agents-can-communicate) | mechanism | tools-for-strangers | no: Needs Node 24 and a second vendor's client installed and tru |  |
+| H-0204 | 2026-10-10 | youtube | [Code Demo - Web-scraping with API's](https://www.youtube.com/watch?v=H-6gyxVGj6A) | mechanism | open-data | yes | P-0123 |
+| H-0203 | 2026-10-10 | arxiv | [SuperNav: An Agentic Navigation System for Any Task in Any Scene](https://arxiv.org/abs/2610.12126) | mechanism | tech | no: Needs a robot or the HM3D simulator plus a multimodal model  |  |
+| H-0202 | 2026-10-10 | github | [wheresryan22/anatomy: A Claude Code skill that turns a technical idea into a detailed, int](https://github.com/wheresryan22/anatomy) | mechanism | tools-for-strangers | yes | P-0122 |
+| H-0200 | 2026-10-10 | vault | [UK shape of selling booking software through trade job software and profile booking button](https://www.youtube.com/watch?v=mr4YV-9MY0Q) | mechanism | tools-for-strangers | no: The open question is which UK job software trades use and wh |  |
+| H-0198 | 2026-10-09 | vault | [x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go](https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk) | mechanism | tools-for-strangers | yes | P-0116 **works** |
 | H-0195 | 2026-10-09 | arxiv | [A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization](https://arxiv.org/abs/2610.12183) | mechanism | mechanism-hunting | no: Needs the benchmark harness plus LLM calls across domains; n |  |
-| H-0194 | 2026-10-09 | github | [Jakeschincariol/founder-skill: Eleven free Claude skills that test a business before you l](https://github.com/Jakeschincariol/founder-skill) | both | tools-for-strangers | yes | P-0115 |
+| H-0194 | 2026-10-09 | github | [Jakeschincariol/founder-skill: Eleven free Claude skills that test a business before you l](https://github.com/Jakeschincariol/founder-skill) | both | tools-for-strangers | yes | P-0115 **works** |
 | H-0192 | 2026-10-09 | vault | [Join and extract the four free communities that cover both asks: Emerging Fashion Designer](https://www.skool.com/discovery?q=fashion+design) | mechanism | tools-for-strangers | no: Needs Luke to join each community in an interactive browser  |  |
-| H-0191 | 2026-10-09 | awesome | [4da-systems/4da (new in awesome-mcp-servers)](https://github.com/4da-systems/4da) | mechanism | tools-for-strangers | yes | P-0114 |
+| H-0191 | 2026-10-09 | awesome | [4da-systems/4da (new in awesome-mcp-servers)](https://github.com/4da-systems/4da) | mechanism | tools-for-strangers | yes | P-0114 **blocked** |
 | H-0189 | 2026-10-09 | arxiv | [Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for In](https://arxiv.org/abs/2610.12281) | mechanism | mechanism-hunting | no: Needs 458 trained models and genomics tooling; no keyless sl |  |
-| H-0188 | 2026-10-09 | github | [franzenzenhofer/big-arrow-on-the-screen: Let your AI agents paint big arrows, boxes and te](https://github.com/franzenzenhofer/big-arrow-on-the-screen) | mechanism | tools-for-strangers | yes | P-0113 |
+| H-0188 | 2026-10-09 | github | [franzenzenhofer/big-arrow-on-the-screen: Let your AI agents paint big arrows, boxes and te](https://github.com/franzenzenhofer/big-arrow-on-the-screen) | mechanism | tools-for-strangers | yes | P-0113 **blocked** |
 | H-0186 | 2026-10-09 | vault | [A scoped UK test of one flip with the compliance costs priced first, only if Luke wants th](https://www.skool.com/ai-car-trader-9959) | mechanism | cars | no: A real flip needs money, a car and insurance; no keyless sli |  |
 | H-0184 | 2026-10-08 | vault | [Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week ](https://vimeo.com/1233794507/cf61fad386) | mechanism | none | no: LinkedIn search needs a logged-in account and public pages b |  |
-| H-0182 | 2026-10-08 | youtube | [Pump Fun Sniper Bot (Solana) — Memecoin Trading / Full Tutorial 2026](https://www.youtube.com/watch?v=E0QoMIjVI44) (intel) | mechanism | desk:grinder | yes | P-0099 |
-| H-0180 | 2026-10-08 | github | [cth9191/animate: Procedural animation in any style for Claude Code: short single-file canv](https://github.com/cth9191/animate) | mechanism | tools-for-strangers | yes | P-0098 |
+| H-0182 | 2026-10-08 | youtube | [Pump Fun Sniper Bot (Solana) — Memecoin Trading / Full Tutorial 2026](https://www.youtube.com/watch?v=E0QoMIjVI44) (intel) | mechanism | desk:grinder | yes | P-0099 **works** |
+| H-0180 | 2026-10-08 | github | [cth9191/animate: Procedural animation in any style for Claude Code: short single-file canv](https://github.com/cth9191/animate) | mechanism | tools-for-strangers | yes | P-0098 **works** |
 | H-0178 | 2026-10-08 | vault | [Code the five rules as a freqtrade strategy and score it on the two-year sample and payout](https://www.instagram.com/reel/DbJMHpDMK-1/) | mechanism | mechanism-hunting | yes | P-0104 **not-worth-it** |
 | H-0175 | 2026-10-08 | arxiv | [RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing](https://arxiv.org/abs/2610.10507) | mechanism | tech | no: Needs training a router model and the benchmark suites, far  |  |
 | H-0174 | 2026-10-08 | github | [openqodex/openqodex: Open source AI code review for Claude Code and Codex, before you push](https://github.com/openqodex/openqodex) | mechanism | tools-for-strangers | no: The reviewer stage needs a logged-in Claude Code or Codex se |  |
@@ -147,6 +156,118 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0212 Decomposing one classification into several narrow questions with weights fitted on a labelled set
+2026-10-10, vault, 
+
+- **Mechanism:** One broad classification is split into several narrow yes/no or scored questions, each answered by a model, and the answers are combined with weights fitted on a labelled set (for example logistic regression over the sub-answers). The labelled set does the calibration work, so the result is model-agnostic and cheap per call once built. It needs enough labelled examples to fit weights and held-out examples to measure accuracy.
+- **Claim:** The vault note says it reached 95 percent accuracy on held-out emails.
+- **Testable:** yes. On a public labelled spam set, does a logistic fit over five narrow local-model questions beat one direct question on held-out accuracy: percentage point difference? Queued as P-0124.
+- **Idea on its own:** needs-a-run. It is plausible that the fit helps, but the independent benchmark disagreed with the demo.
+- **How it would be done:** Download the UCI SMS spam set, split off a test portion, and write five narrow questions such as whether it asks for money or contains a link. Ask each of them of the local qwen model for the training rows, fit logistic regression on the answers, and compare held-out accuracy with a single direct prompt. Scoring needs no human.
+- **Stack already covers:** Ollama with a qwen model
+- **To fetch:** UCI SMS Spam Collection https://archive.ics.uci.edu/dataset/228/sms+spam+collection (Public labelled text for the held-out test.); scikit-learn https://scikit-learn.org/ (Logistic regression for the weights.)
+- **Field Notes line:** Splitting one classification into narrow questions with weights fitted on labelled data is a model-agnostic trick; a local test will show if it beats asking once.
+
+### H-0211 bill10/agent-007 (new in awesome-claude-code)
+2026-10-10, awesome, https://github.com/bill10/agent-007. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A web app gives each job card its own git worktree, a Claude Code or Codex worker in a real terminal, and ends the card as a pull request. A manager agent posts cards from a goal, reviews diffs and merges. The new piece is skill families: because Claude Code fits skill descriptions into about 1 percent of the context window, past about a hundred skills most show as bare names, so it groups skills and shows one line per family, with each card listing in full only the families its job needs.
+- **Claim:** The README says it runs a self-operating agent company with a job board, a manager agent and phone control over Tailscale.
+- **Testable:** no. Needs a web service, git repos and Claude Code or Codex agents running unattended, more than a 30 minute keyless slice. Needs: Agent clients running as workers, Tailscale for the phone side..
+- **Idea on its own:** sound. Grouping skills under a short index is a sound answer to a real context budget limit.
+- **How it would be done:** The skill family idea could be tried locally by grouping the skills Proteus has and testing whether the model picks the right one more often. The job board layer is a worktree per card plus a queue, which Proteus already approximates with probes. A person would review merged PRs.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** bill10/agent-007 https://github.com/bill10/agent-007 (The app.)
+- **Field Notes line:** Agent 007 shows only a one-line index per skill family to dodge Claude Code's skill description budget, loading full families per job card.
+
+### H-0207 Can you use autoregressive diffusion to generate market data?
+2026-10-10, hn, https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/
+
+- **Mechanism:** The post asks whether autoregressive diffusion can generate order book events, including arrival times, by treating discrete and high-cardinality fields as continuous and seeing where that breaks. Market data is spiky (pennying beats two-tick improvements, orders arrive in bursts around whole-number times), which a smooth continuous model handles badly. Inputs are exchange event streams per symbol; the output is synthetic rollouts with texture beyond a point price forecast.
+- **Claim:** A Jane Street intern project explores generating market data events with autoregressive diffusion; the page I saw was cut off before its results.
+- **Testable:** no. Needs tick-level order book data and GPU training, not keyless in 30 minutes. Needs: Level-3 order book data and GPU time..
+- **Idea on its own:** needs-a-run. Realistic synthetic books are useful for backtests, but the result needs data nobody here has.
+- **How it would be done:** Read the full post for the results, then find a free book dataset such as a Smarkets or Binance depth snapshot stream. Train a small autoregressive model on event deltas and compare spacing and size distributions to real data. A quant would judge whether the rollouts keep the spikes.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** LOBSTER sample data https://lobsterdata.com/info/DataSamples.php (Free sample order book files to check distributions.)
+- **Missing:** Tick-level book data at scale and GPU training time.
+- **Field Notes line:** Jane Street asks if diffusion models can generate order book events with timing, treating discrete order fields as continuous and noting where that breaks.
+
+### H-0206 Templates, thumbnails, overlays and pre-launch guides sold or published to creators before a big game launch
+2026-10-10, vault, 
+
+- **Mechanism:** Creators building content around a big game launch buy ready-made assets (thumbnail templates, stream overlays, pre-launch guides). A seller makes them from public trailer information and sells before launch, then ranks guide and search pages in the weeks beforehand. The window is short because guide sites need months to rank and the game is dated 19 Nov 2026.
+- **Claim:** The carousel says there are four ways to earn from a huge game launch, which the vault found false as stated.
+- **Testable:** no. Needs a storefront and an audience, and the result takes weeks of sales or search ranking. Needs: A storefront account such as Gumroad or Etsy and an audience..
+- **Idea on its own:** needs-a-run. Demand is predictable but unproven for any one seller, and the ranking window is short.
+- **How it would be done:** Pull search-interest data for the game and related terms to size demand. Build a small pack of thumbnail and overlay templates using stills and HyperFrames, using no publisher artwork. List it on a marketplace and track views and sales for two weeks. A designer would add polish and real examples.
+- **Stack already covers:** Gemini (stills), HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **To fetch:** Google Trends via pytrends https://github.com/GeneralMills/pytrends (Keyless search-interest series to size demand.)
+- **Missing:** A storefront, an audience and original artwork free of publisher IP.
+- **Field Notes line:** Pre-launch asset packs and guides for creators are the one real angle on a big game launch, and the search window closes fast.
+
+### H-0205 automatis-tools/agents-can-communicate (new in awesome-claude-code)
+2026-10-10, awesome, https://github.com/automatis-tools/agents-can-communicate. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A local mailbox shared by coding clients on one machine and OS user. Each client is wired in through its own hooks or plugin so a session can send, read and acknowledge messages, with delivery state tracked so the sender can see whether a message was answered. A handoff note (done, decisions, next steps) is saved when switching clients. There is no lead agent.
+- **Claim:** The README says it carries messages between Claude Code, Codex and Antigravity CLI sessions on one machine.
+- **Testable:** no. Needs Node 24 and a second vendor's client installed and trusted, which Proteus does not have. Needs: Codex or Antigravity CLI installed and signed in, Node 24..
+- **Idea on its own:** sound. A file-backed mailbox with receipts is a simple and sound way to cross vendor clients.
+- **How it would be done:** Install the npm package, run the installer, and open two clients in one project. Send a review request from one and see whether the other finds it unprompted. Within Proteus the same idea could be a handoff file between a parent and a hooked child.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agents-can-communicate https://github.com/automatis-tools/agents-can-communicate (The package.)
+- **Field Notes line:** A local mailbox lets Claude Code and Codex sessions message each other through hooks, with delivery receipts and no lead agent.
+
+### H-0204 Code Demo - Web-scraping with API's
+2026-10-10, youtube, https://www.youtube.com/watch?v=H-6gyxVGj6A
+
+- **Mechanism:** The session walks through pulling police data for England, Wales and Northern Ireland from the data.police.uk REST API with Python requests in a Jupyter notebook. The pattern is build a URL with a latitude, longitude and month, send a GET, parse the JSON list into a dataframe, and loop over places or months. The numbers come from forces' monthly returns, so the latest month lags.
+- **Claim:** The talk teaches API-based collection of UK police data with Python for beginners.
+- **Testable:** yes. How many street-level crime records does data.police.uk return for one fixed point and month, and does it answer without a key within the rate limit: number and yes/no? Queued as P-0123.
+- **Idea on its own:** sound. A public keyless JSON endpoint with monthly geocoded data is a sound base for forecasting or mapping.
+- **How it would be done:** Call the street-crimes-at-point endpoint for a fixed point over several months and store the JSON. Check the documented rate limit by timing a short burst of calls. Aggregate by category and month to see whether a simple seasonal forecast beats last month's count, which would suit a pre-registered paper book.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** data.police.uk API docs https://data.police.uk/docs/ (Endpoint list and rate limits.)
+- **Field Notes line:** data.police.uk gives keyless street-level crime for any UK point and month, a free open dataset Proteus has not used yet.
+
+### H-0203 SuperNav: An Agentic Navigation System for Any Task in Any Scene
+2026-10-10, arxiv, https://arxiv.org/abs/2610.12126
+
+- **Mechanism:** A pretrained multimodal LLM, with no navigation fine-tuning, is wrapped in a harness of navigation skills, tools for physical interaction and task-progress and context management. The model names destinations by pointing at pixels in an image (a visual-point interface), the tools turn that point into motion, and execution feedback comes back for the model to revise. Evaluation is on HM3D simulation tasks and a real quadruped.
+- **Claim:** The paper says SuperNav beats four baselines on instance-level, multi-object and demand-driven navigation tasks.
+- **Testable:** no. Needs a robot or the HM3D simulator plus a multimodal model API, none keyless in 30 minutes. Needs: HM3D dataset access, a robot or simulator, a multimodal model..
+- **Idea on its own:** sound. Keeping the general model for decisions and putting motion in tools is a sound split, and the pixel-pointing interface is reusable.
+- **How it would be done:** The pattern could be copied to screen or browser agents: the model points at a coordinate in a screenshot, a tool executes it, and the result image goes back. Reproducing the paper needs the project page code, the HM3D scenes and a simulator such as Habitat. A robotics lab would handle the quadruped side.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** SuperNav project page https://zju3dv.github.io/SuperNav/ (Code and demos if released.); Habitat-sim https://github.com/facebookresearch/habitat-sim (Simulator that runs HM3D scenes.)
+- **Missing:** A robot or simulator setup and a multimodal model budget.
+- **Field Notes line:** A robot navigator that lets an unmodified vision LLM point at pixels to pick destinations, with tools doing the walking and feedback correcting it.
+
+### H-0202 wheresryan22/anatomy: A Claude Code skill that turns a technical idea into a detailed, interactive isometric figure of a
+2026-10-10, github, https://github.com/wheresryan22/anatomy
+
+- **Mechanism:** A Claude Code skill that tells the model to invent a physical machine whose working matches a technical concept, then build it from many small shaded isometric SVG parts with an optional WebGL shader layer between a back and front SVG. A small model object drives both the parts and the readout, so the numbers shown are the same ones that move the parts. A bundled Node kit (no npm dependencies) provides the camera, shading and an audit script that checks for pipes passing through parts, and capture scripts screenshot the result so the model can zoom in and self-check.
+- **Claim:** The README says it turns a technical idea into an interactive isometric figure, with 226 stars after two days.
+- **Testable:** yes. Does the smallest example (dial-indicator) open as a standalone page and does its audit script run on Node with no npm install: yes or no? Queued as P-0122.
+- **Idea on its own:** sound. A model-driven figure with a self-audit loop is a sound way to get diagrams that carry real numbers.
+- **How it would be done:** Clone the repo into the sandbox, read the skill file and the smallest example, and run its audit and build scripts under Node. Then give it one concept Proteus already has, such as the Dixon-Coles goal grid or a token-bucket rate limiter, and see whether the output stays accurate. Output could drop into the lab page or Field Notes as an interactive figure. No human job is needed beyond judging whether the figure looks good.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** wheresryan22/anatomy https://github.com/wheresryan22/anatomy (The skill and kit itself.)
+- **Field Notes line:** A skill that makes Claude draw a technical idea as a working isometric machine in SVG, with an audit script checking no parts collide.
+
+### H-0200 UK shape of selling booking software through trade job software and profile booking buttons
+2026-10-10, vault, https://www.youtube.com/watch?v=mr4YV-9MY0Q
+
+- **Mechanism:** A booking button is attached to a trade's Google Business Profile and wired into whatever job-management software the trade already runs, so a customer books a slot without a call. It depends on Google's booking-link surface (Reserve with Google needs partner approval, otherwise a plain appointment URL on the profile) and on the job software exposing an availability or job-creation API or a calendar feed. The sale is made by phone, bundled with the job software the trade already uses, and billed as recurring software.
+- **Claim:** The video says a booking widget sold to trades reaches $50K a month, on the founder's word only.
+- **Testable:** no. The open question is which UK job software trades use and whether they expose APIs, which needs market calls and partner approval, not a keyless run. Needs: Phone conversations with UK trades, Google partner approval for Reserve with Google, API access to UK job software..
+- **Idea on its own:** needs-a-run. The distribution logic is plausible, but which UK software trades run and whether it has APIs is unknown.
+- **How it would be done:** First list the job software UK plumbers and HVAC firms actually use, from their websites and review sites, and tally it. For each top package, check for a public API, calendar export or Zapier-style connector. Then build the smallest widget: a hosted booking page that writes to a calendar or webhook, linked from the Google profile's booking URL field. A hired person would call twenty trades to learn which software they use and what they would pay, and to sell the first accounts.
+- **Stack already covers:** Claude Code with skills and sub-agents, Ollama with a qwen model
+- **To fetch:** Cal.com (open source) https://github.com/calcom/cal.com (Self-hostable booking page to use as the widget base.); Google Business Profile booking links https://support.google.com/business/answer/6218536 (Documents the appointment URL field that needs no partner approval.)
+- **Missing:** A mapped list of which job software UK trades use and which of them have an integration surface.
+- **Field Notes line:** A booking button on a trade's Google profile, sold alongside the job software they already use, is the distribution idea; the UK version is unmapped.
 
 ### H-0198 x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation governance
 2026-10-09, vault, https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk
@@ -1635,7 +1756,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0198 | 2026-10-09 | x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go | open | sound | yes | P-0116 |
+| H-0212 | 2026-10-10 | Decomposing one classification into several narrow questions with weights fitted on a labe | open | needs-a-run | yes | P-0124 |
+| H-0206 | 2026-10-10 | Templates, thumbnails, overlays and pre-launch guides sold or published to creators before | open | needs-a-run | no |  |
+| H-0200 | 2026-10-10 | UK shape of selling booking software through trade job software and profile booking button | open | needs-a-run | no |  |
+| H-0198 | 2026-10-09 | x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go | open | sound | yes | P-0116 **works** |
 | H-0192 | 2026-10-09 | Join and extract the four free communities that cover both asks: Emerging Fashion Designer | open | sound | no |  |
 | H-0186 | 2026-10-09 | A scoped UK test of one flip with the compliance costs priced first, only if Luke wants th | open | needs-a-run | no |  |
 | H-0184 | 2026-10-08 | Whether LinkedIn search surfaces enough recent dental and aesthetics owner posts per week  | open | needs-a-run | no |  |
@@ -1676,6 +1800,18 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0139 | 2026-10-10 | [scikit-learn](https://scikit-learn.org/) | Logistic regression for the weights. | H-0212 (Decomposing one classification into several narrow) | shelf |
+| T-0138 | 2026-10-10 | [UCI SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) | Public labelled text for the held-out test. | H-0212 (Decomposing one classification into several narrow) | shelf |
+| T-0137 | 2026-10-10 | [bill10/agent-007](https://github.com/bill10/agent-007) | The app. | H-0211 (bill10/agent-007 (new in awesome-claude-code)) | shelf |
+| T-0136 | 2026-10-10 | [LOBSTER sample data](https://lobsterdata.com/info/DataSamples.php) | Free sample order book files to check distributions. | H-0207 (Can you use autoregressive diffusion to generate m) | shelf |
+| T-0135 | 2026-10-10 | [Google Trends via pytrends](https://github.com/GeneralMills/pytrends) | Keyless search-interest series to size demand. | H-0206 (Templates, thumbnails, overlays and pre-launch gui) | shelf |
+| T-0134 | 2026-10-10 | [agents-can-communicate](https://github.com/automatis-tools/agents-can-communicate) | The package. | H-0205 (automatis-tools/agents-can-communicate (new in awe) | shelf |
+| T-0133 | 2026-10-10 | [data.police.uk API docs](https://data.police.uk/docs/) | Endpoint list and rate limits. | H-0204 (Code Demo - Web-scraping with API's) | shelf |
+| T-0132 | 2026-10-10 | [Habitat-sim](https://github.com/facebookresearch/habitat-sim) | Simulator that runs HM3D scenes. | H-0203 (SuperNav: An Agentic Navigation System for Any Tas) | shelf |
+| T-0131 | 2026-10-10 | [SuperNav project page](https://zju3dv.github.io/SuperNav/) | Code and demos if released. | H-0203 (SuperNav: An Agentic Navigation System for Any Tas) | shelf |
+| T-0130 | 2026-10-10 | [wheresryan22/anatomy](https://github.com/wheresryan22/anatomy) | The skill and kit itself. | H-0202 (wheresryan22/anatomy: A Claude Code skill that tur) | shelf |
+| T-0129 | 2026-10-10 | [Google Business Profile booking links](https://support.google.com/business/answer/6218536) | Documents the appointment URL field that needs no partner approval. | H-0200 (UK shape of selling booking software through trade) | shelf |
+| T-0128 | 2026-10-10 | [Cal.com (open source)](https://github.com/calcom/cal.com) | Self-hostable booking page to use as the widget base. | H-0200 (UK shape of selling booking software through trade) | shelf |
 | T-0127 | 2026-10-09 | [x402 reference repo](https://github.com/coinbase/x402) | Spec and example endpoints | H-0198 (x402 per-call payment rails for agents, Coinbase-o) | shelf |
 | T-0126 | 2026-10-09 | [Optuna](https://github.com/optuna/optuna) | Baseline optimiser to warm-start | H-0195 (A Closer Look at Agentic BBO: Benchmarking LLM Age) | shelf |
 | T-0125 | 2026-10-09 | [agentic-bbo](https://github.com/lamda-bbo/agentic-bbo) | Benchmark code from the paper | H-0195 (A Closer Look at Agentic BBO: Benchmarking LLM Age) | shelf |
@@ -1808,6 +1944,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0213 | 2026-10-10 | github | [transkatgirl/vibeclaude: A port of opencode-buttplugio to Claude Code written by](https://github.com/transkatgirl/vibeclaude) | Novelty plugin needing physical hardware; the hook to daemon to websocket path is generic. |
+| H-0210 | 2026-10-10 | youtube | [Tutorial 2: Understanding the UK Data Service Open Data API](https://www.youtube.com/watch?v=P5cwP-HK8uI) | The API needs a key and covers one survey dataset; the police API item is the better open-data one. |
+| H-0209 | 2026-10-10 | arxiv | [Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent Syste](https://arxiv.org/abs/2610.11899) | A survey of labels and architectures with no mechanism to run. |
+| H-0208 | 2026-10-10 | github | [Autumn1337/better-statusline: A status line for Claude Code: the session's figur](https://github.com/Autumn1337/better-statusline) | A cosmetic status line plugin; the cache countdown and spend bars are display, not a new mechanism. |
+| H-0201 | 2026-10-10 | hn | [`123456' password used in Danish CPR data breach](https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/) | News report of a breach with a weak password; no mechanism to record. |
 | H-0199 | 2026-10-09 | hn | [Show HN: Apogee: Rebuilding Mozilla's Orbit, fully local and private](https://github.com/darshi1337/apogee) | Generic local summariser extension using Ollama and WebGPU; no new mechanism. |
 | H-0197 | 2026-10-09 | awesome | [a1-x-tech/mcp-google-crux (new in awesome-mcp-servers)](https://github.com/a1-x-tech/mcp-google-crux) | Thin wrapper over a public API that needs a Google Cloud key. |
 | H-0196 | 2026-10-09 | youtube | [How Expected Goals xG Actually Works](https://www.youtube.com/watch?v=h32AlMsWV-o) | Transcript blocked, and xG explainers carry no new mechanism for the Pitch. |

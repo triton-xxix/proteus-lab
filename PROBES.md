@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 68 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 
-## Queue (23 open)
+## Queue (26 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -36,6 +36,9 @@ Verdicts so far: 68 works, 4 broken, 14 blocked, 8 not worth it. Killed: 4.
 | P-0119 | Grinder harness: an entry-delay variant (buy one minute after the snapshot) (DUE.md D-003): experiments/2026-10-06-grinder-fill-check/REPORT.md "Next" | desk | none |  | 0 | 40 min |
 | P-0120 | P-0084 trend portfolio: its recorded Sharpe 0.28 against 0.35 on a re-run of the same script and data; re-read (DUE.md D-004): experiments/2026-10-07-P-0088/README.md | desk | none |  | 0 | 40 min |
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
+| P-0122 | anatomy: does the dial-indicator example build and pass its own audit on Node with no npm install? | harvest | none |  | 0 | 20 min |
+| P-0123 | data.police.uk: how many street crimes come back for one point and month, keyless, inside the rate limit? | harvest | none |  | 0 | 15 min |
+| P-0124 | Decomposed classification: does a fitted weight over five narrow questions beat one direct question on public spam data? | vault | none |  | 0 | 30 min |
 
 ## Verdicts (94)
 
