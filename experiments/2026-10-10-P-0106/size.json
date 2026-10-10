@@ -1,0 +1,50 @@
+{
+ "rows": [
+  {
+   "symbol": "Gary",
+   "pages": 30,
+   "signatures": 30000,
+   "reached_first": false,
+   "first_slot": null,
+   "first_time": null
+  },
+  {
+   "symbol": "OWLNIGHT",
+   "pages": 30,
+   "signatures": 30000,
+   "reached_first": false,
+   "first_slot": null,
+   "first_time": null
+  },
+  {
+   "symbol": "ZKDARK",
+   "pages": 30,
+   "signatures": 30000,
+   "reached_first": false,
+   "first_slot": null,
+   "first_time": null
+  },
+  {
+   "symbol": "Gunner",
+   "pages": 30,
+   "signatures": 30000,
+   "reached_first": false,
+   "first_slot": null,
+   "first_time": null
+  },
+  {
+   "symbol": "QPAWS",
+   "pages": 29,
+   "signatures": 28032,
+   "reached_first": true,
+   "first_slot": 454986459,
+   "first_time": 1791576624
+  }
+ ],
+ "stats": {
+  "calls": 164,
+  "429": 13,
+  "errors": 2,
+  "seconds": 174.3
+ }
+}
