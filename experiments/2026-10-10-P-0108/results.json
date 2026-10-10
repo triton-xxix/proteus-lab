@@ -1,0 +1,46 @@
+{
+ "BTCUSDT": {
+  "days": 1737,
+  "span": [
+   "2022-01-01",
+   "2026-10-03"
+  ],
+  "all_mean_pct": 0.5,
+  "high_funding": {
+   "n": 292,
+   "non_overlapping": 70,
+   "mean_pct": 1.842,
+   "win_pct": 61.6,
+   "p_below": 0.9994
+  },
+  "low_funding": {
+   "n": 254,
+   "non_overlapping": 75,
+   "mean_pct": 1.315,
+   "win_pct": 57.1,
+   "p_above": 0.0228
+  }
+ },
+ "ETHUSDT": {
+  "days": 1737,
+  "span": [
+   "2022-01-01",
+   "2026-10-03"
+  ],
+  "all_mean_pct": 0.323,
+  "high_funding": {
+   "n": 283,
+   "non_overlapping": 71,
+   "mean_pct": 1.691,
+   "win_pct": 55.8,
+   "p_below": 0.9952
+  },
+  "low_funding": {
+   "n": 241,
+   "non_overlapping": 79,
+   "mean_pct": -0.08,
+   "win_pct": 49.0,
+   "p_above": 0.7668
+  }
+ }
+}
