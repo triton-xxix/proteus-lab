@@ -1,0 +1,79 @@
+{
+ "span_from": "2009-01-01",
+ "hold_sessions_for_controls": 4,
+ "per_market": {
+  "SPY": {
+   "n": 184,
+   "mean_pct": 0.687,
+   "win_pct": 63.0
+  },
+  "QQQ": {
+   "n": 175,
+   "mean_pct": 0.794,
+   "win_pct": 64.6
+  },
+  "DIA": {
+   "n": 179,
+   "mean_pct": 0.477,
+   "win_pct": 58.7
+  },
+  "IWM": {
+   "n": 204,
+   "mean_pct": 0.479,
+   "win_pct": 53.9
+  },
+  "EFA": {
+   "n": 239,
+   "mean_pct": 0.325,
+   "win_pct": 55.2
+  },
+  "EEM": {
+   "n": 252,
+   "mean_pct": 0.479,
+   "win_pct": 52.0
+  },
+  "EWU": {
+   "n": 227,
+   "mean_pct": 0.472,
+   "win_pct": 57.3
+  },
+  "EWJ": {
+   "n": 236,
+   "mean_pct": 0.386,
+   "win_pct": 55.9
+  },
+  "EWG": {
+   "n": 251,
+   "mean_pct": 0.107,
+   "win_pct": 48.2
+  }
+ },
+ "weak_monday": {
+  "n": 1947,
+  "mean_pct": 0.448,
+  "win_pct": 56.0
+ },
+ "down_monday_not_below_low": {
+  "n": 1490,
+  "mean_pct": 0.134,
+  "win_pct": 54.7
+ },
+ "any_weekday_dip_4d": {
+  "n": 10713,
+  "mean_pct": 0.229,
+  "win_pct": 56.0
+ },
+ "random_4d_mean_pct": 0.153,
+ "luck_p_at_or_above": 0.0,
+ "weak_monday_also_book1": {
+  "n": 265,
+  "mean_pct": 0.236,
+  "win_pct": 57.0
+ },
+ "weak_monday_not_book1": {
+  "n": 1682,
+  "mean_pct": 0.481,
+  "win_pct": 55.8
+ },
+ "overlap_share_pct": 13.6
+}
