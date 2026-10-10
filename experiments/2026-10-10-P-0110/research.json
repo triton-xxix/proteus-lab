@@ -1,0 +1,533 @@
+{
+ "upbit_krw": {
+  "base_rate_14d": 0.00328,
+  "coin_days": 236447,
+  "by_size_band": {
+   "101-300": {
+    "rate_14d": 0.0075,
+    "lift": 2.29,
+    "coin_days": 41455
+   },
+   "301+ or no volume": {
+    "rate_14d": 0.0014,
+    "lift": 0.43,
+    "coin_days": 182344
+   },
+   "top100": {
+    "rate_14d": 0.0166,
+    "lift": 5.06,
+    "coin_days": 12648
+   }
+  },
+  "signals": {
+   "binance_alpha": {
+    "signals": 272,
+    "hits_14d": 14,
+    "precision_14d": 0.0515,
+    "lift": 15.7,
+    "coverage_14d": 0.2,
+    "coverage_90d": 0.33,
+    "median_lead_days": 6.8
+   },
+   "binance_perp": {
+    "signals": 90,
+    "hits_14d": 11,
+    "precision_14d": 0.1222,
+    "lift": 37.2,
+    "coverage_14d": 0.16,
+    "coverage_90d": 0.36,
+    "median_lead_days": 24.1
+   },
+   "binance_spot_announce": {
+    "signals": 14,
+    "hits_14d": 4,
+    "precision_14d": 0.2857,
+    "lift": 87.1,
+    "coverage_14d": 0.06,
+    "coverage_90d": 0.09,
+    "median_lead_days": 12.6
+   },
+   "binance_spot_trading": {
+    "signals": 106,
+    "hits_14d": 6,
+    "precision_14d": 0.0566,
+    "lift": 17.2,
+    "coverage_14d": 0.09,
+    "coverage_90d": 0.13,
+    "median_lead_days": 7.3
+   },
+   "bithumb_krw": {
+    "signals": 48,
+    "hits_14d": 2,
+    "precision_14d": 0.0417,
+    "lift": 12.7,
+    "coverage_14d": 0.03,
+    "coverage_90d": 0.12,
+    "median_lead_days": 38.5
+   },
+   "bybit_perp": {
+    "signals": 344,
+    "hits_14d": 12,
+    "precision_14d": 0.0349,
+    "lift": 10.6,
+    "coverage_14d": 0.17,
+    "coverage_90d": 0.33,
+    "median_lead_days": 13.9
+   },
+   "bybit_spot": {
+    "signals": 42,
+    "hits_14d": 11,
+    "precision_14d": 0.2619,
+    "lift": 79.8,
+    "coverage_14d": 0.16,
+    "coverage_90d": 0.25,
+    "median_lead_days": 6.3
+   },
+   "coinbase_post": {
+    "signals": 24,
+    "hits_14d": 5,
+    "precision_14d": 0.2083,
+    "lift": 63.5,
+    "coverage_14d": 0.09,
+    "coverage_90d": 0.12,
+    "median_lead_days": 6.0
+   },
+   "coinbase_roadmap": {
+    "signals": 45,
+    "hits_14d": 4,
+    "precision_14d": 0.0889,
+    "lift": 27.1,
+    "coverage_14d": 0.07,
+    "coverage_90d": 0.25,
+    "median_lead_days": 19.3
+   },
+   "coinbase_trading": {
+    "signals": 75,
+    "hits_14d": 15,
+    "precision_14d": 0.2,
+    "lift": 60.9,
+    "coverage_14d": 0.23,
+    "coverage_90d": 0.35,
+    "median_lead_days": 6.7
+   },
+   "gate_spot": {
+    "signals": 617,
+    "hits_14d": 11,
+    "precision_14d": 0.0178,
+    "lift": 5.4,
+    "coverage_14d": 0.14,
+    "coverage_90d": 0.28,
+    "median_lead_days": 11.7
+   },
+   "okx_spot": {
+    "signals": 137,
+    "hits_14d": 8,
+    "precision_14d": 0.0584,
+    "lift": 17.8,
+    "coverage_14d": 0.12,
+    "coverage_90d": 0.17,
+    "median_lead_days": 5.7
+   },
+   "okx_swap": {
+    "signals": 260,
+    "hits_14d": 12,
+    "precision_14d": 0.0462,
+    "lift": 14.1,
+    "coverage_14d": 0.17,
+    "coverage_90d": 0.32,
+    "median_lead_days": 11.7
+   },
+   "rank_jump": {
+    "signals": 1121,
+    "hits_14d": 5,
+    "precision_14d": 0.0045,
+    "lift": 1.4,
+    "coverage_14d": 0.09,
+    "coverage_90d": 0.25,
+    "median_lead_days": 23.1
+   },
+   "upbit_btc_usdt_only": {
+    "signals": 8,
+    "hits_14d": 1,
+    "precision_14d": 0.125,
+    "lift": 38.1,
+    "coverage_14d": 0.01,
+    "coverage_90d": 0.06,
+    "median_lead_days": 18.9
+   },
+   "upbit_krw": {
+    "signals": 0,
+    "hits_14d": 0,
+    "precision_14d": null,
+    "lift": null,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "volume_surge": {
+    "signals": 1698,
+    "hits_14d": 10,
+    "precision_14d": 0.0059,
+    "lift": 1.8,
+    "coverage_14d": 0.16,
+    "coverage_90d": 0.36,
+    "median_lead_days": 22.4
+   }
+  },
+  "target_events_with_prior_market": 69
+ },
+ "binance_spot": {
+  "base_rate_14d": 0.00161,
+  "coin_days": 132452,
+  "by_size_band": {
+   "101-300": {
+    "rate_14d": 0.0055,
+    "lift": 3.42,
+    "coin_days": 9997
+   },
+   "301+ or no volume": {
+    "rate_14d": 0.00097,
+    "lift": 0.6,
+    "coin_days": 118931
+   },
+   "top100": {
+    "rate_14d": 0.0122,
+    "lift": 7.59,
+    "coin_days": 3524
+   }
+  },
+  "signals": {
+   "binance_alpha": {
+    "signals": 256,
+    "hits_14d": 2,
+    "precision_14d": 0.0078,
+    "lift": 4.9,
+    "coverage_14d": 0.1,
+    "coverage_90d": 0.4,
+    "median_lead_days": 19.9
+   },
+   "binance_perp": {
+    "signals": 80,
+    "hits_14d": 6,
+    "precision_14d": 0.075,
+    "lift": 46.6,
+    "coverage_14d": 0.3,
+    "coverage_90d": 0.75,
+    "median_lead_days": 15.7
+   },
+   "binance_spot_announce": {
+    "signals": 0,
+    "hits_14d": 0,
+    "precision_14d": null,
+    "lift": null,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "binance_spot_trading": {
+    "signals": 0,
+    "hits_14d": 0,
+    "precision_14d": null,
+    "lift": null,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "bithumb_krw": {
+    "signals": 57,
+    "hits_14d": 2,
+    "precision_14d": 0.0351,
+    "lift": 21.8,
+    "coverage_14d": 0.1,
+    "coverage_90d": 0.1,
+    "median_lead_days": 11.8
+   },
+   "bybit_perp": {
+    "signals": 339,
+    "hits_14d": 6,
+    "precision_14d": 0.0177,
+    "lift": 11.0,
+    "coverage_14d": 0.3,
+    "coverage_90d": 0.7,
+    "median_lead_days": 14.9
+   },
+   "bybit_spot": {
+    "signals": 35,
+    "hits_14d": 1,
+    "precision_14d": 0.0286,
+    "lift": 17.8,
+    "coverage_14d": 0.05,
+    "coverage_90d": 0.2,
+    "median_lead_days": 19.4
+   },
+   "coinbase_post": {
+    "signals": 22,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "coinbase_roadmap": {
+    "signals": 41,
+    "hits_14d": 4,
+    "precision_14d": 0.0976,
+    "lift": 60.7,
+    "coverage_14d": 0.2,
+    "coverage_90d": 0.2,
+    "median_lead_days": 8.0
+   },
+   "coinbase_trading": {
+    "signals": 66,
+    "hits_14d": 1,
+    "precision_14d": 0.0152,
+    "lift": 9.4,
+    "coverage_14d": 0.05,
+    "coverage_90d": 0.2,
+    "median_lead_days": 19.4
+   },
+   "gate_spot": {
+    "signals": 603,
+    "hits_14d": 4,
+    "precision_14d": 0.0066,
+    "lift": 4.1,
+    "coverage_14d": 0.2,
+    "coverage_90d": 0.35,
+    "median_lead_days": 12.0
+   },
+   "okx_spot": {
+    "signals": 127,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.05,
+    "median_lead_days": 20.9
+   },
+   "okx_swap": {
+    "signals": 249,
+    "hits_14d": 5,
+    "precision_14d": 0.0201,
+    "lift": 12.5,
+    "coverage_14d": 0.25,
+    "coverage_90d": 0.45,
+    "median_lead_days": 10.6
+   },
+   "rank_jump": {
+    "signals": 289,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.1,
+    "median_lead_days": 18.9
+   },
+   "upbit_btc_usdt_only": {
+    "signals": 3,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "upbit_krw": {
+    "signals": 44,
+    "hits_14d": 3,
+    "precision_14d": 0.0682,
+    "lift": 42.4,
+    "coverage_14d": 0.15,
+    "coverage_90d": 0.2,
+    "median_lead_days": 6.2
+   },
+   "volume_surge": {
+    "signals": 545,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.15,
+    "median_lead_days": 30.3
+   }
+  },
+  "target_events_with_prior_market": 20
+ },
+ "coinbase": {
+  "base_rate_14d": 0.0023,
+  "coin_days": 209037,
+  "by_size_band": {
+   "101-300": {
+    "rate_14d": 0.00339,
+    "lift": 1.47,
+    "coin_days": 36291
+   },
+   "301+ or no volume": {
+    "rate_14d": 0.00155,
+    "lift": 0.68,
+    "coin_days": 164173
+   },
+   "top100": {
+    "rate_14d": 0.01201,
+    "lift": 5.22,
+    "coin_days": 8573
+   }
+  },
+  "signals": {
+   "binance_alpha": {
+    "signals": 237,
+    "hits_14d": 3,
+    "precision_14d": 0.0127,
+    "lift": 5.5,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.2,
+    "median_lead_days": 41.0
+   },
+   "binance_perp": {
+    "signals": 68,
+    "hits_14d": 6,
+    "precision_14d": 0.0882,
+    "lift": 38.3,
+    "coverage_14d": 0.15,
+    "coverage_90d": 0.44,
+    "median_lead_days": 25.1
+   },
+   "binance_spot_announce": {
+    "signals": 7,
+    "hits_14d": 1,
+    "precision_14d": 0.1429,
+    "lift": 62.1,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.05,
+    "median_lead_days": 18.6
+   },
+   "binance_spot_trading": {
+    "signals": 96,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.1,
+    "median_lead_days": 36.0
+   },
+   "bithumb_krw": {
+    "signals": 35,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.1,
+    "median_lead_days": 36.3
+   },
+   "bybit_perp": {
+    "signals": 323,
+    "hits_14d": 5,
+    "precision_14d": 0.0155,
+    "lift": 6.7,
+    "coverage_14d": 0.12,
+    "coverage_90d": 0.44,
+    "median_lead_days": 29.4
+   },
+   "bybit_spot": {
+    "signals": 23,
+    "hits_14d": 1,
+    "precision_14d": 0.0435,
+    "lift": 18.9,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.15,
+    "median_lead_days": 43.5
+   },
+   "coinbase_post": {
+    "signals": 0,
+    "hits_14d": 0,
+    "precision_14d": null,
+    "lift": null,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "coinbase_roadmap": {
+    "signals": 0,
+    "hits_14d": 0,
+    "precision_14d": null,
+    "lift": null,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "coinbase_trading": {
+    "signals": 0,
+    "hits_14d": 0,
+    "precision_14d": null,
+    "lift": null,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "gate_spot": {
+    "signals": 591,
+    "hits_14d": 3,
+    "precision_14d": 0.0051,
+    "lift": 2.2,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.2,
+    "median_lead_days": 44.4
+   },
+   "okx_spot": {
+    "signals": 127,
+    "hits_14d": 1,
+    "precision_14d": 0.0079,
+    "lift": 3.4,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.17,
+    "median_lead_days": 28.4
+   },
+   "okx_swap": {
+    "signals": 239,
+    "hits_14d": 4,
+    "precision_14d": 0.0167,
+    "lift": 7.3,
+    "coverage_14d": 0.1,
+    "coverage_90d": 0.37,
+    "median_lead_days": 31.4
+   },
+   "rank_jump": {
+    "signals": 988,
+    "hits_14d": 1,
+    "precision_14d": 0.001,
+    "lift": 0.4,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.22,
+    "median_lead_days": 41.0
+   },
+   "upbit_btc_usdt_only": {
+    "signals": 2,
+    "hits_14d": 0,
+    "precision_14d": 0.0,
+    "lift": 0.0,
+    "coverage_14d": 0.0,
+    "coverage_90d": 0.0,
+    "median_lead_days": null
+   },
+   "upbit_krw": {
+    "signals": 25,
+    "hits_14d": 1,
+    "precision_14d": 0.04,
+    "lift": 17.4,
+    "coverage_14d": 0.02,
+    "coverage_90d": 0.07,
+    "median_lead_days": 47.7
+   },
+   "volume_surge": {
+    "signals": 1488,
+    "hits_14d": 4,
+    "precision_14d": 0.0027,
+    "lift": 1.2,
+    "coverage_14d": 0.15,
+    "coverage_90d": 0.27,
+    "median_lead_days": 13.0
+   }
+  },
+  "target_events_with_prior_market": 41
+ }
+}

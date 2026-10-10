@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 74 works, 4 broken, 17 blocked, 8 not worth it. Killed: 4.
+Verdicts so far: 74 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,7 +22,6 @@ Verdicts so far: 74 works, 4 broken, 17 blocked, 8 not worth it. Killed: 4.
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
-| P-0110 | Pre-listing, shorter hold: backtest holding only the three strongest signals (new Bybit spot, Coinbase trading start, Binance spot announcement) for 7 days instead of a standing 14-day list, fitted Oct to Mar, judged Apr to Sep, same costs and benchmarks as experiments/2026-10-09-prelisting/backtest.py | desk | none |  | 0 | 30 min |
 | P-0111 | Pre-listing, Korean chatter: find a keyless Korean source (DCInside coin gallery, Naver, Coinpan) with dated posts and test whether ticker mentions rise in the 14 days before Upbit KRW listings against matched controls, as xmentions.py did for X | desk | none |  | 0 | 40 min |
 | P-0112 | Pre-listing, cheaper X counts: the 5-pair X case-control (5 of 5 listed coins grew chatter more) cost 6.23 USD; find a way to count cashtag posts per day for under 0.05 USD a coin so it can run on 30 pairs and nightly | desk | none |  | 0 | 30 min |
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
@@ -32,10 +31,11 @@ Verdicts so far: 74 works, 4 broken, 17 blocked, 8 not worth it. Killed: 4.
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 
-## Verdicts (103)
+## Verdicts (104)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-11 | P-0110 | Pre-listing, shorter hold: backtest holding only the three strongest signals (new Bybit spot, Coinbase trading start, Binance spot announcement) for 7 days instead of a standing 14-day list, fitted Oct to Mar, judged Apr to Sep, same costs and benchmarks as experiments/2026-10-09-prelisting/backtest.py | **blocked** | The 9 Oct pre-listing backtest cannot run: its cache/static.json is not on disk anywhere and was never committed, so neither the variant nor the original reproduces from the repo. Wrapper ready in the folder. | `experiments/2026-10-10-P-0110` | 0 min, 14 calls, 0 denied |
 | 2026-10-11 | P-0109 | Exchange warning and delisting notices: after Binance monitoring-tag or delisting notices and Upbit investment-warning designations (last 12 months, keyless feeds), how far does the coin fall by +24h and +7d, and does a holder who sells 5 minutes after the notice avoid most of it? | **works** | 51 Binance delisting tickers in 12 months, keyless: median -13.2 pct inside 5 min, -19.7 by 24 h, -36.4 by 7 days, 45 of 51 down at 24 h; selling at +5 min avoided a median 48 pct of the 24 h fall. Monitoring tags (4) -19 by 7 days. Upbit not pulled. | `experiments/2026-10-10-P-0109` | 1 min, 7 calls, 0 denied |
 | 2026-10-11 | P-0108 | Funding rates as a spot signal: from keyless perp funding history (Bybit or OKX public endpoints) for BTC and ETH since 2022, do the most extreme funding readings predict next-7-day spot returns, spot only, no leverage? | **works** | Binance keyless, 2022 to Oct 2026: top-decile funding days were followed by +1.84 pct (BTC) and +1.69 pct (ETH) 7-day spot returns against +0.50 and +0.32 on all days, so no contrarian fade; called shot wrong in direction. About 70 independent weeks a bucket, in-sample. | `experiments/2026-10-10-P-0108` | 0 min, 5 calls, 0 denied |
 | 2026-10-10 | P-0106 | Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more? | **blocked** | Sized on five entries: four had over 30,000 signatures (30-page cap hit), one reached its first transaction at 29 pages; public RPC gave about one page a second with 13 of 164 calls 429. All 163 is 5,000-plus calls and over 90 minutes. | `experiments/2026-10-10-P-0106` | 3 min, 5 calls, 0 denied |
