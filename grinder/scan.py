@@ -188,7 +188,7 @@ def rug(mint):
     if not rep:
         summ = get("https://api.rugcheck.xyz/v1/tokens/%s/report/summary" % mint) or {}
         return {"score": summ.get("score_normalised"), "risks": [r.get("name") for r in summ.get("risks", [])],
-                "lp_locked": summ.get("lpLockedPct"), "holders": None, "top10": None}
+                "lp_locked": summ.get("lpLockedPct"), "holders": None, "top10": None, "insiders": None}
     # rugcheck's topHolders list includes the liquidity pool's own token account (checked 2026-09-24:
     # the pumpswap pool sat first at 7.5 percent). The rule is about holders, so accounts owned by a
     # market are left out of the top-10 share.
@@ -197,7 +197,20 @@ def rug(mint):
     top10 = sum(float(h.get("pct") or 0) for h in top[:10]) if top else None
     return {"score": rep.get("score_normalised"), "risks": [r.get("name") for r in rep.get("risks", [])],
             "lp_locked": (rep.get("markets") or [{}])[0].get("lp", {}).get("lpLockedPct") if rep.get("markets") else None,
-            "holders": rep.get("totalHolders"), "top10": top10}
+            "holders": rep.get("totalHolders"), "top10": top10, "insiders": insiders_of(rep)}
+
+
+def insiders_of(rep):
+    """Creator and insider fields from the same report (P-0105, 10 Oct 2026), kept so creator and insider
+    leads can be tested forward. Lists are trimmed to 20 entries; the count says how long they were."""
+    ct = rep.get("creatorTokens") or []
+    nets = rep.get("insiderNetworks") or []
+    return {"creator": rep.get("creator"), "creator_balance": rep.get("creatorBalance"),
+            "creator_tokens_n": len(ct) if isinstance(ct, list) else None,
+            "creator_tokens": ct[:20] if isinstance(ct, list) else ct,
+            "graph_insiders": rep.get("graphInsidersDetected"),
+            "insider_networks_n": len(nets) if isinstance(nets, list) else None,
+            "insider_networks": nets[:20] if isinstance(nets, list) else nets}
 
 
 def authorities(mint):
@@ -219,7 +232,7 @@ def snapshot(limit):
     est = discover_established(set(mints))
     print("established", len(est), file=sys.stderr)
     mints = mints + est
-    rows = []
+    rows, insiders = [], []
     with open(CACHE + "snapshots-%s.jsonl" % ts.strftime("%Y-%m-%d"), "a") as raw:
         for i, mint in enumerate(mints):
             p = best_pair(mint)
@@ -248,6 +261,8 @@ def snapshot(limit):
             }
             rows.append(row)
             raw.write(json.dumps({"row": row, "pair": p}) + "\n")
+            if r.get("insiders") is not None:
+                insiders.append({"ts": ts_iso, "mint": mint, "symbol": row["symbol"], **r["insiders"]})
             time.sleep(0.35)
     new = not os.path.exists(SNAP_CSV)
     with open(SNAP_CSV, "a", newline="") as fh:
@@ -256,7 +271,13 @@ def snapshot(limit):
             w.writeheader()
         for row in rows:
             w.writerow(row)
-    print("snapshot rows", len(rows))
+    # Committed with the snapshot by preregister.py (a .jsonl under grinder/), so the fields are dated
+    # before any outcome they might predict.
+    os.makedirs(ROOT + "grinder/insiders", exist_ok=True)
+    with open(ROOT + "grinder/insiders/%s.jsonl" % ts.strftime("%Y-%m-%d"), "a") as fh:
+        for x in insiders:
+            fh.write(json.dumps(x) + "\n")
+    print("snapshot rows", len(rows), "insider rows", len(insiders))
     return rows
 
 

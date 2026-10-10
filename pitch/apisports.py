@@ -32,7 +32,9 @@ OVERRIDES = {"SP1|Athletic Club": "Ath Bilbao", "SP1|Atletico Madrid": "Ath Madr
              "F1|Stade Brestois 29": "Brest", "F1|Saint Etienne": "St Etienne", "P1|Vitória SC": "Guimaraes",
              "P1|Sporting CP": "Sp Lisbon", "P1|SC Braga": "Sp Braga", "N1|Fortuna Sittard": "For Sittard",
              "E1|Stoke City": "Stoke", "E0|Manchester United": "Man United", "E0|Manchester City": "Man City",
-             "E0|Nottingham Forest": "Nott'm Forest", "E0|Wolverhampton Wanderers": "Wolves", "SC0|Heart Of Midlothian": "Hearts"}
+             "E0|Nottingham Forest": "Nott'm Forest", "E0|Wolverhampton Wanderers": "Wolves", "SC0|Heart Of Midlothian": "Hearts",
+             # 10 Oct 2026: the umlaut and the "Deportivo" prefix beat the fuzzy match.
+             "D1|1. FC Köln": "FC Koln", "SP1|Deportivo La Coruna": "La Coruna"}
 LEAGUE_DIV = {39: "E0", 40: "E1", 140: "SP1", 78: "D1", 135: "I1", 61: "F1", 88: "N1", 94: "P1", 179: "SC0"}
 
 def _vault():

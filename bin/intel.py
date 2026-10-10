@@ -37,7 +37,11 @@ def candidates():
                     "subject": r.get("one_line") or r.get("title") or r.get("key"), "mechanism": r.get("mechanism") or ""})
     for i, line in enumerate(open(ROOT / "field-notes/SEEN.md"), 1):
         m = re.match(r"- \*\*(\d{4}-\d\d-\d\d) · (.+?)\*\*", line)
-        if m and TERMS.search(line) and m.group(2).lower()[:30] not in done:
+        # 10 Oct 2026: the first 30 characters missed "Invo (invoapp.com referral link)" although
+        # intel/invo-copy-trading.md exists; the name before any bracket, as a whole word, is the test.
+        name = m.group(2).split(" (")[0].strip().lower() if m else ""
+        if m and TERMS.search(line) and m.group(2).lower()[:30] not in done \
+                and not re.search(r"\b" + re.escape(name) + r"\b", done):
             out.append({"from": f"SEEN.md:{i}", "when": m.group(1), "subject": m.group(2), "mechanism": line.strip()[:400]})
     return sorted(out, key=lambda c: c["when"] or "9")
 

@@ -45,7 +45,7 @@ One line each, with a URL if the transcript names one.
 ## What Proteus already has that does the same job
 Name it from the toolshelf or the stack (Claude Code with skills, sub-agents, scheduled tasks and a
 PreToolUse hook; launchd pollers; keyless YouTube, HN, GitHub, arXiv pulls; HyperFrames; local whisper;
-Ollama; freqtrade). Say "nothing" if nothing.
+freqtrade; no local LLM, Ollama is not installed here). Say "nothing" if nothing.
 ## What we would need to fetch
 Tools, repos or services, free first. "Nothing" is a fine answer.
 ## One thing worth trying
