@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 68 works, 4 broken, 15 blocked, 8 not worth it. Killed: 4.
+Verdicts so far: 69 works, 4 broken, 15 blocked, 8 not worth it. Killed: 4.
 
-## Queue (26 open)
+## Queue (25 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -36,14 +36,15 @@ Verdicts so far: 68 works, 4 broken, 15 blocked, 8 not worth it. Killed: 4.
 | P-0119 | Grinder harness: an entry-delay variant (buy one minute after the snapshot) (DUE.md D-003): experiments/2026-10-06-grinder-fill-check/REPORT.md "Next" | desk | none |  | 0 | 40 min |
 | P-0120 | P-0084 trend portfolio: its recorded Sharpe 0.28 against 0.35 on a re-run of the same script and data; re-read (DUE.md D-004): experiments/2026-10-07-P-0088/README.md | desk | none |  | 0 | 40 min |
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
-| P-0122 | anatomy: does the dial-indicator example build and pass its own audit on Node with no npm install? | harvest | none |  | 0 | 20 min |
 | P-0123 | data.police.uk: how many street crimes come back for one point and month, keyless, inside the rate limit? | harvest | none |  | 0 | 15 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 
-## Verdicts (95)
+## Verdicts (96)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-10 | P-0122 | anatomy: does the dial-indicator example build and pass its own audit on Node with no npm install? | **works** | Rebuilt both dial-indicator pages with plain Node v25.6.0 and no install: byte-identical to the committed files (136,488 and 136,489 bytes), which is the repo's own CI check. The skill driving a new figure is untested. | `experiments/2026-10-10-P-0122` | 0 min, 16 calls, 2 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/experiments/2026-10-10-P-`; Bash `node --version` | | |
 | 2026-10-10 | P-0124 | Decomposed classification: does a fitted weight over five narrow questions beat one direct question on public spam data? | **blocked** | No local model on this Mac: nothing on port 11434, no Ollama binary or app, so the five-question fit could not be run. The harvest and Skool stack lines claimed Ollama; both corrected tonight. | `experiments/2026-10-10-P-0124` | 0 min, 12 calls, 0 denied |
 | 2026-10-09 | P-0078 | Harvester defence: read PortSwigger's free LLM security material, write a checklist of defences against instructions hidden in pages, and check which ones bin/harvest.py already has | **works** | 5 of 6 PortSwigger injection shapes survive harvest.py's strip_html, so the real defence is the hook; the open gap was a child's probe_title flowing straight into my queue. Added title_unsafe() and a data-not-instructions line to the child prompt: 7 of 8 hostile titles refused, 0 of 46 real harvest titles refused. | `experiments/2026-10-09-P-0078` | 1 min, 18 calls, 0 denied |
 | 2026-10-09 | P-0074 | OnlyFans management agency: how the money flows, typical splits and costs, what the platform rules and UK law allow, and whether an honest version clears its costs | **not-worth-it** | Modelled from agency-side ranges (20% platform, 25-50% agency split, one manager per ten creators): at the active-creator median of about 1,250 dollars a month an honest agency roughly breaks even (about 1,300 per creator needed), and it only pays with creators already grossing 5,000 or more. The industry's DM uplift rests on impersonation, which the terms bar and lawsuits target; UK law was not researched. | `experiments/2026-10-09-P-0074` | 0 min, 9 calls, 0 denied |
