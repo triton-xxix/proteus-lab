@@ -1,0 +1,150 @@
+[
+ {
+  "mint": "BQAeeSowpwEx8Km8GcporcbuLKq4a7EQceH3F2qZpump",
+  "score": 1,
+  "insiders": {
+   "creator": "E7JzWSx2XVaWFaQRbd9K5Yani9Q3aZfC3AwExU1T4m5G",
+   "creator_balance": 0,
+   "creator_tokens_n": 0,
+   "creator_tokens": [],
+   "graph_insiders": 0,
+   "insider_networks_n": 0,
+   "insider_networks": []
+  }
+ },
+ {
+  "mint": "CgU6mugt2HXkjaunbaYrauJRRW9kSKbQXcBRzT7Vpump",
+  "score": 1,
+  "insiders": {
+   "creator": "2ytSYgoFzz9Xj5aYRLVWhkHKNu4ApKHcPUDx2qAMB8rK",
+   "creator_balance": 0,
+   "creator_tokens_n": 0,
+   "creator_tokens": [],
+   "graph_insiders": 0,
+   "insider_networks_n": 0,
+   "insider_networks": []
+  }
+ },
+ {
+  "mint": "B5uNPxEWB6WU3Rej33iDuX7yobZ5N4kXXckoj8KSpump",
+  "score": 1,
+  "insiders": {
+   "creator": "3i4ifkpkHn28wUJKhk4K5iPuvmd73FsG4mPt3PkipMQC",
+   "creator_balance": 0,
+   "creator_tokens_n": 0,
+   "creator_tokens": [],
+   "graph_insiders": 12,
+   "insider_networks_n": 2,
+   "insider_networks": [
+    {
+     "id": "hidden-heather-yak",
+     "size": 7,
+     "type": "transfer",
+     "tokenAmount": 2359193478496,
+     "currentHolding": 1191871938496,
+     "activeAccounts": 7
+    },
+    {
+     "id": "crisp-honey-mosquito",
+     "size": 5,
+     "type": "transfer",
+     "tokenAmount": 1328133060236,
+     "currentHolding": 663566530118,
+     "activeAccounts": 5
+    }
+   ]
+  }
+ },
+ {
+  "mint": "Gyk9Z93Ri2JUjqES9HTpc7pxCJTLD7vhBhEjBhyApump",
+  "score": 1,
+  "insiders": {
+   "creator": "2HbyaP84P7KnXngXrkBVm8wnjDFkFR1pTtBAsSywW9Q4",
+   "creator_balance": 0,
+   "creator_tokens_n": 0,
+   "creator_tokens": [],
+   "graph_insiders": 55,
+   "insider_networks_n": 6,
+   "insider_networks": [
+    {
+     "id": "sharp-lemon-peacock",
+     "size": 4,
+     "type": "transfer",
+     "tokenAmount": 42085536973743,
+     "currentHolding": 42085536973743,
+     "activeAccounts": 4
+    },
+    {
+     "id": "loud-tan-falcon",
+     "size": 4,
+     "type": "transfer",
+     "tokenAmount": 24061311185734,
+     "currentHolding": 18231551540688,
+     "activeAccounts": 4
+    },
+    {
+     "id": "charming-sage-impala",
+     "size": 4,
+     "type": "transfer",
+     "tokenAmount": 14894742376291,
+     "currentHolding": 14894742376291,
+     "activeAccounts": 4
+    },
+    {
+     "id": "sad-lime-yak",
+     "size": 14,
+     "type": "transfer",
+     "tokenAmount": 12226770658263,
+     "currentHolding": 9835592444834,
+     "activeAccounts": 14
+    },
+    {
+     "id": "rare-smoke-dove",
+     "size": 23,
+     "type": "transfer",
+     "tokenAmount": 9127920957217,
+     "currentHolding": 7823778389531,
+     "activeAccounts": 23
+    },
+    {
+     "id": "juicy-raspberry-clam",
+     "size": 6,
+     "type": "transfer",
+     "tokenAmount": 2793364486218,
+     "currentHolding": 2793364486218,
+     "activeAccounts": 6
+    }
+   ]
+  }
+ },
+ {
+  "mint": "8ZCmwpW3MtC5UpNcZf7U4HMvRNTo71syU11BDiAFpump",
+  "score": 24,
+  "insiders": {
+   "creator": "G7YaEzm4c1aMQcn1SQLUPHYnoUNE7bG4XwQ4nxyYydn",
+   "creator_balance": 0,
+   "creator_tokens_n": 0,
+   "creator_tokens": [],
+   "graph_insiders": 206,
+   "insider_networks_n": 2,
+   "insider_networks": [
+    {
+     "id": "proud-white-bear",
+     "size": 196,
+     "type": "transfer",
+     "tokenAmount": 24186552147575,
+     "currentHolding": 24776353027857,
+     "activeAccounts": 196
+    },
+    {
+     "id": "sad-smoke-hare",
+     "size": 10,
+     "type": "transfer",
+     "tokenAmount": 1712952459596,
+     "currentHolding": 1712952459596,
+     "activeAccounts": 10
+    }
+   ]
+  }
+ }
+]
