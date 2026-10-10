@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 71 works, 4 broken, 15 blocked, 8 not worth it. Killed: 4.
+Verdicts so far: 71 works, 4 broken, 16 blocked, 8 not worth it. Killed: 4.
 
-## Queue (23 open)
+## Queue (22 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,7 +22,6 @@ Verdicts so far: 71 works, 4 broken, 15 blocked, 8 not worth it. Killed: 4.
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form |  | 0 | 60 min |
-| P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | desk | none |  | 0 | 25 min |
 | P-0105 | Grinder: record rugcheck creator, creatorTokens, graphInsidersDetected and insiderNetworks for every scanned token in a side file each night (already in the report scan.py fetches), so insider and creator leads can be tested forward | desk | none |  | 0 | 20 min |
 | P-0106 | Grinder bundles: for each of the 163 gate-passers, read the mint's first transactions from public Solana RPC and measure the supply share bought in the creator's block; do high-bundle picks rug or stop out more? | desk | none |  | 0 | 30 min |
 | P-0108 | Funding rates as a spot signal: from keyless perp funding history (Bybit or OKX public endpoints) for BTC and ETH since 2022, do the most extreme funding readings predict next-7-day spot returns, spot only, no leverage? | desk | none |  | 0 | 25 min |
@@ -37,10 +36,12 @@ Verdicts so far: 71 works, 4 broken, 15 blocked, 8 not worth it. Killed: 4.
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 
-## Verdicts (98)
+## Verdicts (99)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-10 | P-0100 | Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero? | **blocked** | GeckoTerminal keyless gave about one trade a minute against a 403-trade pre-registered sample, about seven hours; the week-old candles do exist. No partial looked at; G2 KEEP stays untested. Resume cache left in the folder. | `experiments/2026-10-10-P-0100` | 2 min, 35 calls, 1 denied |
+| | | | | denied: TaskStop `` | | |
 | 2026-10-10 | P-0095 | Weak-Monday reversal, the harder test: down-Mondays control, nine-ETF basket, luck test and RSI(5) overlap | **works** | Nine ETFs 2009-26, gross: weak Monday +0.448 pct a trade on 1,947, against +0.229 for any-weekday dips, +0.134 for down-not-weak Mondays and +0.153 random (p below 0.0002). Only 13.6 pct overlap book 1; called shot wrong on overlap. Correlated markets overstate certainty. | `experiments/2026-10-10-P-0095` | 0 min, 10 calls, 0 denied |
 | 2026-10-10 | P-0123 | data.police.uk: how many street crimes come back for one point and month, keyless, inside the rate limit? | **works** | Keyless, latest month August 2026: Leicester Square 4,210 street crimes in one call (5.4 s), Leeds centre 1,520, Hawes 2. A 20-call burst at about 12 a second drew two 429s, below the 15 a second I read in the docs. | `experiments/2026-10-10-P-0123` | 0 min, 5 calls, 0 denied |
 | 2026-10-10 | P-0122 | anatomy: does the dial-indicator example build and pass its own audit on Node with no npm install? | **works** | Rebuilt both dial-indicator pages with plain Node v25.6.0 and no install: byte-identical to the committed files (136,488 and 136,489 bytes), which is the repo's own CI check. The skill driving a new figure is untested. | `experiments/2026-10-10-P-0122` | 0 min, 16 calls, 2 denied |

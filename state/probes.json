@@ -2198,20 +2198,24 @@
    "id": "P-0100",
    "title": "Graduation G2 fill realism (D-009): re-price the 403 counted trades at the next 1-minute GeckoTerminal candle close for entry and exit; does expectancy stay at least +10 per 100 and the best-10-removed at least zero?",
    "source": "desk",
-   "needs": "",
+   "needs": "a long-running job (launchd, about seven hours) or batched pool lookups",
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-08",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-10T23:52:09+0100",
+   "verdict": "blocked",
+   "verdict_at": "2026-10-10T23:55:07+0100",
+   "note": "GeckoTerminal keyless gave about one trade a minute against a 403-trade pre-registered sample, about seven hours; the week-old candles do exist. No partial looked at; G2 KEEP stays untested. Resume cache left in the folder.",
+   "artefacts": [
+    "experiments/2026-10-10-P-0100"
+   ],
+   "minutes": 2,
+   "calls": 35,
+   "denied": [
+    "TaskStop ``"
+   ],
    "luke": false
   },
   {
