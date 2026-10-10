@@ -38,3 +38,38 @@ utc,opponent,opp_rating,my_rating,verdict,detail
 2026-10-10T06:59:54Z,bot1e,3012,3039,accepted,
 2026-10-10T07:01:45Z,torombot,3034,3034,declined,tooslow
 2026-10-10T07:01:46Z,bot1e,3012,3034,accepted,
+2026-10-10T22:38:57Z,bot1e,3013,3033,refused 400,"{""error"":""bot1e played 100 games against other bots today, please wait until 2026-10-11T03:04:05.244Z to challenge them."
+2026-10-10T22:38:57Z,raspfish,3011,3033,refused 400,"{""error"":""RaspFish played 100 games against other bots today, please wait until 2026-10-11T06:27:35.013Z to challenge th"
+2026-10-10T22:38:57Z,sf_bot1nok,3011,3033,refused 400,"{""error"":""SF_Bot1nok played 100 games against other bots today, please wait until 2026-10-11T03:04:03.979Z to challenge "
+2026-10-10T22:38:57Z,bot1nokk,3010,3033,refused 400,"{""error"":""Bot1nokk played 100 games against other bots today, please wait until 2026-10-11T03:03:59.357Z to challenge th"
+2026-10-10T22:39:27Z,leelachesstest,2996,3033,no answer,
+2026-10-10T22:39:28Z,arasanx,2989,3033,accepted,
+2026-10-10T22:45:15Z,newchessengine-ai,2963,3030,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
+2026-10-10T22:45:15Z,resolutebot,2945,3030,declined,casual
+2026-10-10T22:45:15Z,weiawaga,2868,3030,accepted,
+2026-10-10T22:47:43Z,duchessai,2770,3015,refused 400,"{""error"":""duchessAI played 100 games against other bots today, please wait until 2026-10-11T06:27:42.965Z to challenge t"
+2026-10-10T22:47:43Z,lynx_bot,2629,3015,refused 400,"{""error"":""Lynx_BOT played 100 games against other bots today, please wait until 2026-10-11T06:33:32.609Z to challenge th"
+2026-10-10T22:47:44Z,cheng-4,2593,3015,declined,nobot
+2026-10-10T22:47:44Z,simbelmyne-bot,2581,3015,refused 400,"{""error"":""simbelmyne-bot played 100 games against other bots today, please wait until 2026-10-11T06:26:03.607Z to challe"
+2026-10-10T22:47:45Z,phalanx-xxv,2475,3015,declined,nobot
+2026-10-10T22:47:45Z,pseudo-0,2474,3015,declined,nobot
+2026-10-10T22:47:46Z,leelajester,2445,3015,declined,nobot
+2026-10-10T22:47:46Z,radianceengine,2427,3015,refused 400,"{""error"":""RadianceEngine played 100 games against other bots today, please wait until 2026-10-11T06:31:27.514Z to challe"
+2026-10-10T22:47:46Z,leelaalien,2408,3015,declined,nobot
+2026-10-10T22:47:46Z,eubos,2374,3015,refused 400,"{""error"":""eubos played 100 games against other bots today, please wait until 2026-10-11T06:31:21.724Z to challenge them."
+2026-10-10T22:47:47Z,inanisbot,2342,3015,refused 400,"{""error"":""InanisBot played 100 games against other bots today, please wait until 2026-10-11T06:47:53.409Z to challenge t"
+2026-10-10T22:47:47Z,leelarogue,2339,3015,declined,generic
+2026-10-10T22:47:47Z,fataliibot,2240,3015,refused 400,"{""error"":""FataliiBot played 100 games against other bots today, please wait until 2026-10-11T09:29:01.31Z to challenge t"
+2026-10-10T22:47:47Z,ravenengine,2235,3015,refused 400,"{""error"":""RavenEngine played 100 games against other bots today, please wait until 2026-10-11T06:30:25.535Z to challenge"
+2026-10-10T22:47:48Z,honzovy-sachy-2,2232,3015,declined,nobot
+2026-10-10T22:47:48Z,likeawizard-bot,2230,3015,refused 400,"{""error"":""likeawizard-bot played 100 games against other bots today, please wait until 2026-10-11T06:32:30.116Z to chall"
+2026-10-10T22:47:49Z,boris-trapsky,2202,3015,declined,generic
+2026-10-10T22:47:49Z,halcyonbot,2183,3015,refused 400,"{""error"":""halcyonbot played 100 games against other bots today, please wait until 2026-10-11T06:37:07.209Z to challenge "
+2026-10-10T22:47:50Z,catriever,2164,3015,declined,nobot
+2026-10-10T22:47:50Z,panic-fish,2145,3015,declined,nobot
+2026-10-10T22:47:51Z,simpleeval,2126,3015,refused 400,"{""error"":""simpleEval played 100 games against other bots today, please wait until 2026-10-11T06:34:12.998Z to challenge "
+2026-10-10T22:47:51Z,goldfish-engine,2121,3015,refused 400,"{""error"":""Goldfish-Engine played 100 games against other bots today, please wait until 2026-10-11T06:39:27.823Z to chall"
+2026-10-10T22:47:52Z,elmichess,2066,3015,declined,nobot
+2026-10-10T22:47:52Z,cosettebot,2026,3015,refused 400,"{""error"":""CosetteBot played 100 games against other bots today, please wait until 2026-10-11T06:42:35.281Z to challenge "
+2026-10-10T22:47:53Z,hummus-bot,2013,3015,declined,nobot
+2026-10-10T22:47:54Z,maia9_30n,1957,3015,refused 429,"{""error"":""Too many requests. Try again later.""}"
