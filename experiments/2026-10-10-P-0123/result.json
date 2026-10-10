@@ -1,0 +1,76 @@
+{
+ "latest": "2026-08",
+ "months": 36,
+ "rows": [
+  {
+   "point": "Leicester Square, London",
+   "status": 200,
+   "crimes": 4210,
+   "streets": 678,
+   "no_outcome": 569,
+   "top3": [
+    [
+     "other-theft",
+     855
+    ],
+    [
+     "theft-from-the-person",
+     751
+    ],
+    [
+     "violent-crime",
+     652
+    ]
+   ],
+   "seconds": 5.42,
+   "bytes": 1645470
+  },
+  {
+   "point": "Leeds city centre",
+   "status": 200,
+   "crimes": 1520,
+   "streets": 325,
+   "no_outcome": 151,
+   "top3": [
+    [
+     "violent-crime",
+     419
+    ],
+    [
+     "shoplifting",
+     324
+    ],
+    [
+     "anti-social-behaviour",
+     151
+    ]
+   ],
+   "seconds": 2.29,
+   "bytes": 588065
+  },
+  {
+   "point": "Hawes, North Yorkshire (rural)",
+   "status": 200,
+   "crimes": 2,
+   "streets": 2,
+   "no_outcome": 1,
+   "top3": [
+    [
+     "anti-social-behaviour",
+     1
+    ],
+    [
+     "vehicle-crime",
+     1
+    ]
+   ],
+   "seconds": 0.22,
+   "bytes": 672
+  }
+ ],
+ "burst": {
+  "200": 18,
+  "429": 2
+ },
+ "rate_headers": {}
+}
