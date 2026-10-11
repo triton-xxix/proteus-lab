@@ -1,27 +1,27 @@
 {
  "all_v02": {
-  "n": 44,
+  "n": 64,
   "touch": {
-   "wins": 19,
-   "net_gbp": 391.78,
-   "per_trade": 8.9
+   "wins": 21,
+   "net_gbp": -424.01,
+   "per_trade": -6.63
   },
   "close": {
-   "wins": 17,
-   "net_gbp": 217.62,
-   "per_trade": 4.95
+   "wins": 19,
+   "net_gbp": -546.64,
+   "per_trade": -8.54
   },
   "late": {
-   "wins": 19,
-   "net_gbp": 387.87,
-   "per_trade": 8.82
+   "wins": 21,
+   "net_gbp": -444.8,
+   "per_trade": -6.95
   },
   "depth": {
-   "wins": 18,
-   "net_gbp": 199.59,
-   "per_trade": 4.54
+   "wins": 20,
+   "net_gbp": -616.2,
+   "per_trade": -9.63
   },
-  "ledger_net_gbp": 391.78
+  "ledger_net_gbp": -424.01
  },
  "first_4_days_25_to_28_sep": {
   "n": 16,
@@ -48,30 +48,30 @@
   "ledger_net_gbp": -262.76
  },
  "last_7_days_29_sep_to_4_oct": {
-  "n": 28,
+  "n": 48,
   "touch": {
-   "wins": 15,
-   "net_gbp": 654.54,
-   "per_trade": 23.38
+   "wins": 17,
+   "net_gbp": -161.25,
+   "per_trade": -3.36
   },
   "close": {
-   "wins": 14,
-   "net_gbp": 611.05,
-   "per_trade": 21.82
+   "wins": 16,
+   "net_gbp": -153.21,
+   "per_trade": -3.19
   },
   "late": {
-   "wins": 15,
-   "net_gbp": 662.72,
-   "per_trade": 23.67
+   "wins": 17,
+   "net_gbp": -169.95,
+   "per_trade": -3.54
   },
   "depth": {
-   "wins": 14,
-   "net_gbp": 462.35,
-   "per_trade": 16.51
+   "wins": 16,
+   "net_gbp": -353.44,
+   "per_trade": -7.36
   },
-  "ledger_net_gbp": 654.54
+  "ledger_net_gbp": -161.25
  },
  "missing_candles": [],
- "booked_wins_whose_touch_minute_closed_below_2x": 7,
- "booked_wins": 19
+ "booked_wins_whose_touch_minute_closed_below_2x": 9,
+ "booked_wins": 21
 }
