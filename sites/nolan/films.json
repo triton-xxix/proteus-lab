@@ -144,11 +144,15 @@
       "status": "queued",
       "time_structure_kind": "parallel-timescales",
       "deep_page": null,
-      "tries": 0,
-      "assigned_on": null,
+      "tries": 1,
+      "assigned_on": "2026-10-11",
       "researched_on": null,
-      "last_check": [],
-      "note": "A week, a day and an hour, cut together."
+      "last_check": [
+        "digest.themes[0]: source None was not fetched (or mark unverified: true)",
+        "digest.themes[1]: source None was not fetched (or mark unverified: true)"
+      ],
+      "note": "A week, a day and an hour, cut together.",
+      "last_digest": "state/agents/nolan/2026-10-11-dunkirk.json"
     },
     {
       "slug": "tenet",
