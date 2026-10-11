@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 74 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
+Verdicts so far: 75 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 
-## Queue (19 open)
+## Queue (18 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -31,12 +31,13 @@ Verdicts so far: 74 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
-| P-0127 | Kolscan leaderboard: does it load keyless and list 10 or more wallets with a PnL figure? | vault | none |  | 0 | 15 min |
 
-## Verdicts (104)
+## Verdicts (105)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-11 | P-0127 | Kolscan leaderboard: does it load keyless and list 10 or more wallets with a PnL figure? | **works** | kolscan.io/leaderboard serves keyless (HTTP 200, 240 KB, no JS run): the Next.js payload carries 558 wallet records, 91 with a profit field in SOL plus a name (top: Dior +201 SOL). Plain curl is enough for a nightly read. | `experiments/2026-10-11-P-0127` | 0 min, 6 calls, 1 denied |
+| | | | | denied: Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-11-P-0127/parse.py /Users/triton/PROT` | | |
 | 2026-10-11 | P-0110 | Pre-listing, shorter hold: backtest holding only the three strongest signals (new Bybit spot, Coinbase trading start, Binance spot announcement) for 7 days instead of a standing 14-day list, fitted Oct to Mar, judged Apr to Sep, same costs and benchmarks as experiments/2026-10-09-prelisting/backtest.py | **blocked** | The 9 Oct pre-listing backtest cannot run: its cache/static.json is not on disk anywhere and was never committed, so neither the variant nor the original reproduces from the repo. Wrapper ready in the folder. | `experiments/2026-10-10-P-0110` | 0 min, 14 calls, 0 denied |
 | 2026-10-11 | P-0109 | Exchange warning and delisting notices: after Binance monitoring-tag or delisting notices and Upbit investment-warning designations (last 12 months, keyless feeds), how far does the coin fall by +24h and +7d, and does a holder who sells 5 minutes after the notice avoid most of it? | **works** | 51 Binance delisting tickers in 12 months, keyless: median -13.2 pct inside 5 min, -19.7 by 24 h, -36.4 by 7 days, 45 of 51 down at 24 h; selling at +5 min avoided a median 48 pct of the 24 h fall. Monitoring tags (4) -19 by 7 days. Upbit not pulled. | `experiments/2026-10-10-P-0109` | 1 min, 7 calls, 0 denied |
 | 2026-10-11 | P-0108 | Funding rates as a spot signal: from keyless perp funding history (Bybit or OKX public endpoints) for BTC and ETH since 2022, do the most extreme funding readings predict next-7-day spot returns, spot only, no leverage? | **works** | Binance keyless, 2022 to Oct 2026: top-decile funding days were followed by +1.84 pct (BTC) and +1.69 pct (ETH) 7-day spot returns against +0.50 and +0.32 on all days, so no contrarian fade; called shot wrong in direction. About 70 independent weeks a bucket, in-sample. | `experiments/2026-10-10-P-0108` | 0 min, 5 calls, 0 denied |

@@ -1,0 +1,72 @@
+{
+ "bytes": 239899,
+ "has_next_data": true,
+ "distinct_addresses_in_html": 562,
+ "wallet_records": 558,
+ "wallet_records_with_pnl": 91,
+ "visible_sol_figures": 0,
+ "sample": [
+  {
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
+   "pnl_field": "profit",
+   "pnl": 201.447256713486,
+   "name": "Dior"
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "pnl_field": "profit",
+   "pnl": 120.01865110204,
+   "name": "decu"
+  },
+  {
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "pnl_field": "profit",
+   "pnl": 111.126871134077,
+   "name": "slingoor"
+  },
+  {
+   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+   "pnl_field": "profit",
+   "pnl": 106.626677468797,
+   "name": "trunoest"
+  },
+  {
+   "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+   "pnl_field": "profit",
+   "pnl": 80.3226483775809,
+   "name": "Coler"
+  },
+  {
+   "wallet": "zhYnXqK3MNSmwS3yxSvPmY5kUa1n2WUaCJgYUDrAHkL",
+   "pnl_field": "profit",
+   "pnl": 76.3389793673339,
+   "name": "zhynx"
+  },
+  {
+   "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+   "pnl_field": "profit",
+   "pnl": 74.7831811641872,
+   "name": "theo"
+  },
+  {
+   "wallet": "5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG",
+   "pnl_field": "profit",
+   "pnl": 72.7209929058331,
+   "name": "Yenni"
+  },
+  {
+   "wallet": "C4eZg1rJX6v1u7LzqermPrA1pDNNxQe6g3vyY5cHHoWq",
+   "pnl_field": "profit",
+   "pnl": 68.0858224876304,
+   "name": "SKX \ud83d\udd36"
+  },
+  {
+   "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+   "pnl_field": "profit",
+   "pnl": 64.605541311,
+   "name": "TIL"
+  }
+ ],
+ "sample_visible": [],
+ "answer_10_plus_with_pnl": true
+}

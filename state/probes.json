@@ -2787,16 +2787,20 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-11",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-11T23:45:29+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-11T23:45:53+0100",
+   "note": "kolscan.io/leaderboard serves keyless (HTTP 200, 240 KB, no JS run): the Next.js payload carries 558 wallet records, 91 with a profit field in SOL plus a name (top: Dior +201 SOL). Plain curl is enough for a nightly read.",
+   "artefacts": [
+    "experiments/2026-10-11-P-0127"
+   ],
+   "minutes": 0,
+   "calls": 6,
+   "denied": [
+    "Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-11-P-0127/parse.py /Users/triton/PROT`"
+   ],
    "luke": false
   }
  ]
