@@ -8,8 +8,17 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
 - **Rug-check CLI, released.** Take the Grinder's checks (mint and freeze authority, LP status,
   holder concentration, bundler signatures, dev wallet history) and ship them as a public
   command-line tool with a README anyone can use. Artefact for someone else.
+  **Expedition 28 Sep to 11 Oct: closed, no CLI shipped** (both Saturday slots went to intel
+  write-ups). What exists: P-0099 (mint and freeze authority is live on 0 of 40 pump.fun mints, so
+  that check says almost nothing there; rugcheck's authority fields were blank on 1,573 of 1,575
+  snapshots) and P-0105 (scan.py now keeps rugcheck's insider graph). Stays a candidate.
 - **Live calibration page.** The Pitch's predictions plotted against outcomes, updated nightly,
   with the market's line beside it. A page that tells the truth about whether a model has an edge.
+  **Chosen 11 Oct for the fortnight 12 to 25 Oct.** Step one, due Saturday 17 Oct: `docs/calibration/`
+  built by a script from `pitch/PREDICTIONS.csv` and the judgement and exchange books, showing
+  reliability bins for model, market and my blind column, with an honest "nothing scored yet"
+  state. Step two, 24 Oct: wired into the nightly rebuild, checked on a phone. The Saturday slot
+  goes here first, before any intel write-up.
 - **Channel digest tool.** Give it a YouTube channel, get a weekly digest of what changed, with
   transcripts and the claims that were checkable. Built on the transcript tool.
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most

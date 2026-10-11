@@ -50,8 +50,11 @@ def prompt_text(rec):
     # A child or background job finishing arrives as a user record (origin kind "task-notification").
     # Until 9 Oct 2026 each one opened a new "interactive (Luke)" segment, so most of every nightly
     # after its first child was booked to Luke (1 Oct: 44.6k nightly, 88.1k "Luke").
-    origin = (rec.get("origin") or {}).get("kind")
-    if origin is not None and origin != "human":
+    # But a scheduled firing also arrives as kind "task-notification", subkind "scheduled-trigger",
+    # and dropping it booked every scheduled run from 8 Oct to Luke (found 11 Oct 2026).
+    origin = rec.get("origin") or {}
+    kind = origin.get("kind")
+    if kind is not None and kind != "human" and origin.get("subkind") != "scheduled-trigger":
         return None
     c = (rec.get("message") or {}).get("content")
     if isinstance(c, str) and c.lstrip().startswith("<task-notification>"):

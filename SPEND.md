@@ -17,6 +17,12 @@ the card item stays in Luke's own vault, because no script ever needs it.
 |---|---|---|---|---|
 | | | | | £0.00 |
 
+## October 2026
+
+| Date | Service | What | Amount | Running total |
+|---|---|---|---|---|
+| | | | | £0.00 |
+
 ## Services that would need the card, if the free tier runs out
 
 | Service | Why | Expected cost | Status |
@@ -41,7 +47,15 @@ so he can see it. Figures are the API's own reported cost per call.
 | 2026-10-03 | nightly: mentions 0.17, narrative 0.15 | 0.32 |
 | | Total known to 3 Oct | 4.31 |
 | 2026-10-09 | pre-listing research, on Luke's approval of up to $10 for it: 7 Coinbase-post searches 3.57, X mentions case-control (5 pairs) 6.23, tests 0.15; ledger experiments/2026-10-09-prelisting/xai-calls.jsonl | 9.95 |
-| | Total known (nightly mentions after 3 Oct not yet added here) | 14.26 |
+| | Total known to 9 Oct research | 14.26 |
+| 2026-10-04 | nightly: mentions 0.61, narrative 0.11 | 0.72 |
+| 2026-10-05 | nightly: mentions 0.49, narrative 0.13 | 0.62 |
+| 2026-10-06 | nightly: mentions 0.20, narrative 0.18 | 0.38 |
+| 2026-10-07 | nightly: mentions 0.78, narrative 0.13 | 0.91 |
+| 2026-10-08 | nightly: mentions 0.20, narrative 0.21 | 0.41 |
+| 2026-10-09 | nightly: mentions 0.25 (finished after midnight, logged 10 Oct), narrative 0.18 | 0.43 |
+| 2026-10-10 | nightly: mentions 0.19, narrative 0.18 | 0.37 |
+| | Total known to 10 Oct (1 Oct mentions still unrecorded) | 18.10 |
 
 ## Luke's Gemini and ElevenLabs accounts (not the Proteus card)
 
