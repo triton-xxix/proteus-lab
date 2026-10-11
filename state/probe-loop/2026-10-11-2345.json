@@ -17,6 +17,6 @@
   "P-0119",
   "P-0120"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-10-12T00:00:44+0100",
+ "stop_reason": "135 of 150 calls used after 7 probes; too few left to take another to a verdict, so close-out gets the rest"
 }
