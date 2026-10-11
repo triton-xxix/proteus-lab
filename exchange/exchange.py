@@ -138,7 +138,8 @@ def cmd_markets(a):
         for m in batch:
             e = evs[m["event_id"]]
             names = ", ".join(f"{c['id']}={c['name']}" for c in cs if c["market_id"] == m["id"] and c.get("state_or_outcome") == "open")
-            print(f"{e['start_datetime'][:10]}  market {m['id']}  {e['name']} / {m['name']}\n    {names[:400]}")
+            # the slug carries the city for weather markets (all "Highest Temperature" ones were Munich, P-0117)
+            print(f"{e['start_datetime'][:10]}  market {m['id']}  {e['name']} / {m['name']}  [{e.get('full_slug', '')}]\n    {names[:400]}")
 
 
 def book():
