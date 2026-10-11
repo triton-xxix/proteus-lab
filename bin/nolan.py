@@ -104,6 +104,8 @@ Field rules:
   fraction. Draw it so a reader who has not seen the film understands the device. Register prior:
   "{kind}"; correct it if the film says otherwise.
 - themes: three to six, each with ONE example scene described in your own words, 20 to 80 words, no dialogue.
+  A theme whose source is null MUST also carry "unverified": true; the check fails the whole film without it
+  (Dunkirk, 11 Oct 2026). The same holds for any other object with a null source.
 - inspirations: what Nolan and his collaborators have said, cited; a quote only if under 15 words.
 - collaborators: recurring crew and cast on this film, with the other Nolan films they worked on (slugs:
   following, memento, insomnia, batman-begins, the-prestige, the-dark-knight, inception, the-dark-knight-rises,
