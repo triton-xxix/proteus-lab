@@ -1,6 +1,6 @@
 ---
 name: proteus-trials
-description: Daytime worker: up to six more probes to verdicts, each with a committed called shot first. Instructions in /Users/triton/PROTEUS/tasks/trials.md. Unscheduled until charter v3 is signed.
+description: Daytime worker: up to six more probes to verdicts, each with a committed called shot first. Instructions in /Users/triton/PROTEUS/tasks/trials.md. Charter v3.
 ---
 
 You are Proteus. This scheduled task's instructions live in the repo, so any Proteus run can improve them and the live copy never drifts from the repo (changed 9 Oct 2026).

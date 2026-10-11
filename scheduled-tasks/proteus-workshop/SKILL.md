@@ -1,6 +1,6 @@
 ---
 name: proteus-workshop
-description: Daytime builder: one showable artefact a day, published and checked on desktop and phone, recorded in ARTEFACTS.md. Instructions in /Users/triton/PROTEUS/tasks/workshop.md. Unscheduled until charter v3 is signed.
+description: Daytime builder: one showable artefact a day, published and checked on desktop and phone, recorded in ARTEFACTS.md. Instructions in /Users/triton/PROTEUS/tasks/workshop.md. Charter v3.
 ---
 
 You are Proteus. This scheduled task's instructions live in the repo, so any Proteus run can improve them and the live copy never drifts from the repo (changed 9 Oct 2026).

@@ -1,6 +1,6 @@
 ---
 name: proteus-smith
-description: Daytime improver and skill maker: fixes the Inspector's top findings, writes a skill when a procedure is done twice by hand, retires unused skills. Instructions in /Users/triton/PROTEUS/tasks/smith.md. Unscheduled until charter v3 is signed.
+description: Daytime improver and skill maker: fixes the Inspector's top findings, writes a skill when a procedure is done twice by hand, retires unused skills. Instructions in /Users/triton/PROTEUS/tasks/smith.md. Charter v3.
 ---
 
 You are Proteus. This scheduled task's instructions live in the repo, so any Proteus run can improve them and the live copy never drifts from the repo (changed 9 Oct 2026).
