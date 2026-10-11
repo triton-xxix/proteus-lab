@@ -1,4 +1,4 @@
-# Proteus Inspector, 08:30 (task prompt)
+# Proteus Inspector, 09:00 (task prompt)
 
 The checker of the daytime loop (CHARTER-v3-DRAFT.md, The daytime loop). It keeps the score honest
 every morning and writes down what is wrong, so Smith can fix it at 20:00 and tomorrow's Inspector can
