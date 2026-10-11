@@ -1,0 +1,220 @@
+{
+ "rows": [
+  {
+   "case": {
+    "symbol": "ICP",
+    "a": 0,
+    "b": 1,
+    "growth": 1.0,
+    "pages": 10
+   },
+   "control": {
+    "symbol": "OPN",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 10
+   },
+   "day": "2026-03-11",
+   "pos_range": [
+    9140000,
+    9230000
+   ],
+   "chunks": 10,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "CC",
+    "a": 60,
+    "b": 40,
+    "growth": 0.67,
+    "pages": 10
+   },
+   "control": {
+    "symbol": "ZBT",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 10
+   },
+   "day": "2026-04-14",
+   "pos_range": [
+    9200000,
+    9290000
+   ],
+   "chunks": 10,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "CHIP",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 10
+   },
+   "control": {
+    "symbol": "CHESS",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 10
+   },
+   "day": "2026-04-21",
+   "pos_range": [
+    9210000,
+    9300000
+   ],
+   "chunks": 10,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "BLEND",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 9
+   },
+   "control": {
+    "symbol": "HAEDAL",
+    "a": 2,
+    "b": 2,
+    "growth": 1.0,
+    "pages": 9
+   },
+   "day": "2026-04-29",
+   "pos_range": [
+    9230000,
+    9310000
+   ],
+   "chunks": 9,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "PROS",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 10
+   },
+   "control": {
+    "symbol": "RDNT",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 10
+   },
+   "day": "2026-05-08",
+   "pos_range": [
+    9240000,
+    9330000
+   ],
+   "chunks": 10,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "BABY",
+    "a": 2,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 9
+   },
+   "control": {
+    "symbol": "BOME",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 9
+   },
+   "day": "2026-06-05",
+   "pos_range": [
+    9290000,
+    9370000
+   ],
+   "chunks": 9,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "AI",
+    "a": 53,
+    "b": 40,
+    "growth": 0.75,
+    "pages": 9
+   },
+   "control": {
+    "symbol": "GRAM",
+    "a": 2,
+    "b": 3,
+    "growth": 1.5,
+    "pages": 9
+   },
+   "day": "2026-06-30",
+   "pos_range": [
+    9320000,
+    9400000
+   ],
+   "chunks": 9,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "EUL",
+    "a": 1,
+    "b": 1,
+    "growth": 1.0,
+    "pages": 8
+   },
+   "control": {
+    "symbol": "SUN",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 8
+   },
+   "day": "2026-07-26",
+   "pos_range": [
+    9360000,
+    9430000
+   ],
+   "chunks": 8,
+   "windows_covered": true
+  },
+  {
+   "case": {
+    "symbol": "CAP",
+    "a": 40,
+    "b": 20,
+    "growth": 0.5,
+    "pages": 9
+   },
+   "control": {
+    "symbol": "SENT",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 9
+   },
+   "day": "2026-08-06",
+   "pos_range": [
+    9370000,
+    9450000
+   ],
+   "chunks": 9,
+   "windows_covered": true
+  }
+ ],
+ "summary": {
+  "pairs": 9,
+  "median_case_growth": 0.5,
+  "median_control_growth": 0.0,
+  "case_grew_more": 4,
+  "requests": 207,
+  "errors": 0,
+  "seconds": 460
+ }
+}

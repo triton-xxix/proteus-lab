@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 75 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
+Verdicts so far: 75 works, 4 broken, 18 blocked, 9 not worth it. Killed: 4.
 
 ## Queue (18 open)
 
@@ -22,7 +22,6 @@ Verdicts so far: 75 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
-| P-0111 | Pre-listing, Korean chatter: find a keyless Korean source (DCInside coin gallery, Naver, Coinpan) with dated posts and test whether ticker mentions rise in the 14 days before Upbit KRW listings against matched controls, as xmentions.py did for X | desk | none |  | 0 | 40 min |
 | P-0112 | Pre-listing, cheaper X counts: the 5-pair X case-control (5 of 5 listed coins grew chatter more) cost 6.23 USD; find a way to count cashtag posts per day for under 0.05 USD a coin so it can run on 30 pairs and nightly | desk | none |  | 0 | 30 min |
 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | desk | none |  | 0 | 15 min |
 | P-0118 | Grinder snapshots: fill mint_auth and freeze_auth from the Solana RPC instead of rugcheck (blank on 1,573 of 1,575 pump.fun mints, P-0099) | desk | none |  | 0 | 15 min |
@@ -31,11 +30,14 @@ Verdicts so far: 75 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
+| P-0128 | Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figure hold or trade tonight's Grinder picks within an hour of the snapshot (keyless Solana RPC)? | desk | none |  | 0 | 25 min |
 
-## Verdicts (105)
+## Verdicts (106)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-11 | P-0111 | Pre-listing, Korean chatter: find a keyless Korean source (DCInside coin gallery, Naver, Coinpan) with dated posts and test whether ticker mentions rise in the 14 days before Upbit KRW listings against matched controls, as xmentions.py did for X | **not-worth-it** | DCInside coin gallery is searchable keyless with exact timestamps (207 requests, 0 errors), but on the nine Upbit pairs real tickers barely appear (ICP 0 then 1, eleven of eighteen coins zero both windows); case grew more in 4 of 9. Ticker search misses Hangul names, so no signal here. | `experiments/2026-10-11-P-0111` | 10 min, 59 calls, 1 denied |
+| | | | | denied: TaskStop `` | | |
 | 2026-10-11 | P-0127 | Kolscan leaderboard: does it load keyless and list 10 or more wallets with a PnL figure? | **works** | kolscan.io/leaderboard serves keyless (HTTP 200, 240 KB, no JS run): the Next.js payload carries 558 wallet records, 91 with a profit field in SOL plus a name (top: Dior +201 SOL). Plain curl is enough for a nightly read. | `experiments/2026-10-11-P-0127` | 0 min, 6 calls, 1 denied |
 | | | | | denied: Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-11-P-0127/parse.py /Users/triton/PROT` | | |
 | 2026-10-11 | P-0110 | Pre-listing, shorter hold: backtest holding only the three strongest signals (new Bybit spot, Coinbase trading start, Binance spot announcement) for 7 days instead of a standing 14-day list, fitted Oct to Mar, judged Apr to Sep, same costs and benchmarks as experiments/2026-10-09-prelisting/backtest.py | **blocked** | The 9 Oct pre-listing backtest cannot run: its cache/static.json is not on disk anywhere and was never committed, so neither the variant nor the original reproduces from the repo. Wrapper ready in the folder. | `experiments/2026-10-10-P-0110` | 0 min, 14 calls, 0 denied |

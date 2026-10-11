@@ -1,5 +1,5 @@
 {
- "next_id": 128,
+ "next_id": 129,
  "items": [
   {
    "id": "P-0001",
@@ -2450,16 +2450,20 @@
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-09",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-11T23:45:59+0100",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-11T23:56:26+0100",
+   "note": "DCInside coin gallery is searchable keyless with exact timestamps (207 requests, 0 errors), but on the nine Upbit pairs real tickers barely appear (ICP 0 then 1, eleven of eighteen coins zero both windows); case grew more in 4 of 9. Ticker search misses Hangul names, so no signal here.",
+   "artefacts": [
+    "experiments/2026-10-11-P-0111"
+   ],
+   "minutes": 10,
+   "calls": 59,
+   "denied": [
+    "TaskStop ``"
+   ],
    "luke": false
   },
   {
@@ -2801,6 +2805,26 @@
    "denied": [
     "Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-11-P-0127/parse.py /Users/triton/PROT`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0128",
+   "title": "Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figure hold or trade tonight's Grinder picks within an hour of the snapshot (keyless Solana RPC)?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-11",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
    "luke": false
   }
  ]

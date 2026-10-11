@@ -1,0 +1,211 @@
+{
+ "rows": [
+  {
+   "case": {
+    "symbol": "ICP",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "OPN",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-03-11",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "CC",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "ZBT",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-04-14",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "CHIP",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "CHESS",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-04-21",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "BLEND",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "HAEDAL",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-04-29",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "PROS",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "RDNT",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-05-08",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "BABY",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "BOME",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-06-05",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "AI",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "GRAM",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-06-30",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "EUL",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "SUN",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-07-26",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  },
+  {
+   "case": {
+    "symbol": "CAP",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "control": {
+    "symbol": "SENT",
+    "a": 0,
+    "b": 0,
+    "growth": 0.0,
+    "pages": 4
+   },
+   "day": "2026-08-06",
+   "pos_range": [
+    10000,
+    20000
+   ],
+   "chunks": 2
+  }
+ ],
+ "summary": {
+  "pairs": 9,
+  "median_case_growth": 0.0,
+  "median_control_growth": 0.0,
+  "case_grew_more": 0,
+  "requests": 82,
+  "errors": 0,
+  "seconds": 181
+ }
+}
