@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 74 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (19 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -31,6 +31,7 @@ Verdicts so far: 74 works, 4 broken, 18 blocked, 8 not worth it. Killed: 4.
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
+| P-0127 | Kolscan leaderboard: does it load keyless and list 10 or more wallets with a PnL figure? | vault | none |  | 0 | 15 min |
 
 ## Verdicts (104)
 

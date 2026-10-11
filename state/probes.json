@@ -1,5 +1,5 @@
 {
- "next_id": 127,
+ "next_id": 128,
  "items": [
   {
    "id": "P-0001",
@@ -2766,6 +2766,26 @@
    "needs": "",
    "after": "",
    "est_minutes": 40,
+   "added": "2026-10-11",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0127",
+   "title": "Kolscan leaderboard: does it load keyless and list 10 or more wallets with a PnL figure?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
    "added": "2026-10-11",
    "status": "open",
    "attempts": 0,

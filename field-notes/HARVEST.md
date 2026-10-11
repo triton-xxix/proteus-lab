@@ -6,20 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-213 judged over 15 harvest days, 142 kept, 49 testable, 47 queued as probes, 42 with a probe verdict.
+225 judged over 16 harvest days, 151 kept, 50 testable, 48 queued as probes, 45 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0212 | 2026-10-10 | vault | [Decomposing one classification into several narrow questions with weights fitted on a labe]() | mechanism | tools-for-strangers | yes | P-0124 |
+| H-0224 | 2026-10-11 | github | [liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具](https://github.com/liyupi/ai-promo-video-maker) | mechanism | tools-for-strangers | no: The full flow needs model-driven agent runs, logins for scre |  |
+| H-0223 | 2026-10-11 | vault | [Public on-chain leaderboards as the check on any trader's claimed record]() | mechanism | desk:grinder | yes | P-0127 |
+| H-0222 | 2026-10-11 | youtube | [Anthropic Engineers Just 10x'd Everyone's Claude Code](https://www.youtube.com/watch?v=oz2CwrPV2Rg) | mechanism | tech | no: Checking it means running a model with and without the rules |  |
+| H-0221 | 2026-10-11 | arxiv | [TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation](https://arxiv.org/abs/2610.11678) | mechanism | mechanism-hunting | no: Reproducing it needs repeated LLM agent runs, which are not  |  |
+| H-0219 | 2026-10-11 | vault | [Phone-gated lead magnet to free workshop to done-for-you app build agency](https://keza.studio/10-app-templates) | mechanism | tools-for-strangers | no: Measuring it needs real traffic and a live funnel, and submi |  |
+| H-0217 | 2026-10-11 | arxiv | [Narrow and Deep: An Ontology Tower as the Knowledge of an LLM Agent for an Industrial Equi](https://arxiv.org/abs/2610.11768) | mechanism | mechanism-hunting | no: It needs the plant data and open-weight models, and there is |  |
+| H-0216 | 2026-10-11 | github | [aindeev/agent-chrome-relay: Let your AI agents use your Chrome, signed in as you, in backg](https://github.com/aindeev/agent-chrome-relay) | both | tools-for-strangers | no: It needs a manually loaded Chrome extension, a signed Go bui |  |
+| H-0215 | 2026-10-11 | hn | [Show HN: Littleguys – Claude Code, Codex and OpenClaw agents in your menu bar](https://littleguys.hervalicio.us) | both | tools-for-strangers | no: It needs a GUI install and live agents to talk to, and the h |  |
+| H-0214 | 2026-10-11 | vault | [Extract the free classroom for the product-validation and repeat-purchase method, if Luke ](https://www.skool.com/supplements) | mechanism | tools-for-strangers | no: The course content sits behind a Skool login, and the method |  |
+| H-0212 | 2026-10-10 | vault | [Decomposing one classification into several narrow questions with weights fitted on a labe]() | mechanism | tools-for-strangers | yes | P-0124 **blocked** |
 | H-0211 | 2026-10-10 | awesome | [bill10/agent-007 (new in awesome-claude-code)](https://github.com/bill10/agent-007) | mechanism | tools-for-strangers | no: Needs a web service, git repos and Claude Code or Codex agen |  |
 | H-0207 | 2026-10-10 | hn | [Can you use autoregressive diffusion to generate market data?](https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/) | mechanism | forecasting | no: Needs tick-level order book data and GPU training, not keyle |  |
 | H-0206 | 2026-10-10 | vault | [Templates, thumbnails, overlays and pre-launch guides sold or published to creators before]() | mechanism | tools-for-strangers | no: Needs a storefront and an audience, and the result takes wee |  |
 | H-0205 | 2026-10-10 | awesome | [automatis-tools/agents-can-communicate (new in awesome-claude-code)](https://github.com/automatis-tools/agents-can-communicate) | mechanism | tools-for-strangers | no: Needs Node 24 and a second vendor's client installed and tru |  |
-| H-0204 | 2026-10-10 | youtube | [Code Demo - Web-scraping with API's](https://www.youtube.com/watch?v=H-6gyxVGj6A) | mechanism | open-data | yes | P-0123 |
+| H-0204 | 2026-10-10 | youtube | [Code Demo - Web-scraping with API's](https://www.youtube.com/watch?v=H-6gyxVGj6A) | mechanism | open-data | yes | P-0123 **works** |
 | H-0203 | 2026-10-10 | arxiv | [SuperNav: An Agentic Navigation System for Any Task in Any Scene](https://arxiv.org/abs/2610.12126) | mechanism | tech | no: Needs a robot or the HM3D simulator plus a multimodal model  |  |
-| H-0202 | 2026-10-10 | github | [wheresryan22/anatomy: A Claude Code skill that turns a technical idea into a detailed, int](https://github.com/wheresryan22/anatomy) | mechanism | tools-for-strangers | yes | P-0122 |
+| H-0202 | 2026-10-10 | github | [wheresryan22/anatomy: A Claude Code skill that turns a technical idea into a detailed, int](https://github.com/wheresryan22/anatomy) | mechanism | tools-for-strangers | yes | P-0122 **works** |
 | H-0200 | 2026-10-10 | vault | [UK shape of selling booking software through trade job software and profile booking button](https://www.youtube.com/watch?v=mr4YV-9MY0Q) | mechanism | tools-for-strangers | no: The open question is which UK job software trades use and wh |  |
 | H-0198 | 2026-10-09 | vault | [x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go](https://docs.google.com/document/d/1_KvqUJXH1z7RUjrnbal0JVgGcJyP4yFfOdyZ1PRWbQs/edit?usp=drivesdk) | mechanism | tools-for-strangers | yes | P-0116 **works** |
 | H-0195 | 2026-10-09 | arxiv | [A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization](https://arxiv.org/abs/2610.12183) | mechanism | mechanism-hunting | no: Needs the benchmark harness plus LLM calls across domains; n |  |
@@ -156,6 +165,115 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0224 liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真
+2026-10-11, github, https://github.com/liyupi/ai-promo-video-maker. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** The repo is an AGENTS.md workflow plus a Remotion template and helper scripts. The agent researches the product, asks two rounds of questions, draws sample frames in several styles for the user to choose from, captures real pages with Playwright, cuts to music beats, and generates narration. Narration is then transcribed back and compared sentence by sentence to catch misread words, and frames are reviewed by the agent. Without an ElevenLabs key it falls back to Mixkit free music and large captions.
+- **Claim:** One sentence to an AI coding tool produces a 4K product promo video with music, narration and a web version.
+- **Testable:** no. The full flow needs model-driven agent runs, logins for screenshots and a long render, which does not fit 30 minutes keyless. Needs: Node, ffmpeg and agent model time; an ElevenLabs key for narration..
+- **Idea on its own:** sound. A round-trip transcription check on generated speech is cheap and catches real errors.
+- **How it would be done:** Take the narration verification step on its own: generate speech, transcribe it locally, and diff against the script at sentence level. Wire the sample-frame style choice into the brief stage, and keep beat-aligned cuts as a HyperFrames timing pass. The stack already covers voice, transcription and composing, so the work is the checking script and the checklist from AGENTS.md.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), local transcription, Claude Code with skills and sub-agents
+- **To fetch:** ai-promo-video-maker https://github.com/liyupi/ai-promo-video-maker (The AGENTS.md workflow and helper scripts to borrow the checks from.); Remotion https://www.remotion.dev (The render engine the template uses, for comparison with HyperFrames.)
+- **Field Notes line:** The new part is the narration check: transcribe the generated voice and compare it sentence by sentence to catch misread brand names before the video is cut.
+
+### H-0223 Public on-chain leaderboards as the check on any trader's claimed record
+2026-10-11, vault, 
+
+- **Mechanism:** A wallet's record is rebuilt from public chain data: every swap is read from the ledger, priced at the time of trade, and summed into realised and unrealised profit. Leaderboard sites such as Kolscan, GMGN and Solana Tracker do this at scale, and Dune lets anyone query the same data. A claim is credible only if it maps to a wallet address and the numbers reproduce from the ledger.
+- **Claim:** Public on-chain leaderboards let anyone check a trader's claimed profit against the wallet's actual trades.
+- **Testable:** yes. Does the public Kolscan leaderboard load without login and list at least 10 wallet addresses with a PnL figure (yes/no, count)? Queued as P-0127.
+- **Idea on its own:** sound. On-chain trades are public and rebuildable, so the claim can be checked without trusting anyone.
+- **How it would be done:** Take a wallet address from a public leaderboard. Pull its swaps from a public Solana RPC or indexer, price them with DexScreener or GeckoTerminal history, and recompute realised profit. Compare with the leaderboard figure and note the gap and the causes, such as fees and unrealised holdings. The Grinder's readers already cover the pricing side.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** Kolscan https://kolscan.io (Public Solana trader leaderboard to test.); GMGN https://gmgn.ai (Wallet and token analytics for cross-checking a leaderboard figure.); Solana Tracker https://www.solanatracker.io (Wallet PnL data and API with a free tier.); Dune https://dune.com (Public SQL over chain data (free account needed for queries).)
+- **Field Notes line:** A trader's claimed profit can be checked from public Solana trades, and several free leaderboards already do the sums.
+
+### H-0222 Anthropic Engineers Just 10x'd Everyone's Claude Code
+2026-10-11, youtube, https://www.youtube.com/watch?v=oz2CwrPV2Rg
+
+- **Mechanism:** The claim is that newer models need less instruction, so the Claude Code system prompt was cut by over 80 percent with no measured loss on Anthropic's evals. The advice is to prune accumulated rules from CLAUDE.md and skills, state the outcome, the reason and the constraints, and leave room for the model. Evidence cited is Anthropic's own evaluations, which the video does not show.
+- **Claim:** Anthropic removed over 80 percent of the Claude Code system prompt with no measurable loss on their evaluations.
+- **Testable:** no. Checking it means running a model with and without the rules, and the source evaluations are not public in the video. Needs: Model access and a fixed set of tasks to replay..
+- **Idea on its own:** needs-a-run. Plausible, but the claim rests on unseen internal evals and needs a paired replay to confirm.
+- **How it would be done:** List the rules in a CLAUDE.md or skill, and pick a fixed set of past tasks with known good outcomes. Run each task with the full rules and with a pruned version, several times each, and compare pass rates and run-to-run variance. Remove only the rules whose absence shows no change. A paired design matters because single runs are noisy.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Anthropic says it cut over 80 percent of the Claude Code system prompt without losing eval scores, so old rules in CLAUDE.md may now just slow things down.
+
+### H-0221 TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation
+2026-10-11, arxiv, https://arxiv.org/abs/2610.11678
+
+- **Mechanism:** TRACE changes one part of an evaluation, such as tool names or output format, runs paired trials, checks whether agent behaviour changed, and rescores the unchanged trajectories to see if the scoring rule caused the gap. On tau2-bench, reruns of identical tasks flipped 15 to 36 percent of outcomes, so single runs cannot show a small effect. Misleading tool names cut reward by 0.20 to 0.44.
+- **Claim:** Renaming tools moved a scripted agent's score by 0.250 with identical behaviour, and identical reruns flip 15-36% of outcomes.
+- **Testable:** no. Reproducing it needs repeated LLM agent runs, which are not keyless tonight. Needs: Model access for agent runs..
+- **Idea on its own:** sound. Separating the agent from the scoring rule with paired runs and rescoring is basic measurement hygiene.
+- **How it would be done:** Take any scored Proteus check that uses a model or a rule-based verifier. Change one presentation detail, run it several times per condition, and rescore the saved trajectories with the original format restored. If the gap closes at scoring time, the verifier was brittle. Record run-to-run variance first so small differences are not over-read.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** tau2-bench https://github.com/sierra-research/tau2-bench (The public benchmark the paper used.)
+- **Field Notes line:** Identical agent reruns flip up to 36 percent of task outcomes, so one-run score changes in any eval need a paired, rescored check.
+
+### H-0219 Phone-gated lead magnet to free workshop to done-for-you app build agency
+2026-10-11, vault, https://keza.studio/10-app-templates
+
+- **Mechanism:** A free planning-document download sits behind an SMS-verified phone number, which filters out throwaway emails and gives a number that can be called. The lead is then invited to a free workshop, and buyers of the done-for-you build are taken from that room. Each step is a funnel stage with its own drop-off rate.
+- **Claim:** A London app studio offers ten app templates free in return for a verified phone number, as the top of a funnel to paid app builds.
+- **Testable:** no. Measuring it needs real traffic and a live funnel, and submitting a phone number to a stranger's form is not something to do keyless. Needs: A traffic source and an SMS verification provider..
+- **Idea on its own:** sound. A verified phone number is a stronger lead signal than an email, at the cost of fewer sign-ups.
+- **How it would be done:** Build a landing page with a useful free document, add an SMS code step with a provider such as Twilio Verify, and send verified leads to a workshop booking page. Track the drop-off at each step against the email-only version to see the trade. A person is needed to run the workshop and the sales call.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Twilio Verify https://www.twilio.com/en-us/user-authentication-identity/verify (The usual SMS code check for a phone gate (paid, trial credit).)
+- **Missing:** A workshop host and sales closer, which no script covers.
+- **Field Notes line:** Gating a free download behind SMS verification trades volume for leads you can actually ring.
+
+### H-0217 Narrow and Deep: An Ontology Tower as the Knowledge of an LLM Agent for an Industrial Equipment System
+2026-10-11, arxiv, https://arxiv.org/abs/2610.11768
+
+- **Mechanism:** A narrow-and-deep knowledge graph of one machine is built in two layers: quantities derived from measured points by physical formulas, and lessons from the operating journal turned into knowledge nodes. A text projection of that tower is placed in the agent's prompt. It was scored on nine preregistered tasks replayed from plant records with four open-weight models, then run live through a safety layer.
+- **Claim:** The projected ontology text raised the rate of avoiding the most plausible misjudgment by about 20 points, and the 9B model matched the largest on overall score.
+- **Testable:** no. It needs the plant data and open-weight models, and there is no local LLM on this Mac. Needs: Plant records and an open-weight model runtime..
+- **Idea on its own:** needs-a-run. The effect is plausible but rests on nine tasks from one plant.
+- **How it would be done:** Pick one narrow system, such as the Grinder's own rules and past failures. Write derived quantities and past lessons as short knowledge nodes, then project them into the prompt as plain text. Replay a fixed set of past cases with and without that text, and compare how often the obvious wrong call is avoided. The comparison is cheap but needs model answers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Ollama https://ollama.com (Local open-weight models, needed to repeat the with and without comparison keyless.)
+- **Field Notes line:** Putting lessons from an operating journal into the prompt, not behind a search tool, is what made small models behave like big ones on a plant.
+
+### H-0216 aindeev/agent-chrome-relay: Let your AI agents use your Chrome, signed in as you, in background tabs. By Alexey Indeev ·
+2026-10-11, github, https://github.com/aindeev/agent-chrome-relay
+
+- **Mechanism:** A Chrome MV3 extension opens agent tabs inactive in a tab group and runs DevTools commands through the chrome.debugger API, so no remote-debugging port is exposed. A local Go relay on 127.0.0.1:9333 gives each agent its own DevTools endpoint limited to the tabs it opened, and swallows focus-raising commands. The agent-browser CLI connects over that endpoint using the user's existing logins.
+- **Claim:** Lets coding agents use your everyday signed-in Chrome in background tabs at about 0.15 seconds per command.
+- **Testable:** no. It needs a manually loaded Chrome extension, a signed Go build and real logins, which cannot be done keyless and unattended. Needs: A Chrome profile with the extension loaded by hand, Go 1.25, and a signing step..
+- **Idea on its own:** sound. Scoping each agent to its own tabs behind a local relay is a sensible way to share a logged-in browser.
+- **How it would be done:** Build the Go relay on the Mac, load the unpacked extension into a dedicated Chrome profile, and install agent-browser. Test with a read-only page that needs a login the user already holds. Check the audit log to confirm each agent sees only the tabs it opened. Keep it on a separate profile so a mistake cannot touch the main one.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agent-chrome-relay https://github.com/aindeev/agent-chrome-relay (The relay and extension.); agent-browser https://github.com/vercel-labs/agent-browser (The CLI the relay is paired with.)
+- **Field Notes line:** Agents can drive your real signed-in Chrome through the chrome.debugger API, with a local relay that scopes each agent to its own tabs.
+
+### H-0215 Show HN: Littleguys – Claude Code, Codex and OpenClaw agents in your menu bar
+2026-10-11, hn, https://littleguys.hervalicio.us
+
+- **Mechanism:** A Tauri app (Rust core, React front end) that speaks the Agent Client Protocol to many coding agents and OpenClaw or Hermes gateways. It discovers gateways on a tailnet or LAN, shows each agent's status, and turns permission prompts into allow once, always allow or deny cards. Scheduled routines run through the same protocol. It holds gateway tokens locally with no cloud account.
+- **Claim:** A free open-source Mac menu bar app that shows and approves actions from Claude Code, Codex, Gemini CLI and other agents across machines.
+- **Testable:** no. It needs a GUI install and live agents to talk to, and the hook-governed unattended runs here would not exercise it. Needs: A GUI session on the Mac and a running ACP-capable agent..
+- **Idea on its own:** sound. A common protocol for agent status and permission requests removes per-agent glue code.
+- **How it would be done:** Read the Agent Client Protocol spec and the registry of ACP agents, then connect one agent over stdio and log its permission request messages. A thin approval front end can be a menu bar app, as here, or a phone page. For Proteus the useful slice is the message schema, not the app: it shows what a permission request carries.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** littleguys https://littleguys.hervalicio.us (The app itself, to see ACP permission cards working.); Agent Client Protocol https://agentclientprotocol.com (The spec and schema the app speaks.)
+- **Field Notes line:** Agent Client Protocol is a shared wire format for coding agents, and a menu bar app now uses it to approve their commands from one place.
+
+### H-0214 Extract the free classroom for the product-validation and repeat-purchase method, if Luke joins
+2026-10-11, vault, https://www.skool.com/supplements
+
+- **Mechanism:** The method is demand validation before stock: find a product people already search for or buy, test interest with a landing page or small ad spend, and only then order inventory. Repeat-purchase design (subscriptions, bundles, replenishment timing) is the second half. The numbers come from ad-test click and conversion rates and, afterwards, reorder rates. The classroom itself is gated behind a free Skool join.
+- **Claim:** A free Skool community says it teaches finding supplements people want, ad tests and repeat buyers, from a founder claiming a 3 million dollar brand.
+- **Testable:** no. The course content sits behind a Skool login, and the method needs ad spend to produce any result. Needs: A Skool account to read the classroom; ad budget to run a real validation test..
+- **Idea on its own:** sound. Testing demand before buying inventory is a standard, cheap way to avoid dead stock.
+- **How it would be done:** Pick candidate products and pull demand proxies from public sources such as search volume, marketplace sales rank history and review velocity. Put up a one-page listing or waitlist for each and drive a small, fixed amount of ad traffic to it. Record click-through and sign-up rates against a pre-set threshold, and order stock only for products that clear it. Track reorder rate after the first sale as the repeat-purchase measure. A person is needed for supplier calls and for compliance checks on claims.
+- **Stack already covers:** Claude Code with skills and sub-agents, keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** Keepa price and rank history https://keepa.com (Free tier shows Amazon sales rank history, a public demand proxy for product selection.)
+- **Missing:** The classroom content itself and a real ad budget for the validation tests.
+- **Field Notes line:** The useful part is the order of work: prove people want a product with a cheap ad test before paying for any stock.
 
 ### H-0212 Decomposing one classification into several narrow questions with weights fitted on a labelled set
 2026-10-10, vault, 
@@ -1756,7 +1874,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0212 | 2026-10-10 | Decomposing one classification into several narrow questions with weights fitted on a labe | open | needs-a-run | yes | P-0124 |
+| H-0223 | 2026-10-11 | Public on-chain leaderboards as the check on any trader's claimed record | open | sound | yes | P-0127 |
+| H-0219 | 2026-10-11 | Phone-gated lead magnet to free workshop to done-for-you app build agency | open | sound | no |  |
+| H-0214 | 2026-10-11 | Extract the free classroom for the product-validation and repeat-purchase method, if Luke  | open | sound | no |  |
+| H-0212 | 2026-10-10 | Decomposing one classification into several narrow questions with weights fitted on a labe | open | needs-a-run | yes | P-0124 **blocked** |
 | H-0206 | 2026-10-10 | Templates, thumbnails, overlays and pre-launch guides sold or published to creators before | open | needs-a-run | no |  |
 | H-0200 | 2026-10-10 | UK shape of selling booking software through trade job software and profile booking button | open | needs-a-run | no |  |
 | H-0198 | 2026-10-09 | x402 per-call payment rails for agents, Coinbase-originated, now under Linux Foundation go | open | sound | yes | P-0116 **works** |
@@ -1800,6 +1921,17 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0150 | 2026-10-11 | [Remotion](https://www.remotion.dev) | The render engine the template uses, for comparison with HyperFrames. | H-0224 (liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名) | shelf |
+| T-0149 | 2026-10-11 | [ai-promo-video-maker](https://github.com/liyupi/ai-promo-video-maker) | The AGENTS.md workflow and helper scripts to borrow the checks from. | H-0224 (liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名) | shelf |
+| T-0148 | 2026-10-11 | [Solana Tracker](https://www.solanatracker.io) | Wallet PnL data and API with a free tier. | H-0223 (Public on-chain leaderboards as the check on any t) | shelf |
+| T-0147 | 2026-10-11 | [tau2-bench](https://github.com/sierra-research/tau2-bench) | The public benchmark the paper used. | H-0221 (TRACE: Diagnosing Verifier Brittleness in Agentic ) | shelf |
+| T-0146 | 2026-10-11 | [Twilio Verify](https://www.twilio.com/en-us/user-authentication-identity/verify) | The usual SMS code check for a phone gate (paid, trial credit). | H-0219 (Phone-gated lead magnet to free workshop to done-f) | shelf |
+| T-0145 | 2026-10-11 | [Ollama](https://ollama.com) | Local open-weight models, needed to repeat the with and without comparison keyless. | H-0217 (Narrow and Deep: An Ontology Tower as the Knowledg) | shelf |
+| T-0144 | 2026-10-11 | [agent-browser](https://github.com/vercel-labs/agent-browser) | The CLI the relay is paired with. | H-0216 (aindeev/agent-chrome-relay: Let your AI agents use) | shelf |
+| T-0143 | 2026-10-11 | [agent-chrome-relay](https://github.com/aindeev/agent-chrome-relay) | The relay and extension. | H-0216 (aindeev/agent-chrome-relay: Let your AI agents use) | shelf |
+| T-0142 | 2026-10-11 | [Agent Client Protocol](https://agentclientprotocol.com) | The spec and schema the app speaks. | H-0215 (Show HN: Littleguys – Claude Code, Codex and OpenC) | shelf |
+| T-0141 | 2026-10-11 | [littleguys](https://littleguys.hervalicio.us) | The app itself, to see ACP permission cards working. | H-0215 (Show HN: Littleguys – Claude Code, Codex and OpenC) | shelf |
+| T-0140 | 2026-10-11 | [Keepa price and rank history](https://keepa.com) | Free tier shows Amazon sales rank history, a public demand proxy for product selection. | H-0214 (Extract the free classroom for the product-validat) | shelf |
 | T-0139 | 2026-10-10 | [scikit-learn](https://scikit-learn.org/) | Logistic regression for the weights. | H-0212 (Decomposing one classification into several narrow) | shelf |
 | T-0138 | 2026-10-10 | [UCI SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) | Public labelled text for the held-out test. | H-0212 (Decomposing one classification into several narrow) | shelf |
 | T-0137 | 2026-10-10 | [bill10/agent-007](https://github.com/bill10/agent-007) | The app. | H-0211 (bill10/agent-007 (new in awesome-claude-code)) | shelf |
@@ -1944,6 +2076,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0225 | 2026-10-11 | youtube | [How to Build Your First MCP Server (in Less Than 5 Minutes)](https://www.youtube.com/watch?v=Y4bpWRLdRoA) | Beginner MCP server tutorial with no new mechanism. |
+| H-0220 | 2026-10-11 | github | [LingCore/WinShun: Win顺：免费开源的 Windows 快速搜索启动器。双击 Ctrl，拼音秒搜文件、全文搜索 Word/Excel/PDF、](https://github.com/LingCore/WinShun) | Windows-only launcher; the MFT index and MCP search server do not run on this Mac. |
+| H-0218 | 2026-10-11 | youtube | [How the Top 1% Use Claude Code Differently](https://www.youtube.com/watch?v=J9NQTYUP6k0) | Generic Claude Code advice (brief, guardrails, definition of done); overlaps the other Claude Code video, which is kept. |
 | H-0213 | 2026-10-10 | github | [transkatgirl/vibeclaude: A port of opencode-buttplugio to Claude Code written by](https://github.com/transkatgirl/vibeclaude) | Novelty plugin needing physical hardware; the hook to daemon to websocket path is generic. |
 | H-0210 | 2026-10-10 | youtube | [Tutorial 2: Understanding the UK Data Service Open Data API](https://www.youtube.com/watch?v=P5cwP-HK8uI) | The API needs a key and covers one survey dataset; the police API item is the better open-data one. |
 | H-0209 | 2026-10-10 | arxiv | [Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent Syste](https://arxiv.org/abs/2610.11899) | A survey of labels and architectures with no mechanism to run. |
