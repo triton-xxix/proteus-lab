@@ -1,4 +1,14 @@
-# P-0100 / DUE D-009: G2 fill realism, not finished tonight
+# P-0100 / DUE D-009: G2 fill realism
+
+## Update, about 00:40 on 11 Oct: it finished, and the KEEP is withdrawn
+The background job ran on after the verdict below and finished well inside the night once
+GeckoTerminal stopped throttling. `results.json`: 403 trades, 399 re-priced, 4 no data. Expectancy
+**-£3.98** per £100, best ten removed **-£6.00**, 6.3% at or below -50%, 25 stops, 1 carried-forward
+exit. The same 399 on Jupiter's quotes: +£45.75 and +£0.41. Median candle entry over Jupiter quote 1.007.
+Both D-009 lines fail. "Blocked on time" below was wrong: I extrapolated from the first slow minutes.
+
+---
+
 
 Date: 2026-10-10, nightly probe loop.
 

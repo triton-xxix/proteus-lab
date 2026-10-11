@@ -108,3 +108,16 @@ slippage, not fills anyone took. KEEP means the book carries on and earns its ne
 whether the fills survive: the next step is a fill-realism check on the 403 (quoted price against
 what the pool would actually have given at entry size), pre-registered in `DUE.md` tonight before
 anyone runs it.
+
+## Fill-realism check D-009, 11 Oct 2026: KEEP withdrawn
+
+Run as P-0100 (`experiments/2026-10-10-P-0100/reprice.py`, rules in its docstring, written before any
+candle came back). The first 403 G2 counted trades re-priced on GeckoTerminal 1-minute candle closes,
+same stop and 20-minute exit, same v0.2 costs: 399 priced, 4 without data. Expectancy **-£3.98** per
+£100 and **-£6.00** with the best ten removed, against +£45.75 and +£0.41 for the same 399 trades on
+Jupiter's quotes. D-009 said the KEEP stands only if expectancy is at least +£10 and best-ten-removed
+at least zero; both fail, so the KEEP is withdrawn. The median candle entry is only 0.7 percent above
+Jupiter's quote, so the gap is not the entry price on most trades; it sits in the few big winners,
+which the minute closes do not reproduce. The book's watcher keeps recording; G2 is no longer a
+KEEP and nothing graduates from it. The job finished at about 00:40 on 11 Oct, after the night's
+probe verdict had already called P-0100 blocked on time; that verdict was wrong about the time.
