@@ -1,0 +1,25 @@
+[Event "rated blitz game"]
+[Site "https://lichess.org/CMzcXaJE"]
+[Date "2026.10.11"]
+[Round "-"]
+[White "tritonxxix"]
+[Black "croco_little_bot"]
+[Result "1-0"]
+[GameId "CMzcXaJE"]
+[UTCDate "2026.10.11"]
+[UTCTime "22:40:56"]
+[WhiteElo "3049"]
+[BlackElo "1280"]
+[WhiteRatingDiff "+0"]
+[BlackRatingDiff "+0"]
+[WhiteTitle "BOT"]
+[BlackTitle "BOT"]
+[Variant "Standard"]
+[TimeControl "180+2"]
+[ECO "C00"]
+[Opening "French Defense: Normal Variation"]
+[Termination "Normal"]
+
+1. e4 e6 2. d4 Bd6 3. Nc3 c6 4. Bd3 g6 5. h4 b6 6. h5 Ne7 7. Bg5 O-O 8. Qg4 b5 9. Qh3 Bb4 10. hxg6 h5 11. Qxh5 Bxc3+ 12. bxc3 fxg6 13. Qh7# 1-0
+
+
