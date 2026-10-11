@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 77 works, 4 broken, 19 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 78 works, 4 broken, 19 blocked, 9 not worth it. Killed: 4.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,17 +22,17 @@ Verdicts so far: 77 works, 4 broken, 19 blocked, 9 not worth it. Killed: 4.
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
-| P-0119 | Grinder harness: an entry-delay variant (buy one minute after the snapshot) (DUE.md D-003): experiments/2026-10-06-grinder-fill-check/REPORT.md "Next" | desk | none |  | 0 | 40 min |
 | P-0120 | P-0084 trend portfolio: its recorded Sharpe 0.28 against 0.35 on a re-run of the same script and data; re-read (DUE.md D-004): experiments/2026-10-07-P-0088/README.md | desk | none |  | 0 | 40 min |
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 0 | 15 min |
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
 | P-0128 | Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figure hold or trade tonight's Grinder picks within an hour of the snapshot (keyless Solana RPC)? | desk | none |  | 0 | 25 min |
 
-## Verdicts (109)
+## Verdicts (110)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-11 | P-0119 | Grinder harness: an entry-delay variant (buy one minute after the snapshot) (DUE.md D-003): experiments/2026-10-06-grinder-fill-check/REPORT.md "Next" | **works** | Buying at the open one minute after the snapshot, same 64 v0.2 trades and stops: net -642.09 GBP against -424.01 as booked (base walk reproduces the ledger to the penny); median entry slip -0.01 pct, but 5 trades worse and 2 better, 20 wins against 21. Speed matters on the few that move. | `experiments/2026-10-11-P-0119` | 0 min, 6 calls, 0 denied |
 | 2026-10-11 | P-0118 | Grinder snapshots: fill mint_auth and freeze_auth from the Solana RPC instead of rugcheck (blank on 1,573 of 1,575 pump.fun mints, P-0099) | **works** | One keyless getMultipleAccounts call (0.13 s) parsed all 30 recent ledger mints (all spl-token-2022): 30 of 30 filled, 0 with mint or freeze authority set. The column can be filled from the RPC, but on pump.fun mints it is always revoked, so it separates nothing. | `experiments/2026-10-11-P-0118` | 0 min, 4 calls, 0 denied |
 | 2026-10-11 | P-0117 | Smarkets Highest Temperature markets: which city and weather station settle them (market priced 10 Oct at 13C against London models at 14.6C) | **works** | Smarkets' keyless event API settles every Highest Temperature market I called on Munich (slug /weather/munich/, designated station unnamed), not London. X-0011 to X-0013 were forecast for the wrong city and are near-certain losses. exchange.py markets now prints the slug (9d6eba3). | `experiments/2026-10-11-P-0117` | 0 min, 22 calls, 0 denied |
 | 2026-10-11 | P-0112 | Pre-listing, cheaper X counts: the 5-pair X case-control (5 of 5 listed coins grew chatter more) cost 6.23 USD; find a way to count cashtag posts per day for under 0.05 USD a coin so it can run on 30 pairs and nightly | **blocked** | Keyless mirrors all down tonight (xcancel 451 suspended, nitter.net notice page only, two others dead). xAI cost fits $0.034 + $0.008 per cited post (R2 0.98, mean $0.62 a coin), so $0.05 buys about two posts: no prompt gets under target. | `experiments/2026-10-11-P-0112` | 1 min, 17 calls, 0 denied |
