@@ -1,0 +1,130 @@
+[
+ {
+  "label": "midday",
+  "at": "2026-10-12T11:45:56Z",
+  "commit_line_fetched": "2026-10-11T22:30:24Z",
+  "rows": [
+   {
+    "match": "Atalanta v Venezia",
+    "Div": "I1",
+    "kickoff_utc": "2026-10-12T16:30:00Z",
+    "hours_to_ko": 4.73,
+    "commit": {
+     "AvgH": 1.568,
+     "AvgD": 4.216,
+     "AvgA": 5.545,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 1.584,
+     "AvgD": 4.311,
+     "AvgA": 5.303,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.0102,
+     "AvgD": 0.0225,
+     "AvgA": -0.0436
+    },
+    "errors": []
+   },
+   {
+    "match": "Torino v Udinese",
+    "Div": "I1",
+    "kickoff_utc": "2026-10-12T18:45:00Z",
+    "hours_to_ko": 6.98,
+    "commit": {
+     "AvgH": 2.353,
+     "AvgD": 3.188,
+     "AvgA": 3.182,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 2.398,
+     "AvgD": 3.143,
+     "AvgA": 3.156,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.0191,
+     "AvgD": -0.0141,
+     "AvgA": -0.0082
+    },
+    "errors": []
+   },
+   {
+    "match": "Coventry v Newcastle",
+    "Div": "E0",
+    "kickoff_utc": "2026-10-12T19:00:00Z",
+    "hours_to_ko": 7.23,
+    "commit": {
+     "AvgH": 3.147,
+     "AvgD": 3.568,
+     "AvgA": 2.206,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 3.166,
+     "AvgD": 3.553,
+     "AvgA": 2.198,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.006,
+     "AvgD": -0.0042,
+     "AvgA": -0.0036
+    },
+    "errors": []
+   },
+   {
+    "match": "Levante v Sevilla",
+    "Div": "SP1",
+    "kickoff_utc": "2026-10-12T19:00:00Z",
+    "hours_to_ko": 7.23,
+    "commit": {
+     "AvgH": 2.746,
+     "AvgD": 3.281,
+     "AvgA": 2.6,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 2.713,
+     "AvgD": 3.2,
+     "AvgA": 2.702,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": -0.012,
+     "AvgD": -0.0247,
+     "AvgA": 0.0392
+    },
+    "errors": []
+   },
+   {
+    "match": "Famalicao v Alverca",
+    "Div": "P1",
+    "kickoff_utc": "2026-10-12T19:15:00Z",
+    "hours_to_ko": 7.48,
+    "commit": {
+     "AvgH": 1.863,
+     "AvgD": 3.409,
+     "AvgA": 4.247,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 1.862,
+     "AvgD": 3.398,
+     "AvgA": 4.31,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": -0.0005,
+     "AvgD": -0.0032,
+     "AvgA": 0.0148
+    },
+    "errors": []
+   }
+  ],
+  "left": "91"
+ }
+]

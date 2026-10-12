@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 82 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 83 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,15 +24,15 @@ Verdicts so far: 82 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
-| P-0129 | Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices move after commit and whether the desk's 'beat the close' bets are just the moves it never saw | desk | none |  | 1 (in progress) | 30 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0134 | Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experiments/2026-10-12-P-0128/run.py in the background, about 55 min | desk | none |  | 0 | 20 min |
 
-## Verdicts (115)
+## Verdicts (116)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-12 | P-0129 | Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices move after commit and whether the desk's 'beat the close' bets are just the moves it never saw | **works** | Measured leg 1 only: 15 prices on 5 Monday fixtures moved a mean 1.5 pct (max 4.4) from the commit-time line to 4.7 to 7.5 h before kickoff. Shot said blocked, no fixtures till 17 Oct: wrong, I assumed a break without looking. The 2 h leg falls after this slot. Next: deepen (P-0135: run.py ko-2h near 15:30Z and 17:00Z today, set moves beside the book bets). | `experiments/2026-10-12-P-0129` | 0 min, 8 calls, 0 denied |
 | 2026-10-12 | P-0132 | P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep | **works** | Measured on 10 wallets x DOGEUS only: 0 touches in the window (shot: 1 of 91, not reached). 4 of 10 have one signature each at the same second, 21:17:41Z, six minutes before the window: looks like a dust airdrop to KOL wallets, unconfirmed. Stall cause: about 9 s per getSignaturesForAddress on the public RPC, so 364 lookups is about 55 min. Next: deepen (P-0134: full 91 x 4 as a background run, open the 21:17:41Z transaction). | `experiments/2026-10-12-P-0132` | 2 min, 14 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -u /Users/triton/PROTEUS/experiments/2026-10-12-P-` | | |
 | 2026-10-12 | P-0131 | Pitch injuries: does API-Football's injuries endpoint answer on the Free plan for this weekend's fixtures, and how many requests does a round cost against the 100 a day? | **works** | Measured: /injuries by date answers on the Free plan, 168 rows today and 290 tomorrow, 1 request per match day (100 to 95 over 5 calls); by league+season refused (2022 to 2024 only). Shot said blocked, no key: wrong, the key was already in pitch/apisports.py. Caveat: international break, rows not filtered to the nine leagues. Next: deepen (P-0133: add injuries to apisports fetch, count rows in the nine leagues on a match day). | `experiments/2026-10-12-P-0131` | 0 min, 8 calls, 0 denied |
