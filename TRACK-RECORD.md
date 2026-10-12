@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-10-11 17:03 UTC at commit b346606.
+Rebuilt 2026-10-12 08:06 UTC at commit 9378f79.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -13,19 +13,19 @@ Current rules v0.2, £100.00 a position. Earlier rule versions are their own boo
 
 | Measure | Value |
 |---|---|
-| Paper bankroll | £787.47 (started £1000.00) |
-| Positions opened | 64 |
-| Positions closed | 60 |
-| Positions scored at 24h | 60 |
-| Hit rate | 0.35 |
-| Expectancy per position | £-3.54 |
-| Expectancy as a share of the stake | -3.5% |
+| Paper bankroll | £575.99 (started £1000.00) |
+| Positions opened | 68 |
+| Positions closed | 64 |
+| Positions scored at 24h | 64 |
+| Hit rate | 0.328 |
+| Expectancy per position | £-6.63 |
+| Expectancy as a share of the stake | -6.6% |
 | Positions that rugged | 2 |
 
 | Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |
 |---|---|---|---|---|---|---|---|
 | v0.1 | £5.00 | 6 | 6 | £-1.08 | -21.5% | £93.54 (from £100.00) | 1 |
-| v0.2 | £100.00 | 64 | 60 | £-3.54 | -3.5% | £787.47 (from £1000.00) | 2 |
+| v0.2 | £100.00 | 68 | 64 | £-6.63 | -6.6% | £575.99 (from £1000.00) | 2 |
 
 Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside
 what the ledger recorded, so a stop honoured late shows next to the stop the rule said.
@@ -34,7 +34,7 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 
 | Measure | Value |
 |---|---|
-| Predictions committed before kickoff | 85 |
+| Predictions committed before kickoff | 93 |
 | Predictions committed late (excluded) | 0 |
 | Predictions scored | 0 |
 | Predictions scored with a market line (the paired set) | 0 |
@@ -58,13 +58,13 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 104 |
-| Works | 74 |
+| Probe verdicts | 111 |
+| Works | 79 |
 | Broken | 4 |
-| Blocked | 18 |
-| Not worth it | 8 |
+| Blocked | 19 |
+| Not worth it | 9 |
 | Killed | 4 (1 by the cull rule, 3 on Luke's word) |
-| Still open | 18 |
+| Still open | 16 |
 
 ## Spend
 
