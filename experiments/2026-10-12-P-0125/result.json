@@ -1,0 +1,38 @@
+{
+  "head": {
+    "live": {
+      "fails": [
+        "image reference outside images[]"
+      ],
+      "warns": []
+    },
+    "patched": {
+      "fails": [],
+      "warns": []
+    }
+  },
+  "work": {
+    "live": {
+      "fails": [],
+      "warns": []
+    },
+    "patched": {
+      "fails": [],
+      "warns": []
+    }
+  },
+  "ctrl": {
+    "live": {
+      "fails": [
+        "image reference outside images[]"
+      ],
+      "warns": []
+    },
+    "patched": {
+      "fails": [
+        "image reference outside images[]"
+      ],
+      "warns": []
+    }
+  }
+}

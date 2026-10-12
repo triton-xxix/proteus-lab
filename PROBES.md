@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 79 works, 4 broken, 19 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 80 works, 4 broken, 19 blocked, 9 not worth it. Killed: 4.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,17 +23,17 @@ Verdicts so far: 79 works, 4 broken, 19 blocked, 9 not worth it. Killed: 4.
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | desk | none |  | 0 | 40 min |
-| P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | desk | none |  | 1 (in progress) | 15 min |
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
 | P-0128 | Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figure hold or trade tonight's Grinder picks within an hour of the snapshot (keyless Solana RPC)? | desk | none |  | 0 | 25 min |
 | P-0129 | Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices move after commit and whether the desk's 'beat the close' bets are just the moves it never saw | desk | none |  | 0 | 30 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
 | P-0131 | Pitch injuries: does API-Football's injuries endpoint answer on the Free plan for this weekend's fixtures, and how many requests does a round cost against the 100 a day? | desk | none |  | 0 | 15 min |
 
-## Verdicts (111)
+## Verdicts (112)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-12 | P-0125 | Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise? | **works** | Measured 0 fails on the committed Inception digest with _child exempt (live check: 1, the stray-image rule); shot said 0. Working copy 0 v 0; control with poster.jpg planted in one_line still fails under the patch. Patch applied to sites/nolan/check.py. Inception still parked in films.json, not unparked. Next: promote (nightly 5f unparks Inception and re-ingests). | `experiments/2026-10-12-P-0125` | 0 min, 16 calls, 0 denied |
 | 2026-10-12 | P-0120 | P-0084 trend portfolio: its recorded Sharpe 0.28 against 0.35 on a re-run of the same script and data; re-read (DUE.md D-004): experiments/2026-10-07-P-0088/README.md | **works** | Found it: p0088.py portfolio_n() computes the trading cost (line 92) but never subtracts it (line 93), so P-0088 is gross of costs. All-28 runs about 1 pt a year above P-0084 in every year 2008-26, vol equal. P-0084's 0.28 net stands; P-0088's not-worth-it only strengthens. | `experiments/2026-10-11-P-0120` | 0 min, 18 calls, 0 denied |
 | 2026-10-11 | P-0119 | Grinder harness: an entry-delay variant (buy one minute after the snapshot) (DUE.md D-003): experiments/2026-10-06-grinder-fill-check/REPORT.md "Next" | **works** | Buying at the open one minute after the snapshot, same 64 v0.2 trades and stops: net -642.09 GBP against -424.01 as booked (base walk reproduces the ledger to the penny); median entry slip -0.01 pct, but 5 trades worse and 2 better, 20 wins against 21. Speed matters on the few that move. | `experiments/2026-10-11-P-0119` | 0 min, 6 calls, 0 denied |
 | 2026-10-11 | P-0118 | Grinder snapshots: fill mint_auth and freeze_auth from the Solana RPC instead of rugcheck (blank on 1,573 of 1,575 pump.fun mints, P-0099) | **works** | One keyless getMultipleAccounts call (0.13 s) parsed all 30 recent ledger mints (all spl-token-2022): 30 of 30 filled, 0 with mint or freeze authority set. The column can be filled from the RPC, but on pump.fun mints it is always revoked, so it separates nothing. | `experiments/2026-10-11-P-0118` | 0 min, 4 calls, 0 denied |

@@ -2761,22 +2761,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-12T12:31:25+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-12T12:32:20+0100",
+   "note": "Measured 0 fails on the committed Inception digest with _child exempt (live check: 1, the stray-image rule); shot said 0. Working copy 0 v 0; control with poster.jpg planted in one_line still fails under the patch. Patch applied to sites/nolan/check.py. Inception still parked in films.json, not unparked. Next: promote (nightly 5f unparks Inception and re-ingests).",
+   "artefacts": [
+    "experiments/2026-10-12-P-0125"
+   ],
+   "minutes": 0,
+   "calls": 16,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "0 check failures on the parked Inception digest once _child notes are exempt",
-    "at": "2026-10-12T12:31:30+0100"
+    "at": "2026-10-12T12:31:30+0100",
+    "hit": true
    }
   },
   {
