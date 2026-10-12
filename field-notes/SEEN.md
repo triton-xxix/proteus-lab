@@ -491,6 +491,8 @@ Closed on the vault side for the reason in the note. Not a lead.
   per step for 110 parameters). Ran-it W42, `experiments/2026-10-12-pyinstrument-pitch/`.
 - 2026-10-13, harvested: 14 judged, 11 kept (H-0226 to H-0239), 2 queued as probes (P-0137, P-0138). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-13: Nolan site, Interstellar (2014) researched and built (`sites/nolan/films/interstellar.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
