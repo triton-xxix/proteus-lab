@@ -20,7 +20,7 @@ ROOT = Path("/Users/triton/PROTEUS")
 G2_FROM = 1791028800  # 2026-10-03T12:00:00Z
 
 
-def grad(rows, name, min_liq, since, closed_word=None):
+def grad(rows, name, min_liq, since, closed_word=None, withdrawn=None):
     xs = sorted(r["P"] for r in rows
                 if r.get("latency_s") is not None and r["latency_s"] <= 120
                 and (r.get("liq") or 0) >= min_liq and r["block_t"] >= since and r.get("P") is not None)
@@ -35,7 +35,8 @@ def grad(rows, name, min_liq, since, closed_word=None):
         return f"{name}: {closed_word} (closed). {nums}"
     if n >= 400:
         if exp >= 10 and less10 >= 0 and bad <= 0.25:
-            word = "KEEP"
+            # a later pre-registered check can withdraw a KEEP; the lines stay, the word says so (F-0002)
+            word = f"KEEP withdrawn ({withdrawn}), nothing graduates" if withdrawn else "KEEP"
         else:
             word = "KILL"  # G2 has no CHANGE outcome
     elif n >= 200 and exp <= -10:
@@ -106,7 +107,8 @@ def systems():
 def main():
     rows = [json.loads(l) for l in open(ROOT / "grinder/graduates/closed.jsonl")]
     lines = [grad(rows, "Graduation book G1", 5000, 0, closed_word="KILL"),
-             grad(rows, "Graduation book G2 (liq >= $50k, from 3 Oct 12:00Z)", 50000, G2_FROM)]
+             grad(rows, "Graduation book G2 (liq >= $50k, from 3 Oct 12:00Z)", 50000, G2_FROM,
+                  withdrawn="D-009 fill realism 11 Oct, RULES.md")]
     lines += judgement()
     lines.append(exchange())
     lines += systems()
