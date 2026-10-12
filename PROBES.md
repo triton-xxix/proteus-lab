@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 81 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,7 +26,8 @@ Verdicts so far: 81 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
 | P-0129 | Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices move after commit and whether the desk's 'beat the close' bets are just the moves it never saw | desk | none |  | 0 | 30 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
-| P-0132 | P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep | desk | none |  | 0 | 20 min |
+| P-0132 | P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep | desk | none |  | 1 (in progress) | 20 min |
+| P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 
 ## Verdicts (114)
 
