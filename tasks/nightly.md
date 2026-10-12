@@ -24,7 +24,8 @@ The hook binds the marker to you and from then on answers every tool call: allow
 ## 2. The Grinder
 
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/scan.py --snapshot --limit 120`
-then
+with `run_in_background` true, then wait for its notification and read its output file: 160 tokens took
+more than ten minutes on 12 Oct and a foreground call's 10-minute timeout killed it (exit 137) part-way. Then
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-rules`
 then
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --score`

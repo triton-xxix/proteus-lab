@@ -233,7 +233,14 @@ def snapshot(limit):
     print("established", len(est), file=sys.stderr)
     mints = mints + est
     rows, insiders = [], []
-    with open(CACHE + "snapshots-%s.jsonl" % ts.strftime("%Y-%m-%d"), "a") as raw:
+    # Rows go to SNAPSHOTS.csv as they are read, not at the end: on 12 Oct 2026 the scan was killed by
+    # a 10-minute tool timeout after 69 of 160 tokens and the committed record got none of them.
+    new = not os.path.exists(SNAP_CSV)
+    with open(CACHE + "snapshots-%s.jsonl" % ts.strftime("%Y-%m-%d"), "a") as raw, \
+            open(SNAP_CSV, "a", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=SNAP_FIELDS, extrasaction="ignore")
+        if new:
+            w.writeheader()
         for i, mint in enumerate(mints):
             p = best_pair(mint)
             if not p:
@@ -260,17 +267,11 @@ def snapshot(limit):
                 "rug_risks": ";".join(x for x in r["risks"] if x), "socials": len((p.get("info") or {}).get("socials") or []),
             }
             rows.append(row)
-            raw.write(json.dumps({"row": row, "pair": p}) + "\n")
+            raw.write(json.dumps({"row": row, "pair": p}) + "\n"); raw.flush()
+            w.writerow(row); fh.flush()
             if r.get("insiders") is not None:
                 insiders.append({"ts": ts_iso, "mint": mint, "symbol": row["symbol"], **r["insiders"]})
             time.sleep(0.35)
-    new = not os.path.exists(SNAP_CSV)
-    with open(SNAP_CSV, "a", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=SNAP_FIELDS, extrasaction="ignore")
-        if new:
-            w.writeheader()
-        for row in rows:
-            w.writerow(row)
     # Committed with the snapshot by preregister.py (a .jsonl under grinder/), so the fields are dated
     # before any outcome they might predict.
     os.makedirs(ROOT + "grinder/insiders", exist_ok=True)
