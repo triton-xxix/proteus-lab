@@ -12,8 +12,68 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 185,
+  "count": 191,
   "threads": [
+    {
+      "date": "2026-10-12",
+      "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
+      "kind": "service",
+      "status": "dead",
+      "theme": "Subscribing",
+      "note": "The Video Bootcamp extraction and framework already cover the syllabus",
+      "where": "TRITON-CORE/Research/links/2026-10-12-ai-creator-league-skool.md",
+      "url": "https://www.skool.com/aicreatorleague"
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
+      "kind": "service",
+      "status": "intel",
+      "theme": "The 9 dollar lock-in Skool template under different owners, and a weekly cash prize as a retention device funded by subscriptions and affiliate discounts",
+      "note": "Same page as THE BLUEPRINT, different person",
+      "where": "TRITON-CORE/Research/links/2026-10-12-ai-creator-league-skool.md",
+      "url": "https://www.skool.com/aicreatorleague"
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
+      "kind": "service",
+      "status": "open",
+      "theme": "A small weekly prize or showcase as the community rung of the AI for Businesses or Bootcamp kit, if either ships",
+      "note": "Design note for WF-0322 and WF-0352",
+      "where": "TRITON-CORE/Research/links/2026-10-12-ai-creator-league-skool.md",
+      "url": "https://www.skool.com/aicreatorleague"
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "Jono Catliff CRO Masterclass video and its GitHub repo (jonocatliff/CRO)",
+      "kind": "repo",
+      "status": "adopted",
+      "theme": "Split testing, heat maps and conversion events with PostHog for lead-gen pages",
+      "note": "written as the CRO framework",
+      "where": "TRITON-CORE/Systems/frameworks/cro.md",
+      "url": "https://youtu.be/ru7fWKD4cyw"
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "Jono Catliff CRO Masterclass video and its GitHub repo (jonocatliff/CRO)",
+      "kind": "repo",
+      "status": "intel",
+      "theme": "Speed-to-lead bridge call: ring the owner first, then connect the lead within seconds",
+      "note": "a cheap add-on for trade clients",
+      "where": "TRITON-CORE/Systems/frameworks/cro.md",
+      "url": "https://youtu.be/ru7fWKD4cyw"
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "Jono Catliff CRO Masterclass video and its GitHub repo (jonocatliff/CRO)",
+      "kind": "repo",
+      "status": "dead",
+      "theme": "Placeholder social proof in the build prompt",
+      "note": "fake ratings and testimonials break our honesty rails",
+      "where": "TRITON-CORE/Systems/frameworks/cro.md",
+      "url": "https://youtu.be/ru7fWKD4cyw"
+    },
     {
       "date": "2026-10-11",
       "subject": "Supplement Brand Accelerator (Skool, Lou Antonio Matera, free, 3,445 members)",
@@ -1800,8 +1860,48 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 41,
+  "links_count": 45,
   "links": [
+    {
+      "date": "2026-10-12",
+      "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
+      "kind": "service",
+      "where": "TRITON-CORE/Research/links/2026-10-12-ai-creator-league-skool.md",
+      "url": "https://www.skool.com/aicreatorleague",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "Jono Catliff CRO Masterclass video and its GitHub repo (jonocatliff/CRO)",
+      "kind": "repo",
+      "where": "TRITON-CORE/Systems/frameworks/cro.md",
+      "url": "https://youtu.be/ru7fWKD4cyw",
+      "transcript_file": "TRITON-CORE/Education/Courses/skool-youtube/transcripts/ru7fWKD4cyw.md",
+      "transcript_state": "refused",
+      "transcript": null
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "Jono Catliff Google Ads Masterclass video (June 2026)",
+      "kind": "paper",
+      "where": "TRITON-CORE/Education/Courses/skool-youtube/notes/-EInjdpjKy0.md",
+      "url": "https://youtu.be/-EInjdpjKy0",
+      "transcript_file": "TRITON-CORE/Education/Courses/skool-youtube/transcripts/-EInjdpjKy0.md",
+      "transcript_state": "refused",
+      "transcript": null
+    },
+    {
+      "date": "2026-10-12",
+      "subject": "Jono Catliff Make Claude Code Write EXACTLY Like You video and writing repo",
+      "kind": "repo",
+      "where": "TRITON-CORE/Education/Courses/skool-youtube/notes/aHI8OG6gODA.md",
+      "url": "https://youtu.be/aHI8OG6gODA",
+      "transcript_file": "TRITON-CORE/Education/Courses/skool-youtube/transcripts/aHI8OG6gODA.md",
+      "transcript_state": "ok",
+      "transcript": "# Make Claude Code Write EXACTLY Like You (Free Templates)\n\n- Channel: Jono Catliff\n- URL: https://youtu.be/aHI8OG6gODA\n- Uploaded: 2026-05-27\n- Length: 13 min\n- Skool home: Automatable Free › FREE YouTube Blueprints › Make Claude Code Write EXACTLY Like You\n- Transcript: YouTube auto-captions via yt-dlp, pulled 2026-10-12\n\n## Description (first 700 characters)\n\n🌍 COMMUNITY: https://www.skool.com/automatable/about\n\n📝 FREE BLUEPRINT\nhttps://www.skool.com/automatable-free/classroom/6ca29126?md=4810242499ad49dbbc1f58937eba3d66\n\n📚 SUMMARY\nMost people use Claude Code to write and get back generic AI slop. In this video I show you the exact 7-file system I use to make Claude write LinkedIn posts, emails, blog posts, DMs, pitch decks, and ad copy that sound exactly like yourself — pulling from my real stories, vocabulary, humour, beliefs, and analogies.\n\nYou'll see the before vs after, the one prompt that auto-populates everything from your Gmail + Fireflies + LinkedIn, and how to turn it into a one-tap slash command skill.\n\n\n⌛ TIMESTAMPS\n0:00 - The Generi\n\n## Transcript\n[00:00] So, the problem with using tools like Claude code to write, is that almost all the time it comes out as generic AI slop. In today's video, we're going to talk about how you can use Claude to actually sound exactly like you. Let me explain. Here's a generic AI slop post. How to land your first AI automation\n[00:15] client, what you need to know. The AI automation landscape is rapidly evolving in 2026, and this is where most people would either fall asleep, or they would bounce and they'd go do something else because they'd be thinking, that is so incredibly boring to read. Now, here's the same post, just copying how you\n[00:33] would write. If I had $100 and needed to close my first AI automation client, here's exactly how I'd do it. This is the same approach I used to close my first $60,000 in deals, starting from zero. Upwork. Not because it's easy, but because it removes the hardest part of starting. Why it works. Clients already\n[00:48] know they have a problem, they're already actively looking for a solution, and they already have a budget. Now, keep in mind, where things are highlighted, it's actually pulling from myself, okay? So, these stats here, these are actually my real stats that it's drawing from. It's not making up\n[01:04] some BS, okay? It's pulling from my own stories over here. So, this is exactly how I said this. And it's also copying my tone as well, okay? So, we're going to be talking about how you can do this, not just for things like LinkedIn posts, but for every form of writing. So, if\n[01:21] you're on a social media, we're going to talk about how you can apply this to social media, or blog posts, or emails, or DMs, or pitch decks, proposals, your bio, ad copy, you name it. You can apply this same strategy to every form of writing. That's exactly what I do. It's\n[01:36] honestly, it feels like pulling teeth now whenever I have to write anything for any reason without Claude writing at least the first draft for me. Okay, so, let's get into the problem here. The problem is is that Claude is trained on millions of distinct voices, and you get the sum of the average, and it's just\n[01:54] one bland generic voice that sounds like it's AI. And what we're going to do is create seven files, okay, for you that allow Claude to understand exactly who you are and write very similarly to you, okay? And I'm not just talking about\n[02:09] like a surface level, I'm actually talking about it really understanding you better than most people would probably know you. So, specifically who you are, what your business is, or what you do for work, or you know, all of that kind of stuff. Your beliefs, what you stand for, what your takes are, your\n[02:25] opinions, all that kind of stuff. Your tone, how you write, your what your vocabulary is, so what words you actually use, what your humor is, how you joke, your stories, your opinions, and also your analogies. We're going to be including all of this kind of stuff,\n[02:40] and we're going to be doing this in an automated fashion in just a couple of minutes. How we find this information is we're going to extract it from across the web on all the resources available to us. So, if you have a business, we're going to scrape that business and pull out\n[02:56] everything from your website. If you're posting on social media, we can easily set this up so that we can extract data from your LinkedIn posts or your Instagram posts, if you want to do that, of course. And then we can extract from your emails, okay, to understand how you email people. If you ever jump on calls\n[03:12] and you have like a zoo like on Zoom meetings or Google meetings and you have like a Fireflies kind of like a bot there recording everything and transcribing it, we can pull directly from that as well. We can also take from your notes or Notion. This is optional, and then any other source as well, okay?\n[03:29] So, how we're going to do The first thing that we need to do inside Claude is we need to populate all of these files. Now, you can either pause the video and copy this file structure, it's pretty bare-bones, or you can grab it from the free link in the description down below. Either way works. How we're\n[03:44] going to populate all of this is really simply just one prompt, and I'm going to leave this in in description as well. So, you can paste this in here, okay? And what we're doing is we're getting Claude code to auto-populate all of these files for us. And how we're doing that is we're going to get it to read\n[04:01] the last 100 emails that we have in Gmail. We're going to have it read the last 25 transcripts from past meetings on Google Meet and Zoom. We're also going to post in a LinkedIn post down below. This is optional if you have LinkedIn posts to draw from. And we're\n[04:18] going to talk about some other sources as well, okay? Such as filling in the business context by having Claude scrape your website. And also, if you have any passages you found online that you don't that you didn't necessarily write yourself, but feel like they represent you, we're going to talk about how we\n[04:34] can pull that in as well. So, let's get started. The first thing is is in order to pull information from Gmail and Fireflies, we actually have to connect our account into it. So, inside Claude.ai, okay? We can head over to settings. Inside settings, we can go to\n[04:51] capabilities, oops, connectors, and go to customize. And we need to make sure we have two extensions added in here. The first one is Gmail, okay? Which happens to be the first option here. And the second one is Fireflies, the meeting note-taker. And once we have these\n[05:07] hooked up, just make sure that when you click into them, we have always allow for all this kind of stuff so Claude can actually access these um these applications and pull the data that we need to pull. Now that that's out of the way, we can head over to LinkedIn, okay? We can copy a LinkedIn post right over\n[05:24] here. So, I like this one. I'm going to go ahead and I'm going to copy this whole thing and paste it into our um our prompt down here under LinkedIn posts. And the last thing that we can do is pull in a passage online. And I like\n[05:40] this for humor specifically. So, I found this article quite a while ago when I was writing blogs. I wanted to add a humor into it. And I thought that this represented me really well. I'm a huge advocate when it comes to dad jokes. I feel like a lot of people\n[05:56] are cringing just listening to that right now, but I love them. It's my humor and I want to include this passage because it kind of resembles exactly my my sense of humor. So, I'm going to copy this in, okay, and paste it right below here under humor passage. And keep in mind we're saying to Claude, \"Please\n[06:12] filter any examples that we clearly shouldn't be using anything with personal information, anything like empty emails, all that kind of stuff.\" I'll send it off and return back when this is done. Sweet. And so, we are back and we can see all of these documents filled in automatically on our behalf.\n[06:28] So, let's just kind of go through these at a very high level. We can see in vocabulary the words that I used like hey name or hey guys. Hey guys, sweet, awesome, cool, no worries. How I sign off on my emails is best Jono. Happy to do whatever, more or less. That's the vocabulary I use. On\n[06:45] the other side, vocabulary that I don't use is henceforth, things like that. Like I don't think I've ever said henceforth other than this video right now in my entire life. Furthermore and moreover, like those are words that will never come out of my mouth. I would be shocked to actually see that. And then\n[07:00] we have tone over here, which is essentially warm, direct, conversational, talking like I'm sitting across from you, not lecturing. And then we have story. So, it's actually pulling in real-life stories from my life that it can later reference for LinkedIn posts or emails or whatever the case may\n[07:18] be. Like I ran a wedding DJ company and here is my story. And then onto humor here, we have dad joke energy, which is self-aware, slightly cringey, and would embarrass my hypothetical 14-year-old kid. Unfortunately, I don't have a 14-year-old kid, but I'm sure if\n[07:33] I did, I would still embarrass them. Self- Self-deprecation first, pop culture and references. Honestly, it's kind of like eerie and weird looking this because I feel like Claude has classified my humor and my personality better than anyone else could possibly tell me. Then it's passed in business\n[07:51] context which I'm not going to open up just cuz there's a lot of personal information in there. And then we have beliefs, okay, and analogy. So you can kind of get the point. It's pulling in all this different stuff about my life. We can put this to work. I have two examples here, a before and an after. So\n[08:09] I said, \"Hey Claude, write me a 100 word LinkedIn post on how to land your first day automation client.\" And it said, \"Landing your first day automation client isn't about cold pitching strangers. It's about solving one pain point.\" And then I'm just off to sleep. I'm already snoring. Just listening to\n[08:24] that. Here's an example when we're referencing all of these files like analogies, belief, business context, and so on and so forth. How to land your first day automation client? Stop learning, start selling. I scaled a seven-figure wedding business across eight cities and I can't film, can't\n[08:39] photograph, and can barely DJ. The skill isn't the bottleneck, sales is. So you can see here it's already pulling in stories and writing very similarly to how I would write. But you can see a point of contention here, okay, where we're asking it to write a LinkedIn post\n[08:57] and it might not follow the exact same format of my other previous LinkedIn posts over here. So what we could do to take it a step further is we could provide example posts on how we actually want things like emails to go or Instagram reels to go or LinkedIn post,\n[09:16] whatever the case may be, okay? And so now what I've done is I've referenced that structure in this LinkedIn example and it's going ahead and copied it really well. How to land your first day automation client without knowing how to how to build anything. And so on and so\n[09:31] forth. Looks very similar to typically how I write my posts right over here. Okay, perfect. Now, there's just one other hiccup here and point of contention that you've probably noticed, which is the fact that we have to reference things like analogies and\n[09:46] beliefs in business context every single time we want to write anything, which is obviously super annoying. So, we want to remove that. And how we go about doing that is developing a skill. And a skill is just an on-demand workflow that we can call. Okay? So, let me build it out\n[10:03] and then I'll walk you through what it looks like so it just clicks in your head in case you're not already aware of how these work. So, I wrote in here, \"Please create me a LinkedIn skill that creates LinkedIn posts on demand. I write in LinkedIn, it generates the post.\" Okay? And reference all of these\n[10:18] files here and also copy the structure from this LinkedIn post example. Perfect. So, we've gone ahead and generated the skill. We can actually see it up top here. Okay? And when we open it up, we can see that now this on-demand workflow that we could call anytime is going to reference all of\n[10:34] these files we created as well as the example LinkedIn structure. So, we can give it a shot. Okay? I can type in here {slash} LinkedIn in a new conversation and you'll notice we have the {slash} command opening up, which means that it's going to actually Oops, I fired it off prematurely here. It's going to\n[10:50] reference this. Okay? And now I can just say {slash} LinkedIn, \"Write me a post on how to get your first client on Upwork.\" Cool. So, we've gone ahead and we've written the entire post just from one line. If we wanted to write another post, all we'd have to do is command LinkedIn one more time and we can go\n[11:07] ahead and we can take the same strategy and apply it to all different types of posts, whether it's LinkedIn, Twitter, whether it's a blog post, or whatever else the case is. So, that's it for this video, guys. Thank you so much for watching. I hope you found value in\n[11:22] this. If you did, make sure to hit that subscribe button and that like button. I also have all of the blueprints for this particular video and all other YouTube videos for free in my free school community. And I also have a paid community where there are two transformations. Number one is how you can find close and fulfill your first\n[11:39] deal within 30 days or less. So, you start as a freelancer, you can create an agency. I'll show you how you can do that. And there are hundreds of people that have made it work in this community, even many of those without any freelancing skills whatsoever. The second transformation is for those of you who have an existing business, I'll\n[11:55] show you how you can automate up to 80% of it using the exact blueprints that allowed me to scale to seven figures. All you have to do is copy and paste them into your business and you're good to go. This works for Claude and we'll also be talking about other applications as well. And of course, when you're\n[12:11] creating a business or you're automating it, it's never a straight line. You're always going to encounter challenges along the way. We have seven calls that you can jump on and we can work back and forth face-to-face on overcoming those challenges together. And I also have an agency, so if you are a business owner looking for help with automation, but\n[12:29] you don't want to do it yourself, you can always reach out to us and we will show you how you can automate everything. We'll start with a free 30-minute audit of your business showing you how you can increase your profitability using AI. Thanks for watching and I'll see you in the next one."
+    },
     {
       "date": "2026-10-11",
       "subject": "Supplement Brand Accelerator (Skool, Lou Antonio Matera, free, 3,445 members)",
