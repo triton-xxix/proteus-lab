@@ -1,0 +1,881 @@
+{
+  "picks": [
+    {
+      "id": "G-0071",
+      "ts": "2026-10-11T22:28:10Z",
+      "symbol": "DOGEUS",
+      "mint": "CnvQ6v525Mx4FSNNYwXVaiH2wboEMVdjxPhUjkpqpump",
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    {
+      "id": "G-0072",
+      "ts": "2026-10-11T22:28:10Z",
+      "symbol": "trenchcat",
+      "mint": "EQ46GCkgPctvueFDt2edutfa1hKxsDzo2EZeSMiHpump",
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    {
+      "id": "G-0073",
+      "ts": "2026-10-11T22:28:10Z",
+      "symbol": "Nuts",
+      "mint": "BXuuLQQsHsAjweVvTXHAgJSnTj9MLKpiK5cLP7c3wLxB",
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    {
+      "id": "G-0074",
+      "ts": "2026-10-11T22:28:10Z",
+      "symbol": "Normie",
+      "mint": "DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump",
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    }
+  ],
+  "window_utc": [
+    1791750217,
+    1791757417
+  ],
+  "wallets": 91,
+  "per_pick": {
+    "DOGEUS": {
+      "ever": 7,
+      "in_window": 7,
+      "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    "trenchcat": {
+      "ever": 18,
+      "in_window": 4,
+      "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    "Nuts": {
+      "ever": 20,
+      "in_window": 2,
+      "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    "Normie": {
+      "ever": 18,
+      "in_window": 2,
+      "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    }
+  },
+  "wallets_touching_in_window": 13,
+  "touches": [
+    {
+      "symbol": "DOGEUS",
+      "name": "decu",
+      "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+      "ata": "CdEy3u4eE7oSJXcpXFQ24uTPwBt6vp9w9NYnX4MMYYb5",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "9HZb3sEexfWAtFfk9HRGvNSzMJvaoCYnaagy7aWvH7NF",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "Coler",
+      "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+      "ata": "5xKcst1mJQJogYaQqvUELA7E2BLe7vHPRXC7HV55gAQM",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "theo",
+      "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+      "ata": "CkL8fyt6DZcoadCjsf8Jksk2SxpP6qhN5hV2bT2dE7Tv",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "bandit",
+      "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+      "ata": "HFgzgsvzmnhiW2ytTBL79s6UosE656ZVukw5s44JjtFm",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "Jijo",
+      "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+      "ata": "3cz1hunPMJ18b1WXJaUh2HAZUksSoMy3z4oauzGtWjWw",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "The Doc",
+      "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+      "ata": "2qVzbzEMqH2HTVRQRWoxzbyMDj6X8DG3CLrrXHBjwi2t",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461,
+      "in_window": 1
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Naruza",
+      "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+      "ata": "7VSYSBeHy7y8fGDeQ2rvCyxXVbgFer7uUGhLmKpf33T5",
+      "sigs": 15,
+      "first": 1791724361,
+      "last": 1791756481,
+      "in_window": 8
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "CoCo",
+      "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+      "ata": "CCsVuWgKwwiprqruA5EmrTjX8Npm9ghVocw5YQfYzWcB",
+      "sigs": 3,
+      "first": 1791756189,
+      "last": 1791756424,
+      "in_window": 3
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "West",
+      "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+      "ata": "8tkZTBkfWar7XxkD7KDXvFKSakgVMuAoecuaM84pSqMe",
+      "sigs": 18,
+      "first": 1791756598,
+      "last": 1791803400,
+      "in_window": 7
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "bandit",
+      "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+      "ata": "Dxpvxs5mUk3GyhoDryizbaP35r2Yx5XchriLLWFfi4Wg",
+      "sigs": 5,
+      "first": 1791756317,
+      "last": 1791765912,
+      "in_window": 4
+    },
+    {
+      "symbol": "Nuts",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "8baUXt8Yo5Us4CUnqEtBfnffvbNehayNAj4aX9oMSu1P",
+      "sigs": 100,
+      "first": 1791739673,
+      "last": 1791752702,
+      "in_window": 1
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Yami \ud80c\udcf5",
+      "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+      "ata": "CQqw974UbqcM2m9xyDhB1GEBHjGi2E69T1942KYCQSWz",
+      "sigs": 12,
+      "first": 1791743330,
+      "last": 1791751681,
+      "in_window": 2
+    },
+    {
+      "symbol": "Normie",
+      "name": "Gasp",
+      "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+      "ata": "9XHfZmBeuid4LNb7gQ9Cp88H48Ki356JbfAXV6DV7oYc",
+      "sigs": 20,
+      "first": 1791737723,
+      "last": 1791754405,
+      "in_window": 8
+    },
+    {
+      "symbol": "Normie",
+      "name": "Nyhrox",
+      "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+      "ata": "QtRvZRBb6Y4erPpToTdFBLautw3dvZfehN6jaN7QG6E",
+      "sigs": 22,
+      "first": 1791742743,
+      "last": 1791759227,
+      "in_window": 6
+    }
+  ],
+  "ever": [
+    {
+      "symbol": "DOGEUS",
+      "name": "decu",
+      "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+      "ata": "CdEy3u4eE7oSJXcpXFQ24uTPwBt6vp9w9NYnX4MMYYb5",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "9HZb3sEexfWAtFfk9HRGvNSzMJvaoCYnaagy7aWvH7NF",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "Coler",
+      "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+      "ata": "5xKcst1mJQJogYaQqvUELA7E2BLe7vHPRXC7HV55gAQM",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "theo",
+      "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+      "ata": "CkL8fyt6DZcoadCjsf8Jksk2SxpP6qhN5hV2bT2dE7Tv",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "bandit",
+      "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+      "ata": "HFgzgsvzmnhiW2ytTBL79s6UosE656ZVukw5s44JjtFm",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "Jijo",
+      "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+      "ata": "3cz1hunPMJ18b1WXJaUh2HAZUksSoMy3z4oauzGtWjWw",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "The Doc",
+      "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+      "ata": "2qVzbzEMqH2HTVRQRWoxzbyMDj6X8DG3CLrrXHBjwi2t",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "decu",
+      "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+      "ata": "5hBocAUP59MbedTpAshCzJu6Mk28Z4NnHieZH7gL9YiX",
+      "sigs": 100,
+      "first": 1791720155,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "slingoor",
+      "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "ata": "9HyEX27xFSR9Sf2FmJQAE78iXwfNpnFMNdeqYuby37Jb",
+      "sigs": 8,
+      "first": 1791762559,
+      "last": 1791780293
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "2gSavCSGbVpNLdvjpu8ezHN6orxxo9CMp4ZU7nozeKTZ",
+      "sigs": 100,
+      "first": 1791720155,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Coler",
+      "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+      "ata": "5xzbNCr2uH4wqdQBSZE5Enju7DFyhcDmrr4KfswMrCHg",
+      "sigs": 100,
+      "first": 1791720147,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "theo",
+      "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+      "ata": "9sDoWxXK52YUxe7nmiX8robRzpskU6PJvmjy85hXn4TN",
+      "sigs": 100,
+      "first": 1791720155,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Cented",
+      "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+      "ata": "6HaDNb7Hqf36Gri77BzkWRoSVLJJAzvNw7dwEs3BLKWW",
+      "sigs": 100,
+      "first": 1791720153,
+      "last": 1791720161
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Schoen",
+      "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+      "ata": "FqdTqJCfrkABEc2YV3wJDnLGNg1f6zjSbvJk6t3vamaf",
+      "sigs": 100,
+      "first": 1791720147,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Naruza",
+      "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+      "ata": "7VSYSBeHy7y8fGDeQ2rvCyxXVbgFer7uUGhLmKpf33T5",
+      "sigs": 15,
+      "first": 1791724361,
+      "last": 1791756481
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Frost",
+      "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T",
+      "ata": "5izNBJGQ3KtVcxy413u4nchCPkfFvFaCJEsPnnz9DSjV",
+      "sigs": 7,
+      "first": 1791720262,
+      "last": 1791720485
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "CoCo",
+      "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+      "ata": "CCsVuWgKwwiprqruA5EmrTjX8Npm9ghVocw5YQfYzWcB",
+      "sigs": 3,
+      "first": 1791756189,
+      "last": 1791756424
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Daumen",
+      "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+      "ata": "5TPKtKtk7jCVSFoTBjcHAeN56nNpmiLpeCNubacBqJaN",
+      "sigs": 100,
+      "first": 1791720158,
+      "last": 1791795226
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "West",
+      "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+      "ata": "8tkZTBkfWar7XxkD7KDXvFKSakgVMuAoecuaM84pSqMe",
+      "sigs": 18,
+      "first": 1791756598,
+      "last": 1791803400
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Limfork.eth",
+      "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+      "ata": "AfUeGz5JrxutpCWtNNiqnYDNbmheWmLTnrAANDY2bU5C",
+      "sigs": 100,
+      "first": 1791720147,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "bandit",
+      "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+      "ata": "Dxpvxs5mUk3GyhoDryizbaP35r2Yx5XchriLLWFfi4Wg",
+      "sigs": 5,
+      "first": 1791756317,
+      "last": 1791765912
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Trey",
+      "wallet": "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs",
+      "ata": "FDsGLFcFipjyxu2k3rEXBsofBjJoyqvbqR1PYupdj5CF",
+      "sigs": 100,
+      "first": 1791720147,
+      "last": 1791720163
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Jijo",
+      "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+      "ata": "DTPc54bgMfmQqH6aSscceNbaRR755nox3Hz4xLst3jCd",
+      "sigs": 100,
+      "first": 1791720153,
+      "last": 1791720161
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Nyhrox",
+      "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+      "ata": "8vrRzW2rG9c8YhS9Zyig36HVNM9DM1eJo5CcpxjmEpNU",
+      "sigs": 100,
+      "first": 1791720157,
+      "last": 1791720170
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Yami \ud80c\udcf5",
+      "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+      "ata": "Ce4VvVa8bEzCx3YNssiYt7QnSukU2c5JkDp3q68BzKTd",
+      "sigs": 2,
+      "first": 1791758900,
+      "last": 1791759100
+    },
+    {
+      "symbol": "Nuts",
+      "name": "decu",
+      "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+      "ata": "3jixHc6i8CGwAqttndLRTCZtNMxYQ8St9FAcfMkJQar2",
+      "sigs": 100,
+      "first": 1791739600,
+      "last": 1791741154
+    },
+    {
+      "symbol": "Nuts",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "8baUXt8Yo5Us4CUnqEtBfnffvbNehayNAj4aX9oMSu1P",
+      "sigs": 100,
+      "first": 1791739673,
+      "last": 1791752702
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Coler",
+      "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+      "ata": "9TkjD1NKdL3uRKuayg2N5zRnnQyEr5F3h8rkJsMUXAGz",
+      "sigs": 100,
+      "first": 1791739635,
+      "last": 1791739638
+    },
+    {
+      "symbol": "Nuts",
+      "name": "theo",
+      "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+      "ata": "njAuFP9trPGiTie57G4Dc4ai8FTbwvEYQjxDtrY6SoM",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Cented",
+      "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+      "ata": "BbDKyZ8gSbkeCMayEPgiHkWcpSRkd9LhtsdanHjdgCxu",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Megga",
+      "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU",
+      "ata": "2jCnQnnp7MEjaAGdNnUbjAaYWvTpT8TCXgVwHHuA822F",
+      "sigs": 100,
+      "first": 1791739600,
+      "last": 1791739989
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Sebastian",
+      "wallet": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+      "ata": "3nqjEP6KsDQvxpw1uL9MfZtz9BPHWTpewP2Dvpz7fuoz",
+      "sigs": 100,
+      "first": 1791739635,
+      "last": 1791739638
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Schoen",
+      "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+      "ata": "ELUUjZa4VNCgF5o4aFaa7r2TEpayJGyJ8FNpL9hmCowo",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Ethan Prosper",
+      "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
+      "ata": "7qP3FDnnXoNWmCcyUfhntnDQfbHmUL96kPQbUGDsQDV3",
+      "sigs": 8,
+      "first": 1791743971,
+      "last": 1791744481
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Daumen",
+      "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+      "ata": "CSS1ViLiE4QwbtdkE5TBPw2P2d9LroC7FgJJwpSs4xPu",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Nuts",
+      "name": "jrus",
+      "wallet": "951wq3qDowjKHaycrNaiRB5WpovYVKXnqhnrcKPh46zt",
+      "ata": "8BApZKcVvwLsahgwNmA39SDKnSeh191FtQZbz4ndckaa",
+      "sigs": 10,
+      "first": 1791740174,
+      "last": 1791740397
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Orange",
+      "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+      "ata": "Htfwi6AQS73dJ4DQwfiJDYgEZ5aE4tYnmuVuBSG7scvu",
+      "sigs": 13,
+      "first": 1791740031,
+      "last": 1791740467
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Gfree",
+      "wallet": "4yo9CUuTBbds9NFhZd4MzPiZZkUvveXdTnAH8qMsE8ku",
+      "ata": "CbpYZUaEGfFVEu3UA9kpjPeh1dUsAk5DHA2bErqVFkQx",
+      "sigs": 100,
+      "first": 1791739586,
+      "last": 1791739589
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Limfork.eth",
+      "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+      "ata": "57aGqbsFzLWnizhaLoDqLKRhTEtyvACjLsnEB9EDen8x",
+      "sigs": 100,
+      "first": 1791739635,
+      "last": 1791739660
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Trey",
+      "wallet": "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs",
+      "ata": "BxfzHAYTGYDDnngc22dqL5YHFxRDhahiGc6HZX6LJWWp",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Jijo",
+      "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+      "ata": "FaQM6eQC8HMQReYH4nVE1A8NpFLPNhFiDfQA7EQegbdM",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Nyhrox",
+      "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+      "ata": "GbtKLtx9bisGVKn21G66oEh3gfW25Bbbgbm9CiBiCG9U",
+      "sigs": 100,
+      "first": 1791739635,
+      "last": 1791739638
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Yami \ud80c\udcf5",
+      "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+      "ata": "CQqw974UbqcM2m9xyDhB1GEBHjGi2E69T1942KYCQSWz",
+      "sigs": 12,
+      "first": 1791743330,
+      "last": 1791751681
+    },
+    {
+      "symbol": "Nuts",
+      "name": "lyftical",
+      "wallet": "2hN82SXLUffhG3vxpezRmae1sGrCBMqHHBDxjmjpagqk",
+      "ata": "VY9Xvoi2LwrPf1UpehSLxNccxNnJX2ic1a4SuKPbgmW",
+      "sigs": 2,
+      "first": 1791739768,
+      "last": 1791739888
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Kadenox",
+      "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+      "ata": "3hB8SWDbCKsrnbN5hn5Zd4UyFYgEtRnjo9nGn6Bx3oEZ",
+      "sigs": 100,
+      "first": 1791739672,
+      "last": 1791739680
+    },
+    {
+      "symbol": "Normie",
+      "name": "decu",
+      "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+      "ata": "EkDxr4PHfMHRuqpxCrhkRPZtMUPmsnSSKaEHbQQsMMu6",
+      "sigs": 100,
+      "first": 1791711182,
+      "last": 1791711185
+    },
+    {
+      "symbol": "Normie",
+      "name": "slingoor",
+      "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+      "ata": "C44B6zZjqBuVtrf184uwXJUjvSWG7WtUyVmNZsh8wtR9",
+      "sigs": 3,
+      "first": 1791738773,
+      "last": 1791762606
+    },
+    {
+      "symbol": "Normie",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "46pu81R2VQQ9BBhAUSspvCEgFPSL89hnLW34NnShhviz",
+      "sigs": 100,
+      "first": 1791711182,
+      "last": 1791711185
+    },
+    {
+      "symbol": "Normie",
+      "name": "theo",
+      "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+      "ata": "FyQTCm8URnp33hYmAJQqcNUy6Uj25QHTL3CPhgNonjrm",
+      "sigs": 100,
+      "first": 1791711182,
+      "last": 1791711185
+    },
+    {
+      "symbol": "Normie",
+      "name": "TIL",
+      "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+      "ata": "8d8AZYEYT4KSwwTiUWuFGTr2ycwBcm3z6APzTy6T44b7",
+      "sigs": 4,
+      "first": 1791712819,
+      "last": 1791729924
+    },
+    {
+      "symbol": "Normie",
+      "name": "Cented",
+      "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+      "ata": "7C381eQUFVfhhSNsKXJRh4ktFcSvBard2XEZowzXzRe7",
+      "sigs": 100,
+      "first": 1791711182,
+      "last": 1791711185
+    },
+    {
+      "symbol": "Normie",
+      "name": "Schoen",
+      "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+      "ata": "xS6Bq7yp2pW6VXskHa6e5mPqxwJqA3kFUxNwBqGoPWX",
+      "sigs": 4,
+      "first": 1791711191,
+      "last": 1791711206
+    },
+    {
+      "symbol": "Normie",
+      "name": "Naruza",
+      "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+      "ata": "C34i2uuxfPEnyVCJACamheQv3QwcYTTjsBM2cpMo1RH2",
+      "sigs": 6,
+      "first": 1791781972,
+      "last": 1791805472
+    },
+    {
+      "symbol": "Normie",
+      "name": "Frost",
+      "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T",
+      "ata": "56X6ePQMuhEPPjFeHAZFQZFsqWsJynxVrnL7DXM2uDAz",
+      "sigs": 12,
+      "first": 1791711251,
+      "last": 1791711650
+    },
+    {
+      "symbol": "Normie",
+      "name": "Pain",
+      "wallet": "J6TDXvarvpBdPXTaTU8eJbtso1PUCYKGkVtMKUUY8iEa",
+      "ata": "GrT6rnNPsyYingpxSk1Pam9J9gG1TELSBacxyR2LPZQz",
+      "sigs": 9,
+      "first": 1791711252,
+      "last": 1791717769
+    },
+    {
+      "symbol": "Normie",
+      "name": "CoCo",
+      "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+      "ata": "ANvVob3i6jpqWDTJaSL9eA6tpWxZCuZQ9VEDAFsb963v",
+      "sigs": 7,
+      "first": 1791711274,
+      "last": 1791711545
+    },
+    {
+      "symbol": "Normie",
+      "name": "kyz",
+      "wallet": "72YiE4crBv2UhxRgRYKs4GaTGT2avbacfL4HNCfQLqsm",
+      "ata": "DYA7NEJY4YPCMpwuCdpLN7cGENLKPWa7mcDKydfy8mU",
+      "sigs": 24,
+      "first": 1791711213,
+      "last": 1791711358
+    },
+    {
+      "symbol": "Normie",
+      "name": "Gasp",
+      "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+      "ata": "9XHfZmBeuid4LNb7gQ9Cp88H48Ki356JbfAXV6DV7oYc",
+      "sigs": 20,
+      "first": 1791737723,
+      "last": 1791754405
+    },
+    {
+      "symbol": "Normie",
+      "name": "Rilsio",
+      "wallet": "4fZFcK8ms3bFMpo1ACzEUz8bH741fQW4zhAMGd5yZMHu",
+      "ata": "E8uYNWRD6wqQCuZfBV3B2XeaecVmV5JTrbCLvrTnbRaw",
+      "sigs": 1,
+      "first": 1791768675,
+      "last": 1791768675
+    },
+    {
+      "symbol": "Normie",
+      "name": "Jijo",
+      "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+      "ata": "4UaToxWaMcxKVbS8oAgELLhbz9wmoy6s9F7tS2BmM4GU",
+      "sigs": 100,
+      "first": 1791711182,
+      "last": 1791711185
+    },
+    {
+      "symbol": "Normie",
+      "name": "Nyhrox",
+      "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+      "ata": "QtRvZRBb6Y4erPpToTdFBLautw3dvZfehN6jaN7QG6E",
+      "sigs": 22,
+      "first": 1791742743,
+      "last": 1791759227
+    },
+    {
+      "symbol": "Normie",
+      "name": "Yami \ud80c\udcf5",
+      "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+      "ata": "9Vs6sXxFDEKvwi7Zp4HJGWyYJ3QUXfbUDdDnyVGS79Hw",
+      "sigs": 21,
+      "first": 1791712161,
+      "last": 1791737969
+    },
+    {
+      "symbol": "Normie",
+      "name": "hood",
+      "wallet": "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9",
+      "ata": "4ryCmvarMsSBQwNZ1SEUtajjkj5LN3bBa8NJsCExGQWi",
+      "sigs": 4,
+      "first": 1791738640,
+      "last": 1791739019
+    }
+  ],
+  "holding_now": [
+    {
+      "symbol": "trenchcat",
+      "name": "Naruza",
+      "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "Frost",
+      "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T"
+    },
+    {
+      "symbol": "trenchcat",
+      "name": "CoCo",
+      "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Megga",
+      "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU"
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Ethan Prosper",
+      "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT"
+    },
+    {
+      "symbol": "Nuts",
+      "name": "jrus",
+      "wallet": "951wq3qDowjKHaycrNaiRB5WpovYVKXnqhnrcKPh46zt"
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Orange",
+      "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv"
+    },
+    {
+      "symbol": "Nuts",
+      "name": "Limfork.eth",
+      "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB"
+    },
+    {
+      "symbol": "Nuts",
+      "name": "lyftical",
+      "wallet": "2hN82SXLUffhG3vxpezRmae1sGrCBMqHHBDxjmjpagqk"
+    },
+    {
+      "symbol": "Normie",
+      "name": "slingoor",
+      "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij"
+    },
+    {
+      "symbol": "Normie",
+      "name": "Schoen",
+      "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM"
+    },
+    {
+      "symbol": "Normie",
+      "name": "Naruza",
+      "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+    },
+    {
+      "symbol": "Normie",
+      "name": "Frost",
+      "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T"
+    },
+    {
+      "symbol": "Normie",
+      "name": "CoCo",
+      "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+    },
+    {
+      "symbol": "Normie",
+      "name": "kyz",
+      "wallet": "72YiE4crBv2UhxRgRYKs4GaTGT2avbacfL4HNCfQLqsm"
+    },
+    {
+      "symbol": "Normie",
+      "name": "Gasp",
+      "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+    },
+    {
+      "symbol": "Normie",
+      "name": "Rilsio",
+      "wallet": "4fZFcK8ms3bFMpo1ACzEUz8bH741fQW4zhAMGd5yZMHu"
+    },
+    {
+      "symbol": "Normie",
+      "name": "Nyhrox",
+      "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+    },
+    {
+      "symbol": "Normie",
+      "name": "hood",
+      "wallet": "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9"
+    }
+  ],
+  "rpc_calls": 486,
+  "rpc_errors": 117,
+  "selftest_usdc_ata": "FGETo8T8wMcN2wCjav8VK6eh3dLk63evNDPxzLSJra8B"
+}

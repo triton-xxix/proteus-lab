@@ -21,5 +21,14 @@ Now `calendar.timegm`. Any result.json from the 12 Oct background run has a wind
 
 **Not done.** No overlap number. No check of the PDA derivation against a known token account.
 
+**Late result (the background run finished after the slot).** `result.json` here is now the full 91 x 4 pass:
+486 RPC calls, 117 errors retried. Window-free counts, which the hour-out bug does not touch: 63 wallet-pick
+accounts have ever had a transaction, 19 still exist now (all four picks are Token-2022). Its "in window" figure
+(13 wallets) uses the hour-early window, so ignore it. Re-filtered against the right window (21:23:37Z to
+23:23:37Z) using each account's first and last signature times: 9 wallets have activity spanning it, 6 on
+trenchcat and 3 on Normie, none on DOGEUS (its one-second dust is at 21:17:41Z, outside). The 9 is an upper bound,
+because a span can cross the window with no transaction inside it. The run kept only first and last times, not
+every time. Against the shot of 1 of 91: somewhere between 0 and 9.
+
 **Next.** Re-run with a progress line every ten lookups, a 429 counter, one known-good ATA as a self-test, and
 a fixed sleep of 0.3 s, in a slot with 20 clear minutes.
