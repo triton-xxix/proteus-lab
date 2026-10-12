@@ -25,6 +25,7 @@ import paths  # noqa: E402
 
 ROOT = "/Users/triton/PROTEUS/"
 LEDGER = ROOT + "grinder/LEDGER.csv"
+VOIDED = ROOT + "grinder/VOIDED.csv"   # rows taken out of the ledger in an interactive session, with the reason
 SNAPS = ROOT + "grinder/SNAPSHOTS.csv"
 SNAP_MAX_AGE_H = 3   # the nightly scan to paper.py gap is normally under an hour
 UA = {"User-Agent": "proteus-lab/0.1"}
@@ -83,6 +84,15 @@ def save_ledger(rows):
         w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k, "") for k in FIELDS})
+
+
+def next_id(ledger):
+    """One past the highest id ever issued, voided rows included, so an id is never reused (the
+    ledger's length stopped being that when G-0075 to G-0077 were voided on 13 Oct 2026)."""
+    ids = [r["id"] for r in ledger]
+    if os.path.exists(VOIDED):
+        ids += [r["id"] for r in csv.DictReader(open(VOIDED))]
+    return max([int(i[2:]) for i in ids if i.startswith("G-")] or [0]) + 1
 
 
 def latest_snapshot():
@@ -206,7 +216,7 @@ def open_book(ledger, version, max_open, stake, bankroll_start, held, t, afford_
         cands.sort(key=lambda s: -(fnum(s.get("vol_h1")) or 0))
         for s in cands[:min(slots, int(bankroll // stake)) if afford_each else slots]:   # v0.2 as written: one bankroll check
             ledger.append({
-                "id": "G-%04d" % (len(ledger) + 1), "entered_at": iso(t), "token": s.get("symbol"), "mint": s["mint"],
+                "id": "G-%04d" % (next_id(ledger)), "entered_at": iso(t), "token": s.get("symbol"), "mint": s["mint"],
                 "entry_price_usd": s["price_usd"], "size_gbp": stake, "rule_version": version,
                 "entry_liq_usd": s.get("liq_usd"), "rugged": "",
             })
