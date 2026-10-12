@@ -1,0 +1,700 @@
+{
+ "probe": "P-0128",
+ "wallets": 91,
+ "lookups": 364,
+ "rpc_calls": 486,
+ "rpc_errors": 117,
+ "snapshot": "2026-10-11T22:23:37Z",
+ "window": [
+  1791753817,
+  1791761017
+ ],
+ "window_iso": [
+  "2026-10-11T21:23:37Z",
+  "2026-10-11T23:23:37Z"
+ ],
+ "window_bad_iso": [
+  "2026-10-11T20:23:37Z",
+  "2026-10-11T22:23:37Z"
+ ],
+ "in_window_bad": 13,
+ "ever": 63,
+ "holding_now": 19,
+ "spans_wallets": 9,
+ "spans_rows": 9,
+ "inside_rows": 7,
+ "inside_wallets": 7,
+ "inside_by_pick": {
+  "DOGEUS": 0,
+  "trenchcat": 5,
+  "Nuts": 0,
+  "Normie": 2
+ },
+ "shot": "works at 0.55; 1 of 91 wallets touches a pick in the window",
+ "picks": [
+  {
+   "id": "G-0071",
+   "symbol": "DOGEUS",
+   "ts": "2026-10-11T22:28:10Z",
+   "ever": 7,
+   "spans": 0,
+   "holding": 0
+  },
+  {
+   "id": "G-0072",
+   "symbol": "trenchcat",
+   "ts": "2026-10-11T22:28:10Z",
+   "ever": 18,
+   "spans": 6,
+   "holding": 3
+  },
+  {
+   "id": "G-0073",
+   "symbol": "Nuts",
+   "ts": "2026-10-11T22:28:10Z",
+   "ever": 20,
+   "spans": 0,
+   "holding": 6
+  },
+  {
+   "id": "G-0074",
+   "symbol": "Normie",
+   "ts": "2026-10-11T22:28:10Z",
+   "ever": 18,
+   "spans": 3,
+   "holding": 10
+  }
+ ],
+ "rows": [
+  {
+   "symbol": "DOGEUS",
+   "name": "decu",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "DOGEUS",
+   "name": "trunoest",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "DOGEUS",
+   "name": "Coler",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "DOGEUS",
+   "name": "theo",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "DOGEUS",
+   "name": "bandit",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "DOGEUS",
+   "name": "Jijo",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "DOGEUS",
+   "name": "The Doc",
+   "sigs": 1,
+   "first": 1791753461,
+   "last": 1791753461,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "decu",
+   "sigs": 100,
+   "first": 1791720155,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "slingoor",
+   "sigs": 8,
+   "first": 1791762559,
+   "last": 1791780293,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "trunoest",
+   "sigs": 100,
+   "first": 1791720155,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Coler",
+   "sigs": 100,
+   "first": 1791720147,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "theo",
+   "sigs": 100,
+   "first": 1791720155,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Cented",
+   "sigs": 100,
+   "first": 1791720153,
+   "last": 1791720161,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Schoen",
+   "sigs": 100,
+   "first": 1791720147,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Naruza",
+   "sigs": 15,
+   "first": 1791724361,
+   "last": 1791756481,
+   "spans": true,
+   "inside": true,
+   "holding": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Frost",
+   "sigs": 7,
+   "first": 1791720262,
+   "last": 1791720485,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "CoCo",
+   "sigs": 3,
+   "first": 1791756189,
+   "last": 1791756424,
+   "spans": true,
+   "inside": true,
+   "holding": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Daumen",
+   "sigs": 100,
+   "first": 1791720158,
+   "last": 1791795226,
+   "spans": true,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "West",
+   "sigs": 18,
+   "first": 1791756598,
+   "last": 1791803400,
+   "spans": true,
+   "inside": true,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Limfork.eth",
+   "sigs": 100,
+   "first": 1791720147,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "bandit",
+   "sigs": 5,
+   "first": 1791756317,
+   "last": 1791765912,
+   "spans": true,
+   "inside": true,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Trey",
+   "sigs": 100,
+   "first": 1791720147,
+   "last": 1791720163,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Jijo",
+   "sigs": 100,
+   "first": 1791720153,
+   "last": 1791720161,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Nyhrox",
+   "sigs": 100,
+   "first": 1791720157,
+   "last": 1791720170,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Yami \ud80c\udcf5",
+   "sigs": 2,
+   "first": 1791758900,
+   "last": 1791759100,
+   "spans": true,
+   "inside": true,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "decu",
+   "sigs": 100,
+   "first": 1791739600,
+   "last": 1791741154,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "trunoest",
+   "sigs": 100,
+   "first": 1791739673,
+   "last": 1791752702,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Coler",
+   "sigs": 100,
+   "first": 1791739635,
+   "last": 1791739638,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "theo",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Cented",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Megga",
+   "sigs": 100,
+   "first": 1791739600,
+   "last": 1791739989,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Sebastian",
+   "sigs": 100,
+   "first": 1791739635,
+   "last": 1791739638,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Schoen",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Ethan Prosper",
+   "sigs": 8,
+   "first": 1791743971,
+   "last": 1791744481,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Daumen",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "jrus",
+   "sigs": 10,
+   "first": 1791740174,
+   "last": 1791740397,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Orange",
+   "sigs": 13,
+   "first": 1791740031,
+   "last": 1791740467,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Gfree",
+   "sigs": 100,
+   "first": 1791739586,
+   "last": 1791739589,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Limfork.eth",
+   "sigs": 100,
+   "first": 1791739635,
+   "last": 1791739660,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Trey",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Jijo",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Nyhrox",
+   "sigs": 100,
+   "first": 1791739635,
+   "last": 1791739638,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Yami \ud80c\udcf5",
+   "sigs": 12,
+   "first": 1791743330,
+   "last": 1791751681,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Nuts",
+   "name": "lyftical",
+   "sigs": 2,
+   "first": 1791739768,
+   "last": 1791739888,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Nuts",
+   "name": "Kadenox",
+   "sigs": 100,
+   "first": 1791739672,
+   "last": 1791739680,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "decu",
+   "sigs": 100,
+   "first": 1791711182,
+   "last": 1791711185,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "slingoor",
+   "sigs": 3,
+   "first": 1791738773,
+   "last": 1791762606,
+   "spans": true,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "trunoest",
+   "sigs": 100,
+   "first": 1791711182,
+   "last": 1791711185,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "theo",
+   "sigs": 100,
+   "first": 1791711182,
+   "last": 1791711185,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "TIL",
+   "sigs": 4,
+   "first": 1791712819,
+   "last": 1791729924,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "Cented",
+   "sigs": 100,
+   "first": 1791711182,
+   "last": 1791711185,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "Schoen",
+   "sigs": 4,
+   "first": 1791711191,
+   "last": 1791711206,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Naruza",
+   "sigs": 6,
+   "first": 1791781972,
+   "last": 1791805472,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Frost",
+   "sigs": 12,
+   "first": 1791711251,
+   "last": 1791711650,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Pain",
+   "sigs": 9,
+   "first": 1791711252,
+   "last": 1791717769,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "CoCo",
+   "sigs": 7,
+   "first": 1791711274,
+   "last": 1791711545,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "kyz",
+   "sigs": 24,
+   "first": 1791711213,
+   "last": 1791711358,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Gasp",
+   "sigs": 20,
+   "first": 1791737723,
+   "last": 1791754405,
+   "spans": true,
+   "inside": true,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Rilsio",
+   "sigs": 1,
+   "first": 1791768675,
+   "last": 1791768675,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Jijo",
+   "sigs": 100,
+   "first": 1791711182,
+   "last": 1791711185,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "Nyhrox",
+   "sigs": 22,
+   "first": 1791742743,
+   "last": 1791759227,
+   "spans": true,
+   "inside": true,
+   "holding": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Yami \ud80c\udcf5",
+   "sigs": 21,
+   "first": 1791712161,
+   "last": 1791737969,
+   "spans": false,
+   "inside": false,
+   "holding": false
+  },
+  {
+   "symbol": "Normie",
+   "name": "hood",
+   "sigs": 4,
+   "first": 1791738640,
+   "last": 1791739019,
+   "spans": false,
+   "inside": false,
+   "holding": true
+  }
+ ]
+}

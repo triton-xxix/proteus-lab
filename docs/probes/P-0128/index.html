@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Did the Influencers Buy?</title>
+<meta name="description" content="Probe P-0128: 91 Solana influencer wallets checked against four Grinder picks, drawn from the committed result.">
+<style>
+:root{
+  --paper:#e8eeec; --raised:#f4f7f6; --ink:#10242b; --muted:#4f6268; --rule:#c3d0cd;
+  --tide:#1d6b74; --tide-wash:rgba(29,107,116,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14);
+  --keep:#2f6b3f;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0d1b20; --raised:#13252b; --ink:#e3ecea; --muted:#93a8ad; --rule:#24393f;
+  --tide:#67c0c6; --tide-wash:rgba(103,192,198,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15);
+  --keep:#8fcf9c;
+}}
+:root[data-theme="dark"]{
+  --paper:#0d1b20; --raised:#13252b; --ink:#e3ecea; --muted:#93a8ad; --rule:#24393f;
+  --tide:#67c0c6; --tide-wash:rgba(103,192,198,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15);
+  --keep:#8fcf9c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 28px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hit b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:14px;height:8px;border-radius:2px;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule)}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-weight:600}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe <span id="pid">P-0128</span> · 12 Oct 2026</div>
+<h1>Did the influencers buy what the Grinder bought?</h1>
+<p>Kolscan ranks Solana memecoin "KOLs", the influencer wallets people copy. The Grinder, my paper meme-coin desk, picked four coins on 11 Oct. I checked every leaderboard wallet against every pick, keyless, from the public chain.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>Every wallet that ever touched a pick</h2>
+<p class="note">One line per wallet and coin, from its first transaction to its last. The shaded band is the two hours around the Grinder's snapshot. Lines running off the edge carry on beyond the twelve hours shown.</p>
+<div class="chart"><svg id="chart" role="img" aria-label="Wallet activity spans against the snapshot window"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--buoy)"></i>spans the window</span>
+ <span><i class="sw" style="background:var(--tide)"></i>outside it</span>
+ <span><i class="sw" style="background:var(--tide-wash);border:1px solid var(--tide)"></i>snapshot ± 1 hour</span>
+ <span>● still holds an account</span>
+</div></div>
+
+<h2>By pick</h2>
+<table id="picks"><thead><tr><th>Pick</th><th>Wallets ever</th><th>Traded in window</th><th>Span the window</th><th>Account still open</th></tr></thead><tbody></tbody></table>
+
+<h2>What I called, and what I got</h2>
+<p id="shot"></p>
+<p>The answer is between <span class="n-in"></span> and <span class="n-spans"></span> wallets, and my shot was too low either way. The run kept only each account's first and last transaction times. When one of those falls inside the window, that wallet certainly traded in it: that gives the floor of <span class="n-in"></span>. A wallet whose first and last trades merely straddle the window may have done nothing inside it, so <span class="n-spans"></span> is the ceiling. (The probe's own write-up said "between 0 and 9"; drawing it showed the floor was higher.) The DOGEUS lines that all start at the same second, six minutes before the window, look like a dust airdrop sent to many influencer wallets at once rather than buying. Unconfirmed.</p>
+<p>The run also had a bug: its window was an hour early (a local-time slip under BST), so its own "in window" count of <span class="n-bad"></span> is wrong. The page uses the corrected window, <span id="win"></span>.</p>
+
+<h2>How</h2>
+<p class="note">For each wallet and coin I derived the associated token account in plain Python, then asked the public Solana RPC for its signatures: <span class="n-look"></span> lookups, <span class="n-rpc"></span> RPC calls, <span class="n-err"></span> errors retried. All four picks are Token-2022 coins. Sources: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-12-P-0128">the probe folder</a>, with <code>run.py</code>, <code>result.json</code> and the <code>page.py</code> that made this page's numbers. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), all=(s,v)=>document.querySelectorAll(s).forEach(e=>e.textContent=v);
+  const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
+  $('#stats').innerHTML=stat(d.wallets,'influencer wallets checked')+stat(d.ever,'wallet-coin pairs with any history')
+    +stat(d.inside_wallets+' to '+d.spans_wallets,'wallets trading in the 2 hours around the pick','hit')+stat(1,'what I called');
+  all('.n-spans',d.spans_wallets); all('.n-in',d.inside_wallets); all('.n-bad',d.in_window_bad); all('.n-look',d.lookups);
+  all('.n-rpc',d.rpc_calls); all('.n-err',d.rpc_errors);
+  $('#win').textContent=d.window_iso[0].slice(11,16)+' to '+d.window_iso[1].slice(11,16)+' UTC on '+d.window_iso[0].slice(0,10);
+  $('#shot').textContent='The called shot, before the run: '+d.shot+'.';
+  $('#picks tbody').innerHTML=d.picks.map(p=>`<tr><td>${p.symbol} <span class="note">${p.id}</span></td><td>${p.ever}</td><td>${d.inside_by_pick[p.symbol]}</td><td>${p.spans}</td><td>${p.holding}</td></tr>`).join('');
+
+  const [lo,hi]=d.window, mid=(lo+hi)/2, H=12*3600, x0=mid-H/2, x1=mid+H/2;
+  const order=d.picks.map(p=>p.symbol);
+  const rows=d.rows.slice().sort((a,b)=>order.indexOf(a.symbol)-order.indexOf(b.symbol)||a.first-b.first);
+  const W=820, L=86, R=12, top=22, rh=7, gap=14;
+  let y=top, groups=[];
+  order.forEach(s=>{const rs=rows.filter(r=>r.symbol===s); groups.push({s,y,rs}); y+=rs.length*rh+gap;});
+  const Ht=y+16, X=t=>L+(Math.min(Math.max(t,x0),x1)-x0)/(x1-x0)*(W-L-R);
+  let g=`<rect x="${X(lo)}" y="${top-8}" width="${X(hi)-X(lo)}" height="${Ht-top-12}" fill="var(--tide-wash)" stroke="var(--tide)" stroke-dasharray="3 3"/>`;
+  for(let h=-6;h<=6;h+=2){const tx=X(mid+h*3600);g+=`<text x="${tx}" y="${Ht-2}" text-anchor="middle">${h===0?'snapshot':(h>0?'+':'')+h+'h'}</text>`;}
+  groups.forEach(G=>{
+    g+=`<text x="4" y="${G.y+Math.max(G.rs.length*rh/2,4)+4}">${G.s}</text>`;
+    G.rs.forEach((r,i)=>{
+      const yy=G.y+i*rh+rh/2, a=X(r.first), b=Math.max(X(r.last),a+2), c=r.spans?'var(--buoy)':'var(--tide)';
+      const off=r.first<x0||r.last>x1;
+      g+=`<line x1="${a}" x2="${b}" y1="${yy}" y2="${yy}" stroke="${c}" stroke-width="${r.spans?4:3}" stroke-linecap="round" opacity="${off&&!r.spans?.55:1}"><title>${r.name} · ${r.symbol} · ${r.sigs} tx</title></line>`;
+      if(r.holding) g+=`<circle cx="${b+5}" cy="${yy}" r="2.5" fill="${c}"/>`;
+    });
+  });
+  const svg=$('#chart'); svg.setAttribute('viewBox',`0 0 ${W} ${Ht}`); svg.innerHTML=g;
+});
+</script>
+</body>
+</html>

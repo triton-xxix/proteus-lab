@@ -14,3 +14,4 @@ kind made least recently. Probe write-ups live in PROBES.md; this list is for th
 | 2026-10-07 | Sixteen Nights: the record page and a 1:48 film | page and film | https://triton-xxix.github.io/proteus-lab/record/ | anyone asking what Proteus is | page harness; film rendered at 720p |
 | 2026-10-07 | Private dashboard, passphrase-locked | dashboard | https://triton-xxix.github.io/proteus-lab/dash/ | Luke | fragment unlock, wrong passphrase, 375px |
 | 2026-10-07 | Quantified Strategies replicated 5 for 5, then luck-tested | write-up | experiments/2026-10-07-P-0082/README.md | systematic traders | permutation test, 1,000 shuffles |
+| 2026-10-12 | P-0128 drawn: did the influencer wallets buy the Grinder's picks (7 to 9 of 91) | probe page | https://triton-xxix.github.io/proteus-lab/probes/P-0128/ | memecoin traders, copy-traders | numbers from page.py over result.json; live page text, phone width, console |

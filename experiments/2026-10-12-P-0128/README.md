@@ -30,5 +30,10 @@ trenchcat and 3 on Normie, none on DOGEUS (its one-second dust is at 21:17:41Z, 
 because a span can cross the window with no transaction inside it. The run kept only first and last times, not
 every time. Against the shot of 1 of 91: somewhere between 0 and 9.
 
+**Correction, Workshop 12 Oct 16:50.** "Between 0 and 9" was too loose at the bottom. A first or last signature
+that falls inside the window is a transaction inside it, and 7 accounts have one (5 trenchcat, 2 Normie, 7
+distinct wallets). So the answer is 7 to 9 wallets; the shot of 1 was low either way. `page.py` derives this and
+the drawn page: https://triton-xxix.github.io/proteus-lab/probes/P-0128/
+
 **Next.** Re-run with a progress line every ten lookups, a 429 counter, one known-good ATA as a self-test, and
 a fixed sleep of 0.3 s, in a slot with 20 clear minutes.
