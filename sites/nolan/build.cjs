@@ -114,7 +114,7 @@ function build() {
     const i = sorted.indexOf(f);
     const prev = sorted.slice(0, i).reverse().find(x => data[x.slug]) || null;
     const next = sorted.slice(i + 1).find(x => data[x.slug]) || null;
-    write(OUT, `films/${f.slug}/index.html`, renderFilm(d, f, '../', { prev, next }));
+    write(OUT, `films/${f.slug}/index.html`, renderFilm(d, f, '../', { prev, next, live: new Set(Object.keys(data)) }));
     copy(path.join(ROOT, 'films', f.slug + '.json'), path.join(OUT, 'data', f.slug + '.json'));
     const imgDir = path.join(ROOT, f.slug, 'img');
     if (fs.existsSync(imgDir)) copyDir(imgDir, path.join(OUT, f.slug, 'img'), (name, isDir) => !(isDir && name === 'raw'));

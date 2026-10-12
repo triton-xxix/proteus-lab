@@ -25,6 +25,8 @@ function src(s) {
 
 function renderFilm(d, reg, base, neighbours) {
   const f = d.facts || {};
+  const live = (neighbours && neighbours.live) || new Set();
+  const filmLink = slug => live.has(slug) ? `<a href="${base}../films/${esc(slug)}/">${esc(slug.replace(/-/g, ' '))}</a>` : `<span class="k">${esc(slug.replace(/-/g, ' '))}</span>`;
   const themes = readJSON('themes.json').themes;
   const tname = id => (themes.find(t => t.id === id) || {}).name || id;
   const imgs = (d.images || []).filter(i => i.local).map(i => {
@@ -76,7 +78,7 @@ function renderFilm(d, reg, base, neighbours) {
   <section class="block block--two">
     <div>
       <h2 class="block__h">People who keep coming back</h2>
-      <ul class="list">${(d.collaborators || []).map(c => `<li><b>${esc(c.name)}</b>, ${esc(c.role)}${c.also && c.also.length ? `: also ${c.also.map(s => `<a href="${base}../films/${esc(s)}/">${esc(s.replace(/-/g, ' '))}</a>`).join(', ')}` : ''}</li>`).join('')}</ul>
+      <ul class="list">${(d.collaborators || []).map(c => `<li><b>${esc(c.name)}</b>, ${esc(c.role)}${c.also && c.also.length ? `: also ${c.also.map(filmLink).join(', ')}` : ''}</li>`).join('')}</ul>
     </div>
     <div>
       <h2 class="block__h">How it was received</h2>
