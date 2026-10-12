@@ -1,5 +1,5 @@
 {
- "next_id": 134,
+ "next_id": 135,
  "items": [
   {
    "id": "P-0001",
@@ -2866,9 +2866,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-12",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-12T12:45:28+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -2876,7 +2876,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.75,
+    "number": "0 Pitch-league kickoffs before 17 Oct (international break), so 0 pre-kickoff snapshots possible today",
+    "at": "2026-10-12T12:45:32+0100"
+   }
   },
   {
    "id": "P-0130",
@@ -2964,6 +2970,26 @@
    "source": "desk",
    "needs": "",
    "after": "2026-10-16",
+   "est_minutes": 20,
+   "added": "2026-10-12",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0134",
+   "title": "Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experiments/2026-10-12-P-0128/run.py in the background, about 55 min",
+   "source": "desk",
+   "needs": "",
+   "after": "",
    "est_minutes": 20,
    "added": "2026-10-12",
    "status": "open",
