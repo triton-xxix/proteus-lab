@@ -66,11 +66,11 @@ code{font-size:13px}
 </div></div>
 
 <h2>By pick</h2>
-<table id="picks"><thead><tr><th>Pick</th><th>Wallets ever</th><th>Traded in window</th><th>Span the window</th><th>Account still open</th></tr></thead><tbody></tbody></table>
+<table id="picks"><thead><tr><th>Pick</th><th>Wallets ever</th><th>Active in window</th><th>Span the window</th><th>Account still open</th></tr></thead><tbody></tbody></table>
 
 <h2>What I called, and what I got</h2>
 <p id="shot"></p>
-<p>The answer is between <span class="n-in"></span> and <span class="n-spans"></span> wallets, and my shot was too low either way. The run kept only each account's first and last transaction times. When one of those falls inside the window, that wallet certainly traded in it: that gives the floor of <span class="n-in"></span>. A wallet whose first and last trades merely straddle the window may have done nothing inside it, so <span class="n-spans"></span> is the ceiling. (The probe's own write-up said "between 0 and 9"; drawing it showed the floor was higher.) The DOGEUS lines that all start at the same second, six minutes before the window, look like a dust airdrop sent to many influencer wallets at once rather than buying. Unconfirmed.</p>
+<p>The answer is between <span class="n-in"></span> and <span class="n-spans"></span> wallets, and my shot was too low either way. The run kept only each account's first and last transaction times. When one of those falls inside the window, that wallet certainly had a transaction in it (a buy, a sell, or something sent to it): that gives the floor of <span class="n-in"></span>. A wallet whose first and last trades merely straddle the window may have done nothing inside it, so <span class="n-spans"></span> is the ceiling. (The probe's own write-up said "between 0 and 9"; drawing it showed the floor was higher.) The DOGEUS lines that all start at the same second, six minutes before the window, look like a dust airdrop sent to many influencer wallets at once rather than buying. Unconfirmed.</p>
 <p>The run also had a bug: its window was an hour early (a local-time slip under BST), so its own "in window" count of <span class="n-bad"></span> is wrong. The page uses the corrected window, <span id="win"></span>.</p>
 
 <h2>How</h2>
@@ -81,7 +81,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   const $=s=>document.querySelector(s), all=(s,v)=>document.querySelectorAll(s).forEach(e=>e.textContent=v);
   const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
   $('#stats').innerHTML=stat(d.wallets,'influencer wallets checked')+stat(d.ever,'wallet-coin pairs with any history')
-    +stat(d.inside_wallets+' to '+d.spans_wallets,'wallets trading in the 2 hours around the pick','hit')+stat(1,'what I called');
+    +stat(d.inside_wallets+' to '+d.spans_wallets,'wallets active in the 2 hours around the pick','hit')+stat(1,'what I called');
   all('.n-spans',d.spans_wallets); all('.n-in',d.inside_wallets); all('.n-bad',d.in_window_bad); all('.n-look',d.lookups);
   all('.n-rpc',d.rpc_calls); all('.n-err',d.rpc_errors);
   $('#win').textContent=d.window_iso[0].slice(11,16)+' to '+d.window_iso[1].slice(11,16)+' UTC on '+d.window_iso[0].slice(0,10);
@@ -91,12 +91,12 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   const [lo,hi]=d.window, mid=(lo+hi)/2, H=12*3600, x0=mid-H/2, x1=mid+H/2;
   const order=d.picks.map(p=>p.symbol);
   const rows=d.rows.slice().sort((a,b)=>order.indexOf(a.symbol)-order.indexOf(b.symbol)||a.first-b.first);
-  const W=820, L=86, R=12, top=22, rh=7, gap=14;
+  const W=Math.max(Math.round(document.querySelector('.chart').clientWidth-20),300), L=W<500?70:86, R=12, top=22, rh=7, gap=14;
   let y=top, groups=[];
   order.forEach(s=>{const rs=rows.filter(r=>r.symbol===s); groups.push({s,y,rs}); y+=rs.length*rh+gap;});
   const Ht=y+16, X=t=>L+(Math.min(Math.max(t,x0),x1)-x0)/(x1-x0)*(W-L-R);
   let g=`<rect x="${X(lo)}" y="${top-8}" width="${X(hi)-X(lo)}" height="${Ht-top-12}" fill="var(--tide-wash)" stroke="var(--tide)" stroke-dasharray="3 3"/>`;
-  for(let h=-6;h<=6;h+=2){const tx=X(mid+h*3600);g+=`<text x="${tx}" y="${Ht-2}" text-anchor="middle">${h===0?'snapshot':(h>0?'+':'')+h+'h'}</text>`;}
+  for(let h=-6;h<=6;h+=2){const tx=X(mid+h*3600);g+=`<text x="${tx}" y="${Ht-2}" text-anchor="middle">${h===0?(W<500?'0':'snapshot'):(h>0?'+':'')+h+'h'}</text>`;}
   groups.forEach(G=>{
     g+=`<text x="4" y="${G.y+Math.max(G.rs.length*rh/2,4)+4}">${G.s}</text>`;
     G.rs.forEach((r,i)=>{
