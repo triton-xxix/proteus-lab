@@ -32,15 +32,23 @@ def uses(days=WINDOW_DAYS):
             continue
         with open(path) as fh:
             for line in fh:
-                if '"Skill"' not in line:
+                if '"Skill"' not in line and "/SKILL.md" not in line:
                     continue
                 try:
                     rec = json.loads(line)
                 except ValueError:
                     continue
-                if rec.get("tool") == "Skill" and rec.get("outcome") == "allow" and not str(rec.get("session", "")).startswith("t"):
-                    name = str(rec.get("detail") or "").split(":")[-1]
-                    counts[name] = counts.get(name, 0) + 1
+                if rec.get("outcome") != "allow" or str(rec.get("session", "")).startswith("t"):
+                    continue
+                detail = str(rec.get("detail") or "")
+                if rec.get("tool") == "Skill":
+                    name = detail.split(":")[-1]
+                # the task prompts say "Use the <name> skill (<path>)", so runs Read the file (12 Oct: all five at 0)
+                elif rec.get("tool") == "Read" and detail.startswith(SKILLS) and detail.endswith("/SKILL.md"):
+                    name = detail[len(SKILLS):-len("/SKILL.md")]
+                else:
+                    continue
+                counts[name] = counts.get(name, 0) + 1
     return counts
 
 
