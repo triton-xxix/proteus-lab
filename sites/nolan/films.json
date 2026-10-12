@@ -141,18 +141,21 @@
       "title": "Dunkirk",
       "year": 2017,
       "order": 3,
-      "status": "queued",
+      "status": "built",
       "time_structure_kind": "parallel-timescales",
       "deep_page": null,
       "tries": 1,
       "assigned_on": "2026-10-11",
-      "researched_on": null,
+      "researched_on": "2026-10-12",
       "last_check": [
-        "digest.themes[0]: source None was not fetched (or mark unverified: true)",
-        "digest.themes[1]: source None was not fetched (or mark unverified: true)"
+        "digest.themes[0]: source None was not fetched; treated as unverified",
+        "digest.themes[1]: source None was not fetched; treated as unverified",
+        "2 field(s) marked unverified at ingest"
       ],
       "note": "A week, a day and an hour, cut together.",
-      "last_digest": "state/agents/nolan/2026-10-11-dunkirk.json"
+      "last_digest": "state/agents/nolan/2026-10-11-dunkirk.json",
+      "research_digest": "state/agents/nolan/2026-10-11-dunkirk.json",
+      "page": "films/dunkirk/"
     },
     {
       "slug": "tenet",

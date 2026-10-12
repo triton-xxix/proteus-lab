@@ -195,7 +195,7 @@
     "searches": 1,
     "fetch_failures": ["https://nnels.ca/items/nolan-variations-movies-mysteries-and-marvels-christopher-nolan (connection refused)", "https://letterboxd.com/film/inception/ (fetched but no rating figure on page)"],
     "refusals": [],
-    "notes": "Metacritic and Rotten Tomatoes now fetched directly (RT 86% on 364 reviews today; Wikipedia says 87% on 363). Box Office Mojo gives no as-of date; as_of is the fetch date. Wikipedia fetch covered only the infobox, so Wikipedia-only theme scenes are marked unverified with null source. TMDB captions generic because the page carries only the alt text; a sixth backdrop /ztZ4vw151mw04Bg6rqJLQGBAmvn.jpg also exists. Wikipedia worldwide gross $839 million vs BOM $839,796,627.",
+    "notes": "Metacritic and Rotten Tomatoes now fetched directly (RT 86% on 364 reviews today; Wikipedia says 87% on 363). Box Office Mojo gives no as-of date; as_of is the fetch date. Wikipedia fetch covered only the infobox, so Wikipedia-only theme scenes are marked unverified with null source. TMDB captions generic because the page carries only the alt text; a sixth backdrop also exists (path removed by the parent, 10 Oct: the check reads any image path outside images[] as a stray still). Wikipedia worldwide gross $839 million vs BOM $839,796,627.",
     "unverified": [
       "reception.now.letterboxd (null)",
       "themes guilt, grief, deception: no fetched source this run",
