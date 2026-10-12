@@ -1,0 +1,393 @@
+{
+ "calls": [
+  {
+   "path": "/status",
+   "params": {},
+   "errors": [],
+   "n": 1,
+   "left": "100",
+   "sample": {
+    "account": {
+     "firstname": "Luke",
+     "lastname": "Boyd",
+     "email": "luke.boyd@neptunemarketing.co.uk"
+    },
+    "subscription": {
+     "plan": "Free",
+     "end": "2026-10-30T10:15:02+00:00",
+     "active": true
+    },
+    "requests": {
+     "current": 0,
+     "limit_day": 100
+    }
+   }
+  },
+  {
+   "path": "/injuries",
+   "params": {
+    "date": "2026-10-12"
+   },
+   "errors": [],
+   "n": 168,
+   "left": "98",
+   "sample": [
+    {
+     "player": {
+      "id": 137976,
+      "name": "I. Hien",
+      "photo": "https://media.api-sports.io/football/players/137976.png",
+      "type": "Missing Fixture",
+      "reason": "Muscle Injury"
+     },
+     "team": {
+      "id": 499,
+      "name": "Atalanta",
+      "logo": "https://media.api-sports.io/football/teams/499.png"
+     },
+     "fixture": {
+      "id": 1550137,
+      "timezone": "UTC",
+      "date": "2026-10-12T16:30:00+00:00",
+      "timestamp": 1791822600
+     },
+     "league": {
+      "id": 135,
+      "season": 2026,
+      "name": "Serie A",
+      "country": "Italy",
+      "logo": "https://media.api-sports.io/football/leagues/135.png",
+      "flag": "https://media.api-sports.io/flags/it.svg"
+     }
+    },
+    {
+     "player": {
+      "id": 48119,
+      "name": "O. Kossounou",
+      "photo": "https://media.api-sports.io/football/players/48119.png",
+      "type": "Missing Fixture",
+      "reason": "Thigh Injury"
+     },
+     "team": {
+      "id": 499,
+      "name": "Atalanta",
+      "logo": "https://media.api-sports.io/football/teams/499.png"
+     },
+     "fixture": {
+      "id": 1550137,
+      "timezone": "UTC",
+      "date": "2026-10-12T16:30:00+00:00",
+      "timestamp": 1791822600
+     },
+     "league": {
+      "id": 135,
+      "season": 2026,
+      "name": "Serie A",
+      "country": "Italy",
+      "logo": "https://media.api-sports.io/football/leagues/135.png",
+      "flag": "https://media.api-sports.io/flags/it.svg"
+     }
+    }
+   ]
+  },
+  {
+   "path": "/injuries",
+   "params": {
+    "date": "2026-10-13"
+   },
+   "errors": [],
+   "n": 290,
+   "left": "97",
+   "sample": [
+    {
+     "player": {
+      "id": 297893,
+      "name": "Alix Vinicius",
+      "photo": "https://media.api-sports.io/football/players/297893.png",
+      "type": "Missing Fixture",
+      "reason": "Injury"
+     },
+     "team": {
+      "id": 794,
+      "name": "RB Bragantino",
+      "logo": "https://media.api-sports.io/football/teams/794.png"
+     },
+     "fixture": {
+      "id": 1492402,
+      "timezone": "UTC",
+      "date": "2026-10-13T00:00:00+00:00",
+      "timestamp": 1791849600
+     },
+     "league": {
+      "id": 71,
+      "season": 2026,
+      "name": "Serie A",
+      "country": "Brazil",
+      "logo": "https://media.api-sports.io/football/leagues/71.png",
+      "flag": "https://media.api-sports.io/flags/br.svg"
+     }
+    },
+    {
+     "player": {
+      "id": 468162,
+      "name": "Davi Gomes",
+      "photo": "https://media.api-sports.io/football/players/468162.png",
+      "type": "Missing Fixture",
+      "reason": "Knee Injury"
+     },
+     "team": {
+      "id": 794,
+      "name": "RB Bragantino",
+      "logo": "https://media.api-sports.io/football/teams/794.png"
+     },
+     "fixture": {
+      "id": 1492402,
+      "timezone": "UTC",
+      "date": "2026-10-13T00:00:00+00:00",
+      "timestamp": 1791849600
+     },
+     "league": {
+      "id": 71,
+      "season": 2026,
+      "name": "Serie A",
+      "country": "Brazil",
+      "logo": "https://media.api-sports.io/football/leagues/71.png",
+      "flag": "https://media.api-sports.io/flags/br.svg"
+     }
+    }
+   ]
+  },
+  {
+   "path": "/injuries",
+   "params": {
+    "league": 39,
+    "season": 2026
+   },
+   "errors": {
+    "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+   },
+   "n": 0,
+   "left": null,
+   "sample": []
+  },
+  {
+   "path": "/fixtures",
+   "params": {
+    "date": "2026-10-13"
+   },
+   "errors": [],
+   "n": 291,
+   "left": "96",
+   "sample": [
+    {
+     "fixture": {
+      "id": 1492402,
+      "referee": "Savio Pereira Sampaio",
+      "timezone": "UTC",
+      "date": "2026-10-13T00:00:00+00:00",
+      "timestamp": 1791849600,
+      "periods": {
+       "first": null,
+       "second": null
+      },
+      "venue": {
+       "id": null,
+       "name": "Estadio Cicero de Souza Marques",
+       "city": "Braganza"
+      },
+      "status": {
+       "long": "Not Started",
+       "short": "NS",
+       "elapsed": null,
+       "extra": null
+      }
+     },
+     "league": {
+      "id": 71,
+      "name": "Serie A",
+      "country": "Brazil",
+      "logo": "https://media.api-sports.io/football/leagues/71.png",
+      "flag": "https://media.api-sports.io/flags/br.svg",
+      "season": 2026,
+      "round": "Regular Season - 30",
+      "standings": true
+     },
+     "teams": {
+      "home": {
+       "id": 794,
+       "name": "RB Bragantino",
+       "logo": "https://media.api-sports.io/football/teams/794.png",
+       "winner": null
+      },
+      "away": {
+       "id": 135,
+       "name": "Cruzeiro",
+       "logo": "https://media.api-sports.io/football/teams/135.png",
+       "winner": null
+      }
+     },
+     "goals": {
+      "home": null,
+      "away": null
+     },
+     "score": {
+      "halftime": {
+       "home": null,
+       "away": null
+      },
+      "fulltime": {
+       "home": null,
+       "away": null
+      },
+      "extratime": {
+       "home": null,
+       "away": null
+      },
+      "penalty": {
+       "home": null,
+       "away": null
+      }
+     }
+    },
+    {
+     "fixture": {
+      "id": 1520922,
+      "referee": "Jonathan Benkenstein Pinheiro",
+      "timezone": "UTC",
+      "date": "2026-10-13T00:00:00+00:00",
+      "timestamp": 1791849600,
+      "periods": {
+       "first": null,
+       "second": null
+      },
+      "venue": {
+       "id": 219,
+       "name": "Estadio Santa Cruz",
+       "city": "Ribeirao Preto"
+      },
+      "status": {
+       "long": "Not Started",
+       "short": "NS",
+       "elapsed": null,
+       "extra": null
+      }
+     },
+     "league": {
+      "id": 72,
+      "name": "Serie B",
+      "country": "Brazil",
+      "logo": "https://media.api-sports.io/football/leagues/72.png",
+      "flag": "https://media.api-sports.io/flags/br.svg",
+      "season": 2026,
+      "round": "Regular Season - 33",
+      "standings": true
+     },
+     "teams": {
+      "home": {
+       "id": 2618,
+       "name": "Botafogo SP",
+       "logo": "https://media.api-sports.io/football/teams/2618.png",
+       "winner": null
+      },
+      "away": {
+       "id": 129,
+       "name": "Ceara",
+       "logo": "https://media.api-sports.io/football/teams/129.png",
+       "winner": null
+      }
+     },
+     "goals": {
+      "home": null,
+      "away": null
+     },
+     "score": {
+      "halftime": {
+       "home": null,
+       "away": null
+      },
+      "fulltime": {
+       "home": null,
+       "away": null
+      },
+      "extratime": {
+       "home": null,
+       "away": null
+      },
+      "penalty": {
+       "home": null,
+       "away": null
+      }
+     }
+    }
+   ]
+  },
+  {
+   "path": "/injuries",
+   "params": {
+    "fixture": 1563192
+   },
+   "errors": [],
+   "n": 20,
+   "left": "95",
+   "sample": [
+    {
+     "player": {
+      "id": 20103,
+      "name": "R. Dickie",
+      "photo": "https://media.api-sports.io/football/players/20103.png",
+      "type": "Missing Fixture",
+      "reason": "Knee Injury"
+     },
+     "team": {
+      "id": 56,
+      "name": "Bristol City",
+      "logo": "https://media.api-sports.io/football/teams/56.png"
+     },
+     "fixture": {
+      "id": 1563192,
+      "timezone": "UTC",
+      "date": "2026-10-13T18:45:00+00:00",
+      "timestamp": 1791917100
+     },
+     "league": {
+      "id": 40,
+      "season": 2026,
+      "name": "Championship",
+      "country": "England",
+      "logo": "https://media.api-sports.io/football/leagues/40.png",
+      "flag": "https://media.api-sports.io/flags/gb-eng.svg"
+     }
+    },
+    {
+     "player": {
+      "id": 207200,
+      "name": "N. Eile",
+      "photo": "https://media.api-sports.io/football/players/207200.png",
+      "type": "Questionable",
+      "reason": "Illness"
+     },
+     "team": {
+      "id": 56,
+      "name": "Bristol City",
+      "logo": "https://media.api-sports.io/football/teams/56.png"
+     },
+     "fixture": {
+      "id": 1563192,
+      "timezone": "UTC",
+      "date": "2026-10-13T18:45:00+00:00",
+      "timestamp": 1791917100
+     },
+     "league": {
+      "id": 40,
+      "season": 2026,
+      "name": "Championship",
+      "country": "England",
+      "logo": "https://media.api-sports.io/football/leagues/40.png",
+      "flag": "https://media.api-sports.io/flags/gb-eng.svg"
+     }
+    }
+   ]
+  }
+ ],
+ "fixture_used": 1563192
+}
