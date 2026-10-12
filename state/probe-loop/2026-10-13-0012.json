@@ -1,0 +1,14 @@
+{
+ "key": "2026-10-13-0012",
+ "date": "2026-10-13",
+ "started_at": "2026-10-13T00:12:58+0100",
+ "deadline": "2026-10-13T00:43:00+0100",
+ "deadline_how": "nightly preflight 23:23 plus 80 min",
+ "max_calls": 150,
+ "max_probes": 10,
+ "session": "2862abff",
+ "run_log": "/Users/triton/PROTEUS/state/runs/2026-10-12.md",
+ "probes": [],
+ "stopped_at": "2026-10-13T00:14:38+0100",
+ "stop_reason": "the night's data is not there: no 12 Oct Grinder snapshot (scan killed by a tool timeout), and v0.2 opened three positions from the 11 Oct snapshot; fixed in 9825d44 and edcd270. P-0121 attempt 1 left groundwork in experiments/2026-10-13-P-0121, no verdict"
+}
