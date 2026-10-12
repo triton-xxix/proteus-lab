@@ -473,8 +473,25 @@ def cmd_start(a):
         print("note: HALT is set; verdicts will be logged but not committed")
 
 
+def overdue_probes(today):
+    """Probe ids whose DUE.md row is past its date and unscored. They jump the queue: desk probes rank last and
+    a 40-minute build never fit a Trials slot, so P-0121 (D-007) sat open three days past due (F-0001)."""
+    out = set()
+    try:
+        lines = open(ROOT + "DUE.md").read().splitlines()
+    except FileNotFoundError:
+        return out
+    for line in lines:
+        c = [x.strip() for x in line.strip().strip("|").split("|")]
+        if len(c) == 7 and re.match(r"D-\d+$", c[0]) and re.match(r"\d{4}-\d{2}-\d{2}", c[4]) \
+                and c[4][:10] < today and not c[5]:
+            out.update(re.findall(r"P-\d{4}", c[6]))
+    return out
+
+
 def runnable(st, left_minutes):
     today = now().strftime("%Y-%m-%d")
+    overdue = overdue_probes(today)
     pool = [i for i in st["items"] if i["status"] == "open"]
     why = {"needs": [], "after": [], "cull": [], "fit": []}
     fit = []
@@ -489,8 +506,8 @@ def runnable(st, left_minutes):
             why["fit"].append(i)
         else:
             fit.append(i)
-    # clean fits first, then stretch fits; within each, the usual source order
-    fit.sort(key=lambda i: (int(i.get("est_minutes") or 0) > left_minutes,
+    # overdue DUE.md probes first, then clean fits, then stretch fits; within each, the usual source order
+    fit.sort(key=lambda i: (i["id"] not in overdue, int(i.get("est_minutes") or 0) > left_minutes,
                             SOURCE_RANK.get(i.get("source"), 9), i.get("attempts", 0), i["id"]))
     return fit, why, pool
 
