@@ -485,6 +485,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 
 - 2026-10-12: Nolan site, Dunkirk (2017) researched and built (`sites/nolan/films/dunkirk.json`).
 
+- 2026-10-12: Nolan site, Inception (2010) researched and built (`sites/nolan/films/inception.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
