@@ -26,6 +26,7 @@ import paths  # noqa: E402
 ROOT = "/Users/triton/PROTEUS/"
 LEDGER = ROOT + "grinder/LEDGER.csv"
 SNAPS = ROOT + "grinder/SNAPSHOTS.csv"
+SNAP_MAX_AGE_H = 3   # the nightly scan to paper.py gap is normally under an hour
 UA = {"User-Agent": "proteus-lab/0.1"}
 FIELDS = ["id", "entered_at", "token", "mint", "entry_price_usd", "size_gbp", "rule_version", "entry_liq_usd",
           "exit_at", "exit_price_usd", "exit_reason", "pnl_gbp", "score_24h", "score_7d", "rugged"]
@@ -194,8 +195,14 @@ def open_book(ledger, version, max_open, stake, bankroll_start, held, t, afford_
     realised = sum(fnum(r["pnl_gbp"]) or 0 for r in book if r.get("pnl_gbp"))
     bankroll = bankroll_start + realised - stake * len(still_open)
     opened = 0
+    snap = latest_snapshot()
+    # No entries from a stale snapshot: on 12 Oct 2026 the scan died before writing its rows and three
+    # v0.2 entries (G-0075 to G-0077) were opened at 22:54 from the 11 Oct 22:23 snapshot's prices.
+    if snap and (t - parse(snap[0]["ts"])).total_seconds() > SNAP_MAX_AGE_H * 3600:
+        print("no entries for %s: latest snapshot %s is more than %d h old" % (version, snap[0]["ts"], SNAP_MAX_AGE_H))
+        return 0
     if slots > 0 and bankroll >= stake:
-        cands = [s for s in latest_snapshot() if s["mint"] not in held and passes(s)]
+        cands = [s for s in snap if s["mint"] not in held and passes(s)]
         cands.sort(key=lambda s: -(fnum(s.get("vol_h1")) or 0))
         for s in cands[:min(slots, int(bankroll // stake)) if afford_each else slots]:   # v0.2 as written: one bankroll check
             ledger.append({
