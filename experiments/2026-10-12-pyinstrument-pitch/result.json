@@ -1,0 +1,90 @@
+[
+ {
+  "group": "ENG",
+  "matches": 3895,
+  "teams": 54,
+  "params": 110,
+  "iterations": 116,
+  "objective_calls": 14874,
+  "seconds": 11.54,
+  "calls_per_iteration": 128.2,
+  "converged": true
+ },
+ {
+  "group": "ESP",
+  "matches": 1598,
+  "teams": 29,
+  "params": 60,
+  "iterations": 75,
+  "objective_calls": 5185,
+  "seconds": 2.23,
+  "calls_per_iteration": 69.1,
+  "converged": true
+ },
+ {
+  "group": "GER",
+  "matches": 1269,
+  "teams": 25,
+  "params": 52,
+  "iterations": 74,
+  "objective_calls": 4399,
+  "seconds": 1.65,
+  "calls_per_iteration": 59.4,
+  "converged": true
+ },
+ {
+  "group": "ITA",
+  "matches": 1580,
+  "teams": 27,
+  "params": 56,
+  "iterations": 76,
+  "objective_calls": 5016,
+  "seconds": 2.24,
+  "calls_per_iteration": 66.0,
+  "converged": true
+ },
+ {
+  "group": "FRA",
+  "matches": 1352,
+  "teams": 25,
+  "params": 52,
+  "iterations": 81,
+  "objective_calls": 4717,
+  "seconds": 1.85,
+  "calls_per_iteration": 58.2,
+  "converged": true
+ },
+ {
+  "group": "NED",
+  "matches": 1296,
+  "teams": 25,
+  "params": 52,
+  "iterations": 78,
+  "objective_calls": 4505,
+  "seconds": 1.72,
+  "calls_per_iteration": 57.8,
+  "converged": true
+ },
+ {
+  "group": "POR",
+  "matches": 1295,
+  "teams": 26,
+  "params": 54,
+  "iterations": 92,
+  "objective_calls": 5500,
+  "seconds": 2.12,
+  "calls_per_iteration": 59.8,
+  "converged": true
+ },
+ {
+  "group": "SCO",
+  "matches": 960,
+  "teams": 14,
+  "params": 30,
+  "iterations": 39,
+  "objective_calls": 1364,
+  "seconds": 0.47,
+  "calls_per_iteration": 35.0,
+  "converged": true
+ }
+]
