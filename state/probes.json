@@ -2761,9 +2761,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-10",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-12T12:31:25+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -2771,7 +2771,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "0 check failures on the parked Inception digest once _child notes are exempt",
+    "at": "2026-10-12T12:31:30+0100"
+   }
   },
   {
    "id": "P-0126",
