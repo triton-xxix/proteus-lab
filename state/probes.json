@@ -2834,22 +2834,28 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-12T12:32:27+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "broken",
+   "verdict_at": "2026-10-12T12:41:47+0100",
+   "note": "Measured nothing: the keyless 364-lookup script printed no line in about 15 min (shot: 1 of 91 wallets). Single RPC calls by hand answer in 0.05 s, so the stall is in the script or burst throttling, unmeasured. Found and fixed an hour-out window (mktime under BST, now timegm). Background task could not be stopped (TaskStop, ps denied). Re-run queued.",
+   "artefacts": [
+    "experiments/2026-10-12-P-0128"
+   ],
+   "minutes": 9,
+   "calls": 27,
+   "denied": [
+    "Bash `ps -o etime,command -p 1 -ax -ww -c`",
+    "TaskStop ``"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "1 of the 91 wallets touches a Grinder pick within the hour",
-    "at": "2026-10-12T12:32:32+0100"
+    "at": "2026-10-12T12:32:32+0100",
+    "hit": false
    }
   },
   {
