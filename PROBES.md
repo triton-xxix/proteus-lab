@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 81 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 82 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,13 +26,14 @@ Verdicts so far: 81 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
 | P-0129 | Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices move after commit and whether the desk's 'beat the close' bets are just the moves it never saw | desk | none |  | 0 | 30 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
-| P-0132 | P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep | desk | none |  | 1 (in progress) | 20 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 
-## Verdicts (114)
+## Verdicts (115)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-12 | P-0132 | P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep | **works** | Measured on 10 wallets x DOGEUS only: 0 touches in the window (shot: 1 of 91, not reached). 4 of 10 have one signature each at the same second, 21:17:41Z, six minutes before the window: looks like a dust airdrop to KOL wallets, unconfirmed. Stall cause: about 9 s per getSignaturesForAddress on the public RPC, so 364 lookups is about 55 min. Next: deepen (P-0134: full 91 x 4 as a background run, open the 21:17:41Z transaction). | `experiments/2026-10-12-P-0132` | 2 min, 14 calls, 1 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -u /Users/triton/PROTEUS/experiments/2026-10-12-P-` | | |
 | 2026-10-12 | P-0131 | Pitch injuries: does API-Football's injuries endpoint answer on the Free plan for this weekend's fixtures, and how many requests does a round cost against the 100 a day? | **works** | Measured: /injuries by date answers on the Free plan, 168 rows today and 290 tomorrow, 1 request per match day (100 to 95 over 5 calls); by league+season refused (2022 to 2024 only). Shot said blocked, no key: wrong, the key was already in pitch/apisports.py. Caveat: international break, rows not filtered to the nine leagues. Next: deepen (P-0133: add injuries to apisports fetch, count rows in the nine leagues on a match day). | `experiments/2026-10-12-P-0131` | 0 min, 8 calls, 0 denied |
 | 2026-10-12 | P-0128 | Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figure hold or trade tonight's Grinder picks within an hour of the snapshot (keyless Solana RPC)? | **broken** | Measured nothing: the keyless 364-lookup script printed no line in about 15 min (shot: 1 of 91 wallets). Single RPC calls by hand answer in 0.05 s, so the stall is in the script or burst throttling, unmeasured. Found and fixed an hour-out window (mktime under BST, now timegm). Background task could not be stopped (TaskStop, ps denied). Re-run queued. | `experiments/2026-10-12-P-0128` | 9 min, 27 calls, 2 denied |
 | | | | | denied: Bash `ps -o etime,command -p 1 -ax -ww -c`; TaskStop `` | | |

@@ -1,0 +1,67 @@
+{
+  "picks": [
+    {
+      "id": "G-0071",
+      "ts": "2026-10-11T22:28:10Z",
+      "symbol": "DOGEUS",
+      "mint": "CnvQ6v525Mx4FSNNYwXVaiH2wboEMVdjxPhUjkpqpump",
+      "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    }
+  ],
+  "window_utc": [
+    1791753817,
+    1791761017
+  ],
+  "wallets": 10,
+  "per_pick": {
+    "DOGEUS": {
+      "ever": 4,
+      "in_window": 0,
+      "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    }
+  },
+  "wallets_touching_in_window": 0,
+  "touches": [],
+  "ever": [
+    {
+      "symbol": "DOGEUS",
+      "name": "decu",
+      "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+      "ata": "CdEy3u4eE7oSJXcpXFQ24uTPwBt6vp9w9NYnX4MMYYb5",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "trunoest",
+      "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+      "ata": "9HZb3sEexfWAtFfk9HRGvNSzMJvaoCYnaagy7aWvH7NF",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "Coler",
+      "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+      "ata": "5xKcst1mJQJogYaQqvUELA7E2BLe7vHPRXC7HV55gAQM",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    },
+    {
+      "symbol": "DOGEUS",
+      "name": "theo",
+      "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+      "ata": "CkL8fyt6DZcoadCjsf8Jksk2SxpP6qhN5hV2bT2dE7Tv",
+      "sigs": 1,
+      "first": 1791753461,
+      "last": 1791753461
+    }
+  ],
+  "holding_now": [],
+  "rpc_calls": 13,
+  "rpc_errors": 1,
+  "selftest_usdc_ata": "FGETo8T8wMcN2wCjav8VK6eh3dLk63evNDPxzLSJra8B"
+}
