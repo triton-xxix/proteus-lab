@@ -324,8 +324,18 @@ def cmd_ingest(a):
         git(["commit", "-q", "-m", "nolan: %s check failed, %s" % (f["slug"], f["status"])])
         git(["push", "-q", "origin", "main"])
         return
+    ingest_passing(reg, f, p, day, warns)
+
+
+def ingest_passing(reg, f, p, day, warns):
+    """A digest that passed the check becomes a page: stills, themes, build, commit, publish."""
     d = json.load(open(p))
     child = d.pop("_child", {})
+    sys.path.insert(0, SITE)
+    import check as checker
+    marked = checker.normalise(d)
+    if marked:
+        warns = list(warns) + ["%d field(s) marked unverified at ingest" % marked]
     d["researched_on"] = day
     d["digest"] = p.replace(ROOT, "")
     kept, failed = fetch_stills(d)
@@ -371,6 +381,21 @@ def cmd_ingest(a):
             git(["add", "--", REG]); git(["commit", "-q", "-m", "nolan: %s live" % f["slug"]]); git(["push", "-q", "origin", "main"])
 
 
+def cmd_rescue(a):
+    """Ingest a kept digest for a requeued or parked film, now that the check is lenient where it should be."""
+    reg = load()
+    f = next((x for x in reg["films"] if x["slug"] == a.slug), None)
+    if not f:
+        print("no such film"); return
+    p = a.digest or (ROOT + f["last_digest"] if f.get("last_digest") else None)
+    if not p or not os.path.exists(p):
+        print("no kept digest for %s" % a.slug); return
+    ok, fails, warns = run_check(p)
+    if not ok:
+        print("still fails:"); [print("  " + x) for x in fails]; return
+    ingest_passing(reg, f, p, today(), warns)
+
+
 def cmd_build(a):
     ok, msg = build()
     print(("built" if ok else "BUILD FAILED") + ": " + msg)
@@ -386,6 +411,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("next").set_defaults(fn=cmd_next)
     sub.add_parser("ingest").set_defaults(fn=cmd_ingest)
+    r = sub.add_parser("rescue"); r.add_argument("slug"); r.add_argument("--digest"); r.set_defaults(fn=cmd_rescue)
     sub.add_parser("build").set_defaults(fn=cmd_build)
     sub.add_parser("status").set_defaults(fn=cmd_status)
     a = ap.parse_args()

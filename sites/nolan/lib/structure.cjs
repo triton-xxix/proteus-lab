@@ -28,10 +28,15 @@ function arrow(x, y, dir, colour) {
 }
 
 function diagram(sketch, opts) {
-  const o = Object.assign({ width: 760, labelWidth: 150 }, opts || {});
+  const o = Object.assign({ width: 760 }, opts || {});
   const threads = (sketch && sketch.threads || []).slice().sort((a, b) => (a.level || 0) - (b.level || 0));
   if (!threads.length) return '';
-  const left = o.labelWidth + 20, right = o.width - 120, top = 30, gap = 46;
+  const wrap = (text, n) => { const out = []; let line = ''; String(text || '').split(/\s+/).forEach(w => { if ((line + ' ' + w).trim().length > n && line) { out.push(line); line = w; } else line = (line + ' ' + w).trim(); }); if (line) out.push(line); return out.slice(0, 3); };
+  const labels = threads.map(t => wrap(t.label || t.id, 26));
+  const durs = threads.map(t => wrap(t.duration_label || '', 22));
+  const labelWidth = Math.min(300, Math.max(120, 7 * Math.max.apply(null, labels.flat().map(l => l.length))));
+  const durWidth = Math.min(220, Math.max(60, 6.2 * Math.max.apply(null, durs.flat().map(l => l.length).concat([0]))));
+  const left = labelWidth + 24, right = o.width - durWidth - 24, top = 30, gap = 52;
   const h = top + threads.length * gap + 30;
   const X = f => left + (right - left) * Math.max(0, Math.min(1, f));
   const Y = i => top + i * gap + 10;
@@ -44,11 +49,11 @@ function diagram(sketch, opts) {
     const y = Y(i);
     const x0 = X(t.span ? t.span[0] : 0), x1 = X(t.span ? t.span[1] : 1);
     const dash = t.direction === 'static' ? ' stroke-dasharray="3 5"' : '';
-    s += `<text x="${left - 14}" y="${y + 4}" class="structure__label" text-anchor="end" fill="${c}">${esc(t.label || t.id)}</text>`;
+    s += `<text x="${left - 14}" y="${y + 4 - (labels[i].length - 1) * 7}" class="structure__label" text-anchor="end" fill="${c}">${labels[i].map((l, k) => `<tspan x="${left - 14}" dy="${k ? 14 : 0}">${esc(l)}</tspan>`).join('')}</text>`;
     s += `<line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="${c}" stroke-width="2.2"${dash}/>`;
     s += ticks(x0, x1, y, t.rate, c);
     s += arrow(t.direction === 'backward' ? x0 : x1, y, t.direction, c);
-    if (t.duration_label) s += `<text x="${right + 10}" y="${y + 4}" class="structure__dur">${esc(t.duration_label)}</text>`;
+    if (durs[i].length) s += `<text x="${right + 12}" y="${y + 4 - (durs[i].length - 1) * 6}" class="structure__dur">${durs[i].map((l, k) => `<tspan x="${right + 12}" dy="${k ? 12 : 0}">${esc(l)}</tspan>`).join('')}</text>`;
   });
   (sketch.joins || []).forEach(j => {
     const a = idx[j.from], b = idx[j.to];
@@ -58,7 +63,7 @@ function diagram(sketch, opts) {
     if (j.kind === 'converge') s += `<path d="M ${x} ${ya} Q ${x + 26} ${(ya + yb) / 2} ${x} ${yb}" fill="none" stroke="#E8A23B" stroke-width="1.6"/>`;
     else if (j.kind === 'nest') s += `<path d="M ${x} ${ya + 8} L ${x} ${yb - 8}" stroke="#E8A23B" stroke-width="1.4" stroke-dasharray="2 4"/>`;
     else s += `<path d="M ${x - 6} ${Math.min(ya, yb) + 8} L ${x + 6} ${Math.max(ya, yb) - 8} M ${x + 6} ${Math.min(ya, yb) + 8} L ${x - 6} ${Math.max(ya, yb) - 8}" stroke="#E8A23B" stroke-width="1.6"/>`;
-    if (j.label) s += `<text x="${x + 10}" y="${(ya + yb) / 2 + 4}" class="structure__join">${esc(j.label)}</text>`;
+    if (j.label) { const jl = wrap(j.label, 22); const jx = Math.min(x + 10, right - 4); s += `<text x="${jx}" y="${(ya + yb) / 2 + 4 - (jl.length - 1) * 6}" class="structure__join" text-anchor="${x > right - 80 ? 'end' : 'start'}">${jl.map((l, k) => `<tspan x="${jx}" dy="${k ? 12 : 0}">${esc(l)}</tspan>`).join('')}</text>`; }
   });
   return s + '</svg>';
 }
