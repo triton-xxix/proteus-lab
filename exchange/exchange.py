@@ -164,6 +164,13 @@ def cmd_call(a):
     assert cs[contract_id].get("state_or_outcome") == "open", "contract is not open"
     m = get(f"/markets/{market_id}/").get("markets", [{}])[0]
     e = get(f"/events/{m.get('event_id')}/").get("events", [{}])[0]
+    # Weather markets settle on the city in the slug, not London: X-0009 to X-0013 were forecast for the wrong
+    # city (P-0117, F-0004). Refuse a weather call whose reason does not name the slug's city.
+    parts = (e.get("full_slug") or "").strip("/").split("/")
+    if "weather" in parts:
+        city = parts[parts.index("weather") + 1] if parts.index("weather") + 1 < len(parts) - 1 else ""
+        assert city, f"weather market with no city in the slug {e.get('full_slug')}: no call"
+        assert city.replace("-", " ").lower() in why.lower(), f"this market settles on {city}: forecast {city} and name it in the reason"
     cid = "X-%04d" % (len(rows) + 1)
     rows.append({"id": cid, "committed_at": now(), "event": e.get("name"), "event_start": e.get("start_datetime"),
                  "market_id": market_id, "market": m.get("name"), "contract_id": contract_id,
