@@ -200,7 +200,8 @@ def check_film(path):
         for k in ("url", "caption", "source"):
             if not im.get(k):
                 fails.append("images[%d].%s missing" % (i, k))
-    blob = json.dumps({k: v for k, v in d.items() if k != "images"})
+    # _child is the research child's own log, popped before ingest; a backdrop path there is not a stray image (P-0125)
+    blob = json.dumps({k: v for k, v in d.items() if k not in ("images", "_child")})
     if re.search(r"<img|\.jpe?g|\.png|\.webp|\.gif", blob, re.I):
         fails.append("image reference outside images[]")
     if "Luke" in blob:

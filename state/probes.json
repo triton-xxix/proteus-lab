@@ -1,5 +1,5 @@
 {
- "next_id": 135,
+ "next_id": 136,
  "items": [
   {
    "id": "P-0001",
@@ -2998,6 +2998,26 @@
    "status": "open",
    "attempts": 0,
    "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0135",
+   "title": "Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-12T12:46:19+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",

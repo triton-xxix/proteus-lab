@@ -101,6 +101,17 @@ for m in re.finditer(r'\\?"(wallet_address|wallet|address)\\?"\s*:\s*\\?"([1-9A-
     if pnl:
         wallets.append({"wallet": w, "pnl": float(pnl.group(2)), "name": name.group(2) if name else None})
 assert len(wallets) == 91, len(wallets)
+T0 = time.time()
+
+
+def log(*a):
+    print("[%5.1fs rpc %d err %d]" % (time.time() - T0, CALLS["n"], CALLS["errors"]), *a, flush=True)
+
+
+# P-0132: optional limits, `run.py <wallets> <picks>`, so a short pass can show where the first run stalled
+if len(sys.argv) > 1:
+    wallets = wallets[:int(sys.argv[1])]
+log("wallets", len(wallets))
 
 # picks: the latest ledger batch
 rows = [r for r in csv.reader(open(ROOT + "grinder/LEDGER.csv")) if r and r[0].startswith("G-")]
@@ -110,6 +121,9 @@ picks = [{"id": r[0], "ts": r[1], "symbol": r[2], "mint": r[3]} for r in rows if
 import calendar
 SNAP = calendar.timegm(time.strptime("2026-10-11T22:23:37Z", "%Y-%m-%dT%H:%M:%SZ"))
 lo, hi = SNAP - WIN, SNAP + WIN
+if len(sys.argv) > 2:
+    picks = picks[:int(sys.argv[2])]
+log("picks", [p["symbol"] for p in picks], "window", lo, hi)
 
 # token program of each mint
 infos = rpc("getMultipleAccounts", [[p["mint"] for p in picks], {"encoding": "base64", "dataSlice": {"offset": 0, "length": 0}}])["value"]
@@ -123,16 +137,21 @@ for p in picks:
     if not prog:
         per_pick[p["symbol"]] = "mint not found"
         continue
+    log(p["symbol"], "program", prog)
     atas = [(w, pda([b58d(w["wallet"]), b58d(prog), b58d(p["mint"])], ATA_PROGRAM)) for w in wallets]
+    log(p["symbol"], "atas derived", len(atas))
     exists = []
     for i in range(0, len(atas), 100):
         chunk = atas[i:i + 100]
         v = rpc("getMultipleAccounts", [[a for _, a in chunk], {"encoding": "base64", "dataSlice": {"offset": 0, "length": 0}}])["value"]
         exists += [x is not None for x in v]
     n_ever = n_win = 0
-    for (w, ata), ex in zip(atas, exists):
+    log(p["symbol"], "exists now", sum(exists))
+    for k, ((w, ata), ex) in enumerate(zip(atas, exists)):
         sigs = rpc("getSignaturesForAddress", [ata, {"limit": 100}])
-        time.sleep(0.12)
+        time.sleep(0.3)
+        if k % 10 == 9:
+            log(p["symbol"], "lookups", k + 1)
         if ex:
             holding.append({"symbol": p["symbol"], "name": w["name"], "wallet": w["wallet"]})
         if sigs:
