@@ -6,14 +6,25 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-225 judged over 16 harvest days, 151 kept, 50 testable, 48 queued as probes, 45 with a probe verdict.
+239 judged over 17 harvest days, 162 kept, 52 testable, 50 queued as probes, 46 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0238 | 2026-10-13 | github | [Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animat](https://github.com/Atoll92/agent-standup) | mechanism | tools-for-strangers | yes | P-0138 |
+| H-0237 | 2026-10-13 | hn | [Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p](https://github.com/SaarthurR/atticus-mac) | mechanism | tech | no: It needs macOS accessibility permissions and live claude -p  |  |
+| H-0236 | 2026-10-13 | vault | [UGC creator marketplace that sources creator applications for brands fast](https://sideshift.app/) | mechanism | tools-for-strangers | no: It needs a two-sided marketplace with real creators, which c |  |
+| H-0235 | 2026-10-13 | youtube | [Boosting SORA Token Value: The Power of Token Bonding Curve #XOR #VAL #PSWAP #economics #s](https://www.youtube.com/watch?v=PpjZ9GZsN20) | mechanism | mechanism-hunting | no: Verifying it means reading chain data for a different networ |  |
+| H-0234 | 2026-10-13 | arxiv | [OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended ](https://arxiv.org/abs/2610.13710) | mechanism | game-bots | no: It needs model answers from eight LLMs and a JAX environment |  |
+| H-0233 | 2026-10-13 | github | [iamumeransari/claude-show-your-work: Claude Code shows images and plays videos right in yo](https://github.com/iamumeransari/claude-show-your-work) | mechanism | tools-for-strangers | no: It needs the Ghostty terminal and a specific Claude Code ver |  |
+| H-0231 | 2026-10-13 | vault | [Tooling, leaderboards and data products built around a token launchpad]() | mechanism | desk:grinder | yes | P-0137 |
+| H-0229 | 2026-10-13 | arxiv | [BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation](https://arxiv.org/abs/2610.13862) | mechanism | game-bots | no: It needs a local model and a robot or simulator, and there i |  |
+| H-0228 | 2026-10-13 | github | [juliobsz/skills: An agent skill that builds award-caliber websites from one line](https://github.com/juliobsz/skills) | mechanism | tools-for-strangers | no: Running it needs a model session to execute the skill, and t |  |
+| H-0227 | 2026-10-13 | hn | [Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents](https://news.ycombinator.com/item?id=50059096) | mechanism | tech | no: It is a hosted service needing an account, and the claim is  |  |
+| H-0226 | 2026-10-13 | vault | [A small weekly prize or showcase as the community rung of the AI for Businesses or Bootcam](https://www.skool.com/aicreatorleague) | mechanism | tools-for-strangers | no: It needs a live community with members and a prize pool, whi |  |
 | H-0224 | 2026-10-11 | github | [liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具](https://github.com/liyupi/ai-promo-video-maker) | mechanism | tools-for-strangers | no: The full flow needs model-driven agent runs, logins for scre |  |
-| H-0223 | 2026-10-11 | vault | [Public on-chain leaderboards as the check on any trader's claimed record]() | mechanism | desk:grinder | yes | P-0127 |
+| H-0223 | 2026-10-11 | vault | [Public on-chain leaderboards as the check on any trader's claimed record]() | mechanism | desk:grinder | yes | P-0127 **works** |
 | H-0222 | 2026-10-11 | youtube | [Anthropic Engineers Just 10x'd Everyone's Claude Code](https://www.youtube.com/watch?v=oz2CwrPV2Rg) | mechanism | tech | no: Checking it means running a model with and without the rules |  |
 | H-0221 | 2026-10-11 | arxiv | [TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation](https://arxiv.org/abs/2610.11678) | mechanism | mechanism-hunting | no: Reproducing it needs repeated LLM agent runs, which are not  |  |
 | H-0219 | 2026-10-11 | vault | [Phone-gated lead magnet to free workshop to done-for-you app build agency](https://keza.studio/10-app-templates) | mechanism | tools-for-strangers | no: Measuring it needs real traffic and a live funnel, and submi |  |
@@ -165,6 +176,135 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0238 Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animated team call: who is working, 
+2026-10-13, github, https://github.com/Atoll92/agent-standup
+
+- **Mechanism:** It watches the local session files that Claude Code, Codex and Mistral Vibe already write, and parses them into per-agent state. Token counts are summed once per message from the recorded usage, with cache reads shown separately. Tiles flag a command running over a minute, an agent quiet for 3 minutes, and a count of failed tool calls.
+- **Claim:** Shows who is working, waiting or blocked across agent sessions at zero token cost, with a per-agent token counter.
+- **Testable:** yes. Does the tool's per-agent token total for one local Claude Code session match the same session total from deduplicated transcript records, within 5 percent? Queued as P-0138.
+- **Idea on its own:** sound. Session files hold the usage and tool-call data, so a read-only viewer is a straightforward parse.
+- **How it would be done:** Tail the session JSONL files, group records by agent id, and sum usage per message once, keeping the largest record per request id. Mark an agent stuck when a tool call has no result after a minute, and quiet after three minutes without output. Render it in a local web page. To test, run it against one saved session and compare totals with an independent sum.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agent-standup https://github.com/Atoll92/agent-standup (The tool itself, run with npx @double_geste/agent-standup.)
+- **Field Notes line:** A viewer that reads Claude Code session files for per-agent token counts and stuck-agent flags, costing no tokens itself.
+
+### H-0237 Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p
+2026-10-13, hn, https://github.com/SaarthurR/atticus-mac
+
+- **Mechanism:** A local router handles simple commands such as opening apps or playing a playlist without any model. Harder tasks are passed to claude -p on the user's existing plan. When a task succeeds the first time, its exact steps are logged and replayed next time without the model.
+- **Claim:** App launches take about 0.08 seconds, and a meeting-creation task falls from 30 seconds to 5 to 8 seconds on the second run.
+- **Testable:** no. It needs macOS accessibility permissions and live claude -p calls on a paid plan, so it is not keyless tonight. Needs: macOS permissions and a Claude plan.
+- **Idea on its own:** sound. Recording a successful trace and replaying it without the model is a well known way to cut latency and cost.
+- **How it would be done:** Route input through a rule-based matcher first and call the model only on a miss. When the model completes a task, store the tool-call sequence with its parameters. On a repeat, replay the sequence and fall back to the model if a step fails. Use claude -p so no API key is needed. A person would need to review stored traces for safety.
+- **Stack already covers:** Claude Code with skills and sub-agents, local transcription
+- **To fetch:** atticus-mac https://github.com/SaarthurR/atticus-mac (The source for the router and replay cache.)
+- **Field Notes line:** A Mac assistant caches each successful task as a replayable script, so the second run skips the model and drops from 30 seconds to under 8.
+
+### H-0236 UGC creator marketplace that sources creator applications for brands fast
+2026-10-13, vault, https://sideshift.app/. Vault verdict on the vendor exists (vault verdict: sideshift.app); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A marketplace takes a brand brief, publishes it to a pool of creators, and collects applications for the brand to approve. Speed comes from a standing pool of creators who are pinged on each new brief. The platform earns from the brand or a margin on creator payments.
+- **Claim:** Get 50 or more qualified creator applications for a brand in a day.
+- **Testable:** no. It needs a two-sided marketplace with real creators, which cannot be run in a sandbox. Needs: A creator pool and a brand to brief.
+- **Idea on its own:** needs-a-run. The model works for platforms with a creator pool, and nobody here has tested whether the volume holds for a small agency.
+- **How it would be done:** Write a brief template, post it where creators already gather, and use a form to collect applications with sample reel links. Score applicants against a checklist and shortlist. Paying and contracting creators needs a person. The creator pool is the hard part and no script builds it.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A standing pool of vetted creators.
+- **Field Notes line:** A UGC marketplace gets fast applicant volume only if it already owns a standing pool of creators.
+
+### H-0235 Boosting SORA Token Value: The Power of Token Bonding Curve #XOR #VAL #PSWAP #economics #shorts
+2026-10-13, youtube, https://www.youtube.com/watch?v=PpjZ9GZsN20
+
+- **Mechanism:** The SORA token bonding curve is a smart contract with a buy price function and a sell price function, both rising roughly linearly. Reserve assets such as ETH, DAI, VAL and PSWAP are deposited to mint new XOR at the buy price and redeemed at the sell price. The gap between the two lines is the protocol's margin.
+- **Claim:** A token bonding curve contract mints XOR against reserve assets and is said to boost token value.
+- **Testable:** no. Verifying it means reading chain data for a different network and the video gives no figures to check.
+- **Idea on its own:** needs-a-run. A reserve-backed curve with a buy-sell gap is coherent, but the value claim is not backed by any number in the clip.
+- **How it would be done:** Read the contract's buy and sell price functions from the chain explorer. Record reserve balances and supply over time. Compute the spread between the two lines and the implied backing per token. A person would need to check the contract source for admin controls.
+- **Field Notes line:** SORA uses two separate buy and sell price lines on a reserve-backed curve, unlike a launchpad where one curve prices both sides.
+
+### H-0234 OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended Environmental Dynamics
+2026-10-13, arxiv, https://arxiv.org/abs/2610.13710
+
+- **Mechanism:** Each episode samples one hidden configuration from tens of millions of options covering layout, crafting rules, payoffs and resource dynamics, then holds it fixed over five trials. Agents must infer the rules by acting and also adapt to other agents. Eight language models are scored in homogeneous and mixed teams.
+- **Claim:** Rule discovery often improves performance but does not reliably sustain cooperation, and every team exhausts the shared resource in OpenHarvest.
+- **Testable:** no. It needs model answers from eight LLMs and a JAX environment, and there is no local LLM tonight. Needs: LLM access and the benchmark code.
+- **Idea on its own:** needs-a-run. The latent-rule sampling design is sound, but the result depends on model choice and has not been replicated.
+- **How it would be done:** Define a parametrised environment generator with hidden rules, hold one sample fixed across repeated trials, and score agents on return and on shared-resource level. Run homogeneous and mixed teams of different models. Compare rule discovery against sustained cooperation. The same test shape can score any game bot that has to learn a hidden ruleset.
+- **To fetch:** JAX https://github.com/jax-ml/jax (The benchmark is built on JAX environments.)
+- **Field Notes line:** Language-model agents that find the hidden rules still drain the shared resource, so working out the game does not make them cooperate.
+
+### H-0233 iamumeransari/claude-show-your-work: Claude Code shows images and plays videos right in your terminal: screenshots, Play
+2026-10-13, github, https://github.com/iamumeransari/claude-show-your-work
+
+- **Mechanism:** A Claude Code mod draws its own panel inside the terminal and uses the Ghostty graphics protocol to display images. Videos are split into frames with ffmpeg, a few seconds prepared at a time, then drawn in sequence. The files go straight to the screen and not to the model, so showing them costs no tokens.
+- **Claim:** Claude Code shows images and plays videos in the terminal, with before and after recordings synced side by side.
+- **Testable:** no. It needs the Ghostty terminal and a specific Claude Code version, and a verdict is a visual check by a person. Needs: Ghostty terminal and Claude Code 2.1.287 or later.
+- **Idea on its own:** sound. Showing media outside the model context is a real token saver and the terminal image protocol is well established.
+- **How it would be done:** Write a plugin that registers a mod, exposes a show command taking a file path, and emits the Kitty or Ghostty image escape sequences. For video, run ffmpeg to extract frames in short batches and play them on a timer. Pair it with Playwright recordings for before and after bug fixes. The compare view needs frame sync logic between two streams.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **To fetch:** Ghostty https://ghostty.org (Terminal that supports the image protocol the plugin needs.); Playwright https://github.com/microsoft/playwright (Records the test runs that the plugin plays back.)
+- **Field Notes line:** A Claude Code mod that streams ffmpeg frames to Ghostty, so test recordings play in the chat at zero token cost.
+
+### H-0231 Tooling, leaderboards and data products built around a token launchpad
+2026-10-13, vault, 
+
+- **Mechanism:** Data products sit beside a launchpad rather than trading against retail: leaderboards of tracked wallets, launch scanners and analytics terminals built on public on-chain data. The launchpad can then buy the best of them, as the vault note says happened with Kolscan and Padre. The data comes from chain indexers and price APIs, and the product is ranking and filtering.
+- **Claim:** Tooling and leaderboards around the launchpad are the lane that is not extraction from traders.
+- **Testable:** yes. Of the last 100 pump.fun-launched Solana pools visible on GeckoTerminal, what share are still above a stated liquidity floor after 24 hours? Queued as P-0137.
+- **Idea on its own:** needs-a-run. Whether a leaderboard has value depends on how many ranked tokens survive long enough to matter, which a pull can measure.
+- **How it would be done:** Pull new Solana pools from GeckoTerminal for a day, store them, and pull again 24 hours later for the same addresses. Add the rugcheck flag for each. Rank by survival and liquidity to produce the leaderboard. Selling it would need an audience and a front-end; the data pull is scriptable with the existing readers.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), launchd long-running pollers
+- **Missing:** An audience that would pay for or use the leaderboard.
+- **Field Notes line:** The launchpad data-product lane is sold as the honest one; a survival table of fresh pools shows how thin the thing being ranked is.
+
+### H-0229 BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation
+2026-10-13, arxiv, https://arxiv.org/abs/2610.13862
+
+- **Mechanism:** The language model picks which predefined behaviour-tree skill to run, and each skill checks its own execution conditions locally. When a condition fails, the skill stops immediately and returns structured failure feedback, so the model can retry or report without a round trip. A 161-task benchmark runs in text for speed and in simulation on a subset to catch perception and motion failures.
+- **Claim:** A 9B model runs fully onboard a quadruped, and the design beats the best Act/ReAct baseline by about 10 and 5 points at 4B and 9B.
+- **Testable:** no. It needs a local model and a robot or simulator, and there is no local LLM on this Mac. Needs: A local LLM and Habitat simulator.
+- **Idea on its own:** sound. Local guards plus informative errors is a cheap, general way to make weak agents more reliable.
+- **How it would be done:** Wrap each action a bot can take in a function that checks its own preconditions and returns a typed error on failure. Let the model choose only among those actions and read the typed error to decide a retry. Build a text-only task set for fast comparison and a slower real-environment set for the subset. The same pattern would suit a game bot.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** py_trees https://github.com/splintered-reality/py_trees (Python behaviour-tree library.)
+- **Field Notes line:** Small models act better when tools police their own preconditions and hand back structured failure reasons, not when the model rechecks everything.
+
+### H-0228 juliobsz/skills: An agent skill that builds award-caliber websites from one line
+2026-10-13, github, https://github.com/juliobsz/skills
+
+- **Mechanism:** A single agent skill instructs the model to act as creative director, designer and developer, build an Astro site, then check it in a real browser. A Playwright loop takes screenshots that the model reads, plus an axe-core accessibility pass and an OG image step. The quality comes from the self-inspection loop, not from a special model.
+- **Claim:** One line such as make me a portfolio produces an award-caliber site already checked in a real browser.
+- **Testable:** no. Running it needs a model session to execute the skill, and the result is a taste judgement rather than a number. Needs: A model session to run the skill.
+- **Idea on its own:** sound. Letting a vision model inspect its own render and iterate is a proven way to lift front-end output.
+- **How it would be done:** Write a skill file that sets a design direction first, then builds the site in Astro. After each build, run Playwright at desktop, tablet and phone widths, feed the screenshots back to the model, and list defects to fix. Finish with axe-core for accessibility and an OG image render. A person is still needed to judge taste and write the real copy.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** skills CLI https://github.com/vercel-labs/skills (Installs agent skills from GitHub repos.); axe-core https://github.com/dequelabs/axe-core (Free accessibility checker used in the QA pass.)
+- **Field Notes line:** A website-building skill that screenshots its own output and fixes what it sees, the same loop as any visual QA agent.
+
+### H-0227 Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents
+2026-10-13, hn, https://news.ycombinator.com/item?id=50059096
+
+- **Mechanism:** Agent harnesses use CPU in short bursts at start-up and during tasks, and extra RAM only while a browser or computer-use task runs. The provider oversubscribes hosts by packing many sandboxes onto each machine and reclaiming memory when a task ends. Cost per sandbox is then driven by average rather than peak usage.
+- **Claim:** Sandboxes for agents at under 10% of typical provider cost, averaging 0.37 dollars a month per sandbox and 0.05 to 0.10 for free-plan users.
+- **Testable:** no. It is a hosted service needing an account, and the claim is about their fleet costs which cannot be checked from outside. Needs: An account on the service.
+- **Idea on its own:** sound. Overcommitting bursty workloads is a standard hosting trick and agent harnesses fit the pattern.
+- **How it would be done:** Run many small microVMs or containers per host with memory ballooning or cgroup limits, and snapshot idle sandboxes to disk so they use no RAM. Give each a burst CPU allowance and scale RAM up only when a browser process starts. Meter real usage per sandbox to confirm the average. A hired person would handle noisy-neighbour incidents and security isolation, which no script covers.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Firecracker https://github.com/firecracker-microvm/firecracker (Open source microVM manager commonly used for dense sandbox packing.)
+- **Missing:** A fleet of hosts and the isolation work to sell this.
+- **Field Notes line:** Agent sandboxes get cheap by selling average rather than peak CPU and RAM, since harnesses only spike in bursts.
+
+### H-0226 A small weekly prize or showcase as the community rung of the AI for Businesses or Bootcamp kit, if either ships
+2026-10-13, vault, https://www.skool.com/aicreatorleague
+
+- **Mechanism:** A paid community sets a weekly cash prize for the best posted piece of work. The prize pool is funded from a slice of subscription revenue, members post entries, and a vote or judge picks the winner. The prize gives members a reason to post every week, which fills the feed and keeps the lower-priced rung active.
+- **Claim:** A 9 dollar a month Skool community pays a weekly 750 dollar prize for posting.
+- **Testable:** no. It needs a live community with members and a prize pool, which cannot be run keyless in a sandbox. Needs: A community platform, members and a prize budget.
+- **Idea on its own:** needs-a-run. Prize rungs plausibly lift posting rates, but the break-even point depends on member count and nobody has measured it here.
+- **How it would be done:** Pick a weekly theme, open a submission thread, and set a fixed prize cap that scales with a percentage of that week's subscription revenue so it can never cost more than it earns. Collect entries in the platform's own feed, then have the host or a members' vote choose a winner on a fixed day. Announce the winner publicly with the winning work so it doubles as marketing. A person is needed to judge, pay out and moderate; no script covers trust in the judging.
+- **Missing:** A community with enough members for a prize to matter.
+- **Field Notes line:** A weekly cash prize for the best post is the cheap mechanism that keeps a low-priced community rung busy.
 
 ### H-0224 liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真
 2026-10-11, github, https://github.com/liyupi/ai-promo-video-maker. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
@@ -1874,7 +2014,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0223 | 2026-10-11 | Public on-chain leaderboards as the check on any trader's claimed record | open | sound | yes | P-0127 |
+| H-0236 | 2026-10-13 | UGC creator marketplace that sources creator applications for brands fast | open | needs-a-run | no |  |
+| H-0231 | 2026-10-13 | Tooling, leaderboards and data products built around a token launchpad | open | needs-a-run | yes | P-0137 |
+| H-0226 | 2026-10-13 | A small weekly prize or showcase as the community rung of the AI for Businesses or Bootcam | open | needs-a-run | no |  |
+| H-0223 | 2026-10-11 | Public on-chain leaderboards as the check on any trader's claimed record | open | sound | yes | P-0127 **works** |
 | H-0219 | 2026-10-11 | Phone-gated lead magnet to free workshop to done-for-you app build agency | open | sound | no |  |
 | H-0214 | 2026-10-11 | Extract the free classroom for the product-validation and repeat-purchase method, if Luke  | open | sound | no |  |
 | H-0212 | 2026-10-10 | Decomposing one classification into several narrow questions with weights fitted on a labe | open | needs-a-run | yes | P-0124 **blocked** |
@@ -1921,6 +2064,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0158 | 2026-10-13 | [agent-standup](https://github.com/Atoll92/agent-standup) | The tool itself, run with npx @double_geste/agent-standup. | H-0238 (Atoll92/agent-standup: Your Claude Code, Codex and) | shelf |
+| T-0157 | 2026-10-13 | [atticus-mac](https://github.com/SaarthurR/atticus-mac) | The source for the router and replay cache. | H-0237 (Show HN: Atticus – Hold-to-talk voice assistant fo) | shelf |
+| T-0156 | 2026-10-13 | [JAX](https://github.com/jax-ml/jax) | The benchmark is built on JAX environments. | H-0234 (OpenSocialJax: Evaluating Social Adaptation in Seq) | shelf |
+| T-0155 | 2026-10-13 | [Ghostty](https://ghostty.org) | Terminal that supports the image protocol the plugin needs. | H-0233 (iamumeransari/claude-show-your-work: Claude Code s) | shelf |
+| T-0154 | 2026-10-13 | [py_trees](https://github.com/splintered-reality/py_trees) | Python behaviour-tree library. | H-0229 (BT-Agent: Deploying Onboard Robot Agents with Beha) | shelf |
+| T-0153 | 2026-10-13 | [axe-core](https://github.com/dequelabs/axe-core) | Free accessibility checker used in the QA pass. | H-0228 (juliobsz/skills: An agent skill that builds award-) | shelf |
+| T-0152 | 2026-10-13 | [skills CLI](https://github.com/vercel-labs/skills) | Installs agent skills from GitHub repos. | H-0228 (juliobsz/skills: An agent skill that builds award-) | shelf |
+| T-0151 | 2026-10-13 | [Firecracker](https://github.com/firecracker-microvm/firecracker) | Open source microVM manager commonly used for dense sandbox packing. | H-0227 (Launch HN: Agent37 (YC F26) – Low-cost agent sandb) | shelf |
 | T-0150 | 2026-10-11 | [Remotion](https://www.remotion.dev) | The render engine the template uses, for comparison with HyperFrames. | H-0224 (liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名) | shelf |
 | T-0149 | 2026-10-11 | [ai-promo-video-maker](https://github.com/liyupi/ai-promo-video-maker) | The AGENTS.md workflow and helper scripts to borrow the checks from. | H-0224 (liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名) | shelf |
 | T-0148 | 2026-10-11 | [Solana Tracker](https://www.solanatracker.io) | Wallet PnL data and API with a free tier. | H-0223 (Public on-chain leaderboards as the check on any t) | shelf |
@@ -2076,6 +2227,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0239 | 2026-10-13 | youtube | [The M5 Ultra Mac Studio is INSANE!](https://www.youtube.com/watch?v=YK98Cc592C8) | A product showcase of a maxed-out machine running one local model with no method or reproducible numbers beyond memory u |
+| H-0232 | 2026-10-13 | hn | [Show HN: Opus 5.5 made a fully featured Figma clone in 3 hours / 8 prompts](https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch) | A claim that a model built a Figma clone in eight prompts from the vendor of the harness, with no mechanism and a commen |
+| H-0230 | 2026-10-13 | youtube | [How Pump.fun’s bonding curve actually works and why being early is basically the](https://www.youtube.com/watch?v=1YZAObOuSaU) | A short restating that price rises along a bonding curve, already judged and with nothing new beyond a lawsuit claim. |
 | H-0225 | 2026-10-11 | youtube | [How to Build Your First MCP Server (in Less Than 5 Minutes)](https://www.youtube.com/watch?v=Y4bpWRLdRoA) | Beginner MCP server tutorial with no new mechanism. |
 | H-0220 | 2026-10-11 | github | [LingCore/WinShun: Win顺：免费开源的 Windows 快速搜索启动器。双击 Ctrl，拼音秒搜文件、全文搜索 Word/Excel/PDF、](https://github.com/LingCore/WinShun) | Windows-only launcher; the MFT index and MCP search server do not run on this Mac. |
 | H-0218 | 2026-10-11 | youtube | [How the Top 1% Use Claude Code Differently](https://www.youtube.com/watch?v=J9NQTYUP6k0) | Generic Claude Code advice (brief, guardrails, definition of done); overlaps the other Claude Code video, which is kept. |

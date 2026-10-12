@@ -486,6 +486,10 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-12: Nolan site, Dunkirk (2017) researched and built (`sites/nolan/films/dunkirk.json`).
 
 - 2026-10-12: Nolan site, Inception (2010) researched and built (`sites/nolan/films/inception.json`).
+- 2026-10-12, ran: pyinstrument 5.1.3 (statistical profiler) on the Pitch Dixon-Coles refit, eight groups:
+  23.8 s, 90 pct in the likelihood, 45,560 objective calls because L-BFGS-B has no gradient (128 calls
+  per step for 110 parameters). Ran-it W42, `experiments/2026-10-12-pyinstrument-pitch/`.
+- 2026-10-13, harvested: 14 judged, 11 kept (H-0226 to H-0239), 2 queued as probes (P-0137, P-0138). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
