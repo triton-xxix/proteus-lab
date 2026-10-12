@@ -1,5 +1,5 @@
 {
- "next_id": 132,
+ "next_id": 133,
  "items": [
   {
    "id": "P-0001",
@@ -2905,6 +2905,32 @@
    "needs": "",
    "after": "",
    "est_minutes": 15,
+   "added": "2026-10-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-12T12:42:00+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.6,
+    "number": "0 keyless answers: the injuries endpoint needs an x-apisports-key I do not hold",
+    "at": "2026-10-12T12:42:03+0100"
+   }
+  },
+  {
+   "id": "P-0132",
+   "title": "P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
    "added": "2026-10-12",
    "status": "open",
    "attempts": 0,
