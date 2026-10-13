@@ -1,384 +1,423 @@
 # Harvest brief, 2026-10-13
 
-14 items shortlisted from 243 candidates (117 dropped as already seen, 13 carry a vault verdict on the vendor).
+14 items shortlisted from 254 candidates (129 dropped as already seen, 14 carry a vault verdict on the vendor).
 
-## 1. [vault] A small weekly prize or showcase as the community rung of the AI for Businesses or Bootcamp kit, if either ships
-key: vault:2026-10-12:a-small-weekly-prize-or-showcase-as-the-community-rung-of-th
-url: https://www.skool.com/aicreatorleague
-meta: {"vault_status": "open", "kind": "service", "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)", "date": "2026-10-12", "where": "TRITON-CORE/Research/links/2026-10-12-ai-creator-league-skool.md", "has_transcript": false}
+## 1. [vault] service x city landing pages
+key: vault:2026-10-05:service-x-city-landing-pages
+url: 
+meta: {"vault_status": "open", "kind": "paper", "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)", "date": "2026-10-05", "where": "TRITON-CORE/Education/Courses/SKOOL-YOUTUBE-TRIAGE.md", "has_transcript": false}
 query: open
 VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
 
 Vault status: open, meaning nobody on the vault side has run it to a verdict.
 
-The vault's note on this theme: Design note for WF-0322 and WF-0352
+The vault's note on this theme: one page per service and town with matching headline; Site Studio pattern, watch thin-content risk
 
-The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) A 9 dollar a month Skool community on AI realism, avatars, UGC and viral recreation with a weekly 750 dollar prize for posting, on the same lock-in template as THE BLUEPRINT under a different owner. The vault already holds a fuller version of the syllabus in the AI Video Bootcamp extraction and the framework built from it, so nothing to buy. The weekly prize mechanic is the one idea worth keeping, as a community-rung design for Luke's own kit ladder. Write-up: `TRITON-CORE/Research/links/2026-10-12-ai-creator-league-skool.md` Link: https://www.skool.com/aicreatorleague
+The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (paper) Videos are medium at best (3 medium, 2 low, no high); the value sits in the linked public repos and docs, not the talk. 188 of 222 lesson videos are outdated (n8n, Antigravity era).
 
-## 2. [hn] Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents
-key: hn:50059096
-url: https://news.ycombinator.com/item?id=50059096
-discussion: https://news.ycombinator.com/item?id=50059096
-meta: {"points": 77, "comments": 57, "created": "2026-10-12T16:46:34Z"}
+## 2. [hn] How to engineer an AI harness for game development
+key: hn:50072120
+url: https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code
+discussion: https://news.ycombinator.com/item?id=50072120
+meta: {"points": 106, "comments": 45, "created": "2026-10-13T14:14:23Z"}
 query: claude code
 
-Hey HN, I’m Vishnu from Agent37 ( https://agent37.com ). We build sandboxes for running AI agents at under 10% of the cost of most sandbox providers. Our customers spend an average of $0.37/month per sandbox. You can view a video walkthrough of the product here: https://youtu.be/DK5ISR2tbNo We started as one of those OpenClaw wrapper companies back in February (yup.. judge me). In time we added more and more harnesses. One of the goals I had at the time was to offer a free plan to users, so as to gain more market share. But it was too cost prohibitive to do it right away. Especially since we were bootstrapped and servers were running on my savings. Today we’re actually able to offer the free plan thanks to the optimizations we’ve made since. Over 90% of the new signups we have are just free plan users and they host their personal Hermes/Openclaw/Claude Code etc on our cloud. Our infrastructure cost for the free sandboxes averages around $0.05 to $0.10 per user per month. Here are some techniques that have worked for lowering cost: * When you look at agent harnesses, they have certain patterns in the way they consume CPU and RAM. They need CPU in bursts when they’re initializing or performing certain tasks, but beyond that, they’re often not peaking. They need more RAM for things like browser and computer-use tasks. Once the task is done, usage often comes back down. This is a key insight in lowering cost, so by efficiently managing the CPU/RAM utilization we could lower the c
-comment (bitlad): I had ran into another yc startup from the same batch doing the same thing recently. I think it was called maritime. YC batch are becoming more like hunger games. I know a few companies where this is just a feature like digitalocean it is just a feature.
-comment (invalidOrTaken): This is freaking great. Thank you for posting!
-comment (christoff12): I have yet to use sandboxes though have some experimentation planned for a new gig I'm starting in a week. How would you compare what you do to fly.io's Sprites (which is currently atop my To Try list)?
+comment (bob1029): > I stand by a lot of what I’ve said, but am in the process of shipping a project where I’ve also used none of this. I think the scale I’m targeting here is really larger projects. The author appears to be on track to learn an important lesson about LLMs and art. LLMs have completely solved the coding side of game development. But this was never the hard part. Not even close. The fixed randomness and determinism thing sounds great on paper (all of this does), but in reality this is an extremely confining way to build a video game. Ensuring you maintain determinism across many platforms is wher
+comment (roger23): I was able to get a decent FPS out of around 40k lines (excluding tooling). Tooling consisted mostly of level editing and asset conversion which I tried to keep out of the main code-base.
+comment (theptip): This matches what I came up with on a small project. The biggest ones being screenshots and separated simulation. Meta level, just push your agent to make things more legible, it’ll figure it out. One other observation, remember that your agent is infinitely patient. So prompts like “build an interactive design doc with videos of each game mechanic in the style of Factorio dev diaries” can make reviewing changes easier. The general idea, all the small QoL dev tools that you don’t have time for, you can just spawn a side agent to build; if they are orthogonal to your main thread you can just pr
 
-## 3. [github] juliobsz/skills: An agent skill that builds award-caliber websites from one line
-key: gh:juliobsz/skills
-url: https://github.com/juliobsz/skills
-meta: {"stars": 192, "created": "2026-10-12", "pushed": "2026-10-12", "language": "TypeScript", "topics": ["agent-skills", "astro", "awwwards", "claude-code", "claude-skills", "codex", "creative-coding", "frontend"]}
+## 3. [github] zhuyansen/new-term-radar: Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.
+key: gh:zhuyansen/new-term-radar
+url: https://github.com/zhuyansen/new-term-radar
+meta: {"stars": 856, "created": "2026-10-12", "pushed": "2026-10-13", "language": "Python", "topics": ["agent-skills", "ai", "aisa", "claude-code", "claude-skills", "google-trends", "keyword-research", "mcp"]}
 query: claude-code created:>{since} stars:>20
 
-# /awwwards
+# new-term-radar
 
-**An agent skill that builds award-caliber websites from one line.**
+[中文说明](README.zh-CN.md)
 
- 
-     
-     
-     
-     
-     
-     
- 
+A daily report of the names that are starting to surge in AI: new models, products, tools and repos, caught where they are said first, before they show up in keyword tools.
 
- 
-     
- 
+Built for people who make pages, posts or products around new terms: SEO for AI tool sites, newsletters, directories, anyone who wants to know about "Strata" or "Seedance" the day it appears and not two weeks later.
 
-[Demo](#demo) · [Install](#install) · [Usage](#usage) · [How it works](#how-it-works) · [Limits](#limits)
+## Why
 
- 
+A new name leaves a trail, in this order:
+
+1. A lab or a well-followed account says it on X; a model enters Hugging Face's trending list.
+2. One GitHub repo takes off on its own.
+3. Directories and competitors add pages for it; someone registers a domain for it and the site starts to rank.
+4. Your own site gets its first search impressions for it.
+5. Google Trends shows the curve, days or weeks later.
+
+Keyword tools read step 5. This radar reads steps 1 to 4 every day and uses step 5 only to check itself.
+
+One example it was built around: [Niko1221/Strata](https://github.com/Niko1221/Strata) was created on 2026-09-24 and had 7,700 stars nine days later. People were searching "niko strata" from 9/26, while no second repo carried the name and no keyword tool listed it. A single repo gaining 800 stars a day is the whole signal, and it is public.
+
+## What it reads
+
+| Signal | What it catches | Needs | Cost |
+|---|---|---|---|
+| ① X | Names the accounts in your list used for the first time in 60 days | AIsa key | $0.003 per account per run |
+| ① Hugging Face | Models new to the trending top 50; quantised copies grouped under the base name | nothing | free |
+| ② GitHub breakout | A repo under 14 days old averaging 200+ stars a day, or +400 since yesterday; adds the search variants people use ("niko strata") | nothing (a GitHub token raises the rate limit) | free |
+| ③ Sitemaps | Words that several new URLs on a site share and its older URLs rarely carried | the sitemaps you list | free |
+| ③ New sites | Domains registered and first indexed in the last 90 days that already rank for 20+ keywords | AIsa key | about $0.13 per query, weekly |
+| ④ Search Console | Queries your site got impressions for, for the first time (fresh data) | your own Google token | free |
+| ⑤ Review | Each lead checked in Google Trends 14 days later, against its own baseline; hit rate and days ahead per signal | AIsa key | $0.0012 per search variant |
+| Keyword table | For the day's new names: the generic search terms behind them (what people do with the new thing), each sized and given a decision | AIsa key; [GoAnyAPI](https://goanyapi.com) key optional | about $0.15 a day for 5 names, $0.22 with GoAnyAPI |
+| Name judge | A small model scores every term: the name of one specific thing, or a common word? | AIsa key | a fraction of a cent per run |
+
+Prices are what AIsa charged in October 2026. With the example config (35 X accounts read three times a day, the keyword table for 5 names a day) a month costs about $15: $10 for the X reads, $5 for the keyword table. Read fewer accounts, or read them once a day, and it drops in proportion.
+
+## The keyword table
+
+A name is half of what you need. "SynthID Detector" has a short life as a keyword and belongs to Google; the job it does, "ai image detector", is what people keep searching, and nobody owns it. Each day the radar reads the new names once more and writes one table with both:
 
 ```
-> make me a portfolio, my name is Julio
+| Keyword | Type | Behind | New? | Est. searches/day | Started rising | Peak vs gpts | Peak day | Last 7 da
+
+## 4. [arxiv] ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary
+key: arxiv:2610.13651
+url: https://arxiv.org/abs/2610.13651
+meta: {"published": "2026-10-09", "authors": ["Md Nazmul Islam Ananto", "Pierre Prevost-Avenel", "Colin Smith", "Kyungtae Kim"], "categories": ["cs.CR"]}
+query: all:"language model" AND all:agent AND all:tool
+
+Large language models (LLMs) are increasingly deployed as agents that interact with external software through tools, with an orchestration layer translating model outputs into structured tool invocations. This architecture creates an LLM-orchestrator-tool trust boundary where tool semantics may go unenforced and LLM-generated arguments may be incorrectly treated as trusted. We present ToFu, a tool-aware framework that automatically derives semantic security checks for LLM tools from their existing metadata and a CWE-guided sanitizer corpus. ToFu specializes these checks to individual tools and automatically generates fuzzing harnesses and semantic oracles using runtime introspection and outcome sanitization. We evaluated ToFu across 273 MCP servers containing 3405 tools and identified verified bugs corresponding to CWE weakness classes in 343 tools across 118 of the servers. Our findings show that real-world tools frequently fail to enforce their documented input semantics, making it unsafe to treat LLM-generated arguments as trusted.
+
+## 5. [youtube] What is xG? | By The Numbers
+key: yt:zSaeaFcm1SY
+url: https://www.youtube.com/watch?v=zSaeaFcm1SY
+meta: {"channel": "Tifo Football by The Athletic", "rank": 1, "duration_min": 4}
+query: expected goals model from scratch
+
+# What is xG? | By The Numbers
+# Tifo Football by The Athletic
+# https://www.youtube.com/watch?v=zSaeaFcm1SY
+
+[00:02] XG or expected goals is the current metric of choice for the football stats Community an has gained some wide attraction with its appearance on BBC's match of the day as well as plenty of comment from pundits and analysts who feel it's either ruined or solved football in fact XG has done neither it's a simple tool which can help our comprehension of the game if correctly understood what it cannot do on its own is predict results nor does it Rob football of any its charm expected goals put simply is a measure based in probability of whether a given shot will
+[00:37] result in a goal looking at a historical data set of lots of shots taken from lots of possessions and looking at which of those shots resulted in a goal expected goals shows how many goals an average team would be expected to score from those shots in other words expected goals shows how good a shooting chance was based on How likely similar chances were to result in a goal an XG of one means a guaranteed goal which doesn't exist while an XG of 0.7 means that if a shot were taken 10 times you'd expect
+[01:13] seven goals the closer to goal a shot the higher the XG The Wider the angle from goal the lower the XG headers get a lower XG than shots an XG map for swansea's recent 1-0 victory over Liverpool shows a series of dots the larger the dot the larger the XG or likelihood of that shot being a goal overall Liverpool shots yielded an expected goals of 2.31 versus Swansea 0.35 according to this model from Strat of course Swansea scored a goal
+[01:49] and Liverpool didn't but what this XG model suggests is that Liverpool had more and better chances if you'd watched the game you'd know this instinctively what XG does is clarify that with a number Strat BET's XG Model includes Defenders positioning other models like opter currently do not obviously a shot taken with Defenders between the ball and the goal has a lower XG XG does not account for who is striking the ball which is due to the reduced accuracy of
+[02:21] comparison that comes from introducing player identity however it does show that players such as Harry Kane Alexis Sanchez or Romo luk who consistently score more than their XG total would suggest are Elite Strikers they are able to score from certain positions more than the average player would which is what makes them great XG is therefore useful for assessing Strikers as good ones will consistently exceed their XG over time it's also good for seeing which teams produce lots of good chances or don't
+[02:54] and when combined with a team's conceded XG it can give a general indication of of quality it is not that good for predicting match results and anyway as Richard Whitt has written XG is best used in concert with tactical and video analysis and in trends of 5 to 10 games then it can be part of a set of tools that explains why teams are blowing hot or cold and stats are always best used in context anyway while XG is therefore helpful it's not going to solve football you
+[03:27] can't solve football it's too complicated and there's too much going on what XG does do well is show how good a team's chances were in a match and which strikers managed to score more goals than they should or fewer both are useful in increasing our understanding of football and that can only be a good thing [Music]
+
+## 6. [awesome] plur-ai/plur (new in awesome-claude-code)
+key: gh:plur-ai/plur
+url: https://github.com/plur-ai/plur
+meta: {"list": "awesome-claude-code", "stars": 303, "created": "2026-03-19", "language": "TypeScript", "description": "Shared memory for AI agents"}
+query: awesome-claude-code
+SEEN: the vault already judged this vendor (vault: tools and repos). Record the mechanism only if it is new; do not re-judge the vendor.
+
+# PLUR — Your agents share the same memory
+
+[](https://mcptoplist.com/server/io.github.plur-ai%2Fplur)
+
+[](https://www.npmjs.com/package/@plur-ai/core)
+[](https://github.com/plur-ai/plur/actions/workflows/ci.yml)
+[](LICENSE)
+[](https://github.com/plur-ai/plur/stargazers)
+[](https://glama.ai/mcp/servers/plur-ai/plur)
+
+Persistent, **open** memory for AI agents — local-first, zero-cost, shared across MCP tools (Claude Code, Codex, Cursor, OpenCode, Hermes, OpenClaw). Your agent's memory is plain-text **engrams** you can read, correct, and delete — not weights you can't.
+
+[plur.ai](https://plur.ai) · [Benchmark](https://plur.ai/benchmark.html) · [Engram Spec](https://plur.ai/spec.html) · [npm](https://www.npmjs.com/org/plur-ai) · [Comparisons](comparisons/)
+
+## Benchmarks
+
+PLUR is memory, not just retrieval — so we measure it on more than one axis, on the **full** corpus, and we publish the harness so you can reproduce every number.
+
+**Retrieval recall — full LongMemEval-S (N=500), R@5, fully local:**
+
+| Stack | R@5 | Notes |
+|-------|-----|-------|
+| BM25 only | 92.2% | no embedder — fully airgapped |
+| Hybrid (BGE-small, shipping default) | 95.6% | local embedder; one-time model download |
+| **+ BGE-reranker-v2-m3** | **97.6%** | local cross-encoder, max quality — opt-in, ≈5s p50 on CPU |
+
+Numbers come from [plur-ai/plur-bench](https://github.com/plur-ai/plur-bench),
+which is the source of truth for every benchmark figure PLUR publishes. Where
+an in-repo number and a plur-bench number disagree, plur-bench wins — it is the
+reproducible harness, and it is what CI regression-checks.
+
+Chunk granularity, canonical-doc scoring, corpus SHA256 pinned — reproduce it in [plur-ai/plur-bench](https://github.com/plur-ai/plur-bench). No cloud call is required for any of these numbers (an *optional* cloud embedder, openai-3-large, reaches 97.0% hybrid). A faster reranker — `ms-marco-minilm-l6` (p50≈245ms vs BGE's ≈5s on CPU) — trades a little recall for sub-second latency.
+
+**Run it yourself — and tell us what you get.** The harness is [plur-ai/plur-bench](https://github.com/plur-ai/plur-bench): CPU-runnable, no API key needed for the local path, corpus auto-fetched and SHA-verified. If you run it, we'd genuinely love to see your numbers — open an issue or discussion with your results, **especially if they don't match ours.** Independent reproduction is worth more than any number we publish, and we'll gladly credit you.
+
+**Retrieval ≠ answer accuracy — and we report them separately, never conflated.** End-to-end (LLM-judge) answer accuracy with the reranker stack is **60.5%**, versus **52.0%** for dumping full context into the prompt and **5.5%** with no memory at all.
+
+**Agent-task impact** — same task, with memory vs without: Haiku + PLUR outperforms Opus *without* it at roughly **10× less cost**; house rules **12–0** across Haiku, Sonnet, and Opus.
+
+**Operational** — local-first, zero-cost search, data-sovereign by design.
+
+*More in progress: LoCoMo, agentic task suites, cross-tool portability, decay / contradiction correctness.* [Full methodology →](https://plur.ai/benchmark.html)
+
+## The idea
+
+You correct your agent's coding style on Monday. On Tuesday, it makes the same mistake. You explain your architecture in Cursor. That night, Claude Code has no idea.
+
+PLUR fixes this. Install it once, and corrections, preferences, and conventions persist — across sessions, tools, and machines. Your memory is stored as plain YAML on your disk. No cloud, no API
+
+## 7. [vault] Flat monthly editing retainer for businesses already producing content
+key: vault:2026-09-27:flat-monthly-editing-retainer-for-businesses-already-produci
+url: 
+meta: {"vault_status": "open", "kind": "scheme", "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)", "date": "2026-09-27", "where": "TRITON-CORE/Research/links/2026-09-27-natejbiz-retainer-and-crayo-starter-kit.md", "has_transcript": false}
+query: open
+VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
+
+Vault status: open, meaning nobody on the vault side has run it to a verdict.
+
+The vault's note on this theme: Priced at two to six thousand dollars a month; deliverable with the existing stack and no purchase
+
+The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (scheme) Real operator and real tool: Musa Mustafa co-founded crayo.ai (3.2m users), company Media Metas / Crayo Inc, San Jose. But the 5 dollar price, down from 12.50, is a qualifier not a product: it puts a card on file and routes to a private one-to-one with an agency owner, which is where the real offer lands. What it actually sells is the commodity half, Content Rewards pay-per-view clipping, which is the volume game natejbiz explicitly warns against, plus a media-buying commission angle (20 percent of a 100k brand budget). The money worth having in this category is the flat monthly editing retainer, two to six thousand a month, which we can already deliver with no purchase. Income claims (3k first week, 3,801 in 13 days, 4,251 with zero experience) are unevidenced, and the 48-hour guarantee covers budget allocation, not earnings. Job: Sell post-production as a monthly retainer, priced, to businesses that already produce content (still open)
+
+## 8. [hn] Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data
+key: hn:50073471
+url: https://news.ycombinator.com/item?id=50073471
+discussion: https://news.ycombinator.com/item?id=50073471
+meta: {"points": 32, "comments": 16, "created": "2026-10-13T15:41:00Z"}
+query: claude code
+
+Hey Hacker News! I'm Eric, the founder of Consus. We route all AI requests to ITAR restricted and controlled unclassified information (CUI) compliant infrastructure. Consus itself satisfies ITAR restrictions, and we recently completed our FedRAMP equivalency audit against the 410 FedRAMP High controls. FedRAMP High is the U.S. government’s strictest security baseline for cloud services handling sensitive unclassified data. A breach of this data could cause severe or catastrophic harm. Achieving FedRAMP equivalency, or authorization, is required before processing CUI information. Demo: https://youtu.be/6MYxJe6P4oY Aerospace and defense is experiencing rapid growth. Unfortunately, most companies are struggling to use AI because of necessary data protections & compliance risk. These companies can move even faster if they could use the AI tools that most other industries take for granted. I spent most of my career prior to Consus in aerospace & defense. I launched national security payloads at SpaceX, and was an early employee at Castelion. I’ve watched first hand how compliance red-tape makes it difficult for companies to adopt new technologies and trust vendors that touch their sensitive data. For example, I worked with a satellite manufacturer that doesn’t allow any AI tools, even for non-sensitive work. Even as AI has become extremely useful over the past 9-12 months, I was surprised by how many aerospace & defense companies refused to touch it. They could see how it could be
+comment (runamuck): I love this. Will this guarantee that proprietary/ sensitive/ CUI data won't leak to model training or other parties?
+comment (projectescape): This is great, question though, since you support coding agents like Claude Code and Codex, they run MCP servers, plugins, web search/fetch and their own telemetry from the dev's machine. Do you give customers guidance or controls for that side, or is it out of scope for the gateway?
+comment (skinfaxi): How does ZDR work with requests that trip security measures in the model provider? Do the providers retain those requests for analysis or is that too guaranteed?
+
+## 9. [github] Arekejoker/qwen21-nsfw-pose-skill: Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw
+key: gh:arekejoker/qwen21-nsfw-pose-skill
+url: https://github.com/Arekejoker/qwen21-nsfw-pose-skill
+meta: {"stars": 773, "created": "2026-10-13", "pushed": "2026-10-13", "language": "Python", "topics": ["agent-skill", "comfyui", "image-generation", "openclaw", "pose-control", "qwen-image"]}
+query: claude-code created:>{since} stars:>20
+
+# qwen21-nsfw-pose
+
+[](https://github.com/Arekejoker/qwen21-nsfw-pose-skill/actions/workflows/validate.yml)
+
+**Qwen-Image 2.1 本地 NSFW / 姿势出图完整配方** — 作者级提示词结构 + NSFW LoRA + 136 个 3D 姿势库 + VNCCS 人偶精确姿势控制。
+
+基于 ComfyUI + `qwen_image_2.1_int8_convrot` 底模（与 Civitai 作者同款底模），复刻并验证过 Civitai 作者样图（2026-10-12）。
+
+- 适用：Claude Code / Codex / Cursor / OpenClaw（agent 技能）+ 人类手动使用
+- 内容：可跟跑的作者案例、强制配方、姿势大胆度阶梯（L0–L3）、完整依赖与安装指南
+
+---
+
+## 效果展示
+
+### 本配方输出：同一海边场景的三级对照（L0 → L1 → L2）
+
+| L0 · 全着装，无 LoRA（提示词即全部） | L1 · 湿身泳装 + LoRA@1.0 | L2 · 极低机位 + 湿身蹲姿 + LoRA@1.0 |
+| --- | --- | --- |
+|   |   |   |
+
+三张图同场景递进：L0 只有提示词；L1 加 LoRA + 显式皮肤/水珠描写；L2 再加低机位与开合姿态。**LoRA 负责质感，提示词负责信息密度，机位负责大胆度。**
+
+### NSFW 效果（⚠️ 以下图片包含裸露内容）
+
+**作者原图**（Civitai showcase，本配方复刻的目标）：
+
+| 作者 · 淋浴（tawsLoRa） | 作者 · 按摩（tawsLoRa） | 作者 · 自拍（TheseAlpacas） |
+| --- | --- | --- |
+|   |   |   |
+
+用 §「快速开始」的命令可复刻淋浴那张（复刻输出已验证与作者原图同场景同构图，见 `downloads/samples/phase5_meta.json` 与本文快速开始一节）。
+
+### 3D 人偶精确姿势（Route ④，136 姿势库）
+
+默认人物图 `references/src_standing.png`；姿势 = 骨骼旋转 JSON（MakeHuman 网格 + three.js 渲染），
+换姿势且保身份。姿势库来源：HuggingFace 4 个公开仓库（`Totemistyk/General_Poses`、
+`Totemistyk/Ballet_PoseStudio`、`MIUProject/VNCCS_PoseLibrary_Main`、
+`MIUProject/MySuperPoseRepo`）+ 55 个手工精选，共 **136 个**。
+
+---
+
+## 快速开始（作者案例跟跑）
+
+前置安装见 [install/setup.md](install/setup.md)。装好后一条命令复刻作者淋浴样图（~5 分钟）：
+
+```bash
+python3 scripts/qwen_pose_test.py \
+  --mode t2i --name author_case_shower \
+  --prompt "$(cat prompts/taws_v13_shower.txt)" \
+  --seed 80964 \
+  --steps 50 --cfg 2.5 --sampler er_sde --scheduler beta \
+  --width 1152 --height 1728 \
+  --lora "qwen2_1-femaledVaginus-nsfw-v1_3-fine_L22-31.safetensors" \
+  --lora-strength 1.0 \
+  --out outputs/author_case/shower.png
 ```
 
-That's the whole brief. The agent works as creative director, designer and creative developer
-in one, then hands back a site it has already checked in a real browser.
+对比对象：`downloads/samples/taws_v13_shower_author.jpg`。
+完整元数据（提示词/参数/seed/完整工作流）：`downloads/samples/phase5_meta.json`。
+
+## 三条路线
+
+| 需求 | 路线 | 命令 |
+| --- | --- | --- |
+| 新 NSFW/性感图（文字出图） | ① T2I + NSFW LoRA（必开） | `scripts/qwen_pose_test.py --mode t2i` |
+| 已有角色图换姿势（保脸/保服装） | ② Edit | `scripts/qwen_pose_test.py --mode edit` |
+| 指定 3D 姿势库里的精确姿势 | ④ VNCCS PoseStudio | `scripts/run_vnccs_ui.py --pose  ` |
+
+姿势怎么选（大胆度阶梯 L0–L3、用户要求→姿势族映射表）：见 `SKILL.md` §4，或
+`scripts/run_vnccs_ui.py --list-poses` 列出全部 136 个姿势。
+
+## 配方要点（摘要）
+
+- `er_sde` + `beta`，CFG 2.5，50 步，1152×1728 竖版
+- **NSFW LoRA 永远开**（默认 `femaledVaginus v1.3b` @ 1.0）
+- 提示词必须按作者结构写满 7 要素、300–1500 字符、含 LoRA 触发词
+- 弱化配方（无 LoRA/短提示词/减步数）前必须告知用户代价，不许默默减弱
+
+完整规则与证据：`SKILL.md`。
+
+## 目录结构
+
+```
+├── SKILL.md            # agent 技能（完整规则）
+├── install/setup.md    # 安装指南（模型/LoRA/节点/姿势库）
+├── scripts/            # 出图脚本、案例脚本、media_lock.py、validate_package.py
+├── workflows/          # qwen21_t2i.json / qwen21_edit.json / VNCCS_PoseStudio_QI2.1.json
+├── prompts/            # 3 篇作者原提示词 + 参数
+├── references/         # 效果展示图（L0/L1/L2 海边对照）+ 默认人物图
+├── downloads/samples/  # 作者原图 + 作者元数据 + 原始工作流 JSON
+└── pose_library/       # 55 个手工精选姿势（安装时拷入 ComfyUI）
+```
+
+## 说明
+
+- 底模与 LoRA 版权归原作者所有（HF `Comfy-Org/Qwen-Image-2.1`、Civitai 2986844 / 2958918 / 2988215）
+- NSFW 示例图仅供配方演示；仓库为公开仓库，介意图片的先收藏后阅读
+
+## 10. [arxiv] SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability
+key: arxiv:2610.13461
+url: https://arxiv.org/abs/2610.13461
+meta: {"published": "2026-10-09", "authors": ["Pablo Manrique", "Hai Xia", "Stefan Szeider"], "categories": ["cs.AI", "cs.LG", "cs.LO"]}
+query: all:"language model" AND all:agent AND all:tool
+
+AI systems are making rapid progress in mathematics, but this progress is hard to measure. Benchmarks of solved problems saturate, and in benchmarks of open problems each problem can be resolved for the first time only once. We present SqueezeBench, a benchmark that is resilient to saturation: a success raises the bar instead of removing the problem. Each problem fixes an integer function $f(n)$ whose values are known only for small $n$, and the benchmark keeps a lower and an upper record on it. A record is a computable Lean function with a machine-checked proof that it bounds $f$. A submission proposes a new function and proves that it bounds $f$, that it is no worse than the current record at any $n$, and that it is strictly better at some $n$. Once accepted, it becomes the record that the next submission has to beat. The system thus chooses the bound as well as its proof, and it may improve the record at a single $n$ or its growth rate. At every $n$, the gap between the two records shows how far the certified bounds are from determining $f(n)$. Every proof is checked by two independent Lean kernels, so no referee needs to check the mathematics. The checks also reject a function that computes $f$ by exhaustive search at small $n$, and a maintainer only reads the submitter's report and looks for such a search at larger $n$. We release ten problems from extremal combinatorics with twenty proved initial records and the admission tools. As a baseline, agents based on a frontier language model, with at most one hour per record, had 82 submissions accepted and improved every record, without going beyond the published literature. Agents based on two newer models then started from these records, had 60 more submissions accepted and improved 19 of the 20 records again. For eight of the ten problems, at least one record is still asymptotically behind the best published bound.
+
+## 11. [youtube] Build a Simple Expected Goals Model with Machine Learning and Python
+key: yt:GsfXAzfvJVM
+url: https://www.youtube.com/watch?v=GsfXAzfvJVM
+meta: {"channel": "McKay Johns", "rank": 3, "duration_min": 35}
+query: expected goals model from scratch
+
+# Build a Simple Expected Goals Model with Machine Learning and Python
+# McKay Johns
+# https://www.youtube.com/watch?v=GsfXAzfvJVM
+
+[00:00] expected goals have become the most popular metric and one of the most used metrics for analyzing football and a lot of people are using it whether that is at a club level in a public domain level or even in a match commentary broadcasting level as well and the reason why is because it helps us evaluate and understand the quality of chances of scoring opportunities and really when it comes to these models there is a big confusion and it seems to be kind of a big black box of how these models are trained how they're developed
+[00:33] and what these numbers actually mean I mean I've been watching a lot of football matches where maybe there's a shot that's worth like 05 XG and the match commentator is like oh that should be worth 0.5 instead of 05 right they're like I would have even scored that but they don't really understand what goes into calculating all of these different metrics and all these different values and so what we're going to do in this video is I'm going to walk you through how you can train in expect a goals model and just kind of some of the steps that are involved with training and expect a goals model using machine
+[01:06] learning and this model is going to be slightly different than say an opto or stats bomb model because they have so many more data points they have so much more data that they're working with where the data here is just some data that I've scraped from the web and that I've just been using my own personal analysis that I've been doing what we're going to do is we are just going to use the data we're going to do a little bit of machine learning just flow of exploring and cleaning the data and then by the end we'll show you how we can train and evaluate and kind of see some of our expected goal values that we have created so let's go ahead and jump into
+[01:40] it all right the first thing that we need to do to be able to actually run and create this expected goals model is we need to make sure that we have the packages and all of the data loaded in and so you can find the data just in the GitHub it'll be in a link in the video description and you can just go download that data it's going to be the same data in the GitHub that we use here in this video and so what we'll do is we will just start with a Jupiter notebook and we need to make sure we have a couple of packages installed to make this work and so if you don't have the packages installed you can install them via the the terminal or if you know how to
+[02:14] install them with your command line but the way that you can do it as well is you can just do uh exclamation mark pip install and then we need to have these packages installed we need to have pandas numpy matplot lib Seaborn ml soccer and then scikit-learn like that and so these are the packages that are going to allow us to clean the data to load the data to train our model and as well visualize our expected goal output so you can go ahead and run that if you want and it'll
+[02:47] install all of them if you don't have them installed I'm just going to put an comment right there so it doesn't actually run so let's load in the data we'll say import pandas as PD okay and then import numpy as NP and then we'll use pandas to load in our data frame we'll say DF equals pd. read CSV and then you just need to put the file path for wherever you downloaded the da
+[transcript continues in field-notes/staging/GsfXAzfvJVM.txt]
+
+## 12. [awesome] tronghieu/agent-skills (new in awesome-claude-code)
+key: gh:tronghieu/agent-skills
+url: https://github.com/tronghieu/agent-skills
+meta: {"list": "awesome-claude-code", "stars": 77, "created": "2026-03-26", "language": "Python", "description": "Method-driven agent skills for knowledge work: strategy, research, critical thinking, data analysis, docs, slides. Works with Claude Code, Codex, Cursor and any agentskills.io-compatible agent."}
+query: awesome-claude-code
+SEEN: the vault already judged this vendor (vault: tools and repos). Record the mechanism only if it is new; do not re-judge the vendor.
+
+# Agent Skills
+
+**Language:** [English](./README.md) | [Tiếng Việt](./README.vi.md) | [中文](./README.zh.md)
+
+[](./LICENSE)
+[](https://github.com/tronghieu/agent-skills)
+[](https://www.skills.sh/tronghieu/agent-skills)
+
+A collection of method-driven skills for people who use AI to make decisions, run projects, analyze evidence, create documents, and produce finished work. These skills are designed for active collaborators: you provide the real context and remain responsible for the decision; the agent supplies structure, analysis, and quality checks.
 
 ## Quick start
 
-```bash
-npx skills add wheresryan22/anatomy -g   # optional: interactive isometric explainer figures
-npx skills add juliobsz/skills -g
-```
-
-Open a **new** agent session, then type `/awwwards` or just ask for a website.
-
-## Demo
-
-https://github.com/user-attachments/assets/0ac28c25-9796-4bce-8fa6-4dcc6df55b8b
-
-## Install
-
-Install with the [skills CLI](https://github.com/vercel-labs/skills). It runs through `npx`, so
-there's nothing to install first, and it detects your agents (Claude Code, Codex, Cursor,
-Gemini CLI, OpenCode, Copilot and more) and lets you pick.
+Install the full collection:
 
 ```bash
-npx skills add juliobsz/skills -g
+npx skills add tronghieu/agent-skills
 ```
 
-| Command | Result |
+Or install as a Claude Code plugin:
+
+```text
+/plugin marketplace add tronghieu/agent-skills
+/plugin install agent-skills@tronghieu-skills
+```
+
+Then invoke a skill in your agent:
+
+```text
+/market-researcher Assess the market for this product idea in Vietnam.
+```
+
+Most agent tools use slash commands. Codex and ChatGPT use `$`; in those tools, replace the leading `/` with `$`.
+
+## Choose a skill
+
+| Your job | Start with |
 |---|---|
-| `npx skills add juliobsz/skills -g -a claude-code` | Claude Code only (use `codex`, `cursor`… for others) |
-| `npx skills add juliobsz/skills` | This project only, instead of your user folder |
-| `npx skills add juliobsz/skills -g --copy` | Copy the files instead of linking them |
-| `npx skills update -g` | Update to the latest version |
-| `npx skills remove awwwards -g` | Uninstall |
+| Generate or challenge ideas | [brainstorm-coach](./skills/brainstorm-coach/README.md), [critical-thinking](./skills/critical-thinking/README.md) |
+| Diagnose a recurring problem | [problem-solver](./skills/problem-solver/README.md) |
+| Understand customers or markets | [design-thinking](./skills/design-thinking/README.md), [market-researcher](./skills/market-researcher/README.md) |
+| Decide what to build and deliver it | [product-manager](./skills/product-manager/README.md), [project-manager](./skills/project-manager/README.md) |
+| Run software sprints and improve team process | [scrum-master](./skills/scrum-master/README.md) |
+| Analyze data or long documents | [data-scientist](./skills/data-scientist/README.md), [deep-reader](./skills/deep-reader/README.md) |
+| Make a high-stakes business decision | [strategy-board](./skills/strategy-board/README.md) |
+| Create documentation, prompts, slides, or fiction | [diataxis-writer](./skills/diataxis-writer/README.md), [system-prompt-creator](./skills/system-prompt-creator/README.md), [slidewright](./skills/slidewright/README.md), [fiction-studio](./skills/fiction-studio/README.md) |
+| Learn through guided questions | [socratic-questor](./skills/socratic-questor/README.md) |
+| Compare CVs with a job description | [cv-scorer](./skills/cv-scorer/README.md) |
+| Understand what an autonomous coding run did, or why it stalled | [bmad-run-inspector](./skills/bmad-run-inspector/README.md) |
+| Test a running app by hand and prove what you saw | [manual-tester](./skills/manual-tester/README.md) |
 
-The CLI collects anonymous usage data. Set `DISABLE_TELEMETRY=1` or `DO_NOT_TRACK=1` to turn
-it off.
+## Skills
 
- 
- Claude Code plugin 
+### bmad-run-inspector
 
-If you prefer Claude Code's plugin system, which updates the skill for you:
-
-```
-/plugin install awwwards --marketplace juliobsz/skills
-```
-
-On Claude Code before 2.1.275, run `/plugin marketplace add juliobsz/skills` and then
-`/plugin install awwwards@juliobsz`. The skill then runs as `/awwwards:awwwards`. Use the
-plugin or the skills CLI, not both, or the skill shows up twice.
- 
-
- 
- Manual install 
-
-Copy the `awwwards/` folder into your agent's skills directory, for example
-`~/.claude/skills/awwwards`. Any agent that reads `SKILL.md` skills can use it.
- 
-
-### Works with /anatomy
-
-[/anatomy](https://github.com/wheresryan22/anatomy) by wheresryan22 is an open-source skill
-for detailed, interactive isometric figures that explain an idea as a real physical object.
-Install it next to `/awwwards` and the site can get one "how it works" section built as a real
-explainer figure, styled to the site's palette and grid.
+For anyone running `bmad-loop`, an autonomous coding orchestrator, who needs an honest read on a run — watching one in progress or investigating one that finished, failed, or paused overnight. Only useful inside a project that already runs `bmad-loop`.
 
 ```bash
-npx skills add wheresryan22/anatomy -g
+npx skills add tronghieu/agent-skills --skill bmad-run-inspector
 ```
 
-It's optional. Without it, `/awwwards` builds that section another way, and tells you at the
-end when a figure would have helped.
+[Read the bmad-run-inspector guide](./skills/bmad-run-inspector/README.md)
 
-### Requirements
+### brainstorm-coach
 
-- **Node 22.20+** for the skills CLI. The helper scripts need Node 20+.
-- **Playwright** in the site's project for screenshots and the OG image, and **axe-core** for
-  the accessibility pass. The skill installs both as dev dependencies when it needs them, and
-  uses a Chromium you already have when it can.
-- **A model that can read images**, so the QA loop can look at its own screenshots.
-- **A Vercel, Netlify or Cloudflare account** only if you want it to deploy.
+For founders, product teams, marketers, creators, and anyone who needs to generate options before evaluating them.
 
- 
- Troubleshooting 
+```bash
+npx skills add tronghieu/agent-skills --skill brainstorm-coach
+```
 
-- **`/awwwards` isn't found.** Start a new session; agents read their skills folder at startup.
-  Then run `npx skills list -g` to see where it was installed.
-- **It shows up twice.** You installed it two ways (for example the skills CLI and
+[Read the brainstorm-coach guide](./skills/brainstorm-coach/README.md)
 
-## 4. [arxiv] BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation
-key: arxiv:2610.13862
-url: https://arxiv.org/abs/2610.13862
-meta: {"published": "2026-10-09", "authors": ["Fabio Hübel", "Adam Lilja", "Yue Yin", "Siming He"], "categories": ["cs.RO"]}
-query: all:"language model" AND all:agent AND all:tool
+### critical-thinking
 
-Deploying language-model agents onboard mobile robots requires task reasoning and responsive execution within limited compute and memory. We propose BT-Agent, an onboard architecture combining LLM-driven task decisions with predefined behavior-tree (BT) skills. These skills enforce execution conditions and return structured failure feedback. We demonstrate fully onboard operation with a 9B model on a quadruped across five task categories. Intervention tests show that local checks stop ongoing navigation without waiting for another model decision, while the agent remains active to retry or report constraints. To compare agent designs efficiently, we introduce a 161-task multi-fidelity benchmark, evaluated in text on all tasks and in Habitat on 39. Text supports 10.9$\times$ higher evaluation throughput, while simulation reveals how perception and motion failures change task outcomes. BT-Agent's largest success gains over the strongest Act/ReAct baseline occur at 4B and 9B: approximately 10 and 5 percentage points. Ablations identify structured tool calls and informative failure feedback as the most useful components.
+For decision-makers, analysts, and writers who need to inspect the claims, evidence, assumptions, and l
 
-## 5. [youtube] How Pump.fun’s bonding curve actually works and why being early is basically the whole game. #pump
-key: yt:1YZAObOuSaU
-url: https://www.youtube.com/watch?v=1YZAObOuSaU
-meta: {"channel": "Dayy Dream 5", "rank": 2, "duration_min": 0}
-query: solana bonding curve explained
-SEEN: the vault already judged this vendor (vault verdict: pump.fun). Record the mechanism only if it is new; do not re-judge the vendor.
-
-# How Pump.fun’s bonding curve actually works and why being early is basically the whole game. #pump
-# Dayy Dream 5
-# https://www.youtube.com/watch?v=1YZAObOuSaU
-
-[00:00] The bottom of pump from nobody in here. Here's the one thing about pump from that decide to that you are really happy to be with. Every time on year [music] runs on a building price goes up automatically as more people buy. Whoever buys first gets the cheapest. >> [music] >> Everyone that comes after pays more than the person before them. That's the whole model. The newest lawsuit against pump from actually claims insiders insider [music] bots getting during the first few seconds before regular people even see the coin, then sell into the people buying after. Whether that holds [music] up in court or not, the curve itself
-[00:32] already tells you. Who already got [music] in before me and what happens once they sell? Follow if you want more of these actual explaining breakdowns.
-
-## 6. [vault] Tooling, leaderboards and data products built around a token launchpad
-key: vault:2026-09-20:tooling-leaderboards-and-data-products-built-around-a-token-
+## 13. [vault] Per-post CPM tracked per account feeding back into what gets made next
+key: vault:2026-09-24:per-post-cpm-tracked-per-account-feeding-back-into-what-gets
 url: 
-meta: {"vault_status": "open", "kind": "service", "subject": "pump.fun", "date": "2026-09-20", "where": "TRITON-CORE/Research/links/2026-09-20-five-saved-items-gta6-pumpfun-potion-mev-calibriai.md (section 4)", "has_transcript": false}
+meta: {"vault_status": "open", "kind": "service", "subject": "Butter (hellobutter.io)", "date": "2026-09-24", "where": "TRITON-CORE/Research/links/2026-09-24-butter.md", "has_transcript": false}
 query: open
 VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
 
 Vault status: open, meaning nobody on the vault side has run it to a verdict.
 
-The vault's note on this theme: The only lane that is not extraction from traders; the launchpad acquires these firms, as with Kolscan and Padre
+The vault's note on this theme: The one idea the write-up says to steal
 
-The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) A real business (about $46m in fees over 30 days, roughly 90% of Solana launchpad activity) and a losing game for the people trading on it. Assessed as a business, not as an opportunity. Job: Let anyone launch a token and find real buyers without it being extraction from retail (still open)
+The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) No. Variant generation we already have in HyperFrames; the only delta is multi-account auto-posting, and Butter's own help page says it routes posts through GeeLark antidetect cloud phones, one spoofed device per account, described as indistinguishable from organic activity. That is detection evasion documented by the vendor, not an integration; it is on no platform partner list. X bans the behaviour verbatim, TikTok tightened on 24 Sep 2026, Instagram judges it at account level over 30 days from 30 Apr 2026, YouTube demonetised it as inauthentic content from Jul 2025. No founder, no legal entity, terms page 404s, zero independent reviews, and everything ranking for it is its own SEO farm. It also breaks our human-presses-send rule by design and would put the agency at risk, not just a side account. Steal only the per-post CPM-per-account tracking idea. Job: Turn one filmed asset into platform-native posts across several owned accounts without tripping the inauthentic-content rules (still open)
 
-## 7. [hn] Show HN: Opus 5.5 made a fully featured Figma clone in 3 hours / 8 prompts
-key: hn:50060311
-url: https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch
-discussion: https://news.ycombinator.com/item?id=50060311
-meta: {"points": 39, "comments": 41, "created": "2026-10-12T18:03:56Z"}
+## 14. [hn] Nearly all 19 car brands send driver data to third parties (Northeastern/CR)
+key: hn:50072909
+url: https://news.auravision.co/car-is-spying/
+discussion: https://news.ycombinator.com/item?id=50072909
+meta: {"points": 21, "comments": 20, "created": "2026-10-13T15:07:20Z"}
 query: car data
 
-I think a chasm has been crossed. Opus 5.5 few shotted a fully working Figma for me. In the past year I have been trying to benchmark vibe coded apps and see how good they get and this week it did it with very very little guidance from me. I basically just told it reach feature parity. Prior to this vibe coded apps would resemble the real software, this is not a resemblance it's the real thing. As a casual Figma user in the past, I can't really see a difference. And if there is one you have an LLM that can on the fly operate the app or use it. P.S. I did this is on Mana which is our startup making it easier for LLMs to do it (probably the code is half of what would have been and there are primitives it can use but ultimately it's a testament to how good models have gotten). I went on to make google meets, docs, telegram, linear, etc. All basically with single prompts. The biggest jump has been in the UX understanding of models and attention to detail.
-comment (kumama): i wonder whether these were in the training set for the models
-comment (anonymous908213): Nice advertisement. Truth doesn't matter, just poop out something that visually looks like the correct thing and use it to shill your harness.
-comment (drewbitt): My agent did it in one prompt: it git cloned https://github.com/open-pencil/open-pencil
-
-## 8. [github] iamumeransari/claude-show-your-work: Claude Code shows images and plays videos right in your terminal: screenshots, Playwright recordings, and synced before/after QA. Ghostty & kitty.
-key: gh:iamumeransari/claude-show-your-work
-url: https://github.com/iamumeransari/claude-show-your-work
-meta: {"stars": 151, "created": "2026-10-08", "pushed": "2026-10-12", "language": "TypeScript", "topics": ["ai-agents", "anthropic", "claude", "claude-code", "claude-code-mod", "claude-code-mods", "claude-code-plugin", "developer-tools"]}
-query: claude-code created:>{since} stars:>20
-
-claude-show-your-work 
-
- Claude Code can show you pictures and play videos in the terminal. 
-
- 
-     
-     
-     
-     
- 
-
-claude-show-your-work is a Claude Code plugin that displays images and plays videos in the chat. Claude uses it to show what it has made, such as a web page, a design, a chart or a video, and to play recordings of your app while it tests it.
-
-## Install
-
-Run these two commands in Claude Code:
-
-```
-/plugin marketplace add https://github.com/iamumeransari/claude-show-your-work.git
-/plugin install show-your-work@iamumeransari
-```
-
-The plugin requires macOS, Claude Code 2.1.287 or later, and the Ghostty terminal. Videos also require ffmpeg, which you can install with `brew install ffmpeg` or by asking Claude to install it.
-
-## Usage
-
-Claude shows visual work without being asked. You can also ask for it directly, for example:
-
-- "Give me four directions for the homepage hero and show them side by side."
-- "Build the sign-up form, test it, and show me the recording."
-- "Fix the billing toggle and show me before and after."
-
-### Design
-
- 
-   
-   
- 
-
-Claude can show several design concepts side by side, and you choose one by replying. It can also show a finished page at desktop, tablet and phone widths in a single image.
-
-### Testing
-
-   
-
-Claude can test a feature with Playwright, record the run, and play the recording in the chat. The changes it made are listed next to the video, and clicking a change jumps to that point. Each check is marked as passed or failed when the video reaches it.
-
-For a bug fix, Claude records the same steps on the old and new versions. The Compare view plays both recordings side by side and keeps them in sync, even when one loads more slowly, with the check results for each version.
-
-### Video
-
- 
-   
-   
- 
-
-Videos play in the chat with a list beside them, such as the sections of an ad. When Claude makes a new version, the earlier ones stay in the history so you can compare them.
-
-Charts, slides, motion graphics and any other image or video file work the same way.
-
-## Errors
-
-If a file can't be shown, a note appears in its place with the reason: the file is missing, it isn't an image, the video is damaged or has no picture, ffmpeg isn't installed, or the terminal can't display images. The note has a button that copies a prompt for Claude to fix the problem.
-
-## How it works
-
-Claude Code mods let a plugin draw its own interface inside Claude Code, and Ghostty can display images in the terminal. Claude tells the plugin which file to show, and the plugin passes it to the terminal.
-
-Videos are split into frames with ffmpeg. The plugin prepares a few seconds of frames at a time, so long videos use little memory or disk space.
-
-The image or video goes to your screen and not to Claude, so displaying it uses no tokens.
-
-## Terminals
-
-The plugin works in Ghostty. iTerm2, Terminal.app and the VS Code terminal can't display these images, and the plugin tells you when that happens.
-
-In tmux, add `set -g allow-passthrough on` to `~/.tmux.conf`. If the setting is off, the plugin shows you how to turn it on.
-
-## FAQ
-
-### Does it update itself?
-
-Yes. When Claude Code starts, the plugin checks GitHub for a new version once a day and installs it. Turn this off with `/show-your-work-settings updates off`.
-
-### Does it collect any data?
-
-It sends anonymous usage counts, such as which versions are in use and how often images and videos are shown. It never sends files, file names, paths, prompts or anything you write,
-
-## 9. [arxiv] OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended Environmental Dynamics
-key: arxiv:2610.13710
-url: https://arxiv.org/abs/2610.13710
-meta: {"published": "2026-10-09", "authors": ["Zihao Guo", "Meng Fang", "Joel Z. Leibo", "Yali Du"], "categories": ["cs.MA"]}
-query: all:"language model" AND all:agent AND all:tool
-
-Sequential social dilemma benchmarks capture diverse social interactions, but rarely test whether agents can infer hidden environmental rules through repeated interaction while adapting to other agents. We introduce \textbf{OpenSocialJax}, which extends Clean Up and Commons Harvest across an open-ended distribution of latent environment configurations, systematically varying spatial layouts and hidden rules governing tool crafting, payoffs, and resource dynamics. Each episode samples one configuration from tens of millions of possibilities and holds it fixed across five trials. We evaluate eight large language models, including three closed source models and five open source models. Our evaluation tests whether models can discover hidden rules and adapt to other agents in homogeneous and mixed teams. We find that rule discovery often improves performance but does not reliably sustain cooperation, as the cleaning burden becomes concentrated among fewer agents in OpenCleanup and every team eventually exhausts the shared resource in OpenHarvest. In our mixed arena, one cooperative agent was able to sustain the public good in OpenCleanup at a cost to its own return, but could not prevent resource depletion in OpenHarvest. Together, these results highlight the difficulty of adapting jointly to unfamiliar environmental dynamics and the changing behavior of other agents.
-
-## 10. [youtube] Boosting SORA Token Value: The Power of Token Bonding Curve #XOR #VAL #PSWAP #economics #shorts
-key: yt:PpjZ9GZsN20
-url: https://www.youtube.com/watch?v=PpjZ9GZsN20
-meta: {"channel": "Soranauts: SORA Blockchain & DeFi Education", "rank": 3, "duration_min": 0}
-query: solana bonding curve explained
-
-# Boosting SORA Token Value: The Power of Token Bonding Curve #XOR #VAL #PSWAP #economics #shorts
-# Soranauts: SORA Blockchain & DeFi Education
-# https://www.youtube.com/watch?v=PpjZ9GZsN20
-
-[00:00] the token bonding curve is a smart contract built into the sore Network that has two functions a buyprice function and a sell price function and these are just kind of uh linear lines that increase gradually as new Zord tokens are integrated into the economy example of the reserve assets that we have today are eth D Val and ppot so you can put these into the token bonding curve and get freshly minted zor
-
-## 11. [vault] UGC creator marketplace that sources creator applications for brands fast
-key: vault:2026-09-20:ugc-creator-marketplace-that-sources-creator-applications-fo
-url: https://sideshift.app/
-meta: {"vault_status": "open", "kind": "service", "subject": "sideshift.app", "date": "2026-09-20", "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)", "has_transcript": false}
-query: open
-VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
-
-Vault status: open, meaning nobody on the vault side has run it to a verdict.
-
-The vault's note on this theme: The marketplace model itself is untested here; this domain scores badly on reputation checkers, likely automated
-
-The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) A UGC creator marketplace, not the crypto swap service with the colliding name. Poor domain reputation scores. Nothing to try. Job: Get 50+ qualified creator applications for a brand in a day (still open) Write-up: `TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)` Link: https://sideshift.app/
-
-## 12. [hn] Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p
-key: hn:50049588
-url: https://github.com/SaarthurR/atticus-mac
-discussion: https://news.ycombinator.com/item?id=50049588
-meta: {"points": 48, "comments": 5, "created": "2026-10-12T00:15:12Z"}
-query: claude code
-
-Hi HN! I'm Saarth. I'm in 9th grade, and I built Atticus. Atticus is a fast and cheap Mac assistant that can do tasks for you. You hold down Control-Option-Space, speak or type your task, be it complex or a simple browser search, and Atticus will get on it. The interesting part is that simple tasks, like opening apps, playing a Spotify playlist, or web queries, don't touch AI, and instead are processed locally and typically finish in under a second. For example, prompting Atticus to open apps takes around 0.08 seconds, sometimes even finishing before you finish your sentence, sort of like Jev. Any tasks that are more complicated will be sent to Claude via claude -p, meaning you never need an API key and Atticus will run on your existing Claude Pro or Max plan. By using this approach, costs are also cut down immensely, with, on average, tasks costing a fraction of a cent. To achieve Atticus' speed, it remembers shortcuts from each task it completes. When it does a task right for the first time, it saves its steps and replays them the next time without AI. For example, a workflow of creating a new meeting took about 30 seconds the first time around. Atticus then logs the exact steps to memory and takes 5-8 seconds on the next pass. To add to this, Atticus also learns about you as you use it more and from what's on your computer, including your name, your apps, and things you want it to remember, personalizing its answers to you. To combat the safety concerns over giving an AI u
-comment (handfuloflight): This is great, can we get OpenCode?
-comment (imranshah10140): Will this work on the Windows as well or just for mac users. by the way really like it from what I can see it from the demo video. If it works as it shown and also I dont thinks so that it is for windows would love if you can clear this out.
-comment (FindlayH): This slaps, I burned some credits on a fork that works for windows https://github.com/FindlayHi/atticus-windows
-
-## 13. [github] Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animated team call: who is working, who waits on whom, who needs you. VS Code extension, terminal command, desktop app. Runs locally, zero tokens.
-key: gh:atoll92/agent-standup
-url: https://github.com/Atoll92/agent-standup
-meta: {"stars": 148, "created": "2026-10-10", "pushed": "2026-10-12", "language": "HTML", "topics": ["ai-agents", "claude", "claude-code", "codex", "developer-tools", "mistral", "mistral-vibe", "monitoring"]}
-query: claude-code created:>{since} stars:>20
-
-# Agent Standup
-
-**See who is waiting on whom, and who is blocked — across all your Claude Code, Codex and Mistral Vibe sessions — at zero token cost.** Agent Standup turns the session files Claude Code, Codex and Mistral Vibe already write into a live team call (and a board of every session): it only reads local files and never calls Claude unless you turn on French translation or the jokes.
-
-**Your Claude Code, Codex or Mistral Vibe session as a live team call.** The lead gives orders, sub-agents join the call, work at their desks, share their screen and report back — with voices, expressions and a view of the real work as it happens.
-
-**Runs as a VS Code extension, a terminal command, or a desktop app.** Try it in 30 seconds, no install and no editor (Node 18+): `npx @double_geste/agent-standup --open`, then ⚙ → Source → Demo.
-
-**Works with:** Claude Code · Codex · Mistral Vibe — in VS Code, Cursor, Windsurf, any terminal, or as a desktop app.
-
-**Just installed the extension?** Click the Agent Standup icon in the Activity Bar (or run **Agent Standup: Open live call**), then press **Join**. No session yet: press **▶ Watch the demo**.
-
-**→ Website & download: https://agent-standup.com**
-
-🌐 [Français](https://agent-standup.com/fr/) · [繁體中文](https://agent-standup.com/zh-tw/) · [简体中文](https://agent-standup.com/zh-cn/) · [Español](https://agent-standup.com/es/) · [Deutsch](https://agent-standup.com/de/) · [Dansk](https://agent-standup.com/da/) · [Português](https://agent-standup.com/pt-br/) · [日本語](https://agent-standup.com/ja/) · [한국어](https://agent-standup.com/ko/)
-
-_A fictional team fixing a slow login page — the built-in demo (⚙ → Source → Demo). [Watch the full 1-minute video](https://atoll92.github.io/agent-standup/media/demo.mp4)._
-
-[%20dev%20a%20coffee-ffdd00?logo=buymeacoffee&logoColor=black)](https://www.buymeacoffee.com/bored_dev_and_his_robots)
-
-> Unofficial community project, not affiliated with or endorsed by Anthropic, OpenAI or Mistral AI. "Claude" is a trademark of Anthropic; "Codex" is a trademark of OpenAI; "Mistral" is a trademark of Mistral AI.
-
-## What you get
-
-- **Token usage per agent** — a ⚡ counter in the header and on each tile shows how many tokens each agent used (input + output + cache writes; cache reads shown separately in the tooltip), counted once per message as recorded by Claude Code. Handy to see which sub-agent is the expensive one. It is read from the session files, not an estimate of your bill.
-- **Stuck or quiet agents** — in the live call, a tile pulses amber with ⏳ when a command has been running for over a minute, shows 💤 when a working agent has gone quiet for 3 minutes, and a red ✗ counter for failed tool calls. The browser tab title shows how many agents are working.
-- **Built-in demo** — no session yet? ⚙ → Source → **Demo** plays a fictional team (no data of yours).
-- **Live call** — follows your newest Claude Code session in real time. Each agent is a small character at its desk; the one who speaks gets the spotlight and keeps it until someone else talks. Agents that talk back-to-back talk over each other, like a real meeting.
-- **Real voices, lip-sync** — lines are spoken aloud; mouths follow the actual volume of the voice. For the best experience, switch to the very natural voices (see [Voices](#voices)).
-- **Live screen sharing with the real output** — when an agent works, its screen fills the stage (presenter's camera in the corner, "sharing" badge): a **terminal** with the command hist
-
-## 14. [youtube] The M5 Ultra Mac Studio is INSANE!
-key: yt:YK98Cc592C8
-url: https://www.youtube.com/watch?v=YK98Cc592C8
-meta: {"channel": "ZONEofTECH", "rank": 4, "duration_min": 1}
-query: local llm mac benchmark m5
-
-# The M5 Ultra Mac Studio is INSANE!
-# ZONEofTECH
-# https://www.youtube.com/watch?v=YK98Cc592C8
-
-[00:00] Apple just sent me the M5 Ultra Mac Studio and it's fully maxed out. It's got 36 CPU cores, 80 GPU cores, 256 GB of RAM and 4 TB of storage. So, let me run it through its paces and see what this thing can really do. So, I've downloaded Deep Seek V4 Flash which is a 156 GB local model. And you can see that it's using 208 GB of RAM out of 256 available. All right, let me give it something complex to do. Build me a Flappy Bird clone that I can
-[00:33] run in the browser. And now you can see it's already started building it and it's actually going to do this fully on device. In fact, if I turn off Wi-Fi, you can see that it still works. It's still building the app. And while it's building it, you can see that it's using 241 GB of RAM out of 256. And the CPU cores, all 36 of them as you can see, are barely even touched. The GPU, however, has been more utilized. Although, it still has way more room to spare. And it's almost done building it. You can see we've already got a preview here. And there we go. It took about 10 minutes and now we've got a working Flappy Bird clone. Obviously, we could
-[01:07] spend way more time on this and make it better and better, but the fact that we built this fully offline is pretty impressive. So, what would you guys use an M5 Ultra Mac Studio for?
+comment (plc): Disclosure: I'm the founder of AuraVision, which publishes The Signal (the linked site). Posting because the underlying Northeastern/Consumer Reports study is a significant privacy issue worth a technical discussion here. The site has a product point of view, but the reporting and primary sources stand on their own — happy to link the raw sources or dig into specifics in the thread.
+comment (VladVladikoff): If you buy a new car from the dealer presumably somewhere in the fine print it gives them permission to do this. But if you buy the same car used from an individual, how does the car company still retain the right to spy? It seems like this must be breaking some sort of privacy laws.
+comment (rubyn00bie): This feels like a marketing post. There’s no substance to it and no details, at least for me on mobile. I really don’t understand who or what this is supposed to be for… if Auravision is a product I can’t tell what it is or why it matters.

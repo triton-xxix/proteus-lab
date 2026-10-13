@@ -1,18 +1,19 @@
 {
  "date": "2026-10-13",
- "pulled_at": "2026-10-13T00:01:46+0100",
- "seconds": 79.3,
+ "pulled_at": "2026-10-13T23:28:13+0100",
+ "seconds": 49.8,
  "by_source": {
   "vault": 170,
-  "hn": 7,
-  "github": 33,
+  "hn": 12,
+  "github": 36,
   "arxiv": 21,
-  "youtube": 12
+  "youtube": 12,
+  "awesome": 3
  },
  "errors": [],
  "notes": [
   "vault: 170 threads taken of 191 in the feed (statuses open, intel, dead), one per parent link in turn",
-  "awesome awesome-claude-code: 0 new of 226",
+  "awesome awesome-claude-code: 3 new of 229",
   "awesome awesome-mcp-servers: 0 new of 4226",
   "awesome awesome-ai-agents: 0 new of 116"
  ],
@@ -4552,6 +4553,81 @@
    }
   },
   {
+   "key": "hn:50077619",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+   "url": "https://parsimony.lasu.dev/",
+   "hn_url": "https://news.ycombinator.com/item?id=50077619",
+   "meta": {
+    "points": 21,
+    "comments": 1,
+    "created": "2026-10-13T19:50:31Z"
+   },
+   "body": "Existing benchmarks measure solve rate and token output/cost, but don't punish excess code, which makes a codebase harder to work with in the long term. I wanted to measure this since it matters most for long-term projects. Method: it takes the patches that benchmarks already publish (DeepSWE, SWE-bench Verified, SWE-bench Live) and counts \"coding units\": syntax elements like statements, calls, names and literals. I didn't use lines of code, so cramming code isn't rewarded. Deleted code is subtracted, so it measures net units. GPT-6 and Claude 5.5 have no public patches yet, so I ran them myself on 3–10 tasks on my own subscriptions (shown as faded circles, not ranked). Any feedback or model contributions are welcome, especially public patch exports for newer models. GitHub: https://github.com/La5u/Parsimony Not affiliated with any of the benchmarks.",
+   "score": 3.4376160436382888
+  },
+  {
+   "key": "hn:50073471",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data",
+   "url": "https://news.ycombinator.com/item?id=50073471",
+   "hn_url": "https://news.ycombinator.com/item?id=50073471",
+   "meta": {
+    "points": 32,
+    "comments": 16,
+    "created": "2026-10-13T15:41:00Z"
+   },
+   "body": "Hey Hacker News! I'm Eric, the founder of Consus. We route all AI requests to ITAR restricted and controlled unclassified information (CUI) compliant infrastructure. Consus itself satisfies ITAR restrictions, and we recently completed our FedRAMP equivalency audit against the 410 FedRAMP High controls. FedRAMP High is the U.S. government’s strictest security baseline for cloud services handling sensitive unclassified data. A breach of this data could cause severe or catastrophic harm. Achieving FedRAMP equivalency, or authorization, is required before processing CUI information. Demo: https://youtu.be/6MYxJe6P4oY Aerospace and defense is experiencing rapid growth. Unfortunately, most companies are struggling to use AI because of necessary data protections & compliance risk. These companies can move even faster if they could use the AI tools that most other industries take for granted. I spent most of my career prior to Consus in aerospace & defense. I launched national security payloads at SpaceX, and was an early employee at Castelion. I’ve watched first hand how compliance red-tape makes it difficult for companies to adopt new technologies and trust vendors that touch their sensitive data. For example, I worked with a satellite manufacturer that doesn’t allow any AI tools, even for non-sensitive work. Even as AI has become extremely useful over the past 9-12 months, I was surprised by how many aerospace & defense companies refused to touch it. They could see how it could be",
+   "score": 4.913114233494588
+  },
+  {
+   "key": "hn:50072120",
+   "source": "hn",
+   "query": "claude code",
+   "title": "How to engineer an AI harness for game development",
+   "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+   "hn_url": "https://news.ycombinator.com/item?id=50072120",
+   "meta": {
+    "points": 106,
+    "comments": 45,
+    "created": "2026-10-13T14:14:23Z"
+   },
+   "body": "",
+   "score": 6.587149532706453
+  },
+  {
+   "key": "hn:50070010",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: Spotatui, a Spotify TUI/GUI without web API rate limits",
+   "url": "https://github.com/LargeModGames/spotatui",
+   "hn_url": "https://news.ycombinator.com/item?id=50070010",
+   "meta": {
+    "points": 36,
+    "comments": 3,
+    "created": "2026-10-13T11:32:00Z"
+   },
+   "body": "About 11 months ago i revived the amazing but unfortunately unmaintained spotify-tui. Since then I have been working on it almost non stop, finding a lot of problems on the way. One of the main issues I ran into were the Spotify web API rate limits. Third party clients like spotatui are dependent on a developer app made in the Spotify developer dashboard, which get rate limited a lot and Spotify has slowly been deprecating endpoints from it. The workaround for this used to be using a shared client id from ncspot but unfortunately that got rate limited too. This is when i started adding other playback sources, including YouTube, Navidrome/Subsonic, Internet radio with +- 30.000 stations, local files, Qobuz for lossless audio and Apple Music for macOS only where it controls the music app remotely. I fixed both the deprecated endpoints and the rate limits with one solution. It still uses librespot in the back, my spotatui specific fork, but gets all data from it instead of only playback. The data comes from the internal API of the official clients, that API gives metadata, playlists, the user library, devices, lyrics and audio analysis. For searching it uses Pathfinder, the internal GraphQL API. There are no web API rate limits because there is no shared app quota. Every user uses their own session as if it was the official client. The only potential problem is that Spotify does not document this API so any change on their side would break it. I intend to fix any of those issues",
+   "score": 4.304065093204169
+  },
+  {
+   "key": "hn:50062224",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Linus Torvalds used Claude Code to rewrite how Linux reads cached files",
+   "url": "https://startupfortune.com/linus-torvalds-used-claude-code-to-rewrite-how-linux-reads-cached-files/",
+   "hn_url": "https://news.ycombinator.com/item?id=50062224",
+   "meta": {
+    "points": 16,
+    "comments": 5,
+    "created": "2026-10-12T20:06:15Z"
+   },
+   "body": "",
+   "score": 3.7290930786702434
+  },
+  {
    "key": "hn:50059096",
    "source": "hn",
    "query": "claude code",
@@ -4559,12 +4635,12 @@
    "url": "https://news.ycombinator.com/item?id=50059096",
    "hn_url": "https://news.ycombinator.com/item?id=50059096",
    "meta": {
-    "points": 77,
-    "comments": 57,
+    "points": 157,
+    "comments": 108,
     "created": "2026-10-12T16:46:34Z"
    },
    "body": "Hey HN, I’m Vishnu from Agent37 ( https://agent37.com ). We build sandboxes for running AI agents at under 10% of the cost of most sandbox providers. Our customers spend an average of $0.37/month per sandbox. You can view a video walkthrough of the product here: https://youtu.be/DK5ISR2tbNo We started as one of those OpenClaw wrapper companies back in February (yup.. judge me). In time we added more and more harnesses. One of the goals I had at the time was to offer a free plan to users, so as to gain more market share. But it was too cost prohibitive to do it right away. Especially since we were bootstrapped and servers were running on my savings. Today we’re actually able to offer the free plan thanks to the optimizations we’ve made since. Over 90% of the new signups we have are just free plan users and they host their personal Hermes/Openclaw/Claude Code etc on our cloud. Our infrastructure cost for the free sandboxes averages around $0.05 to $0.10 per user per month. Here are some techniques that have worked for lowering cost: * When you look at agent harnesses, they have certain patterns in the way they consume CPU and RAM. They need CPU in bursts when they’re initializing or performing certain tasks, but beyond that, they’re often not peaking. They need more RAM for things like browser and computer-use tasks. Once the task is done, usage often comes back down. This is a key insight in lowering cost, so by efficiently managing the CPU/RAM utilization we could lower the c",
-   "score": 6.386930331962802
+   "score": 7.408268974141539
   },
   {
    "key": "hn:50050367",
@@ -4574,12 +4650,12 @@
    "url": "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code",
    "hn_url": "https://news.ycombinator.com/item?id=50050367",
    "meta": {
-    "points": 27,
-    "comments": 1,
+    "points": 32,
+    "comments": 2,
     "created": "2026-10-12T01:57:00Z"
    },
    "body": "",
-   "score": 3.6787781004551765
+   "score": 4.045813705800535
   },
   {
    "key": "hn:50049588",
@@ -4589,12 +4665,12 @@
    "url": "https://github.com/SaarthurR/atticus-mac",
    "hn_url": "https://news.ycombinator.com/item?id=50049588",
    "meta": {
-    "points": 48,
-    "comments": 5,
+    "points": 114,
+    "comments": 24,
     "created": "2026-10-12T00:15:12Z"
    },
    "body": "Hi HN! I'm Saarth. I'm in 9th grade, and I built Atticus. Atticus is a fast and cheap Mac assistant that can do tasks for you. You hold down Control-Option-Space, speak or type your task, be it complex or a simple browser search, and Atticus will get on it. The interesting part is that simple tasks, like opening apps, playing a Spotify playlist, or web queries, don't touch AI, and instead are processed locally and typically finish in under a second. For example, prompting Atticus to open apps takes around 0.08 seconds, sometimes even finishing before you finish your sentence, sort of like Jev. Any tasks that are more complicated will be sent to Claude via claude -p, meaning you never need an API key and Atticus will run on your existing Claude Pro or Max plan. By using this approach, costs are also cut down immensely, with, on average, tasks costing a fraction of a cent. To achieve Atticus' speed, it remembers shortcuts from each task it completes. When it does a task right for the first time, it saves its steps and replays them the next time without AI. For example, a workflow of creating a new meeting took about 30 seconds the first time around. Atticus then logs the exact steps to memory and takes 5-8 seconds on the next pass. To add to this, Atticus also learns about you as you use it more and from what's on your computer, including your name, your apps, and things you want it to remember, personalizing its answers to you. To combat the safety concerns over giving an AI u",
-   "score": 4.787700032724654
+   "score": 6.354370040797351
   },
   {
    "key": "hn:50038883",
@@ -4619,12 +4695,27 @@
    "url": "https://github.com/swimmingbrain/brainotes",
    "hn_url": "https://news.ycombinator.com/item?id=50049132",
    "meta": {
-    "points": 34,
-    "comments": 2,
+    "points": 35,
+    "comments": 3,
     "created": "2026-10-11T23:22:29Z"
    },
    "body": "In August, I posted here about TeXbrain, a LaTeX editor that runs completely in the browser, with no need for an account or server. (I didn't excpect it to get that much feedback, bug reports and help from here!) This is the same idea for the other half of my studies, the handwritten notes. I take them on a convertible laptop, and I've had a hard time with apps for that, taking notes from a device to another, exporting as PDF, needing an account for many of them, etc. So I've been working on the version of it that I always wanted. Open a tab, the slides of the lecture or multiple PDFs open next to the page or even become the page, write on them with my pen, and nothing ever leaves my browser. braiNOTES is a static website and has no backend. Strokes are perfect-freehand outlines which support pen pressure, the PDF files are rendered by pdf.js in a worker, and for storage it uses IndexedDB a moment after every change. No account, no analytics, and completely offline and local-first. You can export notebooks as .brainotes files, which in the background is a zip with one json per page + the PDFs and pictures you import. It keeps the original pages and puts the vectorized ink on top, this way the text stays selectable in the slides. You can try it here: https://notes.swimmingbrain.dev GitHub Repo: https://github.com/swimmingbrain/brainotes (MIT) In Study mode, the PDF opens on the side of the tab, you can read it simultaneously to the notes, snip a formula or diagrams directly in",
-   "score": 4.1046542058234685
+   "score": 4.276666119016055
+  },
+  {
+   "key": "hn:50072909",
+   "source": "hn",
+   "query": "car data",
+   "title": "Nearly all 19 car brands send driver data to third parties (Northeastern/CR)",
+   "url": "https://news.auravision.co/car-is-spying/",
+   "hn_url": "https://news.ycombinator.com/item?id=50072909",
+   "meta": {
+    "points": 21,
+    "comments": 20,
+    "created": "2026-10-13T15:07:20Z"
+   },
+   "body": "",
+   "score": 4.613303672220027
   },
   {
    "key": "hn:50060311",
@@ -4635,26 +4726,61 @@
    "hn_url": "https://news.ycombinator.com/item?id=50060311",
    "meta": {
     "points": 39,
-    "comments": 41,
+    "comments": 43,
     "created": "2026-10-12T18:03:56Z"
    },
    "body": "I think a chasm has been crossed. Opus 5.5 few shotted a fully working Figma for me. In the past year I have been trying to benchmark vibe coded apps and see how good they get and this week it did it with very very little guidance from me. I basically just told it reach feature parity. Prior to this vibe coded apps would resemble the real software, this is not a resemblance it's the real thing. As a casual Figma user in the past, I can't really see a difference. And if there is one you have an LLM that can on the fly operate the app or use it. P.S. I did this is on Mana which is our startup making it easier for LLMs to do it (probably the code is half of what would have been and there are primitives it can use but ultimately it's a testament to how good models have gotten). I went on to make google meets, docs, telegram, linear, etc. All basically with single prompts. The biggest jump has been in the UX understanding of models and attention to detail.",
-   "score": 5.557714263255621
+   "score": 5.5809742710730665
   },
   {
-   "key": "hn:50031269",
-   "source": "hn",
-   "query": "car data",
-   "title": "`123456' password used in Danish CPR data breach",
-   "url": "https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/",
-   "hn_url": "https://news.ycombinator.com/item?id=50031269",
+   "key": "gh:zhuyansen/new-term-radar",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "zhuyansen/new-term-radar: Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+   "url": "https://github.com/zhuyansen/new-term-radar",
+   "repo": "zhuyansen/new-term-radar",
    "meta": {
-    "points": 409,
-    "comments": 226,
-    "created": "2026-10-10T09:51:49Z"
+    "stars": 856,
+    "created": "2026-10-12",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": [
+     "agent-skills",
+     "ai",
+     "aisa",
+     "claude-code",
+     "claude-skills",
+     "google-trends",
+     "keyword-research",
+     "mcp"
+    ]
    },
    "body": "",
-   "score": 8.728632168439056
+   "score": 6.75343791859778
+  },
+  {
+   "key": "gh:arekejoker/qwen21-nsfw-pose-skill",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "Arekejoker/qwen21-nsfw-pose-skill: Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
+   "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
+   "repo": "Arekejoker/qwen21-nsfw-pose-skill",
+   "meta": {
+    "stars": 773,
+    "created": "2026-10-13",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": [
+     "agent-skill",
+     "comfyui",
+     "image-generation",
+     "openclaw",
+     "pose-control",
+     "qwen-image"
+    ]
+   },
+   "body": "",
+   "score": 6.651571873589727
   },
   {
    "key": "gh:franzenzenhofer/big-arrow-on-the-screen",
@@ -4664,7 +4790,7 @@
    "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
    "repo": "franzenzenhofer/big-arrow-on-the-screen",
    "meta": {
-    "stars": 669,
+    "stars": 705,
     "created": "2026-10-08",
     "pushed": "2026-10-12",
     "language": "Swift",
@@ -4679,7 +4805,7 @@
     ]
    },
    "body": "",
-   "score": 6.507277712385012
+   "score": 6.559615237493242
   },
   {
    "key": "gh:jakeschincariol/founder-skill",
@@ -4689,7 +4815,7 @@
    "url": "https://github.com/Jakeschincariol/founder-skill",
    "repo": "Jakeschincariol/founder-skill",
    "meta": {
-    "stars": 395,
+    "stars": 550,
     "created": "2026-10-07",
     "pushed": "2026-10-07",
     "language": "Python",
@@ -4703,59 +4829,46 @@
     ]
    },
    "body": "",
-   "score": 5.981414211254481
+   "score": 6.311734809152915
   },
   {
-   "key": "gh:aindeev/agent-chrome-relay",
+   "key": "gh:yeonwoosung/my-claude-code-mods",
    "source": "github",
    "query": "claude-code created:>{since} stars:>20",
-   "title": "aindeev/agent-chrome-relay: Let your AI agents use your Chrome, signed in as you, in background tabs. By Alexey Indeev · blog: read.aindeev.com · X: @AlexeyIndeev",
-   "url": "https://github.com/aindeev/agent-chrome-relay",
-   "repo": "aindeev/agent-chrome-relay",
+   "title": "YeonwooSung/my-claude-code-mods: Custom Claude Code Mods that I need",
+   "url": "https://github.com/YeonwooSung/my-claude-code-mods",
+   "repo": "YeonwooSung/my-claude-code-mods",
    "meta": {
-    "stars": 256,
-    "created": "2026-10-10",
-    "pushed": "2026-10-12",
-    "language": "Go",
-    "topics": [
-     "agent-browser",
-     "ai-agents",
-     "browser-automation",
-     "cdp",
-     "chrome-extension",
-     "claude",
-     "claude-code",
-     "codex"
-    ]
-   },
-   "body": "",
-   "score": 5.54907608489522
-  },
-  {
-   "key": "gh:liyupi/ai-promo-video-maker",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "liyupi/ai-promo-video-maker: 一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真实页面、按音乐节拍卡点剪辑、生成 AI 旁白并逐句转写校验、自动审图，最后交付一支 4K 商业宣传视频和可在线播放的网页版。App、网站、SaaS、开源项目、课程、AI 模型都能做，你只需确认需求、试听配乐。不用学剪辑软件，也不用花钱找外包。基于 Remotion + ElevenLabs，可直接克隆使用，也能一键安装为 Agent Skill。",
-   "url": "https://github.com/liyupi/ai-promo-video-maker",
-   "repo": "liyupi/ai-promo-video-maker",
-   "meta": {
-    "stars": 211,
+    "stars": 510,
     "created": "2026-10-09",
-    "pushed": "2026-10-09",
-    "language": "Python",
+    "pushed": "2026-10-13",
+    "language": "TypeScript",
     "topics": [
-     "agent-skills",
-     "ai-agent",
-     "ai-video",
-     "ai-video-generator",
-     "aigc",
      "claude-code",
-     "claude-skills",
-     "codex"
+     "claude-code-mod",
+     "claude-code-mods",
+     "claude-code-plugin"
     ]
    },
    "body": "",
-   "score": 5.356586274672012
+   "score": 6.236369590203704
+  },
+  {
+   "key": "gh:nateherkai/roast-room",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "nateherkai/roast-room: Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Martell, Gino Wickman, Buffett) debate your business decision in Claude Code, live around a table.",
+   "url": "https://github.com/nateherkai/roast-room",
+   "repo": "nateherkai/roast-room",
+   "meta": {
+    "stars": 342,
+    "created": "2026-10-10",
+    "pushed": "2026-10-13",
+    "language": "JavaScript",
+    "topics": []
+   },
+   "body": "",
+   "score": 5.8377304471659395
   },
   {
    "key": "gh:juliobsz/skills",
@@ -4765,9 +4878,9 @@
    "url": "https://github.com/juliobsz/skills",
    "repo": "juliobsz/skills",
    "meta": {
-    "stars": 192,
+    "stars": 302,
     "created": "2026-10-12",
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-13",
     "language": "TypeScript",
     "topics": [
      "agent-skills",
@@ -4781,82 +4894,33 @@
     ]
    },
    "body": "",
-   "score": 5.262690188904886
+   "score": 5.713732805509369
   },
   {
-   "key": "gh:transkatgirl/vibeclaude",
+   "key": "gh:aindeev/agent-chrome-relay",
    "source": "github",
    "query": "claude-code created:>{since} stars:>20",
-   "title": "transkatgirl/vibeclaude: A port of opencode-buttplugio to Claude Code written by Opus 5.5.",
-   "url": "https://github.com/transkatgirl/vibeclaude",
-   "repo": "transkatgirl/vibeclaude",
+   "title": "aindeev/agent-chrome-relay: Let your AI agents use your Chrome, signed in as you, in background tabs. By Alexey Indeev · blog: read.aindeev.com · X: @AlexeyIndeev",
+   "url": "https://github.com/aindeev/agent-chrome-relay",
+   "repo": "aindeev/agent-chrome-relay",
    "meta": {
-    "stars": 159,
-    "created": "2026-10-07",
-    "pushed": "2026-10-07",
-    "language": "JavaScript",
-    "topics": [
-     "buttplug",
-     "buttplug-io",
-     "buttplugio",
-     "claude-code",
-     "claude-code-plugin"
-    ]
-   },
-   "body": "",
-   "score": 5.075173815233827
-  },
-  {
-   "key": "gh:iamumeransari/claude-show-your-work",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "iamumeransari/claude-show-your-work: Claude Code shows images and plays videos right in your terminal: screenshots, Playwright recordings, and synced before/after QA. Ghostty & kitty.",
-   "url": "https://github.com/iamumeransari/claude-show-your-work",
-   "repo": "iamumeransari/claude-show-your-work",
-   "meta": {
-    "stars": 151,
-    "created": "2026-10-08",
-    "pushed": "2026-10-12",
-    "language": "TypeScript",
-    "topics": [
-     "ai-agents",
-     "anthropic",
-     "claude",
-     "claude-code",
-     "claude-code-mod",
-     "claude-code-mods",
-     "claude-code-plugin",
-     "developer-tools"
-    ]
-   },
-   "body": "",
-   "score": 5.0238805208462765
-  },
-  {
-   "key": "gh:atoll92/agent-standup",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animated team call: who is working, who waits on whom, who needs you. VS Code extension, terminal command, desktop app. Runs locally, zero tokens.",
-   "url": "https://github.com/Atoll92/agent-standup",
-   "repo": "Atoll92/agent-standup",
-   "meta": {
-    "stars": 148,
+    "stars": 271,
     "created": "2026-10-10",
-    "pushed": "2026-10-12",
-    "language": "HTML",
+    "pushed": "2026-10-13",
+    "language": "Go",
     "topics": [
+     "agent-browser",
      "ai-agents",
+     "browser-automation",
+     "cdp",
+     "chrome-extension",
      "claude",
      "claude-code",
-     "codex",
-     "developer-tools",
-     "mistral",
-     "mistral-vibe",
-     "monitoring"
+     "codex"
     ]
    },
    "body": "",
-   "score": 5.003946305945459
+   "score": 5.605802066295998
   },
   {
    "key": "gh:lingcore/winshun",
@@ -4866,9 +4930,9 @@
    "url": "https://github.com/LingCore/WinShun",
    "repo": "LingCore/WinShun",
    "meta": {
-    "stars": 222,
+    "stars": 276,
     "created": "2026-10-08",
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-13",
     "language": "C++",
     "topics": [
      "chinese",
@@ -4882,137 +4946,7 @@
     ]
    },
    "body": "",
-   "score": 5.407171771460119
-  },
-  {
-   "key": "gh:mcpdelta/mcpdelta",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "mcpdelta/mcpdelta: Delta MCP is a free app that sits between your AI apps and their MCP servers: one program per task instead of one tool call per step, up to 24.1× fewer tokens in our benchmarks. Every change is recorded and undoable. Coming soon for macOS, Windows and Linux. Shortcuts can run by themselves, on a schedule.",
-   "url": "https://github.com/mcpdelta/mcpdelta",
-   "repo": "mcpdelta/mcpdelta",
-   "meta": {
-    "stars": 81,
-    "created": "2026-10-07",
-    "pushed": "2026-10-10",
-    "language": null,
-    "topics": [
-     "ai-agents",
-     "ai-coding",
-     "automation",
-     "claude",
-     "claude-code",
-     "claude-desktop",
-     "cursor",
-     "desktop-app"
-    ]
-   },
-   "body": "",
-   "score": 4.406719247264253
-  },
-  {
-   "key": "gh:zhutoumeme/mcd-git",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "zhutoumeme/mcd-git: 用 git 命令点麦当劳：add 放购物车，rebase 凑最省，push 确认后才下单；card 生成 1024 吃麦贡献图（3D 汉堡天际线 / 年度小票）。基于麦当劳 MCP Server，附 --demo 无 Token 试玩和 Agent Skill。非官方参赛作品。",
-   "url": "https://github.com/zhutoumeme/mcd-git",
-   "repo": "zhutoumeme/mcd-git",
-   "meta": {
-    "stars": 74,
-    "created": "2026-10-10",
-    "pushed": "2026-10-12",
-    "language": "Python",
-    "topics": [
-     "agent-skills",
-     "claude-code",
-     "cli",
-     "git",
-     "mcdonalds",
-     "mcp",
-     "mcp-client",
-     "model-context-protocol"
-    ]
-   },
-   "body": "",
-   "score": 4.31748811353631
-  },
-  {
-   "key": "gh:chienbm98/foxprofile",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "chienbm98/foxprofile: Free, open-source anti-detect browser profile manager: per-profile fingerprint, cookies and proxy, Camoufox and Chrome engines, desktop app, REST API and MCP server for AI agents. Self-hosted alternative to GoLogin / MoreLogin.",
-   "url": "https://github.com/chienbm98/foxprofile",
-   "repo": "chienbm98/foxprofile",
-   "meta": {
-    "stars": 66,
-    "created": "2026-10-07",
-    "pushed": "2026-10-11",
-    "language": "Python",
-    "topics": [
-     "ai-agents",
-     "anti-detect-browser",
-     "antidetect",
-     "browser-automation",
-     "browser-profiles",
-     "camoufox",
-     "chromium",
-     "cookies"
-    ]
-   },
-   "body": "",
-   "score": 4.204692619390966
-  },
-  {
-   "key": "gh:sepehr071/awesome-iran-mcp",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "sepehr071/awesome-iran-mcp: 19 open-source MCP servers (308 tools) that give AI agents the Iranian web: Digikala, Snappfood, Jabama, MrBilit, Paziresh24, Taaghche and more. Prices in Toman.",
-   "url": "https://github.com/sepehr071/awesome-iran-mcp",
-   "repo": "sepehr071/awesome-iran-mcp",
-   "meta": {
-    "stars": 63,
-    "created": "2026-10-11",
-    "pushed": "2026-10-12",
-    "language": "Python",
-    "topics": [
-     "agent-skills",
-     "ai-agents",
-     "awesome",
-     "claude",
-     "claude-code-plugin",
-     "digikala",
-     "iran",
-     "llm"
-    ]
-   },
-   "body": "",
-   "score": 4.1588830833596715
-  },
-  {
-   "key": "gh:tedhaley/pensieve",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "TedHaley/pensieve: Local search across your files, git repos and AI agent sessions on your Mac. An MCP server gives your agents the best context, a 3D map shows your work by topic, and git blame shows who knows what.",
-   "url": "https://github.com/TedHaley/pensieve",
-   "repo": "TedHaley/pensieve",
-   "meta": {
-    "stars": 55,
-    "created": "2026-10-08",
-    "pushed": "2026-10-12",
-    "language": "Python",
-    "topics": [
-     "ai-agents",
-     "claude-code",
-     "code-search",
-     "developer-tools",
-     "git-blame",
-     "local-first",
-     "macos",
-     "mcp"
-    ]
-   },
-   "body": "",
-   "score": 4.02535169073515
+   "score": 5.6240175061873385
   },
   {
    "key": "gh:hujjun/mcd-saver-strategist",
@@ -5022,7 +4956,7 @@
    "url": "https://github.com/hujjun/mcd-saver-strategist",
    "repo": "hujjun/mcd-saver-strategist",
    "meta": {
-    "stars": 49,
+    "stars": 151,
     "created": "2026-10-09",
     "pushed": "2026-10-10",
     "language": "Python",
@@ -5038,7 +4972,163 @@
     ]
    },
    "body": "",
-   "score": 3.912023005428146
+   "score": 5.0238805208462765
+  },
+  {
+   "key": "gh:sepehr071/awesome-iran-mcp",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "sepehr071/awesome-iran-mcp: 19 open-source MCP servers (308 tools) that give AI agents the Iranian web: Digikala, Snappfood, Jabama, MrBilit, Paziresh24, Taaghche and more. Prices in Toman.",
+   "url": "https://github.com/sepehr071/awesome-iran-mcp",
+   "repo": "sepehr071/awesome-iran-mcp",
+   "meta": {
+    "stars": 89,
+    "created": "2026-10-11",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": [
+     "agent-skills",
+     "ai-agents",
+     "awesome",
+     "claude",
+     "claude-code-plugin",
+     "digikala",
+     "iran",
+     "llm"
+    ]
+   },
+   "body": "",
+   "score": 4.499809670330265
+  },
+  {
+   "key": "gh:mcpdelta/mcpdelta",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "mcpdelta/mcpdelta: Delta MCP is a free app that sits between your AI apps and their MCP servers (Notion, GitHub, your files…). It checks each task before it runs, applies it all or nothing, reads back what it changed and lets you undo it. Far fewer tokens on multi-step tasks, and shortcuts that run on a schedule. Coming soon for macOS, Windows and Linux.",
+   "url": "https://github.com/mcpdelta/mcpdelta",
+   "repo": "mcpdelta/mcpdelta",
+   "meta": {
+    "stars": 82,
+    "created": "2026-10-07",
+    "pushed": "2026-10-13",
+    "language": null,
+    "topics": [
+     "ai-agents",
+     "ai-coding",
+     "ai-safety",
+     "automation",
+     "claude",
+     "claude-code",
+     "claude-desktop",
+     "cursor"
+    ]
+   },
+   "body": "",
+   "score": 4.418840607796598
+  },
+  {
+   "key": "gh:zhutoumeme/mcd-git",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "zhutoumeme/mcd-git: 用 git 命令点麦当劳：add 放购物车，rebase 凑最省，push 确认后才下单；card 生成 1024 吃麦贡献图（3D 汉堡天际线 / 年度小票）。基于麦当劳 MCP Server，附 --demo 无 Token 试玩和 Agent Skill。非官方参赛作品。",
+   "url": "https://github.com/zhutoumeme/mcd-git",
+   "repo": "zhutoumeme/mcd-git",
+   "meta": {
+    "stars": 78,
+    "created": "2026-10-10",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": [
+     "agent-skills",
+     "claude-code",
+     "cli",
+     "git",
+     "mcdonalds",
+     "mcp",
+     "mcp-client",
+     "model-context-protocol"
+    ]
+   },
+   "body": "",
+   "score": 4.3694478524670215
+  },
+  {
+   "key": "gh:chienbm98/foxprofile",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "chienbm98/foxprofile: Free, open-source anti-detect browser profile manager: per-profile fingerprint, cookies and proxy, Camoufox and Chrome engines, desktop app, REST API and MCP server for AI agents. Self-hosted alternative to GoLogin / MoreLogin.",
+   "url": "https://github.com/chienbm98/foxprofile",
+   "repo": "chienbm98/foxprofile",
+   "meta": {
+    "stars": 72,
+    "created": "2026-10-07",
+    "pushed": "2026-10-11",
+    "language": "Python",
+    "topics": [
+     "ai-agents",
+     "anti-detect-browser",
+     "antidetect",
+     "browser-automation",
+     "browser-profiles",
+     "camoufox",
+     "chromium",
+     "cookies"
+    ]
+   },
+   "body": "",
+   "score": 4.290459441148391
+  },
+  {
+   "key": "gh:tedhaley/pensieve",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "TedHaley/pensieve: Local search across your files, git repos and AI agent sessions on your Mac. An MCP server gives your agents the best context, a 3D map shows your work by topic, and git blame shows who knows what.",
+   "url": "https://github.com/TedHaley/pensieve",
+   "repo": "TedHaley/pensieve",
+   "meta": {
+    "stars": 64,
+    "created": "2026-10-08",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": [
+     "ai-agents",
+     "claude-code",
+     "code-search",
+     "developer-tools",
+     "git-blame",
+     "local-first",
+     "macos",
+     "mcp"
+    ]
+   },
+   "body": "",
+   "score": 4.174387269895637
+  },
+  {
+   "key": "gh:vakandi/opencode-rust",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "vakandi/opencode-rust: The open source AI coding agent, in Rust. CLI, TUI and HTTP server for local AI agents — no Docker required.",
+   "url": "https://github.com/vakandi/opencode-rust",
+   "repo": "vakandi/opencode-rust",
+   "meta": {
+    "stars": 58,
+    "created": "2026-10-13",
+    "pushed": "2026-10-13",
+    "language": "Rust",
+    "topics": [
+     "ai",
+     "cli",
+     "coding-agent",
+     "llm",
+     "lsp",
+     "mcp",
+     "opencode",
+     "rust"
+    ]
+   },
+   "body": "",
+   "score": 4.07753744390572
   },
   {
    "key": "gh:machina-sports/sports-skills",
@@ -5048,14 +5138,14 @@
    "url": "https://github.com/machina-sports/sports-skills",
    "repo": "machina-sports/sports-skills",
    "meta": {
-    "stars": 246,
+    "stars": 247,
     "created": "2026-02-16",
     "pushed": "2026-10-12",
     "language": "Python",
     "topics": []
    },
    "body": "",
-   "score": 5.5093883366279774
+   "score": 5.5134287461649825
   },
   {
    "key": "gh:rinomakin21/w5-football-prediction",
@@ -5067,7 +5157,7 @@
    "meta": {
     "stars": 25,
     "created": "2023-06-13",
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-13",
     "language": "Python",
     "topics": [
      "ai-consensus",
@@ -5082,6 +5172,32 @@
    },
    "body": "",
    "score": 3.258096538021482
+  },
+  {
+   "key": "gh:cbratkovics/fantasy-football-ai",
+   "source": "github",
+   "query": "football prediction pushed:>{since} stars:>10",
+   "title": "cbratkovics/fantasy-football-ai: Weekly NFL fantasy point predictions from nflverse data. As-of feature engineering, temporally validated RF models vs a causal baseline, GMM draft tiers, artifact-backed evaluation with rolling-origin folds, autonomous weekly scoring via GitHub Actions. FastAPI on Hugging Face + Next.js on Vercel, $0/month.",
+   "url": "https://github.com/cbratkovics/fantasy-football-ai",
+   "repo": "cbratkovics/fantasy-football-ai",
+   "meta": {
+    "stars": 16,
+    "created": "2025-07-28",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": [
+     "fantasy-football",
+     "fastapi",
+     "mlops",
+     "nflverse",
+     "python",
+     "sports-analysis",
+     "sports-analytics",
+     "time-series"
+    ]
+   },
+   "body": "",
+   "score": 2.833213344056216
   },
   {
    "key": "gh:nirholas/pump-fun-sdk",
@@ -5108,6 +5224,23 @@
    },
    "body": "",
    "score": 4.90527477843843
+  },
+  {
+   "key": "gh:qunatorb/quantorb",
+   "source": "github",
+   "query": "solana pump.fun pushed:>{since} stars:>10",
+   "title": "QunatOrb/QuantOrb: Launch intelligence for pump.fun on Solana: a Telegram bot that screens every new launch, and a site that shows the model behind its decisions. In development - rolling releases.",
+   "url": "https://github.com/QunatOrb/QuantOrb",
+   "repo": "QunatOrb/QuantOrb",
+   "meta": {
+    "stars": 21,
+    "created": "2026-10-13",
+    "pushed": "2026-10-13",
+    "language": "Python",
+    "topics": []
+   },
+   "body": "",
+   "score": 3.091042453358316
   },
   {
    "key": "gh:nirholas/pump-fun-workers",
@@ -5195,9 +5328,9 @@
    "url": "https://github.com/lichess-bot-devs/lichess-bot",
    "repo": "lichess-bot-devs/lichess-bot",
    "meta": {
-    "stars": 1096,
+    "stars": 1098,
     "created": "2018-04-16",
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-13",
     "language": "Python",
     "topics": [
      "api",
@@ -5211,7 +5344,7 @@
     ]
    },
    "body": "",
-   "score": 7.00033446027523
+   "score": 7.002155954403621
   },
   {
    "key": "gh:torom/botli",
@@ -5223,7 +5356,7 @@
    "meta": {
     "stars": 71,
     "created": "2022-01-28",
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-13",
     "language": "Python",
     "topics": [
      "asyncio",
@@ -5247,7 +5380,7 @@
    "meta": {
     "stars": 18,
     "created": "2025-05-04",
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-13",
     "language": "C++",
     "topics": []
    },
@@ -5264,7 +5397,7 @@
    "meta": {
     "stars": 8,
     "created": "2023-07-12",
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-13",
     "language": "HTML",
     "topics": []
    },
@@ -5279,7 +5412,7 @@
    "url": "https://github.com/nexmoe/VidBee",
    "repo": "nexmoe/VidBee",
    "meta": {
-    "stars": 10832,
+    "stars": 10846,
     "created": "2025-10-22",
     "pushed": "2026-10-11",
     "language": "TypeScript",
@@ -5292,7 +5425,31 @@
     ]
    },
    "body": "",
-   "score": 9.290352309945568
+   "score": 9.291643823040218
+  },
+  {
+   "key": "gh:nateherkai/hyperframes-student-kit",
+   "source": "github",
+   "query": "youtube transcript pushed:>{since} stars:>20",
+   "title": "nateherkai/hyperframes-student-kit: Edit videos, reels, and YouTube Shorts with Codex or Claude Code. 14 skills, transcript-driven cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates.",
+   "url": "https://github.com/nateherkai/hyperframes-student-kit",
+   "repo": "nateherkai/hyperframes-student-kit",
+   "meta": {
+    "stars": 1394,
+    "created": "2026-04-18",
+    "pushed": "2026-10-13",
+    "language": "HTML",
+    "topics": [
+     "claude-code",
+     "codex",
+     "hyperframes",
+     "motion-graphics",
+     "reels",
+     "video-editing"
+    ]
+   },
+   "body": "",
+   "score": 7.240649694255466
   },
   {
    "key": "gh:jimmysadek/video-fetcher-to-markdown",
@@ -5302,7 +5459,7 @@
    "url": "https://github.com/JimmySadek/video-fetcher-to-markdown",
    "repo": "JimmySadek/video-fetcher-to-markdown",
    "meta": {
-    "stars": 485,
+    "stars": 487,
     "created": "2026-03-04",
     "pushed": "2026-10-07",
     "language": "Python",
@@ -5318,7 +5475,7 @@
     ]
    },
    "body": "",
-   "score": 6.186208623900494
+   "score": 6.1903154058531475
   },
   {
    "key": "gh:zlxlabs/videotranscriptapi",
@@ -5330,7 +5487,7 @@
    "meta": {
     "stars": 228,
     "created": "2025-04-27",
-    "pushed": "2026-10-12",
+    "pushed": "2026-10-13",
     "language": "Python",
     "topics": [
      "personal"
@@ -5347,7 +5504,7 @@
    "url": "https://github.com/artemchuikin/youtube-skills",
    "repo": "artemchuikin/youtube-skills",
    "meta": {
-    "stars": 124,
+    "stars": 144,
     "created": "2026-08-22",
     "pushed": "2026-10-12",
     "language": null,
@@ -5363,7 +5520,7 @@
     ]
    },
    "body": "",
-   "score": 4.8283137373023015
+   "score": 4.976733742420574
   },
   {
    "key": "gh:timmacy/youtubealchemy",
@@ -5399,9 +5556,9 @@
    "url": "https://github.com/guimatheus92/mcp-video-analyzer",
    "repo": "guimatheus92/mcp-video-analyzer",
    "meta": {
-    "stars": 92,
+    "stars": 93,
     "created": "2026-03-09",
-    "pushed": "2026-10-11",
+    "pushed": "2026-10-13",
     "language": "TypeScript",
     "topics": [
      "ai",
@@ -5415,7 +5572,7 @@
     ]
    },
    "body": "",
-   "score": 4.532599493153256
+   "score": 4.543294782270004
   },
   {
    "key": "gh:tubeagentkit/youtube-transcript-skills",
@@ -5442,32 +5599,6 @@
    },
    "body": "",
    "score": 4.394449154672439
-  },
-  {
-   "key": "gh:supadata-ai/mcp",
-   "source": "github",
-   "query": "youtube transcript pushed:>{since} stars:>20",
-   "title": "supadata-ai/mcp: Official Supadata MCP Server - Adds powerful video & web scraping to Cursor, Claude and any other LLM clients.",
-   "url": "https://github.com/supadata-ai/mcp",
-   "repo": "supadata-ai/mcp",
-   "meta": {
-    "stars": 63,
-    "created": "2025-07-13",
-    "pushed": "2026-10-12",
-    "language": "TypeScript",
-    "topics": [
-     "ai",
-     "crawler",
-     "llm",
-     "mcp",
-     "scrape",
-     "tiktok",
-     "transcript",
-     "whisper"
-    ]
-   },
-   "body": "",
-   "score": 4.1588830833596715
   },
   {
    "key": "arxiv:2610.13862",
@@ -5913,19 +6044,6 @@
    "score": 1.0
   },
   {
-   "key": "yt:JpJaEPGzPF4",
-   "source": "youtube",
-   "query": "local llm mac benchmark m5",
-   "title": "Finally, The CORRECT Way to Run Local AI on a Mac",
-   "url": "https://www.youtube.com/watch?v=JpJaEPGzPF4",
-   "meta": {
-    "channel": "Samuel Gregory",
-    "rank": 1
-   },
-   "body": "",
-   "score": 1.0
-  },
-  {
    "key": "yt:kLNDGwaHohE",
    "source": "youtube",
    "query": "local llm mac benchmark m5",
@@ -5933,6 +6051,19 @@
    "url": "https://www.youtube.com/watch?v=kLNDGwaHohE",
    "meta": {
     "channel": "JSyntax",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:JpJaEPGzPF4",
+   "source": "youtube",
+   "query": "local llm mac benchmark m5",
+   "title": "Finally, The CORRECT Way to Run Local AI on a Mac",
+   "url": "https://www.youtube.com/watch?v=JpJaEPGzPF4",
+   "meta": {
+    "channel": "Samuel Gregory",
     "rank": 2
    },
    "body": "",
@@ -5965,11 +6096,11 @@
    "score": 0.25
   },
   {
-   "key": "yt:tysc21gAT58",
+   "key": "yt:zSaeaFcm1SY",
    "source": "youtube",
    "query": "expected goals model from scratch",
-   "title": "What is Expected Goals?",
-   "url": "https://www.youtube.com/watch?v=tysc21gAT58",
+   "title": "What is xG? | By The Numbers",
+   "url": "https://www.youtube.com/watch?v=zSaeaFcm1SY",
    "meta": {
     "channel": "Tifo Football by The Athletic",
     "rank": 1
@@ -5978,39 +6109,39 @@
    "score": 1.0
   },
   {
-   "key": "yt:bZ2HeZe_NNw",
+   "key": "yt:bpjLyFyLlXs",
    "source": "youtube",
    "query": "expected goals model from scratch",
-   "title": "Why xG is Lying To Us 🤷‍♂️🤷‍♂️",
-   "url": "https://www.youtube.com/watch?v=bZ2HeZe_NNw",
+   "title": "How to Build An Expected Goals Model 1: Data and Model",
+   "url": "https://www.youtube.com/watch?v=bpjLyFyLlXs",
    "meta": {
-    "channel": "Off Topic Footy",
+    "channel": "Friends of Tracking",
     "rank": 2
    },
    "body": "",
    "score": 0.5
   },
   {
-   "key": "yt:h32AlMsWV-o",
+   "key": "yt:GsfXAzfvJVM",
    "source": "youtube",
    "query": "expected goals model from scratch",
-   "title": "How Expected Goals xG Actually Works",
-   "url": "https://www.youtube.com/watch?v=h32AlMsWV-o",
+   "title": "Build a Simple Expected Goals Model with Machine Learning and Python",
+   "url": "https://www.youtube.com/watch?v=GsfXAzfvJVM",
    "meta": {
-    "channel": "football for everyone",
+    "channel": "McKay Johns",
     "rank": 3
    },
    "body": "",
    "score": 0.3333333333333333
   },
   {
-   "key": "yt:4gv6K2Ykawg",
+   "key": "yt:T4xyXg_f28g",
    "source": "youtube",
    "query": "expected goals model from scratch",
-   "title": "How Expected Goals xG Actually Works",
-   "url": "https://www.youtube.com/watch?v=4gv6K2Ykawg",
+   "title": "Football statistics - Expected goals - xG - Why Jeff Stelling is wrong!",
+   "url": "https://www.youtube.com/watch?v=T4xyXg_f28g",
    "meta": {
-    "channel": "TheARCHV",
+    "channel": "Bet Angel",
     "rank": 4
    },
    "body": "",
@@ -6056,17 +6187,56 @@
    "score": 0.3333333333333333
   },
   {
-   "key": "yt:2K5r4RZ4azU",
+   "key": "yt:9UAA8iN49cQ",
    "source": "youtube",
    "query": "solana bonding curve explained",
-   "title": "What Happens When a Pump.fun Coin Bonds? #PumpFun #PumpSwap #Solana #Memecoins",
-   "url": "https://www.youtube.com/watch?v=2K5r4RZ4azU",
+   "title": "Bonding Curve Maximize Your Trading Profits #trading #crypto #bitcoin #sol #memecoin #investing",
+   "url": "https://www.youtube.com/watch?v=9UAA8iN49cQ",
    "meta": {
-    "channel": "Kaiven",
+    "channel": "Crypto News",
     "rank": 4
    },
    "body": "",
    "score": 0.25
+  },
+  {
+   "key": "gh:plur-ai/plur",
+   "source": "awesome",
+   "query": "awesome-claude-code",
+   "title": "plur-ai/plur (new in awesome-claude-code)",
+   "url": "https://github.com/plur-ai/plur",
+   "repo": "plur-ai/plur",
+   "meta": {
+    "list": "awesome-claude-code"
+   },
+   "body": "",
+   "score": 2.0
+  },
+  {
+   "key": "gh:tronghieu/agent-skills",
+   "source": "awesome",
+   "query": "awesome-claude-code",
+   "title": "tronghieu/agent-skills (new in awesome-claude-code)",
+   "url": "https://github.com/tronghieu/agent-skills",
+   "repo": "tronghieu/agent-skills",
+   "meta": {
+    "list": "awesome-claude-code"
+   },
+   "body": "",
+   "score": 2.0
+  },
+  {
+   "key": "gh:zekainie/universal-examprep-skill",
+   "source": "awesome",
+   "query": "awesome-claude-code",
+   "title": "zekainie/universal-examprep-skill (new in awesome-claude-code)",
+   "url": "https://github.com/zekainie/universal-examprep-skill",
+   "repo": "zekainie/universal-examprep-skill",
+   "meta": {
+    "list": "awesome-claude-code"
+   },
+   "body": "",
+   "score": 2.0
   }
  ]
 }

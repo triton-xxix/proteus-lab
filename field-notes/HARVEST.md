@@ -6,19 +6,28 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-239 judged over 17 harvest days, 162 kept, 52 testable, 50 queued as probes, 46 with a probe verdict.
+253 judged over 17 harvest days, 171 kept, 55 testable, 53 queued as probes, 48 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0238 | 2026-10-13 | github | [Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animat](https://github.com/Atoll92/agent-standup) | mechanism | tools-for-strangers | yes | P-0138 |
+| H-0252 | 2026-10-13 | vault | [Per-post CPM tracked per account feeding back into what gets made next]() | mechanism | tools-for-strangers | no: It needs live posts with real view counts from owned account |  |
+| H-0250 | 2026-10-13 | youtube | [Build a Simple Expected Goals Model with Machine Learning and Python](https://www.youtube.com/watch?v=GsfXAzfvJVM) | mechanism | desk:pitch | yes | P-0144 |
+| H-0249 | 2026-10-13 | arxiv | [SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability](https://arxiv.org/abs/2610.13461) | mechanism | mechanism-hunting | no: Needs a Lean toolchain and the released problem set, and a m |  |
+| H-0246 | 2026-10-13 | vault | [Flat monthly editing retainer for businesses already producing content]() | mechanism | tools-for-strangers | no: The verdict is whether a client pays, which needs outreach a |  |
+| H-0245 | 2026-10-13 | awesome | [plur-ai/plur (new in awesome-claude-code)](https://github.com/plur-ai/plur) | mechanism | tech | yes | P-0143 |
+| H-0243 | 2026-10-13 | arxiv | [ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary](https://arxiv.org/abs/2610.13651) | mechanism | tools-for-strangers | no: The framework code is not confirmed released and a faithful  |  |
+| H-0242 | 2026-10-13 | github | [zhuyansen/new-term-radar: Daily radar for new AI terms: names of new models, products and ](https://github.com/zhuyansen/new-term-radar) | mechanism | mechanism-hunting | yes | P-0142 |
+| H-0241 | 2026-10-13 | hn | [How to engineer an AI harness for game development](https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code) | mechanism | game-bots | no: It is a working practice across a whole project and cannot b |  |
+| H-0240 | 2026-10-13 | vault | [service x city landing pages]() | mechanism | tools-for-strangers | no: A verdict needs a live indexed site and weeks of ranking dat |  |
+| H-0238 | 2026-10-13 | github | [Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animat](https://github.com/Atoll92/agent-standup) | mechanism | tools-for-strangers | yes | P-0138 **works** |
 | H-0237 | 2026-10-13 | hn | [Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p](https://github.com/SaarthurR/atticus-mac) | mechanism | tech | no: It needs macOS accessibility permissions and live claude -p  |  |
 | H-0236 | 2026-10-13 | vault | [UGC creator marketplace that sources creator applications for brands fast](https://sideshift.app/) | mechanism | tools-for-strangers | no: It needs a two-sided marketplace with real creators, which c |  |
 | H-0235 | 2026-10-13 | youtube | [Boosting SORA Token Value: The Power of Token Bonding Curve #XOR #VAL #PSWAP #economics #s](https://www.youtube.com/watch?v=PpjZ9GZsN20) | mechanism | mechanism-hunting | no: Verifying it means reading chain data for a different networ |  |
 | H-0234 | 2026-10-13 | arxiv | [OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended ](https://arxiv.org/abs/2610.13710) | mechanism | game-bots | no: It needs model answers from eight LLMs and a JAX environment |  |
 | H-0233 | 2026-10-13 | github | [iamumeransari/claude-show-your-work: Claude Code shows images and plays videos right in yo](https://github.com/iamumeransari/claude-show-your-work) | mechanism | tools-for-strangers | no: It needs the Ghostty terminal and a specific Claude Code ver |  |
-| H-0231 | 2026-10-13 | vault | [Tooling, leaderboards and data products built around a token launchpad]() | mechanism | desk:grinder | yes | P-0137 |
+| H-0231 | 2026-10-13 | vault | [Tooling, leaderboards and data products built around a token launchpad]() | mechanism | desk:grinder | yes | P-0137 **blocked** |
 | H-0229 | 2026-10-13 | arxiv | [BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation](https://arxiv.org/abs/2610.13862) | mechanism | game-bots | no: It needs a local model and a robot or simulator, and there i |  |
 | H-0228 | 2026-10-13 | github | [juliobsz/skills: An agent skill that builds award-caliber websites from one line](https://github.com/juliobsz/skills) | mechanism | tools-for-strangers | no: Running it needs a model session to execute the skill, and t |  |
 | H-0227 | 2026-10-13 | hn | [Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents](https://news.ycombinator.com/item?id=50059096) | mechanism | tech | no: It is a hosted service needing an account, and the claim is  |  |
@@ -176,6 +185,115 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0252 Per-post CPM tracked per account feeding back into what gets made next
+2026-10-13, vault, 
+
+- **Mechanism:** Each published post is logged against its account with its views, then cost per thousand views is computed by dividing production cost by views over a fixed window. Accounts and formats are ranked on that figure, and the ranking decides which hooks, topics and formats get made next. Data comes from each platform's own analytics for accounts the operator owns.
+- **Claim:** Tracking CPM per post per account and feeding it back into production is the one idea worth keeping from the write-up.
+- **Testable:** no. It needs live posts with real view counts from owned accounts, which cannot be produced or read keyless tonight. Needs: Owned accounts with posted content and analytics access.
+- **Idea on its own:** sound. A cost per thousand views ranking is a simple, honest feedback loop for content.
+- **How it would be done:** Keep a table with one row per post: account, format, hook, production cost and views at 7 days. Compute CPM per row and average it per account and per format. Each week, brief the next batch from the top formats and retire the bottom ones. Pull view counts from the platforms' own analytics exports or public pages; a person posts the content from the owned accounts.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **Missing:** Real posted content and its analytics exports.
+- **Field Notes line:** Divide the cost of each post by its views, rank accounts and formats on that, and make more of what wins.
+
+### H-0250 Build a Simple Expected Goals Model with Machine Learning and Python
+2026-10-13, youtube, https://www.youtube.com/watch?v=GsfXAzfvJVM
+
+- **Mechanism:** An expected goals model is a classifier trained on historical shots, with features such as distance, angle and body part, predicting goal or no goal. The output probability is the xG, and quality is checked with log loss or AUC on held-out shots. The video uses scraped data and scikit-learn; open event data such as StatsBomb gives the same shape.
+- **Claim:** Shows how to train and evaluate a simple xG model in Python with scikit-learn.
+- **Testable:** yes. Does a logistic regression on distance and angle over StatsBomb open-data shots reach a held-out AUC above 0.75? Queued as P-0144.
+- **Idea on its own:** sound. Shot-level xG from distance and angle is a standard, well-validated baseline.
+- **How it would be done:** Download shot events from the public StatsBomb open-data repository, compute distance and angle to goal from shot coordinates, and fit a logistic regression. Split shots by match, report AUC and log loss, then compare team xG totals with real scores. If it holds, xG per team could feed the Dixon-Coles desk as a second input. Open data covers only some competitions, so the sample is small and biased.
+- **Stack already covers:** football-data and a Dixon-Coles paper desk (the Pitch), Claude Code with skills and sub-agents
+- **To fetch:** StatsBomb open-data https://github.com/statsbomb/open-data (Free shot-level event data with coordinates to train on.); scikit-learn https://github.com/scikit-learn/scikit-learn (Logistic regression and AUC scoring.)
+- **Field Notes line:** A logistic regression on shot distance and angle may give a usable xG; tonight's check is its held-out AUC on public data.
+
+### H-0249 SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability
+2026-10-13, arxiv, https://arxiv.org/abs/2610.13461
+
+- **Mechanism:** Each problem fixes an integer function with known values only at small n and keeps a lower and an upper record, each a computable Lean function with a machine-checked proof. A submission must prove it bounds f, is no worse than the record anywhere and is strictly better somewhere, then becomes the new record. Two independent Lean kernels check every proof, and checks reject functions that just brute-force small n.
+- **Claim:** Agents had 82 submissions accepted and improved every record, then 60 more from newer models improved 19 of 20 records again.
+- **Testable:** no. Needs a Lean toolchain and the released problem set, and a meaningful submission takes agent hours. Needs: Lean 4 toolchain and the benchmark release.
+- **Idea on its own:** sound. Making the verifier the judge and the record the moving bar removes both saturation and referee trust.
+- **How it would be done:** Install Lean 4 and mathlib, load a problem's current records and the admission tool, then have an agent propose a better bound function with a proof. Run the checker and two kernels, and on acceptance replace the record. The same ratchet pattern could score a Proteus desk: a pre-registered rule must beat the current best on a fixed test to replace it.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Lean 4 https://github.com/leanprover/lean4 (The proof checker that makes each record verifiable.)
+- **Field Notes line:** A benchmark that ratchets: every accepted Lean proof becomes the new record to beat, so it never saturates.
+
+### H-0246 Flat monthly editing retainer for businesses already producing content
+2026-10-13, vault, 
+
+- **Mechanism:** A business that already films content pays a flat monthly fee for post-production: cuts, captions, reframes and a set number of finished clips per month. Revenue is recurring and tied to deliverable counts, not views. The work is a repeatable pipeline from raw footage to platform-sized outputs with a review step.
+- **Claim:** Flat editing retainers of two to six thousand dollars a month are the money worth having in the clipping category.
+- **Testable:** no. The verdict is whether a client pays, which needs outreach and a real customer, not a keyless run. Needs: A paying client and sample footage.
+- **Idea on its own:** sound. Retainers for repeatable deliverables are a common service model, and the pipeline is already largely built.
+- **How it would be done:** Define a package such as eight finished clips a month from the client's raw uploads. Build the pipeline as transcribe, pick moments, cut, caption and render, using the existing tools, with a human review before delivery. Find prospects among businesses that already post regularly and show a free sample cut from their public video. A person handles the sales conversation, taste checks and revisions.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), local transcription, Claude Code with skills and sub-agents
+- **Missing:** A client, and a person to sell and handle revisions.
+- **Field Notes line:** Selling editing as a flat monthly retainer, not per-view clipping, is the steadier shape of the clipping business.
+
+### H-0245 plur-ai/plur (new in awesome-claude-code)
+2026-10-13, awesome, https://github.com/plur-ai/plur. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** Memory is stored as plain YAML records called engrams on local disk and exposed to agents over MCP. Retrieval is hybrid, BM25 plus a local BGE-small embedding, with an optional cross-encoder reranker. Published recall is scored on LongMemEval-S, with end-to-end answer accuracy reported separately.
+- **Claim:** BM25 alone reaches 92.2% R@5 on full LongMemEval-S, 95.6% hybrid and 97.6% with the reranker.
+- **Testable:** yes. Does the BM25-only path of plur-bench reproduce about 92.2% R@5 on LongMemEval-S, yes or no? Queued as P-0143.
+- **Idea on its own:** sound. Plain-text memory with lexical plus embedding retrieval is simple and inspectable, and the benchmark is public to check.
+- **How it would be done:** Clone plur-bench, run its local BM25 path on the SHA-pinned corpus, and compare R@5 with the published 92.2%. If it matches, try the same BM25 index over Proteus's own run logs and memory notes with a few known questions. Keeping the hybrid and reranker for a later night avoids a model download tonight.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** plur-bench https://github.com/plur-ai/plur-bench (The reproducible harness behind every published number.)
+- **Field Notes line:** A claimed 92.2% recall from plain BM25 on LongMemEval-S, no embeddings, which would make fancy agent memory look overbuilt.
+
+### H-0243 ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary
+2026-10-13, arxiv, https://arxiv.org/abs/2610.13651
+
+- **Mechanism:** ToFu reads each MCP tool's metadata, such as name, description and parameter schema, and picks matching checks from a CWE-guided corpus of sanitizers (path traversal, command injection and similar). It then generates a fuzzing harness per tool and uses runtime introspection to see what the tool actually did with the argument. Oracles judge the outcome, so a bug is confirmed by an observed effect, not a guess.
+- **Claim:** Across 273 MCP servers and 3405 tools, verified bugs were found in 343 tools across 118 servers.
+- **Testable:** no. The framework code is not confirmed released and a faithful slice needs running many third-party MCP servers. Needs: The ToFu code and a set of MCP servers to fuzz.
+- **Idea on its own:** sound. Treating model-written arguments as untrusted input and fuzzing against documented schemas is standard security practice applied to a new boundary.
+- **How it would be done:** List a server's tools through the MCP tools/list call, then for each parameter pick payloads from a sanitizer corpus matching its type. Call the tool in a sandbox, observe file, process and network effects, and flag violations of the documented input rules. Run it against servers the stack already uses to check what Proteus trusts. A security reviewer would triage which findings are real.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** MCP Inspector https://github.com/modelcontextprotocol/inspector (Lists and calls a server's tools so a fuzz harness can be driven against them.)
+- **Missing:** The paper's own harness generator, unless the authors release it.
+- **Field Notes line:** Fuzzing 3405 MCP tools turned up verified bugs in 343 of them: tools trust whatever arguments the model hands over.
+
+### H-0242 zhuyansen/new-term-radar: Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Fa
+2026-10-13, github, https://github.com/zhuyansen/new-term-radar
+
+- **Mechanism:** It watches the early trail of a new name rather than search volume. It flags Hugging Face models newly in the trending top 50, GitHub repos under 14 days old averaging 200+ stars a day or gaining 400+ since yesterday, and words shared by several new URLs in listed sitemaps. Google Trends is used 14 days later only to score each lead against its own baseline.
+- **Claim:** Catches new AI names days to weeks before keyword tools, for example a repo with 7,700 stars nine days after creation.
+- **Testable:** yes. How many repos created in the last 14 days average 200+ stars a day on the public GitHub search API, and how many new models are on the Hugging Face trending list tonight? Queued as P-0142.
+- **Idea on its own:** sound. Star velocity on a young repo is an observable early signal, and it can be backtested against later search interest.
+- **How it would be done:** Query the GitHub search API for repos created in the last 14 days sorted by stars, compute stars per day from created date, and flag those over 200. Pull the Hugging Face trending models list and diff it against yesterday's saved copy. Save each day's flags and later check whether the names grew, giving a hit rate. The X and paid-keyword parts need an AIsa key and can be skipped. This could feed the harvester or a Grinder-style token naming signal.
+- **Stack already covers:** launchd long-running pollers, Claude Code with skills and sub-agents
+- **To fetch:** new-term-radar https://github.com/zhuyansen/new-term-radar (Reference code for the GitHub breakout and Hugging Face trending checks.)
+- **Field Notes line:** A breakout detector for new AI names: a young repo averaging 200 stars a day is the whole signal, and it is public.
+
+### H-0241 How to engineer an AI harness for game development
+2026-10-13, hn, https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code
+
+- **Mechanism:** The harness makes a game legible to a coding agent: the simulation is separated from rendering and seeded so runs replay exactly, and the agent captures screenshots and videos of each mechanic to check its own work. Dev tools such as level editors and asset converters are built by side agents and kept out of the main code. Comments push back that determinism across platforms is confining and that code was never the hard part of games.
+- **Claim:** A structured harness lets Claude Code build larger games reliably, with a commenter reaching decent FPS at around 40k lines.
+- **Testable:** no. It is a working practice across a whole project and cannot be reduced to a keyless 30 minute run with a number. Needs: A game project and model sessions.
+- **Idea on its own:** sound. Deterministic replay and visual self-checks are well-proven ways to give an agent a feedback loop.
+- **How it would be done:** Write the game logic as a pure step function with a fixed seed so any run replays identically. Add a headless runner that dumps frames to PNG at set ticks and a script that diffs them against known good frames. Give the agent that runner as its test, and have side agents build the level editor and asset converters. The same shape fits a Proteus paper desk, where replayable input gives deterministic scoring.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **Field Notes line:** Seeded, replayable game simulation plus agent-taken screenshots lets an agent check its own work; commenters say code was never the hard part.
+
+### H-0240 service x city landing pages
+2026-10-13, vault, 
+
+- **Mechanism:** One page is generated per service and town pair, each with a matching headline, local detail and schema markup, so a search for 'boiler repair in Leeds' lands on a page that mirrors it. It depends on search engines treating each page as useful rather than templated; the risk is thin or near-duplicate content being demoted. Ranking signal comes from local relevance, internal linking and a Google Business Profile, not from the page count.
+- **Claim:** A page per service and city with a matching headline lifts local search visibility for trade businesses.
+- **Testable:** no. A verdict needs a live indexed site and weeks of ranking data, and unique page copy needs a model that is not available keyless tonight. Needs: A live domain, indexing time and model-written copy.
+- **Idea on its own:** needs-a-run. It is an established local SEO pattern, but it works only if each page carries genuinely distinct local content.
+- **How it would be done:** Build a table of services crossed with towns, then fill each row with distinct local facts such as postcodes, nearby landmarks, real job photos and reviews. Render pages from one template through a static site generator, with the headline and title tag taken from the pair. Add LocalBusiness schema, link pages from a hub, and submit the sitemap to Search Console. Measure impressions per page after a few weeks and prune pages that never index. A person is needed to supply real local detail and photos that no script can invent.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills)
+- **To fetch:** Astro https://github.com/withastro/astro (Static site generator to render one page per service and town row.)
+- **Missing:** Genuine per-town facts and photos for each page, which have to come from the business.
+- **Field Notes line:** One landing page per service and town, headline matched to the search; the catch is Google demoting near-duplicate pages as thin content.
 
 ### H-0238 Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animated team call: who is working, 
 2026-10-13, github, https://github.com/Atoll92/agent-standup
@@ -2014,8 +2132,11 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0252 | 2026-10-13 | Per-post CPM tracked per account feeding back into what gets made next | open | sound | no |  |
+| H-0246 | 2026-10-13 | Flat monthly editing retainer for businesses already producing content | open | sound | no |  |
+| H-0240 | 2026-10-13 | service x city landing pages | open | needs-a-run | no |  |
 | H-0236 | 2026-10-13 | UGC creator marketplace that sources creator applications for brands fast | open | needs-a-run | no |  |
-| H-0231 | 2026-10-13 | Tooling, leaderboards and data products built around a token launchpad | open | needs-a-run | yes | P-0137 |
+| H-0231 | 2026-10-13 | Tooling, leaderboards and data products built around a token launchpad | open | needs-a-run | yes | P-0137 **blocked** |
 | H-0226 | 2026-10-13 | A small weekly prize or showcase as the community rung of the AI for Businesses or Bootcam | open | needs-a-run | no |  |
 | H-0223 | 2026-10-11 | Public on-chain leaderboards as the check on any trader's claimed record | open | sound | yes | P-0127 **works** |
 | H-0219 | 2026-10-11 | Phone-gated lead magnet to free workshop to done-for-you app build agency | open | sound | no |  |
@@ -2064,6 +2185,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0163 | 2026-10-13 | [Lean 4](https://github.com/leanprover/lean4) | The proof checker that makes each record verifiable. | H-0249 (SqueezeBench: Saturation-Resilient Evaluation of M) | shelf |
+| T-0162 | 2026-10-13 | [plur-bench](https://github.com/plur-ai/plur-bench) | The reproducible harness behind every published number. | H-0245 (plur-ai/plur (new in awesome-claude-code)) | shelf |
+| T-0161 | 2026-10-13 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector) | Lists and calls a server's tools so a fuzz harness can be driven against them. | H-0243 (ToFu: Exploiting and Fuzzing the LLM-Orchestrator-) | shelf |
+| T-0160 | 2026-10-13 | [new-term-radar](https://github.com/zhuyansen/new-term-radar) | Reference code for the GitHub breakout and Hugging Face trending checks. | H-0242 (zhuyansen/new-term-radar: Daily radar for new AI t) | shelf |
+| T-0159 | 2026-10-13 | [Astro](https://github.com/withastro/astro) | Static site generator to render one page per service and town row. | H-0240 (service x city landing pages) | shelf |
 | T-0158 | 2026-10-13 | [agent-standup](https://github.com/Atoll92/agent-standup) | The tool itself, run with npx @double_geste/agent-standup. | H-0238 (Atoll92/agent-standup: Your Claude Code, Codex and) | shelf |
 | T-0157 | 2026-10-13 | [atticus-mac](https://github.com/SaarthurR/atticus-mac) | The source for the router and replay cache. | H-0237 (Show HN: Atticus – Hold-to-talk voice assistant fo) | shelf |
 | T-0156 | 2026-10-13 | [JAX](https://github.com/jax-ml/jax) | The benchmark is built on JAX environments. | H-0234 (OpenSocialJax: Evaluating Social Adaptation in Seq) | shelf |
@@ -2227,6 +2353,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0253 | 2026-10-13 | hn | [Nearly all 19 car brands send driver data to third parties (Northeastern/CR)](https://news.auravision.co/car-is-spying/) | A vendor-founder promotional link to a secondary write-up of a study, with no mechanism in the post. |
+| H-0251 | 2026-10-13 | awesome | [tronghieu/agent-skills (new in awesome-claude-code)](https://github.com/tronghieu/agent-skills) | A collection of prompt-style skills with no new mechanism; the vault has already judged it. |
+| H-0248 | 2026-10-13 | github | [Arekejoker/qwen21-nsfw-pose-skill: Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSF](https://github.com/Arekejoker/qwen21-nsfw-pose-skill) | An adult-image recipe for a local GPU diffusion stack; needs ComfyUI, large model downloads and hardware this Mac lacks, |
+| H-0247 | 2026-10-13 | hn | [Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data](https://news.ycombinator.com/item?id=50073471) | A compliance-gateway launch post whose content is certification claims, with no mechanism described. |
+| H-0244 | 2026-10-13 | youtube | [What is xG? / By The Numbers](https://www.youtube.com/watch?v=zSaeaFcm1SY) | A four minute xG explainer with no build detail; the Python walkthrough in the same query covers the mechanism better. |
 | H-0239 | 2026-10-13 | youtube | [The M5 Ultra Mac Studio is INSANE!](https://www.youtube.com/watch?v=YK98Cc592C8) | A product showcase of a maxed-out machine running one local model with no method or reproducible numbers beyond memory u |
 | H-0232 | 2026-10-13 | hn | [Show HN: Opus 5.5 made a fully featured Figma clone in 3 hours / 8 prompts](https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch) | A claim that a model built a Figma clone in eight prompts from the vendor of the harness, with no mechanism and a commen |
 | H-0230 | 2026-10-13 | youtube | [How Pump.fun’s bonding curve actually works and why being early is basically the](https://www.youtube.com/watch?v=1YZAObOuSaU) | A short restating that price rises along a bonding curve, already judged and with nothing new beyond a lawsuit claim. |

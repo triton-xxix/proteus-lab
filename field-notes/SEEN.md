@@ -496,6 +496,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-13: Nolan site, Interstellar (2014) researched and built (`sites/nolan/films/interstellar.json`).
 
 - 2026-10-13: Nolan site, The Prestige (2006) researched and built (`sites/nolan/films/the-prestige.json`).
+- 2026-10-13, harvested: 14 judged, 9 kept (H-0240 to H-0253), 3 queued as probes (P-0142, P-0143, P-0144). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
