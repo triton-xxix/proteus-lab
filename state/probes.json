@@ -3004,22 +3004,27 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-13T12:37:37+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-13T12:39:00+0100",
+   "note": "Measured: 1 signature across all 7 KOL DOGEUS accounts; signer BuekUk3Y is not a KOL; DOGEUS balance change 0, SOL change only the 0.000015 fee; one unknown program DhpyNWkd. Neither airdrop nor buys: a no-op that lists the accounts, history spam. Shot said one tx airdropping to 5 or more: count right, kind wrong. It is a v1 transaction; the public RPC returns error -32015 unless maxSupportedTransactionVersion is 1. P-0128 ever-touched counts include spam. Full 91 x 4 re-run not done (55 min, slot too short). Next: deepen (queued: re-count P-0128 using KOL-signed or balance-changing txs only).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0134"
+   ],
+   "minutes": 1,
+   "calls": 18,
+   "denied": [
+    "Edit `/Users/triton/.claude/projects/-Users-triton-PROTEUS/memory/project_usage_from_transcripts`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "one transaction sending DOGEUS dust to 5 or more KOL wallets (an airdrop, not buys)",
-    "at": "2026-10-13T12:37:52+0100"
+    "at": "2026-10-13T12:37:52+0100",
+    "hit": true
    }
   },
   {

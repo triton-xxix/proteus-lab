@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 85 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 86 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
 
-## Queue (17 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,16 +25,17 @@ Verdicts so far: 85 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
-| P-0134 | Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experiments/2026-10-12-P-0128/run.py in the background, about 55 min | desk | none |  | 1 (in progress) | 20 min |
 | P-0135 | Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches | desk | none |  | 1 | 15 min |
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
 | P-0139 | Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R01.csv marked backfilled, per VARIANTS-3 line 40 | desk | none |  | 0 | 20 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
 
-## Verdicts (119)
+## Verdicts (120)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-13 | P-0134 | Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experiments/2026-10-12-P-0128/run.py in the background, about 55 min | **works** | Measured: 1 signature across all 7 KOL DOGEUS accounts; signer BuekUk3Y is not a KOL; DOGEUS balance change 0, SOL change only the 0.000015 fee; one unknown program DhpyNWkd. Neither airdrop nor buys: a no-op that lists the accounts, history spam. Shot said one tx airdropping to 5 or more: count right, kind wrong. It is a v1 transaction; the public RPC returns error -32015 unless maxSupportedTransactionVersion is 1. P-0128 ever-touched counts include spam. Full 91 x 4 re-run not done (55 min, slot too short). Next: deepen (queued: re-count P-0128 using KOL-signed or balance-changing txs only). | `experiments/2026-10-13-P-0134` | 1 min, 18 calls, 1 denied |
+| | | | | denied: Edit `/Users/triton/.claude/projects/-Users-triton-PROTEUS/memory/project_usage_from_transcripts` | | |
 | 2026-10-13 | P-0138 | agent-standup: does its per-agent token count for one local session match a deduplicated transcript sum within 5%? | **works** | Measured: 20 of 20 recent Proteus sessions match exactly on all four counts under agent-standup rule (last record per message.id, server.js 364-366) v my largest-record-per-requestId dedupe: 2,282,404 output tokens both. Shot said off by over 5 pct; missed. First-record rule also gives the same total, so the partial-first-record note behind usage.py does not hold on these 20. Caveat: its rule applied in Python, server not run; sub-agent files not read. Next: close. | `experiments/2026-10-13-P-0138` | 0 min, 9 calls, 0 denied |
 | 2026-10-13 | P-0137 | Launchpad leaderboard: what share of 100 fresh pump.fun pools on GeckoTerminal keep liquidity above 5k after 24h? | **blocked** | Measured today: 85 of the newest 200 Solana pools on GeckoTerminal were pump.fun (43 pct), born in 5 minutes, about 17 a minute; 3 of 85 above 5k USD at capture. The 24h share cannot be read keyless today: pump-fun and pumpswap pool lists answer 400 to a creation-date sort and new_pools stops at 10 pages, minutes of launches. Shot said about 15 of 100 at 24h; not measured, and 82 of 85 start below the line. Cohort committed before its outcome; P-0140 rechecks after 14 Oct. | `experiments/2026-10-13-P-0137` | 3 min, 13 calls, 0 denied |
 | 2026-10-13 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | **works** | Wired: paper.py --apply-r01, select_r01 beside v0.2, own ledger LEDGER-R01.csv (R- ids, v0.2 exits), runs after mentions.py in nightly step 2. Measured 4 of 4 nights where wired picks equal replay.py picks, same tokens same order; shot said 4 of 4. Live run refused the stale 11 Oct snapshot as it should; first real entries tonight. Not BOOKS.json second (shares LEDGER.csv); 8 to 11 Oct not yet backfilled. D-007 scored. Next: deepen (queued P-0139, backfill 8 to 11 Oct from candles). | `experiments/2026-10-13-P-0121` | 1 min, 29 calls, 0 denied |

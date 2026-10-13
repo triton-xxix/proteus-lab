@@ -1,0 +1,31 @@
+{
+ "kol_accounts": 7,
+ "signatures": {
+  "2rVuXS1sTR1idWwdLtKZVzUtZQ93h8TKKhoCydon84guscQjf12gvUV31ugUs7cGNNF8fCAqLCFViEgZzd9msYMK": {
+   "kols": [
+    "decu",
+    "trunoest",
+    "Coler",
+    "theo",
+    "bandit",
+    "Jijo",
+    "The Doc"
+   ],
+   "block_time": 1791753461,
+   "signers": [
+    "BuekUk3YMmm7Agnb4ni1qMCmShVpeBTdQZYNyihyzr7u"
+   ],
+   "kol_signed": false,
+   "programs": [
+    "DhpyNWkdxFh3DRPsBrwRwrK3TYC5t7Q4arnSvf3t84HY"
+   ],
+   "token_moves": [],
+   "sol_changes": [
+    [
+     "BuekUk3YMmm7Agnb4ni1qMCmShVpeBTdQZYNyihyzr7u",
+     -1.5e-05
+    ]
+   ]
+  }
+ }
+}
