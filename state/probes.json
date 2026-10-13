@@ -3271,22 +3271,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-13T23:57:02+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-13T23:59:58+0100",
+   "note": "Measured: distance plus angle logistic xG gives held-out AUC 0.735 on World Cup 2022 (1,099 shots, 116 goals) and 0.701 on Euro 2024 (1,304 shots, 98 goals), five folds by match: below the 0.75 line both times. Shot said about 0.78: missed. A header flag adds about 0.03; StatsBomb own xG scores 0.82 and 0.79 on the same shots. Open data covers none of the Pitch desk nine leagues, so no desk feed. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-13-P-0144"
+   ],
+   "minutes": 2,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "held-out AUC about 0.78 from distance and angle alone on StatsBomb open-data shots",
-    "at": "2026-10-13T23:57:12+0100"
+    "at": "2026-10-13T23:57:12+0100",
+    "hit": true
    }
   },
   {

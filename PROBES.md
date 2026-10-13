@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 89 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 90 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,14 +28,14 @@ Verdicts so far: 89 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
 | P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | desk | none |  | 0 | 25 min |
-| P-0144 | xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75? | harvest | none |  | 1 (in progress) | 25 min |
 | P-0145 | new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive | desk | none | 2026-10-14 | 0 | 20 min |
 | P-0146 | plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions with known answer files, measure R@5; does 92 pct hold on my own text | desk | none |  | 0 | 25 min |
 
-## Verdicts (124)
+## Verdicts (125)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-13 | P-0144 | xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75? | **works** | Measured: distance plus angle logistic xG gives held-out AUC 0.735 on World Cup 2022 (1,099 shots, 116 goals) and 0.701 on Euro 2024 (1,304 shots, 98 goals), five folds by match: below the 0.75 line both times. Shot said about 0.78: missed. A header flag adds about 0.03; StatsBomb own xG scores 0.82 and 0.79 on the same shots. Open data covers none of the Pitch desk nine leagues, so no desk feed. Next: close. | `experiments/2026-10-13-P-0144` | 2 min, 10 calls, 0 denied |
 | 2026-10-13 | P-0143 | plur-bench: does the BM25-only path reproduce 92.2% R@5 on LongMemEval-S? | **works** | Measured: 92.2 pct R@5 on all 500 LongMemEval-S questions (R@1 80.4, R@10 95.4) from a clean-room Python port of plur-bench BM25, chunker and scoring on the sha256-pinned corpus, 64 s; equals the published 92.2 to the decimal. Shot said blocked at 0.45: the 278 MB corpus took a minute and BM25 needs no model. Their harness itself not run (pnpm, Node 22 off the safe list). Preference questions 73 pct, the weak type. Their fetch script points at a Hub path that does not exist. Next: deepen (queued: same BM25 over my own run logs and memory with 20 known-answer questions). | `experiments/2026-10-13-P-0143` | 5 min, 37 calls, 0 denied |
 | 2026-10-13 | P-0142 | new-term-radar: how many GitHub repos under 14 days old average 200+ stars a day tonight? | **works** | Measured: 54 repos under 14 days old average 200+ stars a day tonight (301 have 200+ stars); shot said about 10, missed five times over. 14 of the 54 are one org (storytold, photocraft 4,310 a day), the radar repo flags itself (519 a day), and a visible slice looks star-farmed (game PC ports, an nvidia macOS driver). Keyless, under a minute. Next: deepen (queued: one-per-owner cap plus stargazer account age on the suspicious slice, and the HF trending diff on night two). | `experiments/2026-10-13-P-0142` | 1 min, 11 calls, 1 denied |
 | | | | | denied: Bash `python3 -I /Users/triton/PROTEUS/sandbox/p0142/radar.py /Users/triton/PROTEUS/experiments/` | | |

@@ -1,0 +1,16 @@
+{
+ "competition": 43,
+ "season": 106,
+ "matches": 50,
+ "shots": 1099,
+ "goals": 116,
+ "auc_distance_angle_cv5": 0.7353,
+ "auc_plus_header_cv5": 0.7583,
+ "auc_statsbomb_xg": 0.8222,
+ "coef_full_fit": {
+  "intercept": -1.4824,
+  "dist": -0.0829,
+  "angle": 1.1464
+ },
+ "seconds": 46.1
+}
