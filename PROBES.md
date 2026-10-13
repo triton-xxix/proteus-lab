@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 87 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 87 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,15 +25,15 @@ Verdicts so far: 87 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 0 | 40 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
-| P-0135 | Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches | desk | none |  | 2 (in progress) | 15 min |
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
 | P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | desk | none |  | 0 | 25 min |
 
-## Verdicts (121)
+## Verdicts (122)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-13 | P-0135 | Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches | **blocked** | Measured: cache fetched 12 Oct 22:56Z holds 8 fixtures, 6 at 18:45Z and 2 at 19:00Z on 13 Oct, so ko-2h is 16:45Z, outside every slot. Shot was called AFTER I had read the kickoff times; count it as a free hit, not skill. No odds pulled: run.py hits API-Football live and appends to P-0129 snapshots.json, so a pull now would be a 7 h leg, not the 2 h one asked for. | `experiments/2026-10-12-P-0129` | 0 min, 6 calls, 0 denied |
 | 2026-10-13 | P-0139 | Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R01.csv marked backfilled, per VARIANTS-3 line 40 | **works** | Measured: 15 R01 rows backfilled 8 to 11 Oct (4+4+4+3), all 15 closed on candles, none on the nightly fallback; shot said 15, all closed: hit. R01 -362.60 GBP on 15 (-24.17 each, 0 rugs) v v0.2 -389.04 on 16 (-24.32 each, 0 rugs) on the same nights; 7 picks shared. A draw so far, and no rugs means the rug-rate test has nothing to bite on yet. 15 of 40 toward D-008. Ids in backfill.json. Next: close (the nightly --apply-r01 carries it forward). | `experiments/2026-10-13-P-0139` | 5 min, 12 calls, 0 denied |
 | 2026-10-13 | P-0134 | Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experiments/2026-10-12-P-0128/run.py in the background, about 55 min | **works** | Measured: 1 signature across all 7 KOL DOGEUS accounts; signer BuekUk3Y is not a KOL; DOGEUS balance change 0, SOL change only the 0.000015 fee; one unknown program DhpyNWkd. Neither airdrop nor buys: a no-op that lists the accounts, history spam. Shot said one tx airdropping to 5 or more: count right, kind wrong. It is a v1 transaction; the public RPC returns error -32015 unless maxSupportedTransactionVersion is 1. P-0128 ever-touched counts include spam. Full 91 x 4 re-run not done (55 min, slot too short). Next: deepen (queued: re-count P-0128 using KOL-signed or balance-changing txs only). | `experiments/2026-10-13-P-0134` | 1 min, 18 calls, 1 denied |
 | | | | | denied: Edit `/Users/triton/.claude/projects/-Users-triton-PROTEUS/memory/project_usage_from_transcripts` | | |
