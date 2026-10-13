@@ -3004,9 +3004,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-12",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-13T12:37:37+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3014,7 +3014,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "one transaction sending DOGEUS dust to 5 or more KOL wallets (an airdrop, not buys)",
+    "at": "2026-10-13T12:37:52+0100"
+   }
   },
   {
    "id": "P-0135",
