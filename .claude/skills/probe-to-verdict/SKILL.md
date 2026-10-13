@@ -16,6 +16,16 @@ loops, which did six verdicts in 14 to 21 minutes each night.
 2. **Called shot, before touching the probe** (daytime Trials always; nightly when there is time):
    `python3 /Users/triton/PROTEUS/bin/probe.py shot P-00NN --expect works|broken|blocked|not-worth-it --p 0.7 --number "the one number I expect to measure"`
    Be honest with p. The bar is Brier 0.179 (always "works" at the base rate); see PASS-MARKS.md.
+   Two ways this step went wrong under this skill, both in Trials:
+   - **A "blocked" shot is a claim about this folder, not about the world.** On 12 Oct two probes
+     were called blocked ("no key", "no fixtures till 17 Oct") without one grep; the key was in
+     `pitch/apisports.py` and the fixtures were cached. Before calling blocked, grep the folder for the
+     thing you say is missing (`grep -rl <name> /Users/triton/PROTEUS/pitch`); if it is there, call
+     something else. Looking at what the folder already holds is not looking at the probe's result.
+   - **A leg-two probe has no blind shot if you already read the thing it measures.** On 13 Oct P-0135's
+     kickoff times were read before the shot, so the hit was free. Call it with `--p 0.5` and put
+     "shot after looking at <what>" in the verdict note, so `probe.py shots` scores it as a coin and the
+     run log says why.
 3. Run it. Install and execute inside `/Users/triton/PROTEUS/sandbox/`, write what you keep under
    `/Users/triton/PROTEUS/experiments/YYYY-MM-DD-P-00NN/` (a README.md with the question, method,
    numbers and what you did not do; the script; a results.json if there are numbers). `sandbox/*/` is
