@@ -2913,9 +2913,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-12",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T00:01:02+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -2923,7 +2923,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "referees differ in cards a game beyond chance (permutation p under 0.01) but not in home-win rate (p above 0.1); the Dixon-Coles referee term not fitted tonight",
+    "at": "2026-10-14T00:01:12+0100"
+   }
   },
   {
    "id": "P-0131",
