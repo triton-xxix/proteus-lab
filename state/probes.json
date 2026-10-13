@@ -1,5 +1,5 @@
 {
- "next_id": 148,
+ "next_id": 149,
  "items": [
   {
    "id": "P-0001",
@@ -3082,22 +3082,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T00:03:32+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T00:06:14+0100",
+   "note": "Measured: the 8-group refit falls from 21.1 s to 0.4 s with the analytic gradient (ENG 10.4 s to 0.11 s); objective identical to 4 decimals in every group; parameters differ by up to 0.02 on ENG (0.0001 on SCO) and ENG predictions by at most 1.0 point of p_home over 2,862 pairs, because the finite-difference fit stops elsewhere on a flat ridge. Shot said under 6 s (hit) and parameters to 1e-4 (missed). Not switched into the desk tonight; queued P-0148 with the backtest comparison. Next: promote (P-0148).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0136"
+   ],
+   "minutes": 2,
+   "calls": 20,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "8-group refit from about 24 s to under 6 s with parameters matching the finite-difference fit to 1e-4",
-    "at": "2026-10-14T00:03:39+0100"
+    "at": "2026-10-14T00:03:39+0100",
+    "hit": true
    }
   },
   {
@@ -3359,6 +3362,26 @@
   {
    "id": "P-0147",
    "title": "Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and over-2.5 out of sample against the closing line on E0, E1, SC0 2022 on; does it beat the plain model",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-14",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0148",
+   "title": "Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier",
    "source": "desk",
    "needs": "",
    "after": "",
