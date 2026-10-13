@@ -54,6 +54,7 @@ BOUND_MAX_S = 3 * 3600     # a bound marker older than this is a dead run; ignor
 WRITE_ROOTS = (
     PROTEUS_ROOT,
     "/Users/triton/OBSIDIAN/TRITON-CORE/Proteus/",
+    "/Users/triton/.claude/projects/-Users-triton-PROTEUS/memory/",
 )
 
 # /private/tmp/claude-502/ added 2026-10-09: Claude Code writes background-task output there, and
