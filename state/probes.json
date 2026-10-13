@@ -3082,9 +3082,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T00:03:32+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3092,7 +3092,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "8-group refit from about 24 s to under 6 s with parameters matching the finite-difference fit to 1e-4",
+    "at": "2026-10-14T00:03:39+0100"
+   }
   },
   {
    "id": "P-0137",
