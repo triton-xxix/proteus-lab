@@ -1,5 +1,5 @@
 {
- "next_id": 146,
+ "next_id": 147,
  "items": [
   {
    "id": "P-0001",
@@ -3271,6 +3271,32 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-13T23:57:02+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "held-out AUC about 0.78 from distance and angle alone on StatsBomb open-data shots",
+    "at": "2026-10-13T23:57:12+0100"
+   }
+  },
+  {
+   "id": "P-0145",
+   "title": "new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-10-14",
+   "est_minutes": 20,
+   "added": "2026-10-13",
    "status": "open",
    "attempts": 0,
    "started_at": null,
@@ -3284,12 +3310,12 @@
    "luke": false
   },
   {
-   "id": "P-0145",
-   "title": "new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive",
+   "id": "P-0146",
+   "title": "plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions with known answer files, measure R@5; does 92 pct hold on my own text",
    "source": "desk",
    "needs": "",
-   "after": "2026-10-14",
-   "est_minutes": 20,
+   "after": "",
+   "est_minutes": 25,
    "added": "2026-10-13",
    "status": "open",
    "attempts": 0,
