@@ -3133,22 +3133,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-13T12:39:11+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-13T12:44:40+0100",
+   "note": "Measured: 15 R01 rows backfilled 8 to 11 Oct (4+4+4+3), all 15 closed on candles, none on the nightly fallback; shot said 15, all closed: hit. R01 -362.60 GBP on 15 (-24.17 each, 0 rugs) v v0.2 -389.04 on 16 (-24.32 each, 0 rugs) on the same nights; 7 picks shared. A draw so far, and no rugs means the rug-rate test has nothing to bite on yet. 15 of 40 toward D-008. Ids in backfill.json. Next: close (the nightly --apply-r01 carries it forward).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0139"
+   ],
+   "minutes": 5,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "15 backfilled R01 rows (4+4+4+3), all closed by candles",
-    "at": "2026-10-13T12:39:27+0100"
+    "at": "2026-10-13T12:39:27+0100",
+    "hit": true
    }
   },
   {

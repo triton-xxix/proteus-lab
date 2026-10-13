@@ -1,0 +1,89 @@
+{
+ "backfilled_ids": [
+  "R-0001",
+  "R-0002",
+  "R-0003",
+  "R-0004",
+  "R-0005",
+  "R-0006",
+  "R-0007",
+  "R-0008",
+  "R-0009",
+  "R-0010",
+  "R-0011",
+  "R-0012",
+  "R-0013",
+  "R-0014",
+  "R-0015"
+ ],
+ "nights": [
+  {
+   "snapshot": "2026-10-08T22:24:12Z",
+   "entered_at": "2026-10-08T22:28:11Z",
+   "still_open_before": 0,
+   "slots": 4,
+   "picks": [
+    "OWLNIGHT",
+    "ZKDARK",
+    "BORDR",
+    "SENTS"
+   ]
+  },
+  {
+   "snapshot": "2026-10-09T22:23:31Z",
+   "entered_at": "2026-10-09T22:27:35Z",
+   "still_open_before": 0,
+   "slots": 4,
+   "picks": [
+    "QUBIT",
+    "QCOIN",
+    "PAWS",
+    "PQC"
+   ]
+  },
+  {
+   "snapshot": "2026-10-10T22:23:33Z",
+   "entered_at": "2026-10-10T22:27:34Z",
+   "still_open_before": 0,
+   "slots": 4,
+   "picks": [
+    "qOMPUTE",
+    "LLM",
+    "Altai ",
+    "brigitte"
+   ]
+  },
+  {
+   "snapshot": "2026-10-11T22:23:37Z",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "still_open_before": 0,
+   "slots": 4,
+   "picks": [
+    "Nuts",
+    "Normie",
+    "Glorp"
+   ]
+  }
+ ],
+ "rows": 15,
+ "closed": 15,
+ "rugged": 0,
+ "pnl_gbp": -362.6,
+ "reasons": [
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "stop_loss",
+  "take_profit",
+  "take_profit",
+  "take_profit"
+ ]
+}
