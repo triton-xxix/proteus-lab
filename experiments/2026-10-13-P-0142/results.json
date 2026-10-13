@@ -1,0 +1,3862 @@
+{
+ "asof": "2026-10-13T22:50:00.521940+00:00",
+ "query": "created:>=2026-09-29 stars:>=200",
+ "total_count": 301,
+ "fetched": 301,
+ "flagged_200_per_day": [
+  {
+   "full_name": "storytold/photocraft",
+   "stars": 57690,
+   "created_at": "2026-09-30T13:37:48Z",
+   "age_days": 13.38,
+   "stars_per_day": 4310.5,
+   "language": "Rust",
+   "description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "openai/math",
+   "stars": 14665,
+   "created_at": "2026-10-06T21:47:02Z",
+   "age_days": 7.04,
+   "stars_per_day": 2082.0,
+   "language": "Lean",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/wordcraft",
+   "stars": 11004,
+   "created_at": "2026-10-07T08:34:24Z",
+   "age_days": 6.59,
+   "stars_per_day": 1668.7,
+   "language": "Rust",
+   "description": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "wheresryan22/anatomy",
+   "stars": 8102,
+   "created_at": "2026-10-08T10:12:49Z",
+   "age_days": 5.53,
+   "stars_per_day": 1466.2,
+   "language": "JavaScript",
+   "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Ge",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/pdfcraft",
+   "stars": 12689,
+   "created_at": "2026-09-30T13:39:37Z",
+   "age_days": 13.38,
+   "stars_per_day": 948.2,
+   "language": "Rust",
+   "description": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/filmcraft",
+   "stars": 12478,
+   "created_at": "2026-09-30T13:41:20Z",
+   "age_days": 13.38,
+   "stars_per_day": 932.5,
+   "language": "Rust",
+   "description": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/lightcraft",
+   "stars": 11975,
+   "created_at": "2026-09-30T14:09:27Z",
+   "age_days": 13.36,
+   "stars_per_day": 896.2,
+   "language": "Rust",
+   "description": "LightCraft: An open-source non-destructive photo editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "Arekejoker/qwen21-nsfw-pose-skill",
+   "stars": 785,
+   "created_at": "2026-10-13T03:09:42Z",
+   "age_days": 1.0,
+   "stars_per_day": 785.0,
+   "language": "Python",
+   "description": "Qwen-Image 2.1 NSFW/\u59ff\u52bf\u51fa\u56fe skill\uff1a\u4f5c\u8005\u7ea7\u63d0\u793a\u8bcd\u914d\u65b9 + NSFW LoRA + 136 \u59ff\u52bf VNCCS \u4eba\u5076\u63a7\u5236\uff1b\u9002\u7528 Claude Code / Codex / Cursor / OpenClaw",
+   "fork": false
+  },
+  {
+   "full_name": "liseami/CCBaga",
+   "stars": 2044,
+   "created_at": "2026-10-11T03:47:06Z",
+   "age_days": 2.79,
+   "stars_per_day": 731.6,
+   "language": "Rust",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "onehumanbeing/esp32-iphone-agent",
+   "stars": 1489,
+   "created_at": "2026-10-11T19:10:25Z",
+   "age_days": 2.15,
+   "stars_per_day": 691.8,
+   "language": "Python",
+   "description": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No M",
+   "fork": false
+  },
+  {
+   "full_name": "jhaizhou-ops/d2r-mobile",
+   "stars": 1094,
+   "created_at": "2026-10-12T08:41:19Z",
+   "age_days": 1.59,
+   "stars_per_day": 688.3,
+   "language": "C",
+   "description": "Open-source iOS / macOS compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs you",
+   "fork": false
+  },
+  {
+   "full_name": "mhtsec/ARTEX",
+   "stars": 3869,
+   "created_at": "2026-10-08T05:33:06Z",
+   "age_days": 5.72,
+   "stars_per_day": 676.4,
+   "language": "Go",
+   "description": "AI \u81ea\u4e3b\u6e17\u900f\u6d4b\u8bd5\u7cfb\u7edf | \u767e\u5ea6\u201cagent+\u201d\u653b\u9632\u6311\u6218\u8d5b\u51a0\u519b\u9879\u76ee",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/gridcraft",
+   "stars": 4418,
+   "created_at": "2026-10-07T05:18:16Z",
+   "age_days": 6.73,
+   "stars_per_day": 656.4,
+   "language": "Rust",
+   "description": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/vectorcraft",
+   "stars": 8435,
+   "created_at": "2026-09-30T13:43:03Z",
+   "age_days": 13.38,
+   "stars_per_day": 630.4,
+   "language": "Rust",
+   "description": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/cadcraft",
+   "stars": 4169,
+   "created_at": "2026-10-07T05:22:31Z",
+   "age_days": 6.73,
+   "stars_per_day": 619.7,
+   "language": "Rust",
+   "description": "CADCraft: computer-aided design and drafting \u2014 an open-source, clean-room AutoCAD-style app in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/craft-launcher",
+   "stars": 2271,
+   "created_at": "2026-10-09T23:21:59Z",
+   "age_days": 3.98,
+   "stars_per_day": 570.9,
+   "language": "Rust",
+   "description": "The Craft App Launcher",
+   "fork": false
+  },
+  {
+   "full_name": "rehan-remade/universal-modder",
+   "stars": 7384,
+   "created_at": "2026-09-30T05:00:35Z",
+   "age_days": 13.74,
+   "stars_per_day": 537.3,
+   "language": "Python",
+   "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reve",
+   "fork": false
+  },
+  {
+   "full_name": "zhuyansen/new-term-radar",
+   "stars": 857,
+   "created_at": "2026-10-12T07:11:01Z",
+   "age_days": 1.65,
+   "stars_per_day": 518.7,
+   "language": "Python",
+   "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps be",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/effectcraft",
+   "stars": 6221,
+   "created_at": "2026-10-01T14:24:46Z",
+   "age_days": 12.35,
+   "stars_per_day": 503.7,
+   "language": "Rust",
+   "description": "EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "alchaincyf/huashu-art-motion",
+   "stars": 3835,
+   "created_at": "2026-10-06T04:49:37Z",
+   "age_days": 7.75,
+   "stars_per_day": 494.8,
+   "language": "JavaScript",
+   "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "zhongerxin/iPhone-use",
+   "stars": 3573,
+   "created_at": "2026-10-06T15:09:33Z",
+   "age_days": 7.32,
+   "stars_per_day": 488.1,
+   "language": "Python",
+   "description": "\u8ba9 Codex \u901a\u8fc7 USB \u64cd\u4f5c\u771f\u5b9e iPhone\uff1a\u5f15\u5bfc\u5b89\u88c5\u3001App \u81ea\u52a8\u5316\u3001\u5b9e\u65f6\u5c4f\u5e55\u4e0e\u622a\u56fe\u56de\u9000\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "LosaLosSantos/aurelio-finance",
+   "stars": 3317,
+   "created_at": "2026-10-06T20:14:19Z",
+   "age_days": 7.11,
+   "stars_per_day": 466.6,
+   "language": "Python",
+   "description": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts o",
+   "fork": false
+  },
+  {
+   "full_name": "ARahim3/DigUp",
+   "stars": 2329,
+   "created_at": "2026-10-08T20:37:51Z",
+   "age_days": 5.09,
+   "stars_per_day": 457.4,
+   "language": "Swift",
+   "description": "Search your Mac by what's in your files: photos, PDFs, recordings, videos and code. On-device, built on Google DeepMind'",
+   "fork": false
+  },
+  {
+   "full_name": "t4t5/omdrop-owl",
+   "stars": 2580,
+   "created_at": "2026-10-08T06:38:33Z",
+   "age_days": 5.67,
+   "stars_per_day": 454.7,
+   "language": "Shell",
+   "description": "airdrop for non-apple devices",
+   "fork": false
+  },
+  {
+   "full_name": "nullmoth/nvidia-macos-driver",
+   "stars": 2901,
+   "created_at": "2026-10-07T08:13:12Z",
+   "age_days": 6.61,
+   "stars_per_day": 439.0,
+   "language": "Rust",
+   "description": "Metal driver for NVIDIA GeForce cards on macOS Sequoia",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/deckcraft",
+   "stars": 2939,
+   "created_at": "2026-10-07T05:27:21Z",
+   "age_days": 6.72,
+   "stars_per_day": 437.1,
+   "language": "Rust",
+   "description": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of",
+   "fork": false
+  },
+  {
+   "full_name": "noahdunnagan/fsearch",
+   "stars": 2029,
+   "created_at": "2026-10-08T17:50:33Z",
+   "age_days": 5.21,
+   "stars_per_day": 389.6,
+   "language": "Rust",
+   "description": "Whole-disk file search for macOS: fuzzy names, typo tolerance, indexed content grep. ~1 ms over 8M files.",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/soundcraft",
+   "stars": 2548,
+   "created_at": "2026-10-07T08:31:31Z",
+   "age_days": 6.6,
+   "stars_per_day": 386.3,
+   "language": "Rust",
+   "description": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "CopilotKit/OpenDots",
+   "stars": 5207,
+   "created_at": "2026-09-29T17:13:58Z",
+   "age_days": 14.23,
+   "stars_per_day": 365.8,
+   "language": "TypeScript",
+   "description": "Your always-on AI coworkers that move between text, calls, and Slack.",
+   "fork": false
+  },
+  {
+   "full_name": "PS5Dev/Byepervisor-Reborn",
+   "stars": 349,
+   "created_at": "2026-10-12T22:26:34Z",
+   "age_days": 1.02,
+   "stars_per_day": 343.4,
+   "language": "C",
+   "description": "Somehow, Byepervisor returned...",
+   "fork": false
+  },
+  {
+   "full_name": "shader-effects-inc/shaders",
+   "stars": 4751,
+   "created_at": "2026-09-29T16:36:26Z",
+   "age_days": 14.26,
+   "stars_per_day": 333.2,
+   "language": "TypeScript",
+   "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
+   "fork": false
+  },
+  {
+   "full_name": "jwuthri-cloud/Tracely-ai",
+   "stars": 749,
+   "created_at": "2026-10-11T15:38:03Z",
+   "age_days": 2.3,
+   "stars_per_day": 325.7,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "h0m3us3r/w1700k-sdr",
+   "stars": 643,
+   "created_at": "2026-10-11T23:21:22Z",
+   "age_days": 1.98,
+   "stars_per_day": 325.0,
+   "language": "C",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "omlahore/RemoveMacAI",
+   "stars": 4592,
+   "created_at": "2026-09-29T11:02:39Z",
+   "age_days": 14.49,
+   "stars_per_day": 316.9,
+   "language": "Swift",
+   "description": "Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups. A native app and CLI, and every change can be un",
+   "fork": false
+  },
+  {
+   "full_name": "alejandrobujan/tendedero",
+   "stars": 2085,
+   "created_at": "2026-10-07T01:29:54Z",
+   "age_days": 6.89,
+   "stars_per_day": 302.7,
+   "language": "Swift",
+   "description": "Screenshots, hung out to dry. A tiny native macOS app that hangs every screenshot on a line at the top of your screen.",
+   "fork": false
+  },
+  {
+   "full_name": "egotoadcitadel/palette-from-image-ai",
+   "stars": 301,
+   "created_at": "2026-10-13T17:08:53Z",
+   "age_days": 1.0,
+   "stars_per_day": 301.0,
+   "language": "Python",
+   "description": "AI coloring palette-from-image generator for designers and pixel artists \u2014 pull a clean named palette straight from any ",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/designcraft",
+   "stars": 3689,
+   "created_at": "2026-10-01T13:13:14Z",
+   "age_days": 12.4,
+   "stars_per_day": 297.5,
+   "language": "Rust",
+   "description": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "bherbruck/solidcraft",
+   "stars": 1779,
+   "created_at": "2026-10-07T18:57:48Z",
+   "age_days": 6.16,
+   "stars_per_day": 288.7,
+   "language": "Rust",
+   "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+   "fork": false
+  },
+  {
+   "full_name": "QingYunA/answer-me-with-html",
+   "stars": 3300,
+   "created_at": "2026-10-02T09:57:40Z",
+   "age_days": 11.54,
+   "stars_per_day": 286.1,
+   "language": "JavaScript",
+   "description": "Answer me with HTML \u2014 an agent skill that answers hard questions with a one-page HTML you can actually read. \u8ba9 AI Agent ",
+   "fork": false
+  },
+  {
+   "full_name": "rociiu/talorys",
+   "stars": 954,
+   "created_at": "2026-10-10T09:46:56Z",
+   "age_days": 3.54,
+   "stars_per_day": 269.2,
+   "language": "TypeScript",
+   "description": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with",
+   "fork": false
+  },
+  {
+   "full_name": "Fei2411/DeepSeek-Bot",
+   "stars": 1667,
+   "created_at": "2026-10-07T15:37:36Z",
+   "age_days": 6.3,
+   "stars_per_day": 264.6,
+   "language": "JavaScript",
+   "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+   "fork": false
+  },
+  {
+   "full_name": "shaongitbd/doory",
+   "stars": 1042,
+   "created_at": "2026-10-10T00:03:25Z",
+   "age_days": 3.95,
+   "stars_per_day": 263.9,
+   "language": "TypeScript",
+   "description": "Open source canva alternative",
+   "fork": false
+  },
+  {
+   "full_name": "marclou/mailcheap",
+   "stars": 889,
+   "created_at": "2026-10-10T12:55:36Z",
+   "age_days": 3.41,
+   "stars_per_day": 260.5,
+   "language": "JavaScript",
+   "description": "Self-hosted newsletters on Amazon SES. About $0.10 per 1,000 emails.",
+   "fork": false
+  },
+  {
+   "full_name": "LoreanXavier/pt-pc",
+   "stars": 1652,
+   "created_at": "2026-10-07T09:33:31Z",
+   "age_days": 6.55,
+   "stars_per_day": 252.1,
+   "language": "C++",
+   "description": "Native PC port of P.T. (runs from your own PS4 game files)",
+   "fork": false
+  },
+  {
+   "full_name": "opengeos/RustGIS",
+   "stars": 776,
+   "created_at": "2026-10-10T18:45:41Z",
+   "age_days": 3.17,
+   "stars_per_day": 244.8,
+   "language": "Rust",
+   "description": "A fast, free and open-source GIS in pure Rust.",
+   "fork": false
+  },
+  {
+   "full_name": "overdriveps5/overdrive-releases",
+   "stars": 276,
+   "created_at": "2026-10-12T19:35:03Z",
+   "age_days": 1.14,
+   "stars_per_day": 243.1,
+   "language": null,
+   "description": "Overdrive releases for jailbroken PS5",
+   "fork": false
+  },
+  {
+   "full_name": "nykooi1/vibe-wise",
+   "stars": 3531,
+   "created_at": "2026-09-29T01:29:57Z",
+   "age_days": 14.89,
+   "stars_per_day": 237.2,
+   "language": "Python",
+   "description": "A Claude Code / Codex plugin that helps you learn how to build while AI writes the code.",
+   "fork": false
+  },
+  {
+   "full_name": "shadany7824/playgta5",
+   "stars": 1562,
+   "created_at": "2026-10-07T08:37:15Z",
+   "age_days": 6.59,
+   "stars_per_day": 236.9,
+   "language": "JavaScript",
+   "description": "A source code for playgta5.com.",
+   "fork": false
+  },
+  {
+   "full_name": "Jakeschincariol/replica-skill",
+   "stars": 2386,
+   "created_at": "2026-10-03T12:07:49Z",
+   "age_days": 10.45,
+   "stars_per_day": 228.4,
+   "language": "Python",
+   "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users",
+   "fork": false
+  },
+  {
+   "full_name": "deadinside28/bloodborne_pc",
+   "stars": 2745,
+   "created_at": "2026-10-01T05:50:31Z",
+   "age_days": 12.71,
+   "stars_per_day": 216.0,
+   "language": "C++",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "trhhubsd/ARTEXX",
+   "stars": 1085,
+   "created_at": "2026-10-08T20:35:22Z",
+   "age_days": 5.09,
+   "stars_per_day": 213.0,
+   "language": "Go",
+   "description": "AI \u81ea\u4e3b\u6e17\u900f\u6d4b\u8bd5\u7cfb\u7edf | \u767e\u5ea6\u201cagent+\u201d\u653b\u9632\u6311\u6218\u8d5b\u51a0\u519b\u9879\u76ee Autumn-27/ARTEX",
+   "fork": false
+  },
+  {
+   "full_name": "NVIDIA-Omniverse/usd-brep",
+   "stars": 1112,
+   "created_at": "2026-10-08T17:27:36Z",
+   "age_days": 5.22,
+   "stars_per_day": 212.9,
+   "language": "C++",
+   "description": "USD BRep is a standalone C++ and Python library for NURBS-based boundary representation (BRep) solid modeling",
+   "fork": false
+  },
+  {
+   "full_name": "HelixDB/helix-foundry",
+   "stars": 1395,
+   "created_at": "2026-10-07T05:10:45Z",
+   "age_days": 6.74,
+   "stars_per_day": 207.1,
+   "language": "TypeScript",
+   "description": "Your company's data, connected into one ontology, on your own computer. A local-first data workspace built on HelixDB an",
+   "fork": false
+  },
+  {
+   "full_name": "wesbos/photo-frame-dashboard",
+   "stars": 1068,
+   "created_at": "2026-10-08T18:22:19Z",
+   "age_days": 5.19,
+   "stars_per_day": 205.9,
+   "language": "Python",
+   "description": "Getting ADB, root, backups and custom apps onto locked-down Android photo frames (Skylight Calendar, BIUFRAME)",
+   "fork": false
+  }
+ ],
+ "all": [
+  {
+   "full_name": "storytold/photocraft",
+   "stars": 57690,
+   "created_at": "2026-09-30T13:37:48Z",
+   "age_days": 13.38,
+   "stars_per_day": 4310.5,
+   "language": "Rust",
+   "description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "openai/math",
+   "stars": 14665,
+   "created_at": "2026-10-06T21:47:02Z",
+   "age_days": 7.04,
+   "stars_per_day": 2082.0,
+   "language": "Lean",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/pdfcraft",
+   "stars": 12689,
+   "created_at": "2026-09-30T13:39:37Z",
+   "age_days": 13.38,
+   "stars_per_day": 948.2,
+   "language": "Rust",
+   "description": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/filmcraft",
+   "stars": 12478,
+   "created_at": "2026-09-30T13:41:20Z",
+   "age_days": 13.38,
+   "stars_per_day": 932.5,
+   "language": "Rust",
+   "description": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/lightcraft",
+   "stars": 11975,
+   "created_at": "2026-09-30T14:09:27Z",
+   "age_days": 13.36,
+   "stars_per_day": 896.2,
+   "language": "Rust",
+   "description": "LightCraft: An open-source non-destructive photo editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/wordcraft",
+   "stars": 11004,
+   "created_at": "2026-10-07T08:34:24Z",
+   "age_days": 6.59,
+   "stars_per_day": 1668.7,
+   "language": "Rust",
+   "description": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/vectorcraft",
+   "stars": 8435,
+   "created_at": "2026-09-30T13:43:03Z",
+   "age_days": 13.38,
+   "stars_per_day": 630.4,
+   "language": "Rust",
+   "description": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "wheresryan22/anatomy",
+   "stars": 8102,
+   "created_at": "2026-10-08T10:12:49Z",
+   "age_days": 5.53,
+   "stars_per_day": 1466.2,
+   "language": "JavaScript",
+   "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Ge",
+   "fork": false
+  },
+  {
+   "full_name": "rehan-remade/universal-modder",
+   "stars": 7384,
+   "created_at": "2026-09-30T05:00:35Z",
+   "age_days": 13.74,
+   "stars_per_day": 537.3,
+   "language": "Python",
+   "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reve",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/effectcraft",
+   "stars": 6221,
+   "created_at": "2026-10-01T14:24:46Z",
+   "age_days": 12.35,
+   "stars_per_day": 503.7,
+   "language": "Rust",
+   "description": "EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "CopilotKit/OpenDots",
+   "stars": 5207,
+   "created_at": "2026-09-29T17:13:58Z",
+   "age_days": 14.23,
+   "stars_per_day": 365.8,
+   "language": "TypeScript",
+   "description": "Your always-on AI coworkers that move between text, calls, and Slack.",
+   "fork": false
+  },
+  {
+   "full_name": "shader-effects-inc/shaders",
+   "stars": 4751,
+   "created_at": "2026-09-29T16:36:26Z",
+   "age_days": 14.26,
+   "stars_per_day": 333.2,
+   "language": "TypeScript",
+   "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
+   "fork": false
+  },
+  {
+   "full_name": "omlahore/RemoveMacAI",
+   "stars": 4592,
+   "created_at": "2026-09-29T11:02:39Z",
+   "age_days": 14.49,
+   "stars_per_day": 316.9,
+   "language": "Swift",
+   "description": "Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups. A native app and CLI, and every change can be un",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/gridcraft",
+   "stars": 4418,
+   "created_at": "2026-10-07T05:18:16Z",
+   "age_days": 6.73,
+   "stars_per_day": 656.4,
+   "language": "Rust",
+   "description": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/cadcraft",
+   "stars": 4169,
+   "created_at": "2026-10-07T05:22:31Z",
+   "age_days": 6.73,
+   "stars_per_day": 619.7,
+   "language": "Rust",
+   "description": "CADCraft: computer-aided design and drafting \u2014 an open-source, clean-room AutoCAD-style app in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "mhtsec/ARTEX",
+   "stars": 3869,
+   "created_at": "2026-10-08T05:33:06Z",
+   "age_days": 5.72,
+   "stars_per_day": 676.4,
+   "language": "Go",
+   "description": "AI \u81ea\u4e3b\u6e17\u900f\u6d4b\u8bd5\u7cfb\u7edf | \u767e\u5ea6\u201cagent+\u201d\u653b\u9632\u6311\u6218\u8d5b\u51a0\u519b\u9879\u76ee",
+   "fork": false
+  },
+  {
+   "full_name": "alchaincyf/huashu-art-motion",
+   "stars": 3835,
+   "created_at": "2026-10-06T04:49:37Z",
+   "age_days": 7.75,
+   "stars_per_day": 494.8,
+   "language": "JavaScript",
+   "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/designcraft",
+   "stars": 3689,
+   "created_at": "2026-10-01T13:13:14Z",
+   "age_days": 12.4,
+   "stars_per_day": 297.5,
+   "language": "Rust",
+   "description": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "zhongerxin/iPhone-use",
+   "stars": 3573,
+   "created_at": "2026-10-06T15:09:33Z",
+   "age_days": 7.32,
+   "stars_per_day": 488.1,
+   "language": "Python",
+   "description": "\u8ba9 Codex \u901a\u8fc7 USB \u64cd\u4f5c\u771f\u5b9e iPhone\uff1a\u5f15\u5bfc\u5b89\u88c5\u3001App \u81ea\u52a8\u5316\u3001\u5b9e\u65f6\u5c4f\u5e55\u4e0e\u622a\u56fe\u56de\u9000\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "nykooi1/vibe-wise",
+   "stars": 3531,
+   "created_at": "2026-09-29T01:29:57Z",
+   "age_days": 14.89,
+   "stars_per_day": 237.2,
+   "language": "Python",
+   "description": "A Claude Code / Codex plugin that helps you learn how to build while AI writes the code.",
+   "fork": false
+  },
+  {
+   "full_name": "LosaLosSantos/aurelio-finance",
+   "stars": 3317,
+   "created_at": "2026-10-06T20:14:19Z",
+   "age_days": 7.11,
+   "stars_per_day": 466.6,
+   "language": "Python",
+   "description": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts o",
+   "fork": false
+  },
+  {
+   "full_name": "QingYunA/answer-me-with-html",
+   "stars": 3300,
+   "created_at": "2026-10-02T09:57:40Z",
+   "age_days": 11.54,
+   "stars_per_day": 286.1,
+   "language": "JavaScript",
+   "description": "Answer me with HTML \u2014 an agent skill that answers hard questions with a one-page HTML you can actually read. \u8ba9 AI Agent ",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/deckcraft",
+   "stars": 2939,
+   "created_at": "2026-10-07T05:27:21Z",
+   "age_days": 6.72,
+   "stars_per_day": 437.1,
+   "language": "Rust",
+   "description": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of",
+   "fork": false
+  },
+  {
+   "full_name": "nullmoth/nvidia-macos-driver",
+   "stars": 2901,
+   "created_at": "2026-10-07T08:13:12Z",
+   "age_days": 6.61,
+   "stars_per_day": 439.0,
+   "language": "Rust",
+   "description": "Metal driver for NVIDIA GeForce cards on macOS Sequoia",
+   "fork": false
+  },
+  {
+   "full_name": "feder-cr/invisible_playwright_mcp",
+   "stars": 2766,
+   "created_at": "2026-09-29T23:06:00Z",
+   "age_days": 13.99,
+   "stars_per_day": 197.7,
+   "language": "Python",
+   "description": "Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Pyt",
+   "fork": false
+  },
+  {
+   "full_name": "deadinside28/bloodborne_pc",
+   "stars": 2745,
+   "created_at": "2026-10-01T05:50:31Z",
+   "age_days": 12.71,
+   "stars_per_day": 216.0,
+   "language": "C++",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "BlueHeisenberg/SCSKiller",
+   "stars": 2663,
+   "created_at": "2026-09-29T21:01:10Z",
+   "age_days": 14.08,
+   "stars_per_day": 189.2,
+   "language": "C#",
+   "description": "Kill shader compilation stutter before you play. Compiles your games' shaders into the GPU driver's cache ahead of time.",
+   "fork": false
+  },
+  {
+   "full_name": "t4t5/omdrop-owl",
+   "stars": 2580,
+   "created_at": "2026-10-08T06:38:33Z",
+   "age_days": 5.67,
+   "stars_per_day": 454.7,
+   "language": "Shell",
+   "description": "airdrop for non-apple devices",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/soundcraft",
+   "stars": 2548,
+   "created_at": "2026-10-07T08:31:31Z",
+   "age_days": 6.6,
+   "stars_per_day": 386.3,
+   "language": "Rust",
+   "description": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "Jakeschincariol/replica-skill",
+   "stars": 2386,
+   "created_at": "2026-10-03T12:07:49Z",
+   "age_days": 10.45,
+   "stars_per_day": 228.4,
+   "language": "Python",
+   "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users",
+   "fork": false
+  },
+  {
+   "full_name": "ARahim3/DigUp",
+   "stars": 2329,
+   "created_at": "2026-10-08T20:37:51Z",
+   "age_days": 5.09,
+   "stars_per_day": 457.4,
+   "language": "Swift",
+   "description": "Search your Mac by what's in your files: photos, PDFs, recordings, videos and code. On-device, built on Google DeepMind'",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/craft-launcher",
+   "stars": 2271,
+   "created_at": "2026-10-09T23:21:59Z",
+   "age_days": 3.98,
+   "stars_per_day": 570.9,
+   "language": "Rust",
+   "description": "The Craft App Launcher",
+   "fork": false
+  },
+  {
+   "full_name": "wy51ai/floorplan-3d",
+   "stars": 2233,
+   "created_at": "2026-09-29T02:57:30Z",
+   "age_days": 14.83,
+   "stars_per_day": 150.6,
+   "language": "HTML",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "facebookincubator/muse-gadget-sdk",
+   "stars": 2119,
+   "created_at": "2026-10-02T18:21:23Z",
+   "age_days": 11.19,
+   "stars_per_day": 189.4,
+   "language": "C",
+   "description": "Open source SDK to build Muse gadgets",
+   "fork": false
+  },
+  {
+   "full_name": "alejandrobujan/tendedero",
+   "stars": 2085,
+   "created_at": "2026-10-07T01:29:54Z",
+   "age_days": 6.89,
+   "stars_per_day": 302.7,
+   "language": "Swift",
+   "description": "Screenshots, hung out to dry. A tiny native macOS app that hangs every screenshot on a line at the top of your screen.",
+   "fork": false
+  },
+  {
+   "full_name": "liseami/CCBaga",
+   "stars": 2044,
+   "created_at": "2026-10-11T03:47:06Z",
+   "age_days": 2.79,
+   "stars_per_day": 731.6,
+   "language": "Rust",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "noahdunnagan/fsearch",
+   "stars": 2029,
+   "created_at": "2026-10-08T17:50:33Z",
+   "age_days": 5.21,
+   "stars_per_day": 389.6,
+   "language": "Rust",
+   "description": "Whole-disk file search for macOS: fuzzy names, typo tolerance, indexed content grep. ~1 ms over 8M files.",
+   "fork": false
+  },
+  {
+   "full_name": "nanaism/yomiyasu",
+   "stars": 1942,
+   "created_at": "2026-09-30T11:49:32Z",
+   "age_days": 13.46,
+   "stars_per_day": 144.3,
+   "language": "Python",
+   "description": "AI\u751f\u6210\u306e\u65e5\u672c\u8a9e\u3092\u81ea\u7136\u306a\u65e5\u672c\u8a9e\u3078\u63a8\u6572\u3059\u308bAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
+   "fork": false
+  },
+  {
+   "full_name": "lucasmarkes/hairline",
+   "stars": 1906,
+   "created_at": "2026-10-01T13:52:19Z",
+   "age_days": 12.37,
+   "stars_per_day": 154.0,
+   "language": "TypeScript",
+   "description": "Six isometric line figures that answer the pointer. For React and for anything with a DOM.",
+   "fork": false
+  },
+  {
+   "full_name": "bherbruck/solidcraft",
+   "stars": 1779,
+   "created_at": "2026-10-07T18:57:48Z",
+   "age_days": 6.16,
+   "stars_per_day": 288.7,
+   "language": "Rust",
+   "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+   "fork": false
+  },
+  {
+   "full_name": "kargulstudio/sales-crm",
+   "stars": 1709,
+   "created_at": "2026-10-04T10:55:58Z",
+   "age_days": 9.5,
+   "stars_per_day": 180.0,
+   "language": "TypeScript",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "Fei2411/DeepSeek-Bot",
+   "stars": 1667,
+   "created_at": "2026-10-07T15:37:36Z",
+   "age_days": 6.3,
+   "stars_per_day": 264.6,
+   "language": "JavaScript",
+   "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+   "fork": false
+  },
+  {
+   "full_name": "LoreanXavier/pt-pc",
+   "stars": 1652,
+   "created_at": "2026-10-07T09:33:31Z",
+   "age_days": 6.55,
+   "stars_per_day": 252.1,
+   "language": "C++",
+   "description": "Native PC port of P.T. (runs from your own PS4 game files)",
+   "fork": false
+  },
+  {
+   "full_name": "shadany7824/playgta5",
+   "stars": 1562,
+   "created_at": "2026-10-07T08:37:15Z",
+   "age_days": 6.59,
+   "stars_per_day": 236.9,
+   "language": "JavaScript",
+   "description": "A source code for playgta5.com.",
+   "fork": false
+  },
+  {
+   "full_name": "CAPCOM-TD-OSS/REDox",
+   "stars": 1558,
+   "created_at": "2026-09-30T10:20:07Z",
+   "age_days": 13.52,
+   "stars_per_day": 115.2,
+   "language": "C#",
+   "description": "High-performance, token-based structured data engine for .NET. A core component of REX, the technology behind CAPCOM's n",
+   "fork": false
+  },
+  {
+   "full_name": "onehumanbeing/esp32-iphone-agent",
+   "stars": 1489,
+   "created_at": "2026-10-11T19:10:25Z",
+   "age_days": 2.15,
+   "stars_per_day": 691.8,
+   "language": "Python",
+   "description": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No M",
+   "fork": false
+  },
+  {
+   "full_name": "jiwoochris/artex-global",
+   "stars": 1434,
+   "created_at": "2026-10-03T14:49:48Z",
+   "age_days": 10.33,
+   "stars_per_day": 138.8,
+   "language": "Go",
+   "description": "ARTEX \ud55c\uad6d\uc5b4\ud310 \u00b7 AI \uc790\uc728 \uce68\ud22c \ud14c\uc2a4\ud2b8 \ud504\ub808\uc784\uc6cc\ud06c(upstream: Autumn-27/ARTEX, AGPL-3.0)",
+   "fork": false
+  },
+  {
+   "full_name": "oil-oil/oil-ui",
+   "stars": 1432,
+   "created_at": "2026-09-30T03:55:35Z",
+   "age_days": 13.79,
+   "stars_per_day": 103.9,
+   "language": "Python",
+   "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refi",
+   "fork": false
+  },
+  {
+   "full_name": "HelixDB/helix-foundry",
+   "stars": 1395,
+   "created_at": "2026-10-07T05:10:45Z",
+   "age_days": 6.74,
+   "stars_per_day": 207.1,
+   "language": "TypeScript",
+   "description": "Your company's data, connected into one ontology, on your own computer. A local-first data workspace built on HelixDB an",
+   "fork": false
+  },
+  {
+   "full_name": "sganggs/Stronghold-Protocol",
+   "stars": 1361,
+   "created_at": "2026-10-02T09:38:41Z",
+   "age_days": 11.55,
+   "stars_per_day": 117.8,
+   "language": "JavaScript",
+   "description": "\u660e\u65e5\u65b9\u821f\u300c\u536b\u620d\u534f\u8bae\uff1a\u76df\u7ea6\u300d\u975e\u5b98\u65b9\u540c\u4eba\u590d\u523b\uff1a\u6d4f\u89c8\u5668\u81ea\u8d70\u68cb\u5854\u9632\uff0c\u5355\u4eba\u6216 1\u20134 \u4eba\u8054\u673a\u5408\u4f5c\uff08\u975e\u5546\u4e1a\uff09",
+   "fork": false
+  },
+  {
+   "full_name": "mizorewww/x_gift_bot",
+   "stars": 1239,
+   "created_at": "2026-10-02T10:29:43Z",
+   "age_days": 11.51,
+   "stars_per_day": 107.6,
+   "language": "Go",
+   "description": "X Premium gift CLI and redemption site",
+   "fork": false
+  },
+  {
+   "full_name": "wuyoscar/AISafetyHot-Hub",
+   "stars": 1237,
+   "created_at": "2026-10-01T11:33:59Z",
+   "age_days": 12.47,
+   "stars_per_day": 99.2,
+   "language": "TeX",
+   "description": "Safety News & Research Monitor. https://aisafetyhot.com",
+   "fork": false
+  },
+  {
+   "full_name": "chasmlol/SkyCraft",
+   "stars": 1198,
+   "created_at": "2026-09-30T16:40:20Z",
+   "age_days": 13.26,
+   "stars_per_day": 90.4,
+   "language": "C++",
+   "description": "Play Skyrim as a Minecraft player: Minecraft physics, inventory, blocks and combat inside Skyrim's world (SKSE plugin + ",
+   "fork": false
+  },
+  {
+   "full_name": "pingdotgg/ts-rust",
+   "stars": 1157,
+   "created_at": "2026-10-07T05:17:07Z",
+   "age_days": 6.73,
+   "stars_per_day": 171.9,
+   "language": "Rust",
+   "description": "An experimental Rust port of the TypeScript 7 compiler (tsc)",
+   "fork": false
+  },
+  {
+   "full_name": "academa-labs/manimgx",
+   "stars": 1125,
+   "created_at": "2026-10-05T20:57:05Z",
+   "age_days": 8.08,
+   "stars_per_day": 139.3,
+   "language": "Python",
+   "description": "The animation engine for agents: blazingly fast math and 3D videos with Manim's Python API, on a Rust GPU core.",
+   "fork": false
+  },
+  {
+   "full_name": "NVIDIA-Omniverse/usd-brep",
+   "stars": 1112,
+   "created_at": "2026-10-08T17:27:36Z",
+   "age_days": 5.22,
+   "stars_per_day": 212.9,
+   "language": "C++",
+   "description": "USD BRep is a standalone C++ and Python library for NURBS-based boundary representation (BRep) solid modeling",
+   "fork": false
+  },
+  {
+   "full_name": "jhaizhou-ops/d2r-mobile",
+   "stars": 1094,
+   "created_at": "2026-10-12T08:41:19Z",
+   "age_days": 1.59,
+   "stars_per_day": 688.3,
+   "language": "C",
+   "description": "Open-source iOS / macOS compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs you",
+   "fork": false
+  },
+  {
+   "full_name": "trhhubsd/ARTEXX",
+   "stars": 1085,
+   "created_at": "2026-10-08T20:35:22Z",
+   "age_days": 5.09,
+   "stars_per_day": 213.0,
+   "language": "Go",
+   "description": "AI \u81ea\u4e3b\u6e17\u900f\u6d4b\u8bd5\u7cfb\u7edf | \u767e\u5ea6\u201cagent+\u201d\u653b\u9632\u6311\u6218\u8d5b\u51a0\u519b\u9879\u76ee Autumn-27/ARTEX",
+   "fork": false
+  },
+  {
+   "full_name": "wesbos/photo-frame-dashboard",
+   "stars": 1068,
+   "created_at": "2026-10-08T18:22:19Z",
+   "age_days": 5.19,
+   "stars_per_day": 205.9,
+   "language": "Python",
+   "description": "Getting ADB, root, backups and custom apps onto locked-down Android photo frames (Skylight Calendar, BIUFRAME)",
+   "fork": false
+  },
+  {
+   "full_name": "openai/mcp-extensions",
+   "stars": 1043,
+   "created_at": "2026-09-29T00:45:42Z",
+   "age_days": 14.92,
+   "stars_per_day": 69.9,
+   "language": "TypeScript",
+   "description": "Build plugins that feel like native, first-class features of ChatGPT.",
+   "fork": false
+  },
+  {
+   "full_name": "shaongitbd/doory",
+   "stars": 1042,
+   "created_at": "2026-10-10T00:03:25Z",
+   "age_days": 3.95,
+   "stars_per_day": 263.9,
+   "language": "TypeScript",
+   "description": "Open source canva alternative",
+   "fork": false
+  },
+  {
+   "full_name": "darrenprx/lolPing",
+   "stars": 1042,
+   "created_at": "2026-10-02T19:57:41Z",
+   "age_days": 11.12,
+   "stars_per_day": 93.7,
+   "language": "TypeScript",
+   "description": "League of Legends ping wheel for your Windows desktop. Hold Alt, drag, and ping anywhere, with the original animations a",
+   "fork": false
+  },
+  {
+   "full_name": "Dingo-Shenanigans/ReSkate",
+   "stars": 1037,
+   "created_at": "2026-10-02T15:15:28Z",
+   "age_days": 11.32,
+   "stars_per_day": 91.6,
+   "language": "C++",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "yksr-melt/Meltype",
+   "stars": 1015,
+   "created_at": "2026-09-29T12:14:03Z",
+   "age_days": 14.44,
+   "stars_per_day": 70.3,
+   "language": "C#",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "StayLameBro/backburner",
+   "stars": 999,
+   "created_at": "2026-10-01T20:59:56Z",
+   "age_days": 12.08,
+   "stars_per_day": 82.7,
+   "language": "Python",
+   "description": "Your iPhone helps your Mac run a 27B model: faster prompt reading and more context over a USB-C cable",
+   "fork": false
+  },
+  {
+   "full_name": "anthropics/oss-scanner",
+   "stars": 963,
+   "created_at": "2026-10-08T17:25:19Z",
+   "age_days": 5.23,
+   "stars_per_day": 184.3,
+   "language": "Dockerfile",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "rociiu/talorys",
+   "stars": 954,
+   "created_at": "2026-10-10T09:46:56Z",
+   "age_days": 3.54,
+   "stars_per_day": 269.2,
+   "language": "TypeScript",
+   "description": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with",
+   "fork": false
+  },
+  {
+   "full_name": "Edwardxlai/easyread",
+   "stars": 926,
+   "created_at": "2026-09-30T12:52:24Z",
+   "age_days": 13.42,
+   "stars_per_day": 69.0,
+   "language": "Python",
+   "description": "\u628a\u82f1\u6587\u8bba\u6587\u8bfb\u6210\u8212\u670d\u7684\u4e2d\u6587\uff1a\u672c\u5730 PDF \u8bba\u6587\u7ffb\u8bd1\u3001\u539f\u6587\u5bf9\u7167\u3001\u8fb9\u8bfb\u8fb9\u95ee AI\u3001\u6587\u732e\u7ba1\u7406\u3002Read English papers in comfortable Chinese.",
+   "fork": false
+  },
+  {
+   "full_name": "marclou/mailcheap",
+   "stars": 889,
+   "created_at": "2026-10-10T12:55:36Z",
+   "age_days": 3.41,
+   "stars_per_day": 260.5,
+   "language": "JavaScript",
+   "description": "Self-hosted newsletters on Amazon SES. About $0.10 per 1,000 emails.",
+   "fork": false
+  },
+  {
+   "full_name": "zhuyansen/new-term-radar",
+   "stars": 857,
+   "created_at": "2026-10-12T07:11:01Z",
+   "age_days": 1.65,
+   "stars_per_day": 518.7,
+   "language": "Python",
+   "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps be",
+   "fork": false
+  },
+  {
+   "full_name": "T-Auto/dsh-ops",
+   "stars": 853,
+   "created_at": "2026-10-08T07:09:25Z",
+   "age_days": 5.65,
+   "stars_per_day": 150.9,
+   "language": "JavaScript",
+   "description": "A toolkit for low-level operations in DSH, designed to reduce token usage and task execution time / DSH \u5e95\u5c42\u64cd\u4f5c\u5de5\u5177\u63d2\u4ef6\uff0c\u65e8\u5728\u51cf\u5c11 To",
+   "fork": false
+  },
+  {
+   "full_name": "Folkbench/folkbench",
+   "stars": 841,
+   "created_at": "2026-10-02T09:50:45Z",
+   "age_days": 11.54,
+   "stars_per_day": 72.9,
+   "language": "Rust",
+   "description": "AI API \u4e2d\u8f6c\u7ad9\u8bc4\u6d4b\u6392\u884c\u4e0e\u5207\u6362\u5de5\u5177\uff1a\u5b9e\u6d4b\u53ef\u7528\u7387\u3001\u5ef6\u8fdf\u4e0e\u4ef7\u683c \u00b7 Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
+   "fork": false
+  },
+  {
+   "full_name": "bas3line/ascii",
+   "stars": 832,
+   "created_at": "2026-10-07T06:48:54Z",
+   "age_days": 6.67,
+   "stars_per_day": 124.8,
+   "language": "TypeScript",
+   "description": "Animated ascii art for web pages, in TypeScript: React, Next.js, Astro, or one HTML tag",
+   "fork": false
+  },
+  {
+   "full_name": "rauchg/gdp-ts",
+   "stars": 799,
+   "created_at": "2026-10-04T18:55:18Z",
+   "age_days": 9.16,
+   "stars_per_day": 87.2,
+   "language": "TypeScript",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "elstongun/leviathan",
+   "stars": 799,
+   "created_at": "2026-10-05T08:57:44Z",
+   "age_days": 8.58,
+   "stars_per_day": 93.1,
+   "language": "Rust",
+   "description": "Deep memory for agents over large datasets. Leviathan is a single static binary that turns your records (JSONL, JSON, CS",
+   "fork": false
+  },
+  {
+   "full_name": "sirioberati/Genjustsu-Open-Source-Workflow",
+   "stars": 799,
+   "created_at": "2026-10-06T23:18:18Z",
+   "age_days": 6.98,
+   "stars_per_day": 114.5,
+   "language": "Python",
+   "description": "Open-source AI video replacement workflow by TEIN. Combine depth maps, SAM segmentation, face meshes, and audio processi",
+   "fork": false
+  },
+  {
+   "full_name": "ToiCF/CF-Workers-TGProxy",
+   "stars": 789,
+   "created_at": "2026-10-08T16:38:51Z",
+   "age_days": 5.26,
+   "stars_per_day": 150.1,
+   "language": null,
+   "description": "\u57fa\u4e8e Cloudflare Workers \u7684 Telegram Web/MTProto WebSocket \u4ee3\u7406\u4e2d\u7ee7\uff0c\u652f\u6301 bridge \u9274\u6743\u3001bootstrap/session \u4ee4\u724c\u3001\u591a lane WS \u590d\u7528\u3001AES-CTR \u52a0\u5bc6\u3001\u81ea\u5b9a",
+   "fork": false
+  },
+  {
+   "full_name": "ThariqS/ai-newtab",
+   "stars": 787,
+   "created_at": "2026-10-08T17:44:43Z",
+   "age_days": 5.21,
+   "stars_per_day": 151.0,
+   "language": "TypeScript",
+   "description": "Claude generates a daily new tab page based on your browser history.",
+   "fork": false
+  },
+  {
+   "full_name": "Arekejoker/qwen21-nsfw-pose-skill",
+   "stars": 785,
+   "created_at": "2026-10-13T03:09:42Z",
+   "age_days": 1.0,
+   "stars_per_day": 785.0,
+   "language": "Python",
+   "description": "Qwen-Image 2.1 NSFW/\u59ff\u52bf\u51fa\u56fe skill\uff1a\u4f5c\u8005\u7ea7\u63d0\u793a\u8bcd\u914d\u65b9 + NSFW LoRA + 136 \u59ff\u52bf VNCCS \u4eba\u5076\u63a7\u5236\uff1b\u9002\u7528 Claude Code / Codex / Cursor / OpenClaw",
+   "fork": false
+  },
+  {
+   "full_name": "AgentMemoryRepo/agentmemoryrepo",
+   "stars": 780,
+   "created_at": "2026-10-04T22:10:48Z",
+   "age_days": 9.03,
+   "stars_per_day": 86.4,
+   "language": null,
+   "description": "Spec for Agent Memory Repo",
+   "fork": false
+  },
+  {
+   "full_name": "opengeos/RustGIS",
+   "stars": 776,
+   "created_at": "2026-10-10T18:45:41Z",
+   "age_days": 3.17,
+   "stars_per_day": 244.8,
+   "language": "Rust",
+   "description": "A fast, free and open-source GIS in pure Rust.",
+   "fork": false
+  },
+  {
+   "full_name": "Vincentwei1021/mg-styles-15",
+   "stars": 771,
+   "created_at": "2026-10-02T09:43:06Z",
+   "age_days": 11.55,
+   "stars_per_day": 66.8,
+   "language": "Python",
+   "description": "15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, r",
+   "fork": false
+  },
+  {
+   "full_name": "Hinln/ARTEX",
+   "stars": 750,
+   "created_at": "2026-10-08T11:00:36Z",
+   "age_days": 5.49,
+   "stars_per_day": 136.5,
+   "language": "Go",
+   "description": "ARTEX \u6e90\u7801\u5907\u4efd\uff1a\u57fa\u4e8e Autumn-27/ARTEX v0.3.15\uff0c\u4fdd\u7559\u539f\u59cb\u63d0\u4ea4\u5386\u53f2\u4e0e AGPL-3.0 \u8bb8\u53ef\u8bc1\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "jwuthri-cloud/Tracely-ai",
+   "stars": 749,
+   "created_at": "2026-10-11T15:38:03Z",
+   "age_days": 2.3,
+   "stars_per_day": 325.7,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "blendi-remade/agentcraft",
+   "stars": 742,
+   "created_at": "2026-10-03T00:59:54Z",
+   "age_days": 10.91,
+   "stars_per_day": 68.0,
+   "language": "Java",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "mw00/project-maya",
+   "stars": 737,
+   "created_at": "2026-10-06T22:55:13Z",
+   "age_days": 7.0,
+   "stars_per_day": 105.3,
+   "language": "C++",
+   "description": "Project Maya - GLM-5.3-Flash (321B MoE) on your own NVIDIA GPU(s): engine, server, dashboard, quant tools. Built on Stra",
+   "fork": false
+  },
+  {
+   "full_name": "tcchen2026/VibeOffice",
+   "stars": 733,
+   "created_at": "2026-10-08T05:51:30Z",
+   "age_days": 5.71,
+   "stars_per_day": 128.4,
+   "language": "JavaScript",
+   "description": "A free office suite that runs in your browser, in the style of Office 2003. Nothing to install, no account, no server: d",
+   "fork": false
+  },
+  {
+   "full_name": "serein-morii/DiPlay-CN",
+   "stars": 729,
+   "created_at": "2026-09-29T02:54:09Z",
+   "age_days": 14.83,
+   "stars_per_day": 49.2,
+   "language": "Kotlin",
+   "description": "DiPlay \u52a0\u5f3a\u7248",
+   "fork": false
+  },
+  {
+   "full_name": "saawant12/orbit-store-ps5",
+   "stars": 717,
+   "created_at": "2026-10-02T22:53:42Z",
+   "age_days": 11.0,
+   "stars_per_day": 65.2,
+   "language": null,
+   "description": "A modern PS5 download manager with a native TV app, phone controls and Orbit Zero for Mac, Windows and Linux.",
+   "fork": false
+  },
+  {
+   "full_name": "extend-hq/jevbox",
+   "stars": 716,
+   "created_at": "2026-09-29T20:54:42Z",
+   "age_days": 14.08,
+   "stars_per_day": 50.9,
+   "language": "TypeScript",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "n1tr00-10/tiktok-web-signature",
+   "stars": 712,
+   "created_at": "2026-10-09T19:30:14Z",
+   "age_days": 4.14,
+   "stars_per_day": 172.0,
+   "language": "Python",
+   "description": "tiktok web signature reverse engineer generates valid tiktok signatures for API requets",
+   "fork": false
+  },
+  {
+   "full_name": "DozenTwelve/Papermorph",
+   "stars": 711,
+   "created_at": "2026-10-03T01:38:22Z",
+   "age_days": 10.88,
+   "stars_per_day": 65.3,
+   "language": "HTML",
+   "description": "An AI skill that turns books into animated, narrated, interactive web experiences",
+   "fork": false
+  },
+  {
+   "full_name": "franzenzenhofer/big-arrow-on-the-screen",
+   "stars": 707,
+   "created_at": "2026-10-08T08:39:15Z",
+   "age_days": 5.59,
+   "stars_per_day": 126.5,
+   "language": "Swift",
+   "description": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill fo",
+   "fork": false
+  },
+  {
+   "full_name": "ythx-101/live-panel-skill",
+   "stars": 707,
+   "created_at": "2026-10-03T16:53:36Z",
+   "age_days": 10.25,
+   "stars_per_day": 69.0,
+   "language": "HTML",
+   "description": "Config-driven animated architecture diagrams: turn one JSON file into a terminal-style, always-running diagram or a ligh",
+   "fork": false
+  },
+  {
+   "full_name": "snuri00/ps2-web-recomp",
+   "stars": 692,
+   "created_at": "2026-10-08T07:06:56Z",
+   "age_days": 5.65,
+   "stars_per_day": 122.4,
+   "language": "C++",
+   "description": "PS2 games in the browser: static recompilation to WebAssembly with a native runtime",
+   "fork": false
+  },
+  {
+   "full_name": "shinshin86/mesh-avatar-studio",
+   "stars": 674,
+   "created_at": "2026-10-04T03:33:57Z",
+   "age_days": 9.8,
+   "stars_per_day": 68.8,
+   "language": "TypeScript",
+   "description": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
+   "fork": false
+  },
+  {
+   "full_name": "zeusinsight/FinderSearch",
+   "stars": 658,
+   "created_at": "2026-10-09T08:01:38Z",
+   "age_days": 4.62,
+   "stars_per_day": 142.5,
+   "language": "Swift",
+   "description": "A native macOS file browser with fast fuzzy filename search, powered by fsearch.",
+   "fork": false
+  },
+  {
+   "full_name": "KnifeLemon/Filee",
+   "stars": 657,
+   "created_at": "2026-09-29T20:05:15Z",
+   "age_days": 14.11,
+   "stars_per_day": 46.5,
+   "language": "C#",
+   "description": "Free, open-source file converter. Convert 180+ formats offline by drag & drop \u2014 images, PDF, Word, Excel, PowerPoint, HW",
+   "fork": false
+  },
+  {
+   "full_name": "openqodex/openqodex",
+   "stars": 652,
+   "created_at": "2026-10-02T06:19:06Z",
+   "age_days": 11.69,
+   "stars_per_day": 55.8,
+   "language": "TypeScript",
+   "description": "Open source code review that runs in your coding agent before you push. Scanners plus a separate AI reviewer, on your ow",
+   "fork": false
+  },
+  {
+   "full_name": "blackbearreloaded/ProsperoEden",
+   "stars": 651,
+   "created_at": "2026-09-30T02:15:33Z",
+   "age_days": 13.86,
+   "stars_per_day": 47.0,
+   "language": "C++",
+   "description": "Experimental Eden port for PS5",
+   "fork": false
+  },
+  {
+   "full_name": "h0m3us3r/w1700k-sdr",
+   "stars": 643,
+   "created_at": "2026-10-11T23:21:22Z",
+   "age_days": 1.98,
+   "stars_per_day": 325.0,
+   "language": "C",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "composio-community/open-dot",
+   "stars": 639,
+   "created_at": "2026-09-29T16:34:16Z",
+   "age_days": 14.26,
+   "stars_per_day": 44.8,
+   "language": "TypeScript",
+   "description": "Open-source personal AI agents that work on their own, on their own computers. Mac app, OpenAI + Composio.",
+   "fork": false
+  },
+  {
+   "full_name": "cth9191/animate",
+   "stars": 638,
+   "created_at": "2026-10-04T00:05:25Z",
+   "age_days": 9.95,
+   "stars_per_day": 64.1,
+   "language": "JavaScript",
+   "description": "Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check",
+   "fork": false
+  },
+  {
+   "full_name": "gr8rstudio/gr8r-studio",
+   "stars": 623,
+   "created_at": "2026-10-07T11:44:07Z",
+   "age_days": 6.46,
+   "stars_per_day": 96.4,
+   "language": "JavaScript",
+   "description": "Gr8r Studio: a calm, structured project management workspace. Vite + plain ES modules.",
+   "fork": false
+  },
+  {
+   "full_name": "Gen-Verse/RSI-Anything",
+   "stars": 620,
+   "created_at": "2026-10-08T22:52:16Z",
+   "age_days": 5.0,
+   "stars_per_day": 124.0,
+   "language": "HTML",
+   "description": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+   "fork": false
+  },
+  {
+   "full_name": "szabadkai/c64-keyboard-font",
+   "stars": 616,
+   "created_at": "2026-10-05T11:03:06Z",
+   "age_days": 8.49,
+   "stars_per_day": 72.5,
+   "language": "Python",
+   "description": "Photo-based reconstruction of classic Commodore 64 keycap lettering, with desktop fonts, webfont, editable outlines, and",
+   "fork": false
+  },
+  {
+   "full_name": "amywork777/lipflow",
+   "stars": 613,
+   "created_at": "2026-09-29T20:05:06Z",
+   "age_days": 14.11,
+   "stars_per_day": 43.4,
+   "language": "Python",
+   "description": "Wispr Flow for your lips: hold a key, silently mouth words, and they're typed at your cursor. Runs locally on your Mac.",
+   "fork": false
+  },
+  {
+   "full_name": "strands-labs/strands-decider",
+   "stars": 611,
+   "created_at": "2026-09-29T16:36:38Z",
+   "age_days": 14.26,
+   "stars_per_day": 42.8,
+   "language": "Python",
+   "description": "A small, fast decision model, or system one model, for agentic workflows. Pick between options or rate on a scale faster",
+   "fork": false
+  },
+  {
+   "full_name": "GTKottman/mortiflix-oss",
+   "stars": 608,
+   "created_at": "2026-10-05T15:15:13Z",
+   "age_days": 8.32,
+   "stars_per_day": 73.1,
+   "language": "JavaScript",
+   "description": "A motion design studio on your own machine: Claude makes the video step by step, you approve every stage. Bring your own",
+   "fork": false
+  },
+  {
+   "full_name": "genex-games/genex-desktop",
+   "stars": 601,
+   "created_at": "2026-10-02T17:17:59Z",
+   "age_days": 11.23,
+   "stars_per_day": 53.5,
+   "language": "TypeScript",
+   "description": "Desktop app for game dev with AI. macOS and Linux, Windows soon.",
+   "fork": false
+  },
+  {
+   "full_name": "mdpsec/bug-bounty-hunting-prompts",
+   "stars": 595,
+   "created_at": "2026-09-30T05:43:35Z",
+   "age_days": 13.71,
+   "stars_per_day": 43.4,
+   "language": null,
+   "description": "Reusable prompts for a structured, evidence-first bug bounty hunting workflow",
+   "fork": false
+  },
+  {
+   "full_name": "nanocle/Charakuru",
+   "stars": 594,
+   "created_at": "2026-10-06T08:27:57Z",
+   "age_days": 7.6,
+   "stars_per_day": 78.2,
+   "language": null,
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "richiemcilroy/Tov",
+   "stars": 583,
+   "created_at": "2026-09-29T16:39:23Z",
+   "age_days": 14.26,
+   "stars_per_day": 40.9,
+   "language": "JavaScript",
+   "description": "A TypeScript-shaped language built for coding agents. It compiles to small, fast native binaries.",
+   "fork": false
+  },
+  {
+   "full_name": "fsiaonma/elpis",
+   "stars": 583,
+   "created_at": "2026-09-29T02:19:22Z",
+   "age_days": 14.85,
+   "stars_per_day": 39.2,
+   "language": "TypeScript",
+   "description": "elpis",
+   "fork": false
+  },
+  {
+   "full_name": "c22dev/muguet",
+   "stars": 579,
+   "created_at": "2026-10-10T08:45:02Z",
+   "age_days": 3.59,
+   "stars_per_day": 161.4,
+   "language": "Rust",
+   "description": "A native Mach-O port for iOS/macOS of GTA V, with multiplayer",
+   "fork": false
+  },
+  {
+   "full_name": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
+   "stars": 577,
+   "created_at": "2026-10-01T12:28:45Z",
+   "age_days": 12.43,
+   "stars_per_day": 46.4,
+   "language": "C",
+   "description": "Zelda Wind Waker HD Recomp",
+   "fork": false
+  },
+  {
+   "full_name": "deepseek-ai/DeepGEMM-Ascend",
+   "stars": 575,
+   "created_at": "2026-09-29T15:49:55Z",
+   "age_days": 14.29,
+   "stars_per_day": 40.2,
+   "language": "C++",
+   "description": "DeepGEMM-Ascend: clean and efficient matrix multiplication kernel library for Huawei Ascend NPUs",
+   "fork": false
+  },
+  {
+   "full_name": "programmerguohuajing/DiPlay-Legacy-Android",
+   "stars": 571,
+   "created_at": "2026-09-30T10:45:54Z",
+   "age_days": 13.5,
+   "stars_per_day": 42.3,
+   "language": "Kotlin",
+   "description": "\u57fa\u4e8e shihabal3amri/DiPlay \u4fee\u6539\uff0c\u9762\u5411\u4f4e\u7248\u672c Android \u7cfb\u7edf\u4e0e\u8001\u6b3e Android \u8f66\u673a\u517c\u5bb9",
+   "fork": false
+  },
+  {
+   "full_name": "OpSafari/hypoarena",
+   "stars": 557,
+   "created_at": "2026-09-30T03:35:45Z",
+   "age_days": 13.8,
+   "stars_per_day": 40.4,
+   "language": "Python",
+   "description": "Scientific hypothesis-discovery workbench: grounded hypothesis-evidence graphs, synthetic literature with planted causal",
+   "fork": false
+  },
+  {
+   "full_name": "Jakeschincariol/founder-skill",
+   "stars": 553,
+   "created_at": "2026-10-07T01:07:13Z",
+   "age_days": 6.9,
+   "stars_per_day": 80.1,
+   "language": "Python",
+   "description": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marke",
+   "fork": false
+  },
+  {
+   "full_name": "SubmitGame/awesome-decomp-games",
+   "stars": 546,
+   "created_at": "2026-10-09T15:15:18Z",
+   "age_days": 4.32,
+   "stars_per_day": 126.5,
+   "language": "Python",
+   "description": "Rated, auto-refreshed list of decompiled, recompiled & reverse-engineered games: decomps, static recomps, source ports, ",
+   "fork": false
+  },
+  {
+   "full_name": "droogie/bbhost",
+   "stars": 545,
+   "created_at": "2026-10-07T14:22:17Z",
+   "age_days": 6.35,
+   "stars_per_day": 85.8,
+   "language": "C++",
+   "description": "Definitive Bloodborne PC Experience",
+   "fork": false
+  },
+  {
+   "full_name": "cskwork/scopeweaver",
+   "stars": 543,
+   "created_at": "2026-10-02T14:58:04Z",
+   "age_days": 11.33,
+   "stars_per_day": 47.9,
+   "language": "Go",
+   "description": "ScopeWeaver: English and Korean localization of ARTEX, with preserved AGPL-3.0 attribution.",
+   "fork": false
+  },
+  {
+   "full_name": "MisakaZentai/world-execute-me-dsh-pv",
+   "stars": 540,
+   "created_at": "2026-09-29T23:00:37Z",
+   "age_days": 13.99,
+   "stars_per_day": 38.6,
+   "language": "Python",
+   "description": "Code-rendered TUI fan PV for Mili world.execute(me); with a DeepSeek Harness-style chat window. MIT code; CC BY-NC-SA 4.",
+   "fork": false
+  },
+  {
+   "full_name": "chenwei810/Semiconductor_Manufacturing_Introduction",
+   "stars": 533,
+   "created_at": "2026-10-11T02:01:01Z",
+   "age_days": 2.87,
+   "stars_per_day": 185.9,
+   "language": "Python",
+   "description": "Introduction to Semiconductor Manufacturing",
+   "fork": false
+  },
+  {
+   "full_name": "lonewolf0622/HelixSR",
+   "stars": 520,
+   "created_at": "2026-10-05T10:19:07Z",
+   "age_days": 8.52,
+   "stars_per_day": 61.0,
+   "language": null,
+   "description": "Drop-in FSR 3.1 upscaler for Direct3D 12 that runs DLSS's network (Model E) on AMD GPUs",
+   "fork": false
+  },
+  {
+   "full_name": "YeonwooSung/my-claude-code-mods",
+   "stars": 513,
+   "created_at": "2026-10-09T13:09:11Z",
+   "age_days": 4.4,
+   "stars_per_day": 116.5,
+   "language": "TypeScript",
+   "description": "Custom Claude Code Mods that I need",
+   "fork": false
+  },
+  {
+   "full_name": "npwitk/Macintosh-Skeletal-Filled",
+   "stars": 508,
+   "created_at": "2026-10-10T12:29:10Z",
+   "age_days": 3.43,
+   "stars_per_day": 148.1,
+   "language": null,
+   "description": "helllllllllloooo font! Turns out it's called Macintosh Skeleton",
+   "fork": false
+  },
+  {
+   "full_name": "whirlchat/whirl",
+   "stars": 506,
+   "created_at": "2026-10-02T13:50:42Z",
+   "age_days": 11.37,
+   "stars_per_day": 44.5,
+   "language": "TypeScript",
+   "description": "The AI chat app that sweats the details. Every top model, real memory, living documents, and your own tools.",
+   "fork": false
+  },
+  {
+   "full_name": "Harvil1/codeAgent",
+   "stars": 482,
+   "created_at": "2026-10-02T05:15:41Z",
+   "age_days": 11.73,
+   "stars_per_day": 41.1,
+   "language": "Python",
+   "description": "CodeAgent is an open-source coding agent that lives in your terminal. It understands your repository, plans multi-step c",
+   "fork": false
+  },
+  {
+   "full_name": "pengchujin/livecanvas",
+   "stars": 482,
+   "created_at": "2026-09-30T10:26:35Z",
+   "age_days": 13.52,
+   "stars_per_day": 35.7,
+   "language": "Python",
+   "description": "\u4e00\u53e5\u8bdd\uff0c\u505a\u6210\u6709\u5c01\u9762\u3001\u6709\u52a8\u753b\u7684 Live \u56fe\u3002Turn a sentence into a Live Photo with a designed cover and animation.",
+   "fork": false
+  },
+  {
+   "full_name": "allenv0/SCM",
+   "stars": 481,
+   "created_at": "2026-10-03T16:11:55Z",
+   "age_days": 10.28,
+   "stars_per_day": 46.8,
+   "language": "JavaScript",
+   "description": "Deep AI search for every photo and every frame of video in any folder on macOS",
+   "fork": false
+  },
+  {
+   "full_name": "gholtzap/lintapple",
+   "stars": 478,
+   "created_at": "2026-10-07T14:49:31Z",
+   "age_days": 6.33,
+   "stars_per_day": 75.5,
+   "language": "JavaScript",
+   "description": "It should be impossible for AI to make a bad UI.",
+   "fork": false
+  },
+  {
+   "full_name": "iamlukethedev/Herald-OS",
+   "stars": 476,
+   "created_at": "2026-10-06T20:37:44Z",
+   "age_days": 7.09,
+   "stars_per_day": 67.1,
+   "language": "TypeScript",
+   "description": "An agent-native operating system, with Hermes Agent as the interface. Independent project, not affiliated with Nous Rese",
+   "fork": false
+  },
+  {
+   "full_name": "hezhanleiok/gate",
+   "stars": 474,
+   "created_at": "2026-10-01T03:04:26Z",
+   "age_days": 12.82,
+   "stars_per_day": 37.0,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "isod89/sloop-fm1",
+   "stars": 465,
+   "created_at": "2026-10-04T15:07:43Z",
+   "age_days": 9.32,
+   "stars_per_day": 49.9,
+   "language": "C",
+   "description": "A live groovebox firmware for the M-VAVE FM-1",
+   "fork": false
+  },
+  {
+   "full_name": "Aryanutkarsh/SeeCode",
+   "stars": 465,
+   "created_at": "2026-10-02T18:41:07Z",
+   "age_days": 11.17,
+   "stars_per_day": 41.6,
+   "language": "JavaScript",
+   "description": "Animated, explorable diagrams for Claude and other coding agents, from a short JSON spec.",
+   "fork": false
+  },
+  {
+   "full_name": "noahdunnagan/mcopt",
+   "stars": 461,
+   "created_at": "2026-10-04T17:34:30Z",
+   "age_days": 9.22,
+   "stars_per_day": 50.0,
+   "language": "Java",
+   "description": "mcopt, a Minecraft mod: a native Metal renderer for Minecraft: Java Edition on Apple Silicon Macs (alpha)",
+   "fork": false
+  },
+  {
+   "full_name": "mushigaite/short-video-maker",
+   "stars": 457,
+   "created_at": "2026-10-05T18:35:21Z",
+   "age_days": 8.18,
+   "stars_per_day": 55.9,
+   "language": "Python",
+   "description": "A free open-source project designed to turn youtube-videos into viral short videos. Highlight detection, subtitles, tran",
+   "fork": false
+  },
+  {
+   "full_name": "marmottajr/habblaud",
+   "stars": 456,
+   "created_at": "2026-10-06T15:41:06Z",
+   "age_days": 7.3,
+   "stars_per_day": 62.5,
+   "language": "TypeScript",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "hugelton/Felucca",
+   "stars": 456,
+   "created_at": "2026-10-02T12:09:30Z",
+   "age_days": 11.44,
+   "stars_per_day": 39.8,
+   "language": "C",
+   "description": "Custom firmware for M-VAVE FM-1",
+   "fork": false
+  },
+  {
+   "full_name": "x4gpanell/SuperJinX",
+   "stars": 449,
+   "created_at": "2026-10-02T11:56:18Z",
+   "age_days": 11.45,
+   "stars_per_day": 39.2,
+   "language": "HTML",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "nullmoth/1401",
+   "stars": 445,
+   "created_at": "2026-10-07T08:13:16Z",
+   "age_days": 6.61,
+   "stars_per_day": 67.3,
+   "language": "Python",
+   "description": "Install macOS on your PC from Windows",
+   "fork": false
+  },
+  {
+   "full_name": "wanvfx/ProxyNodeHub",
+   "stars": 432,
+   "created_at": "2026-09-29T14:17:00Z",
+   "age_days": 14.36,
+   "stars_per_day": 30.1,
+   "language": "C#",
+   "description": "ProxyNodeHub \u7528\u4e8e\u53d1\u73b0 GitHub \u4e0a\u6d3b\u8dc3\u7684\u514d\u8d39\u8282\u70b9\u4ed3\u5e93\uff1a\u5206\u6790\u6d3b\u8dc3\u5ea6\u3001\u53bb\u91cd\u5206\u6563\u7684\u8282\u70b9\u3001\u76f4\u63a5\u7ed9\u51fa\u53ef\u7528\u7684\u8ba2\u9605\u94fe\u63a5\u3002\u70b9\u4e00\u6b21\u300c\u641c\u7d22\u5e76\u5206\u6790\u300d\uff0c\u5269\u4e0b\u7684\u68b3\u7406\u5de5\u4f5c\u5168\u90e8\u7531\u5b83\u5b8c\u6210\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "YXBwbWFya2V0/AppMarket",
+   "stars": 431,
+   "created_at": "2026-10-04T08:16:39Z",
+   "age_days": 9.61,
+   "stars_per_day": 44.9,
+   "language": "Kotlin",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "PostHog/jeeves",
+   "stars": 422,
+   "created_at": "2026-09-29T09:56:47Z",
+   "age_days": 14.54,
+   "stars_per_day": 29.0,
+   "language": "Python",
+   "description": "Jeeves \u2013 Reasoning improves Jev-like decision models",
+   "fork": false
+  },
+  {
+   "full_name": "morluto/awesome-reverse-engineering",
+   "stars": 417,
+   "created_at": "2026-10-09T14:58:20Z",
+   "age_days": 4.33,
+   "stars_per_day": 96.4,
+   "language": null,
+   "description": "Curated reverse-engineering tools and learning resources for binaries, apps, firmware, formats, and protocols.",
+   "fork": false
+  },
+  {
+   "full_name": "fulldiagnose/antigravity-fixer",
+   "stars": 411,
+   "created_at": "2026-09-29T05:22:13Z",
+   "age_days": 14.73,
+   "stars_per_day": 27.9,
+   "language": "Python",
+   "description": "Fix Antigravity 'not eligible' error - diagnose, clean credentials, auto-fix",
+   "fork": false
+  },
+  {
+   "full_name": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+   "stars": 410,
+   "created_at": "2026-09-30T22:38:58Z",
+   "age_days": 13.01,
+   "stars_per_day": 31.5,
+   "language": "Python",
+   "description": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold",
+   "fork": false
+  },
+  {
+   "full_name": "Glass-HQ/liquid-glass",
+   "stars": 400,
+   "created_at": "2026-10-06T00:23:48Z",
+   "age_days": 7.93,
+   "stars_per_day": 50.4,
+   "language": "TypeScript",
+   "description": "Liquid Glass materials for web and Electron, built with vgpu.",
+   "fork": false
+  },
+  {
+   "full_name": "chengyi-ai/cy-carousel-skill",
+   "stars": 400,
+   "created_at": "2026-10-04T13:27:37Z",
+   "age_days": 9.39,
+   "stars_per_day": 42.6,
+   "language": "Python",
+   "description": "\u56fe\u6587\u8f6e\u64ad Skill\uff08cy-carousel\uff09\uff1a\u7ed9\u4e00\u4e2a\u9009\u9898\uff0c\u67e5\u8bc1\u3001\u627e\u7d20\u6750\u3001\u6392\u7248\u3001\u68c0\u67e5\u3001\u6253\u5305\uff0c\u4ea4\u4ed8\u5c01\u9762\uff0b10 \u9875",
+   "fork": false
+  },
+  {
+   "full_name": "StartLuxLabs/StartLux-Decision-v1",
+   "stars": 397,
+   "created_at": "2026-09-29T11:53:37Z",
+   "age_days": 14.46,
+   "stars_per_day": 27.5,
+   "language": "Python",
+   "description": "Typed decision models from 0.8B to 35B-A3B, over text and images with a 256K-token context. Every question comes back wi",
+   "fork": false
+  },
+  {
+   "full_name": "gatewai-dev/framefields",
+   "stars": 397,
+   "created_at": "2026-10-02T20:52:53Z",
+   "age_days": 11.08,
+   "stars_per_day": 35.8,
+   "language": "TypeScript",
+   "description": "Code-first video, rendered natively on WebGPU.",
+   "fork": false
+  },
+  {
+   "full_name": "strands-agents/box",
+   "stars": 393,
+   "created_at": "2026-10-02T20:34:08Z",
+   "age_days": 11.09,
+   "stars_per_day": 35.4,
+   "language": "Rust",
+   "description": "Run AI agents in a sandbox that restricts what they can execute, read, write, and reach on the network. Box combines OS ",
+   "fork": false
+  },
+  {
+   "full_name": "TannerMidd/pi-pocket",
+   "stars": 392,
+   "created_at": "2026-10-04T02:29:57Z",
+   "age_days": 9.85,
+   "stars_per_day": 39.8,
+   "language": "TypeScript",
+   "description": "A durable, multiplayer, mobile-first web app for Pi agents, built on Pi Durable",
+   "fork": false
+  },
+  {
+   "full_name": "whaleyxbt/claude-motion",
+   "stars": 391,
+   "created_at": "2026-09-29T18:44:48Z",
+   "age_days": 14.17,
+   "stars_per_day": 27.6,
+   "language": "JavaScript",
+   "description": "A motion design toolkit for coding agents.",
+   "fork": false
+  },
+  {
+   "full_name": "Tejashmakwana/motionmaxxing",
+   "stars": 387,
+   "created_at": "2026-10-06T18:18:49Z",
+   "age_days": 7.19,
+   "stars_per_day": 53.8,
+   "language": "JavaScript",
+   "description": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designe",
+   "fork": false
+  },
+  {
+   "full_name": "x86rc/vmp-lazy-unpack",
+   "stars": 381,
+   "created_at": "2026-10-02T05:10:08Z",
+   "age_days": 11.74,
+   "stars_per_day": 32.5,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "Adolanium/hermes-gadget-sdk",
+   "stars": 380,
+   "created_at": "2026-10-03T10:08:24Z",
+   "age_days": 10.53,
+   "stars_per_day": 36.1,
+   "language": "C++",
+   "description": "Build voice and text devices for your Hermes Agent, with ESP32 firmware, a Linux client, and a desktop simulator.",
+   "fork": false
+  },
+  {
+   "full_name": "nikgrbn/finder-menu",
+   "stars": 377,
+   "created_at": "2026-10-09T23:50:02Z",
+   "age_days": 3.96,
+   "stars_per_day": 95.2,
+   "language": "Swift",
+   "description": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder",
+   "fork": false
+  },
+  {
+   "full_name": "mrsarac/ff-tracking",
+   "stars": 375,
+   "created_at": "2026-10-09T11:12:47Z",
+   "age_days": 4.48,
+   "stars_per_day": 83.6,
+   "language": "Rust",
+   "description": "A virtual camera films an AI agent's screen while a tracker locks onto every glyph. Two fframes passes, one SkSL shader,",
+   "fork": false
+  },
+  {
+   "full_name": "D3ATHLY/blackbox",
+   "stars": 369,
+   "created_at": "2026-10-06T09:37:56Z",
+   "age_days": 7.55,
+   "stars_per_day": 48.9,
+   "language": null,
+   "description": "BB",
+   "fork": false
+  },
+  {
+   "full_name": "jipinwa/hongguo",
+   "stars": 368,
+   "created_at": "2026-10-02T07:12:29Z",
+   "age_days": 11.65,
+   "stars_per_day": 31.6,
+   "language": "Dart",
+   "description": "\u7ea2\u679c\u9274 / \u771f\u679c\u9274 \u652f\u6301\u5b89\u53536.0",
+   "fork": false
+  },
+  {
+   "full_name": "yangbin1322/hongguo-player",
+   "stars": 367,
+   "created_at": "2026-09-29T21:54:29Z",
+   "age_days": 14.04,
+   "stars_per_day": 26.1,
+   "language": null,
+   "description": "\u7ea2\u679c\u77ed\u5267\u7535\u8111\u7248 \u00b7 \u4e0d\u7528\u5b89\u5353\u6a21\u62df\u5668\uff0c\u76f4\u63a5\u5728 Windows / macOS \u4e0a\u5237\u7ea2\u679c\u77ed\u5267 \u00b7 \u56fd\u5185\u4e0b\u8f7d: hongguo.235698.xyz",
+   "fork": false
+  },
+  {
+   "full_name": "vojtaholik/good-css",
+   "stars": 364,
+   "created_at": "2026-10-01T11:49:36Z",
+   "age_days": 12.46,
+   "stars_per_day": 29.2,
+   "language": "HTML",
+   "description": "Opinionated modern CSS techniques, packaged as an agent skill, each with a live specimen.",
+   "fork": false
+  },
+  {
+   "full_name": "fxgl/steamac",
+   "stars": 361,
+   "created_at": "2026-10-04T10:23:35Z",
+   "age_days": 9.52,
+   "stars_per_day": 37.9,
+   "language": "Swift",
+   "description": "Valve's official ARM64 SteamOS in a lightweight VM on Apple Silicon: libkrun + Venus + MoltenVK, controllers, CoreAudio ",
+   "fork": false
+  },
+  {
+   "full_name": "thesysdev/open-intelligent-ui",
+   "stars": 359,
+   "created_at": "2026-10-08T05:37:45Z",
+   "age_days": 5.72,
+   "stars_per_day": 62.8,
+   "language": "TypeScript",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "BootLoops-ai/bootloops",
+   "stars": 357,
+   "created_at": "2026-10-01T15:29:28Z",
+   "age_days": 12.31,
+   "stars_per_day": 29.0,
+   "language": "Python",
+   "description": "BootLoops 1.0: certified computational tools and house engines for exact and high-precision physics and quantitative sci",
+   "fork": false
+  },
+  {
+   "full_name": "OpenCourant/OpenCourant",
+   "stars": 356,
+   "created_at": "2026-10-02T10:08:22Z",
+   "age_days": 11.53,
+   "stars_per_day": 30.9,
+   "language": "Fortran",
+   "description": "Open-source explicit finite element solver for simulating crashes, impacts, explosions, and other dynamic events.",
+   "fork": false
+  },
+  {
+   "full_name": "x4gpanell/JinX-X4G",
+   "stars": 355,
+   "created_at": "2026-10-06T07:17:50Z",
+   "age_days": 7.65,
+   "stars_per_day": 46.4,
+   "language": "HTML",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "huaotem-bot/gezi-quark-downloader",
+   "stars": 353,
+   "created_at": "2026-10-04T07:16:03Z",
+   "age_days": 9.65,
+   "stars_per_day": 36.6,
+   "language": "C#",
+   "description": "Windows \u684c\u9762\u7aef\u7684\u5b8c\u5168\u514d\u8d39\u652f\u6301\u514d\u8f6c\u5b58\u7684\u5938\u514b\u7f51\u76d8\u4e0b\u8f7d\u5668,\u5988\u5988\u518d\u4e5f\u4e0d\u5bb3\u6015\u7f51\u76d8\u5bb9\u91cf\u4e0d\u591f\u4e86",
+   "fork": false
+  },
+  {
+   "full_name": "LordixDemon/apple_watch_connector",
+   "stars": 352,
+   "created_at": "2026-10-09T06:58:06Z",
+   "age_days": 4.66,
+   "stars_per_day": 75.5,
+   "language": "Java",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "1314521gjy/ninfer-fusion-kvmem",
+   "stars": 351,
+   "created_at": "2026-10-04T12:04:52Z",
+   "age_days": 9.45,
+   "stars_per_day": 37.2,
+   "language": "C++",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "CluvexStudio/ZedSecure",
+   "stars": 350,
+   "created_at": "2026-09-29T20:36:24Z",
+   "age_days": 14.09,
+   "stars_per_day": 24.8,
+   "language": "Kotlin",
+   "description": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConne",
+   "fork": false
+  },
+  {
+   "full_name": "GanyuanRan/Autoloom",
+   "stars": 349,
+   "created_at": "2026-09-30T12:40:15Z",
+   "age_days": 13.42,
+   "stars_per_day": 26.0,
+   "language": "JavaScript",
+   "description": "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop cli",
+   "fork": false
+  },
+  {
+   "full_name": "PS5Dev/Byepervisor-Reborn",
+   "stars": 349,
+   "created_at": "2026-10-12T22:26:34Z",
+   "age_days": 1.02,
+   "stars_per_day": 343.4,
+   "language": "C",
+   "description": "Somehow, Byepervisor returned...",
+   "fork": false
+  },
+  {
+   "full_name": "nateherkai/roast-room",
+   "stars": 348,
+   "created_at": "2026-10-10T20:38:58Z",
+   "age_days": 3.09,
+   "stars_per_day": 112.6,
+   "language": "JavaScript",
+   "description": "Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Martell, Gino Wickman, Buffett) debate your business decis",
+   "fork": false
+  },
+  {
+   "full_name": "AnkioTomas/qqpet",
+   "stars": 347,
+   "created_at": "2026-10-07T02:41:52Z",
+   "age_days": 6.84,
+   "stars_per_day": 50.7,
+   "language": "TypeScript",
+   "description": "QQ\u5ba0\u7269\u5355\u673a\u590d\u523b\u7248(AI)",
+   "fork": false
+  },
+  {
+   "full_name": "Spearmintai/mintocode",
+   "stars": 332,
+   "created_at": "2026-09-30T09:18:53Z",
+   "age_days": 13.56,
+   "stars_per_day": 24.5,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "aixisstudio/Snitch",
+   "stars": 330,
+   "created_at": "2026-10-01T15:47:55Z",
+   "age_days": 12.29,
+   "stars_per_day": 26.8,
+   "language": "Python",
+   "description": "Real-time network traffic visualizer \u2014 see every connection your computer makes. Privacy-first, 100% local. / Visualiseu",
+   "fork": false
+  },
+  {
+   "full_name": "joeseesun/qiaomu-clipper",
+   "stars": 330,
+   "created_at": "2026-10-02T10:02:23Z",
+   "age_days": 11.53,
+   "stars_per_day": 28.6,
+   "language": "TypeScript",
+   "description": "\u4e54\u6728\u526a\u85cf\uff1a\u526a\u85cf\u7f51\u9875\u5230 Obsidian\uff0c\u9605\u8bfb\u3001\u7f16\u8f91\uff0c\u5e76\u5411 AI \u63d0\u95ee | Clip the web to Obsidian, then read, edit and chat with AI about it.",
+   "fork": false
+  },
+  {
+   "full_name": "AIPMAndy/how-to-survive-unemployment",
+   "stars": 329,
+   "created_at": "2026-10-09T03:22:58Z",
+   "age_days": 4.81,
+   "stars_per_day": 68.4,
+   "language": "HTML",
+   "description": "\u5931\u4e1a\u81ea\u6551\u5f00\u6e90\u624b\u518c\uff1aN/N+1/2N\u3001\u5931\u4e1a\u91d1\u3001\u533b\u4fdd\u3001\u793e\u4fdd\u3001\u516c\u79ef\u91d1\u3001\u6c42\u804c\u4e0e\u73b0\u91d1\u6d41\u300250\u9879\u884c\u52a8\u4efb\u52a1\u30016\u4efd\u5b9e\u64cdSOP\uff0c\u9644\u5317\u4eac\u4e0a\u6d77\u653f\u7b56\u539f\u6587\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "mariagorskikh/open-instinct",
+   "stars": 325,
+   "created_at": "2026-10-03T20:07:59Z",
+   "age_days": 10.11,
+   "stars_per_day": 32.1,
+   "language": "TypeScript",
+   "description": "Open Instinct: an open-source Instinct. A personal agent you text on iMessage, with its own computer and a trusted netwo",
+   "fork": false
+  },
+  {
+   "full_name": "NabilRFG12/Reverse-Engineer-anything",
+   "stars": 322,
+   "created_at": "2026-10-08T22:35:51Z",
+   "age_days": 5.01,
+   "stars_per_day": 64.3,
+   "language": null,
+   "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/figcraft",
+   "stars": 321,
+   "created_at": "2026-10-09T16:02:13Z",
+   "age_days": 4.28,
+   "stars_per_day": 74.9,
+   "language": "Rust",
+   "description": "FigCraft: interface design and prototyping; an open-source, clean-room reimplementation of collaborative design workflow",
+   "fork": false
+  },
+  {
+   "full_name": "opencoredev/convt",
+   "stars": 319,
+   "created_at": "2026-10-06T01:17:53Z",
+   "age_days": 7.9,
+   "stars_per_day": 40.4,
+   "language": "Rust",
+   "description": "Convert any file with a right-click.",
+   "fork": false
+  },
+  {
+   "full_name": "zhouwei713/luobo-ppt",
+   "stars": 317,
+   "created_at": "2026-10-08T11:50:44Z",
+   "age_days": 5.46,
+   "stars_per_day": 58.1,
+   "language": "Python",
+   "description": "\u751f\u6210\u548c\u7f8e\u5316\u53ef\u7f16\u8f91\u539f\u751f PPT \u7684 Agent Skill",
+   "fork": false
+  },
+  {
+   "full_name": "opensec-git/Pi-Bolt",
+   "stars": 317,
+   "created_at": "2026-10-02T18:35:24Z",
+   "age_days": 11.18,
+   "stars_per_day": 28.4,
+   "language": "TypeScript",
+   "description": "Pi, the coding agent, compiled ahead of time to native code. Starts 3\u00d7 sooner than Pi on Bun and uses about a third of i",
+   "fork": false
+  },
+  {
+   "full_name": "rbrown101010/bluey-by-riley",
+   "stars": 312,
+   "created_at": "2026-10-02T16:12:02Z",
+   "age_days": 11.28,
+   "stars_per_day": 27.7,
+   "language": "Swift",
+   "description": "Googly Eyes: a blueberry character on iPhone that points and acts on your Mac (Mac menu bar app + iOS app)",
+   "fork": false
+  },
+  {
+   "full_name": "VoltAgent/official-mcp-servers",
+   "stars": 312,
+   "created_at": "2026-10-01T07:30:34Z",
+   "age_days": 12.64,
+   "stars_per_day": 24.7,
+   "language": null,
+   "description": "A curated directory of 280+ official MCP servers from the companies behind the products. No unofficial forks, no abandon",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/craft-fonts",
+   "stars": 311,
+   "created_at": "2026-10-06T13:44:10Z",
+   "age_days": 7.38,
+   "stars_per_day": 42.1,
+   "language": "Rust",
+   "description": "Fonts for the Crafting Apps",
+   "fork": false
+  },
+  {
+   "full_name": "fayazara/robot-heads",
+   "stars": 308,
+   "created_at": "2026-10-09T16:28:47Z",
+   "age_days": 4.26,
+   "stars_per_day": 72.2,
+   "language": "TypeScript",
+   "description": "Animated 3D robot heads for React: TV-headed bots with LED faces that show what your agent is doing.",
+   "fork": false
+  },
+  {
+   "full_name": "cosscom/shipyard",
+   "stars": 306,
+   "created_at": "2026-10-02T19:49:23Z",
+   "age_days": 11.13,
+   "stars_per_day": 27.5,
+   "language": "TypeScript",
+   "description": "Run coding agents on your dev boxes: worktrees, terminals, orchestration, kits and automations, with a desktop app.",
+   "fork": false
+  },
+  {
+   "full_name": "sybil-solutions/glm-flash-lite",
+   "stars": 305,
+   "created_at": "2026-10-01T08:25:40Z",
+   "age_days": 12.6,
+   "stars_per_day": 24.2,
+   "language": "Python",
+   "description": "GLM-5.3-Flash EXL3 on one 24 GB RTX 3090 + DDR4: elastic GPU expert cache, zero-copy experts, AVX2 CPU tier, OpenAI API",
+   "fork": false
+  },
+  {
+   "full_name": "sno-ai/sno-station-skills",
+   "stars": 303,
+   "created_at": "2026-10-01T04:18:51Z",
+   "age_days": 12.77,
+   "stars_per_day": 23.7,
+   "language": "Shell",
+   "description": "Sno Station Skills: 31 tested skills that turn Claude Code and Codex into one working team. Cross-vendor peer review, au",
+   "fork": false
+  },
+  {
+   "full_name": "OrgoAI/bops",
+   "stars": 303,
+   "created_at": "2026-10-06T14:45:00Z",
+   "age_days": 7.34,
+   "stars_per_day": 41.3,
+   "language": "TypeScript",
+   "description": "Bops: a team of AI bots that run your business ops, each with its own computer, email and phone number. bops.bot",
+   "fork": false
+  },
+  {
+   "full_name": "juliobsz/skills",
+   "stars": 302,
+   "created_at": "2026-10-12T00:07:32Z",
+   "age_days": 1.95,
+   "stars_per_day": 155.2,
+   "language": "TypeScript",
+   "description": "An agent skill that builds award-caliber websites from one line",
+   "fork": false
+  },
+  {
+   "full_name": "egotoadcitadel/palette-from-image-ai",
+   "stars": 301,
+   "created_at": "2026-10-13T17:08:53Z",
+   "age_days": 1.0,
+   "stars_per_day": 301.0,
+   "language": "Python",
+   "description": "AI coloring palette-from-image generator for designers and pixel artists \u2014 pull a clean named palette straight from any ",
+   "fork": false
+  },
+  {
+   "full_name": "opennookorg/betterwispr",
+   "stars": 299,
+   "created_at": "2026-10-07T19:52:04Z",
+   "age_days": 6.12,
+   "stars_per_day": 48.8,
+   "language": "Swift",
+   "description": "Free, open-source, local-first dictation app for macOS. Hold a shortcut, speak, and text is typed into any app. On-devic",
+   "fork": false
+  },
+  {
+   "full_name": "Jetsku/KytyPS5",
+   "stars": 297,
+   "created_at": "2026-09-30T00:06:09Z",
+   "age_days": 13.95,
+   "stars_per_day": 21.3,
+   "language": "C++",
+   "description": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases.",
+   "fork": false
+  },
+  {
+   "full_name": "justxor/claude-code-pro-course",
+   "stars": 295,
+   "created_at": "2026-09-30T12:15:37Z",
+   "age_days": 13.44,
+   "stars_per_day": 21.9,
+   "language": "Shell",
+   "description": "Claude Code PRO \u2014 \u043f\u043e\u043b\u043d\u044b\u0439 \u043a\u0443\u0440\u0441 \u0438 \u0433\u0430\u0439\u0434 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c: CLAUDE.md, settings, skills, subagents, hooks, MCP, \u043f\u043b\u0430\u0433\u0438\u043d\u044b, CI. 8 \u043b\u0430\u0431\u043e",
+   "fork": false
+  },
+  {
+   "full_name": "nathanialf/ico-pc",
+   "stars": 294,
+   "created_at": "2026-10-03T02:06:56Z",
+   "age_days": 10.86,
+   "stars_per_day": 27.1,
+   "language": "C",
+   "description": "PC, Android, iOS and macOS port of the ICO (PS2) decompilation (nathanialf/ico): Windows, Linux, Steam Deck, Android, iP",
+   "fork": false
+  },
+  {
+   "full_name": "snuri00/psp-web-recomp",
+   "stars": 294,
+   "created_at": "2026-10-07T11:21:20Z",
+   "age_days": 6.48,
+   "stars_per_day": 45.4,
+   "language": "C++",
+   "description": "PSP games in the browser, static recompilation to WebAssembly, an HLE kernel and a WebGL2 renderer",
+   "fork": false
+  },
+  {
+   "full_name": "arielshad/3d-asset-server",
+   "stars": 293,
+   "created_at": "2026-10-04T19:28:37Z",
+   "age_days": 9.14,
+   "stars_per_day": 32.1,
+   "language": "TypeScript",
+   "description": "3d assets api and mcp",
+   "fork": false
+  },
+  {
+   "full_name": "MystiaFin/amane",
+   "stars": 293,
+   "created_at": "2026-10-04T02:57:26Z",
+   "age_days": 9.83,
+   "stars_per_day": 29.8,
+   "language": "Rust",
+   "description": "A framework for building Wayland desktop shell purely in Rust",
+   "fork": false
+  },
+  {
+   "full_name": "kandinskylab/kandinsky-6",
+   "stars": 291,
+   "created_at": "2026-10-05T09:06:41Z",
+   "age_days": 8.57,
+   "stars_per_day": 33.9,
+   "language": "Python",
+   "description": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation",
+   "fork": false
+  },
+  {
+   "full_name": "openfilm/openfilm",
+   "stars": 288,
+   "created_at": "2026-10-04T09:29:07Z",
+   "age_days": 9.56,
+   "stars_per_day": 30.1,
+   "language": "TypeScript",
+   "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
+   "fork": false
+  },
+  {
+   "full_name": "google-deepmind/alphaprotein-novo",
+   "stars": 283,
+   "created_at": "2026-10-05T14:39:58Z",
+   "age_days": 8.34,
+   "stars_per_day": 33.9,
+   "language": "Python",
+   "description": "AlphaProtein Novo",
+   "fork": false
+  },
+  {
+   "full_name": "CHOMPI-Club/CHOMPI",
+   "stars": 282,
+   "created_at": "2026-09-29T15:39:36Z",
+   "age_days": 14.3,
+   "stars_per_day": 19.7,
+   "language": "C++",
+   "description": "All of the production files, hardware and firmware, that make up the CHOMPI Sampler.",
+   "fork": false
+  },
+  {
+   "full_name": "z3xox/Tenkaichi3Decomp",
+   "stars": 281,
+   "created_at": "2026-10-06T07:39:08Z",
+   "age_days": 7.63,
+   "stars_per_day": 36.8,
+   "language": "C",
+   "description": "PC port of Dragon Ball Z: Budokai Tenkaichi 3, built on the BT3-Decompiled project.",
+   "fork": false
+  },
+  {
+   "full_name": "dualface/ste-zh",
+   "stars": 279,
+   "created_at": "2026-10-05T16:45:04Z",
+   "age_days": 8.25,
+   "stars_per_day": 33.8,
+   "language": null,
+   "description": "Agent skill: \u6309 ASD-STE100 (Simplified Technical English) \u539f\u5219\u7528\u4e2d\u6587\u5411\u7528\u6237\u6c47\u62a5\u7ed3\u679c",
+   "fork": false
+  },
+  {
+   "full_name": "Ayzzz123/mcd-coupon-strategist",
+   "stars": 277,
+   "created_at": "2026-10-10T12:59:19Z",
+   "age_days": 3.41,
+   "stars_per_day": 81.2,
+   "language": "Python",
+   "description": "\u9ea6\u9ea6\u7701\u94b1\u52a9\u624b \u2014\u2014 \u57fa\u4e8e\u9ea6\u5f53\u52b3 MCP \u7684\u70b9\u9910\u6210\u672c\u4f18\u5316 Skill\u3002\u7b97\u51fa\u5f53\u524d\u95e8\u5e97\u6700\u7701\u94b1\u7684\u70b9\u9910\u65b9\u6848\uff0c\u5e76\u4e3b\u52a8\u63d0\u793a\u51d1\u5355\u9677\u9631\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "overdriveps5/overdrive-releases",
+   "stars": 276,
+   "created_at": "2026-10-12T19:35:03Z",
+   "age_days": 1.14,
+   "stars_per_day": 243.1,
+   "language": null,
+   "description": "Overdrive releases for jailbroken PS5",
+   "fork": false
+  },
+  {
+   "full_name": "LingCore/WinShun",
+   "stars": 276,
+   "created_at": "2026-10-08T03:18:00Z",
+   "age_days": 5.81,
+   "stars_per_day": 47.5,
+   "language": "C++",
+   "description": "Win\u987a\uff1a\u514d\u8d39\u5f00\u6e90\u7684 Windows \u5feb\u901f\u641c\u7d22\u542f\u52a8\u5668\u3002\u53cc\u51fb Ctrl\uff0c\u62fc\u97f3\u79d2\u641c\u6587\u4ef6\u3001\u5168\u6587\u641c\u7d22 Word/Excel/PDF\u3001\u526a\u8d34\u677f\u5386\u53f2\uff08\u4ee3\u66ff Win+V\uff09\u3001\u5bf9\u8bdd\u6846\u641c\u7d22\u3001\u4efb\u52a1\u680f\u641c\u7d22\u3001\u63d2\u4ef6\u3001AI \u52a9\u624b MCP\u3002Free Windows sear",
+   "fork": false
+  },
+  {
+   "full_name": "youcci/playport",
+   "stars": 275,
+   "created_at": "2026-10-01T08:25:23Z",
+   "age_days": 12.6,
+   "stars_per_day": 21.8,
+   "language": "Kotlin",
+   "description": "Wireless CarPlay in your browser \u2014 a server-side receiver that turns any screen on your network into a head unit.",
+   "fork": false
+  },
+  {
+   "full_name": "xop01/ai_goodpractice",
+   "stars": 274,
+   "created_at": "2026-10-02T11:01:25Z",
+   "age_days": 11.49,
+   "stars_per_day": 23.8,
+   "language": null,
+   "description": "full guide to help you integrate AI in your workflow, for both beginners and experienced users",
+   "fork": false
+  },
+  {
+   "full_name": "pdcgomes/redlamp",
+   "stars": 273,
+   "created_at": "2026-09-29T15:52:11Z",
+   "age_days": 14.29,
+   "stars_per_day": 19.1,
+   "language": "Swift",
+   "description": "A native, open-source RAW photo editor for Mac, iPad and iPhone that feels immediately familiar to Lightroom users.",
+   "fork": false
+  },
+  {
+   "full_name": "aindeev/agent-chrome-relay",
+   "stars": 271,
+   "created_at": "2026-10-10T07:38:27Z",
+   "age_days": 3.63,
+   "stars_per_day": 74.6,
+   "language": "Go",
+   "description": "Let your AI agents use your Chrome, signed in as you, in background tabs. By Alexey Indeev \u00b7 blog: read.aindeev.com \u00b7 X:",
+   "fork": false
+  },
+  {
+   "full_name": "jasonbitsmith/muse-skills",
+   "stars": 271,
+   "created_at": "2026-10-05T10:56:00Z",
+   "age_days": 8.5,
+   "stars_per_day": 31.9,
+   "language": null,
+   "description": "300 \u6761 Muse \u6280\u80fd\uff1a\u6bcf\u6761\u4e00\u53e5\u8bdd\u75db\u70b9 + \u4e09\u6b65\u505a\u6cd5\uff0c\u70b9\u5f00\u5c31\u80fd\u7528",
+   "fork": false
+  },
+  {
+   "full_name": "SimonSchubert/omalauncher",
+   "stars": 270,
+   "created_at": "2026-10-02T13:10:28Z",
+   "age_days": 11.4,
+   "stars_per_day": 23.7,
+   "language": "Kotlin",
+   "description": "Agentic Android launcher: build your own apps and widgets with AI agents, Omarchy themes, Arch Linux without root",
+   "fork": false
+  },
+  {
+   "full_name": "NousResearch/hermes-official-plugins",
+   "stars": 269,
+   "created_at": "2026-10-10T20:51:25Z",
+   "age_days": 3.08,
+   "stars_per_day": 87.3,
+   "language": "Python",
+   "description": "\u2624 The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscrip",
+   "fork": false
+  },
+  {
+   "full_name": "LMIXR/CV_Deployment_skill",
+   "stars": 264,
+   "created_at": "2026-09-29T07:52:38Z",
+   "age_days": 14.62,
+   "stars_per_day": 18.1,
+   "language": null,
+   "description": "Computer vision deployment resources and engineering workflow configuration",
+   "fork": false
+  },
+  {
+   "full_name": "BrinooTk/PS5X360",
+   "stars": 264,
+   "created_at": "2026-10-03T23:11:38Z",
+   "age_days": 9.98,
+   "stars_per_day": 26.4,
+   "language": "C++",
+   "description": "Experimental Xbox 360 emulator for PlayStation 5, built on Xenia Canary with native audio, DualSense input and RADV Vulk",
+   "fork": false
+  },
+  {
+   "full_name": "kevinerikjs/gta5-ios-port",
+   "stars": 262,
+   "created_at": "2026-10-10T18:36:47Z",
+   "age_days": 3.18,
+   "stars_per_day": 82.5,
+   "language": "Swift",
+   "description": "GTA V natively on iPhone: build it yourself from your own game files. Fan project, no game files included.",
+   "fork": false
+  },
+  {
+   "full_name": "BerriAI/moyai",
+   "stars": 261,
+   "created_at": "2026-09-30T01:41:01Z",
+   "age_days": 13.88,
+   "stars_per_day": 18.8,
+   "language": "Python",
+   "description": "A self-hosted coding agent for background work - works with Claude Code, Codex, OpenCode & 100+ providers",
+   "fork": false
+  },
+  {
+   "full_name": "jonaslsaa/pi-optchat",
+   "stars": 259,
+   "created_at": "2026-10-04T22:20:47Z",
+   "age_days": 9.02,
+   "stars_per_day": 28.7,
+   "language": "TypeScript",
+   "description": "Persistent infinite memory with profiles, background agents, and conversation imports for Pi.",
+   "fork": false
+  },
+  {
+   "full_name": "AFK-surf/Comma",
+   "stars": 256,
+   "created_at": "2026-09-30T08:39:30Z",
+   "age_days": 13.59,
+   "stars_per_day": 18.8,
+   "language": "Elixir",
+   "description": "Best free & open source AI personal assistant. Always-on, proactive, sessionless. Browser, computer use, files, remote c",
+   "fork": false
+  },
+  {
+   "full_name": "whykang/ssts--Android",
+   "stars": 256,
+   "created_at": "2026-10-03T03:48:36Z",
+   "age_days": 10.79,
+   "stars_per_day": 23.7,
+   "language": "JavaScript",
+   "description": "\u968f\u8eab\u542c\u4e66 \u5b89\u5353\u548ciOS\u7248 \u2014\u2014 \u4e00\u4e2a\u805a\u5408\u542c\u4e66\u5de5\u5177\uff0c\u652f\u6301\u81ea\u5b9a\u4e49\u6e90",
+   "fork": false
+  },
+  {
+   "full_name": "deepseek-ai/DeepEP-Ascend",
+   "stars": 254,
+   "created_at": "2026-09-30T00:44:59Z",
+   "age_days": 13.92,
+   "stars_per_day": 18.2,
+   "language": "C++",
+   "description": "A high-performance communication library for machine learning training and inference on Huawei Ascend NPUs.",
+   "fork": false
+  },
+  {
+   "full_name": "SpeedBreakerProject/speedbreaker",
+   "stars": 253,
+   "created_at": "2026-10-05T17:31:24Z",
+   "age_days": 8.22,
+   "stars_per_day": 30.8,
+   "language": "C++",
+   "description": "Unofficial static recompilation of the Xbox 360 version of Need for Speed: Most Wanted (2005): a native port for Steam D",
+   "fork": false
+  },
+  {
+   "full_name": "audiocn/ui",
+   "stars": 253,
+   "created_at": "2026-09-30T14:04:23Z",
+   "age_days": 13.37,
+   "stars_per_day": 18.9,
+   "language": "TypeScript",
+   "description": "Audio UI components for React, built the shadcn way.",
+   "fork": false
+  },
+  {
+   "full_name": "blendi-remade/dioramas",
+   "stars": 252,
+   "created_at": "2026-09-30T00:07:56Z",
+   "age_days": 13.95,
+   "stars_per_day": 18.1,
+   "language": "JavaScript",
+   "description": "A free, open-source framework for cinematic, interactive 3D websites with AI-generated assets (Nano Banana 2 + Meshy 7.1",
+   "fork": false
+  },
+  {
+   "full_name": "Akun-python/autumn-recruitment",
+   "stars": 250,
+   "created_at": "2026-09-29T08:00:33Z",
+   "age_days": 14.62,
+   "stars_per_day": 17.1,
+   "language": "Jupyter Notebook",
+   "description": "Autumn-Recruit Algo Notes(\u79cb\u62db\u7b97\u6cd5\u5b66\u4e60\u4ed3\u5e93)\uff0c\u9762\u5411\u5927\u6a21\u578b\u65f6\u4ee3\u7684\u7b97\u6cd5\u3001\u5de5\u7a0b\u4e0eAI\u5b66\u4e60\u5171\u5efa\u4ed3\u5e93\u3002\u4ece\u6570\u5b66\u57fa\u7840\u3001\u6570\u636e\u7ed3\u6784\uff0c\u5230\u673a\u5668\u5b66\u4e60\u3001\u6df1\u5ea6\u5b66\u4e60\u3001LLM\u3001Agent\u3001AI-Infra\u3001\u8bed\u97f3\u4e0e\u6570\u636e\u79d1\u5b66\uff0c\u901a\u8fc7\u300c\u7406\u89e3\u2192\u63a8\u5bfc\u2192\u624b\u5199 ",
+   "fork": false
+  },
+  {
+   "full_name": "bigmak94/AstroQuest",
+   "stars": 250,
+   "created_at": "2026-10-03T13:02:35Z",
+   "age_days": 10.41,
+   "stars_per_day": 24.0,
+   "language": "C++",
+   "description": "ASTRO BOT Rescue Mission (PS4, PlayStation VR) in virtual reality on Meta Quest 3: on the headset alone, or from a Windo",
+   "fork": false
+  },
+  {
+   "full_name": "CrocSwap/integer-mult-bounds",
+   "stars": 250,
+   "created_at": "2026-10-07T02:21:37Z",
+   "age_days": 6.85,
+   "stars_per_day": 36.5,
+   "language": "Python",
+   "description": "Conditional integer multiplication: kappa > 2^-15. Community proofs, exact certificates and reproducible audits; assumes",
+   "fork": false
+  },
+  {
+   "full_name": "Tier-Flow/LoopVL",
+   "stars": 249,
+   "created_at": "2026-10-01T04:15:43Z",
+   "age_days": 12.77,
+   "stars_per_day": 19.5,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "liyupi/ai-promo-video-maker",
+   "stars": 249,
+   "created_at": "2026-10-09T08:44:30Z",
+   "age_days": 4.59,
+   "stars_per_day": 54.3,
+   "language": "Python",
+   "description": "\u4e00\u53e5\u8bdd\u8ba9 AI \u5e2e\u4f60\u505a\u4ea7\u54c1\u5ba3\u4f20\u7247\uff01\u628a\u4ea7\u54c1\u540d\u6216\u7f51\u5740\u544a\u8bc9 Cursor\u3001Claude Code\u3001Codex \u7b49 AI \u7f16\u7a0b\u5de5\u5177\uff0c\u5b83\u4f1a\u81ea\u5df1\u8c03\u7814\u4ea7\u54c1\u3001\u753b\u51fa\u591a\u79cd\u98ce\u683c\u6837\u56fe\u8ba9\u4f60\u6311\u9009\u3001\u622a\u53d6 4K \u771f\u5b9e\u9875\u9762\u3001\u6309\u97f3\u4e50\u8282\u62cd\u5361\u70b9\u526a\u8f91\u3001\u751f\u6210 AI \u65c1\u767d\u5e76\u9010\u53e5\u8f6c\u5199\u6821\u9a8c",
+   "fork": false
+  },
+  {
+   "full_name": "deeplethe/solid-glass",
+   "stars": 248,
+   "created_at": "2026-10-12T09:19:02Z",
+   "age_days": 1.56,
+   "stars_per_day": 158.7,
+   "language": "TypeScript",
+   "description": "A design system for AI applications. Material, physical, tactile, technical.",
+   "fork": false
+  },
+  {
+   "full_name": "finnvoor/PiDurableKit",
+   "stars": 248,
+   "created_at": "2026-10-08T10:02:27Z",
+   "age_days": 5.53,
+   "stars_per_day": 44.8,
+   "language": "Swift",
+   "description": "Durable AI agents for Apple platforms: pi-durable on JavaScriptCore with a Swift API",
+   "fork": false
+  },
+  {
+   "full_name": "BQ-Wang0511/TalkLikeYou-Streaming-RealTime-Demo",
+   "stars": 246,
+   "created_at": "2026-10-04T05:57:06Z",
+   "age_days": 9.7,
+   "stars_per_day": 25.4,
+   "language": "Python",
+   "description": "Real-time browser demo for Talk Like You",
+   "fork": false
+  },
+  {
+   "full_name": "blackbearreloaded/ProsperoStore",
+   "stars": 246,
+   "created_at": "2026-10-02T19:05:20Z",
+   "age_days": 11.16,
+   "stars_per_day": 22.1,
+   "language": "C++",
+   "description": "Native PS5 app store for the homebrew catalog at homebrew.page (title PPSA99000)",
+   "fork": false
+  },
+  {
+   "full_name": "wbr664393425-lgtm/scaffold-master",
+   "stars": 245,
+   "created_at": "2026-10-11T12:56:35Z",
+   "age_days": 2.41,
+   "stars_per_day": 101.6,
+   "language": "Vue",
+   "description": "Spring Boot + Vue \u901a\u7528\u540e\u53f0\u7ba1\u7406\u811a\u624b\u67b6\uff0c\u63d0\u4f9b\u8ba4\u8bc1\u3001RBAC \u4e0e\u6570\u636e\u6743\u9650\u3001\u7ec4\u7ec7\u7ba1\u7406\u3001\u65e5\u5fd7\u548c\u4ee3\u7801\u751f\u6210\u9aa8\u67b6\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "egmalt/house-planner",
+   "stars": 245,
+   "created_at": "2026-10-01T09:24:59Z",
+   "age_days": 12.56,
+   "stars_per_day": 19.5,
+   "language": "TypeScript",
+   "description": "Self-hosted house planner: true-scale 2D floor plan, 3D, satellite map overlay, sewer, electrical, water and underfloor ",
+   "fork": false
+  },
+  {
+   "full_name": "rumoii/streamfirefly",
+   "stars": 245,
+   "created_at": "2026-10-05T04:26:14Z",
+   "age_days": 8.77,
+   "stars_per_day": 27.9,
+   "language": "JavaScript",
+   "description": "\u7f51\u9875\u5a92\u4f53\u55c5\u63a2\u4e0e\u4e0b\u8f7d\u5de5\u5177\uff0c\u5305\u542b\u6d4f\u89c8\u5668\u6269\u5c55\u548c Windows \u672c\u5730\u52a9\u624b\u3002Web media detection and download tool with a browser extension and a Windows native he",
+   "fork": false
+  },
+  {
+   "full_name": "ManfredCh/Lyapunov",
+   "stars": 244,
+   "created_at": "2026-10-02T15:45:56Z",
+   "age_days": 11.29,
+   "stars_per_day": 21.6,
+   "language": "TypeScript",
+   "description": "LLM-first, 3D-native robotics and simulation workspace.",
+   "fork": false
+  },
+  {
+   "full_name": "SakanaAI/mass",
+   "stars": 242,
+   "created_at": "2026-09-29T01:07:10Z",
+   "age_days": 14.9,
+   "stars_per_day": 16.2,
+   "language": "Python",
+   "description": "Multi-Agent Self-Supervision",
+   "fork": false
+  },
+  {
+   "full_name": "rit3zh/morphlet",
+   "stars": 242,
+   "created_at": "2026-10-05T12:21:15Z",
+   "age_days": 8.44,
+   "stars_per_day": 28.7,
+   "language": "TypeScript",
+   "description": "A native, morphing floating tray for React Native.",
+   "fork": false
+  },
+  {
+   "full_name": "MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark-TensorFold",
+   "stars": 242,
+   "created_at": "2026-09-29T04:51:21Z",
+   "age_days": 14.75,
+   "stars_per_day": 16.4,
+   "language": "Shell",
+   "description": "Qwen3.8 Flash Next on one DGX Spark (TensorFold)",
+   "fork": false
+  },
+  {
+   "full_name": "rockmatrix-ai/EdgeRock",
+   "stars": 240,
+   "created_at": "2026-10-07T17:21:11Z",
+   "age_days": 6.23,
+   "stars_per_day": 38.5,
+   "language": "Python",
+   "description": "YANchor-4B: Effective Long-Horizon Reasoning in O(N) Time with O(1) Memory. Inference and evaluation code.",
+   "fork": false
+  },
+  {
+   "full_name": "unixzii/SimRun",
+   "stars": 240,
+   "created_at": "2026-10-10T09:09:19Z",
+   "age_days": 3.57,
+   "stars_per_day": 67.2,
+   "language": "Objective-C",
+   "description": "Run iOS Simulator apps directly on your Mac.",
+   "fork": false
+  },
+  {
+   "full_name": "BinceQu/RoboHarness",
+   "stars": 236,
+   "created_at": "2026-10-07T04:39:45Z",
+   "age_days": 6.76,
+   "stars_per_day": 34.9,
+   "language": "Python",
+   "description": "A robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke",
+   "fork": false
+  },
+  {
+   "full_name": "feiyuaq/zcfsrf",
+   "stars": 234,
+   "created_at": "2026-10-02T15:45:51Z",
+   "age_days": 11.29,
+   "stars_per_day": 20.7,
+   "language": null,
+   "description": "Z\u6b21\u65b9\u8f93\u5165\u6cd5\uff0c\u6253\u5b57\u540c\u65f6\u5b66\u4e60\u82f1\u8bed\uff01",
+   "fork": false
+  },
+  {
+   "full_name": "eyalgolan/statecraft-israel",
+   "stars": 234,
+   "created_at": "2026-10-10T08:11:27Z",
+   "age_days": 3.61,
+   "stars_per_day": 64.8,
+   "language": "C#",
+   "description": "A Civilization-style strategy game about governing Israel from 15 May 1948. Real ministers, real map, every fact sourced",
+   "fork": false
+  },
+  {
+   "full_name": "yzg1226/mcd-party-officer",
+   "stars": 233,
+   "created_at": "2026-10-09T14:20:03Z",
+   "age_days": 4.35,
+   "stars_per_day": 53.5,
+   "language": "Python",
+   "description": "\ud83c\udf5f \u9ea6\u5f53\u52b3\u95e8\u5e97\u6d3e\u5bf9\u6210\u56e2\u8c03\u5ea6 Skill \u2014 \u628a\u6d3e\u5bf9\u4ece\u300c\u7b56\u5212\u300d\u63a8\u8fdb\u5230\u300c\u529e\u5f97\u6210\u300d\uff1a\u6210\u56e2\u6982\u7387\u96f7\u8fbe / \u5305\u573avs\u62fc\u56e2 / \u62e9\u65e5\u9ec4\u5386 / \u513f\u7ae5\u8425\u517b\u6307\u6570 / \u62db\u52df\u5361\u4e0e\u9080\u8bf7\u51fd",
+   "fork": false
+  },
+  {
+   "full_name": "LcodeCoder/CG-Claude",
+   "stars": 231,
+   "created_at": "2026-10-10T17:16:43Z",
+   "age_days": 3.23,
+   "stars_per_day": 71.5,
+   "language": "TypeScript",
+   "description": "A software that disguises the operating system's information",
+   "fork": false
+  },
+  {
+   "full_name": "Nonco-Organization/multicoin-address-validator",
+   "stars": 230,
+   "created_at": "2026-10-08T17:36:21Z",
+   "age_days": 5.22,
+   "stars_per_day": 44.1,
+   "language": "JavaScript",
+   "description": "Useful library for validation of Bitcoin, Litecoin, Ethereum and other cryptocoin addresses",
+   "fork": false
+  },
+  {
+   "full_name": "Nongfsq/ftop",
+   "stars": 230,
+   "created_at": "2026-10-06T23:36:34Z",
+   "age_days": 6.97,
+   "stars_per_day": 33.0,
+   "language": "Swift",
+   "description": "A small, quiet system monitor for Apple Silicon Macs: one floating glass panel that works at any size.",
+   "fork": false
+  },
+  {
+   "full_name": "sanqianzilanyue/ai-voice-breath-kiss-water",
+   "stars": 230,
+   "created_at": "2026-09-30T21:00:41Z",
+   "age_days": 13.08,
+   "stars_per_day": 17.6,
+   "language": "HTML",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "a-funk/open-appleremote",
+   "stars": 230,
+   "created_at": "2026-10-09T09:16:53Z",
+   "age_days": 4.56,
+   "stars_per_day": 50.4,
+   "language": "Python",
+   "description": "Use the first-gen Apple Siri Remote (A1513/A1962) on Linux: unlock it, decode touch and buttons, tvOS-style gestures, a ",
+   "fork": false
+  },
+  {
+   "full_name": "NoizAI/WorldSonus",
+   "stars": 229,
+   "created_at": "2026-09-29T07:25:34Z",
+   "age_days": 14.64,
+   "stars_per_day": 15.6,
+   "language": "Python",
+   "description": "Real-time, interactive spatial audio generation for videos and world models.",
+   "fork": false
+  },
+  {
+   "full_name": "liouhai/plot-is-all-you-need",
+   "stars": 228,
+   "created_at": "2026-10-04T16:33:59Z",
+   "age_days": 9.26,
+   "stars_per_day": 24.6,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "mrzh7/scam-with-your-friends-web",
+   "stars": 228,
+   "created_at": "2026-10-09T05:27:48Z",
+   "age_days": 4.72,
+   "stars_per_day": 48.3,
+   "language": "TypeScript",
+   "description": "Scam With Your Friends Web: unofficial open-source browser remake. Co-op AI call center game with a 3D office, voice cha",
+   "fork": false
+  },
+  {
+   "full_name": "Shyboy0499/antibody",
+   "stars": 227,
+   "created_at": "2026-10-05T02:08:17Z",
+   "age_days": 8.86,
+   "stars_per_day": 25.6,
+   "language": "TypeScript",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "hamzafer/claude-code-mods",
+   "stars": 227,
+   "created_at": "2026-10-02T13:15:06Z",
+   "age_days": 11.4,
+   "stars_per_day": 19.9,
+   "language": "TypeScript",
+   "description": "Claude Code mods: plugins built on hooks that add live lines above the prompt, guards, panes and games. Context bar, usa",
+   "fork": false
+  },
+  {
+   "full_name": "0814wdwd/solo_jev",
+   "stars": 226,
+   "created_at": "2026-09-29T13:47:45Z",
+   "age_days": 14.38,
+   "stars_per_day": 15.7,
+   "language": "Python",
+   "description": "Per-row semantic judgements over large relational tables on a decision model (Jev)",
+   "fork": false
+  },
+  {
+   "full_name": "jdx/jactionlint",
+   "stars": 225,
+   "created_at": "2026-10-05T00:42:21Z",
+   "age_days": 8.92,
+   "stars_per_day": 25.2,
+   "language": "Go",
+   "description": ":octocat: Static checker for GitHub Actions workflow files",
+   "fork": false
+  },
+  {
+   "full_name": "HeyChengC/vibe-knowledge-film",
+   "stars": 224,
+   "created_at": "2026-10-06T15:53:56Z",
+   "age_days": 7.29,
+   "stars_per_day": 30.7,
+   "language": "JavaScript",
+   "description": "\u6296\u97f3\u7206\u6b3eVibe\u77e5\u8bc6\u5927\u8d4f\u77e5\u8bc6\u77ed\u7247skill\uff0c\u6df1\u5ea6\u62c6\u89e3\u7206\u6b3e\u89c6\u9891\uff0c\u590d\u523b\u753b\u98ce\uff0c\u5bfc\u6f14\u5206\u955c\u8868\uff0c\u81ea\u52a8\u914d\u97f3\u6548\uff0c\u4e00\u952e\u51fa\u7247",
+   "fork": false
+  },
+  {
+   "full_name": "goodseafly/how-to-make-work-pay",
+   "stars": 223,
+   "created_at": "2026-10-06T15:26:43Z",
+   "age_days": 7.31,
+   "stars_per_day": 30.5,
+   "language": "HTML",
+   "description": "\u6559\u4f60\u628a\u5de5\u8d44\u3001\u52a0\u73ed\u8d39\u548c\u6ca1\u4f11\u5b8c\u7684\u5e74\u5047\u4e00\u5206\u4e0d\u5c11\u5730\u8981\u56de\u6765\uff0c\u793e\u4fdd\u65ad\u4e86\u600e\u4e48\u63a5\u3001\u5de5\u4f24\u751f\u80b2\u600e\u4e48\u529e\uff1b\u88ab\u9488\u5bf9\u3001\u88ab\u8c03\u5c97\u3001\u88ab\u88c1\u65f6\u77e5\u9053\u600e\u4e48\u8d70\u3001\u600e\u4e48\u4e0d\u7559\u5c3e\u5df4\u3002576 \u6761\u5efa\u8bae\uff0c\u6bcf\u6761\u5199\u660e\u82b1\u6389\u4ec0\u4e48\u3001\u6362\u56de\u4ec0\u4e48\u3001\u8bc1\u636e\u6709\u591a\u786c\uff0c\u6765\u6e90\u53ea\u5f15\u5b98\u65b9\u6587\u4ef6\u539f\u6587\u548c\u7814\u7a76\u6587\u732e\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "weike-zhang/ai-novel-studio",
+   "stars": 223,
+   "created_at": "2026-10-03T06:08:29Z",
+   "age_days": 10.7,
+   "stars_per_day": 20.8,
+   "language": "Go",
+   "description": "AI novel generation with world building, interactive choices, and persistent character state. Next.js + Go. AI \u5c0f\u8bf4\u521b\u4f5c\u53f0\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "jarrodwatts/claude-image-view",
+   "stars": 222,
+   "created_at": "2026-10-02T22:29:27Z",
+   "age_days": 11.01,
+   "stars_per_day": 20.2,
+   "language": "TypeScript",
+   "description": "See the images you paste into Claude Code: thumbnails above the prompt instead of bare [Image #1] tags",
+   "fork": false
+  },
+  {
+   "full_name": "Chengjun023/agent-smith",
+   "stars": 220,
+   "created_at": "2026-09-30T15:58:32Z",
+   "age_days": 13.29,
+   "stars_per_day": 16.6,
+   "language": "Python",
+   "description": "Token \u8d85\u652f\uff1f\u5feb\u7ed9\u53f2\u5bc6\u65af\u6253\u7535\u8bdd\uff01 Better Call Smith. Adaptive model routing, a glassy Codex usage monitor, and reproducible benchmarks ",
+   "fork": false
+  },
+  {
+   "full_name": "mu-zi-lee/magpie-our-free-model",
+   "stars": 220,
+   "created_at": "2026-10-09T17:18:24Z",
+   "age_days": 4.23,
+   "stars_per_day": 52.0,
+   "language": "JavaScript",
+   "description": "Our Free Model \u7684 Magpie \u9002\u914d\u63d2\u4ef6\uff1a\u6574\u5408\u514d\u8d39\u6a21\u578b\u6c60\u3001EAC \u6388\u6743\u4e0e\u591a\u8d26\u53f7\u6e20\u9053\uff0c\u652f\u6301\u81ea\u52a8\u670d\u52a1\u7ba1\u7406\u53ca\u514d\u767b\u5f55\u7684 Cloudflare \u4e34\u65f6\u8fdc\u7a0b\u63a7\u5236\u53f0\u3002\uff5cMagpie integration for Our Free Mode",
+   "fork": false
+  },
+  {
+   "full_name": "telepath-computer/television",
+   "stars": 220,
+   "created_at": "2026-10-01T00:05:45Z",
+   "age_days": 12.95,
+   "stars_per_day": 17.0,
+   "language": "TypeScript",
+   "description": "The missing GUI for personal agents. Television gives you and your agent a visual space for creating and working with ar",
+   "fork": false
+  },
+  {
+   "full_name": "MCG-NJU/OneStreamer",
+   "stars": 219,
+   "created_at": "2026-09-30T12:33:00Z",
+   "age_days": 13.43,
+   "stars_per_day": 16.3,
+   "language": "Python",
+   "description": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
+   "fork": false
+  },
+  {
+   "full_name": "amazon-far/php_parkour",
+   "stars": 219,
+   "created_at": "2026-09-30T17:50:35Z",
+   "age_days": 13.21,
+   "stars_per_day": 16.6,
+   "language": "Python",
+   "description": "[RSS 2026] Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
+   "fork": false
+  },
+  {
+   "full_name": "jo32/tvbox-silicon",
+   "stars": 218,
+   "created_at": "2026-10-04T17:32:15Z",
+   "age_days": 9.22,
+   "stars_per_day": 23.6,
+   "language": "Swift",
+   "description": "Yingxia: a native SwiftUI TVBox player for Apple TV, iPhone, iPad and Mac.",
+   "fork": false
+  },
+  {
+   "full_name": "jmedina21/deck-as-controller",
+   "stars": 215,
+   "created_at": "2026-09-30T14:15:06Z",
+   "age_days": 13.36,
+   "stars_per_day": 16.1,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "MisaDev4/bo1-zombies-decompiled",
+   "stars": 215,
+   "created_at": "2026-10-04T06:05:38Z",
+   "age_days": 9.7,
+   "stars_per_day": 22.2,
+   "language": "C++",
+   "description": "bo1 zombies decompiled",
+   "fork": false
+  },
+  {
+   "full_name": "youke1686/FlyDisk",
+   "stars": 215,
+   "created_at": "2026-10-03T09:00:16Z",
+   "age_days": 10.58,
+   "stars_per_day": 20.3,
+   "language": "C#",
+   "description": "Windows \u4e0a\u7684\u5f00\u6e90\u786c\u76d8\u52a0\u901f\u5668 \u00b7 Open-source hard drive accelerator for Windows",
+   "fork": false
+  },
+  {
+   "full_name": "Autumn1337/better-statusline",
+   "stars": 214,
+   "created_at": "2026-10-05T08:44:27Z",
+   "age_days": 8.59,
+   "stars_per_day": 24.9,
+   "language": "TypeScript",
+   "description": "A status line for Claude Code: the session's figures as dot-matrix rings, and the music you are playing beside them",
+   "fork": false
+  },
+  {
+   "full_name": "zgauthier2000/fsr4-shader-performance-overrides",
+   "stars": 213,
+   "created_at": "2026-10-01T18:04:13Z",
+   "age_days": 12.2,
+   "stars_per_day": 17.5,
+   "language": "Python",
+   "description": "Faster FSR 4.1.1 upscaling on Radeon RX 6000 and RX 7000 graphics cards, on Windows and Linux: drop-in DLLs and shader o",
+   "fork": false
+  },
+  {
+   "full_name": "zoolapp/aime",
+   "stars": 212,
+   "created_at": "2026-10-01T03:51:36Z",
+   "age_days": 12.79,
+   "stars_per_day": 16.6,
+   "language": "Swift",
+   "description": "\u827e\u4e48\u8f93\u5165\u6cd5 \u00b7 An open-source Chinese input method for macOS, built on RIME. Local first, optional AI.",
+   "fork": false
+  },
+  {
+   "full_name": "h100envy/gem-search",
+   "stars": 211,
+   "created_at": "2026-10-05T13:12:12Z",
+   "age_days": 8.4,
+   "stars_per_day": 25.1,
+   "language": "Python",
+   "description": "Rainbow spider that X-rays memecoins: bundles, linked wallets, dev history. Scanner, Telegram bot, live Bundle Index.",
+   "fork": false
+  },
+  {
+   "full_name": "oleyyu/OpenClaudeDesktop",
+   "stars": 211,
+   "created_at": "2026-10-03T03:48:02Z",
+   "age_days": 10.79,
+   "stars_per_day": 19.5,
+   "language": "JavaScript",
+   "description": "A 1:1 Replica & 100% Open Source Claude Desktop",
+   "fork": false
+  },
+  {
+   "full_name": "dach6/ExaltHelper",
+   "stars": 209,
+   "created_at": "2026-10-10T06:14:15Z",
+   "age_days": 3.69,
+   "stars_per_day": 56.6,
+   "language": "C#",
+   "description": "A C# Windows companion for Realm of the Mad God Exalt featuring real-time DPS tracking, player/party overlays, ability &",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/craft-libs",
+   "stars": 208,
+   "created_at": "2026-10-09T15:59:16Z",
+   "age_days": 4.29,
+   "stars_per_day": 48.5,
+   "language": "Rust",
+   "description": "Rust libraries for the Craft Apps",
+   "fork": false
+  },
+  {
+   "full_name": "Roylyl/WinPlay",
+   "stars": 207,
+   "created_at": "2026-10-01T23:31:45Z",
+   "age_days": 11.97,
+   "stars_per_day": 17.3,
+   "language": "JavaScript",
+   "description": "WinPlay\u662f\u4e00\u6b3e\u5f00\u6e90Windows\u65e0\u7ebfCarPlay\u63a5\u6536\u8f6f\u4ef6\uff0c\u652f\u6301\u672c\u673a\u70ed\u70b9\u4e0e\u5c40\u57df\u7f51\u8fde\u63a5\uff0c\u8ba9\u4f60\u5728\u7535\u8111\u4e0a\u663e\u793a\u548c\u64cd\u4f5ciPhone\u7684CarPlay\u754c\u9762\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "empero-org/brewery-ai",
+   "stars": 206,
+   "created_at": "2026-10-04T22:16:28Z",
+   "age_days": 9.02,
+   "stars_per_day": 22.8,
+   "language": "Python",
+   "description": "An intuitive console agent to fine-tune AI models with little to no experience required! ",
+   "fork": false
+  },
+  {
+   "full_name": "w16638771062/mccarbon",
+   "stars": 205,
+   "created_at": "2026-10-12T09:45:08Z",
+   "age_days": 1.55,
+   "stars_per_day": 132.7,
+   "language": "Python",
+   "description": "\u9ea6\u9ea6\u78b3\u8d26\u672c \u00b7 \u57fa\u4e8e\u9ea6\u5f53\u52b3 MCP \u7684\u4e2a\u4eba\u9910\u996e\u78b3\u8db3\u8ff9\u4f30\u7b97\u4e0e\u51cf\u6392\u6a21\u62df\u5668 | Personal dining carbon footprint estimator powered by McDonald's MCP",
+   "fork": false
+  },
+  {
+   "full_name": "Henryfud/werm",
+   "stars": 205,
+   "created_at": "2026-10-06T00:49:18Z",
+   "age_days": 7.92,
+   "stars_per_day": 25.9,
+   "language": "HTML",
+   "description": "A 302 neuron network on the real C. elegans wiring diagram, with a steering layer for local language models.",
+   "fork": false
+  },
+  {
+   "full_name": "mcer12/PixelFonts",
+   "stars": 205,
+   "created_at": "2026-10-01T22:05:43Z",
+   "age_days": 12.03,
+   "stars_per_day": 17.0,
+   "language": "C",
+   "description": "Pixel perfect AdafruitGFX & u8g2 fonts for the tiniest displays",
+   "fork": false
+  },
+  {
+   "full_name": "Hiteater-wzm/eeo",
+   "stars": 205,
+   "created_at": "2026-10-05T12:24:03Z",
+   "age_days": 8.43,
+   "stars_per_day": 24.3,
+   "language": "JavaScript",
+   "description": "An open community where brands define themselves for AI",
+   "fork": false
+  },
+  {
+   "full_name": "madeyexz/louisa-wifi",
+   "stars": 205,
+   "created_at": "2026-10-12T08:20:09Z",
+   "age_days": 1.6,
+   "stars_per_day": 127.8,
+   "language": "Swift",
+   "description": "\u81ea\u52d5\u9023\u4e0a\u5168\u53f0\u4efb\u4f55\u4e00\u5bb6\u8def\u6613\u838e\u5496\u5561\u7684 Wi-Fi\uff08macOS menu bar app + Raycast\uff09",
+   "fork": false
+  },
+  {
+   "full_name": "Pluviobyte/dot2api",
+   "stars": 204,
+   "created_at": "2026-10-06T06:33:50Z",
+   "age_days": 7.68,
+   "stars_per_day": 26.6,
+   "language": "Python",
+   "description": "Turn your OpenAI Dot into an OpenAI- and Claude-compatible API",
+   "fork": false
+  },
+  {
+   "full_name": "Yihtsy/ZotLink",
+   "stars": 204,
+   "created_at": "2026-10-01T10:30:01Z",
+   "age_days": 12.51,
+   "stars_per_day": 16.3,
+   "language": "JavaScript",
+   "description": "Zotero linked attachment manager with Windows file ID tracking",
+   "fork": false
+  },
+  {
+   "full_name": "Zhangweihui666/silver-tourism-digital-twin",
+   "stars": 203,
+   "created_at": "2026-09-29T07:30:42Z",
+   "age_days": 14.64,
+   "stars_per_day": 13.9,
+   "language": "JavaScript",
+   "description": "Semantic digital twin and 500-agent simulation laboratory for age-friendly research in historic districts.",
+   "fork": false
+  },
+  {
+   "full_name": "roboterax/video-prediction-policy-2",
+   "stars": 203,
+   "created_at": "2026-10-08T06:58:48Z",
+   "age_days": 5.66,
+   "stars_per_day": 35.9,
+   "language": "Python",
+   "description": "Official implementation of Video Prediction Policy 2: Predict Better, Act Better",
+   "fork": false
+  },
+  {
+   "full_name": "NandhaKishorM/vegaml",
+   "stars": 202,
+   "created_at": "2026-10-09T17:45:54Z",
+   "age_days": 4.21,
+   "stars_per_day": 48.0,
+   "language": "Python",
+   "description": "Typed decisions from a frozen language model and a small physics engine: calibrated probabilities, conformal sets, 73k c",
+   "fork": false
+  },
+  {
+   "full_name": "lithos-ai/lithos-metal",
+   "stars": 202,
+   "created_at": "2026-10-05T15:23:30Z",
+   "age_days": 8.31,
+   "stars_per_day": 24.3,
+   "language": "Python",
+   "description": "lithos-metal: high-performance LLM inference kernels and serving for Apple silicon.",
+   "fork": false
+  },
+  {
+   "full_name": "spideymooon/McOracle",
+   "stars": 202,
+   "created_at": "2026-10-12T15:44:21Z",
+   "age_days": 1.3,
+   "stars_per_day": 155.9,
+   "language": "Python",
+   "description": "\u4e0d\u8981\u95ee AI\uff0c\u95ee\u85af\u6761\u3002\u4e00\u4e2a\u7ed3\u5408\u9ea6\u5f53\u52b3 MCP \u4e0e AI \u7b54\u6848\u4e4b\u4e66\u7684 Skill\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "jackotom/hongguo-drama",
+   "stars": 200,
+   "created_at": "2026-10-07T00:06:45Z",
+   "age_days": 6.95,
+   "stars_per_day": 28.8,
+   "language": "JavaScript",
+   "description": "\u7ea2\u679c\u77ed\u5267\u684c\u9762\u7248 \u00b7 \u652f\u6301 M \u7cfb\u5217 Mac\u3001Intel Mac \u548c Windows \u00b7 \u4e09\u6765\u6e90\u641c\u7d22\u3001\u64ad\u653e\u3001\u4e0b\u8f7d\u4e0e\u8ffd\u5267 \u00b7 GPL-3.0 \u5f00\u6e90",
+   "fork": false
+  }
+ ],
+ "hf_trending": [
+  {
+   "id": "google/embeddinggemma-2",
+   "likes": 2097,
+   "downloads": 124930,
+   "createdAt": "2026-09-14T14:53:42.000Z"
+  },
+  {
+   "id": "jialinyyzz/humanizer",
+   "likes": 1505,
+   "downloads": 54039,
+   "createdAt": "2026-09-11T05:00:16.000Z"
+  },
+  {
+   "id": "Qwen/Qwen-Image-2.1-Turbo",
+   "likes": 707,
+   "downloads": 9665,
+   "createdAt": "2026-10-09T04:50:01.000Z"
+  },
+  {
+   "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+   "likes": 4198,
+   "downloads": 2247929,
+   "createdAt": "2026-09-20T15:51:13.000Z"
+  },
+  {
+   "id": "Lightricks/LTX-2.5",
+   "likes": 7634,
+   "downloads": 1724548,
+   "createdAt": "2026-07-23T07:55:24.000Z"
+  },
+  {
+   "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
+   "likes": 458,
+   "downloads": 630,
+   "createdAt": "2026-10-07T07:07:30.000Z"
+  },
+  {
+   "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
+   "likes": 420,
+   "downloads": 269829,
+   "createdAt": "2026-10-08T01:47:26.000Z"
+  },
+  {
+   "id": "Cloudflare/clef",
+   "likes": 2141,
+   "downloads": 17173,
+   "createdAt": "2026-09-30T21:15:35.000Z"
+  },
+  {
+   "id": "LiquidAI/d1-3B",
+   "likes": 377,
+   "downloads": 13190,
+   "createdAt": "2026-10-05T09:55:28.000Z"
+  },
+  {
+   "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+   "likes": 404,
+   "downloads": 208575,
+   "createdAt": "2026-10-09T16:30:48.000Z"
+  },
+  {
+   "id": "Qwen/Qwen3.8-27B",
+   "likes": 17637,
+   "downloads": 7119569,
+   "createdAt": "2026-08-05T08:22:59.000Z"
+  },
+  {
+   "id": "autotrust/JEV-35B",
+   "likes": 453,
+   "downloads": 17426,
+   "createdAt": "2026-10-11T01:22:03.000Z"
+  },
+  {
+   "id": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+   "likes": 306,
+   "downloads": 83887,
+   "createdAt": "2026-10-04T10:44:11.000Z"
+  },
+  {
+   "id": "baidu/Unlimited-OCR",
+   "likes": 4612,
+   "downloads": 1175446,
+   "createdAt": "2026-06-19T09:40:33.000Z"
+  },
+  {
+   "id": "convaiinnovations/laya",
+   "likes": 5572,
+   "downloads": 46160,
+   "createdAt": "2026-09-18T05:05:55.000Z"
+  },
+  {
+   "id": "canberkkkkkk/ema-lightning",
+   "likes": 403,
+   "downloads": 22641,
+   "createdAt": "2026-10-01T14:18:49.000Z"
+  },
+  {
+   "id": "speridlabs/iris-3b",
+   "likes": 232,
+   "downloads": 889,
+   "createdAt": "2026-10-05T14:51:15.000Z"
+  },
+  {
+   "id": "openbmb/MiniCPM-V-4.7-1B",
+   "likes": 284,
+   "downloads": 263,
+   "createdAt": "2026-10-06T17:40:13.000Z"
+  },
+  {
+   "id": "Cactus-Compute/whistle",
+   "likes": 382,
+   "downloads": 21005,
+   "createdAt": "2026-09-30T17:13:26.000Z"
+  },
+  {
+   "id": "unsloth/embeddinggemma-2-GGUF",
+   "likes": 298,
+   "downloads": 81504,
+   "createdAt": "2026-10-06T10:58:50.000Z"
+  },
+  {
+   "id": "autotrust/JEV-35B-NVFP4",
+   "likes": 295,
+   "downloads": 20494,
+   "createdAt": "2026-10-11T03:05:28.000Z"
+  },
+  {
+   "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+   "likes": 710,
+   "downloads": 58000,
+   "createdAt": "2026-09-17T18:37:31.000Z"
+  },
+  {
+   "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+   "likes": 1739,
+   "downloads": 1940062,
+   "createdAt": "2026-09-01T07:01:09.000Z"
+  },
+  {
+   "id": "facebook/sam3",
+   "likes": 4246,
+   "downloads": 2037775,
+   "createdAt": "2025-11-07T05:17:48.000Z"
+  },
+  {
+   "id": "Aleph-Alpha/Kolibri-1",
+   "likes": 928,
+   "downloads": 15335,
+   "createdAt": "2026-10-02T05:54:02.000Z"
+  },
+  {
+   "id": "Cloudflare/clef-flash",
+   "likes": 804,
+   "downloads": 24809,
+   "createdAt": "2026-09-30T21:15:36.000Z"
+  },
+  {
+   "id": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+   "likes": 853,
+   "downloads": 4675423,
+   "createdAt": "2026-09-07T09:41:37.000Z"
+  },
+  {
+   "id": "Qwen/Qwen-Image-2.1",
+   "likes": 3282,
+   "downloads": 147995,
+   "createdAt": "2026-09-14T03:47:26.000Z"
+  },
+  {
+   "id": "pablodawson/MiniMax-H3-360-Orbit-LoRA",
+   "likes": 413,
+   "downloads": 15540,
+   "createdAt": "2026-09-27T04:05:33.000Z"
+  },
+  {
+   "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "likes": 4472,
+   "downloads": 1272612,
+   "createdAt": "2026-09-10T02:17:58.000Z"
+  },
+  {
+   "id": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+   "likes": 842,
+   "downloads": 653893,
+   "createdAt": "2026-08-26T11:15:13.000Z"
+  },
+  {
+   "id": "Qwen/Qwen3.8-Flash-Next",
+   "likes": 6177,
+   "downloads": 2065917,
+   "createdAt": "2026-08-24T08:24:59.000Z"
+  },
+  {
+   "id": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+   "likes": 2190,
+   "downloads": 1472139,
+   "createdAt": "2026-08-28T18:38:03.000Z"
+  },
+  {
+   "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+   "likes": 2675,
+   "downloads": 4686252,
+   "createdAt": "2026-09-16T23:40:56.000Z"
+  },
+  {
+   "id": "unsloth/Qwen3.8-27B-GGUF",
+   "likes": 5076,
+   "downloads": 6650349,
+   "createdAt": "2026-08-13T08:28:40.000Z"
+  },
+  {
+   "id": "LiquidAI/LFM2.5-24B-A2B",
+   "likes": 142,
+   "downloads": 2565,
+   "createdAt": "2026-10-12T05:35:46.000Z"
+  },
+  {
+   "id": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+   "likes": 609,
+   "downloads": 78622,
+   "createdAt": "2026-09-10T21:02:04.000Z"
+  },
+  {
+   "id": "vllm-sr/d3",
+   "likes": 135,
+   "downloads": 1156,
+   "createdAt": "2026-10-10T09:38:30.000Z"
+  },
+  {
+   "id": "Comfy-Org/Qwen-Image-2.1",
+   "likes": 1103,
+   "downloads": 9400716,
+   "createdAt": "2026-09-15T19:41:09.000Z"
+  },
+  {
+   "id": "pyannote/speaker-diarization-community-1",
+   "likes": 2850,
+   "downloads": 5444861,
+   "createdAt": "2025-04-15T21:31:35.000Z"
+  },
+  {
+   "id": "perplexity-ai/pplx-decider-v1.1-27b",
+   "likes": 141,
+   "downloads": 2853,
+   "createdAt": "2026-10-05T12:32:27.000Z"
+  },
+  {
+   "id": "autotrust/GLM5.3-Flash-E192-DGX-Spark",
+   "likes": 176,
+   "downloads": 4537,
+   "createdAt": "2026-10-09T23:02:37.000Z"
+  },
+  {
+   "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+   "likes": 120,
+   "downloads": 1471,
+   "createdAt": "2026-09-20T10:52:55.000Z"
+  },
+  {
+   "id": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+   "likes": 1801,
+   "downloads": 2330454,
+   "createdAt": "2026-08-17T15:15:19.000Z"
+  },
+  {
+   "id": "LiquidAI/d1-omni-600M",
+   "likes": 118,
+   "downloads": 11514,
+   "createdAt": "2026-10-05T17:18:48.000Z"
+  },
+  {
+   "id": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+   "likes": 240,
+   "downloads": 1168151,
+   "createdAt": "2026-10-02T03:42:33.000Z"
+  },
+  {
+   "id": "Cloudflare/clef-omni",
+   "likes": 116,
+   "downloads": 1195,
+   "createdAt": "2026-10-09T04:10:22.000Z"
+  },
+  {
+   "id": "MiniMaxAI/MiniMax-H3",
+   "likes": 6117,
+   "downloads": 3697694,
+   "createdAt": "2026-07-28T10:45:18.000Z"
+  },
+  {
+   "id": "Alissonerdx/BFS-Best-Face-Swap",
+   "likes": 1397,
+   "downloads": 261734,
+   "createdAt": "2025-11-07T09:50:28.000Z"
+  },
+  {
+   "id": "akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+   "likes": 446,
+   "downloads": 48236,
+   "createdAt": "2026-09-25T08:14:15.000Z"
+  }
+ ]
+}

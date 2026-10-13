@@ -3211,22 +3211,27 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-13T23:49:28+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-13T23:50:57+0100",
+   "note": "Measured: 54 repos under 14 days old average 200+ stars a day tonight (301 have 200+ stars); shot said about 10, missed five times over. 14 of the 54 are one org (storytold, photocraft 4,310 a day), the radar repo flags itself (519 a day), and a visible slice looks star-farmed (game PC ports, an nvidia macOS driver). Keyless, under a minute. Next: deepen (queued: one-per-owner cap plus stargazer account age on the suspicious slice, and the HF trending diff on night two).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0142"
+   ],
+   "minutes": 1,
+   "calls": 11,
+   "denied": [
+    "Bash `python3 -I /Users/triton/PROTEUS/sandbox/p0142/radar.py /Users/triton/PROTEUS/experiments/`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "about 10 repos under 14 days old average 200 or more stars a day tonight",
-    "at": "2026-10-13T23:49:39+0100"
+    "at": "2026-10-13T23:49:39+0100",
+    "hit": true
    }
   },
   {
