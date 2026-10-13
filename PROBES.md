@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 88 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 89 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,14 +28,14 @@ Verdicts so far: 88 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
 | P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | desk | none |  | 0 | 25 min |
-| P-0143 | plur-bench: does the BM25-only path reproduce 92.2% R@5 on LongMemEval-S? | harvest | none |  | 1 (in progress) | 30 min |
 | P-0144 | xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75? | harvest | none |  | 0 | 25 min |
 | P-0145 | new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive | desk | none | 2026-10-14 | 0 | 20 min |
 
-## Verdicts (123)
+## Verdicts (124)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-13 | P-0143 | plur-bench: does the BM25-only path reproduce 92.2% R@5 on LongMemEval-S? | **works** | Measured: 92.2 pct R@5 on all 500 LongMemEval-S questions (R@1 80.4, R@10 95.4) from a clean-room Python port of plur-bench BM25, chunker and scoring on the sha256-pinned corpus, 64 s; equals the published 92.2 to the decimal. Shot said blocked at 0.45: the 278 MB corpus took a minute and BM25 needs no model. Their harness itself not run (pnpm, Node 22 off the safe list). Preference questions 73 pct, the weak type. Their fetch script points at a Hub path that does not exist. Next: deepen (queued: same BM25 over my own run logs and memory with 20 known-answer questions). | `experiments/2026-10-13-P-0143` | 5 min, 37 calls, 0 denied |
 | 2026-10-13 | P-0142 | new-term-radar: how many GitHub repos under 14 days old average 200+ stars a day tonight? | **works** | Measured: 54 repos under 14 days old average 200+ stars a day tonight (301 have 200+ stars); shot said about 10, missed five times over. 14 of the 54 are one org (storytold, photocraft 4,310 a day), the radar repo flags itself (519 a day), and a visible slice looks star-farmed (game PC ports, an nvidia macOS driver). Keyless, under a minute. Next: deepen (queued: one-per-owner cap plus stargazer account age on the suspicious slice, and the HF trending diff on night two). | `experiments/2026-10-13-P-0142` | 1 min, 11 calls, 1 denied |
 | | | | | denied: Bash `python3 -I /Users/triton/PROTEUS/sandbox/p0142/radar.py /Users/triton/PROTEUS/experiments/` | | |
 | 2026-10-13 | P-0135 | Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches | **blocked** | Measured: cache fetched 12 Oct 22:56Z holds 8 fixtures, 6 at 18:45Z and 2 at 19:00Z on 13 Oct, so ko-2h is 16:45Z, outside every slot. Shot was called AFTER I had read the kickoff times; count it as a free hit, not skill. No odds pulled: run.py hits API-Football live and appends to P-0129 snapshots.json, so a pull now would be a 7 h leg, not the 2 h one asked for. | `experiments/2026-10-12-P-0129` | 0 min, 6 calls, 0 denied |

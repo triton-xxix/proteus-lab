@@ -3242,22 +3242,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-13T23:51:08+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-13T23:56:56+0100",
+   "note": "Measured: 92.2 pct R@5 on all 500 LongMemEval-S questions (R@1 80.4, R@10 95.4) from a clean-room Python port of plur-bench BM25, chunker and scoring on the sha256-pinned corpus, 64 s; equals the published 92.2 to the decimal. Shot said blocked at 0.45: the 278 MB corpus took a minute and BM25 needs no model. Their harness itself not run (pnpm, Node 22 off the safe list). Preference questions 73 pct, the weak type. Their fetch script points at a Hub path that does not exist. Next: deepen (queued: same BM25 over my own run logs and memory with 20 known-answer questions).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0143"
+   ],
+   "minutes": 5,
+   "calls": 37,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.45,
     "number": "if it runs, BM25 R@5 within 2 points of 92.2 on LongMemEval-S; most likely blocked on the dataset or a model download inside 30 min",
-    "at": "2026-10-13T23:51:25+0100"
+    "at": "2026-10-13T23:51:25+0100",
+    "hit": false
    }
   },
   {
