@@ -1,0 +1,604 @@
+{
+ "captured_at": "2026-10-13T11:34:04Z",
+ "pages": 10,
+ "new_pools_seen": 200,
+ "pump_fun": 85,
+ "above_5k_at_capture": 3,
+ "pools": [
+  {
+   "pool": "6S3MP7fK74Xnq4KuRf6arGVc81vMbJhNocUNpidpe1vE",
+   "name": "RSI / SOL",
+   "created": "2026-10-13T11:33:33Z",
+   "liq_at_capture": 3518.0297,
+   "fdv_at_capture": 4698.090017
+  },
+  {
+   "pool": "H8pxANWWHVXhRNSws8hD64QcK4sLBPgBmFS6ZZyYbb6R",
+   "name": "HANS / SOL",
+   "created": "2026-10-13T11:33:23Z",
+   "liq_at_capture": 2228.8823,
+   "fdv_at_capture": 5068.34148
+  },
+  {
+   "pool": "5mQbo4kS3tWpvv5f8PTLEV5BEhzE4cmmCE8jco4fuRbp",
+   "name": "Light / wNEAR",
+   "created": "2026-10-13T11:33:14Z",
+   "liq_at_capture": 2730.104,
+   "fdv_at_capture": 3459.971596
+  },
+  {
+   "pool": "FEYW7SYuA6dLsrEkss4NirpmBp8MZzzKnW8qbjymbfUn",
+   "name": "OPTION / SOL",
+   "created": "2026-10-13T11:33:20Z",
+   "liq_at_capture": 2709.5758,
+   "fdv_at_capture": 3535.182779
+  },
+  {
+   "pool": "CPwFtDjCaQRCho6mHDVbphQZXdagYaZsyQCk3FPDsC1M",
+   "name": "WEDO / SOL",
+   "created": "2026-10-13T11:33:18Z",
+   "liq_at_capture": 1897.5726,
+   "fdv_at_capture": 4784.061978
+  },
+  {
+   "pool": "8cvmnA5LL66oGQAxE2MpiPmfZrGPBiLDLB6NhGizTWQk",
+   "name": "CAT / SOL",
+   "created": "2026-10-13T11:33:13Z",
+   "liq_at_capture": 2377.3166,
+   "fdv_at_capture": 3002.555862
+  },
+  {
+   "pool": "7kKmyBJy2HL71s2CoVXH2z946QNKr6SyCJZaqsPq6CSD",
+   "name": "GETPAID / SOL",
+   "created": "2026-10-13T11:33:12Z",
+   "liq_at_capture": 354.7719,
+   "fdv_at_capture": 545.5695782
+  },
+  {
+   "pool": "CvfxDj1eXtK3qDHBfqenFwGbD6dQpLsMEWUqV5ix273V",
+   "name": "SHARDCAT / SOL",
+   "created": "2026-10-13T11:33:02Z",
+   "liq_at_capture": 3177.6609,
+   "fdv_at_capture": 4028.045071
+  },
+  {
+   "pool": "2G73kh9DfiBPWQGNp2sn7QBnYjj2ZgZXHHVwHRqTSVP6",
+   "name": "RSI / SPCX",
+   "created": "2026-10-13T11:32:57Z",
+   "liq_at_capture": 2936.6582,
+   "fdv_at_capture": 3793.87305
+  },
+  {
+   "pool": "8KFVCdxzV8zzs5vvNMCcyzgT4b29w7ArRx1DSsrsaAwu",
+   "name": "YO / SOL",
+   "created": "2026-10-13T11:32:56Z",
+   "liq_at_capture": 2452.3191,
+   "fdv_at_capture": 3090.558901
+  },
+  {
+   "pool": "8DTjQkJpPfaV27HDFufLj2ayAgj76xtoufoge5XVK5Mg",
+   "name": "TNE / SOL",
+   "created": "2026-10-13T11:32:55Z",
+   "liq_at_capture": 2446.9146,
+   "fdv_at_capture": 3088.090785
+  },
+  {
+   "pool": "AYKueNPPsce3eYg45tUUDdqm7Ef55jc7wC63YudhLWw8",
+   "name": "RSI / SOL",
+   "created": "2026-10-13T11:32:54Z",
+   "liq_at_capture": 4112.4459,
+   "fdv_at_capture": 5697.043044
+  },
+  {
+   "pool": "3QHLdEUDxTpTPghigCwUj6tbkNa3sVF2LqWTypZoeA3T",
+   "name": "RSI / GOOGLx",
+   "created": "2026-10-13T11:32:52Z",
+   "liq_at_capture": 2561.1898,
+   "fdv_at_capture": 3231.681303
+  },
+  {
+   "pool": "BLmVCVECVts1FdQgvx38YjoiQ8iDE5sxeUA9SPG2rTb4",
+   "name": "CHAROC / SOL",
+   "created": "2026-10-13T11:32:51Z",
+   "liq_at_capture": 2712.5633,
+   "fdv_at_capture": 7144.491018
+  },
+  {
+   "pool": "5tzqf3Qqj7oMS3KXsMnDqMedXDn1ppDgioqKkaLqc4dn",
+   "name": "FUMOT / SOL",
+   "created": "2026-10-13T11:32:48Z",
+   "liq_at_capture": 2407.5141,
+   "fdv_at_capture": 3029.453415
+  },
+  {
+   "pool": "AJvN29qwFsBCtGAkF3xy8NEPkjnSZkCGjgNo8R21fy29",
+   "name": "RSI / SPCX",
+   "created": "2026-10-13T11:32:47Z",
+   "liq_at_capture": 2770.7887,
+   "fdv_at_capture": 3155.772581
+  },
+  {
+   "pool": "m5M6BDKRehGrXidbGijutMjbXSYEE5nuNxC8AY9qKCm",
+   "name": "Dog Think / SOL",
+   "created": "2026-10-13T11:32:42Z",
+   "liq_at_capture": 3000.2055,
+   "fdv_at_capture": 7533.69856
+  },
+  {
+   "pool": "2JKy7nkYYi556kJw8TU1C8f86PjfCnXvg4JR14MsSizH",
+   "name": "SHARDINU / SOL",
+   "created": "2026-10-13T11:32:42Z",
+   "liq_at_capture": 2586.9938,
+   "fdv_at_capture": 3276.219669
+  },
+  {
+   "pool": "CrchbAoVT1RThir3nGCZBbpv3yRT7t5Pw6jpRR3v4dpe",
+   "name": "DNA / SOL",
+   "created": "2026-10-13T11:31:41Z",
+   "liq_at_capture": 2465.0297,
+   "fdv_at_capture": 3109.88152
+  },
+  {
+   "pool": "E9VEvEbC1JMCEUnW5yrPhAikWvno4Ws65kneZz4YDnJs",
+   "name": "CAT / SOL",
+   "created": "2026-10-13T11:31:31Z",
+   "liq_at_capture": 2887.4683,
+   "fdv_at_capture": 3692.733618
+  },
+  {
+   "pool": "5bw2WsSU4kQehaTFNjsUHGpqZEu6mFLp7e3QGC1YNLzK",
+   "name": "WORM / SOL",
+   "created": "2026-10-13T11:31:25Z",
+   "liq_at_capture": 2365.311,
+   "fdv_at_capture": 2983.218797
+  },
+  {
+   "pool": "AH6FA5PuNg7vFY8634ueEj4NjAPLHoFLX4jWX2Y6zkB6",
+   "name": "WORM / SOL",
+   "created": "2026-10-13T11:31:25Z",
+   "liq_at_capture": 2363.8735,
+   "fdv_at_capture": 2982.660528
+  },
+  {
+   "pool": "FfJkqyg2ZWHG9ipUEkHPvtNkGKBjNdVGtj1A3F2xAqit",
+   "name": "WORM / SOL",
+   "created": "2026-10-13T11:31:24Z",
+   "liq_at_capture": 2367.4513,
+   "fdv_at_capture": 2983.292164
+  },
+  {
+   "pool": "G5PcjP6tPaWuTQNfNSgBEXTPEUqR6a7Txc9HmchVFJcN",
+   "name": "WORM / SOL",
+   "created": "2026-10-13T11:31:24Z",
+   "liq_at_capture": 2363.8735,
+   "fdv_at_capture": 2992.561958
+  },
+  {
+   "pool": "2V79jMgBsn9duZEeact2KwEgbEgD1i63fJr7UFTfLj6g",
+   "name": "CUC / SOL",
+   "created": "2026-10-13T11:31:23Z",
+   "liq_at_capture": 2375.5999,
+   "fdv_at_capture": 2995.767433
+  },
+  {
+   "pool": "CdWuMuvNChhdnx7nqk3sJX4T8bPoFDtUBoKVTor2wKyu",
+   "name": "WORM / SOL",
+   "created": "2026-10-13T11:31:23Z",
+   "liq_at_capture": 2364.6623,
+   "fdv_at_capture": 2984.296784
+  },
+  {
+   "pool": "GSfGBmECE79CRvapr6cTxhgpVfWSe1L1SCA273SzWcvz",
+   "name": "Angela / SOL",
+   "created": "2026-10-13T11:31:20Z",
+   "liq_at_capture": 3108.2553,
+   "fdv_at_capture": 4025.045277
+  },
+  {
+   "pool": "7xbL2JWahRbduJpR398GQim2HaJXe9CVBT64rFKKhuKi",
+   "name": "Babieca / SOL",
+   "created": "2026-10-13T11:31:07Z",
+   "liq_at_capture": 2728.092,
+   "fdv_at_capture": 3465.813919
+  },
+  {
+   "pool": "91gRAQe3wfvo4mZ3Cm3WbhyCdvaknksRmkb7v5SK9spS",
+   "name": "Panic / SOL",
+   "created": "2026-10-13T11:31:07Z",
+   "liq_at_capture": 2377.77300078164,
+   "fdv_at_capture": 2998.074645
+  },
+  {
+   "pool": "9hcWZfSmmoWPwcW2e6Vu2X8K972va3es4v87V5CRy3D9",
+   "name": "LMAO / SOL",
+   "created": "2026-10-13T11:31:03Z",
+   "liq_at_capture": 3030.8183,
+   "fdv_at_capture": 7653.338442
+  },
+  {
+   "pool": "5fEypFSVCNC3SxPiQjp3xqStT4K9Z3PP1RLwpgdM1CVW",
+   "name": "FUMOT / SOL",
+   "created": "2026-10-13T11:31:03Z",
+   "liq_at_capture": 2414.8301,
+   "fdv_at_capture": 2984.996493
+  },
+  {
+   "pool": "EHVfNPxuRj5sXiA3SxUcEUdTWm2eAjzM37iuSL3JcpA6",
+   "name": "MONY / SOL",
+   "created": "2026-10-13T11:31:03Z",
+   "liq_at_capture": 2420.527,
+   "fdv_at_capture": 6109.871124
+  },
+  {
+   "pool": "DTKxduUE5U3basEzB9TAjhpLckZYzhj61pZaWWDtJm4u",
+   "name": "Cyclops / SOL",
+   "created": "2026-10-13T11:30:43Z",
+   "liq_at_capture": 2746.9912,
+   "fdv_at_capture": 3390.989274
+  },
+  {
+   "pool": "95JKs1uANu1eZqHXUjQ83Fnko26djGzQ6eMpv5mWx55",
+   "name": "Jacksonst / SOL",
+   "created": "2026-10-13T11:30:42Z",
+   "liq_at_capture": 2390.8229,
+   "fdv_at_capture": 3019.224901
+  },
+  {
+   "pool": "3tFKKwaqwFmRNAVYHZJhrDUNinjeZ8bSAskb31B4EVnk",
+   "name": "ch / SOL",
+   "created": "2026-10-13T11:32:14Z",
+   "liq_at_capture": 3273.181,
+   "fdv_at_capture": 8282.879164
+  },
+  {
+   "pool": "HMW9vs7CgBTciBFMHtThp9PpG5shMo5p3X4zPohsF5ue",
+   "name": "DODO / SOL",
+   "created": "2026-10-13T11:32:08Z",
+   "liq_at_capture": 2441.5509,
+   "fdv_at_capture": 3077.749495
+  },
+  {
+   "pool": "Hu5r9WNadYfBzs31S77kCvkEE9kwAMPiuhj9BCDWYwWV",
+   "name": "$FROMBOT / SPCX",
+   "created": "2026-10-13T11:32:07Z",
+   "liq_at_capture": 2461.7725,
+   "fdv_at_capture": 3102.912889
+  },
+  {
+   "pool": "DpMeUEYLZCoKrdtcLssi5Qw937F1JQhJkzbPGysBm141",
+   "name": "nooo / SOL",
+   "created": "2026-10-13T11:32:05Z",
+   "liq_at_capture": 2747.2422,
+   "fdv_at_capture": 3486.93058
+  },
+  {
+   "pool": "BcL4fioKDE5ZbEgA7KBCE38J5GNH5zwwwqwaae3iNsZL",
+   "name": "Cupcake / SOL",
+   "created": "2026-10-13T11:32:03Z",
+   "liq_at_capture": 2447.3525,
+   "fdv_at_capture": 3084.300625
+  },
+  {
+   "pool": "51S2w9dFcJeDUNLW4uPv77AC6PPCMoC2YiRXnPjfU6m3",
+   "name": "NOFEES / SOL",
+   "created": "2026-10-13T11:32:03Z",
+   "liq_at_capture": 2379.0997,
+   "fdv_at_capture": 2999.722244
+  },
+  {
+   "pool": "EnarN8PG5Fn8iX7gRNJKyJX87NDfnj5PxqyEtANfrz2h",
+   "name": "Obv / SOL",
+   "created": "2026-10-13T11:32:03Z",
+   "liq_at_capture": 2373.0986,
+   "fdv_at_capture": 2986.148571
+  },
+  {
+   "pool": "575pCPMJLjTSqAtLiJLuiFzsasUaEqsv9DuErC81tMCd",
+   "name": "FCW / SOL",
+   "created": "2026-10-13T11:32:01Z",
+   "liq_at_capture": 2422.0968,
+   "fdv_at_capture": 3053.225574
+  },
+  {
+   "pool": "EgsxPmsJoHrTMdNyeTfAJZyWwXNAN6NuViZdRDm1JxLx",
+   "name": "SOOTS / SOL",
+   "created": "2026-10-13T11:31:57Z",
+   "liq_at_capture": 467.6398,
+   "fdv_at_capture": 1149.3232418
+  },
+  {
+   "pool": "6uMnZe27Bf1mVdXTzy86hyhsRFyYMBo2uNqFJr6rMXCR",
+   "name": "Morris / SOL",
+   "created": "2026-10-13T11:31:56Z",
+   "liq_at_capture": 3373.3418,
+   "fdv_at_capture": 4438.503661
+  },
+  {
+   "pool": "9GmSxxAbeDCZ3ToUJdh8GCUjGj4PkrFEngBfSyqMFmBe",
+   "name": "FOMOCAT / SOL",
+   "created": "2026-10-13T11:31:55Z",
+   "liq_at_capture": 2917.3012,
+   "fdv_at_capture": 7388.931782
+  },
+  {
+   "pool": "6qxRfGqKYZfuEVUQkTxXdqojkPX5eBexbZehQeV36i5F",
+   "name": "CyberScam / SOL",
+   "created": "2026-10-13T11:31:54Z",
+   "liq_at_capture": 2367.7653,
+   "fdv_at_capture": 2986.477825
+  },
+  {
+   "pool": "AZQCNX4WYCLCtoDPx5qFPjQCVKsyhiH33J1aubqjdbKr",
+   "name": "Roadmap / SOL",
+   "created": "2026-10-13T11:31:53Z",
+   "liq_at_capture": 2370.8667,
+   "fdv_at_capture": 2989.783653
+  },
+  {
+   "pool": "H37N2E3MmSu72Z4JKZv4dSHTDSv3PdgfjuodAT4MaNkd",
+   "name": "Robbery / SOL",
+   "created": "2026-10-13T11:31:51Z",
+   "liq_at_capture": 2367.8072,
+   "fdv_at_capture": 2985.913886
+  },
+  {
+   "pool": "D7bbixQTJP6ejL1iArkwAuLHGwshrx6Zt7v5ZWo53Re5",
+   "name": "SIGNAL / SOL",
+   "created": "2026-10-13T11:31:49Z",
+   "liq_at_capture": 2537.5127,
+   "fdv_at_capture": 3145.351029
+  },
+  {
+   "pool": "GvA1VZBRRZj4KARD6tXk62zLU4LvBZdVNytQ8ktEQ8WC",
+   "name": "Morris / GOOGLx",
+   "created": "2026-10-13T11:31:48Z",
+   "liq_at_capture": 2885.8987,
+   "fdv_at_capture": 3803.557317
+  },
+  {
+   "pool": "8qNMoB2LWLtUd33orZ8NHW1pKoXu6F1T8pTWsebrR61U",
+   "name": "Dog Think / SOL",
+   "created": "2026-10-13T11:31:43Z",
+   "liq_at_capture": 3180.3301,
+   "fdv_at_capture": 8220.543998
+  },
+  {
+   "pool": "GC25eFQxnoRLZYbejfZqR7rZm4By13wV6S3pzsM6TXLb",
+   "name": "Wikipendians / SOL",
+   "created": "2026-10-13T11:31:13Z",
+   "liq_at_capture": 2441.9267,
+   "fdv_at_capture": 3078.456322
+  },
+  {
+   "pool": "2YXGUTqYY5bT5wMpmexAdrvicM2LmQoUP61PXXXPe4YB",
+   "name": "Koinu / $WIF",
+   "created": "2026-10-13T11:30:38Z",
+   "liq_at_capture": 5433.5838,
+   "fdv_at_capture": 9942.049928
+  },
+  {
+   "pool": "FN7wGSg4YjxYwwwS1fJ5VqX5DYyoJrSrDh1ZQssXUKvw",
+   "name": "Lone / SOL",
+   "created": "2026-10-13T11:30:35Z",
+   "liq_at_capture": 338.7004,
+   "fdv_at_capture": 847.2706764
+  },
+  {
+   "pool": "9eukYwodgB96fZSrvAiH4z2aJCJgiv2Vyd4NDFveUgkW",
+   "name": "PharaohTe / SOL",
+   "created": "2026-10-13T11:30:35Z",
+   "liq_at_capture": 3496.2095,
+   "fdv_at_capture": 8779.321076
+  },
+  {
+   "pool": "3gvPsWkLFWhuyzr6CRbMFdZc6z5EFfr1Vetxswc8fEuP",
+   "name": "$Lam / SOL",
+   "created": "2026-10-13T11:30:34Z",
+   "liq_at_capture": 2371.0741,
+   "fdv_at_capture": 2989.231052
+  },
+  {
+   "pool": "4iTZ5Usx9v9LgbYN3BPoBfucLbifa6udECZYzYGdUcsd",
+   "name": "GOLDMAN / SOL",
+   "created": "2026-10-13T11:30:25Z",
+   "liq_at_capture": 2386.3854,
+   "fdv_at_capture": 3014.003208
+  },
+  {
+   "pool": "sLiNT3LL98bj6bLyuLDibZa5CJrjDLeiJyV7xxd5TS5",
+   "name": "Catclops / SOL",
+   "created": "2026-10-13T11:30:23Z",
+   "liq_at_capture": 3744.2036,
+   "fdv_at_capture": 5103.854358
+  },
+  {
+   "pool": "9fPitL3Ex8xXhibpQPs8xA2MZ2bnQzvMVsJBYvtmqi7z",
+   "name": "CRAWLENCY / SOL",
+   "created": "2026-10-13T11:30:19Z",
+   "liq_at_capture": 2374.8313,
+   "fdv_at_capture": 2983.776973
+  },
+  {
+   "pool": "6xPV343sP2B4k2uLaU5UkSGKqMtG26EBmwkhbszh1h7p",
+   "name": "PENGUINS / SOL",
+   "created": "2026-10-13T11:30:10Z",
+   "liq_at_capture": 2367.7539,
+   "fdv_at_capture": 2989.081243
+  },
+  {
+   "pool": "BPWxb4VKaUNHF2SB83iYktkQCuECmZvD1hQtNXGz3d4R",
+   "name": "shard / SOL",
+   "created": "2026-10-13T11:30:10Z",
+   "liq_at_capture": 8882.0739,
+   "fdv_at_capture": 33563.19203
+  },
+  {
+   "pool": "63FtqrrgtLPA4jAwCJN2PEAsVPjXPsn7aGmkxraHzt3N",
+   "name": "WHIWEA / PUMP",
+   "created": "2026-10-13T11:30:07Z",
+   "liq_at_capture": 2511.6528,
+   "fdv_at_capture": 3167.115536
+  },
+  {
+   "pool": "59yvHJjM5YB6EBJaAQ3WBQLcTAZoXgdZ4YTeduWKJEp4",
+   "name": "PAN / SOL",
+   "created": "2026-10-13T11:30:06Z",
+   "liq_at_capture": 2441.7427,
+   "fdv_at_capture": 3078.859942
+  },
+  {
+   "pool": "FBZLfoKRSDpHddDuFpn7AhBvnfKe3gE6aFkisLU95z1r",
+   "name": "DOOYET / SOL",
+   "created": "2026-10-13T11:30:02Z",
+   "liq_at_capture": 118.0607,
+   "fdv_at_capture": 307.9527822
+  },
+  {
+   "pool": "FAeE188HWpC2BrEEPAfK1Pht6Fi3PVBKWVEggrRRQXyR",
+   "name": "PUMP / SOL",
+   "created": "2026-10-13T11:30:02Z",
+   "liq_at_capture": 641.767,
+   "fdv_at_capture": 1567.389814
+  },
+  {
+   "pool": "8cuQVEsM3o8M2NFe7kDbFL4x9u5E3GMyVZGh8aQj2SBS",
+   "name": "Rise / SOL",
+   "created": "2026-10-13T11:30:01Z",
+   "liq_at_capture": 2510.5338,
+   "fdv_at_capture": 3162.837455
+  },
+  {
+   "pool": "8aunnDQqm5ESzofGyumEPZYGmgytfiVah6NkYJz5qyau",
+   "name": "VRAXR / SOL",
+   "created": "2026-10-13T11:29:53Z",
+   "liq_at_capture": 0.0,
+   "fdv_at_capture": 31898.0870238821
+  },
+  {
+   "pool": "TbJh446mv32U4M2W2gKnEmxCRtJ9Q9k5oYGukdAXtgw",
+   "name": "Fans / PUMP",
+   "created": "2026-10-13T11:29:47Z",
+   "liq_at_capture": 2428.8423,
+   "fdv_at_capture": 3060.93816
+  },
+  {
+   "pool": "3qZwwefYofRhv43ESd87F2tuiaH77oV19uimLPipEGLQ",
+   "name": "cap / SOL",
+   "created": "2026-10-13T11:29:28Z",
+   "liq_at_capture": 60.892,
+   "fdv_at_capture": 152.41751998
+  },
+  {
+   "pool": "BvTPBA3b2bKZcWVjpCzCLn18BDnQXuUvSB9EEPHfjxEq",
+   "name": "FATANGELA / SOL",
+   "created": "2026-10-13T11:29:23Z",
+   "liq_at_capture": 5459.6014,
+   "fdv_at_capture": 8492.824157
+  },
+  {
+   "pool": "CxKYgM4ndacbah9wqkRw1uCnrngvddzK2BuvETVrbDsp",
+   "name": "radio / SOL",
+   "created": "2026-10-13T11:29:20Z",
+   "liq_at_capture": 2466.9636,
+   "fdv_at_capture": 3116.617129
+  },
+  {
+   "pool": "HgQEfGtumL9hp3wTGZWsXPBQEbw1UnNQJo3oRCFNMMc8",
+   "name": "DOGE / DOGE",
+   "created": "2026-10-13T11:29:20Z",
+   "liq_at_capture": 2496.202,
+   "fdv_at_capture": 3139.718475
+  },
+  {
+   "pool": "9eyq12H7VzJoMtbL9txupxTeLgBUTSRFPieMqqmZa8Ww",
+   "name": "falcon / SOL",
+   "created": "2026-10-13T11:29:13Z",
+   "liq_at_capture": 2369.368,
+   "fdv_at_capture": 2988.567072
+  },
+  {
+   "pool": "xsumjniCSv8mq1dfA2gsAoDvYcmLgxBHpCch2UVRjg3",
+   "name": "PUMP / SOL",
+   "created": "2026-10-13T11:29:01Z",
+   "liq_at_capture": 1064.3823,
+   "fdv_at_capture": 2613.240472
+  },
+  {
+   "pool": "DQM8A18xr9BjWz9T6zhTMVLoLBrHdTzU574CW1YnLbM2",
+   "name": "DOGE / SPCX",
+   "created": "2026-10-13T11:28:54Z",
+   "liq_at_capture": 2710.4806,
+   "fdv_at_capture": 3431.843064
+  },
+  {
+   "pool": "HyfeueKaySdMsorpcEEMm2eCBCrgchPenqRFu9xhLGRb",
+   "name": "DOGE / SPCX",
+   "created": "2026-10-13T11:28:54Z",
+   "liq_at_capture": 2431.8736,
+   "fdv_at_capture": 3067.912058
+  },
+  {
+   "pool": "7V1f3DZLQ3chpUpMdf7EsBr7YBDqJWDdkxj2gW2ne4j4",
+   "name": "proy / SOL",
+   "created": "2026-10-13T11:28:46Z",
+   "liq_at_capture": 2369.967,
+   "fdv_at_capture": 2988.237298
+  },
+  {
+   "pool": "G2usB3B1EGJAADm3jpQwcjJkRRDdnHcz8NtYymzgRMLA",
+   "name": "PUMP / SOL",
+   "created": "2026-10-13T11:28:39Z",
+   "liq_at_capture": 1189.7676,
+   "fdv_at_capture": 2888.525726
+  },
+  {
+   "pool": "ANvgAyEf6ZarNf6AdRHAe8i44EpyiqH31TrffnEXzWPM",
+   "name": "Pyrabot / SOL",
+   "created": "2026-10-13T11:28:34Z",
+   "liq_at_capture": 3.7755,
+   "fdv_at_capture": 4.41894228
+  },
+  {
+   "pool": "ETRqoZA94JsSHrPUFbohGHauQM6VQvg2mbkmwcU68pib",
+   "name": "Wikipedians / SOL",
+   "created": "2026-10-13T11:28:29Z",
+   "liq_at_capture": 2443.3379,
+   "fdv_at_capture": 3081.922155
+  },
+  {
+   "pool": "7tz9PZbrnCD2APqkjK4ZrLg2sGMXNVucFmwENnr3pte2",
+   "name": "PUMP / SOL",
+   "created": "2026-10-13T11:28:27Z",
+   "liq_at_capture": 927.4076,
+   "fdv_at_capture": 2192.057612
+  },
+  {
+   "pool": "8o84fxTALtjqisjZn6cDnh7oHvYbyWTEpDmuBSnHpeia",
+   "name": "Civilisation / SPCX",
+   "created": "2026-10-13T11:29:45Z",
+   "liq_at_capture": 2518.7373,
+   "fdv_at_capture": 3175.290074
+  },
+  {
+   "pool": "9A5pbkEkGYruaq8kF1dMf5874eegqUNCTxsBioc6PHap",
+   "name": "ANGELA / SOL",
+   "created": "2026-10-13T11:29:44Z",
+   "liq_at_capture": 2411.7428,
+   "fdv_at_capture": 3040.994937
+  },
+  {
+   "pool": "G2t1eidn97ykC2Fr54dQrwG2HF3FC3vFvRGhixjbSZJb",
+   "name": "Jellyfish / SOL",
+   "created": "2026-10-13T11:29:41Z",
+   "liq_at_capture": 2402.8585,
+   "fdv_at_capture": 3034.318049
+  },
+  {
+   "pool": "8EMrQAHhXVZLHXxpZWgtxZ5eHjcFbbAdd91bhxm4r3n",
+   "name": "PUMP / SOL",
+   "created": "2026-10-13T11:29:40Z",
+   "liq_at_capture": 1854.1218,
+   "fdv_at_capture": 2237.006124
+  }
+ ]
+}

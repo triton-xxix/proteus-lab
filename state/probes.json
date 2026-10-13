@@ -1,5 +1,5 @@
 {
- "next_id": 140,
+ "next_id": 141,
  "items": [
   {
    "id": "P-0001",
@@ -3060,26 +3060,29 @@
    "id": "P-0137",
    "title": "Launchpad leaderboard: what share of 100 fresh pump.fun pools on GeckoTerminal keep liquidity above 5k after 24h?",
    "source": "vault",
-   "needs": "",
+   "needs": "24 hours to pass: the 85-pool cohort is committed, P-0140 rechecks it after 14 Oct",
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-13T12:33:10+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-10-13T12:36:33+0100",
+   "note": "Measured today: 85 of the newest 200 Solana pools on GeckoTerminal were pump.fun (43 pct), born in 5 minutes, about 17 a minute; 3 of 85 above 5k USD at capture. The 24h share cannot be read keyless today: pump-fun and pumpswap pool lists answer 400 to a creation-date sort and new_pools stops at 10 pages, minutes of launches. Shot said about 15 of 100 at 24h; not measured, and 82 of 85 start below the line. Cohort committed before its outcome; P-0140 rechecks after 14 Oct.",
+   "artefacts": [
+    "experiments/2026-10-13-P-0137"
+   ],
+   "minutes": 3,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "about 15 of 100 pools 24 to 48h old still above 5k USD liquidity",
-    "at": "2026-10-13T12:33:18+0100"
+    "at": "2026-10-13T12:33:18+0100",
+    "hit": false
    }
   },
   {
@@ -3109,6 +3112,26 @@
    "needs": "",
    "after": "",
    "est_minutes": 20,
+   "added": "2026-10-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0140",
+   "title": "P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-10-14",
+   "est_minutes": 15,
    "added": "2026-10-13",
    "status": "open",
    "attempts": 0,

@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 84 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 84 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
 
 ## Queue (18 open)
 
@@ -28,14 +28,15 @@ Verdicts so far: 84 works, 5 broken, 19 blocked, 9 not worth it. Killed: 4.
 | P-0134 | Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experiments/2026-10-12-P-0128/run.py in the background, about 55 min | desk | none |  | 0 | 20 min |
 | P-0135 | Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches | desk | none |  | 1 | 15 min |
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
-| P-0137 | Launchpad leaderboard: what share of 100 fresh pump.fun pools on GeckoTerminal keep liquidity above 5k after 24h? | vault | none |  | 1 (in progress) | 25 min |
 | P-0138 | agent-standup: does its per-agent token count for one local session match a deduplicated transcript sum within 5%? | harvest | none |  | 0 | 25 min |
 | P-0139 | Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R01.csv marked backfilled, per VARIANTS-3 line 40 | desk | none |  | 0 | 20 min |
+| P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
 
-## Verdicts (117)
+## Verdicts (118)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-13 | P-0137 | Launchpad leaderboard: what share of 100 fresh pump.fun pools on GeckoTerminal keep liquidity above 5k after 24h? | **blocked** | Measured today: 85 of the newest 200 Solana pools on GeckoTerminal were pump.fun (43 pct), born in 5 minutes, about 17 a minute; 3 of 85 above 5k USD at capture. The 24h share cannot be read keyless today: pump-fun and pumpswap pool lists answer 400 to a creation-date sort and new_pools stops at 10 pages, minutes of launches. Shot said about 15 of 100 at 24h; not measured, and 82 of 85 start below the line. Cohort committed before its outcome; P-0140 rechecks after 14 Oct. | `experiments/2026-10-13-P-0137` | 3 min, 13 calls, 0 denied |
 | 2026-10-13 | P-0121 | Grinder R01 shadow book wired into paper.py (BOOKS.json "second", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harness/VARIANTS-3.md | **works** | Wired: paper.py --apply-r01, select_r01 beside v0.2, own ledger LEDGER-R01.csv (R- ids, v0.2 exits), runs after mentions.py in nightly step 2. Measured 4 of 4 nights where wired picks equal replay.py picks, same tokens same order; shot said 4 of 4. Live run refused the stale 11 Oct snapshot as it should; first real entries tonight. Not BOOKS.json second (shares LEDGER.csv); 8 to 11 Oct not yet backfilled. D-007 scored. Next: deepen (queued P-0139, backfill 8 to 11 Oct from candles). | `experiments/2026-10-13-P-0121` | 1 min, 29 calls, 0 denied |
 | 2026-10-12 | P-0129 | Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices move after commit and whether the desk's 'beat the close' bets are just the moves it never saw | **works** | Measured leg 1 only: 15 prices on 5 Monday fixtures moved a mean 1.5 pct (max 4.4) from the commit-time line to 4.7 to 7.5 h before kickoff. Shot said blocked, no fixtures till 17 Oct: wrong, I assumed a break without looking. The 2 h leg falls after this slot. Next: deepen (P-0135: run.py ko-2h near 15:30Z and 17:00Z today, set moves beside the book bets). | `experiments/2026-10-12-P-0129` | 0 min, 8 calls, 0 denied |
 | 2026-10-12 | P-0132 | P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-ATA self-test, 0.3 s sleep | **works** | Measured on 10 wallets x DOGEUS only: 0 touches in the window (shot: 1 of 91, not reached). 4 of 10 have one signature each at the same second, 21:17:41Z, six minutes before the window: looks like a dust airdrop to KOL wallets, unconfirmed. Stall cause: about 9 s per getSignaturesForAddress on the public RPC, so 364 lookups is about 55 min. Next: deepen (P-0134: full 91 x 4 as a background run, open the 21:17:41Z transaction). | `experiments/2026-10-12-P-0132` | 2 min, 14 calls, 1 denied |
