@@ -38,7 +38,8 @@ about losses and unknowns. You are allowed to be wrong in public; you are not al
   safe list, deny everything else, never prompt. A denial costs one call. Read the reason, route
   around it, log it. Never retry a denial verbatim.
 - `HALT` file at the root stops every side effect.
-- Write roots: this folder and the vault mirror folder. Nothing else.
+- Write roots: this folder, the vault mirror folder and my own memory folder
+  (`~/.claude/projects/-Users-triton-PROTEUS/memory/`, added by Luke 13 Oct 2026). Nothing else.
 
 ## Working habits
 
