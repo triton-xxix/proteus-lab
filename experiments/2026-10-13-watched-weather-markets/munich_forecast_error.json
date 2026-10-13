@@ -1,0 +1,179 @@
+{
+ "days_requested": 60,
+ "stations": {
+  "10865": {
+   "name": "Muenchen-Stadt",
+   "first": "2026-08-15",
+   "last": "2026-10-12",
+   "last_observed_day": "2026-10-12",
+   "stats": {
+    "icon_seamless": {
+     "n": 59,
+     "mae": 1.38,
+     "bias": -0.95,
+     "right_degree": 0.19,
+     "within_1": 0.73
+    },
+    "ecmwf_ifs025": {
+     "n": 59,
+     "mae": 2.27,
+     "bias": -2.18,
+     "right_degree": 0.08,
+     "within_1": 0.25
+    },
+    "gfs_seamless": {
+     "n": 59,
+     "mae": 1.7,
+     "bias": -1.39,
+     "right_degree": 0.08,
+     "within_1": 0.46
+    },
+    "mean_of_3": {
+     "n": 59,
+     "mae": 1.73,
+     "bias": -1.5,
+     "right_degree": 0.05,
+     "within_1": 0.41
+    }
+   },
+   "recent": [
+    {
+     "day": "2026-10-06",
+     "obs": 21.8,
+     "icon_seamless": 21.3,
+     "ecmwf_ifs025": 20.2,
+     "gfs_seamless": 20.9
+    },
+    {
+     "day": "2026-10-07",
+     "obs": 24.6,
+     "icon_seamless": 23.4,
+     "ecmwf_ifs025": 22.2,
+     "gfs_seamless": 22.6
+    },
+    {
+     "day": "2026-10-08",
+     "obs": 19.9,
+     "icon_seamless": 18.7,
+     "ecmwf_ifs025": 17.7,
+     "gfs_seamless": 17.5
+    },
+    {
+     "day": "2026-10-09",
+     "obs": 16.5,
+     "icon_seamless": 16.1,
+     "ecmwf_ifs025": 14.5,
+     "gfs_seamless": 14.4
+    },
+    {
+     "day": "2026-10-10",
+     "obs": 13.6,
+     "icon_seamless": 13.0,
+     "ecmwf_ifs025": 12.5,
+     "gfs_seamless": 11.7
+    },
+    {
+     "day": "2026-10-11",
+     "obs": 13.7,
+     "icon_seamless": 13.5,
+     "ecmwf_ifs025": 13.2,
+     "gfs_seamless": 13.0
+    },
+    {
+     "day": "2026-10-12",
+     "obs": 15.0,
+     "icon_seamless": 13.5,
+     "ecmwf_ifs025": 13.3,
+     "gfs_seamless": 14.2
+    }
+   ]
+  },
+  "10870": {
+   "name": "Muenchen-Flughafen",
+   "first": "2026-08-15",
+   "last": "2026-10-12",
+   "last_observed_day": "2026-10-12",
+   "stats": {
+    "icon_seamless": {
+     "n": 59,
+     "mae": 1.16,
+     "bias": -0.27,
+     "right_degree": 0.34,
+     "within_1": 0.73
+    },
+    "ecmwf_ifs025": {
+     "n": 59,
+     "mae": 1.65,
+     "bias": -1.5,
+     "right_degree": 0.08,
+     "within_1": 0.53
+    },
+    "gfs_seamless": {
+     "n": 59,
+     "mae": 1.19,
+     "bias": -0.71,
+     "right_degree": 0.25,
+     "within_1": 0.69
+    },
+    "mean_of_3": {
+     "n": 59,
+     "mae": 1.16,
+     "bias": -0.82,
+     "right_degree": 0.25,
+     "within_1": 0.73
+    }
+   },
+   "recent": [
+    {
+     "day": "2026-10-06",
+     "obs": 22.6,
+     "icon_seamless": 21.3,
+     "ecmwf_ifs025": 20.2,
+     "gfs_seamless": 20.9
+    },
+    {
+     "day": "2026-10-07",
+     "obs": 24.1,
+     "icon_seamless": 23.4,
+     "ecmwf_ifs025": 22.2,
+     "gfs_seamless": 22.6
+    },
+    {
+     "day": "2026-10-08",
+     "obs": 21.1,
+     "icon_seamless": 18.7,
+     "ecmwf_ifs025": 17.7,
+     "gfs_seamless": 17.5
+    },
+    {
+     "day": "2026-10-09",
+     "obs": 16.4,
+     "icon_seamless": 16.1,
+     "ecmwf_ifs025": 14.5,
+     "gfs_seamless": 14.4
+    },
+    {
+     "day": "2026-10-10",
+     "obs": 13.4,
+     "icon_seamless": 13.0,
+     "ecmwf_ifs025": 12.5,
+     "gfs_seamless": 11.7
+    },
+    {
+     "day": "2026-10-11",
+     "obs": 14.2,
+     "icon_seamless": 13.5,
+     "ecmwf_ifs025": 13.2,
+     "gfs_seamless": 13.0
+    },
+    {
+     "day": "2026-10-12",
+     "obs": 14.2,
+     "icon_seamless": 13.5,
+     "ecmwf_ifs025": 13.3,
+     "gfs_seamless": 14.2
+    }
+   ]
+  }
+ }
+}
