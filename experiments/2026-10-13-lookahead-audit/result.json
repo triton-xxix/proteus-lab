@@ -1,0 +1,401 @@
+{
+ "checks": [
+  {
+   "check": "SPY P-0083 rsi5 simple next open",
+   "stepper_trades": 198,
+   "backtest_trades": 198,
+   "match": true
+  },
+  {
+   "check": "SPY P-0082 rsi5 simple close",
+   "stepper_trades": 198,
+   "backtest_trades": 198,
+   "match": true
+  },
+  {
+   "check": "SPY P-0083 rsi5 triple next open",
+   "stepper_trades": 91,
+   "backtest_trades": 91,
+   "match": true
+  },
+  {
+   "check": "SPY P-0082 rsi5 triple close",
+   "stepper_trades": 91,
+   "backtest_trades": 91,
+   "match": true
+  },
+  {
+   "check": "SPY P-0091 book 1 inside books()",
+   "stepper_trades": 198,
+   "backtest_trades": 198,
+   "match": true
+  },
+  {
+   "check": "SPY P-0091 ibs gated",
+   "stepper_trades": 806,
+   "backtest_trades": 806,
+   "match": true
+  },
+  {
+   "check": "SPY P-0082 sma200",
+   "stepper_trades": 111,
+   "backtest_trades": 111,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0083 rsi5 simple next open",
+   "stepper_trades": 170,
+   "backtest_trades": 170,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0082 rsi5 simple close",
+   "stepper_trades": 170,
+   "backtest_trades": 170,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0083 rsi5 triple next open",
+   "stepper_trades": 77,
+   "backtest_trades": 77,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0082 rsi5 triple close",
+   "stepper_trades": 77,
+   "backtest_trades": 77,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0091 book 1 inside books()",
+   "stepper_trades": 170,
+   "backtest_trades": 170,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0091 ibs gated",
+   "stepper_trades": 659,
+   "backtest_trades": 659,
+   "match": true
+  },
+  {
+   "check": "QQQ P-0082 sma200",
+   "stepper_trades": 86,
+   "backtest_trades": 86,
+   "match": true
+  },
+  {
+   "check": "DIA P-0083 rsi5 simple next open",
+   "stepper_trades": 163,
+   "backtest_trades": 163,
+   "match": true
+  },
+  {
+   "check": "DIA P-0082 rsi5 simple close",
+   "stepper_trades": 164,
+   "backtest_trades": 164,
+   "match": true
+  },
+  {
+   "check": "DIA P-0083 rsi5 triple next open",
+   "stepper_trades": 80,
+   "backtest_trades": 80,
+   "match": true
+  },
+  {
+   "check": "DIA P-0082 rsi5 triple close",
+   "stepper_trades": 81,
+   "backtest_trades": 81,
+   "match": true
+  },
+  {
+   "check": "DIA P-0091 book 1 inside books()",
+   "stepper_trades": 163,
+   "backtest_trades": 163,
+   "match": true
+  },
+  {
+   "check": "DIA P-0091 ibs gated",
+   "stepper_trades": 704,
+   "backtest_trades": 704,
+   "match": true
+  },
+  {
+   "check": "DIA P-0082 sma200",
+   "stepper_trades": 131,
+   "backtest_trades": 131,
+   "match": true
+  },
+  {
+   "check": "IWM P-0083 rsi5 simple next open",
+   "stepper_trades": 146,
+   "backtest_trades": 146,
+   "match": true
+  },
+  {
+   "check": "IWM P-0082 rsi5 simple close",
+   "stepper_trades": 146,
+   "backtest_trades": 146,
+   "match": true
+  },
+  {
+   "check": "IWM P-0083 rsi5 triple next open",
+   "stepper_trades": 77,
+   "backtest_trades": 77,
+   "match": true
+  },
+  {
+   "check": "IWM P-0082 rsi5 triple close",
+   "stepper_trades": 77,
+   "backtest_trades": 77,
+   "match": true
+  },
+  {
+   "check": "IWM P-0091 book 1 inside books()",
+   "stepper_trades": 146,
+   "backtest_trades": 146,
+   "match": true
+  },
+  {
+   "check": "IWM P-0091 ibs gated",
+   "stepper_trades": 677,
+   "backtest_trades": 677,
+   "match": true
+  },
+  {
+   "check": "IWM P-0082 sma200",
+   "stepper_trades": 111,
+   "backtest_trades": 111,
+   "match": true
+  },
+  {
+   "check": "EFA P-0083 rsi5 simple next open",
+   "stepper_trades": 127,
+   "backtest_trades": 127,
+   "match": true
+  },
+  {
+   "check": "EFA P-0082 rsi5 simple close",
+   "stepper_trades": 127,
+   "backtest_trades": 127,
+   "match": true
+  },
+  {
+   "check": "EFA P-0083 rsi5 triple next open",
+   "stepper_trades": 53,
+   "backtest_trades": 53,
+   "match": true
+  },
+  {
+   "check": "EFA P-0082 rsi5 triple close",
+   "stepper_trades": 53,
+   "backtest_trades": 53,
+   "match": true
+  },
+  {
+   "check": "EFA P-0091 book 1 inside books()",
+   "stepper_trades": 127,
+   "backtest_trades": 127,
+   "match": true
+  },
+  {
+   "check": "EFA P-0091 ibs gated",
+   "stepper_trades": 635,
+   "backtest_trades": 635,
+   "match": true
+  },
+  {
+   "check": "EFA P-0082 sma200",
+   "stepper_trades": 102,
+   "backtest_trades": 102,
+   "match": true
+  },
+  {
+   "check": "EEM P-0083 rsi5 simple next open",
+   "stepper_trades": 122,
+   "backtest_trades": 122,
+   "match": true
+  },
+  {
+   "check": "EEM P-0082 rsi5 simple close",
+   "stepper_trades": 122,
+   "backtest_trades": 122,
+   "match": true
+  },
+  {
+   "check": "EEM P-0083 rsi5 triple next open",
+   "stepper_trades": 59,
+   "backtest_trades": 59,
+   "match": true
+  },
+  {
+   "check": "EEM P-0082 rsi5 triple close",
+   "stepper_trades": 59,
+   "backtest_trades": 59,
+   "match": true
+  },
+  {
+   "check": "EEM P-0091 book 1 inside books()",
+   "stepper_trades": 122,
+   "backtest_trades": 122,
+   "match": true
+  },
+  {
+   "check": "EEM P-0091 ibs gated",
+   "stepper_trades": 657,
+   "backtest_trades": 657,
+   "match": true
+  },
+  {
+   "check": "EEM P-0082 sma200",
+   "stepper_trades": 110,
+   "backtest_trades": 110,
+   "match": true
+  },
+  {
+   "check": "EWU P-0083 rsi5 simple next open",
+   "stepper_trades": 144,
+   "backtest_trades": 144,
+   "match": true
+  },
+  {
+   "check": "EWU P-0082 rsi5 simple close",
+   "stepper_trades": 144,
+   "backtest_trades": 144,
+   "match": true
+  },
+  {
+   "check": "EWU P-0083 rsi5 triple next open",
+   "stepper_trades": 69,
+   "backtest_trades": 69,
+   "match": true
+  },
+  {
+   "check": "EWU P-0082 rsi5 triple close",
+   "stepper_trades": 69,
+   "backtest_trades": 69,
+   "match": true
+  },
+  {
+   "check": "EWU P-0091 book 1 inside books()",
+   "stepper_trades": 144,
+   "backtest_trades": 144,
+   "match": true
+  },
+  {
+   "check": "EWU P-0091 ibs gated",
+   "stepper_trades": 773,
+   "backtest_trades": 773,
+   "match": true
+  },
+  {
+   "check": "EWU P-0082 sma200",
+   "stepper_trades": 119,
+   "backtest_trades": 119,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0083 rsi5 simple next open",
+   "stepper_trades": 139,
+   "backtest_trades": 139,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0082 rsi5 simple close",
+   "stepper_trades": 139,
+   "backtest_trades": 139,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0083 rsi5 triple next open",
+   "stepper_trades": 60,
+   "backtest_trades": 60,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0082 rsi5 triple close",
+   "stepper_trades": 60,
+   "backtest_trades": 60,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0091 book 1 inside books()",
+   "stepper_trades": 139,
+   "backtest_trades": 139,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0091 ibs gated",
+   "stepper_trades": 772,
+   "backtest_trades": 772,
+   "match": true
+  },
+  {
+   "check": "EWJ P-0082 sma200",
+   "stepper_trades": 145,
+   "backtest_trades": 145,
+   "match": true
+  },
+  {
+   "check": "EWG P-0083 rsi5 simple next open",
+   "stepper_trades": 145,
+   "backtest_trades": 145,
+   "match": true
+  },
+  {
+   "check": "EWG P-0082 rsi5 simple close",
+   "stepper_trades": 145,
+   "backtest_trades": 145,
+   "match": true
+  },
+  {
+   "check": "EWG P-0083 rsi5 triple next open",
+   "stepper_trades": 72,
+   "backtest_trades": 72,
+   "match": true
+  },
+  {
+   "check": "EWG P-0082 rsi5 triple close",
+   "stepper_trades": 72,
+   "backtest_trades": 72,
+   "match": true
+  },
+  {
+   "check": "EWG P-0091 book 1 inside books()",
+   "stepper_trades": 145,
+   "backtest_trades": 145,
+   "match": true
+  },
+  {
+   "check": "EWG P-0091 ibs gated",
+   "stepper_trades": 808,
+   "backtest_trades": 808,
+   "match": true
+  },
+  {
+   "check": "EWG P-0082 sma200",
+   "stepper_trades": 130,
+   "backtest_trades": 130,
+   "match": true
+  }
+ ],
+ "indicator_causality_worst_abs_diff": {
+  "SPY": 0.0,
+  "QQQ": 0.0,
+  "DIA": 0.0,
+  "IWM": 0.0,
+  "EFA": 0.0,
+  "EEM": 0.0,
+  "EWU": 0.0,
+  "EWJ": 0.0,
+  "EWG": 0.0
+ },
+ "luck_test_tool_and_control": {
+  "stepper_total_log": 2.51897,
+  "tool_total_log": 2.51897,
+  "tool_match": true,
+  "bugged_draft_total_log": 4.979777,
+  "bugged_draft_flagged": true
+ },
+ "all_match": true
+}
