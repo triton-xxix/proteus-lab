@@ -6,7 +6,7 @@ number. The point is the word: KILL, KEEP, CHANGE or RUNNING, said out loud ever
 Read-only. `--log` appends the lines to today's run log.
 
 Books: the graduation book (closed, G1) and G2 (grinder/graduates/RULES.md), the judgement book's
-anchored and blind columns (PASS-MARKS.md), the exchange book (exchange/RULES.md), the systems book (systems/RULES.md). The Grinder and the Pitch are judged at the week-8
+anchored and blind columns (PASS-MARKS.md), the exchange book (exchange/RULES.md), the Grinder R01 shadow book (grinder/harness/VARIANTS-3.md), the systems book (systems/RULES.md). The Grinder and the Pitch are judged at the week-8
 review by bin/review.py, which has no nightly kill line to check.
 """
 import csv
@@ -94,6 +94,35 @@ def exchange():
     return f"Exchange book: {word}. {len(rows)} calls, {n} settled, me minus market {m:+.4f} (KILL at +0.020, KEEP at 0.000)"
 
 
+def r01():
+    """The Grinder R01 shadow book (grinder/harness/VARIANTS-3.md, wired 13 Oct 2026 by P-0121), against
+    v0.2's closed positions entered on the same nights. KILL at 20 if R01's rug rate is v0.2's or worse;
+    at 40 KEEP only if rug rate is at most half v0.2's, expectancy at or above v0.2's and expectancy with
+    the best three removed at or above zero; anything else at 40 is KILL. Read literally, as registered."""
+    p = ROOT / "grinder/LEDGER-R01.csv"
+    rows = [r for r in csv.DictReader(open(p)) if r.get("exit_at") and r.get("pnl_gbp")] if p.exists() else []
+    nights = {r["entered_at"][:10] for r in rows}
+    v02 = [r for r in csv.DictReader(open(ROOT / "grinder/LEDGER.csv"))
+           if r.get("rule_version") == "v0.2" and r.get("exit_at") and r.get("pnl_gbp") and r["entered_at"][:10] in nights]
+    n, nv = len(rows), len(v02)
+    if not n:
+        return "Grinder R01 shadow book: RUNNING (40 to the 40 mark). 0 closed"
+    pnl = sorted(float(r["pnl_gbp"]) for r in rows)
+    exp = statistics.mean(pnl)
+    exp3 = statistics.mean(pnl[:-3]) if n > 3 else float("nan")
+    rug = sum(r.get("rugged") == "1" for r in rows) / n
+    exp_v = statistics.mean(float(r["pnl_gbp"]) for r in v02) if v02 else float("nan")
+    rug_v = sum(r.get("rugged") == "1" for r in v02) / nv if nv else float("nan")
+    if n >= 40:
+        word = "KEEP" if (rug <= rug_v / 2 and exp >= exp_v and exp3 >= 0) else "KILL"
+    elif n >= 20 and rug >= rug_v:
+        word = "KILL (rug rate at 20)" + (", both rug rates 0: the line reads a tie as KILL" if rug == rug_v == 0 else "")
+    else:
+        word = f"RUNNING ({40 - n} to the 40 mark" + (f", {20 - n} to the 20 rug check)" if n < 20 else ")")
+    return (f"Grinder R01 shadow book: {word}. {n} closed, expectancy £{exp:+.2f}, best-3 removed £{exp3:+.2f}, "
+            f"rugs {rug:.0%} | v0.2 same nights: {nv} closed, expectancy £{exp_v:+.2f}, rugs {rug_v:.0%}")
+
+
 def systems():
     """The systems book (systems/RULES.md, 7 Oct 2026). Its marks live beside its data in systems.py."""
     sys.path.insert(0, str(ROOT / "systems"))
@@ -111,6 +140,7 @@ def main():
                   withdrawn="D-009 fill realism 11 Oct, RULES.md")]
     lines += judgement()
     lines.append(exchange())
+    lines.append(r01())
     lines += systems()
     for l in lines:
         print(l)
