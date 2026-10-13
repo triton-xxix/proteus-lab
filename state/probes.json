@@ -1,5 +1,5 @@
 {
- "next_id": 145,
+ "next_id": 146,
  "items": [
   {
    "id": "P-0001",
@@ -3242,6 +3242,32 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-13",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-13T23:51:08+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.45,
+    "number": "if it runs, BM25 R@5 within 2 points of 92.2 on LongMemEval-S; most likely blocked on the dataset or a model download inside 30 min",
+    "at": "2026-10-13T23:51:25+0100"
+   }
+  },
+  {
+   "id": "P-0144",
+   "title": "xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-13",
    "status": "open",
    "attempts": 0,
    "started_at": null,
@@ -3255,12 +3281,12 @@
    "luke": false
   },
   {
-   "id": "P-0144",
-   "title": "xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75?",
-   "source": "harvest",
+   "id": "P-0145",
+   "title": "new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive",
+   "source": "desk",
    "needs": "",
-   "after": "",
-   "est_minutes": 25,
+   "after": "2026-10-14",
+   "est_minutes": 20,
    "added": "2026-10-13",
    "status": "open",
    "attempts": 0,
