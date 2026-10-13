@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 86 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
 
-## Queue (16 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,8 +27,9 @@ Verdicts so far: 86 works, 5 broken, 20 blocked, 9 not worth it. Killed: 4.
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0135 | Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set each move beside the judgement-book bets on those matches | desk | none |  | 1 | 15 min |
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
-| P-0139 | Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R01.csv marked backfilled, per VARIANTS-3 line 40 | desk | none |  | 0 | 20 min |
+| P-0139 | Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R01.csv marked backfilled, per VARIANTS-3 line 40 | desk | none |  | 1 (in progress) | 20 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
+| P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | desk | none |  | 0 | 25 min |
 
 ## Verdicts (120)
 
