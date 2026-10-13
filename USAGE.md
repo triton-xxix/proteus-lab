@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-10-12 09:06.
+Rebuilt 2026-10-13 09:06.
 
 ## By month
 
@@ -18,8 +18,8 @@ Rebuilt 2026-10-12 09:06.
 |---|---|---|---|---|---|
 | 2026-09 | scheduled runs | 413.4k | 75.71M | 2.18M | 3.9k |
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
-| 2026-10 | scheduled runs | 872.7k | 230.86M | 5.14M | 6.2k |
-| 2026-10 | Luke's sessions | 1.89M | 404.07M | 10.47M | 11.4k |
+| 2026-10 | scheduled runs | 953.0k | 250.00M | 5.61M | 6.6k |
+| 2026-10 | Luke's sessions | 1.98M | 434.62M | 11.51M | 12.2k |
 
 ## Scheduled output by ISO week
 
@@ -31,7 +31,7 @@ Field Notes with the step that caused it.
 | 2026-W39 | 8 | 221.1k | n/a | n/a |
 | 2026-W40 | 8 | 423.7k | 221.1k | no |
 | 2026-W41 | 11 | 637.1k | 322.4k | no |
-| 2026-W42 | 2 | 4.2k | 427.3k | no |
+| 2026-W42 | 8 | 84.5k | 427.3k | no |
 
 ## By session
 
@@ -129,7 +129,7 @@ Field Notes with the step that caused it.
 | 2026-10-06 22:41 | interactive (Luke) | opus-5-5 | 140.9k | 46.39M | 339.0k | 354 | 85 min | b7f7f126 |
 | 2026-10-06 23:29 | interactive (Luke) | opus-5-5 | 8.7k | 939.1k | 206.1k | 10 | 11 min | e91a3bbf |
 | 2026-10-07 00:44 | interactive (Luke) | opus-5-5 | 254.4k | 57.55M | 496.0k | 382 | 120 min | d8107278 |
-| 2026-10-07 01:45 | interactive (Luke) | fable-5-1 | 319.0k | 32.89M | 1.33M | 2.0k | 115 min | 5e0288f2 |
+| 2026-10-07 01:45 | interactive (Luke) | fable-5-1 | 338.4k | 46.50M | 2.07M | 2.6k | 130 min | 5e0288f2 |
 | 2026-10-07 01:46 | interactive (Luke), child a0b6f3f9 | opus-5-5 | 7.1k | 613.9k | 86.5k | 20 | 1 min | 5e0288f2 |
 | 2026-10-07 01:46 | interactive (Luke), child a289ae60 | opus-5-5 | 4.4k | 774.1k | 107.8k | 22 | 1 min | 5e0288f2 |
 | 2026-10-07 01:46 | interactive (Luke), child ab964141 | opus-5-5 | 9.0k | 1.36M | 97.2k | 38 | 2 min | 5e0288f2 |
@@ -182,4 +182,14 @@ Field Notes with the step that caused it.
 | 2026-10-11 22:35 | nightly, child aa9434ff | sonnet-5-5 | 2.4k | 234.6k | 43.7k | 8 | 0 min | 959624e5 |
 | 2026-10-11 23:02 | interactive (Luke) | opus-5-5 | 8.6k | 3.94M | 215.7k | 34 | 20 min | 959624e5 |
 | 2026-10-12 06:54 | lichess-morning | opus-5-5 | 3.1k | 1.25M | 41.4k | 36 | 36 min | caee1db3 |
-| 2026-10-12 08:05 | inspector | opus-5-5 | 1.0k | 418.7k | 32.3k | 12 | 0 min | ed465e49 |
+| 2026-10-12 08:05 | inspector | opus-5-5 | 10.4k | 2.69M | 58.8k | 62 | 2 min | ed465e49 |
+| 2026-10-12 11:31 | trials | opus-5-5 | 34.6k | 8.34M | 109.5k | 154 | 21 min | 221f19ac |
+| 2026-10-12 15:36 | workshop | opus-5-5 | 17.4k | 2.97M | 129.4k | 66 | 13 min | 85b52cf9 |
+| 2026-10-12 19:04 | smith | opus-5-5 | 14.9k | 4.07M | 72.3k | 88 | 3 min | 4c87d6af |
+| 2026-10-12 22:23 | nightly | opus-5-5 | 584 | 288.4k | 56.8k | 8 | 14 min | 2862abff |
+| 2026-10-12 22:54 | interactive (Luke) | opus-5-5 | 48.9k | 16.21M | 124.4k | 204 | 29 min | 2862abff |
+| 2026-10-12 23:03 | interactive (Luke), child a66d337d | sonnet-5-5 | 9.1k | 131.2k | 82.2k | 6 | 1 min | 2862abff |
+| 2026-10-12 23:03 | interactive (Luke), child aba8a3b0 | sonnet-5-5 | 2.1k | 241.1k | 46.9k | 8 | 0 min | 2862abff |
+| 2026-10-12 23:04 | interactive (Luke), child a0960dee | sonnet-5-5 | 9.9k | 370.5k | 51.2k | 12 | 1 min | 2862abff |
+| 2026-10-13 06:54 | lichess-morning | opus-5-5 | 2.4k | 789.5k | 40.2k | 22 | 17 min | 2ec7913f |
+| 2026-10-13 08:05 | inspector | opus-5-5 | 1.1k | 415.8k | 31.6k | 12 | 0 min | ce6d4128 |
