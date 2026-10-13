@@ -3035,9 +3035,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-12",
-   "status": "open",
-   "attempts": 1,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 2,
+   "started_at": "2026-10-13T12:44:49+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3045,7 +3045,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.9,
+    "number": "no slot runs at ko-2h, 16:45Z today",
+    "at": "2026-10-13T12:45:09+0100"
+   }
   },
   {
    "id": "P-0136",
