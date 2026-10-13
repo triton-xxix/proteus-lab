@@ -3093,9 +3093,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-13T12:36:40+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3103,7 +3103,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.5,
+    "number": "output tokens off by more than 5 pct against largest-record dedupe",
+    "at": "2026-10-13T12:36:52+0100"
+   }
   },
   {
    "id": "P-0139",
