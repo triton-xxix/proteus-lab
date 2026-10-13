@@ -2673,8 +2673,8 @@
    "est_minutes": 40,
    "added": "2026-10-09",
    "status": "in_progress",
-   "attempts": 1,
-   "started_at": "2026-10-13T00:13:01+0100",
+   "attempts": 2,
+   "started_at": "2026-10-13T12:31:19+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -2682,7 +2682,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "wired select_r01 reproduces replay.py picks on 4 of 4 nights",
+    "at": "2026-10-13T12:31:32+0100"
+   }
   },
   {
    "id": "P-0122",
