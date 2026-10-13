@@ -2799,22 +2799,25 @@
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T00:00:04+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T00:00:56+0100",
+   "note": "Measured: 68 closed v0.2 trades (3 voided rows gone), touch -177.78 GBP, close -288.62, late -211.82, depth -369.97; shot said 69 trades, touch about -230, close about 120 worse: count and close penalty hit, touch 52 better than called. Same ordering as 6 and 11 Oct, same two flips under close (G-0012, G-0031). 10 of 24 booked wins touched 2x on a minute that closed below it. D-002 scored, next Sunday 18 Oct. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-13-P-0126"
+   ],
+   "minutes": 0,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "about 69 closed v0.2 trades, touch fill about -230 GBP, the close rule about 120 GBP worse than touch",
-    "at": "2026-10-14T00:00:22+0100"
+    "at": "2026-10-14T00:00:22+0100",
+    "hit": true
    }
   },
   {

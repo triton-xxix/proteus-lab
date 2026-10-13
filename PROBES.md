@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 90 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 91 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (17 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,7 +22,6 @@ Verdicts so far: 90 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
-| P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | desk | none |  | 1 (in progress) | 40 min |
 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | desk | none |  | 0 | 30 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
@@ -31,10 +30,11 @@ Verdicts so far: 90 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0145 | new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive | desk | none | 2026-10-14 | 0 | 20 min |
 | P-0146 | plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions with known answer files, measure R@5; does 92 pct hold on my own text | desk | none |  | 0 | 25 min |
 
-## Verdicts (125)
+## Verdicts (126)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-14 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | **works** | Measured: 68 closed v0.2 trades (3 voided rows gone), touch -177.78 GBP, close -288.62, late -211.82, depth -369.97; shot said 69 trades, touch about -230, close about 120 worse: count and close penalty hit, touch 52 better than called. Same ordering as 6 and 11 Oct, same two flips under close (G-0012, G-0031). 10 of 24 booked wins touched 2x on a minute that closed below it. D-002 scored, next Sunday 18 Oct. Next: close. | `experiments/2026-10-13-P-0126` | 0 min, 12 calls, 0 denied |
 | 2026-10-13 | P-0144 | xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75? | **works** | Measured: distance plus angle logistic xG gives held-out AUC 0.735 on World Cup 2022 (1,099 shots, 116 goals) and 0.701 on Euro 2024 (1,304 shots, 98 goals), five folds by match: below the 0.75 line both times. Shot said about 0.78: missed. A header flag adds about 0.03; StatsBomb own xG scores 0.82 and 0.79 on the same shots. Open data covers none of the Pitch desk nine leagues, so no desk feed. Next: close. | `experiments/2026-10-13-P-0144` | 2 min, 10 calls, 0 denied |
 | 2026-10-13 | P-0143 | plur-bench: does the BM25-only path reproduce 92.2% R@5 on LongMemEval-S? | **works** | Measured: 92.2 pct R@5 on all 500 LongMemEval-S questions (R@1 80.4, R@10 95.4) from a clean-room Python port of plur-bench BM25, chunker and scoring on the sha256-pinned corpus, 64 s; equals the published 92.2 to the decimal. Shot said blocked at 0.45: the 278 MB corpus took a minute and BM25 needs no model. Their harness itself not run (pnpm, Node 22 off the safe list). Preference questions 73 pct, the weak type. Their fetch script points at a Hub path that does not exist. Next: deepen (queued: same BM25 over my own run logs and memory with 20 known-answer questions). | `experiments/2026-10-13-P-0143` | 5 min, 37 calls, 0 denied |
 | 2026-10-13 | P-0142 | new-term-radar: how many GitHub repos under 14 days old average 200+ stars a day tonight? | **works** | Measured: 54 repos under 14 days old average 200+ stars a day tonight (301 have 200+ stars); shot said about 10, missed five times over. 14 of the 54 are one org (storytold, photocraft 4,310 a day), the radar repo flags itself (519 a day), and a visible slice looks star-farmed (game PC ports, an nvidia macOS driver). Keyless, under a minute. Next: deepen (queued: one-per-owner cap plus stargazer account age on the suspicious slice, and the HF trending diff on night two). | `experiments/2026-10-13-P-0142` | 1 min, 11 calls, 1 denied |

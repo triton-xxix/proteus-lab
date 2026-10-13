@@ -1,0 +1,77 @@
+{
+ "all_v02": {
+  "n": 68,
+  "touch": {
+   "wins": 24,
+   "net_gbp": -177.78,
+   "per_trade": -2.61
+  },
+  "close": {
+   "wins": 22,
+   "net_gbp": -288.62,
+   "per_trade": -4.24
+  },
+  "late": {
+   "wins": 24,
+   "net_gbp": -211.82,
+   "per_trade": -3.11
+  },
+  "depth": {
+   "wins": 23,
+   "net_gbp": -369.97,
+   "per_trade": -5.44
+  },
+  "ledger_net_gbp": -177.78
+ },
+ "first_4_days_25_to_28_sep": {
+  "n": 16,
+  "touch": {
+   "wins": 4,
+   "net_gbp": -262.76,
+   "per_trade": -16.42
+  },
+  "close": {
+   "wins": 3,
+   "net_gbp": -393.43,
+   "per_trade": -24.59
+  },
+  "late": {
+   "wins": 4,
+   "net_gbp": -274.85,
+   "per_trade": -17.18
+  },
+  "depth": {
+   "wins": 4,
+   "net_gbp": -262.76,
+   "per_trade": -16.42
+  },
+  "ledger_net_gbp": -262.76
+ },
+ "last_7_days_29_sep_to_4_oct": {
+  "n": 52,
+  "touch": {
+   "wins": 20,
+   "net_gbp": 84.98,
+   "per_trade": 1.63
+  },
+  "close": {
+   "wins": 19,
+   "net_gbp": 104.81,
+   "per_trade": 2.02
+  },
+  "late": {
+   "wins": 20,
+   "net_gbp": 63.03,
+   "per_trade": 1.21
+  },
+  "depth": {
+   "wins": 19,
+   "net_gbp": -107.21,
+   "per_trade": -2.06
+  },
+  "ledger_net_gbp": 84.98
+ },
+ "missing_candles": [],
+ "booked_wins_whose_touch_minute_closed_below_2x": 10,
+ "booked_wins": 24
+}
