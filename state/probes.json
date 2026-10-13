@@ -1,5 +1,5 @@
 {
- "next_id": 147,
+ "next_id": 148,
  "items": [
   {
    "id": "P-0001",
@@ -2913,22 +2913,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T00:01:02+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T00:03:26+0100",
+   "note": "Measured, part one: 68 referees over 4,670 E0, E1 and SC0 matches since 2022 differ in cards a game beyond chance (permutation within division-season, 0 of 4,000 draws, K Stroud 4.98 v A Kitchen 3.15), home-card bias p 0.034, home-win rate p 0.048, over 2.5 p 0.49. Shot said cards under 0.01 (hit) and home-win above 0.1 (missed, borderline). Part two, the Dixon-Coles referee term, not fitted: queued as P-0147. Referee effect sits on cards, not goals. Next: deepen (P-0147).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0130"
+   ],
+   "minutes": 2,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "referees differ in cards a game beyond chance (permutation p under 0.01) but not in home-win rate (p above 0.1); the Dixon-Coles referee term not fitted tonight",
-    "at": "2026-10-14T00:01:12+0100"
+    "at": "2026-10-14T00:01:12+0100",
+    "hit": true
    }
   },
   {
@@ -3335,6 +3338,26 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0147",
+   "title": "Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and over-2.5 out of sample against the closing line on E0, E1, SC0 2022 on; does it beat the plain model",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-14",
    "status": "open",
    "attempts": 0,
    "started_at": null,
