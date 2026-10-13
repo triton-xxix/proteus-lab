@@ -36,7 +36,12 @@ dated with the snapshot:
 (X via xAI, Reddit, Telegram, DexScreener paid orders, Jupiter; appends to `grinder/research/MENTIONS.csv`;
 prints the xAI spend and appends it to the run log itself). It can take over ten minutes: run it with
 `run_in_background` true and carry on with the graduation book and The Pitch, then check
-`grinder/research/MENTIONS.csv` and the run log's "Mentions:" line before the commit in step 4. Since
+`grinder/research/MENTIONS.csv` and the run log's "Mentions:" line before the commit in step 4.
+Once mentions.py has finished (its Telegram rows are R01's third marker), the R01 shadow book
+(`grinder/harness/VARIANTS-3.md`, wired 13 Oct by P-0121):
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-r01`
+It writes `grinder/LEDGER-R01.csv` (R- ids, v0.2 exits), which step 4's commit picks up with the
+other `grinder/` CSVs; its printed line goes in the run log. If mentions.py failed, run it anyway: a token with no Telegram row is not skipped. Since
 9 Oct the hook lets you Read a background task's output file under `/private/tmp/claude-502/`, so read
 it rather than guess when a job's own lines are missing.
 Then the graduation book, a long-running paper job (rules `grinder/graduates/RULES.md`; the first book was judged KILL on 3 Oct and G2, liquidity at least $50,000, counts from 3 Oct 12:00Z):

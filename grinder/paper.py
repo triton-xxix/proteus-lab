@@ -273,6 +273,80 @@ def apply_rules():
         print("binding constraints:", binding(latest_snapshot()))
 
 
+# R01 (grinder/harness/VARIANTS-3.md): v0.2's selection minus any rug marker, a shadow book in its own
+# ledger with R- ids. Exits, costs, fills and stake are v0.2's (rule_version "R01" has no entry in
+# paths.LEVELS_BY_VERSION, so paths.walk applies v0.2's levels). Forward only from R01_FROM. Runs as its
+# own step, --apply-r01, after research/mentions.py has written tonight's Telegram rows.
+LEDGER_R01 = ROOT + "grinder/LEDGER-R01.csv"
+MENTIONS = ROOT + "grinder/research/MENTIONS.csv"
+R01_FROM = "2026-10-08T12:00:00Z"
+
+
+def telegram_counts():
+    """(mint, night) -> Telegram mention count over the 23 channels. Absent key = the pull failed or did
+    not reach that token: unmeasured, not silent."""
+    tg = {}
+    if os.path.exists(MENTIONS):
+        for m in csv.DictReader(open(MENTIONS)):
+            if m.get("source") == "telegram" and (m.get("count") or "") != "":
+                tg[(m["mint"], m["night"][:10])] = int(float(m["count"]))
+    return tg
+
+
+def r01_markers(s, tg):
+    out = []
+    if (s.get("rug_risks") or "").strip():
+        out.append("rug_risk")
+    if (fnum(s.get("chg_h1")) or 0) > 0:
+        out.append("chg_h1_up")
+    if tg.get((s["mint"], s["ts"][:10])) == 0:
+        out.append("tg_silent")
+    return out
+
+
+def select_r01(snap, held, n, tg):
+    """v0.2's gate-passers ranked by 1h volume, skipping held mints and any row with a rug marker."""
+    cands = [s for s in snap if s["mint"] not in held and passes(s)]
+    cands.sort(key=lambda s: -(fnum(s.get("vol_h1")) or 0))
+    return [s for s in cands if not r01_markers(s, tg)][:n]
+
+
+def apply_r01():
+    ledger = list(csv.DictReader(open(LEDGER_R01))) if os.path.exists(LEDGER_R01) else []
+    t = now()
+    open_rows = [r for r in ledger if not r.get("exit_at")]
+    for r in open_rows:
+        exit_v02(r, t)
+        time.sleep(0.3)
+    still_open = [r for r in ledger if not r.get("exit_at")]
+    realised = sum(fnum(r["pnl_gbp"]) or 0 for r in ledger if r.get("pnl_gbp"))
+    bankroll = RULES["bankroll_gbp"] + realised - RULES["size_gbp"] * len(still_open)
+    slots = RULES["max_open"] - len(still_open)
+    snap = latest_snapshot()
+    opened = 0
+    if not snap or snap[0]["ts"] < R01_FROM:
+        print("R01: no snapshot at or after", R01_FROM)
+    elif (t - parse(snap[0]["ts"])).total_seconds() > SNAP_MAX_AGE_H * 3600:
+        print("R01: no entries, latest snapshot %s is more than %d h old" % (snap[0]["ts"], SNAP_MAX_AGE_H))
+    elif slots > 0 and bankroll >= RULES["size_gbp"]:
+        held = {r["mint"] for r in ledger}
+        nid = max([int(r["id"][2:]) for r in ledger] or [0]) + 1
+        for s in select_r01(snap, held, slots, telegram_counts()):   # v0.2 as written: one bankroll check
+            ledger.append({
+                "id": "R-%04d" % nid, "entered_at": iso(t), "token": s.get("symbol"), "mint": s["mint"],
+                "entry_price_usd": s["price_usd"], "size_gbp": RULES["size_gbp"], "rule_version": "R01",
+                "entry_liq_usd": s.get("liq_usd"), "rugged": "",
+            })
+            nid += 1; opened += 1
+    with open(LEDGER_R01, "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w.writeheader()
+        for r in ledger:
+            w.writerow({k: r.get(k, "") for k in FIELDS})
+    print("R01 exits", sum(1 for r in open_rows if r.get("exit_at")), "entries", opened,
+          "open", len([r for r in ledger if not r.get("exit_at")]))
+
+
 GATES = {
     "age": lambda r: (fnum(r.get("age_h")) is not None and RULES["age_h_min"] <= fnum(r.get("age_h")) <= RULES["age_h_max"]),
     "mint_auth": lambda r: (r.get("mint_auth") or "") in ("", "None"),
@@ -330,12 +404,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply-rules", action="store_true")
     ap.add_argument("--score", action="store_true")
+    ap.add_argument("--apply-r01", action="store_true", help="the R01 shadow book; run after research/mentions.py")
     a = ap.parse_args()
     if a.apply_rules:
         apply_rules()
     if a.score:
         score()
-    if not (a.apply_rules or a.score):
+    if a.apply_r01:
+        apply_r01()
+    if not (a.apply_rules or a.score or a.apply_r01):
         ap.print_help()
 
 
