@@ -3064,9 +3064,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-13T12:33:10+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3074,7 +3074,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "about 15 of 100 pools 24 to 48h old still above 5k USD liquidity",
+    "at": "2026-10-13T12:33:18+0100"
+   }
   },
   {
    "id": "P-0138",
