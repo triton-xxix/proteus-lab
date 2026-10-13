@@ -28,7 +28,7 @@ Verdicts so far: 87 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | desk | none |  | 0 | 25 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 0 | 15 min |
 | P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | desk | none |  | 0 | 25 min |
-| P-0142 | new-term-radar: how many GitHub repos under 14 days old average 200+ stars a day tonight? | harvest | none |  | 0 | 20 min |
+| P-0142 | new-term-radar: how many GitHub repos under 14 days old average 200+ stars a day tonight? | harvest | none |  | 1 (in progress) | 20 min |
 | P-0143 | plur-bench: does the BM25-only path reproduce 92.2% R@5 on LongMemEval-S? | harvest | none |  | 0 | 30 min |
 | P-0144 | xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75? | harvest | none |  | 0 | 25 min |
 

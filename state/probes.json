@@ -3211,9 +3211,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-13T23:49:28+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3221,7 +3221,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "about 10 repos under 14 days old average 200 or more stars a day tonight",
+    "at": "2026-10-13T23:49:39+0100"
+   }
   },
   {
    "id": "P-0143",
