@@ -126,5 +126,205 @@
    }
   ],
   "left": "91"
+ },
+ {
+  "label": "ko-1h45",
+  "at": "2026-10-13T17:02:45Z",
+  "commit_line_fetched": "2026-10-12T22:56:22Z",
+  "rows": [
+   {
+    "match": "Bristol City v Blackburn",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T18:45:00Z",
+    "hours_to_ko": 1.7,
+    "commit": {
+     "AvgH": 2.055,
+     "AvgD": 3.376,
+     "AvgA": 3.503,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 2.077,
+     "AvgD": 3.372,
+     "AvgA": 3.505,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.0107,
+     "AvgD": -0.0012,
+     "AvgA": 0.0006
+    },
+    "errors": []
+   },
+   {
+    "match": "Burnley v Charlton",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T18:45:00Z",
+    "hours_to_ko": 1.7,
+    "commit": {
+     "AvgH": 1.622,
+     "AvgD": 3.905,
+     "AvgA": 5.166,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 1.637,
+     "AvgD": 3.867,
+     "AvgA": 5.212,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.0092,
+     "AvgD": -0.0097,
+     "AvgA": 0.0089
+    },
+    "errors": []
+   },
+   {
+    "match": "Cardiff v Watford",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T18:45:00Z",
+    "hours_to_ko": 1.7,
+    "commit": {
+     "AvgH": 1.689,
+     "AvgD": 4.137,
+     "AvgA": 4.375,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 1.647,
+     "AvgD": 4.218,
+     "AvgA": 4.626,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": -0.0249,
+     "AvgD": 0.0196,
+     "AvgA": 0.0574
+    },
+    "errors": []
+   },
+   {
+    "match": "Millwall v Swansea",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T18:45:00Z",
+    "hours_to_ko": 1.7,
+    "commit": {
+     "AvgH": 2.442,
+     "AvgD": 3.402,
+     "AvgA": 2.737,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 2.415,
+     "AvgD": 3.298,
+     "AvgA": 2.876,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": -0.0111,
+     "AvgD": -0.0306,
+     "AvgA": 0.0508
+    },
+    "errors": []
+   },
+   {
+    "match": "Wolves v Bolton",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T18:45:00Z",
+    "hours_to_ko": 1.7,
+    "commit": {
+     "AvgH": 1.398,
+     "AvgD": 4.713,
+     "AvgA": 7.118,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 1.388,
+     "AvgD": 4.794,
+     "AvgA": 7.331,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": -0.0072,
+     "AvgD": 0.0172,
+     "AvgA": 0.0299
+    },
+    "errors": []
+   },
+   {
+    "match": "Wrexham v West Brom",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T18:45:00Z",
+    "hours_to_ko": 1.7,
+    "commit": {
+     "AvgH": 2.269,
+     "AvgD": 3.316,
+     "AvgA": 3.079,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 2.32,
+     "AvgD": 3.263,
+     "AvgA": 3.054,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.0225,
+     "AvgD": -0.016,
+     "AvgA": -0.0081
+    },
+    "errors": []
+   },
+   {
+    "match": "Birmingham v Preston",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T19:00:00Z",
+    "hours_to_ko": 1.95,
+    "commit": {
+     "AvgH": 1.59,
+     "AvgD": 4.081,
+     "AvgA": 5.228,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 1.469,
+     "AvgD": 4.464,
+     "AvgA": 6.351,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": -0.0761,
+     "AvgD": 0.0938,
+     "AvgA": 0.2148
+    },
+    "errors": []
+   },
+   {
+    "match": "Stoke v Middlesbrough",
+    "Div": "E1",
+    "kickoff_utc": "2026-10-13T19:00:00Z",
+    "hours_to_ko": 1.95,
+    "commit": {
+     "AvgH": 3.462,
+     "AvgD": 3.636,
+     "AvgA": 1.984,
+     "bookmakers": 10
+    },
+    "now": {
+     "AvgH": 3.682,
+     "AvgD": 3.619,
+     "AvgA": 1.937,
+     "bookmakers": 10
+    },
+    "move": {
+     "AvgH": 0.0635,
+     "AvgD": -0.0047,
+     "AvgA": -0.0237
+    },
+    "errors": []
+   }
+  ],
+  "left": "92"
  }
 ]

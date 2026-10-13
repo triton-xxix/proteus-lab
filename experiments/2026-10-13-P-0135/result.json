@@ -1,0 +1,249 @@
+{
+ "snapshot_at": "2026-10-13T17:02:45Z",
+ "outcomes": 24,
+ "toward": 7,
+ "away": 5,
+ "flat_or_no_lean": 12,
+ "rows": [
+  {
+   "match": "Bristol City v Blackburn",
+   "outcome": "H",
+   "model": 0.42,
+   "commit_implied": 0.456,
+   "ko_implied": 0.453,
+   "lean": -0.035,
+   "move": -0.0027,
+   "side": "toward"
+  },
+  {
+   "match": "Bristol City v Blackburn",
+   "outcome": "D",
+   "model": 0.298,
+   "commit_implied": 0.277,
+   "ko_implied": 0.279,
+   "lean": 0.021,
+   "move": 0.0016,
+   "side": "flat"
+  },
+  {
+   "match": "Bristol City v Blackburn",
+   "outcome": "A",
+   "model": 0.281,
+   "commit_implied": 0.267,
+   "ko_implied": 0.268,
+   "lean": 0.014,
+   "move": 0.0011,
+   "side": "flat"
+  },
+  {
+   "match": "Burnley v Charlton",
+   "outcome": "H",
+   "model": 0.475,
+   "commit_implied": 0.578,
+   "ko_implied": 0.576,
+   "lean": -0.103,
+   "move": -0.0027,
+   "side": "toward"
+  },
+  {
+   "match": "Burnley v Charlton",
+   "outcome": "D",
+   "model": 0.305,
+   "commit_implied": 0.24,
+   "ko_implied": 0.244,
+   "lean": 0.065,
+   "move": 0.0035,
+   "side": "toward"
+  },
+  {
+   "match": "Burnley v Charlton",
+   "outcome": "A",
+   "model": 0.22,
+   "commit_implied": 0.182,
+   "ko_implied": 0.181,
+   "lean": 0.038,
+   "move": -0.0008,
+   "side": "flat"
+  },
+  {
+   "match": "Cardiff v Watford",
+   "outcome": "H",
+   "model": 0.408,
+   "commit_implied": 0.557,
+   "ko_implied": 0.573,
+   "lean": -0.149,
+   "move": 0.0153,
+   "side": "away"
+  },
+  {
+   "match": "Cardiff v Watford",
+   "outcome": "D",
+   "model": 0.311,
+   "commit_implied": 0.228,
+   "ko_implied": 0.224,
+   "lean": 0.083,
+   "move": -0.004,
+   "side": "away"
+  },
+  {
+   "match": "Cardiff v Watford",
+   "outcome": "A",
+   "model": 0.281,
+   "commit_implied": 0.215,
+   "ko_implied": 0.204,
+   "lean": 0.066,
+   "move": -0.0113,
+   "side": "away"
+  },
+  {
+   "match": "Millwall v Swansea",
+   "outcome": "H",
+   "model": 0.405,
+   "commit_implied": 0.383,
+   "ko_implied": 0.389,
+   "lean": 0.022,
+   "move": 0.0057,
+   "side": "toward"
+  },
+  {
+   "match": "Millwall v Swansea",
+   "outcome": "D",
+   "model": 0.286,
+   "commit_implied": 0.275,
+   "ko_implied": 0.285,
+   "lean": 0.011,
+   "move": 0.0097,
+   "side": "flat"
+  },
+  {
+   "match": "Millwall v Swansea",
+   "outcome": "A",
+   "model": 0.309,
+   "commit_implied": 0.342,
+   "ko_implied": 0.326,
+   "lean": -0.033,
+   "move": -0.0154,
+   "side": "toward"
+  },
+  {
+   "match": "Wolves v Bolton",
+   "outcome": "H",
+   "model": 0.659,
+   "commit_implied": 0.67,
+   "ko_implied": 0.676,
+   "lean": -0.01,
+   "move": 0.0064,
+   "side": "flat"
+  },
+  {
+   "match": "Wolves v Bolton",
+   "outcome": "D",
+   "model": 0.196,
+   "commit_implied": 0.199,
+   "ko_implied": 0.196,
+   "lean": -0.002,
+   "move": -0.0029,
+   "side": "flat"
+  },
+  {
+   "match": "Wolves v Bolton",
+   "outcome": "A",
+   "model": 0.144,
+   "commit_implied": 0.132,
+   "ko_implied": 0.128,
+   "lean": 0.013,
+   "move": -0.0035,
+   "side": "flat"
+  },
+  {
+   "match": "Wrexham v West Brom",
+   "outcome": "H",
+   "model": 0.388,
+   "commit_implied": 0.413,
+   "ko_implied": 0.405,
+   "lean": -0.026,
+   "move": -0.0083,
+   "side": "toward"
+  },
+  {
+   "match": "Wrexham v West Brom",
+   "outcome": "D",
+   "model": 0.313,
+   "commit_implied": 0.283,
+   "ko_implied": 0.288,
+   "lean": 0.03,
+   "move": 0.0052,
+   "side": "toward"
+  },
+  {
+   "match": "Wrexham v West Brom",
+   "outcome": "A",
+   "model": 0.299,
+   "commit_implied": 0.304,
+   "ko_implied": 0.307,
+   "lean": -0.005,
+   "move": 0.0031,
+   "side": "flat"
+  },
+  {
+   "match": "Birmingham v Preston",
+   "outcome": "H",
+   "model": 0.594,
+   "commit_implied": 0.59,
+   "ko_implied": 0.641,
+   "lean": 0.003,
+   "move": 0.0505,
+   "side": "flat"
+  },
+  {
+   "match": "Birmingham v Preston",
+   "outcome": "D",
+   "model": 0.244,
+   "commit_implied": 0.23,
+   "ko_implied": 0.211,
+   "lean": 0.014,
+   "move": -0.0191,
+   "side": "flat"
+  },
+  {
+   "match": "Birmingham v Preston",
+   "outcome": "A",
+   "model": 0.163,
+   "commit_implied": 0.18,
+   "ko_implied": 0.148,
+   "lean": -0.017,
+   "move": -0.0313,
+   "side": "flat"
+  },
+  {
+   "match": "Stoke v Middlesbrough",
+   "outcome": "H",
+   "model": 0.293,
+   "commit_implied": 0.27,
+   "ko_implied": 0.255,
+   "lean": 0.023,
+   "move": -0.0153,
+   "side": "away"
+  },
+  {
+   "match": "Stoke v Middlesbrough",
+   "outcome": "D",
+   "model": 0.26,
+   "commit_implied": 0.258,
+   "ko_implied": 0.26,
+   "lean": 0.002,
+   "move": 0.0021,
+   "side": "flat"
+  },
+  {
+   "match": "Stoke v Middlesbrough",
+   "outcome": "A",
+   "model": 0.447,
+   "commit_implied": 0.472,
+   "ko_implied": 0.485,
+   "lean": -0.025,
+   "move": 0.0131,
+   "side": "away"
+  }
+ ]
+}
