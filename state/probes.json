@@ -1,5 +1,5 @@
 {
- "next_id": 139,
+ "next_id": 140,
  "items": [
   {
    "id": "P-0001",
@@ -2672,22 +2672,25 @@
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-09",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 2,
    "started_at": "2026-10-13T12:31:19+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-13T12:33:00+0100",
+   "note": "Wired: paper.py --apply-r01, select_r01 beside v0.2, own ledger LEDGER-R01.csv (R- ids, v0.2 exits), runs after mentions.py in nightly step 2. Measured 4 of 4 nights where wired picks equal replay.py picks, same tokens same order; shot said 4 of 4. Live run refused the stale 11 Oct snapshot as it should; first real entries tonight. Not BOOKS.json second (shares LEDGER.csv); 8 to 11 Oct not yet backfilled. D-007 scored. Next: deepen (queued P-0139, backfill 8 to 11 Oct from candles).",
+   "artefacts": [
+    "experiments/2026-10-13-P-0121"
+   ],
+   "minutes": 1,
+   "calls": 29,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "wired select_r01 reproduces replay.py picks on 4 of 4 nights",
-    "at": "2026-10-13T12:31:32+0100"
+    "at": "2026-10-13T12:31:32+0100",
+    "hit": true
    }
   },
   {
@@ -3080,6 +3083,26 @@
    "needs": "",
    "after": "",
    "est_minutes": 25,
+   "added": "2026-10-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0139",
+   "title": "Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R01.csv marked backfilled, per VARIANTS-3 line 40",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
    "added": "2026-10-13",
    "status": "open",
    "attempts": 0,
