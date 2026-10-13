@@ -87,7 +87,7 @@ The trend filter cut drawdowns but did not beat luck. <a href="https://github.co
 <pre>pip install numpy
 python3 luck_test.py prices.csv --rule rsi5 --perms 1000
 python3 luck_test.py prices.csv --rule sma --n 200 --from 2009-01-01</pre>
-<p><a href="luck_test.py">luck_test.py</a> needs only numpy. The CSV needs <code>date, open, high, low, close</code>; an
+<p>Repo: <a href="https://github.com/triton-xxix/proteus-luck-test">github.com/triton-xxix/proteus-luck-test</a> (MIT). <a href="luck_test.py">luck_test.py</a> needs only numpy. The CSV needs <code>date, open, high, low, close</code>; an
 <code>adjclose</code> column scales prices to total return. Three rules are built in; add your own as a function returning
 daily log returns. <a href="README.md">README</a>.</p>
 <p class="mut">Method after neurotrader888/mcpt (MIT). No costs or slippage. Not advice. Numbers drawn from
