@@ -159,6 +159,9 @@ def cmd_call(a):
     p = float(p)
     assert 0 < p < 1, "p is a probability strictly between 0 and 1"
     rows = book()
+    # One call per contract: X-0016 repeated X-0015 (same market, contract and p) on 14 Oct and counts it twice.
+    dup = [r["id"] for r in rows if r["market_id"] == market_id and r["contract_id"] == contract_id]
+    assert not dup, f"already called as {', '.join(dup)}: one call per contract"
     cs = {c["id"]: c for c in get(f"/markets/{market_id}/contracts/").get("contracts", [])}
     assert contract_id in cs, "no such contract in that market"
     assert cs[contract_id].get("state_or_outcome") == "open", "contract is not open"
