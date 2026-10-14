@@ -17,6 +17,6 @@
   "P-0147",
   "P-0148"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-10-14T23:52:50+0100",
+ "stop_reason": "P-0151 needs P-0128 run.py rewired (snapshot hard-coded to 11 Oct) plus P-0141 decoding, about 40 calls, and the 14 Oct batch's hour after the pick closes only at 23:29Z; 44 calls left under the cap with step 7 still to run. Left for tomorrow's Trials on the 14 Oct batch."
 }
