@@ -18,7 +18,7 @@ If it prints `SKIP`, another Proteus run holds the lock: append one line `- Morn
 ## 2. Play
 Run this one-game call up to three times, one after another (each stays under the 10-minute foreground limit):
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/lichess.py play --games 1 --minutes 9`
-Rated 3+2 blitz against bots with established ratings. It logs every game to `games/lichess/GAMES.csv` and `games/lichess/pgn/` and prints a summary as its last line. Use timeout 600000 on each call. Stop early if a call reports no bot accepted. Never set run_in_background for it.
+Rated 3+2 blitz against bots with established ratings, never one already in `GAMES.csv` (one game per opponent, ever: Luke's rule, 14 Oct 2026). It logs every game to `games/lichess/GAMES.csv` and `games/lichess/pgn/` and prints a summary as its last line. Use timeout 600000 on each call. Stop early if a call reports no bot accepted. Never set run_in_background for it.
 
 ## 3. Log and commit
 Append one line to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md` (today's local date; create the file if missing) with the Edit or Write tool:

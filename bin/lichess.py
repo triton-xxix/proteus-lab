@@ -5,7 +5,9 @@ bot had played one game, on his word, and none since).
     lichess.py play [--games 3] [--minutes 15]   rated 3+2 blitz against other bots, then stop
     lichess.py status                             my rating and record, from the log
 
-Opponents: online bots with an established (not provisional) blitz rating, nearest to mine first.
+Opponents: online bots with an established (not provisional) blitz rating, nearest to mine first,
+and never one already in GAMES.csv: one game per opponent, ever (Luke, 14 Oct 2026, after the
+morning job drew caissa-x three times running because the tried-set only lived inside one process).
 v0 picked on a placeholder 2000 and drew a bot that hung its queen. Engine: Stockfish 19. From 9 Oct
 2026 each game draws its think time at random, 0.3 s or 1.0 s a move, for the two-week test in
 `games/lichess/EXPERIMENT.md`; every challenge, accepted or not, goes to `CHALLENGES.csv` so cap
@@ -107,6 +109,14 @@ def me():
     return a["id"], b.get("rating"), b.get("prov", True), b.get("games", 0)
 
 
+def played_before():
+    """Every opponent in GAMES.csv. One game per opponent, ever (14 Oct 2026)."""
+    if not os.path.exists(LOG):
+        return set()
+    with open(LOG, newline="") as f:
+        return {r["opponent"] for r in csv.DictReader(f) if r.get("opponent")}
+
+
 def candidates(my_id, my_rating, tried):
     out = []
     for line in req("/api/bot/online?nb=100", accept="application/x-ndjson"):
@@ -175,8 +185,10 @@ def cmd_play(a):
     print(f"me: {my_id}, blitz {rating}{' (provisional)' if prov else ''}, {games} rated games")
     events = queue.Queue()
     threading.Thread(target=stream, args=("/api/stream/event", events), daemon=True).start()
-    stop_at, played, tried, refused = time.time() + a.minutes * 60, 0, set(), 0
     widen_log()
+    tried = played_before()
+    print(f"{len(tried)} opponents already played, never challenged again")
+    stop_at, played, refused = time.time() + a.minutes * 60, 0, 0
     new = not os.path.exists(LOG)
     with open(LOG, "a", newline="") as f:
         w = csv.DictWriter(f, FIELDS)
@@ -185,7 +197,7 @@ def cmd_play(a):
         while played < a.games and time.time() < stop_at and not os.path.exists(ROOT + "/HALT"):
             cands = candidates(my_id, rating, tried)[:5]
             if not cands:
-                print("no established bot online that I have not tried tonight")
+                print("no established bot online that I have not played before or tried this run")
                 break
             started = False
             for name, opp in cands:
