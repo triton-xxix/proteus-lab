@@ -96,8 +96,14 @@ res = {"all_v02": summary(per),
 tps = [r for r in per if r["ledger_reason"] == "take_profit"]
 res["booked_wins_whose_touch_minute_closed_below_2x"] = sum(1 for r in tps if r.get("touch_close_vs_tp_pct", 0) < 0)
 res["booked_wins"] = len(tps)
-(HERE / "per_trade.json").write_text(json.dumps(per, indent=1))
-(HERE / "summary.json").write_text(json.dumps(res, indent=1))
+# Each run writes to its own dated folder, so the 6 Oct record (per_trade.json, summary.json beside
+# this script) is never overwritten by a later run (F-0017, 14 Oct 2026). Pass a folder as argv[1] to choose.
+import datetime
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "runs" / datetime.datetime.utcnow().strftime("%Y-%m-%d")
+OUT.mkdir(parents=True, exist_ok=True)
+(OUT / "per_trade.json").write_text(json.dumps(per, indent=1))
+(OUT / "summary.json").write_text(json.dumps(res, indent=1))
+print("wrote", OUT, file=sys.stderr)
 print(json.dumps(res, indent=1))
 for r in tps:
     print(r["id"], r["token"], "touch close vs 2x", r.get("touch_close_vs_tp_pct"), "% vol", r.get("touch_minute_volume"),
