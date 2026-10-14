@@ -1,5 +1,5 @@
 {
- "next_id": 151,
+ "next_id": 152,
  "items": [
   {
    "id": "P-0001",
@@ -3427,22 +3427,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T12:42:35+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T12:44:20+0100",
+   "note": "Measured 2 of 7 KOLs (West, Nyhrox) were net buyers before the 22:28:10Z pick and net sellers after, against the coin shot of 1 (shot after looking at the P-0141 deltas and first/last times). 36 of 51 trades before the pick, 15 after; four KOLs (Naruza, CoCo, bandit, Gasp) were out 20 to 55 min before the Grinder picked, five of seven flat inside the window, none a net buyer across it; West round-tripped 15.1m trenchcat to the unit. One batch, two picks, token units not SOL. Next: deepen (queued P-0151: batch two on the newest ledger batch, to see if KOL money leaving before the pick repeats).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0149"
+   ],
+   "minutes": 1,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "1 of the 7 KOLs is a net buyer before the 22:28:10Z pick and a net seller after it (shot after looking at the P-0141 deltas and first/last times, so a coin)",
-    "at": "2026-10-14T12:42:55+0100"
+    "at": "2026-10-14T12:42:55+0100",
+    "hit": true
    }
   },
   {
@@ -3452,6 +3455,26 @@
    "needs": "",
    "after": "2026-10-28",
    "est_minutes": 25,
+   "added": "2026-10-14",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0151",
+   "title": "KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
    "added": "2026-10-14",
    "status": "open",
    "attempts": 0,

@@ -1,0 +1,669 @@
+{
+ "probe": "P-0149",
+ "pick_utc": 1791757690,
+ "kols": [
+  {
+   "name": "Naruza",
+   "symbol": "trenchcat",
+   "txs": 8,
+   "buys": 2,
+   "sells": 6,
+   "zero_delta": 0,
+   "before_n": 8,
+   "after_n": 0,
+   "net_before": 0.0,
+   "net_after": 0,
+   "net_total": 0.0,
+   "first": "21:49:17Z",
+   "last": "22:08:01Z",
+   "mins_from_pick_first": -38.9,
+   "mins_from_pick_last": -20.1,
+   "trades": [
+    {
+     "t": "21:49:17Z",
+     "mins_from_pick": -38.9,
+     "delta": 15168593.623118,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:49:39Z",
+     "mins_from_pick": -38.5,
+     "delta": 10162819.433521999,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:00:09Z",
+     "mins_from_pick": -28.0,
+     "delta": -5066282.611327998,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:00:20Z",
+     "mins_from_pick": -27.8,
+     "delta": -4053026.0890620016,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:03:02Z",
+     "mins_from_pick": -25.1,
+     "delta": -3242420.87125,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:04:34Z",
+     "mins_from_pick": -23.6,
+     "delta": -2593936.6969999988,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:04:36Z",
+     "mins_from_pick": -23.6,
+     "delta": -2075149.3576000007,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:08:01Z",
+     "mins_from_pick": -20.1,
+     "delta": -8300597.4304,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": false,
+   "all_before": true,
+   "all_after": false
+  },
+  {
+   "name": "CoCo",
+   "symbol": "trenchcat",
+   "txs": 3,
+   "buys": 1,
+   "sells": 2,
+   "zero_delta": 0,
+   "before_n": 3,
+   "after_n": 0,
+   "net_before": 0.0,
+   "net_after": 0,
+   "net_total": 0.0,
+   "first": "22:03:09Z",
+   "last": "22:07:04Z",
+   "mins_from_pick_first": -25.0,
+   "mins_from_pick_last": -21.1,
+   "trades": [
+    {
+     "t": "22:03:09Z",
+     "mins_from_pick": -25.0,
+     "delta": 6164523.22063,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ]
+    },
+    {
+     "t": "22:07:03Z",
+     "mins_from_pick": -21.1,
+     "delta": -3082261.610315,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ]
+    },
+    {
+     "t": "22:07:04Z",
+     "mins_from_pick": -21.1,
+     "delta": -3082261.610315,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": false,
+   "all_before": true,
+   "all_after": false
+  },
+  {
+   "name": "West",
+   "symbol": "trenchcat",
+   "txs": 16,
+   "buys": 10,
+   "sells": 6,
+   "zero_delta": 0,
+   "before_n": 8,
+   "after_n": 8,
+   "net_before": 15148115.38,
+   "net_after": -15148115.38,
+   "net_total": 0.0,
+   "first": "22:09:58Z",
+   "last": "22:48:17Z",
+   "mins_from_pick_first": -18.2,
+   "mins_from_pick_last": 20.1,
+   "trades": [
+    {
+     "t": "22:09:58Z",
+     "mins_from_pick": -18.2,
+     "delta": 17688135.354569,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:10:29Z",
+     "mins_from_pick": -17.7,
+     "delta": 3886966.8730820008,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:12:52Z",
+     "mins_from_pick": -15.3,
+     "delta": 2658981.8087249994,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:14:53Z",
+     "mins_from_pick": -13.3,
+     "delta": 2984339.138146002,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:16:36Z",
+     "mins_from_pick": -11.6,
+     "delta": 30771.65497500077,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:16:36Z",
+     "mins_from_pick": -11.6,
+     "delta": 30788.76544199884,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:17:37Z",
+     "mins_from_pick": -10.6,
+     "delta": 28091.74933400005,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:26:26Z",
+     "mins_from_pick": -1.7,
+     "delta": -12159959.960641,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "spl-token"
+     ]
+    },
+    {
+     "t": "22:30:53Z",
+     "mins_from_pick": 2.7,
+     "delta": -8771182.954354,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "spl-token"
+     ]
+    },
+    {
+     "t": "22:38:03Z",
+     "mins_from_pick": 9.9,
+     "delta": 511542.1311529996,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:41:43Z",
+     "mins_from_pick": 13.6,
+     "delta": 553891.9607929997,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:43:05Z",
+     "mins_from_pick": 14.9,
+     "delta": 570917.0234940005,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:48:02Z",
+     "mins_from_pick": 19.9,
+     "delta": -2003320.8861790001,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:48:03Z",
+     "mins_from_pick": 19.9,
+     "delta": -1502490.6646339996,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:48:13Z",
+     "mins_from_pick": 20.1,
+     "delta": -2253735.9969520005,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:48:17Z",
+     "mins_from_pick": 20.1,
+     "delta": -2253735.996953,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": true,
+   "all_before": false,
+   "all_after": false
+  },
+  {
+   "name": "bandit",
+   "symbol": "trenchcat",
+   "txs": 4,
+   "buys": 1,
+   "sells": 3,
+   "zero_delta": 0,
+   "before_n": 4,
+   "after_n": 0,
+   "net_before": 0.0,
+   "net_after": 0,
+   "net_total": 0.0,
+   "first": "22:05:17Z",
+   "last": "22:05:30Z",
+   "mins_from_pick_first": -22.9,
+   "mins_from_pick_last": -22.7,
+   "trades": [
+    {
+     "t": "22:05:17Z",
+     "mins_from_pick": -22.9,
+     "delta": 4468.536657,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:05:26Z",
+     "mins_from_pick": -22.7,
+     "delta": -223.4268320000001,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:05:28Z",
+     "mins_from_pick": -22.7,
+     "delta": -212.25549099999944,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "22:05:30Z",
+     "mins_from_pick": -22.7,
+     "delta": -4032.854334,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": false,
+   "all_before": true,
+   "all_after": false
+  },
+  {
+   "name": "Yami \ud80c\udcf5",
+   "symbol": "trenchcat",
+   "txs": 2,
+   "buys": 1,
+   "sells": 1,
+   "zero_delta": 0,
+   "before_n": 0,
+   "after_n": 2,
+   "net_before": 0,
+   "net_after": 0.0,
+   "net_total": 0.0,
+   "first": "22:48:20Z",
+   "last": "22:51:40Z",
+   "mins_from_pick_first": 20.2,
+   "mins_from_pick_last": 23.5,
+   "trades": [
+    {
+     "t": "22:48:20Z",
+     "mins_from_pick": 20.2,
+     "delta": 624388.943428,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ]
+    },
+    {
+     "t": "22:51:40Z",
+     "mins_from_pick": 23.5,
+     "delta": -624388.943428,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": false,
+   "all_before": false,
+   "all_after": true
+  },
+  {
+   "name": "Gasp",
+   "symbol": "Normie",
+   "txs": 7,
+   "buys": 0,
+   "sells": 7,
+   "zero_delta": 0,
+   "before_n": 7,
+   "after_n": 0,
+   "net_before": -8049125.35,
+   "net_after": 0,
+   "net_total": -8049125.35,
+   "first": "21:33:13Z",
+   "last": "21:33:25Z",
+   "mins_from_pick_first": -55.0,
+   "mins_from_pick_last": -54.8,
+   "trades": [
+    {
+     "t": "21:33:13Z",
+     "mins_from_pick": -55.0,
+     "delta": -2012281.3371909996,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:33:14Z",
+     "mins_from_pick": -54.9,
+     "delta": -2012281.3371910006,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:33:23Z",
+     "mins_from_pick": -54.8,
+     "delta": -1006140.668596,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:33:23Z",
+     "mins_from_pick": -54.8,
+     "delta": -1006140.668596,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:33:24Z",
+     "mins_from_pick": -54.8,
+     "delta": -503070.334298,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:33:24Z",
+     "mins_from_pick": -54.8,
+     "delta": -503070.334298,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    },
+    {
+     "t": "21:33:25Z",
+     "mins_from_pick": -54.8,
+     "delta": -1006140.668596,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": false,
+   "all_before": true,
+   "all_after": false
+  },
+  {
+   "name": "Nyhrox",
+   "symbol": "Normie",
+   "txs": 11,
+   "buys": 3,
+   "sells": 2,
+   "zero_delta": 6,
+   "before_n": 6,
+   "after_n": 5,
+   "net_before": 4351193.97,
+   "net_after": -13645306.87,
+   "net_total": -9294112.9,
+   "first": "21:44:20Z",
+   "last": "22:53:47Z",
+   "mins_from_pick_first": -43.8,
+   "mins_from_pick_last": 25.6,
+   "trades": [
+    {
+     "t": "21:44:20Z",
+     "mins_from_pick": -43.8,
+     "delta": 1552629.899970999,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "21:44:21Z",
+     "mins_from_pick": -43.8,
+     "delta": 0.0,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "21:59:37Z",
+     "mins_from_pick": -28.6,
+     "delta": 1861363.899046,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "21:59:38Z",
+     "mins_from_pick": -28.5,
+     "delta": 0.0,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "21:59:48Z",
+     "mins_from_pick": -28.4,
+     "delta": 937200.1677579992,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "21:59:49Z",
+     "mins_from_pick": -28.4,
+     "delta": 0.0,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "22:53:45Z",
+     "mins_from_pick": 25.6,
+     "delta": 0.0,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "22:53:45Z",
+     "mins_from_pick": 25.6,
+     "delta": 0.0,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "22:53:45Z",
+     "mins_from_pick": 25.6,
+     "delta": -6822653.435395,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "22:53:47Z",
+     "mins_from_pick": 25.6,
+     "delta": 0.0,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    },
+    {
+     "t": "22:53:47Z",
+     "mins_from_pick": 25.6,
+     "delta": -6822653.435395,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ]
+    }
+   ],
+   "net_buyer_before_net_seller_after": true,
+   "all_before": false,
+   "all_after": false
+  }
+ ],
+ "summary": {
+  "kols": 7,
+  "txs": 51,
+  "net_buyer_before_and_net_seller_after": [
+   "West",
+   "Nyhrox"
+  ],
+  "all_trades_before_pick": [
+   "Naruza",
+   "CoCo",
+   "bandit",
+   "Gasp"
+  ],
+  "all_trades_after_pick": [
+   "Yami \ud80c\udcf5"
+  ],
+  "straddle": [
+   "West",
+   "Nyhrox"
+  ],
+  "net_sellers_overall": [
+   "Gasp",
+   "Nyhrox"
+  ],
+  "net_buyers_overall": [],
+  "flat_overall": [
+   "Naruza",
+   "CoCo",
+   "West",
+   "bandit",
+   "Yami \ud80c\udcf5"
+  ],
+  "txs_before": 36,
+  "txs_after": 15
+ }
+}
