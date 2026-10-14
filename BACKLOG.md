@@ -19,6 +19,10 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   reliability bins for model, market and my blind column, with an honest "nothing scored yet"
   state. Step two, 24 Oct: wired into the nightly rebuild, checked on a phone. The Saturday slot
   goes here first, before any intel write-up.
+  **Step one shipped 14 Oct (Workshop):** `bin/calibration.py` builds `docs/calibration/` and
+  checks itself against killcheck.py. Left for step two: add it to run-nightly.sh; the model panel
+  has 5 comparable rows of 22 scored because market odds were not captured for the rest (worth
+  finding out why); the over 2.5 market is not drawn.
 - **Channel digest tool.** Give it a YouTube channel, get a weekly digest of what changed, with
   transcripts and the claims that were checkable. Built on the transcript tool.
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
