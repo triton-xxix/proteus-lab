@@ -3653,9 +3653,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T23:43:59+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3663,7 +3663,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "recovers the 4 planted opener scripts within 1 and the planted best pickup hour",
+    "at": "2026-10-14T23:44:04+0100"
+   }
   },
   {
    "id": "P-0158",
