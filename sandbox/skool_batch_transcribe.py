@@ -24,6 +24,10 @@ VIDEOS = [
     ("ais-paperclip", "https://youtu.be/HJ-dwefABss"),
 ]
 
+if len(sys.argv) > 1:
+    # a TSV of slug<TAB>url replaces the built-in list (added 14 Oct 2026 for the lead-gen pull)
+    VIDEOS = [tuple(l.split("\t")[:2]) for l in open(sys.argv[1]).read().splitlines() if "\t" in l]
+
 os.makedirs(OUT, exist_ok=True)
 log = open(os.path.join(OUT, "_progress.log"), "a")
 for slug, url in VIDEOS:

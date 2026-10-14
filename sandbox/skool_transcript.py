@@ -10,7 +10,9 @@ Order of attempts:
               (audio downloads were not throttled when captions were; 3 min of audio took 58 s
               on the Intel i7, so about a third of real time)
   Loom     GraphQL FetchVideoTranscript gives a signed CDN URL; the JSON is a list of {ts, value}.
-  Vimeo    not yet tried.
+  Vimeo    the embed page (player.vimeo.com/video/<id>, Referer skool.com) carries text_tracks with
+           a signed captions.vimeo.com VTT, usually "en-x-autogen". The /config route answers 403
+           for these domain-locked videos; the embed page does not. Added 14 Oct 2026.
 Nothing here needs a key or a login. Whisper output is marked as such in the header.
 """
 import argparse, json, os, re, subprocess, sys, tempfile, urllib.request
@@ -94,6 +96,35 @@ def loom(vid):
     return bucket([(x["ts"], x["value"]) for x in phrases]), "loom transcript"
 
 
+def vimeo_id(url):
+    m = re.search(r"vimeo\.com/(?:video/)?(\d{6,})", url)
+    return m.group(1) if m else None
+
+
+def vtt_time(t):
+    p = t.replace(",", ".").split(":")
+    return sum(float(x) * 60 ** i for i, x in enumerate(reversed(p)))
+
+
+def vimeo(vid, referer="https://www.skool.com/"):
+    ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
+    page = urllib.request.urlopen(urllib.request.Request("https://player.vimeo.com/video/" + vid,
+                                  headers={"user-agent": ua, "referer": referer}), timeout=30).read().decode("utf-8", "replace")
+    m = re.search(r'"text_tracks":(\[.*?\])', page)
+    tracks = json.loads(m.group(1)) if m else []
+    if not tracks:
+        sys.exit("vimeo: no text tracks on the embed page")
+    tr = sorted(tracks, key=lambda t: (not t.get("lang", "").startswith("en"), t.get("lang") == "en-x-autogen"))[0]
+    vtt = urllib.request.urlopen(urllib.request.Request(tr["url"], headers={"user-agent": ua}), timeout=30).read().decode("utf-8", "replace")
+    segs = []
+    for cue in re.split(r"\n\s*\n", vtt):
+        tm = re.search(r"([\d:.,]+)\s*-->\s*[\d:.,]+", cue)
+        if tm:
+            text = " ".join(l for l in cue[tm.end():].strip().splitlines() if l.strip())
+            segs.append((vtt_time(tm.group(1)), re.sub(r"<[^>]+>", "", text)))
+    return bucket(segs), "vimeo captions (%s)" % tr.get("lang")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("url")
@@ -102,6 +133,8 @@ def main():
     a = ap.parse_args()
     if loom_id(a.url):
         lines, how = loom(loom_id(a.url))
+    elif vimeo_id(a.url):
+        lines, how = vimeo(vimeo_id(a.url))
     elif yt_id(a.url):
         vid = yt_id(a.url)
         lines, how = None, None
@@ -113,7 +146,7 @@ def main():
         if lines is None:
             lines, how = youtube_whisper(a.url)
     else:
-        sys.exit("not a YouTube or Loom url")
+        sys.exit("not a YouTube, Loom or Vimeo url")
     text = "# %s\n# via %s\n\n%s\n" % (a.url, how, "\n".join(lines))
     if a.out:
         with open(a.out, "w") as fh:

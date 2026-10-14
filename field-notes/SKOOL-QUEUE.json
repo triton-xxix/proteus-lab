@@ -375,6 +375,80 @@
     "field-notes/skool/mattryder-12-business-mastery.md"
    ],
    "why": "Lead distribution (waterfall to top performers), KPI and review docs, projections sheet, COGS to balance sheet in plain words, OODA scaling. Mostly links to Google Docs; the question is whether any of it is a tool Triton or Proteus would use, and what the would-I-pay-again verdict should weigh."
+  },
+  {
+   "id": "S-24",
+   "track": 7,
+   "title": "Lead Gen Jay: cold email infrastructure and deliverability (domains, DNS, sending tool, warmup, tests, blacklists)",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/leadgen-index.md",
+    "field-notes/skool/leadgen-04-toolkit.md",
+    "field-notes/skool/transcripts/leadgen-05-infrastructure-theory.txt",
+    "field-notes/skool/transcripts/leadgen-06-buying-domains.txt",
+    "field-notes/skool/transcripts/leadgen-07-setting-up-dns-records.txt",
+    "field-notes/skool/transcripts/leadgen-08-set-up-recommendations.txt",
+    "field-notes/skool/transcripts/leadgen-09-what-sending-tool-should-you-use.txt",
+    "field-notes/skool/transcripts/leadgen-13-warm-up-basics.txt",
+    "field-notes/skool/transcripts/leadgen-14-deliverability-tests.txt",
+    "field-notes/skool/transcripts/leadgen-15-fixing-deliverability-issues.txt",
+    "field-notes/skool/transcripts/leadgen-11-how-avoid-blacklists-in-2026.txt"
+   ],
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. Read for the mechanism (what actually decides inbox placement) and which claims are checkable with DNS lookups and free blacklist checks, keylessly."
+  },
+  {
+   "id": "S-25",
+   "track": 7,
+   "title": "Lead Gen Jay: list building, verification, qualification, offers (Google Maps scraping, 10% reply claim)",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/leadgen-16-list-building-basics.txt",
+    "field-notes/skool/transcripts/leadgen-17-the-secret-to-10-reply-rates.txt",
+    "field-notes/skool/transcripts/leadgen-19-how-to-use-filters-like-a-pro.txt",
+    "field-notes/skool/transcripts/leadgen-20-verification-breakdown.txt",
+    "field-notes/skool/transcripts/leadgen-21-why-you-should-qualify-your-leads.txt",
+    "field-notes/skool/transcripts/leadgen-22-how-to-scrape-google-maps-for-free.txt",
+    "field-notes/skool/transcripts/leadgen-23-intro-to-offers.txt",
+    "field-notes/skool/transcripts/leadgen-24-strategies-for-tough-offers.txt",
+    "field-notes/skool/transcripts/leadgen-25-i-dont-have-an-offer-yet.txt"
+   ],
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. Plumbing and HVAC firms are Triton targets; the free Google Maps scraper is the nearest thing to a list for them. Compare with the harvester's keyless pulls."
+  },
+  {
+   "id": "S-26",
+   "track": 7,
+   "title": "Lead Gen Jay: reverse lead magnets and cold email copy",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/leadgen-27-intro-to-lead-magnets.txt",
+    "field-notes/skool/transcripts/leadgen-28-the-king-of-lead-magnets.txt",
+    "field-notes/skool/transcripts/leadgen-29-intro-to-cold-email-copywriting.txt",
+    "field-notes/skool/transcripts/leadgen-30-how-to-write-cold-email-copy-like-the-pros.txt",
+    "field-notes/skool/transcripts/leadgen-31-email-sequences.txt",
+    "field-notes/skool/transcripts/leadgen-32-what-not-to-put-in-your-cold-emails.txt"
+   ],
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The reverse lead magnet (a small tool that analyses the prospect's site and returns specific insight) is a thing Proteus could build and show. Judge whether it is a mechanism or a pitch."
+  },
+  {
+   "id": "S-27",
+   "track": 7,
+   "title": "Lead Gen Jay: Claude Code x Cold Email (58 min) and running the machine (campaigns, ghost ink, testing, replies, scaling)",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/leadgen-34-claude-code-x-cold-email.txt",
+    "field-notes/skool/transcripts/leadgen-33-setting-up-your-campaigns.txt",
+    "field-notes/skool/transcripts/leadgen-35-get-out-of-the-promotions-tab.txt",
+    "field-notes/skool/transcripts/leadgen-36-split-testing.txt",
+    "field-notes/skool/transcripts/leadgen-37-campaign-analytics-and-troubleshooting.txt",
+    "field-notes/skool/transcripts/leadgen-39-replying-to-leads.txt",
+    "field-notes/skool/transcripts/leadgen-43-scaling-your-machine.txt",
+    "field-notes/skool/transcripts/leadgen-42-code-red-signals.txt"
+   ],
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The 58-minute Claude Code build is my own tooling pointed at outbound: what does it automate that Proteus could do with skills and sub-agents, and what needs a paid sender. Ghost ink (hidden text to dodge Gmail Promotions) is a claim to check, and an honesty question."
   }
  ]
 }
