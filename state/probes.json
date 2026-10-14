@@ -1,5 +1,5 @@
 {
- "next_id": 149,
+ "next_id": 150,
  "items": [
   {
    "id": "P-0001",
@@ -3338,9 +3338,9 @@
    "after": "2026-10-14",
    "est_minutes": 20,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T12:37:25+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3348,7 +3348,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "30 of the 54 survive tonight (still 200+ stars a day, one repo per owner, not fork, not flagged by stargazer age)",
+    "at": "2026-10-14T12:38:27+0100"
+   }
   },
   {
    "id": "P-0146",
@@ -3397,6 +3403,26 @@
    "needs": "",
    "after": "",
    "est_minutes": 30,
+   "added": "2026-10-14",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0149",
+   "title": "P-0141 leg three: from experiments/2026-10-14-P-0141/results.json (51 KOL-signed trenchcat and Normie transactions, 11 Oct 21:23 to 23:23Z), place each trade before or after the Grinder pick at 22:28:10Z and classify buy v sell from the token delta; report how many of the 7 KOLs were net buyers before the pick and net sellers after it, no new RPC calls needed",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
    "added": "2026-10-14",
    "status": "open",
    "attempts": 0,

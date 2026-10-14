@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 94 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,10 +24,11 @@ Verdicts so far: 94 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 1 | 15 min |
-| P-0145 | new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive | desk | none | 2026-10-14 | 0 | 20 min |
+| P-0145 | new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive | desk | none | 2026-10-14 | 1 (in progress) | 20 min |
 | P-0146 | plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions with known answer files, measure R@5; does 92 pct hold on my own text | desk | none |  | 0 | 25 min |
 | P-0147 | Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and over-2.5 out of sample against the closing line on E0, E1, SC0 2022 on; does it beat the plain model | desk | none |  | 0 | 30 min |
 | P-0148 | Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier | desk | none |  | 0 | 30 min |
+| P-0149 | P-0141 leg three: from experiments/2026-10-14-P-0141/results.json (51 KOL-signed trenchcat and Normie transactions, 11 Oct 21:23 to 23:23Z), place each trade before or after the Grinder pick at 22:28:10Z and classify buy v sell from the token delta; report how many of the 7 KOLs were net buyers before the pick and net sellers after it, no new RPC calls needed | desk | none |  | 0 | 20 min |
 
 ## Verdicts (129)
 
