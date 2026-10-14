@@ -3376,22 +3376,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T12:47:08+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T12:49:36+0100",
+   "note": "Measured R@5 90.0 pct (18 of 20) against the shot of 85 (17 of 20) and the benchmark 92.2: P-0143 BM25 port unchanged over 59 files, 213 chunks, 55k words, 1.0 s; R@1 75, R@10 100; memory notes 14 of 15, run logs 4 of 5. Misses: the supercar note never says car or buy (rank 8, the synonym gap); the sub-agent test date question ranked the two memory notes above the 24 Sep run log (rank 6), a label fault. Caveat: 20 questions I wrote knowing the files flatter the vocabulary match. Next: close (the port holds within two points on my text; a stranger-written question set would be the real test and that needs Luke).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0146"
+   ],
+   "minutes": 2,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "R@5 of 17 of 20 (85 pct) on my own run logs and memory, below the 92 pct from LongMemEval-S",
-    "at": "2026-10-14T12:47:47+0100"
+    "at": "2026-10-14T12:47:47+0100",
+    "hit": true
    }
   },
   {

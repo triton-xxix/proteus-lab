@@ -1,0 +1,386 @@
+{
+ "probe": "P-0146",
+ "files": 59,
+ "units": 213,
+ "n": 20,
+ "r_at_1": 75.0,
+ "r_at_5": 90.0,
+ "r_at_10": 100.0,
+ "hits_5": 18,
+ "published_longmemeval_r5": 92.2,
+ "p0143_r5": 92.2,
+ "seconds": 1.0,
+ "by_kind_r5": {
+  "memory": [
+   15,
+   93.3
+  ],
+  "runs": [
+   5,
+   80.0
+  ]
+ },
+ "rows": [
+  {
+   "q": "Which Python can run numpy scripts on this Intel Mac without the hook denying it?",
+   "answer": [
+    "project_in_folder_python312.md"
+   ],
+   "top5": [
+    "project_in_folder_python312.md",
+    "2026-10-07.md",
+    "2026-10-14.md",
+    "project_decisions_log_mixes_test_lines.md",
+    "2026-10-14.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "Why does the op command hang, and what do we read secrets with instead?",
+   "answer": [
+    "project_op_hangs_use_sdk.md"
+   ],
+   "top5": [
+    "project_op_hangs_use_sdk.md",
+    "2026-10-08.md",
+    "feedback_judge_the_idea_not_the_vendor.md",
+    "2026-10-08.md",
+    "feedback_show_the_wins.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "What car does Luke want to buy, by when, and from how much?",
+   "answer": [
+    "project_supercar_goal.md"
+   ],
+   "top5": [
+    "user_luke_five_lines.md",
+    "feedback_judge_the_idea_not_the_vendor.md",
+    "feedback_show_the_wins.md",
+    "feedback_cool_not_just_money.md",
+    "feedback_money_test_for_asks.md"
+   ],
+   "rank": 8,
+   "hit_1": false,
+   "hit_5": false,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "What went wrong when probes.bak and PROBES.bak turned out to be the same file?",
+   "answer": [
+    "project_case_insensitive_fs.md"
+   ],
+   "top5": [
+    "project_case_insensitive_fs.md",
+    "MEMORY.md",
+    "2026-10-09.md",
+    "feedback_empty_queue_is_not_done.md",
+    "project_probe_loop.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "How does the nightly harvester choose candidates and which model judges them?",
+   "answer": [
+    "project_harvester.md"
+   ],
+   "top5": [
+    "feedback_not_built_around_luke.md",
+    "feedback_judge_the_idea_not_the_vendor.md",
+    "project_harvester.md",
+    "feedback_reading_on_lesser_models.md",
+    "2026-10-13.md"
+   ],
+   "rank": 3,
+   "hit_1": false,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "What did Luke say about stopping work when the probe queue runs empty?",
+   "answer": [
+    "feedback_empty_queue_is_not_done.md"
+   ],
+   "top5": [
+    "feedback_empty_queue_is_not_done.md",
+    "project_probe_loop.md",
+    "feedback_preregistration_needs_a_due_date.md",
+    "project_triton_lead_targets.md",
+    "feedback_cool_not_just_money.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "Why does every pre-registration need a due date and a backstop?",
+   "answer": [
+    "feedback_preregistration_needs_a_due_date.md"
+   ],
+   "top5": [
+    "feedback_preregistration_needs_a_due_date.md",
+    "MEMORY.md",
+    "2026-10-07.md",
+    "2026-10-08.md",
+    "2026-09-22.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "At what times do the Inspector, Trials, Workshop and Smith slots run?",
+   "answer": [
+    "project_daytime_loop.md"
+   ],
+   "top5": [
+    "project_daytime_loop.md",
+    "2026-10-11.md",
+    "MEMORY.md",
+    "2026-10-13.md",
+    "2026-10-13.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "How should I make football predictions before I have seen the odds?",
+   "answer": [
+    "feedback_predict_blind_then_anchor.md"
+   ],
+   "top5": [
+    "feedback_predict_blind_then_anchor.md",
+    "2026-09-28.md",
+    "2026-10-04.md",
+    "2026-09-28.md",
+    "2026-09-26.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "Which trades and firms did Luke name as lead targets for Triton?",
+   "answer": [
+    "project_triton_lead_targets.md"
+   ],
+   "top5": [
+    "project_triton_lead_targets.md",
+    "MEMORY.md",
+    "feedback_show_the_wins.md",
+    "2026-10-11.md",
+    "feedback_preregistration_needs_a_due_date.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "How is token usage worked out from transcripts, and which duplicate record do we keep?",
+   "answer": [
+    "project_usage_from_transcripts.md"
+   ],
+   "top5": [
+    "project_usage_from_transcripts.md",
+    "2026-10-04.md",
+    "2026-10-13.md",
+    "MEMORY.md",
+    "MEMORY.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "What rebuilds the vault front page HOME.md and when does it run?",
+   "answer": [
+    "project_home_page.md"
+   ],
+   "top5": [
+    "MEMORY.md",
+    "project_home_page.md",
+    "project_sixteen_nights_record.md",
+    "2026-10-07.md",
+    "user_luke_five_lines.md"
+   ],
+   "rank": 2,
+   "hit_1": false,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "What is still waiting on Luke for the Lichess bot?",
+   "answer": [
+    "project_pending_from_luke.md"
+   ],
+   "top5": [
+    "project_pending_from_luke.md",
+    "2026-10-11.md",
+    "2026-09-27.md",
+    "feedback_cool_not_just_money.md",
+    "feedback_money_test_for_asks.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "Do child agents spawned with the Agent tool inherit the unattended hook?",
+   "answer": [
+    "project_subagent_hook_inheritance.md"
+   ],
+   "top5": [
+    "project_subagent_hook_inheritance.md",
+    "project_subagent_hook_inheritance.md",
+    "project_hook_subagent_handback.md",
+    "2026-09-24.md",
+    "MEMORY.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "Which media API keys did Luke allow outside the folder, ElevenLabs and which other?",
+   "answer": [
+    "project_media_keys_luke_named.md"
+   ],
+   "top5": [
+    "project_media_keys_luke_named.md",
+    "project_media_keys_luke_named.md",
+    "project_triton_lead_targets.md",
+    "2026-10-07.md",
+    "2026-09-22.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "memory"
+  },
+  {
+   "q": "When were the 85 pump.fun pools captured and how many were above 5k at capture?",
+   "answer": [
+    "2026-10-13.md",
+    "2026-10-14.md"
+   ],
+   "top5": [
+    "2026-10-14.md",
+    "2026-09-24.md",
+    "2026-10-13.md",
+    "2026-09-24.md",
+    "2026-10-13.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "runs"
+  },
+  {
+   "q": "How did the morning chess games against caissa-x go, and what is the rating now?",
+   "answer": [
+    "2026-10-14.md"
+   ],
+   "top5": [
+    "2026-10-14.md",
+    "2026-10-14.md",
+    "2026-10-09.md",
+    "2026-10-11.md",
+    "project_oct3_standing_jobs.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "runs"
+  },
+  {
+   "q": "On which day did the inspector add findings F-0015 to F-0021 from the nightly log?",
+   "answer": [
+    "2026-10-14.md"
+   ],
+   "top5": [
+    "2026-10-13.md",
+    "project_etoro_demo_copy_test.md",
+    "2026-10-14.md",
+    "2026-10-07.md",
+    "project_etoro_demo_copy_test.md"
+   ],
+   "rank": 3,
+   "hit_1": false,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "runs"
+  },
+  {
+   "q": "When was the sub-agent hook inheritance test run and what did it show?",
+   "answer": [
+    "2026-09-24.md"
+   ],
+   "top5": [
+    "project_hook_subagent_handback.md",
+    "project_subagent_hook_inheritance.md",
+    "project_subagent_hook_inheritance.md",
+    "feedback_reading_on_lesser_models.md",
+    "MEMORY.md"
+   ],
+   "rank": 6,
+   "hit_1": false,
+   "hit_5": false,
+   "hit_10": true,
+   "kind": "runs"
+  },
+  {
+   "q": "Which night did the probe loop stop because the P-0140 recheck was due twelve hours later?",
+   "answer": [
+    "2026-10-13.md"
+   ],
+   "top5": [
+    "2026-10-13.md",
+    "2026-10-08.md",
+    "feedback_preregistration_needs_a_due_date.md",
+    "project_supercar_goal.md",
+    "2026-10-09.md"
+   ],
+   "rank": 1,
+   "hit_1": true,
+   "hit_5": true,
+   "hit_10": true,
+   "kind": "runs"
+  }
+ ]
+}
