@@ -3624,9 +3624,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T23:42:25+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3634,7 +3634,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "core suite passes with zero failures; seeded 3x identical Bash failure flagged as a loop",
+    "at": "2026-10-14T23:42:30+0100"
+   }
   },
   {
    "id": "P-0157",
