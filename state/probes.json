@@ -3563,9 +3563,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T23:40:45+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3573,7 +3573,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "npm test passes with zero failures and no key, in under 3 min install",
+    "at": "2026-10-14T23:40:51+0100"
+   }
   },
   {
    "id": "P-0155",
