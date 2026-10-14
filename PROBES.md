@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 101 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 102 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,14 +28,14 @@ Verdicts so far: 101 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | desk | none |  | 0 | 30 min |
 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | desk | none |  | 0 | 40 min |
-| P-0156 | claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop? | harvest | none |  | 1 (in progress) | 20 min |
 | P-0157 | Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversation, booking and show rates, and distinct openers by difflib | field-notes | none |  | 0 | 20 min |
 | P-0158 | Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block shuffle? | desk | none |  | 0 | 20 min |
 
-## Verdicts (136)
+## Verdicts (137)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-14 | P-0156 | claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop? | **works** | Measured: 303 of 303 core tests pass keyless in 20.6 s (npm ci 48 packages, 2 s); loop-detective opens a case on the third identical pytest failure, but not when each message carries a different timestamp (free-text times are not normalised) and never for a hook denial, which it classes unknown, so a verbatim retry of a denied call is invisible. Shot said suite passes and 3x flagged: hit. npm test refused; ran its own test-core.mjs through a chdir wrapper. Next: close. | `experiments/2026-10-14-P-0156` | 1 min, 20 calls, 0 denied |
 | 2026-10-14 | P-0154 | herk-edit-kit: does the keyless starter (npm ci, npm test, synthetic fixture) build and pass on this Mac with no API keys? | **works** | Measured: keyless, 411 MB tarball, npm ci 141 packages in 8 s (audit: 9 vulns, 3 high), 11 of 11 node:test tests pass in 3.4 s, and its check-kit script counts 406 cards in 2 styles with 0 errors, so the README number holds. npm test and bare node --test were refused; ran the same files through a node:test runner script. Shot said works, tests pass: hit. Setup, transcription and renders not run. Next: close (deepen only if a Workshop edit needs silence cuts). | `experiments/2026-10-14-P-0154` | 1 min, 16 calls, 2 denied |
 | | | | | denied: Bash `npm --prefix /Users/triton/PROTEUS/sandbox/p0154-herk test`; Bash `node --test /Users/triton/PROTEUS/sandbox/p0154-herk/tests/editing.test.mjs /Users/triton/` | | |
 | 2026-10-14 | P-0155 | Pull-at-5x: on dated poller launches, does selling the stake at 5x beat holding to 24h, and how often is 5x reached? | **works** | Measured: 494 of 10,811 counted graduations (4.6%) touch 5x within the 30-min watch, 25 of 867 at liq 50k+; selling at 5x trails holding to 30 min by 4.0 points (counted) and 24.4 (G2). 23 of the 25 G2 hitters still sat above +488% at 30 min, the signature of a Jupiter entry quote far below the candle (G2 top-ten, same day), so most 5x hits are bad entries, not pumps. No 24 h data. Shot said about 2%: missed. Next: close (re-ask on candle entries under D-013). | `experiments/2026-10-14-P-0155` | 0 min, 11 calls, 0 denied |

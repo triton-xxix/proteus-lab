@@ -3624,22 +3624,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T23:42:25+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T23:43:52+0100",
+   "note": "Measured: 303 of 303 core tests pass keyless in 20.6 s (npm ci 48 packages, 2 s); loop-detective opens a case on the third identical pytest failure, but not when each message carries a different timestamp (free-text times are not normalised) and never for a hook denial, which it classes unknown, so a verbatim retry of a denied call is invisible. Shot said suite passes and 3x flagged: hit. npm test refused; ran its own test-core.mjs through a chdir wrapper. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-14-P-0156"
+   ],
+   "minutes": 1,
+   "calls": 20,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "core suite passes with zero failures; seeded 3x identical Bash failure flagged as a loop",
-    "at": "2026-10-14T23:42:30+0100"
+    "at": "2026-10-14T23:42:30+0100",
+    "hit": true
    }
   },
   {
