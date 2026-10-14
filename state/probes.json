@@ -3198,22 +3198,25 @@
    "after": "2026-10-14",
    "est_minutes": 15,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 2,
    "started_at": "2026-10-14T12:44:37+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T12:46:54+0100",
+   "note": "Measured 0 of 85 pump.fun pools above 5k USD liquidity at 24.2 h, against the shot of 2 (P-0137 shot 15 of 100): 0 by the curve pool and 0 by the token total reserve across all its pools, so no graduated PumpSwap survivor is hidden; 3 were above 5k at capture, two drained to 0 and one sits at the cohort median of 2,380 USD; 42 of 85 had no buy or sell in 24 h. 6 GeckoTerminal calls, keyless, no 429s. 95 pct upper bound about 3.5 pct. Next: close (the fresh-pool 24 h line is answered; the Grinder G2 50k floor stands well above it).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0140"
+   ],
+   "minutes": 2,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "2 of the 85 pools are above 5k USD liquidity at 24h, counting a graduated mint through its PumpSwap pool",
-    "at": "2026-10-14T12:45:16+0100"
+    "at": "2026-10-14T12:45:16+0100",
+    "hit": true
    }
   },
   {
