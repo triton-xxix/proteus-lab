@@ -1,0 +1,28 @@
+{
+ "n": 3664,
+ "n_with_close": 2818,
+ "share_ref_seen": 0.988,
+ "brier_plain": 0.61417,
+ "brier_ref": 0.61876,
+ "ref_minus_plain": 0.00459,
+ "se": 0.00129,
+ "over_plain": 0.25411,
+ "over_ref": 0.25694,
+ "over_ref_minus_plain": 0.00284,
+ "over_se": 0.00085,
+ "on_close_rows": {
+  "plain": 0.61037,
+  "ref": 0.61566,
+  "market": 0.58671
+ },
+ "over_on_close_rows": {
+  "plain": 0.25173,
+  "ref": 0.25495,
+  "market": 0.241
+ },
+ "by_div": {
+  "E0": 0.00456,
+  "E1": 0.00587,
+  "SC0": 0.00158
+ }
+}

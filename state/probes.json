@@ -3405,22 +3405,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T23:44:41+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T23:46:04+0100",
+   "note": "Measured: a per-referee home offset (L2 2.0) makes the Dixon-Coles worse out of sample over 3,664 E0, E1, SC0 matches since Aug 2023: 1X2 Brier +0.0046 (se 0.0013), over-2.5 +0.0028 (se 0.0009), worse in all three divisions. Plain trails Pinnacle close by 0.024 on the 2,818 rows with one. Shot said within 0.001: missed on size. Next: close (referees belong on cards markets).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0147"
+   ],
+   "minutes": 1,
+   "calls": 17,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "referee model minus plain 1X2 Brier within plus or minus 0.001 out of sample, no gain",
-    "at": "2026-10-14T23:45:08+0100"
+    "at": "2026-10-14T23:45:08+0100",
+    "hit": true
    }
   },
   {
