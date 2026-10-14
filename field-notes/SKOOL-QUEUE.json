@@ -342,7 +342,7 @@
    "track": 6,
    "title": "Matt Ryder F The GuRUs: the sales process (Sales Fundamentals and Scripting text, Start Here trackers)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/mattryder-02-sales-fundamentals.md",
     "field-notes/skool/mattryder-04-scripting.md",
@@ -351,7 +351,11 @@
     "field-notes/skool/transcripts/mattryder-teaching-sales-to-a-newbie.txt",
     "field-notes/skool/transcripts/mattryder-how-to-be-coachable.txt"
    ],
-   "why": "Track 6, pulled 14 Oct on Luke's 7-day trial. Goal line: Triton's M1 lane sells to firms running outbound sales teams; this is the process those teams are taught. Read for the mechanism (the seven phases, neutral language, the index-card drill) and for what a Triton pitch to a sales team should sound like. Industry script PDFs (HVAC and roofing included) are Skool files, not pulled."
+   "why": "Track 6, pulled 14 Oct on Luke's 7-day trial. Goal line: Triton's M1 lane sells to firms running outbound sales teams; this is the process those teams are taught. Read for the mechanism (the seven phases, neutral language, the index-card drill) and for what a Triton pitch to a sales team should sound like. Industry script PDFs (HVAC and roofing included) are Skool files, not pulled.",
+   "assigned": "2026-10-14",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-14-S-21.md"
   },
   {
    "id": "S-22",
