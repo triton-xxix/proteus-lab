@@ -1,0 +1,217 @@
+{
+ "matches": 4855,
+ "divisions": [
+  "E0",
+  "E1",
+  "SC0"
+ ],
+ "seasons": [
+  "2223",
+  "2324",
+  "2425",
+  "2526",
+  "2627"
+ ],
+ "min_games": 20,
+ "draws": 4000,
+ "cards": {
+  "stat": 705.265,
+  "p": 0.0,
+  "referees": 68,
+  "games": 4670,
+  "top": [
+   [
+    "K Stroud",
+    4.983
+   ],
+   [
+    "R Ricardo",
+    4.724
+   ],
+   [
+    "E Bell",
+    4.7
+   ],
+   [
+    "C Graham",
+    4.643
+   ],
+   [
+    "L Doughty",
+    4.541
+   ]
+  ],
+  "bottom": [
+   [
+    "A Kitchen",
+    3.148
+   ],
+   [
+    "D Webb",
+    3.151
+   ],
+   [
+    "S McLean",
+    3.236
+   ],
+   [
+    "G Irvine",
+    3.281
+   ],
+   [
+    "C Scott",
+    3.286
+   ]
+  ]
+ },
+ "hbias": {
+  "stat": 271.385,
+  "p": 0.0335,
+  "referees": 68,
+  "games": 4670,
+  "top": [
+   [
+    "C Napier",
+    0.4
+   ],
+   [
+    "E Bell",
+    0.3
+   ],
+   [
+    "W Collum",
+    0.297
+   ],
+   [
+    "J Brooks",
+    0.235
+   ],
+   [
+    "J Gillett",
+    0.077
+   ]
+  ],
+  "bottom": [
+   [
+    "A Muir",
+    -1.0
+   ],
+   [
+    "F Hallam",
+    -0.978
+   ],
+   [
+    "J Linington",
+    -0.864
+   ],
+   [
+    "C Steven",
+    -0.833
+   ],
+   [
+    "T Kirk",
+    -0.805
+   ]
+  ]
+ },
+ "home": {
+  "stat": 21.892,
+  "p": 0.048,
+  "referees": 68,
+  "games": 4670,
+  "top": [
+   [
+    "D Bond",
+    0.589
+   ],
+   [
+    "K Clancy",
+    0.552
+   ],
+   [
+    "P Bankes",
+    0.551
+   ],
+   [
+    "L Smith",
+    0.547
+   ],
+   [
+    "G Ward",
+    0.543
+   ]
+  ],
+  "bottom": [
+   [
+    "G Eltringham",
+    0.278
+   ],
+   [
+    "L Doughty",
+    0.284
+   ],
+   [
+    "J Simpson",
+    0.31
+   ],
+   [
+    "J Gillett",
+    0.33
+   ],
+   [
+    "F Hallam",
+    0.333
+   ]
+  ]
+ },
+ "over25": {
+  "stat": 21.988,
+  "p": 0.4905,
+  "referees": 68,
+  "games": 4670,
+  "top": [
+   [
+    "J Beaton",
+    0.667
+   ],
+   [
+    "C Steven",
+    0.667
+   ],
+   [
+    "R Lee",
+    0.667
+   ],
+   [
+    "A Taylor",
+    0.647
+   ],
+   [
+    "W Finnie",
+    0.64
+   ]
+  ],
+  "bottom": [
+   [
+    "C Napier",
+    0.35
+   ],
+   [
+    "G Eltringham",
+    0.361
+   ],
+   [
+    "S Allison",
+    0.368
+   ],
+   [
+    "E Bell",
+    0.4
+   ],
+   [
+    "D Nicolson",
+    0.4
+   ]
+  ]
+ }
+}
