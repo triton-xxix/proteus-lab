@@ -54,3 +54,6 @@ state/dash.key
 state/dash.last
 .claude/launch.json
 sites/builds/**/out/
+
+# Skool dashboard data: names Luke-side rooms and ventures; the repo is public (14 Oct 2026)
+state/skool-dash/*.json

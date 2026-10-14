@@ -1,0 +1,450 @@
+<style>
+#dash-root .sk { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); }
+#dash-root .sk h1, #dash-root .sk h2 { margin: 0; text-wrap: balance; }
+#dash-root .sk-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); }
+#dash-root .sk-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 70ch; }
+#dash-root .sk-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .sk-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); }
+#dash-root .sk-kpi-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .sk-kpi-num { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+#dash-root .sk-kpi-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+#dash-root .sk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .sk-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+#dash-root .sk-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+#dash-root .sk-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .sk-bars { display: grid; gap: var(--cds-gap-sm); min-height: 9rem; }
+#dash-root .sk-bar-row { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr; gap: var(--cds-gap-sm); align-items: center; font-size: var(--cds-font-size-caption); }
+#dash-root .sk-bar-track { position: relative; height: 1.5rem; }
+#dash-root .sk-bar { height: 100%; border-radius: 4px; min-width: 2px; }
+#dash-root .sk-bar-val { position: absolute; top: 50%; transform: translateY(-50%); padding-left: var(--cds-pad-xs); font-variant-numeric: tabular-nums; white-space: nowrap; }
+#dash-root .sk-bar-lost { color: var(--color-fg-muted); }
+#dash-root .sk-tools { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+#dash-root .sk-tools input, #dash-root .sk-tools select { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-width: 0; }
+#dash-root .sk-chip { font: inherit; font-size: var(--cds-font-size-caption); padding: 2px var(--cds-pad-sm); border-radius: 999px; border: 1px solid var(--color-border-line); background: transparent; color: var(--color-fg); cursor: pointer; }
+#dash-root .sk-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+#dash-root .sk-chip:focus-visible, #dash-root .sk-th button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+#dash-root .sk-scroll { overflow: auto; max-height: 34rem; }
+#dash-root .sk-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+#dash-root .sk-table th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); border-bottom: 1px solid var(--color-border-line); padding: var(--cds-pad-xs) var(--cds-pad-sm); white-space: nowrap; z-index: 1; }
+#dash-root .sk-th button { all: unset; cursor: pointer; }
+#dash-root .sk-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+#dash-root .sk-table td.num, #dash-root .sk-table th.num { text-align: right; }
+#dash-root .sk-table tbody tr.sk-click { cursor: pointer; }
+#dash-root .sk-table tbody tr.sk-click:hover td { background: var(--color-bg); }
+#dash-root .sk-wide { max-width: 34ch; }
+#dash-root .sk-pill { display: inline-block; padding: 1px var(--cds-pad-sm); border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; font-size: var(--cds-font-size-caption); }
+#dash-root .sk-ok { color: var(--color-ok); }
+#dash-root .sk-warn { color: var(--color-warn); }
+#dash-root .sk-bad { color: var(--color-bad); }
+#dash-root .sk-muted { color: var(--color-fg-muted); }
+#dash-root .sk-mini { display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--color-border-line); margin-top: 3px; min-width: 4rem; }
+#dash-root .sk-watch { display: grid; gap: var(--cds-gap-sm); margin: 0; padding: 0; list-style: none; }
+#dash-root .sk-watch li { display: grid; grid-template-columns: 5.5rem 1fr; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+#dash-root .sk-watch .sk-when { font-variant-numeric: tabular-nums; color: var(--color-fg-muted); }
+#dash-root .sk-picked { font: inherit; font-size: var(--cds-font-size-caption); }
+#dash-root [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 640px) { #dash-root .sk-hide-narrow { display: none; } }
+</style>
+
+<div class="sk">
+  <header id="top">
+    <h1 class="sk-title">Skool courses</h1>
+    <p class="sk-take" id="takeaway">
+      <span data-source="totals" data-field="rooms" data-row="0">—</span> rooms joined or tried.
+      <span data-source="totals" data-field="built_rooms" data-row="0">—</span> are built into a framework or skill,
+      <span data-source="totals" data-field="captured_unread" data-row="0">—</span> are captured but not read yet, and
+      <span data-source="totals" data-field="groups_queued" data-row="0">—</span> reading groups are queued for the nightly.
+    </p>
+  </header>
+
+  <section class="sk-kpis" id="figures" aria-label="Headline figures">
+    <div class="sk-kpi"><span class="sk-kpi-label">Lessons captured</span><span class="sk-kpi-num dash-skeleton" data-source="totals" data-field="lessons" data-row="0">—</span><span class="sk-kpi-sub">text or transcript on disk</span></div>
+    <div class="sk-kpi"><span class="sk-kpi-label">Courses captured</span><span class="sk-kpi-num dash-skeleton" data-source="totals" data-field="courses_done" data-row="0">—</span><span class="sk-kpi-sub"><span data-source="totals" data-field="courses_todo" data-row="0">—</span> open, not captured</span></div>
+    <div class="sk-kpi"><span class="sk-kpi-label">Courses locked</span><span class="sk-kpi-num dash-skeleton" data-source="totals" data-field="courses_locked" data-row="0">—</span><span class="sk-kpi-sub">paid tier, level or owner unlock</span></div>
+    <div class="sk-kpi"><span class="sk-kpi-label">Reading groups read</span><span class="sk-kpi-num dash-skeleton" data-source="totals" data-field="groups_read" data-row="0">—</span><span class="sk-kpi-sub"><span data-source="totals" data-field="groups_queued" data-row="0">—</span> queued for the nightly</span></div>
+    <div class="sk-kpi"><span class="sk-kpi-label">Frameworks and skills built</span><span class="sk-kpi-num dash-skeleton" data-source="totals" data-field="methods" data-row="0">—</span><span class="sk-kpi-sub"><span data-source="totals" data-field="uses" data-row="0">—</span> things made from courses in all</span></div>
+  </section>
+
+  <section class="sk-grid">
+    <div class="sk-card" id="funnel-card">
+      <h2>How far each room got</h2>
+      <p class="sk-note">Rooms at each step. A room counts as read once the nightly digested it or it fed research.</p>
+      <div class="sk-bars dash-skeleton" id="funnel" data-source="funnel"></div>
+    </div>
+    <div class="sk-card" id="verdict-card">
+      <h2>Nightly reading verdicts</h2>
+      <p class="sk-note">Proteus's reading groups: TRY becomes a probe, PARK waits for a reason, SKIP is closed.</p>
+      <div class="sk-bars dash-skeleton" id="verdicts" data-source="verdicts"></div>
+    </div>
+  </section>
+
+  <section class="sk-card" id="rooms-card">
+    <h2>Rooms</h2>
+    <p class="sk-note">Every Skool community touched, from Luke's extractor and Proteus's own pulls. Click a room to list its courses below.</p>
+    <div class="sk-tools" id="stage-chips" role="group" aria-label="Filter by stage"></div>
+    <div class="sk-scroll">
+      <table class="sk-table" id="rooms-table" data-source="rooms" data-row-key="slug">
+        <thead><tr>
+          <th class="sk-th" data-field="room"><button data-sort="room">Room</button></th>
+          <th class="sk-th sk-hide-narrow" data-field="theme"><button data-sort="theme">Theme</button></th>
+          <th class="sk-th" data-field="stage"><button data-sort="stage">Stage</button></th>
+          <th class="sk-th num" data-field="courses_done"><button data-sort="courses_done">Captured</button></th>
+          <th class="sk-th num sk-hide-narrow" data-field="courses_todo"><button data-sort="courses_todo">Open</button></th>
+          <th class="sk-th num sk-hide-narrow" data-field="courses_locked"><button data-sort="courses_locked">Locked</button></th>
+          <th class="sk-th num" data-field="lessons_captured"><button data-sort="lessons_captured">Lessons</button></th>
+          <th class="sk-th num sk-hide-narrow" data-field="read_groups"><button data-sort="read_groups">Read</button></th>
+          <th class="sk-th num sk-hide-narrow" data-field="queued_groups"><button data-sort="queued_groups">Queued</button></th>
+          <th class="sk-th sk-hide-narrow" data-field="used_for">What came of it</th>
+          <th class="sk-th sk-hide-narrow" data-field="cost">Cost</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sk-card" id="uses-card">
+    <h2>What we've done with them</h2>
+    <p class="sk-note">Frameworks are drafted from a course's method and not yet run on a real job unless marked.</p>
+    <div class="sk-scroll">
+      <table class="sk-table" id="uses-table" data-source="uses" data-row-key="thing">
+        <thead><tr>
+          <th data-field="thing">Thing</th>
+          <th data-field="kind">Kind</th>
+          <th data-field="status">Status</th>
+          <th class="sk-hide-narrow" data-field="from">From</th>
+          <th class="sk-hide-narrow" data-field="detail">Detail</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sk-grid">
+    <div class="sk-card" id="reading-card">
+      <h2>Reading queue</h2>
+      <p class="sk-note">One cheaper-model reader per group, two groups a night.</p>
+      <div class="sk-scroll">
+        <table class="sk-table" id="reading-table" data-source="reading" data-row-key="id">
+          <thead><tr>
+            <th data-field="id">Group</th>
+            <th data-field="title">What</th>
+            <th data-field="verdict">Verdict</th>
+            <th class="sk-hide-narrow" data-field="date">Read on</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sk-card" id="watch-card">
+      <h2>Watch</h2>
+      <p class="sk-note">Access that runs out, joins still pending, and rooms open but not yet captured.</p>
+      <ul class="sk-watch" id="watch" data-source="watch"></ul>
+    </div>
+  </section>
+
+  <section class="sk-card" id="courses-card">
+    <h2>All courses</h2>
+    <div class="sk-tools">
+      <input id="course-search" type="search" placeholder="Search courses" aria-label="Search courses">
+      <select id="course-status" aria-label="Status">
+        <option value="">Any status</option>
+        <option>Captured</option>
+        <option>Open, not captured</option>
+        <option>Locked</option>
+      </select>
+      <button class="sk-chip sk-picked" id="course-room" hidden></button>
+      <span class="sk-note" id="course-count"></span>
+    </div>
+    <div class="sk-scroll">
+      <table class="sk-table" id="courses-table" data-source="courses" data-row-key="slug,course">
+        <thead><tr>
+          <th class="sk-hide-narrow" data-field="room">Room</th>
+          <th data-field="course">Course</th>
+          <th class="num" data-field="lessons">Lessons</th>
+          <th data-field="status">Status</th>
+          <th class="sk-hide-narrow" data-field="detail">Detail</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+const STAGES = ['Built into a method', 'Read', 'Captured, reading queued', 'Captured, not read', 'Open, not captured', 'No access yet'];
+const READ_STAGES = ['Built into a method', 'Read'];
+
+dash.calc('totals', {
+  title: 'Headline totals',
+  description: 'Sums over every room, course, reading group and thing built.',
+  inputs: ['rooms', 'courses', 'reading', 'uses'],
+  fn: (rooms, courses, reading, uses) => [{
+    rooms: rooms.length,
+    built_rooms: rooms.filter((r) => r.stage === 'Built into a method').length,
+    captured_unread: rooms.filter((r) => r.stage === 'Captured, not read' || r.stage === 'Captured, reading queued').length,
+    lessons: courses.filter((c) => c.status === 'Captured').reduce((a, c) => a + c.lessons, 0),
+    courses_done: courses.filter((c) => c.status === 'Captured').length,
+    courses_todo: courses.filter((c) => c.status === 'Open, not captured').length,
+    courses_locked: courses.filter((c) => c.status === 'Locked').length,
+    groups_read: reading.filter((g) => g.status === 'read').length,
+    groups_queued: reading.filter((g) => g.status === 'queued').length,
+    methods: uses.filter((u) => u.kind === 'Framework' || u.kind === 'Skill').length,
+    uses: uses.length,
+  }],
+});
+
+dash.calc('funnel', {
+  title: 'Rooms by how far they got',
+  description: 'Rooms reaching each step: tried, something captured, read, built into a framework or skill.',
+  inputs: ['rooms'],
+  fn: (rooms) => [
+    { step: 'Joined or tried', rooms: rooms.length },
+    { step: 'Something captured', rooms: rooms.filter((r) => r.courses_done > 0).length },
+    { step: 'Read', rooms: rooms.filter((r) => r.stage === 'Built into a method' || r.stage === 'Read').length },
+    { step: 'Built into a method', rooms: rooms.filter((r) => r.stage === 'Built into a method').length },
+  ],
+});
+
+dash.calc('verdicts', {
+  title: 'Reading groups by verdict',
+  description: 'Count of nightly reading groups per verdict; Queued means not read yet.',
+  inputs: ['reading'],
+  fn: (reading) => ['TRY', 'PARK', 'SKIP', 'Queued'].map((v) => ({ verdict: v, groups: reading.filter((g) => g.verdict === v).length })),
+});
+
+const fmt = d3.format(',');
+const ui = { stage: '', sortKey: 'stage', sortDir: 1, room: '', q: '', status: '' };
+const stageClass = (s) => s === 'Built into a method' ? 'sk-ok' : s === 'Read' ? '' : s.startsWith('Captured') ? 'sk-warn' : 'sk-muted';
+const verdictClass = (v) => v === 'TRY' ? 'sk-ok' : v === 'PARK' ? 'sk-warn' : v === 'Queued' ? '' : 'sk-muted';
+const statusClass = { Captured: 'sk-ok', 'Open, not captured': 'sk-warn', Locked: 'sk-muted' };
+const key2 = (a, b) => encodeURIComponent(a) + ',' + encodeURIComponent(b);
+
+function pill(text, cls) {
+  const s = document.createElement('span');
+  s.className = 'sk-pill ' + (cls || '');
+  s.textContent = text;
+  return s;
+}
+function td(content, cls) {
+  const c = document.createElement('td');
+  if (cls) c.className = cls;
+  if (content instanceof Node) c.appendChild(content); else c.textContent = content == null ? '' : String(content);
+  return c;
+}
+function failed(el) {
+  el.replaceChildren();
+  const d = document.createElement('div');
+  d.className = 'sk-note';
+  d.textContent = 'Failed to load';
+  el.appendChild(d);
+}
+
+function drawBars(el, rows, labelKey, valKey, colorFor, showLost) {
+  el.classList.remove('dash-skeleton');
+  el.replaceChildren();
+  const max = d3.max(rows, (r) => r[valKey]) || 1;
+  rows.forEach((r, i) => {
+    const row = document.createElement('div');
+    row.className = 'sk-bar-row';
+    const lab = document.createElement('span');
+    lab.textContent = r[labelKey];
+    const track = document.createElement('div');
+    track.className = 'sk-bar-track';
+    const bar = document.createElement('div');
+    bar.className = 'sk-bar';
+    bar.style.width = (100 * r[valKey] / max) + '%';
+    bar.style.background = colorFor(r, i);
+    const val = document.createElement('span');
+    val.className = 'sk-bar-val';
+    val.style.left = (100 * r[valKey] / max) + '%';
+    const num = document.createElement('span');
+    num.textContent = fmt(r[valKey]);
+    val.appendChild(num);
+    if (showLost && i > 0 && rows[i - 1][valKey] > 0) {
+      const lost = document.createElement('span');
+      lost.className = 'sk-bar-lost';
+      lost.textContent = '  ' + d3.format('.0%')(1 - r[valKey] / rows[i - 1][valKey]) + ' stop here';
+      val.appendChild(lost);
+    }
+    track.append(bar, val);
+    row.append(lab, track);
+    el.appendChild(row);
+  });
+}
+
+// header buttons sort the rooms table
+document.querySelectorAll('#rooms-table [data-sort]').forEach((b) => b.addEventListener('click', () => {
+  const k = b.dataset.sort;
+  ui.sortDir = ui.sortKey === k ? -ui.sortDir : (k === 'room' || k === 'theme' || k === 'stage' ? 1 : -1);
+  ui.sortKey = k;
+  drawRooms();
+}));
+document.querySelector('#rooms-table tbody').addEventListener('click', (e) => {
+  const tr = e.target.closest('tr[data-key]');
+  if (!tr) return;
+  ui.room = tr.dataset.key;
+  drawCourses();
+  document.getElementById('courses-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+document.getElementById('course-room').addEventListener('click', () => { ui.room = ''; drawCourses(); });
+document.getElementById('course-search').addEventListener('input', (e) => { ui.q = e.target.value.toLowerCase(); drawCourses(); });
+document.getElementById('course-status').addEventListener('change', (e) => { ui.status = e.target.value; drawCourses(); });
+
+function drawChips(rooms) {
+  const box = document.getElementById('stage-chips');
+  box.replaceChildren();
+  const make = (label, value, n) => {
+    const b = document.createElement('button');
+    b.className = 'sk-chip';
+    b.type = 'button';
+    b.textContent = n == null ? label : label + ' ' + n;
+    b.setAttribute('aria-pressed', String(ui.stage === value));
+    b.addEventListener('click', () => { ui.stage = value; drawRooms(); });
+    box.appendChild(b);
+  };
+  make('All', '', rooms.length);
+  STAGES.forEach((s) => { const n = rooms.filter((r) => r.stage === s).length; if (n) make(s, s, n); });
+}
+
+function drawRooms() {
+  const d = dash.data('rooms');
+  const body = document.querySelector('#rooms-table tbody');
+  if (d.status !== 'ok') { body.replaceChildren(); if (d.status === 'error') failed(body); return; }
+  drawChips(d.data);
+  const order = (r) => STAGES.indexOf(r.stage);
+  const rows = d.data.filter((r) => !ui.stage || r.stage === ui.stage).slice().sort((a, b) => {
+    const k = ui.sortKey;
+    const av = k === 'stage' ? order(a) : a[k], bv = k === 'stage' ? order(b) : b[k];
+    if (av < bv) return -ui.sortDir;
+    if (av > bv) return ui.sortDir;
+    return b.lessons_captured - a.lessons_captured;
+  });
+  document.querySelectorAll('#rooms-table th[data-field]').forEach((th) => {
+    th.setAttribute('aria-sort', th.dataset.field === ui.sortKey ? (ui.sortDir > 0 ? 'ascending' : 'descending') : 'none');
+  });
+  body.replaceChildren(...rows.map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = r.slug;
+    tr.className = 'sk-click';
+    const total = r.courses_done + r.courses_todo + r.courses_locked;
+    const cap = document.createElement('div');
+    cap.textContent = fmt(r.courses_done);
+    if (total) {
+      const mini = document.createElement('div');
+      mini.className = 'sk-mini';
+      [[r.courses_done, 'var(--color-ok)'], [r.courses_todo, 'var(--color-warn)']].forEach(([n, c]) => {
+        const seg = document.createElement('span');
+        seg.style.width = (100 * n / total) + '%';
+        seg.style.background = c;
+        mini.appendChild(seg);
+      });
+      cap.appendChild(mini);
+    }
+    tr.append(
+      td(r.room),
+      td(r.theme, 'sk-hide-narrow'),
+      td(pill(r.stage, stageClass(r.stage))),
+      td(cap, 'num'),
+      td(fmt(r.courses_todo), 'num sk-hide-narrow'),
+      td(fmt(r.courses_locked), 'num sk-hide-narrow'),
+      td(fmt(r.lessons_captured), 'num'),
+      td(fmt(r.read_groups), 'num sk-hide-narrow'),
+      td(fmt(r.queued_groups), 'num sk-hide-narrow'),
+      td(r.used_for, 'sk-wide sk-hide-narrow'),
+      td(r.cost, 'sk-hide-narrow'),
+    );
+    return tr;
+  }));
+}
+
+function drawCourses() {
+  const d = dash.data('courses');
+  const body = document.querySelector('#courses-table tbody');
+  const pick = document.getElementById('course-room');
+  if (d.status !== 'ok') { body.replaceChildren(); if (d.status === 'error') failed(body); return; }
+  const rooms = dash.data('rooms');
+  const roomName = ui.room && rooms.status === 'ok' ? (rooms.data.find((r) => r.slug === ui.room) || {}).room : '';
+  pick.hidden = !ui.room;
+  pick.textContent = roomName ? roomName + ' ×' : '';
+  const rows = d.data.filter((c) => (!ui.room || c.slug === ui.room) && (!ui.status || c.status === ui.status)
+    && (!ui.q || (c.room + ' ' + c.course).toLowerCase().includes(ui.q)));
+  document.getElementById('course-count').textContent = fmt(rows.length) + ' of ' + fmt(d.data.length);
+  body.replaceChildren(...rows.map((c) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = key2(c.slug, c.course);
+    tr.append(
+      td(c.room, 'sk-hide-narrow'),
+      td(c.course),
+      td(fmt(c.lessons), 'num'),
+      td(pill(c.status, statusClass[c.status])),
+      td(c.detail, 'sk-hide-narrow sk-muted'),
+    );
+    return tr;
+  }));
+}
+
+dash.onData(() => {
+  const t = dash.data('totals');
+  document.querySelectorAll('[data-source="totals"]').forEach((el) => {
+    el.classList.remove('dash-skeleton');
+    el.textContent = t.status === 'ok' ? fmt(t.data[0][el.dataset.field]) : '—';
+  });
+
+  const f = dash.data('funnel'), fel = document.getElementById('funnel');
+  if (f.status === 'ok') drawBars(fel, f.data, 'step', 'rooms', (r, i) => i === f.data.length - 1 ? 'var(--color-ok)' : dash.colors[0], true);
+  else if (f.status === 'error') failed(fel);
+
+  const v = dash.data('verdicts'), vel = document.getElementById('verdicts');
+  const vColor = { TRY: 'var(--color-ok)', PARK: 'var(--color-warn)', SKIP: 'var(--cds-chart-muted)', Queued: dash.colors[0] };
+  if (v.status === 'ok') drawBars(vel, v.data, 'verdict', 'groups', (r) => vColor[r.verdict], false);
+  else if (v.status === 'error') failed(vel);
+
+  drawRooms();
+  drawCourses();
+
+  const u = dash.data('uses'), ub = document.querySelector('#uses-table tbody');
+  if (u.status === 'ok') {
+    const kindOrder = ['Skill', 'Framework', 'Venture research', 'Probe', 'Standing job', 'Download', 'Tooling'];
+    const rows = u.data.slice().sort((a, b) => kindOrder.indexOf(a.kind) - kindOrder.indexOf(b.kind));
+    ub.replaceChildren(...rows.map((x) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = x.thing;
+      const cls = /use|running|run once|proven/.test(x.status) ? 'sk-ok' : x.status === 'blocked' ? 'sk-bad' : x.status === 'drafted' ? 'sk-warn' : 'sk-muted';
+      tr.append(td(x.thing), td(x.kind), td(pill(x.status, cls)),
+        td(x.from, 'sk-wide sk-hide-narrow'),
+        td(x.detail, 'sk-wide sk-hide-narrow sk-muted'));
+      return tr;
+    }));
+  } else if (u.status === 'error') failed(ub);
+
+  const r = dash.data('reading'), rb = document.querySelector('#reading-table tbody');
+  if (r.status === 'ok') {
+    const rows = r.data.slice().sort((a, b) => (a.status === 'queued') - (b.status === 'queued') || b.id.localeCompare(a.id));
+    rb.replaceChildren(...rows.map((g) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = g.id;
+      tr.append(td(g.id), td(g.title, 'sk-wide'), td(pill(g.verdict, verdictClass(g.verdict))), td(g.date, 'sk-hide-narrow'));
+      return tr;
+    }));
+  } else if (r.status === 'error') failed(rb);
+
+  const w = dash.data('watch'), wl = document.getElementById('watch');
+  if (w.status === 'ok') {
+    wl.replaceChildren(...w.data.map((x) => {
+      const li = document.createElement('li');
+      const when = document.createElement('span');
+      when.className = 'sk-when';
+      when.textContent = x.date ? d3.utcFormat('%-d %b')(new Date(x.date)) : 'Open';
+      const body = document.createElement('div');
+      const head = document.createElement('div');
+      head.textContent = x.what + ': ' + x.room;
+      const note = document.createElement('div');
+      note.className = 'sk-muted';
+      note.textContent = x.note;
+      body.append(head, note);
+      li.append(when, body);
+      return li;
+    }));
+  } else if (w.status === 'error') failed(wl);
+});
+</script>
