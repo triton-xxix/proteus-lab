@@ -1,0 +1,1218 @@
+{
+ "asof": "2026-10-14T11:39:47.984395+00:00",
+ "query": "created:>=2026-09-30 stars:>=200",
+ "total_count": 285,
+ "fetched": 285,
+ "of_54": {
+  "of_54_still_200_per_day": 48,
+  "of_54_not_in_search": [
+   "CopilotKit/OpenDots",
+   "shader-effects-inc/shaders",
+   "omlahore/RemoveMacAI",
+   "nykooi1/vibe-wise"
+  ],
+  "of_54_fell_below_200": [
+   "HelixDB/helix-foundry",
+   "wesbos/photo-frame-dashboard"
+  ],
+  "of_54_forks_removed": [],
+  "of_54_owner_cap_removed": [
+   "storytold/wordcraft",
+   "storytold/pdfcraft",
+   "storytold/filmcraft",
+   "storytold/lightcraft",
+   "storytold/gridcraft",
+   "storytold/vectorcraft",
+   "storytold/cadcraft",
+   "storytold/craft-launcher",
+   "storytold/effectcraft",
+   "storytold/deckcraft",
+   "storytold/soundcraft",
+   "storytold/designcraft"
+  ],
+  "of_54_after_cap": 36,
+  "suspicious_slice": [
+   "Arekejoker/qwen21-nsfw-pose-skill",
+   "jhaizhou-ops/d2r-mobile",
+   "rehan-remade/universal-modder",
+   "nullmoth/nvidia-macos-driver",
+   "opengeos/RustGIS",
+   "LoreanXavier/pt-pc",
+   "Jakeschincariol/replica-skill",
+   "overdriveps5/overdrive-releases",
+   "shadany7824/playgta5",
+   "deadinside28/bloodborne_pc"
+  ],
+  "farm_flagged": [],
+  "farm_unchecked": [
+   "Arekejoker/qwen21-nsfw-pose-skill",
+   "jhaizhou-ops/d2r-mobile",
+   "rehan-remade/universal-modder",
+   "nullmoth/nvidia-macos-driver",
+   "opengeos/RustGIS",
+   "LoreanXavier/pt-pc",
+   "Jakeschincariol/replica-skill",
+   "overdriveps5/overdrive-releases",
+   "shadany7824/playgta5",
+   "deadinside28/bloodborne_pc",
+   "storytold/photocraft",
+   "openai/math"
+  ],
+  "of_54_survive": 36,
+  "survivors": [
+   "storytold/photocraft",
+   "openai/math",
+   "wheresryan22/anatomy",
+   "Arekejoker/qwen21-nsfw-pose-skill",
+   "jhaizhou-ops/d2r-mobile",
+   "onehumanbeing/esp32-iphone-agent",
+   "liseami/CCBaga",
+   "mhtsec/ARTEX",
+   "ARahim3/DigUp",
+   "rehan-remade/universal-modder",
+   "alchaincyf/huashu-art-motion",
+   "zhongerxin/iPhone-use",
+   "LosaLosSantos/aurelio-finance",
+   "t4t5/omdrop-owl",
+   "zhuyansen/new-term-radar",
+   "nullmoth/nvidia-macos-driver",
+   "noahdunnagan/fsearch",
+   "bherbruck/solidcraft",
+   "egotoadcitadel/palette-from-image-ai",
+   "alejandrobujan/tendedero",
+   "jwuthri-cloud/Tracely-ai",
+   "h0m3us3r/w1700k-sdr",
+   "QingYunA/answer-me-with-html",
+   "Fei2411/DeepSeek-Bot",
+   "shaongitbd/doory",
+   "opengeos/RustGIS",
+   "PS5Dev/Byepervisor-Reborn",
+   "rociiu/talorys",
+   "LoreanXavier/pt-pc",
+   "marclou/mailcheap",
+   "NVIDIA-Omniverse/usd-brep",
+   "Jakeschincariol/replica-skill",
+   "overdriveps5/overdrive-releases",
+   "shadany7824/playgta5",
+   "trhhubsd/ARTEXX",
+   "deadinside28/bloodborne_pc"
+  ],
+  "owner_age_flagged": [
+   "nullmoth/nvidia-macos-driver",
+   "overdriveps5/overdrive-releases"
+  ],
+  "survive_after_owner_age": 34,
+  "survivors_after_owner_age": [
+   "storytold/photocraft",
+   "openai/math",
+   "wheresryan22/anatomy",
+   "Arekejoker/qwen21-nsfw-pose-skill",
+   "jhaizhou-ops/d2r-mobile",
+   "onehumanbeing/esp32-iphone-agent",
+   "liseami/CCBaga",
+   "mhtsec/ARTEX",
+   "ARahim3/DigUp",
+   "rehan-remade/universal-modder",
+   "alchaincyf/huashu-art-motion",
+   "zhongerxin/iPhone-use",
+   "LosaLosSantos/aurelio-finance",
+   "t4t5/omdrop-owl",
+   "zhuyansen/new-term-radar",
+   "noahdunnagan/fsearch",
+   "bherbruck/solidcraft",
+   "egotoadcitadel/palette-from-image-ai",
+   "alejandrobujan/tendedero",
+   "jwuthri-cloud/Tracely-ai",
+   "h0m3us3r/w1700k-sdr",
+   "QingYunA/answer-me-with-html",
+   "Fei2411/DeepSeek-Bot",
+   "shaongitbd/doory",
+   "opengeos/RustGIS",
+   "PS5Dev/Byepervisor-Reborn",
+   "rociiu/talorys",
+   "LoreanXavier/pt-pc",
+   "marclou/mailcheap",
+   "NVIDIA-Omniverse/usd-brep",
+   "Jakeschincariol/replica-skill",
+   "shadany7824/playgta5",
+   "trhhubsd/ARTEXX",
+   "deadinside28/bloodborne_pc"
+  ]
+ },
+ "tonight": {
+  "flagged": 53,
+  "no_fork": 53,
+  "after_owner_cap": 41,
+  "new_since_13oct": [
+   "CoolkHz/gptibo",
+   "HeyPuter/everything",
+   "deeplethe/solid-glass",
+   "outcrawlai/scout",
+   "solana-classic/solana-classic"
+  ]
+ },
+ "flagged_tonight": [
+  {
+   "full_name": "storytold/photocraft",
+   "owner": "storytold",
+   "stars": 59527,
+   "created_at": "2026-09-30T13:37:48Z",
+   "age_days": 13.92,
+   "stars_per_day": 4277.0,
+   "language": "Rust",
+   "description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "openai/math",
+   "owner": "openai",
+   "stars": 14745,
+   "created_at": "2026-10-06T21:47:02Z",
+   "age_days": 7.58,
+   "stars_per_day": 1945.7,
+   "language": "Lean",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/wordcraft",
+   "owner": "storytold",
+   "stars": 11849,
+   "created_at": "2026-10-07T08:34:24Z",
+   "age_days": 7.13,
+   "stars_per_day": 1662.1,
+   "language": "Rust",
+   "description": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "wheresryan22/anatomy",
+   "owner": "wheresryan22",
+   "stars": 9041,
+   "created_at": "2026-10-08T10:12:49Z",
+   "age_days": 6.06,
+   "stars_per_day": 1491.8,
+   "language": "JavaScript",
+   "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Ge",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/pdfcraft",
+   "owner": "storytold",
+   "stars": 13240,
+   "created_at": "2026-09-30T13:39:37Z",
+   "age_days": 13.92,
+   "stars_per_day": 951.4,
+   "language": "Rust",
+   "description": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/filmcraft",
+   "owner": "storytold",
+   "stars": 12884,
+   "created_at": "2026-09-30T13:41:20Z",
+   "age_days": 13.92,
+   "stars_per_day": 925.9,
+   "language": "Rust",
+   "description": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/lightcraft",
+   "owner": "storytold",
+   "stars": 12265,
+   "created_at": "2026-09-30T14:09:27Z",
+   "age_days": 13.9,
+   "stars_per_day": 882.6,
+   "language": "Rust",
+   "description": "LightCraft: An open-source non-destructive photo editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "Arekejoker/qwen21-nsfw-pose-skill",
+   "owner": "Arekejoker",
+   "stars": 1104,
+   "created_at": "2026-10-13T03:09:42Z",
+   "age_days": 1.35,
+   "stars_per_day": 815.2,
+   "language": "Python",
+   "description": "Qwen-Image 2.1 NSFW/\u59ff\u52bf\u51fa\u56fe skill\uff1a\u4f5c\u8005\u7ea7\u63d0\u793a\u8bcd\u914d\u65b9 + NSFW LoRA + 136 \u59ff\u52bf VNCCS \u4eba\u5076\u63a7\u5236\uff1b\u9002\u7528 Claude Code / Codex / Cursor / OpenClaw",
+   "fork": false
+  },
+  {
+   "full_name": "jhaizhou-ops/d2r-mobile",
+   "owner": "jhaizhou-ops",
+   "stars": 1599,
+   "created_at": "2026-10-12T08:41:19Z",
+   "age_days": 2.12,
+   "stars_per_day": 752.8,
+   "language": "C",
+   "description": "Open-source iOS / macOS compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs you",
+   "fork": false
+  },
+  {
+   "full_name": "onehumanbeing/esp32-iphone-agent",
+   "owner": "onehumanbeing",
+   "stars": 1913,
+   "created_at": "2026-10-11T19:10:25Z",
+   "age_days": 2.69,
+   "stars_per_day": 711.9,
+   "language": "Python",
+   "description": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No M",
+   "fork": false
+  },
+  {
+   "full_name": "liseami/CCBaga",
+   "owner": "liseami",
+   "stars": 2206,
+   "created_at": "2026-10-11T03:47:06Z",
+   "age_days": 3.33,
+   "stars_per_day": 662.8,
+   "language": "Rust",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "mhtsec/ARTEX",
+   "owner": "mhtsec",
+   "stars": 4019,
+   "created_at": "2026-10-08T05:33:06Z",
+   "age_days": 6.25,
+   "stars_per_day": 642.6,
+   "language": "Go",
+   "description": "AI \u81ea\u4e3b\u6e17\u900f\u6d4b\u8bd5\u7cfb\u7edf | \u767e\u5ea6\u201cagent+\u201d\u653b\u9632\u6311\u6218\u8d5b\u51a0\u519b\u9879\u76ee",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/gridcraft",
+   "owner": "storytold",
+   "stars": 4637,
+   "created_at": "2026-10-07T05:18:16Z",
+   "age_days": 7.26,
+   "stars_per_day": 638.3,
+   "language": "Rust",
+   "description": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
+   "fork": false
+  },
+  {
+   "full_name": "CoolkHz/gptibo",
+   "owner": "CoolkHz",
+   "stars": 631,
+   "created_at": "2026-10-13T15:57:19Z",
+   "age_days": 1.0,
+   "stars_per_day": 631.0,
+   "language": "TypeScript",
+   "description": "Self-hosted GPTibo storefront, admin and Go backend \u2014 sanitized MIT source",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/vectorcraft",
+   "owner": "storytold",
+   "stars": 8678,
+   "created_at": "2026-09-30T13:43:03Z",
+   "age_days": 13.91,
+   "stars_per_day": 623.7,
+   "language": "Rust",
+   "description": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/cadcraft",
+   "owner": "storytold",
+   "stars": 4506,
+   "created_at": "2026-10-07T05:22:31Z",
+   "age_days": 7.26,
+   "stars_per_day": 620.5,
+   "language": "Rust",
+   "description": "CADCraft: computer-aided design and drafting \u2014 an open-source, clean-room AutoCAD-style app in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "ARahim3/DigUp",
+   "owner": "ARahim3",
+   "stars": 3145,
+   "created_at": "2026-10-08T20:37:51Z",
+   "age_days": 5.63,
+   "stars_per_day": 559.0,
+   "language": "Swift",
+   "description": "Search your Mac by what's in your files: photos, PDFs, recordings, videos and code. On-device, built on Google DeepMind'",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/craft-launcher",
+   "owner": "storytold",
+   "stars": 2486,
+   "created_at": "2026-10-09T23:21:59Z",
+   "age_days": 4.51,
+   "stars_per_day": 550.9,
+   "language": "Rust",
+   "description": "The Craft App Launcher",
+   "fork": false
+  },
+  {
+   "full_name": "HeyPuter/everything",
+   "owner": "HeyPuter",
+   "stars": 546,
+   "created_at": "2026-10-13T16:18:22Z",
+   "age_days": 1.0,
+   "stars_per_day": 546.0,
+   "language": "JavaScript",
+   "description": "We're rebuilding and open-sourcing the world\u2019s software from scratch.",
+   "fork": false
+  },
+  {
+   "full_name": "rehan-remade/universal-modder",
+   "owner": "rehan-remade",
+   "stars": 7534,
+   "created_at": "2026-09-30T05:00:35Z",
+   "age_days": 14.28,
+   "stars_per_day": 527.7,
+   "language": "Python",
+   "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reve",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/effectcraft",
+   "owner": "storytold",
+   "stars": 6382,
+   "created_at": "2026-10-01T14:24:46Z",
+   "age_days": 12.89,
+   "stars_per_day": 495.3,
+   "language": "Rust",
+   "description": "EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "alchaincyf/huashu-art-motion",
+   "owner": "alchaincyf",
+   "stars": 3931,
+   "created_at": "2026-10-06T04:49:37Z",
+   "age_days": 8.28,
+   "stars_per_day": 474.5,
+   "language": "JavaScript",
+   "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "zhongerxin/iPhone-use",
+   "owner": "zhongerxin",
+   "stars": 3675,
+   "created_at": "2026-10-06T15:09:33Z",
+   "age_days": 7.85,
+   "stars_per_day": 467.9,
+   "language": "Python",
+   "description": "\u8ba9 Codex \u901a\u8fc7 USB \u64cd\u4f5c\u771f\u5b9e iPhone\uff1a\u5f15\u5bfc\u5b89\u88c5\u3001App \u81ea\u52a8\u5316\u3001\u5b9e\u65f6\u5c4f\u5e55\u4e0e\u622a\u56fe\u56de\u9000\u3002",
+   "fork": false
+  },
+  {
+   "full_name": "LosaLosSantos/aurelio-finance",
+   "owner": "LosaLosSantos",
+   "stars": 3380,
+   "created_at": "2026-10-06T20:14:19Z",
+   "age_days": 7.64,
+   "stars_per_day": 442.3,
+   "language": "Python",
+   "description": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts o",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/deckcraft",
+   "owner": "storytold",
+   "stars": 3097,
+   "created_at": "2026-10-07T05:27:21Z",
+   "age_days": 7.26,
+   "stars_per_day": 426.7,
+   "language": "Rust",
+   "description": "Presentations and slide shows: an open-source, clean-room reimplementation of Microsoft PowerPoint in pure Rust. Part of",
+   "fork": false
+  },
+  {
+   "full_name": "t4t5/omdrop-owl",
+   "owner": "t4t5",
+   "stars": 2631,
+   "created_at": "2026-10-08T06:38:33Z",
+   "age_days": 6.21,
+   "stars_per_day": 423.7,
+   "language": "Shell",
+   "description": "airdrop for non-apple devices",
+   "fork": false
+  },
+  {
+   "full_name": "zhuyansen/new-term-radar",
+   "owner": "zhuyansen",
+   "stars": 905,
+   "created_at": "2026-10-12T07:11:01Z",
+   "age_days": 2.19,
+   "stars_per_day": 413.9,
+   "language": "Python",
+   "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps be",
+   "fork": false
+  },
+  {
+   "full_name": "nullmoth/nvidia-macos-driver",
+   "owner": "nullmoth",
+   "stars": 2955,
+   "created_at": "2026-10-07T08:13:12Z",
+   "age_days": 7.14,
+   "stars_per_day": 413.7,
+   "language": "Rust",
+   "description": "Metal driver for NVIDIA GeForce cards on macOS Sequoia",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/soundcraft",
+   "owner": "storytold",
+   "stars": 2669,
+   "created_at": "2026-10-07T08:31:31Z",
+   "age_days": 7.13,
+   "stars_per_day": 374.3,
+   "language": "Rust",
+   "description": "An open-source, clean-room reimplementation of Avid Pro Tools in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "noahdunnagan/fsearch",
+   "owner": "noahdunnagan",
+   "stars": 2039,
+   "created_at": "2026-10-08T17:50:33Z",
+   "age_days": 5.74,
+   "stars_per_day": 355.1,
+   "language": "Rust",
+   "description": "Whole-disk file search for macOS: fuzzy names, typo tolerance, indexed content grep. ~1 ms over 8M files.",
+   "fork": false
+  },
+  {
+   "full_name": "bherbruck/solidcraft",
+   "owner": "bherbruck",
+   "stars": 2083,
+   "created_at": "2026-10-07T18:57:48Z",
+   "age_days": 6.7,
+   "stars_per_day": 311.1,
+   "language": "Rust",
+   "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+   "fork": false
+  },
+  {
+   "full_name": "egotoadcitadel/palette-from-image-ai",
+   "owner": "egotoadcitadel",
+   "stars": 303,
+   "created_at": "2026-10-13T17:08:53Z",
+   "age_days": 1.0,
+   "stars_per_day": 303.0,
+   "language": "Python",
+   "description": "AI coloring palette-from-image generator for designers and pixel artists \u2014 pull a clean named palette straight from any ",
+   "fork": false
+  },
+  {
+   "full_name": "storytold/designcraft",
+   "owner": "storytold",
+   "stars": 3803,
+   "created_at": "2026-10-01T13:13:14Z",
+   "age_days": 12.94,
+   "stars_per_day": 294.0,
+   "language": "Rust",
+   "description": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
+   "fork": false
+  },
+  {
+   "full_name": "alejandrobujan/tendedero",
+   "owner": "alejandrobujan",
+   "stars": 2154,
+   "created_at": "2026-10-07T01:29:54Z",
+   "age_days": 7.42,
+   "stars_per_day": 290.2,
+   "language": "Swift",
+   "description": "Screenshots, hung out to dry. A tiny native macOS app that hangs every screenshot on a line at the top of your screen.",
+   "fork": false
+  },
+  {
+   "full_name": "jwuthri-cloud/Tracely-ai",
+   "owner": "jwuthri-cloud",
+   "stars": 798,
+   "created_at": "2026-10-11T15:38:03Z",
+   "age_days": 2.83,
+   "stars_per_day": 281.5,
+   "language": "Python",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "h0m3us3r/w1700k-sdr",
+   "owner": "h0m3us3r",
+   "stars": 698,
+   "created_at": "2026-10-11T23:21:22Z",
+   "age_days": 2.51,
+   "stars_per_day": 277.8,
+   "language": "C",
+   "description": "",
+   "fork": false
+  },
+  {
+   "full_name": "deeplethe/solid-glass",
+   "owner": "deeplethe",
+   "stars": 580,
+   "created_at": "2026-10-12T09:19:02Z",
+   "age_days": 2.1,
+   "stars_per_day": 276.5,
+   "language": "TypeScript",
+   "description": "A design system for AI applications. Material, physical, tactile, technical.",
+   "fork": false
+  },
+  {
+   "full_name": "QingYunA/answer-me-with-html",
+   "owner": "QingYunA",
+   "stars": 3336,
+   "created_at": "2026-10-02T09:57:40Z",
+   "age_days": 12.07,
+   "stars_per_day": 276.4,
+   "language": "JavaScript",
+   "description": "Answer me with HTML \u2014 an agent skill that answers hard questions with a one-page HTML you can actually read. \u8ba9 AI Agent ",
+   "fork": false
+  },
+  {
+   "full_name": "outcrawlai/scout",
+   "owner": "outcrawlai",
+   "stars": 302,
+   "created_at": "2026-10-13T09:18:55Z",
+   "age_days": 1.1,
+   "stars_per_day": 275.1,
+   "language": "TypeScript",
+   "description": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
+   "fork": false
+  },
+  {
+   "full_name": "Fei2411/DeepSeek-Bot",
+   "owner": "Fei2411",
+   "stars": 1818,
+   "created_at": "2026-10-07T15:37:36Z",
+   "age_days": 6.83,
+   "stars_per_day": 266.0,
+   "language": "JavaScript",
+   "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+   "fork": false
+  },
+  {
+   "full_name": "shaongitbd/doory",
+   "owner": "shaongitbd",
+   "stars": 1122,
+   "created_at": "2026-10-10T00:03:25Z",
+   "age_days": 4.48,
+   "stars_per_day": 250.2,
+   "language": "TypeScript",
+   "description": "Open source canva alternative",
+   "fork": false
+  },
+  {
+   "full_name": "opengeos/RustGIS",
+   "owner": "opengeos",
+   "stars": 918,
+   "created_at": "2026-10-10T18:45:41Z",
+   "age_days": 3.7,
+   "stars_per_day": 247.8,
+   "language": "Rust",
+   "description": "A fast, free and open-source GIS in pure Rust.",
+   "fork": false
+  },
+  {
+   "full_name": "PS5Dev/Byepervisor-Reborn",
+   "owner": "PS5Dev",
+   "stars": 380,
+   "created_at": "2026-10-12T22:26:34Z",
+   "age_days": 1.55,
+   "stars_per_day": 245.0,
+   "language": "C",
+   "description": "Somehow, Byepervisor returned...",
+   "fork": false
+  },
+  {
+   "full_name": "rociiu/talorys",
+   "owner": "rociiu",
+   "stars": 979,
+   "created_at": "2026-10-10T09:46:56Z",
+   "age_days": 4.08,
+   "stars_per_day": 240.0,
+   "language": "TypeScript",
+   "description": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with",
+   "fork": false
+  },
+  {
+   "full_name": "LoreanXavier/pt-pc",
+   "owner": "LoreanXavier",
+   "stars": 1683,
+   "created_at": "2026-10-07T09:33:31Z",
+   "age_days": 7.09,
+   "stars_per_day": 237.5,
+   "language": "C++",
+   "description": "Native PC port of P.T. (runs from your own PS4 game files)",
+   "fork": false
+  },
+  {
+   "full_name": "solana-classic/solana-classic",
+   "owner": "solana-classic",
+   "stars": 236,
+   "created_at": "2026-10-13T19:35:48Z",
+   "age_days": 1.0,
+   "stars_per_day": 236.0,
+   "language": "Rust",
+   "description": "Bring back the fun. Open-source SVM blockchain development focused on art, NFTs, memes and their communities. Experiment",
+   "fork": false
+  },
+  {
+   "full_name": "marclou/mailcheap",
+   "owner": "marclou",
+   "stars": 912,
+   "created_at": "2026-10-10T12:55:36Z",
+   "age_days": 3.95,
+   "stars_per_day": 231.0,
+   "language": "JavaScript",
+   "description": "Self-hosted newsletters on Amazon SES. About $0.10 per 1,000 emails.",
+   "fork": false
+  },
+  {
+   "full_name": "NVIDIA-Omniverse/usd-brep",
+   "owner": "NVIDIA-Omniverse",
+   "stars": 1317,
+   "created_at": "2026-10-08T17:27:36Z",
+   "age_days": 5.76,
+   "stars_per_day": 228.7,
+   "language": "C++",
+   "description": "USD BRep is a standalone C++ and Python library for NURBS-based boundary representation (BRep) solid modeling",
+   "fork": false
+  },
+  {
+   "full_name": "Jakeschincariol/replica-skill",
+   "owner": "Jakeschincariol",
+   "stars": 2506,
+   "created_at": "2026-10-03T12:07:49Z",
+   "age_days": 10.98,
+   "stars_per_day": 228.2,
+   "language": "Python",
+   "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users",
+   "fork": false
+  },
+  {
+   "full_name": "overdriveps5/overdrive-releases",
+   "owner": "overdriveps5",
+   "stars": 371,
+   "created_at": "2026-10-12T19:35:03Z",
+   "age_days": 1.67,
+   "stars_per_day": 222.2,
+   "language": null,
+   "description": "Overdrive releases for jailbroken PS5",
+   "fork": false
+  },
+  {
+   "full_name": "shadany7824/playgta5",
+   "owner": "shadany7824",
+   "stars": 1581,
+   "created_at": "2026-10-07T08:37:15Z",
+   "age_days": 7.13,
+   "stars_per_day": 221.8,
+   "language": "JavaScript",
+   "description": "A source code for playgta5.com.",
+   "fork": false
+  },
+  {
+   "full_name": "trhhubsd/ARTEXX",
+   "owner": "trhhubsd",
+   "stars": 1207,
+   "created_at": "2026-10-08T20:35:22Z",
+   "age_days": 5.63,
+   "stars_per_day": 214.5,
+   "language": "Go",
+   "description": "AI \u81ea\u4e3b\u6e17\u900f\u6d4b\u8bd5\u7cfb\u7edf | \u767e\u5ea6\u201cagent+\u201d\u653b\u9632\u6311\u6218\u8d5b\u51a0\u519b\u9879\u76ee Autumn-27/ARTEX",
+   "fork": false
+  },
+  {
+   "full_name": "deadinside28/bloodborne_pc",
+   "owner": "deadinside28",
+   "stars": 2791,
+   "created_at": "2026-10-01T05:50:31Z",
+   "age_days": 13.24,
+   "stars_per_day": 210.8,
+   "language": "C++",
+   "description": "",
+   "fork": false
+  }
+ ],
+ "farm_checks": [
+  {
+   "repo": "Arekejoker/qwen21-nsfw-pose-skill",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "Arekejoker",
+    "type": "User",
+    "account_age_days": 1272.1,
+    "followers": 17,
+    "public_repos": 5
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "jhaizhou-ops/d2r-mobile",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "jhaizhou-ops",
+    "type": "User",
+    "account_age_days": 255.9,
+    "followers": 67,
+    "public_repos": 5
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "rehan-remade/universal-modder",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "rehan-remade",
+    "type": "User",
+    "account_age_days": 840.7,
+    "followers": 147,
+    "public_repos": 18
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "nullmoth/nvidia-macos-driver",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "nullmoth",
+    "type": "User",
+    "account_age_days": 18.8,
+    "followers": 278,
+    "public_repos": 4
+   },
+   "owner_flag": true
+  },
+  {
+   "repo": "opengeos/RustGIS",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "opengeos",
+    "type": "Organization",
+    "account_age_days": 1288.7,
+    "followers": 4186,
+    "public_repos": 182
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "LoreanXavier/pt-pc",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "LoreanXavier",
+    "type": "User",
+    "account_age_days": 3006.1,
+    "followers": 80,
+    "public_repos": 1
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "Jakeschincariol/replica-skill",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "Jakeschincariol",
+    "type": "User",
+    "account_age_days": 624.5,
+    "followers": 927,
+    "public_repos": 18
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "overdriveps5/overdrive-releases",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "overdriveps5",
+    "type": "User",
+    "account_age_days": 1.7,
+    "followers": 178,
+    "public_repos": 1
+   },
+   "owner_flag": true
+  },
+  {
+   "repo": "shadany7824/playgta5",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "shadany7824",
+    "type": "User",
+    "account_age_days": 738.1,
+    "followers": 71,
+    "public_repos": 30
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "deadinside28/bloodborne_pc",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": false,
+   "owner": {
+    "login": "deadinside28",
+    "type": "User",
+    "account_age_days": 433.2,
+    "followers": 81,
+    "public_repos": 2
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "storytold/photocraft",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": true,
+   "owner": {
+    "login": "storytold",
+    "type": "Organization",
+    "account_age_days": 2110.2,
+    "followers": 46735,
+    "public_repos": 61
+   },
+   "owner_flag": false
+  },
+  {
+   "repo": "openai/math",
+   "error": "HTTP Error 401: Unauthorized",
+   "control": true,
+   "owner": {
+    "login": "openai",
+    "type": "Organization",
+    "account_age_days": 4028.7,
+    "followers": 138472,
+    "public_repos": 276
+   },
+   "owner_flag": false
+  }
+ ],
+ "hf_diff": {
+  "prev": 50,
+  "now": 50,
+  "kept": 48,
+  "entered": [
+   "fishaudio/drama-3",
+   "openbmb/MiniCPM-V-4.7-35B-A3B-gguf"
+  ],
+  "left": [
+   "Alissonerdx/BFS-Best-Face-Swap",
+   "Venastine-Research/Xing4.0-29B-A4B-GGUF"
+  ]
+ },
+ "hf_trending": [
+  {
+   "id": "google/embeddinggemma-2",
+   "likes": 2172,
+   "downloads": 135175,
+   "createdAt": "2026-09-14T14:53:42.000Z"
+  },
+  {
+   "id": "jialinyyzz/humanizer",
+   "likes": 1575,
+   "downloads": 65616,
+   "createdAt": "2026-09-11T05:00:16.000Z"
+  },
+  {
+   "id": "Qwen/Qwen-Image-2.1-Turbo",
+   "likes": 740,
+   "downloads": 12704,
+   "createdAt": "2026-10-09T04:50:01.000Z"
+  },
+  {
+   "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+   "likes": 4246,
+   "downloads": 2315771,
+   "createdAt": "2026-09-20T15:51:13.000Z"
+  },
+  {
+   "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
+   "likes": 528,
+   "downloads": 4157,
+   "createdAt": "2026-10-07T07:07:30.000Z"
+  },
+  {
+   "id": "autotrust/JEV-35B",
+   "likes": 712,
+   "downloads": 27970,
+   "createdAt": "2026-10-11T01:22:03.000Z"
+  },
+  {
+   "id": "Lightricks/LTX-2.5",
+   "likes": 7710,
+   "downloads": 1823507,
+   "createdAt": "2026-07-23T07:55:24.000Z"
+  },
+  {
+   "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
+   "likes": 441,
+   "downloads": 311969,
+   "createdAt": "2026-10-08T01:47:26.000Z"
+  },
+  {
+   "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+   "likes": 433,
+   "downloads": 258320,
+   "createdAt": "2026-10-09T16:30:48.000Z"
+  },
+  {
+   "id": "LiquidAI/d1-3B",
+   "likes": 387,
+   "downloads": 14854,
+   "createdAt": "2026-10-05T09:55:28.000Z"
+  },
+  {
+   "id": "Cloudflare/clef",
+   "likes": 2155,
+   "downloads": 18304,
+   "createdAt": "2026-09-30T21:15:35.000Z"
+  },
+  {
+   "id": "Qwen/Qwen3.8-27B",
+   "likes": 17664,
+   "downloads": 7221327,
+   "createdAt": "2026-08-05T08:22:59.000Z"
+  },
+  {
+   "id": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+   "likes": 319,
+   "downloads": 114351,
+   "createdAt": "2026-10-04T10:44:11.000Z"
+  },
+  {
+   "id": "baidu/Unlimited-OCR",
+   "likes": 4629,
+   "downloads": 1154213,
+   "createdAt": "2026-06-19T09:40:33.000Z"
+  },
+  {
+   "id": "convaiinnovations/laya",
+   "likes": 5590,
+   "downloads": 47754,
+   "createdAt": "2026-09-18T05:05:55.000Z"
+  },
+  {
+   "id": "speridlabs/iris-3b",
+   "likes": 241,
+   "downloads": 1132,
+   "createdAt": "2026-10-05T14:51:15.000Z"
+  },
+  {
+   "id": "LiquidAI/LFM2.5-24B-A2B",
+   "likes": 238,
+   "downloads": 4067,
+   "createdAt": "2026-10-12T05:35:46.000Z"
+  },
+  {
+   "id": "openbmb/MiniCPM-V-4.7-1B",
+   "likes": 317,
+   "downloads": 2543,
+   "createdAt": "2026-10-06T17:40:13.000Z"
+  },
+  {
+   "id": "Cactus-Compute/whistle",
+   "likes": 387,
+   "downloads": 23589,
+   "createdAt": "2026-09-30T17:13:26.000Z"
+  },
+  {
+   "id": "fishaudio/drama-3",
+   "likes": 210,
+   "downloads": 839,
+   "createdAt": "2026-10-01T04:34:57.000Z"
+  },
+  {
+   "id": "autotrust/JEV-35B-NVFP4",
+   "likes": 304,
+   "downloads": 33343,
+   "createdAt": "2026-10-11T03:05:28.000Z"
+  },
+  {
+   "id": "facebook/sam3",
+   "likes": 4284,
+   "downloads": 2019842,
+   "createdAt": "2025-11-07T05:17:48.000Z"
+  },
+  {
+   "id": "pablodawson/MiniMax-H3-360-Orbit-LoRA",
+   "likes": 435,
+   "downloads": 16890,
+   "createdAt": "2026-09-27T04:05:33.000Z"
+  },
+  {
+   "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+   "likes": 1750,
+   "downloads": 1900731,
+   "createdAt": "2026-09-01T07:01:09.000Z"
+  },
+  {
+   "id": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+   "likes": 863,
+   "downloads": 4894108,
+   "createdAt": "2026-09-07T09:41:37.000Z"
+  },
+  {
+   "id": "canberkkkkkk/ema-lightning",
+   "likes": 405,
+   "downloads": 24982,
+   "createdAt": "2026-10-01T14:18:49.000Z"
+  },
+  {
+   "id": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+   "likes": 849,
+   "downloads": 692812,
+   "createdAt": "2026-08-26T11:15:13.000Z"
+  },
+  {
+   "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "likes": 4485,
+   "downloads": 1262357,
+   "createdAt": "2026-09-10T02:17:58.000Z"
+  },
+  {
+   "id": "Cloudflare/clef-flash",
+   "likes": 814,
+   "downloads": 26636,
+   "createdAt": "2026-09-30T21:15:36.000Z"
+  },
+  {
+   "id": "Qwen/Qwen3.8-Flash-Next",
+   "likes": 6187,
+   "downloads": 2185644,
+   "createdAt": "2026-08-24T08:24:59.000Z"
+  },
+  {
+   "id": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+   "likes": 628,
+   "downloads": 78156,
+   "createdAt": "2026-09-10T21:02:04.000Z"
+  },
+  {
+   "id": "Qwen/Qwen-Image-2.1",
+   "likes": 3287,
+   "downloads": 153537,
+   "createdAt": "2026-09-14T03:47:26.000Z"
+  },
+  {
+   "id": "Aleph-Alpha/Kolibri-1",
+   "likes": 931,
+   "downloads": 16060,
+   "createdAt": "2026-10-02T05:54:02.000Z"
+  },
+  {
+   "id": "vllm-sr/d3",
+   "likes": 147,
+   "downloads": 1805,
+   "createdAt": "2026-10-10T09:38:30.000Z"
+  },
+  {
+   "id": "unsloth/Qwen3.8-27B-GGUF",
+   "likes": 5080,
+   "downloads": 6634241,
+   "createdAt": "2026-08-13T08:28:40.000Z"
+  },
+  {
+   "id": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+   "likes": 2197,
+   "downloads": 1453035,
+   "createdAt": "2026-08-28T18:38:03.000Z"
+  },
+  {
+   "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+   "likes": 2685,
+   "downloads": 4786442,
+   "createdAt": "2026-09-16T23:40:56.000Z"
+  },
+  {
+   "id": "unsloth/embeddinggemma-2-GGUF",
+   "likes": 304,
+   "downloads": 88945,
+   "createdAt": "2026-10-06T10:58:50.000Z"
+  },
+  {
+   "id": "Comfy-Org/Qwen-Image-2.1",
+   "likes": 1108,
+   "downloads": 9798941,
+   "createdAt": "2026-09-15T19:41:09.000Z"
+  },
+  {
+   "id": "pyannote/speaker-diarization-community-1",
+   "likes": 2881,
+   "downloads": 5457659,
+   "createdAt": "2025-04-15T21:31:35.000Z"
+  },
+  {
+   "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+   "likes": 126,
+   "downloads": 1783,
+   "createdAt": "2026-09-20T10:52:55.000Z"
+  },
+  {
+   "id": "autotrust/GLM5.3-Flash-E192-DGX-Spark",
+   "likes": 177,
+   "downloads": 6016,
+   "createdAt": "2026-10-09T23:02:37.000Z"
+  },
+  {
+   "id": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+   "likes": 254,
+   "downloads": 1323159,
+   "createdAt": "2026-10-02T03:42:33.000Z"
+  },
+  {
+   "id": "LiquidAI/d1-omni-600M",
+   "likes": 120,
+   "downloads": 12388,
+   "createdAt": "2026-10-05T17:18:48.000Z"
+  },
+  {
+   "id": "Cloudflare/clef-omni",
+   "likes": 118,
+   "downloads": 1949,
+   "createdAt": "2026-10-09T04:10:22.000Z"
+  },
+  {
+   "id": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+   "likes": 1811,
+   "downloads": 2349014,
+   "createdAt": "2026-08-17T15:15:19.000Z"
+  },
+  {
+   "id": "MiniMaxAI/MiniMax-H3",
+   "likes": 6129,
+   "downloads": 3765471,
+   "createdAt": "2026-07-28T10:45:18.000Z"
+  },
+  {
+   "id": "perplexity-ai/pplx-decider-v1.1-27b",
+   "likes": 144,
+   "downloads": 3154,
+   "createdAt": "2026-10-05T12:32:27.000Z"
+  },
+  {
+   "id": "akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+   "likes": 452,
+   "downloads": 52021,
+   "createdAt": "2026-09-25T08:14:15.000Z"
+  },
+  {
+   "id": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+   "likes": 103,
+   "downloads": 46970,
+   "createdAt": "2026-10-06T18:05:14.000Z"
+  }
+ ],
+ "core": {
+  "used": 0,
+  "remaining": null,
+  "stopped": false
+ },
+ "stargazers_endpoint": "401 Unauthorized keyless, both media types; owner account age used instead"
+}

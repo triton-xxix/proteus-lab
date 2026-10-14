@@ -1,5 +1,5 @@
 {
- "next_id": 150,
+ "next_id": 151,
  "items": [
   {
    "id": "P-0001",
@@ -3338,22 +3338,25 @@
    "after": "2026-10-14",
    "est_minutes": 20,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T12:37:25+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T12:42:26+0100",
+   "note": "Measured 34 of the 54 survive against the shot of 30: 48 still 200+ a day tonight (4 gone from the search, 2 fell below), 0 forks, owner cap takes 12 (all storytold) to 36, owner-account-age under 60 days takes 2 more (nvidia-macos-driver owner 19 d, overdrive-releases owner 2 d). The planned stargazer-age check is closed keyless: GET /repos/x/y/stargazers returns 401 unauthenticated on both media types, 12 calls wasted finding out; owner age is the proxy used, and it clears 8 of the 10 that looked farmed by name. Tonight 53 flagged, 41 after the cap, 5 new. HF trending 48 of 50 kept, 2 in 2 out. Next: deepen (queued for 28 Oct: the Trends scoring step on the 34).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0145"
+   ],
+   "minutes": 5,
+   "calls": 24,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "30 of the 54 survive tonight (still 200+ stars a day, one repo per owner, not fork, not flagged by stargazer age)",
-    "at": "2026-10-14T12:38:27+0100"
+    "at": "2026-10-14T12:38:27+0100",
+    "hit": true
    }
   },
   {
@@ -3423,6 +3426,26 @@
    "needs": "",
    "after": "",
    "est_minutes": 20,
+   "added": "2026-10-14",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0150",
+   "title": "new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-10-28",
+   "est_minutes": 25,
    "added": "2026-10-14",
    "status": "open",
    "attempts": 0,
