@@ -3405,9 +3405,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T23:44:41+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3415,7 +3415,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "referee model minus plain 1X2 Brier within plus or minus 0.001 out of sample, no gain",
+    "at": "2026-10-14T23:45:08+0100"
+   }
   },
   {
    "id": "P-0148",
