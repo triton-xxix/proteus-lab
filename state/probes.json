@@ -3653,22 +3653,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T23:43:59+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T23:44:35+0100",
+   "note": "Measured: on 200 synthetic calls with planted truth, the stdlib checker recovers all 4 opener scripts through paraphrase (difflib 0.75) and the planted best hour (10:00, 44% on 27 dials v 35% planted); funnel 20.5% pickup, 29% to 60 s, 33% booked, 75% show. The planted 2x better opener is invisible: 12 conversations in all. Shot said 4 openers and the hour: hit. Synthetic data only. Next: close (first thing to run on a real call log).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0157"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "recovers the 4 planted opener scripts within 1 and the planted best pickup hour",
-    "at": "2026-10-14T23:44:04+0100"
+    "at": "2026-10-14T23:44:04+0100",
+    "hit": true
    }
   },
   {
