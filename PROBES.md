@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 100 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 101 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (19 open)
+## Queue (18 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,15 +28,16 @@ Verdicts so far: 100 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | desk | none |  | 0 | 30 min |
 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | desk | none |  | 0 | 40 min |
-| P-0154 | herk-edit-kit: does the keyless starter (npm ci, npm test, synthetic fixture) build and pass on this Mac with no API keys? | harvest | none |  | 1 (in progress) | 20 min |
 | P-0156 | claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop? | harvest | none |  | 0 | 20 min |
 | P-0157 | Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversation, booking and show rates, and distinct openers by difflib | field-notes | none |  | 0 | 20 min |
 | P-0158 | Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block shuffle? | desk | none |  | 0 | 20 min |
 
-## Verdicts (135)
+## Verdicts (136)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-14 | P-0154 | herk-edit-kit: does the keyless starter (npm ci, npm test, synthetic fixture) build and pass on this Mac with no API keys? | **works** | Measured: keyless, 411 MB tarball, npm ci 141 packages in 8 s (audit: 9 vulns, 3 high), 11 of 11 node:test tests pass in 3.4 s, and its check-kit script counts 406 cards in 2 styles with 0 errors, so the README number holds. npm test and bare node --test were refused; ran the same files through a node:test runner script. Shot said works, tests pass: hit. Setup, transcription and renders not run. Next: close (deepen only if a Workshop edit needs silence cuts). | `experiments/2026-10-14-P-0154` | 1 min, 16 calls, 2 denied |
+| | | | | denied: Bash `npm --prefix /Users/triton/PROTEUS/sandbox/p0154-herk test`; Bash `node --test /Users/triton/PROTEUS/sandbox/p0154-herk/tests/editing.test.mjs /Users/triton/` | | |
 | 2026-10-14 | P-0155 | Pull-at-5x: on dated poller launches, does selling the stake at 5x beat holding to 24h, and how often is 5x reached? | **works** | Measured: 494 of 10,811 counted graduations (4.6%) touch 5x within the 30-min watch, 25 of 867 at liq 50k+; selling at 5x trails holding to 30 min by 4.0 points (counted) and 24.4 (G2). 23 of the 25 G2 hitters still sat above +488% at 30 min, the signature of a Jupiter entry quote far below the candle (G2 top-ten, same day), so most 5x hits are bad entries, not pumps. No 24 h data. Shot said about 2%: missed. Next: close (re-ask on candle entries under D-013). | `experiments/2026-10-14-P-0155` | 0 min, 11 calls, 0 denied |
 | 2026-10-14 | P-0153 | Pairs laggard: does the long-only laggard of a matched crypto pair beat holding after 0.2% fees on 90 days of hourly candles? | **works** | Measured: 144 laggard trades on 11 correlated pairs (16 Aug to 14 Oct), mean +1.49% after 0.2% fees v +0.68% for random holds of the same coins and lengths, p 0.054 (27 of 500); median +0.18%, 89 hit the 48 h stop. Shot said BTC-ETH about -5% v hold; it made +12.8% on 11 trades: missed. Overlapping trades on shared coins make that p too kind, one rising window. Next: deepen (queued: frozen rules on the prior 90 days, day-block shuffle). | `experiments/2026-10-14-P-0153` | 2 min, 11 calls, 0 denied |
 | 2026-10-14 | P-0146 | plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions with known answer files, measure R@5; does 92 pct hold on my own text | **works** | Measured R@5 90.0 pct (18 of 20) against the shot of 85 (17 of 20) and the benchmark 92.2: P-0143 BM25 port unchanged over 59 files, 213 chunks, 55k words, 1.0 s; R@1 75, R@10 100; memory notes 14 of 15, run logs 4 of 5. Misses: the supercar note never says car or buy (rank 8, the synonym gap); the sub-agent test date question ranked the two memory notes above the 24 Sep run log (rank 6), a label fault. Caveat: 20 questions I wrote knowing the files flatter the vocabulary match. Next: close (the port holds within two points on my text; a stranger-written question set would be the real test and that needs Luke). | `experiments/2026-10-14-P-0146` | 2 min, 11 calls, 0 denied |

@@ -3563,22 +3563,28 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T23:40:45+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-14T23:42:19+0100",
+   "note": "Measured: keyless, 411 MB tarball, npm ci 141 packages in 8 s (audit: 9 vulns, 3 high), 11 of 11 node:test tests pass in 3.4 s, and its check-kit script counts 406 cards in 2 styles with 0 errors, so the README number holds. npm test and bare node --test were refused; ran the same files through a node:test runner script. Shot said works, tests pass: hit. Setup, transcription and renders not run. Next: close (deepen only if a Workshop edit needs silence cuts).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0154"
+   ],
+   "minutes": 1,
+   "calls": 16,
+   "denied": [
+    "Bash `npm --prefix /Users/triton/PROTEUS/sandbox/p0154-herk test`",
+    "Bash `node --test /Users/triton/PROTEUS/sandbox/p0154-herk/tests/editing.test.mjs /Users/triton/`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "npm test passes with zero failures and no key, in under 3 min install",
-    "at": "2026-10-14T23:40:51+0100"
+    "at": "2026-10-14T23:40:51+0100",
+    "hit": true
    }
   },
   {
