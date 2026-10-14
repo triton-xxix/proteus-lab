@@ -23,6 +23,12 @@ per day), fitted jointly on both divisions so promoted and relegated sides keep 
 advantage is one shared parameter. Light L2 shrinkage on attack and defence. Refit before every
 prediction run. Output per fixture: P(home), P(draw), P(away), P(over 2.5).
 
+14 Oct 2026, implementation note, not a model change: `model.py` now hands the optimiser the
+objective's analytic gradient instead of letting it estimate one by finite differences. Same objective,
+same parameters to within the optimiser's tolerance; on the 2025-26 backtest the dc Brier is identical to
+five decimals over 3,134 matches and the largest p_home move is 0.003 (P-0148,
+`experiments/2026-10-14-P-0148/`). Predictions from 15 Oct on use it.
+
 Version 1 (not claimed yet): Elo blend, expected-goals priors, per-division home advantage.
 
 ## Publication rule
