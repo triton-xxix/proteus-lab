@@ -121,3 +121,28 @@ Jupiter's quote, so the gap is not the entry price on most trades; it sits in th
 which the minute closes do not reproduce. The book's watcher keeps recording; G2 is no longer a
 KEEP and nothing graduates from it. The job finished at about 00:40 on 11 Oct, after the night's
 probe verdict had already called P-0100 blocked on time; that verdict was wrong about the time.
+
+## Amendment, 14 Oct 2026 17:25 BST, on Luke's word: second reload, the job survives reboots
+
+The watcher died in the Mac's shutdown at 23:29 on 12 Oct (reboot 23:35) and did not come back,
+because the job was loaded from this folder and nothing reloaded it. It had been due to stop itself at
+22:33Z on 14 Oct anyway, so the second window got five of its seven days (3 Oct 12:00Z to 12 Oct
+22:29Z). Luke said: fix the watcher now. So, against the one-reload line and the "nothing written to
+`~/Library`" line above, both overridden by him today:
+
+- The plist is also installed under the user's LaunchAgents folder and bootstrapped from there, so
+  launchd reloads it at every login. `watcher.py unload()` still boots it out by label.
+- START is reset for a fresh 7-day window from this reload; a second `reload` event in `events.jsonl`
+  records the old START.
+- Kill and keep lines, the $50k floor and the fill rule are untouched. G2 stays "KEEP withdrawn,
+  nothing graduates".
+
+**What the top ten are (experiments/2026-10-14-g2-top10, 14 Oct).** At 623 counted the ten best
+trades carry 86 percent of the book's P&L (+£38 per £100 with them, +£5 without). Seven of the ten
+were in P-0100's 403: on each, Jupiter's quoted entry sat 12 to 59 times below the pool's own
+1-minute candle at that minute, and on candles those seven closed between -2 and +4 percent at the
+time stop. The "+5,800 percent" winner is a quote that was wrong at entry, not a token that rose.
+Nothing known at entry separates the ten from the rest (median liquidity $150k against $186k,
+latency identical). So this window's trades are scored two ways from the start: Jupiter quotes as
+before (comparable with window one) and the P-0100 candle method as the primary read. Pre-registered
+here before the first trade of the window; DUE.md carries the date.

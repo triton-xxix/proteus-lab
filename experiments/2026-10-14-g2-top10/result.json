@@ -1,0 +1,158 @@
+{
+ "counted": 623,
+ "expectancy": 38.31,
+ "expectancy_without_top10": 5.29,
+ "top10_share_of_total_pnl": 0.86,
+ "top": [
+  {
+   "mint": "5cwuXtiQybj7TsAd2jDimXMfMkKjMS7f3RmVHJ8Fpump",
+   "P": 5799.8,
+   "max_move_pct": 6102.0,
+   "liq_usd": 606409,
+   "latency_s": 8.0,
+   "entered": "Tue 22:58",
+   "n_samples": 121
+  },
+  {
+   "mint": "285gN3LyQ6BRjJShjDBJ8ksAmTTZL2GgwEmraPnWpump",
+   "P": 2698.05,
+   "max_move_pct": 2817.0,
+   "liq_usd": 293105,
+   "latency_s": 8.1,
+   "entered": "Sun 20:27",
+   "n_samples": 122
+  },
+  {
+   "mint": "xyubSXqAys4VDyFFP92BtZFt2LBSm6h6hgj47Mupump",
+   "P": 2328.35,
+   "max_move_pct": 2417.0,
+   "liq_usd": 290940,
+   "latency_s": 7.2,
+   "entered": "Wed 14:52",
+   "n_samples": 2
+  },
+  {
+   "mint": "vMLycAbqHnyh6vKo9FeMqT7nGJecb9DS2XKHv13pump",
+   "P": 2217.63,
+   "max_move_pct": 2310.0,
+   "liq_usd": 221730,
+   "latency_s": 7.8,
+   "entered": "Fri 14:35",
+   "n_samples": 121
+  },
+  {
+   "mint": "E7GozZ1XsP9JEqFbT3DP7z9mf17yaBtzkEVWiHqJpump",
+   "P": 1697.62,
+   "max_move_pct": 1773.0,
+   "liq_usd": 172965,
+   "latency_s": 7.7,
+   "entered": "Mon 10:54",
+   "n_samples": 122
+  },
+  {
+   "mint": "idiVBfkBJ49HfN6YfZzcUTdRoEXJQEB9yGfA4skpump",
+   "P": 1265.49,
+   "max_move_pct": 1322.0,
+   "liq_usd": 123992,
+   "latency_s": 8.3,
+   "entered": "Wed 13:07",
+   "n_samples": 2
+  },
+  {
+   "mint": "7mqarxd1sKi7DqH1yvQYftWwpMZJrtgV7ASd6kdpump",
+   "P": 1172.85,
+   "max_move_pct": 1249.0,
+   "liq_usd": 126729,
+   "latency_s": 8.2,
+   "entered": "Mon 01:15",
+   "n_samples": 121
+  },
+  {
+   "mint": "8YErxbTqHBw8h9Rqh1scdH27TYbAHUtgoUQUWyWppump",
+   "P": 1151.46,
+   "max_move_pct": 1264.0,
+   "liq_usd": 125438,
+   "latency_s": 7.7,
+   "entered": "Tue 19:52",
+   "n_samples": 121
+  },
+  {
+   "mint": "94F9U1K2wh24cVbzRYhFzY52gYqqqcjJQ7HoFeBTpump",
+   "P": 1146.06,
+   "max_move_pct": 1203.0,
+   "liq_usd": 115195,
+   "latency_s": 3.9,
+   "entered": "Sat 16:55",
+   "n_samples": 121
+  },
+  {
+   "mint": "BXSTh3ggGTKMG6r7wAT3zpBVATcgqTwJWY6FCuGpump",
+   "P": 1145.46,
+   "max_move_pct": 1218.0,
+   "liq_usd": 122861,
+   "latency_s": 7.7,
+   "entered": "Thu 00:02",
+   "n_samples": 121
+  }
+ ],
+ "medians": {
+  "top10": {
+   "liq": 149847.43,
+   "latency": 7.75
+  },
+  "rest": {
+   "liq": 186062.03,
+   "latency": 7.8
+  }
+ },
+ "winners_over_plus50": 33,
+ "losers_under_minus50": 66,
+ "liq_buckets": {
+  "50k-75k": {
+   "n": 76,
+   "expectancy": 71.54,
+   "top10_in": 0
+  },
+  "75k-100k": {
+   "n": 71,
+   "expectancy": 29.03,
+   "top10_in": 0
+  },
+  "100k-150k": {
+   "n": 119,
+   "expectancy": 43.0,
+   "top10_in": 5
+  },
+  "150k-1000000k": {
+   "n": 357,
+   "expectancy": 31.52,
+   "top10_in": 5
+  }
+ },
+ "utc_4h_buckets": {
+  "00-04Z": {
+   "n": 134,
+   "expectancy": 22.96
+  },
+  "04-08Z": {
+   "n": 111,
+   "expectancy": 1.2
+  },
+  "08-12Z": {
+   "n": 77,
+   "expectancy": 13.09
+  },
+  "12-16Z": {
+   "n": 110,
+   "expectancy": 72.46
+  },
+  "16-20Z": {
+   "n": 101,
+   "expectancy": 31.18
+  },
+  "20-24Z": {
+   "n": 90,
+   "expectancy": 94.77
+  }
+ }
+}
