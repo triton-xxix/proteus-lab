@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 104 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 105 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,16 +23,16 @@ Verdicts so far: 104 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
-| P-0148 | Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier | desk | none |  | 1 (in progress) | 30 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | desk | none |  | 0 | 30 min |
 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | desk | none |  | 0 | 40 min |
 | P-0158 | Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block shuffle? | desk | none |  | 0 | 20 min |
 
-## Verdicts (139)
+## Verdicts (140)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-14 | P-0148 | Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier | **works** | Measured: on the 2025-26 walk-forward (3,134 matches, all eight groups) the analytic-gradient fit gives dc Brier 0.60528, identical to the finite-difference fit to 5 decimals; largest p_home move 0.003; pool weight against the close 0.00 for both; 685 s to 30 s. Shot said under 0.0005: hit. Switched pitch/model.py (4e21eb6) with a dated RULES.md implementation note; live from 15 Oct. Next: close. | `experiments/2026-10-14-P-0148` | 6 min, 22 calls, 0 denied |
 | 2026-10-14 | P-0147 | Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and over-2.5 out of sample against the closing line on E0, E1, SC0 2022 on; does it beat the plain model | **works** | Measured: a per-referee home offset (L2 2.0) makes the Dixon-Coles worse out of sample over 3,664 E0, E1, SC0 matches since Aug 2023: 1X2 Brier +0.0046 (se 0.0013), over-2.5 +0.0028 (se 0.0009), worse in all three divisions. Plain trails Pinnacle close by 0.024 on the 2,818 rows with one. Shot said within 0.001: missed on size. Next: close (referees belong on cards markets). | `experiments/2026-10-14-P-0147` | 1 min, 17 calls, 0 denied |
 | 2026-10-14 | P-0157 | Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversation, booking and show rates, and distinct openers by difflib | **works** | Measured: on 200 synthetic calls with planted truth, the stdlib checker recovers all 4 opener scripts through paraphrase (difflib 0.75) and the planted best hour (10:00, 44% on 27 dials v 35% planted); funnel 20.5% pickup, 29% to 60 s, 33% booked, 75% show. The planted 2x better opener is invisible: 12 conversations in all. Shot said 4 openers and the hour: hit. Synthetic data only. Next: close (first thing to run on a real call log). | `experiments/2026-10-14-P-0157` | 0 min, 6 calls, 0 denied |
 | 2026-10-14 | P-0156 | claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop? | **works** | Measured: 303 of 303 core tests pass keyless in 20.6 s (npm ci 48 packages, 2 s); loop-detective opens a case on the third identical pytest failure, but not when each message carries a different timestamp (free-text times are not normalised) and never for a hook denial, which it classes unknown, so a verbatim retry of a denied call is invisible. Shot said suite passes and 3x flagged: hit. npm test refused; ran its own test-core.mjs through a chdir wrapper. Next: close. | `experiments/2026-10-14-P-0156` | 1 min, 20 calls, 0 denied |

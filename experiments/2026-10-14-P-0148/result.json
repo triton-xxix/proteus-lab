@@ -1,0 +1,39 @@
+{
+ "matches": 3134,
+ "with_close": 3134,
+ "brier_fd": 0.60528,
+ "brier_grad": 0.60528,
+ "max_abs_dp_home": 0.0031,
+ "mean_abs_dp_home": 3e-05,
+ "close_rows": {
+  "fd": 0.60528,
+  "grad": 0.60528,
+  "market": 0.5853
+ },
+ "pool_weight_model": {
+  "fd": 0.0,
+  "grad": 0.0
+ },
+ "seconds": {
+  "fd": {
+   "ENG": 264.0,
+   "ESP": 73.4,
+   "GER": 56.5,
+   "ITA": 76.8,
+   "FRA": 63.7,
+   "NED": 62.8,
+   "POR": 69.6,
+   "SCO": 18.1
+  },
+  "grad": {
+   "ENG": 7.6,
+   "ESP": 3.7,
+   "GER": 3.3,
+   "ITA": 4.1,
+   "FRA": 3.5,
+   "NED": 3.1,
+   "POR": 3.3,
+   "SCO": 1.7
+  }
+ }
+}
