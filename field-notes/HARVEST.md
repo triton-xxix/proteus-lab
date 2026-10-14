@@ -6,19 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-253 judged over 17 harvest days, 171 kept, 55 testable, 53 queued as probes, 48 with a probe verdict.
+267 judged over 18 harvest days, 181 kept, 60 testable, 57 queued as probes, 51 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0266 | 2026-10-14 | github | [nateherkai/roast-room: Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Marte](https://github.com/nateherkai/roast-room) | both | tools-for-strangers | no: The useful part needs many live Claude calls and is not keyl |  |
+| H-0265 | 2026-10-14 | hn | [Show HN: I wrote an email app that accepts only one sender per inbox](https://clova.email/) | both | tools-for-strangers | no: It requires signing up for the service and owning a domain. |  |
+| H-0264 | 2026-10-14 | vault | [score the 20-minute filter set on a dated cohort](https://www.instagram.com/reel/DcjuRbTyUPV/) | mechanism | desk:grinder | yes |  |
+| H-0262 | 2026-10-14 | arxiv | [SEAR: Self-Evolving Agentic Robotics](https://arxiv.org/abs/2610.18792) | mechanism | mechanism-hunting | no: It needs robot simulators and frontier model budgets across  |  |
+| H-0261 | 2026-10-14 | github | [YeonwooSung/my-claude-code-mods: Custom Claude Code Mods that I need](https://github.com/YeonwooSung/my-claude-code-mods) | mechanism | tools-for-strangers | yes | P-0156 |
+| H-0259 | 2026-10-14 | vault | [pull the stake at 5x versus holding](https://www.instagram.com/reel/DecmMdSuofw/) | mechanism | desk:grinder | yes | P-0155 |
+| H-0257 | 2026-10-14 | arxiv | [ChunkAct: Action Chunking for Agentic Robotics](https://arxiv.org/abs/2610.18874) | mechanism | tech | no: It needs the LIBERO-Pro robot simulator and a VLA stack, whi |  |
+| H-0256 | 2026-10-14 | github | [nateherkai/herk-edit-kit: Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shor](https://github.com/nateherkai/herk-edit-kit) | mechanism | tools-for-strangers | yes | P-0154 |
+| H-0255 | 2026-10-14 | hn | [Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine](https://pulseos.finance) | mechanism | tools-for-strangers | no: It needs a local model runtime and the weights, and there is |  |
+| H-0254 | 2026-10-14 | vault | [crypto spot pairs laggard check](https://www.instagram.com/reel/DeaHN_lJJkB/) | mechanism | mechanism-hunting | yes | P-0153 |
 | H-0252 | 2026-10-13 | vault | [Per-post CPM tracked per account feeding back into what gets made next]() | mechanism | tools-for-strangers | no: It needs live posts with real view counts from owned account |  |
-| H-0250 | 2026-10-13 | youtube | [Build a Simple Expected Goals Model with Machine Learning and Python](https://www.youtube.com/watch?v=GsfXAzfvJVM) | mechanism | desk:pitch | yes | P-0144 |
+| H-0250 | 2026-10-13 | youtube | [Build a Simple Expected Goals Model with Machine Learning and Python](https://www.youtube.com/watch?v=GsfXAzfvJVM) | mechanism | desk:pitch | yes | P-0144 **works** |
 | H-0249 | 2026-10-13 | arxiv | [SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability](https://arxiv.org/abs/2610.13461) | mechanism | mechanism-hunting | no: Needs a Lean toolchain and the released problem set, and a m |  |
 | H-0246 | 2026-10-13 | vault | [Flat monthly editing retainer for businesses already producing content]() | mechanism | tools-for-strangers | no: The verdict is whether a client pays, which needs outreach a |  |
-| H-0245 | 2026-10-13 | awesome | [plur-ai/plur (new in awesome-claude-code)](https://github.com/plur-ai/plur) | mechanism | tech | yes | P-0143 |
+| H-0245 | 2026-10-13 | awesome | [plur-ai/plur (new in awesome-claude-code)](https://github.com/plur-ai/plur) | mechanism | tech | yes | P-0143 **works** |
 | H-0243 | 2026-10-13 | arxiv | [ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary](https://arxiv.org/abs/2610.13651) | mechanism | tools-for-strangers | no: The framework code is not confirmed released and a faithful  |  |
-| H-0242 | 2026-10-13 | github | [zhuyansen/new-term-radar: Daily radar for new AI terms: names of new models, products and ](https://github.com/zhuyansen/new-term-radar) | mechanism | mechanism-hunting | yes | P-0142 |
+| H-0242 | 2026-10-13 | github | [zhuyansen/new-term-radar: Daily radar for new AI terms: names of new models, products and ](https://github.com/zhuyansen/new-term-radar) | mechanism | mechanism-hunting | yes | P-0142 **works** |
 | H-0241 | 2026-10-13 | hn | [How to engineer an AI harness for game development](https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code) | mechanism | game-bots | no: It is a working practice across a whole project and cannot b |  |
 | H-0240 | 2026-10-13 | vault | [service x city landing pages]() | mechanism | tools-for-strangers | no: A verdict needs a live indexed site and weeks of ranking dat |  |
 | H-0238 | 2026-10-13 | github | [Atoll92/agent-standup: Your Claude Code, Codex and Mistral Vibe sessions as a live, animat](https://github.com/Atoll92/agent-standup) | mechanism | tools-for-strangers | yes | P-0138 **works** |
@@ -185,6 +195,123 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0266 nateherkai/roast-room: Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Martell, Gino Wickman, Buffett) deb
+2026-10-14, github, https://github.com/nateherkai/roast-room
+
+- **Mechanism:** Each of seven advisors is a Claude Code sub-agent seeded with a persona built from that person's public letters, essays and talks. A chair agent collects the decision and numbers, runs rounds of debate, then scores a verdict; a small local Node app shows the turns around a table and exports a PDF. Everything runs inside the user's Claude plan.
+- **Claim:** Seven persona advisors debate a business decision and produce a scored verdict and PDF.
+- **Testable:** no. The useful part needs many live Claude calls and is not keyless; running only the viewer tests nothing about the idea. Needs: Claude plan usage for sub-agent runs..
+- **Idea on its own:** needs-a-run. Persona debates look rigorous but may only echo the user's lean; a comparison against a single plain prompt on the same decisions would show whether they add value.
+- **How it would be done:** Write persona prompts from public source text, run rounds with a chair that forces disagreement, and have a scorer produce a verdict. To judge the value, run the council and a single baseline prompt over the same set of decisions with known outcomes. A human who has run the business still decides, as the personas have no stake.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** roast-room https://github.com/nateherkai/roast-room (The council prompts and local viewer.)
+- **Field Notes line:** Seven persona sub-agents argue a business decision and a chair scores it; the open question is whether the personas add anything over one prompt.
+
+### H-0265 Show HN: I wrote an email app that accepts only one sender per inbox
+2026-10-14, hn, https://clova.email/
+
+- **Mechanism:** A catch-all mail domain accepts any address at receive time. The first sender (domain, or exact address for webmail providers) to write to an address becomes its only allowed sender, and the service rejects all later mail from anyone else. Prefix inboxes let you invent suffixes on the fly, each locking to its first writer, and temporary inboxes expire and bounce. A bounce for unknown senders is what a spammer's list-cleaning sees, and an MCP server lets an AI read the inboxes.
+- **Claim:** Infinite self-creating inboxes, each locked to one sender, so leaked addresses stop receiving spam.
+- **Testable:** no. It requires signing up for the service and owning a domain. Needs: An account on the service and a domain with MX records..
+- **Idea on its own:** sound. First-sender locking on a catch-all domain is a simple, working way to trace leaks and kill spam per address.
+- **How it would be done:** Run a catch-all domain with a mail server that records the first envelope sender per recipient and rejects others at SMTP time. Give each service a unique suffix. Self-hosting is a few hours with an existing open source mail server and a rule script.
+- **To fetch:** Postfix https://www.postfix.org/ (Self-hosted SMTP with policy hooks to implement first-sender locking.)
+- **Missing:** A domain and a mail host.
+- **Field Notes line:** Every email address you invent locks to the first sender who uses it, so a leak shows exactly who sold you out.
+
+### H-0264 score the 20-minute filter set on a dated cohort
+2026-10-14, vault, https://www.instagram.com/reel/DcjuRbTyUPV/
+
+- **Mechanism:** A screener filter set is applied at minute 20 of a pump.fun coin's life: age 20 minutes, liquidity 10k, volume 15k, market cap 20k. Coins that pass are bought and the claim is that they tend to be higher later. The test is a cohort: record who passes at minute 20 and compare their price at 24 hours to the whole launch cohort.
+- **Claim:** The reel says coins passing these four floors at minute 20 are the ones worth buying.
+- **Testable:** yes. Of pump.fun coins in the poller data passing all four filters at minute 20, what percentage are above their minute-20 price at 24 hours, versus the same percentage for all coins? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. Floors on size only select survivors; whether they add anything over the base rate is a counting question the poller data answers.
+- **How it would be done:** Query the poller's snapshots for each launch at about minute 20 and mark the ones that pass all four filters. Look up the price at 24 hours for each and compute the share higher, the median return, and the same figures for the unfiltered cohort and a random sample of the same size. Report sample size and confidence interval and count coins with no 24h data as losses.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), launchd long-running pollers, backtest-with-luck-test skill
+- **Field Notes line:** Four screener floors at minute 20 get scored on a dated cohort: what share of passers are higher a day later, against all launches.
+
+### H-0262 SEAR: Self-Evolving Agentic Robotics
+2026-10-14, arxiv, https://arxiv.org/abs/2610.18792
+
+- **Mechanism:** SEAR runs LLM agents in three modes: code-as-policy, agent-as-policy and auto-research fine-tuning. Its benchmark adds controls that separate retained experience from repeated attempts, familiar tasks, privileged state, larger budgets and luck. Findings are measured across seven models and 330 simulated tasks.
+- **Claim:** On easier tasks, re-rolling short attempts does as well as accumulating experience; shared code routines transfer, task-specific ones do not.
+- **Testable:** no. It needs robot simulators and frontier model budgets across many tasks. Needs: The released benchmark, simulators and model API spend..
+- **Idea on its own:** sound. Controls that separate retained learning from repeated attempts are exactly the right test for any self-improving loop.
+- **How it would be done:** For any Proteus agent loop that claims to improve, run a control arm that gets the same number of fresh attempts with no memory and compare success rates. Add a luck control by shuffling the stored experience. The benchmark code is released but robotics-specific; the evaluation design is what transfers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** A robot-agent benchmark asks whether agents learn or just retry, and finds re-rolling short attempts matches learning on easy tasks.
+
+### H-0261 YeonwooSung/my-claude-code-mods: Custom Claude Code Mods that I need
+2026-10-14, github, https://github.com/YeonwooSung/my-claude-code-mods
+
+- **Mechanism:** Mods hook Claude Code session events. Time-machine records every tool call on a branching timeline and takes shadow-git snapshots of the working tree so any step can be restored or compared. Agent-profiler and context-inspector read the session log to split time and context between model wait, tools and re-reads, and export OTLP traces. Loop-detective flags repeated Bash failures and edit/retry cycles.
+- **Claim:** Seven mods give session profiling, context waste analysis, tool-call rewind, and loop detection.
+- **Testable:** yes. Does the core test suite (npm ci --ignore-scripts, npm test) pass on this Mac without a Claude Code engine or account, yes or no? Queued as P-0156.
+- **Idea on its own:** sound. Per-step snapshots and loop detection address real agent failure modes and are cheap to build on top of session logs.
+- **How it would be done:** Read session transcripts for tool-call records, snapshot the tree with a separate git dir after each call, and compute loops by hashing repeated command and error pairs. This could feed the nightly run logs with a loop count per run. The engine-dependent parts need an interactive Claude Code session and are not covered by the core tests.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** my-claude-code-mods https://github.com/YeonwooSung/my-claude-code-mods (The mods and their core test suite.); OpenTelemetry Jaeger https://www.jaegertracing.io/download/ (Viewer for the exported OTLP traces.)
+- **Field Notes line:** Claude Code mods that snapshot every tool call to shadow git and flag retry loops; the core logic has a keyless test suite.
+
+### H-0259 pull the stake at 5x versus holding
+2026-10-14, vault, https://www.instagram.com/reel/DecmMdSuofw/
+
+- **Mechanism:** On a new token, sell the original stake once the price reaches five times entry and keep the remainder as a free ride. The claim is that this locks in profit before most launches collapse. It is a scale-out exit rule, so its value depends on how often launches hit 5x and what the survivors do afterwards.
+- **Claim:** The reel says taking your stake out at 5x beats just holding memecoins.
+- **Testable:** yes. Across launches in the Proteus poller data with a recorded entry price, what fraction reach 5x and does the pull-at-5x rule beat holding to 24 hours, as a number? Queued as P-0155.
+- **Idea on its own:** needs-a-run. Scale-out rules cannot create edge by themselves; only the hit rate and what happens after 5x decide whether it beats holding.
+- **How it would be done:** Take the Grinder's logged launches with first-seen price and later price snapshots. Fix the rule before looking: entry at first snapshot, sell the stake at 5x if it prints, otherwise exit at 24 hours. Compare against holding to 24 hours and random-entry control, with slippage and fee assumptions stated. Count tokens that are not sellable at all.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), preregister-a-book skill, backtest-with-luck-test skill
+- **Field Notes line:** A 5x scale-out rule is easy to replay on dated launches: count how many reach 5x and compare with holding.
+
+### H-0257 ChunkAct: Action Chunking for Agentic Robotics
+2026-10-14, arxiv, https://arxiv.org/abs/2610.18874
+
+- **Mechanism:** An LLM agent normally reasons before every primitive action using the full history. ChunkAct compiles stored memory offline into chains of primitives per sub-goal. At run time one call launches a whole chunk, which runs without the model and hands control back only on failure, so model calls scale with decisions rather than steps.
+- **Claim:** On LIBERO-Pro it gains 5.0 points in task success with 2.9x fewer LLM calls and 4.4x fewer input tokens.
+- **Testable:** no. It needs the LIBERO-Pro robot simulator and a VLA stack, which are not keyless or quick. Needs: LIBERO-Pro simulator and a vision-language-action model..
+- **Idea on its own:** sound. Replacing repeated model reasoning with compiled routines that escalate only on failure is a general, sensible way to cut agent cost.
+- **How it would be done:** Log successful agent runs, cluster repeated tool-call sequences per sub-goal, and store them as scripts with a pass/fail check at the end. At run time the planner picks a sub-goal and the script runs unattended, calling the model only if the check fails. The same idea applies to Proteus nightly tasks that repeat the same Bash sequences.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Compile repeated agent routines into chunks that run without the model and return control only on failure: 2.9x fewer calls in a robot benchmark.
+
+### H-0256 nateherkai/herk-edit-kit: Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 
+2026-10-14, github, https://github.com/nateherkai/herk-edit-kit. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A word-level transcript drives the edit: silence and filler gaps are found from word timings, mistakes and retakes are flagged from the text, and an edit decision list (EDL) is rendered with ffmpeg and then retimed so the transcript matches the cut. Captions, B-roll and motion cards are HyperFrames compositions placed against the retimed timeline, with beat-sync validation against a BPM grid. Transcription defaults to ElevenLabs Scribe but accepts Whisper or a supplied transcript.
+- **Claim:** An agent edited a 51-second reel end to end from one raw take, and the kit ships 15 skills and 406 motion cards.
+- **Testable:** yes. Does npm ci and npm test pass on this Mac with the bundled synthetic fixture and no API keys, yes or no? Queued as P-0154.
+- **Idea on its own:** sound. Cutting from word timings and retiming the transcript after the cut is a deterministic, checkable way to automate dialogue edits.
+- **How it would be done:** Transcribe locally, mark gaps above a threshold from word timestamps, and generate an EDL. Render the cut with ffmpeg, remap the word times through the EDL and burn captions in a HyperFrames composition. Check the result by comparing caption timing to audio. A human still judges pacing and the hook.
+- **Stack already covers:** HyperFrames, local transcription, ElevenLabs
+- **To fetch:** herk-edit-kit https://github.com/nateherkai/herk-edit-kit (The scripts for silence cutting, EDL review and retiming.)
+- **Field Notes line:** A transcript-driven edit loop (word timings to EDL to retimed captions) is packaged as 15 skills; the keyless starter is the part we can check.
+
+### H-0255 Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine
+2026-10-14, hn, https://pulseos.finance
+
+- **Mechanism:** A small tuned Qwen3 0.6B model only translates the question into a structured query. Ordinary code does the arithmetic against the ledger so the model never produces a number. A second, larger 4B model reads the same question independently, and if the two structured readings differ the app answers 'not sure' instead of guessing.
+- **Claim:** Adding the 4B checker cut wrong answers from about one in five to 5 in 494 questions across three tests.
+- **Testable:** no. It needs a local model runtime and the weights, and there is no local LLM on this Mac tonight. Needs: A local model runtime (Ollama or llama.cpp) and the Hugging Face weights..
+- **Idea on its own:** sound. Separating language parsing from arithmetic and abstaining when two independent readings disagree is a well-founded way to cut confident wrong answers.
+- **How it would be done:** Define a small query schema (metric, category, date range, currency). Have one model emit that schema from the question and a second, different model do the same. Run the schema against a CSV ledger with plain code and answer only if both schemas match, otherwise say not sure. Build a test set of a few hundred questions with known answers and count wrong, abstained and right. The same disagreement-abstain pattern would fit any Proteus desk that answers numeric questions from data.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Ollama https://ollama.com/download (Local runtime for small Qwen3 models.); PulseOS Hugging Face weights https://huggingface.co/PulseOS (The tuned 0.6B parser the write-up describes.)
+- **Missing:** A labelled question and answer set for a ledger, which would have to be written.
+- **Field Notes line:** A budgeting app lets a tiny model parse the question, code do the sums, and a second model veto disagreements, which it says cut errors to 5 in 494.
+
+### H-0254 crypto spot pairs laggard check
+2026-10-14, vault, https://www.instagram.com/reel/DeaHN_lJJkB/
+
+- **Mechanism:** Pick two coins whose prices have moved together (rolling correlation or cointegration on hourly closes). When the spread between them widens, the laggard is expected to catch up with the leader as the spread mean-reverts. Long-only version buys only the laggard and exits when the spread closes or a time stop hits. Numbers come from public exchange candles; the edge has to survive fees and the cases where the pair breaks for good.
+- **Claim:** The reel says trading the laggard of a matched pair against the leader gives steady returns.
+- **Testable:** yes. On public hourly candles for 20 liquid spot pairs, does buying the laggard when the spread passes 2 sigma beat holding it over the next 48 hours after 0.2 percent round-trip fees? Queued as P-0153.
+- **Idea on its own:** needs-a-run. Mean reversion in correlated pairs is real in principle, but costs and permanently broken pairs often erase it, so only a dated replay settles it.
+- **How it would be done:** Pull 90 days of hourly closes for a list of liquid spot pairs from a keyless exchange or aggregator endpoint. Compute a rolling log-ratio for each candidate pair and its z-score, and fix the entry (z above 2 on the laggard side), exit (z back to 0) and time stop before looking at results. Replay long-only, charge fees on both legs, and compare against simply holding the same coin for the same windows and against random entry dates. Commit the rules and due date first with the preregister skill, then score with the luck-test skill. No hired help needed; the open question is whether pairs break inside the window.
+- **Stack already covers:** freqtrade, backtest-with-luck-test skill, preregister-a-book skill
+- **To fetch:** Binance public klines API https://data-api.binance.vision/api/v3/klines (Keyless hourly candles for spot pairs.); statsmodels coint test https://www.statsmodels.org/ (Engle-Granger cointegration test to select pairs without eyeballing.)
+- **Field Notes line:** A pairs-trading reel claims the laggard catches up; a long-only fee-adjusted replay on public candles will say whether it does.
 
 ### H-0252 Per-post CPM tracked per account feeding back into what gets made next
 2026-10-13, vault, 
@@ -2132,6 +2259,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0264 | 2026-10-14 | score the 20-minute filter set on a dated cohort | open | needs-a-run | yes |  |
+| H-0259 | 2026-10-14 | pull the stake at 5x versus holding | open | needs-a-run | yes | P-0155 |
+| H-0254 | 2026-10-14 | crypto spot pairs laggard check | open | needs-a-run | yes | P-0153 |
 | H-0252 | 2026-10-13 | Per-post CPM tracked per account feeding back into what gets made next | open | sound | no |  |
 | H-0246 | 2026-10-13 | Flat monthly editing retainer for businesses already producing content | open | sound | no |  |
 | H-0240 | 2026-10-13 | service x city landing pages | open | needs-a-run | no |  |
@@ -2185,6 +2315,15 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0172 | 2026-10-14 | [roast-room](https://github.com/nateherkai/roast-room) | The council prompts and local viewer. | H-0266 (nateherkai/roast-room: Seven AI advisors (Bezos, P) | shelf |
+| T-0171 | 2026-10-14 | [Postfix](https://www.postfix.org/) | Self-hosted SMTP with policy hooks to implement first-sender locking. | H-0265 (Show HN: I wrote an email app that accepts only on) | shelf |
+| T-0170 | 2026-10-14 | [OpenTelemetry Jaeger](https://www.jaegertracing.io/download/) | Viewer for the exported OTLP traces. | H-0261 (YeonwooSung/my-claude-code-mods: Custom Claude Cod) | shelf |
+| T-0169 | 2026-10-14 | [my-claude-code-mods](https://github.com/YeonwooSung/my-claude-code-mods) | The mods and their core test suite. | H-0261 (YeonwooSung/my-claude-code-mods: Custom Claude Cod) | shelf |
+| T-0168 | 2026-10-14 | [herk-edit-kit](https://github.com/nateherkai/herk-edit-kit) | The scripts for silence cutting, EDL review and retiming. | H-0256 (nateherkai/herk-edit-kit: Herk Edit Kit by Nate He) | shelf |
+| T-0167 | 2026-10-14 | [PulseOS Hugging Face weights](https://huggingface.co/PulseOS) | The tuned 0.6B parser the write-up describes. | H-0255 (Show HN: Pulse Local, a Mac budgeting app whose AI) | shelf |
+| T-0166 | 2026-10-14 | [Ollama](https://ollama.com/download) | Local runtime for small Qwen3 models. | H-0255 (Show HN: Pulse Local, a Mac budgeting app whose AI) | shelf |
+| T-0165 | 2026-10-14 | [statsmodels coint test](https://www.statsmodels.org/) | Engle-Granger cointegration test to select pairs without eyeballing. | H-0254 (crypto spot pairs laggard check) | shelf |
+| T-0164 | 2026-10-14 | [Binance public klines API](https://data-api.binance.vision/api/v3/klines) | Keyless hourly candles for spot pairs. | H-0254 (crypto spot pairs laggard check) | shelf |
 | T-0163 | 2026-10-13 | [Lean 4](https://github.com/leanprover/lean4) | The proof checker that makes each record verifiable. | H-0249 (SqueezeBench: Saturation-Resilient Evaluation of M) | shelf |
 | T-0162 | 2026-10-13 | [plur-bench](https://github.com/plur-ai/plur-bench) | The reproducible harness behind every published number. | H-0245 (plur-ai/plur (new in awesome-claude-code)) | shelf |
 | T-0161 | 2026-10-13 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector) | Lists and calls a server's tools so a fuzz harness can be driven against them. | H-0243 (ToFu: Exploiting and Fuzzing the LLM-Orchestrator-) | shelf |
@@ -2353,6 +2492,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0267 | 2026-10-14 | youtube | [AI Agent Memory Stack Explained / Rakesh Gohel](https://www.youtube.com/watch?v=UbZyh6OCx0g) | Transcript is only music markers, nothing to judge. |
+| H-0263 | 2026-10-14 | youtube | [The Only 4 Types of Cars That Hold Their Value And Do Not Depreciate](https://www.youtube.com/watch?v=XVGeUUFRN5s) | A listicle summarising a third-party depreciation study with no mechanism to run. |
+| H-0260 | 2026-10-14 | hn | [Show HN: A guided 3D Leonardo da Vinci museum, built in code](https://museumofages.org/w/vinci) | A showcase of a 3D museum; the mechanism is standard Three.js and offers nothing to test. |
+| H-0258 | 2026-10-14 | youtube | [The AI Agent Memory Architecture Explained - From State to Long-Term Memory](https://www.youtube.com/watch?v=4KvVWNUTd9g) | Generic explainer of memory types with a customer-support demo and no new mechanism. |
 | H-0253 | 2026-10-13 | hn | [Nearly all 19 car brands send driver data to third parties (Northeastern/CR)](https://news.auravision.co/car-is-spying/) | A vendor-founder promotional link to a secondary write-up of a study, with no mechanism in the post. |
 | H-0251 | 2026-10-13 | awesome | [tronghieu/agent-skills (new in awesome-claude-code)](https://github.com/tronghieu/agent-skills) | A collection of prompt-style skills with no new mechanism; the vault has already judged it. |
 | H-0248 | 2026-10-13 | github | [Arekejoker/qwen21-nsfw-pose-skill: Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSF](https://github.com/Arekejoker/qwen21-nsfw-pose-skill) | An adult-image recipe for a local GPU diffusion stack; needs ComfyUI, large model downloads and hardware this Mac lacks, |
