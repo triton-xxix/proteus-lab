@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 93 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
+Verdicts so far: 94 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,16 +24,17 @@ Verdicts so far: 93 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0140 | P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5k USD liquidity, and for graduated tokens look up the mint's PumpSwap pool so survivors are not undercounted | desk | none | 2026-10-14 | 1 | 15 min |
-| P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | desk | none |  | 1 (in progress) | 25 min |
 | P-0145 | new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending against 13 Oct; how many of the 54 survive | desk | none | 2026-10-14 | 0 | 20 min |
 | P-0146 | plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions with known answer files, measure R@5; does 92 pct hold on my own text | desk | none |  | 0 | 25 min |
 | P-0147 | Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and over-2.5 out of sample against the closing line on E0, E1, SC0 2022 on; does it beat the plain model | desk | none |  | 0 | 30 min |
 | P-0148 | Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier | desk | none |  | 0 | 30 min |
 
-## Verdicts (128)
+## Verdicts (129)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-14 | P-0141 | Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 found a no-op v1 tx spamming 7 KOL DOGEUS accounts); report how many of the 7 to 9 in-window wallets survive | **works** | Measured 7 of 9 wallets survive against the shot of 2: all 51 in-window transactions on the 9 KOL token accounts were signed by the KOL wallet itself, none balance-change-only, none P-0134-style spam; the 2 that fall (Daumen 0 of 391 sigs in window, slingoor 0 of 6) are span-only, hours clear each side. 63 RPC calls, 63 s. The spam P-0134 found lives in the window-free ever count, not in this window. Next: deepen (queued: were the 7 KOLs trading before or after the 22:28Z pick, and which way). | `experiments/2026-10-14-P-0141` | 4 min, 20 calls, 1 denied |
+| | | | | denied: Bash `/bin/ls /Users/triton/PROTEUS/experiments/2026-10-13-P-0128 /Users/triton/PROTEUS/experime` | | |
 | 2026-10-14 | P-0136 | Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same parameters to 1e-4 and time the 8-group refit and one backtest | **works** | Measured: the 8-group refit falls from 21.1 s to 0.4 s with the analytic gradient (ENG 10.4 s to 0.11 s); objective identical to 4 decimals in every group; parameters differ by up to 0.02 on ENG (0.0001 on SCO) and ENG predictions by at most 1.0 point of p_home over 2,862 pairs, because the finite-difference fit stops elsewhere on a flat ridge. Shot said under 6 s (hit) and parameters to 1e-4 (missed). Not switched into the desk tonight; queued P-0148 with the backtest comparison. Next: promote (P-0148). | `experiments/2026-10-13-P-0136` | 2 min, 20 calls, 0 denied |
 | 2026-10-14 | P-0130 | Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond chance (permutation test), and does a referee term improve the Dixon-Coles Brier or over-2.5 against the closing line? | **works** | Measured, part one: 68 referees over 4,670 E0, E1 and SC0 matches since 2022 differ in cards a game beyond chance (permutation within division-season, 0 of 4,000 draws, K Stroud 4.98 v A Kitchen 3.15), home-card bias p 0.034, home-win rate p 0.048, over 2.5 p 0.49. Shot said cards under 0.01 (hit) and home-win above 0.1 (missed, borderline). Part two, the Dixon-Coles referee term, not fitted: queued as P-0147. Referee effect sits on cards, not goals. Next: deepen (P-0147). | `experiments/2026-10-13-P-0130` | 2 min, 13 calls, 0 denied |
 | 2026-10-14 | P-0126 | Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fill-check/REPORT.md | **works** | Measured: 68 closed v0.2 trades (3 voided rows gone), touch -177.78 GBP, close -288.62, late -211.82, depth -369.97; shot said 69 trades, touch about -230, close about 120 worse: count and close penalty hit, touch 52 better than called. Same ordering as 6 and 11 Oct, same two flips under close (G-0012, G-0031). 10 of 24 booked wins touched 2x on a minute that closed below it. D-002 scored, next Sunday 18 Oct. Next: close. | `experiments/2026-10-13-P-0126` | 0 min, 12 calls, 0 denied |

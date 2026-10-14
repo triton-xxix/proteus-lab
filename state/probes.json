@@ -3218,22 +3218,27 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T12:32:17+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-14T12:37:06+0100",
+   "note": "Measured 7 of 9 wallets survive against the shot of 2: all 51 in-window transactions on the 9 KOL token accounts were signed by the KOL wallet itself, none balance-change-only, none P-0134-style spam; the 2 that fall (Daumen 0 of 391 sigs in window, slingoor 0 of 6) are span-only, hours clear each side. 63 RPC calls, 63 s. The spam P-0134 found lives in the window-free ever count, not in this window. Next: deepen (queued: were the 7 KOLs trading before or after the 22:28Z pick, and which way).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0141"
+   ],
+   "minutes": 4,
+   "calls": 20,
+   "denied": [
+    "Bash `/bin/ls /Users/triton/PROTEUS/experiments/2026-10-13-P-0128 /Users/triton/PROTEUS/experime`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "2 of the 9 wallets survive (a KOL signed or the KOL token balance changed inside the window)",
-    "at": "2026-10-14T12:33:10+0100"
+    "at": "2026-10-14T12:33:10+0100",
+    "hit": true
    }
   },
   {

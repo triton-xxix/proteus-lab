@@ -1,0 +1,2032 @@
+{
+ "probe": "P-0141",
+ "window": [
+  1791753817,
+  1791761017
+ ],
+ "candidates": [
+  {
+   "symbol": "trenchcat",
+   "name": "Naruza",
+   "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+   "ata": "7VSYSBeHy7y8fGDeQ2rvCyxXVbgFer7uUGhLmKpf33T5",
+   "sigs": 15,
+   "first": 1791724361,
+   "last": 1791756481,
+   "txs": [
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -8300597.4304,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "2YfqFQsLVJE1or655XhnkWQpdvEAAkEZYv86DAQEkN652K9cxruPtiM3QKci5zbYVMo6bu3zto76wq6oUNPVkY42",
+     "time": 1791756481
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2075149.3576000007,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "64m4VyebRxretXeaEznfmLCHn2bcBEWHVVGG7qVuUWhu7jhKChrXHFL9u3XruwZpU5Y32qnH7ihes2RzSG8tJqNB",
+     "time": 1791756276
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2593936.6969999988,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "4gZxUm5oeQWkQWyN5yuXo2EvVM19JtZuXiARZUd9rP9Mhjy2nZoi3zgfn4kCCYXRPHLDEzYCYQtJ4WQX65neQ5z7",
+     "time": 1791756274
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -3242420.87125,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "5jQTUh5zG4X9nA5PHQ1MNjjc5GXmsBGEUqAdbqmFoVZZfmi4Bz4ArFw69iPzSV8ctghw4U62YJz5TG8ALUvQDqWE",
+     "time": 1791756182
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -4053026.0890620016,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "4SeJ42uzVXxMbaKtTY1icbkx2nHEZzXu8WeQBesYkAgnyHTr5KkUV218oj6rZQhW7Ah7bSPFJ3BAdM7xgPB2XLZa",
+     "time": 1791756020
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -5066282.611327998,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "38icWZk1GZE6MQhJ8QZZdBeLcJtLCBn476hGkcZmZbyaRoKSTq7hDs3oC54uRWNDQobuZJG4qmes2vqr1kR8vQwS",
+     "time": 1791756009
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 10162819.433521999,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "53LwXowWvMCWQVWVxDLp88rggPMYFUpbYGz71CuSgHQauyoAtaga8HM1gTS2z3mNSYFmdFsS3eJL56ZKpTG3bMVD",
+     "time": 1791755379
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 15168593.623118,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "5wFML94kdAaPPSUtMaU5t4XTqjdi3eH4KJYeZD37G7xy9BJkmp7y8HrmGQ4qcCkqgZCgMyDFrbVSi5f765BwdpWW",
+     "time": 1791755357
+    }
+   ],
+   "sigs_fetched": 17,
+   "sigs_in_window": 8,
+   "real": [
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -8300597.4304,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "2YfqFQsLVJE1or655XhnkWQpdvEAAkEZYv86DAQEkN652K9cxruPtiM3QKci5zbYVMo6bu3zto76wq6oUNPVkY42",
+     "time": 1791756481
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2075149.3576000007,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "64m4VyebRxretXeaEznfmLCHn2bcBEWHVVGG7qVuUWhu7jhKChrXHFL9u3XruwZpU5Y32qnH7ihes2RzSG8tJqNB",
+     "time": 1791756276
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2593936.6969999988,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "4gZxUm5oeQWkQWyN5yuXo2EvVM19JtZuXiARZUd9rP9Mhjy2nZoi3zgfn4kCCYXRPHLDEzYCYQtJ4WQX65neQ5z7",
+     "time": 1791756274
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -3242420.87125,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "5jQTUh5zG4X9nA5PHQ1MNjjc5GXmsBGEUqAdbqmFoVZZfmi4Bz4ArFw69iPzSV8ctghw4U62YJz5TG8ALUvQDqWE",
+     "time": 1791756182
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -4053026.0890620016,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "4SeJ42uzVXxMbaKtTY1icbkx2nHEZzXu8WeQBesYkAgnyHTr5KkUV218oj6rZQhW7Ah7bSPFJ3BAdM7xgPB2XLZa",
+     "time": 1791756020
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -5066282.611327998,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "38icWZk1GZE6MQhJ8QZZdBeLcJtLCBn476hGkcZmZbyaRoKSTq7hDs3oC54uRWNDQobuZJG4qmes2vqr1kR8vQwS",
+     "time": 1791756009
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 10162819.433521999,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "53LwXowWvMCWQVWVxDLp88rggPMYFUpbYGz71CuSgHQauyoAtaga8HM1gTS2z3mNSYFmdFsS3eJL56ZKpTG3bMVD",
+     "time": 1791755379
+    },
+    {
+     "signers": [
+      "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 15168593.623118,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 22,
+     "err": null,
+     "sig": "5wFML94kdAaPPSUtMaU5t4XTqjdi3eH4KJYeZD37G7xy9BJkmp7y8HrmGQ4qcCkqgZCgMyDFrbVSi5f765BwdpWW",
+     "time": 1791755357
+    }
+   ],
+   "survives": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "CoCo",
+   "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+   "ata": "CCsVuWgKwwiprqruA5EmrTjX8Npm9ghVocw5YQfYzWcB",
+   "sigs": 3,
+   "first": 1791756189,
+   "last": 1791756424,
+   "txs": [
+    {
+     "signers": [
+      "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -3082261.610315,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "3gXGZpVPzQugALVNDbXmhPpsXXtL7CDurBGSTrSxSonM51rknKP4vpyocg6uiM8w53RU5dd7i8E1T3ufBVQuTTfN",
+     "time": 1791756424
+    },
+    {
+     "signers": [
+      "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -3082261.610315,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "63XoiyWe3mDFJQ9BUTWv1gTMM5Fk6XRX3tokMrgXHpSvh8w9pWpxtpWxBihHfNHZ3r9cMYERVq8fhRkZULwqThry",
+     "time": 1791756423
+    },
+    {
+     "signers": [
+      "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 6164523.22063,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 39,
+     "err": null,
+     "sig": "62TQm7XweoXm7jQPL2JNYQdXd7UkAKiNKTq6e9cPPXvSy4R2K6JYwvhTw5vYHokPggnus7V8PHqE4VYCM42QDVBe",
+     "time": 1791756189
+    }
+   ],
+   "sigs_fetched": 4,
+   "sigs_in_window": 3,
+   "real": [
+    {
+     "signers": [
+      "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -3082261.610315,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "3gXGZpVPzQugALVNDbXmhPpsXXtL7CDurBGSTrSxSonM51rknKP4vpyocg6uiM8w53RU5dd7i8E1T3ufBVQuTTfN",
+     "time": 1791756424
+    },
+    {
+     "signers": [
+      "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -3082261.610315,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "63XoiyWe3mDFJQ9BUTWv1gTMM5Fk6XRX3tokMrgXHpSvh8w9pWpxtpWxBihHfNHZ3r9cMYERVq8fhRkZULwqThry",
+     "time": 1791756423
+    },
+    {
+     "signers": [
+      "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 6164523.22063,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "GMGNreQcJFufBiCTLDBgKhYEfEe9B454UjpDr5CaSLA1",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 39,
+     "err": null,
+     "sig": "62TQm7XweoXm7jQPL2JNYQdXd7UkAKiNKTq6e9cPPXvSy4R2K6JYwvhTw5vYHokPggnus7V8PHqE4VYCM42QDVBe",
+     "time": 1791756189
+    }
+   ],
+   "survives": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Daumen",
+   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+   "ata": "5TPKtKtk7jCVSFoTBjcHAeN56nNpmiLpeCNubacBqJaN",
+   "sigs": 100,
+   "first": 1791720158,
+   "last": 1791795226,
+   "txs": [],
+   "sigs_fetched": 40,
+   "sigs_in_window": 0,
+   "real": [],
+   "survives": false,
+   "full_recount": {
+    "total": 391,
+    "in_window": 0,
+    "before": 390,
+    "after": 1
+   }
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "West",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+   "ata": "8tkZTBkfWar7XxkD7KDXvFKSakgVMuAoecuaM84pSqMe",
+   "sigs": 18,
+   "first": 1791756598,
+   "last": 1791803400,
+   "txs": [
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2253735.996953,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5iCqYa5YAgjJZ8pkgfMugrm5nGg9yTggXHr6TRBC7GCLTKYapqjLeJQstf8orj26Sq13G5zKpmbowCF9hCEjMUWE",
+     "time": 1791758897
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2253735.9969520005,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "EPbvSywfYKe1b3aHtCSGixbDkX2LMKrDEsHh929kvzYb9do7bXK9jpxrMdCLkM2UafoZpT7GEG3vUeumyf8ScTe",
+     "time": 1791758893
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1502490.6646339996,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5Rv3WsYtcXbikPnjhRfDzwDxozkV4qk3tyXeoRqnXvhjdjXf9CLDkXpTAbw95cwGd4omUk4H63sa1zyQvpzfLtm",
+     "time": 1791758883
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2003320.8861790001,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "4UsPmnm11MQcfrm8794FkxpRN7NexFDMZGaAcZh92fqETWXqhTyFXepzz73ruMNSvtW1wanjD79PqDsWGqJ4RC2x",
+     "time": 1791758882
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 570917.0234940005,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "peXSq6betkJfK9jn1gJAZnEjB8KCfs8eCZgNyjGTgLMRdzjcCMXGKPPBo7ytgsxUcsv3bG2fHuGxDTT1mSA6sqe",
+     "time": 1791758585
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 553891.9607929997,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "4oHc8j4FGEpCN3dXkNxkXkFeemzVPTdqMXqHTvGsdYyMKQsRY6HpbiF6pExwkmNgt6JjfRyeWKDpmNSfTCgXTTs3",
+     "time": 1791758503
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 511542.1311529996,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "2xWC8UtnMF3iv2o9nNyhJiA9vvPHKg7oaVr5w4qoNmk1FRdz8xT9DmLGgQer1qojFbAfUDqAdpaygTwANWjykLEu",
+     "time": 1791758283
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -8771182.954354,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "spl-token"
+     ],
+     "n_keys": 6,
+     "err": null,
+     "sig": "262oZLiYiXDgXZE4uWzUnx5WhvuY89VrS3c9qjdwFVafEPBDdE1LQ4qTWwFuUgL65GFAJqGh1zH2F82ALHhREyU5",
+     "time": 1791757853
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -12159959.960641,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "spl-token"
+     ],
+     "n_keys": 6,
+     "err": null,
+     "sig": "3dSCJtXPrE9iPwiHYpqbFPt1USsqbikXzein6hzSRpbJLcjzZgLKt8Q8tDG2xajjwcfKwzUd7joXiTPy4o1EQdGh",
+     "time": 1791757586
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 28091.74933400005,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "2kA7sPmsEKChFwAwqN21jazjErtmMa62k94PbFLhoT5MrUCgEPvme2uhoqLPLNaJHQY4NgGSYK87pwkrV45nitsE",
+     "time": 1791757057
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 30771.65497500077,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "4qctCqYq5Wx1EtSPKpw1ySDY2YunBkGy5WUUniN58casLZnrjrVzVWw31uK9bQLDqjaHBjQyoE3BWvSafLHa6Pi8",
+     "time": 1791756996
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 30788.76544199884,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5B9T98kjuWcgmSfu64uVW64QjKuN8wMXNxXZAgodAvT9YEkXrSiQxeTsoNXHQMbAu6jKx6TTFMG351vE5LYLqwMU",
+     "time": 1791756996
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 2984339.138146002,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "3HzCtasTkgTzQ3xZRwNQJ3ofpVgsQj6TmbYbSkew381FZSvA1qzCqrWHNxPG6pjkiPtdYJGNcSqj1rmBaphGWopt",
+     "time": 1791756893
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 2658981.8087249994,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5PQCu6q1ofDzi9LxbkXsg5VH41pJndTuwpbWpwgQodnBRmJGJRjSG9QPfWBw9vqz9VARiePdMaLZKjV7YioKxkSN",
+     "time": 1791756772
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 3886966.8730820008,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "QQyLR2vB24RXh5vkYNrD93SVkugWGZKbNSCKmNKb9iJHH2Q7Fw5Y4MuqARAcbSL6H6xGiusRbN5xPeXLWHt4Rw5",
+     "time": 1791756629
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 17688135.354569,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 25,
+     "err": null,
+     "sig": "3NE7iCEAudsqQccXScMLQ8ZLnFXVb5yuJAEiuqVghpe2xYUHxsLmQsXZ3CiXHQjtp58L1YCSGefMipb25gw2DDkf",
+     "time": 1791756598
+    }
+   ],
+   "sigs_fetched": 18,
+   "sigs_in_window": 16,
+   "real": [
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2253735.996953,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5iCqYa5YAgjJZ8pkgfMugrm5nGg9yTggXHr6TRBC7GCLTKYapqjLeJQstf8orj26Sq13G5zKpmbowCF9hCEjMUWE",
+     "time": 1791758897
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2253735.9969520005,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "EPbvSywfYKe1b3aHtCSGixbDkX2LMKrDEsHh929kvzYb9do7bXK9jpxrMdCLkM2UafoZpT7GEG3vUeumyf8ScTe",
+     "time": 1791758893
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1502490.6646339996,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5Rv3WsYtcXbikPnjhRfDzwDxozkV4qk3tyXeoRqnXvhjdjXf9CLDkXpTAbw95cwGd4omUk4H63sa1zyQvpzfLtm",
+     "time": 1791758883
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2003320.8861790001,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "4UsPmnm11MQcfrm8794FkxpRN7NexFDMZGaAcZh92fqETWXqhTyFXepzz73ruMNSvtW1wanjD79PqDsWGqJ4RC2x",
+     "time": 1791758882
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 570917.0234940005,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "peXSq6betkJfK9jn1gJAZnEjB8KCfs8eCZgNyjGTgLMRdzjcCMXGKPPBo7ytgsxUcsv3bG2fHuGxDTT1mSA6sqe",
+     "time": 1791758585
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 553891.9607929997,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "4oHc8j4FGEpCN3dXkNxkXkFeemzVPTdqMXqHTvGsdYyMKQsRY6HpbiF6pExwkmNgt6JjfRyeWKDpmNSfTCgXTTs3",
+     "time": 1791758503
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 511542.1311529996,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "2xWC8UtnMF3iv2o9nNyhJiA9vvPHKg7oaVr5w4qoNmk1FRdz8xT9DmLGgQer1qojFbAfUDqAdpaygTwANWjykLEu",
+     "time": 1791758283
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -8771182.954354,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "spl-token"
+     ],
+     "n_keys": 6,
+     "err": null,
+     "sig": "262oZLiYiXDgXZE4uWzUnx5WhvuY89VrS3c9qjdwFVafEPBDdE1LQ4qTWwFuUgL65GFAJqGh1zH2F82ALHhREyU5",
+     "time": 1791757853
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -12159959.960641,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "spl-token"
+     ],
+     "n_keys": 6,
+     "err": null,
+     "sig": "3dSCJtXPrE9iPwiHYpqbFPt1USsqbikXzein6hzSRpbJLcjzZgLKt8Q8tDG2xajjwcfKwzUd7joXiTPy4o1EQdGh",
+     "time": 1791757586
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 28091.74933400005,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "2kA7sPmsEKChFwAwqN21jazjErtmMa62k94PbFLhoT5MrUCgEPvme2uhoqLPLNaJHQY4NgGSYK87pwkrV45nitsE",
+     "time": 1791757057
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 30771.65497500077,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "4qctCqYq5Wx1EtSPKpw1ySDY2YunBkGy5WUUniN58casLZnrjrVzVWw31uK9bQLDqjaHBjQyoE3BWvSafLHa6Pi8",
+     "time": 1791756996
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 30788.76544199884,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5B9T98kjuWcgmSfu64uVW64QjKuN8wMXNxXZAgodAvT9YEkXrSiQxeTsoNXHQMbAu6jKx6TTFMG351vE5LYLqwMU",
+     "time": 1791756996
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 2984339.138146002,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "3HzCtasTkgTzQ3xZRwNQJ3ofpVgsQj6TmbYbSkew381FZSvA1qzCqrWHNxPG6pjkiPtdYJGNcSqj1rmBaphGWopt",
+     "time": 1791756893
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 2658981.8087249994,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "5PQCu6q1ofDzi9LxbkXsg5VH41pJndTuwpbWpwgQodnBRmJGJRjSG9QPfWBw9vqz9VARiePdMaLZKjV7YioKxkSN",
+     "time": 1791756772
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 3886966.8730820008,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "QQyLR2vB24RXh5vkYNrD93SVkugWGZKbNSCKmNKb9iJHH2Q7Fw5Y4MuqARAcbSL6H6xGiusRbN5xPeXLWHt4Rw5",
+     "time": 1791756629
+    },
+    {
+     "signers": [
+      "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 17688135.354569,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 25,
+     "err": null,
+     "sig": "3NE7iCEAudsqQccXScMLQ8ZLnFXVb5yuJAEiuqVghpe2xYUHxsLmQsXZ3CiXHQjtp58L1YCSGefMipb25gw2DDkf",
+     "time": 1791756598
+    }
+   ],
+   "survives": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "bandit",
+   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "ata": "Dxpvxs5mUk3GyhoDryizbaP35r2Yx5XchriLLWFfi4Wg",
+   "sigs": 5,
+   "first": 1791756317,
+   "last": 1791765912,
+   "txs": [
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -4032.854334,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 23,
+     "err": null,
+     "sig": "3nTXKsASGUBVHv2Yi8EvhYPJuo6ygxDtgq7CqFDjPEnvijJcq6B7kDccegTyojc8ow9GvX5jyEMfPfApEjQcrHoZ",
+     "time": 1791756330
+    },
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -212.25549099999944,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 23,
+     "err": null,
+     "sig": "2zpWzp5hrA1ztQm4aNjyH4298e1LqmwMyWVhKDDY17kfAiMB4vpUesxXquKrsjdkFSY8m6VqtsiuGEEg6FEQQV53",
+     "time": 1791756328
+    },
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -223.4268320000001,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 23,
+     "err": null,
+     "sig": "F7oFWf2Go8Z6XjYgxzg7BiuwaTzviqWKUBj55ixiYUSsasDWinBFvRtSJyZusWiC6eaLQ1WExEwiaHFmzXcMeoY",
+     "time": 1791756326
+    },
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 4468.536657,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "33KPqf46nr8vN3vCCrWYMv33PKBKTNF79WHAMhF3EDE1DCD3zFnYFWmx7iJ4CivxmKJgManTeVDh8qCJj4MnxzZU",
+     "time": 1791756317
+    }
+   ],
+   "sigs_fetched": 5,
+   "sigs_in_window": 4,
+   "real": [
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -4032.854334,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 23,
+     "err": null,
+     "sig": "3nTXKsASGUBVHv2Yi8EvhYPJuo6ygxDtgq7CqFDjPEnvijJcq6B7kDccegTyojc8ow9GvX5jyEMfPfApEjQcrHoZ",
+     "time": 1791756330
+    },
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -212.25549099999944,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 23,
+     "err": null,
+     "sig": "2zpWzp5hrA1ztQm4aNjyH4298e1LqmwMyWVhKDDY17kfAiMB4vpUesxXquKrsjdkFSY8m6VqtsiuGEEg6FEQQV53",
+     "time": 1791756328
+    },
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -223.4268320000001,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 23,
+     "err": null,
+     "sig": "F7oFWf2Go8Z6XjYgxzg7BiuwaTzviqWKUBj55ixiYUSsasDWinBFvRtSJyZusWiC6eaLQ1WExEwiaHFmzXcMeoY",
+     "time": 1791756326
+    },
+    {
+     "signers": [
+      "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 4468.536657,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 24,
+     "err": null,
+     "sig": "33KPqf46nr8vN3vCCrWYMv33PKBKTNF79WHAMhF3EDE1DCD3zFnYFWmx7iJ4CivxmKJgManTeVDh8qCJj4MnxzZU",
+     "time": 1791756317
+    }
+   ],
+   "survives": true
+  },
+  {
+   "symbol": "trenchcat",
+   "name": "Yami \ud80c\udcf5",
+   "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+   "ata": "Ce4VvVa8bEzCx3YNssiYt7QnSukU2c5JkDp3q68BzKTd",
+   "sigs": 2,
+   "first": 1791758900,
+   "last": 1791759100,
+   "txs": [
+    {
+     "signers": [
+      "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -624388.943428,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 26,
+     "err": null,
+     "sig": "4A5psXY9VwGoVVVDbciYDV55L4FL8bTXb3vCJVkgXvWBR7AY8n5xi7W9D2aLdeJ2Sn95m86W2GURiBKguQFCV6Wx",
+     "time": 1791759100
+    },
+    {
+     "signers": [
+      "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 624388.943428,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 28,
+     "err": null,
+     "sig": "5DpPh8VWCHrvNtuxBFhu6CjLoYZiyf6FBDkj2uxURA4h25nndAMxQvMM4yhJsLuVn2MUe4uzAbQM8UNdCp51Hp1f",
+     "time": 1791758900
+    }
+   ],
+   "sigs_fetched": 2,
+   "sigs_in_window": 2,
+   "real": [
+    {
+     "signers": [
+      "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -624388.943428,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 26,
+     "err": null,
+     "sig": "4A5psXY9VwGoVVVDbciYDV55L4FL8bTXb3vCJVkgXvWBR7AY8n5xi7W9D2aLdeJ2Sn95m86W2GURiBKguQFCV6Wx",
+     "time": 1791759100
+    },
+    {
+     "signers": [
+      "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 624388.943428,
+     "ata_changed": true,
+     "programs": [
+      "ComputeBudget111111111111111111111111111111",
+      "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "spl-associated-token-account",
+      "spl-token",
+      "system"
+     ],
+     "n_keys": 28,
+     "err": null,
+     "sig": "5DpPh8VWCHrvNtuxBFhu6CjLoYZiyf6FBDkj2uxURA4h25nndAMxQvMM4yhJsLuVn2MUe4uzAbQM8UNdCp51Hp1f",
+     "time": 1791758900
+    }
+   ],
+   "survives": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "slingoor",
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "ata": "C44B6zZjqBuVtrf184uwXJUjvSWG7WtUyVmNZsh8wtR9",
+   "sigs": 3,
+   "first": 1791738773,
+   "last": 1791762606,
+   "txs": [],
+   "sigs_fetched": 6,
+   "sigs_in_window": 0,
+   "real": [],
+   "survives": false,
+   "full_recount": {
+    "total": 6,
+    "in_window": 0,
+    "before": 2,
+    "after": 4
+   }
+  },
+  {
+   "symbol": "Normie",
+   "name": "Gasp",
+   "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+   "ata": "9XHfZmBeuid4LNb7gQ9Cp88H48Ki356JbfAXV6DV7oYc",
+   "sigs": 20,
+   "first": 1791737723,
+   "last": 1791754405,
+   "txs": [
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1006140.668596,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "23AiAuoE7JpUGT1m6VHudo9rvfpaMaWNPWVkgnz5f9SAHU299dRjiViV28nPe2NiUSPpohGcnerFiVcTgQAC8Nwt",
+     "time": 1791754405
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -503070.334298,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "c1BfzUBVYQ16dkDmdw3S4uaEDDqQL9K9h3Y2npCBbo7nupBz7bKMbpW7yhHjBNbdY6BSgDzkin9RrTsN2qVzy4Q",
+     "time": 1791754404
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -503070.334298,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "5D5a7kfS6ZCkggQ3rNJ2hLGmgAHJ5svXCk2fxzmybShyu77GnxvSD1ggcSM6uHbxTthkarwpnya7P7BgCTKMVwGc",
+     "time": 1791754404
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1006140.668596,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "676GahM4pSMEFKbpdG7d969HCoCcFg9FJuv5uj8uwVe2GzfJhyk9DLov67WtdmNXCSTzEzmb53QKt2TTPDfu6SSM",
+     "time": 1791754403
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1006140.668596,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "Vx85oWwupXBhs3Up3RtBZB4kezTiXP8CEcRxyaDDV3PmaK5KQqPzAq3RqwGrvqouXE34CWcRzbqCQFzoaj2SmZc",
+     "time": 1791754403
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2012281.3371910006,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "3ewzxQEfXCKBB2u1eTUd4aBz68o1nTVx7zee4wPwZZVX9DXk5LsCx7Sy8oYSe6EipSEHuM3yzRJHiKwp4Fa3n7sJ",
+     "time": 1791754394
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2012281.3371909996,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "2gRJ6QVWDusfnY5ycza4A9MhY88mpQ6eXYmnRFQ64AmabMnA7hob5P7j2JLNB68tfR3ueVkvrW61WJbpLw95tkk3",
+     "time": 1791754393
+    }
+   ],
+   "sigs_fetched": 21,
+   "sigs_in_window": 7,
+   "real": [
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1006140.668596,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "23AiAuoE7JpUGT1m6VHudo9rvfpaMaWNPWVkgnz5f9SAHU299dRjiViV28nPe2NiUSPpohGcnerFiVcTgQAC8Nwt",
+     "time": 1791754405
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -503070.334298,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "c1BfzUBVYQ16dkDmdw3S4uaEDDqQL9K9h3Y2npCBbo7nupBz7bKMbpW7yhHjBNbdY6BSgDzkin9RrTsN2qVzy4Q",
+     "time": 1791754404
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -503070.334298,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "5D5a7kfS6ZCkggQ3rNJ2hLGmgAHJ5svXCk2fxzmybShyu77GnxvSD1ggcSM6uHbxTthkarwpnya7P7BgCTKMVwGc",
+     "time": 1791754404
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1006140.668596,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "676GahM4pSMEFKbpdG7d969HCoCcFg9FJuv5uj8uwVe2GzfJhyk9DLov67WtdmNXCSTzEzmb53QKt2TTPDfu6SSM",
+     "time": 1791754403
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -1006140.668596,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "Vx85oWwupXBhs3Up3RtBZB4kezTiXP8CEcRxyaDDV3PmaK5KQqPzAq3RqwGrvqouXE34CWcRzbqCQFzoaj2SmZc",
+     "time": 1791754403
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2012281.3371910006,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "3ewzxQEfXCKBB2u1eTUd4aBz68o1nTVx7zee4wPwZZVX9DXk5LsCx7Sy8oYSe6EipSEHuM3yzRJHiKwp4Fa3n7sJ",
+     "time": 1791754394
+    },
+    {
+     "signers": [
+      "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -2012281.3371909996,
+     "ata_changed": true,
+     "programs": [
+      "FLASHX8DrLbgeR8FcfNV1F5krxYcYMUdBkrP1EPBtxB9",
+      "system"
+     ],
+     "n_keys": 37,
+     "err": null,
+     "sig": "2gRJ6QVWDusfnY5ycza4A9MhY88mpQ6eXYmnRFQ64AmabMnA7hob5P7j2JLNB68tfR3ueVkvrW61WJbpLw95tkk3",
+     "time": 1791754393
+    }
+   ],
+   "survives": true
+  },
+  {
+   "symbol": "Normie",
+   "name": "Nyhrox",
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "ata": "QtRvZRBb6Y4erPpToTdFBLautw3dvZfehN6jaN7QG6E",
+   "sigs": 22,
+   "first": 1791742743,
+   "last": 1791759227,
+   "txs": [
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "53bPftuA51dZ28SnNjZdfnaFgD4BVH7GMNzAQZLJ4rK5XUZTR7S2fhBJFeTc9bXqMGYGpVCazPvDiGLyXge9sNkY",
+     "time": 1791759227
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -6822653.435395,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": null,
+     "sig": "adNniPnKb8McrmXaTqdSR3eeuTq1FZUzRrCsjbmpfRvUjV3tggu8bJPds9tDcWKdhVKQoPq7XGkQ9Xk1rCp1Lrx",
+     "time": 1791759227
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "2RprrbTpGAUesM99tDbTZfPkSPQLmrCqyi7FqVboK9e3kQHSjireYMtT3SMYLfYF7foSZwzpWYKEz6htpSM4ftoK",
+     "time": 1791759225
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "54WS28Vghv7A5ph3d859ixcEcFQVPCiKNSXMJj18CCtvxDxmLbUPGba6647zm87NoqUcVfjzbh41uifDEUMML1EZ",
+     "time": 1791759225
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -6822653.435395,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": null,
+     "sig": "eyAXtEA5CeypzrKdbgmCsS5Wnbdc3DNbdP573NLkTUDpMLw5Q98CmcvxTS6K23D81ZJ2ra5ixvSFRzCEVRRHFog",
+     "time": 1791759225
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "4FKKGFcXhwPMECenXXAh52EumK8c65ZiuRPuECcSByhZYDETBBPP3GAvTEwVrGwARVcrYGaiVqNZRVBQSYV7Ejkw",
+     "time": 1791755989
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 937200.1677579992,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": null,
+     "sig": "GgeM3Z9kaEKym9XoT7RgJGwEXnVCwq9guVzHfryoYxvvFDLxap3dbuETVXW86wEzH6MreVvsNGJLL7yk1CccnMh",
+     "time": 1791755988
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "4UHtGKLJ64weQ15duihhTN32fUgpYK7F8G4CYG9zgmWvQwj1GuRUuK7SCCML92q2tJbRpwAB2YvUtBWJze35jhjJ",
+     "time": 1791755978
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 1861363.899046,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": null,
+     "sig": "3NeZRhx6U2dDhvA9dc7DPctsNeFEATz1YYHpRwwqCMeY44Sbk1gM3Ug7Xx7UfD3FU88GMFh2Cby7wZnwwatWwpmR",
+     "time": 1791755977
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "3MKoAzy3CYANpDBN3yV5EFDbFemtWdNfdRen3pDgjVF4qVazgLWTLrwmeiAm7ZiSXjS73mizWifBJk5rANGr2BwB",
+     "time": 1791755061
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 1552629.899970999,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": null,
+     "sig": "4MpTvxDEUGLgChMbcUfpwe7FtGNYiSpwpsae5EmJth8gpBzBEe51iLtA4GoLxbfQiTgEgkb3t4EoFuGfRctbx6Jf",
+     "time": 1791755060
+    }
+   ],
+   "sigs_fetched": 22,
+   "sigs_in_window": 11,
+   "real": [
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "53bPftuA51dZ28SnNjZdfnaFgD4BVH7GMNzAQZLJ4rK5XUZTR7S2fhBJFeTc9bXqMGYGpVCazPvDiGLyXge9sNkY",
+     "time": 1791759227
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -6822653.435395,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": null,
+     "sig": "adNniPnKb8McrmXaTqdSR3eeuTq1FZUzRrCsjbmpfRvUjV3tggu8bJPds9tDcWKdhVKQoPq7XGkQ9Xk1rCp1Lrx",
+     "time": 1791759227
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "2RprrbTpGAUesM99tDbTZfPkSPQLmrCqyi7FqVboK9e3kQHSjireYMtT3SMYLfYF7foSZwzpWYKEz6htpSM4ftoK",
+     "time": 1791759225
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "54WS28Vghv7A5ph3d859ixcEcFQVPCiKNSXMJj18CCtvxDxmLbUPGba6647zm87NoqUcVfjzbh41uifDEUMML1EZ",
+     "time": 1791759225
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": -6822653.435395,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 41,
+     "err": null,
+     "sig": "eyAXtEA5CeypzrKdbgmCsS5Wnbdc3DNbdP573NLkTUDpMLw5Q98CmcvxTS6K23D81ZJ2ra5ixvSFRzCEVRRHFog",
+     "time": 1791759225
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "4FKKGFcXhwPMECenXXAh52EumK8c65ZiuRPuECcSByhZYDETBBPP3GAvTEwVrGwARVcrYGaiVqNZRVBQSYV7Ejkw",
+     "time": 1791755989
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 937200.1677579992,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": null,
+     "sig": "GgeM3Z9kaEKym9XoT7RgJGwEXnVCwq9guVzHfryoYxvvFDLxap3dbuETVXW86wEzH6MreVvsNGJLL7yk1CccnMh",
+     "time": 1791755988
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "4UHtGKLJ64weQ15duihhTN32fUgpYK7F8G4CYG9zgmWvQwj1GuRUuK7SCCML92q2tJbRpwAB2YvUtBWJze35jhjJ",
+     "time": 1791755978
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 1861363.899046,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": null,
+     "sig": "3NeZRhx6U2dDhvA9dc7DPctsNeFEATz1YYHpRwwqCMeY44Sbk1gM3Ug7Xx7UfD3FU88GMFh2Cby7wZnwwatWwpmR",
+     "time": 1791755977
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 0.0,
+     "ata_changed": false,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": {
+      "InstructionError": [
+       0,
+       {
+        "Custom": 6000
+       }
+      ]
+     },
+     "sig": "3MKoAzy3CYANpDBN3yV5EFDbFemtWdNfdRen3pDgjVF4qVazgLWTLrwmeiAm7ZiSXjS73mizWifBJk5rANGr2BwB",
+     "time": 1791755061
+    },
+    {
+     "signers": [
+      "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC"
+     ],
+     "kol_signed": true,
+     "ata_in_keys": true,
+     "ata_delta": 1552629.899970999,
+     "ata_changed": true,
+     "programs": [
+      "system",
+      "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3"
+     ],
+     "n_keys": 43,
+     "err": null,
+     "sig": "4MpTvxDEUGLgChMbcUfpwe7FtGNYiSpwpsae5EmJth8gpBzBEe51iLtA4GoLxbfQiTgEgkb3t4EoFuGfRctbx6Jf",
+     "time": 1791755060
+    }
+   ],
+   "survives": true
+  }
+ ],
+ "calls": {
+  "n": 63,
+  "429": 3,
+  "err": 0
+ },
+ "summary": {
+  "spans_wallets": 9,
+  "inside_wallets_floor": 7,
+  "wallets_with_sig_in_window": 7,
+  "survive_wallets": [
+   "CoCo",
+   "Gasp",
+   "Naruza",
+   "Nyhrox",
+   "West",
+   "Yami \ud80c\udcf5",
+   "bandit"
+  ],
+  "survive": 7,
+  "spam_only_wallets": [],
+  "skipped": [],
+  "seconds": 63
+ }
+}
