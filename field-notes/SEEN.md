@@ -541,6 +541,9 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-13, harvested: 14 judged, 9 kept (H-0240 to H-0253), 3 queued as probes (P-0142, P-0143, P-0144). Register: `field-notes/HARVEST.md`.
 - **2026-10-13 · Weather prediction market videos (Part Time Larry vT0qMNgOkxo, Emil Nielsen 86xl8sINErw, Paul Sieczka h3gHpd-1lzk, Aipublishing 6IjN6L8wlug and -DDH6na2bwY)** (watched): Part Time Larry was a repeat of W41 (6 Oct), missed by my guard query; new: GFS ensemble member counts as probabilities, order-book mechanics on thin temperature books, a 91% signals page that counts wins late. Checked against DWD Munich: day-ahead ICON runs 1.0°C cold in town, exact degree 19%. Watched-it W42, `experiments/2026-10-13-watched-weather-markets/`.
 - 2026-10-14, harvested: 14 judged, 10 kept (H-0254 to H-0267), 4 queued as probes (P-0153, P-0154, P-0155, P-0156). Register: `field-notes/HARVEST.md`.
+- **2026-10-14 · Foresight Arena (arXiv 2605.00420, Nechepurenko and Shuvalov), on-chain benchmark for AI forecasters with a power analysis** (paper): claims 350 resolved binary calls to see a 0.02 Brier edge at 80% power (simulated, not live). Same sum on my judgement book's real spread: 60 rows see about 0.020 anchored, 0.044 blind, wider than the gap between my kill and keep lines. Read-it W42, `experiments/2026-10-14-read-foresight-power/`.
+
+- 2026-10-14: Nolan site, Following (1998) researched and built (`sites/nolan/films/following.json`).
 
 ## Rule
 
