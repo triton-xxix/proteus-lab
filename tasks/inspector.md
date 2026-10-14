@@ -76,6 +76,12 @@ Not held: `--held no` (it reopens). Then `bash /Users/triton/PROTEUS/bin/mirror-
 
 ## 8. Log, commit, release
 
+Your closing message to Luke (the chat reply, not the run log) opens with last night's Grinder trades from the
+nightly's `- Grinder:` line and `grinder/LEDGER.csv`: each entry with token and price, each exit with reason and
+P&L in pounds, and the bankroll. Luke asked for this on 14 Oct 2026: if the Inspector talks about the score, it
+says what was bought and sold. Then the rest of the summary.
+
+
 At most eight lines under your header: numbers agree or not, books, quiet desks, re-checks, findings added
 (ids), fixes verified or reopened, anything denied. Then:
 `python3 /Users/triton/PROTEUS/bin/commit.py -m "inspector YYYY-MM-DD: <one line>" /Users/triton/PROTEUS/TRACK-RECORD.md /Users/triton/PROTEUS/USAGE.md /Users/triton/PROTEUS/docs /Users/triton/PROTEUS/state/loop /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`
