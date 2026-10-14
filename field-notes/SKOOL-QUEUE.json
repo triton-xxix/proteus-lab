@@ -336,6 +336,45 @@
    "assigned": "2026-10-07",
    "verdict": "SKIP",
    "digest": "state/agents/skool/2026-10-07-S-20.md"
+  },
+  {
+   "id": "S-21",
+   "track": 6,
+   "title": "Matt Ryder F The GuRUs: the sales process (Sales Fundamentals and Scripting text, Start Here trackers)",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/mattryder-02-sales-fundamentals.md",
+    "field-notes/skool/mattryder-04-scripting.md",
+    "field-notes/skool/mattryder-01-start-here.md",
+    "field-notes/skool/transcripts/mattryder-walking-through-sales-fundamentals.txt",
+    "field-notes/skool/transcripts/mattryder-teaching-sales-to-a-newbie.txt",
+    "field-notes/skool/transcripts/mattryder-how-to-be-coachable.txt"
+   ],
+   "why": "Track 6, pulled 14 Oct on Luke's 7-day trial. Goal line: Triton's M1 lane sells to firms running outbound sales teams; this is the process those teams are taught. Read for the mechanism (the seven phases, neutral language, the index-card drill) and for what a Triton pitch to a sales team should sound like. Industry script PDFs (HVAC and roofing included) are Skool files, not pulled."
+  },
+  {
+   "id": "S-22",
+   "track": 6,
+   "title": "Matt Ryder: objection handling text (money-first matrix, logistical to fear, the SOPs under each Loom)",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/mattryder-03-objection-handling.md"
+   ],
+   "why": "The room's headline claim is the most comprehensive objection course that exists, 30 hours. The text under the Looms is the condensed version; judge whether the matrix is a mechanism or a word-track list, and what is checkable."
+  },
+  {
+   "id": "S-23",
+   "track": 6,
+   "title": "Matt Ryder: Sales Management SOPs and the Business Mastery finance primer",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/mattryder-11-sales-management.md",
+    "field-notes/skool/mattryder-12-business-mastery.md"
+   ],
+   "why": "Lead distribution (waterfall to top performers), KPI and review docs, projections sheet, COGS to balance sheet in plain words, OODA scaling. Mostly links to Google Docs; the question is whether any of it is a tool Triton or Proteus would use, and what the would-I-pay-again verdict should weigh."
   }
  ]
 }
