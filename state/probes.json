@@ -3198,9 +3198,9 @@
    "after": "2026-10-14",
    "est_minutes": 15,
    "added": "2026-10-13",
-   "status": "in_progress",
+   "status": "open",
    "attempts": 1,
-   "started_at": "2026-10-14T00:06:24+0100",
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3218,9 +3218,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T12:32:17+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3228,7 +3228,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "2 of the 9 wallets survive (a KOL signed or the KOL token balance changed inside the window)",
+    "at": "2026-10-14T12:33:10+0100"
+   }
   },
   {
    "id": "P-0142",
