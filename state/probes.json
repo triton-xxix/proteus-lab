@@ -3434,9 +3434,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T23:46:12+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3444,7 +3444,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "dc backtest Brier differs by under 0.0005 between the two fits on 2025-26",
+    "at": "2026-10-14T23:46:27+0100"
+   }
   },
   {
    "id": "P-0149",
