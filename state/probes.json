@@ -3583,22 +3583,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T23:39:52+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T23:40:39+0100",
+   "note": "Measured: 494 of 10,811 counted graduations (4.6%) touch 5x within the 30-min watch, 25 of 867 at liq 50k+; selling at 5x trails holding to 30 min by 4.0 points (counted) and 24.4 (G2). 23 of the 25 G2 hitters still sat above +488% at 30 min, the signature of a Jupiter entry quote far below the candle (G2 top-ten, same day), so most 5x hits are bad entries, not pumps. No 24 h data. Shot said about 2%: missed. Next: close (re-ask on candle entries under D-013).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0155"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "about 2 pct of counted graduations touch 5x inside the 30 min watch",
-    "at": "2026-10-14T23:40:09+0100"
+    "at": "2026-10-14T23:40:09+0100",
+    "hit": true
    }
   },
   {
