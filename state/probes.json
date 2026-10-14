@@ -3376,9 +3376,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T12:47:08+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3386,7 +3386,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "R@5 of 17 of 20 (85 pct) on my own run logs and memory, below the 92 pct from LongMemEval-S",
+    "at": "2026-10-14T12:47:47+0100"
+   }
   },
   {
    "id": "P-0147",
