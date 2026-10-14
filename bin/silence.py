@@ -21,7 +21,9 @@ DESKS = [
     ("grinder-ledger", "grinder/LEDGER.csv", 4, "entries can pause a few nights"),
     ("graduation-book", "grinder/graduates/closed.jsonl", 2, "launchd watcher, continuous"),
     ("pitch-model", "pitch/PREDICTIONS.csv", 4, "league weekends at least weekly"),
-    ("judgement-book", "pitch/JUDGEMENT.csv", 7, "interactive calls, weekly at least"),
+    # 45 not 7 (F-0009, 14 Oct): the book follows the Nations League, which plays in windows about a
+    # month apart (4 Oct, then 12 to 14 Nov), so 45 days flags one missed window, not the gap between
+    ("judgement-book", "pitch/JUDGEMENT.csv", 45, "interactive calls, one Nations League window a month"),
     ("exchange-book", "exchange/BOOK.csv", 4, "up to two blind calls a night"),
     ("systems-book", "systems/SIGNALS.csv", 5, "a row per close"),
     ("lichess", "games/lichess/GAMES.csv", 2, "morning job, daily"),
