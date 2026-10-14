@@ -91,6 +91,11 @@ CASES = [
     ("Bash", {"command": "echo \"$HOME\""}, "deny"),
     # ...but the same characters inside single quotes are just text
     ("Bash", {"command": "grep -c 'a;b' " + ROOT + "x.md"}, "allow"),
+    # F-0019 and F-0020, 14 Oct 2026: ps is read-only; a safe command by full path is the same command
+    ("Bash", {"command": "ps aux"}, "allow"),
+    ("Bash", {"command": "/bin/ls -la " + ROOT + "state"}, "allow"),
+    ("Bash", {"command": "/usr/bin/grep -n x " + ROOT + "x.md"}, "allow"),
+    ("Bash", {"command": "/bin/rm -rf " + ROOT + "state"}, "deny"),
     ("Bash", {"command": "grep -c 'cost $5 & up' " + ROOT + "x.md"}, "allow"),
     ("Bash", {"command": "git -C " + ROOT + " commit -m \"fix: for and while, 2>1; done\""}, "allow"),
     # ffmpeg/ffprobe, cp, npm: added 2026-10-07. The first two are the 6 Oct nightly's denials, verbatim.

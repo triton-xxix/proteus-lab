@@ -88,6 +88,7 @@ SAFE_CMDS = {
     "ls", "cat", "head", "tail", "grep", "egrep", "fgrep", "wc", "sort", "uniq", "cut", "tr",
     "jq", "echo", "printf", "date", "find", "stat", "dirname", "basename", "awk", "sed", "diff",
     "true", "test", "which", "file", "shasum", "column", "curl", "mkdir", "touch",
+    "ps",  # read-only process list (F-0019, 14 Oct 2026)
 }
 
 GIT_READ = ("status", "log", "show", "diff", "rev-parse", "-C", "branch", "remote")
@@ -466,6 +467,11 @@ def bash_ok(cmd):
         if not parts:
             return "Empty pipe segment."
         head = parts[0]
+        # /bin/ls and /usr/bin/grep are the same safe commands by full path (F-0020, 14 Oct 2026).
+        for prefix in ("/bin/", "/usr/bin/"):
+            if head.startswith(prefix) and head[len(prefix):] in SAFE_CMDS:
+                head = head[len(prefix):]
+                break
         if _under_root(head):
             continue
         if head in ("node", "bash", "sh", "python3", "python", VENV_PY, VENV_PY_ALT):
