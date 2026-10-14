@@ -1,5 +1,5 @@
 {
- "next_id": 158,
+ "next_id": 159,
  "items": [
   {
    "id": "P-0001",
@@ -3534,22 +3534,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-14T23:37:40+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-14T23:39:46+0100",
+   "note": "Measured: 144 laggard trades on 11 correlated pairs (16 Aug to 14 Oct), mean +1.49% after 0.2% fees v +0.68% for random holds of the same coins and lengths, p 0.054 (27 of 500); median +0.18%, 89 hit the 48 h stop. Shot said BTC-ETH about -5% v hold; it made +12.8% on 11 trades: missed. Overlapping trades on shared coins make that p too kind, one rising window. Next: deepen (queued: frozen rules on the prior 90 days, day-block shuffle).",
+   "artefacts": [
+    "experiments/2026-10-14-P-0153"
+   ],
+   "minutes": 2,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "laggard switch minus 50/50 hold about -5 pct over 90 days after fees, BTC-ETH",
-    "at": "2026-10-14T23:37:50+0100"
+    "at": "2026-10-14T23:37:50+0100",
+    "hit": true
    }
   },
   {
@@ -3616,6 +3619,26 @@
    "id": "P-0157",
    "title": "Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversation, booking and show rates, and distinct openers by difflib",
    "source": "field-notes",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-14",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0158",
+   "title": "Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block shuffle?",
+   "source": "desk",
    "needs": "",
    "after": "",
    "est_minutes": 20,

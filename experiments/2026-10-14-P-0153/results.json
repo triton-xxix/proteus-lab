@@ -1,0 +1,206 @@
+{
+ "window_start_ms": 1784242800000,
+ "window_end_ms": 1792015200000,
+ "pairs": [
+  [
+   "BTC",
+   "ETH",
+   0.869
+  ],
+  [
+   "BTC",
+   "SOL",
+   0.807
+  ],
+  [
+   "BTC",
+   "XRP",
+   0.728
+  ],
+  [
+   "ETH",
+   "SOL",
+   0.849
+  ],
+  [
+   "ETH",
+   "XRP",
+   0.754
+  ],
+  [
+   "ETH",
+   "DOGE",
+   0.732
+  ],
+  [
+   "ETH",
+   "LINK",
+   0.717
+  ],
+  [
+   "SOL",
+   "XRP",
+   0.775
+  ],
+  [
+   "SOL",
+   "DOGE",
+   0.78
+  ],
+  [
+   "SOL",
+   "LINK",
+   0.719
+  ],
+  [
+   "XRP",
+   "DOGE",
+   0.744
+  ]
+ ],
+ "n_trades": 144,
+ "mean_trade_pct": 1.492,
+ "median_trade_pct": 0.179,
+ "win_rate": 0.528,
+ "sum_pct": 214.81,
+ "random_mean_pct": 0.684,
+ "p_random_beats": 0.054,
+ "mean_hold_h": 39.3,
+ "time_stops": 89,
+ "btc_eth": [
+  {
+   "pair": "BTC-ETH",
+   "coin": "BTC",
+   "i": 808,
+   "hold": 48,
+   "z": -5.57,
+   "ret": 0.12418842462846791
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "BTC",
+   "i": 1073,
+   "hold": 7,
+   "z": -2.58,
+   "ret": -0.02282913504297368
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "ETH",
+   "i": 1138,
+   "hold": 48,
+   "z": 2.89,
+   "ret": 0.058772731466248285
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "BTC",
+   "i": 1282,
+   "hold": 48,
+   "z": -2.13,
+   "ret": -0.011755493074641743
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "BTC",
+   "i": 1339,
+   "hold": 48,
+   "z": -2.06,
+   "ret": -0.003562171451871765
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "BTC",
+   "i": 1585,
+   "hold": 12,
+   "z": -3.14,
+   "ret": 0.043436078388171984
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "BTC",
+   "i": 1765,
+   "hold": 48,
+   "z": -2.52,
+   "ret": 0.01842640891268532
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "ETH",
+   "i": 1853,
+   "hold": 48,
+   "z": 2.61,
+   "ret": -0.020323363181612764
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "ETH",
+   "i": 1971,
+   "hold": 48,
+   "z": 2.75,
+   "ret": -0.048932024129774154
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "ETH",
+   "i": 2020,
+   "hold": 48,
+   "z": 2.44,
+   "ret": 0.0003702463457768701
+  },
+  {
+   "pair": "BTC-ETH",
+   "coin": "ETH",
+   "i": 2151,
+   "hold": 8,
+   "z": 2.09,
+   "ret": -0.009959985910980351
+  }
+ ],
+ "per_pair": {
+  "SOL-XRP": {
+   "n": 15,
+   "mean_pct": 1.331
+  },
+  "ETH-SOL": {
+   "n": 14,
+   "mean_pct": 1.937
+  },
+  "SOL-DOGE": {
+   "n": 11,
+   "mean_pct": 1.415
+  },
+  "XRP-DOGE": {
+   "n": 12,
+   "mean_pct": 3.671
+  },
+  "ETH-LINK": {
+   "n": 11,
+   "mean_pct": 2.48
+  },
+  "SOL-LINK": {
+   "n": 13,
+   "mean_pct": 1.233
+  },
+  "ETH-DOGE": {
+   "n": 13,
+   "mean_pct": 1.803
+  },
+  "BTC-XRP": {
+   "n": 15,
+   "mean_pct": 0.96
+  },
+  "BTC-ETH": {
+   "n": 11,
+   "mean_pct": 1.162
+  },
+  "BTC-SOL": {
+   "n": 15,
+   "mean_pct": 0.871
+  },
+  "ETH-XRP": {
+   "n": 14,
+   "mean_pct": 0.08
+  }
+ }
+}
