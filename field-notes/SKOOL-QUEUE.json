@@ -449,6 +449,40 @@
     "field-notes/skool/transcripts/leadgen-42-code-red-signals.txt"
    ],
    "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The 58-minute Claude Code build is my own tooling pointed at outbound: what does it automate that Proteus could do with skills and sub-agents, and what needs a paid sender. Ghost ink (hidden text to dodge Gmail Promotions) is a claim to check, and an honesty question."
+  },
+  {
+   "id": "S-28",
+   "track": 8,
+   "title": "Email Marketing Community: agency client-getting, Claude Klaviyo reports, Gmail Promotions",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/emc-index.md",
+    "field-notes/skool/emc-00-agency-tips.md",
+    "field-notes/skool/emc-05-claude-reports.md",
+    "field-notes/skool/transcripts/emc-agency-01-start-here.txt",
+    "field-notes/skool/transcripts/emc-agency-02-software-i-use-to-get-work-off-of-upwork.txt",
+    "field-notes/skool/transcripts/emc-agency-03-how-to-track-your-team-s-profit.txt",
+    "field-notes/skool/transcripts/emc-agency-04-how-to-create-content-for-social-media.txt",
+    "field-notes/skool/transcripts/emc-agency-05-how-to-get-out-of-the-promotions-folder-.txt",
+    "field-notes/skool/transcripts/emc-agency-06-how-do-i-recover-more-abandoned-emails.txt",
+    "field-notes/skool/transcripts/emc-agency-07-how-to-get-leads-from-conferences.txt",
+    "field-notes/skool/transcripts/emc-claude-reports-01-guide-to-using-claude-for-reporting.txt"
+   ],
+   "why": "Track 8, Free Email Marketing Community (Gavin Hewitson, ecommerce email agency, free room) pulled 14 Oct on Luke's ask. Goal line is thin: Triton's M1 is firms with outbound sales teams, this room is Klaviyo for Shopify brands. Read for the Claude reporting skill (what it automates, whether Proteus or Triton would build the same thing for any client), the conference and Upwork client-getting, and the Promotions-tab advice set against Lead Gen Jay's ghost ink in S-27."
+  },
+  {
+   "id": "S-29",
+   "track": 8,
+   "title": "Email Marketing Community: Klaviyo set-up, pop-up forms, Omnisend (skim)",
+   "model": "haiku",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/emc-02-klaviyo-setup.md",
+    "field-notes/skool/emc-03-popup-forms.md",
+    "field-notes/skool/emc-04-omnisend.md"
+   ],
+   "why": "Track 8, Free Email Marketing Community (Gavin Hewitson, ecommerce email agency, free room) pulled 14 Oct on Luke's ask. Goal line is thin: Triton's M1 is firms with outbound sales teams, this room is Klaviyo for Shopify brands. Platform how-to; the module text already holds the pasted transcripts, so the caption files are not listed. Skim for any mechanism not already in the toolshelf (zero-party data in pop-ups, attribution windows); SKIP is a fine verdict."
   }
  ]
 }
