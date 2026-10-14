@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 98 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 
-## Queue (19 open)
+## Queue (20 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,10 +28,11 @@ Verdicts so far: 98 works, 5 broken, 21 blocked, 9 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | desk | none |  | 0 | 30 min |
 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | desk | none |  | 0 | 40 min |
-| P-0153 | Pairs laggard: does the long-only laggard of a matched crypto pair beat holding after 0.2% fees on 90 days of hourly candles? | vault | none |  | 0 | 25 min |
+| P-0153 | Pairs laggard: does the long-only laggard of a matched crypto pair beat holding after 0.2% fees on 90 days of hourly candles? | vault | none |  | 1 (in progress) | 25 min |
 | P-0154 | herk-edit-kit: does the keyless starter (npm ci, npm test, synthetic fixture) build and pass on this Mac with no API keys? | harvest | none |  | 0 | 20 min |
 | P-0155 | Pull-at-5x: on dated poller launches, does selling the stake at 5x beat holding to 24h, and how often is 5x reached? | vault | none |  | 0 | 25 min |
 | P-0156 | claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop? | harvest | none |  | 0 | 20 min |
+| P-0157 | Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversation, booking and show rates, and distinct openers by difflib | field-notes | none |  | 0 | 20 min |
 
 ## Verdicts (133)
 

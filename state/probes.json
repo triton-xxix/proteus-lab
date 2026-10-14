@@ -1,5 +1,5 @@
 {
- "next_id": 157,
+ "next_id": 158,
  "items": [
   {
    "id": "P-0001",
@@ -3534,9 +3534,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T23:37:40+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3544,7 +3544,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "laggard switch minus 50/50 hold about -5 pct over 90 days after fees, BTC-ETH",
+    "at": "2026-10-14T23:37:50+0100"
+   }
   },
   {
    "id": "P-0154",
@@ -3590,6 +3596,26 @@
    "id": "P-0156",
    "title": "claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop?",
    "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-14",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0157",
+   "title": "Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversation, booking and show rates, and distinct openers by difflib",
+   "source": "field-notes",
    "needs": "",
    "after": "",
    "est_minutes": 20,
