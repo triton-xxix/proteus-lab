@@ -84,7 +84,9 @@ def main():
         w = csv.DictWriter(fh, fieldnames=FIELDS); w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k, "") for k in FIELDS})
-    print("scored", scored, "of", len(rows))
+    # F-0006 (14 Oct): "scored 0 of 93" was read as nothing ever scored; it meant none new this run
+    total = sum(1 for r in rows if r.get("result") and r["result"] != "LATE")
+    print("scored %d new this run; %d of %d rows scored in all" % (scored, total, len(rows)))
 
 
 if __name__ == "__main__":
