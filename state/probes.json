@@ -3427,9 +3427,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-14T12:42:35+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3437,7 +3437,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "1 of the 7 KOLs is a net buyer before the 22:28:10Z pick and a net seller after it (shot after looking at the P-0141 deltas and first/last times, so a coin)",
+    "at": "2026-10-14T12:42:55+0100"
+   }
   },
   {
    "id": "P-0150",
