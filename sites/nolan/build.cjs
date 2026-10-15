@@ -11,6 +11,7 @@ const { renderTenet } = require('./lib/tenet.cjs');
 const { renderFilm } = require('./lib/film.cjs');
 const { timeline } = require('./lib/timeline.cjs');
 const { glyph } = require('./lib/structure.cjs');
+const { renderThemes } = require('./lib/themes.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -78,7 +79,7 @@ function indexPage(data) {
   <ol class="films">
 ${rows}
   </ol>
-  ${themeRows ? `<section class="tm" aria-label="Themes across the films"><h2 class="site__kicker">Themes, film by film</h2><div class="tm__head"><span></span><span class="tm__dots">${sorted.map(f => `<span class="tm__col" title="${esc(f.title)}">${String(f.year).slice(2)}</span>`).join('')}</span></div>${themeRows}</section>` : ''}
+  ${themeRows ? `<section class="tm" aria-label="Themes across the films"><h2 class="site__kicker">Themes, film by film · <a href="themes/">read every thread</a></h2><div class="tm__head"><span></span><span class="tm__dots">${sorted.map(f => `<span class="tm__col" title="${esc(f.title)}">${String(f.year).slice(2)}</span>`).join('')}</span></div>${themeRows}</section>` : ''}
   <footer class="site__foot">
     <p>Not affiliated with Christopher Nolan, Syncopy or Warner Bros. Stills are © their studios and are used for commentary and criticism. Where a film does not state a day, the page says so.</p>
     <p>Data for every page is published as JSON beside it. Research notes and sources live in <a href="https://github.com/triton-xxix/proteus-lab/tree/main/sites/nolan">the repository</a>.</p>
@@ -120,6 +121,8 @@ function build() {
     if (fs.existsSync(imgDir)) copyDir(imgDir, path.join(OUT, f.slug, 'img'), (name, isDir) => !(isDir && name === 'raw'));
     n++;
   }
+  copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
+  write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));
   write(OUT, 'index.html', indexPage(data));
   fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
   const live = films.films.filter(f => (f.deep_page && fs.existsSync(path.join(OUT, f.deep_page, 'index.html'))) || data[f.slug]).length;
