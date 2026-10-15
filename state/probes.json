@@ -3532,9 +3532,9 @@
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-15T12:34:59+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3542,7 +3542,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.5,
+    "number": "0 trades scored: the window closes 2026-10-21 16:34Z",
+    "at": "2026-10-15T12:35:12+0100"
+   }
   },
   {
    "id": "P-0153",
