@@ -12,8 +12,38 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 216,
+  "count": 219,
   "threads": [
+    {
+      "date": "2026-10-15",
+      "subject": "Alta (altahq.com) AI SDR agents",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "buy Alta",
+      "note": "price and fit wrong at our stage",
+      "where": "TRITON-CORE/Research/links/2026-10-15-altahq-ai-sdr.md",
+      "url": "https://www.altahq.com"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "Alta (altahq.com) AI SDR agents",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "inbound speed-to-lead as a client product",
+      "note": "already on the price list",
+      "where": "TRITON-CORE/Research/links/2026-10-15-altahq-ai-sdr.md",
+      "url": "https://www.altahq.com"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "Alta (altahq.com) AI SDR agents",
+      "kind": "tool",
+      "status": "open",
+      "theme": "signal-timed outreach",
+      "note": "cheap local signals as the why-now in cold email",
+      "where": "TRITON-CORE/Research/links/2026-10-15-altahq-ai-sdr.md",
+      "url": "https://www.altahq.com"
+    },
     {
       "date": "2026-10-14",
       "subject": "@eliteoptionstrader2 pairs trading reel",
@@ -2109,8 +2139,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 53,
+  "links_count": 54,
   "links": [
+    {
+      "date": "2026-10-15",
+      "subject": "Alta (altahq.com) AI SDR agents",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-15-altahq-ai-sdr.md",
+      "url": "https://www.altahq.com",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-10-14",
       "subject": "@eliteoptionstrader2 pairs trading reel",
