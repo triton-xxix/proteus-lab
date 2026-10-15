@@ -13,6 +13,6 @@
   "P-0152",
   "P-0151"
  ],
- "stopped_at": null,
- "stop_reason": null
+ "stopped_at": "2026-10-15T12:47:33+0100",
+ "stop_reason": "nothing runnable: 3 need something I do not have (P-0025: vim and neovim binaries (brew install if not already present, no accounts); P-0045: A small free model download from Hugging Face; Apple silicon; P-0080: a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form); 5 wait on a date (P-0012 after 2026-10-22; P-0013 after 2026-10-20; P-0133 after 2026-10-16; P-0150 after 2026-10-28; P-0159 after 2026-10-22); 4 estimated over 2 times the 15 min left (P-0072 60 min, P-0075 60 min, P-0076 60 min, P-0077 60 min); no refill: 15 min left, under the 25 needed for a refill"
 }
