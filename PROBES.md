@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 107 works, 5 broken, 23 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 107 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,7 +17,6 @@ Verdicts so far: 107 works, 5 broken, 23 blocked, 10 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | refill | none |  | 0 | 60 min |
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
@@ -25,10 +24,11 @@ Verdicts so far: 107 works, 5 broken, 23 blocked, 10 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (145)
+## Verdicts (146)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-15 | P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | **blocked** | Not run: no ollama binary at /usr/local/bin or /Applications, so no model answers exist to compare against Sonnet. | `experiments/2026-10-15-P-0160` | 0 min, 3 calls, 0 denied |
 | 2026-10-15 | P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | **blocked** | Not run: the probe ends in a paid subscription, which is unclear as capability versus stake and so counts as a stake; no paid step taken. | `experiments/2026-10-15-P-0160` | 0 min, 2 calls, 0 denied |
 | 2026-10-15 | P-0160 | mcd-saver-strategist: does the offline optimizer reproduce 47.00 to 21.90 and pass its 19 self-tests? | **works** | Selftest passes 19 of 19 and optimizer.py on the bundled sample reproduces 47.00 to 21.90 yuan (53%) over 13 feasible plans; sample data only, live coupons need a vendor MCP token I do not have. | `experiments/2026-10-15-P-0160` | 0 min, 13 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/sandbox/mcd-saver-strateg` | | |
