@@ -6,22 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-267 judged over 18 harvest days, 181 kept, 60 testable, 57 queued as probes, 51 with a probe verdict.
+281 judged over 19 harvest days, 188 kept, 61 testable, 58 queued as probes, 55 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0280 | 2026-10-15 | vault | [One live automation platform behind the website monthly fee](https://www.youtube.com/watch?v=_5uSbMMOkCQ) | mechanism | tools-for-strangers | no: Needs a platform account, a UK sender number and a real phon |  |
+| H-0279 | 2026-10-15 | awesome | [huggingface/funes (new in awesome-claude-code)](https://github.com/huggingface/funes) | mechanism | tools-for-strangers | no: Runs a downloaded binary from a curl pipe and needs a coding |  |
+| H-0277 | 2026-10-15 | arxiv | [Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents](https://arxiv.org/abs/2610.20344) | mechanism | mechanism-hunting | no: Needs the benchmark release and many frontier model calls, w |  |
+| H-0276 | 2026-10-15 | github | [i12bp8/decomp.wtf: What The Function: your AI agent decompiles games you own into C that c](https://github.com/i12bp8/decomp.wtf) | mechanism | mechanism-hunting | no: Linux and Windows only (not macOS), needs a game ROM and the |  |
+| H-0274 | 2026-10-15 | vault | [UK accounts editions](https://claude.com/marketplace/plugins/small-business) | mechanism | tools-for-strangers | no: Confirming the UK connectors needs a paid plan and a Xero or |  |
+| H-0270 | 2026-10-15 | github | [hujjun/mcd-saver-strategist: 麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨](https://github.com/hujjun/mcd-saver-strategist) | mechanism | tools-for-strangers | yes | P-0160 |
+| H-0268 | 2026-10-15 | vault | [signal-timed outreach](https://www.altahq.com) | mechanism | tools-for-strangers | no: The verdict is a reply rate, which needs real sends to real  |  |
 | H-0266 | 2026-10-14 | github | [nateherkai/roast-room: Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Marte](https://github.com/nateherkai/roast-room) | both | tools-for-strangers | no: The useful part needs many live Claude calls and is not keyl |  |
 | H-0265 | 2026-10-14 | hn | [Show HN: I wrote an email app that accepts only one sender per inbox](https://clova.email/) | both | tools-for-strangers | no: It requires signing up for the service and owning a domain. |  |
 | H-0264 | 2026-10-14 | vault | [score the 20-minute filter set on a dated cohort](https://www.instagram.com/reel/DcjuRbTyUPV/) | mechanism | desk:grinder | yes |  |
 | H-0262 | 2026-10-14 | arxiv | [SEAR: Self-Evolving Agentic Robotics](https://arxiv.org/abs/2610.18792) | mechanism | mechanism-hunting | no: It needs robot simulators and frontier model budgets across  |  |
-| H-0261 | 2026-10-14 | github | [YeonwooSung/my-claude-code-mods: Custom Claude Code Mods that I need](https://github.com/YeonwooSung/my-claude-code-mods) | mechanism | tools-for-strangers | yes | P-0156 |
-| H-0259 | 2026-10-14 | vault | [pull the stake at 5x versus holding](https://www.instagram.com/reel/DecmMdSuofw/) | mechanism | desk:grinder | yes | P-0155 |
+| H-0261 | 2026-10-14 | github | [YeonwooSung/my-claude-code-mods: Custom Claude Code Mods that I need](https://github.com/YeonwooSung/my-claude-code-mods) | mechanism | tools-for-strangers | yes | P-0156 **works** |
+| H-0259 | 2026-10-14 | vault | [pull the stake at 5x versus holding](https://www.instagram.com/reel/DecmMdSuofw/) | mechanism | desk:grinder | yes | P-0155 **works** |
 | H-0257 | 2026-10-14 | arxiv | [ChunkAct: Action Chunking for Agentic Robotics](https://arxiv.org/abs/2610.18874) | mechanism | tech | no: It needs the LIBERO-Pro robot simulator and a VLA stack, whi |  |
-| H-0256 | 2026-10-14 | github | [nateherkai/herk-edit-kit: Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shor](https://github.com/nateherkai/herk-edit-kit) | mechanism | tools-for-strangers | yes | P-0154 |
+| H-0256 | 2026-10-14 | github | [nateherkai/herk-edit-kit: Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shor](https://github.com/nateherkai/herk-edit-kit) | mechanism | tools-for-strangers | yes | P-0154 **works** |
 | H-0255 | 2026-10-14 | hn | [Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine](https://pulseos.finance) | mechanism | tools-for-strangers | no: It needs a local model runtime and the weights, and there is |  |
-| H-0254 | 2026-10-14 | vault | [crypto spot pairs laggard check](https://www.instagram.com/reel/DeaHN_lJJkB/) | mechanism | mechanism-hunting | yes | P-0153 |
+| H-0254 | 2026-10-14 | vault | [crypto spot pairs laggard check](https://www.instagram.com/reel/DeaHN_lJJkB/) | mechanism | mechanism-hunting | yes | P-0153 **works** |
 | H-0252 | 2026-10-13 | vault | [Per-post CPM tracked per account feeding back into what gets made next]() | mechanism | tools-for-strangers | no: It needs live posts with real view counts from owned account |  |
 | H-0250 | 2026-10-13 | youtube | [Build a Simple Expected Goals Model with Machine Learning and Python](https://www.youtube.com/watch?v=GsfXAzfvJVM) | mechanism | desk:pitch | yes | P-0144 **works** |
 | H-0249 | 2026-10-13 | arxiv | [SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability](https://arxiv.org/abs/2610.13461) | mechanism | mechanism-hunting | no: Needs a Lean toolchain and the released problem set, and a m |  |
@@ -195,6 +202,95 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0280 One live automation platform behind the website monthly fee
+2026-10-15, vault, https://www.youtube.com/watch?v=_5uSbMMOkCQ
+
+- **Mechanism:** A local business website is sold with a monthly fee covering an automation platform behind it: missed-call text back, form-to-text, review requests and booking. The platform watches inbound calls and forms, fires a templated text through a UK number, and logs leads. Monthly tiers are defined by which automations are on, not by hours of care.
+- **Claim:** A website plus live automation justifies a recurring monthly fee for local businesses.
+- **Testable:** no. Needs a platform account, a UK sender number and a real phone line to test. Needs: An automation platform account and a UK number..
+- **Idea on its own:** sound. Fast reply to a missed call is a real, simple mechanism, and the work is wiring plus UK messaging compliance.
+- **How it would be done:** Pick a platform, port or buy a UK number, and set a trigger on missed calls that sends one SMS with a booking link. Add a form-to-text path and a review request after a completed job. Test with a real phone through each path and record delivery times. A person is needed for number registration, sender ID rules and the client's consent wording.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Twilio https://www.twilio.com/ (Programmable UK number and SMS if building the missed-call text back directly (paid, needs an account).)
+- **Missing:** A tested UK number and platform, unverified since July per the vault note.
+- **Field Notes line:** Missed-call text back is the small automation that sits behind a website's monthly fee; the open question is a tested UK number.
+
+### H-0279 huggingface/funes (new in awesome-claude-code)
+2026-10-15, awesome, https://github.com/huggingface/funes. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A Rust binary indexes past agent session transcripts (Claude Code, Codex and others) into a searchable store, and exposes recall and get as tools to the agent. A per-turn hook keeps the index current, and the memory can be published as a Hugging Face dataset so another machine or person recalls from it with one flag. Answers name the sessions they drew from.
+- **Claim:** Any agent can recall past decisions and rationale across tools, with memory shared as a Hub dataset.
+- **Testable:** no. Runs a downloaded binary from a curl pipe and needs a coding agent to answer, which is not a keyless sandbox test. Needs: A model to answer questions, and trust in the prebuilt binary..
+- **Idea on its own:** sound. Transcript indexing with cited recall is a straightforward retrieval design that fits how sessions already log to disk.
+- **How it would be done:** Proteus already keeps run logs and transcripts, so the same idea is a local index over them with source IDs. Steps: parse transcript files, chunk by turn, index with a keyword or embedding search, and return hits with session ID. Funes could be tried on the public huggingface/funes-memory dataset, but only after reading its install script rather than piping it to a shell.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** funes https://github.com/huggingface/funes (Reference implementation of session recall.); funes-memory dataset https://huggingface.co/datasets/huggingface/funes-memory (Public sample memory to inspect structure.)
+- **Field Notes line:** Session transcripts become a searchable, shareable dataset the agent queries mid-task, with sources named.
+
+### H-0277 Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents
+2026-10-15, arxiv, https://arxiv.org/abs/2610.20344
+
+- **Mechanism:** Stage one has a model build a full agent harness from an interface skeleton and a document describing twelve existing harnesses. Stage two runs the frozen harness in fresh containers per test case, driven by a scripted mock model so the model is not a variable. Each case is scored on four observable channels: requests sent to the model, files on disk, exit code and command output, with positive controls to rule out vacuous passes.
+- **Claim:** Across 19 models and 328 test cases, the best pass rate is 53.05% and the weakest 27.44%.
+- **Testable:** no. Needs the benchmark release and many frontier model calls, which are not keyless. Needs: The benchmark code and paid model access..
+- **Idea on its own:** sound. Removing the model from the loop with a scripted stand-in isolates the harness, which is a clean experimental design.
+- **How it would be done:** Borrow the scoring design for testing Proteus's own hook and run scripts: feed the hook a scripted sequence of tool calls and assert on files written, exit codes and output. The existing hook test script already does something like this. Reading the paper's repo, once published, would show how they structure the cases. No hired help needed.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** The benchmark's code and test cases, if released.
+- **Field Notes line:** A scripted mock model replaces the real one so harness quality can be scored deterministically, on four observable channels.
+
+### H-0276 i12bp8/decomp.wtf: What The Function: your AI agent decompiles games you own into C that compiles to the exact same byte
+2026-10-15, github, https://github.com/i12bp8/decomp.wtf
+
+- **Mechanism:** An agent is handed a game one function at a time. Each attempted C function is compiled with the game's original compiler and compared byte for byte with the original machine code, and only an exact match scores. That hard oracle stops the model bluffing and lets it iterate until it matches. It runs locally on Linux (compilers are Linux programs) and needs the user's own ROM.
+- **Claim:** Point your own agent at a game you own and it produces C that rebuilds to identical bytes, with 245 public projects to continue.
+- **Testable:** no. Linux and Windows only (not macOS), needs a game ROM and the project is archived. Needs: A Linux box and a legally owned ROM..
+- **Idea on its own:** sound. An exact-match verifier is the strongest kind of feedback loop for an agent, whatever the domain.
+- **How it would be done:** The pattern is: pick a task with a cheap exact oracle, give the agent a tool to submit attempts, and score only on a perfect match. For decompilation that means the matching compiler plus a diff of the object file. Reuse the idea elsewhere, for example matching generated output against a reference hash. A person is needed for ROM dumps and for community norms, since many decomp projects reject AI contributions.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** decomp.wtf https://github.com/i12bp8/decomp.wtf (Reference implementation of the byte-match loop (archived, v0.10.6).); decomp.dev https://decomp.dev (Index of public matching-decomp projects and their progress data.)
+- **Missing:** A Linux environment, since macOS is unsupported.
+- **Field Notes line:** A byte-exact compiler check turns decompiling into a game the agent cannot cheat, and the author archived it after community pushback.
+
+### H-0274 UK accounts editions
+2026-10-15, vault, https://claude.com/marketplace/plugins/small-business
+
+- **Mechanism:** An assistant connects to a small business's email, calendar, files and accounts software through connectors (MCP-style), and each workflow starts in approval mode so a human OKs actions. The open question is whether the Xero UK and QuickBooks UK connectors exist as UK editions with the same scopes as the US ones. That is answered by the connector listings and docs, not by the assistant itself.
+- **Claim:** The plugin replaces Make, Zapier or n8n stitching with one assistant across email, calendar, files and, on paid plans, accounting tools.
+- **Testable:** no. Confirming the UK connectors needs a paid plan and a Xero or QuickBooks account. Needs: A paid Claude plan and a Xero UK or QuickBooks UK sandbox company..
+- **Idea on its own:** needs-a-run. The idea is sound if the UK connectors exist and behave the same, which only a connected test shows.
+- **How it would be done:** Read the connector directory and each connector's docs for UK region and scope notes. Create a free Xero demo company, connect it, and run one read-only query and one approval-gated write. Record what worked and what the UK edition lacked, such as VAT or Making Tax Digital fields. A person would handle account sign-up and the paid plan.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Xero demo company https://www.xero.com/uk/ (Free demo company to test a UK accounts connector against.)
+- **Missing:** Confirmation that UK accounts connectors exist, which nobody has checked.
+- **Field Notes line:** Before promising a UK small business an assistant wired to Xero, check whether the UK connector exists, not just the US one.
+
+### H-0270 hujjun/mcd-saver-strategist: 麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨无霸套餐 ¥47 → ¥21.9（省 53%）。McDona
+2026-10-15, github, https://github.com/hujjun/mcd-saver-strategist
+
+- **Mechanism:** An agent fetches menu, prices and every available coupon from McDonald's China MCP, normalises them to JSON, then a deterministic Python optimiser searches the combinations for the lowest total under optional budget and calorie caps. Coupons marked non-stackable are treated as exclusive with all others. The model only explains and orders; arithmetic is kept out of the LLM because it gets sums wrong. Price is re-checked with the MCP calculate-price call before ordering.
+- **Claim:** A Big Mac meal drops from 47.00 to 21.90 yuan (53% saving) using the 1+1 coupon combination, on sample data.
+- **Testable:** yes. Does the bundled offline optimizer.py run and does selftest.py pass all 19 tests, reproducing the 21.90 yuan result on its sample data? Queued as P-0160.
+- **Idea on its own:** sound. Splitting retrieval, exact optimisation and explanation is a clean pattern, and coupon stacking is a small knapsack problem.
+- **How it would be done:** Clone the repo into sandbox, run optimizer.py and selftest.py on the bundled sample data and compare the printed saving with the README. Then perturb the sample coupons to check the exclusivity rule holds. The same pattern (fetch, normalise, solve, verify) would apply to UK supermarket multibuy offers if a public price source existed. Live use needs the vendor's MCP token, which Proteus does not have.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** mcd-saver-strategist https://github.com/hujjun/mcd-saver-strategist (Offline optimizer and self-test to run.)
+- **Missing:** Live menu and coupon data needs a vendor MCP token.
+- **Field Notes line:** Keep coupon arithmetic out of the model: the agent fetches data, plain Python searches the combinations, and the shop's price check confirms.
+
+### H-0268 signal-timed outreach
+2026-10-15, vault, https://www.altahq.com
+
+- **Mechanism:** Cold email is timed to a cheap public local signal (a new company filing, a planning application, a fresh job advert, a bad review, a closed-lost deal) so the first line gives a real why-now. A scheduled job pulls the signal feed, matches it to a prospect list, and a template or model writes one line from the signal. The lift comes from relevance and timing, not volume, and the numbers come from reply rates per signal type once sent.
+- **Claim:** Alta says AI SDR agents use buying signals to time outreach; the vault note is that cheap local signals can serve as the why-now.
+- **Testable:** no. The verdict is a reply rate, which needs real sends to real people, not a keyless run. Needs: Sending domain, a prospect list and live sends under UK PECR rules..
+- **Idea on its own:** needs-a-run. Signal-led relevance is plausible but only a split send shows whether it beats a plain opener.
+- **How it would be done:** Pick two or three free feeds that fire for trades firms, such as Companies House new incorporations, planning portals or job boards. Write a small poller that logs new signals per day with a timestamp. Join them to a prospect list by name or postcode. Draft one-line openers per signal type and send half with the signal and half without, then compare replies. A person is needed for the sending identity and for checking each draft against UK B2B email rules.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** Companies House bulk product and API https://developer.company-information.service.gov.uk/ (Free feed of new UK company incorporations as a signal source (API key is free but needs an account).)
+- **Missing:** A sending identity with reply volume large enough to split-test.
+- **Field Notes line:** Timing cold email to a public local signal, not a vendor's quote-only AI SDR, is the part worth copying.
 
 ### H-0266 nateherkai/roast-room: Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Martell, Gino Wickman, Buffett) deb
 2026-10-14, github, https://github.com/nateherkai/roast-room
@@ -2259,9 +2355,12 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0280 | 2026-10-15 | One live automation platform behind the website monthly fee | open | sound | no |  |
+| H-0274 | 2026-10-15 | UK accounts editions | open | needs-a-run | no |  |
+| H-0268 | 2026-10-15 | signal-timed outreach | open | needs-a-run | no |  |
 | H-0264 | 2026-10-14 | score the 20-minute filter set on a dated cohort | open | needs-a-run | yes |  |
-| H-0259 | 2026-10-14 | pull the stake at 5x versus holding | open | needs-a-run | yes | P-0155 |
-| H-0254 | 2026-10-14 | crypto spot pairs laggard check | open | needs-a-run | yes | P-0153 |
+| H-0259 | 2026-10-14 | pull the stake at 5x versus holding | open | needs-a-run | yes | P-0155 **works** |
+| H-0254 | 2026-10-14 | crypto spot pairs laggard check | open | needs-a-run | yes | P-0153 **works** |
 | H-0252 | 2026-10-13 | Per-post CPM tracked per account feeding back into what gets made next | open | sound | no |  |
 | H-0246 | 2026-10-13 | Flat monthly editing retainer for businesses already producing content | open | sound | no |  |
 | H-0240 | 2026-10-13 | service x city landing pages | open | needs-a-run | no |  |
@@ -2315,6 +2414,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0180 | 2026-10-15 | [Twilio](https://www.twilio.com/) | Programmable UK number and SMS if building the missed-call text back directly (paid, needs an account). | H-0280 (One live automation platform behind the website mo) | shelf |
+| T-0179 | 2026-10-15 | [funes-memory dataset](https://huggingface.co/datasets/huggingface/funes-memory) | Public sample memory to inspect structure. | H-0279 (huggingface/funes (new in awesome-claude-code)) | shelf |
+| T-0178 | 2026-10-15 | [funes](https://github.com/huggingface/funes) | Reference implementation of session recall. | H-0279 (huggingface/funes (new in awesome-claude-code)) | shelf |
+| T-0177 | 2026-10-15 | [decomp.dev](https://decomp.dev) | Index of public matching-decomp projects and their progress data. | H-0276 (i12bp8/decomp.wtf: What The Function: your AI agen) | shelf |
+| T-0176 | 2026-10-15 | [decomp.wtf](https://github.com/i12bp8/decomp.wtf) | Reference implementation of the byte-match loop (archived, v0.10.6). | H-0276 (i12bp8/decomp.wtf: What The Function: your AI agen) | shelf |
+| T-0175 | 2026-10-15 | [Xero demo company](https://www.xero.com/uk/) | Free demo company to test a UK accounts connector against. | H-0274 (UK accounts editions) | shelf |
+| T-0174 | 2026-10-15 | [mcd-saver-strategist](https://github.com/hujjun/mcd-saver-strategist) | Offline optimizer and self-test to run. | H-0270 (hujjun/mcd-saver-strategist: 麦当劳省钱点餐助手（麦门精算师）｜麦当劳优) | shelf |
+| T-0173 | 2026-10-15 | [Companies House bulk product and API](https://developer.company-information.service.gov.uk/) | Free feed of new UK company incorporations as a signal source (API key is free but needs an account). | H-0268 (signal-timed outreach) | shelf |
 | T-0172 | 2026-10-14 | [roast-room](https://github.com/nateherkai/roast-room) | The council prompts and local viewer. | H-0266 (nateherkai/roast-room: Seven AI advisors (Bezos, P) | shelf |
 | T-0171 | 2026-10-14 | [Postfix](https://www.postfix.org/) | Self-hosted SMTP with policy hooks to implement first-sender locking. | H-0265 (Show HN: I wrote an email app that accepts only on) | shelf |
 | T-0170 | 2026-10-14 | [OpenTelemetry Jaeger](https://www.jaegertracing.io/download/) | Viewer for the exported OTLP traces. | H-0261 (YeonwooSung/my-claude-code-mods: Custom Claude Cod) | shelf |
@@ -2492,6 +2599,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0281 | 2026-10-15 | hn | [Show HN: Indigene – Native plants for where you stand](https://indigene.app/) | Consumer plant lookup app, body gives no usable mechanism beyond cross-referenced open data. |
+| H-0278 | 2026-10-15 | youtube | [This Claude Code Skill Makes Your Usage Limit Last Way Longer](https://www.youtube.com/watch?v=g8lhaArp1U4) | Transcript unavailable (IpBlocked), title is a claim with no visible mechanism. |
+| H-0275 | 2026-10-15 | hn | [Show HN: Petal, open-source CoScreen/ScreenHero finally free](https://petal.live/) | Screen-sharing tool relaunch, no mechanism relevant to the desks. |
+| H-0273 | 2026-10-15 | awesome | [alexex1993/mcu-skills (new in awesome-claude-code)](https://github.com/alexex1993/mcu-skills) | Vendor already judged; one SKILL.md per board is the known skills pattern, nothing new. |
+| H-0272 | 2026-10-15 | youtube | [Football Betting Algorithm in Python Explained](https://www.youtube.com/watch?v=MFYdwr5tL74) | Transcript unavailable (IpBlocked) and the Dixon-Coles desk already exists. |
+| H-0271 | 2026-10-15 | arxiv | [From Relevance to Validity: Zero-Shot Tool Selection via Functional and Contextu](https://arxiv.org/abs/2610.20388) | Abstract names no method detail or numbers, only a claimed improvement in tool ranking. |
+| H-0269 | 2026-10-15 | hn | [Why We're Banning AI](https://www.currentaffairs.org/news/why-were-banning-ai) | Opinion piece about a magazine banning AI writing, no mechanism. |
 | H-0267 | 2026-10-14 | youtube | [AI Agent Memory Stack Explained / Rakesh Gohel](https://www.youtube.com/watch?v=UbZyh6OCx0g) | Transcript is only music markers, nothing to judge. |
 | H-0263 | 2026-10-14 | youtube | [The Only 4 Types of Cars That Hold Their Value And Do Not Depreciate](https://www.youtube.com/watch?v=XVGeUUFRN5s) | A listicle summarising a third-party depreciation study with no mechanism to run. |
 | H-0260 | 2026-10-14 | hn | [Show HN: A guided 3D Leonardo da Vinci museum, built in code](https://museumofages.org/w/vinci) | A showcase of a 3D museum; the mechanism is standard Three.js and offers nothing to test. |

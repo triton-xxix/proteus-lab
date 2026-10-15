@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 106 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 
-## Queue (12 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,6 +25,7 @@ Verdicts so far: 106 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
+| P-0160 | mcd-saver-strategist: does the offline optimizer reproduce 47.00 to 21.90 and pass its 19 self-tests? | harvest | none |  | 0 | 15 min |
 
 ## Verdicts (143)
 
