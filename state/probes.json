@@ -1,5 +1,5 @@
 {
- "next_id": 159,
+ "next_id": 160,
  "items": [
   {
    "id": "P-0001",
@@ -3512,9 +3512,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 1,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 2,
+   "started_at": "2026-10-15T12:35:31+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3522,7 +3522,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "2 KOL wallets with a KOL-signed trade on a pick within an hour either side, 1 of them out before the pick",
+    "at": "2026-10-15T12:35:56+0100"
+   }
   },
   {
    "id": "P-0152",
@@ -3729,6 +3735,26 @@
     "at": "2026-10-15T12:31:47+0100",
     "hit": true
    }
+  },
+  {
+   "id": "P-0159",
+   "title": "G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-10-22",
+   "est_minutes": 40,
+   "added": "2026-10-15",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
