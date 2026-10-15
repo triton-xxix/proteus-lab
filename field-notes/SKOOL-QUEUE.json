@@ -362,30 +362,38 @@
    "track": 6,
    "title": "Matt Ryder: objection handling text (money-first matrix, logistical to fear, the SOPs under each Loom)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/mattryder-03-objection-handling.md"
    ],
-   "why": "The room's headline claim is the most comprehensive objection course that exists, 30 hours. The text under the Looms is the condensed version; judge whether the matrix is a mechanism or a word-track list, and what is checkable."
+   "why": "The room's headline claim is the most comprehensive objection course that exists, 30 hours. The text under the Looms is the condensed version; judge whether the matrix is a mechanism or a word-track list, and what is checkable.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-22.md"
   },
   {
    "id": "S-23",
    "track": 6,
    "title": "Matt Ryder: Sales Management SOPs and the Business Mastery finance primer",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/mattryder-11-sales-management.md",
     "field-notes/skool/mattryder-12-business-mastery.md"
    ],
-   "why": "Lead distribution (waterfall to top performers), KPI and review docs, projections sheet, COGS to balance sheet in plain words, OODA scaling. Mostly links to Google Docs; the question is whether any of it is a tool Triton or Proteus would use, and what the would-I-pay-again verdict should weigh."
+   "why": "Lead distribution (waterfall to top performers), KPI and review docs, projections sheet, COGS to balance sheet in plain words, OODA scaling. Mostly links to Google Docs; the question is whether any of it is a tool Triton or Proteus would use, and what the would-I-pay-again verdict should weigh.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-23.md"
   },
   {
    "id": "S-24",
    "track": 7,
    "title": "Lead Gen Jay: cold email infrastructure and deliverability (domains, DNS, sending tool, warmup, tests, blacklists)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/leadgen-index.md",
     "field-notes/skool/leadgen-04-toolkit.md",
@@ -399,14 +407,18 @@
     "field-notes/skool/transcripts/leadgen-15-fixing-deliverability-issues.txt",
     "field-notes/skool/transcripts/leadgen-11-how-avoid-blacklists-in-2026.txt"
    ],
-   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. Read for the mechanism (what actually decides inbox placement) and which claims are checkable with DNS lookups and free blacklist checks, keylessly."
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. Read for the mechanism (what actually decides inbox placement) and which claims are checkable with DNS lookups and free blacklist checks, keylessly.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-15-S-24.md"
   },
   {
    "id": "S-25",
    "track": 7,
    "title": "Lead Gen Jay: list building, verification, qualification, offers (Google Maps scraping, 10% reply claim)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/leadgen-16-list-building-basics.txt",
     "field-notes/skool/transcripts/leadgen-17-the-secret-to-10-reply-rates.txt",
@@ -418,14 +430,18 @@
     "field-notes/skool/transcripts/leadgen-24-strategies-for-tough-offers.txt",
     "field-notes/skool/transcripts/leadgen-25-i-dont-have-an-offer-yet.txt"
    ],
-   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. Plumbing and HVAC firms are Triton targets; the free Google Maps scraper is the nearest thing to a list for them. Compare with the harvester's keyless pulls."
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. Plumbing and HVAC firms are Triton targets; the free Google Maps scraper is the nearest thing to a list for them. Compare with the harvester's keyless pulls.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-15-S-25.md"
   },
   {
    "id": "S-26",
    "track": 7,
    "title": "Lead Gen Jay: reverse lead magnets and cold email copy",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/leadgen-27-intro-to-lead-magnets.txt",
     "field-notes/skool/transcripts/leadgen-28-the-king-of-lead-magnets.txt",
@@ -434,14 +450,18 @@
     "field-notes/skool/transcripts/leadgen-31-email-sequences.txt",
     "field-notes/skool/transcripts/leadgen-32-what-not-to-put-in-your-cold-emails.txt"
    ],
-   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The reverse lead magnet (a small tool that analyses the prospect's site and returns specific insight) is a thing Proteus could build and show. Judge whether it is a mechanism or a pitch."
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The reverse lead magnet (a small tool that analyses the prospect's site and returns specific insight) is a thing Proteus could build and show. Judge whether it is a mechanism or a pitch.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-15-S-26.md"
   },
   {
    "id": "S-27",
    "track": 7,
    "title": "Lead Gen Jay: Claude Code x Cold Email (58 min) and running the machine (campaigns, ghost ink, testing, replies, scaling)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/leadgen-34-claude-code-x-cold-email.txt",
     "field-notes/skool/transcripts/leadgen-33-setting-up-your-campaigns.txt",
@@ -452,14 +472,18 @@
     "field-notes/skool/transcripts/leadgen-43-scaling-your-machine.txt",
     "field-notes/skool/transcripts/leadgen-42-code-red-signals.txt"
    ],
-   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The 58-minute Claude Code build is my own tooling pointed at outbound: what does it automate that Proteus could do with skills and sub-agents, and what needs a paid sender. Ghost ink (hidden text to dodge Gmail Promotions) is a claim to check, and an honesty question."
+   "why": "Track 7, Lead Gen Secrets (Lead Gen Jay, free room) pulled 14 Oct on Luke's ask. Goal line: Triton's M1 lane sells to firms running outbound sales teams; cold email is their channel. The Vimeo lessons are the 7h masterclass in chapters (about 55% exact 8-word overlap), so the masterclass transcript is not queued. UK caveat: his compliance talk is US CAN-SPAM, not PECR. The 58-minute Claude Code build is my own tooling pointed at outbound: what does it automate that Proteus could do with skills and sub-agents, and what needs a paid sender. Ghost ink (hidden text to dodge Gmail Promotions) is a claim to check, and an honesty question.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-27.md"
   },
   {
    "id": "S-28",
    "track": 8,
    "title": "Email Marketing Community: agency client-getting, Claude Klaviyo reports, Gmail Promotions",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/emc-index.md",
     "field-notes/skool/emc-00-agency-tips.md",
@@ -475,20 +499,240 @@
     "field-notes/skool/emc-files/README.md",
     "field-notes/skool/emc-files/klaviyo-skill-unzipped/klaviyo-campaign-intelligence/SKILL.md"
    ],
-   "why": "Track 8, Free Email Marketing Community (Gavin Hewitson, ecommerce email agency, free room) pulled 14 Oct on Luke's ask. Goal line is thin: Triton's M1 is firms with outbound sales teams, this room is Klaviyo for Shopify brands. Read for the Claude reporting skill (what it automates, whether Proteus or Triton would build the same thing for any client), the conference and Upwork client-getting, and the Promotions-tab advice set against Lead Gen Jay's ghost ink in S-27."
+   "why": "Track 8, Free Email Marketing Community (Gavin Hewitson, ecommerce email agency, free room) pulled 14 Oct on Luke's ask. Goal line is thin: Triton's M1 is firms with outbound sales teams, this room is Klaviyo for Shopify brands. Read for the Claude reporting skill (what it automates, whether Proteus or Triton would build the same thing for any client), the conference and Upwork client-getting, and the Promotions-tab advice set against Lead Gen Jay's ghost ink in S-27.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-28.md"
   },
   {
    "id": "S-29",
    "track": 8,
    "title": "Email Marketing Community: Klaviyo set-up, pop-up forms, Omnisend (skim)",
    "model": "haiku",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/emc-02-klaviyo-setup.md",
     "field-notes/skool/emc-03-popup-forms.md",
     "field-notes/skool/emc-04-omnisend.md"
    ],
-   "why": "Track 8, Free Email Marketing Community (Gavin Hewitson, ecommerce email agency, free room) pulled 14 Oct on Luke's ask. Goal line is thin: Triton's M1 is firms with outbound sales teams, this room is Klaviyo for Shopify brands. Platform how-to; the module text already holds the pasted transcripts, so the caption files are not listed. Skim for any mechanism not already in the toolshelf (zero-party data in pop-ups, attribution windows); SKIP is a fine verdict."
+   "why": "Track 8, Free Email Marketing Community (Gavin Hewitson, ecommerce email agency, free room) pulled 14 Oct on Luke's ask. Goal line is thin: Triton's M1 is firms with outbound sales teams, this room is Klaviyo for Shopify brands. Platform how-to; the module text already holds the pasted transcripts, so the caption files are not listed. Skim for any mechanism not already in the toolshelf (zero-party data in pop-ups, attribution windows); SKIP is a fine verdict.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-15-S-29.md"
+  },
+  {
+   "id": "S-30",
+   "track": 9,
+   "title": "Matt Ryder: the objection course sessions (sampled 4 of 23), the Book of Reframes and the objection matrix",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/mattryder-03-objection-handling-001-welcome-to-the-show.txt",
+    "field-notes/skool/transcripts/mattryder-03-objection-handling-015-prospect-gives-hardcore-money-objection-audi.txt",
+    "field-notes/skool/transcripts/mattryder-03-objection-handling-026-session-6.txt",
+    "field-notes/skool/transcripts/mattryder-03-objection-handling-037-record-and-post.txt",
+    "field-notes/skool/mattryder-files/r13-Book-of-reframes.txt",
+    "field-notes/skool/mattryder-files/c03-Sales-Sniper-Objection-Handling-Matrix-2025.txt"
+   ],
+   "why": "Track 9, extracted 15 Oct on Luke's ask ('extract the rest, decide on tiers, read, then a skills plan'). Goal line: Triton's M1 lane sells to firms running outbound sales teams. Sessions are sampled across the library (first, middle, latest), not read in full; say if the sample looks unrepresentative. The text course is S-22; this is the 27 hours of live sessions behind it. Is the matrix a method a team can drill, or a word-track list?",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-30.md"
+  },
+  {
+   "id": "S-31",
+   "track": 9,
+   "title": "Matt Ryder: outbound and appointment setting (Coach Cayden sampled 3 of 53, Coach Patrick 3 of 3) and the dialing PDFs",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-001-coach-cayden-outbound-and-identity-selling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-027-june-01-outbound-and-identity-selling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-053-october-12-outbound-and-identity-selling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-patrick-001-sept-25-mastering-appointment-setting-triagi.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-patrick-002-oct-02-mastering-appointment-setting-triagin.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-patrick-003-oct-09-mastering-appointment-setting-triagin.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-increase-pick-up-rates.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-warm-up-numbers.txt",
+    "field-notes/skool/mattryder-files/r13-Managing-attestation-score.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-scrub-Lists-for-DNC.txt",
+    "field-notes/skool/mattryder-files/r13-Outbound-Compliance-101.txt",
+    "field-notes/skool/mattryder-files/r13-Dialing-terms-and-glossary.txt"
+   ],
+   "why": "Track 9, extracted 15 Oct on Luke's ask ('extract the rest, decide on tiers, read, then a skills plan'). Goal line: Triton's M1 lane sells to firms running outbound sales teams. Sessions are sampled across the library (first, middle, latest), not read in full; say if the sample looks unrepresentative. Closest to Triton's target clients: how outbound teams dial, warm numbers, keep pick-up rates up. US rules (FTC, DNC, attestation); note what would differ in the UK (TPS, Ofcom).",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-31.md"
+  },
+  {
+   "id": "S-32",
+   "track": 9,
+   "title": "Matt Ryder: running a sales team (Coach Jack sampled 2 of 30, Coach Mike 2 of 14) and the sales-management PDFs",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/mattryder-rec-coach-jack-001-sales-process-with-an-elite-sales-manager-oc.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-jack-030-sept-15-sales-process-with-an-elite-salesman.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-mike-001-july-09-systematizing-sales.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-mike-014-october-08-systematizing-sales.txt",
+    "field-notes/skool/mattryder-files/r13-Sales-Department-KPIs.txt",
+    "field-notes/skool/mattryder-files/r13-Monthly-sales-department-report.txt",
+    "field-notes/skool/mattryder-files/r13-Sales-rep-job-description.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-review-sales-calls.txt",
+    "field-notes/skool/mattryder-files/r13-How-To-Run-A-Role-Play-Session.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-run-objection-training.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-run-tonality-training.txt",
+    "field-notes/skool/mattryder-files/r13-How-To-Use-Sales-Data-Effectively.txt",
+    "field-notes/skool/mattryder-files/r13-Low-Hanging-Fruit.txt",
+    "field-notes/skool/mattryder-files/r13-Quick-Wins-Guide.txt",
+    "field-notes/skool/mattryder-files/r13-How-to-get-referrals.txt",
+    "field-notes/skool/mattryder-files/r13-Building-your-ecosystem.txt"
+   ],
+   "why": "Track 9, extracted 15 Oct on Luke's ask ('extract the rest, decide on tiers, read, then a skills plan'). Goal line: Triton's M1 lane sells to firms running outbound sales teams. Sessions are sampled across the library (first, middle, latest), not read in full; say if the sample looks unrepresentative. What a sales manager actually runs: KPIs, reports, call reviews, training. These are the jobs a Triton tool for sales teams would sit inside.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-15-S-32.md"
+  },
+  {
+   "id": "S-33",
+   "track": 9,
+   "title": "Matt Ryder: AI in sales and agency selling (Coach Jordan Park sampled 3 of 13, Coach Aaron 2 of 20, one call review)",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/mattryder-rec-coach-jordan-park-001-feb-3-systems-mindset-training-for-sales-peo.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-jordan-park-007-june-23-ai-and-sales-extravaganza.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-jordan-park-013-october-06-ai-and-sales-extravaganza.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-aaron-001-coach-aaron-agency-sales-self-mastery.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-aaron-020-october-07-agency-sales-self-mastery.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-joe-call-reviews-008-august-27-call-reviews.txt"
+   ],
+   "why": "Track 9, extracted 15 Oct on Luke's ask ('extract the rest, decide on tiers, read, then a skills plan'). Goal line: Triton's M1 lane sells to firms running outbound sales teams. Sessions are sampled across the library (first, middle, latest), not read in full; say if the sample looks unrepresentative. How salespeople are actually using AI, what they wish it did, and how an agency sells its service: the demand side for Triton.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-33.md"
+  },
+  {
+   "id": "S-34",
+   "track": 9,
+   "title": "Matt Ryder's own recorded sessions (one each: pitch, sales data, roleplay, objections, sales maxing) and the onboarding roadmap",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/mattryder-rec-matt-ryder-030-july-07-how-to-pitch.txt",
+    "field-notes/skool/transcripts/mattryder-rec-matt-ryder-027-august-20-sales-data-call.txt",
+    "field-notes/skool/transcripts/mattryder-rec-matt-ryder-031-july-08-roleplay.txt",
+    "field-notes/skool/transcripts/mattryder-rec-matt-ryder-037-july-20-objection-handling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-matt-ryder-065-may-14-sales-maxxing.txt",
+    "field-notes/skool/transcripts/mattryder-00-onboarding-calls-010-september-16-onboarding.txt"
+   ],
+   "why": "Track 9, extracted 15 Oct on Luke's ask ('extract the rest, decide on tiers, read, then a skills plan'). Goal line: Triton's M1 lane sells to firms running outbound sales teams. Sessions are sampled across the library (first, middle, latest), not read in full; say if the sample looks unrepresentative. 98 sessions, 84 hours: judge from five whether the library holds anything the courses do not.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-34.md"
+  },
+  {
+   "id": "S-35",
+   "track": 9,
+   "title": "Rebel Economist (Steve Keen, free): the sampler course and the free books",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/keen-01-rebel-economist-free.md",
+    "field-notes/skool/transcripts/keen-01-rebel-economist-free-005-free-course-why-listen-to-me.txt",
+    "field-notes/skool/transcripts/keen-01-rebel-economist-free-006-free-course-what-is-money.txt",
+    "field-notes/skool/transcripts/keen-01-rebel-economist-free-007-free-course-why-new-economics.txt",
+    "field-notes/skool/keen-files/New-Economics-Sampler.txt",
+    "field-notes/skool/keen-files/Elon-is-Wrong.txt"
+   ],
+   "why": "Track 9. Persona interest (economics; survey 2 pick: rebuild Keen's simplest debt-driven model in Python and see whether it crashes as he says). Read for the model: equations, parameters, the claim to test. The paid 7-week challenge is the upsell.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-15-S-35.md"
+  },
+  {
+   "id": "S-36",
+   "track": 9,
+   "title": "3-hour YouTube Leads: the free steps and FAQ (lead generation from low-view YouTube)",
+   "model": "sonnet",
+   "status": "read",
+   "files": [
+    "field-notes/skool/transcripts/ytleads-00-start-here-001-start-here-click-to-play-this-video.txt",
+    "field-notes/skool/transcripts/ytleads-01-low-views-high-sales-001-step-1-click-to-play-this-video.txt",
+    "field-notes/skool/transcripts/ytleads-01-low-views-high-sales-002-nurture-pathways.txt",
+    "field-notes/skool/transcripts/ytleads-02-effortless-youtube-001-step-2-click-to-play-this-video.txt",
+    "field-notes/skool/transcripts/ytleads-02-effortless-youtube-002-generating-video-ideas.txt",
+    "field-notes/skool/transcripts/ytleads-02-effortless-youtube-003-packaging-your-video.txt",
+    "field-notes/skool/transcripts/ytleads-02-effortless-youtube-004-scripting-out-your-video.txt",
+    "field-notes/skool/transcripts/ytleads-02-effortless-youtube-005-how-to-make-recording-easy.txt",
+    "field-notes/skool/transcripts/ytleads-03-leads-on-loop-001-step-3-click-to-play-this-video.txt",
+    "field-notes/skool/transcripts/ytleads-04-1000-leads-gameplan-001-step-4-click-to-play-this-video.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-001-can-you-grow-with-a-small-niche.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-002-will-going-niche-turn-away-potential-clients.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-003-how-to-get-enough-views-from-right-people.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-004-how-to-make-high-quality-videos.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-005-how-to-stay-consistent-on-youtube.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-006-can-you-give-away-too-much-in-videos.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-007-can-simple-videos-really-build-trust-authori.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-008-i-don-t-know-scripting.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-009-nervous-in-front-of-the-camera.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-011-how-to-get-high-quality-leads.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-012-how-to-turn-leads-cold-warm.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-013-how-to-atrract-ideal-clients.txt",
+    "field-notes/skool/transcripts/ytleads-05-faq-014-what-if-open-rates-are-too-low.txt",
+    "field-notes/skool/ytleads-00-start-here.md",
+    "field-notes/skool/ytleads-01-low-views-high-sales.md",
+    "field-notes/skool/ytleads-02-effortless-youtube.md",
+    "field-notes/skool/ytleads-03-leads-on-loop.md",
+    "field-notes/skool/ytleads-04-1000-leads-gameplan.md",
+    "field-notes/skool/ytleads-05-faq.md"
+   ],
+   "why": "Track 9. Goal line: lead generation for Neptune and Triton (content that brings B2B leads without an audience). Three locked add-ons are $19, $27 and a paid course.",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-10-15-S-36.md"
+  },
+  {
+   "id": "S-37",
+   "track": 9,
+   "title": "DOOing AI Foundry (local AI starter path) and BettrNation (sports betting starter)",
+   "model": "haiku",
+   "status": "read",
+   "files": [
+    "field-notes/skool/bettr-01-start-here.md",
+    "field-notes/skool/bettr-02-youtube-library.md",
+    "field-notes/skool/dooing-00-start-here.md",
+    "field-notes/skool/dooing-01-local-ai-starter-path.md",
+    "field-notes/skool/dooing-02-homelab.md",
+    "field-notes/skool/dooing-03-field-guides.md",
+    "field-notes/skool/dooing-04-resources-vault.md",
+    "field-notes/skool/transcripts/bettr-01-start-here-001-how-to-use-our-skool-community.txt",
+    "field-notes/skool/transcripts/bettr-01-start-here-002-espn-ev-picks-vs-value-picks-explained.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-001-bet-like-warren-buffett.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-002-bet-like-charlie-munger.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-003-bet-like-ray-dalio-pt-1.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-004-bet-like-ray-dalio-pt-2.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-005-how-to-use-sportsbook-s-profit-boost.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-006-efficient-market-hypothesis-applied-to-sport.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-007-bet-on-college-football-using-espn.txt",
+    "field-notes/skool/transcripts/bettr-02-youtube-library-008-ex-jags-employee-sues-fanduel-for-250m.txt",
+    "field-notes/skool/transcripts/dooing-03-field-guides-002-define-done-before-you-delegate-to-ai.txt",
+    "field-notes/skool/bettr-files/10-Commandments-of-Sports-Betting.txt"
+   ],
+   "why": "Track 9, two small rooms in one group. DOOing: Proteus has no local LLM (P-0124 blocked on it); is the starter path a cheap way to get one on this Intel Mac? BettrNation: the Pitch desk's world; anything checkable against our football book?",
+   "assigned": "2026-10-15",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-15-S-37.md"
   }
  ]
 }
