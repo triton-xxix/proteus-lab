@@ -1,0 +1,3748 @@
+{
+ "probe": "P-0151",
+ "pick_ts": "2026-10-14T22:29:35Z",
+ "picks": [
+  {
+   "id": "G-0082",
+   "ts": "2026-10-14T22:29:35Z",
+   "symbol": "CFLARE",
+   "mint": "kXzjEQ2frgfKHAUWGS1rZFH53tyWjD6b9njoQ82pump",
+   "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+  },
+  {
+   "id": "G-0083",
+   "ts": "2026-10-14T22:29:35Z",
+   "symbol": "smol",
+   "mint": "HzPRXMeo6JLQj7dKH79fNnpApNzY8VBQ8g4Ne9Cwpump",
+   "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+  },
+  {
+   "id": "G-0084",
+   "ts": "2026-10-14T22:29:35Z",
+   "symbol": "VEILTRUMP",
+   "mint": "7fumw7GYTHZJJxkKJ8sSh1CqTdHmB234vX3xsKjepump",
+   "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+  },
+  {
+   "id": "G-0085",
+   "ts": "2026-10-14T22:29:35Z",
+   "symbol": "SAINDRA",
+   "mint": "A2yA6AFtfKkfVkfsnGpvsKoUV5kQPpMYboZsBPvmkA9T",
+   "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+  }
+ ],
+ "window": [
+  1792013375,
+  1792020575
+ ],
+ "wallets": 91,
+ "lookups_done": 364,
+ "skipped": 0,
+ "errors": 0,
+ "ever_touched": 125,
+ "sig_in_window_rows": 2,
+ "kol_wallets_trading": 2,
+ "out_before": [
+  "unprofitable"
+ ],
+ "all_after": [
+  "Sheep"
+ ],
+ "buy_before_sell_after": [],
+ "kols": [
+  {
+   "name": "unprofitable",
+   "symbols": [
+    "CFLARE"
+   ],
+   "n_before": 2,
+   "n_after": 0,
+   "net_before": -40.0,
+   "net_after": 0,
+   "out_before": true,
+   "all_after": false,
+   "buy_before_sell_after": false
+  },
+  {
+   "name": "Sheep",
+   "symbols": [
+    "CFLARE"
+   ],
+   "n_before": 0,
+   "n_after": 1,
+   "net_before": 0,
+   "net_after": -10.0,
+   "out_before": false,
+   "all_after": true,
+   "buy_before_sell_after": false
+  }
+ ],
+ "calls": {
+  "n": 658,
+  "429": 289,
+  "err": 1
+ },
+ "seconds": 627,
+ "rows": [
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Dior",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
+   "ata": "DeggacCd2SD3y4Ad6TrVfDHaWpkKKasGuSiWVJQ97Hdb",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "decu",
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "ata": "3uAJex5ctN2MFBzKbFDSGV858pY8ytYK5W2i8rT1FCpZ",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "slingoor",
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "ata": "CRq8JQq9tf4UAeRaPL97Ad7t2GhwV97tkptWA6PDWJT9",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "trunoest",
+   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+   "ata": "6bNRrEw4oaFaV5ZXymdhntwAcketwUNbjVbuyymsiqse",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Coler",
+   "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+   "ata": "741bYLJGNdu62c5LxFNfNiSZkrzafhvSWGBZcSDYguoL",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "zhynx",
+   "wallet": "zhYnXqK3MNSmwS3yxSvPmY5kUa1n2WUaCJgYUDrAHkL",
+   "ata": "BGse7ULvmn6DMNBuFFHXMGCEbd45hKH2nrVALj98CTjc",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "theo",
+   "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+   "ata": "AoyttbdJjQK8o8KuSjDBmBzm1P44tVnJHqGM8xstccGe",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Yenni",
+   "wallet": "5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG",
+   "ata": "2cGkwMFeJWHzR4pD35toVpNHjqCVQYYmNLG9PKXCNsGU",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "SKX \ud83d\udd36",
+   "wallet": "C4eZg1rJX6v1u7LzqermPrA1pDNNxQe6g3vyY5cHHoWq",
+   "ata": "HvyZg1oMPgufgctZARJb3iDSEVhoPVT5tVpbXp1bfGxm",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "TIL",
+   "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+   "ata": "8jCPbjLKzvjPi9deMJRAWZ7CMyy9mzzzVXDuqWt7V7Qx",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "ban",
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "ata": "CEvCGMy7K5tDZuNbNH9X4boBvBDhkSX7kaJB5niWqp4h",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Cented",
+   "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+   "ata": "D7PCnsfELqtPimMH5a5daNtt5vuRdrDyfdUADmMJmGZh",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Megga",
+   "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU",
+   "ata": "8KCXDKgw6vtCbPEKQngKDzCfbBQBaYFdMssJ2nrseEuA",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "saale",
+   "wallet": "SAALE2x3sn51EyahJyqD6913L3GqHZdZo3egUdMayQp",
+   "ata": "2X7onv8XVTM5nj9GW9iWZpV6pQEDhJeXKm8DP6tdTFQ8",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Sebastian",
+   "wallet": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+   "ata": "7iiUBMKDcx6htUiSdVBtGqZEJ91dZQfi8GYCJaiXGve6",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Zyaf",
+   "wallet": "F5TjPySiUJMdvqMZHnPP85Rc1vErDGV5FR5P2vdVm429",
+   "ata": "Dnwf72GnwngCBGV89XyzDsm6CNVqEGKPFuHepaMwVgx3",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Schoen",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "ata": "2rUaoeQ4aNUas1hpHc3XhxJ659vFNDNbYX6mFGW46yiL",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Naruza",
+   "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+   "ata": "BDj2tFU9iHi4fSFqAV9yHZ1M9ueAgrF5RE7ibMGAzZ1C",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Ethan Prosper",
+   "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
+   "ata": "G2uQkSVMeBLcZRuvpMk1muepRrhWVxPFMMJQ7FA138hF",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Cooker",
+   "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+   "ata": "Gk7Srk92BZB219NGUMkeXQUQwDo85eneHxFPpJC6ETZV",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "unprofitable",
+   "wallet": "DYmsQudNqJyyDvq86XmzAvrU9T7xwfQEwh6gPQw9TPNF",
+   "ata": "3SN5SxEPTX7ckuqNgDZE2NuKL1wzRYgiid9GS3QX84Hp",
+   "sigs": 6,
+   "in_window": 2,
+   "trades": [
+    {
+     "kol_signed": true,
+     "ata_delta": 0.0,
+     "err": null,
+     "time": 1792015303
+    },
+    {
+     "kol_signed": true,
+     "ata_delta": -40.0,
+     "err": null,
+     "time": 1792015265
+    }
+   ]
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Frost",
+   "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T",
+   "ata": "8SdBxu4pXvWum2LZCBVv4duZMy41qrEj2qWfJYy3vNmF",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "rambo",
+   "wallet": "2net6etAtTe3Rbq2gKECmQwnzcKVXRaLcHy2Zy1iCiWz",
+   "ata": "A9bM9ELqGS7SWEzu83VzgMnYefY9ZRSHV43B6DtaPcqh",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Pain",
+   "wallet": "J6TDXvarvpBdPXTaTU8eJbtso1PUCYKGkVtMKUUY8iEa",
+   "ata": "9tbF443UvyHrUfodMdWmNBjaPa9YceicqREeJNddEjoS",
+   "sigs": 3,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Mitch",
+   "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
+   "ata": "84z45yqz19PoZ2kvzc4d8LCkKckciksxUq1GatzYm8Fx",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "milito",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "ata": "F7z4eukVkXujAfJTXxB7HMz4SX91BUnDxPwuN1vpSTEU",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Numer0 (trench/arc)",
+   "wallet": "A3W8psibkTUvjxs4LRscbnjux6TFDXdvD4m4GsGpQ2KJ",
+   "ata": "EPaxwadxK342JNiNeXGUMRbYuFevMHHi1kM6RCtAH7Yb",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "tech",
+   "wallet": "5d3jQcuUvsuHyZkhdp78FFqc7WogrzZpTtec1X9VNkuE",
+   "ata": "A2zZ5Z8JySD2UAGoy8YMPxeoZR75cVEkZ8RarmQeu4YV",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "peacefuldestroy",
+   "wallet": "8AtQ4ka3dgtrH1z4Uq3Tm4YdMN3cK5RRj1eKuGNnvenm",
+   "ata": "A4zumpjjK765XZpAB9qePee5m6zJPLTiEaZBmnFUnj32",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Casino",
+   "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
+   "ata": "6XYu1itKbSrJGJGmXvBWAH19KBXxkxtLnoWMAG4ZFwWk",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Esee06257",
+   "wallet": "4uCT4g7YHH4xxfmfNfKUDenwGrRNGoZ9Ay1XFxfUGhQG",
+   "ata": "7RLPSfZwDhi2AbcwQFYN6Z8ZuMc6ejDVPECtkpZWunPU",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "CoCo",
+   "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+   "ata": "Hr3YjmEhstb8JWQdtxFxcTDoaNGqYPLchbTaRG3NJDze",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Latuche",
+   "wallet": "GJA1HEbxGnqBhBifH9uQauzXSB53to5rhDrzmKxhSU65",
+   "ata": "CH4wLkw43bnWZt3F8YbJ2w9aNgHfia78ttMLJsDc6FFw",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "brunowsky",
+   "wallet": "GvTXquDAJbfrFrEGTPRPUj3WM5Bzub5yeTFzkLVHpjfD",
+   "ata": "8kvyFnFU1bgiu2p65e5DKAbTKvtNk4XWnHrt27FymqcK",
+   "sigs": 3,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "chester",
+   "wallet": "PMJA8UQDyWTFw2Smhyp9jGA6aTaP7jKHR7BPudrgyYN",
+   "ata": "FtuNd3YKjJP4XGhj3Ru7MgTLczR3koeWUNh1eRcSyRnb",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Daumen",
+   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+   "ata": "7xMyxRroGCwGz8dZGRXJfHar3jwWiXj3G92d8CDRshMW",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Doji",
+   "wallet": "5ZuV8eqkvzYFVEKbLvGBdexL2tFv7E5BCd2HZpjqbdg",
+   "ata": "92zJ8wVXNVG1v3HX51JBP1uJJdnddTAcWQHKZ2fdoxFd",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "kyz",
+   "wallet": "72YiE4crBv2UhxRgRYKs4GaTGT2avbacfL4HNCfQLqsm",
+   "ata": "6Tescn7YhFnbMYeCBxWNPSBga5ZLh7KRYdKNXKdiz5zL",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Woozy",
+   "wallet": "9tRff7L6Mx3ZDNBoGPffdjD3c9JNzLc3nxzadYH4TnAp",
+   "ata": "524pffvGeZy4qRozKvWM82zihnSnpKBmEj4XVmj8YmgJ",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "West",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+   "ata": "65o4qr1YMHtMHRbi4aRbD7R2Euymj8sFtbXFdLH3QKj7",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "jrus",
+   "wallet": "951wq3qDowjKHaycrNaiRB5WpovYVKXnqhnrcKPh46zt",
+   "ata": "EVPL5zYECvKWfZQichzUzrPkjF8SfLToDpJCqmgHtaEU",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Jeets",
+   "wallet": "D1H83ueSw5Nxy5okxH7VBfV4jRnqAK5Mm1tm3JAj3m5t",
+   "ata": "D8GPc1fCEv7K4DB6nQRimGty9EZfw5SrLKr1CWqTuH29",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Zef",
+   "wallet": "EjtQrPTbcMevStBkpnjsH23NfUCMhGHusTYsHuGVQZp2",
+   "ata": "446YXNHXGH1A2rqC5RjZohBnzxpCegxVm5jE236kQmxc",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Orange",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "ata": "Ek7Cd3EcZcXKtX4oRExSG4WKHh7iTkXeasytnqAo1QxL",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "DJ.\u03a3n",
+   "wallet": "Cxe1d5zFifK4a4UZoHQaCK7sfqd84XjcKy1qtjnz3bge",
+   "ata": "GWyiFKYGLaDaM1eyzbmih575ngd9k39GCnRdo6NpzXX6",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Gfree",
+   "wallet": "4yo9CUuTBbds9NFhZd4MzPiZZkUvveXdTnAH8qMsE8ku",
+   "ata": "7MvQuPQ1unfxBA2JAgcxLsX7JrHZ8m7ZkTH8FYMgg4ot",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "yode",
+   "wallet": "J1XAE4onKYG1kTghgaytnyFgR3otQs1xEnJRRWM3djSQ",
+   "ata": "5zKKUYy1vbvZXKz8nNUegfcDWhbAgY1zDuywhGk4ScWw",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Limfork.eth",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "ata": "ACkHjaLX2eQ5StURzmNSfN6NkyFTAAXsjuCtPzMWavqh",
+   "sigs": 3,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Kev",
+   "wallet": "BTf4A2exGK9BCVDNzy65b9dUzXgMqB4weVkvTMFQsadd",
+   "ata": "F1j5ZCbMEHXLrusE38qxSveTC4PBMfmjV7jofRnG4RW3",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "bandit",
+   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "ata": "EfFSCkPp7npv5FabbwGSU9CMzfmw1jMz5Z9wzYLpkTT4",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "zeropnl",
+   "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
+   "ata": "CAqNcp7H7gKxR7pEt4kXeAYgZA2Faw2ZgCHVgNCL81An",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Atlas",
+   "wallet": "GXcAHhvutpa6gmwUVHtxg7KbYghsjNWQshKq4SinHRtQ",
+   "ata": "HzGaw3czQdQjLo1qPq5Qqw1LDVp7hfXwjCFLe97koesB",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Sheep",
+   "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+   "ata": "4X5JY5mPT5VWQvS2D39NuQwLpcKzGMu2iVCFsSiztx5a",
+   "sigs": 2,
+   "in_window": 1,
+   "trades": [
+    {
+     "kol_signed": true,
+     "ata_delta": -10.0,
+     "err": null,
+     "time": 1792017490
+    }
+   ]
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Dani",
+   "wallet": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+   "ata": "4EuNbSzmQ7GcsF3q9Kxy5Gj7yQoLMSg17XQkzTMWvrjT",
+   "sigs": 3,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Gasp",
+   "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+   "ata": "85URKaf7xkWvKqHv4oTdKS4tjPHh9YtdiQYppHrVtZ4P",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "xander",
+   "wallet": "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh",
+   "ata": "82ptAYpa7MNMAsYgXuivUoF5WcW12UxWxxn41DFbxqWz",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Johnson",
+   "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
+   "ata": "8rqT8LwPX4YKYgenNa4NZwzU7FGJecfd3zbkwNrmZy5p",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Mr. Frog",
+   "wallet": "4DdrfiDHpmx55i4SPssxVzS9ZaKLb8qr45NKY9Er9nNh",
+   "ata": "8sFGPufLxamPm9onWCMAfCauaUYmGV1u5A2ymxju54Zz",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Thurston (zapped arc)",
+   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "ata": "2ZMdMivPpiNpJk1PoVf5UQgCcPD6kjX5nUi1SeUSXRea",
+   "sigs": 3,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Killua",
+   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
+   "ata": "5shyH6T7NkZqz8VfRsupv6mHQyuDH89Yf9TmrGcAjj7E",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Trey",
+   "wallet": "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs",
+   "ata": "88TrFkVWwcCsQuGNbMYg7ygsRRV29yTYbni2DUFCxzMK",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "prettyover",
+   "wallet": "2e1w3Xo441Ytvwn54wCn8itAXwCKbiizc9ynGEv14Vis",
+   "ata": "8znRGFeHdkSxWueduoHBeUufjDgMJgMjE1TbvRJ2YMnQ",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Lynk",
+   "wallet": "CkPFGv2Wv1vwdWjtXioEgb8jhZQfs3eVZez3QCetu7xD",
+   "ata": "AjYjVfEfkmsRZYwK5hYcMx5dYDdqqprBn9CwEWnq9AxE",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Rilsio",
+   "wallet": "4fZFcK8ms3bFMpo1ACzEUz8bH741fQW4zhAMGd5yZMHu",
+   "ata": "HfMV7VivKeszQo9UYm7rowNcEkhWkhcC451MtzF24bNX",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Silver",
+   "wallet": "67Nwfi9hgwqhxGoovT2JGLU67uxfomLwQAWncjXXzU6U",
+   "ata": "DkPYU68riUB5Uhgjre5nUGqVYB5eHZDPtfP5hWQrcyrA",
+   "sigs": 3,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Hermes",
+   "wallet": "5dzH7gh5FjtrxUwtfBufJyTBA4fyCUGheZsdYQsE9vag",
+   "ata": "ARGBhauv5Vo4Z5U554C1NovD3qPuuxHGqQy4qfF1BytU",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Jijo",
+   "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+   "ata": "CorbzvktdyMfBy9Ucq43m5X75yvN5U8JtzVPzxfXvrL7",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "clukz",
+   "wallet": "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC",
+   "ata": "8X1LQgPtuHR3XxspH9jA7DsNWzkmDZHmpRSDj6Q7imHn",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "EustazZ",
+   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
+   "ata": "9gx4PmgcYHqQToHfjfCbNMztoVFoJeLGQSEXbpBYDZV2",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Nyhrox",
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "ata": "5KuC8QE1vsofcA3VtMgq9fG5tXvKkp2qGhZGqi76d51i",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "The Doc",
+   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+   "ata": "2khj5yq8L6bzFA6wxHeJSvk3Yq27Q9yaci77CZAM3Kbc",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Idontpaytaxes",
+   "wallet": "2T5NgDDidkvhJQg8AHDi74uCFwgp25pYFMRZXBaCUNBH",
+   "ata": "FrCUUkFPf4QDGLucDzhFSWtAMgEP5jTMJK5LQ33R9vDa",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Putrick",
+   "wallet": "AVjEtg2ECYKXYeqdRQXvaaAZBjfTjYuSMTR4WLhKoeQN",
+   "ata": "C7JWYrMeAJwXWvm2bup36rQ6bVGHGUTfhWcuey3JRvR4",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Yami \ud80c\udcf5",
+   "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+   "ata": "DDzQEkvBXLJo4tTk8WYnpYGLwyXvCCe8QL6k3JwBWjvy",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "lyftical",
+   "wallet": "2hN82SXLUffhG3vxpezRmae1sGrCBMqHHBDxjmjpagqk",
+   "ata": "2QWVfZaNShJmHjxfuFY5gSW5U7x4ggzbkmxpxVUNgDpM",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Letterbomb",
+   "wallet": "BtMBMPkoNbnLF9Xn552guQq528KKXcsNBNNBre3oaQtr",
+   "ata": "93kZj6wGy3Xej68zSKRhFdogPzBjUwPLHofTtMVFhs5E",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Kadenox",
+   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+   "ata": "3qdqzsNaKHYsAhRhB2FP7xQkoUEDuH9kXq5oegW5qzaC",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Hash",
+   "wallet": "DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj",
+   "ata": "EHa72aPN71kRsJVbEsUvpFMjrKpgqoppkucsmNprqAsm",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "OGAntD",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "ata": "EgokXW9bcC2gP1ErfJQ38rGxDmab2ZteBfxa89YXqR3c",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "narc",
+   "wallet": "CxgPWvH2GoEDENELne2XKAR2z2Fr4shG2uaeyqZceGve",
+   "ata": "DsicBHynXrMmt3HwLJzjdGL6yXdxZzZWbJxi3u7mnUUG",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Ducky",
+   "wallet": "ADC1QV9raLnGGDbnWdnsxazeZ4Tsiho4vrWadYswA2ph",
+   "ata": "GYHYkLJPmv7qnMxrTvRjnU31nfmuM66t7K5w2GwDM7Kb",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Art",
+   "wallet": "CgaA9a1JwAXJyfHuvZ7VW8YfTVRkdiT5mjBBSKcg7Rz5",
+   "ata": "HUAkfASCRKCdx89oCnzwEdQzbFKYhUT69A9Jv7a59v4b",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "LUKEY \u2723",
+   "wallet": "DjM7Tu7whh6P3pGVBfDzwXAx2zaw51GJWrJE3PwtuN7s",
+   "ata": "2p5UiHEnKAWeQAEMxoHFuJQRDRmKP5PzWntNqFyZhxoc",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Wugi",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
+   "ata": "67hXSNUtBMkS8y4bHmw9QxRzbgHJCctkYp5kPtcaJuco",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "samsrep",
+   "wallet": "CUHBzSPSaNS3tArEtM3maSV6pNdJhHJFYZpurPPK9P7H",
+   "ata": "7UcTz99W1SoQFeX7wpmEm5tbHoq36XdW2DkeanocPeph",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Dusty",
+   "wallet": "B799XD2RtgkxYRvv5Q9CFnSpVifrsJErWz6MpvBdYFdR",
+   "ata": "4L4wGZfPZqTrMzpZ1oHxUertH42evP55Uj9mezy6KdRx",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "Meechie",
+   "wallet": "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY",
+   "ata": "BCMmanzTMS6oP6hxHNwqfehsMU3bNtKD2ejo96jUq6hw",
+   "sigs": 5,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "KOREAN",
+   "wallet": "6KR7SorsUQtNH6CB6JpAnWCAKeTysa95iyXeWihdNeGT",
+   "ata": "9EwAFdAXmck9zZSf6UCfGCApqiFW7GzVHMevH25VLSQr",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "King Solomon",
+   "wallet": "DEdEW3SMPU2dCfXEcgj2YppmX9H3bnMDJaU4ctn2BQDQ",
+   "ata": "FTFCEYerHNwNm2Sd79JHTMnvaRqJGqtjBsRGPLdSPHhx",
+   "sigs": 2,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "hood",
+   "wallet": "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9",
+   "ata": "3vxrhyiwhhukYDtmDs9eLKZpQ2TFJZYepVLefM5nQAXs",
+   "sigs": 6,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0082",
+   "symbol": "CFLARE",
+   "name": "omar",
+   "wallet": "Dgehc8YMv6dHsiPJVoumvq4pSBkMVvrTgTUg7wdcYJPJ",
+   "ata": "4VkNYhtutmsD1CcEpJsLNRX4P8jC6nKUMBDnHWQWCHdC",
+   "sigs": 1,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Dior",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
+   "ata": "3hcUB6TepGujwuVgwzy3adDdkVLQK23wBznbKdHWmpWQ",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "decu",
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "ata": "EJgAzYaAixoaZ2jajdTcpttsBxquzVW8AjjiQ8XCaCEm",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "slingoor",
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "ata": "64utcBuJCupCPPEEErj5opwpY2rCXbRPS7WFDkbNBujz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "trunoest",
+   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+   "ata": "Bnhp5g6wfbW7iqHGdvcNvxfcq7sH4yT44GvmGBRgGujz",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Coler",
+   "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+   "ata": "HKxZtL8NAePtgYMGHqsddiVMoHN2zyEdK5Bon31QU4u",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "zhynx",
+   "wallet": "zhYnXqK3MNSmwS3yxSvPmY5kUa1n2WUaCJgYUDrAHkL",
+   "ata": "7N3qkN6YE8BkNhvUr8H4tBDigx53NrUsgkUEbZWsYqaP",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "theo",
+   "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+   "ata": "AxEwCRqJPnNzSdB9sXAfdhhNgNforcSSdAKEsTCghzuf",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Yenni",
+   "wallet": "5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG",
+   "ata": "G4AobAx1RSHi85gngeVZvhg9yxfW8oN5pze9fCoCwakz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "SKX \ud83d\udd36",
+   "wallet": "C4eZg1rJX6v1u7LzqermPrA1pDNNxQe6g3vyY5cHHoWq",
+   "ata": "HcM4XRXqPidybsSxG9zKkLt9pEk5PrZ4nwVsMSdChmn",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "TIL",
+   "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+   "ata": "9VrXZ4K9KVRqNUJpLi5A99CBUEMqfbYViECYtHsmb3Fk",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "ban",
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "ata": "HbEzWznU1zQzChczWx98xN1WGCJjbVFxrPxw5VgMzEEj",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Cented",
+   "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+   "ata": "FMoiWSTXViWsanuUR9GpxtT3n6GDyMjr52hg9zmwmNR8",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Megga",
+   "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU",
+   "ata": "5sPSQWZyZHb7nSeb94dyuG7CwHgak8zTcNvnhdXn8hSB",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "saale",
+   "wallet": "SAALE2x3sn51EyahJyqD6913L3GqHZdZo3egUdMayQp",
+   "ata": "DU3cNUGagrg4gickKK7YqMEZcgZJhwuGV7bA4k61jXQ5",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Sebastian",
+   "wallet": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+   "ata": "5yg7x5nfNUhnsBgwE27UtmZpvmDRvb61NUAYv3aaTpYr",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Zyaf",
+   "wallet": "F5TjPySiUJMdvqMZHnPP85Rc1vErDGV5FR5P2vdVm429",
+   "ata": "B3QpNN5faTKcJmx5xFgABXVCfsCwyw3RhiMfnSgCqNWE",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Schoen",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "ata": "BiPCgP7G4Dta3MtfQj8ofHPrGhGsvhhYssRtYpp4fMJv",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Naruza",
+   "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+   "ata": "Di94ktHuX5NUXuvy44fpu5FRkhwJFyJWkd9FqycdcJ3K",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Ethan Prosper",
+   "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
+   "ata": "DxeRNX3YMkgd5ecRPbZS9MJSKcvhemXCPaS6mUQMuyzb",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Cooker",
+   "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+   "ata": "C2xGMLPwjyfctbGz9jC8m6GzsYGtbcrDcBe33BsnhkJ3",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "unprofitable",
+   "wallet": "DYmsQudNqJyyDvq86XmzAvrU9T7xwfQEwh6gPQw9TPNF",
+   "ata": "Dh2X9hfG7EM5gTQmjuDk3SiWhmiabXuHzk7NF6F5zTnc",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Frost",
+   "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T",
+   "ata": "8rfmW5tHAVoL4EXGxmKL5HNZcZFmLbn6W6EFHr493UtG",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "rambo",
+   "wallet": "2net6etAtTe3Rbq2gKECmQwnzcKVXRaLcHy2Zy1iCiWz",
+   "ata": "9MaAqp3CvmC4tpTATcurFuKvvc9TpLrbiJtCjVjY8zkq",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Pain",
+   "wallet": "J6TDXvarvpBdPXTaTU8eJbtso1PUCYKGkVtMKUUY8iEa",
+   "ata": "7SMjTmpyk2DWQhcizfbVFqkFxR1pkfQgnQ4VYrWGEpJV",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Mitch",
+   "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
+   "ata": "4Pq45vyK7EpJ3EoY89YQaw6qPuWge4kabfmk6hzqnLfy",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "milito",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "ata": "9m2RgPkGnfpjXjiWG8GnyVaEYWjtgkhEoovnekJD74cN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Numer0 (trench/arc)",
+   "wallet": "A3W8psibkTUvjxs4LRscbnjux6TFDXdvD4m4GsGpQ2KJ",
+   "ata": "HF4rVMCAJtvCuWUyZ4mT9YAhNjKRmX2DKPENqmjeUttM",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "tech",
+   "wallet": "5d3jQcuUvsuHyZkhdp78FFqc7WogrzZpTtec1X9VNkuE",
+   "ata": "BBn4puRVswD3VP8fLUpYsSJDxQ5NwvCTEbAVY2gGcBX2",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "peacefuldestroy",
+   "wallet": "8AtQ4ka3dgtrH1z4Uq3Tm4YdMN3cK5RRj1eKuGNnvenm",
+   "ata": "8cFrMECaMgTigYgV2vTiyF7wxEnfpzBAYfJ6f2bw2Brz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Casino",
+   "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
+   "ata": "97KR6wtxu1TMEvqkd8wwMY47pLYtYPKVtb1KR9tVv4j5",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Esee06257",
+   "wallet": "4uCT4g7YHH4xxfmfNfKUDenwGrRNGoZ9Ay1XFxfUGhQG",
+   "ata": "GhKNbYRwQoHpQZkbodVaTb3p9DNv9uZAEKgbdD3wtatX",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "CoCo",
+   "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+   "ata": "2CyDNw4T43daALwKe75WbXQkYfqZXBGWtJEdV7rKHYn5",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Latuche",
+   "wallet": "GJA1HEbxGnqBhBifH9uQauzXSB53to5rhDrzmKxhSU65",
+   "ata": "FakoqB85yEfqyU8xqfoK63CNHvVyxDKiQm11tZUc1Nq6",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "brunowsky",
+   "wallet": "GvTXquDAJbfrFrEGTPRPUj3WM5Bzub5yeTFzkLVHpjfD",
+   "ata": "7Ppnvu9bQLMf6SBpEZDiJDffFG33Deu6cvjmrPWH82sz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "chester",
+   "wallet": "PMJA8UQDyWTFw2Smhyp9jGA6aTaP7jKHR7BPudrgyYN",
+   "ata": "GXbbANbBMZRFqm5mcXNHj1taz5DDzJBCnmUJbXLpYYWd",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Daumen",
+   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+   "ata": "63UizopEUyL4zJGejSWBMzvuWXFAESS6WfZ1YoyFbKez",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Doji",
+   "wallet": "5ZuV8eqkvzYFVEKbLvGBdexL2tFv7E5BCd2HZpjqbdg",
+   "ata": "4HmHp1u3DC1urP8xJb4Uofsx7x8MH5AtnHpmC2iHQ1ky",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "kyz",
+   "wallet": "72YiE4crBv2UhxRgRYKs4GaTGT2avbacfL4HNCfQLqsm",
+   "ata": "9NWkKbdLZuTAzJFsbd7qgP7pFjjNGAVnzUJ4WGzvCvUE",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Woozy",
+   "wallet": "9tRff7L6Mx3ZDNBoGPffdjD3c9JNzLc3nxzadYH4TnAp",
+   "ata": "J6DQz7LYUkCXzDRbcgPQNeqHqHPFd8LKELAcrPmcA9T6",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "West",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+   "ata": "q7mboPUsSKh9siZBFmcdFq6DrhN88fTf4XjCHsVqK8x",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "jrus",
+   "wallet": "951wq3qDowjKHaycrNaiRB5WpovYVKXnqhnrcKPh46zt",
+   "ata": "3sKuPcwK2EaGJm6z5Bbpbwo11Aznrx7to7ZvkyyxKqJb",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Jeets",
+   "wallet": "D1H83ueSw5Nxy5okxH7VBfV4jRnqAK5Mm1tm3JAj3m5t",
+   "ata": "2LcbbGy1CQVM7xmsF7ZAYvp773ekC24MagAUnDSAfPmU",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Zef",
+   "wallet": "EjtQrPTbcMevStBkpnjsH23NfUCMhGHusTYsHuGVQZp2",
+   "ata": "9wgoY9y9Y5Y4pQudHZgSCdNBUdRJmp8JVYBzDqynSmqN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Orange",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "ata": "DZDtAzpkWyUUqE6vGfyDLa1ZWLgbPrkoSfJvA2VLzphX",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "DJ.\u03a3n",
+   "wallet": "Cxe1d5zFifK4a4UZoHQaCK7sfqd84XjcKy1qtjnz3bge",
+   "ata": "99AEGAfMSfMnQg5zzrBNZ8FaFcXa7EjEVqY21dGjMCru",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Gfree",
+   "wallet": "4yo9CUuTBbds9NFhZd4MzPiZZkUvveXdTnAH8qMsE8ku",
+   "ata": "AbiR6TXZPSeTJZU9jVJFQ3uMa4YYHSyfm68mRhmi2LxL",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "yode",
+   "wallet": "J1XAE4onKYG1kTghgaytnyFgR3otQs1xEnJRRWM3djSQ",
+   "ata": "2nhwJGj5zWLygG2DQeew5vyDsEmKnuNKdV3kYEvfir1t",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Limfork.eth",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "ata": "2GGi2LLjMMcvuihLWn4DWDo18fSnp5R9zosXhW1qasPU",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Kev",
+   "wallet": "BTf4A2exGK9BCVDNzy65b9dUzXgMqB4weVkvTMFQsadd",
+   "ata": "GMGBjyuZH9W7PD8dA3UtLvg25iEqifVrgHT6NPVtYL9N",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "bandit",
+   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "ata": "GByDMoCWaA7pFmSr3t1uGG8f3ckxo73hz3hCyHZjHNzk",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "zeropnl",
+   "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
+   "ata": "6BnGgDx51gRRyti6eEWcHvp1Nc5MT8ocZ4cUHgDVnxtv",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Atlas",
+   "wallet": "GXcAHhvutpa6gmwUVHtxg7KbYghsjNWQshKq4SinHRtQ",
+   "ata": "DNsQTSxmaARm6MwNPp3CaGFmRCTDnH8P11qzTLrbEpPC",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Sheep",
+   "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+   "ata": "CRJ3J97Tkw3ALUibQLgob3gmZ95mATgkaX1AuEW3jmLW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Dani",
+   "wallet": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+   "ata": "7sXCU1nDiGqMKm8d3FokDUJS79HzxxTs33Vc2cghg835",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Gasp",
+   "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+   "ata": "Gf3d1nf7LWaSSAFyNQ4KRo5Pr3axwVLRHLnPUHn1McvC",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "xander",
+   "wallet": "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh",
+   "ata": "6E9xc3SGWpSpNoaapTF3oQbpSYXH1S1uyyVkKm7C5Ut",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Johnson",
+   "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
+   "ata": "2k52PrwVvvfjThhEUhDV1xih4iQYgPWZrfZHb4wVQYaU",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Mr. Frog",
+   "wallet": "4DdrfiDHpmx55i4SPssxVzS9ZaKLb8qr45NKY9Er9nNh",
+   "ata": "BqocTiNRNZcbkz2mUHN6kV3WCnLU17niq3wr6wpdpyVt",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Thurston (zapped arc)",
+   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "ata": "rDrc5411iBhhPvkuS1WKvCthHs8zAQoGpgB9hCp1R8G",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Killua",
+   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
+   "ata": "Hx49e5RM1RcFbsfvRJZTUhuu7pSAEJcrcBHb2yX9iD3",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Trey",
+   "wallet": "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs",
+   "ata": "GgetXPjUnipEYyLTAam893E7mqqTrHEtsYefq4n6PK5W",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "prettyover",
+   "wallet": "2e1w3Xo441Ytvwn54wCn8itAXwCKbiizc9ynGEv14Vis",
+   "ata": "2BSbZtLL6d3fTgrfmm99cGnT24CLttoEoUGW26DCfm7J",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Lynk",
+   "wallet": "CkPFGv2Wv1vwdWjtXioEgb8jhZQfs3eVZez3QCetu7xD",
+   "ata": "4JYheDxAAeCG6U4qoD93N3mvwzrL2W6mU7wnA3hVzPc1",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Rilsio",
+   "wallet": "4fZFcK8ms3bFMpo1ACzEUz8bH741fQW4zhAMGd5yZMHu",
+   "ata": "HwLZaSwkevjoKrnJ8EwAQWdtJ9mmrwjNMhLX7tjdH9k8",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Silver",
+   "wallet": "67Nwfi9hgwqhxGoovT2JGLU67uxfomLwQAWncjXXzU6U",
+   "ata": "ASxmE8XA4UBwWwURxPmagxPsr6ndVrEqNMTZirG5ygJX",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Hermes",
+   "wallet": "5dzH7gh5FjtrxUwtfBufJyTBA4fyCUGheZsdYQsE9vag",
+   "ata": "2JB9x8d7twdUWUSuePb9BavpepHFcHY5GvuFKUZsoALa",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Jijo",
+   "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+   "ata": "HdaWB8wiFpgmnwsdyzV8pq54PhkwTwjNKfYxbU3sjbtJ",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "clukz",
+   "wallet": "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC",
+   "ata": "B4yeGzphXhKSJxdUq1DUoFK4WeWgri3pSzSM1fpRtMfq",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "EustazZ",
+   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
+   "ata": "AgUd51FvrQPTtouiaMCD53MDbZynbRCrE4ZyApcEy6wW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Nyhrox",
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "ata": "4En3aNWGoCg1zs5KZQHkgAb7XRLToSsFbbGzk6whUoWc",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "The Doc",
+   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+   "ata": "3LWCg12oTe8hvbPLELEWWx67zM1Sp7GiXvhjSscg9Q9Y",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Idontpaytaxes",
+   "wallet": "2T5NgDDidkvhJQg8AHDi74uCFwgp25pYFMRZXBaCUNBH",
+   "ata": "HuCmp75Ck5AusiJ9YfqHJEH7FwRCCy3vNRScJX7jpFRY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Putrick",
+   "wallet": "AVjEtg2ECYKXYeqdRQXvaaAZBjfTjYuSMTR4WLhKoeQN",
+   "ata": "C57heBYkTGVbzd3Am4ixwnksSzKaa9a3LjefL3XeU75b",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Yami \ud80c\udcf5",
+   "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+   "ata": "Agv81kfZXx9CuW371XTALktUCygGA43QCMK1YPxNXa3V",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "lyftical",
+   "wallet": "2hN82SXLUffhG3vxpezRmae1sGrCBMqHHBDxjmjpagqk",
+   "ata": "J13EvQptVyCDmRuMQe2hieEGJykfZE5yrPTeJ3j6vofb",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Letterbomb",
+   "wallet": "BtMBMPkoNbnLF9Xn552guQq528KKXcsNBNNBre3oaQtr",
+   "ata": "BXL6BdLYBhbLfQdUCCPCPRyR96pLRQxVMWPi5r8E2hFM",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Kadenox",
+   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+   "ata": "2mfUp2F9HoKfxMs1vu7fysakqxqpRE5UzVKPG263nbw1",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Hash",
+   "wallet": "DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj",
+   "ata": "DdmGey315TkRE5d5Vt4CnDmK4Bgk67zvw9zbEcSVK7JE",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "OGAntD",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "ata": "FsRS3rjx7NdepVSZqj2ZzBxP1i7NCapEUWpu9r3KYFQG",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "narc",
+   "wallet": "CxgPWvH2GoEDENELne2XKAR2z2Fr4shG2uaeyqZceGve",
+   "ata": "AoPPUbx3meBqqtYfpnGnbsZQvdhrDqyu5i4cMm7vsDLo",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Ducky",
+   "wallet": "ADC1QV9raLnGGDbnWdnsxazeZ4Tsiho4vrWadYswA2ph",
+   "ata": "Cte6doRUNPvSM6igU9ezFSKFVUx2kkeMG5JW4Z69rbTW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Art",
+   "wallet": "CgaA9a1JwAXJyfHuvZ7VW8YfTVRkdiT5mjBBSKcg7Rz5",
+   "ata": "Fv2jiKUsqK15fQ17g9DGa5r8aZZquLdxj1bJWzbfCiCd",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "LUKEY \u2723",
+   "wallet": "DjM7Tu7whh6P3pGVBfDzwXAx2zaw51GJWrJE3PwtuN7s",
+   "ata": "6XDt5Nz7mwJZKRCX911c8xZEpkH6Fats9VC7v55vC6vS",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Wugi",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
+   "ata": "Hre1D9NXFLgLcgsSe9P2g4tJa5rof8nXnsdTMPgDMwLv",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "samsrep",
+   "wallet": "CUHBzSPSaNS3tArEtM3maSV6pNdJhHJFYZpurPPK9P7H",
+   "ata": "4RZYWauQRsQ3P7Ugrgcb8AEHYPWLxqUdw1qw3FDSuLyW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Dusty",
+   "wallet": "B799XD2RtgkxYRvv5Q9CFnSpVifrsJErWz6MpvBdYFdR",
+   "ata": "77oThWyvYmkijPAeXA7ftPFwzAYdBQLsbZWd9pf6wVR5",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "Meechie",
+   "wallet": "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY",
+   "ata": "Gx1VuGQLavKJuWMUHVdSDiaXFpXZZyHXbcwHpnz4b8dF",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "KOREAN",
+   "wallet": "6KR7SorsUQtNH6CB6JpAnWCAKeTysa95iyXeWihdNeGT",
+   "ata": "GAXNJskG6LJnoNEnGdHDLs4RC1sGuqYZga5UgSsAUUTq",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "King Solomon",
+   "wallet": "DEdEW3SMPU2dCfXEcgj2YppmX9H3bnMDJaU4ctn2BQDQ",
+   "ata": "GSMC3YSUuyJGdbZVZvVFTkAaaM9GUXGnjeaGpcgGo165",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "hood",
+   "wallet": "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9",
+   "ata": "HuBBzHj4qQsgqnrhKPsJRavNPDjgstxJuviV2uDszJC",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0083",
+   "symbol": "smol",
+   "name": "omar",
+   "wallet": "Dgehc8YMv6dHsiPJVoumvq4pSBkMVvrTgTUg7wdcYJPJ",
+   "ata": "Cc9NpJ2rXWxxijVQ8xk8mnJYC2wHypuWDhXwTYQFFGEq",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Dior",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
+   "ata": "F1LSrWKV9FcZBVe5CqvjAYTSBqZDavHcCDtH3Uw6xRiT",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "decu",
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "ata": "nFLuUK68J81RYWgvgdCgqKUkzTK9f8cbt3TQhtrqoZc",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "slingoor",
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "ata": "AmwyuN31Bg2hYN8oHY9VK3L7hmveJ46Kt2GSJHigc7Po",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "trunoest",
+   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+   "ata": "GFMRLcMdh7sU5zN5nxyJk2sPfFmY8KAd2cXbLBtAxVLN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Coler",
+   "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+   "ata": "J4f3hK3FHYoYLVBUGB2ak1cgDrTrzW2nqc7yV7Nh7GrP",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "zhynx",
+   "wallet": "zhYnXqK3MNSmwS3yxSvPmY5kUa1n2WUaCJgYUDrAHkL",
+   "ata": "4u6UDAHxkkadWhQrZVMkoGpMd7hRcyjaaiUbrot77DiR",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "theo",
+   "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+   "ata": "CGwmWqvrJ9hvgRTpTwAgGVGSz1L6aordvKeGAHca6sGt",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Yenni",
+   "wallet": "5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG",
+   "ata": "CcycjsDY4DELE587mAVmBoXETBok8xtrMgP3RqPSSnB7",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "SKX \ud83d\udd36",
+   "wallet": "C4eZg1rJX6v1u7LzqermPrA1pDNNxQe6g3vyY5cHHoWq",
+   "ata": "8g2gTocESYtuzXckEBWkM2H4kbD6r15h3NpWYNKcVFXk",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "TIL",
+   "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+   "ata": "DimpeHS2TrDdteK6LUAubaXUHgFf1YFTceBpcMPcFFu7",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "ban",
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "ata": "FA7VUqEHXzcFqPhamRsLcaG5xEhJAEWDntemrpmEPyEe",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Cented",
+   "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+   "ata": "F2gGerhAL9fCXU6H9vNzWCkMaQ3W8NMF4GjBEqsg84X3",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Megga",
+   "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU",
+   "ata": "6m9fDkoJxGGeEuCmLU4M1JvCpxqkpPdHzVFeKxdLpVBm",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "saale",
+   "wallet": "SAALE2x3sn51EyahJyqD6913L3GqHZdZo3egUdMayQp",
+   "ata": "AGmN9JYEAPk8eamv5NoV94nuLnhuz3T8iHw9JNnskaCu",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Sebastian",
+   "wallet": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+   "ata": "AC8g1fWJbBKBL6mXUMRCMTRuHTQwpQr4THuxz6d7eAJN",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Zyaf",
+   "wallet": "F5TjPySiUJMdvqMZHnPP85Rc1vErDGV5FR5P2vdVm429",
+   "ata": "9UBKdXoKXYAZT6WXWvPphb5818DKoWAP4HfabD9kYye",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Schoen",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "ata": "7u1XWYypRkP7S9wSwHHeBByLAX81b6KgofArDy6dKGfb",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Naruza",
+   "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+   "ata": "5q7jyuk3A1r3PB9o4ypiR1bFpyKLJbpGUPoE5TksYKKG",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Ethan Prosper",
+   "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
+   "ata": "4LbmrcPFUpHHVYw6k4G3RPGZHZq8eFTF8R1n8pZgMkNB",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Cooker",
+   "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+   "ata": "G1qnhYbQ6vxyXawJTvAg419AfEwM6Cbg11cxgt4T1UVu",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "unprofitable",
+   "wallet": "DYmsQudNqJyyDvq86XmzAvrU9T7xwfQEwh6gPQw9TPNF",
+   "ata": "wtVn9rLG68RkuiKDuExwFVJoZTB5KN3pdHcQNrU7ik5",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Frost",
+   "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T",
+   "ata": "BPor3LPxDmWQQWHDGAGJFmLfpHVoBMfLhAU1QuYnjDce",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "rambo",
+   "wallet": "2net6etAtTe3Rbq2gKECmQwnzcKVXRaLcHy2Zy1iCiWz",
+   "ata": "Bd34Sx2fJ3P1yh5vyE6cDwFRB1VRz3fkQTPom8Sn6WNw",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Pain",
+   "wallet": "J6TDXvarvpBdPXTaTU8eJbtso1PUCYKGkVtMKUUY8iEa",
+   "ata": "3JD5YrKe2hsP6uxQrMrzXQrXjnW8BX6K1KKo6cerngeH",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Mitch",
+   "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
+   "ata": "7qzcPqn9PpGzPQHLgAZGMYKgfQx6yo5Psv9DLZMMsuZr",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "milito",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "ata": "4kApAzAmTP33n57KRxzDasYd549HYnC4dN7GPP9cB343",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Numer0 (trench/arc)",
+   "wallet": "A3W8psibkTUvjxs4LRscbnjux6TFDXdvD4m4GsGpQ2KJ",
+   "ata": "CzKtpzbYEKwBKHM9ihiZcv4tedHNZvNdqrNbwficU8Q9",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "tech",
+   "wallet": "5d3jQcuUvsuHyZkhdp78FFqc7WogrzZpTtec1X9VNkuE",
+   "ata": "9yyTxY1sraHTCCYBhoGKWqKH8w566fEM8eNRn6JLAG9s",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "peacefuldestroy",
+   "wallet": "8AtQ4ka3dgtrH1z4Uq3Tm4YdMN3cK5RRj1eKuGNnvenm",
+   "ata": "EeLxUtPz4FmNfDUGjUfzWcUyUu3JmzVtm5tmmGx9KEJV",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Casino",
+   "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
+   "ata": "7zc1LAV2vtzyB9fM8YxzMNUPqvK1HpJRC5chJVtR1XFK",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Esee06257",
+   "wallet": "4uCT4g7YHH4xxfmfNfKUDenwGrRNGoZ9Ay1XFxfUGhQG",
+   "ata": "H1jXGtGpD11u7HzHbKeqbAS4cDfu1pZBa3dYT49Qjfn7",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "CoCo",
+   "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+   "ata": "6ALrUdvSWbFLdSc1vuDmrrtghCqaKbbPbPqtCriRk9r7",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Latuche",
+   "wallet": "GJA1HEbxGnqBhBifH9uQauzXSB53to5rhDrzmKxhSU65",
+   "ata": "BKL9MNBWzmJTECjJDgGSbxzdAuViUCyMacBgyPHt2DSW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "brunowsky",
+   "wallet": "GvTXquDAJbfrFrEGTPRPUj3WM5Bzub5yeTFzkLVHpjfD",
+   "ata": "ApTffkLUHroniNtM3ZqbFjXUB6VX7NkxZbitVEGYSp7U",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "chester",
+   "wallet": "PMJA8UQDyWTFw2Smhyp9jGA6aTaP7jKHR7BPudrgyYN",
+   "ata": "zyBkv8ZwiRGUJsfnpfLhWPmLdaPiYa4sZNJ3ySGP5qv",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Daumen",
+   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+   "ata": "FRrSN6iWByaJSgcAJYCkJJL9EZGaSgqf1pxJZhu2pWqE",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Doji",
+   "wallet": "5ZuV8eqkvzYFVEKbLvGBdexL2tFv7E5BCd2HZpjqbdg",
+   "ata": "9k5diSqGCvhXxFNWYXxfD7APKP6aqvTqsM3bYK9VNStZ",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "kyz",
+   "wallet": "72YiE4crBv2UhxRgRYKs4GaTGT2avbacfL4HNCfQLqsm",
+   "ata": "5NsrEUfz65rvc5UsQeAvCNi7MjUVqAGZ3YsWNaN3cJYM",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Woozy",
+   "wallet": "9tRff7L6Mx3ZDNBoGPffdjD3c9JNzLc3nxzadYH4TnAp",
+   "ata": "ARgnxgCKaRhb2J3Rpnd2XoZrEKx1yw1EcyhjgzPbRMEA",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "West",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+   "ata": "GTrNN3F8PiyBCZxTY58N1oCfrEoMJXoaVq2kpwYjzkVN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "jrus",
+   "wallet": "951wq3qDowjKHaycrNaiRB5WpovYVKXnqhnrcKPh46zt",
+   "ata": "8MkXWY3JweSFtfbDECfoYrvp4atDgQY2X7pNoKi3BBLB",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Jeets",
+   "wallet": "D1H83ueSw5Nxy5okxH7VBfV4jRnqAK5Mm1tm3JAj3m5t",
+   "ata": "7ghauZnZUq7fi8NjmkYbEFXQvuEP2VizUBWgfuqDrt3G",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Zef",
+   "wallet": "EjtQrPTbcMevStBkpnjsH23NfUCMhGHusTYsHuGVQZp2",
+   "ata": "BiSkxKHeuzru4hHi6GdVnZDAQu7vdBXmuE8UtTWwKzGD",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Orange",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "ata": "2gLWMKvDLZ5Lzs8PNaib4iCLShdVrEZtpHnrm4VJFMXs",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "DJ.\u03a3n",
+   "wallet": "Cxe1d5zFifK4a4UZoHQaCK7sfqd84XjcKy1qtjnz3bge",
+   "ata": "HLLASpNEc2JPpwKeAFzMCh3k5N4Z7nsHYXXMfcfU32L",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Gfree",
+   "wallet": "4yo9CUuTBbds9NFhZd4MzPiZZkUvveXdTnAH8qMsE8ku",
+   "ata": "FWtgjb1A5t26hFuxxNL2CSXyFryjifr7tGLHSsmHjdWt",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "yode",
+   "wallet": "J1XAE4onKYG1kTghgaytnyFgR3otQs1xEnJRRWM3djSQ",
+   "ata": "CWFSWoCS5umufw5f4nvpmFHFNmDCNcRNgeLyZ3D2Rx3E",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Limfork.eth",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "ata": "Bw8eSgnRXr6WMQhVPJfctgxKQh4Ero6TFT4QK6jsayf4",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Kev",
+   "wallet": "BTf4A2exGK9BCVDNzy65b9dUzXgMqB4weVkvTMFQsadd",
+   "ata": "5ZREw7thV5kpP76BSJbeYyzqRDqMiqpYHK9tr44x1P2r",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "bandit",
+   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "ata": "8a4RTmJXVfbRPtKVmqVM37qGPbhdzsTtpmuScigA7PF6",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "zeropnl",
+   "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
+   "ata": "ANUGDtAN8ZEGequCYPPwitV6TSFo2qYDFE1HjgsiWWyY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Atlas",
+   "wallet": "GXcAHhvutpa6gmwUVHtxg7KbYghsjNWQshKq4SinHRtQ",
+   "ata": "7j5M76mFygQph7vVD3paQjFXroMEU9W95KVLhFzmgqjM",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Sheep",
+   "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+   "ata": "5FENDDc2rD79fpYU9KYPYbNnnDac73boJzgjQHCBLab5",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Dani",
+   "wallet": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+   "ata": "4TLzDoFauwAfUBtod1XMhoYstz4ii4VeZtnvhRBf8E5Z",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Gasp",
+   "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+   "ata": "CetYswQKXzBxhXoDE3mzYVn2ZCpwcp9YGc7EoaoAeoNw",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "xander",
+   "wallet": "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh",
+   "ata": "F9VppsKFrhhPzQhGAiHeSmnBt5BwHSSbt2XwnjaoFpSx",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Johnson",
+   "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
+   "ata": "CmJiNJhac7RtLBqGWKWKvcHUUX1hAWv2RVcLum1NRfxm",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Mr. Frog",
+   "wallet": "4DdrfiDHpmx55i4SPssxVzS9ZaKLb8qr45NKY9Er9nNh",
+   "ata": "9HAJxRRcbyGRqw16UPqGgeK5diB6WfrghQshjhVYurUW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Thurston (zapped arc)",
+   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "ata": "sGPHfFUbPQEgs8sHxcoh1Cd3E36wo3bXP75KJX2ePqn",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Killua",
+   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
+   "ata": "Cv9QYoKXTzKoaUjawHaj6qxZ2gHTZmz5pPLAN37xEUm8",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Trey",
+   "wallet": "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs",
+   "ata": "5nVg7Ymk8oxUrh6SeUF1vYbrQGpg8MD1dcX812rvp4yY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "prettyover",
+   "wallet": "2e1w3Xo441Ytvwn54wCn8itAXwCKbiizc9ynGEv14Vis",
+   "ata": "6CsRT2zJxnb8voaFGpw95DMLphSQ3KHvKJgGgrbHzh8F",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Lynk",
+   "wallet": "CkPFGv2Wv1vwdWjtXioEgb8jhZQfs3eVZez3QCetu7xD",
+   "ata": "7UnzQW67HFtZR4mz4gzxfXQCL8EtnRsZRaa9JjcLx8p1",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Rilsio",
+   "wallet": "4fZFcK8ms3bFMpo1ACzEUz8bH741fQW4zhAMGd5yZMHu",
+   "ata": "A8bW6VWKEHngq8dh3nHxKt5tYfqmnY9at1UdfgccQSyP",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Silver",
+   "wallet": "67Nwfi9hgwqhxGoovT2JGLU67uxfomLwQAWncjXXzU6U",
+   "ata": "7Jy9JCRPPaNgtXLeT8VZtqcgskCfEaENv5T5iiXbd6kW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Hermes",
+   "wallet": "5dzH7gh5FjtrxUwtfBufJyTBA4fyCUGheZsdYQsE9vag",
+   "ata": "J64UnDv7Cd2v6uTuNFJxwvibj4Sh8U4HPPZAbtD18o23",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Jijo",
+   "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+   "ata": "48Q8qLvky5HyjTYvsSMdXDFbNjK57NeWmyyqzgcUSA8B",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "clukz",
+   "wallet": "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC",
+   "ata": "51aJYPeCxKZcSruZjeYH2vQss2acwLuxaP1c5cGcyUH3",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "EustazZ",
+   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
+   "ata": "EgxxzDZTqbKRzANsit9htpiSedAFfuQPsciJF4GdG68x",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Nyhrox",
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "ata": "6DDohyiTNiaLFftk67aPQGKrV3uam4Vz21qszK2aYZaX",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "The Doc",
+   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+   "ata": "E4GwrY13CYuVU9DKUA8xgQXi272ovg8btCfVCLvFbS5Y",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Idontpaytaxes",
+   "wallet": "2T5NgDDidkvhJQg8AHDi74uCFwgp25pYFMRZXBaCUNBH",
+   "ata": "CmGSsFqzzkfSjYQ8JGr77XaYcX1RajPzSiLHn4kre5wJ",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Putrick",
+   "wallet": "AVjEtg2ECYKXYeqdRQXvaaAZBjfTjYuSMTR4WLhKoeQN",
+   "ata": "Dba4N2jFkhXM2WrHLJGzohJGr6LiSDDQj3LJ45JRJLRt",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Yami \ud80c\udcf5",
+   "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+   "ata": "45ZjxWr9WUccH4cbnwXFVnxVRzavG4FhY9P9RzVyRUxY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "lyftical",
+   "wallet": "2hN82SXLUffhG3vxpezRmae1sGrCBMqHHBDxjmjpagqk",
+   "ata": "Dbi5hyJCsAcCvSofmgAXaGfo9Rm1EneVHpn66wkedKAV",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Letterbomb",
+   "wallet": "BtMBMPkoNbnLF9Xn552guQq528KKXcsNBNNBre3oaQtr",
+   "ata": "5nh4phMTR4if7bqpoXWTfqaubPXBSRWTJsa1rz2rFz2y",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Kadenox",
+   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+   "ata": "DgnD4P6B2LSn8Lg5JSGkrrU3pTXF7Vv3wKJSQPGZ1k2a",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Hash",
+   "wallet": "DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj",
+   "ata": "2QnX6rgFyyiSLNBw8T6z74q1WewG8PzRzzR2L3CZ9rTm",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "OGAntD",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "ata": "HsRPD4GCJSZ7RJmM7kS8xFXqdnutgfyHkLGUgePEypmQ",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "narc",
+   "wallet": "CxgPWvH2GoEDENELne2XKAR2z2Fr4shG2uaeyqZceGve",
+   "ata": "2K2Wv4fkMUtD6oaA7EWSNNLju7MZVqRFjG3qow18qeZp",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Ducky",
+   "wallet": "ADC1QV9raLnGGDbnWdnsxazeZ4Tsiho4vrWadYswA2ph",
+   "ata": "9Nk49VsGDsxi4jT7Lc8AjJ3wrYdkydq96HphowgFpHzv",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Art",
+   "wallet": "CgaA9a1JwAXJyfHuvZ7VW8YfTVRkdiT5mjBBSKcg7Rz5",
+   "ata": "G2qcwo7M4uitZRLLMFQoJgeN1EaNhKKXYUksgkEXiMrR",
+   "sigs": 4,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "LUKEY \u2723",
+   "wallet": "DjM7Tu7whh6P3pGVBfDzwXAx2zaw51GJWrJE3PwtuN7s",
+   "ata": "8DFkEPke1KBjEaVmPu4B7Q29XC5GQF6SYB7DUZE9cdGP",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Wugi",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
+   "ata": "Ap2cXUQARoDyE9ixNBnNzm6yezMLx9zLL15t7HcP2cnm",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "samsrep",
+   "wallet": "CUHBzSPSaNS3tArEtM3maSV6pNdJhHJFYZpurPPK9P7H",
+   "ata": "5xihAcBWc3tup2NVkxvn47eSZckiforCsN89a9SNaP4Q",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Dusty",
+   "wallet": "B799XD2RtgkxYRvv5Q9CFnSpVifrsJErWz6MpvBdYFdR",
+   "ata": "868SqREeBr8fdzRciRwLuoXve5eYn3bdjz6qe8MW9k3A",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "Meechie",
+   "wallet": "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY",
+   "ata": "7bKHLfQQfp7FhLqMr8Ytd1PRHkK5Sbd7wET45WQZxxsz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "KOREAN",
+   "wallet": "6KR7SorsUQtNH6CB6JpAnWCAKeTysa95iyXeWihdNeGT",
+   "ata": "ADZ6xfgtadE8vX13fMq6WdWRKqLS4Kw7J856nECz1XYS",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "King Solomon",
+   "wallet": "DEdEW3SMPU2dCfXEcgj2YppmX9H3bnMDJaU4ctn2BQDQ",
+   "ata": "CjZGxyFMtNAMaUcB34JtdcWFXYoKoGCnHpQTrDHCTXfx",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "hood",
+   "wallet": "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9",
+   "ata": "4Ath7Hf3K73HwTTvHGdu3FtpqMpdjCP1cHkEF4ccfLxs",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0084",
+   "symbol": "VEILTRUMP",
+   "name": "omar",
+   "wallet": "Dgehc8YMv6dHsiPJVoumvq4pSBkMVvrTgTUg7wdcYJPJ",
+   "ata": "FNtJea95vvL3g6DxDpucGxF683YPjeBQMY4WDLPYHdTs",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Dior",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
+   "ata": "BEXse5YDeVKsMJfqFSyJspLyrctzGJRpNetMc14ALGiY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "decu",
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "ata": "4ATURzjacxmiUkVsELSQkFVd3LKihzLd5wq8362LcDL4",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "slingoor",
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "ata": "832dBx8EGmLdaSUcHu3mt3DCwQhCFXpT2ZpsXAUyTDps",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "trunoest",
+   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+   "ata": "Gyx71ZseVzAkWijcupyd3GbgzGFUepKLFU8ZzpHapgZ6",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Coler",
+   "wallet": "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs",
+   "ata": "CC8yrPCGVwnPSbrTKj76ahcSvJcV4yizVGEvVUQJmWTd",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "zhynx",
+   "wallet": "zhYnXqK3MNSmwS3yxSvPmY5kUa1n2WUaCJgYUDrAHkL",
+   "ata": "GoVS2ZXCk5CQCd8EY2k8BVH4KzXjHY5jiW3uSENdeHoW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "theo",
+   "wallet": "Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt",
+   "ata": "Cvg5Go2N9JnKHJyqLcqnjki2FqQGTWpNTqQjQtYJ7nyX",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Yenni",
+   "wallet": "5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG",
+   "ata": "6bG4oKWC3j35TNp2RifbMfVF3Rk6sMR6DCxueauVRarp",
+   "sigs": 8,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "SKX \ud83d\udd36",
+   "wallet": "C4eZg1rJX6v1u7LzqermPrA1pDNNxQe6g3vyY5cHHoWq",
+   "ata": "D5dGZpS8nGusZyXh7P1keMk8YkWWrYU8gJfRGhgQYRvc",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "TIL",
+   "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+   "ata": "ENhDKMC9MXNiYWKmYYaZcpqVKALBGJVCzQDMMywPHQQq",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "ban",
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "ata": "5Vrwmt5FWKrhy1Q19dLYp19njrZvDrxbv8gkn8HzSTyD",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Cented",
+   "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
+   "ata": "5tEecocbmT1atQYCPtM8yhdtGBataWsEKtn85odmxjVs",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Megga",
+   "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU",
+   "ata": "CV3XF4j7mRffo81MMYhhtxDXbBT6WXgx3JkKBRVVHktW",
+   "sigs": 28,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "saale",
+   "wallet": "SAALE2x3sn51EyahJyqD6913L3GqHZdZo3egUdMayQp",
+   "ata": "D3RNy1dshaYmrpiYmUwGqTYUwAt8TbQbgDPV2mn2teXs",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Sebastian",
+   "wallet": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+   "ata": "VLpmQ6ns6oktwFcfvb8Lvw4qVgdaV91CGWJDBn4eSKq",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Zyaf",
+   "wallet": "F5TjPySiUJMdvqMZHnPP85Rc1vErDGV5FR5P2vdVm429",
+   "ata": "78TuaGghzZ36YaSA4gkVZniT4bU34qzAjPU2joCTv4bA",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Schoen",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "ata": "FNatC2pp66Ju3nj7dv2f5haRnoCKgeSGjF2LuTUGEkGh",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Naruza",
+   "wallet": "ASVzakePP6GNg9r95d4LPZHJDMXun6L6E4um4pu5ybJk",
+   "ata": "GeRHm11ADT3GnAQY5koQfHKE5kUqaH5rHEkAmwNbowjt",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Ethan Prosper",
+   "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
+   "ata": "BHw2aCidwXaqpDCgu3MzqTF4WJRpiHnZuxrbmTAGAJVN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Cooker",
+   "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+   "ata": "9WH5L4heH6tUQj2tJFG3DC9soscxERoWxFeESLaTaP95",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "unprofitable",
+   "wallet": "DYmsQudNqJyyDvq86XmzAvrU9T7xwfQEwh6gPQw9TPNF",
+   "ata": "iCZxGxkpp56hFok6xuxXTdaqPC9b5Ci5hVt9CsaJzHR",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Frost",
+   "wallet": "4nwfXw7n98jEQn93VWY7Cuf1jnn1scHXuXCPGVYS9k6T",
+   "ata": "9MEsrctACFSroXrFxQppYzr4BVw6NTdC5EGFFim1rCHH",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "rambo",
+   "wallet": "2net6etAtTe3Rbq2gKECmQwnzcKVXRaLcHy2Zy1iCiWz",
+   "ata": "FegGWun1SXwaEzU8KJgR7HGRTN1hnN1xTEK1NBM2pDSu",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Pain",
+   "wallet": "J6TDXvarvpBdPXTaTU8eJbtso1PUCYKGkVtMKUUY8iEa",
+   "ata": "ESrkeeEJfEKUaEWd4Xon1B9c2u7DRkmHiQDnRa8LDdGE",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Mitch",
+   "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
+   "ata": "5EbwFz4LHBe4MhG94W3ZAMdina16KyFhmKMzpun2QSTE",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "milito",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "ata": "8wZEKjKa8AEysyLwUw9JGxsAJARpEj55DAEDTBQSqbEr",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Numer0 (trench/arc)",
+   "wallet": "A3W8psibkTUvjxs4LRscbnjux6TFDXdvD4m4GsGpQ2KJ",
+   "ata": "HpeTM91zZqxyjhjRzUiRrSz7L4NqR1xpMBdApfhXSVXh",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "tech",
+   "wallet": "5d3jQcuUvsuHyZkhdp78FFqc7WogrzZpTtec1X9VNkuE",
+   "ata": "7KtKfezawVcM68DdjrADwjcvGcbukEtCDQjKxcnvrxm3",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "peacefuldestroy",
+   "wallet": "8AtQ4ka3dgtrH1z4Uq3Tm4YdMN3cK5RRj1eKuGNnvenm",
+   "ata": "2YafJnBEEvGUGNKjioRJamx9QEP2MvbxXKpLXEyuoJMd",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Casino",
+   "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
+   "ata": "Bj8M7qSCjq7U4p34FwP86W3PxpvcnqpFfXTtiUDvHMsC",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Esee06257",
+   "wallet": "4uCT4g7YHH4xxfmfNfKUDenwGrRNGoZ9Ay1XFxfUGhQG",
+   "ata": "BHPadvqTohAkGC8HSCqdPDErdgdGvxXgYmSjcXwtzJhR",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "CoCo",
+   "wallet": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
+   "ata": "7jxTkWadUMdNx9cFLwq5aipxVeeqdMWgborwfU1zPqVL",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Latuche",
+   "wallet": "GJA1HEbxGnqBhBifH9uQauzXSB53to5rhDrzmKxhSU65",
+   "ata": "4exFigm6vydJmrHWVut3hiYVfBgqJRTiLkyRBsmVsMYK",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "brunowsky",
+   "wallet": "GvTXquDAJbfrFrEGTPRPUj3WM5Bzub5yeTFzkLVHpjfD",
+   "ata": "BLY2AEE1ceLZ6VJBC7da72M2jM8Gotb9kKMpU7WL7SdW",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "chester",
+   "wallet": "PMJA8UQDyWTFw2Smhyp9jGA6aTaP7jKHR7BPudrgyYN",
+   "ata": "BBpqG6aFb8Y3eg2U3zFPeAWv2Ak35svLfm9oQM54iKs3",
+   "sigs": 7,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Daumen",
+   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+   "ata": "GhKCPefvmYdP8wwkovVV6WpFEGijW1QJrjZkTQfyMnLs",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Doji",
+   "wallet": "5ZuV8eqkvzYFVEKbLvGBdexL2tFv7E5BCd2HZpjqbdg",
+   "ata": "FfdXyb4sonZjsu8QYuqvqqwfXyf1tPwwexvdwVL8Uo2f",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "kyz",
+   "wallet": "72YiE4crBv2UhxRgRYKs4GaTGT2avbacfL4HNCfQLqsm",
+   "ata": "9eVogbRbQQJcFmAQKgEGCpD8ERfm194PvJsAKstRR9jx",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Woozy",
+   "wallet": "9tRff7L6Mx3ZDNBoGPffdjD3c9JNzLc3nxzadYH4TnAp",
+   "ata": "C48eyfDmfnFyZXghwms5Cfm4MskrovxxetNPWDPTdphv",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "West",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+   "ata": "DwnNFzDYQHDPB3bGugNXvQcVScwsSgw2oKK2k3Ziyhux",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "jrus",
+   "wallet": "951wq3qDowjKHaycrNaiRB5WpovYVKXnqhnrcKPh46zt",
+   "ata": "HRczFtxSRS5bYsDvhP1qw6ajL5ywEtPk1b8DXGWeiXah",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Jeets",
+   "wallet": "D1H83ueSw5Nxy5okxH7VBfV4jRnqAK5Mm1tm3JAj3m5t",
+   "ata": "63ifAc67ZY7NA3UGpmrwx4dDp9tUaav75fygRNhEiXGJ",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Zef",
+   "wallet": "EjtQrPTbcMevStBkpnjsH23NfUCMhGHusTYsHuGVQZp2",
+   "ata": "ALnCbkw2Kh9kKUCWA4VYYcSYSVdx7PpA8XaXn1dmeeX8",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Orange",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "ata": "64aHgKXN6BDTEtiqcwrX2uKHbajKBRUsQ29ph5BNEXh4",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "DJ.\u03a3n",
+   "wallet": "Cxe1d5zFifK4a4UZoHQaCK7sfqd84XjcKy1qtjnz3bge",
+   "ata": "Fw7vKAcZ6s9JZRJ1WE4Y3JFfK7fSiUpEx5kcbANE378D",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Gfree",
+   "wallet": "4yo9CUuTBbds9NFhZd4MzPiZZkUvveXdTnAH8qMsE8ku",
+   "ata": "2F5jHhvaZD7SjpHEg7dozbfVhUs7jcuHyC45KrEHp9zh",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "yode",
+   "wallet": "J1XAE4onKYG1kTghgaytnyFgR3otQs1xEnJRRWM3djSQ",
+   "ata": "FAMi2QfrafDiFpPL8AjfgYm9mMMVLiQ6KzFphmv6RB2H",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Limfork.eth",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "ata": "BVjfU9TkiRJckGsCTUFzEApvJcBJkSKd3Rw7TjjXnQBb",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Kev",
+   "wallet": "BTf4A2exGK9BCVDNzy65b9dUzXgMqB4weVkvTMFQsadd",
+   "ata": "B3WiF6cN8F2v5uXRN8S4vwezEPPWkKTXgZaQUtCW7JcE",
+   "sigs": 6,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "bandit",
+   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "ata": "4zctRoTsVZaTB7qhPtWNNCiw6na9dgQWmumuDjnnwdpj",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "zeropnl",
+   "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
+   "ata": "D21TrVGnSbChLYihPJAm2zjzxWDG3Ji6hgC13EN9qHjj",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Atlas",
+   "wallet": "GXcAHhvutpa6gmwUVHtxg7KbYghsjNWQshKq4SinHRtQ",
+   "ata": "Dzwp2pPJ1Nc7MyvUGwyCAeQHh1bP1txCdvdg4dkEz372",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Sheep",
+   "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+   "ata": "BQKhw49HLbf6cMuiWKjnVfuysGkzzi3DxfSAwqyAZLqN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Dani",
+   "wallet": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+   "ata": "9pnqSBNVDjfD3QThL7boCYmycEC7cgC95S6MYhnSR8WQ",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Gasp",
+   "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+   "ata": "6W5cv453QbtJRt8jxnveeVZM1cWy27HdvCde49ySVbzx",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "xander",
+   "wallet": "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh",
+   "ata": "3ren9bBFcNm3T9RXeJgsv5TPstct4D2y4TPhHtRjjEET",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Johnson",
+   "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
+   "ata": "84CAPy4LepoWUsXRyxCwG4aG13usvw1JmzG2rifPyTjY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Mr. Frog",
+   "wallet": "4DdrfiDHpmx55i4SPssxVzS9ZaKLb8qr45NKY9Er9nNh",
+   "ata": "4wzAWr6mK8xjsBfrfaRxaJ49Gstma6sbarBPcKjnTRS9",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Thurston (zapped arc)",
+   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "ata": "N3R4pshZbP9FuuC6Br7yJntSm3syBTjk3X5XYwUqPvM",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Killua",
+   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
+   "ata": "EZvu63zWcTMDpYskbbt7dCciE9ehBFc219xHMe95n8EM",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Trey",
+   "wallet": "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs",
+   "ata": "H99nMH7vQvx61R2FEFsY74DMym4wrQUsnBr7xzCxHpQy",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "prettyover",
+   "wallet": "2e1w3Xo441Ytvwn54wCn8itAXwCKbiizc9ynGEv14Vis",
+   "ata": "7gd9ypZJDFNWnGmJn86KHmUuvMCkE8mqhrwdbkuhYQne",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Lynk",
+   "wallet": "CkPFGv2Wv1vwdWjtXioEgb8jhZQfs3eVZez3QCetu7xD",
+   "ata": "E7WjG9SPciDsLvEGrzrD5xxr8GCErzLtKX1JHoFK2SH1",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Rilsio",
+   "wallet": "4fZFcK8ms3bFMpo1ACzEUz8bH741fQW4zhAMGd5yZMHu",
+   "ata": "FrDBFAyeMbZ2bBSiGYvtFdsiaRhqa9XpwZMWVYYYC71B",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Silver",
+   "wallet": "67Nwfi9hgwqhxGoovT2JGLU67uxfomLwQAWncjXXzU6U",
+   "ata": "zkdVSH6NnYsa29CZxxxZViBdrMkdT7oEjaSQ5nh6SXS",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Hermes",
+   "wallet": "5dzH7gh5FjtrxUwtfBufJyTBA4fyCUGheZsdYQsE9vag",
+   "ata": "9fcoLXov8RJciwnVnygbwpgW3hN2chjXPAR3e1oxmGec",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Jijo",
+   "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+   "ata": "3ayzzEKP7SniogzmFyeLs4ExSuHx6gWVKFAzouy368F1",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "clukz",
+   "wallet": "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC",
+   "ata": "3pyE7zuux4gsXeEisno63ee7N8Wwt56xb1ZYSY8DcRa1",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "EustazZ",
+   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
+   "ata": "3Zs2Eq6jtDKiqsjA6C6cfCxwsZFz553ttvNtvrK4Corf",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Nyhrox",
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "ata": "83tp5f72JCziecVWcRh8S4wkLV6cp1oi6bqtpY8pzXv7",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "The Doc",
+   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+   "ata": "FEHaQVJYNggZmud3NMuS5d7SE8W8Kfg955FAZV9yqTUu",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Idontpaytaxes",
+   "wallet": "2T5NgDDidkvhJQg8AHDi74uCFwgp25pYFMRZXBaCUNBH",
+   "ata": "HAgNTbNaWzFKL9QnLrpjKu8rXUDfFH3YEma3KVY5sSEq",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Putrick",
+   "wallet": "AVjEtg2ECYKXYeqdRQXvaaAZBjfTjYuSMTR4WLhKoeQN",
+   "ata": "H2c1royU9uyZuJpUPpJeWqaqbadojmtJPvd7iqHxFKny",
+   "sigs": 39,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Yami \ud80c\udcf5",
+   "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+   "ata": "9kEHYeeCzksT9JaoFwb2JkQimN7JUq9JCpEestwUfXAQ",
+   "sigs": 14,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "lyftical",
+   "wallet": "2hN82SXLUffhG3vxpezRmae1sGrCBMqHHBDxjmjpagqk",
+   "ata": "HCZZMjjx2ZDAhQYkoxfY4KXkhzxnhtQ2vD9pAb7AUDND",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Letterbomb",
+   "wallet": "BtMBMPkoNbnLF9Xn552guQq528KKXcsNBNNBre3oaQtr",
+   "ata": "BF1suZvjYpTyxDAcDsBYiMo3MpUBEiU2fHpWyBvJxtjN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Kadenox",
+   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+   "ata": "iBHQ1fAcqV5Bs84rK7MMzNoyg27C6iTrUg3Na2Vj56z",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Hash",
+   "wallet": "DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj",
+   "ata": "22HjUYPTxPXXTppHdvDSGMr95hNDxAuSzSUKdmfyseDm",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "OGAntD",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "ata": "Hpqhp5vcrtoCSrgBLgR9K4wsoSH7NYaDFi7Z1Cg4M7To",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "narc",
+   "wallet": "CxgPWvH2GoEDENELne2XKAR2z2Fr4shG2uaeyqZceGve",
+   "ata": "9qJWBHDghSDjMghfAt4986TtYxQ95SKxqgUNV5jkgeNN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Ducky",
+   "wallet": "ADC1QV9raLnGGDbnWdnsxazeZ4Tsiho4vrWadYswA2ph",
+   "ata": "3dZ2ZSGELf3kgdRCU9apYQ2ywtMUdq7m5jPXC5dXMajY",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Art",
+   "wallet": "CgaA9a1JwAXJyfHuvZ7VW8YfTVRkdiT5mjBBSKcg7Rz5",
+   "ata": "Haj5EiexKNUTfipn9oy6LTSWKxr8iPjJg3xqVx9zHwqM",
+   "sigs": 100,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "LUKEY \u2723",
+   "wallet": "DjM7Tu7whh6P3pGVBfDzwXAx2zaw51GJWrJE3PwtuN7s",
+   "ata": "36FDfKauLT3ZjY5EFys7QfkAJiGU7iXs17WR5ucTZdqN",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Wugi",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
+   "ata": "H172LXxWvnSJzuYBqgf6cWe23jSQDXDnyJd6C54wBJqz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "samsrep",
+   "wallet": "CUHBzSPSaNS3tArEtM3maSV6pNdJhHJFYZpurPPK9P7H",
+   "ata": "GttQJfLxfJ96x8dE3sgxTV9B9oqubsx61o3uyMz6P3Bd",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Dusty",
+   "wallet": "B799XD2RtgkxYRvv5Q9CFnSpVifrsJErWz6MpvBdYFdR",
+   "ata": "A7nqFKi1Cp1FDrzSWBByGgFq7bgfczSXZ3BSeGWEvxkX",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "Meechie",
+   "wallet": "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY",
+   "ata": "Q4QxpcuNYKCepgun7LBgKUZDVDn1fu9GfULH8GidV55",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "KOREAN",
+   "wallet": "6KR7SorsUQtNH6CB6JpAnWCAKeTysa95iyXeWihdNeGT",
+   "ata": "Myao9e7MzW3skWK61VzrhNgjxduYugmms7WimTEyTZH",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "King Solomon",
+   "wallet": "DEdEW3SMPU2dCfXEcgj2YppmX9H3bnMDJaU4ctn2BQDQ",
+   "ata": "GEVypHi7BrNYbtZGK913XiPciFi4u2eDZzrnxXxjnLNc",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "hood",
+   "wallet": "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9",
+   "ata": "9YmbMEPKWK8Y6pm6g2otuNhwh6DwVDM7rddaqDP6VpAi",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  },
+  {
+   "id": "G-0085",
+   "symbol": "SAINDRA",
+   "name": "omar",
+   "wallet": "Dgehc8YMv6dHsiPJVoumvq4pSBkMVvrTgTUg7wdcYJPJ",
+   "ata": "266tRYZp1oUcxYUMXbdy1VkDuFzoCgDEmWKKEkwVk2mz",
+   "sigs": 0,
+   "in_window": 0,
+   "trades": []
+  }
+ ]
+}

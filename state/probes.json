@@ -3512,22 +3512,27 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 2,
    "started_at": "2026-10-15T12:35:31+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-15T12:47:27+0100",
+   "note": "Measured 2 KOL wallets with a KOL-signed transaction on a pick inside the hour either side, 1 of them out before the pick: the shot exactly. Both on CFLARE and both dust (-40 and -10 tokens), so no tracked KOL put real size into any of the 4 picks of the 14 Oct 22:29Z batch; 0 bought before and sold after (batch one 7 wallets, 2). 364 of 364 lookups, 658 RPC calls, 289 of them 429s, 627 s. The batch-one front-run shape does not repeat. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-15-P-0151"
+   ],
+   "minutes": 11,
+   "calls": 28,
+   "denied": [
+    "Monitor `tail -n 0 -F /Users/triton/PROTEUS/experiments/2026-10-15-P-0151/progress.log`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "2 KOL wallets with a KOL-signed trade on a pick within an hour either side, 1 of them out before the pick",
-    "at": "2026-10-15T12:35:56+0100"
+    "at": "2026-10-15T12:35:56+0100",
+    "hit": true
    }
   },
   {

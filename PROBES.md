@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 105 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 106 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 
-## Queue (13 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,13 +24,14 @@ Verdicts so far: 105 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
-| P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | desk | none |  | 2 (in progress) | 30 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (142)
+## Verdicts (143)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-15 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | **works** | Measured 2 KOL wallets with a KOL-signed transaction on a pick inside the hour either side, 1 of them out before the pick: the shot exactly. Both on CFLARE and both dust (-40 and -10 tokens), so no tracked KOL put real size into any of the 4 picks of the 14 Oct 22:29Z batch; 0 bought before and sold after (batch one 7 wallets, 2). 364 of 364 lookups, 658 RPC calls, 289 of them 429s, 627 s. The batch-one front-run shape does not repeat. Next: close. | `experiments/2026-10-15-P-0151` | 11 min, 28 calls, 1 denied |
+| | | | | denied: Monitor `tail -n 0 -F /Users/triton/PROTEUS/experiments/2026-10-15-P-0151/progress.log` | | |
 | 2026-10-15 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | **blocked** | Measured 0 trades: the probe was queued without --after, and D-013 window two runs to 2026-10-21 16:34Z (backstop 24 Oct). Scoring a part-window now would spend the blind top-ten read early, so I did not open the watcher data. Shot taken after reading the DUE row, so it scores as a coin. Re-added for 22 Oct. | `DUE.md` | 0 min, 5 calls, 0 denied |
 | 2026-10-15 | P-0158 | Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block shuffle? | **not-worth-it** | Out of sample (18 May to 16 Jul 2026, 735 trades on 52 pairs) the frozen rule made -0.97% a trade against -0.83% for random holds of the same coins: edge -0.14 pp, day-block p 0.61, against my shot of within 0.3 pp and p above 0.2 (hit). In-sample re-check reproduces P-0153 exactly (144 trades, +1.49%) but the day-block shuffle moves its p from 0.036 to 0.12, so the in-sample edge was mostly overlap. Close. | `experiments/2026-10-15-P-0158` | 3 min, 10 calls, 0 denied |
 | 2026-10-14 | P-0148 | Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier | **works** | Measured: on the 2025-26 walk-forward (3,134 matches, all eight groups) the analytic-gradient fit gives dc Brier 0.60528, identical to the finite-difference fit to 5 decimals; largest p_home move 0.003; pool weight against the close 0.00 for both; 685 s to 30 s. Shot said under 0.0005: hit. Switched pitch/model.py (4e21eb6) with a dated RULES.md implementation note; live from 15 Oct. Next: close. | `experiments/2026-10-14-P-0148` | 6 min, 22 calls, 0 denied |
