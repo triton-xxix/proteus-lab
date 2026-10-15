@@ -3700,22 +3700,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-15T12:31:29+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-15T12:34:53+0100",
+   "note": "Out of sample (18 May to 16 Jul 2026, 735 trades on 52 pairs) the frozen rule made -0.97% a trade against -0.83% for random holds of the same coins: edge -0.14 pp, day-block p 0.61, against my shot of within 0.3 pp and p above 0.2 (hit). In-sample re-check reproduces P-0153 exactly (144 trades, +1.49%) but the day-block shuffle moves its p from 0.036 to 0.12, so the in-sample edge was mostly overlap. Close.",
+   "artefacts": [
+    "experiments/2026-10-15-P-0158"
+   ],
+   "minutes": 3,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "not-worth-it",
     "p": 0.7,
     "number": "out of sample mean trade within 0.3 pp of random holds, day-block p above 0.2",
-    "at": "2026-10-15T12:31:47+0100"
+    "at": "2026-10-15T12:31:47+0100",
+    "hit": true
    }
   }
  ]

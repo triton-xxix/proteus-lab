@@ -1,0 +1,637 @@
+{
+ "out_of_sample": {
+  "window_start_ms": 1776466800000,
+  "window_end_ms": 1784239200000,
+  "n_pairs": 52,
+  "pairs": [
+   [
+    "BTC",
+    "ETH",
+    0.883
+   ],
+   [
+    "BTC",
+    "SOL",
+    0.795
+   ],
+   [
+    "BTC",
+    "BNB",
+    0.756
+   ],
+   [
+    "BTC",
+    "XRP",
+    0.753
+   ],
+   [
+    "BTC",
+    "DOGE",
+    0.722
+   ],
+   [
+    "BTC",
+    "ADA",
+    0.741
+   ],
+   [
+    "BTC",
+    "AVAX",
+    0.791
+   ],
+   [
+    "BTC",
+    "LINK",
+    0.783
+   ],
+   [
+    "BTC",
+    "LTC",
+    0.727
+   ],
+   [
+    "BTC",
+    "DOT",
+    0.719
+   ],
+   [
+    "ETH",
+    "SOL",
+    0.833
+   ],
+   [
+    "ETH",
+    "BNB",
+    0.766
+   ],
+   [
+    "ETH",
+    "XRP",
+    0.767
+   ],
+   [
+    "ETH",
+    "DOGE",
+    0.712
+   ],
+   [
+    "ETH",
+    "ADA",
+    0.758
+   ],
+   [
+    "ETH",
+    "AVAX",
+    0.804
+   ],
+   [
+    "ETH",
+    "LINK",
+    0.826
+   ],
+   [
+    "ETH",
+    "LTC",
+    0.752
+   ],
+   [
+    "ETH",
+    "DOT",
+    0.747
+   ],
+   [
+    "SOL",
+    "BNB",
+    0.77
+   ],
+   [
+    "SOL",
+    "XRP",
+    0.8
+   ],
+   [
+    "SOL",
+    "ADA",
+    0.797
+   ],
+   [
+    "SOL",
+    "AVAX",
+    0.839
+   ],
+   [
+    "SOL",
+    "LINK",
+    0.855
+   ],
+   [
+    "SOL",
+    "LTC",
+    0.767
+   ],
+   [
+    "SOL",
+    "DOT",
+    0.762
+   ],
+   [
+    "BNB",
+    "XRP",
+    0.742
+   ],
+   [
+    "BNB",
+    "ADA",
+    0.744
+   ],
+   [
+    "BNB",
+    "AVAX",
+    0.754
+   ],
+   [
+    "BNB",
+    "LINK",
+    0.755
+   ],
+   [
+    "BNB",
+    "LTC",
+    0.721
+   ],
+   [
+    "BNB",
+    "DOT",
+    0.714
+   ],
+   [
+    "XRP",
+    "DOGE",
+    0.721
+   ],
+   [
+    "XRP",
+    "ADA",
+    0.826
+   ],
+   [
+    "XRP",
+    "AVAX",
+    0.814
+   ],
+   [
+    "XRP",
+    "LINK",
+    0.79
+   ],
+   [
+    "XRP",
+    "LTC",
+    0.76
+   ],
+   [
+    "XRP",
+    "DOT",
+    0.76
+   ],
+   [
+    "DOGE",
+    "ADA",
+    0.752
+   ],
+   [
+    "DOGE",
+    "AVAX",
+    0.74
+   ],
+   [
+    "DOGE",
+    "LTC",
+    0.725
+   ],
+   [
+    "DOGE",
+    "DOT",
+    0.714
+   ],
+   [
+    "ADA",
+    "AVAX",
+    0.875
+   ],
+   [
+    "ADA",
+    "LINK",
+    0.821
+   ],
+   [
+    "ADA",
+    "LTC",
+    0.802
+   ],
+   [
+    "ADA",
+    "DOT",
+    0.832
+   ],
+   [
+    "AVAX",
+    "LINK",
+    0.859
+   ],
+   [
+    "AVAX",
+    "LTC",
+    0.795
+   ],
+   [
+    "AVAX",
+    "DOT",
+    0.849
+   ],
+   [
+    "LINK",
+    "LTC",
+    0.779
+   ],
+   [
+    "LINK",
+    "DOT",
+    0.784
+   ],
+   [
+    "LTC",
+    "DOT",
+    0.78
+   ]
+  ],
+  "n_trades": 735,
+  "entry_days": 60,
+  "mean_trade_pct": -0.966,
+  "median_trade_pct": -0.661,
+  "win_rate": 0.411,
+  "random_mean_pct": -0.826,
+  "edge_pp": -0.14,
+  "p_per_trade": 0.8315,
+  "p_day_block": 0.606,
+  "block_sd_pct": 0.457,
+  "per_trade_sd_pct": 0.149,
+  "trading_window_hold_pct": {
+   "BTC": -17.42,
+   "ETH": -12.3,
+   "SOL": -11.64,
+   "BNB": -11.67,
+   "XRP": -22.21,
+   "DOGE": -33.27,
+   "ADA": -36.18,
+   "AVAX": -28.72,
+   "LINK": -12.45,
+   "LTC": -17.45,
+   "DOT": -31.44,
+   "TRX": -8.95
+  },
+  "per_pair": {
+   "ADA-AVAX": {
+    "n": 12,
+    "mean_pct": -2.71
+   },
+   "SOL-AVAX": {
+    "n": 14,
+    "mean_pct": -1.248
+   },
+   "BTC-XRP": {
+    "n": 14,
+    "mean_pct": -0.164
+   },
+   "BNB-AVAX": {
+    "n": 16,
+    "mean_pct": -0.117
+   },
+   "LINK-DOT": {
+    "n": 16,
+    "mean_pct": -0.69
+   },
+   "BTC-SOL": {
+    "n": 13,
+    "mean_pct": -1.795
+   },
+   "ETH-LTC": {
+    "n": 16,
+    "mean_pct": -0.348
+   },
+   "ETH-LINK": {
+    "n": 13,
+    "mean_pct": -1.041
+   },
+   "ETH-BNB": {
+    "n": 15,
+    "mean_pct": 0.502
+   },
+   "XRP-LTC": {
+    "n": 17,
+    "mean_pct": 0.236
+   },
+   "SOL-BNB": {
+    "n": 12,
+    "mean_pct": 0.002
+   },
+   "XRP-LINK": {
+    "n": 12,
+    "mean_pct": 0.943
+   },
+   "DOGE-ADA": {
+    "n": 13,
+    "mean_pct": -3.241
+   },
+   "LINK-LTC": {
+    "n": 13,
+    "mean_pct": 0.383
+   },
+   "SOL-XRP": {
+    "n": 14,
+    "mean_pct": -0.453
+   },
+   "ETH-XRP": {
+    "n": 15,
+    "mean_pct": -0.656
+   },
+   "BTC-DOT": {
+    "n": 13,
+    "mean_pct": -1.419
+   },
+   "XRP-DOGE": {
+    "n": 12,
+    "mean_pct": -0.88
+   },
+   "AVAX-LINK": {
+    "n": 13,
+    "mean_pct": -1.476
+   },
+   "ETH-AVAX": {
+    "n": 16,
+    "mean_pct": -0.841
+   },
+   "DOGE-LTC": {
+    "n": 15,
+    "mean_pct": -0.047
+   },
+   "BTC-DOGE": {
+    "n": 15,
+    "mean_pct": -1.067
+   },
+   "BTC-ETH": {
+    "n": 17,
+    "mean_pct": 0.396
+   },
+   "DOGE-DOT": {
+    "n": 16,
+    "mean_pct": -0.727
+   },
+   "BTC-ADA": {
+    "n": 11,
+    "mean_pct": -2.0
+   },
+   "AVAX-DOT": {
+    "n": 14,
+    "mean_pct": -2.029
+   },
+   "BTC-LINK": {
+    "n": 19,
+    "mean_pct": -0.586
+   },
+   "ETH-DOGE": {
+    "n": 15,
+    "mean_pct": -1.033
+   },
+   "SOL-LTC": {
+    "n": 14,
+    "mean_pct": -1.55
+   },
+   "SOL-ADA": {
+    "n": 15,
+    "mean_pct": -2.446
+   },
+   "BTC-LTC": {
+    "n": 16,
+    "mean_pct": -0.769
+   },
+   "ADA-LINK": {
+    "n": 13,
+    "mean_pct": -2.586
+   },
+   "ADA-LTC": {
+    "n": 15,
+    "mean_pct": -0.382
+   },
+   "AVAX-LTC": {
+    "n": 12,
+    "mean_pct": -0.356
+   },
+   "ETH-ADA": {
+    "n": 14,
+    "mean_pct": -2.658
+   },
+   "SOL-LINK": {
+    "n": 16,
+    "mean_pct": -0.456
+   },
+   "ADA-DOT": {
+    "n": 15,
+    "mean_pct": -2.171
+   },
+   "XRP-AVAX": {
+    "n": 12,
+    "mean_pct": -1.28
+   },
+   "ETH-SOL": {
+    "n": 11,
+    "mean_pct": -1.674
+   },
+   "BNB-DOT": {
+    "n": 13,
+    "mean_pct": -1.21
+   },
+   "BTC-BNB": {
+    "n": 12,
+    "mean_pct": -0.335
+   },
+   "BTC-AVAX": {
+    "n": 15,
+    "mean_pct": -1.249
+   },
+   "BNB-XRP": {
+    "n": 15,
+    "mean_pct": -0.817
+   },
+   "XRP-DOT": {
+    "n": 14,
+    "mean_pct": -1.206
+   },
+   "LTC-DOT": {
+    "n": 13,
+    "mean_pct": -1.273
+   },
+   "BNB-ADA": {
+    "n": 12,
+    "mean_pct": -1.729
+   },
+   "BNB-LINK": {
+    "n": 15,
+    "mean_pct": 0.616
+   },
+   "BNB-LTC": {
+    "n": 15,
+    "mean_pct": -0.868
+   },
+   "ETH-DOT": {
+    "n": 15,
+    "mean_pct": -0.739
+   },
+   "SOL-DOT": {
+    "n": 13,
+    "mean_pct": -1.365
+   },
+   "XRP-ADA": {
+    "n": 14,
+    "mean_pct": -1.873
+   },
+   "DOGE-AVAX": {
+    "n": 15,
+    "mean_pct": -1.517
+   }
+  }
+ },
+ "in_sample_recheck": {
+  "window_start_ms": 1784242800000,
+  "window_end_ms": 1792015200000,
+  "n_pairs": 11,
+  "pairs": [
+   [
+    "BTC",
+    "ETH",
+    0.869
+   ],
+   [
+    "BTC",
+    "SOL",
+    0.807
+   ],
+   [
+    "BTC",
+    "XRP",
+    0.728
+   ],
+   [
+    "ETH",
+    "SOL",
+    0.849
+   ],
+   [
+    "ETH",
+    "XRP",
+    0.754
+   ],
+   [
+    "ETH",
+    "DOGE",
+    0.732
+   ],
+   [
+    "ETH",
+    "LINK",
+    0.717
+   ],
+   [
+    "SOL",
+    "XRP",
+    0.775
+   ],
+   [
+    "SOL",
+    "DOGE",
+    0.78
+   ],
+   [
+    "SOL",
+    "LINK",
+    0.719
+   ],
+   [
+    "XRP",
+    "DOGE",
+    0.744
+   ]
+  ],
+  "n_trades": 144,
+  "entry_days": 46,
+  "mean_trade_pct": 1.494,
+  "median_trade_pct": 0.179,
+  "win_rate": 0.528,
+  "random_mean_pct": 0.716,
+  "edge_pp": 0.778,
+  "p_per_trade": 0.036,
+  "p_day_block": 0.121,
+  "block_sd_pct": 0.7,
+  "per_trade_sd_pct": 0.417,
+  "trading_window_hold_pct": {
+   "BTC": 29.44,
+   "ETH": 28.5,
+   "SOL": 38.78,
+   "BNB": 20.13,
+   "XRP": 32.98,
+   "DOGE": 17.76,
+   "ADA": 30.14,
+   "AVAX": 58.11,
+   "LINK": 31.12,
+   "LTC": 34.75,
+   "DOT": 50.52,
+   "TRX": 0.33
+  },
+  "per_pair": {
+   "SOL-XRP": {
+    "n": 15,
+    "mean_pct": 1.331
+   },
+   "BTC-XRP": {
+    "n": 15,
+    "mean_pct": 0.963
+   },
+   "ETH-XRP": {
+    "n": 14,
+    "mean_pct": 0.08
+   },
+   "ETH-DOGE": {
+    "n": 13,
+    "mean_pct": 1.803
+   },
+   "SOL-LINK": {
+    "n": 13,
+    "mean_pct": 1.235
+   },
+   "XRP-DOGE": {
+    "n": 12,
+    "mean_pct": 3.671
+   },
+   "BTC-SOL": {
+    "n": 15,
+    "mean_pct": 0.873
+   },
+   "SOL-DOGE": {
+    "n": 11,
+    "mean_pct": 1.415
+   },
+   "ETH-LINK": {
+    "n": 11,
+    "mean_pct": 2.48
+   },
+   "BTC-ETH": {
+    "n": 11,
+    "mean_pct": 1.177
+   },
+   "ETH-SOL": {
+    "n": 14,
+    "mean_pct": 1.937
+   }
+  }
+ }
+}
