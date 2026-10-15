@@ -3512,9 +3512,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "open",
    "attempts": 1,
-   "started_at": "2026-10-14T23:52:22+0100",
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3700,9 +3700,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-15T12:31:29+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3710,7 +3710,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "not-worth-it",
+    "p": 0.7,
+    "number": "out of sample mean trade within 0.3 pp of random holds, day-block p above 0.2",
+    "at": "2026-10-15T12:31:47+0100"
+   }
   }
  ]
 }
