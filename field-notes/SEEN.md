@@ -557,6 +557,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-14: Nolan site, Following (1998) researched and built (`sites/nolan/films/following.json`).
 - 2026-10-15, harvested: 14 judged, 7 kept (H-0268 to H-0281), 1 queued as probes (P-0160). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-15: Nolan site, Insomnia (2002) researched and built (`sites/nolan/films/insomnia.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
