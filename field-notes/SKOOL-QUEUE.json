@@ -733,6 +733,29 @@
    "tries": 1,
    "verdict": "PARK",
    "digest": "state/agents/skool/2026-10-15-S-37.md"
+  },
+  {
+   "id": "S-38",
+   "track": 9,
+   "title": "Coach Cayden's outbound sessions, picked by content (the four with the most dialling talk)",
+   "model": "sonnet",
+   "status": "queued",
+   "files": [
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-032-june-29-outbound-and-identity-selling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-035-july-17-outbound-and-identity-selling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-006-may-26-outbound-and-identity-selling.txt",
+    "field-notes/skool/transcripts/mattryder-rec-coach-cayden-024-march-23-outbound-and-identity-selling.txt"
+   ],
+   "why": "Re-read of S-31, whose sample (by position) drew an intro and two role-play Q&As. Picked 15 Oct by counting dialling words (dial, cold call, pick up, voicemail, gatekeeper, opener, outbound). Goal line: what outbound teams, Triton's M1 clients, actually do on the phone; note what differs in the UK."
+  },
+  {
+   "id": "S-39",
+   "track": 9,
+   "title": "Title and opening triage of the 272 YouTube lessons (vault rooms and 15 Oct pulls)",
+   "model": "haiku",
+   "status": "needs-pull",
+   "files": [],
+   "why": "Waits on sandbox/yt_retry.py (YouTube IP block, 15 Oct). Once transcribed, build a digest of title plus first 150 words per video and have one Haiku reader flag the few worth a full read, against the framework gaps in Luke's frameworks index."
   }
  ]
 }

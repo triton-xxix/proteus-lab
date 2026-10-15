@@ -42,16 +42,29 @@ READ_ROOM = {**{s: "ai-automation-society" for s in ("S-01", "S-02", "S-03", "S-
              **{s: "brendan" for s in ("S-08", "S-11", "S-12", "S-13")},
              **{s: "mattryder" for s in ("S-21", "S-22", "S-23")},
              **{s: "lead-gen" for s in ("S-24", "S-25", "S-26", "S-27")},
-             **{s: "free-email-marketing-community" for s in ("S-28", "S-29")}}
+             **{s: "free-email-marketing-community" for s in ("S-28", "S-29")},
+             **{s: "mattryder" for s in ("S-30", "S-31", "S-32", "S-33", "S-34", "S-38")},
+             "S-35": "stevekeen-free", "S-36": "3-hour-youtube-leads-2772", "S-37": "join-dlag"}
+
+# A group that read two rooms counts for the second one too.
+READ_ALSO = {"S-37": "bettrnation-3016"}
+
+# Rooms in Luke's log whose open courses I captured on 15 Oct (his log still says "to do").
+CAPTURED_15OCT = {"stevekeen-free", "bettrnation-3016", "3-hour-youtube-leads-2772", "join-dlag"}
 
 # My own pulls on 14 Oct, not in Luke's log: (room, slug, extracted, courses as (name, lessons, status)).
 MINE = [
     ("Matt Ryder F The GuRUs", "mattryder", "2026-10-14", [
-        ("1. Start your education here", 37, "done"), ("2. Sales Fundamentals", 29, "done"),
+        ("Onboarding calls", 17, "done"), ("1. Start your education here", 37, "done"), ("2. Sales Fundamentals", 29, "done"),
         ("3. Objection Handling", 37, "done"), ("4. Scripting", 26, "done"), ("5. Mastering Tonality", 9, "locked"),
         ("6. Follow ups, referrals, CRM farming", 9, "locked"), ("7. Outbound dialing", 11, "locked"),
         ("8. B2B and Complex B2C", 21, "locked"), ("9. Selling with stories", 14, "done"), ("10. The Dark Arts", 8, "locked"),
-        ("11. Sales Management", 18, "done"), ("12. Business Mastery", 25, "done"), ("13. Downloadable resources", 4, "locked")]),
+        ("11. Sales Management", 18, "done"), ("12. Business Mastery", 25, "done"), ("13. Downloadable resources", 4, "done"),
+        ("Make MORE Money", 6, "done"), ("Other Skools I really like", 3, "done"), ("Looking for a new sales position", 4, "locked"),
+        ("Matt Ryder Recorded Sessions", 102, "done"), ("Coach Laura Recordings", 39, "done"), ("Coach Jack Calls", 30, "done"),
+        ("Coach Joel Recordings", 5, "done"), ("Call Reviews with Coach Joe", 13, "done"), ("Coach Liam Recordings", 50, "done"),
+        ("Coach Aaron Recordings", 20, "done"), ("Coach Alex Recordings", 34, "done"), ("Coach Cayden Recordings", 53, "done"),
+        ("Coach Ryan", 11, "done"), ("Coach Jordan Park Recordings", 13, "done"), ("Coach Mike", 14, "done"), ("Coach Patrick", 3, "done")]),
     ("Lead Gen Secrets (Lead Gen Jay)", "lead-gen", "2026-10-14", [
         ("The Insider Method - Free", 43, "done"), ("Work With Lead Gen Jay", 2, "done"),
         ("Copywriting - Jay's 1on1 Trainings", 9, "locked")]),
@@ -73,7 +86,13 @@ EXTRA_USES = [
     ("Weekly Skool community digest", "Standing job", "running", "",
      "Mondays: reads new posts in 14 joined rooms, suggests threads to answer and things to learn; posts nothing"),
     ("P-0048 Paperclip probe", "Probe", "blocked", "ai-automation-society", "The one TRY from nightly reading (S-05); did not boot keyless"),
-    ("Matt Ryder PDFs (17)", "Download", "on disk", "mattryder", "Industry closer scripts incl. HVAC and roofing, objection matrix"),
+    ("Matt Ryder PDFs (40)", "Download", "on disk", "mattryder", "Industry closer scripts incl. HVAC and roofing, objection matrix, 22 sales-management and dialling guides"),
+    ("Matt Ryder call library transcripts", "Download", "on disk", "mattryder", "465 coach and session recordings, 398 hours, captioned in full; sampled by 6 readers"),
+    ("Steve Keen free books (3)", "Download", "on disk", "stevekeen-free", "Funny Money, New Economics Sampler, Elon is Wrong (has the debt model's equations)"),
+    ("Prospect audit pack (plan A)", "Skill plan", "proposed", "lead-gen free-email-marketing-community", "Domain email health plus website audit as a one-page door-opener for trades and sales-team firms; prototype first"),
+    ("Sales funnel diagnostic (plan C)", "Skill plan", "proposed", "mattryder", "Funnel leak finder, reverse maths and CRM reactivation pass for clients with sales teams"),
+    ("UK trades list builder (plan B)", "Skill plan", "proposed", "lead-gen", "OpenStreetMap listings, MX check, fit score and a PECR filter, as a CSV"),
+    ("Keen debt model rebuild", "Probe", "proposed", "stevekeen-free", "Does the crash come from the maths or the parameters? 30 minutes in scipy"),
     ("Klaviyo reporting skill", "Download", "on disk", "free-email-marketing-community", "Claude skill: live Klaviyo data to a Word report per client; read, not run"),
     ("Agency profit sheet, conference pitch deck", "Download", "on disk", "free-email-marketing-community", "Pod economics (39% gross) and a researched audit-as-pitch deck"),
     ("Vimeo and Mux caption routes", "Tooling", "in use", "lead-gen free-email-marketing-community", "Keyless transcripts for Vimeo-hosted and Skool-hosted lessons"),
@@ -82,10 +101,11 @@ EXTRA_USES = [
 # Dates and open joins worth watching (log notes and run logs).
 WATCH = [
     ("2026-10-16", "AI FOR BRANDS", "Trial access ends", "Cancelled 10 Oct; extracted already"),
-    ("2026-10-21", "Matt Ryder F The GuRUs", "Trial access ends", "About 60 Skool-hosted session videos could still be captioned before then"),
+    ("2026-10-21", "Matt Ryder F The GuRUs", "Trial access ends", "Everything open is captured (15 Oct): 603 modules, 465 recordings"),
+    ("", "272 YouTube lessons", "Waiting on YouTube", "Captions blocked for this Mac's IP since 15 Oct 06:30; retry runs hourly"),
     ("2026-11-09", "The Clothing Method", "Paid month ends", "PRODUCE and BUILD still locked"),
     ("", "Emerging Fashion Designers, Rich Off Clothes, SandersConsulting, Clothing Brand Accelerator", "Join pending", "Owner approval since 8 to 9 Oct"),
-    ("", "Rebel Economist, BettrNation, 3-hour YouTube Leads, DOOing AI Foundry", "Open, not captured", "Courses readable now, on the extractor's to-do list"),
+
 ]
 
 FW_KEYS = [("Ads Clinic", "theadsclinic"), ("Automatable", "automatable-free"), ("Jono", "automatable-free"),
@@ -131,6 +151,12 @@ def parse_frameworks():
 def main():
     os.makedirs(OUT, exist_ok=True)
     rooms, courses = parse_log()
+    for c in courses:
+        if c["slug"] in CAPTURED_15OCT and c["status"] == "to do":
+            c["status"], c["detail"], c["pulled_by"] = "done", "captured by Proteus 15 Oct", "Proteus"
+    for r in rooms:
+        if r["slug"] in CAPTURED_15OCT:
+            r["extracted"], r["pulled_by"] = "2026-10-15", "Luke's extractor + Proteus"
     for name, slug, ext, cl in MINE:
         rooms.append({"room": name, "slug": slug, "extracted": ext, "pulled_by": "Proteus", "unreadable": False})
         for c, n, st in cl:
@@ -152,7 +178,7 @@ def main():
         r["courses_todo"] = sum(c["status"] == "to do" for c in mine)
         r["courses_locked"] = sum(c["status"] == "locked" for c in mine)
         r["lessons_captured"] = sum(c["lessons"] for c in mine if c["status"] == "done")
-        rd = [x for x in reading if x["slug"] == r["slug"]]
+        rd = [x for x in reading if x["slug"] == r["slug"] or READ_ALSO.get(x["id"]) == r["slug"]]
         r["read_groups"] = sum(x["status"] == "read" for x in rd)
         r["queued_groups"] = sum(x["status"] == "queued" for x in rd)
         mine_uses = [u for u in uses if r["slug"] and r["slug"] in u["rooms"].split()]
@@ -160,7 +186,7 @@ def main():
         r["uses"] = len(mine_uses)
         kinds = {u["kind"] for u in mine_uses}
         # downloads and tooling are things fetched, not things read; only these mean someone read it
-        if kinds & {"Framework", "Skill"}:
+        if kinds & {"Framework", "Skill"}:  # a Skill plan is a proposal, not a build
             stage = "Built into a method"
         elif r["read_groups"] or kinds & {"Venture research", "Probe"}:
             stage = "Read"

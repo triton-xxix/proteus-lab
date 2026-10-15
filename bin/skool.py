@@ -54,6 +54,14 @@ keys or spend if possible, and how big it is. If there is none, say so.
 ## Claims to check
 Up to three specific claims (a number, a speed, a cost), each quoted in under 15 words, with how
 Proteus could check it.
+## Skill or workflow candidate
+Added 15 Oct 2026 on Luke's ask. Is there a repeatable method here worth building as a Claude skill or
+a workflow? Say for whom: Proteus or Luke ourselves, Triton's clients (firms with outbound sales teams,
+trades such as plumbing and HVAC), or prospects as a demo. One line on what it would do and what it
+needs (keys, accounts, data). "None" is a fine answer.
+## Worth paying for the locked parts?
+If the files mention locked, paid or level-gated material, is the free part good enough that the rest
+is likely worth money for Triton or Proteus? One line, or "not mentioned".
 ## Verdict
 One line starting with exactly one of TRY, PARK or SKIP, then a reason.
 

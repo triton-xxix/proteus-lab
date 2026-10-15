@@ -28,6 +28,9 @@ if len(sys.argv) > 1:
     # a TSV of slug<TAB>url replaces the built-in list (added 14 Oct 2026 for the lead-gen pull)
     VIDEOS = [tuple(l.split("\t")[:2]) for l in open(sys.argv[1]).read().splitlines() if "\t" in l]
 
+# optional pause between videos, seconds (argv[2]); YouTube answers 429 to bursts
+PAUSE = float(sys.argv[2]) if len(sys.argv) > 2 else 0
+
 os.makedirs(OUT, exist_ok=True)
 log = open(os.path.join(OUT, "_progress.log"), "a")
 for slug, url in VIDEOS:
@@ -35,10 +38,13 @@ for slug, url in VIDEOS:
     if os.path.exists(dest):
         continue
     t0 = time.time()
-    r = subprocess.run([TP, url, "--out", dest], capture_output=True, text=True)
+    extra = ["--captions-only"] if os.environ.get("SKOOL_CAPTIONS_ONLY") else []
+    r = subprocess.run([TP, url, "--out", dest] + extra, capture_output=True, text=True)
     how = "ok" if r.returncode == 0 else "FAIL"
     line = "%s %s %s %.0fs %s\n" % (time.strftime("%H:%M"), how, slug, time.time() - t0,
                                    (r.stdout.strip() or r.stderr.strip())[-200:].replace("\n", " | "))
     log.write(line); log.flush()
+    if PAUSE and "youtu" in url:
+        time.sleep(PAUSE)
     sys.stdout.write(line)
 log.write("batch done %s\n" % time.strftime("%H:%M"))

@@ -130,6 +130,7 @@ def main():
     ap.add_argument("url")
     ap.add_argument("--out")
     ap.add_argument("--force-whisper", action="store_true")
+    ap.add_argument("--captions-only", action="store_true", help="fail instead of falling back to whisper (15 Oct 2026: YouTube IP-blocked the captions API and every video went to whisper)")
     a = ap.parse_args()
     if loom_id(a.url):
         lines, how = loom(loom_id(a.url))
@@ -144,6 +145,8 @@ def main():
             except Exception as exc:
                 sys.stderr.write("captions failed (%s), falling back to whisper\n" % type(exc).__name__)
         if lines is None:
+            if a.captions_only:
+                sys.exit("captions unavailable and --captions-only set")
             lines, how = youtube_whisper(a.url)
     else:
         sys.exit("not a YouTube, Loom or Vimeo url")
