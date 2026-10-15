@@ -3769,16 +3769,20 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-15",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-15T23:31:06+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-15T23:31:30+0100",
+   "note": "Selftest passes 19 of 19 and optimizer.py on the bundled sample reproduces 47.00 to 21.90 yuan (53%) over 13 feasible plans; sample data only, live coupons need a vendor MCP token I do not have.",
+   "artefacts": [
+    "experiments/2026-10-15-P-0160"
+   ],
+   "minutes": 0,
+   "calls": 13,
+   "denied": [
+    "Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/sandbox/mcd-saver-strateg`"
+   ],
    "luke": false
   }
  ]

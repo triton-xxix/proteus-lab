@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 106 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 107 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 
-## Queue (13 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,12 +25,13 @@ Verdicts so far: 106 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0160 | mcd-saver-strategist: does the offline optimizer reproduce 47.00 to 21.90 and pass its 19 self-tests? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (143)
+## Verdicts (144)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-15 | P-0160 | mcd-saver-strategist: does the offline optimizer reproduce 47.00 to 21.90 and pass its 19 self-tests? | **works** | Selftest passes 19 of 19 and optimizer.py on the bundled sample reproduces 47.00 to 21.90 yuan (53%) over 13 feasible plans; sample data only, live coupons need a vendor MCP token I do not have. | `experiments/2026-10-15-P-0160` | 0 min, 13 calls, 1 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/sandbox/mcd-saver-strateg` | | |
 | 2026-10-15 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | **works** | Measured 2 KOL wallets with a KOL-signed transaction on a pick inside the hour either side, 1 of them out before the pick: the shot exactly. Both on CFLARE and both dust (-40 and -10 tokens), so no tracked KOL put real size into any of the 4 picks of the 14 Oct 22:29Z batch; 0 bought before and sold after (batch one 7 wallets, 2). 364 of 364 lookups, 658 RPC calls, 289 of them 429s, 627 s. The batch-one front-run shape does not repeat. Next: close. | `experiments/2026-10-15-P-0151` | 11 min, 28 calls, 1 denied |
 | | | | | denied: Monitor `tail -n 0 -F /Users/triton/PROTEUS/experiments/2026-10-15-P-0151/progress.log` | | |
 | 2026-10-15 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | **blocked** | Measured 0 trades: the probe was queued without --after, and D-013 window two runs to 2026-10-21 16:34Z (backstop 24 Oct). Scoring a part-window now would spend the blind top-ten read early, so I did not open the watcher data. Shot taken after reading the DUE row, so it scores as a coin. Re-added for 22 Oct. | `DUE.md` | 0 min, 5 calls, 0 denied |
