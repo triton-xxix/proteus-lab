@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-14 08:06 UTC",
- "commit": "05a8789",
+ "built_at": "2026-10-15 08:06 UTC",
+ "commit": "239886b",
  "input_blobs": {
-  "grinder/LEDGER.csv": "6a59d27501f3888efb9fef1a35c9f42bcafe30c4",
+  "grinder/LEDGER.csv": "55e3bc5b16be4ff488a500cd19f61678f829c765",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
-  "pitch/PREDICTIONS.csv": "05981bc3ffc557de30ab49e9f0def5ac18336852",
+  "pitch/PREDICTIONS.csv": "c68b10953bff9b15dc50862cb7b339bdc6ee629b",
   "state/spend.jsonl": null,
-  "state/probes.json": "ce81490aea59a7926cb2918170f00684c2826f75",
+  "state/probes.json": "a1e7ed313131fbf437afc464e00a1e6d2a0ae2da",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000"
@@ -15,14 +15,14 @@
   "version": "v0.2",
   "stake_gbp": 100.0,
   "bankroll_start": 1000.0,
-  "bankroll_now": 822.22,
-  "opened": 72,
-  "closed": 68,
+  "bankroll_now": 565.42,
+  "opened": 76,
+  "closed": 72,
   "scored_24h": 68,
-  "hit_rate": 0.353,
-  "expectancy": -2.61,
-  "expectancy_pct_stake": -2.6,
-  "rugged": 2,
+  "hit_rate": 0.333,
+  "expectancy": -6.04,
+  "expectancy_pct_stake": -6.0,
+  "rugged": 3,
   "books": {
    "v0.1": {
     "stake_gbp": 5.0,
@@ -39,25 +39,25 @@
    "v0.2": {
     "stake_gbp": 100.0,
     "bankroll_start": 1000.0,
-    "bankroll_now": 822.22,
-    "opened": 72,
-    "closed": 68,
+    "bankroll_now": 565.42,
+    "opened": 76,
+    "closed": 72,
     "scored_24h": 68,
-    "hit_rate": 0.353,
-    "expectancy": -2.61,
-    "expectancy_pct_stake": -2.6,
-    "rugged": 2
+    "hit_rate": 0.333,
+    "expectancy": -6.04,
+    "expectancy_pct_stake": -6.0,
+    "rugged": 3
    }
   }
  },
  "pitch": {
-  "committed_before_kickoff": 97,
+  "committed_before_kickoff": 103,
   "committed_late_excluded": 0,
-  "scored": 22,
-  "paired": 22,
+  "scored": 34,
+  "paired": 34,
   "brier_model": 0.6028,
-  "brier_market": 0.6131,
-  "brier_diff": -0.0102,
+  "brier_market": 0.6099,
+  "brier_diff": -0.0071,
   "clv_mean": 0.0441,
   "bankroll_now": 100.0
  },
@@ -67,15 +67,15 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 128,
-  "works": 93,
+  "verdicts": 140,
+  "works": 105,
   "broken": 5,
   "blocked": 21,
   "not_worth_it": 9,
   "killed": 4,
   "killed_by_rule": 1,
   "killed_by_luke": 3,
-  "open": 16
+  "open": 14
  },
  "spend": {
   "cap_gbp": 50.0,

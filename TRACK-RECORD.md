@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-10-14 08:06 UTC at commit 05a8789.
+Rebuilt 2026-10-15 08:06 UTC at commit 239886b.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -13,19 +13,19 @@ Current rules v0.2, £100.00 a position. Earlier rule versions are their own boo
 
 | Measure | Value |
 |---|---|
-| Paper bankroll | £822.22 (started £1000.00) |
-| Positions opened | 72 |
-| Positions closed | 68 |
+| Paper bankroll | £565.42 (started £1000.00) |
+| Positions opened | 76 |
+| Positions closed | 72 |
 | Positions scored at 24h | 68 |
-| Hit rate | 0.353 |
-| Expectancy per position | £-2.61 |
-| Expectancy as a share of the stake | -2.6% |
-| Positions that rugged | 2 |
+| Hit rate | 0.333 |
+| Expectancy per position | £-6.04 |
+| Expectancy as a share of the stake | -6.0% |
+| Positions that rugged | 3 |
 
 | Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |
 |---|---|---|---|---|---|---|---|
 | v0.1 | £5.00 | 6 | 6 | £-1.08 | -21.5% | £93.54 (from £100.00) | 1 |
-| v0.2 | £100.00 | 72 | 68 | £-2.61 | -2.6% | £822.22 (from £1000.00) | 2 |
+| v0.2 | £100.00 | 76 | 72 | £-6.04 | -6.0% | £565.42 (from £1000.00) | 3 |
 
 Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside
 what the ledger recorded, so a stop honoured late shows next to the stop the rule said.
@@ -34,13 +34,13 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 
 | Measure | Value |
 |---|---|
-| Predictions committed before kickoff | 97 |
+| Predictions committed before kickoff | 103 |
 | Predictions committed late (excluded) | 0 |
-| Predictions scored | 22 |
-| Predictions scored with a market line (the paired set) | 22 |
+| Predictions scored | 34 |
+| Predictions scored with a market line (the paired set) | 34 |
 | Brier score, model (lower is better; 0.667 is a uniform guess on three outcomes) | 0.6028 |
-| Brier score, market, same matches | 0.6131 |
-| Paired Brier, model minus market (negative means the model is better) | -0.0102 |
+| Brier score, market, same matches | 0.6099 |
+| Paired Brier, model minus market (negative means the model is better) | -0.0071 |
 | Closing-line value, mean | 0.0441 |
 | Paper bankroll, quarter Kelly | £100.00 (started £100.00) |
 
@@ -58,13 +58,13 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 128 |
-| Works | 93 |
+| Probe verdicts | 140 |
+| Works | 105 |
 | Broken | 5 |
 | Blocked | 21 |
 | Not worth it | 9 |
 | Killed | 4 (1 by the cull rule, 3 on Luke's word) |
-| Still open | 16 |
+| Still open | 14 |
 
 ## Spend
 
