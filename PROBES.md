@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 107 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 107 works, 5 broken, 23 blocked, 10 not worth it. Killed: 4.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,7 +17,6 @@ Verdicts so far: 107 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | desk | none | 2026-10-20 | 0 | 15 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | refill | none |  | 0 | 60 min |
 | P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | refill | none |  | 0 | 60 min |
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 0 | 60 min |
 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 0 | 60 min |
@@ -26,10 +25,11 @@ Verdicts so far: 107 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (144)
+## Verdicts (145)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-15 | P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | **blocked** | Not run: the probe ends in a paid subscription, which is unclear as capability versus stake and so counts as a stake; no paid step taken. | `experiments/2026-10-15-P-0160` | 0 min, 2 calls, 0 denied |
 | 2026-10-15 | P-0160 | mcd-saver-strategist: does the offline optimizer reproduce 47.00 to 21.90 and pass its 19 self-tests? | **works** | Selftest passes 19 of 19 and optimizer.py on the bundled sample reproduces 47.00 to 21.90 yuan (53%) over 13 feasible plans; sample data only, live coupons need a vendor MCP token I do not have. | `experiments/2026-10-15-P-0160` | 0 min, 13 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/.venv/bin/python3 -I /Users/triton/PROTEUS/sandbox/mcd-saver-strateg` | | |
 | 2026-10-15 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | **works** | Measured 2 KOL wallets with a KOL-signed transaction on a pick inside the hour either side, 1 of them out before the pick: the shot exactly. Both on CFLARE and both dust (-40 and -10 tokens), so no tracked KOL put real size into any of the 4 picks of the 14 Oct 22:29Z batch; 0 bought before and sold after (batch one 7 wallets, 2). 364 of 364 lookups, 658 RPC calls, 289 of them 429s, 627 s. The batch-one front-run shape does not repeat. Next: close. | `experiments/2026-10-15-P-0151` | 11 min, 28 calls, 1 denied |
