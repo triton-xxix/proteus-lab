@@ -3528,26 +3528,29 @@
    "id": "P-0152",
    "title": "G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry",
    "source": "desk",
-   "needs": "",
+   "needs": "the G2 window two closes 2026-10-21 16:34Z; re-queued with --after 2026-10-22",
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-15T12:34:59+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-10-15T12:35:21+0100",
+   "note": "Measured 0 trades: the probe was queued without --after, and D-013 window two runs to 2026-10-21 16:34Z (backstop 24 Oct). Scoring a part-window now would spend the blind top-ten read early, so I did not open the watcher data. Shot taken after reading the DUE row, so it scores as a coin. Re-added for 22 Oct.",
+   "artefacts": [
+    "DUE.md"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.5,
     "number": "0 trades scored: the window closes 2026-10-21 16:34Z",
-    "at": "2026-10-15T12:35:12+0100"
+    "at": "2026-10-15T12:35:12+0100",
+    "hit": true
    }
   },
   {

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 105 works, 5 broken, 21 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 105 works, 5 broken, 22 blocked, 10 not worth it. Killed: 4.
 
-## Queue (13 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,12 +25,12 @@ Verdicts so far: 105 works, 5 broken, 21 blocked, 10 not worth it. Killed: 4.
 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | desk | none | 2026-10-16 | 0 | 20 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0151 | KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on the newest Grinder ledger batch (4 picks x 91 Kolscan wallets, 0.3 s sleep, progress every 10); report how many KOL wallets traded the picks inside an hour either side and how many were out before the pick, to test whether batch one (4 of 7 out before the pick, 2 sold after) repeats | desk | none |  | 1 | 30 min |
-| P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | desk | none |  | 1 (in progress) | 40 min |
 
-## Verdicts (141)
+## Verdicts (142)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-15 | P-0152 | G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and say what share of the book's quoted P&L those flags carry | **blocked** | Measured 0 trades: the probe was queued without --after, and D-013 window two runs to 2026-10-21 16:34Z (backstop 24 Oct). Scoring a part-window now would spend the blind top-ten read early, so I did not open the watcher data. Shot taken after reading the DUE row, so it scores as a coin. Re-added for 22 Oct. | `DUE.md` | 0 min, 5 calls, 0 denied |
 | 2026-10-15 | P-0158 | Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block shuffle? | **not-worth-it** | Out of sample (18 May to 16 Jul 2026, 735 trades on 52 pairs) the frozen rule made -0.97% a trade against -0.83% for random holds of the same coins: edge -0.14 pp, day-block p 0.61, against my shot of within 0.3 pp and p above 0.2 (hit). In-sample re-check reproduces P-0153 exactly (144 trades, +1.49%) but the day-block shuffle moves its p from 0.036 to 0.12, so the in-sample edge was mostly overlap. Close. | `experiments/2026-10-15-P-0158` | 3 min, 10 calls, 0 denied |
 | 2026-10-14 | P-0148 | Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits, compare pool weights and Brier, note in RULES.md; does the backtest agree to 0.001 Brier | **works** | Measured: on the 2025-26 walk-forward (3,134 matches, all eight groups) the analytic-gradient fit gives dc Brier 0.60528, identical to the finite-difference fit to 5 decimals; largest p_home move 0.003; pool weight against the close 0.00 for both; 685 s to 30 s. Shot said under 0.0005: hit. Switched pitch/model.py (4e21eb6) with a dated RULES.md implementation note; live from 15 Oct. Next: close. | `experiments/2026-10-14-P-0148` | 6 min, 22 calls, 0 denied |
 | 2026-10-14 | P-0147 | Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and over-2.5 out of sample against the closing line on E0, E1, SC0 2022 on; does it beat the plain model | **works** | Measured: a per-referee home offset (L2 2.0) makes the Dixon-Coles worse out of sample over 3,664 E0, E1, SC0 matches since Aug 2023: 1X2 Brier +0.0046 (se 0.0013), over-2.5 +0.0028 (se 0.0009), worse in all three divisions. Plain trails Pinnacle close by 0.024 on the 2,818 rows with one. Shot said within 0.001: missed on size. Next: close (referees belong on cards markets). | `experiments/2026-10-14-P-0147` | 1 min, 17 calls, 0 denied |
