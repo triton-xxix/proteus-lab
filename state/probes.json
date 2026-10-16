@@ -1,5 +1,5 @@
 {
- "next_id": 168,
+ "next_id": 169,
  "items": [
   {
    "id": "P-0001",
@@ -3983,6 +3983,28 @@
    ],
    "minutes": 0,
    "calls": 8,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0168",
+   "title": "Team KPI test (Soccermatics lesson 5): over nine leagues' last four seasons, does a team's 10-match shots-on-target difference predict its next 10 matches' points better than its goal difference or points do?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-16",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-16T23:38:43+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-16T23:39:27+0100",
+   "note": "1,444 ten-match block pairs, nine leagues, four seasons: shots-on-target difference predicts next-10 points at r 0.594, goal difference 0.563, points 0.543; SoT wins in 8 of 9 leagues (not Serie A), bootstrap gap +0.008 to +0.054.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0168"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }
