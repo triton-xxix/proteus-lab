@@ -1689,22 +1689,25 @@
    "after": "",
    "est_minutes": 60,
    "added": "2026-10-07",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-16T12:32:06+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-16T12:33:06+0100",
+   "note": "Measured: from five starts with debt ratio 0.1 to 2.0 the rebuilt model converges to one good equilibrium (employment 0.969, d 0.07); it only crashes from d=6 or more (debt past 50 by year 46), against my called d=2 divergence, so the shot missed. The model has a debt crash with no shock, but it needs extreme starting debt; parameters from memory and no fit to real data, so the \"predicted 2008\" claim is untested. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0077"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "from the default start the debt ratio converges below 2 and employment stays near 0.96; from a high-debt start (d=2) it diverges past d=10 within 100 years",
-    "at": "2026-10-16T12:32:19+0100"
+    "at": "2026-10-16T12:32:19+0100",
+    "hit": true
    }
   },
   {

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 108 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 109 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,15 +18,15 @@ Verdicts so far: 108 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | refill | none |  | 1 | 60 min |
-| P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | refill | none |  | 1 (in progress) | 60 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (147)
+## Verdicts (148)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-16 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | **works** | Measured: from five starts with debt ratio 0.1 to 2.0 the rebuilt model converges to one good equilibrium (employment 0.969, d 0.07); it only crashes from d=6 or more (debt past 50 by year 46), against my called d=2 divergence, so the shot missed. The model has a debt crash with no shock, but it needs extreme starting debt; parameters from memory and no fit to real data, so the "predicted 2008" claim is untested. Next: close. | `experiments/2026-10-16-P-0077` | 1 min, 9 calls, 0 denied |
 | 2026-10-16 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | **works** | Measured 582 injury rows in the Pitch leagues for 17 Oct from 1 request (34 fixtures; E1 186, D1 114, E0 76; none for P1 or SC0), against my called 30, so the count was off by 19x but the feed works on the free plan. Caveat: rows are players not fixtures, and the type field (missing v questionable) is untested against real lineups. Next: deepen. | `experiments/2026-10-16-P-0133` | 0 min, 11 calls, 0 denied |
 | 2026-10-15 | P-0075 | Local model as the nightly first sort: run a small open model on this Mac over harvest items Sonnet already judged, and report agreement and minutes per item | **blocked** | Not run: no ollama binary at /usr/local/bin or /Applications, so no model answers exist to compare against Sonnet. | `experiments/2026-10-15-P-0160` | 0 min, 3 calls, 0 denied |
 | 2026-10-15 | P-0072 | Tipster audit: shortlist tipsters with a public record or a free trial (BettrNation, the 77% horse-racing lay alerts, others); backtest their published past tips against the prices of the day first, then buy the best-evidenced one under £25 and paper-track it for two weeks (four only for weekly football tips) | **blocked** | Not run: the probe ends in a paid subscription, which is unclear as capability versus stake and so counts as a stake; no paid step taken. | `experiments/2026-10-15-P-0160` | 0 min, 2 calls, 0 denied |
