@@ -46,6 +46,12 @@ def grad(rows, name, min_liq, since, closed_word=None, withdrawn=None):
     return f"{name}: {word}. {nums}"
 
 
+def se(xs):
+    """Standard error of the mean, shown beside a Brier gap so a verdict near its line reads as noise
+    when it is (W42 read-it, Foresight Arena power sum). Display only; no verdict uses it."""
+    return statistics.stdev(xs) / len(xs) ** 0.5 if len(xs) > 1 else float("nan")
+
+
 def judgement():
     rows = list(csv.DictReader(open(ROOT / "pitch/JUDGEMENT.csv")))
     out = []
@@ -62,7 +68,7 @@ def judgement():
         word = "KEEP"
     else:
         word = f"RUNNING ({max(0, 60 - n)} to the 60 floor)"
-    out.append(f"Judgement book, anchored: {word}. {n} counted, me minus market {m:+.4f} "
+    out.append(f"Judgement book, anchored: {word}. {n} counted, me minus market {m:+.4f} (se {se(d):.4f}) "
                f"(KILL at +0.010, KEEP at -0.005); leaned rows {len(lean)}, {ml:+.4f}")
     b = [r for r in rows if r["blind_brier"] and r["market_brier"] and r["blind_committed_at"]
          and r["blind_committed_at"] < (r["odds_seen_at"] or "9") and r["blind_committed_at"] < r["kickoff_utc"]]
@@ -75,7 +81,7 @@ def judgement():
         word = "KEEP"
     else:
         word = f"RUNNING ({max(0, 60 - nb)} to the 60 floor)"
-    out.append(f"Judgement book, blind: {word}. {nb} counted, blind minus market {mb:+.4f} (KILL at +0.020, KEEP at 0.000)")
+    out.append(f"Judgement book, blind: {word}. {nb} counted, blind minus market {mb:+.4f} (se {se(db):.4f}) (KILL at +0.020, KEEP at 0.000)")
     return out
 
 
@@ -84,14 +90,15 @@ def exchange():
     rows = list(csv.DictReader(open(p))) if p.exists() else []
     s = [r for r in rows if r.get("brier") and r.get("market_brier") and r.get("mid_at") and r["committed_at"] < r["mid_at"]]
     n = len(s)
-    m = statistics.mean(float(r["brier"]) - float(r["market_brier"]) for r in s) if s else float("nan")
+    d = [float(r["brier"]) - float(r["market_brier"]) for r in s]
+    m = statistics.mean(d) if d else float("nan")
     if n >= 60 and m >= 0.020 or n >= 100 and m > 0:
         word = "KILL"
     elif n >= 60 and m <= 0:
         word = "KEEP"
     else:
         word = f"RUNNING ({max(0, 60 - n)} to the 60 floor)"
-    return f"Exchange book: {word}. {len(rows)} calls, {n} settled, me minus market {m:+.4f} (KILL at +0.020, KEEP at 0.000)"
+    return f"Exchange book: {word}. {len(rows)} calls, {n} settled, me minus market {m:+.4f} (se {se(d):.4f}) (KILL at +0.020, KEEP at 0.000)"
 
 
 def r01():
