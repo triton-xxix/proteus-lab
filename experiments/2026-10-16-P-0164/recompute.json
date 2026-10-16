@@ -1,0 +1,67 @@
+{
+ "project A": {
+  "replies": 20,
+  "original": 12623,
+  "skim": 2141,
+  "skim_share": 0.1696,
+  "median_per_reply": 0.1794,
+  "full_share": 1.0677,
+  "replies_40plus": 19,
+  "median_per_reply_40plus": 0.178,
+  "skim_share_max_reply_40plus": 0.3242,
+  "recall_mean": 0.997,
+  "recall_min": 0.983
+ },
+ "project B": {
+  "replies": 20,
+  "original": 10826,
+  "skim": 2105,
+  "skim_share": 0.1944,
+  "median_per_reply": 0.1881,
+  "full_share": 1.0607,
+  "replies_40plus": 20,
+  "median_per_reply_40plus": 0.1881,
+  "skim_share_max_reply_40plus": 0.426,
+  "recall_mean": 0.9938,
+  "recall_min": 0.965
+ },
+ "project C": {
+  "replies": 9,
+  "original": 5789,
+  "skim": 720,
+  "skim_share": 0.1244,
+  "median_per_reply": 0.1744,
+  "full_share": 1.0539,
+  "replies_40plus": 9,
+  "median_per_reply_40plus": 0.1744,
+  "skim_share_max_reply_40plus": 0.433,
+  "recall_mean": 0.9947,
+  "recall_min": 0.981
+ },
+ "project D": {
+  "replies": 20,
+  "original": 11998,
+  "skim": 1940,
+  "skim_share": 0.1617,
+  "median_per_reply": 0.161,
+  "full_share": 1.0526,
+  "replies_40plus": 20,
+  "median_per_reply_40plus": 0.161,
+  "skim_share_max_reply_40plus": 0.4088,
+  "recall_mean": 0.9944,
+  "recall_min": 0.958
+ },
+ "all": {
+  "replies": 69,
+  "original": 41236,
+  "skim": 6906,
+  "skim_share": 0.1675,
+  "median_per_reply": 0.176,
+  "full_share": 1.0595,
+  "replies_40plus": 68,
+  "median_per_reply_40plus": 0.1752,
+  "skim_share_max_reply_40plus": 0.433,
+  "recall_mean": 0.995,
+  "recall_min": 0.958
+ }
+}
