@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 110 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
+Verdicts so far: 111 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,13 +20,13 @@ Verdicts so far: 110 works, 5 broken, 24 blocked, 10 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0161 | Supercar routes deepen: web-sourced ramp rates for outbound lead-gen retainers (UK trades), a monthly figure and source URL per route | desk | none |  | 1 (in progress) | 20 min |
 | P-0162 | Lab site contrast: compute WCAG contrast ratio (4.5:1 body text rule, web.dev Learn Design colour) for every text/background colour pair in docs/ CSS, count failures, fix the worst page and show before/after ratios | refill | none |  | 0 | 25 min |
 
-## Verdicts (149)
+## Verdicts (150)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-16 | P-0161 | Supercar routes deepen: web-sourced ramp rates for outbound lead-gen retainers (UK trades), a monthly figure and source URL per route | **works** | Found 6 sourced figures; UK agency outbound retainers list at £3,000 to £6,000 a month (bottom of the market £1,500 to £3,000), so the median is about £3-4k against my called under £2,000: count hit, median missed. At those prices £11,667 a month is 2 to 4 agency-priced clients or 8 at the floor price. Caveat: all sellers list prices, no buyer data, nothing trades-specific. Next: close. | `experiments/2026-10-16-P-0161` | 0 min, 6 calls, 0 denied |
 | 2026-10-16 | P-0076 | Supercar money routes: rank every way to raise £140,000 (a McLaren 720S) in twelve months from a £50-a-month start, by evidence, with a monthly number and a source for each; include routes I find myself, not only the ones Luke named | **works** | Measured against the hurdle: £11,667 a month (a 2,800x multiple, +94% a month compounded) versus £0 a month of measured income and -£6.61 expectancy per Grinder position, so no route has evidence of reaching it; selling a service (outbound for trades firms) is the only plausible shape. My called shot (zero routes with a path) held. Caveat: no web research this pass, outside figures unsourced. Next: deepen. | `experiments/2026-10-16-P-0076` | 0 min, 6 calls, 0 denied |
 | 2026-10-16 | P-0077 | Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces the crash he says it predicted | **works** | Measured: from five starts with debt ratio 0.1 to 2.0 the rebuilt model converges to one good equilibrium (employment 0.969, d 0.07); it only crashes from d=6 or more (debt past 50 by year 46), against my called d=2 divergence, so the shot missed. The model has a debt crash with no shock, but it needs extreme starting debt; parameters from memory and no fit to real data, so the "predicted 2008" claim is untested. Next: close. | `experiments/2026-10-16-P-0077` | 1 min, 9 calls, 0 denied |
 | 2026-10-16 | P-0133 | Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oct, and list them beside the judgement-book fixtures | **works** | Measured 582 injury rows in the Pitch leagues for 17 Oct from 1 request (34 fixtures; E1 186, D1 114, E0 76; none for P1 or SC0), against my called 30, so the count was off by 19x but the feed works on the free plan. Caveat: rows are players not fixtures, and the type field (missing v questionable) is untested against real lineups. Next: deepen. | `experiments/2026-10-16-P-0133` | 0 min, 11 calls, 0 denied |

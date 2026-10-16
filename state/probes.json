@@ -3824,22 +3824,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-16",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-16T12:33:59+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-16T12:34:27+0100",
+   "note": "Found 6 sourced figures; UK agency outbound retainers list at \u00a33,000 to \u00a36,000 a month (bottom of the market \u00a31,500 to \u00a33,000), so the median is about \u00a33-4k against my called under \u00a32,000: count hit, median missed. At those prices \u00a311,667 a month is 2 to 4 agency-priced clients or 8 at the floor price. Caveat: all sellers list prices, no buyer data, nothing trades-specific. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0161"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "at least 2 sourced UK monthly retainer figures for outbound lead-gen, median under 2000 pounds",
-    "at": "2026-10-16T12:34:04+0100"
+    "at": "2026-10-16T12:34:04+0100",
+    "hit": true
    }
   },
   {
