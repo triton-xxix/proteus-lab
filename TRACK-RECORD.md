@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-10-15 08:06 UTC at commit 239886b.
+Rebuilt 2026-10-16 08:06 UTC at commit 00055b0.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -13,19 +13,19 @@ Current rules v0.2, £100.00 a position. Earlier rule versions are their own boo
 
 | Measure | Value |
 |---|---|
-| Paper bankroll | £565.42 (started £1000.00) |
-| Positions opened | 76 |
-| Positions closed | 72 |
+| Paper bankroll | £504.38 (started £1000.00) |
+| Positions opened | 79 |
+| Positions closed | 75 |
 | Positions scored at 24h | 68 |
 | Hit rate | 0.333 |
-| Expectancy per position | £-6.04 |
-| Expectancy as a share of the stake | -6.0% |
-| Positions that rugged | 3 |
+| Expectancy per position | £-6.61 |
+| Expectancy as a share of the stake | -6.6% |
+| Positions that rugged | 4 |
 
 | Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |
 |---|---|---|---|---|---|---|---|
 | v0.1 | £5.00 | 6 | 6 | £-1.08 | -21.5% | £93.54 (from £100.00) | 1 |
-| v0.2 | £100.00 | 76 | 72 | £-6.04 | -6.0% | £565.42 (from £1000.00) | 3 |
+| v0.2 | £100.00 | 79 | 75 | £-6.61 | -6.6% | £504.38 (from £1000.00) | 4 |
 
 Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside
 what the ledger recorded, so a stop honoured late shows next to the stop the rule said.
@@ -34,7 +34,7 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 
 | Measure | Value |
 |---|---|
-| Predictions committed before kickoff | 103 |
+| Predictions committed before kickoff | 143 |
 | Predictions committed late (excluded) | 0 |
 | Predictions scored | 34 |
 | Predictions scored with a market line (the paired set) | 34 |
@@ -58,13 +58,13 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 140 |
-| Works | 105 |
+| Probe verdicts | 146 |
+| Works | 107 |
 | Broken | 5 |
-| Blocked | 21 |
-| Not worth it | 9 |
+| Blocked | 24 |
+| Not worth it | 10 |
 | Killed | 4 (1 by the cull rule, 3 on Luke's word) |
-| Still open | 14 |
+| Still open | 10 |
 
 ## Spend
 
