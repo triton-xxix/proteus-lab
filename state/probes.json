@@ -3853,9 +3853,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-16",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-16T12:34:31+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3863,7 +3863,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "3 or more colour pairs under 4.5:1 across docs/ CSS",
+    "at": "2026-10-16T12:34:34+0100"
+   }
   }
  ]
 }
