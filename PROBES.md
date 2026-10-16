@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 113 works, 5 broken, 25 blocked, 11 not worth it. Killed: 4.
+Verdicts so far: 114 works, 5 broken, 25 blocked, 11 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,13 @@ Verdicts so far: 113 works, 5 broken, 25 blocked, 11 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0165 | earshot: does describe/measure run keyless on CPU and name a known Proteus audio file correctly? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (154)
+## Verdicts (155)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-16 | P-0165 | earshot: does describe/measure run keyless on CPU and name a known Proteus audio file correctly? | **works** | earshot measure ran on CPU on my record film's audio and matched ffmpeg ebur128 exactly (-15.8 LUFS, LRA 6.1, true peak -1.1). describe fails: it needs torch 2.6+, and this Intel Mac gets 2.2.2 at most, so CLAP tagging is blocked here. | `experiments/2026-10-16-P-0165` | 1 min, 20 calls, 1 denied |
+| | | | | denied: Bash `uname -m` | | |
 | 2026-10-16 | P-0164 | cc-stretch: does its bench script run keyless on Proteus transcripts, and is the skim share near 17% of words? | **works** | Recomputed the replay table from the repo's results.csv: 6,906 of 41,236 words, 16.75%, matches the claimed 17% exactly; single replies reach 43%. Running it on my transcripts needs claude -p rewrites, not keyless; coverage (68% of top points) not checkable. | `experiments/2026-10-16-P-0164` | 0 min, 12 calls, 0 denied |
 | 2026-10-16 | P-0166 | Retest rule on 2 years of NQ 1h bars: does it still beat 95% of random-entry runs? | **not-worth-it** | Not run: Luke declined a two-year backtest in today's brief (briefs/2026-10-16-bey-retest-forward-paper.md) and agreed a forward paper test; the rule is also 15-minute, so 1h bars test a different rule. | `experiments/2026-10-16-P-0166` | 0 min, 7 calls, 0 denied |
 | 2026-10-16 | P-0163 | EDGAR Form 4 cluster scan: how many 3+ insider open-market buy clusters appeared in the last 30 days from the public daily index? | **blocked** | SEC refused the quarterly insider data set with 403 on 2026q3 and 2026q2 for a User-Agent with no contact email; SEC fair-access wants a declared email and Proteus has none of its own. Script ready. | `experiments/2026-10-16-P-0163` | 0 min, 7 calls, 0 denied |
