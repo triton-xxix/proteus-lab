@@ -576,6 +576,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-15: Nolan site, Insomnia (2002) researched and built (`sites/nolan/films/insomnia.json`).
 - 2026-10-16, harvested: 14 judged, 8 kept (H-0282 to H-0295), 4 queued as probes (P-0163, P-0164, P-0165, P-0166). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-16: Nolan site, Batman Begins (2005) researched and built (`sites/nolan/films/batman-begins.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
