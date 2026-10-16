@@ -12,8 +12,123 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 219,
+  "count": 231,
   "threads": [
+    {
+      "date": "2026-10-16",
+      "subject": "High-impact US news filter (CPI, FOMC, NFP) on the S1 daily crypto trend bot",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "News filter on a daily-bar trend follower",
+      "note": "Too few entries land on release days to measure; flattening only adds fees",
+      "where": "TRITON-CORE/Ventures/Trading/VERDICT-2026-10-16-news-filter.md"
+    },
+    {
+      "date": "2026-10-16",
+      "subject": "High-impact US news filter (CPI, FOMC, NFP) on the S1 daily crypto trend bot",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "Dated US release calendar from primary sources, 2023 to 2026",
+      "note": "Reusable for any faster strategy where releases hit entries",
+      "where": "TRITON-CORE/Ventures/Trading/VERDICT-2026-10-16-news-filter.md"
+    },
+    {
+      "date": "2026-10-16",
+      "subject": "US insider cluster-buy signal from SEC Form 4 data (paper backtest, Jul 2023 to Oct 2026)",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gross",
+      "note": "Matches the literature; medians near zero, a few big winners carry the mean",
+      "where": "TRITON-CORE/Ventures/Trading/VERDICT-2026-10-16-insider-clusters.md"
+    },
+    {
+      "date": "2026-10-16",
+      "subject": "US insider cluster-buy signal from SEC Form 4 data (paper backtest, Jul 2023 to Oct 2026)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Trading insider clusters with real money at retail size",
+      "note": "Costs and the SPY alternative eat the edge on this evidence",
+      "where": "TRITON-CORE/Ventures/Trading/VERDICT-2026-10-16-insider-clusters.md"
+    },
+    {
+      "date": "2026-10-16",
+      "subject": "US insider cluster-buy signal from SEC Form 4 data (paper backtest, Jul 2023 to Oct 2026)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar",
+      "note": "Only if Luke wants a live read; nothing scheduled",
+      "where": "TRITON-CORE/Ventures/Trading/VERDICT-2026-10-16-insider-clusters.md"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@brokermanscalps AI indicator reel",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "AI trading indicator",
+      "note": "nothing specified to code or score",
+      "where": "TRITON-CORE/Research/links/2026-10-16-brokermanscalps-ai-indicator-reel.md",
+      "url": "https://www.instagram.com/reel/Dee_ogTKexd/"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@brokermanscalps AI indicator reel",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "comment-keyword indicator funnel",
+      "note": "banned-for-winning and 100 pct win-rate script",
+      "where": "TRITON-CORE/Research/links/2026-10-16-brokermanscalps-ai-indicator-reel.md",
+      "url": "https://www.instagram.com/reel/Dee_ogTKexd/"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@grandmasterbey prop-challenge trading bot reel",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "7-trade prop evaluation as proof",
+      "note": "sample too small, micro contracts",
+      "where": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DeR5ycpITv3/"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@grandmasterbey prop-challenge trading bot reel",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "back-from-the-dead prop challenge content",
+      "note": "full log read out, losses included",
+      "where": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DeR5ycpITv3/"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@grandmasterbey prop-challenge trading bot reel",
+      "kind": "idea",
+      "status": "open",
+      "theme": "mistake-becomes-a-rule trade journal",
+      "note": "one line cause per losing or odd trade in the S1 paper window, rule change or variance",
+      "where": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DeR5ycpITv3/"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@grandmasterbey prop-challenge trading bot reel",
+      "kind": "idea",
+      "status": "open",
+      "theme": "longer test of the retest rules",
+      "note": "10-week NQ 15m backtest gave +1878 on 1 MNQ at 2R, beat 95 pct of random runs; needs 2 years of 1h bars before anyone says more",
+      "where": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DeR5ycpITv3/"
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@grandmasterbey prop-challenge trading bot reel",
+      "kind": "idea",
+      "status": "open",
+      "theme": "forward paper test of the retest rules",
+      "note": "Luke 16 Oct: test it forward on paper, not two years back; brief at PROTEUS/briefs/2026-10-16-bey-retest-forward-paper.md",
+      "where": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DeR5ycpITv3/"
+    },
     {
       "date": "2026-10-15",
       "subject": "Alta (altahq.com) AI SDR agents",
@@ -2139,8 +2254,28 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 54,
+  "links_count": 56,
   "links": [
+    {
+      "date": "2026-10-15",
+      "subject": "@brokermanscalps AI indicator reel",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-16-brokermanscalps-ai-indicator-reel.md",
+      "url": "https://www.instagram.com/reel/Dee_ogTKexd/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-16-brokermanscalps-ai-indicator-reel.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "So my strategy has gotten me banned on pretty much every single trading platform. Plus, I keep getting moved to live instantly and I'm honestly tired of it, so I'm gonna leak the strategy that made me over $100,000 each month in the next 30 seconds. I use an AI trading indicator. Simple, it took two seconds. On the most recent signal, it tells you where to enter and where to exit. It's so accurate because it uses historical data to compare current market structure to past market structure, not just some chat GBT on your charts, and when prices moving clean, literally prints every single time. So if you want access and you want to see my full trade checklist that got me 100% daily win rate in the last three months, comment down below indicator or check the link in my bio."
+    },
+    {
+      "date": "2026-10-15",
+      "subject": "@grandmasterbey prop-challenge trading bot reel",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.md",
+      "url": "https://www.instagram.com/reel/DeR5ycpITv3/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-16-grandmasterbey-prop-bot-reel.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "And after four years and thousands of dollars spent, I finally have a trade-in bot that works. And not only did it bring me back from the dead on this prop farm challenge. Just watch the video. Nine setups and AI co-pilot took on a micro NASDAQ evaluation account. Losses included. The rules wait for the 15 minute bar to close. Read the structure. Enter on a retest. Stop beyond the swing. Journal. Everything. September 22nd. A double click turned a two-lot short into four. Closed flat. Minus 13. Lesson. One click. September 28th. A one-lot short whose exit was never recorded. So no result is shown. October 5th. A short after a bearish bar close. Trail the bit tight. Plus 3450. A second short in the same zone. The stop set just above the high and got swept. Minus 131. Then structure flipped up. Along on a pullback that held hit its target. Plus 11550. October 6th. The retest never came. No fill. No chase. October 7th. Along on the retest. But the trail was too tight. Plus 650. That evening. A failed high. A confirmed close. And a retest limit. Plus 133. October 8th. At the cash open. A rejection under a lower high. Target in four minutes. Plus 11050. Seven closed trades. Five wins. Two losses. Plus 256 net. Each mistake became a rule. Evaluation account. Educational. Not financial advice. Past results don't guarantee future results."
+    },
     {
       "date": "2026-10-15",
       "subject": "Alta (altahq.com) AI SDR agents",

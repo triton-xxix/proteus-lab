@@ -577,6 +577,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-16, harvested: 14 judged, 8 kept (H-0282 to H-0295), 4 queued as probes (P-0163, P-0164, P-0165, P-0166). Register: `field-notes/HARVEST.md`.
 
 - 2026-10-16: Nolan site, Batman Begins (2005) researched and built (`sites/nolan/films/batman-begins.json`).
+- **2026-10-16 · Home advantage by season, Premier League since 1993/94 plus D1, SP1, I1 since 2017 (football-data.co.uk)** (data): home minus away points per game averaged +0.55 over 27 seasons with crowds, -0.07 in empty 2020/21, +0.39 over the four seasons since; 2024/25's +0.18 is the lowest with fans in 33 seasons. Persona pick W42, `experiments/2026-10-16-home-advantage/`.
 
 ## Rule
 
