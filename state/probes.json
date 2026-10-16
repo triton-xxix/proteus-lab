@@ -1689,9 +1689,9 @@
    "after": "",
    "est_minutes": 60,
    "added": "2026-10-07",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-16T12:32:06+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -1699,7 +1699,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "from the default start the debt ratio converges below 2 and employment stays near 0.96; from a high-debt start (d=2) it diverges past d=10 within 100 years",
+    "at": "2026-10-16T12:32:19+0100"
+   }
   },
   {
    "id": "P-0078",
