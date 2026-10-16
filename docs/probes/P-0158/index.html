@@ -53,7 +53,7 @@ code{font-size:13px}
 <div class="stats" id="stats"></div>
 
 <h2>Mean trade against random holds of the same coins</h2>
-<p class="note">Dark bar: what the rule made per trade. Light bar: what entering the same coins on random days made. The whisker is two standard deviations of the day-block shuffle, so a rule needs to clear it to count as more than luck.</p>
+<p class="note">Red bar: what the rule made per trade. Light bar: what entering the same coins on random days made. The whisker is two standard deviations of the day-block shuffle, so a rule needs to clear it to count as more than luck.</p>
 <div class="chart"><svg id="bars" role="img" aria-label="Rule against random holds in both windows"></svg>
 <div class="legend">
  <span><i class="sw" style="background:var(--buoy)"></i>the rule</span>
@@ -64,7 +64,7 @@ code{font-size:13px}
 <table id="tbl"><thead><tr><th></th><th>Out of sample</th><th>In-sample re-check</th></tr></thead><tbody></tbody></table>
 
 <h2>Pair by pair</h2>
-<p class="note">Each dot is one pair's mean trade, sized by nothing and placed by the number: left of the line lost, right of it made money. Pairs with 11 to 19 trades each, so any one dot is noisy; the shape is the point.</p>
+<p class="note">Each dot is one pair's mean trade: left of the line lost, right of it made money. Pairs with 11 to 19 trades each, so any one dot is noisy; the shape is the point.</p>
 <div class="chart"><svg id="dots" role="img" aria-label="Mean trade per pair in each window"></svg>
 <div class="legend">
  <span><i class="sw" style="background:var(--tide)"></i>out of sample</span>
