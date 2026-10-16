@@ -1,5 +1,5 @@
 {
- "next_id": 163,
+ "next_id": 167,
  "items": [
   {
    "id": "P-0001",
@@ -3873,6 +3873,86 @@
     "at": "2026-10-16T12:34:34+0100",
     "hit": true
    }
+  },
+  {
+   "id": "P-0163",
+   "title": "EDGAR Form 4 cluster scan: how many 3+ insider open-market buy clusters appeared in the last 30 days from the public daily index?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-16",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0164",
+   "title": "cc-stretch: does its bench script run keyless on Proteus transcripts, and is the skim share near 17% of words?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-16",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0165",
+   "title": "earshot: does describe/measure run keyless on CPU and name a known Proteus audio file correctly?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-16",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0166",
+   "title": "Retest rule on 2 years of NQ 1h bars: does it still beat 95% of random-entry runs?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-16",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

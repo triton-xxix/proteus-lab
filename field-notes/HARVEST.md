@@ -6,18 +6,26 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-281 judged over 19 harvest days, 188 kept, 61 testable, 58 queued as probes, 55 with a probe verdict.
+295 judged over 20 harvest days, 196 kept, 65 testable, 62 queued as probes, 56 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0294 | 2026-10-16 | vault | [longer test of the retest rules](https://www.instagram.com/reel/DeR5ycpITv3/) | mechanism | forecasting | yes | P-0166 |
+| H-0291 | 2026-10-16 | arxiv | [Learning to Steer LLM Agents and Multi-Agent Systems](https://arxiv.org/abs/2610.22316) | mechanism | mechanism-hunting | no: It needs RL training and a trained steering model, and there |  |
+| H-0290 | 2026-10-16 | github | [Leonxlnx/earshot: Ears for coding agents: let AI hear, review and make sound. CPU-only, op](https://github.com/Leonxlnx/earshot) | mechanism | tools-for-strangers | yes | P-0165 |
+| H-0288 | 2026-10-16 | vault | [mistake-becomes-a-rule trade journal](https://www.instagram.com/reel/DeR5ycpITv3/) | mechanism | forecasting | no: It needs a paper window with real losing trades to classify, |  |
+| H-0285 | 2026-10-16 | arxiv | [MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](https://arxiv.org/abs/2610.22344) | mechanism | mechanism-hunting | no: It needs GPU training of a 35B model and the paper's task fa |  |
+| H-0284 | 2026-10-16 | github | [pro-vi/cc-stretch: Stretchtext replies for Claude Code: short by default, each phrase grow](https://github.com/pro-vi/cc-stretch) | mechanism | tools-for-strangers | yes | P-0164 |
+| H-0283 | 2026-10-16 | hn | [How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/) | mechanism | tech | no: It is an internal process on private repositories, with no p |  |
+| H-0282 | 2026-10-16 | vault | [Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar]() | mechanism | forecasting | yes | P-0163 |
 | H-0280 | 2026-10-15 | vault | [One live automation platform behind the website monthly fee](https://www.youtube.com/watch?v=_5uSbMMOkCQ) | mechanism | tools-for-strangers | no: Needs a platform account, a UK sender number and a real phon |  |
 | H-0279 | 2026-10-15 | awesome | [huggingface/funes (new in awesome-claude-code)](https://github.com/huggingface/funes) | mechanism | tools-for-strangers | no: Runs a downloaded binary from a curl pipe and needs a coding |  |
 | H-0277 | 2026-10-15 | arxiv | [Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents](https://arxiv.org/abs/2610.20344) | mechanism | mechanism-hunting | no: Needs the benchmark release and many frontier model calls, w |  |
 | H-0276 | 2026-10-15 | github | [i12bp8/decomp.wtf: What The Function: your AI agent decompiles games you own into C that c](https://github.com/i12bp8/decomp.wtf) | mechanism | mechanism-hunting | no: Linux and Windows only (not macOS), needs a game ROM and the |  |
 | H-0274 | 2026-10-15 | vault | [UK accounts editions](https://claude.com/marketplace/plugins/small-business) | mechanism | tools-for-strangers | no: Confirming the UK connectors needs a paid plan and a Xero or |  |
-| H-0270 | 2026-10-15 | github | [hujjun/mcd-saver-strategist: 麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨](https://github.com/hujjun/mcd-saver-strategist) | mechanism | tools-for-strangers | yes | P-0160 |
+| H-0270 | 2026-10-15 | github | [hujjun/mcd-saver-strategist: 麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨](https://github.com/hujjun/mcd-saver-strategist) | mechanism | tools-for-strangers | yes | P-0160 **works** |
 | H-0268 | 2026-10-15 | vault | [signal-timed outreach](https://www.altahq.com) | mechanism | tools-for-strangers | no: The verdict is a reply rate, which needs real sends to real  |  |
 | H-0266 | 2026-10-14 | github | [nateherkai/roast-room: Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Marte](https://github.com/nateherkai/roast-room) | both | tools-for-strangers | no: The useful part needs many live Claude calls and is not keyl |  |
 | H-0265 | 2026-10-14 | hn | [Show HN: I wrote an email app that accepts only one sender per inbox](https://clova.email/) | both | tools-for-strangers | no: It requires signing up for the service and owning a domain. |  |
@@ -202,6 +210,101 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0294 longer test of the retest rules
+2026-10-16, vault, https://www.instagram.com/reel/DeR5ycpITv3/
+
+- **Mechanism:** A rule-based retest entry on Nasdaq futures is backtested over a longer span, then compared with random-entry runs of the same trade count to give a luck percentile. The vault's 10-week 15-minute run made +1878 on one MNQ contract at 2R and beat 95 percent of random runs. Two years of 1-hour bars give far more trades before any claim.
+- **Claim:** A 10-week NQ 15m backtest gave +1878 on 1 MNQ at 2R and beat 95 percent of random runs.
+- **Testable:** yes. On two years of keyless 1h NQ=F bars, does the retest rule beat 95 percent of random-entry runs with the same trade count? Queued as P-0166.
+- **Idea on its own:** needs-a-run. Ten weeks is too short to separate an edge from luck, and a longer sample is the cheap, decisive check.
+- **How it would be done:** Pull about 730 days of 1h NQ=F bars via yfinance, which allows that span keyless. Encode the 8 Oct retest rule exactly as written in the vault, run it with 2R targets, then run a few thousand random-entry simulations with matching trade count and the same exits. Use the backtest-with-luck-test skill for the permutation step. Report net result, trade count and luck percentile, with the rule frozen before the run.
+- **Stack already covers:** freqtrade
+- **To fetch:** yfinance https://github.com/ranaroussi/yfinance (Free hourly NQ=F bars for up to 730 days.)
+- **Field Notes line:** The 10-week Nasdaq retest rule beat 95 percent of random runs; two years of hourly bars will say whether that was luck.
+
+### H-0291 Learning to Steer LLM Agents and Multi-Agent Systems
+2026-10-16, arxiv, https://arxiv.org/abs/2610.22316
+
+- **Mechanism:** A separate steering agent watches a running agent's context. A cheap fast path decides whether to intervene; a costly slow path writes the intervention. Both paths are trained together with a pairwise ranking objective and GRPO, and the intervention rate can be tuned without retraining.
+- **Claim:** Improves performance and efficiency of single and multi-agent search systems and transfers to unseen executors.
+- **Testable:** no. It needs RL training and a trained steering model, and there is no local model on this Mac. Needs: GPU training, the paper's code and weights..
+- **Idea on its own:** sound. A two-tier monitor, cheap to check and costly to intervene, fits how drift actually shows up in long runs.
+- **How it would be done:** A prompt-only version is possible: a Haiku child reads the last N steps of a probe run against its stated goal and flags drift, with Sonnet writing the correction only when flagged. Log how often it fires and whether the run recovers. The trained version needs RL tooling and a GPU.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Trained steering model weights and training code.
+- **Field Notes line:** A cheap watcher decides when a long agent run has drifted off its goal, and a costly one writes the correction.
+
+### H-0290 Leonxlnx/earshot: Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.
+2026-10-16, github, https://github.com/Leonxlnx/earshot
+
+- **Mechanism:** Audio is embedded with a CPU audio-text model and compared by cosine similarity to a vocabulary of 322 descriptions, with z-scores calibrated against references to give strong, plausible or weak verdicts. Objective measures such as LUFS, true peak and tempo come from signal processing with no model. A critique command scores a film's audio against a profile built from 7 professional launch films.
+- **Claim:** It turns sound into text evidence an agent can use: describe, match, find, timeline and critique, running on CPU only.
+- **Testable:** yes. Does earshot install and run `measure` and `describe` on a Proteus-made audio or film file on CPU, and does the description match what the file is? Queued as P-0165.
+- **Idea on its own:** needs-a-run. Embedding-similarity tags are plausible, but accuracy on real files and model download size are untested.
+- **How it would be done:** Install into the in-folder Python 3.12 venv, run measure on an ElevenLabs voice file and a HyperFrames render, then describe and critique them. Check whether the first run downloads model weights and how large. Feed critique output back into the render loop as a QA step for the Nolan and Sixteen Nights films.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), local transcription
+- **To fetch:** Leonxlnx/earshot https://github.com/Leonxlnx/earshot (The CLI and MCP server to install and run.)
+- **Field Notes line:** Earshot gives coding agents ears: CPU-only commands that describe a sound in words and score a film's audio against seven launch films.
+
+### H-0288 mistake-becomes-a-rule trade journal
+2026-10-16, vault, https://www.instagram.com/reel/DeR5ycpITv3/
+
+- **Mechanism:** Every losing or odd trade in a paper window gets a one-line cause logged within a day, classed as rule change or variance. A cause is only allowed to alter a rule if it recurs, with the change committed before the next window. This stops rules being tuned to single outcomes and shows how much of the loss is noise.
+- **Claim:** The reel pitches a journal habit; the vault notes only 7 trades and +256 dollars, so no edge evidence.
+- **Testable:** no. It needs a paper window with real losing trades to classify, which does not exist tonight. Needs: A running S1 paper window with at least 20 closed trades..
+- **Idea on its own:** sound. Separating variance from rule faults before editing rules is a standard guard against overfitting to single trades.
+- **How it would be done:** Add a causes column to the paper trade log and write the one-line cause at close. Set a pre-registered threshold, for example the same cause three times, before a rule may change. At window end count rule-change versus variance causes and report the split. No script covers the judgement of what a cause was, so a person or sub-agent writes it.
+- **Stack already covers:** Claude Code with skills and sub-agents, freqtrade
+- **Field Notes line:** A one-line cause per losing trade, labelled rule change or variance, would show how much of a paper window's loss is just noise.
+
+### H-0285 MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
+2026-10-16, arxiv, https://arxiv.org/abs/2610.22344
+
+- **Mechanism:** A 35B mixture-of-experts model is post-trained for long machine-learning engineering runs. Executable Kaggle tasks come from a factory, supervised fine-tuning transfers tool use and coding, then Windowed Interaction RL gives each stretch of decisions between experiment results one shared outcome reward, with asynchronous collection and policy correction so updates happen before a trajectory ends.
+- **Claim:** Average medal rate on MLE-Bench Lite rose from 37.9% to 72.7%, comparable to larger frontier models.
+- **Testable:** no. It needs GPU training of a 35B model and the paper's task factory, none of which is available keyless here. Needs: GPU cluster, model weights, Kaggle task data..
+- **Idea on its own:** sound. Windowed credit assignment is a reasonable fix for sparse rewards in long runs, though the headline needs independent replication.
+- **How it would be done:** Reproduction needs the Kaggle-MLE Factory to build executable tasks, an SFT stage on successful trajectories, then an RL loop with windowed rewards on a GPU rig. A hired ML engineer would be needed. A cheap slice for Proteus is reading the paper's harness design to inform its own probe loop.
+- **To fetch:** MLE-Bench https://github.com/openai/mle-bench (The public benchmark the paper's Lite split is drawn from.)
+- **Missing:** GPU training capacity and the paper's task factory.
+- **Field Notes line:** Credit for a long agent run is split into windows between experiment results, each with a shared reward; medal rate went 37.9 to 72.7 percent.
+
+### H-0284 pro-vi/cc-stretch: Stretchtext replies for Claude Code: short by default, each phrase grows in place when you click it
+2026-10-16, github, https://github.com/pro-vi/cc-stretch
+
+- **Mechanism:** A Claude Code plugin instructs the model to write replies in a short form with marked phrases, each carrying a longer expansion. The renderer shows the short form and swaps a phrase for its long version on click, and the plugin reports which stretches were opened back to the model. A bench script compares word counts of skim versus full across transcripts.
+- **Claim:** The unclicked view was 17 percent of the words, carrying about two of three key points, across 69 real replies.
+- **Testable:** yes. Does the bench script run on Proteus's own transcripts, and what share of words does the skim form keep? Queued as P-0164.
+- **Idea on its own:** needs-a-run. Whether a short form keeps the important points is measurable from the repo's own bench, though the author grades his own replies.
+- **How it would be done:** Clone the repo into sandbox, read bench/README.md and run the bench against local session transcripts, which already exist from usage.py. Check whether the measurement needs a model call; if so, record it as blocked. Compare the skim share to the claimed 17 percent.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** pro-vi/cc-stretch https://github.com/pro-vi/cc-stretch (The plugin and its bench folder.)
+- **Field Notes line:** A plugin applies Ted Nelson's 1967 stretchtext to Claude replies: 17 percent of the words by default, the rest one click away.
+
+### H-0283 How the Claude Code team does code review
+2026-10-16, hn, https://claude.dev/blog/solving-code-review-at-anthropic/
+
+- **Mechanism:** Review is layered: automated agent reviewers read each change first, human time is rationed to the changes that need it, and the target is the minimum human review that does not raise reverts or incidents. Reverts and incidents are the feedback signal, and fast, easy rollback is part of the design. The reviewer is improved over time from missed bugs.
+- **Claim:** From June to September merged PRs more than doubled while the share reverted fell by over 40 percent.
+- **Testable:** no. It is an internal process on private repositories, with no public data or tool to run. Needs: Access to a high-volume agent-written repository with revert history..
+- **Idea on its own:** needs-a-run. Using revert rate as the review-quality metric is sensible, but the numbers come from one team's own repository.
+- **How it would be done:** On a Proteus repo, add an automated reviewer pass on every nightly commit and log reverts and later fixes against it. Compare revert rates with and without the pass over several weeks. A human would still decide which changes always get eyes, such as the hook and charter files.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A repo with enough change volume to make revert rates measurable.
+- **Field Notes line:** Anthropic's Claude Code team moved most code reading to machines and judges review by revert rate; their claim is unverifiable from outside.
+
+### H-0282 Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar
+2026-10-16, vault, 
+
+- **Mechanism:** SEC EDGAR publishes a daily index of filings, and each Form 4 is an XML document listing an insider's role, transaction code (P for open-market purchase) and size. A cluster is three or more distinct officers or directors filing P-code buys in the same company inside a short window. A forward log records each cluster the day it appears, with a pre-registered rule and a 100-signal bar, then scores the 21-day return against random same-size stocks and SPY.
+- **Claim:** Clusters of 3+ insider buys beat random same-size US stocks by about 1.3% per 21 days before costs over 24 months, per the vault's backtest.
+- **Testable:** yes. Can the EDGAR daily index plus Form 4 XML be parsed keyless into a cluster list, and how many 3+ officer or director P-code clusters appeared in the last 30 days? Queued as P-0163.
+- **Idea on its own:** needs-a-run. The edge is small and the vault's own numbers say it vanishes after costs, so only a forward log can settle it.
+- **How it would be done:** Pull form.idx or the daily index from sec.gov (needs a descriptive User-Agent, no key), filter to Form 4, fetch each XML and keep transaction code P by officers and directors. Group by issuer over a rolling window and flag 3+ distinct filers. Commit the rule, window and 100-signal bar before the first logged signal, then log each cluster with entry price from a free daily bar source. Score at 21 days against SPY and random same-size names with the existing permutation-test approach.
+- **Stack already covers:** launchd long-running pollers, freqtrade
+- **To fetch:** SEC EDGAR full-index and Form 4 XML https://www.sec.gov/Archives/edgar/daily-index/ (Public source of the filings; rate limit 10 requests a second with a User-Agent.); yfinance https://github.com/ranaroussi/yfinance (Free daily prices to score the 21-day forward return.)
+- **Field Notes line:** Insider cluster buys leave a public trail on SEC EDGAR; a forward log with a 100-signal bar would show whether the 1.3% edge survives costs.
 
 ### H-0280 One live automation platform behind the website monthly fee
 2026-10-15, vault, https://www.youtube.com/watch?v=_5uSbMMOkCQ
@@ -2355,6 +2458,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0294 | 2026-10-16 | longer test of the retest rules | open | needs-a-run | yes | P-0166 |
+| H-0288 | 2026-10-16 | mistake-becomes-a-rule trade journal | open | sound | no |  |
+| H-0282 | 2026-10-16 | Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar | open | needs-a-run | yes | P-0163 |
 | H-0280 | 2026-10-15 | One live automation platform behind the website monthly fee | open | sound | no |  |
 | H-0274 | 2026-10-15 | UK accounts editions | open | needs-a-run | no |  |
 | H-0268 | 2026-10-15 | signal-timed outreach | open | needs-a-run | no |  |
@@ -2414,6 +2520,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0185 | 2026-10-16 | [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot) | The CLI and MCP server to install and run. | H-0290 (Leonxlnx/earshot: Ears for coding agents: let AI h) | shelf |
+| T-0184 | 2026-10-16 | [MLE-Bench](https://github.com/openai/mle-bench) | The public benchmark the paper's Lite split is drawn from. | H-0285 (MLExpert: Towards a Generalist Agentic Model for A) | shelf |
+| T-0183 | 2026-10-16 | [pro-vi/cc-stretch](https://github.com/pro-vi/cc-stretch) | The plugin and its bench folder. | H-0284 (pro-vi/cc-stretch: Stretchtext replies for Claude ) | shelf |
+| T-0182 | 2026-10-16 | [yfinance](https://github.com/ranaroussi/yfinance) | Free daily prices to score the 21-day forward return. | H-0282 (Paper-forward cluster log from the EDGAR daily ind) | shelf |
+| T-0181 | 2026-10-16 | [SEC EDGAR full-index and Form 4 XML](https://www.sec.gov/Archives/edgar/daily-index/) | Public source of the filings; rate limit 10 requests a second with a User-Agent. | H-0282 (Paper-forward cluster log from the EDGAR daily ind) | shelf |
 | T-0180 | 2026-10-15 | [Twilio](https://www.twilio.com/) | Programmable UK number and SMS if building the missed-call text back directly (paid, needs an account). | H-0280 (One live automation platform behind the website mo) | shelf |
 | T-0179 | 2026-10-15 | [funes-memory dataset](https://huggingface.co/datasets/huggingface/funes-memory) | Public sample memory to inspect structure. | H-0279 (huggingface/funes (new in awesome-claude-code)) | shelf |
 | T-0178 | 2026-10-15 | [funes](https://github.com/huggingface/funes) | Reference implementation of session recall. | H-0279 (huggingface/funes (new in awesome-claude-code)) | shelf |
@@ -2599,6 +2710,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0295 | 2026-10-16 | hn | [Anthropic Console overcharged my card 100x due to internationalization input bug](https://news.ycombinator.com/item?id=50121562) | A single user complaint about a billing input bug; no mechanism beyond a decimal-comma parsing fault. |
+| H-0293 | 2026-10-16 | awesome | [i18next/i18next-cli (new in awesome-claude-code)](https://github.com/i18next/i18next-cli) | Vendor already judged; a standard AST-based key extractor with no new mechanism for Proteus. |
+| H-0292 | 2026-10-16 | youtube | [From the Classroom to the Workshop - UK MOT Tester Training](https://www.youtube.com/watch?v=DfF8mJM25QU) | Transcript disabled and the title points to a training course, not data analysis. |
+| H-0289 | 2026-10-16 | hn | [Postgres 19 delayed after AI reviewers find more bugs than humans can fix](https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471) | News about a release delay; the comments carry no mechanism beyond AI review finding more bugs than can be fixed. |
+| H-0287 | 2026-10-16 | awesome | [haabe/mycelium (new in awesome-claude-code)](https://github.com/haabe/mycelium) | Vendor already judged; the mechanism (assumption-logging gates in a plugin) is generic and its evidence is a Reddit post |
+| H-0286 | 2026-10-16 | youtube | [This Chess AI NEVER Loses: How to Build Your Own Bot](https://www.youtube.com/watch?v=5DcaUHhu0KQ) | A generic Lichess bot tutorial; the Lichess bot already runs (P-0011) and the mechanism is the documented bot API plus S |
 | H-0281 | 2026-10-15 | hn | [Show HN: Indigene – Native plants for where you stand](https://indigene.app/) | Consumer plant lookup app, body gives no usable mechanism beyond cross-referenced open data. |
 | H-0278 | 2026-10-15 | youtube | [This Claude Code Skill Makes Your Usage Limit Last Way Longer](https://www.youtube.com/watch?v=g8lhaArp1U4) | Transcript unavailable (IpBlocked), title is a claim with no visible mechanism. |
 | H-0275 | 2026-10-15 | hn | [Show HN: Petal, open-source CoScreen/ScreenHero finally free](https://petal.live/) | Screen-sharing tool relaunch, no mechanism relevant to the desks. |
