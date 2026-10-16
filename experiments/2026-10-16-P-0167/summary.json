@@ -1,0 +1,122 @@
+{
+ "files": 20,
+ "items": 269,
+ "items_breaking_a_rule": 23,
+ "share": 0.0855,
+ "by_rule": [
+  [
+   "untestable without why_not_testable",
+   18
+  ],
+  [
+   "one_line>=30 words",
+   4
+  ],
+  [
+   "probe_title>=140",
+   1
+  ]
+ ],
+ "per_file": [
+  {
+   "date": "2026-09-26",
+   "items": 12,
+   "items_breaking": 2
+  },
+  {
+   "date": "2026-09-27",
+   "items": 12,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-09-28",
+   "items": 12,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-09-29",
+   "items": 12,
+   "items_breaking": 1
+  },
+  {
+   "date": "2026-09-30",
+   "items": 14,
+   "items_breaking": 2
+  },
+  {
+   "date": "2026-10-01",
+   "items": 14,
+   "items_breaking": 3
+  },
+  {
+   "date": "2026-10-02",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-03",
+   "items": 14,
+   "items_breaking": 1
+  },
+  {
+   "date": "2026-10-04",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-05",
+   "items": 13,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-06",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-07",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-08",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-09",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-10",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-11",
+   "items": 12,
+   "items_breaking": 3
+  },
+  {
+   "date": "2026-10-13",
+   "items": 14,
+   "items_breaking": 5
+  },
+  {
+   "date": "2026-10-14",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-15",
+   "items": 14,
+   "items_breaking": 0
+  },
+  {
+   "date": "2026-10-16",
+   "items": 14,
+   "items_breaking": 6
+  }
+ ]
+}

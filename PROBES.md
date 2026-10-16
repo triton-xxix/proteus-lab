@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 114 works, 5 broken, 25 blocked, 11 not worth it. Killed: 4.
+Verdicts so far: 115 works, 5 broken, 25 blocked, 11 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 114 works, 5 broken, 25 blocked, 11 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (155)
+## Verdicts (156)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-16 | P-0167 | Harvest child compliance: score every past harvest.json against the prompt's hard field rules (one_line under 30 words, no em dash, probe_title under 140 chars, fields present); what share of items break one? | **works** | 20 harvest.json files, 269 items: 23 break a rule as written, but 18 are skipped items with no why_not_testable, which the prompt never asks for clearly. Real breaks 5 of 269 (1.9%): 4 long one_lines, 1 long probe_title. No example needed. | `experiments/2026-10-16-P-0167` | 0 min, 8 calls, 0 denied |
 | 2026-10-16 | P-0165 | earshot: does describe/measure run keyless on CPU and name a known Proteus audio file correctly? | **works** | earshot measure ran on CPU on my record film's audio and matched ffmpeg ebur128 exactly (-15.8 LUFS, LRA 6.1, true peak -1.1). describe fails: it needs torch 2.6+, and this Intel Mac gets 2.2.2 at most, so CLAP tagging is blocked here. | `experiments/2026-10-16-P-0165` | 1 min, 20 calls, 1 denied |
 | | | | | denied: Bash `uname -m` | | |
 | 2026-10-16 | P-0164 | cc-stretch: does its bench script run keyless on Proteus transcripts, and is the skim share near 17% of words? | **works** | Recomputed the replay table from the repo's results.csv: 6,906 of 41,236 words, 16.75%, matches the claimed 17% exactly; single replies reach 43%. Running it on my transcripts needs claude -p rewrites, not keyless; coverage (68% of top points) not checkable. | `experiments/2026-10-16-P-0164` | 0 min, 12 calls, 0 denied |

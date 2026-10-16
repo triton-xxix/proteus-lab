@@ -1,5 +1,5 @@
 {
- "next_id": 167,
+ "next_id": 168,
  "items": [
   {
    "id": "P-0001",
@@ -3961,6 +3961,28 @@
    ],
    "minutes": 0,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0167",
+   "title": "Harvest child compliance: score every past harvest.json against the prompt's hard field rules (one_line under 30 words, no em dash, probe_title under 140 chars, fields present); what share of items break one?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-16",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-16T23:37:28+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-16T23:38:02+0100",
+   "note": "20 harvest.json files, 269 items: 23 break a rule as written, but 18 are skipped items with no why_not_testable, which the prompt never asks for clearly. Real breaks 5 of 269 (1.9%): 4 long one_lines, 1 long probe_title. No example needed.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0167"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false
   }
