@@ -1,5 +1,5 @@
 {
- "next_id": 169,
+ "next_id": 170,
  "items": [
   {
    "id": "P-0001",
@@ -4002,6 +4002,28 @@
    "note": "1,444 ten-match block pairs, nine leagues, four seasons: shots-on-target difference predicts next-10 points at r 0.594, goal difference 0.563, points 0.543; SoT wins in 8 of 9 leagues (not Serie A), bootstrap gap +0.008 to +0.054.",
    "artefacts": [
     "experiments/2026-10-16-P-0168"
+   ],
+   "minutes": 0,
+   "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0169",
+   "title": "Pitch shots term: does adding a shots-on-target attack and defence term to the Dixon-Coles fit lower 2025-26 backtest Brier against the goals-only fit?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-16",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-16T23:39:38+0100",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-16T23:40:01+0100",
+   "note": "Repeat: pitch/backtest.py already runs a sot model. Brier 2025/26: sot 0.5983, dc 0.6053, market 0.5862; sot beats goals-only every season, never the market. I overrode the repeat guard after checking PROBES.md, not the desk code.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0169"
    ],
    "minutes": 0,
    "calls": 6,
