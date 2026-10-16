@@ -3006,22 +3006,25 @@
    "after": "2026-10-16",
    "est_minutes": 20,
    "added": "2026-10-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-16T12:31:30+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-16T12:32:02+0100",
+   "note": "Measured 582 injury rows in the Pitch leagues for 17 Oct from 1 request (34 fixtures; E1 186, D1 114, E0 76; none for P1 or SC0), against my called 30, so the count was off by 19x but the feed works on the free plan. Caveat: rows are players not fixtures, and the type field (missing v questionable) is untested against real lineups. Next: deepen.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0133"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "30 injury rows across the nine Pitch leagues for 17 Oct, 1 request",
-    "at": "2026-10-16T12:31:41+0100"
+    "at": "2026-10-16T12:31:41+0100",
+    "hit": true
    }
   },
   {
