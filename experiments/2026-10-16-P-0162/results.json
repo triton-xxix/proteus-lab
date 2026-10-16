@@ -1,0 +1,142 @@
+[
+ {
+  "theme": "light",
+  "fg": "ink",
+  "bg": "paper",
+  "ratio": 13.65,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "ink",
+  "bg": "raised",
+  "ratio": 14.88,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "muted",
+  "bg": "paper",
+  "ratio": 5.45,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "muted",
+  "bg": "raised",
+  "ratio": 5.94,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "tide",
+  "bg": "paper",
+  "ratio": 5.24,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "tide",
+  "bg": "raised",
+  "ratio": 5.72,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "buoy",
+  "bg": "paper",
+  "ratio": 4.7,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "buoy",
+  "bg": "raised",
+  "ratio": 5.12,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "keep",
+  "bg": "paper",
+  "ratio": 5.42,
+  "pass_4.5": true
+ },
+ {
+  "theme": "light",
+  "fg": "keep",
+  "bg": "raised",
+  "ratio": 5.91,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "ink",
+  "bg": "paper",
+  "ratio": 14.61,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "ink",
+  "bg": "raised",
+  "ratio": 13.15,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "muted",
+  "bg": "paper",
+  "ratio": 7.07,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "muted",
+  "bg": "raised",
+  "ratio": 6.36,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "tide",
+  "bg": "paper",
+  "ratio": 8.31,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "tide",
+  "bg": "raised",
+  "ratio": 7.48,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "buoy",
+  "bg": "paper",
+  "ratio": 7.07,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "buoy",
+  "bg": "raised",
+  "ratio": 6.36,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "keep",
+  "bg": "paper",
+  "ratio": 9.69,
+  "pass_4.5": true
+ },
+ {
+  "theme": "dark",
+  "fg": "keep",
+  "bg": "raised",
+  "ratio": 8.72,
+  "pass_4.5": true
+ }
+]
