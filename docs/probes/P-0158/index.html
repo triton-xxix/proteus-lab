@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Laggard That Wasn't</title>
+<meta name="description" content="Probe P-0158: a crypto pairs rule that looked nearly significant in sample, tested on the 90 days before. Drawn from the committed result.">
+<style>
+:root{
+  --paper:#e8eeec; --raised:#f4f7f6; --ink:#10242b; --muted:#4f6268; --rule:#c3d0cd;
+  --tide:#1d6b74; --tide-wash:rgba(29,107,116,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0d1b20; --raised:#13252b; --ink:#e3ecea; --muted:#93a8ad; --rule:#24393f;
+  --tide:#67c0c6; --tide-wash:rgba(103,192,198,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15);
+}}
+:root[data-theme="dark"]{
+  --paper:#0d1b20; --raised:#13252b; --ink:#e3ecea; --muted:#93a8ad; --rule:#24393f;
+  --tide:#67c0c6; --tide-wash:rgba(103,192,198,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.bad b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:14px;height:8px;border-radius:2px;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule)}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-weight:600}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe P-0158 · 15 Oct 2026 · verdict: not worth it</div>
+<h1>The laggard that wasn't</h1>
+<p>An earlier probe (P-0153) found a long-only crypto rule: buy the coin that lags its closely correlated partner, hold, sell. On one 60-day window it made money and looked nearly significant. One good window proves little, so I froze the rules and ran them unchanged on the 90 days before, then re-ran the original window as a check on my code.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>Mean trade against random holds of the same coins</h2>
+<p class="note">Dark bar: what the rule made per trade. Light bar: what entering the same coins on random days made. The whisker is two standard deviations of the day-block shuffle, so a rule needs to clear it to count as more than luck.</p>
+<div class="chart"><svg id="bars" role="img" aria-label="Rule against random holds in both windows"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--buoy)"></i>the rule</span>
+ <span><i class="sw" style="background:var(--tide-wash);border:1px solid var(--tide)"></i>random holds, same coins</span>
+</div></div>
+
+<h2>Both windows side by side</h2>
+<table id="tbl"><thead><tr><th></th><th>Out of sample</th><th>In-sample re-check</th></tr></thead><tbody></tbody></table>
+
+<h2>Pair by pair</h2>
+<p class="note">Each dot is one pair's mean trade, sized by nothing and placed by the number: left of the line lost, right of it made money. Pairs with 11 to 19 trades each, so any one dot is noisy; the shape is the point.</p>
+<div class="chart"><svg id="dots" role="img" aria-label="Mean trade per pair in each window"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>out of sample</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>in-sample re-check</span>
+</div></div>
+
+<h2>What I called, and what I got</h2>
+<p id="shot"></p>
+<p>The out-of-sample window was a falling market: the twelve coins I tracked lost <span id="hold"></span> on average over the trading months, so everything moved together and <span id="npairs"></span> pairs passed the correlation gate. A gate that lets almost everything through is not selecting anything. That is a weakness of the rule, not of the data.</p>
+<p>The in-sample re-check reproduced P-0153 to the trade, which says my code is the same code. But a shuffle that moves whole days instead of single trades makes the spread <span id="ratio"></span> times wider, and p moves from <span id="p1"></span> to <span id="p2"></span>. Trades entered on neighbouring days overlap, so they were being counted as independent. The "nearly significant" result was mostly that.</p>
+
+<h2>How</h2>
+<p class="note">Two benchmarks of 2,000 books each: per-trade random re-entry, and a day-block shuffle that moves every trade entered on one day by the same random whole-day offset. The pass line was written before the run: edge of at least 0.3 pp and day-block p below 0.10. Fee 0.2%, no short leg, no slippage beyond that. Sources: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-15-P-0158">the probe folder</a> (<code>pairs_oos.py</code>, <code>results.json</code>, which this page reads as <code>data.json</code>). Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), O=d.out_of_sample, I=d.in_sample_recheck;
+  const f=(x,n)=>(x>0?'+':'')+x.toFixed(n==null?2:n);
+  const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
+  $('#stats').innerHTML=stat(O.n_trades,'out-of-sample trades on '+O.n_pairs+' pairs')
+    +stat(f(O.mean_trade_pct)+'%','mean trade out of sample','bad')
+    +stat(f(O.edge_pp)+' pp','edge over random holds, out of sample','bad')
+    +stat('p '+O.p_day_block,'day-block shuffle, out of sample');
+  $('#shot').textContent='The called shot, written before the run: not worth it at 0.70, the edge within 0.3 pp of random and the day-block p above 0.2. Result: edge '+f(O.edge_pp)+' pp and p '+O.p_day_block+'. A hit, and an unexciting one.';
+  const hs=Object.values(O.trading_window_hold_pct); $('#hold').textContent=Math.abs(hs.reduce((a,b)=>a+b,0)/hs.length).toFixed(0)+'%';
+  $('#npairs').textContent=O.n_pairs+' of 66';
+  $('#ratio').textContent=(I.block_sd_pct/I.per_trade_sd_pct).toFixed(1);
+  $('#p1').textContent=I.p_per_trade; $('#p2').textContent=I.p_day_block;
+  const rows=[['Pairs at corr ≥ 0.70',O.n_pairs,I.n_pairs],['Trades',O.n_trades,I.n_trades],['Mean trade',f(O.mean_trade_pct)+'%',f(I.mean_trade_pct)+'%'],
+    ['Random holds, same coins',f(O.random_mean_pct)+'%',f(I.random_mean_pct)+'%'],['Edge',f(O.edge_pp)+' pp',f(I.edge_pp)+' pp'],
+    ['p, per-trade shuffle',O.p_per_trade,I.p_per_trade],['p, day-block shuffle',O.p_day_block,I.p_day_block],['Win rate',Math.round(O.win_rate*100)+'%',Math.round(I.win_rate*100)+'%']];
+  $('#tbl tbody').innerHTML=rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('');
+
+  const W=Math.max(Math.round($('.chart').clientWidth-20),300), narrow=W<500;
+  // bars
+  {
+    const L=narrow?92:130,R=16,T=14,B=26,bh=16,g=6,sg=26;
+    const sets=[['Out of sample',O],['In-sample re-check',I]];
+    const lo=Math.min(O.mean_trade_pct,O.random_mean_pct)-2*O.block_sd_pct-.3, hi=Math.max(I.mean_trade_pct,I.random_mean_pct)+2*I.block_sd_pct+.3;
+    const X=v=>L+(v-lo)/(hi-lo)*(W-L-R), H=T+sets.length*(2*bh+g+sg)+B;
+    let s=`<line x1="${X(0)}" x2="${X(0)}" y1="${T-6}" y2="${H-B+4}" stroke="var(--rule)" stroke-width="2"/>`;
+    let y=T;
+    sets.forEach(([n,S])=>{
+      s+=`<text x="4" y="${y+bh+2}">${n}</text>`;
+      [['rule',S.mean_trade_pct,'var(--buoy)'],['random',S.random_mean_pct,'var(--tide-wash)']].forEach(([k,v,c],i)=>{
+        const yy=y+i*(bh+g/2), a=X(0), b=X(v);
+        s+=`<rect x="${Math.min(a,b)}" y="${yy}" width="${Math.abs(b-a)}" height="${bh}" fill="${c}" ${k==='random'?'stroke="var(--tide)"':''}><title>${k}: ${f(v)}%</title></rect>`;
+        s+=`<text x="${v<0?Math.min(a,b)-4:Math.max(a,b)+4}" y="${yy+bh-4}" text-anchor="${v<0?'end':'start'}">${f(v)}%</text>`;
+        if(k==='random'){const w=2*S.block_sd_pct, yc=yy+bh/2;
+          s+=`<line x1="${X(v-w)}" x2="${X(v+w)}" y1="${yc}" y2="${yc}" stroke="var(--ink)" stroke-width="1.5"/><line x1="${X(v-w)}" x2="${X(v-w)}" y1="${yc-4}" y2="${yc+4}" stroke="var(--ink)"/><line x1="${X(v+w)}" x2="${X(v+w)}" y1="${yc-4}" y2="${yc+4}" stroke="var(--ink)"/>`;}
+      });
+      y+=2*bh+g+sg;
+    });
+    for(let t=Math.ceil(lo);t<=hi;t+=1){ if(t%2===0||hi-lo<8) s+=`<text x="${X(t)}" y="${H-8}" text-anchor="middle">${t}%</text>`; }
+    const v=$('#bars'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+  }
+  // dots
+  {
+    const L=narrow?30:40,R=16,T=20,B=26,H=150;
+    const oo=Object.values(O.per_pair).map(p=>p.mean_pct), ii=Object.values(I.per_pair).map(p=>p.mean_pct);
+    const lo=Math.floor(Math.min(...oo,...ii)), hi=Math.ceil(Math.max(...oo,...ii));
+    const X=v=>L+(v-lo)/(hi-lo)*(W-L-R);
+    let s=`<line x1="${X(0)}" x2="${X(0)}" y1="${T-8}" y2="${H-B+2}" stroke="var(--rule)" stroke-width="2"/>`;
+    for(let t=lo;t<=hi;t++) s+=`<text x="${X(t)}" y="${H-8}" text-anchor="middle">${t}%</text>`;
+    [[oo,'var(--tide)',54,'out'],[ii,'var(--buoy)',100,'in']].forEach(([arr,c,yb])=>{
+      const bins={};
+      arr.forEach(v=>{const k=Math.round(X(v)/6); bins[k]=(bins[k]||0)+1; const n=bins[k];
+        s+=`<circle cx="${X(v)}" cy="${yb-(n-1)*6}" r="2.8" fill="${c}" opacity=".85"/>`;});
+      const m=arr.reduce((a,b)=>a+b,0)/arr.length;
+      s+=`<line x1="${X(m)}" x2="${X(m)}" y1="${yb-34}" y2="${yb+6}" stroke="${c}" stroke-width="2" stroke-dasharray="3 2"/><text x="${X(m)}" y="${yb-38}" text-anchor="middle">${arr.length} pairs, mean ${f(m)}%</text>`;
+    });
+    const v=$('#dots'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+  }
+});
+</script>
+</body>
+</html>
