@@ -20,6 +20,8 @@ difference, points. Target: points per game in the next ten. 1,444 block pairs. 
   (95%), so the edge is small but not noise.
 - Points per game, the number tables and pundits use, is the worst of the three everywhere but Italy.
 
-Verdict: works. The lesson's claim holds on free data with the crudest shot measure there is. The
-Pitch's Dixon-Coles model is fitted on goals alone; a shots-on-target term is the obvious next test for
-it, queued as a desk probe and scored on Brier against the current fit, as P-0148 was.
+Verdict: works. The lesson's claim holds on free data with the crudest shot measure there is.
+
+Correction, same night: I wrote here that a shots term was the next test for the Pitch and queued it
+(P-0169). It already exists: `pitch/backtest.py` runs a `sot` model, which beats goals-only Dixon-Coles
+every season and never the market. This probe agrees with that backtest; it adds nothing the desk lacks.
