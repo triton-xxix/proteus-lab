@@ -3944,15 +3944,17 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-16",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-16T23:33:50+0100",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-16T23:34:16+0100",
+   "note": "Not run: Luke declined a two-year backtest in today's brief (briefs/2026-10-16-bey-retest-forward-paper.md) and agreed a forward paper test; the rule is also 15-minute, so 1h bars test a different rule.",
+   "artefacts": [
+    "experiments/2026-10-16-P-0166"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
