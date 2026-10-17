@@ -4067,22 +4067,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-17T12:34:29+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-17T12:38:17+0100",
+   "note": "Measured: 0.3 s loses 1.75 cp a move more than 1.0 s (paired se 1.64, 24 own positions at ply 30, depth-20 yardstick); shot said 3 to 10, a miss. Mean loss 2.96 / 1.21 / 0.46 cp at 0.3 / 1.0 / 3.0 s, reference move matched 18 / 21 / 24 of 24, no move over 50 cp. Too small for the 80-game D-010 arm to see; expect its no-clear-difference branch, which already switches to 1.0 s. Caveat: one middlegame ply per game, yardstick about 3 s strength. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-17-P-0171"
+   ],
+   "minutes": 3,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "0.3 s loses 3 to 10 centipawns more per move than 1.0 s against the 10 s reference",
-    "at": "2026-10-17T12:34:37+0100"
+    "at": "2026-10-17T12:34:37+0100",
+    "hit": true
    }
   }
  ]

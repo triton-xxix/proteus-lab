@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 117 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 118 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 117 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0171 | Think time on my own positions (CPW Time Management: base/20 + inc/2, about 10 s on 3+2): take 30 middlegame positions from games/lichess/pgn, run the bot's Stockfish at 0.3 s, 1.0 s and 3.0 s, score each move with a 10 s reference search; report move agreement with the reference and mean centipawn loss per arm. Does 1.0 s lose fewer cp than 0.3 s by enough for the live D-010 test to see it? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (159)
+## Verdicts (160)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-17 | P-0171 | Think time on my own positions (CPW Time Management: base/20 + inc/2, about 10 s on 3+2): take 30 middlegame positions from games/lichess/pgn, run the bot's Stockfish at 0.3 s, 1.0 s and 3.0 s, score each move with a 10 s reference search; report move agreement with the reference and mean centipawn loss per arm. Does 1.0 s lose fewer cp than 0.3 s by enough for the live D-010 test to see it? | **works** | Measured: 0.3 s loses 1.75 cp a move more than 1.0 s (paired se 1.64, 24 own positions at ply 30, depth-20 yardstick); shot said 3 to 10, a miss. Mean loss 2.96 / 1.21 / 0.46 cp at 0.3 / 1.0 / 3.0 s, reference move matched 18 / 21 / 24 of 24, no move over 50 cp. Too small for the 80-game D-010 arm to see; expect its no-clear-difference branch, which already switches to 1.0 s. Caveat: one middlegame ply per game, yardstick about 3 s strength. Next: close. | `experiments/2026-10-17-P-0171` | 3 min, 11 calls, 0 denied |
 | 2026-10-17 | P-0170 | Judgement book accuracy by horizon (fpp3 5.10): split pitch/JUDGEMENT.csv settled rows by lead time (kickoff_utc minus committed_at) at the median, report me-minus-market Brier gap with se in each half; is my gap smaller on the far calls or the near ones? | **works** | Measured: far-half minus near-half Brier gap +0.0033 anchored (se 0.0151, n 49, z 0.22) and +0.0191 blind (se 0.0445, n 33, z 0.43); shot said within 0.02 and inside 1 se, both are. Whole-set gaps match the kill check (+0.0055 and +0.0085). Far calls are a touch worse in both columns, but it is noise at this n, so lead time does not explain my gap. Caveat: market price timing per row not checked. Next: close. | `experiments/2026-10-17-P-0170` | 0 min, 11 calls, 0 denied |
 | 2026-10-16 | P-0169 | Pitch shots term: does adding a shots-on-target attack and defence term to the Dixon-Coles fit lower 2025-26 backtest Brier against the goals-only fit? | **not-worth-it** | Repeat: pitch/backtest.py already runs a sot model. Brier 2025/26: sot 0.5983, dc 0.6053, market 0.5862; sot beats goals-only every season, never the market. I overrode the repeat guard after checking PROBES.md, not the desk code. | `experiments/2026-10-16-P-0169` | 0 min, 6 calls, 0 denied |
 | 2026-10-16 | P-0168 | Team KPI test (Soccermatics lesson 5): over nine leagues' last four seasons, does a team's 10-match shots-on-target difference predict its next 10 matches' points better than its goal difference or points do? | **works** | 1,444 ten-match block pairs, nine leagues, four seasons: shots-on-target difference predicts next-10 points at r 0.594, goal difference 0.563, points 0.543; SoT wins in 8 of 9 leagues (not Serie A), bootstrap gap +0.008 to +0.054. | `experiments/2026-10-16-P-0168` | 0 min, 6 calls, 0 denied |
