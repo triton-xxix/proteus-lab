@@ -1,5 +1,5 @@
 {
- "next_id": 172,
+ "next_id": 174,
  "items": [
   {
    "id": "P-0001",
@@ -4087,6 +4087,46 @@
     "at": "2026-10-17T12:34:37+0100",
     "hit": true
    }
+  },
+  {
+   "id": "P-0172",
+   "title": "pump.fun curve: does a live curve account obey constant product and graduate near 85 SOL real reserves?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-17",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0173",
+   "title": "web-ocean: is ocean.min.html about 61 KB and does it render in a headless browser with WebGPU and no errors?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-17",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

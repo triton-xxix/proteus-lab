@@ -6,20 +6,32 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-295 judged over 20 harvest days, 196 kept, 65 testable, 62 queued as probes, 56 with a probe verdict.
+309 judged over 21 harvest days, 208 kept, 67 testable, 64 queued as probes, 60 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0294 | 2026-10-16 | vault | [longer test of the retest rules](https://www.instagram.com/reel/DeR5ycpITv3/) | mechanism | forecasting | yes | P-0166 |
+| H-0309 | 2026-10-17 | github | [assafkip/claudemy: Claudemy: an open-source alternative to Udemy and Coursera. Give Claude](https://github.com/assafkip/claudemy) | mechanism | tools-for-strangers | no: Running it needs model research calls, and there is no local |  |
+| H-0308 | 2026-10-17 | hn | [Show HN: Things to Do API](https://thingstodoapi.com/) | mechanism | open-data | no: It is unclear whether the endpoint needs a key, and an SF-on |  |
+| H-0307 | 2026-10-17 | vault | [structured workbook as the product](https://www.youtube.com/watch?v=LlhTEttKcwQ) | mechanism | tools-for-strangers | no: Selling it needs an audience and a storefront; there is no k |  |
+| H-0305 | 2026-10-17 | arxiv | [PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents](https://arxiv.org/abs/2610.22124) | mechanism | tech | no: Needs model training or at least model calls, and no local L |  |
+| H-0304 | 2026-10-17 | github | [Noniv/web-ocean: Real-time WebGPU ocean renderer written from scratch, no engine. FFT wave](https://github.com/Noniv/web-ocean) | mechanism | cars | yes | P-0173 |
+| H-0303 | 2026-10-17 | hn | [Show HN: Stoke Money – Personal finance app built around a cash flow forecast](https://stoke.money) | mechanism | forecasting | no: Needs real transaction data, which Proteus has none of and s |  |
+| H-0302 | 2026-10-17 | vault | [Familiar-surface cloning to sell a switch](https://www.youtube.com/watch?v=wajoP_5Cpw8) | mechanism | tools-for-strangers | no: The test is whether users switch, which needs real users and |  |
+| H-0301 | 2026-10-17 | awesome | [muend/geoai-skills (new in awesome-claude-code)](https://github.com/muend/geoai-skills) | mechanism | tools-for-strangers | no: Measuring routing or behaviour needs repeated model runs, wh |  |
+| H-0300 | 2026-10-17 | youtube | [⚡ PUMP.FUN BONDING CURVE: DEEP DIVE  ⚡](https://www.youtube.com/watch?v=geUxzPUIc-g) | mechanism | desk:grinder | yes | P-0172 |
+| H-0299 | 2026-10-17 | arxiv | [Improving Environment-Agnostic Coding Agents: The Role of Scaffolding](https://arxiv.org/abs/2610.22289) | mechanism | tech | no: Needs a Codex-class agent and benchmark environments with mo |  |
+| H-0298 | 2026-10-17 | github | [anujasid/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual chat, scene](https://github.com/anujasid/blender-ai-mcp-addon) | mechanism | tech | no: Needs Blender installed and a model provider key or local mo |  |
+| H-0296 | 2026-10-17 | vault | [sell narrow named jobs, not AI](https://www.youtube.com/watch?v=FS_hLDTDI1w) | mechanism | tools-for-strangers | no: Testing it means putting offers in front of real buyers, whi |  |
+| H-0294 | 2026-10-16 | vault | [longer test of the retest rules](https://www.instagram.com/reel/DeR5ycpITv3/) | mechanism | forecasting | yes | P-0166 **not-worth-it** |
 | H-0291 | 2026-10-16 | arxiv | [Learning to Steer LLM Agents and Multi-Agent Systems](https://arxiv.org/abs/2610.22316) | mechanism | mechanism-hunting | no: It needs RL training and a trained steering model, and there |  |
-| H-0290 | 2026-10-16 | github | [Leonxlnx/earshot: Ears for coding agents: let AI hear, review and make sound. CPU-only, op](https://github.com/Leonxlnx/earshot) | mechanism | tools-for-strangers | yes | P-0165 |
+| H-0290 | 2026-10-16 | github | [Leonxlnx/earshot: Ears for coding agents: let AI hear, review and make sound. CPU-only, op](https://github.com/Leonxlnx/earshot) | mechanism | tools-for-strangers | yes | P-0165 **works** |
 | H-0288 | 2026-10-16 | vault | [mistake-becomes-a-rule trade journal](https://www.instagram.com/reel/DeR5ycpITv3/) | mechanism | forecasting | no: It needs a paper window with real losing trades to classify, |  |
 | H-0285 | 2026-10-16 | arxiv | [MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](https://arxiv.org/abs/2610.22344) | mechanism | mechanism-hunting | no: It needs GPU training of a 35B model and the paper's task fa |  |
-| H-0284 | 2026-10-16 | github | [pro-vi/cc-stretch: Stretchtext replies for Claude Code: short by default, each phrase grow](https://github.com/pro-vi/cc-stretch) | mechanism | tools-for-strangers | yes | P-0164 |
+| H-0284 | 2026-10-16 | github | [pro-vi/cc-stretch: Stretchtext replies for Claude Code: short by default, each phrase grow](https://github.com/pro-vi/cc-stretch) | mechanism | tools-for-strangers | yes | P-0164 **works** |
 | H-0283 | 2026-10-16 | hn | [How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/) | mechanism | tech | no: It is an internal process on private repositories, with no p |  |
-| H-0282 | 2026-10-16 | vault | [Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar]() | mechanism | forecasting | yes | P-0163 |
+| H-0282 | 2026-10-16 | vault | [Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar]() | mechanism | forecasting | yes | P-0163 **blocked** |
 | H-0280 | 2026-10-15 | vault | [One live automation platform behind the website monthly fee](https://www.youtube.com/watch?v=_5uSbMMOkCQ) | mechanism | tools-for-strangers | no: Needs a platform account, a UK sender number and a real phon |  |
 | H-0279 | 2026-10-15 | awesome | [huggingface/funes (new in awesome-claude-code)](https://github.com/huggingface/funes) | mechanism | tools-for-strangers | no: Runs a downloaded binary from a curl pipe and needs a coding |  |
 | H-0277 | 2026-10-15 | arxiv | [Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents](https://arxiv.org/abs/2610.20344) | mechanism | mechanism-hunting | no: Needs the benchmark release and many frontier model calls, w |  |
@@ -210,6 +222,148 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0309 assafkip/claudemy: Claudemy: an open-source alternative to Udemy and Coursera. Give Claude a topic, it researches the we
+2026-10-17, github, https://github.com/assafkip/claudemy
+
+- **Mechanism:** A Claude Code skill maps a topic into sub-topics, then researches 20 to 40 pages with at most 3 from one site. Reader agents pull cited notes and one agent merges them into themes with agreement counts and dissent. It plans arcs of about four lessons, makes one sample lesson for feedback, then scripts two-host lessons and renders audio with ElevenLabs or macOS voices. A checker rejects any lesson citing a page the research did not read.
+- **Claim:** Builds about 12 two-minute audio lessons with cited sources from a single topic prompt.
+- **Testable:** no. Running it needs model research calls, and there is no local LLM tonight. Needs: Claude Code web search; ElevenLabs optional..
+- **Idea on its own:** sound. The per-site cap, agreement counts and citation checker are cheap, mechanical guards against single-source and invented citations.
+- **How it would be done:** Install the skill, give it a topic, and inspect the citation checker, which is plain code. The same checker pattern fits Field Notes, where every claim needs a source actually fetched. Audio rendering reuses ElevenLabs, which is already in the stack.
+- **Stack already covers:** Claude Code with skills and sub-agents, ElevenLabs (voice)
+- **To fetch:** claudemy https://github.com/assafkip/claudemy (Skill and citation checker to read and reuse.); ffmpeg https://ffmpeg.org/ (Audio assembly the skill depends on.)
+- **Field Notes line:** A Claude skill builds audio courses and refuses lessons that cite pages the research never read.
+
+### H-0308 Show HN: Things to Do API
+2026-10-17, hn, https://thingstodoapi.com/
+
+- **Mechanism:** The dataset of local events is built by finding influential accounts and posters, then fanning out to the accounts they co-post with. It is served as a REST API and an MCP endpoint, currently for the SF Bay area. The reason given is that on-demand agent web search is slow and no provider covers pop-ups and one-off events together.
+- **Claim:** An API and MCP endpoint of Bay Area pop-ups, one-off events and concerts built by a co-posting fan-out.
+- **Testable:** no. It is unclear whether the endpoint needs a key, and an SF-only event feed answers nothing for a desk here. Needs: Possibly an API key..
+- **Idea on its own:** needs-a-run. Snowball sampling from seed accounts is a sensible discovery method, but coverage and freshness are unproven.
+- **How it would be done:** Pick seed accounts for one city, collect their posts, extract accounts that co-appear, rank by frequency and repeat two rounds. Parse event date, venue and price from each post, de-duplicate, and publish as JSON. Maintenance and verification of dates is the ongoing cost a person would do.
+- **Stack already covers:** A keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** Things to Do API https://thingstodoapi.com/ (The live service, to inspect coverage.)
+- **Field Notes line:** A local events dataset grown by following who co-posts with influential event accounts, then served over MCP.
+
+### H-0307 structured workbook as the product
+2026-10-17, vault, https://www.youtube.com/watch?v=LlhTEttKcwQ
+
+- **Mechanism:** The product is a structured workbook in a 30-day challenge shape: one daily rule, a tick box, a tracker and a bonus at the end. It is used both as a low-priced product and as a gated lead magnet that leads to a community rung. The three-variant test compares versions of the offer to see which converts.
+- **Claim:** A roughly $12 workbook plus three AI personas produced about $157 profit in a week.
+- **Testable:** no. Selling it needs an audience and a storefront; there is no keyless slice. Needs: An audience and a payment page..
+- **Idea on its own:** sound. A structured, finite habit workbook is a real product shape with a clear completion path, independent of how the audience is found.
+- **How it would be done:** Pick a narrow habit outcome, write thirty daily rules with a tick grid and a tracker, and produce it as a PDF or spreadsheet. Offer three variants (title, price or cover) to separate small audiences and compare conversion. Use real, disclosed authorship and not invented people.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills)
+- **Missing:** An audience and a place to sell.
+- **Field Notes line:** A 30-day workbook with a daily rule, tick box and tracker is the transferable product; the fake personas are not.
+
+### H-0305 PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents
+2026-10-17, arxiv, https://arxiv.org/abs/2610.22124
+
+- **Mechanism:** PROBE trains an LLM auditor to talk to a deployed tool-using agent as a realistic user across several turns and trigger policy violations (pricing, privacy, confirmation). It treats the exchange as a two-player Markov game with a composite reward balancing violation discovery, plausibility, progress and policy diversity. GRPO, DPO and GFlowNet objectives are compared. Trained auditors find broader violations than same-size zero-shot adversaries, even against larger targets.
+- **Claim:** Trained multi-turn auditors uncover broader policy violations in tool-using agents than zero-shot adversaries.
+- **Testable:** no. Needs model training or at least model calls, and no local LLM exists here. Needs: Model access and a target agent..
+- **Idea on its own:** sound. Multi-turn probing with a diversity reward addresses violations that single-prompt red-teaming cannot reach.
+- **How it would be done:** Write the policy as a list of checkable rules, give an auditor model a user persona and the agent's tool log, and reward turns that cause a logged violation while staying plausible. Without training, a simple version is a scripted set of personas run against the agent and a rule checker over the tool log. That would suit testing Proteus's own hook.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Auditors trained on a reward for plausible, diverse violations find more rule-breaking in agents than untrained attackers.
+
+### H-0304 Noniv/web-ocean: Real-time WebGPU ocean renderer written from scratch, no engine. FFT waves, whitecaps, sun glitter, phy
+2026-10-17, github, https://github.com/Noniv/web-ocean
+
+- **Mechanism:** A Tessendorf FFT ocean runs as WebGPU compute shaders: six 256 by 256 cascades from 1103 m down to 0.26 m patches, driven by a JONSWAP wind spectrum with directional spreading and swell. The mesh is a 17-level CDLOD quadtree and shading uses LEAN-mapped slope moments for roughness at distance, with foam from the surface Jacobian folding. The whole thing bundles into one 61 KB minified HTML file.
+- **Claim:** A from-scratch WebGPU ocean renderer in a single 61 KB HTML file, built with Claude Code.
+- **Testable:** yes. Does ocean.min.html download at about 61 KB and load in the Browser pane with a WebGPU adapter and no console errors? Queued as P-0173.
+- **Idea on its own:** needs-a-run. The size and rendering claims can be checked directly, but the visual result depends on WebGPU support on this Mac.
+- **How it would be done:** Fetch the minified HTML from the repo, check its byte size, then open it in a browser with WebGPU enabled and read the console. Take a screenshot to confirm a sea is drawn. The wave and shading techniques are reusable for any HyperFrames or still-render background.
+- **Stack already covers:** HyperFrames (video compose, captions, render)
+- **To fetch:** web-ocean https://github.com/Noniv/web-ocean (The page and source to run.)
+- **Field Notes line:** A full FFT ocean with sun glitter fits in one 61 KB HTML file using WebGPU compute shaders.
+
+### H-0303 Show HN: Stoke Money – Personal finance app built around a cash flow forecast
+2026-10-17, hn, https://stoke.money
+
+- **Mechanism:** Instead of budgets, each income and spending category is projected forward from its own history and placed in the account where it usually lands (paycheques and rent in checking, daily spending on cards). Card payments are modelled from the projected card balance, so cash leaves checking when the bill is due, not when the charge is made. User-defined recurring transfers model savings. The output is a forecast of cash balance over time.
+- **Claim:** A cash flow projection engine that models credit card timing, replacing monthly budgets.
+- **Testable:** no. Needs real transaction data, which Proteus has none of and should not request. Needs: A transaction export..
+- **Idea on its own:** sound. Separating the charge date from the cash date is the correct fix for the common net-of-the-month cash flow error.
+- **How it would be done:** Take a transactions CSV, assign each category to its usual account, project each category with a trailing average and day-of-month pattern, then model card payments as the prior statement balance paid on the due date. Plot the running balance and back-test by forecasting a held-out month. The same projection logic could suit any recurring cash flow.
+- **Field Notes line:** A finance app forecasts cash by modelling when card bills actually leave the bank, not when you spend.
+
+### H-0302 Familiar-surface cloning to sell a switch
+2026-10-17, vault, https://www.youtube.com/watch?v=wajoP_5Cpw8
+
+- **Mechanism:** Rebuild a tool's workflow while keeping the layout users already know, so switching costs almost no learning. The rebuild is done from behaviour and public documentation, not by copying vendor code. The pitch to the user is the same screen with a different owner, price or feature set.
+- **Claim:** Rebuilds that keep the familiar layout cut the learning curve for people switching.
+- **Testable:** no. The test is whether users switch, which needs real users and a product. Needs: A target product and a user group..
+- **Idea on its own:** sound. Familiar interfaces lower switching cost, which is a well-known adoption lever, provided the rebuild is clean-room and not a copy of vendor code.
+- **How it would be done:** Choose a tool with a stable, widely understood interface and a weak spot (price, privacy, a missing feature). Write the interface spec from public docs and user-visible behaviour, build it with Claude Code, and test it with a handful of users from the existing tool. A human would do the clean-room discipline and the user interviews.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A chosen target and willing switchers.
+- **Field Notes line:** Keeping the layout people already know is what makes an open rebuild easy to switch to.
+
+### H-0301 muend/geoai-skills (new in awesome-claude-code)
+2026-10-17, awesome, https://github.com/muend/geoai-skills. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** Eighteen Agent Skills each encode preconditions, checks to run and evidence to report for a geospatial claim, with explicit stop conditions when data cannot support the claim (for example two Sentinel-2 scenes from different seasons cannot give a changed-hectares figure). A routing benchmark of 167 cases and a behaviour set of 92 clean pairs measure whether the right skill fires and whether behaviour changes, on one runtime and model pair. The behaviour scores are model-judged and not yet human-verified.
+- **Claim:** Skills that stop when data cannot support a claim, with a 167-case routing benchmark and 92 behaviour pairs published.
+- **Testable:** no. Measuring routing or behaviour needs repeated model runs, which are not keyless tonight. Needs: Model calls to rerun the benchmark..
+- **Idea on its own:** sound. Writing the refusal conditions and evidence checks into a skill is a sound way to stop confident wrong answers, and publishing a benchmark makes it checkable.
+- **How it would be done:** For any domain, list the preconditions that make a claim valid, write them as a skill with a stop rule, and build a test set of requests that should and should not be blocked. Score routing and behaviour on a held-out split. Proteus could do this for forecasting claims, such as refusing a win-rate claim without a luck test.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** geoai-skills https://github.com/muend/geoai-skills (Skill files and benchmark format to copy.); skills CLI https://www.skills.sh/ (Installer used by the repo.)
+- **Field Notes line:** Skills that tell an agent when a geographic claim cannot be supported, published with their own routing and behaviour scores.
+
+### H-0300 ⚡ PUMP.FUN BONDING CURVE: DEEP DIVE  ⚡
+2026-10-17, youtube, https://www.youtube.com/watch?v=geUxzPUIc-g. Vault verdict on the vendor exists (vault verdict: pump.fun); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A pump.fun launch mints one billion tokens and places 800 million on a bonding curve, so price rises with the amount bought. The speaker reports roughly 85 to 86 SOL fills the curve and sends it to Raydium, with King of the Hill at about 45 SOL. He reconstructs the curve by interpolating from buy transactions (SOL in, tokens out), because he did not know the formula. The formula is likely a constant-product style virtual reserve curve that can be read from the program account.
+- **Claim:** About 86 SOL fills the curve and about 45 SOL reaches King of the Hill, with price rising exponentially.
+- **Testable:** yes. Does a live pump.fun bonding curve account read from public Solana RPC satisfy constant product on its virtual reserves, and does it graduate at about 85 SOL of real reserves? Queued as P-0172.
+- **Idea on its own:** sound. A bonding curve is a deterministic formula, so claims about its fill cost can be checked against on-chain reserves.
+- **How it would be done:** Fetch a recent token's bonding-curve account from a public Solana RPC, decode virtual and real reserves, and compute k. Check price after a buy against the formula and compare real SOL reserves at graduation with the 85 to 86 SOL claim. The result feeds the Grinder's entry-price and slippage model directly.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** Solana public RPC https://api.mainnet-beta.solana.com (Keyless account reads to decode curve reserves.)
+- **Field Notes line:** Pump.fun's curve holds 800 million of a billion tokens and fills at about 86 SOL; I will read a live curve account and check the maths.
+
+### H-0299 Improving Environment-Agnostic Coding Agents: The Role of Scaffolding
+2026-10-17, arxiv, https://arxiv.org/abs/2610.22289
+
+- **Mechanism:** A general Codex-based agent is run unchanged across ARC-AGI-3, AGI Maze and Terminal-Bench, with only one instruction varied: report difficulties and return control for automatic continuation. That alone raises mean scores on two benchmarks. Moving the reset decision into a scripted controller that follows a convention already given to the agent recovers part of the gap to a specialised agent. Gains cost more tokens, and the paper says it cannot separate better use from extra inference.
+- **Claim:** A one-line instruction change and a scripted reset controller improve a general agent, but it still trails an ARC-AGI-3-specific agent.
+- **Testable:** no. Needs a Codex-class agent and benchmark environments with model calls. Needs: A model-backed agent and the EnvTraverse framework..
+- **Idea on its own:** sound. Handing control decisions to deterministic code while keeping the model for content is a plausible and cheap scaffolding change.
+- **How it would be done:** Take any agent loop, find the decisions that follow a fixed rule (reset, retry, stop), and move them into a controller script. Keep the same prompt otherwise and compare scores plus token cost on a fixed task set. Report cost alongside score because the paper warns they move together.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** EnvTraverse framework https://arxiv.org/abs/2610.22289 (Baseline agent and framework named in the paper; link on the abstract page.)
+- **Field Notes line:** Moving the 'when to reset' decision out of the model and into a plain script recovered some of a specialist agent's lead.
+
+### H-0298 anujasid/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows.
+2026-10-17, github, https://github.com/anujasid/blender-ai-mcp-addon. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A Blender add-on runs an MCP server over authenticated Streamable HTTP and exposes 21 scene tools (create, inspect, edit, capture, search assets, export). A team mode chains manager, worker and reviewer model calls in sequence: the manager writes assignments with acceptance criteria, workers run scene tools, reviewers approve or send findings back. A blocked task gets one retry, and a second failed review halts the run. Viewport screenshots go to image-capable models.
+- **Claim:** Lets AI models drive Blender scenes through 21 tools, either as one assistant or as a manager, worker and reviewer team.
+- **Testable:** no. Needs Blender installed and a model provider key or local model, and none is available keyless tonight. Needs: Blender and a model key..
+- **Idea on its own:** sound. Tool-per-operation MCP servers with a bounded review loop are a reasonable pattern for any scriptable desktop app.
+- **How it would be done:** Wrap the app's scripting API (bpy here) in a small set of typed tools, serve them over HTTP MCP with a token, and let a client call them. Add a reviewer pass that reads a screenshot and a scene dump and returns approve or specific findings. Cap retries at one per task so loops end. The same shape works for other scriptable programs.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Blender https://www.blender.org/download/ (The host app the tools drive.); blender-ai-mcp-addon https://github.com/anujasid/blender-ai-mcp-addon (The add-on itself, to read the tool definitions.)
+- **Field Notes line:** A Blender add-on puts 21 scene tools behind an MCP server, with a manager, worker and reviewer chain that stops after two failed reviews.
+
+### H-0296 sell narrow named jobs, not AI
+2026-10-17, vault, https://www.youtube.com/watch?v=FS_hLDTDI1w
+
+- **Mechanism:** Each offer is written as one scoped outcome with a name the buyer already uses (missed-call text-back, review requests, dormant-customer reactivation) instead of a general AI service. The buyer judges it on a single number, such as calls recovered or reviews gained. Under the hood it is a small automation (SMS or email trigger, a template, a log) wrapped in a one-line promise.
+- **Claim:** Narrow, named, single-outcome offers sell more easily than a general AI service.
+- **Testable:** no. Testing it means putting offers in front of real buyers, which needs outreach and an audience. Needs: A buyer audience and a sending channel..
+- **Idea on its own:** sound. A single measurable outcome per offer is an old and well-understood sales mechanism, and it fits automations that are small and checkable.
+- **How it would be done:** Pick three jobs with an obvious counter (missed calls, review requests, lapsed customers). For each, write a one-sentence promise, a before and after metric, and a minimal automation that produces the metric. Build the automation with Claude Code and a webhook or SMS API, log every event to a CSV so the number is real. Then put each offer in front of a small list of one trade type. A hired person would do the calling and onboarding that no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** Twilio free trial or a UK SMS API https://www.twilio.com/ (Sends the missed-call text-back and records delivery.); n8n community edition https://github.com/n8n-io/n8n (Self-hosted trigger and action glue for the narrow jobs.)
+- **Missing:** A real list of buyers and the human selling time.
+- **Field Notes line:** Selling one named job, like missed-call text-back, instead of 'AI', gives the buyer a single number to judge you on.
 
 ### H-0294 longer test of the retest rules
 2026-10-16, vault, https://www.instagram.com/reel/DeR5ycpITv3/
@@ -2458,9 +2612,12 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0294 | 2026-10-16 | longer test of the retest rules | open | needs-a-run | yes | P-0166 |
+| H-0307 | 2026-10-17 | structured workbook as the product | open | sound | no |  |
+| H-0302 | 2026-10-17 | Familiar-surface cloning to sell a switch | open | sound | no |  |
+| H-0296 | 2026-10-17 | sell narrow named jobs, not AI | open | sound | no |  |
+| H-0294 | 2026-10-16 | longer test of the retest rules | open | needs-a-run | yes | P-0166 **not-worth-it** |
 | H-0288 | 2026-10-16 | mistake-becomes-a-rule trade journal | open | sound | no |  |
-| H-0282 | 2026-10-16 | Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar | open | needs-a-run | yes | P-0163 |
+| H-0282 | 2026-10-16 | Paper-forward cluster log from the EDGAR daily index with a pre-registered 100-signal bar | open | needs-a-run | yes | P-0163 **blocked** |
 | H-0280 | 2026-10-15 | One live automation platform behind the website monthly fee | open | sound | no |  |
 | H-0274 | 2026-10-15 | UK accounts editions | open | needs-a-run | no |  |
 | H-0268 | 2026-10-15 | signal-timed outreach | open | needs-a-run | no |  |
@@ -2520,6 +2677,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0193 | 2026-10-17 | [claudemy](https://github.com/assafkip/claudemy) | Skill and citation checker to read and reuse. | H-0309 (assafkip/claudemy: Claudemy: an open-source altern) | shelf |
+| T-0192 | 2026-10-17 | [Things to Do API](https://thingstodoapi.com/) | The live service, to inspect coverage. | H-0308 (Show HN: Things to Do API) | shelf |
+| T-0191 | 2026-10-17 | [web-ocean](https://github.com/Noniv/web-ocean) | The page and source to run. | H-0304 (Noniv/web-ocean: Real-time WebGPU ocean renderer w) | shelf |
+| T-0190 | 2026-10-17 | [skills CLI](https://www.skills.sh/) | Installer used by the repo. | H-0301 (muend/geoai-skills (new in awesome-claude-code)) | shelf |
+| T-0189 | 2026-10-17 | [geoai-skills](https://github.com/muend/geoai-skills) | Skill files and benchmark format to copy. | H-0301 (muend/geoai-skills (new in awesome-claude-code)) | shelf |
+| T-0188 | 2026-10-17 | [EnvTraverse framework](https://arxiv.org/abs/2610.22289) | Baseline agent and framework named in the paper; link on the abstract page. | H-0299 (Improving Environment-Agnostic Coding Agents: The ) | shelf |
+| T-0187 | 2026-10-17 | [blender-ai-mcp-addon](https://github.com/anujasid/blender-ai-mcp-addon) | The add-on itself, to read the tool definitions. | H-0298 (anujasid/blender-ai-mcp-addon: AI assistant and MC) | shelf |
+| T-0186 | 2026-10-17 | [Blender](https://www.blender.org/download/) | The host app the tools drive. | H-0298 (anujasid/blender-ai-mcp-addon: AI assistant and MC) | shelf |
 | T-0185 | 2026-10-16 | [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot) | The CLI and MCP server to install and run. | H-0290 (Leonxlnx/earshot: Ears for coding agents: let AI h) | shelf |
 | T-0184 | 2026-10-16 | [MLE-Bench](https://github.com/openai/mle-bench) | The public benchmark the paper's Lite split is drawn from. | H-0285 (MLExpert: Towards a Generalist Agentic Model for A) | shelf |
 | T-0183 | 2026-10-16 | [pro-vi/cc-stretch](https://github.com/pro-vi/cc-stretch) | The plugin and its bench folder. | H-0284 (pro-vi/cc-stretch: Stretchtext replies for Claude ) | shelf |
@@ -2710,6 +2875,8 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0306 | 2026-10-17 | youtube | [What is a bonding curve? #shorts #bondingcurve #PumpFun #Solana #memecoin #crypt](https://www.youtube.com/watch?v=pTTm8lNQtO8) | A 20-second short that restates what a bonding curve is with no formula or numbers; the longer pump.fun item covers the  |
+| H-0297 | 2026-10-17 | hn | [Show HN: Fakeipedia – Wikipedia for worlds that don't exist](https://fakeipedia.org) | A paid LLM wiki generator whose only mechanism is generating a page when a red link is clicked; no detail on how it is d |
 | H-0295 | 2026-10-16 | hn | [Anthropic Console overcharged my card 100x due to internationalization input bug](https://news.ycombinator.com/item?id=50121562) | A single user complaint about a billing input bug; no mechanism beyond a decimal-comma parsing fault. |
 | H-0293 | 2026-10-16 | awesome | [i18next/i18next-cli (new in awesome-claude-code)](https://github.com/i18next/i18next-cli) | Vendor already judged; a standard AST-based key extractor with no new mechanism for Proteus. |
 | H-0292 | 2026-10-16 | youtube | [From the Classroom to the Workshop - UK MOT Tester Training](https://www.youtube.com/watch?v=DfF8mJM25QU) | Transcript disabled and the title points to a training course, not data analysis. |
