@@ -20,7 +20,7 @@ Verdicts so far: 118 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0172 | pump.fun curve: does a live curve account obey constant product and graduate near 85 SOL real reserves? | harvest | none |  | 0 | 25 min |
+| P-0172 | pump.fun curve: does a live curve account obey constant product and graduate near 85 SOL real reserves? | harvest | none |  | 1 (in progress) | 25 min |
 | P-0173 | web-ocean: is ocean.min.html about 61 KB and does it render in a headless browser with WebGPU and no errors? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (160)
