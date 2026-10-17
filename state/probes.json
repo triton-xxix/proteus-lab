@@ -4125,9 +4125,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-17",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-17T23:36:09+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4135,7 +4135,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "ocean.min.html 58 to 64 KB, renders with WebGPU and no console errors",
+    "at": "2026-10-17T23:36:21+0100"
+   }
   }
  ]
 }
