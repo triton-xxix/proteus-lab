@@ -634,6 +634,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-10-16 · Home advantage by season, Premier League since 1993/94 plus D1, SP1, I1 since 2017 (football-data.co.uk)** (data): home minus away points per game averaged +0.55 over 27 seasons with crowds, -0.07 in empty 2020/21, +0.39 over the four seasons since; 2024/25's +0.18 is the lowest with fans in 33 seasons. Persona pick W42, `experiments/2026-10-16-home-advantage/`.
 - 2026-10-17, harvested: 14 judged, 12 kept (H-0296 to H-0309), 2 queued as probes (P-0172, P-0173). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-17: Nolan site, The Dark Knight (2008) researched and built (`sites/nolan/films/the-dark-knight.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
