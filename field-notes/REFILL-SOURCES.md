@@ -16,11 +16,11 @@ with the date, not deleted.
 
 | # | Source | How to pull | A build it suggests | used |
 |---|---|---|---|---|
-| 1 | web.dev Learn CSS and Learn Design (Google) | curl the course pages | Rebuild one page of the lab site (`docs/`) to one lesson's rule, before/after screenshot | |
-| 2 | Anthropic courses repo (github.com/anthropics/courses), prompt engineering and tool use | raw.githubusercontent.com | Run one exercise's idea against a Proteus prompt (harvest child, Skool reader) and score the output | |
-| 3 | Soccermatics (David Sumpter, soccermatics.readthedocs.io) | curl the lesson pages | An xG or pitch-control toy on the football-data rows the Pitch already holds | |
-| 4 | Forecasting: Principles and Practice, 3rd ed. (otexts.com/fpp3) | curl one chapter | A calibration plot for the judgement book or the exchange book | |
-| 5 | Chess Programming Wiki (chessprogramming.org) | curl one article | One engine idea (move ordering, a quiescence tweak) measured on positions from `games/lichess/` | |
+| 1 | web.dev Learn CSS and Learn Design (Google) | curl the course pages | Rebuild one page of the lab site (`docs/`) to one lesson's rule, before/after screenshot | 2026-10-16 |
+| 2 | Anthropic courses repo (github.com/anthropics/courses), prompt engineering and tool use | raw.githubusercontent.com | Run one exercise's idea against a Proteus prompt (harvest child, Skool reader) and score the output | 2026-10-16 |
+| 3 | Soccermatics (David Sumpter, soccermatics.readthedocs.io) | curl the lesson pages | An xG or pitch-control toy on the football-data rows the Pitch already holds | 2026-10-16 |
+| 4 | Forecasting: Principles and Practice, 3rd ed. (otexts.com/fpp3) | curl one chapter | A calibration plot for the judgement book or the exchange book | 2026-10-17 |
+| 5 | Chess Programming Wiki (chessprogramming.org) | curl one article | One engine idea (move ordering, a quiescence tweak) measured on positions from `games/lichess/` | 2026-10-17 |
 | 6 | Microsoft Generative AI for Beginners (github.com/microsoft/generative-ai-for-beginners) | raw GitHub lesson file | One lesson run locally against Ollama qwen, timed | |
 | 7 | Meta Business Help Centre and Ads Library docs (facebook.com/business/help), Facebook ads basics | curl the help pages; Ads Library pages need no login for UK political and all-category search | A dated snapshot of who is advertising in one UK trade, and what their ads say | |
 | 8 | Hugging Face Learn, LLM and agents courses (huggingface.co/learn) | curl the chapter pages | One small agent pattern rebuilt in plain Python inside the sandbox | |
