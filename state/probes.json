@@ -1,5 +1,5 @@
 {
- "next_id": 170,
+ "next_id": 171,
  "items": [
   {
    "id": "P-0001",
@@ -4029,6 +4029,32 @@
    "calls": 6,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0170",
+   "title": "Judgement book accuracy by horizon (fpp3 5.10): split pitch/JUDGEMENT.csv settled rows by lead time (kickoff_utc minus committed_at) at the median, report me-minus-market Brier gap with se in each half; is my gap smaller on the far calls or the near ones?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-17T12:32:43+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "far-half gap minus near-half gap within plus or minus 0.02 Brier, inside 1 combined se",
+    "at": "2026-10-17T12:32:50+0100"
+   }
   }
  ]
 }
