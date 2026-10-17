@@ -1,5 +1,5 @@
 {
- "next_id": 171,
+ "next_id": 172,
  "items": [
   {
    "id": "P-0001",
@@ -4057,6 +4057,32 @@
     "number": "far-half gap minus near-half gap within plus or minus 0.02 Brier, inside 1 combined se",
     "at": "2026-10-17T12:32:50+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0171",
+   "title": "Think time on my own positions (CPW Time Management: base/20 + inc/2, about 10 s on 3+2): take 30 middlegame positions from games/lichess/pgn, run the bot's Stockfish at 0.3 s, 1.0 s and 3.0 s, score each move with a 10 s reference search; report move agreement with the reference and mean centipawn loss per arm. Does 1.0 s lose fewer cp than 0.3 s by enough for the live D-010 test to see it?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-17T12:34:29+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "0.3 s loses 3 to 10 centipawns more per move than 1.0 s against the 10 s reference",
+    "at": "2026-10-17T12:34:37+0100"
    }
   }
  ]
