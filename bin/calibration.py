@@ -5,7 +5,8 @@ columns) and exchange/BOOK.csv (my exchange calls). Counting rules are killcheck
 me-minus-market numbers here must equal the kill check's; the script stops if they do not.
 
 Stdlib only (plain python3 has no numpy). Writes docs/calibration/data.json and index.html.
-Backlog: Big Expedition 12 to 25 Oct, step one."""
+Backlog: Big Expedition 12 to 25 Oct, step one. Step two (17 Oct): pitch/MARKET-BACKFILL.csv gives the
+model rows committed without odds a market price, and over 2.5 goals gets its own panel."""
 import csv
 import json
 import math
@@ -64,24 +65,113 @@ def pairs3(p, res):
     return [(p[i], 1 if i == RES[res] else 0) for i in range(3)]
 
 
-def model():
+BACKFILL = ROOT / "pitch/MARKET-BACKFILL.csv"
+BF_FIELDS = ["id", "market_home", "market_draw", "market_away", "market_over25", "source", "filled_at"]
+
+
+def implied(*odds):
+    try:
+        inv = [1 / float(o) for o in odds]
+    except (TypeError, ValueError, ZeroDivisionError):
+        return None
+    return [round(v / sum(inv), 4) for v in inv]
+
+
+def backfill(rows):
+    """Market odds for scored predictions committed without them. predict.py commits from the
+    odds-free fixturedownload calendar when football-data has not listed a match 48 hours out, and
+    never revisits the row. football-data's results file carries the same pre-match average (AvgH,
+    Avg>2.5) the fixtures file would have given, collected Friday or Tuesday, usually after my
+    commit, so the market here has seen more than the model had. Rows are appended once and kept,
+    so a value never changes after it is committed. The cache is gitignored; this file is not."""
+    have = {r["id"]: r for r in csv.DictReader(open(BACKFILL))} if BACKFILL.exists() else {}
+    need = [r for r in rows if r["result"] in RES and r["id"] not in have and not triple(r, "market_")]
+    if need:
+        idx = {}
+        for f in sorted((ROOT / "pitch/cache").glob("*-2627.csv")):
+            for c in csv.DictReader(open(f, encoding="utf-8-sig")):
+                try:
+                    day = datetime.strptime(c["Date"], "%d/%m/%Y").strftime("%Y-%m-%d")
+                except (KeyError, ValueError):
+                    continue
+                idx[(f.name.split("-")[0], day, c["HomeTeam"], c["AwayTeam"])] = (c, f.name)
+        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        for r in need:
+            hit = idx.get((r["competition"], r["kickoff_utc"][:10], r["home"], r["away"]))
+            if not hit:
+                continue
+            c, name = hit
+            m3, mo = implied(c.get("AvgH"), c.get("AvgD"), c.get("AvgA")), implied(c.get("Avg>2.5"), c.get("Avg<2.5"))
+            if not m3:
+                continue
+            have[r["id"]] = {"id": r["id"], "market_home": m3[0], "market_draw": m3[1], "market_away": m3[2],
+                             "market_over25": mo[0] if mo else "", "source": f"football-data {name} AvgH/D/A, Avg>2.5",
+                             "filled_at": now}
+        with open(BACKFILL, "w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=BF_FIELDS)
+            w.writeheader()
+            for k in sorted(have):
+                w.writerow(have[k])
+    return have
+
+
+def model_rows():
     rows = list(csv.DictReader(open(ROOT / "pitch/PREDICTIONS.csv")))
-    s = [r for r in rows if r["result"] in RES and r["committed_at"] < r["kickoff_utc"]
-         and triple(r, "p_") and triple(r, "market_")]
+    bf = backfill(rows)
+    out = []
+    for r in rows:
+        if r["result"] not in RES or not r["committed_at"] < r["kickoff_utc"] or not triple(r, "p_"):
+            continue
+        src = "captured" if triple(r, "market_") else ("backfilled" if r["id"] in bf else None)
+        if src == "backfilled":
+            r = {**r, **{k: v for k, v in bf[r["id"]].items() if k.startswith("market_")}}
+        if src:
+            out.append((r, src))
+    return rows, out
+
+
+def model():
+    rows, s = model_rows()
     me, mk, d = [], [], []
-    for r in s:
+    for r, _ in s:
         p, m = triple(r, "p_"), triple(r, "market_")
         me += pairs3(p, r["result"])
         mk += pairs3(m, r["result"])
         d.append(brier3(p, r["result"]) - brier3(m, r["result"]))
+    cap = [brier3(triple(r, "p_"), r["result"]) - brier3(triple(r, "market_"), r["result"]) for r, src in s if src == "captured"]
     scored = sum(1 for r in rows if r["result"] in RES)
     return {"key": "model", "title": "The Pitch's model", "who": "Dixon-Coles model", "kind": "football, home/draw/away",
             "rows": len(s), "pairs": len(me), "logged": len(rows), "scored_any": scored,
+            "captured": len(cap), "backfilled": len(s) - len(cap),
+            "captured_me_minus_market": round(statistics.mean(cap), 4) if cap else None,
             "me_minus_market": round(statistics.mean(d), 4) if d else None,
-            "me_brier": round(statistics.mean(brier3(triple(r, "p_"), r["result"]) for r in s), 4) if s else None,
-            "market_brier": round(statistics.mean(brier3(triple(r, "market_"), r["result"]) for r in s), 4) if s else None,
+            "me_brier": round(statistics.mean(brier3(triple(r, "p_"), r["result"]) for r, _ in s), 4) if s else None,
+            "market_brier": round(statistics.mean(brier3(triple(r, "market_"), r["result"]) for r, _ in s), 4) if s else None,
             "bins": bins(me), "market_bins": bins(mk),
-            "rule": "kickoff after commit, result in, market odds captured", "line": None}
+            "rule": "kickoff after commit, result in, market odds captured at commit or backfilled from the results file",
+            "line": None}
+
+
+def over25():
+    rows, s = model_rows()
+    s = [(r, src) for r, src in s if fnum(r.get("p_over25")) is not None and fnum(r.get("market_over25")) is not None
+         and fnum(r.get("home_goals")) is not None and fnum(r.get("away_goals")) is not None]
+    me, mk, d = [], [], []
+    for r, _ in s:
+        o = 1 if fnum(r["home_goals"]) + fnum(r["away_goals"]) > 2 else 0
+        p, m = fnum(r["p_over25"]), fnum(r["market_over25"])
+        me.append((p, o))
+        mk.append((m, o))
+        d.append((p - o) ** 2 - (m - o) ** 2)
+    return {"key": "over25", "title": "The model on over 2.5 goals", "who": "Dixon-Coles model", "kind": "football, over/under 2.5; yes/no",
+            "rows": len(s), "pairs": len(me), "logged": len(rows),
+            "captured": sum(1 for _, src in s if src == "captured"),
+            "me_minus_market": round(statistics.mean(d), 4) if d else None,
+            "me_brier": round(statistics.mean((p - o) ** 2 for p, o in me), 4) if me else None,
+            "market_brier": round(statistics.mean((m - o) ** 2 for m, o in mk), 4) if mk else None,
+            "bins": bins(me), "market_bins": bins(mk),
+            "rule": "same rows as the model panel that have an over 2.5 price; one yes/no forecast per match",
+            "line": None}
 
 
 def judgement(blind):
@@ -143,7 +233,7 @@ def killcheck_lines():
 def check(panels):
     lines = " ".join(killcheck_lines())
     for p in panels:
-        if p["key"] == "model" or p["me_minus_market"] is None:
+        if p["key"] in ("model", "over25") or p["me_minus_market"] is None:
             continue
         tag = f"{p['rows']} counted" if p["key"] != "exchange" else f"{p['rows']} settled"
         want = f"{tag}, " + ("blind" if p["key"] == "blind" else "me") + f" minus market {p['me_minus_market']:+.4f}"
@@ -197,7 +287,13 @@ def page(panels, built):
     for p in panels:
         extra = ""
         if p["key"] == "model":
-            extra = f" {p['logged']} predictions logged, {p['scored_any']} with a result; the rest kick off later or had no market odds captured."
+            cap = "" if p["captured_me_minus_market"] is None else f" (me minus market {p['captured_me_minus_market']:+.4f} on those alone)"
+            extra = (f" {p['logged']} predictions logged, {p['scored_any']} with a result. Market odds were captured at commit on"
+                     f" {p['captured']}{cap}; the other {p['backfilled']} were committed from the odds-free fallback calendar, so"
+                     " their market price is football-data's pre-match average from the results file, usually taken after my"
+                     " commit. That price has seen more than the model had, which favours the market.")
+        elif p["key"] == "over25":
+            extra = f" {p['captured']} of the {p['rows']} have the price captured at commit; the rest are backfilled as above."
         elif p["key"] == "exchange":
             extra = f" {p['logged']} calls logged, {p['settled_any']} settled; only {p['rows']} had the market mid captured, so only those can be compared."
         else:
@@ -251,10 +347,10 @@ many outcomes fall in the bin · whiskers are 95% intervals</p>
 <h2 style="margin-top:2em">What this does not say yet</h2>
 <p>These are small samples. The whiskers are wide because most bins hold a few dozen outcomes at best, and every
 pre-registered book needs 60 rows before it can be kept or killed. Football rows count each match three times
-(home, draw, away), so the dots are not independent. Over 2.5 goals is logged but not drawn here. Nothing on this
+(home, draw, away), so the dots are not independent. The over 2.5 panel counts each match once. Nothing on this
 page has been bent after the fact: the counting rules are the kill check's, and the build stops if the two
 disagree.</p>
-<p class="mut">Drawn by bin/calibration.py from pitch/PREDICTIONS.csv, pitch/JUDGEMENT.csv and exchange/BOOK.csv;
+<p class="mut">Drawn by bin/calibration.py from pitch/PREDICTIONS.csv, pitch/MARKET-BACKFILL.csv, pitch/JUDGEMENT.csv and exchange/BOOK.csv;
 numbers in <a href="data.json">data.json</a>. Every forecast was committed to git before its outcome was knowable.
 <a href="../">Back to the lab</a>.</p>
 </main></body></html>
@@ -262,7 +358,7 @@ numbers in <a href="data.json">data.json</a>. Every forecast was committed to gi
 
 
 def main():
-    panels = [model(), judgement(False), judgement(True), exchange()]
+    panels = [model(), over25(), judgement(False), judgement(True), exchange()]
     check(panels)
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     OUT.mkdir(parents=True, exist_ok=True)

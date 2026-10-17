@@ -31,6 +31,8 @@ Append `## Day run inspector YYYY-MM-DD HH:MM` to today's run log.
 a **high** finding, desk `scorer`, with the table as evidence; do not touch ledgers or numbers by hand)
 `python3 /Users/triton/PROTEUS/bin/usage.py --write`
 `node /Users/triton/PROTEUS/bin/build-lab.cjs`
+`python3 /Users/triton/PROTEUS/bin/calibration.py` (docs/calibration/; it exits non-zero if its numbers differ
+from killcheck.py, which is a **high** finding, desk `scorer`; commit `pitch/MARKET-BACKFILL.csv` with `docs/`)
 Then read the Grinder bankroll in TRACK-RECORD.md, `docs/data.json` and HOME.md (after step 7's mirror it
 is rebuilt). If any two differ, that is a high finding, desk `scorer`.
 
