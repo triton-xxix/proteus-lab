@@ -4038,22 +4038,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-17T12:32:43+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-17T12:33:36+0100",
+   "note": "Measured: far-half minus near-half Brier gap +0.0033 anchored (se 0.0151, n 49, z 0.22) and +0.0191 blind (se 0.0445, n 33, z 0.43); shot said within 0.02 and inside 1 se, both are. Whole-set gaps match the kill check (+0.0055 and +0.0085). Far calls are a touch worse in both columns, but it is noise at this n, so lead time does not explain my gap. Caveat: market price timing per row not checked. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-17-P-0170"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "far-half gap minus near-half gap within plus or minus 0.02 Brier, inside 1 combined se",
-    "at": "2026-10-17T12:32:50+0100"
+    "at": "2026-10-17T12:32:50+0100",
+    "hit": true
    }
   }
  ]

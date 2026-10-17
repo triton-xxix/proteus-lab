@@ -1,0 +1,55 @@
+{
+  "ledger_rows": 57,
+  "anchored": {
+    "n": 49,
+    "median_lead_h": 46.6,
+    "lead_range_h": [
+      16.0,
+      139.1
+    ],
+    "all": {
+      "n": 49,
+      "mean_gap": 0.0055,
+      "se": 0.0071
+    },
+    "near": {
+      "n": 29,
+      "mean_gap": 0.0042,
+      "se": 0.0087
+    },
+    "far": {
+      "n": 20,
+      "mean_gap": 0.0075,
+      "se": 0.0124
+    },
+    "far_minus_near": 0.0033,
+    "far_minus_near_se": 0.0151,
+    "z": 0.22
+  },
+  "blind": {
+    "n": 33,
+    "median_lead_h": 40.0,
+    "lead_range_h": [
+      16.0,
+      139.1
+    ],
+    "all": {
+      "n": 33,
+      "mean_gap": 0.0085,
+      "se": 0.0212
+    },
+    "near": {
+      "n": 18,
+      "mean_gap": -0.0002,
+      "se": 0.0239
+    },
+    "far": {
+      "n": 15,
+      "mean_gap": 0.0189,
+      "se": 0.0375
+    },
+    "far_minus_near": 0.0191,
+    "far_minus_near_se": 0.0445,
+    "z": 0.43
+  }
+}
