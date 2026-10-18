@@ -1,0 +1,67 @@
+{
+ "url": "file:///Users/triton/PROTEUS/docs/tools/webgpu-check/fixtures/broken.html",
+ "verdict": "fail",
+ "reasons": [
+  "1 console error(s) or exception(s)",
+  "blank frame (100.0% one colour)"
+ ],
+ "waitMs": 4000,
+ "size": [
+  1280,
+  720
+ ],
+ "node": "v25.6.0",
+ "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+ "gpu": {
+  "api": true,
+  "adapter": {
+   "vendor": "amd",
+   "architecture": "rdna-1",
+   "description": ""
+  },
+  "fallback": false
+ },
+ "canvases": [
+  [
+   300,
+   150
+  ]
+ ],
+ "frame": {
+  "colours": 1,
+  "top": 1,
+  "dark": 1
+ },
+ "samples": [
+  {
+   "ms": 1012,
+   "#err": ""
+  },
+  {
+   "ms": 2014,
+   "#err": ""
+  },
+  {
+   "ms": 3017,
+   "#err": ""
+  },
+  {
+   "ms": 4020,
+   "#err": ""
+  }
+ ],
+ "events": [
+  {
+   "ms": 374,
+   "kind": "log-warning",
+   "text": "Error while parsing WGSL: :1:31 error: expected builtin value name\nDid you mean 'position'?\nPossible values: 'barycentric_coord', 'clip_distances', 'frag_depth', 'front_facing', 'global_invocation_id', 'global_invocation_index', 'instance_index', 'local_invocation_id', 'local_invocation_index', 'num"
+  },
+  {
+   "ms": 379,
+   "kind": "exception",
+   "text": "Error: shader: expected builtin value name\nDid you mean 'position'?\nPossible values: 'barycentric_coord', 'clip_distances', 'frag_depth', 'front_facing', 'global_invocation_id', 'global_invocation_index', 'instance_index', 'local_invocation_id', 'local_invocation_index', 'num_subgroups', 'num_workgr"
+  }
+ ],
+ "errors": 1,
+ "checkedAt": "2026-10-18T15:38:29.598Z"
+}

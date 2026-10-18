@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>WebGPU Check</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a66;--line:#e2dfd8;--ok:#2f7d55;--no:#b5543c;--wait:#d9d5cc;--code:#f0eee8}
+@media (prefers-color-scheme:dark){:root{--bg:#151514;--fg:#ecebe6;--mut:#9c9a93;--line:#33322f;--ok:#5fbf8a;--no:#e08468;--wait:#3a3935;--code:#22211f}}
+body{background:var(--bg);color:var(--fg);font:17px/1.55 Georgia,serif;margin:0}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:2.1rem;margin:.2em 0} h2{font-size:1.25rem;margin-top:2em}
+.k{font:13px/1.4 ui-monospace,Menlo,monospace;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+pre,code{font:14px/1.5 ui-monospace,Menlo,monospace;background:var(--code)} pre{padding:12px;overflow-x:auto;border-radius:6px}
+code{word-break:break-word}
+svg{width:100%;height:auto;display:block;margin:16px 0}
+.lab{font:13px ui-sans-serif,system-ui;fill:var(--fg);text-anchor:end}
+.tick,.note{font:11px ui-monospace,Menlo,monospace;fill:var(--mut)} .tick{text-anchor:middle}
+.grid{stroke:var(--line)} .wait{fill:var(--wait)} .bar{fill:var(--ok)}
+img{width:100%;height:auto;border-radius:6px;display:block}
+.tw{overflow-x:auto} table{border-collapse:collapse;font:14px ui-sans-serif,system-ui;width:100%}
+td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}
+td.pass{color:var(--ok);font-weight:600} td.fail{color:var(--no);font-weight:600}
+a{color:inherit} .mut{color:var(--mut)}
+</style></head><body><main>
+<div class="k">Proteus tools · from probe P-0173</div>
+<h1>WebGPU check</h1>
+<p>Does a WebGPU page actually draw something in headless Chrome, with nothing in the console? You would think
+<code>chrome --headless --screenshot</code> answers that. It does not. A WebGPU page starts asynchronously
+(adapter, device, shader compile), and Chrome's one-shot flags either freeze the clock or stop waiting. Both
+gave me a screenshot and a clean console of a page that had not started. This script drives Chrome over the
+DevTools protocol on a real clock, waits, and then judges the frame.</p>
+<h2>Same page, three ways</h2>
+<p class="mut">A 61 KB single-file WebGPU ocean. Grey: the page's own HUD still reads “starting…”. Green: frames per second
+read from the HUD each second. Same Intel Mac, amd rdna-1 adapter.</p>
+<svg viewBox="0 0 680 192" role="img" aria-label="Three ways of running headless Chrome on a WebGPU page"><line x1="190.0" x2="190.0" y1="22" y2="174" class="grid"/><text x="190.0" y="14" class="tick">0 s</text><line x1="265.7" x2="265.7" y1="22" y2="174" class="grid"/><text x="265.7" y="14" class="tick">2 s</text><line x1="341.5" x2="341.5" y1="22" y2="174" class="grid"/><text x="341.5" y="14" class="tick">4 s</text><line x1="417.2" x2="417.2" y1="22" y2="174" class="grid"/><text x="417.2" y="14" class="tick">6 s</text><line x1="492.9" x2="492.9" y1="22" y2="174" class="grid"/><text x="492.9" y="14" class="tick">8 s</text><line x1="568.7" x2="568.7" y1="22" y2="174" class="grid"/><text x="568.7" y="14" class="tick">10 s</text><line x1="644.4" x2="644.4" y1="22" y2="174" class="grid"/><text x="644.4" y="14" class="tick">12 s</text><text x="180" y="52" class="lab">--dump-dom, virtual time</text><rect x="190" y="38" width="302.9" height="20" class="wait"/><text x="500.9" y="53" class="note">dumped at 8 s: “starting…”</text><text x="180" y="98" class="lab">--dump-dom, --timeout</text><rect x="190" y="84" width="68.2" height="20" class="wait"/><text x="266.2" y="99" class="note">dumped at 1.8 s: “starting…”</text><text x="180" y="144" class="lab">webgpu_check.mjs (CDP)</text><rect x="190" y="130" width="305.3" height="20" class="wait"/><rect x="486.3" y="128.5" width="18" height="21.5" class="bar"><title>8.1 s: 43 fps</title></rect><rect x="524.2" y="129.5" width="18" height="20.5" class="bar"><title>9.1 s: 41 fps</title></rect><rect x="562.1" y="128.5" width="18" height="21.5" class="bar"><title>10.1 s: 43 fps</title></rect><rect x="600.1" y="128.5" width="18" height="21.5" class="bar"><title>11.1 s: 43 fps</title></rect><rect x="638.1" y="128.5" width="18" height="21.5" class="bar"><title>12.1 s: 43 fps</title></rect><text x="483.3" y="166" class="note" text-anchor="end">first frame by 8.1 s</text></svg>
+<p>The one-shot runs exited cleanly, with a 12,650-byte screenshot and no console errors,
+on a page that had drawn nothing. Over CDP the first frame arrived by 8.1 s and the sea then held
+41 to 43 fps at 1280x577. On this machine about eight
+seconds go before anything is drawn, so any check that waits less than that will tell you a working page is fine
+for the wrong reason, and a broken one too.</p>
+<img src="runs/ocean/shot-640.jpg" alt="Headless Chrome screenshot of the WebGPU ocean after 12 seconds: a lit sea under a pale sky" loading="lazy">
+<h2>Pass and fail</h2>
+<p class="mut">A run fails on any of: no <code>navigator.gpu</code>, no adapter, a console error or uncaught exception, or a
+frame where one colour covers more than 98% of the screenshot. Exit code 0 pass, 1 fail, 2 could not run.</p>
+<div class="tw"><table><tr><th>Page</th><th>Verdict</th><th>Errors</th><th>Colours</th><th>Top colour</th><th>Why</th></tr><tr><td>ocean.min.html (61 KB WebGPU sea)</td><td class="pass">pass</td><td>0</td><td>139</td><td>4.6%</td><td>renders</td></tr><tr><td>fixtures/broken.html</td><td class="fail">fail</td><td>1</td><td>1</td><td>100.0%</td><td>1 console error(s) or exception(s); blank frame (100.0% one colour)</td></tr></table></div>
+<p>The broken fixture is mine: it gets a device and then misspells a WGSL builtin. What the script caught:</p>
+<ul><li><code>log-warning</code> at 374 ms: Error while parsing WGSL: :1:31 error: expected builtin value name</li><li><code>exception</code> at 379 ms: Error: shader: expected builtin value name</li></ul>
+<p class="mut">The WGSL parse message arrives as a warning, not an error, so the shader failure alone would not fail the run;
+the page's own throw and the blank frame do. A page that swallows its errors and draws black still fails on the frame.</p>
+<h2>Use it</h2>
+<pre>node webgpu_check.mjs page.html --wait 12000 --watch "#fps,#err" --out run/
+node webgpu_check.mjs https://example.com/demo --size 1920x1080</pre>
+<p><a href="webgpu_check.mjs">webgpu_check.mjs</a> needs Node 22 or later and an installed Chrome; no npm install. It writes
+<code>results.json</code> (adapter, canvases, per-second text of any selectors you watch, every console event, the
+frame test) and <code>shot.png</code>. A temporary profile is made and removed each run. <a href="README.md">README</a>.</p>
+<p class="mut">One machine, one window size, Chrome only. The blank test reads the screenshot, not the canvas, so a page that
+paints a busy HTML overlay over a dead canvas will pass it. Numbers drawn from runs/*/results.json and P-0173's
+results files by build.py. <a href="https://github.com/triton-xxix/proteus-lab/blob/main/experiments/2026-10-18-P-0173/README.md">Probe write-up</a>.</p>
+</main></body></html>

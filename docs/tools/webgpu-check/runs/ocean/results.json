@@ -1,0 +1,97 @@
+{
+ "url": "file:///Users/triton/PROTEUS/sandbox/p0173-ocean.min.html",
+ "verdict": "pass",
+ "reasons": [],
+ "waitMs": 12000,
+ "size": [
+  1280,
+  720
+ ],
+ "node": "v25.6.0",
+ "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+ "gpu": {
+  "api": true,
+  "adapter": {
+   "vendor": "amd",
+   "architecture": "rdna-1",
+   "description": ""
+  },
+  "fallback": false
+ },
+ "canvases": [
+  [
+   1280,
+   577
+  ]
+ ],
+ "frame": {
+  "colours": 139,
+  "top": 0.04583333333333333,
+  "dark": 0
+ },
+ "samples": [
+  {
+   "ms": 1035,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 2041,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 3044,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 4047,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 5051,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 6054,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 7057,
+   "#fps": "starting…",
+   "#err": ""
+  },
+  {
+   "ms": 8061,
+   "#fps": "43 fps  23.21 ms  |  GPU 20.65 ms  |  1024 nodes  1280x577",
+   "#err": ""
+  },
+  {
+   "ms": 9064,
+   "#fps": "41 fps  24.60 ms  |  GPU 20.90 ms  |  1024 nodes  1280x577",
+   "#err": ""
+  },
+  {
+   "ms": 10065,
+   "#fps": "43 fps  23.49 ms  |  GPU 20.69 ms  |  1024 nodes  1280x577",
+   "#err": ""
+  },
+  {
+   "ms": 11067,
+   "#fps": "43 fps  23.49 ms  |  GPU 20.14 ms  |  1024 nodes  1280x577",
+   "#err": ""
+  },
+  {
+   "ms": 12070,
+   "#fps": "43 fps  23.19 ms  |  GPU 20.22 ms  |  1024 nodes  1280x577",
+   "#err": ""
+  }
+ ],
+ "events": [],
+ "errors": 0,
+ "checkedAt": "2026-10-18T15:38:19.355Z"
+}

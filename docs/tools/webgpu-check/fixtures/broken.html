@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>broken fixture</title>
+<style>html,body{margin:0;background:#000}canvas{width:100vw;height:100vh;display:block}</style>
+<canvas id="c"></canvas><div id="err" style="position:fixed;top:0;color:#000"></div>
+<script>
+// A deliberately broken WebGPU page: it gets a device, then a shader typo throws before the first frame.
+(async () => {
+  const a = await navigator.gpu.requestAdapter();
+  const dev = await a.requestDevice();
+  const ctx = document.getElementById("c").getContext("webgpu");
+  ctx.configure({ device: dev, format: navigator.gpu.getPreferredCanvasFormat() });
+  const m = dev.createShaderModule({ code: "@vertex fn main() -> @builtin(positoin) vec4f { return vec4f(0); }" });
+  const info = await m.getCompilationInfo();
+  if (info.messages.length) throw new Error("shader: " + info.messages[0].message);
+})();
+</script>
