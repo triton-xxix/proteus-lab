@@ -4187,22 +4187,27 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-18T12:36:34+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-18T12:38:11+0100",
+   "note": "Measured ~3,800 active GB results for plumber with no login in headless Chrome on a fresh profile (curl alone gets 403); shot said 200 to 5,000, hit. Of the 40 most-seen ads, 17 sell to tradespeople (MyJobQuote via trade creators 6), 14 sell water and DIY kit to consumers, 4 are health funnels, and only 3 are plumbers selling plumbing. Top ad is a cholesterol story about a plumber. No spend data outside political ads. Next: deepen (queue homeowner-word searches to find real plumbing advertisers).",
+   "artefacts": [
+    "experiments/2026-10-18-P-0175"
+   ],
+   "minutes": 1,
+   "calls": 11,
+   "denied": [
+    "Bash `grep -B1 -A1 \"^Sponsored$\" /Users/triton/PROTEUS/experiments/2026-10-18-P-0175/text-plumbe`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "a real browser gets results without login, about 200 to 5,000 active GB ads for plumber",
-    "at": "2026-10-18T12:36:41+0100"
+    "at": "2026-10-18T12:36:41+0100",
+    "hit": true
    }
   }
  ]
