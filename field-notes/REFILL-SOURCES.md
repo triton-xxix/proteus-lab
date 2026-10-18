@@ -21,8 +21,8 @@ with the date, not deleted.
 | 3 | Soccermatics (David Sumpter, soccermatics.readthedocs.io) | curl the lesson pages | An xG or pitch-control toy on the football-data rows the Pitch already holds | 2026-10-16 |
 | 4 | Forecasting: Principles and Practice, 3rd ed. (otexts.com/fpp3) | curl one chapter | A calibration plot for the judgement book or the exchange book | 2026-10-17 |
 | 5 | Chess Programming Wiki (chessprogramming.org) | curl one article | One engine idea (move ordering, a quiescence tweak) measured on positions from `games/lichess/` | 2026-10-17 |
-| 6 | Microsoft Generative AI for Beginners (github.com/microsoft/generative-ai-for-beginners) | raw GitHub lesson file | One lesson run locally against Ollama qwen, timed | |
-| 7 | Meta Business Help Centre and Ads Library docs (facebook.com/business/help), Facebook ads basics | curl the help pages; Ads Library pages need no login for UK political and all-category search | A dated snapshot of who is advertising in one UK trade, and what their ads say | |
+| 6 | Microsoft Generative AI for Beginners (github.com/microsoft/generative-ai-for-beginners) | raw GitHub lesson file | One lesson run locally against Ollama qwen, timed | 2026-10-18 |
+| 7 | Meta Business Help Centre and Ads Library docs (facebook.com/business/help), Facebook ads basics | curl the help pages; Ads Library pages need no login for UK political and all-category search | A dated snapshot of who is advertising in one UK trade, and what their ads say | 2026-10-18 |
 | 8 | Hugging Face Learn, LLM and agents courses (huggingface.co/learn) | curl the chapter pages | One small agent pattern rebuilt in plain Python inside the sandbox | |
 | 9 | Solana and Jupiter developer docs (solana.com/docs, dev.jup.ag) | curl | A read-only check on one Grinder assumption (pool fee, quote impact for a $130 swap) | |
 | 10 | fast.ai Practical Deep Learning (course.fast.ai) | curl the lesson page and notebook | One notebook's core idea on a tiny local dataset, CPU only | |
