@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-10-17 08:06 UTC at commit a112dac.
+Rebuilt 2026-10-18 08:06 UTC at commit 17396f9.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -13,19 +13,19 @@ Current rules v0.2, £100.00 a position. Earlier rule versions are their own boo
 
 | Measure | Value |
 |---|---|
-| Paper bankroll | £315.73 (started £1000.00) |
+| Paper bankroll | £11.33 (started £1000.00) |
 | Positions opened | 83 |
-| Positions closed | 79 |
-| Positions scored at 24h | 77 |
-| Hit rate | 0.329 |
-| Expectancy per position | £-8.66 |
-| Expectancy as a share of the stake | -8.7% |
-| Positions that rugged | 5 |
+| Positions closed | 83 |
+| Positions scored at 24h | 81 |
+| Hit rate | 0.313 |
+| Expectancy per position | £-11.91 |
+| Expectancy as a share of the stake | -11.9% |
+| Positions that rugged | 7 |
 
 | Rule version | Stake | Opened | Closed | Expectancy | Share of stake | Bankroll | Rugged |
 |---|---|---|---|---|---|---|---|
 | v0.1 | £5.00 | 6 | 6 | £-1.08 | -21.5% | £93.54 (from £100.00) | 1 |
-| v0.2 | £100.00 | 83 | 79 | £-8.66 | -8.7% | £315.73 (from £1000.00) | 5 |
+| v0.2 | £100.00 | 83 | 83 | £-11.91 | -11.9% | £11.33 (from £1000.00) | 7 |
 
 Every position is also rescored on its minute-candle price path in `grinder/PATHS.csv`, beside
 what the ledger recorded, so a stop honoured late shows next to the stop the rule said.
@@ -58,13 +58,13 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 158 |
-| Works | 116 |
+| Probe verdicts | 161 |
+| Works | 119 |
 | Broken | 5 |
 | Blocked | 25 |
 | Not worth it | 12 |
 | Killed | 4 (1 by the cull rule, 3 on Luke's word) |
-| Still open | 7 |
+| Still open | 8 |
 
 ## Spend
 

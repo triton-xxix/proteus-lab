@@ -1,5 +1,5 @@
 {
- "built": "2026-10-17 15:38 UTC",
+ "built": "2026-10-18 08:06 UTC",
  "panels": [
   {
    "key": "model",
@@ -380,22 +380,22 @@
    "title": "My exchange calls",
    "who": "me, one contract a night on Smarkets",
    "kind": "elections, weather, macro; yes/no",
-   "rows": 7,
-   "pairs": 7,
-   "logged": 19,
-   "settled_any": 12,
-   "me_minus_market": 0.1489,
-   "me_brier": 0.1771,
-   "market_brier": 0.0281,
+   "rows": 8,
+   "pairs": 8,
+   "logged": 21,
+   "settled_any": 13,
+   "me_minus_market": 0.1296,
+   "me_brier": 0.161,
+   "market_brier": 0.0314,
    "bins": [
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 3,
-     "mean_p": 0.32,
+     "n": 4,
+     "mean_p": 0.295,
      "observed": 0.0,
      "lo95": 0.0,
-     "hi95": 0.5615
+     "hi95": 0.4899
     },
     {
      "lo": 0.4,
@@ -425,6 +425,15 @@
      "observed": 0.0,
      "lo95": 0.0,
      "hi95": 0.5615
+    },
+    {
+     "lo": 0.2,
+     "hi": 0.4,
+     "n": 1,
+     "mean_p": 0.2324,
+     "observed": 0.0,
+     "lo95": 0.0,
+     "hi95": 0.7935
     },
     {
      "lo": 0.6,

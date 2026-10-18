@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-17 08:06 UTC",
- "commit": "a112dac",
+ "built_at": "2026-10-18 08:06 UTC",
+ "commit": "17396f9",
  "input_blobs": {
-  "grinder/LEDGER.csv": "bb43038f88be1a63ad1846a46625b961157bb8ed",
+  "grinder/LEDGER.csv": "293eae4a93db8a6f587868d9e94b51435b6006dc",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "9623077e347878c00be7f5ee25cafa9b8c266994",
   "state/spend.jsonl": null,
-  "state/probes.json": "3903321223216d46c1fea51c310262804c4f18a7",
+  "state/probes.json": "78645478b3da89353b32a8aebe9b215952c676db",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000"
@@ -15,14 +15,14 @@
   "version": "v0.2",
   "stake_gbp": 100.0,
   "bankroll_start": 1000.0,
-  "bankroll_now": 315.73,
+  "bankroll_now": 11.33,
   "opened": 83,
-  "closed": 79,
-  "scored_24h": 77,
-  "hit_rate": 0.329,
-  "expectancy": -8.66,
-  "expectancy_pct_stake": -8.7,
-  "rugged": 5,
+  "closed": 83,
+  "scored_24h": 81,
+  "hit_rate": 0.313,
+  "expectancy": -11.91,
+  "expectancy_pct_stake": -11.9,
+  "rugged": 7,
   "books": {
    "v0.1": {
     "stake_gbp": 5.0,
@@ -39,14 +39,14 @@
    "v0.2": {
     "stake_gbp": 100.0,
     "bankroll_start": 1000.0,
-    "bankroll_now": 315.73,
+    "bankroll_now": 11.33,
     "opened": 83,
-    "closed": 79,
-    "scored_24h": 77,
-    "hit_rate": 0.329,
-    "expectancy": -8.66,
-    "expectancy_pct_stake": -8.7,
-    "rugged": 5
+    "closed": 83,
+    "scored_24h": 81,
+    "hit_rate": 0.313,
+    "expectancy": -11.91,
+    "expectancy_pct_stake": -11.9,
+    "rugged": 7
    }
   }
  },
@@ -67,15 +67,15 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 158,
-  "works": 116,
+  "verdicts": 161,
+  "works": 119,
   "broken": 5,
   "blocked": 25,
   "not_worth_it": 12,
   "killed": 4,
   "killed_by_rule": 1,
   "killed_by_luke": 3,
-  "open": 7
+  "open": 8
  },
  "spend": {
   "cap_gbp": 50.0,
