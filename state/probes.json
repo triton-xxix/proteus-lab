@@ -4218,22 +4218,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-18T12:38:28+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-18T12:40:11+0100",
+   "note": "Measured 29 of 80 most-seen GB ads are plumbing or heating firms selling to homeowners (blocked drain 11 of 40, boiler service 18 of 40; 20 distinct firms) against 3 of 40 for plumber; shot said 20 to 45, hit. blocked drain is half health ads (20 of 40, lymphatic drainage); boiler service carries 17 heating firms plus 11 boiler cover ads. No login on either. Next: close (method in adlib.mjs; a repeat in January would show how seasonal the boiler ads are).",
+   "artefacts": [
+    "experiments/2026-10-18-P-0176"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "plumbing or heating firms selling to homeowners 20 to 45 of the 80 ads across both searches, against 3 of 40 for plumber",
-    "at": "2026-10-18T12:38:37+0100"
+    "at": "2026-10-18T12:38:37+0100",
+    "hit": true
    }
   }
  ]

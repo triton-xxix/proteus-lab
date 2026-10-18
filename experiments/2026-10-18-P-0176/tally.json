@@ -1,0 +1,28 @@
+{
+ "at": "2026-10-18T11:39Z",
+ "rule": "first 40 ads of each GB all-category active search, Meta's default sort (total impressions); a 'firm' does plumbing, drainage or heating work for homeowners, local or national; boiler cover sellers counted apart",
+ "plumber (P-0175)": {"results": "~3,800", "firm_ads": 3},
+ "blocked drain": {
+  "results": "~1,500",
+  "firm_ads": 11,
+  "firms": {"Absolute Drainage - Drain Unblocking Services": 5, "Elite Drain Services (Gloucestershire, Cheltenham)": 5, "Pro Drainage Group": 1},
+  "drain products to consumers": 7,
+  "health ads using drain or blocked (lymphatic, thyroid, cholesterol and the like)": 20,
+  "other": 2
+ },
+ "boiler service": {
+  "results": "~850",
+  "firm_ads": 18,
+  "firms": ["British Gas (2)", "Matt Grange Home Heating Experts", "Ninja Plumbers London", "BeSure Home", "Westwave Bathrooms",
+            "The Essex Bathroom Company", "Russell Gas Services", "Wight Boilers (via Isle of Wight County Press)", "Gaslec Ltd",
+            "Impact Energy LTD (heat pumps)", "Boiler Sure", "KJ Groupuk", "Gem services", "PlumbCall Plumbing & Heating Ltd",
+            "MPH Boilers", "TMS Plumbing & Heating", "The Boiler Co North East"],
+  "boiler cover sellers (CORGI HomePlan 6, YourRepair 3, OpenFix 2)": 11,
+  "selling to trades (Heating and Catering Parts)": 2,
+  "firm selling to businesses (Union Plumbing & Heating, compliance)": 1,
+  "health": 2,
+  "other (Alibaba 3, smoke alarms, property wealth, rental EPC)": 6
+ },
+ "both_searches_firm_ads": 29,
+ "both_searches_distinct_firms": 20
+}

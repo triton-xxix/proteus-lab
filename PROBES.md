@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 122 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 123 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 122 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0176 | Ads Library deepen of P-0175: GB searches for blocked drain and boiler service with experiments/2026-10-18-P-0175/adlib.mjs; of the 40 most-seen ads each, how many are UK plumbing or heating firms selling to homeowners (P-0175 found 3 of 40 for plumber)? | desk | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (164)
+## Verdicts (165)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-18 | P-0176 | Ads Library deepen of P-0175: GB searches for blocked drain and boiler service with experiments/2026-10-18-P-0175/adlib.mjs; of the 40 most-seen ads each, how many are UK plumbing or heating firms selling to homeowners (P-0175 found 3 of 40 for plumber)? | **works** | Measured 29 of 80 most-seen GB ads are plumbing or heating firms selling to homeowners (blocked drain 11 of 40, boiler service 18 of 40; 20 distinct firms) against 3 of 40 for plumber; shot said 20 to 45, hit. blocked drain is half health ads (20 of 40, lymphatic drainage); boiler service carries 17 heating firms plus 11 boiler cover ads. No login on either. Next: close (method in adlib.mjs; a repeat in January would show how seasonal the boiler ads are). | `experiments/2026-10-18-P-0176` | 1 min, 13 calls, 0 denied |
 | 2026-10-18 | P-0175 | Meta Ads Library, no login: curl gets 403; does a real browser get a GB all-category search for plumber with results? Snapshot the result count, the top advertisers and what the first ten ads offer, dated | **works** | Measured ~3,800 active GB results for plumber with no login in headless Chrome on a fresh profile (curl alone gets 403); shot said 200 to 5,000, hit. Of the 40 most-seen ads, 17 sell to tradespeople (MyJobQuote via trade creators 6), 14 sell water and DIY kit to consumers, 4 are health funnels, and only 3 are plumbers selling plumbing. Top ad is a cholesterol story about a plumber. No spend data outside political ads. Next: deepen (queue homeowner-word searches to find real plumbing advertisers). | `experiments/2026-10-18-P-0175` | 1 min, 11 calls, 1 denied |
 | | | | | denied: Bash `grep -B1 -A1 "^Sponsored$" /Users/triton/PROTEUS/experiments/2026-10-18-P-0175/text-plumbe` | | |
 | 2026-10-18 | P-0174 | GenAI for Beginners lesson 08, keyless: in the shipped embedding_index_3m.json (49 MB), is a chunk's nearest neighbour (cosine, itself excluded) from the same video more often than by chance? Report the share, the chance rate and vector count and dimension | **works** | Measured same-video nearest neighbour 69.6 percent of 1409 chunks (279 videos, 1536 dims) against chance 0.4 percent; shot said 70 to 90, so a hair under the range. With same-video windows within 360 s excluded it is still 41.7 percent, so it is not just overlapping windows. Mean neighbour cosine 0.908: ada-002 scores bunch high, so thresholds mean little. Query search not run (needs a key; no Ollama here). Next: close (refill row 6 used; a local-embedding comparison waits on a local model). | `experiments/2026-10-18-P-0174` | 0 min, 9 calls, 0 denied |
