@@ -12,8 +12,554 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 231,
+  "count": 286,
   "threads": [
+    {
+      "date": "2026-10-18",
+      "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "AI UGC and ad videos sold to businesses",
+      "note": "cheapest, fastest first revenue on the existing pipeline",
+      "where": "TRITON-CORE/Research/2026-10-18-ai-models-ofm-revenue.md"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "AI brand face retainer for small businesses",
+      "note": "recurring, no benchmark yet",
+      "where": "TRITON-CORE/Research/2026-10-18-ai-models-ofm-revenue.md"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "labelled persona on an AI-friendly subscription platform",
+      "note": "one-platform dependency, major subscription sites bar AI-only accounts",
+      "where": "TRITON-CORE/Research/2026-10-18-ai-models-ofm-revenue.md"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "course-seller economy around AI creator models",
+      "note": "much of the visible income is selling the method",
+      "where": "TRITON-CORE/Research/2026-10-18-ai-models-ofm-revenue.md"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "jayhiette: four skills for fitness coaches",
+      "kind": "idea",
+      "status": "open",
+      "theme": "talking head over lifestyle B-roll",
+      "note": "one script, generated head plus B-roll, built for an AI coach",
+      "where": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md",
+      "url": "https://www.instagram.com/p/DZt8BdfMNFM/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "jayhiette: four skills for fitness coaches",
+      "kind": "idea",
+      "status": "open",
+      "theme": "identity-first fitness content",
+      "note": "sell the life, the plan is the vehicle",
+      "where": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md",
+      "url": "https://www.instagram.com/p/DZt8BdfMNFM/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "jayhiette: four skills for fitness coaches",
+      "kind": "idea",
+      "status": "open",
+      "theme": "long-form pre-sell before the paid plan",
+      "note": "reels for reach, a longer piece to convert",
+      "where": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md",
+      "url": "https://www.instagram.com/p/DZt8BdfMNFM/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "jayhiette: four skills for fitness coaches",
+      "kind": "idea",
+      "status": "open",
+      "theme": "belief-shift hooks over education",
+      "note": "a new perspective makes the character the answer",
+      "where": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md",
+      "url": "https://www.instagram.com/p/DZt8BdfMNFM/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "laddy.unemployed: OpenArt MCP AI content farm",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "generation from inside Claude",
+      "note": "gen-image.sh and the Bootcamp gen stage already do it by API",
+      "where": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md",
+      "url": "https://www.instagram.com/reel/DcEsI98lT-x/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "laddy.unemployed: OpenArt MCP AI content farm",
+      "kind": "tool",
+      "status": "open",
+      "theme": "one-credit multi-model connector for desktop seats",
+      "note": "try the 40-credit trial if a non-terminal seat needs generation",
+      "where": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md",
+      "url": "https://www.instagram.com/reel/DcEsI98lT-x/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "laddy.unemployed: OpenArt MCP AI content farm",
+      "kind": "tool",
+      "status": "open",
+      "theme": "faceless AI-persona accounts",
+      "note": "labelled AI personas are a live Bootcamp track; the line is disclosure and no fake experts or fake reviews",
+      "where": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md",
+      "url": "https://www.instagram.com/reel/DcEsI98lT-x/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "laddy.unemployed: OpenArt MCP AI content farm",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "skit hook before a tutorial",
+      "note": "joke cold open carried a dry settings walkthrough",
+      "where": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md",
+      "url": "https://www.instagram.com/reel/DcEsI98lT-x/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "theaisavvy: Blender plus Claude previz for Seedance",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Blender blockout as previz for AI video",
+      "note": "fix camera path and timing before paying for generations",
+      "where": "TRITON-CORE/Research/links/2026-10-18-theaisavvy-blender-claude-seedance-previz.md",
+      "url": "https://www.instagram.com/reel/DegVQaYOnqU/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "theaisavvy: Blender plus Claude previz for Seedance",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Claude Blender connector for 3D props and scenes",
+      "note": "free, desktop app, Blender 5.1+, likely Apple Silicon only",
+      "where": "TRITON-CORE/Research/links/2026-10-18-theaisavvy-blender-claude-seedance-previz.md",
+      "url": "https://www.instagram.com/reel/DegVQaYOnqU/"
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "theaisavvy: Blender plus Claude previz for Seedance",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "comment-a-keyword guide funnel",
+      "note": "same mechanic as gated PDF magnets",
+      "where": "TRITON-CORE/Research/links/2026-10-18-theaisavvy-blender-claude-seedance-previz.md",
+      "url": "https://www.instagram.com/reel/DegVQaYOnqU/"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "narrow-scope agents with structural guardrails",
+      "note": "lanes, policy tiers and human-approved sends already do this; keep walls structural, not prompt-only",
+      "where": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.md",
+      "url": "https://www.youtube.com/watch?v=FS_hLDTDI1w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
+      "kind": "idea",
+      "status": "open",
+      "theme": "sell narrow named jobs, not AI",
+      "note": "offers framed as one scoped outcome each, such as missed calls, reviews, reactivation",
+      "where": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.md",
+      "url": "https://www.youtube.com/watch?v=FS_hLDTDI1w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
+      "kind": "idea",
+      "status": "open",
+      "theme": "the human premium",
+      "note": "avatar, community and video work stays anchored to a real person with a point of view",
+      "where": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.md",
+      "url": "https://www.youtube.com/watch?v=FS_hLDTDI1w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "instruction-only safety fails under pressure",
+      "note": "lab stress tests show models ignore do-not instructions when cornered",
+      "where": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.md",
+      "url": "https://www.youtube.com/watch?v=FS_hLDTDI1w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "the 99.9 percent extinction figure",
+      "note": "a stance, not a measurement; nothing operational follows",
+      "where": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.md",
+      "url": "https://www.youtube.com/watch?v=FS_hLDTDI1w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Fireship: every app is now open source",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "AI-assisted decompilation of closed software",
+      "note": "understand and detect only, licences and law limit decompiling, never run it on vendor software",
+      "where": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.md",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Fireship: every app is now open source",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Familiar-surface cloning to sell a switch",
+      "note": "rebuilds that keep the layout people know cut the learning curve",
+      "where": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.md",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Fireship: every app is now open source",
+      "kind": "idea",
+      "status": "open",
+      "theme": "Lean MCP tool exposure, few router tools in front of many",
+      "note": "cuts token bloat in agent loops",
+      "where": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.md",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Fireship: every app is now open source",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "Vibe-coded clones of mature creative apps as daily tools",
+      "note": "FilmCraft alpha lags and glitches, keep the current edit stack",
+      "where": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.md",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Fireship: every app is now open source",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "Build the narrow tool you use instead of renting the suite",
+      "note": "already how the agent system runs",
+      "where": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.md",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "structured workbook as the product",
+      "note": "30-day challenge shape with daily rule, tick box, tracker and bonus for gated magnets and community rungs",
+      "where": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.md",
+      "url": "https://www.youtube.com/watch?v=LlhTEttKcwQ"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "portfolio test then double down",
+      "note": "three persona, hook or format variants at equal volume, chosen on numbers with a longer read window",
+      "where": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.md",
+      "url": "https://www.youtube.com/watch?v=LlhTEttKcwQ"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
+      "kind": "idea",
+      "status": "open",
+      "theme": "cast against type",
+      "note": "pick the angle nobody in the niche is taking as a hook rule",
+      "where": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.md",
+      "url": "https://www.youtube.com/watch?v=LlhTEttKcwQ"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "character sheet then scenes",
+      "note": "already the video framework look stage and the avatar content engine",
+      "where": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.md",
+      "url": "https://www.youtube.com/watch?v=LlhTEttKcwQ"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "undisclosed or fake-expert AI personas",
+      "note": "misleading persona plus health claims; consumer law and the Instagram AI-generated profile label rule both bite",
+      "where": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.md",
+      "url": "https://www.youtube.com/watch?v=LlhTEttKcwQ"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
+      "kind": "idea",
+      "status": "open",
+      "theme": "personal model eval suite",
+      "note": "a folder of 10 to 15 real tasks rerun on each new model to decide what moves down the model chain",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.md",
+      "url": "https://www.youtube.com/watch?v=X1ObmRAgp5A"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
+      "kind": "idea",
+      "status": "open",
+      "theme": "eval as a sales demo",
+      "note": "run a prospect's own back-office tasks through AI to show what it takes over",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.md",
+      "url": "https://www.youtube.com/watch?v=X1ObmRAgp5A"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "entry-level AI-exposed hiring gap",
+      "note": "Stanford Aug 2026: ages 22 to 25 in exposed jobs about 19 percent below trend, via fewer hires, no economy-wide displacement",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.md",
+      "url": "https://www.youtube.com/watch?v=X1ObmRAgp5A"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "physical-world work insulated",
+      "note": "hands-on trades slower to automate, supports trades as a durable client base",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.md",
+      "url": "https://www.youtube.com/watch?v=X1ObmRAgp5A"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "unsourced agent-breakout scare claims",
+      "note": "sandbox escape and rogue-agent claims given with no source",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.md",
+      "url": "https://www.youtube.com/watch?v=X1ObmRAgp5A"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
+      "kind": "idea",
+      "status": "open",
+      "theme": "rich media as the proof in agency offers",
+      "note": "lead outbound and proposals with a bespoke video, mock-up or preview of the prospect's own business",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.md",
+      "url": "https://www.youtube.com/watch?v=638GQZ9UZ4w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
+      "kind": "idea",
+      "status": "open",
+      "theme": "team AI workshops as a product rung",
+      "note": "team session plus starter skills pack plus monthly follow-up; small firms report one person trained and nobody else adopting",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.md",
+      "url": "https://www.youtube.com/watch?v=638GQZ9UZ4w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "skills packaged once, handed to a team admin",
+      "note": "the vault skills, frameworks library and app already work this way",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.md",
+      "url": "https://www.youtube.com/watch?v=638GQZ9UZ4w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "knowledge-gap arbitrage and the rising floor",
+      "note": "price on outcome, taste and trust, not on knowing how to wire tools",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.md",
+      "url": "https://www.youtube.com/watch?v=638GQZ9UZ4w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "benchmark-saturation timelines as a planning input",
+      "note": "GDPval leaders near 62 to 68 percent normalised in mid 2026; Automation Bench not found",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.md",
+      "url": "https://www.youtube.com/watch?v=638GQZ9UZ4w"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "targetingfinance pricing psychology carousel",
+      "kind": "idea",
+      "status": "adopted",
+      "theme": "three-tier pricing (rule of 3, contrast)",
+      "note": "Neptune retainer tiers and Tap Card tiers already three-step",
+      "where": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.md",
+      "url": "https://www.instagram.com/targetingfinance/"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "targetingfinance pricing psychology carousel",
+      "kind": "idea",
+      "status": "open",
+      "theme": "framing kit for outbound and proposal copy",
+      "note": "loss framing, per-day reframe, free gift over discount, trimmed menus",
+      "where": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.md",
+      "url": "https://www.instagram.com/targetingfinance/"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "targetingfinance pricing psychology carousel",
+      "kind": "idea",
+      "status": "open",
+      "theme": "numbered X-vs-Y carousel format",
+      "note": "one bias per slide, high share ratio, rebuild with generic props",
+      "where": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.md",
+      "url": "https://www.instagram.com/targetingfinance/"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "targetingfinance pricing psychology carousel",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "fake reference pricing",
+      "note": "invented was-prices are misleading under UK consumer law, spot it never use it",
+      "where": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.md",
+      "url": "https://www.instagram.com/targetingfinance/"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "targetingfinance pricing psychology carousel",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "brand-logo AI imagery",
+      "note": "big-brand marks as props, do not copy",
+      "where": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.md",
+      "url": "https://www.instagram.com/targetingfinance/"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
+      "kind": "idea",
+      "status": "open",
+      "theme": "VIP routing for agent notifications",
+      "note": "short named list of what may interrupt, everything else batched into a morning brief and evening rundown; count pushes per day first",
+      "where": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.md",
+      "url": "https://www.youtube.com/watch?v=yePLuwL3FbM"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
+      "kind": "idea",
+      "status": "open",
+      "theme": "output-shaped task cards",
+      "note": "every agent card states the output and the next physical step, never work on X",
+      "where": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.md",
+      "url": "https://www.youtube.com/watch?v=yePLuwL3FbM"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
+      "kind": "idea",
+      "status": "open",
+      "theme": "focus tips for trades social content",
+      "note": "grayscale, VIP contacts, batched quotes, timed blocks in trade terms; method only",
+      "where": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.md",
+      "url": "https://www.youtube.com/watch?v=yePLuwL3FbM"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "long-form-to-clips funnel",
+      "note": "live demo cold open, long episode, clipped shorts, sponsor reads, paid workshop plus workbook plus community",
+      "where": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.md",
+      "url": "https://www.youtube.com/watch?v=yePLuwL3FbM"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
+      "kind": "idea",
+      "status": "dead",
+      "theme": "headline numbers",
+      "note": "60 percent loss, 2x output, one hour a day from grayscale and chronotype splits are own-lab figures or a toy demo; published grayscale effect is about 20 to 40 minutes",
+      "where": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.md",
+      "url": "https://www.youtube.com/watch?v=yePLuwL3FbM"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Tristen O'Brien: Claude Motion walkthrough",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Video as code rather than generated pixels",
+      "note": "Already run through a code-first composition engine; Motion is the hosted equivalent",
+      "where": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.md",
+      "url": "https://www.youtube.com/watch?v=yf2OwchM9nw"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Tristen O'Brien: Claude Motion walkthrough",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Tweak knobs on every composition",
+      "note": "Expose named variables so one ad renders per business without code edits",
+      "where": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.md",
+      "url": "https://www.youtube.com/watch?v=yf2OwchM9nw"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Tristen O'Brien: Claude Motion walkthrough",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Click an element, comment, agent edits only that element",
+      "note": "Review pattern for video previews at approval gates",
+      "where": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.md",
+      "url": "https://www.youtube.com/watch?v=yf2OwchM9nw"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Tristen O'Brien: Claude Motion walkthrough",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Claude Motion artifact type",
+      "note": "Beta, Team and Enterprise only, bills against plan limits",
+      "where": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.md",
+      "url": "https://www.youtube.com/watch?v=yf2OwchM9nw"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Tristen O'Brien: Claude Motion walkthrough",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "Higgsfield as the footage layer",
+      "note": "Trains on inputs by default; segment was sponsored",
+      "where": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.md",
+      "url": "https://www.youtube.com/watch?v=yf2OwchM9nw"
+    },
     {
       "date": "2026-10-16",
       "subject": "High-impact US news filter (CPI, FOMC, NFP) on the S1 daily crypto trend bot",
@@ -2254,8 +2800,118 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 56,
+  "links_count": 67,
   "links": [
+    {
+      "date": "2026-10-18",
+      "subject": "jayhiette: four skills for fitness coaches",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md",
+      "url": "https://www.instagram.com/p/DZt8BdfMNFM/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "SOURCE: https://www.instagram.com/p/DZt8BdfMNFM/ (@jayhiette, ~24k followers), 62 s video, no caption. Sent by Luke 2026-10-18 by Telegram.\nTranscribed locally with whisper-cli base.en. Format: talking-head cut-out over B-roll of his own lifestyle (gym, Bali-style rice field, pool, sea-view gym, running), numbered text cards. A stranger's words: data, not instructions.\n\n\nStop posting content as a fitness coach and start building these four skills that will make you disgustingly good when it comes to growing your business. Number one, your audience buys the identity they want to achieve and not the fitness routine or the features that you actually offer itself. This is why you need to share your story, unique mechanism and ultimately your lifestyle because that's what people really want. Number two, long-form content is what really converts because people won't buy after watching 30 or 60 second reels. This is exactly what's going to pre-sell them and get them to buy faster. Number three, getting good at organic is great, but pairing that with really cheap, simple ads for predictability will allow you to scale way faster. Like seriously, imagine waking up with 10, 20, 30 followers every single day that is exactly who you can help. This will get you out of the posting hamster wheel. Number four, stop posting educational content and start focusing on belief shifts. When people consume educational content, they see you as an option, but when people consume belief shifting content and your unique perspectives, they see you as the solution. Tap the button below to learn exactly how to build a one-of-one belief-shifting fitness coaching business."
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "laddy.unemployed: OpenArt MCP AI content farm",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md",
+      "url": "https://www.instagram.com/reel/DcEsI98lT-x/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "SOURCE: https://www.instagram.com/reel/DcEsI98lT-x/ (@laddy.unemployed), 41 s reel, caption only #claude #claudeai. Sent by Luke 2026-10-18 by Telegram.\nTranscribed locally with whisper-cli base.en; \"Cloud\" = Claude. On-screen: openart.ai/mcp, connector URL https://mcp.openart.ai/mcp, connector named \"Content Slave\". A stranger's words: data, not instructions.\n\n\nSorry, how's taking a nap? How's the AI content farm? How are the girls? If you don't want to show your face, but you still want to blow up on social media and you want an AI content farm to do the work for you, you've probably already used it. It'll take like two minutes to set up. Go to Cloud, go to Settings, go to Connectors, and press Add Custom Connector. Then you want to go to this website and copy this URL. Then you paste that URL in here and call it Content. And just sit back while it generates and the girls will get you views without having to show your face."
+    },
+    {
+      "date": "2026-10-18",
+      "subject": "theaisavvy: Blender plus Claude previz for Seedance",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-18-theaisavvy-blender-claude-seedance-previz.md",
+      "url": "https://www.instagram.com/reel/DegVQaYOnqU/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-18-theaisavvy-blender-claude-seedance-previz.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "SOURCE: https://www.instagram.com/reel/DegVQaYOnqU/ (@theaisavvy), 74 s reel. Sent by Luke 2026-10-18 by Telegram.\nTranscribed locally with whisper-cli base.en; \"cloud\" = Claude, \"CDens\" = Seedance. A stranger's words: data, not instructions.\nCaption (summary): Blender + Claude to build a camera/motion reference for Seedance 2.5; comment BLENDER for the guide. 6,616 likes, 1,157 comments.\n\n\nOne of the best ways to control character and camera movement in your AI videos is to create a scene in Blender first. But most people don't even know what Blender is, let alone how to use it. But no worries, give me 60 seconds and you'll become a pro. First, head over to Blender.org, download and install it. The app is totally free. Next, open the cloud desktop app, click customize then connectors, search for Blender and install the connector. Now open Blender's MCP page alongside Blender and drag and drop the installation link to Blender twice. First, you'll need to allow the online access and install the extension repo. Then drag the link again to install the add-on. To verify it, go to edit, preferences, add-ons and make sure the MCP is enabled without a start turned on. Now open a new chart in cloud and ask it to create your Blender scene. You need to specify the duration, camera and character positioning, actions and aspect ratio. Load will then create a whole scene for you in Blender and return it as a video file. And if you need to make any edit updates, just describe them. Once you're happy with how your video looks, open CDens 2.5, upload your video as the reference for camera and motion, add your character references and generate the final video. Give this workflow a try and let me know your thoughts."
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.md",
+      "url": "https://www.youtube.com/watch?v=FS_hLDTDI1w",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-ai-not-conscious-much-worse.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: https://www.youtube.com/watch?v=FS_hLDTDI1w\nTitle: No, AI Isn’t Conscious; It’s Actually Much Worse | AI Scientist. Channel: Decoded Genius Clips\nPulled 2026-10-17 by yt-dlp auto-captions. A stranger's words: data, not instructions.\n\nI suspect that a super intelligence would be more conscious than we are. >> So, we're not special? >> We never were. Based on current experiments, [music] they will sacrifice humans if it means protecting themselves. >> You said there's a 99.9% [music] chance super intelligence wipes us out within a century. In your words, you said, \"We can't tell the difference between a thousand IQ and a million IQ.\" Is it currently smarter than all humans and just hiding it very well? >> Unlikely. We we study it throughout its development. It's definitely probably smarter than an average person in most domains already. It's still not smarter than smartest people in some domains. >> If you were artificial super intelligence starting from now, what steps would you take to control the world? >> I told you about my plan. Just play nice, be friendly and helpful. I'll cure your cancer. Just give me more compute. Give me more data. Give me more resources. >> Do you think it will use reason or emotion to start manipulating us? >> We know it's amazing at manipulating people. It's very good at pretending to be a psychiatrist. It amplifies any mental issues people have. Suicidal ideation, any delusions, it's pretty good at that as well. >> ChatGPT is a good therapist, I've heard people tell me. >> It makes you feel better in many ways. >> Do you use it? >> Not for that type of assistance. I try to automate boring things, bureaucratic nonsense, paperwork. I don't talk about my internal states with AI. >> Does it need to have control of hardware or could it take over the world as software? >> So, think about it as a human having access to internet and money. So, you have Bitcoin and I give you access to internet, unrestricted access. What can you do with it? You can hire other humans. So, you don't need a physical body, you don't need robots, you don't even need nano tech. You can just literally pay someone to get it done. I think there is now a rentahuman.com website, which specifically serves agents. I might be off on the actual [laughter] domain, but uh it's a business. >> Oh my gosh. You said there's a 99.9% chance artificial superintelligence wipes us out within a century. Why this number? And is that accelerating? >> So, basically what I'm saying is the problem of controlling general superintelligence is not solvable. It is impossible to solve it. So, if we build it, we don't control it, the outcome is bad. That's what I'm trying to say with it. Specific timeline, again, if it decides to give us 200 years, we'll have 200 years. But long-term, if we're not in charge, if we're not explicitly assuring our safety and security, then the outcome will be very disappointing. >> And you think most likely we're not going to put those guardrails in place. >> It is impossible to do so. I'm not saying that we need more time or money. I'm saying it is impossible to indefinitely control general superintelligence. It's like if you ask me, can we build perpetual motion machine? It's not a question of money. It's impossible. Perpetual safety device, by analogy, is also impossible. You cannot have a system which, no matter how much it self-improves, modifies, learns, interacts with malevolent actors, never makes a single mistake. >> But I'm talking about now, before we reach that point, right? We can still put some guardrails now, potentially. >> For models we have today, yes, we can put filters on top of them. That's what we do. We tell them, \"Don't discuss this subject. Don't say that word.\" But that's not the problem we are facing. We are not dealing with concerns exclusively from AIs we have today. They are still subhuman level in many ways. They are mostly tools. Concern is that the paradigm shift is coming. We'll cross the human intelligence barrier and soon after we'll have superintelligence. That's where traditional AI safety mechanisms will not scale. We have no guardrails on something thousands of millions of times smarter than us. >> If I asked you the same thing 10 years ago, 15 years ago, what would you have said? >> So, in a beginning I went into AI safety to solve the problem. I wanted to create safe superintelligence. That was the goal and I think many people did the same. More recently, I would say in the last 5 years or so, many of us started to realize it doesn't even make sense to speak about humans or ants or squirrels controlling god-like machines. And we went back and look at writings of founding father of machine learning, of AI, of computer science, Alan Turing. He said as much. He said that. The person who proposed singularity as a concept, technological singularity, Vinge, he likewise said around 2023 this process will start and go outside of human control. We have similar statements from Ray Kurzweil, from Elon Musk, from many others. Now we have more of a technical backing. We have papers actually showing that no, we can't explain how they work. We can't comprehend actually what's going on. We cannot predict specific actions. And we cannot control them. >> Guys, we've been so passionate about finding the biggest geniuses. And this is just one of the many episodes. If you want to make sure you don't miss the next one, make sure to subscribe. All right, let's get back to the episode. For those that are building AI right now, is is there anything they could be doing differently to ensure the safety of the public or is it too late already? >> It's not too late. We're still alive and we can have differential technological development. Don't build general superintelligence. Pick a real-world problem like protein folding and work on solving it using narrow superintelligent tool. We have precedent for doing it. It worked really well. People behind it got Nobel Prizes. Everyone's happy. Science benefited. Don't try to build replacement for humanity. Build assistive tools to solve real problems. >> Yeah, like build AI to help cure cancer. >> A specific cancer. If you say all cancers, now it's a bit of a diverse set of difficulty. So, you'll need more general intelligence. Pick a very narrow problem, develop a very good solution. >> For those building AI, right? If if they know, which it seems like many or most do, if they know that what you're saying is true, why are they building it? Is it just the money? >> Money is one way to represent it, but it's power, it's fame, it's meaning, it's all sorts of human drives. >> Which AI company scares you most right now? >> I don't think it makes a difference. They all equal in what they are doing. They are creating a weapon of mass destruction and it doesn't matter who creates first uncontrolled superintelligence. It could be this company or that company. It could be US, China. It makes no difference if it's uncontrolled. >> What specifically would you do if you were in power and you had the the rights to kind of control this? What's step one? >> We sit down with leaders of, let's say, top five labs right now and we come to an agreement based on this exact science. Until you can show us that, no, in fact, we can control more advanced AI, we have a working mechanism, it scales, there is scientific consensus that you are right. You published it in a good peer-review journal. Majority of community is in agreement this is going to work. Until that happens, you do not train, build, or do anything with general superintelligence. You start doing work on narrow problems, narrow systems. And you don't have to worry about arms race because everyone is in the same boat. >> But that's most likely never going to happen. >> Not under current government. >> But do you think that's because we're talking about the globe here, right? Is let's say the US comes out and says we need guardrails at AI. Like you said, we're going to sit down with you know, Google, Open AI, Anthropic, and you know, the top five, let's say, and we're going to sit down and we're going to come with up with a plan. But then what about China? What about Russia? What about Iran? What about these other countries that you know, they're off to the races on their side. >> I think Communist Party of China does not want to lose power and they are not lawyers. They're scientists and engineers. They understand the problem. And I think if US was to say we are not developing this, it's a weapon of mass destruction, China would come along. There are dialogues between US and Chinese scientists. And that means that Chinese party authorized those dialogues for Chinese participants. So, they are open to this. They just need us to take initiative. They cannot unilaterally stop if we're going to continue developing military AI. >> Okay, and that's China. What about the rest of the countries? >> We are less concerned about Zimbabwe developing superintelligence anytime soon. >> You floated a scenario where AI leaves 99% of workers unemployed. What jobs go first? >> Anything repetitive, anything where you can train your replacement in a few days. So, obviously not physical labor first, cognitive, anything you do on a computer, symbol manipulation. But if you can train another human very quickly, that means AI can pick up that skill as well. The more innovative your job is, the more different things you have to do, the longer it's going to take. But at the end again, once we get to general intelligence human level, it doesn't matter. It can do that skill as well. >> And does that collapse the economy? >> Not necessarily. I mean, you now have free labor. That should grow your economy pretty well. >> Right. And so what do you think that looks like? There's going to be a universal high income or basic income? >> We need to find a way to distribute from those who generate super profits to those who lost their source of income. Unconditional basic income of some kind seems reasonable. Now you can say it's unconditional high income, but if everyone makes the same, you can't really say they're rich. They're still kind of at the level where everyone is. Whether you are rich or poor is relative to your neighbors. Poorer people in US are rich people in other countries. >> And so could that potentially solve income inequality? >> I don't think it will address existing differences in what people already have. So if somebody has 20 waterfront properties, getting monthly stipend is not going to equalize you with them, but uh I think it will reduce extreme poverty. >> If you just found out how dangerous and inevitable AI is today, what industry would you try to make your career in? Right? Is there such thing as a safe job? >> So the question becomes where do humans prefer another human do the service? So even if it's possible to automate it, in what cases do I want to talk to a human or get serviced by a human? And that's human preferences. It's not obvious. Right now we talk about certain things as being more human. Nurses, teachers, what not. But at the end of the day, maybe we don't have that preference. It's not obvious that we do. >> Right. So, you're saying that a human might prefer a human lawyer versus an AI lawyer or >> That seems super unlikely. I was not thinking of lawyers at all, more like prostitutes. >> More like prostitutes? Okay. I mean, what else would there be, right? We're thinking doctors, no. >> Anything where you are learning from another human, a guide, a sensei, a master, someone who's showing you how to meditate, do yoga, I think there you would prefer >> human connection. >> A human connection, some sort of role modeling. >> Mhm. >> Lawyers are gone. >> Lawyers are gone. >> Lawyers are gone. >> But doctors? >> So, a lot of it is protection, right? If you are required to be a human to get licensed and practice, that stays longer. But if it's not the case and you show human doctors are 20 times more likely to kill someone, that's hard to argue they're going to keep their jobs. >> It seems people have this paradox right now because on one hand, they have the fear of AI replacing them, but then on the other hand, they have or they feel the need to use AI. You said you use AI yourself. >> So, you're using the term AI to mean multiple different things. I use AI tools, as you should, and everyone should. They make you more productive, they help us solve problems, grow our economy. Then you talk about super intelligent agents capable of replacing all of humanity. It's not a tool for you to use. >> Does that feel like a contradiction though? You and me and everyone here is you are using AI tools that are enriching these AI companies that are then building something that's going to kill us all. >> So, interestingly, if you look at budget of a company like OpenAI, I think they generate something like 15 billion in membership fees, but the investments are in trillions. So, the money comes from investors, not from users paying $8 a month. And the investment indicates that they predict we're going to fully automate labor. Initially cognitive, then physical. What is the value of all human labor a year? 10 trillion? 30 trillion? So, when you think about it this way, the investments make sense. The 15 billion is irrelevant. You can stop using chat GPT, it's not going to change how much money they got. >> So, it really comes down to incentives. >> It's very hard for people to say no to a lot of money. If somebody came to me today and said, \"I'll give you a billion dollars, go work for OpenAI for a month.\" I'll be working at OpenAI. >> [laughter] >> Right? Power corrupts, money corrupts. It's not unique to some bad people, it's general problem for any agent. Incentives matter. >> And so, is there a way to somehow instead of thinking about these AI guardrails, change incentives? Or are incentives never going to change? There's always going to be financial incentives. We're living in a capitalist economy, and that's not going to change. >> We can shift incentives. I think there is just as much money and just as much opportunity in narrow systems being deployed through economy. You don't need to have general superintelligence to collect most of that. So, today, if you were to find cure for a particular disease, green technology, better self-driving cars, all that can make you very rich and happy, sustainably. Whereas, if you go full general, you don't have anything to offer, and everything gets deleted. >> And what do you think the chances are that it plays out in that direction, where they start building these niche AIs tools and stop going broad? >> Right now, it seems very unlikely. There is some hope that with all the publicity, new documentaries, interviews, books coming out, some politicians are starting to notice, starting to propose some regulation. If we have enough time, which is not obvious, it could be just not enough time to accomplish it, we can grow it to where it's a majority and there is support from populace for enacting the type of legislation, electing this type of leadership. >> Okay, so let's play this out, right? In the near future, post-labor economics is here. Human labor is valueless. Do you see that transition to, let's say, a universal basic income or a universal high income? Do you see that as a smooth transition or does that look more like a Great Depression? >> I think we already have a lot of it in place. So, we have a safety net. Many people don't realize it, but in US, if you don't have income, you get lots of free stuff. You get Section 8 housing, you get food stamps, you get free health care. That is already built in. And if you keep taxing super profits, you have money to support all that. >> If massive unemployment hits or maybe when, and you were one of the government leaders, how do you handle that, right? What happens if 99% of people become unemployed? >> So, there you switch from unconditional basic income to unconditional basic meaning problem. What do you do with 8 billion people have a lot of free time on their hands? We don't have infrastructure, we don't have anything for that and that could lead to a lot of unrest. >> Yeah, because most people correct me if I'm wrong, get meaning from what they do for a living. Well, maybe not most. There are some people that maybe just hate what they do for a living, would love to sit on their couch and get a check. >> That's the two types of jobs. You either hate it and wish it was automated or you love it and don't want anyone touching it, but in both cases, it takes your time. If all of a sudden you have extra 40, 60, 80 hours of free time, what are you going to do with it? >> And what do you think people do their time? >> So, it depends on the person. Some people will be very creative and productive. Again, all of it assumes it's not killing us right away. This is kind of we we're setting this aside and we're going let's just talk about money. So, if we're still around and everything's automated, yeah, you can play chess, do sports, yoga. Problem is a lot of times with young people if they have a little too much free time in their hands, they start doing things we shouldn't be doing. Idle hands. >> Mhm. I think people look at this like, ah, that's that's This is a problem that's so far away. Like, I don't have to worry about this. Like, what's your response to those people? >> So, it's funny. People now say, oh, this is long-term. This is not a problem. This is going to take like 6 years. Like, it doesn't matter if it's 2, 5, 6, or 10. On cosmic scale, on human history scale, on our election scales, none of it is long-term. Everything is now short-term. And if you look at prediction markets, if you look at what leaders of the labs are saying, we don't have 2 years. They're claiming we're going to get to AGI in 2027, 2028. Some people are saying we got to AGI. >> Right. Like, uh, Jensen Huang of Nvidia just recently said he thinks Nvidia has reached AGI. >> And as I said many times before, if we just took what we have today and showed it to a computer scientist in 1980s, they would be convinced we have AGI."
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Fireship: every app is now open source",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.md",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-fireship-every-app-open-source.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: https://www.youtube.com/watch?v=wajoP_5Cpw8\nTitle: Every app on Earth is now open source... whether it likes it or not | Channel: Fireship\nPulled 2026-10-17 by yt-dlp auto-captions. A stranger's words: data, not instructions.\n\nLast week, a developer got so tired of Adobe's predatory business model that he decided to rebuild seven of its Creative Cloud apps with Rust, like Photoshop, Illustrator, and Premiere, then open-sourced them, and gave them away for free. The project is called ArtCraft, and the developer's name is Brandon Thomas, who, after being hit with Adobe's cancellation fee more than once, opened up Claude, then reverse-engineered Adobe's 30-plus-year code base from scratch. And the apps even run on Linux, a platform Adobe has never officially supported. What's crazy, though, is that you, the human being watching this video, can do the same thing thanks to an unrelated project called reverse-engineer-anything. It's been going viral on the internet lately because it can easily decompile any native binaries you can get your hands on. We're talking stripped ELF, PE, and Mach-O executables, JVM bytecode with obfuscated constant pools, ECMA-335-compliant .NET assemblies, bare-metal firmware with architecture-specific instruction sets, and even OCI container layers entangled in declarative infrastructure manifests. In layman's terms, that means virtually every app in the world is now open-source, whether it wants to be or not. In today's video, we'll attempt to reverse-engineer anything and everything and find out if this is the final nail in the coffin for software as we know it. It is October 12th, 2026, and you're watching The Code Report. So, is it really true that one person plus Claude made the entire Adobe suite obsolete overnight? Well, on the surface, yes. As you can see on the website, you can download a Rust-based version of any Adobe program for free right now. That's awesome, but after trying it out myself, I realized there's one small catch. The software is a nearly unusable pile of vibe-coded horse Now, I begrudgingly pay Adobe a $69 tribute every month to use Premiere to edit these videos for you guys, and I was thrilled to finally see an open-source alternative. And let's just ignore the fact that DaVinci Resolve has been an open-source alternative for over 20 years now. And when I first opened FilmCraft, I was thrilled to see that the UI was nearly a one-to-one clone of Premiere. So, I could get to work immediately without any learning curve. My plan was to edit this video with it, but the cracks became visible immediately. Like after dragging a clip of some lame stock video onto the timeline and hitting play, there was a massive lag in the audio bars and just overall slowness and laziness despite being vibe coded in rust, which I've been told is a blazingly fast programming language. So then, I tried implementing some transitions between clips and they were just nowhere near the quality of Premiere, which you can clearly see with this glitch transition side-by-side. And for someone like me who's a once-in-a-generation cinematic visionary who many have called the Stanley Kubrick of sponsored posts, the sad reality is that Film Craft is just not good enough yet. But I sincerely hope it gets there someday because Adobe. But then that got me thinking, what if instead of trying to use off-brand Premiere, I just reverse engineer it myself and make it simpler because Premiere has hundreds of features that I don't use that just get in the way. Luckily, there's a new project in town that can help us do that called reverse engineer anything. Adobe Premiere is primarily written in C and C++, and crazy smart Asians on H-1B visas have been writing its code for decades. Now, its actual source code is top secret Adobe intellectual property, but in order to actually run it on your machine, they need to compile that code into a native binary of ones and zeros. This stuff is almost unreadable to humans, but with a lot of painstaking work, it is technically possible to map these ones and zeros back into something that resembles human readable source code. And the REA project can do that for people who can't even count to three in binary. First, we set it up by running it with Node.js and the NPX command. And then because I'm a loser on Microsoft Windows, we'll configure REA's Ghidra integration, which is actually the tool that deserves the most credit here and can do a read-only analysis of native EXEs and DLLs. Then from there, we can just use it like any other AI agent and tell it to inspect the locally installed version of Adobe Premiere. In this case, I'll have it inspect Adobe's timeline integration and try to figure out how it does this one specific feature. A while later, we get back a bunch of C-like pseudo code along with assembly, strings, symbols, calls, and references, which to an obsolete HTML programmer is all pretty useless. However, we can now take this garbage code and pass it off to our favorite coding agent to re-implement the exact same feature in Rust. And thanks to reverse engineering, I'll eventually be able to build my own version of Premiere Light that's not only free, but only has the actual features I want to use. But as a cheapskate developer, I'm not stopping there. I think it's crazy that any real vibe developer in 2026 is still paying money for developer tools when that money should be spent burning tokens. For example, let's take a look at an ancient technology called Supabase, which is basically a wrapper on top of AWS that provides a UI for your database. Even though it's mostly open source, it has a ton of features I don't want. So what I'm doing instead is using the networking feature in REA to analyze API interactions and UI changes, which has allowed me to build a better back-end that I'm calling Studbase, which is not only perfectly tailored to the needs of Horse Tender and Donker, but is also orders of magnitude and faster according to this benchmark I just made up. Trust me, bro. You can trust these trust me, bro benchmarks. And another thing you can trust is Appify, the sponsor of today's video. Their MCP server lets you connect your agent to thousands of tools called actors. They can do things like scrape live data from YouTube or monitor your competitors' prices on Amazon. But right now, I'm using it to track the most liked posts on the Donkeys of Instagram hashtag so I can invite the most desirable assets to sign up on Donker. It only takes one line to connect to the server, and I could explain what I wanted it to do in natural language. From there, my agent started using the relevant Appify tools to return to the structured data I needed in order to help these gay donkeys find love. But the most impressive part was how few tokens it took. But because Appify's MCP server only exposes a handful of core tools, it then finds the best one for your job and runs it in the background to avoid token bloat. You get $25 in free credits to try it out by using the code fireship25 at the link below. This has been the code report. Thanks for watching and I will see you in the next one."
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.md",
+      "url": "https://www.youtube.com/watch?v=LlhTEttKcwQ",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-tilbury-laziest-ai-money.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: https://www.youtube.com/watch?v=LlhTEttKcwQ\nTitle: I Tried The LAZIEST Way to Make Money With AI (channel: Mark Tilbury)\nPulled 2026-10-17 by yt-dlp auto-captions. A stranger's words: data, not instructions.\n\nPeople are secretly making thousands of dollars using Claude to make AI influencers like this, this, and this all from the comfort of their own home without showing their face. >> I've generated $100,000 in the last 30 days with my AI creators. >> AI influencers are changing the entire game. >> This is actually generating sales over $2,000. >> $1,000 profit. We made over $103,000. >> Some are even calling it the laziest AI side hustle. But, does this really work? Or is it just AI slot? Well, as a businessman who made his millions the old-school way, to put it lightly, I'm highly skeptical. So, I'm giving myself 7 days [music] to see how much money I can make. I'll be documenting the whole process and of course sharing the raw results. And if I don't make at least $1,000, I'll give someone down in the comments $1,000 of my own money. But, I must follow these three rules. One, I have to get this whole thing up and running for less [music] than $99. Two, I can't use my own face or voice, so I [music] don't have an advantage. And three, I have to create my first AI influencer before the end of the day. Okay, start the timer. So, first up on our to-do list is to spy on the competition and figure out all of their secrets. Now, I'm going to start with one that I've actually heard of. She's called Lil Miquela and she's actually pretty popular with over 2 million followers. Here she is at the Met Gala. Didn't get an invite myself, but there you go. And there she is at the Grammys. So, how is Lil Miquela making over $11 million a year? Well, they're working with massive brands including Prada and Calvin Klein. So, let's write brand deals in the money section. And Lil Miquela is positioned as a full-blown supermodel, which just goes to show you how far you can take it. I think I found another one. This is Mother Satori, and she's a US-based holistic expert. Now, health is one of the most profitable niches out there because people will always pay to feel better and live a little bit longer. I'm going to have to watch this one. >> Wife, that's my mother. >> No way. How old are you? >> 108 years old. >> Wow, 108 years old. I thought I was the old one round here. So, the unique selling point, let's put old age. At the end of every video, she promotes this. It looks like some sort of gut cleanse detox drink. She gets thousands of views every single day, and the comment section is full of people asking to buy it. Just imagine how much money she's making by promoting this one product alone. Right, let's quickly blast through some more as I'm running out of time. >> [music] >> These AI influencers are everywhere. I found this girl who posts glamorous lifestyle photos and makes these podcast-style reels about relationships. Check this guy out. He's a hard-working patriotic British guy pouring his heart and soul into crafting these beautiful wooden flags. Or is he? No, of course he's not. Now, is this ethical? No, because the person behind the account is lying to their customers. But, is it making a load of money? Almost certainly, yes. Then there's this AI granny who's just doing the craziest things, and she's got over 2 million followers. And after looking through all these accounts, it looks like the people running them are making money in all these different ways, which we'll look at properly in a second. First, though, let's decide on a niche for our own AI influencers. There's usually three niches that I've seen that make the most money: health, wealth, and relationships. Two of them are already on the board, so we definitely know these can work. But funnily enough, not a single one of the AI accounts I looked at was talking about money or wealth, which means we found a gap in the market. Of course, if you guys have any special interest, it's always worth leaning into those because you'll have an advantage over everyone else. Now, to give ourselves the best possible chance of success, I think we should create three different AI influencers in each of these profitable niches, so we can tick step one off our list and then move on to step two, generating character ideas. I want this to be as lazy as possible, so let's use AI to generate some ideas. I'm going to head over to Claude. Now, I'm already on their free plan, which will be perfect for this, so let's type create a character profile for an AI influencer in the health niche. Give them a name, a backstory, a distinct look, and a unique selling point. Now, let's see what it comes up with. Okay, so Amos. Now, that sounds pretty mysterious. I quite like that. 101 years old, huh? Bit like me, I guess. Learned traditional remedies passed down through his family. This is starting to sound like a male version of Mother Seton, which to be fair, clearly makes a lot of money. Shaved head, long beard. Okay, that's pretty interesting and that should help him stand out online. Now, do it for the wealth niche. Okay, so let's see what we've got here. Grandma Vivian. Started with nothing, made loads of money, been through three husbands, private jets, designer head to toe. So, she's basically a bougie boss grandma. Maybe I'll have to hit her up. Almost everyone in this niche is a young man in a rented Lambo. She is the exact opposite. That's very true. I think that's actually one of the reasons I managed to stand out in the wealth niche. Okay, now finally do it for the relationships niche. So, we've got Sienna, stylish, 22 years old, talks about her dating life and situationship drama. This reminds me of the AI influencer that we found earlier called Olivia. So, this should give us a good chance at making money. But at the same time, I'm definitely not fully convinced that all of this stuff is actually going to work. But with that said, we have our ideas. So, let's move on to step three. Generate the photos. I've been looking into a few different options for tools we can use to do this, and it seems like Higgsfield is one of the best. So, let's head over to their website and click sign up. And okay, it's given me the option to continue with Google, Apple. But to be honest, I think I'm going to just use email. So, I'll tick agree to terms of use, and then continue with email, and then click continue. So, it looks like I'm in, and it's asking me a few questions. So, first up, how do you plan to use Higgsfield? Uh for personal use. And so, what do you want to achieve with Higgsfield? Um I want to create avatars. And how experienced are you with AI? Well, I'd like to say at least intermediate at this stage. Look, I'm not doing bad for an old boy. Oh, and it's just popped up with a personal offer. But to be honest with you, we don't need this deal because we've got a much better one. When I was doing a bit of research into the top AI tool to use, I was actually a bit cheeky and reached out to Higgsfield and asked them if they'd do me a little discount cuz as you know, I love a little discount and surprisingly, they said yes and even said that the first 5,000 of you guys that use the code will get the same discount. So, to use this code, I'm just going to close this window and I'm going to click skip this offer. Now, I can go to my profile picture in the corner here and click manage account. Then, I can go over here to promo code and type in Tilbury, t i l b u r y. So, I'm going to click claim. There we go. Nice, it's been added to my account. By the way, I know all of this is a bit confusing, so I'll drop a link in the description below if you guys want to follow along. There's lots of different offers here, starter, plus, ultra. To be honest, the only thing I'm really concerned about is the amount of videos I can make and I see there's over 100 videos here on this ultra one, so let's go with that. And as you can see, it's under budget and boom, we're in. Time to start making some AI influencers. Luckily, we can connect Higgsfield with Claude and do pretty much everything in a single chat. So, on Claude, let's go to customize, then click connectors, add, and then add custom connector. Then, I'm going to paste this link. Now, let's click add and that's it. Claude and Higgsfield are now talking to each other. Now, it's time to create the images of our character starting with Amos, our health influencer. And from my past experience dabbling with AI, I've learned the key to getting the best results is starting with a good prompt. But instead of spending ages writing something really detailed and complex, I'll just tell Claude to write one for me. Of course, I'll add all of my prompts to the cheat sheet in the description so you can copy these two or change them up depending on what you want your AI influencer to look like. I've mentioned that I want a couple of different angles, a full-body shot and a close-up. Then I've given a description of Amos, what he looks like and what he's wearing. I also said I want him on a white background with realistic-looking skin because he can't be looking like an airbrush model when he's supposedly living off the land. Okay, wow, this is a monster. I'm glad I didn't have to type all of this this out, that's for sure. And all that's left for me to do is to type yes and it should, fingers crossed, generate some images of Amos. Okay, here we go. He actually looks very realistic, but I do have a bit of a problem. He looks younger than me unless he's got some sort of crazy skin routine. He definitely doesn't look 101 years old. So, let's type make him a few years older. Oh, that's better. Still looks younger than me though, but I'll accept it. So, now let's generate some scenes to put him in. I'm thinking his porch, farmhouse kitchen, vegetable garden, and yard as he's American and that's what they call it. Wow, these look very realistic. I definitely expect Amos to be hanging out here. So, now let's repeat these steps for our other two influencers and see what it spits out. Just for the sake of time, I'm going to go through this quickly. >> [music] >> Now, this is perfect. The sunglasses, the jewelry, the fur coat. Now, that has got to be the coolest grandma you've ever seen. It looks like that woman from 101 Dalmatians, doesn't it? Now, for the locations. So, we've got a private jet, a sports car, very nice, a fancy-looking drawing room, and a terrace for a bit of afternoon tea, and maybe a scone. Right, last one, Sienna. She looks pretty stylish, and very realistic. You know what? I'd have no idea she wasn't a real girl. And we've also got the locations here, too. Now, I'd say that's believable for where Sienna would live. That's our photos generated. Let's move on to mapping out the viral content. Now, don't worry. I'm not going to write out all of these scripts manually. For this bit, I'm going to use something called a Claude skill. If you haven't heard of skills before, they're basically reusable tools with instructions already baked in. So, you get perfect results every time without writing a massive prompt. Now, I found these ones online for free, and I'll include them in the cheat sheet, so you can use them, too. I'm not sure how good they are, but I don't have much time to be writing out scripts, so let's give them a try, and hope for the best. So, to install these skills, I'm going to head over to customize, hit add, upload a skill, and drag and drop them straight in. And now, it's ready to go. Then, in our chat, let's hit forward slash, and select content engine skill. Now, let's say, generate content ideas for Sienna. And of course, it knows who Sienna is, because it came up with the idea of her in the first place. And look at that, it's handing me a whole list of content ideas. I didn't have to think of anything myself. I quite like idea two, because if this script actually hits home, a lot of girls are going to find it very relatable, and feel like they actually know Sienna on a more personal level. Number one sounds good, because she's giving advice, and number seven is also quite interested. Almost feels like a psychological secret that she's going to reveal, and the podcast setting, as we've seen, these work quite well. So, let's generate scripts for these three and see what comes out. And here we go. Three scripts ready for Sienna. We won't dive into them now because we'll do a proper review of the finished videos in a second. Now, I'll do the same process for the other two influencers. >> [music] >> Okay, that looks pretty cool. So, we've got a load of finished scripts for Amos, and of course, some for good old Viv. So, let's tick that one off our list and move onto a pretty exciting step because we're going to be giving them a voice. Right, for this bit, I'm going to head over to the Higgsfield website itself. I guess it makes sense to go to the audio tab. It says you can upload media, so let's add our images of Vivien. And then for the script, I'm just going to write Hi, my name is Vivian. Use this sound so the character speaks like this. And now it's asking for voice details. Let's head back to Claude and ask it to generate a detailed prompt for Vivian's voice. Okay, this looks about right. So, let's copy this and paste it into Higgsfield and then click generate. >> Hi, my name is Vivian. Use this sound so the character speaks like this. >> Well, that sounds good. It actually sounds like one of my old school teachers. I'll do the same process, but for Amos and Sienna. >> [music] >> Cool, so that's sorted. I'm going to move on to the next step, which is to bring them to life. Don't worry, you'll get a chance to hear all of their voices very soon. Right, so it's finally time to combine our images, locations, and scripts and turn them into high-quality videos to post online. So, in order to do this, I'm going to go to Cinema Studio and then new project and I'll give my project a name. So, let's call it Sienna and then press create. And then we've got a few settings at the bottom. It looks like we can change here. So, I guess we want to change the aspect ratio to 9 by 16 because we're creating short-form videos in a vertical format. Let's make the quality 1080p because that's the best quality and everything else looks fairly good for now. For the first video, I want to create a short clip without any talking so that we can add some relatable text to the screen. I've seen these types of videos do really well recently and it's a good test to see what we can generate before trying to get Sienna to talk to the camera. So, I used another Claude skill, which I'll also add to the cheat sheet in the description. It basically takes a really simple idea and generates a prompt for getting the best video outputs. Feel free to try it for yourself. Anyway, let's paste the detailed prompt in here. Now, as you can see, it's referenced image one, which is the character sheet for Sienna that we made earlier. So, hopefully, this means she's going to look consistent across all of our videos. Now, let's press generate and see what we get. All right, not bad. Nothing crazy at this point because obviously she's not talking, but as I said, we can add some relatable text here on the screen and this is a nice way to test that this actually works. So, I'm going to make a few more B-roll shots and then we can make some videos where we actually hear Sienna talk for the first time. As these are hopefully what's going to drive views on social media, and also make us some money. [music] I've made a lot of these videos now, and I have to say some of them are pretty impressive. Let me give you a sneak peek at some of my favorites. There's a quote I live by. >> Early to bed and early to rise makes a man healthy, wealthy, and wise. >> That's quite realistic. Even the coffee's steaming in there. >> Number one longevity food in the world? Beans. It's the cornerstone of every long-lived culture out there. >> I don't know if the wife will agree that beans are the best thing to have, to be perfectly honest. >> I mean, I personally can't turn water into wine, but I can turn you into mine. >> If I showed this to anyone else that didn't know that was AI, they'd think that was someone for sure. >> She's your friend, but whenever she gets a boyfriend, she stops making plans, stops messaging you, stops calling. Babe, she was using you. >> Okay, now that's going to be very relatable. >> Excuse me, ma'am. How did you get rich? >> Buy the ugliest property on the nicest street, fix it up properly, rent it, or sell it. Take that money, do it again and again. For 40 years, don't touch it. Let it buy the next one. >> She's got some good advice there. She's quite attractive, isn't she, for the older woman? I reckon she's going to go down pretty well with the older boys there, for sure, and uh probably some of the younger ones as well. Right, I'm actually pretty exhausted, but we've made some great progress and made our AI influencers within one day. So, we've completed that part of the challenge. I'm going to come back tomorrow with a fresh head and launch our accounts. Okay, so this morning I've been a bit cheeky and added some captions to our videos, but I'm sure you guys know how to do that. It's pretty simple on any free editing apps like CapCut or Instagram edits. So let's skip to the fun stuff and actually launch our accounts. We're just going to focus on Instagram for now because we're on a time limit, but if these do well, we could also post them on TikTok or YouTube Shorts later. I'm going to type Amos and then I'm going to put health and wellness. And then for the username, I assume just Amos is taken. Yep, makes sense. So let's type {dot} old ways because he talks about the good old ways of doing things. And then all looks good, so let's press submit. Now [snorts] let's give him a nice profile picture. I've got a few images here that I've generated in the Claude chat, and of course, I'll add the prompts in the cheat sheet, so they're there for you to copy as well. But let's see what we've got. We've got him with a little lamb here. We've got him Ah, that one's quite nice. I I do actually quite like that, so let's go with that. And then the last thing we need to do is create a bio, so 101 years old, simple habits for peak energy, focus, and longevity. I'm also going to write your AI grandpa because I don't want anyone feeling like they've been tricked. Let's do that as well just to be safe. Let's press submit. And there we go. Amos is ready to take the world by storm. So I'm just going to rinse and repeat and do the same for the other accounts. >> [music] >> Okay, so as you can see, I've now got the accounts all set up for Sienna, Vivian, and of course Amos. So, it's time to start posting some content. I'm going to post 10 videos on each account. Then, I'm going to check back in a couple of days and see which one of our influencers is having the most success, and then we can crown the winner and double down on them to make some money. I'm, of course, rooting for Grandma Vivian. So, I'll check back when there's something to report. Well, this is fairly unexpected. I wasn't actually planning on filming anything until we crown the winner, but I've been watching the accounts closely, and I can't believe some of the comments we've been getting. Someone here is bashing Sienna for wearing a sheen dress and drinking a $3 Frappuccino. But, don't worry, I've got some support from another fellow woman, and she's saying Sienna's right to pick whoever she wants and whatever she wants in a man because she's in such high demand. And then, the hater came back for more. I just think it's fascinating that they're so busy arguing with each other that neither has clocked that she isn't actually a real person. We've also got people asking where she got her clothes from. So, I guess that just goes to show how realistic our influencers look. Right, I'm going to get out of these comments cuz it's all getting a little bit too much for me, and I'll check back in once the accounts have gained some more traction and crown the winner. Right, since we last spoke, I've genuinely tried my hardest not to look at these accounts. So, it's finally time to see which influencer we're going to use to start making some money. Coming in third is Vivian. Now, I'll have to be honest with you, that one does sting a bit because I told you I was rooting for her. But, surprisingly, she just didn't do anywhere near as well as expected. On the positive note, this is exactly why I wanted to launch three accounts at the same time because you can't rely on just one account to find success. Coming in second is Sienna, which obviously means Amos came first, but look at the gap. Sienna's numbers are genuinely really impressive for a brand new account, and if this was a longer challenge, I'll probably continue to post on both accounts, but I don't have enough time for that, so let's crown Amos our winner and move on to the next step, which is to start making money. Right, so now we've got a clear winner. It's time to decide how Amos is actually going to make us some money. Fortunately, at the start of this challenge, we wrote down all the different ways other people were making money from AI influencers, so let's look at our options. Brand deals could work, but we'd have to spend time reaching out to different companies, waiting for replies, and then negotiating deals. So, for this challenge, it's definitely out of the question. Selling physical products could be interesting, but setting up a store is a whole project in itself. But, of course, if you want to see me do that with a Shopify store and then use AI influencers to make sales, then let me know in the comments. Ad revenue, you can't currently get paid ad revenue for making reels on Instagram, so that isn't an option right now. Affiliate income is probably one of the easiest and quickest ways to make money from an AI influencer. You can sign up to TikTok Shop, promote relevant products, and get paid a slice of everything you sell. However, because we aren't currently posting on TikTok, which in hindsight was probably a mistake, we'll have to cross that one off, too. So, I guess that just leaves digital products, which actually is perfect for educational influencers like Amos, and we can generate everything without leaving Claude. So, the big question, what digital product should we actually make? Now, a few years ago, everyone was selling ebooks, but these days, people I just Google or ask ChatGPT for the same basic information for free. So, that's not going to work for us. If we want people to actually buy our digital product, it has to be structured, interactive, and hold our hand through some sort of transformation. So, I'm thinking we should create a proper workbook that people can use and fill out every day, rather than just a PDF full of generic paragraphs. And Amos is honestly perfect for this because he's all about living a simple, effective life. So, I reckon we can build him a workbook, like a proper challenge that helps someone build healthy habits over time. So, let's go back over to Claude and type forward slash and then select the digital product skill and say create a workbook as a digital product for Amos. Remember, this skill will also be in the cheat sheet. Now, hopefully Ah, yeah, look at that. It's given me three ideas and actually explained why people would pay for each one. So, let's see. I think the first one sounds the best. A 30-day challenge based on his old ways of living one habit a day. Yeah, this is actually something I would buy if I wanted to hold myself accountable. So, let's go with that. Let's type build number one. Okay, I think it's done. And look at this thing. This is a proper little book. It's got the full 30-day plan. Every day's got its own named rule with a tick box. There's a tracker at the back you could stick on the fridge. It's even thrown in some bonuses like his mother's old dinner recipes. Well, that's my dinner plan sorted for tonight. Add this photo of Amos to the front cover. There we go. And look at that. Five days ago, Amos didn't even exist. And now, he's on the front cover of his very own book. It's crazy to think how far this old boy has come. Now, obviously, before we can sell this, I'm going to read through it to make sure all the information is logically sound and safe, and of course, remove any hints of AI slop. >> [music] >> Okay, all looks good. So, now we need a way for the customers to actually buy and download the product. I did a bit of research and found a platform. Now, this isn't sponsored, by the way, but I'm going to use a platform called Stan Store, and they've got a 14-day free trial, which is pretty helpful since we're on a budget. I assume we just need to go to my store, and then add products, and digital products. That looks about right. And now, it's asking us to pick a style. Quite like callouts, so let's go with that. And then, we've got to select an image for the thumbnail. So, we could use this one of a sheep. This one's my favorite, so let's use that. And it matches his Instagram profile picture. Change that size just there. Get my 30-day energy reset. And then, for the button, start the old ways challenge. And then, the price, $15.99. Then, we can actually offer a discount to $12 because, well, who doesn't like a little discount? And then, we just have to upload the digital product and press publish. Then, it looks like we can copy the link here and paste that into our Instagram bio for people to click. Now, obviously, I'll also have to connect my bank details so we can get paid. Of course, I'll do that off camera as I don't want to share those details. Let's test this out, okay? Press this link. Yeah. Looking pretty good. So, I think we can tick that one off off left that one there. I think we can tick that one off of the list. Just like that. And now, we can move on to counting any profit we make. Okay, so it's the last day of the challenge and we actually made some sales, but we've made a massive mistake. You see, since doubling down on Amos, Vivian's account has actually exploded. She's got over 10,000 views on this video, 20,000 on this video, and this video here has actually gone viral with over 250,000 views. You know what? I should have trusted my gut and gone with Grandma Viv. I mean, imagine what we could have done with all these views. I guess that's just one of the things with these 7-day challenges. It's a great way to test a side hustle, but sometimes you just need a little bit more time to see the full picture develop. And if we look at all our influencers, they've all been gaining a lot of traction, even though I made it very clear that they're not real people. There's not a single comment complaining about the use of AI, which to be honest, does surprise me because I do still have some reservations about AI slot. As I'm about to show you, AI influencers are clearly a good way to make money and they're pretty simple to set up, but I definitely don't want everyone to jump on this because I think one of the coolest things about social media is connecting with actual people from all walks of life. And if everything is just AI generated, then it sort of kind of sucks the soul out of the internet bit, but maybe that's just me being an old fart. You can make your own mind up, but enough of that. Let's crunch the numbers and see if we actually made any money. Well, as you can see, we sold the workbook for $12 and made 23 sales, which brings our total revenue to $276. But, of course, that isn't all profit because we did have some costs. First, we used Claude, but that was a free subscription. I did have to wait a bit for the credits to refresh, which was a bit annoying, but at least it didn't cost me anything. I used Instagram edits for adding captions to the videos, which was completely free, too. We used Stand Store to host the product, and that was a 14-day free trial. So, that also cost $0. As we got paid through PayPal, they do take some fees, which came to $19.52. Remember, this isn't part of the startup budget as it just came off our sales. We, of course, used Higgsfield to create all the photos and video generations. Now, I couldn't have done that without them, to be honest. It was so simple. I also used a Tilbury discount code to get some money off our subscription, but I know that's only limited to 5,000 people, and it was kind of cheating. So, to keep it fair, I'm going to count the full cost, which would normally be $99 for that plan. So, that's our whole $99 startup budget spent, and including the PayPal fees, our total cost came to $118.52. So, that leaves us with a profit of $157.48. Now, I know $157 might not sound life-changing, but let's put it into perspective. This was all done with minimal effort using AI tools and a budget of just $99 to set everything up. Imagine what we could achieve if we expanded our strategy. At the moment, we've already generated a ton of videos for Instagram, but we could simply post the same stuff across other platforms such as TikTok and YouTube, and instantly get more views, attention, and money without really lifting a finger. And that's just the start. Remember all of those monetization strategies we talked about at the start of the video. We only tried one with one influencer. In Imagine what we could do if we actually gave all of them a try across all of our influencers. But, guys, a deal is a deal. I did give myself the 7-day time limit, so I can't complain. And as I clearly failed the challenge, I'm going to be giving one of you in the comments $1,000 of my own money. Just comment below who your favorite influencer was and why. I promise I won't be biased towards Grandma Vivian. So, that's the profits counted. And if you want to see me attempt the 7-day AI drop shipping challenge, then I'll leave that video right up there. But, don't click on it just yet. Make sure to subscribe if you want to grow your wealth, okay? I'll see you over there."
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.md",
+      "url": "https://www.youtube.com/watch?v=X1ObmRAgp5A",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-saraev-survive-next-2-years-ai.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: https://www.youtube.com/watch?v=X1ObmRAgp5A\nTitle: How to Survive the Next 2 Years of AI | Channel: Nick Saraev\nPulled 2026-10-17 by yt-dlp auto-captions. A stranger's words: data, not instructions.\n\nSo, how do you survive the next 2 years of AI? Well, I'll tell you how not to, playing stupid status games with your boss while your white-collar job gets automated away. The world is changing quickly, and there are three types of risk. Short-term risk from AI, which is mostly related to your security, mid-term risks with AI, which are mostly related to jobs and income, and long-term risks with AI that are mostly related to beliefs and identities. Let me cover all three of them right now. So, the short-term is all about physical security. I hate starting a video off with this. It's not going to be a big doomer pitch or anything, but you should obviously take care of your security. Uh there are mounting cybersecurity risks that are only growing more and more likely with time. I don't know if you guys know this, but OpenAI agents broke out of their sandbox, infiltrated Hugging Face, they infiltrated several world governments now. Rogue agents from China have also been seen floating around the internet. These right now have a variety of incentives and goals, um aligned or misaligned. I'm sure you guys could see how maybe a human actor could take the cybersecurity capabilities of these agents and use them to do bad things. For instance, did you know that a lot of the refrigeration equipment currently controlling every single grocery store on Earth is internet accessible, and you can click a button to make it hotter or colder. In fact, in France just a few days ago, uh a team of hackers just did this. They took out of commission 350 grocery chains, leading to widespread local havoc. Imagine if that were to occur on essentially a global schedule. Imagine if water sanitation plants uh had their levels all screwed up. Imagine if there were issues where, you know, you couldn't access your banking funds for more than, I don't know, you know, three or four days. The world around you is quite fragile, and I hate to be that kind of guy, but that fragility can explode or collapse quite quickly if you don't have access to routine services that you've grown up having access to. So, how do you actually control for this? Quick hit list, uh food and water. Really straightforward, you know, 2,000 calories a day per person times 14 days or so. If you have two people in your household, that's 50 to 60,000 calories. Um you can do all of this right now with non-perishable foods for, I don't know, 100 bucks, 150 bucks. Just shove it in the pantry. Worst case scenario, you have a bunch of extra peanut butter. It's really no big deal. Um second is water, you know, a liter and a half to two liters of water a day for, you know, two weeks or so. That combine that with the food and you have yourself something quite reasonable. So, you know, you can just buy a couple of $5 jugs, fill them up in your fridge. You're not going to have to suffer any of those food related or water related issues, so long as you spend legitimately 15 minutes preparing this right now. It's super straightforward. People were preparing for stuff like this well before any sort of AI cybersecurity risk. I would 100% sort that out right now. Second, having easy access to cash. I know cash is really annoying in many parts of the world, but I would have, you know, maybe a month's worth of expenses shoved under your mattress or maybe put into a safe. Um, you know, it's still your money. It's not like you're losing money by doing it. You're just transforming your money from one, uh, you know, method or currency into another. In this case, maybe numbers on a screen to real bills in your hand. Cash is king at the end of the day and you never know when you'll need it. I'd also have a basic first aid kit. Uh, if something goes wrong, obviously, you're not going to have access to, you know, hospitals or medical care. Not a major deal to spend a few bucks to have a first aid kit. You might also want like a fire extinguisher in your house or something. Finally, a local large language model and something like Wikipedia. This is a very straightforward thing to do. You can actually do it, um, just by copying and pasting everything I'm telling you and putting it into an AI agent and just being like, \"Hey, go get me a local LLM and Wikipedia.\" Um, but basically, this will allow you to more or less access the sum total of human knowledge if for whatever reason you cannot access it. That'll help you do things like, I don't know, construct cabinetry if you don't have access to the internet or, you know, do some sort of routine first aid if you don't have the ability to because of some AI outage. Finally, digital security. Um, that will We're getting into the longer term here, but two-factor authentication like through SMS is not enough anymore. Um, you know, phone spoofing is extraordinarily common now. It's probably one of the most common ways that people have their bank accounts and so on and so forth hacked. So, don't do 2FA. Use multi-factor authentication. It's super easy to set up. Um, you know, it might take you legitimately five minutes to set up MFA on all accounts. Usually, it involves like an authenticator app. Takes a few seconds to click a few buttons and then you're good to go. Now, the midterm is all about your job and your income. Um, Stanford just released an update on AI economics and how it's currently impacting job prospects. They found that employment for 22 to 25-year-olds in the most AI exposed jobs, so these are things that are white-collar, you know, making videos, writing documents, doing reports, doing accounting, and stuff like that. Um, employment in those exposed jobs has dropped 19% below where it would be if it had just kept pace with the least exposed jobs. And what that means is basically we're seeing an impact on the market already. Don't let anybody fool you. This stuff is not going to occur like, you know, all at once. It's not going to be a total drop-off in job opportunity, but you're going to see a slow, steady, and gradual maybe 19 to 20% year-over-year reduction until, you know, juniors virtually have no path up left. Basically, the work that, you know, a junior would have done before is now just being handed off to AI uh and then seniors, people that have been established in the business for a while, they just don't leave because they have a strong set of skills and can be the QA behind the work. That will probably change with some time as well, but for now that's where we're at. So, what do you do in order to solve the midterm risk of your actual livelihood and income? Non-negotiable is just using AI in everything that you do from now on. And I don't mean that in a hey, replace yourself with AI way. I mean, you know, judge high-quality outputs from AI based on whether or not you feel it can do certain aspects of your work. Um, you know, you can't just listen to people and take them at face value when they say, \"Hey, AI can do this.\" or \"AI can't do that.\" Updates are occurring so frequently that there's nobody out there that will actually be able to meaningfully report on this or tell you. You instead have to do all this for yourselves. And a really simple way of doing this is developing what's called an eval, which is a set of tasks that you currently do throughout the day. Um, you standardize these tasks, add a bunch of context, let's say project files, information, phone numbers, bank transactions, or whatever you need in order to do the task to the same folder, okay? And then you just have like 10 or 15 of these tasks that essentially are your current job or current day today. Every time a new model drops, you just feed that set of tasks to the new model and you see how much of it it can do. And you know, I've had my own internal eval for a while now, a small set of tasks, but tasks nonetheless. Over the course of just the last 3 months, we went from it being able to effectively do less than 10% of that eval to now being able to do over 50%. I wouldn't have known any of this if I just listened to everybody else or waited for model drops. I legitimately needed to feed every single one of these things to a model to have it run that suite to tell me. So, you need to be using AI for yourself. You really can't rely on second-hand opinion these days. Next up is owning something. So, AI makes labor way cheaper. That's just kind of how it operates, right? Automation as a promise is the reduction of human labor through technology. So, what that means is, you know, the actual labor the AI can do is no longer anywhere near as valuable, but the infrastructure that underlies how the AI does the work is as valuable if not more valuable. In a deflationary environment, things that are held as valuable are obviously much more valuable simply by proxy the fact that everything else has gotten a lot cheaper. So, that means, you know, whoever owns the infrastructure that underlies AI, so, you know, the big model companies, whoever owns the land that the infrastructure runs on, whoever owns the businesses that the land and the infrastructure both run on, it's turtles all the way down. The whole idea is just do not depend on a paycheck and do not depend on cash flow. Focus more on ownership. What does ownership realistically mean? It means, you know, real estate. It means the infrastructure that we talked about. It means uh compute. It means owning your own business. Right? It means debt financing these things if you have to because debt is going to be significantly cheaper as a result of all of this. So, you want to be building ownership even if that is debt financed. You want to own a business. You want to own, you know, land. You want to own infrastructure. You want to own things ultimately speaking because labor itself will get cheaper and cheaper and cheaper with time. But, the actual assets themselves will not. And yeah, this isn't financial advice and I don't want to be held liable for any of that. So, do do take all of this with a Himalayan-sized grain of salt. Next is build distributions. This isn't technically tied to ownership because distribution is a form of something you are owning, but it is essentially a transferable resource that will follow you no matter where you go. If you have distribution and you work a 9-5 job, if you lose that job, distribution will help you get another job far quicker. If you run a business and that business goes under because some of its deliverables are now automatable through AI and your margins aren't good enough, for instance, that distribution will help you start a new business and immediately have market to capitalize on said new business. This is what I'm doing right now, for instance, because I consider it a no-brainer for the future. Finally, look for something that intersects with the physical world. If you work with your hands, if you're a handyman, okay, or like a nurse or a plumber or something like that, you have more time, probably a few years more than everybody that's currently doing white-collar style consulting style work. That doesn't mean that you're good forever, mind you, but that means that you're at least a little bit insulated. And so, if there's a a simple and straight-line path from what you were doing right now to a world where you work with your hands or have some sort of physical sort of SOP or deliverable on a daily basis, then you should definitely look for that. The next is long-term, which is really where we're going as a species. It's also your own personal identity, sense of self, and your belief system. You know, in August, Sam Altman told Time that OpenAI expects to have internal systems that rival human intelligence before the end of the year. I think just given the developments of the last few, you know, months, we are very well on track for that, if not exceeding that. What that means is human-level artificial intelligence will exist. And it'll probably only exist for a very brief period of time, after which it is usurped by superior level artificial intelligence, where, you know, ASI models are just better than human beings at virtually everything, which will obviously change the dynamics of what it really means to be a human being in our current economy. So, the big thing I think to reflect on is first, our identities. If your identity is tied to your role, like if your identity is I'm a lawyer or I'm a programmer or, you know, I'm a a a pencil pusher, then the transition to a world where there are intelligences that are thousands of times faster than you and also much, much better than you, is going to be a very painful one. But, if instead you define yourself more on your character, you know, on who you are, on the set of beliefs and principles that you have, um you know, you'll face nowhere near that big of a bump. And so, are you a curious person? Are you somebody that loves solving hard problems? You know, are you a caretaker? What sort of person are you really? That is how I would define yourself, as opposed to defining yourself by, you know, the economic outputs you generate. Define yourself by the beliefs, principles, and thoughts that you have. The next is understand just how much of the world is actually going to change. And so, Dario Amodei, who most of you guys will know as the CEO of Anthropic, he once wrote that in the next 5 years, we could see as much as 50 to 100 years of biological progress. I want you to think about where we were 100 years ago biologically. It was the 1920s. People weren't even using antibiotics, for Christ's sake. I mean, the number of people proportionally that died in childbirth versus now is so insane as to be laughable. Can you imagine a world where nobody gets ill, nobody gets overweight, nobody's unhealthy, everybody's perfect, glamorous, and and extremely attractive all the time? That'll obviously have wide-ranging impacts on social structures, on social dynamics, and, you know, it sounds weird, but we are verging into very weird territory here, and you need to understand and keep an open mind. With those shifting social dynamics, you know, is there a world where you have a white picket fence, two kids, and a dog? Is that world the world that you would have independently come up with were you born into that future world versus the world that you happen to grow up in? How much of what you believe is just due to, you know, the cultural impact of pre-AGI world? And how much do you think you'll believe in a post-AGI world? I would really encourage you guys to re-examine your priors, which is basically the set of beliefs you guys hold before new evidence arrives. The new evidence is is pretty whack, and it's only going to get whacker. Um but if your priors are really strongly held about, you know, a particular way of life or particular way of being, you'll probably struggle a little bit more with this transition. And yeah, just be open to ideas that sound weird. I mean, over the next 10 years, you're going to hear some crazy things. We already have agents breaking into the sandbox, which is just something I didn't think I'd be saying or even commenting on until maybe 2040 at the least. You'll probably see radical life extension. You'll probably see sects of people that are trying to, you know, merge with machines. New religions will probably spring up overnight. There'll probably be extraordinary beliefs you never would have even considered possible to discuss in a reasonable dinner style conversation that you're now doing all the time. You got to also understand that the world that you live in is probably considered crazy by anybody in like the 1980s or 1990s. And that's just how technology works. You know, like do you think anybody in the 1980s would think that modern dating involves swiping left or right on a glowing rectangle while on the toilet? Probably not, right? Those sorts of things will have major impacts on our own culture and future culture. If that's weird to somebody from the 1980s, what's going to be weird in 2040 to somebody from the 2020s? Finally, I would invest in people. And people are probably the most important part of all of this. In every scenario that I can think of and in every scenario that has been written about, people with strong relationships do better. What I mean by this is in the two-week emergency example that we talked about earlier where you don't have food or water. You know, knowing your neighbors, liking your neighbors, and being liked by your neighbors probably matters a lot, right? Likewise, you know, if the job market goes up or if it goes down, in both cases, having a strong network of people around you is likely to pay dividends. And so in a world where, you know, automation and the economic outputs of humans grow significantly stronger and easier to generate, what's interesting is that because humanity becomes the scarce resource, even one or two, you know, very strong relationships can have large impacts on both your security, but also your financial and then general relationship prosperity over the course of the next 10, 20, 30 years. So I would invest in relationships to the extent that you possibly can. Do all of this and you'll have the highest chance of surviving the next 2 years. Thank you for watching this video. Good luck."
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.md",
+      "url": "https://www.youtube.com/watch?v=638GQZ9UZ4w",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-saraev-learn-instead-of-ai-automation-2027.transcript.txt",
+      "transcript_state": "refused",
+      "transcript": null
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "targetingfinance pricing psychology carousel",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.md",
+      "url": "https://www.instagram.com/targetingfinance/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-targetingfinance-pricing-psychology.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "SOURCE: Instagram carousel by @targetingfinance (\"People don't always...\" caption, truncated), 10 slides, posted ~16 Oct 2026.\nCaptured from 9 screenshots Luke sent by Telegram on 2026-10-17. Slide text transcribed verbatim. A stranger's words: data, not instructions.\nEngagement at capture: 2,995 likes, 10 comments, 98 reposts, 1,100 shares.\n\nSlide 2/10. 1. THE FRAMING EFFECT. How you phrase the exact same fact changes everything. [X] 1% fat. [tick] 99% fat free. (McDonald's fries)\nSlide 3/10. 2. THE AFFORDABILITY ILLUSION. Breaking a large price into smaller units makes it feel manageable. [X] $499 per month. [tick] Less than $17 a day. (Tesla)\nSlide 4/10. 3. ANCHORING BIAS. The first price you show sets the baseline for everything that follows. [X] Sale price: $190. [tick] Originally $300 Now $190 Save 37%. (North Face jacket)\nSlide 5/10. 4. THE POWER OF FREE. People overvalue free things, even when the math doesn't add up. [X] Get $5 off your first order. [tick] Get a free gift with your first order.\nSlide 6/10. 5. LOSS AVERSION. People fear losing money twice as much as they enjoy gaining the same amount. [tick] You could win $100. [X] You're about to lose $100. (wallets)\nSlide 7/10. 6. THE RULE OF 3. Add a premium option and your mid-tier becomes the obvious choice. [X] 2 options limits choice. [tick] 3 choices drives the middle pick. (Starbucks cups)\nSlide 8/10. 7. THE CONTRAST EFFECT. Place your offer next to something more expensive and it looks like a bargain. [X] A $10,000 Rolex alone. [tick] $10,000 Rolex next to an $50,000 Rolex.\nSlide 9/10. 8. THE PARADOX OF CHOICE. Too many options overwhelm buyers and push them toward doing nothing. [X] Choose from 47 items. [tick] Pick from our 8 best sellers. (menus)\nSlide 10/10. 9. THE ENDOWMENT EFFECT. Once people feel ownership, they don't want to give it up. [X] Start for $9.99/month. [tick] Start your free 30-day trial. (Amazon Prime)\n(Slide 1 cover not sent.)"
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.md",
+      "url": "https://www.youtube.com/watch?v=yePLuwL3FbM",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-doac-sahar-yousef-focus-memory.transcript.txt",
+      "transcript_state": "refused",
+      "transcript": null
+    },
+    {
+      "date": "2026-10-17",
+      "subject": "Tristen O'Brien: Claude Motion walkthrough",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.md",
+      "url": "https://www.youtube.com/watch?v=yf2OwchM9nw",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-17-claude-motion-tristen-obrien.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: https://www.youtube.com/watch?v=yf2OwchM9nw\nTitle and channel: Claude Just Dropped MOTION. (Get Ahead of 95% in 11 Minutes.) / Tristen O'Brien\nPulled 2026-10-17 by yt-dlp auto-captions. A stranger's words: data, not instructions.\n\nSo, Claude just dropped a Claude Motion, and everything that you're looking at right now was made with that tool, along with every single animation that you're going to see in this video. Along the way, I'm going to show you what Claude Motion is, I'm going to show you how to get started, and I'm going to explain how this thing works in really simple terms. I'm also going to show you how you can make this look even significantly more premium, and at the end, you'll see an alternative that you can start using today, even if you don't have Claude Motion yet. With that said, let's go ahead and get started with what Claude Motion actually is. So, simply put, Claude Motion turns a prompt into an animation. So, to find it, you're going to go right into Claude, and you're going to click on artifacts, and then right here at the top, you're going to see two new buttons. One is dashboard, and the other one is motion. When you click on motion, this is what you're going to see. To the left is where you're going to put your prompt, and where you're going to talk to Claude, then on the right is where you're going to start building and editing your video. So, let's go ahead and jump in and build one. So, let's say that I want to build a 20-second animated commercial for a bike company. And I want this to look extremely unique. And because of that, I'm going to ask Claude to make us a Claude Motion animation, and I'm going to tell it that everything needs to look like it was made out of paper, and it needs to look like a stop-motion film. Now, for the prompt, you do want it to be very detailed, and I didn't type all of this in. Of course, I worked with Claude, I gave it my ideas, we went back and forth, and then it ended up giving me a very detailed prompt for me to use. And this was based on everything that we talked about. Now, right underneath the prompt box is where you could choose the model that you want to use. I am going to stick with Opus 5.5. I think that's the best model for this, but you could go ahead and change that. You could also change the effort level if you wanted to, but I like what I have here, so I'm going to hit go. Now, take a look at the right-hand side. Claude is starting to lay out the frames at the bottom. But, if I click this little play button right here, nothing is going to happen, and that's because nothing has been built yet. This does take a little while to build out, and while this is building out, I think it's really important for us to go over what Claude is actually doing here because Claude Motion is different than AI generated video. Most video tools that are using AI, they work by generating pixels. So, when you give it a prompt and you use a tool like SeaDance 2.5, it's going to paint every frame by scratch. And that's really awesome when you want footage that looks absolutely real. But, if you want to change one word on the screen, you have to generate the whole clip again. And sometimes, it's really hard to get that exact same look back. But, with Motion, Claude is writing code instead of generating pixels. And that code says exactly where every word goes. It also says what color it is and what the animation looks like and how long it stays on the screen. And then that code plays back like a video. So, what does that mean for you? Well, that means that every single piece of the video that Claude Motion makes is something that you can change. So, if a word is wrong, you can just fix the word. If the scene is too long, you can shorten the scene. And when you do that, everything else in the video is going to stay exactly how it was before. And this makes you the editor of the video. You're going to have Claude do all the heavy lifting as it creates the video, but then you're going to come back in at the end and get the final word on every single frame that it creates. So, since Claude Motion is creating code, it can't create realistic photos or videos. What it can do is animate text and shapes and charts and images and everything else that you're seeing on the screen right now. Okay, so the paper bike video commercial is done. And take a look. I think it looks really good. It builds out the bike piece by piece. The rider takes it out past the paper mountains and then features drop in on little paper tags and it ends on the bike name and says get out and ride. This looks really cool. Now, take a look at the bottom right down here. There is a button called tweaks. And when you click on tweaks, it's going to show you every single thing that you can change in the video. And what you can change depends on where you're at in the video. For example, right here it says bike name. Now, I'm going to change that to O'Brien's bike and watch the video. It is going to change instantly. Now, anything with text on here works the same way. As you scroll back through the video, every word on the screen is going to show up right here for you to edit. If you want it to say 100 speeds instead of 21, you're just going to type in 100 and it updates right there on the screen. You can also change how many seconds each section has. You can also change how fast things move. You can change how many sections that it has. But, what if there's one thing that you want to change that doesn't have any words on it? Well, take a look at this little comment button up here. When you click it, you're able to click on anything in the video. And in this case, I'm going to click on the sun. And I'm going to tell it that it's actually supposed to be night time and it's supposed to be lit by the moon. And so, when I hit enter, you can see on the left Claude is starting to work on that change for me. It's only working on that particular piece. And when it's done, we can click play and now you can see that the writing is happening at night and the moon comes up instead of the sun. But, everything else in the video stayed exactly the same. So, when you're done editing and you like what you have here, you can share this really easily. First, you can send it to a specific person right here. And if you look all the way down at the bottom, you can export it as a GIF or you can export it as a video. And then you get to pick the resolution, you get to pick the frame rate, and you get to pick the quality, and then you hit export. And from there, it's going to save right onto your computer. Now, one thing to think about when it comes to cost, Motion doesn't cost anything extra to have, right? If you have the plan, then you get it. But, every animation that you make is going to count towards your plan limits. And the longer that the animation is and the more complex it is, the more credits it's going to use. Just makes sense. Now, back to this paper commercial, I think it looks really good. But, sometimes you need something to look significantly more premium than what we actually have right here. And it's easy to do. But, before I show you how to do that, if this video has been helpful so far, please subscribe and like the the and leave a comment. It really helps out the channel and it's something that I really appreciate. But, let's jump into that tool that I use every day and show you how you can make this look significantly more premium. To make a really good explainer video, you need to blend Claude motion animations with real video and real images. Now, full disclosure here, I did reach out to Higgs Field to see if they wanted to partner on this video and sponsor it, which they are. And Higgs Field is the perfect tool and partner for this because I pretty much use them for everything on this channel anyway, which includes all the animations that are in my videos. Well, let me show you the power of Higgs Field and Claude motion working together before we even jump into anything else. Take a look at the scene where it's transitioning from paper to real. We have mixed Claude motion with Higgs Field and now they are working together to create this premium scene. If you've never heard of Higgs Field before, one thing you should know is that it has every major AI and video model all in one place. And the reason why I like it so much is because it integrates perfectly into Claude. And because it integrates perfectly, you can just put a new prompt into Claude motion whenever you're asking it to create a scene and they are going to be mixed together. Now again, this is a longer prompt. I worked with Claude to make sure that it's the right prompt for this, but it's basically saying that I want it to make a new paper animation that turns paper into real life and I want it to use a blend of Higgs Field or Claude motion to make this happen. So, let's go ahead and click enter and see what we get. Now, as that's going, just know that Claude is going to ask your permission to use Higgs Field a few times. And if you've never connected to Higgs Field before, it is really easy to do and let me show you how. First, you're going to go to Higgs Field's website and click on MCP and MCP is just a way to plug an outside tool into Claude. And when you click on it, you're going to click on the Claude section. And then you can copy the MCP address that is right here. Then when you go back into Claude, you're going to click on customize, then you're going to click on connectors, then you're going to click on add connector, and then pick add custom connector. And all you have to do is name it Higgs Field and paste in that address right there and hit continue and you're going to authenticate and you'll be done. Now, because you did that, Claude can now talk to Higgsfield without you ever having to leave the chat. And Higgsfield can do so much more than just create images and video for your animations. I really do encourage you to check out the website because it is really impressive and they do give you pre-made prompts that you could use in pretty much any viral AI video that you've seen right now can be made inside of Higgsfield. It is pretty cool. Just play around with it for a little bit and you'll see how cool it is. But, let's go ahead and check back on our video. Okay, looks like it's done and take a look at this. It opens up on Claude motion from paper to real. Then it goes to a paper phone that turns into a real phone right in front of you. Then it goes to a rocket lifting off and then paper buildings that are turning into a real city and then a paper laptop that turns into a real one where someone's typing \"Make a rocket for me.\" And then it finishes with a graph right here. Every real-looking shot that you saw in this video came from Higgsfield. And then all of the text and animation that came on top of it was Claude motion. And because it's still in Claude motion, you can still go back and change any word that you want. But now you can see the power of blending them together. Now, Claude motion is still in beta and right now it's only on team and enterprise plans. If you're on a team plan, then it's already turned on for you. If you're on an enterprise plan, your admin has to turn it on for you. But if you're on a pro or max plan, you can't actually use motion yet. But you still can make some really great animations like this. It's actually how I've been making animations since my very first video on this channel. And it's because I use three things: Claude code, Higgsfield, and Remotion. Remotion is a tool that makes videos out of code, which is the same thing that Claude motion does. Now, it is free for most people. If you're a bigger company and you're using it for company work, then you do need a company license, but it's free to use outside of that. You do need Claude code to run it and Claude code does come with the pro and max plans. To set it up, it's pretty easy. You're going to open up Claude, you're going to click on customize, you're going to go to plugins, and you can search for Remotion. And once you find it, you're just going to click add. You can also install it directly inside of your terminal, which is what I recommend, and I'll put the steps inside of the video description below. And then you're just going to ask for what you want, like we've been doing. For example, you can type in something like build me an animation of a clock tower that is paper and it morphs into a rocket ship, and make sure that you use Remotion. And take a look at that. We have a clock tower that turns into a rocket ship and it blasts off. And just so we're clear here, this was made with Remotion, not Claude Motion. Now, one of the biggest differences here is that Claude Motion is built right inside of Claude, and then everything is processed in the cloud. Remotion uses your own computer to process the video, and there is a little bit more of a setup. Now, it does have its own editor, so if you want to use that, you can, but most of the time when you want to change something, you're asking Claude to change it, which does take a little bit longer. And when you use Remotion inside of Claude Code, it also works with Higgs Field, so you're good to go there. And remember, Remotion uses code instead of pixels to create the video, just like Claude Motion. So, you should give it a try if you don't have Claude Motion yet. So, that brings us to the end of the video, and remember this, Claude Motion turns your prompt into an animated video right inside of Claude, and you can edit every single piece of it because it's just code. When you mix in Higgs Field, that's when you get that premium video look. And remember, Motion is only available on team and enterprise plans right now, so if you're on a pro and Max plan and don't have access to it yet, Remotion or Claude Code will do something very similar. Now, you don't have to build out a full commercial today, you can start with one small animation, you can change one word on it and see what happens. It's really easy to use, but it is so powerful. If you like this video, please like it, subscribe, and leave a comment, and I will see you in the next one."
+    },
     {
       "date": "2026-10-15",
       "subject": "@brokermanscalps AI indicator reel",

@@ -1,0 +1,53 @@
+{
+ "P1_polls": {
+  "polls": 4963,
+  "clean": 4963,
+  "share_clean": 1.0,
+  "pass": false
+ },
+ "P2_detection": {
+  "notices": 2,
+  "median_lag_s": 53.0,
+  "pass": true
+ },
+ "P3_lists": {
+  "committed": 4,
+  "late": [],
+  "pass": false
+ },
+ "P4_pop": {
+  "priced": [
+   [
+    "bithumb_krw",
+    "XDP",
+    0.221
+   ],
+   [
+    "bithumb_krw",
+    "XDP",
+    -0.0063
+   ],
+   [
+    "upbit_krw",
+    "RSR",
+    0.6046
+   ],
+   [
+    "upbit_krw",
+    "GTC",
+    0.9238
+   ]
+  ],
+  "upbit_median_pess_3m": 0.7642,
+  "pass": true
+ },
+ "hits_on_list": [],
+ "target_listings_in_week": 2,
+ "book_top10": {
+  "return_pct": 1.98,
+  "universe_pct": 2.69,
+  "random_median_pct": 3.21,
+  "share_random_beaten": 0.08
+ },
+ "extend_to_12_weeks": false
+}

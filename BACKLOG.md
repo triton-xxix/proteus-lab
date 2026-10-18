@@ -23,6 +23,11 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   checks itself against killcheck.py. Left for step two: add it to run-nightly.sh; the model panel
   has 5 comparable rows of 22 scored because market odds were not captured for the rest (worth
   finding out why); the over 2.5 market is not drawn.
+  **Step two shipped 17 Oct (Workshop), a week early:** Inspector rebuilds it daily; why found (the
+  48 h fixturedownload fallback commits odds-free rows) and 29 rows backfilled into
+  `pitch/MARKET-BACKFILL.csv`; over 2.5 drawn. Left: predict.py could re-read odds for its odds-free
+  rows before kickoff so the market price is from commit time, not after; change it only with a
+  DECISIONS line, it is a scored desk.
 - **Channel digest tool.** Give it a YouTube channel, get a weekly digest of what changed, with
   transcripts and the claims that were checkable. Built on the transcript tool.
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
@@ -208,3 +213,11 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   the first child digest (Memento, 7 Oct night) for theme vocabulary drift and still captions, which
   the child writes blind. (6) The hook's `READ_ROOTS` is all of `/Users/triton/`: the dashboard's
   privacy rests on the key never entering a commit (`.gitignore`), not on the hook.
+
+- **2026-10-15 · YouTube caption block on this Mac.** A burst of caption fetches at 06:30 got the IP
+  blocked (IpBlocked on youtube_transcript_api, yt-dlp subs and the watch page). `sandbox/yt_retry.py`
+  tested hourly from 07:40 to 11:40, still blocked, gave up. 272 lessons stay queued in
+  `field-notes/skool/batch-2026-10-15-youtube-retry.tsv` (33) and `batch-2026-10-15-vault-youtube.tsv`
+  (239); S-39 waits on them. **Next:** one test call a day, not hourly (hourly pokes may keep the block
+  warm); when it answers, rerun `yt_retry.py` with WAIT=0 and the two lists, captions-only at 20 s apart.
+  No whisper fallback: about a day of compute on this Intel Mac.
