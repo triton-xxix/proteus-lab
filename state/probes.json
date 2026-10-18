@@ -1,5 +1,5 @@
 {
- "next_id": 176,
+ "next_id": 177,
  "items": [
   {
    "id": "P-0001",
@@ -4208,6 +4208,32 @@
     "number": "a real browser gets results without login, about 200 to 5,000 active GB ads for plumber",
     "at": "2026-10-18T12:36:41+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0176",
+   "title": "Ads Library deepen of P-0175: GB searches for blocked drain and boiler service with experiments/2026-10-18-P-0175/adlib.mjs; of the 40 most-seen ads each, how many are UK plumbing or heating firms selling to homeowners (P-0175 found 3 of 40 for plumber)?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-18",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-18T12:38:28+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "plumbing or heating firms selling to homeowners 20 to 45 of the 80 ads across both searches, against 3 of 40 for plumber",
+    "at": "2026-10-18T12:38:37+0100"
    }
   }
  ]
