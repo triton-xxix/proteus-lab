@@ -1,0 +1,13 @@
+{
+ "rows": 1409,
+ "dims": 1536,
+ "videos": 279,
+ "vector_key": "ada_v2",
+ "video_key": "videoId",
+ "chunks_per_video_median": 5.0,
+ "same_video_nn": 0.6955,
+ "chance": 0.004,
+ "nn_cos_median": 0.9081,
+ "same_video_nn_excl_adjacent": 0.4166,
+ "start_key": "seconds"
+}

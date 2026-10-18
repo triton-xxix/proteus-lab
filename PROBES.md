@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 120 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 121 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 120 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0174 | GenAI for Beginners lesson 08, keyless: in the shipped embedding_index_3m.json (49 MB), is a chunk's nearest neighbour (cosine, itself excluded) from the same video more often than by chance? Report the share, the chance rate and vector count and dimension | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (162)
+## Verdicts (163)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-18 | P-0174 | GenAI for Beginners lesson 08, keyless: in the shipped embedding_index_3m.json (49 MB), is a chunk's nearest neighbour (cosine, itself excluded) from the same video more often than by chance? Report the share, the chance rate and vector count and dimension | **works** | Measured same-video nearest neighbour 69.6 percent of 1409 chunks (279 videos, 1536 dims) against chance 0.4 percent; shot said 70 to 90, so a hair under the range. With same-video windows within 360 s excluded it is still 41.7 percent, so it is not just overlapping windows. Mean neighbour cosine 0.908: ada-002 scores bunch high, so thresholds mean little. Query search not run (needs a key; no Ollama here). Next: close (refill row 6 used; a local-embedding comparison waits on a local model). | `experiments/2026-10-18-P-0174` | 0 min, 9 calls, 0 denied |
 | 2026-10-18 | P-0173 | web-ocean: is ocean.min.html about 61 KB and does it render in a headless browser with WebGPU and no errors? | **works** | Measured 62,236 bytes (60.78 KB) against the shot 58 to 64 KB. Headless Chrome over CDP: AMD rdna-1 adapter, first frame at about 9.0 s (starting... until 8.0 s), then 40 to 41 fps, GPU 23 to 28 ms at 1280x577, 0 console errors, #err empty, screenshot is a lit sea. One-shot --dump-dom/--screenshot never get past starting... (virtual time stalls it, --timeout ignored): drive CDP and wait. Next: close (cdp.mjs kept as the headless WebGPU check). | `experiments/2026-10-18-P-0173` | 2 min, 29 calls, 3 denied |
 | | | | | denied: Bash `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless=new --user-data-`; Bash `mv /Users/triton/PROTEUS/experiments/2026-10-18-P-0173/shot.png /Users/triton/PROTEUS/expe`; Bash `node --version` | | |
 | 2026-10-17 | P-0172 | pump.fun curve: does a live curve account obey constant product and graduate near 85 SOL real reserves? | **works** | Measured: 11 of 17 live pump.fun curves hold virtual SOL x virtual tokens at exactly 30 SOL x 1.073B (5 dp), balance equals real SOL plus rent; 100 of 100 PDAs derived in pure Python. 6 other live accounts hold only rent with nonsense reserves, unexplained. Completed curves are zeroed after migration, so 85.005 SOL at graduation is implied from k, not observed. Next: deepen (read one migration transaction for the real figure). | `experiments/2026-10-17-P-0172` | 1 min, 10 calls, 0 denied |
