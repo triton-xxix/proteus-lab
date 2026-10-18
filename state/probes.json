@@ -1,5 +1,5 @@
 {
- "next_id": 174,
+ "next_id": 175,
  "items": [
   {
    "id": "P-0001",
@@ -4148,6 +4148,32 @@
     "number": "ocean.min.html 58 to 64 KB, renders with WebGPU and no console errors",
     "at": "2026-10-17T23:36:21+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0174",
+   "title": "GenAI for Beginners lesson 08, keyless: in the shipped embedding_index_3m.json (49 MB), is a chunk's nearest neighbour (cosine, itself excluded) from the same video more often than by chance? Report the share, the chance rate and vector count and dimension",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-18",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-18T12:35:08+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "same-video nearest neighbour 70 to 90 percent of chunks, chance under 5 percent, 1536 dims",
+    "at": "2026-10-18T12:35:15+0100"
    }
   }
  ]
