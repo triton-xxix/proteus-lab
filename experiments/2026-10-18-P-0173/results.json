@@ -1,0 +1,37 @@
+{
+ "bytes": 62236,
+ "kb": 60.78,
+ "sha256": "9a630645fefdab53dbd502f6c8bf80b1648d8ec935634a92066ef39d8a5c9f1e",
+ "dump": {
+  "exit": 0,
+  "seconds": 8.0,
+  "dom_chars": 62228,
+  "err_tag": "<div id=\"err\">",
+  "err_text": "",
+  "fps_text": "starting\u2026",
+  "console": [],
+  "stderr_tail": [
+   "[81143:11012645:1018/123242.402918:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+   "[81143:11012573:1018/123242.444845:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+   "[81143:11012645:1018/123242.444993:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+   "Trying to load the allocator multiple times. This is *not* supported.",
+   "[81143:11012573:1018/123244.627993:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+   "[81143:11012645:1018/123244.628139:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+   "[81143:11012573:1018/123245.096879:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:376] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.",
+   "[81143:11012573:1018/123245.096901:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.",
+   "[81122:11012544:1018/123245.193200:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR",
+   "[81122:11012544:1018/123245.207159:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR",
+   "[81122:11012544:1018/123245.213979:ERROR:google_apis/gcm/engine/mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret",
+   "[81122:11012544:1018/123245.214002:ERROR:google_apis/gcm/engine/mcs_client.cc:704] Failed to log in to GCM, resetting connection.",
+   "[81122:11012425:1018/123245.230560:ERROR:chrome/browser/web_applications/externally_managed_app_manager.cc:680] https://mail.google.com/mail/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21",
+   "[81144:11012601:1018/123245.345692:WARNING:net/extras/sqlite/sqlite_persistent_store_backend_base.cc:182] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:232 to client_task_runner_.",
+   "[81144:11012601:1018/123245.346448:WARNING:net/extras/sqlite/sqlite_persistent_store_backend_base.cc:182] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:232 to client_task_runner_."
+  ]
+ },
+ "screenshot": {
+  "exit": 0,
+  "seconds": 9.2,
+  "png_bytes": 12650,
+  "console": []
+ }
+}

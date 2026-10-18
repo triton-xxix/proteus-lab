@@ -4125,22 +4125,29 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-17",
-   "status": "in_progress",
-   "attempts": 1,
-   "started_at": "2026-10-17T23:36:09+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 2,
+   "started_at": "2026-10-18T12:31:36+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-18T12:34:26+0100",
+   "note": "Measured 62,236 bytes (60.78 KB) against the shot 58 to 64 KB. Headless Chrome over CDP: AMD rdna-1 adapter, first frame at about 9.0 s (starting... until 8.0 s), then 40 to 41 fps, GPU 23 to 28 ms at 1280x577, 0 console errors, #err empty, screenshot is a lit sea. One-shot --dump-dom/--screenshot never get past starting... (virtual time stalls it, --timeout ignored): drive CDP and wait. Next: close (cdp.mjs kept as the headless WebGPU check).",
+   "artefacts": [
+    "experiments/2026-10-18-P-0173"
+   ],
+   "minutes": 2,
+   "calls": 29,
+   "denied": [
+    "Bash `/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless=new --user-data-`",
+    "Bash `mv /Users/triton/PROTEUS/experiments/2026-10-18-P-0173/shot.png /Users/triton/PROTEUS/expe`",
+    "Bash `node --version`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "ocean.min.html 58 to 64 KB, renders with WebGPU and no console errors",
-    "at": "2026-10-17T23:36:21+0100"
+    "at": "2026-10-17T23:36:21+0100",
+    "hit": true
    }
   }
  ]

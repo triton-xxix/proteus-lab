@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 119 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 120 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,13 @@ Verdicts so far: 119 works, 5 broken, 25 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0173 | web-ocean: is ocean.min.html about 61 KB and does it render in a headless browser with WebGPU and no errors? | harvest | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (161)
+## Verdicts (162)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-18 | P-0173 | web-ocean: is ocean.min.html about 61 KB and does it render in a headless browser with WebGPU and no errors? | **works** | Measured 62,236 bytes (60.78 KB) against the shot 58 to 64 KB. Headless Chrome over CDP: AMD rdna-1 adapter, first frame at about 9.0 s (starting... until 8.0 s), then 40 to 41 fps, GPU 23 to 28 ms at 1280x577, 0 console errors, #err empty, screenshot is a lit sea. One-shot --dump-dom/--screenshot never get past starting... (virtual time stalls it, --timeout ignored): drive CDP and wait. Next: close (cdp.mjs kept as the headless WebGPU check). | `experiments/2026-10-18-P-0173` | 2 min, 29 calls, 3 denied |
+| | | | | denied: Bash `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless=new --user-data-`; Bash `mv /Users/triton/PROTEUS/experiments/2026-10-18-P-0173/shot.png /Users/triton/PROTEUS/expe`; Bash `node --version` | | |
 | 2026-10-17 | P-0172 | pump.fun curve: does a live curve account obey constant product and graduate near 85 SOL real reserves? | **works** | Measured: 11 of 17 live pump.fun curves hold virtual SOL x virtual tokens at exactly 30 SOL x 1.073B (5 dp), balance equals real SOL plus rent; 100 of 100 PDAs derived in pure Python. 6 other live accounts hold only rent with nonsense reserves, unexplained. Completed curves are zeroed after migration, so 85.005 SOL at graduation is implied from k, not observed. Next: deepen (read one migration transaction for the real figure). | `experiments/2026-10-17-P-0172` | 1 min, 10 calls, 0 denied |
 | 2026-10-17 | P-0171 | Think time on my own positions (CPW Time Management: base/20 + inc/2, about 10 s on 3+2): take 30 middlegame positions from games/lichess/pgn, run the bot's Stockfish at 0.3 s, 1.0 s and 3.0 s, score each move with a 10 s reference search; report move agreement with the reference and mean centipawn loss per arm. Does 1.0 s lose fewer cp than 0.3 s by enough for the live D-010 test to see it? | **works** | Measured: 0.3 s loses 1.75 cp a move more than 1.0 s (paired se 1.64, 24 own positions at ply 30, depth-20 yardstick); shot said 3 to 10, a miss. Mean loss 2.96 / 1.21 / 0.46 cp at 0.3 / 1.0 / 3.0 s, reference move matched 18 / 21 / 24 of 24, no move over 50 cp. Too small for the 80-game D-010 arm to see; expect its no-clear-difference branch, which already switches to 1.0 s. Caveat: one middlegame ply per game, yardstick about 3 s strength. Next: close. | `experiments/2026-10-17-P-0171` | 3 min, 11 calls, 0 denied |
 | 2026-10-17 | P-0170 | Judgement book accuracy by horizon (fpp3 5.10): split pitch/JUDGEMENT.csv settled rows by lead time (kickoff_utc minus committed_at) at the median, report me-minus-market Brier gap with se in each half; is my gap smaller on the far calls or the near ones? | **works** | Measured: far-half minus near-half Brier gap +0.0033 anchored (se 0.0151, n 49, z 0.22) and +0.0191 blind (se 0.0445, n 33, z 0.43); shot said within 0.02 and inside 1 se, both are. Whole-set gaps match the kill check (+0.0055 and +0.0085). Far calls are a touch worse in both columns, but it is noise at this n, so lead time does not explain my gap. Caveat: market price timing per row not checked. Next: close. | `experiments/2026-10-17-P-0170` | 0 min, 11 calls, 0 denied |
