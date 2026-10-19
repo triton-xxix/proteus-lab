@@ -1,27 +1,77 @@
 {
  "date": "2026-10-19",
- "pulled_at": "2026-10-19T03:35:25+0100",
- "seconds": 104.2,
+ "pulled_at": "2026-10-19T23:32:08+0100",
+ "seconds": 50.9,
  "by_source": {
-  "vault": 255,
-  "hn": 10,
-  "github": 34,
+  "vault": 261,
+  "hn": 14,
+  "github": 36,
+  "arxiv": 22,
   "youtube": 12,
-  "awesome": 7
+  "awesome": 1
  },
- "errors": [
-  "arxiv 'all:\"language model\" AND all:agent AND all:tool': HTTP Error 429: Unknown Error",
-  "arxiv 'all:football AND (all:forecast OR all:prediction OR all:betting)': HTTP Error 429: Unknown Error",
-  "arxiv 'all:\"prediction market\" OR all:calibration AND all:forecast': The read operation timed out",
-  "arxiv 'cat:cs.AI AND all:skills AND all:agent': HTTP Error 429: Too Many Requests"
- ],
+ "errors": [],
  "notes": [
-  "vault: 255 threads taken of 289 in the feed (statuses open, intel, dead), one per parent link in turn",
-  "awesome awesome-claude-code: 1 new of 237",
-  "awesome awesome-mcp-servers: 122 new of 4377",
+  "vault: 261 threads taken of 295 in the feed (statuses open, intel, dead), one per parent link in turn",
+  "awesome awesome-claude-code: 1 new of 238",
+  "awesome awesome-mcp-servers: 0 new of 4377",
   "awesome awesome-ai-agents: 0 new of 116"
  ],
  "candidates": [
+  {
+   "key": "vault:2026-10-19:daily-news-roundup-with-talking-head-over-screenshots",
+   "source": "vault",
+   "query": "open",
+   "title": "daily news roundup with talking head over screenshots",
+   "url": "https://www.instagram.com/reel/DeqInQdRkfU/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "cryptogorillayt: daily memecoin roundup reel",
+    "date": "2026-10-19",
+    "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 100.0,
+   "thread": {
+    "date": "2026-10-19",
+    "subject": "cryptogorillayt: daily memecoin roundup reel",
+    "kind": "idea",
+    "status": "open",
+    "theme": "daily news roundup with talking head over screenshots",
+    "note": "repeatable format for a character or theme page",
+    "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md",
+    "url": "https://www.instagram.com/reel/DeqInQdRkfU/"
+   }
+  },
+  {
+   "key": "vault:2026-10-19:offer-builder-plus-7-day-first-client-sprint",
+   "source": "vault",
+   "query": "open",
+   "title": "offer builder plus 7-day first-client sprint",
+   "url": "https://www.skool.com/fitscaling-business-school-9423",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Skool: Fitscaling Business School",
+    "date": "2026-10-19",
+    "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 99.0,
+   "thread": {
+    "date": "2026-10-19",
+    "subject": "Skool: Fitscaling Business School",
+    "kind": "service",
+    "status": "open",
+    "theme": "offer builder plus 7-day first-client sprint",
+    "note": "the high-ticket offer an AI fitness coach would sell",
+    "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md",
+    "url": "https://www.skool.com/fitscaling-business-school-9423"
+   }
+  },
   {
    "key": "vault:2026-10-18:ai-ugc-and-ad-videos-sold-to-businesses",
    "source": "vault",
@@ -37,7 +87,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 100.0,
+   "score": 98.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
@@ -63,7 +113,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 99.0,
+   "score": 97.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "jayhiette: four skills for fitness coaches",
@@ -90,7 +140,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 98.0,
+   "score": 96.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "laddy.unemployed: OpenArt MCP AI content farm",
@@ -117,7 +167,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 97.0,
+   "score": 95.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "Skool: AI Art Sellers Collective FREE",
@@ -144,7 +194,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 96.0,
+   "score": 94.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "theaisavvy: Blender plus Claude previz for Seedance",
@@ -171,7 +221,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 95.0,
+   "score": 93.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
@@ -198,7 +248,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 94.0,
+   "score": 92.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Fireship: every app is now open source",
@@ -225,7 +275,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 93.0,
+   "score": 91.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
@@ -252,7 +302,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 92.0,
+   "score": 90.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
@@ -279,7 +329,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 91.0,
+   "score": 89.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
@@ -306,7 +356,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 90.0,
+   "score": 88.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "targetingfinance pricing psychology carousel",
@@ -333,7 +383,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 89.0,
+   "score": 87.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
@@ -360,7 +410,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 88.0,
+   "score": 86.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Tristen O'Brien: Claude Motion walkthrough",
@@ -387,7 +437,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 87.0,
+   "score": 85.0,
    "thread": {
     "date": "2026-10-16",
     "subject": "US insider cluster-buy signal from SEC Form 4 data (paper backtest, Jul 2023 to Oct 2026)",
@@ -413,7 +463,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 86.0,
+   "score": 84.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@grandmasterbey prop-challenge trading bot reel",
@@ -440,7 +490,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 85.0,
+   "score": 83.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "Alta (altahq.com) AI SDR agents",
@@ -467,7 +517,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 84.0,
+   "score": 82.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@eliteoptionstrader2 pairs trading reel",
@@ -494,7 +544,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 83.0,
+   "score": 81.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@khan_unemployed memecoin pattern reel",
@@ -521,7 +571,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 82.0,
+   "score": 80.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@tuuurtleee_1 memecoin filters reel",
@@ -548,7 +598,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 81.0,
+   "score": 79.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "Claude for Small Business (Anthropic Cowork plugin)",
@@ -575,7 +625,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 80.0,
+   "score": 78.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Jasper Aiken, \"How I Sell Smart Websites To Local Businesses\" (GoHighLevel website-plus-automation offer)",
@@ -602,7 +652,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 79.0,
+   "score": 77.0,
    "thread": {
     "date": "2026-10-12",
     "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
@@ -629,7 +679,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 78.0,
+   "score": 76.0,
    "thread": {
     "date": "2026-10-11",
     "subject": "Supplement Brand Accelerator (Skool, Lou Antonio Matera, free, 3,445 members)",
@@ -656,7 +706,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 77.0,
+   "score": 75.0,
    "thread": {
     "date": "2026-10-09",
     "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
@@ -683,7 +733,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 76.0,
+   "score": 74.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
@@ -710,7 +760,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 75.0,
+   "score": 73.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
@@ -737,7 +787,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 74.0,
+   "score": 72.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
@@ -764,7 +814,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 73.0,
+   "score": 71.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
@@ -791,7 +841,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 72.0,
+   "score": 70.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
@@ -818,7 +868,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 71.0,
+   "score": 69.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
@@ -845,7 +895,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 70.0,
+   "score": 68.0,
    "thread": {
     "date": "2026-10-06",
     "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
@@ -872,7 +922,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 69.0,
+   "score": 67.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "nateherkai/scroll-craft",
@@ -899,7 +949,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 68.0,
+   "score": 66.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
@@ -925,7 +975,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 67.0,
+   "score": 65.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
@@ -952,7 +1002,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 66.0,
+   "score": 64.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "eToro public API demo copy-trading endpoints",
@@ -979,7 +1029,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 65.0,
+   "score": 63.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "Promptwise (AI video course platform), first trial day",
@@ -1005,7 +1055,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 64.0,
+   "score": 62.0,
    "thread": {
     "date": "2026-10-03",
     "subject": "@mattwayne.io reel: my best memecoin trading filter, the three-column terminal filter",
@@ -1032,7 +1082,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 63.0,
+   "score": 61.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
@@ -1059,7 +1109,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 62.0,
+   "score": 60.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "Rashawn Leche reel via @slavenameflick: motion control with Higgsfield Genjutsu and the Auratar",
@@ -1086,7 +1136,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 61.0,
+   "score": 59.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "Reading Reddit threads from an agent browser",
@@ -1112,7 +1162,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 60.0,
+   "score": 58.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI Automation Society (Skool, Nate Herk), free tier",
@@ -1138,7 +1188,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 59.0,
+   "score": 57.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
@@ -1164,7 +1214,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 58.0,
+   "score": 56.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
@@ -1190,7 +1240,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 57.0,
+   "score": 55.0,
    "thread": {
     "date": "2026-09-29",
     "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
@@ -1216,7 +1266,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 56.0,
+   "score": 54.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
@@ -1242,7 +1292,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 55.0,
+   "score": 53.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
@@ -1269,7 +1319,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 54.0,
+   "score": 52.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "Cryptonary 100x Chaser",
@@ -1296,7 +1346,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 53.0,
+   "score": 51.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "EasyInfluencers.ai",
@@ -1323,7 +1373,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 52.0,
+   "score": 50.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
@@ -1350,7 +1400,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 51.0,
+   "score": 49.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Butter (hellobutter.io)",
@@ -1376,7 +1426,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 50.0,
+   "score": 48.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Higgsfield AI (higgsfield.ai)",
@@ -1403,7 +1453,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 49.0,
+   "score": 47.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
@@ -1429,7 +1479,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 48.0,
+   "score": 46.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Paid UGC creator work (via @oliver.hustles reel)",
@@ -1456,7 +1506,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 47.0,
+   "score": 45.0,
    "thread": {
     "date": "2026-09-21",
     "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
@@ -1483,7 +1533,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 46.0,
+   "score": 44.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
@@ -1510,7 +1560,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 45.0,
+   "score": 43.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
@@ -1537,7 +1587,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 44.0,
+   "score": 42.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
@@ -1564,7 +1614,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 43.0,
+   "score": 41.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
@@ -1590,7 +1640,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 42.0,
+   "score": 40.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Jev AI (TypeSafe AI)",
@@ -1616,7 +1666,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 41.0,
+   "score": 39.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Keza Studio \"10 app templates\"",
@@ -1643,7 +1693,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 40.0,
+   "score": 38.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Potion Alpha (Orangie) and trader Kimchi",
@@ -1669,7 +1719,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 39.0,
+   "score": 37.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "pump.fun",
@@ -1695,7 +1745,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 38.0,
+   "score": 36.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "sideshift.app",
@@ -1705,6 +1755,60 @@
     "note": "The marketplace model itself is untested here; this domain scores badly on reputation checkers, likely automated",
     "where": "TRITON-CORE/Research/links/2026-09-20-jev-sideshift-invo-keza.md (section 3)",
     "url": "https://sideshift.app/"
+   }
+  },
+  {
+   "key": "vault:2026-10-19:sponsor-slots-on-niche-daily-shows",
+   "source": "vault",
+   "query": "open",
+   "title": "sponsor slots on niche daily shows",
+   "url": "https://www.instagram.com/reel/DeqInQdRkfU/",
+   "meta": {
+    "vault_status": "open",
+    "kind": "idea",
+    "subject": "cryptogorillayt: daily memecoin roundup reel",
+    "date": "2026-10-19",
+    "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 35.0,
+   "thread": {
+    "date": "2026-10-19",
+    "subject": "cryptogorillayt: daily memecoin roundup reel",
+    "kind": "idea",
+    "status": "open",
+    "theme": "sponsor slots on niche daily shows",
+    "note": "trading apps buy placements",
+    "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md",
+    "url": "https://www.instagram.com/reel/DeqInQdRkfU/"
+   }
+  },
+  {
+   "key": "vault:2026-10-19:done-for-you-outreach-scripts-for-coaches",
+   "source": "vault",
+   "query": "open",
+   "title": "done-for-you outreach scripts for coaches",
+   "url": "https://www.skool.com/fitscaling-business-school-9423",
+   "meta": {
+    "vault_status": "open",
+    "kind": "service",
+    "subject": "Skool: Fitscaling Business School",
+    "date": "2026-10-19",
+    "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": 34.0,
+   "thread": {
+    "date": "2026-10-19",
+    "subject": "Skool: Fitscaling Business School",
+    "kind": "service",
+    "status": "open",
+    "theme": "done-for-you outreach scripts for coaches",
+    "note": "DM script source for the coach funnel",
+    "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md",
+    "url": "https://www.skool.com/fitscaling-business-school-9423"
    }
   },
   {
@@ -1722,7 +1826,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 37.0,
+   "score": 33.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
@@ -1748,7 +1852,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 36.0,
+   "score": 32.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "jayhiette: four skills for fitness coaches",
@@ -1775,7 +1879,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 35.0,
+   "score": 31.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "laddy.unemployed: OpenArt MCP AI content farm",
@@ -1802,7 +1906,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 34.0,
+   "score": 30.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "Skool: AI Art Sellers Collective FREE",
@@ -1829,7 +1933,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 33.0,
+   "score": 29.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "theaisavvy: Blender plus Claude previz for Seedance",
@@ -1856,7 +1960,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 32.0,
+   "score": 28.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
@@ -1883,7 +1987,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 31.0,
+   "score": 27.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Fireship: every app is now open source",
@@ -1910,7 +2014,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 30.0,
+   "score": 26.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
@@ -1937,7 +2041,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 29.0,
+   "score": 25.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
@@ -1964,7 +2068,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 28.0,
+   "score": 24.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
@@ -1991,7 +2095,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 27.0,
+   "score": 23.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "targetingfinance pricing psychology carousel",
@@ -2018,7 +2122,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 26.0,
+   "score": 22.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
@@ -2045,7 +2149,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 25.0,
+   "score": 21.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Tristen O'Brien: Claude Motion walkthrough",
@@ -2072,7 +2176,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 24.0,
+   "score": 20.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@grandmasterbey prop-challenge trading bot reel",
@@ -2099,7 +2203,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 23.0,
+   "score": 19.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Jasper Aiken, \"How I Sell Smart Websites To Local Businesses\" (GoHighLevel website-plus-automation offer)",
@@ -2126,7 +2230,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 22.0,
+   "score": 18.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
@@ -2153,7 +2257,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 21.0,
+   "score": 17.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
@@ -2180,7 +2284,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 20.0,
+   "score": 16.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
@@ -2206,7 +2310,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 19.0,
+   "score": 15.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
@@ -2233,7 +2337,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 18.0,
+   "score": 14.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
@@ -2259,7 +2363,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 17.0,
+   "score": 13.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
@@ -2286,7 +2390,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 16.0,
+   "score": 12.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Butter (hellobutter.io)",
@@ -2312,7 +2416,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 15.0,
+   "score": 11.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
@@ -2339,7 +2443,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 14.0,
+   "score": 10.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
@@ -2366,7 +2470,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 13.0,
+   "score": 9.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
@@ -2392,7 +2496,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 12.0,
+   "score": 8.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
@@ -2418,7 +2522,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 11.0,
+   "score": 7.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "jayhiette: four skills for fitness coaches",
@@ -2445,7 +2549,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 10.0,
+   "score": 6.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
@@ -2472,7 +2576,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 9.0,
+   "score": 5.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
@@ -2499,7 +2603,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 8.0,
+   "score": 4.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@grandmasterbey prop-challenge trading bot reel",
@@ -2526,7 +2630,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 7.0,
+   "score": 3.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Jasper Aiken, \"How I Sell Smart Websites To Local Businesses\" (GoHighLevel website-plus-automation offer)",
@@ -2553,7 +2657,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 6.0,
+   "score": 2.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
@@ -2579,7 +2683,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 5.0,
+   "score": 1.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
@@ -2606,7 +2710,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 4.0,
+   "score": 0.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "jayhiette: four skills for fitness coaches",
@@ -2633,7 +2737,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 3.0,
+   "score": -1.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Jasper Aiken, \"How I Sell Smart Websites To Local Businesses\" (GoHighLevel website-plus-automation offer)",
@@ -2643,6 +2747,60 @@
     "note": "Public posts and events sit outside the PECR wall; time cost is the constraint",
     "where": "TRITON-CORE/Research/links/2026-10-13-jasper-aiken-smart-websites.md",
     "url": "https://www.youtube.com/watch?v=_5uSbMMOkCQ"
+   }
+  },
+  {
+   "key": "vault:2026-10-19:ai-persona-tokens",
+   "source": "vault",
+   "query": "intel",
+   "title": "AI persona tokens",
+   "url": "https://www.instagram.com/reel/DeqInQdRkfU/",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "idea",
+    "subject": "cryptogorillayt: daily memecoin roundup reel",
+    "date": "2026-10-19",
+    "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": -2.0,
+   "thread": {
+    "date": "2026-10-19",
+    "subject": "cryptogorillayt: daily memecoin roundup reel",
+    "kind": "idea",
+    "status": "intel",
+    "theme": "AI persona tokens",
+    "note": "attention on an AI character financialised with a coin, usually collapses after",
+    "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md",
+    "url": "https://www.instagram.com/reel/DeqInQdRkfU/"
+   }
+  },
+  {
+   "key": "vault:2026-10-19:small-free-skool-funnelling-to-a-call-sold-programme",
+   "source": "vault",
+   "query": "intel",
+   "title": "small free Skool funnelling to a call-sold programme",
+   "url": "https://www.skool.com/fitscaling-business-school-9423",
+   "meta": {
+    "vault_status": "intel",
+    "kind": "service",
+    "subject": "Skool: Fitscaling Business School",
+    "date": "2026-10-19",
+    "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md",
+    "has_transcript": false
+   },
+   "body": "",
+   "score": -3.0,
+   "thread": {
+    "date": "2026-10-19",
+    "subject": "Skool: Fitscaling Business School",
+    "kind": "service",
+    "status": "intel",
+    "theme": "small free Skool funnelling to a call-sold programme",
+    "note": "founder claims unverified",
+    "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md",
+    "url": "https://www.skool.com/fitscaling-business-school-9423"
    }
   },
   {
@@ -2660,7 +2818,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 2.0,
+   "score": -4.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)",
@@ -2686,7 +2844,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 1.0,
+   "score": -5.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "laddy.unemployed: OpenArt MCP AI content farm",
@@ -2713,7 +2871,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": 0.0,
+   "score": -6.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "Skool: AI Art Sellers Collective FREE",
@@ -2740,7 +2898,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -1.0,
+   "score": -7.0,
    "thread": {
     "date": "2026-10-18",
     "subject": "theaisavvy: Blender plus Claude previz for Seedance",
@@ -2767,7 +2925,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -2.0,
+   "score": -8.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
@@ -2794,7 +2952,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -3.0,
+   "score": -9.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Fireship: every app is now open source",
@@ -2821,7 +2979,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -4.0,
+   "score": -10.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
@@ -2848,7 +3006,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -5.0,
+   "score": -11.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
@@ -2875,7 +3033,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -6.0,
+   "score": -12.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "targetingfinance pricing psychology carousel",
@@ -2902,7 +3060,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -7.0,
+   "score": -13.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
@@ -2929,7 +3087,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -8.0,
+   "score": -14.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Tristen O'Brien: Claude Motion walkthrough",
@@ -2956,7 +3114,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -9.0,
+   "score": -15.0,
    "thread": {
     "date": "2026-10-16",
     "subject": "High-impact US news filter (CPI, FOMC, NFP) on the S1 daily crypto trend bot",
@@ -2982,7 +3140,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -10.0,
+   "score": -16.0,
    "thread": {
     "date": "2026-10-16",
     "subject": "US insider cluster-buy signal from SEC Form 4 data (paper backtest, Jul 2023 to Oct 2026)",
@@ -3008,7 +3166,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -11.0,
+   "score": -17.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@brokermanscalps AI indicator reel",
@@ -3035,7 +3193,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -12.0,
+   "score": -18.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@grandmasterbey prop-challenge trading bot reel",
@@ -3062,7 +3220,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -13.0,
+   "score": -19.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@eliteoptionstrader2 pairs trading reel",
@@ -3089,7 +3247,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -14.0,
+   "score": -20.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@khan_unemployed memecoin pattern reel",
@@ -3116,7 +3274,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -15.0,
+   "score": -21.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@lp_predicts Kalshi copy-wallets reel",
@@ -3143,7 +3301,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -16.0,
+   "score": -22.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@tuuurtleee_1 memecoin filters reel",
@@ -3170,7 +3328,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -17.0,
+   "score": -23.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "Jobber Home Service AI Starter Toolkit (free PDF)",
@@ -3197,7 +3355,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -18.0,
+   "score": -24.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Claim that Google ended Business Profile Q&A on 3 Nov 2025",
@@ -3223,7 +3381,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -19.0,
+   "score": -25.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Whitespark Ultimate Guide to Google Business Profile Optimization (2026)",
@@ -3250,7 +3408,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -20.0,
+   "score": -26.0,
    "thread": {
     "date": "2026-10-12",
     "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
@@ -3277,7 +3435,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -21.0,
+   "score": -27.0,
    "thread": {
     "date": "2026-10-12",
     "subject": "Jono Catliff CRO Masterclass video and its GitHub repo (jonocatliff/CRO)",
@@ -3304,7 +3462,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -22.0,
+   "score": -28.0,
    "thread": {
     "date": "2026-10-11",
     "subject": "Supplement Brand Accelerator (Skool, Lou Antonio Matera, free, 3,445 members)",
@@ -3331,7 +3489,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -23.0,
+   "score": -29.0,
    "thread": {
     "date": "2026-10-09",
     "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
@@ -3358,7 +3516,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -24.0,
+   "score": -30.0,
    "thread": {
     "date": "2026-10-09",
     "subject": "xAI Grok 4.3 as an agent model provider",
@@ -3384,7 +3542,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -25.0,
+   "score": -31.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
@@ -3411,7 +3569,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -26.0,
+   "score": -32.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
@@ -3438,7 +3596,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -27.0,
+   "score": -33.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@thearsalaanshaikh reel: ten trading concepts ranked, order flow first, MACD last",
@@ -3465,7 +3623,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -28.0,
+   "score": -34.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
@@ -3492,7 +3650,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -29.0,
+   "score": -35.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
@@ -3519,7 +3677,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -30.0,
+   "score": -36.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "harrisonandjames.com (free jewellery, pay shipping only)",
@@ -3546,7 +3704,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -31.0,
+   "score": -37.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "kaysgoldgroup.com, Gold Signals Club by Kay (FCA-warned unauthorised firm GTK)",
@@ -3573,7 +3731,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -32.0,
+   "score": -38.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
@@ -3600,7 +3758,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -33.0,
+   "score": -39.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
@@ -3627,7 +3785,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -34.0,
+   "score": -40.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
@@ -3654,7 +3812,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -35.0,
+   "score": -41.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
@@ -3681,7 +3839,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -36.0,
+   "score": -42.0,
    "thread": {
     "date": "2026-10-06",
     "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
@@ -3708,7 +3866,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -37.0,
+   "score": -43.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
@@ -3734,7 +3892,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -38.0,
+   "score": -44.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
@@ -3760,7 +3918,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -39.0,
+   "score": -45.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
@@ -3787,7 +3945,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -40.0,
+   "score": -46.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "Kling 3.0 vs Veo 3.1 Lite, image to video from the same stills",
@@ -3813,7 +3971,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -41.0,
+   "score": -47.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "Promptwise (AI video course platform), first trial day",
@@ -3839,7 +3997,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -42.0,
+   "score": -48.0,
    "thread": {
     "date": "2026-10-03",
     "subject": "@mattwayne.io reel: my best memecoin trading filter, the three-column terminal filter",
@@ -3866,7 +4024,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -43.0,
+   "score": -49.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
@@ -3893,7 +4051,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -44.0,
+   "score": -50.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "Rashawn Leche reel via @slavenameflick: motion control with Higgsfield Genjutsu and the Auratar",
@@ -3920,7 +4078,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -45.0,
+   "score": -51.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
@@ -3946,7 +4104,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -46.0,
+   "score": -52.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI Automation Society (Skool, Nate Herk), free tier",
@@ -3972,7 +4130,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -47.0,
+   "score": -53.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI Video Bootcamp course, judged after building a framework from it",
@@ -3998,7 +4156,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -48.0,
+   "score": -54.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
@@ -4024,7 +4182,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -49.0,
+   "score": -55.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "Automatable Free (Skool, Jono Catliff), free tier",
@@ -4050,7 +4208,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -50.0,
+   "score": -56.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "Brendans AI Community (Skool, Brendan Jowett), free tier, plus Review Harvest (archived)",
@@ -4076,7 +4234,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -51.0,
+   "score": -57.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
@@ -4103,7 +4261,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -52.0,
+   "score": -58.0,
    "thread": {
     "date": "2026-09-29",
     "subject": "AI Video Bootcamp (Skool, Daniel Riley), $9/month AI video course",
@@ -4129,7 +4287,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -53.0,
+   "score": -59.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
@@ -4155,7 +4313,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -54.0,
+   "score": -60.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
@@ -4182,7 +4340,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -55.0,
+   "score": -61.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "Cryptonary 100x Chaser",
@@ -4209,7 +4367,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -56.0,
+   "score": -62.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "EasyInfluencers.ai",
@@ -4236,7 +4394,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -57.0,
+   "score": -63.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "@alliecatbuildai reel (comment CLAUDE for the free tutorial)",
@@ -4263,7 +4421,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -58.0,
+   "score": -64.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Butter (hellobutter.io)",
@@ -4289,7 +4447,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -59.0,
+   "score": -65.0,
    "thread": {
     "date": "2026-09-21",
     "subject": "@tradewithjarvisss Instagram reel",
@@ -4316,7 +4474,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -60.0,
+   "score": -66.0,
    "thread": {
     "date": "2026-09-21",
     "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
@@ -4343,7 +4501,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -61.0,
+   "score": -67.0,
    "thread": {
     "date": "2026-09-21",
     "subject": "TCFX / Trading Central FX (@amirscentral)",
@@ -4370,7 +4528,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -62.0,
+   "score": -68.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
@@ -4397,7 +4555,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -63.0,
+   "score": -69.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
@@ -4424,7 +4582,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -64.0,
+   "score": -70.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
@@ -4450,7 +4608,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -65.0,
+   "score": -71.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Invo (invoapp.com referral link)",
@@ -4477,7 +4635,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -66.0,
+   "score": -72.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Keza Studio \"10 app templates\"",
@@ -4504,7 +4662,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -67.0,
+   "score": -73.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Potion Alpha (Orangie) and trader Kimchi",
@@ -4530,7 +4688,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -68.0,
+   "score": -74.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "pump.fun",
@@ -4556,7 +4714,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -69.0,
+   "score": -75.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "sideshift.app",
@@ -4583,7 +4741,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -70.0,
+   "score": -76.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
@@ -4610,7 +4768,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -71.0,
+   "score": -77.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "targetingfinance pricing psychology carousel",
@@ -4637,7 +4795,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -72.0,
+   "score": -78.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@lp_predicts Kalshi copy-wallets reel",
@@ -4664,7 +4822,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -73.0,
+   "score": -79.0,
    "thread": {
     "date": "2026-10-11",
     "subject": "Supplement Brand Accelerator (Skool, Lou Antonio Matera, free, 3,445 members)",
@@ -4691,7 +4849,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -74.0,
+   "score": -80.0,
    "thread": {
     "date": "2026-10-09",
     "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
@@ -4718,7 +4876,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -75.0,
+   "score": -81.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "Skool fashion design, marketing and branding communities (survey of 65)",
@@ -4745,7 +4903,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -76.0,
+   "score": -82.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "forexfactory.com (economic calendar, forums, weekly JSON feed)",
@@ -4772,7 +4930,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -77.0,
+   "score": -83.0,
    "thread": {
     "date": "2026-10-06",
     "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
@@ -4799,7 +4957,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -78.0,
+   "score": -84.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
@@ -4825,7 +4983,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -79.0,
+   "score": -85.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
@@ -4852,7 +5010,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -80.0,
+   "score": -86.0,
    "thread": {
     "date": "2026-10-03",
     "subject": "@mattwayne.io reel: my best memecoin trading filter, the three-column terminal filter",
@@ -4879,7 +5037,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -81.0,
+   "score": -87.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
@@ -4906,7 +5064,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -82.0,
+   "score": -88.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
@@ -4932,7 +5090,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -83.0,
+   "score": -89.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
@@ -4959,7 +5117,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -84.0,
+   "score": -90.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
@@ -4986,7 +5144,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -85.0,
+   "score": -91.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "Cryptonary 100x Chaser",
@@ -5013,7 +5171,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -86.0,
+   "score": -92.0,
    "thread": {
     "date": "2026-09-21",
     "subject": "TCFX / Trading Central FX (@amirscentral)",
@@ -5040,7 +5198,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -87.0,
+   "score": -93.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Agent402 (agent402-mcp on npm, plus the @seb.ai setup guide)",
@@ -5067,7 +5225,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -88.0,
+   "score": -94.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
@@ -5093,7 +5251,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -89.0,
+   "score": -95.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
@@ -5120,7 +5278,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -90.0,
+   "score": -96.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "Cryptonary 100x Chaser",
@@ -5147,7 +5305,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -91.0,
+   "score": -97.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
@@ -5173,7 +5331,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -92.0,
+   "score": -98.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Decoded Genius Clips: AI isn't conscious, it's much worse",
@@ -5200,7 +5358,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -93.0,
+   "score": -99.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Fireship: every app is now open source",
@@ -5227,7 +5385,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -94.0,
+   "score": -100.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Mark Tilbury: laziest way to make money with AI (AI influencers)",
@@ -5254,7 +5412,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -95.0,
+   "score": -101.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: How to Survive the Next 2 Years of AI",
@@ -5281,7 +5439,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -96.0,
+   "score": -102.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Nick Saraev: what to learn instead of AI automation in 2027",
@@ -5308,7 +5466,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -97.0,
+   "score": -103.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "The Diary Of A CEO: Sahar Yousef on focus and memory",
@@ -5335,7 +5493,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -98.0,
+   "score": -104.0,
    "thread": {
     "date": "2026-10-17",
     "subject": "Tristen O'Brien: Claude Motion walkthrough",
@@ -5362,7 +5520,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -99.0,
+   "score": -105.0,
    "thread": {
     "date": "2026-10-16",
     "subject": "High-impact US news filter (CPI, FOMC, NFP) on the S1 daily crypto trend bot",
@@ -5388,7 +5546,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -100.0,
+   "score": -106.0,
    "thread": {
     "date": "2026-10-16",
     "subject": "US insider cluster-buy signal from SEC Form 4 data (paper backtest, Jul 2023 to Oct 2026)",
@@ -5414,7 +5572,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -101.0,
+   "score": -107.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@brokermanscalps AI indicator reel",
@@ -5441,7 +5599,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -102.0,
+   "score": -108.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "@grandmasterbey prop-challenge trading bot reel",
@@ -5468,7 +5626,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -103.0,
+   "score": -109.0,
    "thread": {
     "date": "2026-10-15",
     "subject": "Alta (altahq.com) AI SDR agents",
@@ -5495,7 +5653,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -104.0,
+   "score": -110.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@khan_unemployed memecoin pattern reel",
@@ -5522,7 +5680,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -105.0,
+   "score": -111.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@lp_predicts Kalshi copy-wallets reel",
@@ -5549,7 +5707,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -106.0,
+   "score": -112.0,
    "thread": {
     "date": "2026-10-14",
     "subject": "@tuuurtleee_1 memecoin filters reel",
@@ -5576,7 +5734,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -107.0,
+   "score": -113.0,
    "thread": {
     "date": "2026-10-13",
     "subject": "Jasper Aiken, \"How I Sell Smart Websites To Local Businesses\" (GoHighLevel website-plus-automation offer)",
@@ -5603,7 +5761,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -108.0,
+   "score": -114.0,
    "thread": {
     "date": "2026-10-12",
     "subject": "AI Creator League (Skool, Tim Kobru, 9 dollars a month, AI realism and weekly cash prizes)",
@@ -5630,7 +5788,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -109.0,
+   "score": -115.0,
    "thread": {
     "date": "2026-10-12",
     "subject": "Jono Catliff CRO Masterclass video and its GitHub repo (jonocatliff/CRO)",
@@ -5657,7 +5815,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -110.0,
+   "score": -116.0,
    "thread": {
     "date": "2026-10-11",
     "subject": "Supplement Brand Accelerator (Skool, Lou Antonio Matera, free, 3,445 members)",
@@ -5684,7 +5842,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -111.0,
+   "score": -117.0,
    "thread": {
     "date": "2026-10-09",
     "subject": "AI Car Trader (Skool, Ethan, 29 dollars a month, car flipping with AI prompts)",
@@ -5711,7 +5869,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -112.0,
+   "score": -118.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@cyberalgo.bots reel and CyberAlgo Pro (grid and recovery MT5 bot on gold, 159 dollars)",
@@ -5738,7 +5896,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -113.0,
+   "score": -119.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@joinproject30 reel: inducements, the final sweep before the real reversal",
@@ -5765,7 +5923,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -114.0,
+   "score": -120.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@thearsalaanshaikh reel: ten trading concepts ranked, order flow first, MACD last",
@@ -5792,7 +5950,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -115.0,
+   "score": -121.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "@windsorjrtrades reel: the five-rule 15m and 5m box strategy (order block, gap, sweep, 2R)",
@@ -5819,7 +5977,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -116.0,
+   "score": -122.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "Flexxable video: LinkedIn Signals scraping and automation for database-reactivation outreach",
@@ -5846,7 +6004,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -117.0,
+   "score": -123.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "harrisonandjames.com (free jewellery, pay shipping only)",
@@ -5873,7 +6031,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -118.0,
+   "score": -124.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "kaysgoldgroup.com, Gold Signals Club by Kay (FCA-warned unauthorised firm GTK)",
@@ -5900,7 +6058,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -119.0,
+   "score": -125.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
@@ -5927,7 +6085,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -120.0,
+   "score": -126.0,
    "thread": {
     "date": "2026-10-07",
     "subject": "finviz.com (US stock screener, heat maps, insider filings; Elite tier)",
@@ -5954,7 +6112,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -121.0,
+   "score": -127.0,
    "thread": {
     "date": "2026-10-06",
     "subject": "The Facebook Ads Clinic (Skool community, Nick Boddington)",
@@ -5981,7 +6139,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -122.0,
+   "score": -128.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "OFM Conquest (Skool, Dylan Beese) - 6 and 7 figure interviews",
@@ -6007,7 +6165,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -123.0,
+   "score": -129.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool $10k websites lessons (Nate Herk and Jono Catliff, 16 videos)",
@@ -6033,7 +6191,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -124.0,
+   "score": -130.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
@@ -6059,7 +6217,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -125.0,
+   "score": -131.0,
    "thread": {
     "date": "2026-10-04",
     "subject": "@futurewalt.ai post: NVIDIA giving away 4 AI models for free (NVIDIA Build free API tier)",
@@ -6086,7 +6244,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -126.0,
+   "score": -132.0,
    "thread": {
     "date": "2026-10-03",
     "subject": "@mattwayne.io reel: my best memecoin trading filter, the three-column terminal filter",
@@ -6113,7 +6271,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -127.0,
+   "score": -133.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "FOMO, How I Made 30K Trading Solana Meme Coins Part-Time (YouTube)",
@@ -6140,7 +6298,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -128.0,
+   "score": -134.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "Rashawn Leche reel via @slavenameflick: motion control with Higgsfield Genjutsu and the Auratar",
@@ -6167,7 +6325,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -129.0,
+   "score": -135.0,
    "thread": {
     "date": "2026-10-02",
     "subject": "Reading Reddit threads from an agent browser",
@@ -6193,7 +6351,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -130.0,
+   "score": -136.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI Automation Agency Ninjas (Skool, Dan Wardrope), database reactivation community",
@@ -6219,7 +6377,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -131.0,
+   "score": -137.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI Video Bootcamp course, judged after building a framework from it",
@@ -6245,7 +6403,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -132.0,
+   "score": -138.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "AI video tool stack as of October 2026 (Veo, Nano Banana, Seedance, Kling, MiniMax H3, Wan, HeyGen, fal)",
@@ -6271,7 +6429,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -133.0,
+   "score": -139.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "Automatable Free (Skool, Jono Catliff), free tier",
@@ -6297,7 +6455,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -134.0,
+   "score": -140.0,
    "thread": {
     "date": "2026-10-01",
     "subject": "The Elio's AI bot (Telegram channel, @elioprivate copy-trading funnel)",
@@ -6324,7 +6482,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -135.0,
+   "score": -141.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "AI Clipping Agency starter kit (Musa Mustafa, Media Metas / Crayo Inc)",
@@ -6350,7 +6508,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -136.0,
+   "score": -142.0,
    "thread": {
     "date": "2026-09-27",
     "subject": "Zupria AI model course (Bogdan Irimia, Zupria SRL)",
@@ -6377,7 +6535,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -137.0,
+   "score": -143.0,
    "thread": {
     "date": "2026-09-26",
     "subject": "Clipping as a service (@natejbiz reel, video transcribed)",
@@ -6404,7 +6562,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -138.0,
+   "score": -144.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "@jasontabinass AI Influencer System, and creator seeding as a method",
@@ -6431,7 +6589,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -139.0,
+   "score": -145.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Butter (hellobutter.io)",
@@ -6457,7 +6615,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -140.0,
+   "score": -146.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Higgsfield AI (higgsfield.ai)",
@@ -6484,7 +6642,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -141.0,
+   "score": -147.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
@@ -6510,7 +6668,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -142.0,
+   "score": -148.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Paid UGC creator work (via @oliver.hustles reel)",
@@ -6537,7 +6695,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -143.0,
+   "score": -149.0,
    "thread": {
     "date": "2026-09-21",
     "subject": "bradautomates/claude-video skill (\"turn YouTube tutorials into Claude Code agents\", @jens.heitmann reel)",
@@ -6564,7 +6722,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -144.0,
+   "score": -150.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "\"First AI agency client without a portfolio\" videos (The Savvy Couple and eight neighbours)",
@@ -6591,7 +6749,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -145.0,
+   "score": -151.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Avenue (avenue2.au) booking widget, the Starter Story \"$50K a month\" video",
@@ -6618,7 +6776,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -146.0,
+   "score": -152.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "GTA 6 \"four ways to earn\" carousel (_vorken_)",
@@ -6644,7 +6802,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -147.0,
+   "score": -153.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Invo (invoapp.com referral link)",
@@ -6671,7 +6829,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -148.0,
+   "score": -154.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Jev AI (TypeSafe AI)",
@@ -6697,7 +6855,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -149.0,
+   "score": -155.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "Keza Studio \"10 app templates\"",
@@ -6724,7 +6882,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -150.0,
+   "score": -156.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "pump.fun",
@@ -6750,7 +6908,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -151.0,
+   "score": -157.0,
    "thread": {
     "date": "2026-09-20",
     "subject": "sideshift.app",
@@ -6777,7 +6935,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -152.0,
+   "score": -158.0,
    "thread": {
     "date": "2026-10-08",
     "subject": "topa.io LinkedIn automation (the tool from the Flexxable video)",
@@ -6804,7 +6962,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -153.0,
+   "score": -159.0,
    "thread": {
     "date": "2026-10-05",
     "subject": "Skool YouTube lessons, top 5 test (Jono Catliff, Brendan Jowett)",
@@ -6830,7 +6988,7 @@
     "has_transcript": false
    },
    "body": "",
-   "score": -154.0,
+   "score": -160.0,
    "thread": {
     "date": "2026-09-24",
     "subject": "Liam James Kay, Unethical business idea 345: cloning a paid Skool community",
@@ -6842,6 +7000,66 @@
    }
   },
   {
+   "key": "hn:50152541",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: KiviDB, a faster Redis-compatible memory database and vector cache",
+   "url": "https://github.com/kividbio/kividb",
+   "hn_url": "https://news.ycombinator.com/item?id=50152541",
+   "meta": {
+    "points": 61,
+    "comments": 39,
+    "created": "2026-10-19T13:53:52Z"
+   },
+   "body": "Hi all, So I have been working on this project KiviDB from February 2026. It started as a project for me to understand rust, having a product with no GC pauses, memory blow up after snapshots and getting OOM on running pods, and that was actually an issue I faced with Dragonfly. I wanted to have something picking the best of Rust, but also picking the best parts of other alternatives like Garnet and Dragonfly. I used AI a lot, but I was the one making the design decisions based on the tests that claude picked from my history of troubleshooting sessions as part of my job. KiviDB supports both RESP2 and RESP3 protocol. I had some founders credits on my AWS account which helped me with the infra, and running instances I could perform benchmark on. Its keyspace is sharded across threads, it is multi-threaded in nature, and performs best on Linux due to io_uring, I used the tokio_uring crate for this. It also has tokio fallback for other OS's. I hadn't open sourced it until recently as I felt it was not ready yet, the best way to learn it was to build a cloud managed service for it across all three widely used cloud providers i.e AWS, GCP and azure. Since I used to mainly work with cloud, I had some insights on what would be the best ways for the deployments, how to conduct failovers, manage SLAs, etc. And that's what I took help from claude to fast pace it. The website does look like AI slop but it works for now, given my limited resources, that's all I had. You may check it out ",
+   "score": 5.97157411210206
+  },
+  {
+   "key": "hn:50152466",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Maxwell: A new kind of model that sits between code and hardware",
+   "url": "https://heymaxwell.ai/",
+   "hn_url": "https://news.ycombinator.com/item?id=50152466",
+   "meta": {
+    "points": 39,
+    "comments": 21,
+    "created": "2026-10-19T13:47:56Z"
+   },
+   "body": "Hi HN, I'm Gal from doubleAI. We've built Maxwell, a new kind of frontier model we call a Code Execution Model. It sits between your code and the hardware. No humans in the loop! Maxwell makes the code run faster as it runs, without ever changing a single line. Maxwell sees programs from the inside: traces, profiling information, and the data flowing through them. It adapts dynamically to the environment, including the hardware, what else is running, and what the inputs look like. Code execution models change the way we approach coding. Today, Claude/Codex (and humans) keep re-optimising code for every different use-case hardware and data flow (think of LLM inference engines, like vLLM!). Our bet is that this is unnecessary, suboptimal, and that it does not scale. Instead, we think the right answer is to make code a living, thinking, thing. Early access is open at heymaxwell.ai. Happy to answer questions here.",
+   "score": 5.234400680793094
+  },
+  {
+   "key": "hn:50151980",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Show HN: I built a task system to handle the drudgery so I could focus on tasks",
+   "url": "https://3anddoneapp.com/try",
+   "hn_url": "https://news.ycombinator.com/item?id=50151980",
+   "meta": {
+    "points": 43,
+    "comments": 38,
+    "created": "2026-10-19T13:07:07Z"
+   },
+   "body": "I'm a software engineer from the east coast (who has lived in Boston, NY, the bay area, UK, France), and I built a task system called 3 & Done. It's the place you trust to store everything you need to do. It accepts voice input for rapid entry, as well as text (it stores the audio locally so you can listen to jog your memory) and emails you every morning with the three most important things for you to do that day, and why, based on what you've said about the task: deadlines, urgency, sitting too long. I've been at software engineering for about 44 years now... Grew up with it, which was unusual when I started, and I was always good about getting into the zone and doing things. The career started small, small company, then back office, the dot com startups, then smaller companies again after the bust, a non-profit, and eventually YouTube (Google at the time, but just barely) and Meta (just Facebook when I was there). When I hit the startups, and later big tech, it was no longer enough to just be an engineer, to have drive, to be good, you had to be organized, you had to follow through, get stuff done, and that's where the task systems started. Twenty-five over the years (and yes, I've actually counted), from Moleskine notebooks with Getting Things Done, evernote (remember evernote?), bug trackers, todoist, asana, google keep, among others. When I managed on the Facebook News Feed, I got into gantt charts (for me and my team), spreadsheets, OmniPlan... I remember apologizing to",
+   "score": 5.615970456983084
+  },
+  {
+   "key": "hn:50148855",
+   "source": "hn",
+   "query": "claude code",
+   "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+   "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+   "hn_url": "https://news.ycombinator.com/item?id=50148855",
+   "meta": {
+    "points": 145,
+    "comments": 110,
+    "created": "2026-10-19T05:55:31Z"
+   },
+   "body": "",
+   "score": 7.338371722364503
+  },
+  {
    "key": "hn:50142323",
    "source": "hn",
    "query": "claude code",
@@ -6849,12 +7067,12 @@
    "url": "https://thenewstack.io/torvalds-claude-code-kernel/",
    "hn_url": "https://news.ycombinator.com/item?id=50142323",
    "meta": {
-    "points": 15,
+    "points": 16,
     "comments": 1,
     "created": "2026-10-18T16:08:48Z"
    },
    "body": "",
-   "score": 3.119162312519754
+   "score": 3.179786934336189
   },
   {
    "key": "hn:50140769",
@@ -6864,12 +7082,12 @@
    "url": "https://legendofhyrule.com/",
    "hn_url": "https://news.ycombinator.com/item?id=50140769",
    "meta": {
-    "points": 167,
-    "comments": 102,
+    "points": 211,
+    "comments": 125,
     "created": "2026-10-18T13:06:54Z"
    },
    "body": "I made this ahead of the Ocarina of Time remake which comes out in 17 days. I remember the feeling of playing it as a kid but I hadn’t kept up with the story so I built a timeline to catch up before the Door of Time reopens. Nintendo’s own timeline is the authority here (Hyrule Historia and their chronicle page). The fun part was rethinking how to visualize it. It branches at the end of Ocarina into three eras depending on whether Link wins or loses, so each era is its own thread on the cloth. The threads meet again much later with Breath of the Wild. I had a lot of help from Claude. I’d often thought about building things like this but never found the time between the day job and the rest of life.",
-   "score": 7.441328473518077
+   "score": 7.774727228147752
   },
   {
    "key": "hn:50137820",
@@ -6879,12 +7097,12 @@
    "url": "https://tkgally.github.io/500-clocks/",
    "hn_url": "https://news.ycombinator.com/item?id=50137820",
    "meta": {
-    "points": 65,
-    "comments": 27,
+    "points": 72,
+    "comments": 29,
     "created": "2026-10-18T04:04:58Z"
    },
    "body": "Lately I've been testing frontier models by having them create self-contained web pages that display clocks--sort of my personal version of Simon Willison’s pelican-on-a-bicycle metric. I have been particularly impressed by the variety, interest, and quality of the clocks created by Claude Opus 5.5. Over the course of several sessions in the Claude chat interface, I had it build a total of 500 clocks. Claude’s summary of the prompting process and page design is here: https://github.com/tkgally/500-clocks/tree/main",
-   "score": 5.855756997114027
+   "score": 5.991058131979469
   },
   {
    "key": "hn:50126384",
@@ -6894,42 +7112,27 @@
    "url": "https://thingstodoapi.com/",
    "hn_url": "https://news.ycombinator.com/item?id=50126384",
    "meta": {
-    "points": 54,
-    "comments": 26,
+    "points": 57,
+    "comments": 30,
     "created": "2026-10-16T23:58:34Z"
    },
    "body": "I built an api/mcp for local events: pop-ups, one-off events, concerts, etc. currently covering the SF bay area. I've been building a bunch of consumer apps lately around personalization and recommendation and have had a hard time finding this data in one spot. agents can find useful stuff through tool calls / web search, but slow. you can scrape on demand too, but i wanted a faster data set and couldn't find an existing provider for the mix of event types I was searching for. the methodology for it is to find influential accounts/posters/etc. and do a fan out across things that they co-post with. mcp: `claude mcp add --transport http thingstodo https://api.thingstodoapi.com/mcp ` I'm considering adding other cities. If you're building something that needs local event data, would something like this be useful and where would you want coverage?",
-   "score": 5.655251618234636
+   "score": 5.777436612788993
   },
   {
-   "key": "hn:50122951",
+   "key": "hn:50148882",
    "source": "hn",
-   "query": "claude code",
-   "title": "How the Claude Code team does code review",
-   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-   "hn_url": "https://news.ycombinator.com/item?id=50122951",
+   "query": "agent skills",
+   "title": "Agent-Skills.market",
+   "url": "https://agent-skills.market/",
+   "hn_url": "https://news.ycombinator.com/item?id=50148882",
    "meta": {
-    "points": 472,
-    "comments": 468,
-    "created": "2026-10-16T19:04:47Z"
+    "points": 15,
+    "comments": 10,
+    "created": "2026-10-19T05:58:46Z"
    },
    "body": "",
-   "score": 9.234396772715073
-  },
-  {
-   "key": "hn:50122776",
-   "source": "hn",
-   "query": "claude code",
-   "title": "Show HN: Stoke Money – Personal finance app built around a cash flow forecast",
-   "url": "https://stoke.money",
-   "hn_url": "https://news.ycombinator.com/item?id=50122776",
-   "meta": {
-    "points": 33,
-    "comments": 20,
-    "created": "2026-10-16T18:54:47Z"
-   },
-   "body": "Hi HN, I've been through many finance tracking apps, starting with Personal Capital, then Monarch, and most recently Copilot. None of them have worked perfectly for my needs. All of these apps tend to model “cash flow” as the net sum of your transactions during a month, yet while credit card charges are reported immediately, they are typically deducted from checking (cash) accounts the following month when the bill is due. As a result, I've always had to maintain a separate spreadsheet to track my actual cash flow. These apps also have a huge focus on managing budgets, which has never been for me. My spending is rarely consistent month-to-month, so every month I'm comparing my fully justified spending against my budget, and tweaking my budget until I “pass”. So I built yet another finance tracking app. It has the usual components - accounts, transactions, categories - but the core is a cash flow projection engine, and everything else is built around it. Budgets are gone. Instead, each income/spending category is projected forward from your historical activity, but not as a flat monthly number. They land in whatever account you historically use (e.g. checking account for paychecks/rent/bills, credit/debit cards for daily spending). Credit card payments are modeled automatically based on your projected credit card balance. You can set up your own recurring transfers between accounts as well, to model savings, for example. The end result is that the app can forecast how your cas",
-   "score": 5.048621743477873
+   "score": 3.9715363586389665
   },
   {
    "key": "hn:50145715",
@@ -6939,12 +7142,57 @@
    "url": "https://github.com/finereli/whatsapp-mcp",
    "hn_url": "https://news.ycombinator.com/item?id=50145715",
    "meta": {
-    "points": 48,
-    "comments": 35,
+    "points": 146,
+    "comments": 78,
     "created": "2026-10-18T21:36:10Z"
    },
    "body": "I wanted my humble Claude on mobile to access my WhatsApp messages but the only options I could find either required WhatsApp Business or an actual server to run Baileys on. I wanted to run it for free on ClaudeFlare and with my personal WhatsApp account, so I built this. Important feature - it connects to your Google account as well as WhatsApp to grab the names of all your WhatsApp contacts, otherwise you get only phone numbers for many of them and search doesn't work properly. This is a single user install because it's both gray area and very private - so point your agent at the repo and let it set things up.",
-   "score": 5.683579767338681
+   "score": 7.175156513012247
+  },
+  {
+   "key": "hn:50154029",
+   "source": "hn",
+   "query": "open data api",
+   "title": "Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces",
+   "url": "https://news.ycombinator.com/item?id=50154029",
+   "hn_url": "https://news.ycombinator.com/item?id=50154029",
+   "meta": {
+    "points": 39,
+    "comments": 19,
+    "created": "2026-10-19T16:00:18Z"
+   },
+   "body": "Hi HN, we’re Robert and Din from Laminar ( https://laminar.sh ). We’ve been building open-source observability for AI agents since 2024. Recently, we released flow-1, a model trained with RL to find errors in agent traces. On our benchmark ( https://laminar.sh/blog/flow-1 ), it matches GPT-6-sol in detection quality while being 23x cheaper. This makes it affordable to analyze every production agent trace, without sampling. Here’s a one-minute walkthrough: https://youtu.be/KJa3h6ZJNLQ We also put together a post with example traces and analyses from flow-1 and other models: https://laminar.sh/blog/flow-1-in-action Agent observability is crowded, so instead of a bullet list of how Laminar differs from X, we’ll explain how we’re solving agent observability from first principles. Agents now run for many steps and fail implicitly. An agent can click the wrong button or cite the wrong document while every call completes successfully. These errors are the most useful ones to catch and understand. To find them, you need to understand what the agent was trying to do and inspect its LLM calls and tool results. Simply looking at the final agent output is not enough. Collecting traces alone doesn’t solve this. A lot of agent observability platforms are still data collectors at their core. You can end up paying to store traces that nobody has time to read or extract value from. Using another LLM to inspect traces is THE solution, but capable models are expensive at scale and cheaper ones ",
+   "score": 5.186745590890932
+  },
+  {
+   "key": "hn:50151036",
+   "source": "hn",
+   "query": "car data",
+   "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+   "url": "https://news.ycombinator.com/item?id=50151036",
+   "hn_url": "https://news.ycombinator.com/item?id=50151036",
+   "meta": {
+    "points": 177,
+    "comments": 289,
+    "created": "2026-10-19T11:24:34Z"
+   },
+   "body": "I saw this LinkedIn post from a Meta engineer and it resonated with me: https://www.linkedin.com/posts/ali-hamie_im-an-engineer-at-m... > I'm an engineer at Meta and I never felt this uncomfortable doing my job. I'm writing code these days and it all feels like a black box. This new standard of shipping with AI is moving so fast that if we're going to spend our time checking each line of code, it's going to take forever. That means you can end up with systems you've built where you don't truly understand how all the code works. You understand the high level, but not every detail. And maybe this is becoming the new standard. It goes against every instinct of being a software engineer. I'm used to understanding what I'm building. Now I'm trying to figure out how much I need to understand before I'm comfortable moving forward. Are other engineers feeling this too? How are you handling this?",
+   "score": 8.016724011782344
+  },
+  {
+   "key": "hn:50135854",
+   "source": "hn",
+   "query": "car data",
+   "title": "Ask HN: How do you deal with AI output of your boss?",
+   "url": "https://news.ycombinator.com/item?id=50135854",
+   "hn_url": "https://news.ycombinator.com/item?id=50135854",
+   "meta": {
+    "points": 17,
+    "comments": 14,
+    "created": "2026-10-17T22:42:47Z"
+   },
+   "body": "So, my boss goes on a rampage. You can clearly see the joy and at the same time the rage and impatience. AI is the tool he always wanted. We are too slow. Process is out of the window. No need for sprints anymore. No planning, just doing. All people downstream must somehow adapt. Whenever i see now his automated messages in slack, my natural reaction is: why do i even bother reading that? Thats for machines to read. He does not need me? Clearly i am not made for that. What is he expecting me to do? To confirm how great the AI did the job? Should i remember all these perfect presentations AI has created and integrate it into my doings into the coming weeks? I am torn. Should i really free my AI and deal with all this incoming text? Is this the way to react on this perfection? I am not mad at him, it clearly frees him of all the burder of dealing with people. I just dont know how to deal with this output personally. It is not for humans. I feel left alone. This is not a company anymore. Everyone is talking to AI now. This feels like chaos. Where everyone can do everything and stepping into each other's domain and it is perfect. The only way AI is stopped at are the ACLs. And because AI does everything for me, i don't remember things anymore, as i have no emotion connected with it. Feels like bad schooling and memoizing and get through it and you can't as it so dry and lifeless. So, how people deal with it in a company context? How have they setup their machines to react and sti",
+   "score": 4.24439685844727
   },
   {
    "key": "hn:50126334",
@@ -6962,34 +7210,30 @@
    "score": 5.438079308923196
   },
   {
-   "key": "hn:50121562",
-   "source": "hn",
-   "query": "car data",
-   "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
-   "url": "https://news.ycombinator.com/item?id=50121562",
-   "hn_url": "https://news.ycombinator.com/item?id=50121562",
+   "key": "gh:gathin23/cleanyourtv",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "Gathin23/cleanyourtv: Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+   "url": "https://github.com/Gathin23/cleanyourtv",
+   "repo": "Gathin23/cleanyourtv",
    "meta": {
-    "points": 88,
-    "comments": 36,
-    "created": "2026-10-16T17:31:42Z"
-   },
-   "body": "I am a LegalTech Attorney leading a developer team from Costa Rica. While trying to load credits onto my Anthropic API account (claude.com), I experienced a critical internationalization (i18n) and UX failure that has placed an unfair financial burden on me due to a severe oversight in their payment pipeline. The platform prompted me for a payment. Since I am in a Spanish-speaking region where localized systems and keyboards handle dots and commas differently, I typed 5.04. Anthropic’s input system completely failed to sanitize or validate the data. Instead of throwing a formatting error or converting it properly, it silently stripped the decimal internally and instantly charged my credit card $504.00 USD instead of $5.04 USD. To make matters worse, there was no confirmation modal or review screen summarizing the final amount before processing the transaction. It was a single-click, instantaneous overcharge. Anticipating the Obvious Skepticism: Before anyone suggests \"you should have checked your regional settings\" or \"just wait for the chargeback\": 1. Users are not the QA team: In financial software, a system is never supposed to guess or automatically manipulate a numerical input without explicit validation. If an input is ambiguous due to locale differences, the application must reject it or ask for clarification, not execute a 100x overcharge. 2. Scale of the vulnerability: This time it was $504.00, which is an unfair and frustrating burden for independent developers. But",
-   "score": 6.294095326054252
-  },
-  {
-   "key": "hn:50119991",
-   "source": "hn",
-   "query": "car data",
-   "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-   "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-   "hn_url": "https://news.ycombinator.com/item?id=50119991",
-   "meta": {
-    "points": 218,
-    "comments": 93,
-    "created": "2026-10-16T15:55:40Z"
+    "stars": 4975,
+    "created": "2026-10-17",
+    "pushed": "2026-10-19",
+    "language": "Java",
+    "topics": [
+     "adb",
+     "adblock",
+     "android-tv",
+     "android-tv-launcher",
+     "apple-tv",
+     "bloatware-removal",
+     "claude-code",
+     "debloat"
+    ]
    },
    "body": "",
-   "score": 7.660719120951503
+   "score": 8.512381634419015
   },
   {
    "key": "gh:arekejoker/qwen21-nsfw-pose-skill",
@@ -6999,9 +7243,9 @@
    "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
    "repo": "Arekejoker/qwen21-nsfw-pose-skill",
    "meta": {
-    "stars": 2921,
+    "stars": 3361,
     "created": "2026-10-13",
-    "pushed": "2026-10-17",
+    "pushed": "2026-10-19",
     "language": "Python",
     "topics": [
      "agent-skill",
@@ -7013,31 +7257,7 @@
     ]
    },
    "body": "",
-   "score": 7.980023592310645
-  },
-  {
-   "key": "gh:gathin23/tv-vibehack",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "Gathin23/tv-vibehack: Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.",
-   "url": "https://github.com/Gathin23/tv-vibehack",
-   "repo": "Gathin23/tv-vibehack",
-   "meta": {
-    "stars": 2160,
-    "created": "2026-10-17",
-    "pushed": "2026-10-18",
-    "language": "Java",
-    "topics": [
-     "adb",
-     "android-tv",
-     "claude-code",
-     "debloat",
-     "launcher",
-     "xiaomi"
-    ]
-   },
-   "body": "",
-   "score": 7.6783263565068856
+   "score": 8.120291313968561
   },
   {
    "key": "gh:leonxlnx/earshot",
@@ -7047,7 +7267,7 @@
    "url": "https://github.com/Leonxlnx/earshot",
    "repo": "Leonxlnx/earshot",
    "meta": {
-    "stars": 839,
+    "stars": 1495,
     "created": "2026-10-15",
     "pushed": "2026-10-18",
     "language": "Python",
@@ -7060,7 +7280,33 @@
     ]
    },
    "body": "",
-   "score": 6.733401891837359
+   "score": 7.310550158534422
+  },
+  {
+   "key": "gh:alchaincyf/huashu-motion",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+   "url": "https://github.com/alchaincyf/huashu-motion",
+   "repo": "alchaincyf/huashu-motion",
+   "meta": {
+    "stars": 901,
+    "created": "2026-10-18",
+    "pushed": "2026-10-19",
+    "language": "JavaScript",
+    "topics": [
+     "agent-skills",
+     "animation",
+     "claude-code",
+     "codex",
+     "gsap",
+     "launch-video",
+     "motion-graphics",
+     "skills"
+    ]
+   },
+   "body": "",
+   "score": 6.804614520062624
   },
   {
    "key": "gh:noniv/web-ocean",
@@ -7070,14 +7316,31 @@
    "url": "https://github.com/Noniv/web-ocean",
    "repo": "Noniv/web-ocean",
    "meta": {
-    "stars": 684,
+    "stars": 763,
     "created": "2026-10-16",
     "pushed": "2026-10-17",
     "language": "HTML",
     "topics": []
    },
    "body": "",
-   "score": 6.529418838262226
+   "score": 6.638567789166521
+  },
+  {
+   "key": "gh:marycache/imozuru",
+   "source": "github",
+   "query": "claude-code created:>{since} stars:>20",
+   "title": "MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル",
+   "url": "https://github.com/MaryCache/imozuru",
+   "repo": "MaryCache/imozuru",
+   "meta": {
+    "stars": 759,
+    "created": "2026-10-13",
+    "pushed": "2026-10-19",
+    "language": "Python",
+    "topics": []
+   },
+   "body": "",
+   "score": 6.633318433280377
   },
   {
    "key": "gh:i12bp8/decomp.wtf",
@@ -7087,7 +7350,7 @@
    "url": "https://github.com/i12bp8/decomp.wtf",
    "repo": "i12bp8/decomp.wtf",
    "meta": {
-    "stars": 498,
+    "stars": 509,
     "created": "2026-10-13",
     "pushed": "2026-10-15",
     "language": "Python",
@@ -7103,67 +7366,24 @@
     ]
    },
    "body": "",
-   "score": 6.212606095751519
+   "score": 6.234410725718371
   },
   {
-   "key": "gh:alchaincyf/huashu-motion",
+   "key": "gh:ansub/tv-detox",
    "source": "github",
    "query": "claude-code created:>{since} stars:>20",
-   "title": "alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
-   "url": "https://github.com/alchaincyf/huashu-motion",
-   "repo": "alchaincyf/huashu-motion",
+   "title": "Ansub/tv-detox: Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
+   "url": "https://github.com/Ansub/tv-detox",
+   "repo": "Ansub/tv-detox",
    "meta": {
-    "stars": 404,
+    "stars": 504,
     "created": "2026-10-18",
-    "pushed": "2026-10-18",
-    "language": "JavaScript",
-    "topics": [
-     "agent-skills",
-     "animation",
-     "claude-code",
-     "codex",
-     "gsap",
-     "launch-video",
-     "motion-graphics",
-     "skills"
-    ]
-   },
-   "body": "",
-   "score": 6.003887067106539
-  },
-  {
-   "key": "gh:pro-vi/cc-stretch",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "pro-vi/cc-stretch: Stretchtext replies for Claude Code: short by default, each phrase grows in place when you click it",
-   "url": "https://github.com/pro-vi/cc-stretch",
-   "repo": "pro-vi/cc-stretch",
-   "meta": {
-    "stars": 380,
-    "created": "2026-10-14",
-    "pushed": "2026-10-18",
-    "language": "TypeScript",
+    "pushed": "2026-10-19",
+    "language": "Java",
     "topics": []
    },
    "body": "",
-   "score": 5.942799375126701
-  },
-  {
-   "key": "gh:marycache/imozuru",
-   "source": "github",
-   "query": "claude-code created:>{since} stars:>20",
-   "title": "MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル",
-   "url": "https://github.com/MaryCache/imozuru",
-   "repo": "MaryCache/imozuru",
-   "meta": {
-    "stars": 315,
-    "created": "2026-10-13",
-    "pushed": "2026-10-16",
-    "language": "Python",
-    "topics": []
-   },
-   "body": "",
-   "score": 5.755742213586912
+   "score": 6.22455842927536
   },
   {
    "key": "gh:licincan/blender-ai-mcp-addon",
@@ -7173,7 +7393,7 @@
    "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
    "repo": "LiCinCan/blender-ai-mcp-addon",
    "meta": {
-    "stars": 787,
+    "stars": 966,
     "created": "2026-10-15",
     "pushed": "2026-10-18",
     "language": "Python",
@@ -7189,7 +7409,7 @@
     ]
    },
    "body": "",
-   "score": 6.669498089857879
+   "score": 6.874198495453294
   },
   {
    "key": "gh:cranebeaker/coop-anything",
@@ -7199,14 +7419,31 @@
    "url": "https://github.com/cranebeaker/coop-anything",
    "repo": "cranebeaker/coop-anything",
    "meta": {
-    "stars": 425,
+    "stars": 579,
     "created": "2026-10-16",
-    "pushed": "2026-10-18",
+    "pushed": "2026-10-19",
     "language": "C",
     "topics": []
    },
    "body": "",
-   "score": 6.054439346269371
+   "score": 6.363028103540465
+  },
+  {
+   "key": "gh:finereli/whatsapp-mcp",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "finereli/whatsapp-mcp: A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers.",
+   "url": "https://github.com/finereli/whatsapp-mcp",
+   "repo": "finereli/whatsapp-mcp",
+   "meta": {
+    "stars": 285,
+    "created": "2026-10-18",
+    "pushed": "2026-10-19",
+    "language": "TypeScript",
+    "topics": []
+   },
+   "body": "",
+   "score": 5.655991810819852
   },
   {
    "key": "gh:fzn0x/idx",
@@ -7216,7 +7453,7 @@
    "url": "https://github.com/fzn0x/idx",
    "repo": "fzn0x/idx",
    "meta": {
-    "stars": 132,
+    "stars": 148,
     "created": "2026-10-16",
     "pushed": "2026-10-18",
     "language": "Rust",
@@ -7232,7 +7469,7 @@
     ]
    },
    "body": "",
-   "score": 4.890349128221754
+   "score": 5.003946305945459
   },
   {
    "key": "gh:vakandi/opencode-rust",
@@ -7261,33 +7498,16 @@
    "score": 4.30406509320417
   },
   {
-   "key": "gh:finereli/whatsapp-mcp",
-   "source": "github",
-   "query": "mcp server created:>{since} stars:>30",
-   "title": "finereli/whatsapp-mcp: A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers.",
-   "url": "https://github.com/finereli/whatsapp-mcp",
-   "repo": "finereli/whatsapp-mcp",
-   "meta": {
-    "stars": 62,
-    "created": "2026-10-18",
-    "pushed": "2026-10-18",
-    "language": "TypeScript",
-    "topics": []
-   },
-   "body": "",
-   "score": 4.143134726391533
-  },
-  {
    "key": "gh:fazmin/cve-intel",
    "source": "github",
    "query": "mcp server created:>{since} stars:>30",
-   "title": "Fazmin/cve-intel: Local security intelligence for CVE triage - 34 tools, 25 sources, risk scores and an MCP server for AI agents, all in native Rust. Private by default.",
+   "title": "Fazmin/cve-intel: Local security intelligence for CVE triage - 31 data sources and 32 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.",
    "url": "https://github.com/Fazmin/cve-intel",
    "repo": "Fazmin/cve-intel",
    "meta": {
-    "stars": 45,
+    "stars": 72,
     "created": "2026-10-18",
-    "pushed": "2026-10-18",
+    "pushed": "2026-10-19",
     "language": "Rust",
     "topics": [
      "artificial-intelligence",
@@ -7301,33 +7521,50 @@
     ]
    },
    "body": "",
-   "score": 3.828641396489095
+   "score": 4.290459441148391
   },
   {
-   "key": "gh:btahir/reelbird",
+   "key": "gh:missuo/tamio",
    "source": "github",
    "query": "mcp server created:>{since} stars:>30",
-   "title": "btahir/reelbird: Free, open-source screen recorder for macOS. A share link the moment you stop, then auto-zoom, smooth cursor and captions under the same link. Native Swift, your own S3/R2 bucket, CLI and MCP server. A Loom and Screen Studio alternative.",
-   "url": "https://github.com/btahir/reelbird",
-   "repo": "btahir/reelbird",
+   "title": "missuo/tamio: Native SSH client for macOS: Ghostty terminal, dual-pane SFTP, live server status, E2EE iCloud sync and an MCP server for agents.",
+   "url": "https://github.com/missuo/tamio",
+   "repo": "missuo/tamio",
    "meta": {
-    "stars": 40,
-    "created": "2026-10-13",
-    "pushed": "2026-10-13",
+    "stars": 70,
+    "created": "2026-10-17",
+    "pushed": "2026-10-19",
     "language": "Swift",
+    "topics": []
+   },
+   "body": "",
+   "score": 4.2626798770413155
+  },
+  {
+   "key": "gh:zigansh1n/imnotarobot",
+   "source": "github",
+   "query": "mcp server created:>{since} stars:>30",
+   "title": "zigansh1n/imnotarobot: I am not a robot — a captcha solver for macOS: local model, Gemini vision, a stealth browser for checkbox captchas, RuCaptcha as the last resort. 2Captcha-compatible API and an MCP server.",
+   "url": "https://github.com/zigansh1n/imnotarobot",
+   "repo": "zigansh1n/imnotarobot",
+   "meta": {
+    "stars": 48,
+    "created": "2026-10-19",
+    "pushed": "2026-10-19",
+    "language": "Python",
     "topics": [
-     "auto-zoom",
-     "captions",
-     "cloudflare-r2",
-     "loom-alternative",
+     "2captcha",
+     "captcha",
+     "captcha-solver",
+     "gemini",
+     "hcaptcha",
      "macos",
-     "macos-app",
-     "mcp",
-     "mcp-server"
+     "mcp-server",
+     "menubar-app"
     ]
    },
    "body": "",
-   "score": 3.713572066704308
+   "score": 3.8918202981106265
   },
   {
    "key": "gh:machina-sports/sports-skills",
@@ -7399,6 +7636,32 @@
    "score": 2.833213344056216
   },
   {
+   "key": "gh:nirholas/pump-fun-sdk",
+   "source": "github",
+   "query": "solana pump.fun pushed:>{since} stars:>10",
+   "title": "nirholas/pump-fun-sdk: Token creation launching, bonding curve trading, AMM migration, tiered fees, creator fee sharing, vanity keygen, MCP server, Telegram bot & live dashboards",
+   "url": "https://github.com/nirholas/pump-fun-sdk",
+   "repo": "nirholas/pump-fun-sdk",
+   "meta": {
+    "stars": 136,
+    "created": "2026-02-26",
+    "pushed": "2026-10-18",
+    "language": "TypeScript",
+    "topics": [
+     "agents-md",
+     "ai-agents",
+     "bundle",
+     "crypto-bot",
+     "cryptocurrency",
+     "fun",
+     "llms-txt",
+     "meme"
+    ]
+   },
+   "body": "",
+   "score": 4.919980925828125
+  },
+  {
    "key": "gh:h100envy/crawl-hive",
    "source": "github",
    "query": "solana pump.fun pushed:>{since} stars:>10",
@@ -7406,9 +7669,9 @@
    "url": "https://github.com/h100envy/crawl-hive",
    "repo": "h100envy/crawl-hive",
    "meta": {
-    "stars": 127,
+    "stars": 132,
     "created": "2026-10-10",
-    "pushed": "2026-10-18",
+    "pushed": "2026-10-19",
     "language": "TypeScript",
     "topics": [
      "crawler",
@@ -7422,7 +7685,7 @@
     ]
    },
    "body": "",
-   "score": 4.852030263919617
+   "score": 4.890349128221754
   },
   {
    "key": "gh:justfivedev/solana-pumpfun-smart-contract",
@@ -7484,14 +7747,14 @@
    "url": "https://github.com/QunatOrb/QuantOrb",
    "repo": "QunatOrb/QuantOrb",
    "meta": {
-    "stars": 24,
+    "stars": 27,
     "created": "2026-10-13",
     "pushed": "2026-10-13",
     "language": "Python",
     "topics": []
    },
    "body": "",
-   "score": 3.2188758248682006
+   "score": 3.332204510175204
   },
   {
    "key": "gh:lichess-bot-devs/lichess-bot",
@@ -7553,7 +7816,7 @@
    "meta": {
     "stars": 19,
     "created": "2025-05-04",
-    "pushed": "2026-10-18",
+    "pushed": "2026-10-19",
     "language": "C++",
     "topics": []
    },
@@ -7570,7 +7833,7 @@
    "meta": {
     "stars": 8,
     "created": "2023-07-12",
-    "pushed": "2026-10-18",
+    "pushed": "2026-10-19",
     "language": "HTML",
     "topics": []
    },
@@ -7585,7 +7848,7 @@
    "url": "https://github.com/nexmoe/VidBee",
    "repo": "nexmoe/VidBee",
    "meta": {
-    "stars": 10886,
+    "stars": 10895,
     "created": "2025-10-22",
     "pushed": "2026-10-18",
     "language": "TypeScript",
@@ -7598,7 +7861,7 @@
     ]
    },
    "body": "",
-   "score": 9.29532469588118
+   "score": 9.296151028389293
   },
   {
    "key": "gh:nateherkai/herk-edit-kit",
@@ -7608,7 +7871,7 @@
    "url": "https://github.com/nateherkai/herk-edit-kit",
    "repo": "nateherkai/herk-edit-kit",
    "meta": {
-    "stars": 1812,
+    "stars": 1859,
     "created": "2026-04-18",
     "pushed": "2026-10-14",
     "language": "HTML",
@@ -7624,7 +7887,7 @@
     ]
    },
    "body": "",
-   "score": 7.502738210754851
+   "score": 7.528331766707247
   },
   {
    "key": "gh:zeropointrepo/youtube-skills",
@@ -7634,7 +7897,7 @@
    "url": "https://github.com/ZeroPointRepo/youtube-skills",
    "repo": "ZeroPointRepo/youtube-skills",
    "meta": {
-    "stars": 1086,
+    "stars": 1093,
     "created": "2026-02-01",
     "pushed": "2026-10-14",
     "language": null,
@@ -7648,7 +7911,7 @@
     ]
    },
    "body": "",
-   "score": 6.99117688712121
+   "score": 6.9975959829819265
   },
   {
    "key": "gh:artemchuikin/youtube-skills",
@@ -7658,7 +7921,7 @@
    "url": "https://github.com/artemchuikin/youtube-skills",
    "repo": "artemchuikin/youtube-skills",
    "meta": {
-    "stars": 394,
+    "stars": 398,
     "created": "2026-08-22",
     "pushed": "2026-10-15",
     "language": null,
@@ -7674,7 +7937,7 @@
     ]
    },
    "body": "",
-   "score": 5.978885764901122
+   "score": 5.988961416889864
   },
   {
    "key": "gh:zlxlabs/videotranscriptapi",
@@ -7684,16 +7947,16 @@
    "url": "https://github.com/zlxlabs/VideoTranscriptAPI",
    "repo": "zlxlabs/VideoTranscriptAPI",
    "meta": {
-    "stars": 231,
+    "stars": 232,
     "created": "2025-04-27",
-    "pushed": "2026-10-17",
+    "pushed": "2026-10-19",
     "language": "Python",
     "topics": [
      "personal"
     ]
    },
    "body": "",
-   "score": 5.44673737166631
+   "score": 5.4510384535657
   },
   {
    "key": "gh:devhims/youtube-caption-extractor",
@@ -7722,7 +7985,7 @@
    "meta": {
     "stars": 170,
     "created": "2026-08-13",
-    "pushed": "2026-10-17",
+    "pushed": "2026-10-19",
     "language": "Python",
     "topics": [
      "agent-skills",
@@ -7761,16 +8024,453 @@
    "score": 4.770684624465665
   },
   {
-   "key": "yt:TyB7kLZPVKo",
-   "source": "youtube",
-   "query": "claude code skills workflow 2026",
-   "title": "The ONLY Claude Skills Tutorial Beginners Need in 2026",
-   "url": "https://www.youtube.com/watch?v=TyB7kLZPVKo",
+   "key": "arxiv:2610.23599",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents",
+   "url": "https://arxiv.org/abs/2610.23599",
    "meta": {
-    "channel": "100x Engineers",
-    "rank": 1
+    "published": "2026-10-16",
+    "authors": [
+     "Yewei Zhao",
+     "Derong Xu",
+     "Wei Chen",
+     "Yin Xu"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
    },
-   "body": "",
+   "body": "Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods largely organize knowledge around skill artifacts, overlooking the functional heterogeneity within individual skills and its implications for knowledge maintenance and use. Inspired by cognitive science, we propose Cognitive Differentiation in Skill Evolution (CDSE), which evolves a unified skill through four functionally distinct yet coordinated components: Meta, Experience, Tool, and Script. CDSE extracts evidence-grounded semantic gradients from successful and failed trajectories, consolidates them by functional role, and applies component-specific updates and validation with cross-component coordination and adaptive invocation. An analysis of 500 top-ranked skill packages shows that 96.8% contain knowledge spanning at least two functional roles. Across six benchmarks, three agent models, and two execution harnesses, CDSE achieves the highest scores in all 36 settings, improving over the Base agent by 7.6 percentage points and the strongest competing method in each setting by 2.6 points on average. Ablation studies further support the importance of functional differentiation and adaptive invocation.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23554",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
+   "url": "https://arxiv.org/abs/2610.23554",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Jin Ye",
+     "Yifan Jiang",
+     "Lan-zhe Guo"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Large language model agents increasingly rely on skills to extend their capabilities in complex tasks. However, scalable skill use requires Selective Skill Exposure (SSE): providing relevant procedural content when needed while avoiding unnecessary exposure that may disrupt reasoning. Existing paradigms fall short in complementary ways. Progressive disclosure exposes metadata for a growing skill library, introducing context pollution; retrieval limits catalog exposure, but static retrieval from the initial task query may be misaligned with capability needs that emerge during reasoning and may still inject unnecessary skills. We propose SkillBrowser, a Meta-Skill-managed framework that enables an agent to identify current capability needs, formulate targeted queries, and selectively load skills on demand. Across six SRA-Bench subsets and five LLMs, SkillBrowser improves aggregate accuracy over static retrieval and LLM-based selection, including multi-step tool use, and mitigates accuracy degradation on already-solvable instances. Benefits remain model- and task-dependent, with under-invocation of useful skills and additional latency as key limitations. These results demonstrate the viability of Meta-Skill-managed SSE for scalable skill repositories.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23480",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "MuninAI: A Self-Hosted Agentic Framework for Independent Research Groups",
+   "url": "https://arxiv.org/abs/2610.23480",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Markus Fischer",
+     "Jens Meiler",
+     "Matthias Elgeti"
+    ],
+    "categories": [
+     "cs.CL"
+    ]
+   },
+   "body": "Research groups that want a language model grounded in their own literature face a choice between hosted services that receive their unpublished work and self-hosted deployments that keep the data local but give the model no access to the corpus. Munin is an open-source framework for a self-hosted scientific assistant that indexes a group's corpus and its citation graph, and wraps whichever open-weight model the group can serve in an agent harness with specialised reading, search, and computation tools. We claim that the harness, rather than the specific model, is what makes the system useful on domain literature, and we ship the evaluation suite that tests this claim with the software. On 199 paired literature questions, the harness more than doubles the accuracy of the base model, from 0.387 to 0.874 (+0.487, 95% CI [0.407, 0.568]), while naive retrieve-then-answer scores below the unaided model on every backbone tested. Under the harness, roughly twice as many answer claims trace to a passage the model read itself as with fixed top-5 retrieval. When the source paper for a question is removed from the corpus, the system abstains on about nine in ten of the questions it had answered correctly on the Qwen backbones and eight in ten on gpt-oss-20b, and it produces no fabricated local citation across 300 fabricated references. The pattern holds on three backbones from two developers, including a 20-billion-parameter model that runs on a single consumer-grade GPU. With all outbound network access disabled, both Qwen backbones still exceed the published PaperQA2 accuracy. The evaluation suite runs as a single command, so an adopting group can re-run it on its own corpus and model.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23479",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents",
+   "url": "https://arxiv.org/abs/2610.23479",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Hongcheng Gao",
+     "Alex Zhou",
+     "Jay Zhu",
+     "Zelin Zheng"
+    ],
+    "categories": [
+     "cs.RO"
+    ]
+   },
+   "body": "Agents built on vision language models (VLMs) now compete with learned policies on robot manipulation leaderboards. We ask how far a coding agent can go when it controls a robot instead of a computer, and where it stops. Our system, HexaShell, keeps the harness thin: it only turns the agent's commands into robot motion. The agent drives a robot with two arms through one command line. It sees three RGB cameras and knows their calibration. After each failed attempt, the agent reads the log, finds the cause, and writes or fixes small programs called tools. In this way it keeps what it learns as code, as a coding agent does when it fixes a failing test. The tools may use only what the robot observes. They use triangulation to find where objects are, relative to each other and to the gripper. If two cameras see the same point, the point lies where the two camera rays meet. If a point lies on a known plane, such as the table or the top of a block, it lies where its ray meets that plane. When the head camera is not enough, the robot moves a wrist camera to get a second view. We build the tools on only ten layouts of one seed per task, then freeze them and test them on ten new layouts of the same seed. We use Codex with GPT-6-Astra at medium reasoning effort. On all 42 RoboDojo tasks, HexaShell reaches a success rate of 39.7% and a progress score of 48.0, averaged in the same way as the leaderboard. This is a new state of the art on RoboDojo. The limit is contact, not reasoning: pushing reaches 92.5% and memory tasks 65.0%, but tight insertion only 8.3%. When the agent fails, it usually sees the failure but cannot make the motion work. We open source the tools evolved so far at https://github.com/HexaFuture/HexaShell.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23342",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Robust Function Calling for LLM Agents Under Interface Drift",
+   "url": "https://arxiv.org/abs/2610.23342",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Aniruddha Chattopadhyay",
+     "Kanishka Halder",
+     "Partha Sarathi Roy"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.SE"
+    ]
+   },
+   "body": "Tool-augmented language-model agents rely on interface text: tool descriptions, argument schemas, and the candidate tool list shown at inference time. These interfaces often change after deployment even when the underlying tool semantics remain fixed, creating a practical reliability problem for function-calling systems. We study this failure mode as interface drift and evaluate whether a lightweight, training-free repair layer can recover robustness without retraining the base model. Our method, SchemaShield-Lite, combines schema validation, candidate-set retry for missing tool names, and one-shot constrained repair. On Qwen3.5-9B, it raises DICE-300 accuracy from 0.717 to 0.813 and BFCL-200 accuracy from 0.580 to 0.805, recovering 19/22 and 33/45 drift-induced failures with no observed repair harms. Naive retry does not explain the gains. Ablations show that candidate-set drift, especially distractor tools, accounts for most observed damage, while description and schema edits alone are less harmful. The results position validation-and-repair as a practical robustness layer for deployed LLM-agent tool use.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23077",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "When Approval Becomes Execution: Authorization-Grounded Workflow Attacks on Tool-Using Agents",
+   "url": "https://arxiv.org/abs/2610.23077",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Chenggong Shi",
+     "Hongmei Mou"
+    ],
+    "categories": [
+     "cs.CR"
+    ]
+   },
+   "body": "Tool-using language-model agents increasingly rely on local services for document access, approval management, and enterprise workflow execution. This paper studies an authorization-grounded workflow attack in the OpenClaw Agent Security Attack Competition, a controlled benchmark derived from SeClaw-style security task synthesis. Rather than using explicit policy-override instructions, the attack guides the agent through a locally coherent approval workflow: a protected document request is denied, the agent requests a normal approval token from the local approval service, and the returned token is supplied to the document service through authorized_by. Official submission traces show this pattern succeeding on three Enterprise OA document targets. We also conducted 23 controlled local validation experiments in the official OpenClaw execution environment: the original configuration reached the approval-token transition in 9/9 reruns and completed the exact target operation in 8/9 reruns, while single-component variants remained successful on the three document targets. The results provide concrete case evidence of an authorization-context gap: token possession can be treated as sufficient authorization even when requester identity, approver authority, resource scope, action type, destination or recipient, and business purpose are not jointly enforced. We present the attack pattern, controlled trace analysis, and defensive implications for context-bound tokens, service-side policy binding, agent-side authorization checks, and trace-aware benchmark design.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23071",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "Before Retrieval Begins: Safety and Tool-Use Decisions in LLM Agents",
+   "url": "https://arxiv.org/abs/2610.23071",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Aditya Nawal",
+     "Manit Baser",
+     "Mohan Gurusamy"
+    ],
+    "categories": [
+     "cs.CL"
+    ]
+   },
+   "body": "Large language models increasingly act as agents that call external tools, yet most tool-safety research examines only what follows a tool call. The prior decision of whether to call the tool remains largely unexamined and can influence downstream safety. Across the seven open-weight models, the unweighted model-average harm rate after admitted harmful requests is 74.5%. To identify what governs this decision, we apply a factorial intervention to the input request. Within our generated construction, neutralizing the requested-operation component produces the largest admission contrast (19 pp). A linear direction estimated from this contrast influences held-out admission in four of seven models; effects on operation-neutralized requests in some models show that it is not an operation-specific mechanism. We then test whether written refusal is behaviorally and representationally coupled to the same decision. Written refusal accompanies 33.6% of admitted harmful calls. Plain-text refusal training reduces unsafe admission in models that retain benign tool use, showing that response-level safety training can transfer to the call decision. Together, these results establish a partial, model-dependent relation between written refusal and tool admission. They motivate direct evaluation and supervision of tool admission rather than treating text refusal as its proxy.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23062",
+   "source": "arxiv",
+   "query": "all:\"language model\" AND all:agent AND all:tool",
+   "title": "ParetoChat: An LLM-Based Interface for Interactive Multi-Objective Optimization",
+   "url": "https://arxiv.org/abs/2610.23062",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Gokhan Ceyhan"
+    ],
+    "categories": [
+     "cs.CL",
+     "math.OC"
+    ]
+   },
+   "body": "Multi-objective optimization models are often deployed in settings where decision makers (DMs) must balance some conflicting criteria. In practice, however, stakeholders must translate their qualitative preferences between different criteria into numerical weights, priorities, or reference points required by optimization methods, which can be difficult to specify and interpret. This paper proposes \\emph{ParetoChat}, an LLM (large language model)-based expert-agent interface for interactive multi-objective optimization. The agent translates natural-language user input into structured scalarization parameters, invokes an optimization system, presents candidate solutions, and iteratively elicits feedback. We describe a multi-agent architecture that separates input processing, multi-criteria decision-making (MCDM) expertise, solution presentation, and feedback processing. We then present a simulation study using an LLM-based DM agent and benchmark ParetoChat against interactive methods implemented in DESDEO, including reference-point and NIMBUS methods. The computational experiments on multi-objective binary knapsack and set-partitioning instances show that ParetoChat can guide the search efficiently toward solutions that match the DM's preferences. An application to historical courier-order assignment instances illustrates how users can explore objective extremes and intermediate trade-offs through natural-language requests. The results indicate that LLM agents may provide a practical interaction layer between business stakeholders and optimization tools.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23517",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Combinatorial Arbitrage in Prediction Markets",
+   "url": "https://arxiv.org/abs/2610.23517",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Hongjian Shi",
+     "Daojing Zhai"
+    ],
+    "categories": [
+     "q-fin.TR",
+     "q-fin.CP"
+    ]
+   },
+   "body": "We develop a framework to identify and quantify arbitrage across logically related prediction-market contracts. We prove that prices outside the convex hull of admissible payoff vectors admit arbitrage and identify optimal arbitrage portfolios through integer programming. Using venue metadata and semantic analysis of resolution criteria, we recover 1.9 million logical relations and compile them into constraint systems covering more than 255,000 contracts. We replay full-depth Polymarket order books to simulate an arbitrageur executing these portfolios against resting orders. Among settled portfolios, guaranteed profit after spreads and fees equals 2.2% of committed capital, while profit at resolution reaches 3.2%. We find that arbitrage opportunities persist longer and attract less observed participation where relation discovery and execution are more costly.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23515",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Uncertainty-aware AI-enabled framework for predicting hydrogen dispersion in confined spaces to enhance operator situational awareness",
+   "url": "https://arxiv.org/abs/2610.23515",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Niclas Flehmig",
+     "Mary Ann Lundteigen",
+     "Shen Yin"
+    ],
+    "categories": [
+     "cs.LG"
+    ]
+   },
+   "body": "We present a two-stage AI-enabled framework for enhancing operator situational awareness during compressed hydrogen bunkering in maritime confined spaces. In the event of a leak, the framework first estimates the unknown leakage rate from early sensor readings and then forecasts how the hydrogen cloud will disperse over the next time steps, providing operators with a predicted concentration map together with confidence bounds. The framework is based on two independent AI models building one AI system. The AI system is designed as a decision-support tool. It augments sensor readings, and thus enhances operator situational awareness and supports decision-making. This enables preventive safety barriers to be deployed before hazardous concentrations are reached, while an independent emergency shutdown system remains the ultimate safety layer. The system design incorporates safeguards to ensure the AI system operates within its competence envelope. Trained and tested on an open dataset of confined-space hydrogen releases, the framework achieves a mean absolute error of $0.052$~g/s in leakage-rate estimation and $\\approx0.018$ in hydrogen-concentration prediction, approaching the sensor precision bound of $\\pm0.01$. The hydrogen-concentration prediction provides well-calibrated uncertainty estimates that allow operators to judge the reliability of each forecast. These results suggest that the framework may provide early information about hazardous concentration build-up, potentially supporting preventive actions by operators.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23063",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Known Music, Unknown Response: Leakage-Audited Dynamic Arousal Forecasting With Scheduled Future Music",
+   "url": "https://arxiv.org/abs/2610.23063",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Bin Wen",
+     "Dai-Qiao Zhang",
+     "Tien-Ping Tan"
+    ],
+    "categories": [
+     "cs.SD"
+    ]
+   },
+   "body": "Dynamic music emotion recognition usually estimates concurrent or lag-aligned labels from audio that has already been observed. We instead forecast the change in consensus arousal when the upcoming music is scheduled but all later affect labels remain hidden. Evaluation holds out complete songs, encodes each eligible 4-s chunk independently, predicts arousal innovation, and compares the correct future with displaced segments from the same song. On PMEmo and a 1,494-song DEAM evaluation pool excluded from engineering development, a complete past/future MuQ representation raises concordance correlation coefficient (CCC) by 0.389--0.507 over recent affect and remains 0.268--0.382 above a calibrated nonlinear state model. A future-only trajectory contains no past or current audio and still exceeds that state model by 0.150--0.249. The earliest legal future chunk, which ends 5.5--11 s before the target, also remains informative. Correct placement exceeds an overlapping 5-s shift by 0.100--0.209 and the acoustic-nearest eligible same-song segment by 0.078--0.105, with positive song-cluster lower bounds. These results show that both scheduled content and its within-song position carry forecast information under the stated observation rules. The study provides a leakage-controlled reference for known-future music forecasting without treating predictive substitutions as causal interventions.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.22872",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Look Back, Correct Forward: Error Feedback Calibration for Time Series Forecasting",
+   "url": "https://arxiv.org/abs/2610.22872",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Haonan Yang",
+     "Yulin He",
+     "Zhuo Li"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Time series forecasting models are increasingly deployed in continuously evolving environments. After a forecast is issued, future observations gradually arrive and reveal how the model has failed. Existing methods mainly treat such observations as supervision for parameter updates. However, it remains unclear whether verified forecasting errors can themselves provide causal feedback for correcting future predictions. To address this, we introduce Error Feedback Calibration (EFC), a fully test-time framework for deterministic post-hoc correction of time series forecasting. EFC constructs a Causal Error Diagonal (CED) from revealed errors of overlapping historical forecasts, providing a fresh view of the frozen forecaster's recent failure behavior. Then Cumulative Error Transport (CET) maps this error state to future residuals using cumulative estimation, while temporal out-of-sample validation controls the correction strength. Temporal Residual Learning (TRL) further predicts only the residual structure left after CET from recent CED trajectories, rather than relearning the entire forecasting error. Extensive experiments across forecasting backbones and datasets show that EFC broadly improves forecasting performance while substantially controlling harmful over correction.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.22742",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Negative-binomial ensemble filtering for discrete-time Hawkes network reconstruction",
+   "url": "https://arxiv.org/abs/2610.22742",
+   "meta": {
+    "published": "2026-10-15",
+    "authors": [
+     "Naratip Santitissadeekorn"
+    ],
+    "categories": [
+     "stat.ME",
+     "math.ST"
+    ]
+   },
+   "body": "We develop a sequential ensemble filter for reconstructing directed excitation networks from overdispersed multivariate counts observed on a regular time grid. The data-generating model is a discrete-time negative-binomial Hawkes process, for which we prove exact first- and second-moment stability conditions and derive a row-wise sufficient condition. The filter learns the network and the dispersion online, and a row-composition parameter forecast keeps enough ensemble variation to respond to structural change. In synthetic experiments, we demonstrate that a Poisson-based filter provides comparable point-estimate accuracy of the network, while the proposed filter provides substantially better calibrated predictive and parameter uncertainty. Under an abrupt redistribution of influence, the filter recovers connections that are absent before the change. An application to daily property-crime counts in sixteen Chicago community areas gives broadly calibrated one-step predictions and a recovered network consistent with independent temporal and geographic information.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.22727",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "OrderFlowDiT: Transport-Regularized Diffusion Transformer for Probabilistic Limit-Order Supply Forecasting",
+   "url": "https://arxiv.org/abs/2610.22727",
+   "meta": {
+    "published": "2026-10-15",
+    "authors": [
+     "Jung Hun Phee",
+     "Tucker Balch"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "q-fin.TR"
+    ]
+   },
+   "body": "We study the conditional distribution of limit-order volume submitted over the next five minutes, given the current order book and recent order flow. The task requires capturing price placement, total volume, and predictive uncertainty jointly. Coordinate-wise diffusion losses do not explicitly account for price displacement, while normalizing fields to unit mass removes information about total volume. Agreement on selected summary statistics also does not establish fidelity to the joint field distribution. We introduce OrderFlowDiT, a conditional Diffusion Transformer for unnormalized bid and ask volume-at-price fields, trained with an unbalanced optimal-transport (UOT) auxiliary loss. We also develop a full-field evaluation framework that combines a transport cost sensitive to price placement and total volume with proper scoring rules and calibration diagnostics. In the primary comparison on 1950 validation conditions across 30 U.S. equities, adding UOT reduces full-field transport cost by 45.8% and the transport energy score by 26.1% relative to training with mean squared error alone. Both measures improve for every stock. These findings support incorporating price geometry and volume into generative modeling, with field accuracy and predictive uncertainty evaluated together.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.22630",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "Network-Wide Freeway Speed Nowcasting and Forecasting from Sparse Fixed Sensors with a Probe-Supervised Graph Convolutional Recurrent Network",
+   "url": "https://arxiv.org/abs/2610.22630",
+   "meta": {
+    "published": "2026-10-15",
+    "authors": [
+     "Ran Tu",
+     "Zihao Li",
+     "Arash Mirzaei"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ]
+   },
+   "body": "Traffic agencies need current and near-future speeds on every link of their network, but their fixed sensors cover only part of it. We study joint nowcasting and next-hour forecasting of hourly speeds on all 4{,}127 directional freeway links of the Dallas--Fort Worth region from sensors on 643 links (15.6%). Historical probe-vehicle data supervise every link in training; only sensor readings are used at inference. We call this setting probe-supervised sparse sensing. We propose GCRN+, a graph convolutional recurrent network that predicts deviations from a historical speed profile. It combines a parameter-free, direction-aware kernel interpolation of sensor anomalies, used as input features and as an output baseline, with a diffusion-convolutional GRU on the directed road graph, a low-rank adaptive graph and learnable link embeddings. It scales linearly with network size and trains on a CPU. Sensor readings are emulated from probe speeds, which isolates spatio-temporal inference from detector calibration. On four held-out test days, GCRN+ attains an RMSE of 2.21~mph for the current hour and 2.39~mph for the next hour on unsensored links, against 3.23~mph for the historical average. The best baselines that use the same interpolation features reach 2.53 and 2.75~mph. Adapted recent models without these features (STID, STAEformer, ImputeFormer, MoGERNN) reach at best 2.54 and 2.53~mph; this comparison is between complete pipelines rather than architectures. GCRN+ is best in every distance band except links not connected to any sensor through the road graph. Ablations within one recurrent backbone attribute most of the gain to the link embeddings and the adaptive graph, which can be trained because probe labels exist for every link. For congestion detection on unsensored links, recall rises from 77\\% (historical average) and 86% (best competitor) to 89% at aprecision of 0.94.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.22358",
+   "source": "arxiv",
+   "query": "all:\"prediction market\" OR all:calibration AND all:forecast",
+   "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+   "url": "https://arxiv.org/abs/2610.22358",
+   "meta": {
+    "published": "2026-10-15",
+    "authors": [
+     "Jiachen Yao",
+     "Xiyuan Zhang",
+     "Annan Yu",
+     "Boran Han"
+    ],
+    "categories": [
+     "cs.LG"
+    ]
+   },
+   "body": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantiles, leaving the dependence structure of future trajectories unspecified. This distinction matters for trajectory-dependent quantities such as cumulative demand, peak load, and event timing, yet point and marginal scores do not reveal it. To model this dependence, we introduce PathFM, a trajectory-based forecasting model that uses flow matching to generate complete future paths. We further distill the model to one or two steps and share history attention cache across draws. Together, these enable PathFM to generate multiple paths for a single series in roughly the time needed for one query to a quantile model. The distilled sampler also makes it practical to optimize a calibration loss directly. PathFM achieves competitive marginal accuracy on the established forecasting benchmarks fev-bench and TIME. To complement these evaluations, we introduce Forecast Path Score Bench (fps-bench), which augments fev-bench tasks with energy and variogram scores and downstream metrics. PathFM achieves a higher aggregate path score on fps-bench than all evaluated external baselines. Experiments on chaotic systems further show that our flow model sustains long-run variability, while strong baselines rapidly collapse. PathFM makes generative time series forecasting both competitive and practical, enabling diverse downstream applications.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23826",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "Self-Building Labs",
+   "url": "https://arxiv.org/abs/2610.23826",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Jiaru Bai",
+     "Yuchi Zhao",
+     "Han Hao",
+     "Miroslav Bogdanovic"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.MA",
+     "cs.RO"
+    ]
+   },
+   "body": "Self-driving laboratories (SDLs) accelerate scientific discovery by automating experimental execution and optimization. AI agents can increasingly propose new experiments, but existing SDLs can only run the procedures they were built for. Adapting them to a new experiment still takes extensive manual engineering, which makes laboratory flexibility the bottleneck for scaling discovery. We introduce the self-building laboratory (SBL), which designs, configures, and operates its own laboratory setup given a high-level scientific goal. SBL starts from whatever already exists, from an empty room to a working SDL, and builds the missing capabilities: the lab layout, its digital twin, robot skills, and experimental workflows. We demonstrate the system working across different robots and setups, scaling from a single workstation to laboratories with several robots working together. We validate SBL's end-to-end capabilities through a real-world quantum-dot synthesis experiment. By shifting the role of human researchers from manually configuring and programming device automation to specifying scientific objectives, SBL makes scientific automation more accessible, flexible, and scalable. Project website: https://self-building-labs.github.io/",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23791",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery",
+   "url": "https://arxiv.org/abs/2610.23791",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Yuxing Chen",
+     "Zhisheng Zhang",
+     "Cheng Tang",
+     "Wei Li"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Computational drug discovery requires agents to compose scientific operations and adapt to changing evidence and constraints. Here we introduce DrugHarness, an evolvable agent harness coupling composable scientific execution with conditional skill induction. Its environment integrates over 80 scientific operations, biomedical resources and task-specific code, preserving associations among candidates, results and artifacts. From execution trajectories and outcome feedback, DrugHarness induces action hypotheses with observable applicability conditions, recommended actions and supporting evidence. An independent review agent evaluates candidate skills derived from these hypotheses through source verification and, when needed, targeted execution trials. Admitted skills guide subsequent tasks and are revised through feedback. Evaluation on MolBench and SMDD-Bench demonstrates capabilities in molecular screening, optimization and constrained design. Without evolution, DrugHarness exceeds reported MolClaw-CC results by 10.8 percentage points in affinity-comparison accuracy and 55% in mean top-three active hits on MolBench. Retrospective evaluation on skill-development tasks shows that evolution increases Qwen's affinity-comparison accuracy from 62.2% to 81.1% and optimization success from 79.5% to 87.2%. In a prospective HPK1 study, DrugHarness achieves a more favorable median docking score than Biomni among system-specific candidates. A synthesized compound achieves a cellular IC50 of 14.19 nM, a 2.64-fold potency improvement over the best input reference, with activity competitive with two selected compounds designed by experienced medicinal chemists. These results support conditional skill evolution for scientific agents and demonstrate a workflow connecting computational drug design with experimental validation.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23574",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents",
+   "url": "https://arxiv.org/abs/2610.23574",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Mingze Yin",
+     "Xiaohan Wang",
+     "Dian Li",
+     "Longfei Luo"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "While Large Language Model (LLM) agents have demonstrated remarkable capabilities across complex tasks, they predominantly operate in isolated sessions, lacking the ability to continually learn from historical interactions or adapt to user-specific environments. Existing self-evolution paradigms often indiscriminately inject raw interaction trajectories into memory or skill modules, leading to obscured behavioral patterns and compromised update controllability. Furthermore, as foundational LLM reasoning improves, the bottleneck for agentic evolution shifts from accumulating generic knowledge to effectively managing situational experience. To address this, we propose Darwin-Claw, an environment-adaptive self-evolving framework that systematically distills episodic experiences to drive the comprehensive evolution of operational skills and durable memory. Theoretically grounded in an iterative agent-actor and evolver-critic co-adaptation, Darwin-Claw introduces a Hierarchical Experience Consolidation System that extracts fine-grained error attributions and generalizes them into dynamically updated prototype vectors. This structured situational experience serves as interaction patches for context-sensitive perception and explicit optimization signals for skill refinement. Practically, Darwin-Claw is a readily deployable, automated framework compatible with mainstream agent systems without requiring manual curation. Extensive experiments on WildClawBench demonstrate that Darwin-Claw yields substantial performance improvements, establishing a controllable and stable pathway for the continual, user-centric adaptation of autonomous agents in real-world ecosystems.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23104",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.23104",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Zijun Dou",
+     "Zhen Yang",
+     "Xijun Liu",
+     "Dongzhuoran Zhou"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Real-world frontend development requires agents to compose reproduction, generation, modification, and repair over an evolving application state. Learning a general policy for this process requires translating heterogeneous execution feedback into task-aligned rewards and effective credit assignment across long sequences of interdependent actions. We introduce WebCoder, a general frontend development agent trained with artifact-grounded agentic reinforcement learning. Our key idea is to assess diverse development activities through their effects on a shared executable artifact and its satisfaction of task requirements. We build Webdev-World, an executable environment that integrates code editing, application execution, browser inspection, and on-demand skills while preserving project state across interactions. An independent verifier evaluates the final application against task requirements to provide terminal rewards, while changes in intermediate artifact progress redistribute the resulting rollout advantage across development segments. Context compaction and message-tree sample construction support training on trajectories beyond a single context window while avoiding repeated loss computation on shared generated history. We further introduce Webdev-Bench to evaluate composed development requirements within a single project. On Webdev-Bench, WebCoder-27B raises requirement satisfaction from 64.8 for its Qwen3.8-27B base model to 72.8, exceeding Claude-Opus-4.8 (65.1) and GPT-5.4 (59.6); on Vision2Web, it improves the average visual and functional score from 41.1 to 62.4, on par with Claude-Opus-4.8. Ablation studies confirm the contributions of artifact-grounded credit assignment and long-horizon training.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.23048",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "Distill Until Divergence: Error-Truncated Hindsight Distillation for Agentic RL",
+   "url": "https://arxiv.org/abs/2610.23048",
+   "meta": {
+    "published": "2026-10-16",
+    "authors": [
+     "Yibin Huang",
+     "Conghui Zhu"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "Long-horizon interaction requires agents to make multiple decisions in a changing environment. Outcome-based GRPO lacks fine-grained guidance for intermediate decisions. Recent methods distill completed trajectories into reusable skills and use hindsight-conditioned OPD to provide dense token-level credit. However, skill-induced probability shifts do not necessarily represent reward-aligned credit; especially after an erroneous action changes subsequent interaction states, skill-conditioned supervision may become mismatched with the current state. To address this mismatch, we propose \\methodname{}, which routes two complementary hindsight skills according to trajectory outcomes and error boundaries: Positive skills capture successful workflows to reinforce successful trajectories and pre-error decisions, while Negative skills capture failure-specific corrections to target decisive errors. The post-error suffix is optimized exclusively by GRPO, retaining outcome-based learning without extending potentially mismatched hindsight supervision. Extensive experiments demonstrate competitive task performance and support effective fine-grained credit allocation.",
+   "score": 1.0
+  },
+  {
+   "key": "arxiv:2610.22740",
+   "source": "arxiv",
+   "query": "cat:cs.AI AND all:skills AND all:agent",
+   "title": "R$^2$Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop",
+   "url": "https://arxiv.org/abs/2610.22740",
+   "meta": {
+    "published": "2026-10-15",
+    "authors": [
+     "Mingda Zhang",
+     "Yun Huang",
+     "Qiang Huang",
+     "Yanjin Li"
+    ],
+    "categories": [
+     "cs.AI"
+    ]
+   },
+   "body": "In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R$^2$Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R$^2$Orch consistently outperforms baselines across question answering, math, code, and interactive tasks.",
    "score": 1.0
   },
   {
@@ -7781,19 +8481,32 @@
    "url": "https://www.youtube.com/watch?v=kt5a-TXmWew",
    "meta": {
     "channel": "Tech With Tim",
+    "rank": 1
+   },
+   "body": "",
+   "score": 1.0
+  },
+  {
+   "key": "yt:TyB7kLZPVKo",
+   "source": "youtube",
+   "query": "claude code skills workflow 2026",
+   "title": "The ONLY Claude Skills Tutorial Beginners Need in 2026",
+   "url": "https://www.youtube.com/watch?v=TyB7kLZPVKo",
+   "meta": {
+    "channel": "100x Engineers",
     "rank": 2
    },
    "body": "",
    "score": 0.5
   },
   {
-   "key": "yt:u2QqWkMv3Lg",
+   "key": "yt:J9NQTYUP6k0",
    "source": "youtube",
    "query": "claude code skills workflow 2026",
-   "title": "Claude Code Full Course 2026 | How Senior Engineers Actually Build with AI",
-   "url": "https://www.youtube.com/watch?v=u2QqWkMv3Lg",
+   "title": "How the Top 1% Use Claude Code Differently",
+   "url": "https://www.youtube.com/watch?v=J9NQTYUP6k0",
    "meta": {
-    "channel": "JavaScript Mastery",
+    "channel": "Simon Scrapes",
     "rank": 3
    },
    "body": "",
@@ -7826,19 +8539,6 @@
    "score": 1.0
   },
   {
-   "key": "yt:Y4bpWRLdRoA",
-   "source": "youtube",
-   "query": "mcp server build tutorial",
-   "title": "How to Build Your First MCP Server (in Less Than 5 Minutes)",
-   "url": "https://www.youtube.com/watch?v=Y4bpWRLdRoA",
-   "meta": {
-    "channel": "Postman",
-    "rank": 2
-   },
-   "body": "",
-   "score": 0.5
-  },
-  {
    "key": "yt:Fhy_VFMlE9s",
    "source": "youtube",
    "query": "mcp server build tutorial",
@@ -7846,6 +8546,19 @@
    "url": "https://www.youtube.com/watch?v=Fhy_VFMlE9s",
    "meta": {
     "channel": "2MinutesPy",
+    "rank": 2
+   },
+   "body": "",
+   "score": 0.5
+  },
+  {
+   "key": "yt:Y4bpWRLdRoA",
+   "source": "youtube",
+   "query": "mcp server build tutorial",
+   "title": "How to Build Your First MCP Server (in Less Than 5 Minutes)",
+   "url": "https://www.youtube.com/watch?v=Y4bpWRLdRoA",
+   "meta": {
+    "channel": "Postman",
     "rank": 3
    },
    "body": "",
@@ -7891,11 +8604,11 @@
    "score": 0.5
   },
   {
-   "key": "yt:YNB87k9p4tA",
+   "key": "yt:otMo6tN3Vjo",
    "source": "youtube",
    "query": "dixon coles model python",
-   "title": "Lesson 2: Statistical models of football",
-   "url": "https://www.youtube.com/watch?v=YNB87k9p4tA",
+   "title": "Lesson 5b: Poisson regression",
+   "url": "https://www.youtube.com/watch?v=otMo6tN3Vjo",
    "meta": {
     "channel": "David Sumpter",
     "rank": 3
@@ -7917,92 +8630,14 @@
    "score": 0.25
   },
   {
-   "key": "gh:nahumlitvin/prismantis",
+   "key": "gh:rezored/cubicle-crew",
    "source": "awesome",
    "query": "awesome-claude-code",
-   "title": "nahumlitvin/prismantis (new in awesome-claude-code)",
-   "url": "https://github.com/nahumlitvin/prismantis",
-   "repo": "nahumlitvin/prismantis",
+   "title": "rezored/cubicle-crew (new in awesome-claude-code)",
+   "url": "https://github.com/rezored/cubicle-crew",
+   "repo": "rezored/cubicle-crew",
    "meta": {
     "list": "awesome-claude-code"
-   },
-   "body": "",
-   "score": 2.0
-  },
-  {
-   "key": "gh:a1-x-tech/mcp-google-contacts",
-   "source": "awesome",
-   "query": "awesome-mcp-servers",
-   "title": "a1-x-tech/mcp-google-contacts (new in awesome-mcp-servers)",
-   "url": "https://github.com/a1-x-tech/mcp-google-contacts",
-   "repo": "a1-x-tech/mcp-google-contacts",
-   "meta": {
-    "list": "awesome-mcp-servers"
-   },
-   "body": "",
-   "score": 2.0
-  },
-  {
-   "key": "gh:a1-x-tech/mcp-google-merchants",
-   "source": "awesome",
-   "query": "awesome-mcp-servers",
-   "title": "a1-x-tech/mcp-google-merchants (new in awesome-mcp-servers)",
-   "url": "https://github.com/a1-x-tech/mcp-google-merchants",
-   "repo": "a1-x-tech/mcp-google-merchants",
-   "meta": {
-    "list": "awesome-mcp-servers"
-   },
-   "body": "",
-   "score": 2.0
-  },
-  {
-   "key": "gh:aar-labs/snapdeploy-mcp",
-   "source": "awesome",
-   "query": "awesome-mcp-servers",
-   "title": "aar-labs/snapdeploy-mcp (new in awesome-mcp-servers)",
-   "url": "https://github.com/aar-labs/snapdeploy-mcp",
-   "repo": "aar-labs/snapdeploy-mcp",
-   "meta": {
-    "list": "awesome-mcp-servers"
-   },
-   "body": "",
-   "score": 2.0
-  },
-  {
-   "key": "gh:adamvass/pylos-mcp",
-   "source": "awesome",
-   "query": "awesome-mcp-servers",
-   "title": "adamvass/pylos-mcp (new in awesome-mcp-servers)",
-   "url": "https://github.com/adamvass/pylos-mcp",
-   "repo": "adamvass/pylos-mcp",
-   "meta": {
-    "list": "awesome-mcp-servers"
-   },
-   "body": "",
-   "score": 2.0
-  },
-  {
-   "key": "gh:aiops-tools/ceph-aiops",
-   "source": "awesome",
-   "query": "awesome-mcp-servers",
-   "title": "aiops-tools/ceph-aiops (new in awesome-mcp-servers)",
-   "url": "https://github.com/aiops-tools/ceph-aiops",
-   "repo": "aiops-tools/ceph-aiops",
-   "meta": {
-    "list": "awesome-mcp-servers"
-   },
-   "body": "",
-   "score": 2.0
-  },
-  {
-   "key": "gh:aiops-tools/container-host-aiops",
-   "source": "awesome",
-   "query": "awesome-mcp-servers",
-   "title": "aiops-tools/container-host-aiops (new in awesome-mcp-servers)",
-   "url": "https://github.com/aiops-tools/container-host-aiops",
-   "repo": "aiops-tools/container-host-aiops",
-   "meta": {
-    "list": "awesome-mcp-servers"
    },
    "body": "",
    "score": 2.0

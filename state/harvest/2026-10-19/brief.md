@@ -1,495 +1,553 @@
 # Harvest brief, 2026-10-19
 
-14 items shortlisted from 318 candidates (168 dropped as already seen, 13 carry a vault verdict on the vendor).
+14 items shortlisted from 346 candidates (179 dropped as already seen, 12 carry a vault verdict on the vendor).
 
-## 1. [vault] AI UGC and ad videos sold to businesses
-key: vault:2026-10-18:ai-ugc-and-ad-videos-sold-to-businesses
-url: 
-meta: {"vault_status": "open", "kind": "idea", "subject": "AI influencer and AI creator-subscription revenue models (2026 sweep)", "date": "2026-10-18", "where": "TRITON-CORE/Research/2026-10-18-ai-models-ofm-revenue.md", "has_transcript": false}
+## 1. [vault] daily news roundup with talking head over screenshots
+key: vault:2026-10-19:daily-news-roundup-with-talking-head-over-screenshots
+url: https://www.instagram.com/reel/DeqInQdRkfU/
+meta: {"vault_status": "open", "kind": "idea", "subject": "cryptogorillayt: daily memecoin roundup reel", "date": "2026-10-19", "where": "TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md", "has_transcript": false}
 query: open
 VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
 
 Vault status: open, meaning nobody on the vault side has run it to a verdict.
 
-The vault's note on this theme: cheapest, fastest first revenue on the existing pipeline
+The vault's note on this theme: repeatable format for a character or theme page
 
-The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (idea) Real money sits in selling AI UGC and brand faces to businesses and in labelled subscription personas on AI-friendly platforms; most visible big numbers are self-reported or course sellers
+The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (idea) Cheap daily talking-head-over-screenshots news format with a paid sponsor slot; carries the AI-persona-token pattern as intel Write-up: `TRITON-CORE/Research/links/2026-10-19-cryptogorilla-memecoin-daily-ai-persona-tokens.md` Link: https://www.instagram.com/reel/DeqInQdRkfU/
 
-## 2. [hn] Show HN: The Zelda timeline to catch up before the Ocarina of Time remake
-key: hn:50140769
-url: https://legendofhyrule.com/
-discussion: https://news.ycombinator.com/item?id=50140769
-meta: {"points": 167, "comments": 102, "created": "2026-10-18T13:06:54Z"}
-query: claude code
+## 2. [hn] Ask HN: How to deal with shipping AI-written code you don't understand?
+key: hn:50151036
+url: https://news.ycombinator.com/item?id=50151036
+discussion: https://news.ycombinator.com/item?id=50151036
+meta: {"points": 177, "comments": 289, "created": "2026-10-19T11:24:34Z"}
+query: car data
 
-I made this ahead of the Ocarina of Time remake which comes out in 17 days. I remember the feeling of playing it as a kid but I hadn’t kept up with the story so I built a timeline to catch up before the Door of Time reopens. Nintendo’s own timeline is the authority here (Hyrule Historia and their chronicle page). The fun part was rethinking how to visualize it. It branches at the end of Ocarina into three eras depending on whether Link wins or loses, so each era is its own thread on the cloth. The threads meet again much later with Breath of the Wild. I had a lot of help from Claude. I’d often thought about building things like this but never found the time between the day job and the rest of life.
-comment (sharkbot): Don't forget to include: - Link: The Faces of Evil - Zelda: The Wand of Gamelon - Link's Crossbow Training - the various Hyrule Warriors games Good luck! :)
-comment (cr125rider): This is really fun! Great design!
-comment (hyperhello): What’s the word for trying to do cluster analysis on what is actually randomly distributed data? The games do have obvious similarities and sometimes refer to each other, but they’re independent events.
+I saw this LinkedIn post from a Meta engineer and it resonated with me: https://www.linkedin.com/posts/ali-hamie_im-an-engineer-at-m... > I'm an engineer at Meta and I never felt this uncomfortable doing my job. I'm writing code these days and it all feels like a black box. This new standard of shipping with AI is moving so fast that if we're going to spend our time checking each line of code, it's going to take forever. That means you can end up with systems you've built where you don't truly understand how all the code works. You understand the high level, but not every detail. And maybe this is becoming the new standard. It goes against every instinct of being a software engineer. I'm used to understanding what I'm building. Now I'm trying to figure out how much I need to understand before I'm comfortable moving forward. Are other engineers feeling this too? How are you handling this?
+comment (spacedcowboy): I’m slowly coming around to the idea that if it works, I’m good with that. I never used to personally check all my colleagues work, either, I just trusted that they’d done a good job. That’s not to say I blindly trust an LLM - my project is an autovectorising compiler. I have it write a bazillion tests, and I have real, non-trivial programs that it compiled. I have it run a ‘gate’ before releases that takes literally hours on 5 different architectures. To say this code is tested is … masterful understatement. I think what helps is a long planning session, going into details, working out corner
+comment (pinscope_dev): I had same problem, but after a while I just accepted that is inevitable
+comment (edwin0): The part that makes me uneasy is when the AI writes both the code and the tests. They might agree with each other and still miss the same thing. How are people here checking for that without doing the whole job twice?
 
-## 3. [github] Gathin23/tv-vibehack: Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launcher. Built in an afternoon with Claude Code.
-key: gh:gathin23/tv-vibehack
-url: https://github.com/Gathin23/tv-vibehack
-meta: {"stars": 2160, "created": "2026-10-17", "pushed": "2026-10-18", "language": "Java", "topics": ["adb", "android-tv", "claude-code", "debloat", "launcher", "xiaomi"]}
+## 3. [github] Gathin23/cleanyourtv: Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
+key: gh:gathin23/cleanyourtv
+url: https://github.com/Gathin23/cleanyourtv
+meta: {"stars": 4975, "created": "2026-10-17", "pushed": "2026-10-19", "language": "Java", "topics": ["adb", "adblock", "android-tv", "android-tv-launcher", "apple-tv", "bloatware-removal", "claude-code", "debloat"]}
 query: claude-code created:>{since} stars:>20
 
-# tv-vibehack
+cleanyour.tv  ·
+   The prompt  ·
+   54 TV lists  ·
+   12 built on it  ·
+   The tweet 
+ 
 
-**Your TV, minus the ads.**
+ 
+     
+     
+     
+     
+     
+     
+ 
 
 Strip the bloatware from any Android TV or Google TV over Wi-Fi, and replace the ad-filled home
-screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled,
-and a one-line restore if you change your mind.
+screen with a clean launcher that looks like an Apple TV. **No root, no cable, nothing uninstalled,
+and a one-line restore if you change your mind.**
 
-It started as an afternoon fixing my parents' Mi TV, which showed them an advert before they
-could reach Netflix. The whole thing was done with Claude Code talking to the real TV, and the
-prompt that did it is in this repo so you can do the same with yours.
+ 54 TVs with tested lists &nbsp;·&nbsp; 23 brands &nbsp;·&nbsp; 12 languages &nbsp;·&nbsp; 280 KB launcher 
 
----
-
-## Table of contents
-
-- [How it works](#how-it-works)
-- [Quick start](#quick-start)
-- [What you get](#what-you-get)
-- [Supported TVs](#supported-tvs)
-- [Doing it by hand](#doing-it-by-hand)
-- [The launcher](#the-launcher)
-- [Troubleshooting](#troubleshooting)
-- [Questions people ask](#questions-people-ask)
-- [Contributing](#contributing)
-- [Licence](#licence)
-
----
+> Vibe coded my parents' TV this afternoon! It was showing a sponsored ad before you could even get
+> to Netflix. Gave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages
+> and wrote a new launcher. Looks like an Apple TV now lol.
+>
+> [@gathint, 17 October 2026](https://x.com/gathint/status/2111379569030939102). The replies are where
+> most of the TV lists here came from. The repo was called tv-vibehack until the 19th; old links work.
 
 ## How it works
 
-Android TVs have the same debug bridge as Android phones. Once you switch on USB debugging in the
-TV's developer options, the TV listens on your Wi-Fi and asks you once to allow your computer.
-After that, everything is standard Android tooling:
+Android TVs have the same debug bridge as Android phones. Switch on USB debugging in the TV's
+developer options, allow your computer once, and the rest is standard Android tooling:
 
 1. **Back up** the list of installed packages and settings.
 2. **Disable** the manufacturer's telemetry, ad services, content rows and preloaded junk with
    `pm disable-user`. Nothing is uninstalled, so a restore script can undo every step.
 3. **Install** a small native launcher and make it the default home screen.
 
-The bloat differs by brand, which is why the prompt asks your coding assistant to discover it
-on your TV and ask you before touching anything you might use.
+The bloat differs by brand, so the prompt has your coding assistant discover it on your TV and ask
+before touching anything you might use.
 
 ## Quick start
 
 You need a computer on the same Wi-Fi as the TV and a coding assistant with shell access
-(Claude Code, or anything similar).
+(Claude Code or similar).
 
-**1. On the TV**
-Settings → Device Preferences → About → press OK on **Build** seven times → go back →
-Developer options → turn on **USB debugging**. Some TVs also show a Network or ADB debugging
-toggle; turn it on too. Keep the TV switched on.
+| | |
+|---|---|
+| **1. On the TV** | Settings → Device Preferences → About → press OK on **Build** seven times → back → Developer options → **USB debugging** on. If you see a Network or ADB debugging toggle, turn that on too. Keep the TV on. |
+| **2. On your computer** | Paste [`PROMPT.md`](PROMPT.md) into your assistant and fill in your TV model. |
+| **3. Follow along** | Accept "Allow USB debugging?" on the TV, then answer the checklist: which apps you use, which four go in the dock, whether to keep the voice assistant, Chromecast and updates. |
 
-**2. On your computer**
-Open your assistant, paste the prompt from [`PROMPT.md`](PROMPT.md), and fill in your TV model.
-
-**3. Follow along**
-Accept the "Allow USB debugging?" prompt when it appears on the TV, then answer the checklist
-questions: which streaming apps you use, which four go in the dock, whether to keep the voice
-assistant, Chromecast and firmware updates.
-
-That's it. The assistant backs up, debloats, builds and installs the launcher, and checks every
-step with screenshots pulled from the TV. On a 1 GB Mi TV the whole thing took one afternoon the
-first time; with this repo as context, people report about fifteen minutes.
+The assistant backs up, debloats, builds and installs the launcher, and checks each step with
+screenshots pulled from the TV. With this repo as context it takes about fifteen minutes.
 
 ## What you get
 
-A home screen that is yours again:
-
-- **Pitch-black background** and a dock of your four favourite apps at the bottom, in a lighter
-  rounded band, exactly where Apple TV puts it.
-- **A top shelf** showing the focused app's name in large type, with an ambient glow in a colour
-  taken from the app's own artwork.
+- **A pitch-black home** with a dock of your four favourite apps in a rounded band, where Apple TV puts it.
+- **A top shelf** naming the focused app in large type, with an ambient glow in a colour taken from its artwork.
 - **The rest of your apps in a grid** that slides up when you press Down.
-- **One floating glass highlight** that springs from tile to tile instead of each tile drawing its
-  own border. The focused tile lifts slightly and shows its name.
-- **Three frosted buttons**: Inputs (a dropdown of HDMI ports, AV and Live TV), Wi-Fi (showing the
-  network you're on) and Settings.
-- **A greeting, a large thin clock and the date**, set in
-  [Outfit](https://fonts.google.com/specimen/Out
+- **One floating glass highlight** that springs from tile to tile. The focused tile lifts and shows its name.
+- **Three frosted buttons**: Inputs (HDMI ports, AV, Live TV), Wi-Fi or Ethernet with the network name, Settings.
+- **A greeting, a thin clock and the date** in [Outfit](https://fonts.google.com/specimen/Outfit), and a matching Clock screensaver.
+- **Themes** that change colours, wallpaper, dock and columns without a rebuild, and **module cards** that let other apps plug a tile in, only with your say-so.
 
-## 4. [youtube] The ONLY Claude Skills Tutorial Beginners Need in 2026
-key: yt:TyB7kLZPVKo
-url: https://www.youtube.com/watch?v=TyB7kLZPVKo
-meta: {"channel": "100x Engineers", "rank": 1, "duration_min": 25}
-query: claude code skills workflow 2026
+And a TV that stops working against you: no sponsored rows, no "Discover" nags, no analytics
+phoning home, no apps you never asked for.
 
-# The ONLY Claude Skills Tutorial Beginners Need in 2026
-# 100x Engineers
-# https://www.youtube.com/watch?v=TyB7kLZPVKo
+| | |
+|---|---|
+|  |  |
+| *Top shelf and ambie
 
-[00:00] Claude Skills is easily one of the best things you can learn in 2026 to level up in AI. And I'm sure you've heard a lot about it already. Maybe you even tried creating your own custom skill at some point. But I'd like to take this opportunity to cover everything you need to know about Claude Skills all the way from using it as an absolute beginner to an absolute pro. In this video, we will cover the following things. What is a Claude Skill? How to use it? Level one of using Claude Skill, which is using Claude's default skills. Level two, which is modifying a Claude Skill. Level three, which is using partner skills [music] and plugins. And level four, creating your own custom skill. And
-[00:33] finally, I will give you a pro secret. This is basically [music] a tip that I haven't seen anybody give out in any Claude Skill tutorial video. And if you learn this pro secret, the way you write your custom Claude Skill is going to be five times better than most people's. And we'll cover all of this using real-life examples and demos [music] of workflows that I personally use for my work. So, hit that subscribe button and let's get [music] into it. Let's start with learning what a Claude Skill actually is. In case you already know the basics and you just want to go straight to the demos, feel free to navigate this video using the chapters.
-[01:05] But in simple words, a Claude Skill is a file that contains a set of instructions and guidelines to perform a certain task. It's that simple. The coolest example I can think of is the movie Matrix, where Neo learns kung fu inside the Matrix. There is a scene where he's just downloading martial arts skills while being plugged into the Matrix. That's very similar to what skills are. For example, let's say that you make decks in a certain way. There's a format that you use, there's certain brand colors, there's certain fonts, and even a specific tonality. A Claude Skill is a file that contains all those guidelines and instructions. So, that every time
-[01:38] you want to perform that task, say make a deck, instead of writing all those instructions every time you prompt, you can just invoke the skill and get exactly the output you want. And this file is a dot md file, which stands for markdown, which is a fancy way of saying that it's just a read-only text file. Now, in order to use Claude Skill, you need to make sure of this one thing on your Claude account. Go to customize and click on capabilities. And if you scroll down, you'll see this thing that says code execution and file creation. Just make sure that both these things are toggled on. Now, most of the times this is toggled on by default in most
-[02:11] accounts, but just make sure of this before trying out Claude skills. Once that is set, let's see how to use a skill. Now, there are fundamentally two ways to use a skill. The first is when you prompt normally and Claude automatically selects the relevant skill. For example, let me ask Claude to turn this research paper that I have into a deck. So, I'll upload my research file and I'll just say, "Turn this into a deck so that I can understand this easily." Now, I haven't asked Claude to activate any particular skill at all over here. But, if you see, it's already saying
-[02:44] loaded pptx.skill, which basically is Claude understanding my requirement and loading a skill that
-[transcript continues in field-notes/staging/TyB7kLZPVKo.txt]
+## 4. [arxiv] From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents
+key: arxiv:2610.23599
+url: https://arxiv.org/abs/2610.23599
+meta: {"published": "2026-10-16", "authors": ["Yewei Zhao", "Derong Xu", "Wei Chen", "Yin Xu"], "categories": ["cs.AI"]}
+query: all:"language model" AND all:agent AND all:tool
 
-## 5. [awesome] nahumlitvin/prismantis (new in awesome-claude-code)
-key: gh:nahumlitvin/prismantis
-url: https://github.com/nahumlitvin/prismantis
-meta: {"list": "awesome-claude-code", "stars": 133, "created": "2026-10-02", "language": "TypeScript", "description": "Colorful, themeable Claude Code replies: tables, code, diagrams, charts and tool rows in 15 themes, with copy buttons. A Claude Code mod."}
+Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods largely organize knowledge around skill artifacts, overlooking the functional heterogeneity within individual skills and its implications for knowledge maintenance and use. Inspired by cognitive science, we propose Cognitive Differentiation in Skill Evolution (CDSE), which evolves a unified skill through four functionally distinct yet coordinated components: Meta, Experience, Tool, and Script. CDSE extracts evidence-grounded semantic gradients from successful and failed trajectories, consolidates them by functional role, and applies component-specific updates and validation with cross-component coordination and adaptive invocation. An analysis of 500 top-ranked skill packages shows that 96.8% contain knowledge spanning at least two functional roles. Across six benchmarks, three agent models, and two execution harnesses, CDSE achieves the highest scores in all 36 settings, improving over the Base agent by 7.6 percentage points and the strongest competing method in each setting by 2.6 points on average. Ablation studies further support the importance of functional differentiation and adaptive invocation.
+
+## 5. [youtube] Lesson 5b: Poisson regression
+key: yt:otMo6tN3Vjo
+url: https://www.youtube.com/watch?v=otMo6tN3Vjo
+meta: {"channel": "David Sumpter", "rank": 3}
+query: dixon coles model python
+
+
+[body unavailable: IpBlocked]
+
+## 6. [awesome] rezored/cubicle-crew (new in awesome-claude-code)
+key: gh:rezored/cubicle-crew
+url: https://github.com/rezored/cubicle-crew
+meta: {"list": "awesome-claude-code", "stars": 32, "created": "2026-10-09", "language": "JavaScript", "description": "Your Claude Code agents, living in a tiny pixel-art office. Desktop widget + browser app, with tokens, a shop and a lounge."}
 query: awesome-claude-code
 SEEN: the vault already judged this vendor (vault: tools and repos). Record the mechanism only if it is new; do not re-judge the vendor.
 
-Sees 16 colors. Your terminal only had 8.  
+### Your Claude Code agents, living in a tiny pixel-art office.
 
- 
-     
-     
-     
+Every Claude Code session becomes a coworker at a desk – and so does every **Codex**, **Gemini CLI** and **OpenCode** session. **Copilot CLI, Cursor or any script** can walk in too through a small local API ([docs/api.md](docs/api.md)). Sub-agents walk in through the door, pick up the task
+and sit down with their team. When someone needs you, the whole room lets you know.
+
+[**▶ Watch the trailer**](docs/media/trailer.mp4) · [**⬇ Download for Windows**](https://github.com/rezored/cubicle-crew/releases/latest) · [Quick start](#quick-start) · [Desktop app](#desktop-widget-windows) · [How it works](#how-it-works)
+
    
- 
 
  
-    Install   ·
-   Themes  ·
-   Features  ·
-   Configure  ·
-   Changelog 
- 
-
- Same prompt, same model: plain Claude Code, then with prismantis.  ▶ Watch the full 44-second tour  (tables, charts, diagrams, diffs, callouts, right-to-left text). 
-
-## TL;DR
-
-- Claude Code prints mermaid as source and tool calls as walls of text. prismantis draws them: real charts and flowcharts, typeset LaTeX math in kitty and Ghostty, colored tables and code, and quiet tool rows.
-- 15 palettes plus `mono`, and copy buttons on everything.
-- Two commands to install, `/plugin` to turn it off. Claude Code's own renderer comes back the moment you do.
-- No network calls. It runs a program only when you click `⧉ html` (the clipboard helper) or turn on LaTeX (RaTeX's renderer).
-
-```
-/plugin marketplace add NahumLitvin/prismantis
-```
-
-```
-/plugin install prismantis@prismantis
-```
-
-Then run `/prismantis setup` to pick a theme and styles from drawn samples, and `/prismantis demo` for a tour of the main features. In a terminal, setup opens a pane: the arrows or Tab move through the styles of a step with a preview of the one in focus, Enter saves it and shows the next step. Where the session has no terminal, as in the desktop app, it walks the same steps in the transcript.
-
-## Install
-
-Requires Claude Code **2.1.287** or later. Run the two commands above.
-
-To update, run this, then `/reload` in every open session. A session keeps the version it loaded until it reloads.
-
-```bash
-claude plugin marketplace update prismantis && claude plugin update prismantis@prismantis
-```
-
-To uninstall:
-
-```bash
-claude plugin uninstall prismantis@prismantis
-```
-
-For LaTeX math, install RaTeX's renderer and set `latex` to `true`; see [LaTeX math](#latex-math). Until then formulas draw as text.
-
-### Codex
-
-prismantis also runs in Codex, with themes for code, tables and diagrams and the same session note. Install, what works today, and the two Codex issues it waits on for parity: [codex/README.md](codex/README.md).
-
-## Features
-
-| Feature | What you get |
-| --- | --- |
-| [Themes](#themes) | `/prismantis theme  ` switches on the spot. 16 themes and 20 color slots you can override |
-| [Tables](#tables) | colored headers, rules, column alignment, colored numbers, sized to the terminal |
-| [Code](#code) | a language header and copy button, Prism highlighting in two dozen languages, shell lines colored like a prompt |
-| [Diagrams and charts](#diagrams-and-charts) | flowcharts, sequence, state, class and ER diagrams, bar and line charts, one color per box, participant and bar |
-| [Figures](#figures) | ` ```figure ` text pictures drawn as written in the theme's colors, for timelines, layouts and before and after; glyphs and markup checked before they are drawn |
-| [LaTeX math](#latex-math) | `$$` and ` ```math ` formulas typeset as images in kitty and Ghostty by [RaTeX](https://github.com/erweixin/RaTeX), text everywhere else |
-| [Layout](#layout) | back-to-back tables and diagrams sit side by side and wrap on narrow terminals |
-| [Copy buttons](#copy-buttons) | `⧉ md`, `⧉ art` and `⧉ html` on tables, `[ ⧉ copy ]` on code, lists and quotes, `/prismantis copy` without a mouse |
-| [Tool rows](#tool-rows) | `Ran gh pr view 12`, `Read ~/src/app.ts`, groups summed up as `Ran 3 commands, read 2 files`, with status dots; `toolOutput: quiet` hides what Claude only read and says in plain words what each call did |
-| [Turn footer](#tu
-
-## 6. [vault] talking head over lifestyle B-roll
-key: vault:2026-10-18:talking-head-over-lifestyle-b-roll
-url: https://www.instagram.com/p/DZt8BdfMNFM/
-meta: {"vault_status": "open", "kind": "idea", "subject": "jayhiette: four skills for fitness coaches", "date": "2026-10-18", "where": "TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md", "has_transcript": false}
-query: open
-VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
-
-Vault status: open, meaning nobody on the vault side has run it to a verdict.
-
-The vault's note on this theme: one script, generated head plus B-roll, built for an AI coach
-
-The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (idea) Sound coach-of-coaches advice in a cheap talking-head-over-lifestyle format that an AI fitness character can copy exactly Write-up: `TRITON-CORE/Research/links/2026-10-18-jayhiette-fitness-coach-four-skills.md` Link: https://www.instagram.com/p/DZt8BdfMNFM/
-
-## 7. [hn] Show HN: 500 clocks in one 6.3 MB HTML file by Opus 5.5
-key: hn:50137820
-url: https://tkgally.github.io/500-clocks/
-discussion: https://news.ycombinator.com/item?id=50137820
-meta: {"points": 65, "comments": 27, "created": "2026-10-18T04:04:58Z"}
-query: claude code
-
-Lately I've been testing frontier models by having them create self-contained web pages that display clocks--sort of my personal version of Simon Willison’s pelican-on-a-bicycle metric. I have been particularly impressed by the variety, interest, and quality of the clocks created by Claude Opus 5.5. Over the course of several sessions in the Claude chat interface, I had it build a total of 500 clocks. Claude’s summary of the prompting process and page design is here: https://github.com/tkgally/500-clocks/tree/main
-comment (vunderba): Nice job. The Pong one was a nice touch where the ball traveled within a second from each paddle. I also enjoyed the interactive fiction game clock. It doesn’t really have much to do with time, but I still appreciated how the little descriptions changed over time. Looking through all of these, you can definitely start to see patterns in themes. For example, it’s a clock but in a different language. Or it’s a clock but wrapped around a classic game - I think I saw Nine Men's Morris, Mancala and Scrabble among others. I made the Chamber of Clocks [1] about half a year back which is a set of 12 d
-comment (ksimukka): Amazing. Thanks for sharing.
-comment (kromokromo): Once again, impressed by Opus 5.5 for a job well done. How much did this cost you?
-
-## 8. [github] LiCinCan/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot for 3D, bpy Python scripting, MCP integration.
-key: gh:licincan/blender-ai-mcp-addon
-url: https://github.com/LiCinCan/blender-ai-mcp-addon
-meta: {"stars": 787, "created": "2026-10-15", "pushed": "2026-10-18", "language": "Python", "topics": ["ai-assistant", "blender", "blender-addon", "blender-ai", "blender-automation", "blender-extension", "blender-mcp", "blender-plugin"]}
-query: mcp server created:>{since} stars:>30
-SEEN: the vault already judged this vendor (vault: tools and repos). Record the mechanism only if it is new; do not re-judge the vendor.
-
-# mcp-for-blender-pro
-
-### Your Blender scene. Your AI models. One creative workspace.
-
-**An AI assistant for Blender that can inspect your scene, build objects, edit materials, find assets and carry out multi-step workflows—with a visual chat workspace and a built-in Model Context Protocol (MCP) server.**
-
-[Download](../../releases/latest) · [Getting started](docs/QUICKSTART.md) · [Connections and agents](docs/CONNECTIONS.md)
-
-## Turn a creative brief into scene operations
-
-Start with an idea. Ask the assistant to inspect your scene, create a product-display layout, arrange objects, assign materials or prepare an export. Follow its actions in the conversation and inspect the result in the viewport preview. Keep working in Blender throughout the process.
-
-**mcp-for-blender-pro brings conversation, scene tools, model choice and agent workflows together.** It is designed for artists who want faster iteration, technical artists who automate repetitive work, and developers connecting AI tools to Blender.
-
-## Why choose mcp-for-blender-pro?
-
-| Capability | What it gives you |
-|---|---|
-| **Blender-aware assistance** | Scene and object inspection gives the assistant context before it acts. |
-| **A visual Studio workspace** | Chat, scene objects, viewport snapshots, approvals and a task board in a companion window. |
-| **Your choice of AI** | Connect supported cloud providers, local Ollama models or compatible custom endpoints. |
-| **Saved connections** | Keep work and personal connections separate, including multiple keys for the same provider. |
-| **One assistant or a team** | Use a single model for quick changes, or managers, workers and reviewers for structured tasks. |
-| **Built-in MCP server** | Connect OpenCode and other clients supporting authenticated Streamable HTTP MCP. |
-| **21 scene tools** | Create, inspect, edit, capture, search assets, consult Blender APIs and export scenes. |
-| **Multilingual menus** | Choose English, German, French, Spanish or Chinese for the main interface. |
-
-## From a quick edit to an agent team
-
-Use **Single assistant** for direct, conversational work. For larger tasks, configure a **Team chain** with individual responsibilities, instructions and models.
-
-- **Manager:** breaks the request into assignments and acceptance criteria.
-- **Workers:** perform the assigned scene operations.
-- **Reviewers:** inspect results and approve work or return specific findings.
-
-Tasks run sequentially so scene edits stay ordered. A blocked task gets one correction attempt; a second failed review stops the workflow. The task board exposes assignments, attempts and review findings as work progresses.
-
-## Connect the models that fit your work
-
-Supported connections include **OpenAI, Anthropic Claude, Google Gemini, OpenRouter, OpenCode Zen, Ollama and custom APIs**. Load the available model catalog and select a model directly in Blender or Studio.
-
-Custom endpoints support OpenAI Chat Completions, Anthropic Messages and Ollama protocols. Choose models with tool-calling support; image-capable models can also interpret viewport screenshots. OpenCode-only free models are available through the OpenCode client.
-
-## Install and create
-
-1. Download **`mcp-for-blender-pro.zip`** from [Releases](../../releases/latest).
-2. In Blender, open **Edit → Preferences → Get Extensions → menu → Install from Disk**.
-3. Select the ZIP, enable **mcp-for-blender-pro**, then open **3D Viewport → N → MCP Pro**.
-4. Choose a provider, add your connecti
-
-## 9. [youtube] Top 5 Claude Code Skills Everyone Needs in 2026
-key: yt:gF30riZwUAc
-url: https://www.youtube.com/watch?v=gF30riZwUAc
-meta: {"channel": "Yury AI", "rank": 4}
-query: claude code skills workflow 2026
-
-
-[body unavailable: TranscriptsDisabled]
-
-## 10. [awesome] a1-x-tech/mcp-google-contacts (new in awesome-mcp-servers)
-key: gh:a1-x-tech/mcp-google-contacts
-url: https://github.com/a1-x-tech/mcp-google-contacts
-meta: {"list": "awesome-mcp-servers", "stars": 0, "created": "2026-08-30", "language": "TypeScript", "description": "MCP server for Google Contacts (People API) — search, read, create, update and delete contacts, manage contact groups and run batch operations. For Claude, Cursor, Codex and other AI clients."}
-query: awesome-mcp-servers
-
-#   Google Contacts MCP
-
-**English** | [Русский](./README.ru.md)
-
-[](https://www.npmjs.com/package/mcp-google-contacts)
-[](https://glama.ai/mcp/servers/A1-x-Tech/mcp-google-contacts)
-[](https://github.com/A1-x-Tech/mcp-google-contacts/actions/workflows/ci.yml)
-[](./LICENSE)
-
-**A1 Google Contacts MCP** lets an AI app manage your Google address book in plain language. Find a contact, create or update one, organize contacts with labels, run batch imports and clean-ups, and turn auto-saved "Other contacts" into real ones.
-
-It uses the Google People API — the API behind Google Contacts — with your Google account. It guards every update against concurrent edits, keeps reads compact with explicit field masks and makes the limits of the People API explicit instead of implying that every contacts task is possible.
-
-- **25 tools.** List, search and read contacts, create, update and delete them one at a time or in batches, manage contact groups and membership, and reach "Other contacts".
-- **Connects from the conversation.** Say "connect Google Contacts": the server walks you through the OAuth client, catches Google's redirect on `127.0.0.1` with PKCE and keeps the tokens itself — no config files, no restart.
-- **Updates don't clobber.** Every update is etag-guarded: if a contact changed elsewhere since it was read, the write fails instead of silently overwriting the concurrent edit.
-- **Deletes are real.** The People API has no trash; deleting a contact or group is permanent, and the server marks those tools destructive so your AI app can ask first.
-- **Minimal Google scopes.** It uses `contacts` for read/write — `contacts.readonly` is enough for a read-only setup — plus `contacts.other.readonly` only for "Other contacts", without broad account access.
-
-Start with a read-only question:
-
-> Find everyone from Acme in my contacts and show their emails and phone numbers.
-
-[Connect the server](#quick-start) · [Explore use cases](#what-you-can-ask-it-to-do) · [Open technical documentation](#technical-documentation)
 
 ---
 
-## See it work in a minute
+## Why
 
-> **You:** Show my contact card for Jane Doe — email, phone and company.
->
-> **Assistant:** Finds the contact and shows the requested fields. Nothing changes.
->
-> **You:** Change her phone number to +1 415 555 0100 and add her to the "Clients" label.
->
-> **Assistant:** Shows the contact and the proposed change, then asks for confirmation before writing.
->
-> **You:** Confirm.
->
-> **Assistant:** Applies the etag-guarded update and the label. If the contact changed elsewhere in the meantime, the write fails instead of overwriting it.
+Claude Code is happiest when it runs a few sessions at once and hands work to sub-agents. That gets hard to follow
+from a stack of terminal tabs: who is still busy, who is stuck on a question, who quietly finished ten minutes ago?
 
-## Contents
+Cubicle Crew reads the session logs Claude Code already writes to `~/.claude/projects` and turns them into a live
+scene you can leave open on a second monitor, or pin in the corner of your screen as a widget.
 
-- [Quick start](#quick-start)
-- [What you can ask it to do](#what-you-can-ask-it-to-do)
-- [How a contact changes](#how-a-contact-changes)
-- [What can change](#what-can-change)
-- [Getting access](#getting-access)
-- [Configuration](#configuration)
-- [Data, limits and background work](#data-limits-and-background-work)
-- [Technical documentation](#technical-documentation)
-- [Support](#support)
-
-## Quick start
-
-You need Node.js 20+ and a Google account. Credentials are not required at install time — the server connects from the conversation.
-
-1. Add the server to your AI app.
-2. Say "connect Google Contacts": the assistant walks you through [creating the OAuth client and approving access](#getting-access) without editing config files.
-3. Ask the read-only question above.
+- **One look tells you the state of everything.** Each agent's shirt, monitor glow and name tag take the colour of what it is doing.
+- **Delegation you can actually see.** Orchestrators walk over and hand paper to their sub-agents. Dotted lines on the floor show who works for whom.
+- **You never miss a question.** An agent waiting on you (an `AskUserQuestion`, or an "Allow Bash?" permission prompt) waves, its tag flashes red with "Allow Bash?", a little chime plays if you're looking at another window, and the desktop app sends a Windows notification.
+- **Nothing to set up.** No API keys and no hooks to install. It runs offline and only reads local files.
 
  
-  Codex  
-
+   
+   
  
 
-**In the app:** open **Settings → MCP servers**, select **Add server**, choose **STDIO
+## Features
 
-## 11. [vault] one-credit multi-model connector for desktop seats
-key: vault:2026-10-18:one-credit-multi-model-connector-for-desktop-seats
-url: https://www.instagram.com/reel/DcEsI98lT-x/
-meta: {"vault_status": "open", "kind": "tool", "subject": "laddy.unemployed: OpenArt MCP AI content farm", "date": "2026-10-18", "where": "TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md", "has_transcript": false}
+| | |
+|---|---|
+| 🧑‍💻 **Teams** | Two lead desks with a ★ nameplate share one rug, with three desks for sub-agents below. Any sub-agent takes any free desk; the ones without a desk work on a laptop on the sofa until one frees up. Each team has its own mug colour, and lines connect every lead to its sub-agents. A third session works from the lounge until a lead desk is free. |
+| 🔌 **Any agent, one endpoint** | `POST http://127.0.0.1:4317/api/event` (local only) brings anything into the office: ready-made hook configs for **GitHub Copilot CLI** and **Cursor**, any agent with Claude-Code-style hooks, or a script with `curl` / `npx cubicle-crew event tool_start --agent build --tool Bash --detail "npm test"`. They get a desk, a bubble with the current tool, turn red when they wait for you and walk out when they end. See [docs/api.md](docs/api.md). |
+| 📄 **Context on the desk** | A stack of paper on every desk grows with the agent's context window, gets a yellow and then a red sticker as it fills up, and flies off the desk when the conversation is compacted. The card shows the exact numbers. Works for Claude Code, Codex and OpenCode. |
+| ✅ **Allow / Deny from the office** *(optional)* | Turn on **Answer permission prompts here** in the `?` panel and Claude Code's "Allow …?" questions show up as a bar at the bottom of the office with **Allow** and **Deny** buttons (keys `Y` / `N`; in the desktop app also `Ctrl+Alt+Y` / `Ctrl+Alt+N` from any window). It adds one hook to `~/.claude/settings.json` (a backup is kept) and removes it when you turn it off. The terminal keeps working: if you don't answer in the office within 45 s, or you answer in the
+
+## 7. [vault] offer builder plus 7-day first-client sprint
+key: vault:2026-10-19:offer-builder-plus-7-day-first-client-sprint
+url: https://www.skool.com/fitscaling-business-school-9423
+meta: {"vault_status": "open", "kind": "service", "subject": "Skool: Fitscaling Business School", "date": "2026-10-19", "where": "TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md", "has_transcript": false}
 query: open
 VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
 
 Vault status: open, meaning nobody on the vault side has run it to a verdict.
 
-The vault's note on this theme: try the 40-credit trial if a non-terminal seat needs generation
+The vault's note on this theme: the high-ticket offer an AI fitness coach would sell
 
-The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (tool) OpenArt MCP is a real one-connector, credit-priced image and video pool for Claude; the faceless AI-persona farm it sells is the bait, and the Mac already generates by API Write-up: `TRITON-CORE/Research/links/2026-10-18-laddy-unemployed-openart-mcp-content-farm.md` Link: https://www.instagram.com/reel/DcEsI98lT-x/
+The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) Small free group selling the first-high-ticket-client sprint for coaches; useful template and script source for the AI fitness coach, claims unverified Write-up: `TRITON-CORE/Research/links/2026-10-19-skool-fitscaling-business-school.md` Link: https://www.skool.com/fitscaling-business-school-9423
 
-## 12. [hn] Show HN: WhatsApp MCP running free on Cloudflare
-key: hn:50145715
-url: https://github.com/finereli/whatsapp-mcp
-discussion: https://news.ycombinator.com/item?id=50145715
-meta: {"points": 48, "comments": 35, "created": "2026-10-18T21:36:10Z"}
-query: mcp server
-
-I wanted my humble Claude on mobile to access my WhatsApp messages but the only options I could find either required WhatsApp Business or an actual server to run Baileys on. I wanted to run it for free on ClaudeFlare and with my personal WhatsApp account, so I built this. Important feature - it connects to your Google account as well as WhatsApp to grab the names of all your WhatsApp contacts, otherwise you get only phone numbers for many of them and search doesn't work properly. This is a single user install because it's both gray area and very private - so point your agent at the repo and let it set things up.
-comment (D2OQZG8l5BI1S06): Cloudflare already sniffs most of the internet traffic, why not also let them see our private messages?!
-comment (SchemaLoad): What bothers me about these projects is you are exposing the other side of your conversations to being uploaded to a 3rd party AI company who will ingest it in to their training data. You personally might not care about this privacy intrusion but the people you are messaging never consented to this.
-comment (jrecyclebin): I've been using Baileys - but it's not ideal. (Periodically you have to go manually log the bot back in.) Is there no platform that's friendly to personal bots? Or is that what Telegram is for? Discord I suppose...
-
-## 13. [github] cranebeaker/coop-anything: Co-op Anything: point your AI agent at any single-player game and play it with friends (online and/or splitscreen!). MCP server and playbook to let you reverse engineer, fix, test, ship and share what it learns.
-key: gh:cranebeaker/coop-anything
-url: https://github.com/cranebeaker/coop-anything
-meta: {"stars": 425, "created": "2026-10-16", "pushed": "2026-10-18", "language": "C", "topics": []}
-query: mcp server created:>{since} stars:>30
-
-Co-op Anything 
-
-  Any single-player game. Your friends. Your agent does the work.  
-
- 
-   
-   
- 
-
- 
- Quick start  ·
- How it works  ·
- What you can co-op  ·
- Games so far  ·
- Contribute  ·
- FAQ  ·
- Docs 
- 
-
-Want to play a single-player game with your friends? Point your AI coding agent at this
-repo. It researches what exists, reverse engineers the game and its engine if it has to,
-builds or fixes the co-op, **tests it with bots inside the game**, and packages it so your
-friends install it in one click and join over Steam without port forwarding.
-
-The sky is the limit. Every game that runs on your PC is a candidate.
-
-Games being made co-op right now: **[Deus Ex](https://github.com/cranebeaker/deus-ex-coop)** (released) ·
-**[Fallout: New Vegas](https://github.com/cranebeaker/fnv-coop)** · **[Zelda: Ocarina of Time](https://github.com/cranebeaker/ocarina-coop)** (fully synced) ·
-**[Dungeon Keeper](https://github.com/cranebeaker/dungeon-keeper-coop)** · **[S.T.A.L.K.E.R. Shadow of Chernobyl](https://github.com/cranebeaker/stalker-soc-coop-fixes)** · **S.T.A.L.K.E.R. Clear Sky**
-
-From the community: **[Mega Man X](https://github.com/mstan/MegaManXSNESRecomp)** and
-**[Mega Man X4](https://github.com/mstan/MegaManX4Recomp)** (native PC with co-op netplay) ·
-**[Pilotwings 64](https://github.com/NoahVl/Birdman64)** (split-screen) ·
-**Zelda: Oracle of Seasons** ([in progress](https://github.com/cranebeaker/coop-anything/issues/1)) · yours next?
-Community tools: **[DecompPipeline](https://github.com/GeneralAtrox/DecompPipeline)** (agent-driven decompilation of console games, Dreamcast first).
-
-## Quick start
-
-Tell your agent (Claude Code, Codex, Gemini CLI, Cursor, OpenCode, ...):
-
-```
-Read https://github.com/cranebeaker/coop-anything and follow AGENTS.md.
-I want to play   in co-op with my friends.
-```
-
-The agent follows [AGENTS.md](AGENTS.md) and the skills in [`.agents/skills`](.agents/skills)
-(also in `.claude/skills` for Claude Code).
-
-### Add the MCP server
-
-The **Co-op Anything MCP** lets any agent search the co-op directory, detect a game's engine
-from its install folder, read the playbook and skills, and validate contributions.
-Claude Code picks it up from this repo's `.mcp.json`; for other agents:
-
-```
-claude mcp add coop-anything -- python  /tools/mcp/coop_mcp.py
-```
-
-Codex, Gemini CLI and Cursor setup: [playbook/mcp.md](playbook/mcp.md). For the binary work,
-pair it with a reverse-engineering MCP such as [REA](https://github.com/morluto/rea)
-(`npx rea-agents setup`): Co-op Anything knows what to do, REA looks inside the game.
-
-## How it works
-
-Your agent takes one of two paths.
-
-| | Path 1: finish what exists | Path 2: build it from zero |
-|---|---|---|
-| When | A co-op mod exists but is buggy, stalled or abandoned. Most loved games are here. | Nothing usable exists. |
-| How | Find the last build, mine its bug reports (issues, forums, Discord), audit the code, fix it as a separate package, test, ship. | Reverse engineer the game and engine, hook in, show the second player, sync enemies, world and story, handle level changes and saves, test, ship. |
-| Skills | `coop-research`, `coop-revive`, `coop-qa` | `coop-reverse-engineer`, `coop-build-from-zero`, `coop-networking`, `coop-qa` |
-| Guide | [Reviving abandoned mods](playbook/reviving-abandoned-mods.md) | [How co-op mods work](playbook/how-coop-mods-work.md) |
-
-Both paths end the same way: automated tests with real game clients
-([QA](playbook/automated-qa.md)), easy install, Steam relay 
-
-## 14. [hn] Torvalds use Claude for bottleneck fix, but race discovered
-key: hn:50142323
-url: https://thenewstack.io/torvalds-claude-code-kernel/
-discussion: https://news.ycombinator.com/item?id=50142323
-meta: {"points": 15, "comments": 1, "created": "2026-10-18T16:08:48Z"}
+## 8. [hn] Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling
+key: hn:50148855
+url: https://crystl.dev/guides/tmux-for-ai-agents/
+discussion: https://news.ycombinator.com/item?id=50148855
+meta: {"points": 145, "comments": 110, "created": "2026-10-19T05:55:31Z"}
 query: claude code
 
-page: Linus Torvalds let Claude Code fix the Linux page cache. Then reviewers found a race. - The New Stack TNS OK SUBSCRIBE Join our community of software engineering leaders and aspirational developers. Always stay in-the-know by getting the most important news and exclusive content delivered fresh to your inbox to learn more about at-scale software development. EMAIL ADDRESS REQUIRED SUBSCRIBE RESUBSCRIPTION REQUIRED It seems that you've previously unsubscribed from our newsletter in the past. Click the button below to open the re-subscribe form in a new tab. When you're done, simply close that tab and continue with this form to complete your subscription. RE-SUBSCRIBE The New Stack does not sell your information or share it with unaffiliated third parties. By continuing, you agree to our Terms of Use and Privacy Policy . Welcome and thank you for joining The New Stack community! Please answer a few simple questions to help us deliver the news and resources you are interested in. FIRST NAME REQUIRED LAST NAME REQUIRED COMPANY NAME REQUIRED COUNTRY REQUIRED Select ... United States Canada India United Kingdom Germany France --- Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua and Barbuda Argentina Armenia Aruba Asia/Pacific Region Australia Austria Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bonaire, Sint Eustatius and Saba Bosnia and Herzegovina Botswana Bouvet Island Brazil British Indian Ocean Territory Brunei Darussalam Bulgaria Burkina Faso Burundi Cambodia Cameroon Canada Cape Verde Cayman Islands Central African Republic Chad Chile China Christmas Island Cocos (Keeling) Islands Colombia Comoros Congo Congo, The Democratic Republic of the Cook Islands Costa Rica Croatia Cuba Curaçao Cyprus Czech Republic Côte d'Ivoire Denmark Djibouti Dominica Dominican Republic Ecuador Egypt El Salvador Equatorial Guinea Eritrea Estonia Ethiopia Falkland Islands (Malvinas) Faroe Islands Fi
-comment (ChrisArchitect): [dupe] https://news.ycombinator.com/item?id=50090842
+comment (thomas_witt): I really liked Tmux and Zellij for the time being, but Herdr does it all so much better out of the box when it comes to agentic coding. I haven't found something I can do with tmux/zellij but can't do with herdr.
+comment (littlecranky67): Been using tmux session to hand over to claude for a while. Paranoid me uses the macbooks secure enclave with fingerprint for the ssh key so claude can't ssh into my remote boxes by himself. I then open named tmux sessions, perform the ssh login via fingerprint, and then tell claude that he is free to take over that session with a given name.
+comment (leizzo): It's great to manage subagents using the Claude team mode and tmux integration.
+
+## 9. [github] alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.
+key: gh:alchaincyf/huashu-motion
+url: https://github.com/alchaincyf/huashu-motion
+meta: {"stars": 901, "created": "2026-10-18", "pushed": "2026-10-19", "language": "JavaScript", "topics": ["agent-skills", "animation", "claude-code", "codex", "gsap", "launch-video", "motion-graphics", "skills"]}
+query: claude-code created:>{since} stars:>20
+
+**简体中文** | [English](README.en.md)
+
+ 
+
+# huashu-motion
+
+> *「一键直出商业级产品宣传片。」*
+
+[](LICENSE)
+[](https://agentskills.io)
+[](#安装)
+
+**让你的agent做动画、作曲，指着画面改。**
+
+跟Claude Code、Codex这些agent说一句「给我的产品做个30秒的发布片」， 
+它会先读你的产品，给你三个方向挑，写出整支片子，自己写谱配乐， 
+然后在浏览器里打开一个编辑器等你。哪里不满意，在画面上点一下，写下要改什么，它就只改那一处。
+
+```sh
+npx skills add alchaincyf/huashu-motion
+```
+
+[看效果](#看效果) · [安装](#安装) · [能做什么](#能做什么) · [怎么做到的](#怎么做到的) · [背后的故事](#背后的故事)
+
+ 
+
+---
+
+## 看效果
+
+这篇README里的每一段动画都是huashu-motion做的。上面那段取自它给自己做的53秒发布片，👉 [下载完整发布片（MP4，带声音）](https://github.com/alchaincyf/huashu-motion/releases/latest)，下面Grok Bot、huashu-design、DeepSeek这几支的完整版也在同一个页面。
+
+### 指着画面改
+
+ 
+
+按C，在画面上点一下，写下要改什么。评论发过去的时候带着时间点、场景、点中的元素和它在源码里的位置，agent先把那一帧和你点的那一小块截图放大看一眼，再只改那一处，改完回一句人话，预览停在原来的位置刷新。每一版都留着，⌘Z随时撤回；标题、数字、颜色、停留时长这些会变成编辑器右边的输入框，自己改，不用等agent。
+
+（这段里的编辑器和终端是照真实界面重建的，代码细节是示意；评论是真实提过的意见。）
+
+### 先写谱，再拍片
+
+ 
+
+做发布片用的是作曲家模式：agent按节奏单先写一份谱（ABC记谱法，纯文本的乐谱），谱里的标记对齐每个场景，再由三角钢琴、弦乐和鼓组的采样演奏出来（真乐器采样要先跑一次`om samples build`，不跑就用合成音色）；画面上每个东西落地的那一帧，再配一个音效。配乐全部在本机现场生成，不调用任何收费接口。
+
+### 一天，二十支
+
+ 
+
+16个镜头，来自同一天做的七支片子，按拍子切。
+
+ 
+
+Grok Bot（粉丝自制，非官方）· 30秒：傍晚交代任务，夜里几个agent各干各的，早上7点手机上收到汇报。这段是汇报一张张送往Chief of Staff的那几拍。
+
+  
+   huashu-design 3.0 · 一句提示词钉住不动，背后的风格按拍子换 
+   小猫补光灯Pro · 八种补光色，一拍换一种 
+  
+
+### 不依赖Opus：DeepSeek V4.1 Flash也能做
+
+ 
+
+这支22秒的动效片，是把Claude Code背后的模型换成DeepSeek V4.1 Flash（1017版）做的。中间我给了三轮意见（比如加上DeepSeek的鲸鱼logo、删掉几个镜头），带配乐和音效，前后不到半小时，按当时的价格花了1块9毛5（缓存命中率99.4%）。统一的配色、贯穿全片的那颗圆点、卡在124BPM上的配乐，是skill带出来的，我一句都没提过。方法写进了skill，便宜的模型也能拍出像样的片子。
+
+---
+
+## 安装
+
+### 方式一：跟你的agent说（推荐）
+
+```
+帮我安装huashu-motion这个skill（github.com/alchaincyf/huashu-motion），装好后跑一遍demo
+```
+
+### 方式二：一行命令
+
+```sh
+npx skills add alchaincyf/huashu-motion
+```
+
+[skills](https://github.com/vercel-labs/skills)会认出你在用的agent，把skill放进对应目录；要指定的话加`-a claude-code`、`-a codex`等参数。
+
+Claude Code、Codex、WorkBuddy、Grok Bot、Muse、Dots等产品都能跑；它遵循[Agent Skills](https://agentskills.io)协议，支持skill的agent都能装。
+
+### 方式三：克隆整个仓库
+
+ 
+ 展开查看 
+
+```sh
+git clone https://github.com/alchaincyf/huashu-motion.git
+ln -s "$PWD/huashu-motion/skills/huashu-motion" ~/.claude/skills/huashu-motion   # Codex换成~/.codex/skills/
+```
+
+skill里的`bin/om`会直接调用仓库里的命令行工具，改仓库就是改skill，本机只有一份。
+
+ 
+
+### 需要什么
+
+- Node 22以上。
+- Chrome（或Chromium、Edge）：截帧、检查、导出都用你电脑上已经装好的浏览器，不额外下载渲染器。
+- FFmpeg：导出视频、合成配乐要用。
+- 真乐器音色（可选）：想要三角钢琴、弦乐、鼓组，让agent跑一次`om samples build`，下载约55MB的免费采样（CC0和CC-BY授权）；不跑就用合成音色。
+- 口播（可选）：macOS的系统音色不用装；想用Kokoro念中文稿，第一次用时会给出一行安装命令（要uv和Python 3.12，模型约325MB）；逐字对齐要装whisper-cli（`brew install whisper-cpp`）。
+
+缺什么跑`om doctor`就知道，这些都可以直接让agent帮你装。目前只在macOS上实测过。Codex的沙箱会拦本地预览和浏览器，遇到时手动批准一下。
+
+---
+
+## 能做什么
+
+装好以后，直接跟agent说：
+
+| 你说 | 它做 |
+|---|---|
+| 「用huashu-motion给我的产品做一支30秒的发布片，官网是xxx.com」 | 先读产品，出三个方向的关键帧给你挑，写节奏单，再写片、作曲配乐，打开编辑器等你 |
+| 「把data/funnel.csv做成30秒解说，讲清楚为什么注册率翻倍了」 | 按数据讲故事：先轴、后数据、只标一件事，数字变成可以直接改的输入框 |
+| 「做一支发布片，要口播，用我自己的录音：voice.m4a」 | 逐字对齐，画面落在说到的那个词上，自动出字幕，配乐在说话时让位 |
+| 「这条口播视频加个包装」 | 名字条、数字卡、关键词花字、章节卡，导出带透明通道的叠层，直接拖进剪映或Premiere |
+| 「改成竖屏」 | 复制一份1080×1920的版本，重新排版的活儿进收件箱，接着改 |
+| 「导出GIF」「要透明底」「做成网页分享」 | MP4、MOV（透明）、WebM、GIF；或者导出一个带播放器和源码的分享页 |
+
+开工前，它会先读你以前的偏好和过去片子留下的经验；每支片子做完，再把你这次说过的话、在编辑器里提的评论收一遍，值得留下的记下来。你的偏好只存在你自己电脑上。
+
+---
+
+## 怎么做到的
+
+### 一支片子就是一个`index.html`
+
+画面用代码写，GSAP、Canvas、Three.js、SVG，浏览器能画的都能用；不调用视频生成模型，每一帧只由代码和时间决定。没有私有格式，片子就是一个网页，带走就能用。
+
+```
+你的agent ──写──▶ my-film/index.html ◀──盯着── om studio（浏览器里的编辑器）
+    ▲                                              │
+    └── om inbox --wait ◀── .om/inbox.jsonl ◀── 你在画面上点一下、写一句
+```
+
+### 导演规则，不是模板
+
+skill最大的一块是导演方法：先读产品、找出它的气质，再选片子的结构和运动语言。这些规则来自实测，不是拍脑袋：
+
+- 拿21支真实的发布片（Apple、Nothing、GoPro、Googl
+
+## 10. [arxiv] SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents
+key: arxiv:2610.23554
+url: https://arxiv.org/abs/2610.23554
+meta: {"published": "2026-10-16", "authors": ["Jin Ye", "Yifan Jiang", "Lan-zhe Guo"], "categories": ["cs.AI"]}
+query: all:"language model" AND all:agent AND all:tool
+
+Large language model agents increasingly rely on skills to extend their capabilities in complex tasks. However, scalable skill use requires Selective Skill Exposure (SSE): providing relevant procedural content when needed while avoiding unnecessary exposure that may disrupt reasoning. Existing paradigms fall short in complementary ways. Progressive disclosure exposes metadata for a growing skill library, introducing context pollution; retrieval limits catalog exposure, but static retrieval from the initial task query may be misaligned with capability needs that emerge during reasoning and may still inject unnecessary skills. We propose SkillBrowser, a Meta-Skill-managed framework that enables an agent to identify current capability needs, formulate targeted queries, and selectively load skills on demand. Across six SRA-Bench subsets and five LLMs, SkillBrowser improves aggregate accuracy over static retrieval and LLM-based selection, including multi-step tool use, and mitigates accuracy degradation on already-solvable instances. Benefits remain model- and task-dependent, with under-invocation of useful skills and additional latency as key limitations. These results demonstrate the viability of Meta-Skill-managed SSE for scalable skill repositories.
+
+## 11. [vault] AI printable wall art on Etsy
+key: vault:2026-10-18:ai-printable-wall-art-on-etsy
+url: https://www.skool.com/ai-art-sellers-collective-free
+meta: {"vault_status": "open", "kind": "service", "subject": "Skool: AI Art Sellers Collective FREE", "date": "2026-10-18", "where": "TRITON-CORE/Research/links/2026-10-18-skool-ai-art-sellers-collective.md", "has_transcript": false}
+query: open
+VAULT THREAD, status open: one theme split out of a link Luke sent the vault. Judge the idea on its own: what the mechanism is, how it would be done, what tools it needs. The vault's status and note are context about the vendor and about Luke's time, not a verdict on the idea. Keep it unless the mechanism itself is unlawful or crosses the charter line (fraud services, stolen data, impersonation, explicit deepfakes of real people, unlicensed gambling). Lens is mechanism.
+
+Vault status: open, meaning nobody on the vault side has run it to a verdict.
+
+The vault's note on this theme: volume game under 7 pounds, AI allowed with disclosure
+
+The vault's verdict on the parent link, which judged the vendor and Luke's time, not this theme: (service) Free funnel into a paid masterclass on AI printable wall art for Etsy; the category is real at low prices, worth extracting the free sampler if a digital-product lane is wanted Write-up: `TRITON-CORE/Research/links/2026-10-18-skool-ai-art-sellers-collective.md` Link: https://www.skool.com/ai-art-sellers-collective-free
+
+## 12. [hn] Show HN: KiviDB, a faster Redis-compatible memory database and vector cache
+key: hn:50152541
+url: https://github.com/kividbio/kividb
+discussion: https://news.ycombinator.com/item?id=50152541
+meta: {"points": 61, "comments": 39, "created": "2026-10-19T13:53:52Z"}
+query: claude code
+
+Hi all, So I have been working on this project KiviDB from February 2026. It started as a project for me to understand rust, having a product with no GC pauses, memory blow up after snapshots and getting OOM on running pods, and that was actually an issue I faced with Dragonfly. I wanted to have something picking the best of Rust, but also picking the best parts of other alternatives like Garnet and Dragonfly. I used AI a lot, but I was the one making the design decisions based on the tests that claude picked from my history of troubleshooting sessions as part of my job. KiviDB supports both RESP2 and RESP3 protocol. I had some founders credits on my AWS account which helped me with the infra, and running instances I could perform benchmark on. Its keyspace is sharded across threads, it is multi-threaded in nature, and performs best on Linux due to io_uring, I used the tokio_uring crate for this. It also has tokio fallback for other OS's. I hadn't open sourced it until recently as I felt it was not ready yet, the best way to learn it was to build a cloud managed service for it across all three widely used cloud providers i.e AWS, GCP and azure. Since I used to mainly work with cloud, I had some insights on what would be the best ways for the deployments, how to conduct failovers, manage SLAs, etc. And that's what I took help from claude to fast pace it. The website does look like AI slop but it works for now, given my limited resources, that's all I had. You may check it out 
+comment (murtazayusuf): Just adding my benchmarking repo, that contains terraform code and scripts using which I performed the benchmarks, helpful for re-evaluating and verifying the numbers published on our website. And possibly to learn where we might have gone wrong. https://github.com/kividbio/kivi-benchmark
+comment (falconBrisk47): Pipelined throughput that high usually means the loadgen is the thing you're measuring. Past ~5M ops/sec we needed 3 separate memtier hosts to keep the client off the critical path. Any p99 numbers alongside it?
+comment (saurilabs): Has there been heavy usage of AI in building this?
+
+## 13. [github] MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル
+key: gh:marycache/imozuru
+url: https://github.com/MaryCache/imozuru
+meta: {"stars": 759, "created": "2026-10-13", "pushed": "2026-10-19", "language": "Python", "topics": []}
+query: claude-code created:>{since} stars:>20
+
+# imozuru
+
+ 
+   
+   
+ 
+
+日本語 | [English](README.en.md)
+
+imozuruは、知らない分野を、原文にたどりつくまで芋づる式に掘るClaude Codeのスキルです。
+Batesのberrypicking、Ellisの探索行動のモデル、Kuhlthauの探索過程の研究など、図書館情報学の情報探索の研究から、考え方を応用しています。
+
+## ふつうに頼んだときとの違い
+
+スキルなしで「調べて」と頼むと、LLMは検索上位の数件を読んで要約を返します。
+要約はすぐに読めますが、判断に必要な細部が落ちやすい欠点を抱えています。
+分野の用語を知らないうちは検索語も選べないため、最初に思いついた言葉の範囲から先へ進めません。
+
+imozuruはまず分野の用語、中心にいる人、知見が集まる場を押さえ、そこから引用やリンク、著者をたどって原文を集めます。
+集めた原文は要約せずに保存し、答えに必要な主張ごとに「どのファイルの何行目か」を示すに留まります。
+原文を読んで判断するのは、ユーザー自身です。
+
+## 動き方
+
+```mermaid
+flowchart LR
+    A[問いと 要る主張を書く] --> B[地図づくり 用語・人・場]
+    B --> C[たどる 引用・リンク・著者]
+    C --> D[原文を落とす]
+    D --> E{要る主張に 原文が付いた？}
+    E -- まだ --> C
+    E -- 付いた・飽和した --> F[抜き書きの ページを作る]
+```
+
+Claudeはまず、問いと、答えるために必要な主張を3〜6個書き出します。
+次に、探し方を変えた2本の検索役（Webを検索するサブエージェント）で用語、人、場を集め、地図（`map.md`）にまとめます。
+その後、原文が見つかるまで参考文献や被引用、著者をたどっていきます。
+論文のない分野では、記事の中のリンクや「〇〇さんの記事を参考にした」という記述をたどります。
+
+見つけた原文は `sources/` に保存し、404やログインを求めるページは中身を見て除きます。
+すべての主張に原文が付くか、新しい資料が出てこなくなったら探すのをやめます。
+最後に、原文から切り出した文を主張ごとに並べたページ（抜き書きのページ）を作ります。
+
+見張りのモードでは、掘って見つけた場（QiitaやZennのタグ、note、YouTube、ブログ、arXiv）の新着をRSSで集めて並べます。
+
+## 入れ方
+
+[skills](https://github.com/vercel-labs/skills) のCLIで入れられます。
+
+```sh
+npx skills add MaryCache/imozuru
+```
+
+手動の場合は、`skills/imozuru/` を `~/.claude/skills/imozuru/` にコピーしてください。
+
+## 必要なもの
+
+スクリプトはPython 3.10以上の標準ライブラリだけで動き、次のコマンドは入っていれば使います。
+
+| コマンド | 使う場面 | 入っていない場合 |
+|---|---|---|
+| `pdftotext`（popplerかXpdf） | PDFから本文を取り出す | PDFの本文が取れず `FAIL` になる |
+| `pdftoppm`（popplerかXpdf）と `tesseract` | 文字の層がない古いPDFをOCRにかける | そのPDFは `FAIL` になる |
+| `yt-dlp` | YouTubeの字幕を取得する | 動画は `FAIL` になる |
+| [ax](https://github.com/yusukebe/ax) | HTMLをmarkdownにする | 標準ライブラリで文字だけを取り出す（見出しや表の形はaxのほうがよく残る） |
+
+引用をたどる `chain.py` は [OpenAlex](https://openalex.org/) のAPIを使いますが、APIキーは必要ありません。
+
+## 使い方
+
+Claude Codeで、次のように頼みます。
+
+```
+芋づる式に調べて: 歌ってみたのMIXで、上手い人がどういう順番で処理しているか
+```
+
+```
+Gaussian Splattingってよく聞くけど全然わからない。論文とか解説の流れを掘ってほしい
+```
+
+```
+/imozuru watch react
+```
+
+結果は `~/research/ /` に、次の形で保存されます。
+
+```
+map.md         問い・要る主張・用語・人・場・原文の表・次の手がかり
+log.md         周ごとに、何を探して何が出たか・判断とその理由
+sources/       落とした原文
+extracts.json  抜き書き
+report.html    抜き書きのページ
+```
+
+抜き書きのページの見本は `examples/demo/` にあり、次のコマンドでスクリプトだけを試せます。
+
+```sh
+python3 skills/imozuru/scripts/report.py examples/demo
+```
+
+## 設計の考え方
+
+### 要約しない理由
+
+Kuhlthau（1991）は、調べ始めの混乱した段階で詳しくまとめると、早すぎる閉じ（premature closure）を招き、探索の過程が妨げられると述べています。
+そのためimozuruは、原文の場所を示すところまでにとどめています。
+
+### 止めどきの決め方
+
+止める条件は2つです。
+1つ目は、すべての主張に原文の場所が付くことで、証拠がそろったかで止めどきを決めるRohとHan（2026）のHALTにならいました。
+主張が甘くならないよう、少なくとも1つは依頼の言葉の条件をそのまま含め、半分以上は原文を読まないと答えられない形にしています。
+
+2つ目は飽和で、2本の検索役が挙げた資料の7割以上がすでに地図にあれば止めます。
+独立した2回の探索の重なりから全体の数を見積もる考え方（Kastner 2007）を借りたもので、7割は試しながら決めた仮の目安です。
+
+### 方向を1つに決めない理由
+
+Zhouら（2026）のHypoSearchによると、AIの検索は方向がいくつもありうる段階で1つを選び、後の検索でもその道を選び続けて失敗しがちです。
+そこで迷ったときは、別の仮説を持たせた検索役を2本並べ、結果を比べてから進みます。
+
+### 論文のない分野の扱い
+
+塗り方やMIXのように論文がほとんどない分野では、知見の多くが個人のブログや動画にあります。
+imozuruはそうした記事も論文と同じようにたどるので、保存した原文には次の印を付け、どれを信じるかはユーザーに任せています。
+
+- 〔論文〕査読や学会を通ったもの、arXivのプレプリント
+- 〔本人〕やった本人の記録（自分で試した、作った、測った過程が書いてあるもの）
+- 〔観察〕他人の作品ややり方を見て、特徴を書き出したもの
+- 〔まとめ〕他人の知見を集めたり言い換えたりした記事
+- 〔公式〕道具や製品を作った側の文書
+
+### 抜き書きを機械で照合する理由
+
+原文を何十本も保存しただけでは、どこから読めばよいか分かりません。
+そこでEllisのモデルにある抜き書き（extracting）にならい、主張ごとに原文の該当部分を切り出したページを作ります。
+`report.py` は、切り出した文が原文の指定の行にそのまま在るかを照合し、1語でも違えばページを作りません。
+
+## 決まりの出典
+
+スキルの各決まりがどの論文のどこから来ているかは、`skills/imozuru/references/theory.md` にまとめています。
+
+## 注意点
+
+- 検索役はWebを検索するため、問いの内容が検索語として外部に送られます。機密情報や個人データが関わる調べものには使わないでください。
+- 有料の論文を回避して入手する手段は使わず、取得できなかったものは「届かなかった」と報告します。
+- 保存した原文は手元で読むための写しなので、再配布しないでください。
+
+## ライセンス
+
+M
+
+## 14. [hn] Show HN: I built a task system to handle the drudgery so I could focus on tasks
+key: hn:50151980
+url: https://3anddoneapp.com/try
+discussion: https://news.ycombinator.com/item?id=50151980
+meta: {"points": 43, "comments": 38, "created": "2026-10-19T13:07:07Z"}
+query: claude code
+
+I'm a software engineer from the east coast (who has lived in Boston, NY, the bay area, UK, France), and I built a task system called 3 & Done. It's the place you trust to store everything you need to do. It accepts voice input for rapid entry, as well as text (it stores the audio locally so you can listen to jog your memory) and emails you every morning with the three most important things for you to do that day, and why, based on what you've said about the task: deadlines, urgency, sitting too long. I've been at software engineering for about 44 years now... Grew up with it, which was unusual when I started, and I was always good about getting into the zone and doing things. The career started small, small company, then back office, the dot com startups, then smaller companies again after the bust, a non-profit, and eventually YouTube (Google at the time, but just barely) and Meta (just Facebook when I was there). When I hit the startups, and later big tech, it was no longer enough to just be an engineer, to have drive, to be good, you had to be organized, you had to follow through, get stuff done, and that's where the task systems started. Twenty-five over the years (and yes, I've actually counted), from Moleskine notebooks with Getting Things Done, evernote (remember evernote?), bug trackers, todoist, asana, google keep, among others. When I managed on the Facebook News Feed, I got into gantt charts (for me and my team), spreadsheets, OmniPlan... I remember apologizing to
+comment (cjimesh): This is super cool. But there's a very high likelihood that your past self would not have used this tool. For the simple reason that you wouldn't want company information going out to a third party. Any plans to open source the harness/skill?
+comment (privacyishuman): Nah, I'm not paying to give away my data. But I do really want a good tasks app that is self hostable, end to end encrypted, with great client side apps. Maybe I'll reverse engineer things 3 and make an Android version.
+comment (harshalizee): App monetization is wild these days. $9.99/month for a todo app with email that was generated with AI. Meanwhile, an AI subscription starts at $20/month and you can vibe code your own version to suit your preferences and free forever.

@@ -6,13 +6,23 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-323 judged over 22 harvest days, 214 kept, 68 testable, 65 queued as probes, 62 with a probe verdict.
+337 judged over 22 harvest days, 224 kept, 69 testable, 66 queued as probes, 63 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0322 | 2026-10-19 | github | [cranebeaker/coop-anything: Co-op Anything: point your AI agent at any single-player game a](https://github.com/cranebeaker/coop-anything) | mechanism | game-bots | yes | P-0177 |
+| H-0336 | 2026-10-19 | github | [MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル](https://github.com/MaryCache/imozuru) | mechanism | mechanism-hunting | yes | P-0181 |
+| H-0334 | 2026-10-19 | vault | [AI printable wall art on Etsy](https://www.skool.com/ai-art-sellers-collective-free) | mechanism | open-data | no: Needs an Etsy seller account and listings to see any sales s |  |
+| H-0333 | 2026-10-19 | arxiv | [SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents](https://arxiv.org/abs/2610.23554) | mechanism | tech | no: Needs model calls and the SRA-Bench benchmark; no local mode |  |
+| H-0332 | 2026-10-19 | github | [alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by](https://github.com/alchaincyf/huashu-motion) | mechanism | tools-for-strangers | no: The README says it is driven by a coding agent and needs om  |  |
+| H-0331 | 2026-10-19 | hn | [Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling](https://crystl.dev/guides/tmux-for-ai-agents/) | mechanism | tools-for-strangers | no: Body is thin and the guide was not read; tmux presence is un |  |
+| H-0330 | 2026-10-19 | vault | [offer builder plus 7-day first-client sprint](https://www.skool.com/fitscaling-business-school-9423) | mechanism | none | no: A real test needs live outreach to real prospects and a sale |  |
+| H-0329 | 2026-10-19 | awesome | [rezored/cubicle-crew (new in awesome-claude-code)](https://github.com/rezored/cubicle-crew) | mechanism | tools-for-strangers | no: Desktop app is Windows only and the value is visual; a log-p |  |
+| H-0327 | 2026-10-19 | arxiv | [From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving A](https://arxiv.org/abs/2610.23599) | mechanism | tech | no: Needs LLM calls and the paper's benchmarks; there is no loca |  |
+| H-0326 | 2026-10-19 | github | [Gathin23/cleanyourtv: Debloat any Android or Google TV over Wi-Fi and get an Apple TV-styl](https://github.com/Gathin23/cleanyourtv) | both | tools-for-strangers | no: Needs a physical Android TV with debugging switched on; the  |  |
+| H-0324 | 2026-10-19 | vault | [daily news roundup with talking head over screenshots](https://www.instagram.com/reel/DeqInQdRkfU/) | mechanism | tools-for-strangers | no: A useful run needs an avatar render and a platform account t |  |
+| H-0322 | 2026-10-19 | github | [cranebeaker/coop-anything: Co-op Anything: point your AI agent at any single-player game a](https://github.com/cranebeaker/coop-anything) | mechanism | game-bots | yes | P-0177 **blocked** |
 | H-0321 | 2026-10-19 | hn | [Show HN: WhatsApp MCP running free on Cloudflare](https://github.com/finereli/whatsapp-mcp) (intel) | mechanism | tech | no: It needs a personal WhatsApp account to link plus a Cloudfla |  |
 | H-0320 | 2026-10-19 | vault | [one-credit multi-model connector for desktop seats](https://www.instagram.com/reel/DcEsI98lT-x/) | mechanism | tools-for-strangers | no: It needs an account and credits on the vendor service, so it |  |
 | H-0315 | 2026-10-19 | vault | [talking head over lifestyle B-roll](https://www.instagram.com/p/DZt8BdfMNFM/) | mechanism | tools-for-strangers | no: A real build needs paid avatar and voice generation, and the |  |
@@ -228,6 +238,128 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0336 MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル
+2026-10-19, github, https://github.com/MaryCache/imozuru
+
+- **Mechanism:** Two search sub-agents with different hypotheses map a field's terms, people and venues into map.md, then follow citations (through the keyless OpenAlex API), links and authors to primary sources, which are saved unsummarised. It stops when every needed claim has a source or when 70 percent of what the two searchers found is already in the map. report.py then rebuilds a page of excerpts and refuses if any excerpt is not found verbatim at the stated line in the saved source.
+- **Claim:** A Claude Code skill that digs from unfamiliar terms to original sources, with each claim tied to a file and line, rather than summarising top search hits.
+- **Testable:** yes. Does report.py on examples/demo build a page, and does it refuse after one word of an extract is altered (yes/no each)? Queued as P-0181.
+- **Idea on its own:** sound. Verbatim line-level excerpt checking and a stop rule based on overlap between two independent searchers are cheap, checkable controls.
+- **How it would be done:** Clone the repo into the sandbox, run report.py on the demo, then edit one extract and confirm it fails. Call chain.py against OpenAlex for one known paper to see the citation walk. The same verbatim check could be added to Proteus's harvest and Field Notes so every quote is traceable to a stored source.
+- **Stack already covers:** Claude Code with skills and sub-agents, a keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** imozuru https://github.com/MaryCache/imozuru (The skill, chain.py and report.py.); OpenAlex API https://openalex.org/ (Keyless citation graph used by chain.py.); poppler (pdftotext) https://poppler.freedesktop.org/ (PDF text extraction for saved sources.)
+- **Field Notes line:** A research skill that refuses to build its report if any quoted excerpt is not word-for-word in the saved source.
+
+### H-0334 AI printable wall art on Etsy
+2026-10-19, vault, https://www.skool.com/ai-art-sellers-collective-free
+
+- **Mechanism:** Generate many images with an image model, bundle them as digital downloads in standard print sizes, list them on Etsy with search-tuned titles and tags, and rely on volume at low prices (under 7 pounds) with the listing disclosing AI use. Etsy delivers the files automatically so there is no stock or shipping. Income depends on listing count, search ranking and the rate of sales per listing.
+- **Claim:** Printable AI wall art sold in volume under 7 pounds on Etsy is a real category when AI use is disclosed.
+- **Testable:** no. Needs an Etsy seller account and listings to see any sales signal. Needs: an Etsy seller account.
+- **Idea on its own:** needs-a-run. Cheap to produce, but crowded and rule-bound, so only real listings show whether it sells.
+- **How it would be done:** Generate a themed set with Gemini stills, upscale and crop to standard print ratios, and make mockup images. Write titles and tags from Etsy's public search suggestions and competitor listings, upload in bulk, and track views, favourites and sales per listing. A person must open the shop and handle policy disclosure.
+- **Stack already covers:** Gemini (stills), Claude Code with skills and sub-agents
+- **To fetch:** Real-ESRGAN https://github.com/xinntao/Real-ESRGAN (Free upscaler to reach print resolution.)
+- **Missing:** An Etsy account and the nerve to run it for a few weeks.
+- **Field Notes line:** Etsy wall art is a volume game: batch-generated images, auto-delivered files, search keywords as the only lever.
+
+### H-0333 SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents
+2026-10-19, arxiv, https://arxiv.org/abs/2610.23554
+
+- **Mechanism:** Instead of loading every skill description or retrieving once from the task prompt, a meta-skill lets the agent state what capability it needs at the current step, form a targeted query, and load only the matching skill on demand. This repeats as the task changes. It is evaluated on SRA-Bench subsets across five LLMs. Limits listed are under-invocation of useful skills and latency.
+- **Claim:** Improves aggregate accuracy over static retrieval and LLM-based selection while avoiding degradation on tasks the agent could already solve.
+- **Testable:** no. Needs model calls and the SRA-Bench benchmark; no local model. Needs: model API calls, SRA-Bench.
+- **Idea on its own:** needs-a-run. The on-demand pattern is sensible but the paper itself admits under-invocation and gains depend on the model.
+- **How it would be done:** Keep the skill library out of the prompt, expose one 'find skill' step that takes a free-text need, search skill descriptions with simple keyword or embedding match, and load the winner. Compare task success with the full listing on a dozen past probes.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** arXiv 2610.23554 https://arxiv.org/abs/2610.23554 (Method and benchmark details.)
+- **Field Notes line:** Skills load better when the agent asks for one mid-task than when all are listed up front or retrieved once.
+
+### H-0332 alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at 
+2026-10-19, github, https://github.com/alchaincyf/huashu-motion
+
+- **Mechanism:** A film is one index.html driven by GSAP, canvas or SVG, with each frame a pure function of time, so frames can be captured with the local Chrome and joined by ffmpeg. The agent writes the music as ABC notation synced to scene markers, which is rendered with free CC0 or CC-BY instrument samples locally. A browser editor lets you click a frame; the comment, timestamp and source location go to an inbox file the agent reads to change only that element.
+- **Claim:** One sentence to a coding agent produces a 30 second product launch film with a score, editable by pointing at the frame; a 22 second film cost about 1.95 yuan on DeepSeek.
+- **Testable:** no. The README says it is driven by a coding agent and needs om CLI, Node 22, Chrome and ffmpeg; not confirmed runnable keyless within 30 minutes. Needs: Node 22, ffmpeg, a coding agent session.
+- **Idea on its own:** sound. Deterministic HTML-to-frames is the same approach as HyperFrames and the comment inbox is a clean feedback loop.
+- **How it would be done:** Install the skill with npx, run the demo, then a short film from a product page. The comment inbox pattern and ABC-notation scoring are the two parts worth copying into the HyperFrames flow. A person picks the direction from the three keyframe options and reviews the final cut.
+- **Stack already covers:** HyperFrames, Claude Code with skills and sub-agents, local transcription
+- **To fetch:** huashu-motion https://github.com/alchaincyf/huashu-motion (Skill and om CLI, including composer and editor.); FFmpeg https://ffmpeg.org/download.html (Export and soundtrack mixing.); abcjs https://github.com/paulrosen/abcjs (ABC notation rendering and synthesis in the browser.)
+- **Field Notes line:** A launch film is a web page; music is written as plain-text notation, and click-to-comment feeds changes back to the agent.
+
+### H-0331 Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling
+2026-10-19, hn, https://crystl.dev/guides/tmux-for-ai-agents/
+
+- **Mechanism:** tmux holds named sessions in a background server, and 'tmux send-keys' types into a pane while 'capture-pane' reads its text. An agent can therefore drive or hand over a long-running terminal session, including one already logged in over ssh. The 'ceiling' in the title is that screen scraping gives no structured signal for when an agent is done or waiting.
+- **Claim:** Guide to using tmux sessions and send-keys to run and hand over Claude Code sessions, with its limits.
+- **Testable:** no. Body is thin and the guide was not read; tmux presence is unconfirmed and the hook blocks unattended terminal driving.
+- **Idea on its own:** sound. send-keys and capture-pane are long-standing tmux features; the handover pattern keeps credentials out of the agent.
+- **How it would be done:** Start a named tmux session, authenticate manually, then give the agent the session name so it uses send-keys to type and capture-pane to read the result. Poll for a prompt string to detect completion. Add a log file via pipe-pane for a durable record.
+- **To fetch:** tmux https://github.com/tmux/tmux (The terminal multiplexer the pattern depends on.)
+- **Field Notes line:** Comment thread points to a trick: log in yourself in a named tmux session, then tell the agent to take it over.
+
+### H-0330 offer builder plus 7-day first-client sprint
+2026-10-19, vault, https://www.skool.com/fitscaling-business-school-9423
+
+- **Mechanism:** A fixed-length sprint template: define a high-ticket offer (outcome, price, guarantee), write outreach scripts, and run a daily outreach quota for seven days to land the first paying client. The mechanism is a script bank plus a forced activity count, not any technology. For an AI fitness coach the offer is a coaching programme sold at a high price with the coach's content and check-ins produced by AI.
+- **Claim:** A seven-day sprint to the first high-ticket coaching client, per the free Skool group.
+- **Testable:** no. A real test needs live outreach to real prospects and a sales conversation. Needs: a niche, prospects, and a place to message them.
+- **Idea on its own:** needs-a-run. The structure is ordinary sales method and works or fails on the offer and the audience.
+- **How it would be done:** Write the offer in one page, produce 20 outreach messages from a script bank with Claude Code, send a fixed number a day through a human-approved channel, and log replies in a sheet. A person must hold the sales calls and deliver the service.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A real offer and a person to sell and deliver it.
+- **Field Notes line:** The sprint is an offer template plus a daily outreach quota; the unproven part is whether anyone buys.
+
+### H-0329 rezored/cubicle-crew (new in awesome-claude-code)
+2026-10-19, awesome, https://github.com/rezored/cubicle-crew. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** It tails the session JSONL files Claude Code already writes under ~/.claude/projects and infers each agent's state (busy, waiting on a question or permission, finished) and sub-agent parentage from tool events. Other agents report through a local HTTP endpoint on 127.0.0.1:4317. Context size is read from usage fields in the logs. An optional hook answers permission prompts from the UI.
+- **Claim:** Turns every Claude Code, Codex, Gemini CLI or OpenCode session into a pixel-art coworker showing live state, with no keys or hooks needed.
+- **Testable:** no. Desktop app is Windows only and the value is visual; a log-parsing slice would not test the repo's claim. Needs: a Windows machine for the desktop widget.
+- **Idea on its own:** sound. Reading existing logs is a stable, read-only way to monitor agents; only the log format is a dependency.
+- **How it would be done:** Watch the project log folder, parse each line for tool_use, tool_result and agent ids, and keep a state per session. Render it as a small web page. This could give Proteus a free run monitor from its own state/runs and transcripts without touching the hook.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** cubicle-crew https://github.com/rezored/cubicle-crew (Reference parser of the session log format.)
+- **Field Notes line:** Claude Code's own session logs are enough to see which agent is stuck and which has finished, with no hook installed.
+
+### H-0327 From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents
+2026-10-19, arxiv, https://arxiv.org/abs/2610.23599
+
+- **Mechanism:** CDSE splits one agent skill into four parts: Meta (when and why to use it), Experience (lessons), Tool and Script. After each run it reads successful and failed trajectories, extracts text 'semantic gradients', and routes each to the matching part for a separate update and validation. An adaptive layer chooses which parts to load at invocation. Scores come from six agent benchmarks across three models.
+- **Claim:** Beats the strongest competing skill-evolution method by 2.6 points on average across 36 settings and the base agent by 7.6.
+- **Testable:** no. Needs LLM calls and the paper's benchmarks; there is no local model and no code link in the abstract. Needs: model API calls, benchmark harness.
+- **Idea on its own:** needs-a-run. The split is plausible and cheap to copy in a skill folder, but the gain is only the paper's own claim.
+- **How it would be done:** In a skill folder, keep separate files for when-to-use, lessons learned, tool notes and scripts. After each probe, a child reads the trajectory and proposes one edit to whichever file it belongs in, and a check reruns a past task before accepting the edit. The existing probe-to-verdict skill and its run logs already supply the trajectories.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** arXiv 2610.23599 https://arxiv.org/abs/2610.23599 (Full paper for method details and any code link.)
+- **Missing:** A benchmark to show whether a self-edited skill actually does better.
+- **Field Notes line:** Skills may improve better if lessons, tools and scripts are updated separately instead of rewriting one big file.
+
+### H-0326 Gathin23/cleanyourtv: Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
+2026-10-19, github, https://github.com/Gathin23/cleanyourtv
+
+- **Mechanism:** Android TVs expose adb over the network once developer options are on. A coding agent backs up the installed package list, then runs 'pm disable-user' on vendor ad, telemetry and content packages, which hides them without uninstalling so a restore script can reverse it. It then installs a small custom launcher APK as the default home. Per-brand package lists come from the repo's 54 tested TV lists, and the agent confirms each step with screenshots pulled over adb.
+- **Claim:** Strips bloatware from any Android or Google TV over Wi-Fi in about fifteen minutes and installs an Apple TV-style launcher, no root.
+- **Testable:** no. Needs a physical Android TV with debugging switched on; the lists could be read but not verified without one. Needs: an Android or Google TV.
+- **Idea on its own:** sound. adb pm disable-user is standard, reversible Android tooling and the agent only automates discovery and confirmation.
+- **How it would be done:** Take the repo's per-brand package lists as the dataset. For a client or stranger, enable debugging on the TV, connect with adb over the network, back up packages, disable the listed ones after asking which apps are used, and install the launcher. A person is needed for the TV's developer-options steps and the on-screen allow prompt. As a service it is local installs or remote video-call walkthroughs for non-technical owners.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Android platform-tools (adb) https://developer.android.com/tools/releases/platform-tools (The debug bridge that every step runs through.); cleanyourtv https://github.com/Gathin23/cleanyourtv (The prompt, per-TV package lists and launcher source.)
+- **Missing:** A test TV, and anyone with the 54 models to check the lists against.
+- **Field Notes line:** A prompt plus a list of 54 TV models turns Claude Code into an adb debloater; the reusable part is the per-brand package lists.
+
+### H-0324 daily news roundup with talking head over screenshots
+2026-10-19, vault, https://www.instagram.com/reel/DeqInQdRkfU/
+
+- **Mechanism:** A daily script pulls the day's headlines or token moves from public feeds, captures screenshots of the sources, and lays an avatar or cloned-voice presenter over them with captions. One template is rendered every day, so the cost per episode is mostly compute and a review pass. A sponsor slot is a fixed segment in the template. The audience comes from posting the same format on a schedule to short-video platforms.
+- **Claim:** A cheap daily talking-head-over-screenshots news reel with a paid sponsor slot, run by a memecoin account.
+- **Testable:** no. A useful run needs an avatar render and a platform account to see any audience response, neither keyless. Needs: a posting account and avatar render credits to measure audience.
+- **Idea on its own:** needs-a-run. The production side is clearly automatable; whether a new page gets any audience is the open question.
+- **How it would be done:** Pick one narrow beat with public data (for example the Grinder's own paper-desk results or football forecasts). Each night a script pulls the numbers, takes screenshots with a headless browser, and writes a 30 to 60 second script with Claude Code. ElevenLabs gives the voice, HeyGen or Tavus the presenter, and HyperFrames composes screenshots, captions and the sponsor slot into one render. A person would still approve each episode, post it, and sell the sponsor slot, since no script covers sales.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames, ElevenLabs, HeyGen and Tavus, Gemini (stills)
+- **Missing:** An audience and a sponsor buyer; nobody here has either.
+- **Field Notes line:** A daily news reel is one template filled by a script; the only human job is the review and the sponsor sale.
 
 ### H-0322 cranebeaker/coop-anything: Co-op Anything: point your AI agent at any single-player game and play it with friends (onlin
 2026-10-19, github, https://github.com/cranebeaker/coop-anything
@@ -2692,6 +2824,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0334 | 2026-10-19 | AI printable wall art on Etsy | open | needs-a-run | no |  |
+| H-0330 | 2026-10-19 | offer builder plus 7-day first-client sprint | open | needs-a-run | no |  |
+| H-0324 | 2026-10-19 | daily news roundup with talking head over screenshots | open | needs-a-run | no |  |
 | H-0320 | 2026-10-19 | one-credit multi-model connector for desktop seats | open | sound | no |  |
 | H-0315 | 2026-10-19 | talking head over lifestyle B-roll | open | sound | no |  |
 | H-0310 | 2026-10-19 | AI UGC and ad videos sold to businesses | open | needs-a-run | no |  |
@@ -2760,6 +2895,17 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0210 | 2026-10-19 | [poppler (pdftotext)](https://poppler.freedesktop.org/) | PDF text extraction for saved sources. | H-0336 (MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claud) | shelf |
+| T-0209 | 2026-10-19 | [OpenAlex API](https://openalex.org/) | Keyless citation graph used by chain.py. | H-0336 (MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claud) | shelf |
+| T-0208 | 2026-10-19 | [imozuru](https://github.com/MaryCache/imozuru) | The skill, chain.py and report.py. | H-0336 (MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claud) | shelf |
+| T-0207 | 2026-10-19 | [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) | Free upscaler to reach print resolution. | H-0334 (AI printable wall art on Etsy) | shelf |
+| T-0206 | 2026-10-19 | [arXiv 2610.23554](https://arxiv.org/abs/2610.23554) | Method and benchmark details. | H-0333 (SkillBrowser: Selective Skill Exposure for Scalabl) | shelf |
+| T-0205 | 2026-10-19 | [abcjs](https://github.com/paulrosen/abcjs) | ABC notation rendering and synthesis in the browser. | H-0332 (alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲) | shelf |
+| T-0204 | 2026-10-19 | [FFmpeg](https://ffmpeg.org/download.html) | Export and soundtrack mixing. | H-0332 (alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲) | shelf |
+| T-0203 | 2026-10-19 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | Skill and om CLI, including composer and editor. | H-0332 (alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲) | shelf |
+| T-0202 | 2026-10-19 | [cubicle-crew](https://github.com/rezored/cubicle-crew) | Reference parser of the session log format. | H-0329 (rezored/cubicle-crew (new in awesome-claude-code)) | shelf |
+| T-0201 | 2026-10-19 | [arXiv 2610.23599](https://arxiv.org/abs/2610.23599) | Full paper for method details and any code link. | H-0327 (From Trajectories to Differentiated Skills: Cognit) | shelf |
+| T-0200 | 2026-10-19 | [cleanyourtv](https://github.com/Gathin23/cleanyourtv) | The prompt, per-TV package lists and launcher source. | H-0326 (Gathin23/cleanyourtv: Debloat any Android or Googl) | shelf |
 | T-0199 | 2026-10-19 | [REA reverse-engineering MCP](https://github.com/morluto/rea) | Looks inside the game binary, which coop-anything depends on for path two. | H-0322 (cranebeaker/coop-anything: Co-op Anything: point y) | shelf |
 | T-0198 | 2026-10-19 | [coop-anything](https://github.com/cranebeaker/coop-anything) | The playbook, skills and MCP server. | H-0322 (cranebeaker/coop-anything: Co-op Anything: point y) | shelf |
 | T-0197 | 2026-10-19 | [Baileys](https://github.com/WhiskeySockets/Baileys) | The unofficial WhatsApp Web library such projects rely on. | H-0321 (Show HN: WhatsApp MCP running free on Cloudflare) | shelf |
@@ -2964,6 +3110,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0337 | 2026-10-19 | hn | [Show HN: I built a task system to handle the drudgery so I could focus on tasks](https://3anddoneapp.com/try) | Paid consumer task app launch; the only mechanism is an LLM ranking tasks for a morning email. |
+| H-0335 | 2026-10-19 | hn | [Show HN: KiviDB, a faster Redis-compatible memory database and vector cache](https://github.com/kividbio/kividb) | Launch post whose headline numbers cannot be checked on a Mac without io_uring; comments themselves note loadgen limits. |
+| H-0328 | 2026-10-19 | youtube | [Lesson 5b: Poisson regression](https://www.youtube.com/watch?v=otMo6tN3Vjo) | Transcript blocked, so there is no body to judge; Poisson regression for football is already covered by the Pitch desk's |
+| H-0325 | 2026-10-19 | hn | [Ask HN: How to deal with shipping AI-written code you don't understand?](https://news.ycombinator.com/item?id=50151036) | General discussion thread about unreviewed AI code with no tool or mechanism beyond 'write many tests'. |
 | H-0323 | 2026-10-19 | hn | [Torvalds use Claude for bottleneck fix, but race discovered](https://thenewstack.io/torvalds-claude-code-kernel/) | News about a kernel patch with a race found in review; the fetched page is mostly newsletter boilerplate and gives no me |
 | H-0319 | 2026-10-19 | awesome | [a1-x-tech/mcp-google-contacts (new in awesome-mcp-servers)](https://github.com/a1-x-tech/mcp-google-contacts) | A standard wrapper over the People API needing a Google OAuth login; the etag guard is routine. |
 | H-0318 | 2026-10-19 | youtube | [Top 5 Claude Code Skills Everyone Needs in 2026](https://www.youtube.com/watch?v=gF30riZwUAc) | No transcript available and the title is a listicle. |
