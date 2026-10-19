@@ -1,0 +1,67 @@
+{
+ "read": 20,
+ "ok": 20,
+ "same_slot_creator_buy": 9,
+ "no_creator_buy": 11,
+ "touched_by_anyone": 4,
+ "distinct_creators_all": 11,
+ "distinct_creators_no_buy": 5,
+ "median_age_at_read_s": 324,
+ "median_buyers_total_touched": 4.0,
+ "shots": [
+  {
+   "shot": "S1",
+   "p": 0.55,
+   "hits": 2,
+   "n": 11,
+   "brier": 0.2843
+  },
+  {
+   "shot": "S2",
+   "p": 0.4,
+   "hits": 2,
+   "n": 11,
+   "brier": 0.1964
+  },
+  {
+   "shot": "S3",
+   "p": 0.6,
+   "hits": 2,
+   "n": 11,
+   "brier": 0.3236,
+   "hits_touched": 2,
+   "n_touched": 4
+  },
+  {
+   "shot": "S4",
+   "p": 0.15,
+   "hits": 0,
+   "n": 11,
+   "brier": 0.0225
+  },
+  {
+   "shot": "S5",
+   "p": 0.6,
+   "hits": 11,
+   "n": 11,
+   "brier": 0.16,
+   "hits_touched": 4,
+   "n_touched": 4
+  },
+  {
+   "shot": "S6",
+   "p": 0.15,
+   "hits": 1,
+   "n": 11,
+   "brier": 0.0861
+  },
+  {
+   "shot": "S7",
+   "p": 0.01,
+   "hits": 0,
+   "n": 11,
+   "brier": 0.0001
+  }
+ ],
+ "mean_brier": 0.1533
+}

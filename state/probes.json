@@ -4313,22 +4313,30 @@
    "after": "",
    "est_minutes": 60,
    "added": "2026-10-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-19T19:01:49+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-19T19:10:57+0100",
+   "note": "Outside buyer in the creation slot on 2 of 11 true no-creator-buy launches (18 percent), shot said 40 percent or fewer, P-0042 70 percent with a buy: hit. 7 of 11 untouched at median 5.4 min; mean Brier of the seven own-coin shots 0.153 v 0.250, S1 and S3 too warm. Of 20 creates with no Buy in the create tx, 9 had a bundled same-slot creator buy; 11 launches from 5 wallets. Bug: analyse() read the PUMP token mint when a create had no balance for its own mint; fixed by pinning the signer mint. Read at 2 to 9 min, not 1 h, 12 tx cap. Next: close (own coin answered keyless; D-014 closes not launched).",
+   "artefacts": [
+    "experiments/2026-10-19-P-0180"
+   ],
+   "minutes": 9,
+   "calls": 94,
+   "denied": [
+    "Monitor `tail -f /private/tmp/claude-502/-Users-triton-PROTEUS/d47fbcef-63e4-427a-bf89-c1d55f0365de`",
+    "TaskStop ``",
+    "Bash `sed -i '' -e 's#HERE + \"/rows.json\"#HERE + \"/rows-v2.json\"#' -e 's#HERE + \"/results.json\"#`",
+    "Bash `chmod 444 /Users/triton/PROTEUS/experiments/2026-10-19-P-0180/rows.json`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "outside buyer in the creation slot on 40% or fewer of the no-creator-buy launches (P-0042: 70% with a creator buy)",
-    "at": "2026-10-19T19:02:22+0100"
+    "at": "2026-10-19T19:02:22+0100",
+    "hit": true
    }
   }
  ]
