@@ -9,8 +9,10 @@
  "session": "1f9c03db",
  "run_log": "/Users/triton/PROTEUS/state/runs/2026-10-19.md",
  "probes": [
-  "P-0181"
+  "P-0181",
+  "P-0182"
  ],
  "stopped_at": null,
- "stop_reason": null
+ "stop_reason": null,
+ "refills": 1
 }

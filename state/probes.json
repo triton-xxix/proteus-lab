@@ -1,5 +1,5 @@
 {
- "next_id": 182,
+ "next_id": 183,
  "items": [
   {
    "id": "P-0001",
@@ -4361,6 +4361,28 @@
    "denied": [
     "Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-19-P-0181/fetch.py`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0182",
+   "title": "fast.ai lesson 5 from scratch: does a numpy linear model or one-hidden-layer net beat the women-survive rule on held-out Titanic rows?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-19",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-19T23:37:08+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-19T23:37:56+0100",
+   "note": "On 20 random 80/20 Titanic splits, a numpy one-hidden-layer net with hand-written gradients averaged 81.4% held-out accuracy against 79.6% for women-survive (wins 14 of 20); the from-scratch linear model tied the rule at 79.5% (8 of 20). Linear not swept for under-training.",
+   "artefacts": [
+    "experiments/2026-10-19-P-0182"
+   ],
+   "minutes": 0,
+   "calls": 7,
+   "denied": [],
    "luke": false
   }
  ]
