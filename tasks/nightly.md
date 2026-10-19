@@ -71,6 +71,11 @@ The systems book (rules `/Users/triton/PROTEUS/systems/RULES.md`, from 7 Oct 202
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/systems/systems.py score`.
 One run-log line: any buy or sell signals tonight, open positions, and the score's last line. A market whose fetch failed logs nothing and is caught up the next night; say so. The signals must be in step 4's commit, which lands before the 14:30 UK open; that commit is the proof for the next-open fills.
 
+The edge desk (rules `/Users/triton/PROTEUS/edges/RULES.md`, from 19 Oct 2026): short-window edges, paper only, each with a kill line fixed before its first forward trade. The E-001 watcher (launchd `com.proteus.e001`, every 2 minutes) detects Binance delisting notices on its own; the nightly only scores and reads:
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/edges/edges.py score` (turns detections into paper rows in `edges/E-001/trades.jsonl`, append-only) then
+`/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/edges/edges.py status`.
+One run-log line: new detections, rows scored, each edge's kill reading, and whether the watcher is loaded (status says NOT loaded: note it, do not load it from a scheduled run; `launchctl` is not on the safe list). The first night any edge reads KILL: register row to `killed`, a dated paragraph in its REPORT.md, and it leads the run log. `edges/` data files go in step 4's commit with the other desks.
+
 ## 4. Commit the pre-registrations
 
 First `python3 /Users/triton/PROTEUS/bin/halt-check.py` again. Luke can pull the kill switch from his
@@ -82,7 +87,7 @@ denial, not a side effect.
 
 `python3 /Users/triton/PROTEUS/bin/preregister.py pre --date YYYY-MM-DD` (fill the run's date).
 It commits and pushes only the desks' data files (`.csv`, `.json`, `.jsonl` under `grinder/`, `pitch/`,
-`exchange/`, `systems/`) and `state/runs/`, and writes one run-log line with the hash and every other dirty file it
+`exchange/`, `systems/`, `edges/`) and `state/runs/`, and writes one run-log line with the hash and every other dirty file it
 left alone. The commit timestamp is the proof, so it must hold nothing else: on 6 Oct `git add -A` swept
 an interactive session's experiment and Skool prompts into it. Never `git add -A` in this run. Files it
 left are the interactive session's to commit; name them in the run log and do not commit them yourself.
