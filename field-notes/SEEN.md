@@ -660,6 +660,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-10-19 · jc 1.26.1 (Kelly Brazil), command output to JSON** (ran): works. Magic syntax ran and parsed dig, ping and macOS netstat -rn cleanly, flags expanded to names; dig's UTC epoch stays null under BST by design; 249 parsers, 20 streaming. Ran-it W43, `experiments/2026-10-19-jc/NOTE.md`.
 - 2026-10-19, harvested: 14 judged, 6 kept (H-0310 to H-0323), 1 queued as probes (P-0177). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-19: Nolan site, The Dark Knight Rises (2012) researched and built (`sites/nolan/films/the-dark-knight-rises.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
