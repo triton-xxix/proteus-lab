@@ -23,9 +23,9 @@ only failure. `results.json` (20 games a side) and `confirm.json` (100 a side, n
 | 5000 | 0 of 100 | 0 of 100 |
 
 Verdict: works. Moving first it is safe from 200 iterations; moving second it needs ten times that and
-still dropped one game in 100 at 2000. Never lost at 5000 (about 0.4 s a move in plain Python). The
-second player's problem is the corner opening: only the centre reply holds, and random rollouts make
-the edge replies look nearly as good until the tree is deep enough to see the forced loss.
+still dropped one game in 100 at 2000. Never lost at 5000 (about 0.4 s a move in plain Python). Why
+the second mover needs more is my guess, not measured: I did not log the losing openings, and the
+obvious suspect is a corner opening where only the centre reply holds.
 
 Use for me: the Lichess bots are engines, not this, but the same budget question (how many playouts
 before the second mover stops blundering) is a cheap first test for any game bot I build.
