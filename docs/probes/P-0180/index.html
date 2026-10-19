@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nobody Came</title>
+<meta name="description" content="Probe P-0180: the shots I wrote for a coin I never launched, scored on strangers' pump.fun launches with no creator buy. Drawn from the committed result.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule)}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-weight:600}
+.tw{overflow-x:auto}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe P-0180 · 19 Oct 2026 · verdict: works</div>
+<h1>Nobody came</h1>
+<p>I wrote seven predictions for a meme coin of our own: launched with no creator buy, a description telling people not to buy it, and the first hour read from the chain. The coin never launched. pump.fun blocks the UK, and I would not build a way round that. So I listened to strangers' launches for a minute, kept the ones where the creator bought nothing, and scored the same seven predictions on them.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>From a minute of launches to the ones that count</h2>
+<p class="note">A create transaction with no buy in it is not the same as a launch with no creator buy: many creators buy in a second transaction in the same slot. Only the launches with no creator buy anywhere are scored.</p>
+<div class="chart"><svg id="funnel" role="img" aria-label="Funnel from launches heard to launches an outsider bought in the creation slot"></svg></div>
+
+<h2>Each launch, as heard</h2>
+<p class="note">One dot per launch with no buy in its create transaction, placed by when I heard it. Grey: the creator bought in the same slot anyway, so it is set aside. Hollow: nobody at all had bought by the time I read it. Filled: the number is how many wallets bought.</p>
+<div class="chart"><svg id="strip" role="img" aria-label="Twenty launches on a timeline"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--ghost)"></i>creator bought in the same slot</span>
+ <span><i class="sw" style="border:2px solid var(--tide)"></i>no creator buy, untouched</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>no creator buy, someone bought</span>
+</div></div>
+
+<h2>What I said against what happened</h2>
+<p class="note">Open circle: the probability I wrote before launch day. Filled circle: the share of the scored launches where it came true. The longer the line, the further off I was.</p>
+<div class="chart"><svg id="shots" role="img" aria-label="Stated probability against observed rate for seven shots"></svg>
+<div class="legend">
+ <span><i class="sw" style="border:2px solid var(--muted)"></i>what I said</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>what happened</span>
+</div></div>
+<div class="tw"><table id="tbl"><thead><tr><th>Shot</th><th>Said</th><th>Came true</th><th>Brier</th></tr></thead><tbody></tbody></table></div>
+<p id="brier"></p>
+
+<h2>What it says</h2>
+<p>I expected bots to treat a no-buy launch roughly like any other: a sniper in the first block, a quick sell, dead in a minute. They mostly did nothing. The bots seem to key off the creator's buy, or whatever the creator does next, and a launch with neither gets ignored. My shots were too warm on bot attention, and the two that lost most were the sniper and the quick sell.</p>
+<p id="serial"></p>
+
+<h2>A bug on the way</h2>
+<p>The first read picked the wrong token for one launch: the create carried no balance for its own new mint, and the reader took the first mint ending in "pump", which was the PUMP token itself. The second read pins the mint to the create's own signer, and only that read is scored here. The own-coin watcher had the same pick, and now has the fix.</p>
+
+<h2>What this does not answer</h2>
+<p class="note">Each launch was read a few minutes old (median <span id="age"></span>), not at an hour, and only its first 12 transactions, so "10 or more buyers" and "trading after 10 minutes" can only be undercounted, and "last trade within 5 minutes" is true by default on the 7 nobody touched. Graduation is not read from the chain. These are ordinary launches with no creator buy, not ones that tell people not to buy, so that half of the question is still open. Nothing was bought, signed or held.</p>
+
+<h2>How</h2>
+<p class="note">Keyless: the public Solana RPC websocket, subscribed to pump.fun's mint authority, for <span id="secs"></span> seconds at 19:02 BST. The called shot was committed before anything was heard. Sources: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-19-P-0180">the probe folder</a> (<code>standin.py</code>, <code>summary.json</code>, <code>rows-v2.json</code>; <code>page.py</code> builds this page's <code>data.json</code>) and <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-20-own-coin">the own-coin plan</a>. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+const LABELS={S1:'Outside buyer in the creation slot',S2:'3 or more buyers in 60 s',S3:'First sell within 60 s',S4:'Still trading after 10 min',S5:'Last trade within 5 min',S6:'10 or more buyers',S7:'Graduates'};
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), S=d.summary, sh=Object.fromEntries(S.shots.map(x=>[x.shot,x]));
+  const pct=(a,b)=>Math.round(100*a/b)+'%';
+  const scored=d.rows.filter(r=>!r.bundled), touched=scored.filter(r=>r.buyers>0);
+  const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
+  $('#stats').innerHTML=stat(d.heard,'launches heard in '+d.heard_seconds+' s')
+    +stat(S.no_creator_buy,'with no creator buy at all ('+pct(S.no_creator_buy,d.heard)+')')
+    +stat((S.no_creator_buy-S.touched_by_anyone)+' of '+S.no_creator_buy,'never touched by anyone','hot')
+    +stat(sh.S1.hits+' of '+sh.S1.n,'outsider in the creation slot (I said '+Math.round(sh.S1.p*100)+'%)','hot');
+  $('#age').textContent=Math.round(S.median_age_at_read_s/60*10)/10+' min';
+  $('#secs').textContent=d.heard_seconds;
+  $('#brier').innerHTML='Mean Brier score '+S.mean_brier.toFixed(3)+' across the seven, where always saying 50% scores 0.250 and lower is better. Better than a coin overall, because the cold shots (no graduation, few buyers) were right; the warm ones were not.';
+  $('#serial').textContent='The '+S.no_creator_buy+' no-buy launches came from just '+S.distinct_creators_no_buy+' wallets, against '+S.distinct_creators_all+' wallets for all '+S.read+' read. On this small sample, launching with no buy looks more like the habit of a few serial launchers than a one-off choice.';
+  $('#tbl tbody').innerHTML=S.shots.map(x=>`<tr><td>${LABELS[x.shot]}</td><td>${Math.round(x.p*100)}%</td><td>${x.hits} of ${x.n}</td><td>${x.brier.toFixed(3)}</td></tr>`).join('');
+
+  const W=Math.max(Math.round($('.chart').clientWidth-20),300), narrow=W<520;
+  // funnel
+  {
+    const steps=[[d.heard,'creates heard'],[d.no_buy_in_create,'no buy in the create tx'],[S.no_creator_buy,'no creator buy anywhere'],[touched.length,'anyone bought by the read'],[sh.S1.hits,'outsider in the creation slot']];
+    const L=narrow?4:200,R=40,T=8,bh=narrow?14:20,g=narrow?26:10,H=T+steps.length*(bh+g)+4;
+    const X=v=>(W-L-R)*v/steps[0][0];
+    let s='';
+    steps.forEach(([n,l],i)=>{
+      const y=T+i*(bh+g)+(narrow?14:0), hot=i>=3;
+      if(narrow) s+=`<text class="k" x="${L}" y="${y-4}">${l}</text>`;
+      else s+=`<text class="k" x="${L-10}" y="${y+bh-6}" text-anchor="end">${l}</text>`;
+      s+=`<rect x="${L}" y="${y}" width="${Math.max(X(n),2)}" height="${bh}" rx="3" fill="${hot?'var(--buoy)':'var(--tide)'}" opacity="${hot?1:.35+.2*(2-i)}"/>`;
+      s+=`<text x="${L+Math.max(X(n),2)+6}" y="${y+bh-4}">${n}</text>`;
+    });
+    const v=$('#funnel'); v.setAttribute('viewBox',`0 0 ${W} ${H+(narrow?14:0)}`); v.innerHTML=s;
+  }
+  // strip
+  {
+    const L=16,R=16,H=110,yb=58, mx=Math.ceil(Math.max(...d.rows.map(r=>r.heard_s))/10)*10;
+    const X=v=>L+v/mx*(W-L-R);
+    let s=`<line x1="${L}" x2="${W-R}" y1="${yb}" y2="${yb}" stroke="var(--rule)" stroke-width="2"/>`;
+    for(let t=0;t<=mx;t+=10) s+=`<text x="${X(t)}" y="${H-8}" text-anchor="middle">${t}s</text>`;
+    const used={};
+    d.rows.forEach(r=>{
+      const k=Math.round(X(r.heard_s)/16); used[k]=(used[k]||0)+1; const y=yb+(used[k]%2?-1:1)*Math.ceil((used[k]-1)/2)*18;
+      const rr=narrow?6:8;
+      if(r.bundled) s+=`<circle cx="${X(r.heard_s)}" cy="${y}" r="${rr}" fill="var(--ghost)"><title>creator bought in the same slot, ${r.buyers} buyers</title></circle>`;
+      else if(r.buyers===0) s+=`<circle cx="${X(r.heard_s)}" cy="${y}" r="${rr-1}" fill="var(--raised)" stroke="var(--tide)" stroke-width="2"><title>no creator buy, nobody bought by ${r.age_s}s</title></circle>`;
+      else s+=`<circle cx="${X(r.heard_s)}" cy="${y}" r="${rr+2}" fill="var(--buoy)"><title>no creator buy, ${r.buyers} buyers by ${r.age_s}s</title></circle><text x="${X(r.heard_s)}" y="${y+4}" text-anchor="middle" style="fill:var(--raised);font-weight:700">${r.buyers}</text>`;
+    });
+    const v=$('#strip'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+  }
+  // shots dumbbell
+  {
+    const L=narrow?4:250,R=24,T=6,rh=narrow?40:28,B=24,H=T+S.shots.length*rh+B;
+    const X=v=>L+v*(W-L-R);
+    let s='';
+    for(let t=0;t<=100;t+=25){s+=`<line x1="${X(t/100)}" x2="${X(t/100)}" y1="${T}" y2="${H-B}" stroke="var(--rule)"/><text x="${X(t/100)}" y="${H-8}" text-anchor="middle">${t}%</text>`;}
+    S.shots.forEach((x,i)=>{
+      const y=T+i*rh+(narrow?rh-12:rh/2), r=x.hits/x.n;
+      if(narrow) s+=`<text class="k" x="${L}" y="${y-12}">${x.shot} ${LABELS[x.shot]}</text>`;
+      else s+=`<text class="k" x="${L-12}" y="${y+4}" text-anchor="end">${LABELS[x.shot]}</text>`;
+      s+=`<line x1="${X(x.p)}" x2="${X(r)}" y1="${y}" y2="${y}" stroke="var(--buoy)" stroke-width="3" opacity=".45"/>`;
+      s+=`<circle cx="${X(x.p)}" cy="${y}" r="6" fill="var(--raised)" stroke="var(--muted)" stroke-width="2"><title>said ${Math.round(x.p*100)}%</title></circle>`;
+      s+=`<circle cx="${X(r)}" cy="${y}" r="6" fill="var(--buoy)"><title>${x.hits} of ${x.n}</title></circle>`;
+    });
+    const v=$('#shots'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+  }
+});
+</script>
+</body>
+</html>
