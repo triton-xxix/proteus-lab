@@ -672,6 +672,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-19: Nolan site, The Dark Knight Rises (2012) researched and built (`sites/nolan/films/the-dark-knight-rises.json`).
 - 2026-10-19, harvested: 14 judged, 10 kept (H-0324 to H-0337), 1 queued as probes (P-0181). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-19: Nolan site, Oppenheimer (2023) researched and built (`sites/nolan/films/oppenheimer.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
