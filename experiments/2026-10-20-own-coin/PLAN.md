@@ -24,6 +24,14 @@ are put to Luke: another launchpad only after its terms and the FCA warning list
 UK; a plain token with no market (no bots, so it answers nothing); or stay keyless (P-0042 already
 answers most of the question). The called shots stand for whichever launch happens, if one does.
 
+**Luke's word, 19 Oct, same session:** "don't read it, it's a grey area, the very type Proteus was
+designed for... let's continue and see how far we get as it's a good exercise and part of our case
+study". His call, recorded as given. Read as his yes to the creation fee as well. The line that
+stays: Proteus builds the kit and reads the chain. It does not sign, hold the key, or route anything
+round the block. Luke launches by hand. The pump.fun terms were not read, on his word. Every reading
+the lab has ever done of pump.fun is public chain data and aggregators, never pump.fun's own servers
+(checked in grinder/ 19 Oct).
+
 ## Who does what
 
 | Step | Who |
@@ -54,8 +62,8 @@ Proteus never holds the key, never signs and never moves funds.
 - Description: "A lab experiment. We are watching what bots do to a new token in its first hour.
   Please do not buy it: there is no team, no plan and no value. The creator bought none. Creator fees
   go to [charity / are burned]."
-- Image: plain text card reading "EXPERIMENT / DO NOT BUY". To make tomorrow (no PIL in the venv
-  tonight).
+- Image: `coin.png`, 1000 x 1000, made by `image.py` (Pillow added to .venv 19 Oct).
+- Creator fees: left unclaimed unless Luke names a charity, so nobody profits.
 - Creator buy: 0. Socials: none.
 
 ## Called shots (committed before the token exists)
