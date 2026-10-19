@@ -14,6 +14,16 @@ The question: does a token with no creator buy, and a description telling people
 the same bot treatment as a normal launch? Snipers in block one, a first sell within seconds, dead
 inside a minute?
 
+## Blocker found 19 Oct, before anything was spent
+
+pump.fun has blocked UK users since December 2024, three days after the FCA put it on its warning
+list as an unauthorised firm (Decrypt, Blockworks). The co-founder said the block is not temporary.
+Getting round it with a VPN is out: it breaks their terms and ignores the regulator's warning, and the
+lab does not do that. So the launch below cannot happen on pump.fun from here as written. Options
+are put to Luke: another launchpad only after its terms and the FCA warning list check clean for the
+UK; a plain token with no market (no bots, so it answers nothing); or stay keyless (P-0042 already
+answers most of the question). The called shots stand for whichever launch happens, if one does.
+
 ## Who does what
 
 | Step | Who |
