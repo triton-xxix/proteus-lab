@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 126 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 127 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,13 @@ Verdicts so far: 126 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0181 | imozuru report.py: does the verbatim-excerpt check reject an extract altered by one word? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (169)
+## Verdicts (170)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-19 | P-0181 | imozuru report.py: does the verbatim-excerpt check reject an extract altered by one word? | **works** | report.py --check behaved as documented on 7 of 8 variants of its demo: one-word and one-digit swaps, a 4-line offset and a path traversal were refused. Gap: an ellipsis splice that drops the word fewer, flipping the claim, passed (rc 0). | `experiments/2026-10-19-P-0181` | 1 min, 13 calls, 1 denied |
+| | | | | denied: Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-19-P-0181/fetch.py` | | |
 | 2026-10-19 | P-0180 | Own coin, keyless stand-in: watch pump.fun launches on the public RPC until 20 have no creator buy in the creation tx, read their first hour with experiments/2026-10-20-own-coin/watch.py, and score the seven called shots in its PLAN.md against them beside P-0042's creator-buy launches | **works** | Outside buyer in the creation slot on 2 of 11 true no-creator-buy launches (18 percent), shot said 40 percent or fewer, P-0042 70 percent with a buy: hit. 7 of 11 untouched at median 5.4 min; mean Brier of the seven own-coin shots 0.153 v 0.250, S1 and S3 too warm. Of 20 creates with no Buy in the create tx, 9 had a bundled same-slot creator buy; 11 launches from 5 wallets. Bug: analyse() read the PUMP token mint when a create had no balance for its own mint; fixed by pinning the signer mint. Read at 2 to 9 min, not 1 h, 12 tx cap. Next: close (own coin answered keyless; D-014 closes not launched). | `experiments/2026-10-19-P-0180` | 9 min, 94 calls, 4 denied |
 | | | | | denied: Monitor `tail -f /private/tmp/claude-502/-Users-triton-PROTEUS/d47fbcef-63e4-427a-bf89-c1d55f0365de`; TaskStop ``; Bash `sed -i '' -e 's#HERE + "/rows.json"#HERE + "/rows-v2.json"#' -e 's#HERE + "/results.json"#`; Bash `chmod 444 /Users/triton/PROTEUS/experiments/2026-10-19-P-0180/rows.json` | | |
 | 2026-10-19 | P-0179 | Grinder v0.2 cost model v Jupiter: on 10 live snapshot pools, does a quoted 130-dollar buy-then-sell-back round trip cost within 2 points of the model's fee plus constant-product impact? | **works** | Live Jupiter buy-then-sell-back quotes for 130 dollars on 10 snapshot pools: 8 of 10 within 2 points of the v0.2 cost model, median model minus quoted +1.15 (conservative on deep pools). At the 20.7k pool the model is 1.85 points too cheap (6.29 percent real v 4.44). | `experiments/2026-10-19-P-0179` | 2 min, 11 calls, 0 denied |

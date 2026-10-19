@@ -4347,16 +4347,20 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-19",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-19T23:35:33+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-19T23:36:34+0100",
+   "note": "report.py --check behaved as documented on 7 of 8 variants of its demo: one-word and one-digit swaps, a 4-line offset and a path traversal were refused. Gap: an ellipsis splice that drops the word fewer, flipping the claim, passed (rc 0).",
+   "artefacts": [
+    "experiments/2026-10-19-P-0181"
+   ],
+   "minutes": 1,
+   "calls": 13,
+   "denied": [
+    "Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-19-P-0181/fetch.py`"
+   ],
    "luke": false
   }
  ]

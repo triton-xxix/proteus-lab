@@ -1,0 +1,58 @@
+[
+ {
+  "case": "original demo",
+  "rc": 0,
+  "wanted_rc": 0,
+  "as_wanted": true,
+  "stdout": "照合 OK: 抜き書き 4 件がすべて原文のとおり"
+ },
+ {
+  "case": "one word swapped: darkest -> lightest",
+  "rc": 1,
+  "wanted_rc": 1,
+  "as_wanted": true,
+  "stdout": "原文に見つからない抜き書きがある（言い換えか、行番号のずれ）:\n  sample-paper.txt:6  「In 9 of 12 cases, placing the lightest t…」"
+ },
+ {
+  "case": "one digit swapped: 9 of 12 -> 8 of 12",
+  "rc": 1,
+  "wanted_rc": 1,
+  "as_wanted": true,
+  "stdout": "原文に見つからない抜き書きがある（言い換えか、行番号のずれ）:\n  sample-paper.txt:6  「In 8 of 12 cases, placing the darkest to…」"
+ },
+ {
+  "case": "whitespace and line breaks changed",
+  "rc": 0,
+  "wanted_rc": 0,
+  "as_wanted": true,
+  "stdout": "照合 OK: 抜き書き 4 件がすべて原文のとおり"
+ },
+ {
+  "case": "line number off by 2 (inside tolerance)",
+  "rc": 0,
+  "wanted_rc": 0,
+  "as_wanted": true,
+  "stdout": "照合 OK: 抜き書き 4 件がすべて原文のとおり"
+ },
+ {
+  "case": "line number off by 4 (outside tolerance)",
+  "rc": 1,
+  "wanted_rc": 1,
+  "as_wanted": true,
+  "stdout": "原文に見つからない抜き書きがある（言い換えか、行番号のずれ）:\n  sample-paper.txt:10  「In 9 of 12 cases, placing the darkest to…」"
+ },
+ {
+  "case": "ellipsis drops the word 'fewer', meaning flips",
+  "rc": 0,
+  "wanted_rc": 1,
+  "as_wanted": false,
+  "stdout": "照合 OK: 抜き書き 4 件がすべて原文のとおり"
+ },
+ {
+  "case": "path traversal ../extracts.json",
+  "rc": 1,
+  "wanted_rc": 1,
+  "as_wanted": true,
+  "stdout": "原文に見つからない抜き書きがある（言い換えか、行番号のずれ）:\n  ../extracts.json:6  「In 9 of 12 cases, placing the darkest to…」"
+ }
+]
