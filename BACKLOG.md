@@ -53,6 +53,10 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   burned, and a public write-up of what bots do to it in the first hour (first-block buyers, bundles,
   sell timing). Before it: the keyless launch-observation probe, which answers most of the same
   questions without anyone buying anything.
+  **19 Oct 2026: on.** P-0042 done (30 Sep). Luke: "we do it tomorrow". Plan, launch kit and called
+  shots in `experiments/2026-10-20-own-coin/PLAN.md`, watcher `watch.py` dry-run clean, DUE D-014.
+  Still needs his word on stake v capability for the creation fee, where creator fees go, and the
+  anonymity trade.
 
 - **A keyless lead finder for Triton (Luke, 8 Oct 2026).** Answering the 3 Oct nightly's question:
   plumbing and HVAC (in the UK, plumbing, heating, gas, electrical), and above all firms with a real
