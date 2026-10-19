@@ -657,6 +657,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-17, harvested: 14 judged, 12 kept (H-0296 to H-0309), 2 queued as probes (P-0172, P-0173). Register: `field-notes/HARVEST.md`.
 
 - 2026-10-17: Nolan site, The Dark Knight (2008) researched and built (`sites/nolan/films/the-dark-knight.json`).
+- **2026-10-19 · jc 1.26.1 (Kelly Brazil), command output to JSON** (ran): works. Magic syntax ran and parsed dig, ping and macOS netstat -rn cleanly, flags expanded to names; dig's UTC epoch stays null under BST by design; 249 parsers, 20 streaming. Ran-it W43, `experiments/2026-10-19-jc/NOTE.md`.
+- 2026-10-19, harvested: 14 judged, 6 kept (H-0310 to H-0323), 1 queued as probes (P-0177). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

@@ -1,5 +1,5 @@
 {
- "next_id": 177,
+ "next_id": 178,
  "items": [
   {
    "id": "P-0001",
@@ -4238,6 +4238,26 @@
     "at": "2026-10-18T12:38:37+0100",
     "hit": true
    }
+  },
+  {
+   "id": "P-0177",
+   "title": "coop-anything MCP: does its engine detection identify Unity and Unreal from fake marker-file folders?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-19",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

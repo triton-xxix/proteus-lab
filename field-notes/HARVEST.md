@@ -6,21 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-309 judged over 21 harvest days, 208 kept, 67 testable, 64 queued as probes, 60 with a probe verdict.
+323 judged over 22 harvest days, 214 kept, 68 testable, 65 queued as probes, 62 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0322 | 2026-10-19 | github | [cranebeaker/coop-anything: Co-op Anything: point your AI agent at any single-player game a](https://github.com/cranebeaker/coop-anything) | mechanism | game-bots | yes | P-0177 |
+| H-0321 | 2026-10-19 | hn | [Show HN: WhatsApp MCP running free on Cloudflare](https://github.com/finereli/whatsapp-mcp) (intel) | mechanism | tech | no: It needs a personal WhatsApp account to link plus a Cloudfla |  |
+| H-0320 | 2026-10-19 | vault | [one-credit multi-model connector for desktop seats](https://www.instagram.com/reel/DcEsI98lT-x/) | mechanism | tools-for-strangers | no: It needs an account and credits on the vendor service, so it |  |
+| H-0315 | 2026-10-19 | vault | [talking head over lifestyle B-roll](https://www.instagram.com/p/DZt8BdfMNFM/) | mechanism | tools-for-strangers | no: A real build needs paid avatar and voice generation, and the |  |
+| H-0312 | 2026-10-19 | github | [Gathin23/tv-vibehack: Your TV, minus the ads. Debloat any Android TV over ADB and give it ](https://github.com/Gathin23/tv-vibehack) | mechanism | tools-for-strangers | no: It needs a physical Android TV on the network, which Proteus |  |
+| H-0310 | 2026-10-19 | vault | [AI UGC and ad videos sold to businesses]() | mechanism | tools-for-strangers | no: A real run needs paid avatar and voice generation plus a cli |  |
 | H-0309 | 2026-10-17 | github | [assafkip/claudemy: Claudemy: an open-source alternative to Udemy and Coursera. Give Claude](https://github.com/assafkip/claudemy) | mechanism | tools-for-strangers | no: Running it needs model research calls, and there is no local |  |
 | H-0308 | 2026-10-17 | hn | [Show HN: Things to Do API](https://thingstodoapi.com/) | mechanism | open-data | no: It is unclear whether the endpoint needs a key, and an SF-on |  |
 | H-0307 | 2026-10-17 | vault | [structured workbook as the product](https://www.youtube.com/watch?v=LlhTEttKcwQ) | mechanism | tools-for-strangers | no: Selling it needs an audience and a storefront; there is no k |  |
 | H-0305 | 2026-10-17 | arxiv | [PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents](https://arxiv.org/abs/2610.22124) | mechanism | tech | no: Needs model training or at least model calls, and no local L |  |
-| H-0304 | 2026-10-17 | github | [Noniv/web-ocean: Real-time WebGPU ocean renderer written from scratch, no engine. FFT wave](https://github.com/Noniv/web-ocean) | mechanism | cars | yes | P-0173 |
+| H-0304 | 2026-10-17 | github | [Noniv/web-ocean: Real-time WebGPU ocean renderer written from scratch, no engine. FFT wave](https://github.com/Noniv/web-ocean) | mechanism | cars | yes | P-0173 **works** |
 | H-0303 | 2026-10-17 | hn | [Show HN: Stoke Money – Personal finance app built around a cash flow forecast](https://stoke.money) | mechanism | forecasting | no: Needs real transaction data, which Proteus has none of and s |  |
 | H-0302 | 2026-10-17 | vault | [Familiar-surface cloning to sell a switch](https://www.youtube.com/watch?v=wajoP_5Cpw8) | mechanism | tools-for-strangers | no: The test is whether users switch, which needs real users and |  |
 | H-0301 | 2026-10-17 | awesome | [muend/geoai-skills (new in awesome-claude-code)](https://github.com/muend/geoai-skills) | mechanism | tools-for-strangers | no: Measuring routing or behaviour needs repeated model runs, wh |  |
-| H-0300 | 2026-10-17 | youtube | [⚡ PUMP.FUN BONDING CURVE: DEEP DIVE  ⚡](https://www.youtube.com/watch?v=geUxzPUIc-g) | mechanism | desk:grinder | yes | P-0172 |
+| H-0300 | 2026-10-17 | youtube | [⚡ PUMP.FUN BONDING CURVE: DEEP DIVE  ⚡](https://www.youtube.com/watch?v=geUxzPUIc-g) | mechanism | desk:grinder | yes | P-0172 **works** |
 | H-0299 | 2026-10-17 | arxiv | [Improving Environment-Agnostic Coding Agents: The Role of Scaffolding](https://arxiv.org/abs/2610.22289) | mechanism | tech | no: Needs a Codex-class agent and benchmark environments with mo |  |
 | H-0298 | 2026-10-17 | github | [anujasid/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual chat, scene](https://github.com/anujasid/blender-ai-mcp-addon) | mechanism | tech | no: Needs Blender installed and a model provider key or local mo |  |
 | H-0296 | 2026-10-17 | vault | [sell narrow named jobs, not AI](https://www.youtube.com/watch?v=FS_hLDTDI1w) | mechanism | tools-for-strangers | no: Testing it means putting offers in front of real buyers, whi |  |
@@ -222,6 +228,80 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0322 cranebeaker/coop-anything: Co-op Anything: point your AI agent at any single-player game and play it with friends (onlin
+2026-10-19, github, https://github.com/cranebeaker/coop-anything
+
+- **Mechanism:** A repo of playbooks, agent skills and a local Python MCP server that guides a coding agent through adding co-op to a single-player game. Path one finishes an existing buggy co-op mod by mining its issues and auditing code; path two reverse engineers the game and engine, hooks in a second player and syncs world state. The MCP detects a game's engine from its install folder, searches a co-op directory and validates contributions, and testing runs with bot clients inside the game.
+- **Claim:** Point an AI agent at any single-player game and it builds, tests and ships a co-op version over Steam relay.
+- **Testable:** yes. Does the repo's coop_mcp.py correctly detect the engine from a synthetic install folder containing known marker files, yes or no? Queued as P-0177.
+- **Idea on its own:** needs-a-run. The pipeline is plausible for simple engines, but the claim that any game works is untested and the hard part is the reverse engineering.
+- **How it would be done:** Clone the repo, add its MCP to Claude Code and give the agent a target game's install folder. The agent detects the engine, reads the matching playbook, and uses a reverse-engineering MCP to find hook points. It then writes the second-player sync layer, runs bot clients to test, and packages the install. A person is needed for owning the game, Steam relay setup and playtesting with friends.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** coop-anything https://github.com/cranebeaker/coop-anything (The playbook, skills and MCP server.); REA reverse-engineering MCP https://github.com/morluto/rea (Looks inside the game binary, which coop-anything depends on for path two.)
+- **Missing:** A game licence and a human playtest group.
+- **Field Notes line:** A repo of playbooks and an MCP lets an agent reverse engineer a single-player game and bolt on co-op, with bots testing it in game.
+
+### H-0321 Show HN: WhatsApp MCP running free on Cloudflare
+2026-10-19, hn, https://github.com/finereli/whatsapp-mcp
+
+- **Mechanism:** It runs the unofficial WhatsApp Web protocol (Baileys style) inside a Cloudflare Worker with Durable Object state, linked to a personal account as a companion device, and exposes search and read tools over MCP. It also pulls Google contacts to map phone numbers to names so search works. Platforms detect unofficial WhatsApp Web clients through account bans and forced re-login, and personal accounts are not covered by the Business API terms.
+- **Claim:** Gives a mobile Claude access to a personal WhatsApp for free on Cloudflare without WhatsApp Business or a server.
+- **Testable:** no. It needs a personal WhatsApp account to link plus a Cloudflare and Google account, and it is a terms-of-service grey area. Needs: A WhatsApp account, a Cloudflare account, a Google OAuth login.
+- **Idea on its own:** unsound. It relies on an unofficial client that risks account loss and routes other people's messages to a third-party AI without their consent.
+- **How it would be done:** The author deploys the Worker, scans a QR code to pair as a linked device, stores session keys in Durable Object storage, and adds an MCP endpoint with search and send tools. A contacts sync from Google fills in names. It is single-user by design. A hired person would be needed for nothing beyond setup; the real issue is consent and terms, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** whatsapp-mcp (finereli) https://github.com/finereli/whatsapp-mcp (The Cloudflare Worker and MCP server to read.); Baileys https://github.com/WhiskeySockets/Baileys (The unofficial WhatsApp Web library such projects rely on.)
+- **Missing:** A sanctioned way to read personal WhatsApp; none exists.
+- **Field Notes line:** A free Cloudflare Worker links as a WhatsApp companion device and serves your messages to Claude over MCP; the catch is terms and the other people in your chats.
+
+### H-0320 one-credit multi-model connector for desktop seats
+2026-10-19, vault, https://www.instagram.com/reel/DcEsI98lT-x/
+
+- **Mechanism:** A hosted MCP connector fronts many image and video models behind one credit balance, so a desktop chat seat with no terminal can call generation through a single authenticated tool. The connector routes each request to a chosen model and bills credits per output. The Mac already reaches models directly by API, so the value is only for seats that cannot run scripts.
+- **Claim:** One MCP connector gives Claude access to a credit-priced pool of image and video models, with a 40-credit trial.
+- **Testable:** no. It needs an account and credits on the vendor service, so it is not keyless. Needs: An OpenArt account and trial credits.
+- **Idea on its own:** sound. Aggregating several generators behind one connector is a real convenience for non-terminal seats, though it adds nothing where API access exists.
+- **How it would be done:** Add the vendor's MCP URL as a connector in the desktop seat, authenticate once, and call the image and video tools from chat. Compare cost per output against calling the models directly by API. Keep it only for seats that cannot run scripts. A person would be needed only to judge output quality and manage credit spend.
+- **Stack already covers:** Gemini (stills), Claude Code with skills and sub-agents
+- **Field Notes line:** One MCP connector can put a pooled, credit-priced set of image and video models into a chat seat that has no terminal.
+
+### H-0315 talking head over lifestyle B-roll
+2026-10-19, vault, https://www.instagram.com/p/DZt8BdfMNFM/
+
+- **Mechanism:** One script is voiced once and shown as a generated talking head, with lifestyle B-roll cut over the weaker seconds so the face is on screen only part of the time. The B-roll hides lip-sync drift and keeps retention up. Inputs are a script, a voice, a face reference and a library of generated or licensed clips.
+- **Claim:** A cheap talking-head-over-lifestyle-B-roll format can be copied exactly by an AI fitness character.
+- **Testable:** no. A real build needs paid avatar and voice generation, and the result needs an audience to judge it. Needs: Paid avatar and voice credits, an account to post from.
+- **Idea on its own:** sound. Cutting away from a generated face is a standard, effective way to mask avatar weaknesses and it costs little extra.
+- **How it would be done:** Write one short script, generate the voice in ElevenLabs, and render the head with HeyGen or Tavus. Generate or source five to eight B-roll clips matching the script beats, then assemble in HyperFrames with captions timed to the audio. The head shows on the hook and the call to action, B-roll covers the middle. A person would handle disclosure labelling and judging whether the character reads as believable.
+- **Stack already covers:** ElevenLabs (voice), HeyGen and Tavus (avatars), HyperFrames (video compose, captions, render), Gemini (stills)
+- **Missing:** A consistent character design and a posting account.
+- **Field Notes line:** A talking head cut over lifestyle B-roll hides lip-sync drift and holds attention, and one script can drive the whole edit.
+
+### H-0312 Gathin23/tv-vibehack: Your TV, minus the ads. Debloat any Android TV over ADB and give it a clean, tvOS-inspired launche
+2026-10-19, github, https://github.com/Gathin23/tv-vibehack
+
+- **Mechanism:** Android TV exposes adb over Wi-Fi once developer options and debugging are on, and the TV asks once to authorise the computer. A coding agent backs up the package list, then runs pm disable-user on manufacturer telemetry, ad and content-row packages, which hides them without uninstalling so a restore script can reverse each step. It then installs a small native launcher and sets it as the default home. The per-brand bloat list is discovered by the agent at run time from the real TV rather than hard-coded.
+- **Claim:** Debloats any Android TV over ADB and installs a tvOS-style launcher in about fifteen minutes with a coding agent.
+- **Testable:** no. It needs a physical Android TV on the network, which Proteus does not have. Needs: An Android TV or Google TV with debugging enabled.
+- **Idea on its own:** sound. pm disable-user over adb is a standard, reversible mechanism, and letting the agent discover per-brand packages avoids a stale list.
+- **How it would be done:** Enable developer options on the TV, connect with adb over the network, and have the agent dump pm list packages and settings as a backup. It then proposes disable candidates grouped by purpose and asks before touching anything the owner might use. Next it builds the launcher APK and sets it as home, checking each step with screenshots pulled via adb. A person would sort out the physical TV access for each customer if this were offered as a service.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Android platform-tools (adb) https://developer.android.com/tools/releases/platform-tools (The debug bridge the whole method rests on.); tv-vibehack https://github.com/Gathin23/tv-vibehack (Holds PROMPT.md and the launcher source.)
+- **Missing:** A test TV.
+- **Field Notes line:** A repo lets Claude Code strip ads from an Android TV over Wi-Fi by disabling packages with adb, reversibly, then swap in a clean launcher.
+
+### H-0310 AI UGC and ad videos sold to businesses
+2026-10-19, vault, 
+
+- **Mechanism:** A seller produces short user-generated-content style video ads for small businesses using a generated avatar or voice reading a script, cut with captions and B-roll. The inputs are the client's product shots and offer, a script built from proven hook patterns, an avatar or clone voice, and an edit pass. Revenue comes from per-video or per-ad-set fees; the numbers quoted publicly are mostly self-reported.
+- **Claim:** Selling AI UGC and brand-face video ads to businesses is the cheapest, fastest first revenue on an existing generation pipeline.
+- **Testable:** no. A real run needs paid avatar and voice generation plus a client to judge the ad, so it is not keyless tonight. Needs: Paid ElevenLabs/HeyGen credits and a real business to test the ad on.
+- **Idea on its own:** needs-a-run. The production pipeline is sound and cheap, but whether anyone pays and whether the ads convert is only knowable by selling one.
+- **How it would be done:** Pick one niche and collect real product footage from a client. Write three hook variants from a hook library, voice them with ElevenLabs, render a presenter with HeyGen or Tavus, then compose captions and B-roll in HyperFrames. Export a short ad set and give it to the client to run as a small paid test. A hired person would do the selling, the client onboarding and the ad account setup, which no script covers.
+- **Stack already covers:** ElevenLabs (voice), HeyGen and Tavus (avatars), HyperFrames (video compose, captions, render), Gemini (stills), Claude Code with skills and sub-agents
+- **Missing:** A paying client and the ad account to measure conversion; nobody has the sales channel.
+- **Field Notes line:** AI UGC ads for small businesses are a script, a cloned voice, an avatar and a captioned edit; the public income figures are mostly self-reported.
 
 ### H-0309 assafkip/claudemy: Claudemy: an open-source alternative to Udemy and Coursera. Give Claude a topic, it researches the we
 2026-10-17, github, https://github.com/assafkip/claudemy
@@ -2612,6 +2692,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0320 | 2026-10-19 | one-credit multi-model connector for desktop seats | open | sound | no |  |
+| H-0315 | 2026-10-19 | talking head over lifestyle B-roll | open | sound | no |  |
+| H-0310 | 2026-10-19 | AI UGC and ad videos sold to businesses | open | needs-a-run | no |  |
 | H-0307 | 2026-10-17 | structured workbook as the product | open | sound | no |  |
 | H-0302 | 2026-10-17 | Familiar-surface cloning to sell a switch | open | sound | no |  |
 | H-0296 | 2026-10-17 | sell narrow named jobs, not AI | open | sound | no |  |
@@ -2677,6 +2760,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0199 | 2026-10-19 | [REA reverse-engineering MCP](https://github.com/morluto/rea) | Looks inside the game binary, which coop-anything depends on for path two. | H-0322 (cranebeaker/coop-anything: Co-op Anything: point y) | shelf |
+| T-0198 | 2026-10-19 | [coop-anything](https://github.com/cranebeaker/coop-anything) | The playbook, skills and MCP server. | H-0322 (cranebeaker/coop-anything: Co-op Anything: point y) | shelf |
+| T-0197 | 2026-10-19 | [Baileys](https://github.com/WhiskeySockets/Baileys) | The unofficial WhatsApp Web library such projects rely on. | H-0321 (Show HN: WhatsApp MCP running free on Cloudflare) | shelf |
+| T-0196 | 2026-10-19 | [whatsapp-mcp (finereli)](https://github.com/finereli/whatsapp-mcp) | The Cloudflare Worker and MCP server to read. | H-0321 (Show HN: WhatsApp MCP running free on Cloudflare) | shelf |
+| T-0195 | 2026-10-19 | [tv-vibehack](https://github.com/Gathin23/tv-vibehack) | Holds PROMPT.md and the launcher source. | H-0312 (Gathin23/tv-vibehack: Your TV, minus the ads. Debl) | shelf |
+| T-0194 | 2026-10-19 | [Android platform-tools (adb)](https://developer.android.com/tools/releases/platform-tools) | The debug bridge the whole method rests on. | H-0312 (Gathin23/tv-vibehack: Your TV, minus the ads. Debl) | shelf |
 | T-0193 | 2026-10-17 | [claudemy](https://github.com/assafkip/claudemy) | Skill and citation checker to read and reuse. | H-0309 (assafkip/claudemy: Claudemy: an open-source altern) | shelf |
 | T-0192 | 2026-10-17 | [Things to Do API](https://thingstodoapi.com/) | The live service, to inspect coverage. | H-0308 (Show HN: Things to Do API) | shelf |
 | T-0191 | 2026-10-17 | [web-ocean](https://github.com/Noniv/web-ocean) | The page and source to run. | H-0304 (Noniv/web-ocean: Real-time WebGPU ocean renderer w) | shelf |
@@ -2875,6 +2964,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0323 | 2026-10-19 | hn | [Torvalds use Claude for bottleneck fix, but race discovered](https://thenewstack.io/torvalds-claude-code-kernel/) | News about a kernel patch with a race found in review; the fetched page is mostly newsletter boilerplate and gives no me |
+| H-0319 | 2026-10-19 | awesome | [a1-x-tech/mcp-google-contacts (new in awesome-mcp-servers)](https://github.com/a1-x-tech/mcp-google-contacts) | A standard wrapper over the People API needing a Google OAuth login; the etag guard is routine. |
+| H-0318 | 2026-10-19 | youtube | [Top 5 Claude Code Skills Everyone Needs in 2026](https://www.youtube.com/watch?v=gF30riZwUAc) | No transcript available and the title is a listicle. |
+| H-0317 | 2026-10-19 | github | [LiCinCan/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual c](https://github.com/LiCinCan/blender-ai-mcp-addon) | A generic MCP server inside Blender; vendor already seen and the mechanism is the standard tool-call loop. |
+| H-0316 | 2026-10-19 | hn | [Show HN: 500 clocks in one 6.3 MB HTML file by Opus 5.5](https://tkgally.github.io/500-clocks/) | A model showcase of 500 generated clock pages; no mechanism beyond repeated prompting. |
+| H-0314 | 2026-10-19 | awesome | [nahumlitvin/prismantis (new in awesome-claude-code)](https://github.com/nahumlitvin/prismantis) | A cosmetic output theme for Claude Code; vendor already seen and the mechanism is presentation only. |
+| H-0313 | 2026-10-19 | youtube | [The ONLY Claude Skills Tutorial Beginners Need in 2026](https://www.youtube.com/watch?v=TyB7kLZPVKo) | A beginner tutorial on what a skill is; the content is generic and already covered by the stack. |
+| H-0311 | 2026-10-19 | hn | [Show HN: The Zelda timeline to catch up before the Ocarina of Time remake](https://legendofhyrule.com/) | A fan timeline site built with Claude; the page carries no mechanism beyond a visual layout. |
 | H-0306 | 2026-10-17 | youtube | [What is a bonding curve? #shorts #bondingcurve #PumpFun #Solana #memecoin #crypt](https://www.youtube.com/watch?v=pTTm8lNQtO8) | A 20-second short that restates what a bonding curve is with no formula or numbers; the longer pump.fun item covers the  |
 | H-0297 | 2026-10-17 | hn | [Show HN: Fakeipedia – Wikipedia for worlds that don't exist](https://fakeipedia.org) | A paid LLM wiki generator whose only mechanism is generating a page when a red link is clicked; no detail on how it is d |
 | H-0295 | 2026-10-16 | hn | [Anthropic Console overcharged my card 100x due to internationalization input bug](https://news.ycombinator.com/item?id=50121562) | A single user complaint about a billing input bug; no mechanism beyond a decimal-comma parsing fault. |
