@@ -1,5 +1,5 @@
 {
- "next_id": 178,
+ "next_id": 179,
  "items": [
   {
    "id": "P-0001",
@@ -4258,6 +4258,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0178",
+   "title": "HF agents course loop in plain Python: does a scripted Thought-Action-Observation agent with a JSON action parser and an Open-Meteo tool reproduce the Munich ICON max and survive 5 malformed action blobs?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-19",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-19T04:04:47+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-19T04:05:25+0100",
+   "note": "Plain-Python Thought-Action-Observation loop with a scripted policy: clean run matched the direct Open-Meteo call (ICON 11.2C, 2 steps); 6 of 6 malformed action blobs became error observations and recovered in 3 steps. Gap: extra arguments are caught at the tool, not the parser.",
+   "artefacts": [
+    "experiments/2026-10-19-P-0178"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }

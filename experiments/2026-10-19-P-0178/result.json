@@ -1,0 +1,59 @@
+{
+ "clean": {
+  "steps": 2,
+  "answer": {
+   "date": "2026-10-20",
+   "icon_max_c": 11.2,
+   "city_station_estimate_c": 12.2
+  },
+  "direct_tool_call": {
+   "date": "2026-10-20",
+   "icon_max_c": 11.2
+  },
+  "matches_direct": true
+ },
+ "malformed": {
+  "truncated": {
+   "first_observation": {
+    "error": "unbalanced braces (truncated blob)"
+   },
+   "recovered": true,
+   "steps": 3
+  },
+  "trailing_comma": {
+   "first_observation": {
+    "error": "invalid JSON: Illegal trailing comma before end of object"
+   },
+   "recovered": true,
+   "steps": 3
+  },
+  "unknown_tool": {
+   "first_observation": {
+    "error": "unknown tool 'get_weather'"
+   },
+   "recovered": true,
+   "steps": 3
+  },
+  "missing_arg": {
+   "first_observation": {
+    "error": "missing arguments ['longitude']"
+   },
+   "recovered": true,
+   "steps": 3
+  },
+  "no_json": {
+   "first_observation": {
+    "error": "no JSON object found"
+   },
+   "recovered": true,
+   "steps": 3
+  },
+  "brace_in_string": {
+   "first_observation": {
+    "error": "TypeError: get_max_temp() got an unexpected keyword argument 'note'"
+   },
+   "recovered": true,
+   "steps": 3
+  }
+ }
+}
