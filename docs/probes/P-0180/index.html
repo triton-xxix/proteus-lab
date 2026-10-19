@@ -107,7 +107,9 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   $('#serial').textContent='The '+S.no_creator_buy+' no-buy launches came from just '+S.distinct_creators_no_buy+' wallets, against '+S.distinct_creators_all+' wallets for all '+S.read+' read. On this small sample, launching with no buy looks more like the habit of a few serial launchers than a one-off choice.';
   $('#tbl tbody').innerHTML=S.shots.map(x=>`<tr><td>${LABELS[x.shot]}</td><td>${Math.round(x.p*100)}%</td><td>${x.hits} of ${x.n}</td><td>${x.brier.toFixed(3)}</td></tr>`).join('');
 
-  const W=Math.max(Math.round($('.chart').clientWidth-20),300), narrow=W<520;
+  function draw(){
+  const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+  const W=Math.max(Math.round(cw-20),300), narrow=W<520;
   // funnel
   {
     const steps=[[d.heard,'creates heard'],[d.no_buy_in_create,'no buy in the create tx'],[S.no_creator_buy,'no creator buy anywhere'],[touched.length,'anyone bought by the read'],[sh.S1.hits,'outsider in the creation slot']];
@@ -155,6 +157,10 @@ fetch('data.json').then(r=>r.json()).then(d=>{
     });
     const v=$('#shots'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
   }
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
 });
 </script>
 </body>
