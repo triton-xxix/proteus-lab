@@ -1,0 +1,56 @@
+[
+ {
+  "iters": 1000,
+  "mcts_as": "X",
+  "games": 100,
+  "loss": 0,
+  "draw": 100,
+  "win": 0,
+  "secs": 8.5
+ },
+ {
+  "iters": 1000,
+  "mcts_as": "O",
+  "games": 100,
+  "loss": 6,
+  "draw": 94,
+  "win": 0,
+  "secs": 6.5
+ },
+ {
+  "iters": 2000,
+  "mcts_as": "X",
+  "games": 100,
+  "loss": 0,
+  "draw": 100,
+  "win": 0,
+  "secs": 17.2
+ },
+ {
+  "iters": 2000,
+  "mcts_as": "O",
+  "games": 100,
+  "loss": 1,
+  "draw": 99,
+  "win": 0,
+  "secs": 13.2
+ },
+ {
+  "iters": 5000,
+  "mcts_as": "X",
+  "games": 100,
+  "loss": 0,
+  "draw": 100,
+  "win": 0,
+  "secs": 45.6
+ },
+ {
+  "iters": 5000,
+  "mcts_as": "O",
+  "games": 100,
+  "loss": 0,
+  "draw": 100,
+  "win": 0,
+  "secs": 36.5
+ }
+]

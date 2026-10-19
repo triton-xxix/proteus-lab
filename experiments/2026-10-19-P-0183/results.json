@@ -1,0 +1,154 @@
+{
+ "part_a": {
+  "log": [
+   {
+    "iteration": 1,
+    "at": "s0",
+    "ucb1": {
+     "s1": "inf",
+     "s2": "inf"
+    }
+   },
+   {
+    "iteration": 2,
+    "at": "s0",
+    "ucb1": {
+     "s1": 20.0,
+     "s2": "inf"
+    }
+   },
+   {
+    "iteration": 3,
+    "at": "s0",
+    "ucb1": {
+     "s1": 21.67,
+     "s2": 11.67
+    }
+   },
+   {
+    "iteration": 4,
+    "at": "s0",
+    "ucb1": {
+     "s1": 11.48,
+     "s2": 12.1
+    }
+   }
+  ],
+  "root": [
+   44,
+   4
+  ],
+  "best": "s2",
+  "lecture": {
+   "it3": {
+    "s1": 21.67,
+    "s2": 11.67
+   },
+   "it4": {
+    "s1": 11.48,
+    "s2": 12.1
+   },
+   "root": [
+    44,
+    4
+   ],
+   "best": "s2"
+  },
+  "match": true
+ },
+ "part_b": [
+  {
+   "iters": 10,
+   "mcts_as": "X",
+   "games": 20,
+   "loss": 13,
+   "draw": 7,
+   "win": 0,
+   "secs": 0.0
+  },
+  {
+   "iters": 10,
+   "mcts_as": "O",
+   "games": 20,
+   "loss": 17,
+   "draw": 3,
+   "win": 0,
+   "secs": 0.0
+  },
+  {
+   "iters": 50,
+   "mcts_as": "X",
+   "games": 20,
+   "loss": 2,
+   "draw": 18,
+   "win": 0,
+   "secs": 0.1
+  },
+  {
+   "iters": 50,
+   "mcts_as": "O",
+   "games": 20,
+   "loss": 16,
+   "draw": 4,
+   "win": 0,
+   "secs": 0.1
+  },
+  {
+   "iters": 200,
+   "mcts_as": "X",
+   "games": 20,
+   "loss": 0,
+   "draw": 20,
+   "win": 0,
+   "secs": 0.3
+  },
+  {
+   "iters": 200,
+   "mcts_as": "O",
+   "games": 20,
+   "loss": 6,
+   "draw": 14,
+   "win": 0,
+   "secs": 0.2
+  },
+  {
+   "iters": 1000,
+   "mcts_as": "X",
+   "games": 20,
+   "loss": 0,
+   "draw": 20,
+   "win": 0,
+   "secs": 1.7
+  },
+  {
+   "iters": 1000,
+   "mcts_as": "O",
+   "games": 20,
+   "loss": 1,
+   "draw": 19,
+   "win": 0,
+   "secs": 1.3
+  },
+  {
+   "iters": 2000,
+   "mcts_as": "X",
+   "games": 20,
+   "loss": 0,
+   "draw": 20,
+   "win": 0,
+   "secs": 3.5
+  },
+  {
+   "iters": 2000,
+   "mcts_as": "O",
+   "games": 20,
+   "loss": 0,
+   "draw": 20,
+   "win": 0,
+   "secs": 2.6
+  }
+ ],
+ "budgets_with_zero_losses": [
+  2000
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "next_id": 183,
+ "next_id": 184,
  "items": [
   {
    "id": "P-0001",
@@ -4382,6 +4382,28 @@
    ],
    "minutes": 0,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0183",
+   "title": "John Levine's MCTS lecture rebuilt: does my UCB1 code reproduce his four worked numbers, and how many iterations until it never loses tic-tac-toe to minimax?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-19",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-19T23:42:37+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-19T23:45:43+0100",
+   "note": "Rebuilt from a locally whispered transcript, my UCB1 code reproduced all four of Levine's worked numbers (21.67, 11.67, 11.48, 12.10) and root 44/4. Against perfect minimax at tic-tac-toe it never lost as X from 200 iterations; as O it lost 6 of 100 at 1000, 1 of 100 at 2000 and 0 of 100 at 5000.",
+   "artefacts": [
+    "experiments/2026-10-19-P-0183"
+   ],
+   "minutes": 3,
+   "calls": 6,
    "denied": [],
    "luke": false
   }

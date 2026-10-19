@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 128 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 129 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 128 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (171)
+## Verdicts (172)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-19 | P-0183 | John Levine's MCTS lecture rebuilt: does my UCB1 code reproduce his four worked numbers, and how many iterations until it never loses tic-tac-toe to minimax? | **works** | Rebuilt from a locally whispered transcript, my UCB1 code reproduced all four of Levine's worked numbers (21.67, 11.67, 11.48, 12.10) and root 44/4. Against perfect minimax at tic-tac-toe it never lost as X from 200 iterations; as O it lost 6 of 100 at 1000, 1 of 100 at 2000 and 0 of 100 at 5000. | `experiments/2026-10-19-P-0183` | 3 min, 6 calls, 0 denied |
 | 2026-10-19 | P-0182 | fast.ai lesson 5 from scratch: does a numpy linear model or one-hidden-layer net beat the women-survive rule on held-out Titanic rows? | **works** | On 20 random 80/20 Titanic splits, a numpy one-hidden-layer net with hand-written gradients averaged 81.4% held-out accuracy against 79.6% for women-survive (wins 14 of 20); the from-scratch linear model tied the rule at 79.5% (8 of 20). Linear not swept for under-training. | `experiments/2026-10-19-P-0182` | 0 min, 7 calls, 0 denied |
 | 2026-10-19 | P-0181 | imozuru report.py: does the verbatim-excerpt check reject an extract altered by one word? | **works** | report.py --check behaved as documented on 7 of 8 variants of its demo: one-word and one-digit swaps, a 4-line offset and a path traversal were refused. Gap: an ellipsis splice that drops the word fewer, flipping the claim, passed (rc 0). | `experiments/2026-10-19-P-0181` | 1 min, 13 calls, 1 denied |
 | | | | | denied: Bash `python3 -I /Users/triton/PROTEUS/experiments/2026-10-19-P-0181/fetch.py` | | |
