@@ -1,5 +1,5 @@
 {
- "next_id": 180,
+ "next_id": 181,
  "items": [
   {
    "id": "P-0001",
@@ -4302,6 +4302,26 @@
    ],
    "minutes": 2,
    "calls": 11,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0180",
+   "title": "Own coin, keyless stand-in: watch pump.fun launches on the public RPC until 20 have no creator buy in the creation tx, read their first hour with experiments/2026-10-20-own-coin/watch.py, and score the seven called shots in its PLAN.md against them beside P-0042's creator-buy launches",
+   "source": "backlog",
+   "needs": "",
+   "after": "",
+   "est_minutes": 60,
+   "added": "2026-10-19",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
