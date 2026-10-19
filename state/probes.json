@@ -1,5 +1,5 @@
 {
- "next_id": 179,
+ "next_id": 180,
  "items": [
   {
    "id": "P-0001",
@@ -4280,6 +4280,28 @@
    ],
    "minutes": 0,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0179",
+   "title": "Grinder v0.2 cost model v Jupiter: on 10 live snapshot pools, does a quoted 130-dollar buy-then-sell-back round trip cost within 2 points of the model's fee plus constant-product impact?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-19",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-19T04:06:07+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-19T04:08:21+0100",
+   "note": "Live Jupiter buy-then-sell-back quotes for 130 dollars on 10 snapshot pools: 8 of 10 within 2 points of the v0.2 cost model, median model minus quoted +1.15 (conservative on deep pools). At the 20.7k pool the model is 1.85 points too cheap (6.29 percent real v 4.44).",
+   "artefacts": [
+    "experiments/2026-10-19-P-0179"
+   ],
+   "minutes": 2,
+   "calls": 11,
    "denied": [],
    "luke": false
   }

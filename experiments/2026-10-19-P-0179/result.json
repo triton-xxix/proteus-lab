@@ -1,0 +1,187 @@
+{
+ "sol_usd": 105.295689,
+ "stake_usd": 130.0,
+ "candidates": 79,
+ "rows": [
+  {
+   "symbol": "PCAT",
+   "mint": "BeVKsfjY1DneVQFZsqSjvsxnBY8J9ii9Lut3NWrUpump",
+   "dex": "pumpswap",
+   "liq_usd": 20741.1,
+   "model_loss_pct": 4.44,
+   "quoted_loss_pct": 6.29,
+   "buy_impact_pct": 2.419,
+   "sell_impact_pct": 1.962,
+   "buy_route": [
+    "Pump.fun Amm"
+   ],
+   "sell_route": [
+    "Pump.fun Amm"
+   ],
+   "model_minus_quoted": -1.85
+  },
+  {
+   "symbol": "mucron",
+   "mint": "3A3qjns31YZA6Ung91ZpoPD7J3p1bDFbTJ4ANFAPpump",
+   "dex": "pumpswap",
+   "liq_usd": 34906.0,
+   "model_loss_pct": 3.49,
+   "quoted_loss_pct": 3.71,
+   "buy_impact_pct": 0.0,
+   "sell_impact_pct": 3.004,
+   "buy_route": [
+    "Pump.fun Amm"
+   ],
+   "sell_route": [
+    "Pump.fun Amm"
+   ],
+   "model_minus_quoted": -0.22
+  },
+  {
+   "symbol": "texcat",
+   "mint": "BdXfLfcbDE8YvpbvvmmGTduqcDesaQVUm5xLxgUc2S5t",
+   "dex": "pumpswap",
+   "liq_usd": 53048.25,
+   "model_loss_pct": 3.01,
+   "quoted_loss_pct": 3.09,
+   "buy_impact_pct": 1.507,
+   "sell_impact_pct": 1.601,
+   "buy_route": [
+    "Pump.fun Amm"
+   ],
+   "sell_route": [
+    "Pump.fun Amm"
+   ],
+   "model_minus_quoted": -0.08
+  },
+  {
+   "symbol": "PEPE",
+   "mint": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+   "dex": "meteora",
+   "liq_usd": 104050.68,
+   "model_loss_pct": 2.55,
+   "quoted_loss_pct": 0.34,
+   "buy_impact_pct": 0.362,
+   "sell_impact_pct": 0.0,
+   "buy_route": [
+    "Meteora DLMM"
+   ],
+   "sell_route": [
+    "Meteora DLMM"
+   ],
+   "model_minus_quoted": 2.21
+  },
+  {
+   "symbol": "MINTER",
+   "mint": "3NxfWMHmfQg8NJFW5AG1ti2xACdczWz24e9SKyk1pump",
+   "dex": "pumpswap",
+   "liq_usd": 162881.87,
+   "model_loss_pct": 2.38,
+   "quoted_loss_pct": 1.23,
+   "buy_impact_pct": 1.465,
+   "sell_impact_pct": 1.099,
+   "buy_route": [
+    "Pump.fun Amm"
+   ],
+   "sell_route": [
+    "Pump.fun Amm"
+   ],
+   "model_minus_quoted": 1.15
+  },
+  {
+   "symbol": "swordcat",
+   "mint": "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump",
+   "dex": "meteora",
+   "liq_usd": 241603.63,
+   "model_loss_pct": 2.27,
+   "quoted_loss_pct": 1.73,
+   "buy_impact_pct": 0.102,
+   "sell_impact_pct": 1.643,
+   "buy_route": [
+    "Pump.fun Amm"
+   ],
+   "sell_route": [
+    "Meteora DLMM"
+   ],
+   "model_minus_quoted": 0.54
+  },
+  {
+   "symbol": "Jimothy",
+   "mint": "Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump",
+   "dex": "pumpswap",
+   "liq_usd": 447962.9,
+   "model_loss_pct": 2.18,
+   "quoted_loss_pct": 0.77,
+   "buy_impact_pct": 0.708,
+   "sell_impact_pct": 0.054,
+   "buy_route": [
+    "Meteora DLMM"
+   ],
+   "sell_route": [
+    "Pump.fun Amm"
+   ],
+   "model_minus_quoted": 1.41
+  },
+  {
+   "symbol": "SI",
+   "mint": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "dex": "meteora",
+   "liq_usd": 582755.81,
+   "model_loss_pct": 2.15,
+   "quoted_loss_pct": 2.84,
+   "buy_impact_pct": 2.512,
+   "sell_impact_pct": 0.272,
+   "buy_route": [
+    "Meteora DLMM"
+   ],
+   "sell_route": [
+    "Meteora DLMM"
+   ],
+   "model_minus_quoted": -0.69
+  },
+  {
+   "symbol": "ADP",
+   "mint": "qv4MBqzPDNECM9LYtC8WXd1Bu29biq6eGRoHvLApump",
+   "dex": "pumpswap",
+   "liq_usd": 1369292.24,
+   "model_loss_pct": 2.1,
+   "quoted_loss_pct": 0.64,
+   "buy_impact_pct": 0.073,
+   "sell_impact_pct": 0.564,
+   "buy_route": [
+    "Pump.fun Amm"
+   ],
+   "sell_route": [
+    "Pump.fun Amm"
+   ],
+   "model_minus_quoted": 1.46
+  },
+  {
+   "symbol": "USDe",
+   "mint": "DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT",
+   "dex": "pumpswap",
+   "liq_usd": 2504363.46,
+   "model_loss_pct": 2.09,
+   "quoted_loss_pct": 0.0,
+   "buy_impact_pct": 0.0,
+   "sell_impact_pct": 0.0,
+   "buy_route": [
+    "Kipseli",
+    "Manifest"
+   ],
+   "sell_route": [
+    "Whirlpool",
+    "Manifest",
+    "Obsidian"
+   ],
+   "model_minus_quoted": 2.09
+  }
+ ],
+ "summary": {
+  "quoted": 10,
+  "within_2_points": 8,
+  "median_model_minus_quoted": 1.15,
+  "model_more_conservative": 6
+ },
+ "retries_after_429": 1
+}

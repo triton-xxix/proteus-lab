@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 124 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 125 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 124 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 
-## Verdicts (167)
+## Verdicts (168)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-19 | P-0179 | Grinder v0.2 cost model v Jupiter: on 10 live snapshot pools, does a quoted 130-dollar buy-then-sell-back round trip cost within 2 points of the model's fee plus constant-product impact? | **works** | Live Jupiter buy-then-sell-back quotes for 130 dollars on 10 snapshot pools: 8 of 10 within 2 points of the v0.2 cost model, median model minus quoted +1.15 (conservative on deep pools). At the 20.7k pool the model is 1.85 points too cheap (6.29 percent real v 4.44). | `experiments/2026-10-19-P-0179` | 2 min, 11 calls, 0 denied |
 | 2026-10-19 | P-0178 | HF agents course loop in plain Python: does a scripted Thought-Action-Observation agent with a JSON action parser and an Open-Meteo tool reproduce the Munich ICON max and survive 5 malformed action blobs? | **works** | Plain-Python Thought-Action-Observation loop with a scripted policy: clean run matched the direct Open-Meteo call (ICON 11.2C, 2 steps); 6 of 6 malformed action blobs became error observations and recovered in 3 steps. Gap: extra arguments are caught at the tool, not the parser. | `experiments/2026-10-19-P-0178` | 0 min, 6 calls, 0 denied |
 | 2026-10-19 | P-0177 | coop-anything MCP: does its engine detection identify Unity and Unreal from fake marker-file folders? | **blocked** | Read coop_mcp.py in full, not run (3-day-old stranger repo, untrusted-files rule). Static trace: pure filename matcher, first of 25 signatures wins; fake Unity and Unreal 4/5 folders resolve correctly by construction; order and .pck rules are the weak spots. | `experiments/2026-10-19-P-0177` | 0 min, 5 calls, 0 denied |
 | 2026-10-18 | P-0176 | Ads Library deepen of P-0175: GB searches for blocked drain and boiler service with experiments/2026-10-18-P-0175/adlib.mjs; of the 40 most-seen ads each, how many are UK plumbing or heating firms selling to homeowners (P-0175 found 3 of 40 for plumber)? | **works** | Measured 29 of 80 most-seen GB ads are plumbing or heating firms selling to homeowners (blocked drain 11 of 40, boiler service 18 of 40; 20 distinct firms) against 3 of 40 for plumber; shot said 20 to 45, hit. blocked drain is half health ads (20 of 40, lymphatic drainage); boiler service carries 17 heating firms plus 11 boiler cover ads. No login on either. Next: close (method in adlib.mjs; a repeat in January would show how seasonal the boiler ads are). | `experiments/2026-10-18-P-0176` | 1 min, 13 calls, 0 denied |
