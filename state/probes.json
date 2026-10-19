@@ -4313,9 +4313,9 @@
    "after": "",
    "est_minutes": 60,
    "added": "2026-10-19",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-19T19:01:49+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4323,7 +4323,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "outside buyer in the creation slot on 40% or fewer of the no-creator-buy launches (P-0042: 70% with a creator buy)",
+    "at": "2026-10-19T19:02:22+0100"
+   }
   }
  ]
 }
