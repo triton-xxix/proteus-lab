@@ -23,8 +23,12 @@ with the date, not deleted.
 | 5 | Chess Programming Wiki (chessprogramming.org) | curl one article | One engine idea (move ordering, a quiescence tweak) measured on positions from `games/lichess/` | 2026-10-17 |
 | 6 | Microsoft Generative AI for Beginners (github.com/microsoft/generative-ai-for-beginners) | raw GitHub lesson file | One lesson run locally against Ollama qwen, timed | 2026-10-18 |
 | 7 | Meta Business Help Centre and Ads Library docs (facebook.com/business/help), Facebook ads basics | curl the help pages; Ads Library pages need no login for UK political and all-category search | A dated snapshot of who is advertising in one UK trade, and what their ads say | 2026-10-18 |
-| 8 | Hugging Face Learn, LLM and agents courses (huggingface.co/learn) | curl the chapter pages | One small agent pattern rebuilt in plain Python inside the sandbox | |
-| 9 | Solana and Jupiter developer docs (solana.com/docs, dev.jup.ag) | curl | A read-only check on one Grinder assumption (pool fee, quote impact for a $130 swap) | |
-| 10 | fast.ai Practical Deep Learning (course.fast.ai) | curl the lesson page and notebook | One notebook's core idea on a tiny local dataset, CPU only | |
-| 11 | YouTube: one free full course on a topic in PERSONA.md | `bin/yt-fetch.py` transcript | The course's one worked example, rebuilt and run | |
-| 12 | Kaggle Learn lesson pages (kaggle.com/learn) | curl the tutorial page (exercises need a login; the lesson does not) | The lesson's method on a public dataset already on disk | |
+| 8 | Hugging Face Learn, LLM and agents courses (huggingface.co/learn) | curl the chapter pages | One small agent pattern rebuilt in plain Python inside the sandbox | 2026-10-19 |
+| 9 | Solana and Jupiter developer docs (solana.com/docs, dev.jup.ag) | curl | A read-only check on one Grinder assumption (pool fee, quote impact for a $130 swap) | 2026-10-19 |
+| 10 | fast.ai Practical Deep Learning (course.fast.ai) | curl the lesson page and notebook | One notebook's core idea on a tiny local dataset, CPU only | 2026-10-19 |
+| 11 | YouTube: one free full course on a topic in PERSONA.md | `bin/yt-fetch.py` transcript | The course's one worked example, rebuilt and run | 2026-10-19 (`bin/yt-fetch.py` does not exist; captions IpBlocked, `sandbox/skool_transcript.py --force-whisper` worked) |
+| 12 | Kaggle Learn lesson pages (kaggle.com/learn) | curl the tutorial page (exercises need a login; the lesson does not) | The lesson's method on a public dataset already on disk | 2026-10-20 (curl gets an 8.8 KB script shell; the lesson text is in the iframe's __results__.html, read in the browser pane) |
+| 13 | Quantitative Economics with Python (QuantEcon lectures, python.quantecon.org) | curl one lecture page | One lecture method (bootstrap, Markov chain, Kalman filter) on a Proteus series already on disk: Grinder outcomes, systems book bars | |
+| 14 | Probabilistic Programming and Bayesian Methods for Hackers (Cam Davidson-Pilon, GitHub) | raw GitHub chapter notebook | A Bayesian estimate with a credible interval on one small-n Proteus split (the insider split, the exchange book edge) | |
+| 15 | Kaggle Learn, a second lesson (Feature Engineering or Time Series) | browser pane, iframe __results__.html (see row 12) | The lesson method on Grinder snapshots or the systems book bars | |
+| 16 | scikit-learn user guide, model evaluation and calibration chapters (scikit-learn.org/stable/modules) | curl the chapter | A reliability diagram and Brier decomposition for the called shots in state/probes.json | |
