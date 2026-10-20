@@ -19,7 +19,7 @@ Verdicts so far: 130 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0184 | Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test on the 0 v over-5 gap (P-0013 follow-up) | desk | none |  | 0 | 20 min |
+| P-0184 | Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test on the 0 v over-5 gap (P-0013 follow-up) | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (173)
 

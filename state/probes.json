@@ -4424,9 +4424,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-20T12:32:57+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4434,7 +4434,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "0-insider median age_h at entry under half the over-5 median",
+    "at": "2026-10-20T12:33:03+0100"
+   }
   }
  ]
 }
