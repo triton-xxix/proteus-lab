@@ -676,6 +676,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-19: Nolan site, Oppenheimer (2023) researched and built (`sites/nolan/films/oppenheimer.json`).
 - 2026-10-20, harvested: 14 judged, 8 kept (H-0338 to H-0351), 2 queued as probes (P-0187, P-0188). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-20: Nolan site, Tenet (2020) researched and built (`sites/nolan/films/tenet.json`).
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
