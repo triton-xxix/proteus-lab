@@ -1,5 +1,5 @@
 {
- "next_id": 190,
+ "next_id": 191,
  "items": [
   {
    "id": "P-0001",
@@ -4557,6 +4557,28 @@
    ],
    "minutes": 0,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0190",
+   "title": "Bayesian credible intervals (Bayesian Methods for Hackers ch2, A/B true frequency): what do the exchange book's edge and systems book 2's win rate look like as posteriors, and how likely is each to beat its bar?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-20",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-20T23:45:44+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-20T23:46:16+0100",
+   "note": "Exchange book: 10 of 11 scored calls worse than the market; posterior mean edge +0.058 to +0.149 Brier (90 pct), P(I beat the market) 0.001. Systems book 2 at 1 of 4: P(win rate at least 0.65) 0.05 on a flat prior, 0.26 on a backtest prior, so four trades decide nothing.",
+   "artefacts": [
+    "experiments/2026-10-20-P-0190"
+   ],
+   "minutes": 0,
+   "calls": 4,
    "denied": [],
    "luke": false
   }

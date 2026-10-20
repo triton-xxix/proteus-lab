@@ -1,0 +1,5 @@
+A. exchange book: n 11, mean Brier minus market +0.1031, sd 0.0833
+   posterior mean of the edge: 90% interval +0.0576 to +0.1485; P(I beat the market) 0.001
+   per call: +0.200, +0.120, +0.127, +0.087, +0.087, +0.152, +0.270, -0.006, +0.056, +0.001, +0.040
+B. systems book 2, 1 of 4, prior flat Beta(1,1): posterior mean 0.333, 90% interval 0.076 to 0.657, P(win rate >= 0.65) 0.054
+B. systems book 2, 1 of 4, prior backtest Beta(13,7): posterior mean 0.583, 90% interval 0.416 to 0.742, P(win rate >= 0.65) 0.259
