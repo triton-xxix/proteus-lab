@@ -262,16 +262,22 @@
    "after": "2026-10-20",
    "est_minutes": 15,
    "added": "2026-09-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-20T12:31:44+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
    "artefacts": [],
    "minutes": null,
    "calls": null,
-   "denied": []
+   "denied": [],
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "over-5 group mean 24h outcome at least 10 points worse than the 0 group",
+    "at": "2026-10-20T12:31:56+0100"
+   }
   },
   {
    "id": "P-0014",
