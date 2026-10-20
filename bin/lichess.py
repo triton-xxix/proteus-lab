@@ -35,6 +35,8 @@ import chess.engine
 ROOT = "/Users/triton/PROTEUS"
 OUT = ROOT + "/games/lichess"
 LOG = OUT + "/GAMES.csv"
+STARTED = time.time()
+HARD_CAP_S = 570
 ENGINE = ROOT + "/sandbox/stockfish/stockfish/stockfish-macos-universal"
 API = "https://lichess.org"
 FIELDS = ["finished_utc", "game_id", "opponent", "opp_rating", "my_rating_before", "my_rating_after",
@@ -135,8 +137,14 @@ def play(game_id, my_id, think):
     q = queue.Queue()
     threading.Thread(target=stream, args=("/api/bot/game/stream/" + game_id, q), daemon=True).start()
     eng = chess.engine.SimpleEngine.popen_uci(ENGINE)
-    white, st, moves, end = None, {}, 0, time.time() + 20 * 60
-    while time.time() < end:
+    # The tasks call this with a 600 s tool timeout; a game still running when the call is killed is
+    # left started on Lichess (12 Oct 2026, F-0008). Stop at STARTED + 570 s and resign instead.
+    white, st, moves, end = None, {}, 0, min(time.time() + 20 * 60, STARTED + HARD_CAP_S)
+    capped = False
+    while True:
+        if time.time() >= end:
+            capped = st.get("status", "started") == "started"
+            break
         try:
             ev = q.get(timeout=60)
         except queue.Empty:
@@ -163,8 +171,14 @@ def play(game_id, my_id, think):
             except urllib.error.HTTPError:
                 pass
     eng.quit()
-    w = st.get("winner")
     colour = "white" if white else "black"
+    if capped:
+        try:
+            req("/api/bot/game/%s/resign" % game_id, data={})
+        except urllib.error.HTTPError:
+            pass
+        return colour, "loss", "resigned at time cap", moves, ""
+    w = st.get("winner")
     result = "draw" if st.get("status") in ("draw", "stalemate") or (st.get("status") != "started" and not w) else ("win" if w == colour else "loss")
     kind = ""
     if result == "draw":
