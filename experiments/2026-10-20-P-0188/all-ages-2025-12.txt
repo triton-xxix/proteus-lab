@@ -1,0 +1,28 @@
+mot_sample.py run dft_test_result_extracts_2025/dft_test_result_extract_202512.csv --rows 4000000   (20 Oct 2026)
+rows read 2749665 bytes fetched 311924383
+results {'P': 2107189, 'F': 500804, 'ABR': 15290, 'PRS': 124574, 'ABA': 1809}
+types {'NT': 2273448, 'RT': 476191, 'EI': 24, 'ES': 3}
+fuels: PE 1366506, DI 1159429, HY 104878, EL 74382, plus about 45k under long-form labels (HYBRID ELECTRIC (CLEAN) 29152, ED 7654, ELECTRIC 5883) not counted below; a few dozen rows with colours in the fuel column are commas in model names shifting columns (QUOTE_NONE)
+
+class 4 normal tests, fail = F or PRS
+fuel  band      tests     fail%
+PE    0-30k      171666    11.1
+PE    30-60k     365727    21.3
+PE    60-90k     299072    33.1
+PE    90-120k    167014    41.8
+PE    120k+       93403    45.3
+DI    0-30k       30186    12.4
+DI    30-60k     134350    19.1
+DI    60-90k     215130    26.7
+DI    90-120k    203960    33.3
+DI    120k+      272264    37.6
+EL    0-30k       26801    10.7
+EL    30-60k      27468    15.5
+EL    60-90k       7303    19.3
+EL    90-120k      2057    19.3
+EL    120k+        1090    22.5
+HY    0-30k       30482     7.6
+HY    30-60k      35178    12.2
+HY    60-90k      15901    15.9
+HY    90-120k      7312    20.0
+HY    120k+        6863    21.0

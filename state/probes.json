@@ -4524,15 +4524,17 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-20T23:40:06+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-20T23:43:58+0100",
+   "note": "December 2025 DVSA MOT results streamed over range requests (2.75m tests): at 90k to 120k miles EVs fail 19.3 pct against petrol 41.8 pct, and 17.2 against 26.4 with both held to cars first used 2018 on; direction holds, but the trade body's 5.6-point gap and 22.1 pct petrol rate do not replicate on my fail definition (F or PRS).",
+   "artefacts": [
+    "experiments/2026-10-20-P-0188"
+   ],
+   "minutes": 3,
+   "calls": 24,
    "denied": [],
    "luke": false
   }
