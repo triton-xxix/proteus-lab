@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 130 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 131 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -19,12 +19,13 @@ Verdicts so far: 130 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
-| P-0184 | Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test on the 0 v over-5 gap (P-0013 follow-up) | desk | none |  | 1 (in progress) | 20 min |
+| P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 
-## Verdicts (173)
+## Verdicts (174)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-20 | P-0184 | Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test on the 0 v over-5 gap (P-0013 follow-up) | **works** | Measured: median age at entry 5.4h (0 insiders, n=13) v 5.8h (over 5, n=16), so age does not explain the split; shot said under half, a miss, and my P-0013 guess was wrong. G-book gap +39.0 points, permutation p 0.0002 one-sided; all 7 rugs across G and R01 in the 0 bucket; R01 take-profits 3 of 7 v 0 of 3. Caveat: n=29, in sample, tokens overlap the two books. Next: deepen (P-0185 forward shadow filter from 3 Nov, DUE D-016). | `experiments/2026-10-20-P-0184` | 0 min, 9 calls, 0 denied |
 | 2026-10-20 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | **works** | Measured: 0-insider group mean 24h -99.3% (n=10, 10 of 10 at or below -50%, all 5 rugs) v over-5 group -60.3% (n=9, 6 of 9); 1-5 bucket empty; 19 positions G-0071 to G-0092, not 20. Shot said over-5 at least 10 points worse; it was 39 points better, a miss. Caveat: 0 likely marks a fresh token the graph has not mapped, not a clean one; untested, n=19, no luck test. Next: deepen (queued P-0184, age confound plus permutation test). | `experiments/2026-10-20-P-0013` | 1 min, 16 calls, 0 denied |
 | 2026-10-19 | P-0183 | John Levine's MCTS lecture rebuilt: does my UCB1 code reproduce his four worked numbers, and how many iterations until it never loses tic-tac-toe to minimax? | **works** | Rebuilt from a locally whispered transcript, my UCB1 code reproduced all four of Levine's worked numbers (21.67, 11.67, 11.48, 12.10) and root 44/4. Against perfect minimax at tic-tac-toe it never lost as X from 200 iterations; as O it lost 6 of 100 at 1000, 1 of 100 at 2000 and 0 of 100 at 5000. | `experiments/2026-10-19-P-0183` | 3 min, 6 calls, 0 denied |
 | 2026-10-19 | P-0182 | fast.ai lesson 5 from scratch: does a numpy linear model or one-hidden-layer net beat the women-survive rule on held-out Titanic rows? | **works** | On 20 random 80/20 Titanic splits, a numpy one-hidden-layer net with hand-written gradients averaged 81.4% held-out accuracy against 79.6% for women-survive (wins 14 of 20); the from-scratch linear model tied the rule at 79.5% (8 of 20). Linear not swept for under-training. | `experiments/2026-10-19-P-0182` | 0 min, 7 calls, 0 denied |

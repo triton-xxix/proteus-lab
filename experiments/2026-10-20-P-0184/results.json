@@ -1,0 +1,378 @@
+{
+ "age_by_bucket": {
+  "0": {
+   "n": 13,
+   "median_age_h": 5.4,
+   "ages": [
+    1.1,
+    1.5,
+    1.8,
+    1.8,
+    2.1,
+    2.1,
+    5.4,
+    5.4,
+    8.0,
+    8.0,
+    8.0,
+    25.8,
+    27.1
+   ]
+  },
+  "1-5": {
+   "n": 0,
+   "median_age_h": null,
+   "ages": []
+  },
+  "over 5": {
+   "n": 16,
+   "median_age_h": 5.8,
+   "ages": [
+    1.9,
+    3.0,
+    3.0,
+    4.9,
+    4.9,
+    4.9,
+    4.9,
+    5.3,
+    6.2,
+    6.2,
+    8.2,
+    9.9,
+    12.5,
+    12.5,
+    16.3,
+    35.5
+   ]
+  }
+ },
+ "g_rows": 19,
+ "r01_rows": 10,
+ "r01_seen": 13,
+ "r01_no_outcome": 3,
+ "gap_over5_minus_0": 39.0,
+ "perm_p_one_sided": 0.0002,
+ "perm_N": 20000,
+ "rows": [
+  {
+   "id": "G-0071",
+   "book": "LEDGER.csv",
+   "token": "DOGEUS",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 1.1,
+   "out": -98.7,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0072",
+   "book": "LEDGER.csv",
+   "token": "trenchcat",
+   "gi": 12,
+   "bucket": "over 5",
+   "age_h": 9.9,
+   "out": -74.8,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0073",
+   "book": "LEDGER.csv",
+   "token": "Nuts",
+   "gi": 21,
+   "bucket": "over 5",
+   "age_h": 4.9,
+   "out": -91.4,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0074",
+   "book": "LEDGER.csv",
+   "token": "Normie",
+   "gi": 17,
+   "bucket": "over 5",
+   "age_h": 6.2,
+   "out": 38.3,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0078",
+   "book": "LEDGER.csv",
+   "token": "NEIL",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 1.5,
+   "out": -98.7,
+   "src": "24h",
+   "rugged": "1"
+  },
+  {
+   "id": "G-0079",
+   "book": "LEDGER.csv",
+   "token": "HUMPH",
+   "gi": 184,
+   "bucket": "over 5",
+   "age_h": 35.5,
+   "out": -50.0,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0080",
+   "book": "LEDGER.csv",
+   "token": "CRAWLER",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 25.8,
+   "out": -99.8,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0081",
+   "book": "LEDGER.csv",
+   "token": "SEALS",
+   "gi": 38,
+   "bucket": "over 5",
+   "age_h": 12.5,
+   "out": -82.9,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0082",
+   "book": "LEDGER.csv",
+   "token": "CFLARE",
+   "gi": 62,
+   "bucket": "over 5",
+   "age_h": 3.0,
+   "out": -99.1,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0083",
+   "book": "LEDGER.csv",
+   "token": "smol",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 2.1,
+   "out": -99.2,
+   "src": "24h",
+   "rugged": "1"
+  },
+  {
+   "id": "G-0084",
+   "book": "LEDGER.csv",
+   "token": "VEILTRUMP",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 8.0,
+   "out": -99.8,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0085",
+   "book": "LEDGER.csv",
+   "token": "SAINDRA",
+   "gi": 21,
+   "bucket": "over 5",
+   "age_h": 16.3,
+   "out": -37.8,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0086",
+   "book": "LEDGER.csv",
+   "token": "OWLDACITY",
+   "gi": 245,
+   "bucket": "over 5",
+   "age_h": 1.9,
+   "out": -99.7,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0087",
+   "book": "LEDGER.csv",
+   "token": "STREAM",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 27.1,
+   "out": -98.9,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0088",
+   "book": "LEDGER.csv",
+   "token": "Starman",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 2.1,
+   "out": -99.6,
+   "src": "24h",
+   "rugged": "1"
+  },
+  {
+   "id": "G-0089",
+   "book": "LEDGER.csv",
+   "token": "NUBI",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 1.8,
+   "out": -99.8,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "G-0090",
+   "book": "LEDGER.csv",
+   "token": "SR",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 8.0,
+   "out": -99.4,
+   "src": "24h",
+   "rugged": "1"
+  },
+  {
+   "id": "G-0091",
+   "book": "LEDGER.csv",
+   "token": "FTC",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 5.4,
+   "out": -99.2,
+   "src": "24h",
+   "rugged": "1"
+  },
+  {
+   "id": "G-0092",
+   "book": "LEDGER.csv",
+   "token": "Glow",
+   "gi": 46,
+   "bucket": "over 5",
+   "age_h": 4.9,
+   "out": -45.3,
+   "src": "24h",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0013",
+   "book": "LEDGER-R01.csv",
+   "token": "Nuts",
+   "gi": 21,
+   "bucket": "over 5",
+   "age_h": 4.9,
+   "out": 100.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0014",
+   "book": "LEDGER-R01.csv",
+   "token": "Normie",
+   "gi": 17,
+   "bucket": "over 5",
+   "age_h": 6.2,
+   "out": 100.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0015",
+   "book": "LEDGER-R01.csv",
+   "token": "Glorp",
+   "gi": 8,
+   "bucket": "over 5",
+   "age_h": 8.2,
+   "out": -50.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0016",
+   "book": "LEDGER-R01.csv",
+   "token": "SEALS",
+   "gi": 38,
+   "bucket": "over 5",
+   "age_h": 12.5,
+   "out": -50.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0017",
+   "book": "LEDGER-R01.csv",
+   "token": "KACY",
+   "gi": 9,
+   "bucket": "over 5",
+   "age_h": 5.3,
+   "out": -50.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0018",
+   "book": "LEDGER-R01.csv",
+   "token": "CFLARE",
+   "gi": 62,
+   "bucket": "over 5",
+   "age_h": 3.0,
+   "out": 100.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0019",
+   "book": "LEDGER-R01.csv",
+   "token": "NUBI",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 1.8,
+   "out": -50.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  },
+  {
+   "id": "R-0020",
+   "book": "LEDGER-R01.csv",
+   "token": "SR",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 8.0,
+   "out": -99.4,
+   "src": "ledger_exit_move",
+   "rugged": "1"
+  },
+  {
+   "id": "R-0021",
+   "book": "LEDGER-R01.csv",
+   "token": "FTC",
+   "gi": 0,
+   "bucket": "0",
+   "age_h": 5.4,
+   "out": -99.1,
+   "src": "ledger_exit_move",
+   "rugged": "1"
+  },
+  {
+   "id": "R-0022",
+   "book": "LEDGER-R01.csv",
+   "token": "Glow",
+   "gi": 46,
+   "bucket": "over 5",
+   "age_h": 4.9,
+   "out": -50.0,
+   "src": "ledger_exit_move",
+   "rugged": "0"
+  }
+ ]
+}

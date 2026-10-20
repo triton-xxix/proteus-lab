@@ -1,5 +1,5 @@
 {
- "next_id": 185,
+ "next_id": 186,
  "items": [
   {
    "id": "P-0001",
@@ -4424,9 +4424,38 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-20T12:32:57+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-20T12:33:54+0100",
+   "note": "Measured: median age at entry 5.4h (0 insiders, n=13) v 5.8h (over 5, n=16), so age does not explain the split; shot said under half, a miss, and my P-0013 guess was wrong. G-book gap +39.0 points, permutation p 0.0002 one-sided; all 7 rugs across G and R01 in the 0 bucket; R01 take-profits 3 of 7 v 0 of 3. Caveat: n=29, in sample, tokens overlap the two books. Next: deepen (P-0185 forward shadow filter from 3 Nov, DUE D-016).",
+   "artefacts": [
+    "experiments/2026-10-20-P-0184"
+   ],
+   "minutes": 0,
+   "calls": 9,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "0-insider median age_h at entry under half the over-5 median",
+    "at": "2026-10-20T12:33:03+0100",
+    "hit": true
+   }
+  },
+  {
+   "id": "P-0185",
+   "title": "Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184)",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-03",
+   "est_minutes": 20,
+   "added": "2026-10-20",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4434,13 +4463,7 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false,
-   "shot": {
-    "expect": "works",
-    "p": 0.55,
-    "number": "0-insider median age_h at entry under half the over-5 median",
-    "at": "2026-10-20T12:33:03+0100"
-   }
+   "luke": false
   }
  ]
 }
