@@ -475,6 +475,10 @@ def bash_ok(cmd):
         if _under_root(head):
             continue
         if head in ("node", "bash", "sh", "python3", "python", VENV_PY, VENV_PY_ALT):
+            # python3 -I (isolated mode) is the safe way to read downloaded data: it is stricter than
+            # plain python3, so a script under the folder may carry it (F-0007, 15 Oct 2026).
+            if head in ("python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 2 and parts[1] == "-I":
+                parts = [head] + parts[2:]
             if len(parts) > 1 and _under_root(parts[1]):
                 continue
             if head == "node" and len(parts) > 1 and parts[1] == "-e":
@@ -652,6 +656,8 @@ def child_bash_extra(cmd):
                 return "Sub-agents do not run git %s; the parent commits." % verb
             continue
         script = None
+        if head in ("python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 2 and parts[1] == "-I":
+            parts = [head] + parts[2:]
         if _under_root(head):
             script = head
         elif head in ("node", "bash", "sh", "python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 1 and _under_root(parts[1]):
