@@ -1,5 +1,5 @@
 {
- "next_id": 186,
+ "next_id": 187,
  "items": [
   {
    "id": "P-0001",
@@ -4464,6 +4464,32 @@
    "calls": null,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0186",
+   "title": "Kaggle leakage check on P-0184: is graph_insiders 0 a missing-report value? Compare the share of 0-insider v over-5 rows with empty creator fields, holders or top10 missing in the same scan, and rerun the split on snapshots taken 1h+ before entry",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-20",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-20T12:38:41+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "missing-field share in the 0-insider rows within 15 points of the over-5 rows (0 is a real reading, not a blank)",
+    "at": "2026-10-20T12:38:48+0100"
+   }
   }
  ]
 }
