@@ -4473,22 +4473,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-20T12:38:41+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-20T12:39:32+0100",
+   "note": "Measured: blank-field share 0% in both 0-insider and over-5 positions (1% v 1% over 1,076 scanned rows), so 0 is a real reading from a complete report, exactly matching an empty insiderNetworks list; shot said within 15 points, a hit at 0 apart. No timing leak (snapshots 4 to 16 min before entry). The 1h-before rerun was impossible: 0 of 19 positions have an earlier snapshot. Unasked: scanned 0-insider tokens rate RugCheck 24 median v 1, but the positions sit at 1 either way. Next: close (P-0185 forward filter carries it).",
+   "artefacts": [
+    "experiments/2026-10-20-P-0186"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "missing-field share in the 0-insider rows within 15 points of the over-5 rows (0 is a real reading, not a blank)",
-    "at": "2026-10-20T12:38:48+0100"
+    "at": "2026-10-20T12:38:48+0100",
+    "hit": true
    }
   }
  ]

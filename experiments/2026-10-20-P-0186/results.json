@@ -1,0 +1,65 @@
+{
+ "A_all_scanned": {
+  "0": {
+   "n": 411,
+   "holders_blank": 0.0,
+   "top10_blank": 0.0,
+   "creator_blank": 0.01,
+   "creator_balance_blank": 0.0,
+   "networks_0": 1.0,
+   "any_blank": 0.01,
+   "median_holders": 646.0,
+   "median_rug_score": 24.0
+  },
+  "1-5": {
+   "n": 108,
+   "holders_blank": 0.0,
+   "top10_blank": 0.0,
+   "creator_blank": 0.01,
+   "creator_balance_blank": 0.0,
+   "networks_0": 0.0,
+   "any_blank": 0.01,
+   "median_holders": 886.5,
+   "median_rug_score": 1.0
+  },
+  "over 5": {
+   "n": 557,
+   "holders_blank": 0.0,
+   "top10_blank": 0.0,
+   "creator_blank": 0.01,
+   "creator_balance_blank": 0.0,
+   "networks_0": 0.0,
+   "any_blank": 0.01,
+   "median_holders": 18304.0,
+   "median_rug_score": 1.0
+  },
+  "graph_insiders_null_rows": 0
+ },
+ "B_positions": {
+  "0": {
+   "n": 10,
+   "holders_blank": 0.0,
+   "top10_blank": 0.0,
+   "creator_blank": 0.0,
+   "creator_balance_blank": 0.0,
+   "networks_0": 1.0,
+   "any_blank": 0.0,
+   "median_holders": 5050.5,
+   "median_rug_score": 1.0
+  },
+  "over 5": {
+   "n": 9,
+   "holders_blank": 0.0,
+   "top10_blank": 0.0,
+   "creator_blank": 0.0,
+   "creator_balance_blank": 0.0,
+   "networks_0": 0.0,
+   "any_blank": 0.0,
+   "median_holders": 7962.0,
+   "median_rug_score": 1.0
+  }
+ },
+ "C_1h_before": [],
+ "C_n": 0,
+ "C_bucket_changed": 0
+}
