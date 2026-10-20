@@ -12,6 +12,7 @@ const { renderFilm } = require('./lib/film.cjs');
 const { timeline } = require('./lib/timeline.cjs');
 const { glyph } = require('./lib/structure.cjs');
 const { renderThemes } = require('./lib/themes.cjs');
+const { renderMemento } = require('./lib/memento.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -120,6 +121,13 @@ function build() {
     const imgDir = path.join(ROOT, f.slug, 'img');
     if (fs.existsSync(imgDir)) copyDir(imgDir, path.join(OUT, f.slug, 'img'), (name, isDir) => !(isDir && name === 'raw'));
     n++;
+  }
+  // memento deep page, once its sequence research exists
+  const memSeq = path.join(ROOT, 'memento', 'research', 'sequences.json');
+  if (fs.existsSync(memSeq)) {
+    copy(path.join(ROOT, 'src', 'memento.css'), path.join(OUT, 'shared', 'memento.css'));
+    write(OUT, 'memento/index.html', renderMemento('../'));
+    copy(memSeq, path.join(OUT, 'data', 'memento-sequences.json'));
   }
   copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
   write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));
