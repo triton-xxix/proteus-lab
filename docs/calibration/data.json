@@ -1,5 +1,5 @@
 {
- "built": "2026-10-19 08:06 UTC",
+ "built": "2026-10-20 08:06 UTC",
  "panels": [
   {
    "key": "model",
@@ -8,7 +8,7 @@
    "kind": "football, home/draw/away",
    "rows": 34,
    "pairs": 102,
-   "logged": 175,
+   "logged": 176,
    "scored_any": 34,
    "captured": 5,
    "backfilled": 29,
@@ -102,7 +102,7 @@
    "kind": "football, over/under 2.5; yes/no",
    "rows": 34,
    "pairs": 34,
-   "logged": 175,
+   "logged": 176,
    "captured": 5,
    "me_minus_market": 0.055,
    "me_brier": 0.2956,
@@ -382,7 +382,7 @@
    "kind": "elections, weather, macro; yes/no",
    "rows": 11,
    "pairs": 11,
-   "logged": 22,
+   "logged": 24,
    "settled_any": 16,
    "me_minus_market": 0.1031,
    "me_brier": 0.1341,
