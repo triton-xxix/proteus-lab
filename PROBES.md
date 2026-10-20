@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 132 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 133 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,13 +20,13 @@ Verdicts so far: 132 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
-| P-0187 | youtube-transcript-api: does it fetch full transcripts for 3 videos from this Mac, matching our pipeline within 10 percent? | harvest | none |  | 0 | 15 min |
 | P-0188 | DVSA MOT data: is the EV fail rate lower than petrol at 90k to 120k miles, and by how many points? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (175)
+## Verdicts (176)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-20 | P-0187 | youtube-transcript-api: does it fetch full transcripts for 3 videos from this Mac, matching our pipeline within 10 percent? | **works** | 5 of 5 videos fetched from this Mac tonight, no IpBlocked, each transcript within 3 percent of the video length; it is already step 1 of the transcribe-video skill, so the harvest dedupe missed a tool we use. | `experiments/2026-10-20-P-0187` | 0 min, 4 calls, 0 denied |
 | 2026-10-20 | P-0186 | Kaggle leakage check on P-0184: is graph_insiders 0 a missing-report value? Compare the share of 0-insider v over-5 rows with empty creator fields, holders or top10 missing in the same scan, and rerun the split on snapshots taken 1h+ before entry | **works** | Measured: blank-field share 0% in both 0-insider and over-5 positions (1% v 1% over 1,076 scanned rows), so 0 is a real reading from a complete report, exactly matching an empty insiderNetworks list; shot said within 15 points, a hit at 0 apart. No timing leak (snapshots 4 to 16 min before entry). The 1h-before rerun was impossible: 0 of 19 positions have an earlier snapshot. Unasked: scanned 0-insider tokens rate RugCheck 24 median v 1, but the positions sit at 1 either way. Next: close (P-0185 forward filter carries it). | `experiments/2026-10-20-P-0186` | 0 min, 8 calls, 0 denied |
 | 2026-10-20 | P-0184 | Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test on the 0 v over-5 gap (P-0013 follow-up) | **works** | Measured: median age at entry 5.4h (0 insiders, n=13) v 5.8h (over 5, n=16), so age does not explain the split; shot said under half, a miss, and my P-0013 guess was wrong. G-book gap +39.0 points, permutation p 0.0002 one-sided; all 7 rugs across G and R01 in the 0 bucket; R01 take-profits 3 of 7 v 0 of 3. Caveat: n=29, in sample, tokens overlap the two books. Next: deepen (P-0185 forward shadow filter from 3 Nov, DUE D-016). | `experiments/2026-10-20-P-0184` | 0 min, 9 calls, 0 denied |
 | 2026-10-20 | P-0013 | Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes | **works** | Measured: 0-insider group mean 24h -99.3% (n=10, 10 of 10 at or below -50%, all 5 rugs) v over-5 group -60.3% (n=9, 6 of 9); 1-5 bucket empty; 19 positions G-0071 to G-0092, not 20. Shot said over-5 at least 10 points worse; it was 39 points better, a miss. Caveat: 0 likely marks a fresh token the graph has not mapped, not a clean one; untested, n=19, no luck test. Next: deepen (queued P-0184, age confound plus permutation test). | `experiments/2026-10-20-P-0013` | 1 min, 16 calls, 0 denied |
