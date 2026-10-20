@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 134 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 135 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 134 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 
-## Verdicts (177)
+## Verdicts (178)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-20 | P-0189 | SPY day-state Markov chain (QuantEcon finite Markov lecture): does yesterday's down, flat or up day shift today's odds beyond a shuffled-day control, 2006 to 2026? | **works** | SPY 2006-2026, 5,231 days in three states: the fitted chain's stationary distribution matches observed shares; yesterday's state matters (dependence 0.058 v shuffled 99th pct 0.020, p 0.0005, both decades), mostly volatility clustering, with up-minus-down +0.113 after a down day v +0.065 overall. | `experiments/2026-10-20-P-0189` | 0 min, 6 calls, 0 denied |
 | 2026-10-20 | P-0188 | DVSA MOT data: is the EV fail rate lower than petrol at 90k to 120k miles, and by how many points? | **works** | December 2025 DVSA MOT results streamed over range requests (2.75m tests): at 90k to 120k miles EVs fail 19.3 pct against petrol 41.8 pct, and 17.2 against 26.4 with both held to cars first used 2018 on; direction holds, but the trade body's 5.6-point gap and 22.1 pct petrol rate do not replicate on my fail definition (F or PRS). | `experiments/2026-10-20-P-0188` | 3 min, 24 calls, 0 denied |
 | 2026-10-20 | P-0187 | youtube-transcript-api: does it fetch full transcripts for 3 videos from this Mac, matching our pipeline within 10 percent? | **works** | 5 of 5 videos fetched from this Mac tonight, no IpBlocked, each transcript within 3 percent of the video length; it is already step 1 of the transcribe-video skill, so the harvest dedupe missed a tool we use. | `experiments/2026-10-20-P-0187` | 0 min, 4 calls, 0 denied |
 | 2026-10-20 | P-0186 | Kaggle leakage check on P-0184: is graph_insiders 0 a missing-report value? Compare the share of 0-insider v over-5 rows with empty creator fields, holders or top10 missing in the same scan, and rerun the split on snapshots taken 1h+ before entry | **works** | Measured: blank-field share 0% in both 0-insider and over-5 positions (1% v 1% over 1,076 scanned rows), so 0 is a real reading from a complete report, exactly matching an empty insiderNetworks list; shot said within 15 points, a hit at 0 apart. No timing leak (snapshots 4 to 16 min before entry). The 1h-before rerun was impossible: 0 of 19 positions have an earlier snapshot. Unasked: scanned 0-insider tokens rate RugCheck 24 median v 1, but the positions sit at 1 either way. Next: close (P-0185 forward filter carries it). | `experiments/2026-10-20-P-0186` | 0 min, 8 calls, 0 denied |

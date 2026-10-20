@@ -1,5 +1,5 @@
 {
- "next_id": 189,
+ "next_id": 190,
  "items": [
   {
    "id": "P-0001",
@@ -4535,6 +4535,28 @@
    ],
    "minutes": 3,
    "calls": 24,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0189",
+   "title": "SPY day-state Markov chain (QuantEcon finite Markov lecture): does yesterday's down, flat or up day shift today's odds beyond a shuffled-day control, 2006 to 2026?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-20",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-20T23:44:35+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-20T23:45:11+0100",
+   "note": "SPY 2006-2026, 5,231 days in three states: the fitted chain's stationary distribution matches observed shares; yesterday's state matters (dependence 0.058 v shuffled 99th pct 0.020, p 0.0005, both decades), mostly volatility clustering, with up-minus-down +0.113 after a down day v +0.065 overall.",
+   "artefacts": [
+    "experiments/2026-10-20-P-0189"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }
