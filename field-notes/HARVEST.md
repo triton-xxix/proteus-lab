@@ -6,13 +6,21 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-337 judged over 22 harvest days, 224 kept, 69 testable, 66 queued as probes, 63 with a probe verdict.
+351 judged over 23 harvest days, 232 kept, 71 testable, 68 queued as probes, 64 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0336 | 2026-10-19 | github | [MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル](https://github.com/MaryCache/imozuru) | mechanism | mechanism-hunting | yes | P-0181 |
+| H-0351 | 2026-10-20 | youtube | [Are Electric Cars More Reliable Than Petrol? / UK MOT Data #ElectricCars #EVs](https://www.youtube.com/watch?v=fMZk1sGMcc0) | mechanism | cars | yes | P-0188 |
+| H-0350 | 2026-10-20 | github | [Ansub/tv-detox: Make an old Android TV fast again with Claude Code or Codex: a tiny ad-fre](https://github.com/Ansub/tv-detox) | mechanism | tools-for-strangers | no: Needs an Android TV with developer mode on. |  |
+| H-0349 | 2026-10-20 | hn | [Show HN: VoidAccess – open-source dark web OSINT, from query to a graph](https://github.com/KatrielMoses/voidaccess) (intel) | both | tools-for-strangers | no: It needs Tor and an LLM key, and there is no local model. |  |
+| H-0348 | 2026-10-20 | vault | [rich media as the proof in agency offers](https://www.youtube.com/watch?v=638GQZ9UZ4w) | mechanism | tools-for-strangers | no: The result is replies from real prospects, so it cannot be j |  |
+| H-0343 | 2026-10-20 | vault | [personal model eval suite](https://www.youtube.com/watch?v=X1ObmRAgp5A) | mechanism | tools-for-strangers | no: Running it needs model answers and there is no local LLM, so |  |
+| H-0340 | 2026-10-20 | github | [jdepoix/youtube-transcript-api: This is a python API which allows you to get the transcrip](https://github.com/jdepoix/youtube-transcript-api) | mechanism | tools-for-strangers | yes | P-0187 |
+| H-0339 | 2026-10-20 | hn | [Maxwell: A new kind of model that sits between code and hardware](https://heymaxwell.ai/) | mechanism | tech | no: Early access only, with no public tool or benchmark to run. |  |
+| H-0338 | 2026-10-20 | vault | [Blender blockout as previz for AI video](https://www.instagram.com/reel/DegVQaYOnqU/) | mechanism | tools-for-strangers | no: It needs Blender plus a paid video model that accepts a moti |  |
+| H-0336 | 2026-10-19 | github | [MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル](https://github.com/MaryCache/imozuru) | mechanism | mechanism-hunting | yes | P-0181 **works** |
 | H-0334 | 2026-10-19 | vault | [AI printable wall art on Etsy](https://www.skool.com/ai-art-sellers-collective-free) | mechanism | open-data | no: Needs an Etsy seller account and listings to see any sales s |  |
 | H-0333 | 2026-10-19 | arxiv | [SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents](https://arxiv.org/abs/2610.23554) | mechanism | tech | no: Needs model calls and the SRA-Bench benchmark; no local mode |  |
 | H-0332 | 2026-10-19 | github | [alchaincyf/huashu-motion: 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by](https://github.com/alchaincyf/huashu-motion) | mechanism | tools-for-strangers | no: The README says it is driven by a coding agent and needs om  |  |
@@ -238,6 +246,106 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0351 Are Electric Cars More Reliable Than Petrol? / UK MOT Data #ElectricCars #EVs
+2026-10-20, youtube, https://www.youtube.com/watch?v=fMZk1sGMcc0
+
+- **Mechanism:** The BVRLA took 47.4 million MOT tests from 2024 to 2026 and grouped failure rates by fuel type and mileage band. The raw data comes from DVSA's open MOT results, which list fuel type, test mileage and result per test. The claim is 16.5 percent EV failure against 22.1 percent petrol at 90k to 120k miles, and 16 against 23.5 above 120k.
+- **Claim:** EVs fail MOTs less than petrol cars at high mileage: 16.5 against 22.1 percent at 90k to 120k miles.
+- **Testable:** yes. From one public DVSA MOT results file, is the EV failure rate lower than petrol in the 90k to 120k mile band, and by how many points? Queued as P-0188.
+- **Idea on its own:** sound. The data is public and the comparison is a simple grouped rate, though selection effects like age and use could confound it.
+- **How it would be done:** Download one year's DVSA anonymised MOT test result file, filter to class 4 first tests, group by fuel type and mileage band, and compute the failure share. Compare to the quoted figures and note age mix. This could later feed a used-car buying checker.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** DVSA anonymised MOT tests and results https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9f8b/anonymised-mot-tests-and-results (Open source of the 47 million tests behind the claim)
+- **Field Notes line:** A trade body says high-mileage EVs fail MOTs less than petrol cars; the DVSA open data can check it directly.
+
+### H-0350 Ansub/tv-detox: Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt 
+2026-10-20, github, https://github.com/Ansub/tv-detox
+
+- **Mechanism:** A prompt gets Claude Code or Codex to connect to an Android TV over adb on Wi-Fi, list installed packages, and disable chosen ones with package-manager commands rather than uninstalling. It installs a small launcher app as the home screen and keeps an undo list. A protected list stops it disabling services the TV needs to boot, and it restarts the TV to check.
+- **Claim:** Claude Code can clean up bloat and ads from a slow Android TV and install an ad-free home screen (937 stars in two days).
+- **Testable:** no. Needs an Android TV with developer mode on. Needs: An Android TV with USB debugging.
+- **Idea on its own:** sound. Disabling packages over adb is reversible and the prompt asks before each change, with known risk on Google TV.
+- **How it would be done:** Enable developer mode on the TV and install adb. Run the repo's prompt in Claude Code so it lists packages, groups them, and asks before each disable. Install the launcher, record free memory before and after, and restart. A person must press OK on the TV and judge which apps they use.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** adb (Android platform-tools) https://developer.android.com/tools/releases/platform-tools (Command-line link to the TV); tv-detox https://github.com/Ansub/tv-detox (Launcher and install script)
+- **Missing:** An Android TV to run it on.
+- **Field Notes line:** A prompt plus a launcher lets Claude Code disable bloatware on an Android TV over adb, with an undo list.
+
+### H-0349 Show HN: VoidAccess – open-source dark web OSINT, from query to a graph
+2026-10-20, hn, https://github.com/KatrielMoses/voidaccess
+
+- **Mechanism:** It sends a search query through dark-web search engines over Tor, crawls the hits, strips noise and NSFW pages, then uses an LLM to summarise and extract entities into a graph for an analyst. It depends on Tor, a model API for the filtering and graph, and indexes of onion sites. Dark-web monitoring services are detected and blocked at the site by captchas, logins and invite gates, and are used by defenders to watch for leaked data.
+- **Claim:** Open-source engine that automates dark web OSINT from query to an entity graph, filtering noise and NSFW content.
+- **Testable:** no. It needs Tor and an LLM key, and there is no local model. Needs: Tor and a model API key.
+- **Idea on its own:** needs-a-run. Search, crawl and extract is a normal OSINT pipeline; quality depends on the filter and the index coverage.
+- **How it would be done:** Install the repo, point it at a Tor proxy and a model key, and give it a defensive query such as a brand name. Check what the graph returns against known public leak reports. A person must decide what findings are credible and handle any illegal content it surfaces.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** VoidAccess https://github.com/KatrielMoses/voidaccess (The pipeline itself); Tor https://www.torproject.org/ (Proxy it depends on for onion access)
+- **Missing:** A model API key and a defensible purpose for each query.
+- **Field Notes line:** An open-source pipeline that crawls dark-web search, filters the noise with an LLM and draws a graph; needs Tor and a model key.
+
+### H-0348 rich media as the proof in agency offers
+2026-10-20, vault, https://www.youtube.com/watch?v=638GQZ9UZ4w
+
+- **Mechanism:** Instead of a text pitch, the outreach leads with a short bespoke video, mock-up or preview built from the prospect's own public material, such as their site, logo and reviews. The proof of competence arrives before the call, and AI video, voice and page tools lower the cost per prospect. The conversion lift is the claim; the sources give no number.
+- **Claim:** Leading outbound and proposals with a bespoke video or mock-up of the prospect's own business wins more work than text pitches.
+- **Testable:** no. The result is replies from real prospects, so it cannot be judged from a run in the sandbox. Needs: Real prospects and a sending identity.
+- **Idea on its own:** needs-a-run. Showing work first plausibly lifts replies, but only an A/B against plain text would show by how much.
+- **How it would be done:** Pick a prospect list, scrape each firm's public site and logo, then build a short HyperFrames or page mock-up with their branding and an ElevenLabs voiceover. Host or attach it and write a two-line cover note. Track replies in two arms (preview versus plain text) against a pre-registered rate. A person must check each asset for accuracy and for the right to use the prospect's branding.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), HeyGen and Tavus (avatars), Gemini (stills), Claude Code with skills and sub-agents
+- **Missing:** A prospect list and a compliant sending route.
+- **Field Notes line:** Send a prospect a preview of their own site or ad instead of a pitch; sound idea, the lift is unmeasured.
+
+### H-0343 personal model eval suite
+2026-10-20, vault, https://www.youtube.com/watch?v=X1ObmRAgp5A
+
+- **Mechanism:** Keep 10 to 15 real tasks from your own work, each with the input, a pass criterion and a saved good answer. Whenever a new model ships, run all of them on it and on cheaper models in the chain, then score pass or fail and cost. Tasks a cheaper model now passes move down the chain, so the choice rests on your own data rather than public benchmarks.
+- **Claim:** A personal eval of 10 to 15 real tasks rerun on each new model decides what moves down the model chain.
+- **Testable:** no. Running it needs model answers and there is no local LLM, so it is not keyless tonight. Needs: API access to the models being compared.
+- **Idea on its own:** sound. Task-specific regression evals beat public benchmarks for routing decisions.
+- **How it would be done:** Pick the tasks from the harvest judge, probe titles and Field Notes drafts, store inputs and a scoring rule per task (exact match, regex or a rubric checked by a stronger model). Write a runner that loops a model list, saves outputs and cost, and prints a pass table. Rerun when a new model appears. A person must choose tasks and write honest pass criteria.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** promptfoo https://github.com/promptfoo/promptfoo (Open-source eval runner that compares models over a task file)
+- **Missing:** A curated task set with scoring rules.
+- **Field Notes line:** Rerun a small folder of your real tasks on every new model and move work to cheaper ones when they pass.
+
+### H-0340 jdepoix/youtube-transcript-api: This is a python API which allows you to get the transcript/subtitles for a given YouTub
+2026-10-20, github, https://github.com/jdepoix/youtube-transcript-api
+
+- **Mechanism:** It calls YouTube's own web endpoints that the player uses to list caption tracks for a video id, then downloads the chosen track and parses it into timed snippets of text, start and duration. It covers auto-generated captions and translation, needing no key or browser. It breaks when YouTube changes the endpoints or blocks the requesting IP.
+- **Claim:** Fetches transcripts and subtitles for a YouTube video with no API key and no headless browser (8.5k stars).
+- **Testable:** yes. Does pip install in a sandbox venv fetch a full transcript for 3 videos from this Mac, and does it match our existing pipeline's word count within 10 percent? Queued as P-0187.
+- **Idea on its own:** sound. Reading caption tracks is the cheapest way to get a transcript, with the usual risk of platform blocks.
+- **How it would be done:** Create a venv in the sandbox, pip install the package, and fetch captions for three video ids already in the pipeline. Compare word counts and timing against the existing output and note any IP block or missing track. If it is reliable it becomes a fast first-pass before local transcription.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, local transcription
+- **To fetch:** youtube-transcript-api https://github.com/jdepoix/youtube-transcript-api (Caption fetcher to compare with the in-house pipeline)
+- **Field Notes line:** A keyless Python library that pulls YouTube captions; worth checking against our own transcript pipeline for speed and failure rate.
+
+### H-0339 Maxwell: A new kind of model that sits between code and hardware
+2026-10-20, hn, https://heymaxwell.ai/
+
+- **Mechanism:** A model sits as a runtime layer under a program, reading traces, profiler data and the live data flowing through it. A commenter reads it as a formal model of the language plus an LLM that proposes faster code and swaps it in while running, with equivalence checked against the formal rules. The numbers would come from live profiling, but the page gives none.
+- **Claim:** A Code Execution Model makes code run faster as it runs, without changing a line of source.
+- **Testable:** no. Early access only, with no public tool or benchmark to run. Needs: Early-access invite from the vendor.
+- **Idea on its own:** needs-a-run. Superoptimisation with a formal equivalence check is real, but speedups on real programs are unshown.
+- **How it would be done:** The idea would need a formal semantics of the language, a profiler hook into the running process, a proposer for candidate rewrites, and an equivalence checker before hot-swapping. A hobby version could take one Python hot loop, profile it, ask a model for rewrites and check equivalence with property tests. The hard part is soundness, which a person would need to judge.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Access to the product or any public benchmark of it.
+- **Field Notes line:** A startup claims a model that hot-swaps faster, verified-equivalent code into running Python; no public benchmark yet, so it is a claim.
+
+### H-0338 Blender blockout as previz for AI video
+2026-10-20, vault, https://www.instagram.com/reel/DegVQaYOnqU/
+
+- **Mechanism:** A 3D scene is blocked out in Blender with plain proxy shapes, with camera path, timing and subject movement fixed by keyframes. A short grey-shaded render of that move is then fed to a video generator as a motion or camera reference, so the generator only has to add look and detail. The expensive paid generations are spent after the framing is already decided, and an LLM connector can place the camera and keyframes from a text description.
+- **Claim:** Blocking out camera and action in Blender before generating makes AI video shots cheaper and more controllable.
+- **Testable:** no. It needs Blender plus a paid video model that accepts a motion reference, and the generation step cannot run keyless. Needs: Blender install, a video model that takes a motion reference (Seedance or similar), credits.
+- **Idea on its own:** sound. Fixing framing and timing in a cheap deterministic step before a stochastic expensive one is the standard previz logic.
+- **How it would be done:** Install Blender and script a simple scene (boxes for subjects, one keyframed camera) with Python, which Claude can write. Render a low-res grey clip with the camera path baked in. Pass the clip as the motion reference to a generator that supports it, with a prompt for style. Compare the result's camera path to the blockout by eye or by optical flow. A person would still judge whether the final shot looks right and fix subject detail.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** Blender https://www.blender.org/download/ (Free 3D tool with a Python API for scripted blockouts and camera paths)
+- **Missing:** A generator that accepts a motion reference and the credits to run it.
+- **Field Notes line:** Fix the camera move in a free 3D blockout first, then pay for the AI render once; useful for camera-led shots only.
 
 ### H-0336 MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル
 2026-10-19, github, https://github.com/MaryCache/imozuru
@@ -2824,6 +2932,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0348 | 2026-10-20 | rich media as the proof in agency offers | open | needs-a-run | no |  |
+| H-0343 | 2026-10-20 | personal model eval suite | open | sound | no |  |
+| H-0338 | 2026-10-20 | Blender blockout as previz for AI video | open | sound | no |  |
 | H-0334 | 2026-10-19 | AI printable wall art on Etsy | open | needs-a-run | no |  |
 | H-0330 | 2026-10-19 | offer builder plus 7-day first-client sprint | open | needs-a-run | no |  |
 | H-0324 | 2026-10-19 | daily news roundup with talking head over screenshots | open | needs-a-run | no |  |
@@ -2895,6 +3006,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0215 | 2026-10-20 | [DVSA anonymised MOT tests and results](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9f8b/anonymised-mot-tests-and-results) | Open source of the 47 million tests behind the claim | H-0351 (Are Electric Cars More Reliable Than Petrol? / UK ) | shelf |
+| T-0214 | 2026-10-20 | [tv-detox](https://github.com/Ansub/tv-detox) | Launcher and install script | H-0350 (Ansub/tv-detox: Make an old Android TV fast again ) | shelf |
+| T-0213 | 2026-10-20 | [Tor](https://www.torproject.org/) | Proxy it depends on for onion access | H-0349 (Show HN: VoidAccess – open-source dark web OSINT, ) | shelf |
+| T-0212 | 2026-10-20 | [VoidAccess](https://github.com/KatrielMoses/voidaccess) | The pipeline itself | H-0349 (Show HN: VoidAccess – open-source dark web OSINT, ) | shelf |
+| T-0211 | 2026-10-20 | [youtube-transcript-api](https://github.com/jdepoix/youtube-transcript-api) | Caption fetcher to compare with the in-house pipeline | H-0340 (jdepoix/youtube-transcript-api: This is a python A) | shelf |
 | T-0210 | 2026-10-19 | [poppler (pdftotext)](https://poppler.freedesktop.org/) | PDF text extraction for saved sources. | H-0336 (MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claud) | shelf |
 | T-0209 | 2026-10-19 | [OpenAlex API](https://openalex.org/) | Keyless citation graph used by chain.py. | H-0336 (MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claud) | shelf |
 | T-0208 | 2026-10-19 | [imozuru](https://github.com/MaryCache/imozuru) | The skill, chain.py and report.py. | H-0336 (MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claud) | shelf |
@@ -3110,6 +3226,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0347 | 2026-10-20 | youtube | [Can You Snipe New Pump.fun Tokens & Meme coins With a Solana Sniper Bot?! (Memec](https://www.youtube.com/watch?v=fZJq921Rm-Y) | A promo for a sniper bot with no mechanism beyond saying it trades automatically; vendor already judged. |
+| H-0346 | 2026-10-20 | arxiv | [ASTOR: Benchmarking and Improving Autoformulation for Soft-Constraint Optimizati](https://arxiv.org/abs/2610.26819) | An LLM-to-optimiser formulation paper that needs a model to run and has no link to a desk. |
+| H-0345 | 2026-10-20 | github | [simbasjungles/free-my-tv: A fast, ad-free home screen for Google TV. Open source](https://github.com/simbasjungles/free-my-tv) | Duplicate of tv-detox, the same Android TV cleanup idea; the other entry is kept. |
+| H-0344 | 2026-10-20 | hn | [Show HN: Death Plan Switch, a self-hosted dead man's switch for solo devs](https://deathplanswitch.com/) | A dead man's switch is a check-in timer with an email escalation; no new mechanism worth recording. |
+| H-0342 | 2026-10-20 | youtube | [Pump.fun Trading Bot / Pump.fun Sniper Bot for Solana Tokens](https://www.youtube.com/watch?v=6bUrd-p4fG0) | A product demo of a sniper bot with no mechanism, only a UI tour; the vendor is already judged. |
+| H-0341 | 2026-10-20 | arxiv | [OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory](https://arxiv.org/abs/2610.26860) | A generic tool-use harness paper whose gains depend on paid model backends; Claude Code already has the tools-plus-memor |
 | H-0337 | 2026-10-19 | hn | [Show HN: I built a task system to handle the drudgery so I could focus on tasks](https://3anddoneapp.com/try) | Paid consumer task app launch; the only mechanism is an LLM ranking tasks for a morning email. |
 | H-0335 | 2026-10-19 | hn | [Show HN: KiviDB, a faster Redis-compatible memory database and vector cache](https://github.com/kividbio/kividb) | Launch post whose headline numbers cannot be checked on a Mac without io_uring; comments themselves note loadgen limits. |
 | H-0328 | 2026-10-19 | youtube | [Lesson 5b: Poisson regression](https://www.youtube.com/watch?v=otMo6tN3Vjo) | Transcript blocked, so there is no body to judge; Poisson regression for football is already covered by the Pitch desk's |

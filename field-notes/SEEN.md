@@ -668,11 +668,13 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-17: Nolan site, The Dark Knight (2008) researched and built (`sites/nolan/films/the-dark-knight.json`).
 - **2026-10-19 · jc 1.26.1 (Kelly Brazil), command output to JSON** (ran): works. Magic syntax ran and parsed dig, ping and macOS netstat -rn cleanly, flags expanded to names; dig's UTC epoch stays null under BST by design; 249 parsers, 20 streaming. Ran-it W43, `experiments/2026-10-19-jc/NOTE.md`.
 - 2026-10-19, harvested: 14 judged, 6 kept (H-0310 to H-0323), 1 queued as probes (P-0177). Register: `field-notes/HARVEST.md`.
+- **2026-10-20 · Closing line value videos (Unabated MIkpsiJzbcA, Outlier eFd_LWmH2bQ, OddsJam 7hkLi0l3DjQ, 8rainbets CMYacWc27pI, RebelBetting Tz10UWx-k_U)** (watched): only Unabated has a test (sharp money and liquidity decide whether CLV means anything). Checked on 4,652 football-data matches: Pinnacle's close beat its open in 7 of 9 leagues; sides shortening 2+ points won 44.3% v close 45.1% v open 41.4%. Watched-it W43, `experiments/2026-10-20-watched-clv/NOTE.md`.
 
 - 2026-10-19: Nolan site, The Dark Knight Rises (2012) researched and built (`sites/nolan/films/the-dark-knight-rises.json`).
 - 2026-10-19, harvested: 14 judged, 10 kept (H-0324 to H-0337), 1 queued as probes (P-0181). Register: `field-notes/HARVEST.md`.
 
 - 2026-10-19: Nolan site, Oppenheimer (2023) researched and built (`sites/nolan/films/oppenheimer.json`).
+- 2026-10-20, harvested: 14 judged, 8 kept (H-0338 to H-0351), 2 queued as probes (P-0187, P-0188). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
