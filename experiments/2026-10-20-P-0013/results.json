@@ -1,0 +1,277 @@
+{
+ "first20": {
+  "0": {
+   "n": 10,
+   "mean": -99.3,
+   "median": -99.3,
+   "share_below_-50": 1.0
+  },
+  "1-5": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "share_below_-50": null
+  },
+  "over 5": {
+   "n": 9,
+   "mean": -60.3,
+   "median": -74.8,
+   "share_below_-50": 0.67
+  }
+ },
+ "all": {
+  "0": {
+   "n": 10,
+   "mean": -99.3,
+   "median": -99.3,
+   "share_below_-50": 1.0
+  },
+  "1-5": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "share_below_-50": null
+  },
+  "over 5": {
+   "n": 9,
+   "mean": -60.3,
+   "median": -74.8,
+   "share_below_-50": 0.67
+  }
+ },
+ "n_all": 19,
+ "outcome_sources": {
+  "score_24h": 17,
+  "path_move_pct": 2
+ },
+ "rows_first20": [
+  {
+   "id": "G-0071",
+   "token": "DOGEUS",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "snap_ts": "2026-10-11T22:23:37Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -98.7,
+   "outcome_src": "score_24h",
+   "runup_pct": 18.3,
+   "drawdown_pct": -98.7,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0072",
+   "token": "trenchcat",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "snap_ts": "2026-10-11T22:23:37Z",
+   "graph_insiders": 12,
+   "outcome_24h_pct": -74.8,
+   "outcome_src": "score_24h",
+   "runup_pct": 194.9,
+   "drawdown_pct": -78.2,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0073",
+   "token": "Nuts",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "snap_ts": "2026-10-11T22:23:37Z",
+   "graph_insiders": 21,
+   "outcome_24h_pct": -91.4,
+   "outcome_src": "score_24h",
+   "runup_pct": 111.0,
+   "drawdown_pct": -91.1,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0074",
+   "token": "Normie",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "snap_ts": "2026-10-11T22:23:37Z",
+   "graph_insiders": 17,
+   "outcome_24h_pct": 38.3,
+   "outcome_src": "score_24h",
+   "runup_pct": 304.0,
+   "drawdown_pct": -5.6,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0078",
+   "token": "NEIL",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "snap_ts": "2026-10-13T22:23:44Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -98.7,
+   "outcome_src": "path_move_pct",
+   "runup_pct": -98.6,
+   "drawdown_pct": -98.7,
+   "rugged": "1"
+  },
+  {
+   "id": "G-0079",
+   "token": "HUMPH",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "snap_ts": "2026-10-13T22:23:44Z",
+   "graph_insiders": 184,
+   "outcome_24h_pct": -50.0,
+   "outcome_src": "path_move_pct",
+   "runup_pct": -21.1,
+   "drawdown_pct": -93.6,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0080",
+   "token": "CRAWLER",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "snap_ts": "2026-10-13T22:23:44Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.8,
+   "outcome_src": "score_24h",
+   "runup_pct": 33.6,
+   "drawdown_pct": -99.1,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0081",
+   "token": "SEALS",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "snap_ts": "2026-10-13T22:23:44Z",
+   "graph_insiders": 38,
+   "outcome_24h_pct": -82.9,
+   "outcome_src": "score_24h",
+   "runup_pct": 15.8,
+   "drawdown_pct": -70.1,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0082",
+   "token": "CFLARE",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "snap_ts": "2026-10-14T22:23:39Z",
+   "graph_insiders": 62,
+   "outcome_24h_pct": -99.1,
+   "outcome_src": "score_24h",
+   "runup_pct": 146.4,
+   "drawdown_pct": -99.1,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0083",
+   "token": "smol",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "snap_ts": "2026-10-14T22:23:39Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.2,
+   "outcome_src": "score_24h",
+   "runup_pct": 58.1,
+   "drawdown_pct": -99.2,
+   "rugged": "1"
+  },
+  {
+   "id": "G-0084",
+   "token": "VEILTRUMP",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "snap_ts": "2026-10-14T22:23:39Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.8,
+   "outcome_src": "score_24h",
+   "runup_pct": 93.9,
+   "drawdown_pct": -62.6,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0085",
+   "token": "SAINDRA",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "snap_ts": "2026-10-14T22:23:39Z",
+   "graph_insiders": 21,
+   "outcome_24h_pct": -37.8,
+   "outcome_src": "score_24h",
+   "runup_pct": 86.4,
+   "drawdown_pct": -19.8,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0086",
+   "token": "OWLDACITY",
+   "entered_at": "2026-10-15T22:28:31Z",
+   "snap_ts": "2026-10-15T22:23:41Z",
+   "graph_insiders": 245,
+   "outcome_24h_pct": -99.7,
+   "outcome_src": "score_24h",
+   "runup_pct": 79.4,
+   "drawdown_pct": -99.7,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0087",
+   "token": "STREAM",
+   "entered_at": "2026-10-15T22:28:31Z",
+   "snap_ts": "2026-10-15T22:23:41Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -98.9,
+   "outcome_src": "score_24h",
+   "runup_pct": 87.1,
+   "drawdown_pct": -99.2,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0088",
+   "token": "Starman",
+   "entered_at": "2026-10-15T22:28:31Z",
+   "snap_ts": "2026-10-15T22:23:41Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.6,
+   "outcome_src": "score_24h",
+   "runup_pct": 67.2,
+   "drawdown_pct": -99.7,
+   "rugged": "1"
+  },
+  {
+   "id": "G-0089",
+   "token": "NUBI",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "snap_ts": "2026-10-16T22:23:44Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.8,
+   "outcome_src": "score_24h",
+   "runup_pct": 69.0,
+   "drawdown_pct": -99.8,
+   "rugged": "0"
+  },
+  {
+   "id": "G-0090",
+   "token": "SR",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "snap_ts": "2026-10-16T22:23:44Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.4,
+   "outcome_src": "score_24h",
+   "runup_pct": 80.3,
+   "drawdown_pct": -99.4,
+   "rugged": "1"
+  },
+  {
+   "id": "G-0091",
+   "token": "FTC",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "snap_ts": "2026-10-16T22:23:44Z",
+   "graph_insiders": 0,
+   "outcome_24h_pct": -99.2,
+   "outcome_src": "score_24h",
+   "runup_pct": 43.8,
+   "drawdown_pct": -99.2,
+   "rugged": "1"
+  },
+  {
+   "id": "G-0092",
+   "token": "Glow",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "snap_ts": "2026-10-16T22:23:44Z",
+   "graph_insiders": 46,
+   "outcome_24h_pct": -45.3,
+   "outcome_src": "score_24h",
+   "runup_pct": 33.4,
+   "drawdown_pct": -60.2,
+   "rugged": "0"
+  }
+ ]
+}

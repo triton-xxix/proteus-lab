@@ -1,5 +1,5 @@
 {
- "next_id": 184,
+ "next_id": 185,
  "items": [
   {
    "id": "P-0001",
@@ -262,21 +262,24 @@
    "after": "2026-10-20",
    "est_minutes": 15,
    "added": "2026-09-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-20T12:31:44+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-20T12:32:51+0100",
+   "note": "Measured: 0-insider group mean 24h -99.3% (n=10, 10 of 10 at or below -50%, all 5 rugs) v over-5 group -60.3% (n=9, 6 of 9); 1-5 bucket empty; 19 positions G-0071 to G-0092, not 20. Shot said over-5 at least 10 points worse; it was 39 points better, a miss. Caveat: 0 likely marks a fresh token the graph has not mapped, not a clean one; untested, n=19, no luck test. Next: deepen (queued P-0184, age confound plus permutation test).",
+   "artefacts": [
+    "experiments/2026-10-20-P-0013"
+   ],
+   "minutes": 1,
+   "calls": 16,
    "denied": [],
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "over-5 group mean 24h outcome at least 10 points worse than the 0 group",
-    "at": "2026-10-20T12:31:56+0100"
+    "at": "2026-10-20T12:31:56+0100",
+    "hit": true
    }
   },
   {
@@ -4410,6 +4413,26 @@
    ],
    "minutes": 3,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0184",
+   "title": "Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test on the 0 v over-5 gap (P-0013 follow-up)",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-20",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
