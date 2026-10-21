@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-20 08:06 UTC",
- "commit": "3047ded",
+ "built_at": "2026-10-21 08:06 UTC",
+ "commit": "404a082",
  "input_blobs": {
   "grinder/LEDGER.csv": "f7c464d69526d4688a821729cf37bc50e4af0be2",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
-  "pitch/PREDICTIONS.csv": "9233fe2d8597d024f7ab041a98c1aec00f56c801",
+  "pitch/PREDICTIONS.csv": "f25a959d6f31820014fa9695195ca88840bbe0aa",
   "state/spend.jsonl": null,
-  "state/probes.json": "f4601b607f85fd168e7e1bd68c62a36f1e8609f3",
+  "state/probes.json": "e61122cdfe5d7edd75398c010831ef50bb875a96",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000",
@@ -54,12 +54,12 @@
  "pitch": {
   "committed_before_kickoff": 176,
   "committed_late_excluded": 0,
-  "scored": 34,
-  "paired": 34,
-  "brier_model": 0.6028,
-  "brier_market": 0.6099,
-  "brier_diff": -0.0071,
-  "clv_mean": 0.0441,
+  "scored": 56,
+  "paired": 56,
+  "brier_model": 0.6085,
+  "brier_market": 0.5839,
+  "brier_diff": 0.0246,
+  "clv_mean": 0.0707,
   "bankroll_now": 100.0
  },
  "field_notes": {
@@ -68,8 +68,8 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 172,
-  "works": 129,
+  "verdicts": 179,
+  "works": 136,
   "broken": 5,
   "blocked": 26,
   "not_worth_it": 12,

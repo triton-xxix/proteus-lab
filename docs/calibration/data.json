@@ -1,95 +1,104 @@
 {
- "built": "2026-10-20 08:06 UTC",
+ "built": "2026-10-21 08:06 UTC",
  "panels": [
   {
    "key": "model",
    "title": "The Pitch's model",
    "who": "Dixon-Coles model",
    "kind": "football, home/draw/away",
-   "rows": 34,
-   "pairs": 102,
+   "rows": 56,
+   "pairs": 168,
    "logged": 176,
-   "scored_any": 34,
-   "captured": 5,
-   "backfilled": 29,
-   "captured_me_minus_market": -0.0701,
-   "me_minus_market": -0.0033,
-   "me_brier": 0.6028,
-   "market_brier": 0.6061,
+   "scored_any": 56,
+   "captured": 10,
+   "backfilled": 46,
+   "captured_me_minus_market": 0.0045,
+   "me_minus_market": 0.0228,
+   "me_brier": 0.6085,
+   "market_brier": 0.5857,
    "bins": [
     {
      "lo": 0.0,
      "hi": 0.2,
-     "n": 11,
-     "mean_p": 0.1525,
+     "n": 22,
+     "mean_p": 0.1465,
      "observed": 0.1818,
-     "lo95": 0.0514,
-     "hi95": 0.477
+     "lo95": 0.0731,
+     "hi95": 0.3852
     },
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 68,
-     "mean_p": 0.3022,
-     "observed": 0.2647,
-     "lo95": 0.1745,
-     "hi95": 0.3801
+     "n": 107,
+     "mean_p": 0.3011,
+     "observed": 0.2804,
+     "lo95": 0.204,
+     "hi95": 0.372
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 19,
-     "mean_p": 0.4733,
-     "observed": 0.6842,
-     "lo95": 0.4601,
-     "hi95": 0.8464
+     "n": 29,
+     "mean_p": 0.4683,
+     "observed": 0.6207,
+     "lo95": 0.44,
+     "hi95": 0.7731
     },
     {
      "lo": 0.6,
      "hi": 0.8,
-     "n": 4,
-     "mean_p": 0.6947,
-     "observed": 0.25,
-     "lo95": 0.0456,
-     "hi95": 0.6994
+     "n": 9,
+     "mean_p": 0.6834,
+     "observed": 0.3333,
+     "lo95": 0.1206,
+     "hi95": 0.6458
+    },
+    {
+     "lo": 0.8,
+     "hi": 1.0,
+     "n": 1,
+     "mean_p": 0.8266,
+     "observed": 1.0,
+     "lo95": 0.2065,
+     "hi95": 1.0
     }
    ],
    "market_bins": [
     {
      "lo": 0.0,
      "hi": 0.2,
-     "n": 8,
-     "mean_p": 0.1655,
-     "observed": 0.125,
-     "lo95": 0.0224,
-     "hi95": 0.4709
+     "n": 18,
+     "mean_p": 0.1661,
+     "observed": 0.1111,
+     "lo95": 0.031,
+     "hi95": 0.328
     },
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 71,
-     "mean_p": 0.2945,
-     "observed": 0.2817,
-     "lo95": 0.1904,
-     "hi95": 0.3954
+     "n": 107,
+     "mean_p": 0.2876,
+     "observed": 0.271,
+     "lo95": 0.1958,
+     "hi95": 0.3621
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 19,
-     "mean_p": 0.4816,
-     "observed": 0.5789,
-     "lo95": 0.3628,
-     "hi95": 0.7686
+     "n": 34,
+     "mean_p": 0.481,
+     "observed": 0.5882,
+     "lo95": 0.4222,
+     "hi95": 0.7363
     },
     {
      "lo": 0.6,
      "hi": 0.8,
-     "n": 4,
-     "mean_p": 0.6533,
-     "observed": 0.5,
-     "lo95": 0.15,
-     "hi95": 0.85
+     "n": 9,
+     "mean_p": 0.6537,
+     "observed": 0.5556,
+     "lo95": 0.2666,
+     "hi95": 0.8112
     }
    ],
    "rule": "kickoff after commit, result in, market odds captured at commit or backfilled from the results file",
@@ -100,60 +109,60 @@
    "title": "The model on over 2.5 goals",
    "who": "Dixon-Coles model",
    "kind": "football, over/under 2.5; yes/no",
-   "rows": 34,
-   "pairs": 34,
+   "rows": 56,
+   "pairs": 56,
    "logged": 176,
-   "captured": 5,
-   "me_minus_market": 0.055,
-   "me_brier": 0.2956,
-   "market_brier": 0.2406,
+   "captured": 10,
+   "me_minus_market": 0.0382,
+   "me_brier": 0.2824,
+   "market_brier": 0.2442,
    "bins": [
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 6,
-     "mean_p": 0.3314,
-     "observed": 0.6667,
-     "lo95": 0.3,
-     "hi95": 0.9032
+     "n": 10,
+     "mean_p": 0.3372,
+     "observed": 0.5,
+     "lo95": 0.2366,
+     "hi95": 0.7634
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 21,
-     "mean_p": 0.5031,
-     "observed": 0.7143,
-     "lo95": 0.5004,
-     "hi95": 0.8619
+     "n": 32,
+     "mean_p": 0.5044,
+     "observed": 0.6562,
+     "lo95": 0.4831,
+     "hi95": 0.7959
     },
     {
      "lo": 0.6,
      "hi": 0.8,
-     "n": 7,
-     "mean_p": 0.671,
+     "n": 14,
+     "mean_p": 0.6743,
      "observed": 0.4286,
-     "lo95": 0.1582,
-     "hi95": 0.7495
+     "lo95": 0.2138,
+     "hi95": 0.6741
     }
    ],
    "market_bins": [
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 27,
-     "mean_p": 0.5235,
-     "observed": 0.6667,
-     "lo95": 0.4782,
-     "hi95": 0.8136
+     "n": 43,
+     "mean_p": 0.5254,
+     "observed": 0.5349,
+     "lo95": 0.3892,
+     "hi95": 0.6749
     },
     {
      "lo": 0.6,
      "hi": 0.8,
-     "n": 7,
-     "mean_p": 0.6223,
-     "observed": 0.5714,
-     "lo95": 0.2505,
-     "hi95": 0.8418
+     "n": 13,
+     "mean_p": 0.6308,
+     "observed": 0.6923,
+     "lo95": 0.4237,
+     "hi95": 0.8732
     }
    ],
    "rule": "same rows as the model panel that have an over 2.5 price; one yes/no forecast per match",
@@ -382,7 +391,7 @@
    "kind": "elections, weather, macro; yes/no",
    "rows": 11,
    "pairs": 11,
-   "logged": 24,
+   "logged": 25,
    "settled_any": 16,
    "me_minus_market": 0.1031,
    "me_brier": 0.1341,

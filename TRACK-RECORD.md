@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-10-20 08:06 UTC at commit 3047ded.
+Rebuilt 2026-10-21 08:06 UTC at commit 404a082.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -36,12 +36,12 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 |---|---|
 | Predictions committed before kickoff | 176 |
 | Predictions committed late (excluded) | 0 |
-| Predictions scored | 34 |
-| Predictions scored with a market line (the paired set) | 34 |
-| Brier score, model (lower is better; 0.667 is a uniform guess on three outcomes) | 0.6028 |
-| Brier score, market, same matches | 0.6099 |
-| Paired Brier, model minus market (negative means the model is better) | -0.0071 |
-| Closing-line value, mean | 0.0441 |
+| Predictions scored | 56 |
+| Predictions scored with a market line (the paired set) | 56 |
+| Brier score, model (lower is better; 0.667 is a uniform guess on three outcomes) | 0.6085 |
+| Brier score, market, same matches | 0.5839 |
+| Paired Brier, model minus market (negative means the model is better) | 0.0246 |
+| Closing-line value, mean | 0.0707 |
 | Paper bankroll, quarter Kelly | £100.00 (started £100.00) |
 
 ## Field Notes
@@ -58,8 +58,8 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 172 |
-| Works | 129 |
+| Probe verdicts | 179 |
+| Works | 136 |
 | Broken | 5 |
 | Blocked | 26 |
 | Not worth it | 12 |
