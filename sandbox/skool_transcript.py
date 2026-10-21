@@ -15,7 +15,7 @@ Order of attempts:
            for these domain-locked videos; the embed page does not. Added 14 Oct 2026.
 Nothing here needs a key or a login. Whisper output is marked as such in the header.
 """
-import argparse, json, os, re, subprocess, sys, tempfile, urllib.request
+import argparse, time, json, os, re, subprocess, sys, tempfile, urllib.error, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL = os.path.join(HERE, "skool-tools", "models", "ggml-base.en.bin")
@@ -66,7 +66,17 @@ def youtube_whisper(url):
     if not os.path.exists(MODEL):
         sys.exit("model missing: %s (curl it from huggingface.co/ggerganov/whisper.cpp)" % MODEL)
     tmp = tempfile.mkdtemp(prefix="yt_")
-    subprocess.run([YTDLP, "-q", "-f", "bestaudio", "-o", os.path.join(tmp, "a.%(ext)s"), url], check=True)
+    # 19 Oct 2026: YouTube answers a passing 403 now and then; retry the whole download before failing
+    for attempt in range(3):
+        r = subprocess.run([YTDLP, "-q", "--no-warnings", "--js-runtimes", "node", "--retries", "5", "--fragment-retries", "5",
+                            "-f", "bestaudio", "-o", os.path.join(tmp, "a.%(ext)s"), url], capture_output=True, text=True)
+        if r.returncode == 0:
+            break
+        for f in os.listdir(tmp):
+            os.remove(os.path.join(tmp, f))
+        time.sleep(20 * (attempt + 1))
+    else:
+        sys.exit("yt-dlp failed 3 times: " + (r.stderr.strip().splitlines() or ["?"])[-1][:300])
     src = [f for f in os.listdir(tmp)][0]
     wav = os.path.join(tmp, "a.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(tmp, src), "-ac", "1", "-ar", "16000", wav], check=True)
@@ -106,10 +116,21 @@ def vtt_time(t):
     return sum(float(x) * 60 ** i for i, x in enumerate(reversed(p)))
 
 
+VIMEO_CHALLENGE = ("vimeo: 401 from player.vimeo.com is a Cloudflare Turnstile bot challenge (20 and 21 Oct 2026, "
+                   "six Grow Your Skool videos; one of them passed on a later try). Not solvable here, and yt-dlp's Vimeo "
+                   "web client needs a login. Retry another day, or read text_tracks from the player page in an "
+                   "interactive browser session.")
+
+
 def vimeo(vid, referer="https://www.skool.com/"):
     ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
-    page = urllib.request.urlopen(urllib.request.Request("https://player.vimeo.com/video/" + vid,
-                                  headers={"user-agent": ua, "referer": referer}), timeout=30).read().decode("utf-8", "replace")
+    try:
+        page = urllib.request.urlopen(urllib.request.Request("https://player.vimeo.com/video/" + vid,
+                                      headers={"user-agent": ua, "referer": referer}), timeout=30).read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as exc:
+        if exc.code == 401:
+            sys.exit(VIMEO_CHALLENGE)
+        raise
     m = re.search(r'"text_tracks":(\[.*?\])', page)
     tracks = json.loads(m.group(1)) if m else []
     if not tracks:
@@ -133,9 +154,29 @@ def main():
     ap.add_argument("--captions-only", action="store_true", help="fail instead of falling back to whisper (15 Oct 2026: YouTube IP-blocked the captions API and every video went to whisper)")
     a = ap.parse_args()
     if loom_id(a.url):
-        lines, how = loom(loom_id(a.url))
+        # 19 Oct 2026: some owners turn Loom transcripts off for viewers (show_transcript_to_viewer
+        # false, GraphQL answers InvalidRequestWarning); yt-dlp still gets the audio, so whisper it
+        if a.force_whisper:
+            lines, how = youtube_whisper(a.url)
+        else:
+            try:
+                lines, how = loom(loom_id(a.url))
+            except SystemExit as exc:
+                if a.captions_only:
+                    raise
+                sys.stderr.write("%s, falling back to whisper\n" % exc)
+                lines, how = youtube_whisper(a.url)
     elif vimeo_id(a.url):
-        lines, how = vimeo(vimeo_id(a.url))
+        # 19 Oct 2026: some Vimeo videos carry no auto-captions; whisper the audio like Loom
+        try:
+            if a.force_whisper:
+                raise SystemExit("forced")
+            lines, how = vimeo(vimeo_id(a.url))
+        except SystemExit as exc:
+            if a.captions_only or "Turnstile" in str(exc):   # whisper needs the audio, and yt-dlp needs a Vimeo login
+                raise
+            sys.stderr.write("%s, falling back to whisper\n" % exc)
+            lines, how = youtube_whisper(a.url)
     elif yt_id(a.url):
         vid = yt_id(a.url)
         lines, how = None, None

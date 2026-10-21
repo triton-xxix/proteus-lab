@@ -90,14 +90,34 @@ def digest_path(g, day):
     return OUT + "%s-%s.md" % (day, g["id"])
 
 
+def parked_transcripts():
+    """Transcript paths the launchd transcribe queue failed twice on (bin/skool-transcribe-queue.py)."""
+    log, fails = ROOT + "state/skool-transcribe/log.jsonl", {}
+    if not os.path.exists(log):
+        return set()
+    for line in open(log):
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        if r.get("result") == "blocked":   # 21 Oct 2026: a bot challenge (Vimeo Turnstile) parks a row at once
+            fails[r["slug"]] = 2
+        elif r.get("result") == "fail":
+            fails[r["slug"]] = fails.get(r["slug"], 0) + 1
+    return {"field-notes/skool/transcripts/%s.txt" % s for s, n in fails.items() if n >= 2}
+
+
 def cmd_next(a):
     q = load(); day = today()
     os.makedirs(OUT, exist_ok=True)
     ready = []
+    parked = parked_transcripts()
     for g in q["groups"]:
         if g["status"] != "queued":
             continue
-        missing = [f for f in g["files"] if not os.path.exists(ROOT + f)]
+        # 19 Oct 2026: a video the transcribe queue gave up on (parked) no longer blocks its group
+        missing = [f for f in g["files"] if not os.path.exists(ROOT + f) and f not in parked]
+        g["files"] = [f for f in g["files"] if f not in parked or os.path.exists(ROOT + f)]
         if not g["files"]:
             g["status"] = "needs-pull"; g["note"] = "no files listed"
             continue
