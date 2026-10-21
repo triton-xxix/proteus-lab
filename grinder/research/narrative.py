@@ -118,6 +118,8 @@ def x_narrative():
     try:
         r = requests.post("https://api.x.ai/v1/responses", json=body, timeout=180,
                           headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
+        if r.status_code != 200:   # 21 Oct 2026: a 403 "used all available credits" body is not a narrative
+            return "", 0.0, "HTTP %d %s" % (r.status_code, re.sub(r"\s+", " ", r.text)[:140])
         d = r.json()
         cost = (d.get("usage") or {}).get("cost_in_usd_ticks", 0) / 1e10
         txt = [c.get("text") for o in d.get("output", []) if o.get("type") == "message"

@@ -35,6 +35,10 @@ FIELDS = ["mint", "symbol", "night", "asof", "source", "count", "authors", "firs
 UA = {"User-Agent": "proteus-lab/0.1 research (+https://github.com/triton-xxix/proteus-lab)"}
 XAI_MODEL = "grok-4.20-0309-non-reasoning"
 AS = "https://arctic-shift.photon-reddit.com/api/"
+# 21 Oct 2026: xAI answered every call on 20 Oct with HTTP 403 "used all available credits or reached its
+# monthly spending limit"; r.json() took the error body as a result and the log said "empty body". Now a
+# non-200 is reported by status and message, and one refusal (401/402/403/429) ends the night's X calls.
+X_DOWN = None
 
 def _vault():
     """bin/secrets.py by file path: on sys.path it would shadow the standard library's secrets module,
@@ -81,9 +85,18 @@ def x_mentions(mint, symbol, asof):
     body = {"model": XAI_MODEL, "input": [{"role": "user", "content": prompt}],
             "tools": [{"type": "x_search", "from_date": start, "to_date": end}]}
     row = {"source": "x"}
+    global X_DOWN
+    if X_DOWN:
+        row["detail"] = "skipped: " + X_DOWN
+        return row
     try:
         r = requests.post("https://api.x.ai/v1/responses", json=body, timeout=180,
                           headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
+        if r.status_code != 200:
+            why = "HTTP %d %s" % (r.status_code, re.sub(r"\s+", " ", r.text)[:140])
+            if r.status_code in (401, 402, 403, 429):
+                X_DOWN = why
+            raise RuntimeError(why)
         d = r.json()
         usage = d.get("usage") or {}
         row["cost_usd"] = round((usage.get("cost_in_usd_ticks") or 0) / 1e10, 4)
