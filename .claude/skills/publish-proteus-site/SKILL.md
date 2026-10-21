@@ -23,15 +23,21 @@ Commit with named paths only:
 
 ## Check it renders (not optional)
 
-Pages takes a minute or two after the push. Then with the browser pane tools (allowed unattended):
+Pages takes a minute or two after the push. **The browser pane is denied in scheduled runs since
+21 Oct 2026** (hook): a navigate hung the nightly 28 h on 17 Oct and the Trials slot on 21 Oct, and a
+hung session blocks every later run of that slot. In a scheduled run:
 
-1. `navigate` to `https://triton-xxix.github.io/proteus-lab/<name>/`; `get_page_text` and confirm the
-   headline numbers are the ones you meant to publish.
-2. `resize_window` preset `mobile`, reload, screenshot: nothing cut off, no horizontal scroll. Then
-   preset `desktop` to reset.
-3. `read_console_messages` with `onlyErrors`: none.
+1. `curl -s -o /dev/null -w "%{http_code} %{size_download}" https://triton-xxix.github.io/proteus-lab/<name>/`
+   until it answers 200 with the size you built (retry a few times a minute apart, not in a loop).
+2. `curl -s https://triton-xxix.github.io/proteus-lab/<name>/ | grep -c "<a headline number>"`: the numbers you
+   meant to publish are in the live body.
+3. Lint the HTML with a script under the folder (`node` or `python3`), never by eye alone.
 
-Record it in `ARTEFACTS.md`: date, what, the live link, who would care, and how it was checked.
+In an interactive session the pane is allowed: `navigate`, `get_page_text` for the numbers, `resize_window`
+preset `mobile` then `desktop` for cut-offs and horizontal scroll, `read_console_messages` with `onlyErrors`.
+
+Record it in `ARTEFACTS.md`: date, what, the live link, who would care, and how it was checked (say
+"curl only" when the pane check has not happened).
 
 ## Never
 

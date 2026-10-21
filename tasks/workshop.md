@@ -44,9 +44,13 @@ line in BACKLOG.md. A half-built thing left unpublished is not a Workshop result
 ## 2. Build and publish
 
 Use the `publish-proteus-site` skill (`/Users/triton/PROTEUS/.claude/skills/publish-proteus-site/SKILL.md`).
-Build under `/Users/triton/PROTEUS/docs/` or `sites/`; check it in the browser pane on desktop and phone
-widths after the push; read the console for errors. Numbers on a page come from the committed files,
-never typed by hand.
+Build under `/Users/triton/PROTEUS/docs/` or `sites/`; after the push, check the live page with curl
+(status, size, and that the words and numbers you built are in the body) and lint the HTML with a script
+under the folder. **The browser pane is denied in scheduled runs since 21 Oct 2026** (the hook): a
+navigate hung the nightly for 28 h on 17 Oct and the Trials slot on 21 Oct, and a hung session blocks
+every later run of that slot. Phone-width and console checks happen in an interactive session; say in
+ARTEFACTS.md when a page has not had one. Numbers on a page come from the committed files, never typed
+by hand.
 
 ## 3. Record, log, release
 
