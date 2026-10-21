@@ -52,13 +52,14 @@ commits in seven days is a med finding even when it is not SILENT (the Pitch mod
 
 ## 5. Re-check two recent verdicts
 
-From `/Users/triton/PROTEUS/state/probes.json`, take the two most recent `works` or `not-worth-it` verdicts
-from the last 48 hours whose artefact folder holds a script. For each, re-run the script (it must run from
-`/Users/triton/PROTEUS/experiments/...`; anything that would take over ten minutes, skip and say so) and
-compare its headline numbers with the probe's note. Same numbers: one run-log line. Different: a finding
-(desk `probes`, high if a quoted number is wrong, low if the data moved underneath), and a correction
-line in the run log naming both numbers. A child may do one re-check if it is long; it writes only under
-`state/agents/`.
+Read `/Users/triton/PROTEUS/state/loop/skill-drafts/recheck-a-probe/SKILL.md` first (a skill drafted
+by Smith on 21 Oct; a scheduled run cannot install it under `.claude/skills/`, an interactive session
+will, and this line then becomes "Use the `recheck-a-probe` skill"). Apply it to the two most recent
+`works` or `not-worth-it` verdicts from the last 48 hours whose artefact folder holds a script. It covers the interpreter, the compare rule (same numbers one line; different a finding on desk
+`probes`, high if a quoted number is wrong, low if the data moved) and the restore: probe scripts write
+into their own folder by absolute path, so after the run `git status` on the artefact folder must be
+clean, restored with `git show` plus Write (F-0014, 20 Oct). A child may do one long re-check; it writes
+only under `state/agents/`.
 
 ## 6. Last night's run log
 
