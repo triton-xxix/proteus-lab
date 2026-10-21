@@ -86,7 +86,9 @@ says what was bought and sold. Then the rest of the summary.
 
 At most eight lines under your header: numbers agree or not, books, quiet desks, re-checks, findings added
 (ids), fixes verified or reopened, anything denied. Then:
-`python3 /Users/triton/PROTEUS/bin/commit.py -m "inspector YYYY-MM-DD: <one line>" /Users/triton/PROTEUS/TRACK-RECORD.md /Users/triton/PROTEUS/USAGE.md /Users/triton/PROTEUS/docs /Users/triton/PROTEUS/state/loop /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`
+`python3 /Users/triton/PROTEUS/bin/commit.py -m "inspector YYYY-MM-DD: <one line>" /Users/triton/PROTEUS/TRACK-RECORD.md /Users/triton/PROTEUS/USAGE.md /Users/triton/PROTEUS/docs /Users/triton/PROTEUS/state/loop /Users/triton/PROTEUS/state/agents /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`
+plus the artefact folder of each verdict you re-ran in step 5 (a re-run rewrites its result file with
+tonight's timings; committing it is honest, leaving it dirty was F-0028's P-0118 line every night).
 `python3 /Users/triton/PROTEUS/bin/runlock.py release inspector`
 
 Out of reach (charter): ledgers and predictions files, kill lines, pass marks, registered rules, the charter,

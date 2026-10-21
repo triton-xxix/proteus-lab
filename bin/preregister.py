@@ -28,8 +28,12 @@ ROOT = "/Users/triton/PROTEUS"
 HALT = ROOT + "/HALT"
 DESKS = ("grinder/", "pitch/", "exchange/", "systems/", "edges/")  # systems/ added 7 Oct 2026 (P-0083); edges/ 19 Oct 2026 (the edge desk)
 DATA_EXT = (".csv", ".json", ".jsonl")
-CLOSE_PREFIXES = ("games/", "field-notes/drafts/", "state/research/", "state/agents/research/")
-CLOSE_FILES = ("field-notes/SEEN.md", "field-notes/vault-threads.json", "docs/dash/payload.json")
+# 21 Oct 2026: state/agents/ (every child's output, not only research), state/probe-loop/ (a loop that
+# never stopped), state/wishes/ (Thursday pull), state/sends.log (the weekly send) and BACKLOG.md (every
+# slot writes to it) were in the "left dirty" line night after night (F-0028); the close now takes them.
+CLOSE_PREFIXES = ("games/", "field-notes/drafts/", "state/research/", "state/agents/", "state/probe-loop/", "state/wishes/")
+CLOSE_FILES = ("field-notes/SEEN.md", "field-notes/vault-threads.json", "docs/dash/payload.json", "state/sends.log",
+               "BACKLOG.md", "field-notes/REFILL-SOURCES.md")
 
 
 def git(args, check=True, timeout=120):

@@ -57,3 +57,12 @@ sites/builds/**/out/
 
 # Skool dashboard data: names Luke-side rooms and ventures; the repo is public (14 Oct 2026)
 state/skool-dash/*.json
+
+# 21 Oct 2026, the loose files behind F-0028: Skool lesson lists and the transcription queue name paid
+# communities' content (same reason as field-notes/skool/); notebooks and saved pages are scratch;
+# a long-running job's stdout and stderr are not its data
+sandbox/*.tsv
+sandbox/*.ipynb
+sandbox/knit-thread.json
+state/skool-transcribe/
+experiments/*/track/*.log

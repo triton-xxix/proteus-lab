@@ -1,0 +1,15 @@
+{
+ "key": "2026-10-21-1231",
+ "date": "2026-10-21",
+ "started_at": "2026-10-21T12:31:25+0100",
+ "deadline": "2026-10-21T13:03:25+0100",
+ "deadline_how": "--minutes 32",
+ "max_calls": 150,
+ "max_probes": 6,
+ "session": "6eaca375",
+ "run_log": "/Users/triton/PROTEUS/state/runs/2026-10-21.md",
+ "probes": [],
+ "stopped_at": "2026-10-21T20:05:00+0100",
+ "stop_reason": "abandoned: the 12:31 Trials session hung on a browser-pane navigate at 12:32 and never returned; closed by the interactive 21 Oct session with 0 probes",
+ "refills": 1
+}

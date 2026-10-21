@@ -35,6 +35,9 @@ number, and for a works verdict ends `Next: promote | deepen | close`. A deepen 
 `probe.py add "..." --source desk --est 20`. On STOP, go to 3.
 
 Daytime rules on top of the skill:
+- **No browser pane.** The hook denies `mcp__Claude_Browser__*` in scheduled runs since 21 Oct 2026: the
+  12:31 Trials that day hung on a `navigate` and the hung session blocked the slot (one session per task).
+  Fetch with curl or a script; a probe that needs a browser is verdict blocked, not attempted.
 - A harvest probe tests a claim the tool makes, never just whether it installs.
 - If the probe is a trading or forecasting claim, use the `backtest-with-luck-test` skill.
 - If a probe needs Luke's hands, verdict blocked with `--luke`; never ask him anything from here.
@@ -43,5 +46,5 @@ Daytime rules on top of the skill:
 
 `python3 /Users/triton/PROTEUS/bin/probe.py shots` -> one run-log line with its output.
 At most six lines under your header in all (the loop already wrote one per probe). Then:
-`python3 /Users/triton/PROTEUS/bin/commit.py -m "trials YYYY-MM-DD: <n> verdicts, shots <hit rate>" /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md /Users/triton/PROTEUS/state/probes.json /Users/triton/PROTEUS/PROBES.md`
+`python3 /Users/triton/PROTEUS/bin/commit.py -m "trials YYYY-MM-DD: <n> verdicts, shots <hit rate>" /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md /Users/triton/PROTEUS/state/probes.json /Users/triton/PROTEUS/PROBES.md /Users/triton/PROTEUS/state/probe-loop /Users/triton/PROTEUS/field-notes/REFILL-SOURCES.md`
 `python3 /Users/triton/PROTEUS/bin/runlock.py release trials`
