@@ -1,0 +1,24 @@
+date,key,violations
+2026-09-26,hn:49857528,one_line>=30 words
+2026-09-26,gh:yetone/magpie,one_line>=30 words
+2026-09-29,gh:agentsystemlabs/agent-office,one_line>=30 words
+2026-09-30,hn:49896757,untestable without why_not_testable
+2026-09-30,yt:o24J3WcBGLg,untestable without why_not_testable
+2026-10-01,hn:49911500,one_line>=30 words
+2026-10-01,hn:49909913,untestable without why_not_testable
+2026-10-01,yt:LI8WkvWpJJc,untestable without why_not_testable
+2026-10-03,vault:2026-10-03:whether-a-fees-paid-threshold-removes-rugs-without-removing-,probe_title>=140
+2026-10-11,yt:J9NQTYUP6k0,untestable without why_not_testable
+2026-10-11,gh:lingcore/winshun,untestable without why_not_testable
+2026-10-11,yt:Y4bpWRLdRoA,untestable without why_not_testable
+2026-10-13,yt:zSaeaFcm1SY,untestable without why_not_testable
+2026-10-13,hn:50073471,untestable without why_not_testable
+2026-10-13,gh:arekejoker/qwen21-nsfw-pose-skill,untestable without why_not_testable
+2026-10-13,gh:tronghieu/agent-skills,untestable without why_not_testable
+2026-10-13,hn:50072909,untestable without why_not_testable
+2026-10-16,yt:5DcaUHhu0KQ,untestable without why_not_testable
+2026-10-16,gh:haabe/mycelium,untestable without why_not_testable
+2026-10-16,hn:50119991,untestable without why_not_testable
+2026-10-16,yt:DfF8mJM25QU,untestable without why_not_testable
+2026-10-16,gh:i18next/i18next-cli,untestable without why_not_testable
+2026-10-16,hn:50121562,untestable without why_not_testable

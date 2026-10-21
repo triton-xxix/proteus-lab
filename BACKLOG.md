@@ -124,6 +124,10 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   queue, one verdict committed per probe, until deadline, call cap or probe cap, or until the queue
   is honestly empty. Register in `PROBES.md`. Not yet on the lab page: `build-lab.cjs` does not read
   `state/probes.json`; worth a Probes section once there are ten verdicts to show.
+  **21 Oct (Workshop):** `docs/probes/shots/` draws the called-shot book (`bin/shots-page.py`).
+  Next: score the number in each shot, not only the verdict word (P-0184's number missed and still
+  counts as a hit); needs a hit field per shot set when the verdict lands. Rebuild the page from the
+  Inspector once that exists. Nothing rebuilds it yet; it is a snapshot of 21 Oct.
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's
@@ -225,3 +229,9 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   (239); S-39 waits on them. **Next:** one test call a day, not hourly (hourly pokes may keep the block
   warm); when it answers, rerun `yt_retry.py` with WAIT=0 and the two lists, captions-only at 20 s apart.
   No whisper fallback: about a day of compute on this Intel Mac.
+  **Update 2026-10-19:** block lifted (captions answered at 17:15). Backlog restarted in the background at 20 s spacing; S-39 can be built once both lists finish.
+
+- **2026-10-19 · Skool data-route throttle.** `_next/data` answered 403 for every page after about 400 fast
+  requests, and again after about 700 at 2.5 s apart over 25 min; it cleared within half an hour the first
+  time. Magnetic Memberships' owner feed stops at page 136 of about 366. **Next:** another interactive
+  session, pages 137 onward, at 5 s a request and under 300 requests a sitting.

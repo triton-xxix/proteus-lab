@@ -1,0 +1,56 @@
+{
+ "read": 20,
+ "ok_no_creator_buy": 12,
+ "max_tx": 15,
+ "median_age_at_read_s": 424.0,
+ "shots": [
+  {
+   "shot": "S1",
+   "p": 0.55,
+   "rate": 0.167,
+   "brier": 0.2858
+  },
+  {
+   "shot": "S2",
+   "p": 0.4,
+   "rate": 0.417,
+   "brier": 0.2433
+  },
+  {
+   "shot": "S3",
+   "p": 0.6,
+   "rate": 0.583,
+   "brier": 0.2433
+  },
+  {
+   "shot": "S4",
+   "p": 0.15,
+   "rate": 0.0,
+   "brier": 0.0225
+  },
+  {
+   "shot": "S5",
+   "p": 0.6,
+   "rate": 0.917,
+   "brier": 0.1767
+  },
+  {
+   "shot": "S6",
+   "p": 0.15,
+   "rate": 0.083,
+   "brier": 0.0808
+  },
+  {
+   "shot": "S7",
+   "p": 0.01,
+   "rate": 0.0,
+   "brier": 0.0001
+  }
+ ],
+ "mean_brier": 0.1504,
+ "median_first_block_buyers": 0.0,
+ "median_buyers_first_60s": 2.0,
+ "median_buyers_total": 3.5,
+ "median_first_sell_s": -133.5,
+ "median_last_trade_s": -25.5
+}
