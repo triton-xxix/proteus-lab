@@ -62,7 +62,9 @@ CASES = [
     ("Bash", {"command": "mkdir -p " + ROOT + "grinder/cache"}, "allow"),
     ("Bash", {"command": "mkdir -p /Users/triton/elsewhere"}, "deny"),
     ("Bash", {"command": "rm " + ROOT + "HALT"}, "deny"),
-    ("mcp__Claude_Browser__get_page_text", {}, "allow"),
+    ("mcp__Claude_Browser__get_page_text", {}, "deny"),   # 21 Oct 2026: the pane hangs scheduled runs
+    ("mcp__Claude_Browser__navigate", {"url": "https://example.com"}, "deny"),
+    ("mcp__claude-in-chrome__navigate", {"url": "https://example.com"}, "deny"),
     ("Agent", {"prompt": "x"}, "deny"),
     # found by the first nightly run, 2026-09-22
     ("Bash", {"command": "git -C /Users/triton/PROTEUS status --short"}, "allow"),
@@ -211,10 +213,10 @@ FANOUT_CASES = [
     (CHILD, "Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 " + ROOT + "state/agents/b.png"}, "allow"),
     (CHILD, "Bash", {"command": "ffmpeg -i " + ROOT + "sandbox/a.mp4 " + ROOT + "experiments/b.png"}, "deny"),
     (CHILD, "Bash", {"command": "npm --prefix " + ROOT + "sandbox/x ci --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache"}, "allow"),
-    # child reads and browser: unchanged from the parent
+    # child reads and browser: unchanged from the parent (no browser for anyone since 21 Oct 2026)
     (CHILD, "Read", {"file_path": ROOT + "CHARTER.md"}, "allow"),
     (CHILD, "Read", {"file_path": "/etc/hosts"}, "deny"),
-    (CHILD, "mcp__Claude_Browser__get_page_text", {}, "allow"),
+    (CHILD, "mcp__Claude_Browser__get_page_text", {}, "deny"),
     # the spawn cap: two allowed above, two more here, the fifth is denied
     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 3
     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "sonnet", "prompt": "x"}, "allow"),  # 4

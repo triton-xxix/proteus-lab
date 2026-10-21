@@ -742,8 +742,12 @@ def main():
             decide("allow", "Sub-agent within the fan-out caps.")
         deny(why)
 
-    if tool.startswith("mcp__Claude_Browser__"):
-        decide("allow", "Browser pane reads are in scope; the charter forbids state-changing clicks.")
+    if tool.startswith("mcp__Claude_Browser__") or tool.startswith("mcp__claude-in-chrome__"):
+        # 21 Oct 2026: allowed until today. A navigate inside P-0173 held the nightly 28 h (17 Oct) and the
+        # 21 Oct Trials navigate never returned, which left that slot blocked for every later day (the
+        # scheduler runs one session per task). A probe that needs a browser is blocked, not attempted.
+        deny("No browser in an unattended Proteus run: the pane hangs scheduled sessions (P-0173, Trials 21 Oct). "
+             "Fetch with curl or a script under the folder; a probe that needs a browser is blocked.")
 
     deny("Tool '%s' is not available in an unattended Proteus run." % tool)
 
