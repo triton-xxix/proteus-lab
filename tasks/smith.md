@@ -56,10 +56,14 @@ Fixing the scorer is allowed; changing what it is scored against is not.
 `python3 /Users/triton/PROTEUS/bin/skills.py list`
 - Retire every skill marked RETIRE: `python3 /Users/triton/PROTEUS/bin/skills.py retire <name>`.
 - Read today's and yesterday's run logs. If a procedure was done by hand twice or more and no skill in
-  `/Users/triton/PROTEUS/.claude/skills/` covers it, write at most ONE new skill tonight:
-  `.claude/skills/<kebab-name>/SKILL.md` with frontmatter `name` and a `description` that says when to use
-  it, then the procedure with absolute paths, the commands that work unattended, and the traps already
-  hit (cite the probe or date). Scripts it needs live under `/Users/triton/PROTEUS/`, never outside.
+  `/Users/triton/PROTEUS/.claude/skills/` covers it, write at most ONE new skill tonight, as a draft at
+  `/Users/triton/PROTEUS/state/loop/skill-drafts/<kebab-name>/SKILL.md` with frontmatter `name` and a
+  `description` that says when to use it, then the procedure with absolute paths, the commands that work
+  unattended, and the traps already hit (cite the probe or date). Scripts it needs live under
+  `/Users/triton/PROTEUS/`, never outside. **A scheduled run cannot write under `.claude/` at all**: like
+  the hooks folder, the app asks a human and since 21 Oct refuses outright (the recheck-a-probe Write,
+  21 Oct 20:20). An interactive session copies the draft into `.claude/skills/` and deletes the draft;
+  until then the task prompt says "Read <draft path> first" where the procedure is used.
 - If a skill was used and the run still went wrong at that step, fix the skill instead of writing a new one.
 - Point the task prompt at the skill where the procedure is used (`Use the <name> skill`), so the
   prompt gets shorter, not longer.
