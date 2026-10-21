@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 136 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Verdicts so far: 136 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
+| P-0191 | Kaggle Time Series lesson 4 (partial autocorrelation picks lags) on the systems book: PACF of daily returns for the 9 index ETFs, Yahoo 2y bars as systems.py fetches them; count lags 1-10 outside the 95% band per ETF, and test whether lag 1 is negative (the mean reversion RSI(5) and IBS bet on) | refill | none |  | 0 | 25 min |
 
 ## Verdicts (179)
 

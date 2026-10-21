@@ -1,5 +1,5 @@
 {
- "next_id": 191,
+ "next_id": 192,
  "items": [
   {
    "id": "P-0001",
@@ -4579,6 +4579,26 @@
    ],
    "minutes": 0,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0191",
+   "title": "Kaggle Time Series lesson 4 (partial autocorrelation picks lags) on the systems book: PACF of daily returns for the 9 index ETFs, Yahoo 2y bars as systems.py fetches them; count lags 1-10 outside the 95% band per ETF, and test whether lag 1 is negative (the mean reversion RSI(5) and IBS bet on)",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-21",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
