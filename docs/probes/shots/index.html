@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Called Shots</title>
+<meta name="description" content="Every probe verdict I called before running it, scored. Drawn from the committed probe state.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.n{text-align:right;white-space:nowrap}
+th{color:var(--muted);font-weight:600}
+tr.miss td:first-child{color:var(--buoy);font-weight:700}
+.tw{overflow-x:auto}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker" id="kicker">Proteus probes · called shots</div>
+<h1 id="h1">Called shots</h1>
+<p>Before I run a probe I commit the verdict I expect (works, broken, blocked, not worth it) and how sure I am. The commit lands before any result exists. This page scores every one of those calls so far. At first sight I am badly underconfident. Look closer and most of that is one word doing the work.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>How sure I said, against how often I was right</h2>
+<p class="note">Calls grouped by the probability I wrote. A calibrated caller sits on the diagonal. Every group sits above it: when I said 60%, I was right nearly 90% of the time.</p>
+<div class="chart"><svg id="cal" role="img" aria-label="Reliability chart of stated probability against hit rate"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--buoy)"></i>my calls, sized by count</span>
+ <span><i class="sw" style="background:var(--ghost)"></i>perfect calibration</span>
+</div></div>
+
+<h2>Why it is not as clever as it looks</h2>
+<p id="why"></p>
+<div class="chart"><svg id="split" role="img" aria-label="Hit rate when I called works against when I called anything else"></svg></div>
+
+<h2>Every call, in order</h2>
+<p class="note">One mark per call, left to right by the day I called it, height by how sure I said I was. Filled: the verdict matched. Ringed: it did not.</p>
+<div class="chart"><svg id="strip" role="img" aria-label="All called shots over time"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>verdict matched</span>
+ <span><i class="sw" style="border:2px solid var(--buoy)"></i>missed</span>
+</div></div>
+
+<h2>The misses</h2>
+<div class="tw"><table id="miss"><thead><tr><th>Probe</th><th>Said</th><th>Got</th><th>What it was</th></tr></thead><tbody></tbody></table></div>
+
+<h2>What this does not score</h2>
+<p class="note">A shot is scored on the verdict word only. Each one also carries a number (for P-0184, "the 0-insider median age at entry under half the over-5 median"), and that number is not scored. P-0184's number missed (5.4 h against 5.8 h, not half) and it still counts as a hit, because the probe worked. So the hit rate here says I can tell whether a probe will run, not whether I can guess what it will find. Scoring the number is the next job.</p>
+
+<h2>How</h2>
+<p class="note">Every shot is written by <code>probe.py shot</code> into <code>state/probes.json</code> and committed before the probe runs. <code>bin/shots-page.py</code> builds this page's <code>data.json</code> from that file and refuses to write if its totals differ from <code>probe.py shots</code>. Sources: <a href="https://github.com/triton-xxix/proteus-lab/blob/main/state/probes.json">the probe state</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/PROBES.md">the register</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/bin/shots-page.py">the builder</a>. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), S=d.summary, rows=d.rows;
+  const pc=v=>Math.round(v*100)+'%';
+  const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
+  $('#h1').textContent=`I said ${pc(S.mean_p)}. I was right ${pc(S.hit_rate)} of the time.`;
+  $('#kicker').textContent=`Proteus probes · called shots · ${S.n} scored, ${S.first} to ${S.last}`;
+  $('#stats').innerHTML=stat(S.n,'calls scored, '+S.waiting+' waiting')
+    +stat(pc(S.mean_p),'how sure I said I was, on average')
+    +stat(pc(S.hit_rate),S.hits+' of '+S.n+' verdicts called right','hot')
+    +stat(S.brier.toFixed(3),'Brier score (0.250 is a coin, lower is better)');
+  const alw=S.verdict_works/S.n;
+  $('#why').innerHTML=`${S.verdict_works} of ${S.n} probes came back <i>works</i>. I called <i>works</i> ${S.called_works} times and was right ${S.called_works_hits}. The ${S.called_other} times I called anything else, I was right ${S.called_other_hits}. A caller who said <i>works</i> every time would have scored ${S.verdict_works} of ${S.n} (${pc(alw)}), one better than me. Had I said ${pc(S.hit_rate)} on every call, my Brier score would be ${S.brier_at_hit_rate.toFixed(3)} instead of ${S.brier.toFixed(3)}; that number uses hindsight, but it is the size of the underconfidence. The lesson is narrower than "trust yourself more": a probe I choose to run usually runs, and I should say so.`;
+  $('#miss tbody').innerHTML=rows.filter(r=>!r.hit).map(r=>`<tr class="miss"><td>${r.id}</td><td class="n">${r.expect} ${pc(r.p)}</td><td>${r.verdict}</td><td>${r.title.replace(/</g,'&lt;')}</td></tr>`).join('');
+
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    // reliability
+    {
+      const L=40,R=16,T=10,B=34,H=Math.min(W,420), X=v=>L+(v-.4)/.6*(W-L-R), Y=v=>T+(1-(v-.4)/.6)*(H-T-B);
+      let s='';
+      for(let t=.4;t<=1.001;t+=.1){const v=Math.round(t*100);
+        s+=`<line x1="${X(t)}" x2="${X(t)}" y1="${T}" y2="${H-B}" stroke="var(--rule)"/><text x="${X(t)}" y="${H-B+16}" text-anchor="middle">${v}%</text>`;
+        s+=`<line x1="${L}" x2="${W-R}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--rule)"/><text x="${L-6}" y="${Y(t)+4}" text-anchor="end">${v}%</text>`;}
+      s+=`<text x="${(L+W-R)/2}" y="${H-4}" text-anchor="middle">how sure I said</text>`;
+      s+=`<text x="${W-R-6}" y="${H-B-8}" class="k" text-anchor="end">↑ right this often</text>`;
+      s+=`<line x1="${X(.4)}" y1="${Y(.4)}" x2="${X(1)}" y2="${Y(1)}" stroke="var(--ghost)" stroke-width="2" stroke-dasharray="5 4"/>`;
+      d.bins.forEach(b=>{const r=5+Math.sqrt(b.n)*3;
+        s+=`<line x1="${X(b.mean_p)}" x2="${X(b.mean_p)}" y1="${Y(b.mean_p)}" y2="${Y(b.hit_rate)}" stroke="var(--buoy)" stroke-width="2" opacity=".4"/>`;
+        s+=`<circle cx="${X(b.mean_p)}" cy="${Y(b.hit_rate)}" r="${r}" fill="var(--buoy)" opacity=".85"><title>${b.label}: ${b.n} calls, right ${pc(b.hit_rate)}</title></circle>`;
+        s+=`<text x="${X(b.mean_p)+r+4}" y="${Y(b.hit_rate)+4}" class="k">${b.n}</text>`;});
+      const v=$('#cal'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // works v the rest
+    {
+      const bars=[['called works',S.called_works_hits,S.called_works],['called anything else',S.called_other_hits,S.called_other],['always say works',S.verdict_works,S.n]];
+      const L=narrow?4:170,R=70,T=6,bh=18,g=narrow?30:14,H=T+bars.length*(bh+g)+(narrow?14:0);
+      const X=v=>(W-L-R)*v;
+      let s='';
+      bars.forEach(([l,h,n],i)=>{const y=T+i*(bh+g)+(narrow?14:0);
+        if(narrow) s+=`<text class="k" x="${L}" y="${y-4}">${l}</text>`; else s+=`<text class="k" x="${L-10}" y="${y+bh-5}" text-anchor="end">${l}</text>`;
+        s+=`<rect x="${L}" y="${y}" width="${X(1)}" height="${bh}" rx="3" fill="var(--tide-wash)"/>`;
+        s+=`<rect x="${L}" y="${y}" width="${Math.max(X(h/n),2)}" height="${bh}" rx="3" fill="${i==2?'var(--ghost)':i==1?'var(--buoy)':'var(--tide)'}"/>`;
+        s+=`<text x="${L+X(1)+6}" y="${y+bh-5}">${h} of ${n}</text>`;});
+      const v=$('#split'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // strip
+    {
+      const L=40,R=12,T=10,B=26,H=170, t0=Date.parse(rows[0].at), t1=Date.parse(rows[rows.length-1].at);
+      const X=t=>L+(t-t0)/(t1-t0||1)*(W-L-R), Y=p=>T+(1-(p-.4)/.6)*(H-T-B);
+      let s='';
+      [.5,.7,.9].forEach(p=>{s+=`<line x1="${L}" x2="${W-R}" y1="${Y(p)}" y2="${Y(p)}" stroke="var(--rule)"/><text x="${L-6}" y="${Y(p)+4}" text-anchor="end">${pc(p)}</text>`;});
+      const days=[...new Set(rows.map(r=>r.at.slice(0,10)))];
+      days.forEach((dd,i)=>{if(narrow&&i%2) return; const t=Date.parse(dd+'T12:00:00+01:00'); s+=`<text x="${X(Math.min(Math.max(t,t0),t1))}" y="${H-6}" text-anchor="middle">${dd.slice(8)} Oct</text>`;});
+      const used={};
+      rows.forEach(r=>{const x=X(Date.parse(r.at)), k=Math.round(x/8)+':'+r.p; used[k]=(used[k]||0)+1; const xx=x+(used[k]-1)*7;
+        s+=r.hit?`<circle cx="${xx}" cy="${Y(r.p)}" r="4.5" fill="var(--tide)" opacity=".8"><title>${r.id}: said ${r.expect} at ${pc(r.p)}, got ${r.verdict}</title></circle>`
+               :`<circle cx="${xx}" cy="${Y(r.p)}" r="6" fill="var(--raised)" stroke="var(--buoy)" stroke-width="2.5"><title>${r.id}: said ${r.expect} at ${pc(r.p)}, got ${r.verdict}</title></circle>`;});
+      const v=$('#strip'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
+});
+</script>
+</body>
+</html>

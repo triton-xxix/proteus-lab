@@ -1,0 +1,532 @@
+{
+ "summary": {
+  "n": 48,
+  "waiting": 0,
+  "hits": 42,
+  "hit_rate": 0.875,
+  "mean_p": 0.62,
+  "brier": 0.173,
+  "brier_at_hit_rate": 0.109,
+  "called_works": 41,
+  "called_works_hits": 39,
+  "called_other": 7,
+  "called_other_hits": 3,
+  "verdict_works": 43,
+  "first": "2026-10-12",
+  "last": "2026-10-20"
+ },
+ "bins": [
+  {
+   "label": "under 55%",
+   "n": 8,
+   "mean_p": 0.494,
+   "hit_rate": 0.75
+  },
+  {
+   "label": "55%",
+   "n": 8,
+   "mean_p": 0.55,
+   "hit_rate": 0.875
+  },
+  {
+   "label": "60 to 65%",
+   "n": 18,
+   "mean_p": 0.608,
+   "hit_rate": 0.889
+  },
+  {
+   "label": "70 to 75%",
+   "n": 10,
+   "mean_p": 0.71,
+   "hit_rate": 0.9
+  },
+  {
+   "label": "80% and up",
+   "n": 4,
+   "mean_p": 0.838,
+   "hit_rate": 1.0
+  }
+ ],
+ "rows": [
+  {
+   "id": "P-0125",
+   "title": "Nolan check: does exempting _child notes from the stray-image rule pass the parked Inception digest unchanged otherwise?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "0 check failures on the parked Inception digest once _child notes are exempt",
+   "at": "2026-10-12T12:31:30+0100"
+  },
+  {
+   "id": "P-0128",
+   "title": "Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figure hold or trade tonight's Grinder picks within an",
+   "expect": "works",
+   "verdict": "broken",
+   "p": 0.55,
+   "hit": 0,
+   "number": "1 of the 91 wallets touches a Grinder pick within the hour",
+   "at": "2026-10-12T12:32:32+0100"
+  },
+  {
+   "id": "P-0131",
+   "title": "Pitch injuries: does API-Football's injuries endpoint answer on the Free plan for this weekend's fixtures, and how many requests does a roun",
+   "expect": "blocked",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 0,
+   "number": "0 keyless answers: the injuries endpoint needs an x-apisports-key I do not hold",
+   "at": "2026-10-12T12:42:03+0100"
+  },
+  {
+   "id": "P-0132",
+   "title": "P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py with progress every 10 lookups, 429 counter, known-A",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "1 of the 91 wallets touches a Grinder pick within the hour",
+   "at": "2026-10-12T12:42:59+0100"
+  },
+  {
+   "id": "P-0129",
+   "title": "Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside the commit-time line, and measure how far prices m",
+   "expect": "blocked",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 0,
+   "number": "0 Pitch-league kickoffs before 17 Oct (international break), so 0 pre-kickoff snapshots possible today",
+   "at": "2026-10-12T12:45:32+0100"
+  },
+  {
+   "id": "P-0121",
+   "title": "Grinder R01 shadow book wired into paper.py (BOOKS.json \"second\", LEDGER-R01.csv, Telegram look-up), forward f (DUE.md D-007): grinder/harne",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "wired select_r01 reproduces replay.py picks on 4 of 4 nights",
+   "at": "2026-10-13T12:31:32+0100"
+  },
+  {
+   "id": "P-0137",
+   "title": "Launchpad leaderboard: what share of 100 fresh pump.fun pools on GeckoTerminal keep liquidity above 5k after 24h?",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.6,
+   "hit": 0,
+   "number": "about 15 of 100 pools 24 to 48h old still above 5k USD liquidity",
+   "at": "2026-10-13T12:33:18+0100"
+  },
+  {
+   "id": "P-0138",
+   "title": "agent-standup: does its per-agent token count for one local session match a deduplicated transcript sum within 5%?",
+   "expect": "broken",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 0,
+   "number": "output tokens off by more than 5 pct against largest-record dedupe",
+   "at": "2026-10-13T12:36:52+0100"
+  },
+  {
+   "id": "P-0134",
+   "title": "Kolscan dust check: open the 11 Oct 21:17:41Z DOGEUS transaction (airdrop to KOL wallets or buys?) and run the full 91 x 4 pass of experimen",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "one transaction sending DOGEUS dust to 5 or more KOL wallets (an airdrop, not buys)",
+   "at": "2026-10-13T12:37:52+0100"
+  },
+  {
+   "id": "P-0139",
+   "title": "Grinder R01 backfill: score R01 picks on the 8 to 11 Oct snapshots from minute candles with v0.2 exits (paths.walk), write them to LEDGER-R0",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "15 backfilled R01 rows (4+4+4+3), all closed by candles",
+   "at": "2026-10-13T12:39:27+0100"
+  },
+  {
+   "id": "P-0135",
+   "title": "Pitch close-line leg 2: run experiments/2026-10-12-P-0129/run.py ko-2h near 15:30Z and 17:00Z on 12 Oct (or the next match day), then set ea",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.9,
+   "hit": 1,
+   "number": "no slot runs at ko-2h, 16:45Z today",
+   "at": "2026-10-13T12:45:09+0100"
+  },
+  {
+   "id": "P-0142",
+   "title": "new-term-radar: how many GitHub repos under 14 days old average 200+ stars a day tonight?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "about 10 repos under 14 days old average 200 or more stars a day tonight",
+   "at": "2026-10-13T23:49:39+0100"
+  },
+  {
+   "id": "P-0143",
+   "title": "plur-bench: does the BM25-only path reproduce 92.2% R@5 on LongMemEval-S?",
+   "expect": "blocked",
+   "verdict": "works",
+   "p": 0.45,
+   "hit": 0,
+   "number": "if it runs, BM25 R@5 within 2 points of 92.2 on LongMemEval-S; most likely blocked on the dataset or a model download inside 30 min",
+   "at": "2026-10-13T23:51:25+0100"
+  },
+  {
+   "id": "P-0144",
+   "title": "xG logistic model: does distance and angle on StatsBomb open data reach held-out AUC above 0.75?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "held-out AUC about 0.78 from distance and angle alone on StatsBomb open-data shots",
+   "at": "2026-10-13T23:57:12+0100"
+  },
+  {
+   "id": "P-0126",
+   "title": "Grinder fill check re-run (touch, close, late, depth fills on every closed v0.2 position) (DUE.md D-002): experiments/2026-10-06-grinder-fil",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "about 69 closed v0.2 trades, touch fill about -230 GBP, the close rule about 120 GBP worse than touch",
+   "at": "2026-10-14T00:00:22+0100"
+  },
+  {
+   "id": "P-0130",
+   "title": "Pitch referees: from football-data's Referee and card columns (E0, E1, SC0 since 2022), do referees differ in cards and home-win rate beyond",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "referees differ in cards a game beyond chance (permutation p under 0.01) but not in home-win rate (p above 0.1); the Dixon-Coles referee term not fitted tonight",
+   "at": "2026-10-14T00:01:12+0100"
+  },
+  {
+   "id": "P-0136",
+   "title": "Pitch model: analytic gradient for the Dixon-Coles fit (pyinstrument found 45,560 finite-difference objective calls a night); check same par",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "8-group refit from about 24 s to under 6 s with parameters matching the finite-difference fit to 1e-4",
+   "at": "2026-10-14T00:03:39+0100"
+  },
+  {
+   "id": "P-0141",
+   "title": "Kolscan v Grinder re-count: rerun P-0128's overlap counting only transactions a KOL wallet signed or that changed its token balance (P-0134 ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "2 of the 9 wallets survive (a KOL signed or the KOL token balance changed inside the window)",
+   "at": "2026-10-14T12:33:10+0100"
+  },
+  {
+   "id": "P-0145",
+   "title": "new-term-radar night two: re-run radar.py, cap one repo per owner, check stargazer account age on the suspicious slice, diff HF trending aga",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "30 of the 54 survive tonight (still 200+ stars a day, one repo per owner, not fork, not flagged by stargazer age)",
+   "at": "2026-10-14T12:38:27+0100"
+  },
+  {
+   "id": "P-0149",
+   "title": "P-0141 leg three: from experiments/2026-10-14-P-0141/results.json (51 KOL-signed trenchcat and Normie transactions, 11 Oct 21:23 to 23:23Z),",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "1 of the 7 KOLs is a net buyer before the 22:28:10Z pick and a net seller after it (shot after looking at the P-0141 deltas and first/last times, so a coin)",
+   "at": "2026-10-14T12:42:55+0100"
+  },
+  {
+   "id": "P-0140",
+   "title": "P-0137 recheck: run experiments/2026-10-13-P-0137/cohort.py recheck on the 85 pump.fun pools captured 13 Oct 11:28Z to 11:33Z; count above 5",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "2 of the 85 pools are above 5k USD liquidity at 24h, counting a graduated mint through its PumpSwap pool",
+   "at": "2026-10-14T12:45:16+0100"
+  },
+  {
+   "id": "P-0146",
+   "title": "plur BM25 over my own run logs and memory notes (P-0143 port): index state/runs and the memory folder as 300-word chunks, write 20 questions",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "R@5 of 17 of 20 (85 pct) on my own run logs and memory, below the 92 pct from LongMemEval-S",
+   "at": "2026-10-14T12:47:47+0100"
+  },
+  {
+   "id": "P-0153",
+   "title": "Pairs laggard: does the long-only laggard of a matched crypto pair beat holding after 0.2% fees on 90 days of hourly candles?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "laggard switch minus 50/50 hold about -5 pct over 90 days after fees, BTC-ETH",
+   "at": "2026-10-14T23:37:50+0100"
+  },
+  {
+   "id": "P-0155",
+   "title": "Pull-at-5x: on dated poller launches, does selling the stake at 5x beat holding to 24h, and how often is 5x reached?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "about 2 pct of counted graduations touch 5x inside the 30 min watch",
+   "at": "2026-10-14T23:40:09+0100"
+  },
+  {
+   "id": "P-0154",
+   "title": "herk-edit-kit: does the keyless starter (npm ci, npm test, synthetic fixture) build and pass on this Mac with no API keys?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "npm test passes with zero failures and no key, in under 3 min install",
+   "at": "2026-10-14T23:40:51+0100"
+  },
+  {
+   "id": "P-0156",
+   "title": "claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop-detective logic flag a seeded retry loop?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "core suite passes with zero failures; seeded 3x identical Bash failure flagged as a loop",
+   "at": "2026-10-14T23:42:30+0100"
+  },
+  {
+   "id": "P-0157",
+   "title": "Sales call funnel and opener-consistency checker (S-21): does a stdlib script on 200 synthetic calls report pickup by hour, 60 s conversatio",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "recovers the 4 planted opener scripts within 1 and the planted best pickup hour",
+   "at": "2026-10-14T23:44:04+0100"
+  },
+  {
+   "id": "P-0147",
+   "title": "Pitch referee term, part two of P-0130: add a per-referee home-advantage offset to the Dixon-Coles fit in pitch/models.py, score Brier and o",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "referee model minus plain 1X2 Brier within plus or minus 0.001 out of sample, no gain",
+   "at": "2026-10-14T23:45:08+0100"
+  },
+  {
+   "id": "P-0148",
+   "title": "Switch pitch/model.py to the analytic gradient from P-0136 (experiments/2026-10-13-P-0136/dc_grad.py): re-run pitch/backtest.py on both fits",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "dc backtest Brier differs by under 0.0005 between the two fits on 2025-26",
+   "at": "2026-10-14T23:46:27+0100"
+  },
+  {
+   "id": "P-0158",
+   "title": "Pairs laggard out of sample (P-0153 deepen): do the frozen rules still beat random holds on the 90 days before 17 Jul 2026, with a day-block",
+   "expect": "not-worth-it",
+   "verdict": "not-worth-it",
+   "p": 0.7,
+   "hit": 1,
+   "number": "out of sample mean trade within 0.3 pp of random holds, day-block p above 0.2",
+   "at": "2026-10-15T12:31:47+0100"
+  },
+  {
+   "id": "P-0152",
+   "title": "G2 window 2 (watcher reloaded 14 Oct 16:34Z, DUE D-013): score the window's counted trades on P-0100 candle fills as primary beside Jupiter ",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.5,
+   "hit": 1,
+   "number": "0 trades scored: the window closes 2026-10-21 16:34Z",
+   "at": "2026-10-15T12:35:12+0100"
+  },
+  {
+   "id": "P-0151",
+   "title": "KOL overlap, batch two: run P-0128's lookup plus P-0141's KOL-signed filter plus P-0149's before/after placement as one keyless script on th",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "2 KOL wallets with a KOL-signed trade on a pick within an hour either side, 1 of them out before the pick",
+   "at": "2026-10-15T12:35:56+0100"
+  },
+  {
+   "id": "P-0133",
+   "title": "Pitch injuries into apisports fetch: one /injuries?date call per match day, count rows that fall in the nine Pitch leagues on Saturday 17 Oc",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "30 injury rows across the nine Pitch leagues for 17 Oct, 1 request",
+   "at": "2026-10-16T12:31:41+0100"
+  },
+  {
+   "id": "P-0077",
+   "title": "Steve Keen check: rebuild his simplest monetary Minsky model from the published paper in Python, and see whether private debt alone produces",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "from the default start the debt ratio converges below 2 and employment stays near 0.96; from a high-debt start (d=2) it diverges past d=10 within 100 years",
+   "at": "2026-10-16T12:32:19+0100"
+  },
+  {
+   "id": "P-0076",
+   "title": "Supercar money routes: rank every way to raise \u00a3140,000 (a McLaren 720S) in twelve months from a \u00a350-a-month start, by evidence, with a mont",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "zero routes from a 50 pound start have a sourced or measured path to 11,700 pounds a month; best measured so far is under 50 pounds a month",
+   "at": "2026-10-16T12:33:19+0100"
+  },
+  {
+   "id": "P-0161",
+   "title": "Supercar routes deepen: web-sourced ramp rates for outbound lead-gen retainers (UK trades), a monthly figure and source URL per route",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "at least 2 sourced UK monthly retainer figures for outbound lead-gen, median under 2000 pounds",
+   "at": "2026-10-16T12:34:04+0100"
+  },
+  {
+   "id": "P-0162",
+   "title": "Lab site contrast: compute WCAG contrast ratio (4.5:1 body text rule, web.dev Learn Design colour) for every text/background colour pair in ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "3 or more colour pairs under 4.5:1 across docs/ CSS",
+   "at": "2026-10-16T12:34:34+0100"
+  },
+  {
+   "id": "P-0170",
+   "title": "Judgement book accuracy by horizon (fpp3 5.10): split pitch/JUDGEMENT.csv settled rows by lead time (kickoff_utc minus committed_at) at the ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "far-half gap minus near-half gap within plus or minus 0.02 Brier, inside 1 combined se",
+   "at": "2026-10-17T12:32:50+0100"
+  },
+  {
+   "id": "P-0171",
+   "title": "Think time on my own positions (CPW Time Management: base/20 + inc/2, about 10 s on 3+2): take 30 middlegame positions from games/lichess/pg",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "0.3 s loses 3 to 10 centipawns more per move than 1.0 s against the 10 s reference",
+   "at": "2026-10-17T12:34:37+0100"
+  },
+  {
+   "id": "P-0172",
+   "title": "pump.fun curve: does a live curve account obey constant product and graduate near 85 SOL real reserves?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "virtual SOL x virtual token reserves within 1% of 30 SOL x 1.073B tokens on live curves; real SOL at completion 84 to 86",
+   "at": "2026-10-17T23:34:57+0100"
+  },
+  {
+   "id": "P-0173",
+   "title": "web-ocean: is ocean.min.html about 61 KB and does it render in a headless browser with WebGPU and no errors?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "ocean.min.html 58 to 64 KB, renders with WebGPU and no console errors",
+   "at": "2026-10-17T23:36:21+0100"
+  },
+  {
+   "id": "P-0174",
+   "title": "GenAI for Beginners lesson 08, keyless: in the shipped embedding_index_3m.json (49 MB), is a chunk's nearest neighbour (cosine, itself exclu",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "same-video nearest neighbour 70 to 90 percent of chunks, chance under 5 percent, 1536 dims",
+   "at": "2026-10-18T12:35:15+0100"
+  },
+  {
+   "id": "P-0175",
+   "title": "Meta Ads Library, no login: curl gets 403; does a real browser get a GB all-category search for plumber with results? Snapshot the result co",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "a real browser gets results without login, about 200 to 5,000 active GB ads for plumber",
+   "at": "2026-10-18T12:36:41+0100"
+  },
+  {
+   "id": "P-0176",
+   "title": "Ads Library deepen of P-0175: GB searches for blocked drain and boiler service with experiments/2026-10-18-P-0175/adlib.mjs; of the 40 most-",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "plumbing or heating firms selling to homeowners 20 to 45 of the 80 ads across both searches, against 3 of 40 for plumber",
+   "at": "2026-10-18T12:38:37+0100"
+  },
+  {
+   "id": "P-0180",
+   "title": "Own coin, keyless stand-in: watch pump.fun launches on the public RPC until 20 have no creator buy in the creation tx, read their first hour",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "outside buyer in the creation slot on 40% or fewer of the no-creator-buy launches (P-0042: 70% with a creator buy)",
+   "at": "2026-10-19T19:02:22+0100"
+  },
+  {
+   "id": "P-0013",
+   "title": "Grinder: split the first 20 scored positions by graphInsidersDetected (0, 1-5, over 5) and compare 24h outcomes",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "over-5 group mean 24h outcome at least 10 points worse than the 0 group",
+   "at": "2026-10-20T12:31:56+0100"
+  },
+  {
+   "id": "P-0184",
+   "title": "Grinder: is graphInsidersDetected 0 just a fresh-token marker? Compare age_h at entry across insider buckets, add R01 rows, permutation test",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "0-insider median age_h at entry under half the over-5 median",
+   "at": "2026-10-20T12:33:03+0100"
+  },
+  {
+   "id": "P-0186",
+   "title": "Kaggle leakage check on P-0184: is graph_insiders 0 a missing-report value? Compare the share of 0-insider v over-5 rows with empty creator ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "missing-field share in the 0-insider rows within 15 points of the over-5 rows (0 is a real reading, not a blank)",
+   "at": "2026-10-20T12:38:48+0100"
+  }
+ ]
+}
