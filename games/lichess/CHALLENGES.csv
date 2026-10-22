@@ -567,3 +567,26 @@ utc,opponent,opp_rating,my_rating,verdict,detail
 2026-10-21T07:06:14Z,newchessengine-ai,2963,3018,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
 2026-10-21T07:06:14Z,resolutebot,2945,3018,declined,casual
 2026-10-21T07:06:14Z,odonata-bot,2759,3018,accepted,
+2026-10-22T06:54:40Z,newchessengine-ai,2963,3025,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
+2026-10-22T06:54:40Z,resolutebot,2945,3025,declined,casual
+2026-10-22T06:55:10Z,pawn_git,2718,3025,no answer,
+2026-10-22T06:55:10Z,patriciabot,2704,3025,declined,generic
+2026-10-22T06:55:11Z,stupidchessrobot,2537,3025,accepted,
+2026-10-22T07:00:30Z,newchessengine-ai,2963,3027,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
+2026-10-22T07:00:30Z,resolutebot,2945,3027,declined,casual
+2026-10-22T07:01:00Z,pawn_git,2715,3027,no answer,
+2026-10-22T07:01:00Z,patriciabot,2704,3027,declined,generic
+2026-10-22T07:01:01Z,leelaalien,2440,3027,declined,nobot
+2026-10-22T07:01:01Z,leelajester,2413,3027,declined,nobot
+2026-10-22T07:01:01Z,openingsbot,2377,3027,accepted,
+2026-10-22T07:07:02Z,newchessengine-ai,2963,3028,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
+2026-10-22T07:07:02Z,resolutebot,2945,3028,declined,casual
+2026-10-22T07:07:02Z,patriciabot,2704,3028,declined,generic
+2026-10-22T07:07:02Z,leelaalien,2440,3028,declined,nobot
+2026-10-22T07:07:03Z,leelajester,2413,3028,declined,nobot
+2026-10-22T07:07:33Z,eubos,2341,3028,no answer,
+2026-10-22T07:07:34Z,leelarogue,2326,3028,declined,generic
+2026-10-22T07:07:34Z,boris-trapsky,2194,3028,declined,generic
+2026-10-22T07:07:34Z,panic-fish,2181,3028,declined,nobot
+2026-10-22T07:07:35Z,catriever,2154,3028,declined,nobot
+2026-10-22T07:07:35Z,goldfish-engine,2119,3028,accepted,
