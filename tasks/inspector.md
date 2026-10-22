@@ -70,6 +70,16 @@ these is a finding unless already open (`python3 /Users/triton/PROTEUS/bin/findi
 `python3 /Users/triton/PROTEUS/bin/findings.py add --source runlog --desk <desk> --severity high|med|low --title '<short>' --evidence '<file:line or the quoted line>'`
 Keep titles stable (the same problem tomorrow should match today's title, so it counts as seen again).
 
+**No `## Nightly run` section for last night at all** (the session never started; 21 Oct it was the usage
+limit, F-0041): catch up the append-only desk steps, so a lost night costs one late row, not a gap and a
+dirty tree. Run, in this order, with `/Users/triton/PROTEUS/.venv/bin/python3`: `grinder/scan.py --snapshot --limit 120`,
+`grinder/paper.py --apply-rules`, `grinder/paper.py --score`, `grinder/paper.py --apply-r01`,
+`grinder/graduates/watcher.py summary`, `exchange/exchange.py score`, `exchange/exchange.py snapshot`,
+`systems/systems.py update`, `systems/systems.py score`, `edges/edges.py score` (all under `/Users/triton/PROTEUS/`).
+No blind calls, pitch predictions, children or probes: those need the evening. Then
+`python3 /Users/triton/PROTEUS/bin/preregister.py pre --date <last night's date>` and one run-log line
+`- Catch-up for missed nightly <date>: <what each desk logged>`. Still add or re-see the finding.
+
 ## 7. Did yesterday's fixes hold
 
 `python3 /Users/triton/PROTEUS/bin/findings.py list --status fixed`
