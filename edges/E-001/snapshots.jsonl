@@ -1,0 +1,12 @@
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "HTTP Error 404: Not Found", "ok": false, "ticker": "PTB", "venue": "binance_usdtm"}
+{"ask": 0.0006425, "at": "2026-10-21T09:33:24Z", "bid": 0.0006413, "code": "c30e6891afa54651ba950f8af144f861", "funding": "0.00005", "oi_value": "985061.91", "ok": true, "ticker": "PTB", "venue": "bybit"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "Instrument ID, Instrument ID code, or Spread ID doesn't exist.", "ok": false, "ticker": "PTB", "venue": "okx"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "funding": "0.000284", "last": 0.0006442, "ok": true, "ticker": "PTB", "venue": "gate"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "HTTP Error 400: Bad Request", "ok": false, "ticker": "PTB", "venue": "bitget"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "not in universe", "ok": false, "ticker": "PTB", "venue": "hyperliquid"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "HTTP Error 404: Not Found", "ok": false, "ticker": "MITO", "venue": "binance_usdtm"}
+{"ask": 0.01139, "at": "2026-10-21T09:33:24Z", "bid": 0.01134, "code": "c30e6891afa54651ba950f8af144f861", "funding": "0.00005", "oi_value": "435293.70", "ok": true, "ticker": "MITO", "venue": "bybit"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "Instrument ID, Instrument ID code, or Spread ID doesn't exist.", "ok": false, "ticker": "MITO", "venue": "okx"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "funding": "0.00005", "last": 0.01134, "ok": true, "ticker": "MITO", "venue": "gate"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "HTTP Error 400: Bad Request", "ok": false, "ticker": "MITO", "venue": "bitget"}
+{"at": "2026-10-21T09:33:24Z", "code": "c30e6891afa54651ba950f8af144f861", "err": "not in universe", "ok": false, "ticker": "MITO", "venue": "hyperliquid"}
