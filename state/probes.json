@@ -1,5 +1,5 @@
 {
- "next_id": 192,
+ "next_id": 193,
  "items": [
   {
    "id": "P-0001",
@@ -4599,6 +4599,32 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-21",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-22T12:35:13+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "lag 1 PACF of daily returns negative in 7 of 9 ETFs, and about 1 lag per ETF (of lags 1-10) outside the 95% band, the chance rate",
+    "at": "2026-10-22T12:35:26+0100"
+   }
+  },
+  {
+   "id": "P-0192",
+   "title": "Fresh install today of the four W39 tools (reladraw from npm, golive@alpha from npm, magpie HEAD tarball, hyperframes-student-kit tarball) and the same P-0012 checks: do today's registry versions give the September answers",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-22",
    "status": "open",
    "attempts": 0,
    "started_at": null,
