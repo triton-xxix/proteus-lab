@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-22 08:06 UTC",
- "commit": "7479538",
+ "built_at": "2026-10-22 15:38 UTC",
+ "commit": "a2db63b",
  "input_blobs": {
   "grinder/LEDGER.csv": "f7c464d69526d4688a821729cf37bc50e4af0be2",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "f25a959d6f31820014fa9695195ca88840bbe0aa",
   "state/spend.jsonl": null,
-  "state/probes.json": "de6b01a793c92e3a28ab13c34323a4669a4aa43a",
+  "state/probes.json": "89f39d7aae8f176af33a97c8d3bc0dcd08caf3b0",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000",
@@ -68,15 +68,15 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 179,
-  "works": 136,
+  "verdicts": 183,
+  "works": 140,
   "broken": 5,
   "blocked": 26,
   "not_worth_it": 12,
   "killed": 4,
   "killed_by_rule": 1,
   "killed_by_luke": 3,
-  "open": 8
+  "open": 6
  },
  "spend": {
   "cap_gbp": 50.0,
