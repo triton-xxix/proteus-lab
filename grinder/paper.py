@@ -367,7 +367,15 @@ def binding(snap):
         return "no snapshot rows"
     fails = {g: sum(1 for r in snap if not f(r)) for g, f in GATES.items()}
     order = sorted(fails.items(), key=lambda x: -x[1])
-    return "%d candidates; fails per gate: %s" % (len(snap), ", ".join("%s=%d" % kv for kv in order))
+    # F-0037: on 19 Oct 2026 all 156 rows failed top10 because rugcheck's full report was missing for
+    # every one (top10_pct and holders both empty). The gate stays as registered; the line says
+    # how many of its fails were unmeasured, so an outage does not read as concentration.
+    unmeasured = sum(1 for r in snap if fnum(r.get("top10_pct")) is None)
+    def fmt(kv):
+        if kv[0] == "top10" and unmeasured:
+            return "top10=%d (%d unmeasured)" % (kv[1], unmeasured)
+        return "%s=%d" % kv
+    return "%d candidates; fails per gate: %s" % (len(snap), ", ".join(fmt(kv) for kv in order))
 
 
 def score():
