@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="356" height="279" viewBox="0 0 356 279" font-family="'DejaVu Sans Mono', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace" font-size="14px">
+  <defs>
+    <marker id="r130ac13b-arrow-5c5c7c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5c5c7c"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="356" height="279" fill="#111111"/>
+  <path d="M48 40 H164 a8 8 0 0 1 8 8 V231 a8 8 0 0 1 -8 8 H48 a8 8 0 0 1 -8 -8 V48 a8 8 0 0 1 8 -8 Z" fill="#191920" stroke="#25242f"/>
+  <text x="76.5" y="68.4" fill="#d9d9d9" text-anchor="start">Web app</text>
+  <path d="M62 83 H150 a8 8 0 0 1 8 8 V122 a8 8 0 0 1 -8 8 H62 a8 8 0 0 1 -8 -8 V91 a8 8 0 0 1 8 -8 Z" fill="#191728" stroke="#4f5367"/>
+  <text x="106" y="111.4" fill="#d9d9d9" text-anchor="middle">Interface</text>
+  <path d="M87 178 H125 a8 8 0 0 1 8 8 V217 a8 8 0 0 1 -8 8 H87 a8 8 0 0 1 -8 -8 V186 a8 8 0 0 1 8 -8 Z" fill="#191728" stroke="#4f5367"/>
+  <text x="106" y="206.4" fill="#d9d9d9" text-anchor="middle">API</text>
+  <path d="M228 116 H308 a8 8 0 0 1 8 8 V155 a8 8 0 0 1 -8 8 H228 a8 8 0 0 1 -8 -8 V124 a8 8 0 0 1 8 -8 Z" fill="#191728" stroke="#4f5367"/>
+  <text x="268" y="144.4" fill="#d9d9d9" text-anchor="middle">Database</text>
+  <line x1="133" y1="201.5" x2="220" y2="139.5" stroke="#5c5c7c" stroke-width="1.6" marker-end="url(#r130ac13b-arrow-5c5c7c)"/>
+  <rect x="142" y="161" width="69" height="19" fill="#111111"/>
+  <text x="176.5" y="175.4" fill="#d9d9d9" text-anchor="middle">queries</text>
+</svg>

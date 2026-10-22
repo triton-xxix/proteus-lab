@@ -1,0 +1,148 @@
+{
+  "reladraw": {
+    "install": {
+      "rc": 0,
+      "secs": 0.8
+    },
+    "version": "0.18.0",
+    "version_sept": "0.5.0",
+    "september_command_line": {
+      "rc": 1,
+      "out": "reladraw: a command comes first \u2014 reladraw render /Users/triton/PROTEUS/experiments/2026-09-26-P-0020/three.reladraw -o /Users/triton/PROTEUS/experiments/2026-10-22-P-0192/reladraw-sept-form.svg\n"
+    },
+    "render_1": {
+      "rc": 1,
+      "secs": 0.3,
+      "out": "/Users/triton/PROTEUS/experiments/2026-09-26-P-0020/three.reladraw:5: node \"store\": \"level with\" is now \"even with\" \u2014 write `even with \u2026`\n"
+    },
+    "render_2": {
+      "rc": 1,
+      "secs": 0.3,
+      "out": "/Users/triton/PROTEUS/experiments/2026-09-26-P-0020/three.reladraw:5: node \"store\": \"level with\" is now \"even with\" \u2014 write `even with \u2026`\n"
+    },
+    "sept_sha": "c3640837d2a41250",
+    "deterministic": false,
+    "same_bytes_as_sept": false,
+    "clean": false,
+    "migrated_render_1": {
+      "rc": 0,
+      "secs": 0.3,
+      "sha": "1f373c2d4524e8be",
+      "bytes": 1632,
+      "well_formed": true
+    },
+    "migrated_render_2": {
+      "rc": 0,
+      "secs": 0.3,
+      "sha": "1f373c2d4524e8be",
+      "bytes": 1632,
+      "well_formed": true
+    },
+    "migrated_deterministic": true,
+    "migrated_same_bytes_as_sept": false,
+    "sept_bytes": 1842,
+    "wall_secs": 2.3
+  },
+  "golive": {
+    "install": {
+      "rc": 0,
+      "secs": 0.8,
+      "tail": "\nup to date in 471ms\n"
+    },
+    "version": "0.1.0-alpha.9",
+    "version_sept": "0.1.0-alpha.4",
+    "step_version": {
+      "rc": 0,
+      "secs": 0.6,
+      "rc_sept": 0,
+      "tail": "\": {\n      \"repository\": \"https://github.com/mikehasa/golive-skill\",\n      \"ref\": \"v0.1.0-alpha.9\"\n    },\n    \"node\": \">=20\",\n    \"schemas\": {\n      \"config\": 1,\n      \"state\": 1,\n      \"approval\": 1\n    },\n    \"bundleDigest\": \"e7bc6549ea6f2f8c95728d6e5611159c876a1f38d6db0009f7aa053f12f7133b\"\n  }\n}\n"
+    },
+    "step_detect": {
+      "rc": 0,
+      "secs": 0.6,
+      "rc_sept": 0,
+      "tail": "  \"clientExposed\": false\n      },\n      {\n        \"name\": \"STRIPE_SECRET_KEY\",\n        \"key\": \"stripe.secretKey\",\n        \"clientExposed\": false\n      }\n    ],\n    \"unmapped\": []\n  },\n  \"findings\": [],\n  \"suggestedStack\": {\n    \"db\": \"supabase\",\n    \"payments\": \"stripe\",\n    \"email\": \"resend\"\n  }\n}\n"
+    },
+    "step_init": {
+      "rc": 0,
+      "secs": 0.6,
+      "rc_sept": 0,
+      "tail": "{\n  \"ok\": true,\n  \"wrote\": \"golive.yaml\",\n  \"config\": {\n    \"version\": 1,\n    \"stack\": {\n      \"hosting\": \"vercel\",\n      \"db\": \"supabase\",\n      \"payments\": \"stripe\",\n      \"email\": \"resend\"\n    },\n    \"targets\": [\n      \"preview\",\n      \"production\"\n    ]\n  }\n}\n"
+    },
+    "step_doctor": {
+      "rc": 2,
+      "secs": 0.6,
+      "rc_sept": 2,
+      "tail": "rt RESEND_API_KEY in the shell you launch your coding agent from, then restart the agent.) Then re-run golive.\"\n    }\n  ],\n  \"credentials\": {\n    \"path\": \"/Users/triton/PROTEUS/sandbox/p0192/golive/fakehome/.config/golive/credentials\",\n    \"exists\": false,\n    \"private\": null,\n    \"names\": []\n  }\n}\n"
+    },
+    "step_plan": {
+      "rc": 0,
+      "secs": 0.7,
+      "rc_sept": 0,
+      "tail": "an` again.\",\n    \"Stripe access could not be verified: its steps are left out of this plan. Follow the account handoff, then run `plan` again.\",\n    \"Resend access could not be verified: its steps are left out of this plan. Follow the account handoff, then run `plan` again.\"\n  ],\n  \"findings\": []\n}\n"
+    },
+    "step_apply_bare": {
+      "rc": 1,
+      "secs": 0.6,
+      "rc_sept": 1,
+      "tail": "ok: false\nerror:\n  code: usage\n  message: apply needs --plan <planId> (from `plan` or `teardown`, approved by the human)\n"
+    },
+    "steps_same_rc_as_sept": "6 of 6",
+    "detect_names_stack": true,
+    "apply_refused": true,
+    "clean": true,
+    "wall_secs": 4.4
+  },
+  "magpie": {
+    "fetch": {
+      "bytes": 72999947,
+      "members": 6071,
+      "secs": 11.0
+    },
+    "head_marker": "go.mod: module github.com/yetone/magpie |  | go 1.26.8 |  | require ( | \tgithub.com/Calcium-Ion/moejs v0.1.0-alpha.4 | \tgithub.com/charmbrac",
+    "go_test": {
+      "rc": 0,
+      "secs": 16.9,
+      "tail": "ok  \tgithub.com/yetone/magpie/internal/edit\t5.957s\n"
+    },
+    "cases_total": 9,
+    "cases_identical_to_sept": 9,
+    "differences": [],
+    "clean": true,
+    "wall_secs": 27.9
+  },
+  "hyperframes": {
+    "fetch": {
+      "bytes": 411247032,
+      "members": 1231,
+      "secs": 32.1
+    },
+    "install": {
+      "rc": 0,
+      "secs": 5.3,
+      "tail": "\nadded 141 packages in 5s\nnpm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.\nnpm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead\n"
+    },
+    "version": "0.7.109",
+    "version_sept": "0.7.109",
+    "demo": {
+      "rc": 0,
+      "secs": 0.6,
+      "tail": "\n> herk-edit-kit@2.0.0 demo\n> node scripts/new-video.mjs demo\n\nCreated video-projects/demo. Run HyperFrames from that folder.\n"
+    },
+    "demo_dir_present": true,
+    "lint": {
+      "rc": 0,
+      "secs": 4.3,
+      "tail": "\u25c6  Linting demo/index.html\n\n\u25c7  0 errors, 0 warnings\n"
+    },
+    "render": {
+      "rc": 0,
+      "secs": 19.5,
+      "tail": "lapsedMs\":16755,\"durationMs\":94,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":5,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"7696cdaa-cfe0-4eaf-9ae0-19236ad9044c\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":16760,\"message\":\"artifact validated\",\"totalElapsedMs\":16756}\n"
+    },
+    "ffprobe": "{\n    \"programs\": [\n\n    ],\n    \"stream_groups\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"h264\",\n            \"width\": 1920,\n            \"height\": 1080\n        }\n    ],\n    \"format\": {\n        \"duration\": \"8.000000\",\n        \"size\": \"1262644\"\n    }\n}\n",
+    "clean": true,
+    "wall_secs": 62.0
+  },
+  "still_clean": 3
+}

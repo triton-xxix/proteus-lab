@@ -4628,22 +4628,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-22",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-22T12:37:09+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-22T12:41:17+0100",
+   "note": "Measured 3 of 4 fresh installs give the September answers v shot 4 of 4 (verdict hit, number missed). reladraw 0.5.0 -> 0.18.0 broke the Sept notes twice: CLI now needs the render subcommand and the syntax level-with is now even-with, both with the fix in the error; migrated diagram still deterministic (one sha over two renders) but 1632 bytes v 1842, layout changed unmeasured. golive alpha.4 -> alpha.9 kept all 6 exit codes and the apply refusal; magpie HEAD 9 of 9 cases byte-identical; student kit pins hyperframes 0.7.109 so it did not move, render 19.5 s 240 frames 1080p. First pass skipped golive init (my step list), fixed and re-run. Next: close (the pinned-v-fresh pair is answered; nothing in the September notes needs a correction beyond the reladraw command form).",
+   "artefacts": [
+    "experiments/2026-10-22-P-0192"
+   ],
+   "minutes": 4,
+   "calls": 14,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "fresh installs give the September answers in 4 of 4; at least one version bumped since 26 Sep (reladraw past 0.5.0 or hyperframes past 0.7.109), hyperframes the likeliest to differ",
-    "at": "2026-10-22T12:37:26+0100"
+    "at": "2026-10-22T12:37:26+0100",
+    "hit": true
    }
   },
   {
