@@ -679,6 +679,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-20, harvested: 14 judged, 8 kept (H-0338 to H-0351), 2 queued as probes (P-0187, P-0188). Register: `field-notes/HARVEST.md`.
 
 - 2026-10-20: Nolan site, Tenet (2020) researched and built (`sites/nolan/films/tenet.json`).
+- **2026-10-22 · Open-Meteo forecast API across a clock change (London, 25 Oct 2026)** (ran): the response's UTC offset follows the request time, not the requested date, so local sunrise and daily windows after the change are an hour off until the API's clock crosses it. London loses about 3 min 40 s of daylight a day this week. Wildcard W43, `experiments/2026-10-22-wildcard-dst/NOTE.md`.
+- 2026-10-22, harvested: 14 judged, 9 kept (H-0352 to H-0365), 2 queued as probes (P-0195, P-0196). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

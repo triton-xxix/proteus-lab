@@ -6,18 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-351 judged over 23 harvest days, 232 kept, 71 testable, 68 queued as probes, 64 with a probe verdict.
+365 judged over 24 harvest days, 241 kept, 73 testable, 70 queued as probes, 66 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0351 | 2026-10-20 | youtube | [Are Electric Cars More Reliable Than Petrol? / UK MOT Data #ElectricCars #EVs](https://www.youtube.com/watch?v=fMZk1sGMcc0) | mechanism | cars | yes | P-0188 |
+| H-0364 | 2026-10-22 | vault | [Tweak knobs on every composition](https://www.youtube.com/watch?v=yf2OwchM9nw) | mechanism | tools-for-strangers | yes | P-0196 |
+| H-0361 | 2026-10-22 | arxiv | [DynaWeave: Learning to Adapt through Dynamic Scenario Synthesis](https://arxiv.org/abs/2610.29443) | mechanism | tech | no: It needs model fine-tuning and benchmark runs; there is no l |  |
+| H-0360 | 2026-10-22 | github | [kanaworksai-hue/audio-studio-mcp: Local AI BGM and sound effects for Claude Code and any M](https://github.com/kanaworksai-hue/audio-studio-mcp) | mechanism | tools-for-strangers | no: MLX needs Apple Silicon and this Mac is Intel, and the model |  |
+| H-0359 | 2026-10-22 | hn | [Show HN: Omnara – Open-source alternative to Claude Managed Agents](https://github.com/omnara-ai/omnara) | both | tools-for-strangers | no: It needs Postgres, a sandbox runtime and a model key, and th |  |
+| H-0358 | 2026-10-22 | vault | [VIP routing for agent notifications](https://www.youtube.com/watch?v=yePLuwL3FbM) | mechanism | tools-for-strangers | no: The only meaningful measure is Luke's own push counts and at |  |
+| H-0357 | 2026-10-22 | awesome | [amadeusbio-ai/molecular_animation (new in awesome-claude-code)](https://github.com/amadeusbio-ai/molecular_animation) | mechanism | tools-for-strangers | yes | P-0195 |
+| H-0355 | 2026-10-22 | arxiv | [Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forens](https://arxiv.org/abs/2610.29747) | mechanism | mechanism-hunting | no: Reproducing it needs model answers, and there is no local LL |  |
+| H-0354 | 2026-10-22 | github | [dominikmartn/harp: Run many Claude Code and Codex agents side by side, in one sidebar that](https://github.com/dominikmartn/harp) | mechanism | tools-for-strangers | no: It needs a long Rust build or a signed DMG of a terminal app |  |
+| H-0352 | 2026-10-22 | vault | [framing kit for outbound and proposal copy](https://www.instagram.com/targetingfinance/) | mechanism | tools-for-strangers | no: Measuring any effect needs real recipients or an audience, a |  |
+| H-0351 | 2026-10-20 | youtube | [Are Electric Cars More Reliable Than Petrol? / UK MOT Data #ElectricCars #EVs](https://www.youtube.com/watch?v=fMZk1sGMcc0) | mechanism | cars | yes | P-0188 **works** |
 | H-0350 | 2026-10-20 | github | [Ansub/tv-detox: Make an old Android TV fast again with Claude Code or Codex: a tiny ad-fre](https://github.com/Ansub/tv-detox) | mechanism | tools-for-strangers | no: Needs an Android TV with developer mode on. |  |
 | H-0349 | 2026-10-20 | hn | [Show HN: VoidAccess – open-source dark web OSINT, from query to a graph](https://github.com/KatrielMoses/voidaccess) (intel) | both | tools-for-strangers | no: It needs Tor and an LLM key, and there is no local model. |  |
 | H-0348 | 2026-10-20 | vault | [rich media as the proof in agency offers](https://www.youtube.com/watch?v=638GQZ9UZ4w) | mechanism | tools-for-strangers | no: The result is replies from real prospects, so it cannot be j |  |
 | H-0343 | 2026-10-20 | vault | [personal model eval suite](https://www.youtube.com/watch?v=X1ObmRAgp5A) | mechanism | tools-for-strangers | no: Running it needs model answers and there is no local LLM, so |  |
-| H-0340 | 2026-10-20 | github | [jdepoix/youtube-transcript-api: This is a python API which allows you to get the transcrip](https://github.com/jdepoix/youtube-transcript-api) | mechanism | tools-for-strangers | yes | P-0187 |
+| H-0340 | 2026-10-20 | github | [jdepoix/youtube-transcript-api: This is a python API which allows you to get the transcrip](https://github.com/jdepoix/youtube-transcript-api) | mechanism | tools-for-strangers | yes | P-0187 **works** |
 | H-0339 | 2026-10-20 | hn | [Maxwell: A new kind of model that sits between code and hardware](https://heymaxwell.ai/) | mechanism | tech | no: Early access only, with no public tool or benchmark to run. |  |
 | H-0338 | 2026-10-20 | vault | [Blender blockout as previz for AI video](https://www.instagram.com/reel/DegVQaYOnqU/) | mechanism | tools-for-strangers | no: It needs Blender plus a paid video model that accepts a moti |  |
 | H-0336 | 2026-10-19 | github | [MaryCache/imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル](https://github.com/MaryCache/imozuru) | mechanism | mechanism-hunting | yes | P-0181 **works** |
@@ -246,6 +255,112 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0364 Tweak knobs on every composition
+2026-10-22, vault, https://www.youtube.com/watch?v=yf2OwchM9nw
+
+- **Mechanism:** A composition declares named variables (business name, price, colour, offer line) that are read at render time, so one template produces one ad per business with no code edits. The knobs are a typed list with defaults, and a batch run swaps values per row of a sheet. HyperFrames already supports composition variables and batch render.
+- **Claim:** Expose named variables on every composition so a single ad renders per business without editing code.
+- **Testable:** yes. Can one existing HyperFrames composition render three different variants from a variables file with no edit to its HTML, and how many seconds does each take? Queued as P-0196.
+- **Idea on its own:** sound. Parameterised templates with batch render are a standard, reliable way to produce many variants.
+- **How it would be done:** Pick one short composition and list the text and colour values that change per business. Declare them as variables with defaults and write a small file of three rows. Run the batch render, then check each output frame for the right name and colour. At scale a person fills the sheet with real business details and checks each result for accuracy before it is used.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **Field Notes line:** One video template with named variables can render a different ad per business from a spreadsheet row, with no code edited.
+
+### H-0361 DynaWeave: Learning to Adapt through Dynamic Scenario Synthesis
+2026-10-22, arxiv, https://arxiv.org/abs/2610.29443
+
+- **Mechanism:** DynaWeave takes static agent tasks and adds exogenous events (changed requirements, environment state or outside information) as a directed acyclic graph of events with dependencies. An execution engine fires them during the agent's run. A dynamic verifier revises only the checks that the fired events affect and keeps the rest. 2,095 verified trajectories over 36 environments were used for supervised fine-tuning of Qwen3.5 models.
+- **Claim:** Fine-tuning on dynamic scenarios raised CostBench task completion by 67.34 percentage points and beat Gemini-3.1-Pro-Preview on ToolMaze.
+- **Testable:** no. It needs model fine-tuning and benchmark runs; there is no local LLM. Needs: GPU training and model access..
+- **Idea on its own:** needs-a-run. The method is plausible but the headline gain is from the authors' own benchmark choices.
+- **How it would be done:** The test-harness idea transfers without training: take an existing task with a checker, add one scripted mid-run change, and rerun the check only for what the change touches. That could be used to test Proteus's own nightly agents against surprises like a source going down. The paper's code is public for the full version.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** DynaWeave https://github.com/Miaow-Lab/DynaWeave (Authors' code for the synthesis framework.)
+- **Field Notes line:** Agent training tasks get random mid-run twists, and only the checks those twists affect are re-scored; one benchmark jumped 67 points.
+
+### H-0360 kanaworksai-hue/audio-studio-mcp: Local AI BGM and sound effects for Claude Code and any MCP client. Stable Audio 3 on A
+2026-10-22, github, https://github.com/kanaworksai-hue/audio-studio-mcp
+
+- **Mechanism:** An MCP server wraps Stability AI's Stable Audio 3 model, running through MLX on Apple Silicon or PyTorch on NVIDIA. Tools generate music or sound effects, edit (restyle, regenerate a range, extend), then finish with seamless loops, fades and LUFS loudness to 48 kHz files. Each file gets a JSON sidecar with prompt, seed and settings, and the server teaches the client the model's prompt format.
+- **Claim:** Local BGM and sound effects for Claude Code with no cloud or API key; 443 stars in four days.
+- **Testable:** no. MLX needs Apple Silicon and this Mac is Intel, and the model weights are a large download. Needs: An Apple Silicon Mac or NVIDIA GPU, and the Stable Audio 3 weights..
+- **Idea on its own:** sound. Local generation with seed sidecars is reproducible and free per use.
+- **How it would be done:** The loop-length trick is useful by itself: choose a bar count so the tempo divides the length, then crossfade the seam. On the M5 operator machine this could be installed as an MCP server and used to make beds and sound effects for HyperFrames films, replacing a paid music source. The finish steps (loudness, loops) could be done with ffmpeg on any machine.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice)
+- **To fetch:** audio-studio-mcp https://github.com/kanaworksai-hue/audio-studio-mcp (The MCP server.); Stable Audio 3 https://github.com/Stability-AI/stable-audio-3 (The underlying model and CLI.)
+- **Missing:** An Apple Silicon machine in reach of the video work (the M5 may cover it).
+- **Field Notes line:** A local MCP server that makes loopable music and sound effects with Stable Audio 3, no key, but it needs Apple Silicon.
+
+### H-0359 Show HN: Omnara – Open-source alternative to Claude Managed Agents
+2026-10-22, hn, https://github.com/omnara-ai/omnara
+
+- **Mechanism:** Omnara runs the agent loop on a server and stores each agent's state in Postgres, so an agent survives restarts and costs nothing while idle. Clients message an agent and stream its events over an API. Sandboxes run commands, and secrets, permissions and role-based access are handled by the server. The harness has the usual file and shell tools, subagents, compaction, MCP, skills and memory, and can use a laptop as one of its machines.
+- **Claim:** An open-source, self-hostable equivalent of Claude Managed Agents with durable, event-sourced agents; 107 points on Show HN.
+- **Testable:** no. It needs Postgres, a sandbox runtime and a model key, and there is no local LLM here. Needs: A model API key, Postgres and a sandbox runtime..
+- **Idea on its own:** sound. Persisting the event log of an agent is a proven way to get resumability and cheap idle time.
+- **How it would be done:** The pattern is an append-only event log per agent, a loop that replays it to rebuild context, and tool calls executed in a sandbox. Proteus already approximates it with state files and a runlock. To try it, self-host the repo with Postgres and a hosted model key, create one agent by API call and kill and restart the server to see whether it resumes. A person would handle hosting and secrets.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** omnara https://github.com/omnara-ai/omnara (The server itself.); PostgreSQL https://www.postgresql.org/download/ (State store for the agents.)
+- **Field Notes line:** An open durable-agent server that keeps every agent's state in Postgres, so it survives restarts and costs nothing idle.
+
+### H-0358 VIP routing for agent notifications
+2026-10-22, vault, https://www.youtube.com/watch?v=yePLuwL3FbM
+
+- **Mechanism:** Keep a short named list of senders or event types that may interrupt now, and route everything else into two scheduled digests, a morning brief and an evening rundown. The mechanism is a filter plus a batcher: classify each incoming event, push only if it is on the list, otherwise append to a queue that is flushed twice a day. Counting pushes per day first gives the baseline to judge the change against.
+- **Claim:** Interruptions cost focus, so only a VIP list should notify and the rest should wait for a digest.
+- **Testable:** no. The only meaningful measure is Luke's own push counts and attention, which Proteus cannot read keyless. Needs: Luke's notification counts..
+- **Idea on its own:** sound. Allow-list interruption with batched digests is a simple, well-understood design that cuts noise.
+- **How it would be done:** Count the pushes an agent sends in a week and tag each as urgent or not. Write the VIP rules (a few sender or event types) in a config file. Add a small queue that collects the rest and a launchd job that emails or posts the two digests. Review after a week whether anything on the VIP list was not urgent.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **Field Notes line:** Only a short VIP list may interrupt; everything else lands in a morning brief and an evening rundown.
+
+### H-0357 amadeusbio-ai/molecular_animation (new in awesome-claude-code)
+2026-10-22, awesome, https://github.com/amadeusbio-ai/molecular_animation. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A pure-numpy layer builds the science: mmCIF assemblies, atom-matched states, constrained morphs, and thermal motion using hydrodynamic tumbling, elastic-network normal modes and worm-like DNA at literature rates. One clock per film with exposure-averaged frames makes loops repeat exactly. A separate Blender layer renders and labels, and each beat carries an evidence tag (experimental or illustrative). Claude Code drives it through Blender MCP.
+- **Claim:** Turns a brief and PDB or AlphaFold structures into a labelled science film, with a 21 second channelrhodopsin case study.
+- **Testable:** yes. Do the pure-numpy molanim unit tests pass on a fresh Python 3.12 venv, and how many seconds does the motion module take to run on one public PDB structure? Queued as P-0195.
+- **Idea on its own:** needs-a-run. The physics layer is checkable offline, while the rendered result depends on Blender.
+- **How it would be done:** Clone the repo into sandbox, create the Python 3.12 venv, install numpy dependencies and run the tests that do not need Blender. Then call the motion module on a public PDB entry to see whether the output is sane. For a finished film, Blender 5.2 plus its MCP bridge is needed, and a person would check the science captions. The evidence-tag idea could be reused in HyperFrames films.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** Molecular_Animation https://github.com/AmadeusBio-ai/Molecular_Animation (The repo under test.); Blender https://www.blender.org/download/ (Needed only for the rendering layer.)
+- **Field Notes line:** An open pipeline that makes science films from PDB structures, tagging each beat as measured or illustrative and moving molecules at literature rates.
+
+### H-0355 Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forensic Attacks on LLM-Assisted Dig
+2026-10-22, arxiv, https://arxiv.org/abs/2610.29747
+
+- **Mechanism:** In LLM-assisted digital forensics the evidence is attacker-controlled and must be read, so text planted on a seized device reaches the model as instructions. The paper's taxonomy has four parts: objective, technique, payload location and concealment. The enabling fact is a perception gap, where deterministic tools, the human examiner and the model each see the same bytes differently. Three demonstrated attacks change a reported conclusion, write attacker-chosen content to the analyst's workstation, and cause outbound network traffic.
+- **Claim:** Text planted on evidence can steer an LLM forensic pipeline, shown with three working attacks and proposed mitigations.
+- **Testable:** no. Reproducing it needs model answers, and there is no local LLM on this Mac. Needs: A model endpoint and the authors' pipeline..
+- **Idea on its own:** sound. It is the standard indirect injection problem applied to a setting where reading the hostile content is mandatory.
+- **How it would be done:** To check it, build a small fake evidence set with planted instruction strings in file names, document text and metadata. Run it through an agent with a tool-using summariser and note which locations change the output. The mitigations are separating reading from acting, stripping or escaping evidence text, and requiring a deterministic check on any conclusion. Proteus's own agents read stranger-written bodies every night, so the same hygiene applies here.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Forensic evidence is attacker-written by definition, so any LLM that reads it can be steered by text planted on the seized device.
+
+### H-0354 dominikmartn/harp: Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you
+2026-10-22, github, https://github.com/dominikmartn/harp
+
+- **Mechanism:** Harp is a Warp fork whose sidebar shows per-tab agent state (working, waiting, done). Rate-limit rings for Claude Code come from the status line: Claude Code passes plan limit data only to its configured statusLine command, so Harp installs one in ~/.claude/settings.json that saves that input to a file the app reads. Codex limits are parsed from rate_limits entries in its session logs under ~/.codex/sessions. Groups are stored as tmux session options so they survive restarts.
+- **Claim:** Many Claude Code and Codex agents in one sidebar, with 5 hour and weekly limit rings, 581 stars in two days.
+- **Testable:** no. It needs a long Rust build or a signed DMG of a terminal app, and the status line side would edit Claude settings, which Proteus does not touch. Needs: A macOS GUI session and a Rust build of Warp..
+- **Idea on its own:** sound. Using the status line as the only supported channel for plan limit data is a plain, low-risk way to get that number.
+- **How it would be done:** The reusable piece is small: a status line command that writes its stdin JSON to a file, and a reader that turns the limit fields into a percentage. A launchd job or menu bar script could poll that file and notify when a window is nearly spent. Agent state could come from hook events (Notification, Stop) written to a log. No server or account is needed.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** harp https://github.com/dominikmartn/harp (Reference for how the status line limit capture and tmux group storage are wired.)
+- **Field Notes line:** A Warp fork that reads Claude Code's status line input to draw 5 hour and weekly limit rings next to each agent session.
+
+### H-0352 framing kit for outbound and proposal copy
+2026-10-22, vault, https://www.instagram.com/targetingfinance/
+
+- **Mechanism:** Four well-documented pricing biases: loss framing (state what the buyer loses by waiting), per-day reframing (split a total into a small daily figure), a free gift in place of a discount (protects the anchor price), and a trimmed menu (fewer options reduces choice overload). They are applied as copy edits to a price line or offer, not as software. The effect comes from how buyers weigh losses and small recurring amounts against a lump sum.
+- **Claim:** A carousel claims these framings change what people pay and accept.
+- **Testable:** no. Measuring any effect needs real recipients or an audience, and there is no keyless public dataset to check it against tonight. Needs: A real audience or send list to A/B the copy on..
+- **Idea on its own:** sound. These biases are replicated in the behavioural economics literature, though effect sizes vary by context.
+- **How it would be done:** Write a one-page kit with a before and after line for each of the four framings, using real offer text. Make two versions of the same proposal or email, one plain and one framed, and send each to a comparable half of a list. Count replies or accepts per version; a hired person would only be needed to supply the list and read the replies. Claude Code can draft the variants and keep the log.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A list of real recipients big enough to see a difference.
+- **Field Notes line:** Four old pricing-psychology tricks (loss framing, per-day price, gift over discount, fewer options) packaged as a copy kit for offers and proposals.
 
 ### H-0351 Are Electric Cars More Reliable Than Petrol? / UK MOT Data #ElectricCars #EVs
 2026-10-20, youtube, https://www.youtube.com/watch?v=fMZk1sGMcc0
@@ -2932,6 +3047,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0364 | 2026-10-22 | Tweak knobs on every composition | open | sound | yes | P-0196 |
+| H-0358 | 2026-10-22 | VIP routing for agent notifications | open | sound | no |  |
+| H-0352 | 2026-10-22 | framing kit for outbound and proposal copy | open | sound | no |  |
 | H-0348 | 2026-10-20 | rich media as the proof in agency offers | open | needs-a-run | no |  |
 | H-0343 | 2026-10-20 | personal model eval suite | open | sound | no |  |
 | H-0338 | 2026-10-20 | Blender blockout as previz for AI video | open | sound | no |  |
@@ -3006,6 +3124,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0222 | 2026-10-22 | [DynaWeave](https://github.com/Miaow-Lab/DynaWeave) | Authors' code for the synthesis framework. | H-0361 (DynaWeave: Learning to Adapt through Dynamic Scena) | shelf |
+| T-0221 | 2026-10-22 | [Stable Audio 3](https://github.com/Stability-AI/stable-audio-3) | The underlying model and CLI. | H-0360 (kanaworksai-hue/audio-studio-mcp: Local AI BGM and) | shelf |
+| T-0220 | 2026-10-22 | [audio-studio-mcp](https://github.com/kanaworksai-hue/audio-studio-mcp) | The MCP server. | H-0360 (kanaworksai-hue/audio-studio-mcp: Local AI BGM and) | shelf |
+| T-0219 | 2026-10-22 | [PostgreSQL](https://www.postgresql.org/download/) | State store for the agents. | H-0359 (Show HN: Omnara – Open-source alternative to Claud) | shelf |
+| T-0218 | 2026-10-22 | [omnara](https://github.com/omnara-ai/omnara) | The server itself. | H-0359 (Show HN: Omnara – Open-source alternative to Claud) | shelf |
+| T-0217 | 2026-10-22 | [Molecular_Animation](https://github.com/AmadeusBio-ai/Molecular_Animation) | The repo under test. | H-0357 (amadeusbio-ai/molecular_animation (new in awesome-) | shelf |
+| T-0216 | 2026-10-22 | [harp](https://github.com/dominikmartn/harp) | Reference for how the status line limit capture and tmux group storage are wired. | H-0354 (dominikmartn/harp: Run many Claude Code and Codex ) | shelf |
 | T-0215 | 2026-10-20 | [DVSA anonymised MOT tests and results](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9f8b/anonymised-mot-tests-and-results) | Open source of the 47 million tests behind the claim | H-0351 (Are Electric Cars More Reliable Than Petrol? / UK ) | shelf |
 | T-0214 | 2026-10-20 | [tv-detox](https://github.com/Ansub/tv-detox) | Launcher and install script | H-0350 (Ansub/tv-detox: Make an old Android TV fast again ) | shelf |
 | T-0213 | 2026-10-20 | [Tor](https://www.torproject.org/) | Proxy it depends on for onion access | H-0349 (Show HN: VoidAccess – open-source dark web OSINT, ) | shelf |
@@ -3226,6 +3351,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0365 | 2026-10-22 | hn | [Show HN: Jev Cards, Can you beat a vision model at a picture quiz?](https://jevcards.com) | A demo quiz game around one vendor's fast vision model; the only content is a speed and accuracy claim with no mechanism |
+| H-0363 | 2026-10-22 | awesome | [summerriversound/review-inbox (new in awesome-claude-code)](https://github.com/summerriversound/review-inbox) | A UI mod over GitHub's PR lists plus summaries; no new mechanism beyond polling the API and asking a model to summarise. |
+| H-0362 | 2026-10-22 | youtube | [Annual Depreciation of a New Car: Find the Future Value](https://www.youtube.com/watch?v=1WqHR6RzURU) | A two-minute school maths example of the compound depreciation formula, no mechanism or data. |
+| H-0356 | 2026-10-22 | youtube | [Agent Memory Explained in 5 Minutes](https://www.youtube.com/watch?v=0P-ACuHyu-0) | Generic beginner explainer of context versus long-term memory with no new mechanism. |
+| H-0353 | 2026-10-22 | hn | [Using Claude to reduce the attack surface of code](https://www.anthropic.com/research/attack-surface-reduction) | The body is only complaint comments; no mechanism for how the attack surface reduction works is given. |
 | H-0347 | 2026-10-20 | youtube | [Can You Snipe New Pump.fun Tokens & Meme coins With a Solana Sniper Bot?! (Memec](https://www.youtube.com/watch?v=fZJq921Rm-Y) | A promo for a sniper bot with no mechanism beyond saying it trades automatically; vendor already judged. |
 | H-0346 | 2026-10-20 | arxiv | [ASTOR: Benchmarking and Improving Autoformulation for Soft-Constraint Optimizati](https://arxiv.org/abs/2610.26819) | An LLM-to-optimiser formulation paper that needs a model to run and has no link to a desk. |
 | H-0345 | 2026-10-20 | github | [simbasjungles/free-my-tv: A fast, ad-free home screen for Google TV. Open source](https://github.com/simbasjungles/free-my-tv) | Duplicate of tv-detox, the same Android TV cleanup idea; the other entry is kept. |

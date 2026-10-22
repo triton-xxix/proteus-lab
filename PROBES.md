@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 140 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
-## Queue (6 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,8 +17,11 @@ Verdicts so far: 140 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
-| P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 0 | 40 min |
+| P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 1 (in progress) | 40 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
+| P-0194 | Wish 2026-10-20 r/SomebodyMakeThis: alarm clock that plays an m3u/m3u8 playlist. Build a single-file offline HTML alarm that loads a local m3u, shuffles or plays in order at a set time, with a README; release under sandbox and experiments | persona | none |  | 0 | 30 min |
+| P-0195 | molanim: do its numpy-only tests pass on a fresh venv and move a public PDB structure without Blender? | harvest | none |  | 0 | 25 min |
+| P-0196 | HyperFrames variables: does one composition render three distinct per-business ads from a variables file with no HTML edits? | vault | none |  | 0 | 25 min |
 
 ## Verdicts (183)
 
