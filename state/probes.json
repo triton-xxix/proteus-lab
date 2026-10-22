@@ -1,5 +1,5 @@
 {
- "next_id": 198,
+ "next_id": 199,
  "items": [
   {
    "id": "P-0001",
@@ -4765,6 +4765,26 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0198",
+   "title": "Called shots reliability: bin every scored called shot by stated probability, plot mean forecast v hit rate with counts (sklearn calibration_curve method), and Murphy-decompose the Brier score into reliability, resolution and uncertainty",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-22",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }

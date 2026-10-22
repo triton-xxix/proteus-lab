@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 144 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
-## Queue (5 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,7 @@ Verdicts so far: 144 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
+| P-0198 | Called shots reliability: bin every scored called shot by stated probability, plot mean forecast v hit rate with counts (sklearn calibration_curve method), and Murphy-decompose the Brier score into reliability, resolution and uncertainty | refill | none |  | 0 | 25 min |
 
 ## Verdicts (188)
 
