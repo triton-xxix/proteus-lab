@@ -4657,9 +4657,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-22",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-22T12:41:24+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4667,7 +4667,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "on 2022-10 to 2024-10 lag 3 is outside the 95% band in 1 of 9 ETFs (chance, it does not hold) and lag 1 is negative in 6 of 9",
+    "at": "2026-10-22T12:41:32+0100"
+   }
   }
  ]
 }
