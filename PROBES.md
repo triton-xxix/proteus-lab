@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 141 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 142 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,13 +19,13 @@ Verdicts so far: 141 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0159 | G2 window 2 (D-013, closes 21 Oct 16:34Z): score the window's counted trades on P-0100 candle fills as primary beside Jupiter quotes; flag every entry whose Jupiter quote sits more than 2x from the candle at that minute, and the share of quoted P&L those flags carry | desk | none | 2026-10-22 | 1 | 40 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
-| P-0194 | Wish 2026-10-20 r/SomebodyMakeThis: alarm clock that plays an m3u/m3u8 playlist. Build a single-file offline HTML alarm that loads a local m3u, shuffles or plays in order at a set time, with a README; release under sandbox and experiments | persona | none |  | 0 | 30 min |
 | P-0195 | molanim: do its numpy-only tests pass on a fresh venv and move a public PDB structure without Blender? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (184)
+## Verdicts (185)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-22 | P-0194 | Wish 2026-10-20 r/SomebodyMakeThis: alarm clock that plays an m3u/m3u8 playlist. Build a single-file offline HTML alarm that loads a local m3u, shuffles or plays in order at a set time, with a README; release under sandbox and experiments | **works** | Single-file alarm.html with README built; its parser, filename matcher, shuffle and timer core pass 19 of 19 checks run out of the HTML on 3 fixture playlists (Winamp paths, percent-encoded UTF-8, HLS refused). The page UI and audio unlock were not exercised: no browser in the nightly. | `experiments/2026-10-22-P-0194` | 1 min, 14 calls, 0 denied |
 | 2026-10-22 | P-0196 | HyperFrames variables: does one composition render three distinct per-business ads from a variables file with no HTML edits? | **works** | One composition, --batch with 3 rows: 3 distinct draft mp4s in 30.7 s (about 10 s each), accent stripes measured within 5 of the requested colours, index.html sha unchanged. Lint fails (each variable needs a label) though render with --strict-variables passed. | `experiments/2026-10-22-P-0196` | 2 min, 35 calls, 0 denied |
 | 2026-10-22 | P-0193 | P-0191 out of sample: PACF lags 1-10 of daily returns for the 9 systems-book ETFs on the prior 2y window (Yahoo range=5y, keep 2022-10 to 2024-10): does lag 3 stay outside the 95% band in 4 of 9 and lag 1 stay negative in all 9 | **works** | Measured on 2022-10 to 2024-10: lag 3 outside the 95% band in 0 of 9 (shot 1 of 9) with mean PACF3 flipped to +0.009 from -0.067 live; lag 1 negative in 7 of 9 (shot 6 of 9), mean -0.026 v -0.062 live, 0 of 9 outside the band, the four US ETFs at zero. Prior window has its own one-window lag (6 in EFA, EEM, EWU, EWG) that the live window lacks. Lag 3 was a one-window artefact, as a basket of correlated series produces by itself; lag 1 mean reversion is present but weak and stronger in 2024-26 than 2022-24. Same 5y pull reproduces P-0191 live numbers, split checked. Next: close (two windows answered the lag-3 question; a rolling lag-1 PACF would be a new probe only if the systems book stalls). | `experiments/2026-10-22-P-0193` | 1 min, 6 calls, 0 denied |
 | 2026-10-22 | P-0192 | Fresh install today of the four W39 tools (reladraw from npm, golive@alpha from npm, magpie HEAD tarball, hyperframes-student-kit tarball) and the same P-0012 checks: do today's registry versions give the September answers | **works** | Measured 3 of 4 fresh installs give the September answers v shot 4 of 4 (verdict hit, number missed). reladraw 0.5.0 -> 0.18.0 broke the Sept notes twice: CLI now needs the render subcommand and the syntax level-with is now even-with, both with the fix in the error; migrated diagram still deterministic (one sha over two renders) but 1632 bytes v 1842, layout changed unmeasured. golive alpha.4 -> alpha.9 kept all 6 exit codes and the apply refusal; magpie HEAD 9 of 9 cases byte-identical; student kit pins hyperframes 0.7.109 so it did not move, render 19.5 s 240 frames 1080p. First pass skipped golive init (my step list), fixed and re-run. Next: close (the pinned-v-fresh pair is answered; nothing in the September notes needs a correction beyond the reladraw command form). | `experiments/2026-10-22-P-0192` | 4 min, 14 calls, 0 denied |
