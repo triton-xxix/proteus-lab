@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-10-21 09:06.
+Rebuilt 2026-10-22 09:06.
 
 ## By month
 
@@ -18,8 +18,8 @@ Rebuilt 2026-10-21 09:06.
 |---|---|---|---|---|---|
 | 2026-09 | scheduled runs | 413.4k | 75.71M | 2.18M | 3.9k |
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
-| 2026-10 | scheduled runs | 2.13M | 538.87M | 12.46M | 17.5k |
-| 2026-10 | Luke's sessions | 2.64M | 637.72M | 17.31M | 17.7k |
+| 2026-10 | scheduled runs | 2.20M | 551.93M | 12.86M | 18.8k |
+| 2026-10 | Luke's sessions | 2.75M | 645.94M | 17.66M | 19.8k |
 
 ## Scheduled output by ISO week
 
@@ -32,7 +32,7 @@ Field Notes with the step that caused it.
 | 2026-W40 | 8 | 423.7k | 221.1k | no |
 | 2026-W41 | 11 | 637.1k | 322.4k | no |
 | 2026-W42 | 39 | 913.6k | 427.3k | YES |
-| 2026-W43 | 14 | 347.1k | 548.9k | no |
+| 2026-W43 | 19 | 414.8k | 548.9k | no |
 
 ## By session
 
@@ -297,4 +297,11 @@ Field Notes with the step that caused it.
 | 2026-10-20 22:34 | nightly, child abc98915 | sonnet-5-5 | 1.7k | 235.0k | 42.0k | 8 | 0 min | 7958ee49 |
 | 2026-10-20 23:38 | smith | opus-5-5 | 8.7k | 2.28M | 58.4k | 52 | 2 min | 20b48e5f |
 | 2026-10-21 06:54 | lichess-morning | opus-5-5 | 2.1k | 830.5k | 39.1k | 22 | 17 min | 8d2e8fd7 |
-| 2026-10-21 08:05 | inspector | opus-5-5 | 2.0k | 536.6k | 41.5k | 14 | 0 min | d2ecbc3d |
+| 2026-10-21 08:05 | inspector | opus-5-5 | 9.3k | 2.02M | 71.1k | 42 | 2 min | d2ecbc3d |
+| 2026-10-21 11:31 | trials | opus-5-5 | 8.2k | 2.56M | 107.7k | 58 | 12 min | 6eaca375 |
+| 2026-10-21 15:36 | workshop | opus-5-5 | 21.9k | 5.18M | 94.9k | 96 | 5 min | f8742f2e |
+| 2026-10-21 18:40 | interactive (Luke) | fable-5-1 | 93.2k | 4.08M | 229.6k | 642 | 21 min | fb2ba978 |
+| 2026-10-21 19:04 | smith | fable-5-1 | 25.4k | 2.77M | 98.6k | 738 | 7 min | 6a61a56d |
+| 2026-10-21 19:16 | interactive (Luke) | fable-5-1 | 16.2k | 4.14M | 118.6k | 1.5k | 60 min | 1e9d7039 |
+| 2026-10-22 06:54 | lichess-morning | fable-5-1 | 3.9k | 860.0k | 43.4k | 322 | 18 min | 2f457931 |
+| 2026-10-22 08:06 | inspector | fable-5-1 | 983 | 210.1k | 31.6k | 66 | 0 min | ae3fc86d |
