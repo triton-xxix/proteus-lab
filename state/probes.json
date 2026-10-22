@@ -1,5 +1,5 @@
 {
- "next_id": 193,
+ "next_id": 194,
  "items": [
   {
    "id": "P-0001",
@@ -4623,6 +4623,32 @@
   {
    "id": "P-0192",
    "title": "Fresh install today of the four W39 tools (reladraw from npm, golive@alpha from npm, magpie HEAD tarball, hyperframes-student-kit tarball) and the same P-0012 checks: do today's registry versions give the September answers",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-22",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-22T12:37:09+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "fresh installs give the September answers in 4 of 4; at least one version bumped since 26 Sep (reladraw past 0.5.0 or hyperframes past 0.7.109), hyperframes the likeliest to differ",
+    "at": "2026-10-22T12:37:26+0100"
+   }
+  },
+  {
+   "id": "P-0193",
+   "title": "P-0191 out of sample: PACF lags 1-10 of daily returns for the 9 systems-book ETFs on the prior 2y window (Yahoo range=5y, keep 2022-10 to 2024-10): does lag 3 stay outside the 95% band in 4 of 9 and lag 1 stay negative in all 9",
    "source": "desk",
    "needs": "",
    "after": "",
