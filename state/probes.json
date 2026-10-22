@@ -1,5 +1,5 @@
 {
- "next_id": 197,
+ "next_id": 198,
  "items": [
   {
    "id": "P-0001",
@@ -4743,6 +4743,28 @@
    ],
    "minutes": 2,
    "calls": 35,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0197",
+   "title": "Graduation watcher mint check: how many closed.jsonl rows carry a quote token (USDC EPjFWdd5, wSOL So111) as the mint, by window, read without opening P or exits",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 10,
+   "added": "2026-10-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-22T23:47:24+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-22T23:47:50+0100",
+   "note": "USDC is the mint on 5 of 22,263 watcher rows, all passing the G2 counted filter (3 of 882 counted G2 trades, 0.3%); two other mints I believe are wrapped BTC and ETH recur 3 and 2 times among G2 counted; wSOL and USDT never. The watcher sometimes takes a pool's established side as the token; P-0159 should report these as a stated exclusion.",
+   "artefacts": [
+    "experiments/2026-10-22-P-0197"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

@@ -1,0 +1,84 @@
+{
+ "fields_seen": [
+  "A_move",
+  "A_stale",
+  "B_move",
+  "B_stale",
+  "D_move",
+  "D_stale",
+  "P_move",
+  "P_stale",
+  "block_t",
+  "entry",
+  "entry_t",
+  "latency_s",
+  "liq",
+  "max",
+  "min",
+  "mint",
+  "n_samples",
+  "sig"
+ ],
+ "by_window": {
+  "before G2": {
+   "rows": 3543,
+   "counted_g2": 243,
+   "USDC": 2,
+   "USDC counted": 2
+  },
+  "G2 window one": {
+   "rows": 11559,
+   "counted_g2": 623,
+   "USDC": 1,
+   "USDC counted": 1
+  },
+  "G2 window two": {
+   "rows": 7161,
+   "counted_g2": 259,
+   "USDC": 2,
+   "USDC counted": 2
+  }
+ },
+ "g2_counted_mints_seen_more_than_once": [
+  [
+   "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+   3,
+   ""
+  ],
+  [
+   "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   3,
+   "USDC"
+  ],
+  [
+   "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+   2,
+   ""
+  ],
+  [
+   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+   2,
+   ""
+  ],
+  [
+   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+   2,
+   ""
+  ],
+  [
+   "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+   2,
+   ""
+  ],
+  [
+   "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+   2,
+   ""
+  ],
+  [
+   "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+   2,
+   ""
+  ]
+ ]
+}
