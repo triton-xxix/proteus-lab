@@ -1,0 +1,42 @@
+{
+  "2HHB": {
+    "atoms": 1112,
+    "residues": 142,
+    "chain": "A",
+    "read_s": 0.03,
+    "motion_s_96_frames": 0.14,
+    "bond_strain_p99_A": 0.194,
+    "bond_strain_max_A": 0.617,
+    "rms_displacement_A_mean": 0.921,
+    "report": {
+      "nodes": 141,
+      "stride": 1,
+      "cutoff_A": 15.0,
+      "modes": 30,
+      "node_rmsf_A": 0.8,
+      "turning_residues": 106,
+      "riders": 1,
+      "periodic": false
+    }
+  },
+  "9GO1": {
+    "atoms": 2321,
+    "residues": 295,
+    "chain": "A",
+    "read_s": 0.01,
+    "motion_s_96_frames": 0.31,
+    "bond_strain_p99_A": 0.138,
+    "bond_strain_max_A": 0.899,
+    "rms_displacement_A_mean": 0.942,
+    "report": {
+      "nodes": 294,
+      "stride": 1,
+      "cutoff_A": 15.0,
+      "modes": 30,
+      "node_rmsf_A": 0.8,
+      "turning_residues": 233,
+      "riders": 1,
+      "periodic": false
+    }
+  }
+}
