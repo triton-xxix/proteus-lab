@@ -243,21 +243,24 @@
    "after": "2026-10-22",
    "est_minutes": 30,
    "added": "2026-09-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-22T12:31:39+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-22T12:34:57+0100",
+   "note": "Measured 4 of 4 W39 tools still clean v shot 3 of 4 (verdict hit, number missed by one). reladraw 0.5.0 same sha c3640837d2a41250 as 26 Sep, deterministic; magpie 9 of 9 cases byte-identical; golive alpha.4 rc 0,0,2,0,1 same as Sept, detect names the stack, bare apply refuses; hyperframes 0.7.109 lint 0 errors, draft render 19.5 s v 60.1 s in Sept (warm cache, same version), 240 frames h264 1080p 8.0 s. Caveat: pinned sandbox copies, not a fresh install from today registries. First pass wrongly flagged golive from a 300-char tail check, fixed and re-run. Next: deepen (fresh install of the four from today npm and GitHub, same checks).",
+   "artefacts": [
+    "experiments/2026-10-22-P-0012"
+   ],
+   "minutes": 3,
+   "calls": 21,
    "denied": [],
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "3 of the 4 W39 tools (hyperframes-student-kit, reladraw, magpie, golive-skill) still run cleanly a month on; the hyperframes render is the likely drift",
-    "at": "2026-10-22T12:32:03+0100"
+    "at": "2026-10-22T12:32:03+0100",
+    "hit": true
    }
   },
   {

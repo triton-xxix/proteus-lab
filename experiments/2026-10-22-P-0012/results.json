@@ -1,0 +1,118 @@
+{
+  "reladraw": {
+    "render_1": {
+      "rc": 0,
+      "secs": 0.3,
+      "sha": "c3640837d2a41250",
+      "well_formed": true
+    },
+    "render_2": {
+      "rc": 0,
+      "secs": 0.3,
+      "sha": "c3640837d2a41250",
+      "well_formed": true
+    },
+    "sept_sha": "c3640837d2a41250",
+    "deterministic": true,
+    "same_as_sept": true,
+    "version": "p0020@ /Users/triton/PROTEUS/sandbox/reladraw\n\u2514\u2500\u2500 reladraw@0.5.0",
+    "clean": true,
+    "wall_secs": 1.6
+  },
+  "magpie": {
+    "go_test": {
+      "rc": 0,
+      "secs": 1.7,
+      "tail": "ok  \tgithub.com/yetone/magpie/internal/edit\t0.545s\n"
+    },
+    "cases_total": 9,
+    "cases_identical_to_sept": 9,
+    "differences": [],
+    "clean": true,
+    "wall_secs": 1.7
+  },
+  "golive": {
+    "version": {
+      "rc": 0,
+      "secs": 0.5,
+      "rc_sept": 0,
+      "tail": "\": {\n      \"repository\": \"https://github.com/mikehasa/golive-skill\",\n      \"ref\": \"v0.1.0-alpha.4\"\n    },\n    \"node\": \">=20\",\n    \"schemas\": {\n      \"config\": 1,\n      \"state\": 1,\n      \"approval\": 1\n    },\n    \"bundleDigest\": \"494419264fc0ddf1ac849cf8eb7120a96b07666fe4450a6f11cdc14e50c4d19a\"\n  }\n}\n"
+    },
+    "detect": {
+      "rc": 0,
+      "secs": 0.6,
+      "rc_sept": 0,
+      "tail": "  \"clientExposed\": false\n      },\n      {\n        \"name\": \"STRIPE_SECRET_KEY\",\n        \"key\": \"stripe.secretKey\",\n        \"clientExposed\": false\n      }\n    ],\n    \"unmapped\": []\n  },\n  \"findings\": [],\n  \"suggestedStack\": {\n    \"db\": \"supabase\",\n    \"payments\": \"stripe\",\n    \"email\": \"resend\"\n  }\n}\n"
+    },
+    "doctor": {
+      "rc": 2,
+      "secs": 0.6,
+      "rc_sept": 2,
+      "tail": "rt RESEND_API_KEY in the shell you launch your coding agent from, then restart the agent.) Then re-run golive.\"\n    }\n  ],\n  \"credentials\": {\n    \"path\": \"/Users/triton/PROTEUS/sandbox/golive-probe/fakehome/.config/golive/credentials\",\n    \"exists\": false,\n    \"private\": null,\n    \"names\": []\n  }\n}\n"
+    },
+    "plan": {
+      "rc": 0,
+      "secs": 0.6,
+      "rc_sept": 0,
+      "tail": "an` again.\",\n    \"Stripe access could not be verified: its steps are left out of this plan. Follow the account handoff, then run `plan` again.\",\n    \"Resend access could not be verified: its steps are left out of this plan. Follow the account handoff, then run `plan` again.\"\n  ],\n  \"findings\": []\n}\n"
+    },
+    "apply_bare": {
+      "rc": 1,
+      "secs": 0.6,
+      "rc_sept": 1,
+      "tail": "ok: false\nerror:\n  code: usage\n  message: apply needs --plan <planId> (from `plan` or `teardown`, approved by the human)\n"
+    },
+    "steps_same_rc_as_sept": "5 of 5",
+    "detect_names_stack": true,
+    "apply_refused": true,
+    "clean": true,
+    "wall_secs": 2.9
+  },
+  "hyperframes": {
+    "sept": {
+      "fetch": {
+        "rc": 0,
+        "secs": 68.6
+      },
+      "install": {
+        "rc": 0,
+        "secs": 6.7
+      },
+      "demo": {
+        "rc": 0,
+        "secs": 0.8
+      },
+      "lint": {
+        "rc": 0,
+        "secs": 5.9
+      },
+      "render": {
+        "rc": 0,
+        "secs": 60.1
+      },
+      "ffprobe": {
+        "rc": 0,
+        "secs": 0.1
+      }
+    },
+    "demo_dir_present": true,
+    "version": {
+      "rc": 0,
+      "out": "0.7.109"
+    },
+    "lint": {
+      "rc": 0,
+      "secs": 2.0,
+      "tail": "\u25c6  Linting demo/index.html\n\n\u25c7  0 errors, 0 warnings\n"
+    },
+    "render": {
+      "rc": 0,
+      "secs": 19.5,
+      "tail": "er:trace] {\"renderJobId\":\"25dee9b0-5fe8-4bf3-903c-092a3d445dba\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":16966,\"durationMs\":83,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":5,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"25dee9b0-5fe8-4bf3-903c-092a3d445dba\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":16972,\"message\":\"artifact validated\",\"totalElapsedMs\":16967}\n"
+    },
+    "ffprobe": "{\n    \"programs\": [\n\n    ],\n    \"stream_groups\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"h264\",\n            \"width\": 1920,\n            \"height\": 1080\n        }\n    ],\n    \"format\": {\n        \"duration\": \"8.000000\",\n        \"size\": \"1262644\"\n    }\n}\n",
+    "clean": true,
+    "wall_secs": 23.5
+  },
+  "still_clean": 4
+}

@@ -1,0 +1,47 @@
+{
+ "replace_nested": {
+  "op": "set",
+  "path": "env.ANTHROPIC_BASE_URL",
+  "value": "http://127.0.0.1:3425"
+ },
+ "replace_top": {
+  "op": "set",
+  "path": "model",
+  "value": "kimi-k2"
+ },
+ "insert_into_existing": {
+  "op": "set",
+  "path": "env.ANTHROPIC_MODEL",
+  "value": "deepseek-chat"
+ },
+ "insert_new_parent": {
+  "op": "set",
+  "path": "magpie.enabled",
+  "value": true
+ },
+ "replace_scalar_with_object": {
+  "op": "set",
+  "path": "model.name",
+  "value": "x"
+ },
+ "replace_in_tab_block": {
+  "op": "set",
+  "path": "statusLine.type",
+  "value": "static"
+ },
+ "delete_member": {
+  "op": "del",
+  "path": "env.DISABLE_TELEMETRY",
+  "value": null
+ },
+ "delete_last_member": {
+  "op": "del",
+  "path": "permissions.deny",
+  "value": null
+ },
+ "key_with_wildcard": {
+  "op": "set",
+  "path": "env.WEIRD?KEY",
+  "value": "v"
+ }
+}

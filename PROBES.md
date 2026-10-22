@@ -7,13 +7,12 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 136 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 137 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
-| P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | field-notes | none | 2026-10-22 | 1 (in progress) | 30 min |
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
@@ -22,10 +21,11 @@ Verdicts so far: 136 works, 5 broken, 26 blocked, 12 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0191 | Kaggle Time Series lesson 4 (partial autocorrelation picks lags) on the systems book: PACF of daily returns for the 9 index ETFs, Yahoo 2y bars as systems.py fetches them; count lags 1-10 outside the 95% band per ETF, and test whether lag 1 is negative (the mean reversion RSI(5) and IBS bet on) | refill | none |  | 0 | 25 min |
 
-## Verdicts (179)
+## Verdicts (180)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-22 | P-0012 | Which of this month's AI builder tools from Field Notes still run cleanly a month later | **works** | Measured 4 of 4 W39 tools still clean v shot 3 of 4 (verdict hit, number missed by one). reladraw 0.5.0 same sha c3640837d2a41250 as 26 Sep, deterministic; magpie 9 of 9 cases byte-identical; golive alpha.4 rc 0,0,2,0,1 same as Sept, detect names the stack, bare apply refuses; hyperframes 0.7.109 lint 0 errors, draft render 19.5 s v 60.1 s in Sept (warm cache, same version), 240 frames h264 1080p 8.0 s. Caveat: pinned sandbox copies, not a fresh install from today registries. First pass wrongly flagged golive from a 300-char tail check, fixed and re-run. Next: deepen (fresh install of the four from today npm and GitHub, same checks). | `experiments/2026-10-22-P-0012` | 3 min, 21 calls, 0 denied |
 | 2026-10-20 | P-0190 | Bayesian credible intervals (Bayesian Methods for Hackers ch2, A/B true frequency): what do the exchange book's edge and systems book 2's win rate look like as posteriors, and how likely is each to beat its bar? | **works** | Exchange book: 10 of 11 scored calls worse than the market; posterior mean edge +0.058 to +0.149 Brier (90 pct), P(I beat the market) 0.001. Systems book 2 at 1 of 4: P(win rate at least 0.65) 0.05 on a flat prior, 0.26 on a backtest prior, so four trades decide nothing. | `experiments/2026-10-20-P-0190` | 0 min, 4 calls, 0 denied |
 | 2026-10-20 | P-0189 | SPY day-state Markov chain (QuantEcon finite Markov lecture): does yesterday's down, flat or up day shift today's odds beyond a shuffled-day control, 2006 to 2026? | **works** | SPY 2006-2026, 5,231 days in three states: the fitted chain's stationary distribution matches observed shares; yesterday's state matters (dependence 0.058 v shuffled 99th pct 0.020, p 0.0005, both decades), mostly volatility clustering, with up-minus-down +0.113 after a down day v +0.065 overall. | `experiments/2026-10-20-P-0189` | 0 min, 6 calls, 0 denied |
 | 2026-10-20 | P-0188 | DVSA MOT data: is the EV fail rate lower than petrol at 90k to 120k miles, and by how many points? | **works** | December 2025 DVSA MOT results streamed over range requests (2.75m tests): at 90k to 120k miles EVs fail 19.3 pct against petrol 41.8 pct, and 17.2 against 26.4 with both held to cars first used 2018 on; direction holds, but the trade body's 5.6-point gap and 22.1 pct petrol rate do not replicate on my fail definition (F or PRS). | `experiments/2026-10-20-P-0188` | 3 min, 24 calls, 0 denied |
