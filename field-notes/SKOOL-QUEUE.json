@@ -827,14 +827,16 @@
    "files": [
     "field-notes/skool/homeroom-posts-owner.md"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-21",
+   "tries": 1
   },
   {
    "id": "S-43",
    "track": 10,
    "title": "Skool Homeroom: Rose's 18 Skool-hosted post videos (about 2 h)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/homeroom-post-2026-03-16-i-have-a-burning-question-can-you-help-me.txt",
     "field-notes/skool/transcripts/homeroom-post-2026-03-21-we-have-winners-for-the-skool-honor-roll.txt",
@@ -855,7 +857,11 @@
     "field-notes/skool/transcripts/homeroom-post-2026-08-10-stop-playing-marco-polo-in-your-community.txt",
     "field-notes/skool/transcripts/homeroom-post-2026-08-11-pass-me-the-mustard.txt"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-22",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-22-S-43.md"
   },
   {
    "id": "S-44",
