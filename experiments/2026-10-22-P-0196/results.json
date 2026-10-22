@@ -1,0 +1,61 @@
+{
+  "lint": {
+    "rc": 1,
+    "secs": 1.6,
+    "tail": "\u25c6  Linting ad/index.html\n\n  \u2717 invalid_composition_variables_declaration: data-composition-variables entry [0] is missing or has invalid: label. Type must be one of string, number, color, boolean, enum, font, image.\n  \u2717 invalid_composition_variables_declaration: data-composition-variables entry [1] is missing or has invalid: label. Type must be one of string, number, color, boolean, enum, font, image.\n  \u2717 invalid_composition_variables_declaration: data-composition-variables entry [2] is missing or has invalid: label. Type must be one of string, number, color, boolean, enum, font, image.\n\n\u25c7  3 error(s), 0 warning(s)\n"
+  },
+  "default": {
+    "rc": 0,
+    "secs": 13.1,
+    "tail": "2-a876-33ac49daf8fa\",\"phase\":\"encode\",\"status\":\"start\",\"elapsedMs\":10907,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"f2898182-1630-42c2-a876-33ac49daf8fa\",\"phase\":\"encode\",\"status\":\"end\",\"elapsedMs\":11272,\"durationMs\":365,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"f2898182-1630-42c2-a876-33ac49daf8fa\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":11273,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"f2898182-1630-42c2-a876-33ac49daf8fa\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":11360,\"durationMs\":87,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"f2898182-1630-42c2-a876-33ac49daf8fa\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":11362,\"message\":\"artifact validated\",\"totalElapsedMs\":11360}\n"
+  },
+  "batch": {
+    "rc": 0,
+    "secs": 30.7,
+    "tail": "aa-4a44-aa74-07f63d503276\",\"phase\":\"encode\",\"status\":\"start\",\"elapsedMs\":8808,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"8e84a952-3baa-4a44-aa74-07f63d503276\",\"phase\":\"encode\",\"status\":\"end\",\"elapsedMs\":9405,\"durationMs\":597,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"8e84a952-3baa-4a44-aa74-07f63d503276\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":9405,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"8e84a952-3baa-4a44-aa74-07f63d503276\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":9498,\"durationMs\":92,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"8e84a952-3baa-4a44-aa74-07f63d503276\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":9501,\"message\":\"artifact validated\",\"totalElapsedMs\":9499}\n"
+  },
+  "html_unchanged": true,
+  "outputs": {
+    "default.mp4": {
+      "bytes": 83504,
+      "duration": "3.000000",
+      "frame_sha": "a4016b775df648d1",
+      "stripe_rgb": [
+        184,
+        240,
+        123
+      ]
+    },
+    "row-0.mp4": {
+      "bytes": 84658,
+      "duration": "3.000000",
+      "frame_sha": "84724da4d19ec7d2",
+      "stripe_rgb": [
+        252,
+        121,
+        56
+      ]
+    },
+    "row-1.mp4": {
+      "bytes": 97662,
+      "duration": "3.000000",
+      "frame_sha": "eadcbabb172d6a79",
+      "stripe_rgb": [
+        59,
+        175,
+        251
+      ]
+    },
+    "row-2.mp4": {
+      "bytes": 86175,
+      "duration": "3.000000",
+      "frame_sha": "3f3db675c70e2032",
+      "stripe_rgb": [
+        176,
+        106,
+        254
+      ]
+    }
+  },
+  "distinct_frames": 4
+}
