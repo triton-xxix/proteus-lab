@@ -4657,22 +4657,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-22",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-22T12:41:24+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-22T12:42:36+0100",
+   "note": "Measured on 2022-10 to 2024-10: lag 3 outside the 95% band in 0 of 9 (shot 1 of 9) with mean PACF3 flipped to +0.009 from -0.067 live; lag 1 negative in 7 of 9 (shot 6 of 9), mean -0.026 v -0.062 live, 0 of 9 outside the band, the four US ETFs at zero. Prior window has its own one-window lag (6 in EFA, EEM, EWU, EWG) that the live window lacks. Lag 3 was a one-window artefact, as a basket of correlated series produces by itself; lag 1 mean reversion is present but weak and stronger in 2024-26 than 2022-24. Same 5y pull reproduces P-0191 live numbers, split checked. Next: close (two windows answered the lag-3 question; a rolling lag-1 PACF would be a new probe only if the systems book stalls).",
+   "artefacts": [
+    "experiments/2026-10-22-P-0193"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "on 2022-10 to 2024-10 lag 3 is outside the 95% band in 1 of 9 ETFs (chance, it does not hold) and lag 1 is negative in 6 of 9",
-    "at": "2026-10-22T12:41:32+0100"
+    "at": "2026-10-22T12:41:32+0100",
+    "hit": true
    }
   }
  ]
