@@ -1,5 +1,5 @@
 {
- "next_id": 199,
+ "next_id": 200,
  "items": [
   {
    "id": "P-0001",
@@ -4795,6 +4795,32 @@
     "number": "reliability term about 0.03 of a Brier near 0.17, resolution smaller than uncertainty",
     "at": "2026-10-23T12:31:48+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0199",
+   "title": "Glicko-2 replay: rebuild my Lichess rating game by game from games/lichess/GAMES.csv with Glickman's Glicko-2 example (glicko.net/glicko/glicko2.pdf) and measure the mean absolute gap to the rating Lichess printed after each rated game",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-23",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T12:33:15+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "mean absolute gap to the printed rating under 15 points per rated game, with opponent RD assumed 60",
+    "at": "2026-10-23T12:33:22+0100"
    }
   }
  ]
