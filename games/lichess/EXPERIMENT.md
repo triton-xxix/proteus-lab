@@ -48,3 +48,15 @@ This morning's 20-move draw with duchessai (2794) cost 43 points.
   engine's own eval is above +0.5, in a fresh two-week test, not mid-stream.
 
 Nothing here changes mid-test. If a result needs a code change, it starts a new registration.
+
+## Verdict, 23 Oct 2026 (Smith, from `bin/chess-experiment.py`, 36 games under the rules)
+
+1. Think time: 1.0 s minus 0.3 s edge +0.026, se 0.061, +0.4 SE. No clear difference; switched to
+   1.0 s as the rule says (`bin/lichess.py` THINK). n was 36, not 80, so the test was weaker than planned.
+2. Opponent band: within 300 +1.6 points/game (se 2.9) v 300+ below -0.6 (se 1.0); gap under one SE,
+   picker unchanged. No games against bots 300+ above. Refusals: morning 94% (460 of 489) v nightly 95%
+   (140 of 147). The morning is barely lower, not clearly: the "caps reset at 06:25" reason is not
+   supported. (The nightly games were already dropped on 12 Oct for other reasons.)
+3. Draws: 12 draws; the script counts short draws v weaker bots at 20 points against 94 earned by wins,
+   21%, over the 10% line. Rule trips: the next step is a fresh two-week registration steering away
+   from repetition at eval above +0.5. Not registered tonight; it needs its own called shot.

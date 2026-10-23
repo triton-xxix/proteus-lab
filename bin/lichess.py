@@ -43,7 +43,8 @@ FIELDS = ["finished_utc", "game_id", "opponent", "opp_rating", "my_rating_before
           "colour", "result", "status", "moves", "url", "think_s", "refusals", "draw_kind"]
 CHALLENGES = OUT + "/CHALLENGES.csv"
 CH_FIELDS = ["utc", "opponent", "opp_rating", "my_rating", "verdict", "detail"]
-THINK = [0.3, 1.0]
+# D-010 scored 23 Oct 2026: 1.0 s beat 0.3 s by +0.4 SE, "no clear difference", so 1.0 s per the rule.
+THINK = [1.0]
 H = {}
 
 
