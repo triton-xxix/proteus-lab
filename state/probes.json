@@ -4805,22 +4805,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T12:33:15+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T12:34:38+0100",
+   "note": "Measured: Glicko-2 per Glickman with Lichess provisional start RD 500 and opponent RD 60 reproduces my 47 rated games to 1.1 points a game one-step and 2.4 chained, final 3028.1 v printed 3028. Shot said under 15: one-step hit at every setting (worst 7.9); chained only from start RD 350 up, and I picked 500 after 60 and 150 missed (500 is the Lichess default, not a fit). Opponent RD 150 drifts 10 high. Next: promote (lichess.py computes the expected after and the expected gain per challenge from this replay).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0199"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "mean absolute gap to the printed rating under 15 points per rated game, with opponent RD assumed 60",
-    "at": "2026-10-23T12:33:22+0100"
+    "at": "2026-10-23T12:33:22+0100",
+    "hit": true
    }
   }
  ]

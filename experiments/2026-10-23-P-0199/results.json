@@ -1,0 +1,621 @@
+{
+ "games": 47,
+ "chain_breaks_in_csv": 0,
+ "runs": {
+  "opp_rd 45, start_rd 60": {
+   "n": 47,
+   "one_step_mae": 7.81,
+   "chained_mae": 28.0,
+   "final_chained": 3015.2,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 45, start_rd 150": {
+   "n": 47,
+   "one_step_mae": 5.19,
+   "chained_mae": 16.79,
+   "final_chained": 3023.4,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 45, start_rd 350": {
+   "n": 47,
+   "one_step_mae": 1.85,
+   "chained_mae": 5.02,
+   "final_chained": 3026.9,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 45, start_rd 500": {
+   "n": 47,
+   "one_step_mae": 1.03,
+   "chained_mae": 2.49,
+   "final_chained": 3027.2,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 60, start_rd 60": {
+   "n": 47,
+   "one_step_mae": 7.81,
+   "chained_mae": 27.81,
+   "final_chained": 3015.6,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 60, start_rd 150": {
+   "n": 47,
+   "one_step_mae": 5.19,
+   "chained_mae": 16.35,
+   "final_chained": 3024.1,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 60, start_rd 350": {
+   "n": 47,
+   "one_step_mae": 1.86,
+   "chained_mae": 4.72,
+   "final_chained": 3027.8,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.957
+  },
+  "opp_rd 60, start_rd 500": {
+   "n": 47,
+   "one_step_mae": 1.09,
+   "chained_mae": 2.42,
+   "final_chained": 3028.1,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.957
+  },
+  "opp_rd 150, start_rd 60": {
+   "n": 47,
+   "one_step_mae": 7.88,
+   "chained_mae": 25.72,
+   "final_chained": 3019.9,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.979
+  },
+  "opp_rd 150, start_rd 150": {
+   "n": 47,
+   "one_step_mae": 5.26,
+   "chained_mae": 12.93,
+   "final_chained": 3032.1,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.957
+  },
+  "opp_rd 150, start_rd 350": {
+   "n": 47,
+   "one_step_mae": 2.2,
+   "chained_mae": 9.55,
+   "final_chained": 3037.8,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.957
+  },
+  "opp_rd 150, start_rd 500": {
+   "n": 47,
+   "one_step_mae": 1.75,
+   "chained_mae": 9.29,
+   "final_chained": 3038.4,
+   "final_printed": 3028.0,
+   "sign_agreement": 0.957
+  }
+ },
+ "detail_opp60_start150": [
+  {
+   "game": "UmxnuFAD",
+   "result": "win",
+   "opp": 2782,
+   "printed_before": 3000.0,
+   "printed_after": 3129.0,
+   "printed_delta": 129.0,
+   "one_step_delta": 25.6,
+   "chained": 3025.6,
+   "rd": 141.7
+  },
+  {
+   "game": "M6nGUrlK",
+   "result": "win",
+   "opp": 1251,
+   "printed_before": 3129.0,
+   "printed_after": 3129.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3025.6,
+   "rd": 142.2
+  },
+  {
+   "game": "6fLHrF2B",
+   "result": "win",
+   "opp": 1134,
+   "printed_before": 3129.0,
+   "printed_after": 3129.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3025.6,
+   "rd": 142.6
+  },
+  {
+   "game": "Cvcig4GO",
+   "result": "win",
+   "opp": 1093,
+   "printed_before": 3129.0,
+   "printed_after": 3129.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3025.6,
+   "rd": 142.9
+  },
+  {
+   "game": "nhMf8XUZ",
+   "result": "draw",
+   "opp": 2990,
+   "printed_before": 3129.0,
+   "printed_after": 3057.0,
+   "printed_delta": -72.0,
+   "one_step_delta": -19.0,
+   "chained": 3020.6,
+   "rd": 133.0
+  },
+  {
+   "game": "F7SaoXM6",
+   "result": "draw",
+   "opp": 2996,
+   "printed_before": 3057.0,
+   "printed_after": 3041.0,
+   "printed_delta": -16.0,
+   "one_step_delta": -7.6,
+   "chained": 3017.5,
+   "rd": 124.9
+  },
+  {
+   "game": "41e2YbAx",
+   "result": "draw",
+   "opp": 2993,
+   "printed_before": 3041.0,
+   "printed_after": 3032.0,
+   "printed_delta": -9.0,
+   "one_step_delta": -5.3,
+   "chained": 3014.8,
+   "rd": 118.2
+  },
+  {
+   "game": "HQz6HAtS",
+   "result": "win",
+   "opp": 1774,
+   "printed_before": 3032.0,
+   "printed_after": 3032.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.1,
+   "chained": 3014.9,
+   "rd": 118.8
+  },
+  {
+   "game": "l6FpyJfn",
+   "result": "draw",
+   "opp": 2794,
+   "printed_before": 3032.0,
+   "printed_after": 2989.0,
+   "printed_delta": -43.0,
+   "one_step_delta": -22.0,
+   "chained": 2994.2,
+   "rd": 114.9
+  },
+  {
+   "game": "h1lCzzOr",
+   "result": "win",
+   "opp": 2651,
+   "printed_before": 2989.0,
+   "printed_after": 3006.0,
+   "printed_delta": 17.0,
+   "one_step_delta": 9.2,
+   "chained": 3003.2,
+   "rd": 112.7
+  },
+  {
+   "game": "4Bhsh6cb",
+   "result": "win",
+   "opp": 2446,
+   "printed_before": 3006.0,
+   "printed_after": 3011.0,
+   "printed_delta": 5.0,
+   "one_step_delta": 2.9,
+   "chained": 3006.2,
+   "rd": 112.3
+  },
+  {
+   "game": "a0w0GeDj",
+   "result": "win",
+   "opp": 2876,
+   "printed_before": 3011.0,
+   "printed_after": 3046.0,
+   "printed_delta": 35.0,
+   "one_step_delta": 21.0,
+   "chained": 3027.6,
+   "rd": 108.1
+  },
+  {
+   "game": "yo3jf6ye",
+   "result": "draw",
+   "opp": 3009,
+   "printed_before": 3046.0,
+   "printed_after": 3039.0,
+   "printed_delta": -7.0,
+   "one_step_delta": -3.2,
+   "chained": 3026.0,
+   "rd": 103.9
+  },
+  {
+   "game": "wEKPfaym",
+   "result": "draw",
+   "opp": 3012,
+   "printed_before": 3039.0,
+   "printed_after": 3034.0,
+   "printed_delta": -5.0,
+   "one_step_delta": -2.2,
+   "chained": 3024.9,
+   "rd": 100.1
+  },
+  {
+   "game": "uYobIIMC",
+   "result": "draw",
+   "opp": 3012,
+   "printed_before": 3034.0,
+   "printed_after": 3033.0,
+   "printed_delta": -1.0,
+   "one_step_delta": -1.6,
+   "chained": 3023.9,
+   "rd": 96.8
+  },
+  {
+   "game": "nLqpqPk9",
+   "result": "draw",
+   "opp": 2989,
+   "printed_before": 3033.0,
+   "printed_after": 3030.0,
+   "printed_delta": -3.0,
+   "one_step_delta": -3.1,
+   "chained": 3021.4,
+   "rd": 94.0
+  },
+  {
+   "game": "G0Z8JmBR",
+   "result": "draw",
+   "opp": 2868,
+   "printed_before": 3030.0,
+   "printed_after": 3015.0,
+   "printed_delta": -15.0,
+   "one_step_delta": -10.2,
+   "chained": 3011.7,
+   "rd": 91.9
+  },
+  {
+   "game": "xSPp3Efy",
+   "result": "win",
+   "opp": 2777,
+   "printed_before": 3015.0,
+   "printed_after": 3027.0,
+   "printed_delta": 12.0,
+   "one_step_delta": 9.6,
+   "chained": 3021.4,
+   "rd": 90.5
+  },
+  {
+   "game": "fHzdwCnk",
+   "result": "win",
+   "opp": 2782,
+   "printed_before": 3027.0,
+   "printed_after": 3039.0,
+   "printed_delta": 12.0,
+   "one_step_delta": 9.0,
+   "chained": 3030.6,
+   "rd": 89.2
+  },
+  {
+   "game": "DYOTjAST",
+   "result": "win",
+   "opp": 2789,
+   "printed_before": 3039.0,
+   "printed_after": 3049.0,
+   "printed_delta": 10.0,
+   "one_step_delta": 8.6,
+   "chained": 3039.5,
+   "rd": 88.0
+  },
+  {
+   "game": "CMzcXaJE",
+   "result": "win",
+   "opp": 1280,
+   "printed_before": 3049.0,
+   "printed_after": 3049.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3039.5,
+   "rd": 88.7
+  },
+  {
+   "game": "LrVPTNTn",
+   "result": "win",
+   "opp": 1163,
+   "printed_before": 3049.0,
+   "printed_after": 3049.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3039.5,
+   "rd": 89.3
+  },
+  {
+   "game": "cZjkWB2m",
+   "result": "win",
+   "opp": 1104,
+   "printed_before": 3049.0,
+   "printed_after": 3049.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3039.5,
+   "rd": 89.9
+  },
+  {
+   "game": "NBPMiQLF",
+   "result": "draw",
+   "opp": 3015,
+   "printed_before": 3049.0,
+   "printed_after": 3047.0,
+   "printed_delta": -2.0,
+   "one_step_delta": -2.1,
+   "chained": 3038.0,
+   "rd": 87.7
+  },
+  {
+   "game": "zha1DqJl",
+   "result": "draw",
+   "opp": 3019,
+   "printed_before": 3047.0,
+   "printed_after": 3046.0,
+   "printed_delta": -1.0,
+   "one_step_delta": -1.6,
+   "chained": 3036.9,
+   "rd": 85.7
+  },
+  {
+   "game": "mPEN9pM0",
+   "result": "loss",
+   "opp": 3016,
+   "printed_before": 3046.0,
+   "printed_after": 3022.0,
+   "printed_delta": -24.0,
+   "one_step_delta": -21.6,
+   "chained": 3015.8,
+   "rd": 83.9
+  },
+  {
+   "game": "T9U8AAOT",
+   "result": "win",
+   "opp": 2836,
+   "printed_before": 3022.0,
+   "printed_after": 3033.0,
+   "printed_delta": 11.0,
+   "one_step_delta": 10.0,
+   "chained": 3026.1,
+   "rd": 82.8
+  },
+  {
+   "game": "Rcs7cSRx",
+   "result": "draw",
+   "opp": 2582,
+   "printed_before": 3033.0,
+   "printed_after": 3015.0,
+   "printed_delta": -18.0,
+   "one_step_delta": -16.6,
+   "chained": 3009.6,
+   "rd": 82.8
+  },
+  {
+   "game": "hR1dEhx2",
+   "result": "win",
+   "opp": 2590,
+   "printed_before": 3015.0,
+   "printed_after": 3018.0,
+   "printed_delta": 3.0,
+   "one_step_delta": 3.2,
+   "chained": 3012.9,
+   "rd": 82.8
+  },
+  {
+   "game": "bK8NBxh0",
+   "result": "draw",
+   "opp": 3003,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": -0.8,
+   "chained": 3012.4,
+   "rd": 81.3
+  },
+  {
+   "game": "Tpfxmsti",
+   "result": "draw",
+   "opp": 3003,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": -0.8,
+   "chained": 3011.9,
+   "rd": 79.9
+  },
+  {
+   "game": "zwTbn59p",
+   "result": "draw",
+   "opp": 3003,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": -0.7,
+   "chained": 3011.5,
+   "rd": 78.5
+  },
+  {
+   "game": "3yTw0tzs",
+   "result": "win",
+   "opp": 1980,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.1,
+   "chained": 3011.6,
+   "rd": 79.5
+  },
+  {
+   "game": "aes8qyAd",
+   "result": "win",
+   "opp": 1654,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3011.6,
+   "rd": 80.6
+  },
+  {
+   "game": "3cQIZEIt",
+   "result": "win",
+   "opp": 1700,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3011.6,
+   "rd": 81.3
+  },
+  {
+   "game": "hMeKOUac",
+   "result": "draw",
+   "opp": 3010,
+   "printed_before": 3018.0,
+   "printed_after": 3017.0,
+   "printed_delta": -1.0,
+   "one_step_delta": -0.4,
+   "chained": 3011.5,
+   "rd": 79.9
+  },
+  {
+   "game": "5BUSDJUJ",
+   "result": "win",
+   "opp": 2258,
+   "printed_before": 3017.0,
+   "printed_after": 3017.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.5,
+   "chained": 3012.1,
+   "rd": 80.5
+  },
+  {
+   "game": "wjRNY2Ha",
+   "result": "win",
+   "opp": 2201,
+   "printed_before": 3017.0,
+   "printed_after": 3018.0,
+   "printed_delta": 1.0,
+   "one_step_delta": 0.4,
+   "chained": 3012.4,
+   "rd": 81.1
+  },
+  {
+   "game": "WdNa51ds",
+   "result": "win",
+   "opp": 2200,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.4,
+   "chained": 3012.8,
+   "rd": 81.8
+  },
+  {
+   "game": "5BnAFUZb",
+   "result": "win",
+   "opp": 2149,
+   "printed_before": 3018.0,
+   "printed_after": 3018.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.3,
+   "chained": 3013.1,
+   "rd": 82.4
+  },
+  {
+   "game": "vSy9joyq",
+   "result": "win",
+   "opp": 2759,
+   "printed_before": 3018.0,
+   "printed_after": 3025.0,
+   "printed_delta": 7.0,
+   "one_step_delta": 7.1,
+   "chained": 3020.3,
+   "rd": 81.7
+  },
+  {
+   "game": "nmMrVmK7",
+   "result": "win",
+   "opp": 2537,
+   "printed_before": 3025.0,
+   "printed_after": 3027.0,
+   "printed_delta": 2.0,
+   "one_step_delta": 2.3,
+   "chained": 3022.7,
+   "rd": 82.0
+  },
+  {
+   "game": "Jyu3vNdr",
+   "result": "win",
+   "opp": 2377,
+   "printed_before": 3027.0,
+   "printed_after": 3028.0,
+   "printed_delta": 1.0,
+   "one_step_delta": 0.9,
+   "chained": 3023.6,
+   "rd": 82.4
+  },
+  {
+   "game": "EbyX8abj",
+   "result": "win",
+   "opp": 2119,
+   "printed_before": 3028.0,
+   "printed_after": 3028.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.2,
+   "chained": 3023.9,
+   "rd": 83.0
+  },
+  {
+   "game": "FSbPi9IO",
+   "result": "win",
+   "opp": 2045,
+   "printed_before": 3028.0,
+   "printed_after": 3028.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.2,
+   "chained": 3024.0,
+   "rd": 83.7
+  },
+  {
+   "game": "mGZIjQAj",
+   "result": "win",
+   "opp": 1906,
+   "printed_before": 3028.0,
+   "printed_after": 3028.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.1,
+   "chained": 3024.1,
+   "rd": 84.4
+  },
+  {
+   "game": "yvdNBcef",
+   "result": "win",
+   "opp": 1757,
+   "printed_before": 3028.0,
+   "printed_after": 3028.0,
+   "printed_delta": 0.0,
+   "one_step_delta": 0.0,
+   "chained": 3024.1,
+   "rd": 85.0
+  }
+ ]
+}
