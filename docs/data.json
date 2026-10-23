@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-22 15:38 UTC",
- "commit": "a2db63b",
+ "built_at": "2026-10-23 08:06 UTC",
+ "commit": "e15ee1b",
  "input_blobs": {
-  "grinder/LEDGER.csv": "f7c464d69526d4688a821729cf37bc50e4af0be2",
+  "grinder/LEDGER.csv": "9acc26519db3c09fb69d955e0d18a8c2b1fde093",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
-  "pitch/PREDICTIONS.csv": "f25a959d6f31820014fa9695195ca88840bbe0aa",
+  "pitch/PREDICTIONS.csv": "bf1b592f35ff1991b6b5dcc65a39426ff4b6d6db",
   "state/spend.jsonl": null,
-  "state/probes.json": "89f39d7aae8f176af33a97c8d3bc0dcd08caf3b0",
+  "state/probes.json": "37eb924adc6a5b50e20628af5d0570e010f1a62f",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000",
@@ -52,14 +52,14 @@
   }
  },
  "pitch": {
-  "committed_before_kickoff": 176,
+  "committed_before_kickoff": 225,
   "committed_late_excluded": 0,
-  "scored": 56,
-  "paired": 56,
-  "brier_model": 0.6085,
-  "brier_market": 0.5839,
-  "brier_diff": 0.0246,
-  "clv_mean": 0.0707,
+  "scored": 57,
+  "paired": 57,
+  "brier_model": 0.613,
+  "brier_market": 0.591,
+  "brier_diff": 0.0219,
+  "clv_mean": 0.0691,
   "bankroll_now": 100.0
  },
  "field_notes": {
@@ -68,10 +68,10 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 183,
-  "works": 140,
+  "verdicts": 188,
+  "works": 144,
   "broken": 5,
-  "blocked": 26,
+  "blocked": 27,
   "not_worth_it": 12,
   "killed": 4,
   "killed_by_rule": 1,

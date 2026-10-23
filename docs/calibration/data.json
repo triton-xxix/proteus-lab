@@ -1,21 +1,21 @@
 {
- "built": "2026-10-22 08:07 UTC",
+ "built": "2026-10-23 08:06 UTC",
  "panels": [
   {
    "key": "model",
    "title": "The Pitch's model",
    "who": "Dixon-Coles model",
    "kind": "football, home/draw/away",
-   "rows": 56,
-   "pairs": 168,
-   "logged": 176,
-   "scored_any": 56,
-   "captured": 10,
+   "rows": 57,
+   "pairs": 171,
+   "logged": 225,
+   "scored_any": 57,
+   "captured": 11,
    "backfilled": 46,
-   "captured_me_minus_market": 0.0045,
-   "me_minus_market": 0.0228,
-   "me_brier": 0.6085,
-   "market_brier": 0.5857,
+   "captured_me_minus_market": -0.0064,
+   "me_minus_market": 0.0203,
+   "me_brier": 0.6129,
+   "market_brier": 0.5926,
    "bins": [
     {
      "lo": 0.0,
@@ -29,20 +29,20 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 107,
-     "mean_p": 0.3011,
-     "observed": 0.2804,
-     "lo95": 0.204,
-     "hi95": 0.372
+     "n": 109,
+     "mean_p": 0.3,
+     "observed": 0.2844,
+     "lo95": 0.2082,
+     "hi95": 0.3753
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 29,
-     "mean_p": 0.4683,
-     "observed": 0.6207,
-     "lo95": 0.44,
-     "hi95": 0.7731
+     "n": 30,
+     "mean_p": 0.4699,
+     "observed": 0.6,
+     "lo95": 0.4232,
+     "hi95": 0.7541
     },
     {
      "lo": 0.6,
@@ -67,29 +67,29 @@
     {
      "lo": 0.0,
      "hi": 0.2,
-     "n": 18,
-     "mean_p": 0.1661,
-     "observed": 0.1111,
-     "lo95": 0.031,
-     "hi95": 0.328
+     "n": 19,
+     "mean_p": 0.1666,
+     "observed": 0.1053,
+     "lo95": 0.0294,
+     "hi95": 0.3139
     },
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 107,
-     "mean_p": 0.2876,
-     "observed": 0.271,
-     "lo95": 0.1958,
-     "hi95": 0.3621
+     "n": 108,
+     "mean_p": 0.2871,
+     "observed": 0.2778,
+     "lo95": 0.202,
+     "hi95": 0.3688
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 34,
-     "mean_p": 0.481,
-     "observed": 0.5882,
-     "lo95": 0.4222,
-     "hi95": 0.7363
+     "n": 35,
+     "mean_p": 0.4842,
+     "observed": 0.5714,
+     "lo95": 0.4086,
+     "hi95": 0.7202
     },
     {
      "lo": 0.6,
@@ -109,13 +109,13 @@
    "title": "The model on over 2.5 goals",
    "who": "Dixon-Coles model",
    "kind": "football, over/under 2.5; yes/no",
-   "rows": 56,
-   "pairs": 56,
-   "logged": 176,
-   "captured": 10,
-   "me_minus_market": 0.0382,
-   "me_brier": 0.2824,
-   "market_brier": 0.2442,
+   "rows": 57,
+   "pairs": 57,
+   "logged": 225,
+   "captured": 11,
+   "me_minus_market": 0.0369,
+   "me_brier": 0.2819,
+   "market_brier": 0.245,
    "bins": [
     {
      "lo": 0.2,
@@ -129,11 +129,11 @@
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 32,
+     "n": 33,
      "mean_p": 0.5044,
-     "observed": 0.6562,
-     "lo95": 0.4831,
-     "hi95": 0.7959
+     "observed": 0.6364,
+     "lo95": 0.4662,
+     "hi95": 0.7781
     },
     {
      "lo": 0.6,
@@ -149,11 +149,11 @@
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 43,
-     "mean_p": 0.5254,
-     "observed": 0.5349,
-     "lo95": 0.3892,
-     "hi95": 0.6749
+     "n": 44,
+     "mean_p": 0.5256,
+     "observed": 0.5227,
+     "lo95": 0.3794,
+     "hi95": 0.6625
     },
     {
      "lo": 0.6,
@@ -389,22 +389,22 @@
    "title": "My exchange calls",
    "who": "me, one contract a night on Smarkets",
    "kind": "elections, weather, macro; yes/no",
-   "rows": 11,
-   "pairs": 11,
-   "logged": 25,
-   "settled_any": 16,
-   "me_minus_market": 0.1031,
-   "me_brier": 0.1341,
-   "market_brier": 0.0311,
+   "rows": 13,
+   "pairs": 13,
+   "logged": 27,
+   "settled_any": 19,
+   "me_minus_market": 0.0889,
+   "me_brier": 0.1217,
+   "market_brier": 0.0327,
    "bins": [
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 7,
-     "mean_p": 0.2757,
+     "n": 9,
+     "mean_p": 0.2656,
      "observed": 0.0,
      "lo95": 0.0,
-     "hi95": 0.3543
+     "hi95": 0.2992
     },
     {
      "lo": 0.4,
@@ -429,20 +429,20 @@
     {
      "lo": 0.0,
      "hi": 0.2,
-     "n": 5,
-     "mean_p": 0.0775,
+     "n": 6,
+     "mean_p": 0.0966,
      "observed": 0.0,
      "lo95": 0.0,
-     "hi95": 0.4345
+     "hi95": 0.3903
     },
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 2,
-     "mean_p": 0.2406,
+     "n": 3,
+     "mean_p": 0.2325,
      "observed": 0.0,
      "lo95": 0.0,
-     "hi95": 0.6576
+     "hi95": 0.5615
     },
     {
      "lo": 0.6,
