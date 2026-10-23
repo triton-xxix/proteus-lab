@@ -4863,9 +4863,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-23",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T23:36:43+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4873,7 +4873,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "about 95 percent of voiced frames within 50 cents on a synthetic harmonic melody with vibrato; failures at note boundaries",
+    "at": "2026-10-23T23:37:19+0100"
+   }
   },
   {
    "id": "P-0202",
