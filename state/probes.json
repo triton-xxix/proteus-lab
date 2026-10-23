@@ -4950,9 +4950,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-23",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T23:43:13+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4960,7 +4960,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "Markdown keeps 90 percent or more of the plain-fetch words on 3 of 3 pages, with the risk that the hosted endpoint wants a key and the verdict turns blocked",
+    "at": "2026-10-23T23:43:29+0100"
+   }
   }
  ]
 }
