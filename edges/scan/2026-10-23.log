@@ -1,0 +1,61 @@
+stock   ORB 5m, target 1R                              rungs 0  W1 {'n': 58, 'total_pct': -5.095, 'mean_pct': -0.0878, 'win_pct': 51.7, 'control_mean_pct': -0.0306, 'p': 0.697}
+stock   ORB 5m, target 2R                              rungs 0  W1 {'n': 58, 'total_pct': -1.761, 'mean_pct': -0.0304, 'win_pct': 41.4, 'control_mean_pct': -0.029, 'p': 0.51}
+stock   ORB 5m, target close                           rungs 2  W1 {'n': 58, 'total_pct': 0.097, 'mean_pct': 0.0017, 'win_pct': 37.9, 'control_mean_pct': -0.0231, 'p': 0.467}
+stock   ORB 15m, target 1R                             rungs 0  W1 {'n': 55, 'total_pct': -5.809, 'mean_pct': -0.1056, 'win_pct': 47.3, 'control_mean_pct': -0.0412, 'p': 0.7}
+stock   ORB 15m, target 2R                             rungs 0  W1 {'n': 55, 'total_pct': -3.874, 'mean_pct': -0.0704, 'win_pct': 43.6, 'control_mean_pct': -0.0242, 'p': 0.627}
+stock   ORB 15m, target close                          rungs 0  W1 {'n': 55, 'total_pct': -3.519, 'mean_pct': -0.064, 'win_pct': 43.6, 'control_mean_pct': -0.0411, 'p': 0.53}
+stock   ORB 30m, target 1R                             rungs 2  W1 {'n': 49, 'total_pct': 11.014, 'mean_pct': 0.2248, 'win_pct': 59.2, 'control_mean_pct': -0.0338, 'p': 0.057}
+stock   ORB 30m, target 2R                             rungs 2  W1 {'n': 49, 'total_pct': 7.943, 'mean_pct': 0.1621, 'win_pct': 53.1, 'control_mean_pct': -0.0245, 'p': 0.207}
+stock   ORB 30m, target close                          rungs 2  W1 {'n': 49, 'total_pct': 7.989, 'mean_pct': 0.163, 'win_pct': 53.1, 'control_mean_pct': -0.0239, 'p': 0.193}
+stock   ORB 15m fade (failed break)                    rungs 2  W1 {'n': 49, 'total_pct': 1.322, 'mean_pct': 0.027, 'win_pct': 24.5, 'control_mean_pct': -0.0294, 'p': 0.193}
+stock   ORB 30m fade (failed break)                    rungs 1  W1 {'n': 46, 'total_pct': 5.447, 'mean_pct': 0.1184, 'win_pct': 34.8, 'control_mean_pct': -0.0297, 'p': 0.013}
+stock   VWAP reversion 1.5 sd                          rungs 0  W1 {'n': 109, 'total_pct': -15.894, 'mean_pct': -0.1458, 'win_pct': 56.0, 'control_mean_pct': -0.0219, 'p': 0.887}
+stock   VWAP reversion 2 sd                            rungs 0  W1 {'n': 81, 'total_pct': -13.534, 'mean_pct': -0.1671, 'win_pct': 54.3, 'control_mean_pct': -0.025, 'p': 0.853}
+stock   VWAP reversion 2.5 sd                          rungs 0  W1 {'n': 54, 'total_pct': -9.457, 'mean_pct': -0.1751, 'win_pct': 53.7, 'control_mean_pct': -0.041, 'p': 0.77}
+stock   VWAP cross after 11:00, hold to close          rungs 0  W1 {'n': 45, 'total_pct': -3.27, 'mean_pct': -0.0727, 'win_pct': 51.1, 'control_mean_pct': -0.0307, 'p': 0.577}
+stock   VWAP cross after 11:00 with the gap            rungs 1  W1 {'n': 45, 'total_pct': 2.446, 'mean_pct': 0.0544, 'win_pct': 46.7, 'control_mean_pct': -0.0266, 'p': 0.333}
+stock   Gap fade 0.5%                                  rungs 0  W1 {'n': 35, 'total_pct': -4.498, 'mean_pct': -0.1285, 'win_pct': 60.0, 'control_mean_pct': -0.0236, 'p': 0.65}
+stock   Gap fade 1%                                    rungs 0  W1 {'n': 24, 'total_pct': -8.225, 'mean_pct': -0.3427, 'win_pct': 54.2, 'control_mean_pct': -0.0314, 'p': 0.803}
+stock   Gap fade 2%                                    rungs 0  W1 {'n': 12, 'total_pct': -8.177, 'mean_pct': -0.6814, 'win_pct': 41.7, 'control_mean_pct': -0.0263, 'p': 0.853}
+stock   Gap and go 0.5%                                rungs 1  W1 {'n': 35, 'total_pct': 11.052, 'mean_pct': 0.3158, 'win_pct': 42.9, 'control_mean_pct': -0.025, 'p': 0.13}
+stock   Gap and go 1%                                  rungs 1  W1 {'n': 24, 'total_pct': 8.734, 'mean_pct': 0.3639, 'win_pct': 41.7, 'control_mean_pct': -0.0511, 'p': 0.16}
+stock   Gap and go 2%                                  rungs 1  W1 {'n': 12, 'total_pct': 10.634, 'mean_pct': 0.8862, 'win_pct': 58.3, 'control_mean_pct': -0.003, 'p': 0.087}
+stock   RSI(2) 5m, 5/95                                rungs 0  W1 {'n': 224, 'total_pct': -8.229, 'mean_pct': -0.0367, 'win_pct': 54.0, 'control_mean_pct': -0.0303, 'p': 0.617}
+stock   RSI(2) 5m, 10/90                               rungs 0  W1 {'n': 240, 'total_pct': -15.083, 'mean_pct': -0.0628, 'win_pct': 53.8, 'control_mean_pct': -0.0282, 'p': 0.907}
+stock   RSI(2) 5m, 20/80                               rungs 0  W1 {'n': 240, 'total_pct': -16.044, 'mean_pct': -0.0669, 'win_pct': 57.5, 'control_mean_pct': -0.0288, 'p': 0.96}
+stock   RSI(2) 15m, 5/95                               rungs 0  W1 {'n': 100, 'total_pct': -4.405, 'mean_pct': -0.044, 'win_pct': 61.0, 'control_mean_pct': -0.0276, 'p': 0.603}
+stock   RSI(2) 15m, 10/90                              rungs 0  W1 {'n': 161, 'total_pct': -6.22, 'mean_pct': -0.0386, 'win_pct': 63.4, 'control_mean_pct': -0.0289, 'p': 0.603}
+stock   RSI(2) 15m, 20/80                              rungs 0  W1 {'n': 228, 'total_pct': -12.128, 'mean_pct': -0.0532, 'win_pct': 55.7, 'control_mean_pct': -0.0262, 'p': 0.81}
+stock   Bollinger 20/2 reversion                       rungs 0  W1 {'n': 173, 'total_pct': -2.789, 'mean_pct': -0.0161, 'win_pct': 55.5, 'control_mean_pct': -0.0297, 'p': 0.367}
+stock   Bollinger 20/2.5 reversion                     rungs 0  W1 {'n': 72, 'total_pct': -3.634, 'mean_pct': -0.0505, 'win_pct': 54.2, 'control_mean_pct': -0.0374, 'p': 0.597}
+stock   Bollinger 20/2 reversion, ADX under 20         rungs 1  W1 {'n': 45, 'total_pct': 1.962, 'mean_pct': 0.0436, 'win_pct': 62.2, 'control_mean_pct': -0.0255, 'p': 0.123}
+stock   First 30m direction into last 30m              rungs 0  W1 {'n': 60, 'total_pct': -6.727, 'mean_pct': -0.1121, 'win_pct': 30.0, 'control_mean_pct': -0.029, 'p': 0.95}
+stock   First 60m direction into last 60m              rungs 0  W1 {'n': 60, 'total_pct': -9.663, 'mean_pct': -0.161, 'win_pct': 26.7, 'control_mean_pct': -0.0307, 'p': 0.98}
+stock   Morning direction into the afternoon           rungs 3  W1 {'n': 60, 'total_pct': 0.543, 'mean_pct': 0.009, 'win_pct': 43.3, 'control_mean_pct': -0.02, 'p': 0.413}
+stock   Opening drive: first bar direction to 11:00    rungs 2  W1 {'n': 59, 'total_pct': 2.092, 'mean_pct': 0.0355, 'win_pct': 47.5, 'control_mean_pct': -0.0242, 'p': 0.21}
+stock   Opening reversal: fade first 30m to 13:00      rungs 0  W1 {'n': 60, 'total_pct': -6.914, 'mean_pct': -0.1152, 'win_pct': 43.3, 'control_mean_pct': -0.0353, 'p': 0.757}
+crypto  ORB London open 15m, target 1R                 rungs 0  W1 {'n': 42, 'total_pct': -3.222, 'mean_pct': -0.0767, 'win_pct': 52.4, 'control_mean_pct': -0.1225, 'p': 0.17}
+crypto  ORB London open 15m, target day end            rungs 0  W1 {'n': 42, 'total_pct': -3.075, 'mean_pct': -0.0732, 'win_pct': 26.2, 'control_mean_pct': -0.1075, 'p': 0.447}
+crypto  ORB London open 30m, target 1R                 rungs 0  W1 {'n': 42, 'total_pct': -4.953, 'mean_pct': -0.1179, 'win_pct': 50.0, 'control_mean_pct': -0.1124, 'p': 0.513}
+crypto  ORB London open 30m, target day end            rungs 0  W1 {'n': 42, 'total_pct': -8.142, 'mean_pct': -0.1939, 'win_pct': 19.0, 'control_mean_pct': -0.0916, 'p': 0.7}
+crypto  ORB NY open 15m, target 1R                     rungs 1  W1 {'n': 42, 'total_pct': 9.516, 'mean_pct': 0.2266, 'win_pct': 73.8, 'control_mean_pct': -0.1212, 'p': 0.0}
+crypto  ORB NY open 15m, target day end                rungs 0  W1 {'n': 42, 'total_pct': -5.72, 'mean_pct': -0.1362, 'win_pct': 28.6, 'control_mean_pct': -0.1033, 'p': 0.577}
+crypto  ORB NY open 30m, target 1R                     rungs 2  W1 {'n': 42, 'total_pct': 2.155, 'mean_pct': 0.0513, 'win_pct': 57.1, 'control_mean_pct': -0.1193, 'p': 0.017}
+crypto  ORB NY open 30m, target day end                rungs 0  W1 {'n': 42, 'total_pct': -15.738, 'mean_pct': -0.3747, 'win_pct': 23.8, 'control_mean_pct': -0.1265, 'p': 0.91}
+crypto  VWAP (UTC day) reversion 1.5 sd                rungs 0  W1 {'n': 204, 'total_pct': -8.45, 'mean_pct': -0.0414, 'win_pct': 69.6, 'control_mean_pct': -0.1184, 'p': 0.11}
+crypto  VWAP (UTC day) reversion 2 sd                  rungs 0  W1 {'n': 167, 'total_pct': -2.717, 'mean_pct': -0.0163, 'win_pct': 70.7, 'control_mean_pct': -0.1228, 'p': 0.09}
+crypto  VWAP (UTC day) reversion 2.5 sd                rungs 1  W1 {'n': 132, 'total_pct': 3.374, 'mean_pct': 0.0256, 'win_pct': 74.2, 'control_mean_pct': -0.1234, 'p': 0.093}
+crypto  RSI(2) 5m, 5/95                                rungs 0  W1 {'n': 336, 'total_pct': -28.61, 'mean_pct': -0.0851, 'win_pct': 31.2, 'control_mean_pct': -0.1203, 'p': 0.007}
+crypto  RSI(2) 5m, 10/90                               rungs 0  W1 {'n': 336, 'total_pct': -21.559, 'mean_pct': -0.0642, 'win_pct': 31.5, 'control_mean_pct': -0.1208, 'p': 0.0}
+crypto  RSI(2) 5m, 20/80                               rungs 0  W1 {'n': 336, 'total_pct': -27.729, 'mean_pct': -0.0825, 'win_pct': 28.9, 'control_mean_pct': -0.1189, 'p': 0.007}
+crypto  RSI(2) 15m, 5/95                               rungs 0  W1 {'n': 245, 'total_pct': -21.317, 'mean_pct': -0.087, 'win_pct': 41.6, 'control_mean_pct': -0.1215, 'p': 0.11}
+crypto  RSI(2) 15m, 10/90                              rungs 0  W1 {'n': 333, 'total_pct': -31.165, 'mean_pct': -0.0936, 'win_pct': 39.3, 'control_mean_pct': -0.1214, 'p': 0.127}
+crypto  RSI(2) 15m, 20/80                              rungs 0  W1 {'n': 336, 'total_pct': -30.357, 'mean_pct': -0.0903, 'win_pct': 41.7, 'control_mean_pct': -0.1192, 'p': 0.127}
+crypto  Bollinger 20/2 reversion                       rungs 0  W1 {'n': 336, 'total_pct': -34.138, 'mean_pct': -0.1016, 'win_pct': 52.4, 'control_mean_pct': -0.1215, 'p': 0.183}
+crypto  Bollinger 20/2.5 reversion                     rungs 0  W1 {'n': 268, 'total_pct': -33.839, 'mean_pct': -0.1263, 'win_pct': 48.5, 'control_mean_pct': -0.123, 'p': 0.55}
+crypto  Bollinger 20/2 reversion, ADX under 20         rungs 0  W1 {'n': 253, 'total_pct': -27.388, 'mean_pct': -0.1083, 'win_pct': 53.4, 'control_mean_pct': -0.1187, 'p': 0.31}
+crypto  Asian range break in London, target 1R         rungs 1  W1 {'n': 41, 'total_pct': 2.067, 'mean_pct': 0.0504, 'win_pct': 63.4, 'control_mean_pct': -0.1134, 'p': 0.157}
+crypto  Asian range break in London, to 16:00          rungs 0  W1 {'n': 41, 'total_pct': -2.663, 'mean_pct': -0.065, 'win_pct': 58.5, 'control_mean_pct': -0.1206, 'p': 0.353}
+crypto  Asian range sweep fade                         rungs 0  W1 {'n': 37, 'total_pct': -3.345, 'mean_pct': -0.0904, 'win_pct': 16.2, 'control_mean_pct': -0.1201, 'p': 0.357}
+crypto  4h move over 2%, follow 4h                     rungs 0  W1 {'n': 27, 'total_pct': -0.103, 'mean_pct': -0.0038, 'win_pct': 44.4, 'control_mean_pct': -0.1092, 'p': 0.3}
+crypto  4h move over 2%, fade 4h                       rungs 0  W1 {'n': 27, 'total_pct': -6.377, 'mean_pct': -0.2362, 'win_pct': 25.9, 'control_mean_pct': -0.1394, 'p': 0.713}
