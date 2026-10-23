@@ -4950,22 +4950,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T23:43:13+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T23:45:25+0100",
+   "note": "Measured: keyless POST /v1/scrape on api.octocrawl.dev returned Markdown for 3 of 3 public pages in 1.9 to 4.3 s; distinct-word recall against a plain fetch 90.2 pct (Wikipedia HTTP 402), 92.7 pct (Python json docs) and 36.7 pct (gov.uk bank holidays), the last because the Markdown kept every holiday table and dropped the cookie banner, footer and department list, where the missing words live. Shot said 3 of 3 at 90 pct: the number missed, the word held; a raw-page recall test punishes boilerplate removal. Every non-route answers 403 with a reason and a hint. Next: close (one more hosted Markdown fetcher; the transcribe and harvest pipelines already read what they need).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0204"
+   ],
+   "minutes": 2,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "Markdown keeps 90 percent or more of the plain-fetch words on 3 of 3 pages, with the risk that the hosted endpoint wants a key and the verdict turns blocked",
-    "at": "2026-10-23T23:43:29+0100"
+    "at": "2026-10-23T23:43:29+0100",
+    "hit": true
    }
   }
  ]
