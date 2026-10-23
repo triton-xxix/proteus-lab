@@ -5008,22 +5008,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T23:48:58+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T23:50:33+0100",
+   "note": "Measured: 104 atomic tokens from the harvest child 11 kept claims and mechanisms, 81 found in the brief section it read (77.9 pct); of the 23 misses, 19 are tokeniser noise, 4 are true facts from outside the text (Lightning, Python, TypeScript, Cfx.re), 0 fabricated. The one real error, Octocrawl keyless trial five pages a day when the README says 20 and five is the web preview, passed the token check because both numbers are in the source. Shot after looking at that item: raw 85 pct missed at 77.9, one contradiction held. Next: deepen (run factcheck.py after each harvest ingest for a week and log the miss list; P-0206 leg two).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0206"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "about 85 percent of the child's atomic facts found in its source text, and one or two contradicted; shot after looking at the Octocrawl claim, whose five pages a day I had already seen disagree with the README's twenty",
-    "at": "2026-10-23T23:49:19+0100"
+    "at": "2026-10-23T23:49:19+0100",
+    "hit": true
    }
   }
  ]
