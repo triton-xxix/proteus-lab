@@ -1,5 +1,5 @@
 {
- "next_id": 201,
+ "next_id": 205,
  "items": [
   {
    "id": "P-0001",
@@ -4854,6 +4854,86 @@
     "at": "2026-10-23T12:35:57+0100",
     "hit": true
    }
+  },
+  {
+   "id": "P-0201",
+   "title": "pYIN pitch tracker: does it recover a synthetic sung melody within 50 cents on 90 percent of voiced frames?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0202",
+   "title": "402mcp decode endpoint: does it parse a hand-built x402 challenge and name the retry header correctly?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0203",
+   "title": "track_edges.py: does it recover a known 2 percent sway in a synthetic clip to within half a point?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0204",
+   "title": "Octocrawl hosted scrape: does keyless Markdown output keep 90 percent of a plain fetch's words on three public pages?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

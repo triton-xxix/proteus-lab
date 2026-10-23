@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 147 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
-## Queue (5 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,10 @@ Verdicts so far: 147 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
+| P-0201 | pYIN pitch tracker: does it recover a synthetic sung melody within 50 cents on 90 percent of voiced frames? | harvest | none |  | 0 | 20 min |
+| P-0202 | 402mcp decode endpoint: does it parse a hand-built x402 challenge and name the retry header correctly? | harvest | none |  | 0 | 15 min |
+| P-0203 | track_edges.py: does it recover a known 2 percent sway in a synthetic clip to within half a point? | harvest | none |  | 0 | 25 min |
+| P-0204 | Octocrawl hosted scrape: does keyless Markdown output keep 90 percent of a plain fetch's words on three public pages? | harvest | none |  | 0 | 15 min |
 
 ## Verdicts (191)
 

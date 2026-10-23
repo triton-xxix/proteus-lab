@@ -6,18 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-365 judged over 24 harvest days, 241 kept, 73 testable, 70 queued as probes, 66 with a probe verdict.
+379 judged over 25 harvest days, 252 kept, 77 testable, 74 queued as probes, 68 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0364 | 2026-10-22 | vault | [Tweak knobs on every composition](https://www.youtube.com/watch?v=yf2OwchM9nw) | mechanism | tools-for-strangers | yes | P-0196 |
+| H-0379 | 2026-10-23 | hn | [Launch HN: Alter (YC S25) – Access control for multi-user agents](https://alterauth.com/) | both | tech | no: The product is a hosted service that needs an account and do |  |
+| H-0378 | 2026-10-23 | vault | [labelled persona on an AI-friendly subscription platform]() | mechanism | tools-for-strangers | no: Needs a creator account on a platform and an audience, not a |  |
+| H-0377 | 2026-10-23 | awesome | [77777r7/octocrawl (new in awesome-mcp-servers)](https://github.com/77777r7/octocrawl) | mechanism | open-data | yes | P-0204 |
+| H-0375 | 2026-10-23 | arxiv | [Training Small Language Models for Transferable Tool Selection](https://arxiv.org/abs/2610.31483) | mechanism | tech | no: Needs a GPU, training, and a local model; no local LLM is in |  |
+| H-0374 | 2026-10-23 | github | [rossark0/rossark-motion-skill: Turn any SVG into a professional 60 fps animation. A Claude](https://github.com/rossark0/rossark-motion-skill) | mechanism | tools-for-strangers | yes | P-0203 |
+| H-0372 | 2026-10-23 | vault | [Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles]() | mechanism | game-bots | no: Selling needs a creator account and an asset to list. |  |
+| H-0371 | 2026-10-23 | awesome | [402mcp/402mcp (new in awesome-mcp-servers)](https://github.com/402mcp/402mcp) | mechanism | tech | yes | P-0202 |
+| H-0369 | 2026-10-23 | arxiv | [EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence](https://arxiv.org/abs/2610.31650) | mechanism | tech | no: Running the benchmark needs model answers and there is no lo |  |
+| H-0368 | 2026-10-23 | github | [mihirgupta0900/tv-home: Debloat a slow, ad-filled Android TV over Wi-Fi and give it a fast](https://github.com/mihirgupta0900/tv-home) | mechanism | tech | no: It needs a physical Android TV with debugging enabled. |  |
+| H-0367 | 2026-10-23 | hn | [Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key](https://github.com/dsmurrell/onkey) | mechanism | tools-for-strangers | yes | P-0201 |
+| H-0366 | 2026-10-23 | vault | [AI brand face retainer for small businesses]() | mechanism | tools-for-strangers | no: The question is whether a paying client exists, which needs  |  |
+| H-0364 | 2026-10-22 | vault | [Tweak knobs on every composition](https://www.youtube.com/watch?v=yf2OwchM9nw) | mechanism | tools-for-strangers | yes | P-0196 **works** |
 | H-0361 | 2026-10-22 | arxiv | [DynaWeave: Learning to Adapt through Dynamic Scenario Synthesis](https://arxiv.org/abs/2610.29443) | mechanism | tech | no: It needs model fine-tuning and benchmark runs; there is no l |  |
 | H-0360 | 2026-10-22 | github | [kanaworksai-hue/audio-studio-mcp: Local AI BGM and sound effects for Claude Code and any M](https://github.com/kanaworksai-hue/audio-studio-mcp) | mechanism | tools-for-strangers | no: MLX needs Apple Silicon and this Mac is Intel, and the model |  |
 | H-0359 | 2026-10-22 | hn | [Show HN: Omnara – Open-source alternative to Claude Managed Agents](https://github.com/omnara-ai/omnara) | both | tools-for-strangers | no: It needs Postgres, a sandbox runtime and a model key, and th |  |
 | H-0358 | 2026-10-22 | vault | [VIP routing for agent notifications](https://www.youtube.com/watch?v=yePLuwL3FbM) | mechanism | tools-for-strangers | no: The only meaningful measure is Luke's own push counts and at |  |
-| H-0357 | 2026-10-22 | awesome | [amadeusbio-ai/molecular_animation (new in awesome-claude-code)](https://github.com/amadeusbio-ai/molecular_animation) | mechanism | tools-for-strangers | yes | P-0195 |
+| H-0357 | 2026-10-22 | awesome | [amadeusbio-ai/molecular_animation (new in awesome-claude-code)](https://github.com/amadeusbio-ai/molecular_animation) | mechanism | tools-for-strangers | yes | P-0195 **works** |
 | H-0355 | 2026-10-22 | arxiv | [Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forens](https://arxiv.org/abs/2610.29747) | mechanism | mechanism-hunting | no: Reproducing it needs model answers, and there is no local LL |  |
 | H-0354 | 2026-10-22 | github | [dominikmartn/harp: Run many Claude Code and Codex agents side by side, in one sidebar that](https://github.com/dominikmartn/harp) | mechanism | tools-for-strangers | no: It needs a long Rust build or a signed DMG of a terminal app |  |
 | H-0352 | 2026-10-22 | vault | [framing kit for outbound and proposal copy](https://www.instagram.com/targetingfinance/) | mechanism | tools-for-strangers | no: Measuring any effect needs real recipients or an audience, a |  |
@@ -255,6 +266,139 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0379 Launch HN: Alter (YC S25) – Access control for multi-user agents
+2026-10-23, hn, https://alterauth.com/
+
+- **Mechanism:** A proxy sits between an agent and downstream APIs. For each request it attaches the credentials for the end user on whose behalf the agent acts, instead of one shared key, and enforces policies at runtime. It logs every action to an audit trail. Commenters note it does not stop memory leaking between privileged and unprivileged sessions, and cannot enforce record ownership when a downstream service only offers one key.
+- **Claim:** Access control for multi-user agents: per-user credentials, fine-grained runtime policy and compliance-grade audit logs through a proxy.
+- **Testable:** no. The product is a hosted service that needs an account and downstream integrations. Needs: An Alter account and a multi-user agent with downstream APIs..
+- **Idea on its own:** sound. Per-user delegated credentials with policy at a proxy is a standard least-privilege pattern.
+- **How it would be done:** Put a proxy in front of the agent's tool calls, map each chat identity to its own OAuth tokens, evaluate a policy per request and write an audit record. Separately isolate agent memory per user. A security person would review the policy model.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Per-user memory isolation in agent harnesses, which commenters say nobody has.
+- **Field Notes line:** A proxy gives each agent request the calling user's own credentials and policy, but shared agent memory still leaks across users.
+
+### H-0378 labelled persona on an AI-friendly subscription platform
+2026-10-23, vault, 
+
+- **Mechanism:** A creator runs a clearly labelled AI persona with a consistent look and voice, posting images or clips to a subscription platform that permits AI accounts. Revenue comes from monthly fans and paid extras, with the label stated up front. The persona is made from a reference image set and generation tools, and the whole business depends on one platform's policy.
+- **Claim:** Labelled subscription personas on AI-friendly platforms can earn, though visible big numbers are mostly self-reported or sold by course sellers.
+- **Testable:** no. Needs a creator account on a platform and an audience, not a keyless run. Needs: A platform account that allows AI personas, and a content plan within its rules..
+- **Idea on its own:** needs-a-run. The model works only while the platform allows it and income claims are unverified.
+- **How it would be done:** Pick a platform that explicitly allows labelled AI creators, build a persona reference set, post on a schedule and track subscribers. Stay clear of real people's likenesses and explicit content. A person would handle the account, payouts and community replies.
+- **Stack already covers:** Gemini (stills), ElevenLabs (voice), HyperFrames (video compose, captions, render)
+- **Missing:** A platform account and an audience.
+- **Field Notes line:** A clearly labelled AI persona selling subscriptions on an AI-friendly platform is possible but sits on one platform's goodwill.
+
+### H-0377 77777r7/octocrawl (new in awesome-mcp-servers)
+2026-10-23, awesome, https://github.com/77777r7/octocrawl
+
+- **Mechanism:** A fetcher turns a public page into Markdown through an HTTP lane, with a browser lane for JavaScript pages. Structured fields are read from the page itself without a model by default, and each result carries an evidence record of how it was read. Checks flag challenge pages, truncation and too little content, and return a failure reason.
+- **Claim:** Open-source scrape, map and crawl toolkit for agents, returning Markdown and checked fields with failure reasons; keyless hosted trial allows five pages a day.
+- **Testable:** yes. Does a keyless scrape of three public pages return Markdown that contains at least 90 percent of the words from a plain fetch of the same pages? Queued as P-0204.
+- **Idea on its own:** sound. Failure reasons and evidence records address a real weakness of scrapers, though there are many rivals.
+- **How it would be done:** Call the hosted keyless scrape on three public pages, fetch the same pages plainly, and compare word coverage and failure flags. Test one deliberately blocked page to see whether the failure reason is honest. If it holds up, self-host for bigger jobs.
+- **Stack already covers:** A keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** octocrawl https://github.com/77777r7/octocrawl (The toolkit, for self-hosting.)
+- **Field Notes line:** A scraper for agents that returns Markdown plus a record of how each field was read, and says why a scrape failed.
+
+### H-0375 Training Small Language Models for Transferable Tool Selection
+2026-10-23, arxiv, https://arxiv.org/abs/2610.31483
+
+- **Mechanism:** A retriever first returns candidate tools from a corpus of more than ten thousand, and a small model, Qwen3-8B, decomposes the instruction and picks which candidates are needed. It is post-trained with reinforcement learning so it replaces a proprietary LLM in that role. The reward is based on whether the selected tools match what the task needs.
+- **Claim:** A Qwen3-8B model trained this way beats Llama-4-Maverick (402B) on ToolBench and transfers to other retrievers and corpora.
+- **Testable:** no. Needs a GPU, training, and a local model; no local LLM is installed. Needs: GPU time and a Qwen3-8B checkpoint..
+- **Idea on its own:** needs-a-run. The recipe is plausible but the result rests on one benchmark and needs replication.
+- **How it would be done:** Take ToolBench, build a retriever over tool descriptions, define a reward on selection overlap, and run RL on a small model. Compare with a large model baseline. This needs rented GPUs and someone who can run an RL training loop.
+- **To fetch:** ToolBench https://github.com/OpenBMB/ToolBench (The benchmark and tool corpus used.)
+- **Missing:** GPU compute and the paper's training code.
+- **Field Notes line:** An 8B open model trained with reinforcement learning picks tools from a ten-thousand-tool pool better than a 402B model.
+
+### H-0374 rossark0/rossark-motion-skill: Turn any SVG into a professional 60 fps animation. A Claude Code skill that brings anythi
+2026-10-23, github, https://github.com/rossark0/rossark-motion-skill
+
+- **Mechanism:** The skill is a set of animation rules for agents (one clock for the scene, parts rotating about real pivots, trailing parts lagging a beat, constant idle motion) plus a small motion engine in TypeScript and Swift. A Python tool measures a subject's edges frame by frame in a reference video, to catch motion too small to see. A shell tool builds contact sheets at full frame rate.
+- **Claim:** Turns an SVG into 60 fps animation with live faces and full-body acting, by teaching the agent animator's rules.
+- **Testable:** yes. Does track_edges.py recover a known 2 percent sway in a synthetic rendered clip to within 0.5 percentage points? Queued as P-0203.
+- **Idea on its own:** sound. The rules match standard animation principles and the measurement tool is a concrete, checkable claim.
+- **How it would be done:** Clone the repo into the sandbox, render a synthetic clip with a shape swaying a known 2 percent using Python or HyperFrames, then run the edge tracker and compare. If it works, the skill's rules could feed HyperFrames scene design. A designer's taste still decides what feels alive.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents
+- **To fetch:** rossark-motion-skill https://github.com/rossark0/rossark-motion-skill (Source of the skill and track_edges.py.); OpenCV https://pypi.org/project/opencv-python/ (Likely dependency of the edge tracker.)
+- **Field Notes line:** A Claude Code skill gives agents animators' rules and a script that measures sub-visible motion in reference video, frame by frame.
+
+### H-0372 Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles
+2026-10-23, vault, 
+
+- **Mechanism:** Cfx.re, owned by Rockstar's parent, runs an official marketplace where creators sell scripts, maps and vehicles for FiveM and RedM servers. Creators package assets, list them through the platform, and the platform handles licensing and payment for a cut. It is the sanctioned route, as opposed to selling mods outside the publisher's terms.
+- **Claim:** There is an official publisher-sanctioned marketplace for paid FiveM and RedM assets.
+- **Testable:** no. Selling needs a creator account and an asset to list. Needs: A creator account, finished assets and knowledge of the marketplace's terms..
+- **Idea on its own:** needs-a-run. The channel is real but earnings depend on asset quality and the vault notes the parent game has no mod SDK yet.
+- **How it would be done:** Read the marketplace's creator terms, pick a small asset type such as a vehicle pack or UI script, build it for an existing supported game, and list it. Track sales against effort. Art and scripting work for quality assets is a person's job.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Finished assets and a seller account.
+- **Field Notes line:** The lawful way to sell game mods exists: an official Cfx marketplace for FiveM and RedM assets.
+
+### H-0371 402mcp/402mcp (new in awesome-mcp-servers)
+2026-10-23, awesome, https://github.com/402mcp/402mcp
+
+- **Mechanism:** When a server answers HTTP 402, the response carries a payment challenge in one of three schemes: L402 (a macaroon plus a Lightning invoice), x402 or MPP. The decoder parses the headers and body, checks expiry and that the macaroon commits to the invoice's payment hash, and returns the retry header format. A probe tool makes one GET to a public URL to see if it speaks 402, and never pays.
+- **Claim:** An MCP server and public registry that decodes 402 challenges and recommends a payment rail, with no tool able to spend money.
+- **Testable:** yes. Does the keyless POST /api/v1/decode endpoint correctly parse a hand-built x402 challenge and return the retry header fields? Queued as P-0202.
+- **Idea on its own:** needs-a-run. The wire formats are public and a decoder is plausible, but this one has zero stars and unverified accuracy.
+- **How it would be done:** Fetch the scheme references from the public API, build a sample x402 challenge from the spec, post it to the decode endpoint and compare fields to the spec by hand. Then probe a few public URLs to see how many speak 402. A person would judge whether agent payments are a real market.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** 402mcp https://github.com/402mcp/402mcp (The server and registry.)
+- **Field Notes line:** A free MCP server decodes HTTP 402 payment challenges (L402, x402, MPP) so an agent knows how to pay, without ever spending.
+
+### H-0369 EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence
+2026-10-23, arxiv, https://arxiv.org/abs/2610.31650
+
+- **Mechanism:** The benchmark builds 300 matched unsafe and safe task pairs in six domains, where a tool response is edited to omit the fact that makes an action prohibited. It then searches over which facts to suppress to find the smallest set whose omission causes an unsafe action. A separate audit tool checks whether the agent asks for the missing fact before acting.
+- **Claim:** Across ten models, resistance to missing evidence varies widely, and giving recovery access reduces unsafe execution for all of them.
+- **Testable:** no. Running the benchmark needs model answers and there is no local LLM or keyless model here. Needs: Model API access and the benchmark code, if released..
+- **Idea on its own:** sound. Omission as a failure mode is easy to reason about and the matched-pair design isolates it well.
+- **How it would be done:** Write matched tasks where one tool output hides the safety fact, run the agent on both versions, and count unsafe actions. Then reduce the omitted set until the failure disappears to get the minimum. Add an audit step that checks whether the agent called a lookup for the fact.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A model budget to run it.
+- **Field Notes line:** Agents will do a banned thing when a tool simply leaves out the fact that bans it, and some never ask for the missing fact.
+
+### H-0368 mihirgupta0900/tv-home: Debloat a slow, ad-filled Android TV over Wi-Fi and give it a fast Apple TV-style home screen. O
+2026-10-23, github, https://github.com/mihirgupta0900/tv-home
+
+- **Mechanism:** A pure-Python ADB client talks to the TV over Wi-Fi after USB debugging is switched on. A list of package names is disabled per user with the package manager, which is reversible, and a small custom launcher APK is built and installed as the home app. Before and after memory figures come from the TV itself.
+- **Claim:** On a 2 GB TCL Google TV it disabled 25 bloat apps and cut home screen memory from 192 MB to 83 MB.
+- **Testable:** no. It needs a physical Android TV with debugging enabled. Needs: An Android TV on the local network with USB debugging on..
+- **Idea on its own:** sound. Disabling packages per user through ADB is a long-standing reversible technique.
+- **How it would be done:** Enable debugging, connect with the Python ADB client, list installed packages, disable a model-specific list and install a minimal launcher. Back up the package state first and keep a restore script. A person must handle the on-TV prompts and decide which apps to keep.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** tv-home https://github.com/mihirgupta0900/tv-home (Scripts, launcher and debloat lists.)
+- **Missing:** An Android TV to run it on.
+- **Field Notes line:** Disabling vendor bloat on an Android TV over Wi-Fi ADB, plus a tiny custom launcher, reportedly halved home screen memory.
+
+### H-0367 Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key
+2026-10-23, hn, https://github.com/dsmurrell/onkey
+
+- **Mechanism:** The app listens to a track once through system audio permissions, runs pitch estimation on the captured audio to build a melody track for the song, then listens to the singer's microphone live and compares the two pitch curves. The comment thread asks how pitch is detected, so the exact estimator is not given in the post. The song is not stored, only the learned pitch track.
+- **Claim:** A free MIT Mac app learns any song from Spotify, Apple Music or YouTube in a couple of minutes and scores your singing against its pitch track.
+- **Testable:** yes. Does librosa pYIN recover a known synthetic sung melody to within 50 cents on at least 90 percent of voiced frames? Queued as P-0201.
+- **Idea on its own:** sound. Monophonic pitch estimation on a vocal stem is a mature technique; the hard part is isolating the voice from a full mix.
+- **How it would be done:** Capture the song's audio once, separate or estimate the lead vocal line, run a pitch tracker over it and store the notes only. At sing time, read the mic, run the same tracker, and score the difference in cents and timing. Wrap it in a small UI. The slice testable here is the tracker's accuracy on a synthetic melody, which stands in for the hard vocal isolation step.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** librosa https://github.com/librosa/librosa (Provides pYIN pitch estimation to test tracker accuracy.); OnKey https://github.com/dsmurrell/onkey (The source app, to read which estimator it actually uses.)
+- **Field Notes line:** A Mac app learns a song's pitch track from one listen and scores your singing against it, built with Claude Code.
+
+### H-0366 AI brand face retainer for small businesses
+2026-10-23, vault, 
+
+- **Mechanism:** A small business pays a monthly retainer for a consistent AI-generated brand face: a fixed avatar and voice that appears in short ads, UGC-style clips and social posts. The face is built once as a reference set, then each month a script is turned into clips by an avatar or video-generation tool, captioned and delivered. The recurring part is the content calendar and the consistency of the face, not any one render.
+- **Claim:** The vault sweep says real money sits in selling AI UGC and brand faces to businesses on retainers, though most big numbers are self-reported.
+- **Testable:** no. The question is whether a paying client exists, which needs outreach and a sale, not a keyless run in the sandbox. Needs: A paying pilot client and a disclosure policy for synthetic faces..
+- **Idea on its own:** needs-a-run. The production side is solved by existing tools; whether small businesses will keep paying monthly is untested.
+- **How it would be done:** Build one avatar reference set and a voice, then write a month of scripts from the client's offers. Render clips with an avatar tool, caption them in HyperFrames, and deliver a batch with a clear AI label. Source clients from local firms already posting on social. A person is needed for the sale, the client's approvals and the on-camera claims check.
+- **Stack already covers:** HeyGen and Tavus (avatars), ElevenLabs (voice), Gemini (stills), HyperFrames (video compose, captions, render)
+- **Missing:** A client willing to pay and a pricing benchmark.
+- **Field Notes line:** Selling a consistent AI brand face to small firms on a monthly retainer looks like the sturdier end of the AI influencer market.
 
 ### H-0364 Tweak knobs on every composition
 2026-10-22, vault, https://www.youtube.com/watch?v=yf2OwchM9nw
@@ -3047,7 +3191,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0364 | 2026-10-22 | Tweak knobs on every composition | open | sound | yes | P-0196 |
+| H-0378 | 2026-10-23 | labelled persona on an AI-friendly subscription platform | open | needs-a-run | no |  |
+| H-0372 | 2026-10-23 | Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles | open | needs-a-run | no |  |
+| H-0366 | 2026-10-23 | AI brand face retainer for small businesses | open | needs-a-run | no |  |
+| H-0364 | 2026-10-22 | Tweak knobs on every composition | open | sound | yes | P-0196 **works** |
 | H-0358 | 2026-10-22 | VIP routing for agent notifications | open | sound | no |  |
 | H-0352 | 2026-10-22 | framing kit for outbound and proposal copy | open | sound | no |  |
 | H-0348 | 2026-10-20 | rich media as the proof in agency offers | open | needs-a-run | no |  |
@@ -3124,6 +3271,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0229 | 2026-10-23 | [octocrawl](https://github.com/77777r7/octocrawl) | The toolkit, for self-hosting. | H-0377 (77777r7/octocrawl (new in awesome-mcp-servers)) | shelf |
+| T-0228 | 2026-10-23 | [ToolBench](https://github.com/OpenBMB/ToolBench) | The benchmark and tool corpus used. | H-0375 (Training Small Language Models for Transferable To) | shelf |
+| T-0227 | 2026-10-23 | [OpenCV](https://pypi.org/project/opencv-python/) | Likely dependency of the edge tracker. | H-0374 (rossark0/rossark-motion-skill: Turn any SVG into a) | shelf |
+| T-0226 | 2026-10-23 | [rossark-motion-skill](https://github.com/rossark0/rossark-motion-skill) | Source of the skill and track_edges.py. | H-0374 (rossark0/rossark-motion-skill: Turn any SVG into a) | shelf |
+| T-0225 | 2026-10-23 | [402mcp](https://github.com/402mcp/402mcp) | The server and registry. | H-0371 (402mcp/402mcp (new in awesome-mcp-servers)) | shelf |
+| T-0224 | 2026-10-23 | [tv-home](https://github.com/mihirgupta0900/tv-home) | Scripts, launcher and debloat lists. | H-0368 (mihirgupta0900/tv-home: Debloat a slow, ad-filled ) | shelf |
+| T-0223 | 2026-10-23 | [OnKey](https://github.com/dsmurrell/onkey) | The source app, to read which estimator it actually uses. | H-0367 (Show HN: OnKey – I'm a bad singer, so I built an a) | shelf |
 | T-0222 | 2026-10-22 | [DynaWeave](https://github.com/Miaow-Lab/DynaWeave) | Authors' code for the synthesis framework. | H-0361 (DynaWeave: Learning to Adapt through Dynamic Scena) | shelf |
 | T-0221 | 2026-10-22 | [Stable Audio 3](https://github.com/Stability-AI/stable-audio-3) | The underlying model and CLI. | H-0360 (kanaworksai-hue/audio-studio-mcp: Local AI BGM and) | shelf |
 | T-0220 | 2026-10-22 | [audio-studio-mcp](https://github.com/kanaworksai-hue/audio-studio-mcp) | The MCP server. | H-0360 (kanaworksai-hue/audio-studio-mcp: Local AI BGM and) | shelf |
@@ -3351,6 +3505,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0376 | 2026-10-23 | youtube | [How Model Context Protocol (MCP) actually works](https://www.youtube.com/watch?v=cGuyrANVi4A) | Generic MCP explainer with no new mechanism. |
+| H-0373 | 2026-10-23 | hn | [Hacker leaks 281 GB of data from Germany's far-right AfD party](https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd) | Hacked political-party data leak; stolen data crosses the charter line and the article has no reusable mechanism. |
+| H-0370 | 2026-10-23 | youtube | [8 Claude Skills that actually matter](https://www.youtube.com/watch?v=jDtLcMOLjIQ) | A one-minute listicle of popular skills with no mechanism, plus a comment-for-guide funnel. |
 | H-0365 | 2026-10-22 | hn | [Show HN: Jev Cards, Can you beat a vision model at a picture quiz?](https://jevcards.com) | A demo quiz game around one vendor's fast vision model; the only content is a speed and accuracy claim with no mechanism |
 | H-0363 | 2026-10-22 | awesome | [summerriversound/review-inbox (new in awesome-claude-code)](https://github.com/summerriversound/review-inbox) | A UI mod over GitHub's PR lists plus summaries; no new mechanism beyond polling the API and asking a model to summarise. |
 | H-0362 | 2026-10-22 | youtube | [Annual Depreciation of a New Car: Find the Future Value](https://www.youtube.com/watch?v=1WqHR6RzURU) | A two-minute school maths example of the compound depreciation formula, no mechanism or data. |
