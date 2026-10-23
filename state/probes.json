@@ -4776,22 +4776,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-22",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T12:31:43+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T12:32:26+0100",
+   "note": "Measured: Brier 0.166 = reliability 0.085 - resolution 0.021 + uncertainty 0.102 on 52 scored shots; hit rate 0.885 against mean stated p 0.61, every bin 0.5 to 0.9 hit 0.75 or better. Shot said reliability about 0.03 of a Brier near 0.17: Brier right, reliability nearly 3x, so the number missed. Saying works at 0.885 every time would score 0.102 and beat me; works calls hit 43 of 45, other verdicts 3 of 7. I am underconfident, not undiscriminating. Next: promote (add REL/RES/UNC and the base-rate Brier to probe.py shots output, and default works shots near 0.9).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0198"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "reliability term about 0.03 of a Brier near 0.17, resolution smaller than uncertainty",
-    "at": "2026-10-23T12:31:48+0100"
+    "at": "2026-10-23T12:31:48+0100",
+    "hit": true
    }
   }
  ]

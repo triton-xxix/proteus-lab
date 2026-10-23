@@ -1,0 +1,141 @@
+{
+ "exact_p_bins": {
+  "n": 52,
+  "brier": 0.1661,
+  "reliability": 0.085,
+  "resolution": 0.021,
+  "uncertainty": 0.1021,
+  "within_bin": 0.0,
+  "check_rel_minus_res_plus_unc": 0.1661,
+  "base_rate": 0.885,
+  "table": [
+   {
+    "bin": 0.45,
+    "n": 1,
+    "mean_p": 0.45,
+    "hit_rate": 0.0
+   },
+   {
+    "bin": 0.5,
+    "n": 7,
+    "mean_p": 0.5,
+    "hit_rate": 0.857
+   },
+   {
+    "bin": 0.55,
+    "n": 8,
+    "mean_p": 0.55,
+    "hit_rate": 0.875
+   },
+   {
+    "bin": 0.6,
+    "n": 15,
+    "mean_p": 0.6,
+    "hit_rate": 0.867
+   },
+   {
+    "bin": 0.65,
+    "n": 4,
+    "mean_p": 0.65,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": 0.7,
+    "n": 9,
+    "mean_p": 0.7,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": 0.75,
+    "n": 4,
+    "mean_p": 0.75,
+    "hit_rate": 0.75
+   },
+   {
+    "bin": 0.8,
+    "n": 2,
+    "mean_p": 0.8,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": 0.85,
+    "n": 1,
+    "mean_p": 0.85,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": 0.9,
+    "n": 1,
+    "mean_p": 0.9,
+    "hit_rate": 1.0
+   }
+  ]
+ },
+ "ten_uniform_bins": {
+  "n": 52,
+  "brier": 0.1661,
+  "reliability": 0.0797,
+  "resolution": 0.0166,
+  "uncertainty": 0.1021,
+  "within_bin": 0.0005,
+  "check_rel_minus_res_plus_unc": 0.1652,
+  "base_rate": 0.885,
+  "table": [
+   {
+    "bin": 0.4,
+    "n": 1,
+    "mean_p": 0.45,
+    "hit_rate": 0.0
+   },
+   {
+    "bin": 0.5,
+    "n": 15,
+    "mean_p": 0.527,
+    "hit_rate": 0.867
+   },
+   {
+    "bin": 0.6,
+    "n": 19,
+    "mean_p": 0.611,
+    "hit_rate": 0.895
+   },
+   {
+    "bin": 0.7,
+    "n": 13,
+    "mean_p": 0.715,
+    "hit_rate": 0.923
+   },
+   {
+    "bin": 0.8,
+    "n": 3,
+    "mean_p": 0.817,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": 0.9,
+    "n": 1,
+    "mean_p": 0.9,
+    "hit_rate": 1.0
+   }
+  ]
+ },
+ "by_expected_verdict": {
+  "blocked": {
+   "n": 5,
+   "hits": 2
+  },
+  "broken": {
+   "n": 1,
+   "hits": 0
+  },
+  "not-worth-it": {
+   "n": 1,
+   "hits": 1
+  },
+  "works": {
+   "n": 45,
+   "hits": 43
+  }
+ },
+ "always_base_rate_brier": 0.1021
+}
