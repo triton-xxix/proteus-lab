@@ -1,0 +1,27 @@
+{
+ "frames": 724,
+ "voiced_core_frames": 616,
+ "within_50_cents": 608,
+ "within_50_cents_pct": 98.7,
+ "within_50_cents_pct_all_voiced_incl_edges": 98.7,
+ "voicing_missed": 2,
+ "octave_errors": 0,
+ "false_voiced_of_unvoiced": [
+  24,
+  87
+ ],
+ "median_abs_cents": 7.04,
+ "p95_abs_cents": 14.38,
+ "audio_seconds": 8.4,
+ "pyin_seconds": 12.85,
+ "librosa": "1.0.0",
+ "settings": {
+  "sr": 22050,
+  "hop": 256,
+  "frame": 2048,
+  "fmin": 80,
+  "fmax": 800,
+  "vibrato_cents": 30,
+  "noise_db": -30
+ }
+}

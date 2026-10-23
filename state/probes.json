@@ -4863,22 +4863,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T23:36:43+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T23:38:34+0100",
+   "note": "Measured: librosa 1.0.0 pYIN put 608 of 616 voiced frames (98.7 pct) within 50 cents of a synthetic 14-note melody with 30-cent vibrato, median error 7.0 cents, p95 14.4, 0 octave errors. Shot said about 95 pct with boundary failures: hit, and edges made no difference. Weak spots: 24 of 87 silent frames called voiced (an app needs an energy gate), and 12.85 s to track 8.4 s of audio on this Intel Mac, so not a live follower at these settings. Next: deepen with a real a cappella clip and a known score before judging the OnKey claim.",
+   "artefacts": [
+    "experiments/2026-10-23-P-0201"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "about 95 percent of voiced frames within 50 cents on a synthetic harmonic melody with vibrato; failures at note boundaries",
-    "at": "2026-10-23T23:37:19+0100"
+    "at": "2026-10-23T23:37:19+0100",
+    "hit": true
    }
   },
   {
