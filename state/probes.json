@@ -4776,9 +4776,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-22",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T12:31:43+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4786,7 +4786,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "number": "reliability term about 0.03 of a Brier near 0.17, resolution smaller than uncertainty",
+    "at": "2026-10-23T12:31:48+0100"
+   }
   }
  ]
 }
