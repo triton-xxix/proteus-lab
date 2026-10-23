@@ -1,0 +1,804 @@
+{
+ "summary": {
+  "window": [
+   "2026-08-01",
+   "2026-10-22"
+  ],
+  "days": 83,
+  "daily_field_equals_hourly_max": 54,
+  "max_at_night_22_to_06": 3,
+  "integer_rounding_differs": 3,
+  "gap_when_positive_median": 1.9,
+  "gap_max": 3.9,
+  "hour_of_max_histogram": {
+   "0": 3,
+   "10": 1,
+   "11": 1,
+   "12": 4,
+   "13": 2,
+   "14": 2,
+   "15": 8,
+   "16": 19,
+   "17": 41,
+   "18": 2
+  },
+  "night_days": [
+   {
+    "date": "2026-08-17",
+    "daily_field": 24.8,
+    "hourly_max": 24.8,
+    "hour_of_max": 0,
+    "daytime_max_07_21": 24.3,
+    "gap": 0.5,
+    "rounds_differ": true
+   },
+   {
+    "date": "2026-09-05",
+    "daily_field": 24.6,
+    "hourly_max": 24.6,
+    "hour_of_max": 0,
+    "daytime_max_07_21": 22.7,
+    "gap": 1.9,
+    "rounds_differ": true
+   },
+   {
+    "date": "2026-09-09",
+    "daily_field": 23.2,
+    "hourly_max": 23.2,
+    "hour_of_max": 0,
+    "daytime_max_07_21": 19.3,
+    "gap": 3.9,
+    "rounds_differ": true
+   }
+  ]
+ },
+ "rows": [
+  {
+   "date": "2026-08-01",
+   "daily_field": 29.1,
+   "hourly_max": 29.0,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 29.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-02",
+   "daily_field": 29.3,
+   "hourly_max": 29.3,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 29.3,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-03",
+   "daily_field": 35.3,
+   "hourly_max": 35.3,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 35.3,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-04",
+   "daily_field": 35.5,
+   "hourly_max": 35.5,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 35.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-05",
+   "daily_field": 33.3,
+   "hourly_max": 33.2,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 33.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-06",
+   "daily_field": 24.9,
+   "hourly_max": 24.9,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 24.9,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-07",
+   "daily_field": 26.9,
+   "hourly_max": 26.9,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 26.9,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-08",
+   "daily_field": 29.6,
+   "hourly_max": 29.6,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 29.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-09",
+   "daily_field": 33.4,
+   "hourly_max": 33.4,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 33.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-10",
+   "daily_field": 32.7,
+   "hourly_max": 32.5,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 32.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-11",
+   "daily_field": 30.5,
+   "hourly_max": 30.5,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 30.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-12",
+   "daily_field": 29.8,
+   "hourly_max": 29.8,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 29.8,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-13",
+   "daily_field": 30.8,
+   "hourly_max": 30.8,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 30.8,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-14",
+   "daily_field": 32.8,
+   "hourly_max": 32.8,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 32.8,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-15",
+   "daily_field": 34.2,
+   "hourly_max": 34.2,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 34.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-16",
+   "daily_field": 31.0,
+   "hourly_max": 31.0,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 31.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-17",
+   "daily_field": 24.8,
+   "hourly_max": 24.8,
+   "hour_of_max": 0,
+   "daytime_max_07_21": 24.3,
+   "gap": 0.5,
+   "rounds_differ": true
+  },
+  {
+   "date": "2026-08-18",
+   "daily_field": 22.3,
+   "hourly_max": 22.3,
+   "hour_of_max": 13,
+   "daytime_max_07_21": 22.3,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-19",
+   "daily_field": 30.2,
+   "hourly_max": 30.1,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 30.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-20",
+   "daily_field": 25.1,
+   "hourly_max": 25.1,
+   "hour_of_max": 12,
+   "daytime_max_07_21": 25.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-21",
+   "daily_field": 21.4,
+   "hourly_max": 21.4,
+   "hour_of_max": 12,
+   "daytime_max_07_21": 21.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-22",
+   "daily_field": 19.5,
+   "hourly_max": 19.5,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 19.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-23",
+   "daily_field": 22.7,
+   "hourly_max": 22.6,
+   "hour_of_max": 18,
+   "daytime_max_07_21": 22.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-24",
+   "daily_field": 24.1,
+   "hourly_max": 24.1,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 24.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-25",
+   "daily_field": 18.0,
+   "hourly_max": 17.9,
+   "hour_of_max": 18,
+   "daytime_max_07_21": 17.9,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-26",
+   "daily_field": 27.7,
+   "hourly_max": 27.6,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 27.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-27",
+   "daily_field": 30.8,
+   "hourly_max": 30.8,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 30.8,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-28",
+   "daily_field": 28.4,
+   "hourly_max": 28.4,
+   "hour_of_max": 12,
+   "daytime_max_07_21": 28.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-29",
+   "daily_field": 24.6,
+   "hourly_max": 24.5,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 24.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-30",
+   "daily_field": 27.3,
+   "hourly_max": 27.2,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 27.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-08-31",
+   "daily_field": 24.6,
+   "hourly_max": 24.6,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 24.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-01",
+   "daily_field": 24.0,
+   "hourly_max": 24.0,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 24.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-02",
+   "daily_field": 25.2,
+   "hourly_max": 25.2,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 25.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-03",
+   "daily_field": 25.4,
+   "hourly_max": 25.4,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 25.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-04",
+   "daily_field": 31.1,
+   "hourly_max": 31.0,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 31.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-05",
+   "daily_field": 24.6,
+   "hourly_max": 24.6,
+   "hour_of_max": 0,
+   "daytime_max_07_21": 22.7,
+   "gap": 1.9,
+   "rounds_differ": true
+  },
+  {
+   "date": "2026-09-06",
+   "daily_field": 24.4,
+   "hourly_max": 24.4,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 24.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-07",
+   "daily_field": 29.0,
+   "hourly_max": 29.0,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 29.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-08",
+   "daily_field": 32.3,
+   "hourly_max": 32.3,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 32.3,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-09",
+   "daily_field": 23.2,
+   "hourly_max": 23.2,
+   "hour_of_max": 0,
+   "daytime_max_07_21": 19.3,
+   "gap": 3.9,
+   "rounds_differ": true
+  },
+  {
+   "date": "2026-09-10",
+   "daily_field": 18.3,
+   "hourly_max": 18.2,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 18.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-11",
+   "daily_field": 20.5,
+   "hourly_max": 20.4,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 20.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-12",
+   "daily_field": 22.7,
+   "hourly_max": 22.7,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 22.7,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-13",
+   "daily_field": 23.4,
+   "hourly_max": 23.4,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 23.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-14",
+   "daily_field": 21.7,
+   "hourly_max": 21.6,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 21.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-15",
+   "daily_field": 25.1,
+   "hourly_max": 25.1,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 25.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-16",
+   "daily_field": 26.3,
+   "hourly_max": 26.2,
+   "hour_of_max": 13,
+   "daytime_max_07_21": 26.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-17",
+   "daily_field": 19.7,
+   "hourly_max": 19.7,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 19.7,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-18",
+   "daily_field": 20.1,
+   "hourly_max": 20.1,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 20.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-19",
+   "daily_field": 22.2,
+   "hourly_max": 22.2,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 22.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-20",
+   "daily_field": 24.3,
+   "hourly_max": 24.2,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 24.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-21",
+   "daily_field": 16.7,
+   "hourly_max": 16.7,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 16.7,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-22",
+   "daily_field": 16.1,
+   "hourly_max": 16.1,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 16.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-23",
+   "daily_field": 19.0,
+   "hourly_max": 18.9,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 18.9,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-24",
+   "daily_field": 16.4,
+   "hourly_max": 16.4,
+   "hour_of_max": 11,
+   "daytime_max_07_21": 16.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-25",
+   "daily_field": 19.2,
+   "hourly_max": 19.2,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 19.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-26",
+   "daily_field": 24.2,
+   "hourly_max": 24.2,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 24.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-27",
+   "daily_field": 24.6,
+   "hourly_max": 24.5,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 24.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-28",
+   "daily_field": 26.6,
+   "hourly_max": 26.5,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 26.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-29",
+   "daily_field": 24.8,
+   "hourly_max": 24.8,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 24.8,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-09-30",
+   "daily_field": 25.0,
+   "hourly_max": 24.9,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 24.9,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-01",
+   "daily_field": 24.1,
+   "hourly_max": 24.1,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 24.1,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-02",
+   "daily_field": 17.9,
+   "hourly_max": 17.9,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 17.9,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-03",
+   "daily_field": 20.4,
+   "hourly_max": 20.3,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 20.3,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-04",
+   "daily_field": 21.6,
+   "hourly_max": 21.6,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 21.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-05",
+   "daily_field": 20.0,
+   "hourly_max": 20.0,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 20.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-06",
+   "daily_field": 21.5,
+   "hourly_max": 21.4,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 21.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-07",
+   "daily_field": 23.9,
+   "hourly_max": 23.8,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 23.8,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-08",
+   "daily_field": 18.5,
+   "hourly_max": 18.5,
+   "hour_of_max": 12,
+   "daytime_max_07_21": 18.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-09",
+   "daily_field": 15.4,
+   "hourly_max": 15.4,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 15.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-10",
+   "daily_field": 13.0,
+   "hourly_max": 13.0,
+   "hour_of_max": 10,
+   "daytime_max_07_21": 13.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-11",
+   "daily_field": 13.5,
+   "hourly_max": 13.4,
+   "hour_of_max": 14,
+   "daytime_max_07_21": 13.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-12",
+   "daily_field": 14.0,
+   "hourly_max": 14.0,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 14.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-13",
+   "daily_field": 14.8,
+   "hourly_max": 14.7,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 14.7,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-14",
+   "daily_field": 17.5,
+   "hourly_max": 17.5,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 17.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-15",
+   "daily_field": 18.8,
+   "hourly_max": 18.7,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 18.7,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-16",
+   "daily_field": 21.5,
+   "hourly_max": 21.5,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 21.5,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-17",
+   "daily_field": 14.7,
+   "hourly_max": 14.7,
+   "hour_of_max": 14,
+   "daytime_max_07_21": 14.7,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-18",
+   "daily_field": 13.7,
+   "hourly_max": 13.6,
+   "hour_of_max": 17,
+   "daytime_max_07_21": 13.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-19",
+   "daily_field": 13.7,
+   "hourly_max": 13.6,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 13.6,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-20",
+   "daily_field": 10.1,
+   "hourly_max": 10.0,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 10.0,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-21",
+   "daily_field": 11.4,
+   "hourly_max": 11.4,
+   "hour_of_max": 16,
+   "daytime_max_07_21": 11.4,
+   "gap": 0.0,
+   "rounds_differ": false
+  },
+  {
+   "date": "2026-10-22",
+   "daily_field": 12.3,
+   "hourly_max": 12.2,
+   "hour_of_max": 15,
+   "daytime_max_07_21": 12.2,
+   "gap": 0.0,
+   "rounds_differ": false
+  }
+ ]
+}
