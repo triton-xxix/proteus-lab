@@ -518,6 +518,18 @@ def next_refill_source():
         txt = open(REFILL_SOURCES).read()
     except FileNotFoundError:
         return None
+    rows = unused_refill_rows(txt)
+    return rows[0] if rows else None
+
+
+def unused_refill_rows(txt=None):
+    """Every row of REFILL-SOURCES.md not struck through and with an empty `used`, in order."""
+    if txt is None:
+        try:
+            txt = open(REFILL_SOURCES).read()
+        except FileNotFoundError:
+            return []
+    out = []
     for line in txt.splitlines():
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
         if len(cells) != 5 or not cells[0].isdigit():
@@ -525,8 +537,8 @@ def next_refill_source():
         if cells[1].startswith("~~"):
             continue
         if not cells[4]:
-            return cells[:4]
-    return None
+            out.append(cells[:4])
+    return out
 
 
 def cmd_next(a):
@@ -566,6 +578,11 @@ def cmd_next(a):
         print("do: learn one thing in under ten minutes, then queue ONE build you can finish tonight:")
         print("    python3 %sbin/probe.py add \"...\" --source refill --est 25" % ROOT)
         print("    write today's date in row %s's `used` column of %s, then run `probe.py next` again." % (src[0], REFILL_SOURCES))
+        # F-0043 (23 Oct 2026): the list ran dry on 22 Oct with 51 min left and nobody had been warned.
+        spare = len(unused_refill_rows()) - 1
+        if spare < 2 * REFILL_MAX:
+            print("LOW: %d unused source(s) after this one, under two nights' worth; add at least %d rows to %s before this run ends." % (
+                spare, 2 * REFILL_MAX, REFILL_SOURCES))
         print(bline)
         return
     if not fit:
