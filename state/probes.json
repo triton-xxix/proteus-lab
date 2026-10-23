@@ -1,5 +1,5 @@
 {
- "next_id": 206,
+ "next_id": 207,
  "items": [
   {
    "id": "P-0001",
@@ -4998,6 +4998,32 @@
     "number": "over the last seven nightlies the longest single gap is a desk script or a child wait of under 12 minutes, and no one step owns more than a quarter of a run's span",
     "at": "2026-10-23T23:46:39+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0206",
+   "title": "FActScore-style check of tonight's harvest child: split each kept item's claim and mechanism into atomic facts (numbers, names, counts), look each up in the brief body it was judged from, and count supported, unsupported and contradicted facts",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-23",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T23:48:58+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "about 85 percent of the child's atomic facts found in its source text, and one or two contradicted; shot after looking at the Octocrawl claim, whose five pages a day I had already seen disagree with the README's twenty",
+    "at": "2026-10-23T23:49:19+0100"
    }
   }
  ]
