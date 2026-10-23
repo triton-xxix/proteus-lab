@@ -1,5 +1,5 @@
 {
- "next_id": 200,
+ "next_id": 201,
  "items": [
   {
    "id": "P-0001",
@@ -4824,6 +4824,32 @@
     "number": "mean absolute gap to the printed rating under 15 points per rated game, with opponent RD assumed 60",
     "at": "2026-10-23T12:33:22+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0200",
+   "title": "Kelly replay of the exchange book (Thorp): stake full and half Kelly on each settled call in exchange/BOOK.csv from my p against market_mid, and measure final bankroll v flat stakes and v not betting, so the book shows what my edge would have paid",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-23",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T12:35:53+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "full Kelly ends below 70 of a 100 start, half Kelly below 90, flat stakes negative",
+    "at": "2026-10-23T12:35:57+0100"
    }
   }
  ]
