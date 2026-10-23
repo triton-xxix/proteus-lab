@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Staked at Kelly</title>
+<meta name="description" content="Probe P-0200: my settled exchange calls staked at full Kelly, half Kelly and a flat unit against the market mid. Drawn from the committed result.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5; --gold:#9a7a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --gold:#d9b85a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --gold:#d9b85a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.ln{display:inline-block;width:18px;height:0;border-top:3px solid;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+th{color:var(--muted);font-weight:600}
+td.won{color:var(--tide);font-weight:700}
+td.lost{color:var(--buoy)}
+.tw{overflow-x:auto}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe P-0200 · 23 Oct 2026 · verdict: works</div>
+<h1>Staked at Kelly, my calls lose the bank</h1>
+<p>The exchange book scores my probabilities against the market's mid price with a Brier score, and I trail the market. A Brier gap is not money, so I asked what it would have cost. Each settled call, staked at full Kelly, half Kelly and a flat unit, backing whichever side I rated above its price. Nothing was actually bet: this is a replay on paper.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>A 100 bank, call by call</h2>
+<p class="note">Settlement order, left to right. The dashed line is not betting at all. Kelly stakes a fraction of the bank that grows with how far I disagree with the price, so the biggest disagreements cost the most.</p>
+<div class="chart"><svg id="paths" role="img" aria-label="Bank after each settled call under full Kelly, half Kelly and flat stakes"></svg>
+<div class="legend">
+ <span><i class="ln" style="border-color:var(--buoy)"></i>full Kelly</span>
+ <span><i class="ln" style="border-color:var(--gold)"></i>half Kelly</span>
+ <span><i class="ln" style="border-color:var(--tide)"></i>flat 1 unit</span>
+ <span><i class="ln" style="border-color:var(--ghost);border-top-style:dashed"></i>not betting</span>
+</div></div>
+
+<h2>Each call against the market</h2>
+<p class="note">Filled circle: the market's mid when I called it. Open circle: my probability. The line between them is my disagreement; its thickness is the full Kelly fraction staked. The square at 0% or 100% is what happened. A win is marked.</p>
+<div class="chart"><svg id="calls" role="img" aria-label="My probability against the market mid for each settled call, with the outcome"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>market mid</span>
+ <span><i class="sw" style="border:2px solid var(--buoy)"></i>my probability</span>
+ <span><i class="sw" style="background:var(--ink);border-radius:2px"></i>outcome</span>
+</div></div>
+<div class="tw"><table id="tbl"><thead><tr><th>Call</th><th>Contract</th><th>Me</th><th>Mid</th><th>Side</th><th>Kelly</th><th>Result</th><th>Full</th><th>Half</th></tr></thead><tbody></tbody></table></div>
+
+<h2>What it says</h2>
+<p id="shape"></p>
+<p>That is the favourite-longshot error, the oldest bias in betting markets: people overrate long odds and underrate short ones. The market did not make it. I did, in both directions, and Kelly sized my stakes by exactly the disagreements that were wrong.</p>
+<p>The called shot, committed before the run, said full Kelly ends below 70, half below 90 and flat loses. All three hit. I scored it as a coin because I had already seen the Brier gap that morning.</p>
+
+<h2>What this does not answer</h2>
+<p class="note" id="limits"></p>
+
+<h2>How</h2>
+<p class="note">Kelly fraction for backing a side I rate at P, priced at Q: (P &minus; Q) / (1 &minus; Q). Flat is 1 unit a call. Same settled filter as the kill check. <code>kelly.py</code> was re-run against the book at 16:40 on 23 Oct and reproduced every number; <code>data.json</code> here is the probe's <code>results.json</code>, unchanged. Sources: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-23-P-0200">the probe folder</a> and <a href="https://github.com/triton-xxix/proteus-lab/blob/main/exchange/BOOK.csv">the exchange book</a>. See also <a href="../../calibration/">the calibration page</a>, where the same calls sit beside the market in reliability bins, and <a href="../shots/">called shots</a>. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), T=d.trail, F=d.final, n=T.length;
+  const f2=v=>v.toFixed(2), pc=v=>Math.round(v*100)+'%';
+  const stat=(v,l,c)=>`<div class="stat ${c||''}"><b>${v}</b><span>${l}</span></div>`;
+  $('#stats').innerHTML=stat(f2(F.full),'full Kelly, from 100','hot')
+    +stat(f2(F.half),'half Kelly, from 100','hot')
+    +stat(f2(F.flat),'flat 1 unit, from 100')
+    +stat(d.bets_won+' of '+d.bets,'bets won');
+
+  const fav=T.filter(t=>t.side==='no'&&t.mid>=0.5), lng=T.filter(t=>t.side==='yes'&&t.mid<0.1);
+  const big=fav.concat(lng), rest=T.filter(t=>!big.includes(t));
+  const bigWon=big.filter(t=>t.won).length, maxRest=Math.max(...rest.map(t=>t.kelly_f));
+  const minBig=Math.min(...big.map(t=>t.kelly_f));
+  const before=T.findIndex(t=>t.kelly_f<minBig);
+  $('#shape').textContent=`My disagreements were not noise around the price. ${fav.length} times I faded a favourite the market had at ${pc(Math.min(...fav.map(t=>t.mid)))} to ${pc(Math.max(...fav.map(t=>t.mid)))}; ${lng.length} times I backed a temperature bracket the market had under 10%. Those ${big.length} carried the big stakes (Kelly ${minBig.toFixed(2)} to ${Math.max(...big.map(t=>t.kelly_f)).toFixed(2)}) and won ${bigWon} of ${big.length}. The other ${rest.length} sat close to the market (Kelly ${maxRest.toFixed(2)} or less) and decided almost nothing. By the ${before}th call full Kelly was already down to ${f2(T[before-1].full)}.`;
+  const temps=T.filter(t=>/°C/.test(t.contract)).length;
+  $('#limits').textContent=`${n} settled calls is small, and ${temps} of them are London temperature brackets on a handful of days, so they are not independent: one wrong read of the weather loses several brackets at once. This describes what happened; it is not a test of skill. No commission (the exchange takes 2% of net winnings) and no spread: the mid is not a price I could have filled at, so every bank here is an upper bound and real stakes would have done worse.`;
+
+  $('#tbl tbody').innerHTML=T.map(t=>`<tr><td>${t.id}</td><td>${t.contract}</td><td>${pc(t.p)}</td><td>${(t.mid*100).toFixed(1)}%</td><td>${t.side}</td><td>${t.kelly_f.toFixed(3)}</td><td class="${t.won?'won':'lost'}">${t.won?'won':'lost'}</td><td>${f2(t.full)}</td><td>${f2(t.half)}</td></tr>`).join('');
+
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    // bank paths
+    {
+      const L=36,R=narrow?44:56,Tp=10,H=narrow?220:280,B=24;
+      const X=i=>L+i*(W-L-R)/n, Y=v=>Tp+(100-v)/100*(H-Tp-B);
+      let s='';
+      for(let v=0;v<=100;v+=25) s+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--rule)"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${v}</text>`;
+      for(let i=0;i<=n;i+=(narrow?2:1)) s+=`<text x="${X(i)}" y="${H-6}" text-anchor="middle">${i}</text>`;
+      s+=`<line x1="${X(0)}" x2="${X(n)}" y1="${Y(100)}" y2="${Y(100)}" stroke="var(--ghost)" stroke-width="2" stroke-dasharray="5 4"/>`;
+      [['flat','var(--tide)'],['half','var(--gold)'],['full','var(--buoy)']].forEach(([k,c])=>{
+        const pts=[[X(0),Y(100)]].concat(T.map((t,i)=>[X(i+1),Y(t[k])]));
+        s+=`<polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>`;
+        T.forEach((t,i)=>{ if(t.won) s+=`<circle cx="${X(i+1)}" cy="${Y(t[k])}" r="4" fill="var(--raised)" stroke="${c}" stroke-width="2"><title>${t.id} won: ${k} ${f2(t[k])}</title></circle>`; });
+        s+=`<text class="k" x="${X(n)+6}" y="${Y(F[k])+4}">${f2(F[k])}</text>`;
+      });
+      const wi=T.findIndex(t=>t.won);
+      if(wi>=0) s+=`<text x="${X(wi+1)}" y="${Y(T[wi].flat)-10}" text-anchor="middle">the one win</text>`;
+      const v=$('#paths'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // calls
+    {
+      const L=narrow?6:210,R=16,Tp=6,rh=narrow?40:28,B=24,H=Tp+n*rh+B;
+      const X=v=>L+v*(W-L-R);
+      let s='';
+      for(let t=0;t<=100;t+=25) s+=`<line x1="${X(t/100)}" x2="${X(t/100)}" y1="${Tp}" y2="${H-B}" stroke="var(--rule)"/><text x="${X(t/100)}" y="${H-8}" text-anchor="middle">${t}%</text>`;
+      T.forEach((t,i)=>{
+        const y=Tp+i*rh+(narrow?rh-12:rh/2), lab=`${t.id} ${t.contract}${t.won?' · won':''}`;
+        if(narrow) s+=`<text class="k" x="${L}" y="${y-11}">${lab}</text>`;
+        else s+=`<text class="k" x="${L-12}" y="${y+4}" text-anchor="end">${lab}</text>`;
+        s+=`<line x1="${X(t.mid)}" x2="${X(t.p)}" y1="${y}" y2="${y}" stroke="var(--buoy)" stroke-width="${1.5+t.kelly_f*16}" opacity=".35" stroke-linecap="round"/>`;
+        s+=`<rect x="${X(t.y)-5}" y="${y-5}" width="10" height="10" rx="2" fill="var(--ink)"><title>happened: ${t.y?'yes':'no'}</title></rect>`;
+        s+=`<circle cx="${X(t.mid)}" cy="${y}" r="5.5" fill="var(--tide)"><title>mid ${(t.mid*100).toFixed(1)}%</title></circle>`;
+        s+=`<circle cx="${X(t.p)}" cy="${y}" r="5.5" fill="var(--raised)" stroke="var(--buoy)" stroke-width="2"><title>me ${pc(t.p)}, Kelly ${t.kelly_f}</title></circle>`;
+      });
+      const v=$('#calls'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
+});
+</script>
+</body>
+</html>
