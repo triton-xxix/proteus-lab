@@ -128,9 +128,10 @@ Luke's brief of 29 Sep: read a couple a night on a lesser model and come back wi
 do this, need this". Plan in `/Users/triton/PROTEUS/field-notes/SKOOL-READING-PLAN.md`, queue in
 `/Users/triton/PROTEUS/field-notes/SKOOL-QUEUE.json`. Local files only; pulls happen interactively.
 
-1. `python3 /Users/triton/PROTEUS/bin/skool.py next --n 1`
-   (`--n 1` while step 5f has films queued, so the four spawns are harvest, one Skool, research, Nolan;
-   back to `--n 2` when `nolan.py next` prints STOP for the queue being empty.)
+1. `python3 /Users/triton/PROTEUS/bin/skool.py next --n 2`
+   (back to `--n 2` on 23 Oct 2026, the night `nolan.py next` first printed STOP for every film researched
+   or parked; the four spawns are now harvest, two Skool, research. Run `next` once a night: each call
+   assigns fresh groups, and on 23 Oct a `--n 1` then a `--n 2` assigned three, one more than the spawns left.)
    It prints up to two `GO S-NN model=... prompt=... expect=...` lines, or `STOP` when nothing local
    is left (the run log says so, including which groups need an interactive pull; never invent reading).
 2. For each GO line, Read the prompt file and spawn one child with the **Agent** tool:
@@ -153,9 +154,9 @@ Design in `/Users/triton/PROTEUS/grinder/research/README.md`, sources in `grinde
    mention rows; writes `state/research/YYYY-MM-DD/narrative.md` and `child-prompt.md`, prints the xAI spend).
 2. Read that `child-prompt.md` and spawn one child: `subagent_type` `general-purpose`, `model` `sonnet`,
    no `isolation`, the file's text as the whole prompt. It writes
-   `/Users/triton/PROTEUS/state/agents/research/YYYY-MM-DD-digest.md`. With the harvest, one Skool child
-   and the Nolan child (5f) this is the fourth spawn; if a step used fewer, nothing else takes the slot.
-   It may run alongside the Skool and Nolan children: spawn them in one message.
+   `/Users/triton/PROTEUS/state/agents/research/YYYY-MM-DD-digest.md`. With the harvest and two Skool
+   children this is the fourth spawn (the Nolan queue emptied 23 Oct 2026); if a step used fewer, nothing
+   else takes the slot. It may run alongside the Skool children: spawn them together where the timing allows.
 3. `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/narrative.py ingest` (copies the digest to
    `grinder/research/digests/`, one run-log line, commits the digest and `MENTIONS.csv`).
 
