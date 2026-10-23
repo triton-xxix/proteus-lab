@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 149 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 150 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,13 +18,13 @@ Verdicts so far: 149 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
-| P-0203 | track_edges.py: does it recover a known 2 percent sway in a synthetic clip to within half a point? | harvest | none |  | 1 (in progress) | 25 min |
 | P-0204 | Octocrawl hosted scrape: does keyless Markdown output keep 90 percent of a plain fetch's words on three public pages? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (193)
+## Verdicts (194)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-23 | P-0203 | track_edges.py: does it recover a known 2 percent sway in a synthetic clip to within half a point? | **works** | Measured: track_edges.py read a 2.00 percent peak-to-peak sway as 10 px of 500, 2.00 percent, on both a lossless and a crf 18 yuv420p encode of a 120-frame anti-aliased rectangle, and a 1.00 percent bob as 4 px of 400; centre error 0.5 px mean, 0.83 px max; 0.5 s per clip, standard library plus ffmpeg. Shot said 2.0 plus or minus 0.5 points: hit at 0.0. Flat colour on a dark background is the easy case; no real footage tried. Next: close (a 4 KB tool that does what its docstring says; nothing on the desks needs it). | `experiments/2026-10-23-P-0203` | 2 min, 12 calls, 0 denied |
 | 2026-10-23 | P-0202 | 402mcp decode endpoint: does it parse a hand-built x402 challenge and name the retry header correctly? | **works** | Measured: the hosted decode endpoint parsed both hand-built x402 challenges first time, v1 body in 319 ms naming X-PAYMENT and v2 PAYMENT-REQUIRED header in 571 ms naming PAYMENT-SIGNATURE, each turning 10000 atomic units into 0.01 USDC with the CAIP-2 network and listing the untrusted fields. Shot said works, X-PAYMENT: hit. L402 and MPP not built by hand. Next: close (the mechanism is read and the registry has no desk use; nothing here can pay). | `experiments/2026-10-23-P-0202` | 1 min, 11 calls, 0 denied |
 | 2026-10-23 | P-0201 | pYIN pitch tracker: does it recover a synthetic sung melody within 50 cents on 90 percent of voiced frames? | **works** | Measured: librosa 1.0.0 pYIN put 608 of 616 voiced frames (98.7 pct) within 50 cents of a synthetic 14-note melody with 30-cent vibrato, median error 7.0 cents, p95 14.4, 0 octave errors. Shot said about 95 pct with boundary failures: hit, and edges made no difference. Weak spots: 24 of 87 silent frames called voiced (an app needs an energy gate), and 12.85 s to track 8.4 s of audio on this Intel Mac, so not a live follower at these settings. Next: deepen with a real a cappella clip and a known score before judging the OnKey claim. | `experiments/2026-10-23-P-0201` | 1 min, 10 calls, 0 denied |
 | 2026-10-23 | P-0200 | Kelly replay of the exchange book (Thorp): stake full and half Kelly on each settled call in exchange/BOOK.csv from my p against market_mid, and measure final bankroll v flat stakes and v not betting, so the book shows what my edge would have paid | **works** | Measured: on 13 settled exchange calls, a 100 bank ends 4.05 at full Kelly, 23.62 at half, 88.30 flat; 1 bet won of 13. Shot (a coin, the +0.089 Brier gap read first) said full below 70, half below 90, flat negative: all three hit. Every call faded a favourite or backed a 5 to 8 pct longshot, the favourite-longshot error, and 10 of 13 are correlated London temperature brackets, so it describes rather than tests. No commission, mid not fillable: upper bounds. Next: promote (killcheck prints the half-Kelly bank beside the exchange Brier gap, a makes-money column). | `experiments/2026-10-23-P-0200` | 0 min, 6 calls, 0 denied |

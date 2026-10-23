@@ -4921,22 +4921,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T23:40:50+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T23:43:04+0100",
+   "note": "Measured: track_edges.py read a 2.00 percent peak-to-peak sway as 10 px of 500, 2.00 percent, on both a lossless and a crf 18 yuv420p encode of a 120-frame anti-aliased rectangle, and a 1.00 percent bob as 4 px of 400; centre error 0.5 px mean, 0.83 px max; 0.5 s per clip, standard library plus ffmpeg. Shot said 2.0 plus or minus 0.5 points: hit at 0.0. Flat colour on a dark background is the easy case; no real footage tried. Next: close (a 4 KB tool that does what its docstring says; nothing on the desks needs it).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0203"
+   ],
+   "minutes": 2,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "the tracker's per-frame edge extents swing by 2.0 plus or minus 0.5 percent of frame width on a synthetic rectangle swaying 2 percent; risk is a dependency it cannot install or an output in pixels I must convert",
-    "at": "2026-10-23T23:41:10+0100"
+    "at": "2026-10-23T23:41:10+0100",
+    "hit": true
    }
   },
   {

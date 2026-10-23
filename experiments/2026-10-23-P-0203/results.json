@@ -1,0 +1,68 @@
+{
+ "frame": [
+  500,
+  400
+ ],
+ "fps": 60,
+ "seconds": 2.0,
+ "rect": [
+  160,
+  240
+ ],
+ "tool": "/Users/triton/PROTEUS/sandbox/rossark-motion/track_edges.py",
+ "cases": {
+  "lossless_qp0_yuv444p": {
+   "frames_read": 120,
+   "frames_with_edges": 120,
+   "sway_pp_px_measured": 10.0,
+   "sway_pp_pct_measured": 2.0,
+   "sway_pp_pct_true": 2.0,
+   "sway_error_points": 0.0,
+   "left_range_px": [
+    165,
+    175
+   ],
+   "right_range_px": [
+    324,
+    334
+   ],
+   "width_values": [
+    158,
+    159
+   ],
+   "bob_pp_px_measured": 4,
+   "bob_pp_pct_measured": 1.0,
+   "bob_pp_pct_true": 1.0,
+   "centre_abs_err_px_mean": 0.5,
+   "centre_abs_err_px_max": 0.745,
+   "tool_seconds": 0.48
+  },
+  "crf18_yuv420p": {
+   "frames_read": 120,
+   "frames_with_edges": 120,
+   "sway_pp_px_measured": 10.0,
+   "sway_pp_pct_measured": 2.0,
+   "sway_pp_pct_true": 2.0,
+   "sway_error_points": 0.0,
+   "left_range_px": [
+    166,
+    176
+   ],
+   "right_range_px": [
+    323,
+    333
+   ],
+   "width_values": [
+    157,
+    158,
+    159
+   ],
+   "bob_pp_px_measured": 4,
+   "bob_pp_pct_measured": 1.0,
+   "bob_pp_pct_true": 1.0,
+   "centre_abs_err_px_mean": 0.479,
+   "centre_abs_err_px_max": 0.83,
+   "tool_seconds": 0.45
+  }
+ }
+}
