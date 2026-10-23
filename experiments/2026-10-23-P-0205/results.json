@@ -1,0 +1,710 @@
+{
+ "summary": {
+  "runs": 7,
+  "total_span_min": 168.3,
+  "median_span_min": 23.3,
+  "max_longest_gap_min": 21.8,
+  "runs_with_a_step_over_quarter": [
+   "2026-10-19",
+   "2026-10-22"
+  ],
+  "family_share_all_runs": [
+   {
+    "family": "other Bash",
+    "min": 48.3,
+    "share": 0.287
+   },
+   {
+    "family": "files (Read/Write/Edit)",
+    "min": 45.2,
+    "share": 0.269
+   },
+   {
+    "family": "pitch",
+    "min": 12.2,
+    "share": 0.072
+   },
+   {
+    "family": "probe loop",
+    "min": 11.6,
+    "share": 0.069
+   },
+   {
+    "family": "exchange",
+    "min": 8.8,
+    "share": 0.052
+   },
+   {
+    "family": "grinder rules/score/r01",
+    "min": 7.2,
+    "share": 0.043
+   },
+   {
+    "family": "curl",
+    "min": 4.1,
+    "share": 0.024
+   },
+   {
+    "family": "harvest",
+    "min": 3.6,
+    "share": 0.021
+   },
+   {
+    "family": "narrative",
+    "min": 2.6,
+    "share": 0.015
+   },
+   {
+    "family": "children (Agent)",
+    "min": 1.9,
+    "share": 0.011
+   }
+  ]
+ },
+ "runs": [
+  {
+   "session": "d5fc316b",
+   "date": "2026-10-16",
+   "start": "23:23:39",
+   "end": "23:41:20",
+   "span_min": 17.7,
+   "parent_calls": 190,
+   "child_calls": 26,
+   "denied": 1,
+   "longest_gap_min": 1.7,
+   "longest_gap_share": 0.096,
+   "top_gaps": [
+    {
+     "min": 1.7,
+     "family": "grinder rules/score/r01",
+     "at": "23:28:02",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-rules"
+    },
+    {
+     "min": 0.7,
+     "family": "other Bash",
+     "at": "23:26:43",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-16-home-advantage/home_adv.p"
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "23:25:15",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    },
+    {
+     "min": 0.5,
+     "family": "other Bash",
+     "at": "23:36:06",
+     "detail": "/Users/triton/PROTEUS/sandbox/py312-venv/bin/earshot measure /Users/triton/PROTEUS/sandbox/p0165/film.wav"
+    },
+    {
+     "min": 0.5,
+     "family": "pitch",
+     "at": "23:23:55",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming --days 8"
+    },
+    {
+     "min": 0.4,
+     "family": "other Bash",
+     "at": "23:39:01",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-16-P-0168/kpi.py"
+    }
+   ],
+   "families": [
+    {
+     "family": "other Bash",
+     "min": 6.4,
+     "share": 0.361
+    },
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 2.3,
+     "share": 0.132
+    },
+    {
+     "family": "grinder rules/score/r01",
+     "min": 1.9,
+     "share": 0.107
+    },
+    {
+     "family": "probe loop",
+     "min": 1.8,
+     "share": 0.103
+    },
+    {
+     "family": "exchange",
+     "min": 1.2,
+     "share": 0.066
+    },
+    {
+     "family": "pitch",
+     "min": 1.0,
+     "share": 0.057
+    },
+    {
+     "family": "children (Agent)",
+     "min": 0.6,
+     "share": 0.035
+    },
+    {
+     "family": "killcheck/duecheck/mirror",
+     "min": 0.5,
+     "share": 0.027
+    }
+   ]
+  },
+  {
+   "session": "9fb02aa5",
+   "date": "2026-10-17",
+   "start": "23:23:44",
+   "end": "23:36:28",
+   "span_min": 12.7,
+   "parent_calls": 88,
+   "child_calls": 24,
+   "denied": 0,
+   "longest_gap_min": 1.5,
+   "longest_gap_share": 0.119,
+   "top_gaps": [
+    {
+     "min": 1.5,
+     "family": "grinder rules/score/r01",
+     "at": "23:28:01",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-rules"
+    },
+    {
+     "min": 1.1,
+     "family": "harvest",
+     "at": "23:30:02",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/harvest.py run"
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "23:25:28",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    },
+    {
+     "min": 0.6,
+     "family": "files (Read/Write/Edit)",
+     "at": "23:33:14",
+     "detail": "/private/tmp/claude-502/-Users-triton-PROTEUS/9fb02aa5-7765-4e49-823f-89662b21907b/tasks/bqe16ee4g.output"
+    },
+    {
+     "min": 0.5,
+     "family": "pitch",
+     "at": "23:24:08",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming --days 8"
+    },
+    {
+     "min": 0.5,
+     "family": "files (Read/Write/Edit)",
+     "at": "23:32:46",
+     "detail": "/private/tmp/claude-502/-Users-triton-PROTEUS/9fb02aa5-7765-4e49-823f-89662b21907b/tasks/bqe16ee4g.output"
+    }
+   ],
+   "families": [
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 2.3,
+     "share": 0.181
+    },
+    {
+     "family": "other Bash",
+     "min": 1.8,
+     "share": 0.143
+    },
+    {
+     "family": "grinder rules/score/r01",
+     "min": 1.6,
+     "share": 0.126
+    },
+    {
+     "family": "exchange",
+     "min": 1.3,
+     "share": 0.099
+    },
+    {
+     "family": "harvest",
+     "min": 1.2,
+     "share": 0.096
+    },
+    {
+     "family": "pitch",
+     "min": 0.8,
+     "share": 0.064
+    },
+    {
+     "family": "curl",
+     "min": 0.6,
+     "share": 0.05
+    },
+    {
+     "family": "children (Agent)",
+     "min": 0.5,
+     "share": 0.039
+    }
+   ]
+  },
+  {
+   "session": "aec3b7a3",
+   "date": "2026-10-19",
+   "start": "03:27:31",
+   "end": "04:10:02",
+   "span_min": 42.5,
+   "parent_calls": 129,
+   "child_calls": 23,
+   "denied": 1,
+   "longest_gap_min": 21.8,
+   "longest_gap_share": 0.513,
+   "top_gaps": [
+    {
+     "min": 21.8,
+     "family": "files (Read/Write/Edit)",
+     "at": "03:37:05",
+     "detail": "/private/tmp/claude-502/-Users-triton-PROTEUS/aec3b7a3-e6c2-4b3e-b224-962956c384c2/tasks/be1u5m24i.output"
+    },
+    {
+     "min": 3.7,
+     "family": "pitch",
+     "at": "03:28:05",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming --days 8"
+    },
+    {
+     "min": 1.8,
+     "family": "narrative",
+     "at": "04:00:38",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/research/narrative.py pull"
+    },
+    {
+     "min": 1.4,
+     "family": "other Bash",
+     "at": "04:06:51",
+     "detail": "python3 /Users/triton/PROTEUS/experiments/2026-10-19-P-0179/costcheck.py"
+    },
+    {
+     "min": 1.0,
+     "family": "grinder rules/score/r01",
+     "at": "03:59:22",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-r01"
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "03:32:34",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    }
+   ],
+   "families": [
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 24.7,
+     "share": 0.581
+    },
+    {
+     "family": "other Bash",
+     "min": 4.4,
+     "share": 0.104
+    },
+    {
+     "family": "pitch",
+     "min": 3.9,
+     "share": 0.092
+    },
+    {
+     "family": "narrative",
+     "min": 1.8,
+     "share": 0.043
+    },
+    {
+     "family": "probe loop",
+     "min": 1.5,
+     "share": 0.036
+    },
+    {
+     "family": "exchange",
+     "min": 1.3,
+     "share": 0.03
+    },
+    {
+     "family": "grinder rules/score/r01",
+     "min": 1.2,
+     "share": 0.029
+    },
+    {
+     "family": "killcheck/duecheck/mirror",
+     "min": 0.9,
+     "share": 0.022
+    }
+   ]
+  },
+  {
+   "session": "1f9c03db",
+   "date": "2026-10-19",
+   "start": "23:23:55",
+   "end": "23:47:20",
+   "span_min": 23.4,
+   "parent_calls": 133,
+   "child_calls": 48,
+   "denied": 1,
+   "longest_gap_min": 4.8,
+   "longest_gap_share": 0.205,
+   "top_gaps": [
+    {
+     "min": 4.8,
+     "family": "pitch",
+     "at": "23:24:14",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/pitch/predict.py --upcoming --days 8"
+    },
+    {
+     "min": 3.2,
+     "family": "other Bash",
+     "at": "23:39:06",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/sandbox/skool_transcript.py 'https://www.youtube"
+    },
+    {
+     "min": 2.3,
+     "family": "other Bash",
+     "at": "23:43:23",
+     "detail": "python3 /Users/triton/PROTEUS/experiments/2026-10-19-P-0183/mcts.py --confirm"
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "23:30:16",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    },
+    {
+     "min": 0.6,
+     "family": "files (Read/Write/Edit)",
+     "at": "23:46:17",
+     "detail": "/Users/triton/PROTEUS/state/runs/2026-10-19.md"
+    },
+    {
+     "min": 0.5,
+     "family": "probe loop",
+     "at": "23:42:36",
+     "detail": "python3 /Users/triton/PROTEUS/bin/probe.py next --refill"
+    }
+   ],
+   "families": [
+    {
+     "family": "other Bash",
+     "min": 7.9,
+     "share": 0.337
+    },
+    {
+     "family": "pitch",
+     "min": 5.0,
+     "share": 0.214
+    },
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 3.4,
+     "share": 0.144
+    },
+    {
+     "family": "probe loop",
+     "min": 1.7,
+     "share": 0.073
+    },
+    {
+     "family": "exchange",
+     "min": 1.3,
+     "share": 0.056
+    },
+    {
+     "family": "children (Agent)",
+     "min": 0.8,
+     "share": 0.036
+    },
+    {
+     "family": "curl",
+     "min": 0.6,
+     "share": 0.025
+    },
+    {
+     "family": "grinder rules/score/r01",
+     "min": 0.6,
+     "share": 0.024
+    }
+   ]
+  },
+  {
+   "session": "7958ee49",
+   "date": "2026-10-20",
+   "start": "23:24:09",
+   "end": "23:47:29",
+   "span_min": 23.3,
+   "parent_calls": 157,
+   "child_calls": 39,
+   "denied": 0,
+   "longest_gap_min": 4.3,
+   "longest_gap_share": 0.184,
+   "top_gaps": [
+    {
+     "min": 4.3,
+     "family": "other Bash",
+     "at": "23:34:19",
+     "detail": "tail -5 /Users/triton/PROTEUS/grinder/research/MENTIONS.csv"
+    },
+    {
+     "min": 1.1,
+     "family": "harvest",
+     "at": "23:29:33",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/harvest.py run"
+    },
+    {
+     "min": 1.1,
+     "family": "other Bash",
+     "at": "23:41:23",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-20-P-0188/mot_sample.py run "
+    },
+    {
+     "min": 1.0,
+     "family": "files (Read/Write/Edit)",
+     "at": "23:42:45",
+     "detail": "/Users/triton/PROTEUS/experiments/2026-10-20-P-0188/all-ages-2025-12.txt"
+    },
+    {
+     "min": 0.8,
+     "family": "other ToolSearch",
+     "at": "23:32:31",
+     "detail": ""
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "23:26:19",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    }
+   ],
+   "families": [
+    {
+     "family": "other Bash",
+     "min": 9.4,
+     "share": 0.405
+    },
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 3.6,
+     "share": 0.156
+    },
+    {
+     "family": "probe loop",
+     "min": 1.8,
+     "share": 0.079
+    },
+    {
+     "family": "exchange",
+     "min": 1.3,
+     "share": 0.054
+    },
+    {
+     "family": "harvest",
+     "min": 1.2,
+     "share": 0.052
+    },
+    {
+     "family": "grinder rules/score/r01",
+     "min": 0.9,
+     "share": 0.039
+    },
+    {
+     "family": "pitch",
+     "min": 0.8,
+     "share": 0.035
+    },
+    {
+     "family": "other ToolSearch",
+     "min": 0.8,
+     "share": 0.034
+    }
+   ]
+  },
+  {
+   "session": "361172cb",
+   "date": "2026-10-22",
+   "start": "23:23:48",
+   "end": "23:49:20",
+   "span_min": 25.5,
+   "parent_calls": 197,
+   "child_calls": 46,
+   "denied": 2,
+   "longest_gap_min": 7.0,
+   "longest_gap_share": 0.273,
+   "top_gaps": [
+    {
+     "min": 7.0,
+     "family": "other Bash",
+     "at": "23:30:34",
+     "detail": "date -u"
+    },
+    {
+     "min": 1.3,
+     "family": "other Bash",
+     "at": "23:26:13",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/wishes.py pull"
+    },
+    {
+     "min": 0.9,
+     "family": "other Bash",
+     "at": "23:41:21",
+     "detail": "python3 /Users/triton/PROTEUS/experiments/2026-10-22-P-0196/run.py"
+    },
+    {
+     "min": 0.8,
+     "family": "grinder rules/score/r01",
+     "at": "23:37:33",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/paper.py --apply-r01"
+    },
+    {
+     "min": 0.8,
+     "family": "other Bash",
+     "at": "23:44:23",
+     "detail": "/Users/triton/PROTEUS/sandbox/p0195/venv/bin/python3 -m pytest -q --rootdir /Users/triton/PROTEUS/sandbox/p019"
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "23:25:15",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    }
+   ],
+   "families": [
+    {
+     "family": "other Bash",
+     "min": 13.7,
+     "share": 0.538
+    },
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 3.7,
+     "share": 0.145
+    },
+    {
+     "family": "probe loop",
+     "min": 1.9,
+     "share": 0.076
+    },
+    {
+     "family": "exchange",
+     "min": 1.2,
+     "share": 0.048
+    },
+    {
+     "family": "grinder rules/score/r01",
+     "min": 1.0,
+     "share": 0.04
+    },
+    {
+     "family": "narrative",
+     "min": 0.8,
+     "share": 0.029
+    },
+    {
+     "family": "pitch",
+     "min": 0.7,
+     "share": 0.025
+    },
+    {
+     "family": "preregister/dash",
+     "min": 0.4,
+     "share": 0.017
+    }
+   ]
+  },
+  {
+   "session": "17edb0f9",
+   "date": "2026-10-23",
+   "start": "23:24:02",
+   "end": "23:47:14",
+   "span_min": 23.2,
+   "parent_calls": 139,
+   "child_calls": 61,
+   "denied": 1,
+   "longest_gap_min": 1.1,
+   "longest_gap_share": 0.05,
+   "top_gaps": [
+    {
+     "min": 1.1,
+     "family": "harvest",
+     "at": "23:28:37",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/harvest.py run"
+    },
+    {
+     "min": 0.7,
+     "family": "exchange",
+     "at": "23:30:50",
+     "detail": "/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/exchange/exchange.py snapshot"
+    },
+    {
+     "min": 0.7,
+     "family": "curl",
+     "at": "23:43:39",
+     "detail": "curl -s https://api.github.com/repos/77777r7/octocrawl"
+    },
+    {
+     "min": 0.7,
+     "family": "files (Read/Write/Edit)",
+     "at": "23:32:38",
+     "detail": "/Users/triton/PROTEUS/field-notes/SEEN.md"
+    },
+    {
+     "min": 0.7,
+     "family": "other Bash",
+     "at": "23:37:50",
+     "detail": "/Users/triton/PROTEUS/sandbox/py312-venv/bin/python3 /Users/triton/PROTEUS/experiments/2026-10-23-P-0201/pyin_"
+    },
+    {
+     "min": 0.7,
+     "family": "curl",
+     "at": "23:39:25",
+     "detail": "curl -s https://402mcp.org/api/v1/schemes/x402"
+    }
+   ],
+   "families": [
+    {
+     "family": "files (Read/Write/Edit)",
+     "min": 5.2,
+     "share": 0.223
+    },
+    {
+     "family": "other Bash",
+     "min": 4.7,
+     "share": 0.202
+    },
+    {
+     "family": "probe loop",
+     "min": 2.9,
+     "share": 0.126
+    },
+    {
+     "family": "curl",
+     "min": 2.9,
+     "share": 0.124
+    },
+    {
+     "family": "harvest",
+     "min": 1.2,
+     "share": 0.054
+    },
+    {
+     "family": "exchange",
+     "min": 1.2,
+     "share": 0.053
+    },
+    {
+     "family": "preregister/dash",
+     "min": 0.9,
+     "share": 0.04
+    },
+    {
+     "family": "skool",
+     "min": 0.9,
+     "share": 0.037
+    }
+   ]
+  }
+ ]
+}
