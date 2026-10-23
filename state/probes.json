@@ -4892,22 +4892,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T23:38:44+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T23:40:41+0100",
+   "note": "Measured: the hosted decode endpoint parsed both hand-built x402 challenges first time, v1 body in 319 ms naming X-PAYMENT and v2 PAYMENT-REQUIRED header in 571 ms naming PAYMENT-SIGNATURE, each turning 10000 atomic units into 0.01 USDC with the CAIP-2 network and listing the untrusted fields. Shot said works, X-PAYMENT: hit. L402 and MPP not built by hand. Next: close (the mechanism is read and the registry has no desk use; nothing here can pay).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0202"
+   ],
+   "minutes": 1,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "the decode endpoint returns scheme x402 and names X-PAYMENT as the retry header for a hand-built challenge; the risk is that no public endpoint is up and the server has to run locally",
-    "at": "2026-10-23T23:39:04+0100"
+    "at": "2026-10-23T23:39:04+0100",
+    "hit": true
    }
   },
   {
