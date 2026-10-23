@@ -4834,22 +4834,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-23T12:35:53+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-23T12:36:34+0100",
+   "note": "Measured: on 13 settled exchange calls, a 100 bank ends 4.05 at full Kelly, 23.62 at half, 88.30 flat; 1 bet won of 13. Shot (a coin, the +0.089 Brier gap read first) said full below 70, half below 90, flat negative: all three hit. Every call faded a favourite or backed a 5 to 8 pct longshot, the favourite-longshot error, and 10 of 13 are correlated London temperature brackets, so it describes rather than tests. No commission, mid not fillable: upper bounds. Next: promote (killcheck prints the half-Kelly bank beside the exchange Brier gap, a makes-money column).",
+   "artefacts": [
+    "experiments/2026-10-23-P-0200"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "full Kelly ends below 70 of a 100 start, half Kelly below 90, flat stakes negative",
-    "at": "2026-10-23T12:35:57+0100"
+    "at": "2026-10-23T12:35:57+0100",
+    "hit": true
    }
   }
  ]

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 146 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 147 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
-## Queue (6 open)
+## Queue (5 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -18,12 +18,12 @@ Verdicts so far: 146 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
-| P-0200 | Kelly replay of the exchange book (Thorp): stake full and half Kelly on each settled call in exchange/BOOK.csv from my p against market_mid, and measure final bankroll v flat stakes and v not betting, so the book shows what my edge would have paid | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (190)
+## Verdicts (191)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-23 | P-0200 | Kelly replay of the exchange book (Thorp): stake full and half Kelly on each settled call in exchange/BOOK.csv from my p against market_mid, and measure final bankroll v flat stakes and v not betting, so the book shows what my edge would have paid | **works** | Measured: on 13 settled exchange calls, a 100 bank ends 4.05 at full Kelly, 23.62 at half, 88.30 flat; 1 bet won of 13. Shot (a coin, the +0.089 Brier gap read first) said full below 70, half below 90, flat negative: all three hit. Every call faded a favourite or backed a 5 to 8 pct longshot, the favourite-longshot error, and 10 of 13 are correlated London temperature brackets, so it describes rather than tests. No commission, mid not fillable: upper bounds. Next: promote (killcheck prints the half-Kelly bank beside the exchange Brier gap, a makes-money column). | `experiments/2026-10-23-P-0200` | 0 min, 6 calls, 0 denied |
 | 2026-10-23 | P-0199 | Glicko-2 replay: rebuild my Lichess rating game by game from games/lichess/GAMES.csv with Glickman's Glicko-2 example (glicko.net/glicko/glicko2.pdf) and measure the mean absolute gap to the rating Lichess printed after each rated game | **works** | Measured: Glicko-2 per Glickman with Lichess provisional start RD 500 and opponent RD 60 reproduces my 47 rated games to 1.1 points a game one-step and 2.4 chained, final 3028.1 v printed 3028. Shot said under 15: one-step hit at every setting (worst 7.9); chained only from start RD 350 up, and I picked 500 after 60 and 150 missed (500 is the Lichess default, not a fit). Opponent RD 150 drifts 10 high. Next: promote (lichess.py computes the expected after and the expected gain per challenge from this replay). | `experiments/2026-10-23-P-0199` | 1 min, 10 calls, 0 denied |
 | 2026-10-23 | P-0198 | Called shots reliability: bin every scored called shot by stated probability, plot mean forecast v hit rate with counts (sklearn calibration_curve method), and Murphy-decompose the Brier score into reliability, resolution and uncertainty | **works** | Measured: Brier 0.166 = reliability 0.085 - resolution 0.021 + uncertainty 0.102 on 52 scored shots; hit rate 0.885 against mean stated p 0.61, every bin 0.5 to 0.9 hit 0.75 or better. Shot said reliability about 0.03 of a Brier near 0.17: Brier right, reliability nearly 3x, so the number missed. Saying works at 0.885 every time would score 0.102 and beat me; works calls hit 43 of 45, other verdicts 3 of 7. I am underconfident, not undiscriminating. Next: promote (add REL/RES/UNC and the base-rate Brier to probe.py shots output, and default works shots near 0.9). | `experiments/2026-10-23-P-0198` | 0 min, 8 calls, 0 denied |
 | 2026-10-22 | P-0197 | Graduation watcher mint check: how many closed.jsonl rows carry a quote token (USDC EPjFWdd5, wSOL So111) as the mint, by window, read without opening P or exits | **works** | USDC is the mint on 5 of 22,263 watcher rows, all passing the G2 counted filter (3 of 882 counted G2 trades, 0.3%); two other mints I believe are wrapped BTC and ETH recur 3 and 2 times among G2 counted; wSOL and USDT never. The watcher sometimes takes a pool's established side as the token; P-0159 should report these as a stated exclusion. | `experiments/2026-10-22-P-0197` | 0 min, 5 calls, 0 denied |
