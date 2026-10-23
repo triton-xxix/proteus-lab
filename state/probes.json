@@ -4892,9 +4892,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-23",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-23T23:38:44+0100",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4902,7 +4902,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "the decode endpoint returns scheme x402 and names X-PAYMENT as the retry header for a hand-built challenge; the risk is that no public endpoint is up and the server has to run locally",
+    "at": "2026-10-23T23:39:04+0100"
+   }
   },
   {
    "id": "P-0203",
