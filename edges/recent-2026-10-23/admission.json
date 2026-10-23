@@ -1,0 +1,444 @@
+{
+ "run_at": "2026-10-23T00:57:24+00:00",
+ "E-003": {
+  "n": 57,
+  "mean_net_pct": -0.199,
+  "median_net_pct": 0.056,
+  "winners": 30,
+  "winners_needed": 36,
+  "control_mean_pct": 0.14,
+  "control_median_pct": 0.176,
+  "mean_rank_in_draws": 0.463,
+  "perm_p": 0.889,
+  "cost_round_trip_pct": 0.05,
+  "admitted": false,
+  "window": "2026-05-26 to 2026-10-16, 21 weeks, nine ETFs",
+  "trades": [
+   {
+    "etf": "SPY",
+    "monday": "2026-08-17",
+    "exit": "2026-08-21",
+    "net_pct": -0.949
+   },
+   {
+    "etf": "SPY",
+    "monday": "2026-08-24",
+    "exit": "2026-08-28",
+    "net_pct": 0.72
+   },
+   {
+    "etf": "SPY",
+    "monday": "2026-08-31",
+    "exit": "2026-09-04",
+    "net_pct": 0.359
+   },
+   {
+    "etf": "SPY",
+    "monday": "2026-09-08",
+    "exit": "2026-09-11",
+    "net_pct": -0.268
+   },
+   {
+    "etf": "SPY",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": 0.056
+   },
+   {
+    "etf": "SPY",
+    "monday": "2026-09-28",
+    "exit": "2026-10-02",
+    "net_pct": 0.476
+   },
+   {
+    "etf": "QQQ",
+    "monday": "2026-07-13",
+    "exit": "2026-07-17",
+    "net_pct": -2.356
+   },
+   {
+    "etf": "QQQ",
+    "monday": "2026-07-27",
+    "exit": "2026-07-31",
+    "net_pct": 0.811
+   },
+   {
+    "etf": "QQQ",
+    "monday": "2026-08-24",
+    "exit": "2026-08-28",
+    "net_pct": 1.381
+   },
+   {
+    "etf": "QQQ",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": 1.68
+   },
+   {
+    "etf": "QQQ",
+    "monday": "2026-09-28",
+    "exit": "2026-10-02",
+    "net_pct": 1.722
+   },
+   {
+    "etf": "QQQ",
+    "monday": "2026-10-12",
+    "exit": "2026-10-16",
+    "net_pct": -4.908
+   },
+   {
+    "etf": "DIA",
+    "monday": "2026-05-26",
+    "exit": "2026-05-29",
+    "net_pct": 1.045
+   },
+   {
+    "etf": "DIA",
+    "monday": "2026-07-20",
+    "exit": "2026-07-24",
+    "net_pct": 0.108
+   },
+   {
+    "etf": "DIA",
+    "monday": "2026-08-17",
+    "exit": "2026-08-21",
+    "net_pct": -0.419
+   },
+   {
+    "etf": "DIA",
+    "monday": "2026-08-31",
+    "exit": "2026-09-04",
+    "net_pct": 0.422
+   },
+   {
+    "etf": "DIA",
+    "monday": "2026-09-08",
+    "exit": "2026-09-11",
+    "net_pct": -0.474
+   },
+   {
+    "etf": "IWM",
+    "monday": "2026-07-13",
+    "exit": "2026-07-17",
+    "net_pct": 0.141
+   },
+   {
+    "etf": "IWM",
+    "monday": "2026-08-24",
+    "exit": "2026-08-28",
+    "net_pct": -0.795
+   },
+   {
+    "etf": "IWM",
+    "monday": "2026-08-31",
+    "exit": "2026-09-04",
+    "net_pct": 0.658
+   },
+   {
+    "etf": "IWM",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": -1.373
+   },
+   {
+    "etf": "IWM",
+    "monday": "2026-09-28",
+    "exit": "2026-10-02",
+    "net_pct": 0.486
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-06-01",
+    "exit": "2026-06-05",
+    "net_pct": -2.137
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-06-15",
+    "exit": "2026-06-18",
+    "net_pct": 0.267
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-07-13",
+    "exit": "2026-07-17",
+    "net_pct": 0.037
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-08-10",
+    "exit": "2026-08-14",
+    "net_pct": 0.533
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-08-17",
+    "exit": "2026-08-21",
+    "net_pct": -0.244
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-08-24",
+    "exit": "2026-08-28",
+    "net_pct": -0.337
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-08-31",
+    "exit": "2026-09-04",
+    "net_pct": 0.788
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-09-08",
+    "exit": "2026-09-11",
+    "net_pct": -1.034
+   },
+   {
+    "etf": "EFA",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": -0.881
+   },
+   {
+    "etf": "EEM",
+    "monday": "2026-07-13",
+    "exit": "2026-07-17",
+    "net_pct": -1.926
+   },
+   {
+    "etf": "EEM",
+    "monday": "2026-08-24",
+    "exit": "2026-08-28",
+    "net_pct": 1.508
+   },
+   {
+    "etf": "EEM",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": 1.526
+   },
+   {
+    "etf": "EEM",
+    "monday": "2026-09-28",
+    "exit": "2026-10-02",
+    "net_pct": 0.649
+   },
+   {
+    "etf": "EEM",
+    "monday": "2026-10-12",
+    "exit": "2026-10-16",
+    "net_pct": -5.039
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-06-01",
+    "exit": "2026-06-05",
+    "net_pct": -0.714
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-06-15",
+    "exit": "2026-06-18",
+    "net_pct": -1.673
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-07-20",
+    "exit": "2026-07-24",
+    "net_pct": 1.761
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-08-10",
+    "exit": "2026-08-14",
+    "net_pct": -0.524
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-08-17",
+    "exit": "2026-08-21",
+    "net_pct": 1.57
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-08-31",
+    "exit": "2026-09-04",
+    "net_pct": 0.405
+   },
+   {
+    "etf": "EWU",
+    "monday": "2026-09-08",
+    "exit": "2026-09-11",
+    "net_pct": -0.898
+   },
+   {
+    "etf": "EWJ",
+    "monday": "2026-07-13",
+    "exit": "2026-07-17",
+    "net_pct": -2.455
+   },
+   {
+    "etf": "EWJ",
+    "monday": "2026-08-10",
+    "exit": "2026-08-14",
+    "net_pct": 2.199
+   },
+   {
+    "etf": "EWJ",
+    "monday": "2026-08-24",
+    "exit": "2026-08-28",
+    "net_pct": 1.036
+   },
+   {
+    "etf": "EWJ",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": -0.644
+   },
+   {
+    "etf": "EWJ",
+    "monday": "2026-09-28",
+    "exit": "2026-10-02",
+    "net_pct": 2.108
+   },
+   {
+    "etf": "EWJ",
+    "monday": "2026-10-12",
+    "exit": "2026-10-16",
+    "net_pct": -2.557
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-06-15",
+    "exit": "2026-06-18",
+    "net_pct": -0.815
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-07-13",
+    "exit": "2026-07-17",
+    "net_pct": -0.22
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-07-20",
+    "exit": "2026-07-24",
+    "net_pct": 0.562
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-08-10",
+    "exit": "2026-08-14",
+    "net_pct": 0.611
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-08-17",
+    "exit": "2026-08-21",
+    "net_pct": 0.496
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-08-31",
+    "exit": "2026-09-04",
+    "net_pct": -0.819
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-09-08",
+    "exit": "2026-09-11",
+    "net_pct": -1.657
+   },
+   {
+    "etf": "EWG",
+    "monday": "2026-09-14",
+    "exit": "2026-09-18",
+    "net_pct": -1.361
+   }
+  ]
+ },
+ "E-004": {
+  "n": 12,
+  "mean_net_pct": -0.096,
+  "median_net_pct": 0.091,
+  "winners": 7,
+  "winners_needed": 8,
+  "control_mean_pct": 0.118,
+  "control_median_pct": 0.181,
+  "mean_rank_in_draws": 0.447,
+  "perm_p": 0.8055,
+  "cost_round_trip_pct": 0.05,
+  "admitted": false,
+  "window": "2025-09-05 to 2026-10-02, last 12 first Fridays",
+  "other_fridays": {
+   "n": 42,
+   "mean_net_pct": -0.026
+  },
+  "trades": [
+   {
+    "friday": "2025-09-05",
+    "net_pct": -0.34
+   },
+   {
+    "friday": "2025-10-03",
+    "net_pct": -0.051
+   },
+   {
+    "friday": "2025-11-07",
+    "net_pct": 0.048
+   },
+   {
+    "friday": "2025-12-05",
+    "net_pct": 0.14
+   },
+   {
+    "friday": "2026-01-02",
+    "net_pct": 0.133
+   },
+   {
+    "friday": "2026-02-06",
+    "net_pct": 1.868
+   },
+   {
+    "friday": "2026-03-06",
+    "net_pct": -1.361
+   },
+   {
+    "friday": "2026-05-01",
+    "net_pct": 0.227
+   },
+   {
+    "friday": "2026-06-05",
+    "net_pct": -2.631
+   },
+   {
+    "friday": "2026-08-07",
+    "net_pct": 0.562
+   },
+   {
+    "friday": "2026-09-04",
+    "net_pct": -0.435
+   },
+   {
+    "friday": "2026-10-02",
+    "net_pct": 0.69
+   }
+  ]
+ },
+ "E-006": {
+  "n": 0,
+  "per_coin": {
+   "BTCUSDT": {
+    "window": "2026-09-25 to 2026-10-15",
+    "signal_days": 0
+   },
+   "ETHUSDT": {
+    "window": "2026-09-25 to 2026-10-15",
+    "signal_days": 0
+   }
+  },
+  "trades": [],
+  "note": "7-day holds inside a 21-day window: event and control holds overlap; trades on neighbouring days are near copies"
+ }
+}

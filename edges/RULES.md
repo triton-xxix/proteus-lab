@@ -67,3 +67,9 @@ and its data feeds another candidate.
 retired), admitted date, window used, admission numbers, kill line, forward result so far.
 `edges.py status` prints it. `edges.py score` fills whatever the watchers detected. Both run in the
 nightly after the systems book; step 4's commit picks up `edges/` with the other desks.
+
+## Standing order (Luke, 23 Oct 2026)
+
+Keep testing. Any strategy found anywhere joins the register as a candidate the same day and gets a
+recent-window admission test within a week. A rejected edge can be retested on a fresh window about
+monthly, as a new reading on its row, never by reusing the window that rejected it.
