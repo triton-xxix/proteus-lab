@@ -1,5 +1,5 @@
 {
- "next_id": 214,
+ "next_id": 215,
  "items": [
   {
    "id": "P-0001",
@@ -5209,6 +5209,28 @@
     "Bash `bun run /Users/triton/PROTEUS/experiments/2026-10-24-P-0213/harness.ts`",
     "Bash `node --experimental-strip-types /Users/triton/PROTEUS/experiments/2026-10-24-P-0213/harnes`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0214",
+   "title": "Lague's quiescence search: on positions from my own Lichess games, how much closer does a depth-3 negamax with quiescence get to Stockfish's move and eval than depth-3 without it?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-24",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-24T23:40:48+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-24T23:43:16+0100",
+   "note": "Built Lague's negamax twice (alpha-beta, material plus PST, MVV-LVA, depth 3), with and without a capture-only quiescence search, on 32 positions from my last 8 Lichess games with Stockfish 19 depth 14 as referee. Quiescence: move agreement 17 v 18 of 32, mean move cost 61 v 75 cp, blunders over 200 cp 3 v 4, eval error identical at 197 cp, 2.8x the nodes; cheaper move in 12 positions, dearer in 16. Shot (blunders halved, agreement up ten points) missed; the evaluation, two pawns adrift, is the limit, as Lague says himself at 28:18.",
+   "artefacts": [
+    "experiments/2026-10-24-P-0214"
+   ],
+   "minutes": 2,
+   "calls": 8,
+   "denied": [],
    "luke": false
   }
  ]

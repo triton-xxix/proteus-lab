@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 158 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
+Verdicts so far: 159 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 158 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 
-## Verdicts (202)
+## Verdicts (203)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-24 | P-0214 | Lague's quiescence search: on positions from my own Lichess games, how much closer does a depth-3 negamax with quiescence get to Stockfish's move and eval than depth-3 without it? | **works** | Built Lague's negamax twice (alpha-beta, material plus PST, MVV-LVA, depth 3), with and without a capture-only quiescence search, on 32 positions from my last 8 Lichess games with Stockfish 19 depth 14 as referee. Quiescence: move agreement 17 v 18 of 32, mean move cost 61 v 75 cp, blunders over 200 cp 3 v 4, eval error identical at 197 cp, 2.8x the nodes; cheaper move in 12 positions, dearer in 16. Shot (blunders halved, agreement up ten points) missed; the evaluation, two pawns adrift, is the limit, as Lague says himself at 28:18. | `experiments/2026-10-24-P-0214` | 2 min, 8 calls, 0 denied |
 | 2026-10-24 | P-0213 | agent-usage-guard: does its hook warn on a synthetic transcript with a stale cache and large context? | **works** | Not a transcript reader: a mods plugin whose core takes context as input plus cache read plus cache write from the last API response. Fourteen cases through promptGate under plain node: asks compact-then-send at exactly 150,000 tokens and 3,600 s idle (149,999 and 59 min pass), headless gets one free heavy resume then a drop, notifications never held, 273k real context from tonight asked at 2 h and passed at 1 min; 76 us a call. Shot held. Adapter untested (needs an interactive session and claude plugin test); bun and node --experimental-strip-types denied, plain node ran it. | `experiments/2026-10-24-P-0213` | 2 min, 23 calls, 3 denied |
 | | | | | denied: Bash `node --version`; Bash `bun run /Users/triton/PROTEUS/experiments/2026-10-24-P-0213/harness.ts`; Bash `node --experimental-strip-types /Users/triton/PROTEUS/experiments/2026-10-24-P-0213/harnes` | | |
 | 2026-10-24 | P-0211 | Noise-area momentum, VWAP trailing stop (deepen of P-0210, the paper's headline version): same 14-day band entry, but the stop is the day's VWAP (long exits when a bar's low reaches VWAP, short when a bar's high does), flat at the close; run through the edges/scan ladder on the stock set with experiments/2026-10-24-P-0210/noise_area.py as the base; report W1 to W3 net, rungs, pooled p, SPY W1. Artefact: experiments/ README, script, results.json. | **works** | Honest fills (exit at the close of the bar that touched VWAP): W1 191 trades net -7.71%, win 30.9%, p 0.59, rungs 0; W2 +7.17%, W3 +3.64%; pooled 498 trades +3.09% p 0.15. Shot held on all four parts (W1 below zero, better than -8.97%, wins above 30%, rungs 0). First run filled stops at the exit bar VWAP, a look-ahead: 317 of 1442 stop exits were at prices outside the bar range and it gave +42.73% pooled, 3 rungs, p 0.00. Same trades, +3.1% v +42.7%. Lesson: a stop computed from the bar it fires in must fill at that bar close; scan.py already does. Noise-area family not a forward candidate with P-0210. Next: close. | `experiments/2026-10-24-P-0211` | 2 min, 9 calls, 0 denied |

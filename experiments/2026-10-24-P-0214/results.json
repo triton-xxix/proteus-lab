@@ -1,0 +1,932 @@
+{
+ "depth": 3,
+ "sf_depth": 14,
+ "plies": [
+  16,
+  24,
+  32,
+  40
+ ],
+ "summary": {
+  "plain": {
+   "positions": 32,
+   "agree_with_stockfish": 18,
+   "agree_pct": 56.2,
+   "mean_abs_eval_err_cp": 197.3,
+   "median_abs_eval_err_cp": 146,
+   "mean_move_cost_cp": 74.9,
+   "blunders_over_200cp": 4,
+   "mean_nodes": 1792,
+   "mean_secs": 0.17
+  },
+  "quiescence": {
+   "positions": 32,
+   "agree_with_stockfish": 17,
+   "agree_pct": 53.1,
+   "mean_abs_eval_err_cp": 196.9,
+   "median_abs_eval_err_cp": 125,
+   "mean_move_cost_cp": 60.9,
+   "blunders_over_200cp": 3,
+   "mean_nodes": 5086,
+   "mean_secs": 0.64
+  }
+ },
+ "rows": [
+  {
+   "game": "Jyu3vNdr",
+   "opponent": "openingsbot",
+   "ply": 16,
+   "fen": "r1bqkb1r/ppp2ppp/8/4p3/1n6/1PNP4/1PP1NPPP/R1BQK2R w KQkq - 2 9",
+   "sf_move": "e1g1",
+   "sf_cp": -46,
+   "plain": {
+    "move": "e1g1",
+    "cp": 100,
+    "nodes": 2468,
+    "secs": 0.24,
+    "agree": true,
+    "abs_err": 146,
+    "sf_cp_after_move": -46,
+    "cost_cp": 0
+   },
+   "quiescence": {
+    "move": "c1e3",
+    "cp": 25,
+    "nodes": 6807,
+    "secs": 0.9,
+    "agree": false,
+    "abs_err": 71,
+    "sf_cp_after_move": -76,
+    "cost_cp": 30
+   }
+  },
+  {
+   "game": "Jyu3vNdr",
+   "opponent": "openingsbot",
+   "ply": 24,
+   "fen": "r1bq1rk1/ppp1b1pp/8/4pp1Q/R7/1PNP2N1/1Pn2PPP/2B2RK1 w - - 0 13",
+   "sf_move": "h5e2",
+   "sf_cp": -248,
+   "plain": {
+    "move": "h5e2",
+    "cp": 180,
+    "nodes": 2937,
+    "secs": 0.26,
+    "agree": true,
+    "abs_err": 428,
+    "sf_cp_after_move": -256,
+    "cost_cp": 8
+   },
+   "quiescence": {
+    "move": "h5e2",
+    "cp": -115,
+    "nodes": 10267,
+    "secs": 1.32,
+    "agree": true,
+    "abs_err": 133,
+    "sf_cp_after_move": -260,
+    "cost_cp": 12
+   }
+  },
+  {
+   "game": "Jyu3vNdr",
+   "opponent": "openingsbot",
+   "ply": 32,
+   "fen": "r1b2rk1/pp2b1pp/8/3qQp2/Rn1p4/1P4N1/1P3PPP/2B2RK1 w - - 0 17",
+   "sf_move": "e5e7",
+   "sf_cp": -204,
+   "plain": {
+    "move": "e5e7",
+    "cp": 265,
+    "nodes": 1093,
+    "secs": 0.1,
+    "agree": true,
+    "abs_err": 469,
+    "sf_cp_after_move": -222,
+    "cost_cp": 18
+   },
+   "quiescence": {
+    "move": "e5e7",
+    "cp": -150,
+    "nodes": 3189,
+    "secs": 0.37,
+    "agree": true,
+    "abs_err": 54,
+    "sf_cp_after_move": -219,
+    "cost_cp": 15
+   }
+  },
+  {
+   "game": "Jyu3vNdr",
+   "opponent": "openingsbot",
+   "ply": 40,
+   "fen": "3r1rk1/pp4pp/2n1b3/4qp2/R2p1N1Q/1P6/1P3PPP/2B2RK1 w - - 7 21",
+   "sf_move": "c1d2",
+   "sf_cp": -227,
+   "plain": {
+    "move": "f4e6",
+    "cp": 350,
+    "nodes": 1833,
+    "secs": 0.16,
+    "agree": false,
+    "abs_err": 577,
+    "sf_cp_after_move": -334,
+    "cost_cp": 107
+   },
+   "quiescence": {
+    "move": "f4e6",
+    "cp": -150,
+    "nodes": 4283,
+    "secs": 0.49,
+    "agree": false,
+    "abs_err": 77,
+    "sf_cp_after_move": -404,
+    "cost_cp": 177
+   }
+  },
+  {
+   "game": "EbyX8abj",
+   "opponent": "goldfish-engine",
+   "ply": 16,
+   "fen": "1rbqk2r/2pp1ppp/p4n2/1pb1n3/P3P3/1B6/1PPP1PPP/RNBQ1RK1 w k - 0 9",
+   "sf_move": "d2d4",
+   "sf_cp": 38,
+   "plain": {
+    "move": "d2d4",
+    "cp": 20,
+    "nodes": 799,
+    "secs": 0.09,
+    "agree": true,
+    "abs_err": 18,
+    "sf_cp_after_move": 38,
+    "cost_cp": 0
+   },
+   "quiescence": {
+    "move": "d2d4",
+    "cp": -15,
+    "nodes": 2108,
+    "secs": 0.28,
+    "agree": true,
+    "abs_err": 53,
+    "sf_cp_after_move": 39,
+    "cost_cp": -1
+   }
+  },
+  {
+   "game": "EbyX8abj",
+   "opponent": "goldfish-engine",
+   "ply": 24,
+   "fen": "1rbqk2r/2p1nppp/p2p1n2/1p6/P3PP2/1BQ5/1PP3PP/RNB2RK1 w k - 3 13",
+   "sf_move": "b1d2",
+   "sf_cp": 34,
+   "plain": {
+    "move": "b1d2",
+    "cp": 175,
+    "nodes": 2851,
+    "secs": 0.27,
+    "agree": true,
+    "abs_err": 141,
+    "sf_cp_after_move": 32,
+    "cost_cp": 2
+   },
+   "quiescence": {
+    "move": "a4b5",
+    "cp": 65,
+    "nodes": 2669,
+    "secs": 0.34,
+    "agree": false,
+    "abs_err": 31,
+    "sf_cp_after_move": 39,
+    "cost_cp": -5
+   }
+  },
+  {
+   "game": "EbyX8abj",
+   "opponent": "goldfish-engine",
+   "ply": 32,
+   "fen": "1rbq1rk1/2p1nppp/p2p4/2n1PP2/p7/8/BPP3PP/RNB1QRK1 w - - 1 17",
+   "sf_move": "c1g5",
+   "sf_cp": 206,
+   "plain": {
+    "move": "e5d6",
+    "cp": 95,
+    "nodes": 1763,
+    "secs": 0.16,
+    "agree": false,
+    "abs_err": 111,
+    "sf_cp_after_move": -8,
+    "cost_cp": 214
+   },
+   "quiescence": {
+    "move": "c1g5",
+    "cp": -135,
+    "nodes": 6795,
+    "secs": 0.8,
+    "agree": true,
+    "abs_err": 341,
+    "sf_cp_after_move": 217,
+    "cost_cp": -11
+   }
+  },
+  {
+   "game": "EbyX8abj",
+   "opponent": "goldfish-engine",
+   "ply": 40,
+   "fen": "1rb1r1k1/2p1Ppp1/p7/2n2Pp1/p2q4/8/BPP3PP/RN2QR1K w - - 3 21",
+   "sf_move": "b1c3",
+   "sf_cp": 180,
+   "plain": {
+    "move": "e1a5",
+    "cp": 90,
+    "nodes": 1905,
+    "secs": 0.17,
+    "agree": false,
+    "abs_err": 90,
+    "sf_cp_after_move": -289,
+    "cost_cp": 469
+   },
+   "quiescence": {
+    "move": "b1c3",
+    "cp": -90,
+    "nodes": 12708,
+    "secs": 1.54,
+    "agree": true,
+    "abs_err": 270,
+    "sf_cp_after_move": 165,
+    "cost_cp": 15
+   }
+  },
+  {
+   "game": "FSbPi9IO",
+   "opponent": "simpleeval",
+   "ply": 16,
+   "fen": "r2qk2r/ppp1bppp/3p1n2/n3p3/P3P3/2NP1b1P/BPP2PP1/R1BQK2R w KQkq - 0 9",
+   "sf_move": "d1f3",
+   "sf_cp": 115,
+   "plain": {
+    "move": "d1f3",
+    "cp": 195,
+    "nodes": 1222,
+    "secs": 0.11,
+    "agree": true,
+    "abs_err": 80,
+    "sf_cp_after_move": 147,
+    "cost_cp": -32
+   },
+   "quiescence": {
+    "move": "d1f3",
+    "cp": 15,
+    "nodes": 2366,
+    "secs": 0.33,
+    "agree": true,
+    "abs_err": 100,
+    "sf_cp_after_move": 133,
+    "cost_cp": -18
+   }
+  },
+  {
+   "game": "FSbPi9IO",
+   "opponent": "simpleeval",
+   "ply": 24,
+   "fen": "rn2k2r/pppqbpp1/3p1n1p/4p3/P3P3/2PP1Q1P/BP2NPP1/R1B2RK1 w kq - 2 13",
+   "sf_move": "e2g3",
+   "sf_cp": 281,
+   "plain": {
+    "move": "d3d4",
+    "cp": 230,
+    "nodes": 2416,
+    "secs": 0.26,
+    "agree": false,
+    "abs_err": 51,
+    "sf_cp_after_move": 224,
+    "cost_cp": 57
+   },
+   "quiescence": {
+    "move": "f3g3",
+    "cp": 40,
+    "nodes": 12011,
+    "secs": 1.53,
+    "agree": false,
+    "abs_err": 241,
+    "sf_cp_after_move": 264,
+    "cost_cp": 17
+   }
+  },
+  {
+   "game": "FSbPi9IO",
+   "opponent": "simpleeval",
+   "ply": 32,
+   "fen": "rn3k1r/ppq1bpp1/5n1p/P1p1p3/4P3/2PPQ2P/B3NPP1/R1B2RK1 w - - 2 17",
+   "sf_move": "f2f4",
+   "sf_cp": 572,
+   "plain": {
+    "move": "e3f3",
+    "cp": 255,
+    "nodes": 1532,
+    "secs": 0.15,
+    "agree": false,
+    "abs_err": 317,
+    "sf_cp_after_move": 231,
+    "cost_cp": 341
+   },
+   "quiescence": {
+    "move": "a2c4",
+    "cp": -5,
+    "nodes": 13175,
+    "secs": 1.76,
+    "agree": false,
+    "abs_err": 577,
+    "sf_cp_after_move": 355,
+    "cost_cp": 217
+   }
+  },
+  {
+   "game": "FSbPi9IO",
+   "opponent": "simpleeval",
+   "ply": 40,
+   "fen": "r4k1r/ppq1bp2/2n4p/P1pB2p1/4P3/2PPQ2P/6P1/R1B2RK1 w - - 0 21",
+   "sf_move": "a5a6",
+   "sf_cp": 660,
+   "plain": {
+    "move": "f1f7",
+    "cp": 450,
+    "nodes": 1830,
+    "secs": 0.15,
+    "agree": false,
+    "abs_err": 210,
+    "sf_cp_after_move": 644,
+    "cost_cp": 16
+   },
+   "quiescence": {
+    "move": "f1f7",
+    "cp": 150,
+    "nodes": 3722,
+    "secs": 0.42,
+    "agree": false,
+    "abs_err": 510,
+    "sf_cp_after_move": 644,
+    "cost_cp": 16
+   }
+  },
+  {
+   "game": "mGZIjQAj",
+   "opponent": "garbobot",
+   "ply": 16,
+   "fen": "r1b1k1nr/ppq3pp/2n1pp2/2bpP3/8/3B1N2/PPP1QPPP/RNB2RK1 w kq - 2 9",
+   "sf_move": "c1f4",
+   "sf_cp": 63,
+   "plain": {
+    "move": "d3b5",
+    "cp": 230,
+    "nodes": 1649,
+    "secs": 0.16,
+    "agree": false,
+    "abs_err": 167,
+    "sf_cp_after_move": -25,
+    "cost_cp": 88
+   },
+   "quiescence": {
+    "move": "c1f4",
+    "cp": 50,
+    "nodes": 5802,
+    "secs": 0.79,
+    "agree": true,
+    "abs_err": 13,
+    "sf_cp_after_move": 63,
+    "cost_cp": 0
+   }
+  },
+  {
+   "game": "mGZIjQAj",
+   "opponent": "garbobot",
+   "ply": 24,
+   "fen": "r1b1k1nr/pp4qp/4pp2/2bpn3/2P3p1/3B2B1/PP1NQPPP/RN3RK1 w kq - 1 13",
+   "sf_move": "c4d5",
+   "sf_cp": 134,
+   "plain": {
+    "move": "c4d5",
+    "cp": 90,
+    "nodes": 1153,
+    "secs": 0.11,
+    "agree": true,
+    "abs_err": 44,
+    "sf_cp_after_move": 137,
+    "cost_cp": -3
+   },
+   "quiescence": {
+    "move": "c4d5",
+    "cp": -10,
+    "nodes": 1666,
+    "secs": 0.2,
+    "agree": true,
+    "abs_err": 144,
+    "sf_cp_after_move": 91,
+    "cost_cp": 43
+   }
+  },
+  {
+   "game": "mGZIjQAj",
+   "opponent": "garbobot",
+   "ply": 32,
+   "fen": "r1b2k1r/1p2n1qp/p4p2/1Bbpn3/6p1/2N3B1/PP1NQPPP/3R1RK1 w - - 0 17",
+   "sf_move": "b5a4",
+   "sf_cp": 119,
+   "plain": {
+    "move": "b5a4",
+    "cp": 150,
+    "nodes": 1473,
+    "secs": 0.14,
+    "agree": true,
+    "abs_err": 31,
+    "sf_cp_after_move": 118,
+    "cost_cp": 1
+   },
+   "quiescence": {
+    "move": "d2b3",
+    "cp": -70,
+    "nodes": 9061,
+    "secs": 1.08,
+    "agree": false,
+    "abs_err": 189,
+    "sf_cp_after_move": 38,
+    "cost_cp": 81
+   }
+  },
+  {
+   "game": "mGZIjQAj",
+   "opponent": "garbobot",
+   "ply": 40,
+   "fen": "r1bR3r/bp2nkqp/p7/4p3/2p1N1p1/2N5/PP2QPPP/5RK1 w - - 2 21",
+   "sf_move": "e2c4",
+   "sf_cp": 743,
+   "plain": {
+    "move": "e2c4",
+    "cp": 215,
+    "nodes": 1570,
+    "secs": 0.12,
+    "agree": true,
+    "abs_err": 528,
+    "sf_cp_after_move": 694,
+    "cost_cp": 49
+   },
+   "quiescence": {
+    "move": "e4d6",
+    "cp": -235,
+    "nodes": 2010,
+    "secs": 0.21,
+    "agree": false,
+    "abs_err": 978,
+    "sf_cp_after_move": 435,
+    "cost_cp": 308
+   }
+  },
+  {
+   "game": "yvdNBcef",
+   "opponent": "sunfish-engine",
+   "ply": 16,
+   "fen": "rn2kbnr/pp3ppp/4p3/2ppP3/2PP4/4BN2/PqbNBPPP/R2QK2R w KQkq - 2 9",
+   "sf_move": "d1c1",
+   "sf_cp": 50,
+   "plain": {
+    "move": "d1c1",
+    "cp": 30,
+    "nodes": 978,
+    "secs": 0.11,
+    "agree": true,
+    "abs_err": 20,
+    "sf_cp_after_move": 50,
+    "cost_cp": 0
+   },
+   "quiescence": {
+    "move": "d1c1",
+    "cp": 20,
+    "nodes": 1327,
+    "secs": 0.35,
+    "agree": true,
+    "abs_err": 30,
+    "sf_cp_after_move": 43,
+    "cost_cp": 7
+   }
+  },
+  {
+   "game": "yvdNBcef",
+   "opponent": "sunfish-engine",
+   "ply": 24,
+   "fen": "r3kbnr/pp3ppp/2n3b1/2PpP3/8/4BN2/P2NBPPP/2R1K2R w Kkq - 1 13",
+   "sf_move": "e2b5",
+   "sf_cp": 100,
+   "plain": {
+    "move": "e2b5",
+    "cp": 275,
+    "nodes": 1751,
+    "secs": 0.24,
+    "agree": true,
+    "abs_err": 175,
+    "sf_cp_after_move": 91,
+    "cost_cp": 9
+   },
+   "quiescence": {
+    "move": "e2b5",
+    "cp": 50,
+    "nodes": 4802,
+    "secs": 0.87,
+    "agree": true,
+    "abs_err": 50,
+    "sf_cp_after_move": 102,
+    "cost_cp": -2
+   }
+  },
+  {
+   "game": "yvdNBcef",
+   "opponent": "sunfish-engine",
+   "ply": 32,
+   "fen": "3r1b1r/1p1knppp/p1n3b1/1BPpP3/3N4/4BN2/P4PPP/2R2RK1 w - - 0 17",
+   "sf_move": "e5e6",
+   "sf_cp": 276,
+   "plain": {
+    "move": "b5a4",
+    "cp": 375,
+    "nodes": 1376,
+    "secs": 0.15,
+    "agree": false,
+    "abs_err": 99,
+    "sf_cp_after_move": 265,
+    "cost_cp": 11
+   },
+   "quiescence": {
+    "move": "d4c6",
+    "cp": 60,
+    "nodes": 1567,
+    "secs": 0.22,
+    "agree": false,
+    "abs_err": 216,
+    "sf_cp_after_move": 136,
+    "cost_cp": 140
+   }
+  },
+  {
+   "game": "yvdNBcef",
+   "opponent": "sunfish-engine",
+   "ply": 40,
+   "fen": "2k1rbr1/1p2n1pp/p1n1p1b1/2PpN3/B2N4/4B3/P4PPP/2R1R1K1 w - - 6 21",
+   "sf_move": "e5g6",
+   "sf_cp": 412,
+   "plain": {
+    "move": "e5g6",
+    "cp": 280,
+    "nodes": 1697,
+    "secs": 0.19,
+    "agree": true,
+    "abs_err": 132,
+    "sf_cp_after_move": 467,
+    "cost_cp": -55
+   },
+   "quiescence": {
+    "move": "e5g6",
+    "cp": 40,
+    "nodes": 2181,
+    "secs": 0.24,
+    "agree": true,
+    "abs_err": 372,
+    "sf_cp_after_move": 396,
+    "cost_cp": 16
+   }
+  },
+  {
+   "game": "L5vicmQL",
+   "opponent": "sybbot",
+   "ply": 16,
+   "fen": "r2qkbnr/ppp4p/2n1pp2/3pP3/3P1p2/2Pb1N2/PP4PP/R1BQK1NR w KQkq - 0 9",
+   "sf_move": "d1d3",
+   "sf_cp": 20,
+   "plain": {
+    "move": "d1d3",
+    "cp": -100,
+    "nodes": 800,
+    "secs": 0.08,
+    "agree": true,
+    "abs_err": 120,
+    "sf_cp_after_move": 20,
+    "cost_cp": 0
+   },
+   "quiescence": {
+    "move": "d1d3",
+    "cp": -105,
+    "nodes": 1206,
+    "secs": 0.16,
+    "agree": true,
+    "abs_err": 125,
+    "sf_cp_after_move": 20,
+    "cost_cp": 0
+   }
+  },
+  {
+   "game": "L5vicmQL",
+   "opponent": "sybbot",
+   "ply": 24,
+   "fen": "r2qkb1r/ppp4p/2n1p3/3pP3/5n2/2PQ1N2/PP4PP/R1B1K2R w KQkq - 0 13",
+   "sf_move": "c1f4",
+   "sf_cp": 38,
+   "plain": {
+    "move": "c1f4",
+    "cp": 125,
+    "nodes": 842,
+    "secs": 0.08,
+    "agree": true,
+    "abs_err": 87,
+    "sf_cp_after_move": 38,
+    "cost_cp": 0
+   },
+   "quiescence": {
+    "move": "c1f4",
+    "cp": 20,
+    "nodes": 1548,
+    "secs": 0.24,
+    "agree": true,
+    "abs_err": 18,
+    "sf_cp_after_move": 35,
+    "cost_cp": 3
+   }
+  },
+  {
+   "game": "L5vicmQL",
+   "opponent": "sybbot",
+   "ply": 32,
+   "fen": "2kr1r2/pppqb2p/2n1pB2/3pP3/8/2PQ1N2/PP4PP/R4RK1 w - - 7 17",
+   "sf_move": "f3d4",
+   "sf_cp": 49,
+   "plain": {
+    "move": "f6e7",
+    "cp": 135,
+    "nodes": 1915,
+    "secs": 0.15,
+    "agree": false,
+    "abs_err": 86,
+    "sf_cp_after_move": -19,
+    "cost_cp": 68
+   },
+   "quiescence": {
+    "move": "f6e7",
+    "cp": 25,
+    "nodes": 2260,
+    "secs": 0.23,
+    "agree": false,
+    "abs_err": 24,
+    "sf_cp_after_move": -19,
+    "cost_cp": 68
+   }
+  },
+  {
+   "game": "L5vicmQL",
+   "opponent": "sybbot",
+   "ply": 40,
+   "fen": "2kr4/1ppq1r1p/p1n2P2/3pp3/8/2PQ4/PPN2RPP/R5K1 w - - 0 21",
+   "sf_move": "a1f1",
+   "sf_cp": 55,
+   "plain": {
+    "move": "c3c4",
+    "cp": 115,
+    "nodes": 4389,
+    "secs": 0.32,
+    "agree": false,
+    "abs_err": 60,
+    "sf_cp_after_move": -140,
+    "cost_cp": 195
+   },
+   "quiescence": {
+    "move": "c3c4",
+    "cp": -10,
+    "nodes": 9471,
+    "secs": 1.01,
+    "agree": false,
+    "abs_err": 65,
+    "sf_cp_after_move": -135,
+    "cost_cp": 190
+   }
+  },
+  {
+   "game": "xAUbGMwe",
+   "opponent": "maia9",
+   "ply": 16,
+   "fen": "r3kbnr/pp3ppp/1qn1p3/3pPb2/B2p4/2P5/PP1NNPPP/R1BQK2R w KQkq - 0 9",
+   "sf_move": "e2d4",
+   "sf_cp": 103,
+   "plain": {
+    "move": "c3d4",
+    "cp": 330,
+    "nodes": 1241,
+    "secs": 0.11,
+    "agree": false,
+    "abs_err": 227,
+    "sf_cp_after_move": -8,
+    "cost_cp": 111
+   },
+   "quiescence": {
+    "move": "a4c6",
+    "cp": 45,
+    "nodes": 1377,
+    "secs": 0.15,
+    "agree": false,
+    "abs_err": 58,
+    "sf_cp_after_move": -11,
+    "cost_cp": 114
+   }
+  },
+  {
+   "game": "xAUbGMwe",
+   "opponent": "maia9",
+   "ply": 24,
+   "fen": "r3kb1r/1pq1nppp/p1n1p1b1/3pP3/B2N4/1NP1B3/PP3PPP/R2Q1RK1 w kq - 0 13",
+   "sf_move": "b3c5",
+   "sf_cp": 213,
+   "plain": {
+    "move": "e3f4",
+    "cp": 355,
+    "nodes": 2225,
+    "secs": 0.2,
+    "agree": false,
+    "abs_err": 142,
+    "sf_cp_after_move": 14,
+    "cost_cp": 199
+   },
+   "quiescence": {
+    "move": "d4c6",
+    "cp": 20,
+    "nodes": 3436,
+    "secs": 0.41,
+    "agree": false,
+    "abs_err": 193,
+    "sf_cp_after_move": -3,
+    "cost_cp": 216
+   }
+  },
+  {
+   "game": "xAUbGMwe",
+   "opponent": "maia9",
+   "ply": 32,
+   "fen": "1r2kb1r/2q1nppp/2n1p1b1/1B1pP3/P2N4/2P1B3/1P3PPP/R2Q1RK1 w k - 1 17",
+   "sf_move": "e3g5",
+   "sf_cp": 497,
+   "plain": {
+    "move": "d4c6",
+    "cp": 240,
+    "nodes": 1800,
+    "secs": 0.14,
+    "agree": false,
+    "abs_err": 257,
+    "sf_cp_after_move": 25,
+    "cost_cp": 472
+   },
+   "quiescence": {
+    "move": "e3g5",
+    "cp": -45,
+    "nodes": 4530,
+    "secs": 0.53,
+    "agree": true,
+    "abs_err": 542,
+    "sf_cp_after_move": 437,
+    "cost_cp": 60
+   }
+  },
+  {
+   "game": "xAUbGMwe",
+   "opponent": "maia9",
+   "ply": 40,
+   "fen": "2r1kb1r/2q2ppp/2n1p3/1B1nP3/P1pN4/3bBQ2/1P3PPP/2RR2K1 w k - 6 21",
+   "sf_move": "b5c6",
+   "sf_cp": 876,
+   "plain": {
+    "move": "b5c6",
+    "cp": 520,
+    "nodes": 1694,
+    "secs": 0.14,
+    "agree": true,
+    "abs_err": 356,
+    "sf_cp_after_move": 842,
+    "cost_cp": 34
+   },
+   "quiescence": {
+    "move": "b5c6",
+    "cp": 370,
+    "nodes": 3338,
+    "secs": 0.38,
+    "agree": true,
+    "abs_err": 506,
+    "sf_cp_after_move": 815,
+    "cost_cp": 61
+   }
+  },
+  {
+   "game": "agp0YC98",
+   "opponent": "bot5551",
+   "ply": 16,
+   "fen": "r1bq1rk1/pp1p1ppp/2p2n2/2b1p1B1/2B1P3/2NP1Q2/PPP2PPP/R3K2R w KQ - 0 9",
+   "sf_move": "a2a4",
+   "sf_cp": 7,
+   "plain": {
+    "move": "e1g1",
+    "cp": 295,
+    "nodes": 2969,
+    "secs": 0.29,
+    "agree": false,
+    "abs_err": 288,
+    "sf_cp_after_move": -26,
+    "cost_cp": 33
+   },
+   "quiescence": {
+    "move": "e1g1",
+    "cp": 50,
+    "nodes": 18158,
+    "secs": 2.38,
+    "agree": false,
+    "abs_err": 43,
+    "sf_cp_after_move": -25,
+    "cost_cp": 32
+   }
+  },
+  {
+   "game": "agp0YC98",
+   "opponent": "bot5551",
+   "ply": 24,
+   "fen": "r2q1rk1/1p3ppp/2pp1n2/p1b1p1B1/P1b1P3/2NP2Q1/1PP2PPP/R4R1K w - - 0 13",
+   "sf_move": "d3c4",
+   "sf_cp": -4,
+   "plain": {
+    "move": "d3c4",
+    "cp": 240,
+    "nodes": 2488,
+    "secs": 0.21,
+    "agree": true,
+    "abs_err": 244,
+    "sf_cp_after_move": 0,
+    "cost_cp": -4
+   },
+   "quiescence": {
+    "move": "d3c4",
+    "cp": 15,
+    "nodes": 3788,
+    "secs": 0.43,
+    "agree": true,
+    "abs_err": 19,
+    "sf_cp_after_move": -5,
+    "cost_cp": 1
+   }
+  },
+  {
+   "game": "agp0YC98",
+   "opponent": "bot5551",
+   "ply": 32,
+   "fen": "r2q2k1/1p3ppp/2pprn2/p5B1/P1PbP2Q/2N5/1PP3PP/R4R1K w - - 3 17",
+   "sf_move": "c3e2",
+   "sf_cp": -78,
+   "plain": {
+    "move": "c3e2",
+    "cp": 240,
+    "nodes": 1964,
+    "secs": 0.17,
+    "agree": true,
+    "abs_err": 318,
+    "sf_cp_after_move": -76,
+    "cost_cp": -2
+   },
+   "quiescence": {
+    "move": "g5f6",
+    "cp": 10,
+    "nodes": 4069,
+    "secs": 0.43,
+    "agree": false,
+    "abs_err": 88,
+    "sf_cp_after_move": -233,
+    "cost_cp": 155
+   }
+  },
+  {
+   "game": "agp0YC98",
+   "opponent": "bot5551",
+   "ply": 40,
+   "fen": "r2q2k1/1p3ppp/2pp4/p5B1/P1P1n3/8/1bP3PP/1R3R1K w - - 0 21",
+   "sf_move": "g5d8",
+   "sf_cp": -350,
+   "plain": {
+    "move": "g5d8",
+    "cp": -55,
+    "nodes": 730,
+    "secs": 0.05,
+    "agree": true,
+    "abs_err": 295,
+    "sf_cp_after_move": -341,
+    "cost_cp": -9
+   },
+   "quiescence": {
+    "move": "g5d8",
+    "cp": -180,
+    "nodes": 1042,
+    "secs": 0.1,
+    "agree": true,
+    "abs_err": 170,
+    "sf_cp_after_move": -341,
+    "cost_cp": -9
+   }
+  }
+ ]
+}
