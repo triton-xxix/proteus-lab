@@ -1,0 +1,109 @@
+F-0044 hook patch, written by Smith 24 Oct 2026 20:22. Not applied: a scheduled run cannot edit the hook.
+
+Why: the E-001 edge watcher (edges/E-001/com.proteus.e001.plist, StartInterval 120 s) has been
+unloaded since 22 Oct 21:19Z and D-015 is catching nothing. launchctl is off the unattended list, so
+no scheduled run can reload it. This adds launchctl_ok: list/print read-only; load, unload, bootstrap,
+bootout only for a plist inside the folder or a com.proteus.*.plist under ~/Library/LaunchAgents
+(where the 14 Oct amendment put the graduation watcher), domain targets gui/<uid>[/com.proteus.*].
+The plist decides what runs, so the fence is the plist's location, as it is for scripts.
+
+Apply from an interactive session:
+  git -C /Users/triton/PROTEUS apply --check /Users/triton/PROTEUS/state/loop/hook-patches/F-0044.diff
+  git -C /Users/triton/PROTEUS apply /Users/triton/PROTEUS/state/loop/hook-patches/F-0044.diff
+  python3 /Users/triton/PROTEUS/bin/test-hook.py        (12 new cases below, 6 allow, 6 deny)
+then reload the watcher, which is what the finding is about:
+  launchctl load /Users/triton/PROTEUS/edges/E-001/com.proteus.e001.plist
+and close the finding: python3 /Users/triton/PROTEUS/bin/findings.py fix F-0044 --commit <hash> --note 'launchctl_ok in the hook; E-001 watcher reloaded'
+Line numbers are against 1528571 (24 Oct); git apply tolerates offsets.
+
+--- a/.claude/hooks/unattended-decide.py
++++ b/.claude/hooks/unattended-decide.py
+@@ -24,4 +24,6 @@
+   - ffmpeg/ffprobe, cp and one npm form (added 2026-10-07, see media_ok/cp_ok/npm_ok): every path
+     inside the folder, cp only between write roots, npm only into a sandbox/ prefix with
+     --ignore-scripts and a sandbox/ cache.
++  - launchctl (F-0044, 24 Oct 2026, see launchctl_ok): load/unload/bootstrap/bootout of a plist
++    inside the folder or a com.proteus.*.plist under ~/Library/LaunchAgents; list and print read-only.
+   - The vault's protect-vaults.py does not run here; the write roots make the vault unreachable.
+@@ -456,6 +458,48 @@ def npm_ok(parts):
+         if not _NPM_SPEC.fullmatch(s):
+             return "npm package %s is not a plain registry name; git, URL and file specs are not allowed unattended." % s
+     return None
++
++
++LAUNCHCTL_READ = ("list", "print")
++LAUNCHCTL_LOAD = ("load", "unload", "bootstrap", "bootout")
++LAUNCH_AGENTS = os.path.expanduser("~/Library/LaunchAgents/")
++
++
++def launchctl_ok(parts):
++    """launchctl: list/print read-only; load/unload/bootstrap/bootout of a Proteus plist only.
++
++    The plist decides what runs, so the fence is where the plist lives: inside the folder, or a
++    com.proteus.*.plist under ~/Library/LaunchAgents (the 14 Oct 2026 amendment installs the
++    graduation watcher there so it survives reboots). Domain targets are gui/<uid>[/label] only.
++    F-0044: the E-001 watcher sat unloaded from 22 Oct 2026 because launchctl was off the list.
++    """
++    args = parts[1:]
++    if not args:
++        return "launchctl needs a subcommand."
++    verb = args[0]
++    if verb in LAUNCHCTL_READ:
++        return None
++    if verb not in LAUNCHCTL_LOAD:
++        return "launchctl %s is not allowed unattended (allowed: %s)." % (verb, ", ".join(LAUNCHCTL_READ + LAUNCHCTL_LOAD))
++    flags = [a for a in args[1:] if a.startswith("-") and a != "-w"]
++    if flags:
++        return "launchctl flag(s) %s not allowed unattended (only -w)." % " ".join(flags)
++    rest = [a for a in args[1:] if not a.startswith("-")]
++    labels = [a for a in rest if re.fullmatch(r"gui/\d+(/com\.proteus\.[A-Za-z0-9._-]+)?", a)]
++    plists = [a for a in rest if a not in labels]
++    if verb == "bootout" and not plists:
++        if labels and all("/com.proteus." in a for a in labels):
++            return None
++        return "launchctl bootout needs gui/<uid>/com.proteus.<label> or a Proteus plist."
++    if not plists:
++        return "launchctl %s needs a plist path." % verb
++    for p in plists:
++        if not p.endswith(".plist"):
++            return "launchctl %s: %s is not a .plist (a domain target must be gui/<uid>/com.proteus.<label>)." % (verb, p)
++        agent = _under(p, LAUNCH_AGENTS) and os.path.basename(p).startswith("com.proteus.")
++        if not (_under_root(p) or agent):
++            return "launchctl %s: %s must be a plist inside %s or a com.proteus.*.plist under %s." % (verb, p, PROTEUS_ROOT, LAUNCH_AGENTS)
++    return None
+
+
+ def bash_ok(cmd):
+@@ -520,6 +564,11 @@ def bash_ok(cmd):
+         if head == "npm":
+             why = npm_ok(parts)
+             if why is not None:
+                 return why
+             continue
++        if head == "launchctl":
++            why = launchctl_ok(parts)
++            if why is not None:
++                return why
++            continue
+         if head in SAFE_CMDS:
+--- a/bin/test-hook.py
++++ b/bin/test-hook.py
+@@ -148,6 +148,18 @@
+     ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x ci --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache left-pad"}, "deny"),
+     ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x run build"}, "deny"),
+     ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x exec --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache x"}, "deny"),
++    ("Bash", {"command": "launchctl load " + ROOT + "edges/E-001/com.proteus.e001.plist"}, "allow"),
++    ("Bash", {"command": "launchctl bootstrap gui/501 " + ROOT + "edges/E-001/com.proteus.e001.plist"}, "allow"),
++    ("Bash", {"command": "launchctl bootstrap gui/501 /Users/triton/Library/LaunchAgents/com.proteus.graduates.plist"}, "allow"),
++    ("Bash", {"command": "launchctl bootout gui/501/com.proteus.e001"}, "allow"),
++    ("Bash", {"command": "launchctl list"}, "allow"),
++    ("Bash", {"command": "launchctl print gui/501/com.proteus.e001"}, "allow"),
++    ("Bash", {"command": "launchctl load /Users/triton/Library/LaunchAgents/com.triton.flywheel-poller.plist"}, "deny"),   # not a Proteus plist
++    ("Bash", {"command": "launchctl bootstrap gui/501 /Library/LaunchDaemons/x.plist"}, "deny"),
++    ("Bash", {"command": "launchctl load " + ROOT + "edges/E-001/watcher.py"}, "deny"),                                     # not a .plist
++    ("Bash", {"command": "launchctl kickstart -k gui/501/com.proteus.e001"}, "deny"),
++    ("Bash", {"command": "launchctl setenv X 1"}, "deny"),
++    ("Bash", {"command": "launchctl bootout gui/501/com.triton.flywheel-poller"}, "deny"),
+     ("Bash", {"command": "npx -y some-tool"}, "deny"),
+ ]
+
