@@ -6,22 +6,30 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-379 judged over 25 harvest days, 252 kept, 77 testable, 74 queued as probes, 68 with a probe verdict.
+393 judged over 26 harvest days, 260 kept, 79 testable, 76 queued as probes, 72 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0391 | 2026-10-24 | hn | [Show HN: agent-usage-guard – a Claude Code mod to protect your usage window](https://github.com/rbartoli/agent-usage-guard) | mechanism | tools-for-strangers | yes | P-0213 |
+| H-0390 | 2026-10-24 | vault | [Viggle motion transfer](https://www.instagram.com/p/DemKvEhCDwm/) | mechanism | tools-for-strangers | no: Hosted service needing an account, and the open alternatives |  |
+| H-0388 | 2026-10-24 | arxiv | [Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery](https://arxiv.org/abs/2610.31461) | mechanism | tech | no: Evaluated on a controlled synthetic protocol and needs model |  |
+| H-0387 | 2026-10-24 | github | [appariciojunior/video-editor-skills: Skills that teach Claude Code to be a first-pass vide](https://github.com/appariciojunior/video-editor-skills) | mechanism | tools-for-strangers | no: Needs DaVinci Resolve Studio and a speech-to-text API key. |  |
+| H-0385 | 2026-10-24 | vault | [LTX Desktop local video generation](https://www.instagram.com/p/DemKvEhCDwm/) | mechanism | tools-for-strangers | no: Multi-gigabyte weights and a GPU or Apple silicon are needed |  |
+| H-0383 | 2026-10-24 | arxiv | [Ask About the Right Moment: Training-Free Object Identity Reasoning for Video-Language Mod](https://arxiv.org/abs/2610.31471) | mechanism | tech | no: Needs a video tracker plus a 32B vision-language model, and  |  |
+| H-0382 | 2026-10-24 | github | [actionow-ai/vvv: Build a video template once, reuse it across coding agents. Editable Remo](https://github.com/actionow-ai/vvv) | mechanism | tools-for-strangers | yes | P-0212 |
+| H-0380 | 2026-10-24 | vault | [Video2X free local upscaler](https://www.instagram.com/p/DemKvEhCDwm/) | mechanism | tools-for-strangers | no: Needs a Vulkan GPU build for macOS and a paid Topaz-on-fal c |  |
 | H-0379 | 2026-10-23 | hn | [Launch HN: Alter (YC S25) – Access control for multi-user agents](https://alterauth.com/) | both | tech | no: The product is a hosted service that needs an account and do |  |
 | H-0378 | 2026-10-23 | vault | [labelled persona on an AI-friendly subscription platform]() | mechanism | tools-for-strangers | no: Needs a creator account on a platform and an audience, not a |  |
-| H-0377 | 2026-10-23 | awesome | [77777r7/octocrawl (new in awesome-mcp-servers)](https://github.com/77777r7/octocrawl) | mechanism | open-data | yes | P-0204 |
+| H-0377 | 2026-10-23 | awesome | [77777r7/octocrawl (new in awesome-mcp-servers)](https://github.com/77777r7/octocrawl) | mechanism | open-data | yes | P-0204 **works** |
 | H-0375 | 2026-10-23 | arxiv | [Training Small Language Models for Transferable Tool Selection](https://arxiv.org/abs/2610.31483) | mechanism | tech | no: Needs a GPU, training, and a local model; no local LLM is in |  |
-| H-0374 | 2026-10-23 | github | [rossark0/rossark-motion-skill: Turn any SVG into a professional 60 fps animation. A Claude](https://github.com/rossark0/rossark-motion-skill) | mechanism | tools-for-strangers | yes | P-0203 |
+| H-0374 | 2026-10-23 | github | [rossark0/rossark-motion-skill: Turn any SVG into a professional 60 fps animation. A Claude](https://github.com/rossark0/rossark-motion-skill) | mechanism | tools-for-strangers | yes | P-0203 **works** |
 | H-0372 | 2026-10-23 | vault | [Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles]() | mechanism | game-bots | no: Selling needs a creator account and an asset to list. |  |
-| H-0371 | 2026-10-23 | awesome | [402mcp/402mcp (new in awesome-mcp-servers)](https://github.com/402mcp/402mcp) | mechanism | tech | yes | P-0202 |
+| H-0371 | 2026-10-23 | awesome | [402mcp/402mcp (new in awesome-mcp-servers)](https://github.com/402mcp/402mcp) | mechanism | tech | yes | P-0202 **works** |
 | H-0369 | 2026-10-23 | arxiv | [EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence](https://arxiv.org/abs/2610.31650) | mechanism | tech | no: Running the benchmark needs model answers and there is no lo |  |
 | H-0368 | 2026-10-23 | github | [mihirgupta0900/tv-home: Debloat a slow, ad-filled Android TV over Wi-Fi and give it a fast](https://github.com/mihirgupta0900/tv-home) | mechanism | tech | no: It needs a physical Android TV with debugging enabled. |  |
-| H-0367 | 2026-10-23 | hn | [Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key](https://github.com/dsmurrell/onkey) | mechanism | tools-for-strangers | yes | P-0201 |
+| H-0367 | 2026-10-23 | hn | [Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key](https://github.com/dsmurrell/onkey) | mechanism | tools-for-strangers | yes | P-0201 **works** |
 | H-0366 | 2026-10-23 | vault | [AI brand face retainer for small businesses]() | mechanism | tools-for-strangers | no: The question is whether a paying client exists, which needs  |  |
 | H-0364 | 2026-10-22 | vault | [Tweak knobs on every composition](https://www.youtube.com/watch?v=yf2OwchM9nw) | mechanism | tools-for-strangers | yes | P-0196 **works** |
 | H-0361 | 2026-10-22 | arxiv | [DynaWeave: Learning to Adapt through Dynamic Scenario Synthesis](https://arxiv.org/abs/2610.29443) | mechanism | tech | no: It needs model fine-tuning and benchmark runs; there is no l |  |
@@ -266,6 +274,105 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0391 Show HN: agent-usage-guard – a Claude Code mod to protect your usage window
+2026-10-24, hn, https://github.com/rbartoli/agent-usage-guard
+
+- **Mechanism:** A Claude Code hook runs before each prompt is submitted and reads the session's token count and the time since the last request. If the prompt cache has probably expired (cache lifetime is short) and the context is large, it warns and suggests compacting first, and it can block sub-agent spawns when usage-window use is above a threshold. A commenter reports the same approach cut spawned agents from 365 to 27 over 75 days.
+- **Claim:** A usage-guard mod protects the usage window; a commenter's version cut 365 agent spawns to 27.
+- **Testable:** yes. Does the repo's hook flag a warning when fed a synthetic transcript with an expired cache gap and over 500k tokens, yes or no? Queued as P-0213.
+- **Idea on its own:** sound. Cold-cache, large-context resubmission is a real way to burn a usage window, and a pre-submit check is cheap.
+- **How it would be done:** Clone the repo into the sandbox, read its hook, and build a small synthetic transcript with a timestamp gap and a large token count. Feed it to the hook and see whether it warns. Then compare its thresholds with our own runs' usage logs from bin/usage.py. Wiring it into Proteus would need a hook-file edit, which Luke's rules treat separately.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agent-usage-guard https://github.com/rbartoli/agent-usage-guard (The hook under test)
+- **Field Notes line:** A prompt-time hook warns when the cache has gone cold and the context is huge, one user says it cut agent spawns from 365 to 27.
+
+### H-0390 Viggle motion transfer
+2026-10-24, vault, https://www.instagram.com/p/DemKvEhCDwm/
+
+- **Mechanism:** Motion transfer takes a still image of a character and a reference video of a person moving, estimates the pose sequence from the video, and generates the character performing that motion. Viggle is a hosted service; comparable open routes are Wan 2.2 Animate and Kling Motion Control. Output consistency depends on pose estimation and the model's handling of the character's identity.
+- **Claim:** A free tool makes a still character copy the movement of a reference video.
+- **Testable:** no. Hosted service needing an account, and the open alternatives need a GPU. Needs: A Viggle or Kling account, or a GPU for Wan 2.2 Animate.
+- **Idea on its own:** needs-a-run. The technique works in general; whether the free tier is good enough for an AI influencer track is unmeasured.
+- **How it would be done:** Pick one synthetic character still and one licensed or self-filmed reference move. Run it through Viggle, Kling Motion Control and Wan 2.2 Animate, then score identity drift, hand artefacts and cost per five seconds. Use only synthetic characters, never a real person's likeness. A person scores the clips from a contact sheet.
+- **Stack already covers:** Gemini (stills), HyperFrames (video compose, captions, render)
+- **To fetch:** Wan 2.2 https://github.com/Wan-Video/Wan2.2 (Open Animate model for the comparison)
+- **Missing:** A scored three-way comparison on one character and one move.
+- **Field Notes line:** Motion transfer reads poses from a reference clip and drives a still character with them; free tier versus Kling and Wan is untested.
+
+### H-0388 Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery
+2026-10-24, arxiv, https://arxiv.org/abs/2610.31461
+
+- **Mechanism:** A feature-based controller picks, per task, whether a coding agent uses primitive tool calls, a macro skill, or a macro with fallback. A finite-state executor catches macro failure and drops to micro steps to recover. Evaluation uses a deterministic coding protocol with verifier-defined success and cost.
+- **Claim:** Runtime routing and macro-to-micro recovery fix macro failures that fixed-granularity execution leaves unresolved.
+- **Testable:** no. Evaluated on a controlled synthetic protocol and needs model calls, which are not keyless tonight. Needs: Model calls and the paper's harness.
+- **Idea on its own:** needs-a-run. The fallback pattern is sensible, but the tests are deterministic and synthetic so real-world gain is unproven.
+- **How it would be done:** Look at our own skills for a matching failure: a skill that runs a script, fails, and leaves the agent stuck. Add an explicit fallback step to one skill and log whether runs recover. Compare failure counts over a week of runs. No new tooling is needed.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Skills fail when they do not fit; a controller that falls back from a macro skill to single steps recovers the failures.
+
+### H-0387 appariciojunior/video-editor-skills: Skills that teach Claude Code to be a first-pass video editor in DaVinci Resolve: t
+2026-10-24, github, https://github.com/appariciojunior/video-editor-skills
+
+- **Mechanism:** Plain-text skills tell Claude how to build its own scripts: transcribe with word timestamps, cut retakes and dead air by silence thresholds and pads, assemble timelines through the DaVinci Resolve scripting API, duck music, and overlay Remotion graphics. The value is the recorded rules and traps (what silently fails in the Resolve API), not code. It depends on Resolve Studio, ffmpeg and a speech-to-text key.
+- **Claim:** Skills turn Claude Code into a first-pass vlog editor in DaVinci Resolve; no timing number is given.
+- **Testable:** no. Needs DaVinci Resolve Studio and a speech-to-text API key. Needs: DaVinci Resolve Studio and a speech-to-text key.
+- **Idea on its own:** sound. Silence and retake trimming from word timestamps is a standard, effective first-pass edit.
+- **How it would be done:** Read the pacing and rough-cut skills for the numbers (silence threshold, pad lengths, pause rules) and compare them with our HyperFrames caption and cut flow. Test the silence-cut rule using ffmpeg silencedetect and local transcription on a recorded talk. Do not copy the skills into products because of the NC licence. A human still judges which takes are best.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), local transcription
+- **To fetch:** video-editor-skills https://github.com/appariciojunior/video-editor-skills (The pacing numbers and LEARNINGS.md)
+- **Field Notes line:** A set of skills teaches Claude the rules of a first-pass edit: silence cuts, pads and Resolve API traps. Licence bars commercial use.
+
+### H-0385 LTX Desktop local video generation
+2026-10-24, vault, https://www.instagram.com/p/DemKvEhCDwm/
+
+- **Mechanism:** LTX is an open-weights latent video diffusion model from Lightricks; the desktop app wraps the model so it runs text-to-video and image-to-video on the user's own GPU or Apple silicon. Cost per clip is electricity and time, bounded by memory, so clip length and resolution are the limits. Quality sits below the top paid models but suits draft B-roll.
+- **Claim:** Free local video generation per clip on the M5, versus paying per clip on fal.
+- **Testable:** no. Multi-gigabyte weights and a GPU or Apple silicon are needed, and the Intel Mac cannot run it in 30 minutes. Needs: The M5 and a multi-GB model download.
+- **Idea on its own:** sound. Open-weights video models running locally are real; the open question is whether quality is good enough for drafts.
+- **How it would be done:** On the M5, install LTX Desktop or the open weights via a ComfyUI-style runner, generate five B-roll prompts from an existing project, and time each. Run the same prompts through the fal LTX route and compare cost, seconds and a pass/fail on usable shots. A person judges usability.
+- **Stack already covers:** HyperFrames (video compose, captions, render)
+- **To fetch:** LTX-Video https://github.com/Lightricks/LTX-Video (Open weights and reference runner)
+- **Missing:** A measured usable-shot rate and seconds per clip on the M5.
+- **Field Notes line:** LTX Desktop runs an open video model on your own machine, trading per-clip fees for local time.
+
+### H-0383 Ask About the Right Moment: Training-Free Object Identity Reasoning for Video-Language Models
+2026-10-24, arxiv, https://arxiv.org/abs/2610.31471
+
+- **Mechanism:** Track Then Bind runs a promptable video tracker over every candidate object and labels each with a track number. A frozen vision-language model answers a static question at a moment when the identifying evidence is visible, binding the target to a track. The final answer is computed from the tracked state in text, not by asking the model to re-watch the video.
+- **Claim:** Reaches 55.4% on the hardest Perception Test cup games against 41.5% for the best published model, with no training.
+- **Testable:** no. Needs a video tracker plus a 32B vision-language model, and there is no local LLM on this Mac. Needs: A GPU and a vision-language model.
+- **Idea on its own:** needs-a-run. The split between identity binding and tracking is plausible and the gains are large, but only the authors have measured it.
+- **How it would be done:** Fetch the paper's code if released, run the tracker (a SAM-style video model) on a few public shell-game clips, and ask a hosted VLM one static question per bound track. Score against the Perception Test cup-game answers. The tracker needs a GPU, so this is a rented-machine job.
+- **To fetch:** Perception Test benchmark https://github.com/google-deepmind/perception_test (Public cup-game questions to score against)
+- **Missing:** A GPU box and the released code, if any.
+- **Field Notes line:** Models lose track of which cup hides the ball; binding identity once, then letting a tracker carry it, lifts accuracy without training.
+
+### H-0382 actionow-ai/vvv: Build a video template once, reuse it across coding agents. Editable Remotion templates and an Agent Sk
+2026-10-24, github, https://github.com/actionow-ai/vvv
+
+- **Mechanism:** Video templates are Remotion (React/TypeScript) projects with declared photo slots, copy fields and settings. A Python CLI (vvv.py) exposes describe and validate commands so an agent fills inputs first and edits source only if needed, then renders and runs checks. The reference-video mode measures a supplied file (beats, shot lengths, still frames) and rebuilds it on the closest template.
+- **Claim:** An agent skill reuses editable Remotion templates so new films cost fewer tokens; no benchmark is published.
+- **Testable:** yes. Does vvv.py describe and validate run on a public template with sample inputs on this Mac, and does it report slots and fields without a key? Queued as P-0212.
+- **Idea on its own:** sound. Separating fixed structure from per-film inputs and validating inputs before render is how templated video is normally made reliable.
+- **How it would be done:** Clone the repo into the sandbox, run describe on one template and validate with placeholder photos and text. Optionally render a short 9:16 sample with Remotion and time it. Compare the structure with our HyperFrames flow to see whether a slot-and-validate layer would help our own templates. A designer would still make new templates and judge taste.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** vvv https://github.com/actionow-ai/vvv (The templates and CLI); Remotion https://www.remotion.dev/ (Renderer the templates use)
+- **Missing:** A published benchmark showing the token saving the README claims.
+- **Field Notes line:** vvv packages video templates with declared slots and a validator so an agent fills a form instead of rewriting video code.
+
+### H-0380 Video2X free local upscaler
+2026-10-24, vault, https://www.instagram.com/p/DemKvEhCDwm/
+
+- **Mechanism:** Video2X is an open-source pipeline that splits a video into frames with ffmpeg, runs each frame through a super-resolution network (Real-ESRGAN, Real-CUGAN or Anime4K shaders) on a Vulkan-capable GPU, then re-encodes the frames with the original audio. Quality depends on the model chosen and on the GPU; speed is frames per second of the network, which is slow on CPU. Interpolation (RIFE) can be run in the same pass.
+- **Claim:** A free local tool upscales video to higher resolution with AI models, offered as an alternative to paid upscalers.
+- **Testable:** no. Needs a Vulkan GPU build for macOS and a paid Topaz-on-fal comparison, and the Intel Mac has no useful GPU for it. Needs: Apple silicon or a Vulkan GPU, and a fal account for the Topaz comparison.
+- **Idea on its own:** sound. Frame-wise super-resolution is a well-established technique and a free route to a final-pass upscale.
+- **How it would be done:** Install Video2X (release binary or build) on the M5, feed it a generated 720p clip, choose a Real-ESRGAN model and a 2x factor. Run the same clip through Topaz on fal and compare by eye plus a simple metric such as sharpness variance or a no-reference score. Record seconds per clip and any flicker between frames, since frame-wise methods can shimmer. A person would judge faces and text, which metrics miss.
+- **Stack already covers:** HyperFrames (video compose, captions, render)
+- **To fetch:** Video2X https://github.com/k4yt3x/video2x (The upscaler itself); ffmpeg https://ffmpeg.org/ (Frame split, merge and metrics)
+- **Missing:** A fair, scored comparison of free upscalers against Topaz on our own generated clips.
+- **Field Notes line:** Video2X chops video into frames, upscales each with a neural net on the GPU and restitches it; free, but the quality gap to Topaz is unmeasured.
 
 ### H-0379 Launch HN: Alter (YC S25) – Access control for multi-user agents
 2026-10-23, hn, https://alterauth.com/
@@ -3191,6 +3298,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0390 | 2026-10-24 | Viggle motion transfer | open | needs-a-run | no |  |
+| H-0385 | 2026-10-24 | LTX Desktop local video generation | open | sound | no |  |
+| H-0380 | 2026-10-24 | Video2X free local upscaler | open | sound | no |  |
 | H-0378 | 2026-10-23 | labelled persona on an AI-friendly subscription platform | open | needs-a-run | no |  |
 | H-0372 | 2026-10-23 | Rockstar's own Cfx Marketplace for selling FiveM and RedM scripts, maps and vehicles | open | needs-a-run | no |  |
 | H-0366 | 2026-10-23 | AI brand face retainer for small businesses | open | needs-a-run | no |  |
@@ -3271,6 +3381,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0236 | 2026-10-24 | [agent-usage-guard](https://github.com/rbartoli/agent-usage-guard) | The hook under test | H-0391 (Show HN: agent-usage-guard – a Claude Code mod to ) | shelf |
+| T-0235 | 2026-10-24 | [Wan 2.2](https://github.com/Wan-Video/Wan2.2) | Open Animate model for the comparison | H-0390 (Viggle motion transfer) | shelf |
+| T-0234 | 2026-10-24 | [video-editor-skills](https://github.com/appariciojunior/video-editor-skills) | The pacing numbers and LEARNINGS.md | H-0387 (appariciojunior/video-editor-skills: Skills that t) | shelf |
+| T-0233 | 2026-10-24 | [LTX-Video](https://github.com/Lightricks/LTX-Video) | Open weights and reference runner | H-0385 (LTX Desktop local video generation) | shelf |
+| T-0232 | 2026-10-24 | [Perception Test benchmark](https://github.com/google-deepmind/perception_test) | Public cup-game questions to score against | H-0383 (Ask About the Right Moment: Training-Free Object I) | shelf |
+| T-0231 | 2026-10-24 | [vvv](https://github.com/actionow-ai/vvv) | The templates and CLI | H-0382 (actionow-ai/vvv: Build a video template once, reus) | shelf |
+| T-0230 | 2026-10-24 | [Video2X](https://github.com/k4yt3x/video2x) | The upscaler itself | H-0380 (Video2X free local upscaler) | shelf |
 | T-0229 | 2026-10-23 | [octocrawl](https://github.com/77777r7/octocrawl) | The toolkit, for self-hosting. | H-0377 (77777r7/octocrawl (new in awesome-mcp-servers)) | shelf |
 | T-0228 | 2026-10-23 | [ToolBench](https://github.com/OpenBMB/ToolBench) | The benchmark and tool corpus used. | H-0375 (Training Small Language Models for Transferable To) | shelf |
 | T-0227 | 2026-10-23 | [OpenCV](https://pypi.org/project/opencv-python/) | Likely dependency of the edge tracker. | H-0374 (rossark0/rossark-motion-skill: Turn any SVG into a) | shelf |
@@ -3505,6 +3622,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0393 | 2026-10-24 | youtube | [How To SNIPE Pump Fun Memecoins & AVOID RUGS](https://www.youtube.com/watch?v=9Qhnc1B4ZhI) | Retail tutorial on pump.fun sniping covering mechanics the Grinder already reads, with no new mechanism in the opening. |
+| H-0392 | 2026-10-24 | github | [devhims/youtube-caption-extractor: Extract YouTube captions, subtitles, auto-gen](https://github.com/devhims/youtube-caption-extractor) | Duplicates the keyless YouTube transcript pipeline already in the stack. |
+| H-0389 | 2026-10-24 | youtube | [MOT Expert Assessor MOT Routine - UK MOT Tester Training #mottester #dvsa #mecha](https://www.youtube.com/watch?v=4LVa_w7Gg4M) | No transcript available and the title suggests MOT tester training with no mechanism. |
+| H-0386 | 2026-10-24 | hn | [Google will pay people to use less electricity so its data centers can use more](https://www.computerworld.com/article/4239858/google-will-pay-people-to-use-less-electricity-so-its-data-centers-can-use-more.html) | General news on utility demand response with no mechanism worth recording. |
+| H-0384 | 2026-10-24 | youtube | [DVSA Photo at Test: What do MOT Testers really think? #MOTscheme #MOTcompliance ](https://www.youtube.com/watch?v=ZLbmhgI2FFE) | News opinion about the DVSA photo rollout with no mechanism or data to test. |
+| H-0381 | 2026-10-24 | hn | [Show HN: Corgi, a helpful {agent, terminal} multiplexer](https://corgi.computer/) | A terminal multiplexer for coding agents; ergonomics product with no new mechanism beyond reusing the agents to summaris |
 | H-0376 | 2026-10-23 | youtube | [How Model Context Protocol (MCP) actually works](https://www.youtube.com/watch?v=cGuyrANVi4A) | Generic MCP explainer with no new mechanism. |
 | H-0373 | 2026-10-23 | hn | [Hacker leaks 281 GB of data from Germany's far-right AfD party](https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd) | Hacked political-party data leak; stolen data crosses the charter line and the article has no reusable mechanism. |
 | H-0370 | 2026-10-23 | youtube | [8 Claude Skills that actually matter](https://www.youtube.com/watch?v=jDtLcMOLjIQ) | A one-minute listicle of popular skills with no mechanism, plus a comment-for-guide funnel. |
