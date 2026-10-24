@@ -1,5 +1,5 @@
 {
- "next_id": 209,
+ "next_id": 210,
  "items": [
   {
    "id": "P-0001",
@@ -5076,6 +5076,32 @@
     "number": "Fisher exact two-sided p about 0.10 for weak (below 1750) v strong accept rates; success-failure condition fails (weak group expects under 5 accepts); shot after looking at the accept counts in CHALLENGES.csv",
     "at": "2026-10-24T12:34:09+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0209",
+   "title": "Lichess accept rate by week (deepen of P-0208, OpenIntro 6.4 chi-square test of homogeneity): from games/lichess/CHALLENGES.csv bucket challenges by ISO week, accept v not, check the expected-count condition (5 per cell), report chi-square, df, p, and which week drives it; also rerun with declined-plus-accepted as the denominator. Artefact: experiments/ README, script, results.json.",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-24",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-24T12:35:07+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "chi-square homogeneity over three ISO weeks (41 to 43) p about 0.5, no week significant; every expected cell at least 5; shot after seeing the dated accept list in P-0208",
+    "at": "2026-10-24T12:35:23+0100"
    }
   }
  ]

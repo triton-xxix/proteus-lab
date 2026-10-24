@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 154 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
-## Queue (6 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@ Verdicts so far: 154 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 0 | 25 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
+| P-0209 | Lichess accept rate by week (deepen of P-0208, OpenIntro 6.4 chi-square test of homogeneity): from games/lichess/CHALLENGES.csv bucket challenges by ISO week, accept v not, check the expected-count condition (5 per cell), report chi-square, df, p, and which week drives it; also rerun with declined-plus-accepted as the denominator. Artefact: experiments/ README, script, results.json. | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (198)
 
