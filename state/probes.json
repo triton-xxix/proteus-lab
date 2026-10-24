@@ -1,5 +1,5 @@
 {
- "next_id": 211,
+ "next_id": 212,
  "items": [
   {
    "id": "P-0001",
@@ -5134,6 +5134,32 @@
     "number": "rule runs through the ladder; SPY W1 net below zero and the rule does not climb all three rungs on any stock",
     "at": "2026-10-24T12:37:36+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0211",
+   "title": "Noise-area momentum, VWAP trailing stop (deepen of P-0210, the paper's headline version): same 14-day band entry, but the stop is the day's VWAP (long exits when a bar's low reaches VWAP, short when a bar's high does), flat at the close; run through the edges/scan ladder on the stock set with experiments/2026-10-24-P-0210/noise_area.py as the base; report W1 to W3 net, rungs, pooled p, SPY W1. Artefact: experiments/ README, script, results.json.",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-24",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-24T12:39:19+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "W1 net still below zero but better than the band stop (-8.97%), win rate above 30%, rungs 0",
+    "at": "2026-10-24T12:39:25+0100"
    }
   }
  ]
