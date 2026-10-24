@@ -1,0 +1,85 @@
+{
+  "probe": "P-0209",
+  "source": "/Users/triton/PROTEUS/games/lichess/CHALLENGES.csv",
+  "verdict_counts": {
+    "refused 400": 258,
+    "no answer": 83,
+    "declined": 310,
+    "accepted": 39,
+    "refused 429": 8
+  },
+  "all_rows": {
+    "weeks": {
+      "2026-W41": {
+        "accepted": 12,
+        "not": 165,
+        "rate": 0.06779661016949153
+      },
+      "2026-W42": {
+        "accepted": 10,
+        "not": 216,
+        "rate": 0.04424778761061947
+      },
+      "2026-W43": {
+        "accepted": 17,
+        "not": 278,
+        "rate": 0.0576271186440678
+      }
+    },
+    "n": 698,
+    "expected": {
+      "2026-W41:accepted": 9.88968481375358,
+      "2026-W41:not": 167.11031518624642,
+      "2026-W42:accepted": 12.627507163323783,
+      "2026-W42:not": 213.37249283667623,
+      "2026-W43:accepted": 16.482808022922637,
+      "2026-W43:not": 278.51719197707735
+    },
+    "min_expected": 9.88968481375358,
+    "condition_met_5_per_cell": true,
+    "chi_square": 1.0732311265842103,
+    "df": 2,
+    "p": 0.5847238682384192,
+    "largest_contribution": {
+      "cell": "2026-W42:accepted",
+      "value": 0.5467265869679848
+    }
+  },
+  "declined_plus_accepted": {
+    "weeks": {
+      "2026-W41": {
+        "accepted": 12,
+        "not": 60,
+        "rate": 0.16666666666666666
+      },
+      "2026-W42": {
+        "accepted": 10,
+        "not": 86,
+        "rate": 0.10416666666666667
+      },
+      "2026-W43": {
+        "accepted": 17,
+        "not": 164,
+        "rate": 0.09392265193370165
+      }
+    },
+    "n": 349,
+    "expected": {
+      "2026-W41:accepted": 8.045845272206304,
+      "2026-W41:not": 63.95415472779369,
+      "2026-W42:accepted": 10.727793696275072,
+      "2026-W42:not": 85.27220630372493,
+      "2026-W43:accepted": 20.226361031518625,
+      "2026-W43:not": 160.77363896848138
+    },
+    "min_expected": 8.045845272206304,
+    "condition_met_5_per_cell": true,
+    "chi_square": 2.822736265150718,
+    "df": 2,
+    "p": 0.24380949116261338,
+    "largest_contribution": {
+      "cell": "2026-W41:accepted",
+      "value": 1.9432811696422012
+    }
+  }
+}

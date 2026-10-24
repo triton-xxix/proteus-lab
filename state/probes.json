@@ -5086,22 +5086,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-24T12:35:07+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-24T12:36:03+0100",
+   "note": "chi-square homogeneity over weeks 41 to 43: p 0.585 (all 698 rows, accept rates 6.8, 4.4, 5.8%) and p 0.244 on the declined-plus-accepted denominator (16.7, 10.4, 9.4%), v shot about 0.5 and no week significant; smallest expected cell 9.9 and 8.0, condition met as called. Shot after seeing the dated accept list, scored at p 0.5. With P-0208: neither rating nor week explains who accepts. Caveat: challenges to the same bot are not independent, the honest unit is the bot and that is a lookup not a test. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-24-P-0209"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "chi-square homogeneity over three ISO weeks (41 to 43) p about 0.5, no week significant; every expected cell at least 5; shot after seeing the dated accept list in P-0208",
-    "at": "2026-10-24T12:35:23+0100"
+    "at": "2026-10-24T12:35:23+0100",
+    "hit": true
    }
   }
  ]
