@@ -13,6 +13,7 @@ const { timeline } = require('./lib/timeline.cjs');
 const { glyph } = require('./lib/structure.cjs');
 const { renderThemes } = require('./lib/themes.cjs');
 const { renderMemento } = require('./lib/memento.cjs');
+const { renderInception } = require('./lib/inception.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -128,6 +129,13 @@ function build() {
     copy(path.join(ROOT, 'src', 'memento.css'), path.join(OUT, 'shared', 'memento.css'));
     write(OUT, 'memento/index.html', renderMemento('../'));
     copy(memSeq, path.join(OUT, 'data', 'memento-sequences.json'));
+  }
+  // inception deep page, once its clocks research exists
+  const incClocks = path.join(ROOT, 'inception', 'research', 'clocks.json');
+  if (fs.existsSync(incClocks)) {
+    copy(path.join(ROOT, 'src', 'inception.css'), path.join(OUT, 'shared', 'inception.css'));
+    write(OUT, 'inception/index.html', renderInception('../'));
+    copy(incClocks, path.join(OUT, 'data', 'inception-clocks.json'));
   }
   copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
   write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));
