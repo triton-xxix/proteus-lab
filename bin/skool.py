@@ -170,9 +170,16 @@ def cmd_ingest(a):
     draft = ROOT + "field-notes/drafts/%s.md" % wk
     if os.path.exists(draft):
         d = open(draft).read()
+        new = "\n".join(l for l in lines if " read (" in l)
         if "## Skool reading" not in d:
-            d = d.rstrip("\n") + "\n\n## Skool reading\n\n"
-        d = d.rstrip("\n") + "\n" + "\n".join(l for l in lines if " read (" in l) + "\n"
+            d = d.rstrip("\n") + "\n\n## Skool reading\n\n" + new + "\n"
+        else:
+            # 2026-10-24: insert at the end of the Skool section, not the end of the file; five
+            # lines in W43 landed under "## I changed myself" because the section was not last.
+            head, _, rest = d.partition("## Skool reading")
+            body, sep, tail = rest.partition("\n## ")
+            body = body.rstrip("\n") + "\n" + new + "\n\n"
+            d = head + "## Skool reading" + body + (sep + tail if sep else "")
         open(draft, "w").write(d)
     print("\n".join(lines))
     if os.path.exists(ROOT + "HALT"):
