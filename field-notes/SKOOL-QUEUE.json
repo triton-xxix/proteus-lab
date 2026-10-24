@@ -886,25 +886,31 @@
    "track": 10,
    "title": "Skool First 100 feed: Lidia's 268 posts (about 46k words; the classroom is locked)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/skool100-posts-owner.md"
    ],
    "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch.",
-   "assigned": "2026-10-23",
-   "tries": 1
+   "assigned": "2026-10-24",
+   "tries": 2,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-24-S-45.md"
   },
   {
    "id": "S-46",
    "track": 10,
    "title": "Diary of a Skooler: the 4 h 52 About-page video (build a Skool from 0, journaled daily)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/diaryskooler-index.md",
     "field-notes/skool/transcripts/diaryskooler-about-video-4h52.txt"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-24",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-24-S-46.md"
   },
   {
    "id": "S-47",
@@ -1220,7 +1226,7 @@
     "field-notes/skool/transcripts/magnetic-post-2026-07-07-it-s-live.txt"
    ],
    "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask (tally, then a slow pull-and-read job). Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community, Luke's own or a client's). Read for what this adds to a launch-and-grow method: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling their own programme: judge the mechanism, not the pitch.",
-   "note": "waiting on: field-notes/skool/transcripts/magnetic-post-2023-11-07-welcome-start-here-free-course-pdf-guide-gift.txt, field-notes/skool/transcripts/magnetic-post-2024-04-26-this-ai-tool-will-save-you-hours-in-content-creati.txt, field-notes/skool/transcripts/magnetic-post-2024-05-06-toms-case-study-13-new-clients-in-3-days-no-sales-.txt"
+   "note": "waiting on: field-notes/skool/transcripts/magnetic-post-2025-12-26-new-youtube-just-dropped.txt, field-notes/skool/transcripts/magnetic-post-2026-01-08-how-to-grow-your-skool-community-with-youtube.txt, field-notes/skool/transcripts/magnetic-post-2026-01-15-how-to-turn-in-person-events-into-real-leads-with-.txt"
   }
  ]
 }
