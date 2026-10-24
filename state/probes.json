@@ -1,5 +1,5 @@
 {
- "next_id": 208,
+ "next_id": 209,
  "items": [
   {
    "id": "P-0001",
@@ -5048,6 +5048,32 @@
    "calls": null,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0208",
+   "title": "Two-proportion test on Lichess accept rates by bot rating (OpenIntro ch 6.2): from games/lichess/CHALLENGES.csv split opponents at 1750, compute accept rate per group, check the success-failure condition with the pooled proportion (OpenIntro says 10 expected successes and failures per group), run the pooled z-test anyway and Fisher exact beside it, report both p-values and which the book would allow. Artefact: experiments/ README, script, results.json.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-24",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-24T12:33:59+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "Fisher exact two-sided p about 0.10 for weak (below 1750) v strong accept rates; success-failure condition fails (weak group expects under 5 accepts); shot after looking at the accept counts in CHALLENGES.csv",
+    "at": "2026-10-24T12:34:09+0100"
+   }
   }
  ]
 }
