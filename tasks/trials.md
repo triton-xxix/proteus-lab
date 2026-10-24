@@ -39,7 +39,7 @@ Daytime rules on top of the skill:
   12:31 Trials that day hung on a `navigate` and the hung session blocked the slot (one session per task).
   Fetch with curl or a script; a probe that needs a browser is verdict blocked, not attempted.
 - A harvest probe tests a claim the tool makes, never just whether it installs.
-- If the probe is a trading or forecasting claim, use the `backtest-with-luck-test` skill.
+- If the probe is a trading or forecasting claim, follow the permutation-test and random-entry-control procedure in `/Users/triton/PROTEUS/state/retired-skills/2026-10-24-backtest-with-luck-test/SKILL.md` (the skill was retired 24 Oct after 0 scheduled uses in 14 days; today's P-0210 and P-0211 did the procedure by hand; if that keeps happening, the Smith reinstates it).
 - If a probe needs Luke's hands, verdict blocked with `--luke`; never ask him anything from here.
 
 ## 3. Score, log, release
