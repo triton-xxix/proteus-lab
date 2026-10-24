@@ -5115,22 +5115,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-24T12:37:16+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-24T12:39:11+0100",
+   "note": "Ladder run on 12 stocks: W1 (19 to 23 Oct) 215 trades net -8.97%, win 15.8%, p 0.60 v control; rungs 0; W2 +3.33% p 0.09, W3 +0.94% p 0.17; pooled 654 trades -4.70% p 0.16. SPY W1 -1.95% v shot below zero, no stock climbs v shot none: both held. The paper claims positive intraday momentum on SPY; not in the last three weeks on this ladder. Caveat: raw band as trailing stop whipsaws (16% wins, 9-bar holds); the paper headline uses a VWAP trailing stop. scan.py untouched. Next: deepen (VWAP trailing stop variant through the same ladder).",
+   "artefacts": [
+    "experiments/2026-10-24-P-0210"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "rule runs through the ladder; SPY W1 net below zero and the rule does not climb all three rungs on any stock",
-    "at": "2026-10-24T12:37:36+0100"
+    "at": "2026-10-24T12:37:36+0100",
+    "hit": true
    }
   }
  ]

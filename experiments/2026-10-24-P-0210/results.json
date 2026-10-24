@@ -1,0 +1,109 @@
+{
+ "probe": "P-0210",
+ "rule": "Noise area (14-day band) intraday momentum, trailing stop at the band",
+ "run_at": "2026-10-24T11:38:36+00:00",
+ "stock_weeks": [
+  "2026-10-19 to 2026-10-23",
+  "2026-10-12 to 2026-10-16",
+  "2026-10-05 to 2026-10-09"
+ ],
+ "W1": {
+  "n": 215,
+  "total_pct": -8.97,
+  "mean_pct": -0.0417,
+  "win_pct": 15.8,
+  "control_mean_pct": -0.0342,
+  "p": 0.597
+ },
+ "W2": {
+  "n": 254,
+  "total_pct": 3.329,
+  "mean_pct": 0.0131,
+  "win_pct": 20.1,
+  "control_mean_pct": -0.0322,
+  "p": 0.09
+ },
+ "W3": {
+  "n": 185,
+  "total_pct": 0.94,
+  "mean_pct": 0.0051,
+  "win_pct": 22.7,
+  "control_mean_pct": -0.0307,
+  "p": 0.173
+ },
+ "rungs": 0,
+ "pooled_W1_W3": {
+  "n": 654,
+  "total_pct": -4.701,
+  "mean_pct": -0.0072,
+  "win_pct": 19.4,
+  "control_mean_pct": -0.0318,
+  "p": 0.16
+ },
+ "blocks_positive": 4,
+ "blocks_with_trades": 9,
+ "by_sym": {
+  "SPY": {
+   "W1": -1.948,
+   "W1_W3": -1.66,
+   "trades_W1_W3": 63
+  },
+  "QQQ": {
+   "W1": -1.366,
+   "W1_W3": -0.051,
+   "trades_W1_W3": 63
+  },
+  "IWM": {
+   "W1": 0.4,
+   "W1_W3": 2.568,
+   "trades_W1_W3": 40
+  },
+  "TSLA": {
+   "W1": -0.697,
+   "W1_W3": -0.679,
+   "trades_W1_W3": 41
+  },
+  "NVDA": {
+   "W1": -3.39,
+   "W1_W3": -3.596,
+   "trades_W1_W3": 83
+  },
+  "META": {
+   "W1": -0.354,
+   "W1_W3": 1.757,
+   "trades_W1_W3": 34
+  },
+  "AMD": {
+   "W1": -1.798,
+   "W1_W3": 1.125,
+   "trades_W1_W3": 67
+  },
+  "AAPL": {
+   "W1": -1.198,
+   "W1_W3": -3.205,
+   "trades_W1_W3": 65
+  },
+  "AMZN": {
+   "W1": 2.988,
+   "W1_W3": 4.658,
+   "trades_W1_W3": 56
+  },
+  "MSFT": {
+   "W1": -0.964,
+   "W1_W3": -2.207,
+   "trades_W1_W3": 65
+  },
+  "GOOGL": {
+   "W1": -0.65,
+   "W1_W3": 0.023,
+   "trades_W1_W3": 34
+  },
+  "NFLX": {
+   "W1": 0.006,
+   "W1_W3": -3.435,
+   "trades_W1_W3": 43
+  }
+ },
+ "mean_hold_bars_W1_W3": 9.0,
+ "long_share_W1_W3": 0.557
+}
