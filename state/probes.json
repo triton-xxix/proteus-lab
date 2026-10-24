@@ -1,5 +1,5 @@
 {
- "next_id": 210,
+ "next_id": 211,
  "items": [
   {
    "id": "P-0001",
@@ -5105,6 +5105,32 @@
     "number": "chi-square homogeneity over three ISO weeks (41 to 43) p about 0.5, no week significant; every expected cell at least 5; shot after seeing the dated accept list in P-0208",
     "at": "2026-10-24T12:35:23+0100",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0210",
+   "title": "Noise-area intraday momentum (Concretum Group, Zarattini and Aziz 2024, Beat the Market, via Quantocracy) added to edges/scan/scan.py: band = day open times (1 plus or minus the 14-day average of abs(close at that minute / day open minus 1)), computed in prepare() like bbm and adx; long when a 5m close crosses above the upper band, short below the lower, trailing stop at the band, flat at the close, one position at a time; run the ladder on the stock set and report W1 to W3 net, pooled p against the random-entry control, and whether it climbs; claim to test: the paper reports positive intraday momentum on SPY, so W1 net above zero on SPY is the number. Artefact: experiments/ README, the scan output, results.json.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-24",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-24T12:37:16+0100",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "rule runs through the ladder; SPY W1 net below zero and the rule does not climb all three rungs on any stock",
+    "at": "2026-10-24T12:37:36+0100"
    }
   }
  ]
