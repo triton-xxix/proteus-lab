@@ -5193,16 +5193,22 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-24T23:36:16+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-24T23:38:52+0100",
+   "note": "Not a transcript reader: a mods plugin whose core takes context as input plus cache read plus cache write from the last API response. Fourteen cases through promptGate under plain node: asks compact-then-send at exactly 150,000 tokens and 3,600 s idle (149,999 and 59 min pass), headless gets one free heavy resume then a drop, notifications never held, 273k real context from tonight asked at 2 h and passed at 1 min; 76 us a call. Shot held. Adapter untested (needs an interactive session and claude plugin test); bun and node --experimental-strip-types denied, plain node ran it.",
+   "artefacts": [
+    "experiments/2026-10-24-P-0213"
+   ],
+   "minutes": 2,
+   "calls": 23,
+   "denied": [
+    "Bash `node --version`",
+    "Bash `bun run /Users/triton/PROTEUS/experiments/2026-10-24-P-0213/harness.ts`",
+    "Bash `node --experimental-strip-types /Users/triton/PROTEUS/experiments/2026-10-24-P-0213/harnes`"
+   ],
    "luke": false
   }
  ]

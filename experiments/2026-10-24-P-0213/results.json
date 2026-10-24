@@ -1,0 +1,215 @@
+{
+  "config": {
+    "enabled": true,
+    "journal": true,
+    "windowMs": 600000,
+    "agentMax": 4,
+    "rollingMax": 12,
+    "depthMax": 1,
+    "agentTokensMax": 10000000,
+    "limitAskPercent": 80,
+    "limitDenyPercent": 95,
+    "burnPercent": 20,
+    "contextWarn": 300000,
+    "contextHard": 500000,
+    "toolContext": 400000,
+    "toolMax": 20,
+    "dormantMs": 3600000,
+    "dormantContext": 150000,
+    "dormantMax": 1,
+    "failureMax": 3,
+    "fuseMax": 5,
+    "fuseMs": 600000,
+    "peerTtlMs": 900000,
+    "journalDays": 90
+  },
+  "results": [
+    {
+      "name": "stale+large, user, canAsk",
+      "context": 160000,
+      "idleMin": 120,
+      "source": "user",
+      "canAsk": true,
+      "kind": "ask",
+      "rule": "dormant",
+      "text": "This session was idle for 2 h, so its prompt cache has likely expired and this request re-writes about 160k tokens. Send this prompt?",
+      "microseconds": 423
+    },
+    {
+      "name": "stale+large, headless, 1st then 2nd",
+      "first": "allow",
+      "second": "drop",
+      "secondText": "agent-usage-guard: this session was idle for 2 h, so its prompt cache has likely expired and this request re-writes about 160k tokens, and 1 heavy idle session already resumed on this machine in the last 10 min (limit 1). Try again later, or compact the session first."
+    },
+    {
+      "name": "149,999 ctx, 2 h idle",
+      "context": 149999,
+      "idleMin": 120,
+      "source": "user",
+      "canAsk": true,
+      "kind": "allow",
+      "rule": null,
+      "text": "",
+      "microseconds": 14
+    },
+    {
+      "name": "150,000 ctx, 2 h idle",
+      "context": 150000,
+      "idleMin": 120,
+      "source": "user",
+      "canAsk": true,
+      "kind": "ask",
+      "rule": "dormant",
+      "text": "This session was idle for 2 h, so its prompt cache has likely expired and this request re-writes about 150k tokens. Send this prompt?",
+      "microseconds": 28
+    },
+    {
+      "name": "160k ctx, 59 min idle",
+      "context": 160000,
+      "idleMin": 59,
+      "source": "user",
+      "canAsk": true,
+      "kind": "allow",
+      "rule": null,
+      "text": "",
+      "microseconds": 10
+    },
+    {
+      "name": "160k ctx, 60 min idle",
+      "context": 160000,
+      "idleMin": 60,
+      "source": "user",
+      "canAsk": true,
+      "kind": "ask",
+      "rule": "dormant",
+      "text": "This session was idle for 1 h, so its prompt cache has likely expired and this request re-writes about 160k tokens. Send this prompt?",
+      "microseconds": 22
+    },
+    {
+      "name": "350k ctx, 1 min idle",
+      "context": 350000,
+      "idleMin": 1,
+      "source": "user",
+      "canAsk": true,
+      "kind": "allow",
+      "rule": null,
+      "text": "agent-usage-guard: this session's context is 350k tokens. Keep this turn bounded, and recommend /compact to the user at the next natural break.",
+      "microseconds": 23
+    },
+    {
+      "name": "600k ctx, 1 min idle",
+      "context": 600000,
+      "idleMin": 1,
+      "source": "user",
+      "canAsk": true,
+      "kind": "ask",
+      "rule": "prompt-context",
+      "text": "This session holds 600k context tokens, and sending re-reads all of them; compacting first shrinks this request and every later one. Send this prompt?",
+      "microseconds": 17
+    },
+    {
+      "name": "600k ctx, 1 min idle, headless",
+      "context": 600000,
+      "idleMin": 1,
+      "source": "headless",
+      "canAsk": false,
+      "kind": "drop",
+      "rule": "prompt-context",
+      "text": "agent-usage-guard: this session holds 600k context tokens (limit 500k), and sending re-reads all of them. Compact the session first, or raise AGENT_GUARD_CONTEXT_HARD.",
+      "microseconds": 14
+    },
+    {
+      "name": "stale+large, source other",
+      "context": 160000,
+      "idleMin": 120,
+      "source": "other",
+      "canAsk": true,
+      "kind": "allow",
+      "rule": null,
+      "text": "",
+      "microseconds": 4
+    },
+    {
+      "name": "no context, 2 h idle",
+      "idleMin": 120,
+      "source": "user",
+      "canAsk": true,
+      "kind": "allow",
+      "rule": null,
+      "text": "",
+      "microseconds": 15
+    },
+    {
+      "name": "speed: 160k, 2 h, 10,000 calls",
+      "context": 160000,
+      "idleMin": 120,
+      "source": "user",
+      "canAsk": true,
+      "kind": "ask",
+      "rule": "dormant",
+      "text": "This session was idle for 2 h, so its prompt cache has likely expired and this request re-writes about 160k tokens. Send this prompt?",
+      "microseconds": 1
+    },
+    {
+      "name": "tonight real ctx, 2 h idle",
+      "context": 272585,
+      "idleMin": 120,
+      "source": "user",
+      "canAsk": true,
+      "kind": "ask",
+      "rule": "dormant",
+      "text": "This session was idle for 2 h, so its prompt cache has likely expired and this request re-writes about 273k tokens. Send this prompt?",
+      "microseconds": 76
+    },
+    {
+      "name": "tonight real ctx, 1 min idle",
+      "context": 272585,
+      "idleMin": 1,
+      "source": "user",
+      "canAsk": true,
+      "kind": "allow",
+      "rule": null,
+      "text": "",
+      "microseconds": 24
+    },
+    {
+      "name": "transcript",
+      "lines": 915,
+      "context": 272585,
+      "last": {
+        "input_tokens": 32,
+        "cache_creation_input_tokens": 486,
+        "cache_read_input_tokens": 272067,
+        "output_tokens": 672,
+        "output_tokens_details": {
+          "thinking_tokens": 381
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 486,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 32,
+            "output_tokens": 672,
+            "cache_read_input_tokens": 272067,
+            "cache_creation_input_tokens": 486,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 486
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      }
+    }
+  ]
+}
