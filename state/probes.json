@@ -5144,22 +5144,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-24T12:39:19+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-24T12:41:32+0100",
+   "note": "Honest fills (exit at the close of the bar that touched VWAP): W1 191 trades net -7.71%, win 30.9%, p 0.59, rungs 0; W2 +7.17%, W3 +3.64%; pooled 498 trades +3.09% p 0.15. Shot held on all four parts (W1 below zero, better than -8.97%, wins above 30%, rungs 0). First run filled stops at the exit bar VWAP, a look-ahead: 317 of 1442 stop exits were at prices outside the bar range and it gave +42.73% pooled, 3 rungs, p 0.00. Same trades, +3.1% v +42.7%. Lesson: a stop computed from the bar it fires in must fill at that bar close; scan.py already does. Noise-area family not a forward candidate with P-0210. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-24-P-0211"
+   ],
+   "minutes": 2,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "W1 net still below zero but better than the band stop (-8.97%), win rate above 30%, rungs 0",
-    "at": "2026-10-24T12:39:25+0100"
+    "at": "2026-10-24T12:39:25+0100",
+    "hit": true
    }
   }
  ]
