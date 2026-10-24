@@ -1,0 +1,143 @@
+{
+ "summary": {
+  "date": "2026-10-23",
+  "items": 11,
+  "facts": 104,
+  "supported": 81,
+  "support_rate": 0.779
+ },
+ "items": [
+  {
+   "n": 1,
+   "key": "vault:2026-10-18:ai-brand-face-retainer-for-small-businesses",
+   "facts": 9,
+   "supported": 3,
+   "unsupported": [
+    "AI-generated",
+    "UGC-style",
+    "delivered",
+    "posts",
+    "render",
+    "video-generation"
+   ],
+   "claim": "The vault sweep says real money sits in selling AI UGC and brand faces to businesses on retainers, though most big numbers are self-reported.",
+   "section_chars": 1293
+  },
+  {
+   "n": 2,
+   "key": "hn:50195488",
+   "facts": 9,
+   "supported": 7,
+   "unsupported": [
+    "curves",
+    "post"
+   ],
+   "claim": "A free MIT Mac app learns any song from Spotify, Apple Music or YouTube in a couple of minutes and scores your singing against its pitch track.",
+   "section_chars": 2667
+  },
+  {
+   "n": 3,
+   "key": "gh:mihirgupta0900/tv-home",
+   "facts": 17,
+   "supported": 16,
+   "unsupported": [
+    "itself"
+   ],
+   "claim": "On a 2 GB TCL Google TV it disabled 25 bloat apps and cut home screen memory from 192 MB to 83 MB.",
+   "section_chars": 3975
+  },
+  {
+   "n": 4,
+   "key": "arxiv:2610.31650",
+   "facts": 5,
+   "supported": 4,
+   "unsupported": [
+    "acting"
+   ],
+   "claim": "Across ten models, resistance to missing evidence varies widely, and giving recovery access reduces unsafe execution for all of them.",
+   "section_chars": 1669
+  },
+  {
+   "n": 6,
+   "key": "gh:402mcp/402mcp",
+   "facts": 11,
+   "supported": 10,
+   "unsupported": [
+    "Lightning"
+   ],
+   "claim": "An MCP server and public registry that decodes 402 challenges and recommends a payment rail, with no tool able to spend money.",
+   "section_chars": 3884
+  },
+  {
+   "n": 7,
+   "key": "vault:2026-09-20:rockstar-s-own-cfx-marketplace-for-selling-fivem-and-redm-sc",
+   "facts": 9,
+   "supported": 4,
+   "unsupported": [
+    "Cfx.re",
+    "assets",
+    "cut",
+    "publisher-sanctioned",
+    "servers"
+   ],
+   "claim": "There is an official publisher-sanctioned marketplace for paid FiveM and RedM assets.",
+   "section_chars": 1599
+  },
+  {
+   "n": 9,
+   "key": "gh:rossark0/rossark-motion-skill",
+   "facts": 9,
+   "supported": 7,
+   "unsupported": [
+    "Python",
+    "TypeScript"
+   ],
+   "claim": "Turns an SVG into 60 fps animation with live faces and full-body acting, by teaching the agent animator's rules.",
+   "section_chars": 3969
+  },
+  {
+   "n": 10,
+   "key": "arxiv:2610.31483",
+   "facts": 11,
+   "supported": 10,
+   "unsupported": [
+    "role"
+   ],
+   "claim": "A Qwen3-8B model trained this way beats Llama-4-Maverick (402B) on ToolBench and transfers to other retrievers and corpora.",
+   "section_chars": 1150
+  },
+  {
+   "n": 12,
+   "key": "gh:77777r7/octocrawl",
+   "facts": 8,
+   "supported": 8,
+   "unsupported": [],
+   "claim": "Open-source scrape, map and crawl toolkit for agents, returning Markdown and checked fields with failure reasons; keyless hosted trial allows five pages a day.",
+   "section_chars": 3945
+  },
+  {
+   "n": 13,
+   "key": "vault:2026-10-18:labelled-persona-on-an-ai-friendly-subscription-platform",
+   "facts": 7,
+   "supported": 5,
+   "unsupported": [
+    "front",
+    "policy"
+   ],
+   "claim": "Labelled subscription personas on AI-friendly platforms can earn, though visible big numbers are mostly self-reported or sold by course sellers.",
+   "section_chars": 1362
+  },
+  {
+   "n": 14,
+   "key": "hn:50176908",
+   "facts": 9,
+   "supported": 7,
+   "unsupported": [
+    "per-user",
+    "trail"
+   ],
+   "claim": "Access control for multi-user agents: per-user credentials, fine-grained runtime policy and compliance-grade audit logs through a proxy.",
+   "section_chars": 2803
+  }
+ ]
+}
