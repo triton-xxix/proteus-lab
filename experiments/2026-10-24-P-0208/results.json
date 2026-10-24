@@ -1,0 +1,40 @@
+{
+  "probe": "P-0208",
+  "source": "/Users/triton/PROTEUS/games/lichess/CHALLENGES.csv",
+  "split_rating": 1750,
+  "verdict_counts": {
+    "refused 400": 258,
+    "no answer": 83,
+    "declined": 310,
+    "accepted": 39,
+    "refused 429": 8
+  },
+  "weak": {
+    "n": 83,
+    "accepted": 8,
+    "rate": 0.0963855421686747
+  },
+  "strong": {
+    "n": 615,
+    "accepted": 31,
+    "rate": 0.05040650406504065
+  },
+  "difference_weak_minus_strong": 0.04597903810363405,
+  "pooled_proportion": 0.055873925501432664,
+  "expected_under_h0": {
+    "weak_successes": 4.637535816618911,
+    "weak_failures": 78.36246418338109,
+    "strong_successes": 34.362464183381086,
+    "strong_failures": 580.6375358166189
+  },
+  "success_failure_condition_met": false,
+  "z_pooled": 1.7119425486322817,
+  "p_two_sided_z": 0.08690725649602717,
+  "ci95_unpooled": [
+    -0.01982479671998561,
+    0.11178287292725372
+  ],
+  "fisher_exact_p_two_sided": 0.11984156492697563,
+  "fisher_observed_table_prob": 0.04689584781264859,
+  "book_allows_z_test": false
+}

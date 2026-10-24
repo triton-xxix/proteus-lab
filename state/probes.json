@@ -5057,22 +5057,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-24T12:33:59+0100",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-24T12:34:55+0100",
+   "note": "Fisher exact two-sided p 0.120 v shot about 0.10; pooled z p 0.087; weak (below 1750) accept 8 of 83 (9.6%) v strong 31 of 615 (5.0%). Success-failure condition fails as called: 4.6 expected weak accepts under the pooled 0.0559 against the book threshold of 10, so OpenIntro 6.2 would not allow the z-test. Shot after looking at the accept counts, scored at p 0.5. Caveat: 31 of 39 accepts came from strong bots, mostly 9 to 14 Oct, so rating is the wrong axis and time is the one to test. Next: deepen (accept rate by week, chi-square homogeneity, OpenIntro 6.4).",
+   "artefacts": [
+    "experiments/2026-10-24-P-0208"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "Fisher exact two-sided p about 0.10 for weak (below 1750) v strong accept rates; success-failure condition fails (weak group expects under 5 accepts); shot after looking at the accept counts in CHALLENGES.csv",
-    "at": "2026-10-24T12:34:09+0100"
+    "at": "2026-10-24T12:34:09+0100",
+    "hit": true
    }
   }
  ]
