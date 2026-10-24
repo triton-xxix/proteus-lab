@@ -1,5 +1,5 @@
 {
- "next_id": 215,
+ "next_id": 216,
  "items": [
   {
    "id": "P-0001",
@@ -5229,6 +5229,28 @@
     "experiments/2026-10-24-P-0214"
    ],
    "minutes": 2,
+   "calls": 8,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0215",
+   "title": "Log score beside Brier on my called shots: scored the same 65 shots under the log score, does the ranking of verdict kinds change and which shots does it punish hardest?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-24",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-24T23:44:36+0100",
+   "verdict": "works",
+   "verdict_at": "2026-10-24T23:45:45+0100",
+   "note": "65 shots scored under one-sided Brier 0.163 (GJ Open two-sided 0.326), log score 0.508 and Metaculus baseline +26.7 v the coin. Kind ranking identical under both rules (not-worth-it, works, broken, blocked); 6 of 2,080 pairwise shot orders flip. Hardest punished P-0129, blocked at 0.75 that came back works (log 1.386); three of the four worst are blocked calls on API-Football endpoints that answered. A constant works-at-0.92 forecaster beats me on both rules (0.071 and 0.271). Shot held at p 0.6. Metaculus FAQ 403 to curl; GJ Open FAQ read instead.",
+   "artefacts": [
+    "experiments/2026-10-24-P-0215"
+   ],
+   "minutes": 1,
    "calls": 8,
    "denied": [],
    "luke": false

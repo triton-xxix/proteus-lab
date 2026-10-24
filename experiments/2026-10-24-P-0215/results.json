@@ -1,0 +1,243 @@
+{
+ "scored_shots": 65,
+ "overall": {
+  "n": 65,
+  "hit_rate": 0.908,
+  "mean_p": 0.628,
+  "brier1": 0.163,
+  "brier_gjo": 0.326,
+  "log": 0.5081,
+  "baseline": 26.7
+ },
+ "by_expected_kind": {
+  "works": {
+   "n": 58,
+   "hit_rate": 0.966,
+   "mean_p": 0.628,
+   "brier1": 0.1529,
+   "brier_gjo": 0.3059,
+   "log": 0.4875,
+   "baseline": 29.7
+  },
+  "blocked": {
+   "n": 5,
+   "hit_rate": 0.4,
+   "mean_p": 0.64,
+   "brier1": 0.277,
+   "brier_gjo": 0.554,
+   "log": 0.7398,
+   "baseline": -6.7
+  },
+  "broken": {
+   "n": 1,
+   "hit_rate": 0.0,
+   "mean_p": 0.5,
+   "brier1": 0.25,
+   "brier_gjo": 0.5,
+   "log": 0.6931,
+   "baseline": 0.0
+  },
+  "not-worth-it": {
+   "n": 1,
+   "hit_rate": 1.0,
+   "mean_p": 0.7,
+   "brier1": 0.09,
+   "brier_gjo": 0.18,
+   "log": 0.3567,
+   "baseline": 48.5
+  }
+ },
+ "rank_by_brier": [
+  "not-worth-it",
+  "works",
+  "broken",
+  "blocked"
+ ],
+ "rank_by_log": [
+  "not-worth-it",
+  "works",
+  "broken",
+  "blocked"
+ ],
+ "ranking_changes": false,
+ "by_stated_p": {
+  "0.45": {
+   "n": 1,
+   "hit_rate": 0.0,
+   "mean_p": 0.45,
+   "brier1": 0.2025,
+   "brier_gjo": 0.405,
+   "log": 0.5978,
+   "baseline": 13.8
+  },
+  "0.5": {
+   "n": 11,
+   "hit_rate": 0.909,
+   "mean_p": 0.5,
+   "brier1": 0.25,
+   "brier_gjo": 0.5,
+   "log": 0.6931,
+   "baseline": 0.0
+  },
+  "0.55": {
+   "n": 9,
+   "hit_rate": 0.889,
+   "mean_p": 0.55,
+   "brier1": 0.2136,
+   "brier_gjo": 0.4272,
+   "log": 0.6201,
+   "baseline": 10.5
+  },
+  "0.6": {
+   "n": 18,
+   "hit_rate": 0.889,
+   "mean_p": 0.6,
+   "brier1": 0.1822,
+   "brier_gjo": 0.3644,
+   "log": 0.5559,
+   "baseline": 19.8
+  },
+  "0.65": {
+   "n": 4,
+   "hit_rate": 1.0,
+   "mean_p": 0.65,
+   "brier1": 0.1225,
+   "brier_gjo": 0.245,
+   "log": 0.4308,
+   "baseline": 37.9
+  },
+  "0.7": {
+   "n": 10,
+   "hit_rate": 1.0,
+   "mean_p": 0.7,
+   "brier1": 0.09,
+   "brier_gjo": 0.18,
+   "log": 0.3567,
+   "baseline": 48.5
+  },
+  "0.75": {
+   "n": 6,
+   "hit_rate": 0.833,
+   "mean_p": 0.75,
+   "brier1": 0.1458,
+   "brier_gjo": 0.2917,
+   "log": 0.4708,
+   "baseline": 32.1
+  },
+  "0.8": {
+   "n": 3,
+   "hit_rate": 1.0,
+   "mean_p": 0.8,
+   "brier1": 0.04,
+   "brier_gjo": 0.08,
+   "log": 0.2231,
+   "baseline": 67.8
+  },
+  "0.85": {
+   "n": 2,
+   "hit_rate": 1.0,
+   "mean_p": 0.85,
+   "brier1": 0.0225,
+   "brier_gjo": 0.045,
+   "log": 0.1625,
+   "baseline": 76.6
+  },
+  "0.9": {
+   "n": 1,
+   "hit_rate": 1.0,
+   "mean_p": 0.9,
+   "brier1": 0.01,
+   "brier_gjo": 0.02,
+   "log": 0.1054,
+   "baseline": 84.8
+  }
+ },
+ "constant_always_works_at_base_rate": {
+  "base_rate": 0.923,
+  "brier1": 0.071,
+  "log": 0.2712
+ },
+ "coin": {
+  "brier1": 0.25,
+  "log": 0.6931471805599453
+ },
+ "pairwise_order_flips_between_rules": {
+  "flips": 6,
+  "pairs": 2080,
+  "pct": 0.3
+ },
+ "hardest_punished": [
+  {
+   "id": "P-0129",
+   "expect": "blocked",
+   "verdict": "works",
+   "p": 0.75,
+   "log": 1.3862943611198906,
+   "brier1": 0.5625,
+   "title": "Pitch late team news: snapshot API-Football odds about 2 hours before each kickoff beside "
+  },
+  {
+   "id": "P-0131",
+   "expect": "blocked",
+   "verdict": "works",
+   "p": 0.6,
+   "log": 0.916290731874155,
+   "brier1": 0.36,
+   "title": "Pitch injuries: does API-Football's injuries endpoint answer on the Free plan for this wee"
+  },
+  {
+   "id": "P-0137",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.6,
+   "log": 0.916290731874155,
+   "brier1": 0.36,
+   "title": "Launchpad leaderboard: what share of 100 fresh pump.fun pools on GeckoTerminal keep liquid"
+  },
+  {
+   "id": "P-0128",
+   "expect": "works",
+   "verdict": "broken",
+   "p": 0.55,
+   "log": 0.7985076962177717,
+   "brier1": 0.30250000000000005,
+   "title": "Kolscan KOL wallets v the Grinder: do any of the 91 leaderboard wallets with a profit figu"
+  },
+  {
+   "id": "P-0076",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "log": 0.6931471805599453,
+   "brier1": 0.25,
+   "title": "Supercar money routes: rank every way to raise \u00a3140,000 (a McLaren 720S) in twelve months "
+  },
+  {
+   "id": "P-0132",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "log": 0.6931471805599453,
+   "brier1": 0.25,
+   "title": "P-0128 re-run: Kolscan 91 wallets v Grinder picks, experiments/2026-10-12-P-0128/run.py wi"
+  },
+  {
+   "id": "P-0138",
+   "expect": "broken",
+   "verdict": "works",
+   "p": 0.5,
+   "log": 0.6931471805599453,
+   "brier1": 0.25,
+   "title": "agent-standup: does its per-agent token count for one local session match a deduplicated t"
+  },
+  {
+   "id": "P-0149",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "log": 0.6931471805599453,
+   "brier1": 0.25,
+   "title": "P-0141 leg three: from experiments/2026-10-14-P-0141/results.json (51 KOL-signed trenchcat"
+  }
+ ]
+}
