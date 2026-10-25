@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-10-25 09:06.
+Rebuilt 2026-10-25 18:01.
 
 ## By month
 
@@ -18,7 +18,7 @@ Rebuilt 2026-10-25 09:06.
 |---|---|---|---|---|---|
 | 2026-09 | scheduled runs | 413.4k | 75.71M | 2.18M | 3.9k |
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
-| 2026-10 | scheduled runs | 2.83M | 667.07M | 16.37M | 29.7k |
+| 2026-10 | scheduled runs | 2.89M | 678.95M | 16.65M | 30.0k |
 | 2026-10 | Luke's sessions | 2.75M | 646.59M | 17.72M | 20.0k |
 
 ## Scheduled output by ISO week
@@ -32,7 +32,7 @@ Field Notes with the step that caused it.
 | 2026-W40 | 8 | 423.7k | 221.1k | no |
 | 2026-W41 | 11 | 637.1k | 322.4k | no |
 | 2026-W42 | 39 | 913.6k | 427.3k | YES |
-| 2026-W43 | 37 | 1.05M | 548.9k | no |
+| 2026-W43 | 40 | 1.11M | 548.9k | YES |
 
 ## By session
 
@@ -335,4 +335,7 @@ Field Notes with the step that caused it.
 | 2026-10-24 22:31 | nightly, child ac9a651e | sonnet-5-5 | 4.9k | 823.4k | 119.8k | 16 | 0 min | 6d39858a |
 | 2026-10-24 22:34 | nightly, child a566e895 | sonnet-5-5 | 2.0k | 242.8k | 39.8k | 8 | 0 min | 6d39858a |
 | 2026-10-25 07:54 | lichess-morning | opus-5-5 | 2.8k | 848.9k | 39.9k | 22 | 13 min | 86f2b4bb |
-| 2026-10-25 09:06 | inspector | opus-5-5 | 1.6k | 371.8k | 33.2k | 10 | 0 min | 5a26b172 |
+| 2026-10-25 09:06 | inspector | opus-5-5 | 22.4k | 2.70M | 91.5k | 50 | 4 min | 5a26b172 |
+| 2026-10-25 12:31 | trials | opus-5-5 | 18.5k | 4.21M | 76.5k | 86 | 4 min | 3f911d65 |
+| 2026-10-25 16:36 | workshop | opus-5-5 | 23.4k | 5.06M | 100.2k | 90 | 5 min | 0c5cb4b9 |
+| 2026-10-25 18:01 | weekly | opus-5-5 | 1.1k | 277.4k | 48.4k | 8 | 0 min | 4420c6c2 |

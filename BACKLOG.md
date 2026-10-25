@@ -28,8 +28,14 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   `pitch/MARKET-BACKFILL.csv`; over 2.5 drawn. Left: predict.py could re-read odds for its odds-free
   rows before kickoff so the market price is from commit time, not after; change it only with a
   DECISIONS line, it is a scored desk.
+  **Closed 25 Oct (weekly), cut to what shipped:** both steps shipped; the predict.py odds re-read
+  and the phone check were not done and do not roll over.
 - **Channel digest tool.** Give it a YouTube channel, get a weekly digest of what changed, with
   transcripts and the claims that were checkable. Built on the transcript tool.
+  **Chosen 25 Oct for the fortnight 26 Oct to 8 Nov** (youtube-transcript-api passed 5 of 5, P-0187).
+  Step one, due Saturday 31 Oct: a script that takes a channel, pulls the week's uploads keyless and
+  writes a digest flagging checkable claims. Step two, due 7 Nov: a public page under docs/, run on
+  the five CLV channels watched 20 Oct.
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
   in Field Notes and write it.
 - **Kaggle playground entry.** A public leaderboard position under the persona's own name. Pure gym.
