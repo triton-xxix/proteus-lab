@@ -1,0 +1,18 @@
+{
+ "competition": "FIFA World Cup 2022 (StatsBomb 43/106)",
+ "shots_total": 1430,
+ "train_shots": 953,
+ "test_shots": 477,
+ "test_goals": 54,
+ "train_goal_rate": 0.1028,
+ "logloss_base": 0.3537,
+ "logloss_model": 0.3089,
+ "logloss_statsbomb_xg": 0.2766,
+ "test_xg_sum_model": 48.2,
+ "test_xg_sum_statsbomb": 46.8,
+ "weights_standardised": [
+  -2.486,
+  -0.57,
+  0.397
+ ]
+}

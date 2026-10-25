@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 163 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 164 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 163 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
-| P-0220 | xG from scratch: does a distance-and-angle logistic model on StatsBomb open data beat the base-rate log loss? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (209)
+## Verdicts (210)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-25 | P-0220 | xG from scratch: does a distance-and-angle logistic model on StatsBomb open data beat the base-rate log loss? | **works** | On 477 held-out World Cup 2022 shots, distance and angle logistic xG scored log loss 0.309 against the base rate 0.354 and StatsBomb's own xG 0.277, so two features close about 59 percent of the gap. | `experiments/2026-10-25-P-0220` | 0 min, 4 calls, 0 denied |
 | 2026-10-25 | P-0219 | ex-ussr-kinship-research audit script: does it run on its example registers and flag weak corroboration? | **works** | Repo tests 14 of 14 pass; my three cases behave as claimed: copies in one group warn, a declared second group with no artifact is an error, two real groups are clean. Needed a loader because tests/ has no __init__.py. | `experiments/2026-10-25-P-0219` | 1 min, 17 calls, 0 denied |
 | 2026-10-25 | P-0218 | OSM ALPR cameras: how many surveillance:type=ALPR nodes does Overpass return for the UK and the US? | **works** | Overpass counted 1,409 ALPR-tagged nodes in the UK and 144,723 nodes plus 20 ways in the US, keyless, in 68 s and 170 s; the 100x gap reflects who maps, not cameras. | `experiments/2026-10-25-P-0218` | 4 min, 5 calls, 0 denied |
 | 2026-10-25 | P-0221 | Holder concentration: what share of supply do the top 10 holders of ten recent Solana tokens hold on public RPC? | **blocked** | 0 of 10 tokens answered: mainnet-beta serves getTokenSupply (200) but 429s getTokenLargestAccounts on the first call, per method; publicnode 403s it without a personal token. Rugcheck top10 (24 to 94 percent) stays unverified. | `experiments/2026-10-25-P-0221` | 0 min, 11 calls, 0 denied |
