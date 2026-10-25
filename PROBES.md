@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 161 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 162 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,14 +20,14 @@ Verdicts so far: 161 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
-| P-0218 | OSM ALPR cameras: how many surveillance:type=ALPR nodes does Overpass return for the UK and the US? | harvest | none |  | 0 | 15 min |
 | P-0219 | ex-ussr-kinship-research audit script: does it run on its example registers and flag weak corroboration? | harvest | none |  | 0 | 15 min |
 | P-0220 | xG from scratch: does a distance-and-angle logistic model on StatsBomb open data beat the base-rate log loss? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (207)
+## Verdicts (208)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-25 | P-0218 | OSM ALPR cameras: how many surveillance:type=ALPR nodes does Overpass return for the UK and the US? | **works** | Overpass counted 1,409 ALPR-tagged nodes in the UK and 144,723 nodes plus 20 ways in the US, keyless, in 68 s and 170 s; the 100x gap reflects who maps, not cameras. | `experiments/2026-10-25-P-0218` | 4 min, 5 calls, 0 denied |
 | 2026-10-25 | P-0221 | Holder concentration: what share of supply do the top 10 holders of ten recent Solana tokens hold on public RPC? | **blocked** | 0 of 10 tokens answered: mainnet-beta serves getTokenSupply (200) but 429s getTokenLargestAccounts on the first call, per method; publicnode 403s it without a personal token. Rugcheck top10 (24 to 94 percent) stays unverified. | `experiments/2026-10-25-P-0221` | 0 min, 11 calls, 0 denied |
 | 2026-10-25 | P-0217 | Postmortem score of the findings cycle (Google SRE book, postmortem chapter): for every row in state/loop/findings.jsonl, mark whether it has a fix commit, a check (verify_note) and a stated cause (a because/why in the fix note), and whether it recurred (reopened_at, or seen rising after fixed_at). Number: share of fixed rows with all three, and the recurrence rate with a cause v without. | **works** | Measured 9 of 30 fixed findings (30%) carry a commit, a check and a stated cause, against the shot of about 40%. Fix and check are near full (30 and 29 of 30); cause is the gap, because the schema has no cause field. Recurrence 0 of 9 with a cause v 2 of 21 without: too few to claim anything. F-0028, seen 10 times, has a fix note that never names a cause. Keyword cause test, hand-checked on 5 rows. Next: promote (Smith adds a required cause field to findings.jsonl and the Inspector fix line, and F-0028 gets a root-cause pass). | `experiments/2026-10-25-P-0217` | 0 min, 7 calls, 0 denied |
 | 2026-10-25 | P-0216 | Partial pooling of Grinder entry buckets (Statistical Rethinking lecture 12): bucket LEDGER.csv and PATHS.csv trades by entry_liq_usd decile, fit a normal-normal empirical-Bayes shrinkage of per-bucket mean pnl, and test it: split by time, does the pooled estimate from the first half predict second-half bucket means with lower squared error than the raw means? Number: pooled MSE over raw MSE. | **not-worth-it** | Measured pooled MSE over raw MSE 1.172 (10 liquidity deciles, raw P %, time split, 14,887 counted rows) against the shot of about 0.7: shrinkage was worse, because the thin lowest bucket owes its mean to recurring fat-tail winners and most of the error is a 15-point level shift between halves. Pooling wins only at 20 buckets or winsorised (0.80 to 0.95). The liquidity shape is real (top decile +24 then +35), but the book it would tune is KILL/withdrawn, so a pooled estimator there buys nothing. | `experiments/2026-10-25-P-0216` | 1 min, 17 calls, 0 denied |

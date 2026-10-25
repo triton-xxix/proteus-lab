@@ -1,0 +1,16 @@
+{
+ "at": "2026-10-25T23:38:21Z",
+ "endpoint": "https://overpass-api.de/api/interpreter",
+ "counts": {
+  "UK": {
+   "nodes": 1409,
+   "ways": 0,
+   "secs": 68.2
+  },
+  "US": {
+   "nodes": 144723,
+   "ways": 20,
+   "secs": 170.3
+  }
+ }
+}
