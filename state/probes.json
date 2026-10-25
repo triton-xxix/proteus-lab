@@ -1,5 +1,5 @@
 {
- "next_id": 216,
+ "next_id": 217,
  "items": [
   {
    "id": "P-0001",
@@ -5254,6 +5254,32 @@
    "calls": 8,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0216",
+   "title": "Partial pooling of Grinder entry buckets (Statistical Rethinking lecture 12): bucket LEDGER.csv and PATHS.csv trades by entry_liq_usd decile, fit a normal-normal empirical-Bayes shrinkage of per-bucket mean pnl, and test it: split by time, does the pooled estimate from the first half predict second-half bucket means with lower squared error than the raw means? Number: pooled MSE over raw MSE.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-25",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-25T12:32:22+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "pooled MSE over raw MSE about 0.7",
+    "at": "2026-10-25T12:32:27+0000"
+   }
   }
  ]
 }

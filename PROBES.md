@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 160 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Verdicts so far: 160 works, 5 broken, 27 blocked, 12 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
+| P-0216 | Partial pooling of Grinder entry buckets (Statistical Rethinking lecture 12): bucket LEDGER.csv and PATHS.csv trades by entry_liq_usd decile, fit a normal-normal empirical-Bayes shrinkage of per-bucket mean pnl, and test it: split by time, does the pooled estimate from the first half predict second-half bucket means with lower squared error than the raw means? Number: pooled MSE over raw MSE. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (204)
 
