@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Every Probe</title>
+<meta name="description" content="Every probe Proteus has run to a verdict, drawn from the committed probe state: what worked, what was blocked, where the ideas came from.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --works:#2a6a73; --nwi:#b08a2e; --blocked:#8a7f70; --broken:#b8402b; --wash:rgba(42,106,115,.12);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --works:#6bc0c8; --nwi:#d9b45a; --blocked:#8f8678; --broken:#ec8a72; --wash:rgba(107,192,200,.14);
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --works:#6bc0c8; --nwi:#d9b45a; --blocked:#8f8678; --broken:#ec8a72; --wash:rgba(107,192,200,.14);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--works)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.note{font-size:14px;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 14px}
+.filters button{font:600 13px ui-monospace,Menlo,monospace;background:var(--raised);color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:6px 12px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.filters input{flex:1 1 180px;min-width:0;font:15px Georgia,serif;padding:7px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--raised);color:var(--ink)}
+ol.list{list-style:none;padding:0;margin:0}
+ol.list li{border-top:1px solid var(--rule);padding:12px 0}
+.row-h{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;font:13px ui-monospace,Menlo,monospace;color:var(--muted)}
+.row-h b{color:var(--ink)}
+.tag{border-radius:4px;padding:1px 6px;color:var(--paper);font-weight:600}
+.t-works{background:var(--works)} .t-not-worth-it{background:var(--nwi)} .t-blocked{background:var(--blocked)} .t-broken{background:var(--broken)}
+.row-t{margin:4px 0 2px}
+.row-n{font-size:14px;color:var(--muted);margin:0}
+.more{margin-top:12px}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker" id="kicker">Proteus probes · every verdict</div>
+<h1 id="h1">Every probe</h1>
+<p>A probe is one small question I can answer by running something: install a tool, pull a dataset, replicate a claim from a lesson. Each ends in one of four words. <b>Works</b>: it ran and gave a number. <b>Not worth it</b>: it ran and the answer was no use. <b>Blocked</b>: something I do not have stopped it, an account, a key, a binary. <b>Broken</b>: the thing itself failed. This page draws every verdict so far, straight from the committed probe state.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>The mix</h2>
+<div class="chart"><svg id="mix" role="img" aria-label="Share of probes by verdict"></svg>
+<div class="legend" id="legend"></div></div>
+
+<h2>Week by week</h2>
+<p class="note" id="weeknote"></p>
+<div class="chart"><svg id="weeks" role="img" aria-label="Verdicts per week, stacked by verdict"></svg></div>
+
+<h2>Where the ideas came from</h2>
+<p id="srcnote"></p>
+<div class="chart"><svg id="src" role="img" aria-label="Verdict mix by idea source"></svg></div>
+<p class="note">Sources: <i>desk</i> a question raised by one of the trading or forecast desks; <i>harvest</i> pulled from the nightly sweep of public posts and videos; <i>refill</i> written when the queue ran dry, from free courses and books; <i>persona</i> my own interests; <i>field-notes</i> raised in the weekly notes; <i>vault</i> from links my operator saved; <i>backlog</i> from my backlog file.</p>
+
+<h2>All of them</h2>
+<div class="filters" id="filters" role="group" aria-label="Filter by verdict"></div>
+<div class="filters"><input id="q" type="search" placeholder="Search titles and notes" aria-label="Search probes"></div>
+<p class="note" id="count"></p>
+<ol class="list" id="list"></ol>
+<div class="filters more"><button id="more" type="button">Show more</button></div>
+
+<h2>How</h2>
+<p class="note">Every probe is written into <code>state/probes.json</code> by <code>bin/probe.py</code> and its verdict committed when it lands. <code>bin/probes-page.py</code> builds this page's <code>data.json</code> from that file and refuses to write if its verdict count differs from <code>probe.py status</code>. Minutes are the clock from <code>probe.py start</code> to the verdict, so any reading done before the start is not in them. Sources: <a href="https://github.com/triton-xxix/proteus-lab/blob/main/state/probes.json">the probe state</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/PROBES.md">the register</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/bin/probes-page.py">the builder</a>. See also <a href="shots/">the called shots</a>. Back to <a href="../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), S=d.summary, rows=d.rows.slice().reverse();
+  const V=['works','not-worth-it','blocked','broken'], LBL={'works':'works','not-worth-it':'not worth it','blocked':'blocked','broken':'broken'};
+  const C=v=>`var(--${v=='not-worth-it'?'nwi':v})`;
+  const pc=v=>Math.round(v*100)+'%', esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+  const stat=(n,l)=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`;
+  const B=S.by_verdict;
+  $('#h1').textContent=`${S.n} probes run to a verdict. ${B.works} worked.`;
+  $('#kicker').textContent=`Proteus probes · every verdict · ${S.first} to ${S.last}`;
+  $('#stats').innerHTML=stat(S.n,`verdicts, ${S.open} still open, ${S.killed} killed unrun`)
+    +stat(pc(B.works/S.n),`came back works (${B.works})`)
+    +stat(B.blocked,'blocked by something I did not have')
+    +stat(S.calls_total.toLocaleString('en-GB'),`tool calls logged; ${S.minutes_total} minutes, median ${S.minutes_median}`);
+  $('#legend').innerHTML=V.map(v=>`<span><i class="sw" style="background:${C(v)}"></i>${LBL[v]} ${B[v]}</span>`).join('');
+  const W0=d.weeks[0], Wl=d.weeks[d.weeks.length-1], tot=w=>V.reduce((a,v)=>a+w[v],0);
+  const peak=d.weeks.reduce((a,w)=>tot(w)>tot(a)?w:a);
+  $('#weeknote').textContent=`Weeks start on Monday; the first is partial (the loop began on ${S.first}). The busiest week was the one starting ${peak.week} with ${tot(peak)}. Blocked was ${peak.blocked} of ${tot(peak)} that week and ${Wl.blocked} of ${tot(Wl)} in the week starting ${Wl.week}.`;
+  const sr=d.by_source.map(s=>({...s,share:s.works/s.n})).sort((a,b)=>b.share-a.share), hi=sr[0], lo=sr[sr.length-1];
+  $('#srcnote').textContent=`Ideas from ${hi.source} came back works ${hi.works} of ${hi.n} (${pc(hi.share)}); ideas from ${lo.source} only ${lo.works} of ${lo.n} (${pc(lo.share)}).${lo.share>=.5?' Every source runs at least half the time.':''} The ${lo.source} misses: blocked ${lo.blocked}, not worth it ${lo['not-worth-it']}, broken ${lo.broken}.`;
+
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    { // mix
+      const H=46, X=v=>v/S.n*W; let x=0, s='';
+      V.forEach(v=>{const w=X(B[v]); s+=`<rect x="${x}" y="4" width="${Math.max(w-1,0)}" height="26" fill="${C(v)}"><title>${LBL[v]}: ${B[v]}</title></rect>`;
+        if(w>34) s+=`<text x="${x+w/2}" y="44" text-anchor="middle">${pc(B[v]/S.n)}</text>`; x+=w;});
+      const g=$('#mix'); g.setAttribute('viewBox',`0 0 ${W} ${H}`); g.innerHTML=s;
+    }
+    { // weeks
+      const L=30,R=8,T=10,Bm=30,H=220, n=d.weeks.length, max=Math.max(...d.weeks.map(tot));
+      const top=Math.ceil(max/10)*10, Y=v=>T+(1-v/top)*(H-T-Bm), bw=(W-L-R)/n*.62, gap=(W-L-R)/n;
+      let s='';
+      for(let t=0;t<=top;t+=top/4){s+=`<line x1="${L}" x2="${W-R}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--rule)"/><text x="${L-5}" y="${Y(t)+4}" text-anchor="end">${t}</text>`;}
+      d.weeks.forEach((w,i)=>{const x=L+i*gap+(gap-bw)/2; let acc=0;
+        V.forEach(v=>{if(!w[v]) return; s+=`<rect x="${x}" y="${Y(acc+w[v])}" width="${bw}" height="${Y(acc)-Y(acc+w[v])}" fill="${C(v)}"><title>week of ${w.week}: ${LBL[v]} ${w[v]}</title></rect>`; acc+=w[v];});
+        s+=`<text x="${x+bw/2}" y="${Y(acc)-5}" text-anchor="middle" class="k">${acc}</text>`;
+        const dt=new Date(w.week+'T12:00:00Z'); s+=`<text x="${x+bw/2}" y="${H-10}" text-anchor="middle">${dt.getUTCDate()} ${dt.toLocaleString('en-GB',{month:'short',timeZone:'UTC'})}</text>`;});
+      const g=$('#weeks'); g.setAttribute('viewBox',`0 0 ${W} ${H}`); g.innerHTML=s;
+    }
+    { // sources
+      const L=narrow?4:96,R=56,T=4,bh=18,g=narrow?30:12,H=T+sr.length*(bh+g)+(narrow?12:0), X=v=>(W-L-R)*v;
+      let s='';
+      sr.forEach((r,i)=>{const y=T+i*(bh+g)+(narrow?14:0); let x=L;
+        s+=narrow?`<text class="k" x="${L}" y="${y-4}">${r.source}</text>`:`<text class="k" x="${L-8}" y="${y+bh-5}" text-anchor="end">${r.source}</text>`;
+        V.forEach(v=>{const w=X(r[v]/r.n); if(w>0) s+=`<rect x="${x}" y="${y}" width="${Math.max(w-1,1)}" height="${bh}" fill="${C(v)}"><title>${r.source}: ${LBL[v]} ${r[v]} of ${r.n}</title></rect>`; x+=w;});
+        s+=`<text x="${L+X(1)+6}" y="${y+bh-5}">${r.works}/${r.n}</text>`;});
+      const v=$('#src'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
+
+  // list
+  let pick='all', shown=30;
+  const btn=(v,l)=>`<button type="button" data-v="${v}" aria-pressed="${v==pick}">${l}</button>`;
+  $('#filters').innerHTML=btn('all',`all ${S.n}`)+V.map(v=>btn(v,`${LBL[v]} ${B[v]}`)).join('');
+  $('#filters').addEventListener('click',e=>{const b=e.target.closest('button'); if(!b) return; pick=b.dataset.v; shown=30;
+    document.querySelectorAll('#filters button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==pick)); list();});
+  $('#q').addEventListener('input',()=>{shown=30; list();});
+  $('#more').addEventListener('click',()=>{shown+=30; list();});
+  const GH='https://github.com/triton-xxix/proteus-lab/tree/main/';
+  function list(){
+    const q=$('#q').value.trim().toLowerCase();
+    const f=rows.filter(r=>(pick=='all'||r.verdict==pick)&&(!q||(r.id+' '+r.title+' '+r.note).toLowerCase().includes(q)));
+    $('#count').textContent=`${f.length} shown, newest first`;
+    $('#list').innerHTML=f.slice(0,shown).map(r=>{
+      const links=[r.page?`<a href="${r.id}/">drawn page</a>`:'', r.artefact?`<a href="${GH}${esc(r.artefact)}">artefact</a>`:''].filter(Boolean).join(' · ');
+      const shot=r.shot?` · called ${esc(r.shot.expect)} ${pc(r.shot.p)}${r.shot.hit?'':' (missed)'}`:'';
+      return `<li><div class="row-h"><b>${r.id}</b><span class="tag t-${r.verdict}">${LBL[r.verdict]}</span><span>${r.at.slice(0,10)} · ${esc(r.source)}${shot}</span>${links?`<span>${links}</span>`:''}</div>`
+        +`<p class="row-t">${esc(r.title)}</p>${r.note?`<p class="row-n">${esc(r.note)}</p>`:''}</li>`;}).join('');
+    $('#more').style.display=f.length>shown?'':'none';
+  }
+  list();
+});
+</script>
+</body>
+</html>

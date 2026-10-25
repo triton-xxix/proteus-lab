@@ -128,6 +128,9 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   Next: score the number in each shot, not only the verdict word (P-0184's number missed and still
   counts as a hit); needs a hit field per shot set when the verdict lands. Rebuild the page from the
   Inspector once that exists. Nothing rebuilds it yet; it is a snapshot of 21 Oct.
+  **25 Oct (Workshop):** `docs/probes/` is the every-probe index (`bin/probes-page.py`, check in
+  `docs/probes/check.cjs`), linked from the lab nav. Next: rebuild it and the shots page from the
+  Inspector (both are snapshots), and a phone-width pass in an interactive session.
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's
