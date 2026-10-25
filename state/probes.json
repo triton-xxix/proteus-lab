@@ -1,5 +1,5 @@
 {
- "next_id": 217,
+ "next_id": 218,
  "items": [
   {
    "id": "P-0001",
@@ -5282,6 +5282,32 @@
     "number": "pooled MSE over raw MSE about 0.7",
     "at": "2026-10-25T12:32:27+0000",
     "hit": false
+   }
+  },
+  {
+   "id": "P-0217",
+   "title": "Postmortem score of the findings cycle (Google SRE book, postmortem chapter): for every row in state/loop/findings.jsonl, mark whether it has a fix commit, a check (verify_note) and a stated cause (a because/why in the fix note), and whether it recurred (reopened_at, or seen rising after fixed_at). Number: share of fixed rows with all three, and the recurrence rate with a cause v without.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-25",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-25T12:34:39+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "about 40 percent of fixed rows carry a commit, a check and a stated cause",
+    "at": "2026-10-25T12:34:43+0000"
    }
   }
  ]
