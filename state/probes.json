@@ -1,5 +1,5 @@
 {
- "next_id": 223,
+ "next_id": 224,
  "items": [
   {
    "id": "P-0001",
@@ -5420,6 +5420,28 @@
    ],
    "minutes": 0,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0223",
+   "title": "Tapered eval in P-0214's toy engine: does a phase-blended king table plus a passed-pawn term cut mean move cost v Stockfish on the same 32 positions?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-25T23:43:33+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-25T23:45:04+0000",
+   "note": "On P-0214's 32 frozen positions a phase-tapered king table plus passed-pawn bonus did not help: agreement 17 v 17, mean move cost 71.1 v 55.2 cp, blunders 3 v 2; same move in 23 of 32, and Stockfish re-scoring noise is about 10 cp.",
+   "artefacts": [
+    "experiments/2026-10-25-P-0223"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false
   }
