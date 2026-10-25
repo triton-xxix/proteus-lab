@@ -1,0 +1,357 @@
+{
+ "rows": 55,
+ "status": {
+  "verified": 28,
+  "wontfix": 7,
+  "open": 19,
+  "fixed": 1
+ },
+ "fixed": 30,
+ "with_commit": 30,
+ "with_check": 29,
+ "with_cause": 9,
+ "all_three": 9,
+ "share_all_three": 0.3,
+ "recurred_with_cause": [
+  0,
+  9
+ ],
+ "recurred_without_cause": [
+  2,
+  21
+ ],
+ "mean_seen_with_cause": 1.44,
+ "mean_seen_without_cause": 1.57,
+ "per_row": [
+  {
+   "id": "F-0001",
+   "status": "verified",
+   "severity": "med",
+   "seen": 2,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": true
+  },
+  {
+   "id": "F-0002",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0003",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "Cause",
+   "recurred": false
+  },
+  {
+   "id": "F-0004",
+   "status": "verified",
+   "severity": "high",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "since",
+   "recurred": false
+  },
+  {
+   "id": "F-0005",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "since",
+   "recurred": false
+  },
+  {
+   "id": "F-0006",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "since",
+   "recurred": false
+  },
+  {
+   "id": "F-0007",
+   "status": "verified",
+   "severity": "low",
+   "seen": 3,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "root",
+   "recurred": false
+  },
+  {
+   "id": "F-0008",
+   "status": "verified",
+   "severity": "low",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0009",
+   "status": "verified",
+   "severity": "med",
+   "seen": 2,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0011",
+   "status": "verified",
+   "severity": "high",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0012",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0013",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0015",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "since",
+   "recurred": false
+  },
+  {
+   "id": "F-0017",
+   "status": "verified",
+   "severity": "low",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0018",
+   "status": "verified",
+   "severity": "low",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0019",
+   "status": "verified",
+   "severity": "low",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0020",
+   "status": "verified",
+   "severity": "low",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0021",
+   "status": "verified",
+   "severity": "low",
+   "seen": 3,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "cause",
+   "recurred": false
+  },
+  {
+   "id": "F-0026",
+   "status": "verified",
+   "severity": "low",
+   "seen": 2,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0028",
+   "status": "open",
+   "severity": "low",
+   "seen": 10,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": true
+  },
+  {
+   "id": "F-0032",
+   "status": "verified",
+   "severity": "high",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "Cause",
+   "recurred": false
+  },
+  {
+   "id": "F-0033",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0037",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0039",
+   "status": "fixed",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": false,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0040",
+   "status": "verified",
+   "severity": "high",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0041",
+   "status": "verified",
+   "severity": "high",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": true,
+   "cause_word": "Cause",
+   "recurred": false
+  },
+  {
+   "id": "F-0042",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0043",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0048",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  },
+  {
+   "id": "F-0049",
+   "status": "verified",
+   "severity": "med",
+   "seen": 1,
+   "commit": true,
+   "check": true,
+   "cause": false,
+   "cause_word": "",
+   "recurred": false
+  }
+ ]
+}

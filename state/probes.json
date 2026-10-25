@@ -5292,22 +5292,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-25",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-25T12:34:39+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-25T12:35:21+0000",
+   "note": "Measured 9 of 30 fixed findings (30%) carry a commit, a check and a stated cause, against the shot of about 40%. Fix and check are near full (30 and 29 of 30); cause is the gap, because the schema has no cause field. Recurrence 0 of 9 with a cause v 2 of 21 without: too few to claim anything. F-0028, seen 10 times, has a fix note that never names a cause. Keyword cause test, hand-checked on 5 rows. Next: promote (Smith adds a required cause field to findings.jsonl and the Inspector fix line, and F-0028 gets a root-cause pass).",
+   "artefacts": [
+    "experiments/2026-10-25-P-0217"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "about 40 percent of fixed rows carry a commit, a check and a stated cause",
-    "at": "2026-10-25T12:34:43+0000"
+    "at": "2026-10-25T12:34:43+0000",
+    "hit": true
    }
   }
  ]
