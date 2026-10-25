@@ -5263,22 +5263,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-25",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-25T12:32:22+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-25T12:33:51+0000",
+   "note": "Measured pooled MSE over raw MSE 1.172 (10 liquidity deciles, raw P %, time split, 14,887 counted rows) against the shot of about 0.7: shrinkage was worse, because the thin lowest bucket owes its mean to recurring fat-tail winners and most of the error is a 15-point level shift between halves. Pooling wins only at 20 buckets or winsorised (0.80 to 0.95). The liquidity shape is real (top decile +24 then +35), but the book it would tune is KILL/withdrawn, so a pooled estimator there buys nothing.",
+   "artefacts": [
+    "experiments/2026-10-25-P-0216"
+   ],
+   "minutes": 1,
+   "calls": 17,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "pooled MSE over raw MSE about 0.7",
-    "at": "2026-10-25T12:32:27+0000"
+    "at": "2026-10-25T12:32:27+0000",
+    "hit": false
    }
   }
  ]
