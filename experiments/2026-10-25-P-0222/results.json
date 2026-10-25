@@ -1,0 +1,35 @@
+{
+ "pulled": 200,
+ "with_both_dates": 200,
+ "lag_h_median": 2.67,
+ "lag_h_p10": -153.0,
+ "lag_h_p90": 11.68,
+ "share_lag_over_2h": 0.54,
+ "share_closed_before_end": 0.335,
+ "sports_n": 68,
+ "sports_lag_h_median": 2.67,
+ "other_n": 132,
+ "other_lag_h_median": 0.04,
+ "custom_liveness_s": {
+  "900": 92,
+  "1800": 15,
+  "default": 85,
+  "600": 2,
+  "0": 2,
+  "7200": 4
+ },
+ "uma_bond": {
+  "250": 173,
+  "500": 3,
+  "None": 24
+ },
+ "proposal_status_list_length": {
+  "2": 176,
+  "0": 24
+ },
+ "automatically_resolved": 200,
+ "closed_time_span": [
+  "2026-10-25 23:29:50.282006+00",
+  "2026-10-25 23:40:58.309981+00"
+ ]
+}

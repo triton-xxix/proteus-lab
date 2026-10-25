@@ -1,5 +1,5 @@
 {
- "next_id": 222,
+ "next_id": 223,
  "items": [
   {
    "id": "P-0001",
@@ -5398,6 +5398,28 @@
    ],
    "minutes": 0,
    "calls": 11,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0222",
+   "title": "Polymarket resolution lag: across 200 recently closed markets on the keyless Gamma API, what is the median hours from end date to close, and what share exceed the 2-hour challenge window?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-25T23:41:54+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-25T23:42:27+0000",
+   "note": "The 200 newest-closed Gamma markets, all auto-resolved: 173 use a 250 USDC bond (none the 750 the help page names) and 92 a 15-minute challenge window (4 use the documented 2 hours); sports median lag 2.7 h is mostly game length.",
+   "artefacts": [
+    "experiments/2026-10-25-P-0222"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
