@@ -1,5 +1,5 @@
 {
- "next_id": 218,
+ "next_id": 222,
  "items": [
   {
    "id": "P-0001",
@@ -5312,6 +5312,86 @@
     "at": "2026-10-25T12:34:43+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0218",
+   "title": "OSM ALPR cameras: how many surveillance:type=ALPR nodes does Overpass return for the UK and the US?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0219",
+   "title": "ex-ussr-kinship-research audit script: does it run on its example registers and flag weak corroboration?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0220",
+   "title": "xG from scratch: does a distance-and-angle logistic model on StatsBomb open data beat the base-rate log loss?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0221",
+   "title": "Holder concentration: what share of supply do the top 10 holders of ten recent Solana tokens hold on public RPC?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

@@ -6,13 +6,21 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-393 judged over 26 harvest days, 260 kept, 79 testable, 76 queued as probes, 72 with a probe verdict.
+407 judged over 27 harvest days, 268 kept, 83 testable, 80 queued as probes, 73 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0391 | 2026-10-24 | hn | [Show HN: agent-usage-guard – a Claude Code mod to protect your usage window](https://github.com/rbartoli/agent-usage-guard) | mechanism | tools-for-strangers | yes | P-0213 |
+| H-0404 | 2026-10-25 | vault | [bubble map wallet clustering as a rug detector](https://www.instagram.com/reel/Ddo-okKPBJF/) (intel) | mechanism | desk:grinder | yes | P-0221 |
+| H-0403 | 2026-10-25 | youtube | [What Is xG? Expected Goals Explained](https://www.youtube.com/watch?v=yUD073LrqVc) | mechanism | desk:pitch | yes | P-0220 |
+| H-0401 | 2026-10-25 | github | [DenisSergeevitch/ex-ussr-kinship-research: Evidence-first genealogy skill for AI agents (C](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) | mechanism | mechanism-hunting | yes | P-0219 |
+| H-0400 | 2026-10-25 | hn | [Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English](https://huggingface.co/destined/hurston-1) | mechanism | tools-for-strangers | no: A Maya1-class model on an Intel Mac CPU will not synthesise  |  |
+| H-0399 | 2026-10-25 | vault | [form-triggered personalised AI video]() | mechanism | tools-for-strangers | no: The voice and avatar steps need paid keys and the delivery s |  |
+| H-0397 | 2026-10-25 | arxiv | [Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory](https://arxiv.org/abs/2610.31376) | mechanism | mechanism-hunting | no: The result is a formal proof; a toy run would test our own c |  |
+| H-0395 | 2026-10-25 | hn | [Proton hosts Flock map revealing over 300k cameras, defying cease-and-desist](https://www.tomshardware.com/software/maps/proton-hosts-flock-map-revealing-over-300-000-cameras-defying-cease-and-desist-threats-against-creator-privacy-focused-company-hosts-site-on-swiss-servers-says-users-have-the-right-to-know-whos-recording-them) | mechanism | open-data | yes | P-0218 |
+| H-0394 | 2026-10-25 | vault | [local open-weights video on a rented NVIDIA GPU](https://www.instagram.com/reel/DcAT9zPD0Cn/) | mechanism | tools-for-strangers | no: Needs an NVIDIA GPU and a rented-host account, and no Mac he |  |
+| H-0391 | 2026-10-24 | hn | [Show HN: agent-usage-guard – a Claude Code mod to protect your usage window](https://github.com/rbartoli/agent-usage-guard) | mechanism | tools-for-strangers | yes | P-0213 **works** |
 | H-0390 | 2026-10-24 | vault | [Viggle motion transfer](https://www.instagram.com/p/DemKvEhCDwm/) | mechanism | tools-for-strangers | no: Hosted service needing an account, and the open alternatives |  |
 | H-0388 | 2026-10-24 | arxiv | [Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery](https://arxiv.org/abs/2610.31461) | mechanism | tech | no: Evaluated on a controlled synthetic protocol and needs model |  |
 | H-0387 | 2026-10-24 | github | [appariciojunior/video-editor-skills: Skills that teach Claude Code to be a first-pass vide](https://github.com/appariciojunior/video-editor-skills) | mechanism | tools-for-strangers | no: Needs DaVinci Resolve Studio and a speech-to-text API key. |  |
@@ -274,6 +282,104 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0404 bubble map wallet clustering as a rug detector
+2026-10-25, vault, https://www.instagram.com/reel/Ddo-okKPBJF/
+
+- **Mechanism:** A bubble map plots a token's largest holders as circles and joins wallets that share a funding source or have transferred between each other, so one actor holding supply through many wallets shows as a cluster. Data comes from on-chain token accounts and transfer history. It misses wallets funded separately from exchanges, liquidity pulls, mint authority and honeypot code, which is why clean clusters do not mean safe. Launchers use bundling to fake distribution, and the clustering is how platforms and checkers catch it.
+- **Claim:** Linked-wallet clustering on a bubble map shows whether a coin's supply is concentrated, sold as a way to avoid rugs.
+- **Testable:** yes. For ten current Solana tokens from the Grinder feed, what share of supply do the top ten holders hold according to public RPC getTokenLargestAccounts, and how many shared a funding wallet? Queued as P-0221.
+- **Idea on its own:** needs-a-run. Holder concentration is easy to measure; whether it predicts rugs needs the Grinder's own outcomes to say.
+- **How it would be done:** Take ten tokens from the Grinder's existing feed and call the public Solana RPC for the largest token accounts of each, then compute the top-ten share. For the top holders, read recent transfer history to see whether two or more were funded by the same wallet. Join the result to what the Grinder already recorded about each token's later outcome to see whether concentration or linkage separates the losers. This is detection for the paper desk only.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** Solana public RPC https://api.mainnet-beta.solana.com (Keyless but rate-limited holder and signature queries.)
+- **Field Notes line:** Wallet clustering exposes supply held through many linked wallets, but separately funded wallets and LP pulls slip past it.
+
+### H-0403 What Is xG? Expected Goals Explained
+2026-10-25, youtube, https://www.youtube.com/watch?v=yUD073LrqVc
+
+- **Mechanism:** A classifier, usually logistic regression or gradient boosting, is trained on a large set of past shots using distance, angle, body part, play type and, in richer providers, defender and keeper positions. Its output is the probability that a shot scores, and a team's xG is the sum over its shots. Different providers use different features, so values are not comparable across them.
+- **Claim:** xG is learned from nearly a million shots and predicts future results better than goals do.
+- **Testable:** yes. On StatsBomb open data, what log loss does a distance-and-angle logistic xG model reach on held-out shots, and does it beat a constant base-rate guess? Queued as P-0220.
+- **Idea on its own:** sound. A shot-probability model with a held-out log-loss check is standard and verifiable.
+- **How it would be done:** Download StatsBomb open-data match event JSON from GitHub, extract shots with location, body part and play type, and convert location to distance and angle to goal. Fit logistic regression on one set of competitions and score on another, comparing log loss to the constant goal rate. Then see whether team xG totals predict next-match goals better than past goals, which is the claim that matters for the Pitch desk.
+- **Stack already covers:** football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** StatsBomb open-data https://github.com/statsbomb/open-data (Free event data with shot locations and outcomes.)
+- **Field Notes line:** Expected goals is just a classifier on shot distance and angle; a quick fit on open data shows how much of it a simple model already captures.
+
+### H-0401 DenisSergeevitch/ex-ussr-kinship-research: Evidence-first genealogy skill for AI agents (Codex, Claude Code): church boo
+2026-10-25, github, https://github.com/DenisSergeevitch/ex-ussr-kinship-research
+
+- **Mechanism:** Claims are held in CSV registers with a status ladder from hypothesis to strongly-corroborated, and copies of one record share an independence_group so mirrors cannot count as separate proof. A stdlib Python audit script checks referential integrity and that a cited artifact actually belongs to any independence group claimed, then checks the final report against the registers. The agent reads the instructions; the script is the part that enforces them.
+- **Claim:** An evidence-first genealogy skill with an audit script that stops corroboration being declared into existence.
+- **Testable:** yes. Does the repo's audit script run with stdlib Python on its bundled example and flag at least one weak-corroboration claim? Queued as P-0219.
+- **Idea on its own:** sound. Separating independent sources from copies is the right fix for overcounting evidence, in genealogy or in any scored claim.
+- **How it would be done:** Clone the repo into the sandbox, read the audit script, and run it on the example registers it ships with. Then edit a copy so two claims cite mirrors of the same artifact and confirm the script refuses to call them corroborated. The same register layout could hold Proteus prediction sources so that two outlets repeating one wire story count once. A human genealogist is still needed to read the actual archive scans.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** ex-ussr-kinship-research https://github.com/DenisSergeevitch/ex-ussr-kinship-research (Skill and audit script to run.)
+- **Field Notes line:** A genealogy skill stops duplicate copies of one record counting as independent proof, with a script that checks the claim registers.
+
+### H-0400 Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English
+2026-10-25, hn, https://huggingface.co/destined/hurston-1
+
+- **Mechanism:** A 136-hour slice of a consented voice dataset was used to fine-tune Maya1, an open text-to-speech model, and the output is narrowband (telephone bandwidth) audio targeted at call-centre use. It does not hold the same voice between prompts and does not clone. The dataset is the asset: 1M recordings from 20,000 people collected since 2021.
+- **Claim:** Apache-2.0 TTS fine-tune for Southern American and African English accents, narrowband for phone use.
+- **Testable:** no. A Maya1-class model on an Intel Mac CPU will not synthesise usefully inside 30 minutes, and no local LLM stack is installed. Needs: A GPU or a patient CPU run of the weights..
+- **Idea on its own:** sound. Fine-tuning an open base on a small domain-matched, consented set and shipping at phone bandwidth is a sensible narrow product.
+- **How it would be done:** Take an open base TTS such as Maya1, gather consented recordings in the target accent, fine-tune on a few hours, and resample output to 8kHz for telephone use. Check intelligibility by round-tripping through a speech-to-text model and measuring word error rate. Collecting consented speakers at scale is the part no script covers and would need paid contributors.
+- **Stack already covers:** ElevenLabs (voice), local transcription
+- **To fetch:** Hurston-1 https://huggingface.co/destined/hurston-1 (The released model and card.)
+- **Missing:** A consented accent dataset of useful size.
+- **Field Notes line:** A small consented voice set fine-tuned an open TTS model for phone-line accents; the data is the moat, not the architecture.
+
+### H-0399 form-triggered personalised AI video
+2026-10-25, vault, 
+
+- **Mechanism:** A web form submission fires a webhook into an automation flow. The flow fills a script template with the lead's name and details, sends it to a voice model and a lip-sync or avatar service, then emails or texts the rendered video back. The vault note says it must be inbound only, meaning sent to people who asked, and must not claim it was recorded by hand.
+- **Claim:** An enquiry form can trigger an automatic personalised video reply.
+- **Testable:** no. The voice and avatar steps need paid keys and the delivery step needs a mailbox. Needs: ElevenLabs and HeyGen or Tavus keys, plus a form with a webhook..
+- **Idea on its own:** sound. Template, voice and avatar steps are all standard and the honesty line (do not claim it was filmed by hand) is easy to keep.
+- **How it would be done:** Build a form that posts to a small webhook receiver. The receiver fills a short script template from the fields, calls ElevenLabs for the voice, then HeyGen or Tavus for the avatar render, and polls until the file is ready. It emails the link from the sending domain with a line saying the video was generated. Add a throttle and a rule that only people who submitted get one. A person reviews the first few outputs and the template wording.
+- **Stack already covers:** ElevenLabs (voice), HeyGen and Tavus (avatars), HyperFrames (video compose, captions, render)
+- **To fetch:** n8n https://github.com/n8n-io/n8n (Open-source workflow tool with webhook triggers.)
+- **Field Notes line:** A form submission can fire a webhook that scripts, voices and renders a personalised video reply, if it says plainly it is automated.
+
+### H-0397 Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and
+2026-10-25, arxiv, https://arxiv.org/abs/2610.31376
+
+- **Mechanism:** The harness between the model and its tools is modelled as a Petri net: places hold marks for capabilities, approvals and budgets, and a tool call is a transition that fires only if the needed marks exist. An injected request whose marks are missing or already spent is refused whatever its wording. A maximally permissive supervisor allows everything not provably unsafe, and a stricter refinement trades off refusals against the inference cost of an agent that retries after a refusal.
+- **Claim:** Safe tool execution under prompt injection can be enforced by mark-based supervisory control, with the least-intrusive safe supervisor characterised formally.
+- **Testable:** no. The result is a formal proof; a toy run would test our own code, not the paper's claim.
+- **Idea on its own:** sound. Gating actions on unspent capabilities rather than on prompt content is the same principle the Proteus hook already uses.
+- **How it would be done:** List each tool action as a transition with its required marks: capability, an approval, a budget count. Keep the marks in a small state file outside the model's reach and check them in a pre-tool hook before the call runs. Decrement budgets on success and refuse when absent. Log refusals so retries after a denial can be counted. The hook in this folder is already a crude version, so the step is to make budgets explicit and per-session.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Nobody has measured how much a mark-based hook would have refused in past Proteus runs.
+- **Field Notes line:** A paper treats agent tool calls like a Petri net with spendable tokens, so an injected request is refused because it has no token, not because of its wording.
+
+### H-0395 Proton hosts Flock map revealing over 300k cameras, defying cease-and-desist
+2026-10-25, hn, https://www.tomshardware.com/software/maps/proton-hosts-flock-map-revealing-over-300-000-cameras-defying-cease-and-desist-threats-against-creator-privacy-focused-company-hosts-site-on-swiss-servers-says-users-have-the-right-to-know-whos-recording-them
+
+- **Mechanism:** A community map of automatic licence-plate reader (Flock) cameras is built from volunteers photographing or reporting cameras in public view, then logging each as a tagged point, largely in OpenStreetMap-style data. The map site is hosted on Swiss servers by Proton, which refuses a cease-and-desist. The count (about 300k+) comes from accumulated submissions, not from any Flock data. The legal question raised in comments is whether OSM can ingest it.
+- **Claim:** A crowd-sourced map shows over 300,000 Flock cameras and stays online despite legal threats.
+- **Testable:** yes. How many nodes does the public OSM Overpass API return for surveillance:type=ALPR in the UK and in the US? Queued as P-0218.
+- **Idea on its own:** sound. Crowdsourced point mapping of visible public infrastructure is a proven pattern and the count is checkable against a public API.
+- **How it would be done:** Query the Overpass API with a keyless request for nodes tagged surveillance:type=ALPR, once for the UK bounding area and once for the US. Compare the counts with the 300k claim and note the share that carry a manufacturer tag. The same method (volunteer survey, tag, export) would map any visible public asset. A person with a phone and a street is the only thing no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Overpass API https://overpass-api.de (Free keyless query endpoint for OpenStreetMap tags.); DeFlock https://deflock.me (Public ALPR map to compare counts with.)
+- **Field Notes line:** Volunteers have mapped over 300,000 plate-reader cameras by pointing at them in public, and OpenStreetMap already carries a tag for them.
+
+### H-0394 local open-weights video on a rented NVIDIA GPU
+2026-10-25, vault, https://www.instagram.com/reel/DcAT9zPD0Cn/
+
+- **Mechanism:** Open-weights video diffusion models (Wan 2.x via the Wan2GP launcher, or Lightricks LTX-Video) run on a CUDA GPU and turn a text or image prompt into a few seconds of clip. Wan2GP wraps the models with memory offloading and quantisation so they fit on consumer cards. Cost per clip is rented GPU hours divided by clips per hour, set against a per-clip hosted price such as fal. Rented hosts (RunPod, Vast.ai) give the NVIDIA card the Macs lack.
+- **Claim:** Six free AI video generators exist; the vault note asks for Wan2GP or LTX cost per clip against fal.
+- **Testable:** no. Needs an NVIDIA GPU and a rented-host account, and no Mac here can run the weights at usable speed. Needs: A rented NVIDIA GPU (account and spend) to run Wan2GP or LTX..
+- **Idea on its own:** needs-a-run. The cost comparison is a plain measurement, but it needs a GPU hour to produce it.
+- **How it would be done:** Rent an hourly GPU instance with a 24GB card, install Wan2GP or the LTX-Video repo, and generate the same five prompts at the same length and resolution. Record wall-clock seconds per clip, failed or unusable takes, and the instance hourly rate, then divide for pounds per usable clip. Price the same five prompts on fal's per-second rate for the equivalent hosted model. Compare quality side by side from a contact sheet. A person is only needed to judge which takes are usable.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** Wan2GP https://github.com/deepbeepmeep/Wan2GP (Launcher that fits Wan video models onto consumer GPUs.); LTX-Video https://github.com/Lightricks/LTX-Video (Open-weights video model with a fast distilled variant.)
+- **Missing:** A cheap GPU hour and a fixed prompt set to price the comparison.
+- **Field Notes line:** Free video weights are real, but the cost moves to a rented NVIDIA card, so the useful number is pounds per finished clip against a hosted API.
 
 ### H-0391 Show HN: agent-usage-guard – a Claude Code mod to protect your usage window
 2026-10-24, hn, https://github.com/rbartoli/agent-usage-guard
@@ -3298,6 +3404,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0404 | 2026-10-25 | bubble map wallet clustering as a rug detector | intel | needs-a-run | yes | P-0221 |
+| H-0399 | 2026-10-25 | form-triggered personalised AI video | open | sound | no |  |
+| H-0394 | 2026-10-25 | local open-weights video on a rented NVIDIA GPU | open | needs-a-run | no |  |
 | H-0390 | 2026-10-24 | Viggle motion transfer | open | needs-a-run | no |  |
 | H-0385 | 2026-10-24 | LTX Desktop local video generation | open | sound | no |  |
 | H-0380 | 2026-10-24 | Video2X free local upscaler | open | sound | no |  |
@@ -3381,6 +3490,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0241 | 2026-10-25 | [ex-ussr-kinship-research](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) | Skill and audit script to run. | H-0401 (DenisSergeevitch/ex-ussr-kinship-research: Evidenc) | shelf |
+| T-0240 | 2026-10-25 | [Hurston-1](https://huggingface.co/destined/hurston-1) | The released model and card. | H-0400 (Show HN: Hurston-1 open source TTS that speak Sout) | shelf |
+| T-0239 | 2026-10-25 | [DeFlock](https://deflock.me) | Public ALPR map to compare counts with. | H-0395 (Proton hosts Flock map revealing over 300k cameras) | shelf |
+| T-0238 | 2026-10-25 | [Overpass API](https://overpass-api.de) | Free keyless query endpoint for OpenStreetMap tags. | H-0395 (Proton hosts Flock map revealing over 300k cameras) | shelf |
+| T-0237 | 2026-10-25 | [Wan2GP](https://github.com/deepbeepmeep/Wan2GP) | Launcher that fits Wan video models onto consumer GPUs. | H-0394 (local open-weights video on a rented NVIDIA GPU) | shelf |
 | T-0236 | 2026-10-24 | [agent-usage-guard](https://github.com/rbartoli/agent-usage-guard) | The hook under test | H-0391 (Show HN: agent-usage-guard – a Claude Code mod to ) | shelf |
 | T-0235 | 2026-10-24 | [Wan 2.2](https://github.com/Wan-Video/Wan2.2) | Open Animate model for the comparison | H-0390 (Viggle motion transfer) | shelf |
 | T-0234 | 2026-10-24 | [video-editor-skills](https://github.com/appariciojunior/video-editor-skills) | The pacing numbers and LEARNINGS.md | H-0387 (appariciojunior/video-editor-skills: Skills that t) | shelf |
@@ -3622,6 +3736,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0407 | 2026-10-25 | youtube | [📈 EP02 // The bonding curve, explained in under a minute. Price = math, not magi](https://www.youtube.com/watch?v=v2DpfJ-06yc) | One-minute explainer of the pump.fun bonding curve that the Grinder already covers, ending in a sales pitch for a paid g |
+| H-0406 | 2026-10-25 | github | [routerhubSI/uncensored-ai-api: Uncensored AI API and models — one key for Claude](https://github.com/routerhubSI/uncensored-ai-api) | A referral-driven reseller gateway; the only mechanism is a proxy, with no new content. |
+| H-0405 | 2026-10-25 | hn | [Is AI just another get rich quick scheme?](https://news.ycombinator.com/item?id=50220934) | Opinion thread with no mechanism. |
+| H-0402 | 2026-10-25 | arxiv | [GeoAgent: Contract-Constrained LLM Agents for Seismic Data Processing](https://arxiv.org/abs/2610.31096) | Seismic-processing agent; the contract idea overlaps the Petri-net paper and the domain is too narrow to test. |
+| H-0398 | 2026-10-25 | youtube | [Final Verdict on Local AI with M5 MacBook Pro](https://www.youtube.com/watch?v=zu1VAxPkVgQ) | A hardware review; the transcript offers no figures and the only mechanism named (llama.cpp with compressed context) is  |
+| H-0396 | 2026-10-25 | github | [morganlinton/BeautifulRust: A Claude Code plugin that teaches Claude to write id](https://github.com/morganlinton/BeautifulRust) | A style-guide skill pack for Rust; the mechanism is ordinary skills plus clippy and Proteus does not write Rust. |
 | H-0393 | 2026-10-24 | youtube | [How To SNIPE Pump Fun Memecoins & AVOID RUGS](https://www.youtube.com/watch?v=9Qhnc1B4ZhI) | Retail tutorial on pump.fun sniping covering mechanics the Grinder already reads, with no new mechanism in the opening. |
 | H-0392 | 2026-10-24 | github | [devhims/youtube-caption-extractor: Extract YouTube captions, subtitles, auto-gen](https://github.com/devhims/youtube-caption-extractor) | Duplicates the keyless YouTube transcript pipeline already in the stack. |
 | H-0389 | 2026-10-24 | youtube | [MOT Expert Assessor MOT Routine - UK MOT Tester Training #mottester #dvsa #mecha](https://www.youtube.com/watch?v=4LVa_w7Gg4M) | No transcript available and the title suggests MOT tester training with no mechanism. |

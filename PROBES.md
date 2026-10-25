@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 161 works, 5 broken, 27 blocked, 13 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,10 @@ Verdicts so far: 161 works, 5 broken, 27 blocked, 13 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
+| P-0218 | OSM ALPR cameras: how many surveillance:type=ALPR nodes does Overpass return for the UK and the US? | harvest | none |  | 0 | 15 min |
+| P-0219 | ex-ussr-kinship-research audit script: does it run on its example registers and flag weak corroboration? | harvest | none |  | 0 | 15 min |
+| P-0220 | xG from scratch: does a distance-and-angle logistic model on StatsBomb open data beat the base-rate log loss? | harvest | none |  | 0 | 25 min |
+| P-0221 | Holder concentration: what share of supply do the top 10 holders of ten recent Solana tokens hold on public RPC? | vault | none |  | 0 | 30 min |
 
 ## Verdicts (206)
 

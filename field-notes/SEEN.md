@@ -707,6 +707,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-10-23 · Open-Meteo ICON daily temperature_2m_max, where the day's maximum sits (Munich city, 83 archived days)** (ran): 80 of 83 peak 10:00 to 18:00, 3 at midnight where the integer differs from the daytime peak by 1 to 4°C; the field matches the hourly maximum to 0.1°C. Persona pick, interest 8. `experiments/2026-10-23-persona-daily-max/`
 - 2026-10-23, harvested: 14 judged, 11 kept (H-0366 to H-0379), 4 queued as probes (P-0201, P-0202, P-0203, P-0204). Register: `field-notes/HARVEST.md`.
 - 2026-10-24, harvested: 14 judged, 8 kept (H-0380 to H-0393), 2 queued as probes (P-0212, P-0213). Register: `field-notes/HARVEST.md`.
+- 2026-10-25, harvested: 14 judged, 8 kept (H-0394 to H-0407), 4 queued as probes (P-0218, P-0219, P-0220, P-0221). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
