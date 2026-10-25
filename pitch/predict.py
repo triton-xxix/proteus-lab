@@ -106,6 +106,9 @@ def main():
     realised = sum(float(r["pnl_gbp"]) for r in existing if r.get("pnl_gbp"))
     bankroll = BANKROLL + realised
     new = []
+    # Why each in-window row was not predicted. Added 2026-10-25 (F-0055): "0 in the window" printed
+    # whenever nothing was new, though the window held fixtures already committed the night before.
+    skipped = {"in window": 0, "already committed": 0, "fallback too early": 0, "time TBC": 0, "unknown team": 0}
     for _, f in fx.iterrows():
         ko = f["Kickoff"]
         if ko is None or ko != ko:
@@ -113,19 +116,21 @@ def main():
         ko = ko.tz_localize("Europe/London").tz_convert("UTC")
         if not (now <= ko <= now + timedelta(days=a.days)):
             continue
+        skipped["in window"] += 1
         # Fallback rows carry no odds and would block the later football-data row, so only use them
         # once kickoff is close enough that football-data has evidently missed the match.
         if f.get("Source") == "fixturedownload" and ko > now + timedelta(hours=FALLBACK_HOURS):
-            continue
+            skipped["fallback too early"] += 1; continue
         # A placeholder kickoff (midnight on the round's first day) is not a kickoff: wait for a source with the time.
         if f.get("TimeTBC") == True:  # noqa: E712 (numpy bool or NaN from the concat)
-            continue
+            skipped["time TBC"] += 1; continue
         key = (ko.strftime("%Y-%m-%d"), f["HomeTeam"], f["AwayTeam"])
         if key in have:
-            continue
+            skipped["already committed"] += 1; continue
         pg = params.get(group_of.get(f["Div"]))
         pr = M.predict(pg, f["HomeTeam"], f["AwayTeam"]) if pg else None
         if not pr:
+            skipped["unknown team"] += 1
             print("skip unknown team", f["HomeTeam"], f["AwayTeam"]); continue
         mh, md, ma = implied(f.get("AvgH"), f.get("AvgD"), f.get("AvgA"))
         mo = implied2(f.get("Avg>2.5"), f.get("Avg<2.5"))
@@ -158,8 +163,10 @@ def main():
     print("new predictions", len(new), "backed (shadow)" if not STAKES_ON else "backed", sum(1 for r in new if r["backed"]))
     if not new:
         fut = fx[fx["Kickoff"].notna() & (fx["Kickoff"] > now.replace(tzinfo=None))]
-        print("binding constraint: fixtures in the %d-day window: 0 of %d fixture rows; next kickoff on file: %s"
-              % (a.days, len(fx), fut["Kickoff"].min() if len(fut) else "none"))
+        print("binding constraint: fixtures in the %d-day window: %d of %d fixture rows (%s); next kickoff on file: %s"
+              % (a.days, skipped["in window"], len(fx),
+                 ", ".join("%s %d" % (k, v) for k, v in skipped.items() if k != "in window" and v) or "none skipped",
+                 fut["Kickoff"].min() if len(fut) else "none"))
 
 
 if __name__ == "__main__":
