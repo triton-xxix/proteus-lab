@@ -19,7 +19,9 @@ ROOT = "/Users/triton/PROTEUS"
 DESKS = [
     ("grinder-snapshot", "grinder/SNAPSHOTS.csv", 2, "nightly scan, every night"),
     ("grinder-ledger", "grinder/LEDGER.csv", 4, "entries can pause a few nights"),
-    ("graduation-book", "grinder/graduates/closed.jsonl", 2, "launchd watcher, continuous"),
+    # None = finished by its own rule, listed but never flagged (F-0052, 25 Oct): the watcher's 7-day
+    # window from the 14 Oct reload ended 21 Oct, events.jsonl says stopped DONE. Restore 2 if it restarts.
+    ("graduation-book", "grinder/graduates/closed.jsonl", None, "window ended 21 Oct, watcher DONE"),
     ("pitch-model", "pitch/PREDICTIONS.csv", 4, "league weekends at least weekly"),
     # 45 not 7 (F-0009, 14 Oct): the book follows the Nations League, which plays in windows about a
     # month apart (4 Oct, then 12 to 14 Nov), so 45 days flags one missed window, not the gap between
@@ -62,9 +64,13 @@ def main():
         t = ts[0] if ts else None
         week = sum(1 for x in ts if now - x <= 7 * 86400)
         days = (now - t) / 86400 if t else None
-        state = "never" if t is None else ("SILENT" if days > limit else "ok")
-        print("%-18s %-34s %6s %4d %4d  %s" % (desk, path, "-" if days is None else "%.1f" % days, limit, week, state))
-        if state != "ok":
+        if limit is None:
+            state = "done: " + why
+        else:
+            state = "never" if t is None else ("SILENT" if days > limit else "ok")
+        print("%-18s %-34s %6s %4s %4d  %s" % (desk, path, "-" if days is None else "%.1f" % days,
+                                              "-" if limit is None else limit, week, state))
+        if state in ("never", "SILENT"):
             silent.append((desk, path, days, limit, why))
     if add and silent:
         for desk, path, days, limit, why in silent:
