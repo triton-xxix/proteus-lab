@@ -320,6 +320,13 @@ def pull_awesome(cfg, out, errors, notes):
             with open(path) as fh:
                 old = set(l.strip() for l in fh if l.strip())
             new = [l for l in links if l not in old]
+            # A reorganised README and real additions look alike (250 of 4,626 on 23 Oct), so a jump
+            # keeps the previous baseline beside the live one to diff by hand.
+            if len(new) > max(25, len(old) // 20):
+                prev = path + "." + time.strftime("%Y-%m-%d") + ".prev"
+                with open(prev, "w") as fh:
+                    fh.write("\n".join(sorted(old)) + "\n")
+                notes.append("awesome %s: JUMP %d new of %d, previous baseline kept at %s" % (name, len(new), len(links), prev))
             for repo in new[: cfg.get("per_list", 6)]:
                 out.append({
                     "key": "gh:" + repo, "source": "awesome", "query": name,
