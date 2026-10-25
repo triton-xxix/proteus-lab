@@ -1,0 +1,71 @@
+{
+ "copies_one_group": {
+  "case_dir": "/Users/triton/PROTEUS/sandbox/p0219-kinship/case-weak",
+  "counts": {
+   "persons": 1,
+   "artifacts": 2,
+   "claims": 1,
+   "relationships": 0
+  },
+  "summary": {
+   "claims_by_status": {
+    "corroborated": 1
+   },
+   "relationships_by_status": {},
+   "report_markers": {
+    "неразборчиво": 0,
+    "предположительно": 0
+   }
+  },
+  "errors": [],
+  "warnings": [
+   "C-0001: статус corroborated, но найдено независимых групп: 1"
+  ]
+ },
+ "declared_second_group_without_artifact": {
+  "case_dir": "/Users/triton/PROTEUS/sandbox/p0219-kinship/case-weak",
+  "counts": {
+   "persons": 1,
+   "artifacts": 2,
+   "claims": 1,
+   "relationships": 0
+  },
+  "summary": {
+   "claims_by_status": {
+    "corroborated": 1
+   },
+   "relationships_by_status": {},
+   "report_markers": {
+    "неразборчиво": 0,
+    "предположительно": 0
+   }
+  },
+  "errors": [
+   "C-0001: independence_group G2 заявлен, но ни один из artifact_ids к нему не относится"
+  ],
+  "warnings": [
+   "C-0001: статус corroborated, но найдено независимых групп: 1"
+  ]
+ },
+ "two_real_groups": {
+  "case_dir": "/Users/triton/PROTEUS/sandbox/p0219-kinship/case-weak",
+  "counts": {
+   "persons": 1,
+   "artifacts": 2,
+   "claims": 1,
+   "relationships": 0
+  },
+  "summary": {
+   "claims_by_status": {
+    "corroborated": 1
+   },
+   "relationships_by_status": {},
+   "report_markers": {
+    "неразборчиво": 0,
+    "предположительно": 0
+   }
+  },
+  "errors": [],
+  "warnings": []
+ }
+}
