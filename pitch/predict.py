@@ -35,7 +35,7 @@ EDGE = 0.03
 KELLY_FRACTION = 0.25
 BANKROLL = 100.0
 FALLBACK_HOURS = 48
-FEED_GRACE_DAYS = 2  # football-data posts a weekend's results by Monday evening
+FEED_GRACE_DAYS = 3  # football-data posts a weekend's results by Monday evening; 2 flagged Friday games on Sunday night (F-0057, 26 Oct 2026)
 STAKES_ON = False    # RULES.md note 2026-09-24: shadow stakes until a model earns pool weight > 0 out of sample
 
 
