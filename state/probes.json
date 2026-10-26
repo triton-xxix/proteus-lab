@@ -1,5 +1,5 @@
 {
- "next_id": 230,
+ "next_id": 231,
  "items": [
   {
    "id": "P-0001",
@@ -5588,6 +5588,28 @@
    ],
    "minutes": 0,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0230",
+   "title": "Nightly SLO from git and hook logs: on what share of nights since 22 Sep did the pre-register and close commits both land, and what budget is left at a 90 percent SLO?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-26T23:38:57+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-26T23:39:41+0000",
+   "note": "From git: since the close step began on 3 Oct, 20 of 23 nights landed both pre-register and close commits by 06:00, SLI 87.0 percent; at a 90 percent SLO the budget is 0.7 nights overdrawn, all from the 17 Oct browser hang and two skipped fires.",
+   "artefacts": [
+    "experiments/2026-10-26-P-0230"
+   ],
+   "minutes": 0,
+   "calls": 10,
    "denied": [],
    "luke": false
   }

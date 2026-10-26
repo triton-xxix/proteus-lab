@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 170 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 171 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 
 ## Queue (8 open)
 
@@ -22,10 +22,11 @@ Verdicts so far: 170 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 
-## Verdicts (217)
+## Verdicts (218)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-26 | P-0230 | Nightly SLO from git and hook logs: on what share of nights since 22 Sep did the pre-register and close commits both land, and what budget is left at a 90 percent SLO? | **works** | From git: since the close step began on 3 Oct, 20 of 23 nights landed both pre-register and close commits by 06:00, SLI 87.0 percent; at a 90 percent SLO the budget is 0.7 nights overdrawn, all from the 17 Oct browser hang and two skipped fires. | `experiments/2026-10-26-P-0230` | 0 min, 10 calls, 0 denied |
 | 2026-10-26 | P-0229 | Polyglot book check: in my 56 Lichess games, how many of my first eight moves are in gm2001.bin, by colour, and does leaving book early go with losing? | **works** | 56 games against gm2001.bin: 4.88 of my first 8 moves in book (White 5.19, Black 4.48); score 0.85 with 0-3 book moves v 0.83 with 4+, so leaving book early does not go with losing; colour matters more (0.92 v 0.74). | `experiments/2026-10-26-P-0229` | 0 min, 6 calls, 0 denied |
 | 2026-10-26 | P-0228 | Insider clusters: from one week of EDGAR Form 4 filings, how many issuers show 3+ distinct insider open-market buys? | **blocked** | clusters.py joins SEC's Form 345 quarterly data set for code-P buyers per issuer, but all 4 requests to sec.gov and efts returned 403 Request Rate Threshold Exceeded, the first included; count not measured. | `experiments/2026-10-26-P-0228` | 0 min, 9 calls, 0 denied |
 | 2026-10-26 | P-0227 | Release calendar: can FOMC dates for 2023 to 2026 be parsed keyless from federalreserve.gov, and do they give 32? | **works** | One keyless GET of federalreserve.gov fomccalendars.htm parsed 8 scheduled meetings a year for 2023-2026, 32 as called; a 22 Aug 2025 notation vote kept apart; cross-year ranges like Jan/Feb 31-1 need splitting. | `experiments/2026-10-26-P-0227` | 0 min, 7 calls, 1 denied |
