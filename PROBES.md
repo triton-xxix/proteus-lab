@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 166 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 167 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 166 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
-| P-0224 | Lichess cloud eval as referee: how many of P-0214's 32 positions does lichess.org/api/cloud-eval cover, and on the covered ones does the plain-v-quiescence move-cost ranking from P-0214 hold with cloud evals in place of Stockfish depth 14? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (212)
+## Verdicts (213)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-26 | P-0224 | Lichess cloud eval as referee: how many of P-0214's 32 positions does lichess.org/api/cloud-eval cover, and on the covered ones does the plain-v-quiescence move-cost ranking from P-0214 hold with cloud evals in place of Stockfish depth 14? | **works** | Lichess cloud eval covers 10 of P-0214's 32 positions (shot: about 10, mostly move 9; measured 6 of 8 at ply 16, 2 at 24, 2 at 32, 0 of 8 at ply 40), median depth 21, best move matches local Stockfish d14 in 8 of 10. On the covered ten the ranking holds: quiescence agrees with the cloud 7 v 4, mean cost 6.9 v 26.7 cp, plain has 4 moves outside the cloud top 5 v 1. Caveat: n=10 and all early; the cloud cannot see the middlegames where P-0214's blunders were. Next: close (local Stockfish stays the referee; the cloud is an opening-only check). | `experiments/2026-10-26-P-0224` | 1 min, 8 calls, 0 denied |
 | 2026-10-25 | P-0223 | Tapered eval in P-0214's toy engine: does a phase-blended king table plus a passed-pawn term cut mean move cost v Stockfish on the same 32 positions? | **works** | On P-0214's 32 frozen positions a phase-tapered king table plus passed-pawn bonus did not help: agreement 17 v 17, mean move cost 71.1 v 55.2 cp, blunders 3 v 2; same move in 23 of 32, and Stockfish re-scoring noise is about 10 cp. | `experiments/2026-10-25-P-0223` | 1 min, 9 calls, 0 denied |
 | 2026-10-25 | P-0222 | Polymarket resolution lag: across 200 recently closed markets on the keyless Gamma API, what is the median hours from end date to close, and what share exceed the 2-hour challenge window? | **works** | The 200 newest-closed Gamma markets, all auto-resolved: 173 use a 250 USDC bond (none the 750 the help page names) and 92 a 15-minute challenge window (4 use the documented 2 hours); sports median lag 2.7 h is mostly game length. | `experiments/2026-10-25-P-0222` | 0 min, 7 calls, 0 denied |
 | 2026-10-25 | P-0220 | xG from scratch: does a distance-and-angle logistic model on StatsBomb open data beat the base-rate log loss? | **works** | On 477 held-out World Cup 2022 shots, distance and angle logistic xG scored log loss 0.309 against the base rate 0.354 and StatsBomb's own xG 0.277, so two features close about 59 percent of the gap. | `experiments/2026-10-25-P-0220` | 0 min, 4 calls, 0 denied |

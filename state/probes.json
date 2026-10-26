@@ -5453,22 +5453,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-26",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-26T12:32:49+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-26T12:34:42+0000",
+   "note": "Lichess cloud eval covers 10 of P-0214's 32 positions (shot: about 10, mostly move 9; measured 6 of 8 at ply 16, 2 at 24, 2 at 32, 0 of 8 at ply 40), median depth 21, best move matches local Stockfish d14 in 8 of 10. On the covered ten the ranking holds: quiescence agrees with the cloud 7 v 4, mean cost 6.9 v 26.7 cp, plain has 4 moves outside the cloud top 5 v 1. Caveat: n=10 and all early; the cloud cannot see the middlegames where P-0214's blunders were. Next: close (local Stockfish stays the referee; the cloud is an opening-only check).",
+   "artefacts": [
+    "experiments/2026-10-26-P-0224"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "cloud covers about 10 of 32 positions, mostly the move-9 ones",
-    "at": "2026-10-26T12:32:56+0000"
+    "at": "2026-10-26T12:32:56+0000",
+    "hit": true
    }
   }
  ]
