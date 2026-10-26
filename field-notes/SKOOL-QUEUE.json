@@ -941,20 +941,22 @@
    "track": 10,
    "title": "Skool Made Simple feed: Caroline Fransz's 533 posts (about 80k words, read in chunks)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/skoolmadesimple-posts-owner.md"
    ],
    "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch.",
-   "assigned": "2026-10-25",
-   "tries": 1
+   "assigned": "2026-10-26",
+   "tries": 2,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-26-S-48.md"
   },
   {
    "id": "S-49",
    "track": 10,
    "title": "Build A Skool University classroom (6 courses incl. PLR vault) and owner posts",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/buildskool-01-start-here-before-building-your-skool.md",
     "field-notes/skool/buildskool-02-skool-supplies.md",
@@ -965,7 +967,11 @@
     "field-notes/skool/buildskool-index.md",
     "field-notes/skool/buildskool-posts-owner.md"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-26",
+   "tries": 1,
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-26-S-49.md"
   },
   {
    "id": "S-50",
