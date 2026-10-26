@@ -1,0 +1,188 @@
+{
+ "2023": {
+  "scheduled": [
+   {
+    "month": "Jan/Feb",
+    "days": "31-1",
+    "unscheduled": false
+   },
+   {
+    "month": "March",
+    "days": "21-22*",
+    "unscheduled": false
+   },
+   {
+    "month": "May",
+    "days": "2-3",
+    "unscheduled": false
+   },
+   {
+    "month": "June",
+    "days": "13-14*",
+    "unscheduled": false
+   },
+   {
+    "month": "July",
+    "days": "25-26",
+    "unscheduled": false
+   },
+   {
+    "month": "September",
+    "days": "19-20*",
+    "unscheduled": false
+   },
+   {
+    "month": "Oct/Nov",
+    "days": "31-1",
+    "unscheduled": false
+   },
+   {
+    "month": "December",
+    "days": "12-13*",
+    "unscheduled": false
+   }
+  ],
+  "other": []
+ },
+ "2024": {
+  "scheduled": [
+   {
+    "month": "January",
+    "days": "30-31",
+    "unscheduled": false
+   },
+   {
+    "month": "March",
+    "days": "19-20*",
+    "unscheduled": false
+   },
+   {
+    "month": "Apr/May",
+    "days": "30-1",
+    "unscheduled": false
+   },
+   {
+    "month": "June",
+    "days": "11-12*",
+    "unscheduled": false
+   },
+   {
+    "month": "July",
+    "days": "30-31",
+    "unscheduled": false
+   },
+   {
+    "month": "September",
+    "days": "17-18*",
+    "unscheduled": false
+   },
+   {
+    "month": "November",
+    "days": "6-7",
+    "unscheduled": false
+   },
+   {
+    "month": "December",
+    "days": "17-18*",
+    "unscheduled": false
+   }
+  ],
+  "other": []
+ },
+ "2025": {
+  "scheduled": [
+   {
+    "month": "January",
+    "days": "28-29",
+    "unscheduled": false
+   },
+   {
+    "month": "March",
+    "days": "18-19*",
+    "unscheduled": false
+   },
+   {
+    "month": "May",
+    "days": "6-7",
+    "unscheduled": false
+   },
+   {
+    "month": "June",
+    "days": "17-18*",
+    "unscheduled": false
+   },
+   {
+    "month": "July",
+    "days": "29-30",
+    "unscheduled": false
+   },
+   {
+    "month": "September",
+    "days": "16-17*",
+    "unscheduled": false
+   },
+   {
+    "month": "October",
+    "days": "28-29",
+    "unscheduled": false
+   },
+   {
+    "month": "December",
+    "days": "9-10*",
+    "unscheduled": false
+   }
+  ],
+  "other": [
+   {
+    "month": "August",
+    "days": "22 (notation vote)",
+    "unscheduled": true
+   }
+  ]
+ },
+ "2026": {
+  "scheduled": [
+   {
+    "month": "January",
+    "days": "27-28",
+    "unscheduled": false
+   },
+   {
+    "month": "March",
+    "days": "17-18*",
+    "unscheduled": false
+   },
+   {
+    "month": "April",
+    "days": "28-29",
+    "unscheduled": false
+   },
+   {
+    "month": "June",
+    "days": "16-17*",
+    "unscheduled": false
+   },
+   {
+    "month": "July",
+    "days": "28-29",
+    "unscheduled": false
+   },
+   {
+    "month": "September",
+    "days": "15-16*",
+    "unscheduled": false
+   },
+   {
+    "month": "October",
+    "days": "27-28",
+    "unscheduled": false
+   },
+   {
+    "month": "December",
+    "days": "8-9*",
+    "unscheduled": false
+   }
+  ],
+  "other": []
+ }
+}

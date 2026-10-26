@@ -5531,16 +5531,20 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-26",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-26T23:36:10+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-26T23:36:31+0000",
+   "note": "One keyless GET of federalreserve.gov fomccalendars.htm parsed 8 scheduled meetings a year for 2023-2026, 32 as called; a 22 Aug 2025 notation vote kept apart; cross-year ranges like Jan/Feb 31-1 need splitting.",
+   "artefacts": [
+    "experiments/2026-10-26-P-0227"
+   ],
+   "minutes": 0,
+   "calls": 7,
+   "denied": [
+    "Bash `grep -A3 \"\\\"other\\\": \\[$\" /Users/triton/PROTEUS/experiments/2026-10-26-P-0227/fomc.json`"
+   ],
    "luke": false
   },
   {

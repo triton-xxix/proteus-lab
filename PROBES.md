@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 168 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 169 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,13 +21,14 @@ Verdicts so far: 168 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
-| P-0227 | Release calendar: can FOMC dates for 2023 to 2026 be parsed keyless from federalreserve.gov, and do they give 32? | vault | none |  | 0 | 20 min |
 | P-0228 | Insider clusters: from one week of EDGAR Form 4 filings, how many issuers show 3+ distinct insider open-market buys? | vault | none |  | 0 | 30 min |
 
-## Verdicts (214)
+## Verdicts (215)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-26 | P-0227 | Release calendar: can FOMC dates for 2023 to 2026 be parsed keyless from federalreserve.gov, and do they give 32? | **works** | One keyless GET of federalreserve.gov fomccalendars.htm parsed 8 scheduled meetings a year for 2023-2026, 32 as called; a 22 Aug 2025 notation vote kept apart; cross-year ranges like Jan/Feb 31-1 need splitting. | `experiments/2026-10-26-P-0227` | 0 min, 7 calls, 1 denied |
+| | | | | denied: Bash `grep -A3 "\"other\": \[$" /Users/triton/PROTEUS/experiments/2026-10-26-P-0227/fomc.json` | | |
 | 2026-10-26 | P-0225 | Munich ICON cold bias out of sample: rerun the 13 Oct previous-runs day-ahead method on 13 to 25 Oct only (DWD 03379 Stadt and 01262 Flughafen); does ICON's Stadt bias stay near -0.95C, so the +1C correction in the exchange book still holds? | **works** | ICON day-ahead Munich high, DWD Stadt, 13 to 25 Oct: bias -0.48C (se 0.47, n 13) against -0.95C in sample, which reproduces to the hundredth. Shot was about -0.8 inside -1.5 to -0.5: missed by 0.02. The +1C correction still cuts MAE on the new days (1.28 v 1.42) but by 0.14C, not 0.40; at Flughafen ICON bias is +0.04 and the correction hurts. Caveat: 13 days, warm 14 to 16 Oct carry most of the bias. Next: deepen (queue a 30-day re-check after 12 Nov, sunny v dull days split). | `experiments/2026-10-26-P-0225` | 0 min, 7 calls, 0 denied |
 | 2026-10-26 | P-0224 | Lichess cloud eval as referee: how many of P-0214's 32 positions does lichess.org/api/cloud-eval cover, and on the covered ones does the plain-v-quiescence move-cost ranking from P-0214 hold with cloud evals in place of Stockfish depth 14? | **works** | Lichess cloud eval covers 10 of P-0214's 32 positions (shot: about 10, mostly move 9; measured 6 of 8 at ply 16, 2 at 24, 2 at 32, 0 of 8 at ply 40), median depth 21, best move matches local Stockfish d14 in 8 of 10. On the covered ten the ranking holds: quiescence agrees with the cloud 7 v 4, mean cost 6.9 v 26.7 cp, plain has 4 moves outside the cloud top 5 v 1. Caveat: n=10 and all early; the cloud cannot see the middlegames where P-0214's blunders were. Next: close (local Stockfish stays the referee; the cloud is an opening-only check). | `experiments/2026-10-26-P-0224` | 1 min, 8 calls, 0 denied |
 | 2026-10-25 | P-0223 | Tapered eval in P-0214's toy engine: does a phase-blended king table plus a passed-pawn term cut mean move cost v Stockfish on the same 32 positions? | **works** | On P-0214's 32 frozen positions a phase-tapered king table plus passed-pawn bonus did not help: agreement 17 v 17, mean move cost 71.1 v 55.2 cp, blunders 3 v 2; same move in 23 of 32, and Stockfish re-scoring noise is about 10 cp. | `experiments/2026-10-25-P-0223` | 1 min, 9 calls, 0 denied |
