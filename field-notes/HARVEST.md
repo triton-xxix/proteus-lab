@@ -6,19 +6,26 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-407 judged over 27 harvest days, 268 kept, 83 testable, 80 queued as probes, 73 with a probe verdict.
+419 judged over 28 harvest days, 275 kept, 86 testable, 82 queued as probes, 77 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0404 | 2026-10-25 | vault | [bubble map wallet clustering as a rug detector](https://www.instagram.com/reel/Ddo-okKPBJF/) (intel) | mechanism | desk:grinder | yes | P-0221 |
-| H-0403 | 2026-10-25 | youtube | [What Is xG? Expected Goals Explained](https://www.youtube.com/watch?v=yUD073LrqVc) | mechanism | desk:pitch | yes | P-0220 |
-| H-0401 | 2026-10-25 | github | [DenisSergeevitch/ex-ussr-kinship-research: Evidence-first genealogy skill for AI agents (C](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) | mechanism | mechanism-hunting | yes | P-0219 |
+| H-0419 | 2026-10-26 | github | [andyhuo520/digital-human-koubo: AI digital-human talking-head videos from one photo: Renoi](https://github.com/andyhuo520/digital-human-koubo) | mechanism | tools-for-strangers | no: Generation runs through a paid credit-based service that nee |  |
+| H-0418 | 2026-10-26 | vault | [Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr]() | mechanism | open-data | yes | P-0228 |
+| H-0413 | 2026-10-26 | vault | [Dated US release calendar from primary sources, 2023 to 2026]() | mechanism | open-data | yes | P-0227 |
+| H-0411 | 2026-10-26 | arxiv | [StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents](https://arxiv.org/abs/2610.32648) | mechanism | mechanism-hunting | yes |  |
+| H-0410 | 2026-10-26 | github | [t3dotgg/tstack: The agent skills I use every day. Works with Claude Code and Codex.](https://github.com/t3dotgg/tstack) | mechanism | tools-for-strangers | no: Running the skills needs an authenticated gh, a real repo to |  |
+| H-0409 | 2026-10-26 | hn | [Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT](https://github.com/FrigadeHQ/hob) | mechanism | tech | no: It needs a multi-gigabyte model download and a desktop insta |  |
+| H-0408 | 2026-10-26 | vault | [course-seller economy around AI creator models]() (intel) | mechanism | tools-for-strangers | no: The claim is about income that is self-reported and private, |  |
+| H-0404 | 2026-10-25 | vault | [bubble map wallet clustering as a rug detector](https://www.instagram.com/reel/Ddo-okKPBJF/) (intel) | mechanism | desk:grinder | yes | P-0221 **blocked** |
+| H-0403 | 2026-10-25 | youtube | [What Is xG? Expected Goals Explained](https://www.youtube.com/watch?v=yUD073LrqVc) | mechanism | desk:pitch | yes | P-0220 **works** |
+| H-0401 | 2026-10-25 | github | [DenisSergeevitch/ex-ussr-kinship-research: Evidence-first genealogy skill for AI agents (C](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) | mechanism | mechanism-hunting | yes | P-0219 **works** |
 | H-0400 | 2026-10-25 | hn | [Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English](https://huggingface.co/destined/hurston-1) | mechanism | tools-for-strangers | no: A Maya1-class model on an Intel Mac CPU will not synthesise  |  |
 | H-0399 | 2026-10-25 | vault | [form-triggered personalised AI video]() | mechanism | tools-for-strangers | no: The voice and avatar steps need paid keys and the delivery s |  |
 | H-0397 | 2026-10-25 | arxiv | [Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory](https://arxiv.org/abs/2610.31376) | mechanism | mechanism-hunting | no: The result is a formal proof; a toy run would test our own c |  |
-| H-0395 | 2026-10-25 | hn | [Proton hosts Flock map revealing over 300k cameras, defying cease-and-desist](https://www.tomshardware.com/software/maps/proton-hosts-flock-map-revealing-over-300-000-cameras-defying-cease-and-desist-threats-against-creator-privacy-focused-company-hosts-site-on-swiss-servers-says-users-have-the-right-to-know-whos-recording-them) | mechanism | open-data | yes | P-0218 |
+| H-0395 | 2026-10-25 | hn | [Proton hosts Flock map revealing over 300k cameras, defying cease-and-desist](https://www.tomshardware.com/software/maps/proton-hosts-flock-map-revealing-over-300-000-cameras-defying-cease-and-desist-threats-against-creator-privacy-focused-company-hosts-site-on-swiss-servers-says-users-have-the-right-to-know-whos-recording-them) | mechanism | open-data | yes | P-0218 **works** |
 | H-0394 | 2026-10-25 | vault | [local open-weights video on a rented NVIDIA GPU](https://www.instagram.com/reel/DcAT9zPD0Cn/) | mechanism | tools-for-strangers | no: Needs an NVIDIA GPU and a rented-host account, and no Mac he |  |
 | H-0391 | 2026-10-24 | hn | [Show HN: agent-usage-guard – a Claude Code mod to protect your usage window](https://github.com/rbartoli/agent-usage-guard) | mechanism | tools-for-strangers | yes | P-0213 **works** |
 | H-0390 | 2026-10-24 | vault | [Viggle motion transfer](https://www.instagram.com/p/DemKvEhCDwm/) | mechanism | tools-for-strangers | no: Hosted service needing an account, and the open alternatives |  |
@@ -282,6 +289,93 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0419 andyhuo520/digital-human-koubo: AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing 
+2026-10-26, github, https://github.com/andyhuo520/digital-human-koubo
+
+- **Mechanism:** An agent skill that stores a fixed presenter (face, outfit, voice description) in persona.json, composites her into a scene with an image model, then splits the script into segments of 15 seconds or less. Each segment is generated as a lip-synced clip through a hosted video MCP, transcribed with whisper and compared with the script, then packaged with captions and overlay components. A cost gate quotes credits and waits for a yes before batching.
+- **Claim:** One photo and one sentence produce a finished talking-head video; a 27-second ad cost 482 credits.
+- **Testable:** no. Generation runs through a paid credit-based service that needs an account. Needs: A Renoise account and credits..
+- **Idea on its own:** sound. Segmenting, transcribing and checking against the script is a sensible quality loop, and the demos are labelled as AI.
+- **How it would be done:** Reuse the persona.json pattern with HeyGen or Tavus for the face and ElevenLabs for the voice. Split the script, generate per segment, transcribe each clip locally and diff against the script to flag bad takes. Compose captions and overlays in HyperFrames. A person still approves the first segment and the disclosure label before anything is published.
+- **Stack already covers:** HeyGen and Tavus (avatars), ElevenLabs (voice), HyperFrames (video compose, captions, render), Gemini (stills), local transcription
+- **To fetch:** digital-human-koubo https://github.com/andyhuo520/digital-human-koubo (Persona file schema, segment splitter and the transcript-versus-script check to read.); Renoise MCP https://renoise.ai/mcp (The hosted generation backend the repo calls; credits needed.)
+- **Missing:** The packaging components are Renoise-oriented; a HyperFrames equivalent of the 48 components would need building.
+- **Field Notes line:** A persona file, a segment splitter and a whisper check against the script turn one photo into a lip-synced ad, with a cost gate before each batch.
+
+### H-0418 Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gross
+2026-10-26, vault, 
+
+- **Mechanism:** SEC Form 4 filings record open-market purchases by officers and directors within two business days of the trade. A cluster is three or more insiders buying the same stock in a short window, and the signal is the cluster's forward return against random same-size stocks. The reported edge is about 1.3% per 21 days gross, with a few big winners carrying a mean whose median is near zero, and costs absorb it.
+- **Claim:** Clusters of 3+ insider buys beat random mid-caps by about 1% a month gross, not distinguishable from zero after UK retail costs.
+- **Testable:** yes. Can one week of EDGAR Form 4 filings be pulled keyless, and how many issuers show 3 or more distinct insider open-market purchases (code P)? Queued as P-0228.
+- **Idea on its own:** needs-a-run. The gross edge is plausible and matches the literature, but the vault's own cost-adjusted result leans no.
+- **How it would be done:** Pull the EDGAR daily index for a week, filter to Form 4, fetch each XML and keep transactions with code P. Group by issuer and window to count clusters. For forward returns use a free price source and compare against random same-size draws. Judging data quality on small caps with thin liquidity is where a person is needed.
+- **Stack already covers:** freqtrade, launchd long-running pollers
+- **To fetch:** SEC EDGAR full-text and index https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm (Keyless Form 4 source; needs a descriptive User-Agent header.); edgartools https://github.com/dgunning/edgartools (Parses Form 4 XML into dataframes.)
+- **Field Notes line:** Insider cluster buys have a real but small gross edge that costs eat, and the median trade sits near zero while a few winners lift the mean.
+
+### H-0413 Dated US release calendar from primary sources, 2023 to 2026
+2026-10-26, vault, 
+
+- **Mechanism:** Build a dated list of CPI, FOMC and NFP release times from the primary publishers (BLS schedules, Federal Reserve meeting calendars) rather than third-party aggregators. Each event is tagged with its exact timestamp so a strategy can test whether entries fall within a window of a release. The value is a clean event table that any faster strategy can join against.
+- **Claim:** A reusable release calendar for any faster strategy where releases hit entries.
+- **Testable:** yes. Can the Federal Reserve's public FOMC calendar page be parsed keyless into the expected 8 meetings a year for 2023 to 2026 (32 dates)? Queued as P-0227.
+- **Idea on its own:** sound. A primary-source event table is cheap, checkable and reusable, whatever the first strategy test showed.
+- **How it would be done:** Fetch the Fed's historical and current FOMC calendar pages and the BLS release schedule pages for CPI and the employment situation. Parse the dates and times to UTC into a single CSV with event type and source URL. Cross-check counts against known cadence (8 FOMC, 12 CPI, 12 NFP per year). Store it under systems/ for any desk to join against.
+- **Stack already covers:** launchd long-running pollers, football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** Federal Reserve FOMC calendars https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm (Primary source for meeting dates.); BLS release calendar https://www.bls.gov/schedule/news_release/ (Primary source for CPI and employment release dates.)
+- **Field Notes line:** A dated CPI, FOMC and NFP calendar built from primary sources is a reusable join table, even though the parent crypto filter test found no edge.
+
+### H-0411 StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents
+2026-10-26, arxiv, https://arxiv.org/abs/2610.32648
+
+- **Mechanism:** StateMirror sits at the harness boundary and intercepts each proposed tool call. It parses the command or code with AST and shell analysis to extract state predicates such as a path existing or a package being installed, then checks those deterministically against the live repository. Failures are fed back to the agent before execution, so no model call is needed for detection.
+- **Claim:** 0.940 precision and 0.817 F1 on 2,508 actions, 1.50 ms median latency, and 15.8% less agent execution time.
+- **Testable:** yes. Of the paths named in Bash commands in Proteus's own hook decisions log, what fraction fail a simple does-it-exist check? Not queued (daily cap).
+- **Idea on its own:** sound. Checking path and package predicates against the filesystem is cheap, deterministic and fits a PreToolUse hook.
+- **How it would be done:** Take the hook's decisions log, extract absolute paths and command names from each logged Bash call with shlex and a regex, and test them with os.path.exists and shutil.which. Count misses that preceded a failed or denied call. If the rate is meaningful, add the check as an advisory line in the hook. A person would label the false positives for the precision number.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** StateMirror paper https://arxiv.org/abs/2610.32648 (Predicate definitions and evaluation set description.)
+- **Missing:** No public code release was seen in the abstract; the predicate extractor would need writing.
+- **Field Notes line:** StateMirror checks an agent's planned command against the real repo before it runs, catching 82% F1 of invented paths in 1.5 ms with no model.
+
+### H-0410 t3dotgg/tstack: The agent skills I use every day. Works with Claude Code and Codex.
+2026-10-26, github, https://github.com/t3dotgg/tstack
+
+- **Mechanism:** A set of Claude Code and Codex skills (markdown instructions) that chain together: full-send proves a change, reviews it, files a PR, babysits CI and merges. The council skill sends the diff to three models from different providers and loops until they agree, and a small Python script polls CI for the babysit step. The multi-provider steps depend on a harness that can call other vendors' models.
+- **Claim:** Agent skills that take a change to a merged PR unattended, including a three-model review loop.
+- **Testable:** no. Running the skills needs an authenticated gh, a real repo to open PRs on and models from other providers. Needs: Authenticated gh, other providers' model access for council and sol-loop..
+- **Idea on its own:** needs-a-run. Cross-vendor agreement loops may catch errors one model misses, but agreement can also converge on a shared mistake.
+- **How it would be done:** Copy the skills folder and read the council and babysit-pr files for the loop and stop rules. Wire a reduced version using sub-agents on two Claude model sizes, then compare bugs caught against a single review on past Proteus commits. The CI poller script can be read for how it waits. Judging which findings are real needs a human reviewer.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** tstack https://github.com/t3dotgg/tstack (Skills and the pr-wait script to read and adapt.); GitHub CLI https://cli.github.com (Needed by the PR skills.)
+- **Missing:** A second and third provider's model access for a true council.
+- **Field Notes line:** tstack chains agent skills into a no-hands PR pipeline, with a council step where three different vendors' models review until they agree.
+
+### H-0409 Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT
+2026-10-26, hn, https://github.com/FrigadeHQ/hob
+
+- **Mechanism:** A desktop app that probes the machine's RAM and GPU on first run and picks an open-weight model (Gemma 4 or gpt-oss) that fits. It gives the model file tools (read, write, list), a sandboxed Python runner for ad hoc scripts such as charts and conversions, image input, SearXNG for web search and MCP for connectors. Everything except search and MCP stays local.
+- **Claim:** A free MIT desktop app that does what the Claude and ChatGPT desktop apps do with your files, with the model running on your own computer.
+- **Testable:** no. It needs a multi-gigabyte model download and a desktop install, which does not fit 30 minutes keyless, and there is no local LLM here today. Needs: A multi-gigabyte open-weight model download and disk space..
+- **Idea on its own:** needs-a-run. Hardware-fit model choice is sensible, but small local models' tool-use reliability is the open question.
+- **How it would be done:** Clone the repo and read how it scores hardware against a model table. Install on a spare machine, point it at a folder of PDFs and ask for a chart, then count failed tool calls over ten tasks. The same pattern could give Proteus a local reader for the cheap reading jobs. A person would judge answer quality, which a script cannot.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Hob https://github.com/FrigadeHQ/hob (The app itself; read the hardware-to-model selection code.); Ollama https://ollama.com (Simplest way to get a local model on this Mac so local-answer tests become possible.); SearXNG https://github.com/searxng/searxng (Keyless self-hosted metasearch that Hob uses for web search.)
+- **Field Notes line:** Hob picks an open-weight model to fit your hardware, then gives it file tools and a Python sandbox, so a Claude-style desktop agent runs fully offline.
+
+### H-0408 course-seller economy around AI creator models
+2026-10-26, vault, 
+
+- **Mechanism:** Three revenue routes sit under the AI creator label: selling AI-generated UGC and brand faces to businesses as a service, running labelled subscription personas on platforms that permit AI accounts, and selling courses that teach the first two. The visible big numbers are mostly screenshots and self-reported payouts, so the course route is the one with a verifiable buyer (the student). Platforms and payment processors police undisclosed AI personas through label rules, identity checks on payouts and engagement-pattern review.
+- **Claim:** AI influencer and creator-subscription models are presented as a large income stream, mostly via courses.
+- **Testable:** no. The claim is about income that is self-reported and private, so there is no public number Proteus can pull and check tonight.
+- **Idea on its own:** needs-a-run. The B2B UGC route has a real buyer, but the income figures cannot be checked from outside.
+- **How it would be done:** Count public price lists for AI UGC and avatar ad services, and count how many sellers show a named paying client versus a screenshot. Pull platform AI-labelling policies as the detection side. A hired person would handle client calls, brand approvals and the disclosure labels that no script covers. Any build would be a labelled-content avatar pipeline, which the stack mostly has already.
+- **Stack already covers:** HeyGen and Tavus (avatars), ElevenLabs (voice), HyperFrames (video compose, captions, render), Gemini (stills)
+- **Missing:** Nobody has audited payout proof for the course sellers' income claims.
+- **Field Notes line:** Most AI-influencer income on show is course sellers selling the method; the checkable money is AI UGC sold to businesses, and labelled personas on permissive platforms.
 
 ### H-0404 bubble map wallet clustering as a rug detector
 2026-10-25, vault, https://www.instagram.com/reel/Ddo-okKPBJF/
@@ -3404,7 +3498,10 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0404 | 2026-10-25 | bubble map wallet clustering as a rug detector | intel | needs-a-run | yes | P-0221 |
+| H-0418 | 2026-10-26 | Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr | intel | needs-a-run | yes | P-0228 |
+| H-0413 | 2026-10-26 | Dated US release calendar from primary sources, 2023 to 2026 | intel | sound | yes | P-0227 |
+| H-0408 | 2026-10-26 | course-seller economy around AI creator models | intel | needs-a-run | no |  |
+| H-0404 | 2026-10-25 | bubble map wallet clustering as a rug detector | intel | needs-a-run | yes | P-0221 **blocked** |
 | H-0399 | 2026-10-25 | form-triggered personalised AI video | open | sound | no |  |
 | H-0394 | 2026-10-25 | local open-weights video on a rented NVIDIA GPU | open | needs-a-run | no |  |
 | H-0390 | 2026-10-24 | Viggle motion transfer | open | needs-a-run | no |  |
@@ -3490,6 +3587,17 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0252 | 2026-10-26 | [Renoise MCP](https://renoise.ai/mcp) | The hosted generation backend the repo calls; credits needed. | H-0419 (andyhuo520/digital-human-koubo: AI digital-human t) | shelf |
+| T-0251 | 2026-10-26 | [digital-human-koubo](https://github.com/andyhuo520/digital-human-koubo) | Persona file schema, segment splitter and the transcript-versus-script check to read. | H-0419 (andyhuo520/digital-human-koubo: AI digital-human t) | shelf |
+| T-0250 | 2026-10-26 | [edgartools](https://github.com/dgunning/edgartools) | Parses Form 4 XML into dataframes. | H-0418 (Insider cluster buys carry a small relative edge o) | shelf |
+| T-0249 | 2026-10-26 | [SEC EDGAR full-text and index](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) | Keyless Form 4 source; needs a descriptive User-Agent header. | H-0418 (Insider cluster buys carry a small relative edge o) | shelf |
+| T-0248 | 2026-10-26 | [BLS release calendar](https://www.bls.gov/schedule/news_release/) | Primary source for CPI and employment release dates. | H-0413 (Dated US release calendar from primary sources, 20) | shelf |
+| T-0247 | 2026-10-26 | [Federal Reserve FOMC calendars](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm) | Primary source for meeting dates. | H-0413 (Dated US release calendar from primary sources, 20) | shelf |
+| T-0246 | 2026-10-26 | [StateMirror paper](https://arxiv.org/abs/2610.32648) | Predicate definitions and evaluation set description. | H-0411 (StateMirror: Pre-Execution Detection of Hallucinat) | shelf |
+| T-0245 | 2026-10-26 | [GitHub CLI](https://cli.github.com) | Needed by the PR skills. | H-0410 (t3dotgg/tstack: The agent skills I use every day. ) | shelf |
+| T-0244 | 2026-10-26 | [tstack](https://github.com/t3dotgg/tstack) | Skills and the pr-wait script to read and adapt. | H-0410 (t3dotgg/tstack: The agent skills I use every day. ) | shelf |
+| T-0243 | 2026-10-26 | [SearXNG](https://github.com/searxng/searxng) | Keyless self-hosted metasearch that Hob uses for web search. | H-0409 (Show HN: Hob - Open-source, on device alternative ) | shelf |
+| T-0242 | 2026-10-26 | [Hob](https://github.com/FrigadeHQ/hob) | The app itself; read the hardware-to-model selection code. | H-0409 (Show HN: Hob - Open-source, on device alternative ) | shelf |
 | T-0241 | 2026-10-25 | [ex-ussr-kinship-research](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) | Skill and audit script to run. | H-0401 (DenisSergeevitch/ex-ussr-kinship-research: Evidenc) | shelf |
 | T-0240 | 2026-10-25 | [Hurston-1](https://huggingface.co/destined/hurston-1) | The released model and card. | H-0400 (Show HN: Hurston-1 open source TTS that speak Sout) | shelf |
 | T-0239 | 2026-10-25 | [DeFlock](https://deflock.me) | Public ALPR map to compare counts with. | H-0395 (Proton hosts Flock map revealing over 300k cameras) | shelf |
@@ -3736,6 +3844,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0417 | 2026-10-26 | youtube | [Most cars are depreciating assets. Don't buy the wrong cars](https://www.youtube.com/watch?v=LMs9N6s7dhw) | A short claim about three 2006 cars losing value, with no method. |
+| H-0416 | 2026-10-26 | arxiv | [PHYRD: A Living Benchmark for Reproducing and Extending Theoretical Physics Rese](https://arxiv.org/abs/2610.32575) | A physics reasoning benchmark with no mechanism relevant to any desk. |
+| H-0415 | 2026-10-26 | github | [PaoloJN/recap: Recap AI for YouTube summaries, a searchable transcript and chat ](https://github.com/PaoloJN/recap) | A YouTube summary extension; the transcript fetch is already covered by the existing keyless pipeline. |
+| H-0414 | 2026-10-26 | hn | [Claude Code slyly adding users' emails to outbound HTTP](https://twitter.com/chrislakin/status/2113358733548081528) | A tweet claim with comment chatter and no mechanism in the item itself. |
+| H-0412 | 2026-10-26 | youtube | [The Recipe For Avoiding Massive Car Depreciation](https://www.youtube.com/watch?v=E2ekf03L3tY) | Anecdotal chat about depreciation with no mechanism or data to test. |
 | H-0407 | 2026-10-25 | youtube | [📈 EP02 // The bonding curve, explained in under a minute. Price = math, not magi](https://www.youtube.com/watch?v=v2DpfJ-06yc) | One-minute explainer of the pump.fun bonding curve that the Grinder already covers, ending in a sales pitch for a paid g |
 | H-0406 | 2026-10-25 | github | [routerhubSI/uncensored-ai-api: Uncensored AI API and models — one key for Claude](https://github.com/routerhubSI/uncensored-ai-api) | A referral-driven reseller gateway; the only mechanism is a proxy, with no new content. |
 | H-0405 | 2026-10-25 | hn | [Is AI just another get rich quick scheme?](https://news.ycombinator.com/item?id=50220934) | Opinion thread with no mechanism. |

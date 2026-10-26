@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 168 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,8 @@ Verdicts so far: 168 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
+| P-0227 | Release calendar: can FOMC dates for 2023 to 2026 be parsed keyless from federalreserve.gov, and do they give 32? | vault | none |  | 0 | 20 min |
+| P-0228 | Insider clusters: from one week of EDGAR Form 4 filings, how many issuers show 3+ distinct insider open-market buys? | vault | none |  | 0 | 30 min |
 
 ## Verdicts (214)
 
