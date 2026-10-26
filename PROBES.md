@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 167 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Verdicts so far: 167 works, 5 broken, 28 blocked, 13 not worth it. Killed: 4.
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
+| P-0225 | Munich ICON cold bias out of sample: rerun the 13 Oct previous-runs day-ahead method on 13 to 25 Oct only (DWD 03379 Stadt and 01262 Flughafen); does ICON's Stadt bias stay near -0.95C, so the +1C correction in the exchange book still holds? | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (213)
 

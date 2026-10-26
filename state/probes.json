@@ -1,5 +1,5 @@
 {
- "next_id": 225,
+ "next_id": 226,
  "items": [
   {
    "id": "P-0001",
@@ -5472,6 +5472,32 @@
     "number": "cloud covers about 10 of 32 positions, mostly the move-9 ones",
     "at": "2026-10-26T12:32:56+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0225",
+   "title": "Munich ICON cold bias out of sample: rerun the 13 Oct previous-runs day-ahead method on 13 to 25 Oct only (DWD 03379 Stadt and 01262 Flughafen); does ICON's Stadt bias stay near -0.95C, so the +1C correction in the exchange book still holds?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-26",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-26T12:38:34+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "ICON Stadt bias about -0.8C over 13 to 25 Oct (inside -1.5 to -0.5)",
+    "at": "2026-10-26T12:38:40+0000"
    }
   }
  ]
