@@ -75,6 +75,12 @@ def getj(url):
                 time.sleep(6 * (attempt + 1))
                 continue
             raise
+        except (urllib.error.URLError, ConnectionError, TimeoutError):
+            # Binance reset the connection mid-pull on 26 Oct and the whole ladder died twice
+            if attempt < 3:
+                time.sleep(6 * (attempt + 1))
+                continue
+            raise
 
 
 def yahoo_5m(sym):
