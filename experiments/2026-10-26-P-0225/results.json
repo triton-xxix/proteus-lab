@@ -1,0 +1,252 @@
+{
+ "Muenchen-Stadt": {
+  "in_sample_15aug_12oct": {
+   "first": "2026-08-15",
+   "last": "2026-10-12",
+   "icon_seamless": {
+    "n": 59,
+    "bias": -0.95,
+    "se": 0.21,
+    "mae": 1.38,
+    "right_degree": 0.19,
+    "mae_after_plus1_correction": 0.98
+   },
+   "ecmwf_ifs025": {
+    "n": 59,
+    "bias": -2.2,
+    "se": 0.17,
+    "mae": 2.28,
+    "right_degree": 0.08,
+    "mae_after_plus1_correction": 1.48
+   },
+   "gfs_seamless": {
+    "n": 59,
+    "bias": -1.44,
+    "se": 0.17,
+    "mae": 1.67,
+    "right_degree": 0.08,
+    "mae_after_plus1_correction": 0.98
+   }
+  },
+  "out_of_sample_from_13oct": {
+   "first": "2026-10-13",
+   "last": "2026-10-25",
+   "icon_seamless": {
+    "n": 13,
+    "bias": -0.48,
+    "se": 0.47,
+    "mae": 1.42,
+    "right_degree": 0.31,
+    "mae_after_plus1_correction": 1.28
+   },
+   "ecmwf_ifs025": {
+    "n": 13,
+    "bias": -1.28,
+    "se": 0.55,
+    "mae": 1.97,
+    "right_degree": 0.15,
+    "mae_after_plus1_correction": 1.51
+   },
+   "gfs_seamless": {
+    "n": 13,
+    "bias": -0.41,
+    "se": 0.72,
+    "mae": 1.88,
+    "right_degree": 0.23,
+    "mae_after_plus1_correction": 1.67
+   }
+  },
+  "out_days": [
+   {
+    "day": "2026-10-13",
+    "obs": 16.3,
+    "icon": 15.5
+   },
+   {
+    "day": "2026-10-14",
+    "obs": 18.6,
+    "icon": 17.1
+   },
+   {
+    "day": "2026-10-15",
+    "obs": 19.8,
+    "icon": 17.6
+   },
+   {
+    "day": "2026-10-16",
+    "obs": 21.8,
+    "icon": 18.8
+   },
+   {
+    "day": "2026-10-17",
+    "obs": 14.6,
+    "icon": 15.0
+   },
+   {
+    "day": "2026-10-18",
+    "obs": 13.6,
+    "icon": 16.8
+   },
+   {
+    "day": "2026-10-19",
+    "obs": 15.0,
+    "icon": 14.9
+   },
+   {
+    "day": "2026-10-20",
+    "obs": 9.9,
+    "icon": 11.5
+   },
+   {
+    "day": "2026-10-21",
+    "obs": 12.7,
+    "icon": 11.3
+   },
+   {
+    "day": "2026-10-22",
+    "obs": 13.3,
+    "icon": 12.8
+   },
+   {
+    "day": "2026-10-23",
+    "obs": 12.6,
+    "icon": 10.9
+   },
+   {
+    "day": "2026-10-24",
+    "obs": 10.6,
+    "icon": 9.4
+   },
+   {
+    "day": "2026-10-25",
+    "obs": 13.9,
+    "icon": 14.8
+   }
+  ]
+ },
+ "Muenchen-Flughafen": {
+  "in_sample_15aug_12oct": {
+   "first": "2026-08-15",
+   "last": "2026-10-12",
+   "icon_seamless": {
+    "n": 59,
+    "bias": -0.27,
+    "se": 0.23,
+    "mae": 1.16,
+    "right_degree": 0.34,
+    "mae_after_plus1_correction": 1.32
+   },
+   "ecmwf_ifs025": {
+    "n": 59,
+    "bias": -1.52,
+    "se": 0.16,
+    "mae": 1.67,
+    "right_degree": 0.08,
+    "mae_after_plus1_correction": 0.91
+   },
+   "gfs_seamless": {
+    "n": 59,
+    "bias": -0.76,
+    "se": 0.18,
+    "mae": 1.14,
+    "right_degree": 0.27,
+    "mae_after_plus1_correction": 0.99
+   }
+  },
+  "out_of_sample_from_13oct": {
+   "first": "2026-10-13",
+   "last": "2026-10-25",
+   "icon_seamless": {
+    "n": 13,
+    "bias": 0.04,
+    "se": 0.3,
+    "mae": 0.82,
+    "right_degree": 0.31,
+    "mae_after_plus1_correction": 1.18
+   },
+   "ecmwf_ifs025": {
+    "n": 13,
+    "bias": -0.75,
+    "se": 0.56,
+    "mae": 1.74,
+    "right_degree": 0.08,
+    "mae_after_plus1_correction": 1.42
+   },
+   "gfs_seamless": {
+    "n": 13,
+    "bias": 0.12,
+    "se": 0.84,
+    "mae": 2.12,
+    "right_degree": 0.38,
+    "mae_after_plus1_correction": 2.41
+   }
+  },
+  "out_days": [
+   {
+    "day": "2026-10-13",
+    "obs": 15.1,
+    "icon": 15.5
+   },
+   {
+    "day": "2026-10-14",
+    "obs": 18.2,
+    "icon": 17.1
+   },
+   {
+    "day": "2026-10-15",
+    "obs": 17.5,
+    "icon": 17.6
+   },
+   {
+    "day": "2026-10-16",
+    "obs": 19.9,
+    "icon": 18.8
+   },
+   {
+    "day": "2026-10-17",
+    "obs": 14.9,
+    "icon": 15.0
+   },
+   {
+    "day": "2026-10-18",
+    "obs": 16.1,
+    "icon": 16.8
+   },
+   {
+    "day": "2026-10-19",
+    "obs": 14.1,
+    "icon": 14.9
+   },
+   {
+    "day": "2026-10-20",
+    "obs": 9.0,
+    "icon": 11.5
+   },
+   {
+    "day": "2026-10-21",
+    "obs": 11.0,
+    "icon": 11.3
+   },
+   {
+    "day": "2026-10-22",
+    "obs": 13.4,
+    "icon": 12.8
+   },
+   {
+    "day": "2026-10-23",
+    "obs": 11.5,
+    "icon": 10.9
+   },
+   {
+    "day": "2026-10-24",
+    "obs": 11.1,
+    "icon": 9.4
+   },
+   {
+    "day": "2026-10-25",
+    "obs": 14.1,
+    "icon": 14.8
+   }
+  ]
+ }
+}

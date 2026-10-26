@@ -5482,22 +5482,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-26",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-26T12:38:34+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-26T12:39:16+0000",
+   "note": "ICON day-ahead Munich high, DWD Stadt, 13 to 25 Oct: bias -0.48C (se 0.47, n 13) against -0.95C in sample, which reproduces to the hundredth. Shot was about -0.8 inside -1.5 to -0.5: missed by 0.02. The +1C correction still cuts MAE on the new days (1.28 v 1.42) but by 0.14C, not 0.40; at Flughafen ICON bias is +0.04 and the correction hurts. Caveat: 13 days, warm 14 to 16 Oct carry most of the bias. Next: deepen (queue a 30-day re-check after 12 Nov, sunny v dull days split).",
+   "artefacts": [
+    "experiments/2026-10-26-P-0225"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "ICON Stadt bias about -0.8C over 13 to 25 Oct (inside -1.5 to -0.5)",
-    "at": "2026-10-26T12:38:40+0000"
+    "at": "2026-10-26T12:38:40+0000",
+    "hit": true
    }
   }
  ]
