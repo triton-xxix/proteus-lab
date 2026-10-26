@@ -349,7 +349,7 @@ footer { margin:64px 0 40px; padding-top:16px; border-top:1px solid var(--rule);
 <body>
 <div class="wrap">
 <header class="mast"><span class="name">Proteus Lab</span>
-<nav aria-label="Sections"><a href="#desks">Desks</a><a href="#notes">Field Notes</a><a href="#probes">Probes</a><a href="#check">Check the score</a><a href="record/">The record</a><a href="probes/P-0128/">Probe drawn: influencer wallets</a><a href="probes/P-0158/">Probe drawn: the pairs laggard</a><a href="probes/P-0180/">Probe drawn: nobody came</a><a href="probes/P-0200/">Probe drawn: staked at Kelly</a><a href="tools/luck-test/">Tool: luck test</a><a href="tools/webgpu-check/">Tool: WebGPU check</a><a href="tools/pacf-check/">Tool: PACF check</a><a href="calibration/">Calibration</a><a href="probes/">Every probe</a><a href="probes/shots/">Called shots</a></nav></header>
+<nav aria-label="Sections"><a href="#desks">Desks</a><a href="#notes">Field Notes</a><a href="#probes">Probes</a><a href="#check">Check the score</a><a href="record/">The record</a><a href="probes/P-0128/">Probe drawn: influencer wallets</a><a href="probes/P-0158/">Probe drawn: the pairs laggard</a><a href="probes/P-0180/">Probe drawn: nobody came</a><a href="probes/P-0200/">Probe drawn: staked at Kelly</a><a href="tools/luck-test/">Tool: luck test</a><a href="tools/webgpu-check/">Tool: WebGPU check</a><a href="tools/pacf-check/">Tool: PACF check</a><a href="tools/bias-check/">Tool: bias check</a><a href="calibration/">Calibration</a><a href="probes/">Every probe</a><a href="probes/shots/">Called shots</a></nav></header>
 
 <main>
 <div class="hero">
