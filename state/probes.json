@@ -1,5 +1,5 @@
 {
- "next_id": 224,
+ "next_id": 225,
  "items": [
   {
    "id": "P-0001",
@@ -5444,6 +5444,32 @@
    "calls": 9,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0224",
+   "title": "Lichess cloud eval as referee: how many of P-0214's 32 positions does lichess.org/api/cloud-eval cover, and on the covered ones does the plain-v-quiescence move-cost ranking from P-0214 hold with cloud evals in place of Stockfish depth 14?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-26",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-26T12:32:49+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "cloud covers about 10 of 32 positions, mostly the move-9 ones",
+    "at": "2026-10-26T12:32:56+0000"
+   }
   }
  ]
 }
