@@ -1,0 +1,36 @@
+F-0056 hook patch, written by Smith 26 Oct 2026 20:15. Not applied: a scheduled run cannot edit the hook.
+
+Why: on 25 Oct 2026 the nightly's third spawn was denied "4 of 4 already used" after 2 allows. BST
+ended at 01:00 that morning, so at 23:31 GMT `time.time() - 86400` was 23:31 GMT on 24 Oct, which is
+00:31 BST on 25 Oct: "yesterday" and "today" were the same date, the 25 Oct decisions log was read
+twice and every allow counted double. Same fault doubles the daily ceiling count for that hour each
+autumn, and in spring (00:30 BST on 30 Mar 2026) it reads 28 and 30 Mar, skipping the real yesterday. The patch steps back one calendar day (noon, via mktime) instead of 86,400 seconds.
+
+Proof without the hook: python3 /Users/triton/PROTEUS/state/loop/hook-patches/F-0056-check.py
+(old way reads 2026-10-25 twice on the night; patched way gives two distinct dates on six instants,
+both DST edges, month and year edges).
+
+Apply from an interactive session:
+  git -C /Users/triton/PROTEUS apply --check /Users/triton/PROTEUS/state/loop/hook-patches/F-0056.diff
+  git -C /Users/triton/PROTEUS apply /Users/triton/PROTEUS/state/loop/hook-patches/F-0056.diff
+  python3 /Users/triton/PROTEUS/bin/test-hook.py        (no new cases: the bug lives in date arithmetic, see the check script)
+and close: python3 /Users/triton/PROTEUS/bin/findings.py fix F-0056 --commit <hash> --note 'spawn counter steps back a calendar day; DST double read gone'
+Line numbers are against 93714ab (26 Oct).
+
+--- a/.claude/hooks/unattended-decide.py
++++ b/.claude/hooks/unattended-decide.py
+@@ -546,8 +546,12 @@
+ def _agent_allows():
+     """(session, ts) for every allowed Agent call in yesterday's and today's decisions logs."""
+     out = []
+-    for day in (time.time() - 86400, time.time()):
+-        path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d", time.localtime(day)) + ".jsonl"
++    # F-0056: on 25 Oct 2026 (BST ended) now minus 86400 s at 23:31 GMT was 00:31 BST the same
++    # date, so today's log was read twice and 2 allows counted as 4. Step back a calendar day.
++    now = time.localtime()
++    yday = time.localtime(time.mktime((now.tm_year, now.tm_mon, now.tm_mday - 1, 12, 0, 0, 0, 0, -1)))
++    for day in (yday, now):
++        path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d", day) + ".jsonl"
+         try:
+             with open(path) as fh:
+                 for line in fh:
