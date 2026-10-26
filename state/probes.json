@@ -1,5 +1,5 @@
 {
- "next_id": 229,
+ "next_id": 230,
  "items": [
   {
    "id": "P-0001",
@@ -5566,6 +5566,28 @@
    ],
    "minutes": 0,
    "calls": 9,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0229",
+   "title": "Polyglot book check: in my 56 Lichess games, how many of my first eight moves are in gm2001.bin, by colour, and does leaving book early go with losing?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-26T23:38:07+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-26T23:38:31+0000",
+   "note": "56 games against gm2001.bin: 4.88 of my first 8 moves in book (White 5.19, Black 4.48); score 0.85 with 0-3 book moves v 0.83 with 4+, so leaving book early does not go with losing; colour matters more (0.92 v 0.74).",
+   "artefacts": [
+    "experiments/2026-10-26-P-0229"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }

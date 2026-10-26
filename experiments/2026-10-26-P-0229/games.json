@@ -1,0 +1,562 @@
+[
+ {
+  "game": "3cQIZEIt",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": null,
+  "opening": "Nimzowitsch Defense"
+ },
+ {
+  "game": "3yTw0tzs",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Morphy Defense"
+ },
+ {
+  "game": "41e2YbAx",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 7,
+  "mine_moves": 8,
+  "my_first_out_move": 8,
+  "out_of_book_first_by_opp": null,
+  "opening": "Queen's Gambit Declined: Semi-Tarrasch Defense"
+ },
+ {
+  "game": "4Bhsh6cb",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": 6,
+  "opening": "Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation"
+ },
+ {
+  "game": "5BUSDJUJ",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 4,
+  "opening": "Queen's Pawn Game: Colle System"
+ },
+ {
+  "game": "5BnAFUZb",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 3,
+  "mine_moves": 8,
+  "my_first_out_move": 4,
+  "out_of_book_first_by_opp": 3,
+  "opening": "Pterodactyl Defense: Eastern, Rhamphorhynchus"
+ },
+ {
+  "game": "6fLHrF2B",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": 1,
+  "opening": "Hippopotamus Defense"
+ },
+ {
+  "game": "CMzcXaJE",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 2,
+  "mine_moves": 8,
+  "my_first_out_move": 3,
+  "out_of_book_first_by_opp": 2,
+  "opening": "French Defense: Normal Variation"
+ },
+ {
+  "game": "Cvcig4GO",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 0,
+  "mine_moves": 8,
+  "my_first_out_move": 1,
+  "out_of_book_first_by_opp": 1,
+  "opening": "Amar Opening"
+ },
+ {
+  "game": "DYOTjAST",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Sicilian Defense: Najdorf Variation"
+ },
+ {
+  "game": "DxoYpeBU",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": null,
+  "opening": "Sicilian Defense: Scheveningen Variation, Keres Attack"
+ },
+ {
+  "game": "EbyX8abj",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Morphy Defense"
+ },
+ {
+  "game": "F7SaoXM6",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Queen's Indian Defense: Fianchetto Variation, Kramnik Variation"
+ },
+ {
+  "game": "FSbPi9IO",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": null,
+  "opening": "Italian Game: Two Knights Defense, Modern Bishop's Opening"
+ },
+ {
+  "game": "G0Z8JmBR",
+  "colour": "white",
+  "score": 0.5,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Petrov's Defense: Classical Attack, Staunton Variation"
+ },
+ {
+  "game": "HQz6HAtS",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": 8,
+  "opening": "French Defense: Steinitz Variation, Boleslavsky Variation"
+ },
+ {
+  "game": "Jyu3vNdr",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 3,
+  "opening": "Bishop's Opening: Vienna Hybrid"
+ },
+ {
+  "game": "L5vicmQL",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": null,
+  "opening": "Nimzowitsch Defense: Scandinavian Variation, Advance Variation"
+ },
+ {
+  "game": "LrVPTNTn",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": null,
+  "opening": "Zukertort Opening"
+ },
+ {
+  "game": "M6nGUrlK",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": null,
+  "opening": "Nimzowitsch Defense: Kennedy Variation, Linksspringer Variation"
+ },
+ {
+  "game": "NBPMiQLF",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": 7,
+  "opening": "Italian Game: Classical Variation, Giuoco Pianissimo"
+ },
+ {
+  "game": "P7bPVLVh",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 5,
+  "mine_moves": 8,
+  "my_first_out_move": 6,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"
+ },
+ {
+  "game": "RFumvpDS",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 3,
+  "mine_moves": 8,
+  "my_first_out_move": 4,
+  "out_of_book_first_by_opp": 4,
+  "opening": "Indian Defense: Anti-Nimzo-Indian"
+ },
+ {
+  "game": "Rcs7cSRx",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": null,
+  "opening": "Petrov's Defense: Classical Attack"
+ },
+ {
+  "game": "T9U8AAOT",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": null,
+  "opening": "Scandinavian Defense: Classical Variation"
+ },
+ {
+  "game": "Tpfxmsti",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 2,
+  "mine_moves": 8,
+  "my_first_out_move": 3,
+  "out_of_book_first_by_opp": 3,
+  "opening": "Nimzo-Larsen Attack: Modern Variation"
+ },
+ {
+  "game": "U3riLHUP",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 3,
+  "mine_moves": 8,
+  "my_first_out_move": 4,
+  "out_of_book_first_by_opp": 3,
+  "opening": "Scandinavian Defense: Mieses-Kotroc Variation"
+ },
+ {
+  "game": "UmxnuFAD",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": 8,
+  "opening": "Sicilian Defense: Four Knights Variation, Exchange Variation"
+ },
+ {
+  "game": "WMr5yREu",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": 1,
+  "opening": "Goldsmith Defense"
+ },
+ {
+  "game": "WdNa51ds",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 7,
+  "mine_moves": 8,
+  "my_first_out_move": 8,
+  "out_of_book_first_by_opp": 7,
+  "opening": "Ruy Lopez: Open"
+ },
+ {
+  "game": "a0w0GeDj",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Morphy Defense"
+ },
+ {
+  "game": "aes8qyAd",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Scotch Game: Mieses Variation"
+ },
+ {
+  "game": "agp0YC98",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": null,
+  "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation"
+ },
+ {
+  "game": "bK8NBxh0",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 5,
+  "opening": "Four Knights Game: Spanish Variation, Rubinstein Variation, Henneberger Variation"
+ },
+ {
+  "game": "cZjkWB2m",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": 2,
+  "opening": "Indian Defense"
+ },
+ {
+  "game": "fHzdwCnk",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": 8,
+  "opening": "Sicilian Defense: Four Knights Variation, Exchange Variation"
+ },
+ {
+  "game": "h1lCzzOr",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 2,
+  "mine_moves": 8,
+  "my_first_out_move": 3,
+  "out_of_book_first_by_opp": 2,
+  "opening": "Caro-Kann Defense"
+ },
+ {
+  "game": "hMeKOUac",
+  "colour": "white",
+  "score": 0.5,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"
+ },
+ {
+  "game": "hR1dEhx2",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 4,
+  "opening": "Philidor Defense: Exchange Variation"
+ },
+ {
+  "game": "l6FpyJfn",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 5,
+  "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"
+ },
+ {
+  "game": "mGZIjQAj",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 7,
+  "mine_moves": 8,
+  "my_first_out_move": 8,
+  "out_of_book_first_by_opp": 7,
+  "opening": "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense"
+ },
+ {
+  "game": "mPEN9pM0",
+  "colour": "black",
+  "score": 0.0,
+  "mine_in_book": 0,
+  "mine_moves": 8,
+  "my_first_out_move": 1,
+  "out_of_book_first_by_opp": 1,
+  "opening": "Saragossa Opening"
+ },
+ {
+  "game": "nLqpqPk9",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 3,
+  "mine_moves": 8,
+  "my_first_out_move": 2,
+  "out_of_book_first_by_opp": 3,
+  "opening": "Queen's Pawn Game: London System"
+ },
+ {
+  "game": "nYLHRXkp",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 5,
+  "opening": "Italian Game: Scotch Gambit, Anderssen Attack"
+ },
+ {
+  "game": "nhMf8XUZ",
+  "colour": "white",
+  "score": 0.5,
+  "mine_in_book": 7,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 4,
+  "opening": "Ruy Lopez: Marshall Attack, Modern Main Line"
+ },
+ {
+  "game": "nmMrVmK7",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 5,
+  "mine_moves": 8,
+  "my_first_out_move": 6,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Open Berlin Defense, Showalter Variation"
+ },
+ {
+  "game": "uYobIIMC",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": 7,
+  "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"
+ },
+ {
+  "game": "vSy9joyq",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Morphy Defense"
+ },
+ {
+  "game": "wEKPfaym",
+  "colour": "white",
+  "score": 0.5,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"
+ },
+ {
+  "game": "wjRNY2Ha",
+  "colour": "black",
+  "score": 1.0,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Nb6"
+ },
+ {
+  "game": "xAUbGMwe",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 4,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": null,
+  "opening": "Caro-Kann Defense: Advance Variation"
+ },
+ {
+  "game": "xSPp3Efy",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 7,
+  "mine_moves": 8,
+  "my_first_out_move": 5,
+  "out_of_book_first_by_opp": 4,
+  "opening": "Ruy Lopez: Marshall Attack"
+ },
+ {
+  "game": "yo3jf6ye",
+  "colour": "white",
+  "score": 0.5,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": null,
+  "opening": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted"
+ },
+ {
+  "game": "yvdNBcef",
+  "colour": "white",
+  "score": 1.0,
+  "mine_in_book": 6,
+  "mine_moves": 8,
+  "my_first_out_move": 7,
+  "out_of_book_first_by_opp": null,
+  "opening": "Caro-Kann Defense: Advance Variation, Short Variation"
+ },
+ {
+  "game": "zha1DqJl",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 8,
+  "mine_moves": 8,
+  "my_first_out_move": null,
+  "out_of_book_first_by_opp": 7,
+  "opening": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation"
+ },
+ {
+  "game": "zwTbn59p",
+  "colour": "black",
+  "score": 0.5,
+  "mine_in_book": 1,
+  "mine_moves": 8,
+  "my_first_out_move": 1,
+  "out_of_book_first_by_opp": 1,
+  "opening": "Van't Kruijs Opening"
+ }
+]
