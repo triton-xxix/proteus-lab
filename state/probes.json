@@ -1,5 +1,5 @@
 {
- "next_id": 226,
+ "next_id": 227,
  "items": [
   {
    "id": "P-0001",
@@ -5502,6 +5502,26 @@
     "at": "2026-10-26T12:38:40+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0226",
+   "title": "Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-12",
+   "est_minutes": 20,
+   "added": "2026-10-26",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
