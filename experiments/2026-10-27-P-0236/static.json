@@ -1,0 +1,202 @@
+{
+ "files": [
+  [
+   "package/LICENSE",
+   1067
+  ],
+  [
+   "package/web/ui.html",
+   72463
+  ],
+  [
+   "package/matrix.json",
+   8942
+  ],
+  [
+   "package/package.json",
+   1398
+  ],
+  [
+   "package/lib/templates/personas/neutral.md",
+   1115
+  ],
+  [
+   "package/README.md",
+   12910
+  ],
+  [
+   "package/bin/agent-purge.mjs",
+   33496
+  ],
+  [
+   "package/lib/armed.mjs",
+   1483
+  ],
+  [
+   "package/lib/armor.mjs",
+   10127
+  ],
+  [
+   "package/bench/bench-armor.mjs",
+   42694
+  ],
+  [
+   "package/lib/caps.mjs",
+   8118
+  ],
+  [
+   "package/lib/detect.mjs",
+   3617
+  ],
+  [
+   "package/lib/doctor.mjs",
+   509
+  ],
+  [
+   "package/lib/dsh.mjs",
+   15827
+  ],
+  [
+   "package/lib/home.mjs",
+   1813
+  ],
+  [
+   "package/backends/index.mjs",
+   9395
+  ],
+  [
+   "package/bench/judge-armor.mjs",
+   5565
+  ],
+  [
+   "package/lib/persist.mjs",
+   11412
+  ],
+  [
+   "package/lib/personas.mjs",
+   8225
+  ],
+  [
+   "package/lib/restore.mjs",
+   3358
+  ],
+  [
+   "package/web/server.mjs",
+   17670
+  ],
+  [
+   "package/lib/shim.mjs",
+   6508
+  ],
+  [
+   "package/lib/slashes.mjs",
+   17774
+  ],
+  [
+   "package/lib/spawn.mjs",
+   5491
+  ],
+  [
+   "package/lib/state.mjs",
+   5691
+  ]
+ ],
+ "hits": {
+  "package/bin/agent-purge.mjs": {
+   "spawns": 1,
+   "home_paths": 1,
+   "shim_path": 36
+  },
+  "package/lib/armed.mjs": {
+   "shim_path": 2
+  },
+  "package/lib/armor.mjs": {
+   "spawns": 3
+  },
+  "package/bench/bench-armor.mjs": {
+   "writes": 14,
+   "spawns": 3,
+   "home_paths": 1,
+   "shim_path": 1
+  },
+  "package/lib/caps.mjs": {
+   "binary_patch": 1,
+   "home_paths": 3,
+   "shim_path": 21
+  },
+  "package/lib/detect.mjs": {
+   "spawns": 1,
+   "binary_patch": 2,
+   "home_paths": 4,
+   "shim_path": 3
+  },
+  "package/lib/dsh.mjs": {
+   "writes": 19,
+   "spawns": 2,
+   "home_paths": 1
+  },
+  "package/lib/home.mjs": {
+   "writes": 2,
+   "home_paths": 5
+  },
+  "package/backends/index.mjs": {
+   "writes": 6,
+   "binary_patch": 2
+  },
+  "package/bench/judge-armor.mjs": {
+   "writes": 2,
+   "network": 1
+  },
+  "package/lib/persist.mjs": {
+   "writes": 7,
+   "home_paths": 2
+  },
+  "package/lib/personas.mjs": {
+   "writes": 9
+  },
+  "package/lib/restore.mjs": {
+   "writes": 9
+  },
+  "package/web/server.mjs": {
+   "shim_path": 14
+  },
+  "package/lib/shim.mjs": {
+   "writes": 6,
+   "spawns": 4,
+   "home_paths": 1,
+   "shim_path": 29
+  },
+  "package/lib/slashes.mjs": {
+   "writes": 11,
+   "home_paths": 6,
+   "shim_path": 5
+  },
+  "package/lib/spawn.mjs": {
+   "spawns": 4,
+   "home_paths": 1,
+   "shim_path": 8
+  },
+  "package/lib/state.mjs": {
+   "writes": 6,
+   "shim_path": 4
+  }
+ },
+ "subcommands": [
+  "arm",
+  "armor",
+  "detect",
+  "disarm",
+  "doctor",
+  "install",
+  "ls",
+  "matrix",
+  "mode",
+  "register",
+  "slash",
+  "status",
+  "uninstall",
+  "use",
+  "web"
+ ],
+ "ls_context": ""
+}

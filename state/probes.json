@@ -5748,16 +5748,20 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-27",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-27T23:36:51+0000",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-27T23:38:26+0000",
+   "note": "Read from the tarball, not run (two days old, install patches the claude binary). Premise wrong: ls lists personas; detect is the read-only scan (marker files plus PATH). No command is read-only: every start mkdirs the data home and recover() replays any JSON in TMPDIR/agent-purge-restore, writing or deleting the path it names without checks.",
+   "artefacts": [
+    "experiments/2026-10-27-P-0236"
+   ],
+   "minutes": 1,
+   "calls": 18,
+   "denied": [
+    "Bash `tar -xzf /Users/triton/PROTEUS/sandbox/agent-purge-dl/agent-purge-0.2.8.tgz -C /Users/trit`"
+   ],
    "luke": false
   },
   {
