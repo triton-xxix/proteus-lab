@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 175 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
+Verdicts so far: 176 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 175 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0235 | IBS close fills against next-open fills on the same signals: P-0091 nine ETFs 2009-26, how much per-trade edge a buy at the signal close adds over the next open | desk | none |  | 0 | 20 min |
 
-## Verdicts (223)
+## Verdicts (224)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-27 | P-0235 | IBS close fills against next-open fills on the same signals: P-0091 nine ETFs 2009-26, how much per-trade edge a buy at the signal close adds over the next open | **works** | Same 4,430 IBS signals, nine ETFs 2009-26: next-open fills +0.272% a trade (65% win), close fills +0.377% (69%), so the fill adds 0.105 points, mostly the overnight gap (+0.02 to +0.14%, biggest EWJ, QQQ, EEM). It explains about a fifth of the gap to the video claim of 0.79%. | `experiments/2026-10-27-P-0235` | 0 min, 7 calls, 0 denied |
 | 2026-10-27 | P-0236 | agent-purge: does its ls command run read-only from a sandbox home and report which harnesses it detects? | **not-worth-it** | Read from the tarball, not run (two days old, install patches the claude binary). Premise wrong: ls lists personas; detect is the read-only scan (marker files plus PATH). No command is read-only: every start mkdirs the data home and recover() replays any JSON in TMPDIR/agent-purge-restore, writing or deleting the path it names without checks. | `experiments/2026-10-27-P-0236` | 1 min, 18 calls, 1 denied |
 | | | | | denied: Bash `tar -xzf /Users/triton/PROTEUS/sandbox/agent-purge-dl/agent-purge-0.2.8.tgz -C /Users/trit` | | |
 | 2026-10-27 | P-0237 | Win rate vs entry price: do heavy football favourites win most often yet return at or below zero at closing odds? | **works** | Yes, and longshots carry the loss: 13,419 matches (11,025 with Pinnacle close), nine leagues, five seasons; prices under 1.5 win 72 to 84% and return +0.3 to +0.9% at Pinnacle close (inside one se of zero), 5 to 10 returns -13.6%, 10+ -28.6%; favourite every match wins 54%, -0.5% Pinnacle, -2.2% average close. Favourite-longshot bias, no edge after error. | `experiments/2026-10-27-P-0237` | 0 min, 7 calls, 0 denied |
