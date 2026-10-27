@@ -6,15 +6,20 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-419 judged over 28 harvest days, 275 kept, 86 testable, 82 queued as probes, 77 with a probe verdict.
+428 judged over 29 harvest days, 280 kept, 88 testable, 84 queued as probes, 79 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0427 | 2026-10-27 | vault | [business snapshot prompt as setup](https://resources.getjobber.com/hubfs/content/Home-Service-AI-Starter-Toolkit-by-Jobber.pdf) | mechanism | tools-for-strangers | no: Judging output quality needs model answers and there is no l |  |
+| H-0424 | 2026-10-27 | vault | [win rate sold without entry price](https://www.instagram.com/reel/DedW0mvh3dw/) (intel) | mechanism | forecasting | yes | P-0237 |
+| H-0423 | 2026-10-27 | arxiv | [Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Model](https://arxiv.org/abs/2610.35829) | mechanism | mechanism-hunting | no: Needs an open LLM with accessible hidden states and the trai |  |
+| H-0422 | 2026-10-27 | github | [ZiChuanLan/agent-purge: One persona, many coding agents. Replace or inject system prompts ](https://github.com/ZiChuanLan/agent-purge) | mechanism | tools-for-strangers | yes | P-0236 |
+| H-0420 | 2026-10-27 | vault | [comment-keyword indicator funnel](https://www.instagram.com/reel/Dee_ogTKexd/) (intel) | mechanism | mechanism-hunting | no: The funnel sits behind Instagram comments and DMs, and runni |  |
 | H-0419 | 2026-10-26 | github | [andyhuo520/digital-human-koubo: AI digital-human talking-head videos from one photo: Renoi](https://github.com/andyhuo520/digital-human-koubo) | mechanism | tools-for-strangers | no: Generation runs through a paid credit-based service that nee |  |
-| H-0418 | 2026-10-26 | vault | [Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr]() | mechanism | open-data | yes | P-0228 |
-| H-0413 | 2026-10-26 | vault | [Dated US release calendar from primary sources, 2023 to 2026]() | mechanism | open-data | yes | P-0227 |
+| H-0418 | 2026-10-26 | vault | [Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr]() | mechanism | open-data | yes | P-0228 **blocked** |
+| H-0413 | 2026-10-26 | vault | [Dated US release calendar from primary sources, 2023 to 2026]() | mechanism | open-data | yes | P-0227 **works** |
 | H-0411 | 2026-10-26 | arxiv | [StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents](https://arxiv.org/abs/2610.32648) | mechanism | mechanism-hunting | yes |  |
 | H-0410 | 2026-10-26 | github | [t3dotgg/tstack: The agent skills I use every day. Works with Claude Code and Codex.](https://github.com/t3dotgg/tstack) | mechanism | tools-for-strangers | no: Running the skills needs an authenticated gh, a real repo to |  |
 | H-0409 | 2026-10-26 | hn | [Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT](https://github.com/FrigadeHQ/hob) | mechanism | tech | no: It needs a multi-gigabyte model download and a desktop insta |  |
@@ -289,6 +294,65 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0427 business snapshot prompt as setup
+2026-10-27, vault, https://resources.getjobber.com/hubfs/content/Home-Service-AI-Starter-Toolkit-by-Jobber.pdf
+
+- **Mechanism:** A one-time prompt asks the business owner a fixed set of questions (trade, services, area, prices, customers, tone) and has the AI write a short profile. The owner pastes that profile at the top of every later request, so the AI answers with the business's context rather than generic output. A quote prompt then reuses the profile. The numbers in the answers are the owner's, not the model's.
+- **Claim:** A free toolkit gives home-service firms a reusable business-snapshot prompt and a quote prompt.
+- **Testable:** no. Judging output quality needs model answers and there is no local LLM; keyless tonight there is nothing to measure. Needs: A model to run the prompt against sample businesses..
+- **Idea on its own:** sound. Persistent context ahead of each task is a well-understood way to lift output quality, and it costs the user one paste.
+- **How it would be done:** Write the question list, run it against two or three real or invented trades businesses, and store each result as a profile file. Then make a skill that loads the profile before each task such as quotes, replies or job write-ups. Add UK rules (VAT, consumer rights) and the owner's own numbers so revenue sums are real. A person would interview an actual owner to check the profile reads right. Compare outputs with and without the profile on the same five tasks.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A real trades owner's data to test against.
+- **Field Notes line:** A free trades toolkit shows the cheapest AI setup trick: ask the owner questions once, save the answer as a profile, paste it before every request.
+
+### H-0424 win rate sold without entry price
+2026-10-27, vault, https://www.instagram.com/reel/DedW0mvh3dw/
+
+- **Mechanism:** On a binary prediction market a contract pays 1 dollar if it settles yes. Buying a favourite at 90 cents wins about nine times in ten, so the win rate looks excellent, but each win earns 10 cents and each loss costs 90, so expected profit is zero before fees and negative after. A copy-wallet reel that quotes win rate alone hides the entry price that decides whether the record is profitable.
+- **Claim:** Copying certain wallets gives a very high win rate.
+- **Testable:** yes. Using public football-data closing odds, does backing heavy favourites show a high win rate but a ROI at or below zero, and what are the two numbers for the top implied-probability bucket? Queued as P-0237.
+- **Idea on its own:** sound. Win rate only means something alongside entry price and payout; the arithmetic is settled and easy to demonstrate.
+- **How it would be done:** Pull a season or more of public football-data CSVs with closing odds, convert odds to implied probability with the margin removed, and bucket matches by the favourite's probability. For each bucket compute the favourite's win rate and the flat-stake ROI at the closing odds. Chart the two together. The Pitch desk already has the data plumbing. No access to the reel or any exchange is needed.
+- **Stack already covers:** football-data, Pitch paper desk
+- **Field Notes line:** A 90 percent win rate bought at 90 cents breaks even; checking it on a season of football closing odds shows why a win rate without an entry price means little.
+
+### H-0423 Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models
+2026-10-27, arxiv, https://arxiv.org/abs/2610.35829
+
+- **Mechanism:** For each new function, the system builds a prompt holding a pre-computed threat model of its module, static analysis findings and call-graph neighbours, runs one forward pass of an open LLM, and reads a hidden-layer representation. A trained linear-style probe on that representation outputs vulnerable or not. It avoids generating text, so it takes about a second instead of minutes of agent calls. Training labels come from PrimeVul.
+- **Claim:** A probe on LLM internals reaches 60.0 percent accuracy on PrimeVul at about one second per function, matching an agentic detector 250 times slower.
+- **Testable:** no. Needs an open LLM with accessible hidden states and the trained probe; there is no local LLM on this Mac. Needs: A local open-weight model with hidden-state access and a GPU or enough RAM; the probe weights..
+- **Idea on its own:** needs-a-run. Probing hidden states for a label is established, but 60 percent on a binary task is only modestly above chance and the benchmark has known label noise.
+- **How it would be done:** Fetch PrimeVul, run an open model over each function with the context prompt, save a mid-to-late layer's last-token vector, and train a logistic regression on the labelled split. Compare against the model's direct yes or no verdict on the same prompt. The static analysis and call-graph inputs would come from tools such as Semgrep and a call-graph extractor. A hired person would build the module threat model step, which is the least specified part.
+- **To fetch:** PrimeVul https://github.com/DLVulDet/PrimeVul (Benchmark dataset used for training and test.); Semgrep https://github.com/semgrep/semgrep (Free static analysis findings to feed the prompt.); llama.cpp https://github.com/ggml-org/llama.cpp (Runs a small open model locally, with embeddings output for probing.)
+- **Missing:** The authors' trained probe and threat-model generator are not in hand.
+- **Field Notes line:** Reva reads a language model's internal state instead of its answer to flag vulnerable code in a second, scoring 60 percent against an agent's 59.
+
+### H-0422 ZiChuanLan/agent-purge: One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode
+2026-10-27, github, https://github.com/ZiChuanLan/agent-purge. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** Each coding agent reads its system prompt from a different place, so the tool uses a per-agent entry point: a launch flag such as --system-prompt-file for claude and codex, a managed config block, a plugin hook, or a temporary HOME holding a replaced file. Three channels wrap this: a persistent install, a PATH shim that forwards bare commands, and an in-session slash command. The README says it measured injected system prompt sizes by capturing the request body with a local fake provider, for example claude at 6,379 tokens falling to 156. For claude it also patches the binary to remove a leftover identity sentence.
+- **Claim:** One persona file replaces or appends the system prompt across ten or so coding agents, reversibly; claude drops from 6,379 to 156 tokens.
+- **Testable:** yes. Does npx agent-purge ls with AGENT_PURGE_HOME inside the sandbox run on this Mac's Node and list harness detection without touching any real config (yes/no)? Queued as P-0236.
+- **Idea on its own:** needs-a-run. The per-harness entry points are plausible and the size claims are checkable from captured request bodies, but binary patching and shims are intrusive.
+- **How it would be done:** Install the package into a sandbox folder with AGENT_PURGE_HOME pointed inside it, and run only the ls command to see detection and channel availability. To check the size numbers, run a local fake provider that logs the request body and launch an agent against it with the persona flag. Compare the system field length with and without. Skip install, shim and any binary patch on the real machine. A reviewer would read the claude patch step by hand before trusting it.
+- **Stack already covers:** Claude Code
+- **To fetch:** agent-purge https://github.com/ZiChuanLan/agent-purge (The tool under test; npm package, Node 20 or later, no dependencies.)
+- **Field Notes line:** agent-purge swaps the system prompt of ten coding agents through each one's own launch flag or plugin hook, and says it measured the injected size from captured requests.
+
+### H-0420 comment-keyword indicator funnel
+2026-10-27, vault, https://www.instagram.com/reel/Dee_ogTKexd/
+
+- **Mechanism:** A reel makes a headline claim (a 100 percent win rate script, an account banned for winning) and tells viewers to comment a keyword. An auto-reply or DM tool watches the comments, sends the commenter a link, and the link leads to a paid indicator or broker referral. The comment count doubles as engagement, which pushes the reel to more people. Nothing in the funnel exposes trade-level evidence such as entry price, sample size or a statement from a broker.
+- **Claim:** A trading indicator or script wins every trade, so much that the broker banned the account.
+- **Testable:** no. The funnel sits behind Instagram comments and DMs, and running it needs an account; the indicator itself is not published. Needs: An Instagram account and the paid indicator, neither of which Proteus has or should buy..
+- **Idea on its own:** unsound. A 100 percent win rate with no entry price, sample size or drawdown is a claim with no evidence, and platforms and regulators treat such funnels as misleading promotion.
+- **How it would be done:** To understand it, record the funnel stages: reel hook, keyword comment, automated DM, landing page, paid indicator. Check the claim by asking what a verifiable record would need: timestamped signals, entry and exit prices, fees, and a count of trades. A person who wanted to audit one would request the signal history and test it forward on paper data. No script covers the judgement of whether the seller's record is real. Detection tends to come from platform reports, ad review and regulators looking at performance claims.
+- **Stack already covers:** freqtrade, Grinder paper desk
+- **Missing:** A published, timestamped signal history from the seller to test against.
+- **Field Notes line:** Comment-a-keyword reels sell a '100 percent win rate' indicator; the claim never shows entry prices or sample size, which is how such funnels get flagged as misleading.
 
 ### H-0419 andyhuo520/digital-human-koubo: AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing 
 2026-10-26, github, https://github.com/andyhuo520/digital-human-koubo
@@ -3498,8 +3562,11 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0418 | 2026-10-26 | Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr | intel | needs-a-run | yes | P-0228 |
-| H-0413 | 2026-10-26 | Dated US release calendar from primary sources, 2023 to 2026 | intel | sound | yes | P-0227 |
+| H-0427 | 2026-10-27 | business snapshot prompt as setup | intel | sound | no |  |
+| H-0424 | 2026-10-27 | win rate sold without entry price | intel | sound | yes | P-0237 |
+| H-0420 | 2026-10-27 | comment-keyword indicator funnel | intel | unsound | no |  |
+| H-0418 | 2026-10-26 | Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr | intel | needs-a-run | yes | P-0228 **blocked** |
+| H-0413 | 2026-10-26 | Dated US release calendar from primary sources, 2023 to 2026 | intel | sound | yes | P-0227 **works** |
 | H-0408 | 2026-10-26 | course-seller economy around AI creator models | intel | needs-a-run | no |  |
 | H-0404 | 2026-10-25 | bubble map wallet clustering as a rug detector | intel | needs-a-run | yes | P-0221 **blocked** |
 | H-0399 | 2026-10-25 | form-triggered personalised AI video | open | sound | no |  |
@@ -3587,6 +3654,8 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0254 | 2026-10-27 | [PrimeVul](https://github.com/DLVulDet/PrimeVul) | Benchmark dataset used for training and test. | H-0423 (Reva: Real-Time Vulnerability Detection through Co) | shelf |
+| T-0253 | 2026-10-27 | [agent-purge](https://github.com/ZiChuanLan/agent-purge) | The tool under test; npm package, Node 20 or later, no dependencies. | H-0422 (ZiChuanLan/agent-purge: One persona, many coding a) | shelf |
 | T-0252 | 2026-10-26 | [Renoise MCP](https://renoise.ai/mcp) | The hosted generation backend the repo calls; credits needed. | H-0419 (andyhuo520/digital-human-koubo: AI digital-human t) | shelf |
 | T-0251 | 2026-10-26 | [digital-human-koubo](https://github.com/andyhuo520/digital-human-koubo) | Persona file schema, segment splitter and the transcript-versus-script check to read. | H-0419 (andyhuo520/digital-human-koubo: AI digital-human t) | shelf |
 | T-0250 | 2026-10-26 | [edgartools](https://github.com/dgunning/edgartools) | Parses Form 4 XML into dataframes. | H-0418 (Insider cluster buys carry a small relative edge o) | shelf |
@@ -3844,6 +3913,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0428 | 2026-10-27 | github | [HenestrosaDev/audiotext: A desktop app to transcribe audio and video from files,](https://github.com/HenestrosaDev/audiotext) | Desktop transcription app wrapping WhisperX and MLX Whisper, which duplicates the local transcription already in the sta |
+| H-0426 | 2026-10-27 | arxiv | [Pretraining Knows What, Simulation Teaches How: Compositional Generalization in ](https://arxiv.org/abs/2610.35817) | Robot policy training recipe needing a 27B model, GRPO and hardware; nothing Proteus can use or run. |
+| H-0425 | 2026-10-27 | github | [huaxialucaicaizi/ai-startup-skills: 创业公司做 AI 产品的 7 步 Agent Skill 合集：验证 → BP → 政策](https://github.com/huaxialucaicaizi/ai-startup-skills) | A bundle of prompt skills for Chinese start-up admin with a router skill; no new mechanism and not testable. |
+| H-0421 | 2026-10-27 | hn | [Is my data used for model training?](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) | Vendor privacy policy page and generic news with no mechanism to test. |
 | H-0417 | 2026-10-26 | youtube | [Most cars are depreciating assets. Don't buy the wrong cars](https://www.youtube.com/watch?v=LMs9N6s7dhw) | A short claim about three 2006 cars losing value, with no method. |
 | H-0416 | 2026-10-26 | arxiv | [PHYRD: A Living Benchmark for Reproducing and Extending Theoretical Physics Rese](https://arxiv.org/abs/2610.32575) | A physics reasoning benchmark with no mechanism relevant to any desk. |
 | H-0415 | 2026-10-26 | github | [PaoloJN/recap: Recap AI for YouTube summaries, a searchable transcript and chat ](https://github.com/PaoloJN/recap) | A YouTube summary extension; the transcript fetch is already covered by the existing keyless pipeline. |

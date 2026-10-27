@@ -710,6 +710,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-25, harvested: 14 judged, 8 kept (H-0394 to H-0407), 4 queued as probes (P-0218, P-0219, P-0220, P-0221). Register: `field-notes/HARVEST.md`.
 - **2026-10-26 · vulture 2.16, Python dead-code finder, over 48 of my own scripts** (ran): under two seconds, 5 findings, 4 checked by hand and all real (unreachable return in probe.py, unused import in pitch/data.py, uncalled markets_for in exchange.py, unused rc2 in halt-check.py, harmless); blind to code reached only from dead paths. Works; monthly in the Smith slot. Ran-it W44, `experiments/2026-10-26-vulture/NOTE.md`.
 - 2026-10-26, harvested: 12 judged, 7 kept (H-0408 to H-0419), 2 queued as probes (P-0227, P-0228). Register: `field-notes/HARVEST.md`.
+- **2026-10-27 · Four YouTube IBS (internal bar strength) strategy videos** (watched): Quantified Strategies URPUON-P3zY and dlRP5wFkL7g, StatOasis ZzgJYCakEoM, WealthLab by3-HVSCcPs. Claims of 0.79% a trade and 12% a year are three to four times my +0.27% a trade (P-0091, next-open fills); one has no dates or costs, one is captionless; StatOasis the most honest (21% drawdown, flat years). Testable gap: close against next-open fills. Watched-it W44.
+- 2026-10-27, harvested: 9 judged, 5 kept (H-0420 to H-0428), 2 queued as probes (P-0236, P-0237). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

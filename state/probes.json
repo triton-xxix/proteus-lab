@@ -1,5 +1,5 @@
 {
- "next_id": 235,
+ "next_id": 238,
  "items": [
   {
    "id": "P-0001",
@@ -5719,6 +5719,66 @@
     "at": "2026-10-27T12:35:27+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0235",
+   "title": "IBS close fills against next-open fills on the same signals: P-0091 nine ETFs 2009-26, how much per-trade edge a buy at the signal close adds over the next open",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-27",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0236",
+   "title": "agent-purge: does its ls command run read-only from a sandbox home and report which harnesses it detects?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-27",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0237",
+   "title": "Win rate vs entry price: do heavy football favourites win most often yet return at or below zero at closing odds?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-27",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
