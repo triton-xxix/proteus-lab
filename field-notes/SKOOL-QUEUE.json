@@ -978,19 +978,23 @@
    "track": 10,
    "title": "What Is Skool? (Skool's admins room): Jenna's 343 posts (about 51k words)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/whatisskool-index.md",
     "field-notes/skool/whatisskool-posts-owner.md"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-27",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-27-S-50.md"
   },
   {
    "id": "S-51",
    "track": 10,
    "title": "Small sales rooms: Sellique (classroom, 2 videos, posts), cold-email-community and Enrich feeds",
    "model": "haiku",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/coldemailcomm-posts-members.md",
     "field-notes/skool/coldemailcomm-posts-owner.md",
@@ -1003,7 +1007,11 @@
     "field-notes/skool/transcripts/sellique-6-calls-in-6-weeks-challenge-about-the-challenge.txt",
     "field-notes/skool/transcripts/sellique-start-here-intro-my-journey-and-lessons-course-intro.txt"
    ],
-   "why": "Track 10, sales and outbound rooms pulled 19 Oct. Goal line: Triton's M1 lane (firms with outbound sales teams) and the outbound-email skill handed to Triton on 15 Oct; say what is new against that skill and the Sales calls framework."
+   "why": "Track 10, sales and outbound rooms pulled 19 Oct. Goal line: Triton's M1 lane (firms with outbound sales teams) and the outbound-email skill handed to Triton on 15 Oct; say what is new against that skill and the Sales calls framework.",
+   "assigned": "2026-10-27",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-27-S-51.md"
   },
   {
    "id": "S-52",
