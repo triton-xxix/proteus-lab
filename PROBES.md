@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 173 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,8 @@ Verdicts so far: 173 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
+| P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
+| P-0234 | LMR in P-0214's engine: add late move reductions (first 2 moves full depth; quiet, non-check moves after that reduced 1 ply at depth 3 or more; re-search on fail high) to the quiescence engine at depth 4 and rerun P-0214's 32 positions. CPW says LMR can bring the effective branching factor under 2: measure nodes and branching factor with and without, and move cost against Stockfish d14. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (220)
 

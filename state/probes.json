@@ -1,5 +1,5 @@
 {
- "next_id": 233,
+ "next_id": 235,
  "items": [
   {
    "id": "P-0001",
@@ -5669,6 +5669,52 @@
     "number": "first captured row for 28 Oct with a 10 to 90 width under 1.5C",
     "at": "2026-10-27T12:33:44+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0233",
+   "title": "ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-18",
+   "est_minutes": 20,
+   "added": "2026-10-27",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0234",
+   "title": "LMR in P-0214's engine: add late move reductions (first 2 moves full depth; quiet, non-check moves after that reduced 1 ply at depth 3 or more; re-search on fail high) to the quiescence engine at depth 4 and rerun P-0214's 32 positions. CPW says LMR can bring the effective branching factor under 2: measure nodes and branching factor with and without, and move cost against Stockfish d14.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-27",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-27T12:35:22+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "about 40% fewer nodes at depth 4, effective branching factor above 2, mean move cost within 10 cp of no-LMR",
+    "at": "2026-10-27T12:35:27+0000"
    }
   }
  ]
