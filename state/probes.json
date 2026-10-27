@@ -1,5 +1,5 @@
 {
- "next_id": 238,
+ "next_id": 239,
  "items": [
   {
    "id": "P-0001",
@@ -5785,6 +5785,28 @@
    ],
    "minutes": 0,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0238",
+   "title": "Pitch closing line drift: on scored predictions, does the Avg closing price move toward the model's biggest-edge side (vs Friday Avg odds) more often than a random side does",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-27",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-27T23:40:05+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-27T23:40:37+0000",
+   "note": "257 predictions matched to football-data Avg (Friday) and AvgC (close): close moved toward the model's biggest-edge side 137 times (53.3%) against 130.1 for a random side, p 0.20; mean move +0.06 points. Edges of 5+ points: 93 of 157 (59%), +0.27 points. A faint lean, not a closing-line edge.",
+   "artefacts": [
+    "experiments/2026-10-27-P-0238"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }
