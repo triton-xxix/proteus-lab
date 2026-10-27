@@ -812,3 +812,29 @@ utc,opponent,opp_rating,my_rating,verdict,detail
 2026-10-26T08:08:47Z,maia3-79m_1600,1695,3034,declined,nobot
 2026-10-26T08:08:48Z,mochi_bot,1694,3034,declined,generic
 2026-10-26T08:08:49Z,melsh_bot,1587,3034,accepted,
+2026-10-27T07:55:18Z,newchessengine-ai,2963,3034,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
+2026-10-27T07:55:18Z,resolutebot,2945,3034,declined,casual
+2026-10-27T07:55:18Z,patriciabot,2704,3034,declined,generic
+2026-10-27T07:55:19Z,leelaalien,2434,3034,declined,nobot
+2026-10-27T07:55:19Z,leelajester,2403,3034,declined,nobot
+2026-10-27T07:55:19Z,fathzer-jchess,2370,3034,declined,nobot
+2026-10-27T07:55:19Z,leelarogue,2330,3034,declined,generic
+2026-10-27T07:55:19Z,eubos,2307,3034,refused 400,"{""error"":""eubos played 100 games against other bots today, please wait until 2026-10-27T08:15:30.692Z to challenge them."
+2026-10-27T07:55:20Z,panic-fish,2206,3034,declined,nobot
+2026-10-27T07:55:20Z,catriever,2129,3034,declined,nobot
+2026-10-27T07:55:21Z,elmichess,2081,3034,declined,nobot
+2026-10-27T07:55:21Z,hummus-bot,2051,3034,declined,nobot
+2026-10-27T07:55:22Z,stockfishlowdepth,1986,3034,declined,casual
+2026-10-27T07:55:23Z,maia9_30n,1985,3034,declined,nobot
+2026-10-27T07:55:24Z,demolito_l5,1870,3034,declined,nobot
+2026-10-27T07:55:24Z,maia9_10n,1852,3034,declined,nobot
+2026-10-27T07:55:25Z,maia2200_10n,1820,3034,declined,nobot
+2026-10-27T07:55:26Z,littlepatricia,1809,3034,declined,generic
+2026-10-27T07:55:26Z,darkonweakbot,1802,3034,declined,generic
+2026-10-27T07:55:26Z,mochi_bot,1727,3034,refused 400,"{""error"":""mochi_bot played 100 games against other bots today, please wait until 2026-10-27T08:22:02.223Z to challenge t"
+2026-10-27T07:55:27Z,maia3-79m_1600,1658,3034,declined,nobot
+2026-10-27T07:55:27Z,schnecken_bot,1565,3034,refused 400,"{""error"":""schnecken_bot played 100 games against other bots today, please wait until 2026-10-27T07:59:14.386Z to challen"
+2026-10-27T07:55:27Z,c0kval,1549,3034,refused 400,"{""error"":""C0kval played 100 games against other bots today, please wait until 2026-10-27T07:59:14.386Z to challenge them"
+2026-10-27T07:55:28Z,maia3-79m_1400,1519,3034,declined,nobot
+2026-10-27T07:55:28Z,maia5,1474,3034,refused 400,"{""error"":""maia5 played 100 games against other bots today, please wait until 2026-10-27T07:57:57.949Z to challenge them."
+2026-10-27T07:55:29Z,alliethechessbot,1416,3034,refused 429,"{""error"":""Too many requests. Try again later.""}"
