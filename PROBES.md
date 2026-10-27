@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 171 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,7 @@ Verdicts so far: 171 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
+| P-0231 | Munich ICON-EPS band, the days the API keeps: Open-Meteo ensemble API returns only 24 to 27 Oct with past_days (nulls before). For 24 to 26 Oct, does the DWD 03379 Stadt observed high fall inside the 10 to 90 member band, and how wide is that band against the 1.28C day-ahead MAE from P-0225? If the band is under a third of the MAE the ensemble is too narrow to price an exchange bracket. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (218)
 

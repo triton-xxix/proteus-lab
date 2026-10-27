@@ -1,5 +1,5 @@
 {
- "next_id": 231,
+ "next_id": 232,
  "items": [
   {
    "id": "P-0001",
@@ -5612,6 +5612,32 @@
    "calls": 10,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0231",
+   "title": "Munich ICON-EPS band, the days the API keeps: Open-Meteo ensemble API returns only 24 to 27 Oct with past_days (nulls before). For 24 to 26 Oct, does the DWD 03379 Stadt observed high fall inside the 10 to 90 member band, and how wide is that band against the 1.28C day-ahead MAE from P-0225? If the band is under a third of the MAE the ensemble is too narrow to price an exchange bracket.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-27",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-27T12:32:44+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "band width about 1.0C, 1 of 3 Stadt highs inside the 10 to 90 band",
+    "at": "2026-10-27T12:32:47+0000"
+   }
   }
  ]
 }
