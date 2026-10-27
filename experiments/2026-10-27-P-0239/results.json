@@ -1,0 +1,166 @@
+{
+ "markets": {
+  "SPY": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.283,
+    "win_pct": 58.7,
+    "control_mean_pct": 0.239,
+    "p": 0.373
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 1.021,
+    "win_pct": 66.7,
+    "control_mean_pct": 0.211,
+    "p": 0.042
+   }
+  },
+  "QQQ": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.43,
+    "win_pct": 58.2,
+    "control_mean_pct": 0.324,
+    "p": 0.2595
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 1.268,
+    "win_pct": 75.0,
+    "control_mean_pct": 0.296,
+    "p": 0.0845
+   }
+  },
+  "DIA": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.225,
+    "win_pct": 59.2,
+    "control_mean_pct": 0.207,
+    "p": 0.4415
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 1.058,
+    "win_pct": 75.0,
+    "control_mean_pct": 0.116,
+    "p": 0.0115
+   }
+  },
+  "IWM": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.139,
+    "win_pct": 54.0,
+    "control_mean_pct": 0.222,
+    "p": 0.661
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 1.078,
+    "win_pct": 50.0,
+    "control_mean_pct": 0.213,
+    "p": 0.0865
+   }
+  },
+  "EFA": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.18,
+    "win_pct": 57.3,
+    "control_mean_pct": 0.145,
+    "p": 0.415
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 0.624,
+    "win_pct": 66.7,
+    "control_mean_pct": 0.198,
+    "p": 0.2095
+   }
+  },
+  "EEM": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.582,
+    "win_pct": 57.7,
+    "control_mean_pct": 0.135,
+    "p": 0.0085
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 1.001,
+    "win_pct": 75.0,
+    "control_mean_pct": 0.354,
+    "p": 0.2165
+   }
+  },
+  "EWU": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.222,
+    "win_pct": 56.3,
+    "control_mean_pct": 0.138,
+    "p": 0.3175
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 0.492,
+    "win_pct": 58.3,
+    "control_mean_pct": 0.196,
+    "p": 0.257
+   }
+  },
+  "EWJ": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.023,
+    "win_pct": 54.0,
+    "control_mean_pct": 0.142,
+    "p": 0.7885
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 1.423,
+    "win_pct": 75.0,
+    "control_mean_pct": 0.308,
+    "p": 0.048
+   }
+  },
+  "EWG": {
+   "2009-26": {
+    "n": 213,
+    "mean_pct": 0.184,
+    "win_pct": 54.5,
+    "control_mean_pct": 0.149,
+    "p": 0.435
+   },
+   "last_12m": {
+    "n": 12,
+    "mean_pct": 0.313,
+    "win_pct": 50.0,
+    "control_mean_pct": 0.038,
+    "p": 0.324
+   }
+  }
+ },
+ "pooled": {
+  "2009-26": {
+   "n": 1917,
+   "mean_pct": 0.252,
+   "net_mean_pct": 0.202,
+   "win_pct": 56.7,
+   "control_mean_pct": 0.189,
+   "p": 0.127
+  },
+  "last_12m": {
+   "n": 108,
+   "mean_pct": 0.92,
+   "net_mean_pct": 0.87,
+   "win_pct": 65.7,
+   "control_mean_pct": 0.215,
+   "p": 0.0005
+  }
+ }
+}
