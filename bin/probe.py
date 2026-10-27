@@ -87,7 +87,9 @@ FIT_STRETCH = 2.0
 # field-notes/REFILL-SOURCES.md, learn one thing, queue one build with `add --source refill`, then
 # ask `next` again. At most REFILL_MAX a night, only with REFILL_MIN_LEFT minutes left. On by default
 # since 7 Oct (the 6 Oct loop ran on a prompt without `--refill` and stopped); `--no-refill` turns it off.
-REFILL_MAX = 2
+# 3 from 27 Oct 2026: four nightly loops running (24 to 27 Oct) stopped on the cap of 2 with about
+# 50 minutes left, each refill build taking under 5; the 25-minute floor still guards the close.
+REFILL_MAX = 3
 REFILL_MIN_LEFT = 25
 REFILL_SOURCES = ROOT + "field-notes/REFILL-SOURCES.md"
 INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is found
