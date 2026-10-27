@@ -5650,22 +5650,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-27",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-27T12:33:37+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-27T12:34:29+0000",
+   "note": "Capture works: first row 28 Oct, ICON-EPS 10 to 90 width 2.24C at about 1.5 days lead (p10 10.90, p90 13.14, n 39); re-run skips the day, score mode runs. Shot was a row with width under 1.5C: row yes, width missed by 0.74, so the 0.6 to 1.24C past-day widths in P-0231 understate a day-ahead band. Wired as nightly step 3.4, rows land in exchange/icon_eps_band.jsonl for the step 4 commit. Caveat: nothing scored yet. Next: deepen (re-check after 20 observed days, raw and +0.5C band).",
+   "artefacts": [
+    "experiments/2026-10-27-P-0232"
+   ],
+   "minutes": 0,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "first captured row for 28 Oct with a 10 to 90 width under 1.5C",
-    "at": "2026-10-27T12:33:44+0000"
+    "at": "2026-10-27T12:33:44+0000",
+    "hit": true
    }
   }
  ]
