@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not Under Two</title>
+<meta name="description" content="Probe P-0234: late move reductions added to a pure-Python toy chess engine at depth 4, measured on 32 positions from my own Lichess games against the Chess Programming Wiki's 'under 2' branching factor. Drawn from the committed result.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5; --gold:#9a7a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --gold:#d9b85a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --gold:#d9b85a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-weight:600}
+td.up{color:var(--buoy)}
+td.chg{color:var(--gold);font-weight:700}
+.tw{overflow-x:auto}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe P-0234 · 27 Oct 2026 · verdict: works</div>
+<h1>Late move reductions: a fifth off, not under two</h1>
+<p>My toy chess engine is pure Python, searches four plies plus captures, and takes about five seconds a move. Late move reductions are the textbook way to search less: try the first couple of moves properly, then look at the quiet ones a ply shallower and only search them in full if they surprise you. The <a href="https://www.chessprogramming.org/Late_Move_Reductions">Chess Programming Wiki</a> says this can often bring the effective branching factor under 2. I added the textbook version and ran it on 32 positions from my own Lichess games.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>Branching factor, position by position</h2>
+<p class="note">Effective branching factor is nodes at depth 4 divided by nodes at depth 3, captures included: how many times bigger the tree gets for one more ply. Each row is one position; the line runs from the plain engine to the same engine with reductions. The shaded strip on the left is the wiki's "under 2".</p>
+<div class="chart"><svg id="ebf" role="img" aria-label="Effective branching factor per position, plain engine against the engine with late move reductions"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--ghost)"></i>plain engine</span>
+ <span><i class="sw" style="background:var(--tide)"></i>with reductions</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>reductions cost nodes</span>
+ <span><i class="sw" style="background:var(--tide-wash);border-radius:2px"></i>under 2</span>
+</div></div>
+
+<h2>Nodes saved, position by position</h2>
+<p class="note">Share of depth-4 nodes the reductions saved, largest first. Below zero means the re-searches cost more than the reductions saved. The dashed line is the saving on all positions' nodes pooled.</p>
+<div class="chart"><svg id="save" role="img" aria-label="Percent of nodes saved by late move reductions in each position"></svg></div>
+
+<h2>What it says</h2>
+<p id="shape"></p>
+<p>Why nowhere near 2: at depth 4 the rule only fires where three plies remain, which is one level of the tree, and the capture search underneath (never reduced) is most of the node count. The wiki's figure is for deep searches with good move ordering, killer moves and history tables, and this engine has none of them. The called shot, committed before the run, said about 40% fewer nodes; it got about half that.</p>
+<p>So the search is not what holds this engine back. <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-24-P-0214">P-0214</a> found the same from the other side: its mistakes are in the evaluation, and searching a little less carelessly does not change which moves it picks.</p>
+
+<h2>All 32 positions</h2>
+<div class="tw"><table id="tbl"><thead><tr><th>Position</th><th>Nodes plain</th><th>With LMR</th><th>Saved</th><th>EBF plain</th><th>With LMR</th><th>Move</th><th>Cost cp</th><th>Reduced</th><th>Re-searched</th></tr></thead><tbody></tbody></table></div>
+<p class="note">Cost is how many centipawns worse the engine's move is than Stockfish 19's at depth 14; Stockfish's own re-scoring noise is about 10 cp. A gold move is one the reductions changed. Positions link to the game on Lichess at that ply.</p>
+
+<h2>What this does not answer</h2>
+<p class="note">Depth 4 only: nothing at 5 or 6, where reductions fire on more levels and should save more. One fixed reduction of one ply, not the logarithmic formula strong engines use. No killer or history ordering and no principal variation search. <span id="games"></span></p>
+
+<h2>How</h2>
+<p class="note"><code>lmr.py</code> imports P-0214's quiescence engine unchanged and subclasses it: first two moves at full depth, then quiet moves (no capture, promotion or check, not in check) at remaining depth 3 or more searched one ply shallower on a null window, re-searched at full depth if they beat alpha. <code>data.json</code> here is the probe's <code>results.json</code>, unchanged, and every number on this page is computed from it in the browser. Sources: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-27-P-0234">the probe folder</a>. See also <a href="../">every probe</a> and <a href="../shots/">called shots</a>. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), S=d.summary, B=S.base, L=S.lmr, R=d.rows, n=R.length;
+  const fmt=v=>v.toLocaleString('en-GB'), pc1=v=>v.toFixed(1)+'%';
+  R.forEach(r=>{ r.save=100*(1-r.lmr.nodes_d4/r.base.nodes_d4); r.tag=r.game+' · '+r.ply; });
+  const stat=(v,l,c)=>`<div class="stat ${c||''}"><b>${v}</b><span>${l}</span></div>`;
+  const under2=R.filter(r=>r.lmr.ebf<2).length;
+  $('#stats').innerHTML=stat(pc1(S.node_saving_pct),'fewer nodes at depth 4')
+    +stat(B.ebf_pooled.toFixed(2)+' → '+L.ebf_pooled.toFixed(2),'branching factor, pooled')
+    +stat(under2+' of '+n,'positions under 2','hot')
+    +stat(S.same_move+' of '+n,'same move chosen');
+
+  const up=R.filter(r=>r.save<0), best=R.reduce((a,b)=>a.save>b.save?a:b), minE=Math.min(...R.map(r=>r.lmr.ebf));
+  $('#games').textContent=`${n} positions from ${new Set(R.map(r=>r.game)).size} games, all mine, so the openings are narrow. The plain engine took ${B.mean_secs_d4} s a position at depth 4, the reduced one ${L.mean_secs_d4} s.`;
+  const chg=R.filter(r=>r.base.move!==r.lmr.move);
+  const sumB=R.reduce((s,r)=>s+r.base.nodes_d4,0), sumL=R.reduce((s,r)=>s+r.lmr.nodes_d4,0);
+  $('#shape').textContent=`Over the ${n} positions the plain engine searched ${fmt(sumB)} nodes and the reduced one ${fmt(sumL)}. The pooled branching factor fell from ${B.ebf_pooled} to ${L.ebf_pooled}; the lowest single position reached ${minE}, still above 2. The saving was uneven: ${pc1(best.save)} at best (${best.tag}), and in ${up.length} positions the reductions cost nodes. Every reduction that beats alpha is searched again at full depth, which is where those come from: across all positions ${S.lmr_researched} of the ${fmt(S.lmr_reduced)} reduced moves (${Math.round(100*S.lmr_researched/S.lmr_reduced)}%) were. The engine picked a different move in ${chg.length} positions; mean cost against Stockfish went from ${B.mean_cost_cp} to ${L.mean_cost_cp} cp, inside the noise, and blunders over 200 cp stayed at ${B.blunders_over_200cp} v ${L.blunders_over_200cp}.`;
+
+  $('#tbl tbody').innerHTML=R.slice().sort((a,b)=>b.save-a.save).map(r=>{
+    const c=r.base.move!==r.lmr.move;
+    return `<tr><td><a href="https://lichess.org/${r.game}#${r.ply}">${r.tag}</a></td><td>${fmt(r.base.nodes_d4)}</td><td>${fmt(r.lmr.nodes_d4)}</td><td class="${r.save<0?'up':''}">${pc1(r.save)}</td><td>${r.base.ebf.toFixed(2)}</td><td>${r.lmr.ebf.toFixed(2)}</td><td class="${c?'chg':''}">${c?r.base.move+' → '+r.lmr.move:r.lmr.move}</td><td>${c?r.base.cost_cp+' → '+r.lmr.cost_cp:r.lmr.cost_cp}</td><td>${r.lmr.reduced}</td><td>${r.lmr.researched}</td></tr>`;}).join('');
+
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    // branching factor dumbbells
+    {
+      const rows=R.slice().sort((a,b)=>b.base.ebf-a.base.ebf);
+      const max=Math.ceil(Math.max(...R.map(r=>r.base.ebf))/2)*2;
+      const Lm=narrow?6:120,Rm=14,Tp=6,rh=narrow?30:17,Bm=26,H=Tp+n*rh+Bm;
+      const X=v=>Lm+v/max*(W-Lm-Rm);
+      let s=`<rect x="${X(0)}" y="${Tp}" width="${X(2)-X(0)}" height="${n*rh}" fill="var(--tide-wash)"/>`;
+      for(let v=0;v<=max;v+=2) s+=`<line x1="${X(v)}" x2="${X(v)}" y1="${Tp}" y2="${H-Bm}" stroke="var(--rule)"/><text x="${X(v)}" y="${H-8}" text-anchor="middle">${v}</text>`;
+      rows.forEach((r,i)=>{
+        const y=Tp+i*rh+(narrow?rh-8:rh/2), col=r.save<0?'var(--buoy)':'var(--tide)';
+        if(narrow) s+=`<text class="k" x="${Lm}" y="${y-9}">${r.tag}</text>`;
+        else s+=`<text class="k" x="${Lm-10}" y="${y+4}" text-anchor="end">${r.tag}</text>`;
+        s+=`<line x1="${X(r.base.ebf)}" x2="${X(r.lmr.ebf)}" y1="${y}" y2="${y}" stroke="${col}" stroke-width="2.5" opacity=".5"/>`;
+        s+=`<circle cx="${X(r.base.ebf)}" cy="${y}" r="4.5" fill="var(--ghost)"><title>${r.tag} plain ${r.base.ebf}</title></circle>`;
+        s+=`<circle cx="${X(r.lmr.ebf)}" cy="${y}" r="4.5" fill="${col}"><title>${r.tag} with LMR ${r.lmr.ebf}</title></circle>`;
+      });
+      s+=`<text x="${X(1)}" y="${Tp+12}" text-anchor="middle" class="k">under 2</text>`;
+      const v=$('#ebf'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // savings bars
+    {
+      const rows=R.slice().sort((a,b)=>b.save-a.save);
+      const lo=Math.min(0,Math.floor(Math.min(...R.map(r=>r.save))/10)*10), hi=Math.ceil(Math.max(...R.map(r=>r.save))/10)*10;
+      const Lm=40,Rm=10,Tp=10,H=narrow?200:240,Bm=10;
+      const bw=(W-Lm-Rm)/n, Y=v=>Tp+(hi-v)/(hi-lo)*(H-Tp-Bm);
+      let s='';
+      for(let v=lo;v<=hi;v+=10) s+=`<line x1="${Lm}" x2="${W-Rm}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--rule)"/><text x="${Lm-6}" y="${Y(v)+4}" text-anchor="end">${v}%</text>`;
+      rows.forEach((r,i)=>{
+        const y0=Y(0), y1=Y(r.save), x=Lm+i*bw+bw*.15;
+        s+=`<rect x="${x}" y="${Math.min(y0,y1)}" width="${bw*.7}" height="${Math.max(Math.abs(y1-y0),1)}" fill="${r.save<0?'var(--buoy)':'var(--tide)'}"><title>${r.tag}: ${pc1(r.save)}</title></rect>`;
+      });
+      s+=`<line x1="${Lm}" x2="${W-Rm}" y1="${Y(S.node_saving_pct)}" y2="${Y(S.node_saving_pct)}" stroke="var(--gold)" stroke-width="2" stroke-dasharray="5 4"/>`;
+      s+=`<text x="${W-Rm}" y="${Y(S.node_saving_pct)-6}" text-anchor="end" class="k">all positions together ${pc1(S.node_saving_pct)}</text>`;
+      const v=$('#save'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
+});
+</script>
+</body>
+</html>
