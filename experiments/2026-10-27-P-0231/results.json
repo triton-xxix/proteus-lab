@@ -1,0 +1,65 @@
+{
+ "summary": {
+  "days_with_members": 4,
+  "days_scored": 3,
+  "inside_10_90": 0,
+  "inside_min_max": 1,
+  "mean_width_scored": 0.88,
+  "mean_width_all": 0.84,
+  "mae_p0225": 1.28
+ },
+ "rows": [
+  {
+   "day": "2026-10-24",
+   "n_members": 39,
+   "control": 8.2,
+   "p10": 8.5,
+   "p90": 9.74,
+   "width": 1.24,
+   "min": 8.0,
+   "max": 10.2,
+   "obs_stadt": 10.6,
+   "inside": false,
+   "inside_min_max": false
+  },
+  {
+   "day": "2026-10-25",
+   "n_members": 39,
+   "control": 12.7,
+   "p10": 12.5,
+   "p90": 13.1,
+   "width": 0.6,
+   "min": 12.2,
+   "max": 13.5,
+   "obs_stadt": 13.9,
+   "inside": false,
+   "inside_min_max": false
+  },
+  {
+   "day": "2026-10-26",
+   "n_members": 39,
+   "control": 10.3,
+   "p10": 10.9,
+   "p90": 11.7,
+   "width": 0.8,
+   "min": 10.5,
+   "max": 12.0,
+   "obs_stadt": 11.9,
+   "inside": false,
+   "inside_min_max": true
+  },
+  {
+   "day": "2026-10-27",
+   "n_members": 39,
+   "control": 16.2,
+   "p10": 15.78,
+   "p90": 16.5,
+   "width": 0.72,
+   "min": 15.1,
+   "max": 17.1,
+   "obs_stadt": null,
+   "inside": null,
+   "inside_min_max": null
+  }
+ ]
+}

@@ -5621,22 +5621,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-27",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-27T12:32:44+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-27T12:33:27+0000",
+   "note": "ICON-EPS 10 to 90 band, Munich daily high, 24 to 26 Oct: 0 of 3 DWD Stadt highs inside, all three above it; mean width 0.88C, 0.69 of the 1.28C P-0225 MAE. Shot was width about 1.0 and 1 of 3 inside: width close, coverage one worse (shot after looking at the band widths, so a coin). The ensemble API keeps only about 3 past days, so no back-test is possible; the band is too narrow and as cold as the control run. Caveat: n 3, short lead on past days. Next: deepen (capture the day-ahead band nightly and score 20 days).",
+   "artefacts": [
+    "experiments/2026-10-27-P-0231"
+   ],
+   "minutes": 0,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "band width about 1.0C, 1 of 3 Stadt highs inside the 10 to 90 band",
-    "at": "2026-10-27T12:32:47+0000"
+    "at": "2026-10-27T12:32:47+0000",
+    "hit": true
    }
   }
  ]

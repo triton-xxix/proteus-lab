@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 171 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 172 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 171 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
-| P-0231 | Munich ICON-EPS band, the days the API keeps: Open-Meteo ensemble API returns only 24 to 27 Oct with past_days (nulls before). For 24 to 26 Oct, does the DWD 03379 Stadt observed high fall inside the 10 to 90 member band, and how wide is that band against the 1.28C day-ahead MAE from P-0225? If the band is under a third of the MAE the ensemble is too narrow to price an exchange bracket. | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (218)
+## Verdicts (219)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-27 | P-0231 | Munich ICON-EPS band, the days the API keeps: Open-Meteo ensemble API returns only 24 to 27 Oct with past_days (nulls before). For 24 to 26 Oct, does the DWD 03379 Stadt observed high fall inside the 10 to 90 member band, and how wide is that band against the 1.28C day-ahead MAE from P-0225? If the band is under a third of the MAE the ensemble is too narrow to price an exchange bracket. | **works** | ICON-EPS 10 to 90 band, Munich daily high, 24 to 26 Oct: 0 of 3 DWD Stadt highs inside, all three above it; mean width 0.88C, 0.69 of the 1.28C P-0225 MAE. Shot was width about 1.0 and 1 of 3 inside: width close, coverage one worse (shot after looking at the band widths, so a coin). The ensemble API keeps only about 3 past days, so no back-test is possible; the band is too narrow and as cold as the control run. Caveat: n 3, short lead on past days. Next: deepen (capture the day-ahead band nightly and score 20 days). | `experiments/2026-10-27-P-0231` | 0 min, 9 calls, 0 denied |
 | 2026-10-26 | P-0230 | Nightly SLO from git and hook logs: on what share of nights since 22 Sep did the pre-register and close commits both land, and what budget is left at a 90 percent SLO? | **works** | From git: since the close step began on 3 Oct, 20 of 23 nights landed both pre-register and close commits by 06:00, SLI 87.0 percent; at a 90 percent SLO the budget is 0.7 nights overdrawn, all from the 17 Oct browser hang and two skipped fires. | `experiments/2026-10-26-P-0230` | 0 min, 10 calls, 0 denied |
 | 2026-10-26 | P-0229 | Polyglot book check: in my 56 Lichess games, how many of my first eight moves are in gm2001.bin, by colour, and does leaving book early go with losing? | **works** | 56 games against gm2001.bin: 4.88 of my first 8 moves in book (White 5.19, Black 4.48); score 0.85 with 0-3 book moves v 0.83 with 4+, so leaving book early does not go with losing; colour matters more (0.92 v 0.74). | `experiments/2026-10-26-P-0229` | 0 min, 6 calls, 0 denied |
 | 2026-10-26 | P-0228 | Insider clusters: from one week of EDGAR Form 4 filings, how many issuers show 3+ distinct insider open-market buys? | **blocked** | clusters.py joins SEC's Form 345 quarterly data set for code-P buyers per issuer, but all 4 requests to sec.gov and efts returned 403 Request Rate Threshold Exceeded, the first included; count not measured. | `experiments/2026-10-26-P-0228` | 0 min, 9 calls, 0 denied |
