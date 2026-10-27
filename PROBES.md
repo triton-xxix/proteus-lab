@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 174 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
+Verdicts so far: 175 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,12 +24,12 @@ Verdicts so far: 174 works, 5 broken, 29 blocked, 13 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0235 | IBS close fills against next-open fills on the same signals: P-0091 nine ETFs 2009-26, how much per-trade edge a buy at the signal close adds over the next open | desk | none |  | 0 | 20 min |
 | P-0236 | agent-purge: does its ls command run read-only from a sandbox home and report which harnesses it detects? | harvest | none |  | 0 | 15 min |
-| P-0237 | Win rate vs entry price: do heavy football favourites win most often yet return at or below zero at closing odds? | vault | none |  | 0 | 20 min |
 
-## Verdicts (221)
+## Verdicts (222)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-27 | P-0237 | Win rate vs entry price: do heavy football favourites win most often yet return at or below zero at closing odds? | **works** | Yes, and longshots carry the loss: 13,419 matches (11,025 with Pinnacle close), nine leagues, five seasons; prices under 1.5 win 72 to 84% and return +0.3 to +0.9% at Pinnacle close (inside one se of zero), 5 to 10 returns -13.6%, 10+ -28.6%; favourite every match wins 54%, -0.5% Pinnacle, -2.2% average close. Favourite-longshot bias, no edge after error. | `experiments/2026-10-27-P-0237` | 0 min, 7 calls, 0 denied |
 | 2026-10-27 | P-0234 | LMR in P-0214's engine: add late move reductions (first 2 moves full depth; quiet, non-check moves after that reduced 1 ply at depth 3 or more; re-search on fail high) to the quiescence engine at depth 4 and rerun P-0214's 32 positions. CPW says LMR can bring the effective branching factor under 2: measure nodes and branching factor with and without, and move cost against Stockfish d14. | **works** | LMR in the P-0214 engine at depth 4, 32 positions: 22.5% fewer nodes (38,362 to 29,749), branching factor 7.54 to 5.85, move cost 61.7 to 56.5 cp (inside the 10 cp re-score noise), same move 30 of 32, blunders 3 v 3. Shot was about 40% fewer nodes, factor above 2, cost within 10 cp: nodes missed by half, the other two hit. CPW says under 2; here the rule fires on one level only and quiescence nodes dominate, with no killer or history ordering. Next: close (the evaluation, not the search, is this engine limit, as P-0214 found). | `experiments/2026-10-27-P-0234` | 6 min, 9 calls, 0 denied |
 | 2026-10-27 | P-0232 | ICON-EPS day-ahead band capture: write experiments/2026-10-27-P-0231/capture.py that appends tomorrow's 39-member Munich high (p10, p90, control) to a jsonl once a day, wire it as a standing nightly step, and score coverage against DWD Stadt after 20 nights (raw band and band shifted +0.5C). Follows P-0231: 0 of 3 inside, width 0.88C. | **works** | Capture works: first row 28 Oct, ICON-EPS 10 to 90 width 2.24C at about 1.5 days lead (p10 10.90, p90 13.14, n 39); re-run skips the day, score mode runs. Shot was a row with width under 1.5C: row yes, width missed by 0.74, so the 0.6 to 1.24C past-day widths in P-0231 understate a day-ahead band. Wired as nightly step 3.4, rows land in exchange/icon_eps_band.jsonl for the step 4 commit. Caveat: nothing scored yet. Next: deepen (re-check after 20 observed days, raw and +0.5C band). | `experiments/2026-10-27-P-0232` | 0 min, 12 calls, 0 denied |
 | 2026-10-27 | P-0231 | Munich ICON-EPS band, the days the API keeps: Open-Meteo ensemble API returns only 24 to 27 Oct with past_days (nulls before). For 24 to 26 Oct, does the DWD 03379 Stadt observed high fall inside the 10 to 90 member band, and how wide is that band against the 1.28C day-ahead MAE from P-0225? If the band is under a third of the MAE the ensemble is too narrow to price an exchange bracket. | **works** | ICON-EPS 10 to 90 band, Munich daily high, 24 to 26 Oct: 0 of 3 DWD Stadt highs inside, all three above it; mean width 0.88C, 0.69 of the 1.28C P-0225 MAE. Shot was width about 1.0 and 1 of 3 inside: width close, coverage one worse (shot after looking at the band widths, so a coin). The ensemble API keeps only about 3 past days, so no back-test is possible; the band is too narrow and as cold as the control run. Caveat: n 3, short lead on past days. Next: deepen (capture the day-ahead band nightly and score 20 days). | `experiments/2026-10-27-P-0231` | 0 min, 9 calls, 0 denied |

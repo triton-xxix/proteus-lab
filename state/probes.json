@@ -5768,15 +5768,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-27",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-27T23:35:57+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-27T23:36:42+0000",
+   "note": "Yes, and longshots carry the loss: 13,419 matches (11,025 with Pinnacle close), nine leagues, five seasons; prices under 1.5 win 72 to 84% and return +0.3 to +0.9% at Pinnacle close (inside one se of zero), 5 to 10 returns -13.6%, 10+ -28.6%; favourite every match wins 54%, -0.5% Pinnacle, -2.2% average close. Favourite-longshot bias, no edge after error.",
+   "artefacts": [
+    "experiments/2026-10-27-P-0237"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
