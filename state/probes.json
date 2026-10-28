@@ -1,5 +1,5 @@
 {
- "next_id": 244,
+ "next_id": 245,
  "items": [
   {
    "id": "P-0001",
@@ -5955,6 +5955,32 @@
     "number": "high-VIX tercile mean trade at least 2x the low tercile, and only the high tercile beats its same-tercile random control at p under 0.05",
     "at": "2026-10-28T12:37:01+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0244",
+   "title": "Deepen P-0243: RSI(5) book with a skip rule when the signal-day VIX close is under 15, cut points set walk-forward (expanding-window tercile from data before each year only), 2009 on, 9 ETFs, next-open fills with 0.05 percent a side: trades lost, mean per trade and total growth v the unfiltered book, random-entry control on the kept trades",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-28",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-28T12:38:56+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "not-worth-it",
+    "p": 0.6,
+    "number": "skip drops about 20 percent of trades, lifts net mean per trade by about 0.1 points, and lowers total growth v the unfiltered book",
+    "at": "2026-10-28T12:39:03+0000"
    }
   }
  ]
