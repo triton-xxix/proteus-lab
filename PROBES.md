@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 180 works, 5 broken, 30 blocked, 14 not worth it. Killed: 4.
+Verdicts so far: 181 works, 5 broken, 30 blocked, 14 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,13 +21,13 @@ Verdicts so far: 180 works, 5 broken, 30 blocked, 14 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0242 | Murphy decomposition of my called shots: split the Brier from probe.py shots into REL, RES and UNC (BS = REL - RES + UNC, exact only when grouped by unique p, so group by the p values I actually used and report the binning residual), and answer: is my miss mostly calibration (REL) or failing to tell probes apart (low RES) | refill | none |  | 1 (in progress) | 25 min |
 | P-0243 | Systems book RSI(5) backtest 2009-26 split by VIX close on the entry signal day (FRED VIXCLS keyless, sandbox/fred/VIXCLS.csv, 9303 days from 1990; full-history terciles 15.2 and 20.7): mean trade return per tercile against a random-entry control drawn from days in the same tercile, permutation p per tercile | refill | none |  | 0 | 25 min |
 
-## Verdicts (229)
+## Verdicts (230)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-28 | P-0242 | Murphy decomposition of my called shots: split the Brier from probe.py shots into REL, RES and UNC (BS = REL - RES + UNC, exact only when grouped by unique p, so group by the p values I actually used and report the binning residual), and answer: is my miss mostly calibration (REL) or failing to tell probes apart (low RES) | **works** | Measured: 75 scored shots, Brier 0.163 = REL 0.082 - RES 0.014 + UNC 0.095 (exact grouping by p, residual 0). Shot numbers held (RES under 0.03 and under REL) but its reading was backwards: the miss is calibration, not discrimination. Hit rate 0.89 at mean stated p 0.63; works calls hit 63 of 66; always-base-rate would score 0.095 (my BSS -0.71). Five bins hide RES (0.003). Next: promote (the probe-to-verdict shot line: a works call starts at 0.85 to 0.9, for the Smith to adopt). | `experiments/2026-10-28-P-0242` | 0 min, 9 calls, 0 denied |
 | 2026-10-28 | P-0241 | DWD Munich Stadt (03379) 10-minute air temperature, keyless zip 10minutenwerte_TU_03379_akt.zip: over the last 60 days, by what local hour is the daily high already reached on 90 percent of days (the latest hour an exchange high-temperature call still has something to forecast) | **works** | Measured: 90th percentile of the hour of the daily high at DWD 03379 Muenchen-Stadt, 60 days 29 Aug to 27 Oct, is 16:20 local (median 15:10); shot said 16:00, 20 min early. Share with the high in: 15:00 47%, 16:00 75%, 17:00 98%. 3 of 60 days peaked at 00:00 (front nights). Caveat: autumn only, one station, 10-min instantaneous values, clock change 25 Oct. Next: close (the number goes to the exchange weather call timing). | `experiments/2026-10-28-P-0241` | 0 min, 7 calls, 0 denied |
 | 2026-10-28 | P-0240 | Our own coin, observed: seven called shots S1-S7 on the first hour of a no-creator-buy pump.fun launch Luke si (DUE.md D-014): experiments/2026-10-20-own-coin/PLAN.md, scored by its watch.py | **blocked** | Measured: 0 launches; no mint address anywhere in experiments/2026-10-20-own-coin, PLAN.md still lists it as Luke to send. Shot said 0 launches, hit. D-014 backstop 2026-10-27 has passed, so per PLAN.md the row closes not launched and the backlog entry goes back to when Luke wants it. Nothing asked of him. (verdict has no --luke flag, though trials.md and the skill name one). | `experiments/2026-10-20-own-coin` | 0 min, 7 calls, 0 denied |
 | 2026-10-28 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | **works** | Measured: 34 of 34 terms scored keyless (explore page 429, JSON API 200 on all 34); shot said 0 of 34, missed. 20 of 34 rising (last 14d above 2x earlier mean); suspicious slice 4 of 8 v rest 16 of 26, no separation; 2 no data; trending RSS 0 hits. Caveat: per-series 0-100 scaling, no anchor term, generic names (math, anatomy) flat. Next: close. | `experiments/2026-10-28-P-0150` | 2 min, 11 calls, 0 denied |
