@@ -1,5 +1,5 @@
 {
- "next_id": 248,
+ "next_id": 249,
  "items": [
   {
    "id": "P-0001",
@@ -6037,6 +6037,28 @@
    "needs": "",
    "after": "",
    "est_minutes": 25,
+   "added": "2026-10-28",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-28T23:37:32+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-28T23:38:03+0000",
+   "note": "Measured: DVSA class 3-4, 2025-26: of failure defects lights 24.9%, suspension 20.5%, brakes 15.2%, tyres 12.9%; initial fail rate 27.5%. Only suspension is within 3 points of the video; lights and brakes run about 5 higher, one in three is nearer one in four. 2.39 defects per failed test.",
+   "artefacts": [
+    "experiments/2026-10-28-P-0247"
+   ],
+   "minutes": 0,
+   "calls": 12,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0248",
+   "title": "Exchange book: record every Munich daily-high market's winning contract nightly before Smarkets drops it, so the favourite-bias test (P-0245) can reach 30 markets",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
    "added": "2026-10-28",
    "status": "open",
    "attempts": 0,
