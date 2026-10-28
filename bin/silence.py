@@ -29,7 +29,9 @@ DESKS = [
     ("exchange-book", "exchange/BOOK.csv", 4, "up to two blind calls a night"),
     ("systems-book", "systems/SIGNALS.csv", 5, "a row per close"),
     ("lichess", "games/lichess/GAMES.csv", 2, "morning job, daily"),
-    ("nolan", "sites/nolan/films", 4, "one film a night until done"),
+    # None since 28 Oct (F-0060): nolan.py prints STOP from 23 Oct, every film researched or parked.
+    # Deep pages come from the Workshop, not this folder. Restore 4 if a new film is added.
+    ("nolan", "sites/nolan/films", None, "all films done or parked, nolan.py STOP since 23 Oct"),
     ("intel", "intel", 10, "one write-up a fortnight at least"),
     ("probes", "state/probes.json", 2, "nightly loop"),
     ("field-notes-draft", "field-notes/drafts", 3, "one item a night"),
