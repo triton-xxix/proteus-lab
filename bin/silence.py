@@ -37,6 +37,10 @@ DESKS = [
     ("field-notes-draft", "field-notes/drafts", 3, "one item a night"),
     ("harvest", "state/harvest", 2, "nightly harvest"),
 ]
+# A gated desk gains rows only when a filter passes something; while the desk it waits on is ok, its
+# quiet is the gate working, not a fault (F-0058, F-0064 28 Oct). The Inspector still reads the
+# gate-passer count from the nightly line; this only stops the tool re-adding F-0063 every few days.
+GATED = {"grinder-ledger": "grinder-snapshot"}
 
 
 def adding_commits(path):
@@ -58,6 +62,7 @@ def main():
     add = "--findings" in sys.argv
     now = time.time()
     silent = []
+    states = {}
     # days since the last adding commit, and how many adding commits in the last 7 days: a desk that
     # adds one row every four days passes the first and shows up in the second
     print("%-18s %-34s %6s %4s %4s  %s" % ("desk", "path", "days", "max", "7d", "state"))
@@ -70,6 +75,9 @@ def main():
             state = "done: " + why
         else:
             state = "never" if t is None else ("SILENT" if days > limit else "ok")
+        if state == "SILENT" and states.get(GATED.get(desk)) == "ok":
+            state = "quiet: gate, %s ok" % GATED[desk]
+        states[desk] = state
         print("%-18s %-34s %6s %4s %4d  %s" % (desk, path, "-" if days is None else "%.1f" % days,
                                               "-" if limit is None else limit, week, state))
         if state in ("never", "SILENT"):
