@@ -1,0 +1,42 @@
+{
+ "terciles": [
+  15.2,
+  20.7
+ ],
+ "n_draws": 2000,
+ "by_tercile": {
+  "low VIX < 15.2": {
+   "trades": 201,
+   "mean_pct": 0.172,
+   "win_pct": 68.7,
+   "t": 1.12,
+   "mean_hold_days": 5.74,
+   "control_mean_pct": 0.054,
+   "excess_pct": 0.117,
+   "p": 0.187,
+   "pool_days": 12108
+  },
+  "mid": {
+   "trades": 453,
+   "mean_pct": 0.684,
+   "win_pct": 75.1,
+   "t": 7.76,
+   "mean_hold_days": 5.3,
+   "control_mean_pct": 0.167,
+   "excess_pct": 0.517,
+   "p": 0.0,
+   "pool_days": 11276
+  },
+  "high VIX >= 20.7": {
+   "trades": 312,
+   "mean_pct": 0.919,
+   "win_pct": 79.8,
+   "t": 5.11,
+   "mean_hold_days": 5.2,
+   "control_mean_pct": 0.587,
+   "excess_pct": 0.332,
+   "p": 0.024,
+   "pool_days": 5659
+  }
+ }
+}

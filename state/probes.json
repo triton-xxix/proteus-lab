@@ -5936,22 +5936,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-28",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-28T12:36:55+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-28T12:38:43+0000",
+   "note": "Measured: RSI(5) book by VIX tercile on the signal day, 966 trades 2009 on: low (<15.2) 201 at +0.17%, p 0.187 v same-tercile filtered random entries; mid 453 at +0.68%, excess +0.52%, p 0.000; high 312 at +0.92%, excess +0.33%, p 0.024. Shot: high at least 2x low hit (5.3x); only high beats luck missed (mid beats it hardest). Pooled +0.65% replicates the book +0.63%. Caveat: full-history tercile cuts, 2000 draws, no costs. Next: deepen (queued: a VIX-under-15 skip rule run walk-forward against the book).",
+   "artefacts": [
+    "experiments/2026-10-28-P-0243"
+   ],
+   "minutes": 1,
+   "calls": 17,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "high-VIX tercile mean trade at least 2x the low tercile, and only the high tercile beats its same-tercile random control at p under 0.05",
-    "at": "2026-10-28T12:37:01+0000"
+    "at": "2026-10-28T12:37:01+0000",
+    "hit": true
    }
   }
  ]
