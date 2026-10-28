@@ -5965,22 +5965,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-28",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-28T12:38:56+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-10-28T12:39:43+0000",
+   "note": "Measured: walk-forward skip of RSI(5) trades with signal-day VIX under the prior-years lower tercile (cuts 14.7 to 16.1) drops 231 of 966 trades (23.1%), lifts net mean +0.554% to +0.649%, and lowers sleeve growth 1.80x to 1.70x at 0.05% a side. Shot said about 20%, about +0.1 points, lower growth: hit. Skipped trades are weak but positive net, so the skip costs money; the book stays as registered.",
+   "artefacts": [
+    "experiments/2026-10-28-P-0244"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "not-worth-it",
     "p": 0.6,
     "number": "skip drops about 20 percent of trades, lifts net mean per trade by about 0.1 points, and lowers total growth v the unfiltered book",
-    "at": "2026-10-28T12:39:03+0000"
+    "at": "2026-10-28T12:39:03+0000",
+    "hit": true
    }
   }
  ]
