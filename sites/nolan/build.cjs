@@ -14,6 +14,7 @@ const { glyph } = require('./lib/structure.cjs');
 const { renderThemes } = require('./lib/themes.cjs');
 const { renderMemento } = require('./lib/memento.cjs');
 const { renderInception } = require('./lib/inception.cjs');
+const { renderDunkirk } = require('./lib/dunkirk.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -136,6 +137,13 @@ function build() {
     copy(path.join(ROOT, 'src', 'inception.css'), path.join(OUT, 'shared', 'inception.css'));
     write(OUT, 'inception/index.html', renderInception('../'));
     copy(incClocks, path.join(OUT, 'data', 'inception-clocks.json'));
+  }
+  // dunkirk deep page, once its strands research exists
+  const dkStrands = path.join(ROOT, 'dunkirk', 'research', 'strands.json');
+  if (fs.existsSync(dkStrands)) {
+    copy(path.join(ROOT, 'src', 'dunkirk.css'), path.join(OUT, 'shared', 'dunkirk.css'));
+    write(OUT, 'dunkirk/index.html', renderDunkirk('../'));
+    copy(dkStrands, path.join(OUT, 'data', 'dunkirk-strands.json'));
   }
   copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
   write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));
