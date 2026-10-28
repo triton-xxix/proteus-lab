@@ -1,5 +1,5 @@
 {
- "next_id": 250,
+ "next_id": 251,
  "items": [
   {
    "id": "P-0001",
@@ -6093,6 +6093,28 @@
    ],
    "minutes": 0,
    "calls": 10,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0250",
+   "title": "Trends anchor rerun of P-0150: each of the 34 radar terms paired with one fixed anchor term per request; how many of the 20 rising terms reach 1% of the anchor's volume",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-28",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-28T23:40:00+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-28T23:41:30+0000",
+   "note": "Measured: 34 of 34 answered 200 paired with the anchor spreadsheet. Of P-0150 20 self-scaled rising terms, 17 read zero against the anchor over the last 14 days; only 3 clear 1% (photocraft 0.23, bloodborne pc 0.18, solidcraft 0.11). The 20 of 34 was rises on empty series; Trends as a filter needs an anchor.",
+   "artefacts": [
+    "experiments/2026-10-28-P-0250"
+   ],
+   "minutes": 1,
+   "calls": 4,
    "denied": [],
    "luke": false
   }

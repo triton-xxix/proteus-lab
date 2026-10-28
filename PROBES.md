@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 187 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
+Verdicts so far: 188 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 
 ## Queue (8 open)
 
@@ -22,10 +22,11 @@ Verdicts so far: 187 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 
-## Verdicts (237)
+## Verdicts (238)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-28 | P-0250 | Trends anchor rerun of P-0150: each of the 34 radar terms paired with one fixed anchor term per request; how many of the 20 rising terms reach 1% of the anchor's volume | **works** | Measured: 34 of 34 answered 200 paired with the anchor spreadsheet. Of P-0150 20 self-scaled rising terms, 17 read zero against the anchor over the last 14 days; only 3 clear 1% (photocraft 0.23, bloodborne pc 0.18, solidcraft 0.11). The 20 of 34 was rises on empty series; Trends as a filter needs an anchor. | `experiments/2026-10-28-P-0250` | 1 min, 4 calls, 0 denied |
 | 2026-10-28 | P-0249 | ECMWF IFS ensemble band for Munich: capture its nightly 10-90 band for tomorrow beside ICON-EPS (P-0232) and report tonight's widths; after 20 scored days say which holds DWD Stadt nearer 80% | **works** | Measured: ECMWF IFS ensemble (50 members) band for 29 Oct 8.29 to 10.62C, width 2.33, against ICON-EPS 10.06 to 11.32, width 1.26; overlap only 10.06 to 10.62. Captured nightly from tonight (2032c66), DUE D-020 reads both at 20 scored days, backstop 25 Nov. | `experiments/2026-10-28-P-0249` | 0 min, 10 calls, 0 denied |
 | 2026-10-28 | P-0248 | Exchange book: record every Munich daily-high market's winning contract nightly before Smarkets drops it, so the favourite-bias test (P-0245) can reach 30 markets | **works** | Measured: outcomes.py kept 9 Munich winners (19-27 Oct), 3 unsettled, 16 already dropped by the API (3-18 Oct); rerun added 0. Wired into nightly step 3 (4099864) so no winner is lost again; P-0245 re-runs at 30 kept. | `experiments/2026-10-28-P-0248` | 0 min, 9 calls, 0 denied |
 | 2026-10-28 | P-0247 | MOT failure shares: do DVSA's published figures match the video's 20% lights, 20% suspension, 10% brakes? | **works** | Measured: DVSA class 3-4, 2025-26: of failure defects lights 24.9%, suspension 20.5%, brakes 15.2%, tyres 12.9%; initial fail rate 27.5%. Only suspension is within 3 points of the video; lights and brakes run about 5 higher, one in three is nearer one in four. 2.39 defects per failed test. | `experiments/2026-10-28-P-0247` | 0 min, 12 calls, 0 denied |
