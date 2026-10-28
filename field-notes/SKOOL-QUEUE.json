@@ -1018,7 +1018,7 @@
    "track": 10,
    "title": "Memecoin rooms: Viper (classroom, 12 videos) and Sniper Skool (watchlists, Grok prompts)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/sniperskool-01-pulsechain-top-5-watchlist.md",
     "field-notes/skool/sniperskool-02-secret-memecoin-list.md",
@@ -1047,14 +1047,18 @@
     "field-notes/skool/viper-posts-members.md",
     "field-notes/skool/viper-posts-owner.md"
    ],
-   "why": "Track 10, memecoin rooms pulled 19 Oct. Goal line: the Grinder (Proteus's paper meme-coin desk). Read for launch and pump mechanics, watchlist methods and any claim the Grinder could score on paper; flag anything that is a pump-and-dump playbook."
+   "why": "Track 10, memecoin rooms pulled 19 Oct. Goal line: the Grinder (Proteus's paper meme-coin desk). Read for launch and pump mechanics, watchlist methods and any claim the Grinder could score on paper; flag anything that is a pump-and-dump playbook.",
+   "assigned": "2026-10-28",
+   "tries": 1,
+   "verdict": "SKIP",
+   "digest": "state/agents/skool/2026-10-28-S-52.md"
   },
   {
    "id": "S-53",
    "track": 10,
    "title": "Skool Homeroom: Rose's 15 YouTube post videos (her talks and Skool News)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/homeroom-post-2026-03-24-skool-news-for-march-24-some-fun-stuff-happening.txt",
     "field-notes/skool/transcripts/homeroom-post-2026-04-08-skool-news-52-big-things-happening.txt",
@@ -1072,7 +1076,11 @@
     "field-notes/skool/transcripts/homeroom-post-2026-08-10-i-ve-got-a-story-you-ve-got-to-hear.txt",
     "field-notes/skool/transcripts/homeroom-post-2026-08-12-time-to-grade-each-other-s-homework.txt"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-28",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-28-S-53.md"
   },
   {
    "id": "S-54",
