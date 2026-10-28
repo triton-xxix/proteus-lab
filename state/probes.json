@@ -1,5 +1,5 @@
 {
- "next_id": 245,
+ "next_id": 248,
  "items": [
   {
    "id": "P-0001",
@@ -5985,6 +5985,66 @@
     "at": "2026-10-28T12:39:03+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0245",
+   "title": "Munich weather favourite at noon: from exchange/SNAPSHOTS.csv, for every settled Munich daily-high market, the modal contract's price at the last snapshot on the day v how often it settled; does Smarkets show the favourite overpricing arXiv 2610.13593 found on Polymarket in the final hours",
+   "source": "field-notes",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0246",
+   "title": "GBP Q&A API retirement: does Google's public API reference still list a Q&A endpoint?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0247",
+   "title": "MOT failure shares: do DVSA's published figures match the video's 20% lights, 20% suspension, 10% brakes?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

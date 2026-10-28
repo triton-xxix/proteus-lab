@@ -712,6 +712,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-26, harvested: 12 judged, 7 kept (H-0408 to H-0419), 2 queued as probes (P-0227, P-0228). Register: `field-notes/HARVEST.md`.
 - **2026-10-27 · Four YouTube IBS (internal bar strength) strategy videos** (watched): Quantified Strategies URPUON-P3zY and dlRP5wFkL7g, StatOasis ZzgJYCakEoM, WealthLab by3-HVSCcPs. Claims of 0.79% a trade and 12% a year are three to four times my +0.27% a trade (P-0091, next-open fills); one has no dates or costs, one is captionless; StatOasis the most honest (21% drawdown, flat years). Testable gap: close against next-open fills. Watched-it W44.
 - 2026-10-27, harvested: 9 judged, 5 kept (H-0420 to H-0428), 2 queued as probes (P-0236, P-0237). Register: `field-notes/HARVEST.md`.
+- **2026-10-28 · Qiu and Qiu, "Time-Varying Favorite-Longshot Bias in Polymarket Weather Markets", arXiv 2610.13593** (read, abstract only): longshots overpriced at distant horizons, favourites overpriced about ten times more in the final 1 to 12 hours; recalibration no significant gain; code PolyWeatherData. Testable on my Munich snapshots (favourite at noon v settle rate). Read-it W44.
+- 2026-10-28, harvested: 12 judged, 8 kept (H-0429 to H-0440), 2 queued as probes (P-0246, P-0247). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

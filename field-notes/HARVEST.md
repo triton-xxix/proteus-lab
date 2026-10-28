@@ -6,16 +6,24 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-428 judged over 29 harvest days, 280 kept, 88 testable, 84 queued as probes, 79 with a probe verdict.
+440 judged over 30 harvest days, 288 kept, 90 testable, 86 queued as probes, 81 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0439 | 2026-10-28 | github | [CRFXN5C/mcd-mcp-kit: MCP integration health check and measured pitfalls for McDonald's Chi](https://github.com/CRFXN5C/mcd-mcp-kit) | mechanism | tools-for-strangers | no: The server needs a phone-login token, and the endpoint URL i |  |
+| H-0438 | 2026-10-28 | vault | [Speed-to-lead bridge call: ring the owner first, then connect the lead within seconds](https://youtu.be/ru7fWKD4cyw) | mechanism | tools-for-strangers | no: It needs a telephony account with a paid number, which is a  |  |
+| H-0436 | 2026-10-28 | arxiv | [Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis](https://arxiv.org/abs/2610.37648) | mechanism | mechanism-hunting | no: It needs model training and a large synthetic dataset, far b |  |
+| H-0434 | 2026-10-28 | vault | [free GBP guides](https://whitespark.ca/google-business-profile-guide/) | mechanism | tools-for-strangers | no: It is a reference guide with no tool or number to run keyles |  |
+| H-0433 | 2026-10-28 | youtube | [7 Things That Instantly Fail Your MOT in 2026 (UK Drivers)](https://www.youtube.com/watch?v=X3f81opiQZg) | mechanism | cars | yes | P-0247 |
+| H-0432 | 2026-10-28 | arxiv | [Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649) | mechanism | mechanism-hunting | no: It needs model answers and the framework, and no local LLM i |  |
+| H-0431 | 2026-10-28 | github | [daveebbelaar/bama: BAMA: Build Any Mac App. Agent skills to research, clone, design, build](https://github.com/daveebbelaar/bama) | mechanism | tools-for-strangers | no: It needs a Swift toolchain, computer-use sessions and a long |  |
+| H-0429 | 2026-10-28 | vault | [GBP platform changes]() | mechanism | tools-for-strangers | yes | P-0246 |
 | H-0427 | 2026-10-27 | vault | [business snapshot prompt as setup](https://resources.getjobber.com/hubfs/content/Home-Service-AI-Starter-Toolkit-by-Jobber.pdf) | mechanism | tools-for-strangers | no: Judging output quality needs model answers and there is no l |  |
-| H-0424 | 2026-10-27 | vault | [win rate sold without entry price](https://www.instagram.com/reel/DedW0mvh3dw/) (intel) | mechanism | forecasting | yes | P-0237 |
+| H-0424 | 2026-10-27 | vault | [win rate sold without entry price](https://www.instagram.com/reel/DedW0mvh3dw/) (intel) | mechanism | forecasting | yes | P-0237 **works** |
 | H-0423 | 2026-10-27 | arxiv | [Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Model](https://arxiv.org/abs/2610.35829) | mechanism | mechanism-hunting | no: Needs an open LLM with accessible hidden states and the trai |  |
-| H-0422 | 2026-10-27 | github | [ZiChuanLan/agent-purge: One persona, many coding agents. Replace or inject system prompts ](https://github.com/ZiChuanLan/agent-purge) | mechanism | tools-for-strangers | yes | P-0236 |
+| H-0422 | 2026-10-27 | github | [ZiChuanLan/agent-purge: One persona, many coding agents. Replace or inject system prompts ](https://github.com/ZiChuanLan/agent-purge) | mechanism | tools-for-strangers | yes | P-0236 **not-worth-it** |
 | H-0420 | 2026-10-27 | vault | [comment-keyword indicator funnel](https://www.instagram.com/reel/Dee_ogTKexd/) (intel) | mechanism | mechanism-hunting | no: The funnel sits behind Instagram comments and DMs, and runni |  |
 | H-0419 | 2026-10-26 | github | [andyhuo520/digital-human-koubo: AI digital-human talking-head videos from one photo: Renoi](https://github.com/andyhuo520/digital-human-koubo) | mechanism | tools-for-strangers | no: Generation runs through a paid credit-based service that nee |  |
 | H-0418 | 2026-10-26 | vault | [Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr]() | mechanism | open-data | yes | P-0228 **blocked** |
@@ -294,6 +302,103 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0439 CRFXN5C/mcd-mcp-kit: MCP integration health check and measured pitfalls for McDonald's China MCP Server
+2026-10-28, github, https://github.com/CRFXN5C/mcd-mcp-kit
+
+- **Mechanism:** A zero-dependency Python script speaks Streamable HTTP and JSON-RPC to a live MCP server, calls initialize and tools/list, and compares the returned tool names and count against the published docs. It also deliberately sends no token and a wrong token to record the exact status codes and body shapes. The method finds docs-versus-server drift such as 35 tools returned against 33 documented.
+- **Claim:** The McDonald's China MCP server returns 35 tools where the docs list 33, with two different auth failure shapes.
+- **Testable:** no. The server needs a phone-login token, and the endpoint URL is not given in the item. Needs: A token from a Chinese phone-number login.
+- **Idea on its own:** sound. Comparing tools/list with documentation is a cheap, generalisable way to catch MCP drift.
+- **How it would be done:** Write a small client that performs initialize then tools/list over Streamable HTTP and compares names and counts to a stored baseline. Add probes for missing and bad tokens and record status plus body shape. Run it in CI against any MCP server so drift is caught early. The repo's own PITFALLS file is a useful list of what to assert; a person is needed only to get credentials for each server.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** mcd-mcp-kit https://github.com/CRFXN5C/mcd-mcp-kit (The doctor.py and minimal client to reuse against another MCP server)
+- **Field Notes line:** A health check that diffs an MCP server's real tools/list against its docs found two undocumented tools and two different auth error shapes.
+
+### H-0438 Speed-to-lead bridge call: ring the owner first, then connect the lead within seconds
+2026-10-28, vault, https://youtu.be/ru7fWKD4cyw
+
+- **Mechanism:** A form or ad lead submission fires a webhook to an automation. The automation places an outbound call to the business owner first, and only when the owner answers does it dial the lead and bridge the two legs, so the lead is connected within seconds. It depends on a telephony API for the two-leg call, a webhook source, and a fallback to text if the owner does not pick up.
+- **Claim:** Ringing the owner first and then bridging the lead connects them within seconds, a cheap add-on for trade clients.
+- **Testable:** no. It needs a telephony account with a paid number, which is a spend and an account. Needs: A telephony account and a UK number.
+- **Idea on its own:** sound. Contact within minutes lifts lead conversion, and the owner-first leg avoids calling a lead into dead air.
+- **How it would be done:** Form submit hits a webhook; the workflow calls the owner through a telephony API, waits for a keypress to confirm a live person, then dials the lead and joins the legs. If the owner does not answer in a set time, it falls back to an SMS to the lead and a task. Log call outcomes to a sheet so response time can be reported. A person must get call recording consent wording and out-of-hours rules right under UK rules, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Twilio Programmable Voice https://www.twilio.com/docs/voice (Two-leg outbound call with conference bridge; trial account available); n8n https://github.com/n8n-io/n8n (Self-hostable webhook workflow runner to glue the form to the call)
+- **Missing:** A UK number and a client willing to be rung first.
+- **Field Notes line:** Speed-to-lead by calling the owner first, then bridging the new enquiry within seconds; it needs a telephony API and an owner who picks up.
+
+### H-0436 Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis
+2026-10-28, arxiv, https://arxiv.org/abs/2610.37648
+
+- **Mechanism:** SynthAPI generates synthetic tool-use environments with separate controls for the number of tools, the tasks, and the databases the tools act on. The authors varied these across 458,752 tasks and trained 849 models of four sizes to fit a scaling law for downstream tool-use generalisation. The fitted result is that tool and database diversity pay off more than raw task count, and added complexity pays more again.
+- **Claim:** Scaling tool and database diversity beats adding tasks, and the resulting agents beat prior synthetic-environment data on four benchmarks.
+- **Testable:** no. It needs model training and a large synthetic dataset, far beyond 30 minutes keyless. Needs: GPU training capacity and the SynthAPI code.
+- **Idea on its own:** sound. Controlled axes with 849 trained models is a credible way to isolate which data property matters.
+- **How it would be done:** Reproduction means generating environments with varied tool sets and databases, training small models on each mix, and fitting the curve of generalisation against scale. That needs training compute and the authors' pipeline. The practical takeaway for an agent builder with no training budget is only to vary tools and data when writing evaluation suites, which needs no new infrastructure.
+- **Missing:** Training compute and the released SynthAPI code, if any.
+- **Field Notes line:** A scaling law for tool-use agent training data: more varied tools and databases beat more tasks.
+
+### H-0434 free GBP guides
+2026-10-28, vault, https://whitespark.ca/google-business-profile-guide/
+
+- **Mechanism:** A practitioner guide that sets out the factors local search ranks Google Business Profiles on: category choice, proximity, review count and recency, citations, and on-profile content. The ranking weights come from the author's annual local search ranking factors survey of practitioners, so they are opinion aggregates rather than measured Google signals. It is strong on what to set and weak on how to carry it out and on suspension recovery.
+- **Claim:** The deepest free guide to Google Business Profile optimisation in 2026.
+- **Testable:** no. It is a reference guide with no tool or number to run keyless in 30 minutes.
+- **Idea on its own:** sound. The factors are standard local SEO, though the weights are opinion rather than measurement.
+- **How it would be done:** Read the guide and turn each factor into a checklist item with a yes or no test. Add the missing UK layer for review law and consumer rules from the official regulator guidance. The audience is small local businesses who need worksheets, so a lead magnet workbook would be built on top. A person is needed to verify live profile suspension steps with the actual Google support flow.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Whitespark GBP guide https://whitespark.ca/google-business-profile-guide/ (The source reference to build checklists from)
+- **Missing:** Measured evidence of which ranking factors move local rank, since the guide rests on survey opinion.
+- **Field Notes line:** Whitespark's free GBP guide rests on practitioner survey weights, not measured Google signals, and is thin on UK review law and suspension recovery.
+
+### H-0433 7 Things That Instantly Fail Your MOT in 2026 (UK Drivers)
+2026-10-28, youtube, https://www.youtube.com/watch?v=X3f81opiQZg
+
+- **Mechanism:** The video quotes shares of MOT failures by category, which come from the DVSA's published MOT testing statistics rather than the presenter: lighting about 20%, suspension about 20%, brakes about 10%, and one in three tests failing. Those figures can be recomputed from the government's open MOT results data, which lists failure items per test. The listicle itself adds no new mechanism, only tips.
+- **Claim:** One in three UK cars fail the MOT, with lighting about 20% of failures, suspension about 20% and brakes about 10%.
+- **Testable:** yes. What share of failed tests in the latest published DVSA annual statistics are lighting, suspension and brakes, and does each match the video's 20, 20 and 10 within 3 points? Queued as P-0247.
+- **Idea on its own:** needs-a-run. The numbers are checkable against a free government dataset and the open data itself is a good base for car analysis.
+- **How it would be done:** Pull the latest DVSA MOT annual statistics tables or the open MOT results file from gov.uk, which need no login. Sum failed items by category and divide by total failures, then compare to the video's numbers. The same data supports make and model failure rates for used car buying, which is the useful product. No human step is needed beyond choosing which year to use.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** DVSA MOT testing data https://www.gov.uk/government/statistical-data-sets/mot-testing-data-for-great-britain (Free open MOT test results and annual statistics)
+- **Field Notes line:** A video claims lights and suspension are each 20% of MOT failures and brakes 10%; the DVSA open data can say whether that holds.
+
+### H-0432 Can LLMs Uncover Hidden Physical Laws through Free Exploration?
+2026-10-28, arxiv, https://arxiv.org/abs/2610.37649
+
+- **Mechanism:** LongChang generates simulated worlds in which one or more physical laws are altered, such as heavier objects falling slower. An LLM explorer manipulates objects and builds tools with no stated research question. Separate LLM agents generate and review scenes, review tool designs and grade reports against the known altered law, and the exploration records feed back to evolve the next scene, so the loop runs without people.
+- **Claim:** Of 12 LLMs tested, one reaches a 16.7% discovery rate and the other 11 score 0%.
+- **Testable:** no. It needs model answers and the framework, and no local LLM is installed. Needs: LLM access for explorer and reviewer agents.
+- **Idea on its own:** sound. Scoring unprompted anomaly detection against a known planted law is a clean design with a ground truth.
+- **How it would be done:** Build a tiny physics sandbox where one constant is changed, give a model object-manipulation tools, and let a second agent grade its report against the planted law. The same pattern can plant a known flaw in a forecasting or trading backtest and see whether an agent finds it unprompted. The scenes and graders are all generated, so no outside data is needed; a person would only audit whether the grader is lenient.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** The LongChang code is not linked in the abstract, so the framework would have to be rebuilt.
+- **Field Notes line:** A benchmark that alters the physics of a simulated world and checks whether an LLM notices the anomaly unprompted; 11 of 12 models found nothing.
+
+### H-0431 daveebbelaar/bama: BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native ma
+2026-10-28, github, https://github.com/daveebbelaar/bama
+
+- **Mechanism:** A set of agent skills that chain together: a clone skill drives computer use or a browser to screenshot every screen of a target app and write a screen index, a user-stories skill turns that into checkable acceptance criteria, then a build loop commits one story at a time. Each commit is gated by building a Swift package from the command line, snapshotting every page in light and dark mode and running Swift Testing. The design-from-app skill measures sizes and colours from screenshots and compares pixel by pixel until they match.
+- **Claim:** Agent skills take a native macOS app from a screenshot clone to a shipped SwiftUI app with no Xcode GUI.
+- **Testable:** no. It needs a Swift toolchain, computer-use sessions and a long agent loop, which does not fit 30 minutes keyless. Needs: Swift 6 toolchain, computer-use access, an app to clone.
+- **Idea on its own:** needs-a-run. The screenshot, story, commit loop is sound in structure but the pixel-match fidelity is unproven.
+- **How it would be done:** Install the skills with npx, point the clone skill at a simple app, and let it produce the screen index and stories. The build loop then runs swift build and snapshot mode per story and commits when tests pass. The data is the target app's own screens, so the audience is whoever wants a native copy of a tool. A human still has to judge whether the clone is close enough and handle licence and trade dress questions on copying another product's look.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** bama skills https://github.com/daveebbelaar/bama (The skill pack itself, installed via npx skills add); Swift toolchain (swift.org) https://www.swift.org/install/macos/ (Builds Swift packages from the command line without the Xcode GUI)
+- **Missing:** A Swift-capable build environment on this Intel Mac and a clone target nobody minds being copied.
+- **Field Notes line:** A skill chain that screenshots an app, writes user stories, then builds a SwiftUI copy one commit per story with light and dark snapshot checks as the gate.
+
+### H-0429 GBP platform changes
+2026-10-28, vault, 
+
+- **Mechanism:** Google exposed Business Profile Q&A through a separate Business Profile API surface that developers and agencies called to read and post questions and answers. The claim is that this API was switched off on 3 Nov 2025 while the consumer feature stayed live only for some categories and regions, per Google's help pages. So the dependency is on Google's published API discovery documents and help text, which can be read publicly.
+- **Claim:** Google ended Business Profile Q&A on 3 Nov 2025, though help pages still describe it as limited rather than gone.
+- **Testable:** yes. Does Google's public API discovery or reference documentation still list a Business Profile Q&A endpoint, yes or no? Queued as P-0246.
+- **Idea on its own:** needs-a-run. The claim is checkable against public Google documentation and the vault verdict already says half right.
+- **How it would be done:** Fetch the public Business Profile API reference and discovery listing and search for any Q&A or questions resource. Fetch the current Google help page on Q&A and record the wording on categories and regions. Compare the two against the 3 Nov 2025 date and write down what is retired versus limited. A person who manages client listings would then only check a few live profiles by hand to see whether the Q&A box still shows, which no script covers well.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Google's Business Profile Q&A API is reported retired in Nov 2025 while the help pages still describe the feature as limited; a public docs check can settle which.
 
 ### H-0427 business snapshot prompt as setup
 2026-10-27, vault, https://resources.getjobber.com/hubfs/content/Home-Service-AI-Starter-Toolkit-by-Jobber.pdf
@@ -3562,8 +3667,11 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0438 | 2026-10-28 | Speed-to-lead bridge call: ring the owner first, then connect the lead within seconds | intel | sound | no |  |
+| H-0434 | 2026-10-28 | free GBP guides | intel | sound | no |  |
+| H-0429 | 2026-10-28 | GBP platform changes | intel | needs-a-run | yes | P-0246 |
 | H-0427 | 2026-10-27 | business snapshot prompt as setup | intel | sound | no |  |
-| H-0424 | 2026-10-27 | win rate sold without entry price | intel | sound | yes | P-0237 |
+| H-0424 | 2026-10-27 | win rate sold without entry price | intel | sound | yes | P-0237 **works** |
 | H-0420 | 2026-10-27 | comment-keyword indicator funnel | intel | unsound | no |  |
 | H-0418 | 2026-10-26 | Insider cluster buys carry a small relative edge over random mid-caps, about 1% a month gr | intel | needs-a-run | yes | P-0228 **blocked** |
 | H-0413 | 2026-10-26 | Dated US release calendar from primary sources, 2023 to 2026 | intel | sound | yes | P-0227 **works** |
@@ -3654,6 +3762,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0260 | 2026-10-28 | [mcd-mcp-kit](https://github.com/CRFXN5C/mcd-mcp-kit) | The doctor.py and minimal client to reuse against another MCP server | H-0439 (CRFXN5C/mcd-mcp-kit: MCP integration health check ) | shelf |
+| T-0259 | 2026-10-28 | [Twilio Programmable Voice](https://www.twilio.com/docs/voice) | Two-leg outbound call with conference bridge; trial account available | H-0438 (Speed-to-lead bridge call: ring the owner first, t) | shelf |
+| T-0258 | 2026-10-28 | [Whitespark GBP guide](https://whitespark.ca/google-business-profile-guide/) | The source reference to build checklists from | H-0434 (free GBP guides) | shelf |
+| T-0257 | 2026-10-28 | [DVSA MOT testing data](https://www.gov.uk/government/statistical-data-sets/mot-testing-data-for-great-britain) | Free open MOT test results and annual statistics | H-0433 (7 Things That Instantly Fail Your MOT in 2026 (UK ) | shelf |
+| T-0256 | 2026-10-28 | [Swift toolchain (swift.org)](https://www.swift.org/install/macos/) | Builds Swift packages from the command line without the Xcode GUI | H-0431 (daveebbelaar/bama: BAMA: Build Any Mac App. Agent ) | shelf |
+| T-0255 | 2026-10-28 | [bama skills](https://github.com/daveebbelaar/bama) | The skill pack itself, installed via npx skills add | H-0431 (daveebbelaar/bama: BAMA: Build Any Mac App. Agent ) | shelf |
 | T-0254 | 2026-10-27 | [PrimeVul](https://github.com/DLVulDet/PrimeVul) | Benchmark dataset used for training and test. | H-0423 (Reva: Real-Time Vulnerability Detection through Co) | shelf |
 | T-0253 | 2026-10-27 | [agent-purge](https://github.com/ZiChuanLan/agent-purge) | The tool under test; npm package, Node 20 or later, no dependencies. | H-0422 (ZiChuanLan/agent-purge: One persona, many coding a) | shelf |
 | T-0252 | 2026-10-26 | [Renoise MCP](https://renoise.ai/mcp) | The hosted generation backend the repo calls; credits needed. | H-0419 (andyhuo520/digital-human-koubo: AI digital-human t) | shelf |
@@ -3913,6 +4027,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0440 | 2026-10-28 | youtube | [What is an MOT? UK Theory Test Guide to Car Testing #animation](https://www.youtube.com/watch?v=uddwAm3UZKE) | A one-line animation explainer with no mechanism, and a duplicate of the other MOT videos. |
+| H-0437 | 2026-10-28 | youtube | [MOT Test procedure UK🚘2025: Explained & Check [Prepare] Guide to pass emissions ](https://www.youtube.com/watch?v=Pr0AkWVH5cg) | Generic MOT explainer with no mechanism, and the MOT data angle is covered by the better item. |
+| H-0435 | 2026-10-28 | github | [wcoxptzhhdbo/solana-sniper-bot: Solana sniper bot: pump.fun launch sniping, memp](https://github.com/wcoxptzhhdbo/solana-sniper-bot) | The README holds only screenshot captions and a title, no code description, and the repo shape matches fake-star bait; n |
+| H-0430 | 2026-10-28 | hn | [Google can now use your Gmail data for ads: How to turn it off](https://proton.me/blog/gmail-ads) | The fetched page body is unreadable binary and the HN thread is a one-comment duplicate of an earlier item. |
 | H-0428 | 2026-10-27 | github | [HenestrosaDev/audiotext: A desktop app to transcribe audio and video from files,](https://github.com/HenestrosaDev/audiotext) | Desktop transcription app wrapping WhisperX and MLX Whisper, which duplicates the local transcription already in the sta |
 | H-0426 | 2026-10-27 | arxiv | [Pretraining Knows What, Simulation Teaches How: Compositional Generalization in ](https://arxiv.org/abs/2610.35817) | Robot policy training recipe needing a 27B model, GRPO and hardware; nothing Proteus can use or run. |
 | H-0425 | 2026-10-27 | github | [huaxialucaicaizi/ai-startup-skills: 创业公司做 AI 产品的 7 步 Agent Skill 合集：验证 → BP → 政策](https://github.com/huaxialucaicaizi/ai-startup-skills) | A bundle of prompt skills for Chinese start-up admin with a router skill; no new mechanism and not testable. |
