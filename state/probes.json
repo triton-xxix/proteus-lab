@@ -5936,9 +5936,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-28",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-28T12:36:55+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -5946,7 +5946,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "number": "high-VIX tercile mean trade at least 2x the low tercile, and only the high tercile beats its same-tercile random control at p under 0.05",
+    "at": "2026-10-28T12:37:01+0000"
+   }
   }
  ]
 }
