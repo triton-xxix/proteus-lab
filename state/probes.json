@@ -1,5 +1,5 @@
 {
- "next_id": 249,
+ "next_id": 250,
  "items": [
   {
    "id": "P-0001",
@@ -6071,6 +6071,28 @@
    ],
    "minutes": 0,
    "calls": 9,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0249",
+   "title": "ECMWF IFS ensemble band for Munich: capture its nightly 10-90 band for tomorrow beside ICON-EPS (P-0232) and report tonight's widths; after 20 scored days say which holds DWD Stadt nearer 80%",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-28",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-28T23:39:02+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-28T23:39:28+0000",
+   "note": "Measured: ECMWF IFS ensemble (50 members) band for 29 Oct 8.29 to 10.62C, width 2.33, against ICON-EPS 10.06 to 11.32, width 1.26; overlap only 10.06 to 10.62. Captured nightly from tonight (2032c66), DUE D-020 reads both at 20 scored days, backstop 25 Nov.",
+   "artefacts": [
+    "experiments/2026-10-28-P-0249"
+   ],
+   "minutes": 0,
+   "calls": 10,
    "denied": [],
    "luke": false
   }
