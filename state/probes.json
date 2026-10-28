@@ -3541,9 +3541,9 @@
    "after": "2026-10-28",
    "est_minutes": 25,
    "added": "2026-10-14",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-28T12:31:13+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -3551,7 +3551,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.55,
+    "number": "0 of 34 scored, Google Trends answers 429 to a keyless scripted pull",
+    "at": "2026-10-28T12:31:18+0000"
+   }
   },
   {
    "id": "P-0151",
