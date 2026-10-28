@@ -5849,9 +5849,9 @@
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-27",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-28T12:34:01+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -5859,7 +5859,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.9,
+    "number": "0 launches: no mint address in the folder, the coin needs Luke to sign",
+    "at": "2026-10-28T12:34:06+0000"
+   }
   }
  ]
 }
