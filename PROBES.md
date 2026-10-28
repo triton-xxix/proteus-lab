@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 179 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
+Verdicts so far: 179 works, 5 broken, 30 blocked, 14 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 179 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0240 | Our own coin, observed: seven called shots S1-S7 on the first hour of a no-creator-buy pump.fun launch Luke si (DUE.md D-014): experiments/2026-10-20-own-coin/PLAN.md, scored by its watch.py | desk | none |  | 1 (in progress) | 40 min |
 
-## Verdicts (227)
+## Verdicts (228)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-28 | P-0240 | Our own coin, observed: seven called shots S1-S7 on the first hour of a no-creator-buy pump.fun launch Luke si (DUE.md D-014): experiments/2026-10-20-own-coin/PLAN.md, scored by its watch.py | **blocked** | Measured: 0 launches; no mint address anywhere in experiments/2026-10-20-own-coin, PLAN.md still lists it as Luke to send. Shot said 0 launches, hit. D-014 backstop 2026-10-27 has passed, so per PLAN.md the row closes not launched and the backlog entry goes back to when Luke wants it. Nothing asked of him. (verdict has no --luke flag, though trials.md and the skill name one). | `experiments/2026-10-20-own-coin` | 0 min, 7 calls, 0 denied |
 | 2026-10-28 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | **works** | Measured: 34 of 34 terms scored keyless (explore page 429, JSON API 200 on all 34); shot said 0 of 34, missed. 20 of 34 rising (last 14d above 2x earlier mean); suspicious slice 4 of 8 v rest 16 of 26, no separation; 2 no data; trending RSS 0 hits. Caveat: per-series 0-100 scaling, no anchor term, generic names (math, anatomy) flat. Next: close. | `experiments/2026-10-28-P-0150` | 2 min, 11 calls, 0 denied |
 | 2026-10-27 | P-0239 | Turn of the month on the nine systems-book ETFs: buy the close before the last trading day, sell the close of trading day 3, recent 12 months and 2009-26, against random 5-day holds | **works** | Buy the close two sessions before month end, sell close of day 3, adjusted closes: 2009-26 1,917 trades +0.252% v +0.189% random 4-day holds (p 0.13), only EEM passes alone; last 12 months 108 trades +0.92% v +0.22% (p 0.0005, but 12 month-ends shared by nine correlated funds). No long-run edge; one hot year. | `experiments/2026-10-27-P-0239` | 0 min, 5 calls, 0 denied |
 | 2026-10-27 | P-0238 | Pitch closing line drift: on scored predictions, does the Avg closing price move toward the model's biggest-edge side (vs Friday Avg odds) more often than a random side does | **works** | 257 predictions matched to football-data Avg (Friday) and AvgC (close): close moved toward the model's biggest-edge side 137 times (53.3%) against 130.1 for a random side, p 0.20; mean move +0.06 points. Edges of 5+ points: 93 of 157 (59%), +0.27 points. A faint lean, not a closing-line edge. | `experiments/2026-10-27-P-0238` | 0 min, 5 calls, 0 denied |

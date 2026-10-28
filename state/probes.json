@@ -5845,26 +5845,29 @@
    "id": "P-0240",
    "title": "Our own coin, observed: seven called shots S1-S7 on the first hour of a no-creator-buy pump.fun launch Luke si (DUE.md D-014): experiments/2026-10-20-own-coin/PLAN.md, scored by its watch.py",
    "source": "desk",
-   "needs": "",
+   "needs": "Luke: the mint address of a pump.fun launch he signs from his own wallet",
    "after": "",
    "est_minutes": 40,
    "added": "2026-10-27",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-28T12:34:01+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-10-28T12:34:21+0000",
+   "note": "Measured: 0 launches; no mint address anywhere in experiments/2026-10-20-own-coin, PLAN.md still lists it as Luke to send. Shot said 0 launches, hit. D-014 backstop 2026-10-27 has passed, so per PLAN.md the row closes not launched and the backlog entry goes back to when Luke wants it. Nothing asked of him. (verdict has no --luke flag, though trials.md and the skill name one).",
+   "artefacts": [
+    "experiments/2026-10-20-own-coin"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.9,
     "number": "0 launches: no mint address in the folder, the coin needs Luke to sign",
-    "at": "2026-10-28T12:34:06+0000"
+    "at": "2026-10-28T12:34:06+0000",
+    "hit": true
    }
   }
  ]
