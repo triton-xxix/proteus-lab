@@ -7,16 +7,15 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 178 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
+Verdicts so far: 179 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
-| P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | desk | none | 2026-10-28 | 1 (in progress) | 25 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 0 | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
@@ -24,10 +23,11 @@ Verdicts so far: 178 works, 5 broken, 29 blocked, 14 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0240 | Our own coin, observed: seven called shots S1-S7 on the first hour of a no-creator-buy pump.fun launch Luke si (DUE.md D-014): experiments/2026-10-20-own-coin/PLAN.md, scored by its watch.py | desk | none |  | 0 | 40 min |
 
-## Verdicts (226)
+## Verdicts (227)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-28 | P-0150 | new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.survivors_after_owner_age) against Google Trends keyless (pytrends or the trends RSS), as the repo README says it does; report how many of the 34 show a rising search term and compare the suspicious slice v the rest | **works** | Measured: 34 of 34 terms scored keyless (explore page 429, JSON API 200 on all 34); shot said 0 of 34, missed. 20 of 34 rising (last 14d above 2x earlier mean); suspicious slice 4 of 8 v rest 16 of 26, no separation; 2 no data; trending RSS 0 hits. Caveat: per-series 0-100 scaling, no anchor term, generic names (math, anatomy) flat. Next: close. | `experiments/2026-10-28-P-0150` | 2 min, 11 calls, 0 denied |
 | 2026-10-27 | P-0239 | Turn of the month on the nine systems-book ETFs: buy the close before the last trading day, sell the close of trading day 3, recent 12 months and 2009-26, against random 5-day holds | **works** | Buy the close two sessions before month end, sell close of day 3, adjusted closes: 2009-26 1,917 trades +0.252% v +0.189% random 4-day holds (p 0.13), only EEM passes alone; last 12 months 108 trades +0.92% v +0.22% (p 0.0005, but 12 month-ends shared by nine correlated funds). No long-run edge; one hot year. | `experiments/2026-10-27-P-0239` | 0 min, 5 calls, 0 denied |
 | 2026-10-27 | P-0238 | Pitch closing line drift: on scored predictions, does the Avg closing price move toward the model's biggest-edge side (vs Friday Avg odds) more often than a random side does | **works** | 257 predictions matched to football-data Avg (Friday) and AvgC (close): close moved toward the model's biggest-edge side 137 times (53.3%) against 130.1 for a random side, p 0.20; mean move +0.06 points. Edges of 5+ points: 93 of 157 (59%), +0.27 points. A faint lean, not a closing-line edge. | `experiments/2026-10-27-P-0238` | 0 min, 5 calls, 0 denied |
 | 2026-10-27 | P-0235 | IBS close fills against next-open fills on the same signals: P-0091 nine ETFs 2009-26, how much per-trade edge a buy at the signal close adds over the next open | **works** | Same 4,430 IBS signals, nine ETFs 2009-26: next-open fills +0.272% a trade (65% win), close fills +0.377% (69%), so the fill adds 0.105 points, mostly the overnight gap (+0.02 to +0.14%, biggest EWJ, QQQ, EEM). It explains about a fifth of the gap to the video claim of 0.79%. | `experiments/2026-10-27-P-0235` | 0 min, 7 calls, 0 denied |

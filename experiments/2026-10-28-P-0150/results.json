@@ -1,0 +1,365 @@
+{
+ "cookie_status": 429,
+ "rows": [
+  {
+   "repo": "storytold/photocraft",
+   "term": "photocraft",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 36.9,
+   "before": 8.7,
+   "rising": true
+  },
+  {
+   "repo": "openai/math",
+   "term": "math",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 29.6,
+   "before": 36.7,
+   "rising": false
+  },
+  {
+   "repo": "wheresryan22/anatomy",
+   "term": "anatomy",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 45.6,
+   "before": 43.8,
+   "rising": false
+  },
+  {
+   "repo": "Arekejoker/qwen21-nsfw-pose-skill",
+   "term": "qwen21 nsfw pose skill",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 0.0,
+   "before": 1.3,
+   "rising": false
+  },
+  {
+   "repo": "jhaizhou-ops/d2r-mobile",
+   "term": "d2r mobile",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 28.9,
+   "before": 0.9,
+   "rising": true
+  },
+  {
+   "repo": "onehumanbeing/esp32-iphone-agent",
+   "term": "esp32 iphone agent",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 7.4,
+   "before": 1.4,
+   "rising": true
+  },
+  {
+   "repo": "liseami/CCBaga",
+   "term": "CCBaga",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 16.4,
+   "before": 1.8,
+   "rising": true
+  },
+  {
+   "repo": "mhtsec/ARTEX",
+   "term": "ARTEX",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 58.1,
+   "before": 37.0,
+   "rising": false
+  },
+  {
+   "repo": "ARahim3/DigUp",
+   "term": "DigUp",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 38.6,
+   "before": 2.0,
+   "rising": true
+  },
+  {
+   "repo": "rehan-remade/universal-modder",
+   "term": "universal modder",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 9.1,
+   "before": 8.6,
+   "rising": false
+  },
+  {
+   "repo": "alchaincyf/huashu-art-motion",
+   "term": "huashu art motion",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 17.9,
+   "before": 0.0,
+   "rising": true
+  },
+  {
+   "repo": "zhongerxin/iPhone-use",
+   "term": "iPhone use",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 16.8,
+   "before": 24.8,
+   "rising": false
+  },
+  {
+   "repo": "LosaLosSantos/aurelio-finance",
+   "term": "aurelio finance",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "no_data": true,
+   "rising": false
+  },
+  {
+   "repo": "t4t5/omdrop-owl",
+   "term": "omdrop owl",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 14.4,
+   "before": 1.3,
+   "rising": true
+  },
+  {
+   "repo": "zhuyansen/new-term-radar",
+   "term": "new term radar",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 0.9,
+   "before": 1.3,
+   "rising": false
+  },
+  {
+   "repo": "noahdunnagan/fsearch",
+   "term": "fsearch",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 44.6,
+   "before": 1.3,
+   "rising": true
+  },
+  {
+   "repo": "bherbruck/solidcraft",
+   "term": "solidcraft",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 65.6,
+   "before": 0.4,
+   "rising": true
+  },
+  {
+   "repo": "egotoadcitadel/palette-from-image-ai",
+   "term": "palette from image ai",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 32.7,
+   "before": 0.8,
+   "rising": true
+  },
+  {
+   "repo": "alejandrobujan/tendedero",
+   "term": "tendedero",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 41.3,
+   "before": 31.4,
+   "rising": false
+  },
+  {
+   "repo": "jwuthri-cloud/Tracely-ai",
+   "term": "Tracely ai",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 0.0,
+   "before": 1.3,
+   "rising": false
+  },
+  {
+   "repo": "h0m3us3r/w1700k-sdr",
+   "term": "w1700k sdr",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 1.6,
+   "before": 1.4,
+   "rising": false
+  },
+  {
+   "repo": "QingYunA/answer-me-with-html",
+   "term": "answer me with html",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 11.7,
+   "before": 1.4,
+   "rising": true
+  },
+  {
+   "repo": "Fei2411/DeepSeek-Bot",
+   "term": "DeepSeek Bot",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 57.4,
+   "before": 16.4,
+   "rising": true
+  },
+  {
+   "repo": "shaongitbd/doory",
+   "term": "doory",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 23.7,
+   "before": 2.9,
+   "rising": true
+  },
+  {
+   "repo": "opengeos/RustGIS",
+   "term": "RustGIS",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 48.3,
+   "before": 2.5,
+   "rising": true
+  },
+  {
+   "repo": "PS5Dev/Byepervisor-Reborn",
+   "term": "Byepervisor Reborn",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 32.2,
+   "before": 1.3,
+   "rising": true
+  },
+  {
+   "repo": "rociiu/talorys",
+   "term": "talorys",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 4.5,
+   "before": 1.3,
+   "rising": true
+  },
+  {
+   "repo": "LoreanXavier/pt-pc",
+   "term": "pt pc",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 45.9,
+   "before": 44.7,
+   "rising": false
+  },
+  {
+   "repo": "marclou/mailcheap",
+   "term": "mailcheap",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 55.7,
+   "before": 0.0,
+   "rising": true
+  },
+  {
+   "repo": "NVIDIA-Omniverse/usd-brep",
+   "term": "usd brep",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "last14": 20.4,
+   "before": 1.3,
+   "rising": true
+  },
+  {
+   "repo": "Jakeschincariol/replica-skill",
+   "term": "replica skill",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 44.9,
+   "before": 5.4,
+   "rising": true
+  },
+  {
+   "repo": "shadany7824/playgta5",
+   "term": "playgta5",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 6.8,
+   "before": 4.4,
+   "rising": false
+  },
+  {
+   "repo": "trhhubsd/ARTEXX",
+   "term": "ARTEXX",
+   "explore_status": 200,
+   "suspicious": false,
+   "series_status": 200,
+   "no_data": true,
+   "rising": false
+  },
+  {
+   "repo": "deadinside28/bloodborne_pc",
+   "term": "bloodborne pc",
+   "explore_status": 200,
+   "suspicious": true,
+   "series_status": 200,
+   "last14": 45.1,
+   "before": 9.0,
+   "rising": true
+  }
+ ],
+ "rss": {
+  "US": {
+   "status": 200,
+   "n_titles": 10,
+   "hits": []
+  },
+  "GB": {
+   "status": 200,
+   "n_titles": 10,
+   "hits": []
+  }
+ },
+ "summary": {
+  "n": 34,
+  "scored": 34,
+  "rising": 20,
+  "rising_suspicious": 4,
+  "scored_suspicious": 8,
+  "explore_statuses": [
+   "200"
+  ]
+ }
+}

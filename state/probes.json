@@ -3541,22 +3541,25 @@
    "after": "2026-10-28",
    "est_minutes": 25,
    "added": "2026-10-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-28T12:31:13+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-28T12:33:55+0000",
+   "note": "Measured: 34 of 34 terms scored keyless (explore page 429, JSON API 200 on all 34); shot said 0 of 34, missed. 20 of 34 rising (last 14d above 2x earlier mean); suspicious slice 4 of 8 v rest 16 of 26, no separation; 2 no data; trending RSS 0 hits. Caveat: per-series 0-100 scaling, no anchor term, generic names (math, anatomy) flat. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-28-P-0150"
+   ],
+   "minutes": 2,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "broken",
     "p": 0.55,
     "number": "0 of 34 scored, Google Trends answers 429 to a keyless scripted pull",
-    "at": "2026-10-28T12:31:18+0000"
+    "at": "2026-10-28T12:31:18+0000",
+    "hit": false
    }
   },
   {
