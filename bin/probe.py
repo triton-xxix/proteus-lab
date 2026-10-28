@@ -656,6 +656,8 @@ def cmd_verdict(a):
                        for p in (a.artefact or [])]
     if a.verdict == "blocked" and a.needs:
         it["needs"] = a.needs
+    if a.verdict == "blocked" and a.luke:
+        it["luke"] = True
     save_state(st)
     render(st)
     paths = [STATE, REGISTER] + [ROOT + p for p in it["artefacts"]]
@@ -876,6 +878,8 @@ def main():
     s.add_argument("--note", required=True)
     s.add_argument("--artefact", action="append")
     s.add_argument("--needs", help="for blocked: what it is blocked on")
+    # named in trials.md and the probe-to-verdict skill but missing until 28 Oct (P-0240)
+    s.add_argument("--luke", action="store_true", help="for blocked: the need is Luke's hands")
     s.set_defaults(fn=cmd_verdict)
     s = sub.add_parser("shot")
     s.add_argument("id")
