@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-27 09:06 UTC",
- "commit": "69b9b01",
+ "built_at": "2026-10-28 09:05 UTC",
+ "commit": "57129ea",
  "input_blobs": {
   "grinder/LEDGER.csv": "4d60d237b28cbc24f4b1c449d432e910eb1cecdb",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
-  "pitch/PREDICTIONS.csv": "fee80f408f114d7421d579736475c9df4139546b",
+  "pitch/PREDICTIONS.csv": "4875894b00109ddb13204fa2245e36c7d20ef25f",
   "state/spend.jsonl": null,
-  "state/probes.json": "2a49c49d18b2b62f135690c8270289ecb88c62b8",
+  "state/probes.json": "7fab8b7eb2c9efa2ea22933e542338c7b29e228f",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000",
@@ -53,7 +53,7 @@
   }
  },
  "pitch": {
-  "committed_before_kickoff": 276,
+  "committed_before_kickoff": 279,
   "committed_late_excluded": 0,
   "scored": 79,
   "paired": 79,
@@ -69,15 +69,15 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 218,
-  "works": 171,
+  "verdicts": 226,
+  "works": 178,
   "broken": 5,
   "blocked": 29,
-  "not_worth_it": 13,
+  "not_worth_it": 14,
   "killed": 4,
   "killed_by_rule": 1,
   "killed_by_luke": 3,
-  "open": 8
+  "open": 10
  },
  "spend": {
   "cap_gbp": 50.0,
