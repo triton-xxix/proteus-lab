@@ -1,5 +1,5 @@
 {
- "next_id": 241,
+ "next_id": 242,
  "items": [
   {
    "id": "P-0001",
@@ -5868,6 +5868,32 @@
     "number": "0 launches: no mint address in the folder, the coin needs Luke to sign",
     "at": "2026-10-28T12:34:06+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0241",
+   "title": "DWD Munich Stadt (03379) 10-minute air temperature, keyless zip 10minutenwerte_TU_03379_akt.zip: over the last 60 days, by what local hour is the daily high already reached on 90 percent of days (the latest hour an exchange high-temperature call still has something to forecast)",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-28",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-28T12:34:51+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "90 percent of days have their high by 16:00 local (Europe/Berlin)",
+    "at": "2026-10-28T12:34:55+0000"
    }
   }
  ]
