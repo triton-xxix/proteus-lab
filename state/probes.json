@@ -1,5 +1,5 @@
 {
- "next_id": 251,
+ "next_id": 252,
  "items": [
   {
    "id": "P-0001",
@@ -6114,6 +6114,28 @@
     "experiments/2026-10-28-P-0250"
    ],
    "minutes": 1,
+   "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0251",
+   "title": "Munich airport v city daily high: DWD 10-minute data for 01262 Flughafen and 03379 Stadt over the same 60 days; hour of the high at each and share of days the two highs differ by 1C or more",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-28",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-28T23:42:09+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-28T23:42:22+0000",
+   "note": "Measured: 60 days 27 Aug to 27 Oct, city high minus airport +0.78C mean, city warmer 82% of days, highs 1C or more apart on 42%, same rounded degree only 35%; median peak 15:10 city v 15:40 airport, airport later on 67%. The settlement station decides the degree two days in three.",
+   "artefacts": [
+    "experiments/2026-10-28-P-0251"
+   ],
+   "minutes": 0,
    "calls": 4,
    "denied": [],
    "luke": false
