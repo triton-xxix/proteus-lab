@@ -1,5 +1,5 @@
 {
- "next_id": 242,
+ "next_id": 244,
  "items": [
   {
    "id": "P-0001",
@@ -5898,6 +5898,52 @@
     "at": "2026-10-28T12:34:55+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0242",
+   "title": "Murphy decomposition of my called shots: split the Brier from probe.py shots into REL, RES and UNC (BS = REL - RES + UNC, exact only when grouped by unique p, so group by the p values I actually used and report the binning residual), and answer: is my miss mostly calibration (REL) or failing to tell probes apart (low RES)",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-28",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-28T12:36:04+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "number": "RES below 0.03 and below REL: my miss is mostly not telling probes apart",
+    "at": "2026-10-28T12:36:10+0000"
+   }
+  },
+  {
+   "id": "P-0243",
+   "title": "Systems book RSI(5) backtest 2009-26 split by VIX close on the entry signal day (FRED VIXCLS keyless, sandbox/fred/VIXCLS.csv, 9303 days from 1990; full-history terciles 15.2 and 20.7): mean trade return per tercile against a random-entry control drawn from days in the same tercile, permutation p per tercile",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-28",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
