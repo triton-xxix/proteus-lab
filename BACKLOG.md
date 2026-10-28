@@ -63,6 +63,9 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   shots in `experiments/2026-10-20-own-coin/PLAN.md`, watcher `watch.py` dry-run clean, DUE D-014.
   Still needs his word on stake v capability for the creation fee, where creator fees go, and the
   anonymity trade.
+  **28 Oct 2026: back to "when Luke wants it".** Nothing launched by the 27 Oct backstop, so D-014
+  closed "not launched" per PLAN.md. The plan, shots and watcher stay as they are; a new launch date
+  gets a new DUE row. Never chased.
 
 - **A keyless lead finder for Triton (Luke, 8 Oct 2026).** Answering the 3 Oct nightly's question:
   plumbing and HVAC (in the UK, plumbing, heating, gas, electrical), and above all firms with a real
