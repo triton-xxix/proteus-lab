@@ -1,0 +1,345 @@
+{
+ "markets": 28,
+ "settled": 9,
+ "snapshots": 16,
+ "all": {
+  "n": 16,
+  "mean_price": 0.418,
+  "win_rate": 0.5,
+  "overpricing": -0.082,
+  "brier": 0.21
+ },
+ "bands": {
+  "over 24 h before event_start": {
+   "n": 7,
+   "mean_price": 0.45,
+   "win_rate": 0.714,
+   "overpricing": -0.264,
+   "brier": 0.244
+  },
+  "0 to 24 h before": {
+   "n": 8,
+   "mean_price": 0.391,
+   "win_rate": 0.375,
+   "overpricing": 0.016,
+   "brier": 0.1855
+  },
+  "after event_start (in play)": {
+   "n": 1,
+   "mean_price": 0.41,
+   "win_rate": 0.0,
+   "overpricing": 0.41,
+   "brier": 0.1682
+  }
+ },
+ "last_before_start": {
+  "n": 9,
+  "mean_price": 0.404,
+  "win_rate": 0.444,
+  "overpricing": -0.04,
+  "brier": 0.1933
+ },
+ "per_market": {
+  "167966661": {
+   "event": "October 3rd, 2026",
+   "settled": false
+  },
+  "168158822": {
+   "event": "October 4th, 2026",
+   "settled": false
+  },
+  "168366390": {
+   "event": "October 5th, 2026",
+   "settled": false
+  },
+  "168597995": {
+   "event": "October 6th, 2026",
+   "settled": false
+  },
+  "168832248": {
+   "event": "October 7th, 2026",
+   "settled": false
+  },
+  "169029899": {
+   "event": "October 8th, 2026",
+   "settled": false
+  },
+  "169228849": {
+   "event": "October 9th, 2026",
+   "settled": false
+  },
+  "169434174": {
+   "event": "October 10th, 2026",
+   "settled": false
+  },
+  "169621747": {
+   "event": "October 11th, 2026",
+   "settled": false
+  },
+  "169818944": {
+   "event": "October 12th, 2026",
+   "settled": false
+  },
+  "170094617": {
+   "event": "October 13th, 2026",
+   "settled": false
+  },
+  "170385564": {
+   "event": "October 14th, 2026",
+   "settled": false
+  },
+  "170611580": {
+   "event": "October 15th, 2026",
+   "settled": false
+  },
+  "170843157": {
+   "event": "October 16th, 2026",
+   "settled": false
+  },
+  "171057809": {
+   "event": "October 17th, 2026",
+   "settled": false
+  },
+  "171249242": {
+   "event": "October 18th, 2026",
+   "settled": false
+  },
+  "171467759": {
+   "event": "October 19th, 2026",
+   "settled": true,
+   "winner": [
+    "14\u00b0C"
+   ]
+  },
+  "171747847": {
+   "event": "October 20th, 2026",
+   "settled": true,
+   "winner": [
+    "9\u00b0C"
+   ]
+  },
+  "172015561": {
+   "event": "October 21st, 2026",
+   "settled": true,
+   "winner": [
+    "11\u00b0C"
+   ]
+  },
+  "172237926": {
+   "event": "October 22nd, 2026",
+   "settled": true,
+   "winner": [
+    "13\u00b0C"
+   ]
+  },
+  "172485650": {
+   "event": "October 23rd, 2026",
+   "settled": true,
+   "winner": [
+    "11\u00b0C"
+   ]
+  },
+  "172745526": {
+   "event": "October 24th, 2026",
+   "settled": true,
+   "winner": [
+    "11\u00b0C"
+   ]
+  },
+  "172942563": {
+   "event": "October 25th, 2026",
+   "settled": true,
+   "winner": [
+    "14\u00b0C"
+   ]
+  },
+  "173174460": {
+   "event": "October 26th, 2026",
+   "settled": true,
+   "winner": [
+    "12\u00b0C"
+   ]
+  },
+  "173478171": {
+   "event": "October 27th, 2026",
+   "settled": true,
+   "winner": [
+    "16\u00b0C"
+   ]
+  },
+  "173782627": {
+   "event": "October 28th, 2026",
+   "settled": false
+  },
+  "174047034": {
+   "event": "October 29th, 2026",
+   "settled": false
+  },
+  "174296943": {
+   "event": "October 30th, 2026",
+   "settled": false
+  }
+ },
+ "rows": [
+  {
+   "market": "171467759",
+   "event": "October 19th, 2026",
+   "snap": "2026-10-17T22:25:28Z",
+   "hours_to_start": 25.6,
+   "fav": "15\u00b0C",
+   "fav_p": 0.2025,
+   "book_sum": 0.305,
+   "won": false
+  },
+  {
+   "market": "171467759",
+   "event": "October 19th, 2026",
+   "snap": "2026-10-19T02:32:34Z",
+   "hours_to_start": -2.5,
+   "fav": "15\u00b0C",
+   "fav_p": 0.41015,
+   "book_sum": 0.97,
+   "won": false
+  },
+  {
+   "market": "171747847",
+   "event": "October 20th, 2026",
+   "snap": "2026-10-19T02:32:34Z",
+   "hours_to_start": 21.5,
+   "fav": "12\u00b0C",
+   "fav_p": 0.1926,
+   "book_sum": 0.903,
+   "won": false
+  },
+  {
+   "market": "171747847",
+   "event": "October 20th, 2026",
+   "snap": "2026-10-19T22:30:17Z",
+   "hours_to_start": 1.5,
+   "fav": "14\u00b0C",
+   "fav_p": 0.33445,
+   "book_sum": 0.957,
+   "won": false
+  },
+  {
+   "market": "172015561",
+   "event": "October 21st, 2026",
+   "snap": "2026-10-19T22:30:17Z",
+   "hours_to_start": 25.5,
+   "fav": "11\u00b0C",
+   "fav_p": 0.39265,
+   "book_sum": 0.968,
+   "won": true
+  },
+  {
+   "market": "172015561",
+   "event": "October 21st, 2026",
+   "snap": "2026-10-20T22:26:19Z",
+   "hours_to_start": 1.6,
+   "fav": "12\u00b0C",
+   "fav_p": 0.3235,
+   "book_sum": 0.901,
+   "won": false
+  },
+  {
+   "market": "172237926",
+   "event": "October 22nd, 2026",
+   "snap": "2026-10-20T22:26:19Z",
+   "hours_to_start": 25.6,
+   "fav": "13\u00b0C",
+   "fav_p": 0.49865,
+   "book_sum": 0.921,
+   "won": true
+  },
+  {
+   "market": "172485650",
+   "event": "October 23rd, 2026",
+   "snap": "2026-10-22T22:25:15Z",
+   "hours_to_start": 1.6,
+   "fav": "12\u00b0C",
+   "fav_p": 0.33905,
+   "book_sum": 0.892,
+   "won": false
+  },
+  {
+   "market": "172745526",
+   "event": "October 24th, 2026",
+   "snap": "2026-10-22T22:25:15Z",
+   "hours_to_start": 25.6,
+   "fav": "11\u00b0C",
+   "fav_p": 0.5586,
+   "book_sum": 0.881,
+   "won": true
+  },
+  {
+   "market": "172745526",
+   "event": "October 24th, 2026",
+   "snap": "2026-10-23T22:30:50Z",
+   "hours_to_start": 1.5,
+   "fav": "11\u00b0C",
+   "fav_p": 0.51935,
+   "book_sum": 0.993,
+   "won": true
+  },
+  {
+   "market": "172942563",
+   "event": "October 25th, 2026",
+   "snap": "2026-10-23T22:30:50Z",
+   "hours_to_start": 25.5,
+   "fav": "14\u00b0C",
+   "fav_p": 0.36925,
+   "book_sum": 0.915,
+   "won": true
+  },
+  {
+   "market": "172942563",
+   "event": "October 25th, 2026",
+   "snap": "2026-10-24T22:26:41Z",
+   "hours_to_start": 1.6,
+   "fav": "14\u00b0C",
+   "fav_p": 0.4051,
+   "book_sum": 0.969,
+   "won": true
+  },
+  {
+   "market": "173174460",
+   "event": "October 26th, 2026",
+   "snap": "2026-10-24T22:26:41Z",
+   "hours_to_start": 25.6,
+   "fav": "12\u00b0C",
+   "fav_p": 0.59145,
+   "book_sum": 0.977,
+   "won": true
+  },
+  {
+   "market": "173174460",
+   "event": "October 26th, 2026",
+   "snap": "2026-10-25T23:26:08Z",
+   "hours_to_start": 0.6,
+   "fav": "12\u00b0C",
+   "fav_p": 0.4936,
+   "book_sum": 0.941,
+   "won": true
+  },
+  {
+   "market": "173478171",
+   "event": "October 27th, 2026",
+   "snap": "2026-10-25T23:26:08Z",
+   "hours_to_start": 24.6,
+   "fav": "17\u00b0C",
+   "fav_p": 0.53575,
+   "book_sum": 1.0,
+   "won": false
+  },
+  {
+   "market": "173478171",
+   "event": "October 27th, 2026",
+   "snap": "2026-10-26T23:25:43Z",
+   "hours_to_start": 0.6,
+   "fav": "17\u00b0C",
+   "fav_p": 0.5238,
+   "book_sum": 0.999,
+   "won": false
+  }
+ ]
+}
