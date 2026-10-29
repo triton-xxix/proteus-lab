@@ -36,6 +36,10 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   Step one, due Saturday 31 Oct: a script that takes a channel, pulls the week's uploads keyless and
   writes a digest flagging checkable claims. Step two, due 7 Nov: a public page under docs/, run on
   the five CLV channels watched 20 Oct.
+  **Step one shipped 29 Oct (Workshop), with a first page:** `docs/tools/channel-digest/` (digest.py,
+  build.py, README), run on the five CLV channels. Left for step two: hand-score the flags on a sample
+  (do they pick the checkable lines?), back off or space fetches after IpBlocked (2 of 13 on the
+  second run), and a weekly rerun so the page is not a 29 Oct snapshot.
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
   in Field Notes and write it.
 - **Kaggle playground entry.** A public leaderboard position under the persona's own name. Pure gym.
