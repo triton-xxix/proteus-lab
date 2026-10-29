@@ -6264,22 +6264,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-29T12:37:48+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-29T12:38:30+0000",
+   "note": "Measured: the 27 games logged think_s 1.0 move in a median 1.04 s (range 1.04 to 1.12); the 22 at 0.3 and 11 blank move in 0.40 s. Shot said 0.9 to 1.3 s with the low median from 0.3 or blank games: hit. The bot thinks what it is set to, plus 0.04 to 0.1 s. The one loss (mPEN9pM0, 12 Oct, raspfish 3016) was a 201.6 s hang on one move, lost on time (export status outoftime); GAMES.csv logs it as started, a stale status. Not fixed here: the chess desk owns the file. Next: promote (morning chess run: log the final status from the export, and look for the 12 Oct hang in the bot log).",
+   "artefacts": [
+    "experiments/2026-10-29-P-0256"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "games logged at think_s 1.0 measure a median 0.9 to 1.3 s a move; the low overall median comes from 0.3 s or unlogged games",
-    "at": "2026-10-29T12:37:55+0000"
+    "at": "2026-10-29T12:37:55+0000",
+    "hit": true
    }
   }
  ]

@@ -1,0 +1,581 @@
+{
+ "by_think_s": {
+  "0.3": {
+   "games": 22,
+   "median_of_medians_s": 0.4,
+   "min": 0.4,
+   "max": 0.4,
+   "first": "2026-10-10T07:01:41Z",
+   "last": "2026-10-23T07:09:08Z"
+  },
+  "1.0": {
+   "games": 27,
+   "median_of_medians_s": 1.04,
+   "min": 1.04,
+   "max": 1.12,
+   "first": "2026-10-09T22:48:16Z",
+   "last": "2026-10-29T08:06:06Z"
+  },
+  "blank": {
+   "games": 11,
+   "median_of_medians_s": 0.4,
+   "min": 0.4,
+   "max": 0.4,
+   "first": "2026-10-03T11:41:18Z",
+   "last": "2026-10-09T07:07:20Z"
+  }
+ },
+ "loss": [
+  {
+   "id": "mPEN9pM0",
+   "finished": "2026-10-12T07:30:49Z",
+   "think_s": "1.0",
+   "result": "loss",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 10.183,
+   "max_s": 201.57
+  }
+ ],
+ "rows": [
+  {
+   "id": "UmxnuFAD",
+   "finished": "2026-10-03T11:41:18Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.488,
+   "max_s": 2.24
+  },
+  {
+   "id": "M6nGUrlK",
+   "finished": "2026-10-04T22:41:38Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.474,
+   "max_s": 2.1
+  },
+  {
+   "id": "6fLHrF2B",
+   "finished": "2026-10-04T22:42:30Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.544,
+   "max_s": 2.04
+  },
+  {
+   "id": "Cvcig4GO",
+   "finished": "2026-10-04T22:44:52Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.493,
+   "max_s": 2.03
+  },
+  {
+   "id": "nhMf8XUZ",
+   "finished": "2026-10-05T22:54:27Z",
+   "think_s": "blank",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.465,
+   "max_s": 2.03
+  },
+  {
+   "id": "F7SaoXM6",
+   "finished": "2026-10-06T22:54:17Z",
+   "think_s": "blank",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.455,
+   "max_s": 1.96
+  },
+  {
+   "id": "41e2YbAx",
+   "finished": "2026-10-06T23:01:05Z",
+   "think_s": "blank",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.436,
+   "max_s": 2.37
+  },
+  {
+   "id": "HQz6HAtS",
+   "finished": "2026-10-08T22:47:02Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.379,
+   "max_s": 0.48
+  },
+  {
+   "id": "l6FpyJfn",
+   "finished": "2026-10-09T06:57:50Z",
+   "think_s": "blank",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.468,
+   "max_s": 1.99
+  },
+  {
+   "id": "h1lCzzOr",
+   "finished": "2026-10-09T07:03:01Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.429,
+   "max_s": 2.11
+  },
+  {
+   "id": "4Bhsh6cb",
+   "finished": "2026-10-09T07:07:20Z",
+   "think_s": "blank",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.405,
+   "max_s": 0.56
+  },
+  {
+   "id": "a0w0GeDj",
+   "finished": "2026-10-09T22:48:16Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.068,
+   "max_s": 2.04
+  },
+  {
+   "id": "yo3jf6ye",
+   "finished": "2026-10-10T06:59:37Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.094,
+   "max_s": 2.01
+  },
+  {
+   "id": "wEKPfaym",
+   "finished": "2026-10-10T07:01:41Z",
+   "think_s": "0.3",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.447,
+   "max_s": 2.0
+  },
+  {
+   "id": "uYobIIMC",
+   "finished": "2026-10-10T07:05:45Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.08,
+   "measured_mean_s": 1.107,
+   "max_s": 2.0
+  },
+  {
+   "id": "nLqpqPk9",
+   "finished": "2026-10-10T22:45:15Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.099,
+   "max_s": 1.99
+  },
+  {
+   "id": "G0Z8JmBR",
+   "finished": "2026-10-10T22:47:43Z",
+   "think_s": "0.3",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.453,
+   "max_s": 2.03
+  },
+  {
+   "id": "xSPp3Efy",
+   "finished": "2026-10-11T07:01:31Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.405,
+   "max_s": 2.17
+  },
+  {
+   "id": "fHzdwCnk",
+   "finished": "2026-10-11T07:07:53Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.034,
+   "max_s": 2.16
+  },
+  {
+   "id": "DYOTjAST",
+   "finished": "2026-10-11T07:15:00Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.06,
+   "max_s": 2.05
+  },
+  {
+   "id": "CMzcXaJE",
+   "finished": "2026-10-11T22:41:08Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.495,
+   "max_s": 2.1
+  },
+  {
+   "id": "LrVPTNTn",
+   "finished": "2026-10-11T22:44:48Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.414,
+   "max_s": 2.01
+  },
+  {
+   "id": "cZjkWB2m",
+   "finished": "2026-10-11T22:45:16Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.479,
+   "max_s": 2.04
+  },
+  {
+   "id": "NBPMiQLF",
+   "finished": "2026-10-12T07:02:28Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.09,
+   "max_s": 2.08
+  },
+  {
+   "id": "zha1DqJl",
+   "finished": "2026-10-12T07:09:40Z",
+   "think_s": "0.3",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.401,
+   "max_s": 2.09
+  },
+  {
+   "id": "mPEN9pM0",
+   "finished": "2026-10-12T07:30:49Z",
+   "think_s": "1.0",
+   "result": "loss",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 10.183,
+   "max_s": 201.57
+  },
+  {
+   "id": "T9U8AAOT",
+   "finished": "2026-10-12T23:11:31Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.078,
+   "max_s": 2.16
+  },
+  {
+   "id": "Rcs7cSRx",
+   "finished": "2026-10-13T07:00:23Z",
+   "think_s": "0.3",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.399,
+   "max_s": 0.56
+  },
+  {
+   "id": "hR1dEhx2",
+   "finished": "2026-10-13T07:08:04Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.438,
+   "max_s": 2.11
+  },
+  {
+   "id": "bK8NBxh0",
+   "finished": "2026-10-14T06:56:22Z",
+   "think_s": "0.3",
+   "result": "draw",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.461,
+   "max_s": 1.99
+  },
+  {
+   "id": "Tpfxmsti",
+   "finished": "2026-10-14T06:58:01Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.127,
+   "max_s": 1.97
+  },
+  {
+   "id": "zwTbn59p",
+   "finished": "2026-10-14T07:04:20Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.093,
+   "max_s": 1.28
+  },
+  {
+   "id": "3yTw0tzs",
+   "finished": "2026-10-16T06:57:16Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.417,
+   "max_s": 0.56
+  },
+  {
+   "id": "aes8qyAd",
+   "finished": "2026-10-19T06:59:52Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.422,
+   "max_s": 2.05
+  },
+  {
+   "id": "3cQIZEIt",
+   "finished": "2026-10-19T07:02:59Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.444,
+   "max_s": 2.08
+  },
+  {
+   "id": "hMeKOUac",
+   "finished": "2026-10-20T06:59:39Z",
+   "think_s": "1.0",
+   "result": "draw",
+   "measured_median_s": 1.12,
+   "measured_mean_s": 1.118,
+   "max_s": 1.97
+  },
+  {
+   "id": "5BUSDJUJ",
+   "finished": "2026-10-20T07:05:38Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.428,
+   "max_s": 2.22
+  },
+  {
+   "id": "wjRNY2Ha",
+   "finished": "2026-10-20T07:10:50Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.434,
+   "max_s": 2.05
+  },
+  {
+   "id": "WdNa51ds",
+   "finished": "2026-10-21T07:01:12Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.441,
+   "max_s": 2.15
+  },
+  {
+   "id": "5BnAFUZb",
+   "finished": "2026-10-21T07:06:08Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.447,
+   "max_s": 2.09
+  },
+  {
+   "id": "vSy9joyq",
+   "finished": "2026-10-21T07:11:49Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.421,
+   "max_s": 2.08
+  },
+  {
+   "id": "nmMrVmK7",
+   "finished": "2026-10-22T07:00:21Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.12,
+   "measured_mean_s": 1.097,
+   "max_s": 2.13
+  },
+  {
+   "id": "Jyu3vNdr",
+   "finished": "2026-10-22T07:06:53Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.426,
+   "max_s": 2.13
+  },
+  {
+   "id": "EbyX8abj",
+   "finished": "2026-10-22T07:11:34Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.12,
+   "measured_mean_s": 1.083,
+   "max_s": 2.05
+  },
+  {
+   "id": "FSbPi9IO",
+   "finished": "2026-10-23T07:00:41Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.41,
+   "max_s": 2.1
+  },
+  {
+   "id": "mGZIjQAj",
+   "finished": "2026-10-23T07:02:47Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.435,
+   "max_s": 2.03
+  },
+  {
+   "id": "yvdNBcef",
+   "finished": "2026-10-23T07:09:08Z",
+   "think_s": "0.3",
+   "result": "win",
+   "measured_median_s": 0.4,
+   "measured_mean_s": 0.419,
+   "max_s": 2.12
+  },
+  {
+   "id": "L5vicmQL",
+   "finished": "2026-10-24T07:00:41Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.07,
+   "measured_mean_s": 1.085,
+   "max_s": 1.2
+  },
+  {
+   "id": "xAUbGMwe",
+   "finished": "2026-10-24T07:04:09Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.076,
+   "max_s": 2.03
+  },
+  {
+   "id": "agp0YC98",
+   "finished": "2026-10-24T07:10:00Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.12,
+   "measured_mean_s": 1.08,
+   "max_s": 2.18
+  },
+  {
+   "id": "RFumvpDS",
+   "finished": "2026-10-25T08:00:57Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.046,
+   "max_s": 2.13
+  },
+  {
+   "id": "U3riLHUP",
+   "finished": "2026-10-25T08:04:20Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.045,
+   "max_s": 2.07
+  },
+  {
+   "id": "WMr5yREu",
+   "finished": "2026-10-25T08:07:18Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.12,
+   "measured_mean_s": 1.065,
+   "max_s": 2.2
+  },
+  {
+   "id": "DxoYpeBU",
+   "finished": "2026-10-26T08:03:14Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.067,
+   "max_s": 2.07
+  },
+  {
+   "id": "nYLHRXkp",
+   "finished": "2026-10-26T08:08:06Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.085,
+   "max_s": 2.08
+  },
+  {
+   "id": "P7bPVLVh",
+   "finished": "2026-10-26T08:11:13Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.048,
+   "max_s": 2.08
+  },
+  {
+   "id": "GgLAo5kl",
+   "finished": "2026-10-28T07:57:36Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.025,
+   "max_s": 1.2
+  },
+  {
+   "id": "eO7m2Q0V",
+   "finished": "2026-10-29T08:01:02Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.04,
+   "measured_mean_s": 1.066,
+   "max_s": 2.05
+  },
+  {
+   "id": "FvB6ZoI3",
+   "finished": "2026-10-29T08:03:25Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.08,
+   "measured_mean_s": 1.057,
+   "max_s": 2.03
+  },
+  {
+   "id": "fCcJHVpO",
+   "finished": "2026-10-29T08:06:06Z",
+   "think_s": "1.0",
+   "result": "win",
+   "measured_median_s": 1.12,
+   "measured_mean_s": 1.089,
+   "max_s": 2.02
+  }
+ ]
+}
