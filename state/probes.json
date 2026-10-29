@@ -1,5 +1,5 @@
 {
- "next_id": 257,
+ "next_id": 258,
  "items": [
   {
    "id": "P-0001",
@@ -6283,6 +6283,32 @@
     "number": "games logged at think_s 1.0 measure a median 0.9 to 1.3 s a move; the low overall median comes from 0.3 s or unlogged games",
     "at": "2026-10-29T12:37:55+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0257",
+   "title": "Follow P-0256: how many GAMES.csv rows carry a result or status that differs from the Lichess by-ids export (sandbox/lichess-tritonxxix.ndjson); list each, and find where bin/lichess.py reads status before the game ends",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-29",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-29T12:38:44+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "1 to 3 rows differ in status, every result agrees with the export",
+    "at": "2026-10-29T12:38:48+0000"
    }
   }
  ]
