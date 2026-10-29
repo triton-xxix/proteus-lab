@@ -1,5 +1,5 @@
 {
- "next_id": 256,
+ "next_id": 257,
  "items": [
   {
    "id": "P-0001",
@@ -6235,9 +6235,38 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-29T12:36:21+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-29T12:37:42+0000",
+   "note": "Measured from the clocks of all 60 rated games: median per-game think 0.47 s in draws (16) v 0.49 s in wins (43), Mann-Whitney p 0.19; shot said within 0.3 s (hit) and p above 0.2 (missed by 0.01). Draws track opponent strength, not speed: median opponent 3003 in draws v 1906 in wins. The bot moves in about half a second, under the 1.0 s D-010 registered, and the one loss averaged 10.2 s a move (a lag or hang?). Per-user export said Not found keyless; the by-ids export of GAMES.csv worked. Next: deepen (queued P-0256: configured v measured think, and the loss).",
+   "artefacts": [
+    "experiments/2026-10-29-P-0255"
+   ],
+   "minutes": 1,
+   "calls": 14,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "median think per move in draws within 0.3 s of wins, Mann-Whitney p above 0.2 (no link)",
+    "at": "2026-10-29T12:36:27+0000",
+    "hit": true
+   }
+  },
+  {
+   "id": "P-0256",
+   "title": "Deepen P-0255: does tritonxxix actually think the 1.0 s a move D-010 registered? Per game measured mean think (P-0255 results.json) against GAMES.csv think_s and the D-010 start date; and open the one loss (mean 10.2 s a move) for a lag or hang in the bot log",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-29",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -6245,13 +6274,7 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false,
-   "shot": {
-    "expect": "works",
-    "p": 0.75,
-    "number": "median think per move in draws within 0.3 s of wins, Mann-Whitney p above 0.2 (no link)",
-    "at": "2026-10-29T12:36:27+0000"
-   }
+   "luke": false
   }
  ]
 }
