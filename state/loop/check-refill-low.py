@@ -7,4 +7,5 @@ rows = p.unused_refill_rows()
 print("unused rows:", [r[0] for r in rows])
 print("next:", p.next_refill_source()[0] if p.next_refill_source() else None)
 spare = len(rows) - 1
-print("LOW would print:", spare < 2 * p.REFILL_MAX, "(spare %d, line %d)" % (spare, 2 * p.REFILL_MAX))
+print("LOW would print:", spare < p.REFILL_LOW_ROWS, "(spare %d, line %d)" % (spare, p.REFILL_LOW_ROWS))   # REFILL_MAX gone 29 Oct 2026, F-0051
+print("SOURCES would print (reserve %d):" % p.REFILL_RESERVE, spare < p.REFILL_RESERVE)

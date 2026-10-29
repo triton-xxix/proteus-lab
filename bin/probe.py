@@ -21,10 +21,12 @@ Design (2026-09-24, Luke's prompt 5):
   - `next` checks, in this order: HALT file, deadline, minutes floor, probe cap, call cap, then
     picks the first runnable item. An item whose estimate is over the time left but within
     FIT_STRETCH times it is runnable, after the ones that fit cleanly (7 Oct 2026). If nothing
-    runnable is left it prints REFILL with the next unused source in REFILL-SOURCES.md (6 Oct,
-    capped), and otherwise stops the loop with the reason in plain words (queue empty; everything
-    left needs something I do not have; everything left is waiting on a date or on the Sunday
-    cull; why no refill). It never invents a probe itself: a refill is a source to learn from.
+    runnable is left it prints REFILL with the next unused source in REFILL-SOURCES.md (6 Oct;
+    no count cap since 29 Oct, a reserve of rows instead), SOURCES when that list is down to the
+    reserve with time left, and otherwise stops the loop with the reason in plain words (queue
+    empty; everything left needs something I do not have; everything left is waiting on a date or
+    on the Sunday cull; why no refill). It never invents a probe itself: a refill is a source to
+    learn from.
   - `verdict` counts the tool calls and denials the unattended hook logged for this session since
     the probe started, writes the register line and the run-log entry, then commits and pushes
     just those files. Under HALT it logs and does not commit. One commit per probe: the timestamp
@@ -85,11 +87,16 @@ FIT_STRETCH = 2.0
 # Refill (6 Oct 2026, Luke: "ran out of anything runnable" read as doing the bare minimum). An empty
 # or blocked queue with time left prints REFILL instead of STOP: go out to the first unused source in
 # field-notes/REFILL-SOURCES.md, learn one thing, queue one build with `add --source refill`, then
-# ask `next` again. At most REFILL_MAX a night, only with REFILL_MIN_LEFT minutes left. On by default
-# since 7 Oct (the 6 Oct loop ran on a prompt without `--refill` and stopped); `--no-refill` turns it off.
-# 3 from 27 Oct 2026: four nightly loops running (24 to 27 Oct) stopped on the cap of 2 with about
-# 50 minutes left, each refill build taking under 5; the 25-minute floor still guards the close.
-REFILL_MAX = 3
+# ask `next` again. Only with REFILL_MIN_LEFT minutes left. On by default since 7 Oct (the 6 Oct loop
+# ran on a prompt without `--refill` and stopped); `--no-refill` turns it off.
+# No count cap since 29 Oct 2026 (F-0051). The cap went 2 to 3 on 27 Oct and the 28 Oct loop still
+# stopped on it at 23:42 with 53 minutes left: five nightly loops in a row (24 to 28 Oct) ended on the
+# refill count, none on the clock, seven probes in seven minutes. The night is bounded by the deadline,
+# the 25-minute floor, the probe cap and the call cap, like every other probe. What a refill must not
+# do is eat REFILL-SOURCES.md: REFILL_RESERVE unused rows stay back for the next night, and when the
+# list is down to them `next` prints SOURCES (add rows, then ask again) instead of a refill or a STOP.
+REFILL_RESERVE = 3
+REFILL_LOW_ROWS = 6           # LOW warning when fewer unused rows than this remain after tonight's pick
 REFILL_MIN_LEFT = 25
 REFILL_SOURCES = ROOT + "field-notes/REFILL-SOURCES.md"
 INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is found
@@ -569,11 +576,13 @@ def cmd_next(a):
             return
     fit, why, pool = runnable(st, left)
     refill_on = not getattr(a, "no_refill", False)
-    src = next_refill_source() if refill_on and not fit else None
-    if not fit and src and left >= REFILL_MIN_LEFT and lp.get("refills", 0) < REFILL_MAX:
+    unused = unused_refill_rows() if refill_on and not fit else []
+    src = unused[0] if unused else None
+    spare = len(unused) - 1                  # unused rows left after this one
+    if not fit and refill_on and left >= REFILL_MIN_LEFT and src and spare >= REFILL_RESERVE:
         lp["refills"] = lp.get("refills", 0) + 1
         save_loop(lp)
-        print("REFILL %d of %d: nothing runnable in the queue and %d min left." % (lp["refills"], REFILL_MAX, left))
+        print("REFILL %d tonight: nothing runnable in the queue and %d min left." % (lp["refills"], left))
         print("source: #%s %s" % (src[0], src[1]))
         print("pull: %s (keyless; no git clone, no npm)" % src[2])
         print("build it suggests: %s" % src[3])
@@ -581,20 +590,23 @@ def cmd_next(a):
         print("    python3 %sbin/probe.py add \"...\" --source refill --est 25" % ROOT)
         print("    write today's date in row %s's `used` column of %s, then run `probe.py next` again." % (src[0], REFILL_SOURCES))
         # F-0043 (23 Oct 2026): the list ran dry on 22 Oct with 51 min left and nobody had been warned.
-        spare = len(unused_refill_rows()) - 1
-        if spare < 2 * REFILL_MAX:
-            print("LOW: %d unused source(s) after this one, under two nights' worth; add at least %d rows to %s before this run ends." % (
-                spare, 2 * REFILL_MAX, REFILL_SOURCES))
+        if spare < REFILL_LOW_ROWS:
+            print("LOW: %d unused source(s) after this one, under %d; add rows to %s before this run ends, or the next REFILL is refused at the reserve of %d." % (
+                spare, REFILL_LOW_ROWS, REFILL_SOURCES, REFILL_RESERVE))
+        print(bline)
+        return
+    if not fit and refill_on and left >= REFILL_MIN_LEFT:
+        # F-0051 (29 Oct 2026): the list, not a count, is what holds a refill back now, and rows can be
+        # added tonight, so this is not a STOP. The loop stays open; `stop --reason` closes it if nothing is worth adding.
+        print("SOURCES: nothing runnable in the queue, %d min left, and %s has %d unused row(s), at or under the reserve of %d kept for the next night." % (
+            left, REFILL_SOURCES, len(unused), REFILL_RESERVE))
+        print("do: add at least %d real rows to it with the Edit tool (a source to learn from, its keyless pull, the build it suggests), then run `probe.py next` again." % REFILL_RESERVE)
+        print("    if nothing is worth adding: python3 %sbin/probe.py stop --reason 'sources list at the reserve, %d min left'" % (ROOT, left))
         print(bline)
         return
     if not fit:
         if refill_on:
-            if not src:
-                refill_why = "every source in REFILL-SOURCES.md is used; add new ones"
-            elif lp.get("refills", 0) >= REFILL_MAX:
-                refill_why = "%d of %d refills used tonight" % (lp.get("refills", 0), REFILL_MAX)
-            else:
-                refill_why = "%d min left, under the %d needed for a refill" % (left, REFILL_MIN_LEFT)
+            refill_why = "%d min left, under the %d needed for a refill" % (left, REFILL_MIN_LEFT)
         if not pool:
             return stop_loop(lp, "queue empty" + ("; no refill: " + refill_why if refill_on else ""), st)
         parts = []
