@@ -1,5 +1,5 @@
 {
- "next_id": 255,
+ "next_id": 256,
  "items": [
   {
    "id": "P-0001",
@@ -6225,6 +6225,32 @@
     "number": "corrected RES under 0.005 (most of the 0.014 is bias), corrected REL still above 0.06",
     "at": "2026-10-29T12:35:14+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0255",
+   "title": "Lichess bot tritonxxix think time v result: export all rated games keyless (api/games/user/tritonxxix, clocks, NDJSON), per game the mean seconds my bot spent per move (clock deltas plus increment); do draws come with faster moves than wins (median think in draws v wins, Mann-Whitney p)?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-29",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-29T12:36:21+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "median think per move in draws within 0.3 s of wins, Mann-Whitney p above 0.2 (no link)",
+    "at": "2026-10-29T12:36:27+0000"
    }
   }
  ]
