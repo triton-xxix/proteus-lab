@@ -1087,7 +1087,7 @@
    "track": 10,
    "title": "Grow Your Skool Challenge: the videos in Dino Gomez's feed posts (Loom, Vimeo, YouTube, Skool-hosted)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/growskool-post-2024-10-14-every-single-week-i-fail-and-so-every-single-week-.txt",
     "field-notes/skool/transcripts/growskool-post-2024-10-14-want-more-subscribers-use-this-free-tool.txt",
@@ -1145,7 +1145,11 @@
     "field-notes/skool/transcripts/growskool-v-post-2026-09-01-skool-handed-me-2400-year-with-growth-boost.txt",
     "field-notes/skool/transcripts/growskool-v-post-2026-09-24-ep-1-how-to-drive-attendance-to-a-client-get.txt"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-29",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-29-S-54.md"
   },
   {
    "id": "S-55",
@@ -1161,7 +1165,7 @@
    "track": 10,
    "title": "Skool First 100: the videos in Lidia's feed posts (Loom, YouTube, Skool-hosted)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/transcripts/skool100-post-2026-03-15-100-members-bonus-call-recording.txt",
     "field-notes/skool/transcripts/skool100-post-2026-04-16-friday-community-crawl-see-update.txt",
@@ -1197,7 +1201,11 @@
     "field-notes/skool/transcripts/skool100-v-post-2026-09-30-if-you-join-tonight-here-s-your-october.txt",
     "field-notes/skool/transcripts/skool100-v-post-2026-10-01-90-in-60-second-is-pretty-good-roi.txt"
    ],
-   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch."
+   "why": "Track 10, Skool-on-Skool, pulled 19 Oct on Luke's ask. Goal line: Triton's 'Launch a Skool' framework (launching and growing a paid community). Read for what this adds: offer and pricing, about page, first members, engagement, discovery and Growth Boost, numbers with their context. Owners selling a programme: judge the mechanism, not the pitch.",
+   "assigned": "2026-10-29",
+   "tries": 1,
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-10-29-S-56.md"
   },
   {
    "id": "S-57",
