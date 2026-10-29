@@ -215,8 +215,13 @@ def ingest():
     else:
         os.makedirs(HERE + "/digests", exist_ok=True)
         dst = HERE + "/digests/%s.md" % day()
-        open(dst, "w").write(open(src).read())
-        line = "- Research desk: digest `grinder/research/digests/%s.md`." % day()
+        text = open(src).read()
+        if os.path.exists(dst) and open(dst).read() != text:
+            # F-0029 (29 Oct 2026): on 19 Oct the nightly's ingest overwrote a 03:30 session's digest for the
+            # same day. A second digest for a day keeps its own file; the first one stays what it was.
+            dst = HERE + "/digests/%s-%s.md" % (day(), time.strftime("%H%M"))
+        open(dst, "w").write(text)
+        line = "- Research desk: digest `grinder/research/digests/%s`." % os.path.basename(dst)
     with open(ROOT + "state/runs/%s.md" % day(), "a") as fh:
         fh.write(line + "\n")
     print(line)
