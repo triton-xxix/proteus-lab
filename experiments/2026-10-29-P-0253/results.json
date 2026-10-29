@@ -1,0 +1,29 @@
+{
+ "cost_round_trip": 0.001,
+ "halves": {
+  "2009-17": {
+   "full_trades": 499,
+   "full_mean_pct": 0.661,
+   "skip_trades": 413,
+   "skip_mean_pct": 0.76,
+   "skipped_trades": 86,
+   "skipped_mean_pct": 0.185,
+   "skip_minus_full_pts": 0.099,
+   "full_sum_pct": 329.9,
+   "skip_sum_pct": 313.9,
+   "skip_trades_per_year": 45.9
+  },
+  "2018-26": {
+   "full_trades": 467,
+   "full_mean_pct": 0.439,
+   "skip_trades": 389,
+   "skip_mean_pct": 0.488,
+   "skipped_trades": 78,
+   "skipped_mean_pct": 0.195,
+   "skip_minus_full_pts": 0.049,
+   "full_sum_pct": 204.8,
+   "skip_sum_pct": 189.6,
+   "skip_trades_per_year": 44.1
+  }
+ }
+}
