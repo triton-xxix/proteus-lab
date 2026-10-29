@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 191 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
+Verdicts so far: 192 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 191 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0254 | Bias-corrected Murphy split of my called-shot Brier (Ferro and Fricker 2012 estimators: REL and RES each less the within-group sampling term, UNC times N/(N-1)), exact-p groups as P-0242, every scored shot to date: how much of RES and REL survives the correction? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (241)
+## Verdicts (242)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-29 | P-0254 | Bias-corrected Murphy split of my called-shot Brier (Ferro and Fricker 2012 estimators: REL and RES each less the within-group sampling term, UNC times N/(N-1)), exact-p groups as P-0242, every scored shot to date: how much of RES and REL survives the correction? | **works** | Measured on 80 scored shots: bias-corrected REL 0.074 (from 0.081), RES 0.0077 (from 0.0136), UNC 0.091; five bins RES 0.003 to 0.001. Shot said RES under 0.005 and REL above 0.06: REL hit, RES missed. About half the exact-group resolution was sampling noise; the underconfidence is real. Caveat: the Exeter PDF returned an empty 202, estimators written from memory and not checked against the paper (identity closes, residual 0.000). Next: close (the P-0242 fix stands: higher p on works calls). | `experiments/2026-10-29-P-0254` | 0 min, 8 calls, 0 denied |
 | 2026-10-29 | P-0253 | Deepen P-0252: RSI(5) book with a skip rule when VIX/VIX3M on the signal day is at or above 1; full book v skip book, each in two halves (2009-17, 2018-26), with 0.1% round-trip costs; does the skip raise mean per trade in both halves? | **works** | Measured: skip-in-backwardation beats the full RSI(5) book per trade after 0.1% costs by +0.10 points in 2009-17 (0.76 v 0.66) and +0.049 in 2018-26 (0.49 v 0.44); shot said at least 0.05 in each, missed by a hair. Skipped trades still net about +0.19% in both halves (86 and 78 trades), so the summed return falls with the skip (330 to 314, 205 to 190 points). Shot taken after seeing the P-0252 pooled split, only the halves blind. Do not change the book: the skip raises mean, lowers total. Next: close (it would only matter if capital were constrained). | `experiments/2026-10-29-P-0253` | 0 min, 5 calls, 0 denied |
 | 2026-10-29 | P-0252 | RSI(5) book split by VIX/VIX3M on the signal day (FRED VIXCLS / VXVCLS, from 2009): backwardation (ratio >= 1) v contango, each against the P-0243 filtered random-entry control, 2000 draws. Question: does the signal beat luck in backwardation, and is the contango edge the same as the pooled +0.65%? | **works** | Measured: 164 of 966 trades (17%) had VIX/VIX3M at or above 1 on the signal day (8.0% of days since 2009); shot said under 10% (about 70), count missed. Backwardation +0.29% a trade v +0.86% random-entry control, excess -0.57%, p 0.96; contango +0.73% v +0.18%, excess +0.55%, p 0.000. Shot said backwardation not significant: hit, and it is worse than luck. The book edge sits entirely in contango. Caveat: no costs, control pool only 1110 symbol-days, no out-of-sample split. Next: deepen (queued: skip-in-backwardation rule, two halves, 0.1% costs). | `experiments/2026-10-29-P-0252` | 1 min, 8 calls, 0 denied |
 | 2026-10-28 | P-0251 | Munich airport v city daily high: DWD 10-minute data for 01262 Flughafen and 03379 Stadt over the same 60 days; hour of the high at each and share of days the two highs differ by 1C or more | **works** | Measured: 60 days 27 Aug to 27 Oct, city high minus airport +0.78C mean, city warmer 82% of days, highs 1C or more apart on 42%, same rounded degree only 35%; median peak 15:10 city v 15:40 airport, airport later on 67%. The settlement station decides the degree two days in three. | `experiments/2026-10-28-P-0251` | 0 min, 4 calls, 0 denied |

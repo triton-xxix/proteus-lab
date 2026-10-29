@@ -6206,22 +6206,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-29T12:35:02+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-29T12:35:43+0000",
+   "note": "Measured on 80 scored shots: bias-corrected REL 0.074 (from 0.081), RES 0.0077 (from 0.0136), UNC 0.091; five bins RES 0.003 to 0.001. Shot said RES under 0.005 and REL above 0.06: REL hit, RES missed. About half the exact-group resolution was sampling noise; the underconfidence is real. Caveat: the Exeter PDF returned an empty 202, estimators written from memory and not checked against the paper (identity closes, residual 0.000). Next: close (the P-0242 fix stands: higher p on works calls).",
+   "artefacts": [
+    "experiments/2026-10-29-P-0254"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "corrected RES under 0.005 (most of the 0.014 is bias), corrected REL still above 0.06",
-    "at": "2026-10-29T12:35:14+0000"
+    "at": "2026-10-29T12:35:14+0000",
+    "hit": true
    }
   }
  ]
