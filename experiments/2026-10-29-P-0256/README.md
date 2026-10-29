@@ -19,6 +19,10 @@ The bot does what its setting says, plus about 0.04 to 0.1 s of overhead. P-0255
 median was a mix of the two settings, 33 games at 0.3 s and 27 at 1.0 s. The two settings overlap in
 dates (9 to 23 Oct), as D-010's A/B test ran them side by side.
 
+**Correction (P-0257, same run).** The loss below was not a hang inside a move. The bot made 22 of its 23
+moves, then the task's 600 s tool timeout killed the call (F-0008, fixed 12 Oct with the 570 s resign cap
+at `bin/lichess.py:141`). The 201.6 s is the clock running out after the process died.
+
 **The loss.** mPEN9pM0, 12 Oct, against raspfish (3016), black, 22 plies. One move took 201.6 s; the
 export's status is `outoftime`. The bot hung for over three minutes on one move and lost on the clock.
 It was not outplayed. GAMES.csv logs the status as `started`, not `outoftime`, so the logger wrote the
