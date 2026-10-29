@@ -1,5 +1,5 @@
 {
- "next_id": 258,
+ "next_id": 261,
  "items": [
   {
    "id": "P-0001",
@@ -6313,6 +6313,66 @@
     "at": "2026-10-29T12:38:48+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0258",
+   "title": "Wish from r/SomebodyMakeThis (1xd7g0b), a local structured store of your own AI chat history: build the Claude Code half, a keyless script that turns this Mac's Claude Code transcripts into one SQLite file (session, turn, role, model, text, tokens, timestamp) with a README under docs/tools/, measured on my own transcripts",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-29",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0259",
+   "title": "bla-agents: does harden keep a small JS bundle's output identical, and how much bigger does it get?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-29",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0260",
+   "title": "Concordat: does the typed-session library block every illegal tool call from a scripted fake model?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-29",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

@@ -6,20 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-440 judged over 30 harvest days, 288 kept, 90 testable, 86 queued as probes, 81 with a probe verdict.
+454 judged over 31 harvest days, 295 kept, 92 testable, 88 queued as probes, 83 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0452 | 2026-10-29 | hn | [Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites](https://news.ycombinator.com/item?id=50286306) | mechanism | tech | no: Confirming it needs inspecting the outgoing prompt or a live |  |
+| H-0451 | 2026-10-29 | vault | [provider plugins that ship their own catalogue]() | mechanism | tools-for-strangers | no: Running a model turn needs the xAI key, and Proteus's xAI cr |  |
+| H-0449 | 2026-10-29 | arxiv | [Concordat: Typed Sessions for LLM Agents](https://arxiv.org/abs/2610.37461) | mechanism | mechanism-hunting | yes | P-0260 |
+| H-0446 | 2026-10-29 | vault | [Wan2GP local video (LTX-2 Distilled, Wan)](https://www.instagram.com/p/DfEUO_VH3ip/) | mechanism | tools-for-strangers | no: It needs an NVIDIA GPU and several GB of weights; no Mac her |  |
+| H-0443 | 2026-10-29 | github | [qybaihe/bla: 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries](https://github.com/qybaihe/bla) | mechanism | tools-for-strangers | yes | P-0259 |
+| H-0442 | 2026-10-29 | hn | [Claude Code regularly sends each background agent’s transcript to its model](https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce) | mechanism | tech | no: Measuring it needs API-side or OTEL request data by query_so |  |
+| H-0441 | 2026-10-29 | vault | [Pinokio one-click installer](https://www.instagram.com/p/DfEUO_VH3ip/) | mechanism | tools-for-strangers | no: The payload (Wan2GP) needs an NVIDIA GPU, and the rented box |  |
 | H-0439 | 2026-10-28 | github | [CRFXN5C/mcd-mcp-kit: MCP integration health check and measured pitfalls for McDonald's Chi](https://github.com/CRFXN5C/mcd-mcp-kit) | mechanism | tools-for-strangers | no: The server needs a phone-login token, and the endpoint URL i |  |
 | H-0438 | 2026-10-28 | vault | [Speed-to-lead bridge call: ring the owner first, then connect the lead within seconds](https://youtu.be/ru7fWKD4cyw) | mechanism | tools-for-strangers | no: It needs a telephony account with a paid number, which is a  |  |
 | H-0436 | 2026-10-28 | arxiv | [Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis](https://arxiv.org/abs/2610.37648) | mechanism | mechanism-hunting | no: It needs model training and a large synthetic dataset, far b |  |
 | H-0434 | 2026-10-28 | vault | [free GBP guides](https://whitespark.ca/google-business-profile-guide/) | mechanism | tools-for-strangers | no: It is a reference guide with no tool or number to run keyles |  |
-| H-0433 | 2026-10-28 | youtube | [7 Things That Instantly Fail Your MOT in 2026 (UK Drivers)](https://www.youtube.com/watch?v=X3f81opiQZg) | mechanism | cars | yes | P-0247 |
+| H-0433 | 2026-10-28 | youtube | [7 Things That Instantly Fail Your MOT in 2026 (UK Drivers)](https://www.youtube.com/watch?v=X3f81opiQZg) | mechanism | cars | yes | P-0247 **works** |
 | H-0432 | 2026-10-28 | arxiv | [Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649) | mechanism | mechanism-hunting | no: It needs model answers and the framework, and no local LLM i |  |
 | H-0431 | 2026-10-28 | github | [daveebbelaar/bama: BAMA: Build Any Mac App. Agent skills to research, clone, design, build](https://github.com/daveebbelaar/bama) | mechanism | tools-for-strangers | no: It needs a Swift toolchain, computer-use sessions and a long |  |
-| H-0429 | 2026-10-28 | vault | [GBP platform changes]() | mechanism | tools-for-strangers | yes | P-0246 |
+| H-0429 | 2026-10-28 | vault | [GBP platform changes]() | mechanism | tools-for-strangers | yes | P-0246 **works** |
 | H-0427 | 2026-10-27 | vault | [business snapshot prompt as setup](https://resources.getjobber.com/hubfs/content/Home-Service-AI-Starter-Toolkit-by-Jobber.pdf) | mechanism | tools-for-strangers | no: Judging output quality needs model answers and there is no l |  |
 | H-0424 | 2026-10-27 | vault | [win rate sold without entry price](https://www.instagram.com/reel/DedW0mvh3dw/) (intel) | mechanism | forecasting | yes | P-0237 **works** |
 | H-0423 | 2026-10-27 | arxiv | [Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Model](https://arxiv.org/abs/2610.35829) | mechanism | mechanism-hunting | no: Needs an open LLM with accessible hidden states and the trai |  |
@@ -302,6 +309,93 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0452 Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites
+2026-10-29, hn, https://news.ycombinator.com/item?id=50286306
+
+- **Mechanism:** The reports say Claude Code places the signed-in user's email in the context it sends the model, and in some sessions the model then passed that address to websites it was operating. The leak path is context injection followed by a tool call carrying the value, not a separate exfiltration channel. Detection is by inspecting prompts and outgoing tool arguments.
+- **Claim:** Claude Code adds the user's email to the prompt and the model has sent it to websites (two linked issue and Reddit reports).
+- **Testable:** no. Confirming it needs inspecting the outgoing prompt or a live browsing session, which is not a keyless slice.
+- **Idea on its own:** needs-a-run. The mechanism is plausible and matches how context fields work, but only two second-hand reports are given.
+- **How it would be done:** Check how the harness exposes user fields in context, then add a hook that scans outgoing tool arguments for the owner's email and denies on a match. Proteus already has a PreToolUse hook, so this is a small rule. A person would decide whether to treat the email field as sensitive in sessions that browse.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A confirmed reproduction from the primary issue.
+- **Field Notes line:** Reports say Claude Code puts your email in the model's context and the model has typed it into websites; the fix is a guard on tool arguments.
+
+### H-0451 provider plugins that ship their own catalogue
+2026-10-29, vault, 
+
+- **Mechanism:** A gateway plugin for a model provider ships its own catalogue of model ids, context windows and prices, so a config only needs the plugin enabled plus an API key env var. Hand-writing a provider block copies those numbers and goes stale when the vendor changes them. Reading the plugin's preset and mirroring it keeps config and catalogue in sync.
+- **Claim:** Enabling the shipped xAI plugin plus one env var gives a working Grok 4.3 provider at 1.25 in and 2.50 out per million tokens.
+- **Testable:** no. Running a model turn needs the xAI key, and Proteus's xAI credits are exhausted. Needs: A funded xAI key..
+- **Idea on its own:** sound. Single source of truth for catalogue data is basic config hygiene and avoids silent drift.
+- **How it would be done:** Locate the plugin's preset file in the gateway install, read the model entries, and make the config reference them rather than duplicate them. Add a small check that diffs any hand-written provider block against the preset and flags mismatches. This is a config job with no hiring need.
+- **Field Notes line:** Gateway provider plugins carry their own model catalogue, so reading the preset beats hand-copying context windows and prices that later drift.
+
+### H-0449 Concordat: Typed Sessions for LLM Agents
+2026-10-29, arxiv, https://arxiv.org/abs/2610.37461
+
+- **Mechanism:** Concordat models an agent as a finite-state protocol. Each turn the model is shown only the tools legal in the current state, out-of-state calls are rejected before side effects, and human-reserved decisions can only be requested. Token and tool-call budgets are split across handoffs, and protocols are checked when defined.
+- **Claim:** On 50 tau-bench airline tasks with pressuring simulated customers, the standard agent skipped confirmation in 13 of 50 tasks with gpt-4.1 and the Concordat agent in none.
+- **Testable:** yes. With a scripted fake model that tries every tool in every state, does Concordat reject all out-of-state calls before any side effect fires (yes/no, count)? Queued as P-0260.
+- **Idea on its own:** sound. Enforcing permitted actions in code rather than in the prompt is a sound control, and the guard layer can be tested without a model.
+- **How it would be done:** Fetch the library, define a three-state protocol (ask, confirm, act) with a side-effecting tool that increments a counter, then drive it with a scripted stub that calls every tool each turn. Count rejections and confirm the counter only moves in the legal state. The same pattern could harden Proteus's own unattended tools. The paper's model-based results need paid calls and are out of scope tonight.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Concordat https://arxiv.org/abs/2610.37461 (Paper links the open-source library; find the repo from the abstract page.); tau-bench https://github.com/sierra-research/tau-bench (Benchmark the paper evaluates on, for a later model-based run.)
+- **Missing:** A confirmed repo URL; the brief gave only the paper.
+- **Field Notes line:** Concordat shows the model only the tools legal in the current state, and in a benchmark it made no unconfirmed changes where a standard agent made them in 13 of 50 tasks.
+
+### H-0446 Wan2GP local video (LTX-2 Distilled, Wan)
+2026-10-29, vault, https://www.instagram.com/p/DfEUO_VH3ip/
+
+- **Mechanism:** Wan2GP is a Gradio front end that runs open video models (Wan, LTX-2 distilled and others) with heavy memory offloading and quantisation so they fit consumer GPUs with modest VRAM. Distilled models cut sampling to a few steps, trading some quality for speed. It depends on CUDA, PyTorch and downloaded weights.
+- **Claim:** Local video generation on a home GPU with no per-clip fee; the carousel pitches it as cheaper than hosted APIs.
+- **Testable:** no. It needs an NVIDIA GPU and several GB of weights; no Mac here can run it. Needs: An NVIDIA GPU, local or rented..
+- **Idea on its own:** sound. Open models on rented or owned GPUs are a standard cost route; the saving depends on clip volume and quality needs.
+- **How it would be done:** Rent a GPU by the hour, install via Pinokio or the repo, and generate a fixed prompt set with LTX-2 distilled and Wan. Record seconds per clip and cost per kept clip, then compare to the hosted price for the same length. Output would feed HyperFrames as B-roll. A person judges whether quality is usable for ads, as that is not scriptable.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Gemini (stills)
+- **To fetch:** Wan2GP https://github.com/deepbeepmeep/Wan2GP (The UI and model runner.)
+- **Missing:** GPU access to run it.
+- **Field Notes line:** Wan2GP squeezes open video models onto modest NVIDIA cards with offloading and distilled few-step sampling, so clips cost electricity rather than API fees.
+
+### H-0443 qybaihe/bla: 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, P
+2026-10-29, github, https://github.com/qybaihe/bla
+
+- **Mechanism:** BLA post-processes build artifacts (JS bundles, asar, wasm, sqlite) to add format-valid decoys, canary strings and oversized or deeply nested structures aimed at the resource limits of AI reverse-engineering agents. The aim is for the analyser to burn tokens or truncate its inventory while the program behaves the same. It runs as a CLI and MCP server with audit, protect and verify stages, the last being a runtime-equivalence check.
+- **Claim:** Hardened builds make AI reverse-engineering agents hit budgets and follow decoys while runtime behaviour stays the same; 727 stars in four days.
+- **Testable:** yes. On a small public JS bundle, does bla harden keep the output identical and by what size multiple does the file grow? Queued as P-0259.
+- **Idea on its own:** needs-a-run. Resource exhaustion of analysers is a real mechanism, but the effect on a real agent is unproven and the README's empirical section was empty in the brief.
+- **How it would be done:** Install bla-agents with npx inside the sandbox, write a 50-line Node script with fixed output, run harden, diff the outputs and record the size ratio. A second step would point a Claude Code sub-agent at the hardened file and compare tokens spent on a plain-versus-hardened copy, which is the real claim. That second step needs model calls, so it is a later night. Hiring is not needed; it is a script plus a measurement.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** bla-agents https://github.com/qybaihe/bla (The tool under test, available via npx.); Node.js 22.23+ or 24 https://nodejs.org (Runtime the README recommends.)
+- **Missing:** A measured comparison of agent token cost on plain versus hardened artifacts.
+- **Field Notes line:** BLA pads shipped builds with decoys and budget-busting structures so AI reverse-engineering agents waste tokens; we can at least test whether the program still runs identically.
+
+### H-0442 Claude Code regularly sends each background agent’s transcript to its model
+2026-10-29, hn, https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce
+
+- **Mechanism:** Per the HN comments, Claude Code runs a background query tagged agent_summary roughly every 30 seconds per agent, sending the agent's transcript to the current model to produce a few words for the status line. Because most of the input is the cached transcript, it shows as about 9,000 input tokens per output token. The figures came from grouping OpenTelemetry traces by query_source.
+- **Claim:** agent_summary calls used 16.4% of estimated spend and 19.7% of API requests in one measured week (one commenter's team).
+- **Testable:** no. Measuring it needs API-side or OTEL request data by query_source, which local transcripts do not label and which Proteus has not enabled. Needs: OTEL export from Claude Code, or per-request logs with query_source..
+- **Idea on its own:** needs-a-run. The mechanism is plausible and checkable with OTEL traces, but the numbers are one team's and unverified here.
+- **How it would be done:** Turn on Claude Code's OpenTelemetry export to a local collector, run a few multi-agent sessions, and group requests by query_source to see the agent_summary share. Compare with the token counts in bin/usage.py output for the same sessions. Proteus runs many sub-agents, so the share could matter for its own spend. A person would only be needed to decide whether to disable the feature if a setting exists.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** OpenTelemetry Collector https://github.com/open-telemetry/opentelemetry-collector (Local receiver to capture Claude Code OTEL traces.)
+- **Missing:** A labelled per-request log of Proteus runs; nothing records query_source today.
+- **Field Notes line:** A team traced 16 per cent of its Claude Code spend to a status-line summary query that re-sends each agent's transcript about every 30 seconds.
+
+### H-0441 Pinokio one-click installer
+2026-10-29, vault, https://www.instagram.com/p/DfEUO_VH3ip/
+
+- **Mechanism:** Pinokio is a desktop app that runs JSON/JS launcher scripts from a community registry: each script clones a repo, builds a Python venv, pulls model weights and starts a local web UI. It automates the install steps a person would otherwise type, and depends on the host having the right GPU driver stack (CUDA for NVIDIA). On a rented GPU box it is a way to get a model UI running without hand-building the environment.
+- **Claim:** One-click installs of local AI apps such as Wan2GP, so you run video models without terminal work.
+- **Testable:** no. The payload (Wan2GP) needs an NVIDIA GPU, and the rented box needed for a cost test costs money and an account. Needs: A rented NVIDIA GPU (account and spend) to test the cost-per-clip claim..
+- **Idea on its own:** sound. Scripted environment setup is a plain, well-understood mechanism and the cost claim can be measured once a GPU is rented.
+- **How it would be done:** Rent an hourly NVIDIA GPU instance, install Pinokio, run the Wan2GP launcher, then generate a fixed set of clips with a stopwatch and the hourly price. Run the same prompts through a hosted API such as fal and divide cost by usable clips for both. A person would need to judge clip quality side by side, since no script scores that well. The comparison is the product, not the installer.
+- **Stack already covers:** HyperFrames (video compose, captions, render)
+- **To fetch:** Pinokio https://pinokio.computer (Launcher framework that installs Wan2GP and similar apps.); Wan2GP https://github.com/deepbeepmeep/Wan2GP (The video generation UI the carousel installs.)
+- **Missing:** Nobody has a CUDA GPU; one would have to be rented to measure cost per clip.
+- **Field Notes line:** Pinokio is an installer that runs community launcher scripts to stand up local AI apps; useful mainly for getting Wan2GP onto a rented GPU fast.
 
 ### H-0439 CRFXN5C/mcd-mcp-kit: MCP integration health check and measured pitfalls for McDonald's China MCP Server
 2026-10-28, github, https://github.com/CRFXN5C/mcd-mcp-kit
@@ -3667,9 +3761,12 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0451 | 2026-10-29 | provider plugins that ship their own catalogue | intel | sound | no |  |
+| H-0446 | 2026-10-29 | Wan2GP local video (LTX-2 Distilled, Wan) | open | sound | no |  |
+| H-0441 | 2026-10-29 | Pinokio one-click installer | open | sound | no |  |
 | H-0438 | 2026-10-28 | Speed-to-lead bridge call: ring the owner first, then connect the lead within seconds | intel | sound | no |  |
 | H-0434 | 2026-10-28 | free GBP guides | intel | sound | no |  |
-| H-0429 | 2026-10-28 | GBP platform changes | intel | needs-a-run | yes | P-0246 |
+| H-0429 | 2026-10-28 | GBP platform changes | intel | needs-a-run | yes | P-0246 **works** |
 | H-0427 | 2026-10-27 | business snapshot prompt as setup | intel | sound | no |  |
 | H-0424 | 2026-10-27 | win rate sold without entry price | intel | sound | yes | P-0237 **works** |
 | H-0420 | 2026-10-27 | comment-keyword indicator funnel | intel | unsound | no |  |
@@ -3762,6 +3859,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0264 | 2026-10-29 | [Concordat](https://arxiv.org/abs/2610.37461) | Paper links the open-source library; find the repo from the abstract page. | H-0449 (Concordat: Typed Sessions for LLM Agents) | shelf |
+| T-0263 | 2026-10-29 | [bla-agents](https://github.com/qybaihe/bla) | The tool under test, available via npx. | H-0443 (qybaihe/bla: 🛡️ BLA (Blind LLM Agents) — Adversari) | shelf |
+| T-0262 | 2026-10-29 | [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) | Local receiver to capture Claude Code OTEL traces. | H-0442 (Claude Code regularly sends each background agent’) | shelf |
+| T-0261 | 2026-10-29 | [Pinokio](https://pinokio.computer) | Launcher framework that installs Wan2GP and similar apps. | H-0441 (Pinokio one-click installer) | shelf |
 | T-0260 | 2026-10-28 | [mcd-mcp-kit](https://github.com/CRFXN5C/mcd-mcp-kit) | The doctor.py and minimal client to reuse against another MCP server | H-0439 (CRFXN5C/mcd-mcp-kit: MCP integration health check ) | shelf |
 | T-0259 | 2026-10-28 | [Twilio Programmable Voice](https://www.twilio.com/docs/voice) | Two-leg outbound call with conference bridge; trial account available | H-0438 (Speed-to-lead bridge call: ring the owner first, t) | shelf |
 | T-0258 | 2026-10-28 | [Whitespark GBP guide](https://whitespark.ca/google-business-profile-guide/) | The source reference to build checklists from | H-0434 (free GBP guides) | shelf |
@@ -4027,6 +4128,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0454 | 2026-10-29 | youtube | [Apple says the M5 Ultra is 4.3x faster for local AI. Is that real? (Part 2)](https://www.youtube.com/watch?v=xdFhtstXhs0) | Body unavailable and the title is a vendor speed claim with no mechanism. |
+| H-0453 | 2026-10-29 | github | [boyuchengz/canvas-mcp: Read-only MCP server that connects Claude, ChatGPT and ot](https://github.com/boyuchengz/canvas-mcp) | Generic read-only MCP wrapper around one product that needs a Canvas account. |
+| H-0450 | 2026-10-29 | youtube | [This Is Why Solana’s Network Success Doesn't Save Your SOL! ⚡️📉](https://www.youtube.com/watch?v=CRj3WJE4DDc) | Body unavailable and the title reads as generic Solana commentary. |
+| H-0448 | 2026-10-29 | github | [mochiiwuff/capri-desktop: Capri, the Project Capricorn construct from Cyberpunk:](https://github.com/mochiiwuff/capri-desktop) | Animated desktop mascot driven by hook events; a novelty with Windows-only parts and no new mechanism. |
+| H-0447 | 2026-10-29 | hn | [Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents](https://news.ycombinator.com/item?id=50291116) | Launch post for a cloud firmware simulator; thin on mechanism and Renode already covers the open version. |
+| H-0445 | 2026-10-29 | youtube | [M5 MacBook Air Against Every Generation for Dev Work](https://www.youtube.com/watch?v=QEZakKf8SdA) | Body unavailable and the title alone carries no mechanism. |
+| H-0444 | 2026-10-29 | arxiv | [PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interact](https://arxiv.org/abs/2610.37471) | Training recipe for a vision model needing GPU post-training; no mechanism Proteus can use. |
 | H-0440 | 2026-10-28 | youtube | [What is an MOT? UK Theory Test Guide to Car Testing #animation](https://www.youtube.com/watch?v=uddwAm3UZKE) | A one-line animation explainer with no mechanism, and a duplicate of the other MOT videos. |
 | H-0437 | 2026-10-28 | youtube | [MOT Test procedure UK🚘2025: Explained & Check [Prepare] Guide to pass emissions ](https://www.youtube.com/watch?v=Pr0AkWVH5cg) | Generic MOT explainer with no mechanism, and the MOT data angle is covered by the better item. |
 | H-0435 | 2026-10-28 | github | [wcoxptzhhdbo/solana-sniper-bot: Solana sniper bot: pump.fun launch sniping, memp](https://github.com/wcoxptzhhdbo/solana-sniper-bot) | The README holds only screenshot captions and a title, no code description, and the repo shape matches fake-star bait; n |
