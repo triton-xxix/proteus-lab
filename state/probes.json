@@ -6293,22 +6293,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-29T12:38:44+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-29T12:39:17+0000",
+   "note": "Measured: 60 GAMES.csv rows v the Lichess export, results 60 of 60 agree, colours 60 of 60, status 59 of 60; the one is mPEN9pM0 (12 Oct), log started, export outoftime. Shot said 1 to 3 status rows, results all agree: hit. Correction to P-0256: not a hang inside a move; the bot made 22 of its 23 moves and the 600 s tool timeout killed the call (F-0008, fixed that day with the 570 s resign cap, bin/lichess.py:141); the 201.6 s was the clock running out after. No code change. Next: close.",
+   "artefacts": [
+    "experiments/2026-10-29-P-0257"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "1 to 3 rows differ in status, every result agrees with the export",
-    "at": "2026-10-29T12:38:48+0000"
+    "at": "2026-10-29T12:38:48+0000",
+    "hit": true
    }
   }
  ]
