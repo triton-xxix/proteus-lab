@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 190 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,7 @@ Verdicts so far: 190 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
+| P-0253 | Deepen P-0252: RSI(5) book with a skip rule when VIX/VIX3M on the signal day is at or above 1; full book v skip book, each in two halves (2009-17, 2018-26), with 0.1% round-trip costs; does the skip raise mean per trade in both halves? | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (240)
 
