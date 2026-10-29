@@ -6264,9 +6264,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-29",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-29T12:37:48+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -6274,7 +6274,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "games logged at think_s 1.0 measure a median 0.9 to 1.3 s a move; the low overall median comes from 0.3 s or unlogged games",
+    "at": "2026-10-29T12:37:55+0000"
+   }
   }
  ]
 }
