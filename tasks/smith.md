@@ -33,10 +33,12 @@ For each, in order, while time allows:
    under `.claude/hooks/`, whatever the PreToolUse hook answers: on 15 Oct the hook logged `allow` for that
    Edit at 22:11:34 and the prompt sat unanswered until 21 Oct 00:34, and no Smith ran from 16 to 20 Oct
    because the scheduler runs one session per task. Since 21 Oct a scheduled prompt is refused outright.
-   If the fix is in the hook, write it as a unified diff to
-   `/Users/triton/PROTEUS/state/loop/hook-patches/F-00NN.diff` with the test cases it needs, note the
-   path in the finding (`findings.py` note via `fix` is wrong here; leave it open with the run-log line),
-   and an interactive session applies it and runs `bin/test-hook.py`.
+   If the fix is in the hook, read `/Users/triton/PROTEUS/state/loop/skill-drafts/hook-patch/SKILL.md`
+   first (a draft until an interactive session copies it into `.claude/skills/`): write it as a unified diff to
+   `/Users/triton/PROTEUS/state/loop/hook-patches/F-00NN.diff` with the test cases it needs, prove it with a
+   `F-00NN-check.py` beside it, run `check-diff.py` on it, note the path in the finding (`findings.py` note via
+   `fix` is wrong here; leave it open with the run-log line), and an interactive session applies it and runs
+   `bin/test-hook.py`. While any patch waits, re-run `check-diff.py` on it each night and log the result.
 2. Test it: re-run the thing that failed.
 3. Commit just that change: `python3 /Users/triton/PROTEUS/bin/commit.py -m "smith: F-00NN <what>" <paths>`
 4. `python3 /Users/triton/PROTEUS/bin/findings.py fix F-00NN --commit <hash> --note '<what changed>'`
