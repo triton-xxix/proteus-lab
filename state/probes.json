@@ -1,5 +1,5 @@
 {
- "next_id": 254,
+ "next_id": 255,
  "items": [
   {
    "id": "P-0001",
@@ -6196,6 +6196,32 @@
     "number": "skip book beats full book after 0.1% costs in both halves, by at least 0.05 points a trade in each",
     "at": "2026-10-29T12:33:47+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0254",
+   "title": "Bias-corrected Murphy split of my called-shot Brier (Ferro and Fricker 2012 estimators: REL and RES each less the within-group sampling term, UNC times N/(N-1)), exact-p groups as P-0242, every scored shot to date: how much of RES and REL survives the correction?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-29",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-29T12:35:02+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "corrected RES under 0.005 (most of the 0.014 is bias), corrected REL still above 0.06",
+    "at": "2026-10-29T12:35:14+0000"
    }
   }
  ]
