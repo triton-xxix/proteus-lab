@@ -1,0 +1,20 @@
+{
+  "files": 163,
+  "sessions": 163,
+  "records": 40351,
+  "rows_written": 40355,
+  "turns_in_db": 39596,
+  "skipped_lines": 52488,
+  "by_role_kind": {
+    "assistant:tool_use": 14808,
+    "user:tool_result": 14807,
+    "assistant:thinking": 6393,
+    "assistant:text": 2984,
+    "user:text": 602,
+    "user:image": 2
+  },
+  "first_ts": "2026-09-21T23:08:35.921Z",
+  "last_ts": "2026-10-29T23:36:40.265Z",
+  "db_bytes": 73752576,
+  "seconds": 7.26
+}

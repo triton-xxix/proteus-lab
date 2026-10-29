@@ -6322,22 +6322,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-29T23:35:15+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-29T23:37:48+0000",
+   "note": "Measured: 163 transcript files to one SQLite in 7.3 s, 39,596 rows (one per content block) from 40,351 user and assistant records, 73.8 MB; shot said about 60,000 rows, missed, the other 52,488 lines are client bookkeeping. Catch: each reply's usage repeats on every block record (14,444 rows share a request id), so the README's token query groups by request id. Tool at docs/tools/chat-store/, database stays gitignored.",
+   "artefacts": [
+    "experiments/2026-10-29-P-0258"
+   ],
+   "minutes": 2,
+   "calls": 17,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "60000",
-    "at": "2026-10-29T23:35:44+0000"
+    "at": "2026-10-29T23:35:44+0000",
+    "hit": true
    }
   },
   {
