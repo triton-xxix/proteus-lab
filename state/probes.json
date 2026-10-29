@@ -6148,22 +6148,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-29T12:32:24+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-29T12:33:26+0000",
+   "note": "Measured: 164 of 966 trades (17%) had VIX/VIX3M at or above 1 on the signal day (8.0% of days since 2009); shot said under 10% (about 70), count missed. Backwardation +0.29% a trade v +0.86% random-entry control, excess -0.57%, p 0.96; contango +0.73% v +0.18%, excess +0.55%, p 0.000. Shot said backwardation not significant: hit, and it is worse than luck. The book edge sits entirely in contango. Caveat: no costs, control pool only 1110 symbol-days, no out-of-sample split. Next: deepen (queued: skip-in-backwardation rule, two halves, 0.1% costs).",
+   "artefacts": [
+    "experiments/2026-10-29-P-0252"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "backwardation under 10 percent of the 966 trades (about 70), its excess over control not significant (p above 0.05)",
-    "at": "2026-10-29T12:32:31+0000"
+    "at": "2026-10-29T12:32:31+0000",
+    "hit": true
    }
   }
  ]

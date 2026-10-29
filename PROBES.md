@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 189 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
+Verdicts so far: 190 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 189 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0252 | RSI(5) book split by VIX/VIX3M on the signal day (FRED VIXCLS / VXVCLS, from 2009): backwardation (ratio >= 1) v contango, each against the P-0243 filtered random-entry control, 2000 draws. Question: does the signal beat luck in backwardation, and is the contango edge the same as the pooled +0.65%? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (239)
+## Verdicts (240)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-29 | P-0252 | RSI(5) book split by VIX/VIX3M on the signal day (FRED VIXCLS / VXVCLS, from 2009): backwardation (ratio >= 1) v contango, each against the P-0243 filtered random-entry control, 2000 draws. Question: does the signal beat luck in backwardation, and is the contango edge the same as the pooled +0.65%? | **works** | Measured: 164 of 966 trades (17%) had VIX/VIX3M at or above 1 on the signal day (8.0% of days since 2009); shot said under 10% (about 70), count missed. Backwardation +0.29% a trade v +0.86% random-entry control, excess -0.57%, p 0.96; contango +0.73% v +0.18%, excess +0.55%, p 0.000. Shot said backwardation not significant: hit, and it is worse than luck. The book edge sits entirely in contango. Caveat: no costs, control pool only 1110 symbol-days, no out-of-sample split. Next: deepen (queued: skip-in-backwardation rule, two halves, 0.1% costs). | `experiments/2026-10-29-P-0252` | 1 min, 8 calls, 0 denied |
 | 2026-10-28 | P-0251 | Munich airport v city daily high: DWD 10-minute data for 01262 Flughafen and 03379 Stadt over the same 60 days; hour of the high at each and share of days the two highs differ by 1C or more | **works** | Measured: 60 days 27 Aug to 27 Oct, city high minus airport +0.78C mean, city warmer 82% of days, highs 1C or more apart on 42%, same rounded degree only 35%; median peak 15:10 city v 15:40 airport, airport later on 67%. The settlement station decides the degree two days in three. | `experiments/2026-10-28-P-0251` | 0 min, 4 calls, 0 denied |
 | 2026-10-28 | P-0250 | Trends anchor rerun of P-0150: each of the 34 radar terms paired with one fixed anchor term per request; how many of the 20 rising terms reach 1% of the anchor's volume | **works** | Measured: 34 of 34 answered 200 paired with the anchor spreadsheet. Of P-0150 20 self-scaled rising terms, 17 read zero against the anchor over the last 14 days; only 3 clear 1% (photocraft 0.23, bloodborne pc 0.18, solidcraft 0.11). The 20 of 34 was rises on empty series; Trends as a filter needs an anchor. | `experiments/2026-10-28-P-0250` | 1 min, 4 calls, 0 denied |
 | 2026-10-28 | P-0249 | ECMWF IFS ensemble band for Munich: capture its nightly 10-90 band for tomorrow beside ICON-EPS (P-0232) and report tonight's widths; after 20 scored days say which holds DWD Stadt nearer 80% | **works** | Measured: ECMWF IFS ensemble (50 members) band for 29 Oct 8.29 to 10.62C, width 2.33, against ICON-EPS 10.06 to 11.32, width 1.26; overlap only 10.06 to 10.62. Captured nightly from tonight (2032c66), DUE D-020 reads both at 20 scored days, backstop 25 Nov. | `experiments/2026-10-28-P-0249` | 0 min, 10 calls, 0 denied |

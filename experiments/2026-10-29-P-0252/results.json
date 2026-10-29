@@ -1,0 +1,29 @@
+{
+ "n_draws": 2000,
+ "days_2009_on": 4481,
+ "backwardation_day_share_pct": 8.03,
+ "by_bucket": {
+  "contango ratio < 1": {
+   "trades": 802,
+   "mean_pct": 0.728,
+   "win_pct": 76.7,
+   "t": 10.28,
+   "mean_hold_days": 5.19,
+   "control_mean_pct": 0.177,
+   "excess_pct": 0.551,
+   "p": 0.0,
+   "pool_days": 27933
+  },
+  "backwardation ratio >= 1": {
+   "trades": 164,
+   "mean_pct": 0.29,
+   "win_pct": 68.3,
+   "t": 0.95,
+   "mean_hold_days": 6.14,
+   "control_mean_pct": 0.855,
+   "excess_pct": -0.565,
+   "p": 0.9635,
+   "pool_days": 1110
+  }
+ }
+}
