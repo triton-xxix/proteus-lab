@@ -65,6 +65,13 @@ CASES = [
     ("mcp__Claude_Browser__get_page_text", {}, "deny"),   # 21 Oct 2026: the pane hangs scheduled runs
     ("mcp__Claude_Browser__navigate", {"url": "https://example.com"}, "deny"),
     ("mcp__claude-in-chrome__navigate", {"url": "https://example.com"}, "deny"),
+    # 30 Oct 2026: the team record. log_work and the two reads allowed; the task board denied. The
+    # record's other writes (set_routine, set_handoff, set_row) wait on state/loop/hook-patches/record-writes.diff.
+    ("mcp__board__log_work", {"project": "proteus", "title": "a finished thing"}, "allow"),
+    ("mcp__board__list_log", {"project": "proteus"}, "allow"),
+    ("mcp__board__claim_task", {"title": "x"}, "deny"),
+    ("mcp__board__post_handoff", {"to": "luke", "note": "please"}, "deny"),
+    ("mcp__board__update_task", {"id": "B-0001", "status": "done"}, "deny"),
     ("Agent", {"prompt": "x"}, "deny"),
     # found by the first nightly run, 2026-09-22
     ("Bash", {"command": "git -C /Users/triton/PROTEUS status --short"}, "allow"),
@@ -217,6 +224,9 @@ FANOUT_CASES = [
     (CHILD, "Read", {"file_path": ROOT + "CHARTER.md"}, "allow"),
     (CHILD, "Read", {"file_path": "/etc/hosts"}, "deny"),
     (CHILD, "mcp__Claude_Browser__get_page_text", {}, "deny"),
+    # the team record: a child may read it (30 Oct 2026); the child write ban is in the record-writes patch
+    (CHILD, "mcp__board__list_log", {"project": "proteus"}, "allow"),
+    (CHILD, "mcp__board__set_row", {"table": "services", "row": {"name": "x"}}, "deny"),
     # the spawn cap: two allowed above, two more here, the fifth is denied
     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 3
     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "sonnet", "prompt": "x"}, "allow"),  # 4

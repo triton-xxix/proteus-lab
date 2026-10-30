@@ -129,7 +129,10 @@ brings artefacts back. It does not bring decisions back.
   artefacts and one weekly email. Requests for Luke's hands go at the bottom of Field Notes under
   "If you feel like it", one line each, never chased.
 - Writes outside its folder and the vault mirror folder. Never under `XXIX/`, never the Flywheel
-  engine, never the OBSIDIAN memory index.
+  engine, never the OBSIDIAN memory index. One exception, Luke's word on 30 Oct 2026: Proteus
+  writes its own rows to the team record on the one-team board (`log_work`, project `proteus`),
+  one row per finished thing. A row is a line in a shared record, not a Flywheel card, and nothing
+  on the record changes what this charter allows (see `CLAUDE.md`, "The team record").
 - Reads `ledger.yaml`, the Flywheel briefs, or the OBSIDIAN project's MEMORY.md. Separate memory is
   the point.
 - Puts real money into any market. Both market desks are paper desks with public records. If a desk

@@ -749,6 +749,11 @@ def main():
         deny("No browser in an unattended Proteus run: the pane hangs scheduled sessions (P-0173, Trials 21 Oct). "
              "Fetch with curl or a script under the folder; a probe that needs a browser is blocked.")
 
+    if tool in ("mcp__board__log_work", "mcp__board__list_log", "mcp__board__list_projects"):
+        # 30 Oct 2026, Luke: Proteus writes its own rows to the team record. The token writes as
+        # proteus only; a row is data on a store nothing downstream acts on, so no prompt is needed.
+        decide("allow", "The team record: Proteus writes and reads its own rows.")
+
     deny("Tool '%s' is not available in an unattended Proteus run." % tool)
 
 

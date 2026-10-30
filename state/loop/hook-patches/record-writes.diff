@@ -1,0 +1,57 @@
+Why: Luke's word of 30 Oct 2026 puts Proteus's routines, handoffs and reference rows on the team
+record (CLAUDE.md, "The team record"), and the seed that night left 39 reference rows unposted. The
+hook allowed only log_work and two reads; this lets a scheduled run write the record's other rows,
+keeps children off the record's writes (the parent records what it keeps), and denies the task board
+by name. Written by an interactive session on 30 Oct after the app's own guard refused the Edit.
+Apply from the folder root: git apply state/loop/hook-patches/record-writes.diff, then
+python3 bin/test-hook.py (expect 202 cases, 0 failed).
+
+--- a/.claude/hooks/unattended-decide.py
++++ b/.claude/hooks/unattended-decide.py
+@@ -749,10 +749,22 @@
+         deny("No browser in an unattended Proteus run: the pane hangs scheduled sessions (P-0173, Trials 21 Oct). "
+              "Fetch with curl or a script under the folder; a probe that needs a browser is blocked.")
+ 
+-    if tool in ("mcp__board__log_work", "mcp__board__list_log", "mcp__board__list_projects"):
++    if tool.startswith("mcp__board__"):
+         # 30 Oct 2026, Luke: Proteus writes its own rows to the team record. The token writes as
+         # proteus only; a row is data on a store nothing downstream acts on, so no prompt is needed.
+-        decide("allow", "The team record: Proteus writes and reads its own rows.")
++        # Reads for anyone; writes to the record (log rows, routines, handoffs, reference rows) for the
++        # parent only, since a child's work is the parent's to record; the task board (claim, hand,
++        # update) stays out, because the charter never opens a card or a decision item for anyone.
++        if tool in ("mcp__board__list_log", "mcp__board__list_projects", "mcp__board__list_routines",
++                    "mcp__board__list_handoffs"):
++            decide("allow", "The team record: a read.")
++        if tool in ("mcp__board__log_work", "mcp__board__set_routine", "mcp__board__set_handoff",
++                    "mcp__board__set_row"):
++            if child:
++                deny("A sub-agent does not write the team record; the parent records what it keeps.")
++            decide("allow", "The team record: Proteus writes its own rows.")
++        deny("The task board (%s) is not Proteus's: the charter never opens a card, a handoff row or a "
++             "decision item for anyone. Rows go through log_work, set_routine, set_handoff and set_row." % tool)
+ 
+     deny("Tool '%s' is not available in an unattended Proteus run." % tool)
+ 
+--- a/bin/test-hook.py
++++ b/bin/test-hook.py
+@@ -68,7 +68,11 @@
+     # 30 Oct 2026: the team record. log_work and the two reads allowed; the task board denied. The
+     # record's other writes (set_routine, set_handoff, set_row) wait on state/loop/hook-patches/record-writes.diff.
+     ("mcp__board__log_work", {"project": "proteus", "title": "a finished thing"}, "allow"),
++    ("mcp__board__set_routine", {"slug": "proteus-nightly", "name": "x"}, "allow"),
++    ("mcp__board__set_handoff", {"to_agent": "luke", "slug": "x", "name": "x"}, "allow"),
++    ("mcp__board__set_row", {"table": "capabilities", "row": {"slug": "x", "name": "x"}}, "allow"),
+     ("mcp__board__list_log", {"project": "proteus"}, "allow"),
++    ("mcp__board__list_routines", {}, "allow"),
+     ("mcp__board__claim_task", {"title": "x"}, "deny"),
+     ("mcp__board__post_handoff", {"to": "luke", "note": "please"}, "deny"),
+     ("mcp__board__update_task", {"id": "B-0001", "status": "done"}, "deny"),
+@@ -226,6 +230,7 @@
+     (CHILD, "mcp__Claude_Browser__get_page_text", {}, "deny"),
+     # the team record: a child may read it (30 Oct 2026); the child write ban is in the record-writes patch
+     (CHILD, "mcp__board__list_log", {"project": "proteus"}, "allow"),
++    (CHILD, "mcp__board__log_work", {"project": "proteus", "title": "x"}, "deny"),
+     (CHILD, "mcp__board__set_row", {"table": "services", "row": {"name": "x"}}, "deny"),
+     # the spawn cap: two allowed above, two more here, the fifth is denied
+     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 3

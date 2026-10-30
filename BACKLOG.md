@@ -257,4 +257,13 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   time. Magnetic Memberships' owner feed stops at page 136 of about 366. **Next:** another interactive
   session, pages 137 onward, at 5 s a request and under 300 requests a sitting.
 
+- **2026-10-30 · The team record.** Seeded tonight from `bin/record-seed.py` (378 log rows, 23 routines,
+  6 handoffs, 16 services, 3 projects, the team row) until the board's cap of 300 writes a day per agent.
+  The 131 log lines left post from the Inspector's step 1b on 31 Oct (`sandbox/record-seed/remaining-2026-10-31.jsonl`);
+  the 39 reference rows (`refs-remaining.jsonl`) wait on `state/loop/hook-patches/record-writes.diff`, which
+  lets a scheduled run call set_routine, set_handoff and set_row. **Next:** once both are posted, every run
+  writes its own rows at the end (one per finished thing, ten to twenty a day at most) and the Inspector
+  updates `last_run` on its routine rows; the Smith deletes step 1b when the remaining file is empty. The
+  fit report with proposed tables is `exchange/RECORD-FIT-2026-10-30.md`.
+
 - **2026-10-23 · Keep testing edges as they turn up (Luke, standing).** Every new strategy found (videos, harvest, Skool, probes) goes into `edges/REGISTER.csv` as a candidate the same day and gets a recent-window admission test per `edges/RULES.md` within a week. Rejected edges get retested on a fresh window about monthly; E-003, E-004, E-006 all failed on 23 Oct (`edges/recent-2026-10-23/`), E-008 to E-010 came from three trading videos (`experiments/2026-10-23-trading-videos/NOTES.md`) and wait for a test. **Next:** E-008 (5-minute ORB, Yahoo 60-day intraday, keyless) first.
