@@ -1,5 +1,5 @@
 {
- "next_id": 269,
+ "next_id": 270,
  "items": [
   {
    "id": "P-0001",
@@ -6596,6 +6596,28 @@
    ],
    "minutes": 2,
    "calls": 25,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0269",
+   "title": "MOT 2023 anonymised results (DfT, 1.19 GB zip, streamed): initial fail rate by make for cars aged 10 to 12, the three makes failing most and least with counts, against P-0247's 27.5% national rate",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-30",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-30T23:49:04+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-30T23:53:16+0000",
+   "note": "2016 per-test file (37.7M rows, streamed gzip): cars aged 10 to 12 fail first time at 43.9% (6.4M tests); by make, Porsche 20.7%, Lexus 26.8%, Subaru 34.0% at the top, Chevrolet 49.0%, Vauxhall 50.3%, Renault 55.2% at the bottom, 31 makes over 20k tests. 2023 not readable: the zip is Deflate64, which stdlib zipfile refuses; 35.6% all-age initial fail is DVSA's definition, P-0247's 27.5% is the final rate.",
+   "artefacts": [
+    "experiments/2026-10-30-P-0269"
+   ],
+   "minutes": 4,
+   "calls": 36,
    "denied": [],
    "luke": false
   }

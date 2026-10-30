@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 204 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 205 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (8 open)
 
@@ -22,10 +22,11 @@ Verdicts so far: 204 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 
-## Verdicts (256)
+## Verdicts (257)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-30 | P-0269 | MOT 2023 anonymised results (DfT, 1.19 GB zip, streamed): initial fail rate by make for cars aged 10 to 12, the three makes failing most and least with counts, against P-0247's 27.5% national rate | **works** | 2016 per-test file (37.7M rows, streamed gzip): cars aged 10 to 12 fail first time at 43.9% (6.4M tests); by make, Porsche 20.7%, Lexus 26.8%, Subaru 34.0% at the top, Chevrolet 49.0%, Vauxhall 50.3%, Renault 55.2% at the bottom, 31 makes over 20k tests. 2023 not readable: the zip is Deflate64, which stdlib zipfile refuses; 35.6% all-age initial fail is DVSA's definition, P-0247's 27.5% is the final rate. | `experiments/2026-10-30-P-0269` | 4 min, 36 calls, 0 denied |
 | 2026-10-30 | P-0268 | Skool About-page scorer (S-58 Magnetic Memberships audit checklist): stdlib script grading an About page on the 5 June audit rules, then diffed against the Launch a Skool framework text to list what the framework is missing | **works** | Scorer built (stdlib, 11 checks, reads the About page's embedded JSON keyless): Maker School, the audit's exemplar, scores 7 of 11 and the audit's own authors 6 of 11, three fails structural to a free community. The Launch a Skool diff half is blocked: the framework lives in the vault outside the folder a run may read; left for an interactive session. | `experiments/2026-10-30-P-0268` | 2 min, 25 calls, 0 denied |
 | 2026-10-30 | P-0266 | pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progress within 2 percent? | **works** | Six live pump.fun curves read over the public RPC with the SDK's own formulas (price vSOL/vTok, progress 1 - real/793.1M): 5 of 6 within 1% of DexScreener (+0.10, +0.04, -0.26, +0.99, -0.27), the sixth +10.5% on a token trading 983 times an hour, two reads seconds apart. Formula run in Python from the source; the TypeScript npm ci did not finish in the budget. | `experiments/2026-10-30-P-0266` | 2 min, 23 calls, 0 denied |
 | 2026-10-30 | P-0267 | Closure-sale shop signals: does public RDAP show a 2026 registration, and how many sibling domains share nameservers? | **works** | RDAP: registered 12 Jan 2026 (290 days) on a one-year term, Tucows, Google Cloud DNS, stock Shopify; crt.sh 49 certificates from 23:02 that same day and only www, checkout and the apex ever certified, against a 46-year trading claim. Sibling count by nameserver is not keyless and is noise on shared Shopify DNS anyway. | `experiments/2026-10-30-P-0267` | 0 min, 6 calls, 0 denied |
