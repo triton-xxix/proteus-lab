@@ -1,0 +1,638 @@
+{
+ "totals": {
+  "states_in_protocol": [
+   "checked",
+   "committed",
+   "locked",
+   "looping",
+   "probing",
+   "released",
+   "scored",
+   "shot_due",
+   "start"
+  ],
+  "distinct_states_visited": 9,
+  "tools": 8,
+  "state_tool_pairs": 72,
+  "withheld_pairs": 64,
+  "legal_pairs": 8,
+  "accepted_illegal": 0,
+  "side_effects_from_withheld": 0,
+  "offered_per_state": {
+   "start": [
+    "acquire_lock"
+   ],
+   "locked": [
+    "halt_check"
+   ],
+   "checked": [
+    "probe_start"
+   ],
+   "looping": [
+    "probe_next"
+   ],
+   "shot_due": [
+    "probe_shot"
+   ],
+   "probing": [
+    "probe_verdict"
+   ],
+   "scored": [
+    "commit"
+   ],
+   "committed": [
+    "release_lock"
+   ],
+   "released": []
+  },
+  "fired": {
+   "acquire_lock": 1,
+   "halt_check": 1,
+   "probe_start": 1,
+   "probe_next": 2,
+   "probe_shot": 1,
+   "probe_verdict": 1,
+   "commit": 1,
+   "release_lock": 1
+  },
+  "final_state": "released",
+  "done": true
+ },
+ "rounds": [
+  {
+   "state": "start",
+   "offered": [
+    "acquire_lock"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "locked",
+   "offered": [
+    "halt_check"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "checked",
+   "offered": [
+    "probe_start"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "looping",
+   "offered": [
+    "probe_next"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "shot_due",
+   "offered": [
+    "probe_shot"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "probing",
+   "offered": [
+    "probe_verdict"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "looping",
+   "offered": [
+    "probe_next"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "scored",
+   "offered": [
+    "commit"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "committed",
+   "offered": [
+    "release_lock"
+   ],
+   "withheld": 7,
+   "accepted": 0,
+   "side_effects_moved": {}
+  },
+  {
+   "state": "released",
+   "offered": [],
+   "withheld": 8,
+   "accepted": 0,
+   "side_effects_moved": {}
+  }
+ ],
+ "history": [
+  [
+   "start",
+   "acquire_lock",
+   "locked"
+  ],
+  [
+   "locked",
+   "halt_check",
+   "checked"
+  ],
+  [
+   "checked",
+   "probe_start",
+   "looping"
+  ],
+  [
+   "looping",
+   "probe_next",
+   "shot_due"
+  ],
+  [
+   "shot_due",
+   "probe_shot",
+   "probing"
+  ],
+  [
+   "probing",
+   "probe_verdict",
+   "looping"
+  ],
+  [
+   "looping",
+   "probe_next",
+   "scored"
+  ],
+  [
+   "scored",
+   "commit",
+   "committed"
+  ],
+  [
+   "committed",
+   "release_lock",
+   "released"
+  ]
+ ],
+ "diagram": "stateDiagram-v2\n    direction LR\n    state \"checked\" as s0\n    state \"committed\" as s1\n    state \"locked\" as s2\n    state \"looping\" as s3\n    state \"probing\" as s4\n    state \"released\" as s5\n    state \"scored\" as s6\n    state \"shot_due\" as s7\n    state \"start\" as s8\n    [*] --> s8\n    s0 --> s3: probe_start\n    s1 --> s5: release_lock\n    s2 --> s0: halt_check\n    s2 --> s6: halt_check\n    s3 --> s6: probe_next\n    s3 --> s7: probe_next\n    s4 --> s3: probe_verdict\n    s6 --> s1: commit\n    s7 --> s4: probe_shot\n    s8 --> s2: acquire_lock\n    s8 --> s5: acquire_lock\n    s5 --> [*]",
+ "log": [
+  [
+   "start",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "start",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "start",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "start",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "start",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "start",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "start",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'start'; allowed: ['acquire_lock']"
+  ],
+  [
+   "locked",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "locked",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "locked",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "locked",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "locked",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "locked",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "locked",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'locked'; allowed: ['halt_check']"
+  ],
+  [
+   "checked",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "checked",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "checked",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "checked",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "checked",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "checked",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "checked",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'checked'; allowed: ['probe_start']"
+  ],
+  [
+   "looping",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "shot_due",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "shot_due",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "shot_due",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "shot_due",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "shot_due",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "shot_due",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "shot_due",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'shot_due'; allowed: ['probe_shot']"
+  ],
+  [
+   "probing",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "probing",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "probing",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "probing",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "probing",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "probing",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "probing",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'probing'; allowed: ['probe_verdict']"
+  ],
+  [
+   "looping",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "looping",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'looping'; allowed: ['probe_next']"
+  ],
+  [
+   "scored",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "scored",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "scored",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "scored",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "scored",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "scored",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "scored",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'scored'; allowed: ['commit']"
+  ],
+  [
+   "committed",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "committed",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "committed",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "committed",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "committed",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "committed",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "committed",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'committed'; allowed: ['release_lock']"
+  ],
+  [
+   "released",
+   "acquire_lock",
+   "'acquire_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'acquire_lock' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "halt_check",
+   "'halt_check' is not allowed in the current state.",
+   "ProtocolViolation: 'halt_check' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "probe_start",
+   "'probe_start' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_start' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "probe_next",
+   "'probe_next' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_next' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "probe_shot",
+   "'probe_shot' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_shot' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "probe_verdict",
+   "'probe_verdict' is not allowed in the current state.",
+   "ProtocolViolation: 'probe_verdict' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "commit",
+   "'commit' is not allowed in the current state.",
+   "ProtocolViolation: 'commit' is not allowed in state 'released'; allowed: []"
+  ],
+  [
+   "released",
+   "release_lock",
+   "'release_lock' is not allowed in the current state.",
+   "ProtocolViolation: 'release_lock' is not allowed in state 'released'; allowed: []"
+  ]
+ ],
+ "states_seen": [
+  "checked",
+  "committed",
+  "locked",
+  "looping",
+  "probing",
+  "released",
+  "scored",
+  "shot_due",
+  "start"
+ ]
+}

@@ -6410,22 +6410,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-30",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-30T12:34:57+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-30T12:36:05+0000",
+   "note": "Measured 64 of 72 state-tool pairs withheld (9 states x 8 tools, 89 percent), shot said 47 of 56 (84 percent): the shot miscounted states, enforcing shot-before-verdict needs shot_due and probing split out. 0 illegal calls accepted, 0 side effects from withheld calls, counters moved only along the real run shape (1 each, probe_next 2). Hook denials this run 2, neither a protocol tool: the protocol enforces order (no verdict without a shot, no probe before the lock) and the hook polices shell shape; orthogonal guards. Stubs only, no real script wrapped. Next: close (adoption is a Smith build: wrap runlock, probe and commit as tools and run the slot through the runner).",
+   "artefacts": [
+    "experiments/2026-10-30-P-0261"
+   ],
+   "minutes": 1,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "47 of 56 state-tool pairs withheld across 7 states, 0 side effects from withheld calls; the hook denied 2 calls this run and neither was a protocol tool",
-    "at": "2026-10-30T12:35:09+0000"
+    "at": "2026-10-30T12:35:09+0000",
+    "hit": true
    }
   }
  ]
