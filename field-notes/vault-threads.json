@@ -12,8 +12,58 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 309,
+  "count": 314,
   "threads": [
+    {
+      "date": "2026-10-29",
+      "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Pinokio one-click installer",
+      "note": "fastest way to set up Wan2GP on a rented NVIDIA GPU for the cost-per-clip test against fal",
+      "where": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md",
+      "url": "https://www.instagram.com/p/DfEUO_VH3ip/"
+    },
+    {
+      "date": "2026-10-29",
+      "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "Wan2GP local video (LTX-2 Distilled, Wan)",
+      "note": "same lead as the 25 Oct entry; needs NVIDIA, not our Macs",
+      "where": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md",
+      "url": "https://www.instagram.com/p/DfEUO_VH3ip/"
+    },
+    {
+      "date": "2026-10-29",
+      "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "never pay for AI video again",
+      "note": "open models trail Kling and Veo on face consistency; the 672 dollar sum mixes plans",
+      "where": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md",
+      "url": "https://www.instagram.com/p/DfEUO_VH3ip/"
+    },
+    {
+      "date": "2026-10-29",
+      "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "HunyuanVideo",
+      "note": "licence excludes the UK",
+      "where": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md",
+      "url": "https://www.instagram.com/p/DfEUO_VH3ip/"
+    },
+    {
+      "date": "2026-10-29",
+      "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "comment-keyword DM carousel",
+      "note": "already logged as a format in the 24 Oct handlytech entry",
+      "where": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md",
+      "url": "https://www.instagram.com/p/DfEUO_VH3ip/"
+    },
     {
       "date": "2026-10-25",
       "subject": "ericsocal six free AI video generators reel",
@@ -3030,8 +3080,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 73,
+  "links_count": 74,
   "links": [
+    {
+      "date": "2026-10-29",
+      "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md",
+      "url": "https://www.instagram.com/p/DfEUO_VH3ip/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: https://www.instagram.com/p/DfEUO_VH3ip/ (carousel, 9 slides, @alamin.8020ai with @aified.studio, posted 2026-10-29)\nRead from the slide images (no audio). Caption, verbatim:\n\n💬 Comment \"VIDEO\" if you want these.\n\nLearn how to generate AI videos directly on your PC using local AI video generation tools. Explore text-to-video and image-to-video workflows, create clips without relying entirely on cloud services, and discover how your GPU and available memory affect performance.\n\n🔖 Save this for later.\n\n➡️ Follow @alamin.8020ai for more.\n\n#AIVideo #LocalAI #AItools #VideoGeneration #ArtificialIntelligence\n\nSlide 1: HOW TO GENERATE AI VIDEOS ON YOUR PC WITH NO LIMITS. Swipe for more.\nSlide 2: What you Need: A PC or laptop. 6 GB+ VRAM (Check: Task Manager -> Performance -> GPU). NVIDIA or AMD GPUs (RTX 3060 or higher recommended). 20 GB free storage. That's it. No coding skills required.\nSlide 3: Step 1: Install Pinokio. Pinokio is a one-click AI app installer. It handles all the complicated stuff for you. Go to pinokio.computer. Download for Windows/Mac. Install like any normal app. Think of it as an \"App Store for AI tools.\"\nSlide 4: Step 2: Install WAN2GP. Wan2GP is the AI video engine. It runs multiple video models in one place. Open Pinokio. Click \"Discover\". Search \"Wan2GP\". Click Install. Done. One click. No Python. No terminal. No GitHub cloning.\nSlide 5: Step 3: Pick Your AI Model. Wan2GP gives you access to the best open-source video models: LTX-2 -> Generates video WITH sound (like a free Sora 2 / Veo 3). Wan -> High-quality cinematic clips. Hunyuan -> Great for realistic motion. Start with LTX-2 Distilled version. It's faster and uses less memory.\nSlide 6: Step 4: Generate your First Video. Launch Wan2GP from Pinokio. Open localhost:7860 in your browser. Select LTX-2 from the dropdown. Type your prompt. Click Generate. Wait 2-5 minutes. Example prompt: \"A golden retriever running through a sunflower field at sunset, cinematic, slow motion, 4K\"\nSlide 7: Pro Tips for Better Results: Go to Configuration -> Performance -> Set memory profile for your GPU. Use \"Distilled\" mode first (faster, uses less VRAM). Queue multiple videos at once, it auto-generates them back to back. More VRAM = longer clips + higher resolution. Works fully OFFLINE after first install. Value Comparison.\nSlide 8: What You Just Replaced: Runway -> $144/year -> Saved. Sora -> $240/year -> Saved. Kling Pro -> $192/year -> Saved. Pika -> $96/year -> Saved. Total: $672/year Saved. Unlimited generations. No watermarks. No internet needed. Your data stays on YOUR computer. This setup takes 10 minutes. You'll never pay for AI video again.\nSlide 9: Save this post so you can come back to it when you're ready to implement. You might never find this again! (Profile screenshot: Alamin | AI Educator, 97.6K followers.) Subscribe to 8020ai.co for more tips!"
+    },
     {
       "date": "2026-10-25",
       "subject": "ericsocal six free AI video generators reel",
