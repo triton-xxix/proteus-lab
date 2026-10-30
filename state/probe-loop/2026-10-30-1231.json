@@ -11,8 +11,10 @@
  "probes": [
   "P-0260",
   "P-0259",
-  "P-0261"
+  "P-0261",
+  "P-0262"
  ],
  "stopped_at": null,
- "stop_reason": null
+ "stop_reason": null,
+ "refills": 1
 }

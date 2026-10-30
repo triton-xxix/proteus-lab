@@ -6439,22 +6439,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-30",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-30T12:37:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-30T12:38:32+0000",
+   "note": "Measured suspicious slice median +86.7 percent (8 of 8 fetched, 0 gone, 0 lost stars) v rest median +46.8 percent (24 of 26 fetched, 2 gone 404, 1 lost 90 percent); shot said +3 v +25, direction wrong, miss. The name-suspicious repos grew nearly twice as fast and nothing decayed; the only purge-looking drop (aurelio-finance 3380 to 330) and both 404s are in the rest. 34 keyless calls, 21 of 60 left, 3 renames caught. Caveat: suspicious repos were younger on 14 Oct, no age normalisation; stargazer endpoint still 401 keyless so real v farmed cannot be told apart. 16 days not 28. Next: close (name-based suspicion does not predict decay; the radar keeps owner age as its only farm filter).",
+   "artefacts": [
+    "experiments/2026-10-30-P-0262"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "suspicious-slice survivors median star change about +3 percent v the other 26 about +25 percent since 14 Oct, with 2 of 34 repos gone (404); no outright star losses in either slice",
-    "at": "2026-10-30T12:37:08+0000"
+    "at": "2026-10-30T12:37:08+0000",
+    "hit": true
    }
   }
  ]
