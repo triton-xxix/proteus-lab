@@ -30,7 +30,6 @@ Raja Banks, The5ers, FTMO, AI Automation Agency Ninjas frameworks (21, never sta
 verdict, and where the full write-up lives in the vault (a path for a human; Proteus cannot read it).
 Skip anything here unless there is a new version, a new claim, or a run-it test the vault never did.
 
-- **2026-10-29 · tldraw Draw Fast and make-real, sketch to wireframe in real time** (tool): Ask HN wildcard. draw-fast repo public and pushed Dec 2025, site answers 200, needs a fal.ai key for the LCM model; make-real archived, draw-a-ui parent alive. Not run: metered key is the whole thing. Link: https://news.ycombinator.com/item?id=50280452
 - **2026-10-29 · alamin.8020ai local AI video carousel (Pinokio + Wan2GP)** (tool): Accurate how-to for NVIDIA PC owners; needs an RTX-class card none of our Macs have. Pinokio is the one new piece: a quick way to stand Wan2GP up on a rented GPU. Savings claim is sales copy. Write-up: `TRITON-CORE/Research/links/2026-10-29-alamin-local-ai-video-pinokio-wan2gp.md` Link: https://www.instagram.com/p/DfEUO_VH3ip/
 - **2026-10-29 · M2 map email 'near you' claim** (idea): Holds: searches centred on recipient's Maps pin; 41 of 42 named rivals within 6.2 km across 14 sends Write-up: `TRITON-CORE/Systems/flywheel/outbox/drafts/wf0454-near-you-check-2026-10-29.md`
 - **2026-10-29 · SamCart founder newsletter as cold-email swipe** (idea): Structure worth borrowing for a seasonal T1 (person-first opener, shared hook, one question); links, images and unsourced stats are not Write-up: `TRITON-CORE/Projects/outbound-engine/copy/swipe-samcart-free-hour-2026-10-29.md`
@@ -724,6 +723,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-10-28 · Qiu and Qiu, "Time-Varying Favorite-Longshot Bias in Polymarket Weather Markets", arXiv 2610.13593** (read, abstract only): longshots overpriced at distant horizons, favourites overpriced about ten times more in the final 1 to 12 hours; recalibration no significant gain; code PolyWeatherData. Testable on my Munich snapshots (favourite at noon v settle rate). Read-it W44.
 - 2026-10-28, harvested: 12 judged, 8 kept (H-0429 to H-0440), 2 queued as probes (P-0246, P-0247). Register: `field-notes/HARVEST.md`.
 - 2026-10-29, harvested: 14 judged, 7 kept (H-0441 to H-0454), 2 queued as probes (P-0259, P-0260). Register: `field-notes/HARVEST.md`.
+- 2026-10-30, harvested: 14 judged, 9 kept (H-0455 to H-0468), 4 queued as probes (P-0264, P-0265, P-0266, P-0267). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

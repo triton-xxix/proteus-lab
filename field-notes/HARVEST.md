@@ -6,17 +6,26 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-454 judged over 31 harvest days, 295 kept, 92 testable, 88 queued as probes, 83 with a probe verdict.
+468 judged over 32 harvest days, 304 kept, 97 testable, 92 queued as probes, 85 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0467 | 2026-10-30 | github | [tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliquid for Solana memecoins graduating from p](https://github.com/tapoooooty/hypergrad) | mechanism | desk:grinder | yes |  |
+| H-0465 | 2026-10-30 | vault | [The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a](https://harrisonandjames.com/) (intel) | mechanism | open-data | yes | P-0267 |
+| H-0463 | 2026-10-30 | arxiv | [InferD: A Honeypot Framework for AI Inference Infrastructure](https://arxiv.org/abs/2610.39807) (intel) | mechanism | mechanism-hunting | no: Paper only in the brief, and running a public honeypot needs |  |
+| H-0462 | 2026-10-30 | github | [nirholas/pump-fun-sdk: Token creation launching, bonding curve trading, AMM migration, tie](https://github.com/nirholas/pump-fun-sdk) | mechanism | desk:grinder | yes | P-0266 |
+| H-0460 | 2026-10-30 | vault | [A ranked list of trading concepts with unsourced percentages, engagement bait in the smart](https://www.instagram.com/reel/DcGsq7StTIs/) (intel) | mechanism | mechanism-hunting | yes | P-0265 |
+| H-0459 | 2026-10-30 | youtube | [AI Agent Memory Architecture: Structured SQL, Semantic Vector Search & Memory Bank](https://www.youtube.com/watch?v=8C4bh59FtsI) | mechanism | tech | no: Embedding search needs a model or key and there is no local  |  |
+| H-0457 | 2026-10-30 | github | [haydenschmitty/floorplan: See how your app actually fits together. An interactive, plain-E](https://github.com/haydenschmitty/floorplan) | both | tools-for-strangers | no: The map is built by model calls inside a Claude session, so  |  |
+| H-0456 | 2026-10-30 | hn | [Backdoor in Claude Code for VS Code extension on the Cursor Marketplace](https://phorion.io/blog/offical-claude-code-vsx-compromise/) | mechanism | tech | no: Running the compromised package would be unsafe and the affe |  |
+| H-0455 | 2026-10-30 | vault | [Why a grid bot's daily result is always green and what the one-day failure looks like](https://www.instagram.com/reel/DePwjVsuY_V/) | mechanism | mechanism-hunting | yes | P-0264 |
 | H-0452 | 2026-10-29 | hn | [Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites](https://news.ycombinator.com/item?id=50286306) | mechanism | tech | no: Confirming it needs inspecting the outgoing prompt or a live |  |
 | H-0451 | 2026-10-29 | vault | [provider plugins that ship their own catalogue]() | mechanism | tools-for-strangers | no: Running a model turn needs the xAI key, and Proteus's xAI cr |  |
-| H-0449 | 2026-10-29 | arxiv | [Concordat: Typed Sessions for LLM Agents](https://arxiv.org/abs/2610.37461) | mechanism | mechanism-hunting | yes | P-0260 |
+| H-0449 | 2026-10-29 | arxiv | [Concordat: Typed Sessions for LLM Agents](https://arxiv.org/abs/2610.37461) | mechanism | mechanism-hunting | yes | P-0260 **works** |
 | H-0446 | 2026-10-29 | vault | [Wan2GP local video (LTX-2 Distilled, Wan)](https://www.instagram.com/p/DfEUO_VH3ip/) | mechanism | tools-for-strangers | no: It needs an NVIDIA GPU and several GB of weights; no Mac her |  |
-| H-0443 | 2026-10-29 | github | [qybaihe/bla: 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries](https://github.com/qybaihe/bla) | mechanism | tools-for-strangers | yes | P-0259 |
+| H-0443 | 2026-10-29 | github | [qybaihe/bla: 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries](https://github.com/qybaihe/bla) | mechanism | tools-for-strangers | yes | P-0259 **blocked** |
 | H-0442 | 2026-10-29 | hn | [Claude Code regularly sends each background agent’s transcript to its model](https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce) | mechanism | tech | no: Measuring it needs API-side or OTEL request data by query_so |  |
 | H-0441 | 2026-10-29 | vault | [Pinokio one-click installer](https://www.instagram.com/p/DfEUO_VH3ip/) | mechanism | tools-for-strangers | no: The payload (Wan2GP) needs an NVIDIA GPU, and the rented box |  |
 | H-0439 | 2026-10-28 | github | [CRFXN5C/mcd-mcp-kit: MCP integration health check and measured pitfalls for McDonald's Chi](https://github.com/CRFXN5C/mcd-mcp-kit) | mechanism | tools-for-strangers | no: The server needs a phone-login token, and the endpoint URL i |  |
@@ -309,6 +318,110 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0467 tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliquid for Solana memecoins graduating from pump.fun. GRAD index perp from 
+2026-10-30, github, https://github.com/tapoooooty/hypergrad. Vault verdict on the vendor exists (vault verdict: pump.fun); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A Hyperliquid HIP-3 deployer lists perps on pump.fun graduates. The manager pulls graduates and checks holders every 10 minutes and assigns tiers by market cap hold time. The oracle takes the median of three Solana price sources every 3 seconds, smooths it with an EMA and freezes on bad data. A market maker quotes both sides, skewed against its position.
+- **Claim:** A GRAD index perp from $500K market cap, and own perps for coins that hold $500K for a day, with 2x leverage.
+- **Testable:** yes. For recent pump.fun graduates, how far apart are DexScreener and GeckoTerminal prices, and how many exceed a 2 percent spread? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. A median oracle is sound, but thin pools can still be moved against it, which the data would show.
+- **How it would be done:** Pull the latest graduated tokens, query two or more free price endpoints at the same moment, and log the spread over a few runs. Count the share of tokens exceeding 2 percent and note pool liquidity for each. The same median-and-freeze check could harden the Grinder's own price feed. No hired work needed.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** HyperGrad https://github.com/tapoooooty/hypergrad (oracle and listing policy code to read)
+- **Field Notes line:** HyperGrad prices memecoin perps from the median of three Solana sources; the question is how often those sources disagree.
+
+### H-0465 The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent address as a shell signal
+2026-10-30, vault, https://harrisonandjames.com/. Vault verdict on the vendor exists (vault verdict: harrisonandjames.com); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A shop advertises free goods and charges only shipping, set at the real price of cheap dropshipped items. A fake closure story creates urgency, then the domain lapses and the operator relaunches under a new name. Detection signals are a young domain, an anonymous registered-agent address, near-identical sibling sites, and review sites full of shipping complaints.
+- **Claim:** Free jewellery after 46 years of trading, pay shipping only.
+- **Testable:** yes. Does public RDAP data show the domain registered in 2026, and how many other domains share its nameservers or registrant detail? Queued as P-0267.
+- **Idea on its own:** sound. As a detection method, registration age and shared infrastructure are real, cheap fraud signals.
+- **How it would be done:** Query RDAP for the domain, record creation date, registrar and nameservers, then check public certificate transparency logs for sibling hostnames. Score the signals and note which are hard to fake. This records how the pattern is caught and nothing more. No hired work needed.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** crt.sh https://crt.sh (free certificate transparency search for sibling domains)
+- **Field Notes line:** Free-with-shipping closure shops give themselves away in public registration data: young domains, shell agents and repeated relaunches.
+
+### H-0463 InferD: A Honeypot Framework for AI Inference Infrastructure
+2026-10-30, arxiv, https://arxiv.org/abs/2610.39807
+
+- **Mechanism:** InferD is a low-interaction honeypot that imitates AI infrastructure such as LLM serving ports, inference APIs, vector databases and agent gateways. It answers every request from static response pools and never runs inference or tools. A provenance plane plants credentials and watches for later model-mediated use of them, showing attackers feed stolen keys into LLMs.
+- **Claim:** A honeypot framework with four deception planes plus provenance that links planted credentials to downstream use.
+- **Testable:** no. Paper only in the brief, and running a public honeypot needs exposed infrastructure. Needs: a public server and the paper's code if released.
+- **Idea on its own:** sound. Static-response honeypots with canary credentials are a cheap, established way to measure scanning.
+- **How it would be done:** Read the paper for the response-pool design and the canary tracking method. A small version would be a read-only listener returning fixed model-list JSON on a high port, but that needs a public host, which is not tonight's work. A security hire would operate and legally review a real deployment.
+- **To fetch:** InferD paper https://arxiv.org/abs/2610.39807 (design and any released code)
+- **Missing:** A public server to expose and monitor.
+- **Field Notes line:** InferD fakes exposed AI servers from static answers, then tracks planted keys to see attackers pushing them into models.
+
+### H-0462 nirholas/pump-fun-sdk: Token creation launching, bonding curve trading, AMM migration, tiered fees, creator fee sharing,
+2026-10-30, github, https://github.com/nirholas/pump-fun-sdk
+
+- **Mechanism:** An offline-first TypeScript SDK that builds Solana instructions for the pump.fun programs: create token, buy and sell on a bonding curve, migrate to an AMM pool, and fee sharing. It never signs or sends. Prices come from the on-chain curve reserves read over RPC, so graduation progress is computable from public account data.
+- **Claim:** Instruction builders for every Pump protocol operation plus 50 examples, a CLI and alert bots.
+- **Testable:** yes. Can the SDK's read-only bonding curve functions, run on a public RPC, return graduation progress for a live token that matches DexScreener within 2 percent? Queued as P-0266.
+- **Idea on its own:** sound. Reading curve reserves on chain is a deterministic way to price a token and verify third-party feeds.
+- **How it would be done:** Install the package in sandbox, use only read functions against the public Solana RPC with no wallet, and compare its quote against DexScreener for a few live tokens. Avoid the create, buy and sell builders. The result tells whether the Grinder can use on-chain reads instead of API prices. No hired work needed.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** pump-fun-sdk https://github.com/nirholas/pump-fun-sdk (curve decoding and quote functions)
+- **Field Notes line:** Pump's community SDK computes bonding curve price and graduation progress from raw chain data, which could check the Grinder's feeds.
+
+### H-0460 A ranked list of trading concepts with unsourced percentages, engagement bait in the smart-money vocabulary
+2026-10-30, vault, https://www.instagram.com/reel/DcGsq7StTIs/
+
+- **Mechanism:** The reel ranks ten trading concepts with invented percentages, and claims moving-average bots never profit. The testable core is a moving-average crossover rule applied to price history. Its profit depends on regime: it gains in persistent trends and loses to whipsaw in ranges, net of fees.
+- **Claim:** Order flow ranks first and MACD last, and moving-average bots never make money.
+- **Testable:** yes. Does a 20/50 moving-average crossover on public daily BTC data beat buy and hold after 0.1 percent fees, and in what share of years? Queued as P-0265.
+- **Idea on its own:** needs-a-run. The claim is checkable, and the likely answer is regime-dependent rather than never.
+- **How it would be done:** Pull daily candles from a public exchange endpoint, code the crossover with a fee per switch, and compute return, drawdown and per-year win share against buy and hold. Run a few parameter pairs and report all of them to avoid picking the best. No hired work needed.
+- **Stack already covers:** freqtrade
+- **Field Notes line:** A reel says moving-average bots never profit; a fee-adjusted backtest on public data gives a number instead.
+
+### H-0459 AI Agent Memory Architecture: Structured SQL, Semantic Vector Search & Memory Bank
+2026-10-30, youtube, https://www.youtube.com/watch?v=8C4bh59FtsI
+
+- **Mechanism:** The talk splits agent memory in two: exact facts go in a SQL database queried for rows, and fuzzy understanding goes in a vector store searched by embedding similarity. A managed memory bank reads past sessions, extracts memories with a model and updates them over time. Short-term session context is treated like RAM and discarded unless promoted.
+- **Claim:** Long-term agent memory needs a structured store for facts and a vector store for meaning, kept separate.
+- **Testable:** no. Embedding search needs a model or key and there is no local LLM tonight. Needs: an embedding model.
+- **Idea on its own:** sound. Separating exact lookups from similarity recall matches how memory files and an index already work here.
+- **How it would be done:** Proteus already keeps facts as files and an index. A step up would be a SQLite table for exact facts with dates plus a small embedding index for notes, with a nightly pass promoting items from run logs. Embeddings would need a hosted model or a local one that is not installed. No hired work needed.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** sqlite-vec https://github.com/asg017/sqlite-vec (vector search inside SQLite, no server)
+- **Field Notes line:** Google's memory talk says keep facts in SQL and meaning in a vector store, and promote only what survives the session.
+
+### H-0457 haydenschmitty/floorplan: See how your app actually fits together. An interactive, plain-English map of your codebase, d
+2026-10-30, github, https://github.com/haydenschmitty/floorplan
+
+- **Mechanism:** A Claude Code or Codex plugin has the model read a repo and write a graph of parts, files and web requests with plain-English names. Frontend calls are matched to server endpoints by static analysis, including across repos. A health check flags secrets, unauthenticated endpoints, unused files and oversized files. Updates re-read only changed files and the map is a local HTML page.
+- **Claim:** An interactive plain-English map of any codebase, drawn by an AI coding agent, 481 stars in three days.
+- **Testable:** no. The map is built by model calls inside a Claude session, so there is no keyless deterministic slice to verdict tonight. Needs: a Claude Code session to generate the map.
+- **Idea on its own:** needs-a-run. Model-drawn architecture maps are useful if the connections are checked against the real import graph.
+- **How it would be done:** Install the plugin in Claude Code, run it on a mid-size Proteus subfolder such as bin/, then compare its drawn connections against a plain grep of imports to count missed or invented links. The sound part is the static endpoint matching; the risky part is the model naming. A reviewer would spot-check twenty edges by hand.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** floorplan https://github.com/haydenschmitty/floorplan (the plugin itself)
+- **Field Notes line:** Floorplan has an AI agent draw a clickable plain-English map of a codebase, matching frontend requests to server endpoints.
+
+### H-0456 Backdoor in Claude Code for VS Code extension on the Cursor Marketplace
+2026-10-30, hn, https://phorion.io/blog/offical-claude-code-vsx-compromise/
+
+- **Mechanism:** A malicious build of the official Claude Code VS Code extension was published to the Cursor marketplace (an Open VSX style registry), reportedly with a remote access payload. The route is a compromised publisher account or release pipeline, so editors that auto-update pulled the bad version. Yanking the version from the registry does not clean machines that already installed it.
+- **Claim:** A backdoored Claude Code extension appeared on the Cursor marketplace; the page reports over 27 million installs of the extension overall.
+- **Testable:** no. Running the compromised package would be unsafe and the affected version is yanked.
+- **Idea on its own:** sound. Registry supply chain compromise through auto-update is a well-known real attack path.
+- **How it would be done:** Defence is to pin extension versions, disable auto-update on agent machines, and list installed extensions against a known-good hash list. Proteus can read the vendor notice and the extensions folder for the installed version, checking only metadata. A hired person would run an incident review of developer machines if any took the update.
+- **Field Notes line:** A backdoored copy of the Claude Code extension reached Cursor's marketplace, and yanking it does not clean machines that already updated.
+
+### H-0455 Why a grid bot's daily result is always green and what the one-day failure looks like
+2026-10-30, vault, https://www.instagram.com/reel/DePwjVsuY_V/
+
+- **Mechanism:** A grid and recovery bot opens a ladder of positions against the trend and adds size as price moves away, closing everything when price returns to a small profit target. Most days the price oscillates back, so the daily result is green by construction. The loss sits in the tail: a sustained trend exhausts margin and the whole stack closes at once, so one day wipes out months of small wins.
+- **Claim:** A 159 dollar MT5 bot for gold shows a green day on a reel and implies steady profit.
+- **Testable:** yes. In a simulated martingale grid on a random walk, what share of days are green and how deep is the worst single-day loss relative to the average win? Queued as P-0264.
+- **Idea on its own:** unsound. Selling many small wins against rare large losses looks profitable until the tail arrives, and sizing up into losses makes ruin likely.
+- **How it would be done:** Write a small Python simulator of a grid with fixed spacing and a size multiplier, run it over random-walk and trending price paths, and record daily win rate, worst day and time to ruin at a fixed margin. Optionally run it on public hourly gold or BTC history to see real trend days. Compare the equity curve to buy and hold. No person is needed; the output is a chart of win rate against the single worst day.
+- **Stack already covers:** Claude Code with skills and sub-agents, freqtrade
+- **Field Notes line:** A grid bot is green most days by design; the cost is one trend day that erases months, and a short simulation shows the ratio.
 
 ### H-0452 Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites
 2026-10-29, hn, https://news.ycombinator.com/item?id=50286306
@@ -3761,6 +3874,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0465 | 2026-10-30 | The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a | intel | sound | yes | P-0267 |
+| H-0460 | 2026-10-30 | A ranked list of trading concepts with unsourced percentages, engagement bait in the smart | intel | needs-a-run | yes | P-0265 |
+| H-0455 | 2026-10-30 | Why a grid bot's daily result is always green and what the one-day failure looks like | intel | unsound | yes | P-0264 |
 | H-0451 | 2026-10-29 | provider plugins that ship their own catalogue | intel | sound | no |  |
 | H-0446 | 2026-10-29 | Wan2GP local video (LTX-2 Distilled, Wan) | open | sound | no |  |
 | H-0441 | 2026-10-29 | Pinokio one-click installer | open | sound | no |  |
@@ -3859,6 +3975,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0270 | 2026-10-30 | [HyperGrad](https://github.com/tapoooooty/hypergrad) | oracle and listing policy code to read | H-0467 (tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliqui) | shelf |
+| T-0269 | 2026-10-30 | [crt.sh](https://crt.sh) | free certificate transparency search for sibling domains | H-0465 (The free-pay-only-shipping closure-sale dropship p) | shelf |
+| T-0268 | 2026-10-30 | [InferD paper](https://arxiv.org/abs/2610.39807) | design and any released code | H-0463 (InferD: A Honeypot Framework for AI Inference Infr) | shelf |
+| T-0267 | 2026-10-30 | [pump-fun-sdk](https://github.com/nirholas/pump-fun-sdk) | curve decoding and quote functions | H-0462 (nirholas/pump-fun-sdk: Token creation launching, b) | shelf |
+| T-0266 | 2026-10-30 | [sqlite-vec](https://github.com/asg017/sqlite-vec) | vector search inside SQLite, no server | H-0459 (AI Agent Memory Architecture: Structured SQL, Sema) | shelf |
+| T-0265 | 2026-10-30 | [floorplan](https://github.com/haydenschmitty/floorplan) | the plugin itself | H-0457 (haydenschmitty/floorplan: See how your app actuall) | shelf |
 | T-0264 | 2026-10-29 | [Concordat](https://arxiv.org/abs/2610.37461) | Paper links the open-source library; find the repo from the abstract page. | H-0449 (Concordat: Typed Sessions for LLM Agents) | shelf |
 | T-0263 | 2026-10-29 | [bla-agents](https://github.com/qybaihe/bla) | The tool under test, available via npx. | H-0443 (qybaihe/bla: 🛡️ BLA (Blind LLM Agents) — Adversari) | shelf |
 | T-0262 | 2026-10-29 | [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) | Local receiver to capture Claude Code OTEL traces. | H-0442 (Claude Code regularly sends each background agent’) | shelf |
@@ -4128,6 +4250,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0468 | 2026-10-30 | youtube | [check your car depreciation value right now](https://www.youtube.com/watch?v=01fdd_Q7i2s) | Transcript is song lyrics, no car depreciation content. |
+| H-0466 | 2026-10-30 | hn | [Claude Code VS Code extension with backdoor released on Cursor marketplace](https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2) | Duplicate of the Claude Code extension backdoor story; the best-discussed copy is kept. |
+| H-0464 | 2026-10-30 | youtube | [Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond A](https://www.youtube.com/watch?v=W2HVdB4Jbjs) | Duplicate of the other agent memory talk, which is kept. |
+| H-0461 | 2026-10-30 | hn | [Backdoors in official Claude Code extensions](https://cyberplace.social/@GossiTheDog/117528831681803563) | Duplicate of the Claude Code extension backdoor story; the best-discussed copy is kept. |
+| H-0458 | 2026-10-30 | arxiv | [MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Col](https://arxiv.org/abs/2610.40293) | GPU serving benchmark for multi-agent workloads, needs hardware Proteus lacks and no mechanism relevant to the desks. |
 | H-0454 | 2026-10-29 | youtube | [Apple says the M5 Ultra is 4.3x faster for local AI. Is that real? (Part 2)](https://www.youtube.com/watch?v=xdFhtstXhs0) | Body unavailable and the title is a vendor speed claim with no mechanism. |
 | H-0453 | 2026-10-29 | github | [boyuchengz/canvas-mcp: Read-only MCP server that connects Claude, ChatGPT and ot](https://github.com/boyuchengz/canvas-mcp) | Generic read-only MCP wrapper around one product that needs a Canvas account. |
 | H-0450 | 2026-10-29 | youtube | [This Is Why Solana’s Network Success Doesn't Save Your SOL! ⚡️📉](https://www.youtube.com/watch?v=CRj3WJE4DDc) | Body unavailable and the title reads as generic Solana commentary. |

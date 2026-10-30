@@ -1,5 +1,5 @@
 {
- "next_id": 264,
+ "next_id": 268,
  "items": [
   {
    "id": "P-0001",
@@ -6488,6 +6488,86 @@
     "at": "2026-10-30T12:39:50+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0264",
+   "title": "Martingale grid: what share of simulated days are green, and how big is the worst day versus the average win?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-30",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0265",
+   "title": "Moving-average crossover: does a 20/50 rule beat buy and hold after fees on public daily BTC history?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-30",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0266",
+   "title": "pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progress within 2 percent?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-10-30",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0267",
+   "title": "Closure-sale shop signals: does public RDAP show a 2026 registration, and how many sibling domains share nameservers?",
+   "source": "vault",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-30",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

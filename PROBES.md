@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 200 works, 5 broken, 31 blocked, 15 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,10 @@ Verdicts so far: 200 works, 5 broken, 31 blocked, 15 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
+| P-0264 | Martingale grid: what share of simulated days are green, and how big is the worst day versus the average win? | vault | none |  | 0 | 20 min |
+| P-0265 | Moving-average crossover: does a 20/50 rule beat buy and hold after fees on public daily BTC history? | vault | none |  | 0 | 20 min |
+| P-0266 | pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progress within 2 percent? | harvest | none |  | 0 | 30 min |
+| P-0267 | Closure-sale shop signals: does public RDAP show a 2026 registration, and how many sibling domains share nameservers? | vault | none |  | 0 | 15 min |
 
 ## Verdicts (251)
 
