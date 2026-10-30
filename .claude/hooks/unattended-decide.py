@@ -749,10 +749,22 @@ def main():
         deny("No browser in an unattended Proteus run: the pane hangs scheduled sessions (P-0173, Trials 21 Oct). "
              "Fetch with curl or a script under the folder; a probe that needs a browser is blocked.")
 
-    if tool in ("mcp__board__log_work", "mcp__board__list_log", "mcp__board__list_projects"):
+    if tool.startswith("mcp__board__"):
         # 30 Oct 2026, Luke: Proteus writes its own rows to the team record. The token writes as
         # proteus only; a row is data on a store nothing downstream acts on, so no prompt is needed.
-        decide("allow", "The team record: Proteus writes and reads its own rows.")
+        # Reads for anyone; writes to the record (log rows, routines, handoffs, reference rows) for the
+        # parent only, since a child's work is the parent's to record; the task board (claim, hand,
+        # update) stays out, because the charter never opens a card or a decision item for anyone.
+        if tool in ("mcp__board__list_log", "mcp__board__list_projects", "mcp__board__list_routines",
+                    "mcp__board__list_handoffs"):
+            decide("allow", "The team record: a read.")
+        if tool in ("mcp__board__log_work", "mcp__board__set_routine", "mcp__board__set_handoff",
+                    "mcp__board__set_row"):
+            if child:
+                deny("A sub-agent does not write the team record; the parent records what it keeps.")
+            decide("allow", "The team record: Proteus writes its own rows.")
+        deny("The task board (%s) is not Proteus's: the charter never opens a card, a handoff row or a "
+             "decision item for anyone. Rows go through log_work, set_routine, set_handoff and set_row." % tool)
 
     deny("Tool '%s' is not available in an unattended Proteus run." % tool)
 

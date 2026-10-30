@@ -68,7 +68,11 @@ CASES = [
     # 30 Oct 2026: the team record. log_work and the two reads allowed; the task board denied. The
     # record's other writes (set_routine, set_handoff, set_row) wait on state/loop/hook-patches/record-writes.diff.
     ("mcp__board__log_work", {"project": "proteus", "title": "a finished thing"}, "allow"),
+    ("mcp__board__set_routine", {"slug": "proteus-nightly", "name": "x"}, "allow"),
+    ("mcp__board__set_handoff", {"to_agent": "luke", "slug": "x", "name": "x"}, "allow"),
+    ("mcp__board__set_row", {"table": "capabilities", "row": {"slug": "x", "name": "x"}}, "allow"),
     ("mcp__board__list_log", {"project": "proteus"}, "allow"),
+    ("mcp__board__list_routines", {}, "allow"),
     ("mcp__board__claim_task", {"title": "x"}, "deny"),
     ("mcp__board__post_handoff", {"to": "luke", "note": "please"}, "deny"),
     ("mcp__board__update_task", {"id": "B-0001", "status": "done"}, "deny"),
@@ -226,6 +230,7 @@ FANOUT_CASES = [
     (CHILD, "mcp__Claude_Browser__get_page_text", {}, "deny"),
     # the team record: a child may read it (30 Oct 2026); the child write ban is in the record-writes patch
     (CHILD, "mcp__board__list_log", {"project": "proteus"}, "allow"),
+    (CHILD, "mcp__board__log_work", {"project": "proteus", "title": "x"}, "deny"),
     (CHILD, "mcp__board__set_row", {"table": "services", "row": {"name": "x"}}, "deny"),
     # the spawn cap: two allowed above, two more here, the fifth is denied
     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 3

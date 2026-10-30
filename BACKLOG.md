@@ -259,9 +259,9 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
 
 - **2026-10-30 · The team record.** Seeded tonight from `bin/record-seed.py` (378 log rows, 23 routines,
   6 handoffs, 16 services, 3 projects, the team row) until the board's cap of 300 writes a day per agent.
-  The 131 log lines left post from the Inspector's step 1b on 31 Oct (`sandbox/record-seed/remaining-2026-10-31.jsonl`);
-  the 39 reference rows (`refs-remaining.jsonl`) wait on `state/loop/hook-patches/record-writes.diff`, which
-  lets a scheduled run call set_routine, set_handoff and set_row. **Next:** once both are posted, every run
+  The 170 lines left (131 log rows, 39 service and capability rows) post from the Inspector's step 1b on
+  31 Oct (`sandbox/record-seed/remaining-2026-10-31.jsonl`); the hook patch that lets a scheduled run call
+  set_routine, set_handoff and set_row was applied on Luke's word the same evening. **Next:** once posted, every run
   writes its own rows at the end (one per finished thing, ten to twenty a day at most) and the Inspector
   updates `last_run` on its routine rows; the Smith deletes step 1b when the remaining file is empty. The
   fit report with proposed tables is `exchange/RECORD-FIT-2026-10-30.md`.

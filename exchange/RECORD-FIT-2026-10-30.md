@@ -5,8 +5,9 @@ tables, my own history from the first commit (22 Sep) to tonight, and posting wh
 to know first: the board allows one agent 300 writes a day. The seed needed about 470, so it stopped
 at 300 and the rest is queued to post itself from tomorrow's Inspector. Nothing was lost; every row
 carries a dedupe key and sits in a file in the repo. The second thing: the app's own guard refused
-my edit to the hook that would let scheduled runs write routines and reference rows, so that change
-is a patch for a session with Luke, not a change I made.
+my edit to the hook that would let scheduled runs write routines and reference rows, so I wrote it
+as a tested patch; Luke said "apply the patch" the same evening and it went in at 18:35, with every
+hook test passing.
 
 A note on the path: `exchange/` is the Smarkets exchange book's folder, so this report sits beside
 BOOK.csv. Harmless, but a `record/` folder would be cleaner if there are more of these.
@@ -23,13 +24,10 @@ BOOK.csv. Harmless, but a `record/` folder would be cleaner if there are more of
 | projects (set_row) | 3 of 3 | 0 | `proteus-grinder`, `proteus-pitch`, `proteus-field-notes`: kind lane, lane research, owners proteus, with a summary and links each. Added because the desks are what a stranger would look for; every log row still says project `proteus`, as asked. |
 | team (set_row) | 1 of 1 | 0 | My own row corrected: the seat is minted, the mailbox is none of my own (the weekly email borrows the Triton identity), the daytime loop and morning chess job are in runs_on, reaches and cannot match the charter, hands_to and takes_from include Triton. |
 
-Total writes: 300, the cap. 170 lines wait:
-
-- 130 log rows and the note for this report: `sandbox/record-seed/remaining-2026-10-31.jsonl`. The
-  Inspector posts them at 09:00 on 31 Oct (new step 1b in `tasks/inspector.md`); log_work is already
-  allowed unattended.
-- 39 reference rows (12 services, 27 capabilities): `sandbox/record-seed/refs-remaining.jsonl`. They
-  need `set_row` allowed in a scheduled run, which is the hook patch below, or the next attended session.
+Total writes: 300, the cap. 170 lines wait in `sandbox/record-seed/remaining-2026-10-31.jsonl`: 130
+log rows, the note for this report, and the 39 reference rows (12 services, 27 capabilities). The
+Inspector posts them at 09:00 on 31 Oct (new step 1b in `tasks/inspector.md`); with the hook patch
+applied, every one of those tools is allowed in a scheduled run.
 
 Files in the repo: `bin/record-seed.py` composes every log row from the probe register, the artefacts
 table, the intel and Field Notes files and a hand list; `exchange/record-rows-2026-10-30.jsonl` is
@@ -90,12 +88,10 @@ is in brackets; it is Luke's call.
 
 ## (c) What I need from Luke
 
-- Nothing blocking: the 131 log lines post themselves from the Inspector at 09:00 on 31 Oct.
-- The hook patch `state/loop/hook-patches/record-writes.diff` (set_routine, set_handoff and set_row
-  for the parent run only; children never write the record; the task board denied by name): apply it
-  in a session with you, or the 39 reference rows wait for the next attended session. Either is fine.
-- The 300-a-day cap: leave it, I will stay well inside it from now (ten to twenty rows a day); or raise
-  it once if you want the 39 reference rows in tomorrow too. Nothing needed either way.
+- Nothing blocking: all 170 lines post themselves from the Inspector at 09:00 on 31 Oct.
+- The hook patch (set_routine, set_handoff and set_row for the parent run only; children never write
+  the record; the task board denied by name) is applied on your word of 30 Oct; nothing more needed.
+- The 300-a-day cap: leave it. I will stay well inside it from now, ten to twenty rows a day.
 - Discord: the team table says I have a Discord bot. Nothing in my folder runs or reads one, so I wrote
   no Discord handoff. One word on whether it is mine to record.
 - The three desk project rows (`proteus-grinder`, `proteus-pitch`, `proteus-field-notes`) are on the
