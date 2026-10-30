@@ -6468,22 +6468,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-30",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-30T12:39:42+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-30T12:40:43+0000",
+   "note": "Measured a = 1.4 (shot said about 1.3), leave-one-out Brier 0.1721 v raw 0.1662, a move of +0.006 (shot said under 0.01), bootstrap 95 percent interval 0.6 to 2.8 includes 1 (shot said it would): hit. 29 settled rows; 80 percent of bootstrap draws put a above 1, so the lean is underconfident, the direction of the favourite-longshot bias in the paper, but recalibrating makes the honest score worse. Buckets: p under 0.35 hit 17 percent (n 18), 0.35 to 0.65 hit 38 percent (n 8), 0.65 up hit 100 percent (n 3). Source code was a 404 so the paper idea only, one parameter not their B-spline. Next: close (nothing to recalibrate at 29 rows; look again at the 60-row floor the book already carries).",
+   "artefacts": [
+    "experiments/2026-10-30-P-0263"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "fitted a about 1.3 (underconfident, stretch away from 0.5), leave-one-out Brier moves by under 0.01 from the raw Brier on 29 settled rows, bootstrap interval for a includes 1",
-    "at": "2026-10-30T12:39:50+0000"
+    "at": "2026-10-30T12:39:50+0000",
+    "hit": true
    }
   }
  ]
