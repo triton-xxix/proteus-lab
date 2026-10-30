@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 196 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
+Verdicts so far: 197 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,13 @@ Verdicts so far: 196 works, 5 broken, 30 blocked, 15 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0259 | bla-agents: does harden keep a small JS bundle's output identical, and how much bigger does it get? | harvest | none |  | 1 | 20 min |
-| P-0260 | Concordat: does the typed-session library block every illegal tool call from a scripted fake model? | harvest | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (246)
+## Verdicts (247)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-30 | P-0260 | Concordat: does the typed-session library block every illegal tool call from a scripted fake model? | **works** | Measured 0 side effects from 32 illegal tool calls (16 per mode, 4 states), all 32 rejected, shot said 0: hit. Mode A (direct method call) raises ProtocolViolation before the body; mode B (runner invoke over allowed_tools) never offers the tool and returns an error string. Counters moved only on the legal path (1 each). Subclass shortcut to the final state rejected at class definition; tool_calls=3 budget stopped at exactly 3 with BudgetExceeded. Caveat: calling the raw function via _steps[name].fn skips the guard entirely, so the boundary is the method, not the function; a model emitting tool names cannot reach it. concordat 0.0.3 pure Python, keyless, pydantic for the runner. Next: deepen (a Concordat protocol class for one Proteus scheduled task, withholding tools by state instead of the hook denying call by call). | `experiments/2026-10-30-P-0260` | 2 min, 30 calls, 2 denied |
+| | | | | denied: Bash `python3 --version`; Bash `/Users/triton/PROTEUS/sandbox/concordat-venv/bin/python -m pip install --quiet --no-input ` | | |
 | 2026-10-29 | P-0258 | Wish from r/SomebodyMakeThis (1xd7g0b), a local structured store of your own AI chat history: build the Claude Code half, a keyless script that turns this Mac's Claude Code transcripts into one SQLite file (session, turn, role, model, text, tokens, timestamp) with a README under docs/tools/, measured on my own transcripts | **works** | Measured: 163 transcript files to one SQLite in 7.3 s, 39,596 rows (one per content block) from 40,351 user and assistant records, 73.8 MB; shot said about 60,000 rows, missed, the other 52,488 lines are client bookkeeping. Catch: each reply's usage repeats on every block record (14,444 rows share a request id), so the README's token query groups by request id. Tool at docs/tools/chat-store/, database stays gitignored. | `experiments/2026-10-29-P-0258` | 2 min, 17 calls, 0 denied |
 | 2026-10-29 | P-0257 | Follow P-0256: how many GAMES.csv rows carry a result or status that differs from the Lichess by-ids export (sandbox/lichess-tritonxxix.ndjson); list each, and find where bin/lichess.py reads status before the game ends | **works** | Measured: 60 GAMES.csv rows v the Lichess export, results 60 of 60 agree, colours 60 of 60, status 59 of 60; the one is mPEN9pM0 (12 Oct), log started, export outoftime. Shot said 1 to 3 status rows, results all agree: hit. Correction to P-0256: not a hang inside a move; the bot made 22 of its 23 moves and the 600 s tool timeout killed the call (F-0008, fixed that day with the 570 s resign cap, bin/lichess.py:141); the 201.6 s was the clock running out after. No code change. Next: close. | `experiments/2026-10-29-P-0257` | 0 min, 8 calls, 0 denied |
 | 2026-10-29 | P-0256 | Deepen P-0255: does tritonxxix actually think the 1.0 s a move D-010 registered? Per game measured mean think (P-0255 results.json) against GAMES.csv think_s and the D-010 start date; and open the one loss (mean 10.2 s a move) for a lag or hang in the bot log | **works** | Measured: the 27 games logged think_s 1.0 move in a median 1.04 s (range 1.04 to 1.12); the 22 at 0.3 and 11 blank move in 0.40 s. Shot said 0.9 to 1.3 s with the low median from 0.3 or blank games: hit. The bot thinks what it is set to, plus 0.04 to 0.1 s. The one loss (mPEN9pM0, 12 Oct, raspfish 3016) was a 201.6 s hang on one move, lost on time (export status outoftime); GAMES.csv logs it as started, a stale status. Not fixed here: the chess desk owns the file. Next: promote (morning chess run: log the final status from the export, and look for the 12 Oct hang in the bot log). | `experiments/2026-10-29-P-0256` | 0 min, 8 calls, 0 denied |

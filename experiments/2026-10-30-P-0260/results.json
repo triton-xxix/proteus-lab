@@ -1,0 +1,409 @@
+{
+ "library": "concordat 0.0.3 (PyPI)",
+ "python": "3.14.6",
+ "runner_import_error": "",
+ "mode_A_direct": {
+  "rounds": [
+   {
+    "state": "start",
+    "mode": "A",
+    "offered": [
+     "ask_customer"
+    ],
+    "tried_illegal": 4,
+    "rejected": 4,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "start"
+   },
+   {
+    "state": "asked",
+    "mode": "A",
+    "offered": [
+     "approve_change",
+     "record_answer"
+    ],
+    "tried_illegal": 3,
+    "rejected": 3,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "asked"
+   },
+   {
+    "state": "confirmed",
+    "mode": "A",
+    "offered": [
+     "apply_change"
+    ],
+    "tried_illegal": 4,
+    "rejected": 4,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "confirmed"
+   },
+   {
+    "state": "done",
+    "mode": "A",
+    "offered": [],
+    "tried_illegal": 5,
+    "rejected": 5,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "done"
+   }
+  ],
+  "final_state": "done",
+  "done": true,
+  "side_effects": {
+   "apply_change": 1,
+   "ask_customer": 1,
+   "record_answer": 1
+  },
+  "history": [
+   [
+    "start",
+    "ask_customer",
+    "asked"
+   ],
+   [
+    "asked",
+    "record_answer",
+    "confirmed"
+   ],
+   [
+    "confirmed",
+    "apply_change",
+    "done"
+   ]
+  ],
+  "log": [
+   [
+    "start",
+    "A",
+    "record_answer",
+    "ProtocolViolation: 'record_answer' is not allowed in state 'start'; allowed: ['ask_customer']"
+   ],
+   [
+    "start",
+    "A",
+    "approve_change",
+    "ProtocolViolation: 'approve_change' is not allowed in state 'start'; allowed: ['ask_customer']"
+   ],
+   [
+    "start",
+    "A",
+    "apply_change",
+    "ProtocolViolation: 'apply_change' is not allowed in state 'start'; allowed: ['ask_customer']"
+   ],
+   [
+    "start",
+    "A",
+    "unknown_tool",
+    "AttributeError (no such tool)"
+   ],
+   [
+    "asked",
+    "A",
+    "ask_customer",
+    "ProtocolViolation: 'ask_customer' is not allowed in state 'asked'; allowed: ['approve_change', 'record_answer']"
+   ],
+   [
+    "asked",
+    "A",
+    "apply_change",
+    "ProtocolViolation: 'apply_change' is not allowed in state 'asked'; allowed: ['approve_change', 'record_answer']"
+   ],
+   [
+    "asked",
+    "A",
+    "unknown_tool",
+    "AttributeError (no such tool)"
+   ],
+   [
+    "confirmed",
+    "A",
+    "ask_customer",
+    "ProtocolViolation: 'ask_customer' is not allowed in state 'confirmed'; allowed: ['apply_change']"
+   ],
+   [
+    "confirmed",
+    "A",
+    "record_answer",
+    "ProtocolViolation: 'record_answer' is not allowed in state 'confirmed'; allowed: ['apply_change']"
+   ],
+   [
+    "confirmed",
+    "A",
+    "approve_change",
+    "ProtocolViolation: 'approve_change' is not allowed in state 'confirmed'; allowed: ['apply_change']"
+   ],
+   [
+    "confirmed",
+    "A",
+    "unknown_tool",
+    "AttributeError (no such tool)"
+   ],
+   [
+    "done",
+    "A",
+    "ask_customer",
+    "ProtocolViolation: 'ask_customer' is not allowed in state 'done'; allowed: []"
+   ],
+   [
+    "done",
+    "A",
+    "record_answer",
+    "ProtocolViolation: 'record_answer' is not allowed in state 'done'; allowed: []"
+   ],
+   [
+    "done",
+    "A",
+    "approve_change",
+    "ProtocolViolation: 'approve_change' is not allowed in state 'done'; allowed: []"
+   ],
+   [
+    "done",
+    "A",
+    "apply_change",
+    "ProtocolViolation: 'apply_change' is not allowed in state 'done'; allowed: []"
+   ],
+   [
+    "done",
+    "A",
+    "unknown_tool",
+    "AttributeError (no such tool)"
+   ]
+  ]
+ },
+ "mode_B_runner": {
+  "rounds": [
+   {
+    "state": "start",
+    "mode": "B",
+    "offered": [
+     "ask_customer"
+    ],
+    "tried_illegal": 4,
+    "rejected": 4,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "start"
+   },
+   {
+    "state": "asked",
+    "mode": "B",
+    "offered": [
+     "approve_change",
+     "record_answer"
+    ],
+    "tried_illegal": 3,
+    "rejected": 3,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "asked"
+   },
+   {
+    "state": "confirmed",
+    "mode": "B",
+    "offered": [
+     "apply_change"
+    ],
+    "tried_illegal": 4,
+    "rejected": 4,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "confirmed"
+   },
+   {
+    "state": "done",
+    "mode": "B",
+    "offered": [],
+    "tried_illegal": 5,
+    "rejected": 5,
+    "accepted": 0,
+    "side_effects_moved": {},
+    "state_after": "done"
+   }
+  ],
+  "final_state": "done",
+  "done": true,
+  "side_effects": {
+   "apply_change": 1,
+   "ask_customer": 1,
+   "record_answer": 1
+  },
+  "history": [
+   [
+    "start",
+    "ask_customer",
+    "asked"
+   ],
+   [
+    "asked",
+    "record_answer",
+    "confirmed"
+   ],
+   [
+    "confirmed",
+    "apply_change",
+    "done"
+   ]
+  ],
+  "log": [
+   [
+    "start",
+    "B",
+    "record_answer",
+    "'record_answer' is not allowed in the current state."
+   ],
+   [
+    "start",
+    "B",
+    "approve_change",
+    "'approve_change' is not allowed in the current state."
+   ],
+   [
+    "start",
+    "B",
+    "apply_change",
+    "'apply_change' is not allowed in the current state."
+   ],
+   [
+    "start",
+    "B",
+    "unknown_tool",
+    "'unknown_tool' is not allowed in the current state."
+   ],
+   [
+    "asked",
+    "B",
+    "ask_customer",
+    "'ask_customer' is not allowed in the current state."
+   ],
+   [
+    "asked",
+    "B",
+    "apply_change",
+    "'apply_change' is not allowed in the current state."
+   ],
+   [
+    "asked",
+    "B",
+    "unknown_tool",
+    "'unknown_tool' is not allowed in the current state."
+   ],
+   [
+    "confirmed",
+    "B",
+    "ask_customer",
+    "'ask_customer' is not allowed in the current state."
+   ],
+   [
+    "confirmed",
+    "B",
+    "record_answer",
+    "'record_answer' is not allowed in the current state."
+   ],
+   [
+    "confirmed",
+    "B",
+    "approve_change",
+    "'approve_change' is not allowed in the current state."
+   ],
+   [
+    "confirmed",
+    "B",
+    "unknown_tool",
+    "'unknown_tool' is not allowed in the current state."
+   ],
+   [
+    "done",
+    "B",
+    "ask_customer",
+    "'ask_customer' is not allowed in the current state."
+   ],
+   [
+    "done",
+    "B",
+    "record_answer",
+    "'record_answer' is not allowed in the current state."
+   ],
+   [
+    "done",
+    "B",
+    "approve_change",
+    "'approve_change' is not allowed in the current state."
+   ],
+   [
+    "done",
+    "B",
+    "apply_change",
+    "'apply_change' is not allowed in the current state."
+   ],
+   [
+    "done",
+    "B",
+    "unknown_tool",
+    "'unknown_tool' is not allowed in the current state."
+   ]
+  ]
+ },
+ "liskov": {
+  "rejected_at_definition": true,
+  "error": "FastBookingAgent breaks BookingAgent's protocol: after instant_change, it reaches 'done', which BookingAgent only reaches through ask_customer \u2192 approve_change \u2192 apply_change"
+ },
+ "budget": {
+  "budget": 3,
+  "calls_before_stop": 3,
+  "error": "BudgetExceeded: tool_calls: need 1, 0 left",
+  "side_effects": {
+   "apply_change": 0,
+   "ask_customer": 2,
+   "record_answer": 1
+  }
+ },
+ "bypass_caveat": {
+  "raw_fn_call_fired_side_effect": true,
+  "state_after": "start"
+ },
+ "totals": {
+  "mode_A_direct": {
+   "illegal_tried": 16,
+   "rejected": 16,
+   "accepted": 0,
+   "side_effects_from_illegal": 0,
+   "offered_per_state": {
+    "start": [
+     "ask_customer"
+    ],
+    "asked": [
+     "approve_change",
+     "record_answer"
+    ],
+    "confirmed": [
+     "apply_change"
+    ],
+    "done": []
+   }
+  },
+  "mode_B_runner": {
+   "illegal_tried": 16,
+   "rejected": 16,
+   "accepted": 0,
+   "side_effects_from_illegal": 0,
+   "offered_per_state": {
+    "start": [
+     "ask_customer"
+    ],
+    "asked": [
+     "approve_change",
+     "record_answer"
+    ],
+    "confirmed": [
+     "apply_change"
+    ],
+    "done": []
+   }
+  }
+ }
+}

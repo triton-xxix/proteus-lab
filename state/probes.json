@@ -6377,22 +6377,28 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-30T12:31:57+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-10-30T12:34:25+0000",
+   "note": "Measured 0 side effects from 32 illegal tool calls (16 per mode, 4 states), all 32 rejected, shot said 0: hit. Mode A (direct method call) raises ProtocolViolation before the body; mode B (runner invoke over allowed_tools) never offers the tool and returns an error string. Counters moved only on the legal path (1 each). Subclass shortcut to the final state rejected at class definition; tool_calls=3 budget stopped at exactly 3 with BudgetExceeded. Caveat: calling the raw function via _steps[name].fn skips the guard entirely, so the boundary is the method, not the function; a model emitting tool names cannot reach it. concordat 0.0.3 pure Python, keyless, pydantic for the runner. Next: deepen (a Concordat protocol class for one Proteus scheduled task, withholding tools by state instead of the hook denying call by call).",
+   "artefacts": [
+    "experiments/2026-10-30-P-0260"
+   ],
+   "minutes": 2,
+   "calls": 30,
+   "denied": [
+    "Bash `python3 --version`",
+    "Bash `/Users/triton/PROTEUS/sandbox/concordat-venv/bin/python -m pip install --quiet --no-input `"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "0 side effects from out-of-state tool calls, every illegal call rejected (a repo must exist and run keyless)",
-    "at": "2026-10-30T12:32:17+0000"
+    "at": "2026-10-30T12:32:17+0000",
+    "hit": true
    }
   }
  ]
