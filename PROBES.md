@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 203 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 204 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 203 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0268 | Skool About-page scorer (S-58 Magnetic Memberships audit checklist): stdlib script grading an About page on the 5 June audit rules, then diffed against the Launch a Skool framework text to list what the framework is missing | field-notes | none |  | 0 | 20 min |
 
-## Verdicts (255)
+## Verdicts (256)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-30 | P-0268 | Skool About-page scorer (S-58 Magnetic Memberships audit checklist): stdlib script grading an About page on the 5 June audit rules, then diffed against the Launch a Skool framework text to list what the framework is missing | **works** | Scorer built (stdlib, 11 checks, reads the About page's embedded JSON keyless): Maker School, the audit's exemplar, scores 7 of 11 and the audit's own authors 6 of 11, three fails structural to a free community. The Launch a Skool diff half is blocked: the framework lives in the vault outside the folder a run may read; left for an interactive session. | `experiments/2026-10-30-P-0268` | 2 min, 25 calls, 0 denied |
 | 2026-10-30 | P-0266 | pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progress within 2 percent? | **works** | Six live pump.fun curves read over the public RPC with the SDK's own formulas (price vSOL/vTok, progress 1 - real/793.1M): 5 of 6 within 1% of DexScreener (+0.10, +0.04, -0.26, +0.99, -0.27), the sixth +10.5% on a token trading 983 times an hour, two reads seconds apart. Formula run in Python from the source; the TypeScript npm ci did not finish in the budget. | `experiments/2026-10-30-P-0266` | 2 min, 23 calls, 0 denied |
 | 2026-10-30 | P-0267 | Closure-sale shop signals: does public RDAP show a 2026 registration, and how many sibling domains share nameservers? | **works** | RDAP: registered 12 Jan 2026 (290 days) on a one-year term, Tucows, Google Cloud DNS, stock Shopify; crt.sh 49 certificates from 23:02 that same day and only www, checkout and the apex ever certified, against a 46-year trading claim. Sibling count by nameserver is not keyless and is noise on shared Shopify DNS anyway. | `experiments/2026-10-30-P-0267` | 0 min, 6 calls, 0 denied |
 | 2026-10-30 | P-0265 | Moving-average crossover: does a 20/50 rule beat buy and hold after fees on public daily BTC history? | **not-worth-it** | BTCUSDT daily 2017 to 2026, 0.10% a side, next-close fills: 20/50 made 16.2x against 18.2x holding (CAGR 36.0% v 37.7%, 74 trades), trails by 4.9 points over the last 3 years, beats holding only in the down year (+5.6% v -29.2%); drawdown 75% v 83%; 10/30 and 50/200 disagree, so the pair is the fit. | `experiments/2026-10-30-P-0265` | 0 min, 4 calls, 0 denied |
