@@ -45,6 +45,10 @@ For each, in order, while time allows:
 5. One line under `## I changed myself` in this week's Field Notes draft (`field-notes/drafts/YYYY-Www.md`):
    `- F-00NN, <commit>: <what changed and why>; revert with git revert <commit>`.
 
+A finding whose source is `duecheck` is a pre-registered read owed, not a fault: read
+`/Users/triton/PROTEUS/state/loop/skill-drafts/due-read/SKILL.md` first (a draft until an interactive
+session copies it into `.claude/skills/`) and do the read, as D-012, D-014 and D-018 were done by hand.
+
 A finding you cannot fix tonight stays open with a note in the run log. One that should never be fixed:
 `findings.py wontfix F-00NN --note '<why>'`.
 
