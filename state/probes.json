@@ -6351,9 +6351,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-29",
-   "status": "in_progress",
+   "status": "open",
    "attempts": 1,
-   "started_at": "2026-10-29T23:38:13+0000",
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -6377,9 +6377,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-29",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-30T12:31:57+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -6387,7 +6387,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "0 side effects from out-of-state tool calls, every illegal call rejected (a repo must exist and run keyless)",
+    "at": "2026-10-30T12:32:17+0000"
+   }
   }
  ]
 }
