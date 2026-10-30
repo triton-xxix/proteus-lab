@@ -1,0 +1,40 @@
+{
+ "domain": "harrisonandjames.com",
+ "checked": "2026-10-30T23:39Z",
+ "rdap": {
+  "registered": "2026-01-12T23:56:19Z",
+  "expires": "2027-01-12T23:56:19Z",
+  "last_changed": "2026-01-12T23:56:31Z",
+  "status": [
+   "client transfer prohibited",
+   "client update prohibited"
+  ],
+  "nameservers": [
+   "ns-cloud-c1.googledomains.com",
+   "ns-cloud-c2.googledomains.com",
+   "ns-cloud-c3.googledomains.com",
+   "ns-cloud-c4.googledomains.com"
+  ],
+  "registrar": "Tucows Domains Inc.",
+  "registrant_country": null,
+  "age_days": 290
+ },
+ "crt": {
+  "certificates": 49,
+  "hostnames": [
+   "checkout.harrisonandjames.com",
+   "harrisonandjames.com",
+   "www.harrisonandjames.com"
+  ],
+  "first_certificate": "2026-01-12T23:02:44"
+ },
+ "http": {
+  "status": 200,
+  "headers": {
+   "powered-by": "Shopify",
+   "x-dc": "gcp-europe-west1,gcp-europe-west1,gcp-europe-west1",
+   "Server": "cloudflare"
+  },
+  "shopify": false
+ }
+}
