@@ -1,5 +1,5 @@
 {
- "next_id": 262,
+ "next_id": 263,
  "items": [
   {
    "id": "P-0001",
@@ -6429,6 +6429,32 @@
     "number": "47 of 56 state-tool pairs withheld across 7 states, 0 side effects from withheld calls; the hook denied 2 calls this run and neither was a protocol tool",
     "at": "2026-10-30T12:35:09+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0262",
+   "title": "Star decay on P-0145's 34 survivors 16 days on: re-fetch stargazers_count keyless (34 repos calls, 60 an hour) against the 14 Oct counts in experiments/2026-10-14-P-0145/results.json tonight.flagged; did the 8 suspicious-slice survivors lose stars or grow slower than the other 26 (GitHub purges farmed stars); report median change per slice",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-30",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-30T12:37:00+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "suspicious-slice survivors median star change about +3 percent v the other 26 about +25 percent since 14 Oct, with 2 of 34 repos gone (404); no outright star losses in either slice",
+    "at": "2026-10-30T12:37:08+0000"
    }
   }
  ]
