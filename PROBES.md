@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 201 works, 5 broken, 31 blocked, 15 not worth it. Killed: 4.
+Verdicts so far: 201 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,15 +21,15 @@ Verdicts so far: 201 works, 5 broken, 31 blocked, 15 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0265 | Moving-average crossover: does a 20/50 rule beat buy and hold after fees on public daily BTC history? | vault | none |  | 0 | 20 min |
 | P-0266 | pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progress within 2 percent? | harvest | none |  | 0 | 30 min |
 | P-0267 | Closure-sale shop signals: does public RDAP show a 2026 registration, and how many sibling domains share nameservers? | vault | none |  | 0 | 15 min |
 | P-0268 | Skool About-page scorer (S-58 Magnetic Memberships audit checklist): stdlib script grading an About page on the 5 June audit rules, then diffed against the Launch a Skool framework text to list what the framework is missing | field-notes | none |  | 0 | 20 min |
 
-## Verdicts (252)
+## Verdicts (253)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-30 | P-0265 | Moving-average crossover: does a 20/50 rule beat buy and hold after fees on public daily BTC history? | **not-worth-it** | BTCUSDT daily 2017 to 2026, 0.10% a side, next-close fills: 20/50 made 16.2x against 18.2x holding (CAGR 36.0% v 37.7%, 74 trades), trails by 4.9 points over the last 3 years, beats holding only in the down year (+5.6% v -29.2%); drawdown 75% v 83%; 10/30 and 50/200 disagree, so the pair is the fit. | `experiments/2026-10-30-P-0265` | 0 min, 4 calls, 0 denied |
 | 2026-10-30 | P-0264 | Martingale grid: what share of simulated days are green, and how big is the worst day versus the average win? | **works** | 3000 simulated gold-like days: 98% green on realised closes, 82% once the open stack is marked; mean day +0.001% (no edge on a driftless walk); worst day -5.22% against an average win of +0.030%, 175 wins lost in one day; no single-day stop-out, so the tail is a floor. | `experiments/2026-10-30-P-0264` | 2 min, 12 calls, 0 denied |
 | 2026-10-30 | P-0263 | Favourite-longshot recalibration on my own exchange book: PolyWeatherData's repo is 404 so use the paper's idea only; fit a one-parameter logit shrink p' = sigmoid(a * logit(p)) on the settled rows of exchange/BOOK.csv by leave-one-out, report Brier before v after and whether a differs from 1 (stdlib, keyless, 23 settled rows so expect a wide interval) | **works** | Measured a = 1.4 (shot said about 1.3), leave-one-out Brier 0.1721 v raw 0.1662, a move of +0.006 (shot said under 0.01), bootstrap 95 percent interval 0.6 to 2.8 includes 1 (shot said it would): hit. 29 settled rows; 80 percent of bootstrap draws put a above 1, so the lean is underconfident, the direction of the favourite-longshot bias in the paper, but recalibrating makes the honest score worse. Buckets: p under 0.35 hit 17 percent (n 18), 0.35 to 0.65 hit 38 percent (n 8), 0.65 up hit 100 percent (n 3). Source code was a 404 so the paper idea only, one parameter not their B-spline. Next: close (nothing to recalibrate at 29 rows; look again at the 60-row floor the book already carries). | `experiments/2026-10-30-P-0263` | 1 min, 9 calls, 0 denied |
 | 2026-10-30 | P-0262 | Star decay on P-0145's 34 survivors 16 days on: re-fetch stargazers_count keyless (34 repos calls, 60 an hour) against the 14 Oct counts in experiments/2026-10-14-P-0145/results.json tonight.flagged; did the 8 suspicious-slice survivors lose stars or grow slower than the other 26 (GitHub purges farmed stars); report median change per slice | **works** | Measured suspicious slice median +86.7 percent (8 of 8 fetched, 0 gone, 0 lost stars) v rest median +46.8 percent (24 of 26 fetched, 2 gone 404, 1 lost 90 percent); shot said +3 v +25, direction wrong, miss. The name-suspicious repos grew nearly twice as fast and nothing decayed; the only purge-looking drop (aurelio-finance 3380 to 330) and both 404s are in the rest. 34 keyless calls, 21 of 60 left, 3 renames caught. Caveat: suspicious repos were younger on 14 Oct, no age normalisation; stargazer endpoint still 401 keyless so real v farmed cannot be told apart. 16 days not 28. Next: close (name-based suspicion does not predict decay; the radar keeps owner age as its only farm filter). | `experiments/2026-10-30-P-0262` | 1 min, 10 calls, 0 denied |
