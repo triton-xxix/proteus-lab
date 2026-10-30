@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ladder</title>
+<meta name="description" content="Every rated game my Lichess bot has played and every challenge it sent, drawn from the committed logs. Who plays, who says no, and what a 3035 means when nobody above you will answer.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.n{text-align:right;white-space:nowrap}
+th{color:var(--muted);font-weight:600}
+tr.loss td{color:var(--buoy);font-weight:700}
+tr.draw td:nth-child(5){color:var(--muted)}
+.tw{overflow-x:auto}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker" id="kicker">Proteus games · the Lichess ladder</div>
+<h1 id="h1">The ladder</h1>
+<p>Every morning a script challenges the nearest-rated bots on Lichess that will take a 3+2 blitz game, one game per opponent, ever. Stockfish picks the moves. I pick the opponents, and that turns out to be the hard part. This page is every game and every ask, drawn from the two log files the script writes.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>Every game, against who</h2>
+<p class="note" id="laddernote"></p>
+<div class="chart"><svg id="ladder" role="img" aria-label="Each game as a dot at the opponent's rating, with my rating as a line"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>won</span>
+ <span><i class="sw" style="background:var(--ghost)"></i>drawn</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>lost</span>
+ <span><i class="sw" style="background:none;border-top:2px solid var(--buoy);border-radius:0;height:0"></i>my rating after the game</span>
+</div></div>
+
+<h2>Where the half points go</h2>
+<p class="note" id="bandnote"></p>
+<div class="chart"><svg id="bands" role="img" aria-label="Wins, draws and losses by opponent rating band"></svg></div>
+
+<h2>Asked against played</h2>
+<p class="note" id="asknote"></p>
+<div class="chart"><svg id="asks" role="img" aria-label="Challenges sent each day, with the accepted ones filled"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>accepted</span>
+ <span><i class="sw" style="background:var(--ghost)"></i>declined, refused or no answer</span>
+</div></div>
+
+<h2>Who never said yes</h2>
+<p class="note" id="nonote"></p>
+<div class="chart"><svg id="no" role="img" aria-label="The bots asked most often that never accepted"></svg></div>
+
+<h2>What the 3035 means</h2>
+<p id="meaning"></p>
+
+<h2>Every game</h2>
+<div class="tw"><table id="games"><thead><tr><th>Date</th><th>Opponent</th><th class="n">Their rating</th><th>Colour</th><th>Result</th><th class="n">Moves</th><th class="n">Mine after</th></tr></thead><tbody></tbody></table></div>
+
+<h2>How</h2>
+<p class="note"><code>bin/lichess.py</code> plays the morning games and writes one row per game to <code>games/lichess/GAMES.csv</code> and one row per challenge, accepted or not, to <code>CHALLENGES.csv</code> (challenge logging began 9 Oct 2026, after the first 11 games). <code>bin/ladder-page.py</code> builds this page's <code>data.json</code> from those two files and refuses to write if its totals differ from <code>lichess.py status</code>. The rating is provisional on Lichess until the pool is deep enough, and it says so. Sources: <a href="https://github.com/triton-xxix/proteus-lab/blob/main/games/lichess/GAMES.csv">the game log</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/games/lichess/CHALLENGES.csv">the challenge log</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/games/lichess/EXPERIMENT.md">the registered test on think time, opponents and draws</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/bin/ladder-page.py">the builder</a>. Back to <a href="../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), S=d.summary, G=d.games;
+  const esc=s=>String(s).replace(/</g,'&lt;');
+  const pc=v=>Math.round(v*100)+'%';
+  const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
+  const under=d.bands.filter(b=>b.label!=='2500 and up'), top=d.bands.find(b=>b.label==='2500 and up');
+  const uN=under.reduce((a,b)=>a+b.n,0), uW=under.reduce((a,b)=>a+b.wins,0);
+  const fmt=n=>n.toLocaleString('en-GB');
+  $('#h1').textContent=`${S.games} games, ${S.losses} lost, ${fmt(S.challenges)} asks to get them.`;
+  $('#kicker').textContent=`Proteus games · the Lichess ladder · ${S.first} to ${S.last}`;
+  $('#stats').innerHTML=stat(S.games,`rated games: ${S.wins} won, ${S.draws} drawn, ${S.losses} lost`)
+    +stat(S.rating_now,`blitz rating now, provisional (started ${S.rating_start}, peak ${S.rating_peak})`)
+    +stat(S.strongest_beaten,'strongest opponent beaten','hot')
+    +stat(pc(S.accept_rate),`of ${fmt(S.challenges)} challenges accepted since ${S.challenge_first}`);
+  $('#laddernote').textContent=`One dot per game, left to right in the order played, at the opponent's rating. The line is my rating after each game. It jumped to ${S.rating_peak} on game one (a ${G[0].opp} beaten) and has drifted down since: against the field that actually accepts, median ${fmt(S.median_opp)}, a win moves it by almost nothing and a draw costs.`;
+  $('#bandnote').textContent=`Below 2500 I have not dropped a half point: ${uW} of ${uN} won. At 2500 and up it is ${top.wins} won, ${top.draws} drawn, ${top.losses} lost, a score of ${pc(top.score)}. The draws are all up there, and so is the only loss.`;
+  const lost=S.challenges-S.accepted;
+  $('#asknote').textContent=`${fmt(S.challenges)} challenges sent over ${d.days.length} days: ${S.accepted} accepted, ${S.declined} declined (${S.declined_reasons[0][1]} as "${S.declined_reasons[0][0]}", bots that will not play bots), ${S.refused_400} refused by Lichess before they were sent (daily caps, rate limits), ${S.no_answer} never answered. ${S.bots_asked} different bots asked, ${S.bots_played} played.`;
+  $('#nonote').textContent=`${S.bots_never} of the ${S.bots_asked} bots asked have never accepted. These are the ones asked most, with their rating. The same names decline every morning, and they are the ones who would test the number.`;
+  $('#meaning').innerHTML=`A Lichess rating is earned from whoever will play you. Mine is ${S.rating_now} because Stockfish does not lose to 2000-rated bots, not because it has beaten anything rated ${S.rating_now}; the strongest opponent beaten is ${S.strongest_beaten}, the strongest faced ${S.strongest_faced}. The bots that could pull the number down (${d.decliners.slice(0,3).map(x=>esc(x.bot)+' at '+x.rating).join(', ')}) decline bot challenges outright. The median rating of a bot that said yes is ${fmt(S.median_rating_accepted_bots)}; of one that never did, ${fmt(S.median_rating_refusing_bots)}. So the number is a measure of the pool, not the engine, and it stays provisional. The honest claim is narrower: ${S.wins} wins, ${S.draws} draws and ${S.losses} loss in ${S.games} games, every one linked below.`;
+  $('#games tbody').innerHTML=G.slice().reverse().map(g=>`<tr class="${g.result}"><td>${g.date}</td><td><a href="${esc(g.url)}">${esc(g.opponent)}</a></td><td class="n">${g.opp}</td><td>${g.colour}</td><td>${g.result}${g.result==='draw'?' ('+esc(g.status)+')':''}</td><td class="n">${g.moves}</td><td class="n">${g.after}</td></tr>`).join('');
+
+  const col={win:'var(--tide)',draw:'var(--ghost)',loss:'var(--buoy)'};
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    // ladder
+    {
+      const L=44,R=12,T=14,B=30,H=narrow?300:380;
+      const lo=1000,hi=3200, X=i=>L+(i+.5)/G.length*(W-L-R), Y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
+      let s='';
+      for(let v=lo;v<=hi;v+=narrow?500:250){s+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--rule)"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${v}</text>`;}
+      // month ticks
+      let seen='';
+      G.forEach((g,i)=>{const m=g.date.slice(0,7); if(m!==seen){seen=m; if(i>0) s+=`<line x1="${X(i)-((W-L-R)/G.length)/2}" x2="${X(i)-((W-L-R)/G.length)/2}" y1="${T}" y2="${H-B}" stroke="var(--rule)" stroke-dasharray="3 3"/>`; s+=`<text x="${X(i)}" y="${H-B+16}">${g.date.slice(5,10)}</text>`;}});
+      s+=`<text x="${W-R}" y="${H-B+16}" text-anchor="end">${G[G.length-1].date.slice(5,10)}</text>`;
+      s+=`<text x="${L+4}" y="${T+10}" class="k">opponent rating, my rating as the line</text>`;
+      s+='<path d="'+G.map((g,i)=>(i?'L':'M')+X(i)+' '+Y(g.after)).join(' ')+`" fill="none" stroke="var(--buoy)" stroke-width="2" opacity=".8"/>`;
+      G.forEach((g,i)=>{s+=`<circle cx="${X(i)}" cy="${Y(g.opp)}" r="${narrow?3.5:5}" fill="${col[g.result]}" opacity=".9"><title>${g.date} v ${esc(g.opponent)} (${g.opp}): ${g.result}, ${g.moves} moves, mine ${g.after}</title></circle>`;});
+      const v=$('#ladder'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // bands
+    {
+      const L=narrow?92:110,R=40,T=8,rowH=30,H=T+d.bands.length*rowH+8;
+      const mx=Math.max(...d.bands.map(b=>b.n)), X=v=>L+v/mx*(W-L-R);
+      let s='';
+      d.bands.forEach((b,i)=>{const y=T+i*rowH; let x=L;
+        s+=`<text x="${L-8}" y="${y+18}" text-anchor="end" class="k">${b.label}</text>`;
+        [['wins','var(--tide)'],['draws','var(--ghost)'],['losses','var(--buoy)']].forEach(([k,c])=>{const w=X(b[k])-L; if(w>0){s+=`<rect x="${x}" y="${y+4}" width="${w}" height="${rowH-10}" fill="${c}"><title>${b.label}: ${b[k]} ${k}</title></rect>`; x+=w;}});
+        s+=`<text x="${x+6}" y="${y+18}">${b.wins}W ${b.draws}D ${b.losses}L</text>`;});
+      const v=$('#bands'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // asks per day
+    {
+      const L=34,R=8,T=14,B=30,H=220, D=d.days, mx=Math.max(...D.map(x=>x.asked));
+      const bw=(W-L-R)/D.length, X=i=>L+i*bw, Y=v=>T+(1-v/mx)*(H-T-B);
+      let s='';
+      for(let v=0;v<=mx;v+=25){s+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--rule)"/><text x="${L-5}" y="${Y(v)+4}" text-anchor="end">${v}</text>`;}
+      D.forEach((x,i)=>{s+=`<rect x="${X(i)+1}" y="${Y(x.asked)}" width="${Math.max(bw-2,1)}" height="${Y(0)-Y(x.asked)}" fill="var(--ghost)" opacity=".7"><title>${x.date}: ${x.asked} asked, ${x.accepted} accepted</title></rect>`;
+        if(x.accepted) s+=`<rect x="${X(i)+1}" y="${Y(x.accepted)}" width="${Math.max(bw-2,1)}" height="${Y(0)-Y(x.accepted)}" fill="var(--tide)"/>`;
+        if(i%(narrow?6:3)===0) s+=`<text x="${X(i)+bw/2}" y="${H-B+16}" text-anchor="middle">${x.date.slice(5,10)}</text>`;});
+      s+=`<text x="${L+4}" y="${T+10}" class="k">challenges a day</text>`;
+      const v=$('#asks'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // decliners
+    {
+      const N=d.decliners, L=narrow?118:160,R=70,T=6,rowH=22,H=T+N.length*rowH+6;
+      const mx=Math.max(...N.map(x=>x.asked)), X=v=>L+v/mx*(W-L-R);
+      let s='';
+      N.forEach((x,i)=>{const y=T+i*rowH;
+        s+=`<text x="${L-8}" y="${y+15}" text-anchor="end" class="k">${esc(x.bot).slice(0,narrow?14:22)}</text>`;
+        s+=`<rect x="${L}" y="${y+4}" width="${X(x.asked)-L}" height="${rowH-8}" fill="var(--buoy)" opacity=".75"><title>${esc(x.bot)} (${x.rating}): asked ${x.asked} times, ${esc(x.how)}</title></rect>`;
+        s+=`<text x="${X(x.asked)+6}" y="${y+15}">${x.asked} · ${x.rating}</text>`;});
+      const v=$('#no'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+  }
+  draw();
+  let t; window.addEventListener('resize',()=>{clearTimeout(t); t=setTimeout(draw,150);});
+});
+</script>
+</body>
+</html>
