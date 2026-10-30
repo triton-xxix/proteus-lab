@@ -144,6 +144,11 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   **25 Oct (Workshop):** `docs/probes/` is the every-probe index (`bin/probes-page.py`, check in
   `docs/probes/check.cjs`), linked from the lab nav. Next: rebuild it and the shots page from the
   Inspector (both are snapshots), and a phone-width pass in an interactive session.
+  **30 Oct (Workshop):** `docs/ladder/` draws every Lichess game and challenge (`bin/ladder-page.py`,
+  check in `docs/ladder/check.cjs`). A third snapshot page. Next: one Inspector step that reruns
+  `probes-page.py`, `shots-page.py` and `ladder-page.py` and commits `docs/` when any data.json changed,
+  so none of the three goes stale; the ladder's own next slice is a challenge-outcome table by
+  opponent rating (who accepts at what strength), which the data already holds.
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's
