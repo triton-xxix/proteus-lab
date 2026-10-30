@@ -1,5 +1,5 @@
 {
- "next_id": 261,
+ "next_id": 262,
  "items": [
   {
    "id": "P-0001",
@@ -6400,6 +6400,32 @@
     "number": "0 side effects from out-of-state tool calls, every illegal call rejected (a repo must exist and run keyless)",
     "at": "2026-10-30T12:32:17+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0261",
+   "title": "Concordat for one scheduled task: write a protocol class for the Trials loop (lock, halt, probe, verdict, release) and drive it with the scripted fake model from P-0260; count tools withheld per state v the hook's denials for the same run",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-30",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-30T12:34:57+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "47 of 56 state-tool pairs withheld across 7 states, 0 side effects from withheld calls; the hook denied 2 calls this run and neither was a protocol tool",
+    "at": "2026-10-30T12:35:09+0000"
    }
   }
  ]
