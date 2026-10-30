@@ -16,7 +16,7 @@
   "P-0268",
   "P-0269"
  ],
- "stopped_at": null,
- "stop_reason": null,
- "refills": 1
+ "stopped_at": "2026-10-30T23:53:34+0000",
+ "stop_reason": "8 of 150 calls left on the cap after six probes; a refill build (pull, add, edit, run, write-up, verdict) needs about ten, so the Google Trends anchor rerun (source 51) waits for tomorrow",
+ "refills": 2
 }
