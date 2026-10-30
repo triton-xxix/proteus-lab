@@ -38,6 +38,10 @@ Daytime rules on top of the skill:
 - **No browser pane.** The hook denies `mcp__Claude_Browser__*` in scheduled runs since 21 Oct 2026: the
   12:31 Trials that day hung on a `navigate` and the hung session blocked the slot (one session per task).
   Fetch with curl or a script; a probe that needs a browser is verdict blocked, not attempted.
+- **No attack-shaped work on someone else's code** (hardening, exploiting, bypassing, evading detection):
+  P-0259 ("harden" a third-party JS bundle) stopped a response on a safety classifier in the 29 Oct nightly
+  and again in the 30 Oct Trials, and a refusal ends the whole session with everything after it unrun
+  (F-0065). Verdict such a probe blocked with `--needs "an interactive session"` at the GO line.
 - A harvest probe tests a claim the tool makes, never just whether it installs.
 - If the probe is a trading or forecasting claim, follow the permutation-test and random-entry-control procedure in `/Users/triton/PROTEUS/state/retired-skills/2026-10-24-backtest-with-luck-test/SKILL.md` (the skill was retired 24 Oct after 0 scheduled uses in 14 days; today's P-0210 and P-0211 did the procedure by hand; if that keeps happening, the Smith reinstates it).
 - If a probe needs Luke's hands, verdict blocked with `--luke`; never ask him anything from here.
