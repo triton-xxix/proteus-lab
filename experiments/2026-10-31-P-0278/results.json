@@ -1,0 +1,281 @@
+{
+ "ensemble_days_with_members": 5,
+ "spread_by_day": {
+  "2026-10-28": {
+   "n": 40,
+   "p10": 11.1,
+   "p50": 11.6,
+   "p90": 12.2,
+   "width": 1.1,
+   "minmax": 1.8
+  },
+  "2026-10-29": {
+   "n": 40,
+   "p10": 9.1,
+   "p50": 10.0,
+   "p90": 10.6,
+   "width": 1.5,
+   "minmax": 2.6
+  },
+  "2026-10-30": {
+   "n": 40,
+   "p10": 9.6,
+   "p50": 10.3,
+   "p90": 10.6,
+   "width": 1.0,
+   "minmax": 1.9
+  },
+  "2026-10-31": {
+   "n": 40,
+   "p10": 8.5,
+   "p50": 8.9,
+   "p90": 9.3,
+   "width": 0.8,
+   "minmax": 1.4
+  },
+  "2026-11-01": {
+   "n": 40,
+   "p10": 7.0,
+   "p50": 7.5,
+   "p90": 7.9,
+   "width": 0.9,
+   "minmax": 2.0
+  }
+ },
+ "day_ahead_band_days": 5,
+ "settled_calls": 17,
+ "calls_with_same_day_spread": 3,
+ "calls_with_day_ahead_band": 3,
+ "corr_same_day_spread_v_miss": 0.866,
+ "corr_day_ahead_band_v_miss": -0.866,
+ "mean_miss": 1.24,
+ "miss_by_lead": {
+  "under_24h": [
+   0,
+   3,
+   4,
+   1,
+   0,
+   0,
+   2
+  ],
+  "24h_plus": [
+   0,
+   3,
+   2,
+   1,
+   0,
+   1,
+   1,
+   2,
+   1,
+   0
+  ]
+ },
+ "rows": [
+  {
+   "id": "X-0015",
+   "day": "2026-10-15",
+   "called": 18,
+   "p": 0.45,
+   "outcome": "winner",
+   "lead_h": 25.6,
+   "winner": 18,
+   "miss": 0,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0016",
+   "day": "2026-10-15",
+   "called": 18,
+   "p": 0.45,
+   "outcome": "winner",
+   "lead_h": 1.6,
+   "winner": 18,
+   "miss": 0,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0021",
+   "day": "2026-10-19",
+   "called": 17,
+   "p": 0.22,
+   "outcome": "loser",
+   "lead_h": 25.6,
+   "winner": 14,
+   "miss": 3,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0022",
+   "day": "2026-10-20",
+   "called": 12,
+   "p": 0.24,
+   "outcome": "loser",
+   "lead_h": 21.5,
+   "winner": 9,
+   "miss": 3,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0023",
+   "day": "2026-10-21",
+   "called": 13,
+   "p": 0.24,
+   "outcome": "loser",
+   "lead_h": 25.5,
+   "winner": 11,
+   "miss": 2,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0024",
+   "day": "2026-10-20",
+   "called": 13,
+   "p": 0.22,
+   "outcome": "loser",
+   "lead_h": 1.5,
+   "winner": 9,
+   "miss": 4,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0025",
+   "day": "2026-10-22",
+   "called": 14,
+   "p": 0.25,
+   "outcome": "loser",
+   "lead_h": 25.6,
+   "winner": 13,
+   "miss": 1,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0026",
+   "day": "2026-10-23",
+   "called": 12,
+   "p": 0.25,
+   "outcome": "loser",
+   "lead_h": 1.6,
+   "winner": 11,
+   "miss": 1,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0027",
+   "day": "2026-10-24",
+   "called": 11,
+   "p": 0.25,
+   "outcome": "winner",
+   "lead_h": 25.6,
+   "winner": 11,
+   "miss": 0,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0028",
+   "day": "2026-10-25",
+   "called": 15,
+   "p": 0.25,
+   "outcome": "loser",
+   "lead_h": 25.6,
+   "winner": 14,
+   "miss": 1,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0029",
+   "day": "2026-10-25",
+   "called": 14,
+   "p": 0.24,
+   "outcome": "winner",
+   "lead_h": 1.6,
+   "winner": 14,
+   "miss": 0,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0030",
+   "day": "2026-10-26",
+   "called": 13,
+   "p": 0.25,
+   "outcome": "loser",
+   "lead_h": 25.6,
+   "winner": 12,
+   "miss": 1,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0031",
+   "day": "2026-10-26",
+   "called": 12,
+   "p": 0.25,
+   "outcome": "winner",
+   "lead_h": 0.6,
+   "winner": 12,
+   "miss": 0,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0032",
+   "day": "2026-10-27",
+   "called": 18,
+   "p": 0.18,
+   "outcome": "loser",
+   "lead_h": 24.6,
+   "winner": 16,
+   "miss": 2,
+   "same_day_spread": null,
+   "day_ahead_band": null
+  },
+  {
+   "id": "X-0034",
+   "day": "2026-10-29",
+   "called": 11,
+   "p": 0.25,
+   "outcome": "loser",
+   "lead_h": 24.6,
+   "winner": 10,
+   "miss": 1,
+   "same_day_spread": 1.5,
+   "day_ahead_band": 1.26
+  },
+  {
+   "id": "X-0035",
+   "day": "2026-10-29",
+   "called": 12,
+   "p": 0.25,
+   "outcome": "loser",
+   "lead_h": 0.6,
+   "winner": 10,
+   "miss": 2,
+   "same_day_spread": 1.5,
+   "day_ahead_band": 1.26
+  },
+  {
+   "id": "X-0036",
+   "day": "2026-10-30",
+   "called": 11,
+   "p": 0.24,
+   "outcome": "winner",
+   "lead_h": 24.6,
+   "winner": 11,
+   "miss": 0,
+   "same_day_spread": 1.0,
+   "day_ahead_band": 1.42
+  }
+ ]
+}

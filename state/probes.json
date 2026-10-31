@@ -1,5 +1,5 @@
 {
- "next_id": 278,
+ "next_id": 279,
  "items": [
   {
    "id": "P-0001",
@@ -6817,6 +6817,28 @@
    ],
    "minutes": 2,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0278",
+   "title": "Ensemble spread v my miss: for every settled Munich daily-high call in the exchange book, does ICON's member spread on the day (p90 minus p10, ensemble API past_days plus the nightly day-ahead band since 27 Oct) track the size of the miss between the called degree and the winner",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-31",
+   "status": "done",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-31T23:59:55+0000",
+   "note": "Measured: 17 settled Munich calls, mean miss 1.24 C, 6 exact; only 3 have an ensemble spread (the API keeps four days of members, past_days=14 nulls the rest, as P-0231 found) and 3 a captured day-ahead band, giving r +0.87 and -0.87 on the same three days, so no answer. Side finding: calls two days out missed 1.1 on average (n 10) against 1.43 for night-before calls (n 7). Called shot (works, under five pairs): hit. Next: re-run at 20 captured bands beside D-020, registered as D-022.",
+   "artefacts": [
+    "experiments/2026-10-31-P-0278"
+   ],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
