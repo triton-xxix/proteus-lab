@@ -6667,22 +6667,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-10-31",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-31T12:37:33+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-31T12:39:21+0000",
+   "note": "Measured: against the anchor xlookup (8.2 pct of spreadsheet, nonzero 93 of 93 days) 11 of P-0250 17 zero rising terms show volume over the last 14 days (shot 8: miss, resolved more than called) and 6 clear 1 pct of xlookup (shot 5: near): replica skill 8.3, DeepSeek Bot 7.5, RustGIS 6.1, DigUp 4.6, doory 3.1, mailcheap 1.8 pct; 6 rising terms are zero on every day. The 1 pct anchor the row asked for cannot work: sumproduct at 0.95 pct of spreadsheet is itself zero on 71 of 93 days. Trends ranks small terms keyless only through a chain of anchors each about a tenth of the last. 31 requests, no 429. Next: close (the radar question is answered: 3 plus 6 real terms of 34, not 20).",
+   "artefacts": [
+    "experiments/2026-10-31-P-0271"
+   ],
+   "minutes": 1,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "8 of the 17 zero terms show nonzero volume over the last 14 days against xlookup, 5 clear 1 pct of xlookup",
-    "at": "2026-10-31T12:37:40+0000"
+    "at": "2026-10-31T12:37:40+0000",
+    "hit": true
    }
   }
  ]

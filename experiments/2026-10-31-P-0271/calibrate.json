@@ -1,0 +1,66 @@
+{
+ "mode": "calibrate",
+ "cookie_status": 429,
+ "rows": [
+  {
+   "explore_status": 200,
+   "series_status": 200,
+   "points": 93,
+   "share_all": 0.0095,
+   "share_last14": 0.0,
+   "a_nonzero_days": 22,
+   "b_nonzero_days": 93,
+   "anchor_candidate": "sumproduct"
+  },
+  {
+   "explore_status": 200,
+   "series_status": 200,
+   "points": 93,
+   "share_all": 0.0817,
+   "share_last14": 0.083,
+   "a_nonzero_days": 93,
+   "b_nonzero_days": 93,
+   "anchor_candidate": "xlookup"
+  },
+  {
+   "explore_status": 200,
+   "series_status": 200,
+   "points": 93,
+   "share_all": 0.2174,
+   "share_last14": 0.1557,
+   "a_nonzero_days": 93,
+   "b_nonzero_days": 93,
+   "anchor_candidate": "pivot table"
+  },
+  {
+   "explore_status": 200,
+   "series_status": 200,
+   "points": 93,
+   "share_all": 0.0182,
+   "share_last14": 0.0069,
+   "a_nonzero_days": 44,
+   "b_nonzero_days": 93,
+   "anchor_candidate": "countifs"
+  },
+  {
+   "explore_status": 200,
+   "series_status": 200,
+   "points": 93,
+   "share_all": 0.2273,
+   "share_last14": 0.2007,
+   "a_nonzero_days": 93,
+   "b_nonzero_days": 93,
+   "anchor_candidate": "vlookup"
+  },
+  {
+   "explore_status": 200,
+   "series_status": 200,
+   "points": 93,
+   "share_all": 0.0631,
+   "share_last14": 0.0346,
+   "a_nonzero_days": 86,
+   "b_nonzero_days": 93,
+   "anchor_candidate": "index match"
+  }
+ ]
+}
