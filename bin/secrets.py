@@ -73,6 +73,9 @@ ALLOWED_OUTSIDE = {
     ("Tritons World", "Api-Sports"): "Luke in session, 30 Sep 2026: 'wire in api-sports'",
     ("Tritons World", "Google Gemini Api Florist "): "Luke in session, 7 Oct 2026, for the Sixteen Nights record: 'we've got Gemini APIs ... keep that in mind'",
     ("Tritons World", "11 Labs Eleven Labs"): "Luke in session, 7 Oct 2026, for the Sixteen Nights record: 'we've got 11 labs APIs'",
+    ("Tritons World", "Discord"): "Luke in session, 31 Oct 2026: 'we've now got a Discord. Your creds are in 1Password'",
+    ("Tritons World", "Triton Discord BOT token"): "Luke in session, 31 Oct 2026: 'we've now got a Discord. Your creds are in 1Password'",
+    ("Tritons World", "Triton C Discord BOT Token"): "Luke in session, 31 Oct 2026: 'we've now got a Discord. Your creds are in 1Password'",
 }
 
 
