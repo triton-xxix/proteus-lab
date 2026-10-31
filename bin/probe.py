@@ -92,12 +92,12 @@ FIT_STRETCH = 2.0
 # No count cap since 29 Oct 2026 (F-0051). The cap went 2 to 3 on 27 Oct and the 28 Oct loop still
 # stopped on it at 23:42 with 53 minutes left: five nightly loops in a row (24 to 28 Oct) ended on the
 # refill count, none on the clock, seven probes in seven minutes. The night is bounded by the deadline,
-# the 25-minute floor, the probe cap and the call cap, like every other probe. What a refill must not
+# the REFILL_MIN_LEFT floor, the probe cap and the call cap, like every other probe. What a refill must not
 # do is eat REFILL-SOURCES.md: REFILL_RESERVE unused rows stay back for the next night, and when the
 # list is down to them `next` prints SOURCES (add rows, then ask again) instead of a refill or a STOP.
 REFILL_RESERVE = 3
 REFILL_LOW_ROWS = 6           # LOW warning when fewer unused rows than this remain after tonight's pick
-REFILL_MIN_LEFT = 25
+REFILL_MIN_LEFT = 15          # 25 until 31 Oct 2026: the Trials loop ended with 24 min unspent while a refill to a verdict took 7
 REFILL_SOURCES = ROOT + "field-notes/REFILL-SOURCES.md"
 INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is found
 NIGHTLY_LENGTH_MIN = 90
