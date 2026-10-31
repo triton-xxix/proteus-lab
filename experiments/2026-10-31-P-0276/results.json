@@ -1,0 +1,455 @@
+{
+ "papers": 45,
+ "abs_fetched": 45,
+ "papers_with_github_link": 8,
+ "distinct_repos": 8,
+ "repos_200": 8,
+ "repos_dead": [],
+ "repos_archived": [],
+ "stars": {
+  "LabRAI/HazardWeaver": 1,
+  "IcecreamArtist/MedZERO": 1,
+  "duttaprat/ARGUS": 2,
+  "lamda-bbo/agentic-bbo": 4,
+  "InternScience/MLExpert": 18,
+  "Miaow-Lab/DynaWeave": 0,
+  "miladsikaroudi/concordat": 2,
+  "nju-websoft/AgenticDS": 2
+ },
+ "rows": [
+  {
+   "id": "H-0078",
+   "arxiv": "2609.40169",
+   "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0083",
+   "arxiv": "2609.39847",
+   "title": "SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0106",
+   "arxiv": "2610.02181",
+   "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "The authors are withdrawing the current version due to a potential issue in the experimental setup that may affect some "
+  },
+  {
+   "id": "H-0111",
+   "arxiv": "2610.02038",
+   "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0120",
+   "arxiv": "2610.01939",
+   "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65%",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0125",
+   "arxiv": "2610.01768",
+   "title": "The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0134",
+   "arxiv": "2610.03631",
+   "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0139",
+   "arxiv": "2610.03591",
+   "title": "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents",
+   "abs_status": 200,
+   "github_links": [
+    "LabRAI/HazardWeaver"
+   ],
+   "comments_hint": "24 pages, including references and appendices. Code is available at this https URL"
+  },
+  {
+   "id": "H-0147",
+   "arxiv": "2610.06650",
+   "title": "Wikidata Search Traces: A Dataset for Training Knowledge Graph Search Agents",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "Technical Report"
+  },
+  {
+   "id": "H-0153",
+   "arxiv": "2610.06563",
+   "title": "HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "23 pages. Project page: this https URL"
+  },
+  {
+   "id": "H-0161",
+   "arxiv": "2610.08327",
+   "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledg",
+   "abs_status": 200,
+   "github_links": [
+    "IcecreamArtist/MedZERO"
+   ],
+   "comments_hint": "accepted by NIPS 2026"
+  },
+  {
+   "id": "H-0175",
+   "arxiv": "2610.10507",
+   "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "35 pages, 2 figures, 13 tables"
+  },
+  {
+   "id": "H-0189",
+   "arxiv": "2610.12281",
+   "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for In",
+   "abs_status": 200,
+   "github_links": [
+    "duttaprat/ARGUS"
+   ],
+   "comments_hint": "Accepted at the NeurIPS 2026 Workshop on Agentic AI for Biological Discovery (AgenticLS). Code: this https URL"
+  },
+  {
+   "id": "H-0195",
+   "arxiv": "2610.12183",
+   "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
+   "abs_status": 200,
+   "github_links": [
+    "lamda-bbo/agentic-bbo"
+   ],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0203",
+   "arxiv": "2610.12126",
+   "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "20 pages, 7 figures. Project page: this https URL"
+  },
+  {
+   "id": "H-0217",
+   "arxiv": "2610.11768",
+   "title": "Narrow and Deep: An Ontology Tower as the Knowledge of an LLM Agent for an Industrial Equi",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "28 pages, 6 figures, 3 tables"
+  },
+  {
+   "id": "H-0221",
+   "arxiv": "2610.11678",
+   "title": "TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0229",
+   "arxiv": "2610.13862",
+   "title": "BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "9 pages, 7 figures"
+  },
+  {
+   "id": "H-0234",
+   "arxiv": "2610.13710",
+   "title": "OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended ",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "24 pages, including appendix"
+  },
+  {
+   "id": "H-0243",
+   "arxiv": "2610.13651",
+   "title": "ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "33 pages, 4 figures, 16 tables. Evaluates 273 open-source MCP servers (3405 tools); 253 verified semantic security bugs "
+  },
+  {
+   "id": "H-0249",
+   "arxiv": "2610.13461",
+   "title": "SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0257",
+   "arxiv": "2610.18874",
+   "title": "ChunkAct: Action Chunking for Agentic Robotics",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0262",
+   "arxiv": "2610.18792",
+   "title": "SEAR: Self-Evolving Agentic Robotics",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "16 pages"
+  },
+  {
+   "id": "H-0277",
+   "arxiv": "2610.20344",
+   "title": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "17 pages, 5 figures, 4 tables"
+  },
+  {
+   "id": "H-0285",
+   "arxiv": "2610.22344",
+   "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+   "abs_status": 200,
+   "github_links": [
+    "InternScience/MLExpert"
+   ],
+   "comments_hint": "Code: this https URL Model: this https URL"
+  },
+  {
+   "id": "H-0291",
+   "arxiv": "2610.22316",
+   "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "21 pages, 6 figures"
+  },
+  {
+   "id": "H-0299",
+   "arxiv": "2610.22289",
+   "title": "Improving Environment-Agnostic Coding Agents: The Role of Scaffolding",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "38 pages, 5 figures"
+  },
+  {
+   "id": "H-0305",
+   "arxiv": "2610.22124",
+   "title": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "27 pages, NeurIPS 2026"
+  },
+  {
+   "id": "H-0327",
+   "arxiv": "2610.23599",
+   "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving A",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "22 pages, 7 figures, 17 tables, including appendices"
+  },
+  {
+   "id": "H-0333",
+   "arxiv": "2610.23554",
+   "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "23 pages, 3 figures. Submitted to ACL Rolling Review, October 2026"
+  },
+  {
+   "id": "H-0355",
+   "arxiv": "2610.29747",
+   "title": "Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forens",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0361",
+   "arxiv": "2610.29443",
+   "title": "DynaWeave: Learning to Adapt through Dynamic Scenario Synthesis",
+   "abs_status": 200,
+   "github_links": [
+    "Miaow-Lab/DynaWeave"
+   ],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0369",
+   "arxiv": "2610.31650",
+   "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0375",
+   "arxiv": "2610.31483",
+   "title": "Training Small Language Models for Transferable Tool Selection",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "19 pages, 5 figures, 5 tables"
+  },
+  {
+   "id": "H-0383",
+   "arxiv": "2610.31471",
+   "title": "Ask About the Right Moment: Training-Free Object Identity Reasoning for Video-Language Mod",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0388",
+   "arxiv": "2610.31461",
+   "title": "Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0397",
+   "arxiv": "2610.31376",
+   "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "17 pages, 9 figures, 2 tables. Extended version of a paper submitted for publication"
+  },
+  {
+   "id": "H-0411",
+   "arxiv": "2610.32648",
+   "title": "StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0423",
+   "arxiv": "2610.35829",
+   "title": "Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Model",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0432",
+   "arxiv": "2610.37649",
+   "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "this https URL"
+  },
+  {
+   "id": "H-0436",
+   "arxiv": "2610.37648",
+   "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0449",
+   "arxiv": "2610.37461",
+   "title": "Concordat: Typed Sessions for LLM Agents",
+   "abs_status": 200,
+   "github_links": [
+    "miladsikaroudi/concordat"
+   ],
+   "comments_hint": "11 pages, 1 figure, 1 table. Code, benchmark harness and results: this https URL"
+  },
+  {
+   "id": "H-0463",
+   "arxiv": "2610.39807",
+   "title": "InferD: A Honeypot Framework for AI Inference Infrastructure",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": "AISec Workshop '26, ACM CCS 2026, The Hague, Netherlands"
+  },
+  {
+   "id": "H-0472",
+   "arxiv": "2610.39682",
+   "title": "Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels",
+   "abs_status": 200,
+   "github_links": [],
+   "comments_hint": ""
+  },
+  {
+   "id": "H-0477",
+   "arxiv": "2610.39608",
+   "title": "From Intent to Improvement: Agentic Dataset Search for Better Model Training",
+   "abs_status": 200,
+   "github_links": [
+    "nju-websoft/AgenticDS"
+   ],
+   "comments_hint": "13 pages, 4 figures"
+  }
+ ],
+ "repos": {
+  "LabRAI/HazardWeaver": {
+   "status": 200,
+   "stars": 1,
+   "pushed_at": "2026-10-05T03:55:49Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "IcecreamArtist/MedZERO": {
+   "status": 200,
+   "stars": 1,
+   "pushed_at": "2026-10-18T14:43:00Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "duttaprat/ARGUS": {
+   "status": 200,
+   "stars": 2,
+   "pushed_at": "2026-10-08T14:42:16Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "lamda-bbo/agentic-bbo": {
+   "status": 200,
+   "stars": 4,
+   "pushed_at": "2026-10-12T11:05:35Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "InternScience/MLExpert": {
+   "status": 200,
+   "stars": 18,
+   "pushed_at": "2026-10-16T11:13:56Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "Miaow-Lab/DynaWeave": {
+   "status": 200,
+   "stars": 0,
+   "pushed_at": "2026-10-21T08:50:57Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "miladsikaroudi/concordat": {
+   "status": 200,
+   "stars": 2,
+   "pushed_at": "2026-10-30T15:37:40Z",
+   "archived": false,
+   "redirected_to": null
+  },
+  "nju-websoft/AgenticDS": {
+   "status": 200,
+   "stars": 2,
+   "pushed_at": "2026-10-29T08:29:32Z",
+   "archived": false,
+   "redirected_to": null
+  }
+ }
+}

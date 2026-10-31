@@ -1,5 +1,5 @@
 {
- "next_id": 276,
+ "next_id": 277,
  "items": [
   {
    "id": "P-0001",
@@ -6773,6 +6773,28 @@
    ],
    "minutes": 0,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0276",
+   "title": "arXiv code-link rot: for the 45 harvest papers kept since 1 Oct, fetch each abstract page, pull every github.com link from the abstract and comments, and ask the GitHub API which repos answer 200 today, with stars and last push; how many papers link code, and how many of those links are dead",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-31",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-31T23:51:49+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-31T23:54:46+0000",
+   "note": "Measured: 45 of 45 abstract pages fetched 3 s apart; 8 papers (18 pct) carry a github.com link in the abstract or comments, 8 distinct repos, 8 of 8 answer 200 on the keyless API, none archived, stars 0 to 18 with a median of 2, every one pushed in October. No rot a month on; the finding is that 37 of 45 kept papers link no code where the harvester can see it and the rest are near-unstarred. Called shot (works, 8 to 15 linked, at most one dead): hit. Next: re-run the same 45 in three months; a PDF-body pass would raise the 18 pct.",
+   "artefacts": [
+    "experiments/2026-10-31-P-0276"
+   ],
+   "minutes": 2,
+   "calls": 3,
    "denied": [],
    "luke": false
   }
