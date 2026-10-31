@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-30 09:06 UTC",
- "commit": "c64f05f",
+ "built_at": "2026-10-31 09:19 UTC",
+ "commit": "4f6a3c0",
  "input_blobs": {
   "grinder/LEDGER.csv": "4d60d237b28cbc24f4b1c449d432e910eb1cecdb",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
-  "pitch/PREDICTIONS.csv": "5238be9ffc3f96aa0c07646afc046696c8ca06af",
+  "pitch/PREDICTIONS.csv": "f333c9a6d9026b5ba195053084c54a4ae792bb0c",
   "state/spend.jsonl": null,
-  "state/probes.json": "ea1d7a96e960293f3dd8d5d336626e0d7bd89b04",
+  "state/probes.json": "2f8d326e1e03bde43cb5fa3cf36eff794f768c8b",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000",
@@ -53,7 +53,7 @@
   }
  },
  "pitch": {
-  "committed_before_kickoff": 331,
+  "committed_before_kickoff": 363,
   "committed_late_excluded": 0,
   "scored": 79,
   "paired": 79,
@@ -69,15 +69,15 @@
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 246,
-  "works": 196,
+  "verdicts": 257,
+  "works": 205,
   "broken": 5,
-  "blocked": 30,
-  "not_worth_it": 15,
+  "blocked": 31,
+  "not_worth_it": 16,
   "killed": 4,
   "killed_by_rule": 1,
   "killed_by_luke": 3,
-  "open": 10
+  "open": 8
  },
  "spend": {
   "cap_gbp": 50.0,
