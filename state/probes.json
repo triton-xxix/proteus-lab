@@ -1,5 +1,5 @@
 {
- "next_id": 272,
+ "next_id": 274,
  "items": [
   {
    "id": "P-0001",
@@ -6687,6 +6687,46 @@
     "at": "2026-10-31T12:37:40+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0272",
+   "title": "pixelfx: does the repo hold the claimed 244 effects and do sampled effects render deterministically?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-31",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0273",
+   "title": "Sketch Stadium: does the public watch page expose a readable event stream and how many events per two minutes?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-10-31",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

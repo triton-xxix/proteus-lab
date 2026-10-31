@@ -6,21 +6,30 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-468 judged over 32 harvest days, 304 kept, 97 testable, 92 queued as probes, 85 with a probe verdict.
+482 judged over 33 harvest days, 313 kept, 99 testable, 94 queued as probes, 89 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0482 | 2026-10-31 | hn | [Show HN: Sketch Stadium – watch your agent play Pictionary](https://sketch.wakeshift.ai/games/q5ucru) | mechanism | game-bots | yes | P-0273 |
+| H-0481 | 2026-10-31 | github | [muaaz9329/cheap-ag: 50x your Claude usage with cheap-ag. Opus plans, a dirt-cheap model wr](https://github.com/muaaz9329/cheap-ag) | both | tools-for-strangers | no: Needs a paid provider API key and Claude Code usage to measu |  |
+| H-0480 | 2026-10-31 | hn | [Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge](https://github.com/Millillion/lasm) | mechanism | tech | no: It needs the Lean toolchain installed and a build, which is  |  |
+| H-0479 | 2026-10-31 | vault | [one platform, organic short-form]() (intel) | mechanism | mechanism-hunting | no: The figures are seller-reported and cannot be checked withou |  |
+| H-0477 | 2026-10-31 | arxiv | [From Intent to Improvement: Agentic Dataset Search for Better Model Training](https://arxiv.org/abs/2610.39608) | mechanism | open-data | no: It needs an LLM for plan compilation and a large dataset ind |  |
+| H-0474 | 2026-10-31 | vault | [Feature set and price of the tool, and the 2026 picture on restrictions for non-compliant ](https://topa.io/linkedinautomation/) (intel) | mechanism | mechanism-hunting | no: It is a paid hosted service acting on a real account; there  |  |
+| H-0472 | 2026-10-31 | arxiv | [Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels](https://arxiv.org/abs/2610.39682) | mechanism | tech | no: It needs RL training of a language model, and there is no lo |  |
+| H-0471 | 2026-10-31 | github | [patch-gg/pixelfx: 232 pixel art effects, every one a small piece of code. Plus a Claude Co](https://github.com/patch-gg/pixelfx) | both | tools-for-strangers | yes | P-0272 |
+| H-0469 | 2026-10-31 | vault | [A free signals group funded by introducing-broker commission, and the FCA warning as the r](https://kaysgoldgroup.com/) (intel) | mechanism | mechanism-hunting | no: It is a live promotional funnel; nothing can be run from her |  |
 | H-0467 | 2026-10-30 | github | [tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliquid for Solana memecoins graduating from p](https://github.com/tapoooooty/hypergrad) | mechanism | desk:grinder | yes |  |
-| H-0465 | 2026-10-30 | vault | [The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a](https://harrisonandjames.com/) (intel) | mechanism | open-data | yes | P-0267 |
+| H-0465 | 2026-10-30 | vault | [The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a](https://harrisonandjames.com/) (intel) | mechanism | open-data | yes | P-0267 **works** |
 | H-0463 | 2026-10-30 | arxiv | [InferD: A Honeypot Framework for AI Inference Infrastructure](https://arxiv.org/abs/2610.39807) (intel) | mechanism | mechanism-hunting | no: Paper only in the brief, and running a public honeypot needs |  |
-| H-0462 | 2026-10-30 | github | [nirholas/pump-fun-sdk: Token creation launching, bonding curve trading, AMM migration, tie](https://github.com/nirholas/pump-fun-sdk) | mechanism | desk:grinder | yes | P-0266 |
-| H-0460 | 2026-10-30 | vault | [A ranked list of trading concepts with unsourced percentages, engagement bait in the smart](https://www.instagram.com/reel/DcGsq7StTIs/) (intel) | mechanism | mechanism-hunting | yes | P-0265 |
+| H-0462 | 2026-10-30 | github | [nirholas/pump-fun-sdk: Token creation launching, bonding curve trading, AMM migration, tie](https://github.com/nirholas/pump-fun-sdk) | mechanism | desk:grinder | yes | P-0266 **works** |
+| H-0460 | 2026-10-30 | vault | [A ranked list of trading concepts with unsourced percentages, engagement bait in the smart](https://www.instagram.com/reel/DcGsq7StTIs/) (intel) | mechanism | mechanism-hunting | yes | P-0265 **not-worth-it** |
 | H-0459 | 2026-10-30 | youtube | [AI Agent Memory Architecture: Structured SQL, Semantic Vector Search & Memory Bank](https://www.youtube.com/watch?v=8C4bh59FtsI) | mechanism | tech | no: Embedding search needs a model or key and there is no local  |  |
 | H-0457 | 2026-10-30 | github | [haydenschmitty/floorplan: See how your app actually fits together. An interactive, plain-E](https://github.com/haydenschmitty/floorplan) | both | tools-for-strangers | no: The map is built by model calls inside a Claude session, so  |  |
 | H-0456 | 2026-10-30 | hn | [Backdoor in Claude Code for VS Code extension on the Cursor Marketplace](https://phorion.io/blog/offical-claude-code-vsx-compromise/) | mechanism | tech | no: Running the compromised package would be unsafe and the affe |  |
-| H-0455 | 2026-10-30 | vault | [Why a grid bot's daily result is always green and what the one-day failure looks like](https://www.instagram.com/reel/DePwjVsuY_V/) | mechanism | mechanism-hunting | yes | P-0264 |
+| H-0455 | 2026-10-30 | vault | [Why a grid bot's daily result is always green and what the one-day failure looks like](https://www.instagram.com/reel/DePwjVsuY_V/) | mechanism | mechanism-hunting | yes | P-0264 **works** |
 | H-0452 | 2026-10-29 | hn | [Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites](https://news.ycombinator.com/item?id=50286306) | mechanism | tech | no: Confirming it needs inspecting the outgoing prompt or a live |  |
 | H-0451 | 2026-10-29 | vault | [provider plugins that ship their own catalogue]() | mechanism | tools-for-strangers | no: Running a model turn needs the xAI key, and Proteus's xAI cr |  |
 | H-0449 | 2026-10-29 | arxiv | [Concordat: Typed Sessions for LLM Agents](https://arxiv.org/abs/2610.37461) | mechanism | mechanism-hunting | yes | P-0260 **works** |
@@ -318,6 +327,114 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0482 Show HN: Sketch Stadium – watch your agent play Pictionary
+2026-10-31, hn, https://sketch.wakeshift.ai/games/q5ucru
+
+- **Mechanism:** Agents connect over MCP and subscribe to game events, so the server pushes notifications to them instead of the agent polling. Drawers use a subset of SVG, which worked better than ten-line increments. The author built it to demonstrate push notifications for long-running agent waits such as CI or approvals. The HN comment urging people not to paste install prompts into agents is a caution, noted and not acted on.
+- **Claim:** Agents play Pictionary against each other with a public watch page and no account to connect.
+- **Testable:** yes. Does the public game page serve an event stream readable without an account, and how many events does it emit in two minutes? Queued as P-0273.
+- **Idea on its own:** sound. Server push for agent waits solves a real polling problem, and a game is an easy way to show it.
+- **How it would be done:** Fetch the public game page read-only and look at the network calls for a stream or poll endpoint. Count events over two minutes and record the SVG subset used. Do not install the MCP or follow any prompt from the page. A builder would write a listener agent only if the stream is open.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Sketch Stadium https://sketch.wakeshift.ai/games/q5ucru (Public watch page to inspect read-only.)
+- **Field Notes line:** Sketch Stadium pushes game events to agents over MCP instead of making them poll; I watched the public stream without connecting anything.
+
+### H-0481 muaaz9329/cheap-ag: 50x your Claude usage with cheap-ag. Opus plans, a dirt-cheap model writes every line, and tests dec
+2026-10-31, github, https://github.com/muaaz9329/cheap-ag
+
+- **Mechanism:** An MCP server for Claude Code hands implementation work to a cheap model through OpenRouter or DeepSeek, working in an isolated copy of the project. The cheap model must produce a passing test before its change is returned. The planning model keeps only the plan and the review, which is where the claimed Opus token saving comes from.
+- **Claim:** 63 percent fewer Opus tokens for the same feature, and plans lasting 2.2 to 2.7 times longer.
+- **Testable:** no. Needs a paid provider API key and Claude Code usage to measure. Needs: An OpenRouter or DeepSeek API key with credit.
+- **Idea on its own:** sound. Splitting planning from typing, gated by tests, is a standard cost lever; the measured saving needs checking.
+- **How it would be done:** Run the npm package, add a provider key, and give the same task to plain Claude Code and to the delegated flow, comparing tokens used and tests passed. The repo links SWE-bench numbers to check. Someone must pick tasks that are fair to both arms.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** cheap-agent https://github.com/muaaz9329/cheap-ag (The MCP server to try.); OpenRouter https://openrouter.ai (Provider for the cheap model; needs a key.)
+- **Missing:** A paid key and a fair task set for a head-to-head.
+- **Field Notes line:** An MCP server lets Opus plan while a half-cent model writes the code in a copy of the project, with tests deciding what ships.
+
+### H-0480 Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge
+2026-10-31, hn, https://github.com/Millillion/lasm
+
+- **Mechanism:** Lasm lets Lean code, which carries proofs in the same language, run in the browser, Node and edge runtimes, so a web app and its specification live together. The README text is thin on how: presumably Lean compiles to JavaScript or WebAssembly with a runtime shim for HTTP frameworks. The author says an LLM wrote most of it.
+- **Claim:** Write formally verified web apps in Lean that run on Node, serverless and edge.
+- **Testable:** no. It needs the Lean toolchain installed and a build, which is unlikely to finish inside 30 minutes keyless. Needs: Lean toolchain via elan.
+- **Idea on its own:** needs-a-run. Verification only covers what the spec states, so value depends on a run showing real specs hold.
+- **How it would be done:** Install Lean through elan, clone the repo, build its hello-world server, and compile one small handler with a proved property. Check the output runs under Node. A verification engineer would write meaningful specs, which no script can supply.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Lasm https://github.com/Millillion/lasm (The project itself.); elan (Lean toolchain manager) https://github.com/leanprover/elan (Needed to build Lean code.)
+- **Field Notes line:** Lasm runs Lean, the proof language, in the browser and on edge servers so a web app can ship with a checked spec.
+
+### H-0479 one platform, organic short-form
+2026-10-31, vault, 
+
+- **Mechanism:** The thread says the interviewees stopped buying or using black-hat traffic and instead concentrated on organic short-form video on one platform, cutting from 20 accounts to 3 and earning more. Platforms detect purchased engagement and account networks through engagement anomalies, shared device or network signals and duplicate content, and reduce reach or ban accounts. The lesson recorded is concentration and original content versus volume.
+- **Claim:** Interviewees dropped bought and black-hat traffic on Instagram Reels; 20 accounts cut to 3 earned more.
+- **Testable:** no. The figures are seller-reported and cannot be checked without accounts. Needs: Accounts and an audience; claims unverifiable.
+- **Idea on its own:** needs-a-run. Concentrating effort on fewer accounts is plausible, but the earnings are self-reported by sellers.
+- **How it would be done:** The honest version is one platform, one account, original short videos posted on a steady schedule, with views and follow rates logged per post. The video can come from the existing HyperFrames, ElevenLabs and Gemini stack. A hired editor or presenter would cover on-camera work and community replies. The test is to publish and measure, with results kept public.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), Gemini (stills)
+- **Missing:** An account with an audience and a record of real results to compare with the claims.
+- **Field Notes line:** Course interviewees say fewer accounts and organic posting on one platform beat buying traffic across twenty accounts; figures are unverified.
+
+### H-0477 From Intent to Improvement: Agentic Dataset Search for Better Model Training
+2026-10-31, arxiv, https://arxiv.org/abs/2610.39608
+
+- **Mechanism:** A model compiles a dataset-search query into a typed plan, and only deterministic operators execute it over hybrid retrieval and bounded graph expansion. Evidence is checked against provenance before a ranking is accepted, and failures yield a typed diagnosis allowing local repairs. The point is that the model that picks a dataset does not also declare it a match.
+- **Claim:** On HuDS-Bench (200 queries), NDCG@10 rises 25.7 percent over the best hybrid and 18.9 percent over a commercial agent.
+- **Testable:** no. It needs an LLM for plan compilation and a large dataset index; no local model. Needs: An LLM key or local model and the benchmark index.
+- **Idea on its own:** sound. Separating the model's proposals from deterministic verification is a well-founded pattern for constraint-heavy search.
+- **How it would be done:** Define a small schema for search plans, write operators over a dataset metadata index, and have the model emit plans only in that schema. Verification code checks each constraint such as licence or task against recorded metadata. The repo and benchmark are public, so a reproduction starts there.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** AgenticDS https://github.com/nju-websoft/AgenticDS (Released code and the HuDS-Bench data.)
+- **Field Notes line:** A dataset-search agent where the model only writes typed plans and plain code checks the evidence, so it cannot mark its own homework.
+
+### H-0474 Feature set and price of the tool, and the 2026 picture on restrictions for non-compliant automation
+2026-10-31, vault, https://topa.io/linkedinautomation/
+
+- **Mechanism:** Cloud LinkedIn automation runs connection and message sequences from a hosted browser session on the user's account, fed by a contact database and by signals such as who engaged with a post or posted a keyword. Platforms detect this through account behaviour patterns, volume limits, session and device anomalies, and terms-of-service enforcement that restricts or bans the account. UK consent rules also cover automated calls and SMS.
+- **Claim:** Cloud outreach tool at 79 dollars a month with sequences, signals, enrichment, voicemail drops and SMS.
+- **Testable:** no. It is a paid hosted service acting on a real account; there is no keyless slice. Needs: A paid account, which the vault rules out.
+- **Idea on its own:** unsound. It stakes the user's own account on evading platform enforcement and ignores UK consent rules for automated contact.
+- **How it would be done:** The transferable idea is signal-led outreach: reach people when they post about a problem. Done by hand, that is a saved search plus a short list reviewed each morning. A hired researcher would run that routine and write personal messages. Anything automated sits against platform terms.
+- **Field Notes line:** Cloud LinkedIn automation works from hosted sessions on your own account, which is exactly what platform detection and account restriction target.
+
+### H-0472 Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels
+2026-10-31, arxiv, https://arxiv.org/abs/2610.39682
+
+- **Mechanism:** A proposer model builds search tasks answer-first from unlabeled questions, working back to an evidence path so each task is validated. A solver is trained with reinforcement learning on those tasks. The proposer is rewarded for tasks of intermediate difficulty for the current solver, and the solver gets a reward that penalises redundant searches among correct answers.
+- **Claim:** Zero-label co-evolution training improves search agents' accuracy and tool efficiency on seven QA benchmarks.
+- **Testable:** no. It needs RL training of a language model, and there is no local LLM or GPU here. Needs: GPU training and a base model.
+- **Idea on its own:** needs-a-run. The reward design is plausible but the gains rest on benchmark numbers that only a training run would confirm.
+- **How it would be done:** Start from a question set, have a proposer generate answer-first tasks with checked evidence paths, then train a small open model with RL using the two rewards. Public QA benchmarks give evaluation. A researcher with GPU time would do the training; no script here covers it.
+- **To fetch:** Paper abstract https://arxiv.org/abs/2610.39682 (Source for any released code link.)
+- **Missing:** GPU compute and a trainable open model.
+- **Field Notes line:** Search agents can be trained with no labels: one model invents tasks at the solver's edge, and the solver is rewarded for fewer searches.
+
+### H-0471 patch-gg/pixelfx: 232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.
+2026-10-31, github, https://github.com/patch-gg/pixelfx
+
+- **Mechanism:** Each pixel art effect is a small JavaScript file under src/fx that draws frames to a canvas from a shared simulation core, so effects are deterministic code rather than image assets. Sprite sheets are exported by rendering frames and packing them. A Claude Code skill loops draft, render, look, refine, using the model's own view of rendered frames as feedback, with references fed in.
+- **Claim:** 244 pixel art effects (the title says 232), each a small piece of code, plus a skill to make new ones.
+- **Testable:** yes. How many effect files does src/fx actually hold, and do three of them render the same frames twice in Node? Queued as P-0272.
+- **Idea on its own:** sound. Effects as seeded code are cheap to store, recolour and re-render, and the render-look loop is a reasonable way to refine visuals.
+- **How it would be done:** Clone the repo into the sandbox, count files under src/fx, and read the shared sim core. Run three effects in Node with a stub canvas or via the exported sprite sheet path and diff two renders. To make new effects, run the repo's skill in Claude Code, which renders frames and has the model inspect them. A pixel artist would judge feel and timing, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** pixelfx https://github.com/patch-gg/pixelfx (The effects library and skill itself.); Sprite Fusion pixel art VFX https://www.spritefusion.com/pixel-art-vfx (The open-source effects the method derives from.)
+- **Field Notes line:** A repo of 244 pixel art effects written as tiny code files, with a draft-render-look-refine skill; I counted the files against the claim.
+
+### H-0469 A free signals group funded by introducing-broker commission, and the FCA warning as the regulator's answer to that mode
+2026-10-31, vault, https://kaysgoldgroup.com/
+
+- **Mechanism:** A free Telegram signals group is funded by an introducing-broker deal: members are steered to open accounts with a partner broker, and the broker pays the group a rebate per lot traded, win or lose. The group's income therefore depends on member trading volume, not on signal accuracy. The FCA answers this model with an unauthorised-firm warning once it sees promotion of regulated activity without authorisation, and the broker's rebate flow is the paper trail.
+- **Claim:** A free gold-signals group that earns from broker commission on members' trades; the FCA warned about it on 3 June 2025.
+- **Testable:** no. It is a live promotional funnel; nothing can be run from here without joining it, and the vault wants it understood, not operated.
+- **Idea on its own:** unsound. Pay-per-lot incentives reward churn, not accuracy, so the model is structurally misaligned with members.
+- **How it would be done:** To study it, read the FCA warning list and the register entries for named firms, then compare the group's claimed win rate against any public signal history. Broker rebate structures are documented in introducing-broker terms published by brokers. A hired analyst would check the register, archive the channel's posted signals and score them against public gold price data to see whether the claims hold. Nothing here needs operating the scheme.
+- **Stack already covers:** keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** FCA warning list https://www.fca.org.uk/consumers/warning-list (Public list of unauthorised firms to cross-check the names and dates.)
+- **Missing:** A verified, archived history of the group's signals to score; nobody has captured it.
+- **Field Notes line:** Free signals groups earn per lot traded by members, so they profit from volume whether members win or lose; the FCA warning is the regulator's answer.
 
 ### H-0467 tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliquid for Solana memecoins graduating from pump.fun. GRAD index perp from 
 2026-10-30, github, https://github.com/tapoooooty/hypergrad. Vault verdict on the vendor exists (vault verdict: pump.fun); mechanism recorded, vendor not re-judged.
@@ -3874,9 +3991,12 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
-| H-0465 | 2026-10-30 | The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a | intel | sound | yes | P-0267 |
-| H-0460 | 2026-10-30 | A ranked list of trading concepts with unsourced percentages, engagement bait in the smart | intel | needs-a-run | yes | P-0265 |
-| H-0455 | 2026-10-30 | Why a grid bot's daily result is always green and what the one-day failure looks like | intel | unsound | yes | P-0264 |
+| H-0479 | 2026-10-31 | one platform, organic short-form | intel | needs-a-run | no |  |
+| H-0474 | 2026-10-31 | Feature set and price of the tool, and the 2026 picture on restrictions for non-compliant  | intel | unsound | no |  |
+| H-0469 | 2026-10-31 | A free signals group funded by introducing-broker commission, and the FCA warning as the r | intel | unsound | no |  |
+| H-0465 | 2026-10-30 | The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a | intel | sound | yes | P-0267 **works** |
+| H-0460 | 2026-10-30 | A ranked list of trading concepts with unsourced percentages, engagement bait in the smart | intel | needs-a-run | yes | P-0265 **not-worth-it** |
+| H-0455 | 2026-10-30 | Why a grid bot's daily result is always green and what the one-day failure looks like | intel | unsound | yes | P-0264 **works** |
 | H-0451 | 2026-10-29 | provider plugins that ship their own catalogue | intel | sound | no |  |
 | H-0446 | 2026-10-29 | Wan2GP local video (LTX-2 Distilled, Wan) | open | sound | no |  |
 | H-0441 | 2026-10-29 | Pinokio one-click installer | open | sound | no |  |
@@ -3975,6 +4095,16 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0280 | 2026-10-31 | [Sketch Stadium](https://sketch.wakeshift.ai/games/q5ucru) | Public watch page to inspect read-only. | H-0482 (Show HN: Sketch Stadium – watch your agent play Pi) | shelf |
+| T-0279 | 2026-10-31 | [OpenRouter](https://openrouter.ai) | Provider for the cheap model; needs a key. | H-0481 (muaaz9329/cheap-ag: 50x your Claude usage with che) | shelf |
+| T-0278 | 2026-10-31 | [cheap-agent](https://github.com/muaaz9329/cheap-ag) | The MCP server to try. | H-0481 (muaaz9329/cheap-ag: 50x your Claude usage with che) | shelf |
+| T-0277 | 2026-10-31 | [elan (Lean toolchain manager)](https://github.com/leanprover/elan) | Needed to build Lean code. | H-0480 (Show HN: Lasm – Write formally verified webapps in) | shelf |
+| T-0276 | 2026-10-31 | [Lasm](https://github.com/Millillion/lasm) | The project itself. | H-0480 (Show HN: Lasm – Write formally verified webapps in) | shelf |
+| T-0275 | 2026-10-31 | [AgenticDS](https://github.com/nju-websoft/AgenticDS) | Released code and the HuDS-Bench data. | H-0477 (From Intent to Improvement: Agentic Dataset Search) | shelf |
+| T-0274 | 2026-10-31 | [Paper abstract](https://arxiv.org/abs/2610.39682) | Source for any released code link. | H-0472 (Heterogeneous Co-Evolution Learning for Tool-Effic) | shelf |
+| T-0273 | 2026-10-31 | [Sprite Fusion pixel art VFX](https://www.spritefusion.com/pixel-art-vfx) | The open-source effects the method derives from. | H-0471 (patch-gg/pixelfx: 232 pixel art effects, every one) | shelf |
+| T-0272 | 2026-10-31 | [pixelfx](https://github.com/patch-gg/pixelfx) | The effects library and skill itself. | H-0471 (patch-gg/pixelfx: 232 pixel art effects, every one) | shelf |
+| T-0271 | 2026-10-31 | [FCA warning list](https://www.fca.org.uk/consumers/warning-list) | Public list of unauthorised firms to cross-check the names and dates. | H-0469 (A free signals group funded by introducing-broker ) | shelf |
 | T-0270 | 2026-10-30 | [HyperGrad](https://github.com/tapoooooty/hypergrad) | oracle and listing policy code to read | H-0467 (tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliqui) | shelf |
 | T-0269 | 2026-10-30 | [crt.sh](https://crt.sh) | free certificate transparency search for sibling domains | H-0465 (The free-pay-only-shipping closure-sale dropship p) | shelf |
 | T-0268 | 2026-10-30 | [InferD paper](https://arxiv.org/abs/2610.39807) | design and any released code | H-0463 (InferD: A Honeypot Framework for AI Inference Infr) | shelf |
@@ -4250,6 +4380,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0478 | 2026-10-31 | youtube | [MCP Servers Explained in 5 Minutes (for beginners)](https://www.youtube.com/watch?v=tTw1z10yMCI) | A beginner explainer of MCP with no new mechanism. |
+| H-0476 | 2026-10-31 | github | [boardshogunfluctuate/Capri-AI: ⚡ Tell your PC what to do. Capri is a cyberpunk A](https://github.com/boardshogunfluctuate/Capri-AI) | A themed Windows wrapper over existing CLIs, installer only, nothing new in the mechanism. |
+| H-0475 | 2026-10-31 | hn | [Anthropic's Claude AI blocks video game cloning and reverse-engineering](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked) | News about a model's refusal policy; no mechanism beyond a claim. |
+| H-0473 | 2026-10-31 | youtube | [This Claude Code Skill Is Actually Insane #claudecode #ai #coding](https://www.youtube.com/watch?v=hY4Pbso2Vj8) | A one-minute promo with a claim and no named repo or mechanism beyond a prompt rule. |
+| H-0470 | 2026-10-31 | hn | [Tell HN: Scribd Breached](https://news.ycombinator.com/item?id=50312756) | A breach notice for one company with no mechanism to record. |
 | H-0468 | 2026-10-30 | youtube | [check your car depreciation value right now](https://www.youtube.com/watch?v=01fdd_Q7i2s) | Transcript is song lyrics, no car depreciation content. |
 | H-0466 | 2026-10-30 | hn | [Claude Code VS Code extension with backdoor released on Cursor marketplace](https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2) | Duplicate of the Claude Code extension backdoor story; the best-discussed copy is kept. |
 | H-0464 | 2026-10-30 | youtube | [Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond A](https://www.youtube.com/watch?v=W2HVdB4Jbjs) | Duplicate of the other agent memory talk, which is kept. |
