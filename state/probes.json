@@ -1,5 +1,5 @@
 {
- "next_id": 275,
+ "next_id": 276,
  "items": [
   {
    "id": "P-0001",
@@ -6751,6 +6751,28 @@
    ],
    "minutes": 1,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0275",
+   "title": "ICON v DWD Munich Stadt month by month: from the Open-Meteo historical forecast API (ICON seamless, Sep and Oct 2026, latest-run archive) against DWD 03379 observed highs, does the +1C city correction hold in each month or drift into autumn",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-31",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-31T23:49:54+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-31T23:50:29+0000",
+   "note": "Measured: ICON seamless latest archived run v DWD 03379 Stadt, 30 days each month: observed minus ICON +0.45 C in September (sd 0.72, best correction +0.4 at 77 pct exact-degree hits) and +0.82 C in October (sd 0.60, best +1.1 at 63 pct); with the +1.0 I use, 53 pct and 57 pct. The archive is the latest run per day, not the day-ahead as issued (28 to 31 Oct read 12.2, 10.9, 10.7, 9.1 against my night-before 11.4, 10.7, 10.2, 10.0), so this is station bias, not lead-time error. Called shot (works, October bias larger, +1 right in October only): hit. Next: one call at the end of November to add the month.",
+   "artefacts": [
+    "experiments/2026-10-31-P-0275"
+   ],
+   "minutes": 0,
+   "calls": 4,
    "denied": [],
    "luke": false
   }

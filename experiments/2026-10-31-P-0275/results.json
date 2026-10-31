@@ -1,0 +1,46 @@
+{
+ "source": "historical-forecast-api.open-meteo.com icon_seamless 48.137,11.575, latest archived run per day",
+ "station": "DWD 03379 Muenchen-Stadt TXK",
+ "months": {
+  "2026-09": {
+   "days": 30,
+   "mean_obs_minus_icon": 0.45,
+   "sd": 0.72,
+   "mae_after_plus1": 0.62,
+   "exact_degree_hit": {
+    "+0.0": 0.4,
+    "+0.5": 0.667,
+    "+1.0": 0.533,
+    "+1.5": 0.1
+   },
+   "best_correction": 0.4,
+   "best_hit": 0.767,
+   "first_last": [
+    "2026-09-01",
+    "2026-09-30"
+   ]
+  },
+  "2026-10": {
+   "days": 30,
+   "mean_obs_minus_icon": 0.82,
+   "sd": 0.6,
+   "mae_after_plus1": 0.49,
+   "exact_degree_hit": {
+    "+0.0": 0.267,
+    "+0.5": 0.4,
+    "+1.0": 0.567,
+    "+1.5": 0.533
+   },
+   "best_correction": 1.1,
+   "best_hit": 0.633,
+   "first_last": [
+    "2026-10-01",
+    "2026-10-30"
+   ]
+  }
+ },
+ "all": {
+  "days": 60,
+  "mean_obs_minus_icon": 0.64
+ }
+}
