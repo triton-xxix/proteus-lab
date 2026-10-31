@@ -1,0 +1,808 @@
+{
+ "summary": {
+  "nights": 7,
+  "kept": 52,
+  "facts": 558,
+  "supported": 398,
+  "support_rate": 0.713
+ },
+ "nights": [
+  {
+   "date": "2026-10-24",
+   "judged": 14,
+   "kept": 8,
+   "facts": 91,
+   "supported": 65,
+   "support_rate": 0.714,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-24:video2x-free-local-upscaler",
+     "facts": 14,
+     "supported": 3,
+     "unsupported": [
+      "Anime4K",
+      "CPU",
+      "GPU",
+      "RIFE",
+      "Real-CUGAN",
+      "Real-ESRGAN",
+      "Vulkan-capable",
+      "audio",
+      "open-source",
+      "re-encodes",
+      "super-resolution"
+     ],
+     "claim": "A free local tool upscales video to higher resolution with AI models, offered as an alternative to paid upscalers.",
+     "mechanism": "Video2X is an open-source pipeline that splits a video into frames with ffmpeg, runs each frame through a super-resolution network (Real-ESRGAN, Real-CUGAN or Anime4K shaders) on a Vulkan-capable GPU, then re-encodes the frames with the original audio. Quality depends on the model chosen and on the GPU; speed is frames per second of the network, which is slow on CPU. Interpolation (RIFE) can be run in the same pass.",
+     "section_chars": 1398
+    },
+    {
+     "n": 3,
+     "key": "gh:actionow-ai/vvv",
+     "facts": 10,
+     "supported": 10,
+     "unsupported": [],
+     "claim": "An agent skill reuses editable Remotion templates so new films cost fewer tokens; no benchmark is published.",
+     "mechanism": "Video templates are Remotion (React/TypeScript) projects with declared photo slots, copy fields and settings. A Python CLI (vvv.py) exposes describe and validate commands so an agent fills inputs first and edits source only if needed, then renders and runs checks. The reference-video mode measures a supplied file (beats, shot lengths, still frames) and rebuilds it on the closest template.",
+     "section_chars": 3891
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.31471",
+     "facts": 11,
+     "supported": 10,
+     "unsupported": [
+      "re-watch"
+     ],
+     "claim": "Reaches 55.4% on the hardest Perception Test cup games against 41.5% for the best published model, with no training.",
+     "mechanism": "Track Then Bind runs a promptable video tracker over every candidate object and labels each with a track number. A frozen vision-language model answers a static question at a moment when the identifying evidence is visible, binding the target to a track. The final answer is computed from the tracked state in text, not by asking the model to re-watch the video.",
+     "section_chars": 2014
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-24:ltx-desktop-local-video-generation",
+     "facts": 12,
+     "supported": 4,
+     "unsupported": [
+      "Apple",
+      "GPU",
+      "Lightricks",
+      "image-to-video",
+      "limits",
+      "open-weights",
+      "silicon",
+      "text-to-video"
+     ],
+     "claim": "Free local video generation per clip on the M5, versus paying per clip on fal.",
+     "mechanism": "LTX is an open-weights latent video diffusion model from Lightricks; the desktop app wraps the model so it runs text-to-video and image-to-video on the user's own GPU or Apple silicon. Cost per clip is electricity and time, bounded by memory, so clip length and resolution are the limits. Quality sits below the top paid models but suits draft B-roll.",
+     "section_chars": 1432
+    },
+    {
+     "n": 8,
+     "key": "gh:appariciojunior/video-editor-skills",
+     "facts": 14,
+     "supported": 12,
+     "unsupported": [
+      "Plain-text",
+      "given"
+     ],
+     "claim": "Skills turn Claude Code into a first-pass vlog editor in DaVinci Resolve; no timing number is given.",
+     "mechanism": "Plain-text skills tell Claude how to build its own scripts: transcribe with word timestamps, cut retakes and dead air by silence thresholds and pads, assemble timelines through the DaVinci Resolve scripting API, duck music, and overlay Remotion graphics. The value is the recorded rules and traps (what silently fails in the Resolve API), not code. It depends on Resolve Studio, ffmpeg and a speech-to-text key.",
+     "section_chars": 3923
+    },
+    {
+     "n": 9,
+     "key": "arxiv:2610.31461",
+     "facts": 9,
+     "supported": 8,
+     "unsupported": [
+      "fallback"
+     ],
+     "claim": "Runtime routing and macro-to-micro recovery fix macro failures that fixed-granularity execution leaves unresolved.",
+     "mechanism": "A feature-based controller picks, per task, whether a coding agent uses primitive tool calls, a macro skill, or a macro with fallback. A finite-state executor catches macro failure and drops to micro steps to recover. Evaluation uses a deterministic coding protocol with verifier-defined success and cost.",
+     "section_chars": 1802
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-24:viggle-motion-transfer",
+     "facts": 9,
+     "supported": 8,
+     "unsupported": [
+      "identity"
+     ],
+     "claim": "A free tool makes a still character copy the movement of a reference video.",
+     "mechanism": "Motion transfer takes a still image of a character and a reference video of a person moving, estimates the pose sequence from the video, and generates the character performing that motion. Viggle is a hosted service; comparable open routes are Wan 2.2 Animate and Kling Motion Control. Output consistency depends on pose estimation and the model's handling of the character's identity.",
+     "section_chars": 1410
+    },
+    {
+     "n": 12,
+     "key": "hn:50198936",
+     "facts": 12,
+     "supported": 10,
+     "unsupported": [
+      "27.",
+      "threshold"
+     ],
+     "claim": "A usage-guard mod protects the usage window; a commenter's version cut 365 agent spawns to 27.",
+     "mechanism": "A Claude Code hook runs before each prompt is submitted and reads the session's token count and the time since the last request. If the prompt cache has probably expired (cache lifetime is short) and the context is large, it warns and suggests compacting first, and it can block sub-agent spawns when usage-window use is above a threshold. A commenter reports the same approach cut spawned agents from 365 to 27 over 75 days.",
+     "section_chars": 1160
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "judged": 14,
+   "kept": 8,
+   "facts": 81,
+   "supported": 52,
+   "support_rate": 0.642,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-25:local-open-weights-video-on-a-rented-nvidia-gpu",
+     "facts": 19,
+     "supported": 11,
+     "unsupported": [
+      "2.x",
+      "CUDA",
+      "LTX-Video",
+      "Lightricks",
+      "RunPod",
+      "Vast.ai",
+      "cards",
+      "lack"
+     ],
+     "claim": "Six free AI video generators exist; the vault note asks for Wan2GP or LTX cost per clip against fal.",
+     "mechanism": "Open-weights video diffusion models (Wan 2.x via the Wan2GP launcher, or Lightricks LTX-Video) run on a CUDA GPU and turn a text or image prompt into a few seconds of clip. Wan2GP wraps the models with memory offloading and quantisation so they fit on consumer cards. Cost per clip is rented GPU hours divided by clips per hour, set against a per-clip hosted price such as fal. Rented hosts (RunPod, Vast.ai) give the NVIDIA card the Macs lack.",
+     "section_chars": 1592
+    },
+    {
+     "n": 2,
+     "key": "hn:50222574",
+     "facts": 13,
+     "supported": 9,
+     "unsupported": [
+      "OSM",
+      "OpenStreetMap-style",
+      "crowd-sourced",
+      "licence-plate"
+     ],
+     "claim": "A crowd-sourced map shows over 300,000 Flock cameras and stays online despite legal threats.",
+     "mechanism": "A community map of automatic licence-plate reader (Flock) cameras is built from volunteers photographing or reporting cameras in public view, then logging each as a tagged point, largely in OpenStreetMap-style data. The map site is hosted on Swiss servers by Proton, which refuses a cease-and-desist. The count (about 300k+) comes from accumulated submissions, not from any Flock data. The legal question raised in comments is whether OSM can ingest it.",
+     "section_chars": 2909
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.31376",
+     "facts": 7,
+     "supported": 4,
+     "unsupported": [
+      "exist",
+      "formally",
+      "mark-based"
+     ],
+     "claim": "Safe tool execution under prompt injection can be enforced by mark-based supervisory control, with the least-intrusive safe supervisor characterised formally.",
+     "mechanism": "The harness between the model and its tools is modelled as a Petri net: places hold marks for capabilities, approvals and budgets, and a tool call is a transition that fires only if the needed marks exist. An injected request whose marks are missing or already spent is refused whatever its wording. A maximally permissive supervisor allows everything not provably unsafe, and a stricter refinement trades off refusals against the inference cost of an agent that retries after a refusal.",
+     "section_chars": 1710
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-05:form-triggered-personalised-ai-video",
+     "facts": 5,
+     "supported": 1,
+     "unsupported": [
+      "back",
+      "flow",
+      "lip-sync",
+      "reply"
+     ],
+     "claim": "An enquiry form can trigger an automatic personalised video reply.",
+     "mechanism": "A web form submission fires a webhook into an automation flow. The flow fills a script template with the lead's name and details, sends it to a voice model and a lip-sync or avatar service, then emails or texts the rendered video back. The vault note says it must be inbound only, meaning sent to people who asked, and must not claim it was recorded by hand.",
+     "section_chars": 1291
+    },
+    {
+     "n": 7,
+     "key": "hn:50227330",
+     "facts": 17,
+     "supported": 12,
+     "unsupported": [
+      "2021.",
+      "call-centre",
+      "clone",
+      "fine-tune",
+      "text-to-speech"
+     ],
+     "claim": "Apache-2.0 TTS fine-tune for Southern American and African English accents, narrowband for phone use.",
+     "mechanism": "A 136-hour slice of a consented voice dataset was used to fine-tune Maya1, an open text-to-speech model, and the output is narrowband (telephone bandwidth) audio targeted at call-centre use. It does not hold the same voice between prompts and does not clone. The dataset is the asset: 1M recordings from 20,000 people collected since 2021.",
+     "section_chars": 2011
+    },
+    {
+     "n": 8,
+     "key": "gh:denissergeevitch/ex-ussr-kinship-research",
+     "facts": 8,
+     "supported": 8,
+     "unsupported": [],
+     "claim": "An evidence-first genealogy skill with an audit script that stops corroboration being declared into existence.",
+     "mechanism": "Claims are held in CSV registers with a status ladder from hypothesis to strongly-corroborated, and copies of one record share an independence_group so mirrors cannot count as separate proof. A stdlib Python audit script checks referential integrity and that a cited artifact actually belongs to any independence group claimed, then checks the final report against the registers. The agent reads the instructions; the script is the part that enforces them.",
+     "section_chars": 4111
+    },
+    {
+     "n": 10,
+     "key": "yt:yUD073LrqVc",
+     "facts": 5,
+     "supported": 3,
+     "unsupported": [
+      "positions",
+      "them"
+     ],
+     "claim": "xG is learned from nearly a million shots and predicts future results better than goals do.",
+     "mechanism": "A classifier, usually logistic regression or gradient boosting, is trained on a large set of past shots using distance, angle, body part, play type and, in richer providers, defender and keeper positions. Its output is the probability that a shot scores, and a team's xG is the sum over its shots. Different providers use different features, so values are not comparable across them.",
+     "section_chars": 1319
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-25:bubble-map-wallet-clustering-as-a-rug-detector",
+     "facts": 7,
+     "supported": 4,
+     "unsupported": [
+      "history",
+      "on-chain",
+      "safe"
+     ],
+     "claim": "Linked-wallet clustering on a bubble map shows whether a coin's supply is concentrated, sold as a way to avoid rugs.",
+     "mechanism": "A bubble map plots a token's largest holders as circles and joins wallets that share a funding source or have transferred between each other, so one actor holding supply through many wallets shows as a cluster. Data comes from on-chain token accounts and transfer history. It misses wallets funded separately from exchanges, liquidity pulls, mint authority and honeypot code, which is why clean clusters do not mean safe. Launchers use bundling to fake distribution, and the clustering is how platforms and checkers catch it.",
+     "section_chars": 1670
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "judged": 12,
+   "kept": 7,
+   "facts": 84,
+   "supported": 69,
+   "support_rate": 0.821,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-18:course-seller-economy-around-ai-creator-models",
+     "facts": 9,
+     "supported": 5,
+     "unsupported": [
+      "AI-generated",
+      "engagement-pattern",
+      "review",
+      "two"
+     ],
+     "claim": "AI influencer and creator-subscription models are presented as a large income stream, mostly via courses.",
+     "mechanism": "Three revenue routes sit under the AI creator label: selling AI-generated UGC and brand faces to businesses as a service, running labelled subscription personas on platforms that permit AI accounts, and selling courses that teach the first two. The visible big numbers are mostly screenshots and self-reported payouts, so the course route is the one with a verifiable buyer (the student). Platforms and payment processors police undisclosed AI personas through label rules, identity checks on payouts and engagement-pattern review.",
+     "section_chars": 1344
+    },
+    {
+     "n": 2,
+     "key": "hn:50246238",
+     "facts": 15,
+     "supported": 12,
+     "unsupported": [
+      "GPU",
+      "RAM",
+      "fits"
+     ],
+     "claim": "A free MIT desktop app that does what the Claude and ChatGPT desktop apps do with your files, with the model running on your own computer.",
+     "mechanism": "A desktop app that probes the machine's RAM and GPU on first run and picks an open-weight model (Gemma 4 or gpt-oss) that fits. It gives the model file tools (read, write, list), a sandboxed Python runner for ad hoc scripts such as charts and conversions, image input, SearXNG for web search and MCP for connectors. Everything except search and MCP stays local.",
+     "section_chars": 2319
+    },
+    {
+     "n": 3,
+     "key": "gh:t3dotgg/tstack",
+     "facts": 13,
+     "supported": 11,
+     "unsupported": [
+      "multi-provider",
+      "step"
+     ],
+     "claim": "Agent skills that take a change to a merged PR unattended, including a three-model review loop.",
+     "mechanism": "A set of Claude Code and Codex skills (markdown instructions) that chain together: full-send proves a change, reviews it, files a PR, babysits CI and merges. The council skill sends the diff to three models from different providers and loops until they agree, and a small Python script polls CI for the babysit step. The multi-provider steps depend on a harness that can call other vendors' models.",
+     "section_chars": 2582
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.32648",
+     "facts": 12,
+     "supported": 12,
+     "unsupported": [],
+     "claim": "0.940 precision and 0.817 F1 on 2,508 actions, 1.50 ms median latency, and 15.8% less agent execution time.",
+     "mechanism": "StateMirror sits at the harness boundary and intercepts each proposed tool call. It parses the command or code with AST and shell analysis to extract state predicates such as a path existing or a package being installed, then checks those deterministically against the live repository. Failures are fed back to the agent before execution, so no model call is needed for detection.",
+     "section_chars": 1958
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-16:dated-us-release-calendar-from-primary-sources-2023-to-2026",
+     "facts": 11,
+     "supported": 6,
+     "unsupported": [
+      "Federal",
+      "Reserve",
+      "against",
+      "aggregators",
+      "third-party"
+     ],
+     "claim": "A reusable release calendar for any faster strategy where releases hit entries.",
+     "mechanism": "Build a dated list of CPI, FOMC and NFP release times from the primary publishers (BLS schedules, Federal Reserve meeting calendars) rather than third-party aggregators. Each event is tagged with its exact timestamp so a strategy can test whether entries fall within a window of a release. The value is a clean event table that any faster strategy can join against.",
+     "section_chars": 1437
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-16:insider-cluster-buys-carry-a-small-relative-edge-over-random",
+     "facts": 13,
+     "supported": 12,
+     "unsupported": [
+      "trade"
+     ],
+     "claim": "Clusters of 3+ insider buys beat random mid-caps by about 1% a month gross, not distinguishable from zero after UK retail costs.",
+     "mechanism": "SEC Form 4 filings record open-market purchases by officers and directors within two business days of the trade. A cluster is three or more insiders buying the same stock in a short window, and the signal is the cluster's forward return against random same-size stocks. The reported edge is about 1.3% per 21 days gross, with a few big winners carrying a mean whose median is near zero, and costs absorb it.",
+     "section_chars": 1597
+    },
+    {
+     "n": 12,
+     "key": "gh:andyhuo520/digital-human-koubo",
+     "facts": 11,
+     "supported": 11,
+     "unsupported": [],
+     "claim": "One photo and one sentence produce a finished talking-head video; a 27-second ad cost 482 credits.",
+     "mechanism": "An agent skill that stores a fixed presenter (face, outfit, voice description) in persona.json, composites her into a scene with an image model, then splits the script into segments of 15 seconds or less. Each segment is generated as a lip-synced clip through a hosted video MCP, transcribed with whisper and compared with the script, then packaged with captions and overlay components. A cost gate quotes credits and waits for a yes before batching.",
+     "section_chars": 3990
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "judged": 9,
+   "kept": 5,
+   "facts": 49,
+   "supported": 28,
+   "support_rate": 0.571,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-15:comment-keyword-indicator-funnel",
+     "facts": 9,
+     "supported": 4,
+     "unsupported": [
+      "DM",
+      "account",
+      "auto-reply",
+      "referral",
+      "trade-level"
+     ],
+     "claim": "A trading indicator or script wins every trade, so much that the broker banned the account.",
+     "mechanism": "A reel makes a headline claim (a 100 percent win rate script, an account banned for winning) and tells viewers to comment a keyword. An auto-reply or DM tool watches the comments, sends the commenter a link, and the link leads to a paid indicator or broker referral. The comment count doubles as engagement, which pushes the reel to more people. Nothing in the funnel exposes trade-level evidence such as entry price, sample size or a statement from a broker.",
+     "section_chars": 1391
+    },
+    {
+     "n": 3,
+     "key": "gh:zichuanlan/agent-purge",
+     "facts": 13,
+     "supported": 6,
+     "unsupported": [
+      "156.",
+      "README",
+      "command",
+      "in-session",
+      "per-agent",
+      "sentence",
+      "tokens"
+     ],
+     "claim": "One persona file replaces or appends the system prompt across ten or so coding agents, reversibly; claude drops from 6,379 to 156 tokens.",
+     "mechanism": "Each coding agent reads its system prompt from a different place, so the tool uses a per-agent entry point: a launch flag such as --system-prompt-file for claude and codex, a managed config block, a plugin hook, or a temporary HOME holding a replaced file. Three channels wrap this: a persistent install, a PATH shim that forwards bare commands, and an in-session slash command. The README says it measured injected system prompt sizes by capturing the request body with a local fake provider, for example claude at 6,379 tokens falling to 156. For claude it also patches the binary to remove a leftover identity sentence.",
+     "section_chars": 4135
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.35829",
+     "facts": 12,
+     "supported": 8,
+     "unsupported": [
+      "hidden-layer",
+      "linear-style",
+      "not",
+      "slower"
+     ],
+     "claim": "A probe on LLM internals reaches 60.0 percent accuracy on PrimeVul at about one second per function, matching an agentic detector 250 times slower.",
+     "mechanism": "For each new function, the system builds a prompt holding a pre-computed threat model of its module, static analysis findings and call-graph neighbours, runs one forward pass of an open LLM, and reads a hidden-layer representation. A trained linear-style probe on that representation outputs vulnerable or not. It avoids generating text, so it takes about a second instead of minutes of agent calls. Training labels come from PrimeVul.",
+     "section_chars": 2223
+    },
+    {
+     "n": 5,
+     "key": "vault:2026-10-14:win-rate-sold-without-entry-price",
+     "facts": 8,
+     "supported": 5,
+     "unsupported": [
+      "after",
+      "profitable",
+      "yes"
+     ],
+     "claim": "Copying certain wallets gives a very high win rate.",
+     "mechanism": "On a binary prediction market a contract pays 1 dollar if it settles yes. Buying a favourite at 90 cents wins about nine times in ten, so the win rate looks excellent, but each win earns 10 cents and each loss costs 90, so expected profit is zero before fees and negative after. A copy-wallet reel that quotes win rate alone hides the entry price that decides whether the record is profitable.",
+     "section_chars": 1441
+    },
+    {
+     "n": 8,
+     "key": "vault:2026-10-14:business-snapshot-prompt-as-setup",
+     "facts": 7,
+     "supported": 5,
+     "unsupported": [
+      "one-time",
+      "output"
+     ],
+     "claim": "A free toolkit gives home-service firms a reusable business-snapshot prompt and a quote prompt.",
+     "mechanism": "A one-time prompt asks the business owner a fixed set of questions (trade, services, area, prices, customers, tone) and has the AI write a short profile. The owner pastes that profile at the top of every later request, so the AI answers with the business's context rather than generic output. A quote prompt then reuses the profile. The numbers in the answers are the owner's, not the model's.",
+     "section_chars": 1793
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "judged": 12,
+   "kept": 8,
+   "facts": 80,
+   "supported": 60,
+   "support_rate": 0.75,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-13:gbp-platform-changes",
+     "facts": 11,
+     "supported": 10,
+     "unsupported": [
+      "publicly"
+     ],
+     "claim": "Google ended Business Profile Q&A on 3 Nov 2025, though help pages still describe it as limited rather than gone.",
+     "mechanism": "Google exposed Business Profile Q&A through a separate Business Profile API surface that developers and agencies called to read and post questions and answers. The claim is that this API was switched off on 3 Nov 2025 while the consumer feature stayed live only for some categories and regions, per Google's help pages. So the dependency is on Google's published API discovery documents and help text, which can be read publicly.",
+     "section_chars": 1307
+    },
+    {
+     "n": 3,
+     "key": "gh:daveebbelaar/bama",
+     "facts": 10,
+     "supported": 9,
+     "unsupported": [
+      "time"
+     ],
+     "claim": "Agent skills take a native macOS app from a screenshot clone to a shipped SwiftUI app with no Xcode GUI.",
+     "mechanism": "A set of agent skills that chain together: a clone skill drives computer use or a browser to screenshot every screen of a target app and write a screen index, a user-stories skill turns that into checkable acceptance criteria, then a build loop commits one story at a time. Each commit is gated by building a Swift package from the command line, snapshotting every page in light and dark mode and running Swift Testing. The design-from-app skill measures sizes and colours from screenshots and compares pixel by pixel until they match.",
+     "section_chars": 4002
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.37649",
+     "facts": 10,
+     "supported": 8,
+     "unsupported": [
+      "people",
+      "slower"
+     ],
+     "claim": "Of 12 LLMs tested, one reaches a 16.7% discovery rate and the other 11 score 0%.",
+     "mechanism": "LongChang generates simulated worlds in which one or more physical laws are altered, such as heavier objects falling slower. An LLM explorer manipulates objects and builds tools with no stated research question. Separate LLM agents generate and review scenes, review tool designs and grade reports against the known altered law, and the exploration records feed back to evolve the next scene, so the loop runs without people.",
+     "section_chars": 1522
+    },
+    {
+     "n": 5,
+     "key": "yt:X3f81opiQZg",
+     "facts": 8,
+     "supported": 6,
+     "unsupported": [
+      "DVSA",
+      "tips"
+     ],
+     "claim": "One in three UK cars fail the MOT, with lighting about 20% of failures, suspension about 20% and brakes about 10%.",
+     "mechanism": "The video quotes shares of MOT failures by category, which come from the DVSA's published MOT testing statistics rather than the presenter: lighting about 20%, suspension about 20%, brakes about 10%, and one in three tests failing. Those figures can be recomputed from the government's open MOT results data, which lists failure items per test. The listicle itself adds no new mechanism, only tips.",
+     "section_chars": 3804
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-13:free-gbp-guides",
+     "facts": 9,
+     "supported": 4,
+     "unsupported": [
+      "2026.",
+      "content",
+      "on-profile",
+      "recovery",
+      "signals"
+     ],
+     "claim": "The deepest free guide to Google Business Profile optimisation in 2026.",
+     "mechanism": "A practitioner guide that sets out the factors local search ranks Google Business Profiles on: category choice, proximity, review count and recency, citations, and on-profile content. The ranking weights come from the author's annual local search ranking factors survey of practitioners, so they are opinion aggregates rather than measured Google signals. It is strong on what to set and weak on how to carry it out and on suspension recovery.",
+     "section_chars": 1559
+    },
+    {
+     "n": 8,
+     "key": "arxiv:2610.37648",
+     "facts": 9,
+     "supported": 7,
+     "unsupported": [
+      "again",
+      "generalisation"
+     ],
+     "claim": "Scaling tool and database diversity beats adding tasks, and the resulting agents beat prior synthetic-environment data on four benchmarks.",
+     "mechanism": "SynthAPI generates synthetic tool-use environments with separate controls for the number of tools, the tasks, and the databases the tools act on. The authors varied these across 458,752 tasks and trained 849 models of four sizes to fit a scaling law for downstream tool-use generalisation. The fitted result is that tool and database diversity pay off more than raw task count, and added complexity pays more again.",
+     "section_chars": 1507
+    },
+    {
+     "n": 10,
+     "key": "vault:2026-10-12:speed-to-lead-bridge-call-ring-the-owner-first-then-connect-",
+     "facts": 7,
+     "supported": 4,
+     "unsupported": [
+      "API",
+      "automation",
+      "two-leg"
+     ],
+     "claim": "Ringing the owner first and then bridging the lead connects them within seconds, a cheap add-on for trade clients.",
+     "mechanism": "A form or ad lead submission fires a webhook to an automation. The automation places an outbound call to the business owner first, and only when the owner answers does it dial the lead and bridge the two legs, so the lead is connected within seconds. It depends on a telephony API for the two-leg call, a webhook source, and a fallback to text if the owner does not pick up.",
+     "section_chars": 1622
+    },
+    {
+     "n": 11,
+     "key": "gh:crfxn5c/mcd-mcp-kit",
+     "facts": 16,
+     "supported": 12,
+     "unsupported": [
+      "docs-versus-server",
+      "documented",
+      "shapes",
+      "zero-dependency"
+     ],
+     "claim": "The McDonald's China MCP server returns 35 tools where the docs list 33, with two different auth failure shapes.",
+     "mechanism": "A zero-dependency Python script speaks Streamable HTTP and JSON-RPC to a live MCP server, calls initialize and tools/list, and compares the returned tool names and count against the published docs. It also deliberately sends no token and a wrong token to record the exact status codes and body shapes. The method finds docs-versus-server drift such as 35 tools returned against 33 documented.",
+     "section_chars": 3839
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "judged": 14,
+   "kept": 7,
+   "facts": 83,
+   "supported": 56,
+   "support_rate": 0.675,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-29:pinokio-one-click-installer",
+     "facts": 12,
+     "supported": 6,
+     "unsupported": [
+      "CUDA",
+      "JSON/JS",
+      "Python",
+      "environment",
+      "hand-building",
+      "work"
+     ],
+     "claim": "One-click installs of local AI apps such as Wan2GP, so you run video models without terminal work.",
+     "mechanism": "Pinokio is a desktop app that runs JSON/JS launcher scripts from a community registry: each script clones a repo, builds a Python venv, pulls model weights and starts a local web UI. It automates the install steps a person would otherwise type, and depends on the host having the right GPU driver stack (CUDA for NVIDIA). On a rented GPU box it is a way to get a model UI running without hand-building the environment.",
+     "section_chars": 1512
+    },
+    {
+     "n": 2,
+     "key": "hn:50284255",
+     "facts": 12,
+     "supported": 11,
+     "unsupported": [
+      "OpenTelemetry"
+     ],
+     "claim": "agent_summary calls used 16.4% of estimated spend and 19.7% of API requests in one measured week (one commenter's team).",
+     "mechanism": "Per the HN comments, Claude Code runs a background query tagged agent_summary roughly every 30 seconds per agent, sending the agent's transcript to the current model to produce a few words for the status line. Because most of the input is the cached transcript, it shows as about 9,000 input tokens per output token. The figures came from grouping OpenTelemetry traces by query_source.",
+     "section_chars": 1071
+    },
+    {
+     "n": 3,
+     "key": "gh:qybaihe/bla",
+     "facts": 14,
+     "supported": 11,
+     "unsupported": [
+      "days",
+      "post-processes",
+      "runtime-equivalence"
+     ],
+     "claim": "Hardened builds make AI reverse-engineering agents hit budgets and follow decoys while runtime behaviour stays the same; 727 stars in four days.",
+     "mechanism": "BLA post-processes build artifacts (JS bundles, asar, wasm, sqlite) to add format-valid decoys, canary strings and oversized or deeply nested structures aimed at the resource limits of AI reverse-engineering agents. The aim is for the analyser to burn tokens or truncate its inventory while the program behaves the same. It runs as a CLI and MCP server with audit, protect and verify stages, the last being a runtime-equivalence check.",
+     "section_chars": 4063
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-29:wan2gp-local-video-ltx-2-distilled-wan",
+     "facts": 13,
+     "supported": 5,
+     "unsupported": [
+      "APIs",
+      "CUDA",
+      "Gradio",
+      "PyTorch",
+      "VRAM",
+      "per-clip",
+      "speed",
+      "weights"
+     ],
+     "claim": "Local video generation on a home GPU with no per-clip fee; the carousel pitches it as cheaper than hosted APIs.",
+     "mechanism": "Wan2GP is a Gradio front end that runs open video models (Wan, LTX-2 distilled and others) with heavy memory offloading and quantisation so they fit consumer GPUs with modest VRAM. Distilled models cut sampling to a few steps, trading some quality for speed. It depends on CUDA, PyTorch and downloaded weights.",
+     "section_chars": 1504
+    },
+    {
+     "n": 9,
+     "key": "arxiv:2610.37461",
+     "facts": 14,
+     "supported": 12,
+     "unsupported": [
+      "human-reserved",
+      "out-of-state"
+     ],
+     "claim": "On 50 tau-bench airline tasks with pressuring simulated customers, the standard agent skipped confirmation in 13 of 50 tasks with gpt-4.1 and the Concordat agent in none.",
+     "mechanism": "Concordat models an agent as a finite-state protocol. Each turn the model is shown only the tools legal in the current state, out-of-state calls are rejected before side effects, and human-reserved decisions can only be requested. Token and tool-call budgets are split across handoffs, and protocols are checked when defined.",
+     "section_chars": 1791
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-09:provider-plugins-that-ship-their-own-catalogue",
+     "facts": 11,
+     "supported": 8,
+     "unsupported": [
+      "API",
+      "sync",
+      "tokens"
+     ],
+     "claim": "Enabling the shipped xAI plugin plus one env var gives a working Grok 4.3 provider at 1.25 in and 2.50 out per million tokens.",
+     "mechanism": "A gateway plugin for a model provider ships its own catalogue of model ids, context windows and prices, so a config only needs the plugin enabled plus an API key env var. Hand-writing a provider block copies those numbers and goes stale when the vendor changes them. Reading the plugin's preset and mirroring it keeps config and catalogue in sync.",
+     "section_chars": 1695
+    },
+    {
+     "n": 12,
+     "key": "hn:50286306",
+     "facts": 7,
+     "supported": 3,
+     "unsupported": [
+      "arguments",
+      "channel",
+      "operating",
+      "signed-in"
+     ],
+     "claim": "Claude Code adds the user's email to the prompt and the model has sent it to websites (two linked issue and Reddit reports).",
+     "mechanism": "The reports say Claude Code places the signed-in user's email in the context it sends the model, and in some sessions the model then passed that address to websites it was operating. The leak path is context injection followed by a tool call carrying the value, not a separate exfiltration channel. Detection is by inspecting prompts and outgoing tool arguments.",
+     "section_chars": 1184
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "judged": 14,
+   "kept": 9,
+   "facts": 90,
+   "supported": 68,
+   "support_rate": 0.756,
+   "items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-08:why-a-grid-bot-s-daily-result-is-always-green-and-what-the-o",
+     "facts": 6,
+     "supported": 3,
+     "unsupported": [
+      "construction",
+      "profit",
+      "target"
+     ],
+     "claim": "A 159 dollar MT5 bot for gold shows a green day on a reel and implies steady profit.",
+     "mechanism": "A grid and recovery bot opens a ladder of positions against the trend and adds size as price moves away, closing everything when price returns to a small profit target. Most days the price oscillates back, so the daily result is green by construction. The loss sits in the tail: a sustained trend exhausts margin and the whole stack closes at once, so one day wipes out months of small wins.",
+     "section_chars": 1881
+    },
+    {
+     "n": 2,
+     "key": "hn:50300683",
+     "facts": 11,
+     "supported": 8,
+     "unsupported": [
+      "auto-update",
+      "overall",
+      "payload"
+     ],
+     "claim": "A backdoored Claude Code extension appeared on the Cursor marketplace; the page reports over 27 million installs of the extension overall.",
+     "mechanism": "A malicious build of the official Claude Code VS Code extension was published to the Cursor marketplace (an Open VSX style registry), reportedly with a remote access payload. The route is a compromised publisher account or release pipeline, so editors that auto-update pulled the bad version. Yanking the version from the registry does not clean machines that already installed it.",
+     "section_chars": 918
+    },
+    {
+     "n": 3,
+     "key": "gh:haydenschmitty/floorplan",
+     "facts": 13,
+     "supported": 12,
+     "unsupported": [
+      "days"
+     ],
+     "claim": "An interactive plain-English map of any codebase, drawn by an AI coding agent, 481 stars in three days.",
+     "mechanism": "A Claude Code or Codex plugin has the model read a repo and write a graph of parts, files and web requests with plain-English names. Frontend calls are matched to server endpoints by static analysis, including across repos. A health check flags secrets, unauthenticated endpoints, unused files and oversized files. Updates re-read only changed files and the map is a local HTML page.",
+     "section_chars": 4028
+    },
+    {
+     "n": 5,
+     "key": "yt:8C4bh59FtsI",
+     "facts": 8,
+     "supported": 4,
+     "unsupported": [
+      "promoted",
+      "separate",
+      "similarity",
+      "time"
+     ],
+     "claim": "Long-term agent memory needs a structured store for facts and a vector store for meaning, kept separate.",
+     "mechanism": "The talk splits agent memory in two: exact facts go in a SQL database queried for rows, and fuzzy understanding goes in a vector store searched by embedding similarity. A managed memory bank reads past sessions, extracts memories with a model and updates them over time. Short-term session context is treated like RAM and discarded unless promoted.",
+     "section_chars": 3840
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-08:a-ranked-list-of-trading-concepts-with-unsourced-percentages",
+     "facts": 6,
+     "supported": 4,
+     "unsupported": [
+      "fees",
+      "history"
+     ],
+     "claim": "Order flow ranks first and MACD last, and moving-average bots never make money.",
+     "mechanism": "The reel ranks ten trading concepts with invented percentages, and claims moving-average bots never profit. The testable core is a moving-average crossover rule applied to price history. Its profit depends on regime: it gains in persistent trends and loses to whipsaw in ranges, net of fees.",
+     "section_chars": 1802
+    },
+    {
+     "n": 8,
+     "key": "gh:nirholas/pump-fun-sdk",
+     "facts": 15,
+     "supported": 13,
+     "unsupported": [
+      "RPC",
+      "data"
+     ],
+     "claim": "Instruction builders for every Pump protocol operation plus 50 examples, a CLI and alert bots.",
+     "mechanism": "An offline-first TypeScript SDK that builds Solana instructions for the pump.fun programs: create token, buy and sell on a bonding curve, migrate to an AMM pool, and fee sharing. It never signs or sends. Prices come from the on-chain curve reserves read over RPC, so graduation progress is computable from public account data.",
+     "section_chars": 4019
+    },
+    {
+     "n": 9,
+     "key": "arxiv:2610.39807",
+     "facts": 10,
+     "supported": 7,
+     "unsupported": [
+      "LLM",
+      "LLMs",
+      "use"
+     ],
+     "claim": "A honeypot framework with four deception planes plus provenance that links planted credentials to downstream use.",
+     "mechanism": "InferD is a low-interaction honeypot that imitates AI infrastructure such as LLM serving ports, inference APIs, vector databases and agent gateways. It answers every request from static response pools and never runs inference or tools. A provenance plane plants credentials and watches for later model-mediated use of them, showing attackers feed stolen keys into LLMs.",
+     "section_chars": 1560
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-08:the-free-pay-only-shipping-closure-sale-dropship-pattern-and",
+     "facts": 7,
+     "supported": 3,
+     "unsupported": [
+      "complaints",
+      "items",
+      "name",
+      "near-identical"
+     ],
+     "claim": "Free jewellery after 46 years of trading, pay shipping only.",
+     "mechanism": "A shop advertises free goods and charges only shipping, set at the real price of cheap dropshipped items. A fake closure story creates urgency, then the domain lapses and the operator relaunches under a new name. Detection signals are a young domain, an anonymous registered-agent address, near-identical sibling sites, and review sites full of shipping complaints.",
+     "section_chars": 1709
+    },
+    {
+     "n": 13,
+     "key": "gh:tapoooooty/hypergrad",
+     "facts": 14,
+     "supported": 14,
+     "unsupported": [],
+     "claim": "A GRAD index perp from $500K market cap, and own perps for coins that hold $500K for a day, with 2x leverage.",
+     "mechanism": "A Hyperliquid HIP-3 deployer lists perps on pump.fun graduates. The manager pulls graduates and checks holders every 10 minutes and assigns tiers by market cap hold time. The oracle takes the median of three Solana price sources every 3 seconds, smooths it with an EMA and freezes on bad data. A market maker quotes both sides, skewed against its position.",
+     "section_chars": 4132
+    }
+   ]
+  }
+ ]
+}

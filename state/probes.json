@@ -5046,22 +5046,25 @@
    "after": "2026-10-31",
    "est_minutes": 20,
    "added": "2026-10-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-31T12:31:56+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-31T12:34:16+0000",
+   "note": "Measured: 558 checkable tokens across 52 kept items on 7 harvest nights, 398 found in the source section (71.3 pct, shot said 78: miss); of 160 misses about 35 are true facts from outside the text because vault-thread sections are stubs with no body, most of the rest tokeniser noise (trailing full stops on numbers, hyphenated paraphrase, Chinese sources); fabricated 0 (shot 0: hit); misattributed 2 (shot 2: hit): the MOT video figures credited to the DVSA which the transcript never names, and a commenter question about loading the Flock map into OpenStreetMap turned into the map being built in OSM-style data. Raw rate tracks source shape not the child; the miss list is the product. Next: deepen (queue: skip body-less sections, strip trailing stops and hyphenated lowercase from the tokeniser, then run nightly after harvest and leave the miss list in the run log).",
+   "artefacts": [
+    "experiments/2026-10-31-P-0207"
+   ],
+   "minutes": 2,
+   "calls": 24,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "raw token support about 78 pct over the 7 nights, fabricated facts 0, misattributed facts 2 on reading the miss lists",
-    "at": "2026-10-31T12:32:17+0000"
+    "at": "2026-10-31T12:32:17+0000",
+    "hit": true
    }
   },
   {

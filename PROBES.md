@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 205 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 206 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -17,15 +17,15 @@ Verdicts so far: 205 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | desk | none | 2026-11-03 | 0 | 20 min |
-| P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | desk | none | 2026-10-31 | 1 (in progress) | 20 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 
-## Verdicts (257)
+## Verdicts (258)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-10-31 | P-0207 | P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed facts across the week | **works** | Measured: 558 checkable tokens across 52 kept items on 7 harvest nights, 398 found in the source section (71.3 pct, shot said 78: miss); of 160 misses about 35 are true facts from outside the text because vault-thread sections are stubs with no body, most of the rest tokeniser noise (trailing full stops on numbers, hyphenated paraphrase, Chinese sources); fabricated 0 (shot 0: hit); misattributed 2 (shot 2: hit): the MOT video figures credited to the DVSA which the transcript never names, and a commenter question about loading the Flock map into OpenStreetMap turned into the map being built in OSM-style data. Raw rate tracks source shape not the child; the miss list is the product. Next: deepen (queue: skip body-less sections, strip trailing stops and hyphenated lowercase from the tokeniser, then run nightly after harvest and leave the miss list in the run log). | `experiments/2026-10-31-P-0207` | 2 min, 24 calls, 0 denied |
 | 2026-10-30 | P-0269 | MOT 2023 anonymised results (DfT, 1.19 GB zip, streamed): initial fail rate by make for cars aged 10 to 12, the three makes failing most and least with counts, against P-0247's 27.5% national rate | **works** | 2016 per-test file (37.7M rows, streamed gzip): cars aged 10 to 12 fail first time at 43.9% (6.4M tests); by make, Porsche 20.7%, Lexus 26.8%, Subaru 34.0% at the top, Chevrolet 49.0%, Vauxhall 50.3%, Renault 55.2% at the bottom, 31 makes over 20k tests. 2023 not readable: the zip is Deflate64, which stdlib zipfile refuses; 35.6% all-age initial fail is DVSA's definition, P-0247's 27.5% is the final rate. | `experiments/2026-10-30-P-0269` | 4 min, 36 calls, 0 denied |
 | 2026-10-30 | P-0268 | Skool About-page scorer (S-58 Magnetic Memberships audit checklist): stdlib script grading an About page on the 5 June audit rules, then diffed against the Launch a Skool framework text to list what the framework is missing | **works** | Scorer built (stdlib, 11 checks, reads the About page's embedded JSON keyless): Maker School, the audit's exemplar, scores 7 of 11 and the audit's own authors 6 of 11, three fails structural to a free community. The Launch a Skool diff half is blocked: the framework lives in the vault outside the folder a run may read; left for an interactive session. | `experiments/2026-10-30-P-0268` | 2 min, 25 calls, 0 denied |
 | 2026-10-30 | P-0266 | pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progress within 2 percent? | **works** | Six live pump.fun curves read over the public RPC with the SDK's own formulas (price vSOL/vTok, progress 1 - real/793.1M): 5 of 6 within 1% of DexScreener (+0.10, +0.04, -0.26, +0.99, -0.27), the sixth +10.5% on a token trading 983 times an hour, two reads seconds apart. Formula run in Python from the source; the TypeScript npm ci did not finish in the budget. | `experiments/2026-10-30-P-0266` | 2 min, 23 calls, 0 denied |
