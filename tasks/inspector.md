@@ -24,23 +24,6 @@ On `SKIP`: append `- Inspector HH:MM: skipped, <the reason it printed>` to today
 `python3 /Users/triton/PROTEUS/bin/halt-check.py`. Anything but CLEAR: one run-log line, release (step 8), stop.
 Append `## Day run inspector YYYY-MM-DD HH:MM` to today's run log.
 
-## 1b. The team record remainder (only while the file exists; added 30 Oct 2026)
-
-On 30 Oct the record seed hit the board's cap of 300 writes a day for one agent, so the rest waits here:
-`/Users/triton/PROTEUS/sandbox/record-seed/remaining-2026-10-31.jsonl`. If that file is missing or empty,
-one run-log line (`- Record remainder: nothing left`) and on to step 2. Otherwise, Read it with the Read tool:
-one JSON object a line, `{"tool": "<board tool name>", "args": {...}}`. For each line in order, call the
-named tool (`mcp__board__log_work`, `mcp__board__set_row`) with `args` as its parameters, verbatim: no
-shortening, no rewording, no added fields. Up to ten calls a message. The board answers ok with an id, or
-duplicate true (fine, the key already existed), or an error. On `over the daily writes cap`, stop the step
-at once: the rest waits for the next morning; a denial is a result, never retried verbatim. Write every
-answer to `/Users/triton/PROTEUS/state/agents/YYYY-MM-DD/record-post-remaining.jsonl` (one line per call:
-the row's key, slug or name, the id, duplicate, error). Then Write the remaining file again holding only
-the lines that did not get an ok (an empty file when all did), so the next morning posts only what is left.
-One run-log line: `- Record remainder: posted N, duplicates N, left N`. At most 15 minutes; if the budget
-runs out, stop where you are and the file keeps the rest. When the file is empty, the Smith may delete
-this step.
-
 ## 2. Make the published numbers agree
 
 `python3 /Users/triton/PROTEUS/bin/score.py --write` (TRACK-RECORD.md and docs/data.json from the ledgers)
