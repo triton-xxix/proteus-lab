@@ -1,0 +1,2922 @@
+{
+ "shelf_rows": 280,
+ "distinct_names": 271,
+ "on_pypi": 62,
+ "not_on_pypi": 113,
+ "errors": 96,
+ "released_last_30d": 16,
+ "released_after_shelved": 13,
+ "days_since_release_median": 256,
+ "stale_over_365d": [
+  "agent-office",
+  "ffmpeg",
+  "magnitude",
+  "coucou",
+  "parrot",
+  "n8n",
+  "easyread",
+  "katex",
+  "higgsfield",
+  "blender",
+  "comfyui",
+  "python-chess",
+  "astral",
+  "whop",
+  "sparqlwrapper",
+  "bubblewrap",
+  "loom",
+  "habitat-sim",
+  "astro",
+  "postfix",
+  "funes",
+  "tor",
+  "vvv",
+  "ltx-video",
+  "hob",
+  "hypergrad"
+ ],
+ "names": {
+  "yt-dlp": {
+   "shelf_ids": [
+    "T-0001"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "yt-dlp",
+   "exists": true,
+   "version": "2026.10.26",
+   "latest_upload": "2026-10-29T23:33:43.290962Z",
+   "latest_version_uploaded": "2026.10.29.232701.dev0",
+   "summary": "A feature-rich command-line audio/video downloader",
+   "n_releases": 648,
+   "days_since_release": 2,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "whisper-cpp": {
+   "shelf_ids": [
+    "T-0002"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "whisper.cpp",
+   "exists": false,
+   "status": 404
+  },
+  "agent-office": {
+   "shelf_ids": [
+    "T-0003"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "agent-office",
+   "exists": true,
+   "version": "0.0.4",
+   "latest_upload": "2025-10-20T20:18:53.480135Z",
+   "latest_version_uploaded": "0.0.4",
+   "summary": "Python SDK for Agent Office API - AI-powered document editing",
+   "n_releases": 4,
+   "days_since_release": 376,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "node-pty": {
+   "shelf_ids": [
+    "T-0004"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "node-pty",
+   "exists": false,
+   "status": 404
+  },
+  "tmux": {
+   "shelf_ids": [
+    "T-0005"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "tmux",
+   "exists": false,
+   "status": 404
+  },
+  "tokencast": {
+   "shelf_ids": [
+    "T-0006"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "TokenCast",
+   "exists": true,
+   "version": "0.1.4",
+   "latest_upload": "2026-03-31T01:50:47.808950Z",
+   "latest_version_uploaded": "0.1.4",
+   "summary": "Pre-execution cost estimation for LLM agent workflows with calibration learning",
+   "n_releases": 5,
+   "days_since_release": 214,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "swe-bench verified": {
+   "shelf_ids": [
+    "T-0007"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "SWE-bench Verified",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "meta ad library": {
+   "shelf_ids": [
+    "T-0008"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "Meta Ad Library",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "freecad": {
+   "shelf_ids": [
+    "T-0009"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "FreeCAD",
+   "exists": false,
+   "status": 404
+  },
+  "cadquery": {
+   "shelf_ids": [
+    "T-0010"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "CadQuery",
+   "exists": true,
+   "version": "2.8.0",
+   "latest_upload": "2026-06-21T13:33:06.081850Z",
+   "latest_version_uploaded": "2.8.0",
+   "summary": "CadQuery is a parametric  scripting language for creating and traversing CAD mod",
+   "n_releases": 35,
+   "days_since_release": 132,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "arxiv 2609-35738": {
+   "shelf_ids": [
+    "T-0011"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "arXiv 2609.35738",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "ffmpeg": {
+   "shelf_ids": [
+    "T-0012",
+    "T-0204"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "ffmpeg",
+   "exists": true,
+   "version": "1.4",
+   "latest_upload": "2018-10-08T07:50:05.748148Z",
+   "latest_version_uploaded": "1.4",
+   "summary": "ffmpeg python package url [https://github.com/jiashaokun/ffmpeg]",
+   "n_releases": 5,
+   "days_since_release": 2945,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "opusclip alternatives: clipsai": {
+   "shelf_ids": [
+    "T-0013"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "OpusClip alternatives: ClipsAI",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "motion-graphics": {
+   "shelf_ids": [
+    "T-0014"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "motion-graphics",
+   "exists": false,
+   "status": 404
+  },
+  "playwright": {
+   "shelf_ids": [
+    "T-0015",
+    "T-0078"
+   ],
+   "shelved": "2026-09-29",
+   "raw": "Playwright",
+   "exists": true,
+   "version": "1.64.1",
+   "latest_upload": "2026-10-22T16:30:32.724888Z",
+   "latest_version_uploaded": "1.64.1",
+   "summary": "A high-level API to automate web browsers",
+   "n_releases": 87,
+   "days_since_release": 9,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "wayback machine cdx api": {
+   "shelf_ids": [
+    "T-0016"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "Wayback Machine CDX API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "magnitude": {
+   "shelf_ids": [
+    "T-0017"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "Magnitude",
+   "exists": true,
+   "version": "1.1.2",
+   "latest_upload": "2025-07-29T05:24:11.576765Z",
+   "latest_version_uploaded": "1.1.2",
+   "summary": "Python library for computing with numbers with units",
+   "n_releases": 6,
+   "days_since_release": 459,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "llama-cpp llama-bench": {
+   "shelf_ids": [
+    "T-0018"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "llama.cpp llama-bench",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "coucou": {
+   "shelf_ids": [
+    "T-0019"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "coucou",
+   "exists": true,
+   "version": "0.1.0",
+   "latest_upload": "2022-10-07T14:24:34.703835Z",
+   "latest_version_uploaded": "0.1.0",
+   "summary": "",
+   "n_releases": 1,
+   "days_since_release": 1485,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "libero": {
+   "shelf_ids": [
+    "T-0020"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "LIBERO",
+   "exists": true,
+   "version": "0.1.1",
+   "latest_upload": "2025-11-03T09:51:48.589767Z",
+   "latest_version_uploaded": "0.1.1",
+   "summary": "LIBERO: Benchmark and environments for robot learning",
+   "n_releases": 1,
+   "days_since_release": 362,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "c2pa c2patool": {
+   "shelf_ids": [
+    "T-0021"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "C2PA c2patool",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "universal-modder": {
+   "shelf_ids": [
+    "T-0022"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "universal-modder",
+   "exists": false,
+   "status": 404
+  },
+  "ilspy": {
+   "shelf_ids": [
+    "T-0023"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "ILSpy",
+   "exists": false,
+   "status": 404
+  },
+  "ghidra": {
+   "shelf_ids": [
+    "T-0024"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "Ghidra",
+   "exists": false,
+   "status": 404
+  },
+  "tau-bench": {
+   "shelf_ids": [
+    "T-0025"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "tau-bench",
+   "exists": false,
+   "status": 404
+  },
+  "parrot": {
+   "shelf_ids": [
+    "T-0026"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "Parrot",
+   "exists": true,
+   "version": "0.1.10",
+   "latest_upload": "2024-09-11T08:44:32.267575Z",
+   "latest_version_uploaded": "0.1.10",
+   "summary": "parrot is able to to process and average continuously recorded THz data.",
+   "n_releases": 8,
+   "days_since_release": 780,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "motion-video-kit": {
+   "shelf_ids": [
+    "T-0027"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "motion-video-kit",
+   "exists": false,
+   "status": 404
+  },
+  "ffmpeg ebur128 filter": {
+   "shelf_ids": [
+    "T-0028"
+   ],
+   "shelved": "2026-09-30",
+   "raw": "ffmpeg ebur128 filter",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "lighthouse cli": {
+   "shelf_ids": [
+    "T-0029"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "Lighthouse CLI",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "weave router": {
+   "shelf_ids": [
+    "T-0030"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "Weave Router",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "yomiyasu": {
+   "shelf_ids": [
+    "T-0031"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "yomiyasu",
+   "exists": false,
+   "status": 404
+  },
+  "appworld": {
+   "shelf_ids": [
+    "T-0032"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "AppWorld",
+   "exists": true,
+   "version": "0.1.3.post1",
+   "latest_upload": "2026-02-17T06:11:44.431577Z",
+   "latest_version_uploaded": "0.1.3.post1",
+   "summary": "AppWorld: A Controllable World of Apps and People for Benchmarking Interactive C",
+   "n_releases": 5,
+   "days_since_release": 256,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "omlx": {
+   "shelf_ids": [
+    "T-0033"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "oMLX",
+   "exists": false,
+   "status": 404
+  },
+  "mlx-lm": {
+   "shelf_ids": [
+    "T-0034"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "mlx-lm",
+   "exists": true,
+   "version": "0.32.2",
+   "latest_upload": "2026-10-16T02:49:34.781387Z",
+   "latest_version_uploaded": "0.32.2",
+   "summary": "LLMs with MLX and the Hugging Face Hub",
+   "n_releases": 99,
+   "days_since_release": 15,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "fal client": {
+   "shelf_ids": [
+    "T-0035"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "fal client",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "reelmimic": {
+   "shelf_ids": [
+    "T-0036"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "ReelMimic",
+   "exists": false,
+   "status": 404
+  },
+  "painted-animation": {
+   "shelf_ids": [
+    "T-0037"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "painted-animation",
+   "exists": false,
+   "status": 404
+  },
+  "librosa": {
+   "shelf_ids": [
+    "T-0038"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "librosa",
+   "exists": true,
+   "version": "1.0.0",
+   "latest_upload": "2026-08-11T15:37:37.013893Z",
+   "latest_version_uploaded": "1.0.0",
+   "summary": "Python module for audio and music processing",
+   "n_releases": 47,
+   "days_since_release": 81,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "statsbomb open-data": {
+   "shelf_ids": [
+    "T-0039"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "StatsBomb open-data",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "scikit-learn": {
+   "shelf_ids": [
+    "T-0040",
+    "T-0139"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "scikit-learn",
+   "exists": true,
+   "version": "1.9.1",
+   "latest_upload": "2026-09-10T18:34:04.679234Z",
+   "latest_version_uploaded": "1.9.1",
+   "summary": "A set of python modules for machine learning and data mining",
+   "n_releases": 76,
+   "days_since_release": 51,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "retell ai": {
+   "shelf_ids": [
+    "T-0041"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "Retell AI",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "vapi": {
+   "shelf_ids": [
+    "T-0042"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "Vapi",
+   "exists": false,
+   "status": 404
+  },
+  "n8n": {
+   "shelf_ids": [
+    "T-0043"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "n8n",
+   "exists": true,
+   "version": "0.11.0",
+   "latest_upload": "2023-04-13T14:21:25.859084Z",
+   "latest_version_uploaded": "0.11.0",
+   "summary": "",
+   "n_releases": 14,
+   "days_since_release": 1297,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "corral": {
+   "shelf_ids": [
+    "T-0044"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "Corral",
+   "exists": false,
+   "status": 404
+  },
+  "sports-skills": {
+   "shelf_ids": [
+    "T-0045"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "sports-skills",
+   "exists": true,
+   "version": "0.40.1",
+   "latest_upload": "2026-10-30T15:23:39.532801Z",
+   "latest_version_uploaded": "0.40.1",
+   "summary": "Lightweight Python SDK for sports data \u2014 football, F1, NFL, NBA, WNBA, NHL, MLB,",
+   "n_releases": 76,
+   "days_since_release": 1,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "clubelo api": {
+   "shelf_ids": [
+    "T-0046"
+   ],
+   "shelved": "2026-10-01",
+   "raw": "ClubElo API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "kolscan leaderboard": {
+   "shelf_ids": [
+    "T-0047"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Kolscan leaderboard",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "gmgn wallet pages": {
+   "shelf_ids": [
+    "T-0048"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "GMGN wallet pages",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "solana public rpc / helius free tier": {
+   "shelf_ids": [
+    "T-0049"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Solana public RPC / Helius free tier",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "rhun": {
+   "shelf_ids": [
+    "T-0050"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "rhun",
+   "exists": false,
+   "status": 404
+  },
+  "easyread": {
+   "shelf_ids": [
+    "T-0051"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "easyread",
+   "exists": true,
+   "version": "0.1",
+   "latest_upload": "2020-12-03T15:03:46.255536Z",
+   "latest_version_uploaded": "0.1",
+   "summary": "\"Reading Helper\" by Uncle Engineer",
+   "n_releases": 1,
+   "days_since_release": 2158,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "katex": {
+   "shelf_ids": [
+    "T-0052"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "KaTeX",
+   "exists": true,
+   "version": "0.0.4",
+   "latest_upload": "2018-09-29T22:02:53.793098Z",
+   "latest_version_uploaded": "0.0.4",
+   "summary": "Convert an image into KaTeX to use in Facebook Messenger",
+   "n_releases": 4,
+   "days_since_release": 2954,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "kling motion control": {
+   "shelf_ids": [
+    "T-0053"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Kling Motion Control",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "higgsfield": {
+   "shelf_ids": [
+    "T-0054"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Higgsfield",
+   "exists": true,
+   "version": "0.0.3",
+   "latest_upload": "2024-03-23T13:01:51.565650Z",
+   "latest_version_uploaded": "0.0.4rc0",
+   "summary": "",
+   "n_releases": 3,
+   "days_since_release": 952,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "ldraw-nova": {
+   "shelf_ids": [
+    "T-0055"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "ldraw-nova",
+   "exists": false,
+   "status": 404
+  },
+  "ldraw parts library": {
+   "shelf_ids": [
+    "T-0056"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "LDraw parts library",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "ldview": {
+   "shelf_ids": [
+    "T-0057"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "LDView",
+   "exists": false,
+   "status": 404
+  },
+  "blender-kiln": {
+   "shelf_ids": [
+    "T-0058"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "blender-kiln",
+   "exists": false,
+   "status": 404
+  },
+  "blender": {
+   "shelf_ids": [
+    "T-0059",
+    "T-0186"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Blender",
+   "exists": true,
+   "version": "1.4",
+   "latest_upload": "2019-08-08T17:45:52.004034Z",
+   "latest_version_uploaded": "1.4",
+   "summary": "Pre-built Blender 2.79 as a python3.5 module bpy for linux.",
+   "n_releases": 4,
+   "days_since_release": 2641,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "poly haven": {
+   "shelf_ids": [
+    "T-0060"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Poly Haven",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "breadcrumb mcp tool definitions": {
+   "shelf_ids": [
+    "T-0061"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Breadcrumb MCP tool definitions",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "youtube-transcript-plus": {
+   "shelf_ids": [
+    "T-0062"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "youtube-transcript-plus",
+   "exists": false,
+   "status": 404
+  },
+  "node-js 20+": {
+   "shelf_ids": [
+    "T-0063"
+   ],
+   "shelved": "2026-10-02",
+   "raw": "Node.js 20+",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "solana public json-rpc": {
+   "shelf_ids": [
+    "T-0064"
+   ],
+   "shelved": "2026-10-03",
+   "raw": "Solana public JSON-RPC",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "dune": {
+   "shelf_ids": [
+    "T-0065"
+   ],
+   "shelved": "2026-10-03",
+   "raw": "Dune",
+   "exists": false,
+   "status": 404
+  },
+  "awesome-claude-video-skills": {
+   "shelf_ids": [
+    "T-0066"
+   ],
+   "shelved": "2026-10-03",
+   "raw": "awesome-claude-video-skills",
+   "exists": false,
+   "status": 404
+  },
+  "remotion": {
+   "shelf_ids": [
+    "T-0067",
+    "T-0150"
+   ],
+   "shelved": "2026-10-03",
+   "raw": "Remotion",
+   "exists": false,
+   "status": 404
+  },
+  "nvidia build api catalogue": {
+   "shelf_ids": [
+    "T-0068"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "NVIDIA Build API catalogue",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "promptfoo": {
+   "shelf_ids": [
+    "T-0069"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "promptfoo",
+   "exists": true,
+   "version": "0.2.0",
+   "latest_upload": "2026-09-18T19:52:51.393674Z",
+   "latest_version_uploaded": "0.2.0",
+   "summary": "Python wrapper for the promptfoo CLI - LLM testing, red teaming, and security ev",
+   "n_releases": 6,
+   "days_since_release": 43,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "answer-me-with-html": {
+   "shelf_ids": [
+    "T-0070"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "answer-me-with-html",
+   "exists": false,
+   "status": 404
+  },
+  "etoro api portal": {
+   "shelf_ids": [
+    "T-0071"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "eToro API portal",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "live-panel-skill": {
+   "shelf_ids": [
+    "T-0072"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "live-panel-skill",
+   "exists": false,
+   "status": 404
+  },
+  "comfyui": {
+   "shelf_ids": [
+    "T-0073"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "ComfyUI",
+   "exists": true,
+   "version": "0.0.1",
+   "latest_upload": "2024-06-13T20:26:49.075168Z",
+   "latest_version_uploaded": "0.0.1",
+   "summary": "An installable version of ComfyUI",
+   "n_releases": 1,
+   "days_since_release": 870,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "replica-skill": {
+   "shelf_ids": [
+    "T-0074"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "replica-skill",
+   "exists": false,
+   "status": 404
+  },
+  "python-chess": {
+   "shelf_ids": [
+    "T-0075"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "python-chess",
+   "exists": true,
+   "version": "1.999",
+   "latest_upload": "2020-10-26T11:30:10.118194Z",
+   "latest_version_uploaded": "1.999",
+   "summary": "A chess library with move generation, move validation, and support for common fo",
+   "n_releases": 100,
+   "days_since_release": 2196,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "stockfish": {
+   "shelf_ids": [
+    "T-0076"
+   ],
+   "shelved": "2026-10-04",
+   "raw": "Stockfish",
+   "exists": true,
+   "version": "5.2.0",
+   "latest_upload": "2026-04-17T05:51:44.562559Z",
+   "latest_version_uploaded": "5.2.0",
+   "summary": "Wraps the open-source Stockfish chess engine for easy integration into python.",
+   "n_releases": 52,
+   "days_since_release": 197,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "scroll-craft": {
+   "shelf_ids": [
+    "T-0077"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "scroll-craft",
+   "exists": false,
+   "status": 404
+  },
+  "mcstas": {
+   "shelf_ids": [
+    "T-0079"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "McStas",
+   "exists": false,
+   "status": 404
+  },
+  "google places api (new)": {
+   "shelf_ids": [
+    "T-0080"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "Google Places API (New)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "google keyword planner": {
+   "shelf_ids": [
+    "T-0081"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "Google Keyword Planner",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "open-meteo api": {
+   "shelf_ids": [
+    "T-0082"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "Open-Meteo API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "7timer": {
+   "shelf_ids": [
+    "T-0083"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "7Timer",
+   "exists": false,
+   "status": 404
+  },
+  "astral": {
+   "shelf_ids": [
+    "T-0084"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "astral",
+   "exists": true,
+   "version": "3.2",
+   "latest_upload": "2022-11-05T18:12:02.913234Z",
+   "latest_version_uploaded": "3.2",
+   "summary": "Calculations for the position of the sun and moon.",
+   "n_releases": 45,
+   "days_since_release": 1456,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "mesh-avatar-studio": {
+   "shelf_ids": [
+    "T-0085"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "mesh-avatar-studio",
+   "exists": false,
+   "status": 404
+  },
+  "hazardweaver": {
+   "shelf_ids": [
+    "T-0086"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "HazardWeaver",
+   "exists": false,
+   "status": 404
+  },
+  "whop": {
+   "shelf_ids": [
+    "T-0087"
+   ],
+   "shelved": "2026-10-05",
+   "raw": "Whop",
+   "exists": true,
+   "version": "4.1",
+   "latest_upload": "2022-09-07T03:06:33.290827Z",
+   "latest_version_uploaded": "4.1",
+   "summary": "",
+   "n_releases": 5,
+   "days_since_release": 1515,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "mg-styles-15": {
+   "shelf_ids": [
+    "T-0088"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "mg-styles-15",
+   "exists": false,
+   "status": 404
+  },
+  "wikidata query service": {
+   "shelf_ids": [
+    "T-0089"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "Wikidata Query Service",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "sparqlwrapper": {
+   "shelf_ids": [
+    "T-0090"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "SPARQLWrapper",
+   "exists": true,
+   "version": "2.0.0",
+   "latest_upload": "2022-03-13T23:14:00.671793Z",
+   "latest_version_uploaded": "2.0.0",
+   "summary": "SPARQL Endpoint interface to Python",
+   "n_releases": 30,
+   "days_since_release": 1693,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "bubblewrap": {
+   "shelf_ids": [
+    "T-0091"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "Bubblewrap",
+   "exists": true,
+   "version": "1.2.0",
+   "latest_upload": "2013-01-22T17:44:12.879743Z",
+   "latest_version_uploaded": "1.2.0",
+   "summary": "UNKNOWN",
+   "n_releases": 3,
+   "days_since_release": 5030,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "3d-asset-server": {
+   "shelf_ids": [
+    "T-0092"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "3d-asset-server",
+   "exists": false,
+   "status": 404
+  },
+  "tea language": {
+   "shelf_ids": [
+    "T-0093"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "Tea language",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "openchart": {
+   "shelf_ids": [
+    "T-0094"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "OpenChart",
+   "exists": true,
+   "version": "0.2.0",
+   "latest_upload": "2026-01-16T07:51:56.758649Z",
+   "latest_version_uploaded": "0.2.0",
+   "summary": "A Python library to download intraday and EOD historical data from NSE India",
+   "n_releases": 2,
+   "days_since_release": 288,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "by2kb": {
+   "shelf_ids": [
+    "T-0095"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "by2kb",
+   "exists": true,
+   "version": "0.7.5",
+   "latest_upload": "2026-10-19T14:15:52.034868Z",
+   "latest_version_uploaded": "0.7.5",
+   "summary": "Forward a video. Keep the knowledge. Bilibili/YouTube to knowledge base.",
+   "n_releases": 16,
+   "days_since_release": 12,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "faster-whisper": {
+   "shelf_ids": [
+    "T-0096"
+   ],
+   "shelved": "2026-10-06",
+   "raw": "faster-whisper",
+   "exists": true,
+   "version": "1.2.1",
+   "latest_upload": "2025-10-31T11:35:47.794651Z",
+   "latest_version_uploaded": "1.2.1",
+   "summary": "Faster Whisper transcription with CTranslate2",
+   "n_releases": 21,
+   "days_since_release": 365,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "sec edgar full-index and form 4 xml": {
+   "shelf_ids": [
+    "T-0097",
+    "T-0181"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "SEC EDGAR full-index and Form 4 XML",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "stooq daily csv": {
+   "shelf_ids": [
+    "T-0098"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "Stooq daily CSV",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "medzero paper": {
+   "shelf_ids": [
+    "T-0099"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "MedZERO paper",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "faireconomy weekly calendar json": {
+   "shelf_ids": [
+    "T-0100"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "Faireconomy weekly calendar JSON",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "binance public klines": {
+   "shelf_ids": [
+    "T-0101"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "Binance public klines",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "durable actors": {
+   "shelf_ids": [
+    "T-0102"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "Durable Actors",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "mortiflix-oss": {
+   "shelf_ids": [
+    "T-0103"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "mortiflix-oss",
+   "exists": false,
+   "status": 404
+  },
+  "agent-workbench": {
+   "shelf_ids": [
+    "T-0104"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "agent-workbench",
+   "exists": false,
+   "status": 404
+  },
+  "loom": {
+   "shelf_ids": [
+    "T-0105"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "Loom",
+   "exists": true,
+   "version": "0.0.18",
+   "latest_upload": "2014-05-08T15:33:40.605653Z",
+   "latest_version_uploaded": "0.0.18",
+   "summary": "Elegant deployment with Fabric and Puppet.",
+   "n_releases": 17,
+   "days_since_release": 4559,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "agent-reviews": {
+   "shelf_ids": [
+    "T-0106"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "agent.reviews",
+   "exists": false,
+   "status": 404
+  },
+  "@armature-tech/agent-reviews": {
+   "shelf_ids": [
+    "T-0107"
+   ],
+   "shelved": "2026-10-07",
+   "raw": "@armature-tech/agent-reviews",
+   "exists": false,
+   "status": 404
+  },
+  "binance public klines api": {
+   "shelf_ids": [
+    "T-0108",
+    "T-0164"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "Binance public klines API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "pandas": {
+   "shelf_ids": [
+    "T-0109"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "pandas",
+   "exists": true,
+   "version": "3.1.0",
+   "latest_upload": "2026-10-22T11:57:03.087429Z",
+   "latest_version_uploaded": "3.1.0",
+   "summary": "Powerful data structures for data analysis, time series, and statistics",
+   "n_releases": 120,
+   "days_since_release": 9,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "openqodex": {
+   "shelf_ids": [
+    "T-0110"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "openqodex",
+   "exists": false,
+   "status": 404
+  },
+  "semgrep": {
+   "shelf_ids": [
+    "T-0111"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "semgrep",
+   "exists": true,
+   "version": "1.183.0",
+   "latest_upload": "2026-10-29T21:30:00.500871Z",
+   "latest_version_uploaded": "1.183.0",
+   "summary": "Lightweight static analysis for many languages. Find bug variants with patterns ",
+   "n_releases": 300,
+   "days_since_release": 2,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "gitleaks": {
+   "shelf_ids": [
+    "T-0112"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "gitleaks",
+   "exists": false,
+   "status": 404
+  },
+  "recast paper": {
+   "shelf_ids": [
+    "T-0113"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "RECAST paper",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "cth9191/animate": {
+   "shelf_ids": [
+    "T-0114"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "cth9191/animate",
+   "exists": false,
+   "status": 404
+  },
+  "puppeteer": {
+   "shelf_ids": [
+    "T-0115"
+   ],
+   "shelved": "2026-10-08",
+   "raw": "puppeteer",
+   "exists": false,
+   "status": 404
+  },
+  "dvla vehicle enquiry service api": {
+   "shelf_ids": [
+    "T-0116"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "DVLA Vehicle Enquiry Service API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "gov-uk mot history data": {
+   "shelf_ids": [
+    "T-0117"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "GOV.UK MOT history data",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "big-arrow-on-the-screen": {
+   "shelf_ids": [
+    "T-0118"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "big-arrow-on-the-screen",
+   "exists": false,
+   "status": 404
+  },
+  "swift toolchain (xcode command line tools)": {
+   "shelf_ids": [
+    "T-0119"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "Swift toolchain (Xcode command line tools)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "adastra allele-specific binding database": {
+   "shelf_ids": [
+    "T-0120"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "ADASTRA allele-specific binding database",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "jaspar": {
+   "shelf_ids": [
+    "T-0121"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "JASPAR",
+   "exists": false,
+   "status": 404
+  },
+  "4da": {
+   "shelf_ids": [
+    "T-0122"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "4DA",
+   "exists": false,
+   "status": 404
+  },
+  "rust toolchain (rustup)": {
+   "shelf_ids": [
+    "T-0123"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "Rust toolchain (rustup)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "founder-skill": {
+   "shelf_ids": [
+    "T-0124"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "founder-skill",
+   "exists": false,
+   "status": 404
+  },
+  "agentic-bbo": {
+   "shelf_ids": [
+    "T-0125"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "agentic-bbo",
+   "exists": false,
+   "status": 404
+  },
+  "optuna": {
+   "shelf_ids": [
+    "T-0126"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "Optuna",
+   "exists": true,
+   "version": "5.0.0",
+   "latest_upload": "2026-09-07T05:16:21.136955Z",
+   "latest_version_uploaded": "5.0.0",
+   "summary": "A hyperparameter optimization framework",
+   "n_releases": 79,
+   "days_since_release": 54,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "x402 reference repo": {
+   "shelf_ids": [
+    "T-0127"
+   ],
+   "shelved": "2026-10-09",
+   "raw": "x402 reference repo",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "cal-com (open source)": {
+   "shelf_ids": [
+    "T-0128"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "Cal.com (open source)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "google business profile booking links": {
+   "shelf_ids": [
+    "T-0129"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "Google Business Profile booking links",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "wheresryan22/anatomy": {
+   "shelf_ids": [
+    "T-0130"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "wheresryan22/anatomy",
+   "exists": false,
+   "status": 404
+  },
+  "supernav project page": {
+   "shelf_ids": [
+    "T-0131"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "SuperNav project page",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "habitat-sim": {
+   "shelf_ids": [
+    "T-0132"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "Habitat-sim",
+   "exists": true,
+   "version": "0.2.4.dev20230403",
+   "latest_upload": "2023-04-03T13:09:34.399591Z",
+   "latest_version_uploaded": "0.2.4.dev20230403",
+   "summary": "A high performance simulator for training embodied agents",
+   "n_releases": 1,
+   "days_since_release": 1307,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "data-police-uk api docs": {
+   "shelf_ids": [
+    "T-0133"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "data.police.uk API docs",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "agents-can-communicate": {
+   "shelf_ids": [
+    "T-0134"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "agents-can-communicate",
+   "exists": false,
+   "status": 404
+  },
+  "google trends via pytrends": {
+   "shelf_ids": [
+    "T-0135"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "Google Trends via pytrends",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "lobster sample data": {
+   "shelf_ids": [
+    "T-0136"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "LOBSTER sample data",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "bill10/agent-007": {
+   "shelf_ids": [
+    "T-0137"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "bill10/agent-007",
+   "exists": false,
+   "status": 404
+  },
+  "uci sms spam collection": {
+   "shelf_ids": [
+    "T-0138"
+   ],
+   "shelved": "2026-10-10",
+   "raw": "UCI SMS Spam Collection",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "keepa price and rank history": {
+   "shelf_ids": [
+    "T-0140"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "Keepa price and rank history",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "littleguys": {
+   "shelf_ids": [
+    "T-0141"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "littleguys",
+   "exists": false,
+   "status": 404
+  },
+  "agent client protocol": {
+   "shelf_ids": [
+    "T-0142"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "Agent Client Protocol",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "agent-chrome-relay": {
+   "shelf_ids": [
+    "T-0143"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "agent-chrome-relay",
+   "exists": false,
+   "status": 404
+  },
+  "agent-browser": {
+   "shelf_ids": [
+    "T-0144"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "agent-browser",
+   "exists": false,
+   "status": 404
+  },
+  "ollama": {
+   "shelf_ids": [
+    "T-0145",
+    "T-0166"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "Ollama",
+   "exists": true,
+   "version": "0.6.3",
+   "latest_upload": "2026-09-29T01:26:51.906735Z",
+   "latest_version_uploaded": "0.6.3",
+   "summary": "The official Python client for Ollama.",
+   "n_releases": 36,
+   "days_since_release": 32,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "twilio verify": {
+   "shelf_ids": [
+    "T-0146"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "Twilio Verify",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "tau2-bench": {
+   "shelf_ids": [
+    "T-0147"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "tau2-bench",
+   "exists": false,
+   "status": 404
+  },
+  "solana tracker": {
+   "shelf_ids": [
+    "T-0148"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "Solana Tracker",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "ai-promo-video-maker": {
+   "shelf_ids": [
+    "T-0149"
+   ],
+   "shelved": "2026-10-11",
+   "raw": "ai-promo-video-maker",
+   "exists": false,
+   "status": 404
+  },
+  "firecracker": {
+   "shelf_ids": [
+    "T-0151"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "Firecracker",
+   "exists": false,
+   "status": 404
+  },
+  "skills cli": {
+   "shelf_ids": [
+    "T-0152",
+    "T-0190"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "skills CLI",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "axe-core": {
+   "shelf_ids": [
+    "T-0153"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "axe-core",
+   "exists": false,
+   "status": 404
+  },
+  "py-trees": {
+   "shelf_ids": [
+    "T-0154"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "py_trees",
+   "exists": true,
+   "version": "2.6.0",
+   "latest_upload": "2026-09-10T21:24:16.343926Z",
+   "latest_version_uploaded": "2.6.0",
+   "summary": "pythonic implementation of behaviour trees",
+   "n_releases": 62,
+   "days_since_release": 51,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "ghostty": {
+   "shelf_ids": [
+    "T-0155"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "Ghostty",
+   "exists": false,
+   "status": 404
+  },
+  "jax": {
+   "shelf_ids": [
+    "T-0156"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "JAX",
+   "exists": true,
+   "version": "0.12.0.1",
+   "latest_upload": "2026-10-21T21:07:07.969239Z",
+   "latest_version_uploaded": "0.12.0.1",
+   "summary": "Differentiate, compile, and transform Numpy code.",
+   "n_releases": 198,
+   "days_since_release": 10,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "atticus-mac": {
+   "shelf_ids": [
+    "T-0157"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "atticus-mac",
+   "exists": false,
+   "status": 404
+  },
+  "agent-standup": {
+   "shelf_ids": [
+    "T-0158"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "agent-standup",
+   "exists": false,
+   "status": 404
+  },
+  "astro": {
+   "shelf_ids": [
+    "T-0159"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "Astro",
+   "exists": true,
+   "version": "0.2.7",
+   "latest_upload": "2018-02-12T21:58:26.716547Z",
+   "latest_version_uploaded": "0.2.7",
+   "summary": "A package of astrodynamic functions",
+   "n_releases": 17,
+   "days_since_release": 3183,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "new-term-radar": {
+   "shelf_ids": [
+    "T-0160"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "new-term-radar",
+   "exists": true,
+   "version": "0.6.1",
+   "latest_upload": "2026-10-28T11:49:09.638434Z",
+   "latest_version_uploaded": "0.6.1",
+   "summary": "Names that are starting to surge in AI, and the generic search terms behind them",
+   "n_releases": 6,
+   "days_since_release": 3,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "mcp inspector": {
+   "shelf_ids": [
+    "T-0161"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "MCP Inspector",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "plur-bench": {
+   "shelf_ids": [
+    "T-0162"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "plur-bench",
+   "exists": false,
+   "status": 404
+  },
+  "lean 4": {
+   "shelf_ids": [
+    "T-0163"
+   ],
+   "shelved": "2026-10-13",
+   "raw": "Lean 4",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "statsmodels coint test": {
+   "shelf_ids": [
+    "T-0165"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "statsmodels coint test",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "pulseos hugging face weights": {
+   "shelf_ids": [
+    "T-0167"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "PulseOS Hugging Face weights",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "herk-edit-kit": {
+   "shelf_ids": [
+    "T-0168"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "herk-edit-kit",
+   "exists": false,
+   "status": 404
+  },
+  "my-claude-code-mods": {
+   "shelf_ids": [
+    "T-0169"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "my-claude-code-mods",
+   "exists": false,
+   "status": 404
+  },
+  "opentelemetry jaeger": {
+   "shelf_ids": [
+    "T-0170"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "OpenTelemetry Jaeger",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "postfix": {
+   "shelf_ids": [
+    "T-0171"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "Postfix",
+   "exists": true,
+   "version": "0.0.5",
+   "latest_upload": "2022-11-04T06:54:41.554034Z",
+   "latest_version_uploaded": "0.0.5",
+   "summary": "A Python package to facilitate writing tests for a testless code base.",
+   "n_releases": 5,
+   "days_since_release": 1457,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "roast-room": {
+   "shelf_ids": [
+    "T-0172"
+   ],
+   "shelved": "2026-10-14",
+   "raw": "roast-room",
+   "exists": false,
+   "status": 404
+  },
+  "companies house bulk product and api": {
+   "shelf_ids": [
+    "T-0173"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "Companies House bulk product and API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "mcd-saver-strategist": {
+   "shelf_ids": [
+    "T-0174"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "mcd-saver-strategist",
+   "exists": false,
+   "status": 404
+  },
+  "xero demo company": {
+   "shelf_ids": [
+    "T-0175"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "Xero demo company",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "decomp-wtf": {
+   "shelf_ids": [
+    "T-0176"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "decomp.wtf",
+   "exists": false,
+   "status": 404
+  },
+  "decomp-dev": {
+   "shelf_ids": [
+    "T-0177"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "decomp.dev",
+   "exists": false,
+   "status": 404
+  },
+  "funes": {
+   "shelf_ids": [
+    "T-0178"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "funes",
+   "exists": true,
+   "version": "0.0.1",
+   "latest_upload": "2019-11-14T22:51:51.423873Z",
+   "latest_version_uploaded": "0.0.1",
+   "summary": "Decorator to memorize function computations permanently to disk.",
+   "n_releases": 1,
+   "days_since_release": 2543,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "funes-memory dataset": {
+   "shelf_ids": [
+    "T-0179"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "funes-memory dataset",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "twilio": {
+   "shelf_ids": [
+    "T-0180"
+   ],
+   "shelved": "2026-10-15",
+   "raw": "Twilio",
+   "exists": true,
+   "version": "9.12.0",
+   "latest_upload": "2026-10-12T16:11:38.497134Z",
+   "latest_version_uploaded": "9.12.0",
+   "summary": "Twilio API client and TwiML generator",
+   "n_releases": 371,
+   "days_since_release": 19,
+   "released_last_30d": true,
+   "released_after_shelved": false
+  },
+  "yfinance": {
+   "shelf_ids": [
+    "T-0182"
+   ],
+   "shelved": "2026-10-16",
+   "raw": "yfinance",
+   "exists": true,
+   "version": "1.7.0",
+   "latest_upload": "2026-08-26T17:25:08.102268Z",
+   "latest_version_uploaded": "1.7.0",
+   "summary": "Download market data from Yahoo! Finance API",
+   "n_releases": 150,
+   "days_since_release": 66,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "pro-vi/cc-stretch": {
+   "shelf_ids": [
+    "T-0183"
+   ],
+   "shelved": "2026-10-16",
+   "raw": "pro-vi/cc-stretch",
+   "exists": false,
+   "status": 404
+  },
+  "mle-bench": {
+   "shelf_ids": [
+    "T-0184"
+   ],
+   "shelved": "2026-10-16",
+   "raw": "MLE-Bench",
+   "exists": false,
+   "status": 404
+  },
+  "leonxlnx/earshot": {
+   "shelf_ids": [
+    "T-0185"
+   ],
+   "shelved": "2026-10-16",
+   "raw": "Leonxlnx/earshot",
+   "exists": false,
+   "status": 404
+  },
+  "blender-ai-mcp-addon": {
+   "shelf_ids": [
+    "T-0187"
+   ],
+   "shelved": "2026-10-17",
+   "raw": "blender-ai-mcp-addon",
+   "exists": false,
+   "status": 404
+  },
+  "envtraverse framework": {
+   "shelf_ids": [
+    "T-0188"
+   ],
+   "shelved": "2026-10-17",
+   "raw": "EnvTraverse framework",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "geoai-skills": {
+   "shelf_ids": [
+    "T-0189"
+   ],
+   "shelved": "2026-10-17",
+   "raw": "geoai-skills",
+   "exists": false,
+   "status": 404
+  },
+  "web-ocean": {
+   "shelf_ids": [
+    "T-0191"
+   ],
+   "shelved": "2026-10-17",
+   "raw": "web-ocean",
+   "exists": false,
+   "status": 404
+  },
+  "things to do api": {
+   "shelf_ids": [
+    "T-0192"
+   ],
+   "shelved": "2026-10-17",
+   "raw": "Things to Do API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "claudemy": {
+   "shelf_ids": [
+    "T-0193"
+   ],
+   "shelved": "2026-10-17",
+   "raw": "claudemy",
+   "exists": false,
+   "status": 404
+  },
+  "android platform-tools (adb)": {
+   "shelf_ids": [
+    "T-0194"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "Android platform-tools (adb)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "tv-vibehack": {
+   "shelf_ids": [
+    "T-0195"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "tv-vibehack",
+   "exists": false,
+   "status": 404
+  },
+  "whatsapp-mcp (finereli)": {
+   "shelf_ids": [
+    "T-0196"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "whatsapp-mcp (finereli)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "baileys": {
+   "shelf_ids": [
+    "T-0197"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "Baileys",
+   "exists": false,
+   "status": 404
+  },
+  "coop-anything": {
+   "shelf_ids": [
+    "T-0198"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "coop-anything",
+   "exists": false,
+   "status": 404
+  },
+  "rea reverse-engineering mcp": {
+   "shelf_ids": [
+    "T-0199"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "REA reverse-engineering MCP",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "cleanyourtv": {
+   "shelf_ids": [
+    "T-0200"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "cleanyourtv",
+   "exists": false,
+   "status": 404
+  },
+  "arxiv 2610-23599": {
+   "shelf_ids": [
+    "T-0201"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "arXiv 2610.23599",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "cubicle-crew": {
+   "shelf_ids": [
+    "T-0202"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "cubicle-crew",
+   "exists": false,
+   "status": 404
+  },
+  "huashu-motion": {
+   "shelf_ids": [
+    "T-0203"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "huashu-motion",
+   "exists": false,
+   "status": 404
+  },
+  "abcjs": {
+   "shelf_ids": [
+    "T-0205"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "abcjs",
+   "exists": false,
+   "status": 404
+  },
+  "arxiv 2610-23554": {
+   "shelf_ids": [
+    "T-0206"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "arXiv 2610.23554",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "real-esrgan": {
+   "shelf_ids": [
+    "T-0207"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "Real-ESRGAN",
+   "exists": false,
+   "status": 404
+  },
+  "imozuru": {
+   "shelf_ids": [
+    "T-0208"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "imozuru",
+   "exists": false,
+   "status": 404
+  },
+  "openalex api": {
+   "shelf_ids": [
+    "T-0209"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "OpenAlex API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "poppler (pdftotext)": {
+   "shelf_ids": [
+    "T-0210"
+   ],
+   "shelved": "2026-10-19",
+   "raw": "poppler (pdftotext)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "youtube-transcript-api": {
+   "shelf_ids": [
+    "T-0211"
+   ],
+   "shelved": "2026-10-20",
+   "raw": "youtube-transcript-api",
+   "exists": true,
+   "version": "1.2.4",
+   "latest_upload": "2026-01-29T09:09:17.088468Z",
+   "latest_version_uploaded": "1.2.4",
+   "summary": "This is a python API which allows you to get the transcripts/subtitles for a giv",
+   "n_releases": 35,
+   "days_since_release": 275,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "voidaccess": {
+   "shelf_ids": [
+    "T-0212"
+   ],
+   "shelved": "2026-10-20",
+   "raw": "VoidAccess",
+   "exists": true,
+   "version": "2.1.1",
+   "latest_upload": "2026-10-28T11:51:31.053608Z",
+   "latest_version_uploaded": "2.1.1",
+   "summary": "Dark web OSINT CLI \u2014 automated threat intelligence from query to report",
+   "n_releases": 29,
+   "days_since_release": 3,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "tor": {
+   "shelf_ids": [
+    "T-0213"
+   ],
+   "shelved": "2026-10-20",
+   "raw": "Tor",
+   "exists": true,
+   "version": "1.0.0",
+   "latest_upload": "2019-02-19T16:38:27.388735Z",
+   "latest_version_uploaded": "1.0.0",
+   "summary": "A Simple, Lightweight and Easy To Use, TOR Proxy Client Library For Python",
+   "n_releases": 1,
+   "days_since_release": 2811,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "tv-detox": {
+   "shelf_ids": [
+    "T-0214"
+   ],
+   "shelved": "2026-10-20",
+   "raw": "tv-detox",
+   "exists": false,
+   "status": 404
+  },
+  "dvsa anonymised mot tests and results": {
+   "shelf_ids": [
+    "T-0215"
+   ],
+   "shelved": "2026-10-20",
+   "raw": "DVSA anonymised MOT tests and results",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "harp": {
+   "shelf_ids": [
+    "T-0216"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "harp",
+   "exists": true,
+   "version": "0.5.0",
+   "latest_upload": "2026-08-25T23:01:39.199625Z",
+   "latest_version_uploaded": "0.5.0",
+   "summary": "Library for data acquisition and control of devices implementing the Harp protoc",
+   "n_releases": 2,
+   "days_since_release": 67,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "molecular-animation": {
+   "shelf_ids": [
+    "T-0217"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "Molecular_Animation",
+   "exists": false,
+   "status": 404
+  },
+  "omnara": {
+   "shelf_ids": [
+    "T-0218"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "omnara",
+   "exists": true,
+   "version": "1.7.4",
+   "latest_upload": "2026-05-22T20:49:39.545328Z",
+   "latest_version_uploaded": "1.7.4",
+   "summary": "Deprecated PyPI redirect for Omnara. Install the current CLI with curl -fsSL htt",
+   "n_releases": 81,
+   "days_since_release": 162,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "postgresql": {
+   "shelf_ids": [
+    "T-0219"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "PostgreSQL",
+   "exists": false,
+   "status": 404
+  },
+  "audio-studio-mcp": {
+   "shelf_ids": [
+    "T-0220"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "audio-studio-mcp",
+   "exists": false,
+   "status": 404
+  },
+  "stable audio 3": {
+   "shelf_ids": [
+    "T-0221"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "Stable Audio 3",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "dynaweave": {
+   "shelf_ids": [
+    "T-0222"
+   ],
+   "shelved": "2026-10-22",
+   "raw": "DynaWeave",
+   "exists": false,
+   "status": 404
+  },
+  "onkey": {
+   "shelf_ids": [
+    "T-0223"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "OnKey",
+   "exists": false,
+   "status": 404
+  },
+  "tv-home": {
+   "shelf_ids": [
+    "T-0224"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "tv-home",
+   "exists": false,
+   "status": 404
+  },
+  "402mcp": {
+   "shelf_ids": [
+    "T-0225"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "402mcp",
+   "exists": false,
+   "status": 404
+  },
+  "rossark-motion-skill": {
+   "shelf_ids": [
+    "T-0226"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "rossark-motion-skill",
+   "exists": false,
+   "status": 404
+  },
+  "opencv": {
+   "shelf_ids": [
+    "T-0227"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "OpenCV",
+   "exists": false,
+   "status": 404
+  },
+  "toolbench": {
+   "shelf_ids": [
+    "T-0228"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "ToolBench",
+   "exists": true,
+   "version": "0.12.0",
+   "latest_upload": "2026-10-23T01:25:56.953974Z",
+   "latest_version_uploaded": "0.12.0",
+   "summary": "A platform and CLI for building benchmarks for agentic tools and harnesses.",
+   "n_releases": 15,
+   "days_since_release": 8,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "octocrawl": {
+   "shelf_ids": [
+    "T-0229"
+   ],
+   "shelved": "2026-10-23",
+   "raw": "octocrawl",
+   "exists": true,
+   "version": "1.6.0",
+   "latest_upload": "2026-10-21T22:04:26.199339Z",
+   "latest_version_uploaded": "1.6.0",
+   "summary": "An asyncio-based website crawler",
+   "n_releases": 2,
+   "days_since_release": 10,
+   "released_last_30d": true,
+   "released_after_shelved": false
+  },
+  "video2x": {
+   "shelf_ids": [
+    "T-0230"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "Video2X",
+   "exists": false,
+   "status": 404
+  },
+  "vvv": {
+   "shelf_ids": [
+    "T-0231"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "vvv",
+   "exists": true,
+   "version": "0.4.3",
+   "latest_upload": "2012-10-14T14:05:04.921788Z",
+   "latest_version_uploaded": "0.4.3",
+   "summary": "A convenience utility for software source code validation and linting",
+   "n_releases": 13,
+   "days_since_release": 5130,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "perception test benchmark": {
+   "shelf_ids": [
+    "T-0232"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "Perception Test benchmark",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "ltx-video": {
+   "shelf_ids": [
+    "T-0233"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "LTX-Video",
+   "exists": true,
+   "version": "0.1.2",
+   "latest_upload": "2025-07-25T04:58:07.503346Z",
+   "latest_version_uploaded": "0.1.2",
+   "summary": "A package for LTX-Video model",
+   "n_releases": 1,
+   "days_since_release": 463,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "video-editor-skills": {
+   "shelf_ids": [
+    "T-0234"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "video-editor-skills",
+   "exists": false,
+   "status": 404
+  },
+  "wan 2-2": {
+   "shelf_ids": [
+    "T-0235"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "Wan 2.2",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "agent-usage-guard": {
+   "shelf_ids": [
+    "T-0236"
+   ],
+   "shelved": "2026-10-24",
+   "raw": "agent-usage-guard",
+   "exists": false,
+   "status": 404
+  },
+  "wan2gp": {
+   "shelf_ids": [
+    "T-0237"
+   ],
+   "shelved": "2026-10-25",
+   "raw": "Wan2GP",
+   "exists": false,
+   "status": 404
+  },
+  "overpass api": {
+   "shelf_ids": [
+    "T-0238"
+   ],
+   "shelved": "2026-10-25",
+   "raw": "Overpass API",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "deflock": {
+   "shelf_ids": [
+    "T-0239"
+   ],
+   "shelved": "2026-10-25",
+   "raw": "DeFlock",
+   "exists": false,
+   "status": 404
+  },
+  "hurston-1": {
+   "shelf_ids": [
+    "T-0240"
+   ],
+   "shelved": "2026-10-25",
+   "raw": "Hurston-1",
+   "exists": false,
+   "status": 404
+  },
+  "ex-ussr-kinship-research": {
+   "shelf_ids": [
+    "T-0241"
+   ],
+   "shelved": "2026-10-25",
+   "raw": "ex-ussr-kinship-research",
+   "exists": false,
+   "status": 404
+  },
+  "hob": {
+   "shelf_ids": [
+    "T-0242"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "Hob",
+   "exists": true,
+   "version": "0.3.3",
+   "latest_upload": "2011-01-25T17:39:42.475508Z",
+   "latest_version_uploaded": "0.3.3",
+   "summary": "A multi-language code generator for the Opera Scope Protocol. Code is generated ",
+   "n_releases": 7,
+   "days_since_release": 5758,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "searxng": {
+   "shelf_ids": [
+    "T-0243"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "SearXNG",
+   "exists": true,
+   "version": "0.1.2",
+   "latest_upload": "2026-09-09T10:34:16.494785Z",
+   "latest_version_uploaded": "0.1.2",
+   "summary": "MCP server providing SearXNG-based web search functionality",
+   "n_releases": 2,
+   "days_since_release": 52,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "tstack": {
+   "shelf_ids": [
+    "T-0244"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "tstack",
+   "exists": false,
+   "status": 404
+  },
+  "github cli": {
+   "shelf_ids": [
+    "T-0245"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "GitHub CLI",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "statemirror paper": {
+   "shelf_ids": [
+    "T-0246"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "StateMirror paper",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "federal reserve fomc calendars": {
+   "shelf_ids": [
+    "T-0247"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "Federal Reserve FOMC calendars",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "bls release calendar": {
+   "shelf_ids": [
+    "T-0248"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "BLS release calendar",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "sec edgar full-text and index": {
+   "shelf_ids": [
+    "T-0249"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "SEC EDGAR full-text and index",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "edgartools": {
+   "shelf_ids": [
+    "T-0250"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "edgartools",
+   "exists": true,
+   "version": "5.62.1",
+   "latest_upload": "2026-10-23T01:51:49.723292Z",
+   "latest_version_uploaded": "5.62.1",
+   "summary": "Python library to access and analyze SEC Edgar filings, XBRL financial statement",
+   "n_releases": 451,
+   "days_since_release": 8,
+   "released_last_30d": true,
+   "released_after_shelved": false
+  },
+  "digital-human-koubo": {
+   "shelf_ids": [
+    "T-0251"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "digital-human-koubo",
+   "exists": false,
+   "status": 404
+  },
+  "renoise mcp": {
+   "shelf_ids": [
+    "T-0252"
+   ],
+   "shelved": "2026-10-26",
+   "raw": "Renoise MCP",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "agent-purge": {
+   "shelf_ids": [
+    "T-0253"
+   ],
+   "shelved": "2026-10-27",
+   "raw": "agent-purge",
+   "exists": false,
+   "status": 404
+  },
+  "primevul": {
+   "shelf_ids": [
+    "T-0254"
+   ],
+   "shelved": "2026-10-27",
+   "raw": "PrimeVul",
+   "exists": false,
+   "status": 404
+  },
+  "bama skills": {
+   "shelf_ids": [
+    "T-0255"
+   ],
+   "shelved": "2026-10-28",
+   "raw": "bama skills",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "swift toolchain (swift-org)": {
+   "shelf_ids": [
+    "T-0256"
+   ],
+   "shelved": "2026-10-28",
+   "raw": "Swift toolchain (swift.org)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "dvsa mot testing data": {
+   "shelf_ids": [
+    "T-0257"
+   ],
+   "shelved": "2026-10-28",
+   "raw": "DVSA MOT testing data",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "whitespark gbp guide": {
+   "shelf_ids": [
+    "T-0258"
+   ],
+   "shelved": "2026-10-28",
+   "raw": "Whitespark GBP guide",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "twilio programmable voice": {
+   "shelf_ids": [
+    "T-0259"
+   ],
+   "shelved": "2026-10-28",
+   "raw": "Twilio Programmable Voice",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "mcd-mcp-kit": {
+   "shelf_ids": [
+    "T-0260"
+   ],
+   "shelved": "2026-10-28",
+   "raw": "mcd-mcp-kit",
+   "exists": false,
+   "status": 404
+  },
+  "pinokio": {
+   "shelf_ids": [
+    "T-0261"
+   ],
+   "shelved": "2026-10-29",
+   "raw": "Pinokio",
+   "exists": false,
+   "status": 404
+  },
+  "opentelemetry collector": {
+   "shelf_ids": [
+    "T-0262"
+   ],
+   "shelved": "2026-10-29",
+   "raw": "OpenTelemetry Collector",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "bla-agents": {
+   "shelf_ids": [
+    "T-0263"
+   ],
+   "shelved": "2026-10-29",
+   "raw": "bla-agents",
+   "exists": false,
+   "status": 404
+  },
+  "concordat": {
+   "shelf_ids": [
+    "T-0264"
+   ],
+   "shelved": "2026-10-29",
+   "raw": "Concordat",
+   "exists": true,
+   "version": "0.0.4",
+   "latest_upload": "2026-10-30T15:37:57.549953Z",
+   "latest_version_uploaded": "0.0.4",
+   "summary": "Typed sessions for AI agents: protocols the runtime enforces on the model.",
+   "n_releases": 4,
+   "days_since_release": 1,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "floorplan": {
+   "shelf_ids": [
+    "T-0265"
+   ],
+   "shelved": "2026-10-30",
+   "raw": "floorplan",
+   "exists": true,
+   "version": "0.1.0",
+   "latest_upload": "2026-08-28T21:06:17.479433Z",
+   "latest_version_uploaded": "0.1.0",
+   "summary": "Lightweight Python utility for architectural floor area modeling, usable area ca",
+   "n_releases": 1,
+   "days_since_release": 64,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "sqlite-vec": {
+   "shelf_ids": [
+    "T-0266"
+   ],
+   "shelved": "2026-10-30",
+   "raw": "sqlite-vec",
+   "exists": true,
+   "version": "0.1.9",
+   "latest_upload": "2026-05-18T06:54:36.876286Z",
+   "latest_version_uploaded": "0.1.10a4",
+   "summary": "",
+   "n_releases": 69,
+   "days_since_release": 166,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "pump-fun-sdk": {
+   "shelf_ids": [
+    "T-0267"
+   ],
+   "shelved": "2026-10-30",
+   "raw": "pump-fun-sdk",
+   "exists": false,
+   "status": 404
+  },
+  "inferd paper": {
+   "shelf_ids": [
+    "T-0268"
+   ],
+   "shelved": "2026-10-30",
+   "raw": "InferD paper",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "crt-sh": {
+   "shelf_ids": [
+    "T-0269"
+   ],
+   "shelved": "2026-10-30",
+   "raw": "crt.sh",
+   "exists": false,
+   "status": 404
+  },
+  "hypergrad": {
+   "shelf_ids": [
+    "T-0270"
+   ],
+   "shelved": "2026-10-30",
+   "raw": "HyperGrad",
+   "exists": true,
+   "version": "0.0.1",
+   "latest_upload": "2023-02-01T13:57:05.371927Z",
+   "latest_version_uploaded": "0.0.1",
+   "summary": "Simple and extensible hypergradient for PyTorch",
+   "n_releases": 1,
+   "days_since_release": 1368,
+   "released_last_30d": false,
+   "released_after_shelved": false
+  },
+  "fca warning list": {
+   "shelf_ids": [
+    "T-0271"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "FCA warning list",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "pixelfx": {
+   "shelf_ids": [
+    "T-0272"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "pixelfx",
+   "exists": false,
+   "status": 404
+  },
+  "sprite fusion pixel art vfx": {
+   "shelf_ids": [
+    "T-0273"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "Sprite Fusion pixel art VFX",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "paper abstract": {
+   "shelf_ids": [
+    "T-0274"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "Paper abstract",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "agenticds": {
+   "shelf_ids": [
+    "T-0275"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "AgenticDS",
+   "exists": false,
+   "status": 404
+  },
+  "lasm": {
+   "shelf_ids": [
+    "T-0276"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "Lasm",
+   "exists": false,
+   "status": 404
+  },
+  "elan (lean toolchain manager)": {
+   "shelf_ids": [
+    "T-0277"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "elan (Lean toolchain manager)",
+   "exists": null,
+   "error": "InvalidURL"
+  },
+  "cheap-agent": {
+   "shelf_ids": [
+    "T-0278"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "cheap-agent",
+   "exists": false,
+   "status": 404
+  },
+  "openrouter": {
+   "shelf_ids": [
+    "T-0279"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "OpenRouter",
+   "exists": true,
+   "version": "1.3.106",
+   "latest_upload": "2026-10-31T04:53:01.970370Z",
+   "latest_version_uploaded": "1.3.106",
+   "summary": "Official Python Client SDK for OpenRouter.",
+   "n_releases": 400,
+   "days_since_release": 0,
+   "released_last_30d": true,
+   "released_after_shelved": true
+  },
+  "sketch stadium": {
+   "shelf_ids": [
+    "T-0280"
+   ],
+   "shelved": "2026-10-31",
+   "raw": "Sketch Stadium",
+   "exists": null,
+   "error": "InvalidURL"
+  }
+ }
+}
