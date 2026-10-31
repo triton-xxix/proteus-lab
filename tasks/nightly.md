@@ -126,6 +126,11 @@ The intake. Scripts pull and shortlist; one Sonnet child judges; a script ingest
 2. Read `/Users/triton/PROTEUS/state/harvest/YYYY-MM-DD/child-prompt.md` and spawn exactly one child with the **Agent** tool: `subagent_type` `general-purpose`, `model` `sonnet`, no `isolation`, and that file's text as the whole prompt. It writes `/Users/triton/PROTEUS/state/agents/YYYY-MM-DD/harvest.json` and nothing else. Wait for it. It counts as one of the four spawns.
 3. `python3 /Users/triton/PROTEUS/bin/harvest.py ingest`
    (appends every judged item to `field-notes/harvest.jsonl`, renders `HARVEST.md`, queues at most 4 testable items with `probe.py add --source harvest`, appends one line to SEEN.md and one to the run log, commits and pushes those files; under HALT it writes and does not commit). If the child wrote no file or bad JSON, ingest says so; note it and move on, never respawn with the same brief.
+3b. `python3 /Users/triton/PROTEUS/experiments/2026-10-31-P-0270/factcheck2.py YYYY-MM-DD --runlog`
+   (P-0270, 31 Oct: checks every name and number in the child's kept claims against the brief section it
+   read and appends one line to the run log with the support rate and the miss list. Body-less vault
+   stubs are left out of the rate. Read the misses: on 24 to 30 Oct the only real errors were attribution,
+   a true name joined to the wrong claim, and the token count cannot see those. No verdict, no commit.)
 4. `bash /Users/triton/PROTEUS/bin/mirror-vault.sh` (carries HARVEST.md to the vault folder).
 
 Then the probe loop can pick up tonight's harvest probes.
