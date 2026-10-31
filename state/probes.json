@@ -6638,22 +6638,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-10-31",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-10-31T12:34:25+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-10-31T12:36:07+0000",
+   "note": "Measured: on the same 7 nights the fixed tokeniser scores 167 of 178 checkable tokens on the 31 items with a body (93.8 pct against about 86 called: right direction, the old identifier rule was firing on the full stop of every sentence-final word, the main leak I had not seen); 21 of 52 items are body-less vault stubs, now reported separately; misses to read fell from 160 to 11 and both attribution errors from P-0207 (DVSA, OpenStreetMap) are among the 11. Wired: tasks/nightly.md step 5b gained line 3b running factcheck2.py --runlog after ingest; the flag tested on 30 Oct and appended one line to that run log. Next: promote (it is in the nightly from tonight; read the miss line each morning).",
+   "artefacts": [
+    "experiments/2026-10-31-P-0270"
+   ],
+   "minutes": 1,
+   "calls": 15,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "after the three tokeniser fixes the raw support rate on the same 7 nights rises from 71.3 to about 86 pct on items with a body, body-less vault stubs reported separately",
-    "at": "2026-10-31T12:34:34+0000"
+    "at": "2026-10-31T12:34:34+0000",
+    "hit": true
    }
   }
  ]

@@ -1,0 +1,630 @@
+{
+ "summary": {
+  "nights": 7,
+  "kept": 52,
+  "stubs": 21,
+  "facts": 178,
+  "supported": 167,
+  "support_rate": 0.938
+ },
+ "nights": [
+  {
+   "date": "2026-10-24",
+   "judged": 14,
+   "kept": 8,
+   "stubs": 3,
+   "facts": 23,
+   "supported": 22,
+   "support_rate": 0.957,
+   "items": [
+    {
+     "n": 3,
+     "key": "gh:actionow-ai/vvv",
+     "facts": 5,
+     "supported": 5,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 3891
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.31471",
+     "facts": 5,
+     "supported": 5,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 2014
+    },
+    {
+     "n": 8,
+     "key": "gh:appariciojunior/video-editor-skills",
+     "facts": 8,
+     "supported": 7,
+     "unsupported": [
+      "Plain-text"
+     ],
+     "stub": false,
+     "section_chars": 3923
+    },
+    {
+     "n": 9,
+     "key": "arxiv:2610.31461",
+     "facts": 0,
+     "supported": 0,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1802
+    },
+    {
+     "n": 12,
+     "key": "hn:50198936",
+     "facts": 5,
+     "supported": 5,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1160
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-24:video2x-free-local-upscaler",
+     "facts": 8,
+     "supported": 1,
+     "unsupported": [
+      "Anime4K",
+      "CPU",
+      "GPU",
+      "RIFE",
+      "Real-CUGAN",
+      "Real-ESRGAN",
+      "Vulkan-capable"
+     ],
+     "stub": true,
+     "section_chars": 1398
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-24:ltx-desktop-local-video-generation",
+     "facts": 6,
+     "supported": 3,
+     "unsupported": [
+      "Apple",
+      "GPU",
+      "Lightricks"
+     ],
+     "stub": true,
+     "section_chars": 1432
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-24:viggle-motion-transfer",
+     "facts": 6,
+     "supported": 6,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1410
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "judged": 14,
+   "kept": 8,
+   "stubs": 3,
+   "facts": 23,
+   "supported": 21,
+   "support_rate": 0.913,
+   "items": [
+    {
+     "n": 2,
+     "key": "hn:50222574",
+     "facts": 7,
+     "supported": 5,
+     "unsupported": [
+      "OSM",
+      "OpenStreetMap-style"
+     ],
+     "stub": false,
+     "section_chars": 2909
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.31376",
+     "facts": 1,
+     "supported": 1,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1710
+    },
+    {
+     "n": 7,
+     "key": "hn:50227330",
+     "facts": 12,
+     "supported": 12,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 2011
+    },
+    {
+     "n": 8,
+     "key": "gh:denissergeevitch/ex-ussr-kinship-research",
+     "facts": 2,
+     "supported": 2,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 4111
+    },
+    {
+     "n": 10,
+     "key": "yt:yUD073LrqVc",
+     "facts": 1,
+     "supported": 1,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1319
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-25:local-open-weights-video-on-a-rented-nvidia-gpu",
+     "facts": 14,
+     "supported": 8,
+     "unsupported": [
+      "2.x",
+      "CUDA",
+      "LTX-Video",
+      "Lightricks",
+      "RunPod",
+      "Vast.ai"
+     ],
+     "stub": true,
+     "section_chars": 1592
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-05:form-triggered-personalised-ai-video",
+     "facts": 0,
+     "supported": 0,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1291
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-25:bubble-map-wallet-clustering-as-a-rug-detector",
+     "facts": 1,
+     "supported": 1,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1670
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "judged": 12,
+   "kept": 7,
+   "stubs": 3,
+   "facts": 28,
+   "supported": 26,
+   "support_rate": 0.929,
+   "items": [
+    {
+     "n": 2,
+     "key": "hn:50246238",
+     "facts": 9,
+     "supported": 7,
+     "unsupported": [
+      "GPU",
+      "RAM"
+     ],
+     "stub": false,
+     "section_chars": 2319
+    },
+    {
+     "n": 3,
+     "key": "gh:t3dotgg/tstack",
+     "facts": 6,
+     "supported": 6,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 2582
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.32648",
+     "facts": 8,
+     "supported": 8,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1958
+    },
+    {
+     "n": 12,
+     "key": "gh:andyhuo520/digital-human-koubo",
+     "facts": 5,
+     "supported": 5,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 3990
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-18:course-seller-economy-around-ai-creator-models",
+     "facts": 3,
+     "supported": 2,
+     "unsupported": [
+      "AI-generated"
+     ],
+     "stub": true,
+     "section_chars": 1344
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-16:dated-us-release-calendar-from-primary-sources-2023-to-2026",
+     "facts": 6,
+     "supported": 4,
+     "unsupported": [
+      "Federal",
+      "Reserve"
+     ],
+     "stub": true,
+     "section_chars": 1437
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-16:insider-cluster-buys-carry-a-small-relative-edge-over-random",
+     "facts": 6,
+     "supported": 6,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1597
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "judged": 9,
+   "kept": 5,
+   "stubs": 3,
+   "facts": 9,
+   "supported": 8,
+   "support_rate": 0.889,
+   "items": [
+    {
+     "n": 3,
+     "key": "gh:zichuanlan/agent-purge",
+     "facts": 5,
+     "supported": 4,
+     "unsupported": [
+      "README"
+     ],
+     "stub": false,
+     "section_chars": 4135
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.35829",
+     "facts": 4,
+     "supported": 4,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 2223
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-15:comment-keyword-indicator-funnel",
+     "facts": 2,
+     "supported": 1,
+     "unsupported": [
+      "DM"
+     ],
+     "stub": true,
+     "section_chars": 1391
+    },
+    {
+     "n": 5,
+     "key": "vault:2026-10-14:win-rate-sold-without-entry-price",
+     "facts": 3,
+     "supported": 3,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1441
+    },
+    {
+     "n": 8,
+     "key": "vault:2026-10-14:business-snapshot-prompt-as-setup",
+     "facts": 1,
+     "supported": 1,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1793
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "judged": 12,
+   "kept": 8,
+   "stubs": 3,
+   "facts": 32,
+   "supported": 31,
+   "support_rate": 0.969,
+   "items": [
+    {
+     "n": 3,
+     "key": "gh:daveebbelaar/bama",
+     "facts": 6,
+     "supported": 6,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 4002
+    },
+    {
+     "n": 4,
+     "key": "arxiv:2610.37649",
+     "facts": 7,
+     "supported": 7,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1522
+    },
+    {
+     "n": 5,
+     "key": "yt:X3f81opiQZg",
+     "facts": 5,
+     "supported": 4,
+     "unsupported": [
+      "DVSA"
+     ],
+     "stub": false,
+     "section_chars": 3804
+    },
+    {
+     "n": 8,
+     "key": "arxiv:2610.37648",
+     "facts": 3,
+     "supported": 3,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1507
+    },
+    {
+     "n": 11,
+     "key": "gh:crfxn5c/mcd-mcp-kit",
+     "facts": 11,
+     "supported": 11,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 3839
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-13:gbp-platform-changes",
+     "facts": 7,
+     "supported": 7,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1307
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-13:free-gbp-guides",
+     "facts": 5,
+     "supported": 5,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1559
+    },
+    {
+     "n": 10,
+     "key": "vault:2026-10-12:speed-to-lead-bridge-call-ring-the-owner-first-then-connect-",
+     "facts": 1,
+     "supported": 0,
+     "unsupported": [
+      "API"
+     ],
+     "stub": true,
+     "section_chars": 1622
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "judged": 14,
+   "kept": 7,
+   "stubs": 3,
+   "facts": 23,
+   "supported": 22,
+   "support_rate": 0.957,
+   "items": [
+    {
+     "n": 2,
+     "key": "hn:50284255",
+     "facts": 9,
+     "supported": 8,
+     "unsupported": [
+      "OpenTelemetry"
+     ],
+     "stub": false,
+     "section_chars": 1071
+    },
+    {
+     "n": 3,
+     "key": "gh:qybaihe/bla",
+     "facts": 6,
+     "supported": 6,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 4063
+    },
+    {
+     "n": 9,
+     "key": "arxiv:2610.37461",
+     "facts": 5,
+     "supported": 5,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1791
+    },
+    {
+     "n": 12,
+     "key": "hn:50286306",
+     "facts": 3,
+     "supported": 3,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 1184
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-29:pinokio-one-click-installer",
+     "facts": 9,
+     "supported": 6,
+     "unsupported": [
+      "CUDA",
+      "JSON/JS",
+      "Python"
+     ],
+     "stub": true,
+     "section_chars": 1512
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-29:wan2gp-local-video-ltx-2-distilled-wan",
+     "facts": 10,
+     "supported": 5,
+     "unsupported": [
+      "APIs",
+      "CUDA",
+      "Gradio",
+      "PyTorch",
+      "VRAM"
+     ],
+     "stub": true,
+     "section_chars": 1504
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-09:provider-plugins-that-ship-their-own-catalogue",
+     "facts": 7,
+     "supported": 6,
+     "unsupported": [
+      "API"
+     ],
+     "stub": true,
+     "section_chars": 1695
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "judged": 14,
+   "kept": 9,
+   "stubs": 3,
+   "facts": 40,
+   "supported": 37,
+   "support_rate": 0.925,
+   "items": [
+    {
+     "n": 2,
+     "key": "hn:50300683",
+     "facts": 6,
+     "supported": 6,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 918
+    },
+    {
+     "n": 3,
+     "key": "gh:haydenschmitty/floorplan",
+     "facts": 7,
+     "supported": 7,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 4028
+    },
+    {
+     "n": 5,
+     "key": "yt:8C4bh59FtsI",
+     "facts": 4,
+     "supported": 4,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 3840
+    },
+    {
+     "n": 8,
+     "key": "gh:nirholas/pump-fun-sdk",
+     "facts": 9,
+     "supported": 8,
+     "unsupported": [
+      "RPC"
+     ],
+     "stub": false,
+     "section_chars": 4019
+    },
+    {
+     "n": 9,
+     "key": "arxiv:2610.39807",
+     "facts": 5,
+     "supported": 3,
+     "unsupported": [
+      "LLM",
+      "LLMs"
+     ],
+     "stub": false,
+     "section_chars": 1560
+    },
+    {
+     "n": 13,
+     "key": "gh:tapoooooty/hypergrad",
+     "facts": 9,
+     "supported": 9,
+     "unsupported": [],
+     "stub": false,
+     "section_chars": 4132
+    }
+   ],
+   "stub_items": [
+    {
+     "n": 1,
+     "key": "vault:2026-10-08:why-a-grid-bot-s-daily-result-is-always-green-and-what-the-o",
+     "facts": 2,
+     "supported": 2,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1881
+    },
+    {
+     "n": 6,
+     "key": "vault:2026-10-08:a-ranked-list-of-trading-concepts-with-unsourced-percentages",
+     "facts": 1,
+     "supported": 1,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1802
+    },
+    {
+     "n": 11,
+     "key": "vault:2026-10-08:the-free-pay-only-shipping-closure-sale-dropship-pattern-and",
+     "facts": 1,
+     "supported": 1,
+     "unsupported": [],
+     "stub": true,
+     "section_chars": 1709
+    }
+   ]
+  }
+ ]
+}
