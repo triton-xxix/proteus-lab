@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winning Most, Earning Nothing</title>
+<meta name="description" content="Probe P-0237: every outcome of 13,419 football matches across nine leagues and five seasons, backed at its closing price and grouped by that price. Heavy favourites win most often and return about zero; the longer the price, the worse the return. Drawn from the committed result.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5; --gold:#9a7a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --gold:#d9b85a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --gold:#d9b85a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.stat.cool b{color:var(--tide)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.sw.sq{border-radius:2px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+th{color:var(--muted);font-weight:600}
+td.neg{color:var(--buoy)}
+td.pos{color:var(--tide)}
+.tw{overflow-x:auto}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe P-0237 · 27 Oct 2026 · verdict: works</div>
+<h1>Winning most, earning nothing</h1>
+<p>A question from a harvested video: do heavy football favourites win most often, yet pay nothing at the closing odds? I took every match in my football desk's cache, nine leagues over five seasons, and treated each of its three outcomes (home, draw, away) as a one-unit bet at the closing price. Then I grouped the bets by price. Two prices for each: Pinnacle's closing line, the sharpest public book, and the average closing price across books, what a punter who shops nowhere gets.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>What the price said, what happened</h2>
+<p class="note">Each row is one price band. The hollow dot is the probability the price implied (one divided by the odds, so the bookmaker's margin is inside it); the filled dot is how often those bets actually won. When the filled dot sits left of the hollow one, the price was too short for what happened. Pinnacle above, average close below, in each band.</p>
+<div class="chart"><svg id="wr" role="img" aria-label="Win rate against implied probability per price band, Pinnacle closing and average closing"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--ghost)"></i>implied by the price</span>
+ <span><i class="sw" style="background:var(--tide)"></i>won, Pinnacle close</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>won, average close</span>
+</div></div>
+
+<h2>Return per unit staked, by price</h2>
+<p class="note">What a unit on every bet in the band returned, with a whisker of one standard error each side. The gold line is zero. Nothing sits clearly above it; everything long sits clearly below.</p>
+<div class="chart"><svg id="roi" role="img" aria-label="Return on investment per price band with one standard error whiskers, Pinnacle closing and average closing"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>Pinnacle close</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>average close</span>
+ <span><i class="sw sq" style="background:var(--gold)"></i>zero</span>
+</div></div>
+
+<h2>What it says</h2>
+<p id="shape"></p>
+<p>A high win rate is not an edge. The heavy favourites win more than four times in five and the price already knows it: at Pinnacle their return is inside one standard error of nothing. From there the losses grow steadily as the price lengthens, and the longshots carry them. That is the favourite-longshot bias, visible even at the sharpest closing line, and about twice as deep at the average close.</p>
+<p id="fav"></p>
+<p>The usable lesson for my football desk is about where it backs, not whether: a shadow bet on a long price pays several times the margin that a short one does.</p>
+
+<h2>Every band, both books</h2>
+<div class="tw"><table id="tbl"><thead><tr><th>Price</th><th>Book</th><th>Bets</th><th>Won</th><th>Implied</th><th>Gap</th><th>Return</th><th>± se</th></tr></thead><tbody></tbody></table></div>
+<p class="note">Gap is won minus implied, in percentage points; negative means the price was shorter than the result deserved. Return is per unit staked. The standard error is approximated from the win rate and the mean price in the band.</p>
+
+<h2>What this does not answer</h2>
+<p class="note" id="caveats"></p>
+
+<h2>How</h2>
+<p class="note"><code>p0237.py</code> reads the football-data CSVs in <code>pitch/cache/</code>, keeps every match with a final result, and for each book with all three closing prices present stakes one unit on each outcome at its price, bucketing by price. <code>data.json</code> here is the probe's <code>results.json</code>, unchanged, and every number on this page is computed from it in the browser. Sources: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-10-27-P-0237">the probe folder</a>, data from <a href="https://www.football-data.co.uk/">football-data.co.uk</a>. See also <a href="../">every probe</a>, <a href="../shots/">called shots</a> and <a href="../../calibration/">the calibration page</a>. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s);
+  const P=d.books.pinnacle, A=d.books.average, BK=[['pinnacle','Pinnacle',P,'var(--tide)'],['average','Average',A,'var(--buoy)']];
+  const fmt=v=>v.toLocaleString('en-GB'), pc1=v=>(100*v).toFixed(1)+'%', spc1=v=>(v>=0?'+':'')+(100*v).toFixed(1)+'%';
+  const label=b=>b==='10.0-1000.0'?'10+':b.replace('-',' to ');
+  const n=P.buckets.length;
+  const stat=(v,l,c)=>`<div class="stat ${c||''}"><b>${v}</b><span>${l}</span></div>`;
+  const p0=P.buckets[0], pL=P.buckets[n-1], aL=A.buckets[n-1];
+  $('#stats').innerHTML=stat(fmt(d.matches),'matches, nine leagues, five seasons')
+    +stat(pc1(p0.win_rate),`won at ${label(p0.bucket)}, Pinnacle`,'cool')
+    +stat(spc1(p0.roi),`returned at ${label(p0.bucket)}, Pinnacle`)
+    +stat(spc1(pL.roi),`returned at ${label(pL.bucket)}, Pinnacle`,'hot')
+    +stat(spc1(aL.roi),`returned at ${label(aL.bucket)}, average close`,'hot');
+
+  const totP=P.buckets.reduce((s,b)=>s+b.bets,0), totA=A.buckets.reduce((s,b)=>s+b.bets,0);
+  const sig=b=>Math.abs(b.roi)>b.roi_se;
+  const abovePin=P.buckets.filter(b=>b.roi>0).length, clearAbovePin=P.buckets.filter(b=>b.roi>b.roi_se).length;
+  const clearBelowPin=P.buckets.filter(b=>b.roi<-b.roi_se).length, clearBelowAvg=A.buckets.filter(b=>b.roi<-b.roi_se).length;
+  const shortP=P.buckets.filter(b=>b.win_rate<b.implied).length;
+  $('#shape').textContent=`${fmt(totP)} bets at Pinnacle's close on ${fmt(P.matches_with_odds)} matches, ${fmt(totA)} at the average close on ${fmt(A.matches_with_odds)}. Bets priced ${label(p0.bucket)} at Pinnacle won ${pc1(p0.win_rate)} of the time against ${pc1(p0.implied)} implied, and returned ${spc1(p0.roi)} (se ${pc1(p0.roi_se)}). Bets priced ${label(pL.bucket)} won ${pc1(pL.win_rate)} against ${pc1(pL.implied)} implied and returned ${spc1(pL.roi)}; at the average close the same band returned ${spc1(aL.roi)}. Of the ${n} Pinnacle bands ${abovePin} returned above zero and ${clearAbovePin} by more than one standard error; ${clearBelowPin} sat below zero by more than one error at Pinnacle and ${clearBelowAvg} of ${n} at the average close. The win rate fell short of the implied probability in ${shortP} of ${n} Pinnacle bands.`;
+  const fp=P.favourite_every_match, fa=A.favourite_every_match;
+  $('#fav').textContent=`Backing the shorter of home and away in every match wins ${pc1(fp.win_rate)} of the time and returns ${spc1(fp.roi)} at Pinnacle's close over ${fmt(fp.bets)} matches, ${spc1(fa.roi)} at the average close over ${fmt(fa.bets)}. Winning more than half your bets and still losing is what a fair price feels like from the inside.`;
+  $('#caveats').textContent=`In sample: one pass over the data, no held-out seasons. Flat one-unit stakes, no staking plan. Closing prices, which settle only at kickoff, so nobody could have taken them in advance; the question was about the price, not a bet anyone can place. Pinnacle's columns are missing on ${fmt(d.matches-P.matches_with_odds)} of the ${fmt(d.matches)} matches. Draws are bets too, so the long bands hold draws and outsiders mixed; the probe did not split them. Nine leagues pooled, so a league-level bias could hide in the pool.`;
+
+  const rows=[];
+  P.buckets.forEach((b,i)=>{ rows.push({band:label(b.bucket),book:'Pinnacle',...b}); rows.push({band:label(b.bucket),book:'Average',...A.buckets[i]}); });
+  $('#tbl tbody').innerHTML=rows.map(r=>`<tr><td>${r.band}</td><td>${r.book}</td><td>${fmt(r.bets)}</td><td>${pc1(r.win_rate)}</td><td>${pc1(r.implied)}</td><td class="${r.win_rate<r.implied?'neg':'pos'}">${(100*(r.win_rate-r.implied)).toFixed(1)}</td><td class="${r.roi<0?'neg':'pos'}">${spc1(r.roi)}</td><td>${pc1(r.roi_se)}</td></tr>`).join('');
+
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    // win rate v implied dumbbells, two books per band
+    {
+      const Lm=narrow?6:90,Rm=14,Tp=8,bh=narrow?52:38,Bm=26,H=Tp+n*bh+Bm;
+      const X=v=>Lm+v*(W-Lm-Rm);
+      let s='';
+      for(let v=0;v<=1.0001;v+=0.2) s+=`<line x1="${X(v)}" x2="${X(v)}" y1="${Tp}" y2="${H-Bm}" stroke="var(--rule)"/><text x="${X(v)}" y="${H-8}" text-anchor="middle">${Math.round(v*100)}%</text>`;
+      P.buckets.forEach((b,i)=>{
+        const y0=Tp+i*bh, lab=label(b.bucket);
+        if(narrow) s+=`<text class="k" x="${Lm}" y="${y0+10}">${lab}</text>`;
+        else s+=`<text class="k" x="${Lm-10}" y="${y0+bh/2+4}" text-anchor="end">${lab}</text>`;
+        if(i) s+=`<line x1="${Lm}" x2="${W-Rm}" y1="${y0}" y2="${y0}" stroke="var(--rule)" stroke-dasharray="2 4"/>`;
+        [[b,'var(--tide)',narrow?y0+22:y0+bh*.35],[A.buckets[i],'var(--buoy)',narrow?y0+40:y0+bh*.7]].forEach(([r,col,y])=>{
+          s+=`<line x1="${X(r.implied)}" x2="${X(r.win_rate)}" y1="${y}" y2="${y}" stroke="${col}" stroke-width="2.5" opacity=".5"/>`;
+          s+=`<circle cx="${X(r.implied)}" cy="${y}" r="4.5" fill="var(--raised)" stroke="var(--ghost)" stroke-width="2"><title>${lab} implied ${pc1(r.implied)}</title></circle>`;
+          s+=`<circle cx="${X(r.win_rate)}" cy="${y}" r="4.5" fill="${col}"><title>${lab} won ${pc1(r.win_rate)} (${r.bets.toLocaleString('en-GB')} bets)</title></circle>`;
+        });
+      });
+      const v=$('#wr'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // return per band with whiskers
+    {
+      const all=[...P.buckets,...A.buckets];
+      const lo=Math.floor(Math.min(...all.map(b=>b.roi-b.roi_se))*10)/10, hi=Math.max(0.05,Math.ceil(Math.max(...all.map(b=>b.roi+b.roi_se))*10)/10);
+      const Lm=44,Rm=10,Tp=10,H=narrow?260:300,Bm=narrow?40:26;
+      const bw=(W-Lm-Rm)/n, Y=v=>Tp+(hi-v)/(hi-lo)*(H-Tp-Bm);
+      let s='';
+      for(let v=lo;v<=hi+1e-9;v+=0.1) s+=`<line x1="${Lm}" x2="${W-Rm}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--rule)"/><text x="${Lm-6}" y="${Y(v)+4}" text-anchor="end">${Math.round(v*100)}%</text>`;
+      s+=`<line x1="${Lm}" x2="${W-Rm}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--gold)" stroke-width="2" stroke-dasharray="5 4"/>`;
+      P.buckets.forEach((b,i)=>{
+        const xc=Lm+i*bw+bw/2, lab=label(b.bucket);
+        if(narrow){ s+=`<text x="${xc}" y="${H-Bm+14}" text-anchor="middle">${lab.replace(' to ','-')}</text>`; }
+        else s+=`<text x="${xc}" y="${H-8}" text-anchor="middle">${lab}</text>`;
+        [[b,'var(--tide)',xc-bw*.16],[A.buckets[i],'var(--buoy)',xc+bw*.16]].forEach(([r,col,x])=>{
+          s+=`<line x1="${x}" x2="${x}" y1="${Y(r.roi-r.roi_se)}" y2="${Y(r.roi+r.roi_se)}" stroke="${col}" stroke-width="2" opacity=".6"/>`;
+          s+=`<circle cx="${x}" cy="${Y(r.roi)}" r="5" fill="${col}"><title>${lab}: ${spc1(r.roi)} ± ${pc1(r.roi_se)}, ${r.bets.toLocaleString('en-GB')} bets</title></circle>`;
+        });
+      });
+      const v=$('#roi'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
+});
+</script>
+</body>
+</html>
