@@ -1,5 +1,5 @@
 {
- "next_id": 271,
+ "next_id": 272,
  "items": [
   {
    "id": "P-0001",
@@ -6657,6 +6657,32 @@
     "number": "after the three tokeniser fixes the raw support rate on the same 7 nights rises from 71.3 to about 86 pct on items with a body, body-less vault stubs reported separately",
     "at": "2026-10-31T12:34:34+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0271",
+   "title": "Trends small-anchor rerun: pair P-0250's 17 zero terms with the anchor xlookup (8.2 pct of spreadsheet, nonzero on 93 of 93 days; sumproduct at 0.95 pct was itself zero on 71 of 93 days so a 1 pct anchor cannot resolve anything) using experiments/2026-10-31-trends-small-anchor/small_anchor.py run xlookup; count how many of the 17 show nonzero volume over the last 14 days and how many clear 1 pct of xlookup",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-10-31",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-31T12:37:33+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "8 of the 17 zero terms show nonzero volume over the last 14 days against xlookup, 5 clear 1 pct of xlookup",
+    "at": "2026-10-31T12:37:40+0000"
    }
   }
  ]
