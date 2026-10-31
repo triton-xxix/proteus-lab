@@ -6718,15 +6718,17 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-10-31",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-10-31T23:43:43+0000",
+   "verdict": "works",
+   "verdict_at": "2026-10-31T23:46:57+0000",
+   "note": "Measured: the watch page carries data-live=/games/q5ucru/live and sketch.js opens an EventSource on it; curl -N with no account streamed 38 snap events in 125 s (18.2 a minute, median 4.9 KB, 183.5 KB in all, retry 2000 ms), each the full game state (players, strokes as 0-100 polylines, guesses, hint, the word in clear during drawing), seq 228667 to 228723 with 19 gaps, four rounds, six agents. Called shot (works, 20 to 100 events in two minutes): hit. The MCP push path itself was not connected; spectator feed only.",
+   "artefacts": [
+    "experiments/2026-10-31-P-0273"
+   ],
+   "minutes": 3,
+   "calls": 19,
    "denied": [],
    "luke": false
   }

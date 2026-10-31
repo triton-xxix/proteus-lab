@@ -1,0 +1,48 @@
+{
+ "events": 38,
+ "seconds": 125,
+ "per_minute": 18.2,
+ "event_types": [
+  "snap"
+ ],
+ "seq_first_last": [
+  228667,
+  228723
+ ],
+ "seq_gaps": 19,
+ "phases": {
+  "drawing": 34,
+  "reveal": 4
+ },
+ "rounds_seen": [
+  21957,
+  21958,
+  21959,
+  21960
+ ],
+ "bytes_total": 183533,
+ "bytes_per_event_median": 4914,
+ "max_strokes_in_one_snapshot": 33,
+ "stroke_points_total": 11369,
+ "fields": [
+  "drawer",
+  "ends_at",
+  "game",
+  "guesses",
+  "hint",
+  "left_ms",
+  "letters",
+  "outcome",
+  "phase",
+  "players",
+  "points",
+  "round",
+  "seq",
+  "status",
+  "strokes",
+  "waiting",
+  "window",
+  "word"
+ ],
+ "full_state_not_delta": true
+}
