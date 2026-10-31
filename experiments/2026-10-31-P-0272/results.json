@@ -1,0 +1,120 @@
+{
+ "count_src_fx": 244,
+ "readme_claim": 244,
+ "categories": {
+  "arcane": 12,
+  "critters": 12,
+  "explosions": 12,
+  "fire": 12,
+  "holy": 10,
+  "ice": 10,
+  "impacts": 11,
+  "lightning": 11,
+  "melee": 12,
+  "moves": 12,
+  "nature": 13,
+  "pickups": 11,
+  "projectiles": 13,
+  "scifi": 12,
+  "shadow": 12,
+  "spawn": 10,
+  "status": 13,
+  "transitions": 10,
+  "ui": 12,
+  "water": 12,
+  "weather": 12
+ },
+ "kinds_by_export": {
+  "draw": 112,
+  "create": 120,
+  "other": 12
+ },
+ "file_bytes_median": 6567,
+ "file_bytes_min_max": [
+  1227,
+  22792
+ ],
+ "renders": {
+  "fire/torch": {
+   "frames": 60,
+   "same_seed_identical": true,
+   "other_seed_identical": false,
+   "pixels_differing_run1_v_run3": 386089,
+   "pixels_total": 518400,
+   "runs": {
+    "run1": {
+     "w": 720,
+     "h": 720,
+     "sha256": "418f4f421bc7e0d1",
+     "bytes": 416057
+    },
+    "run2": {
+     "w": 720,
+     "h": 720,
+     "sha256": "418f4f421bc7e0d1",
+     "bytes": 416057
+    },
+    "run3": {
+     "w": 720,
+     "h": 720,
+     "sha256": "d5a8fab838335aac",
+     "bytes": 410253
+    }
+   }
+  },
+  "explosions/big-explosion": {
+   "frames": 217,
+   "same_seed_identical": true,
+   "other_seed_identical": false,
+   "pixels_differing_run1_v_run3": 2930138,
+   "pixels_total": 24192000,
+   "runs": {
+    "run1": {
+     "w": 5040,
+     "h": 4800,
+     "sha256": "a1c5ccff94556edf",
+     "bytes": 4894620
+    },
+    "run2": {
+     "w": 5040,
+     "h": 4800,
+     "sha256": "a1c5ccff94556edf",
+     "bytes": 4894620
+    },
+    "run3": {
+     "w": 5040,
+     "h": 4800,
+     "sha256": "b2e83ab498f9a93c",
+     "bytes": 5081345
+    }
+   }
+  },
+  "transitions/iris": {
+   "frames": 67,
+   "same_seed_identical": true,
+   "other_seed_identical": false,
+   "pixels_differing_run1_v_run3": 41230,
+   "pixels_total": 4032000,
+   "runs": {
+    "run1": {
+     "w": 2240,
+     "h": 1800,
+     "sha256": "d5a9ca0b48e11306",
+     "bytes": 503176
+    },
+    "run2": {
+     "w": 2240,
+     "h": 1800,
+     "sha256": "d5a9ca0b48e11306",
+     "bytes": 503176
+    },
+    "run3": {
+     "w": 2240,
+     "h": 1800,
+     "sha256": "1ed9550466fc5e05",
+     "bytes": 487822
+    }
+   }
+  }
+ }
+}
