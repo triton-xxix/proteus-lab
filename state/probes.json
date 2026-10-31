@@ -1,5 +1,5 @@
 {
- "next_id": 270,
+ "next_id": 271,
  "items": [
   {
    "id": "P-0001",
@@ -6629,6 +6629,32 @@
    "calls": 36,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0270",
+   "title": "P-0207 leg three: fix the P-0206 tokeniser (strip trailing stops from numbers, drop lowercase hyphenated compounds, report body-less vault sections separately), rerun on the same 7 nights and compare the raw rate, then wire it after harvest ingest with the miss list in the run log",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-10-31",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-10-31T12:34:25+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "after the three tokeniser fixes the raw support rate on the same 7 nights rises from 71.3 to about 86 pct on items with a body, body-less vault stubs reported separately",
+    "at": "2026-10-31T12:34:34+0000"
+   }
   }
  ]
 }
