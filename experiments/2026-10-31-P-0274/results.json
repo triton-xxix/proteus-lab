@@ -1,0 +1,100 @@
+{
+ "window_trading_days_before_change": 5,
+ "bank_rate_changes_since_2009": 28,
+ "change_dates": [
+  "2009-01-08",
+  "2009-02-05",
+  "2009-03-05",
+  "2016-08-04",
+  "2017-11-02",
+  "2018-08-02",
+  "2020-03-11",
+  "2020-03-19",
+  "2021-12-16",
+  "2022-02-03",
+  "2022-03-17",
+  "2022-05-05",
+  "2022-06-16",
+  "2022-08-04",
+  "2022-09-22",
+  "2022-11-03",
+  "2022-12-15",
+  "2023-02-02",
+  "2023-03-23",
+  "2023-05-11",
+  "2023-06-22",
+  "2023-08-03",
+  "2024-08-01",
+  "2024-11-07",
+  "2025-02-06",
+  "2025-05-08",
+  "2025-08-07",
+  "2025-12-18"
+ ],
+ "n_draws": 2000,
+ "EWU": {
+  "pre": {
+   "trades": 1,
+   "note": "too few"
+  },
+  "rest": {
+   "trades": 95,
+   "mean_pct": 0.555,
+   "win_pct": 70.5,
+   "t": 2.66,
+   "mean_hold_days": 5.44,
+   "control_mean_pct": 0.11,
+   "excess_pct": 0.445,
+   "p": 0.024,
+   "pool_days": 2973
+  }
+ },
+ "SPY": {
+  "pre": {
+   "trades": 3,
+   "mean_pct": 1.781,
+   "win_pct": 100.0,
+   "t": 2.62,
+   "mean_hold_days": 2.0,
+   "control_mean_pct": -0.043,
+   "excess_pct": 1.824,
+   "p": 0.014,
+   "pool_days": 76
+  },
+  "rest": {
+   "trades": 115,
+   "mean_pct": 0.755,
+   "win_pct": 77.4,
+   "t": 4.3,
+   "mean_hold_days": 4.98,
+   "control_mean_pct": 0.242,
+   "excess_pct": 0.512,
+   "p": 0.0015,
+   "pool_days": 3567
+  }
+ },
+ "all_nine": {
+  "pre": {
+   "trades": 26,
+   "mean_pct": 1.374,
+   "win_pct": 80.8,
+   "t": 3.42,
+   "mean_hold_days": 4.54,
+   "control_mean_pct": -0.098,
+   "excess_pct": 1.472,
+   "p": 0.0,
+   "pool_days": 643
+  },
+  "rest": {
+   "trades": 940,
+   "mean_pct": 0.634,
+   "win_pct": 75.1,
+   "t": 7.94,
+   "mean_hold_days": 5.38,
+   "control_mean_pct": 0.212,
+   "excess_pct": 0.422,
+   "p": 0.0,
+   "pool_days": 28400
+  }
+ }
+}
