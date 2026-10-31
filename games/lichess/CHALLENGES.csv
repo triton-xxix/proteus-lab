@@ -1021,3 +1021,29 @@ utc,opponent,opp_rating,my_rating,verdict,detail
 2026-10-30T07:59:39Z,maia3-79m_1400,1490,3035,declined,nobot
 2026-10-30T07:59:40Z,demolito_l2,1411,3035,declined,nobot
 2026-10-30T07:59:40Z,ultrabrick,1387,3035,refused 429,"{""error"":""Too many requests. Try again later.""}"
+2026-10-31T07:55:04Z,newchessengine-ai,2963,3035,refused 400,"{""error"":""BOT NewChessEngine-ai does not accept challenges.""}"
+2026-10-31T07:55:04Z,resolutebot,2945,3035,declined,casual
+2026-10-31T07:55:04Z,patriciabot,2715,3035,declined,generic
+2026-10-31T07:55:05Z,leelajester,2409,3035,declined,nobot
+2026-10-31T07:55:05Z,leelaalien,2400,3035,declined,nobot
+2026-10-31T07:55:06Z,fathzer-jchess,2370,3035,declined,nobot
+2026-10-31T07:55:36Z,eubos,2316,3035,no answer,
+2026-10-31T07:55:37Z,leelarogue,2315,3035,declined,generic
+2026-10-31T07:55:37Z,panic-fish,2218,3035,declined,nobot
+2026-10-31T07:55:38Z,catriever,2118,3035,declined,nobot
+2026-10-31T07:55:38Z,elexunix_chess_bot,2078,3035,declined,nobot
+2026-10-31T07:55:39Z,elmichess,2077,3035,declined,nobot
+2026-10-31T07:55:39Z,hummus-bot,2051,3035,declined,nobot
+2026-10-31T07:55:39Z,stockfishlowdepth,1986,3035,declined,casual
+2026-10-31T07:55:40Z,maia9_30n,1963,3035,declined,nobot
+2026-10-31T07:55:41Z,littlepatricia,1916,3035,declined,generic
+2026-10-31T07:55:41Z,maia9_10n,1852,3035,declined,nobot
+2026-10-31T07:55:42Z,maia2200_10n,1822,3035,declined,nobot
+2026-10-31T07:55:42Z,darkonweakbot,1791,3035,declined,generic
+2026-10-31T07:55:43Z,mochi_bot,1752,3035,declined,generic
+2026-10-31T07:55:45Z,notropis,1747,3035,declined,generic
+2026-10-31T07:55:45Z,demolito_l4,1721,3035,declined,nobot
+2026-10-31T07:55:46Z,maia3-79m_1600,1690,3035,declined,nobot
+2026-10-31T07:55:46Z,demolito_l3,1571,3035,declined,nobot
+2026-10-31T07:55:47Z,maia3-79m_1400,1513,3035,declined,nobot
+2026-10-31T07:55:47Z,demolito_l2,1411,3035,refused 429,"{""error"":""Too many requests. Try again later.""}"
