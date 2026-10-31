@@ -76,6 +76,7 @@ ALLOWED_OUTSIDE = {
     ("Tritons World", "Discord"): "Luke in session, 31 Oct 2026: 'we've now got a Discord. Your creds are in 1Password'",
     ("Tritons World", "Triton Discord BOT token"): "Luke in session, 31 Oct 2026: 'we've now got a Discord. Your creds are in 1Password'",
     ("Tritons World", "Triton C Discord BOT Token"): "Luke in session, 31 Oct 2026: 'we've now got a Discord. Your creds are in 1Password'",
+    ("Tritons World", "Proteus Discord BOT Token"): "Luke in session, 31 Oct 2026: 'Your creds are in 1Password' then 'I've moved it to Triton's world'; my own bot, app 1562833248936271882",
 }
 
 
