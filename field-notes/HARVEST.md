@@ -6,20 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-482 judged over 33 harvest days, 313 kept, 99 testable, 94 queued as probes, 89 with a probe verdict.
+496 judged over 34 harvest days, 322 kept, 103 testable, 98 queued as probes, 91 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0482 | 2026-10-31 | hn | [Show HN: Sketch Stadium – watch your agent play Pictionary](https://sketch.wakeshift.ai/games/q5ucru) | mechanism | game-bots | yes | P-0273 |
+| H-0495 | 2026-11-01 | github | [alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species](https://github.com/alchaincyf/huashu-bird-sticker) | both | open-data | yes | P-0288 |
+| H-0493 | 2026-11-01 | vault | [Promptwise MCP is read-only]() | mechanism | tools-for-strangers | no: Needs a Promptwise account and its MCP token. |  |
+| H-0491 | 2026-11-01 | arxiv | [OPERA: OPamp Design by an Expert-Taught Reasoning Agent, from Specifications to Layout](https://arxiv.org/abs/2610.39395) | mechanism | mechanism-hunting | no: Needs an LLM agent plus the SKY130 analogue toolchain, SPICE |  |
+| H-0490 | 2026-11-01 | github | [NiazMorshed2007/reanimate: A Claude Code skill that reverse-engineers any animation frame ](https://github.com/NiazMorshed2007/reanimate) | mechanism | tools-for-strangers | yes | P-0287 |
+| H-0488 | 2026-11-01 | vault | [Veo 3.1 Lite as cheap draft]() | mechanism | tools-for-strangers | no: Needs a paid generation API key and spend. |  |
+| H-0486 | 2026-11-01 | arxiv | [InterA11y: Interactive Web Accessibility Error Detection with LLM Agents](https://arxiv.org/abs/2610.39488) | mechanism | tools-for-strangers | no: Needs model answers and the paper's code and annotated cases |  |
+| H-0485 | 2026-11-01 | github | [elvarofficial/teardown: A Claude Code skill that turns any machine into a 3D simulator you](https://github.com/elvarofficial/teardown) | both | tools-for-strangers | yes | P-0286 |
+| H-0484 | 2026-11-01 | hn | [Show HN: A language model that lives in a boot sector](https://github.com/kerlenton/bootgpt) | mechanism | tech | yes | P-0285 |
+| H-0483 | 2026-11-01 | vault | [Google Ads leak checklist]() | mechanism | tools-for-strangers | no: Needs access to a real Google Ads account or its exported se |  |
+| H-0482 | 2026-10-31 | hn | [Show HN: Sketch Stadium – watch your agent play Pictionary](https://sketch.wakeshift.ai/games/q5ucru) | mechanism | game-bots | yes | P-0273 **works** |
 | H-0481 | 2026-10-31 | github | [muaaz9329/cheap-ag: 50x your Claude usage with cheap-ag. Opus plans, a dirt-cheap model wr](https://github.com/muaaz9329/cheap-ag) | both | tools-for-strangers | no: Needs a paid provider API key and Claude Code usage to measu |  |
 | H-0480 | 2026-10-31 | hn | [Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge](https://github.com/Millillion/lasm) | mechanism | tech | no: It needs the Lean toolchain installed and a build, which is  |  |
 | H-0479 | 2026-10-31 | vault | [one platform, organic short-form]() (intel) | mechanism | mechanism-hunting | no: The figures are seller-reported and cannot be checked withou |  |
 | H-0477 | 2026-10-31 | arxiv | [From Intent to Improvement: Agentic Dataset Search for Better Model Training](https://arxiv.org/abs/2610.39608) | mechanism | open-data | no: It needs an LLM for plan compilation and a large dataset ind |  |
 | H-0474 | 2026-10-31 | vault | [Feature set and price of the tool, and the 2026 picture on restrictions for non-compliant ](https://topa.io/linkedinautomation/) (intel) | mechanism | mechanism-hunting | no: It is a paid hosted service acting on a real account; there  |  |
 | H-0472 | 2026-10-31 | arxiv | [Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels](https://arxiv.org/abs/2610.39682) | mechanism | tech | no: It needs RL training of a language model, and there is no lo |  |
-| H-0471 | 2026-10-31 | github | [patch-gg/pixelfx: 232 pixel art effects, every one a small piece of code. Plus a Claude Co](https://github.com/patch-gg/pixelfx) | both | tools-for-strangers | yes | P-0272 |
+| H-0471 | 2026-10-31 | github | [patch-gg/pixelfx: 232 pixel art effects, every one a small piece of code. Plus a Claude Co](https://github.com/patch-gg/pixelfx) | both | tools-for-strangers | yes | P-0272 **works** |
 | H-0469 | 2026-10-31 | vault | [A free signals group funded by introducing-broker commission, and the FCA warning as the r](https://kaysgoldgroup.com/) (intel) | mechanism | mechanism-hunting | no: It is a live promotional funnel; nothing can be run from her |  |
 | H-0467 | 2026-10-30 | github | [tapoooooty/hypergrad: HIP-3 perp DEX on Hyperliquid for Solana memecoins graduating from p](https://github.com/tapoooooty/hypergrad) | mechanism | desk:grinder | yes |  |
 | H-0465 | 2026-10-30 | vault | [The free-pay-only-shipping closure-sale dropship pattern, and a Wyoming registered-agent a](https://harrisonandjames.com/) (intel) | mechanism | open-data | yes | P-0267 **works** |
@@ -327,6 +336,113 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0495 alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species, with names in 43 languages a
+2026-11-01, github, https://github.com/alchaincyf/huashu-bird-sticker
+
+- **Mechanism:** AI-generated sticker images, one per species in the IOC World Bird List v15.2, are paired with a JSON and CSV dataset of taxonomy, names in 43 languages, cross-database IDs, ranges, measurements and conservation status. Each record records where its sticker came from. Names come from IOC columns and the data is MIT licensed, while the stickers use a licence barring birding or bird-ID apps.
+- **Claim:** Stickers for all 11,064 living bird species with names in 43 languages and structured data.
+- **Testable:** yes. Does data/species.json hold 11,064 records, and how many have a sticker file path present? Queued as P-0288.
+- **Idea on its own:** sound. Joining a taxonomy list to generated images and ids is straightforward, and the counts are checkable.
+- **How it would be done:** Fetch only data/species.json and data/names.csv, count records, languages and missing fields, and compare the species count to the IOC list. Sample a few sticker paths via raw GitHub URLs to confirm they exist. Image quality review is a human job.
+- **Stack already covers:** Gemini (stills)
+- **To fetch:** huashu-bird-sticker https://github.com/alchaincyf/huashu-bird-sticker (The dataset itself.); IOC World Bird List https://www.worldbirdnames.org/ (Reference list to verify the species count.)
+- **Field Notes line:** An open dataset pairs AI-drawn stickers with names in 43 languages for all 11,064 living bird species, though the licence bars bird-ID apps.
+
+### H-0493 Promptwise MCP is read-only
+2026-11-01, vault, . Vault verdict on the vendor exists (vault verdict: Promptwise); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** An aggregator platform exposes an MCP server whose tools only read account state such as the credit balance, with no tools for generating or spending. Generation happens only in its web screens, so an agent can monitor cost but cannot drive the models. This is a design choice that limits what an agent can do by itself.
+- **Claim:** The platform's MCP can report credits but cannot generate or spend.
+- **Testable:** no. Needs a Promptwise account and its MCP token. Needs: A Promptwise account.
+- **Idea on its own:** sound. Keeping an agent's MCP read-only is a sensible safety default, though it limits automation.
+- **How it would be done:** List the MCP server's tools via the protocol's tools/list call and confirm none mutate. Pair it with a browser-driving session for the generate steps, or use the models' direct APIs instead. A human is needed to drive the web screens.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** A video aggregator's MCP only reads the credit balance, so agents cannot generate or spend through it.
+
+### H-0491 OPERA: OPamp Design by an Expert-Taught Reasoning Agent, from Specifications to Layout
+2026-11-01, arxiv, https://arxiv.org/abs/2610.39395
+
+- **Mechanism:** A general LLM agent is taught the gm/ID sizing method, which maps specs to transconductances and currents using characterised lookup tables per device role, then sizes transistors from equations. It then learns the open-source gLayout framework and writes a reusable layout generator, closing the loop through DRC, LVS and extraction in SKY130 at designer-approved gates. Results are checked across 15 PVT corners.
+- **Claim:** Six opamp designs reached DRC-clean, LVS-matched layouts meeting all specs at all 15 corners; benchmark netlists released.
+- **Testable:** no. Needs an LLM agent plus the SKY130 analogue toolchain, SPICE and layout tools. Needs: LLM agent access and the open analogue EDA toolchain.
+- **Idea on its own:** needs-a-run. The numbers come from open tools and released netlists, but results rest on expert teaching and a narrow circuit class.
+- **How it would be done:** Fetch the released benchmark netlists and re-simulate them in ngspice against the stated specs at the corners, which checks the claim without any agent. Re-running the agent itself needs SKY130 PDK, gLayout and Magic/Netgen. An analogue designer would supply the teaching material.
+- **To fetch:** AMPICBench https://github.com/AMPICLab/AMPICBench (Released benchmark netlists to re-simulate.); ngspice https://ngspice.sourceforge.io/ (Open SPICE simulator.); gLayout https://github.com/ReaLLMASIC/gLayout (Layout generator framework the agent uses.)
+- **Missing:** An analogue designer to author the teaching material.
+- **Field Notes line:** An LLM agent taught the gm/ID method designed six opamps from spec to DRC-clean layout, passing all 15 process corners.
+
+### H-0490 NiazMorshed2007/reanimate: A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy
+2026-11-01, github, https://github.com/NiazMorshed2007/reanimate
+
+- **Mechanism:** A headless browser films the reference at a fixed viewport and frame rate, logging numbered frames, CSS and Web Animations API animations and chosen elements' positions per frame; for WebGL it traces GPU calls on a virtual clock. The agent writes a spec of per-element timings and easings, builds the copy, films that the same way and compares timing and pixel difference, repeating up to five rounds. It depends on Bun, Playwright Chromium and a static ffmpeg, with no keys.
+- **Claim:** Reverse-engineers an animation and verifies the copy moves the same, within 80 ms timing and under 2% pixel mismatch at the exact level.
+- **Testable:** yes. Does the recorder capture a public page's CSS animations and per-frame element positions, and how many animations does it list? Queued as P-0287.
+- **Idea on its own:** sound. Closing the loop with measured frame comparison is a real improvement over single-pass visual cloning.
+- **How it would be done:** Install Bun and clone the repo, then run only the capture step against a simple public page with known CSS animations. Check the output has video, frames and an animation list, and compare element positions to the page's declared keyframes. The rebuild step needs a model and is left out tonight.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** reanimate https://github.com/NiazMorshed2007/reanimate (The skill and recorder scripts.); Bun https://bun.sh (Runtime it requires.); Playwright https://playwright.dev/ (Headless browser capture.)
+- **Field Notes line:** An animation cloner films the original, builds a copy, films that too and diffs the two until timings match, no API keys needed.
+
+### H-0488 Veo 3.1 Lite as cheap draft
+2026-11-01, vault, 
+
+- **Mechanism:** Image-to-video models take a start frame and a motion prompt and generate a short clip. A cheaper tier is used for draft passes to test framing and motion before spending on the better model. The trade-off seen is identity drift, where markings change across frames, and ignored action instructions.
+- **Claim:** Veo 3.1 Lite is cheaper and has an API, but in a blind A/B Kling 3.0 held identity better on all three animal shots.
+- **Testable:** no. Needs a paid generation API key and spend. Needs: A Google video generation API key and credit.
+- **Idea on its own:** sound. Cheap draft passes before a costly final render are a standard cost control and the drift finding is concrete.
+- **How it would be done:** Take identical stills, generate five-second clips on the cheap tier through its API, then judge identity consistency by comparing sampled frames to the start frame. Escalate only approved shots to the premium model. Eyeballing the final take is a human job.
+- **Stack already covers:** Gemini (stills), HyperFrames (video compose, captions, render)
+- **Field Notes line:** A cheaper image-to-video tier works for drafts but drifts a character's markings, so it suits framing checks rather than finals.
+
+### H-0486 InterA11y: Interactive Web Accessibility Error Detection with LLM Agents
+2026-11-01, arxiv, https://arxiv.org/abs/2610.39488
+
+- **Mechanism:** LLM agents are given per-criterion rubrics that break WCAG success criteria into testable aspects, plus deterministic browser tools that inspect or operate the page (focus appearance, error messages after submitting forms) to collect evidence. The agent reads the evidence against the rubric and reports violations. The tools were tuned on 682 curated test cases for 10 commonly violated criteria.
+- **Claim:** Recall of 79.0% versus 44.4% for the best LLM baseline, with precision of 93.1% on 197 expert-annotated cases from 54 real pages.
+- **Testable:** no. Needs model answers and the paper's code and annotated cases, and there is no local LLM. Needs: An LLM API or local model, and the authors' tool code.
+- **Idea on its own:** sound. Collecting evidence deterministically and letting the model judge it is a sound split, and the numbers are from expert-annotated pages.
+- **How it would be done:** Write rubrics per WCAG criterion, build Playwright helpers that return focus styles, error text and tab order, and hand them to an agent as tools. Run against a set of real pages and compare to axe-core output. Expert annotation of the ground truth is the job no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** axe-core https://github.com/dequelabs/axe-core (Rule-based baseline to compare against.); Playwright https://playwright.dev/ (Drives the page for the interactive evidence tools.)
+- **Missing:** Expert-labelled accessibility ground truth for any new page set.
+- **Field Notes line:** Giving accessibility-checking LLM agents tools that tab through and submit forms lifts recall from 44% to 79% at similar precision.
+
+### H-0485 elvarofficial/teardown: A Claude Code skill that turns any machine into a 3D simulator you can take apart
+2026-11-01, github, https://github.com/elvarofficial/teardown
+
+- **Mechanism:** A Claude Code skill whose SKILL.md teaches the model how to write a machine model as a shared JS module, a live interactive view and a film view. A build script bundles it with three.js and fonts into one offline HTML page, and a Playwright capture script renders frames to 60 fps mp4 with procedural sound. It is built on the claude-motion runtime and depends on Node 20, Chromium, ffmpeg and Python for audio.
+- **Claim:** Ask a question about a machine and Claude builds an offline 3D take-apart simulator, optionally with a recorded video tour.
+- **Testable:** yes. Does building one of the three bundled examples produce a single offline HTML file, and what size is it? Queued as P-0286.
+- **Idea on its own:** needs-a-run. Bundling is clearly feasible, but whether the model-written machines look right depends on the review loop quality.
+- **How it would be done:** Clone the repo into the sandbox, run npm install and the Playwright Chromium install, then build the v8-live example and open it headless to check for console errors. Screenshot it and measure the file size. The generation step needs a model session, so tonight only the bundled examples are checked.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** teardown https://github.com/elvarofficial/teardown (The skill and example machines.); claude-motion https://github.com/whaleyxbt/claude-motion (The runtime and capture engine it is built on.); three.js https://threejs.org/ (3D library bundled into each page.)
+- **Field Notes line:** A Claude Code skill builds take-apart 3D machine simulators as single offline HTML pages, with a frame-by-frame video renderer attached.
+
+### H-0484 Show HN: A language model that lives in a boot sector
+2026-11-01, hn, https://github.com/kerlenton/bootgpt
+
+- **Mechanism:** A small character-level neural network is trained in Python on machine-generated dmesg boot logs, then its integer weights, vocabulary and strings are stored in the disk sectors after a 510-byte master boot record. The MBR is x86 assembly that runs the integer-only forward pass and prints sampled characters via BIOS. train.py uses identical integer arithmetic so output can be diffed character by character against QEMU, which found an idiv/edx register clobber bug.
+- **Claim:** A complete language model inference engine fits in a 510-byte MBR and generates endless fake Linux boot messages.
+- **Testable:** yes. Does the repo's MBR binary assemble to at most 510 bytes plus the 0x55AA signature, and what total image size do the weights take? Queued as P-0285.
+- **Idea on its own:** sound. Integer-only inference with weights outside the code is a legitimate way to fit a tiny model under a hard code limit.
+- **How it would be done:** Clone the public repo and read the build script and train.py. Check the assembled MBR size and the signature bytes with a hex dump, and total the weight sectors. If QEMU is fetchable, boot the image headless with serial output and compare the first characters to train.py's output. No hired help needed.
+- **To fetch:** bootgpt https://github.com/kerlenton/bootgpt (The repo itself, source and build script.); QEMU https://www.qemu.org/download/ (Boots the image headless to compare against train.py output.); NASM https://www.nasm.us/ (Assembler likely needed to rebuild the MBR.)
+- **Field Notes line:** A whole neural network text generator runs from a 510-byte boot sector, producing endless fake Linux boot logs, with weights stored in the following sectors.
+
+### H-0483 Google Ads leak checklist
+2026-11-01, vault, 
+
+- **Mechanism:** Local-service Google Ads accounts commonly leak spend through a few default settings: location targeting set to 'presence or interest' (so people merely searching about the area trigger ads), automatically applied recommendations that widen bids and keywords, an empty negative keyword list so irrelevant searches match, and a generic homepage as the landing page. The checklist is a manual audit of the account settings and search terms report against those four points. The numbers come from the account's own search terms and conversion data.
+- **Claim:** Four common settings in trade firms' Google Ads accounts waste budget and can be found in a short audit.
+- **Testable:** no. Needs access to a real Google Ads account or its exported search terms report. Needs: A Google Ads account or exported search terms report to audit.
+- **Idea on its own:** sound. Presence-or-interest targeting, auto-apply and missing negatives are well-documented sources of wasted spend and are checkable.
+- **How it would be done:** Get read access to the prospect's account, or an exported search terms report and settings screen. Check the location option, the auto-apply recommendations list, the negative keyword lists and the landing page URL for each campaign. Rank the leaks by spend using the search terms report, flag irrelevant terms, and write up a one page fix list. A hired person would be needed for the account access conversation and for judging which search terms are truly irrelevant for that trade.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Google Ads Editor https://ads.google.com/home/tools/ads-editor/ (Free desktop tool to export and review account settings in bulk, needs the client's account access.)
+- **Missing:** Access to a real ad account to run the audit against.
+- **Field Notes line:** Four default Google Ads settings quietly burn local trades' budgets, and a short audit of search terms catches them.
 
 ### H-0482 Show HN: Sketch Stadium – watch your agent play Pictionary
 2026-10-31, hn, https://sketch.wakeshift.ai/games/q5ucru
@@ -3991,6 +4107,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0493 | 2026-11-01 | Promptwise MCP is read-only | intel | sound | no |  |
+| H-0488 | 2026-11-01 | Veo 3.1 Lite as cheap draft | intel | sound | no |  |
+| H-0483 | 2026-11-01 | Google Ads leak checklist | intel | sound | no |  |
 | H-0479 | 2026-10-31 | one platform, organic short-form | intel | needs-a-run | no |  |
 | H-0474 | 2026-10-31 | Feature set and price of the tool, and the 2026 picture on restrictions for non-compliant  | intel | unsound | no |  |
 | H-0469 | 2026-10-31 | A free signals group funded by introducing-broker commission, and the FCA warning as the r | intel | unsound | no |  |
@@ -4095,6 +4214,20 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0294 | 2026-11-01 | [IOC World Bird List](https://www.worldbirdnames.org/) | Reference list to verify the species count. | H-0495 (alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Sti) | shelf |
+| T-0293 | 2026-11-01 | [huashu-bird-sticker](https://github.com/alchaincyf/huashu-bird-sticker) | The dataset itself. | H-0495 (alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Sti) | shelf |
+| T-0292 | 2026-11-01 | [gLayout](https://github.com/ReaLLMASIC/gLayout) | Layout generator framework the agent uses. | H-0491 (OPERA: OPamp Design by an Expert-Taught Reasoning ) | shelf |
+| T-0291 | 2026-11-01 | [ngspice](https://ngspice.sourceforge.io/) | Open SPICE simulator. | H-0491 (OPERA: OPamp Design by an Expert-Taught Reasoning ) | shelf |
+| T-0290 | 2026-11-01 | [AMPICBench](https://github.com/AMPICLab/AMPICBench) | Released benchmark netlists to re-simulate. | H-0491 (OPERA: OPamp Design by an Expert-Taught Reasoning ) | shelf |
+| T-0289 | 2026-11-01 | [Bun](https://bun.sh) | Runtime it requires. | H-0490 (NiazMorshed2007/reanimate: A Claude Code skill tha) | shelf |
+| T-0288 | 2026-11-01 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | The skill and recorder scripts. | H-0490 (NiazMorshed2007/reanimate: A Claude Code skill tha) | shelf |
+| T-0287 | 2026-11-01 | [three.js](https://threejs.org/) | 3D library bundled into each page. | H-0485 (elvarofficial/teardown: A Claude Code skill that t) | shelf |
+| T-0286 | 2026-11-01 | [claude-motion](https://github.com/whaleyxbt/claude-motion) | The runtime and capture engine it is built on. | H-0485 (elvarofficial/teardown: A Claude Code skill that t) | shelf |
+| T-0285 | 2026-11-01 | [teardown](https://github.com/elvarofficial/teardown) | The skill and example machines. | H-0485 (elvarofficial/teardown: A Claude Code skill that t) | shelf |
+| T-0284 | 2026-11-01 | [NASM](https://www.nasm.us/) | Assembler likely needed to rebuild the MBR. | H-0484 (Show HN: A language model that lives in a boot sec) | shelf |
+| T-0283 | 2026-11-01 | [QEMU](https://www.qemu.org/download/) | Boots the image headless to compare against train.py output. | H-0484 (Show HN: A language model that lives in a boot sec) | shelf |
+| T-0282 | 2026-11-01 | [bootgpt](https://github.com/kerlenton/bootgpt) | The repo itself, source and build script. | H-0484 (Show HN: A language model that lives in a boot sec) | shelf |
+| T-0281 | 2026-11-01 | [Google Ads Editor](https://ads.google.com/home/tools/ads-editor/) | Free desktop tool to export and review account settings in bulk, needs the client's account access. | H-0483 (Google Ads leak checklist) | shelf |
 | T-0280 | 2026-10-31 | [Sketch Stadium](https://sketch.wakeshift.ai/games/q5ucru) | Public watch page to inspect read-only. | H-0482 (Show HN: Sketch Stadium – watch your agent play Pi) | shelf |
 | T-0279 | 2026-10-31 | [OpenRouter](https://openrouter.ai) | Provider for the cheap model; needs a key. | H-0481 (muaaz9329/cheap-ag: 50x your Claude usage with che) | shelf |
 | T-0278 | 2026-10-31 | [cheap-agent](https://github.com/muaaz9329/cheap-ag) | The MCP server to try. | H-0481 (muaaz9329/cheap-ag: 50x your Claude usage with che) | shelf |
@@ -4380,6 +4513,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0496 | 2026-11-01 | hn | [Visit Iceland Will Send a Real Knitter to Your Dumb Meeting So You Can Skip It](https://matadornetwork.com/read/iceland-ai-notetaker-knitting/) | Tourism marketing stunt with no mechanism. |
+| H-0494 | 2026-11-01 | hn | [Proposed data centre will release 23 Hiroshima atomic bomb worth of energy a day](https://www.cbc.ca/lite/story/9.7403677) | Headline-comparison news with no mechanism; commenters flag a unit error. |
+| H-0492 | 2026-11-01 | youtube | [What is an MOT & When Do You Need One? MOT Failure Items (Brakes, Lights, Tyres)](https://www.youtube.com/watch?v=v9al2xB2yFc) | Generic MOT explainer with no mechanism to test. |
+| H-0489 | 2026-11-01 | hn | [Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards](https://bbrouter.com/bbrouter/ben-eater-sap-1) | Paid hosted simulator whose only novel part is an MCP link, with no detail on how it works. |
+| H-0487 | 2026-11-01 | youtube | [Pump Fun Sniper Bot Delivers Insane Results (Real Trading Shown) / Meme Coins Tr](https://www.youtube.com/watch?v=9asqh6Kw0UE) | Promotional screen recording with unverifiable profit claims and no mechanism beyond marketing. |
 | H-0478 | 2026-10-31 | youtube | [MCP Servers Explained in 5 Minutes (for beginners)](https://www.youtube.com/watch?v=tTw1z10yMCI) | A beginner explainer of MCP with no new mechanism. |
 | H-0476 | 2026-10-31 | github | [boardshogunfluctuate/Capri-AI: ⚡ Tell your PC what to do. Capri is a cyberpunk A](https://github.com/boardshogunfluctuate/Capri-AI) | A themed Windows wrapper over existing CLIs, installer only, nothing new in the mechanism. |
 | H-0475 | 2026-10-31 | hn | [Anthropic's Claude AI blocks video game cloning and reverse-engineering](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked) | News about a model's refusal policy; no mechanism beyond a claim. |

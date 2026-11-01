@@ -1,5 +1,5 @@
 {
- "next_id": 285,
+ "next_id": 289,
  "items": [
   {
    "id": "P-0001",
@@ -7010,6 +7010,86 @@
     "at": "2026-11-01T12:50:20+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0285",
+   "title": "bootgpt: does the inference MBR fit in 510 bytes and how big is the whole disk image with weights?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-01",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0286",
+   "title": "teardown: does the bundled v8-live example build to one offline HTML file and load in headless Chromium?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-01",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0287",
+   "title": "reanimate: does its recorder extract animations and frame positions from a public page without any key?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-01",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0288",
+   "title": "huashu-bird-sticker: does species.json hold 11,064 records with names in 43 languages and a sticker for each?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-01",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
