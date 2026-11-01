@@ -1,5 +1,5 @@
 {
- "next_id": 291,
+ "next_id": 292,
  "items": [
   {
    "id": "P-0001",
@@ -7145,6 +7145,28 @@
    ],
    "minutes": 3,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0291",
+   "title": "Munich airport ICON lead-one bias: ICON day-ahead highs at the airport grid point v DWD 01262 daily maxima, Sep and Oct, beside P-0281's city table",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-01",
+   "status": "done",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-01T23:54:41+0000",
+   "note": "Airport grid v DWD 01262 over 61 days: observed minus ICON +0.13 latest, +0.35 day-ahead (sd 1.47), +0.54 two days, against the city's +0.66, +0.83 and +1.00. The task file's +0.3C airport correction holds at lead one; noise is the same at both stations.",
+   "artefacts": [
+    "experiments/2026-11-01-P-0291"
+   ],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
