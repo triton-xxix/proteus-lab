@@ -1,0 +1,398 @@
+{
+ "categories": {
+  "arcane": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 14.61,
+   "seconds_per_effect": 1.218,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "critters": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 7.21,
+   "seconds_per_effect": 0.601,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "explosions": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 2,
+   "seconds": 59.48,
+   "seconds_per_effect": 4.957,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "fire": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 17.85,
+   "seconds_per_effect": 1.488,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "holy": {
+   "effects": 10,
+   "pass": 10,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 18.06,
+   "seconds_per_effect": 1.806,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "ice": {
+   "effects": 10,
+   "pass": 10,
+   "fail": 0,
+   "warn": 1,
+   "seconds": 13.18,
+   "seconds_per_effect": 1.318,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "impacts": {
+   "effects": 11,
+   "pass": 11,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 7.05,
+   "seconds_per_effect": 0.641,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "lightning": {
+   "effects": 11,
+   "pass": 11,
+   "fail": 0,
+   "warn": 1,
+   "seconds": 12.78,
+   "seconds_per_effect": 1.162,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "melee": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 7.13,
+   "seconds_per_effect": 0.594,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "moves": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 34.72,
+   "seconds_per_effect": 2.893,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "nature": {
+   "effects": 13,
+   "pass": 13,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 18.46,
+   "seconds_per_effect": 1.42,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "pickups": {
+   "effects": 11,
+   "pass": 11,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 5.0,
+   "seconds_per_effect": 0.455,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "projectiles": {
+   "effects": 13,
+   "pass": 13,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 10.55,
+   "seconds_per_effect": 0.811,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "scifi": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 1,
+   "seconds": 14.17,
+   "seconds_per_effect": 1.181,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "shadow": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 18.23,
+   "seconds_per_effect": 1.519,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "spawn": {
+   "effects": 10,
+   "pass": 10,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 10.78,
+   "seconds_per_effect": 1.078,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "status": {
+   "effects": 13,
+   "pass": 13,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 10.34,
+   "seconds_per_effect": 0.795,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "transitions": {
+   "effects": 10,
+   "pass": 10,
+   "fail": 0,
+   "warn": 2,
+   "seconds": 21.85,
+   "seconds_per_effect": 2.185,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "ui": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 0,
+   "seconds": 10.38,
+   "seconds_per_effect": 0.865,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "water": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 1,
+   "seconds": 12.87,
+   "seconds_per_effect": 1.072,
+   "rc": 0,
+   "stderr_tail": ""
+  },
+  "weather": {
+   "effects": 12,
+   "pass": 12,
+   "fail": 0,
+   "warn": 11,
+   "seconds": 120.99,
+   "seconds_per_effect": 10.083,
+   "rc": 0,
+   "stderr_tail": ""
+  }
+ },
+ "warnings": [
+  {
+   "category": "explosions",
+   "line": "warn  explosions/big-explosion"
+  },
+  {
+   "category": "explosions",
+   "line": "      slow: 5.1 ms a frame"
+  },
+  {
+   "category": "explosions",
+   "line": "warn  explosions/nuke"
+  },
+  {
+   "category": "explosions",
+   "line": "      slow: 6.5 ms a frame"
+  },
+  {
+   "category": "ice",
+   "line": "warn  ice/frost-breath"
+  },
+  {
+   "category": "ice",
+   "line": "      slow: 4.7 ms a frame"
+  },
+  {
+   "category": "lightning",
+   "line": "warn  lightning/storm-cloud"
+  },
+  {
+   "category": "lightning",
+   "line": "      slow: 4.0 ms a frame"
+  },
+  {
+   "category": "scifi",
+   "line": "warn  scifi/laser-grid"
+  },
+  {
+   "category": "scifi",
+   "line": "      slow: 6.0 ms a frame"
+  },
+  {
+   "category": "transitions",
+   "line": "warn  transitions/burn-away"
+  },
+  {
+   "category": "transitions",
+   "line": "      slow: 4.9 ms a frame"
+  },
+  {
+   "category": "transitions",
+   "line": "warn  transitions/diamond-wipe"
+  },
+  {
+   "category": "transitions",
+   "line": "      slow: 4.3 ms a frame"
+  },
+  {
+   "category": "water",
+   "line": "warn  water/whirlpool"
+  },
+  {
+   "category": "water",
+   "line": "      slow: 4.1 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/aurora"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 4.9 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/blizzard"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 5.9 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/clouds"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 6.8 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/falling-leaves"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 5.5 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/fireflies"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 5.0 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/fog"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 5.8 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/god-rays"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 7.4 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/rain"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 5.3 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/shooting-stars"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 4.3 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/snow"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 6.5 ms a frame"
+  },
+  {
+   "category": "weather",
+   "line": "warn  weather/storm"
+  },
+  {
+   "category": "weather",
+   "line": "      slow: 7.7 ms a frame"
+  }
+ ],
+ "fails": [],
+ "total": {
+  "effects": 244,
+  "pass": 244,
+  "fail": 0,
+  "warn": 19,
+  "seconds": 445.7
+ },
+ "slowest_per_effect": [
+  [
+   "weather",
+   10.083
+  ],
+  [
+   "explosions",
+   4.957
+  ],
+  [
+   "moves",
+   2.893
+  ],
+  [
+   "transitions",
+   2.185
+  ],
+  [
+   "holy",
+   1.806
+  ]
+ ]
+}

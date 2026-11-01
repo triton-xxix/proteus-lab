@@ -6930,22 +6930,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-01",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-01T12:38:36+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-01T12:46:52+0000",
+   "note": "Measured: the repo checker on all 244 effects across 21 categories: 244 pass, 0 fail, 19 with warnings, every warning the same kind, slow frames of 4.0 to 7.7 ms (11 of 12 weather effects, 2 explosions, 2 transitions, 1 each ice, lightning, scifi, water); no spills, seams, unseeded randomness or missing meta. Whole library 445.7 s, weather 121 s (10 s an effect), explosions 59.5 s, pickups 0.45 s an effect. Shot (works, 0 fail, about 10 warnings, about 75 s): verdict and 0 fail hit, 19 v 10 and 446 s v 75 s missed; I timed nothing before calling the time. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-01-P-0282"
+   ],
+   "minutes": 8,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "244 effects checked, 0 fail, warnings on about 10 effects (loop seams and slow frames, not missing meta), full library in about 75 seconds",
-    "at": "2026-11-01T12:38:45+0000"
+    "at": "2026-11-01T12:38:45+0000",
+    "hit": true
    }
   }
  ]
