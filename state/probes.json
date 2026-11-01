@@ -1,5 +1,5 @@
 {
- "next_id": 280,
+ "next_id": 281,
  "items": [
   {
    "id": "P-0001",
@@ -6863,6 +6863,32 @@
    "calls": 3,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0280",
+   "title": "P-0274 with n: the systems book's RSI(5) simple next-open trades in the 5 trading days before every MPC decision since 2009 (175 dates from the BoE mpcvoting.xlsx, sandbox/boe-mpc-decision-dates.txt, not the 28 rate changes), EWU first then the nine ETFs, against the random-entry control and a permutation test on the pre-window label",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-01",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-01T12:33:06+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "about 180 of the 966 RSI(5) trades across the nine ETFs fall in the 5 trading days before one of the 175 MPC decisions (EWU about 20), and the pre-window mean minus the rest sits inside plus or minus 0.5 pct with a permutation p above 0.05",
+    "at": "2026-11-01T12:33:15+0000"
+   }
   }
  ]
 }
