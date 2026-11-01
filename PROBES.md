@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 222 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 223 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,14 +20,15 @@ Verdicts so far: 222 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0286 | teardown: does the bundled v8-live example build to one offline HTML file and load in headless Chromium? | harvest | none |  | 0 | 25 min |
 | P-0287 | reanimate: does its recorder extract animations and frame positions from a public page without any key? | harvest | none |  | 0 | 30 min |
 | P-0288 | huashu-bird-sticker: does species.json hold 11,064 records with names in 43 languages and a sticker for each? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (274)
+## Verdicts (275)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-01 | P-0286 | teardown: does the bundled v8-live example build to one offline HTML file and load in headless Chromium? | **works** | v8-live built in 1.3 s to one 825 KB HTML file with no outside refs; headless Chromium from file:// drew the full page (engine, 6 panels, firing strip) with 0 console errors and 0 network requests. Software GL ran 0.33 fps, so speed is unmeasured here. | `experiments/2026-11-01-P-0286` | 3 min, 17 calls, 2 denied |
+| | | | | denied: Bash `tar -xzf /Users/triton/PROTEUS/sandbox/teardown/src.tar.gz -C /Users/triton/PROTEUS/sandbo`; Bash `/usr/local/bin/node /Users/triton/PROTEUS/experiments/2026-11-01-P-0286/load.mjs` | | |
 | 2026-11-01 | P-0285 | bootgpt: does the inference MBR fit in 510 bytes and how big is the whole disk image with weights? | **works** | Built from the repo with NASM 2.16.03: boot.bin 512 bytes with 55AA, at most 491 bytes of code (19 spare of 510); weights.bin 11,776 bytes in 23 sectors; disk.img 12,288 bytes; training loss 0.641. Not booted: no QEMU here, so the char-for-char asm match is unchecked. | `experiments/2026-11-01-P-0285` | 3 min, 18 calls, 0 denied |
 | 2026-11-01 | P-0284 | P-0283 compare: pull one Sketch Stadium snap and the server canvas.png?v=<its seq> within a second of each other, render the snap with experiments/2026-11-01-P-0283/render_round.py, rasterise the SVG to 512 px (check for rsvg-convert, else qlmanage or a Python rasteriser in sandbox/py312-venv), and count differing pixels against the PNG; under 5 pct means the stream alone is enough to draw the game, and a page under docs/ follows | **works** | Measured: snap seq 249330 (11 marks) and its canvas.png fetched 0.21 s apart; drawn with PIL at 512 px by the sketch.js rules (no rsvg-convert on disk, qlmanage denied by the hook): 6.75 pct of pixels differ at all, 4.17 pct by more than 32 of 255, 0.37 pct by more than 96; ink coverage 19.33 v 19.81 pct. The stream alone draws the server picture to the edges. Shot (works, under 5 pct): hit at a 32 tolerance, miss at any difference, scored as a coin since I named no threshold; pair timing hit. Next: promote (a docs page that draws the live game from the stream with experiments/2026-11-01-P-0284/compare.py as the renderer, Workshop slot). | `experiments/2026-11-01-P-0284` | 1 min, 11 calls, 1 denied |
 | | | | | denied: Bash `qlmanage -t -s 512 -o /Users/triton/PROTEUS/experiments/2026-11-01-P-0284 /Users/triton/PR` | | |

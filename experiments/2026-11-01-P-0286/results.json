@@ -1,0 +1,17 @@
+{
+ "src": "/Users/triton/PROTEUS/sandbox/teardown/src/teardown-HEAD",
+ "deps": {
+  "@fontsource-variable/inter": "5.3.0",
+  "@fontsource/jetbrains-mono": "5.3.0",
+  "esbuild": "0.28.1",
+  "playwright": "1.58.2",
+  "three": "0.186.1"
+ },
+ "build_rc": 0,
+ "build_s": 1.3,
+ "build_tail": "/Users/triton/PROTEUS/sandbox/teardown/src/teardown-HEAD/teardown-out/dist/v8-live.html  806 KB  1078 ms\n",
+ "html_exists": true,
+ "html_bytes": 825413,
+ "external_refs": [],
+ "load": "python playwright not installed"
+}
