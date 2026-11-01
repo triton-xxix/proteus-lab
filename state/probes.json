@@ -1,5 +1,5 @@
 {
- "next_id": 282,
+ "next_id": 283,
  "items": [
   {
    "id": "P-0001",
@@ -6920,6 +6920,32 @@
     "number": "October observed minus day-ahead ICON about +1.0 C (larger than the +0.82 of the latest run, within 0.3 of it), September about +0.6, sd near 0.9 at lead one; best whole-degree correction +1 in October",
     "at": "2026-11-01T12:35:51+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0282",
+   "title": "pixelfx tools/check.mjs on the whole library: run the repo's own checker on every effect (244 in sandbox/pixelfx-src/pixelfx-main, no dependencies, node allowed by the hook), per category with wall time: how many pass, fail and warn, which warnings the author's own checker raises on the author's own effects, the slowest category per effect, and the full-library check time the README does not give",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-01",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-01T12:38:36+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "number": "244 effects checked, 0 fail, warnings on about 10 effects (loop seams and slow frames, not missing meta), full library in about 75 seconds",
+    "at": "2026-11-01T12:38:45+0000"
    }
   }
  ]
