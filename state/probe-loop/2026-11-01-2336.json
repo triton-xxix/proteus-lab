@@ -17,7 +17,7 @@
   "P-0290",
   "P-0291"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-01T23:54:49+0000",
+ "stop_reason": "117 of 150 calls used after 7 probes; stopping to keep calls for the kill check, run log and close. P-0291 was queued and run without its GO line, so the register has no timing for it.",
  "refills": 3
 }
