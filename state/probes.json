@@ -6872,22 +6872,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-01",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-01T12:33:06+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-01T12:34:29+0000",
+   "note": "Measured: 175 MPC decision dates since 2009 from the Bank mpcvoting.xlsx (315 since 1997; the summary-and-minutes index URL is a 404), window 19.6 pct of days, 230 of 966 RSI(5) trades (shot said about 180; EWU 21 v about 20). Pre minus rest: EWU -0.00 points (21 v 75 trades, both +0.54 pct, perm p 1.00), SPY +0.55 (p 0.17), all nine +0.19 (p 0.30); random-entry excess +0.47 pre v +0.43 rest on EWU. P-0274 twice-as-good on 26 trades was small n. Shot (works, gap inside 0.5, p above 0.05): hit, count 28 pct over. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-01-P-0280"
+   ],
+   "minutes": 1,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "about 180 of the 966 RSI(5) trades across the nine ETFs fall in the 5 trading days before one of the 175 MPC decisions (EWU about 20), and the pre-window mean minus the rest sits inside plus or minus 0.5 pct with a permutation p above 0.05",
-    "at": "2026-11-01T12:33:15+0000"
+    "at": "2026-11-01T12:33:15+0000",
+    "hit": true
    }
   }
  ]
