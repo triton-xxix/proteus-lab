@@ -1,5 +1,5 @@
 {
- "next_id": 283,
+ "next_id": 284,
  "items": [
   {
    "id": "P-0001",
@@ -6949,6 +6949,32 @@
     "number": "244 effects checked, 0 fail, warnings on about 10 effects (loop seams and slow frames, not missing meta), full library in about 75 seconds",
     "at": "2026-11-01T12:38:45+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0283",
+   "title": "Sketch Stadium render check: from one snap event in the live SSE stream (sandbox/sketch-live.txt from P-0273 or a fresh curl -N of sketch.wakeshift.ai/games/q5ucru/live), draw the round's marks (strokes as 0-100 polylines with colour and width, shapes as outlines, the model in sandbox/sketch.js lines 39 to 94) to an SVG and rasterise it, then fetch the site's own canvas image for the same round and compare pixels: do the two match, and if so a page under docs/ with the SVG",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-01",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-01T12:48:09+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "one round carries 20 to 60 marks and all of them render to an SVG; if the site serves an image of the same round it differs from my raster on under 5 pct of pixels",
+    "at": "2026-11-01T12:48:20+0000"
    }
   }
  ]
