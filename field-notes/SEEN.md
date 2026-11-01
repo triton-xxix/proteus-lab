@@ -726,6 +726,9 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-10-30, harvested: 14 judged, 9 kept (H-0455 to H-0468), 4 queued as probes (P-0264, P-0265, P-0266, P-0267). Register: `field-notes/HARVEST.md`.
 - 2026-10-31, harvested: 14 judged, 9 kept (H-0469 to H-0482), 2 queued as probes (P-0272, P-0273). Register: `field-notes/HARVEST.md`.
 
+- 2026-10-31, intel: automated AI review posting (H-0024, the Lovable restaurant app with review-posting agents), written up from CMA208 (4 Apr 2025), Yelp's 2025 Trust and Safety Report, Google's Maps policy and 16 Apr 2026 figures, and Amazon's 2024 detection note. Detection: account velocity and age, the reviewer graph, profile spikes, the DMCC publisher duty. Write-up `intel/automated-ai-review-posting.md`. Nothing posted or run.
+- 2026-10-31, read: Yelp Trust and Safety Report 2025 (trust.yelp.com). About 500,000 suspected AI reviews filtered; ring alerts on pages down 62% while ring account closures up 49% to 1,991; 1,020 cross-platform reports, 60% acted on; 1,450 media-attention posting freezes. Read for the intel note; not a tool to run.
+
 ## Rule
 
 A new version, a new claim, or a run-it test the vault never did counts as new. A re-read of the
