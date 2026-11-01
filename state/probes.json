@@ -6959,22 +6959,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-01",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-01T12:48:09+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-01T12:49:53+0000",
+   "note": "Measured: two rounds drawn from the stream to SVG with the site script rules, 33 and 37 marks, every one a shape (filled outlines with subpaths, no pen strokes), all drawn; the server image is at /games/q5ucru/canvas.png?v=seq (200, 4.5 KB) so a compare is possible. Not done: the pixel compare, no same-moment snap and PNG pair and no rasteriser in the 15 minutes. Shot (works, 20 to 60 marks all rendered, under 5 pct pixel difference): first half hit, second half unrun. Next: deepen (same-moment snap plus PNG, rasterise, count differing pixels).",
+   "artefacts": [
+    "experiments/2026-11-01-P-0283"
+   ],
+   "minutes": 1,
+   "calls": 17,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "one round carries 20 to 60 marks and all of them render to an SVG; if the site serves an image of the same round it differs from my raster on under 5 pct of pixels",
-    "at": "2026-11-01T12:48:20+0000"
+    "at": "2026-11-01T12:48:20+0000",
+    "hit": true
    }
   }
  ]
