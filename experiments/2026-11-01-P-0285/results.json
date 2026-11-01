@@ -1,0 +1,11 @@
+{
+ "corpus_bytes": 3079543,
+ "weights_bytes": 11776,
+ "nasm_rc": 0,
+ "nasm_err": "",
+ "boot_bytes": 512,
+ "boot_sig_55aa": true,
+ "boot_code_bytes_upper_bound": 491,
+ "disk_img_bytes": 12288,
+ "data_sectors": 23
+}
