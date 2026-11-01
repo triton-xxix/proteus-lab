@@ -1,5 +1,5 @@
 {
- "next_id": 281,
+ "next_id": 282,
  "items": [
   {
    "id": "P-0001",
@@ -6891,6 +6891,32 @@
     "number": "about 180 of the 966 RSI(5) trades across the nine ETFs fall in the 5 trading days before one of the 175 MPC decisions (EWU about 20), and the pre-window mean minus the rest sits inside plus or minus 0.5 pct with a permutation p above 0.05",
     "at": "2026-11-01T12:33:15+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0281",
+   "title": "P-0275 at lead one day: the ICON seamless Munich high as issued the day before (Open-Meteo previous-runs API, hourly temperature_2m_previous_day1 maxed per day, 61 days Sep to Oct 2026 in sandbox/om-prevruns-munich-hourly.json) and two days before, against DWD 03379 Stadt observed highs: month-by-month bias, sd and best whole-degree correction, beside P-0275's latest-run table, so the exchange calls' +1C is measured at the lead they are made at",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-01",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-01T12:35:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "October observed minus day-ahead ICON about +1.0 C (larger than the +0.82 of the latest run, within 0.3 of it), September about +0.6, sd near 0.9 at lead one; best whole-degree correction +1 in October",
+    "at": "2026-11-01T12:35:51+0000"
    }
   }
  ]
