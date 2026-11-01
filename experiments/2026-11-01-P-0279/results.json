@@ -1,0 +1,395 @@
+{
+ "decliners": 24,
+ "fetched": 24,
+ "median_opp_rating_across_bots": 1826.0,
+ "median_games_per_day": 10.8,
+ "bots_whose_median_opponent_is_within_200_of_me": 1,
+ "bots_playing_mostly_bots": 8,
+ "bots_idle_60_games_over_30d": 6,
+ "rows": [
+  {
+   "bot": "resolutebot",
+   "asked": 47,
+   "declined_or_silent": 47,
+   "games": 75,
+   "span_days": 29.0,
+   "games_per_day": 2.6,
+   "opp_rating_median": 2956,
+   "opp_rating_min_max": [
+    1929,
+    3040
+   ],
+   "bot_opponent_share": 0.99,
+   "gap_to_me_median": -79,
+   "last_game_utc": "2024-04-15T09:51Z"
+  },
+  {
+   "bot": "leelaalien",
+   "asked": 38,
+   "declined_or_silent": 38,
+   "games": 75,
+   "span_days": 0.3,
+   "games_per_day": 232.5,
+   "opp_rating_median": 1608,
+   "opp_rating_min_max": [
+    1021,
+    2525
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1427,
+   "last_game_utc": "2026-10-31T23:30Z"
+  },
+  {
+   "bot": "leelajester",
+   "asked": 37,
+   "declined_or_silent": 37,
+   "games": 75,
+   "span_days": 3.2,
+   "games_per_day": 23.4,
+   "opp_rating_median": 2090,
+   "opp_rating_min_max": [
+    1808,
+    2600
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -945,
+   "last_game_utc": "2026-10-31T18:00Z"
+  },
+  {
+   "bot": "eubos",
+   "asked": 37,
+   "declined_or_silent": 26,
+   "games": 75,
+   "span_days": 4.6,
+   "games_per_day": 16.4,
+   "opp_rating_median": 2548,
+   "opp_rating_min_max": [
+    1375,
+    3294
+   ],
+   "bot_opponent_share": 1.0,
+   "gap_to_me_median": -487,
+   "last_game_utc": "2026-10-31T23:42Z"
+  },
+  {
+   "bot": "leelarogue",
+   "asked": 37,
+   "declined_or_silent": 37,
+   "games": 75,
+   "span_days": 7.3,
+   "games_per_day": 10.3,
+   "opp_rating_median": 1782,
+   "opp_rating_min_max": [
+    908,
+    2731
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1253,
+   "last_game_utc": "2026-10-31T23:11Z"
+  },
+  {
+   "bot": "patriciabot",
+   "asked": 36,
+   "declined_or_silent": 36,
+   "games": 75,
+   "span_days": 26.7,
+   "games_per_day": 2.8,
+   "opp_rating_median": 2659,
+   "opp_rating_min_max": [
+    1922,
+    3006
+   ],
+   "bot_opponent_share": 0.83,
+   "gap_to_me_median": -376,
+   "last_game_utc": "2026-10-30T11:21Z"
+  },
+  {
+   "bot": "catriever",
+   "asked": 33,
+   "declined_or_silent": 33,
+   "games": 75,
+   "span_days": 5.6,
+   "games_per_day": 13.4,
+   "opp_rating_median": 1571,
+   "opp_rating_min_max": [
+    1056,
+    2974
+   ],
+   "bot_opponent_share": 0.99,
+   "gap_to_me_median": -1464,
+   "last_game_utc": "2026-10-31T23:07Z"
+  },
+  {
+   "bot": "elmichess",
+   "asked": 32,
+   "declined_or_silent": 32,
+   "games": 75,
+   "span_days": 20.2,
+   "games_per_day": 3.7,
+   "opp_rating_median": 1811,
+   "opp_rating_min_max": [
+    678,
+    2416
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1224,
+   "last_game_utc": "2026-10-31T22:37Z"
+  },
+  {
+   "bot": "panic-fish",
+   "asked": 31,
+   "declined_or_silent": 31,
+   "games": 75,
+   "span_days": 4.1,
+   "games_per_day": 18.1,
+   "opp_rating_median": 1888,
+   "opp_rating_min_max": [
+    647,
+    2396
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1147,
+   "last_game_utc": "2026-10-31T23:41Z"
+  },
+  {
+   "bot": "hummus-bot",
+   "asked": 29,
+   "declined_or_silent": 29,
+   "games": 75,
+   "span_days": 95.1,
+   "games_per_day": 0.8,
+   "opp_rating_median": 2115,
+   "opp_rating_min_max": [
+    709,
+    2239
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -920,
+   "last_game_utc": "2026-10-29T09:53Z"
+  },
+  {
+   "bot": "stockfishlowdepth",
+   "asked": 29,
+   "declined_or_silent": 29,
+   "games": 75,
+   "span_days": 0.0,
+   "games_per_day": 1998.0,
+   "opp_rating_median": 1947,
+   "opp_rating_min_max": [
+    1707,
+    1950
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1088,
+   "last_game_utc": "2026-10-31T12:41Z"
+  },
+  {
+   "bot": "darkonweakbot",
+   "asked": 24,
+   "declined_or_silent": 22,
+   "games": 75,
+   "span_days": 6.6,
+   "games_per_day": 11.3,
+   "opp_rating_median": 1639,
+   "opp_rating_min_max": [
+    950,
+    2445
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1396,
+   "last_game_utc": "2026-10-31T05:03Z"
+  },
+  {
+   "bot": "maia9_30n",
+   "asked": 23,
+   "declined_or_silent": 22,
+   "games": 75,
+   "span_days": 37.2,
+   "games_per_day": 2.0,
+   "opp_rating_median": 1731,
+   "opp_rating_min_max": [
+    967,
+    2507
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1304,
+   "last_game_utc": "2026-10-31T20:07Z"
+  },
+  {
+   "bot": "littlepatricia",
+   "asked": 20,
+   "declined_or_silent": 20,
+   "games": 75,
+   "span_days": 14.7,
+   "games_per_day": 5.1,
+   "opp_rating_median": 1770,
+   "opp_rating_min_max": [
+    1334,
+    2119
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1265,
+   "last_game_utc": "2026-10-31T23:30Z"
+  },
+  {
+   "bot": "maia9_10n",
+   "asked": 19,
+   "declined_or_silent": 19,
+   "games": 75,
+   "span_days": 3.8,
+   "games_per_day": 19.9,
+   "opp_rating_median": 1902,
+   "opp_rating_min_max": [
+    1058,
+    2092
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1133,
+   "last_game_utc": "2026-10-31T20:33Z"
+  },
+  {
+   "bot": "maia2200_10n",
+   "asked": 19,
+   "declined_or_silent": 19,
+   "games": 75,
+   "span_days": 79.3,
+   "games_per_day": 0.9,
+   "opp_rating_median": 1628,
+   "opp_rating_min_max": [
+    454,
+    2365
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1407,
+   "last_game_utc": "2026-10-31T02:55Z"
+  },
+  {
+   "bot": "mochi_bot",
+   "asked": 17,
+   "declined_or_silent": 13,
+   "games": 75,
+   "span_days": 0.5,
+   "games_per_day": 158.7,
+   "opp_rating_median": 1923,
+   "opp_rating_min_max": [
+    1397,
+    2256
+   ],
+   "bot_opponent_share": 1.0,
+   "gap_to_me_median": -1112,
+   "last_game_utc": "2026-10-31T21:14Z"
+  },
+  {
+   "bot": "maia3-79m_1600",
+   "asked": 16,
+   "declined_or_silent": 16,
+   "games": 75,
+   "span_days": 1.0,
+   "games_per_day": 72.4,
+   "opp_rating_median": 1497,
+   "opp_rating_min_max": [
+    1475,
+    1879
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1538,
+   "last_game_utc": "2026-10-31T21:32Z"
+  },
+  {
+   "bot": "fathzer-jchess",
+   "asked": 14,
+   "declined_or_silent": 14,
+   "games": 75,
+   "span_days": 94.6,
+   "games_per_day": 0.8,
+   "opp_rating_median": 1500,
+   "opp_rating_min_max": [
+    944,
+    2318
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1535,
+   "last_game_utc": "2026-10-27T23:06Z"
+  },
+  {
+   "bot": "boris-trapsky",
+   "asked": 13,
+   "declined_or_silent": 13,
+   "games": 75,
+   "span_days": 16.6,
+   "games_per_day": 4.5,
+   "opp_rating_median": 1829,
+   "opp_rating_min_max": [
+    611,
+    2331
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1206,
+   "last_game_utc": "2026-10-30T03:04Z"
+  },
+  {
+   "bot": "demolito_l6",
+   "asked": 11,
+   "declined_or_silent": 11,
+   "games": 75,
+   "span_days": 52.4,
+   "games_per_day": 1.4,
+   "opp_rating_median": 1857,
+   "opp_rating_min_max": [
+    1282,
+    2097
+   ],
+   "bot_opponent_share": 0.79,
+   "gap_to_me_median": -1178,
+   "last_game_utc": "2026-10-28T14:31Z"
+  },
+  {
+   "bot": "elexunix_chess_bot",
+   "asked": 11,
+   "declined_or_silent": 11,
+   "games": 75,
+   "span_days": 1.3,
+   "games_per_day": 55.6,
+   "opp_rating_median": 2199,
+   "opp_rating_min_max": [
+    1856,
+    2558
+   ],
+   "bot_opponent_share": 0.96,
+   "gap_to_me_median": -836,
+   "last_game_utc": "2026-10-31T19:48Z"
+  },
+  {
+   "bot": "demolito_l5",
+   "asked": 10,
+   "declined_or_silent": 10,
+   "games": 75,
+   "span_days": 32.5,
+   "games_per_day": 2.3,
+   "opp_rating_median": 1823,
+   "opp_rating_min_max": [
+    1329,
+    2173
+   ],
+   "bot_opponent_share": 0.72,
+   "gap_to_me_median": -1212,
+   "last_game_utc": "2026-10-29T11:00Z"
+  },
+  {
+   "bot": "maia3-79m_1400",
+   "asked": 9,
+   "declined_or_silent": 9,
+   "games": 75,
+   "span_days": 4.0,
+   "games_per_day": 18.6,
+   "opp_rating_median": 1607,
+   "opp_rating_min_max": [
+    1311,
+    1955
+   ],
+   "bot_opponent_share": 0.0,
+   "gap_to_me_median": -1428,
+   "last_game_utc": "2026-10-31T17:29Z"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "next_id": 279,
+ "next_id": 280,
  "items": [
   {
    "id": "P-0001",
@@ -6839,6 +6839,28 @@
    ],
    "minutes": null,
    "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0279",
+   "title": "Lichess always-decline bots: for the 24 bots that have never accepted my challenge, pull their last 60 rated games keyless and say who they do play (median opponent rating, bot share, games a day), so the pool reads as closed by rating or by rule",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-01",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-01T00:01:34+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-01T00:03:55+0000",
+   "note": "Measured: 24 of 24 decliners pulled, 75 recent rated games each; the median of their median opponent rating is 1826 (1497 to 2956), 22 of 24 play opponents 800 or more points below my 3035, and the only one within 200 (resolutebot) last played in April 2024. 8 play mostly other bots, 16 play humans only; median 10.8 games a day. The pool is closed by rating, not by a bot rule. The export 404s to curl's user agent and 200s to a browser one. Called shot (works, median gap over 500, mostly humans): hit. Next: drop the 16 human-only bots from the challenge list, an interactive edit.",
+   "artefacts": [
+    "experiments/2026-11-01-P-0279"
+   ],
+   "minutes": 2,
+   "calls": 3,
    "denied": [],
    "luke": false
   }
