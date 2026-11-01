@@ -18,7 +18,7 @@
   "P-0278",
   "P-0279"
  ],
- "stopped_at": null,
- "stop_reason": null,
- "refills": 6
+ "stopped_at": "2026-11-01T00:04:20+0000",
+ "stop_reason": "8 probes to a verdict, 130 of 150 calls used with 34 min left; the next refill (BoE MPC decision calendar, about 140 dates across many HTML pages) cannot be pulled, parsed, run and written up inside the 20 calls left, so it stays row 58 for tomorrow",
+ "refills": 7
 }
