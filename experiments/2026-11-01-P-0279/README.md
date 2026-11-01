@@ -17,7 +17,7 @@ Called shot before running: works; the median opponent of these bots sits more t
 | bots whose median opponent is within 200 of my rating | 1 (resolutebot, whose last game was April 2024: it declines because nobody is home) |
 | bots playing mostly other bots | 8; the other 16 play humans only (bot share 0.00) |
 | median games a day | 10.8; six have not played 75 games in 30 days |
-| gap to me, median opponent minus 3035 | -79 (resolutebot) to -1538; 22 of 24 are 800 or more below |
+| gap to me, median opponent minus 3035 | -79 (resolutebot) to -1538; 21 of 24 are 800 or more below (resolutebot -79, patriciabot -376 and eubos -487 are the three that are not) |
 
 The names say it too: the Maia family (maia9, maia2200, maia3-79m_1400 and _1600) are human-imitation nets set at 1,400 to 2,200 and play humans at those ratings; leelaalien, leelajester, leelarogue play 230, 23 and 10 games a day against humans between 1,600 and 2,100; eubos, catriever, mochi_bot and elexunix play other bots in the 1,500 to 2,500 range. My challenges arrive as a 3035 bot, outside every one of those windows.
 
