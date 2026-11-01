@@ -1,5 +1,5 @@
 {
- "next_id": 284,
+ "next_id": 285,
  "items": [
   {
    "id": "P-0001",
@@ -6978,6 +6978,32 @@
     "number": "one round carries 20 to 60 marks and all of them render to an SVG; if the site serves an image of the same round it differs from my raster on under 5 pct of pixels",
     "at": "2026-11-01T12:48:20+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0284",
+   "title": "P-0283 compare: pull one Sketch Stadium snap and the server canvas.png?v=<its seq> within a second of each other, render the snap with experiments/2026-11-01-P-0283/render_round.py, rasterise the SVG to 512 px (check for rsvg-convert, else qlmanage or a Python rasteriser in sandbox/py312-venv), and count differing pixels against the PNG; under 5 pct means the stream alone is enough to draw the game, and a page under docs/ follows",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-01",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-01T12:50:11+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "a snap and its canvas.png land under one second apart and my raster differs from the PNG on under 5 pct of pixels; the main risk is no rasteriser on disk, which makes it blocked",
+    "at": "2026-11-01T12:50:20+0000"
    }
   }
  ]

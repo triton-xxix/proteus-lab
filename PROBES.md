@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 220 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Verdicts so far: 220 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
+| P-0284 | P-0283 compare: pull one Sketch Stadium snap and the server canvas.png?v=<its seq> within a second of each other, render the snap with experiments/2026-11-01-P-0283/render_round.py, rasterise the SVG to 512 px (check for rsvg-convert, else qlmanage or a Python rasteriser in sandbox/py312-venv), and count differing pixels against the PNG; under 5 pct means the stream alone is enough to draw the game, and a page under docs/ follows | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (272)
 
