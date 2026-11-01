@@ -1,0 +1,150 @@
+{
+ "source": "previous-runs-api.open-meteo.com icon_seamless 48.1374,11.5755, hourly, daily max over 24 hours Europe/Berlin",
+ "station": "DWD 03379 Muenchen-Stadt TXK",
+ "leads": {
+  "lead0_latest": {
+   "months": {
+    "2026-09": {
+     "days": 30,
+     "mean_obs_minus_icon": 0.48,
+     "sd": 0.72,
+     "mae_after_plus1": 0.6,
+     "exact_degree_hit": {
+      "+0.0": 0.367,
+      "+0.5": 0.733,
+      "+1.0": 0.567,
+      "+1.5": 0.1
+     },
+     "best_correction": 0.4,
+     "best_hit": 0.733,
+     "first_last": [
+      "2026-09-01",
+      "2026-09-30"
+     ]
+    },
+    "2026-10": {
+     "days": 31,
+     "mean_obs_minus_icon": 0.84,
+     "sd": 0.59,
+     "mae_after_plus1": 0.5,
+     "exact_degree_hit": {
+      "+0.0": 0.226,
+      "+0.5": 0.387,
+      "+1.0": 0.613,
+      "+1.5": 0.516
+     },
+     "best_correction": 1.0,
+     "best_hit": 0.613,
+     "first_last": [
+      "2026-10-01",
+      "2026-10-31"
+     ]
+    }
+   },
+   "all": {
+    "days": 61,
+    "mean_obs_minus_icon": 0.66,
+    "sd": 0.68,
+    "mae_after_plus1": 0.55
+   }
+  },
+  "lead1_day_ahead": {
+   "months": {
+    "2026-09": {
+     "days": 30,
+     "mean_obs_minus_icon": 1.0,
+     "sd": 1.31,
+     "mae_after_plus1": 0.81,
+     "exact_degree_hit": {
+      "+0.0": 0.267,
+      "+0.5": 0.4,
+      "+1.0": 0.5,
+      "+1.5": 0.367
+     },
+     "best_correction": 0.8,
+     "best_hit": 0.533,
+     "first_last": [
+      "2026-09-01",
+      "2026-09-30"
+     ]
+    },
+    "2026-10": {
+     "days": 31,
+     "mean_obs_minus_icon": 0.66,
+     "sd": 1.34,
+     "mae_after_plus1": 1.03,
+     "exact_degree_hit": {
+      "+0.0": 0.226,
+      "+0.5": 0.323,
+      "+1.0": 0.29,
+      "+1.5": 0.29
+     },
+     "best_correction": 1.2,
+     "best_hit": 0.387,
+     "first_last": [
+      "2026-10-01",
+      "2026-10-31"
+     ]
+    }
+   },
+   "all": {
+    "days": 61,
+    "mean_obs_minus_icon": 0.83,
+    "sd": 1.32,
+    "mae_after_plus1": 0.92
+   }
+  },
+  "lead2_two_days": {
+   "months": {
+    "2026-09": {
+     "days": 30,
+     "mean_obs_minus_icon": 1.19,
+     "sd": 1.27,
+     "mae_after_plus1": 0.98,
+     "exact_degree_hit": {
+      "+0.0": 0.2,
+      "+0.5": 0.4,
+      "+1.0": 0.333,
+      "+1.5": 0.233
+     },
+     "best_correction": 0.5,
+     "best_hit": 0.4,
+     "first_last": [
+      "2026-09-01",
+      "2026-09-30"
+     ]
+    },
+    "2026-10": {
+     "days": 31,
+     "mean_obs_minus_icon": 0.82,
+     "sd": 1.42,
+     "mae_after_plus1": 0.8,
+     "exact_degree_hit": {
+      "+0.0": 0.194,
+      "+0.5": 0.323,
+      "+1.0": 0.452,
+      "+1.5": 0.419
+     },
+     "best_correction": 1.2,
+     "best_hit": 0.548,
+     "first_last": [
+      "2026-10-01",
+      "2026-10-31"
+     ]
+    }
+   },
+   "all": {
+    "days": 61,
+    "mean_obs_minus_icon": 1.0,
+    "sd": 1.35,
+    "mae_after_plus1": 0.89
+   }
+  }
+ },
+ "latest_minus_day_ahead": {
+  "days": 61,
+  "mean": 0.16,
+  "abs_mean": 0.73,
+  "share_abs_ge_1": 0.246
+ }
+}
