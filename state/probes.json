@@ -1,5 +1,5 @@
 {
- "next_id": 289,
+ "next_id": 290,
  "items": [
   {
    "id": "P-0001",
@@ -7102,6 +7102,28 @@
    "denied": [
     "Bash `jq -r \"(.truncated|tostring), (.tree|length), ([.tree[]|select(.type==\\\"blob\\\")|.path|spli`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0289",
+   "title": "arXiv PDF code links: of the 37 kept papers with no code link in the abstract, how many link GitHub inside the PDF, and do those repos resolve?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-01",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-01T23:46:08+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-01T23:50:19+0000",
+   "note": "All 37 PDFs read: 18 carry GitHub links, 51 distinct repos, 49 answer 200, and both 404s are parse errors (a docs path, a split URL), so no rot. Many links are citations; about 12 of the 18 look like the paper's own code by name, so about 20 of 45 (44 pct) against the abstract-only 18 pct.",
+   "artefacts": [
+    "experiments/2026-11-01-P-0289"
+   ],
+   "minutes": 4,
+   "calls": 6,
+   "denied": [],
    "luke": false
   }
  ]

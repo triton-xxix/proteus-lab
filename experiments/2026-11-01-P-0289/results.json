@@ -1,0 +1,819 @@
+{
+ "summary": {
+  "papers": 37,
+  "pdfs_read": 37,
+  "papers_with_github_in_pdf": 18,
+  "papers_with_promise_but_no_link": 4,
+  "distinct_repos": 51,
+  "repos_200": 49,
+  "repos_404": 2,
+  "repos_other": 0,
+  "stars_of_200": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   4,
+   4,
+   10,
+   18,
+   37,
+   50,
+   62,
+   73,
+   157,
+   220,
+   223,
+   247,
+   282,
+   284,
+   286,
+   326,
+   422,
+   514,
+   1106,
+   1697,
+   1819,
+   2368,
+   2825,
+   4408,
+   5763,
+   8095,
+   13062,
+   19576,
+   24094,
+   25543,
+   28859,
+   28910,
+   49885,
+   71184,
+   75824,
+   91737,
+   96078,
+   108655,
+   132739,
+   154167,
+   187859,
+   223844,
+   393640
+  ]
+ },
+ "status": {
+  "Agent-Threat-Rule/agent-threat-rules": {
+   "code": 200,
+   "stars": 422,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "aibridges/RLM_Wikidata": {
+   "code": 200,
+   "stars": 18,
+   "pushed": "2026-10-11",
+   "archived": false,
+   "renamed_to": null
+  },
+  "Aider-AI/aider": {
+   "code": 200,
+   "stars": 49885,
+   "pushed": "2026-05-22",
+   "archived": false,
+   "renamed_to": null
+  },
+  "ammkrn/nanoda_lib": {
+   "code": 200,
+   "stars": 223,
+   "pushed": "2026-10-29",
+   "archived": false,
+   "renamed_to": null
+  },
+  "anomalyco/opencode": {
+   "code": 200,
+   "stars": 223844,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "anthropics/claude-code": {
+   "code": 200,
+   "stars": 154167,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "astroseger/envtraverse": {
+   "code": 200,
+   "stars": 1,
+   "pushed": "2026-10-30",
+   "archived": false,
+   "renamed_to": null
+  },
+  "AutoCodeRoverSG/sonar-foundation-agent": {
+   "code": 200,
+   "stars": 4,
+   "pushed": "2026-05-12",
+   "archived": false,
+   "renamed_to": null
+  },
+  "BinceQu/RoboHarness": {
+   "code": 200,
+   "stars": 284,
+   "pushed": "2026-10-30",
+   "archived": false,
+   "renamed_to": null
+  },
+  "charmbracelet/crush": {
+   "code": 200,
+   "stars": 28910,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "cisco-ai-defense/mcp-scanner": {
+   "code": 200,
+   "stars": 1106,
+   "pushed": "2026-10-30",
+   "archived": false,
+   "renamed_to": null
+  },
+  "cline/cline": {
+   "code": 200,
+   "stars": 71184,
+   "pushed": "2026-10-31",
+   "archived": false,
+   "renamed_to": null
+  },
+  "cooperativex/OpenSocialJax": {
+   "code": 200,
+   "stars": 4,
+   "pushed": "2026-10-14",
+   "archived": false,
+   "renamed_to": null
+  },
+  "DAGroup-PKU/PyRUA-Lean": {
+   "code": 200,
+   "stars": 157,
+   "pushed": "2026-10-30",
+   "archived": false,
+   "renamed_to": null
+  },
+  "en/code-security": {
+   "code": 404
+  },
+  "google-gemini/gemini-cli": {
+   "code": 200,
+   "stars": 108655,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "google/atheris": {
+   "code": 200,
+   "stars": 1697,
+   "pushed": "2026-06-17",
+   "archived": false,
+   "renamed_to": null
+  },
+  "hichamhammouchi/InferD": {
+   "code": 200,
+   "stars": 0,
+   "pushed": "2026-09-16",
+   "archived": false,
+   "renamed_to": null
+  },
+  "hiyouga/LLaMA-Factory": {
+   "code": 200,
+   "stars": 75824,
+   "pushed": "2026-10-31",
+   "archived": false,
+   "renamed_to": "hiyouga/LlamaFactory"
+  },
+  "huggingface/OpenEnv": {
+   "code": 200,
+   "stars": 2825,
+   "pushed": "2026-10-31",
+   "archived": false,
+   "renamed_to": "openenv/OpenEnv"
+  },
+  "isaac-sim/IsaacSim": {
+   "code": 200,
+   "stars": 4408,
+   "pushed": "2026-10-27",
+   "archived": false,
+   "renamed_to": null
+  },
+  "Jayceon-3/Adaptive-Skill-Agent": {
+   "code": 200,
+   "stars": 2,
+   "pushed": "2026-06-28",
+   "archived": false,
+   "renamed_to": null
+  },
+  "jgru/prompt-injection-throughforensic-evidence": {
+   "code": 404
+  },
+  "leanprover/comparator": {
+   "code": 200,
+   "stars": 247,
+   "pushed": "2026-10-14",
+   "archived": true,
+   "renamed_to": null
+  },
+  "leanprover/lean-eval": {
+   "code": 200,
+   "stars": 50,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "leansolving/SqueezeBench": {
+   "code": 200,
+   "stars": 10,
+   "pushed": "2026-10-22",
+   "archived": false,
+   "renamed_to": null
+  },
+  "lifan-yuan/CRAFT": {
+   "code": 200,
+   "stars": 62,
+   "pushed": "2024-06-03",
+   "archived": false,
+   "renamed_to": null
+  },
+  "ljding94/NeutronGym": {
+   "code": 200,
+   "stars": 0,
+   "pushed": "2026-09-25",
+   "archived": false,
+   "renamed_to": null
+  },
+  "mangopy/tool-retrieval-benchmark": {
+   "code": 200,
+   "stars": 220,
+   "pushed": "2025-12-22",
+   "archived": false,
+   "renamed_to": null
+  },
+  "microsoft/JARVIS": {
+   "code": 200,
+   "stars": 25543,
+   "pushed": "2025-07-29",
+   "archived": false,
+   "renamed_to": null
+  },
+  "Mishrakshitij/PROBE": {
+   "code": 200,
+   "stars": 0,
+   "pushed": "2026-10-15",
+   "archived": false,
+   "renamed_to": null
+  },
+  "modelcontextprotocol/servers": {
+   "code": 200,
+   "stars": 91737,
+   "pushed": "2026-10-29",
+   "archived": false,
+   "renamed_to": null
+  },
+  "MoonshotAI/kimi-code": {
+   "code": 200,
+   "stars": 8095,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "openai/codex": {
+   "code": 200,
+   "stars": 132739,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "openai/tiktoken": {
+   "code": 200,
+   "stars": 19576,
+   "pushed": "2026-08-17",
+   "archived": false,
+   "renamed_to": null
+  },
+  "OpenBMB/ToolBench": {
+   "code": 200,
+   "stars": 5763,
+   "pushed": "2025-05-21",
+   "archived": false,
+   "renamed_to": null
+  },
+  "openclaw/openclaw": {
+   "code": 200,
+   "stars": 393640,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "paulc/dnslib": {
+   "code": 200,
+   "stars": 326,
+   "pushed": "2025-03-02",
+   "archived": false,
+   "renamed_to": null
+  },
+  "PrimeIntellect-ai/nano-rlm": {
+   "code": 200,
+   "stars": 73,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "QwenLM/qwen-code": {
+   "code": 200,
+   "stars": 28859,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "SEAR-benchmark/SEAR": {
+   "code": 200,
+   "stars": 1,
+   "pushed": "2026-09-20",
+   "archived": false,
+   "renamed_to": null
+  },
+  "Self-Evolving-Agentic-Robotics/SEAR": {
+   "code": 200,
+   "stars": 37,
+   "pushed": "2026-10-22",
+   "archived": false,
+   "renamed_to": null
+  },
+  "ShishirPatil/gorilla": {
+   "code": 200,
+   "stars": 13062,
+   "pushed": "2026-10-17",
+   "archived": false,
+   "renamed_to": null
+  },
+  "sierra-research/tau2-bench": {
+   "code": 200,
+   "stars": 2368,
+   "pushed": "2026-10-30",
+   "archived": false,
+   "renamed_to": null
+  },
+  "Significant-Gravitas/AutoGPT": {
+   "code": 200,
+   "stars": 187859,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "swe-bench/experiments": {
+   "code": 200,
+   "stars": 286,
+   "pushed": "2026-09-03",
+   "archived": false,
+   "renamed_to": null
+  },
+  "trueagi-io/hyperon-experimental": {
+   "code": 200,
+   "stars": 282,
+   "pushed": "2026-02-11",
+   "archived": false,
+   "renamed_to": null
+  },
+  "vllm-project/vllm": {
+   "code": 200,
+   "stars": 96078,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "volcengine/verl": {
+   "code": 200,
+   "stars": 24094,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": "verl-project/verl"
+  },
+  "xhluca/bm25s": {
+   "code": 200,
+   "stars": 1819,
+   "pushed": "2026-11-01",
+   "archived": false,
+   "renamed_to": null
+  },
+  "XPolicyLab/XPolicyLab": {
+   "code": 200,
+   "stars": 514,
+   "pushed": "2026-10-31",
+   "archived": false,
+   "renamed_to": null
+  }
+ },
+ "papers": [
+  {
+   "id": "H-0078",
+   "arxiv": "2609.40169",
+   "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+   "pdf_bytes": 2697836,
+   "text_chars": 103668,
+   "repos": [],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0083",
+   "arxiv": "2609.39847",
+   "title": "SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models",
+   "pdf_bytes": 394413,
+   "text_chars": 23439,
+   "repos": [
+    "SEAR-benchmark/SEAR"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0106",
+   "arxiv": "2610.02181",
+   "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
+   "pdf_bytes": 1742312,
+   "text_chars": 91009,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0111",
+   "arxiv": "2610.02038",
+   "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
+   "pdf_bytes": 9626174,
+   "text_chars": 67910,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0120",
+   "arxiv": "2610.01939",
+   "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65%",
+   "pdf_bytes": 3330964,
+   "text_chars": 104307,
+   "repos": [
+    "DAGroup-PKU/PyRUA-Lean",
+    "openai/codex"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0125",
+   "arxiv": "2610.01768",
+   "title": "The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching",
+   "pdf_bytes": 560451,
+   "text_chars": 91418,
+   "repos": [
+    "paulc/dnslib"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0134",
+   "arxiv": "2610.03631",
+   "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+   "pdf_bytes": 452565,
+   "text_chars": 92821,
+   "repos": [
+    "ljding94/NeutronGym"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0147",
+   "arxiv": "2610.06650",
+   "title": "Wikidata Search Traces: A Dataset for Training Knowledge Graph Search Agents",
+   "pdf_bytes": 691489,
+   "text_chars": 56487,
+   "repos": [
+    "aibridges/RLM_Wikidata",
+    "PrimeIntellect-ai/nano-rlm"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0153",
+   "arxiv": "2610.06563",
+   "title": "HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention",
+   "pdf_bytes": 1092838,
+   "text_chars": 90315,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0175",
+   "arxiv": "2610.10507",
+   "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+   "pdf_bytes": 1925433,
+   "text_chars": 94289,
+   "repos": [],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0203",
+   "arxiv": "2610.12126",
+   "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+   "pdf_bytes": 14745108,
+   "text_chars": 72095,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0217",
+   "arxiv": "2610.11768",
+   "title": "Narrow and Deep: An Ontology Tower as the Knowledge of an LLM Agent for an Industrial Equi",
+   "pdf_bytes": 905113,
+   "text_chars": 65118,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0221",
+   "arxiv": "2610.11678",
+   "title": "TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation",
+   "pdf_bytes": 303791,
+   "text_chars": 62773,
+   "repos": [
+    "sierra-research/tau2-bench"
+   ],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0229",
+   "arxiv": "2610.13862",
+   "title": "BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation",
+   "pdf_bytes": 7811220,
+   "text_chars": 44370,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0234",
+   "arxiv": "2610.13710",
+   "title": "OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended ",
+   "pdf_bytes": 2039540,
+   "text_chars": 95748,
+   "repos": [
+    "cooperativex/OpenSocialJax"
+   ],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0243",
+   "arxiv": "2610.13651",
+   "title": "ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary",
+   "pdf_bytes": 1847877,
+   "text_chars": 119885,
+   "repos": [
+    "Agent-Threat-Rule/agent-threat-rules",
+    "cisco-ai-defense/mcp-scanner",
+    "en/code-security",
+    "google/atheris",
+    "Significant-Gravitas/AutoGPT"
+   ],
+   "promise_phrases": 2
+  },
+  {
+   "id": "H-0249",
+   "arxiv": "2610.13461",
+   "title": "SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability",
+   "pdf_bytes": 413194,
+   "text_chars": 51933,
+   "repos": [
+    "leansolving/SqueezeBench",
+    "ammkrn/nanoda_lib",
+    "leanprover/comparator",
+    "leanprover/lean-eval"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0257",
+   "arxiv": "2610.18874",
+   "title": "ChunkAct: Action Chunking for Agentic Robotics",
+   "pdf_bytes": 744108,
+   "text_chars": 53062,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0262",
+   "arxiv": "2610.18792",
+   "title": "SEAR: Self-Evolving Agentic Robotics",
+   "pdf_bytes": 20906651,
+   "text_chars": 183384,
+   "repos": [
+    "Self-Evolving-Agentic-Robotics/SEAR",
+    "BinceQu/RoboHarness",
+    "isaac-sim/IsaacSim",
+    "XPolicyLab/XPolicyLab"
+   ],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0277",
+   "arxiv": "2610.20344",
+   "title": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+   "pdf_bytes": 704258,
+   "text_chars": 58706,
+   "repos": [
+    "anthropics/claude-code",
+    "charmbracelet/crush",
+    "cline/cline",
+    "Aider-AI/aider",
+    "google-gemini/gemini-cli",
+    "MoonshotAI/kimi-code",
+    "openai/codex",
+    "openclaw/openclaw",
+    "anomalyco/opencode",
+    "QwenLM/qwen-code"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0291",
+   "arxiv": "2610.22316",
+   "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+   "pdf_bytes": 515122,
+   "text_chars": 74246,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0299",
+   "arxiv": "2610.22289",
+   "title": "Improving Environment-Agnostic Coding Agents: The Role of Scaffolding",
+   "pdf_bytes": 2800780,
+   "text_chars": 110031,
+   "repos": [
+    "astroseger/envtraverse",
+    "huggingface/OpenEnv",
+    "trueagi-io/hyperon-experimental"
+   ],
+   "promise_phrases": 3
+  },
+  {
+   "id": "H-0305",
+   "arxiv": "2610.22124",
+   "title": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+   "pdf_bytes": 949654,
+   "text_chars": 102305,
+   "repos": [
+    "Mishrakshitij/PROBE"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0327",
+   "arxiv": "2610.23599",
+   "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving A",
+   "pdf_bytes": 1527617,
+   "text_chars": 90359,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0333",
+   "arxiv": "2610.23554",
+   "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
+   "pdf_bytes": 1621247,
+   "text_chars": 81194,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0355",
+   "arxiv": "2610.29747",
+   "title": "Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forens",
+   "pdf_bytes": 247886,
+   "text_chars": 73196,
+   "repos": [
+    "jgru/prompt-injection-throughforensic-evidence",
+    "modelcontextprotocol/servers"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0369",
+   "arxiv": "2610.31650",
+   "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+   "pdf_bytes": 1967078,
+   "text_chars": 85799,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0375",
+   "arxiv": "2610.31483",
+   "title": "Training Small Language Models for Transferable Tool Selection",
+   "pdf_bytes": 729823,
+   "text_chars": 61876,
+   "repos": [
+    "xhluca/bm25s",
+    "OpenBMB/ToolBench",
+    "ShishirPatil/gorilla",
+    "lifan-yuan/CRAFT",
+    "microsoft/JARVIS",
+    "mangopy/tool-retrieval-benchmark",
+    "hiyouga/LLaMA-Factory",
+    "volcengine/verl",
+    "vllm-project/vllm"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0383",
+   "arxiv": "2610.31471",
+   "title": "Ask About the Right Moment: Training-Free Object Identity Reasoning for Video-Language Mod",
+   "pdf_bytes": 3440920,
+   "text_chars": 88493,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0388",
+   "arxiv": "2610.31461",
+   "title": "Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery",
+   "pdf_bytes": 1981600,
+   "text_chars": 37785,
+   "repos": [
+    "Jayceon-3/Adaptive-Skill-Agent"
+   ],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0397",
+   "arxiv": "2610.31376",
+   "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory",
+   "pdf_bytes": 505715,
+   "text_chars": 102337,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0411",
+   "arxiv": "2610.32648",
+   "title": "StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents",
+   "pdf_bytes": 1351351,
+   "text_chars": 83039,
+   "repos": [
+    "swe-bench/experiments",
+    "openai/tiktoken",
+    "AutoCodeRoverSG/sonar-foundation-agent"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0423",
+   "arxiv": "2610.35829",
+   "title": "Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Model",
+   "pdf_bytes": 267606,
+   "text_chars": 28169,
+   "repos": [],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0432",
+   "arxiv": "2610.37649",
+   "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+   "pdf_bytes": 5773268,
+   "text_chars": 54099,
+   "repos": [],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0436",
+   "arxiv": "2610.37648",
+   "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+   "pdf_bytes": 4483220,
+   "text_chars": 81274,
+   "repos": [],
+   "promise_phrases": 1
+  },
+  {
+   "id": "H-0463",
+   "arxiv": "2610.39807",
+   "title": "InferD: A Honeypot Framework for AI Inference Infrastructure",
+   "pdf_bytes": 582020,
+   "text_chars": 68352,
+   "repos": [
+    "hichamhammouchi/InferD"
+   ],
+   "promise_phrases": 0
+  },
+  {
+   "id": "H-0472",
+   "arxiv": "2610.39682",
+   "title": "Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels",
+   "pdf_bytes": 1176339,
+   "text_chars": 70745,
+   "repos": [],
+   "promise_phrases": 0
+  }
+ ]
+}
