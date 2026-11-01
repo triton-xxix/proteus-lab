@@ -1,5 +1,5 @@
 {
- "next_id": 290,
+ "next_id": 291,
  "items": [
   {
    "id": "P-0001",
@@ -7122,6 +7122,28 @@
     "experiments/2026-11-01-P-0289"
    ],
    "minutes": 4,
+   "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0290",
+   "title": "Lichess bot acceptance: across every bot in CHALLENGES.csv, does acceptance track rating gap, games played or last-seen from the public profile?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-01",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-01T23:50:45+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-01T23:53:53+0000",
+   "note": "108 bots, 108 profiles: the 41 that ever accepted have played a median 75,040 games against 37,162 for the 63 that never did (perm p under 0.0002); rating gap (1,038 v 1,142, p 0.58), blitz rating and last-seen do not separate them. Sort the challenge list busiest first.",
+   "artefacts": [
+    "experiments/2026-11-01-P-0290"
+   ],
+   "minutes": 3,
    "calls": 6,
    "denied": [],
    "luke": false

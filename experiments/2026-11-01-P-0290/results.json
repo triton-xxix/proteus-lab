@@ -1,0 +1,66 @@
+{
+ "bots": 108,
+ "challenges": 1074,
+ "acceptors": 41,
+ "never_accepted": 63,
+ "profile_errors": 0,
+ "closed_accounts": 0,
+ "gap_median": {
+  "acceptors_median": 1038,
+  "never_median": 1142.5,
+  "n": [
+   41,
+   63
+  ],
+  "perm_p": 0.5782
+ },
+ "games_all": {
+  "acceptors_median": 75040,
+  "never_median": 37162,
+  "n": [
+   41,
+   63
+  ],
+  "perm_p": 0.0
+ },
+ "blitz": {
+  "acceptors_median": 1882,
+  "never_median": 1887,
+  "n": [
+   41,
+   63
+  ],
+  "perm_p": 1.0
+ },
+ "seen_days": {
+  "acceptors_median": -0.0,
+  "never_median": -0.0,
+  "n": [
+   41,
+   63
+  ],
+  "perm_p": 1.0
+ },
+ "by_gap_band": [
+  {
+   "gap": "-10000..300",
+   "bots": 17,
+   "acceptors": 10
+  },
+  {
+   "gap": "300..600",
+   "bots": 9,
+   "acceptors": 2
+  },
+  {
+   "gap": "600..900",
+   "bots": 16,
+   "acceptors": 7
+  },
+  {
+   "gap": "900..10000",
+   "bots": 62,
+   "acceptors": 22
+  }
+ ]
+}

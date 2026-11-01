@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 226 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 227 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 226 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 
-## Verdicts (278)
+## Verdicts (279)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-01 | P-0290 | Lichess bot acceptance: across every bot in CHALLENGES.csv, does acceptance track rating gap, games played or last-seen from the public profile? | **works** | 108 bots, 108 profiles: the 41 that ever accepted have played a median 75,040 games against 37,162 for the 63 that never did (perm p under 0.0002); rating gap (1,038 v 1,142, p 0.58), blitz rating and last-seen do not separate them. Sort the challenge list busiest first. | `experiments/2026-11-01-P-0290` | 3 min, 6 calls, 0 denied |
 | 2026-11-01 | P-0289 | arXiv PDF code links: of the 37 kept papers with no code link in the abstract, how many link GitHub inside the PDF, and do those repos resolve? | **works** | All 37 PDFs read: 18 carry GitHub links, 51 distinct repos, 49 answer 200, and both 404s are parse errors (a docs path, a split URL), so no rot. Many links are citations; about 12 of the 18 look like the paper's own code by name, so about 20 of 45 (44 pct) against the abstract-only 18 pct. | `experiments/2026-11-01-P-0289` | 4 min, 6 calls, 0 denied |
 | 2026-11-01 | P-0288 | huashu-bird-sticker: does species.json hold 11,064 records with names in 43 languages and a sticker for each? | **works** | species.json has 11,064 records and stickers/ 11,064 webp files, every id matched (11,064 of 11,064). Names span 46 language keys in all, but the median record has 28 and only 50 have every one, so 43 languages is the set, not each bird. | `experiments/2026-11-01-P-0288` | 0 min, 8 calls, 1 denied |
 | | | | | denied: Bash `jq -r "(.truncated/tostring), (.tree/length), ([.tree[]/select(.type==\"blob\")/.path/spli` | | |
