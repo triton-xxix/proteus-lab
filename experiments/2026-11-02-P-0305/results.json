@@ -1,0 +1,73 @@
+{
+ "nobot_ids": 32,
+ "played_ids": 47,
+ "in_both_dropped": [],
+ "returned": 79,
+ "kept": {
+  "nobot": 32,
+  "played": 47
+ },
+ "fields": {
+  "games_all": {
+   "nobot_median": 0.0,
+   "played_median": 0,
+   "best_split_accuracy": 0.595,
+   "nobot_if": "lt 0"
+  },
+  "rated_share": {
+   "nobot_median": 0.0,
+   "played_median": 0,
+   "best_split_accuracy": 0.595,
+   "nobot_if": "lt 0"
+  },
+  "bullet_share": {
+   "nobot_median": 0.222,
+   "played_median": 0.325,
+   "best_split_accuracy": 0.709,
+   "nobot_if": "lt 0.203"
+  },
+  "classical_share": {
+   "nobot_median": 0.046,
+   "played_median": 0.035,
+   "best_split_accuracy": 0.646,
+   "nobot_if": "ge 0.036"
+  },
+  "age_days": {
+   "nobot_median": 950.859,
+   "played_median": 1758.337,
+   "best_split_accuracy": 0.709,
+   "nobot_if": "lt 1034.446"
+  },
+  "days_since_seen": {
+   "nobot_median": 0.005,
+   "played_median": 0.004,
+   "best_split_accuracy": 0.684,
+   "nobot_if": "ge 14.915"
+  },
+  "blitz_rating": {
+   "nobot_median": 1884.5,
+   "played_median": 1892,
+   "best_split_accuracy": 0.608,
+   "nobot_if": "lt 1516"
+  },
+  "has_bio": {
+   "nobot_median": 1.0,
+   "played_median": 1,
+   "best_split_accuracy": 0.595,
+   "nobot_if": "lt 1"
+  },
+  "bio_mentions_bot": {
+   "nobot_median": 0.0,
+   "played_median": 0,
+   "best_split_accuracy": 0.608,
+   "nobot_if": "lt 1"
+  },
+  "is_bot_title": {
+   "nobot_median": 1.0,
+   "played_median": 1,
+   "best_split_accuracy": 0.595,
+   "nobot_if": "lt 1"
+  }
+ },
+ "base_rate_accuracy": 0.595
+}

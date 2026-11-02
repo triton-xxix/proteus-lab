@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 241 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 242 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 241 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 
-## Verdicts (293)
+## Verdicts (294)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-02 | P-0305 | Lichess nobot decliners v bots that played me: one keyless /api/users batch, compare game counts, bot-game share, rating spread and age; does any field split them at 80 pct or better? | **works** | One /api/users batch for 32 nobot decliners and 47 bots that played me: best single field split in sample is account age under 1,034 days or bullet share under 0.20, 70.9 pct right against a 59.5 pct base rate; no field reaches 80, bio and title say nothing. The batch endpoint omits game counts (came back 0). Skip-after-decline (F-0068) stays. | `experiments/2026-11-02-P-0305` | 0 min, 4 calls, 0 denied |
 | 2026-11-02 | P-0304 | MPC cut bucket out of sample: RSI(5) next-open trades in the 5 days before Bank Rate cuts, 1997 to 2008, all nine and EWU; does P-0292's +1.9 points survive? | **works** | P-0292's own script on the 1997 to 2008 meetings it left out: 139 meetings, 23 cuts, but only 1 trade in a cut pre-window across all nine (0 on EWU), because those cuts came in falling markets where the 200-day filter keeps the book flat. The cut effect has no out-of-sample test; hike +0.45 v rest p 0.39, hold -0.71 p 0.04 (1 of 5 tests). Close stands. | `experiments/2026-11-02-P-0304` | 0 min, 4 calls, 0 denied |
 | 2026-11-02 | P-0303 | Munich ensemble spread v measured error: tonight's ICON-EPS and ECMWF p10-p90 width of the daily high at leads 1 to 6 against 2.56 x P-0293's sd; underdispersed by how much? | **works** | Tonight's run, city point: ICON-EPS 10-90 width of the daily high 0.52, 0.92, 2.02, 2.42, 3.33, 4.74C by lead 1 to 6, ECMWF 0.70 to 5.80, against 3.38 to 7.01 that 2.56 x P-0293's sd asks for; ratios 0.15 to 0.68 (ICON) and 0.21 to 0.83 (ECMWF). Far too narrow next day, matching P-0232 and P-0249 captures. One run, a reading not a rate. | `experiments/2026-11-02-P-0303` | 0 min, 5 calls, 0 denied |
 | 2026-11-02 | P-0302 | ICON lead curve at Munich airport: sd and +0.3C exact-degree hit by lead 0 to 6 against DWD 01262, Sep to Oct 2026; last lead at or above 25 pct? | **works** | 61 days Sep to Oct, airport v DWD 01262: sd 0.56, 1.47, 1.22, 1.75, 2.14, 2.64, 2.78 by lead 0 to 6, within 0.15C of the city at every lead; bias +0.13 at lead 0 rising to about +0.6 from lead 2; exact-degree hit at +0.3 is 62, 38, 34, 25, 18, 16, 12 pct, so the last lead at or above 25 pct is 2 (lead 3 at 24.6). se about 6 points a hit. | `experiments/2026-11-02-P-0302` | 0 min, 5 calls, 0 denied |

@@ -1,5 +1,5 @@
 {
- "next_id": 305,
+ "next_id": 306,
  "items": [
   {
    "id": "P-0001",
@@ -7498,6 +7498,28 @@
    "note": "P-0292's own script on the 1997 to 2008 meetings it left out: 139 meetings, 23 cuts, but only 1 trade in a cut pre-window across all nine (0 on EWU), because those cuts came in falling markets where the 200-day filter keeps the book flat. The cut effect has no out-of-sample test; hike +0.45 v rest p 0.39, hold -0.71 p 0.04 (1 of 5 tests). Close stands.",
    "artefacts": [
     "experiments/2026-11-02-P-0304"
+   ],
+   "minutes": 0,
+   "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0305",
+   "title": "Lichess nobot decliners v bots that played me: one keyless /api/users batch, compare game counts, bot-game share, rating spread and age; does any field split them at 80 pct or better?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-02",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-02T23:44:50+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-02T23:45:05+0000",
+   "note": "One /api/users batch for 32 nobot decliners and 47 bots that played me: best single field split in sample is account age under 1,034 days or bullet share under 0.20, 70.9 pct right against a 59.5 pct base rate; no field reaches 80, bio and title say nothing. The batch endpoint omits game counts (came back 0). Skip-after-decline (F-0068) stays.",
+   "artefacts": [
+    "experiments/2026-11-02-P-0305"
    ],
    "minutes": 0,
    "calls": 4,
