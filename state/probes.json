@@ -1,5 +1,5 @@
 {
- "next_id": 295,
+ "next_id": 296,
  "items": [
   {
    "id": "P-0001",
@@ -7257,6 +7257,32 @@
     "number": "boots in under 10 emulated seconds and the screen text differs from train.py's integer sample in 0 characters",
     "at": "2026-11-02T12:35:31+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0295",
+   "title": "Teardown of bootgpt's forward pass as one offline page: a machine folder with main.js importing teardown-kit/runtime.js, one input (the step index) driving the 8-char context, the 96 hidden units and the 64 logits from weights.bin with the exact integer arithmetic of P-0294's match.py, built with sandbox/teardown/src/teardown-HEAD/sims/build.mjs and checked headless with the bundled playwright; measure build size and whether the page's printed chars equal the 0x9e75 boot stream",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-02",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-02T12:38:24+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "page builds under 900 KB and its first 388 generated chars equal the 0x9e75 boot stream exactly",
+    "at": "2026-11-02T12:38:30+0000"
    }
   }
  ]
