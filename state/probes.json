@@ -1,5 +1,5 @@
 {
- "next_id": 296,
+ "next_id": 298,
  "items": [
   {
    "id": "P-0001",
@@ -7287,6 +7287,52 @@
     "at": "2026-11-02T12:38:30+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0296",
+   "title": "Deepen P-0295: the bootgpt teardown page with a seed box and a step slider, 420 steps so the whole v86 screen is covered, logit labels clear of the bars, then publish it under docs/ and check it renders on desktop and phone width headless",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-02",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-02T12:40:41+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "page stays under 200 KB, 0 differing rows across all 10 emulator rows including the last, and no horizontal overflow at 375 px wide",
+    "at": "2026-11-02T12:40:54+0000"
+   }
+  },
+  {
+   "id": "P-0297",
+   "title": "Bird names by language v threat: over the 11,064 species in sandbox/birdsticker/species.json, the count of languages in each names map (2 to 46) against conservation.iucn (Wikidata P141) and range.breedingRegion; are CR and EN birds named in fewer languages than LC, Spearman and a permutation test, and which language is thinnest",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-02",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
