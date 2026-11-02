@@ -120,6 +120,17 @@ def played_before():
         return {r["opponent"] for r in csv.DictReader(f) if r.get("opponent")}
 
 
+def refuse_bots():
+    """Every bot that declined "nobot" or answered 400 "does not accept challenges" in CHALLENGES.csv.
+    Both are standing rules, not moods: from 31 Oct to 2 Nov the sweep re-asked the same 16 nobot
+    decliners nearest my rating each morning and hit the 429 before reaching anyone new (F-0068)."""
+    if not os.path.exists(CHALLENGES):
+        return set()
+    with open(CHALLENGES, newline="") as f:
+        return {r["opponent"] for r in csv.DictReader(f)
+                if r.get("detail") == "nobot" or (r.get("verdict") == "refused 400" and "does not accept" in r.get("detail", ""))}
+
+
 def candidates(my_id, my_rating, tried):
     out = []
     for line in req("/api/bot/online?nb=100", accept="application/x-ndjson"):
@@ -203,6 +214,9 @@ def cmd_play(a):
     widen_log()
     tried = played_before()
     print(f"{len(tried)} opponents already played, never challenged again")
+    never = refuse_bots() - tried
+    tried |= never
+    print(f"{len(never)} more skipped: they refuse bot challenges (nobot or 400)")
     stop_at, played, refused = time.time() + a.minutes * 60, 0, 0
     new = not os.path.exists(LOG)
     with open(LOG, "a", newline="") as f:
