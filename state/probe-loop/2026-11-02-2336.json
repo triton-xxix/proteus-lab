@@ -18,7 +18,7 @@
   "P-0304",
   "P-0305"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-02T23:45:18+0000",
+ "stop_reason": "Call budget: 125 of 150 used after eight verdicts; the rest is kept for the kill check, due check and close",
  "refills": 5
 }
