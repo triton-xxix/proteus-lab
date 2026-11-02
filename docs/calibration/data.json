@@ -1,5 +1,5 @@
 {
- "built": "2026-11-01 09:07 UTC",
+ "built": "2026-11-02 09:06 UTC",
  "panels": [
   {
    "key": "model",
@@ -8,7 +8,7 @@
    "kind": "football, home/draw/away",
    "rows": 79,
    "pairs": 237,
-   "logged": 363,
+   "logged": 372,
    "scored_any": 79,
    "captured": 18,
    "backfilled": 61,
@@ -111,7 +111,7 @@
    "kind": "football, over/under 2.5; yes/no",
    "rows": 79,
    "pairs": 79,
-   "logged": 363,
+   "logged": 372,
    "captured": 18,
    "me_minus_market": 0.0231,
    "me_brier": 0.2731,
@@ -389,13 +389,13 @@
    "title": "My exchange calls",
    "who": "me, one contract a night on Smarkets",
    "kind": "elections, weather, macro; yes/no",
-   "rows": 26,
-   "pairs": 26,
-   "logged": 41,
-   "settled_any": 32,
-   "me_minus_market": 0.0709,
-   "me_brier": 0.1794,
-   "market_brier": 0.1084,
+   "rows": 29,
+   "pairs": 29,
+   "logged": 42,
+   "settled_any": 36,
+   "me_minus_market": 0.075,
+   "me_brier": 0.1847,
+   "market_brier": 0.1097,
    "bins": [
     {
      "lo": 0.0,
@@ -409,11 +409,11 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 20,
-     "mean_p": 0.2555,
-     "observed": 0.2,
-     "lo95": 0.0807,
-     "hi95": 0.416
+     "n": 22,
+     "mean_p": 0.2536,
+     "observed": 0.2273,
+     "lo95": 0.1012,
+     "hi95": 0.4344
     },
     {
      "lo": 0.4,
@@ -432,6 +432,15 @@
      "observed": 1.0,
      "lo95": 0.2065,
      "hi95": 1.0
+    },
+    {
+     "lo": 0.8,
+     "hi": 1.0,
+     "n": 1,
+     "mean_p": 0.85,
+     "observed": 1.0,
+     "lo95": 0.2065,
+     "hi95": 1.0
     }
    ],
    "market_bins": [
@@ -447,20 +456,20 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 5,
-     "mean_p": 0.2603,
+     "n": 6,
+     "mean_p": 0.2682,
      "observed": 0.0,
      "lo95": 0.0,
-     "hi95": 0.4345
+     "hi95": 0.3903
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 6,
-     "mean_p": 0.4708,
-     "observed": 0.6667,
-     "lo95": 0.3,
-     "hi95": 0.9032
+     "n": 7,
+     "mean_p": 0.4725,
+     "observed": 0.7143,
+     "lo95": 0.3589,
+     "hi95": 0.9178
     },
     {
      "lo": 0.6,
@@ -474,11 +483,11 @@
     {
      "lo": 0.8,
      "hi": 1.0,
-     "n": 4,
-     "mean_p": 0.8861,
-     "observed": 0.75,
-     "lo95": 0.3006,
-     "hi95": 0.9544
+     "n": 5,
+     "mean_p": 0.9059,
+     "observed": 0.8,
+     "lo95": 0.3755,
+     "hi95": 0.9638
     }
    ],
    "rule": "settled, with the market mid captured after my commit",
