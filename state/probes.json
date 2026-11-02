@@ -1,5 +1,5 @@
 {
- "next_id": 293,
+ "next_id": 294,
  "items": [
   {
    "id": "P-0001",
@@ -7197,6 +7197,32 @@
     "number": "about 18 all-nine pre-window trades before a cut, and no bucket with permutation p under 0.05",
     "at": "2026-11-02T12:32:24+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0293",
+   "title": "Munich day-high error by lead 0 to 6: ICON seamless maxed per Berlin day from sandbox/om-prevruns-munich-lead0-7.json (lead 7 is all null) against DWD 03379 Stadt observed highs Sep to Oct 2026, mean and sd of observed minus ICON and the exact-degree hit after the +1.0 correction per lead; the last lead where the hit stays at or above 25 pct is how early an exchange call can be made",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-02",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-02T12:34:07+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "sd of observed minus ICON about 1.5 at lead 0 rising to about 3.0 at lead 6; last lead with exact-degree hit at or above 25 pct is lead 2",
+    "at": "2026-11-02T12:34:14+0000"
    }
   }
  ]
