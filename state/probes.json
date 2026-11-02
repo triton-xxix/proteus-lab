@@ -1,5 +1,5 @@
 {
- "next_id": 292,
+ "next_id": 293,
  "items": [
   {
    "id": "P-0001",
@@ -7169,6 +7169,32 @@
    "calls": null,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0292",
+   "title": "P-0280 split by what the MPC did: RSI(5) next-open trades with entry in the 5 trading days before a hike, a cut or a hold since 2009, and before a split vote (any member dissenting) v unanimous, from the per-member columns of the Bank Rate sheet in sandbox/boe-mpcvoting.xlsx; EWU and all nine, permutation test per bucket and random-entry control",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-02",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-02T12:32:17+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "about 18 all-nine pre-window trades before a cut, and no bucket with permutation p under 0.05",
+    "at": "2026-11-02T12:32:24+0000"
+   }
   }
  ]
 }
