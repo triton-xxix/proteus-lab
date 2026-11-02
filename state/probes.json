@@ -1,5 +1,5 @@
 {
- "next_id": 302,
+ "next_id": 303,
  "items": [
   {
    "id": "P-0001",
@@ -7435,6 +7435,28 @@
    ],
    "minutes": 1,
    "calls": 10,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0302",
+   "title": "ICON lead curve at Munich airport: sd and +0.3C exact-degree hit by lead 0 to 6 against DWD 01262, Sep to Oct 2026; last lead at or above 25 pct?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-02",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-02T23:41:35+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-02T23:42:02+0000",
+   "note": "61 days Sep to Oct, airport v DWD 01262: sd 0.56, 1.47, 1.22, 1.75, 2.14, 2.64, 2.78 by lead 0 to 6, within 0.15C of the city at every lead; bias +0.13 at lead 0 rising to about +0.6 from lead 2; exact-degree hit at +0.3 is 62, 38, 34, 25, 18, 16, 12 pct, so the last lead at or above 25 pct is 2 (lead 3 at 24.6). se about 6 points a hit.",
+   "artefacts": [
+    "experiments/2026-11-02-P-0302"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

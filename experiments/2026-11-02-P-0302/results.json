@@ -1,0 +1,124 @@
+{
+ "source": "previous-runs-api.open-meteo.com icon_seamless 48.3538,11.7861 (grid 48.3469,11.7705), hourly, daily max over 24 hours Europe/Berlin",
+ "station": "DWD 01262 Muenchen-Flughafen TXK",
+ "leads": {
+  "0": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.13,
+   "sd": 0.56,
+   "hit_plus0": 0.574,
+   "hit_plus03": 0.623,
+   "hit_plus1": 0.262,
+   "best_correction": 0.4,
+   "best_hit_in_sample": 0.639,
+   "city_sd": 0.68,
+   "city_hit_plus1": 0.59,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "1": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.35,
+   "sd": 1.47,
+   "hit_plus0": 0.41,
+   "hit_plus03": 0.377,
+   "hit_plus1": 0.279,
+   "best_correction": 0.0,
+   "best_hit_in_sample": 0.41,
+   "city_sd": 1.32,
+   "city_hit_plus1": 0.393,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "2": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.54,
+   "sd": 1.22,
+   "hit_plus0": 0.344,
+   "hit_plus03": 0.344,
+   "hit_plus1": 0.328,
+   "best_correction": -0.1,
+   "best_hit_in_sample": 0.393,
+   "city_sd": 1.35,
+   "city_hit_plus1": 0.393,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "3": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.66,
+   "sd": 1.75,
+   "hit_plus0": 0.295,
+   "hit_plus03": 0.246,
+   "hit_plus1": 0.295,
+   "best_correction": 0.8,
+   "best_hit_in_sample": 0.344,
+   "city_sd": 1.78,
+   "city_hit_plus1": 0.295,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "4": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.64,
+   "sd": 2.14,
+   "hit_plus0": 0.246,
+   "hit_plus03": 0.18,
+   "hit_plus1": 0.197,
+   "best_correction": -0.7,
+   "best_hit_in_sample": 0.262,
+   "city_sd": 2.21,
+   "city_hit_plus1": 0.279,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "5": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.44,
+   "sd": 2.64,
+   "hit_plus0": 0.246,
+   "hit_plus03": 0.164,
+   "hit_plus1": 0.098,
+   "best_correction": -0.6,
+   "best_hit_in_sample": 0.311,
+   "city_sd": 2.64,
+   "city_hit_plus1": 0.164,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "6": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.53,
+   "sd": 2.78,
+   "hit_plus0": 0.164,
+   "hit_plus03": 0.115,
+   "hit_plus1": 0.115,
+   "best_correction": -0.8,
+   "best_hit_in_sample": 0.262,
+   "city_sd": 2.74,
+   "city_hit_plus1": 0.131,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  }
+ },
+ "last_lead_hit_plus03_ge_25pct": 2,
+ "leads_hit_plus03_ge_25pct": [
+  0,
+  1,
+  2
+ ]
+}
