@@ -1,0 +1,183 @@
+{
+ "species": 11064,
+ "by_iucn": {
+  "LC": {
+   "n": 8109,
+   "median": 28.0,
+   "mean": 28.91
+  },
+  "none": {
+   "n": 884,
+   "median": 27.0,
+   "mean": 23.98
+  },
+  "NT": {
+   "n": 881,
+   "median": 28.0,
+   "mean": 28.33
+  },
+  "VU": {
+   "n": 623,
+   "median": 29.0,
+   "mean": 28.87
+  },
+  "EN": {
+   "n": 348,
+   "median": 29.0,
+   "mean": 28.43
+  },
+  "CR": {
+   "n": 178,
+   "median": 29.0,
+   "mean": 28.49
+  },
+  "DD": {
+   "n": 31,
+   "median": 28.0,
+   "mean": 27.03
+  },
+  "EX": {
+   "n": 5,
+   "median": 29.0,
+   "mean": 29.4
+  },
+  "EW": {
+   "n": 5,
+   "median": 24.0,
+   "mean": 27.8
+  }
+ },
+ "cr_en_v_lc": {
+  "cr_en_n": 526,
+  "lc_n": 8109,
+  "median_gap": -1.0,
+  "mean_gap": 0.46,
+  "perm_p_two_sided": 0.0188
+ },
+ "spearman_threat_v_languages": {
+  "n": 10139,
+  "rho": -0.002,
+  "p": 0.8503009786431973
+ },
+ "language_coverage": {
+  "en": 11064,
+  "sk": 11064,
+  "fr": 11055,
+  "zh-Hans": 11041,
+  "nl": 11040,
+  "eo": 11040,
+  "sv": 11040,
+  "pt-x-lusophone": 11039,
+  "no": 11031,
+  "fr-x-gaudin": 11020,
+  "da": 10996,
+  "pl": 10994,
+  "pt-PT": 10892,
+  "es": 10877,
+  "de": 10840,
+  "uk": 10793,
+  "hr": 10643,
+  "ru": 10614,
+  "tr": 10570,
+  "ja": 10566,
+  "zh-Hant": 10536,
+  "cs": 10193,
+  "ca": 10125,
+  "it": 10038,
+  "fi": 10031,
+  "lt": 9903,
+  "sr": 8013,
+  "hu": 6484,
+  "et": 5651,
+  "lv": 2016,
+  "id": 1976,
+  "bg": 1416,
+  "he": 1154,
+  "sl": 1107,
+  "th": 1012,
+  "af": 978,
+  "is": 972,
+  "se": 952,
+  "ar": 589,
+  "ko": 566,
+  "fa": 551,
+  "ml": 543,
+  "el": 516,
+  "ro": 414,
+  "mk": 389,
+  "be": 327
+ },
+ "thinnest_languages": [
+  [
+   "ml",
+   543
+  ],
+  [
+   "el",
+   516
+  ],
+  [
+   "ro",
+   414
+  ],
+  [
+   "mk",
+   389
+  ],
+  [
+   "be",
+   327
+  ]
+ ],
+ "within_region": {
+  "AF": {
+   "cr_en": 87,
+   "lc": 1508,
+   "median_gap": 0.0,
+   "mean_gap": -0.26
+  },
+  "SA": {
+   "cr_en": 101,
+   "lc": 2026,
+   "median_gap": -1.0,
+   "mean_gap": -0.3
+  },
+  "AU": {
+   "cr_en": 70,
+   "lc": 1165,
+   "median_gap": 0.0,
+   "mean_gap": 0.23
+  },
+  "MA": {
+   "cr_en": 18,
+   "lc": 299,
+   "median_gap": -1.0,
+   "mean_gap": -1.07
+  },
+  "OR": {
+   "cr_en": 93,
+   "lc": 1107,
+   "median_gap": 0.0,
+   "mean_gap": -0.19
+  },
+  "NA": {
+   "cr_en": 36,
+   "lc": 303,
+   "median_gap": 1.0,
+   "mean_gap": 1.79
+  },
+  "PAL": {
+   "cr_en": 26,
+   "lc": 545,
+   "median_gap": 2.5,
+   "mean_gap": 0.4
+  },
+  "PO": {
+   "cr_en": 64,
+   "lc": 85,
+   "median_gap": 0.0,
+   "mean_gap": 0.24
+  }
+ },
+ "within_region_positive_gap": "4 of 8"
+}

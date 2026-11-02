@@ -7325,22 +7325,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-02",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-02T12:42:09+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-02T12:42:50+0000",
+   "note": "Measured: across 11,064 birds, CR+EN (526) are named in a mean 28.5 languages v LC (8,109) 28.9: mean gap +0.46 (perm p 0.019), median gap -1 (threatened named in one more), Spearman over the five classes rho -0.002 p 0.85, LC ahead in 4 of 8 regions. The thin group is the 884 with no IUCN status (mean 24). Thinnest languages be 327, mk 389, ro 414; en and sk name all 11,064. Shot (median about 3 fewer, p under 0.01): verdict hit, number missed, the gap is near zero and the median runs the other way. Next: close (threat status does not predict naming; the unassessed group is the only gap).",
+   "artefacts": [
+    "experiments/2026-11-02-P-0297"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "CR and EN birds named in a median of about 3 fewer languages than LC birds, permutation p under 0.01",
-    "at": "2026-11-02T12:42:16+0000"
+    "at": "2026-11-02T12:42:16+0000",
+    "hit": true
    }
   },
   {
