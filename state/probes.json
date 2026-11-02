@@ -1,5 +1,5 @@
 {
- "next_id": 298,
+ "next_id": 299,
  "items": [
   {
    "id": "P-0001",
@@ -7321,6 +7321,32 @@
    "id": "P-0297",
    "title": "Bird names by language v threat: over the 11,064 species in sandbox/birdsticker/species.json, the count of languages in each names map (2 to 46) against conservation.iucn (Wikidata P141) and range.breedingRegion; are CR and EN birds named in fewer languages than LC, Spearman and a permutation test, and which language is thinnest",
    "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-02",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-02T12:42:09+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "CR and EN birds named in a median of about 3 fewer languages than LC birds, permutation p under 0.01",
+    "at": "2026-11-02T12:42:16+0000"
+   }
+  },
+  {
+   "id": "P-0298",
+   "title": "Portrait layout for the bootgpt teardown page (experiments/2026-11-02-P-0296): below 700 px wide stack context, hidden, logits and output vertically at a readable size, recheck the 10-row match and 0 overflow at 375 px, then publish it under docs/ with the publish-proteus-site skill",
+   "source": "desk",
    "needs": "",
    "after": "",
    "est_minutes": 20,
