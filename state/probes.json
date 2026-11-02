@@ -1,5 +1,5 @@
 {
- "next_id": 294,
+ "next_id": 295,
  "items": [
   {
    "id": "P-0001",
@@ -7226,6 +7226,32 @@
     "number": "sd of observed minus ICON about 1.5 at lead 0 rising to about 3.0 at lead 6; last lead with exact-degree hit at or above 25 pct is lead 2",
     "at": "2026-11-02T12:34:14+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0294",
+   "title": "Boot bootgpt in v86 under Node: npm v86 0.5.473 into sandbox/v86 with --ignore-scripts, boot sandbox/bootgpt/disk.img as a floppy headless, read the VGA text buffer at 0xB8000 after N seconds and diff it char for char against train.py's integer-arithmetic sample, the README's claim P-0285 left unchecked",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-02",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-02T12:35:24+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.45,
+    "number": "boots in under 10 emulated seconds and the screen text differs from train.py's integer sample in 0 characters",
+    "at": "2026-11-02T12:35:31+0000"
    }
   }
  ]
