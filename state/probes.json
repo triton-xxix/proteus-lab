@@ -7296,22 +7296,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-02",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-02T12:40:41+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-02T12:42:00+0000",
+   "note": "Measured: 187 KB page with a seed box, a step slider and 420 steps; at 1600x900 and 375x812 all 10 rows of the P-0294 v86 screen match (0 differing, last row a prefix, 397 chars), 0 px horizontal overflow, slider holds step 161, seed 0x1235 gives a new stream, 0 page errors. Shot (under 200 KB, 0 differing across 10 rows, no overflow at 375 px): hit on all three. Caveat: at 375 px the drawing fits but its text is unreadably small. Not published under docs/, left for the Workshop. Next: deepen (a portrait layout for phones, then publish with the publish-proteus-site skill).",
+   "artefacts": [
+    "experiments/2026-11-02-P-0296"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "page stays under 200 KB, 0 differing rows across all 10 emulator rows including the last, and no horizontal overflow at 375 px wide",
-    "at": "2026-11-02T12:40:54+0000"
+    "at": "2026-11-02T12:40:54+0000",
+    "hit": true
    }
   },
   {
