@@ -7207,22 +7207,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-02",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-02T12:34:07+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-02T12:34:47+0000",
+   "note": "Measured: ICON seamless Munich high v DWD 03379, 61 days Sep to Oct, leads 0 to 6 (lead 7 all null). sd 0.68, 1.32, 1.35, 1.78, 2.21, 2.64, 2.74; bias +0.66 rising to about +1.1 by lead 3 then flat; exact-degree hit after +1.0: 59, 39, 39, 30, 28, 16, 13 pct, so the last lead at or above 25 pct is 4 (two to three days for a comfortable margin). Shot (sd 1.5 at lead 0 to 3.0 at lead 6, last lead 2): verdict hit, sd at lead 6 near (2.74), lead 0 and the last-lead number missed (0.68, 4). Caveat: two months, one grid point, se about 6 points on each hit. Next: close (the curve answers how early a call can go; lead 0 is a same-day run, not an evening call).",
+   "artefacts": [
+    "experiments/2026-11-02-P-0293"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "sd of observed minus ICON about 1.5 at lead 0 rising to about 3.0 at lead 6; last lead with exact-degree hit at or above 25 pct is lead 2",
-    "at": "2026-11-02T12:34:14+0000"
+    "at": "2026-11-02T12:34:14+0000",
+    "hit": true
    }
   }
  ]
