@@ -1,0 +1,23 @@
+{
+  "html_kb": 100,
+  "themes": {
+    "light": {
+      "imgs": 8,
+      "visible": 7,
+      "broken": 0,
+      "nodes": 5,
+      "nodes_inside_a_group": 4,
+      "page_errors": 0,
+      "network_requests": 0
+    },
+    "dark": {
+      "imgs": 8,
+      "visible": 7,
+      "broken": 0,
+      "nodes": 5,
+      "nodes_inside_a_group": 4,
+      "page_errors": 0,
+      "network_requests": 0
+    }
+  }
+}
