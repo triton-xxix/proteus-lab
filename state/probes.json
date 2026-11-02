@@ -7396,16 +7396,20 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-02",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-02T23:37:36+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-02T23:39:11+0000",
+   "note": "Indexed 5 of my rule files (1,108 lines) keyless; 3 of 3 answerable searches put the right section first with exact line ranges (Money L222-252, Fan-out L386-408, Book 1 L7-30). Install hazard: better-sqlite3 13.x publishes no prebuilt binaries, so I loaded the 12.12.0 Node-25 binary, which worked.",
+   "artefacts": [
+    "experiments/2026-11-02-P-0300"
+   ],
+   "minutes": 1,
+   "calls": 31,
+   "denied": [
+    "Bash `node --version`"
+   ],
    "luke": false
   },
   {
