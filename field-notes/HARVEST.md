@@ -6,20 +6,32 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-496 judged over 34 harvest days, 322 kept, 103 testable, 98 queued as probes, 91 with a probe verdict.
+510 judged over 35 harvest days, 334 kept, 106 testable, 101 queued as probes, 95 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0495 | 2026-11-01 | github | [alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species](https://github.com/alchaincyf/huashu-bird-sticker) | both | open-data | yes | P-0288 |
+| H-0510 | 2026-11-02 | github | [zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 Skill：一句点子生成企划案、资产图提示词、分集剧本、分镜与视频提示词。可用于 ](https://github.com/zhanghao123vip/ai-manju-skills) | mechanism | mechanism-hunting | yes | P-0301 |
+| H-0509 | 2026-11-02 | hn | [Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app](https://momentic.ai/) | both | tools-for-strangers | no: It is a hosted SaaS product with token-based pricing (per HN |  |
+| H-0508 | 2026-11-02 | vault | [The ad strategy and script frameworks are the durable part and work once the proof is real]() | mechanism | mechanism-hunting | no: This is an editorial extraction exercise already completed a |  |
+| H-0506 | 2026-11-02 | arxiv | [AI evaluators favor job applications written by certain AI models, independent of candidat](https://arxiv.org/abs/2610.41866) | mechanism | tech | no: Reproducing even a small slice needs multiple paid LLM API c |  |
+| H-0505 | 2026-11-02 | github | [N1nEmAn/sapper-v2: Autonomous pentest legion — AI commander + worker swarm + layered fact-](https://github.com/N1nEmAn/sapper-v2) (intel) | mechanism | mechanism-hunting | no: This is a Docker-based multi-agent swarm meant for an author |  |
+| H-0504 | 2026-11-02 | hn | [Show HN: Warsaw in voxels – An interactive 3D map of the city centre](https://p.migdal.pl/warsaw-vibe-voxel/) | mechanism | tech | no: The interesting part is a live voxel renderer with a heavy i |  |
+| H-0503 | 2026-11-02 | vault | [Skill debugging checklist and per-job status file for stateless scheduled sessions]() | mechanism | mechanism-hunting | no: There is no code artefact to run; this is a documentation pa |  |
+| H-0502 | 2026-11-02 | awesome | [jackjin1997/markindex (new in awesome-mcp-servers)](https://github.com/jackjin1997/markindex) | mechanism | tools-for-strangers | yes | P-0300 |
+| H-0500 | 2026-11-02 | arxiv | [How Much Can Tool Calls Reveal About You? Privacy Leakage from Tool-Call Traces](https://arxiv.org/abs/2610.41885) (intel) | mechanism | tech | no: Reproducing the benchmark needs their dataset and four LLM a |  |
+| H-0499 | 2026-11-02 | github | [caru-ini/stack-diagram: Agent skill: describe your stack in a sentence, get an architectur](https://github.com/caru-ini/stack-diagram) | mechanism | tools-for-strangers | yes | P-0299 |
+| H-0498 | 2026-11-02 | hn | [Show HN: Subvocal – Talk to your computer without making noise](https://news.ycombinator.com/item?id=50340088) | mechanism | tech | no: This needs custom hardware (RF sensor glasses or EMG electro |  |
+| H-0497 | 2026-11-02 | vault | [Speed to lead follow-up on new enquiries needs no old database]() | mechanism | mechanism-hunting | no: There is no enquiry stream, CRM, or phone system to wire thi |  |
+| H-0495 | 2026-11-01 | github | [alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species](https://github.com/alchaincyf/huashu-bird-sticker) | both | open-data | yes | P-0288 **works** |
 | H-0493 | 2026-11-01 | vault | [Promptwise MCP is read-only]() | mechanism | tools-for-strangers | no: Needs a Promptwise account and its MCP token. |  |
 | H-0491 | 2026-11-01 | arxiv | [OPERA: OPamp Design by an Expert-Taught Reasoning Agent, from Specifications to Layout](https://arxiv.org/abs/2610.39395) | mechanism | mechanism-hunting | no: Needs an LLM agent plus the SKY130 analogue toolchain, SPICE |  |
-| H-0490 | 2026-11-01 | github | [NiazMorshed2007/reanimate: A Claude Code skill that reverse-engineers any animation frame ](https://github.com/NiazMorshed2007/reanimate) | mechanism | tools-for-strangers | yes | P-0287 |
+| H-0490 | 2026-11-01 | github | [NiazMorshed2007/reanimate: A Claude Code skill that reverse-engineers any animation frame ](https://github.com/NiazMorshed2007/reanimate) | mechanism | tools-for-strangers | yes | P-0287 **works** |
 | H-0488 | 2026-11-01 | vault | [Veo 3.1 Lite as cheap draft]() | mechanism | tools-for-strangers | no: Needs a paid generation API key and spend. |  |
 | H-0486 | 2026-11-01 | arxiv | [InterA11y: Interactive Web Accessibility Error Detection with LLM Agents](https://arxiv.org/abs/2610.39488) | mechanism | tools-for-strangers | no: Needs model answers and the paper's code and annotated cases |  |
-| H-0485 | 2026-11-01 | github | [elvarofficial/teardown: A Claude Code skill that turns any machine into a 3D simulator you](https://github.com/elvarofficial/teardown) | both | tools-for-strangers | yes | P-0286 |
-| H-0484 | 2026-11-01 | hn | [Show HN: A language model that lives in a boot sector](https://github.com/kerlenton/bootgpt) | mechanism | tech | yes | P-0285 |
+| H-0485 | 2026-11-01 | github | [elvarofficial/teardown: A Claude Code skill that turns any machine into a 3D simulator you](https://github.com/elvarofficial/teardown) | both | tools-for-strangers | yes | P-0286 **works** |
+| H-0484 | 2026-11-01 | hn | [Show HN: A language model that lives in a boot sector](https://github.com/kerlenton/bootgpt) | mechanism | tech | yes | P-0285 **works** |
 | H-0483 | 2026-11-01 | vault | [Google Ads leak checklist]() | mechanism | tools-for-strangers | no: Needs access to a real Google Ads account or its exported se |  |
 | H-0482 | 2026-10-31 | hn | [Show HN: Sketch Stadium – watch your agent play Pictionary](https://sketch.wakeshift.ai/games/q5ucru) | mechanism | game-bots | yes | P-0273 **works** |
 | H-0481 | 2026-10-31 | github | [muaaz9329/cheap-ag: 50x your Claude usage with cheap-ag. Opus plans, a dirt-cheap model wr](https://github.com/muaaz9329/cheap-ag) | both | tools-for-strangers | no: Needs a paid provider API key and Claude Code usage to measu |  |
@@ -336,6 +348,145 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0510 zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 Skill：一句点子生成企划案、资产图提示词、分集剧本、分镜与视频提示词。可用于 Claude Code、WorkBuddy、DeepSeek
+2026-11-02, github, https://github.com/zhanghao123vip/ai-manju-skills
+
+- **Mechanism:** A library of 21 genre-specific SKILL.md prompt templates (no code, no dependencies) that, given one story idea, drive a chat model through a staged pipeline: project pitch and bible, character/prop/scene image prompts, episode scripts with scene-and-dialogue breakdown, a per-episode director's handbook (shot lists and video-generation prompts), and a release pack (cover prompts, trailer plan, posting copy). Output is deliberately chunked into batches with a progress marker because full output is too long for one reply; the user says 'continue' to advance. Designed for 30 episodes of about 4 minutes each in 9:16 by default, adjustable per idea.
+- **Claim:** 21 genre templates that turn one story idea into a full animated-drama production package (project bible, image prompts, scripts, shot lists, release copy) across 30 four-minute vertical episodes, with 460 GitHub stars.
+- **Testable:** yes. Does one of the SKILL.md templates (e.g. xuanhuan-manju) actually produce a coherent project bible and first-episode script from a single story idea when run as a Claude Code skill, within 30 minutes? Queued as P-0301.
+- **Idea on its own:** sound. It is a pure prompt-engineering mechanism (no code, no dependencies) directly testable with Claude Code, and the bootcamp skill chain already does something structurally similar for ad video.
+- **How it would be done:** Copy one genre's SKILL.md into a local skills folder, feed it a single invented story premise, and walk it through the staged output (pitch, character prompts, episode 1 script) to see whether the output is coherent and whether the chunking/continue mechanic actually works in Claude Code as described. If it holds up, the same pattern (staged SKILL.md pipeline for a serialised content format) could inform how bootcamp's own multi-episode projects are structured.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills), HyperFrames (video compose, captions, render)
+- **To fetch:** ai-manju-skills https://github.com/zhanghao123vip/ai-manju-skills (the 21 SKILL.md templates to copy into a skills folder and trial)
+- **Field Notes line:** A set of free prompt-only skills turns one story idea into a full animated-series production package, scripts, shot lists and all.
+
+### H-0509 Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app
+2026-11-02, hn, https://momentic.ai/
+
+- **Mechanism:** Momentic's QA agents autonomously plan and explore a web, iOS or Android app, interacting the way a human tester would (visual understanding of the UI) rather than hardcoding brittle Playwright/Selenium selectors like XPath or aria attributes, then bug-bash controls and flows to catch regressions. The pitch is that LLM-generated code reinforces its own assumptions and writes low-value tests, while classic frameworks force implementation details into the test itself; Momentic's agents instead explore the live rendered app and judge behaviour visually.
+- **Claim:** Autonomous QA agents that explore an app visually and catch bugs without hardcoded selectors, citing a near-identical DeepSWE pass rate (66.2 percent vs 65.3 percent) whether or not the coding model is allowed to write its own tests.
+- **Testable:** no. It is a hosted SaaS product with token-based pricing (per HN commenters) and needs signup and an app to point it at; no free keyless slice exists to verify the exploration claim. Needs: a Momentic account and a target app to test against.
+- **Idea on its own:** needs-a-run. The mechanism (visual exploration over selector-based scripting) is sound in principle but the specific DeepSWE number quoted is about test-writing during coding, not about this product's own bug-catch rate, so the headline claim is unverified without trying the actual tool.
+- **How it would be done:** To judge it properly would mean signing up, pointing it at a small test app (even something locally hosted) and seeing whether its exploration genuinely catches a planted bug a selector-based test would miss. That needs an account and token spend, so it stays a vendor to watch rather than something to try tonight.
+- **To fetch:** Momentic https://momentic.ai/ (the product itself, would need a signup and token spend to properly evaluate)
+- **Field Notes line:** A QA agent explores your app visually like a human tester instead of hardcoding brittle selectors, catching bugs Playwright scripts miss.
+
+### H-0508 The ad strategy and script frameworks are the durable part and work once the proof is real
+2026-11-02, vault, 
+
+- **Mechanism:** The durable value of a paid video course is distilled into reusable, non-perishable assets: ad strategy frameworks, script structures, camera and lighting vocabulary, avatar and clone production methods, and a short-film production bible, extracted once and kept as reference material independent of the platform or tool used to shoot. The mechanism is editorial curation: index everything, then explicitly flag and discard the parts that are either dated settings/numbers, self-promotion for the course's own platform, or advice the vault won't use (fake customer testimonials, watermark removal, engagement tricks, other people's characters).
+- **Claim:** 1,515 reusable assets were extracted from 94 lessons and 44 guides in a paid AI video course, with ad strategy, scripting, camera/lighting vocabulary and avatar/clone methods judged strongest, and 58 assets flagged as advice that will not be used.
+- **Testable:** no. This is an editorial extraction exercise already completed and recorded, not a piece of software or a claim with a number to verify by running something.
+- **Idea on its own:** sound. The job (turn a paid course into a repeatable production process) is already marked solved in the vault's own note, confirming the extraction method works.
+- **How it would be done:** Already done: the bootcamp skill chain (bootcamp, bootcamp-prep, bootcamp-prompt) is the operational form of this extraction. Nothing new to build; the pattern (separate durable strategy from perishable settings and from self-promotional padding) is worth reapplying whenever another paid course gets indexed.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), ElevenLabs (voice), HeyGen and Tavus (avatars)
+- **Field Notes line:** The lasting value from a paid course is the strategy and script frameworks, not the settings, which go stale and outlive the platform they were taught on.
+
+### H-0506 AI evaluators favor job applications written by certain AI models, independent of candidate quality
+2026-11-02, arxiv, https://arxiv.org/abs/2610.41866
+
+- **Mechanism:** The study pairs eleven LLM 'writer' agents (generating cover letters) against nine API-hosted LLM 'evaluator' agents screening them, across ten jobs and fifty candidates each, holding candidate quality fixed. It finds a consistent ranking of writer models by evaluator acceptance regardless of licensing, a self-preference bias where evaluators favour outputs from their own model family, and traces the effect to specific stylistic cues each writer leans on that evaluators reward or penalise, largely explaining the bias once those features are controlled for.
+- **Claim:** In an all-AI hiring pipeline, the choice of writer model alone changes acceptance odds enough to filter out about 1.8 of 25 qualified candidates in the worst model pairing, independent of their actual qualifications.
+- **Testable:** no. Reproducing even a small slice needs multiple paid LLM API calls (writer and evaluator models) across many candidate pairings, well beyond a free keyless 30-minute run. Needs: API access to several LLM providers to run any part of the writer/evaluator pairing.
+- **Idea on its own:** sound. It is a controlled, reproducible finding with a clear practical implication (which model wrote a CV may matter more than it should to an AI screener) and the paper quantifies the effect.
+- **How it would be done:** Nothing to build here for Proteus; this is a finding to note for anyone drafting AI-assisted job applications or screening tools, relevant context rather than a mechanism to operate.
+- **Field Notes line:** AI hiring screens can reject a qualified candidate just for which AI model wrote their cover letter, independent of actual quality.
+
+### H-0505 N1nEmAn/sapper-v2: Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Inte
+2026-11-02, github, https://github.com/N1nEmAn/sapper-v2
+
+- **Mechanism:** A multi-agent orchestration harness where one 'commander' AI reads a shared board and dispatches tasks to parallel 'soldier' and 'scout' agents (any CLI or model, swappable), coordinated through scheduling, shared memory, and a layered fact-intent graph that persists knowledge across agent deaths. A 'zero-strategy watchdog' process keeps the swarm alive. It won a real competition (Tencent's attack-defence CTF, 634 teams, judged 8-hour unattended run) by matching the runner-up's flag count using far fewer tokens. The pentest doctrine is a separate, swappable file from the orchestration mechanism itself.
+- **Claim:** A multi-agent orchestration harness that won first place in an 8-hour unattended cyber-attack-defence competition against 634 teams, matching the runner-up's result on roughly a fifth of its token spend.
+- **Testable:** no. This is a Docker-based multi-agent swarm meant for an authorised pentest range; there is no safe, keyless, 30-minute slice to run against a public endpoint without crossing into live offensive security testing, which the project's own disclaimer restricts to authorised targets. Needs: an authorised pentest range or CTF target to run it against, and API keys for whichever models back the agents.
+- **Idea on its own:** sound. The orchestration mechanism (shared fact graph surviving individual agent deaths, swappable model/CLI per role) is a genuinely reusable pattern for any long-horizon multi-agent task, separable from its pentest doctrine.
+- **How it would be done:** The reusable part is the general-purpose base project (nvwabase) rather than this pentest-flavoured fork: it provides commander/soldier roles, shared memory and the fact graph with no offensive doctrine attached, meant to be given a different SKILL.md for office or research work. Trying it would mean swapping in a benign doctrine and testing the orchestration mechanism (task dispatch, agent self-healing, shared knowledge) on a harmless multi-step task, not the pentest skill itself.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** nvwabase https://github.com/N1nEmAn/nvwabase (the general-purpose orchestration base with the pentest doctrine stripped out, the safer thing to actually try)
+- **Field Notes line:** A champion pentest AI swarm shows multi-agent orchestration (commander, soldiers, shared fact graph) beating a single smarter model on tokens, not just attack skill.
+
+### H-0504 Show HN: Warsaw in voxels – An interactive 3D map of the city centre
+2026-11-02, hn, https://p.migdal.pl/warsaw-vibe-voxel/
+
+- **Mechanism:** An interactive 3D voxel map of central Warsaw built from open datasets: OpenStreetMap for buildings, streets, sidewalks and tram tracks, Polish government LiDAR and aerial imagery (GUGiK/Geoportal) for building heights and colours, and the city's own tree database for species-accurate seasonal foliage. It renders in the browser, lets the user change date, time of day and weather, walk the city, and even take control of a pedestrian. It is open source on GitHub, so the dataset-to-voxel pipeline (OSM extraction, LiDAR height mapping, texture draping) is inspectable.
+- **Claim:** A fully open-source, browser-based 3D voxel reconstruction of central Warsaw's real buildings, streets and trees, built entirely from public open datasets.
+- **Testable:** no. The interesting part is a live voxel renderer with a heavy initial load, not something to run keyless in a sandbox within 30 minutes; the real test is opening it in a browser, which has no pass/fail verdict to report beyond does-it-load.
+- **Idea on its own:** sound. It is a clean worked example of combining three public open datasets into one browsable artefact, a reusable recipe for any city with similar open data.
+- **How it would be done:** The pipeline is reproducible for another city with equivalent open data (OSM plus a national LiDAR source plus a city tree database): extract building footprints and heights from OSM/LiDAR, voxelise them, drape aerial imagery for colour, and add a day/night and weather shader. The actual build is a rendering and GIS pipeline project (a weekend-scale thing), not a one-script job; the hard part is finding equivalent public LiDAR and tree data for a UK city.
+- **To fetch:** warsaw-vibe-voxel source https://github.com/stared/warsaw-vibe-voxel (the actual pipeline code, worth reading to see how OSM and LiDAR get combined into voxels before attempting it for another city)
+- **Missing:** An equivalent open LiDAR and tree dataset for a UK city, if this were ever repeated locally.
+- **Field Notes line:** An open-source voxel city builder turns OpenStreetMap, government LiDAR and a tree database into a walkable 3D Warsaw, weather and all.
+
+### H-0503 Skill debugging checklist and per-job status file for stateless scheduled sessions
+2026-11-02, vault, 
+
+- **Mechanism:** Two small operational patterns for stateless scheduled Claude Code sessions: a checklist for debugging a misbehaving skill (check it loaded, check its trigger phrase matched, check tool permissions, check the output against the skill's own spec), and a per-job status file written at the start and end of each scheduled run (what was attempted, what succeeded, what failed, timestamp) so a stateless session leaving no memory of itself can still be audited by the next run or by a human. Neither needs a model call; both are just file-writing and checklist discipline.
+- **Claim:** A free-tier Skool community's substantive technical content distils to a skill debugging checklist, a per-job status file pattern, and a web design CLAUDE.md, against 246 mostly title-only lessons.
+- **Testable:** no. There is no code artefact to run; this is a documentation pattern, not software to execute.
+- **Idea on its own:** sound. Both patterns are low-cost, well-understood engineering hygiene directly applicable to Proteus's own existing state/runs logs.
+- **How it would be done:** This is already close to what state/runs/YYYY-MM-DD.md does; the actionable version is tightening that existing file against the checklist's shape (attempted, succeeded, failed, denied, timestamp) and adding a short skill-debugging checklist as a standing reference for when a skill misfires in a scheduled run. No new tool is needed, just a short doc and a habit.
+- **Stack already covers:** launchd long-running pollers
+- **Field Notes line:** A simple per-job status file turns a stateless scheduled run into something auditable after the fact, no memory needed between runs.
+
+### H-0502 jackjin1997/markindex (new in awesome-mcp-servers)
+2026-11-02, awesome, https://github.com/jackjin1997/markindex
+
+- **Mechanism:** MarkIndex parses every Markdown file with mdast into a tree of its own sections (not fixed-size chunks), storing the tree, the original lines, and a BM25 keyword index (segmented with Intl.Segmenter for mixed Chinese/English text) plus a trigram substring fallback, all in one SQLite file. An agent gets five read-only tools to walk library to folder to document to section and pull the original text with exact line numbers, so answers cite back to `[doc_path, L-]`. No embeddings or vector database; indexing is deterministic and LLM-free, with LLM use optional and limited to summaries and a retrieve() loop.
+- **Claim:** A TypeScript, vectorless, structure-first retrieval system for large Markdown libraries that cites answers back to exact line numbers, built as a CLI plus MCP server.
+- **Testable:** yes. Does `npx markindex index` build a working SQLite index on a local folder of Markdown (e.g. this project's own notes) within 30 minutes, keyless, and can a CLI query return a correctly cited section? Queued as P-0300.
+- **Idea on its own:** sound. No-embedding, deterministic indexing with line-level citation is a real alternative to vector RAG for a library of long docs like the vault, and it needs only Node, no account or key.
+- **How it would be done:** Install with npm, point `markindex index` at a folder of real Markdown (field-notes, vault mirror notes, or this project's own docs) to build the SQLite index, then run the CLI's query/retrieve commands without a summary model to confirm the BM25 search returns the right section with a correct line citation. If it holds up, it is a candidate for indexing the vault mirror itself rather than ad hoc grep.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** markindex https://github.com/jackjin1997/markindex (the library and CLI itself, install via npm install markindex)
+- **Field Notes line:** A structure-first Markdown index that skips embeddings entirely, letting an agent cite answers back to the exact line they came from.
+
+### H-0500 How Much Can Tool Calls Reveal About You? Privacy Leakage from Tool-Call Traces
+2026-11-02, arxiv, https://arxiv.org/abs/2610.41885
+
+- **Mechanism:** The paper builds a benchmark of synthetic user profiles and agent trajectories across MCP tool calls from 25 real servers, then has LLM 'attackers' try to infer user attributes purely from the tool-call traces (arguments and returned results), without seeing the conversation. It finds tool arguments and results are the main leaking signal, and that linking traces across sessions makes profiling worse. The attack is a straightforward prompt-the-model-with-traces approach, not a novel exploit; the contribution is the benchmark and the measured leak rate.
+- **Claim:** Tool-call traces alone let an LLM attacker infer private user attributes with a 26.25 percent success rate, versus 17.97 percent from guessing with no evidence.
+- **Testable:** no. Reproducing the benchmark needs their dataset and four LLM attacker runs across 4000 trajectories, well past a 30-minute keyless slice; no useful narrower slice exists without their data. Needs: the PrivacyTrace dataset and multiple LLM API calls to reproduce any part of it.
+- **Idea on its own:** sound. It is a measured, reproducible finding (benchmark plus code released) relevant to anyone, including Proteus, whose own MCP tool calls are logged somewhere.
+- **How it would be done:** This is an intelligence item, not something to operate: the finding is a reminder that any logged tool-call trace (Proteus's own run logs, for instance) is itself a side channel worth treating carefully, since arguments and results carry more signal than people assume. The practical action is to review what Proteus's own state/runs logs expose, not to run the attack.
+- **To fetch:** PrivacyTrace https://github.com/AI45Lab/PrivacyTrace (the released benchmark and code, if a deeper read of the methodology is wanted later)
+- **Field Notes line:** Researchers show an LLM can guess private facts about you just from your agent's tool-call arguments and results, no transcript needed.
+
+### H-0499 caru-ini/stack-diagram: Agent skill: describe your stack in a sentence, get an architecture diagram with official logos
+2026-11-02, github, https://github.com/caru-ini/stack-diagram
+
+- **Mechanism:** A Claude Code skill parses a one-sentence stack description, identifies named technologies, fetches each one's official logo from a chain of sources (svgl, then devicon, then gilbarbara/logos, or AWS's own icon package), and lays them out as a self-contained HTML diagram with routed connector lines that avoid crossing text. It renders in both light and dark themes by swapping to brand dark-theme logos, checks its own output for overlaps before handing it back, and can export to PNG (via Playwright/Chromium) or a React component from the same file.
+- **Claim:** Describe your stack in one sentence and get an architecture diagram with official, unmodified logos, with 1158 GitHub stars.
+- **Testable:** yes. Does `npx skills add caru-ini/stack-diagram` install cleanly and produce a valid self-contained HTML diagram for a simple test stack within 30 minutes, keyless? Queued as P-0299.
+- **Idea on its own:** sound. The mechanism (logo-sourcing chain plus layout-and-check loop) is simple, free, and the artefact-sharing angle (publish as a Claude artifact) fits straight into existing workflows.
+- **How it would be done:** Install via npx into a sandbox directory, feed it a one-line description of a known stack (e.g. this Mac's own tool chain), and inspect the resulting HTML for logo accuracy, dark-mode switching and whether lines actually avoid text. If it works, it is immediately reusable for documenting Proteus's or a client's own stack as a shareable artefact, no extra wiring needed beyond what the skill already does.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** stack-diagram https://github.com/caru-ini/stack-diagram (the skill itself, install with npx skills add caru-ini/stack-diagram)
+- **Field Notes line:** A Claude Code skill turns one sentence about your stack into a diagram with real official logos, no drawing required.
+
+### H-0498 Show HN: Subvocal – Talk to your computer without making noise
+2026-11-02, hn, https://news.ycombinator.com/item?id=50340088
+
+- **Mechanism:** The device uses RF sensing (radar-like, reading muscle and mouth-cavity movement) rather than EMG electrodes or a camera, so it can decode silently mouthed (or even near-motionless internal) speech into text at speech-like speed. It was bootstrapped from an EMG prototype inspired by MIT's AlterEgo, then moved to a glasses-mounted RF sensor plus a trained decoding model that maps the RF signal to phonemes/words. Open-source alternatives mentioned in comments (subvox uses different sensing, lipflow reads lips via camera) show the same goal reached with cheaper, weaker approaches.
+- **Claim:** Smart glasses decode silently mouthed words to text at the speed of speech using RF sensing of the mouth, no vocalisation needed.
+- **Testable:** no. This needs custom hardware (RF sensor glasses or EMG electrodes) that does not exist in the sandbox; nothing keyless to run tonight. Needs: the physical hardware (glasses with RF sensor) or EMG electrode kit, neither available.
+- **Idea on its own:** needs-a-run. The mechanism is credible and demoed live on HN, but judging it needs the actual hardware, which nobody here has.
+- **How it would be done:** Not something to build from here: it is custom silent-speech hardware (RF sensor array integrated into glasses) paired with a trained decoder model, the kind of build that needs an electronics lab and model training on captured RF data, not an API or script. The open-source alternatives (subvox, lipflow) could be tried instead if the interest is a software-only silent-input project, using a webcam and a lip-reading model.
+- **To fetch:** lipflow https://github.com/amywork777/lipflow (camera-based lip reading, the nearest thing to this that could run on a laptop webcam with no new hardware); subvox https://github.com/joeblau/subvox (open-source silent-speech approach mentioned as an alternative, worth checking what sensing it actually uses)
+- **Missing:** The RF-sensing hardware itself; nobody here can build or buy it tonight.
+- **Field Notes line:** Glasses that read silently mouthed words via RF sensing, not a mic or camera, decode speech-speed text without making a sound.
+
+### H-0497 Speed to lead follow-up on new enquiries needs no old database
+2026-11-02, vault, 
+
+- **Mechanism:** The idea is to catch a new enquiry the moment it lands (form fill, missed call, web chat) and fire an automated first reply within seconds to minutes, before a human gets to it, using a CRM webhook or missed-call-text-back trigger wired to an SMS or voice-drop sequence. No old database or purchased list is involved; it only works on enquiries generated going forward by the business's own channels. Speed is the entire lever: conversion drops fast once response time passes a few minutes, so the mechanism is a trigger plus a templated send, not persuasion content.
+- **Claim:** Reply to a new enquiry within minutes, before staff do, using automated speed-to-lead follow-up rather than reactivating an old list.
+- **Testable:** no. There is no enquiry stream, CRM, or phone system to wire this to in the sandbox; it needs a live business's lead source. Needs: a client's own CRM or form webhook and a phone/SMS number to trigger from.
+- **Idea on its own:** sound. Speed-to-lead is a well-evidenced conversion lever and the mechanism is simple and consent-clean since it only touches enquiries the business itself just generated.
+- **How it would be done:** Wire the client's enquiry form, missed-call line or web chat to a webhook (Zapier/Make or a direct CRM webhook), route it into a simple automation that sends an SMS or triggers a voice drop within seconds, then hands to a human for anything beyond the first touch. Building it is an afternoon's automation work; the only real job for a hired person is agreeing the first-message copy and the escalation rule with the client. No list-building, scraping or consent question arises because the lead opted in by enquiring just now.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Zapier or Make.com https://zapier.com (glue between a client's form/CRM and an SMS or voice sender without building a bespoke webhook receiver each time); Twilio https://www.twilio.com (SMS and voice-drop sending for the first-touch message)
+- **Missing:** A client with a live enquiry stream to connect it to; nothing to build without one.
+- **Field Notes line:** Auto-replying to new enquiries in seconds, not minutes, needs no bought list, just a webhook and a fast first message.
 
 ### H-0495 alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species, with names in 43 languages a
 2026-11-01, github, https://github.com/alchaincyf/huashu-bird-sticker
@@ -4107,6 +4258,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0508 | 2026-11-02 | The ad strategy and script frameworks are the durable part and work once the proof is real | intel | sound | no |  |
+| H-0503 | 2026-11-02 | Skill debugging checklist and per-job status file for stateless scheduled sessions | intel | sound | no |  |
+| H-0497 | 2026-11-02 | Speed to lead follow-up on new enquiries needs no old database | intel | sound | no |  |
 | H-0493 | 2026-11-01 | Promptwise MCP is read-only | intel | sound | no |  |
 | H-0488 | 2026-11-01 | Veo 3.1 Lite as cheap draft | intel | sound | no |  |
 | H-0483 | 2026-11-01 | Google Ads leak checklist | intel | sound | no |  |
@@ -4214,6 +4368,16 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0304 | 2026-11-02 | [ai-manju-skills](https://github.com/zhanghao123vip/ai-manju-skills) | the 21 SKILL.md templates to copy into a skills folder and trial | H-0510 (zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 S) | shelf |
+| T-0303 | 2026-11-02 | [Momentic](https://momentic.ai/) | the product itself, would need a signup and token spend to properly evaluate | H-0509 (Launch HN: Momentic (YC W24) – Agents that catch b) | shelf |
+| T-0302 | 2026-11-02 | [nvwabase](https://github.com/N1nEmAn/nvwabase) | the general-purpose orchestration base with the pentest doctrine stripped out, the safer thing to actually try | H-0505 (N1nEmAn/sapper-v2: Autonomous pentest legion — AI ) | shelf |
+| T-0301 | 2026-11-02 | [warsaw-vibe-voxel source](https://github.com/stared/warsaw-vibe-voxel) | the actual pipeline code, worth reading to see how OSM and LiDAR get combined into voxels before attempting it for anoth | H-0504 (Show HN: Warsaw in voxels – An interactive 3D map ) | shelf |
+| T-0300 | 2026-11-02 | [markindex](https://github.com/jackjin1997/markindex) | the library and CLI itself, install via npm install markindex | H-0502 (jackjin1997/markindex (new in awesome-mcp-servers)) | shelf |
+| T-0299 | 2026-11-02 | [PrivacyTrace](https://github.com/AI45Lab/PrivacyTrace) | the released benchmark and code, if a deeper read of the methodology is wanted later | H-0500 (How Much Can Tool Calls Reveal About You? Privacy ) | shelf |
+| T-0298 | 2026-11-02 | [stack-diagram](https://github.com/caru-ini/stack-diagram) | the skill itself, install with npx skills add caru-ini/stack-diagram | H-0499 (caru-ini/stack-diagram: Agent skill: describe your) | shelf |
+| T-0297 | 2026-11-02 | [subvox](https://github.com/joeblau/subvox) | open-source silent-speech approach mentioned as an alternative, worth checking what sensing it actually uses | H-0498 (Show HN: Subvocal – Talk to your computer without ) | shelf |
+| T-0296 | 2026-11-02 | [lipflow](https://github.com/amywork777/lipflow) | camera-based lip reading, the nearest thing to this that could run on a laptop webcam with no new hardware | H-0498 (Show HN: Subvocal – Talk to your computer without ) | shelf |
+| T-0295 | 2026-11-02 | [Zapier or Make.com](https://zapier.com) | glue between a client's form/CRM and an SMS or voice sender without building a bespoke webhook receiver each time | H-0497 (Speed to lead follow-up on new enquiries needs no ) | shelf |
 | T-0294 | 2026-11-01 | [IOC World Bird List](https://www.worldbirdnames.org/) | Reference list to verify the species count. | H-0495 (alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Sti) | shelf |
 | T-0293 | 2026-11-01 | [huashu-bird-sticker](https://github.com/alchaincyf/huashu-bird-sticker) | The dataset itself. | H-0495 (alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Sti) | shelf |
 | T-0292 | 2026-11-01 | [gLayout](https://github.com/ReaLLMASIC/gLayout) | Layout generator framework the agent uses. | H-0491 (OPERA: OPamp Design by an Expert-Taught Reasoning ) | shelf |
@@ -4513,6 +4677,8 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0507 | 2026-11-02 | youtube | [Can We Finally Code on M5 MacBook Pro with Local AI?](https://www.youtube.com/watch?v=dWz9XgRK_uQ) | A benchmarking vlog about running local quantised LLMs on an M5 MacBook Pro; no mechanism beyond anecdotal RAM-pressure  |
+| H-0501 | 2026-11-02 | youtube | [Bonding Curve Maximize Your Trading Profits #trading #crypto #bitcoin #sol #meme](https://www.youtube.com/watch?v=9UAA8iN49cQ) | Generic pump.fun bonding-curve trading tip with no mechanism, data, or tool, just a claim to watch the curve percentage. |
 | H-0496 | 2026-11-01 | hn | [Visit Iceland Will Send a Real Knitter to Your Dumb Meeting So You Can Skip It](https://matadornetwork.com/read/iceland-ai-notetaker-knitting/) | Tourism marketing stunt with no mechanism. |
 | H-0494 | 2026-11-01 | hn | [Proposed data centre will release 23 Hiroshima atomic bomb worth of energy a day](https://www.cbc.ca/lite/story/9.7403677) | Headline-comparison news with no mechanism; commenters flag a unit error. |
 | H-0492 | 2026-11-01 | youtube | [What is an MOT & When Do You Need One? MOT Failure Items (Brakes, Lights, Tyres)](https://www.youtube.com/watch?v=v9al2xB2yFc) | Generic MOT explainer with no mechanism to test. |

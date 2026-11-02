@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 234 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,9 @@ Verdicts so far: 234 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0298 | Portrait layout for the bootgpt teardown page (experiments/2026-11-02-P-0296): below 700 px wide stack context, hidden, logits and output vertically at a readable size, recheck the 10-row match and 0 overflow at 375 px, then publish it under docs/ with the publish-proteus-site skill | desk | none |  | 0 | 20 min |
+| P-0299 | stack-diagram: does it install keyless and render a working HTML diagram for a test stack in under 30 minutes? | harvest | none |  | 0 | 25 min |
+| P-0300 | markindex: does it index a local Markdown folder keyless and return a correctly cited section via the CLI in 30 minutes? | harvest | none |  | 0 | 25 min |
+| P-0301 | ai-manju-skills: does one genre template produce a usable project bible and episode 1 script from a single idea in 30 minutes? | harvest | none |  | 0 | 25 min |
 
 ## Verdicts (286)
 
