@@ -1,0 +1,128 @@
+{
+ "window_trading_days_before_decision": 5,
+ "meetings_since_2009": 175,
+ "kinds": {
+  "hike": 16,
+  "cut": 12,
+  "hold": 147
+ },
+ "split_meetings": 79,
+ "n_draws": 1000,
+ "n_perm": 5000,
+ "EWU": {
+  "hike": {
+   "trades": 1,
+   "note": "too few"
+  },
+  "cut": {
+   "trades": 0,
+   "note": "too few"
+  },
+  "hold": {
+   "trades": 20,
+   "mean_pct": 0.608,
+   "win_pct": 75.0,
+   "control_mean_pct": 0.091,
+   "excess_pct": 0.517,
+   "p_v_control": 0.168,
+   "minus_rest_pct": 0.067,
+   "perm_p_two_sided": 0.8964
+  },
+  "split": {
+   "trades": 7,
+   "mean_pct": 0.206,
+   "win_pct": 71.4,
+   "control_mean_pct": 0.045,
+   "excess_pct": 0.161,
+   "p_v_control": 0.432,
+   "minus_rest_pct": -0.335,
+   "perm_p_two_sided": 0.6154
+  },
+  "unanimous": {
+   "trades": 14,
+   "mean_pct": 0.706,
+   "win_pct": 71.4,
+   "control_mean_pct": 0.132,
+   "excess_pct": 0.574,
+   "p_v_control": 0.216,
+   "minus_rest_pct": 0.165,
+   "perm_p_two_sided": 0.7752
+  },
+  "rest": {
+   "trades": 75,
+   "mean_pct": 0.541,
+   "win_pct": 69.3,
+   "control_mean_pct": 0.119,
+   "excess_pct": 0.422,
+   "p_v_control": 0.03
+  },
+  "split_minus_unanimous": {
+   "diff_pct": -0.501,
+   "perm_p_two_sided": 0.618
+  }
+ },
+ "all_nine": {
+  "hike": {
+   "trades": 9,
+   "mean_pct": 0.406,
+   "win_pct": 66.7,
+   "control_mean_pct": -0.128,
+   "excess_pct": 0.534,
+   "p_v_control": 0.253,
+   "minus_rest_pct": -0.201,
+   "perm_p_two_sided": 0.7788
+  },
+  "cut": {
+   "trades": 17,
+   "mean_pct": 1.886,
+   "win_pct": 88.2,
+   "control_mean_pct": -0.085,
+   "excess_pct": 1.971,
+   "p_v_control": 0.001,
+   "minus_rest_pct": 1.279,
+   "perm_p_two_sided": 0.0342
+  },
+  "hold": {
+   "trades": 204,
+   "mean_pct": 0.729,
+   "win_pct": 73.0,
+   "control_mean_pct": 0.263,
+   "excess_pct": 0.466,
+   "p_v_control": 0.005,
+   "minus_rest_pct": 0.121,
+   "perm_p_two_sided": 0.5396
+  },
+  "split": {
+   "trades": 92,
+   "mean_pct": 0.924,
+   "win_pct": 75.0,
+   "control_mean_pct": 0.076,
+   "excess_pct": 0.848,
+   "p_v_control": 0.0,
+   "minus_rest_pct": 0.317,
+   "perm_p_two_sided": 0.228
+  },
+  "unanimous": {
+   "trades": 138,
+   "mean_pct": 0.72,
+   "win_pct": 73.2,
+   "control_mean_pct": 0.341,
+   "excess_pct": 0.379,
+   "p_v_control": 0.04,
+   "minus_rest_pct": 0.113,
+   "perm_p_two_sided": 0.6218
+  },
+  "rest": {
+   "trades": 736,
+   "mean_pct": 0.607,
+   "win_pct": 75.7,
+   "control_mean_pct": 0.199,
+   "excess_pct": 0.409,
+   "p_v_control": 0.0
+  },
+  "split_minus_unanimous": {
+   "diff_pct": 0.204,
+   "perm_p_two_sided": 0.545
+  }
+ }
+}

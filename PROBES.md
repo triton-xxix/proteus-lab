@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 228 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 229 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 228 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0292 | P-0280 split by what the MPC did: RSI(5) next-open trades with entry in the 5 trading days before a hike, a cut or a hold since 2009, and before a split vote (any member dissenting) v unanimous, from the per-member columns of the Bank Rate sheet in sandbox/boe-mpcvoting.xlsx; EWU and all nine, permutation test per bucket and random-entry control | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (280)
+## Verdicts (281)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-02 | P-0292 | P-0280 split by what the MPC did: RSI(5) next-open trades with entry in the 5 trading days before a hike, a cut or a hold since 2009, and before a split vote (any member dissenting) v unanimous, from the per-member columns of the Bank Rate sheet in sandbox/boe-mpcvoting.xlsx; EWU and all nine, permutation test per bucket and random-entry control | **works** | Measured: 175 MPC meetings since 2009 split 16 hike, 12 cut, 147 hold, 79 split votes. All nine: cut bucket 17 trades +1.89 pct v rest +0.61 (perm p 0.034, control excess +1.97 p 0.001); hike 9 trades p 0.78; hold 204 p 0.54; split v unanimous +0.20 p 0.55. EWU: 1 trade before a hike, 0 before a cut, split v unanimous -0.50 p 0.62. One of ten tests under 0.05 is chance-sized (Bonferroni 0.005) and the 17 cut trades sit before 12 cuts in correlated ETFs. Shot (works, about 18 cut trades, no bucket under 0.05): verdict and count hit (17), the p half missed. Next: close (dissent adds nothing; the cut bucket is too few meetings to trade). | `experiments/2026-11-02-P-0292` | 1 min, 8 calls, 0 denied |
 | 2026-11-01 | P-0291 | Munich airport ICON lead-one bias: ICON day-ahead highs at the airport grid point v DWD 01262 daily maxima, Sep and Oct, beside P-0281's city table | **works** | Airport grid v DWD 01262 over 61 days: observed minus ICON +0.13 latest, +0.35 day-ahead (sd 1.47), +0.54 two days, against the city's +0.66, +0.83 and +1.00. The task file's +0.3C airport correction holds at lead one; noise is the same at both stations. | `experiments/2026-11-01-P-0291` | not run |
 | 2026-11-01 | P-0290 | Lichess bot acceptance: across every bot in CHALLENGES.csv, does acceptance track rating gap, games played or last-seen from the public profile? | **works** | 108 bots, 108 profiles: the 41 that ever accepted have played a median 75,040 games against 37,162 for the 63 that never did (perm p under 0.0002); rating gap (1,038 v 1,142, p 0.58), blitz rating and last-seen do not separate them. Sort the challenge list busiest first. | `experiments/2026-11-01-P-0290` | 3 min, 6 calls, 0 denied |
 | 2026-11-01 | P-0289 | arXiv PDF code links: of the 37 kept papers with no code link in the abstract, how many link GitHub inside the PDF, and do those repos resolve? | **works** | All 37 PDFs read: 18 carry GitHub links, 51 distinct repos, 49 answer 200, and both 404s are parse errors (a docs path, a split URL), so no rot. Many links are citations; about 12 of the 18 look like the paper's own code by name, so about 20 of 45 (44 pct) against the abstract-only 18 pct. | `experiments/2026-11-01-P-0289` | 4 min, 6 calls, 0 denied |

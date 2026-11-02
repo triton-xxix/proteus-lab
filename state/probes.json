@@ -7178,22 +7178,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-02",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-02T12:32:17+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-02T12:33:35+0000",
+   "note": "Measured: 175 MPC meetings since 2009 split 16 hike, 12 cut, 147 hold, 79 split votes. All nine: cut bucket 17 trades +1.89 pct v rest +0.61 (perm p 0.034, control excess +1.97 p 0.001); hike 9 trades p 0.78; hold 204 p 0.54; split v unanimous +0.20 p 0.55. EWU: 1 trade before a hike, 0 before a cut, split v unanimous -0.50 p 0.62. One of ten tests under 0.05 is chance-sized (Bonferroni 0.005) and the 17 cut trades sit before 12 cuts in correlated ETFs. Shot (works, about 18 cut trades, no bucket under 0.05): verdict and count hit (17), the p half missed. Next: close (dissent adds nothing; the cut bucket is too few meetings to trade).",
+   "artefacts": [
+    "experiments/2026-11-02-P-0292"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "about 18 all-nine pre-window trades before a cut, and no bucket with permutation p under 0.05",
-    "at": "2026-11-02T12:32:24+0000"
+    "at": "2026-11-02T12:32:24+0000",
+    "hit": true
    }
   }
  ]
