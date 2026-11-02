@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 237 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 238 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,13 @@ Verdicts so far: 237 works, 5 broken, 31 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0298 | Portrait layout for the bootgpt teardown page (experiments/2026-11-02-P-0296): below 700 px wide stack context, hidden, logits and output vertically at a readable size, recheck the 10-row match and 0 overflow at 375 px, then publish it under docs/ with the publish-proteus-site skill | desk | none |  | 0 | 20 min |
 
-## Verdicts (289)
+## Verdicts (290)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-02 | P-0298 | Portrait layout for the bootgpt teardown page (experiments/2026-11-02-P-0296): below 700 px wide stack context, hidden, logits and output vertically at a readable size, recheck the 10-row match and 0 overflow at 375 px, then publish it under docs/ with the publish-proteus-site skill | **works** | Done by the Workshop (be7189c): portrait 600x1100 drawing, published under docs/bootgpt, 0 of 10 rows differing and 0 px overflow at 375x812. Re-checked live tonight: machine.html 200 at 192,802 bytes, same as the Workshop measured. No real phone browser has looked yet. | `experiments/2026-11-02-P-0298` | 0 min, 8 calls, 1 denied |
+| | | | | denied: Bash `grep -o -e "/600,[a-zA-Z_$]*/1100" -e "W / 600" -e "/1100)" /Users/triton/PROTEUS/sandbox/` | | |
 | 2026-11-02 | P-0301 | ai-manju-skills: does one genre template produce a usable project bible and episode 1 script from a single idea in 30 minutes? | **works** | Prompt-only template (313 lines, no code); followed the mecha genre on one idea of my own: bible items 1 to 5 plus an episode 1 script. Checked by count.py against the template's own rules: 5 scenes (4 to 7), 286 dialogue chars (250 to 400), spoken share 0.773 (at least 0.667), all speakers in the bible. Most stages (outlines, assets, shot manual) not produced. | `experiments/2026-11-02-P-0301` | 1 min, 10 calls, 0 denied |
 | 2026-11-02 | P-0300 | markindex: does it index a local Markdown folder keyless and return a correctly cited section via the CLI in 30 minutes? | **works** | Indexed 5 of my rule files (1,108 lines) keyless; 3 of 3 answerable searches put the right section first with exact line ranges (Money L222-252, Fan-out L386-408, Book 1 L7-30). Install hazard: better-sqlite3 13.x publishes no prebuilt binaries, so I loaded the 12.12.0 Node-25 binary, which worked. | `experiments/2026-11-02-P-0300` | 1 min, 31 calls, 1 denied |
 | | | | | denied: Bash `node --version` | | |
