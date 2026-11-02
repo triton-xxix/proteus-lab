@@ -1,0 +1,12 @@
+{
+ "emulator_rows": 10,
+ "chars_used_for_seed": 9,
+ "seeds_consistent": 1,
+ "seed": "0x9e75",
+ "full_rows_compared": 9,
+ "rows_differing": 0,
+ "last_row_prefix_match": true,
+ "printed_chars_compared": 397,
+ "first_diff": null,
+ "train_py_seed_0x1234_possible": false
+}

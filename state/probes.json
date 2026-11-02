@@ -7236,22 +7236,27 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-02",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-02T12:35:24+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-11-02T12:37:53+0000",
+   "note": "Measured: bootgpt disk.img boots in v86 0.5.473 under Node (BIOS fetched separately, screen rebuilt from put-char events) to its header and a dreamed Linux boot log in under 6 s. The disk seeds from the PIT clock and forces the seed odd, so train.py seed 0x1234 sample can never show; the first 9 printed chars pin one seed of 32,768 (0x9e75), and from it the integer sim built from weights.bin matches the next 388 chars with 0 differing rows. Shot (boots under 10 s, 0 differing chars v train.py sample): verdict hit, 0 differing hit only against the recovered seed, the literal sample is impossible by construction. Next: close (the README claim holds; the clock seed is the one caveat).",
+   "artefacts": [
+    "experiments/2026-11-02-P-0294"
+   ],
+   "minutes": 2,
+   "calls": 24,
+   "denied": [
+    "Bash `/usr/local/bin/node /Users/triton/PROTEUS/experiments/2026-11-02-P-0294/boot.mjs 4 hda`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.45,
     "number": "boots in under 10 emulated seconds and the screen text differs from train.py's integer sample in 0 characters",
-    "at": "2026-11-02T12:35:31+0000"
+    "at": "2026-11-02T12:35:31+0000",
+    "hit": true
    }
   }
  ]
