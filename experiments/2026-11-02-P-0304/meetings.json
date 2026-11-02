@@ -1,0 +1,1114 @@
+[
+{
+"date": "1997-07-10",
+"rate_pct": 6.75,
+"kind": "hike",
+"voters": 6,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1997-08-07",
+"rate_pct": 7.0,
+"kind": "hike",
+"voters": 5,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1997-09-11",
+"rate_pct": 7.0,
+"kind": "hold",
+"voters": 7,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1997-10-09",
+"rate_pct": 7.0,
+"kind": "hold",
+"voters": 7,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1997-11-06",
+"rate_pct": 7.25,
+"kind": "hike",
+"voters": 7,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1997-12-04",
+"rate_pct": 7.25,
+"kind": "hold",
+"voters": 8,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1998-01-08",
+"rate_pct": 7.25,
+"kind": "hold",
+"voters": 8,
+"dissent": 3,
+"split": true
+},
+{
+"date": "1998-02-05",
+"rate_pct": 7.25,
+"kind": "hold",
+"voters": 8,
+"dissent": 4,
+"split": true
+},
+{
+"date": "1998-03-05",
+"rate_pct": 7.25,
+"kind": "hold",
+"voters": 8,
+"dissent": 4,
+"split": true
+},
+{
+"date": "1998-04-09",
+"rate_pct": 7.25,
+"kind": "hold",
+"voters": 8,
+"dissent": 3,
+"split": true
+},
+{
+"date": "1998-05-07",
+"rate_pct": 7.25,
+"kind": "hold",
+"voters": 8,
+"dissent": 2,
+"split": true
+},
+{
+"date": "1998-06-04",
+"rate_pct": 7.5,
+"kind": "hike",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1998-07-09",
+"rate_pct": 7.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1998-08-06",
+"rate_pct": 7.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "1998-09-10",
+"rate_pct": 7.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "1998-10-08",
+"rate_pct": 7.25,
+"kind": "cut",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "1998-11-05",
+"rate_pct": 6.75,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1998-12-10",
+"rate_pct": 6.25,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1999-01-07",
+"rate_pct": 6.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "1999-02-04",
+"rate_pct": 5.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1999-03-03",
+"rate_pct": 5.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1999-04-08",
+"rate_pct": 5.25,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1999-05-06",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "1999-06-10",
+"rate_pct": 5.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1999-07-08",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1999-08-05",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1999-09-08",
+"rate_pct": 5.25,
+"kind": "hike",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "1999-10-07",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "1999-11-04",
+"rate_pct": 5.5,
+"kind": "hike",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "1999-12-09",
+"rate_pct": 5.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2000-01-13",
+"rate_pct": 5.75,
+"kind": "hike",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2000-02-10",
+"rate_pct": 6.0,
+"kind": "hike",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2000-03-09",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2000-04-06",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2000-05-04",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2000-06-07",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2000-07-06",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2000-08-03",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2000-09-07",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2000-10-05",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2000-11-09",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2000-12-07",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2001-01-11",
+"rate_pct": 6.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2001-02-08",
+"rate_pct": 5.75,
+"kind": "cut",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2001-03-08",
+"rate_pct": 5.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2001-04-05",
+"rate_pct": 5.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2001-05-10",
+"rate_pct": 5.25,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2001-06-06",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2001-07-05",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2001-08-02",
+"rate_pct": 5.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2001-09-06",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2001-09-18",
+"rate_pct": 4.75,
+"kind": "cut",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2001-10-04",
+"rate_pct": 4.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2001-11-08",
+"rate_pct": 4.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2001-12-05",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2002-01-10",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2002-02-07",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2002-03-07",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2002-04-04",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2002-05-09",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2002-06-06",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 8,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2002-07-04",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2002-08-01",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2002-09-05",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 8,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2002-10-10",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2002-11-07",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2002-12-05",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2003-01-09",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2003-02-06",
+"rate_pct": 3.75,
+"kind": "cut",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2003-03-06",
+"rate_pct": 3.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2003-04-10",
+"rate_pct": 3.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2003-05-08",
+"rate_pct": 3.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2003-06-05",
+"rate_pct": 3.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2003-07-10",
+"rate_pct": 3.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2003-08-07",
+"rate_pct": 3.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2003-09-04",
+"rate_pct": 3.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2003-10-09",
+"rate_pct": 3.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2003-11-06",
+"rate_pct": 3.75,
+"kind": "hike",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2003-12-04",
+"rate_pct": 3.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2004-01-08",
+"rate_pct": 3.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2004-02-05",
+"rate_pct": 4.0,
+"kind": "hike",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-03-04",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-04-08",
+"rate_pct": 4.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2004-05-06",
+"rate_pct": 4.25,
+"kind": "hike",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-06-10",
+"rate_pct": 4.5,
+"kind": "hike",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-07-08",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-08-05",
+"rate_pct": 4.75,
+"kind": "hike",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-09-09",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-10-07",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-11-04",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2004-12-09",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2005-01-13",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2005-02-10",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2005-03-10",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2005-04-07",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2005-05-09",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2005-06-09",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2005-07-07",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2005-08-04",
+"rate_pct": 4.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2005-09-08",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2005-10-06",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2005-11-10",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2005-12-08",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-01-12",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-02-09",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-03-09",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-04-06",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 8,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-05-04",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 8,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2006-06-08",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 8,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-07-06",
+"rate_pct": 4.5,
+"kind": "hold",
+"voters": 7,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2006-08-03",
+"rate_pct": 4.75,
+"kind": "hike",
+"voters": 7,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2006-09-07",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 8,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2006-10-05",
+"rate_pct": 4.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2006-11-09",
+"rate_pct": 5.0,
+"kind": "hike",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2006-12-07",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2007-01-11",
+"rate_pct": 5.25,
+"kind": "hike",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2007-02-08",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2007-03-08",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2007-04-05",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2007-05-10",
+"rate_pct": 5.5,
+"kind": "hike",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2007-06-07",
+"rate_pct": 5.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 4,
+"split": true
+},
+{
+"date": "2007-07-05",
+"rate_pct": 5.75,
+"kind": "hike",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2007-08-02",
+"rate_pct": 5.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2007-09-06",
+"rate_pct": 5.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2007-10-04",
+"rate_pct": 5.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2007-11-08",
+"rate_pct": 5.75,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2007-12-06",
+"rate_pct": 5.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2008-01-10",
+"rate_pct": 5.5,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2008-02-07",
+"rate_pct": 5.25,
+"kind": "cut",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2008-03-06",
+"rate_pct": 5.25,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2008-04-10",
+"rate_pct": 5.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 3,
+"split": true
+},
+{
+"date": "2008-05-08",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2008-06-05",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2008-07-10",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2008-08-07",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 2,
+"split": true
+},
+{
+"date": "2008-09-04",
+"rate_pct": 5.0,
+"kind": "hold",
+"voters": 9,
+"dissent": 1,
+"split": true
+},
+{
+"date": "2008-10-08",
+"rate_pct": 4.5,
+"kind": "cut",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2008-11-06",
+"rate_pct": 3.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 0,
+"split": false
+},
+{
+"date": "2008-12-04",
+"rate_pct": 2.0,
+"kind": "cut",
+"voters": 9,
+"dissent": 0,
+"split": false
+}
+]

@@ -1,5 +1,5 @@
 {
- "next_id": 304,
+ "next_id": 305,
  "items": [
   {
    "id": "P-0001",
@@ -7479,6 +7479,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0304",
+   "title": "MPC cut bucket out of sample: RSI(5) next-open trades in the 5 days before Bank Rate cuts, 1997 to 2008, all nine and EWU; does P-0292's +1.9 points survive?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-02",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-02T23:43:43+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-02T23:44:05+0000",
+   "note": "P-0292's own script on the 1997 to 2008 meetings it left out: 139 meetings, 23 cuts, but only 1 trade in a cut pre-window across all nine (0 on EWU), because those cuts came in falling markets where the 200-day filter keeps the book flat. The cut effect has no out-of-sample test; hike +0.45 v rest p 0.39, hold -0.71 p 0.04 (1 of 5 tests). Close stands.",
+   "artefacts": [
+    "experiments/2026-11-02-P-0304"
+   ],
+   "minutes": 0,
+   "calls": 4,
    "denied": [],
    "luke": false
   }
