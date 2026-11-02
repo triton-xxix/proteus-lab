@@ -1,0 +1,136 @@
+{
+ "run_pulled": "2026-11-02 about 23:45 UTC",
+ "point": "48.137,11.575",
+ "models": {
+  "icon_seamless_eps": {
+   "members": 40,
+   "leads": {
+    "1": {
+     "day": "2026-11-03",
+     "members_with_24h": 40,
+     "median": 5.9,
+     "p10": 5.69,
+     "p90": 6.21,
+     "width": 0.52,
+     "calibrated_width": 3.38,
+     "ratio": 0.15
+    },
+    "2": {
+     "day": "2026-11-04",
+     "members_with_24h": 40,
+     "median": 6.35,
+     "p10": 5.89,
+     "p90": 6.81,
+     "width": 0.92,
+     "calibrated_width": 3.46,
+     "ratio": 0.27
+    },
+    "3": {
+     "day": "2026-11-05",
+     "members_with_24h": 40,
+     "median": 6.3,
+     "p10": 5.49,
+     "p90": 7.51,
+     "width": 2.02,
+     "calibrated_width": 4.56,
+     "ratio": 0.44
+    },
+    "4": {
+     "day": "2026-11-06",
+     "members_with_24h": 40,
+     "median": 4.35,
+     "p10": 3.39,
+     "p90": 5.81,
+     "width": 2.42,
+     "calibrated_width": 5.66,
+     "ratio": 0.43
+    },
+    "5": {
+     "day": "2026-11-07",
+     "members_with_24h": 40,
+     "median": 6.15,
+     "p10": 4.4,
+     "p90": 7.73,
+     "width": 3.33,
+     "calibrated_width": 6.76,
+     "ratio": 0.49
+    },
+    "6": {
+     "day": "2026-11-08",
+     "members_with_24h": 40,
+     "median": 8.3,
+     "p10": 5.58,
+     "p90": 10.32,
+     "width": 4.74,
+     "calibrated_width": 7.01,
+     "ratio": 0.68
+    }
+   }
+  },
+  "ecmwf_ifs025_ensemble": {
+   "members": 51,
+   "leads": {
+    "1": {
+     "day": "2026-11-03",
+     "members_with_24h": 51,
+     "median": 6.0,
+     "p10": 5.7,
+     "p90": 6.4,
+     "width": 0.7,
+     "calibrated_width": 3.38,
+     "ratio": 0.21
+    },
+    "2": {
+     "day": "2026-11-04",
+     "members_with_24h": 51,
+     "median": 6.5,
+     "p10": 5.9,
+     "p90": 7.3,
+     "width": 1.4,
+     "calibrated_width": 3.46,
+     "ratio": 0.41
+    },
+    "3": {
+     "day": "2026-11-05",
+     "members_with_24h": 51,
+     "median": 7.1,
+     "p10": 6.0,
+     "p90": 8.1,
+     "width": 2.1,
+     "calibrated_width": 4.56,
+     "ratio": 0.46
+    },
+    "4": {
+     "day": "2026-11-06",
+     "members_with_24h": 51,
+     "median": 6.7,
+     "p10": 4.7,
+     "p90": 7.8,
+     "width": 3.1,
+     "calibrated_width": 5.66,
+     "ratio": 0.55
+    },
+    "5": {
+     "day": "2026-11-07",
+     "members_with_24h": 51,
+     "median": 7.0,
+     "p10": 4.2,
+     "p90": 9.7,
+     "width": 5.5,
+     "calibrated_width": 6.76,
+     "ratio": 0.81
+    },
+    "6": {
+     "day": "2026-11-08",
+     "members_with_24h": 51,
+     "median": 6.9,
+     "p10": 3.4,
+     "p90": 9.2,
+     "width": 5.8,
+     "calibrated_width": 7.01,
+     "ratio": 0.83
+    }
+   }
+  }
+ }
+}

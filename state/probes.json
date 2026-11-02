@@ -1,5 +1,5 @@
 {
- "next_id": 303,
+ "next_id": 304,
  "items": [
   {
    "id": "P-0001",
@@ -7454,6 +7454,28 @@
    "note": "61 days Sep to Oct, airport v DWD 01262: sd 0.56, 1.47, 1.22, 1.75, 2.14, 2.64, 2.78 by lead 0 to 6, within 0.15C of the city at every lead; bias +0.13 at lead 0 rising to about +0.6 from lead 2; exact-degree hit at +0.3 is 62, 38, 34, 25, 18, 16, 12 pct, so the last lead at or above 25 pct is 2 (lead 3 at 24.6). se about 6 points a hit.",
    "artefacts": [
     "experiments/2026-11-02-P-0302"
+   ],
+   "minutes": 0,
+   "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0303",
+   "title": "Munich ensemble spread v measured error: tonight's ICON-EPS and ECMWF p10-p90 width of the daily high at leads 1 to 6 against 2.56 x P-0293's sd; underdispersed by how much?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-02",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-02T23:42:42+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-02T23:43:09+0000",
+   "note": "Tonight's run, city point: ICON-EPS 10-90 width of the daily high 0.52, 0.92, 2.02, 2.42, 3.33, 4.74C by lead 1 to 6, ECMWF 0.70 to 5.80, against 3.38 to 7.01 that 2.56 x P-0293's sd asks for; ratios 0.15 to 0.68 (ICON) and 0.21 to 0.83 (ECMWF). Far too narrow next day, matching P-0232 and P-0249 captures. One run, a reading not a rate.",
+   "artefacts": [
+    "experiments/2026-11-02-P-0303"
    ],
    "minutes": 0,
    "calls": 5,
