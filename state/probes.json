@@ -1,5 +1,5 @@
 {
- "next_id": 310,
+ "next_id": 311,
  "items": [
   {
    "id": "P-0001",
@@ -7649,6 +7649,32 @@
     "number": "IFS sd grows about +0.3 a day of lead (ICON +0.4)",
     "at": "2026-11-03T12:40:32+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0310",
+   "title": "Munich ensemble run two: one ensemble-api call today (P-0303's call, icon_seamless_eps and ecmwf_ifs025 ensemble, city point) saved as sandbox/om-ens-munich-2026-11-03.json; the number is the 10-90 band width at leads 1 to 5 against the 2 Nov run's, so the one-fifth width ratio is tested for run-to-run stability, plus 2 Nov's lead-0 band against the DWD 03379 high of 2 Nov (in or out). The seven-night series needs a nightly pull nobody runs yet: say so, do not build it here",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-03",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-03T12:42:22+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "at most 2 of 6 scored ICON-EPS lead-1 days have the DWD high inside the 10-90 band",
+    "at": "2026-11-03T12:42:28+0000"
    }
   }
  ]
