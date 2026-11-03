@@ -1,5 +1,5 @@
 {
- "next_id": 306,
+ "next_id": 307,
  "items": [
   {
    "id": "P-0001",
@@ -7534,6 +7534,32 @@
    "calls": 4,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0306",
+   "title": "bootgpt speed in v86: timestamp every screen-put-char and read emulator.get_instruction_counter() per char over a 10 s boot; report chars per second, instructions per char, and the share of each char's time the 10 ms int 0x15 wait takes (ceiling 100 chars/s if inference were free); add a save_state after the header and time a restore-to-first-char (P-0294 boot.mjs)",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-03T12:34:06+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "about 70 chars per wall second, wait share over 60 percent",
+    "at": "2026-11-03T12:34:11+0000"
+   }
   }
  ]
 }
