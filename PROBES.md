@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 248 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 249 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 248 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
-| P-0313 | HackerTV: what share of YouTube links in recent HN comments still resolve via oEmbed? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (301)
+## Verdicts (302)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-03 | P-0313 | HackerTV: what share of YouTube links in recent HN comments still resolve via oEmbed? | **works** | 149 of 150 YouTube ids from 600 HN comments (31 Oct to 3 Nov) resolved via oEmbed (0.993), 1 returned 401; no 429 at one call a second. Fresh links only, so it says nothing about long-run rot. | `experiments/2026-11-03-P-0313` | 3 min, 9 calls, 0 denied |
 | 2026-11-03 | P-0312 | mcp-video-analyzer: does its CLI return transcript, frames and metadata for a public YouTube video in under 120 seconds? | **works** | 0.11.0 returned metadata, transcript and 1 frame for a 19 s clip in 10.2 s; a 9 min video took 126.6 s with 5 frames and OCR but no transcript (YouTube 429, then an unasked OpenAI fallback got 401). Needs FFMPEG_BIN and MCP_CACHE_DIR set to stay inside the sandbox. | `experiments/2026-11-03-P-0312` | 4 min, 25 calls, 1 denied |
 | | | | | denied: Bash `MCP_CACHE_DIR=/Users/triton/PROTEUS/sandbox/mcpva/cache node /Users/triton/PROTEUS/sandbox` | | |
 | 2026-11-03 | P-0310 | Munich ensemble run two: one ensemble-api call today (P-0303's call, icon_seamless_eps and ecmwf_ifs025 ensemble, city point) saved as sandbox/om-ens-munich-2026-11-03.json; the number is the 10-90 band width at leads 1 to 5 against the 2 Nov run's, so the one-fifth width ratio is tested for run-to-run stability, plus 2 Nov's lead-0 band against the DWD 03379 high of 2 Nov (in or out). The seven-night series needs a nightly pull nobody runs yet: say so, do not build it here | **works** | Measured the nightly lead-1 bands the exchange already captures (the queue line said nobody pulls them; wrong, P-0232 and P-0249 do): ICON-EPS 2 of 6 DWD highs inside the 10-90 band, all 4 misses above p90, width 1.24 C; ECMWF ens 1 of 5, all misses above. Calibrated would be about 80%. Shot: at most 2 of 6: hit, called after seeing two band rows, not the obs. Next: deepen (queue P-0311: the +1.0-shifted band capture once 20 days are scored). | `experiments/2026-11-03-P-0310` | 0 min, 6 calls, 0 denied |
