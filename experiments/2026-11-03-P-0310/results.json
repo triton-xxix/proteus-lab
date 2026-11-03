@@ -1,0 +1,166 @@
+{
+ "station": "DWD 03379 Muenchen-Stadt TXK",
+ "last_obs": "2026-11-02",
+ "books": {
+  "icon_eps_band": {
+   "rows": [
+    {
+     "day": "2026-10-28",
+     "scored": true,
+     "p10": 10.9,
+     "p90": 13.14,
+     "width": 2.24,
+     "obs": 12.5,
+     "inside": true,
+     "miss": 0.0,
+     "above": false,
+     "obs_minus_p50": 0.4
+    },
+    {
+     "day": "2026-10-29",
+     "scored": true,
+     "p10": 10.06,
+     "p90": 11.32,
+     "width": 1.26,
+     "obs": 12.2,
+     "inside": false,
+     "miss": 0.88,
+     "above": true,
+     "obs_minus_p50": 1.5
+    },
+    {
+     "day": "2026-10-30",
+     "scored": true,
+     "p10": 9.58,
+     "p90": 11.0,
+     "width": 1.42,
+     "obs": 11.6,
+     "inside": false,
+     "miss": 0.6,
+     "above": true,
+     "obs_minus_p50": 1.3
+    },
+    {
+     "day": "2026-10-31",
+     "scored": true,
+     "p10": 8.88,
+     "p90": 10.1,
+     "width": 1.22,
+     "obs": 9.2,
+     "inside": true,
+     "miss": 0.0,
+     "above": false,
+     "obs_minus_p50": 0.0
+    },
+    {
+     "day": "2026-11-01",
+     "scored": true,
+     "p10": 7.08,
+     "p90": 7.92,
+     "width": 0.84,
+     "obs": 9.9,
+     "inside": false,
+     "miss": 1.98,
+     "above": true,
+     "obs_minus_p50": 2.4
+    },
+    {
+     "day": "2026-11-02",
+     "scored": true,
+     "p10": 5.7,
+     "p90": 6.7,
+     "width": 1.0,
+     "obs": 7.9,
+     "inside": false,
+     "miss": 1.2,
+     "above": true,
+     "obs_minus_p50": 1.7
+    },
+    {
+     "day": "2026-11-03",
+     "scored": false
+    }
+   ],
+   "scored": 6,
+   "inside": 2,
+   "above_p90": 4,
+   "width_median": 1.24,
+   "abs_obs_minus_p50_median": 1.4,
+   "miss_median": 0.74
+  },
+  "ecmwf_ens_band": {
+   "rows": [
+    {
+     "day": "2026-10-29",
+     "scored": true,
+     "p10": 8.29,
+     "p90": 10.62,
+     "width": 2.33,
+     "obs": 12.2,
+     "inside": false,
+     "miss": 1.58,
+     "above": true,
+     "obs_minus_p50": 2.5
+    },
+    {
+     "day": "2026-10-30",
+     "scored": true,
+     "p10": 9.4,
+     "p90": 10.8,
+     "width": 1.4,
+     "obs": 11.6,
+     "inside": false,
+     "miss": 0.8,
+     "above": true,
+     "obs_minus_p50": 1.5
+    },
+    {
+     "day": "2026-10-31",
+     "scored": true,
+     "p10": 8.0,
+     "p90": 9.31,
+     "width": 1.31,
+     "obs": 9.2,
+     "inside": true,
+     "miss": 0.0,
+     "above": false,
+     "obs_minus_p50": 0.5
+    },
+    {
+     "day": "2026-11-01",
+     "scored": true,
+     "p10": 6.49,
+     "p90": 7.3,
+     "width": 0.81,
+     "obs": 9.9,
+     "inside": false,
+     "miss": 2.6,
+     "above": true,
+     "obs_minus_p50": 3.1
+    },
+    {
+     "day": "2026-11-02",
+     "scored": true,
+     "p10": 6.39,
+     "p90": 7.02,
+     "width": 0.63,
+     "obs": 7.9,
+     "inside": false,
+     "miss": 0.88,
+     "above": true,
+     "obs_minus_p50": 1.2
+    },
+    {
+     "day": "2026-11-03",
+     "scored": false
+    }
+   ],
+   "scored": 5,
+   "inside": 1,
+   "above_p90": 4,
+   "width_median": 1.31,
+   "abs_obs_minus_p50_median": 1.5,
+   "miss_median": 0.88
+  }
+ }
+}
