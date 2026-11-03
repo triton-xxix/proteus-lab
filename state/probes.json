@@ -4469,26 +4469,29 @@
    "id": "P-0185",
    "title": "Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184)",
    "source": "desk",
-   "needs": "",
+   "needs": "20 new G or R01 entries after 20 Oct; neither book has entered since R-0029 on 20 Oct 22:38Z (G last 16 Oct)",
    "after": "2026-11-03",
    "est_minutes": 20,
    "added": "2026-10-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-03T12:32:16+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-03T12:33:14+0000",
+   "note": "Measured 0 G or R01 entries after 20 Oct (shot: fewer than 20, blocked at 0.60, hit). Last R01 entries R-0027 to R-0029 at 20 Oct 22:38Z, G last G-0092 on 16 Oct. Insider snapshots still land nightly (to 2 Nov), so the input exists; the trades do not. forward.py is ready to rerun as soon as entries resume.",
+   "artefacts": [
+    "experiments/2026-11-03-P-0185"
+   ],
+   "minutes": 0,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.6,
     "number": "fewer than 20 G plus R01 entries after 20 Oct carrying graph_insiders",
-    "at": "2026-11-03T12:32:25+0000"
+    "at": "2026-11-03T12:32:25+0000",
+    "hit": true
    }
   },
   {

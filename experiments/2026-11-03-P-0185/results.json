@@ -1,0 +1,22 @@
+{
+ "cut": "2026-10-20T23:59:59",
+ "entries_after_cut": 0,
+ "scored_unique": 0,
+ "entries_by_book": {
+  "LEDGER.csv": 0,
+  "LEDGER-R01.csv": 0
+ },
+ "last_entry": null,
+ "first20_kept": {
+  "n": 0,
+  "mean": null,
+  "median": null
+ },
+ "first20_skipped": {
+  "n": 0,
+  "mean": null,
+  "median": null
+ },
+ "rows": [],
+ "gap_points": null
+}
