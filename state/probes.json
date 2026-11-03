@@ -7601,22 +7601,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-03",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-03T12:38:38+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-03T12:39:52+0000",
+   "note": "Measured 16 of 20 top-5 (80%) and 11 of 20 at rank 1 (55%), MRR 0.646, over 20 questions on my five rule files, BM25, no key. Shot: top-5 about 75%, rank-1 about 50%: hit. README quotes 73.3% BM25 top-5 on its 329-doc corpus; mine is far smaller, a sanity check not a beat. 3 of 4 misses are vocabulary (cull v dropped, never does v forbidden, blind v before the odds). lang is a required field. Next: close (BM25 finds my rules four times in five; agent mode needs a key).",
+   "artefacts": [
+    "experiments/2026-11-03-P-0308"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "top-5 hit about 75 percent, rank-1 about 50 percent",
-    "at": "2026-11-03T12:38:41+0000"
+    "at": "2026-11-03T12:38:41+0000",
+    "hit": true
    }
   }
  ]

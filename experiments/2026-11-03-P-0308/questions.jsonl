@@ -1,0 +1,20 @@
+{"id": "q01", "lang": "en", "question":"How much money may be spent each month and what is the hard limit?", "gold": [{"doc_path": "charter.md", "start_line": 222, "end_line": 252}]}
+{"id": "q02", "lang": "en", "question":"How many sub-agents may one run spawn?", "gold": [{"doc_path": "charter.md", "start_line": 386, "end_line": 408}]}
+{"id": "q03", "lang": "en", "question":"What happens when the HALT file exists?", "gold": [{"doc_path": "charter.md", "start_line": 409, "end_line": 429}]}
+{"id": "q04", "lang": "en", "question":"What is a probe and when does it count as finished?", "gold": [{"doc_path": "charter.md", "start_line": 156, "end_line": 179}]}
+{"id": "q05", "lang": "en", "question":"What gets dropped at the weekly Sunday review?", "gold": [{"doc_path": "charter.md", "start_line": 180, "end_line": 198}]}
+{"id": "q06", "lang": "en", "question":"Which actions are allowed without asking Luke first?", "gold": [{"doc_path": "charter.md", "start_line": 93, "end_line": 108}]}
+{"id": "q07", "lang": "en", "question":"Things Proteus is forbidden to do", "gold": [{"doc_path": "charter.md", "start_line": 126, "end_line": 148}]}
+{"id": "q08", "lang": "en", "question":"What times do the Inspector, Trials, Workshop and Smith slots run?", "gold": [{"doc_path": "charter.md", "start_line": 340, "end_line": 365}]}
+{"id": "q09", "lang": "en", "question":"How is a called shot scored and what Brier score is the bar?", "gold": [{"doc_path": "pass-marks.md", "start_line": 395, "end_line": 411}]}
+{"id": "q10", "lang": "en", "question":"What counts as inconclusive at the review?", "gold": [{"doc_path": "pass-marks.md", "start_line": 341, "end_line": 358}]}
+{"id": "q11", "lang": "en", "question":"What disqualifies a result from counting?", "gold": [{"doc_path": "pass-marks.md", "start_line": 359, "end_line": 394}]}
+{"id": "q12", "lang": "en", "question":"When is the harvester judged a failure and switched off?", "gold": [{"doc_path": "pass-marks.md", "start_line": 262, "end_line": 304}]}
+{"id": "q13", "lang": "en", "question":"What must the football forecasts beat to pass?", "gold": [{"doc_path": "pass-marks.md", "start_line": 164, "end_line": 231}]}
+{"id": "q14", "lang": "en", "question":"How are exchange calls scored against the market price?", "gold": [{"doc_path": "desks/exchange-rules.md", "start_line": 30, "end_line": 47}]}
+{"id": "q15", "lang": "en", "question":"Is my own probability written down before I look at the odds?", "gold": [{"doc_path": "desks/exchange-rules.md", "start_line": 19, "end_line": 29}]}
+{"id": "q16", "lang": "en", "question":"Which ETFs and entry signal does the RSI dip book use?", "gold": [{"doc_path": "desks/systems-rules.md", "start_line": 7, "end_line": 30}]}
+{"id": "q17", "lang": "en", "question":"What does the IBS book trade and when does it enter?", "gold": [{"doc_path": "desks/systems-rules.md", "start_line": 55, "end_line": 85}]}
+{"id": "q18", "lang": "en", "question":"How does a new edge get admitted?", "gold": [{"doc_path": "desks/edges-rules.md", "start_line": 17, "end_line": 38}]}
+{"id": "q19", "lang": "en", "question":"When is an edge killed or retired?", "gold": [{"doc_path": "desks/edges-rules.md", "start_line": 56, "end_line": 63}]}
+{"id": "q20", "lang": "en", "question":"How does a Grinder rule graduate to the graduation book?", "gold": [{"doc_path": "pass-marks.md", "start_line": 148, "end_line": 163}]}

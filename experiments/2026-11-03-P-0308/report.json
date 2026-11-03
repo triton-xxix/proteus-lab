@@ -1,0 +1,1202 @@
+{
+  "mode": "bm25",
+  "createdAt": "2026-11-03T12:39:34.602Z",
+  "options": {
+    "topK": 5
+  },
+  "summary": {
+    "overall": {
+      "questions": 20,
+      "hits": 16,
+      "hitRate": 0.8,
+      "hitAt1": 0.55,
+      "mrr": 0.6458,
+      "avgTokens": 638.35,
+      "avgSteps": 1,
+      "errors": 0,
+      "meanEvidenceLines": 109.25,
+      "medianEvidenceLines": 108.5,
+      "meanEvidenceTokens": 1962.8,
+      "meanPrecision": 0.1892
+    },
+    "byLang": {
+      "en": {
+        "questions": 20,
+        "hits": 16,
+        "hitRate": 0.8,
+        "hitAt1": 0.55,
+        "mrr": 0.6458,
+        "avgTokens": 638.35,
+        "avgSteps": 1,
+        "errors": 0,
+        "meanEvidenceLines": 109.25,
+        "medianEvidenceLines": 108.5,
+        "meanEvidenceTokens": 1962.8,
+        "meanPrecision": 0.1892
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "q01",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 129,
+      "evidenceTokens": 2253,
+      "precision": 0.2403,
+      "tokens": 627,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Money"
+          ],
+          "startLine": 222,
+          "endLine": 252
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v1 to v2"
+          ],
+          "startLine": 31,
+          "endLine": 67
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus costs in Claude"
+          ],
+          "startLine": 302,
+          "endLine": 323
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus may do without asking"
+          ],
+          "startLine": 93,
+          "endLine": 108
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The intelligence lane"
+          ],
+          "startLine": 199,
+          "endLine": 221
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 119,
+      "evidenceTokens": 2038,
+      "precision": 0.1933,
+      "tokens": 627,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Fan-out"
+          ],
+          "startLine": 386,
+          "endLine": 408
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The intelligence lane"
+          ],
+          "startLine": 199,
+          "endLine": 221
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The harvester"
+          ],
+          "startLine": 262,
+          "endLine": 304
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus never does"
+          ],
+          "startLine": 126,
+          "endLine": 148
+        },
+        {
+          "docPath": "desks/systems-rules.md",
+          "titlePath": [
+            "The systems book",
+            "What this is not"
+          ],
+          "startLine": 86,
+          "endLine": 92
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 93,
+      "evidenceTokens": 1485,
+      "precision": 0.2258,
+      "tokens": 621,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Kill switch"
+          ],
+          "startLine": 409,
+          "endLine": 429
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Probes"
+          ],
+          "startLine": 156,
+          "endLine": 179
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Changing this file"
+          ],
+          "startLine": 14,
+          "endLine": 21
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Graduation"
+          ],
+          "startLine": 279,
+          "endLine": 301
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "Forward test"
+          ],
+          "startLine": 39,
+          "endLine": 55
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 93,
+      "evidenceTokens": 1497,
+      "precision": 0.2581,
+      "tokens": 630,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Probes"
+          ],
+          "startLine": 156,
+          "endLine": 179
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus must do"
+          ],
+          "startLine": 109,
+          "endLine": 125
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus never does"
+          ],
+          "startLine": 126,
+          "endLine": 148
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The Sunday cull"
+          ],
+          "startLine": 180,
+          "endLine": 198
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Rule changes and the clock"
+          ],
+          "startLine": 45,
+          "endLine": 54
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "lang": "en",
+      "hit": false,
+      "rank": null,
+      "evidenceLines": 104,
+      "evidenceTokens": 1551,
+      "precision": 0,
+      "tokens": 656,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v1 to v2",
+            "Amendments from Luke's review, 27 Sep 2026"
+          ],
+          "startLine": 68,
+          "endLine": 82
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Verdicts and what they do"
+          ],
+          "startLine": 32,
+          "endLine": 44
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus costs in Claude"
+          ],
+          "startLine": 302,
+          "endLine": 323
+        },
+        {
+          "docPath": "desks/systems-rules.md",
+          "titlePath": [
+            "The systems book",
+            "Book 1: RSI(5) dip-buying inside an uptrend"
+          ],
+          "startLine": 7,
+          "endLine": 30
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Field Notes"
+          ],
+          "startLine": 232,
+          "endLine": 261
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 91,
+      "evidenceTokens": 1463,
+      "precision": 0.1758,
+      "tokens": 634,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus may do without asking"
+          ],
+          "startLine": 93,
+          "endLine": 108
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Self-improvement"
+          ],
+          "startLine": 366,
+          "endLine": 385
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Money"
+          ],
+          "startLine": 222,
+          "endLine": 252
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v1 to v2",
+            "Amendments from Luke's review, 27 Sep 2026"
+          ],
+          "startLine": 68,
+          "endLine": 82
+        },
+        {
+          "docPath": "desks/exchange-rules.md",
+          "titlePath": [
+            "The exchange book",
+            "What gets called"
+          ],
+          "startLine": 10,
+          "endLine": 18
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "lang": "en",
+      "hit": false,
+      "rank": null,
+      "evidenceLines": 72,
+      "evidenceTokens": 1188,
+      "precision": 0,
+      "tokens": 631,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Why Proteus exists"
+          ],
+          "startLine": 83,
+          "endLine": 92
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Inconclusive"
+          ],
+          "startLine": 341,
+          "endLine": 358
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Signature"
+          ],
+          "startLine": 430,
+          "endLine": 440
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus may do without asking"
+          ],
+          "startLine": 93,
+          "endLine": 108
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus must do"
+          ],
+          "startLine": 109,
+          "endLine": 125
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "lang": "en",
+      "hit": true,
+      "rank": 3,
+      "evidenceLines": 101,
+      "evidenceTokens": 1757,
+      "precision": 0.2574,
+      "tokens": 617,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v2 to v3"
+          ],
+          "startLine": 12,
+          "endLine": 30
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Cadence"
+          ],
+          "startLine": 324,
+          "endLine": 339
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The daytime loop"
+          ],
+          "startLine": 340,
+          "endLine": 365
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus must do"
+          ],
+          "startLine": 109,
+          "endLine": 125
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Fan-out"
+          ],
+          "startLine": 386,
+          "endLine": 408
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 114,
+      "evidenceTokens": 2499,
+      "precision": 0.1491,
+      "tokens": 653,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Called shots (added 2026-10-09, before any shot existed)"
+          ],
+          "startLine": 395,
+          "endLine": 411
+        },
+        {
+          "docPath": "desks/exchange-rules.md",
+          "titlePath": [
+            "The exchange book",
+            "Scoring"
+          ],
+          "startLine": 30,
+          "endLine": 47
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The daytime loop"
+          ],
+          "startLine": 340,
+          "endLine": 365
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Log of changes to this file"
+          ],
+          "startLine": 412,
+          "endLine": 428
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The judgement book"
+          ],
+          "startLine": 305,
+          "endLine": 340
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 78,
+      "evidenceTokens": 1212,
+      "precision": 0.2308,
+      "tokens": 654,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Inconclusive"
+          ],
+          "startLine": 341,
+          "endLine": 358
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Verdicts and what they do"
+          ],
+          "startLine": 32,
+          "endLine": 44
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v1 to v2",
+            "Amendments from Luke's review, 27 Sep 2026"
+          ],
+          "startLine": 68,
+          "endLine": 82
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Dates"
+          ],
+          "startLine": 22,
+          "endLine": 31
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus costs in Claude"
+          ],
+          "startLine": 302,
+          "endLine": 323
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "lang": "en",
+      "hit": false,
+      "rank": null,
+      "evidenceLines": 124,
+      "evidenceTokens": 2785,
+      "precision": 0,
+      "tokens": 650,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "The register"
+          ],
+          "startLine": 64,
+          "endLine": 70
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Inconclusive"
+          ],
+          "startLine": 341,
+          "endLine": 358
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Log of changes to this file"
+          ],
+          "startLine": 412,
+          "endLine": 428
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The Grinder: rule candidates, the replay, and promotion"
+          ],
+          "startLine": 97,
+          "endLine": 147
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Money"
+          ],
+          "startLine": 222,
+          "endLine": 252
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 109,
+      "evidenceTokens": 2396,
+      "precision": 0.3945,
+      "tokens": 644,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The harvester"
+          ],
+          "startLine": 262,
+          "endLine": 304
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Log of changes to this file"
+          ],
+          "startLine": 412,
+          "endLine": 428
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Verdicts and what they do"
+          ],
+          "startLine": 32,
+          "endLine": 44
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against"
+          ],
+          "startLine": 1,
+          "endLine": 13
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Graduation"
+          ],
+          "startLine": 279,
+          "endLine": 301
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "lang": "en",
+      "hit": true,
+      "rank": 3,
+      "evidenceLines": 117,
+      "evidenceTokens": 2008,
+      "precision": 0.5812,
+      "tokens": 639,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "desks/exchange-rules.md",
+          "titlePath": [
+            "The exchange book"
+          ],
+          "startLine": 1,
+          "endLine": 9
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus must do"
+          ],
+          "startLine": 109,
+          "endLine": 125
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The Pitch"
+          ],
+          "startLine": 164,
+          "endLine": 231
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Changing this file"
+          ],
+          "startLine": 14,
+          "endLine": 21
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v1 to v2",
+            "Amendments from Luke's review, 27 Sep 2026"
+          ],
+          "startLine": 68,
+          "endLine": 82
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "lang": "en",
+      "hit": true,
+      "rank": 4,
+      "evidenceLines": 97,
+      "evidenceTokens": 2161,
+      "precision": 0.1856,
+      "tokens": 631,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Log of changes to this file"
+          ],
+          "startLine": 412,
+          "endLine": 428
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The judgement book"
+          ],
+          "startLine": 305,
+          "endLine": 340
+        },
+        {
+          "docPath": "desks/exchange-rules.md",
+          "titlePath": [
+            "The exchange book"
+          ],
+          "startLine": 1,
+          "endLine": 9
+        },
+        {
+          "docPath": "desks/exchange-rules.md",
+          "titlePath": [
+            "The exchange book",
+            "Scoring"
+          ],
+          "startLine": 30,
+          "endLine": 47
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus must do"
+          ],
+          "startLine": 109,
+          "endLine": 125
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "lang": "en",
+      "hit": false,
+      "rank": null,
+      "evidenceLines": 150,
+      "evidenceTokens": 2471,
+      "precision": 0,
+      "tokens": 634,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "desks/exchange-rules.md",
+          "titlePath": [
+            "The exchange book",
+            "Scoring"
+          ],
+          "startLine": 30,
+          "endLine": 47
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The judgement book"
+          ],
+          "startLine": 305,
+          "endLine": 340
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Disqualifiers"
+          ],
+          "startLine": 359,
+          "endLine": 394
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The intelligence lane"
+          ],
+          "startLine": 199,
+          "endLine": 221
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Changelog, v1 to v2"
+          ],
+          "startLine": 31,
+          "endLine": 67
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 108,
+      "evidenceTokens": 1690,
+      "precision": 0.2222,
+      "tokens": 653,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "desks/systems-rules.md",
+          "titlePath": [
+            "The systems book",
+            "Book 1: RSI(5) dip-buying inside an uptrend"
+          ],
+          "startLine": 7,
+          "endLine": 30
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "The intelligence lane"
+          ],
+          "startLine": 199,
+          "endLine": 221
+        },
+        {
+          "docPath": "desks/systems-rules.md",
+          "titlePath": [
+            "The systems book",
+            "Book 2: IBS while book 1 is flat (from P-0085 and P-0091)"
+          ],
+          "startLine": 55,
+          "endLine": 85
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Buying capability is not putting up a stake"
+          ],
+          "startLine": 253,
+          "endLine": 266
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The graduation book"
+          ],
+          "startLine": 148,
+          "endLine": 163
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 99,
+      "evidenceTokens": 1560,
+      "precision": 0.3131,
+      "tokens": 650,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "desks/systems-rules.md",
+          "titlePath": [
+            "The systems book",
+            "Book 2: IBS while book 1 is flat (from P-0085 and P-0091)"
+          ],
+          "startLine": 55,
+          "endLine": 85
+        },
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "What Proteus must do"
+          ],
+          "startLine": 109,
+          "endLine": 125
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "Forward test"
+          ],
+          "startLine": 39,
+          "endLine": 55
+        },
+        {
+          "docPath": "desks/systems-rules.md",
+          "titlePath": [
+            "The systems book",
+            "Pass marks, pre-registered 7 Oct 2026 before the first trade"
+          ],
+          "startLine": 37,
+          "endLine": 54
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The graduation book"
+          ],
+          "startLine": 148,
+          "endLine": 163
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "lang": "en",
+      "hit": true,
+      "rank": 2,
+      "evidenceLines": 123,
+      "evidenceTokens": 2137,
+      "precision": 0.1789,
+      "tokens": 630,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Inconclusive"
+          ],
+          "startLine": 341,
+          "endLine": 358
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "Admission"
+          ],
+          "startLine": 17,
+          "endLine": 38
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "The register"
+          ],
+          "startLine": 64,
+          "endLine": 70
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The Pitch"
+          ],
+          "startLine": 164,
+          "endLine": 231
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "Kill and retire"
+          ],
+          "startLine": 56,
+          "endLine": 63
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "lang": "en",
+      "hit": true,
+      "rank": 1,
+      "evidenceLines": 115,
+      "evidenceTokens": 1919,
+      "precision": 0.0696,
+      "tokens": 628,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "Kill and retire"
+          ],
+          "startLine": 56,
+          "endLine": 63
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "The register"
+          ],
+          "startLine": 64,
+          "endLine": 70
+        },
+        {
+          "docPath": "desks/edges-rules.md",
+          "titlePath": [
+            "The edge desk: rules",
+            "Admission"
+          ],
+          "startLine": 17,
+          "endLine": 38
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The Pitch"
+          ],
+          "startLine": 164,
+          "endLine": 231
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Dates"
+          ],
+          "startLine": 22,
+          "endLine": 31
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "lang": "en",
+      "hit": true,
+      "rank": 2,
+      "evidenceLines": 149,
+      "evidenceTokens": 3186,
+      "precision": 0.1074,
+      "tokens": 658,
+      "steps": 1,
+      "evidence": [
+        {
+          "docPath": "charter.md",
+          "titlePath": [
+            "Proteus charter, version 3",
+            "Graduation"
+          ],
+          "startLine": 279,
+          "endLine": 301
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The graduation book"
+          ],
+          "startLine": 148,
+          "endLine": 163
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "Log of changes to this file"
+          ],
+          "startLine": 412,
+          "endLine": 428
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The Grinder: rule candidates, the replay, and promotion"
+          ],
+          "startLine": 97,
+          "endLine": 147
+        },
+        {
+          "docPath": "pass-marks.md",
+          "titlePath": [
+            "Pass marks: the standard Proteus is judged against",
+            "The Grinder"
+          ],
+          "startLine": 55,
+          "endLine": 96
+        }
+      ]
+    }
+  ]
+}
