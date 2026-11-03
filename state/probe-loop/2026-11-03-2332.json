@@ -17,7 +17,7 @@
   "P-0317",
   "P-0318"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-03T23:48:08+0000",
+ "stop_reason": "7 probes done at 117 of 150 calls; a refill and build cost about 15, so the rest is kept for the close (kill check, due check, run log, mirror, close commit, record rows)",
  "refills": 5
 }
