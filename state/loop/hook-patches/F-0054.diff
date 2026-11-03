@@ -1,0 +1,58 @@
+F-0054 hook patch, written by Smith 3 Nov 2026 20:15. Not applied: a scheduled run cannot edit the hook.
+
+Why: the hook lets node run only a script under the folder or `node -e`, so `node --version` (P-0300,
+2 Nov) and `node --experimental-strip-types <script>` (25 Oct) each cost a denied call. Neither does
+anything a `.cjs` under the folder cannot: --version only prints, and the TypeScript flag is stripped
+like python3 -I so the script that follows must still be under the folder. The child branch strips
+the flag too, or a child could run a parent script by putting the flag first (the script check reads
+parts[1]). bun stays denied: a second JS runtime is a new install, not a flag.
+
+Proof without the hook: python3 /Users/triton/PROTEUS/state/loop/hook-patches/F-0054-check.py
+
+Apply from an interactive session:
+  git -C /Users/triton/PROTEUS apply --check /Users/triton/PROTEUS/state/loop/hook-patches/F-0054.diff
+  git -C /Users/triton/PROTEUS apply /Users/triton/PROTEUS/state/loop/hook-patches/F-0054.diff
+  python3 /Users/triton/PROTEUS/bin/test-hook.py        (6 new cases)
+and close: python3 /Users/triton/PROTEUS/bin/findings.py fix F-0054 --commit <hash> --note 'node --version and --experimental-strip-types on folder scripts allowed; bun stays denied'
+Line numbers are against 6f41d52 (3 Nov).
+
+--- a/.claude/hooks/unattended-decide.py
++++ b/.claude/hooks/unattended-decide.py
+@@ -480,6 +480,12 @@
+             if head in ("python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 2 and parts[1] == "-I":
+                 parts = [head] + parts[2:]
++            # F-0054 (3 Nov 2026): node's TypeScript flag is stripped like -I, so the script must still
++            # be under the folder; --version only prints. Each cost a probe one denied call.
++            if head == "node" and len(parts) > 2 and parts[1] == "--experimental-strip-types":
++                parts = [head] + parts[2:]
++            if head == "node" and len(parts) == 2 and parts[1] in ("--version", "-v"):
++                continue
+             if len(parts) > 1 and _under_root(parts[1]):
+                 continue
+             if head == "node" and len(parts) > 1 and parts[1] == "-e":
+                 continue
+@@ -659,6 +665,8 @@
+         if head in ("python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 2 and parts[1] == "-I":
+             parts = [head] + parts[2:]
++        if head == "node" and len(parts) > 2 and parts[1] == "--experimental-strip-types":
++            parts = [head] + parts[2:]
+         if _under_root(head):
+             script = head
+         elif head in ("node", "bash", "sh", "python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 1 and _under_root(parts[1]):
+             script = parts[1]
+--- a/bin/test-hook.py
++++ b/bin/test-hook.py
+@@ -44,3 +44,7 @@
+     ("Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "allow"),
+     ("Bash", {"command": "python3 " + ROOT + "bin/dash.py --commit"}, "allow"),
+     ("Bash", {"command": "node " + ROOT + "bin/dash-seal.cjs " + ROOT + "state/dash.key " + ROOT + "docs/dash/payload.json"}, "allow"),
++    ("Bash", {"command": "node --version"}, "allow"),
++    ("Bash", {"command": "node --version --eval x"}, "deny"),
++    ("Bash", {"command": "node --experimental-strip-types " + ROOT + "sandbox/x.ts"}, "allow"),
++    ("Bash", {"command": "node --experimental-strip-types /Users/triton/OBSIDIAN/x.ts"}, "deny"),
+@@ -211,3 +215,5 @@
+     (CHILD, "Bash", {"command": "bash " + ROOT + "bin/send-field-notes.sh"}, "deny"),
+     (CHILD, "Bash", {"command": ROOT + "bin/run-nightly.sh"}, "deny"),
+     (CHILD, "Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "deny"),
++    (CHILD, "Bash", {"command": "node --experimental-strip-types " + ROOT + "bin/x.ts"}, "deny"),
++    (CHILD, "Bash", {"command": "node --experimental-strip-types " + ROOT + "sandbox/x.ts"}, "allow"),
