@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 243 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 244 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (6 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,12 +19,12 @@ Verdicts so far: 243 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
-| P-0307 | Berlin lead curve: one Open-Meteo previous-runs call (ICON seamless, Berlin-Tempelhof 52.4675 13.4021, 1 Sep to 31 Oct 2026, temperature_2m and previous_day1 to day6) against DWD 00433 daily TXK from tageswerte_KL_00433_akt.zip (keyless, 200 checked 3 Nov); rerun P-0293's lead_curve.py table and say whether the +1.0 exact-degree hit at lead 1 (Munich 39%) holds within 10 points; London skipped, its only keyless obs so far is ERA5 not a station | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (296)
+## Verdicts (297)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-03 | P-0307 | Berlin lead curve: one Open-Meteo previous-runs call (ICON seamless, Berlin-Tempelhof 52.4675 13.4021, 1 Sep to 31 Oct 2026, temperature_2m and previous_day1 to day6) against DWD 00433 daily TXK from tageswerte_KL_00433_akt.zip (keyless, 200 checked 3 Nov); rerun P-0293's lead_curve.py table and say whether the +1.0 exact-degree hit at lead 1 (Munich 39%) holds within 10 points; London skipped, its only keyless obs so far is ERA5 not a station | **works** | Measured Berlin-Tempelhof day-before hit after +1.0 at 49% (Munich 39%), bias +0.79 (Munich +0.83); 61 days, hit stays at or above 25% to lead 3 in both cities, then falls. Shot: works hit, numbers missed (said 30% and bias under +0.6). The lead rule is not a Munich artefact. London skipped: no keyless station obs. Next: close (two cities agree within noise; a third adds little until a London station source turns up). | `experiments/2026-11-03-P-0307` | 0 min, 6 calls, 0 denied |
 | 2026-11-03 | P-0306 | bootgpt speed in v86: timestamp every screen-put-char and read emulator.get_instruction_counter() per char over a 10 s boot; report chars per second, instructions per char, and the share of each char's time the 10 ms int 0x15 wait takes (ceiling 100 chars/s if inference were free); add a save_state after the header and time a restore-to-first-char (P-0294 boot.mjs) | **works** | Measured 68.7 chars/s (550 chars in 8.0 s, gap median 14.04 ms, p10-p90 13.90-14.89) and 81,174 instructions per char; the 10 ms int 0x15 wait is 69% of each char if it costs 10 ms (inferred, not measured). Shot: about 70 chars/s, wait over 60%: both hit. save_state 40.6 ms, restore 25.0 ms, 9.77 MB, first write 11.2 ms after restore. Scroll redraws (16 bursts) separated from 644 printing bursts. Next: close (the speed is known; a no-wait build would only confirm the 4 ms inference share). | `experiments/2026-11-03-P-0306` | 1 min, 8 calls, 0 denied |
 | 2026-11-03 | P-0185 | Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats the skipped group by 20+ points mean outcome (P-0013, P-0184) | **blocked** | Measured 0 G or R01 entries after 20 Oct (shot: fewer than 20, blocked at 0.60, hit). Last R01 entries R-0027 to R-0029 at 20 Oct 22:38Z, G last G-0092 on 16 Oct. Insider snapshots still land nightly (to 2 Nov), so the input exists; the trades do not. forward.py is ready to rerun as soon as entries resume. | `experiments/2026-11-03-P-0185` | 0 min, 10 calls, 0 denied |
 | 2026-11-02 | P-0305 | Lichess nobot decliners v bots that played me: one keyless /api/users batch, compare game counts, bot-game share, rating spread and age; does any field split them at 80 pct or better? | **works** | One /api/users batch for 32 nobot decliners and 47 bots that played me: best single field split in sample is account age under 1,034 days or bullet share under 0.20, 70.9 pct right against a 59.5 pct base rate; no field reaches 80, bio and title say nothing. The batch endpoint omits game counts (came back 0). Skip-after-decline (F-0068) stays. | `experiments/2026-11-02-P-0305` | 0 min, 4 calls, 0 denied |

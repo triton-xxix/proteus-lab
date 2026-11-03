@@ -1,0 +1,117 @@
+{
+ "source": "previous-runs-api.open-meteo.com icon_seamless 52.4675,13.4021, hourly, daily max over 24 local hours",
+ "station": "DWD 00433 Berlin-Tempelhof TXK",
+ "leads": {
+  "0": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.81,
+   "sd": 0.51,
+   "mae_after_plus1": 0.45,
+   "within_1_after_plus1": 0.967,
+   "hit_plus0": 0.311,
+   "hit_plus1": 0.607,
+   "best_correction": 0.7,
+   "best_hit_in_sample": 0.705,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "1": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.79,
+   "sd": 0.91,
+   "mae_after_plus1": 0.69,
+   "within_1_after_plus1": 0.787,
+   "hit_plus0": 0.246,
+   "hit_plus1": 0.492,
+   "best_correction": 0.8,
+   "best_hit_in_sample": 0.525,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "2": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.89,
+   "sd": 1.43,
+   "mae_after_plus1": 0.97,
+   "within_1_after_plus1": 0.721,
+   "hit_plus0": 0.262,
+   "hit_plus1": 0.41,
+   "best_correction": 0.6,
+   "best_hit_in_sample": 0.426,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "3": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.75,
+   "sd": 1.62,
+   "mae_after_plus1": 1.22,
+   "within_1_after_plus1": 0.557,
+   "hit_plus0": 0.164,
+   "hit_plus1": 0.393,
+   "best_correction": 1.0,
+   "best_hit_in_sample": 0.393,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "4": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.72,
+   "sd": 1.88,
+   "mae_after_plus1": 1.5,
+   "within_1_after_plus1": 0.475,
+   "hit_plus0": 0.213,
+   "hit_plus1": 0.164,
+   "best_correction": 0.5,
+   "best_hit_in_sample": 0.279,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "5": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.63,
+   "sd": 2.23,
+   "mae_after_plus1": 1.72,
+   "within_1_after_plus1": 0.377,
+   "hit_plus0": 0.213,
+   "hit_plus1": 0.246,
+   "best_correction": -0.3,
+   "best_hit_in_sample": 0.262,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  },
+  "6": {
+   "days": 61,
+   "mean_obs_minus_icon": 0.45,
+   "sd": 2.44,
+   "mae_after_plus1": 1.88,
+   "within_1_after_plus1": 0.377,
+   "hit_plus0": 0.18,
+   "hit_plus1": 0.23,
+   "best_correction": 0.8,
+   "best_hit_in_sample": 0.295,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ]
+  }
+ },
+ "leads_hit_plus1_ge_25pct": [
+  0,
+  1,
+  2,
+  3
+ ]
+}
