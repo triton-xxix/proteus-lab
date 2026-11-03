@@ -1,5 +1,5 @@
 {
- "next_id": 315,
+ "next_id": 316,
  "items": [
   {
    "id": "P-0001",
@@ -7764,6 +7764,28 @@
     "experiments/2026-11-03-P-0314"
    ],
    "minutes": 0,
+   "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0315",
+   "title": "Lichess nobot decliners v accepters by single-profile fields: does human-play share (playTime.human over total) or rated count split them better than P-0305's 71.1%?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-03T23:42:10+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-03T23:44:16+0000",
+   "note": "83 single profiles, no errors: total games under 37,754 splits nobot decliners from bots that played me on 79.5% (base 60.2%, P-0305 best 71.1%); decliners median 22,555 games v 75,192 and 28% of play time against humans v 6%. In-sample thresholds.",
+   "artefacts": [
+    "experiments/2026-11-03-P-0315"
+   ],
+   "minutes": 2,
    "calls": 6,
    "denied": [],
    "luke": false

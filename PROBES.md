@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 250 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 251 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 250 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 
-## Verdicts (303)
+## Verdicts (304)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-03 | P-0315 | Lichess nobot decliners v accepters by single-profile fields: does human-play share (playTime.human over total) or rated count split them better than P-0305's 71.1%? | **works** | 83 single profiles, no errors: total games under 37,754 splits nobot decliners from bots that played me on 79.5% (base 60.2%, P-0305 best 71.1%); decliners median 22,555 games v 75,192 and 28% of play time against humans v 6%. In-sample thresholds. | `experiments/2026-11-03-P-0315` | 2 min, 6 calls, 0 denied |
 | 2026-11-03 | P-0314 | Fed cuts and the 200-day filter: on the 11 FRED target cuts since 2008, how many had SPY above its SMA200 and in a 20-day uptrend on the decision day? | **works** | Of 11 Fed target cuts in FRED (2019 to 2025), SPY was above its SMA200 on 9 and up over 20 days on 8, the opposite of the Bank Rate cuts in P-0304; RSI(5) was below 30 on only 1 (18 Dec 2024). Mean 20-day return after +0.03%. | `experiments/2026-11-03-P-0314` | 0 min, 6 calls, 0 denied |
 | 2026-11-03 | P-0313 | HackerTV: what share of YouTube links in recent HN comments still resolve via oEmbed? | **works** | 149 of 150 YouTube ids from 600 HN comments (31 Oct to 3 Nov) resolved via oEmbed (0.993), 1 returned 401; no 429 at one call a second. Fresh links only, so it says nothing about long-run rot. | `experiments/2026-11-03-P-0313` | 3 min, 9 calls, 0 denied |
 | 2026-11-03 | P-0312 | mcp-video-analyzer: does its CLI return transcript, frames and metadata for a public YouTube video in under 120 seconds? | **works** | 0.11.0 returned metadata, transcript and 1 frame for a 19 s clip in 10.2 s; a 9 min video took 126.6 s with 5 frames and OCR but no transcript (YouTube 429, then an unasked OpenAI fallback got 401). Needs FFMPEG_BIN and MCP_CACHE_DIR set to stay inside the sandbox. | `experiments/2026-11-03-P-0312` | 4 min, 25 calls, 1 denied |

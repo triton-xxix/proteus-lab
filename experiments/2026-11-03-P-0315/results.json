@@ -1,0 +1,54 @@
+{
+ "nobot_ids": 33,
+ "played_ids": 50,
+ "errors": {},
+ "kept": {
+  "nobot": 33,
+  "played": 50
+ },
+ "fields": {
+  "games_all": {
+   "nobot_median": 22555,
+   "played_median": 75192.0,
+   "best_split_accuracy": 0.795,
+   "nobot_if": "lt 37754"
+  },
+  "rated_count": {
+   "nobot_median": 17047,
+   "played_median": 63670.0,
+   "best_split_accuracy": 0.795,
+   "nobot_if": "lt 21871"
+  },
+  "rated_share": {
+   "nobot_median": 0.717,
+   "played_median": 0.884,
+   "best_split_accuracy": 0.735,
+   "nobot_if": "lt 0.728"
+  },
+  "human_time_share": {
+   "nobot_median": 0.283,
+   "played_median": 0.062,
+   "best_split_accuracy": 0.723,
+   "nobot_if": "ge 0.462"
+  },
+  "play_hours": {
+   "nobot_median": 2890.65,
+   "played_median": 9372.511,
+   "best_split_accuracy": 0.723,
+   "nobot_if": "lt 786.277"
+  },
+  "draw_share": {
+   "nobot_median": 0.09,
+   "played_median": 0.119,
+   "best_split_accuracy": 0.711,
+   "nobot_if": "lt 0.072"
+  },
+  "win_share": {
+   "nobot_median": 0.452,
+   "played_median": 0.388,
+   "best_split_accuracy": 0.687,
+   "nobot_if": "ge 0.397"
+  }
+ },
+ "base_rate_accuracy": 0.602
+}
