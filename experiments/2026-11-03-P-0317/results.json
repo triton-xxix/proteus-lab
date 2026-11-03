@@ -1,0 +1,29 @@
+{
+ "source": "previous-runs-api.open-meteo.com icon_seamless 51.47,-0.4543, hourly, daily max over 24 local hours",
+ "station": "Meteostat 03772 London Heathrow tmax",
+ "obs_days": 0,
+ "obs_range": null,
+ "leads": {
+  "0": {
+   "days": 0
+  },
+  "1": {
+   "days": 0
+  },
+  "2": {
+   "days": 0
+  },
+  "3": {
+   "days": 0
+  },
+  "4": {
+   "days": 0
+  },
+  "5": {
+   "days": 0
+  },
+  "6": {
+   "days": 0
+  }
+ }
+}

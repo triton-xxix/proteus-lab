@@ -1,5 +1,5 @@
 {
- "next_id": 317,
+ "next_id": 318,
  "items": [
   {
    "id": "P-0001",
@@ -7809,6 +7809,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0317",
+   "title": "London Heathrow lead curve via Meteostat bulk 03772 (GHCN has no 2026 TMAX): ICON previous-runs day-before bias and +1.0 hit, beside Munich 39% and Berlin 49%",
+   "source": "refill",
+   "needs": "a keyless London daily-maximum source for 2026 (Ogimet SYNOP decoding is the untried keyless route)",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-03T23:46:25+0000",
+   "verdict": "blocked",
+   "verdict_at": "2026-11-03T23:46:56+0000",
+   "note": "ICON previous-runs for Heathrow pulled fine; GHCN 03772 has TAVG only and nothing after 24 Aug 2025, Meteostat bulk stops 14 Mar 2026, so 0 observed days for Sep to Oct. Script is ready for a source.",
+   "artefacts": [
+    "experiments/2026-11-03-P-0317"
+   ],
+   "minutes": 0,
+   "calls": 9,
    "denied": [],
    "luke": false
   }
