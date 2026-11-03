@@ -1,0 +1,3102 @@
+{
+ "run_at": "2026-11-03T23:29:36+00:00",
+ "span": {
+  "stock_weeks": [
+   "2026-10-27 to 2026-11-02",
+   "2026-10-20 to 2026-10-26",
+   "2026-10-13 to 2026-10-19"
+  ],
+  "coin_weeks": [
+   "2026-10-27 to 2026-11-02",
+   "2026-10-20 to 2026-10-26",
+   "2026-10-13 to 2026-10-19"
+  ],
+  "stock_blocks": 11,
+  "coin_blocks": 4
+ },
+ "rules": [
+  {
+   "kind": "stock",
+   "rule": "ORB 5m, target 1R",
+   "W1": {
+    "n": 59,
+    "total_pct": -24.313,
+    "mean_pct": -0.4121,
+    "win_pct": 35.6,
+    "control_mean_pct": -0.0271,
+    "p": 1.0
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": -16.873,
+    "mean_pct": -0.2812,
+    "win_pct": 43.3,
+    "control_mean_pct": -0.0346,
+    "p": 0.997
+   },
+   "W3": {
+    "n": 58,
+    "total_pct": 2.951,
+    "mean_pct": 0.0509,
+    "win_pct": 56.9,
+    "control_mean_pct": -0.027,
+    "p": 0.163
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 177,
+    "total_pct": -38.236,
+    "mean_pct": -0.216,
+    "win_pct": 45.2,
+    "control_mean_pct": -0.0317,
+    "p": 1.0
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.089,
+    "QQQ": -1.522,
+    "IWM": -2.4,
+    "TSLA": 3.718,
+    "NVDA": -1.894,
+    "META": -3.807,
+    "AMD": -7.675,
+    "AAPL": -4.424,
+    "AMZN": -1.883,
+    "MSFT": -1.319,
+    "GOOGL": -9.718,
+    "NFLX": -6.222
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 5m, target 2R",
+   "W1": {
+    "n": 59,
+    "total_pct": -26.507,
+    "mean_pct": -0.4493,
+    "win_pct": 28.8,
+    "control_mean_pct": -0.0322,
+    "p": 1.0
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": -18.225,
+    "mean_pct": -0.3037,
+    "win_pct": 35.0,
+    "control_mean_pct": -0.034,
+    "p": 0.997
+   },
+   "W3": {
+    "n": 58,
+    "total_pct": 10.243,
+    "mean_pct": 0.1766,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.0386,
+    "p": 0.047
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 177,
+    "total_pct": -34.489,
+    "mean_pct": -0.1949,
+    "win_pct": 37.9,
+    "control_mean_pct": -0.0329,
+    "p": 0.987
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.489,
+    "QQQ": -2.719,
+    "IWM": -1.534,
+    "TSLA": 0.534,
+    "NVDA": -4.393,
+    "META": -1.457,
+    "AMD": -2.445,
+    "AAPL": -3.214,
+    "AMZN": -3.296,
+    "MSFT": 0.872,
+    "GOOGL": -9.712,
+    "NFLX": -6.635
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 5m, target close",
+   "W1": {
+    "n": 59,
+    "total_pct": -24.514,
+    "mean_pct": -0.4155,
+    "win_pct": 25.4,
+    "control_mean_pct": -0.0098,
+    "p": 0.97
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": -19.942,
+    "mean_pct": -0.3324,
+    "win_pct": 31.7,
+    "control_mean_pct": -0.0388,
+    "p": 0.98
+   },
+   "W3": {
+    "n": 58,
+    "total_pct": 14.768,
+    "mean_pct": 0.2546,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.0202,
+    "p": 0.06
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 177,
+    "total_pct": -29.689,
+    "mean_pct": -0.1677,
+    "win_pct": 35.6,
+    "control_mean_pct": -0.0322,
+    "p": 0.92
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.474,
+    "QQQ": -1.322,
+    "IWM": -1.188,
+    "TSLA": -0.464,
+    "NVDA": -4.18,
+    "META": -2.303,
+    "AMD": 2.827,
+    "AAPL": -3.627,
+    "AMZN": -2.547,
+    "MSFT": -0.111,
+    "GOOGL": -9.596,
+    "NFLX": -6.705
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 15m, target 1R",
+   "W1": {
+    "n": 55,
+    "total_pct": -19.828,
+    "mean_pct": -0.3605,
+    "win_pct": 32.7,
+    "control_mean_pct": -0.0477,
+    "p": 0.997
+   },
+   "W2": {
+    "n": 57,
+    "total_pct": -19.947,
+    "mean_pct": -0.3499,
+    "win_pct": 42.1,
+    "control_mean_pct": -0.0284,
+    "p": 1.0
+   },
+   "W3": {
+    "n": 57,
+    "total_pct": 6.129,
+    "mean_pct": 0.1075,
+    "win_pct": 50.9,
+    "control_mean_pct": -0.0108,
+    "p": 0.18
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 169,
+    "total_pct": -33.646,
+    "mean_pct": -0.1991,
+    "win_pct": 42.0,
+    "control_mean_pct": -0.0267,
+    "p": 0.993
+   },
+   "blocks_positive": 4,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.243,
+    "QQQ": -0.517,
+    "IWM": -2.068,
+    "TSLA": -4.72,
+    "NVDA": -1.589,
+    "META": -6.91,
+    "AMD": -1.489,
+    "AAPL": -3.062,
+    "AMZN": -3.264,
+    "MSFT": -0.225,
+    "GOOGL": -6.649,
+    "NFLX": -1.91
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 15m, target 2R",
+   "W1": {
+    "n": 55,
+    "total_pct": -21.561,
+    "mean_pct": -0.392,
+    "win_pct": 30.9,
+    "control_mean_pct": -0.0376,
+    "p": 0.993
+   },
+   "W2": {
+    "n": 57,
+    "total_pct": -21.178,
+    "mean_pct": -0.3715,
+    "win_pct": 38.6,
+    "control_mean_pct": -0.0394,
+    "p": 1.0
+   },
+   "W3": {
+    "n": 57,
+    "total_pct": 10.96,
+    "mean_pct": 0.1923,
+    "win_pct": 47.4,
+    "control_mean_pct": -0.0354,
+    "p": 0.103
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 169,
+    "total_pct": -31.778,
+    "mean_pct": -0.188,
+    "win_pct": 39.1,
+    "control_mean_pct": -0.0372,
+    "p": 0.97
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.325,
+    "QQQ": -1.788,
+    "IWM": -0.424,
+    "TSLA": -4.028,
+    "NVDA": -2.051,
+    "META": -4.715,
+    "AMD": -4.07,
+    "AAPL": -3.609,
+    "AMZN": -1.731,
+    "MSFT": -0.057,
+    "GOOGL": -6.694,
+    "NFLX": -2.286
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 15m, target close",
+   "W1": {
+    "n": 55,
+    "total_pct": -20.541,
+    "mean_pct": -0.3735,
+    "win_pct": 29.1,
+    "control_mean_pct": -0.0345,
+    "p": 0.957
+   },
+   "W2": {
+    "n": 57,
+    "total_pct": -22.096,
+    "mean_pct": -0.3876,
+    "win_pct": 38.6,
+    "control_mean_pct": -0.0399,
+    "p": 0.997
+   },
+   "W3": {
+    "n": 57,
+    "total_pct": 10.142,
+    "mean_pct": 0.1779,
+    "win_pct": 47.4,
+    "control_mean_pct": -0.0167,
+    "p": 0.153
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 169,
+    "total_pct": -32.495,
+    "mean_pct": -0.1923,
+    "win_pct": 38.5,
+    "control_mean_pct": -0.0294,
+    "p": 0.95
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.921,
+    "QQQ": -1.091,
+    "IWM": -0.446,
+    "TSLA": -5.025,
+    "NVDA": -2.696,
+    "META": -6.466,
+    "AMD": -0.596,
+    "AAPL": -3.609,
+    "AMZN": -2.077,
+    "MSFT": -0.187,
+    "GOOGL": -6.469,
+    "NFLX": -2.912
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 30m, target 1R",
+   "W1": {
+    "n": 54,
+    "total_pct": -11.718,
+    "mean_pct": -0.217,
+    "win_pct": 42.6,
+    "control_mean_pct": -0.0255,
+    "p": 0.963
+   },
+   "W2": {
+    "n": 52,
+    "total_pct": -5.841,
+    "mean_pct": -0.1123,
+    "win_pct": 44.2,
+    "control_mean_pct": -0.0264,
+    "p": 0.717
+   },
+   "W3": {
+    "n": 54,
+    "total_pct": 22.243,
+    "mean_pct": 0.4119,
+    "win_pct": 68.5,
+    "control_mean_pct": -0.0137,
+    "p": 0.003
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 160,
+    "total_pct": 4.684,
+    "mean_pct": 0.0293,
+    "win_pct": 51.9,
+    "control_mean_pct": -0.0294,
+    "p": 0.227
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0.618,
+    "QQQ": 3.563,
+    "IWM": -0.869,
+    "TSLA": -1.653,
+    "NVDA": 0.805,
+    "META": -6.13,
+    "AMD": 12.024,
+    "AAPL": -1.983,
+    "AMZN": -1.439,
+    "MSFT": -0.686,
+    "GOOGL": -0.52,
+    "NFLX": 0.953
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 30m, target 2R",
+   "W1": {
+    "n": 54,
+    "total_pct": -15.099,
+    "mean_pct": -0.2796,
+    "win_pct": 37.0,
+    "control_mean_pct": -0.0254,
+    "p": 0.947
+   },
+   "W2": {
+    "n": 52,
+    "total_pct": -9.222,
+    "mean_pct": -0.1773,
+    "win_pct": 42.3,
+    "control_mean_pct": -0.0241,
+    "p": 0.84
+   },
+   "W3": {
+    "n": 54,
+    "total_pct": 26.914,
+    "mean_pct": 0.4984,
+    "win_pct": 64.8,
+    "control_mean_pct": -0.0311,
+    "p": 0.013
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 160,
+    "total_pct": 2.593,
+    "mean_pct": 0.0162,
+    "win_pct": 48.1,
+    "control_mean_pct": -0.019,
+    "p": 0.337
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0.208,
+    "QQQ": 4.027,
+    "IWM": 0.632,
+    "TSLA": -2.085,
+    "NVDA": -1.258,
+    "META": -5.869,
+    "AMD": 9.879,
+    "AAPL": -2.133,
+    "AMZN": -0.317,
+    "MSFT": -0.532,
+    "GOOGL": -1.424,
+    "NFLX": 1.465
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 30m, target close",
+   "W1": {
+    "n": 54,
+    "total_pct": -14.425,
+    "mean_pct": -0.2671,
+    "win_pct": 37.0,
+    "control_mean_pct": -0.0417,
+    "p": 0.9
+   },
+   "W2": {
+    "n": 52,
+    "total_pct": -9.846,
+    "mean_pct": -0.1893,
+    "win_pct": 42.3,
+    "control_mean_pct": -0.0202,
+    "p": 0.847
+   },
+   "W3": {
+    "n": 54,
+    "total_pct": 25.679,
+    "mean_pct": 0.4755,
+    "win_pct": 64.8,
+    "control_mean_pct": -0.0206,
+    "p": 0.02
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 160,
+    "total_pct": 1.407,
+    "mean_pct": 0.0088,
+    "win_pct": 48.1,
+    "control_mean_pct": -0.0346,
+    "p": 0.34
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0.084,
+    "QQQ": 2.504,
+    "IWM": 0.761,
+    "TSLA": -2.085,
+    "NVDA": -1.709,
+    "META": -6.456,
+    "AMD": 12.383,
+    "AAPL": -2.133,
+    "AMZN": -0.615,
+    "MSFT": -0.743,
+    "GOOGL": -1.424,
+    "NFLX": 0.84
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 15m fade (failed break)",
+   "W1": {
+    "n": 53,
+    "total_pct": 2.353,
+    "mean_pct": 0.0444,
+    "win_pct": 34.0,
+    "control_mean_pct": -0.0277,
+    "p": 0.08
+   },
+   "W2": {
+    "n": 51,
+    "total_pct": 3.489,
+    "mean_pct": 0.0684,
+    "win_pct": 29.4,
+    "control_mean_pct": -0.0247,
+    "p": 0.057
+   },
+   "W3": {
+    "n": 52,
+    "total_pct": -1.002,
+    "mean_pct": -0.0193,
+    "win_pct": 26.9,
+    "control_mean_pct": -0.0307,
+    "p": 0.427
+   },
+   "rungs": 2,
+   "pooled_W1_W3": {
+    "n": 156,
+    "total_pct": 4.839,
+    "mean_pct": 0.031,
+    "win_pct": 30.1,
+    "control_mean_pct": -0.0271,
+    "p": 0.037
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.735,
+    "QQQ": -0.631,
+    "IWM": -0.347,
+    "TSLA": -0.989,
+    "NVDA": 0.463,
+    "META": -0.953,
+    "AMD": 1.53,
+    "AAPL": 0.549,
+    "AMZN": 1.759,
+    "MSFT": 0.002,
+    "GOOGL": 3.142,
+    "NFLX": 1.049
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "ORB 30m fade (failed break)",
+   "W1": {
+    "n": 50,
+    "total_pct": 2.369,
+    "mean_pct": 0.0474,
+    "win_pct": 22.0,
+    "control_mean_pct": -0.0351,
+    "p": 0.153
+   },
+   "W2": {
+    "n": 48,
+    "total_pct": 3.671,
+    "mean_pct": 0.0765,
+    "win_pct": 31.2,
+    "control_mean_pct": -0.0246,
+    "p": 0.053
+   },
+   "W3": {
+    "n": 49,
+    "total_pct": -3.427,
+    "mean_pct": -0.0699,
+    "win_pct": 18.4,
+    "control_mean_pct": -0.0414,
+    "p": 0.647
+   },
+   "rungs": 2,
+   "pooled_W1_W3": {
+    "n": 147,
+    "total_pct": 2.613,
+    "mean_pct": 0.0178,
+    "win_pct": 23.8,
+    "control_mean_pct": -0.0277,
+    "p": 0.097
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.256,
+    "QQQ": -0.55,
+    "IWM": 0.254,
+    "TSLA": 1.244,
+    "NVDA": -0.882,
+    "META": -0.685,
+    "AMD": 0.324,
+    "AAPL": 1.971,
+    "AMZN": 2.42,
+    "MSFT": -0.036,
+    "GOOGL": 0.405,
+    "NFLX": -1.595
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "VWAP reversion 1.5 sd",
+   "W1": {
+    "n": 116,
+    "total_pct": -6.255,
+    "mean_pct": -0.0539,
+    "win_pct": 66.4,
+    "control_mean_pct": -0.0385,
+    "p": 0.553
+   },
+   "W2": {
+    "n": 101,
+    "total_pct": -4.715,
+    "mean_pct": -0.0467,
+    "win_pct": 53.5,
+    "control_mean_pct": -0.0278,
+    "p": 0.58
+   },
+   "W3": {
+    "n": 98,
+    "total_pct": -29.701,
+    "mean_pct": -0.3031,
+    "win_pct": 55.1,
+    "control_mean_pct": -0.0208,
+    "p": 0.993
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 315,
+    "total_pct": -40.672,
+    "mean_pct": -0.1291,
+    "win_pct": 58.7,
+    "control_mean_pct": -0.0255,
+    "p": 0.95
+   },
+   "blocks_positive": 6,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.652,
+    "QQQ": -4.154,
+    "IWM": -2.431,
+    "TSLA": 1.143,
+    "NVDA": -5.543,
+    "META": -2.197,
+    "AMD": -15.294,
+    "AAPL": 2.589,
+    "AMZN": -7.022,
+    "MSFT": -5.677,
+    "GOOGL": 0.462,
+    "NFLX": -0.896
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "VWAP reversion 2 sd",
+   "W1": {
+    "n": 94,
+    "total_pct": -0.01,
+    "mean_pct": -0.0001,
+    "win_pct": 64.9,
+    "control_mean_pct": -0.0348,
+    "p": 0.39
+   },
+   "W2": {
+    "n": 76,
+    "total_pct": 1.115,
+    "mean_pct": 0.0147,
+    "win_pct": 56.6,
+    "control_mean_pct": -0.0229,
+    "p": 0.373
+   },
+   "W3": {
+    "n": 75,
+    "total_pct": -28.961,
+    "mean_pct": -0.3861,
+    "win_pct": 44.0,
+    "control_mean_pct": -0.0255,
+    "p": 0.987
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 245,
+    "total_pct": -27.856,
+    "mean_pct": -0.1137,
+    "win_pct": 55.9,
+    "control_mean_pct": -0.0293,
+    "p": 0.883
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.167,
+    "QQQ": -3.171,
+    "IWM": -1.634,
+    "TSLA": 0.806,
+    "NVDA": -3.364,
+    "META": 1.062,
+    "AMD": -15.908,
+    "AAPL": 1.364,
+    "AMZN": -3.861,
+    "MSFT": -3.826,
+    "GOOGL": 1.406,
+    "NFLX": -0.563
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "VWAP reversion 2.5 sd",
+   "W1": {
+    "n": 55,
+    "total_pct": -3.831,
+    "mean_pct": -0.0697,
+    "win_pct": 60.0,
+    "control_mean_pct": -0.0415,
+    "p": 0.557
+   },
+   "W2": {
+    "n": 49,
+    "total_pct": 3.924,
+    "mean_pct": 0.0801,
+    "win_pct": 61.2,
+    "control_mean_pct": -0.037,
+    "p": 0.213
+   },
+   "W3": {
+    "n": 61,
+    "total_pct": -23.223,
+    "mean_pct": -0.3807,
+    "win_pct": 39.3,
+    "control_mean_pct": -0.0275,
+    "p": 0.963
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 165,
+    "total_pct": -23.13,
+    "mean_pct": -0.1402,
+    "win_pct": 52.7,
+    "control_mean_pct": -0.0331,
+    "p": 0.857
+   },
+   "blocks_positive": 6,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.396,
+    "QQQ": -2.796,
+    "IWM": -2.869,
+    "TSLA": 3.626,
+    "NVDA": -2.2,
+    "META": 0.185,
+    "AMD": -13.505,
+    "AAPL": -0.662,
+    "AMZN": -0.933,
+    "MSFT": -1.992,
+    "GOOGL": -0.579,
+    "NFLX": -1.011
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "VWAP cross after 11:00, hold to close",
+   "W1": {
+    "n": 50,
+    "total_pct": 20.508,
+    "mean_pct": 0.4102,
+    "win_pct": 60.0,
+    "control_mean_pct": -0.0142,
+    "p": 0.017
+   },
+   "W2": {
+    "n": 47,
+    "total_pct": 6.844,
+    "mean_pct": 0.1456,
+    "win_pct": 59.6,
+    "control_mean_pct": -0.0303,
+    "p": 0.063
+   },
+   "W3": {
+    "n": 34,
+    "total_pct": -2.366,
+    "mean_pct": -0.0696,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.0162,
+    "p": 0.613
+   },
+   "rungs": 2,
+   "pooled_W1_W3": {
+    "n": 131,
+    "total_pct": 24.985,
+    "mean_pct": 0.1907,
+    "win_pct": 57.3,
+    "control_mean_pct": -0.033,
+    "p": 0.017
+   },
+   "blocks_positive": 4,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.868,
+    "QQQ": -1.37,
+    "IWM": 0.444,
+    "TSLA": 4.528,
+    "NVDA": 1.751,
+    "META": 3.216,
+    "AMD": 11.43,
+    "AAPL": 0.347,
+    "AMZN": 0.766,
+    "MSFT": 3.544,
+    "GOOGL": 3.168,
+    "NFLX": -1.971
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "VWAP cross after 11:00 with the gap",
+   "W1": {
+    "n": 46,
+    "total_pct": 0.444,
+    "mean_pct": 0.0097,
+    "win_pct": 58.7,
+    "control_mean_pct": -0.0304,
+    "p": 0.397
+   },
+   "W2": {
+    "n": 45,
+    "total_pct": 8.339,
+    "mean_pct": 0.1853,
+    "win_pct": 60.0,
+    "control_mean_pct": -0.0292,
+    "p": 0.053
+   },
+   "W3": {
+    "n": 32,
+    "total_pct": -8.569,
+    "mean_pct": -0.2678,
+    "win_pct": 25.0,
+    "control_mean_pct": -0.0498,
+    "p": 0.907
+   },
+   "rungs": 2,
+   "pooled_W1_W3": {
+    "n": 123,
+    "total_pct": 0.215,
+    "mean_pct": 0.0017,
+    "win_pct": 50.4,
+    "control_mean_pct": -0.0317,
+    "p": 0.327
+   },
+   "blocks_positive": 6,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.727,
+    "QQQ": 1.8,
+    "IWM": -1.77,
+    "TSLA": -0.729,
+    "NVDA": 1.317,
+    "META": 1.341,
+    "AMD": 6.573,
+    "AAPL": -0.3,
+    "AMZN": -3.648,
+    "MSFT": 0.682,
+    "GOOGL": -2.762,
+    "NFLX": -0.562
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Gap fade 0.5%",
+   "W1": {
+    "n": 39,
+    "total_pct": -0.795,
+    "mean_pct": -0.0204,
+    "win_pct": 48.7,
+    "control_mean_pct": -0.0159,
+    "p": 0.503
+   },
+   "W2": {
+    "n": 37,
+    "total_pct": -6.146,
+    "mean_pct": -0.1661,
+    "win_pct": 54.1,
+    "control_mean_pct": -0.0439,
+    "p": 0.767
+   },
+   "W3": {
+    "n": 39,
+    "total_pct": 14.487,
+    "mean_pct": 0.3715,
+    "win_pct": 76.9,
+    "control_mean_pct": -0.0366,
+    "p": 0.047
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 115,
+    "total_pct": 7.546,
+    "mean_pct": 0.0656,
+    "win_pct": 60.0,
+    "control_mean_pct": -0.0267,
+    "p": 0.193
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.083,
+    "QQQ": -1.469,
+    "IWM": -0.066,
+    "TSLA": 6.253,
+    "NVDA": -0.993,
+    "META": -0.394,
+    "AMD": -2.138,
+    "AAPL": 4.62,
+    "AMZN": -1.856,
+    "MSFT": 3.178,
+    "GOOGL": 0.309,
+    "NFLX": 1.186
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Gap fade 1%",
+   "W1": {
+    "n": 23,
+    "total_pct": -2.52,
+    "mean_pct": -0.1096,
+    "win_pct": 39.1,
+    "control_mean_pct": -0.0258,
+    "p": 0.57
+   },
+   "W2": {
+    "n": 22,
+    "total_pct": -11.529,
+    "mean_pct": -0.524,
+    "win_pct": 40.9,
+    "control_mean_pct": -0.0654,
+    "p": 0.91
+   },
+   "W3": {
+    "n": 25,
+    "total_pct": 8.853,
+    "mean_pct": 0.3541,
+    "win_pct": 72.0,
+    "control_mean_pct": -0.0198,
+    "p": 0.117
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 70,
+    "total_pct": -5.196,
+    "mean_pct": -0.0742,
+    "win_pct": 51.4,
+    "control_mean_pct": -0.0242,
+    "p": 0.623
+   },
+   "blocks_positive": 6,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.775,
+    "QQQ": -0.932,
+    "IWM": -0.743,
+    "TSLA": 4.276,
+    "NVDA": -3.883,
+    "META": -0.84,
+    "AMD": -2.138,
+    "AAPL": 2.982,
+    "AMZN": -3.234,
+    "MSFT": 2.536,
+    "GOOGL": -1.343,
+    "NFLX": -1.103
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Gap fade 2%",
+   "W1": {
+    "n": 9,
+    "total_pct": -0.201,
+    "mean_pct": -0.0223,
+    "win_pct": 33.3,
+    "control_mean_pct": -0.0296,
+    "p": 0.48
+   },
+   "W2": {
+    "n": 9,
+    "total_pct": -7.366,
+    "mean_pct": -0.8185,
+    "win_pct": 33.3,
+    "control_mean_pct": 0.0033,
+    "p": 0.853
+   },
+   "W3": {
+    "n": 8,
+    "total_pct": 1.756,
+    "mean_pct": 0.2195,
+    "win_pct": 62.5,
+    "control_mean_pct": 0.0188,
+    "p": 0.453
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 26,
+    "total_pct": -5.811,
+    "mean_pct": -0.2235,
+    "win_pct": 42.3,
+    "control_mean_pct": -0.0115,
+    "p": 0.673
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0,
+    "QQQ": -0.972,
+    "IWM": 0,
+    "TSLA": 3.574,
+    "NVDA": -3.404,
+    "META": -4.008,
+    "AMD": -1.789,
+    "AAPL": 0,
+    "AMZN": -0.53,
+    "MSFT": 0,
+    "GOOGL": -1.083,
+    "NFLX": 2.402
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Gap and go 0.5%",
+   "W1": {
+    "n": 39,
+    "total_pct": -5.952,
+    "mean_pct": -0.1526,
+    "win_pct": 56.4,
+    "control_mean_pct": -0.0423,
+    "p": 0.593
+   },
+   "W2": {
+    "n": 37,
+    "total_pct": 18.232,
+    "mean_pct": 0.4928,
+    "win_pct": 51.4,
+    "control_mean_pct": -0.008,
+    "p": 0.01
+   },
+   "W3": {
+    "n": 39,
+    "total_pct": -22.071,
+    "mean_pct": -0.5659,
+    "win_pct": 25.6,
+    "control_mean_pct": -0.0155,
+    "p": 0.973
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 115,
+    "total_pct": -9.791,
+    "mean_pct": -0.0851,
+    "win_pct": 44.3,
+    "control_mean_pct": -0.0313,
+    "p": 0.617
+   },
+   "blocks_positive": 6,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0.843,
+    "QQQ": -0.316,
+    "IWM": -0.406,
+    "TSLA": 0.447,
+    "NVDA": -1.342,
+    "META": 0.837,
+    "AMD": -4.813,
+    "AAPL": -2.71,
+    "AMZN": 3.21,
+    "MSFT": -2.917,
+    "GOOGL": -1.736,
+    "NFLX": -0.888
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Gap and go 1%",
+   "W1": {
+    "n": 23,
+    "total_pct": -3.532,
+    "mean_pct": -0.1536,
+    "win_pct": 60.9,
+    "control_mean_pct": -0.0855,
+    "p": 0.56
+   },
+   "W2": {
+    "n": 22,
+    "total_pct": 17.874,
+    "mean_pct": 0.8125,
+    "win_pct": 59.1,
+    "control_mean_pct": -0.0483,
+    "p": 0.01
+   },
+   "W3": {
+    "n": 25,
+    "total_pct": -13.86,
+    "mean_pct": -0.5544,
+    "win_pct": 28.0,
+    "control_mean_pct": -0.0361,
+    "p": 0.863
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 70,
+    "total_pct": 0.482,
+    "mean_pct": 0.0069,
+    "win_pct": 48.6,
+    "control_mean_pct": -0.0405,
+    "p": 0.443
+   },
+   "blocks_positive": 7,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0.715,
+    "QQQ": 0.743,
+    "IWM": 0.683,
+    "TSLA": -1.941,
+    "NVDA": 2.979,
+    "META": 2.245,
+    "AMD": -4.813,
+    "AAPL": -3.067,
+    "AMZN": 2.654,
+    "MSFT": -3.026,
+    "GOOGL": 2.507,
+    "NFLX": 0.803
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Gap and go 2%",
+   "W1": {
+    "n": 9,
+    "total_pct": 0.544,
+    "mean_pct": 0.0604,
+    "win_pct": 66.7,
+    "control_mean_pct": 0.015,
+    "p": 0.487
+   },
+   "W2": {
+    "n": 9,
+    "total_pct": 10.004,
+    "mean_pct": 1.1115,
+    "win_pct": 66.7,
+    "control_mean_pct": -0.0851,
+    "p": 0.04
+   },
+   "W3": {
+    "n": 8,
+    "total_pct": -4.209,
+    "mean_pct": -0.5261,
+    "win_pct": 37.5,
+    "control_mean_pct": -0.0723,
+    "p": 0.65
+   },
+   "rungs": 2,
+   "pooled_W1_W3": {
+    "n": 26,
+    "total_pct": 6.339,
+    "mean_pct": 0.2438,
+    "win_pct": 57.7,
+    "control_mean_pct": 0.0063,
+    "p": 0.28
+   },
+   "blocks_positive": 7,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0,
+    "QQQ": 0.912,
+    "IWM": 0,
+    "TSLA": 0.247,
+    "NVDA": 3.164,
+    "META": 3.948,
+    "AMD": -0.783,
+    "AAPL": 0,
+    "AMZN": 0.35,
+    "MSFT": 0,
+    "GOOGL": 1.023,
+    "NFLX": -2.522
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "RSI(2) 5m, 5/95",
+   "W1": {
+    "n": 226,
+    "total_pct": -4.522,
+    "mean_pct": -0.02,
+    "win_pct": 54.9,
+    "control_mean_pct": -0.0283,
+    "p": 0.393
+   },
+   "W2": {
+    "n": 225,
+    "total_pct": -5.364,
+    "mean_pct": -0.0238,
+    "win_pct": 57.3,
+    "control_mean_pct": -0.0288,
+    "p": 0.41
+   },
+   "W3": {
+    "n": 229,
+    "total_pct": -13.953,
+    "mean_pct": -0.0609,
+    "win_pct": 51.5,
+    "control_mean_pct": -0.0316,
+    "p": 0.913
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 680,
+    "total_pct": -23.838,
+    "mean_pct": -0.0351,
+    "win_pct": 54.6,
+    "control_mean_pct": -0.0303,
+    "p": 0.673
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.807,
+    "QQQ": -3.492,
+    "IWM": -1.88,
+    "TSLA": -2.038,
+    "NVDA": -1.416,
+    "META": 0.029,
+    "AMD": -8.352,
+    "AAPL": -2.555,
+    "AMZN": -1.638,
+    "MSFT": -0.808,
+    "GOOGL": 1.778,
+    "NFLX": -1.66
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "RSI(2) 5m, 10/90",
+   "W1": {
+    "n": 240,
+    "total_pct": -5.026,
+    "mean_pct": -0.0209,
+    "win_pct": 56.2,
+    "control_mean_pct": -0.0322,
+    "p": 0.297
+   },
+   "W2": {
+    "n": 240,
+    "total_pct": -10.874,
+    "mean_pct": -0.0453,
+    "win_pct": 55.8,
+    "control_mean_pct": -0.0288,
+    "p": 0.773
+   },
+   "W3": {
+    "n": 240,
+    "total_pct": -11.553,
+    "mean_pct": -0.0481,
+    "win_pct": 52.1,
+    "control_mean_pct": -0.0271,
+    "p": 0.827
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 720,
+    "total_pct": -27.453,
+    "mean_pct": -0.0381,
+    "win_pct": 54.7,
+    "control_mean_pct": -0.0298,
+    "p": 0.767
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -2.588,
+    "QQQ": -0.961,
+    "IWM": -1.813,
+    "TSLA": -5.218,
+    "NVDA": -0.283,
+    "META": -2.296,
+    "AMD": -9.454,
+    "AAPL": -3.081,
+    "AMZN": -0.563,
+    "MSFT": -1.011,
+    "GOOGL": -0.491,
+    "NFLX": 0.307
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "RSI(2) 5m, 20/80",
+   "W1": {
+    "n": 240,
+    "total_pct": -8.424,
+    "mean_pct": -0.0351,
+    "win_pct": 53.8,
+    "control_mean_pct": -0.0312,
+    "p": 0.607
+   },
+   "W2": {
+    "n": 240,
+    "total_pct": -19.593,
+    "mean_pct": -0.0816,
+    "win_pct": 52.1,
+    "control_mean_pct": -0.0297,
+    "p": 0.993
+   },
+   "W3": {
+    "n": 240,
+    "total_pct": -11.609,
+    "mean_pct": -0.0484,
+    "win_pct": 57.1,
+    "control_mean_pct": -0.0295,
+    "p": 0.823
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 720,
+    "total_pct": -39.627,
+    "mean_pct": -0.055,
+    "win_pct": 54.3,
+    "control_mean_pct": -0.0311,
+    "p": 0.97
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -3.65,
+    "QQQ": -3.681,
+    "IWM": -4.277,
+    "TSLA": -5.561,
+    "NVDA": -3.758,
+    "META": -5.322,
+    "AMD": -2.466,
+    "AAPL": -4.821,
+    "AMZN": -3.529,
+    "MSFT": -1.438,
+    "GOOGL": -0.507,
+    "NFLX": -0.617
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "RSI(2) 15m, 5/95",
+   "W1": {
+    "n": 83,
+    "total_pct": -12.073,
+    "mean_pct": -0.1455,
+    "win_pct": 44.6,
+    "control_mean_pct": -0.0282,
+    "p": 0.953
+   },
+   "W2": {
+    "n": 84,
+    "total_pct": 2.174,
+    "mean_pct": 0.0259,
+    "win_pct": 61.9,
+    "control_mean_pct": -0.0262,
+    "p": 0.153
+   },
+   "W3": {
+    "n": 106,
+    "total_pct": -0.88,
+    "mean_pct": -0.0083,
+    "win_pct": 65.1,
+    "control_mean_pct": -0.0293,
+    "p": 0.337
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 273,
+    "total_pct": -10.779,
+    "mean_pct": -0.0395,
+    "win_pct": 57.9,
+    "control_mean_pct": -0.0307,
+    "p": 0.59
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.625,
+    "QQQ": 0.445,
+    "IWM": -1.258,
+    "TSLA": -0.201,
+    "NVDA": -1.196,
+    "META": -2.007,
+    "AMD": 0.547,
+    "AAPL": 1.601,
+    "AMZN": -2.682,
+    "MSFT": -2.216,
+    "GOOGL": -0.427,
+    "NFLX": -2.76
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "RSI(2) 15m, 10/90",
+   "W1": {
+    "n": 152,
+    "total_pct": -12.569,
+    "mean_pct": -0.0827,
+    "win_pct": 48.7,
+    "control_mean_pct": -0.0254,
+    "p": 0.89
+   },
+   "W2": {
+    "n": 141,
+    "total_pct": 2.412,
+    "mean_pct": 0.0171,
+    "win_pct": 66.0,
+    "control_mean_pct": -0.0275,
+    "p": 0.113
+   },
+   "W3": {
+    "n": 175,
+    "total_pct": -7.474,
+    "mean_pct": -0.0427,
+    "win_pct": 59.4,
+    "control_mean_pct": -0.0272,
+    "p": 0.68
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 468,
+    "total_pct": -17.632,
+    "mean_pct": -0.0377,
+    "win_pct": 57.9,
+    "control_mean_pct": -0.027,
+    "p": 0.673
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.299,
+    "QQQ": -2.45,
+    "IWM": -2.637,
+    "TSLA": 2.064,
+    "NVDA": -0.364,
+    "META": -2.218,
+    "AMD": -4.798,
+    "AAPL": 2.775,
+    "AMZN": -5.313,
+    "MSFT": -3.233,
+    "GOOGL": 0.702,
+    "NFLX": -0.861
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "RSI(2) 15m, 20/80",
+   "W1": {
+    "n": 226,
+    "total_pct": -19.24,
+    "mean_pct": -0.0851,
+    "win_pct": 55.3,
+    "control_mean_pct": -0.0306,
+    "p": 0.93
+   },
+   "W2": {
+    "n": 225,
+    "total_pct": -1.385,
+    "mean_pct": -0.0062,
+    "win_pct": 60.9,
+    "control_mean_pct": -0.0294,
+    "p": 0.243
+   },
+   "W3": {
+    "n": 231,
+    "total_pct": -9.421,
+    "mean_pct": -0.0408,
+    "win_pct": 54.5,
+    "control_mean_pct": -0.0312,
+    "p": 0.62
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 682,
+    "total_pct": -30.046,
+    "mean_pct": -0.0441,
+    "win_pct": 56.9,
+    "control_mean_pct": -0.0305,
+    "p": 0.763
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -3.01,
+    "QQQ": -2.544,
+    "IWM": -4.533,
+    "TSLA": 3.506,
+    "NVDA": -2.841,
+    "META": -0.545,
+    "AMD": -6.684,
+    "AAPL": -1.272,
+    "AMZN": -4.332,
+    "MSFT": -5.455,
+    "GOOGL": -1.213,
+    "NFLX": -1.123
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Bollinger 20/2 reversion",
+   "W1": {
+    "n": 175,
+    "total_pct": -10.65,
+    "mean_pct": -0.0609,
+    "win_pct": 51.4,
+    "control_mean_pct": -0.0291,
+    "p": 0.807
+   },
+   "W2": {
+    "n": 171,
+    "total_pct": -2.917,
+    "mean_pct": -0.0171,
+    "win_pct": 52.0,
+    "control_mean_pct": -0.0296,
+    "p": 0.357
+   },
+   "W3": {
+    "n": 179,
+    "total_pct": -4.05,
+    "mean_pct": -0.0226,
+    "win_pct": 52.5,
+    "control_mean_pct": -0.0315,
+    "p": 0.403
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 525,
+    "total_pct": -17.616,
+    "mean_pct": -0.0336,
+    "win_pct": 52.0,
+    "control_mean_pct": -0.0303,
+    "p": 0.55
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.129,
+    "QQQ": -1.482,
+    "IWM": -3.241,
+    "TSLA": 0.351,
+    "NVDA": 2.143,
+    "META": -1.634,
+    "AMD": -5.991,
+    "AAPL": 2.122,
+    "AMZN": -2.87,
+    "MSFT": -2.104,
+    "GOOGL": 2.283,
+    "NFLX": -6.064
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Bollinger 20/2.5 reversion",
+   "W1": {
+    "n": 78,
+    "total_pct": -3.972,
+    "mean_pct": -0.0509,
+    "win_pct": 51.3,
+    "control_mean_pct": -0.0274,
+    "p": 0.703
+   },
+   "W2": {
+    "n": 66,
+    "total_pct": -4.128,
+    "mean_pct": -0.0625,
+    "win_pct": 53.0,
+    "control_mean_pct": -0.0302,
+    "p": 0.74
+   },
+   "W3": {
+    "n": 61,
+    "total_pct": -1.607,
+    "mean_pct": -0.0263,
+    "win_pct": 47.5,
+    "control_mean_pct": -0.0368,
+    "p": 0.443
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 205,
+    "total_pct": -9.706,
+    "mean_pct": -0.0473,
+    "win_pct": 50.7,
+    "control_mean_pct": -0.0267,
+    "p": 0.75
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.199,
+    "QQQ": 0.133,
+    "IWM": -2.266,
+    "TSLA": 3.371,
+    "NVDA": -2.215,
+    "META": -5.358,
+    "AMD": -0.323,
+    "AAPL": -0.477,
+    "AMZN": -1.334,
+    "MSFT": -0.024,
+    "GOOGL": 2.193,
+    "NFLX": -3.206
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Bollinger 20/2 reversion, ADX under 20",
+   "W1": {
+    "n": 60,
+    "total_pct": -1.847,
+    "mean_pct": -0.0308,
+    "win_pct": 53.3,
+    "control_mean_pct": -0.0292,
+    "p": 0.51
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": 1.761,
+    "mean_pct": 0.0293,
+    "win_pct": 55.0,
+    "control_mean_pct": -0.0302,
+    "p": 0.093
+   },
+   "W3": {
+    "n": 65,
+    "total_pct": -2.173,
+    "mean_pct": -0.0334,
+    "win_pct": 56.9,
+    "control_mean_pct": -0.03,
+    "p": 0.533
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 185,
+    "total_pct": -2.259,
+    "mean_pct": -0.0122,
+    "win_pct": 55.1,
+    "control_mean_pct": -0.0313,
+    "p": 0.28
+   },
+   "blocks_positive": 5,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.065,
+    "QQQ": 0.078,
+    "IWM": -0.571,
+    "TSLA": 2.055,
+    "NVDA": -0.554,
+    "META": -1.527,
+    "AMD": -1.331,
+    "AAPL": -1.082,
+    "AMZN": 0.971,
+    "MSFT": -0.618,
+    "GOOGL": 2.233,
+    "NFLX": -1.848
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "First 30m direction into last 30m",
+   "W1": {
+    "n": 59,
+    "total_pct": -12.801,
+    "mean_pct": -0.217,
+    "win_pct": 32.2,
+    "control_mean_pct": -0.0334,
+    "p": 1.0
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": -6.767,
+    "mean_pct": -0.1128,
+    "win_pct": 33.3,
+    "control_mean_pct": -0.0274,
+    "p": 0.95
+   },
+   "W3": {
+    "n": 60,
+    "total_pct": -6.979,
+    "mean_pct": -0.1163,
+    "win_pct": 31.7,
+    "control_mean_pct": -0.0276,
+    "p": 0.973
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 179,
+    "total_pct": -26.547,
+    "mean_pct": -0.1483,
+    "win_pct": 32.4,
+    "control_mean_pct": -0.0298,
+    "p": 1.0
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.385,
+    "QQQ": -1.819,
+    "IWM": -0.218,
+    "TSLA": -2.31,
+    "NVDA": -2.674,
+    "META": -4.668,
+    "AMD": -0.557,
+    "AAPL": -1.109,
+    "AMZN": -2.057,
+    "MSFT": -4.017,
+    "GOOGL": -4.135,
+    "NFLX": -1.599
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "First 60m direction into last 60m",
+   "W1": {
+    "n": 60,
+    "total_pct": -21.983,
+    "mean_pct": -0.3664,
+    "win_pct": 33.3,
+    "control_mean_pct": -0.0319,
+    "p": 1.0
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": -9.798,
+    "mean_pct": -0.1633,
+    "win_pct": 31.7,
+    "control_mean_pct": -0.0332,
+    "p": 0.96
+   },
+   "W3": {
+    "n": 60,
+    "total_pct": -11.94,
+    "mean_pct": -0.199,
+    "win_pct": 18.3,
+    "control_mean_pct": -0.0356,
+    "p": 0.993
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 180,
+    "total_pct": -43.721,
+    "mean_pct": -0.2429,
+    "win_pct": 27.8,
+    "control_mean_pct": -0.0288,
+    "p": 1.0
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -2.213,
+    "QQQ": -3.196,
+    "IWM": -1.602,
+    "TSLA": -4.138,
+    "NVDA": -4.788,
+    "META": -4.329,
+    "AMD": -8.184,
+    "AAPL": -2.205,
+    "AMZN": -3.368,
+    "MSFT": -4.646,
+    "GOOGL": -3.239,
+    "NFLX": -1.813
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Morning direction into the afternoon",
+   "W1": {
+    "n": 60,
+    "total_pct": 1.864,
+    "mean_pct": 0.0311,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.0339,
+    "p": 0.33
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": -9.512,
+    "mean_pct": -0.1585,
+    "win_pct": 33.3,
+    "control_mean_pct": -0.0353,
+    "p": 0.857
+   },
+   "W3": {
+    "n": 60,
+    "total_pct": 11.846,
+    "mean_pct": 0.1974,
+    "win_pct": 63.3,
+    "control_mean_pct": -0.0302,
+    "p": 0.047
+   },
+   "rungs": 1,
+   "pooled_W1_W3": {
+    "n": 180,
+    "total_pct": 4.198,
+    "mean_pct": 0.0233,
+    "win_pct": 48.9,
+    "control_mean_pct": -0.0328,
+    "p": 0.23
+   },
+   "blocks_positive": 3,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": 0.561,
+    "QQQ": 1.635,
+    "IWM": 0.954,
+    "TSLA": -5.148,
+    "NVDA": 0.999,
+    "META": -4.773,
+    "AMD": 8.562,
+    "AAPL": -0.177,
+    "AMZN": -1.89,
+    "MSFT": 0.95,
+    "GOOGL": 2.841,
+    "NFLX": -0.318
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Opening drive: first bar direction to 11:00",
+   "W1": {
+    "n": 60,
+    "total_pct": -2.447,
+    "mean_pct": -0.0408,
+    "win_pct": 38.3,
+    "control_mean_pct": -0.035,
+    "p": 0.527
+   },
+   "W2": {
+    "n": 59,
+    "total_pct": 2.137,
+    "mean_pct": 0.0362,
+    "win_pct": 50.8,
+    "control_mean_pct": -0.0255,
+    "p": 0.207
+   },
+   "W3": {
+    "n": 60,
+    "total_pct": -1.914,
+    "mean_pct": -0.0319,
+    "win_pct": 48.3,
+    "control_mean_pct": -0.03,
+    "p": 0.533
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 179,
+    "total_pct": -2.224,
+    "mean_pct": -0.0124,
+    "win_pct": 45.8,
+    "control_mean_pct": -0.0284,
+    "p": 0.363
+   },
+   "blocks_positive": 6,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -1.651,
+    "QQQ": -1.516,
+    "IWM": 0.339,
+    "TSLA": 2.382,
+    "NVDA": -5.62,
+    "META": 1.699,
+    "AMD": 6.693,
+    "AAPL": -1.044,
+    "AMZN": 3.851,
+    "MSFT": 3.962,
+    "GOOGL": -7.874,
+    "NFLX": -3.446
+   }
+  },
+  {
+   "kind": "stock",
+   "rule": "Opening reversal: fade first 30m to 13:00",
+   "W1": {
+    "n": 60,
+    "total_pct": -0.922,
+    "mean_pct": -0.0154,
+    "win_pct": 53.3,
+    "control_mean_pct": -0.0302,
+    "p": 0.463
+   },
+   "W2": {
+    "n": 60,
+    "total_pct": 15.951,
+    "mean_pct": 0.2658,
+    "win_pct": 51.7,
+    "control_mean_pct": -0.0204,
+    "p": 0.0
+   },
+   "W3": {
+    "n": 60,
+    "total_pct": -17.602,
+    "mean_pct": -0.2934,
+    "win_pct": 43.3,
+    "control_mean_pct": -0.0168,
+    "p": 0.993
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 180,
+    "total_pct": -2.573,
+    "mean_pct": -0.0143,
+    "win_pct": 49.4,
+    "control_mean_pct": -0.0397,
+    "p": 0.347
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 11,
+   "by_sym_W1_W3": {
+    "SPY": -0.13,
+    "QQQ": 0.604,
+    "IWM": -2.991,
+    "TSLA": -1.831,
+    "NVDA": 0.638,
+    "META": -2.287,
+    "AMD": 0.568,
+    "AAPL": 2.216,
+    "AMZN": -2.691,
+    "MSFT": -3.666,
+    "GOOGL": -0.938,
+    "NFLX": 7.935
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB London open 15m, target 1R",
+   "W1": {
+    "n": 42,
+    "total_pct": -4.608,
+    "mean_pct": -0.1097,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.115,
+    "p": 0.463
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": -0.377,
+    "mean_pct": -0.009,
+    "win_pct": 69.0,
+    "control_mean_pct": -0.1196,
+    "p": 0.007
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -7.967,
+    "mean_pct": -0.1897,
+    "win_pct": 40.5,
+    "control_mean_pct": -0.1141,
+    "p": 0.857
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -12.952,
+    "mean_pct": -0.1028,
+    "win_pct": 53.2,
+    "control_mean_pct": -0.1172,
+    "p": 0.333
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -1.145,
+    "ETHUSDT": -3.131,
+    "SOLUSDT": -1.852,
+    "BNBUSDT": -2.517,
+    "XRPUSDT": -3.04,
+    "DOGEUSDT": -1.269
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB London open 15m, target day end",
+   "W1": {
+    "n": 42,
+    "total_pct": -9.412,
+    "mean_pct": -0.2241,
+    "win_pct": 11.9,
+    "control_mean_pct": -0.1054,
+    "p": 0.813
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": -2.468,
+    "mean_pct": -0.0588,
+    "win_pct": 28.6,
+    "control_mean_pct": -0.102,
+    "p": 0.413
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -18.874,
+    "mean_pct": -0.4494,
+    "win_pct": 2.4,
+    "control_mean_pct": -0.1246,
+    "p": 0.997
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -30.754,
+    "mean_pct": -0.2441,
+    "win_pct": 14.3,
+    "control_mean_pct": -0.1216,
+    "p": 0.907
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -2.663,
+    "ETHUSDT": -5.525,
+    "SOLUSDT": -8.45,
+    "BNBUSDT": -1.763,
+    "XRPUSDT": -2.774,
+    "DOGEUSDT": -9.579
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB London open 30m, target 1R",
+   "W1": {
+    "n": 42,
+    "total_pct": -6.015,
+    "mean_pct": -0.1432,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.1138,
+    "p": 0.64
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": 1.267,
+    "mean_pct": 0.0302,
+    "win_pct": 69.0,
+    "control_mean_pct": -0.12,
+    "p": 0.017
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -13.459,
+    "mean_pct": -0.3205,
+    "win_pct": 31.0,
+    "control_mean_pct": -0.1246,
+    "p": 0.973
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -18.207,
+    "mean_pct": -0.1445,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.1244,
+    "p": 0.663
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -2.064,
+    "ETHUSDT": -3.053,
+    "SOLUSDT": -2.775,
+    "BNBUSDT": -3.533,
+    "XRPUSDT": -4.584,
+    "DOGEUSDT": -2.198
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB London open 30m, target day end",
+   "W1": {
+    "n": 42,
+    "total_pct": -13.421,
+    "mean_pct": -0.3195,
+    "win_pct": 11.9,
+    "control_mean_pct": -0.1211,
+    "p": 0.913
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": -5.25,
+    "mean_pct": -0.125,
+    "win_pct": 23.8,
+    "control_mean_pct": -0.1141,
+    "p": 0.513
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -23.681,
+    "mean_pct": -0.5638,
+    "win_pct": 2.4,
+    "control_mean_pct": -0.121,
+    "p": 1.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -42.352,
+    "mean_pct": -0.3361,
+    "win_pct": 12.7,
+    "control_mean_pct": -0.1267,
+    "p": 0.983
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -4.312,
+    "ETHUSDT": -6.777,
+    "SOLUSDT": -10.479,
+    "BNBUSDT": -2.644,
+    "XRPUSDT": -5.691,
+    "DOGEUSDT": -12.449
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB NY open 15m, target 1R",
+   "W1": {
+    "n": 42,
+    "total_pct": 0.097,
+    "mean_pct": 0.0023,
+    "win_pct": 52.4,
+    "control_mean_pct": -0.1246,
+    "p": 0.08
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": 4.981,
+    "mean_pct": 0.1186,
+    "win_pct": 69.0,
+    "control_mean_pct": -0.1207,
+    "p": 0.003
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -8.543,
+    "mean_pct": -0.2034,
+    "win_pct": 50.0,
+    "control_mean_pct": -0.1169,
+    "p": 0.84
+   },
+   "rungs": 2,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -3.465,
+    "mean_pct": -0.0275,
+    "win_pct": 57.1,
+    "control_mean_pct": -0.122,
+    "p": 0.017
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -0.327,
+    "ETHUSDT": 2.147,
+    "SOLUSDT": -1.02,
+    "BNBUSDT": -0.488,
+    "XRPUSDT": -4.073,
+    "DOGEUSDT": 0.296
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB NY open 15m, target day end",
+   "W1": {
+    "n": 42,
+    "total_pct": -12.997,
+    "mean_pct": -0.3094,
+    "win_pct": 28.6,
+    "control_mean_pct": -0.1146,
+    "p": 0.823
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": 0.942,
+    "mean_pct": 0.0224,
+    "win_pct": 35.7,
+    "control_mean_pct": -0.1262,
+    "p": 0.21
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -23.238,
+    "mean_pct": -0.5533,
+    "win_pct": 14.3,
+    "control_mean_pct": -0.1088,
+    "p": 0.99
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -35.293,
+    "mean_pct": -0.2801,
+    "win_pct": 26.2,
+    "control_mean_pct": -0.1272,
+    "p": 0.947
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -4.345,
+    "ETHUSDT": -5.85,
+    "SOLUSDT": -9.825,
+    "BNBUSDT": -6.143,
+    "XRPUSDT": -5.533,
+    "DOGEUSDT": -3.597
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB NY open 30m, target 1R",
+   "W1": {
+    "n": 42,
+    "total_pct": -1.14,
+    "mean_pct": -0.0271,
+    "win_pct": 54.8,
+    "control_mean_pct": -0.1089,
+    "p": 0.243
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": 12.227,
+    "mean_pct": 0.2911,
+    "win_pct": 78.6,
+    "control_mean_pct": -0.1246,
+    "p": 0.0
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -2.748,
+    "mean_pct": -0.0654,
+    "win_pct": 47.6,
+    "control_mean_pct": -0.1186,
+    "p": 0.307
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": 8.339,
+    "mean_pct": 0.0662,
+    "win_pct": 60.3,
+    "control_mean_pct": -0.1211,
+    "p": 0.003
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": 2.056,
+    "ETHUSDT": 6.087,
+    "SOLUSDT": -3.682,
+    "BNBUSDT": -0.454,
+    "XRPUSDT": 0.381,
+    "DOGEUSDT": 3.95
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "ORB NY open 30m, target day end",
+   "W1": {
+    "n": 42,
+    "total_pct": -13.762,
+    "mean_pct": -0.3277,
+    "win_pct": 33.3,
+    "control_mean_pct": -0.1326,
+    "p": 0.863
+   },
+   "W2": {
+    "n": 42,
+    "total_pct": -4.754,
+    "mean_pct": -0.1132,
+    "win_pct": 33.3,
+    "control_mean_pct": -0.11,
+    "p": 0.487
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -9.525,
+    "mean_pct": -0.2268,
+    "win_pct": 28.6,
+    "control_mean_pct": -0.1304,
+    "p": 0.667
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 126,
+    "total_pct": -28.041,
+    "mean_pct": -0.2225,
+    "win_pct": 31.7,
+    "control_mean_pct": -0.102,
+    "p": 0.847
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -3.27,
+    "ETHUSDT": -1.687,
+    "SOLUSDT": -10.823,
+    "BNBUSDT": -6.348,
+    "XRPUSDT": -2.945,
+    "DOGEUSDT": -2.968
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "VWAP (UTC day) reversion 1.5 sd",
+   "W1": {
+    "n": 178,
+    "total_pct": -22.373,
+    "mean_pct": -0.1257,
+    "win_pct": 62.9,
+    "control_mean_pct": -0.1251,
+    "p": 0.517
+   },
+   "W2": {
+    "n": 189,
+    "total_pct": -18.949,
+    "mean_pct": -0.1003,
+    "win_pct": 67.2,
+    "control_mean_pct": -0.1155,
+    "p": 0.423
+   },
+   "W3": {
+    "n": 213,
+    "total_pct": 19.515,
+    "mean_pct": 0.0916,
+    "win_pct": 75.6,
+    "control_mean_pct": -0.1209,
+    "p": 0.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 580,
+    "total_pct": -21.807,
+    "mean_pct": -0.0376,
+    "win_pct": 69.0,
+    "control_mean_pct": -0.1181,
+    "p": 0.023
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -5.247,
+    "ETHUSDT": -2.712,
+    "SOLUSDT": 2.927,
+    "BNBUSDT": -13.062,
+    "XRPUSDT": 0.989,
+    "DOGEUSDT": -4.703
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "VWAP (UTC day) reversion 2 sd",
+   "W1": {
+    "n": 144,
+    "total_pct": -21.644,
+    "mean_pct": -0.1503,
+    "win_pct": 59.7,
+    "control_mean_pct": -0.1205,
+    "p": 0.64
+   },
+   "W2": {
+    "n": 143,
+    "total_pct": -11.735,
+    "mean_pct": -0.0821,
+    "win_pct": 67.1,
+    "control_mean_pct": -0.1223,
+    "p": 0.317
+   },
+   "W3": {
+    "n": 183,
+    "total_pct": 15.589,
+    "mean_pct": 0.0852,
+    "win_pct": 72.1,
+    "control_mean_pct": -0.1264,
+    "p": 0.003
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 470,
+    "total_pct": -17.791,
+    "mean_pct": -0.0379,
+    "win_pct": 66.8,
+    "control_mean_pct": -0.1234,
+    "p": 0.023
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -5.529,
+    "ETHUSDT": -4.554,
+    "SOLUSDT": 2.402,
+    "BNBUSDT": -9.307,
+    "XRPUSDT": 0.149,
+    "DOGEUSDT": -0.951
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "VWAP (UTC day) reversion 2.5 sd",
+   "W1": {
+    "n": 103,
+    "total_pct": -14.898,
+    "mean_pct": -0.1446,
+    "win_pct": 57.3,
+    "control_mean_pct": -0.109,
+    "p": 0.647
+   },
+   "W2": {
+    "n": 95,
+    "total_pct": -14.324,
+    "mean_pct": -0.1508,
+    "win_pct": 66.3,
+    "control_mean_pct": -0.1249,
+    "p": 0.577
+   },
+   "W3": {
+    "n": 146,
+    "total_pct": 16.113,
+    "mean_pct": 0.1104,
+    "win_pct": 71.9,
+    "control_mean_pct": -0.1168,
+    "p": 0.003
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 344,
+    "total_pct": -13.109,
+    "mean_pct": -0.0381,
+    "win_pct": 66.0,
+    "control_mean_pct": -0.1255,
+    "p": 0.057
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -5.132,
+    "ETHUSDT": -3.994,
+    "SOLUSDT": 2.585,
+    "BNBUSDT": -6.022,
+    "XRPUSDT": 1.952,
+    "DOGEUSDT": -2.498
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "RSI(2) 5m, 5/95",
+   "W1": {
+    "n": 336,
+    "total_pct": -43.792,
+    "mean_pct": -0.1303,
+    "win_pct": 27.7,
+    "control_mean_pct": -0.1211,
+    "p": 0.703
+   },
+   "W2": {
+    "n": 336,
+    "total_pct": -33.067,
+    "mean_pct": -0.0984,
+    "win_pct": 28.3,
+    "control_mean_pct": -0.1201,
+    "p": 0.053
+   },
+   "W3": {
+    "n": 336,
+    "total_pct": -35.885,
+    "mean_pct": -0.1068,
+    "win_pct": 33.0,
+    "control_mean_pct": -0.1204,
+    "p": 0.187
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 1008,
+    "total_pct": -112.744,
+    "mean_pct": -0.1118,
+    "win_pct": 29.7,
+    "control_mean_pct": -0.1196,
+    "p": 0.17
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -20.096,
+    "ETHUSDT": -23.698,
+    "SOLUSDT": -17.704,
+    "BNBUSDT": -19.024,
+    "XRPUSDT": -16.372,
+    "DOGEUSDT": -15.85
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "RSI(2) 5m, 10/90",
+   "W1": {
+    "n": 336,
+    "total_pct": -44.357,
+    "mean_pct": -0.132,
+    "win_pct": 26.2,
+    "control_mean_pct": -0.1202,
+    "p": 0.783
+   },
+   "W2": {
+    "n": 336,
+    "total_pct": -28.368,
+    "mean_pct": -0.0844,
+    "win_pct": 27.7,
+    "control_mean_pct": -0.1213,
+    "p": 0.003
+   },
+   "W3": {
+    "n": 336,
+    "total_pct": -28.088,
+    "mean_pct": -0.0836,
+    "win_pct": 34.2,
+    "control_mean_pct": -0.1207,
+    "p": 0.003
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 1008,
+    "total_pct": -100.812,
+    "mean_pct": -0.1,
+    "win_pct": 29.4,
+    "control_mean_pct": -0.12,
+    "p": 0.013
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -18.646,
+    "ETHUSDT": -16.68,
+    "SOLUSDT": -14.327,
+    "BNBUSDT": -18.418,
+    "XRPUSDT": -17.523,
+    "DOGEUSDT": -15.219
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "RSI(2) 5m, 20/80",
+   "W1": {
+    "n": 336,
+    "total_pct": -43.646,
+    "mean_pct": -0.1299,
+    "win_pct": 28.9,
+    "control_mean_pct": -0.1195,
+    "p": 0.74
+   },
+   "W2": {
+    "n": 336,
+    "total_pct": -29.053,
+    "mean_pct": -0.0865,
+    "win_pct": 28.6,
+    "control_mean_pct": -0.1211,
+    "p": 0.0
+   },
+   "W3": {
+    "n": 336,
+    "total_pct": -27.389,
+    "mean_pct": -0.0815,
+    "win_pct": 33.9,
+    "control_mean_pct": -0.1206,
+    "p": 0.003
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 1008,
+    "total_pct": -100.088,
+    "mean_pct": -0.0993,
+    "win_pct": 30.5,
+    "control_mean_pct": -0.1201,
+    "p": 0.003
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -18.538,
+    "ETHUSDT": -16.432,
+    "SOLUSDT": -17.754,
+    "BNBUSDT": -17.827,
+    "XRPUSDT": -14.476,
+    "DOGEUSDT": -15.063
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "RSI(2) 15m, 5/95",
+   "W1": {
+    "n": 267,
+    "total_pct": -25.758,
+    "mean_pct": -0.0965,
+    "win_pct": 44.6,
+    "control_mean_pct": -0.122,
+    "p": 0.197
+   },
+   "W2": {
+    "n": 230,
+    "total_pct": -26.324,
+    "mean_pct": -0.1145,
+    "win_pct": 47.8,
+    "control_mean_pct": -0.1202,
+    "p": 0.403
+   },
+   "W3": {
+    "n": 265,
+    "total_pct": 2.753,
+    "mean_pct": 0.0104,
+    "win_pct": 51.3,
+    "control_mean_pct": -0.1233,
+    "p": 0.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 762,
+    "total_pct": -49.329,
+    "mean_pct": -0.0647,
+    "win_pct": 47.9,
+    "control_mean_pct": -0.1204,
+    "p": 0.0
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -12.623,
+    "ETHUSDT": -12.581,
+    "SOLUSDT": -9.39,
+    "BNBUSDT": -11.247,
+    "XRPUSDT": -0.145,
+    "DOGEUSDT": -3.343
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "RSI(2) 15m, 10/90",
+   "W1": {
+    "n": 331,
+    "total_pct": -47.785,
+    "mean_pct": -0.1444,
+    "win_pct": 40.8,
+    "control_mean_pct": -0.1179,
+    "p": 0.823
+   },
+   "W2": {
+    "n": 334,
+    "total_pct": -33.876,
+    "mean_pct": -0.1014,
+    "win_pct": 43.4,
+    "control_mean_pct": -0.1218,
+    "p": 0.19
+   },
+   "W3": {
+    "n": 333,
+    "total_pct": -14.614,
+    "mean_pct": -0.0439,
+    "win_pct": 46.5,
+    "control_mean_pct": -0.1196,
+    "p": 0.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 998,
+    "total_pct": -96.276,
+    "mean_pct": -0.0965,
+    "win_pct": 43.6,
+    "control_mean_pct": -0.1212,
+    "p": 0.037
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -17.19,
+    "ETHUSDT": -18.754,
+    "SOLUSDT": -13.846,
+    "BNBUSDT": -18.509,
+    "XRPUSDT": -13.74,
+    "DOGEUSDT": -14.236
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "RSI(2) 15m, 20/80",
+   "W1": {
+    "n": 336,
+    "total_pct": -44.871,
+    "mean_pct": -0.1335,
+    "win_pct": 36.3,
+    "control_mean_pct": -0.1187,
+    "p": 0.717
+   },
+   "W2": {
+    "n": 336,
+    "total_pct": -39.832,
+    "mean_pct": -0.1185,
+    "win_pct": 38.1,
+    "control_mean_pct": -0.1197,
+    "p": 0.517
+   },
+   "W3": {
+    "n": 336,
+    "total_pct": -28.188,
+    "mean_pct": -0.0839,
+    "win_pct": 41.4,
+    "control_mean_pct": -0.1197,
+    "p": 0.093
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 1008,
+    "total_pct": -112.89,
+    "mean_pct": -0.112,
+    "win_pct": 38.6,
+    "control_mean_pct": -0.1193,
+    "p": 0.353
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -21.841,
+    "ETHUSDT": -15.092,
+    "SOLUSDT": -10.326,
+    "BNBUSDT": -25.066,
+    "XRPUSDT": -20.59,
+    "DOGEUSDT": -19.974
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "Bollinger 20/2 reversion",
+   "W1": {
+    "n": 336,
+    "total_pct": -47.776,
+    "mean_pct": -0.1422,
+    "win_pct": 42.3,
+    "control_mean_pct": -0.1211,
+    "p": 0.783
+   },
+   "W2": {
+    "n": 336,
+    "total_pct": -34.013,
+    "mean_pct": -0.1012,
+    "win_pct": 51.8,
+    "control_mean_pct": -0.1184,
+    "p": 0.22
+   },
+   "W3": {
+    "n": 336,
+    "total_pct": -15.073,
+    "mean_pct": -0.0449,
+    "win_pct": 54.8,
+    "control_mean_pct": -0.1212,
+    "p": 0.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 1008,
+    "total_pct": -96.863,
+    "mean_pct": -0.0961,
+    "win_pct": 49.6,
+    "control_mean_pct": -0.1203,
+    "p": 0.047
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -19.169,
+    "ETHUSDT": -19.92,
+    "SOLUSDT": -19.88,
+    "BNBUSDT": -20.473,
+    "XRPUSDT": -1.282,
+    "DOGEUSDT": -16.139
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "Bollinger 20/2.5 reversion",
+   "W1": {
+    "n": 258,
+    "total_pct": -38.207,
+    "mean_pct": -0.1481,
+    "win_pct": 48.8,
+    "control_mean_pct": -0.1187,
+    "p": 0.843
+   },
+   "W2": {
+    "n": 279,
+    "total_pct": -30.046,
+    "mean_pct": -0.1077,
+    "win_pct": 46.6,
+    "control_mean_pct": -0.1188,
+    "p": 0.33
+   },
+   "W3": {
+    "n": 248,
+    "total_pct": -10.08,
+    "mean_pct": -0.0406,
+    "win_pct": 52.0,
+    "control_mean_pct": -0.1212,
+    "p": 0.01
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 785,
+    "total_pct": -78.333,
+    "mean_pct": -0.0998,
+    "win_pct": 49.0,
+    "control_mean_pct": -0.1223,
+    "p": 0.077
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -10.723,
+    "ETHUSDT": -16.06,
+    "SOLUSDT": -13.937,
+    "BNBUSDT": -17.173,
+    "XRPUSDT": -8.962,
+    "DOGEUSDT": -11.478
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "Bollinger 20/2 reversion, ADX under 20",
+   "W1": {
+    "n": 229,
+    "total_pct": -33.303,
+    "mean_pct": -0.1454,
+    "win_pct": 37.6,
+    "control_mean_pct": -0.1215,
+    "p": 0.813
+   },
+   "W2": {
+    "n": 235,
+    "total_pct": -28.203,
+    "mean_pct": -0.12,
+    "win_pct": 51.5,
+    "control_mean_pct": -0.1176,
+    "p": 0.543
+   },
+   "W3": {
+    "n": 269,
+    "total_pct": -10.791,
+    "mean_pct": -0.0401,
+    "win_pct": 55.4,
+    "control_mean_pct": -0.1207,
+    "p": 0.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 733,
+    "total_pct": -72.297,
+    "mean_pct": -0.0986,
+    "win_pct": 48.6,
+    "control_mean_pct": -0.1195,
+    "p": 0.097
+   },
+   "blocks_positive": 0,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -17.608,
+    "ETHUSDT": -11.3,
+    "SOLUSDT": -12.867,
+    "BNBUSDT": -15.761,
+    "XRPUSDT": -6.558,
+    "DOGEUSDT": -8.205
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "Asian range break in London, target 1R",
+   "W1": {
+    "n": 32,
+    "total_pct": -19.727,
+    "mean_pct": -0.6165,
+    "win_pct": 25.0,
+    "control_mean_pct": -0.1331,
+    "p": 0.997
+   },
+   "W2": {
+    "n": 40,
+    "total_pct": 12.229,
+    "mean_pct": 0.3057,
+    "win_pct": 62.5,
+    "control_mean_pct": -0.1238,
+    "p": 0.0
+   },
+   "W3": {
+    "n": 38,
+    "total_pct": -26.084,
+    "mean_pct": -0.6864,
+    "win_pct": 28.9,
+    "control_mean_pct": -0.1101,
+    "p": 1.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 110,
+    "total_pct": -33.582,
+    "mean_pct": -0.3053,
+    "win_pct": 40.0,
+    "control_mean_pct": -0.1108,
+    "p": 0.993
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -9.54,
+    "ETHUSDT": -4.072,
+    "SOLUSDT": -8.499,
+    "BNBUSDT": -2.244,
+    "XRPUSDT": -4.002,
+    "DOGEUSDT": -5.225
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "Asian range break in London, to 16:00",
+   "W1": {
+    "n": 32,
+    "total_pct": -20.233,
+    "mean_pct": -0.6323,
+    "win_pct": 25.0,
+    "control_mean_pct": -0.1157,
+    "p": 0.997
+   },
+   "W2": {
+    "n": 40,
+    "total_pct": 15.663,
+    "mean_pct": 0.3916,
+    "win_pct": 60.0,
+    "control_mean_pct": -0.116,
+    "p": 0.0
+   },
+   "W3": {
+    "n": 38,
+    "total_pct": -27.069,
+    "mean_pct": -0.7123,
+    "win_pct": 26.3,
+    "control_mean_pct": -0.1284,
+    "p": 1.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 110,
+    "total_pct": -31.639,
+    "mean_pct": -0.2876,
+    "win_pct": 38.2,
+    "control_mean_pct": -0.1175,
+    "p": 0.973
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -8.328,
+    "ETHUSDT": -5.265,
+    "SOLUSDT": -9.4,
+    "BNBUSDT": -1.645,
+    "XRPUSDT": -2.69,
+    "DOGEUSDT": -4.31
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "Asian range sweep fade",
+   "W1": {
+    "n": 35,
+    "total_pct": -0.924,
+    "mean_pct": -0.0264,
+    "win_pct": 22.9,
+    "control_mean_pct": -0.1112,
+    "p": 0.08
+   },
+   "W2": {
+    "n": 37,
+    "total_pct": -9.128,
+    "mean_pct": -0.2467,
+    "win_pct": 8.1,
+    "control_mean_pct": -0.1223,
+    "p": 0.993
+   },
+   "W3": {
+    "n": 38,
+    "total_pct": 10.36,
+    "mean_pct": 0.2726,
+    "win_pct": 39.5,
+    "control_mean_pct": -0.1136,
+    "p": 0.0
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 110,
+    "total_pct": 0.307,
+    "mean_pct": 0.0028,
+    "win_pct": 23.6,
+    "control_mean_pct": -0.1196,
+    "p": 0.0
+   },
+   "blocks_positive": 1,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": 1.021,
+    "ETHUSDT": -1.272,
+    "SOLUSDT": 1.301,
+    "BNBUSDT": -0.107,
+    "XRPUSDT": 1.149,
+    "DOGEUSDT": -1.784
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "4h move over 2%, follow 4h",
+   "W1": {
+    "n": 37,
+    "total_pct": 0.438,
+    "mean_pct": 0.0119,
+    "win_pct": 37.8,
+    "control_mean_pct": -0.1407,
+    "p": 0.303
+   },
+   "W2": {
+    "n": 26,
+    "total_pct": -12.459,
+    "mean_pct": -0.4792,
+    "win_pct": 34.6,
+    "control_mean_pct": -0.1295,
+    "p": 0.967
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": -18.932,
+    "mean_pct": -0.4508,
+    "win_pct": 42.9,
+    "control_mean_pct": -0.1103,
+    "p": 0.967
+   },
+   "rungs": 1,
+   "pooled_W1_W3": {
+    "n": 105,
+    "total_pct": -30.953,
+    "mean_pct": -0.2948,
+    "win_pct": 39.0,
+    "control_mean_pct": -0.1149,
+    "p": 0.937
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": -3.422,
+    "ETHUSDT": -8.421,
+    "SOLUSDT": -7.156,
+    "BNBUSDT": 0.099,
+    "XRPUSDT": -0.994,
+    "DOGEUSDT": -11.057
+   }
+  },
+  {
+   "kind": "crypto",
+   "rule": "4h move over 2%, fade 4h",
+   "W1": {
+    "n": 37,
+    "total_pct": -9.318,
+    "mean_pct": -0.2519,
+    "win_pct": 56.8,
+    "control_mean_pct": -0.1217,
+    "p": 0.72
+   },
+   "W2": {
+    "n": 26,
+    "total_pct": 6.219,
+    "mean_pct": 0.2392,
+    "win_pct": 57.7,
+    "control_mean_pct": -0.1235,
+    "p": 0.023
+   },
+   "W3": {
+    "n": 42,
+    "total_pct": 8.852,
+    "mean_pct": 0.2108,
+    "win_pct": 35.7,
+    "control_mean_pct": -0.1087,
+    "p": 0.053
+   },
+   "rungs": 0,
+   "pooled_W1_W3": {
+    "n": 105,
+    "total_pct": 5.753,
+    "mean_pct": 0.0548,
+    "win_pct": 48.6,
+    "control_mean_pct": -0.1135,
+    "p": 0.09
+   },
+   "blocks_positive": 2,
+   "blocks_with_trades": 4,
+   "by_sym_W1_W3": {
+    "BTCUSDT": 1.502,
+    "ETHUSDT": 4.101,
+    "SOLUSDT": 0.676,
+    "BNBUSDT": -2.499,
+    "XRPUSDT": -3.326,
+    "DOGEUSDT": 5.297
+   }
+  }
+ ]
+}
