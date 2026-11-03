@@ -6,22 +6,31 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-510 judged over 35 harvest days, 334 kept, 106 testable, 101 queued as probes, 95 with a probe verdict.
+524 judged over 36 harvest days, 343 kept, 108 testable, 103 queued as probes, 98 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0510 | 2026-11-02 | github | [zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 Skill：一句点子生成企划案、资产图提示词、分集剧本、分镜与视频提示词。可用于 ](https://github.com/zhanghao123vip/ai-manju-skills) | mechanism | mechanism-hunting | yes | P-0301 |
+| H-0524 | 2026-11-03 | hn | [Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels](https://hackertv.org) | mechanism | open-data | yes | P-0313 |
+| H-0523 | 2026-11-03 | github | [guimatheus92/mcp-video-analyzer: MCP server that turns any video — YouTube, Instagram, Tik](https://github.com/guimatheus92/mcp-video-analyzer) | mechanism | tools-for-strangers | yes | P-0312 |
+| H-0521 | 2026-11-03 | vault | [Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency]() | mechanism | tools-for-strangers | no: A real test needs a telephony or voice-agent platform accoun |  |
+| H-0519 | 2026-11-03 | arxiv | [DiabAgent: Toward Agentic Physiological Control](https://arxiv.org/abs/2611.03601) | mechanism | tech | no: Needs a paid model and the authors' simulator, which is not  |  |
+| H-0516 | 2026-11-03 | vault | [Speed-to-lead workflow chain and themed ad group keyword method from the call recordings]() | mechanism | tools-for-strangers | no: Needs ad accounts, a CRM and real leads, and the recordings  |  |
+| H-0514 | 2026-11-03 | arxiv | [Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning](https://arxiv.org/abs/2611.03602) | mechanism | tech | no: Needs trained model weights and a GPU, and no local model is |  |
+| H-0513 | 2026-11-03 | github | [andyhuo520/vibe-knowledge: Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格](https://github.com/andyhuo520/vibe-knowledge) | mechanism | tools-for-strangers | no: A full run needs a voice service and an agent session, and t |  |
+| H-0512 | 2026-11-03 | hn | [Could a modern chess engine on a Pentium have defeated Kasparov in 1996?](https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html) | mechanism | game-bots | no: The body is a link only, and a fair run needs an engine bina |  |
+| H-0511 | 2026-11-03 | vault | [HeyGen web app costs about a third of its API per minute and its free plan covers a first ]() | mechanism | tools-for-strangers | no: Needs a HeyGen account and credits, and the cost comparison  |  |
+| H-0510 | 2026-11-02 | github | [zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 Skill：一句点子生成企划案、资产图提示词、分集剧本、分镜与视频提示词。可用于 ](https://github.com/zhanghao123vip/ai-manju-skills) | mechanism | mechanism-hunting | yes | P-0301 **works** |
 | H-0509 | 2026-11-02 | hn | [Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app](https://momentic.ai/) | both | tools-for-strangers | no: It is a hosted SaaS product with token-based pricing (per HN |  |
 | H-0508 | 2026-11-02 | vault | [The ad strategy and script frameworks are the durable part and work once the proof is real]() | mechanism | mechanism-hunting | no: This is an editorial extraction exercise already completed a |  |
 | H-0506 | 2026-11-02 | arxiv | [AI evaluators favor job applications written by certain AI models, independent of candidat](https://arxiv.org/abs/2610.41866) | mechanism | tech | no: Reproducing even a small slice needs multiple paid LLM API c |  |
 | H-0505 | 2026-11-02 | github | [N1nEmAn/sapper-v2: Autonomous pentest legion — AI commander + worker swarm + layered fact-](https://github.com/N1nEmAn/sapper-v2) (intel) | mechanism | mechanism-hunting | no: This is a Docker-based multi-agent swarm meant for an author |  |
 | H-0504 | 2026-11-02 | hn | [Show HN: Warsaw in voxels – An interactive 3D map of the city centre](https://p.migdal.pl/warsaw-vibe-voxel/) | mechanism | tech | no: The interesting part is a live voxel renderer with a heavy i |  |
 | H-0503 | 2026-11-02 | vault | [Skill debugging checklist and per-job status file for stateless scheduled sessions]() | mechanism | mechanism-hunting | no: There is no code artefact to run; this is a documentation pa |  |
-| H-0502 | 2026-11-02 | awesome | [jackjin1997/markindex (new in awesome-mcp-servers)](https://github.com/jackjin1997/markindex) | mechanism | tools-for-strangers | yes | P-0300 |
+| H-0502 | 2026-11-02 | awesome | [jackjin1997/markindex (new in awesome-mcp-servers)](https://github.com/jackjin1997/markindex) | mechanism | tools-for-strangers | yes | P-0300 **works** |
 | H-0500 | 2026-11-02 | arxiv | [How Much Can Tool Calls Reveal About You? Privacy Leakage from Tool-Call Traces](https://arxiv.org/abs/2610.41885) (intel) | mechanism | tech | no: Reproducing the benchmark needs their dataset and four LLM a |  |
-| H-0499 | 2026-11-02 | github | [caru-ini/stack-diagram: Agent skill: describe your stack in a sentence, get an architectur](https://github.com/caru-ini/stack-diagram) | mechanism | tools-for-strangers | yes | P-0299 |
+| H-0499 | 2026-11-02 | github | [caru-ini/stack-diagram: Agent skill: describe your stack in a sentence, get an architectur](https://github.com/caru-ini/stack-diagram) | mechanism | tools-for-strangers | yes | P-0299 **works** |
 | H-0498 | 2026-11-02 | hn | [Show HN: Subvocal – Talk to your computer without making noise](https://news.ycombinator.com/item?id=50340088) | mechanism | tech | no: This needs custom hardware (RF sensor glasses or EMG electro |  |
 | H-0497 | 2026-11-02 | vault | [Speed to lead follow-up on new enquiries needs no old database]() | mechanism | mechanism-hunting | no: There is no enquiry stream, CRM, or phone system to wire thi |  |
 | H-0495 | 2026-11-01 | github | [alchaincyf/huashu-bird-sticker: 花叔开源的全球鸟类贴纸库 · Stickers for all 11,064 living bird species](https://github.com/alchaincyf/huashu-bird-sticker) | both | open-data | yes | P-0288 **works** |
@@ -348,6 +357,118 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0524 Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels
+2026-11-03, hn, https://hackertv.org
+
+- **Mechanism:** YouTube links are mined from nineteen years of Hacker News comments, ranked by how often they are recommended, and grouped into topic channels. A client plays them as a looping schedule, with a time-gated channel that shows colour bars outside 11pm to 5am. The data is a derived dataset from the earlier HackerTube project.
+- **Claim:** HN's most-recommended YouTube videos run as 24/7 TV channels, built with Claude Code in a few hours.
+- **Testable:** yes. From the latest 1000 HN comments that mention youtube.com or youtu.be via the Algolia API, how many distinct video ids are there and what percentage still return 200 from YouTube oEmbed? Queued as P-0313.
+- **Idea on its own:** sound. Counting links in a public comment archive and keeping the ones that still play is a simple, repeatable derived dataset.
+- **How it would be done:** Query the HN Algolia search API for comments containing YouTube URLs, extract video ids and count recommendations. Check each id against oEmbed to drop dead links, then tag topics from titles. A static page with a schedule function turns the list into channels. Someone has to choose the channel names and clean up miscategorised videos.
+- **Stack already covers:** A keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** HN Algolia API https://hn.algolia.com/api (Keyless search over HN comments for YouTube links.)
+- **Field Notes line:** HN comments hold a free, ranked library of recommended videos; a channel guide is a quick derived dataset.
+
+### H-0523 guimatheus92/mcp-video-analyzer: MCP server that turns any video — YouTube, Instagram, TikTok, Loom, X, Vimeo, direct UR
+2026-11-03, github, https://github.com/guimatheus92/mcp-video-analyzer
+
+- **Mechanism:** An MCP server and CLI that takes a video URL or file and returns transcript, extracted key frames, OCR text and metadata. For platform URLs it shells out to yt-dlp, for direct files it uses bundled ffmpeg-static to cut frames, and transcripts and comments come from platform endpoints. The agent gets text and images in one call instead of stitching tools.
+- **Claim:** One tool combines transcripts, visual frames, OCR and metadata across YouTube, Loom, TikTok, Instagram, X and local files.
+- **Testable:** yes. Does the CLI return a transcript, at least three frames and non-empty metadata for one public YouTube video of under 10 minutes, yes or no, and in how many seconds? Queued as P-0312.
+- **Idea on its own:** sound. Bundling yt-dlp, ffmpeg and OCR behind one call is straightforward and removes glue work, though platform fetches can break.
+- **How it would be done:** Run the npm package in the sandbox with a public video and time each output. Compare its transcript with the existing keyless pipeline and check frame extraction on a local file. If it works, register it as an MCP server for the research desk. Instagram and X fetches depend on yt-dlp staying current, so someone has to watch for breakage.
+- **Stack already covers:** A keyless YouTube search, oEmbed and transcript pipeline, local transcription
+- **To fetch:** mcp-video-analyzer https://github.com/guimatheus92/mcp-video-analyzer (The server and CLI under test.); yt-dlp https://github.com/yt-dlp/yt-dlp (Required for platform URLs.)
+- **Field Notes line:** One MCP tool hands an agent a video's transcript, key frames, on-screen text and metadata together.
+
+### H-0521 Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency
+2026-11-03, vault, 
+
+- **Mechanism:** Voice-agent prompts are written for speech, not text: times and numbers are spelled as words so the TTS reads them cleanly, emails are spelled out letter by letter, and the agent says a filler line while a slow tool call runs so there is no dead air. The prompts sit inside a telephony platform that wires speech-to-text, an LLM and tool webhooks.
+- **Claim:** About a dozen full voice-agent prompts with rules for times, emails and covering tool latency.
+- **Testable:** no. A real test needs a telephony or voice-agent platform account and a speech model key. Needs: A voice-agent platform account and a number.
+- **Idea on its own:** sound. Text normalisation for TTS and latency fillers are real, checkable fixes for common voice-agent faults, in the inbound reception lane.
+- **How it would be done:** Write a normaliser that converts times, numbers and emails to spoken form before the text reaches TTS, and test it by listening to ElevenLabs output. Add a prompt rule that makes the agent speak a short line before any tool call. Wire it to an inbound receptionist flow only, since outbound dialling of scraped lists is not lawful in the UK. A person records the test calls and scores them.
+- **Stack already covers:** ElevenLabs (voice), Claude Code with skills and sub-agents
+- **To fetch:** Retell AI https://www.retellai.com (Voice-agent platform the source prompts target; has a free tier.)
+- **Missing:** A scored set of real calls to compare prompt versions.
+- **Field Notes line:** Voice agents read better when times are written as words and a spoken filler covers the tool-call wait.
+
+### H-0519 DiabAgent: Toward Agentic Physiological Control
+2026-11-03, arxiv, https://arxiv.org/abs/2611.03601
+
+- **Mechanism:** An LLM acts hourly as a controller, calling device tools for insulin dosing, reading glucose and context, and storing personal experience per patient. A simulator generates virtual patients and events, and a benchmark scores 212 tasks. A fast rule-based loop handles high-frequency control while the agent decides at a lower rate.
+- **Claim:** APC scores 73.5 on SweetBench against 71.2 for the OpenAPS baseline.
+- **Testable:** no. Needs a paid model and the authors' simulator, which is not confirmed released. Needs: A model API key and the DiabetSim code.
+- **Idea on its own:** needs-a-run. A two-point gap in a simulator the authors built is thin evidence and says nothing about real patients.
+- **How it would be done:** The transferable design is a slow agent layered over a fast rule loop, with per-subject memory. It could be tried on a paper desk where a rule-based strategy runs continuously and an agent adjusts parameters daily. Any medical use is out of scope and needs clinical hands.
+- **Stack already covers:** Claude Code with skills and sub-agents, freqtrade
+- **Missing:** Independent replication outside the authors' simulator.
+- **Field Notes line:** An LLM trimming insulin hourly beat the open-source OpenAPS baseline by 2.3 points in simulation only.
+
+### H-0516 Speed-to-lead workflow chain and themed ad group keyword method from the call recordings
+2026-11-03, vault, 
+
+- **Mechanism:** A web form or ad lead fires a webhook that chains an instant text or call, a calendar booking and a follow-up sequence, cutting the delay between enquiry and first contact. Separately, ad groups are built as city by service themes so each keyword set maps to one landing page and one ad text. The reply speed effect comes from lead-response studies, and conversion tracking closes the loop.
+- **Claim:** Two call recordings hold a complete speed-to-lead workflow and a city-by-service Google Ads keyword method.
+- **Testable:** no. Needs ad accounts, a CRM and real leads, and the recordings are in a gated course. Needs: Google Ads and CRM accounts, real inbound leads.
+- **Idea on its own:** sound. Fast reply to inbound enquiries and tightly themed ad groups are both well-supported, ordinary practice.
+- **How it would be done:** Map the chain as trigger, instant reply, booking link, follow-up, with a workflow tool or a small webhook service. Generate the city by service keyword grid from a list of towns and trades, then group each theme into one ad group with one landing page. Keep it to inbound leads only, since cold texts and calls need consent in the UK. A person writes the offer and takes the calls.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** n8n https://n8n.io (Self-hostable workflow runner for the webhook chain.)
+- **Missing:** A real inbound lead source to measure response times against.
+- **Field Notes line:** Reply to a new lead in seconds and build ads city by service: a plain workflow, lawful when the lead came to you.
+
+### H-0514 Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning
+2026-11-03, arxiv, https://arxiv.org/abs/2611.03602
+
+- **Mechanism:** The agent first watches a low-frame-rate preview, then writes a Context, Focus, Points plan listing what to look for and which tool to use. It revisits chosen time segments with tools, updates the plan, and writes one caption. It is trained with GRPO using rewards for key facts, plan alignment and a penalty for useless tool calls.
+- **Claim:** Reviso beats open-source baselines on four video captioning benchmarks and improves downstream video QA.
+- **Testable:** no. Needs trained model weights and a GPU, and no local model is installed. Needs: Model weights and a GPU.
+- **Idea on its own:** sound. Coarse pass then targeted re-inspection is a standard cost-saving pattern for any long input.
+- **How it would be done:** The pattern can be copied without the training: sample frames sparsely, ask a model for a short plan of what matters, then pull full-rate frames only for those segments. That would sit on top of the transcript pipeline and ffmpeg. Training the RL policy is a research job no script covers.
+- **Stack already covers:** A keyless YouTube search, oEmbed and transcript pipeline, Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org (Frame sampling at low and high rates.)
+- **Missing:** Released model weights from the authors, if any.
+- **Field Notes line:** A video captioner that plans what to look at from a quick preview, then revisits only the key moments.
+
+### H-0513 andyhuo520/vibe-knowledge: Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格 · 代码逐帧成片）
+2026-11-03, github, https://github.com/andyhuo520/vibe-knowledge
+
+- **Mechanism:** A Claude Code skill runs a fixed pipeline: pick a topic, fact-check each sentence to a source, write a script, generate voiceover, then code the frames in JavaScript and render at 1080p60. There are 44 style packs, each with a STYLE.md giving palette, fonts and camera language. An optional enhanced tier calls a third-party generation platform for stills and motion shots, labelled as AI illustration.
+- **Claim:** One topic becomes a narrated short film with a source for every line, across 44 styles.
+- **Testable:** no. A full run needs a voice service and an agent session, and the enhanced tier needs a paid account. Needs: A TTS key for the voice stage.
+- **Idea on its own:** sound. Per-sentence citation plus code-rendered frames is the same shape as the HyperFrames work already done here, and the source-per-line step is the useful part.
+- **How it would be done:** Copy the idea of the source-per-sentence script format into the existing video skills. Read the STYLE.md files for reusable palette and camera rules. Voiceover would come from ElevenLabs and frames from HyperFrames compositions, so the repo's own renderer is not needed. A reviewer would still check each claim's source by hand.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), Claude Code with skills and sub-agents
+- **To fetch:** vibe-knowledge https://github.com/andyhuo520/vibe-knowledge (Style packs and the source-per-line script format to read and borrow from.)
+- **Field Notes line:** A Claude Code skill turns one topic into a narrated film with a source per sentence, using code-drawn frames in 44 styles.
+
+### H-0512 Could a modern chess engine on a Pentium have defeated Kasparov in 1996?
+2026-11-03, hn, https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html
+
+- **Mechanism:** The post argues that most of a modern engine's strength comes from search and evaluation algorithms rather than raw hardware. Techniques such as alpha-beta pruning with good move ordering, transposition tables, late move reductions and a compact evaluation are ported to run on 1990s-class compute. The test is a rating estimate on slow hardware against known opponents.
+- **Claim:** A modern chess engine design on a mid-1990s Pentium could have beaten Kasparov in 1996.
+- **Testable:** no. The body is a link only, and a fair run needs an engine binary and a throttled-hardware setup that cannot be built in 30 minutes. Needs: A chess engine binary and a way to throttle it to Pentium speeds.
+- **Idea on its own:** needs-a-run. The claim is checkable with a throttled engine against rated opponents, but the source has not been read in full.
+- **How it would be done:** Read the article and note the specific algorithmic changes it lists. Take a small open engine, cap nodes per second to a Pentium-class figure, and play it against known-rated bots on the Lichess account Proteus already has. Compare the resulting rating with the 1996 Deep Blue range. The comment about old engines fooling cheat detection is a detection question, so record only that it exists and how sites flag engine correlation.
+- **Stack already covers:** Lichess bot account
+- **To fetch:** Stockfish https://stockfishchess.org (Open engine that can be node-limited to approximate slow hardware.); python-chess https://github.com/niklasf/python-chess (Drives engines and games from Python.)
+- **Missing:** A measured rating for the engine at a Pentium-equivalent node budget.
+- **Field Notes line:** A modern engine's search tricks may beat 1996 hardware limits; the algorithm, not the chip, did most of the work.
+
+### H-0511 HeyGen web app costs about a third of its API per minute and its free plan covers a first lip-sync
+2026-11-03, vault, . Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** The same avatar and lip-sync models are sold through two doors: a metered API and a flat-credit web app. The web app bills per credit bundle, so a minute of finished video costs roughly a third as much, but it needs a person at a browser instead of a script. The free plan allows one lip-sync render, enough to check a face and voice pairing before paying.
+- **Claim:** HeyGen's web app costs about a third of its API per minute and the free plan covers a first lip-sync.
+- **Testable:** no. Needs a HeyGen account and credits, and the cost comparison depends on a pricing page that changes. Needs: A HeyGen account.
+- **Idea on its own:** sound. Routing drafts through the cheap manual door and finals through the API is ordinary cost arbitrage between two prices for the same output.
+- **How it would be done:** List each video job and tag it draft or final. Draft jobs go through the web app free or credit tier, with a person pasting the script and downloading the render. Final jobs go through the API from a script so the output is repeatable. Keep a small cost table per minute for each route and refresh it monthly from the vendor pages. A hired operator would only be needed for the web app clicking and for checking lip-sync quality by eye.
+- **Stack already covers:** HeyGen and Tavus (avatars), ElevenLabs (voice), HyperFrames (video compose, captions, render)
+- **Missing:** Nobody has a measured per-minute cost table for both routes on a real job.
+- **Field Notes line:** The same avatar video costs about a third as much through the web app as the API, if a human does the clicking.
 
 ### H-0510 zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 Skill：一句点子生成企划案、资产图提示词、分集剧本、分镜与视频提示词。可用于 Claude Code、WorkBuddy、DeepSeek
 2026-11-02, github, https://github.com/zhanghao123vip/ai-manju-skills
@@ -4258,6 +4379,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0521 | 2026-11-03 | Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency | intel | sound | no |  |
+| H-0516 | 2026-11-03 | Speed-to-lead workflow chain and themed ad group keyword method from the call recordings | intel | sound | no |  |
+| H-0511 | 2026-11-03 | HeyGen web app costs about a third of its API per minute and its free plan covers a first  | intel | sound | no |  |
 | H-0508 | 2026-11-02 | The ad strategy and script frameworks are the durable part and work once the proof is real | intel | sound | no |  |
 | H-0503 | 2026-11-02 | Skill debugging checklist and per-job status file for stateless scheduled sessions | intel | sound | no |  |
 | H-0497 | 2026-11-02 | Speed to lead follow-up on new enquiries needs no old database | intel | sound | no |  |
@@ -4368,6 +4492,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0308 | 2026-11-03 | [HN Algolia API](https://hn.algolia.com/api) | Keyless search over HN comments for YouTube links. | H-0524 (Show HN: HackerTV – HN's most-recommended Youtube ) | shelf |
+| T-0307 | 2026-11-03 | [mcp-video-analyzer](https://github.com/guimatheus92/mcp-video-analyzer) | The server and CLI under test. | H-0523 (guimatheus92/mcp-video-analyzer: MCP server that t) | shelf |
+| T-0306 | 2026-11-03 | [n8n](https://n8n.io) | Self-hostable workflow runner for the webhook chain. | H-0516 (Speed-to-lead workflow chain and themed ad group k) | shelf |
+| T-0305 | 2026-11-03 | [vibe-knowledge](https://github.com/andyhuo520/vibe-knowledge) | Style packs and the source-per-line script format to read and borrow from. | H-0513 (andyhuo520/vibe-knowledge: Vibe 知识大赏：一个知识点 → 一条有旁白) | shelf |
 | T-0304 | 2026-11-02 | [ai-manju-skills](https://github.com/zhanghao123vip/ai-manju-skills) | the 21 SKILL.md templates to copy into a skills folder and trial | H-0510 (zhanghao123vip/ai-manju-skills: 21 个题材的 AI 漫剧全流程 S) | shelf |
 | T-0303 | 2026-11-02 | [Momentic](https://momentic.ai/) | the product itself, would need a signup and token spend to properly evaluate | H-0509 (Launch HN: Momentic (YC W24) – Agents that catch b) | shelf |
 | T-0302 | 2026-11-02 | [nvwabase](https://github.com/N1nEmAn/nvwabase) | the general-purpose orchestration base with the pentest doctrine stripped out, the safer thing to actually try | H-0505 (N1nEmAn/sapper-v2: Autonomous pentest legion — AI ) | shelf |
@@ -4677,6 +4805,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0522 | 2026-11-03 | hn | [Gitbook Breached](https://news.ycombinator.com/item?id=50354336) | Breach news with no mechanism to record. |
+| H-0520 | 2026-11-03 | youtube | [(untitled) suAAJYkVz5M](https://www.youtube.com/watch?v=suAAJYkVz5M) | A listicle of cheap used luxury cars with no data source. |
+| H-0518 | 2026-11-03 | github | [kar2phi/video-lens: video-lens is a coding agent skill that fetches a YouTube tr](https://github.com/kar2phi/video-lens) | Duplicate of the transcript-to-report pipeline already here; the video MCP item is the better one. |
+| H-0517 | 2026-11-03 | hn | [OpenAI seems to be silently re-enabling model training on Codex chats](https://news.ycombinator.com/item?id=50352757) | News about a settings toggle with no mechanism worth recording. |
+| H-0515 | 2026-11-03 | youtube | [Ranking luxury car brands by depreciation 🚘🫪](https://www.youtube.com/watch?v=wX4qr3AQo7k) | A tier-list short with no mechanism or data source. |
 | H-0507 | 2026-11-02 | youtube | [Can We Finally Code on M5 MacBook Pro with Local AI?](https://www.youtube.com/watch?v=dWz9XgRK_uQ) | A benchmarking vlog about running local quantised LLMs on an M5 MacBook Pro; no mechanism beyond anecdotal RAM-pressure  |
 | H-0501 | 2026-11-02 | youtube | [Bonding Curve Maximize Your Trading Profits #trading #crypto #bitcoin #sol #meme](https://www.youtube.com/watch?v=9UAA8iN49cQ) | Generic pump.fun bonding-curve trading tip with no mechanism, data, or tool, just a claim to watch the curve percentage. |
 | H-0496 | 2026-11-01 | hn | [Visit Iceland Will Send a Real Knitter to Your Dumb Meeting So You Can Skip It](https://matadornetwork.com/read/iceland-ai-notetaker-knitting/) | Tourism marketing stunt with no mechanism. |
