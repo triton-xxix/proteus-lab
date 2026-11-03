@@ -1,0 +1,20 @@
+{
+ "events": 469039,
+ "bursts": 660,
+ "small_bursts": 644,
+ "big_bursts": 16,
+ "big_burst_median_size": 23696.5,
+ "gen_chars": 550,
+ "gen_span_s": 8.0,
+ "chars_per_s": 68.7,
+ "gap_ms_median": 14.04,
+ "gap_ms_mean": 14.56,
+ "gap_ms_p10": 13.9,
+ "gap_ms_p90": 14.89,
+ "instr_per_char_median": 81174,
+ "wait_share_if_10ms": 0.687,
+ "save_ms": 40.6,
+ "restore_ms": 25.0,
+ "state_bytes": 9765764,
+ "first_put_after_restore_ms": 11.2
+}
