@@ -1,5 +1,5 @@
 {
- "next_id": 307,
+ "next_id": 308,
  "items": [
   {
    "id": "P-0001",
@@ -7562,6 +7562,32 @@
     "number": "about 70 chars per wall second, wait share over 60 percent",
     "at": "2026-11-03T12:34:11+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0307",
+   "title": "Berlin lead curve: one Open-Meteo previous-runs call (ICON seamless, Berlin-Tempelhof 52.4675 13.4021, 1 Sep to 31 Oct 2026, temperature_2m and previous_day1 to day6) against DWD 00433 daily TXK from tageswerte_KL_00433_akt.zip (keyless, 200 checked 3 Nov); rerun P-0293's lead_curve.py table and say whether the +1.0 exact-degree hit at lead 1 (Munich 39%) holds within 10 points; London skipped, its only keyless obs so far is ERA5 not a station",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-03T12:36:53+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "Berlin lead-1 hit after +1.0 about 30 percent, bias under +0.6",
+    "at": "2026-11-03T12:37:00+0000"
    }
   }
  ]
