@@ -1,0 +1,95 @@
+{
+ "source": "previous-runs-api.open-meteo.com ecmwf_ifs025 48.1374,11.5755 (grid 48.25,11.5), hourly, daily max over local day",
+ "station": "DWD 03379 Muenchen-Stadt TXK",
+ "hours": 1464,
+ "leads": {
+  "0": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 1.98,
+   "sd": 1.15,
+   "mae_after_plus1": 1.2,
+   "hit_plus0": 0.049,
+   "hit_plus1": 0.246,
+   "best_correction": 1.5,
+   "best_hit_in_sample": 0.41,
+   "hit_at_mean_bias": 0.393
+  },
+  "1": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 1.96,
+   "sd": 1.38,
+   "mae_after_plus1": 1.37,
+   "hit_plus0": 0.115,
+   "hit_plus1": 0.164,
+   "best_correction": 2.0,
+   "best_hit_in_sample": 0.41,
+   "hit_at_mean_bias": 0.41
+  },
+  "2": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 2.01,
+   "sd": 1.35,
+   "mae_after_plus1": 1.42,
+   "hit_plus0": 0.098,
+   "hit_plus1": 0.197,
+   "best_correction": 2.4,
+   "best_hit_in_sample": 0.344,
+   "hit_at_mean_bias": 0.262
+  },
+  "3": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 2.08,
+   "sd": 1.66,
+   "mae_after_plus1": 1.62,
+   "hit_plus0": 0.098,
+   "hit_plus1": 0.148,
+   "best_correction": 3.0,
+   "best_hit_in_sample": 0.295,
+   "hit_at_mean_bias": 0.197
+  },
+  "4": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 1.95,
+   "sd": 1.79,
+   "mae_after_plus1": 1.58,
+   "hit_plus0": 0.066,
+   "hit_plus1": 0.262,
+   "best_correction": 2.7,
+   "best_hit_in_sample": 0.295,
+   "hit_at_mean_bias": 0.18
+  },
+  "5": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 1.75,
+   "sd": 2.69,
+   "mae_after_plus1": 2.19,
+   "hit_plus0": 0.115,
+   "hit_plus1": 0.115,
+   "best_correction": 2.8,
+   "best_hit_in_sample": 0.262,
+   "hit_at_mean_bias": 0.148
+  },
+  "6": {
+   "days": 61,
+   "nulls": 0,
+   "mean_obs_minus_ifs": 1.61,
+   "sd": 3.27,
+   "mae_after_plus1": 2.42,
+   "hit_plus0": 0.098,
+   "hit_plus1": 0.213,
+   "best_correction": 2.5,
+   "best_hit_in_sample": 0.23,
+   "hit_at_mean_bias": 0.164
+  }
+ },
+ "sd_slope_per_day": {
+  "ifs": 0.336,
+  "icon": 0.346
+ }
+}
