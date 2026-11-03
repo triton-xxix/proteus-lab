@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 245 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 
-## Queue (6 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@ Verdicts so far: 245 works, 5 broken, 32 blocked, 16 not worth it. Killed: 4.
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
+| P-0309 | ECMWF IFS lead curve at Munich: one previous-runs call (models=ecmwf_ifs025, 48.1374 11.5755, Sep to Oct 2026, temperature_2m and previous_day1 to day6; checked 3 Nov, hourly with no nulls on 1 Sep, grid snaps to 48.25 11.5, utc_offset came back 3600 in CEST so check the day boundary) against DWD 03379 via P-0293's lead_curve.py; the number is the sd growth per day of lead beside ICON's +0.4, and the +1.0 hit at leads 3 to 6 beside ICON's 30, 28, 16, 13 | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (298)
 

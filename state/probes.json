@@ -1,5 +1,5 @@
 {
- "next_id": 309,
+ "next_id": 310,
  "items": [
   {
    "id": "P-0001",
@@ -7620,6 +7620,32 @@
     "number": "top-5 hit about 75 percent, rank-1 about 50 percent",
     "at": "2026-11-03T12:38:41+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0309",
+   "title": "ECMWF IFS lead curve at Munich: one previous-runs call (models=ecmwf_ifs025, 48.1374 11.5755, Sep to Oct 2026, temperature_2m and previous_day1 to day6; checked 3 Nov, hourly with no nulls on 1 Sep, grid snaps to 48.25 11.5, utc_offset came back 3600 in CEST so check the day boundary) against DWD 03379 via P-0293's lead_curve.py; the number is the sd growth per day of lead beside ICON's +0.4, and the +1.0 hit at leads 3 to 6 beside ICON's 30, 28, 16, 13",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-03T12:40:26+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "IFS sd grows about +0.3 a day of lead (ICON +0.4)",
+    "at": "2026-11-03T12:40:32+0000"
    }
   }
  ]
