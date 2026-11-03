@@ -4473,9 +4473,9 @@
    "after": "2026-11-03",
    "est_minutes": 20,
    "added": "2026-10-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-03T12:32:16+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -4483,7 +4483,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.6,
+    "number": "fewer than 20 G plus R01 entries after 20 Oct carrying graph_insiders",
+    "at": "2026-11-03T12:32:25+0000"
+   }
   },
   {
    "id": "P-0186",
