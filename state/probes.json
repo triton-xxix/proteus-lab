@@ -1,5 +1,5 @@
 {
- "next_id": 316,
+ "next_id": 317,
  "items": [
   {
    "id": "P-0001",
@@ -7787,6 +7787,28 @@
    ],
    "minutes": 2,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0316",
+   "title": "Native npm packages in my sandboxes: of those with binding.gyp, how many have a node-v141 darwin-x64 prebuilt on their newest GitHub release?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-03T23:44:42+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-03T23:45:19+0000",
+   "note": "5 native packages in sandbox/; 3 got a working binary from the npm tarball (bufferutil and utf-8-validate N-API, node-pty), better-sqlite3 13.x releases carry 0 assets (12.12.0 is the last with node-v141-darwin-x64, so pin it), bigint-buffer has none and runs pure JS.",
+   "artefacts": [
+    "experiments/2026-11-03-P-0316"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

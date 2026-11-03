@@ -1,0 +1,87 @@
+{
+ "summary": {
+  "native": 5,
+  "with_repo": 5,
+  "binary_on_disk": 4,
+  "release_has_this_mac": 0,
+  "release_has_no_assets": 2,
+  "no_releases": 0
+ },
+ "rows": [
+  {
+   "name": "bigint-buffer",
+   "versions": [
+    "1.1.5"
+   ],
+   "repo": "no2chem/bigint-buffer",
+   "where": [
+    "pump-fun-sdk-src/pump-fun-sdk-HEAD/node_modules/bigint-buffer"
+   ],
+   "binary_on_disk": false,
+   "newest_release": "v1.1.5",
+   "assets": 1,
+   "darwin_x64_any": false,
+   "node_v141_darwin_x64": false
+  },
+  {
+   "name": "utf-8-validate",
+   "versions": [
+    "6.0.6"
+   ],
+   "repo": "websockets/utf-8-validate",
+   "where": [
+    "pump-fun-sdk-src/pump-fun-sdk-HEAD/node_modules/rpc-websockets/node_modules/utf-8-validate"
+   ],
+   "binary_on_disk": true,
+   "newest_release": "v6.0.6",
+   "assets": 5,
+   "darwin_x64_any": true,
+   "node_v141_darwin_x64": false
+  },
+  {
+   "name": "bufferutil",
+   "versions": [
+    "4.1.0"
+   ],
+   "repo": "websockets/bufferutil",
+   "where": [
+    "pump-fun-sdk-src/pump-fun-sdk-HEAD/node_modules/bufferutil"
+   ],
+   "binary_on_disk": true,
+   "newest_release": "v4.1.0",
+   "assets": 5,
+   "darwin_x64_any": true,
+   "node_v141_darwin_x64": false
+  },
+  {
+   "name": "better-sqlite3",
+   "versions": [
+    "13.0.3"
+   ],
+   "repo": "WiseLibs/better-sqlite3",
+   "where": [
+    "markindex/node_modules/better-sqlite3"
+   ],
+   "binary_on_disk": true,
+   "newest_release": "v13.0.3",
+   "assets": 0,
+   "darwin_x64_any": false,
+   "node_v141_darwin_x64": false
+  },
+  {
+   "name": "node-pty",
+   "versions": [
+    "1.1.0"
+   ],
+   "repo": "microsoft/node-pty",
+   "where": [
+    "agent-workbench/node_modules/node-pty"
+   ],
+   "binary_on_disk": true,
+   "newest_release": "v1.2.0-beta.17",
+   "assets": 0,
+   "darwin_x64_any": false,
+   "node_v141_darwin_x64": false
+  }
+ ]
+}
