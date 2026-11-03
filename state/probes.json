@@ -1,5 +1,5 @@
 {
- "next_id": 314,
+ "next_id": 315,
  "items": [
   {
    "id": "P-0001",
@@ -7743,6 +7743,28 @@
    ],
    "minutes": 3,
    "calls": 9,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0314",
+   "title": "Fed cuts and the 200-day filter: on the 11 FRED target cuts since 2008, how many had SPY above its SMA200 and in a 20-day uptrend on the decision day?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-03",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-03T23:41:01+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-03T23:41:34+0000",
+   "note": "Of 11 Fed target cuts in FRED (2019 to 2025), SPY was above its SMA200 on 9 and up over 20 days on 8, the opposite of the Bank Rate cuts in P-0304; RSI(5) was below 30 on only 1 (18 Dec 2024). Mean 20-day return after +0.03%.",
+   "artefacts": [
+    "experiments/2026-11-03-P-0314"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }

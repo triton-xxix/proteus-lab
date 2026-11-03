@@ -1,0 +1,144 @@
+{
+ "summary": {
+  "cuts": 11,
+  "above_sma200": 9,
+  "uptrend_20d": 8,
+  "both": 8,
+  "rsi5_below_30": 1,
+  "mean_20d_after": 0.03
+ },
+ "rows": [
+  {
+   "effective": "2019-08-01",
+   "decision_day": "2019-07-31",
+   "from": 2.5,
+   "to": 2.25,
+   "above_sma200": true,
+   "pct_vs_sma200": 7.6,
+   "ret_20d_before": 0.3,
+   "uptrend_20d": true,
+   "rsi5": 32.4,
+   "ret_20d_after": -2.9
+  },
+  {
+   "effective": "2019-09-19",
+   "decision_day": "2019-09-18",
+   "from": 2.25,
+   "to": 2.0,
+   "above_sma200": true,
+   "pct_vs_sma200": 7.3,
+   "ret_20d_before": 3.8,
+   "uptrend_20d": true,
+   "rsi5": 74.0,
+   "ret_20d_after": -0.4
+  },
+  {
+   "effective": "2019-10-31",
+   "decision_day": "2019-10-30",
+   "from": 2.0,
+   "to": 1.75,
+   "above_sma200": true,
+   "pct_vs_sma200": 6.4,
+   "ret_20d_before": 5.6,
+   "uptrend_20d": true,
+   "rsi5": 83.1,
+   "ret_20d_after": 3.7
+  },
+  {
+   "effective": "2020-03-04",
+   "decision_day": "2020-03-03",
+   "from": 1.75,
+   "to": 1.25,
+   "above_sma200": false,
+   "pct_vs_sma200": -0.8,
+   "ret_20d_before": -7.4,
+   "uptrend_20d": false,
+   "rsi5": 30.9,
+   "ret_20d_after": -13.6
+  },
+  {
+   "effective": "2020-03-16",
+   "decision_day": "2020-03-13",
+   "from": 1.25,
+   "to": 0.25,
+   "above_sma200": false,
+   "pct_vs_sma200": -11.1,
+   "ret_20d_before": -20.1,
+   "uptrend_20d": false,
+   "rsi5": 40.7,
+   "ret_20d_after": 3.0
+  },
+  {
+   "effective": "2024-09-19",
+   "decision_day": "2024-09-18",
+   "from": 5.5,
+   "to": 5.0,
+   "above_sma200": true,
+   "pct_vs_sma200": 8.8,
+   "ret_20d_before": 0.5,
+   "uptrend_20d": true,
+   "rsi5": 64.1,
+   "ret_20d_after": 4.0
+  },
+  {
+   "effective": "2024-11-08",
+   "decision_day": "2024-11-07",
+   "from": 5.0,
+   "to": 4.75,
+   "above_sma200": true,
+   "pct_vs_sma200": 11.5,
+   "ret_20d_before": 3.4,
+   "uptrend_20d": true,
+   "rsi5": 80.2,
+   "ret_20d_after": 2.0
+  },
+  {
+   "effective": "2024-12-19",
+   "decision_day": "2024-12-18",
+   "from": 4.75,
+   "to": 4.5,
+   "above_sma200": true,
+   "pct_vs_sma200": 6.8,
+   "ret_20d_before": -0.7,
+   "uptrend_20d": false,
+   "rsi5": 16.3,
+   "ret_20d_after": 3.2
+  },
+  {
+   "effective": "2025-09-18",
+   "decision_day": "2025-09-17",
+   "from": 4.5,
+   "to": 4.25,
+   "above_sma200": true,
+   "pct_vs_sma200": 10.6,
+   "ret_20d_before": 3.0,
+   "uptrend_20d": true,
+   "rsi5": 72.2,
+   "ret_20d_after": 1.2
+  },
+  {
+   "effective": "2025-10-30",
+   "decision_day": "2025-10-29",
+   "from": 4.25,
+   "to": 4.0,
+   "above_sma200": true,
+   "pct_vs_sma200": 13.5,
+   "ret_20d_before": 2.8,
+   "uptrend_20d": true,
+   "rsi5": 83.0,
+   "ret_20d_after": -1.1
+  },
+  {
+   "effective": "2025-12-11",
+   "decision_day": "2025-12-10",
+   "from": 4.0,
+   "to": 3.75,
+   "above_sma200": true,
+   "pct_vs_sma200": 11.4,
+   "ret_20d_before": 0.7,
+   "uptrend_20d": true,
+   "rsi5": 73.1,
+   "ret_20d_after": 1.2
+  }
+ ]
+}
