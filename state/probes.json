@@ -1,5 +1,5 @@
 {
- "next_id": 318,
+ "next_id": 319,
  "items": [
   {
    "id": "P-0001",
@@ -7831,6 +7831,28 @@
    ],
    "minutes": 0,
    "calls": 9,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0318",
+   "title": "Grinder gates by night since 20 Oct: from SNAPSHOTS.csv and paper.py's GATES, which gate alone blocks the most near-misses (candidates failing exactly one)?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-03",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-03T23:47:30+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-03T23:47:58+0000",
+   "note": "128 of 2,081 candidates passed every gate over 14 nights since 20 Oct (9 tonight), yet 0 entries: v0.2's bankroll is 11.33 GBP against a 100 GBP stake, so open_book cannot enter. The binding-constraints line has been blaming gates for a bust book. Age is the commonest single miss (128 of 200).",
+   "artefacts": [
+    "experiments/2026-11-03-P-0318"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false
   }

@@ -1,0 +1,210 @@
+{
+ "summary": {
+  "nights": 14,
+  "candidates": 2081,
+  "pass_all": 128,
+  "one_gate_short": 200,
+  "by_gate": {
+   "age": 128,
+   "vol_h1": 21,
+   "liq": 20,
+   "top10": 16,
+   "lp": 7,
+   "vol_h24": 7,
+   "mint_auth": 1
+  },
+  "rules": {
+   "bankroll_gbp": 1000.0,
+   "size_gbp": 100.0,
+   "max_open": 4,
+   "age_h_min": 1.0,
+   "age_h_max": 48.0,
+   "liq_usd_min": 20000,
+   "vol_h24_min": 200000,
+   "vol_h1_min": 10000,
+   "top10_pct_max": 30.0,
+   "holders_min": 300,
+   "lp_locked_min": 90.0,
+   "take_profit": 1.0,
+   "stop_loss": -0.5,
+   "time_stop_h": 24.0,
+   "rug_drop": -0.9,
+   "gbpusd": 1.3
+  }
+ },
+ "nights": [
+  {
+   "ts": "2026-10-20T22:24:19Z",
+   "candidates": 151,
+   "pass_all": 8,
+   "one_gate_short": 14,
+   "by_gate": {
+    "lp": 1,
+    "age": 12,
+    "vol_h1": 1
+   }
+  },
+  {
+   "ts": "2026-10-22T22:23:54Z",
+   "candidates": 151,
+   "pass_all": 13,
+   "one_gate_short": 13,
+   "by_gate": {
+    "top10": 2,
+    "age": 6,
+    "mint_auth": 1,
+    "liq": 2,
+    "vol_h1": 2
+   }
+  },
+  {
+   "ts": "2026-10-23T22:24:34Z",
+   "candidates": 152,
+   "pass_all": 13,
+   "one_gate_short": 13,
+   "by_gate": {
+    "age": 8,
+    "lp": 2,
+    "liq": 3
+   }
+  },
+  {
+   "ts": "2026-10-24T22:24:11Z",
+   "candidates": 150,
+   "pass_all": 11,
+   "one_gate_short": 13,
+   "by_gate": {
+    "age": 8,
+    "top10": 1,
+    "liq": 3,
+    "vol_h1": 1
+   }
+  },
+  {
+   "ts": "2026-10-25T23:24:40Z",
+   "candidates": 150,
+   "pass_all": 8,
+   "one_gate_short": 12,
+   "by_gate": {
+    "age": 9,
+    "top10": 1,
+    "vol_h1": 1,
+    "vol_h24": 1
+   }
+  },
+  {
+   "ts": "2026-10-26T23:24:30Z",
+   "candidates": 153,
+   "pass_all": 4,
+   "one_gate_short": 15,
+   "by_gate": {
+    "age": 8,
+    "lp": 1,
+    "vol_h24": 1,
+    "liq": 3,
+    "top10": 1,
+    "vol_h1": 1
+   }
+  },
+  {
+   "ts": "2026-10-27T23:23:36Z",
+   "candidates": 153,
+   "pass_all": 14,
+   "one_gate_short": 11,
+   "by_gate": {
+    "age": 7,
+    "top10": 1,
+    "vol_h24": 1,
+    "liq": 1,
+    "vol_h1": 1
+   }
+  },
+  {
+   "ts": "2026-10-28T23:24:13Z",
+   "candidates": 144,
+   "pass_all": 10,
+   "one_gate_short": 14,
+   "by_gate": {
+    "age": 7,
+    "liq": 2,
+    "vol_h1": 3,
+    "vol_h24": 1,
+    "top10": 1
+   }
+  },
+  {
+   "ts": "2026-10-29T23:24:04Z",
+   "candidates": 142,
+   "pass_all": 7,
+   "one_gate_short": 18,
+   "by_gate": {
+    "age": 14,
+    "top10": 2,
+    "vol_h1": 1,
+    "liq": 1
+   }
+  },
+  {
+   "ts": "2026-10-30T23:24:20Z",
+   "candidates": 147,
+   "pass_all": 5,
+   "one_gate_short": 16,
+   "by_gate": {
+    "liq": 1,
+    "age": 12,
+    "vol_h24": 2,
+    "vol_h1": 1
+   }
+  },
+  {
+   "ts": "2026-10-31T23:24:28Z",
+   "candidates": 144,
+   "pass_all": 9,
+   "one_gate_short": 12,
+   "by_gate": {
+    "age": 7,
+    "top10": 1,
+    "vol_h1": 3,
+    "liq": 1
+   }
+  },
+  {
+   "ts": "2026-11-01T23:24:15Z",
+   "candidates": 151,
+   "pass_all": 10,
+   "one_gate_short": 15,
+   "by_gate": {
+    "age": 9,
+    "top10": 1,
+    "lp": 1,
+    "vol_h1": 4
+   }
+  },
+  {
+   "ts": "2026-11-02T23:24:12Z",
+   "candidates": 148,
+   "pass_all": 7,
+   "one_gate_short": 19,
+   "by_gate": {
+    "age": 11,
+    "lp": 1,
+    "top10": 3,
+    "liq": 3,
+    "vol_h1": 1
+   }
+  },
+  {
+   "ts": "2026-11-03T23:24:25Z",
+   "candidates": 145,
+   "pass_all": 9,
+   "one_gate_short": 15,
+   "by_gate": {
+    "age": 10,
+    "top10": 2,
+    "lp": 1,
+    "vol_h24": 1,
+    "vol_h1": 1
+   }
+  }
+ ]
+}

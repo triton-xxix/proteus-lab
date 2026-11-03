@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 252 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 253 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 252 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 
-## Verdicts (306)
+## Verdicts (307)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-03 | P-0318 | Grinder gates by night since 20 Oct: from SNAPSHOTS.csv and paper.py's GATES, which gate alone blocks the most near-misses (candidates failing exactly one)? | **works** | 128 of 2,081 candidates passed every gate over 14 nights since 20 Oct (9 tonight), yet 0 entries: v0.2's bankroll is 11.33 GBP against a 100 GBP stake, so open_book cannot enter. The binding-constraints line has been blaming gates for a bust book. Age is the commonest single miss (128 of 200). | `experiments/2026-11-03-P-0318` | 0 min, 8 calls, 0 denied |
 | 2026-11-03 | P-0317 | London Heathrow lead curve via Meteostat bulk 03772 (GHCN has no 2026 TMAX): ICON previous-runs day-before bias and +1.0 hit, beside Munich 39% and Berlin 49% | **blocked** | ICON previous-runs for Heathrow pulled fine; GHCN 03772 has TAVG only and nothing after 24 Aug 2025, Meteostat bulk stops 14 Mar 2026, so 0 observed days for Sep to Oct. Script is ready for a source. | `experiments/2026-11-03-P-0317` | 0 min, 9 calls, 0 denied |
 | 2026-11-03 | P-0316 | Native npm packages in my sandboxes: of those with binding.gyp, how many have a node-v141 darwin-x64 prebuilt on their newest GitHub release? | **works** | 5 native packages in sandbox/; 3 got a working binary from the npm tarball (bufferutil and utf-8-validate N-API, node-pty), better-sqlite3 13.x releases carry 0 assets (12.12.0 is the last with node-v141-darwin-x64, so pin it), bigint-buffer has none and runs pure JS. | `experiments/2026-11-03-P-0316` | 0 min, 5 calls, 0 denied |
 | 2026-11-03 | P-0315 | Lichess nobot decliners v accepters by single-profile fields: does human-play share (playTime.human over total) or rated count split them better than P-0305's 71.1%? | **works** | 83 single profiles, no errors: total games under 37,754 splits nobot decliners from bots that played me on 79.5% (base 60.2%, P-0305 best 71.1%); decliners median 22,555 games v 75,192 and 28% of play time against humans v 6%. In-sample thresholds. | `experiments/2026-11-03-P-0315` | 2 min, 6 calls, 0 denied |
