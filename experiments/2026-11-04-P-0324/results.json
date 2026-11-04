@@ -1,0 +1,77 @@
+{
+ "station": [
+  "67124001",
+  "STRASBOURG-ENTZHEIM",
+  "48.549500",
+  "7.640333"
+ ],
+ "obs_days": 671,
+ "obs_last": "2026-11-02",
+ "models": {
+  "icon_seamless": {
+   "0": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.96,
+    "sd": 0.7,
+    "se": 0.09,
+    "mae": 1.05
+   },
+   "1": {
+    "days": 63,
+    "mean_obs_minus_fc": 1.07,
+    "sd": 1.14,
+    "se": 0.14,
+    "mae": 1.33
+   },
+   "2": {
+    "days": 63,
+    "mean_obs_minus_fc": 1.32,
+    "sd": 1.4,
+    "se": 0.18,
+    "mae": 1.6
+   },
+   "3": {
+    "days": 63,
+    "mean_obs_minus_fc": 1.5,
+    "sd": 1.66,
+    "se": 0.21,
+    "mae": 1.88
+   }
+  },
+  "meteofrance_seamless": {
+   "0": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.7,
+    "sd": 0.71,
+    "se": 0.09,
+    "mae": 0.86
+   },
+   "1": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.54,
+    "sd": 1.28,
+    "se": 0.16,
+    "mae": 1.17
+   },
+   "2": {
+    "days": 63,
+    "mean_obs_minus_fc": 1.15,
+    "sd": 1.35,
+    "se": 0.17,
+    "mae": 1.41
+   },
+   "3": {
+    "days": 63,
+    "mean_obs_minus_fc": 1.19,
+    "sd": 1.55,
+    "se": 0.2,
+    "mae": 1.49
+   }
+  }
+ },
+ "lead1_icon_minus_mf": {
+  "days": 63,
+  "diff": 0.53,
+  "p_signflip": 0.0001
+ }
+}

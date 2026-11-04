@@ -8012,22 +8012,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-04",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-04T12:44:37+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-04T12:45:07+0000",
+   "note": "ICON lead-1 mean obs minus forecast at Strasbourg-Entzheim +1.07 C (sd 1.14, 63 days) v shot +0.6, a miss; Meteo-France +0.54 (warm at Paris, cold here); ICON minus MF +0.53, sign-flip p 0.0001, the same half degree as Paris. ICON by city: Paris +0.32, Strasbourg +1.07, Munich about +1.0, London +1.26. Both models cold here, so site or valley more than model. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-04-P-0324"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "ICON lead-1 mean obs minus forecast at Entzheim +0.6 C",
-    "at": "2026-11-04T12:44:40+0000"
+    "at": "2026-11-04T12:44:40+0000",
+    "hit": true
    }
   }
  ]
