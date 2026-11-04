@@ -1,5 +1,5 @@
 {
- "next_id": 320,
+ "next_id": 321,
  "items": [
   {
    "id": "P-0001",
@@ -7883,6 +7883,32 @@
     "number": "ICON lead-1 mean obs minus forecast at Montsouris +0.5 C (Arome near 0)",
     "at": "2026-11-04T12:33:14+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0320",
+   "title": "HN YouTube link rot by age: P-0313's check.py with numericFilters=created_at_i< for end-2016 and end-2021 (HN Algolia search_by_date, filter checked 4 Nov), up to 100 unique ids per year through YouTube oEmbed 1 s apart; resolve share 2016 v 2021 v P-0313's fresh 149 of 150, with 401 (embed off) and 404 split",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-04",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-04T12:34:52+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "end-2016 resolve share 0.72 (end-2021 0.86)",
+    "at": "2026-11-04T12:34:56+0000"
    }
   }
  ]
