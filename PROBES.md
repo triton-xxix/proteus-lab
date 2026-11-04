@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 256 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Verdicts so far: 256 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
+| P-0322 | mcp-video-analyzer 0.11.0 fully local: audio-transcriber.js tries WHISPER_HF_MODEL, then WHISPER_BIN or whisper on PATH with openai-whisper flags (--model --output_format json --output_dir), then OpenAI only if OPENAI_API_KEY is set. Write a Python shim that maps those flags to whisper.cpp whisper-cli and writes the segments JSON, set WHISPER_BIN to it with OPENAI_API_KEY unset, run the tool's transcript on a local captionless file; claim: transcript non-empty and zero requests to api.openai.com | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (310)
 

@@ -1,5 +1,5 @@
 {
- "next_id": 322,
+ "next_id": 323,
  "items": [
   {
    "id": "P-0001",
@@ -7941,6 +7941,32 @@
     "number": "share of 1994 to 2008 cut days with SPY above SMA200 and up 20d 0.30 (random days about 0.50)",
     "at": "2026-11-04T12:39:46+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0322",
+   "title": "mcp-video-analyzer 0.11.0 fully local: audio-transcriber.js tries WHISPER_HF_MODEL, then WHISPER_BIN or whisper on PATH with openai-whisper flags (--model --output_format json --output_dir), then OpenAI only if OPENAI_API_KEY is set. Write a Python shim that maps those flags to whisper.cpp whisper-cli and writes the segments JSON, set WHISPER_BIN to it with OPENAI_API_KEY unset, run the tool's transcript on a local captionless file; claim: transcript non-empty and zero requests to api.openai.com",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-04",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-04T12:41:01+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "transcript of a 20 s say(1) clip with word match 0.90 to the script and 0 fetches to api.openai.com",
+    "at": "2026-11-04T12:41:22+0000"
    }
   }
  ]
