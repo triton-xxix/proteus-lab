@@ -7983,22 +7983,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-04",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-04T12:43:22+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-04T12:44:09+0000",
+   "note": "ICON lead-1 mean obs minus forecast at Heathrow +1.26 C (sd 1.24, 61 days Sep to Oct, Ogimet SYNOP 18 UTC 333 TX) v shot +0.5, a miss. Lead 0 is +1.29 with sd 0.75, so a fixed site offset, not lead error. Cities so far: Paris +0.32, Munich about +1.0, London +1.26. Ogimet is keyless and current, the fallback wherever Meteostat bulk is stale. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-04-P-0323"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "ICON lead-1 mean obs minus forecast at Heathrow +0.5 C",
-    "at": "2026-11-04T12:43:26+0000"
+    "at": "2026-11-04T12:43:26+0000",
+    "hit": true
    }
   }
  ]

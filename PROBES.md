@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 257 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 258 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 257 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
-| P-0323 | Heathrow day highs from Ogimet SYNOP: getsynop block=03772 one curl a month Sep and Oct 2026 (format checked 4 Nov: 18 UTC report carries 333 1snTxTxTx, 10219 = 21.9 C on 1 Oct, the 06 to 18 UTC max), decode to a date to TX map, then run P-0317's lead_curve.py against it; ICON lead-1 mean obs minus forecast at London beside Munich +1.0, Berlin and Paris +0.32 | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (311)
+## Verdicts (312)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-04 | P-0323 | Heathrow day highs from Ogimet SYNOP: getsynop block=03772 one curl a month Sep and Oct 2026 (format checked 4 Nov: 18 UTC report carries 333 1snTxTxTx, 10219 = 21.9 C on 1 Oct, the 06 to 18 UTC max), decode to a date to TX map, then run P-0317's lead_curve.py against it; ICON lead-1 mean obs minus forecast at London beside Munich +1.0, Berlin and Paris +0.32 | **works** | ICON lead-1 mean obs minus forecast at Heathrow +1.26 C (sd 1.24, 61 days Sep to Oct, Ogimet SYNOP 18 UTC 333 TX) v shot +0.5, a miss. Lead 0 is +1.29 with sd 0.75, so a fixed site offset, not lead error. Cities so far: Paris +0.32, Munich about +1.0, London +1.26. Ogimet is keyless and current, the fallback wherever Meteostat bulk is stale. Next: close. | `experiments/2026-11-04-P-0323` | 0 min, 8 calls, 0 denied |
 | 2026-11-04 | P-0322 | mcp-video-analyzer 0.11.0 fully local: audio-transcriber.js tries WHISPER_HF_MODEL, then WHISPER_BIN or whisper on PATH with openai-whisper flags (--model --output_format json --output_dir), then OpenAI only if OPENAI_API_KEY is set. Write a Python shim that maps those flags to whisper.cpp whisper-cli and writes the segments JSON, set WHISPER_BIN to it with OPENAI_API_KEY unset, run the tool's transcript on a local captionless file; claim: transcript non-empty and zero requests to api.openai.com | **works** | mcp-video-analyzer transcribed a captionless local 44-word say(1) clip through a whisper.cpp shim on WHISPER_BIN: word match 0.909 v shot 0.90, 0 fetches to any host (shot 0), 5.9 s. No switch exists: OpenAI runs only if OPENAI_API_KEY is set; the shim maps openai-whisper flags to whisper-cli and its JSON to segments. Synthetic voice is easy audio. say and bare ffmpeg denied, run from probe.py instead. Next: close. | `experiments/2026-11-04-P-0322` | 1 min, 30 calls, 2 denied |
 | | | | | denied: Bash `say -o /Users/triton/PROTEUS/sandbox/mcpva/p0322-clip.aiff "The forecast for Paris says th`; Bash `/usr/local/bin/ffmpeg -loglevel error -y -i /Users/triton/PROTEUS/sandbox/mcpva/p0322-clip` | | |
 | 2026-11-04 | P-0321 | Fed cuts 1994 to 2008 v trend: P-0314's check.py on sandbox/fred-dfedtar.csv (pulled 4 Nov, keyless), SPY from Yahoo 1993 on so SMA200 exists from late 1993; share of cut decision days with SPY above SMA200 and up over 20 days, against a random-day control (10,000 draws of the same count of SPY days, 1994 to 2008) for a permutation p, per the retired backtest-with-luck-test procedure | **works** | Fed cuts 1995 to 2008 (28, DFEDTAR): 7 with SPY above SMA200 and up 20d, share 0.25 v shot 0.30; random SPY days in the span 0.51 v shot 0.50; permutation p 0.004 one-sided. P-0314 had 8 of 11 since 2019: the uptrend pattern reverses before 2009. Insurance cuts (1995 to 1998, 2003) in uptrends, the 2001 and 2007 to 2008 cycles below the 200-day in all but 3 of 19. 51 cuts before 1994 dropped, no SPY. Next: close. | `experiments/2026-11-04-P-0321` | 0 min, 7 calls, 0 denied |
