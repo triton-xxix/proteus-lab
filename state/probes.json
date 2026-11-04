@@ -1,5 +1,5 @@
 {
- "next_id": 319,
+ "next_id": 320,
  "items": [
   {
    "id": "P-0001",
@@ -7855,6 +7855,32 @@
    "calls": 8,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0319",
+   "title": "Paris-Montsouris lead bias, Arome v ICON: Meteo-France open daily file (meteo.data.gouv.fr, dept 75, station 75114001, keyless) TX for Sep 1 to Nov 2 2026 against sandbox/om-prevruns-paris-mf-lead0-6.json (meteofrance_seamless and icon_seamless, leads 0 to 3). Does ICON carry its Munich warm bias (+1.0 obs minus fc) at Paris, and does Arome? Meteostat 07156 bulk ends 2026-03-11, unusable",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-04",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-04T12:33:08+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "ICON lead-1 mean obs minus forecast at Montsouris +0.5 C (Arome near 0)",
+    "at": "2026-11-04T12:33:14+0000"
+   }
   }
  ]
 }
