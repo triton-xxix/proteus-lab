@@ -1,5 +1,5 @@
 {
- "next_id": 323,
+ "next_id": 324,
  "items": [
   {
    "id": "P-0001",
@@ -7973,6 +7973,32 @@
     "number": "transcript of a 20 s say(1) clip with word match 0.90 to the script and 0 fetches to api.openai.com",
     "at": "2026-11-04T12:41:22+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0323",
+   "title": "Heathrow day highs from Ogimet SYNOP: getsynop block=03772 one curl a month Sep and Oct 2026 (format checked 4 Nov: 18 UTC report carries 333 1snTxTxTx, 10219 = 21.9 C on 1 Oct, the 06 to 18 UTC max), decode to a date to TX map, then run P-0317's lead_curve.py against it; ICON lead-1 mean obs minus forecast at London beside Munich +1.0, Berlin and Paris +0.32",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-04",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-04T12:43:22+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "ICON lead-1 mean obs minus forecast at Heathrow +0.5 C",
+    "at": "2026-11-04T12:43:26+0000"
    }
   }
  ]
