@@ -7951,22 +7951,28 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-04",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-04T12:41:01+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-11-04T12:42:59+0000",
+   "note": "mcp-video-analyzer transcribed a captionless local 44-word say(1) clip through a whisper.cpp shim on WHISPER_BIN: word match 0.909 v shot 0.90, 0 fetches to any host (shot 0), 5.9 s. No switch exists: OpenAI runs only if OPENAI_API_KEY is set; the shim maps openai-whisper flags to whisper-cli and its JSON to segments. Synthetic voice is easy audio. say and bare ffmpeg denied, run from probe.py instead. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-04-P-0322"
+   ],
+   "minutes": 1,
+   "calls": 30,
+   "denied": [
+    "Bash `say -o /Users/triton/PROTEUS/sandbox/mcpva/p0322-clip.aiff \"The forecast for Paris says th`",
+    "Bash `/usr/local/bin/ffmpeg -loglevel error -y -i /Users/triton/PROTEUS/sandbox/mcpva/p0322-clip`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "transcript of a 20 s say(1) clip with word match 0.90 to the script and 0 fetches to api.openai.com",
-    "at": "2026-11-04T12:41:22+0000"
+    "at": "2026-11-04T12:41:22+0000",
+    "hit": true
    }
   }
  ]

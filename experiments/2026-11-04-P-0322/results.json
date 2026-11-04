@@ -1,0 +1,16 @@
+{
+ "exit": 0,
+ "transcript_entries": 3,
+ "transcript": "The forecast for Paris says the high will be 14 degrees on Thursday. Matteo France runs a little warm, and the German model runs a little cold. Links to old videos on Hakka News die about two and a half points a year.",
+ "ref_words": 44,
+ "hyp_words": 42,
+ "word_match": 0.909,
+ "fetches": {
+  "exit": 0,
+  "seconds": 5.892,
+  "fetch_hosts": {}
+ },
+ "warnings": [
+  "Transcript generated via Whisper fallback (no native transcript available)."
+ ]
+}

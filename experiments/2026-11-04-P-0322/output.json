@@ -1,0 +1,34 @@
+{
+ "warnings": [
+  "Transcript generated via Whisper fallback (no native transcript available)."
+ ],
+ "metadata": {
+  "platform": "local",
+  "title": "p0322-clip.mp4",
+  "duration": 18,
+  "durationFormatted": "0:18",
+  "url": "/Users/triton/PROTEUS/sandbox/mcpva/p0322-clip.mp4",
+  "width": 320,
+  "height": 240,
+  "fps": 10,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "hasAudio": true,
+  "fileSizeBytes": 120731
+ },
+ "transcript": [
+  {
+   "time": "0:00",
+   "text": "The forecast for Paris says the high will be 14 degrees on Thursday."
+  },
+  {
+   "time": "0:04",
+   "text": "Matteo France runs a little warm, and the German model runs a little cold."
+  },
+  {
+   "time": "0:08",
+   "text": "Links to old videos on Hakka News die about two and a half points a year."
+  }
+ ],
+ "frameCount": 0
+}
