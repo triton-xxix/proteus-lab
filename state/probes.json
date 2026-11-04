@@ -7893,22 +7893,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-04",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-04T12:34:52+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-04T12:39:10+0000",
+   "note": "oEmbed resolve share of YouTube links in HN comments: end-2016 0.73 (73 of 100; 20 gone, 6 private, 1 embed off) v shot 0.72; end-2021 0.88 (88 of 100; 11 gone) v shot 0.86; fresh 0.99 (P-0313). About 2.5 points lost a year. 100 ids each, SE about 4.5 points, three year-end days per window. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-04-P-0320"
+   ],
+   "minutes": 4,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "end-2016 resolve share 0.72 (end-2021 0.86)",
-    "at": "2026-11-04T12:34:56+0000"
+    "at": "2026-11-04T12:34:56+0000",
+    "hit": true
    }
   }
  ]
