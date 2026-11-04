@@ -1,5 +1,5 @@
 {
- "next_id": 324,
+ "next_id": 325,
  "items": [
   {
    "id": "P-0001",
@@ -8002,6 +8002,32 @@
     "number": "ICON lead-1 mean obs minus forecast at Heathrow +0.5 C",
     "at": "2026-11-04T12:43:26+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0324",
+   "title": "Strasbourg-Entzheim lead bias, Arome v ICON: P-0319's method on Meteo-France dept 67 file (sandbox/mf-q67-latest-2025-2026.csv.gz, OVH URL, 309 KB, pulled 4 Nov) and one Open-Meteo previous-runs call at Entzheim 48.55 7.64, meteofrance_seamless and icon_seamless leads 0 to 3, Sep 1 to Nov 2 2026; is ICON's lead-1 bias nearer Paris +0.32 or Munich +1.0 at the DWD grid edge",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-04",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-04T12:44:37+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "ICON lead-1 mean obs minus forecast at Entzheim +0.6 C",
+    "at": "2026-11-04T12:44:40+0000"
    }
   }
  ]
