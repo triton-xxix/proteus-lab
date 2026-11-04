@@ -1,5 +1,5 @@
 {
- "next_id": 321,
+ "next_id": 322,
  "items": [
   {
    "id": "P-0001",
@@ -7912,6 +7912,32 @@
     "number": "end-2016 resolve share 0.72 (end-2021 0.86)",
     "at": "2026-11-04T12:34:56+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0321",
+   "title": "Fed cuts 1994 to 2008 v trend: P-0314's check.py on sandbox/fred-dfedtar.csv (pulled 4 Nov, keyless), SPY from Yahoo 1993 on so SMA200 exists from late 1993; share of cut decision days with SPY above SMA200 and up over 20 days, against a random-day control (10,000 draws of the same count of SPY days, 1994 to 2008) for a permutation p, per the retired backtest-with-luck-test procedure",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-04",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-04T12:39:40+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "share of 1994 to 2008 cut days with SPY above SMA200 and up 20d 0.30 (random days about 0.50)",
+    "at": "2026-11-04T12:39:46+0000"
    }
   }
  ]
