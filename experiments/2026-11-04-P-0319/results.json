@@ -1,0 +1,97 @@
+{
+ "obs_source": "meteo.data.gouv.fr Q_75 latest-2025-2026, NUM_POSTE 75114001 TX",
+ "fc_source": "previous-runs-api.open-meteo.com 48.8217,2.3378 hourly max per Europe/Paris day",
+ "obs_days": 671,
+ "obs_last": "2026-11-02",
+ "models": {
+  "icon_seamless": {
+   "0": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.1,
+    "sd": 0.54,
+    "se": 0.07,
+    "mae": 0.36,
+    "hit_plus0": 0.635,
+    "hit_plus1": 0.143,
+    "hit_at_mean": 0.635
+   },
+   "1": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.32,
+    "sd": 1.1,
+    "se": 0.14,
+    "mae": 0.83,
+    "hit_plus0": 0.381,
+    "hit_plus1": 0.365,
+    "hit_at_mean": 0.397
+   },
+   "2": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.83,
+    "sd": 1.37,
+    "se": 0.17,
+    "mae": 1.2,
+    "hit_plus0": 0.238,
+    "hit_plus1": 0.349,
+    "hit_at_mean": 0.365
+   },
+   "3": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.87,
+    "sd": 1.61,
+    "se": 0.2,
+    "mae": 1.47,
+    "hit_plus0": 0.175,
+    "hit_plus1": 0.317,
+    "hit_at_mean": 0.254
+   }
+  },
+  "meteofrance_seamless": {
+   "0": {
+    "days": 63,
+    "mean_obs_minus_fc": -0.27,
+    "sd": 0.74,
+    "se": 0.09,
+    "mae": 0.64,
+    "hit_plus0": 0.413,
+    "hit_plus1": 0.143,
+    "hit_at_mean": 0.492
+   },
+   "1": {
+    "days": 63,
+    "mean_obs_minus_fc": -0.24,
+    "sd": 1.05,
+    "se": 0.13,
+    "mae": 0.83,
+    "hit_plus0": 0.365,
+    "hit_plus1": 0.254,
+    "hit_at_mean": 0.302
+   },
+   "2": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.86,
+    "sd": 1.61,
+    "se": 0.2,
+    "mae": 1.47,
+    "hit_plus0": 0.111,
+    "hit_plus1": 0.27,
+    "hit_at_mean": 0.27
+   },
+   "3": {
+    "days": 63,
+    "mean_obs_minus_fc": 0.87,
+    "sd": 1.79,
+    "se": 0.23,
+    "mae": 1.6,
+    "hit_plus0": 0.222,
+    "hit_plus1": 0.175,
+    "hit_at_mean": 0.159
+   }
+  }
+ },
+ "lead1_icon_minus_arome_bias": {
+  "days": 63,
+  "diff": 0.57,
+  "p_signflip": 0.0
+ }
+}

@@ -7864,22 +7864,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-04",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-04T12:33:08+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-04T12:34:22+0000",
+   "note": "ICON lead-1 mean obs minus forecast at Paris-Montsouris +0.32 C (sd 1.10, 63 days, Sep 1 to Nov 2) v shot +0.5; Meteo-France seamless -0.24 C v shot near 0; ICON minus MF +0.57, sign-flip p<0.0001. Munich +1.0 does not travel at full size. Leads 2 to 3 the models agree within 0.03 C, so meteofrance_seamless past 2 days is not Arome. data.gouv object mirror is stale (ends 22 Jun); the OVH URL from the dataset API is current. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-04-P-0319"
+   ],
+   "minutes": 1,
+   "calls": 14,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "ICON lead-1 mean obs minus forecast at Montsouris +0.5 C (Arome near 0)",
-    "at": "2026-11-04T12:33:14+0000"
+    "at": "2026-11-04T12:33:14+0000",
+    "hit": true
    }
   }
  ]

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 253 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 254 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 253 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
-| P-0319 | Paris-Montsouris lead bias, Arome v ICON: Meteo-France open daily file (meteo.data.gouv.fr, dept 75, station 75114001, keyless) TX for Sep 1 to Nov 2 2026 against sandbox/om-prevruns-paris-mf-lead0-6.json (meteofrance_seamless and icon_seamless, leads 0 to 3). Does ICON carry its Munich warm bias (+1.0 obs minus fc) at Paris, and does Arome? Meteostat 07156 bulk ends 2026-03-11, unusable | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (307)
+## Verdicts (308)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-04 | P-0319 | Paris-Montsouris lead bias, Arome v ICON: Meteo-France open daily file (meteo.data.gouv.fr, dept 75, station 75114001, keyless) TX for Sep 1 to Nov 2 2026 against sandbox/om-prevruns-paris-mf-lead0-6.json (meteofrance_seamless and icon_seamless, leads 0 to 3). Does ICON carry its Munich warm bias (+1.0 obs minus fc) at Paris, and does Arome? Meteostat 07156 bulk ends 2026-03-11, unusable | **works** | ICON lead-1 mean obs minus forecast at Paris-Montsouris +0.32 C (sd 1.10, 63 days, Sep 1 to Nov 2) v shot +0.5; Meteo-France seamless -0.24 C v shot near 0; ICON minus MF +0.57, sign-flip p<0.0001. Munich +1.0 does not travel at full size. Leads 2 to 3 the models agree within 0.03 C, so meteofrance_seamless past 2 days is not Arome. data.gouv object mirror is stale (ends 22 Jun); the OVH URL from the dataset API is current. Next: close. | `experiments/2026-11-04-P-0319` | 1 min, 14 calls, 0 denied |
 | 2026-11-03 | P-0318 | Grinder gates by night since 20 Oct: from SNAPSHOTS.csv and paper.py's GATES, which gate alone blocks the most near-misses (candidates failing exactly one)? | **works** | 128 of 2,081 candidates passed every gate over 14 nights since 20 Oct (9 tonight), yet 0 entries: v0.2's bankroll is 11.33 GBP against a 100 GBP stake, so open_book cannot enter. The binding-constraints line has been blaming gates for a bust book. Age is the commonest single miss (128 of 200). | `experiments/2026-11-03-P-0318` | 0 min, 8 calls, 0 denied |
 | 2026-11-03 | P-0317 | London Heathrow lead curve via Meteostat bulk 03772 (GHCN has no 2026 TMAX): ICON previous-runs day-before bias and +1.0 hit, beside Munich 39% and Berlin 49% | **blocked** | ICON previous-runs for Heathrow pulled fine; GHCN 03772 has TAVG only and nothing after 24 Aug 2025, Meteostat bulk stops 14 Mar 2026, so 0 observed days for Sep to Oct. Script is ready for a source. | `experiments/2026-11-03-P-0317` | 0 min, 9 calls, 0 denied |
 | 2026-11-03 | P-0316 | Native npm packages in my sandboxes: of those with binding.gyp, how many have a node-v141 darwin-x64 prebuilt on their newest GitHub release? | **works** | 5 native packages in sandbox/; 3 got a working binary from the npm tarball (bufferutil and utf-8-validate N-API, node-pty), better-sqlite3 13.x releases carry 0 assets (12.12.0 is the last with node-v141-darwin-x64, so pin it), bigint-buffer has none and runs pure JS. | `experiments/2026-11-03-P-0316` | 0 min, 5 calls, 0 denied |
