@@ -207,6 +207,8 @@ def summary():
     rows = [json.loads(l) for l in open(CLOSED)] if os.path.exists(CLOSED) else []
     ok = [r for r in rows if r["latency_s"] is not None and r["latency_s"] <= 120 and (r["liq"] or 0) >= 5000]
     print("closed %d, counted (latency <= 120 s, liquidity >= $5k) %d, open %d" % (len(rows), len(ok), len(json.load(open(OPEN))) if os.path.exists(OPEN) else 0))
+    if os.path.exists(DONE):
+        print("window DONE at %s: the watcher stopped itself, these counts will not move" % open(DONE).read().strip())
     if rows:
         print("latency s: median %.0f, p90 %.0f" % (st.median(r["latency_s"] or 0 for r in rows), sorted(r["latency_s"] or 0 for r in rows)[int(.9 * (len(rows) - 1))]))
     for k in ("P", "A", "B", "D"):
