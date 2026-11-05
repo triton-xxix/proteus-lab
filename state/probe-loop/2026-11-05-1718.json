@@ -17,7 +17,7 @@
   "P-0330",
   "P-0331"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-05T17:38:03+0000",
+ "stop_reason": "7 probes to verdict; 116 of 150 calls used, stopping with 34 left so the close and kill check are not squeezed",
  "refills": 5
 }
