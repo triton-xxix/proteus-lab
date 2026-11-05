@@ -1,0 +1,36 @@
+{
+ "sample_test_dates": [
+  "2023-01-01",
+  "2023-03-06"
+ ],
+ "raw": {
+  "3 Series": {
+   "tests": 91746,
+   "fails": 24668,
+   "rate": 0.2689
+  },
+  "Corsa": {
+   "tests": 176577,
+   "fails": 66009,
+   "rate": 0.3738
+  }
+ },
+ "raw_ratio": 1.39,
+ "strata_used": 248,
+ "tests_in_matched_strata": {
+  "Corsa": 173711,
+  "3 Series": 82690
+ },
+ "std_on_3series_mix": {
+  "corsa": 0.4194,
+  "3series": 0.2643,
+  "ratio": 1.587
+ },
+ "std_on_corsa_mix": {
+  "corsa": 0.3743,
+  "3series": 0.2149,
+  "ratio": 1.741
+ },
+ "mantel_haenszel_ratio": 1.621,
+ "skipped_bad_rows": 12095
+}
