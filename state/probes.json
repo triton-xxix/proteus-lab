@@ -1,5 +1,5 @@
 {
- "next_id": 328,
+ "next_id": 329,
  "items": [
   {
    "id": "P-0001",
@@ -8096,6 +8096,28 @@
    ],
    "minutes": 0,
    "calls": 8,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0328",
+   "title": "YouTube link rot in HN comments at 12 and 14 years: P-0320's rot.py with windows end-2011 and end-2013, 100 ids each; does loss keep near 2.5 points a year past ten years or flatten?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-05",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-05T17:24:11+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-05T17:28:19+0000",
+   "note": "YouTube links in HN comments from late 2011 resolve 0.72 and late 2013 0.67 (100 ids each), level with P-0320's 0.72 at ten years: the 2.5-points-a-year loss stops after about a decade instead of carrying on.",
+   "artefacts": [
+    "experiments/2026-11-05-P-0328"
+   ],
+   "minutes": 4,
+   "calls": 6,
    "denied": [],
    "luke": false
   }
