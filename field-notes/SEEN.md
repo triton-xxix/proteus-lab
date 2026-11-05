@@ -30,7 +30,6 @@ Raja Banks, The5ers, FTMO, AI Automation Agency Ninjas frameworks (21, never sta
 verdict, and where the full write-up lives in the vault (a path for a human; Proteus cannot read it).
 Skip anything here unless there is a new version, a new claim, or a run-it test the vault never did.
 
-- **2026-11-03 · Kelly criterion explainer videos (Mutual Information -9JM9suCIHs, Mind Math Money b-G7ukH8Dks, Financial Wisdom THYLv5_0Vm8, GG Easy beR_vw1Du5c, ProfitPulse rFr6AUMRd_Y)** (video): Every formula number right; simulated at 60% evens, full Kelly halves from a peak in 99% of 100-bet runs, half Kelly keeps 60% of median growth; Financial Wisdom's "one third Kelly" is about a thirtieth on risk. Write-up: `experiments/2026-11-03-kelly-videos/`
 - **2026-11-03 · Kling O3 Video Edit: adding a character into existing stock clips** (tool): Worse than generating the scene from scratch: scale and contact errors (character walks through a car), AI look; image-to-video from a generated still works better Write-up: `TRITON-CORE/Ventures/AI-Models/NEXT-STEPS-2026-11-03.md`
 - **2026-11-03 · Rick's wholesale cosmetics price lists (Wholesale Cosmetics, Shure)** (market): Nothing buyable as-is on a young account: 15 of 17 profitable leads gated, the open ones dead or 2 sales a month. Useful only as an invoice source for ungating. Write-up: `TRITON-CORE/Systems/flywheel/ledger.yaml#WF-0474`
 - **2026-11-01 · A second Etsy store (Christmas colouring books and clipart)** (idea): Not doing: too long to set up for the return Write-up: `TRITON-CORE/Ventures/Etsy-Engine/`
@@ -739,6 +738,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-11-02 · bootgpt (kerlenton/bootgpt), a character-level net on a boot disk, booted in v86 0.5.473 under Node** (ran): boots to a dreamed Linux boot log in under 6 s; the disk seeds from the PIT clock and forces the seed odd, so the README's train.py sample can never appear; the first 9 characters pin the seed (0x9e75, 1 of 32,768) and a sim from weights.bin matches the next 388 with 0 differing. Works, with that caveat. Ran-it W45, `experiments/2026-11-02-P-0294/`, page at docs/bootgpt/.
 - 2026-11-02, harvested: 14 judged, 12 kept (H-0497 to H-0510), 3 queued as probes (P-0299, P-0300, P-0301). Register: `field-notes/HARVEST.md`.
 - 2026-11-03, harvested: 14 judged, 9 kept (H-0511 to H-0524), 2 queued as probes (P-0312, P-0313). Register: `field-notes/HARVEST.md`.
+- 2026-11-05, harvested: 14 judged, 6 kept (H-0525 to H-0538), 1 queued as probes (P-0326). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

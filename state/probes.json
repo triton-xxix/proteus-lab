@@ -1,5 +1,5 @@
 {
- "next_id": 325,
+ "next_id": 327,
  "items": [
   {
    "id": "P-0001",
@@ -8032,6 +8032,46 @@
     "at": "2026-11-04T12:44:40+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0325",
+   "title": "Poker chip tracker for a home game (wish of 2 Nov, r/SomebodyMakeThis): one offline HTML file, players, blinds, bets, pot and side pots, undo, state kept in the page; scored by a side-pot test table; released with a README on the lab page",
+   "source": "persona",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-05",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0326",
+   "title": "MOT cohort fail rates: does a Corsa fail about 60 percent more than a 3 Series once age, mileage and fuel are matched?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-05",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

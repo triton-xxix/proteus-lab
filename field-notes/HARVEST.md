@@ -6,14 +6,20 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-524 judged over 36 harvest days, 343 kept, 108 testable, 103 queued as probes, 98 with a probe verdict.
+538 judged over 37 harvest days, 349 kept, 109 testable, 104 queued as probes, 100 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0524 | 2026-11-03 | hn | [Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels](https://hackertv.org) | mechanism | open-data | yes | P-0313 |
-| H-0523 | 2026-11-03 | github | [guimatheus92/mcp-video-analyzer: MCP server that turns any video — YouTube, Instagram, Tik](https://github.com/guimatheus92/mcp-video-analyzer) | mechanism | tools-for-strangers | yes | P-0312 |
+| H-0535 | 2026-11-05 | vault | [A cheap starter kit used as a qualifier that routes buyers to a private sales call]() (intel) | mechanism | mechanism-hunting | no: Seeing the funnel means paying and booking a call, which nee |  |
+| H-0534 | 2026-11-05 | youtube | [We analysed millions of MOT results #MOT #CarsOfTikTok #UKCars #DataJournalism #caranalyti](https://www.youtube.com/watch?v=zeTGescbQak) | mechanism | open-data | yes | P-0326 |
+| H-0533 | 2026-11-05 | arxiv | [SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents](https://arxiv.org/abs/2611.06682) | mechanism | tech | no: No code is linked in the abstract and the benchmarks need mo |  |
+| H-0530 | 2026-11-05 | vault | [Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off]() | mechanism | tools-for-strangers | no: A fair test needs paid video and avatar generation, and the  |  |
+| H-0527 | 2026-11-05 | github | [KKKKhazix/agent-autoloop: 让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。](https://github.com/KKKKhazix/agent-autoloop) | mechanism | tools-for-strangers | no: It needs Node 24, a curl-to-shell installer and a logged-in  |  |
+| H-0525 | 2026-11-05 | vault | [How a copy-trade funnel turns one trade into many testimonials: shared timestamp and price](https://t.me/c/2308862086/8413) (intel) | mechanism | mechanism-hunting | no: The funnel lives behind a Telegram channel and a broker link |  |
+| H-0524 | 2026-11-03 | hn | [Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels](https://hackertv.org) | mechanism | open-data | yes | P-0313 **works** |
+| H-0523 | 2026-11-03 | github | [guimatheus92/mcp-video-analyzer: MCP server that turns any video — YouTube, Instagram, Tik](https://github.com/guimatheus92/mcp-video-analyzer) | mechanism | tools-for-strangers | yes | P-0312 **works** |
 | H-0521 | 2026-11-03 | vault | [Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency]() | mechanism | tools-for-strangers | no: A real test needs a telephony or voice-agent platform accoun |  |
 | H-0519 | 2026-11-03 | arxiv | [DiabAgent: Toward Agentic Physiological Control](https://arxiv.org/abs/2611.03601) | mechanism | tech | no: Needs a paid model and the authors' simulator, which is not  |  |
 | H-0516 | 2026-11-03 | vault | [Speed-to-lead workflow chain and themed ad group keyword method from the call recordings]() | mechanism | tools-for-strangers | no: Needs ad accounts, a CRM and real leads, and the recordings  |  |
@@ -357,6 +363,76 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0535 A cheap starter kit used as a qualifier that routes buyers to a private sales call
+2026-11-05, vault, 
+
+- **Mechanism:** A deliberately cheap product (5 dollars, cut from 12.50) is a qualifier: paying puts a card on file and marks the buyer as willing to spend, then routes them to a private one-to-one call where the real, expensive offer is made. The cheap kit is the commodity (pay-per-view clipping); the high-ticket offer sits behind the call. Income claims are anecdotes and the guarantee covers something other than earnings. Platforms and card networks see this as a low-ticket lead-gen funnel.
+- **Claim:** A 5 dollar clipping-agency starter kit leads to income of 3k in the first week for beginners.
+- **Testable:** no. Seeing the funnel means paying and booking a call, which needs a card and an account. Needs: A card payment and a booked sales call..
+- **Idea on its own:** sound. A low-ticket qualifier feeding a high-ticket call is an ordinary, legal funnel shape; the question is only whether the claims on it are honest.
+- **How it would be done:** As a pattern for legitimate use: a cheap, useful sample filters for buyers, and a call converts the few who want more. To study it without joining, read the public landing page, the refund and guarantee wording, and the pricing history. A hired closer or sales person handles the call itself, which no script covers. Honest claims, evidenced results and a guarantee that matches the headline are what separate this from the scheme version.
+- **Missing:** Nothing to build; the work is a sales conversation.
+- **Field Notes line:** A 5 dollar kit works as a card-on-file qualifier that routes buyers to a one-to-one sales call, where the real offer lands.
+
+### H-0534 We analysed millions of MOT results #MOT #CarsOfTikTok #UKCars #DataJournalism #caranalytics
+2026-11-05, youtube, https://www.youtube.com/watch?v=zeTGescbQak
+
+- **Mechanism:** Take the open MOT test results, and for each make and model compare its fail rate with an expected rate for cars of the same age band, mileage band and fuel type. The headline gaps are the ratio of observed to expected failures, so a Corsa reads about 22 percent below the average-car pass rate and a 3 Series 23 percent above, with the cohort adjustment stopping old cars from dominating. Fault-category rates (steering, brakes) use the same cohort comparison.
+- **Claim:** A Vauxhall Corsa fails its MOT almost 60 percent more often than a BMW 3 Series, across about 30 million tests and 8 million fails last year.
+- **Testable:** yes. Using one public year of DVSA MOT results with age, mileage and fuel cohorts, does the Corsa fail rate come out roughly 60 percent above the 3 Series? Queued as P-0326.
+- **Idea on its own:** sound. Comparing each model with a matched age, mileage and fuel cohort is the correct way to avoid blaming old cars on their model.
+- **How it would be done:** Download the anonymised MOT results from data.gov.uk (the keyless bulk files, not the keyed API) and load one year with pandas or DuckDB. Bucket test mileage and vehicle age, group by fuel, compute the cohort fail rate, then for each model divide observed fails by the sum of cohort rates. Compare Corsa and 3 Series ratios to the video's figures and check the Bentley Continental at about a third of the usual rate. If the file is too large for the time box, restrict to a single month and say so. No hired role needed.
+- **To fetch:** DVSA anonymised MOT tests and results https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b66/anonymised-mot-tests-and-results (Keyless bulk files of UK MOT results.); DuckDB https://duckdb.org (Fast local grouping over multi-million-row CSV files.)
+- **Field Notes line:** A UK MOT video claims a Corsa fails 60 percent more than a 3 Series once age, mileage and fuel are matched; the open data can check it.
+
+### H-0533 SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents
+2026-11-05, arxiv, https://arxiv.org/abs/2611.06682
+
+- **Mechanism:** Each tool call is mapped into a shared semantic form, and an executable ontology plus per-episode task state yields one of three deterministic verdicts: ready, waiting or forbidden. Waiting means an unmet but recoverable precondition, so the agent can replan without widening its permissions. The ontology is grown offline: an LLM proposes action and state axioms from failed training runs, and each is accepted only if it fixes a logged error, stays logically consistent and passes held-out validation before the ontology is frozen.
+- **Claim:** 0 percent attack success rate on AgentDojo, ASB and AgentDyn while improving task utility under attack.
+- **Testable:** no. No code is linked in the abstract and the benchmarks need model answers, which are not keyless tonight. Needs: The paper's code (not confirmed to exist) and a model to run benchmarks..
+- **Idea on its own:** needs-a-run. A three-state gate that separates not-yet from never is a useful design, but zero attacks on public benchmarks needs independent confirmation.
+- **How it would be done:** Fetch the paper and check for a repository. If code exists, run its gate on the public AgentDojo task set with a stub agent that replays recorded tool calls, which avoids needing a live model. For Proteus, the transferable piece is the waiting verdict: the existing hook only allows or denies, so a denial with a named unmet precondition would let a run route around it instead of retrying. That would be a small change to the hook's reason text, not an ontology.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** AgentDojo https://github.com/ethz-spylab/agentdojo (Public prompt-injection benchmark the paper evaluates on.)
+- **Missing:** Released code for the ontology gate, if any.
+- **Field Notes line:** SecureGARD gates agent tool calls with a rule ontology that returns ready, waiting or forbidden, and claims zero successful prompt injections on three benchmarks.
+
+### H-0530 Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off
+2026-11-05, vault, 
+
+- **Mechanism:** Character consistency in generated video comes from fixing a reference set (a character sheet of stills, a look block of fixed descriptors, a cloned voice) and feeding the same references into every shot prompt. Cloning adds a voice model and a lip-sync or avatar step on top of the stills. AI ad variants are then produced by swapping hook and script while the character and voice stay fixed, so an ad set is a table of hooks against one actor. Drift between shots is checked by eye from a contact sheet.
+- **Claim:** A nine-phase course covers character consistency, AI ads and cloning that map onto an avatar content engine bake-off.
+- **Testable:** no. A fair test needs paid video and avatar generation, and the Gemini prepaid balance has run out. Needs: Paid generation credits for stills, video and avatar tools..
+- **Idea on its own:** sound. Reusing one reference set across shots is the standard working method for consistent generated characters.
+- **How it would be done:** Build one character sheet of stills with Gemini and write a look block of fixed descriptors. Clone a voice with ElevenLabs and drive an avatar through HeyGen or Tavus for the talking shots. Write a hook table of five variants and generate each against the same references, then assemble and caption in HyperFrames. Review every take from a contact sheet and note which shots drift. A hired person would be useful for taste: choosing takes and judging whether the face still reads as the same person.
+- **Stack already covers:** Gemini (stills), ElevenLabs (voice), HeyGen and Tavus (avatars), HyperFrames (video compose, captions, render)
+- **Missing:** A repeatable drift score for a generated character across shots.
+- **Field Notes line:** Consistent AI characters come from a fixed reference sheet and look block reused in every prompt, with ad variants made by swapping hooks.
+
+### H-0527 KKKKhazix/agent-autoloop: 让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。
+2026-11-05, github, https://github.com/KKKKhazix/agent-autoloop
+
+- **Mechanism:** A zero-dependency Node kernel takes events (cron, GitHub issues, errors) and routes them by a rules.json file to a command-line agent in a given directory. The agent runs one round and exits; if it needs a decision it ends its last reply with a fenced agent-autoloop JSON block (ask, notice, resolve, later, events). The kernel parses that block, pushes a card to chat or desktop, holds no process or tokens while waiting, then resumes the same agent session with the answer. Malformed blocks get one rewrite request in the same session rather than a redo.
+- **Claim:** Command-line agents pick up work in the background and only ask a human when unsure, with no server or public port; 3,168 stars in two days.
+- **Testable:** no. It needs Node 24, a curl-to-shell installer and a logged-in agent CLI, and a real run spends model tokens. Needs: Node 24 and a logged-in agent CLI (spends tokens)..
+- **Idea on its own:** sound. Exit-after-each-round with a structured hand-back block is a clean way to run unattended agents without idle processes.
+- **How it would be done:** Read the kernel source for the block parser and the resume path first, since that is the novel part. Then run its dry-run commands (rules explain, emit --dry-run) on a throwaway rules file, which touch no agent. A real round-trip would wire one rule to a local agent with a trivial prompt and answer the card from the terminal. Proteus already has scheduled runs and a hook; the comparison to draw is how this resumes sessions and merges queued events.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** agent-autoloop https://github.com/KKKKhazix/agent-autoloop (Read the kernel and run its dry-run commands.); Node.js 24 https://nodejs.org (Required runtime for the kernel.)
+- **Field Notes line:** Agent Autoloop lets a CLI agent end each round with a JSON block that asks a human or schedules a later wake-up, holding nothing open while it waits.
+
+### H-0525 How a copy-trade funnel turns one trade into many testimonials: shared timestamp and prices, lot size the only variable,
+2026-11-05, vault, https://t.me/c/2308862086/8413
+
+- **Mechanism:** One real or cherry-picked trade is copied to several accounts, so every testimonial shows the same instrument, entry time and price. The only thing that differs is position size, so the dollar profit looks very different while the underlying move (here 77 cents on gold) is identical. A balance screenshot from a day tab is then shown as if it were accumulated wealth. The tell is the shared timestamp and price across supposedly independent members.
+- **Claim:** Members of a Telegram copy-trading channel post large profits and a 100 percent win rate from the bot's signals.
+- **Testable:** no. The funnel lives behind a Telegram channel and a broker link, and checking it needs a connected account, which is off limits. Needs: A Telegram session and a broker or Myfxbook link, neither of which should be touched..
+- **Idea on its own:** unsound. Selling one trade as many independent wins is a presentation trick, not an edge; the only real check is a verified track record with a public link.
+- **How it would be done:** The sensible use of this is a detection checklist, not a build. Line up each testimonial's instrument, timestamp and price; if they match, divide profit by lot size to confirm the same price move. Ask for a verified Myfxbook or broker statement link and check it was not made read-only on a demo account. Compare subscriber count to engagement for a sanity read on audience quality. No hired role is needed; a person checking screenshots is enough.
+- **Missing:** A public verified-track-record check for Telegram signal channels does not exist as a tool.
+- **Field Notes line:** A copy-trade funnel sold three testimonials that were one gold trade at one timestamp, with lot size the only difference.
 
 ### H-0524 Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels
 2026-11-03, hn, https://hackertv.org
@@ -4379,6 +4455,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0535 | 2026-11-05 | A cheap starter kit used as a qualifier that routes buyers to a private sales call | intel | sound | no |  |
+| H-0530 | 2026-11-05 | Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off | intel | sound | no |  |
+| H-0525 | 2026-11-05 | How a copy-trade funnel turns one trade into many testimonials: shared timestamp and price | intel | unsound | no |  |
 | H-0521 | 2026-11-03 | Voice prompt rules: times as words, spelled-out emails, spoken delay to cover tool latency | intel | sound | no |  |
 | H-0516 | 2026-11-03 | Speed-to-lead workflow chain and themed ad group keyword method from the call recordings | intel | sound | no |  |
 | H-0511 | 2026-11-03 | HeyGen web app costs about a third of its API per minute and its free plan covers a first  | intel | sound | no |  |
@@ -4492,6 +4571,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0312 | 2026-11-05 | [DuckDB](https://duckdb.org) | Fast local grouping over multi-million-row CSV files. | H-0534 (We analysed millions of MOT results #MOT #CarsOfTi) | shelf |
+| T-0311 | 2026-11-05 | [DVSA anonymised MOT tests and results](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b66/anonymised-mot-tests-and-results) | Keyless bulk files of UK MOT results. | H-0534 (We analysed millions of MOT results #MOT #CarsOfTi) | shelf |
+| T-0310 | 2026-11-05 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | Public prompt-injection benchmark the paper evaluates on. | H-0533 (SecureGARD: Dynamic Ontology-Guided Governance for) | shelf |
+| T-0309 | 2026-11-05 | [agent-autoloop](https://github.com/KKKKhazix/agent-autoloop) | Read the kernel and run its dry-run commands. | H-0527 (KKKKhazix/agent-autoloop: 让你的命令行 Agent 在后台自己接活、自己跟) | shelf |
 | T-0308 | 2026-11-03 | [HN Algolia API](https://hn.algolia.com/api) | Keyless search over HN comments for YouTube links. | H-0524 (Show HN: HackerTV – HN's most-recommended Youtube ) | shelf |
 | T-0307 | 2026-11-03 | [mcp-video-analyzer](https://github.com/guimatheus92/mcp-video-analyzer) | The server and CLI under test. | H-0523 (guimatheus92/mcp-video-analyzer: MCP server that t) | shelf |
 | T-0306 | 2026-11-03 | [n8n](https://n8n.io) | Self-hostable workflow runner for the webhook chain. | H-0516 (Speed-to-lead workflow chain and themed ad group k) | shelf |
@@ -4805,6 +4888,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0538 | 2026-11-05 | youtube | [29000 Elo Bot Told Levy Resign 😭](https://www.youtube.com/watch?v=CSn6EXM43gg) | A reaction clip about a chess bot's chat message with no mechanism. |
+| H-0537 | 2026-11-05 | github | [KIRVO-REPORTING/video-to-notes: Local-first video-to-notes CLI for YouTube/Bilib](https://github.com/KIRVO-REPORTING/video-to-notes) | Caption-first with Whisper fallback is already how the transcribe-video pipeline here works; nothing new. |
+| H-0536 | 2026-11-05 | hn | [Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s](https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra) | Hardware product announcement with only spec-sheet numbers and no testable mechanism. |
+| H-0532 | 2026-11-05 | github | [mhfed/vn-law-check: Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TM](https://github.com/mhfed/vn-law-check) | The vault already judged this vendor and the mechanism is a generic checklist prompt with a report format, nothing new. |
+| H-0531 | 2026-11-05 | hn | [Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)](https://news.ycombinator.com/item?id=50363461) | Privacy news about a vendor's data policy with no mechanism to test. |
+| H-0529 | 2026-11-05 | youtube | [LEVY EXPOSES LICHESS](https://www.youtube.com/watch?v=rFxRGGHKp4g) | A streamer clip with one line of banter and no mechanism. |
+| H-0528 | 2026-11-05 | arxiv | [Rethinking Access Control for AI Agents: Recent Advances and Open Challenges](https://arxiv.org/abs/2611.06764) | A survey with no mechanism of its own; the more specific SecureGARD paper in this batch covers the useful idea. |
+| H-0526 | 2026-11-05 | hn | [Ask HN: What's your current AI agentic setup?](https://news.ycombinator.com/item?id=50366117) | A survey thread of personal setups and opinions with no single mechanism to record. |
 | H-0522 | 2026-11-03 | hn | [Gitbook Breached](https://news.ycombinator.com/item?id=50354336) | Breach news with no mechanism to record. |
 | H-0520 | 2026-11-03 | youtube | [(untitled) suAAJYkVz5M](https://www.youtube.com/watch?v=suAAJYkVz5M) | A listicle of cheap used luxury cars with no data source. |
 | H-0518 | 2026-11-03 | github | [kar2phi/video-lens: video-lens is a coding agent skill that fetches a YouTube tr](https://github.com/kar2phi/video-lens) | Duplicate of the transcript-to-report pipeline already here; the video MCP item is the better one. |
