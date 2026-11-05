@@ -1,0 +1,146 @@
+{
+ "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=48.3538&longitude=11.7861&hourly=temperature_2m,temperature_2m_previous_day1,temperature_2m_previous_day2,temperature_2m_previous_day3&models=icon_seamless,icon_d2,icon_eu,icon_global&past_days=30&forecast_days=1&timezone=Europe/Berlin",
+ "hours": 744,
+ "first": "2026-10-06T00:00",
+ "last": "2026-11-05T23:00",
+ "leads": {
+  "0": {
+   "seamless_nonnull": 744,
+   "icon_d2": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 744,
+    "share_equal": 1.0,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.0
+   },
+   "icon_eu": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 45,
+    "share_equal": 0.06,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.339
+   },
+   "icon_global": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 58,
+    "share_equal": 0.078,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.348
+   }
+  },
+  "1": {
+   "seamless_nonnull": 744,
+   "icon_d2": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 744,
+    "share_equal": 1.0,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.0
+   },
+   "icon_eu": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 32,
+    "share_equal": 0.043,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": -0.006
+   },
+   "icon_global": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 35,
+    "share_equal": 0.047,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": -0.003
+   }
+  },
+  "2": {
+   "seamless_nonnull": 744,
+   "icon_d2": {
+    "nonnull": 0,
+    "hours_both": 0,
+    "hours_equal": 0,
+    "share_equal": null,
+    "days": 0,
+    "mean_daymax_seamless_minus_model": null
+   },
+   "icon_eu": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 744,
+    "share_equal": 1.0,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.0
+   },
+   "icon_global": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 209,
+    "share_equal": 0.281,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": -0.016
+   }
+  },
+  "3": {
+   "seamless_nonnull": 744,
+   "icon_d2": {
+    "nonnull": 0,
+    "hours_both": 0,
+    "hours_equal": 0,
+    "share_equal": null,
+    "days": 0,
+    "mean_daymax_seamless_minus_model": null
+   },
+   "icon_eu": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 744,
+    "share_equal": 1.0,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.0
+   },
+   "icon_global": {
+    "nonnull": 744,
+    "hours_both": 744,
+    "hours_equal": 183,
+    "share_equal": 0.246,
+    "days": 31,
+    "mean_daymax_seamless_minus_model": 0.016
+   }
+  }
+ },
+ "mean_daymax": {
+  "icon_seamless": {
+   "0": 13.235,
+   "1": 13.226,
+   "2": 13.281,
+   "3": 13.219,
+   "days": 31
+  },
+  "icon_d2": {
+   "0": null,
+   "1": null,
+   "2": null,
+   "3": null,
+   "days": 0
+  },
+  "icon_eu": {
+   "0": 12.897,
+   "1": 13.232,
+   "2": 13.281,
+   "3": 13.219,
+   "days": 31
+  },
+  "icon_global": {
+   "0": 12.887,
+   "1": 13.229,
+   "2": 13.297,
+   "3": 13.203,
+   "days": 31
+  }
+ }
+}

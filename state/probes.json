@@ -1,5 +1,5 @@
 {
- "next_id": 327,
+ "next_id": 328,
  "items": [
   {
    "id": "P-0001",
@@ -8074,6 +8074,28 @@
    ],
    "minutes": 1,
    "calls": 15,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0327",
+   "title": "Munich icon_seamless by lead: which single model (ICON-D2, ICON-EU, ICON global) does it serve at previous_day1 and day2, and does the switch line up with P-0302's airport bias drift from +0.13 to +0.6?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-05",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-05T17:23:00+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-05T17:23:39+0000",
+   "note": "Open-Meteo icon_seamless at Munich airport is ICON-D2 at leads 0 and 1 and ICON-EU at leads 2 and 3 (744 of 744 hours each, 6 Oct to 5 Nov); D2 serves no day-2 runs. The switch moves the mean daily high only +0.05 C, so it does not explain P-0302's bias drift.",
+   "artefacts": [
+    "experiments/2026-11-05-P-0327"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false
   }

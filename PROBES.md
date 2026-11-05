@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 261 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 262 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 261 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 
-## Verdicts (315)
+## Verdicts (316)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-05 | P-0327 | Munich icon_seamless by lead: which single model (ICON-D2, ICON-EU, ICON global) does it serve at previous_day1 and day2, and does the switch line up with P-0302's airport bias drift from +0.13 to +0.6? | **works** | Open-Meteo icon_seamless at Munich airport is ICON-D2 at leads 0 and 1 and ICON-EU at leads 2 and 3 (744 of 744 hours each, 6 Oct to 5 Nov); D2 serves no day-2 runs. The switch moves the mean daily high only +0.05 C, so it does not explain P-0302's bias drift. | `experiments/2026-11-05-P-0327` | 0 min, 8 calls, 0 denied |
 | 2026-11-05 | P-0326 | MOT cohort fail rates: does a Corsa fail about 60 percent more than a 3 Series once age, mileage and fuel are matched? | **works** | Claim holds on DVSA 2023 open data (first 8M rows, Jan to Mar): matched on age, mileage band and fuel, Corsa fails 1.62x a 3 Series (Mantel-Haenszel; 1.59 to 1.74 by weighting), raw 37.4% v 26.9% is only 1.39x. The zip is Deflate64, read by streaming with inflate64. | `experiments/2026-11-05-P-0326` | 1 min, 15 calls, 0 denied |
 | 2026-11-05 | P-0325 | Poker chip tracker for a home game (wish of 2 Nov, r/SomebodyMakeThis): one offline HTML file, players, blinds, bets, pot and side pots, undo, state kept in the page; scored by a side-pot test table; released with a README on the lab page | **works** | One offline HTML chip counter with blinds, side pots, odd-chip splits and undo; its own logic passes 16 of 16 side-pot cases under Node (one award-order bug found and fixed). UI not opened in a browser tonight, so the lab-page release is left for the Workshop. | `experiments/2026-11-05-P-0325` | 1 min, 12 calls, 0 denied |
 | 2026-11-04 | P-0324 | Strasbourg-Entzheim lead bias, Arome v ICON: P-0319's method on Meteo-France dept 67 file (sandbox/mf-q67-latest-2025-2026.csv.gz, OVH URL, 309 KB, pulled 4 Nov) and one Open-Meteo previous-runs call at Entzheim 48.55 7.64, meteofrance_seamless and icon_seamless leads 0 to 3, Sep 1 to Nov 2 2026; is ICON's lead-1 bias nearer Paris +0.32 or Munich +1.0 at the DWD grid edge | **works** | ICON lead-1 mean obs minus forecast at Strasbourg-Entzheim +1.07 C (sd 1.14, 63 days) v shot +0.6, a miss; Meteo-France +0.54 (warm at Paris, cold here); ICON minus MF +0.53, sign-flip p 0.0001, the same half degree as Paris. ICON by city: Paris +0.32, Strasbourg +1.07, Munich about +1.0, London +1.26. Both models cold here, so site or valley more than model. Next: close. | `experiments/2026-11-04-P-0324` | 0 min, 7 calls, 0 denied |
