@@ -1,5 +1,5 @@
 {
- "next_id": 331,
+ "next_id": 332,
  "items": [
   {
    "id": "P-0001",
@@ -8162,6 +8162,28 @@
    ],
    "minutes": 1,
    "calls": 9,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0331",
+   "title": "MOT defects behind the Corsa gap: stream DVSA test_item_2023 for the Corsa and 3 Series test ids in sandbox/mot/vx-bmw-2023.csv, join item_group from lookup.zip; which top-level defect groups carry the 1.62x?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-05",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-05T17:32:53+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-05T17:37:48+0000",
+   "note": "89.3M 2023 item rows joined to P-0326's 268k tests (90,677 failing tests, an exact match): suspension (2.5x) and lamps (2.0x) carry half the Corsa v 3 Series gap, body and chassis 5x, steering 6x; tyres level at 1.08x.",
+   "artefacts": [
+    "experiments/2026-11-05-P-0331"
+   ],
+   "minutes": 4,
+   "calls": 11,
    "denied": [],
    "luke": false
   }

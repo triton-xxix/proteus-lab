@@ -1,0 +1,120 @@
+{
+ "tests": 268323,
+ "item_rows": 89302632,
+ "tests_with_failure_item": 90677,
+ "strata": 248,
+ "sections": [
+  {
+   "section": "Suspension",
+   "corsa": 0.162,
+   "3series": 0.0653,
+   "ratio": 2.48,
+   "diff": 0.0967,
+   "share_of_summed_diff": 0.266
+  },
+  {
+   "section": "Lamps, reflectors and electrical equipment",
+   "corsa": 0.1944,
+   "3series": 0.0989,
+   "ratio": 1.96,
+   "diff": 0.0954,
+   "share_of_summed_diff": 0.263
+  },
+  {
+   "section": "Body, chassis, structure",
+   "corsa": 0.062,
+   "3series": 0.0122,
+   "ratio": 5.07,
+   "diff": 0.0498,
+   "share_of_summed_diff": 0.137
+  },
+  {
+   "section": "Visibility",
+   "corsa": 0.0829,
+   "3series": 0.0402,
+   "ratio": 2.07,
+   "diff": 0.0428,
+   "share_of_summed_diff": 0.118
+  },
+  {
+   "section": "Brakes",
+   "corsa": 0.0983,
+   "3series": 0.0688,
+   "ratio": 1.43,
+   "diff": 0.0295,
+   "share_of_summed_diff": 0.081
+  },
+  {
+   "section": "Steering",
+   "corsa": 0.0324,
+   "3series": 0.0055,
+   "ratio": 5.88,
+   "diff": 0.0269,
+   "share_of_summed_diff": 0.074
+  },
+  {
+   "section": "Noise, emissions and leaks",
+   "corsa": 0.0534,
+   "3series": 0.0296,
+   "ratio": 1.81,
+   "diff": 0.0238,
+   "share_of_summed_diff": 0.066
+  },
+  {
+   "section": "Tyres",
+   "corsa": 0.0831,
+   "3series": 0.0768,
+   "ratio": 1.08,
+   "diff": 0.0063,
+   "share_of_summed_diff": 0.017
+  },
+  {
+   "section": "Seat belt installation check",
+   "corsa": 0.0001,
+   "3series": 0.0,
+   "ratio": 2.2,
+   "diff": 0.0001,
+   "share_of_summed_diff": 0.0
+  },
+  {
+   "section": "Speedometer and speed limiter",
+   "corsa": 0.0001,
+   "3series": 0.0,
+   "ratio": null,
+   "diff": 0.0001,
+   "share_of_summed_diff": 0.0
+  },
+  {
+   "section": "Buses and coaches supplementary tests",
+   "corsa": 0.0,
+   "3series": 0.0,
+   "ratio": 0.56,
+   "diff": -0.0,
+   "share_of_summed_diff": -0.0
+  },
+  {
+   "section": "Seat belts and supplementary restraint systems",
+   "corsa": 0.0114,
+   "3series": 0.0114,
+   "ratio": 1.0,
+   "diff": -0.0,
+   "share_of_summed_diff": -0.0
+  },
+  {
+   "section": "Identification of the vehicle",
+   "corsa": 0.0049,
+   "3series": 0.0054,
+   "ratio": 0.9,
+   "diff": -0.0006,
+   "share_of_summed_diff": -0.002
+  },
+  {
+   "section": "Road Wheels",
+   "corsa": 0.0039,
+   "3series": 0.0116,
+   "ratio": 0.33,
+   "diff": -0.0077,
+   "share_of_summed_diff": -0.021
+  }
+ ]
+}

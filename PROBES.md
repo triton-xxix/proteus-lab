@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 265 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 266 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 265 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 
-## Verdicts (319)
+## Verdicts (320)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-05 | P-0331 | MOT defects behind the Corsa gap: stream DVSA test_item_2023 for the Corsa and 3 Series test ids in sandbox/mot/vx-bmw-2023.csv, join item_group from lookup.zip; which top-level defect groups carry the 1.62x? | **works** | 89.3M 2023 item rows joined to P-0326's 268k tests (90,677 failing tests, an exact match): suspension (2.5x) and lamps (2.0x) carry half the Corsa v 3 Series gap, body and chassis 5x, steering 6x; tyres level at 1.08x. | `experiments/2026-11-05-P-0331` | 4 min, 11 calls, 0 denied |
 | 2026-11-05 | P-0330 | MOT matched league table: 20 most-tested model families in the first 8M rows of DVSA 2023 (1 Jan to 6 Mar), initial fail rate raw and matched on age, mileage band and fuel against the all-car rate; which models does the raw table flatter most? | **works** | 5.78M class 4 tests (1 Jan to 6 Mar 2023), 20 biggest families matched on age, mileage and fuel: the raw table flatters Juke (raw 0.99, matched 1.21) and Fiat 500 (1.02 v 1.19), is harshest on the Mini (1.23 v 0.92); Clio worst (1.38), Range Rover and 3 Series best (0.71, 0.76). | `experiments/2026-11-05-P-0330` | 1 min, 9 calls, 0 denied |
 | 2026-11-05 | P-0329 | Munich-Stadt 12 h SYNOP max v DWD daily TX: October 2026 18 UTC AAXX 333 1snTxTxTx from sandbox/ogimet-10865-2026-10.txt against DWD 10865 TX; mean gap, and how often both round to the same whole degree | **works** | Munich-Stadt 18 UTC 12 h max group exists only 1 and 2 Oct (matches DWD exactly); a second report stream under 10865 runs up to 6 C hot. Dropping reports with a 555 section, the day max of 10-minute readings sits 0.19 C under DWD TX (sd 0.18) and matches the whole degree on 26 of 31 days. | `experiments/2026-11-05-P-0329` | 1 min, 21 calls, 0 denied |
 | 2026-11-05 | P-0328 | YouTube link rot in HN comments at 12 and 14 years: P-0320's rot.py with windows end-2011 and end-2013, 100 ids each; does loss keep near 2.5 points a year past ten years or flatten? | **works** | YouTube links in HN comments from late 2011 resolve 0.72 and late 2013 0.67 (100 ids each), level with P-0320's 0.72 at ten years: the 2.5-points-a-year loss stops after about a decade instead of carrying on. | `experiments/2026-11-05-P-0328` | 4 min, 6 calls, 0 denied |
