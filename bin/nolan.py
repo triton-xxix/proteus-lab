@@ -353,7 +353,7 @@ def ingest_passing(reg, f, p, day, warns):
     f["status"] = "built" if built else "researched"
     save(reg)
     unverified = len(child.get("unverified") or [])
-    live = sum(1 for x in reg["films"] if x["status"] in ("built", "live")) + 1
+    live = sum(1 for x in reg["films"] if x["status"] in ("built", "live"))
     line = ("- Nolan 5f: %s (%s, %s): child %d fetches (%d failed), %d searches; check PASS (%d warn, %d unverified); "
             "%d stills kept%s%s; films/%s.json written; %s. Live %d of %d." % (
                 f["slug"], f["title"], f["year"], child.get("fetches", 0), len(child.get("fetch_failures") or []), child.get("searches", 0),
