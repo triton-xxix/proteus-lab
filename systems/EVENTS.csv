@@ -109,3 +109,16 @@ date,market,strategy,event,price,logged_utc
 2026-11-04,EEM,ibs_gated,sell_signal,61.6200,2026-11-05T17:07:37Z
 2026-11-04,EWU,ibs_gated,buy_open,48.6300,2026-11-05T17:07:37Z
 2026-11-04,EWU,ibs_gated,sell_signal,48.9300,2026-11-05T17:07:37Z
+2026-11-05,SPY,rsi5_simple,sell_open,765.4700,2026-11-05T23:25:56Z
+2026-11-05,SPY,rsi5_simple,buy_signal,733.0000,2026-11-05T23:25:56Z
+2026-11-05,DIA,ibs_gated,sell_open,535.9500,2026-11-05T23:25:56Z
+2026-11-05,DIA,ibs_gated,buy_signal,514.2700,2026-11-05T23:25:56Z
+2026-11-05,IWM,ibs_gated,sell_open,283.7500,2026-11-05T23:25:56Z
+2026-11-05,IWM,ibs_gated,buy_signal,270.9800,2026-11-05T23:25:56Z
+2026-11-05,EFA,ibs_gated,sell_open,105.0300,2026-11-05T23:25:56Z
+2026-11-05,EFA,ibs_gated,buy_signal,102.7000,2026-11-05T23:25:56Z
+2026-11-05,EEM,ibs_gated,sell_open,60.5700,2026-11-05T23:25:56Z
+2026-11-05,EEM,ibs_gated,buy_signal,58.0500,2026-11-05T23:25:56Z
+2026-11-05,EWU,ibs_gated,sell_open,48.8800,2026-11-05T23:25:56Z
+2026-11-05,EWU,ibs_gated,buy_signal,47.8900,2026-11-05T23:25:56Z
+2026-11-05,EWG,ibs_gated,buy_signal,42.7500,2026-11-05T23:25:56Z
