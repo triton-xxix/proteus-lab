@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip Table</title>
+<style>
+:root{--bg:#f6f4ef;--fg:#1d1d1b;--mut:#6b6a66;--line:#d9d5cc;--card:#fff;--acc:#1f6f4a;--warn:#a23b2a}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141513;--fg:#ecebe6;--mut:#9a9890;--line:#2e302c;--card:#1d1f1c;--acc:#4fbf8a;--warn:#e27a68}}
+:root[data-theme="dark"]{--bg:#141513;--fg:#ecebe6;--mut:#9a9890;--line:#2e302c;--card:#1d1f1c;--acc:#4fbf8a;--warn:#e27a68}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,-apple-system,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:0 0 4px}
+.mut{color:var(--mut);font-size:.9rem}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+button{font:inherit;padding:8px 12px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;cursor:pointer}
+button.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+button:disabled{opacity:.4;cursor:default}
+input{font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);width:7em}
+.p{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0}
+.p.turn{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc) inset}
+.p.out{opacity:.5}
+.p .top{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.pots .p{border-style:dashed}
+.tag{font-size:.8rem;padding:1px 6px;border-radius:6px;border:1px solid var(--line);color:var(--mut)}
+.warn{color:var(--warn)}
+</style>
+</head>
+<body>
+<main>
+<h1>Chip Table</h1>
+<div class="mut">A chip counter for a home poker game. Works offline; the table is kept in this browser.</div>
+
+<section id="setup" class="p">
+  <div class="row"><input id="nm" placeholder="Player name" style="width:12em"><input id="st" type="number" min="1" value="1000" aria-label="Starting stack"><button id="add">Add player</button></div>
+  <div class="row"><label>Small blind <input id="sb" type="number" min="0" value="5"></label><label>Big blind <input id="bb" type="number" min="0" value="10"></label></div>
+</section>
+
+<div class="row">
+  <button id="deal" class="pri">New hand</button>
+  <button id="street">Next street</button>
+  <button id="showdown">Showdown</button>
+  <button id="undo">Undo</button>
+  <span class="mut" id="info"></span>
+</div>
+
+<div id="players"></div>
+<h2 style="font-size:1.1rem">Pots</h2>
+<div id="pots" class="pots"></div>
+<div class="row"><button id="reset" class="mut">Clear table</button></div>
+</main>
+
+<script id="core">
+// Pure logic, also loaded by test.js under Node.
+function sidePots(players) {
+  // players: [{committed, folded}] in seat order. Returns [{amount, eligible:[seat idx]}].
+  const live = players.map((p, i) => ({ c: p.committed, i, f: p.folded }));
+  const caps = [...new Set(live.filter(p => !p.f && p.c > 0).map(p => p.c))].sort((a, b) => a - b);
+  const pots = [];
+  let prev = 0;
+  caps.forEach((cap, k) => {
+    let amount = 0;
+    for (const p of live) amount += Math.max(0, Math.min(p.c, cap) - Math.min(p.c, prev));
+    if (k === caps.length - 1) for (const p of live) amount += Math.max(0, p.c - cap); // folded chips above every live cap
+    const eligible = live.filter(p => !p.f && p.c >= cap).map(p => p.i);
+    const last = pots[pots.length - 1];
+    if (last && last.eligible.join() === eligible.join()) last.amount += amount; else pots.push({ amount, eligible });
+    prev = cap;
+  });
+  if (!caps.length) {
+    const amount = live.reduce((s, p) => s + p.c, 0);
+    if (amount) pots.push({ amount, eligible: [] });
+  }
+  return pots;
+}
+function splitPot(amount, winners, button, n) {
+  // Equal split; odd chips go one at a time to winners in seat order starting left of the button.
+  const share = Math.floor(amount / winners.length);
+  const out = {};
+  winners.forEach(w => out[w] = share);
+  let rest = amount - share * winners.length;
+  const order = [...winners].sort((a, b) => ((a - button - 1 + n) % n) - ((b - button - 1 + n) % n));
+  for (let j = 0; rest > 0; j++, rest--) out[order[j % order.length]] += 1;
+  return out;
+}
+function takeMainPot(players) {
+  // Remove the main pot's chips from every contribution, so sidePots() then lists the rest.
+  const pot = sidePots(players)[0]; if (!pot) return 0;
+  const cap = pot.eligible.length ? Math.min(...pot.eligible.map(e => players[e].committed)) : Infinity;
+  let left = pot.amount;
+  players.forEach(p => { const t = Math.min(p.committed, cap); p.committed -= t; left -= t; });
+  if (left > 0) players.forEach(p => { const t = Math.min(p.committed, left); p.committed -= t; left -= t; });
+  return pot.amount;
+}
+if (typeof module !== 'undefined') module.exports = { sidePots, splitPot, takeMainPot };
+</script>
+
+<script>
+const KEY = 'chip-table-v1';
+let S = { players: [], sb: 5, bb: 10, button: -1, turn: -1, toCall: 0, phase: 'idle' };
+const hist = [];
+const $ = id => document.getElementById(id);
+function load(){ try { const t = localStorage.getItem(KEY); if (t) S = JSON.parse(t); } catch (e) {} }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+function snap(){ hist.push(JSON.stringify(S)); if (hist.length > 200) hist.shift(); }
+function act(fn){ snap(); fn(); after(); }
+function after(){ S.toCall = Math.max(0, ...S.players.map(p => p.bet)); save(); render(); }
+const activeIdx = () => S.players.map((p, i) => i).filter(i => !S.players[i].folded && !S.players[i].allin && S.players[i].inHand);
+function nextTurn(from){
+  const n = S.players.length;
+  for (let k = 1; k <= n; k++) { const i = (from + k) % n; const p = S.players[i]; if (p.inHand && !p.folded && !p.allin) return i; }
+  return -1;
+}
+function put(p, amt){ amt = Math.min(amt, p.stack); p.stack -= amt; p.bet += amt; p.committed += amt; if (p.stack === 0) p.allin = true; }
+
+$('add').onclick = () => { const name = $('nm').value.trim() || ('Player ' + (S.players.length + 1)); const stack = Math.max(1, +$('st').value || 0);
+  act(() => S.players.push({ name, stack, bet: 0, committed: 0, folded: false, allin: false, inHand: false })); $('nm').value = ''; };
+$('sb').onchange = () => act(() => S.sb = Math.max(0, +$('sb').value || 0));
+$('bb').onchange = () => act(() => S.bb = Math.max(0, +$('bb').value || 0));
+$('deal').onclick = () => act(() => {
+  const seated = S.players.map((p, i) => i).filter(i => S.players[i].stack > 0);
+  if (seated.length < 2) return;
+  S.players.forEach(p => { p.bet = 0; p.committed = 0; p.folded = false; p.allin = false; p.inHand = p.stack > 0; });
+  const n = S.players.length;
+  do { S.button = (S.button + 1) % n; } while (!S.players[S.button].inHand);
+  const heads = seated.length === 2;
+  const sbI = heads ? S.button : nextTurn(S.button);
+  const bbI = nextTurn(sbI);
+  put(S.players[sbI], S.sb); put(S.players[bbI], S.bb);
+  S.turn = nextTurn(bbI); S.phase = 'betting';
+});
+$('street').onclick = () => act(() => { S.players.forEach(p => p.bet = 0); S.turn = nextTurn(S.button); });
+$('showdown').onclick = () => act(() => { S.players.forEach(p => p.bet = 0); S.phase = 'showdown'; S.turn = -1; });
+$('undo').onclick = () => { if (hist.length) { S = JSON.parse(hist.pop()); save(); render(); } };
+$('reset').onclick = () => { if (confirm('Clear every player and stack?')) { snap(); S = { players: [], sb: S.sb, bb: S.bb, button: -1, turn: -1, toCall: 0, phase: 'idle' }; save(); render(); } };
+
+function doAction(i, kind, amt){
+  act(() => {
+    const p = S.players[i]; const toCall = Math.max(0, ...S.players.map(q => q.bet));
+    if (kind === 'fold') p.folded = true;
+    if (kind === 'call') put(p, toCall - p.bet);
+    if (kind === 'raise') put(p, Math.max(toCall - p.bet, (+amt || 0) - p.bet));
+    if (kind === 'allin') put(p, p.stack);
+    S.turn = nextTurn(i);
+    const live = S.players.filter(q => q.inHand && !q.folded);
+    if (live.length === 1) { S.phase = 'showdown'; S.turn = -1; }
+  });
+}
+function award(potIdx, winners){
+  act(() => {
+    const pots = sidePots(S.players);
+    const pot = pots[potIdx]; if (potIdx !== 0 || !pot || !winners.length) return;
+    const got = splitPot(pot.amount, winners, S.button, S.players.length);
+    for (const w in got) S.players[w].stack += got[w];
+    takeMainPot(S.players);
+    if (!sidePots(S.players).length) { S.phase = 'idle'; S.players.forEach(p => { p.inHand = false; p.bet = 0; }); }
+  });
+}
+
+function render(){
+  $('sb').value = S.sb; $('bb').value = S.bb;
+  const toCall = Math.max(0, ...S.players.map(p => p.bet), 0);
+  $('info').textContent = S.phase === 'betting' ? 'To call: ' + toCall : S.phase === 'showdown' ? 'Pick the winner of each pot' : '';
+  $('undo').disabled = !hist.length;
+  const box = $('players'); box.innerHTML = '';
+  S.players.forEach((p, i) => {
+    const d = document.createElement('div');
+    d.className = 'p' + (i === S.turn ? ' turn' : '') + (p.folded || !p.inHand && S.phase !== 'idle' ? ' out' : '');
+    const tags = [i === S.button ? 'button' : '', p.allin ? 'all in' : '', p.folded ? 'folded' : ''].filter(Boolean).map(t => `<span class="tag">${t}</span>`).join(' ');
+    d.innerHTML = `<div class="top"><strong></strong><span>${p.stack} <span class="mut">stack</span> · ${p.bet} <span class="mut">bet</span> ${tags}</span></div>`;
+    d.querySelector('strong').textContent = p.name;
+    if (i === S.turn && S.phase === 'betting') {
+      const r = document.createElement('div'); r.className = 'row';
+      const owe = toCall - p.bet;
+      r.innerHTML = `<button data-k="fold">Fold</button><button data-k="call">${owe > 0 ? 'Call ' + Math.min(owe, p.stack) : 'Check'}</button><input type="number" min="0" placeholder="Raise to" aria-label="Raise to"><button data-k="raise">Bet / raise</button><button data-k="allin">All in</button>`;
+      r.querySelectorAll('button').forEach(b => b.onclick = () => doAction(i, b.dataset.k, r.querySelector('input').value));
+      d.appendChild(r);
+    }
+    box.appendChild(d);
+  });
+  const pots = sidePots(S.players); const pb = $('pots'); pb.innerHTML = pots.length ? '' : '<div class="mut">No chips in the middle.</div>';
+  pots.forEach((pot, k) => {
+    const d = document.createElement('div'); d.className = 'p';
+    d.innerHTML = `<div class="top"><strong>${k === 0 ? 'Main pot' : 'Side pot ' + k}</strong><span>${pot.amount}</span></div><div class="mut">Eligible: </div>`;
+    d.querySelector('.mut').textContent += pot.eligible.map(e => S.players[e].name).join(', ') || 'nobody (uncalled)';
+    // Pots are awarded main pot first: award() strips the lowest layer of contributions.
+    if (S.phase === 'showdown' && pot.eligible.length && k === 0) {
+      const r = document.createElement('div'); r.className = 'row';
+      pot.eligible.forEach(e => { const l = document.createElement('label'); l.innerHTML = '<input type="checkbox" style="width:auto"> '; l.querySelector('input').value = e; l.append(S.players[e].name); r.appendChild(l); });
+      const b = document.createElement('button'); b.className = 'pri'; b.textContent = 'Award';
+      b.onclick = () => award(k, [...r.querySelectorAll('input:checked')].map(x => +x.value));
+      if (pot.eligible.length === 1) { b.textContent = 'Award to ' + S.players[pot.eligible[0]].name; b.onclick = () => award(k, pot.eligible); }
+      r.appendChild(b); d.appendChild(r);
+    }
+    pb.appendChild(d);
+  });
+}
+load(); render();
+</script>
+</body>
+</html>
