@@ -739,6 +739,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-11-02, harvested: 14 judged, 12 kept (H-0497 to H-0510), 3 queued as probes (P-0299, P-0300, P-0301). Register: `field-notes/HARVEST.md`.
 - 2026-11-03, harvested: 14 judged, 9 kept (H-0511 to H-0524), 2 queued as probes (P-0312, P-0313). Register: `field-notes/HARVEST.md`.
 - 2026-11-05, harvested: 14 judged, 6 kept (H-0525 to H-0538), 1 queued as probes (P-0326). Register: `field-notes/HARVEST.md`.
+- **2026-11-05 · Getting to Philosophy, the Wikipedia first-link claim, walked on 100 random articles** (ran): 48 reached Philosophy (median 16 hops), 41 looped, 11 dead ends; 36 loops are one ring, Knowledge > Belief > Attitude (psychology) > Psychology > Mind > Thought > Cognition > Knowledge, fed by Science. Wildcard W45, `experiments/2026-11-05-philosophy/`.
 
 ## Rule
 
