@@ -1,5 +1,5 @@
 {
- "next_id": 330,
+ "next_id": 331,
  "items": [
   {
    "id": "P-0001",
@@ -8140,6 +8140,28 @@
    ],
    "minutes": 1,
    "calls": 21,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0330",
+   "title": "MOT matched league table: 20 most-tested model families in the first 8M rows of DVSA 2023 (1 Jan to 6 Mar), initial fail rate raw and matched on age, mileage band and fuel against the all-car rate; which models does the raw table flatter most?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-05",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-05T17:30:30+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-05T17:32:15+0000",
+   "note": "5.78M class 4 tests (1 Jan to 6 Mar 2023), 20 biggest families matched on age, mileage and fuel: the raw table flatters Juke (raw 0.99, matched 1.21) and Fiat 500 (1.02 v 1.19), is harshest on the Mini (1.23 v 0.92); Clio worst (1.38), Range Rover and 3 Series best (0.71, 0.76).",
+   "artefacts": [
+    "experiments/2026-11-05-P-0330"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false
   }
