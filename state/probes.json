@@ -1,5 +1,5 @@
 {
- "next_id": 329,
+ "next_id": 330,
  "items": [
   {
    "id": "P-0001",
@@ -8118,6 +8118,28 @@
    ],
    "minutes": 4,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0329",
+   "title": "Munich-Stadt 12 h SYNOP max v DWD daily TX: October 2026 18 UTC AAXX 333 1snTxTxTx from sandbox/ogimet-10865-2026-10.txt against DWD 10865 TX; mean gap, and how often both round to the same whole degree",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-05",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-05T17:28:42+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-05T17:30:08+0000",
+   "note": "Munich-Stadt 18 UTC 12 h max group exists only 1 and 2 Oct (matches DWD exactly); a second report stream under 10865 runs up to 6 C hot. Dropping reports with a 555 section, the day max of 10-minute readings sits 0.19 C under DWD TX (sd 0.18) and matches the whole degree on 26 of 31 days.",
+   "artefacts": [
+    "experiments/2026-11-05-P-0329"
+   ],
+   "minutes": 1,
+   "calls": 21,
    "denied": [],
    "luke": false
   }

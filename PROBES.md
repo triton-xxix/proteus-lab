@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 263 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 264 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (7 open)
 
@@ -21,10 +21,11 @@ Verdicts so far: 263 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 
-## Verdicts (317)
+## Verdicts (318)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-05 | P-0329 | Munich-Stadt 12 h SYNOP max v DWD daily TX: October 2026 18 UTC AAXX 333 1snTxTxTx from sandbox/ogimet-10865-2026-10.txt against DWD 10865 TX; mean gap, and how often both round to the same whole degree | **works** | Munich-Stadt 18 UTC 12 h max group exists only 1 and 2 Oct (matches DWD exactly); a second report stream under 10865 runs up to 6 C hot. Dropping reports with a 555 section, the day max of 10-minute readings sits 0.19 C under DWD TX (sd 0.18) and matches the whole degree on 26 of 31 days. | `experiments/2026-11-05-P-0329` | 1 min, 21 calls, 0 denied |
 | 2026-11-05 | P-0328 | YouTube link rot in HN comments at 12 and 14 years: P-0320's rot.py with windows end-2011 and end-2013, 100 ids each; does loss keep near 2.5 points a year past ten years or flatten? | **works** | YouTube links in HN comments from late 2011 resolve 0.72 and late 2013 0.67 (100 ids each), level with P-0320's 0.72 at ten years: the 2.5-points-a-year loss stops after about a decade instead of carrying on. | `experiments/2026-11-05-P-0328` | 4 min, 6 calls, 0 denied |
 | 2026-11-05 | P-0327 | Munich icon_seamless by lead: which single model (ICON-D2, ICON-EU, ICON global) does it serve at previous_day1 and day2, and does the switch line up with P-0302's airport bias drift from +0.13 to +0.6? | **works** | Open-Meteo icon_seamless at Munich airport is ICON-D2 at leads 0 and 1 and ICON-EU at leads 2 and 3 (744 of 744 hours each, 6 Oct to 5 Nov); D2 serves no day-2 runs. The switch moves the mean daily high only +0.05 C, so it does not explain P-0302's bias drift. | `experiments/2026-11-05-P-0327` | 0 min, 8 calls, 0 denied |
 | 2026-11-05 | P-0326 | MOT cohort fail rates: does a Corsa fail about 60 percent more than a 3 Series once age, mileage and fuel are matched? | **works** | Claim holds on DVSA 2023 open data (first 8M rows, Jan to Mar): matched on age, mileage band and fuel, Corsa fails 1.62x a 3 Series (Mantel-Haenszel; 1.59 to 1.74 by weighting), raw 37.4% v 26.9% is only 1.39x. The zip is Deflate64, read by streaming with inflate64. | `experiments/2026-11-05-P-0326` | 1 min, 15 calls, 0 denied |
