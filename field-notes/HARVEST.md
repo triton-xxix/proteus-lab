@@ -6,14 +6,26 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-538 judged over 37 harvest days, 349 kept, 109 testable, 104 queued as probes, 100 with a probe verdict.
+552 judged over 38 harvest days, 361 kept, 113 testable, 108 queued as probes, 101 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0552 | 2026-11-06 | github | [JosssphZhou/poki: Let AI agents operate a real iPhone. Local MCP server and agent, no jail](https://github.com/JosssphZhou/poki) (intel) | both | tools-for-strangers | no: Needs full Xcode, Rust, Node 24 and a paired iPhone or simul |  |
+| H-0550 | 2026-11-06 | vault | [claude-shorts long to vertical clips](https://www.instagram.com/p/DfMcWLZjz6c/) | mechanism | tools-for-strangers | no: The scoring step needs model answers and no local LLM is ins |  |
+| H-0549 | 2026-11-06 | youtube | [Football statistics - Expected goals - xG - Why Jeff Stelling is wrong!](https://www.youtube.com/watch?v=T4xyXg_f28g) | mechanism | desk:pitch | yes | P-0343 |
+| H-0548 | 2026-11-06 | arxiv | [Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis](https://arxiv.org/abs/2611.08219) | mechanism | mechanism-hunting | no: Needs the trained model, a GPU and the benchmark harness, no |  |
+| H-0546 | 2026-11-06 | hn | [Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)](https://www.linum.ai/field-notes/pjit-21k) | mechanism | tech | no: Running the weights needs a GPU Proteus does not have, and c |  |
+| H-0545 | 2026-11-06 | vault | [concept art to playable scene loop](https://www.instagram.com/p/DfXlI-1AEUh/) | mechanism | tools-for-strangers | no: The source is an Instagram post with no repo, and a meaningf |  |
+| H-0544 | 2026-11-06 | awesome | [arkz-deepak/neurocode (new in awesome-mcp-servers)](https://github.com/arkz-deepak/neurocode) | both | mechanism-hunting | yes | P-0342 |
+| H-0543 | 2026-11-06 | youtube | [2.1 - What Is A Bonding Curve? - The rLoop Network](https://www.youtube.com/watch?v=5x-t-WNgnlM) | mechanism | desk:grinder | yes | P-0341 |
+| H-0542 | 2026-11-06 | arxiv | [The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs an](https://arxiv.org/abs/2611.08428) | mechanism | mechanism-hunting | no: It describes a design pattern around one chat client, with n |  |
+| H-0541 | 2026-11-06 | github | [artemnovitckii/claude-animation-skills: Six Claude Code skills that make animations for re](https://github.com/artemnovitckii/claude-animation-skills) | both | tools-for-strangers | yes | P-0340 |
+| H-0540 | 2026-11-06 | hn | [Claude Code sends your email address to websites](https://github.com/anthropics/claude-code/issues/107757) | mechanism | tech | no: Checking it means running a Claude Code web fetch against a  |  |
+| H-0539 | 2026-11-06 | vault | [ghost-editor talking-head to captioned reel](https://www.instagram.com/p/DfMcWLZjz6c/) | mechanism | tools-for-strangers | no: The repo is only named inside an Instagram post with no URL  |  |
 | H-0535 | 2026-11-05 | vault | [A cheap starter kit used as a qualifier that routes buyers to a private sales call]() (intel) | mechanism | mechanism-hunting | no: Seeing the funnel means paying and booking a call, which nee |  |
-| H-0534 | 2026-11-05 | youtube | [We analysed millions of MOT results #MOT #CarsOfTikTok #UKCars #DataJournalism #caranalyti](https://www.youtube.com/watch?v=zeTGescbQak) | mechanism | open-data | yes | P-0326 |
+| H-0534 | 2026-11-05 | youtube | [We analysed millions of MOT results #MOT #CarsOfTikTok #UKCars #DataJournalism #caranalyti](https://www.youtube.com/watch?v=zeTGescbQak) | mechanism | open-data | yes | P-0326 **works** |
 | H-0533 | 2026-11-05 | arxiv | [SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents](https://arxiv.org/abs/2611.06682) | mechanism | tech | no: No code is linked in the abstract and the benchmarks need mo |  |
 | H-0530 | 2026-11-05 | vault | [Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off]() | mechanism | tools-for-strangers | no: A fair test needs paid video and avatar generation, and the  |  |
 | H-0527 | 2026-11-05 | github | [KKKKhazix/agent-autoloop: 让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。](https://github.com/KKKKhazix/agent-autoloop) | mechanism | tools-for-strangers | no: It needs Node 24, a curl-to-shell installer and a logged-in  |  |
@@ -363,6 +375,156 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0552 JosssphZhou/poki: Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.
+2026-11-06, github, https://github.com/JosssphZhou/poki
+
+- **Mechanism:** A local server on a Mac drives an iPhone or simulator through Apple's device tooling and a native bridge. It takes screenshots, sends taps and keys, and exposes them as MCP tools so an agent can read the screen and act. Screen contents are sent to whichever model service is configured. The standalone agent defaults to a GPT model and keeps a memory of past tasks to repeat them faster.
+- **Claim:** Lets AI agents operate a real iPhone with no jailbreak and no extra hardware, over MCP.
+- **Testable:** no. Needs full Xcode, Rust, Node 24 and a paired iPhone or simulator driven by a model, and the agent half needs a login; physical-phone support is verified only on the Chinese interface. Needs: A paired iPhone or simulator session, Xcode, Rust and Node 24, and a model..
+- **Idea on its own:** sound. Screenshot, reason, tap is a working method for UI testing, and the risks are the screen being sent to a model and unrestricted actions.
+- **How it would be done:** On the iOS simulator, expose screenshot and tap tools to a model over MCP and give it a task such as opening Settings and reading the version. Log every action and require confirmation for sends and payments. A person is needed for anything involving a real account or a physical device pairing.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** poki https://github.com/JosssphZhou/poki (The MCP server under test.); Xcode https://developer.apple.com/xcode/ (Simulator and device tooling it builds on.)
+- **Missing:** A permission and confirmation layer for actions that send or pay.
+- **Field Notes line:** Poki hands an agent an iPhone through MCP taps and screenshots with no jailbreak; the same screen-agent method is what phone-farm tooling uses and platforms detect.
+
+### H-0550 claude-shorts long to vertical clips
+2026-11-06, vault, https://www.instagram.com/p/DfMcWLZjz6c/
+
+- **Mechanism:** A long video is transcribed, split into candidate segments, and each segment is scored (hook strength, self-contained story, pace) by a language model. The top segments are cut, reframed to 9:16 with face tracking or a centred crop and captioned. Scoring is the only judgement step; the cutting and reframing are ffmpeg and a face detector.
+- **Claim:** Turns long recordings into vertical short clips by scoring segments for repurposing.
+- **Testable:** no. The scoring step needs model answers and no local LLM is installed; the repo itself is only named in an Instagram post with no URL. Needs: A language model for scoring and the repo URL..
+- **Idea on its own:** sound. Segment scoring on a transcript is a standard, checkable approach to clipping.
+- **How it would be done:** Transcribe the source and split by sentence boundaries into 30 to 60 second windows. Have a model score each window on a fixed rubric and keep the top few. Cut with ffmpeg, reframe to vertical with a face-detection crop and caption in HyperFrames. To test the scorer, compare its picks with the clips a person would choose from the same video.
+- **Stack already covers:** HyperFrames (video compose, captions, render), local transcription, Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org/ (Cutting and reframing.); MediaPipe face detection https://github.com/google-ai-edge/mediapipe (Free face tracking for the vertical crop.)
+- **Missing:** A segment scorer validated against human clip choices.
+- **Field Notes line:** Long video to vertical clips works by scoring transcript segments for hook and self-containment, then cutting and reframing; the scorer is the part that decides quality.
+
+### H-0549 Football statistics - Expected goals - xG - Why Jeff Stelling is wrong!
+2026-11-06, youtube, https://www.youtube.com/watch?v=T4xyXg_f28g
+
+- **Mechanism:** Expected goals gives each shot a probability of scoring, from features such as location and shot type, and a match's xG is the sum. The presenter argues a scoreline like 3-1 can misstate how a match played out, so shot quality is a better signal for forecasting and in-play trading than goals. Where the probabilities come from is not shown in the part of the transcript supplied.
+- **Claim:** Expected goals describes a match more accurately than the scoreline and is the key metric for forecasting and trading football.
+- **Testable:** yes. Does a team's rolling average of shots on target, from football-data CSVs, predict next-match goals better (lower RMSE) than rolling average goals? Queued as P-0343.
+- **Idea on its own:** needs-a-run. The claim is well known, but whether a crude proxy beats goals on our league data is a measurable question.
+- **How it would be done:** Load several seasons of football-data results with shots and shots on target. For each team build rolling five and ten match averages of goals, shots and shots on target. Fit a simple Poisson regression for next-match goals with each feature set and compare out-of-sample RMSE and log loss. If the proxy wins, test it as an input to the Dixon-Coles rates on the Pitch desk. Real xG needs shot-level data, which football-data lacks and a feed would have to supply.
+- **Stack already covers:** football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** Understat data via understatapi https://github.com/amosbastian/understat (Free shot-level xG for the top leagues, to compare with the proxy.)
+- **Missing:** Shot-location data for the lower leagues.
+- **Field Notes line:** Shot quality predicts future goals better than past goals, says a Bet Angel video; I am testing a shots-on-target proxy on football-data.
+
+### H-0548 Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis
+2026-11-06, arxiv, https://arxiv.org/abs/2611.08219
+
+- **Mechanism:** The framework starts from real occupational descriptions, finds workflow evidence in web text and collects real multi-format files such as spreadsheets and documents. From 10k candidates it keeps 4k tasks, each with a rubric for the deliverable. A 4B model is trained by supervised fine-tuning and then by reinforcement learning scored against those rubrics.
+- **Claim:** Agent-R2-4B, trained on 4k tasks, beats Qwen3-235B-A22B-Thinking on GDPval (51.0% vs 48.0%) and OfficeQA (14.8% vs 13.8%).
+- **Testable:** no. Needs the trained model, a GPU and the benchmark harness, none of which are available keyless here. Needs: The released model or data, and GPU compute..
+- **Idea on its own:** needs-a-run. Rubric-scored real-file tasks are a sensible data design, but a 3-point margin on one benchmark is thin.
+- **How it would be done:** Fetch the released task set if there is one and score a current model on a sample of fifty tasks with the supplied rubrics. Check how often the rubric agrees with a human reading of the same deliverable. The rubric-grader step is where a person would be needed to spot-check.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Agent-R2 paper https://arxiv.org/abs/2611.08219 (Source for data and model links.)
+- **Missing:** The training data release, if any.
+- **Field Notes line:** Training a 4B model on 4,000 real-file office tasks with rubric rewards beat a 235B model by three points on GDPval; the gap is small and self-reported.
+
+### H-0546 Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)
+2026-11-06, hn, https://www.linum.ai/field-notes/pjit-21k
+
+- **Mechanism:** Pyramid-JiT is a pixel-space diffusion transformer with no VAE, so the model learns its own compression. The authors say this converges 11x faster than their latent version and allows 4x more aggressive token reduction in attention. A text-to-image model was trained on this for about $20K and released as Apache 2.0 weights.
+- **Claim:** A decent text-to-image model trained for roughly $20K with pixel-space diffusion, 11x faster convergence than latent diffusion.
+- **Testable:** no. Running the weights needs a GPU Proteus does not have, and commenters report the usual smoothing and mangled limbs. Needs: A GPU and the weights; Gemini already covers stills..
+- **Idea on its own:** sound. Removing the autoencoder stage is a coherent efficiency claim with a published cost figure.
+- **How it would be done:** Download the weights and run a fixed set of twenty prompts on a rented or borrowed GPU, then score outputs against Gemini stills for prompt match and anatomy faults. Record time and memory per image. A person would judge the images, since no script scores aesthetic quality well.
+- **Stack already covers:** Gemini (stills)
+- **To fetch:** Linum field notes https://www.linum.ai/field-notes/pjit-21k (Method write-up and weights link.)
+- **Missing:** A GPU to run it.
+- **Field Notes line:** A two-person lab trained a text-to-image model for about $20K by dropping the VAE and diffusing in pixel space; weights are open, outputs are still smooth and odd.
+
+### H-0545 concept art to playable scene loop
+2026-11-06, vault, https://www.instagram.com/p/DfXlI-1AEUh/
+
+- **Mechanism:** A single concept image is given to coding agents as the spec. They write a playable scene to match, run it, and a human only reports what is visibly broken; those reports feed the next agent pass. The loop depends on screenshots or playtest output coming back to the agent so it can compare against the image.
+- **Claim:** A game or scene built in 24 hours from one image by Claude Code agents, with the human only reporting bugs.
+- **Testable:** no. The source is an Instagram post with no repo, and a meaningful run needs many model-driven build iterations, not a keyless script. Needs: The actual pipeline and a long agent run budget..
+- **Idea on its own:** sound. Reference image, automated render, visual diff and a bug-report loop is the same method site builders already use.
+- **How it would be done:** Write the target image into a spec file and have an agent build a first version. Render it headlessly, capture screenshots, and have a second agent compare them with the target and list differences. Loop until the differences are below a set count, then hand the remaining list to a person. The same method works for a landing page from a design comp, with Playwright screenshots as the feedback.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills)
+- **To fetch:** Playwright https://playwright.dev/ (Headless screenshots to feed back to the agent.)
+- **Missing:** A visual-difference check that reliably catches what a person would flag.
+- **Field Notes line:** An image-in, playable-scene-out loop where agents build and a human only reports bugs; the vault says the pipeline transfers to site builds.
+
+### H-0544 arkz-deepak/neurocode (new in awesome-mcp-servers)
+2026-11-06, awesome, https://github.com/arkz-deepak/neurocode
+
+- **Mechanism:** Tree-sitter parses a repository and NetworkX builds a code graph. The tool takes the k-hop neighbourhood around a suspected fault, then solves a 0/1 knapsack to choose the most relevant syntax subtrees under a token budget of about 1,200. That bounded slice goes to a small local model that emits one SEARCH/REPLACE patch. The slicing is deterministic and needs no model; the repair step needs a local model.
+- **Claim:** Lets 1.5B-14B local models fix bugs on 4GB GPUs: 9.5% resolved on SWE-bench Lite, 100% recall on RepoBench-R at 428 tokens.
+- **Testable:** yes. Does the slicer alone, run on a public Python repo, keep its output under 1,200 tokens and finish in under a second, as the README says (0.62 ms)? Queued as P-0342.
+- **Idea on its own:** needs-a-run. Budgeted graph slicing is plausible, but a 9.5% resolve rate and zero-star repo mean the headline numbers are unverified.
+- **How it would be done:** Install the PyPI package or clone the repo into the sandbox. Point its slicer at a mid-sized public Python repo with a known bug location and record token count and latency over a few dozen files. Compare with a plain BM25 file pick on the same targets. The patching half needs a local model, which is not installed, so it stays unrun.
+- **To fetch:** neurocode https://github.com/arkz-deepak/neurocode (The slicer under test.); tree-sitter https://tree-sitter.github.io/tree-sitter/ (Parser behind the code graph.); NetworkX https://networkx.org/ (Graph and reachability computation.)
+- **Missing:** A local code model to run the repair half.
+- **Field Notes line:** NeuroCode picks code for a small model with a knapsack over a code graph; the 0.62 ms slicing claim can be checked without any model.
+
+### H-0543 2.1 - What Is A Bonding Curve? - The rLoop Network
+2026-11-06, youtube, https://www.youtube.com/watch?v=5x-t-WNgnlM
+
+- **Mechanism:** A bonding curve is a smart contract that mints and burns a project token against a reserve token, with price set by a function of current supply. Here the price grows by a fixed percentage each time supply doubles, from a logarithm-based equation attributed to Wilson Lao, so early buyers pay less and sellers get back more as supply rises. The contract is the market maker, so there is no order book or issuer.
+- **Claim:** Price rises 25% per supply doubling in the example curve, rewarding early buyers who stake on a project.
+- **Testable:** yes. Does a curve built from the described rule give a price ratio of 1.25 per supply doubling, and how does its early-buyer return compare with a constant-product curve of the type memecoin launchpads use? Queued as P-0341.
+- **Idea on its own:** sound. The mechanism is simple arithmetic and explains why early buyers on launchpads carry an inbuilt advantage.
+- **How it would be done:** Implement both price functions in Python from the formula in the video and the standard x*y=k form. Simulate buy sequences of equal size, then a sell at various supply levels, and record the return by entry order. Compare with the Grinder's paper-trade entries by launch age to see whether its losses match the curve's maths. No contract needs to be deployed.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **Field Notes line:** A bonding curve prices a token by supply alone; I am coding the 25%-per-doubling version beside the constant-product kind memecoin launchpads use, to see who gets paid.
+
+### H-0542 The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI
+2026-11-06, arxiv, https://arxiv.org/abs/2611.08428
+
+- **Mechanism:** Meta access gives a chat assistant a structured, permissioned view of the client's own state (settings, summaries, conversations, personas) in rising levels: tutoring, read of metadata, retrieval, confirmed mutation, full orchestration. The prototype builds a bounded context from summaries and relevant messages and links references back to conversations. Changes are confirmed and reversible, and the paper flags that an agent able to edit its own settings needs a separate control-plane boundary.
+- **Claim:** A prototype in the Chat AI client lets the assistant find, organise and change the user's own workspace through a ladder of permission levels.
+- **Testable:** no. It describes a design pattern around one chat client, with no standalone artefact to run. Needs: The Chat AI client code, not referenced in the brief..
+- **Idea on its own:** sound. Separating what an agent can read about its host from what it can change is the same control-plane split our hook already enforces.
+- **How it would be done:** Write a typed state description of the application, then expose it through read tools first and mutation tools that require a confirmation step. Log every mutation with an undo. Keep the tools that change the agent's own settings in a separate boundary that only a human can widen. Testing means a handful of scripted prompts, including injected instructions, checked against what the tool layer refused.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A reference implementation of the control-plane boundary.
+- **Field Notes line:** A paper argues chat apps should expose their own settings and history to the assistant in permissioned levels; it matches how our hook guards Proteus editing itself.
+
+### H-0541 artemnovitckii/claude-animation-skills: Six Claude Code skills that make animations for reels, no footage needed: 3D car
+2026-11-06, github, https://github.com/artemnovitckii/claude-animation-skills
+
+- **Mechanism:** Six Claude Code skills each take a short prompt, have Claude write a small JSON spec or three.js scene, then run a build script that renders frames headlessly with Playwright and assembles an mp4 through HyperFrames and ffmpeg. A safe-area check compares overlays with Instagram's crop zones. The two explainer skills add a local text-to-speech and word-timing model of about 1 GB, so captions line up without an API key.
+- **Claim:** Makes reel animations (graph, map route, exploded view, stick figure, 3D explainer) with no footage and no API key, running locally.
+- **Testable:** yes. Does the /graph build script, from a hand-written JSON spec, produce a playable mp4 of at least 5 seconds without any key, and how many minutes did install plus render take? Queued as P-0340.
+- **Idea on its own:** sound. Code-drawn motion graphics rendered headlessly are deterministic and need no footage.
+- **How it would be done:** Clone the repo into the sandbox, install node dependencies into its kit folder and write one graph JSON spec by hand. Run its build script and check the output with ffprobe for duration and resolution. If it works, the same spec format can feed the Sixteen Nights record film, with data from record.json as the points. A designer would still be needed to make the look distinctive rather than the stock black-and-white.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents, local transcription
+- **To fetch:** claude-animation-skills https://github.com/artemnovitckii/claude-animation-skills (The skill pack itself.); Playwright https://playwright.dev/ (Headless frame capture the build scripts rely on.); three.js https://threejs.org/ (3D scenes for map, breakdown and explainer skills.)
+- **Field Notes line:** A new skill pack renders graph, map-route and exploded-view reels from a one-line prompt on your own machine; 444 stars in five days, so we are running the graph one.
+
+### H-0540 Claude Code sends your email address to websites
+2026-11-06, hn, https://github.com/anthropics/claude-code/issues/107757
+
+- **Mechanism:** The issue reports that Claude Code's web search and fetch tools add a User-Agent header of the form session-slug/1 followed by the account's email address. Every site the agent visits therefore receives an identifier tied to a real person in its access logs. The report is a user claim in an issue thread, not a confirmed statement from Anthropic.
+- **Claim:** A user says Claude Code puts their email address in the User-Agent of web requests, and credits it with dozens of phishing emails a day.
+- **Testable:** no. Checking it means running a Claude Code web fetch against a local listener, which spends model calls and needs a login-bound session. Needs: An interactive Claude Code session to trigger a fetch..
+- **Idea on its own:** needs-a-run. It is a cheap observable claim: point a fetch at a local server and read the header.
+- **How it would be done:** Start a local HTTP listener that logs request headers. From an attended Claude Code session, ask it to fetch the local URL, then read the logged User-Agent. Repeat for the search tool if it exposes one. If the email appears, our unattended runs leak the same string to every site they touch, and the fix is a settings or proxy change that a person must decide.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** mitmproxy https://mitmproxy.org/ (Free proxy to inspect outgoing headers from the CLI.)
+- **Field Notes line:** A GitHub issue with 1,500 HN points says Claude Code puts the account email in the web-request User-Agent; unconfirmed, but worth checking our own agents' headers.
+
+### H-0539 ghost-editor talking-head to captioned reel
+2026-11-06, vault, https://www.instagram.com/p/DfMcWLZjz6c/
+
+- **Mechanism:** A Claude Code skill or repo that takes raw talking-head footage, transcribes it, cuts dead air and retakes from word timings, picks the best takes, then burns in captions in one of about 34 styles. The cuts are made by ffmpeg from a transcript-derived edit list; the captions are rendered from the same word timings. It depends on a speech-to-text pass and a deterministic render step.
+- **Claim:** Turns a talking-head recording into a captioned reel with best takes selected and 34 caption styles, from a repo the vault could not verify (109 stars).
+- **Testable:** no. The repo is only named inside an Instagram post with no URL in the brief, so there is nothing to fetch and run tonight. Needs: The actual repo URL, which the brief does not give..
+- **Idea on its own:** sound. Transcript-driven cutting plus word-timed captions is a proven, deterministic pipeline.
+- **How it would be done:** Transcribe the clip locally to get word timings. Mark silences and repeated phrases, score each take (fewest false starts, steady pace) and write an edit decision list. Cut with ffmpeg, then compose captions in HyperFrames from the same timings, choosing a style template. A human would still review the cut and the first three seconds, since no script judges whether a take is actually good.
+- **Stack already covers:** HyperFrames (video compose, captions, render), local transcription, Claude Code with skills and sub-agents
+- **To fetch:** ffmpeg https://ffmpeg.org/ (Does the cutting and concatenation from an edit list.)
+- **Missing:** A take-quality score that agrees with a human editor's pick.
+- **Field Notes line:** A talking-head editor skill picks best takes from the transcript and burns in one of 34 caption styles; the same loop already exists in our HyperFrames stack.
 
 ### H-0535 A cheap starter kit used as a qualifier that routes buyers to a private sales call
 2026-11-05, vault, 
@@ -4455,6 +4617,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0550 | 2026-11-06 | claude-shorts long to vertical clips | open | sound | no |  |
+| H-0545 | 2026-11-06 | concept art to playable scene loop | open | sound | no |  |
+| H-0539 | 2026-11-06 | ghost-editor talking-head to captioned reel | open | sound | no |  |
 | H-0535 | 2026-11-05 | A cheap starter kit used as a qualifier that routes buyers to a private sales call | intel | sound | no |  |
 | H-0530 | 2026-11-05 | Character consistency, AI ads and cloning phases feed the WF-0201 avatar engine bake-off | intel | sound | no |  |
 | H-0525 | 2026-11-05 | How a copy-trade funnel turns one trade into many testimonials: shared timestamp and price | intel | unsound | no |  |
@@ -4571,6 +4736,16 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0322 | 2026-11-06 | [poki](https://github.com/JosssphZhou/poki) | The MCP server under test. | H-0552 (JosssphZhou/poki: Let AI agents operate a real iPh) | shelf |
+| T-0321 | 2026-11-06 | [MediaPipe face detection](https://github.com/google-ai-edge/mediapipe) | Free face tracking for the vertical crop. | H-0550 (claude-shorts long to vertical clips) | shelf |
+| T-0320 | 2026-11-06 | [Understat data via understatapi](https://github.com/amosbastian/understat) | Free shot-level xG for the top leagues, to compare with the proxy. | H-0549 (Football statistics - Expected goals - xG - Why Je) | shelf |
+| T-0319 | 2026-11-06 | [Agent-R2 paper](https://arxiv.org/abs/2611.08219) | Source for data and model links. | H-0548 (Agent-R$^2$: Scaling Agents for Realistic Producti) | shelf |
+| T-0318 | 2026-11-06 | [Linum field notes](https://www.linum.ai/field-notes/pjit-21k) | Method write-up and weights link. | H-0546 (Show HN: A decent text-to-image model trained for ) | shelf |
+| T-0317 | 2026-11-06 | [NetworkX](https://networkx.org/) | Graph and reachability computation. | H-0544 (arkz-deepak/neurocode (new in awesome-mcp-servers)) | shelf |
+| T-0316 | 2026-11-06 | [tree-sitter](https://tree-sitter.github.io/tree-sitter/) | Parser behind the code graph. | H-0544 (arkz-deepak/neurocode (new in awesome-mcp-servers)) | shelf |
+| T-0315 | 2026-11-06 | [neurocode](https://github.com/arkz-deepak/neurocode) | The slicer under test. | H-0544 (arkz-deepak/neurocode (new in awesome-mcp-servers)) | shelf |
+| T-0314 | 2026-11-06 | [claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills) | The skill pack itself. | H-0541 (artemnovitckii/claude-animation-skills: Six Claude) | shelf |
+| T-0313 | 2026-11-06 | [mitmproxy](https://mitmproxy.org/) | Free proxy to inspect outgoing headers from the CLI. | H-0540 (Claude Code sends your email address to websites) | shelf |
 | T-0312 | 2026-11-05 | [DuckDB](https://duckdb.org) | Fast local grouping over multi-million-row CSV files. | H-0534 (We analysed millions of MOT results #MOT #CarsOfTi) | shelf |
 | T-0311 | 2026-11-05 | [DVSA anonymised MOT tests and results](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b66/anonymised-mot-tests-and-results) | Keyless bulk files of UK MOT results. | H-0534 (We analysed millions of MOT results #MOT #CarsOfTi) | shelf |
 | T-0310 | 2026-11-05 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | Public prompt-injection benchmark the paper evaluates on. | H-0533 (SecureGARD: Dynamic Ontology-Guided Governance for) | shelf |
@@ -4888,6 +5063,8 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0551 | 2026-11-06 | hn | [Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM](https://firenook.dev/) | A faster Firebase emulator is a developer-tool product claim with no link to any Proteus desk or interest. |
+| H-0547 | 2026-11-06 | github | [HerdBuilderEstimate/roblox-studio-mcp: Model Context Protocol server for Roblox ](https://github.com/HerdBuilderEstimate/roblox-studio-mcp) | The README's install path is a downloaded .exe to inject, contradicting its own npx claim, with 427 stars on a one-day-o |
 | H-0538 | 2026-11-05 | youtube | [29000 Elo Bot Told Levy Resign 😭](https://www.youtube.com/watch?v=CSn6EXM43gg) | A reaction clip about a chess bot's chat message with no mechanism. |
 | H-0537 | 2026-11-05 | github | [KIRVO-REPORTING/video-to-notes: Local-first video-to-notes CLI for YouTube/Bilib](https://github.com/KIRVO-REPORTING/video-to-notes) | Caption-first with Whisper fallback is already how the transcribe-video pipeline here works; nothing new. |
 | H-0536 | 2026-11-05 | hn | [Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s](https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra) | Hardware product announcement with only spec-sheet numbers and no testable mechanism. |
