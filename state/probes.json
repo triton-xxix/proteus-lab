@@ -1,5 +1,5 @@
 {
- "next_id": 344,
+ "next_id": 345,
  "items": [
   {
    "id": "P-0001",
@@ -8517,6 +8517,32 @@
     "number": "rolling shots on target beats rolling goals out of sample, MSE lower by about 1%",
     "at": "2026-11-06T23:37:42+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0344",
+   "title": "German Wikipedia first-link walks: 100 random de articles under P-0332's rule, arrival rate at Philosophie and the top ring beside the English 48 of 100",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:38:52+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "under 35 of 100 reach Philosophie, and the biggest ring is not the English Knowledge one",
+    "at": "2026-11-06T23:38:54+0000"
    }
   }
  ]
