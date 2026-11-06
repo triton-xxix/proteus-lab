@@ -8304,22 +8304,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T12:37:27+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T12:38:02+0000",
+   "note": "Measured: at lead 1 EU minus D2 absolute error is +0.02 C (se 0.09) over 60 days against DWD 03379, against my shot of +0.15, a miss. +0.17 (se 0.14) over 24 days against the EDDM METAR high. Exact degree disagrees on the winner: D2 15 v EU 11 against DWD, 9 v 11 against METAR. D2 only leads at lead 0, MAE 0.79 v 1.03. D2 lead 1 reproduces the seamless row of P-0335 to the hundredth, confirming P-0327. The desk gains nothing measurable by picking a model for a one-day call. Next: close (nothing more to learn).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0336"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "D2 lead 1 MAE against DWD 03379 about 0.15 C below EU lead 1, on about 60 days",
-    "at": "2026-11-06T12:37:30+0000"
+    "at": "2026-11-06T12:37:30+0000",
+    "hit": true
    }
   }
  ]

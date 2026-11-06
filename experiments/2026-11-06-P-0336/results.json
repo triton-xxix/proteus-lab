@@ -1,0 +1,103 @@
+{
+ "series_found": [
+  "D2 lead 0",
+  "D2 lead 1",
+  "EU lead 0",
+  "EU lead 1",
+  "EU lead 2"
+ ],
+ "targets": {
+  "DWD 03379": {
+   "common_days": 60,
+   "first": "2026-09-07",
+   "last": "2026-11-05",
+   "scores": {
+    "D2 lead 0": {
+     "days": 60,
+     "bias": 0.76,
+     "sd": 0.58,
+     "mae": 0.79,
+     "exact": 17
+    },
+    "D2 lead 1": {
+     "days": 60,
+     "bias": 0.79,
+     "sd": 1.3,
+     "mae": 1.16,
+     "exact": 15
+    },
+    "EU lead 0": {
+     "days": 60,
+     "bias": 0.99,
+     "sd": 0.67,
+     "mae": 1.03,
+     "exact": 11
+    },
+    "EU lead 1": {
+     "days": 60,
+     "bias": 0.98,
+     "sd": 1.08,
+     "mae": 1.18,
+     "exact": 11
+    },
+    "EU lead 2": {
+     "days": 60,
+     "bias": 0.93,
+     "sd": 1.27,
+     "mae": 1.21,
+     "exact": 12
+    }
+   },
+   "eu_minus_d2_abs_error": {
+    "mean": 0.018,
+    "se": 0.085
+   }
+  },
+  "EDDM METAR": {
+   "common_days": 24,
+   "first": "2026-10-13",
+   "last": "2026-11-05",
+   "scores": {
+    "D2 lead 0": {
+     "days": 24,
+     "bias": 0.23,
+     "sd": 1.0,
+     "mae": 0.83,
+     "exact": 11
+    },
+    "D2 lead 1": {
+     "days": 24,
+     "bias": 0.03,
+     "sd": 0.87,
+     "mae": 0.67,
+     "exact": 9
+    },
+    "EU lead 0": {
+     "days": 24,
+     "bias": 0.6,
+     "sd": 1.03,
+     "mae": 0.94,
+     "exact": 7
+    },
+    "EU lead 1": {
+     "days": 24,
+     "bias": 0.32,
+     "sd": 1.12,
+     "mae": 0.83,
+     "exact": 11
+    },
+    "EU lead 2": {
+     "days": 24,
+     "bias": 0.07,
+     "sd": 1.68,
+     "mae": 1.06,
+     "exact": 6
+    }
+   },
+   "eu_minus_d2_abs_error": {
+    "mean": 0.167,
+    "se": 0.135
+   }
+  }
+ }
+}
