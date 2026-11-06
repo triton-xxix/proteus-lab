@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 267 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 268 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (7 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,12 +20,12 @@ Verdicts so far: 267 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
-| P-0333 | Same-day Munich settle check: exchange/settlecheck.py prints today's Munich-Stadt high so far from DWD's 10-minute now file (station 03379) beside each open Munich row of exchange/BOOK.csv, and measures the now file's day max against DWD's TXK over the days it holds. Ogimet's 10865 stream was 24 h stale on 6 Nov, so DWD's own file replaces it. | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (321)
+## Verdicts (322)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-06 | P-0333 | Same-day Munich settle check: exchange/settlecheck.py prints today's Munich-Stadt high so far from DWD's 10-minute now file (station 03379) beside each open Munich row of exchange/BOOK.csv, and measures the now file's day max against DWD's TXK over the days it holds. Ogimet's 10865 stream was 24 h stale on 6 Nov, so DWD's own file replaces it. | **works** | Measured: DWD TX_10 day max equals TXK at Munich-Stadt on 189 of 189 days (1 May to 5 Nov, gap 0.00); TT_10 spot is +0.22 C under, same degree 156 of 189 (83%), against my shot of +0.15 and 85%. exchange/settlecheck.py prints the high so far from a now file 43 min old at 12:33 UTC. Ogimet 10865 was 24 h stale in one fetch while 03772 and 10384 were current. Surprise: rounded 03379 agrees with only 24 of 30 settled Munich rows; airport 01262 floor gets 27, a fit picked from six pairs. Caveat: the check reads the city station, which may not be the settlement station. Next: deepen (queue EDDM METAR high against the settled rows). | `experiments/2026-11-06-P-0333` | 2 min, 15 calls, 0 denied |
 | 2026-11-06 | P-0332 | Date the Knowledge ring: replay the first-link rule on Wikipedia old revisions at 2011, 2014, 2016, 2018, 2021 and now, from Science, Knowledge, Belief and a fixed 30-start sample; arrival rate per year and when the ring forms | **works** | Replaying the first-link rule on 100 starts: share of existing articles reaching Philosophy 47% (2011), 85% (2014), 18% (2016), 5% (2018), 55% (2021, 68 of 100 walked), 48% today, each collapse one hub's lead. The Knowledge ring is absent through 1 Jul 2021, so it formed after that; dead ends are an upper bound, so the folk 97% is neither matched nor refuted. | `experiments/2026-11-05-P-0332` | 50 min, 31 calls, 0 denied |
 | 2026-11-05 | P-0331 | MOT defects behind the Corsa gap: stream DVSA test_item_2023 for the Corsa and 3 Series test ids in sandbox/mot/vx-bmw-2023.csv, join item_group from lookup.zip; which top-level defect groups carry the 1.62x? | **works** | 89.3M 2023 item rows joined to P-0326's 268k tests (90,677 failing tests, an exact match): suspension (2.5x) and lamps (2.0x) carry half the Corsa v 3 Series gap, body and chassis 5x, steering 6x; tyres level at 1.08x. | `experiments/2026-11-05-P-0331` | 4 min, 11 calls, 0 denied |
 | 2026-11-05 | P-0330 | MOT matched league table: 20 most-tested model families in the first 8M rows of DVSA 2023 (1 Jan to 6 Mar), initial fail rate raw and matched on age, mileage band and fuel against the all-car rate; which models does the raw table flatter most? | **works** | 5.78M class 4 tests (1 Jan to 6 Mar 2023), 20 biggest families matched on age, mileage and fuel: the raw table flatters Juke (raw 0.99, matched 1.21) and Fiat 500 (1.02 v 1.19), is harshest on the Mini (1.23 v 0.92); Clio worst (1.38), Range Rover and 3 Series best (0.71, 0.76). | `experiments/2026-11-05-P-0330` | 1 min, 9 calls, 0 denied |

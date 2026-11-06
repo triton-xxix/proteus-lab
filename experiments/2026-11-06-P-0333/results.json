@@ -1,0 +1,111 @@
+{
+ "generated_utc": "2026-11-06T12:33:55.224994Z",
+ "now_file": {
+  "rows": 72,
+  "first": "2026-11-06 00:00:00",
+  "last": "2026-11-06 11:50:00",
+  "age_min": 44
+ },
+ "txk_days": 189,
+ "first": "2026-05-01",
+ "last": "2026-11-05",
+ "recent_tt_last": "2026-11-05 23:50:00",
+ "recent_tx_last": "2026-11-05 23:50:00",
+ "settled_rows": {
+  "rows": 30,
+  "utc_day_agrees": 24,
+  "local_day_agrees": 24,
+  "disagreements": [
+   {
+    "id": "X-0023",
+    "day": "2026-10-21",
+    "contract": "13\u00b0C",
+    "outcome": "loser",
+    "utc_high": 12.7,
+    "local_high": 12.7
+   },
+   {
+    "id": "X-0033",
+    "day": "2026-10-28",
+    "contract": "12\u00b0C",
+    "outcome": "winner",
+    "utc_high": 12.5,
+    "local_high": 12.5
+   },
+   {
+    "id": "X-0035",
+    "day": "2026-10-29",
+    "contract": "12\u00b0C",
+    "outcome": "loser",
+    "utc_high": 12.2,
+    "local_high": 12.2
+   },
+   {
+    "id": "X-0036",
+    "day": "2026-10-30",
+    "contract": "11\u00b0C",
+    "outcome": "winner",
+    "utc_high": 11.6,
+    "local_high": 11.6
+   },
+   {
+    "id": "X-0039",
+    "day": "2026-11-01",
+    "contract": "8\u00b0C",
+    "outcome": "winner",
+    "utc_high": 9.9,
+    "local_high": 9.9
+   },
+   {
+    "id": "X-0041",
+    "day": "2026-11-02",
+    "contract": "8\u00b0C",
+    "outcome": "loser",
+    "utc_high": 7.9,
+    "local_high": 7.9
+   }
+  ]
+ },
+ "scores": [
+  {
+   "name": "TT_10 spot, UTC day",
+   "days": 189,
+   "mean_txk_minus": 0.22,
+   "sd": 0.193,
+   "min_gap": 0.0,
+   "max_gap": 0.9,
+   "exact_days": 41,
+   "same_whole_degree": 156
+  },
+  {
+   "name": "TX_10 extreme, UTC day",
+   "days": 189,
+   "mean_txk_minus": 0.0,
+   "sd": 0.0,
+   "min_gap": 0.0,
+   "max_gap": 0.0,
+   "exact_days": 189,
+   "same_whole_degree": 189
+  },
+  {
+   "name": "TT_10 spot, UTC+1 day",
+   "days": 189,
+   "mean_txk_minus": 0.212,
+   "sd": 0.209,
+   "min_gap": -0.6,
+   "max_gap": 0.9,
+   "exact_days": 38,
+   "same_whole_degree": 155
+  },
+  {
+   "name": "TX_10 extreme, UTC+1 day",
+   "days": 189,
+   "mean_txk_minus": -0.011,
+   "sd": 0.078,
+   "min_gap": -0.8,
+   "max_gap": 0.0,
+   "exact_days": 185,
+   "same_whole_degree": 187
+  }
+ ]
+}

@@ -8217,22 +8217,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T12:32:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T12:34:49+0000",
+   "note": "Measured: DWD TX_10 day max equals TXK at Munich-Stadt on 189 of 189 days (1 May to 5 Nov, gap 0.00); TT_10 spot is +0.22 C under, same degree 156 of 189 (83%), against my shot of +0.15 and 85%. exchange/settlecheck.py prints the high so far from a now file 43 min old at 12:33 UTC. Ogimet 10865 was 24 h stale in one fetch while 03772 and 10384 were current. Surprise: rounded 03379 agrees with only 24 of 30 settled Munich rows; airport 01262 floor gets 27, a fit picked from six pairs. Caveat: the check reads the city station, which may not be the settlement station. Next: deepen (queue EDDM METAR high against the settled rows).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0333"
+   ],
+   "minutes": 2,
+   "calls": 15,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "mean TXK minus 10-minute TT_10 day max about +0.15 C, same whole degree on 85 percent of days",
-    "at": "2026-11-06T12:33:04+0000"
+    "at": "2026-11-06T12:33:04+0000",
+    "hit": true
    }
   }
  ]
