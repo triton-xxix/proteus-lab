@@ -8469,9 +8469,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:36:39+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -8479,7 +8479,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "slicer returns under 1,200 tokens in under 1 s on a real repo of about 100 files",
+    "at": "2026-11-06T23:36:41+0000"
+   }
   },
   {
    "id": "P-0343",

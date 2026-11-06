@@ -21,7 +21,7 @@ Verdicts so far: 274 works, 5 broken, 34 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | desk | none | 2026-11-07 | 0 | 10 min |
-| P-0342 | NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free? | harvest | none |  | 0 | 25 min |
+| P-0342 | NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free? | harvest | none |  | 1 (in progress) | 25 min |
 | P-0343 | xG proxy: does rolling shots-on-target predict next-match goals better than rolling goals, on football-data? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (329)
