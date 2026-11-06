@@ -1,0 +1,24 @@
+{
+ "at": "2026-11-06T23:55:29Z",
+ "markets_read": 107,
+ "full_bid_books": 65,
+ "median_sell_all": 94.81,
+ "books_over_100_first": 1,
+ "still_over_100_after_60s": 1,
+ "unchanged_after_60s": 1,
+ "rows": [
+  {
+   "market": "67243587",
+   "name": "Donald Trump to serve as president for 9+ years by end of 2030",
+   "contracts": 2,
+   "sum_first": 101.18,
+   "size_first": 2.02,
+   "sum_after_60s": 101.18,
+   "size_after_60s": 2.02,
+   "edge_points": 1.18,
+   "survives_net_commission": true,
+   "survives_harsh_commission": false,
+   "max_lockable_units_gross": 0.0238
+  }
+ ]
+}

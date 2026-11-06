@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 279 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 280 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 279 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | desk | none | 2026-11-07 | 0 | 10 min |
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
-| P-0349 | Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behind them, and does any survive 2% commission | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (335)
+## Verdicts (336)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-06 | P-0349 | Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behind them, and does any survive 2% commission | **works** | Measured at one moment, 107 markets read twice 60 s apart: of 65 books with a bid on every contract, median sell-all 94.81, 1 was over 100 (Trump 9+ years by 2030, 101.18, unchanged after a minute). Size 2.02 units, gross gap 0.024 units, about 2p if a unit is a pound, and it pays only at settlement in 2030. Survives 2% on net profit, fails 2% on all premium; commission basis and unit not confirmed from a Smarkets document. My shot hit. Past sizes unknown, snapshots keep none. Next: close. | `experiments/2026-11-06-P-0349` | 2 min, 5 calls, 0 denied |
 | 2026-11-06 | P-0347 | EDDM METAR high against DWD 01262 TXK, 2021 to 2026, by month: does P-0345's winter 90% against July 66% hold over five years | **works** | Measured over 2,135 days, 2021 to 2026: EDDM METAR high equals rounded DWD 01262 TXK on 74.1%, misses leaning low (409 under, 145 over). Winter 75.7% v summer 72.6%, 3 points with se about 2.7, against my shot of at least 8: P-0345 January 90 v July 66 was small-sample noise. By year 70% (2023) to 81% (2026), mean gap -0.22 to +0.04, possibly a sensor or reporting change, not looked for. TXK is not TX_10, so 74 v 78 is not clean. Next: close. | `experiments/2026-11-06-P-0347` | 0 min, 5 calls, 0 denied |
 | 2026-11-06 | P-0346 | Whole-degree METAR high against SYNOP TX at Heathrow, Orly and Munich airport, Sep to Oct: is the gap the same size at all three | **works** | Measured Sep to Oct, 06 to 18 UTC on both sides: METAR high minus SYNOP TX is -0.93 C at Heathrow (61 days, 28% same as rounded TX), -0.29 at Orly (51 days, 65%), +0.19 at Munich (30 days, 80%). My shot of within 0.3 and 70 to 80% everywhere missed at Heathrow. So the gap does not travel: London +1.26 ICON offset would be about +0.33 against a METAR target, arithmetic not measured. Cause at Heathrow not established; Munich has half the days, not checked why. Next: close (no London or Paris market on the book). | `experiments/2026-11-06-P-0346` | 1 min, 8 calls, 0 denied |
 | 2026-11-06 | P-0345 | EDDM METAR high against DWD 01262 TX_10 at the same airport: how often do they differ after rounding, and is the miss the peak falling between METAR reports | **works** | Measured over 540 days: EDDM METAR high equals rounded DWD 01262 TX_10 on 424, 78.5%, against my shot of 65%. Of the other 116, 63 run 1 degree low, 52 run 1 degree high, one is 8 low (a reporting gap, not chased). Mean gap +0.03 C. Report times explain 58 of 116, half, not the most I called. So a perfect station forecast tops out near four days in five on the exact degree. 52 METARs warmer than the record suggest a different sensor, not established. Rule still on trial under D-023. Next: close until D-023 is scored. | `experiments/2026-11-06-P-0345` | 0 min, 6 calls, 0 denied |

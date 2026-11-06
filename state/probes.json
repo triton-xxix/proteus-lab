@@ -8663,22 +8663,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:53:39+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:55:45+0000",
+   "note": "Measured at one moment, 107 markets read twice 60 s apart: of 65 books with a bid on every contract, median sell-all 94.81, 1 was over 100 (Trump 9+ years by 2030, 101.18, unchanged after a minute). Size 2.02 units, gross gap 0.024 units, about 2p if a unit is a pound, and it pays only at settlement in 2030. Survives 2% on net profit, fails 2% on all premium; commission basis and unit not confirmed from a Smarkets document. My shot hit. Past sizes unknown, snapshots keep none. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0349"
+   ],
+   "minutes": 2,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "0 to 2 books over 100 tonight, with under 50 units of lockable size each, and none surviving harsh commission",
-    "at": "2026-11-06T23:53:41+0000"
+    "at": "2026-11-06T23:53:41+0000",
+    "hit": true
    }
   }
  ]
