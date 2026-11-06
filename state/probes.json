@@ -8527,22 +8527,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:38:52+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:48:58+0000",
+   "note": "Measured on 100 random de articles under the same parser: 53 reached Philosophie (median 14 hops), 20 looped, 25 dead ends, 2 parser errors, against English 48, 41 and 11; my shot of under 35 missed, the other half hit. The Knowledge ring does not exist here: the top ring is System > Ganzheit > Abstrakta > Sprachwissenschaft > Sprache, 10 walks. 52 of 53 arrivals pass through Objekt (Philosophie). 17 died at hop 0 on name and disambiguation pages. Bug: red links are read as articles, also true of the English walker. One sample each. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0344"
+   ],
+   "minutes": 10,
+   "calls": 15,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "under 35 of 100 reach Philosophie, and the biggest ring is not the English Knowledge one",
-    "at": "2026-11-06T23:38:54+0000"
+    "at": "2026-11-06T23:38:54+0000",
+    "hit": true
    }
   }
  ]

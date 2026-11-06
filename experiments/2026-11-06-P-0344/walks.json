@@ -1,0 +1,1951 @@
+{
+ "at": "2026-11-06T23:48:14Z",
+ "asked": 100,
+ "walked": 100,
+ "stopped_early": null,
+ "pages_fetched": 425,
+ "refusals_429": 0,
+ "secs": 546,
+ "outcomes": {
+  "philosophy": 53,
+  "dead end": 25,
+  "loop": 20,
+  "fetch error": 2
+ },
+ "reached": 53,
+ "median_hops": 14,
+ "rings": [
+  [
+   "System",
+   10
+  ],
+  [
+   "Fachsprache > Terminus",
+   2
+  ],
+  [
+   "Recht > Wirksamkeit (Recht) > Rechtsfolge",
+   2
+  ],
+  [
+   "Gesetz > Rechtssatz > Rechtsnorm",
+   1
+  ],
+  [
+   "Juden > Judentum",
+   1
+  ],
+  [
+   "Handel > Kommerz",
+   1
+  ],
+  [
+   "Billard > Queue (Billard)",
+   1
+  ],
+  [
+   "Militär > Streitkräfte",
+   1
+  ]
+ ],
+ "dead_ends": [
+  [
+   "Sport",
+   4
+  ],
+  [
+   "Liste interkontinentaler Staaten",
+   4
+  ],
+  [
+   "Seewald (Begriffsklärung)",
+   1
+  ],
+  [
+   "Max von Hausen (Begriffsklärung)",
+   1
+  ],
+  [
+   "Liste der Staatsoberhäupter 1004",
+   1
+  ],
+  [
+   "Elena Florea",
+   1
+  ],
+  [
+   "Wilhelm Daniels",
+   1
+  ],
+  [
+   "Wez",
+   1
+  ],
+  [
+   "Stuwe",
+   1
+  ],
+  [
+   "The Brave One",
+   1
+  ],
+  [
+   "Helmut Bergmann",
+   1
+  ],
+  [
+   "Musikjahr 1851",
+   1
+  ]
+ ],
+ "last_step": [
+  [
+   "Objekt (Philosophie)",
+   52
+  ],
+  [
+   "Sprachphilosophie",
+   1
+  ]
+ ],
+ "fetch_error_titles": [
+  "Filip Mihail?action=edit&redlink=1",
+  "Zed Two?action=edit&redlink=1"
+ ],
+ "rows": [
+  {
+   "start": "Sherzod Hidoyatov",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Sherzod Hidoyatov",
+    "Minister",
+    "Regierung",
+    "Institution",
+    "Wirtschaftswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Seewald (Begriffsklärung)",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Seewald (Begriffsklärung)"
+   ]
+  },
+  {
+   "start": "Landschaftsschutzgebiet Hillbachtal",
+   "outcome": "loop",
+   "hops": 7,
+   "path": [
+    "Landschaftsschutzgebiet Hillbachtal",
+    "Hektar",
+    "Schweizer Hochdeutsch",
+    "Standarddeutsch",
+    "Normung",
+    "Terminus",
+    "Fachsprache",
+    "Terminus"
+   ]
+  },
+  {
+   "start": "Eusebios der Syrer",
+   "outcome": "loop",
+   "hops": 6,
+   "path": [
+    "Eusebios der Syrer",
+    "Askese",
+    "Altgriechische Sprache",
+    "Sprachstufe",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Wolfgang Dauner",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Wolfgang Dauner",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Wimbledon Championships 2018/Damendoppel",
+   "outcome": "dead end",
+   "hops": 7,
+   "path": [
+    "Wimbledon Championships 2018/Damendoppel",
+    "Wimbledon Championships 2018",
+    "Wimbledon Championships",
+    "Tennis",
+    "Rückschlagspiel",
+    "Ball- und Kugelsportart",
+    "Sportart",
+    "Sport"
+   ]
+  },
+  {
+   "start": "Endre Tihanyi",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Endre Tihanyi",
+    "Ungarn",
+    "Binnenstaat",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Galveston Island",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "Galveston Island",
+    "Sandbank",
+    "Sand",
+    "Sedimente und Sedimentgesteine",
+    "Mineral",
+    "Chemisches Element",
+    "Reinstoff",
+    "Chemie",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Alison Shanks",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Alison Shanks",
+    "Neuseeland",
+    "Inselstaat",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Marco Louis",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Marco Louis",
+    "Schweiz",
+    "Föderalismus",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Jannik Giger",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Jannik Giger",
+    "Schweiz",
+    "Föderalismus",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Gaius Livius Drusus (Konsul)",
+   "outcome": "loop",
+   "hops": 7,
+   "path": [
+    "Gaius Livius Drusus (Konsul)",
+    "Konsulat (Römisches Reich)",
+    "Römische Republik",
+    "Römisches Verfassungsrecht",
+    "Rechtsnorm",
+    "Gesetz",
+    "Rechtssatz",
+    "Rechtsnorm"
+   ]
+  },
+  {
+   "start": "Birkat Jozer Or",
+   "outcome": "loop",
+   "hops": 3,
+   "path": [
+    "Birkat Jozer Or",
+    "Judentum",
+    "Juden",
+    "Judentum"
+   ]
+  },
+  {
+   "start": "Digitaler Nachlass",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Digitaler Nachlass",
+    "Internet",
+    "Rechnernetz",
+    "Elektronik",
+    "Elektrotechnik",
+    "Ingenieurwissenschaften",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Silke Bingenheimer",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Silke Bingenheimer",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Myxococcus xanthus",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Myxococcus xanthus",
+    "Aerobie",
+    "Sauerstoff",
+    "Chemisches Element",
+    "Reinstoff",
+    "Chemie",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Gognies-Chaussée",
+   "outcome": "dead end",
+   "hops": 3,
+   "path": [
+    "Gognies-Chaussée",
+    "Gemeinde (Frankreich)",
+    "Frankreich",
+    "Liste interkontinentaler Staaten"
+   ]
+  },
+  {
+   "start": "Umschlingungswinkel",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Umschlingungswinkel",
+    "Keilriemen",
+    "Treibriemen",
+    "Antriebstechnik",
+    "Bewegung (Physik)",
+    "Physik",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Joseph Court (Kolonialgouverneur)",
+   "outcome": "dead end",
+   "hops": 2,
+   "path": [
+    "Joseph Court (Kolonialgouverneur)",
+    "Frankreich",
+    "Liste interkontinentaler Staaten"
+   ]
+  },
+  {
+   "start": "Max von Hausen (Begriffsklärung)",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Max von Hausen (Begriffsklärung)"
+   ]
+  },
+  {
+   "start": "Widukind von Rheda",
+   "outcome": "loop",
+   "hops": 6,
+   "path": [
+    "Widukind von Rheda",
+    "Vogt",
+    "Mittelhochdeutsche Sprache",
+    "Sprachstufe",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Saulius Ambrulevičius",
+   "outcome": "philosophy",
+   "hops": 20,
+   "path": [
+    "Saulius Ambrulevičius",
+    "Litauen",
+    "Baltische Staaten",
+    "Nordosteuropa",
+    "Osteuropa",
+    "Mitteleuropa",
+    "Region",
+    "Geographie",
+    "Erde",
+    "Dichte",
+    "Quotient",
+    "Mathematik",
+    "Formalwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Ursula Meyer (Autorin)",
+   "outcome": "loop",
+   "hops": 10,
+   "path": [
+    "Ursula Meyer (Autorin)",
+    "Autor",
+    "Werk (Urheberrecht)",
+    "Urheberrecht",
+    "Absolutes Recht",
+    "Ausschließliches Recht",
+    "Nutzungsrecht",
+    "Recht",
+    "Wirksamkeit (Recht)",
+    "Rechtsfolge",
+    "Recht"
+   ]
+  },
+  {
+   "start": "CSA SportCruiser",
+   "outcome": "loop",
+   "hops": 8,
+   "path": [
+    "CSA SportCruiser",
+    "Leichtflugzeug",
+    "Flugzeug",
+    "Luftfahrzeug",
+    "Oberbegriff",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Nordische Junioren-Skiweltmeisterschaften 2027",
+   "outcome": "philosophy",
+   "hops": 19,
+   "path": [
+    "Nordische Junioren-Skiweltmeisterschaften 2027",
+    "Nordische Junioren-Skiweltmeisterschaften",
+    "Fédération Internationale de Ski",
+    "Sportverband",
+    "Verein",
+    "Natürliche Person",
+    "Mensch",
+    "Systematik (Biologie)",
+    "Lebewesen",
+    "Stoffwechsel",
+    "Chemie",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Grünsee (Villach)",
+   "outcome": "philosophy",
+   "hops": 18,
+   "path": [
+    "Grünsee (Villach)",
+    "Villach",
+    "Liste der Städte in Österreich",
+    "Stadt",
+    "Stadtgrenze",
+    "Grenze",
+    "Raum (Physik)",
+    "Materie (Physik)",
+    "Klassische Physik",
+    "Physik",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Klaus Dürr (Politiker, 1958)",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Klaus Dürr (Politiker, 1958)",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Mihail Stabiloplan",
+   "outcome": "fetch error",
+   "hops": 1,
+   "path": [
+    "Mihail Stabiloplan",
+    "Filip Mihail?action=edit&redlink=1"
+   ]
+  },
+  {
+   "start": "Aceguá (Uruguay)",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Aceguá (Uruguay)",
+    "Departamentos in Uruguay",
+    "Departamento",
+    "Mittelamerika",
+    "Isthmus von Tehuantepec",
+    "Isthmus (Geographie)",
+    "Landbrücke",
+    "Geomorphologie",
+    "Physische Geographie",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Oberamt Freudenstadt",
+   "outcome": "philosophy",
+   "hops": 22,
+   "path": [
+    "Oberamt Freudenstadt",
+    "Württemberg",
+    "Baden-Württemberg",
+    "Land (Deutschland)",
+    "Föderalismus in Deutschland",
+    "Staatsorganisationsrecht",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Liste der Staatsoberhäupter 1004",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Liste der Staatsoberhäupter 1004"
+   ]
+  },
+  {
+   "start": "Hugo Dyserinck",
+   "outcome": "loop",
+   "hops": 9,
+   "path": [
+    "Hugo Dyserinck",
+    "Komparatistik",
+    "Literaturwissenschaft",
+    "Literatur",
+    "Schrift",
+    "Wort",
+    "Morphem",
+    "Terminus",
+    "Fachsprache",
+    "Terminus"
+   ]
+  },
+  {
+   "start": "Johann Wilhelm von Göbel",
+   "outcome": "philosophy",
+   "hops": 10,
+   "path": [
+    "Johann Wilhelm von Göbel",
+    "Jurist",
+    "Studium",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Arnold Classic",
+   "outcome": "dead end",
+   "hops": 2,
+   "path": [
+    "Arnold Classic",
+    "Bodybuilding",
+    "Sport"
+   ]
+  },
+  {
+   "start": "Elena Florea",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Elena Florea"
+   ]
+  },
+  {
+   "start": "Municipio San Juan de Yapacaní",
+   "outcome": "loop",
+   "hops": 18,
+   "path": [
+    "Municipio San Juan de Yapacaní",
+    "Municipio (Bolivien)",
+    "Municipio",
+    "Spanische Sprache",
+    "Romanische Sprachen",
+    "Italische Sprachen",
+    "Indogermanische Sprachen",
+    "Muttersprache",
+    "Unterricht",
+    "Fertigkeit",
+    "Fähigkeit",
+    "Person",
+    "Umgangssprache",
+    "Standardvarietät",
+    "Varietät (Linguistik)",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Wilhelm Daniels",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Wilhelm Daniels"
+   ]
+  },
+  {
+   "start": "Marcinkowo (Grunwald)",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "Marcinkowo (Grunwald)",
+    "Polen",
+    "Parlamentarisches Regierungssystem",
+    "Parlamentarismus",
+    "Politisches System",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "New Bomb Turks",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "New Bomb Turks",
+    "Punk (Musik)",
+    "Genre",
+    "Klassifikation",
+    "Klassifizierung",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Johann II. (Blois)",
+   "outcome": "dead end",
+   "hops": 3,
+   "path": [
+    "Johann II. (Blois)",
+    "Grafschaft Blois",
+    "Frankreich",
+    "Liste interkontinentaler Staaten"
+   ]
+  },
+  {
+   "start": "Shawn McNeil",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Shawn McNeil",
+    "Kanada",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Hubert Anton Disch",
+   "outcome": "philosophy",
+   "hops": 22,
+   "path": [
+    "Hubert Anton Disch",
+    "Kaufmann",
+    "Gewerbe",
+    "Erlaubnis",
+    "Behörde",
+    "Öffentliche Stelle",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "RL (Komplexitätsklasse)",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "RL (Komplexitätsklasse)",
+    "Komplexitätstheorie",
+    "Theoretische Informatik",
+    "Abstraktion",
+    "Induktion (Philosophie)",
+    "Aristoteles",
+    "Antikes Griechenland",
+    "Zivilisation",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Lisa Karl",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Lisa Karl",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Csoma (Ungarn)",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Csoma (Ungarn)",
+    "Ungarn",
+    "Binnenstaat",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Wez",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Wez"
+   ]
+  },
+  {
+   "start": "Stuwe",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Stuwe"
+   ]
+  },
+  {
+   "start": "Lockwood-Mathews Mansion",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Lockwood-Mathews Mansion",
+    "Norwalk (Connecticut)",
+    "Fairfield County (Connecticut)",
+    "County (Vereinigte Staaten)",
+    "Bundesstaat der Vereinigten Staaten",
+    "Vereinigte Staaten",
+    "Verfassung der Vereinigten Staaten",
+    "Ratifikation",
+    "Juristische Fachsprache",
+    "Rechtswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Strada Statale 28 del Colle di Nava",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Strada Statale 28 del Colle di Nava",
+    "Italien",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Lesben-Frühlings-Treffen",
+   "outcome": "loop",
+   "hops": 3,
+   "path": [
+    "Lesben-Frühlings-Treffen",
+    "Kommerz",
+    "Handel",
+    "Kommerz"
+   ]
+  },
+  {
+   "start": "Armand Fallières",
+   "outcome": "dead end",
+   "hops": 2,
+   "path": [
+    "Armand Fallières",
+    "Frankreich",
+    "Liste interkontinentaler Staaten"
+   ]
+  },
+  {
+   "start": "Albino Mensa",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Albino Mensa",
+    "Italien",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "The Brave One",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "The Brave One"
+   ]
+  },
+  {
+   "start": "Amalienbad",
+   "outcome": "loop",
+   "hops": 26,
+   "path": [
+    "Amalienbad",
+    "Hallenbad",
+    "Schwimmbad",
+    "Schwimmbecken",
+    "Englische Sprache",
+    "England",
+    "Verwaltungsgliederung des Vereinigten Königreichs",
+    "Vereinigtes Königreich",
+    "Britische Inseln",
+    "Europa",
+    "Kontinent",
+    "Deutsche Sprache",
+    "Westgermanische Sprachen",
+    "Germanische Sprachen",
+    "Indogermanische Sprachen",
+    "Muttersprache",
+    "Unterricht",
+    "Fertigkeit",
+    "Fähigkeit",
+    "Person",
+    "Umgangssprache",
+    "Standardvarietät",
+    "Varietät (Linguistik)",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Dreiband-Europameisterschaft 1950",
+   "outcome": "loop",
+   "hops": 5,
+   "path": [
+    "Dreiband-Europameisterschaft 1950",
+    "Dreiband-Europameisterschaft",
+    "Karambolage (Billard)",
+    "Billard",
+    "Queue (Billard)",
+    "Billard"
+   ]
+  },
+  {
+   "start": "Optischer Transistor",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Optischer Transistor",
+    "Transistor",
+    "Elektrisches Bauelement",
+    "Elektrotechnik",
+    "Ingenieurwissenschaften",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Europawahl in Österreich 2004",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Europawahl in Österreich 2004",
+    "Österreich",
+    "Mitteleuropa",
+    "Region",
+    "Geographie",
+    "Erde",
+    "Dichte",
+    "Quotient",
+    "Mathematik",
+    "Formalwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Was Gott tut, das ist wohlgetan, BWV 99",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Was Gott tut, das ist wohlgetan, BWV 99",
+    "Bachkantate",
+    "Kantate",
+    "Formenlehre (Musik)",
+    "Musiktheorie",
+    "Musikwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Liste der Biografien/Meyo",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "Liste der Biografien/Meyo",
+    "Liste der Biografien",
+    "Wikipedia",
+    "Gemeinnützigkeit",
+    "Steuerschuldverhältnis",
+    "Steuergläubiger",
+    "Finanzwissenschaft",
+    "Wirtschaftswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Michigan Mathematical Journal",
+   "outcome": "philosophy",
+   "hops": 10,
+   "path": [
+    "Michigan Mathematical Journal",
+    "Mathematik",
+    "Formalwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Warthog Plc",
+   "outcome": "fetch error",
+   "hops": 1,
+   "path": [
+    "Warthog Plc",
+    "Zed Two?action=edit&redlink=1"
+   ]
+  },
+  {
+   "start": "Wimbledon Championships 1997/Herreneinzel/Qualifikation",
+   "outcome": "dead end",
+   "hops": 8,
+   "path": [
+    "Wimbledon Championships 1997/Herreneinzel/Qualifikation",
+    "Wimbledon Championships 1997/Herreneinzel",
+    "Wimbledon Championships 1997",
+    "Wimbledon Championships",
+    "Tennis",
+    "Rückschlagspiel",
+    "Ball- und Kugelsportart",
+    "Sportart",
+    "Sport"
+   ]
+  },
+  {
+   "start": "Helmut Bergmann",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Helmut Bergmann"
+   ]
+  },
+  {
+   "start": "Musikjahr 1851",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Musikjahr 1851"
+   ]
+  },
+  {
+   "start": "Papyrus 24",
+   "outcome": "loop",
+   "hops": 5,
+   "path": [
+    "Papyrus 24",
+    "Altgriechische Sprache",
+    "Sprachstufe",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Sidi Slimane",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Sidi Slimane",
+    "Marokko",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Institut für Mathematik",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Institut für Mathematik"
+   ]
+  },
+  {
+   "start": "Darfeld",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Darfeld",
+    "Rosendahl",
+    "Nordrhein-Westfalen",
+    "Souveränität",
+    "Rechtsbegriff",
+    "Rechtswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Erika Linder",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "Erika Linder",
+    "Schweden",
+    "Monarchie",
+    "Staatsform",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Benzolsulfonsäure",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Benzolsulfonsäure",
+    "Chemische Verbindung",
+    "Reinstoff",
+    "Chemie",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Gotthard Hubrich",
+   "outcome": "loop",
+   "hops": 6,
+   "path": [
+    "Gotthard Hubrich",
+    "Deutsche Volkspolizei",
+    "Sowjetische Besatzungszone",
+    "Besatzungszone",
+    "Militär",
+    "Streitkräfte",
+    "Militär"
+   ]
+  },
+  {
+   "start": "Hof zu St. Peter",
+   "outcome": "philosophy",
+   "hops": 18,
+   "path": [
+    "Hof zu St. Peter",
+    "St. Peter (Graz)",
+    "Liste der Stadtbezirke von Graz",
+    "Graz",
+    "Land (Österreich)",
+    "Gliedstaat",
+    "Föderalismus",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Satellite FC",
+   "outcome": "loop",
+   "hops": 20,
+   "path": [
+    "Satellite FC",
+    "Guinea",
+    "Westafrika",
+    "Afrika",
+    "Kontinent",
+    "Deutsche Sprache",
+    "Westgermanische Sprachen",
+    "Germanische Sprachen",
+    "Indogermanische Sprachen",
+    "Muttersprache",
+    "Unterricht",
+    "Fertigkeit",
+    "Fähigkeit",
+    "Person",
+    "Umgangssprache",
+    "Standardvarietät",
+    "Varietät (Linguistik)",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Podgórze (Krakau)",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Podgórze (Krakau)",
+    "Weichsel",
+    "Strom (Gewässerart)",
+    "Fluss",
+    "Gewässer",
+    "Flüssigkeit",
+    "Materie (Physik)",
+    "Klassische Physik",
+    "Physik",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Wolfenstein",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Wolfenstein"
+   ]
+  },
+  {
+   "start": "Kleomenes (Heerführer)",
+   "outcome": "philosophy",
+   "hops": 23,
+   "path": [
+    "Kleomenes (Heerführer)",
+    "Pausanias (Sparta)",
+    "Kleombrotos (Sohn von Anaxandridas)",
+    "Anaxandridas II.",
+    "Leon (Sparta)",
+    "Eurykratidas",
+    "Anaxandros",
+    "Eurykrates (Sparta)",
+    "Polydoros (Sparta)",
+    "Alkamenes (Sparta)",
+    "Teleklos",
+    "Griechische Mythologie",
+    "Antikes Griechenland",
+    "Zivilisation",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "UCI Oceania Tour 2011",
+   "outcome": "dead end",
+   "hops": 4,
+   "path": [
+    "UCI Oceania Tour 2011",
+    "Union Cycliste Internationale",
+    "Radsport",
+    "Sportart",
+    "Sport"
+   ]
+  },
+  {
+   "start": "Dhanmondi",
+   "outcome": "loop",
+   "hops": 4,
+   "path": [
+    "Dhanmondi",
+    "Stadtviertel",
+    "Geschichte des Wohnens im deutschsprachigen Raum",
+    "Sesshaftigkeit",
+    "Geschichte des Wohnens im deutschsprachigen Raum"
+   ]
+  },
+  {
+   "start": "Julie Harris",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Julie Harris",
+    "Vereinigte Staaten",
+    "Verfassung der Vereinigten Staaten",
+    "Ratifikation",
+    "Juristische Fachsprache",
+    "Rechtswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Donceel",
+   "outcome": "loop",
+   "hops": 17,
+   "path": [
+    "Donceel",
+    "Frankophonie",
+    "Französische Sprache",
+    "Romanische Sprachen",
+    "Italische Sprachen",
+    "Indogermanische Sprachen",
+    "Muttersprache",
+    "Unterricht",
+    "Fertigkeit",
+    "Fähigkeit",
+    "Person",
+    "Umgangssprache",
+    "Standardvarietät",
+    "Varietät (Linguistik)",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Krankenhaus Diakovere Henriettenstift",
+   "outcome": "philosophy",
+   "hops": 19,
+   "path": [
+    "Krankenhaus Diakovere Henriettenstift",
+    "Hannover",
+    "Landeshauptstadt (Deutschland)",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Paschkiwzi (Mukatschewo)",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Paschkiwzi (Mukatschewo)",
+    "Rajon Mukatschewo",
+    "Ukraine",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Giovanni Maria Antonio Tencalla",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Giovanni Maria Antonio Tencalla",
+    "Österreich",
+    "Mitteleuropa",
+    "Region",
+    "Geographie",
+    "Erde",
+    "Dichte",
+    "Quotient",
+    "Mathematik",
+    "Formalwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Aflou",
+   "outcome": "philosophy",
+   "hops": 9,
+   "path": [
+    "Aflou",
+    "Provinz Aflou",
+    "Provinz",
+    "Römisches Reich",
+    "Rom",
+    "Hauptstadt",
+    "Symbol",
+    "Bedeutung (Sprachphilosophie)",
+    "Sprachphilosophie",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Gundi Jungmeier",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Gundi Jungmeier"
+   ]
+  },
+  {
+   "start": "Ralf Komorr",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Ralf Komorr",
+    "Deutschland",
+    "Bundesstaat (föderaler Staat)",
+    "Liste der Staaten der Erde",
+    "Staatsgebiet",
+    "Staatsvolk",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Afrikanische Borstenhörnchen",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Afrikanische Borstenhörnchen",
+    "Erdhörnchen",
+    "Hörnchen",
+    "Familie (Biologie)",
+    "Rangstufe (Biologie)",
+    "Nomenklatur (Biologie)",
+    "Lebewesen",
+    "Stoffwechsel",
+    "Chemie",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Finkenflug",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Finkenflug"
+   ]
+  },
+  {
+   "start": "Pneumohydraulischer Druckübersetzer",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Pneumohydraulischer Druckübersetzer",
+    "Hubkolbenpumpe",
+    "Pumpe",
+    "Fluid",
+    "Scherung (Mechanik)",
+    "Mechanik",
+    "Naturwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Historienmalerei",
+   "outcome": "loop",
+   "hops": 19,
+   "path": [
+    "Historienmalerei",
+    "Kunstgattung",
+    "Kunstgeschichte",
+    "Geisteswissenschaft",
+    "Deutsche Sprache",
+    "Westgermanische Sprachen",
+    "Germanische Sprachen",
+    "Indogermanische Sprachen",
+    "Muttersprache",
+    "Unterricht",
+    "Fertigkeit",
+    "Fähigkeit",
+    "Person",
+    "Umgangssprache",
+    "Standardvarietät",
+    "Varietät (Linguistik)",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Sumpffieber (Roman)",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Sumpffieber (Roman)",
+    "Vicente Blasco Ibáñez",
+    "Schriftsteller",
+    "Urheber",
+    "Person",
+    "Umgangssprache",
+    "Standardvarietät",
+    "Varietät (Linguistik)",
+    "Sprachwissenschaft",
+    "Sprache",
+    "System",
+    "System"
+   ]
+  },
+  {
+   "start": "Raeber",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Raeber"
+   ]
+  },
+  {
+   "start": "Seed key",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Seed key",
+    "Zufallszahlengenerator",
+    "Folge (Mathematik)",
+    "Mathematik",
+    "Formalwissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Barrell",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Barrell"
+   ]
+  },
+  {
+   "start": "Westphalia (Michigan)",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Westphalia (Michigan)",
+    "Village (Vereinigte Staaten)",
+    "Vereinigte Staaten",
+    "Verfassung der Vereinigten Staaten",
+    "Ratifikation",
+    "Juristische Fachsprache",
+    "Rechtswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Irlelo",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Irlelo",
+    "Osttimor",
+    "Inselstaat",
+    "Staat",
+    "Sozialwissenschaften",
+    "Gesellschaft (Soziologie)",
+    "Soziologie",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "ARINC 424",
+   "outcome": "philosophy",
+   "hops": 9,
+   "path": [
+    "ARINC 424",
+    "Datenformat",
+    "Datenverarbeitung",
+    "Daten",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Schurff",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Schurff"
+   ]
+  },
+  {
+   "start": "Cool Struttin’",
+   "outcome": "loop",
+   "hops": 16,
+   "path": [
+    "Cool Struttin’",
+    "Jazz-Piano",
+    "Klavier",
+    "Hammerklavier",
+    "Tasteninstrument",
+    "Musikinstrument",
+    "Musik",
+    "Individuum",
+    "Res",
+    "Sache",
+    "Gerichtsbarkeit",
+    "Gericht",
+    "Organ (Recht)",
+    "Recht",
+    "Wirksamkeit (Recht)",
+    "Rechtsfolge",
+    "Recht"
+   ]
+  },
+  {
+   "start": "CART-Saison 1986",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "CART-Saison 1986",
+    "Champ Car World Series",
+    "Vereinigte Staaten",
+    "Verfassung der Vereinigten Staaten",
+    "Ratifikation",
+    "Juristische Fachsprache",
+    "Rechtswissenschaft",
+    "Wissenschaft",
+    "Wissen",
+    "Tatsache",
+    "Wirklichkeit",
+    "Welt",
+    "Gesamtheit",
+    "Objekt (Philosophie)",
+    "Philosophie"
+   ]
+  }
+ ]
+}
