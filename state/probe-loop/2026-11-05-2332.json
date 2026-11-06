@@ -11,7 +11,7 @@
  "probes": [
   "P-0332"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-06T00:23:27+0000",
+ "stop_reason": "nothing runnable: 4 need something I do not have (P-0025: vim and neovim binaries (brew install if not already present, no accounts); P-0045: A small free model download from Hugging Face; Apple silicon; P-0080: a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form; P-0212: Node.js 26 per the README, which may need installing); 3 wait on a date (P-0226 after 2026-11-12; P-0233 after 2026-11-18; P-0311 after 2026-11-17); no refill: 9 min left, under the 15 needed for a refill",
  "refills": 1
 }
