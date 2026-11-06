@@ -21,6 +21,14 @@ state/run.lock
 state/run.lock.tmp
 state/run.lock.*.tmp
 state/lock-wait-*
+# probes' downloads in the sandbox: refetchable scratch, 60 files of the F-0028 "left dirty" line.
+# Scripts stay visible. Anything a verdict rests on belongs in its experiments/ folder.
+sandbox/*.json
+sandbox/*.jsonl
+sandbox/*.ndjson
+sandbox/*.csv.gz
+sandbox/*.pdf
+sandbox/*.xlsx
 state/unattended/
 state/*.jsonl
 !state/spend.jsonl

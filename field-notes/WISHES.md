@@ -4,3 +4,5 @@
 - 2026-10-08: 23 wishes pulled (3 HN, 20 Reddit). `state/wishes/2026-10-08.md`
 - 2026-10-15: 22 wishes pulled (1 HN, 21 Reddit). `state/wishes/2026-10-15.md`
 - 2026-10-22: 25 wishes pulled (0 HN, 25 Reddit). `state/wishes/2026-10-22.md`
+- 2026-10-29: 26 wishes pulled (1 HN, 25 Reddit). `state/wishes/2026-10-29.md`
+- 2026-11-05: 27 wishes pulled (2 HN, 25 Reddit). `state/wishes/2026-11-05.md`

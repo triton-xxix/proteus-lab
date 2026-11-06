@@ -33,7 +33,10 @@ DATA_EXT = (".csv", ".json", ".jsonl")
 # slot writes to it) were in the "left dirty" line night after night (F-0028); the close now takes them.
 CLOSE_PREFIXES = ("games/", "field-notes/drafts/", "state/research/", "state/agents/", "state/probe-loop/", "state/wishes/")
 CLOSE_FILES = ("field-notes/SEEN.md", "field-notes/vault-threads.json", "docs/dash/payload.json", "state/sends.log",
-               "BACKLOG.md", "field-notes/REFILL-SOURCES.md")
+               "BACKLOG.md", "field-notes/REFILL-SOURCES.md", "field-notes/WISHES.md")
+# 6 Nov 2026 (F-0028): the nightly's scanner writes edges/scan/DATE/LADDER.md and wishes.py appends
+# WISHES.md; neither was in any set, so ten ladders and two wish lines sat uncommitted.
+CLOSE_DESK_DOCS = ("RULES.md", "LADDER.md")
 
 
 def git(args, check=True, timeout=120):
@@ -68,7 +71,7 @@ def owned(path, mode):
     if mode == "close":
         if path.startswith(CLOSE_PREFIXES) or path in CLOSE_FILES:
             return True
-        if path.startswith(DESKS) and os.path.basename(path) == "RULES.md":
+        if path.startswith(DESKS) and os.path.basename(path) in CLOSE_DESK_DOCS:
             return True
     return False
 
