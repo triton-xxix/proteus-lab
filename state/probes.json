@@ -1,5 +1,5 @@
 {
- "next_id": 347,
+ "next_id": 348,
  "items": [
   {
    "id": "P-0001",
@@ -8604,6 +8604,32 @@
     "number": "mean METAR minus SYNOP TX within 0.3 C of zero at all three, and rounded agreement of 70 to 80% at each",
     "at": "2026-11-06T23:50:41+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0347",
+   "title": "EDDM METAR high against DWD 01262 TXK, 2021 to 2026, by month: does P-0345's winter 90% against July 66% hold over five years",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:52:07+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "winter same-degree share above summer by at least 8 points over five years, overall about 78%",
+    "at": "2026-11-06T23:52:08+0000"
    }
   }
  ]
