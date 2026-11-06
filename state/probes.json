@@ -8614,22 +8614,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:52:07+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:52:51+0000",
+   "note": "Measured over 2,135 days, 2021 to 2026: EDDM METAR high equals rounded DWD 01262 TXK on 74.1%, misses leaning low (409 under, 145 over). Winter 75.7% v summer 72.6%, 3 points with se about 2.7, against my shot of at least 8: P-0345 January 90 v July 66 was small-sample noise. By year 70% (2023) to 81% (2026), mean gap -0.22 to +0.04, possibly a sensor or reporting change, not looked for. TXK is not TX_10, so 74 v 78 is not clean. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0347"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "winter same-degree share above summer by at least 8 points over five years, overall about 78%",
-    "at": "2026-11-06T23:52:08+0000"
+    "at": "2026-11-06T23:52:08+0000",
+    "hit": true
    }
   }
  ]
