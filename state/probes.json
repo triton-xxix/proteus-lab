@@ -1,5 +1,5 @@
 {
- "next_id": 346,
+ "next_id": 347,
  "items": [
   {
    "id": "P-0001",
@@ -8575,6 +8575,32 @@
     "number": "METAR high equals rounded TX_10 on about 65% of days, and report times explain most of the differences",
     "at": "2026-11-06T23:49:38+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0346",
+   "title": "Whole-degree METAR high against SYNOP TX at Heathrow, Orly and Munich airport, Sep to Oct: is the gap the same size at all three",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:50:25+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "mean METAR minus SYNOP TX within 0.3 C of zero at all three, and rounded agreement of 70 to 80% at each",
+    "at": "2026-11-06T23:50:41+0000"
    }
   }
  ]
