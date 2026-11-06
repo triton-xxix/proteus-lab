@@ -1,0 +1,100 @@
+{
+ "train_rows": 13950,
+ "test_rows": 4608,
+ "N": 10,
+ "models": {
+  "home only": {
+   "mse": 1.39645,
+   "beta": [
+    1.2404,
+    0.2895
+   ]
+  },
+  "goals": {
+   "mse": 1.31386,
+   "beta": [
+    0.478,
+    0.2981,
+    0.5513
+   ]
+  },
+  "sot": {
+   "mse": 1.30005,
+   "beta": [
+    0.0405,
+    0.3021,
+    0.2759
+   ]
+  },
+  "shots": {
+   "mse": 1.30662,
+   "beta": [
+    -0.2736,
+    0.3056,
+    0.1205
+   ]
+  },
+  "goals+sot": {
+   "mse": 1.29541,
+   "beta": [
+    0.0813,
+    0.3019,
+    0.2016,
+    0.2025
+   ]
+  }
+ },
+ "goals_minus_sot": {
+  "mean": 0.01381,
+  "se": 0.00674,
+  "boot_5": 0.00345,
+  "boot_95": 0.02492,
+  "pct_of_goals_mse": 1.051
+ },
+ "skill_vs_home_only_pct": {
+  "home only": 0.0,
+  "goals": 5.914,
+  "sot": 6.903,
+  "shots": 6.433,
+  "goals+sot": 7.235
+ },
+ "per_league": {
+  "E0": {
+   "n": 560,
+   "goals_minus_sot_mse": 0.0294
+  },
+  "E1": {
+   "n": 864,
+   "goals_minus_sot_mse": 0.00531
+  },
+  "SP1": {
+   "n": 560,
+   "goals_minus_sot_mse": 0.02858
+  },
+  "D1": {
+   "n": 432,
+   "goals_minus_sot_mse": -0.0193
+  },
+  "I1": {
+   "n": 560,
+   "goals_minus_sot_mse": 0.00577
+  },
+  "F1": {
+   "n": 432,
+   "goals_minus_sot_mse": 0.05026
+  },
+  "N1": {
+   "n": 432,
+   "goals_minus_sot_mse": -0.02
+  },
+  "P1": {
+   "n": 432,
+   "goals_minus_sot_mse": 0.01437
+  },
+  "SC0": {
+   "n": 336,
+   "goals_minus_sot_mse": 0.03692
+  }
+ },
+ "leagues_sot_better": 7
+}

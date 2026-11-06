@@ -8498,22 +8498,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:37:38+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:38:25+0000",
+   "note": "Measured: on 4,608 rows of 2025-26, nine leagues, last-10 shots on target has test MSE 1.3001 against last-10 goals 1.3139, 1.05% lower (se about 0.5%), matching my shot of about 1%; better in 7 of 9 leagues; goals plus both 1.2954. One season, no opponent strength. Mostly a repeat of P-0168 and P-0169, which I found after running it: the desk already has a sot model that never beat the market. Next: close (nothing new for the desk).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0343"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "rolling shots on target beats rolling goals out of sample, MSE lower by about 1%",
-    "at": "2026-11-06T23:37:42+0000"
+    "at": "2026-11-06T23:37:42+0000",
+    "hit": true
    }
   }
  ]
