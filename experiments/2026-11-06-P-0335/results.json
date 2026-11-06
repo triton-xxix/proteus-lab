@@ -1,0 +1,260 @@
+{
+ "note": "UTC days; correction +0.3 is the nightly's airport figure, +1.0 its city figure",
+ "leads": {
+  "0": {
+   "city grid +1.0 (the nightly)": {
+    "days": 24,
+    "mean_metar_minus": -0.77,
+    "sd": 1.0,
+    "mae": 1.05,
+    "exact": 5,
+    "exact_pct": 21
+   },
+   "city grid +0": {
+    "days": 24,
+    "mean_metar_minus": 0.23,
+    "sd": 1.0,
+    "mae": 0.83,
+    "exact": 11,
+    "exact_pct": 46
+   },
+   "airport grid +0": {
+    "days": 24,
+    "mean_metar_minus": 0.19,
+    "sd": 0.44,
+    "mae": 0.38,
+    "exact": 17,
+    "exact_pct": 71
+   },
+   "airport grid +0.3": {
+    "days": 24,
+    "mean_metar_minus": -0.11,
+    "sd": 0.44,
+    "mae": 0.36,
+    "exact": 17,
+    "exact_pct": 71
+   }
+  },
+  "1": {
+   "city grid +1.0 (the nightly)": {
+    "days": 24,
+    "mean_metar_minus": -0.97,
+    "sd": 0.87,
+    "mae": 1.05,
+    "exact": 6,
+    "exact_pct": 25
+   },
+   "city grid +0": {
+    "days": 24,
+    "mean_metar_minus": 0.03,
+    "sd": 0.87,
+    "mae": 0.67,
+    "exact": 9,
+    "exact_pct": 38
+   },
+   "airport grid +0": {
+    "days": 24,
+    "mean_metar_minus": 0.15,
+    "sd": 1.56,
+    "mae": 1.13,
+    "exact": 8,
+    "exact_pct": 33
+   },
+   "airport grid +0.3": {
+    "days": 24,
+    "mean_metar_minus": -0.15,
+    "sd": 1.56,
+    "mae": 1.15,
+    "exact": 7,
+    "exact_pct": 29
+   }
+  },
+  "2": {
+   "city grid +1.0 (the nightly)": {
+    "days": 24,
+    "mean_metar_minus": -0.93,
+    "sd": 1.68,
+    "mae": 1.25,
+    "exact": 10,
+    "exact_pct": 42
+   },
+   "city grid +0": {
+    "days": 24,
+    "mean_metar_minus": 0.07,
+    "sd": 1.68,
+    "mae": 1.06,
+    "exact": 6,
+    "exact_pct": 25
+   },
+   "airport grid +0": {
+    "days": 24,
+    "mean_metar_minus": -0.02,
+    "sd": 1.4,
+    "mae": 0.9,
+    "exact": 11,
+    "exact_pct": 46
+   },
+   "airport grid +0.3": {
+    "days": 24,
+    "mean_metar_minus": -0.32,
+    "sd": 1.4,
+    "mae": 0.95,
+    "exact": 9,
+    "exact_pct": 38
+   }
+  }
+ },
+ "lead1_split": {
+  "fit_days": 12,
+  "test_days": 12,
+  "fitted_add": 0.45,
+  "test_exact_airport_fitted": 3,
+  "test_exact_city_plus1": 4
+ },
+ "days_lead1": [
+  {
+   "day": "2026-10-13",
+   "metar": 15,
+   "nightly_city_plus1": 17,
+   "airport_plus0.3": 15
+  },
+  {
+   "day": "2026-10-14",
+   "metar": 18,
+   "nightly_city_plus1": 18,
+   "airport_plus0.3": 18
+  },
+  {
+   "day": "2026-10-15",
+   "metar": 18,
+   "nightly_city_plus1": 19,
+   "airport_plus0.3": 16
+  },
+  {
+   "day": "2026-10-16",
+   "metar": 20,
+   "nightly_city_plus1": 20,
+   "airport_plus0.3": 16
+  },
+  {
+   "day": "2026-10-17",
+   "metar": 15,
+   "nightly_city_plus1": 16,
+   "airport_plus0.3": 15
+  },
+  {
+   "day": "2026-10-18",
+   "metar": 16,
+   "nightly_city_plus1": 18,
+   "airport_plus0.3": 18
+  },
+  {
+   "day": "2026-10-19",
+   "metar": 14,
+   "nightly_city_plus1": 16,
+   "airport_plus0.3": 16
+  },
+  {
+   "day": "2026-10-20",
+   "metar": 9,
+   "nightly_city_plus1": 13,
+   "airport_plus0.3": 13
+  },
+  {
+   "day": "2026-10-21",
+   "metar": 11,
+   "nightly_city_plus1": 12,
+   "airport_plus0.3": 11
+  },
+  {
+   "day": "2026-10-22",
+   "metar": 13,
+   "nightly_city_plus1": 14,
+   "airport_plus0.3": 13
+  },
+  {
+   "day": "2026-10-23",
+   "metar": 11,
+   "nightly_city_plus1": 12,
+   "airport_plus0.3": 10
+  },
+  {
+   "day": "2026-10-24",
+   "metar": 11,
+   "nightly_city_plus1": 10,
+   "airport_plus0.3": 10
+  },
+  {
+   "day": "2026-10-25",
+   "metar": 14,
+   "nightly_city_plus1": 16,
+   "airport_plus0.3": 14
+  },
+  {
+   "day": "2026-10-26",
+   "metar": 12,
+   "nightly_city_plus1": 12,
+   "airport_plus0.3": 11
+  },
+  {
+   "day": "2026-10-27",
+   "metar": 16,
+   "nightly_city_plus1": 18,
+   "airport_plus0.3": 15
+  },
+  {
+   "day": "2026-10-28",
+   "metar": 12,
+   "nightly_city_plus1": 14,
+   "airport_plus0.3": 13
+  },
+  {
+   "day": "2026-10-29",
+   "metar": 10,
+   "nightly_city_plus1": 10,
+   "airport_plus0.3": 9
+  },
+  {
+   "day": "2026-10-30",
+   "metar": 11,
+   "nightly_city_plus1": 12,
+   "airport_plus0.3": 12
+  },
+  {
+   "day": "2026-10-31",
+   "metar": 9,
+   "nightly_city_plus1": 10,
+   "airport_plus0.3": 10
+  },
+  {
+   "day": "2026-11-01",
+   "metar": 8,
+   "nightly_city_plus1": 9,
+   "airport_plus0.3": 9
+  },
+  {
+   "day": "2026-11-02",
+   "metar": 7,
+   "nightly_city_plus1": 7,
+   "airport_plus0.3": 8
+  },
+  {
+   "day": "2026-11-03",
+   "metar": 6,
+   "nightly_city_plus1": 8,
+   "airport_plus0.3": 7
+  },
+  {
+   "day": "2026-11-04",
+   "metar": 7,
+   "nightly_city_plus1": 8,
+   "airport_plus0.3": 9
+  },
+  {
+   "day": "2026-11-05",
+   "metar": 10,
+   "nightly_city_plus1": 10,
+   "airport_plus0.3": 10
+  }
+ ]
+}

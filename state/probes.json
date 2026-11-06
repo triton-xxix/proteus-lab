@@ -8275,22 +8275,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T12:36:16+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T12:37:06+0000",
+   "note": "Measured against the METAR high over 24 days at lead 1: airport ICON +0.15 C and 33% exact, against my shot of +0.1 and 35%. The nightly rule (city grid +1.0) runs -0.97 C (t about -5.5), MAE 1.05, 25% exact; city grid +0 is +0.03, MAE 0.67, 38%. Dropping the +1 cuts MAE at all three leads but exact hit falls at lead 2, 42% to 25%, se about 10 points. Airport grid lead 1 sd 1.56 against city 0.87, the opposite of what I expected. All of it rests on the P-0334 rule, unconfirmed until X-0046 settles; D-023 holds that. Nothing changed in the nightly. Next: close until D-023 is scored.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0335"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "METAR high minus airport ICON day-ahead about +0.1 C; exact-degree hit about 35 percent at lead 1",
-    "at": "2026-11-06T12:36:23+0000"
+    "at": "2026-11-06T12:36:23+0000",
+    "hit": true
    }
   }
  ]
