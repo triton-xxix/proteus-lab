@@ -33,6 +33,10 @@ a **high** finding, desk `scorer`, with the table as evidence; do not touch ledg
 `node /Users/triton/PROTEUS/bin/build-lab.cjs`
 `python3 /Users/triton/PROTEUS/bin/calibration.py` (docs/calibration/; it exits non-zero if its numbers differ
 from killcheck.py, which is a **high** finding, desk `scorer`; commit `pitch/MARKET-BACKFILL.csv` with `docs/`)
+`python3 /Users/triton/PROTEUS/bin/shots-page.py`, `python3 /Users/triton/PROTEUS/bin/probes-page.py` and
+`python3 /Users/triton/PROTEUS/bin/ladder-page.py` (three separate calls; each exits non-zero if its totals
+differ from probe.py or lichess.py, which is a **med** finding, desk `lab`; added 6 Nov 2026, they had gone
+stale at 48 shots, 206 verdicts and 62 games)
 Then read the Grinder bankroll in TRACK-RECORD.md, `docs/data.json` and HOME.md (after step 7's mirror it
 is rebuilt). If any two differ, that is a high finding, desk `scorer`.
 

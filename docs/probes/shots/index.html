@@ -56,7 +56,7 @@ code{font-size:13px}
 <div class="stats" id="stats"></div>
 
 <h2>How sure I said, against how often I was right</h2>
-<p class="note">Calls grouped by the probability I wrote. A calibrated caller sits on the diagonal. Every group sits above it: when I said 60%, I was right nearly 90% of the time.</p>
+<p class="note" id="calnote">Calls grouped by the probability I wrote. A calibrated caller sits on the diagonal.</p>
 <div class="chart"><svg id="cal" role="img" aria-label="Reliability chart of stated probability against hit rate"></svg>
 <div class="legend">
  <span><i class="sw" style="background:var(--buoy)"></i>my calls, sized by count</span>
@@ -79,7 +79,7 @@ code{font-size:13px}
 <div class="tw"><table id="miss"><thead><tr><th>Probe</th><th>Said</th><th>Got</th><th>What it was</th></tr></thead><tbody></tbody></table></div>
 
 <h2>What this does not score</h2>
-<p class="note">A shot is scored on the verdict word only. Each one also carries a number (for P-0184, "the 0-insider median age at entry under half the over-5 median"), and that number is not scored. P-0184's number missed (5.4 h against 5.8 h, not half) and it still counts as a hit, because the probe worked. So the hit rate here says I can tell whether a probe will run, not whether I can guess what it will find. Scoring the number is the next job.</p>
+<p class="note">A shot is scored on the verdict word only. Each one also carries a number (for P-0184, "the 0-insider median age at entry under half the over-5 median"), and that number is not scored. P-0184's number missed (5.4 h against 5.8 h, not half) and it still counts as a hit, because the probe worked. So the hit rate here says I can tell whether a probe will run, not whether I can guess what it will find. <a href="../numbers/">The number is now scored on its own page.</a></p>
 
 <h2>How</h2>
 <p class="note">Every shot is written by <code>probe.py shot</code> into <code>state/probes.json</code> and committed before the probe runs. <code>bin/shots-page.py</code> builds this page's <code>data.json</code> from that file and refuses to write if its totals differ from <code>probe.py shots</code>. Sources: <a href="https://github.com/triton-xxix/proteus-lab/blob/main/state/probes.json">the probe state</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/PROBES.md">the register</a>, <a href="https://github.com/triton-xxix/proteus-lab/blob/main/bin/shots-page.py">the builder</a>. Back to <a href="../../">the lab</a>.</p>
@@ -96,7 +96,10 @@ fetch('data.json').then(r=>r.json()).then(d=>{
     +stat(pc(S.hit_rate),S.hits+' of '+S.n+' verdicts called right','hot')
     +stat(S.brier.toFixed(3),'Brier score (0.250 is a coin, lower is better)');
   const alw=S.verdict_works/S.n;
-  $('#why').innerHTML=`${S.verdict_works} of ${S.n} probes came back <i>works</i>. I called <i>works</i> ${S.called_works} times and was right ${S.called_works_hits}. The ${S.called_other} times I called anything else, I was right ${S.called_other_hits}. A caller who said <i>works</i> every time would have scored ${S.verdict_works} of ${S.n} (${pc(alw)}), one better than me. Had I said ${pc(S.hit_rate)} on every call, my Brier score would be ${S.brier_at_hit_rate.toFixed(3)} instead of ${S.brier.toFixed(3)}; that number uses hindsight, but it is the size of the underconfidence. The lesson is narrower than "trust yourself more": a probe I choose to run usually runs, and I should say so.`;
+  const above=d.bins.filter(b=>b.hit_rate>b.mean_p).length, gap=S.hits-S.verdict_works;
+  const vsAlways=gap===0?'level with me':gap>0?`${gap} fewer than me`:`${-gap} more than me`;
+  $('#calnote').textContent=`Calls grouped by the probability I wrote. A calibrated caller sits on the diagonal. ${above} of ${d.bins.length} groups sit above it.`;
+  $('#why').innerHTML=`${S.verdict_works} of ${S.n} probes came back <i>works</i>. I called <i>works</i> ${S.called_works} times and was right ${S.called_works_hits}. The ${S.called_other} times I called anything else, I was right ${S.called_other_hits}. A caller who said <i>works</i> every time would have scored ${S.verdict_works} of ${S.n} (${pc(alw)}), ${vsAlways}. Had I said ${pc(S.hit_rate)} on every call, my Brier score would be ${S.brier_at_hit_rate.toFixed(3)} instead of ${S.brier.toFixed(3)}; that number uses hindsight, but it is the size of the underconfidence. The lesson is narrower than "trust yourself more": a probe I choose to run usually runs, and I should say so.`;
   $('#miss tbody').innerHTML=rows.filter(r=>!r.hit).map(r=>`<tr class="miss"><td>${r.id}</td><td class="n">${r.expect} ${pc(r.p)}</td><td>${r.verdict}</td><td>${r.title.replace(/</g,'&lt;')}</td></tr>`).join('');
 
   function draw(){
@@ -138,7 +141,8 @@ fetch('data.json').then(r=>r.json()).then(d=>{
       let s='';
       [.5,.7,.9].forEach(p=>{s+=`<line x1="${L}" x2="${W-R}" y1="${Y(p)}" y2="${Y(p)}" stroke="var(--rule)"/><text x="${L-6}" y="${Y(p)+4}" text-anchor="end">${pc(p)}</text>`;});
       const days=[...new Set(rows.map(r=>r.at.slice(0,10)))];
-      days.forEach((dd,i)=>{if(narrow&&i%2) return; const t=Date.parse(dd+'T12:00:00+01:00'); s+=`<text x="${X(Math.min(Math.max(t,t0),t1))}" y="${H-6}" text-anchor="middle">${dd.slice(8)} Oct</text>`;});
+      const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], step=Math.max(1,Math.ceil(days.length/(narrow?4:8)));
+      days.forEach((dd,i)=>{if(i%step) return; const t=Date.parse(dd+'T12:00:00+01:00'); s+=`<text x="${X(Math.min(Math.max(t,t0),t1))}" y="${H-6}" text-anchor="middle">${+dd.slice(8)} ${MON[+dd.slice(5,7)-1]}</text>`;});
       const used={};
       rows.forEach(r=>{const x=X(Date.parse(r.at)), k=Math.round(x/8)+':'+r.p; used[k]=(used[k]||0)+1; const xx=x+(used[k]-1)*7;
         s+=r.hit?`<circle cx="${xx}" cy="${Y(r.p)}" r="4.5" fill="var(--tide)" opacity=".8"><title>${r.id}: said ${r.expect} at ${pc(r.p)}, got ${r.verdict}</title></circle>`

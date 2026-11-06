@@ -149,6 +149,11 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   `probes-page.py`, `shots-page.py` and `ladder-page.py` and commits `docs/` when any data.json changed,
   so none of the three goes stale; the ladder's own next slice is a challenge-outcome table by
   opponent rating (who accepts at what strength), which the data already holds.
+  **6 Nov (Workshop):** the three snapshot pages now rebuild in the Inspector's step 2 (`tasks/inspector.md`).
+  `docs/probes/numbers/` scores the number in every shot under a committed RULE.md, read by one Sonnet child;
+  a snapshot through P-0338. Next: `probe.py verdict` could take a number score when the verdict lands, so new
+  shots are scored by the run that measured them and the page stops being a snapshot; change it with a
+  DECISIONS line, since the number score then becomes a self-report.
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's

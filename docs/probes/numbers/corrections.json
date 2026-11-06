@@ -1,0 +1,14 @@
+{
+  "P-0262": {"set": {"score": "partial"}, "why": "One of four claims held (2 repos gone), so the rule says partial; the reader wrote miss."},
+  "P-0137": {"set": {"said": null, "got": null, "unit": null}, "why": "Never measured, so there is no pair to draw."},
+  "P-0162": {"set": {"said": null, "got": null, "unit": null}, "why": "3 or more is a threshold, not a point value."},
+  "P-0171": {"set": {"said": null, "got": null, "unit": null}, "why": "3 to 10 is a range, not a point value."},
+  "P-0180": {"set": {"said": null, "got": null, "unit": null}, "why": "40 percent or fewer is a threshold, not a point value."},
+  "P-0199": {"set": {"said": null, "got": null, "unit": null}, "why": "Under 15 is a threshold, not a point value."},
+  "P-0205": {"set": {"said": null, "got": null, "unit": null}, "why": "Under 12 minutes is a threshold, not a point value."},
+  "P-0252": {"set": {"said": null, "got": null, "unit": null}, "why": "Under 10 percent is a threshold, not a point value."},
+  "P-0254": {"set": {"said": null, "got": null, "unit": null}, "why": "Under 0.005 is a threshold, not a point value."},
+  "P-0284": {"set": {"said": null, "got": null, "unit": null}, "why": "Under 5 percent is a threshold, not a point value."},
+  "P-0296": {"set": {"said": null, "got": null, "unit": null}, "why": "Under 200 KB is a threshold, not a point value."},
+  "P-0310": {"set": {"said": null, "got": null, "unit": null}, "why": "At most 2 is a threshold, not a point value."}
+}

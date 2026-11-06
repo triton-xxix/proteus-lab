@@ -1,50 +1,50 @@
 {
  "summary": {
-  "n": 48,
+  "n": 122,
   "waiting": 0,
-  "hits": 42,
-  "hit_rate": 0.875,
-  "mean_p": 0.62,
-  "brier": 0.173,
-  "brier_at_hit_rate": 0.109,
-  "called_works": 41,
-  "called_works_hits": 39,
-  "called_other": 7,
-  "called_other_hits": 3,
-  "verdict_works": 43,
+  "hits": 112,
+  "hit_rate": 0.918,
+  "mean_p": 0.66,
+  "brier": 0.146,
+  "brier_at_hit_rate": 0.075,
+  "called_works": 111,
+  "called_works_hits": 106,
+  "called_other": 11,
+  "called_other_hits": 6,
+  "verdict_works": 111,
   "first": "2026-10-12",
-  "last": "2026-10-20"
+  "last": "2026-11-06"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 8,
-   "mean_p": 0.494,
-   "hit_rate": 0.75
+   "n": 15,
+   "mean_p": 0.493,
+   "hit_rate": 0.867
   },
   {
    "label": "55%",
-   "n": 8,
+   "n": 12,
    "mean_p": 0.55,
-   "hit_rate": 0.875
+   "hit_rate": 0.833
   },
   {
    "label": "60 to 65%",
-   "n": 18,
-   "mean_p": 0.608,
-   "hit_rate": 0.889
+   "n": 37,
+   "mean_p": 0.614,
+   "hit_rate": 0.919
   },
   {
    "label": "70 to 75%",
-   "n": 10,
-   "mean_p": 0.71,
-   "hit_rate": 0.9
+   "n": 40,
+   "mean_p": 0.722,
+   "hit_rate": 0.95
   },
   {
    "label": "80% and up",
-   "n": 4,
-   "mean_p": 0.838,
-   "hit_rate": 1.0
+   "n": 18,
+   "mean_p": 0.828,
+   "hit_rate": 0.944
   }
  ],
  "rows": [
@@ -527,6 +527,746 @@
    "hit": 1,
    "number": "missing-field share in the 0-insider rows within 15 points of the over-5 rows (0 is a real reading, not a blank)",
    "at": "2026-10-20T12:38:48+0100"
+  },
+  {
+   "id": "P-0012",
+   "title": "Which of this month's AI builder tools from Field Notes still run cleanly a month later",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "3 of the 4 W39 tools (hyperframes-student-kit, reladraw, magpie, golive-skill) still run cleanly a month on; the hyperframes render is the likely drift",
+   "at": "2026-10-22T12:32:03+0100"
+  },
+  {
+   "id": "P-0191",
+   "title": "Kaggle Time Series lesson 4 (partial autocorrelation picks lags) on the systems book: PACF of daily returns for the 9 index ETFs, Yahoo 2y b",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "lag 1 PACF of daily returns negative in 7 of 9 ETFs, and about 1 lag per ETF (of lags 1-10) outside the 95% band, the chance rate",
+   "at": "2026-10-22T12:35:26+0100"
+  },
+  {
+   "id": "P-0192",
+   "title": "Fresh install today of the four W39 tools (reladraw from npm, golive@alpha from npm, magpie HEAD tarball, hyperframes-student-kit tarball) a",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "fresh installs give the September answers in 4 of 4; at least one version bumped since 26 Sep (reladraw past 0.5.0 or hyperframes past 0.7.109), hyperframes the likeliest to differ",
+   "at": "2026-10-22T12:37:26+0100"
+  },
+  {
+   "id": "P-0193",
+   "title": "P-0191 out of sample: PACF lags 1-10 of daily returns for the 9 systems-book ETFs on the prior 2y window (Yahoo range=5y, keep 2022-10 to 20",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "on 2022-10 to 2024-10 lag 3 is outside the 95% band in 1 of 9 ETFs (chance, it does not hold) and lag 1 is negative in 6 of 9",
+   "at": "2026-10-22T12:41:32+0100"
+  },
+  {
+   "id": "P-0198",
+   "title": "Called shots reliability: bin every scored called shot by stated probability, plot mean forecast v hit rate with counts (sklearn calibration",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "reliability term about 0.03 of a Brier near 0.17, resolution smaller than uncertainty",
+   "at": "2026-10-23T12:31:48+0100"
+  },
+  {
+   "id": "P-0199",
+   "title": "Glicko-2 replay: rebuild my Lichess rating game by game from games/lichess/GAMES.csv with Glickman's Glicko-2 example (glicko.net/glicko/gli",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "mean absolute gap to the printed rating under 15 points per rated game, with opponent RD assumed 60",
+   "at": "2026-10-23T12:33:22+0100"
+  },
+  {
+   "id": "P-0200",
+   "title": "Kelly replay of the exchange book (Thorp): stake full and half Kelly on each settled call in exchange/BOOK.csv from my p against market_mid,",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "full Kelly ends below 70 of a 100 start, half Kelly below 90, flat stakes negative",
+   "at": "2026-10-23T12:35:57+0100"
+  },
+  {
+   "id": "P-0201",
+   "title": "pYIN pitch tracker: does it recover a synthetic sung melody within 50 cents on 90 percent of voiced frames?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "about 95 percent of voiced frames within 50 cents on a synthetic harmonic melody with vibrato; failures at note boundaries",
+   "at": "2026-10-23T23:37:19+0100"
+  },
+  {
+   "id": "P-0202",
+   "title": "402mcp decode endpoint: does it parse a hand-built x402 challenge and name the retry header correctly?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "the decode endpoint returns scheme x402 and names X-PAYMENT as the retry header for a hand-built challenge; the risk is that no public endpoint is up and the server has to run locally",
+   "at": "2026-10-23T23:39:04+0100"
+  },
+  {
+   "id": "P-0203",
+   "title": "track_edges.py: does it recover a known 2 percent sway in a synthetic clip to within half a point?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "the tracker's per-frame edge extents swing by 2.0 plus or minus 0.5 percent of frame width on a synthetic rectangle swaying 2 percent; risk is a dependency it cannot install or an output in pixels I must convert",
+   "at": "2026-10-23T23:41:10+0100"
+  },
+  {
+   "id": "P-0204",
+   "title": "Octocrawl hosted scrape: does keyless Markdown output keep 90 percent of a plain fetch's words on three public pages?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "Markdown keeps 90 percent or more of the plain-fetch words on 3 of 3 pages, with the risk that the hosted endpoint wants a key and the verdict turns blocked",
+   "at": "2026-10-23T23:43:29+0100"
+  },
+  {
+   "id": "P-0205",
+   "title": "Nightly step profile from the hook log: which gaps between consecutive tool calls in state/unattended-decisions-*.jsonl are the longest acro",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "over the last seven nightlies the longest single gap is a desk script or a child wait of under 12 minutes, and no one step owns more than a quarter of a run's span",
+   "at": "2026-10-23T23:46:39+0100"
+  },
+  {
+   "id": "P-0206",
+   "title": "FActScore-style check of tonight's harvest child: split each kept item's claim and mechanism into atomic facts (numbers, names, counts), loo",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "about 85 percent of the child's atomic facts found in its source text, and one or two contradicted; shot after looking at the Octocrawl claim, whose five pages a day I had already seen disagree with the README's twenty",
+   "at": "2026-10-23T23:49:19+0100"
+  },
+  {
+   "id": "P-0208",
+   "title": "Two-proportion test on Lichess accept rates by bot rating (OpenIntro ch 6.2): from games/lichess/CHALLENGES.csv split opponents at 1750, com",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "Fisher exact two-sided p about 0.10 for weak (below 1750) v strong accept rates; success-failure condition fails (weak group expects under 5 accepts); shot after looking at the accept counts in CHALLENGES.csv",
+   "at": "2026-10-24T12:34:09+0100"
+  },
+  {
+   "id": "P-0209",
+   "title": "Lichess accept rate by week (deepen of P-0208, OpenIntro 6.4 chi-square test of homogeneity): from games/lichess/CHALLENGES.csv bucket chall",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "chi-square homogeneity over three ISO weeks (41 to 43) p about 0.5, no week significant; every expected cell at least 5; shot after seeing the dated accept list in P-0208",
+   "at": "2026-10-24T12:35:23+0100"
+  },
+  {
+   "id": "P-0210",
+   "title": "Noise-area intraday momentum (Concretum Group, Zarattini and Aziz 2024, Beat the Market, via Quantocracy) added to edges/scan/scan.py: band ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "rule runs through the ladder; SPY W1 net below zero and the rule does not climb all three rungs on any stock",
+   "at": "2026-10-24T12:37:36+0100"
+  },
+  {
+   "id": "P-0211",
+   "title": "Noise-area momentum, VWAP trailing stop (deepen of P-0210, the paper's headline version): same 14-day band entry, but the stop is the day's ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "W1 net still below zero but better than the band stop (-8.97%), win rate above 30%, rungs 0",
+   "at": "2026-10-24T12:39:25+0100"
+  },
+  {
+   "id": "P-0216",
+   "title": "Partial pooling of Grinder entry buckets (Statistical Rethinking lecture 12): bucket LEDGER.csv and PATHS.csv trades by entry_liq_usd decile",
+   "expect": "works",
+   "verdict": "not-worth-it",
+   "p": 0.7,
+   "hit": 0,
+   "number": "pooled MSE over raw MSE about 0.7",
+   "at": "2026-10-25T12:32:27+0000"
+  },
+  {
+   "id": "P-0217",
+   "title": "Postmortem score of the findings cycle (Google SRE book, postmortem chapter): for every row in state/loop/findings.jsonl, mark whether it ha",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "about 40 percent of fixed rows carry a commit, a check and a stated cause",
+   "at": "2026-10-25T12:34:43+0000"
+  },
+  {
+   "id": "P-0224",
+   "title": "Lichess cloud eval as referee: how many of P-0214's 32 positions does lichess.org/api/cloud-eval cover, and on the covered ones does the pla",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "cloud covers about 10 of 32 positions, mostly the move-9 ones",
+   "at": "2026-10-26T12:32:56+0000"
+  },
+  {
+   "id": "P-0225",
+   "title": "Munich ICON cold bias out of sample: rerun the 13 Oct previous-runs day-ahead method on 13 to 25 Oct only (DWD 03379 Stadt and 01262 Flughaf",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "ICON Stadt bias about -0.8C over 13 to 25 Oct (inside -1.5 to -0.5)",
+   "at": "2026-10-26T12:38:40+0000"
+  },
+  {
+   "id": "P-0231",
+   "title": "Munich ICON-EPS band, the days the API keeps: Open-Meteo ensemble API returns only 24 to 27 Oct with past_days (nulls before). For 24 to 26 ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "band width about 1.0C, 1 of 3 Stadt highs inside the 10 to 90 band",
+   "at": "2026-10-27T12:32:47+0000"
+  },
+  {
+   "id": "P-0232",
+   "title": "ICON-EPS day-ahead band capture: write experiments/2026-10-27-P-0231/capture.py that appends tomorrow's 39-member Munich high (p10, p90, con",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "first captured row for 28 Oct with a 10 to 90 width under 1.5C",
+   "at": "2026-10-27T12:33:44+0000"
+  },
+  {
+   "id": "P-0234",
+   "title": "LMR in P-0214's engine: add late move reductions (first 2 moves full depth; quiet, non-check moves after that reduced 1 ply at depth 3 or mo",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "about 40% fewer nodes at depth 4, effective branching factor above 2, mean move cost within 10 cp of no-LMR",
+   "at": "2026-10-27T12:35:27+0000"
+  },
+  {
+   "id": "P-0150",
+   "title": "new-term-radar scoring step: 14 days on from P-0145, score its 34 capped survivors (experiments/2026-10-14-P-0145/results.json, of_54.surviv",
+   "expect": "broken",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 0,
+   "number": "0 of 34 scored, Google Trends answers 429 to a keyless scripted pull",
+   "at": "2026-10-28T12:31:18+0000"
+  },
+  {
+   "id": "P-0240",
+   "title": "Our own coin, observed: seven called shots S1-S7 on the first hour of a no-creator-buy pump.fun launch Luke si (DUE.md D-014): experiments/2",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.9,
+   "hit": 1,
+   "number": "0 launches: no mint address in the folder, the coin needs Luke to sign",
+   "at": "2026-10-28T12:34:06+0000"
+  },
+  {
+   "id": "P-0241",
+   "title": "DWD Munich Stadt (03379) 10-minute air temperature, keyless zip 10minutenwerte_TU_03379_akt.zip: over the last 60 days, by what local hour i",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "90 percent of days have their high by 16:00 local (Europe/Berlin)",
+   "at": "2026-10-28T12:34:55+0000"
+  },
+  {
+   "id": "P-0242",
+   "title": "Murphy decomposition of my called shots: split the Brier from probe.py shots into REL, RES and UNC (BS = REL - RES + UNC, exact only when gr",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "RES below 0.03 and below REL: my miss is mostly not telling probes apart",
+   "at": "2026-10-28T12:36:10+0000"
+  },
+  {
+   "id": "P-0243",
+   "title": "Systems book RSI(5) backtest 2009-26 split by VIX close on the entry signal day (FRED VIXCLS keyless, sandbox/fred/VIXCLS.csv, 9303 days fro",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "high-VIX tercile mean trade at least 2x the low tercile, and only the high tercile beats its same-tercile random control at p under 0.05",
+   "at": "2026-10-28T12:37:01+0000"
+  },
+  {
+   "id": "P-0244",
+   "title": "Deepen P-0243: RSI(5) book with a skip rule when the signal-day VIX close is under 15, cut points set walk-forward (expanding-window tercile",
+   "expect": "not-worth-it",
+   "verdict": "not-worth-it",
+   "p": 0.6,
+   "hit": 1,
+   "number": "skip drops about 20 percent of trades, lifts net mean per trade by about 0.1 points, and lowers total growth v the unfiltered book",
+   "at": "2026-10-28T12:39:03+0000"
+  },
+  {
+   "id": "P-0252",
+   "title": "RSI(5) book split by VIX/VIX3M on the signal day (FRED VIXCLS / VXVCLS, from 2009): backwardation (ratio >= 1) v contango, each against the ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "backwardation under 10 percent of the 966 trades (about 70), its excess over control not significant (p above 0.05)",
+   "at": "2026-10-29T12:32:31+0000"
+  },
+  {
+   "id": "P-0253",
+   "title": "Deepen P-0252: RSI(5) book with a skip rule when VIX/VIX3M on the signal day is at or above 1; full book v skip book, each in two halves (20",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "skip book beats full book after 0.1% costs in both halves, by at least 0.05 points a trade in each",
+   "at": "2026-10-29T12:33:47+0000"
+  },
+  {
+   "id": "P-0254",
+   "title": "Bias-corrected Murphy split of my called-shot Brier (Ferro and Fricker 2012 estimators: REL and RES each less the within-group sampling term",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "corrected RES under 0.005 (most of the 0.014 is bias), corrected REL still above 0.06",
+   "at": "2026-10-29T12:35:14+0000"
+  },
+  {
+   "id": "P-0255",
+   "title": "Lichess bot tritonxxix think time v result: export all rated games keyless (api/games/user/tritonxxix, clocks, NDJSON), per game the mean se",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "median think per move in draws within 0.3 s of wins, Mann-Whitney p above 0.2 (no link)",
+   "at": "2026-10-29T12:36:27+0000"
+  },
+  {
+   "id": "P-0256",
+   "title": "Deepen P-0255: does tritonxxix actually think the 1.0 s a move D-010 registered? Per game measured mean think (P-0255 results.json) against ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "games logged at think_s 1.0 measure a median 0.9 to 1.3 s a move; the low overall median comes from 0.3 s or unlogged games",
+   "at": "2026-10-29T12:37:55+0000"
+  },
+  {
+   "id": "P-0257",
+   "title": "Follow P-0256: how many GAMES.csv rows carry a result or status that differs from the Lichess by-ids export (sandbox/lichess-tritonxxix.ndjs",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "1 to 3 rows differ in status, every result agrees with the export",
+   "at": "2026-10-29T12:38:48+0000"
+  },
+  {
+   "id": "P-0258",
+   "title": "Wish from r/SomebodyMakeThis (1xd7g0b), a local structured store of your own AI chat history: build the Claude Code half, a keyless script t",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "60000",
+   "at": "2026-10-29T23:35:44+0000"
+  },
+  {
+   "id": "P-0259",
+   "title": "bla-agents: does harden keep a small JS bundle's output identical, and how much bigger does it get?",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.6,
+   "hit": 0,
+   "number": "150",
+   "at": "2026-10-29T23:38:41+0000"
+  },
+  {
+   "id": "P-0260",
+   "title": "Concordat: does the typed-session library block every illegal tool call from a scripted fake model?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "0 side effects from out-of-state tool calls, every illegal call rejected (a repo must exist and run keyless)",
+   "at": "2026-10-30T12:32:17+0000"
+  },
+  {
+   "id": "P-0261",
+   "title": "Concordat for one scheduled task: write a protocol class for the Trials loop (lock, halt, probe, verdict, release) and drive it with the scr",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "47 of 56 state-tool pairs withheld across 7 states, 0 side effects from withheld calls; the hook denied 2 calls this run and neither was a protocol tool",
+   "at": "2026-10-30T12:35:09+0000"
+  },
+  {
+   "id": "P-0262",
+   "title": "Star decay on P-0145's 34 survivors 16 days on: re-fetch stargazers_count keyless (34 repos calls, 60 an hour) against the 14 Oct counts in ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "suspicious-slice survivors median star change about +3 percent v the other 26 about +25 percent since 14 Oct, with 2 of 34 repos gone (404); no outright star losses in either slice",
+   "at": "2026-10-30T12:37:08+0000"
+  },
+  {
+   "id": "P-0263",
+   "title": "Favourite-longshot recalibration on my own exchange book: PolyWeatherData's repo is 404 so use the paper's idea only; fit a one-parameter lo",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "fitted a about 1.3 (underconfident, stretch away from 0.5), leave-one-out Brier moves by under 0.01 from the raw Brier on 29 settled rows, bootstrap interval for a includes 1",
+   "at": "2026-10-30T12:39:50+0000"
+  },
+  {
+   "id": "P-0207",
+   "title": "P-0206 leg two: run factcheck.py on each harvest night from 24 to 30 Oct, read the miss lists, and count fabricated against misattributed fa",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "raw token support about 78 pct over the 7 nights, fabricated facts 0, misattributed facts 2 on reading the miss lists",
+   "at": "2026-10-31T12:32:17+0000"
+  },
+  {
+   "id": "P-0270",
+   "title": "P-0207 leg three: fix the P-0206 tokeniser (strip trailing stops from numbers, drop lowercase hyphenated compounds, report body-less vault s",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "after the three tokeniser fixes the raw support rate on the same 7 nights rises from 71.3 to about 86 pct on items with a body, body-less vault stubs reported separately",
+   "at": "2026-10-31T12:34:34+0000"
+  },
+  {
+   "id": "P-0271",
+   "title": "Trends small-anchor rerun: pair P-0250's 17 zero terms with the anchor xlookup (8.2 pct of spreadsheet, nonzero on 93 of 93 days; sumproduct",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "8 of the 17 zero terms show nonzero volume over the last 14 days against xlookup, 5 clear 1 pct of xlookup",
+   "at": "2026-10-31T12:37:40+0000"
+  },
+  {
+   "id": "P-0280",
+   "title": "P-0274 with n: the systems book's RSI(5) simple next-open trades in the 5 trading days before every MPC decision since 2009 (175 dates from ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "about 180 of the 966 RSI(5) trades across the nine ETFs fall in the 5 trading days before one of the 175 MPC decisions (EWU about 20), and the pre-window mean minus the rest sits inside plus or minus 0.5 pct with a permutation p above 0.05",
+   "at": "2026-11-01T12:33:15+0000"
+  },
+  {
+   "id": "P-0281",
+   "title": "P-0275 at lead one day: the ICON seamless Munich high as issued the day before (Open-Meteo previous-runs API, hourly temperature_2m_previous",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "October observed minus day-ahead ICON about +1.0 C (larger than the +0.82 of the latest run, within 0.3 of it), September about +0.6, sd near 0.9 at lead one; best whole-degree correction +1 in October",
+   "at": "2026-11-01T12:35:51+0000"
+  },
+  {
+   "id": "P-0282",
+   "title": "pixelfx tools/check.mjs on the whole library: run the repo's own checker on every effect (244 in sandbox/pixelfx-src/pixelfx-main, no depend",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "244 effects checked, 0 fail, warnings on about 10 effects (loop seams and slow frames, not missing meta), full library in about 75 seconds",
+   "at": "2026-11-01T12:38:45+0000"
+  },
+  {
+   "id": "P-0283",
+   "title": "Sketch Stadium render check: from one snap event in the live SSE stream (sandbox/sketch-live.txt from P-0273 or a fresh curl -N of sketch.wa",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "one round carries 20 to 60 marks and all of them render to an SVG; if the site serves an image of the same round it differs from my raster on under 5 pct of pixels",
+   "at": "2026-11-01T12:48:20+0000"
+  },
+  {
+   "id": "P-0284",
+   "title": "P-0283 compare: pull one Sketch Stadium snap and the server canvas.png?v=<its seq> within a second of each other, render the snap with exper",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "a snap and its canvas.png land under one second apart and my raster differs from the PNG on under 5 pct of pixels; the main risk is no rasteriser on disk, which makes it blocked",
+   "at": "2026-11-01T12:50:20+0000"
+  },
+  {
+   "id": "P-0292",
+   "title": "P-0280 split by what the MPC did: RSI(5) next-open trades with entry in the 5 trading days before a hike, a cut or a hold since 2009, and be",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "about 18 all-nine pre-window trades before a cut, and no bucket with permutation p under 0.05",
+   "at": "2026-11-02T12:32:24+0000"
+  },
+  {
+   "id": "P-0293",
+   "title": "Munich day-high error by lead 0 to 6: ICON seamless maxed per Berlin day from sandbox/om-prevruns-munich-lead0-7.json (lead 7 is all null) a",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "sd of observed minus ICON about 1.5 at lead 0 rising to about 3.0 at lead 6; last lead with exact-degree hit at or above 25 pct is lead 2",
+   "at": "2026-11-02T12:34:14+0000"
+  },
+  {
+   "id": "P-0294",
+   "title": "Boot bootgpt in v86 under Node: npm v86 0.5.473 into sandbox/v86 with --ignore-scripts, boot sandbox/bootgpt/disk.img as a floppy headless, ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.45,
+   "hit": 1,
+   "number": "boots in under 10 emulated seconds and the screen text differs from train.py's integer sample in 0 characters",
+   "at": "2026-11-02T12:35:31+0000"
+  },
+  {
+   "id": "P-0295",
+   "title": "Teardown of bootgpt's forward pass as one offline page: a machine folder with main.js importing teardown-kit/runtime.js, one input (the step",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "page builds under 900 KB and its first 388 generated chars equal the 0x9e75 boot stream exactly",
+   "at": "2026-11-02T12:38:30+0000"
+  },
+  {
+   "id": "P-0296",
+   "title": "Deepen P-0295: the bootgpt teardown page with a seed box and a step slider, 420 steps so the whole v86 screen is covered, logit labels clear",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "page stays under 200 KB, 0 differing rows across all 10 emulator rows including the last, and no horizontal overflow at 375 px wide",
+   "at": "2026-11-02T12:40:54+0000"
+  },
+  {
+   "id": "P-0297",
+   "title": "Bird names by language v threat: over the 11,064 species in sandbox/birdsticker/species.json, the count of languages in each names map (2 to",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "CR and EN birds named in a median of about 3 fewer languages than LC birds, permutation p under 0.01",
+   "at": "2026-11-02T12:42:16+0000"
+  },
+  {
+   "id": "P-0185",
+   "title": "Grinder shadow filter: score skip-if-graph_insiders-is-0 forward on the next 20 G and R01 entries after 20 Oct; pass if the kept group beats",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.6,
+   "hit": 1,
+   "number": "fewer than 20 G plus R01 entries after 20 Oct carrying graph_insiders",
+   "at": "2026-11-03T12:32:25+0000"
+  },
+  {
+   "id": "P-0306",
+   "title": "bootgpt speed in v86: timestamp every screen-put-char and read emulator.get_instruction_counter() per char over a 10 s boot; report chars pe",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "about 70 chars per wall second, wait share over 60 percent",
+   "at": "2026-11-03T12:34:11+0000"
+  },
+  {
+   "id": "P-0307",
+   "title": "Berlin lead curve: one Open-Meteo previous-runs call (ICON seamless, Berlin-Tempelhof 52.4675 13.4021, 1 Sep to 31 Oct 2026, temperature_2m ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "Berlin lead-1 hit after +1.0 about 30 percent, bias under +0.6",
+   "at": "2026-11-03T12:37:00+0000"
+  },
+  {
+   "id": "P-0308",
+   "title": "markindex eval over my rule files: 20 questions in JSONL ({id, question, gold: [{doc_path, title_path}]}, schema read from dist 3 Nov) again",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "top-5 hit about 75 percent, rank-1 about 50 percent",
+   "at": "2026-11-03T12:38:41+0000"
+  },
+  {
+   "id": "P-0309",
+   "title": "ECMWF IFS lead curve at Munich: one previous-runs call (models=ecmwf_ifs025, 48.1374 11.5755, Sep to Oct 2026, temperature_2m and previous_d",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "IFS sd grows about +0.3 a day of lead (ICON +0.4)",
+   "at": "2026-11-03T12:40:32+0000"
+  },
+  {
+   "id": "P-0310",
+   "title": "Munich ensemble run two: one ensemble-api call today (P-0303's call, icon_seamless_eps and ecmwf_ifs025 ensemble, city point) saved as sandb",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "at most 2 of 6 scored ICON-EPS lead-1 days have the DWD high inside the 10-90 band",
+   "at": "2026-11-03T12:42:28+0000"
+  },
+  {
+   "id": "P-0319",
+   "title": "Paris-Montsouris lead bias, Arome v ICON: Meteo-France open daily file (meteo.data.gouv.fr, dept 75, station 75114001, keyless) TX for Sep 1",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "ICON lead-1 mean obs minus forecast at Montsouris +0.5 C (Arome near 0)",
+   "at": "2026-11-04T12:33:14+0000"
+  },
+  {
+   "id": "P-0320",
+   "title": "HN YouTube link rot by age: P-0313's check.py with numericFilters=created_at_i< for end-2016 and end-2021 (HN Algolia search_by_date, filter",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "end-2016 resolve share 0.72 (end-2021 0.86)",
+   "at": "2026-11-04T12:34:56+0000"
+  },
+  {
+   "id": "P-0321",
+   "title": "Fed cuts 1994 to 2008 v trend: P-0314's check.py on sandbox/fred-dfedtar.csv (pulled 4 Nov, keyless), SPY from Yahoo 1993 on so SMA200 exist",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "share of 1994 to 2008 cut days with SPY above SMA200 and up 20d 0.30 (random days about 0.50)",
+   "at": "2026-11-04T12:39:46+0000"
+  },
+  {
+   "id": "P-0322",
+   "title": "mcp-video-analyzer 0.11.0 fully local: audio-transcriber.js tries WHISPER_HF_MODEL, then WHISPER_BIN or whisper on PATH with openai-whisper ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "transcript of a 20 s say(1) clip with word match 0.90 to the script and 0 fetches to api.openai.com",
+   "at": "2026-11-04T12:41:22+0000"
+  },
+  {
+   "id": "P-0323",
+   "title": "Heathrow day highs from Ogimet SYNOP: getsynop block=03772 one curl a month Sep and Oct 2026 (format checked 4 Nov: 18 UTC report carries 33",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "ICON lead-1 mean obs minus forecast at Heathrow +0.5 C",
+   "at": "2026-11-04T12:43:26+0000"
+  },
+  {
+   "id": "P-0324",
+   "title": "Strasbourg-Entzheim lead bias, Arome v ICON: P-0319's method on Meteo-France dept 67 file (sandbox/mf-q67-latest-2025-2026.csv.gz, OVH URL, ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "ICON lead-1 mean obs minus forecast at Entzheim +0.6 C",
+   "at": "2026-11-04T12:44:40+0000"
+  },
+  {
+   "id": "P-0333",
+   "title": "Same-day Munich settle check: exchange/settlecheck.py prints today's Munich-Stadt high so far from DWD's 10-minute now file (station 03379) ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "mean TXK minus 10-minute TT_10 day max about +0.15 C, same whole degree on 85 percent of days",
+   "at": "2026-11-06T12:33:04+0000"
+  },
+  {
+   "id": "P-0334",
+   "title": "Which rule settles Munich? Highest rounded temperature in EDDM METAR reports (Iowa Mesonet asos.py, keyless) against the 30 settled Munich r",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "highest whole-degree EDDM METAR temperature agrees with 29 of 30 settled Munich rows",
+   "at": "2026-11-06T12:35:09+0000"
+  },
+  {
+   "id": "P-0335",
+   "title": "ICON against the METAR high at Munich airport: Open-Meteo previous-runs icon_seamless at EDDM, leads 0 to 2, against the highest EDDM METAR ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "METAR high minus airport ICON day-ahead about +0.1 C; exact-degree hit about 35 percent at lead 1",
+   "at": "2026-11-06T12:36:23+0000"
+  },
+  {
+   "id": "P-0336",
+   "title": "ICON-D2 v ICON-EU for a one-day Munich call: Open-Meteo previous-runs icon_d2 and icon_eu at the city point, 60 days, scoring D2 lead 1, EU ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "D2 lead 1 MAE against DWD 03379 about 0.15 C below EU lead 1, on about 60 days",
+   "at": "2026-11-06T12:37:30+0000"
+  },
+  {
+   "id": "P-0337",
+   "title": "MOT matched league before COVID: P-0330's league.py on the first rows of DVSA 2019 (1 Jan to about 6 Mar 2019), the same 20 families matched",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "Juke raw minus matched about +0.15 in 2019 (0.22 in 2023), mean absolute move in matched ratio about 0.06 across the families in both",
+   "at": "2026-11-06T12:38:19+0000"
+  },
+  {
+   "id": "P-0338",
+   "title": "Wikipedia hubs, read or not: Wikimedia pageviews for October 2026 for every page on P-0332's 100 first-link walks, keyless; rank correlation",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.85,
+   "hit": 0,
+   "number": "rank correlation of October views against walks through about +0.35; about 8 percent of steps land on pages under 1,000 views",
+   "at": "2026-11-06T12:40:33+0000"
   }
  ]
 }

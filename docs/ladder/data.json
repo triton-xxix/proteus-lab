@@ -1,44 +1,44 @@
 {
  "summary": {
-  "games": 62,
-  "wins": 45,
-  "draws": 16,
+  "games": 71,
+  "wins": 53,
+  "draws": 17,
   "losses": 1,
-  "score": 0.855,
+  "score": 0.866,
   "rating_start": 3000,
-  "rating_now": 3035,
+  "rating_now": 3018,
   "rating_peak": 3129,
   "strongest_beaten": 2876,
   "strongest_faced": 3019,
-  "median_opp": 2377,
+  "median_opp": 2200,
   "first": "2026-10-03",
-  "last": "2026-10-30",
-  "challenges": 1022,
-  "accepted": 51,
-  "declined": 581,
-  "no_answer": 103,
-  "refused_400": 276,
-  "refused_429": 11,
-  "accept_rate": 0.0499,
-  "bots_asked": 108,
-  "bots_played": 47,
-  "bots_never": 67,
-  "median_rating_accepted_bots": 1980,
-  "median_rating_refusing_bots": 1893,
+  "last": "2026-11-06",
+  "challenges": 1182,
+  "accepted": 60,
+  "declined": 708,
+  "no_answer": 113,
+  "refused_400": 287,
+  "refused_429": 14,
+  "accept_rate": 0.0508,
+  "bots_asked": 112,
+  "bots_played": 56,
+  "bots_never": 62,
+  "median_rating_accepted_bots": 1887,
+  "median_rating_refusing_bots": 1965,
   "challenge_first": "2026-10-09",
-  "challenge_last": "2026-10-30",
+  "challenge_last": "2026-11-06",
   "declined_reasons": [
    [
     "nobot",
-    354
+    402
    ],
    [
     "generic",
-    141
+    199
    ],
    [
     "casual",
-    74
+    95
    ],
    [
     "tooslow",
@@ -53,8 +53,8 @@
  "bands": [
   {
    "label": "under 1500",
-   "n": 9,
-   "wins": 9,
+   "n": 16,
+   "wins": 16,
    "draws": 0,
    "losses": 0,
    "score": 1.0
@@ -69,11 +69,11 @@
   },
   {
    "label": "2000 to 2499",
-   "n": 9,
-   "wins": 9,
-   "draws": 0,
+   "n": 11,
+   "wins": 10,
+   "draws": 1,
    "losses": 0,
-   "score": 1.0
+   "score": 0.955
   },
   {
    "label": "2500 and up",
@@ -194,97 +194,127 @@
    "date": "2026-10-30",
    "asked": 76,
    "accepted": 2
+  },
+  {
+   "date": "2026-10-31",
+   "asked": 26,
+   "accepted": 0
+  },
+  {
+   "date": "2026-11-01",
+   "asked": 26,
+   "accepted": 0
+  },
+  {
+   "date": "2026-11-02",
+   "asked": 26,
+   "accepted": 0
+  },
+  {
+   "date": "2026-11-03",
+   "asked": 28,
+   "accepted": 3
+  },
+  {
+   "date": "2026-11-04",
+   "asked": 25,
+   "accepted": 3
+  },
+  {
+   "date": "2026-11-06",
+   "asked": 29,
+   "accepted": 3
   }
  ],
  "decliners": [
   {
    "bot": "resolutebot",
    "rating": 2945,
-   "asked": 46,
+   "asked": 58,
    "how": "declined"
-  },
-  {
-   "bot": "newchessengine-ai",
-   "rating": 2963,
-   "asked": 43,
-   "how": "refused 400"
-  },
-  {
-   "bot": "leelaalien",
-   "rating": 2440,
-   "asked": 37,
-   "how": "declined"
-  },
-  {
-   "bot": "leelajester",
-   "rating": 2399,
-   "asked": 36,
-   "how": "declined"
-  },
-  {
-   "bot": "eubos",
-   "rating": 2316,
-   "asked": 36,
-   "how": "no answer"
   },
   {
    "bot": "leelarogue",
-   "rating": 2336,
-   "asked": 36,
+   "rating": 2318,
+   "asked": 47,
    "how": "declined"
   },
   {
    "bot": "patriciabot",
-   "rating": 2715,
-   "asked": 35,
+   "rating": 2745,
+   "asked": 47,
+   "how": "declined"
+  },
+  {
+   "bot": "newchessengine-ai",
+   "rating": 2976,
+   "asked": 46,
+   "how": "refused 400"
+  },
+  {
+   "bot": "leelaalien",
+   "rating": 2445,
+   "asked": 40,
+   "how": "declined"
+  },
+  {
+   "bot": "leelajester",
+   "rating": 2421,
+   "asked": 39,
+   "how": "declined"
+  },
+  {
+   "bot": "stockfishlowdepth",
+   "rating": 1990,
+   "asked": 37,
    "how": "declined"
   },
   {
    "bot": "catriever",
-   "rating": 2117,
-   "asked": 32,
+   "rating": 2118,
+   "asked": 35,
    "how": "declined"
   },
   {
    "bot": "elmichess",
-   "rating": 2081,
-   "asked": 31,
+   "rating": 2073,
+   "asked": 34,
    "how": "declined"
   },
   {
    "bot": "panic-fish",
-   "rating": 2206,
-   "asked": 30,
+   "rating": 2220,
+   "asked": 33,
    "how": "declined"
   },
   {
    "bot": "hummus-bot",
    "rating": 2051,
-   "asked": 28,
-   "how": "declined"
-  },
-  {
-   "bot": "stockfishlowdepth",
-   "rating": 1986,
-   "asked": 28,
+   "asked": 31,
    "how": "declined"
   },
   {
    "bot": "darkonweakbot",
-   "rating": 1797,
-   "asked": 23,
-   "how": "declined"
-  },
-  {
-   "bot": "maia9_30n",
-   "rating": 1980,
-   "asked": 22,
+   "rating": 1776,
+   "asked": 31,
    "how": "declined"
   },
   {
    "bot": "littlepatricia",
-   "rating": 1916,
-   "asked": 19,
+   "rating": 1913,
+   "asked": 29,
+   "how": "declined"
+  },
+  {
+   "bot": "mochi_bot",
+   "rating": 1689,
+   "asked": 26,
+   "how": "declined"
+  },
+  {
+   "bot": "maia9_30n",
+   "rating": 1967,
+   "asked": 25,
    "how": "declined"
   }
  ],
@@ -1280,6 +1310,150 @@
    "url": "https://lichess.org/JrDO1Hv7",
    "think": "1.0",
    "refusals": 24
+  },
+  {
+   "date": "2026-11-03",
+   "at": "2026-11-03T07:58:11Z",
+   "id": "1IKqdAcH",
+   "opponent": "maia1",
+   "opp": 1424,
+   "before": 3035,
+   "after": 3035,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 25,
+   "url": "https://lichess.org/1IKqdAcH",
+   "think": "1.0",
+   "refusals": 8
+  },
+  {
+   "date": "2026-11-03",
+   "at": "2026-11-03T07:59:39Z",
+   "id": "7WbFiTlC",
+   "opponent": "turochamp-2ply",
+   "opp": 1330,
+   "before": 3035,
+   "after": 3035,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 30,
+   "url": "https://lichess.org/7WbFiTlC",
+   "think": "1.0",
+   "refusals": 9
+  },
+  {
+   "date": "2026-11-03",
+   "at": "2026-11-03T08:01:21Z",
+   "id": "qWahU2QP",
+   "opponent": "joshsbot",
+   "opp": 1263,
+   "before": 3035,
+   "after": 3035,
+   "colour": "black",
+   "result": "win",
+   "status": "mate",
+   "moves": 22,
+   "url": "https://lichess.org/qWahU2QP",
+   "think": "1.0",
+   "refusals": 8
+  },
+  {
+   "date": "2026-11-04",
+   "at": "2026-11-04T11:25:23Z",
+   "id": "4Qj7TQIj",
+   "opponent": "bernstein-4ply",
+   "opp": 1282,
+   "before": 3035,
+   "after": 3035,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 20,
+   "url": "https://lichess.org/4Qj7TQIj",
+   "think": "1.0",
+   "refusals": 10
+  },
+  {
+   "date": "2026-11-04",
+   "at": "2026-11-04T11:31:42Z",
+   "id": "uBqbTmDL",
+   "opponent": "eubos",
+   "opp": 2293,
+   "before": 3035,
+   "after": 3036,
+   "colour": "black",
+   "result": "win",
+   "status": "resign",
+   "moves": 54,
+   "url": "https://lichess.org/uBqbTmDL",
+   "think": "1.0",
+   "refusals": 3
+  },
+  {
+   "date": "2026-11-04",
+   "at": "2026-11-04T11:33:27Z",
+   "id": "9pwpLdod",
+   "opponent": "felipe_bot_53",
+   "opp": 1212,
+   "before": 3036,
+   "after": 3036,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 16,
+   "url": "https://lichess.org/9pwpLdod",
+   "think": "1.0",
+   "refusals": 9
+  },
+  {
+   "date": "2026-11-06",
+   "at": "2026-11-06T07:55:31Z",
+   "id": "gh8RFpIN",
+   "opponent": "usunfish-l1",
+   "opp": 1092,
+   "before": 3036,
+   "after": 3036,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 15,
+   "url": "https://lichess.org/gh8RFpIN",
+   "think": "1.0",
+   "refusals": 12
+  },
+  {
+   "date": "2026-11-06",
+   "at": "2026-11-06T07:56:33Z",
+   "id": "5o7MdaQv",
+   "opponent": "sargon-1ply",
+   "opp": 1085,
+   "before": 3036,
+   "after": 3036,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 16,
+   "url": "https://lichess.org/5o7MdaQv",
+   "think": "1.0",
+   "refusals": 12
+  },
+  {
+   "date": "2026-11-06",
+   "at": "2026-11-06T08:03:46Z",
+   "id": "SBOhb8we",
+   "opponent": "bot_adario",
+   "opp": 2408,
+   "before": 3036,
+   "after": 3018,
+   "colour": "white",
+   "result": "draw",
+   "status": "draw",
+   "moves": 103,
+   "url": "https://lichess.org/SBOhb8we",
+   "think": "1.0",
+   "refusals": 2
   }
  ]
 }

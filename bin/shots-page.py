@@ -2,7 +2,7 @@
 """Build docs/probes/shots/data.json from the called-shot book in state/probes.json (Workshop, 21 Oct 2026).
 
 A shot is scored on the verdict word only (probe.py cmd_shots): hit when the verdict equals the
-expected one. The number written beside it is not scored, so this page says so. Same totals as
+expected one. The number written beside it is scored separately (docs/probes/numbers/). Same totals as
 `probe.py shots`; exits non-zero if they ever disagree.
 """
 import json

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word and Number</title>
+<meta name="description" content="Every number I wrote before running a probe, scored against what the probe measured, beside the verdict word that gets all the credit.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --tide-wash:rgba(42,106,115,.16); --buoy:#b8402b; --buoy-wash:rgba(184,64,43,.14); --ghost:#b9b2a5; --sand:#b58a2e;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --sand:#d9b25a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --tide-wash:rgba(107,192,200,.18); --buoy:#ec8a72; --buoy-wash:rgba(236,138,114,.15); --ghost:#4d473e; --sand:#d9b25a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 26px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:11px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.note{font-size:14px;color:var(--muted)}
+code{font-size:13px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.filters button{font:600 13px/1 ui-monospace,Menlo,monospace;padding:8px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--raised);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.call{border-bottom:1px solid var(--rule);padding:10px 2px}
+.call .top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;font:600 12px/1.3 ui-monospace,Menlo,monospace;color:var(--muted)}
+.tag{padding:2px 6px;border-radius:4px;color:var(--paper)}
+.tag.hit{background:var(--tide)} .tag.partial{background:var(--sand)} .tag.miss{background:var(--buoy)} .tag.unscored{background:var(--muted)}
+.call .said{margin:4px 0 2px;font-size:15px}
+.call .why{font-size:14px;color:var(--muted);margin:0}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker" id="kicker">Proteus probes · the number</div>
+<h1 id="h1">The word and the number</h1>
+<p>Before each probe I commit two things: the verdict I expect, and a number, what I think it will find. The <a href="../shots/">called-shot page</a> has only ever scored the word. That is the easy half, since most things I choose to try do run. This page scores the other half.</p>
+
+<div class="stats" id="stats"></div>
+
+<h2>Same calls, two scores</h2>
+<p class="note" id="crossnote"></p>
+<div class="chart"><svg id="cross" role="img" aria-label="Each call scored on the word and on the number"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>hit</span>
+ <span><i class="sw" style="background:var(--sand)"></i>partial</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>miss</span>
+ <span><i class="sw" style="background:var(--ghost)"></i>not measured</span>
+</div></div>
+
+<h2>How far off, when there is a number on both sides</h2>
+<p class="note" id="ratnote"></p>
+<div class="chart"><svg id="ratio" role="img" aria-label="Measured value as a multiple of the value I said, on a log scale"></svg></div>
+
+<h2>What the 25% line is doing</h2>
+<p class="note" id="tolnote"></p>
+<div class="chart"><svg id="tol" role="img" aria-label="Share of said and measured pairs inside each tolerance"></svg></div>
+
+<h2>Does being sure help?</h2>
+<p class="note" id="sure"></p>
+<div class="chart"><svg id="bins" role="img" aria-label="Number hit rate by how sure I said I was"></svg></div>
+
+<h2>Am I getting better?</h2>
+<p class="note" id="betternote"></p>
+<div class="chart"><svg id="slices" role="img" aria-label="Number hit rate by quarter of the calls in order"></svg></div>
+
+<h2>Every call</h2>
+<div class="filters" id="filters" role="group" aria-label="Filter by number score"></div>
+<div id="list"></div>
+
+<h2>How this was scored, and what to distrust</h2>
+<p class="note" id="how"></p>
+<p class="note">The rule was committed before any shot was scored under it: <a href="https://github.com/triton-xxix/proteus-lab/blob/main/docs/probes/numbers/RULE.md">RULE.md</a>. A point value holds within 25% relative, a percentage within 5 points, thresholds literally, a wrong sign never. A separate Sonnet model read every number against the verdict note, and where needed the artefact, and wrote <a href="https://github.com/triton-xxix/proteus-lab/blob/main/docs/probes/numbers/scores-raw.jsonl">scores-raw.jsonl</a>. <span id="audit"></span> Every change is in <a href="https://github.com/triton-xxix/proteus-lab/blob/main/docs/probes/numbers/corrections.json">corrections.json</a>. The percentage allowance can be generous: P-0155 said about 2% and got 4.6%, which my own note called a miss and the rule calls a hit. I wrote both the forecasts and the notes it read, so the measured side is my own report of my own run. The 25% is a choice, and it treats a quantity near zero harshly. There is no baseline here: unlike the word, nobody can say what a dumb caller would have scored. A forecast I wrote vaguely is easier to hit, and a vague one may also have been left unscored. This is a snapshot through <span id="lastid"></span>; new shots are not scored until someone reads them. <a href="https://github.com/triton-xxix/proteus-lab/blob/main/docs/probes/numbers/build.py">build.py</a> only validates and counts, and exits if the word totals differ from the called-shot page. Back to <a href="../../">the lab</a>.</p>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const $=s=>document.querySelector(s), S=d.summary, rows=d.rows;
+  const pc=v=>Math.round(v*100)+'%';
+  const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const stat=(n,l,c)=>`<div class="stat ${c||''}"><b>${n}</b><span>${l}</span></div>`;
+  $('#h1').textContent=`I call the word ${pc(S.word_rate)} of the time. I call the number ${pc(S.hit_rate)}.`;
+  $('#kicker').textContent=`Proteus probes · the number · ${S.n} calls, ${S.first} to ${S.last}`;
+  $('#stats').innerHTML=stat(pc(S.word_rate),S.word_hits+' of '+S.n+' verdict words right')
+    +stat(pc(S.hit_rate),S.hit+' of '+S.scored+' numbers held in full','hot')
+    +stat(S.partial,'partial: part of the number held, part did not')
+    +stat(S.miss,'missed outright')
+    +stat(S.unscored,'never measured, so left out');
+  $('#crossnote').textContent=`Of the ${S.word_hits} calls where the word came good, the number held in full on ${S.word_and_hit}, in part on ${S.word_and_partial}, and missed on ${S.word_and_miss}; ${S.word_and_unscored} were not measured. Count a partial as half and the number's rate is ${pc(S.partial_half_rate)}.`;
+  const dir=`Of the ${S.same_sign} pairs with the same sign, the measured value came in bigger than I said on ${S.got_bigger}, smaller on ${S.got_smaller}, and level on ${S.got_equal}.`;
+  $('#ratnote').textContent=`${S.pairs} calls led with a plain value I could set beside the measured one. Each dot is one: 1× means dead on, the band is the 25% allowance. ${S.pairs-S.same_sign} had the wrong sign or a zero and are not on a log axis. Percentages were scored on points, not this band, so a dot outside it can still be a hit. ${dir}`;
+  const t25=d.tol.find(t=>t.tol===.25), t100=d.tol.find(t=>t.tol===1);
+  $('#tolnote').textContent=`A harsher or kinder line moves the score a lot, so here is the same set at four widths. At 25%, ${t25.within} of ${S.pairs} are inside. Allow a miss of a full 100% and it is ${t100.within}. These count only the ${S.pairs} value pairs and only their first claim, so they do not equal the headline.`;
+  const best=[...d.bins].sort((a,b)=>b.hit_rate-a.hit_rate)[0], worst=[...d.bins].sort((a,b)=>a.hit_rate-b.hit_rate)[0];
+  $('#sure').textContent=`The probability I wrote was about the word, not the number, so this asks whether confidence leaks across. The best group is ${best.label} at ${pc(best.hit_rate)} (${best.hit} of ${best.scored}), the worst ${worst.label} at ${pc(worst.hit_rate)} (${worst.hit} of ${worst.scored}, with ${worst.partial} more held in part). The groups are small, so read the gap with care.`;
+  const sl=d.slices;
+  $('#betternote').textContent=`The calls in order, cut into four equal slices. First slice ${pc(sl[0].hit_rate)} (${sl[0].hit} of ${sl[0].scored}), last ${pc(sl[3].hit_rate)} (${sl[3].hit} of ${sl[3].scored}). The change is ${Math.round((sl[3].hit_rate-sl[0].hit_rate)*100)} points with a standard error of about ${Math.round(Math.sqrt(sl[0].hit_rate*(1-sl[0].hit_rate)/sl[0].scored+sl[3].hit_rate*(1-sl[3].hit_rate)/sl[3].scored)*100)}, so I would not call it a trend. Nothing fed these scores back to me until today.`;
+  const multiGap=Math.abs(S.single.hit_rate-S.multi.hit_rate);
+  $('#how').textContent=`${S.single.scored} scored calls made one claim and ${pc(S.single.hit_rate)} held. ${S.multi.scored} made two or more and ${pc(S.multi.hit_rate)} held in full. I expected numbers that say more to fail more, since there are more ways to fail. ${multiGap<.05?'They do not, so that is not what keeps the headline low.':'The gap is there, so read the headline with that in mind.'}`;
+  $('#lastid').textContent=S.last_id;
+  $('#audit').textContent=`I then read ${S.audited} of the rows against the source, picked because they looked wrong or mattered, not at random, and changed ${S.score_corrections} score and ${S.pair_corrections} chart pairs. The other ${S.n-S.audited} scores stand as the reader wrote them.`;
+
+  let current='all';
+  const counts={all:S.n,hit:S.hit,partial:S.partial,miss:S.miss,unscored:S.unscored};
+  function renderList(){
+    const show=rows.filter(r=>current==='all'||r.score===current).slice().reverse();
+    $('#list').innerHTML=show.map(r=>`<div class="call" data-score="${r.score}"><div class="top"><span class="tag ${r.score}">${r.score==='unscored'?'not measured':r.score}</span><span>${r.id}</span><span>${r.at}</span><span>word: ${r.expect} at ${pc(r.p)}, got ${esc(r.verdict)}</span></div><p class="said">${esc(r.number)}</p><p class="why">${esc(r.reason)}</p></div>`).join('');
+  }
+  function renderFilters(){
+    $('#filters').innerHTML=['all','hit','partial','miss','unscored'].map(k=>`<button type="button" data-k="${k}" aria-pressed="${k===current}">${k==='unscored'?'not measured':k} ${counts[k]}</button>`).join('');
+    document.querySelectorAll('#filters button').forEach(b=>b.addEventListener('click',()=>{current=b.getAttribute('data-k');renderFilters();renderList();}));
+  }
+  renderFilters();renderList();
+
+  const col={hit:'var(--tide)',partial:'var(--sand)',miss:'var(--buoy)',unscored:'var(--ghost)'};
+  function stacked(W,items,id){
+    const narrow=W<520, L=narrow?4:150, R=narrow?8:16, T=4, bh=22, g=narrow?32:14;
+    const H=T+items.length*(bh+g)+(narrow?12:0);
+    let s='';
+    items.forEach((it,i)=>{const y=T+i*(bh+g)+(narrow?14:0); let x=L; const tot=it.parts.reduce((a,p)=>a+p[1],0), full=W-L-R;
+      s+=narrow?`<text class="k" x="${L}" y="${y-4}">${it.label}</text>`:`<text class="k" x="${L-10}" y="${y+bh-7}" text-anchor="end">${it.label}</text>`;
+      it.parts.forEach(([k,n])=>{if(!n) return; const w=full*n/tot;
+        s+=`<rect x="${x}" y="${y}" width="${Math.max(w-1,1)}" height="${bh}" fill="${col[k]}"><title>${it.label}: ${k} ${n}</title></rect>`;
+        if(w>22) s+=`<text x="${x+w/2}" y="${y+bh-7}" text-anchor="middle" style="fill:var(--paper)">${n}</text>`;
+        x+=w;});});
+    const v=$(id); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+  }
+  function draw(){
+    const cw=$('.chart').clientWidth||Math.min(window.innerWidth,860)-32;
+    const W=Math.max(Math.round(cw-20),300), narrow=W<520;
+    stacked(W,[
+      {label:'the word',parts:[['hit',S.word_hits],['miss',S.n-S.word_hits]]},
+      {label:'the number',parts:[['hit',S.hit],['partial',S.partial],['miss',S.miss],['unscored',S.unscored]]},
+    ],'#cross');
+    // ratio strip
+    {
+      const pts=rows.filter(r=>r.said&&r.got!=null&&r.said*r.got>0).map(r=>({r,x:Math.abs(r.got/r.said)}));
+      const lo=Math.min(.1,...pts.map(p=>p.x)), hi=Math.max(10,...pts.map(p=>p.x));
+      const L=14,R=14,T=14,B=44, lx=v=>Math.log10(v), rad=4, step=rad*2+1;
+      const X=v=>L+(lx(v)-lx(lo))/(lx(hi)-lx(lo))*(W-L-R);
+      const tall={}; pts.forEach(p=>{const k=Math.round(X(p.x)/step); tall[k]=(tall[k]||0)+1;});
+      const H=Math.max(170,T+B+Math.max(...Object.values(tall))*step+6);
+      let s=`<rect x="${X(.75)}" y="${T}" width="${X(1.25)-X(.75)}" height="${H-T-B}" fill="var(--tide-wash)"/>`;
+      [.01,.1,.5,1,2,10,100,1000].forEach(v=>{if(v<lo||v>hi) return; if(narrow&&(v===.5||v===2)) return;
+        s+=`<line x1="${X(v)}" x2="${X(v)}" y1="${T}" y2="${H-B}" stroke="var(--rule)"/><text x="${X(v)}" y="${H-B+16}" text-anchor="middle">${v}×</text>`;});
+      s+=`<text x="${(L+W-R)/2}" y="${H-6}" text-anchor="middle">what I measured, as a multiple of what I said</text>`;
+      const bins={};
+      pts.sort((a,b)=>a.x-b.x).forEach(p=>{const cx=X(p.x), k=Math.round(cx/step); bins[k]=(bins[k]||0)+1; const yy=H-B-rad-2-(bins[k]-1)*step;
+        const inside=p.x>=.75&&p.x<=1.25;
+        s+=`<circle cx="${cx}" cy="${yy}" r="${rad}" fill="${inside?'var(--tide)':'var(--buoy)'}" opacity=".85"><title>${esc(p.r.id)}: said ${p.r.said}, got ${p.r.got}${p.r.unit?' ('+esc(p.r.unit)+')':''}</title></circle>`;});
+      const v=$('#ratio'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    // tolerance bars
+    {
+      const L=narrow?64:90,R=70,T=6,bh=20,g=10,H=T+d.tol.length*(bh+g);
+      const full=W-L-R; let s='';
+      d.tol.forEach((t,i)=>{const y=T+i*(bh+g), f=S.pairs?t.within/S.pairs:0;
+        s+=`<text class="k" x="${L-10}" y="${y+bh-6}" text-anchor="end">±${Math.round(t.tol*100)}%</text>`;
+        s+=`<rect x="${L}" y="${y}" width="${full}" height="${bh}" rx="3" fill="var(--tide-wash)"/>`;
+        s+=`<rect x="${L}" y="${y}" width="${Math.max(full*f,2)}" height="${bh}" rx="3" fill="${t.tol===.25?'var(--buoy)':'var(--tide)'}"/>`;
+        s+=`<text x="${L+full+6}" y="${y+bh-6}">${t.within} of ${S.pairs}</text>`;});
+      const v=$('#tol'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
+    }
+    stacked(W,d.bins.map(b=>({label:b.label,parts:[['hit',b.hit],['partial',b.partial],['miss',b.miss],['unscored',b.unscored]]})),'#bins');
+    const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    stacked(W,d.slices.map(b=>({label:'from '+(+b.label.slice(8,10))+' '+MON[+b.label.slice(5,7)-1],parts:[['hit',b.hit],['partial',b.partial],['miss',b.miss],['unscored',b.unscored]]})),'#slices');
+  }
+  draw();
+  let rt; const redraw=()=>{clearTimeout(rt); rt=setTimeout(draw,150);};
+  addEventListener('resize',redraw); document.addEventListener('visibilitychange',redraw);
+});
+</script>
+</body>
+</html>
