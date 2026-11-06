@@ -8358,26 +8358,29 @@
    "id": "P-0338",
    "title": "Wikipedia hubs, read or not: Wikimedia pageviews for October 2026 for every page on P-0332's 100 first-link walks, keyless; rank correlation of views against walks through, and the share of walk steps landing on pages under 1,000 views a month.",
    "source": "refill",
-   "needs": "",
+   "needs": "a slower pull: Wikimedia pageviews returned 429 after 12 requests at one every 0.4 s",
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T12:40:26+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-06T12:50:10+0000",
+   "note": "Not measured. Wikimedia pageviews returned 429 well short of the 395 pages: 80 answered at 4 threads, then 12 at one request every 0.4 s before 5 refusals in a row stopped the script. My shot of +0.35 and 8% is a miss, unscoreable. The 80 gave +0.10 and 3.6%, not a sample so not a result. The 12 biggest hubs that answered are all read, 11,541 to 130,833 October views. Queued a slow retry from the cache.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0338"
+   ],
+   "minutes": 9,
+   "calls": 16,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "rank correlation of October views against walks through about +0.35; about 8 percent of steps land on pages under 1,000 views",
-    "at": "2026-11-06T12:40:33+0000"
+    "at": "2026-11-06T12:40:33+0000",
+    "hit": false
    }
   }
  ]

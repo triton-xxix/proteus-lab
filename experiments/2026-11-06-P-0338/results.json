@@ -1,0 +1,208 @@
+{
+ "date": "2026-11-05T17:18:16Z",
+ "walks": 100,
+ "steps": 1352,
+ "pages": 395,
+ "views_found": 12,
+ "status": {
+  "cached": 0,
+  "ok": 12,
+  "http 429": 5,
+  "stopped after 5 refusals": 378
+ },
+ "spearman_all_pages": 0.307,
+ "spearman_pages_on_2plus_walks": 0.307,
+ "pages_on_2plus_walks": 12,
+ "share_of_steps_under_1000_views": 0.0,
+ "share_of_pages_under_1000_views": 0.0,
+ "median_views_all_pages": 26691.5,
+ "top_hubs": [
+  {
+   "page": "Philosophy",
+   "walks_through": 48,
+   "october_views": 130833
+  },
+  {
+   "page": "Attitude (psychology)",
+   "walks_through": 36,
+   "october_views": 13685
+  },
+  {
+   "page": "Thought",
+   "walks_through": 36,
+   "october_views": 22767
+  },
+  {
+   "page": "Cognition",
+   "walks_through": 36,
+   "october_views": 29419
+  },
+  {
+   "page": "Mind",
+   "walks_through": 36,
+   "october_views": 23964
+  },
+  {
+   "page": "Knowledge",
+   "walks_through": 36,
+   "october_views": 70741
+  },
+  {
+   "page": "Psychology",
+   "walks_through": 36,
+   "october_views": 63426
+  },
+  {
+   "page": "Belief",
+   "walks_through": 36,
+   "october_views": 18468
+  },
+  {
+   "page": "Event (philosophy)",
+   "walks_through": 18,
+   "october_views": 11541
+  },
+  {
+   "page": "Meaning (philosophy)",
+   "walks_through": 18,
+   "october_views": 13894
+  },
+  {
+   "page": "Epistemology",
+   "walks_through": 18,
+   "october_views": 76231
+  },
+  {
+   "page": "Natural science",
+   "walks_through": 18,
+   "october_views": 38649
+  },
+  {
+   "page": "Empiricism",
+   "walks_through": 18,
+   "october_views": null
+  },
+  {
+   "page": "Science",
+   "walks_through": 18,
+   "october_views": null
+  },
+  {
+   "page": "Empirical evidence",
+   "walks_through": 17,
+   "october_views": null
+  },
+  {
+   "page": "Evidence",
+   "walks_through": 17,
+   "october_views": null
+  },
+  {
+   "page": "Proposition",
+   "walks_through": 17,
+   "october_views": null
+  },
+  {
+   "page": "Scientific method",
+   "walks_through": 17,
+   "october_views": null
+  },
+  {
+   "page": "Outline of physical science",
+   "walks_through": 17,
+   "october_views": null
+  },
+  {
+   "page": "Physics",
+   "walks_through": 17,
+   "october_views": null
+  },
+  {
+   "page": "Branches of science",
+   "walks_through": 16,
+   "october_views": null
+  },
+  {
+   "page": "Basic research",
+   "walks_through": 16,
+   "october_views": null
+  },
+  {
+   "page": "Social science",
+   "walks_through": 16,
+   "october_views": null
+  },
+  {
+   "page": "Social group",
+   "walks_through": 15,
+   "october_views": null
+  },
+  {
+   "page": "Politics",
+   "walks_through": 15,
+   "october_views": null
+  }
+ ],
+ "least_read_on_2plus_walks": [
+  {
+   "page": "Event (philosophy)",
+   "walks_through": 18,
+   "october_views": 11541
+  },
+  {
+   "page": "Attitude (psychology)",
+   "walks_through": 36,
+   "october_views": 13685
+  },
+  {
+   "page": "Meaning (philosophy)",
+   "walks_through": 18,
+   "october_views": 13894
+  },
+  {
+   "page": "Belief",
+   "walks_through": 36,
+   "october_views": 18468
+  },
+  {
+   "page": "Thought",
+   "walks_through": 36,
+   "october_views": 22767
+  },
+  {
+   "page": "Mind",
+   "walks_through": 36,
+   "october_views": 23964
+  },
+  {
+   "page": "Cognition",
+   "walks_through": 36,
+   "october_views": 29419
+  },
+  {
+   "page": "Natural science",
+   "walks_through": 18,
+   "october_views": 38649
+  },
+  {
+   "page": "Psychology",
+   "walks_through": 36,
+   "october_views": 63426
+  },
+  {
+   "page": "Knowledge",
+   "walks_through": 36,
+   "october_views": 70741
+  },
+  {
+   "page": "Epistemology",
+   "walks_through": 18,
+   "october_views": 76231
+  },
+  {
+   "page": "Philosophy",
+   "walks_through": 48,
+   "october_views": 130833
+  }
+ ]
+}
