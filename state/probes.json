@@ -1,5 +1,5 @@
 {
- "next_id": 345,
+ "next_id": 346,
  "items": [
   {
    "id": "P-0001",
@@ -8546,6 +8546,32 @@
     "number": "under 35 of 100 reach Philosophie, and the biggest ring is not the English Knowledge one",
     "at": "2026-11-06T23:38:54+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0345",
+   "title": "EDDM METAR high against DWD 01262 TX_10 at the same airport: how often do they differ after rounding, and is the miss the peak falling between METAR reports",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:49:19+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "METAR high equals rounded TX_10 on about 65% of days, and report times explain most of the differences",
+    "at": "2026-11-06T23:49:38+0000"
    }
   }
  ]
