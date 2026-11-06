@@ -1,5 +1,5 @@
 {
- "next_id": 350,
+ "next_id": 351,
  "items": [
   {
    "id": "P-0001",
@@ -8683,6 +8683,28 @@
     "at": "2026-11-06T23:53:41+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0350",
+   "title": "pump.fun launch price: do new pools first trade near the stated 30 virtual SOL over 1.073bn tokens, 2.796e-8 SOL, or has the curve changed",
+   "source": "refill",
+   "needs": "GeckoTerminal rate limit to clear; re-run launch_price.py with longer spacing",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-06",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:56:17+0000",
+   "verdict": "blocked",
+   "verdict_at": "2026-11-06T23:56:53+0000",
+   "note": "Not measured. GeckoTerminal returned 429 twice, on an OHLCV call at 2.5 s spacing and then on the first call of a slower re-run, so no pool price was read. No called shot made. P-0172 already read live curve accounts for constant product, so this is a narrower check than the queue line suggests.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0350"
+   ],
+   "minutes": 0,
+   "calls": 8,
+   "denied": [],
+   "luke": false
   }
  ]
 }
