@@ -8585,22 +8585,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:50:25+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:51:30+0000",
+   "note": "Measured Sep to Oct, 06 to 18 UTC on both sides: METAR high minus SYNOP TX is -0.93 C at Heathrow (61 days, 28% same as rounded TX), -0.29 at Orly (51 days, 65%), +0.19 at Munich (30 days, 80%). My shot of within 0.3 and 70 to 80% everywhere missed at Heathrow. So the gap does not travel: London +1.26 ICON offset would be about +0.33 against a METAR target, arithmetic not measured. Cause at Heathrow not established; Munich has half the days, not checked why. Next: close (no London or Paris market on the book).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0346"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "mean METAR minus SYNOP TX within 0.3 C of zero at all three, and rounded agreement of 70 to 80% at each",
-    "at": "2026-11-06T23:50:41+0000"
+    "at": "2026-11-06T23:50:41+0000",
+    "hit": true
    }
   }
  ]

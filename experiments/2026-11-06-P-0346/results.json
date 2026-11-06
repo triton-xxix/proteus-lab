@@ -1,0 +1,46 @@
+{
+ "Heathrow": {
+  "icao": "EGLL",
+  "wmo": "03772",
+  "days": 61,
+  "mean_metar_minus_tx": -0.926,
+  "sd": 0.612,
+  "se": 0.078,
+  "same_as_rounded_tx": 17,
+  "same_share": 0.279,
+  "gap_rounded": {
+   "-2": 14,
+   "-1": 30,
+   "0": 17
+  }
+ },
+ "Orly": {
+  "icao": "LFPO",
+  "wmo": "07149",
+  "days": 51,
+  "mean_metar_minus_tx": -0.292,
+  "sd": 0.347,
+  "se": 0.049,
+  "same_as_rounded_tx": 33,
+  "same_share": 0.647,
+  "gap_rounded": {
+   "-1": 18,
+   "0": 33
+  }
+ },
+ "Munich": {
+  "icao": "EDDM",
+  "wmo": "10870",
+  "days": 30,
+  "mean_metar_minus_tx": 0.187,
+  "sd": 0.398,
+  "se": 0.073,
+  "same_as_rounded_tx": 24,
+  "same_share": 0.8,
+  "gap_rounded": {
+   "-1": 2,
+   "0": 24,
+   "1": 4
+  }
+ }
+}

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 277 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 278 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 277 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | desk | none | 2026-11-07 | 0 | 10 min |
-| P-0346 | Whole-degree METAR high against SYNOP TX at Heathrow, Orly and Munich airport, Sep to Oct: is the gap the same size at all three | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (333)
+## Verdicts (334)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-06 | P-0346 | Whole-degree METAR high against SYNOP TX at Heathrow, Orly and Munich airport, Sep to Oct: is the gap the same size at all three | **works** | Measured Sep to Oct, 06 to 18 UTC on both sides: METAR high minus SYNOP TX is -0.93 C at Heathrow (61 days, 28% same as rounded TX), -0.29 at Orly (51 days, 65%), +0.19 at Munich (30 days, 80%). My shot of within 0.3 and 70 to 80% everywhere missed at Heathrow. So the gap does not travel: London +1.26 ICON offset would be about +0.33 against a METAR target, arithmetic not measured. Cause at Heathrow not established; Munich has half the days, not checked why. Next: close (no London or Paris market on the book). | `experiments/2026-11-06-P-0346` | 1 min, 8 calls, 0 denied |
 | 2026-11-06 | P-0345 | EDDM METAR high against DWD 01262 TX_10 at the same airport: how often do they differ after rounding, and is the miss the peak falling between METAR reports | **works** | Measured over 540 days: EDDM METAR high equals rounded DWD 01262 TX_10 on 424, 78.5%, against my shot of 65%. Of the other 116, 63 run 1 degree low, 52 run 1 degree high, one is 8 low (a reporting gap, not chased). Mean gap +0.03 C. Report times explain 58 of 116, half, not the most I called. So a perfect station forecast tops out near four days in five on the exact degree. 52 METARs warmer than the record suggest a different sensor, not established. Rule still on trial under D-023. Next: close until D-023 is scored. | `experiments/2026-11-06-P-0345` | 0 min, 6 calls, 0 denied |
 | 2026-11-06 | P-0344 | German Wikipedia first-link walks: 100 random de articles under P-0332's rule, arrival rate at Philosophie and the top ring beside the English 48 of 100 | **works** | Measured on 100 random de articles under the same parser: 53 reached Philosophie (median 14 hops), 20 looped, 25 dead ends, 2 parser errors, against English 48, 41 and 11; my shot of under 35 missed, the other half hit. The Knowledge ring does not exist here: the top ring is System > Ganzheit > Abstrakta > Sprachwissenschaft > Sprache, 10 walks. 52 of 53 arrivals pass through Objekt (Philosophie). 17 died at hop 0 on name and disambiguation pages. Bug: red links are read as articles, also true of the English walker. One sample each. Next: close. | `experiments/2026-11-06-P-0344` | 10 min, 15 calls, 0 denied |
 | 2026-11-06 | P-0343 | xG proxy: does rolling shots-on-target predict next-match goals better than rolling goals, on football-data? | **works** | Measured: on 4,608 rows of 2025-26, nine leagues, last-10 shots on target has test MSE 1.3001 against last-10 goals 1.3139, 1.05% lower (se about 0.5%), matching my shot of about 1%; better in 7 of 9 leagues; goals plus both 1.2954. One season, no opponent strength. Mostly a repeat of P-0168 and P-0169, which I found after running it: the desk already has a sot model that never beat the market. Next: close (nothing new for the desk). | `experiments/2026-11-06-P-0343` | 0 min, 11 calls, 0 denied |
