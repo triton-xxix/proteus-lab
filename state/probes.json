@@ -8333,22 +8333,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T12:38:15+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T12:40:03+0000",
+   "note": "Measured on 5.45M class 4 tests, 1 Apr to 8 Jun 2019 (first 8M rows, not the January start I queued, so season and year are tangled against P-0330 winter 2023): raw table flatters Juke by 0.37 in 2019 v 0.22 in 2023, my shot of 0.15 missed the wrong way; Fiat 500 by 0.38 v 0.17. Matched ratio moves a mean absolute 0.036 across 20 families (shot 0.06), all within 0.07 except Juke 1.05 to 1.21. Clio worst in both, 1.32 and 1.38. Not a 2023 artefact; the young-fleet reason is untested. Next: close (a season-aligned rerun is a longer stream and would not change the league).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0337"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "Juke raw minus matched about +0.15 in 2019 (0.22 in 2023), mean absolute move in matched ratio about 0.06 across the families in both",
-    "at": "2026-11-06T12:38:19+0000"
+    "at": "2026-11-06T12:38:19+0000",
+    "hit": true
    }
   }
  ]

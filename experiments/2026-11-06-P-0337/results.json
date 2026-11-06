@@ -1,0 +1,355 @@
+{
+ "rows_read": 8000000,
+ "tests_kept": 5452267,
+ "fleet_rate": 0.3437,
+ "dates": [
+  "2019-04-01",
+  "2019-06-08"
+ ],
+ "families_compared": 20,
+ "mean_abs_move": 0.036,
+ "table": [
+  {
+   "family": "BMW 3",
+   "tests": 100792,
+   "raw_rate": 0.2946,
+   "raw_ratio": 0.857,
+   "matched_ratio": 0.77,
+   "flattered_by_raw": 0.087
+  },
+  {
+   "family": "BMW 1 SERIES",
+   "tests": 49660,
+   "raw_rate": 0.2532,
+   "raw_ratio": 0.737,
+   "matched_ratio": 0.782,
+   "flattered_by_raw": -0.045
+  },
+  {
+   "family": "AUDI A4",
+   "tests": 55863,
+   "raw_rate": 0.3093,
+   "raw_ratio": 0.9,
+   "matched_ratio": 0.784,
+   "flattered_by_raw": 0.116
+  },
+  {
+   "family": "HONDA JAZZ",
+   "tests": 54225,
+   "raw_rate": 0.2723,
+   "raw_ratio": 0.792,
+   "matched_ratio": 0.805,
+   "flattered_by_raw": -0.013
+  },
+  {
+   "family": "AUDI A3",
+   "tests": 73503,
+   "raw_rate": 0.2861,
+   "raw_ratio": 0.832,
+   "matched_ratio": 0.84,
+   "flattered_by_raw": -0.008
+  },
+  {
+   "family": "VOLKSWAGEN GOLF",
+   "tests": 166308,
+   "raw_rate": 0.3287,
+   "raw_ratio": 0.956,
+   "matched_ratio": 0.891,
+   "flattered_by_raw": 0.065
+  },
+  {
+   "family": "MINI MINI",
+   "tests": 81696,
+   "raw_rate": 0.3529,
+   "raw_ratio": 1.027,
+   "matched_ratio": 0.898,
+   "flattered_by_raw": 0.129
+  },
+  {
+   "family": "TOYOTA YARIS",
+   "tests": 72527,
+   "raw_rate": 0.3376,
+   "raw_ratio": 0.982,
+   "matched_ratio": 0.936,
+   "flattered_by_raw": 0.046
+  },
+  {
+   "family": "HONDA CIVIC",
+   "tests": 64598,
+   "raw_rate": 0.3872,
+   "raw_ratio": 1.127,
+   "matched_ratio": 0.953,
+   "flattered_by_raw": 0.174
+  },
+  {
+   "family": "FORD MONDEO",
+   "tests": 59340,
+   "raw_rate": 0.3909,
+   "raw_ratio": 1.137,
+   "matched_ratio": 0.988,
+   "flattered_by_raw": 0.149
+  },
+  {
+   "family": "FORD FOCUS",
+   "tests": 222463,
+   "raw_rate": 0.3778,
+   "raw_ratio": 1.099,
+   "matched_ratio": 1.009,
+   "flattered_by_raw": 0.09
+  },
+  {
+   "family": "VAUXHALL ASTRA",
+   "tests": 168562,
+   "raw_rate": 0.3936,
+   "raw_ratio": 1.145,
+   "matched_ratio": 1.053,
+   "flattered_by_raw": 0.092
+  },
+  {
+   "family": "FORD FIESTA",
+   "tests": 248561,
+   "raw_rate": 0.3463,
+   "raw_ratio": 1.008,
+   "matched_ratio": 1.065,
+   "flattered_by_raw": -0.058
+  },
+  {
+   "family": "VAUXHALL ZAFIRA",
+   "tests": 68366,
+   "raw_rate": 0.4144,
+   "raw_ratio": 1.206,
+   "matched_ratio": 1.085,
+   "flattered_by_raw": 0.12
+  },
+  {
+   "family": "VOLKSWAGEN POLO",
+   "tests": 105633,
+   "raw_rate": 0.3725,
+   "raw_ratio": 1.084,
+   "matched_ratio": 1.112,
+   "flattered_by_raw": -0.029
+  },
+  {
+   "family": "NISSAN QASHQAI",
+   "tests": 64938,
+   "raw_rate": 0.3087,
+   "raw_ratio": 0.898,
+   "matched_ratio": 1.121,
+   "flattered_by_raw": -0.223
+  },
+  {
+   "family": "NISSAN MICRA",
+   "tests": 57090,
+   "raw_rate": 0.4063,
+   "raw_ratio": 1.182,
+   "matched_ratio": 1.123,
+   "flattered_by_raw": 0.059
+  },
+  {
+   "family": "FORD TRANSIT",
+   "tests": 85790,
+   "raw_rate": 0.4213,
+   "raw_ratio": 1.226,
+   "matched_ratio": 1.166,
+   "flattered_by_raw": 0.06
+  },
+  {
+   "family": "VAUXHALL CORSA",
+   "tests": 189173,
+   "raw_rate": 0.4102,
+   "raw_ratio": 1.193,
+   "matched_ratio": 1.229,
+   "flattered_by_raw": -0.036
+  },
+  {
+   "family": "RENAULT CLIO",
+   "tests": 79606,
+   "raw_rate": 0.4868,
+   "raw_ratio": 1.416,
+   "matched_ratio": 1.325,
+   "flattered_by_raw": 0.091
+  }
+ ],
+ "compare": [
+  {
+   "family": "LAND ROVER RANGE",
+   "tests_2019": 48176,
+   "matched_2019": 0.766,
+   "matched_2023": 0.712,
+   "move": -0.054,
+   "flatter_2019": -0.092,
+   "flatter_2023": -0.077
+  },
+  {
+   "family": "FIAT 500",
+   "tests_2019": 45853,
+   "matched_2019": 1.248,
+   "matched_2023": 1.194,
+   "move": -0.054,
+   "flatter_2019": -0.379,
+   "flatter_2023": -0.175
+  },
+  {
+   "family": "VOLKSWAGEN GOLF",
+   "tests_2019": 166308,
+   "matched_2019": 0.891,
+   "matched_2023": 0.851,
+   "move": -0.04,
+   "flatter_2019": 0.065,
+   "flatter_2023": 0.07
+  },
+  {
+   "family": "HONDA CIVIC",
+   "tests_2019": 64598,
+   "matched_2019": 0.953,
+   "matched_2023": 0.927,
+   "move": -0.026,
+   "flatter_2019": 0.174,
+   "flatter_2023": 0.183
+  },
+  {
+   "family": "FORD FOCUS",
+   "tests_2019": 222463,
+   "matched_2019": 1.009,
+   "matched_2023": 0.986,
+   "move": -0.023,
+   "flatter_2019": 0.09,
+   "flatter_2023": 0.112
+  },
+  {
+   "family": "VAUXHALL ASTRA",
+   "tests_2019": 168562,
+   "matched_2019": 1.053,
+   "matched_2023": 1.03,
+   "move": -0.023,
+   "flatter_2019": 0.092,
+   "flatter_2023": 0.145
+  },
+  {
+   "family": "NISSAN QASHQAI",
+   "tests_2019": 64938,
+   "matched_2019": 1.121,
+   "matched_2023": 1.109,
+   "move": -0.012,
+   "flatter_2019": -0.223,
+   "flatter_2023": -0.098
+  },
+  {
+   "family": "VAUXHALL CORSA",
+   "tests_2019": 189173,
+   "matched_2019": 1.229,
+   "matched_2023": 1.217,
+   "move": -0.012,
+   "flatter_2019": -0.036,
+   "flatter_2023": 0.022
+  },
+  {
+   "family": "AUDI A3",
+   "tests_2019": 73503,
+   "matched_2019": 0.84,
+   "matched_2023": 0.832,
+   "move": -0.008,
+   "flatter_2019": -0.008,
+   "flatter_2023": 0.044
+  },
+  {
+   "family": "BMW 3",
+   "tests_2019": 100792,
+   "matched_2019": 0.77,
+   "matched_2023": 0.763,
+   "move": -0.007,
+   "flatter_2019": 0.087,
+   "flatter_2023": 0.179
+  },
+  {
+   "family": "FORD TRANSIT",
+   "tests_2019": 85790,
+   "matched_2019": 1.166,
+   "matched_2023": 1.171,
+   "move": 0.005,
+   "flatter_2019": 0.06,
+   "flatter_2023": 0.012
+  },
+  {
+   "family": "MERCEDES-BENZ C",
+   "tests_2019": 42875,
+   "matched_2019": 0.815,
+   "matched_2023": 0.826,
+   "move": 0.011,
+   "flatter_2019": -0.08,
+   "flatter_2023": 0.02
+  },
+  {
+   "family": "MINI MINI",
+   "tests_2019": 81696,
+   "matched_2019": 0.898,
+   "matched_2023": 0.916,
+   "move": 0.018,
+   "flatter_2019": 0.129,
+   "flatter_2023": 0.313
+  },
+  {
+   "family": "TOYOTA YARIS",
+   "tests_2019": 72527,
+   "matched_2019": 0.936,
+   "matched_2023": 0.955,
+   "move": 0.019,
+   "flatter_2019": 0.046,
+   "flatter_2023": 0.103
+  },
+  {
+   "family": "VOLKSWAGEN POLO",
+   "tests_2019": 105633,
+   "matched_2019": 1.112,
+   "matched_2023": 1.136,
+   "move": 0.024,
+   "flatter_2019": -0.029,
+   "flatter_2023": 0.019
+  },
+  {
+   "family": "HONDA JAZZ",
+   "tests_2019": 54225,
+   "matched_2019": 0.805,
+   "matched_2023": 0.835,
+   "move": 0.03,
+   "flatter_2019": -0.013,
+   "flatter_2023": 0.019
+  },
+  {
+   "family": "RENAULT CLIO",
+   "tests_2019": 79606,
+   "matched_2019": 1.325,
+   "matched_2023": 1.38,
+   "move": 0.055,
+   "flatter_2019": 0.091,
+   "flatter_2023": 0.088
+  },
+  {
+   "family": "FORD FIESTA",
+   "tests_2019": 248561,
+   "matched_2019": 1.065,
+   "matched_2023": 1.132,
+   "move": 0.067,
+   "flatter_2019": -0.058,
+   "flatter_2023": 0.005
+  },
+  {
+   "family": "BMW 1 SERIES",
+   "tests_2019": 49660,
+   "matched_2019": 0.782,
+   "matched_2023": 0.853,
+   "move": 0.071,
+   "flatter_2019": -0.045,
+   "flatter_2023": 0.038
+  },
+  {
+   "family": "NISSAN JUKE",
+   "tests_2019": 33945,
+   "matched_2019": 1.054,
+   "matched_2023": 1.21,
+   "move": 0.156,
+   "flatter_2019": -0.373,
+   "flatter_2023": -0.222
+  }
+ ]
+}
