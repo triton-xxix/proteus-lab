@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 270 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 
-## Queue (7 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Verdicts so far: 270 works, 5 broken, 33 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
+| P-0336 | ICON-D2 v ICON-EU for a one-day Munich call: Open-Meteo previous-runs icon_d2 and icon_eu at the city point, 60 days, scoring D2 lead 1, EU lead 1 and EU lead 2 by MAE and exact degree against DWD 03379 TXK, and from 13 Oct against the EDDM METAR high. | refill | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (324)
 

@@ -1,5 +1,5 @@
 {
- "next_id": 336,
+ "next_id": 337,
  "items": [
   {
    "id": "P-0001",
@@ -8294,6 +8294,32 @@
     "number": "METAR high minus airport ICON day-ahead about +0.1 C; exact-degree hit about 35 percent at lead 1",
     "at": "2026-11-06T12:36:23+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0336",
+   "title": "ICON-D2 v ICON-EU for a one-day Munich call: Open-Meteo previous-runs icon_d2 and icon_eu at the city point, 60 days, scoring D2 lead 1, EU lead 1 and EU lead 2 by MAE and exact degree against DWD 03379 TXK, and from 13 Oct against the EDDM METAR high.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T12:37:27+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "D2 lead 1 MAE against DWD 03379 about 0.15 C below EU lead 1, on about 60 days",
+    "at": "2026-11-06T12:37:30+0000"
    }
   }
  ]
