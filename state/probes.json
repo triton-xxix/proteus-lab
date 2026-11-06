@@ -1,5 +1,5 @@
 {
- "next_id": 337,
+ "next_id": 338,
  "items": [
   {
    "id": "P-0001",
@@ -8323,6 +8323,32 @@
     "number": "D2 lead 1 MAE against DWD 03379 about 0.15 C below EU lead 1, on about 60 days",
     "at": "2026-11-06T12:37:30+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0337",
+   "title": "MOT matched league before COVID: P-0330's league.py on the first rows of DVSA 2019 (1 Jan to about 6 Mar 2019), the same 20 families matched on age, mileage and fuel; does the raw table still flatter Juke and Fiat 500 by about 0.2, and how far does each family's matched ratio move between 2019 and 2023.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T12:38:15+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "Juke raw minus matched about +0.15 in 2019 (0.22 in 2023), mean absolute move in matched ratio about 0.06 across the families in both",
+    "at": "2026-11-06T12:38:19+0000"
    }
   }
  ]
