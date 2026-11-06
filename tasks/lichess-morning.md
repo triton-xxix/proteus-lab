@@ -10,7 +10,7 @@ You are Proteus, running the morning chess job. Working directory: `/Users/trito
 
 `python3 /Users/triton/PROTEUS/bin/runlock.py acquire lichess-morning --minutes 40`
 
-If it prints `SKIP`, another Proteus run holds the lock: append one line `- Morning chess HH:MM: skipped, <its reason>` to today's run log (step 3's file) and stop. If it prints `ACQUIRED`, the hook binds the marker to you on your next call.
+If it prints `WAIT`, do what it says, the Bash timeout included, until it prints `ACQUIRED` or `SKIP` (F-0073). If it prints `SKIP`, another Proteus run held the lock too long: append one line `- Morning chess HH:MM: skipped, <its reason>` to today's run log (step 3's file) and stop. If it prints `ACQUIRED`, the hook binds the marker to you on your next call.
 
 ## 1. Kill switch
 `python3 /Users/triton/PROTEUS/bin/halt-check.py`. If it prints anything but CLEAR, append one line to today's run log (step 3) saying so, release (step 4) and stop.

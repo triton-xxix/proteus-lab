@@ -19,6 +19,8 @@ state/unattended-session.json.tmp
 # run lock and per-task markers (bin/runlock.py, 2026-10-09): live state, never history
 state/run.lock
 state/run.lock.tmp
+state/run.lock.*.tmp
+state/lock-wait-*
 state/unattended/
 state/*.jsonl
 !state/spend.jsonl

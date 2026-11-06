@@ -16,6 +16,7 @@ only with `bin/commit.py` or the probe script's own commit. 40 minutes in all.
 ## Step 0, the lock (before any other tool call, reading this file aside)
 
 `python3 /Users/triton/PROTEUS/bin/runlock.py acquire trials --minutes 40`
+On `WAIT`: do what it says, the Bash timeout included, until it prints `ACQUIRED` or `SKIP` (F-0073).
 On `SKIP`: append `- Trials HH:MM: skipped, <reason>` to today's run log and stop.
 
 ## 1. Kill switch and header

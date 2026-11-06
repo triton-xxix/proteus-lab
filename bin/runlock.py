@@ -7,7 +7,10 @@ fall back to prompting and hang) or racing its pushes. This is the first call ev
 
   acquire TASK --minutes N   take the lock and write state/unattended/TASK.json, bound to this
                              session (CLAUDE_CODE_SESSION_ID from the environment). Prints
-                             ACQUIRED, or SKIP with who holds it (then the run logs one line and stops).
+                             ACQUIRED, WAIT with who holds it (then the run calls `wait`), or SKIP
+                             (the wait ran out: the run logs one line and stops).
+  wait TASK --minutes N      block up to 9 minutes for the lock, then ACQUIRED, WAIT or SKIP as above.
+                             Needs a Bash timeout of 600000; acquire itself returns at once.
   release TASK               drop the lock and the task's marker. Safe to call twice.
   status                     who holds it, until when.
 
@@ -15,6 +18,11 @@ The lock is state/run.lock: {task, start, deadline}. It is stale, and taken over
 deadline plus 15 minutes has passed, so a crashed run costs at most one slot. The nightly's legacy
 marker (state/unattended-session.json, bound and under three hours old) also counts as held, so a
 daytime slot cannot start inside a nightly that predates this script.
+
+Waiting came in on 6 Nov 2026 (F-0073). When the Mac wakes, every missed slot fires inside a few
+minutes; on 5 Nov a 33-minute nightly took the lock first and four slots skipped for good. A slot now
+waits up to 150 minutes in all, tracked in state/lock-wait-TASK.json, so they run one after another.
+There is no queue order: whichever polls first after a release goes next.
 """
 import json
 import os
@@ -29,6 +37,10 @@ MARKER_DIR = STATE + "unattended/"
 LEGACY = STATE + "unattended-session.json"
 GRACE_S = 15 * 60
 LEGACY_MAX_S = 3 * 3600
+WAIT_CAP_S = 150 * 60
+TESTING = bool(os.environ.get("PROTEUS_TEST_STATE"))
+WAIT_CALL_S = 4 if TESTING else 9 * 60
+POLL_S = 1 if TESTING else 20
 TASK_CHARS = set("abcdefghijklmnopqrstuvwxyz0123456789-")
 
 
@@ -45,7 +57,7 @@ def read_json(path):
 
 
 def write_json(path, obj):
-    tmp = path + ".tmp"
+    tmp = "%s.%d.tmp" % (path, os.getpid())
     with open(tmp, "w") as fh:
         json.dump(obj, fh)
     os.replace(tmp, path)
@@ -64,17 +76,55 @@ def holder(now):
     return None
 
 
+def wait_path(task):
+    # Not under state/unattended/: the hook treats every .json there as a run marker.
+    return STATE + "lock-wait-" + task + ".json"
+
+
+def clear_wait(task):
+    try:
+        os.remove(wait_path(task))
+    except FileNotFoundError:
+        pass
+
+
+def wait_or_skip(task, minutes, held, now):
+    """The lock is someone else's: tell the run to keep waiting, or that the wait has run out."""
+    since = (read_json(wait_path(task)) or {}).get("since")
+    # A file older than the cap by an hour was left by a run that died; start again.
+    if not since or now - float(since) > WAIT_CAP_S + 3600:
+        since = now
+        write_json(wait_path(task), {"since": since})
+    since = float(since)
+    if now - since >= WAIT_CAP_S:
+        clear_wait(task)
+        print("SKIP: lock held by %s since %s, deadline %s; gave up after waiting from %s. Log one line and stop."
+              % (held[0], hhmm(held[1]), hhmm(held[2]), hhmm(since)))
+        return 0
+    print("WAIT: lock held by %s since %s, deadline %s. Run `python3 %sbin/runlock.py wait %s --minutes %d` with a "
+          "Bash timeout of 600000, and again each time it prints WAIT. It gives up by itself at %s."
+          % (held[0], hhmm(held[1]), hhmm(held[2]), ROOT, task, minutes, hhmm(since + WAIT_CAP_S)))
+    return 0
+
+
 def acquire(task, minutes):
     now = time.time()
     held = holder(now)
     if held and held[0] != task:
-        print("SKIP: lock held by %s since %s, deadline %s. Log one line and stop." % (held[0], hhmm(held[1]), hhmm(held[2])))
-        return 0
+        return wait_or_skip(task, minutes, held, now)
     if held and held[0] == task:
         print("NOTE: %s already held the lock (a crashed earlier run of the same task); taking it over." % task)
     os.makedirs(MARKER_DIR, exist_ok=True)
     deadline = now + minutes * 60
-    write_json(LOCK, {"task": task, "start": now, "deadline": deadline, "pid": os.getppid()})
+    token = "%d-%f" % (os.getpid(), now)
+    write_json(LOCK, {"task": task, "start": now, "deadline": deadline, "pid": os.getppid(), "token": token})
+    # Waiting slots poll at once after a release, so two can write here together. The last write
+    # stands: read it back after a beat and the loser goes on waiting.
+    time.sleep(1)
+    lock = read_json(LOCK)
+    if not lock or lock.get("token") != token:
+        return wait_or_skip(task, minutes, holder(time.time()) or ("another run", now, now), time.time())
+    clear_wait(task)
     # Claude Code puts the session id in every Bash call's environment, so the marker is written
     # already bound to this run. An unbound marker could be taken by any session in the folder that
     # made a call first, Luke's included (the old single marker had a 15-minute window for that).
@@ -93,7 +143,19 @@ def acquire(task, minutes):
     return 0
 
 
+def wait(task, minutes):
+    """Block until the lock is free or this call's time is up, then answer as acquire does."""
+    end = time.time() + WAIT_CALL_S
+    while time.time() < end:
+        held = holder(time.time())
+        if not held or held[0] == task:
+            return acquire(task, minutes)
+        time.sleep(POLL_S)
+    return acquire(task, minutes)
+
+
 def release(task):
+    clear_wait(task)
     lock = read_json(LOCK)
     if lock and lock.get("task") == task:
         os.remove(LOCK)
@@ -117,7 +179,7 @@ def status():
 def main(argv):
     if len(argv) >= 2 and argv[1] == "status":
         return status()
-    if len(argv) >= 3 and argv[1] in ("acquire", "release"):
+    if len(argv) >= 3 and argv[1] in ("acquire", "wait", "release"):
         task = argv[2]
         if not task or set(task) - TASK_CHARS:
             print("task names are lower-case letters, digits and hyphens")
@@ -127,6 +189,8 @@ def main(argv):
         minutes = 40
         if "--minutes" in argv:
             minutes = int(argv[argv.index("--minutes") + 1])
+        if argv[1] == "wait":
+            return wait(task, minutes)
         return acquire(task, minutes)
     print(__doc__)
     return 2

@@ -16,6 +16,7 @@ anyone. Commit only with `bin/commit.py` and named paths. 40 minutes in all.
 ## Step 0, the lock (before any other tool call, reading this file aside)
 
 `python3 /Users/triton/PROTEUS/bin/runlock.py acquire inspector --minutes 40`
+On `WAIT`: do what it says, the Bash timeout included, until it prints `ACQUIRED` or `SKIP` (F-0073).
 On `SKIP`: append `- Inspector HH:MM: skipped, <the reason it printed>` to today's run log
 (`/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md`, local date) and stop.
 

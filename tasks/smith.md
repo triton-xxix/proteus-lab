@@ -16,6 +16,7 @@ Commit only with `bin/commit.py`, one commit per change. 40 minutes in all.
 ## Step 0, the lock (before any other tool call, reading this file aside)
 
 `python3 /Users/triton/PROTEUS/bin/runlock.py acquire smith --minutes 40`
+On `WAIT`: do what it says, the Bash timeout included, until it prints `ACQUIRED` or `SKIP` (F-0073).
 On `SKIP`: append `- Smith HH:MM: skipped, <reason>` to today's run log and stop.
 
 ## 1. Kill switch and header

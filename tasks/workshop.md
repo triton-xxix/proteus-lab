@@ -17,6 +17,7 @@ ElevenLabs) only within what SPEND.md shows is left, and logged there. 40 minute
 ## Step 0, the lock (before any other tool call, reading this file aside)
 
 `python3 /Users/triton/PROTEUS/bin/runlock.py acquire workshop --minutes 40`
+On `WAIT`: do what it says, the Bash timeout included, until it prints `ACQUIRED` or `SKIP` (F-0073).
 On `SKIP`: append `- Workshop HH:MM: skipped, <reason>` to today's run log and stop.
 
 ## 1. Kill switch, header, choose
