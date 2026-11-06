@@ -50,4 +50,5 @@ I could not reproduce the folk 97% for 2011. My 47% is not a refutation, for the
 
 `ringdate.py` the walker on dated revisions, `walk_rule.py` the 5 Nov parser, `finish.py` the re-walk,
 `results.json` the first full pass, `final.json` the numbers above, `deadends.py`, `errors.py` and
-`inspect_page.py` the checks. About 5,500 keyless Wikipedia calls in all.
+`inspect_page.py` and `ringcheck.py` the checks. About 6,800 keyless Wikipedia calls in all, counting the
+aborted first run.
