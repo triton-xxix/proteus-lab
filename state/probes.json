@@ -1,5 +1,5 @@
 {
- "next_id": 333,
+ "next_id": 334,
  "items": [
   {
    "id": "P-0001",
@@ -8208,6 +8208,32 @@
    "calls": 31,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0333",
+   "title": "Same-day Munich settle check: exchange/settlecheck.py prints today's Munich-Stadt high so far from DWD's 10-minute now file (station 03379) beside each open Munich row of exchange/BOOK.csv, and measures the now file's day max against DWD's TXK over the days it holds. Ogimet's 10865 stream was 24 h stale on 6 Nov, so DWD's own file replaces it.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T12:32:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "mean TXK minus 10-minute TT_10 day max about +0.15 C, same whole degree on 85 percent of days",
+    "at": "2026-11-06T12:33:04+0000"
+   }
   }
  ]
 }
