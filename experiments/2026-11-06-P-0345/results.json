@@ -1,0 +1,43 @@
+{
+ "reports": 26345,
+ "days": 540,
+ "first": "2025-05-06",
+ "last": "2026-11-05",
+ "same_as_rounded_tx": 424,
+ "same_share": 0.7852,
+ "gap_M_minus_roundX": {
+  "-8": 1,
+  "-1": 63,
+  "0": 424,
+  "1": 52
+ },
+ "mean_gap": 0.028,
+ "differ": 116,
+ "differ_explained_by_report_times": 58,
+ "same_as_rounded_spot_at_report_times": 360,
+ "gap_M_minus_roundT": {
+  "-8": 1,
+  "-1": 4,
+  "0": 360,
+  "1": 173,
+  "2": 2
+ },
+ "by_month_same_share": {
+  "1": 0.903,
+  "2": 0.857,
+  "3": 0.733,
+  "4": 0.867,
+  "5": 0.772,
+  "6": 0.8,
+  "7": 0.661,
+  "8": 0.806,
+  "9": 0.776,
+  "10": 0.758,
+  "11": 0.743,
+  "12": 0.871
+ },
+ "since_1_sep": {
+  "days": 64,
+  "same": 49
+ }
+}

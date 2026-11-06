@@ -8556,22 +8556,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:49:19+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:50:05+0000",
+   "note": "Measured over 540 days: EDDM METAR high equals rounded DWD 01262 TX_10 on 424, 78.5%, against my shot of 65%. Of the other 116, 63 run 1 degree low, 52 run 1 degree high, one is 8 low (a reporting gap, not chased). Mean gap +0.03 C. Report times explain 58 of 116, half, not the most I called. So a perfect station forecast tops out near four days in five on the exact degree. 52 METARs warmer than the record suggest a different sensor, not established. Rule still on trial under D-023. Next: close until D-023 is scored.",
+   "artefacts": [
+    "experiments/2026-11-06-P-0345"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "METAR high equals rounded TX_10 on about 65% of days, and report times explain most of the differences",
-    "at": "2026-11-06T23:49:38+0000"
+    "at": "2026-11-06T23:49:38+0000",
+    "hit": true
    }
   }
  ]
