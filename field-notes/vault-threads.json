@@ -12,8 +12,48 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 314,
+  "count": 318,
   "threads": [
+    {
+      "date": "2026-11-05",
+      "subject": "Sumiro 24h Claude Code game pipeline",
+      "kind": "service",
+      "status": "open",
+      "theme": "concept art to playable scene loop",
+      "note": "image in, agents build, human only reports bugs; transfers to site builds",
+      "where": "TRITON-CORE/Research/links/2026-11-05-sumiro-24h-game.md",
+      "url": "https://www.instagram.com/p/DfXlI-1AEUh/"
+    },
+    {
+      "date": "2026-11-05",
+      "subject": "Sumiro 24h Claude Code game pipeline",
+      "kind": "service",
+      "status": "open",
+      "theme": "bot plays the build as QA",
+      "note": "agent drives the product to find bugs",
+      "where": "TRITON-CORE/Research/links/2026-11-05-sumiro-24h-game.md",
+      "url": "https://www.instagram.com/p/DfXlI-1AEUh/"
+    },
+    {
+      "date": "2026-11-05",
+      "subject": "Sumiro 24h Claude Code game pipeline",
+      "kind": "service",
+      "status": "intel",
+      "theme": "image-to-3D from side views (Tripo)",
+      "note": "understand only",
+      "where": "TRITON-CORE/Research/links/2026-11-05-sumiro-24h-game.md",
+      "url": "https://www.instagram.com/p/DfXlI-1AEUh/"
+    },
+    {
+      "date": "2026-11-05",
+      "subject": "Sumiro 24h Claude Code game pipeline",
+      "kind": "service",
+      "status": "dead",
+      "theme": "the game itself",
+      "note": "nothing to adopt",
+      "where": "TRITON-CORE/Research/links/2026-11-05-sumiro-24h-game.md",
+      "url": "https://www.instagram.com/p/DfXlI-1AEUh/"
+    },
     {
       "date": "2026-10-29",
       "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
@@ -3080,8 +3120,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 74,
+  "links_count": 75,
   "links": [
+    {
+      "date": "2026-11-05",
+      "subject": "Sumiro 24h Claude Code game pipeline",
+      "kind": "service",
+      "where": "TRITON-CORE/Research/links/2026-11-05-sumiro-24h-game.md",
+      "url": "https://www.instagram.com/p/DfXlI-1AEUh/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-11-05-sumiro-24h-game.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: Instagram carousel @evolving.ai, https://www.instagram.com/p/DfXlI-1AEUh/\nBoth videos in the carousel have no speech (audio is a music/outro jingle only). The content is the caption:\n\nA developer named Shikhar built a full 3D game called Sumiro in just 24 hours, with Claude Opus 5.5 doing most of the coding and a few other AI tools handling the visuals.\nHe started by generating a short reference video with Flux 3 Max, which set the look of the world and the main character.\nFrom there, he rebuilt the assets in Blender and placed them in Three.js, while Claude Code ran several AI agents at the same time to build and check the work.\nFor the hero, he made four side views with GPT Image, turned them into a 3D model with Tripo, and had Claude add cloth physics and animations.\nGPT Image also created concept art for each level, and Claude's agents turned every concept into a playable 3D stage, fixing bugs each time he reported them.\nThe game mixes puzzles, parkour and fights against different enemies, and anyone can play it for free in the browser at xikhar.github.io/sumiro.\nShikhar admits the music is weak because Claude can't hear audio, and he says the stiff movement in the demo comes from a Claude bot playing the game rather than a person."
+    },
     {
       "date": "2026-10-29",
       "subject": "alamin.8020ai local AI video carousel (Pinokio + Wan2GP)",
