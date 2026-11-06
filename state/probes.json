@@ -8246,22 +8246,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T12:35:02+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T12:36:04+0000",
+   "note": "Measured: highest EDDM METAR temperature agrees with 30 of 30 settled Munich rows and 8 of 8 winners; my shot was 29. Beside it: 03379 city rounded 24 of 30 and 5 of 8 winners, 01262 airport rounded 24 and 6, airport floor 27 and 5. Caveats: fitted on the same rows after looking, 22 rows are easy losers, 7 distinct winning days, Smarkets gives no rule text. Forward test committed here: X-0046 5 Nov 10C wins on METAR 10 where city TXK was 8.3. If it holds, the nightly +1C city correction aims at the wrong station. Nothing changed in the book or the prompt. Next: deepen (queue METAR high minus ICON by lead, once X-0046 settles).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0334"
+   ],
+   "minutes": 1,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "highest whole-degree EDDM METAR temperature agrees with 29 of 30 settled Munich rows",
-    "at": "2026-11-06T12:35:09+0000"
+    "at": "2026-11-06T12:35:09+0000",
+    "hit": true
    }
   }
  ]

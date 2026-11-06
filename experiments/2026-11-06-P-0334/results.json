@@ -1,0 +1,41 @@
+{
+ "reports": 1177,
+ "skipped": 0,
+ "first": "2026-10-13",
+ "last": "2026-11-06",
+ "rules": {
+  "utc_day": {
+   "rows": 30,
+   "agree": 30,
+   "wrong": []
+  },
+  "local_day": {
+   "rows": 30,
+   "agree": 30,
+   "wrong": []
+  }
+ },
+ "unsettled": [
+  {
+   "id": "X-0046",
+   "day": "2026-11-05",
+   "contract": "10°C",
+   "p": "0.22",
+   "metar_high_local_day": 10
+  },
+  {
+   "id": "X-0047",
+   "day": "2026-11-06",
+   "contract": "7°C",
+   "p": "0.25",
+   "metar_high_local_day": 3
+  },
+  {
+   "id": "X-0048",
+   "day": "2026-11-07",
+   "contract": "10°C",
+   "p": "0.22",
+   "metar_high_local_day": null
+  }
+ ]
+}
