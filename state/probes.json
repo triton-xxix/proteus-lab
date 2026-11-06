@@ -1,5 +1,5 @@
 {
- "next_id": 348,
+ "next_id": 350,
  "items": [
   {
    "id": "P-0001",
@@ -8633,6 +8633,52 @@
     "number": "winter same-degree share above summer by at least 8 points over five years, overall about 78%",
     "at": "2026-11-06T23:52:08+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0348",
+   "title": "First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings",
+   "source": "refill",
+   "needs": "",
+   "after": "2026-11-12",
+   "est_minutes": 25,
+   "added": "2026-11-06",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0349",
+   "title": "Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behind them, and does any survive 2% commission",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:53:39+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "0 to 2 books over 100 tonight, with under 50 units of lockable size each, and none surviving harsh commission",
+    "at": "2026-11-06T23:53:41+0000"
    }
   }
  ]
