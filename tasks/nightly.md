@@ -21,6 +21,8 @@ The hook binds the marker to you and from then on answers every tool call: allow
 
 `bash /Users/triton/PROTEUS/bin/run-nightly.sh`. If it prints HALTED, release the marker (step 0's closing write) and stop.
 
+**A second nightly on one date.** The scheduler can fire late, so a run at 17:05 and the proper 23:15 run can share a date (5 Nov 2026). Read today's `state/runs/YYYY-MM-DD.md` first. If it already has a `## Nightly run` section with a close commit: run the desks and steps 4, 6 and 7 as normal, since the scripts that matter dedupe or append by day. Skip step 5's item and Thursday's wishes, 5b and 5d, which key on the date, would overwrite the earlier run's files and cost a child each for a few hours' new material. Make no exchange calls if that date already holds two, which the rule counts per night. Say each skip in the run log.
+
 ## 2. The Grinder
 
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/grinder/scan.py --snapshot --limit 120`
