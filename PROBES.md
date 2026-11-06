@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 274 works, 5 broken, 34 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 274 works, 6 broken, 34 blocked, 16 not worth it. Killed: 4.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,13 +21,13 @@ Verdicts so far: 274 works, 5 broken, 34 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | desk | none | 2026-11-07 | 0 | 10 min |
-| P-0342 | NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free? | harvest | none |  | 1 (in progress) | 25 min |
 | P-0343 | xG proxy: does rolling shots-on-target predict next-match goals better than rolling goals, on football-data? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (329)
+## Verdicts (330)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-06 | P-0342 | NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free? | **broken** | Measured on Flask (83 files, 5 queries of mine, 1 and 2 hops): slices took 3.4 to 43 ms after a 0.31 s build, so the speed holds, but real size is 1,985 to 3,318 cl100k tokens against the 1,200 limit, 1.65 to 2.76 times over. The tool reports 1,136 to 1,200 because it counts words times 1.3 and leaves out its markdown. Named function in the slice 3 of 5 at one hop, 4 of 5 at two. My shot of under 1,200 missed. cl100k is not a local model tokeniser, chars/4 agrees. Next: close. | `experiments/2026-11-06-P-0342` | 0 min, 14 calls, 0 denied |
 | 2026-11-06 | P-0341 | Bonding curve: does a 25%-per-doubling curve beat a constant-product curve for an early buyer at 10x supply? | **works** | Measured in closed form: 25% per doubling pays 2.10x at 10x supply wherever you enter (2.06x after 1% fees each way). Constant product on pump.fun figures pays 1.00x at 0.1% of virtual supply, 1.19x at 1%, 5.41x at 6%; crossover 35.7M tokens, 3.33%, after 1.03 SOL in, against my shot of about 3%. So the power curve wins only for the first SOL or so. Caveat: 10x supply flatters it at the very start, no real launch replayed. Next: close (nothing the desk would change). | `experiments/2026-11-06-P-0341` | 0 min, 8 calls, 0 denied |
 | 2026-11-06 | P-0340 | claude-animation-skills graph: does build.py turn a JSON spec into an mp4 keyless in under 30 minutes? | **works** | Measured: build.py made a 1080x1920, 30 fps, 4.000 s mp4 from a JSON spec keyless, 33.1 s first run and 15.6 s second, against the skill saying about 10 s and my shot of under 120 s. Needed only GSAP and npx HyperFrames, no install.sh. Flaws seen on my 48 to 122 series: count opens at 0 while the dot sits at 48, first and last axis labels straddle the safe-area edge. Two runs on an Intel Mac; other five skills not run. Next: close (HyperFrames already does this here). | `experiments/2026-11-06-P-0340` | 1 min, 19 calls, 0 denied |
 | 2026-11-06 | P-0338 | Wikipedia hubs, read or not: Wikimedia pageviews for October 2026 for every page on P-0332's 100 first-link walks, keyless; rank correlation of views against walks through, and the share of walk steps landing on pages under 1,000 views a month. | **blocked** | Not measured. Wikimedia pageviews returned 429 well short of the 395 pages: 80 answered at 4 threads, then 12 at one request every 0.4 s before 5 refusals in a row stopped the script. My shot of +0.35 and 8% is a miss, unscoreable. The 80 gave +0.10 and 3.6%, not a sample so not a result. The 12 biggest hubs that answered are all read, 11,541 to 130,833 October views. Queued a slow retry from the cache. | `experiments/2026-11-06-P-0338` | 9 min, 16 calls, 0 denied |

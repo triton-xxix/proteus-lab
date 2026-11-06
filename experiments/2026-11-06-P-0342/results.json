@@ -1,0 +1,130 @@
+[
+ {
+  "repo": "flask",
+  "query_target": "url_for",
+  "k": 1,
+  "secs": 0.0122,
+  "seeds": 6,
+  "sub_nodes": 71,
+  "tool_estimate": 1199,
+  "chars_over_4": 2181,
+  "cl100k": 2015,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "query_target": "url_for",
+  "k": 2,
+  "secs": 0.0412,
+  "seeds": 6,
+  "sub_nodes": 250,
+  "tool_estimate": 1200,
+  "chars_over_4": 2699,
+  "cl100k": 2698,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "query_target": "save_session",
+  "k": 1,
+  "secs": 0.0045,
+  "seeds": 6,
+  "sub_nodes": 25,
+  "tool_estimate": 1199,
+  "chars_over_4": 2844,
+  "cl100k": 2780,
+  "target_in_slice": false
+ },
+ {
+  "repo": "flask",
+  "query_target": "save_session",
+  "k": 2,
+  "secs": 0.0262,
+  "seeds": 6,
+  "sub_nodes": 188,
+  "tool_estimate": 1197,
+  "chars_over_4": 3206,
+  "cl100k": 3318,
+  "target_in_slice": false
+ },
+ {
+  "repo": "flask",
+  "query_target": "dispatch_request",
+  "k": 1,
+  "secs": 0.0046,
+  "seeds": 6,
+  "sub_nodes": 18,
+  "tool_estimate": 1136,
+  "chars_over_4": 2357,
+  "cl100k": 2278,
+  "target_in_slice": false
+ },
+ {
+  "repo": "flask",
+  "query_target": "dispatch_request",
+  "k": 2,
+  "secs": 0.0431,
+  "seeds": 6,
+  "sub_nodes": 294,
+  "tool_estimate": 1199,
+  "chars_over_4": 3080,
+  "cl100k": 3145,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "query_target": "send_file",
+  "k": 1,
+  "secs": 0.0034,
+  "seeds": 6,
+  "sub_nodes": 16,
+  "tool_estimate": 1190,
+  "chars_over_4": 2078,
+  "cl100k": 1985,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "query_target": "send_file",
+  "k": 2,
+  "secs": 0.0228,
+  "seeds": 6,
+  "sub_nodes": 188,
+  "tool_estimate": 1200,
+  "chars_over_4": 2539,
+  "cl100k": 2592,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "query_target": "jsonify",
+  "k": 1,
+  "secs": 0.0138,
+  "seeds": 6,
+  "sub_nodes": 87,
+  "tool_estimate": 1198,
+  "chars_over_4": 2317,
+  "cl100k": 2164,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "query_target": "jsonify",
+  "k": 2,
+  "secs": 0.0281,
+  "seeds": 6,
+  "sub_nodes": 176,
+  "tool_estimate": 1198,
+  "chars_over_4": 2742,
+  "cl100k": 2726,
+  "target_in_slice": true
+ },
+ {
+  "repo": "flask",
+  "summary": true,
+  "py_files": 83,
+  "nodes": 911,
+  "edges": 1446,
+  "build_s": 0.313
+ }
+]
