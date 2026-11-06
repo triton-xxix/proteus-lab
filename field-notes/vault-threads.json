@@ -12,8 +12,88 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 318,
+  "count": 326,
   "threads": [
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "HyperFrames render engine",
+      "note": "vault runs it, WF-0148, called by bootcamp edit stage",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "adopted",
+      "theme": "Whisper transcription",
+      "note": "vault uses ElevenLabs Scribe",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "ghost-editor talking-head to captioned reel",
+      "note": "best takes plus 34 styles, fits the avatar and bootcamp edit stage; 109 stars unverified",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "claude-shorts long to vertical clips",
+      "note": "segment scoring for repurposing",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "ffmpeg-skill local cuts and captions",
+      "note": "silence, loudness, 9:16 fit, self-check",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "yt-dlp",
+      "note": "exists; YouTube IP flagged 5 Oct, no bulk use",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "Agent Skills Hub and threejs-skills",
+      "note": "directory of 388 tools; threejs links to the Sumiro thread",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "MotionClone and iArt.ai",
+      "note": "need ChatGPT plan or hosted SaaS",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/"
+    },
     {
       "date": "2026-11-05",
       "subject": "Sumiro 24h Claude Code game pipeline",
@@ -3120,8 +3200,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 75,
+  "links_count": 76,
   "links": [
+    {
+      "date": "2026-11-06",
+      "subject": "Claude video-editor repo list (ghost-editor, claude-shorts, ffmpeg-skill, HyperFrames)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.md",
+      "url": "https://www.instagram.com/p/DfMcWLZjz6c/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-11-06-claude-video-editor-repos.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Source: Instagram carousel by @okaashish, https://www.instagram.com/p/DfMcWLZjz6c/ (12 slides, text read from the images; caption is only \"Comment edit if you want all the links!\" plus hashtags). No speech.\n\nCover: 10 GitHub Repos That Turn Your Claude Into a Video Editor\n1. Ghost Editor - to edit your raw footage. Turn messy talking-head recordings into polished reels with best takes, captions and motion graphics. Open-source Claude Code skill that renders on your Mac; 34 styles; MIT; 109 stars (author kurbaitaev).\n2. FFmpeg Skill (npx ffmpeg-skill) - cut, trim, edit. Local FFmpeg, no cloud, no API keys, Python stdlib, checks its own output. Scripts: caption.py (animated karaoke captions), fit.py (9:16 crop), silence.py, loudness.py. MIT.\n3. Claude Shorts - long videos into Shorts. Finds best moments, vertical clips, animated captions via Remotion, AI segment scoring, cursor tracking, audio-aware boundary snapping. MIT, 257 stars.\n4. MotionClone - recreate video animations. Upload a reference motion-graphics video, rebuild as an editable project. Early access online studio, powered by Codex using your ChatGPT account; free local download (Windows app).\n5. Motion Skills (iArt.ai) - motion graphics from prompts. Hosted AI motion graphics software, free tier.\n6. yt-dlp - download videos from YouTube and hundreds of sites. 204k stars, Unlicense.\n7. Whisper - transcribe videos for subtitles, captions, transcript-based editing. 112k stars, MIT.\n8. Awesome Claude Video Skills (Agent Skills Hub) - directory of 388 Remotion skills and Claude Code video tools, security-graded, refreshed every 8h; their pick for a finished film fast is explainroo (616 stars).\n9. Three.js Skills - skill files giving Claude Code current verified three.js knowledge for 3D scenes, lighting, camera. MIT, 3.9k stars.\n10. HyperFrames (HeyGen) - videos from HTML/CSS/animation; Studio is \"the video editor built for agents\".\nCloser: Comment EDIT and I'll send you all the links."
+    },
     {
       "date": "2026-11-05",
       "subject": "Sumiro 24h Claude Code game pipeline",
