@@ -1,5 +1,5 @@
 {
- "next_id": 332,
+ "next_id": 333,
  "items": [
   {
    "id": "P-0001",
@@ -8184,6 +8184,28 @@
    ],
    "minutes": 4,
    "calls": 11,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0332",
+   "title": "Date the Knowledge ring: replay the first-link rule on Wikipedia old revisions at 2011, 2014, 2016, 2018, 2021 and now, from Science, Knowledge, Belief and a fixed 30-start sample; arrival rate per year and when the ring forms",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-05",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-05T23:32:47+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-06T00:23:11+0000",
+   "note": "Replaying the first-link rule on 100 starts: share of existing articles reaching Philosophy 47% (2011), 85% (2014), 18% (2016), 5% (2018), 55% (2021, 68 of 100 walked), 48% today, each collapse one hub's lead. The Knowledge ring is absent through 1 Jul 2021, so it formed after that; dead ends are an upper bound, so the folk 97% is neither matched nor refuted.",
+   "artefacts": [
+    "experiments/2026-11-05-P-0332"
+   ],
+   "minutes": 50,
+   "calls": 31,
    "denied": [],
    "luke": false
   }

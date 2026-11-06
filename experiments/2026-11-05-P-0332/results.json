@@ -1,0 +1,6775 @@
+{
+ "dates": {
+  "2011-07-01": {
+   "fixed": {
+    "Science": {
+     "outcome": "philosophy",
+     "path": [
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    "Knowledge": {
+     "outcome": "philosophy",
+     "path": [
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    "Belief": {
+     "outcome": "philosophy",
+     "path": [
+      "Belief",
+      "Proposition",
+      "Logic",
+      "Principle",
+      "Law",
+      "System",
+      "Component (group theory)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    }
+   },
+   "rows": [
+    {
+     "start": "Dennis Dougherty",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Dennis Dougherty"
+     ]
+    },
+    {
+     "start": "Betty Todd",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Betty Todd"
+     ]
+    },
+    {
+     "start": "Lizzy Mercier Descloux (album)",
+     "outcome": "error",
+     "hops": 9,
+     "path": [
+      "Lizzy Mercier Descloux (album)",
+      "Lizzy Mercier Descloux",
+      "Lyon",
+      "France",
+      "Unitary state",
+      "Sovereign state",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Jesse D. Crane",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Jesse D. Crane"
+     ]
+    },
+    {
+     "start": "KRI I Gusti Ngurah Rai",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KRI I Gusti Ngurah Rai"
+     ]
+    },
+    {
+     "start": "Mamunul Haque",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mamunul Haque"
+     ]
+    },
+    {
+     "start": "Fossalta di Piave",
+     "outcome": "error",
+     "hops": 9,
+     "path": [
+      "Fossalta di Piave",
+      "Province of Venice",
+      "Provinces of Italy",
+      "Italy",
+      "Unitary state",
+      "Sovereign state",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Yoshie Nishioka",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Yoshie Nishioka"
+     ]
+    },
+    {
+     "start": "Seagnat",
+     "outcome": "error",
+     "hops": 7,
+     "path": [
+      "Seagnat",
+      "NATO",
+      "Intergovernmental organization",
+      "Organization",
+      "Social group",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "William Hohri",
+     "outcome": "error",
+     "hops": 12,
+     "path": [
+      "William Hohri",
+      "Attack on Pearl Harbor",
+      "Military strike",
+      "Assassination",
+      "Religion",
+      "Cultural system",
+      "Culture",
+      "Alfred Kroeber",
+      "United States",
+      "Federalism",
+      "Politics",
+      "Group decision making",
+      "Individual"
+     ]
+    },
+    {
+     "start": "The Generation of Evil",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Generation of Evil"
+     ]
+    },
+    {
+     "start": "Wierum",
+     "outcome": "error",
+     "hops": 7,
+     "path": [
+      "Wierum",
+      "Dongeradeel",
+      "Municipality",
+      "Local government",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Foggy Tabriz (TV series)",
+     "outcome": "error",
+     "hops": 5,
+     "path": [
+      "Foggy Tabriz (TV series)",
+      "Jamshid Mashayekhi",
+      "Iran",
+      "Islamic republic",
+      "Muslim world",
+      "Islam"
+     ]
+    },
+    {
+     "start": "List of Russian monarchs",
+     "outcome": "dead end",
+     "hops": 6,
+     "path": [
+      "List of Russian monarchs",
+      "Rus' (region)",
+      "Eastern Europe",
+      "Europe",
+      "Continent",
+      "Landmass",
+      "Land"
+     ]
+    },
+    {
+     "start": "Calathus auctus",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Calathus auctus"
+     ]
+    },
+    {
+     "start": "KZE",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KZE"
+     ]
+    },
+    {
+     "start": "Ellen Ochoa Prep Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Ellen Ochoa Prep Academy"
+     ]
+    },
+    {
+     "start": "William Edward Barber",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "William Edward Barber"
+     ]
+    },
+    {
+     "start": "Lord Henry Bentinck",
+     "outcome": "error",
+     "hops": 5,
+     "path": [
+      "Lord Henry Bentinck",
+      "Conservative Party (UK)",
+      "Centre-right",
+      "Politics",
+      "Group decision making",
+      "Individual"
+     ]
+    },
+    {
+     "start": "Rafael Gr\u00fcnenfelder",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Rafael Gr\u00fcnenfelder"
+     ]
+    },
+    {
+     "start": "Porcellio obsoletus",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Porcellio obsoletus"
+     ]
+    },
+    {
+     "start": "Josh Morris (Australian footballer)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Josh Morris (Australian footballer)"
+     ]
+    },
+    {
+     "start": "StandArt",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "StandArt"
+     ]
+    },
+    {
+     "start": "John Davies (Welsh cricketer)",
+     "outcome": "philosophy",
+     "hops": 13,
+     "path": [
+      "John Davies (Welsh cricketer)",
+      "Wales",
+      "Country",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "B\u00f6zberg Tunnel",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "B\u00f6zberg Tunnel"
+     ]
+    },
+    {
+     "start": "GetThere",
+     "outcome": "philosophy",
+     "hops": 12,
+     "path": [
+      "GetThere",
+      "Sabre Holdings",
+      "Privately held company",
+      "Company",
+      "Companies law",
+      "Law",
+      "System",
+      "Component (group theory)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "TBHS",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "TBHS"
+     ]
+    },
+    {
+     "start": "The Empty Throne",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Empty Throne"
+     ]
+    },
+    {
+     "start": "Soulce-Cernay",
+     "outcome": "philosophy",
+     "hops": 14,
+     "path": [
+      "Soulce-Cernay",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Code 8 (2019 film)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Code 8 (2019 film)"
+     ]
+    },
+    {
+     "start": "DXBM",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "DXBM",
+      "FM broadcasting",
+      "Broadcasting",
+      "Distribution (business)"
+     ]
+    },
+    {
+     "start": "BBC Studios Home Entertainment",
+     "outcome": "error",
+     "hops": 7,
+     "path": [
+      "BBC Studios Home Entertainment",
+      "Demon Music Group",
+      "United Artists",
+      "D. W. Griffith",
+      "Feature length",
+      "List of motion picture terminology",
+      "Film",
+      "Recording"
+     ]
+    },
+    {
+     "start": "Windmill (chess)",
+     "outcome": "dead end",
+     "hops": 7,
+     "path": [
+      "Windmill (chess)",
+      "Chess",
+      "Board game",
+      "Game",
+      "Play (activity)",
+      "Ethology",
+      "Scientific method",
+      "Scientific technique?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "2015 Georgia Tech Yellow Jackets football team",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2015 Georgia Tech Yellow Jackets football team"
+     ]
+    },
+    {
+     "start": "The Second World (TV series)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Second World (TV series)"
+     ]
+    },
+    {
+     "start": "Vusal Huseynov",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Vusal Huseynov"
+     ]
+    },
+    {
+     "start": "Isoanala",
+     "outcome": "error",
+     "hops": 7,
+     "path": [
+      "Isoanala",
+      "Madagascar",
+      "Island country",
+      "Sovereign state",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Anastasian War",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Anastasian War",
+      "502"
+     ]
+    },
+    {
+     "start": "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne"
+     ]
+    },
+    {
+     "start": "Academia Raetica",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Academia Raetica"
+     ]
+    },
+    {
+     "start": "Lorenzo Vergani",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Lorenzo Vergani"
+     ]
+    },
+    {
+     "start": "La Chapelle-Montmartin",
+     "outcome": "philosophy",
+     "hops": 14,
+     "path": [
+      "La Chapelle-Montmartin",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Bodybuilders (On the Inside)",
+     "outcome": "error",
+     "hops": 8,
+     "path": [
+      "Bodybuilders (On the Inside)",
+      "Bodybuilding",
+      "Body modification",
+      "Human anatomy",
+      "Human physiology",
+      "Human",
+      "Extant taxon",
+      "Biology",
+      "Natural science"
+     ]
+    },
+    {
+     "start": "He Xiangyu",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "He Xiangyu"
+     ]
+    },
+    {
+     "start": "J. P. Donleavy",
+     "outcome": "error",
+     "hops": 6,
+     "path": [
+      "J. P. Donleavy",
+      "Irish American",
+      "United States",
+      "Federalism",
+      "Politics",
+      "Group decision making",
+      "Individual"
+     ]
+    },
+    {
+     "start": "Champion Stakes (English greyhound race)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Champion Stakes (English greyhound race)"
+     ]
+    },
+    {
+     "start": "French peasants",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "French peasants"
+     ]
+    },
+    {
+     "start": "Rikshistoriograf",
+     "outcome": "error",
+     "hops": 4,
+     "path": [
+      "Rikshistoriograf",
+      "Sweden",
+      "Nordic countries",
+      "Atlantic Ocean",
+      "Ocean"
+     ]
+    },
+    {
+     "start": "Waman Lakshman Kulkarni",
+     "outcome": "error",
+     "hops": 3,
+     "path": [
+      "Waman Lakshman Kulkarni",
+      "Marathi people",
+      "Indo-Aryans",
+      "Ethno-linguistic"
+     ]
+    },
+    {
+     "start": "Gray wolf population by country",
+     "outcome": "dead end",
+     "hops": 4,
+     "path": [
+      "Gray wolf population by country",
+      "Eurasia",
+      "Continent",
+      "Landmass",
+      "Land"
+     ]
+    },
+    {
+     "start": "The Ramblers",
+     "outcome": "error",
+     "hops": 3,
+     "path": [
+      "The Ramblers",
+      "Walking",
+      "Gait",
+      "Motion (physics)"
+     ]
+    },
+    {
+     "start": "Yaqoob Bizanjo",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Yaqoob Bizanjo"
+     ]
+    },
+    {
+     "start": "Fernando Batista",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Fernando Batista"
+     ]
+    },
+    {
+     "start": "Dale Hawerchuk",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Dale Hawerchuk"
+     ]
+    },
+    {
+     "start": "Brooklyn Steel",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Brooklyn Steel"
+     ]
+    },
+    {
+     "start": "The Noise (British TV series)",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "The Noise (British TV series)"
+     ]
+    },
+    {
+     "start": "Silas (TV series)",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Silas (TV series)"
+     ]
+    },
+    {
+     "start": "DGSN",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "DGSN"
+     ]
+    },
+    {
+     "start": "Uroporphyrinogen-III C-methyltransferase",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Uroporphyrinogen-III C-methyltransferase"
+     ]
+    },
+    {
+     "start": "KBRX",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "KBRX"
+     ]
+    },
+    {
+     "start": "Bogdana, Vaslui",
+     "outcome": "error",
+     "hops": 8,
+     "path": [
+      "Bogdana, Vaslui",
+      "Communes of Romania",
+      "Counties of Romania",
+      "Municipality",
+      "Local government",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "2013 Tour of Zhoushan Island",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2013 Tour of Zhoushan Island"
+     ]
+    },
+    {
+     "start": "Nargu Wildlife Sanctuary",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "Nargu Wildlife Sanctuary",
+      "Mandi district",
+      "Himachal Pradesh",
+      "Jammu and Kashmir"
+     ]
+    },
+    {
+     "start": "Via Ostiensis",
+     "outcome": "error",
+     "hops": 9,
+     "path": [
+      "Via Ostiensis",
+      "Ancient Rome",
+      "Civilization",
+      "Culture",
+      "Alfred Kroeber",
+      "United States",
+      "Federalism",
+      "Politics",
+      "Group decision making",
+      "Individual"
+     ]
+    },
+    {
+     "start": "Stabler Arena",
+     "outcome": "philosophy",
+     "hops": 14,
+     "path": [
+      "Stabler Arena",
+      "Lehigh University",
+      "Private university",
+      "University",
+      "Higher education",
+      "Learning",
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Mai Murdmaa",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mai Murdmaa"
+     ]
+    },
+    {
+     "start": "B'not Esh",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "B'not Esh"
+     ]
+    },
+    {
+     "start": "Norton Street Congregational Church",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Norton Street Congregational Church"
+     ]
+    },
+    {
+     "start": "Rankin, Pennsylvania",
+     "outcome": "error",
+     "hops": 9,
+     "path": [
+      "Rankin, Pennsylvania",
+      "Allegheny County, Pennsylvania",
+      "County (United States)",
+      "U.S. state",
+      "Federated state",
+      "Constitution",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Nanadegan",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Nanadegan"
+     ]
+    },
+    {
+     "start": "E\u015ffak Ayka\u00e7",
+     "outcome": "philosophy",
+     "hops": 14,
+     "path": [
+      "E\u015ffak Ayka\u00e7",
+      "Galatasaray S.K. (football team)",
+      "Turkey",
+      "Country",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Lasiodora klugi",
+     "outcome": "error",
+     "hops": 9,
+     "path": [
+      "Lasiodora klugi",
+      "Tarantula",
+      "Arachnid",
+      "Arthropod",
+      "Invertebrate",
+      "Animal",
+      "Eukaryote",
+      "Organism",
+      "Biology",
+      "Natural science"
+     ]
+    },
+    {
+     "start": "State court",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "State court"
+     ]
+    },
+    {
+     "start": "Nelson Demarco",
+     "outcome": "error",
+     "hops": 8,
+     "path": [
+      "Nelson Demarco",
+      "Basketball",
+      "Team sport",
+      "Sport",
+      "Organization",
+      "Social group",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Neoclides",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Neoclides"
+     ]
+    },
+    {
+     "start": "The Canadians (TV series)",
+     "outcome": "philosophy",
+     "hops": 9,
+     "path": [
+      "The Canadians (TV series)",
+      "History Television",
+      "History",
+      "Information",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Modern philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Gourd Creek",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Gourd Creek"
+     ]
+    },
+    {
+     "start": "Bronze Medal (disambiguation)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Bronze Medal (disambiguation)"
+     ]
+    },
+    {
+     "start": "Santucci's Armillary Sphere",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Santucci's Armillary Sphere"
+     ]
+    },
+    {
+     "start": "Ganesha pancharatnam",
+     "outcome": "error",
+     "hops": 12,
+     "path": [
+      "Ganesha pancharatnam",
+      "Ganesha",
+      "Hindu deities",
+      "Hinduism",
+      "Religion",
+      "Cultural system",
+      "Culture",
+      "Alfred Kroeber",
+      "United States",
+      "Federalism",
+      "Politics",
+      "Group decision making",
+      "Individual"
+     ]
+    },
+    {
+     "start": "Roverud Church",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Roverud Church"
+     ]
+    },
+    {
+     "start": "Quebec County (Province of Canada electoral district)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Quebec County (Province of Canada electoral district)"
+     ]
+    },
+    {
+     "start": "Beka III Jaqeli",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Beka III Jaqeli"
+     ]
+    },
+    {
+     "start": "List of United States Supreme Court cases, volume 332",
+     "outcome": "error",
+     "hops": 9,
+     "path": [
+      "List of United States Supreme Court cases, volume 332",
+      "Supreme Court of the United States",
+      "Supreme court",
+      "Court",
+      "Tribunal",
+      "Institution",
+      "Social structure",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "India at the 1952 Summer Olympics",
+     "outcome": "error",
+     "hops": 6,
+     "path": [
+      "India at the 1952 Summer Olympics",
+      "India",
+      "Sovereign state",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "American Youth Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "American Youth Academy"
+     ]
+    },
+    {
+     "start": "Anachis tangkangensis",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Anachis tangkangensis"
+     ]
+    },
+    {
+     "start": "Corybas papillosus",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Corybas papillosus"
+     ]
+    },
+    {
+     "start": "Sard, Khuzestan",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Sard, Khuzestan"
+     ]
+    },
+    {
+     "start": "61st Directors Guild of America Awards",
+     "outcome": "error",
+     "hops": 5,
+     "path": [
+      "61st Directors Guild of America Awards",
+      "Directors Guild of America Awards",
+      "Directors Guild of America",
+      "Trade union",
+      "Occupational safety and health",
+      "Interdisciplinarity"
+     ]
+    },
+    {
+     "start": "Rainbow Island (1944 film)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Rainbow Island (1944 film)"
+     ]
+    },
+    {
+     "start": "Vote-ratio monotonicity",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Vote-ratio monotonicity"
+     ]
+    },
+    {
+     "start": "Robert Lynn (director)",
+     "outcome": "error",
+     "hops": 6,
+     "path": [
+      "Robert Lynn (director)",
+      "United Kingdom",
+      "Sovereign state",
+      "State (polity)",
+      "Social sciences",
+      "List of academic disciplines",
+      "Academia"
+     ]
+    },
+    {
+     "start": "Mustansir Barma",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mustansir Barma"
+     ]
+    },
+    {
+     "start": "Carlo Jachino",
+     "outcome": "error",
+     "hops": 4,
+     "path": [
+      "Carlo Jachino",
+      "Sanremo",
+      "Liguria",
+      "Regions of Italy",
+      "Region"
+     ]
+    },
+    {
+     "start": "Guy Bernaert",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "Guy Bernaert",
+      "Belgium",
+      "Federation"
+     ]
+    },
+    {
+     "start": "Drake equation",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "Drake equation",
+      "Extraterrestrial life",
+      "Life"
+     ]
+    },
+    {
+     "start": "Federal, Pleasants County, West Virginia",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Federal, Pleasants County, West Virginia"
+     ]
+    },
+    {
+     "start": "Glissandra",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Glissandra"
+     ]
+    },
+    {
+     "start": "Holidays in Edenville, 64",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Holidays in Edenville, 64"
+     ]
+    }
+   ],
+   "counts": {
+    "dead end": 10,
+    "absent": 47,
+    "error": 36,
+    "philosophy": 7
+   },
+   "rings": [],
+   "pages": 268
+  },
+  "2014-07-01": {
+   "fixed": {
+    "Science": {
+     "outcome": "philosophy",
+     "path": [
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    "Knowledge": {
+     "outcome": "philosophy",
+     "path": [
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    "Belief": {
+     "outcome": "philosophy",
+     "path": [
+      "Belief",
+      "Conjecture",
+      "Proposition",
+      "Contemporary philosophy",
+      "Present",
+      "Time",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    }
+   },
+   "rows": [
+    {
+     "start": "Dennis Dougherty",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Dennis Dougherty"
+     ]
+    },
+    {
+     "start": "Betty Todd",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Betty Todd"
+     ]
+    },
+    {
+     "start": "Lizzy Mercier Descloux (album)",
+     "outcome": "philosophy",
+     "hops": 26,
+     "path": [
+      "Lizzy Mercier Descloux (album)",
+      "Lizzy Mercier Descloux",
+      "Musician",
+      "Performance",
+      "Performing arts",
+      "Art",
+      "Human behavior",
+      "Behavior",
+      "Organism",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Jesse D. Crane",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Jesse D. Crane"
+     ]
+    },
+    {
+     "start": "KRI I Gusti Ngurah Rai",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KRI I Gusti Ngurah Rai"
+     ]
+    },
+    {
+     "start": "Mamunul Haque",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mamunul Haque"
+     ]
+    },
+    {
+     "start": "Fossalta di Piave",
+     "outcome": "philosophy",
+     "hops": 28,
+     "path": [
+      "Fossalta di Piave",
+      "Province of Venice",
+      "Provinces of Italy",
+      "Italy",
+      "Unitary state",
+      "State (polity)",
+      "Community",
+      "Level of analysis",
+      "Unit of observation",
+      "Statistics",
+      "Data",
+      "Value (computer science)",
+      "Computer science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Yoshie Nishioka",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "Yoshie Nishioka",
+      "Japan",
+      "Island country",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Seagnat",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "Seagnat",
+      "NATO",
+      "Intergovernmental organization",
+      "Organization",
+      "Entity",
+      "Abstraction",
+      "First principle",
+      "Proposition",
+      "Contemporary philosophy",
+      "Present",
+      "Time",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "William Hohri",
+     "outcome": "philosophy",
+     "hops": 31,
+     "path": [
+      "William Hohri",
+      "Attack on Pearl Harbor",
+      "Military strike",
+      "United States Armed Forces",
+      "Armed forces",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "The Generation of Evil",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Generation of Evil"
+     ]
+    },
+    {
+     "start": "Wierum",
+     "outcome": "philosophy",
+     "hops": 30,
+     "path": [
+      "Wierum",
+      "Dongeradeel",
+      "Municipality",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Foggy Tabriz (TV series)",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "Foggy Tabriz (TV series)",
+      "Jamshid Mashayekhi",
+      "Iran",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "List of Russian monarchs",
+     "outcome": "philosophy",
+     "hops": 28,
+     "path": [
+      "List of Russian monarchs",
+      "Prince of Novgorod",
+      "Veliky Novgorod",
+      "Types of inhabited localities in Russia",
+      "Human settlement",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Calathus auctus",
+     "outcome": "philosophy",
+     "hops": 22,
+     "path": [
+      "Calathus auctus",
+      "Ground beetle",
+      "Cosmopolitan distribution",
+      "Biogeography",
+      "Species",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "KZE",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KZE"
+     ]
+    },
+    {
+     "start": "Ellen Ochoa Prep Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Ellen Ochoa Prep Academy"
+     ]
+    },
+    {
+     "start": "William Edward Barber",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "William Edward Barber"
+     ]
+    },
+    {
+     "start": "Lord Henry Bentinck",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "Lord Henry Bentinck",
+      "Conservative Party (UK)",
+      "Centre-right"
+     ]
+    },
+    {
+     "start": "Rafael Gr\u00fcnenfelder",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Rafael Gr\u00fcnenfelder"
+     ]
+    },
+    {
+     "start": "Porcellio obsoletus",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "Porcellio obsoletus",
+      "Woodlouse",
+      "Crustacean"
+     ]
+    },
+    {
+     "start": "Josh Morris (Australian footballer)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Josh Morris (Australian footballer)"
+     ]
+    },
+    {
+     "start": "StandArt",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "StandArt"
+     ]
+    },
+    {
+     "start": "John Davies (Welsh cricketer)",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "John Davies (Welsh cricketer)"
+     ]
+    },
+    {
+     "start": "B\u00f6zberg Tunnel",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "B\u00f6zberg Tunnel"
+     ]
+    },
+    {
+     "start": "GetThere",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "GetThere"
+     ]
+    },
+    {
+     "start": "TBHS",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "TBHS"
+     ]
+    },
+    {
+     "start": "The Empty Throne",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "The Empty Throne",
+      "Mercia",
+      "Anglo-Saxons",
+      "Great Britain",
+      "Island",
+      "Continent",
+      "Land",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Soulce-Cernay",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "Soulce-Cernay",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Code 8 (2019 film)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Code 8 (2019 film)"
+     ]
+    },
+    {
+     "start": "DXBM",
+     "outcome": "philosophy",
+     "hops": 32,
+     "path": [
+      "DXBM",
+      "FM broadcasting",
+      "Very high frequency",
+      "International Telecommunication Union",
+      "United Nations",
+      "Intergovernmental organization",
+      "Organization",
+      "Entity",
+      "Abstraction",
+      "First principle",
+      "Proposition",
+      "Contemporary philosophy",
+      "Present",
+      "Time",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "BBC Studios Home Entertainment",
+     "outcome": "philosophy",
+     "hops": 14,
+     "path": [
+      "BBC Studios Home Entertainment",
+      "BBC Worldwide",
+      "BBC",
+      "Public broadcasting",
+      "Radio",
+      "Amplitude",
+      "Periodic function",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Windmill (chess)",
+     "outcome": "philosophy",
+     "hops": 23,
+     "path": [
+      "Windmill (chess)",
+      "Chess",
+      "Abstract strategy game",
+      "Strategy game",
+      "Game",
+      "Play (activity)",
+      "Psychology",
+      "Applied science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "2015 Georgia Tech Yellow Jackets football team",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2015 Georgia Tech Yellow Jackets football team"
+     ]
+    },
+    {
+     "start": "The Second World (TV series)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Second World (TV series)"
+     ]
+    },
+    {
+     "start": "Vusal Huseynov",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Vusal Huseynov"
+     ]
+    },
+    {
+     "start": "Isoanala",
+     "outcome": "philosophy",
+     "hops": 24,
+     "path": [
+      "Isoanala",
+      "Madagascar",
+      "Malagasy Republic",
+      "East Africa",
+      "East",
+      "Noun",
+      "Part of speech",
+      "Grammar",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Anastasian War",
+     "outcome": "philosophy",
+     "hops": 27,
+     "path": [
+      "Anastasian War",
+      "Byzantine Empire",
+      "Medieval Greek",
+      "Greek language",
+      "Indo-European languages",
+      "Language family",
+      "Language",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne"
+     ]
+    },
+    {
+     "start": "Academia Raetica",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Academia Raetica"
+     ]
+    },
+    {
+     "start": "Lorenzo Vergani",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Lorenzo Vergani"
+     ]
+    },
+    {
+     "start": "La Chapelle-Montmartin",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "La Chapelle-Montmartin",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Bodybuilders (On the Inside)",
+     "outcome": "error",
+     "hops": 5,
+     "path": [
+      "Bodybuilders (On the Inside)",
+      "Discovery Channel",
+      "Cable television",
+      "Television program",
+      "Television",
+      "Telecommunication"
+     ]
+    },
+    {
+     "start": "He Xiangyu",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "He Xiangyu"
+     ]
+    },
+    {
+     "start": "J. P. Donleavy",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "J. P. Donleavy",
+      "Irish American",
+      "Americans"
+     ]
+    },
+    {
+     "start": "Champion Stakes (English greyhound race)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Champion Stakes (English greyhound race)"
+     ]
+    },
+    {
+     "start": "French peasants",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "French peasants"
+     ]
+    },
+    {
+     "start": "Rikshistoriograf",
+     "outcome": "philosophy",
+     "hops": 24,
+     "path": [
+      "Rikshistoriograf",
+      "Sweden",
+      "Scandinavia",
+      "Historical region",
+      "List of time periods",
+      "Time",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Waman Lakshman Kulkarni",
+     "outcome": "philosophy",
+     "hops": 20,
+     "path": [
+      "Waman Lakshman Kulkarni",
+      "Marathi people",
+      "Indo-Aryans",
+      "Ethnolinguistics",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Gray wolf population by country",
+     "outcome": "philosophy",
+     "hops": 26,
+     "path": [
+      "Gray wolf population by country",
+      "Eurasia",
+      "Continent",
+      "Land",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "The Ramblers",
+     "outcome": "philosophy",
+     "hops": 21,
+     "path": [
+      "The Ramblers",
+      "Walking",
+      "Gait",
+      "Motion (physics)",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Yaqoob Bizanjo",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Yaqoob Bizanjo"
+     ]
+    },
+    {
+     "start": "Fernando Batista",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Fernando Batista"
+     ]
+    },
+    {
+     "start": "Dale Hawerchuk",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "Dale Hawerchuk",
+      "Canada",
+      "Provinces and territories of Canada",
+      "Pages using Use mdy dates template with unknown parameters?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "Brooklyn Steel",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Brooklyn Steel"
+     ]
+    },
+    {
+     "start": "The Noise (British TV series)",
+     "outcome": "error",
+     "hops": 4,
+     "path": [
+      "The Noise (British TV series)",
+      "ITV (TV network)",
+      "Commercial broadcasting",
+      "Broadcasting",
+      "Distribution (business)"
+     ]
+    },
+    {
+     "start": "Silas (TV series)",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "Silas (TV series)",
+      "ZDF",
+      "Mainz"
+     ]
+    },
+    {
+     "start": "DGSN",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "DGSN"
+     ]
+    },
+    {
+     "start": "Uroporphyrinogen-III C-methyltransferase",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Uroporphyrinogen-III C-methyltransferase",
+      "Enzyme"
+     ]
+    },
+    {
+     "start": "KBRX",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "KBRX"
+     ]
+    },
+    {
+     "start": "Bogdana, Vaslui",
+     "outcome": "philosophy",
+     "hops": 29,
+     "path": [
+      "Bogdana, Vaslui",
+      "Communes of Romania",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "2013 Tour of Zhoushan Island",
+     "outcome": "philosophy",
+     "hops": 23,
+     "path": [
+      "2013 Tour of Zhoushan Island",
+      "China",
+      "East Asia",
+      "East",
+      "Noun",
+      "Part of speech",
+      "Grammar",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Nargu Wildlife Sanctuary",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "Nargu Wildlife Sanctuary",
+      "Mandi district",
+      "Himachal Pradesh",
+      "Jammu and Kashmir"
+     ]
+    },
+    {
+     "start": "Via Ostiensis",
+     "outcome": "philosophy",
+     "hops": 23,
+     "path": [
+      "Via Ostiensis",
+      "Ancient Rome",
+      "Italic peoples",
+      "Proto-Indo-Europeans",
+      "Proto-Indo-European language",
+      "Linguistic reconstruction",
+      "Attested language",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Stabler Arena",
+     "outcome": "philosophy",
+     "hops": 20,
+     "path": [
+      "Stabler Arena",
+      "Arena",
+      "Theatre",
+      "Fine art",
+      "Aesthetics",
+      "List of academic disciplines and sub-disciplines",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Mai Murdmaa",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mai Murdmaa"
+     ]
+    },
+    {
+     "start": "B'not Esh",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "B'not Esh"
+     ]
+    },
+    {
+     "start": "Norton Street Congregational Church",
+     "outcome": "philosophy",
+     "hops": 30,
+     "path": [
+      "Norton Street Congregational Church",
+      "Nottingham",
+      "City status in the United Kingdom",
+      "Monarchy of the United Kingdom",
+      "Constitutional monarchy",
+      "Democracy",
+      "Government",
+      "State (polity)",
+      "Community",
+      "Level of analysis",
+      "Unit of observation",
+      "Statistics",
+      "Data",
+      "Value (computer science)",
+      "Computer science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Rankin, Pennsylvania",
+     "outcome": "philosophy",
+     "hops": 30,
+     "path": [
+      "Rankin, Pennsylvania",
+      "Allegheny County, Pennsylvania",
+      "County (United States)",
+      "United States",
+      "Federal republic",
+      "Federation",
+      "Political union",
+      "State (polity)",
+      "Community",
+      "Level of analysis",
+      "Unit of observation",
+      "Statistics",
+      "Data",
+      "Value (computer science)",
+      "Computer science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Nanadegan",
+     "outcome": "philosophy",
+     "hops": 30,
+     "path": [
+      "Nanadegan",
+      "Varzaq-e Jonubi Rural District",
+      "Administrative divisions of Iran",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "E\u015ffak Ayka\u00e7",
+     "outcome": "philosophy",
+     "hops": 23,
+     "path": [
+      "E\u015ffak Ayka\u00e7",
+      "Galatasaray S.K. (football)",
+      "Association football",
+      "Team sport",
+      "Sport",
+      "Competition",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Lasiodora klugi",
+     "outcome": "philosophy",
+     "hops": 21,
+     "path": [
+      "Lasiodora klugi",
+      "Tarantula",
+      "Arachnid",
+      "Class (biology)",
+      "Biological classification",
+      "Taxonomy (biology)",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "State court",
+     "outcome": "philosophy",
+     "hops": 26,
+     "path": [
+      "State court",
+      "Federation",
+      "Political union",
+      "State (polity)",
+      "Community",
+      "Level of analysis",
+      "Unit of observation",
+      "Statistics",
+      "Data",
+      "Value (computer science)",
+      "Computer science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Nelson Demarco",
+     "outcome": "philosophy",
+     "hops": 22,
+     "path": [
+      "Nelson Demarco",
+      "Basketball",
+      "Team sport",
+      "Sport",
+      "Competition",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Neoclides",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Neoclides"
+     ]
+    },
+    {
+     "start": "The Canadians (TV series)",
+     "outcome": "dead end",
+     "hops": 4,
+     "path": [
+      "The Canadians (TV series)",
+      "History (Canada)",
+      "Canada",
+      "Provinces and territories of Canada",
+      "Pages using Use mdy dates template with unknown parameters?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "Gourd Creek",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Gourd Creek"
+     ]
+    },
+    {
+     "start": "Bronze Medal (disambiguation)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Bronze Medal (disambiguation)"
+     ]
+    },
+    {
+     "start": "Santucci's Armillary Sphere",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Santucci's Armillary Sphere"
+     ]
+    },
+    {
+     "start": "Ganesha pancharatnam",
+     "outcome": "philosophy",
+     "hops": 28,
+     "path": [
+      "Ganesha pancharatnam",
+      "Ganesha",
+      "Deity",
+      "Religious belief",
+      "Belief",
+      "Conjecture",
+      "Proposition",
+      "Contemporary philosophy",
+      "Present",
+      "Time",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Roverud Church",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Roverud Church"
+     ]
+    },
+    {
+     "start": "Quebec County (Province of Canada electoral district)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Quebec County (Province of Canada electoral district)"
+     ]
+    },
+    {
+     "start": "Beka III Jaqeli",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Beka III Jaqeli"
+     ]
+    },
+    {
+     "start": "List of United States Supreme Court cases, volume 332",
+     "outcome": "error",
+     "hops": 3,
+     "path": [
+      "List of United States Supreme Court cases, volume 332",
+      "Supreme Court of the United States",
+      "Article Three of the United States Constitution",
+      "United States Constitution"
+     ]
+    },
+    {
+     "start": "India at the 1952 Summer Olympics",
+     "outcome": "error",
+     "hops": 3,
+     "path": [
+      "India at the 1952 Summer Olympics",
+      "India",
+      "South Asia",
+      "South"
+     ]
+    },
+    {
+     "start": "American Youth Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "American Youth Academy"
+     ]
+    },
+    {
+     "start": "Anachis tangkangensis",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Anachis tangkangensis"
+     ]
+    },
+    {
+     "start": "Corybas papillosus",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Corybas papillosus"
+     ]
+    },
+    {
+     "start": "Sard, Khuzestan",
+     "outcome": "philosophy",
+     "hops": 30,
+     "path": [
+      "Sard, Khuzestan",
+      "Emamzadeh Seyyed Mahmud Rural District",
+      "Administrative divisions of Iran",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Human geography",
+      "Geography",
+      "Earth",
+      "World",
+      "Human",
+      "Hominini",
+      "Tribe (biology)",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Experiment",
+      "Hypothesis",
+      "Explanation",
+      "Set (mathematics)",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Logic",
+      "Reason",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "61st Directors Guild of America Awards",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "61st Directors Guild of America Awards",
+      "Directors Guild of America Awards",
+      "Directors Guild of America"
+     ]
+    },
+    {
+     "start": "Rainbow Island (1944 film)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Rainbow Island (1944 film)"
+     ]
+    },
+    {
+     "start": "Vote-ratio monotonicity",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Vote-ratio monotonicity"
+     ]
+    },
+    {
+     "start": "Robert Lynn (director)",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Robert Lynn (director)"
+     ]
+    },
+    {
+     "start": "Mustansir Barma",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Mustansir Barma"
+     ]
+    },
+    {
+     "start": "Carlo Jachino",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Carlo Jachino"
+     ]
+    },
+    {
+     "start": "Guy Bernaert",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Guy Bernaert"
+     ]
+    },
+    {
+     "start": "Drake equation",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Drake equation"
+     ]
+    },
+    {
+     "start": "Federal, Pleasants County, West Virginia",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Federal, Pleasants County, West Virginia"
+     ]
+    },
+    {
+     "start": "Glissandra",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Glissandra"
+     ]
+    },
+    {
+     "start": "Holidays in Edenville, 64",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Holidays in Edenville, 64"
+     ]
+    }
+   ],
+   "counts": {
+    "dead end": 5,
+    "absent": 37,
+    "philosophy": 34,
+    "error": 24
+   },
+   "rings": [],
+   "pages": 310
+  },
+  "2016-07-01": {
+   "fixed": {
+    "Science": {
+     "outcome": "dead end",
+     "path": [
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    "Knowledge": {
+     "outcome": "dead end",
+     "path": [
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    "Belief": {
+     "outcome": "dead end",
+     "path": [
+      "Belief",
+      "Mind",
+      "Cognition",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    }
+   },
+   "rows": [
+    {
+     "start": "Dennis Dougherty",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Dennis Dougherty"
+     ]
+    },
+    {
+     "start": "Betty Todd",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Betty Todd"
+     ]
+    },
+    {
+     "start": "Lizzy Mercier Descloux (album)",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Lizzy Mercier Descloux (album)",
+      "Lizzy Mercier Descloux"
+     ]
+    },
+    {
+     "start": "Jesse D. Crane",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Jesse D. Crane"
+     ]
+    },
+    {
+     "start": "KRI I Gusti Ngurah Rai",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KRI I Gusti Ngurah Rai"
+     ]
+    },
+    {
+     "start": "Mamunul Haque",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mamunul Haque"
+     ]
+    },
+    {
+     "start": "Fossalta di Piave",
+     "outcome": "dead end",
+     "hops": 18,
+     "path": [
+      "Fossalta di Piave",
+      "Province of Venice",
+      "Provinces of Italy",
+      "Italy",
+      "Unitary state",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Yoshie Nishioka",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "Yoshie Nishioka",
+      "Japan",
+      "Island country",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Seagnat",
+     "outcome": "dead end",
+     "hops": 15,
+     "path": [
+      "Seagnat",
+      "NATO",
+      "Intergovernmental organization",
+      "Organization",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "William Hohri",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "William Hohri",
+      "National Council for Japanese American Redress?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "The Generation of Evil",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Generation of Evil"
+     ]
+    },
+    {
+     "start": "Wierum",
+     "outcome": "philosophy",
+     "hops": 17,
+     "path": [
+      "Wierum",
+      "Dongeradeel",
+      "Municipality",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Foggy Tabriz (TV series)",
+     "outcome": "dead end",
+     "hops": 18,
+     "path": [
+      "Foggy Tabriz (TV series)",
+      "Jamshid Mashayekhi",
+      "Iran",
+      "Sovereign state",
+      "International law",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "List of Russian monarchs",
+     "outcome": "dead end",
+     "hops": 11,
+     "path": [
+      "List of Russian monarchs",
+      "Prince of Novgorod",
+      "Veliky Novgorod",
+      "Types of inhabited localities in Russia",
+      "Human settlement",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Calathus auctus",
+     "outcome": "dead end",
+     "hops": 12,
+     "path": [
+      "Calathus auctus",
+      "Ground beetle",
+      "Cosmopolitan distribution",
+      "Biogeography",
+      "Species",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "KZE",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KZE"
+     ]
+    },
+    {
+     "start": "Ellen Ochoa Prep Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Ellen Ochoa Prep Academy"
+     ]
+    },
+    {
+     "start": "William Edward Barber",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "William Edward Barber"
+     ]
+    },
+    {
+     "start": "Lord Henry Bentinck",
+     "outcome": "dead end",
+     "hops": 19,
+     "path": [
+      "Lord Henry Bentinck",
+      "Conservative Party (UK)",
+      "Political party",
+      "Democracy",
+      "Forms of government",
+      "Government",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Rafael Gr\u00fcnenfelder",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Rafael Gr\u00fcnenfelder"
+     ]
+    },
+    {
+     "start": "Porcellio obsoletus",
+     "outcome": "dead end",
+     "hops": 10,
+     "path": [
+      "Porcellio obsoletus",
+      "Woodlouse",
+      "Common name",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Josh Morris (Australian footballer)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Josh Morris (Australian footballer)"
+     ]
+    },
+    {
+     "start": "StandArt",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "StandArt"
+     ]
+    },
+    {
+     "start": "John Davies (Welsh cricketer)",
+     "outcome": "philosophy",
+     "hops": 15,
+     "path": [
+      "John Davies (Welsh cricketer)",
+      "Wales",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "B\u00f6zberg Tunnel",
+     "outcome": "dead end",
+     "hops": 16,
+     "path": [
+      "B\u00f6zberg Tunnel",
+      "B\u00f6zberg Pass",
+      "Mountain pass",
+      "Mountain range",
+      "Mountain",
+      "Landform",
+      "Planetary body",
+      "Orbiting body",
+      "Orbital mechanics",
+      "Ballistics",
+      "Mechanics",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "GetThere",
+     "outcome": "dead end",
+     "hops": 9,
+     "path": [
+      "GetThere",
+      "Sabre Corporation",
+      "Travel technology",
+      "Information technology",
+      "Computer",
+      "Computer program",
+      "Instruction set",
+      "Computer architecture",
+      "Computer engineering",
+      "Discipline (academia)"
+     ]
+    },
+    {
+     "start": "TBHS",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "TBHS"
+     ]
+    },
+    {
+     "start": "The Empty Throne",
+     "outcome": "error",
+     "hops": 12,
+     "path": [
+      "The Empty Throne",
+      "Historical fiction",
+      "Fiction",
+      "Narrative",
+      "Nonfiction",
+      "Content (media)",
+      "Information",
+      "Question",
+      "Gautama Buddha",
+      "Buddha (title)",
+      "Buddhahood",
+      "Buddhism",
+      "Religion"
+     ]
+    },
+    {
+     "start": "Soulce-Cernay",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "Soulce-Cernay",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Code 8 (2019 film)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Code 8 (2019 film)"
+     ]
+    },
+    {
+     "start": "DXBM",
+     "outcome": "loop",
+     "hops": 4,
+     "path": [
+      "DXBM",
+      "FM broadcasting",
+      "Radio broadcasting",
+      "Wireless",
+      "Wireless"
+     ]
+    },
+    {
+     "start": "BBC Studios Home Entertainment",
+     "outcome": "error",
+     "hops": 10,
+     "path": [
+      "BBC Studios Home Entertainment",
+      "BBC Worldwide",
+      "BBC",
+      "Public broadcasting",
+      "Mass media",
+      "Media (communication)",
+      "Communication",
+      "Meaning (semiotics)",
+      "Semiotics",
+      "Meaning-making",
+      "Psychology"
+     ]
+    },
+    {
+     "start": "Windmill (chess)",
+     "outcome": "dead end",
+     "hops": 4,
+     "path": [
+      "Windmill (chess)",
+      "Chess",
+      "Chessboard",
+      "Checkerboard",
+      "Check (pattern)"
+     ]
+    },
+    {
+     "start": "2015 Georgia Tech Yellow Jackets football team",
+     "outcome": "dead end",
+     "hops": 11,
+     "path": [
+      "2015 Georgia Tech Yellow Jackets football team",
+      "Georgia Institute of Technology",
+      "Public university",
+      "University",
+      "Educational institution",
+      "Education",
+      "Learning",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "The Second World (TV series)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Second World (TV series)"
+     ]
+    },
+    {
+     "start": "Vusal Huseynov",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Vusal Huseynov"
+     ]
+    },
+    {
+     "start": "Isoanala",
+     "outcome": "dead end",
+     "hops": 13,
+     "path": [
+      "Isoanala",
+      "Madagascar",
+      "Malagasy Republic",
+      "East Africa",
+      "East",
+      "Noun",
+      "Word",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Anastasian War",
+     "outcome": "error",
+     "hops": 4,
+     "path": [
+      "Anastasian War",
+      "Byzantine Empire",
+      "Roman Empire",
+      "Roman Republic",
+      "Ancient Rome"
+     ]
+    },
+    {
+     "start": "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne"
+     ]
+    },
+    {
+     "start": "Academia Raetica",
+     "outcome": "dead end",
+     "hops": 18,
+     "path": [
+      "Academia Raetica",
+      "Grisons",
+      "Cantons of Switzerland",
+      "Federated state",
+      "Constitution",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Lorenzo Vergani",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Lorenzo Vergani"
+     ]
+    },
+    {
+     "start": "La Chapelle-Montmartin",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "La Chapelle-Montmartin"
+     ]
+    },
+    {
+     "start": "Bodybuilders (On the Inside)",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Bodybuilders (On the Inside)"
+     ]
+    },
+    {
+     "start": "He Xiangyu",
+     "outcome": "dead end",
+     "hops": 5,
+     "path": [
+      "He Xiangyu",
+      "Contemporary art",
+      "Postmodern art",
+      "Modernism",
+      "Western world",
+      "Context (language use)"
+     ]
+    },
+    {
+     "start": "J. P. Donleavy",
+     "outcome": "error",
+     "hops": 10,
+     "path": [
+      "J. P. Donleavy",
+      "Irish Americans",
+      "Ireland",
+      "Island",
+      "Continent",
+      "Land",
+      "Earth",
+      "Sun",
+      "Star",
+      "Plasma (physics)",
+      "State of matter"
+     ]
+    },
+    {
+     "start": "Champion Stakes (English greyhound race)",
+     "outcome": "dead end",
+     "hops": 14,
+     "path": [
+      "Champion Stakes (English greyhound race)",
+      "Romford Greyhound Stadium",
+      "Greyhound racing",
+      "Greyhound",
+      "Dog breed",
+      "Dog",
+      "Domestication",
+      "Charles Darwin",
+      "Natural history",
+      "Research",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "French peasants",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "French peasants"
+     ]
+    },
+    {
+     "start": "Rikshistoriograf",
+     "outcome": "dead end",
+     "hops": 11,
+     "path": [
+      "Rikshistoriograf",
+      "Sweden",
+      "Scandinavia",
+      "Historical region",
+      "Region",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Waman Lakshman Kulkarni",
+     "outcome": "dead end",
+     "hops": 10,
+     "path": [
+      "Waman Lakshman Kulkarni",
+      "Marathi people",
+      "South Asian ethnic groups",
+      "Ethnolinguistics",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Gray wolf population by country",
+     "outcome": "dead end",
+     "hops": 16,
+     "path": [
+      "Gray wolf population by country",
+      "North America",
+      "Continent",
+      "Land",
+      "Earth",
+      "Sun",
+      "Star",
+      "Plasma (physics)",
+      "State of matter",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "The Ramblers",
+     "outcome": "dead end",
+     "hops": 11,
+     "path": [
+      "The Ramblers",
+      "Walking",
+      "Gait",
+      "Motion (physics)",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Yaqoob Bizanjo",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Yaqoob Bizanjo"
+     ]
+    },
+    {
+     "start": "Fernando Batista",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Fernando Batista"
+     ]
+    },
+    {
+     "start": "Dale Hawerchuk",
+     "outcome": "dead end",
+     "hops": 4,
+     "path": [
+      "Dale Hawerchuk",
+      "Canadians",
+      "Canada",
+      "Provinces and territories of Canada",
+      "Pages using Use mdy dates template with unknown parameters?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "Brooklyn Steel",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Brooklyn Steel"
+     ]
+    },
+    {
+     "start": "The Noise (British TV series)",
+     "outcome": "dead end",
+     "hops": 4,
+     "path": [
+      "The Noise (British TV series)",
+      "ITV (TV network)",
+      "Commercial broadcasting",
+      "Broadcasting",
+      "Distribution (business)"
+     ]
+    },
+    {
+     "start": "Silas (TV series)",
+     "outcome": "dead end",
+     "hops": 20,
+     "path": [
+      "Silas (TV series)",
+      "ZDF",
+      "Mainz",
+      "States of Germany",
+      "Germany",
+      "Sovereign state",
+      "International law",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "DGSN",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "DGSN"
+     ]
+    },
+    {
+     "start": "Uroporphyrinogen-III C-methyltransferase",
+     "outcome": "dead end",
+     "hops": 12,
+     "path": [
+      "Uroporphyrinogen-III C-methyltransferase",
+      "Enzyme",
+      "Macromolecule",
+      "Molecule",
+      "Electricity",
+      "Physics",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "KBRX",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "KBRX"
+     ]
+    },
+    {
+     "start": "Bogdana, Vaslui",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "Bogdana, Vaslui",
+      "Communes of Romania",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "2013 Tour of Zhoushan Island",
+     "outcome": "error",
+     "hops": 6,
+     "path": [
+      "2013 Tour of Zhoushan Island",
+      "Tour of Zhoushan Island",
+      "Cycle sport",
+      "Competition",
+      "Competition (biology)",
+      "Biological interaction",
+      "Organism"
+     ]
+    },
+    {
+     "start": "Nargu Wildlife Sanctuary",
+     "outcome": "error",
+     "hops": 3,
+     "path": [
+      "Nargu Wildlife Sanctuary",
+      "Mandi district",
+      "Himachal Pradesh",
+      "North India"
+     ]
+    },
+    {
+     "start": "Via Ostiensis",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Via Ostiensis",
+      "Ancient Rome"
+     ]
+    },
+    {
+     "start": "Stabler Arena",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Stabler Arena",
+      "Arena"
+     ]
+    },
+    {
+     "start": "Mai Murdmaa",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Mai Murdmaa"
+     ]
+    },
+    {
+     "start": "B'not Esh",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "B'not Esh"
+     ]
+    },
+    {
+     "start": "Norton Street Congregational Church",
+     "outcome": "dead end",
+     "hops": 20,
+     "path": [
+      "Norton Street Congregational Church",
+      "Nottingham",
+      "City status in the United Kingdom",
+      "Monarchy of the United Kingdom",
+      "Constitutional monarchy",
+      "Monarchy",
+      "Government",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Rankin, Pennsylvania",
+     "outcome": "dead end",
+     "hops": 20,
+     "path": [
+      "Rankin, Pennsylvania",
+      "Allegheny County, Pennsylvania",
+      "County (United States)",
+      "United States",
+      "Federal republic",
+      "Federation",
+      "Political union",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Nanadegan",
+     "outcome": "philosophy",
+     "hops": 17,
+     "path": [
+      "Nanadegan",
+      "Varzaq-e Jonubi Rural District",
+      "Administrative divisions of Iran",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "E\u015ffak Ayka\u00e7",
+     "outcome": "error",
+     "hops": 8,
+     "path": [
+      "E\u015ffak Ayka\u00e7",
+      "Galatasaray S.K. (football)",
+      "Association football",
+      "Team sport",
+      "Sport",
+      "Competition",
+      "Competition (biology)",
+      "Biological interaction",
+      "Organism"
+     ]
+    },
+    {
+     "start": "Lasiodora klugi",
+     "outcome": "dead end",
+     "hops": 10,
+     "path": [
+      "Lasiodora klugi",
+      "Tarantula",
+      "Arachnid",
+      "Class (biology)",
+      "Taxonomy (biology)",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "State court",
+     "outcome": "dead end",
+     "hops": 16,
+     "path": [
+      "State court",
+      "Federation",
+      "Political union",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Nelson Demarco",
+     "outcome": "error",
+     "hops": 7,
+     "path": [
+      "Nelson Demarco",
+      "Basketball",
+      "Team sport",
+      "Sport",
+      "Competition",
+      "Competition (biology)",
+      "Biological interaction",
+      "Organism"
+     ]
+    },
+    {
+     "start": "Neoclides",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Neoclides"
+     ]
+    },
+    {
+     "start": "The Canadians (TV series)",
+     "outcome": "dead end",
+     "hops": 7,
+     "path": [
+      "The Canadians (TV series)",
+      "History (Canada)",
+      "Television in Canada",
+      "Montreal",
+      "List of towns in Quebec",
+      "Quebec",
+      "Provinces and territories of Canada",
+      "Pages using Use mdy dates template with unknown parameters?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "Gourd Creek",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Gourd Creek"
+     ]
+    },
+    {
+     "start": "Bronze Medal (disambiguation)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Bronze Medal (disambiguation)"
+     ]
+    },
+    {
+     "start": "Santucci's Armillary Sphere",
+     "outcome": "error",
+     "hops": 6,
+     "path": [
+      "Santucci's Armillary Sphere",
+      "Armillary sphere",
+      "Ecliptic",
+      "Sun",
+      "Star",
+      "Plasma (physics)",
+      "State of matter"
+     ]
+    },
+    {
+     "start": "Ganesha pancharatnam",
+     "outcome": "dead end",
+     "hops": 15,
+     "path": [
+      "Ganesha pancharatnam",
+      "Ganesha",
+      "Hindu deities",
+      "Hinduism",
+      "India",
+      "South Asia",
+      "South",
+      "Noun",
+      "Word",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Roverud Church",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Roverud Church"
+     ]
+    },
+    {
+     "start": "Quebec County (Province of Canada electoral district)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Quebec County (Province of Canada electoral district)"
+     ]
+    },
+    {
+     "start": "Beka III Jaqeli",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Beka III Jaqeli"
+     ]
+    },
+    {
+     "start": "List of United States Supreme Court cases, volume 332",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "List of United States Supreme Court cases, volume 332",
+      "Supreme Court of the United States",
+      "Supreme court",
+      "Court",
+      "Tribunal",
+      "Institution",
+      "Social structure",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "India at the 1952 Summer Olympics",
+     "outcome": "dead end",
+     "hops": 12,
+     "path": [
+      "India at the 1952 Summer Olympics",
+      "India",
+      "South Asia",
+      "South",
+      "Noun",
+      "Word",
+      "Linguistics",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "American Youth Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "American Youth Academy"
+     ]
+    },
+    {
+     "start": "Anachis tangkangensis",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Anachis tangkangensis"
+     ]
+    },
+    {
+     "start": "Corybas papillosus",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Corybas papillosus"
+     ]
+    },
+    {
+     "start": "Sard, Khuzestan",
+     "outcome": "philosophy",
+     "hops": 17,
+     "path": [
+      "Sard, Khuzestan",
+      "Emamzadeh Seyyed Mahmud Rural District",
+      "Administrative divisions of Iran",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "61st Directors Guild of America Awards",
+     "outcome": "dead end",
+     "hops": 9,
+     "path": [
+      "61st Directors Guild of America Awards",
+      "Directors Guild of America Awards",
+      "Directors Guild of America",
+      "Guild",
+      "Artisan",
+      "Skilled worker",
+      "Labour economics",
+      "Market (economics)",
+      "System",
+      "Interaction"
+     ]
+    },
+    {
+     "start": "Rainbow Island (1944 film)",
+     "outcome": "error",
+     "hops": 12,
+     "path": [
+      "Rainbow Island (1944 film)",
+      "Musical film",
+      "Film genre",
+      "Narrative",
+      "Nonfiction",
+      "Content (media)",
+      "Information",
+      "Question",
+      "Gautama Buddha",
+      "Buddha (title)",
+      "Buddhahood",
+      "Buddhism",
+      "Religion"
+     ]
+    },
+    {
+     "start": "Vote-ratio monotonicity",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Vote-ratio monotonicity"
+     ]
+    },
+    {
+     "start": "Robert Lynn (director)",
+     "outcome": "dead end",
+     "hops": 19,
+     "path": [
+      "Robert Lynn (director)",
+      "Ralph Lynn",
+      "Aldwych farce",
+      "Farce",
+      "Physical comedy",
+      "Slapstick",
+      "Humour",
+      "Laughter",
+      "Thoracic diaphragm",
+      "Human body",
+      "Human",
+      "Homo",
+      "Genus",
+      "Taxonomy (biology)",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Mustansir Barma",
+     "outcome": "dead end",
+     "hops": 8,
+     "path": [
+      "Mustansir Barma",
+      "Tata Institute of Fundamental Research",
+      "Research institute",
+      "Research",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Carlo Jachino",
+     "outcome": "philosophy",
+     "hops": 18,
+     "path": [
+      "Carlo Jachino",
+      "Sanremo",
+      "Liguria",
+      "Regions of Italy",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Power (social and political)",
+      "Social science",
+      "Outline of academic disciplines",
+      "Outline (list)",
+      "Hierarchy",
+      "Path (graph theory)",
+      "Graph theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Guy Bernaert",
+     "outcome": "dead end",
+     "hops": 17,
+     "path": [
+      "Guy Bernaert",
+      "Belgium",
+      "Sovereign state",
+      "International law",
+      "State (polity)",
+      "Polity",
+      "Entity",
+      "Bucephalus",
+      "Horse",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Science",
+      "Knowledge",
+      "Awareness",
+      "Consciousness",
+      "Quality (philosophy)",
+      "Attribute"
+     ]
+    },
+    {
+     "start": "Drake equation",
+     "outcome": "philosophy",
+     "hops": 5,
+     "path": [
+      "Drake equation",
+      "Probability theory",
+      "Mathematics",
+      "Quantity",
+      "Property (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Federal, Pleasants County, West Virginia",
+     "outcome": "dead end",
+     "hops": 4,
+     "path": [
+      "Federal, Pleasants County, West Virginia",
+      "Unincorporated area",
+      "Law",
+      "System",
+      "Interaction"
+     ]
+    },
+    {
+     "start": "Glissandra",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Glissandra"
+     ]
+    },
+    {
+     "start": "Holidays in Edenville, 64",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Holidays in Edenville, 64"
+     ]
+    }
+   ],
+   "counts": {
+    "dead end": 41,
+    "absent": 31,
+    "philosophy": 10,
+    "error": 17,
+    "loop": 1
+   },
+   "rings": [
+    [
+     "Wireless",
+     1
+    ]
+   ],
+   "pages": 378
+  },
+  "2018-07-01": {
+   "fixed": {
+    "Science": {
+     "outcome": "loop",
+     "path": [
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    "Knowledge": {
+     "outcome": "loop",
+     "path": [
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    "Belief": {
+     "outcome": "loop",
+     "path": [
+      "Belief",
+      "Mind",
+      "Cognition",
+      "Attention",
+      "Cognition"
+     ]
+    }
+   },
+   "rows": [
+    {
+     "start": "Dennis Dougherty",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Dennis Dougherty"
+     ]
+    },
+    {
+     "start": "Betty Todd",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Betty Todd"
+     ]
+    },
+    {
+     "start": "Lizzy Mercier Descloux (album)",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Lizzy Mercier Descloux (album)",
+      "Lizzy Mercier Descloux"
+     ]
+    },
+    {
+     "start": "Jesse D. Crane",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Jesse D. Crane"
+     ]
+    },
+    {
+     "start": "KRI I Gusti Ngurah Rai",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KRI I Gusti Ngurah Rai"
+     ]
+    },
+    {
+     "start": "Mamunul Haque",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mamunul Haque"
+     ]
+    },
+    {
+     "start": "Fossalta di Piave",
+     "outcome": "loop",
+     "hops": 19,
+     "path": [
+      "Fossalta di Piave",
+      "Province of Venice",
+      "Provinces of Italy",
+      "Italy",
+      "Sovereign state",
+      "International law",
+      "State (polity)",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Yoshie Nishioka",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Yoshie Nishioka",
+      "Swimming (sport)"
+     ]
+    },
+    {
+     "start": "Seagnat",
+     "outcome": "loop",
+     "hops": 12,
+     "path": [
+      "Seagnat",
+      "NATO",
+      "Intergovernmental organization",
+      "Organization",
+      "Entity",
+      "Existence",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "William Hohri",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "William Hohri",
+      "National Council for Japanese American Redress?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "The Generation of Evil",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Generation of Evil"
+     ]
+    },
+    {
+     "start": "Wierum",
+     "outcome": "loop",
+     "hops": 15,
+     "path": [
+      "Wierum",
+      "Dongeradeel",
+      "Municipality",
+      "Urban area",
+      "Human settlement",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Foggy Tabriz (TV series)",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "Foggy Tabriz (TV series)",
+      "Jamshid Mashayekhi",
+      "Iran",
+      "Sovereign state",
+      "International law",
+      "State (polity)",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "List of Russian monarchs",
+     "outcome": "loop",
+     "hops": 15,
+     "path": [
+      "List of Russian monarchs",
+      "Prince of Novgorod",
+      "Veliky Novgorod",
+      "Types of inhabited localities in Russia",
+      "Human settlement",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Calathus auctus",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "Calathus auctus",
+      "Ground beetle",
+      "Cosmopolitan distribution",
+      "Biogeography",
+      "Species",
+      "Biology",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "KZE",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KZE"
+     ]
+    },
+    {
+     "start": "Ellen Ochoa Prep Academy",
+     "outcome": "loop",
+     "hops": 21,
+     "path": [
+      "Ellen Ochoa Prep Academy",
+      "El Rancho Unified School District",
+      "Pico Rivera, California",
+      "Los Angeles County, California",
+      "List of the most populous counties in the United States",
+      "County (United States)",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "William Edward Barber",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "William Edward Barber"
+     ]
+    },
+    {
+     "start": "Lord Henry Bentinck",
+     "outcome": "dead end",
+     "hops": 7,
+     "path": [
+      "Lord Henry Bentinck",
+      "Conservative Party (UK)",
+      "Centre-right politics",
+      "Right-wing politics",
+      "Social order",
+      "Social structure",
+      "Social science",
+      "Discipline (academia)"
+     ]
+    },
+    {
+     "start": "Rafael Gr\u00fcnenfelder",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Rafael Gr\u00fcnenfelder"
+     ]
+    },
+    {
+     "start": "Porcellio obsoletus",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "Porcellio obsoletus",
+      "Woodlouse",
+      "Terrestrial animal",
+      "Animal",
+      "Multicellular organism",
+      "Organism",
+      "Biology",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Josh Morris (Australian footballer)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Josh Morris (Australian footballer)"
+     ]
+    },
+    {
+     "start": "StandArt",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "StandArt"
+     ]
+    },
+    {
+     "start": "John Davies (Welsh cricketer)",
+     "outcome": "loop",
+     "hops": 16,
+     "path": [
+      "John Davies (Welsh cricketer)",
+      "Wales",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "B\u00f6zberg Tunnel",
+     "outcome": "loop",
+     "hops": 20,
+     "path": [
+      "B\u00f6zberg Tunnel",
+      "B\u00f6zberg Pass",
+      "Mountain pass",
+      "Mountain range",
+      "Mountain",
+      "Landform",
+      "Planetary body",
+      "Orbiting body",
+      "Orbital mechanics",
+      "Ballistics",
+      "Mechanics",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "GetThere",
+     "outcome": "loop",
+     "hops": 10,
+     "path": [
+      "GetThere",
+      "Sabre Corporation",
+      "Travel technology",
+      "Information technology",
+      "Computer",
+      "Arithmetic",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "TBHS",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "TBHS"
+     ]
+    },
+    {
+     "start": "The Empty Throne",
+     "outcome": "error",
+     "hops": 11,
+     "path": [
+      "The Empty Throne",
+      "Historical fiction",
+      "Literary genre",
+      "List of narrative techniques",
+      "Narrative",
+      "Nonfiction",
+      "Content (media)",
+      "Information",
+      "Question",
+      "Gautama Buddha",
+      "Asceticism",
+      "Sensual"
+     ]
+    },
+    {
+     "start": "Soulce-Cernay",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "Soulce-Cernay",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Code 8 (2019 film)",
+     "outcome": "philosophy",
+     "hops": 6,
+     "path": [
+      "Code 8 (2019 film)",
+      "Science fiction film",
+      "Science fiction",
+      "Genre",
+      "Category of being",
+      "Ontology",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "DXBM",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "DXBM",
+      "FM broadcasting",
+      "Radio broadcasting",
+      "Radio wave",
+      "Electromagnetic radiation",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "BBC Studios Home Entertainment",
+     "outcome": "error",
+     "hops": 7,
+     "path": [
+      "BBC Studios Home Entertainment",
+      "BBC Worldwide",
+      "BBC",
+      "Public broadcasting",
+      "Mass media",
+      "Media (communication)",
+      "Communication",
+      "Meaning (semiotics)"
+     ]
+    },
+    {
+     "start": "Windmill (chess)",
+     "outcome": "loop",
+     "hops": 16,
+     "path": [
+      "Windmill (chess)",
+      "Chess",
+      "Abstract strategy game",
+      "Strategy game",
+      "Game",
+      "Play (activity)",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "2015 Georgia Tech Yellow Jackets football team",
+     "outcome": "error",
+     "hops": 4,
+     "path": [
+      "2015 Georgia Tech Yellow Jackets football team",
+      "Georgia Institute of Technology",
+      "Public university",
+      "University",
+      "Educational institution"
+     ]
+    },
+    {
+     "start": "The Second World (TV series)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Second World (TV series)"
+     ]
+    },
+    {
+     "start": "Vusal Huseynov",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Vusal Huseynov"
+     ]
+    },
+    {
+     "start": "Isoanala",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Isoanala",
+      "Madagascar"
+     ]
+    },
+    {
+     "start": "Anastasian War",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Anastasian War",
+      "Byzantine Empire"
+     ]
+    },
+    {
+     "start": "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "2016\u201317 Coupe de France preliminary rounds, Alsace, Lorraine and Champagne-Ardenne"
+     ]
+    },
+    {
+     "start": "Academia Raetica",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Academia Raetica",
+      "Davos"
+     ]
+    },
+    {
+     "start": "Lorenzo Vergani",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "Lorenzo Vergani",
+      "Italy",
+      "Sovereign state",
+      "International law",
+      "State (polity)",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "La Chapelle-Montmartin",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "La Chapelle-Montmartin",
+      "Communes of France",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Bodybuilders (On the Inside)",
+     "outcome": "loop",
+     "hops": 16,
+     "path": [
+      "Bodybuilders (On the Inside)",
+      "Discovery Channel",
+      "Pay television",
+      "Subscription business model",
+      "Business model",
+      "Explanation",
+      "Statement (logic)",
+      "Logic",
+      "Truth",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "He Xiangyu",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "He Xiangyu",
+      "Contemporary art",
+      "Art",
+      "Human behavior",
+      "Human",
+      "Neontology",
+      "Biology",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "J. P. Donleavy",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "J. P. Donleavy"
+     ]
+    },
+    {
+     "start": "Champion Stakes (English greyhound race)",
+     "outcome": "loop",
+     "hops": 19,
+     "path": [
+      "Champion Stakes (English greyhound race)",
+      "Romford Greyhound Stadium",
+      "Greyhound racing",
+      "Greyhound",
+      "Dog breed",
+      "Dog",
+      "Evolution of the wolf",
+      "Geologic time scale",
+      "Chronological dating",
+      "Chronology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "French peasants",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "French peasants"
+     ]
+    },
+    {
+     "start": "Rikshistoriograf",
+     "outcome": "loop",
+     "hops": 14,
+     "path": [
+      "Rikshistoriograf",
+      "Sweden",
+      "Scandinavia",
+      "Northern Europe",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Waman Lakshman Kulkarni",
+     "outcome": "dead end",
+     "hops": 2,
+     "path": [
+      "Waman Lakshman Kulkarni",
+      "Marathi people",
+      "Ethnic group"
+     ]
+    },
+    {
+     "start": "Gray wolf population by country",
+     "outcome": "loop",
+     "hops": 20,
+     "path": [
+      "Gray wolf population by country",
+      "North America",
+      "Continent",
+      "Land",
+      "Earth",
+      "Planet",
+      "Astronomical object",
+      "Physical body",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "The Ramblers",
+     "outcome": "loop",
+     "hops": 16,
+     "path": [
+      "The Ramblers",
+      "Walking",
+      "Gait",
+      "Motion (physics)",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Yaqoob Bizanjo",
+     "outcome": "dead end",
+     "hops": 5,
+     "path": [
+      "Yaqoob Bizanjo",
+      "National Assembly of Pakistan",
+      "First-past-the-post voting",
+      "Voting",
+      "Electoral district",
+      "United States Census"
+     ]
+    },
+    {
+     "start": "Fernando Batista",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Fernando Batista"
+     ]
+    },
+    {
+     "start": "Dale Hawerchuk",
+     "outcome": "loop",
+     "hops": 22,
+     "path": [
+      "Dale Hawerchuk",
+      "Canadians",
+      "Canada",
+      "North America",
+      "Continent",
+      "Land",
+      "Earth",
+      "Planet",
+      "Astronomical object",
+      "Physical body",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Brooklyn Steel",
+     "outcome": "philosophy",
+     "hops": 8,
+     "path": [
+      "Brooklyn Steel",
+      "Music venue",
+      "Concert",
+      "Music",
+      "Culture",
+      "Social behavior",
+      "Behavior",
+      "Action (philosophy)",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "The Noise (British TV series)",
+     "outcome": "dead end",
+     "hops": 8,
+     "path": [
+      "The Noise (British TV series)",
+      "ITV (TV network)",
+      "Commercial broadcasting",
+      "Broadcasting",
+      "Distribution (marketing)",
+      "Marketing mix",
+      "Marketing",
+      "Management",
+      "Administration"
+     ]
+    },
+    {
+     "start": "Silas (TV series)",
+     "outcome": "error",
+     "hops": 3,
+     "path": [
+      "Silas (TV series)",
+      "ZDF",
+      "Mainz",
+      "States of Germany"
+     ]
+    },
+    {
+     "start": "DGSN",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "DGSN"
+     ]
+    },
+    {
+     "start": "Uroporphyrinogen-III C-methyltransferase",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "Uroporphyrinogen-III C-methyltransferase",
+      "Enzyme",
+      "Macromolecule",
+      "Molecule",
+      "Electricity",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "KBRX",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "KBRX"
+     ]
+    },
+    {
+     "start": "Bogdana, Vaslui",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Bogdana, Vaslui",
+      "Communes of Romania"
+     ]
+    },
+    {
+     "start": "2013 Tour of Zhoushan Island",
+     "outcome": "error",
+     "hops": 2,
+     "path": [
+      "2013 Tour of Zhoushan Island",
+      "Tour of Zhoushan Island",
+      "Cycle racing"
+     ]
+    },
+    {
+     "start": "Nargu Wildlife Sanctuary",
+     "outcome": "error",
+     "hops": 1,
+     "path": [
+      "Nargu Wildlife Sanctuary",
+      "Mandi District"
+     ]
+    },
+    {
+     "start": "Via Ostiensis",
+     "outcome": "error",
+     "hops": 0,
+     "path": [
+      "Via Ostiensis"
+     ]
+    },
+    {
+     "start": "Stabler Arena",
+     "outcome": "philosophy",
+     "hops": 5,
+     "path": [
+      "Stabler Arena",
+      "Arena",
+      "Theatre",
+      "Fine art",
+      "Aesthetics",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Mai Murdmaa",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Mai Murdmaa"
+     ]
+    },
+    {
+     "start": "B'not Esh",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "B'not Esh"
+     ]
+    },
+    {
+     "start": "Norton Street Congregational Church",
+     "outcome": "loop",
+     "hops": 20,
+     "path": [
+      "Norton Street Congregational Church",
+      "Nottingham",
+      "City status in the United Kingdom",
+      "Monarchy of the United Kingdom",
+      "Constitutional monarchy",
+      "Monarchy",
+      "Government",
+      "State (polity)",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Rankin, Pennsylvania",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "Rankin, Pennsylvania",
+      "Allegheny County, Pennsylvania",
+      "County (United States)",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Nanadegan",
+     "outcome": "loop",
+     "hops": 19,
+     "path": [
+      "Nanadegan",
+      "Varzaq-e Jonubi Rural District",
+      "Dehestan (administrative division)",
+      "Administrative divisions of Iran",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "E\u015ffak Ayka\u00e7",
+     "outcome": "error",
+     "hops": 14,
+     "path": [
+      "E\u015ffak Ayka\u00e7",
+      "Galatasaray S.K. (football)",
+      "Association football",
+      "Team sport",
+      "Sport",
+      "Competition",
+      "Territory (animal)",
+      "Ethology",
+      "Scientific method",
+      "Empirical evidence",
+      "Information",
+      "Question",
+      "Gautama Buddha",
+      "Asceticism",
+      "Sensual"
+     ]
+    },
+    {
+     "start": "Lasiodora klugi",
+     "outcome": "loop",
+     "hops": 14,
+     "path": [
+      "Lasiodora klugi",
+      "Tarantula",
+      "Arachnid",
+      "Class (biology)",
+      "Taxonomy (biology)",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "State court",
+     "outcome": "loop",
+     "hops": 14,
+     "path": [
+      "State court",
+      "Federation",
+      "Polity",
+      "Identity (social science)",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Nelson Demarco",
+     "outcome": "loop",
+     "hops": 3,
+     "path": [
+      "Nelson Demarco",
+      "Basketball",
+      "Basketball court",
+      "Basketball"
+     ]
+    },
+    {
+     "start": "Neoclides",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Neoclides"
+     ]
+    },
+    {
+     "start": "The Canadians (TV series)",
+     "outcome": "loop",
+     "hops": 27,
+     "path": [
+      "The Canadians (TV series)",
+      "History (Canadian TV network)",
+      "Television in Canada",
+      "Montreal",
+      "List of towns in Quebec",
+      "Quebec",
+      "Provinces and territories of Canada",
+      "Canada",
+      "North America",
+      "Continent",
+      "Land",
+      "Earth",
+      "Planet",
+      "Astronomical object",
+      "Physical body",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Gourd Creek",
+     "outcome": "loop",
+     "hops": 19,
+     "path": [
+      "Gourd Creek",
+      "Stream",
+      "Body of water",
+      "Water",
+      "Chemical substance",
+      "Matter",
+      "Classical physics",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Bronze Medal (disambiguation)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Bronze Medal (disambiguation)"
+     ]
+    },
+    {
+     "start": "Santucci's Armillary Sphere",
+     "outcome": "loop",
+     "hops": 16,
+     "path": [
+      "Santucci's Armillary Sphere",
+      "Armillary sphere",
+      "Astronomical object",
+      "Physical body",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Ganesha pancharatnam",
+     "outcome": "loop",
+     "hops": 17,
+     "path": [
+      "Ganesha pancharatnam",
+      "Ganesha",
+      "Hindu deities",
+      "Hinduism",
+      "Indian religions",
+      "Indian subcontinent",
+      "Region",
+      "Geography",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Roverud Church",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Roverud Church"
+     ]
+    },
+    {
+     "start": "Quebec County (Province of Canada electoral district)",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Quebec County (Province of Canada electoral district)"
+     ]
+    },
+    {
+     "start": "Beka III Jaqeli",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "Beka III Jaqeli",
+      "Georgians",
+      "Peoples of the Caucasus",
+      "Ethnic group"
+     ]
+    },
+    {
+     "start": "List of United States Supreme Court cases, volume 332",
+     "outcome": "dead end",
+     "hops": 8,
+     "path": [
+      "List of United States Supreme Court cases, volume 332",
+      "Supreme Court of the United States",
+      "Supreme court",
+      "Court",
+      "Tribunal",
+      "Institution",
+      "Social structure",
+      "Social science",
+      "Discipline (academia)"
+     ]
+    },
+    {
+     "start": "India at the 1952 Summer Olympics",
+     "outcome": "error",
+     "hops": 12,
+     "path": [
+      "India at the 1952 Summer Olympics",
+      "India",
+      "South Asia",
+      "South",
+      "Cardinal direction",
+      "North",
+      "Points of the compass",
+      "Compass",
+      "Navigation",
+      "Jargon",
+      "Language",
+      "Communication",
+      "Meaning (semiotics)"
+     ]
+    },
+    {
+     "start": "American Youth Academy",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "American Youth Academy"
+     ]
+    },
+    {
+     "start": "Anachis tangkangensis",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Anachis tangkangensis"
+     ]
+    },
+    {
+     "start": "Corybas papillosus",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Corybas papillosus"
+     ]
+    },
+    {
+     "start": "Sard, Khuzestan",
+     "outcome": "loop",
+     "hops": 19,
+     "path": [
+      "Sard, Khuzestan",
+      "Emamzadeh Seyyed Mahmud Rural District",
+      "Dehestan (administrative division)",
+      "Administrative divisions of Iran",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "61st Directors Guild of America Awards",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "61st Directors Guild of America Awards",
+      "Film director",
+      "Film",
+      "Projection screen",
+      "Projector",
+      "Optics",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Rainbow Island (1944 film)",
+     "outcome": "error",
+     "hops": 10,
+     "path": [
+      "Rainbow Island (1944 film)",
+      "Musical film",
+      "Film genre",
+      "Narrative",
+      "Nonfiction",
+      "Content (media)",
+      "Information",
+      "Question",
+      "Gautama Buddha",
+      "Asceticism",
+      "Sensual"
+     ]
+    },
+    {
+     "start": "Vote-ratio monotonicity",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Vote-ratio monotonicity"
+     ]
+    },
+    {
+     "start": "Robert Lynn (director)",
+     "outcome": "philosophy",
+     "hops": 7,
+     "path": [
+      "Robert Lynn (director)",
+      "Ralph Lynn",
+      "Aldwych farce",
+      "Farce",
+      "Theatre",
+      "Fine art",
+      "Aesthetics",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Mustansir Barma",
+     "outcome": "loop",
+     "hops": 13,
+     "path": [
+      "Mustansir Barma",
+      "Tata Institute of Fundamental Research",
+      "Research institute",
+      "Research center",
+      "Research",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Carlo Jachino",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "Carlo Jachino",
+      "Sanremo",
+      "Comune",
+      "Administrative division",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Guy Bernaert",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Guy Bernaert",
+      "Alfa Papa Tango?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "Drake equation",
+     "outcome": "loop",
+     "hops": 6,
+     "path": [
+      "Drake equation",
+      "Probability theory",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Federal, Pleasants County, West Virginia",
+     "outcome": "loop",
+     "hops": 18,
+     "path": [
+      "Federal, Pleasants County, West Virginia",
+      "Unincorporated area",
+      "Real property",
+      "England",
+      "Country",
+      "Political geography",
+      "Politics",
+      "Decision-making",
+      "Psychology",
+      "Science",
+      "Knowledge",
+      "Fact",
+      "Reality",
+      "Object of the mind",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Element (mathematics)",
+      "Mathematics"
+     ]
+    },
+    {
+     "start": "Glissandra",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Glissandra"
+     ]
+    },
+    {
+     "start": "Holidays in Edenville, 64",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "Holidays in Edenville, 64"
+     ]
+    }
+   ],
+   "counts": {
+    "dead end": 17,
+    "absent": 25,
+    "loop": 40,
+    "error": 14,
+    "philosophy": 4
+   },
+   "rings": [
+    [
+     "Counting > Element (mathematics) > Mathematics > Quantity",
+     39
+    ],
+    [
+     "Basketball > Basketball court",
+     1
+    ]
+   ],
+   "pages": 394
+  },
+  "2021-07-01": {
+   "fixed": {
+    "Science": {
+     "outcome": "philosophy",
+     "path": [
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    "Knowledge": {
+     "outcome": "philosophy",
+     "path": [
+      "Knowledge",
+      "Fact",
+      "Experience",
+      "Consciousness",
+      "Sentience",
+      "Feeling",
+      "Somatosensory system",
+      "Sensory nervous system",
+      "Nervous system",
+      "Biology",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    "Belief": {
+     "outcome": "philosophy",
+     "path": [
+      "Belief",
+      "Attitude (psychology)",
+      "Psychology",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    }
+   },
+   "rows": [
+    {
+     "start": "Dennis Dougherty",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Dennis Dougherty"
+     ]
+    },
+    {
+     "start": "Betty Todd",
+     "outcome": "dead end",
+     "hops": 7,
+     "path": [
+      "Betty Todd",
+      "Columbia University",
+      "Private university",
+      "Tax break",
+      "Tax exemption",
+      "Charitable organization",
+      "Philanthropy",
+      "Public good (economics)"
+     ]
+    },
+    {
+     "start": "Lizzy Mercier Descloux (album)",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Lizzy Mercier Descloux (album)",
+      "Lizzy Mercier Descloux"
+     ]
+    },
+    {
+     "start": "Jesse D. Crane",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "Jesse D. Crane"
+     ]
+    },
+    {
+     "start": "KRI I Gusti Ngurah Rai",
+     "outcome": "philosophy",
+     "hops": 25,
+     "path": [
+      "KRI I Gusti Ngurah Rai",
+      "Martadinata-class frigate",
+      "Frigate",
+      "Warship",
+      "Naval ship",
+      "Ship",
+      "Watercraft",
+      "Vehicle",
+      "Machine",
+      "Artificiality",
+      "Nature",
+      "Universe",
+      "Space",
+      "Three-dimensional space",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Mamunul Haque",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "Mamunul Haque",
+      "Bangladeshis",
+      "Citizenship",
+      "Status (law)"
+     ]
+    },
+    {
+     "start": "Fossalta di Piave",
+     "outcome": "loop",
+     "hops": 7,
+     "path": [
+      "Fossalta di Piave",
+      "Metropolitan City of Venice",
+      "Metropolitan cities of Italy",
+      "Administrative division",
+      "Sovereign state",
+      "Polity",
+      "United Kingdom",
+      "Sovereign state"
+     ]
+    },
+    {
+     "start": "Yoshie Nishioka",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "Yoshie Nishioka",
+      "Swimming (sport)"
+     ]
+    },
+    {
+     "start": "Seagnat",
+     "outcome": "dead end",
+     "hops": 3,
+     "path": [
+      "Seagnat",
+      "NATO",
+      "Intergovernmental organization",
+      "Group of Seven"
+     ]
+    },
+    {
+     "start": "William Hohri",
+     "outcome": "dead end",
+     "hops": 1,
+     "path": [
+      "William Hohri",
+      "National Council for Japanese American Redress?action=edit&redlink=1"
+     ]
+    },
+    {
+     "start": "The Generation of Evil",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "The Generation of Evil"
+     ]
+    },
+    {
+     "start": "Wierum",
+     "outcome": "loop",
+     "hops": 7,
+     "path": [
+      "Wierum",
+      "Noardeast-Frysl\u00e2n",
+      "Municipality",
+      "Administrative division",
+      "Sovereign state",
+      "Polity",
+      "United Kingdom",
+      "Sovereign state"
+     ]
+    },
+    {
+     "start": "Foggy Tabriz (TV series)",
+     "outcome": "philosophy",
+     "hops": 15,
+     "path": [
+      "Foggy Tabriz (TV series)",
+      "Historical drama",
+      "Historical fiction",
+      "Setting (narrative)",
+      "Time",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Number",
+      "Mathematical object",
+      "Concept",
+      "Abstraction",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "List of Russian monarchs",
+     "outcome": "philosophy",
+     "hops": 13,
+     "path": [
+      "List of Russian monarchs",
+      "History of Russia",
+      "East Slavs",
+      "Slavs",
+      "Ethnolinguistic group",
+      "Ethnicity",
+      "People",
+      "Person",
+      "Reason",
+      "Information",
+      "Uncertainty",
+      "Epistemology",
+      "Outline of philosophy",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Calathus auctus",
+     "outcome": "philosophy",
+     "hops": 13,
+     "path": [
+      "Calathus auctus",
+      "Ground beetle",
+      "Cosmopolitan distribution",
+      "Biogeography",
+      "Species",
+      "Biology",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "KZE",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "KZE"
+     ]
+    },
+    {
+     "start": "Ellen Ochoa Prep Academy",
+     "outcome": "loop",
+     "hops": 8,
+     "path": [
+      "Ellen Ochoa Prep Academy",
+      "Pico Rivera, California",
+      "Los Angeles County, California",
+      "List of the most populous counties in the United States",
+      "County (United States)",
+      "United States",
+      "Contiguous United States",
+      "U.S. state",
+      "United States"
+     ]
+    },
+    {
+     "start": "William Edward Barber",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "William Edward Barber"
+     ]
+    },
+    {
+     "start": "Lord Henry Bentinck",
+     "outcome": "loop",
+     "hops": 5,
+     "path": [
+      "Lord Henry Bentinck",
+      "Conservative Party (UK)",
+      "Political party",
+      "Candidate",
+      "Nomination",
+      "Candidate"
+     ]
+    },
+    {
+     "start": "Rafael Gr\u00fcnenfelder",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "Rafael Gr\u00fcnenfelder",
+      "Association football",
+      "Team sport",
+      "Sport",
+      "Competition",
+      "Rivalry",
+      "Social group",
+      "Social science",
+      "Branches of science",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Porcellio obsoletus",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "Porcellio obsoletus",
+      "Woodlouse",
+      "Crustacean",
+      "Arthropod",
+      "Invertebrate",
+      "Animal",
+      "Multicellular organism",
+      "Organism",
+      "Biology",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Josh Morris (Australian footballer)",
+     "outcome": "philosophy",
+     "hops": 16,
+     "path": [
+      "Josh Morris (Australian footballer)",
+      "Australian rules football",
+      "Contact sport",
+      "Sport",
+      "Competition",
+      "Rivalry",
+      "Social group",
+      "Social science",
+      "Branches of science",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "StandArt",
+     "outcome": "absent",
+     "hops": 0,
+     "path": [
+      "StandArt"
+     ]
+    },
+    {
+     "start": "John Davies (Welsh cricketer)",
+     "outcome": "loop",
+     "hops": 6,
+     "path": [
+      "John Davies (Welsh cricketer)",
+      "Wales",
+      "Countries of the United Kingdom",
+      "United Kingdom",
+      "Sovereign state",
+      "Polity",
+      "United Kingdom"
+     ]
+    },
+    {
+     "start": "B\u00f6zberg Tunnel",
+     "outcome": "philosophy",
+     "hops": 22,
+     "path": [
+      "B\u00f6zberg Tunnel",
+      "B\u00f6zberg Pass",
+      "Mountain pass",
+      "Mountain range",
+      "Mountain",
+      "Earth's crust",
+      "Earth",
+      "Planet",
+      "Astronomical object",
+      "Physical object",
+      "Classical mechanics",
+      "Theoretical physics",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "GetThere",
+     "outcome": "philosophy",
+     "hops": 22,
+     "path": [
+      "GetThere",
+      "Sabre Corporation",
+      "Travel technology",
+      "Information technology",
+      "Computer",
+      "Machine",
+      "Artificiality",
+      "Nature",
+      "Universe",
+      "Space",
+      "Three-dimensional space",
+      "Dimension",
+      "Physics",
+      "Natural science",
+      "Branches of science",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "TBHS",
+     "outcome": "dead end",
+     "hops": 0,
+     "path": [
+      "TBHS"
+     ]
+    },
+    {
+     "start": "The Empty Throne",
+     "outcome": "philosophy",
+     "hops": 14,
+     "path": [
+      "The Empty Throne",
+      "Historical fiction",
+      "Setting (narrative)",
+      "Time",
+      "Sequence",
+      "Mathematics",
+      "Quantity",
+      "Counting",
+      "Number",
+      "Mathematical object",
+      "Concept",
+      "Abstraction",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    },
+    {
+     "start": "Soulce-Cernay",
+     "outcome": "loop",
+     "hops": 6,
+     "path": [
+      "Soulce-Cernay",
+      "Communes of France",
+      "Administrative division",
+      "Sovereign state",
+      "Polity",
+      "United Kingdom",
+      "Sovereign state"
+     ]
+    },
+    {
+     "start": "Code 8 (2019 film)",
+     "outcome": "philosophy",
+     "hops": 23,
+     "path": [
+      "Code 8 (2019 film)",
+      "Science fiction film",
+      "Film genre",
+      "Genre",
+      "Communication",
+      "Semantics",
+      "Truth",
+      "Fact",
+      "Experience",
+      "Consciousness",
+      "Sentience",
+      "Feeling",
+      "Somatosensory system",
+      "Sensory nervous system",
+      "Nervous system",
+      "Biology",
+      "Science",
+      "Scientific method",
+      "Empirical evidence",
+      "Proposition",
+      "Logic",
+      "Rule of inference",
+      "Philosophy of logic",
+      "Philosophy"
+     ]
+    }
+   ],
+   "counts": {
+    "dead end": 9,
+    "philosophy": 11,
+    "loop": 6,
+    "absent": 4
+   },
+   "rings": [
+    [
+     "Polity > Sovereign state > United Kingdom",
+     4
+    ],
+    [
+     "Contiguous United States > U.S. state > United States",
+     1
+    ],
+    [
+     "Candidate > Nomination",
+     1
+    ]
+   ],
+   "pages": 173
+  },
+  "2026-11-05": {
+   "fixed": {
+    "Science": {
+     "outcome": "loop",
+     "path": [
+      "Science",
+      "Knowledge",
+      "Belief",
+      "Attitude (psychology)",
+      "Psychology",
+      "Mind",
+      "Thought",
+      "Cognition",
+      "Knowledge"
+     ]
+    },
+    "Knowledge": {
+     "outcome": "loop",
+     "path": [
+      "Knowledge",
+      "Belief",
+      "Attitude (psychology)",
+      "Psychology",
+      "Mind",
+      "Thought",
+      "Cognition",
+      "Knowledge"
+     ]
+    },
+    "Belief": {
+     "outcome": "loop",
+     "path": [
+      "Belief",
+      "Attitude (psychology)",
+      "Psychology",
+      "Mind",
+      "Thought",
+      "Cognition",
+      "Knowledge",
+      "Belief"
+     ]
+    }
+   },
+   "rows": []
+  }
+ },
+ "sample_n": 100,
+ "complete": false,
+ "calls": 3509,
+ "secs": 1038,
+ "stopped": "2021-07-01 at 30 of 100"
+}
