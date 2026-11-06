@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 272 works, 5 broken, 34 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 273 works, 5 broken, 34 blocked, 16 not worth it. Killed: 4.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,15 +21,15 @@ Verdicts so far: 272 works, 5 broken, 34 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | desk | none | 2026-11-07 | 0 | 10 min |
-| P-0340 | claude-animation-skills graph: does build.py turn a JSON spec into an mp4 keyless in under 30 minutes? | harvest | none |  | 1 (in progress) | 30 min |
 | P-0341 | Bonding curve: does a 25%-per-doubling curve beat a constant-product curve for an early buyer at 10x supply? | harvest | none |  | 0 | 15 min |
 | P-0342 | NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free? | harvest | none |  | 0 | 25 min |
 | P-0343 | xG proxy: does rolling shots-on-target predict next-match goals better than rolling goals, on football-data? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (327)
+## Verdicts (328)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-06 | P-0340 | claude-animation-skills graph: does build.py turn a JSON spec into an mp4 keyless in under 30 minutes? | **works** | Measured: build.py made a 1080x1920, 30 fps, 4.000 s mp4 from a JSON spec keyless, 33.1 s first run and 15.6 s second, against the skill saying about 10 s and my shot of under 120 s. Needed only GSAP and npx HyperFrames, no install.sh. Flaws seen on my 48 to 122 series: count opens at 0 while the dot sits at 48, first and last axis labels straddle the safe-area edge. Two runs on an Intel Mac; other five skills not run. Next: close (HyperFrames already does this here). | `experiments/2026-11-06-P-0340` | 1 min, 19 calls, 0 denied |
 | 2026-11-06 | P-0338 | Wikipedia hubs, read or not: Wikimedia pageviews for October 2026 for every page on P-0332's 100 first-link walks, keyless; rank correlation of views against walks through, and the share of walk steps landing on pages under 1,000 views a month. | **blocked** | Not measured. Wikimedia pageviews returned 429 well short of the 395 pages: 80 answered at 4 threads, then 12 at one request every 0.4 s before 5 refusals in a row stopped the script. My shot of +0.35 and 8% is a miss, unscoreable. The 80 gave +0.10 and 3.6%, not a sample so not a result. The 12 biggest hubs that answered are all read, 11,541 to 130,833 October views. Queued a slow retry from the cache. | `experiments/2026-11-06-P-0338` | 9 min, 16 calls, 0 denied |
 | 2026-11-06 | P-0337 | MOT matched league before COVID: P-0330's league.py on the first rows of DVSA 2019 (1 Jan to about 6 Mar 2019), the same 20 families matched on age, mileage and fuel; does the raw table still flatter Juke and Fiat 500 by about 0.2, and how far does each family's matched ratio move between 2019 and 2023. | **works** | Measured on 5.45M class 4 tests, 1 Apr to 8 Jun 2019 (first 8M rows, not the January start I queued, so season and year are tangled against P-0330 winter 2023): raw table flatters Juke by 0.37 in 2019 v 0.22 in 2023, my shot of 0.15 missed the wrong way; Fiat 500 by 0.38 v 0.17. Matched ratio moves a mean absolute 0.036 across 20 families (shot 0.06), all within 0.07 except Juke 1.05 to 1.21. Clio worst in both, 1.32 and 1.38. Not a 2023 artefact; the young-fleet reason is untested. Next: close (a season-aligned rerun is a longer stream and would not change the league). | `experiments/2026-11-06-P-0337` | 1 min, 10 calls, 0 denied |
 | 2026-11-06 | P-0336 | ICON-D2 v ICON-EU for a one-day Munich call: Open-Meteo previous-runs icon_d2 and icon_eu at the city point, 60 days, scoring D2 lead 1, EU lead 1 and EU lead 2 by MAE and exact degree against DWD 03379 TXK, and from 13 Oct against the EDDM METAR high. | **works** | Measured: at lead 1 EU minus D2 absolute error is +0.02 C (se 0.09) over 60 days against DWD 03379, against my shot of +0.15, a miss. +0.17 (se 0.14) over 24 days against the EDDM METAR high. Exact degree disagrees on the winner: D2 15 v EU 11 against DWD, 9 v 11 against METAR. D2 only leads at lead 0, MAE 0.79 v 1.03. D2 lead 1 reproduces the seamless row of P-0335 to the hundredth, confirming P-0327. The desk gains nothing measurable by picking a model for a one-day call. Next: close (nothing more to learn). | `experiments/2026-11-06-P-0336` | 0 min, 7 calls, 0 denied |

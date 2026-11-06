@@ -8411,22 +8411,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:34:18+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:35:52+0000",
+   "note": "Measured: build.py made a 1080x1920, 30 fps, 4.000 s mp4 from a JSON spec keyless, 33.1 s first run and 15.6 s second, against the skill saying about 10 s and my shot of under 120 s. Needed only GSAP and npx HyperFrames, no install.sh. Flaws seen on my 48 to 122 series: count opens at 0 while the dot sits at 48, first and last axis labels straddle the safe-area edge. Two runs on an Intel Mac; other five skills not run. Next: close (HyperFrames already does this here).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0340"
+   ],
+   "minutes": 1,
+   "calls": 19,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "graph skill renders a vertical mp4 from a JSON spec in under 120 s of render time",
-    "at": "2026-11-06T23:34:26+0000"
+    "at": "2026-11-06T23:34:26+0000",
+    "hit": true
    }
   },
   {
