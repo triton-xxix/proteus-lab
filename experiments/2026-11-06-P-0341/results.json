@@ -1,0 +1,250 @@
+{
+ "k": 0.32193,
+ "power_marginal_x_no_fee": 2.0986,
+ "crossover_tokens_m": 35.7,
+ "crossover_pct_of_V": 3.33,
+ "crossover_pct_of_sellable": 4.5,
+ "crossover_sol_spent_from_launch": 1.032,
+ "rows": [
+  {
+   "entry_pct_of_V": 0.1,
+   "entry_tokens_m": 1.07,
+   "buy_frac": 0.0,
+   "constant_product_x": 0.998,
+   "power_x": 2.057,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.1,
+   "entry_tokens_m": 1.07,
+   "buy_frac": 0.1,
+   "constant_product_x": 1.0,
+   "power_x": 2.085,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.1,
+   "entry_tokens_m": 1.07,
+   "buy_frac": 0.5,
+   "constant_product_x": 1.007,
+   "power_x": 2.173,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.25,
+   "entry_tokens_m": 2.68,
+   "buy_frac": 0.0,
+   "constant_product_x": 1.026,
+   "power_x": 2.057,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.25,
+   "entry_tokens_m": 2.68,
+   "buy_frac": 0.1,
+   "constant_product_x": 1.031,
+   "power_x": 2.085,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.25,
+   "entry_tokens_m": 2.68,
+   "buy_frac": 0.5,
+   "constant_product_x": 1.05,
+   "power_x": 2.173,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.5,
+   "entry_tokens_m": 5.37,
+   "buy_frac": 0.0,
+   "constant_product_x": 1.075,
+   "power_x": 2.057,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.5,
+   "entry_tokens_m": 5.37,
+   "buy_frac": 0.1,
+   "constant_product_x": 1.086,
+   "power_x": 2.085,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 0.5,
+   "entry_tokens_m": 5.37,
+   "buy_frac": 0.5,
+   "constant_product_x": 1.128,
+   "power_x": 2.173,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 1,
+   "entry_tokens_m": 10.73,
+   "buy_frac": 0.0,
+   "constant_product_x": 1.186,
+   "power_x": 2.057,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 1,
+   "entry_tokens_m": 10.73,
+   "buy_frac": 0.1,
+   "constant_product_x": 1.21,
+   "power_x": 2.085,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 1,
+   "entry_tokens_m": 10.73,
+   "buy_frac": 0.5,
+   "constant_product_x": 1.315,
+   "power_x": 2.173,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 2,
+   "entry_tokens_m": 21.46,
+   "buy_frac": 0.0,
+   "constant_product_x": 1.471,
+   "power_x": 2.057,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 2,
+   "entry_tokens_m": 21.46,
+   "buy_frac": 0.1,
+   "constant_product_x": 1.54,
+   "power_x": 2.085,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 2,
+   "entry_tokens_m": 21.46,
+   "buy_frac": 0.5,
+   "constant_product_x": 1.875,
+   "power_x": 2.173,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 3,
+   "entry_tokens_m": 32.19,
+   "buy_frac": 0.0,
+   "constant_product_x": 1.882,
+   "power_x": 2.057,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 3,
+   "entry_tokens_m": 32.19,
+   "buy_frac": 0.1,
+   "constant_product_x": 2.039,
+   "power_x": 2.085,
+   "winner": "power"
+  },
+  {
+   "entry_pct_of_V": 3,
+   "entry_tokens_m": 32.19,
+   "buy_frac": 0.5,
+   "constant_product_x": 2.922,
+   "power_x": 2.173,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 3.33,
+   "entry_tokens_m": 35.73,
+   "buy_frac": 0.0,
+   "constant_product_x": 2.059,
+   "power_x": 2.057,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 3.33,
+   "entry_tokens_m": 35.73,
+   "buy_frac": 0.1,
+   "constant_product_x": 2.261,
+   "power_x": 2.085,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 3.33,
+   "entry_tokens_m": 35.73,
+   "buy_frac": 0.5,
+   "constant_product_x": 3.478,
+   "power_x": 2.173,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 4,
+   "entry_tokens_m": 42.92,
+   "buy_frac": 0.0,
+   "constant_product_x": 2.509,
+   "power_x": 2.057,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 4,
+   "entry_tokens_m": 42.92,
+   "buy_frac": 0.1,
+   "constant_product_x": 2.848,
+   "power_x": 2.085,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 4,
+   "entry_tokens_m": 42.92,
+   "buy_frac": 0.5,
+   "constant_product_x": 5.265,
+   "power_x": 2.173,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 5,
+   "entry_tokens_m": 53.65,
+   "buy_frac": 0.0,
+   "constant_product_x": 3.539,
+   "power_x": 2.057,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 5,
+   "entry_tokens_m": 53.65,
+   "buy_frac": 0.1,
+   "constant_product_x": 4.298,
+   "power_x": 2.085,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 6,
+   "entry_tokens_m": 64.38,
+   "buy_frac": 0.0,
+   "constant_product_x": 5.413,
+   "power_x": 2.057,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 6,
+   "entry_tokens_m": 64.38,
+   "buy_frac": 0.1,
+   "constant_product_x": 7.315,
+   "power_x": 2.085,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 7,
+   "entry_tokens_m": 75.11,
+   "buy_frac": 0.0,
+   "constant_product_x": 9.42,
+   "power_x": 2.057,
+   "winner": "cp"
+  },
+  {
+   "entry_pct_of_V": 7.39,
+   "entry_tokens_m": 79.29,
+   "buy_frac": 0.0,
+   "constant_product_x": 12.341,
+   "power_x": 2.057,
+   "winner": "cp"
+  }
+ ]
+}

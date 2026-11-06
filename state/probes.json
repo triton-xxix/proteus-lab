@@ -8440,22 +8440,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-06T23:35:56+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-06T23:36:35+0000",
+   "note": "Measured in closed form: 25% per doubling pays 2.10x at 10x supply wherever you enter (2.06x after 1% fees each way). Constant product on pump.fun figures pays 1.00x at 0.1% of virtual supply, 1.19x at 1%, 5.41x at 6%; crossover 35.7M tokens, 3.33%, after 1.03 SOL in, against my shot of about 3%. So the power curve wins only for the first SOL or so. Caveat: 10x supply flatters it at the very start, no real launch replayed. Next: close (nothing the desk would change).",
+   "artefacts": [
+    "experiments/2026-11-06-P-0341"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "power curve pays 2.10x at 10x supply; constant product overtakes it once the buyer enters past about 3% of virtual supply",
-    "at": "2026-11-06T23:36:11+0000"
+    "at": "2026-11-06T23:36:11+0000",
+    "hit": true
    }
   },
   {
