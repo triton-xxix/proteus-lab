@@ -8440,9 +8440,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-06",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T23:35:56+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -8450,7 +8450,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "power curve pays 2.10x at 10x supply; constant product overtakes it once the buyer enters past about 3% of virtual supply",
+    "at": "2026-11-06T23:36:11+0000"
+   }
   },
   {
    "id": "P-0342",
