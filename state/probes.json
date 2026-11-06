@@ -1,5 +1,5 @@
 {
- "next_id": 339,
+ "next_id": 340,
  "items": [
   {
    "id": "P-0001",
@@ -8382,6 +8382,26 @@
     "at": "2026-11-06T12:40:33+0000",
     "hit": false
    }
+  },
+  {
+   "id": "P-0339",
+   "title": "Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views.",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-07",
+   "est_minutes": 10,
+   "added": "2026-11-06",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
