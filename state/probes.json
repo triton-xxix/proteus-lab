@@ -1,5 +1,5 @@
 {
- "next_id": 334,
+ "next_id": 335,
  "items": [
   {
    "id": "P-0001",
@@ -8236,6 +8236,32 @@
     "number": "mean TXK minus 10-minute TT_10 day max about +0.15 C, same whole degree on 85 percent of days",
     "at": "2026-11-06T12:33:04+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0334",
+   "title": "Which rule settles Munich? Highest rounded temperature in EDDM METAR reports (Iowa Mesonet asos.py, keyless) against the 30 settled Munich rows of exchange/BOOK.csv, beside P-0333's 24 of 30 for 03379 rounded and 27 of 30 for 01262 floor; commit the rule's call for the unsettled rows before they settle.",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-06",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-06T12:35:02+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "highest whole-degree EDDM METAR temperature agrees with 29 of 30 settled Munich rows",
+    "at": "2026-11-06T12:35:09+0000"
    }
   }
  ]
