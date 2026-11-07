@@ -8839,22 +8839,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-07",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-07T12:45:38+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-07T12:46:28+0000",
+   "note": "Measured: no break. The 19 Apr 2026 end date was the file, not the station: DWD metadata generated 6 Nov carries the same PT 100 row from 2011 to 5 Nov 2026, site unchanged. Split at 20 Apr, 2026 shifts +0.03 C against a usual +0.12 (2021 to 2025, -0.04 to +0.20); my shot of +0.25 missed. The rise is gradual and already in the winter halves: -0.25, -0.18, -0.19, -0.14, -0.11, +0.03 from 2021 to 2026. Nothing on DWDs side explains it; the METAR side has no metadata here. Next: close (a bis-date in DWD metadata is the generation edge; noted in the README).",
+   "artefacts": [
+    "experiments/2026-11-07-P-0355"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "gap shift at 19 Apr 2026 about +0.25 C (after minus before), against under 0.1 C for the same split in 2025",
-    "at": "2026-11-07T12:45:56+0000"
+    "at": "2026-11-07T12:45:56+0000",
+    "hit": true
    }
   }
  ]

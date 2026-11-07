@@ -1,0 +1,105 @@
+{
+ "recent_zip_metadata": {
+  "Metadaten_Geraete_Lufttemperatur_Maximum_01262.txt": [
+   "Stations_ID;Stationsname;Geo. Laenge [Grad];Geo. Breite [Grad];Stationshoehe [m];Geberhoehe ueber Grund [m];Von_Datum;Bis_Datum;Geraetetyp Name;Messverfahren;eor;",
+   "1262;M\u00fcnchen-Flughafen;11.8;48.36;445.5;2;19920517;20020516;PT 100 (Luft);Temperaturmessung, elektr.;eor;",
+   "1262;M\u00fcnchen-Flughafen;11.81;48.36;443.6;2;20020517;20110920;PT 100 (Luft);Temperaturmessung, elektr.;eor;",
+   "1262;M\u00fcnchen-Flughafen;11.81;48.35;445.5;2;20110921;20261105;PT 100 (Luft);Temperaturmessung, elektr.;eor;",
+   "generiert: 06.11.2026 --  Deutscher Wetterdienst  --"
+  ],
+  "Metadaten_Geographie_01262.txt": [
+   "Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname",
+   "  1262;  445.50; 48.3577; 11.8030;19920517;20020516;M\u00fcnchen-Flughafen",
+   "  1262;  443.60; 48.3574; 11.8078;20020517;20081127;M\u00fcnchen-Flughafen",
+   "  1262;  443.60; 48.3574; 11.8078;20081128;20110920;M\u00fcnchen-Flughafen",
+   "  1262;  445.50; 48.3477; 11.8134;20110921;        ;M\u00fcnchen-Flughafen"
+  ]
+ },
+ "last_day": "2026-11-05",
+ "by_year": {
+  "2021": {
+   "before": {
+    "days": 109,
+    "mean_gap": -0.249,
+    "se": 0.04
+   },
+   "after": {
+    "days": 195,
+    "mean_gap": -0.11,
+    "se": 0.031
+   },
+   "shift": 0.139
+  },
+  "2022": {
+   "before": {
+    "days": 109,
+    "mean_gap": -0.183,
+    "se": 0.036
+   },
+   "after": {
+    "days": 195,
+    "mean_gap": 0.002,
+    "se": 0.031
+   },
+   "shift": 0.185
+  },
+  "2023": {
+   "before": {
+    "days": 109,
+    "mean_gap": -0.186,
+    "se": 0.034
+   },
+   "after": {
+    "days": 195,
+    "mean_gap": -0.226,
+    "se": 0.032
+   },
+   "shift": -0.04
+  },
+  "2024": {
+   "before": {
+    "days": 110,
+    "mean_gap": -0.141,
+    "se": 0.036
+   },
+   "after": {
+    "days": 195,
+    "mean_gap": -0.018,
+    "se": 0.031
+   },
+   "shift": 0.123
+  },
+  "2025": {
+   "before": {
+    "days": 109,
+    "mean_gap": -0.106,
+    "se": 0.045
+   },
+   "after": {
+    "days": 195,
+    "mean_gap": 0.094,
+    "se": 0.034
+   },
+   "shift": 0.2
+  },
+  "2026": {
+   "before": {
+    "days": 109,
+    "mean_gap": 0.028,
+    "se": 0.036
+   },
+   "after": {
+    "days": 195,
+    "mean_gap": 0.055,
+    "se": 0.033
+   },
+   "shift": 0.027
+  }
+ },
+ "shift_2021_2025_mean": 0.121,
+ "shift_2021_2025_range": [
+  -0.04,
+  0.2
+ ],
+ "shift_2026": 0.027
+}
