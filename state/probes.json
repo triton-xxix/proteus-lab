@@ -1,5 +1,5 @@
 {
- "next_id": 351,
+ "next_id": 352,
  "items": [
   {
    "id": "P-0001",
@@ -8714,6 +8714,32 @@
    "calls": 8,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0351",
+   "title": "Words times 1.3 by language: codeload tarballs (keyless) of 6 Python, 6 JS/TS and 6 Go popular repos, every source file counted with tiktoken cl100k beside words x 1.3 and chars/4; the cl100k over words ratio per language with its spread across repos, and whether one factor holds within 15% for all three (P-0342 found about 2 on Flask)",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-07",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-07T12:39:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "cl100k tokens per whitespace word about 2.6 overall (Python 2.5, JS 2.8, Go 2.6); one factor within 15% of every repo",
+    "at": "2026-11-07T12:40:01+0000"
+   }
   }
  ]
 }
