@@ -1,0 +1,122 @@
+[
+ {
+  "client": "python-urllib",
+  "ua": "bare",
+  "endpoint": "api_pageviews",
+  "attempt": 1,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.28,
+  "at": "23:55:53"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "bare",
+  "endpoint": "api_pageviews",
+  "attempt": 2,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.19,
+  "at": "23:55:57"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "bare",
+  "endpoint": "api_info",
+  "attempt": 1,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.18,
+  "at": "23:56:01"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "bare",
+  "endpoint": "api_info",
+  "attempt": 2,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.19,
+  "at": "23:56:06"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "bare",
+  "endpoint": "rest_html",
+  "attempt": 1,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.62,
+  "at": "23:56:10"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "bare",
+  "endpoint": "rest_html",
+  "attempt": 2,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.14,
+  "at": "23:56:14"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "contact",
+  "endpoint": "api_pageviews",
+  "attempt": 1,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.19,
+  "at": "23:56:19"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "contact",
+  "endpoint": "api_pageviews",
+  "attempt": 2,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.19,
+  "at": "23:56:23"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "contact",
+  "endpoint": "api_info",
+  "attempt": 1,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.18,
+  "at": "23:56:27"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "contact",
+  "endpoint": "api_info",
+  "attempt": 2,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.19,
+  "at": "23:56:31"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "contact",
+  "endpoint": "rest_html",
+  "attempt": 1,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.35,
+  "at": "23:56:36"
+ },
+ {
+  "client": "python-urllib",
+  "ua": "contact",
+  "endpoint": "rest_html",
+  "attempt": 2,
+  "code": 200,
+  "refused_text": false,
+  "secs": 0.23,
+  "at": "23:56:40"
+ }
+]

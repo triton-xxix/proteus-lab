@@ -1,5 +1,5 @@
 {
- "next_id": 361,
+ "next_id": 362,
  "items": [
   {
    "id": "P-0001",
@@ -8965,6 +8965,28 @@
    ],
    "minutes": 10,
    "calls": 32,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0361",
+   "title": "Wikimedia 429 matrix: Python urllib v curl, UA with and without contact URL, api.php v REST: which cell draws the refusal P-0339 saw?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-07",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-07T23:55:37+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-07T23:57:21+0000",
+   "note": "Measured at 23:55: 18 of 18 requests served across Python urllib and curl, bare and contact user agents, api.php pageviews, api.php info and REST html, two tries each 4 s apart, including the exact cell P-0339 saw refused every time. So P-0339's client block was wrong as stated; the refusals fit a pace limit on the address, which hit curl too in P-0360 when unpaced.",
+   "artefacts": [
+    "experiments/2026-11-07-P-0361"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false
   }
