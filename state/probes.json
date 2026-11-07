@@ -8810,22 +8810,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-07",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-07T12:44:05+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-07T12:44:41+0000",
+   "note": "Measured on 738 matched :20 minutes, October: METAR minus SYNOP tenths -0.16 C at 12 to 15 UTC (shot -0.3), +0.06 at 00 to 05 (shot +0.1); worst 10 to 12 UTC at -0.30, positive every hour from 17 to 03. Warmest three hours -0.17 v 0.00 elsewhere (se about 0.06). The METAR lags the air: cold while it warms, warm while it cools. With P-0353s 0.33 C from sampling that covers roughly 0.5 to 0.6 of the 0.93 C gap. October and :20 only. Next: close (Heathrow METAR gap is mostly sampling plus lag; the settle rule work in D-023 can use it).",
+   "artefacts": [
+    "experiments/2026-11-07-P-0354"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "METAR minus tenths about -0.3 C in the 12 to 15 UTC hours against about +0.1 C at night",
-    "at": "2026-11-07T12:44:12+0000"
+    "at": "2026-11-07T12:44:12+0000",
+    "hit": true
    }
   }
  ]
