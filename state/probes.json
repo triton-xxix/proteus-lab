@@ -8781,22 +8781,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-07",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-07T12:42:59+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-07T12:44:00+0000",
+   "note": "Measured on 28 October days at 03772: half-hourly sampled max sits 0.16 C under the full 10-minute max (shot 0.25), that 0.19 C under SYNOP TX (shot 0.3); rounded half-hourly max minus TX -0.33 C, sd 0.34. Sampling explains about a third of P-0346s 0.93 C METAR gap; about 0.6 C sits in the METAR reading itself. The cache has no :50 reports, so :00 and :30 stand in for the :20 and :50 METAR minutes, and P-0352 matched half for that reason. Next: deepen (queue an hour-of-day split of P-0352s METAR minus tenths, to see if METAR runs cold by afternoon).",
+   "artefacts": [
+    "experiments/2026-11-07-P-0353"
+   ],
+   "minutes": 1,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "max of the :20 and :50 tenths sits 0.25 C under the full 10-minute max, and the full 10-minute max 0.3 C under SYNOP TX",
-    "at": "2026-11-07T12:43:19+0000"
+    "at": "2026-11-07T12:43:19+0000",
+    "hit": true
    }
   }
  ]

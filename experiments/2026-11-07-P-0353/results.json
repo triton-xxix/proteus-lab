@@ -1,0 +1,223 @@
+{
+ "minute_counts_06_18": {
+  "0": 403,
+  "10": 355,
+  "20": 367,
+  "30": 369,
+  "40": 368
+ },
+ "days_used": 28,
+ "skipped": {
+  "missing a :20 or :50 slot": 3
+ },
+ "full_10min_max_minus_metar_slots_max": {
+  "mean": 0.157,
+  "sd": 0.23
+ },
+ "synop_tx_minus_full_10min_max": {
+  "mean": 0.189,
+  "sd": 0.195
+ },
+ "metar_slots_max_rounded_minus_tx": {
+  "mean": -0.329,
+  "sd": 0.342
+ },
+ "rows": [
+  {
+   "day": "2026-10-01",
+   "metar_slots_max": 21.5,
+   "ten_min_max": 21.8,
+   "synop_tx": 21.9,
+   "a_rounded": 22
+  },
+  {
+   "day": "2026-10-02",
+   "metar_slots_max": 21.9,
+   "ten_min_max": 21.9,
+   "synop_tx": 22.2,
+   "a_rounded": 22
+  },
+  {
+   "day": "2026-10-03",
+   "metar_slots_max": 19.8,
+   "ten_min_max": 19.9,
+   "synop_tx": 20.8,
+   "a_rounded": 20
+  },
+  {
+   "day": "2026-10-04",
+   "metar_slots_max": 23.1,
+   "ten_min_max": 23.2,
+   "synop_tx": 23.5,
+   "a_rounded": 23
+  },
+  {
+   "day": "2026-10-05",
+   "metar_slots_max": 24.0,
+   "ten_min_max": 24.0,
+   "synop_tx": 24.2,
+   "a_rounded": 24
+  },
+  {
+   "day": "2026-10-06",
+   "metar_slots_max": 21.7,
+   "ten_min_max": 22.8,
+   "synop_tx": 22.8,
+   "a_rounded": 22
+  },
+  {
+   "day": "2026-10-07",
+   "metar_slots_max": 15.0,
+   "ten_min_max": 15.0,
+   "synop_tx": 15.1,
+   "a_rounded": 15
+  },
+  {
+   "day": "2026-10-08",
+   "metar_slots_max": 14.9,
+   "ten_min_max": 15.4,
+   "synop_tx": 15.6,
+   "a_rounded": 15
+  },
+  {
+   "day": "2026-10-09",
+   "metar_slots_max": 20.9,
+   "ten_min_max": 20.9,
+   "synop_tx": 21.1,
+   "a_rounded": 21
+  },
+  {
+   "day": "2026-10-10",
+   "metar_slots_max": 15.7,
+   "ten_min_max": 16.0,
+   "synop_tx": 16.1,
+   "a_rounded": 16
+  },
+  {
+   "day": "2026-10-11",
+   "metar_slots_max": 16.3,
+   "ten_min_max": 16.3,
+   "synop_tx": 16.7,
+   "a_rounded": 16
+  },
+  {
+   "day": "2026-10-12",
+   "metar_slots_max": 17.9,
+   "ten_min_max": 17.9,
+   "synop_tx": 18.1,
+   "a_rounded": 18
+  },
+  {
+   "day": "2026-10-13",
+   "metar_slots_max": 20.9,
+   "ten_min_max": 21.2,
+   "synop_tx": 21.2,
+   "a_rounded": 21
+  },
+  {
+   "day": "2026-10-14",
+   "metar_slots_max": 20.3,
+   "ten_min_max": 20.5,
+   "synop_tx": 20.6,
+   "a_rounded": 20
+  },
+  {
+   "day": "2026-10-15",
+   "metar_slots_max": 22.5,
+   "ten_min_max": 22.5,
+   "synop_tx": 22.7,
+   "a_rounded": 23
+  },
+  {
+   "day": "2026-10-16",
+   "metar_slots_max": 16.0,
+   "ten_min_max": 16.3,
+   "synop_tx": 16.3,
+   "a_rounded": 16
+  },
+  {
+   "day": "2026-10-17",
+   "metar_slots_max": 14.1,
+   "ten_min_max": 14.3,
+   "synop_tx": 14.7,
+   "a_rounded": 14
+  },
+  {
+   "day": "2026-10-18",
+   "metar_slots_max": 14.3,
+   "ten_min_max": 14.5,
+   "synop_tx": 14.8,
+   "a_rounded": 14
+  },
+  {
+   "day": "2026-10-20",
+   "metar_slots_max": 12.8,
+   "ten_min_max": 12.8,
+   "synop_tx": 12.9,
+   "a_rounded": 13
+  },
+  {
+   "day": "2026-10-22",
+   "metar_slots_max": 15.3,
+   "ten_min_max": 15.3,
+   "synop_tx": 15.7,
+   "a_rounded": 15
+  },
+  {
+   "day": "2026-10-23",
+   "metar_slots_max": 12.7,
+   "ten_min_max": 12.8,
+   "synop_tx": 12.8,
+   "a_rounded": 13
+  },
+  {
+   "day": "2026-10-24",
+   "metar_slots_max": 14.2,
+   "ten_min_max": 14.2,
+   "synop_tx": 14.2,
+   "a_rounded": 14
+  },
+  {
+   "day": "2026-10-25",
+   "metar_slots_max": 13.8,
+   "ten_min_max": 14.1,
+   "synop_tx": 14.1,
+   "a_rounded": 14
+  },
+  {
+   "day": "2026-10-26",
+   "metar_slots_max": 16.3,
+   "ten_min_max": 16.4,
+   "synop_tx": 16.4,
+   "a_rounded": 16
+  },
+  {
+   "day": "2026-10-27",
+   "metar_slots_max": 16.9,
+   "ten_min_max": 16.9,
+   "synop_tx": 17.1,
+   "a_rounded": 17
+  },
+  {
+   "day": "2026-10-28",
+   "metar_slots_max": 16.4,
+   "ten_min_max": 16.6,
+   "synop_tx": 17.0,
+   "a_rounded": 16
+  },
+  {
+   "day": "2026-10-29",
+   "metar_slots_max": 16.3,
+   "ten_min_max": 16.3,
+   "synop_tx": 16.4,
+   "a_rounded": 16
+  },
+  {
+   "day": "2026-10-30",
+   "metar_slots_max": 17.0,
+   "ten_min_max": 17.1,
+   "synop_tx": 17.2,
+   "a_rounded": 17
+  }
+ ]
+}
