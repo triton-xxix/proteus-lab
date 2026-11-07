@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 280 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 281 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -20,13 +20,13 @@ Verdicts so far: 280 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
-| P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | desk | none | 2026-11-07 | 1 (in progress) | 10 min |
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 
-## Verdicts (337)
+## Verdicts (338)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-07 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | **works** | Measured on 381 of 395 walk pages: Spearman of October views against walks through +0.281 (shot +0.20), 2.6% of steps on pages under 1,000 views (shot 4%); +0.168 among the 122 pages on 2 or more walks, median page 12,301 views. Done in one session with the Action API prop=pageviews, 20 titles a call, not a week of REST pulls. Python urllib got 429 on every call, curl got 200: a client block, likely P-0338 too. 12 of 12 REST hubs match to the view. 13 pages lost to unfollowed continues. Next: close (the walks run through read pages; nothing more to learn). | `experiments/2026-11-07-P-0339` | 7 min, 36 calls, 0 denied |
 | 2026-11-06 | P-0350 | pump.fun launch price: do new pools first trade near the stated 30 virtual SOL over 1.073bn tokens, 2.796e-8 SOL, or has the curve changed | **blocked** | Not measured. GeckoTerminal returned 429 twice, on an OHLCV call at 2.5 s spacing and then on the first call of a slower re-run, so no pool price was read. No called shot made. P-0172 already read live curve accounts for constant product, so this is a narrower check than the queue line suggests. | `experiments/2026-11-06-P-0350` | 0 min, 8 calls, 0 denied |
 | 2026-11-06 | P-0349 | Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behind them, and does any survive 2% commission | **works** | Measured at one moment, 107 markets read twice 60 s apart: of 65 books with a bid on every contract, median sell-all 94.81, 1 was over 100 (Trump 9+ years by 2030, 101.18, unchanged after a minute). Size 2.02 units, gross gap 0.024 units, about 2p if a unit is a pound, and it pays only at settlement in 2030. Survives 2% on net profit, fails 2% on all premium; commission basis and unit not confirmed from a Smarkets document. My shot hit. Past sizes unknown, snapshots keep none. Next: close. | `experiments/2026-11-06-P-0349` | 2 min, 5 calls, 0 denied |
 | 2026-11-06 | P-0347 | EDDM METAR high against DWD 01262 TXK, 2021 to 2026, by month: does P-0345's winter 90% against July 66% hold over five years | **works** | Measured over 2,135 days, 2021 to 2026: EDDM METAR high equals rounded DWD 01262 TXK on 74.1%, misses leaning low (409 under, 145 over). Winter 75.7% v summer 72.6%, 3 points with se about 2.7, against my shot of at least 8: P-0345 January 90 v July 66 was small-sample noise. By year 70% (2023) to 81% (2026), mean gap -0.22 to +0.04, possibly a sensor or reporting change, not looked for. TXK is not TX_10, so 74 v 78 is not clean. Next: close. | `experiments/2026-11-06-P-0347` | 0 min, 5 calls, 0 denied |

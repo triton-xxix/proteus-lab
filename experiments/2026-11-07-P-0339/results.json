@@ -1,0 +1,210 @@
+{
+ "walks_at": "2026-11-05T17:18:16Z",
+ "walks": 100,
+ "steps": 1352,
+ "pages": 395,
+ "views_found": 381,
+ "calls": 20,
+ "batches_with_continue": 3,
+ "missing_pages": [
+  "National Council for Japanese American Redress?action=edit&redlink=1"
+ ],
+ "pages_with_null_days": 5,
+ "cross_check_rest_v_action": [
+  {
+   "page": "Philosophy",
+   "rest": 130833,
+   "action": 130833
+  },
+  {
+   "page": "Attitude (psychology)",
+   "rest": 13685,
+   "action": 13685
+  },
+  {
+   "page": "Thought",
+   "rest": 22767,
+   "action": 22767
+  },
+  {
+   "page": "Cognition",
+   "rest": 29419,
+   "action": 29419
+  },
+  {
+   "page": "Mind",
+   "rest": 23964,
+   "action": 23964
+  },
+  {
+   "page": "Knowledge",
+   "rest": 70741,
+   "action": 70741
+  },
+  {
+   "page": "Psychology",
+   "rest": 63426,
+   "action": 63426
+  },
+  {
+   "page": "Belief",
+   "rest": 18468,
+   "action": 18468
+  },
+  {
+   "page": "Event (philosophy)",
+   "rest": 11541,
+   "action": 11541
+  },
+  {
+   "page": "Meaning (philosophy)",
+   "rest": 13894,
+   "action": 13894
+  },
+  {
+   "page": "Epistemology",
+   "rest": 76231,
+   "action": 76231
+  },
+  {
+   "page": "Natural science",
+   "rest": 38649,
+   "action": 38649
+  }
+ ],
+ "spearman_all_pages": 0.281,
+ "spearman_pages_on_2plus_walks": 0.168,
+ "pages_on_2plus_walks": 122,
+ "share_of_steps_under_1000_views": 0.0262,
+ "share_of_pages_under_1000_views": 0.084,
+ "median_views_all_pages": 12301,
+ "least_read_pages": [
+  {
+   "page": "Central District (Faridan County)",
+   "walks_through": 1,
+   "october_views": 7
+  },
+  {
+   "page": "Emamzadeh Seyyed Mahmud Rural District",
+   "walks_through": 1,
+   "october_views": 9
+  },
+  {
+   "page": "Tour of Zhoushan Island",
+   "walks_through": 1,
+   "october_views": 13
+  },
+  {
+   "page": "Varzaq-e Jonubi Rural District",
+   "walks_through": 1,
+   "october_views": 19
+  },
+  {
+   "page": "B\u00f6zberg Pass",
+   "walks_through": 1,
+   "october_views": 25
+  },
+  {
+   "page": "Local municipality (Quebec)",
+   "walks_through": 1,
+   "october_views": 46
+  },
+  {
+   "page": "2016\u201317 Coupe de France preliminary rounds",
+   "walks_through": 1,
+   "october_views": 64
+  },
+  {
+   "page": "State Migration Service (Azerbaijan)",
+   "walks_through": 1,
+   "october_views": 64
+  },
+  {
+   "page": "Faridan County",
+   "walks_through": 1,
+   "october_views": 79
+  },
+  {
+   "page": "Dezful County",
+   "walks_through": 1,
+   "october_views": 100
+  },
+  {
+   "page": "Uhl River",
+   "walks_through": 1,
+   "october_views": 171
+  },
+  {
+   "page": "Noardeast-Frysl\u00e2n",
+   "walks_through": 1,
+   "october_views": 213
+  },
+  {
+   "page": "Corporate travel management",
+   "walks_through": 1,
+   "october_views": 231
+  },
+  {
+   "page": "Americans in Ireland",
+   "walks_through": 1,
+   "october_views": 253
+  },
+  {
+   "page": "Aldwych farce",
+   "walks_through": 1,
+   "october_views": 258
+  }
+ ],
+ "least_read_on_2plus_walks": [
+  {
+   "page": "Legislative chamber",
+   "walks_through": 4,
+   "october_views": 892
+  },
+  {
+   "page": "Choice",
+   "walks_through": 4,
+   "october_views": 1519
+  },
+  {
+   "page": "Deliberation",
+   "walks_through": 4,
+   "october_views": 2000
+  },
+  {
+   "page": "Charity (Christian virtue)",
+   "walks_through": 2,
+   "october_views": 2125
+  },
+  {
+   "page": "Group decision-making",
+   "walks_through": 4,
+   "october_views": 2196
+  },
+  {
+   "page": "Deliberative assembly",
+   "walks_through": 4,
+   "october_views": 2348
+  },
+  {
+   "page": "Basic research",
+   "walks_through": 16,
+   "october_views": 3144
+  },
+  {
+   "page": "Substance (chemistry)",
+   "walks_through": 4,
+   "october_views": 3180
+  },
+  {
+   "page": "Anonymity",
+   "walks_through": 2,
+   "october_views": 3663
+  },
+  {
+   "page": "Work of art",
+   "walks_through": 2,
+   "october_views": 3718
+  }
+ ]
+}

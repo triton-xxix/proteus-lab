@@ -8391,22 +8391,25 @@
    "after": "2026-11-07",
    "est_minutes": 10,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-07T12:31:42+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-07T12:39:00+0000",
+   "note": "Measured on 381 of 395 walk pages: Spearman of October views against walks through +0.281 (shot +0.20), 2.6% of steps on pages under 1,000 views (shot 4%); +0.168 among the 122 pages on 2 or more walks, median page 12,301 views. Done in one session with the Action API prop=pageviews, 20 titles a call, not a week of REST pulls. Python urllib got 429 on every call, curl got 200: a client block, likely P-0338 too. 12 of 12 REST hubs match to the view. 13 pages lost to unfollowed continues. Next: close (the walks run through read pages; nothing more to learn).",
+   "artefacts": [
+    "experiments/2026-11-07-P-0339"
+   ],
+   "minutes": 7,
+   "calls": 36,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "Spearman +0.20 across all 395 pages; 4% of steps on pages under 1,000 October views",
-    "at": "2026-11-07T12:32:11+0000"
+    "at": "2026-11-07T12:32:11+0000",
+    "hit": true
    }
   },
   {
