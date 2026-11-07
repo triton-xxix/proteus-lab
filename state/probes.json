@@ -1,5 +1,5 @@
 {
- "next_id": 353,
+ "next_id": 354,
  "items": [
   {
    "id": "P-0001",
@@ -8771,6 +8771,32 @@
     "number": "METAR equals the rounded SYNOP tenths at 85% of matched minutes, the floored one at about 50%",
     "at": "2026-11-07T12:42:00+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0353",
+   "title": "Heathrow peak sampling: from the cached October 10-minute SYNOPs for 03772, the daily max of the tenths at :20 and :50 only against the full 10-minute daily max and the SYNOP TX; how much of P-0346's 0.93 C METAR gap does sampling alone explain (P-0352 ruled out truncation)",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-07",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-07T12:42:59+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "max of the :20 and :50 tenths sits 0.25 C under the full 10-minute max, and the full 10-minute max 0.3 C under SYNOP TX",
+    "at": "2026-11-07T12:43:19+0000"
    }
   }
  ]
