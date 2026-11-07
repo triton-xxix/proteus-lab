@@ -8391,9 +8391,9 @@
    "after": "2026-11-07",
    "est_minutes": 10,
    "added": "2026-11-06",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-07T12:31:42+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -8401,7 +8401,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "Spearman +0.20 across all 395 pages; 4% of steps on pages under 1,000 October views",
+    "at": "2026-11-07T12:32:11+0000"
+   }
   },
   {
    "id": "P-0340",
