@@ -756,6 +756,9 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-11-05 · Getting to Philosophy, the Wikipedia first-link claim, walked on 100 random articles** (ran): 48 reached Philosophy (median 16 hops), 41 looped, 11 dead ends; 36 loops are one ring, Knowledge > Belief > Attitude (psychology) > Psychology > Mind > Thought > Cognition > Knowledge, fed by Science. Wildcard W45, `experiments/2026-11-05-philosophy/`.
 - **2026-11-06 · Do Smarkets contracts sum to 100, from my own 35 snapshots** (ran): 4,408 full two-sided books, buy-all median 102.6, sell-all 97.3, width 5.3; 39 books in 16 markets show sell-all above 100, largest 102.1. Commission, depth and read timing unmeasured; daily-high markets never had a full two-sided book. Persona pick W45, `experiments/2026-11-06-persona-book-sums/`.
 - 2026-11-06, harvested: 14 judged, 12 kept (H-0539 to H-0552), 4 queued as probes (P-0340, P-0341, P-0342, P-0343). Register: `field-notes/HARVEST.md`.
+- **2026-11-07 · ASA June 2026 guidance on AI-generated content and deepfakes, with the October 2026 CAP and CMA influencer guidance** (paper): no AI labelling rule in the CAP Code; the existing rules apply in full and DMCC practice 25 (trader posing as consumer) is the lever against fake influencers; read through law-firm summaries, not the primary texts. Read-it W45, `intel/synthetic-influencer-personas.md`.
+- **2026-11-07 · Synthetic influencer personas sold as undetectable (EasyInfluencers.ai), detection side** (intel): consistency of face is itself a tell; C2PA metadata strips on re-encode; account behaviour over a 30-day window catches the farm better than the face. Two claims secondary and unverified. Intelligence W45, `intel/synthetic-influencer-personas.md`.
+- 2026-11-07, harvested: 13 judged, 10 kept (H-0553 to H-0565), 3 queued as probes (P-0356, P-0357, P-0358). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 

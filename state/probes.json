@@ -1,5 +1,5 @@
 {
- "next_id": 356,
+ "next_id": 359,
  "items": [
   {
    "id": "P-0001",
@@ -8859,6 +8859,66 @@
     "at": "2026-11-07T12:45:56+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0356",
+   "title": "ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB?",
+   "source": "harvest",
+   "needs": "An OpenAI key for the image-generation step; the packing and checking step needs nothing.",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0357",
+   "title": "Rivet actors: does a local actor keep its state across a process restart with no account or key?",
+   "source": "harvest",
+   "needs": "Node and an npm install from the public registry; no key.",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0358",
+   "title": "Claude settings leak: do any allow rules in this repo's .claude files or git history contain a secret-shaped string?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-07",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

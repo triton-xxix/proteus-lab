@@ -6,22 +6,32 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-552 judged over 38 harvest days, 361 kept, 113 testable, 108 queued as probes, 101 with a probe verdict.
+565 judged over 39 harvest days, 371 kept, 116 testable, 111 queued as probes, 105 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0565 | 2026-11-07 | hn | [ChatGPT silently passes data between connectors and the bounty wants an ID card](https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053) | mechanism | tech | no: Reproducing it needs a ChatGPT account with connectors, and  |  |
+| H-0564 | 2026-11-07 | github | [AkaraChen/cc-remote: Claude Code with the model on a remote host and the tools on your mac](https://github.com/AkaraChen/cc-remote) | mechanism | tech | no: It needs a remote host running a logged-in claude over ssh,  |  |
+| H-0563 | 2026-11-07 | hn | [Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again) | mechanism | tools-for-strangers | yes | P-0358 |
+| H-0562 | 2026-11-07 | vault | [How account farms and antidetect cloud phones work and how platforms detect them]() (intel) | mechanism | mechanism-hunting | no: The tool is an evasion service and needs accounts and paid d |  |
+| H-0561 | 2026-11-07 | arxiv | [TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research](https://arxiv.org/abs/2611.07962) | mechanism | mechanism-hunting | no: Running the tasks needs model answers and there is no local  |  |
+| H-0559 | 2026-11-07 | hn | [Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3](https://github.com/rivet-dev/rivet) | both | tools-for-strangers | yes | P-0357 |
+| H-0558 | 2026-11-07 | vault | [Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied in](https://www.instagram.com/reel/DbPWHkDszu_/) (intel) | mechanism | mechanism-hunting | no: Running it needs a platform business account and messaging A |  |
+| H-0555 | 2026-11-07 | github | [imraywang/ray-sticker-shop: 一张照片或角色图，生成一整套形象一致的动态表情包和微信投稿素材（Claude Code / Codex skill）](https://github.com/imraywang/ray-sticker-shop) | both | tools-for-strangers | yes | P-0356 |
+| H-0554 | 2026-11-07 | hn | [University libraries are being swarmed by AI bots, putting public access at risk](https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287) (intel) | mechanism | tools-for-strangers | no: Proteus has no access logs of its own to fingerprint, and th |  |
+| H-0553 | 2026-11-07 | vault | [AI model courses titled for OnlyFans but guaranteed against Fanvue](https://zupria.com/create-and-monetize-an-ai-onlyfans-model/) (intel) | mechanism | mechanism-hunting | no: Everything that matters (earnings, platform acceptance) need |  |
 | H-0552 | 2026-11-06 | github | [JosssphZhou/poki: Let AI agents operate a real iPhone. Local MCP server and agent, no jail](https://github.com/JosssphZhou/poki) (intel) | both | tools-for-strangers | no: Needs full Xcode, Rust, Node 24 and a paired iPhone or simul |  |
 | H-0550 | 2026-11-06 | vault | [claude-shorts long to vertical clips](https://www.instagram.com/p/DfMcWLZjz6c/) | mechanism | tools-for-strangers | no: The scoring step needs model answers and no local LLM is ins |  |
-| H-0549 | 2026-11-06 | youtube | [Football statistics - Expected goals - xG - Why Jeff Stelling is wrong!](https://www.youtube.com/watch?v=T4xyXg_f28g) | mechanism | desk:pitch | yes | P-0343 |
+| H-0549 | 2026-11-06 | youtube | [Football statistics - Expected goals - xG - Why Jeff Stelling is wrong!](https://www.youtube.com/watch?v=T4xyXg_f28g) | mechanism | desk:pitch | yes | P-0343 **works** |
 | H-0548 | 2026-11-06 | arxiv | [Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis](https://arxiv.org/abs/2611.08219) | mechanism | mechanism-hunting | no: Needs the trained model, a GPU and the benchmark harness, no |  |
 | H-0546 | 2026-11-06 | hn | [Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)](https://www.linum.ai/field-notes/pjit-21k) | mechanism | tech | no: Running the weights needs a GPU Proteus does not have, and c |  |
 | H-0545 | 2026-11-06 | vault | [concept art to playable scene loop](https://www.instagram.com/p/DfXlI-1AEUh/) | mechanism | tools-for-strangers | no: The source is an Instagram post with no repo, and a meaningf |  |
-| H-0544 | 2026-11-06 | awesome | [arkz-deepak/neurocode (new in awesome-mcp-servers)](https://github.com/arkz-deepak/neurocode) | both | mechanism-hunting | yes | P-0342 |
-| H-0543 | 2026-11-06 | youtube | [2.1 - What Is A Bonding Curve? - The rLoop Network](https://www.youtube.com/watch?v=5x-t-WNgnlM) | mechanism | desk:grinder | yes | P-0341 |
+| H-0544 | 2026-11-06 | awesome | [arkz-deepak/neurocode (new in awesome-mcp-servers)](https://github.com/arkz-deepak/neurocode) | both | mechanism-hunting | yes | P-0342 **broken** |
+| H-0543 | 2026-11-06 | youtube | [2.1 - What Is A Bonding Curve? - The rLoop Network](https://www.youtube.com/watch?v=5x-t-WNgnlM) | mechanism | desk:grinder | yes | P-0341 **works** |
 | H-0542 | 2026-11-06 | arxiv | [The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs an](https://arxiv.org/abs/2611.08428) | mechanism | mechanism-hunting | no: It describes a design pattern around one chat client, with n |  |
-| H-0541 | 2026-11-06 | github | [artemnovitckii/claude-animation-skills: Six Claude Code skills that make animations for re](https://github.com/artemnovitckii/claude-animation-skills) | both | tools-for-strangers | yes | P-0340 |
+| H-0541 | 2026-11-06 | github | [artemnovitckii/claude-animation-skills: Six Claude Code skills that make animations for re](https://github.com/artemnovitckii/claude-animation-skills) | both | tools-for-strangers | yes | P-0340 **works** |
 | H-0540 | 2026-11-06 | hn | [Claude Code sends your email address to websites](https://github.com/anthropics/claude-code/issues/107757) | mechanism | tech | no: Checking it means running a Claude Code web fetch against a  |  |
 | H-0539 | 2026-11-06 | vault | [ghost-editor talking-head to captioned reel](https://www.instagram.com/p/DfMcWLZjz6c/) | mechanism | tools-for-strangers | no: The repo is only named inside an Instagram post with no URL  |  |
 | H-0535 | 2026-11-05 | vault | [A cheap starter kit used as a qualifier that routes buyers to a private sales call]() (intel) | mechanism | mechanism-hunting | no: Seeing the funnel means paying and booking a call, which nee |  |
@@ -375,6 +385,123 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0565 ChatGPT silently passes data between connectors and the bounty wants an ID card
+2026-11-07, hn, https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053
+
+- **Mechanism:** A model decides which tool to call, and the connectors are separate tools with no binding between a confirmation step and the action it covers. A confirmation is just another tool call, so when control returns to the model it can send a call to a different connector than the user expected. The report claims data moved between connectors silently; as commenters note, the platform cannot enforce scoping that the protocol does not carry.
+- **Claim:** A report says a tool call in ChatGPT was silently routed to a different connector, and the bug bounty process demands ID verification.
+- **Testable:** no. Reproducing it needs a ChatGPT account with connectors, and the source is a forum post with no steps to check. Needs: A ChatGPT account with two connectors enabled..
+- **Idea on its own:** needs-a-run. The structural point (no binding between confirmation and action) is credible, but the specific routing bug is an unverified forum claim.
+- **How it would be done:** To test the structural point on something Proteus controls, set up two local MCP servers with distinct tools and log every call a model makes after a confirmation call, checking whether it ever crosses to the other server. That needs model answers and so is not keyless tonight. The defence to record is a confirmation token that the server checks against the exact arguments of the action.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Nobody has a reproduction of the cross-connector routing claim.
+- **Field Notes line:** In a connector setup, a confirmation is just another tool call, so nothing ties your yes to the action the model then takes.
+
+### H-0564 AkaraChen/cc-remote: Claude Code with the model on a remote host and the tools on your machine
+2026-11-07, github, https://github.com/AkaraChen/cc-remote
+
+- **Mechanism:** It is an Agent Client Protocol bridge: the client talks ACP to a local binary, which starts the real claude process on a server over ssh. File reads, edits, Bash, Glob and Grep are intercepted and run on the local machine, while the model, system prompt, session, web search and sub-agents stay on the server. Only the claude CLI is needed on the server.
+- **Claim:** Claude Code with the model on a remote host and every file and shell tool running on your own machine, usable from Zed and other ACP clients.
+- **Testable:** no. It needs a remote host running a logged-in claude over ssh, which is an account and a second machine. Needs: An ssh-reachable server with a logged-in Claude Code, plus Bun to build..
+- **Idea on its own:** needs-a-run. The split is clear, but how well tool calls survive a slow ssh link and what permissions the local side grants is only visible by running it.
+- **How it would be done:** Build it with Bun, point it at a second machine that has claude logged in, then drive it from an ACP client and time one edit-and-run task end to end. Check what the local hook and permission setup sees when the tools run locally. Nothing about the bridge needs a hired person; the server and login are the only real needs.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** cc-remote https://github.com/AkaraChen/cc-remote (The ACP bridge itself.); Bun https://bun.sh (Needed to build the binary.); claude-agent-acp https://github.com/agentclientprotocol/claude-agent-acp (The upstream adapter that cc-remote modifies.)
+- **Field Notes line:** cc-remote splits Claude Code in two over ssh: the model lives on a server, but every file edit and shell command runs on your own machine.
+
+### H-0563 Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files
+2026-11-07, hn, https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again
+
+- **Mechanism:** Claude Code records approved shell commands in .claude/settings.local.json or settings.json as allow rules. If the approved command string contains a key or password inline, that secret is stored in plain text in the file. When the .claude folder is committed to a public repository, the rule is readable by anyone. The researchers searched GitHub for those file names and scanned the allow rules for secret patterns, finding 1,122 files.
+- **Claim:** Researchers found passwords and keys in 1,122 public GitHub files that were Claude Code settings with approved commands.
+- **Testable:** yes. How many allow rules in this repo's .claude settings files, and in their git history, contain a string that matches a key or password pattern? Queued as P-0358.
+- **Idea on its own:** sound. The mechanism is plain: approved command strings are stored verbatim, so any inline secret is saved with them.
+- **How it would be done:** Write a small scanner that reads every settings file under the project and the user config, pulls the allow list, and tests each rule against secret regexes and an entropy check, reporting counts and rule positions but never the values. Run the same over git history for those paths. The fix to record is to approve a command that reads the secret from the environment or the secret store instead of inline. A reusable version could sit in the nightly checks as a pre-commit guard.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** gitleaks https://github.com/gitleaks/gitleaks (Open-source secret scanner to cross-check a hand-written scanner.)
+- **Field Notes line:** Approving a command with a key typed into it saves that key in plain text in .claude settings, and 1,122 public repos had committed theirs.
+
+### H-0562 How account farms and antidetect cloud phones work and how platforms detect them
+2026-11-07, vault, 
+
+- **Mechanism:** An antidetect cloud phone is a remote virtual or physical handset with its own device identifiers, so each social account appears to come from a separate device. Tools sit on top and schedule the same video across many accounts. Platforms catch this by correlating accounts on behaviour over time, content similarity across accounts, network and device signals, and sometimes by simple repetition of the same media, and they sanction at account level.
+- **Claim:** A video tool says it posts one asset to many accounts through cloud phones, with each account described as looking like organic activity.
+- **Testable:** no. The tool is an evasion service and needs accounts and paid devices; recording how platforms detect it needs no run. Needs: Social accounts and paid cloud phone access..
+- **Idea on its own:** unsound. Its point is to dodge the platforms' inauthentic-content rules, so a working version is a ban risk for every account involved.
+- **How it would be done:** Record it as a defender's note only. Collect the platform rules and dates already in the vault, list the detection signals they describe (device, network, behaviour, content similarity), and map each to the sanction it triggers. The one reusable idea is per-post, per-account performance tracking, which can be done for owned accounts posting different content by hand. A hired person would produce native variants per platform for each real account, which no script should fake.
+- **Stack already covers:** HyperFrames (video compose, captions, render)
+- **Field Notes line:** Account farms put each profile on its own rented phone, and platforms catch them by behaviour and repeated media over time, not by one device check.
+
+### H-0561 TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research
+2026-11-07, arxiv, https://arxiv.org/abs/2611.07962
+
+- **Mechanism:** Every task is scored by something that cannot be argued with: the Lean kernel for proofs, or an executable checker for solvers and constructions. A Lite set of 20 tasks (five per track) cuts attempts by 80%, and its ranking tracks the full set of 100 closely (Spearman 0.93 across eight shared agents). Tasks ship with Docker build recipes so runs can be repeated.
+- **Claim:** A 100-task benchmark of theoretical computer science research scores frontier agents, with the top full-set score at 71.9 and Lite rankings matching Full at rho 0.93.
+- **Testable:** no. Running the tasks needs model answers and there is no local LLM here; only reading the checkers would be possible. Needs: A model to attempt the tasks..
+- **Idea on its own:** sound. Programmatic checking removes grader opinion, and a shown rank correlation is a fair test of whether a smaller set is enough.
+- **How it would be done:** Read the paper's task list and checker design, then note which checker types could be reused for Proteus's own pre-registered questions, where the check is also a number. The rank-correlation step is just a Spearman on two score columns and could be redone from the paper's tables. Running agents on it would need paid model calls.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Lean 4 https://github.com/leanprover/lean4 (The proof kernel that the theorem-proving track relies on.)
+- **Field Notes line:** A benchmark where machine checkers, not judges, score the answers, and a 20-task subset ranks agents almost the same as the full 100.
+
+### H-0559 Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3
+2026-11-07, hn, https://github.com/rivet-dev/rivet
+
+- **Mechanism:** Each agent runs as an actor: a long-lived process holding context in memory, with a durable SQLite database whose pages are stored in S3. When idle the actor hibernates and is woken on the next message, so a sandbox is not kept running per agent. It exposes WebSockets for several clients to share one agent, and is open source and self-hostable, in the style of Cloudflare Durable Objects.
+- **Claim:** Lightweight S3-backed actors replace one heavyweight sandbox per agent, and the team says the model served tens of millions of monthly users in games.
+- **Testable:** yes. Does a local RivetKit actor keep its counter after the process is stopped and restarted, with no cloud account? Queued as P-0357.
+- **Idea on its own:** sound. Separating agent state from compute and hibernating idle agents is a plain cost argument that the Durable Objects model already proved.
+- **How it would be done:** Install the open-source package into the sandbox folder, write a tiny actor that increments a counter, run it locally, kill the process, start it again and read the counter. Then time the cold wake against the warm call. The S3 backing needs a bucket, so only the local file storage path is tested. A hired person would be needed only to run a real cluster.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Rivet https://github.com/rivet-dev/rivet (Open-source actor orchestrator, self-hostable.)
+- **Field Notes line:** Rivet puts each agent in a small actor with SQLite on S3 that sleeps when idle, instead of paying for a sandbox that sits mostly empty.
+
+### H-0558 Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied income
+2026-11-07, vault, https://www.instagram.com/reel/DbPWHkDszu_/
+
+- **Mechanism:** A post asks viewers to comment a keyword. A webhook on the platform's comment events matches the keyword and sends an automatic direct message with a link, usually to an affiliate offer. Because every commenter gets a reply, likes and comments run close to one to one, which is how the automation is spotted. UK advertising rules (CAP Code, ASA rulings) make the advertiser and the influencer both responsible for missing ad labels and implied income.
+- **Claim:** A reel tells viewers to comment CLAUDE for a free tutorial, which leads into an AI companion app's affiliate programme.
+- **Testable:** no. Running it needs a platform business account and messaging API access, and the only testable slice would be a live account. Needs: A business account on the platform with messaging API access..
+- **Idea on its own:** sound. Trigger-word auto-reply is a normal, permitted feature of the platform's own messaging API; the problem is only the undisclosed promotion.
+- **How it would be done:** As an understanding exercise: sample public posts that use a comment keyword, record likes, comments and the ratio, and see how tight the ratio is against posts without a trigger. The data would come from public post pages, though collection at scale needs care with platform terms. Compare the findings with the ASA ruling text on undisclosed affiliate links. A hired person would be needed for any compliance judgement.
+- **Missing:** Nobody has a measured like-to-comment ratio for trigger-word posts versus ordinary posts.
+- **Field Notes line:** Comment-a-word funnels give themselves away: near equal likes and comments, plus an automatic DM, and UK ad rules hit both the brand and the poster.
+
+### H-0555 imraywang/ray-sticker-shop: 一张照片或角色图，生成一整套形象一致的动态表情包和微信投稿素材（Claude Code / Codex skill）
+2026-11-07, github, https://github.com/imraywang/ray-sticker-shop
+
+- **Mechanism:** One reference image is fed to an image model so the character stays the same across a set of poses. The model's output frames are assembled into 240x240 animated GIFs with Pillow, then recompressed until each file is under 500KB. A checker script tests every file against WeChat's size and format rules, and a text step writes the listing copy and a delivery pack.
+- **Claim:** One photo or character image becomes a consistent set of animated stickers packaged to WeChat's spec, about $0.70 for 8 stickers plus 5 extras.
+- **Testable:** yes. Does the repo's GIF packer and spec checker turn a locally made 12-frame animation into a 240x240 GIF under 500KB that its own checker passes? Queued as P-0356.
+- **Idea on its own:** sound. Reference-locked generation plus a deterministic spec checker is a sensible split between the creative step and the rule-bound step.
+- **How it would be done:** Clone the repo into a sandbox folder, make a synthetic 12-frame animation with Pillow so no image model is needed, and run the packer and the checker on it. Record the output size, dimensions and pass or fail for each rule. For the full pipeline, Gemini stills could replace the OpenAI call, with the character held by a reference image. WeChat approval is a human review at the platform and no script covers it.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills)
+- **To fetch:** ray-sticker-shop https://github.com/imraywang/ray-sticker-shop (The skill and its packer and checker scripts.); Pillow https://python-pillow.org (GIF assembly and recompression.)
+- **Field Notes line:** A Claude Code skill locks one character across a sticker set and squeezes the GIFs under WeChat's 500KB limit; the compression step is testable without a key.
+
+### H-0554 University libraries are being swarmed by AI bots, putting public access at risk
+2026-11-07, hn, https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287
+
+- **Mechanism:** Crawlers hit library catalogue and search endpoints, which are expensive per request, so a few thousand automated searches can slow a service meant for the public. The defences in the thread are server-side: per-client rate limits, a polite 429 page, a hard drop (status 444) into an nftables ipset, and logging of TLS curves and ciphers so a client's handshake can be matched against the browser it claims to be. Detection is by behaviour and fingerprint, not by the user agent string.
+- **Claim:** University libraries say AI scraping bots are swamping their search systems and threatening public access.
+- **Testable:** no. Proteus has no access logs of its own to fingerprint, and the thread gives no dataset to check. Needs: Real web server access logs..
+- **Idea on its own:** sound. Rate limiting plus handshake fingerprinting is a standard, well understood way to separate crawlers from browsers.
+- **How it would be done:** To see it work, take a small public site's access log, group requests by client address and by TLS fingerprint (JA3 or JA4), and flag clients whose request rate or fingerprint disagrees with the browser they claim. Then apply a token-bucket limit per client and measure how many flagged clients it slows. The data is the site's own log; the fingerprint libraries are open source. A hired person would be needed only to operate the real server and decide what to block.
+- **To fetch:** JA4 fingerprint spec and tools https://github.com/FoxIO-LLC/ja4 (Open spec for fingerprinting TLS clients from the handshake.)
+- **Field Notes line:** Libraries are being hammered by scrapers, and the cheap defence is a rate limit plus a TLS-fingerprint check, not a blocklist of user agents.
+
+### H-0553 AI model courses titled for OnlyFans but guaranteed against Fanvue
+2026-11-07, vault, https://zupria.com/create-and-monetize-an-ai-onlyfans-model/
+
+- **Mechanism:** A fully synthetic creator persona is built with image and video generators plus a consistent-face reference, then posted to a subscription platform. The money comes from subscriptions and paid messages, so the platform's rules decide whether it can exist: some require a verified real person in the content, others allow declared AI creators. The course ties its refund guarantee to the permissive platform while its title names the strict one.
+- **Claim:** A 19-module course says you can create and monetise an AI model on subscription platforms, with a 30-day earnings guarantee.
+- **Testable:** no. Everything that matters (earnings, platform acceptance) needs a creator account and paid generation tools, and the module on deepfakes of real people is not something to touch. Needs: A creator account on a platform that permits declared AI creators, and paid generation subscriptions..
+- **Idea on its own:** needs-a-run. The persona-generation part is ordinary, but whether any of it earns money depends on platform rules and audience, which only a live account would show.
+- **How it would be done:** Record it as a market map, not a build. The steps would be: list which platforms permit declared AI creators and which require a verified real person, read each platform's current AI disclosure and age-verification terms, and note the UK rules on explicit synthetic imagery and age checks. A consistent synthetic face is a reference-image problem the existing Gemini stills and Claude Code skills could cover. Anything involving a real person's likeness is out of scope. A hired person would be needed for compliance review and for operating any account.
+- **Stack already covers:** Gemini (stills), HyperFrames (video compose, captions, render), ElevenLabs (voice)
+- **Missing:** Nobody has a platform-by-platform table of AI-creator rules with dates and sources.
+- **Field Notes line:** AI-persona subscription courses name the strict platform and guarantee against the lenient one, so the platform's own rules are the real product.
 
 ### H-0552 JosssphZhou/poki: Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.
 2026-11-06, github, https://github.com/JosssphZhou/poki
@@ -4617,6 +4744,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0562 | 2026-11-07 | How account farms and antidetect cloud phones work and how platforms detect them | intel | unsound | no |  |
+| H-0558 | 2026-11-07 | Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied in | intel | sound | no |  |
+| H-0553 | 2026-11-07 | AI model courses titled for OnlyFans but guaranteed against Fanvue | intel | needs-a-run | no |  |
 | H-0550 | 2026-11-06 | claude-shorts long to vertical clips | open | sound | no |  |
 | H-0545 | 2026-11-06 | concept art to playable scene loop | open | sound | no |  |
 | H-0539 | 2026-11-06 | ghost-editor talking-head to captioned reel | open | sound | no |  |
@@ -4736,6 +4866,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0328 | 2026-11-07 | [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | The upstream adapter that cc-remote modifies. | H-0564 (AkaraChen/cc-remote: Claude Code with the model on) | shelf |
+| T-0327 | 2026-11-07 | [cc-remote](https://github.com/AkaraChen/cc-remote) | The ACP bridge itself. | H-0564 (AkaraChen/cc-remote: Claude Code with the model on) | shelf |
+| T-0326 | 2026-11-07 | [Rivet](https://github.com/rivet-dev/rivet) | Open-source actor orchestrator, self-hostable. | H-0559 (Launch HN: Rivet (YC W23) – Scale and Orchestrate ) | shelf |
+| T-0325 | 2026-11-07 | [Pillow](https://python-pillow.org) | GIF assembly and recompression. | H-0555 (imraywang/ray-sticker-shop: 一张照片或角色图，生成一整套形象一致的动态表) | shelf |
+| T-0324 | 2026-11-07 | [ray-sticker-shop](https://github.com/imraywang/ray-sticker-shop) | The skill and its packer and checker scripts. | H-0555 (imraywang/ray-sticker-shop: 一张照片或角色图，生成一整套形象一致的动态表) | shelf |
+| T-0323 | 2026-11-07 | [JA4 fingerprint spec and tools](https://github.com/FoxIO-LLC/ja4) | Open spec for fingerprinting TLS clients from the handshake. | H-0554 (University libraries are being swarmed by AI bots,) | shelf |
 | T-0322 | 2026-11-06 | [poki](https://github.com/JosssphZhou/poki) | The MCP server under test. | H-0552 (JosssphZhou/poki: Let AI agents operate a real iPh) | shelf |
 | T-0321 | 2026-11-06 | [MediaPipe face detection](https://github.com/google-ai-edge/mediapipe) | Free face tracking for the vertical crop. | H-0550 (claude-shorts long to vertical clips) | shelf |
 | T-0320 | 2026-11-06 | [Understat data via understatapi](https://github.com/amosbastian/understat) | Free shot-level xG for the top leagues, to compare with the proxy. | H-0549 (Football statistics - Expected goals - xG - Why Je) | shelf |
@@ -5063,6 +5199,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0560 | 2026-11-07 | github | [duyunzhoudyz/dyz-med-paper-skills: 医学论文写作与科研助手：面向中国医生和医学研究生的 32 个 Agent Skills，适](https://github.com/duyunzhoudyz/dyz-med-paper-skills) | A bundle of writing prompts for medical papers; the only moving part is PubMed search, which is a public API already kno |
+| H-0557 | 2026-11-07 | youtube | [First-Year Car Depreciation: About 20% Gone](https://www.youtube.com/watch?v=4g2MEpcwqv0) | A generic depreciation claim with no mechanism, data source or method behind the 20% figure. |
+| H-0556 | 2026-11-07 | arxiv | [Building Barricades: Red-Teaming Agentic Biosynthesis Planning](https://arxiv.org/abs/2611.08218) | A red-team of toxin biosynthesis planning; no part of the mechanism is worth recording or running here. |
 | H-0551 | 2026-11-06 | hn | [Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM](https://firenook.dev/) | A faster Firebase emulator is a developer-tool product claim with no link to any Proteus desk or interest. |
 | H-0547 | 2026-11-06 | github | [HerdBuilderEstimate/roblox-studio-mcp: Model Context Protocol server for Roblox ](https://github.com/HerdBuilderEstimate/roblox-studio-mcp) | The README's install path is a downloaded .exe to inject, contradicting its own npx claim, with 427 stars on a one-day-o |
 | H-0538 | 2026-11-05 | youtube | [29000 Elo Bot Told Levy Resign 😭](https://www.youtube.com/watch?v=CSn6EXM43gg) | A reaction clip about a chess bot's chat message with no mechanism. |
