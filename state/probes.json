@@ -1,5 +1,5 @@
 {
- "next_id": 355,
+ "next_id": 356,
  "items": [
   {
    "id": "P-0001",
@@ -8829,6 +8829,32 @@
     "number": "METAR minus tenths about -0.3 C in the 12 to 15 UTC hours against about +0.1 C at night",
     "at": "2026-11-07T12:44:12+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0355",
+   "title": "Munich airport break at 19 Apr 2026: DWD's sensor history for 01262 ends its 2011 PT 100 row on 20260419; split P-0347's EDDM METAR high minus 01262 TXK at that date, before v after, beside the same April to October window in 2025, to see if the 2026 drift from -0.22 to +0.04 is the station's change",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-07",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-07T12:45:38+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "gap shift at 19 Apr 2026 about +0.25 C (after minus before), against under 0.1 C for the same split in 2025",
+    "at": "2026-11-07T12:45:56+0000"
    }
   }
  ]
