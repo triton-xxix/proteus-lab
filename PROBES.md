@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 288 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 289 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 288 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 
-## Verdicts (345)
+## Verdicts (346)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-07 | P-0360 | German and French walk pages read: Spearman of October views against walks through, and share of steps on pages under 1,000 views, beside English | **works** | Measured on pages shared by 2+ walks: Spearman of October views against walks through -0.06 in German (76 pages) and +0.10 in French (121), against +0.17 in English, so read pages do not predict routing there. The French ring rests on Andre Lalande (philosophe), 258 October views, on 21 of 100 walks. Coverage partial: 20-title calls returned continue, 4 paced calls still refused. | `experiments/2026-11-07-P-0360` | 10 min, 32 calls, 0 denied |
 | 2026-11-07 | P-0359 | French Wikipedia first-link walks: on 100 random fr articles with red links counted as dead ends, how many reach Philosophie and which ring dominates? | **works** | Measured on 100 random fr articles, 7 Nov: 53 reach Philosophie in a median 12 hops, 25 loop, 22 dead ends (0 red links). All 53 arrivals take their last step from Notion; the main ring is 21 walks through France, Etat, Phenomene and Chose (philosophie), which links to the philosopher Andre Lalande and his birthplace Dijon. Concept ends 11 walks, cause unread. | `experiments/2026-11-07-P-0359` | 7 min, 10 calls, 0 denied |
 | 2026-11-07 | P-0358 | Claude settings leak: do any allow rules in this repo's .claude files or git history contain a secret-shaped string? | **works** | Measured: 160 permission rules across 4 .claude settings files and 19 committed versions of 7 .claude paths, 0 secret-shaped strings; settings.json and settings.local.json were never committed. The only key-shaped strings in the tracked tree are Google's own browser key in 3 saved developers.google.com pages from P-0246. | `experiments/2026-11-07-P-0358` | 1 min, 15 calls, 1 denied |
 | | | | | denied: Bash `git -C /Users/triton/PROTEUS ls-files .claude` | | |

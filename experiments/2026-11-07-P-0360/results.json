@@ -1,0 +1,228 @@
+{
+ "de": {
+  "walk_pages": 319,
+  "views_found": 160,
+  "calls": 33,
+  "batches_with_continue": 16,
+  "missing": [
+   "Filip Mihail?action=edit&redlink=1",
+   "Zed Two?action=edit&redlink=1",
+   "REFUSED small08.json",
+   "REFUSED small14.json"
+  ],
+  "spearman_all": 0.314,
+  "spearman_2plus": -0.059,
+  "pages_2plus": 76,
+  "share_steps_under_1000": 0.0805,
+  "share_pages_under_1000": 0.2687,
+  "median_views": 2298.5,
+  "target_october_views": 11111,
+  "median_views_over_target": 0.2069,
+  "busiest_shared_pages": [
+   {
+    "page": "Philosophie",
+    "walks": 53,
+    "oct_views": 11111
+   },
+   {
+    "page": "Objekt (Philosophie)",
+    "walks": 52,
+    "oct_views": 1132
+   },
+   {
+    "page": "Gesamtheit",
+    "walks": 51,
+    "oct_views": 1052
+   },
+   {
+    "page": "Tatsache",
+    "walks": 51,
+    "oct_views": 1678
+   },
+   {
+    "page": "Welt",
+    "walks": 51,
+    "oct_views": 2534
+   },
+   {
+    "page": "Wirklichkeit",
+    "walks": 51,
+    "oct_views": 1630
+   },
+   {
+    "page": "Wissen",
+    "walks": 50,
+    "oct_views": 3543
+   },
+   {
+    "page": "Wissenschaft",
+    "walks": 50,
+    "oct_views": 6064
+   },
+   {
+    "page": "Gesellschaft (Soziologie)",
+    "walks": 24,
+    "oct_views": 2144
+   },
+   {
+    "page": "Soziologie",
+    "walks": 24,
+    "oct_views": 4747
+   },
+   {
+    "page": "Sozialwissenschaften",
+    "walks": 22,
+    "oct_views": 2244
+   },
+   {
+    "page": "Staat",
+    "walks": 22,
+    "oct_views": 7351
+   }
+  ],
+  "least_read_2plus": [
+   {
+    "page": "Klassische Physik",
+    "walks": 2,
+    "oct_views": 413
+   },
+   {
+    "page": "Liste interkontinentaler Staaten",
+    "walks": 4,
+    "oct_views": 434
+   },
+   {
+    "page": "Juristische Fachsprache",
+    "walks": 4,
+    "oct_views": 447
+   },
+   {
+    "page": "Fähigkeit",
+    "walks": 5,
+    "oct_views": 500
+   },
+   {
+    "page": "Formalwissenschaft",
+    "walks": 5,
+    "oct_views": 639
+   },
+   {
+    "page": "Rückschlagspiel",
+    "walks": 2,
+    "oct_views": 643
+   }
+  ]
+ },
+ "fr": {
+  "walk_pages": 301,
+  "views_found": 175,
+  "calls": 42,
+  "batches_with_continue": 15,
+  "missing": [
+   "REFUSED small08.json",
+   "REFUSED small14.json"
+  ],
+  "spearman_all": 0.031,
+  "spearman_2plus": 0.097,
+  "pages_2plus": 121,
+  "share_steps_under_1000": 0.2013,
+  "share_pages_under_1000": 0.2971,
+  "median_views": 2263,
+  "target_october_views": 16418,
+  "median_views_over_target": 0.1378,
+  "busiest_shared_pages": [
+   {
+    "page": "Notion",
+    "walks": 53,
+    "oct_views": 4379
+   },
+   {
+    "page": "Philosophie",
+    "walks": 53,
+    "oct_views": 16418
+   },
+   {
+    "page": "Connaissance",
+    "walks": 52,
+    "oct_views": 5889
+   },
+   {
+    "page": "Science",
+    "walks": 46,
+    "oct_views": 8585
+   },
+   {
+    "page": "André Lalande (philosophe)",
+    "walks": 21,
+    "oct_views": 258
+   },
+   {
+    "page": "Chose (philosophie)",
+    "walks": 21,
+    "oct_views": 848
+   },
+   {
+    "page": "Commune (France)",
+    "walks": 21,
+    "oct_views": 11210
+   },
+   {
+    "page": "Dijon",
+    "walks": 21,
+    "oct_views": 16859
+   },
+   {
+    "page": "France",
+    "walks": 21,
+    "oct_views": 190399
+   },
+   {
+    "page": "Phénomène",
+    "walks": 21,
+    "oct_views": 1288
+   },
+   {
+    "page": "Système politique",
+    "walks": 21,
+    "oct_views": 1243
+   },
+   {
+    "page": "Systémique",
+    "walks": 21,
+    "oct_views": 2361
+   }
+  ],
+  "least_read_2plus": [
+   {
+    "page": "Jeu (musique)",
+    "walks": 2,
+    "oct_views": 59
+   },
+   {
+    "page": "Liste des modifications phonétiques",
+    "walks": 3,
+    "oct_views": 113
+   },
+   {
+    "page": "Échantillon (matière)",
+    "walks": 5,
+    "oct_views": 131
+   },
+   {
+    "page": "Géosphère",
+    "walks": 3,
+    "oct_views": 145
+   },
+   {
+    "page": "Donnée (statistique)",
+    "walks": 4,
+    "oct_views": 155
+   },
+   {
+    "page": "Preuve scientifique",
+    "walks": 5,
+    "oct_views": 200
+   }
+  ]
+ }
+}

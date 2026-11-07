@@ -1,5 +1,5 @@
 {
- "next_id": 360,
+ "next_id": 361,
  "items": [
   {
    "id": "P-0001",
@@ -8943,6 +8943,28 @@
    ],
    "minutes": 7,
    "calls": 10,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0360",
+   "title": "German and French walk pages read: Spearman of October views against walks through, and share of steps on pages under 1,000 views, beside English",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-07",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-07T23:44:50+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-07T23:55:10+0000",
+   "note": "Measured on pages shared by 2+ walks: Spearman of October views against walks through -0.06 in German (76 pages) and +0.10 in French (121), against +0.17 in English, so read pages do not predict routing there. The French ring rests on Andre Lalande (philosophe), 258 October views, on 21 of 100 walks. Coverage partial: 20-title calls returned continue, 4 paced calls still refused.",
+   "artefacts": [
+    "experiments/2026-11-07-P-0360"
+   ],
+   "minutes": 10,
+   "calls": 32,
    "denied": [],
    "luke": false
   }
