@@ -1,0 +1,231 @@
+{
+ "working_tree": [],
+ "history": [],
+ "files_checked": [
+  ".claude/launch.json",
+  ".claude/settings.json",
+  ".claude/settings.json.staged",
+  ".claude/settings.local.json"
+ ],
+ "rules_checked": 160,
+ "history_all_claude_paths": [
+  ".claude/hooks/unattended-decide.py",
+  ".claude/settings.json.staged",
+  ".claude/skills/backtest-with-luck-test/SKILL.md",
+  ".claude/skills/preregister-a-book/SKILL.md",
+  ".claude/skills/probe-to-verdict/SKILL.md",
+  ".claude/skills/publish-proteus-site/SKILL.md",
+  ".claude/skills/transcribe-video/SKILL.md"
+ ],
+ "history_paths": [
+  ".claude/hooks/unattended-decide.py",
+  ".claude/settings.json.staged"
+ ],
+ "history_versions": 19,
+ "tracked_tree_patterns": {
+  "google_key": [
+   "experiments/2026-10-28-P-0246/deprecations.html",
+   "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "experiments/2026-10-28-P-0246/qanda-rest.html"
+  ]
+ },
+ "tracked_claude": [
+  ".claude/hooks/unattended-decide.py",
+  ".claude/settings.json.staged",
+  ".claude/skills/probe-to-verdict/SKILL.md",
+  ".claude/skills/publish-proteus-site/SKILL.md",
+  ".claude/skills/transcribe-video/SKILL.md"
+ ],
+ "history_paths_count": 2,
+ "tracked_tree_detail": [
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-changelog.html",
+   "line": 1687,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  },
+  {
+   "pattern": "google_key",
+   "file": "experiments/2026-10-28-P-0246/qanda-rest.html",
+   "line": 1643,
+   "masked": "AIza\u2026(39 chars)",
+   "context_hint": "example/placeholder"
+  }
+ ]
+}

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 286 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 287 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,13 @@ Verdicts so far: 286 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
-| P-0358 | Claude settings leak: do any allow rules in this repo's .claude files or git history contain a secret-shaped string? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (343)
+## Verdicts (344)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-07 | P-0358 | Claude settings leak: do any allow rules in this repo's .claude files or git history contain a secret-shaped string? | **works** | Measured: 160 permission rules across 4 .claude settings files and 19 committed versions of 7 .claude paths, 0 secret-shaped strings; settings.json and settings.local.json were never committed. The only key-shaped strings in the tracked tree are Google's own browser key in 3 saved developers.google.com pages from P-0246. | `experiments/2026-11-07-P-0358` | 1 min, 15 calls, 1 denied |
+| | | | | denied: Bash `git -C /Users/triton/PROTEUS ls-files .claude` | | |
 | 2026-11-07 | P-0355 | Munich airport break at 19 Apr 2026: DWD's sensor history for 01262 ends its 2011 PT 100 row on 20260419; split P-0347's EDDM METAR high minus 01262 TXK at that date, before v after, beside the same April to October window in 2025, to see if the 2026 drift from -0.22 to +0.04 is the station's change | **works** | Measured: no break. The 19 Apr 2026 end date was the file, not the station: DWD metadata generated 6 Nov carries the same PT 100 row from 2011 to 5 Nov 2026, site unchanged. Split at 20 Apr, 2026 shifts +0.03 C against a usual +0.12 (2021 to 2025, -0.04 to +0.20); my shot of +0.25 missed. The rise is gradual and already in the winter halves: -0.25, -0.18, -0.19, -0.14, -0.11, +0.03 from 2021 to 2026. Nothing on DWDs side explains it; the METAR side has no metadata here. Next: close (a bis-date in DWD metadata is the generation edge; noted in the README). | `experiments/2026-11-07-P-0355` | 0 min, 8 calls, 0 denied |
 | 2026-11-07 | P-0354 | EGLL METAR cold at the peak? Split P-0352's matched METAR minus SYNOP tenths at Heathrow (October, rounding.py) by hour of day and by the day's warmest three hours, to find where the 0.6 C left after P-0353's sampling share sits | **works** | Measured on 738 matched :20 minutes, October: METAR minus SYNOP tenths -0.16 C at 12 to 15 UTC (shot -0.3), +0.06 at 00 to 05 (shot +0.1); worst 10 to 12 UTC at -0.30, positive every hour from 17 to 03. Warmest three hours -0.17 v 0.00 elsewhere (se about 0.06). The METAR lags the air: cold while it warms, warm while it cools. With P-0353s 0.33 C from sampling that covers roughly 0.5 to 0.6 of the 0.93 C gap. October and :20 only. Next: close (Heathrow METAR gap is mostly sampling plus lag; the settle rule work in D-023 can use it). | `experiments/2026-11-07-P-0354` | 0 min, 7 calls, 0 denied |
 | 2026-11-07 | P-0353 | Heathrow peak sampling: from the cached October 10-minute SYNOPs for 03772, the daily max of the tenths at :20 and :50 only against the full 10-minute daily max and the SYNOP TX; how much of P-0346's 0.93 C METAR gap does sampling alone explain (P-0352 ruled out truncation) | **works** | Measured on 28 October days at 03772: half-hourly sampled max sits 0.16 C under the full 10-minute max (shot 0.25), that 0.19 C under SYNOP TX (shot 0.3); rounded half-hourly max minus TX -0.33 C, sd 0.34. Sampling explains about a third of P-0346s 0.93 C METAR gap; about 0.6 C sits in the METAR reading itself. The cache has no :50 reports, so :00 and :30 stand in for the :20 and :50 METAR minutes, and P-0352 matched half for that reason. Next: deepen (queue an hour-of-day split of P-0352s METAR minus tenths, to see if METAR runs cold by afternoon). | `experiments/2026-11-07-P-0353` | 1 min, 11 calls, 0 denied |
