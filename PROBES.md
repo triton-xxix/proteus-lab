@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 287 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 288 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 287 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 
-## Verdicts (344)
+## Verdicts (345)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-07 | P-0359 | French Wikipedia first-link walks: on 100 random fr articles with red links counted as dead ends, how many reach Philosophie and which ring dominates? | **works** | Measured on 100 random fr articles, 7 Nov: 53 reach Philosophie in a median 12 hops, 25 loop, 22 dead ends (0 red links). All 53 arrivals take their last step from Notion; the main ring is 21 walks through France, Etat, Phenomene and Chose (philosophie), which links to the philosopher Andre Lalande and his birthplace Dijon. Concept ends 11 walks, cause unread. | `experiments/2026-11-07-P-0359` | 7 min, 10 calls, 0 denied |
 | 2026-11-07 | P-0358 | Claude settings leak: do any allow rules in this repo's .claude files or git history contain a secret-shaped string? | **works** | Measured: 160 permission rules across 4 .claude settings files and 19 committed versions of 7 .claude paths, 0 secret-shaped strings; settings.json and settings.local.json were never committed. The only key-shaped strings in the tracked tree are Google's own browser key in 3 saved developers.google.com pages from P-0246. | `experiments/2026-11-07-P-0358` | 1 min, 15 calls, 1 denied |
 | | | | | denied: Bash `git -C /Users/triton/PROTEUS ls-files .claude` | | |
 | 2026-11-07 | P-0355 | Munich airport break at 19 Apr 2026: DWD's sensor history for 01262 ends its 2011 PT 100 row on 20260419; split P-0347's EDDM METAR high minus 01262 TXK at that date, before v after, beside the same April to October window in 2025, to see if the 2026 drift from -0.22 to +0.04 is the station's change | **works** | Measured: no break. The 19 Apr 2026 end date was the file, not the station: DWD metadata generated 6 Nov carries the same PT 100 row from 2011 to 5 Nov 2026, site unchanged. Split at 20 Apr, 2026 shifts +0.03 C against a usual +0.12 (2021 to 2025, -0.04 to +0.20); my shot of +0.25 missed. The rise is gradual and already in the winter halves: -0.25, -0.18, -0.19, -0.14, -0.11, +0.03 from 2021 to 2026. Nothing on DWDs side explains it; the METAR side has no metadata here. Next: close (a bis-date in DWD metadata is the generation edge; noted in the README). | `experiments/2026-11-07-P-0355` | 0 min, 8 calls, 0 denied |

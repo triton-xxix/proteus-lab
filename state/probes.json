@@ -1,5 +1,5 @@
 {
- "next_id": 359,
+ "next_id": 360,
  "items": [
   {
    "id": "P-0001",
@@ -8922,6 +8922,28 @@
    "denied": [
     "Bash `git -C /Users/triton/PROTEUS ls-files .claude`"
    ],
+   "luke": false
+  },
+  {
+   "id": "P-0359",
+   "title": "French Wikipedia first-link walks: on 100 random fr articles with red links counted as dead ends, how many reach Philosophie and which ring dominates?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-07",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-07T23:37:01+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-07T23:44:21+0000",
+   "note": "Measured on 100 random fr articles, 7 Nov: 53 reach Philosophie in a median 12 hops, 25 loop, 22 dead ends (0 red links). All 53 arrivals take their last step from Notion; the main ring is 21 walks through France, Etat, Phenomene and Chose (philosophie), which links to the philosopher Andre Lalande and his birthplace Dijon. Concept ends 11 walks, cause unread.",
+   "artefacts": [
+    "experiments/2026-11-07-P-0359"
+   ],
+   "minutes": 7,
+   "calls": 10,
+   "denied": [],
    "luke": false
   }
  ]

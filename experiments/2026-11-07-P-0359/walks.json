@@ -1,0 +1,1966 @@
+{
+ "at": "2026-11-07T23:43:58Z",
+ "asked": 100,
+ "walked": 100,
+ "stopped_early": null,
+ "pages_fetched": 404,
+ "refusals_429": 0,
+ "secs": 391,
+ "outcomes": {
+  "philosophy": 53,
+  "dead end": 22,
+  "loop": 25
+ },
+ "reached": 53,
+ "median_hops": 12,
+ "hop0_deaths": 6,
+ "rings": [
+  [
+   "André Lalande (philosophe) > Dijon > Commune (France) > France > État > Système politique > Systémique > Phénomène > Chose (philosophie)",
+   21
+  ],
+  [
+   "Dynastie alaouite > Maroc > Empire chérifien",
+   1
+  ],
+  [
+   "Enseignement supérieur > Université",
+   1
+  ],
+  [
+   "Contrôle de la circulation aérienne > Contrôleur aérien",
+   1
+  ],
+  [
+   "Compositeur > Compositrice",
+   1
+  ]
+ ],
+ "dead_ends": [
+  [
+   "Concept",
+   11
+  ],
+  [
+   "Objet",
+   3
+  ],
+  [
+   "Lignage",
+   1
+  ],
+  [
+   "Liplje",
+   1
+  ],
+  [
+   "Rio della Croce",
+   1
+  ],
+  [
+   "1916 au cinéma",
+   1
+  ],
+  [
+   "Kurt Sowinetz",
+   1
+  ],
+  [
+   "Addison",
+   1
+  ],
+  [
+   "Liste des sénateurs de Seine-et-Oise",
+   1
+  ],
+  [
+   "Marina von Ditmar",
+   1
+  ]
+ ],
+ "last_step": [
+  [
+   "Notion",
+   53
+  ]
+ ],
+ "most_shared_by_arrivals": [
+  [
+   "Notion",
+   53
+  ],
+  [
+   "Connaissance",
+   52
+  ],
+  [
+   "Science",
+   46
+  ],
+  [
+   "Biologie",
+   17
+  ],
+  [
+   "Espèce",
+   14
+  ],
+  [
+   "Discipline scientifique",
+   14
+  ]
+ ],
+ "fetch_error_titles": [],
+ "rows": [
+  {
+   "start": "Cloche de station",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "Cloche de station",
+    "Gokishichidō",
+    "Japon",
+    "État insulaire",
+    "Liste des pays du monde",
+    "Organisation des Nations unies",
+    "Organisation internationale",
+    "Droit international public",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Kepler-154 e",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "Kepler-154 e",
+    "Super-Terre",
+    "Exoplanète",
+    "Planète",
+    "Objet céleste",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Explosion de la Coubre",
+   "outcome": "dead end",
+   "hops": 11,
+   "path": [
+    "Explosion de la Coubre",
+    "La Havane",
+    "Capitale",
+    "Ville",
+    "Densité de population",
+    "Démographie",
+    "Population",
+    "Recensement de la population",
+    "Statistique",
+    "Donnée (statistique)",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Ville royale du royaume de Bohême",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Ville royale du royaume de Bohême",
+    "Royaume de Bohême",
+    "Royaume",
+    "Politique",
+    "Polysémie",
+    "Mot",
+    "Syllabe",
+    "Voyelle",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Son dernier printemps",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "Son dernier printemps",
+    "Cinéma américain",
+    "Cinéma",
+    "Spectacle vivant",
+    "Actant (sociologie)",
+    "Théorie de l'acteur-réseau",
+    "Sociologie",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Henry Muddiman",
+   "outcome": "dead end",
+   "hops": 4,
+   "path": [
+    "Henry Muddiman",
+    "Journaliste",
+    "Actualité",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Communauté d'agglomération Pays de Meaux",
+   "outcome": "loop",
+   "hops": 12,
+   "path": [
+    "Communauté d'agglomération Pays de Meaux",
+    "Communauté d'agglomération",
+    "Établissement public de coopération intercommunale",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France"
+   ]
+  },
+  {
+   "start": "Léo Ferré au Théâtre des Champs-Élysées",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Léo Ferré au Théâtre des Champs-Élysées",
+    "Léo Ferré",
+    "Monaco",
+    "État en droit international",
+    "Droit international public",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Peter Bialobrzeski",
+   "outcome": "loop",
+   "hops": 13,
+   "path": [
+    "Peter Bialobrzeski",
+    "Wolfsburg",
+    "Ville-arrondissement",
+    "Allemagne",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "F 16 (sous-marin)",
+   "outcome": "dead end",
+   "hops": 19,
+   "path": [
+    "F 16 (sous-marin)",
+    "Sous-marin",
+    "Navire",
+    "Bateau",
+    "Eau",
+    "Substance chimique",
+    "Échantillon (matière)",
+    "Liste de propriétés d'un matériau",
+    "Extensivité et intensivité (physique)",
+    "Grandeur physique",
+    "Phénomène physique",
+    "Observation",
+    "Preuve scientifique",
+    "Preuve",
+    "Fait",
+    "Événement (histoire)",
+    "Historiographie",
+    "Source d'information",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Hasmonéens",
+   "outcome": "dead end",
+   "hops": 2,
+   "path": [
+    "Hasmonéens",
+    "Dynastie",
+    "Lignage"
+   ]
+  },
+  {
+   "start": "Hanover Township (comté de Crawford, Iowa)",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "Hanover Township (comté de Crawford, Iowa)",
+    "Township (États-Unis)",
+    "États-Unis",
+    "Liste des États transcontinentaux",
+    "Continent",
+    "Sol (pédologie)",
+    "Géosphère",
+    "Terre",
+    "Planète",
+    "Objet céleste",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "NGC 5044",
+   "outcome": "philosophy",
+   "hops": 9,
+   "path": [
+    "NGC 5044",
+    "Galaxie elliptique",
+    "Galaxie",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "VfL Sindelfingen Ladies",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "VfL Sindelfingen Ladies",
+    "Football",
+    "Apocope",
+    "Liste des modifications phonétiques",
+    "Phonétique articulatoire",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Siouville-Hague",
+   "outcome": "loop",
+   "hops": 10,
+   "path": [
+    "Siouville-Hague",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Liste des gouverneurs du kraï du Kamtchatka",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "Liste des gouverneurs du kraï du Kamtchatka",
+    "Kraï du Kamtchatka",
+    "Sujet de la fédération de Russie",
+    "Russie",
+    "Pays",
+    "Territoire",
+    "Polysémie",
+    "Mot",
+    "Syllabe",
+    "Voyelle",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Habitat 76",
+   "outcome": "loop",
+   "hops": 13,
+   "path": [
+    "Habitat 76",
+    "Organisme d'habitations à loyer modéré (France)",
+    "Habitation à bon marché",
+    "Habitation à loyer modéré (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France"
+   ]
+  },
+  {
+   "start": "Liplje",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Liplje"
+   ]
+  },
+  {
+   "start": "Rio della Croce",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Rio della Croce"
+   ]
+  },
+  {
+   "start": "Rockville Township (Missouri)",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "Rockville Township (Missouri)",
+    "Township (États-Unis)",
+    "États-Unis",
+    "Liste des États transcontinentaux",
+    "Continent",
+    "Sol (pédologie)",
+    "Géosphère",
+    "Terre",
+    "Planète",
+    "Objet céleste",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Nabil al-Sharbaji",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Nabil al-Sharbaji",
+    "Daraya (Syrie)",
+    "Syrie",
+    "Liste des pays du monde",
+    "Organisation des Nations unies",
+    "Organisation internationale",
+    "Droit international public",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Albert Allen",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "Albert Allen",
+    "Football",
+    "Apocope",
+    "Liste des modifications phonétiques",
+    "Phonétique articulatoire",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Doha Moustaquim",
+   "outcome": "loop",
+   "hops": 6,
+   "path": [
+    "Doha Moustaquim",
+    "Casablanca",
+    "Liste des villes du Maroc",
+    "Maroc",
+    "Empire chérifien",
+    "Dynastie alaouite",
+    "Maroc"
+   ]
+  },
+  {
+   "start": "Ursem",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "Ursem",
+    "Pays-Bas",
+    "Métonymie",
+    "Figure de style",
+    "Latin",
+    "Langue",
+    "Système",
+    "Ensemble",
+    "Mathématiques",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Regarde-moi (émission de télévision)",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Regarde-moi (émission de télévision)",
+    "Émission de télévision",
+    "Audiovisuel",
+    "Matériel photographique",
+    "Photographie",
+    "Arts visuels",
+    "Art",
+    "Sens (physiologie)",
+    "Physiologie",
+    "Organisme (physiologie)",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Ctenotus angusticeps",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Ctenotus angusticeps",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Suzanne Rey",
+   "outcome": "loop",
+   "hops": 14,
+   "path": [
+    "Suzanne Rey",
+    "Paris",
+    "Capitale de la France",
+    "Constitution française du 4 octobre 1958",
+    "Constitution",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Liste des présidents de la Grèce",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "Liste des présidents de la Grèce",
+    "Président de la République hellénique",
+    "Chef d'État",
+    "Personne physique",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Paysage glaciaire",
+   "outcome": "dead end",
+   "hops": 18,
+   "path": [
+    "Paysage glaciaire",
+    "Glacier",
+    "Glace",
+    "Eau",
+    "Substance chimique",
+    "Échantillon (matière)",
+    "Liste de propriétés d'un matériau",
+    "Extensivité et intensivité (physique)",
+    "Grandeur physique",
+    "Phénomène physique",
+    "Observation",
+    "Preuve scientifique",
+    "Preuve",
+    "Fait",
+    "Événement (histoire)",
+    "Historiographie",
+    "Source d'information",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Porebrice (Gradačac)",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Porebrice (Gradačac)",
+    "Bosnie-Herzégovine",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Mesh (groupe)",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Mesh (groupe)",
+    "Groupe musical",
+    "Interprète (musique)",
+    "Musicien",
+    "Jeu (musique)",
+    "Musique",
+    "Art",
+    "Sens (physiologie)",
+    "Physiologie",
+    "Organisme (physiologie)",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Sharp MZ-80K",
+   "outcome": "philosophy",
+   "hops": 8,
+   "path": [
+    "Sharp MZ-80K",
+    "Ordinateur",
+    "Système de traitement de l'information",
+    "Système",
+    "Ensemble",
+    "Mathématiques",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Tour de Crest",
+   "outcome": "loop",
+   "hops": 15,
+   "path": [
+    "Tour de Crest",
+    "Donjon",
+    "Tour (fortification)",
+    "Fortification",
+    "Militaire",
+    "Forces armées",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Le Papa du prix d'honneur",
+   "outcome": "loop",
+   "hops": 15,
+   "path": [
+    "Le Papa du prix d'honneur",
+    "Eugène Labiche",
+    "Paris",
+    "Capitale de la France",
+    "Constitution française du 4 octobre 1958",
+    "Constitution",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Liste de films français sortis en 1916",
+   "outcome": "dead end",
+   "hops": 1,
+   "path": [
+    "Liste de films français sortis en 1916",
+    "1916 au cinéma"
+   ]
+  },
+  {
+   "start": "Sinus Aestuum",
+   "outcome": "philosophy",
+   "hops": 10,
+   "path": [
+    "Sinus Aestuum",
+    "Mer lunaire",
+    "Latin contemporain",
+    "Latin",
+    "Langue",
+    "Système",
+    "Ensemble",
+    "Mathématiques",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "District de Mendrisio",
+   "outcome": "loop",
+   "hops": 13,
+   "path": [
+    "District de Mendrisio",
+    "Canton du Tessin",
+    "Canton (Suisse)",
+    "État fédéré",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Odile Barré",
+   "outcome": "dead end",
+   "hops": 21,
+   "path": [
+    "Odile Barré",
+    "Biskra",
+    "Sahara algérien",
+    "Sahara",
+    "Désert",
+    "Précipitations",
+    "Eau",
+    "Substance chimique",
+    "Échantillon (matière)",
+    "Liste de propriétés d'un matériau",
+    "Extensivité et intensivité (physique)",
+    "Grandeur physique",
+    "Phénomène physique",
+    "Observation",
+    "Preuve scientifique",
+    "Preuve",
+    "Fait",
+    "Événement (histoire)",
+    "Historiographie",
+    "Source d'information",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Église Saint-Jean-Baptiste de Long",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Église Saint-Jean-Baptiste de Long",
+    "Église (édifice)",
+    "Lieu de culte",
+    "Bâtiment (construction)",
+    "Bien immobilier",
+    "Bien (économie)",
+    "Besoin primaire",
+    "Homo",
+    "Genre (biologie)",
+    "Systématique",
+    "Science de la nature",
+    "Monde (univers)",
+    "Espace (sciences sociales)",
+    "Géographie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "NGC 4775",
+   "outcome": "philosophy",
+   "hops": 9,
+   "path": [
+    "NGC 4775",
+    "Galaxie spirale",
+    "Galaxie",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Zily",
+   "outcome": "philosophy",
+   "hops": 10,
+   "path": [
+    "Zily",
+    "Auteur-compositeur-interprète",
+    "Personne physique",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Stary Jarosław",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Stary Jarosław",
+    "Pologne",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Microtityus franckei",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Microtityus franckei",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Église Saint-Pierre de Gréolières",
+   "outcome": "philosophy",
+   "hops": 17,
+   "path": [
+    "Église Saint-Pierre de Gréolières",
+    "Église (édifice)",
+    "Lieu de culte",
+    "Bâtiment (construction)",
+    "Bien immobilier",
+    "Bien (économie)",
+    "Besoin primaire",
+    "Homo",
+    "Genre (biologie)",
+    "Systématique",
+    "Science de la nature",
+    "Monde (univers)",
+    "Espace (sciences sociales)",
+    "Géographie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Burhan Qurbani",
+   "outcome": "philosophy",
+   "hops": 9,
+   "path": [
+    "Burhan Qurbani",
+    "Hazara",
+    "Persan",
+    "Langue",
+    "Système",
+    "Ensemble",
+    "Mathématiques",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Hiéroglyphe égyptien F51D",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Hiéroglyphe égyptien F51D",
+    "Écriture hiéroglyphique égyptienne",
+    "Système d'écriture",
+    "Signe (écriture)",
+    "Écriture",
+    "Communication",
+    "Interaction",
+    "Influence (psychologie)",
+    "Psychologie",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Île Reach",
+   "outcome": "dead end",
+   "hops": 17,
+   "path": [
+    "Île Reach",
+    "Île",
+    "Eau",
+    "Substance chimique",
+    "Échantillon (matière)",
+    "Liste de propriétés d'un matériau",
+    "Extensivité et intensivité (physique)",
+    "Grandeur physique",
+    "Phénomène physique",
+    "Observation",
+    "Preuve scientifique",
+    "Preuve",
+    "Fait",
+    "Événement (histoire)",
+    "Historiographie",
+    "Source d'information",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Maison La Taverne",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Maison La Taverne",
+    "Barou-en-Auge",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Jack Willis",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Jack Willis",
+    "24 décembre en sport",
+    "24 décembre",
+    "Jour",
+    "Temps",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "District de Ccatca",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "District de Ccatca",
+    "Pérou",
+    "Amérique du Sud",
+    "Sous-continent",
+    "Continent",
+    "Sol (pédologie)",
+    "Géosphère",
+    "Terre",
+    "Planète",
+    "Objet céleste",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Esteban Carpio",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Esteban Carpio",
+    "Emprisonnement à perpétuité",
+    "Crime",
+    "Infraction",
+    "Loi",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Mesembryanthemum",
+   "outcome": "philosophy",
+   "hops": 10,
+   "path": [
+    "Mesembryanthemum",
+    "Genre (biologie)",
+    "Systématique",
+    "Science de la nature",
+    "Monde (univers)",
+    "Espace (sciences sociales)",
+    "Géographie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Nyl Yakura",
+   "outcome": "dead end",
+   "hops": 12,
+   "path": [
+    "Nyl Yakura",
+    "Scarborough (Ontario)",
+    "Toronto",
+    "Capitale",
+    "Ville",
+    "Densité de population",
+    "Démographie",
+    "Population",
+    "Recensement de la population",
+    "Statistique",
+    "Donnée (statistique)",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Kurt Sowinetz",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Kurt Sowinetz"
+   ]
+  },
+  {
+   "start": "Tommy Smith (football, 1990)",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Tommy Smith (football, 1990)",
+    "Footballeur",
+    "Football",
+    "Apocope",
+    "Liste des modifications phonétiques",
+    "Phonétique articulatoire",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Torpille Helmover",
+   "outcome": "dead end",
+   "hops": 19,
+   "path": [
+    "Torpille Helmover",
+    "Torpille",
+    "Navire",
+    "Bateau",
+    "Eau",
+    "Substance chimique",
+    "Échantillon (matière)",
+    "Liste de propriétés d'un matériau",
+    "Extensivité et intensivité (physique)",
+    "Grandeur physique",
+    "Phénomène physique",
+    "Observation",
+    "Preuve scientifique",
+    "Preuve",
+    "Fait",
+    "Événement (histoire)",
+    "Historiographie",
+    "Source d'information",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Lamar (Texas)",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "Lamar (Texas)",
+    "Comté d'Aransas",
+    "Alphabet phonétique international",
+    "Alphabet",
+    "Système d'écriture",
+    "Signe (écriture)",
+    "Écriture",
+    "Communication",
+    "Interaction",
+    "Influence (psychologie)",
+    "Psychologie",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Borgvattnet",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Borgvattnet",
+    "Ragunda",
+    "Suède",
+    "Liste des pays du monde",
+    "Organisation des Nations unies",
+    "Organisation internationale",
+    "Droit international public",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Dritan Abazović",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Dritan Abazović",
+    "Ulcinj",
+    "Monténégro",
+    "Liste des pays du monde",
+    "Organisation des Nations unies",
+    "Organisation internationale",
+    "Droit international public",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Campagne (Dordogne)",
+   "outcome": "loop",
+   "hops": 10,
+   "path": [
+    "Campagne (Dordogne)",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Université de Cantabrie",
+   "outcome": "loop",
+   "hops": 4,
+   "path": [
+    "Université de Cantabrie",
+    "Université publique",
+    "Université",
+    "Enseignement supérieur",
+    "Université"
+   ]
+  },
+  {
+   "start": "Musée de la ville de Prague",
+   "outcome": "dead end",
+   "hops": 11,
+   "path": [
+    "Musée de la ville de Prague",
+    "Prague",
+    "Capitale",
+    "Ville",
+    "Densité de population",
+    "Démographie",
+    "Population",
+    "Recensement de la population",
+    "Statistique",
+    "Donnée (statistique)",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Julinho (football, 1929)",
+   "outcome": "dead end",
+   "hops": 10,
+   "path": [
+    "Julinho (football, 1929)",
+    "São Paulo",
+    "Ville",
+    "Densité de population",
+    "Démographie",
+    "Population",
+    "Recensement de la population",
+    "Statistique",
+    "Donnée (statistique)",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Thèque",
+   "outcome": "philosophy",
+   "hops": 5,
+   "path": [
+    "Thèque",
+    "Botanique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Premier ministre du Gabon",
+   "outcome": "philosophy",
+   "hops": 11,
+   "path": [
+    "Premier ministre du Gabon",
+    "Chef du gouvernement",
+    "Gouvernement",
+    "Loi",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "She-Male Trouble",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "She-Male Trouble",
+    "Groupe musical",
+    "Interprète (musique)",
+    "Musicien",
+    "Jeu (musique)",
+    "Musique",
+    "Art",
+    "Sens (physiologie)",
+    "Physiologie",
+    "Organisme (physiologie)",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Ambrogio Lorenzetti",
+   "outcome": "loop",
+   "hops": 13,
+   "path": [
+    "Ambrogio Lorenzetti",
+    "Sienne",
+    "Liste des villes d'Italie par nombre d'habitants",
+    "Italie",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Louis-Joseph Janvier",
+   "outcome": "dead end",
+   "hops": 4,
+   "path": [
+    "Louis-Joseph Janvier",
+    "Journaliste",
+    "Actualité",
+    "Information",
+    "Concept"
+   ]
+  },
+  {
+   "start": "Xavier Boussiron",
+   "outcome": "dead end",
+   "hops": 7,
+   "path": [
+    "Xavier Boussiron",
+    "Metteur en scène",
+    "Mise en scène",
+    "André Antoine (homme de théâtre)",
+    "Acteur",
+    "Artiste",
+    "Œuvre d'art",
+    "Objet"
+   ]
+  },
+  {
+   "start": "National Institute of Mental Health",
+   "outcome": "philosophy",
+   "hops": 9,
+   "path": [
+    "National Institute of Mental Health",
+    "Trouble psychique",
+    "Souffrance",
+    "Valence (psychologie)",
+    "Psychologie",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Love Impact",
+   "outcome": "philosophy",
+   "hops": 10,
+   "path": [
+    "Love Impact",
+    "Single (musique)",
+    "Prononciation du français",
+    "Phonème",
+    "Phonologie",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Ginori 1735",
+   "outcome": "loop",
+   "hops": 14,
+   "path": [
+    "Ginori 1735",
+    "Manufacture de Doccia",
+    "Florence",
+    "Liste des villes d'Italie par nombre d'habitants",
+    "Italie",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Cheiracanthium minusculum",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Cheiracanthium minusculum",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Sicko Heldoorn",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "Sicko Heldoorn",
+    "Parti travailliste (Pays-Bas)",
+    "Liste des partis politiques aux Pays-Bas",
+    "Parti politique",
+    "Politique",
+    "Polysémie",
+    "Mot",
+    "Syllabe",
+    "Voyelle",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Addison",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Addison"
+   ]
+  },
+  {
+   "start": "Opération Morvarid",
+   "outcome": "loop",
+   "hops": 13,
+   "path": [
+    "Opération Morvarid",
+    "Marine de la république islamique d'Iran",
+    "Marine de guerre",
+    "Forces armées",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État"
+   ]
+  },
+  {
+   "start": "Saison 1953-1954 de la WHL",
+   "outcome": "loop",
+   "hops": 14,
+   "path": [
+    "Saison 1953-1954 de la WHL",
+    "1953 en hockey sur glace",
+    "Hockey sur glace",
+    "Sport collectif",
+    "Sport",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène"
+   ]
+  },
+  {
+   "start": "Gatsby (sandwich)",
+   "outcome": "philosophy",
+   "hops": 13,
+   "path": [
+    "Gatsby (sandwich)",
+    "Afrique du Sud",
+    "Liste des pays du monde",
+    "Organisation des Nations unies",
+    "Organisation internationale",
+    "Droit international public",
+    "Droit",
+    "Homo sapiens",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Ludvig Lorenz",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Ludvig Lorenz",
+    "Physicien",
+    "Scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Le Molosse",
+   "outcome": "philosophy",
+   "hops": 16,
+   "path": [
+    "Le Molosse",
+    "Nouvelle",
+    "Moyen Âge",
+    "Histoire de l'Europe",
+    "Europe",
+    "Territoire",
+    "Polysémie",
+    "Mot",
+    "Syllabe",
+    "Voyelle",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Système de contrôle automatisé du trafic aérien",
+   "outcome": "loop",
+   "hops": 3,
+   "path": [
+    "Système de contrôle automatisé du trafic aérien",
+    "Contrôleur aérien",
+    "Contrôle de la circulation aérienne",
+    "Contrôleur aérien"
+   ]
+  },
+  {
+   "start": "Pierre-Marie Auzas",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Pierre-Marie Auzas",
+    "Aubenas",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Belnet",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Belnet",
+    "Réseau national de la recherche et de l'enseignement",
+    "École",
+    "Enseignant",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "(10390) Lenka",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "(10390) Lenka",
+    "Astéroïde",
+    "Planète mineure",
+    "Soleil",
+    "Étoile",
+    "Objet céleste",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Aeromonas salmonicida",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Aeromonas salmonicida",
+    "Espèce",
+    "Biologie",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Pierre Deluns-Montaud",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Pierre Deluns-Montaud",
+    "Allemans-du-Dropt",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Liste d'astéroïdes ayant frôlé la Terre",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Liste d'astéroïdes ayant frôlé la Terre",
+    "Astéroïde",
+    "Planète mineure",
+    "Soleil",
+    "Étoile",
+    "Objet céleste",
+    "Univers",
+    "Cosmologie",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Giovan Betto",
+   "outcome": "dead end",
+   "hops": 4,
+   "path": [
+    "Giovan Betto",
+    "Architecte",
+    "Artiste",
+    "Œuvre d'art",
+    "Objet"
+   ]
+  },
+  {
+   "start": "Génération d'ondes térahertz par différence de fréquence",
+   "outcome": "philosophy",
+   "hops": 6,
+   "path": [
+    "Génération d'ondes térahertz par différence de fréquence",
+    "Onde électromagnétique",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Lycée du Parc-Impérial",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Lycée du Parc-Impérial",
+    "Nice",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Joseph Conlan",
+   "outcome": "loop",
+   "hops": 3,
+   "path": [
+    "Joseph Conlan",
+    "Compositeur",
+    "Compositrice",
+    "Compositeur"
+   ]
+  },
+  {
+   "start": "Liste des sénateurs de Seine-et-Oise",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Liste des sénateurs de Seine-et-Oise"
+   ]
+  },
+  {
+   "start": "Biomass (satellite)",
+   "outcome": "philosophy",
+   "hops": 14,
+   "path": [
+    "Biomass (satellite)",
+    "Satellite d'observation de la Terre",
+    "Satellite artificiel",
+    "Espace (cosmologie)",
+    "Atmosphère terrestre",
+    "Gaz",
+    "Atome",
+    "Corps simple",
+    "Corps pur",
+    "Matière",
+    "Physique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Pottermore",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "Pottermore",
+    "Site web",
+    "Page web",
+    "World Wide Web",
+    "Hypertexte",
+    "Texte",
+    "Mot",
+    "Syllabe",
+    "Voyelle",
+    "Phonétique",
+    "Linguistique",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "David Gulpilil",
+   "outcome": "dead end",
+   "hops": 4,
+   "path": [
+    "David Gulpilil",
+    "Acteur",
+    "Artiste",
+    "Œuvre d'art",
+    "Objet"
+   ]
+  },
+  {
+   "start": "Louis Dubosquet",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Louis Dubosquet",
+    "Ambérac",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  },
+  {
+   "start": "Walter Russell",
+   "outcome": "philosophy",
+   "hops": 12,
+   "path": [
+    "Walter Russell",
+    "Nikola Tesla",
+    "Smiljan",
+    "Croatie",
+    "Croate",
+    "Langue standard",
+    "Langue",
+    "Système",
+    "Ensemble",
+    "Mathématiques",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Marina von Ditmar",
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Marina von Ditmar"
+   ]
+  },
+  {
+   "start": "La Vie merveilleuse de Bernadette",
+   "outcome": "philosophy",
+   "hops": 15,
+   "path": [
+    "La Vie merveilleuse de Bernadette",
+    "Cinéma français",
+    "Histoire du cinéma",
+    "Antiquité",
+    "Périodisation",
+    "Histoire",
+    "Écriture",
+    "Communication",
+    "Interaction",
+    "Influence (psychologie)",
+    "Psychologie",
+    "Discipline scientifique",
+    "Science",
+    "Connaissance",
+    "Notion",
+    "Philosophie"
+   ]
+  },
+  {
+   "start": "Barbe (dessinateur)",
+   "outcome": "loop",
+   "hops": 11,
+   "path": [
+    "Barbe (dessinateur)",
+    "Nîmes",
+    "Commune (France)",
+    "France",
+    "État",
+    "Système politique",
+    "Systémique",
+    "Phénomène",
+    "Chose (philosophie)",
+    "André Lalande (philosophe)",
+    "Dijon",
+    "Commune (France)"
+   ]
+  }
+ ]
+}
