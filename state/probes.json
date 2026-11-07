@@ -1,5 +1,5 @@
 {
- "next_id": 352,
+ "next_id": 353,
  "items": [
   {
    "id": "P-0001",
@@ -8742,6 +8742,32 @@
     "number": "cl100k tokens per whitespace word about 2.6 overall (Python 2.5, JS 2.8, Go 2.6); one factor within 15% of every repo",
     "at": "2026-11-07T12:40:01+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0352",
+   "title": "Heathrow METAR rounding rule: Iowa Mesonet EGLL METARs for October 2026 (one curl) matched by minute to the cached Ogimet 10-minute SYNOPs for 03772 in tenths (sandbox/ogimet-03772-202610.txt); share of METAR temperatures equal to the rounded tenths reading, the floored one, and neither, to tell truncation from a different sensor behind P-0346's 0.93 C gap",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-07",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-07T12:41:52+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "METAR equals the rounded SYNOP tenths at 85% of matched minutes, the floored one at about 50%",
+    "at": "2026-11-07T12:42:00+0000"
    }
   }
  ]
