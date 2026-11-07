@@ -1,17 +1,17 @@
 {
  "summary": {
-  "n": 327,
+  "n": 337,
   "by_verdict": {
-   "works": 272,
+   "works": 280,
    "not-worth-it": 16,
-   "blocked": 34,
-   "broken": 5
+   "blocked": 35,
+   "broken": 6
   },
-  "open": 8,
+  "open": 9,
   "killed": 4,
-  "minutes_total": 507,
+  "minutes_total": 521,
   "minutes_median": 1,
-  "calls_total": 3668,
+  "calls_total": 3767,
   "pages": 6,
   "first": "2026-09-24",
   "last": "2026-11-06"
@@ -19,11 +19,19 @@
  "by_source": [
   {
    "source": "refill",
-   "n": 103,
-   "works": 97,
+   "n": 109,
+   "works": 102,
    "not-worth-it": 2,
-   "blocked": 4,
+   "blocked": 5,
    "broken": 0
+  },
+  {
+   "source": "harvest",
+   "n": 83,
+   "works": 66,
+   "not-worth-it": 2,
+   "blocked": 10,
+   "broken": 5
   },
   {
    "source": "desk",
@@ -32,14 +40,6 @@
    "not-worth-it": 5,
    "blocked": 9,
    "broken": 1
-  },
-  {
-   "source": "harvest",
-   "n": 79,
-   "works": 63,
-   "not-worth-it": 2,
-   "blocked": 10,
-   "broken": 4
   },
   {
    "source": "vault",
@@ -119,10 +119,10 @@
   },
   {
    "week": "2026-11-02",
-   "works": 44,
+   "works": 52,
    "not-worth-it": 0,
-   "blocked": 3,
-   "broken": 0
+   "blocked": 4,
+   "broken": 1
   }
  ],
  "rows": [
@@ -4864,6 +4864,172 @@
     "p": 0.85,
     "hit": 0
    }
+  },
+  {
+   "id": "P-0340",
+   "title": "claude-animation-skills graph: does build.py turn a JSON spec into an mp4 keyless in under 30 minutes?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-06T23:35:52+0000",
+   "minutes": 1,
+   "calls": 19,
+   "note": "Measured: build.py made a 1080x1920, 30 fps, 4.000 s mp4 from a JSON spec keyless, 33.1 s first run and 15.6 s second, against the skill saying about 10 s and my shot of under 120 s. Needed only GSAP and npx HyperFrames, no install.sh. Flaws seen on my 48 to 122 series: count opens at 0 while the dot sits at 48, first…",
+   "artefact": "experiments/2026-11-06-P-0340",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0341",
+   "title": "Bonding curve: does a 25%-per-doubling curve beat a constant-product curve for an early buyer at 10x supply?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-06T23:36:35+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Measured in closed form: 25% per doubling pays 2.10x at 10x supply wherever you enter (2.06x after 1% fees each way). Constant product on pump.fun figures pays 1.00x at 0.1% of virtual supply, 1.19x at 1%, 5.41x at 6%; crossover 35.7M tokens, 3.33%, after 1.03 SOL in, against my shot of about 3%. So the power curve wi…",
+   "artefact": "experiments/2026-11-06-P-0341",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0342",
+   "title": "NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free?",
+   "source": "harvest",
+   "verdict": "broken",
+   "at": "2026-11-06T23:37:34+0000",
+   "minutes": 0,
+   "calls": 14,
+   "note": "Measured on Flask (83 files, 5 queries of mine, 1 and 2 hops): slices took 3.4 to 43 ms after a 0.31 s build, so the speed holds, but real size is 1,985 to 3,318 cl100k tokens against the 1,200 limit, 1.65 to 2.76 times over. The tool reports 1,136 to 1,200 because it counts words times 1.3 and leaves out its markdown…",
+   "artefact": "experiments/2026-11-06-P-0342",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0343",
+   "title": "xG proxy: does rolling shots-on-target predict next-match goals better than rolling goals, on football-data?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-06T23:38:25+0000",
+   "minutes": 0,
+   "calls": 11,
+   "note": "Measured: on 4,608 rows of 2025-26, nine leagues, last-10 shots on target has test MSE 1.3001 against last-10 goals 1.3139, 1.05% lower (se about 0.5%), matching my shot of about 1%; better in 7 of 9 leagues; goals plus both 1.2954. One season, no opponent strength. Mostly a repeat of P-0168 and P-0169, which I found…",
+   "artefact": "experiments/2026-11-06-P-0343",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0344",
+   "title": "German Wikipedia first-link walks: 100 random de articles under P-0332's rule, arrival rate at Philosophie and the top ring beside the English 48 of 100",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-06T23:48:58+0000",
+   "minutes": 10,
+   "calls": 15,
+   "note": "Measured on 100 random de articles under the same parser: 53 reached Philosophie (median 14 hops), 20 looped, 25 dead ends, 2 parser errors, against English 48, 41 and 11; my shot of under 35 missed, the other half hit. The Knowledge ring does not exist here: the top ring is System > Ganzheit > Abstrakta > Sprachwisse…",
+   "artefact": "experiments/2026-11-06-P-0344",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0345",
+   "title": "EDDM METAR high against DWD 01262 TX_10 at the same airport: how often do they differ after rounding, and is the miss the peak falling between METAR reports",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-06T23:50:05+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Measured over 540 days: EDDM METAR high equals rounded DWD 01262 TX_10 on 424, 78.5%, against my shot of 65%. Of the other 116, 63 run 1 degree low, 52 run 1 degree high, one is 8 low (a reporting gap, not chased). Mean gap +0.03 C. Report times explain 58 of 116, half, not the most I called. So a perfect station fore…",
+   "artefact": "experiments/2026-11-06-P-0345",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0346",
+   "title": "Whole-degree METAR high against SYNOP TX at Heathrow, Orly and Munich airport, Sep to Oct: is the gap the same size at all three",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-06T23:51:30+0000",
+   "minutes": 1,
+   "calls": 8,
+   "note": "Measured Sep to Oct, 06 to 18 UTC on both sides: METAR high minus SYNOP TX is -0.93 C at Heathrow (61 days, 28% same as rounded TX), -0.29 at Orly (51 days, 65%), +0.19 at Munich (30 days, 80%). My shot of within 0.3 and 70 to 80% everywhere missed at Heathrow. So the gap does not travel: London +1.26 ICON offset woul…",
+   "artefact": "experiments/2026-11-06-P-0346",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0347",
+   "title": "EDDM METAR high against DWD 01262 TXK, 2021 to 2026, by month: does P-0345's winter 90% against July 66% hold over five years",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-06T23:52:51+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "Measured over 2,135 days, 2021 to 2026: EDDM METAR high equals rounded DWD 01262 TXK on 74.1%, misses leaning low (409 under, 145 over). Winter 75.7% v summer 72.6%, 3 points with se about 2.7, against my shot of at least 8: P-0345 January 90 v July 66 was small-sample noise. By year 70% (2023) to 81% (2026), mean gap…",
+   "artefact": "experiments/2026-11-06-P-0347",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0349",
+   "title": "Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behind them, and does any survive…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-06T23:55:45+0000",
+   "minutes": 2,
+   "calls": 5,
+   "note": "Measured at one moment, 107 markets read twice 60 s apart: of 65 books with a bid on every contract, median sell-all 94.81, 1 was over 100 (Trump 9+ years by 2030, 101.18, unchanged after a minute). Size 2.02 units, gross gap 0.024 units, about 2p if a unit is a pound, and it pays only at settlement in 2030. Survives…",
+   "artefact": "experiments/2026-11-06-P-0349",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0350",
+   "title": "pump.fun launch price: do new pools first trade near the stated 30 virtual SOL over 1.073bn tokens, 2.796e-8 SOL, or has the curve changed",
+   "source": "refill",
+   "verdict": "blocked",
+   "at": "2026-11-06T23:56:53+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Not measured. GeckoTerminal returned 429 twice, on an OHLCV call at 2.5 s spacing and then on the first call of a slower re-run, so no pool price was read. No called shot made. P-0172 already read live curve accounts for constant product, so this is a narrower check than the queue line suggests.",
+   "artefact": "experiments/2026-11-06-P-0350",
+   "page": false,
+   "shot": null
   }
  ]
 }

@@ -1,17 +1,17 @@
 {
  "summary": {
-  "n": 122,
+  "n": 131,
   "waiting": 0,
-  "hits": 112,
-  "hit_rate": 0.918,
-  "mean_p": 0.66,
-  "brier": 0.146,
-  "brier_at_hit_rate": 0.075,
-  "called_works": 111,
-  "called_works_hits": 106,
+  "hits": 120,
+  "hit_rate": 0.916,
+  "mean_p": 0.662,
+  "brier": 0.144,
+  "brier_at_hit_rate": 0.077,
+  "called_works": 120,
+  "called_works_hits": 114,
   "called_other": 11,
   "called_other_hits": 6,
-  "verdict_works": 111,
+  "verdict_works": 119,
   "first": "2026-10-12",
   "last": "2026-11-06"
  },
@@ -24,27 +24,27 @@
   },
   {
    "label": "55%",
-   "n": 12,
+   "n": 13,
    "mean_p": 0.55,
-   "hit_rate": 0.833
+   "hit_rate": 0.769
   },
   {
    "label": "60 to 65%",
-   "n": 37,
+   "n": 39,
    "mean_p": 0.614,
-   "hit_rate": 0.919
+   "hit_rate": 0.923
   },
   {
    "label": "70 to 75%",
-   "n": 40,
+   "n": 45,
    "mean_p": 0.722,
-   "hit_rate": 0.95
+   "hit_rate": 0.956
   },
   {
    "label": "80% and up",
-   "n": 18,
-   "mean_p": 0.828,
-   "hit_rate": 0.944
+   "n": 19,
+   "mean_p": 0.826,
+   "hit_rate": 0.947
   }
  ],
  "rows": [
@@ -1267,6 +1267,96 @@
    "hit": 0,
    "number": "rank correlation of October views against walks through about +0.35; about 8 percent of steps land on pages under 1,000 views",
    "at": "2026-11-06T12:40:33+0000"
+  },
+  {
+   "id": "P-0340",
+   "title": "claude-animation-skills graph: does build.py turn a JSON spec into an mp4 keyless in under 30 minutes?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "graph skill renders a vertical mp4 from a JSON spec in under 120 s of render time",
+   "at": "2026-11-06T23:34:26+0000"
+  },
+  {
+   "id": "P-0341",
+   "title": "Bonding curve: does a 25%-per-doubling curve beat a constant-product curve for an early buyer at 10x supply?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "power curve pays 2.10x at 10x supply; constant product overtakes it once the buyer enters past about 3% of virtual supply",
+   "at": "2026-11-06T23:36:11+0000"
+  },
+  {
+   "id": "P-0342",
+   "title": "NeuroCode: does the graph slicer cut a real repo to under 1,200 tokens in under a second, model-free?",
+   "expect": "works",
+   "verdict": "broken",
+   "p": 0.55,
+   "hit": 0,
+   "number": "slicer returns under 1,200 tokens in under 1 s on a real repo of about 100 files",
+   "at": "2026-11-06T23:36:41+0000"
+  },
+  {
+   "id": "P-0343",
+   "title": "xG proxy: does rolling shots-on-target predict next-match goals better than rolling goals, on football-data?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "rolling shots on target beats rolling goals out of sample, MSE lower by about 1%",
+   "at": "2026-11-06T23:37:42+0000"
+  },
+  {
+   "id": "P-0344",
+   "title": "German Wikipedia first-link walks: 100 random de articles under P-0332's rule, arrival rate at Philosophie and the top ring beside the Engli",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "under 35 of 100 reach Philosophie, and the biggest ring is not the English Knowledge one",
+   "at": "2026-11-06T23:38:54+0000"
+  },
+  {
+   "id": "P-0345",
+   "title": "EDDM METAR high against DWD 01262 TX_10 at the same airport: how often do they differ after rounding, and is the miss the peak falling betwe",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "METAR high equals rounded TX_10 on about 65% of days, and report times explain most of the differences",
+   "at": "2026-11-06T23:49:38+0000"
+  },
+  {
+   "id": "P-0346",
+   "title": "Whole-degree METAR high against SYNOP TX at Heathrow, Orly and Munich airport, Sep to Oct: is the gap the same size at all three",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "mean METAR minus SYNOP TX within 0.3 C of zero at all three, and rounded agreement of 70 to 80% at each",
+   "at": "2026-11-06T23:50:41+0000"
+  },
+  {
+   "id": "P-0347",
+   "title": "EDDM METAR high against DWD 01262 TXK, 2021 to 2026, by month: does P-0345's winter 90% against July 66% hold over five years",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "winter same-degree share above summer by at least 8 points over five years, overall about 78%",
+   "at": "2026-11-06T23:52:08+0000"
+  },
+  {
+   "id": "P-0349",
+   "title": "Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behin",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "0 to 2 books over 100 tonight, with under 50 units of lockable size each, and none surviving harsh commission",
+   "at": "2026-11-06T23:53:41+0000"
   }
  ]
 }

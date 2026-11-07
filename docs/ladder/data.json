@@ -13,32 +13,32 @@
   "median_opp": 2200,
   "first": "2026-10-03",
   "last": "2026-11-06",
-  "challenges": 1182,
+  "challenges": 1204,
   "accepted": 60,
-  "declined": 708,
-  "no_answer": 113,
-  "refused_400": 287,
+  "declined": 718,
+  "no_answer": 115,
+  "refused_400": 297,
   "refused_429": 14,
-  "accept_rate": 0.0508,
-  "bots_asked": 112,
+  "accept_rate": 0.0498,
+  "bots_asked": 122,
   "bots_played": 56,
-  "bots_never": 62,
+  "bots_never": 72,
   "median_rating_accepted_bots": 1887,
-  "median_rating_refusing_bots": 1965,
+  "median_rating_refusing_bots": 1829,
   "challenge_first": "2026-10-09",
-  "challenge_last": "2026-11-06",
+  "challenge_last": "2026-11-07",
   "declined_reasons": [
    [
     "nobot",
-    402
+    403
    ],
    [
     "generic",
-    199
+    205
    ],
    [
     "casual",
-    95
+    98
    ],
    [
     "tooslow",
@@ -224,25 +224,30 @@
    "date": "2026-11-06",
    "asked": 29,
    "accepted": 3
+  },
+  {
+   "date": "2026-11-07",
+   "asked": 22,
+   "accepted": 0
   }
  ],
  "decliners": [
   {
    "bot": "resolutebot",
    "rating": 2945,
-   "asked": 58,
+   "asked": 59,
    "how": "declined"
   },
   {
    "bot": "leelarogue",
    "rating": 2318,
-   "asked": 47,
+   "asked": 48,
    "how": "declined"
   },
   {
    "bot": "patriciabot",
-   "rating": 2745,
-   "asked": 47,
+   "rating": 2748,
+   "asked": 48,
    "how": "declined"
   },
   {
@@ -266,7 +271,7 @@
   {
    "bot": "stockfishlowdepth",
    "rating": 1990,
-   "asked": 37,
+   "asked": 38,
    "how": "declined"
   },
   {
@@ -288,27 +293,27 @@
    "how": "declined"
   },
   {
+   "bot": "darkonweakbot",
+   "rating": 1762,
+   "asked": 32,
+   "how": "declined"
+  },
+  {
    "bot": "hummus-bot",
    "rating": 2051,
    "asked": 31,
    "how": "declined"
   },
   {
-   "bot": "darkonweakbot",
-   "rating": 1776,
-   "asked": 31,
-   "how": "declined"
-  },
-  {
    "bot": "littlepatricia",
-   "rating": 1913,
-   "asked": 29,
+   "rating": 1904,
+   "asked": 30,
    "how": "declined"
   },
   {
    "bot": "mochi_bot",
-   "rating": 1689,
-   "asked": 26,
+   "rating": 1687,
+   "asked": 27,
    "how": "declined"
   },
   {
