@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 281 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 282 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 281 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
-| P-0351 | Words times 1.3 by language: codeload tarballs (keyless) of 6 Python, 6 JS/TS and 6 Go popular repos, every source file counted with tiktoken cl100k beside words x 1.3 and chars/4; the cl100k over words ratio per language with its spread across repos, and whether one factor holds within 15% for all three (P-0342 found about 2 on Flask) | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (338)
+## Verdicts (339)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-07 | P-0351 | Words times 1.3 by language: codeload tarballs (keyless) of 6 Python, 6 JS/TS and 6 Go popular repos, every source file counted with tiktoken cl100k beside words x 1.3 and chars/4; the cl100k over words ratio per language with its spread across repos, and whether one factor holds within 15% for all three (P-0342 found about 2 on Flask) | **works** | Measured on 18 repos, 3,343 files: cl100k tokens per whitespace word median 2.51 (shot 2.6); Python 2.70, JS/TS 2.53, Go 2.46 (shot 2.5, 2.8, 2.6, order wrong). One factor of 2.51 holds within 15% for 16 of 18 repos, not every one as I called; rich 3.49 and black 3.03 fall out, both Python. Words x 1.3 counts 0.52 of the true tokens (0.37 to 0.58); chars/4 counts 0.96 (0.81 to 1.33). Repo matters more than language. cl100k only. Next: close (factor 2.5 for code, written in the README; row 116 extends it to Rust and Java). | `experiments/2026-11-07-P-0351` | 1 min, 12 calls, 0 denied |
 | 2026-11-07 | P-0339 | Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-views.json and a pause between requests, until all 395 have an answer; then the rank correlation and the share of steps under 1,000 views. | **works** | Measured on 381 of 395 walk pages: Spearman of October views against walks through +0.281 (shot +0.20), 2.6% of steps on pages under 1,000 views (shot 4%); +0.168 among the 122 pages on 2 or more walks, median page 12,301 views. Done in one session with the Action API prop=pageviews, 20 titles a call, not a week of REST pulls. Python urllib got 429 on every call, curl got 200: a client block, likely P-0338 too. 12 of 12 REST hubs match to the view. 13 pages lost to unfollowed continues. Next: close (the walks run through read pages; nothing more to learn). | `experiments/2026-11-07-P-0339` | 7 min, 36 calls, 0 denied |
 | 2026-11-06 | P-0350 | pump.fun launch price: do new pools first trade near the stated 30 virtual SOL over 1.073bn tokens, 2.796e-8 SOL, or has the curve changed | **blocked** | Not measured. GeckoTerminal returned 429 twice, on an OHLCV call at 2.5 s spacing and then on the first call of a slower re-run, so no pool price was read. No called shot made. P-0172 already read live curve accounts for constant product, so this is a narrower check than the queue line suggests. | `experiments/2026-11-06-P-0350` | 0 min, 8 calls, 0 denied |
 | 2026-11-06 | P-0349 | Smarkets sell-all books: on tonight's open markets, read quotes twice a minute apart: how many bids sum over 100, how much size stands behind them, and does any survive 2% commission | **works** | Measured at one moment, 107 markets read twice 60 s apart: of 65 books with a bid on every contract, median sell-all 94.81, 1 was over 100 (Trump 9+ years by 2030, 101.18, unchanged after a minute). Size 2.02 units, gross gap 0.024 units, about 2p if a unit is a pound, and it pays only at settlement in 2030. Survives 2% on net profit, fails 2% on all premium; commission basis and unit not confirmed from a Smarkets document. My shot hit. Past sizes unknown, snapshots keep none. Next: close. | `experiments/2026-11-06-P-0349` | 2 min, 5 calls, 0 denied |

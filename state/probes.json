@@ -8723,22 +8723,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-07",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-07T12:39:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-07T12:41:25+0000",
+   "note": "Measured on 18 repos, 3,343 files: cl100k tokens per whitespace word median 2.51 (shot 2.6); Python 2.70, JS/TS 2.53, Go 2.46 (shot 2.5, 2.8, 2.6, order wrong). One factor of 2.51 holds within 15% for 16 of 18 repos, not every one as I called; rich 3.49 and black 3.03 fall out, both Python. Words x 1.3 counts 0.52 of the true tokens (0.37 to 0.58); chars/4 counts 0.96 (0.81 to 1.33). Repo matters more than language. cl100k only. Next: close (factor 2.5 for code, written in the README; row 116 extends it to Rust and Java).",
+   "artefacts": [
+    "experiments/2026-11-07-P-0351"
+   ],
+   "minutes": 1,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "cl100k tokens per whitespace word about 2.6 overall (Python 2.5, JS 2.8, Go 2.6); one factor within 15% of every repo",
-    "at": "2026-11-07T12:40:01+0000"
+    "at": "2026-11-07T12:40:01+0000",
+    "hit": true
    }
   }
  ]

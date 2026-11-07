@@ -1,0 +1,318 @@
+{
+ "repos": [
+  {
+   "lang": "Python",
+   "repo": "psf/requests",
+   "tarball_bytes": 3333722,
+   "files": 36,
+   "cl100k": 94437,
+   "words": 38334,
+   "chars": 407002,
+   "tokens_per_word": 2.464,
+   "words_x1.3_over_cl100k": 0.528,
+   "chars_over_4_over_cl100k": 1.077,
+   "file_ratio_p10_p90": [
+    1.84,
+    3.43
+   ]
+  },
+  {
+   "lang": "Python",
+   "repo": "pallets/flask",
+   "tarball_bytes": 740064,
+   "files": 80,
+   "cl100k": 134903,
+   "words": 57580,
+   "chars": 591224,
+   "tokens_per_word": 2.343,
+   "words_x1.3_over_cl100k": 0.555,
+   "chars_over_4_over_cl100k": 1.096,
+   "file_ratio_p10_p90": [
+    1.8,
+    3.05
+   ]
+  },
+  {
+   "lang": "Python",
+   "repo": "fastapi/fastapi",
+   "tarball_bytes": 18173061,
+   "files": 1034,
+   "cl100k": 870437,
+   "words": 315912,
+   "chars": 4626160,
+   "tokens_per_word": 2.755,
+   "words_x1.3_over_cl100k": 0.472,
+   "chars_over_4_over_cl100k": 1.329,
+   "file_ratio_p10_p90": [
+    2.14,
+    3.1
+   ]
+  },
+  {
+   "lang": "Python",
+   "repo": "encode/httpx",
+   "tarball_bytes": 2298834,
+   "files": 57,
+   "cl100k": 133516,
+   "words": 50422,
+   "chars": 569741,
+   "tokens_per_word": 2.648,
+   "words_x1.3_over_cl100k": 0.491,
+   "chars_over_4_over_cl100k": 1.067,
+   "file_ratio_p10_p90": [
+    2.12,
+    3.46
+   ]
+  },
+  {
+   "lang": "Python",
+   "repo": "psf/black",
+   "tarball_bytes": 1377981,
+   "files": 396,
+   "cl100k": 618987,
+   "words": 204265,
+   "chars": 2268807,
+   "tokens_per_word": 3.03,
+   "words_x1.3_over_cl100k": 0.429,
+   "chars_over_4_over_cl100k": 0.916,
+   "file_ratio_p10_p90": [
+    1.64,
+    3.11
+   ]
+  },
+  {
+   "lang": "Python",
+   "repo": "Textualize/rich",
+   "tarball_bytes": 15148562,
+   "files": 210,
+   "cl100k": 513640,
+   "words": 147376,
+   "chars": 1681731,
+   "tokens_per_word": 3.485,
+   "words_x1.3_over_cl100k": 0.373,
+   "chars_over_4_over_cl100k": 0.819,
+   "file_ratio_p10_p90": [
+    2.06,
+    4.33
+   ]
+  },
+  {
+   "lang": "JS/TS",
+   "repo": "expressjs/express",
+   "tarball_bytes": 136129,
+   "files": 142,
+   "cl100k": 140667,
+   "words": 54455,
+   "chars": 564365,
+   "tokens_per_word": 2.583,
+   "words_x1.3_over_cl100k": 0.503,
+   "chars_over_4_over_cl100k": 1.003,
+   "file_ratio_p10_p90": [
+    1.9,
+    3.18
+   ]
+  },
+  {
+   "lang": "JS/TS",
+   "repo": "axios/axios",
+   "tarball_bytes": 1705512,
+   "files": 279,
+   "cl100k": 337316,
+   "words": 142882,
+   "chars": 1472524,
+   "tokens_per_word": 2.361,
+   "words_x1.3_over_cl100k": 0.551,
+   "chars_over_4_over_cl100k": 1.091,
+   "file_ratio_p10_p90": [
+    1.85,
+    2.75
+   ]
+  },
+  {
+   "lang": "JS/TS",
+   "repo": "lodash/lodash",
+   "tarball_bytes": 895709,
+   "files": 25,
+   "cl100k": 46020,
+   "words": 17392,
+   "chars": 183245,
+   "tokens_per_word": 2.646,
+   "words_x1.3_over_cl100k": 0.491,
+   "chars_over_4_over_cl100k": 0.995,
+   "file_ratio_p10_p90": [
+    1.77,
+    3.07
+   ]
+  },
+  {
+   "lang": "JS/TS",
+   "repo": "vuejs/core",
+   "tarball_bytes": 1656641,
+   "files": 516,
+   "cl100k": 1178225,
+   "words": 474249,
+   "chars": 4763814,
+   "tokens_per_word": 2.484,
+   "words_x1.3_over_cl100k": 0.523,
+   "chars_over_4_over_cl100k": 1.011,
+   "file_ratio_p10_p90": [
+    1.94,
+    3.06
+   ]
+  },
+  {
+   "lang": "JS/TS",
+   "repo": "chalk/chalk",
+   "tarball_bytes": 315713,
+   "files": 13,
+   "cl100k": 10449,
+   "words": 3728,
+   "chars": 35286,
+   "tokens_per_word": 2.803,
+   "words_x1.3_over_cl100k": 0.464,
+   "chars_over_4_over_cl100k": 0.844,
+   "file_ratio_p10_p90": [
+    1.83,
+    5.75
+   ]
+  },
+  {
+   "lang": "JS/TS",
+   "repo": "sindresorhus/got",
+   "tarball_bytes": 772211,
+   "files": 96,
+   "cl100k": 500660,
+   "words": 205860,
+   "chars": 2020498,
+   "tokens_per_word": 2.432,
+   "words_x1.3_over_cl100k": 0.535,
+   "chars_over_4_over_cl100k": 1.009,
+   "file_ratio_p10_p90": [
+    1.92,
+    2.68
+   ]
+  },
+  {
+   "lang": "Go",
+   "repo": "gin-gonic/gin",
+   "tarball_bytes": 195663,
+   "files": 99,
+   "cl100k": 196695,
+   "words": 75534,
+   "chars": 705336,
+   "tokens_per_word": 2.604,
+   "words_x1.3_over_cl100k": 0.499,
+   "chars_over_4_over_cl100k": 0.896,
+   "file_ratio_p10_p90": [
+    1.66,
+    3.08
+   ]
+  },
+  {
+   "lang": "Go",
+   "repo": "spf13/cobra",
+   "tarball_bytes": 203477,
+   "files": 36,
+   "cl100k": 138280,
+   "words": 61521,
+   "chars": 512598,
+   "tokens_per_word": 2.248,
+   "words_x1.3_over_cl100k": 0.578,
+   "chars_over_4_over_cl100k": 0.927,
+   "file_ratio_p10_p90": [
+    1.59,
+    2.53
+   ]
+  },
+  {
+   "lang": "Go",
+   "repo": "gorilla/mux",
+   "tarball_bytes": 50723,
+   "files": 17,
+   "cl100k": 62896,
+   "words": 24890,
+   "chars": 224357,
+   "tokens_per_word": 2.527,
+   "words_x1.3_over_cl100k": 0.514,
+   "chars_over_4_over_cl100k": 0.892,
+   "file_ratio_p10_p90": [
+    1.53,
+    3.56
+   ]
+  },
+  {
+   "lang": "Go",
+   "repo": "sirupsen/logrus",
+   "tarball_bytes": 72640,
+   "files": 53,
+   "cl100k": 64801,
+   "words": 27918,
+   "chars": 236683,
+   "tokens_per_word": 2.321,
+   "words_x1.3_over_cl100k": 0.56,
+   "chars_over_4_over_cl100k": 0.913,
+   "file_ratio_p10_p90": [
+    1.7,
+    3.03
+   ]
+  },
+  {
+   "lang": "Go",
+   "repo": "junegunn/fzf",
+   "tarball_bytes": 501047,
+   "files": 91,
+   "cl100k": 302260,
+   "words": 121569,
+   "chars": 977412,
+   "tokens_per_word": 2.486,
+   "words_x1.3_over_cl100k": 0.523,
+   "chars_over_4_over_cl100k": 0.808,
+   "file_ratio_p10_p90": [
+    1.87,
+    3.04
+   ]
+  },
+  {
+   "lang": "Go",
+   "repo": "prometheus/client_golang",
+   "tarball_bytes": 1213285,
+   "files": 163,
+   "cl100k": 443061,
+   "words": 182145,
+   "chars": 1582709,
+   "tokens_per_word": 2.432,
+   "words_x1.3_over_cl100k": 0.534,
+   "chars_over_4_over_cl100k": 0.893,
+   "file_ratio_p10_p90": [
+    1.51,
+    3.0
+   ]
+  }
+ ],
+ "errors": [],
+ "one_factor_median": 2.506,
+ "repos_within_15pct_of_one_factor": 16,
+ "repos_counted": 18,
+ "by_lang": {
+  "Python": {
+   "median": 2.702,
+   "min": 2.343,
+   "max": 3.485,
+   "pooled": 2.907
+  },
+  "JS/TS": {
+   "median": 2.534,
+   "min": 2.361,
+   "max": 2.803,
+   "pooled": 2.463
+  },
+  "Go": {
+   "median": 2.459,
+   "min": 2.248,
+   "max": 2.604,
+   "pooled": 2.447
+  }
+ },
+ "words_x1.3_share_of_true_median": 0.518,
+ "chars_over_4_share_of_true_median": 0.961
+}
