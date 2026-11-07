@@ -1,5 +1,5 @@
 {
- "next_id": 354,
+ "next_id": 355,
  "items": [
   {
    "id": "P-0001",
@@ -8800,6 +8800,32 @@
     "number": "max of the :20 and :50 tenths sits 0.25 C under the full 10-minute max, and the full 10-minute max 0.3 C under SYNOP TX",
     "at": "2026-11-07T12:43:19+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0354",
+   "title": "EGLL METAR cold at the peak? Split P-0352's matched METAR minus SYNOP tenths at Heathrow (October, rounding.py) by hour of day and by the day's warmest three hours, to find where the 0.6 C left after P-0353's sampling share sits",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-07",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-07T12:44:05+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "METAR minus tenths about -0.3 C in the 12 to 15 UTC hours against about +0.1 C at night",
+    "at": "2026-11-07T12:44:12+0000"
    }
   }
  ]

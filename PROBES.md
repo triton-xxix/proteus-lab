@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 284 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
-## Queue (8 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,7 @@ Verdicts so far: 284 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
 | P-0311 | Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from about 17 Nov); the number is the capture rate shifted v unshifted (2 of 6 and 1 of 5 on 3 Nov) against the 80 percent a calibrated band would hold | desk | none | 2026-11-17 | 0 | 20 min |
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
+| P-0354 | EGLL METAR cold at the peak? Split P-0352's matched METAR minus SYNOP tenths at Heathrow (October, rounding.py) by hour of day and by the day's warmest three hours, to find where the 0.6 C left after P-0353's sampling share sits | desk | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (341)
 
