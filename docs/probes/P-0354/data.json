@@ -1,0 +1,181 @@
+{
+ "built_from": [
+  "experiments/2026-11-06-P-0346/results.json",
+  "experiments/2026-11-07-P-0352/results.json",
+  "experiments/2026-11-07-P-0353/results.json",
+  "experiments/2026-11-07-P-0354/results.json"
+ ],
+ "gap": 0.926,
+ "sampling_and_rounding": 0.329,
+ "lag_at_warm_hours": 0.172,
+ "unexplained": 0.425,
+ "truncation_would_give": -0.45,
+ "airports": {
+  "Heathrow": {
+   "icao": "EGLL",
+   "wmo": "03772",
+   "days": 61,
+   "mean_metar_minus_tx": -0.926,
+   "sd": 0.612,
+   "se": 0.078,
+   "same_as_rounded_tx": 17,
+   "same_share": 0.279,
+   "gap_rounded": {
+    "-2": 14,
+    "-1": 30,
+    "0": 17
+   }
+  },
+  "Orly": {
+   "icao": "LFPO",
+   "wmo": "07149",
+   "days": 51,
+   "mean_metar_minus_tx": -0.292,
+   "sd": 0.347,
+   "se": 0.049,
+   "same_as_rounded_tx": 33,
+   "same_share": 0.647,
+   "gap_rounded": {
+    "-1": 18,
+    "0": 33
+   }
+  },
+  "Munich": {
+   "icao": "EDDM",
+   "wmo": "10870",
+   "days": 30,
+   "mean_metar_minus_tx": 0.187,
+   "sd": 0.398,
+   "se": 0.073,
+   "same_as_rounded_tx": 24,
+   "same_share": 0.8,
+   "gap_rounded": {
+    "-1": 2,
+    "0": 24,
+    "1": 4
+   }
+  }
+ },
+ "hours": [
+  {
+   "utc": 0,
+   "n": 31,
+   "mean": 0.171
+  },
+  {
+   "utc": 1,
+   "n": 30,
+   "mean": 0.173
+  },
+  {
+   "utc": 2,
+   "n": 31,
+   "mean": 0.077
+  },
+  {
+   "utc": 3,
+   "n": 31,
+   "mean": 0.074
+  },
+  {
+   "utc": 4,
+   "n": 31,
+   "mean": -0.032
+  },
+  {
+   "utc": 5,
+   "n": 31,
+   "mean": -0.077
+  },
+  {
+   "utc": 6,
+   "n": 31,
+   "mean": -0.032
+  },
+  {
+   "utc": 7,
+   "n": 31,
+   "mean": -0.152
+  },
+  {
+   "utc": 8,
+   "n": 31,
+   "mean": -0.226
+  },
+  {
+   "utc": 9,
+   "n": 31,
+   "mean": -0.197
+  },
+  {
+   "utc": 10,
+   "n": 31,
+   "mean": -0.303
+  },
+  {
+   "utc": 11,
+   "n": 31,
+   "mean": -0.306
+  },
+  {
+   "utc": 12,
+   "n": 31,
+   "mean": -0.303
+  },
+  {
+   "utc": 13,
+   "n": 26,
+   "mean": -0.165
+  },
+  {
+   "utc": 14,
+   "n": 31,
+   "mean": -0.048
+  },
+  {
+   "utc": 15,
+   "n": 31,
+   "mean": -0.113
+  },
+  {
+   "utc": 16,
+   "n": 31,
+   "mean": -0.145
+  },
+  {
+   "utc": 17,
+   "n": 31,
+   "mean": 0.2
+  },
+  {
+   "utc": 18,
+   "n": 31,
+   "mean": 0.135
+  },
+  {
+   "utc": 19,
+   "n": 31,
+   "mean": 0.013
+  },
+  {
+   "utc": 20,
+   "n": 31,
+   "mean": 0.21
+  },
+  {
+   "utc": 21,
+   "n": 31,
+   "mean": 0.103
+  },
+  {
+   "utc": 22,
+   "n": 31,
+   "mean": 0.119
+  },
+  {
+   "utc": 23,
+   "n": 31,
+   "mean": 0.245
+  }
+ ]
+}

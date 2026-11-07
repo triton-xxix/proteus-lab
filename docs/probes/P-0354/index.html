@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heathrow's Missing Degree</title>
+<meta name="description" content="Probes P-0346 to P-0354: Heathrow's whole-degree METAR high sits 0.93 C under its SYNOP maximum. Not rounding; about 0.33 C is sampling; the METAR lags the air through the day; 0.42 C is still open. Drawn from the committed results.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --buoy:#b8402b; --ghost:#b9b2a5; --gold:#9a7a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --buoy:#ec8a72; --ghost:#4d473e; --gold:#d9b85a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --buoy:#ec8a72; --ghost:#4d473e; --gold:#d9b85a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 24px/1.1 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.stat.cool b{color:var(--tide)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+svg text{font:12px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.sw.sq{border-radius:2px}
+.note{font-size:14px;color:var(--muted)}
+ul{max-width:64ch}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probes P-0346, P-0352, P-0353, P-0354 · 6 to 7 Nov 2026 · verdicts: works</div>
+<h1>Heathrow's missing degree</h1>
+<p>Weather markets settle on an airport's daily high, and the high people quote is usually the METAR, the whole-degree report pilots read. The station also files a SYNOP with its maximum to a tenth. At most airports the two agree. At Heathrow the METAR high sat <b>0.93 C</b> under the SYNOP maximum on average across 61 days. Four probes over two days went looking for where that degree goes.</p>
+
+<div class="stats">
+<div class="stat hot"><b>−0.93 C</b><span>Heathrow METAR high minus SYNOP maximum, 61 days, Sep to Oct</span></div>
+<div class="stat "><b>−0.02 C</b><span>METAR minus the station's own tenths, same minute, 738 minutes</span></div>
+<div class="stat cool"><b>0.33 C</b><span>lost to looking twice an hour and rounding, 28 days</span></div>
+<div class="stat "><b>−0.16 C</b><span>METAR minus tenths, 12 to 15 UTC; night is +0.06</span></div>
+<div class="stat "><b>0.42 C</b><span>still not explained</span></div>
+</div>
+
+<h2>1. Heathrow is the odd one out</h2>
+<p class="note">P-0346: mean of the day's highest METAR minus the SYNOP 06 to 18 UTC maximum, Sep to Oct 2026. Black whiskers are two standard errors.</p>
+<div class="chart"><svg viewBox="0 0 760 170" role="img" aria-label="Mean METAR high minus SYNOP maximum at Heathrow, Orly and Munich">
+<line x1="218.2" x2="218.2" y1="10" y2="144" stroke="var(--rule)" stroke-width="1"/>
+<text x="218.2" y="162" text-anchor="middle">−1.0 C</text>
+<line x1="388.8" x2="388.8" y1="10" y2="144" stroke="var(--rule)" stroke-width="1"/>
+<text x="388.8" y="162" text-anchor="middle">−0.5 C</text>
+<line x1="559.4" x2="559.4" y1="10" y2="144" stroke="var(--rule)" stroke-width="2"/>
+<text x="559.4" y="162" text-anchor="middle">+0.0 C</text>
+<line x1="730.0" x2="730.0" y1="10" y2="144" stroke="var(--rule)" stroke-width="1"/>
+<text x="730.0" y="162" text-anchor="middle">+0.5 C</text>
+<text class="k" x="10" y="36">Heathrow EGLL</text>
+<line x1="559.4" x2="243.5" y1="32" y2="32" stroke="var(--buoy)" stroke-width="12" stroke-linecap="butt" opacity=".85"/>
+<line x1="190.3" x2="296.7" y1="32" y2="32" stroke="var(--ink)" stroke-width="1.5"/>
+<text class="k" x="237.5" y="22" text-anchor="end">−0.93 C, 61 days</text>
+<text class="k" x="10" y="78">Orly LFPO</text>
+<line x1="559.4" x2="459.8" y1="74" y2="74" stroke="var(--tide)" stroke-width="12" stroke-linecap="butt" opacity=".85"/>
+<line x1="426.4" x2="493.2" y1="74" y2="74" stroke="var(--ink)" stroke-width="1.5"/>
+<text class="k" x="453.8" y="64" text-anchor="end">−0.29 C, 51 days</text>
+<text class="k" x="10" y="120">Munich EDDM</text>
+<line x1="559.4" x2="623.2" y1="116" y2="116" stroke="var(--tide)" stroke-width="12" stroke-linecap="butt" opacity=".85"/>
+<line x1="573.4" x2="673.0" y1="116" y2="116" stroke="var(--ink)" stroke-width="1.5"/>
+<text class="k" x="629.2" y="106" text-anchor="start">+0.19 C, 30 days</text>
+</svg></div>
+<p>Orly runs 0.29 C low, Munich 0.19 C high. Heathrow is nearly a degree low, and on 14 of 61 days two whole degrees under the rounded maximum. So an offset learned at one airport does not carry to another.</p>
+
+<h2>2. It is not the rounding</h2>
+<p class="note">P-0352: every October METAR matched to the minute with the station's 10-minute SYNOP reading in tenths. The difference, METAR minus tenths, for 738 minutes.</p>
+<div class="chart"><svg viewBox="0 0 760 230" role="img" aria-label="Histogram of METAR minus SYNOP tenths at the same minute, 738 minutes">
+<text x="116.1" y="218" text-anchor="middle">−2 C</text>
+<text x="268.3" y="218" text-anchor="middle">−1 C</text>
+<text x="420.4" y="218" text-anchor="middle">+0 C</text>
+<text x="572.6" y="218" text-anchor="middle">+1 C</text>
+<text x="724.8" y="218" text-anchor="middle">+2 C</text>
+<line x1="40" x2="740" y1="196" y2="196" stroke="var(--rule)"/>
+<rect x="48.7" y="193.3" width="13.1" height="2.7" fill="var(--tide)" opacity=".75"><title>−2.4 C: 1</title></rect>
+<rect x="94.3" y="193.3" width="13.1" height="2.7" fill="var(--tide)" opacity=".75"><title>−2.1 C: 1</title></rect>
+<rect x="140.0" y="193.3" width="13.1" height="2.7" fill="var(--tide)" opacity=".75"><title>−1.8 C: 1</title></rect>
+<rect x="155.2" y="187.9" width="13.1" height="8.1" fill="var(--tide)" opacity=".75"><title>−1.7 C: 3</title></rect>
+<rect x="170.4" y="185.2" width="13.1" height="10.8" fill="var(--tide)" opacity=".75"><title>−1.6 C: 4</title></rect>
+<rect x="185.6" y="187.9" width="13.1" height="8.1" fill="var(--tide)" opacity=".75"><title>−1.5 C: 3</title></rect>
+<rect x="200.8" y="193.3" width="13.1" height="2.7" fill="var(--tide)" opacity=".75"><title>−1.4 C: 1</title></rect>
+<rect x="216.1" y="185.2" width="13.1" height="10.8" fill="var(--tide)" opacity=".75"><title>−1.3 C: 4</title></rect>
+<rect x="231.3" y="185.2" width="13.1" height="10.8" fill="var(--tide)" opacity=".75"><title>−1.2 C: 4</title></rect>
+<rect x="246.5" y="171.8" width="13.1" height="24.2" fill="var(--tide)" opacity=".75"><title>−1.1 C: 9</title></rect>
+<rect x="261.7" y="174.5" width="13.1" height="21.5" fill="var(--tide)" opacity=".75"><title>−1.0 C: 8</title></rect>
+<rect x="276.9" y="169.1" width="13.1" height="26.9" fill="var(--tide)" opacity=".75"><title>−0.9 C: 10</title></rect>
+<rect x="292.2" y="136.9" width="13.1" height="59.1" fill="var(--tide)" opacity=".75"><title>−0.8 C: 22</title></rect>
+<rect x="307.4" y="153.0" width="13.1" height="43.0" fill="var(--tide)" opacity=".75"><title>−0.7 C: 16</title></rect>
+<rect x="322.6" y="136.9" width="13.1" height="59.1" fill="var(--tide)" opacity=".75"><title>−0.6 C: 22</title></rect>
+<rect x="337.8" y="75.1" width="13.1" height="120.9" fill="var(--tide)" opacity=".75"><title>−0.5 C: 45</title></rect>
+<rect x="353.0" y="88.5" width="13.1" height="107.5" fill="var(--tide)" opacity=".75"><title>−0.4 C: 40</title></rect>
+<rect x="368.2" y="72.4" width="13.1" height="123.6" fill="var(--tide)" opacity=".75"><title>−0.3 C: 46</title></rect>
+<rect x="383.5" y="88.5" width="13.1" height="107.5" fill="var(--tide)" opacity=".75"><title>−0.2 C: 40</title></rect>
+<rect x="398.7" y="45.5" width="13.1" height="150.5" fill="var(--tide)" opacity=".75"><title>−0.1 C: 56</title></rect>
+<rect x="413.9" y="64.3" width="13.1" height="131.7" fill="var(--tide)" opacity=".75"><title>+0.0 C: 49</title></rect>
+<rect x="429.1" y="67.0" width="13.1" height="129.0" fill="var(--tide)" opacity=".75"><title>+0.1 C: 48</title></rect>
+<rect x="444.3" y="24.0" width="13.1" height="172.0" fill="var(--tide)" opacity=".75"><title>+0.2 C: 64</title></rect>
+<rect x="459.5" y="42.8" width="13.1" height="153.2" fill="var(--tide)" opacity=".75"><title>+0.3 C: 57</title></rect>
+<rect x="474.8" y="45.5" width="13.1" height="150.5" fill="var(--tide)" opacity=".75"><title>+0.4 C: 56</title></rect>
+<rect x="490.0" y="101.9" width="13.1" height="94.1" fill="var(--tide)" opacity=".75"><title>+0.5 C: 35</title></rect>
+<rect x="505.2" y="126.1" width="13.1" height="69.9" fill="var(--tide)" opacity=".75"><title>+0.6 C: 26</title></rect>
+<rect x="520.4" y="136.9" width="13.1" height="59.1" fill="var(--tide)" opacity=".75"><title>+0.7 C: 22</title></rect>
+<rect x="535.6" y="153.0" width="13.1" height="43.0" fill="var(--tide)" opacity=".75"><title>+0.8 C: 16</title></rect>
+<rect x="550.8" y="174.5" width="13.1" height="21.5" fill="var(--tide)" opacity=".75"><title>+0.9 C: 8</title></rect>
+<rect x="566.1" y="171.8" width="13.1" height="24.2" fill="var(--tide)" opacity=".75"><title>+1.0 C: 9</title></rect>
+<rect x="581.3" y="187.9" width="13.1" height="8.1" fill="var(--tide)" opacity=".75"><title>+1.1 C: 3</title></rect>
+<rect x="596.5" y="193.3" width="13.1" height="2.7" fill="var(--tide)" opacity=".75"><title>+1.2 C: 1</title></rect>
+<rect x="611.7" y="187.9" width="13.1" height="8.1" fill="var(--tide)" opacity=".75"><title>+1.3 C: 3</title></rect>
+<rect x="642.2" y="190.6" width="13.1" height="5.4" fill="var(--tide)" opacity=".75"><title>+1.5 C: 2</title></rect>
+<rect x="657.4" y="190.6" width="13.1" height="5.4" fill="var(--tide)" opacity=".75"><title>+1.6 C: 2</title></rect>
+<rect x="718.2" y="193.3" width="13.1" height="2.7" fill="var(--tide)" opacity=".75"><title>+2.0 C: 1</title></rect>
+<line x1="416.9" x2="416.9" y1="18" y2="196" stroke="var(--ink)" stroke-width="2"/>
+<text class="k" x="422.9" y="26">measured mean −0.02 C</text>
+<line x1="352.0" x2="352.0" y1="34" y2="196" stroke="var(--buoy)" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="346.0" y="42" text-anchor="end" style="fill:var(--buoy)">truncation would sit at −0.45 C</text>
+</svg></div>
+<p>If the METAR simply chopped the tenths off, the differences would pile up around −0.45 C. They centre on −0.02 C with a spread of 0.56. The METAR matches the rounded tenths 67% of the time, the floored 47%. Over the whole day it is an unbiased, noisier reading of the same air. My shot said 85% rounded; that number missed.</p>
+
+<h2>3. About a third is looking twice an hour</h2>
+<p class="note">P-0353: each October day with every slot, the station's own readings set against its SYNOP maximum (the line at zero). Teal is the highest of the half-hourly readings, gold the highest of all the 10-minute readings, the red square the half-hourly high rounded to a whole degree, as a METAR would be.</p>
+<div class="chart"><svg viewBox="0 0 760 250" role="img" aria-label="Each October day at Heathrow: half-hourly max, 10-minute max and the rounded half-hourly max, all minus SYNOP TX">
+<line x1="46" x2="748" y1="64.5" y2="64.5" stroke="var(--rule)" stroke-width="2"/>
+<text x="40" y="68.5" text-anchor="end">+0.0</text>
+<line x1="46" x2="748" y1="125.1" y2="125.1" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="129.1" text-anchor="end">−0.5</text>
+<line x1="46" x2="748" y1="185.7" y2="185.7" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="189.7" text-anchor="end">−1.0</text>
+<text class="k" x="748" y="58.5" text-anchor="end">SYNOP TX</text>
+<line x1="58.5" x2="58.5" y1="52.4" y2="113.0" stroke="var(--ghost)"/>
+<circle cx="58.5" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-01: 10-minute max 21.8, TX 21.9</title></circle>
+<circle cx="58.5" cy="113.0" r="4" fill="var(--tide)"><title>2026-10-01: half-hourly max 21.5</title></circle>
+<rect x="54.5" y="48.4" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-01: rounded 22</title></rect>
+<text x="58.5" y="232" text-anchor="middle">1 Oct</text>
+<line x1="83.6" x2="83.6" y1="64.5" y2="100.9" stroke="var(--ghost)"/>
+<circle cx="83.6" cy="100.9" r="4" fill="var(--gold)"><title>2026-10-02: 10-minute max 21.9, TX 22.2</title></circle>
+<circle cx="83.6" cy="100.9" r="4" fill="var(--tide)"><title>2026-10-02: half-hourly max 21.9</title></circle>
+<rect x="79.6" y="84.7" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-02: rounded 22</title></rect>
+<line x1="108.7" x2="108.7" y1="64.5" y2="185.7" stroke="var(--ghost)"/>
+<circle cx="108.7" cy="173.6" r="4" fill="var(--gold)"><title>2026-10-03: 10-minute max 19.9, TX 20.8</title></circle>
+<circle cx="108.7" cy="185.7" r="4" fill="var(--tide)"><title>2026-10-03: half-hourly max 19.8</title></circle>
+<rect x="104.7" y="157.5" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-03: rounded 20</title></rect>
+<line x1="133.8" x2="133.8" y1="64.5" y2="125.1" stroke="var(--ghost)"/>
+<circle cx="133.8" cy="100.9" r="4" fill="var(--gold)"><title>2026-10-04: 10-minute max 23.2, TX 23.5</title></circle>
+<circle cx="133.8" cy="113.0" r="4" fill="var(--tide)"><title>2026-10-04: half-hourly max 23.1</title></circle>
+<rect x="129.8" y="121.1" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-04: rounded 23</title></rect>
+<line x1="158.8" x2="158.8" y1="64.5" y2="88.7" stroke="var(--ghost)"/>
+<circle cx="158.8" cy="88.7" r="4" fill="var(--gold)"><title>2026-10-05: 10-minute max 24.0, TX 24.2</title></circle>
+<circle cx="158.8" cy="88.7" r="4" fill="var(--tide)"><title>2026-10-05: half-hourly max 24.0</title></circle>
+<rect x="154.8" y="84.7" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-05: rounded 24</title></rect>
+<text x="158.8" y="232" text-anchor="middle">5 Oct</text>
+<line x1="183.9" x2="183.9" y1="64.5" y2="197.9" stroke="var(--ghost)"/>
+<circle cx="183.9" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-06: 10-minute max 22.8, TX 22.8</title></circle>
+<circle cx="183.9" cy="197.9" r="4" fill="var(--tide)"><title>2026-10-06: half-hourly max 21.7</title></circle>
+<rect x="179.9" y="157.5" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-06: rounded 22</title></rect>
+<line x1="209.0" x2="209.0" y1="64.5" y2="76.6" stroke="var(--ghost)"/>
+<circle cx="209.0" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-07: 10-minute max 15.0, TX 15.1</title></circle>
+<circle cx="209.0" cy="76.6" r="4" fill="var(--tide)"><title>2026-10-07: half-hourly max 15.0</title></circle>
+<rect x="205.0" y="72.6" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-07: rounded 15</title></rect>
+<line x1="234.0" x2="234.0" y1="64.5" y2="149.4" stroke="var(--ghost)"/>
+<circle cx="234.0" cy="88.7" r="4" fill="var(--gold)"><title>2026-10-08: 10-minute max 15.4, TX 15.6</title></circle>
+<circle cx="234.0" cy="149.4" r="4" fill="var(--tide)"><title>2026-10-08: half-hourly max 14.9</title></circle>
+<rect x="230.0" y="133.2" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-08: rounded 15</title></rect>
+<line x1="259.1" x2="259.1" y1="64.5" y2="88.8" stroke="var(--ghost)"/>
+<circle cx="259.1" cy="88.8" r="4" fill="var(--gold)"><title>2026-10-09: 10-minute max 20.9, TX 21.1</title></circle>
+<circle cx="259.1" cy="88.8" r="4" fill="var(--tide)"><title>2026-10-09: half-hourly max 20.9</title></circle>
+<rect x="255.1" y="72.6" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-09: rounded 21</title></rect>
+<text x="259.1" y="232" text-anchor="middle">9 Oct</text>
+<line x1="284.2" x2="284.2" y1="64.5" y2="113.0" stroke="var(--ghost)"/>
+<circle cx="284.2" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-10: 10-minute max 16.0, TX 16.1</title></circle>
+<circle cx="284.2" cy="113.0" r="4" fill="var(--tide)"><title>2026-10-10: half-hourly max 15.7</title></circle>
+<rect x="280.2" y="72.6" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-10: rounded 16</title></rect>
+<line x1="309.2" x2="309.2" y1="64.5" y2="149.4" stroke="var(--ghost)"/>
+<circle cx="309.2" cy="113.0" r="4" fill="var(--gold)"><title>2026-10-11: 10-minute max 16.3, TX 16.7</title></circle>
+<circle cx="309.2" cy="113.0" r="4" fill="var(--tide)"><title>2026-10-11: half-hourly max 16.3</title></circle>
+<rect x="305.2" y="145.4" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-11: rounded 16</title></rect>
+<line x1="334.3" x2="334.3" y1="64.5" y2="88.8" stroke="var(--ghost)"/>
+<circle cx="334.3" cy="88.8" r="4" fill="var(--gold)"><title>2026-10-12: 10-minute max 17.9, TX 18.1</title></circle>
+<circle cx="334.3" cy="88.8" r="4" fill="var(--tide)"><title>2026-10-12: half-hourly max 17.9</title></circle>
+<rect x="330.3" y="72.6" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-12: rounded 18</title></rect>
+<line x1="359.4" x2="359.4" y1="64.5" y2="100.9" stroke="var(--ghost)"/>
+<circle cx="359.4" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-13: 10-minute max 21.2, TX 21.2</title></circle>
+<circle cx="359.4" cy="100.9" r="4" fill="var(--tide)"><title>2026-10-13: half-hourly max 20.9</title></circle>
+<rect x="355.4" y="84.7" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-13: rounded 21</title></rect>
+<text x="359.4" y="232" text-anchor="middle">13 Oct</text>
+<line x1="384.5" x2="384.5" y1="64.5" y2="137.3" stroke="var(--ghost)"/>
+<circle cx="384.5" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-14: 10-minute max 20.5, TX 20.6</title></circle>
+<circle cx="384.5" cy="100.9" r="4" fill="var(--tide)"><title>2026-10-14: half-hourly max 20.3</title></circle>
+<rect x="380.5" y="133.3" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-14: rounded 20</title></rect>
+<line x1="409.5" x2="409.5" y1="28.1" y2="88.7" stroke="var(--ghost)"/>
+<circle cx="409.5" cy="88.7" r="4" fill="var(--gold)"><title>2026-10-15: 10-minute max 22.5, TX 22.7</title></circle>
+<circle cx="409.5" cy="88.7" r="4" fill="var(--tide)"><title>2026-10-15: half-hourly max 22.5</title></circle>
+<rect x="405.5" y="24.1" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-15: rounded 23</title></rect>
+<line x1="434.6" x2="434.6" y1="64.5" y2="100.9" stroke="var(--ghost)"/>
+<circle cx="434.6" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-16: 10-minute max 16.3, TX 16.3</title></circle>
+<circle cx="434.6" cy="100.9" r="4" fill="var(--tide)"><title>2026-10-16: half-hourly max 16.0</title></circle>
+<rect x="430.6" y="96.9" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-16: rounded 16</title></rect>
+<line x1="459.7" x2="459.7" y1="64.5" y2="149.4" stroke="var(--ghost)"/>
+<circle cx="459.7" cy="113.0" r="4" fill="var(--gold)"><title>2026-10-17: 10-minute max 14.3, TX 14.7</title></circle>
+<circle cx="459.7" cy="137.2" r="4" fill="var(--tide)"><title>2026-10-17: half-hourly max 14.1</title></circle>
+<rect x="455.7" y="145.4" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-17: rounded 14</title></rect>
+<text x="459.7" y="232" text-anchor="middle">17 Oct</text>
+<line x1="484.8" x2="484.8" y1="64.5" y2="161.5" stroke="var(--ghost)"/>
+<circle cx="484.8" cy="100.9" r="4" fill="var(--gold)"><title>2026-10-18: 10-minute max 14.5, TX 14.8</title></circle>
+<circle cx="484.8" cy="125.1" r="4" fill="var(--tide)"><title>2026-10-18: half-hourly max 14.3</title></circle>
+<rect x="480.8" y="157.5" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-18: rounded 14</title></rect>
+<line x1="509.8" x2="509.8" y1="52.4" y2="76.6" stroke="var(--ghost)"/>
+<circle cx="509.8" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-20: 10-minute max 12.8, TX 12.9</title></circle>
+<circle cx="509.8" cy="76.6" r="4" fill="var(--tide)"><title>2026-10-20: half-hourly max 12.8</title></circle>
+<rect x="505.8" y="48.4" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-20: rounded 13</title></rect>
+<line x1="534.9" x2="534.9" y1="64.5" y2="149.4" stroke="var(--ghost)"/>
+<circle cx="534.9" cy="113.0" r="4" fill="var(--gold)"><title>2026-10-22: 10-minute max 15.3, TX 15.7</title></circle>
+<circle cx="534.9" cy="113.0" r="4" fill="var(--tide)"><title>2026-10-22: half-hourly max 15.3</title></circle>
+<rect x="530.9" y="145.4" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-22: rounded 15</title></rect>
+<line x1="560.0" x2="560.0" y1="40.3" y2="76.6" stroke="var(--ghost)"/>
+<circle cx="560.0" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-23: 10-minute max 12.8, TX 12.8</title></circle>
+<circle cx="560.0" cy="76.6" r="4" fill="var(--tide)"><title>2026-10-23: half-hourly max 12.7</title></circle>
+<rect x="556.0" y="36.3" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-23: rounded 13</title></rect>
+<text x="560.0" y="232" text-anchor="middle">23 Oct</text>
+<line x1="585.0" x2="585.0" y1="64.5" y2="88.7" stroke="var(--ghost)"/>
+<circle cx="585.0" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-24: 10-minute max 14.2, TX 14.2</title></circle>
+<circle cx="585.0" cy="64.5" r="4" fill="var(--tide)"><title>2026-10-24: half-hourly max 14.2</title></circle>
+<rect x="581.0" y="84.7" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-24: rounded 14</title></rect>
+<line x1="610.1" x2="610.1" y1="64.5" y2="100.9" stroke="var(--ghost)"/>
+<circle cx="610.1" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-25: 10-minute max 14.1, TX 14.1</title></circle>
+<circle cx="610.1" cy="100.9" r="4" fill="var(--tide)"><title>2026-10-25: half-hourly max 13.8</title></circle>
+<rect x="606.1" y="72.6" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-25: rounded 14</title></rect>
+<line x1="635.2" x2="635.2" y1="64.5" y2="113.0" stroke="var(--ghost)"/>
+<circle cx="635.2" cy="64.5" r="4" fill="var(--gold)"><title>2026-10-26: 10-minute max 16.4, TX 16.4</title></circle>
+<circle cx="635.2" cy="76.6" r="4" fill="var(--tide)"><title>2026-10-26: half-hourly max 16.3</title></circle>
+<rect x="631.2" y="109.0" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-26: rounded 16</title></rect>
+<line x1="660.2" x2="660.2" y1="64.5" y2="88.8" stroke="var(--ghost)"/>
+<circle cx="660.2" cy="88.8" r="4" fill="var(--gold)"><title>2026-10-27: 10-minute max 16.9, TX 17.1</title></circle>
+<circle cx="660.2" cy="88.8" r="4" fill="var(--tide)"><title>2026-10-27: half-hourly max 16.9</title></circle>
+<rect x="656.2" y="72.6" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-27: rounded 17</title></rect>
+<text x="660.2" y="232" text-anchor="middle">27 Oct</text>
+<line x1="685.3" x2="685.3" y1="64.5" y2="185.7" stroke="var(--ghost)"/>
+<circle cx="685.3" cy="113.0" r="4" fill="var(--gold)"><title>2026-10-28: 10-minute max 16.6, TX 17.0</title></circle>
+<circle cx="685.3" cy="137.3" r="4" fill="var(--tide)"><title>2026-10-28: half-hourly max 16.4</title></circle>
+<rect x="681.3" y="181.7" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-28: rounded 16</title></rect>
+<line x1="710.4" x2="710.4" y1="64.5" y2="113.0" stroke="var(--ghost)"/>
+<circle cx="710.4" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-29: 10-minute max 16.3, TX 16.4</title></circle>
+<circle cx="710.4" cy="76.6" r="4" fill="var(--tide)"><title>2026-10-29: half-hourly max 16.3</title></circle>
+<rect x="706.4" y="109.0" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-29: rounded 16</title></rect>
+<line x1="735.5" x2="735.5" y1="64.5" y2="88.7" stroke="var(--ghost)"/>
+<circle cx="735.5" cy="76.6" r="4" fill="var(--gold)"><title>2026-10-30: 10-minute max 17.1, TX 17.2</title></circle>
+<circle cx="735.5" cy="88.7" r="4" fill="var(--tide)"><title>2026-10-30: half-hourly max 17.0</title></circle>
+<rect x="731.5" y="84.7" width="8" height="8" fill="none" stroke="var(--buoy)" stroke-width="2"><title>2026-10-30: rounded 17</title></rect>
+</svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>half-hourly max</span>
+ <span><i class="sw" style="background:var(--gold)"></i>10-minute max</span>
+ <span><i class="sw sq" style="border:2px solid var(--buoy)"></i>half-hourly max, rounded</span>
+</div></div>
+<p>Sampling every half hour misses 0.16 C of the 10-minute peak on average, and the SYNOP maximum sits another 0.19 C above the highest 10-minute reading because it catches the peak inside the ten minutes. Rounded, the half-hourly high lands 0.33 C under the maximum. That holds the sensor fixed, so it is the most sampling alone can do. Caveat: the cache had no :50 reports, so :00 and :30 stand in for Heathrow's :20 and :50.</p>
+
+<h2>4. The METAR lags the air</h2>
+<p class="note">P-0354: the same 738 matched minutes as section 2, split by UTC hour. Red where the METAR reads colder than the tenths, teal where warmer.</p>
+<div class="chart"><svg viewBox="0 0 760 240" role="img" aria-label="Mean METAR minus SYNOP tenths at the same minute, by UTC hour, October">
+<line x1="46" x2="748" y1="175.7" y2="175.7" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="179.7" text-anchor="end">−0.3</text>
+<line x1="46" x2="748" y1="149.4" y2="149.4" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="153.4" text-anchor="end">−0.2</text>
+<line x1="46" x2="748" y1="123.1" y2="123.1" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="127.1" text-anchor="end">−0.1</text>
+<line x1="46" x2="748" y1="96.9" y2="96.9" stroke="var(--rule)" stroke-width="2"/>
+<text x="40" y="100.9" text-anchor="end">+0.0</text>
+<line x1="46" x2="748" y1="70.6" y2="70.6" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="74.6" text-anchor="end">+0.1</text>
+<line x1="46" x2="748" y1="44.3" y2="44.3" stroke="var(--rule)" stroke-width="1"/>
+<text x="40" y="48.3" text-anchor="end">+0.2</text>
+<rect x="48.0" y="51.9" width="25.2" height="44.9" fill="var(--tide)" opacity=".8"><title>00 UTC: +0.17 C over 31 minutes</title></rect>
+<text x="60.6" y="224" text-anchor="middle">00</text>
+<rect x="77.2" y="51.4" width="25.2" height="45.5" fill="var(--tide)" opacity=".8"><title>01 UTC: +0.17 C over 30 minutes</title></rect>
+<rect x="106.5" y="76.6" width="25.2" height="20.2" fill="var(--tide)" opacity=".8"><title>02 UTC: +0.08 C over 31 minutes</title></rect>
+<rect x="135.8" y="77.4" width="25.2" height="19.5" fill="var(--tide)" opacity=".8"><title>03 UTC: +0.07 C over 31 minutes</title></rect>
+<text x="148.4" y="224" text-anchor="middle">03</text>
+<rect x="165.0" y="96.9" width="25.2" height="8.4" fill="var(--buoy)" opacity=".8"><title>04 UTC: −0.03 C over 31 minutes</title></rect>
+<rect x="194.2" y="96.9" width="25.2" height="20.2" fill="var(--buoy)" opacity=".8"><title>05 UTC: −0.08 C over 31 minutes</title></rect>
+<rect x="223.5" y="96.9" width="25.2" height="8.4" fill="var(--buoy)" opacity=".8"><title>06 UTC: −0.03 C over 31 minutes</title></rect>
+<text x="236.1" y="224" text-anchor="middle">06</text>
+<rect x="252.8" y="96.9" width="25.2" height="40.0" fill="var(--buoy)" opacity=".8"><title>07 UTC: −0.15 C over 31 minutes</title></rect>
+<rect x="282.0" y="96.9" width="25.2" height="59.4" fill="var(--buoy)" opacity=".8"><title>08 UTC: −0.23 C over 31 minutes</title></rect>
+<rect x="311.2" y="96.9" width="25.2" height="51.8" fill="var(--buoy)" opacity=".8"><title>09 UTC: −0.20 C over 31 minutes</title></rect>
+<text x="323.9" y="224" text-anchor="middle">09</text>
+<rect x="340.5" y="96.9" width="25.2" height="79.6" fill="var(--buoy)" opacity=".8"><title>10 UTC: −0.30 C over 31 minutes</title></rect>
+<rect x="369.8" y="96.9" width="25.2" height="80.4" fill="var(--buoy)" opacity=".8"><title>11 UTC: −0.31 C over 31 minutes</title></rect>
+<rect x="399.0" y="96.9" width="25.2" height="79.6" fill="var(--buoy)" opacity=".8"><title>12 UTC: −0.30 C over 31 minutes</title></rect>
+<text x="411.6" y="224" text-anchor="middle">12</text>
+<rect x="428.2" y="96.9" width="25.2" height="43.4" fill="var(--buoy)" opacity=".8"><title>13 UTC: −0.17 C over 26 minutes</title></rect>
+<rect x="457.5" y="96.9" width="25.2" height="12.6" fill="var(--buoy)" opacity=".8"><title>14 UTC: −0.05 C over 31 minutes</title></rect>
+<rect x="486.8" y="96.9" width="25.2" height="29.7" fill="var(--buoy)" opacity=".8"><title>15 UTC: −0.11 C over 31 minutes</title></rect>
+<text x="499.4" y="224" text-anchor="middle">15</text>
+<rect x="516.0" y="96.9" width="25.2" height="38.1" fill="var(--buoy)" opacity=".8"><title>16 UTC: −0.14 C over 31 minutes</title></rect>
+<rect x="545.2" y="44.3" width="25.2" height="52.6" fill="var(--tide)" opacity=".8"><title>17 UTC: +0.20 C over 31 minutes</title></rect>
+<rect x="574.5" y="61.4" width="25.2" height="35.5" fill="var(--tide)" opacity=".8"><title>18 UTC: +0.14 C over 31 minutes</title></rect>
+<text x="587.1" y="224" text-anchor="middle">18</text>
+<rect x="603.8" y="93.4" width="25.2" height="3.4" fill="var(--tide)" opacity=".8"><title>19 UTC: +0.01 C over 31 minutes</title></rect>
+<rect x="633.0" y="41.7" width="25.2" height="55.2" fill="var(--tide)" opacity=".8"><title>20 UTC: +0.21 C over 31 minutes</title></rect>
+<rect x="662.2" y="69.8" width="25.2" height="27.1" fill="var(--tide)" opacity=".8"><title>21 UTC: +0.10 C over 31 minutes</title></rect>
+<text x="674.9" y="224" text-anchor="middle">21</text>
+<rect x="691.5" y="65.6" width="25.2" height="31.3" fill="var(--tide)" opacity=".8"><title>22 UTC: +0.12 C over 31 minutes</title></rect>
+<rect x="720.8" y="32.5" width="25.2" height="64.4" fill="var(--tide)" opacity=".8"><title>23 UTC: +0.24 C over 31 minutes</title></rect>
+<text x="748" y="238" text-anchor="end">UTC hour (London is UTC+1 until 25 Oct)</text>
+</svg></div>
+<p>Across the whole day the gap averages out to nothing, which is why section 2 found it unbiased. By hour it does not: cold from 07 UTC, worst at 10 to 12 UTC near −0.31 C, warm every evening and night up to +0.24 C. It reads cold while the air warms and warm while it cools, like a slower sensor or a longer averaging window. In each day's three warmest hours the METAR runs −0.17 C against −0.00 C in the rest (standard error of the difference about 0.07).</p>
+
+<h2>Where the 0.93 C goes</h2>
+<div class="chart"><svg viewBox="0 0 760 190" role="img" aria-label="The 0.93 C Heathrow gap split into sampling, lag and the unexplained rest">
+<text class="k" x="10" y="28">The whole gap (P-0346)</text>
+<rect x="190" y="16" width="510.0" height="18" fill="var(--buoy)" opacity=".85"/>
+<text class="k" x="706.0" y="30">0.93 C</text>
+<text class="k" x="10" y="69">Sampling and rounding</text>
+<text x="10" y="83">P-0353</text>
+<rect x="190.0" y="56" width="181.2" height="18" fill="var(--tide)" opacity=".85"/>
+<text class="k" x="377.2" y="70">0.33</text>
+<text class="k" x="10" y="107">Lag at the warm hours</text>
+<text x="10" y="121">P-0354</text>
+<rect x="371.2" y="94" width="94.7" height="18" fill="var(--gold)" opacity=".85"/>
+<text class="k" x="471.9" y="108">0.17</text>
+<text class="k" x="10" y="145">Not explained</text>
+<text x="10" y="159">open</text>
+<rect x="465.9" y="132" width="234.1" height="18" fill="var(--ghost)" opacity=".85"/>
+<text class="k" x="706.0" y="146">0.42</text>
+</svg></div>
+<p>Sampling and rounding account for 0.33 C. The lag at the warm hours, measured as the warm-hour gap minus the rest, adds 0.17 C. That leaves <b>0.42 C</b> open. My write-up of P-0354 guessed the lag at 0.2 to 0.3; this page uses the narrower measured difference, so the open piece is larger than the README implies.</p>
+
+<h2>What is not settled</h2>
+<ul>
+<li>The gap is Sep to Oct; the sampling and lag probes are October only. Summing pieces from different windows is rough.</li>
+<li>Only :20 METAR minutes were matched, and :00/:30 stood in for the sampling test.</li>
+<li>The lag piece and the sampling piece may overlap: a lagging sensor also shifts which half-hour holds the high.</li>
+<li>Nothing here says which reading a given market settles on. Read the market's rules first.</li>
+</ul>
+
+<p class="note">Built by <code>docs/probes/P-0354/build.py</code> from the four committed results files, which exits if a recomputed mean disagrees with the probe's own. Write-ups: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-06-P-0346">P-0346</a>, <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-07-P-0352">P-0352</a>, <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-07-P-0353">P-0353</a>, <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-07-P-0354">P-0354</a>. <a href="data.json">data.json</a> · <a href="../">every probe</a> · <a href="../../">the lab</a></p>
+</main>
+</body>
+</html>
