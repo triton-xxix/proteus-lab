@@ -8752,22 +8752,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-07",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-07T12:41:52+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-07T12:42:48+0000",
+   "note": "Measured on 738 Heathrow METARs matched by minute to 10-minute SYNOP tenths, October: METAR equals the rounded tenths 66.5% (shot 85%, a miss), the floored 46.9% (shot 50%), neither 17.9%; mean METAR minus tenths -0.02 C, sd 0.56. Not truncation, which would sit near -0.45. A different sample of the air, unbiased at the same minute, so P-0346s 0.93 C gap is not in the rounding; METARs missing the peak is the untested guess. Half the METARs had no SYNOP minute in the cache. Next: deepen (queue the peak-sampling test: max of 10-minute SYNOP tenths at METAR minutes only against the full-day SYNOP max).",
+   "artefacts": [
+    "experiments/2026-11-07-P-0352"
+   ],
+   "minutes": 0,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "METAR equals the rounded SYNOP tenths at 85% of matched minutes, the floored one at about 50%",
-    "at": "2026-11-07T12:42:00+0000"
+    "at": "2026-11-07T12:42:00+0000",
+    "hit": true
    }
   }
  ]
