@@ -10,9 +10,11 @@ intel lane nothing since 3 Oct, and no step had noticed any of it. "Last new row
 the newest commit that ADDED lines to the desk's file (or any file under its folder), so a script
 that rewrites a file without adding to it does not count as activity. Read-only apart from --findings.
 """
+import os
 import subprocess
 import sys
 import time
+from datetime import datetime, timedelta
 
 ROOT = "/Users/triton/PROTEUS"
 # desk, path, days allowed without a new row, why the threshold
@@ -58,7 +60,32 @@ def adding_commits(path):
     return out
 
 
+def weekly_gap(when):
+    """(ISO week, what is missing) for the last Sunday whose 18:00 weekly should be over.
+
+    F-0078, 8 Nov 2026: no weekly ran on 1 Nov and nothing noticed for 7 days. Files and the send log
+    are read directly, so a run that never started shows up the same as one that died half way.
+    Only the latest Sunday is checked: W44 stays unwritten on purpose and must not fire for ever.
+    """
+    back = when.date().isoweekday() % 7
+    if back == 0 and when.hour < 20:
+        back = 7
+    year, week, _ = (when.date() - timedelta(days=back)).isocalendar()
+    name = "%d-W%02d" % (year, week)
+    missing = []
+    if not os.path.exists("%s/field-notes/%s.md" % (ROOT, name)):
+        missing.append("no field-notes/%s.md" % name)
+    with open(ROOT + "/state/sends.log") as fh:
+        if "sent Field Notes " + name not in fh.read():
+            missing.append("no send line in state/sends.log")
+    return name, missing
+
+
 def main():
+    if "--weekly-as-of" in sys.argv:  # test only: never writes a finding
+        when = datetime.fromisoformat(sys.argv[sys.argv.index("--weekly-as-of") + 1])
+        print("weekly as of %s: %s %s" % ((when,) + (lambda n, m: (n, "; ".join(m) or "ok"))(*weekly_gap(when))))
+        return
     add = "--findings" in sys.argv
     now = time.time()
     silent = []
@@ -89,6 +116,11 @@ def main():
             subprocess.run([sys.executable, ROOT + "/bin/findings.py", "add", "--source", "silence",
                             "--desk", desk, "--severity", "med", "--title", "desk silent", "--evidence", ev])
     print("%d silent of %d" % (len(silent), len(DESKS)))
+    name, missing = weekly_gap(datetime.now())
+    print("weekly %s: %s" % (name, "; ".join(missing) or "ok"))
+    if add and missing:
+        subprocess.run([sys.executable, ROOT + "/bin/findings.py", "add", "--source", "silence", "--desk", "field-notes",
+                        "--severity", "high", "--title", "weekly note missing", "--evidence", "%s: %s" % (name, "; ".join(missing))])
 
 
 if __name__ == "__main__":

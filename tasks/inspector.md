@@ -52,7 +52,7 @@ nightly's duecheck does that.
 ## 4. Quiet desks
 
 `python3 /Users/triton/PROTEUS/bin/silence.py --findings`
-It adds SILENT desks itself. Also read its `7d` column: a desk that should run nightly with 2 or fewer adding
+It adds SILENT desks itself, and a high finding if last Sunday's Field Notes file or send line is missing (F-0078). Also read its `7d` column: a desk that should run nightly with 2 or fewer adding
 commits in seven days is a med finding even when it is not SILENT (the Pitch model on 9 Oct: 2).
 `grinder-ledger` is not a nightly desk: it gains rows only when the gate passes a token. Its low `7d` is a
 finding only if `grinder-snapshot` is also low or the nightly Grinder line is missing; with snapshots landing
