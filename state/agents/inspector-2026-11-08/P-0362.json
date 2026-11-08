@@ -1,0 +1,216 @@
+{
+ "repos": [
+  {
+   "lang": "Rust",
+   "repo": "BurntSushi/ripgrep",
+   "tarball_bytes": 628110,
+   "files": 102,
+   "cl100k": 460732,
+   "words": 199344,
+   "chars": 1879716,
+   "tokens_per_word": 2.311,
+   "words_x1.3_over_cl100k": 0.562,
+   "chars_over_4_over_cl100k": 1.02,
+   "file_ratio_p10_p90": [
+    1.75,
+    2.95
+   ]
+  },
+  {
+   "lang": "Rust",
+   "repo": "sharkdp/bat",
+   "tarball_bytes": 2180527,
+   "files": 63,
+   "cl100k": 166369,
+   "words": 49197,
+   "chars": 659321,
+   "tokens_per_word": 3.382,
+   "words_x1.3_over_cl100k": 0.384,
+   "chars_over_4_over_cl100k": 0.991,
+   "file_ratio_p10_p90": [
+    1.92,
+    3.59
+   ]
+  },
+  {
+   "lang": "Rust",
+   "repo": "sharkdp/fd",
+   "tarball_bytes": 143965,
+   "files": 25,
+   "cl100k": 73729,
+   "words": 25672,
+   "chars": 290877,
+   "tokens_per_word": 2.872,
+   "words_x1.3_over_cl100k": 0.453,
+   "chars_over_4_over_cl100k": 0.986,
+   "file_ratio_p10_p90": [
+    2.02,
+    4.19
+   ]
+  },
+  {
+   "lang": "Rust",
+   "repo": "serde-rs/serde",
+   "tarball_bytes": 202008,
+   "files": 208,
+   "cl100k": 300715,
+   "words": 108570,
+   "chars": 1246305,
+   "tokens_per_word": 2.77,
+   "words_x1.3_over_cl100k": 0.469,
+   "chars_over_4_over_cl100k": 1.036,
+   "file_ratio_p10_p90": [
+    2.03,
+    3.26
+   ]
+  },
+  {
+   "lang": "Rust",
+   "repo": "tokio-rs/axum",
+   "tarball_bytes": 447231,
+   "files": 305,
+   "cl100k": 349568,
+   "words": 136499,
+   "chars": 1452331,
+   "tokens_per_word": 2.561,
+   "words_x1.3_over_cl100k": 0.508,
+   "chars_over_4_over_cl100k": 1.039,
+   "file_ratio_p10_p90": [
+    2.14,
+    3.31
+   ]
+  },
+  {
+   "lang": "Rust",
+   "repo": "clap-rs/clap",
+   "tarball_bytes": 646497,
+   "files": 337,
+   "cl100k": 638961,
+   "words": 223286,
+   "chars": 2594723,
+   "tokens_per_word": 2.862,
+   "words_x1.3_over_cl100k": 0.454,
+   "chars_over_4_over_cl100k": 1.015,
+   "file_ratio_p10_p90": [
+    2.14,
+    4.03
+   ]
+  },
+  {
+   "lang": "Java",
+   "repo": "google/gson",
+   "tarball_bytes": 501003,
+   "files": 266,
+   "cl100k": 453530,
+   "words": 195375,
+   "chars": 2040512,
+   "tokens_per_word": 2.321,
+   "words_x1.3_over_cl100k": 0.56,
+   "chars_over_4_over_cl100k": 1.125,
+   "file_ratio_p10_p90": [
+    1.61,
+    3.02
+   ]
+  },
+  {
+   "lang": "Java",
+   "repo": "junit-team/junit4",
+   "tarball_bytes": 968122,
+   "files": 471,
+   "cl100k": 294793,
+   "words": 127395,
+   "chars": 1450036,
+   "tokens_per_word": 2.314,
+   "words_x1.3_over_cl100k": 0.562,
+   "chars_over_4_over_cl100k": 1.23,
+   "file_ratio_p10_p90": [
+    1.68,
+    3.17
+   ]
+  },
+  {
+   "lang": "Java",
+   "repo": "apache/commons-lang",
+   "tarball_bytes": 1552548,
+   "files": 638,
+   "cl100k": 2044886,
+   "words": 890520,
+   "chars": 8934774,
+   "tokens_per_word": 2.296,
+   "words_x1.3_over_cl100k": 0.566,
+   "chars_over_4_over_cl100k": 1.092,
+   "file_ratio_p10_p90": [
+    1.5,
+    3.08
+   ]
+  },
+  {
+   "lang": "Java",
+   "repo": "square/javapoet",
+   "tarball_bytes": 90815,
+   "files": 39,
+   "cl100k": 99864,
+   "words": 37858,
+   "chars": 441434,
+   "tokens_per_word": 2.638,
+   "words_x1.3_over_cl100k": 0.493,
+   "chars_over_4_over_cl100k": 1.105,
+   "file_ratio_p10_p90": [
+    1.8,
+    3.37
+   ]
+  },
+  {
+   "lang": "Java",
+   "repo": "google/guice",
+   "tarball_bytes": 741923,
+   "files": 631,
+   "cl100k": 823374,
+   "words": 360302,
+   "chars": 3942448,
+   "tokens_per_word": 2.285,
+   "words_x1.3_over_cl100k": 0.569,
+   "chars_over_4_over_cl100k": 1.197,
+   "file_ratio_p10_p90": [
+    1.52,
+    2.77
+   ]
+  },
+  {
+   "lang": "Java",
+   "repo": "jhy/jsoup",
+   "tarball_bytes": 826006,
+   "files": 216,
+   "cl100k": 601219,
+   "words": 226630,
+   "chars": 2678323,
+   "tokens_per_word": 2.653,
+   "words_x1.3_over_cl100k": 0.49,
+   "chars_over_4_over_cl100k": 1.114,
+   "file_ratio_p10_p90": [
+    1.76,
+    3.39
+   ]
+  }
+ ],
+ "errors": [],
+ "one_factor_median": 2.599,
+ "repos_within_15pct_of_2.51": 11,
+ "repos_counted": 12,
+ "by_lang": {
+  "Rust": {
+   "median": 2.816,
+   "min": 2.311,
+   "max": 3.382,
+   "pooled": 2.68
+  },
+  "Java": {
+   "median": 2.317,
+   "min": 2.285,
+   "max": 2.653,
+   "pooled": 2.349
+  }
+ },
+ "words_x1.3_share_of_true_median": 0.5,
+ "chars_over_4_share_of_true_median": 1.066
+}

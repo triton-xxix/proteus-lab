@@ -1,19 +1,19 @@
 {
  "summary": {
-  "n": 131,
+  "n": 137,
   "waiting": 0,
-  "hits": 120,
-  "hit_rate": 0.916,
+  "hits": 126,
+  "hit_rate": 0.92,
   "mean_p": 0.662,
-  "brier": 0.144,
-  "brier_at_hit_rate": 0.077,
-  "called_works": 120,
-  "called_works_hits": 114,
+  "brier": 0.142,
+  "brier_at_hit_rate": 0.074,
+  "called_works": 126,
+  "called_works_hits": 120,
   "called_other": 11,
   "called_other_hits": 6,
-  "verdict_works": 119,
+  "verdict_works": 125,
   "first": "2026-10-12",
-  "last": "2026-11-06"
+  "last": "2026-11-07"
  },
  "bins": [
   {
@@ -24,21 +24,21 @@
   },
   {
    "label": "55%",
-   "n": 13,
+   "n": 14,
    "mean_p": 0.55,
-   "hit_rate": 0.769
+   "hit_rate": 0.786
   },
   {
    "label": "60 to 65%",
-   "n": 39,
-   "mean_p": 0.614,
-   "hit_rate": 0.923
+   "n": 41,
+   "mean_p": 0.615,
+   "hit_rate": 0.927
   },
   {
    "label": "70 to 75%",
-   "n": 45,
-   "mean_p": 0.722,
-   "hit_rate": 0.956
+   "n": 48,
+   "mean_p": 0.723,
+   "hit_rate": 0.958
   },
   {
    "label": "80% and up",
@@ -1357,6 +1357,66 @@
    "hit": 1,
    "number": "0 to 2 books over 100 tonight, with under 50 units of lockable size each, and none surviving harsh commission",
    "at": "2026-11-06T23:53:41+0000"
+  },
+  {
+   "id": "P-0339",
+   "title": "Slow retry of P-0338: Wikimedia pageviews for the remaining pages on the 100 walks, about 60 a night with P-0338's cache in sandbox/p0338-vi",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "Spearman +0.20 across all 395 pages; 4% of steps on pages under 1,000 October views",
+   "at": "2026-11-07T12:32:11+0000"
+  },
+  {
+   "id": "P-0351",
+   "title": "Words times 1.3 by language: codeload tarballs (keyless) of 6 Python, 6 JS/TS and 6 Go popular repos, every source file counted with tiktoke",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "cl100k tokens per whitespace word about 2.6 overall (Python 2.5, JS 2.8, Go 2.6); one factor within 15% of every repo",
+   "at": "2026-11-07T12:40:01+0000"
+  },
+  {
+   "id": "P-0352",
+   "title": "Heathrow METAR rounding rule: Iowa Mesonet EGLL METARs for October 2026 (one curl) matched by minute to the cached Ogimet 10-minute SYNOPs f",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "METAR equals the rounded SYNOP tenths at 85% of matched minutes, the floored one at about 50%",
+   "at": "2026-11-07T12:42:00+0000"
+  },
+  {
+   "id": "P-0353",
+   "title": "Heathrow peak sampling: from the cached October 10-minute SYNOPs for 03772, the daily max of the tenths at :20 and :50 only against the full",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "max of the :20 and :50 tenths sits 0.25 C under the full 10-minute max, and the full 10-minute max 0.3 C under SYNOP TX",
+   "at": "2026-11-07T12:43:19+0000"
+  },
+  {
+   "id": "P-0354",
+   "title": "EGLL METAR cold at the peak? Split P-0352's matched METAR minus SYNOP tenths at Heathrow (October, rounding.py) by hour of day and by the da",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "METAR minus tenths about -0.3 C in the 12 to 15 UTC hours against about +0.1 C at night",
+   "at": "2026-11-07T12:44:12+0000"
+  },
+  {
+   "id": "P-0355",
+   "title": "Munich airport break at 19 Apr 2026: DWD's sensor history for 01262 ends its 2011 PT 100 row on 20260419; split P-0347's EDDM METAR high min",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "gap shift at 19 Apr 2026 about +0.25 C (after minus before), against under 0.1 C for the same split in 2025",
+   "at": "2026-11-07T12:45:56+0000"
   }
  ]
 }

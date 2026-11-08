@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-11-07 09:06.
+Rebuilt 2026-11-08 09:06.
 
 ## By month
 
@@ -20,7 +20,7 @@ Rebuilt 2026-11-07 09:06.
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
 | 2026-10 | scheduled runs | 4.16M | 950.29M | 23.51M | 49.4k |
 | 2026-10 | Luke's sessions | 3.17M | 670.37M | 19.03M | 22.6k |
-| 2026-11 | scheduled runs | 1.08M | 246.26M | 5.20M | 6.0k |
+| 2026-11 | scheduled runs | 1.24M | 296.08M | 6.09M | 6.6k |
 | 2026-11 | Luke's sessions | 0 | 0 | 0 | 0 |
 
 ## Scheduled output by ISO week
@@ -36,7 +36,7 @@ Field Notes with the step that caused it.
 | 2026-W42 | 39 | 913.6k | 427.3k | YES |
 | 2026-W43 | 42 | 1.20M | 548.9k | YES |
 | 2026-W44 | 42 | 1.34M | 793.6k | no |
-| 2026-W45 | 32 | 914.2k | 1.02M | no |
+| 2026-W45 | 38 | 1.08M | 1.02M | no |
 
 ## By session
 
@@ -460,4 +460,12 @@ Field Notes with the step that caused it.
 | 2026-11-06 23:29 | nightly, child a54f9cc9 | sonnet-5-5 | 10.7k | 161.8k | 100.9k | 6 | 1 min | 76144ef5 |
 | 2026-11-06 23:29 | nightly, child ab046e2a | sonnet-5-5 | 1.6k | 240.6k | 87.4k | 8 | 0 min | 76144ef5 |
 | 2026-11-07 07:54 | lichess-morning | opus-5-5 | 3.0k | 775.3k | 51.0k | 18 | 1 min | fa19ab7f |
-| 2026-11-07 09:06 | inspector | opus-5-5 | 1.0k | 314.0k | 48.5k | 8 | 0 min | 011f5cfa |
+| 2026-11-07 09:06 | inspector | opus-5-5 | 8.6k | 2.29M | 75.0k | 44 | 4 min | 011f5cfa |
+| 2026-11-07 12:31 | trials | opus-5-5 | 50.4k | 10.70M | 169.0k | 140 | 16 min | 7f4f4413 |
+| 2026-11-07 16:36 | workshop | opus-5-5 | 20.5k | 2.87M | 96.4k | 48 | 4 min | 90b76939 |
+| 2026-11-07 20:04 | smith | opus-5-5 | 4.1k | 1.30M | 57.2k | 28 | 1 min | 09963ced |
+| 2026-11-07 23:23 | nightly | opus-5-5 | 69.4k | 31.50M | 254.3k | 318 | 38 min | 0b68bd59 |
+| 2026-11-07 23:29 | nightly, child aac89c30 | sonnet-5-5 | 10.2k | 159.4k | 98.1k | 6 | 1 min | 0b68bd59 |
+| 2026-11-07 23:34 | nightly, child a4d3fdf7 | sonnet-5-5 | 1.6k | 270.9k | 48.3k | 8 | 0 min | 0b68bd59 |
+| 2026-11-08 07:54 | lichess-morning | opus-5-5 | 2.8k | 831.8k | 96.3k | 20 | 1 min | 34e7582e |
+| 2026-11-08 09:06 | inspector | opus-5-5 | 735 | 224.6k | 48.7k | 6 | 0 min | 39ca3e69 |

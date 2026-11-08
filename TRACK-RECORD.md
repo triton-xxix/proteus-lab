@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-11-07 09:06 UTC at commit 47a34a0c.
+Rebuilt 2026-11-08 09:06 UTC at commit 23f2f1c7.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -58,13 +58,13 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 337 |
-| Works | 280 |
+| Probe verdicts | 349 |
+| Works | 292 |
 | Broken | 6 |
 | Blocked | 35 |
 | Not worth it | 16 |
 | Killed | 4 (1 by the cull rule, 3 on Luke's word) |
-| Still open | 9 |
+| Still open | 10 |
 
 ## Spend
 
