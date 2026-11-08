@@ -9158,22 +9158,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T12:40:11+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T12:40:51+0000",
+   "note": "Measured: first committed D-1 ICON-D2 row for 9 Nov, 19 members, p10 7.60, p50 8.50, p90 9.22; shot said 19 members and p50 within 0.3 of 8.5, called as a coin because P-0367 had already shown those numbers. Wired into nightly exchange step 4, D-024 registered in DUE.md for about 28 Nov, backstop 5 Dec. Nothing scored yet. Next: promote (standing nightly capture, D-024 scores it).",
+   "artefacts": [
+    "experiments/2026-11-08-P-0368"
+   ],
+   "minutes": 0,
+   "calls": 14,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "first committed row for 9 Nov with 19 members and p50 within 0.3 of 8.5 C",
-    "at": "2026-11-08T12:40:16+0000"
+    "at": "2026-11-08T12:40:16+0000",
+    "hit": true
    }
   }
  ]
