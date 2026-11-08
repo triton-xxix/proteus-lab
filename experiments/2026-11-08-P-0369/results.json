@@ -1,0 +1,113 @@
+{
+ "stuck_walks": 11,
+ "lead_text": "Cette page d’homonymie répertorie les différents sujets et articles portant le même nom.Sur les autres projets Wikimedia :concept, sur le WiktionnaireEn philosophie, un concept est un terme désignant l’abstraction rassemblant différentes formes ayant des caractères communs.En mercatique, un concept est une présentation promotionnelle des bénéfices d’un produit destinée à être évaluée.Le concept est selon les partisans de l'art conceptuel, l'idée de base et l'élément moteur du processus créatif.Concept est un jeu de société où le mécanisme de jeu repose sur l'identification d'entités par combinaison d'éléments symboliques.Concept est le premier album d’IAM sorti en 1990.",
+ "lead_links": [
+  {
+   "title": "Philosophie",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "Concept (philosophie)",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "Concept marketing",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "Concept (art conceptuel)?action=edit&redlink=1",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "Art conceptuel",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "Concept (jeu)",
+   "parens": 0,
+   "in_italic": true,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "Concept (album)",
+   "parens": 0,
+   "in_italic": true,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  },
+  {
+   "title": "IAM",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false
+  }
+ ],
+ "strict_first_link": null,
+ "bent": [
+  {
+   "title": "Philosophie",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false,
+   "outcome": "philosophy",
+   "hops": 0,
+   "path": [
+    "Philosophie"
+   ]
+  },
+  {
+   "title": "Concept (philosophie)",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false,
+   "outcome": "philosophy",
+   "hops": 1,
+   "path": [
+    "Concept (philosophie)",
+    "Philosophie"
+   ]
+  },
+  {
+   "title": "Concept marketing",
+   "parens": 0,
+   "in_italic": false,
+   "in_list": true,
+   "in_sup": false,
+   "in_table": false,
+   "outcome": "dead end",
+   "hops": 0,
+   "path": [
+    "Concept marketing"
+   ]
+  }
+ ]
+}
