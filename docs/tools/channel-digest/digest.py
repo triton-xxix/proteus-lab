@@ -17,6 +17,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 
@@ -117,7 +118,11 @@ def main():
     ap.add_argument("--max", type=int, default=5, help="videos per channel")
     ap.add_argument("--top", type=int, default=5, help="flagged lines per video")
     ap.add_argument("--out", default=HERE)
+    ap.add_argument("--sleep", type=float, default=4.0, help="seconds between caption fetches")
+    ap.add_argument("--dump", help="also write every scored sentence as JSON lines to this file")
     a = ap.parse_args()
+    blocked = False
+    dump = open(a.dump, "w") if a.dump else None
     now = dt.datetime.now(dt.timezone.utc)
     since = now - dt.timedelta(days=a.days)
     digest = {"built": now.strftime("%Y-%m-%d %H:%M UTC"), "days": a.days, "channels": []}
@@ -130,13 +135,25 @@ def main():
             recent = [v for v in vids if dt.datetime.fromisoformat(v["published"]) >= since]
             ch["in_window"] = len(recent)
             for v in recent[:a.max]:
+                if blocked:
+                    v["error"] = "BackedOff: not fetched, an earlier caption fetch was IP-blocked"
+                    ch["videos"].append(v)
+                    continue
                 try:
+                    time.sleep(a.sleep)
                     rows = transcript(v["id"])
                     v["words"] = sum(len(x.split()) for _, x in rows)
                     v["minutes"] = round(rows[-1][0] / 60, 1) if rows else 0
                     v["sentences"], v["flags"] = flag(rows, a.top)
+                    if dump:
+                        top = {x["t"] for x in v["flags"]}
+                        for t, s in sentences(rows):
+                            if len(s.split()) >= 6:
+                                dump.write(json.dumps({"video": v["id"], "t": int(t), "score": score(s),
+                                                       "flagged": int(t) in top and score(s) >= 3, "text": s}) + "\n")
                 except Exception as e:
                     v["error"] = "%s: %s" % (type(e).__name__, str(e)[:120])
+                    blocked = type(e).__name__ in ("IpBlocked", "RequestBlocked")
                 ch["videos"].append(v)
         except Exception as e:
             ch["error"] = "%s: %s" % (type(e).__name__, str(e)[:160])
