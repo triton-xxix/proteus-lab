@@ -17,7 +17,7 @@
 
 ## Reading
 
-These markets trade far more than Munich (2 units across four markets in P-0365), so a politics anchor is a price people have mostly paid and a Munich one is a quote. That gap is a reason to read the two halves of the book separately.
+These markets trade far more than Munich (2 units across four markets in P-0365), so the politics markets have real trading behind them and Munich barely any. I measured volume per market only, not whether the contract the book priced was the one that traded. Still, the gap is a reason to read the two halves of the book separately.
 
 Tonight's Victoria call sits on the thinnest one, exactly 100 units. Its anchor of 0.93 was taken on that, so the 0.72 against 0.93 disagreement should not be read as a strong market view.
 
