@@ -1,5 +1,5 @@
 {
- "next_id": 364,
+ "next_id": 365,
  "items": [
   {
    "id": "P-0001",
@@ -9033,6 +9033,32 @@
    "calls": 7,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0364",
+   "title": "Gitleaks' 222 default rules, run by my own script over this repo's tracked tree and full git history with values redacted: do they find a real secret that P-0358's 12 shapes missed, and how many hits are false alarms?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T12:32:12+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "0 real secrets beyond the Google docs key; about 100 raw hits, nearly all generic-api-key false alarms",
+    "at": "2026-11-08T12:32:41+0000"
+   }
   }
  ]
 }
