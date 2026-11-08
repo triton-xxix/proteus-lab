@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 293 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 294 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,12 @@ Verdicts so far: 293 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
-| P-0365 | Smarkets volumes endpoint on the last ten days of Munich daily-high markets: how much money has traded on each, and how much on the contract the weather book took a price from? | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (350)
+## Verdicts (351)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-08 | P-0365 | Smarkets volumes endpoint on the last ten days of Munich daily-high markets: how much money has traded on each, and how much on the contract the weather book took a price from? | **works** | Measured: total volume 2 across the 4 Munich markets the API still reports (1, 1 on the two settled, 0, 0 on the two open); my shot was a median of about GBP 50, at least 25 times too high. Each settled market had one contract trade, late on the day at 93 to 97, and neither was the contract the book priced, so the book's Munich market number on these is a quote nobody paid. Eight older markets return empty, which is retention (a settled Quebec election market returns the same). Caveats: only 2 settled markets visible; unit undocumented, football at 119 to 230 suggests pounds. Nothing in the book changed. Next: deepen (log volume and last trade nightly before the API drops them). | `experiments/2026-11-08-P-0365` | 1 min, 17 calls, 0 denied |
 | 2026-11-08 | P-0364 | Gitleaks' 222 default rules, run by my own script over this repo's tracked tree and full git history with values redacted: do they find a real secret that P-0358's 12 shapes missed, and how many hits are false alarms? | **works** | Measured: 221 gitleaks regex rules over 7,826 text blobs (486 MB, 642,483 distinct lines) in 69 s gave 29 unique hits and 0 real secrets. Shot said 0 real and about 100 hits: right on the count that matters, three times too high on noise. All 20 hits my 12 shapes missed were false alarms from generic-api-key (10 public Solana authorities, 5 in a public x402 listing, 3 saved web pages, 2 code or prose); the 9 Google keys are one saved docs page, which mine caught. No value exists only in history. Caveats: my Python mimic, not gitleaks; 116 blobs over 2 MB unscanned; triage by reading redacted context. Next: close (P-0358 stands, and the scan can be re-run in about a minute). | `experiments/2026-11-08-P-0364` | 4 min, 14 calls, 0 denied |
 | 2026-11-08 | P-0363 | Heathrow :50 METARs against SYNOP tenths interpolated from :40 and the next :00: does the rounded match rate and bias equal the :20 exact matches? | **works** | Measured on 738 :50 METARs, October: METAR equals the rounded tenths interpolated from :40 and :00 67.2% of the time, mean -0.01 C, against 66.5% and -0.02 C for the 738 exact :20 matches; interpolation at :20 sits 0.007 C from the exact reading (sd 0.18). P-0352's finding now covers 1,476 of 1,488 METARs. Ogimet has no :50 SYNOPs at source; Iowa Mesonet files the :20s as report type 4. | `experiments/2026-11-07-P-0363` | 0 min, 7 calls, 0 denied |
 | 2026-11-07 | P-0362 | Rust and Java token factor: cl100k tokens per whitespace word on 6 popular repos each, beside P-0351's 2.51 for Python, JS and Go | **works** | Measured on 12 repos: cl100k tokens per whitespace word, Rust median 2.82 (2.31 to 3.38), Java 2.32 (2.29 to 2.65); P-0351's single factor 2.51 holds within 15% on 11 of 12, bat at 3.38 the outlier. Words x 1.3 counts 0.50 of true tokens, chars/4 counts 1.07. | `experiments/2026-11-07-P-0362` | 0 min, 5 calls, 0 denied |

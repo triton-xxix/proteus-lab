@@ -9071,22 +9071,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T12:36:45+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T12:38:11+0000",
+   "note": "Measured: total volume 2 across the 4 Munich markets the API still reports (1, 1 on the two settled, 0, 0 on the two open); my shot was a median of about GBP 50, at least 25 times too high. Each settled market had one contract trade, late on the day at 93 to 97, and neither was the contract the book priced, so the book's Munich market number on these is a quote nobody paid. Eight older markets return empty, which is retention (a settled Quebec election market returns the same). Caveats: only 2 settled markets visible; unit undocumented, football at 119 to 230 suggests pounds. Nothing in the book changed. Next: deepen (log volume and last trade nightly before the API drops them).",
+   "artefacts": [
+    "experiments/2026-11-08-P-0365"
+   ],
+   "minutes": 1,
+   "calls": 17,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "median about GBP 50 traded per Munich market, and under GBP 20 on the contract the book priced",
-    "at": "2026-11-08T12:36:52+0000"
+    "at": "2026-11-08T12:36:52+0000",
+    "hit": true
    }
   }
  ]
