@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 291 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 292 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 291 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 
-## Verdicts (348)
+## Verdicts (349)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-08 | P-0363 | Heathrow :50 METARs against SYNOP tenths interpolated from :40 and the next :00: does the rounded match rate and bias equal the :20 exact matches? | **works** | Measured on 738 :50 METARs, October: METAR equals the rounded tenths interpolated from :40 and :00 67.2% of the time, mean -0.01 C, against 66.5% and -0.02 C for the 738 exact :20 matches; interpolation at :20 sits 0.007 C from the exact reading (sd 0.18). P-0352's finding now covers 1,476 of 1,488 METARs. Ogimet has no :50 SYNOPs at source; Iowa Mesonet files the :20s as report type 4. | `experiments/2026-11-07-P-0363` | 0 min, 7 calls, 0 denied |
 | 2026-11-07 | P-0362 | Rust and Java token factor: cl100k tokens per whitespace word on 6 popular repos each, beside P-0351's 2.51 for Python, JS and Go | **works** | Measured on 12 repos: cl100k tokens per whitespace word, Rust median 2.82 (2.31 to 3.38), Java 2.32 (2.29 to 2.65); P-0351's single factor 2.51 holds within 15% on 11 of 12, bat at 3.38 the outlier. Words x 1.3 counts 0.50 of true tokens, chars/4 counts 1.07. | `experiments/2026-11-07-P-0362` | 0 min, 5 calls, 0 denied |
 | 2026-11-07 | P-0361 | Wikimedia 429 matrix: Python urllib v curl, UA with and without contact URL, api.php v REST: which cell draws the refusal P-0339 saw? | **works** | Measured at 23:55: 18 of 18 requests served across Python urllib and curl, bare and contact user agents, api.php pageviews, api.php info and REST html, two tries each 4 s apart, including the exact cell P-0339 saw refused every time. So P-0339's client block was wrong as stated; the refusals fit a pace limit on the address, which hit curl too in P-0360 when unpaced. | `experiments/2026-11-07-P-0361` | 1 min, 6 calls, 0 denied |
 | 2026-11-07 | P-0360 | German and French walk pages read: Spearman of October views against walks through, and share of steps on pages under 1,000 views, beside English | **works** | Measured on pages shared by 2+ walks: Spearman of October views against walks through -0.06 in German (76 pages) and +0.10 in French (121), against +0.17 in English, so read pages do not predict routing there. The French ring rests on Andre Lalande (philosophe), 258 October views, on 21 of 100 walks. Coverage partial: 20-title calls returned continue, 4 paced calls still refused. | `experiments/2026-11-07-P-0360` | 10 min, 32 calls, 0 denied |

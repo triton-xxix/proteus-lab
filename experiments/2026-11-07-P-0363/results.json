@@ -1,0 +1,32 @@
+{
+ "metars_routine": 1488,
+ "synop_minutes": 3668,
+ "skipped": {
+  "50_missing_neighbour": 6,
+  "20_missing": 6
+ },
+ "fifty_interpolated": {
+  "n": 738,
+  "share_rounded": 0.6721,
+  "mean_metar_minus_tenths": -0.012,
+  "sd": 0.55
+ },
+ "twenty_exact": {
+  "n": 738,
+  "share_rounded": 0.6653,
+  "mean_metar_minus_tenths": -0.023,
+  "sd": 0.558
+ },
+ "twenty_interpolated": {
+  "n": 703,
+  "share_rounded": 0.6657,
+  "mean_metar_minus_tenths": -0.035,
+  "sd": 0.551
+ },
+ "interp_minus_exact_at_20": {
+  "n": 703,
+  "mean": 0.007,
+  "sd": 0.179,
+  "within_0.2": 0.862
+ }
+}

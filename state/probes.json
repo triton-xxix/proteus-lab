@@ -1,5 +1,5 @@
 {
- "next_id": 363,
+ "next_id": 364,
  "items": [
   {
    "id": "P-0001",
@@ -9009,6 +9009,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0363",
+   "title": "Heathrow :50 METARs against SYNOP tenths interpolated from :40 and the next :00: does the rounded match rate and bias equal the :20 exact matches?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-07",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-07T23:59:50+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-08T00:00:38+0000",
+   "note": "Measured on 738 :50 METARs, October: METAR equals the rounded tenths interpolated from :40 and :00 67.2% of the time, mean -0.01 C, against 66.5% and -0.02 C for the 738 exact :20 matches; interpolation at :20 sits 0.007 C from the exact reading (sd 0.18). P-0352's finding now covers 1,476 of 1,488 METARs. Ogimet has no :50 SYNOPs at source; Iowa Mesonet files the :20s as report type 4.",
+   "artefacts": [
+    "experiments/2026-11-07-P-0363"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
