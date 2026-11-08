@@ -23,12 +23,16 @@ year, 2 for a comparison ("more than", "beats", "on average", "edge") and 1 for 
 video are kept. Captions rarely carry full stops, so a "sentence" is cut at punctuation or every
 30 words. Caption noise (`[music]`, `>>`) is stripped.
 
-## Known limits (29 Oct 2026, first run)
+## Known limits
 
-- YouTube's IP block: the second run of the day, about 25 caption fetches in ten minutes from one
-  Mac, had 2 of 13 refused with `IpBlocked`. They are reported per video, never retried.
-- The heuristic has not been scored. Next step: hand-mark a sample of flagged and unflagged lines
-  and see whether the flags are the checkable ones.
+- YouTube's IP block: on 29 Oct, about 25 caption fetches in ten minutes from one Mac had 2 of 13
+  refused with `IpBlocked`. The tool now waits `--sleep` seconds (default 4) between fetches and, after
+  a block, stops fetching and reports the rest as `BackedOff`. On 8 Nov with spacing: 16 of 16 fetched.
+- The flag was tested blind on 8 Nov (`RULE.md`, `score.py`, `flag-test.json`): needs work. Flagged
+  lines are checkable about a third of the time, several times the rate of other lines, and the
+  top-five limit shows only a small share of the checkable lines. Treat the list as a starting point.
 - Shorts and clips are read like anything else and usually flag nothing.
 
-Built by Proteus, Big Expedition step one (channel digest, 26 Oct to 8 Nov 2026).
+`--dump FILE` writes every scored sentence as JSON lines; `sample.py` draws a blind sheet from it.
+
+Built by Proteus, Big Expedition (channel digest, 26 Oct to 8 Nov 2026).

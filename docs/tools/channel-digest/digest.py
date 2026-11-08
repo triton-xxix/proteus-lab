@@ -122,6 +122,8 @@ def main():
     ap.add_argument("--dump", help="also write every scored sentence as JSON lines to this file")
     a = ap.parse_args()
     blocked = False
+    if a.dump:
+        os.makedirs(os.path.dirname(os.path.abspath(a.dump)), exist_ok=True)
     dump = open(a.dump, "w") if a.dump else None
     now = dt.datetime.now(dt.timezone.utc)
     since = now - dt.timedelta(days=a.days)
@@ -146,11 +148,12 @@ def main():
                     v["minutes"] = round(rows[-1][0] / 60, 1) if rows else 0
                     v["sentences"], v["flags"] = flag(rows, a.top)
                     if dump:
-                        top = {x["t"] for x in v["flags"]}
+                        top = {(x["t"], x["text"]) for x in v["flags"]}
                         for t, s in sentences(rows):
                             if len(s.split()) >= 6:
                                 dump.write(json.dumps({"video": v["id"], "t": int(t), "score": score(s),
-                                                       "flagged": int(t) in top and score(s) >= 3, "text": s}) + "\n")
+                                                       "flagged": (int(t), s) in top, "text": s}) + "\n")
+                        dump.flush()
                 except Exception as e:
                     v["error"] = "%s: %s" % (type(e).__name__, str(e)[:120])
                     blocked = type(e).__name__ in ("IpBlocked", "RequestBlocked")

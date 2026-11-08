@@ -1,105 +1,132 @@
-# Channel digest, last 14 days, built 2026-10-29 16:38 UTC
+# Channel digest, last 14 days, built 2026-11-08 16:38 UTC
 
 ## Unabated
 
-3 uploads in the window (feed holds the last 15).
+2 uploads in the window (feed holds the last 15).
 
-### [The Hidden Way Touts Help You Win](https://youtu.be/983DZxs9Qiw) (2026-10-22)
+### [How to Wager on the NBA Better than 90% of Bettors](https://youtu.be/8zKNNgz-uoc) (2026-11-05)
 
-1,427 words, 7.9 min, 4 of 84 sentences flagged.
+2,607 words, 15.5 min, 5 of 150 sentences flagged.
 
-- [0:04](https://youtu.be/983DZxs9Qiw?t=4) WHAT IS WHAT IS What is What is In 99% of cases, the answer is no.
-- [1:28](https://youtu.be/983DZxs9Qiw?t=88) They're selling junk picks that could never beat the market on their best days.
-- [2:52](https://youtu.be/983DZxs9Qiw?t=172) If they win 55% of the 40 plays that they give out in a month, that's a 22 and 18 record.
-- [3:00](https://youtu.be/983DZxs9Qiw?t=180) If you get every bet down at minus 110 and bet a hundred dollar units, you've risked $4400 and you'll win $220 net, but spend a thousand dollars to get
+- [2:00](https://youtu.be/8zKNNgz-uoc?t=120) If you wanted to build a do-it-yourself solution, you would have to babysit dozens of beat writers and league sources every minute of the day.
+- [6:25](https://youtu.be/8zKNNgz-uoc?t=385) If Wagner would have been ruled out 30 minutes before the game and the lines moved on everyone else but one player who's still showing an edge 15 minutes later,
+- [8:41](https://youtu.be/8zKNNgz-uoc?t=521) The number one question I get asked all the time is, should I bet everything on the screen that shows an edge of 2 5 10 or whatever other percent?
+- [8:57](https://youtu.be/8zKNNgz-uoc?t=537) Instead of just blindly betting every edge of 5% or more, you're more likely to increase your ROI and reduce your variance by applying a little critical thinking when choosing
+- [9:56](https://youtu.be/8zKNNgz-uoc?t=596) Is a 10% edge in a points prop the same as a 10% edge in a three-pointers made prop?
 
-### [What to Bet Every Day of the NFL Week](https://youtu.be/15wIaYSXT-Q) (2026-10-20)
+### [Inside the Mind of a Winning Bettor](https://youtu.be/9CrQ8f7tZQQ) (2026-10-29)
 
-124 words, 0.7 min, 0 of 9 sentences flagged.
+3,594 words, 20.6 min, 1 of 188 sentences flagged.
 
-
-### [What It Takes to Build a Prediction Market](https://youtu.be/yqGy_IGKxDg) (2026-10-16)
-
-7,707 words, 40.7 min, 5 of 404 sentences flagged.
-
-- [12:56](https://youtu.be/yqGy_IGKxDg?t=776) it sounds like technically market maker profits are going to be taxed in New Jersey at that 13% rate.
-- [17:34](https://youtu.be/yqGy_IGKxDg?t=1054) to happen at a half a percent or 1% rate.
-- [22:57](https://youtu.be/yqGy_IGKxDg?t=1377) Almost every time, 85 90% of the time.
-- [28:07](https://youtu.be/yqGy_IGKxDg?t=1687) parlays or same game parlays, comparing it to an average 1% transaction fee that Kowi takes and was implying that um like Kowi's hold or their take is is 20
-- [40:19](https://youtu.be/yqGy_IGKxDg?t=2419) Feels like 80% now, but it might be 50/50 in two years time.
+- [13:12](https://youtu.be/9CrQ8f7tZQQ?t=792) this edge, it's going to win 350 units a week." And then you find out that there's a sign inversion.
 
 ## Outlier
 
-15 uploads in the window (feed holds the last 15). The whole feed is inside the window, so there may be more.
+14 uploads in the window (feed holds the last 15).
 
-### [THIS GUY IS NOT SERIOUS!](https://youtu.be/RPhltJNPF-o) (2026-10-27)
+### [THIS IS A NEW LOW!](https://youtu.be/5Zn9Qt2HS3g) (2026-11-06)
 
-64 words, 0.5 min, 0 of 1 sentences flagged.
+60 words, 0.4 min, 0 of 5 sentences flagged.
 
 
-### [How to Research NFL Passing Yards Props | 2026 Outlier Guide](https://youtu.be/PcH7PpuE63M) (2026-10-26)
+### [Jaguars vs Ravens NFL Picks l Thursday November 5th](https://youtu.be/YkOSnugS_k4) (2026-11-06)
 
-2,865 words, 12.5 min, 5 of 162 sentences flagged.
+2,634 words, 15.5 min, 2 of 192 sentences flagged.
 
-- [3:53](https://youtu.be/PcH7PpuE63M?t=233) Looking at their last 10, let's say that they have at least a 70% hit rate over their last 10.
-- [6:54](https://youtu.be/PcH7PpuE63M?t=414) Well, you can see that both of these players had less than 200 yards passing, but their original lines were actually the exact same at 224 and a half, meaning
-- [7:54](https://youtu.be/PcH7PpuE63M?t=474) That's where 24% of his attempts go, which is roughly equates to eight attempts, and he has a 75% completion rate.
-- [7:59](https://youtu.be/PcH7PpuE63M?t=479) However, this Broncos defense is top 10, only allowing a 69% completion rate.
-- [8:36](https://youtu.be/PcH7PpuE63M?t=516) They pass it 49.1% of the time, run it 50.9% of the time.
+- [7:03](https://youtu.be/YkOSnugS_k4?t=423) Baltimore has the seventh highest completion rate allowed there, where Lawrence sends 13% of his throws.
+- [9:48](https://youtu.be/YkOSnugS_k4?t=588) 43% of his targets come in zones where the defense is favorable.
 
-### [I'M TAKING HIM OVER EVERYONE!](https://youtu.be/SHPA1yrdRwA) (2026-10-26)
+### [NBA Picks l Wednesday November 4th](https://youtu.be/wW4VjMHaZf8) (2026-11-05)
 
-75 words, 0.6 min, 0 of 5 sentences flagged.
+4,081 words, 23.0 min, 2 of 315 sentences flagged.
+
+- [12:33](https://youtu.be/wW4VjMHaZf8?t=753) Last year he was 53 %.
+- [18:25](https://youtu.be/wW4VjMHaZf8?t=1105) 25 % 36 % 36 % He's averaging 11 and 1/2 shot attempts.
+
+### [How to Research NBA Points Props | 2026 Outlier Guide](https://youtu.be/Y2YMiG4LCfg) (2026-11-03)
+
+2,326 words, 9.7 min, 2 of 124 sentences flagged.
+
+- [6:20](https://youtu.be/Y2YMiG4LCfg?t=380) scoring 4.5 points a game, but also averaging four and a half attempts as well, making 33% of his shots, which is a very good rate, especially from outside the
+- [6:29](https://youtu.be/Y2YMiG4LCfg?t=389) Again, Pistons nine out of 30, only allowing 13.4 attempts uh per game, but again, opponent field goal percentage is 35%.
+
+### [YOU CAN'T STOP THIS GUY!](https://youtu.be/KeoJ1E7wAgM) (2026-11-03)
+
+58 words, 0.5 min, 0 of 5 sentences flagged.
 
 
 ## OddsJam: Sports Betting Strategy & Education
 
-4 uploads in the window (feed holds the last 15).
+7 uploads in the window (feed holds the last 15).
 
-### [Why Most People Lose on Kalshi (and How I Don't)](https://youtu.be/M6_0Mrfd7_k) (2026-10-27)
+### [The Only 3 NFL Betting Strategies You Need for the Second Half](https://youtu.be/Y-RsRjDpHVk) (2026-11-07)
 
-2,932 words, 13.3 min, 5 of 168 sentences flagged.
+2,464 words, 13.1 min, 1 of 148 sentences flagged.
 
-- [0:05](https://youtu.be/M6_0Mrfd7_k?t=5) With over $2,500 in profit and a 21% return off my investment, how can I lose more bets than I've won and still make money?
-- [6:12](https://youtu.be/M6_0Mrfd7_k?t=372) Pinnacle and Circa, two sharp sportsbooks agree there's a 1.7% edge on this play.
-- [7:24](https://youtu.be/M6_0Mrfd7_k?t=444) But, we love using a combination of sharp books, and in this case, all three sharp books agree there's a 3% edge over here on No Vig for Tyler Herro
-- [9:53](https://youtu.be/M6_0Mrfd7_k?t=593) I would prefer to see a play on player props that has at least a 2% edge or higher when we're combining multiple sharp sports books.
-- [10:52](https://youtu.be/M6_0Mrfd7_k?t=652) I like to see money line spreads and totals at least have a 1% edge or higher.
+- [10:17](https://youtu.be/Y-RsRjDpHVk?t=617) 58.32% for that bet to hit.
 
-### [NBA Betting Course, Part 2: How to Find Positive EV Bets](https://youtu.be/iWi1gqgw35Y) (2026-10-21)
+### [How I Find Profitable Bets With OddsJam’s New Tool](https://youtu.be/jYoaIFeQklE) (2026-11-04)
 
-2,671 words, 12.4 min, 5 of 169 sentences flagged.
+2,235 words, 11.5 min, 2 of 121 sentences flagged.
 
-- [2:22](https://youtu.be/iWi1gqgw35Y?t=142) But, if there's, you know, 5% to Pinnacle, I will bet into No Vig.
-- [4:30](https://youtu.be/iWi1gqgw35Y?t=270) So, I'm fine de-vigging to Pinnacle and betting into FanDuel getting 2.65%.
-- [5:43](https://youtu.be/iWi1gqgw35Y?t=343) like, "Okay, well, fair value says it's 57 to power, that means it's 1%.
-- [5:59](https://youtu.be/iWi1gqgw35Y?t=359) So, you know if something is showing up as positive EV, it is 1,000% positive EV, right?
-- [7:10](https://youtu.be/iWi1gqgw35Y?t=430) So, even though this is showing up as 8% when you go and look at how is this D Vig being calculated, it's not that good.
+- [8:01](https://youtu.be/jYoaIFeQklE?t=481) Every play is ranked from 60 to 100.
+- [9:55](https://youtu.be/jYoaIFeQklE?t=595) Meaning every time you get a play in that moves like that, you are gaining an edge towards the sports books or against the sports books.
 
-### [NBA Betting Course, Part 1: How to Follow Sharp Money](https://youtu.be/5RuaIJvjKN0) (2026-10-20)
+### [Onyx Odds 3-Leg Parlay Winner (+585)](https://youtu.be/TMgYKQD9Vb4) (2026-10-30)
 
-3,052 words, 13.8 min, 1 of 169 sentences flagged.
+157 words, 0.7 min, 0 of 10 sentences flagged.
 
-- [1:30](https://youtu.be/5RuaIJvjKN0?t=90) as much money down as you physically can as long as you are good at stocks because every dollar you're like betting, let's say it has an 8% ROI.
+
+### [How I Made $3,000+ on Onyx Odds With These 3 Tools](https://youtu.be/Cqo4AAeVeuI) (2026-10-30)
+
+1,359 words, 6.2 min, 4 of 73 sentences flagged.
+
+- [0:39](https://youtu.be/Cqo4AAeVeuI?t=39) This is their top category, and they trade this at almost a 6% return off of their investment, which means that on NBA money lines, this is the one market
+- [5:06](https://youtu.be/Cqo4AAeVeuI?t=306) Now, my percentage here is going to be 1%.
+- [5:29](https://youtu.be/Cqo4AAeVeuI?t=329) Now, right here, I like a 50% agreement.
+- [5:37](https://youtu.be/Cqo4AAeVeuI?t=337) We're just looking for plays that have a minimum of a 1% edge here.
+
+### [Get Ahead of NBA Line Movement with OddsJam Momentum (NEW TOOL)](https://youtu.be/wb9qyIQKsYU) (2026-10-29)
+
+2,465 words, 11.4 min, 2 of 138 sentences flagged.
+
+- [6:00](https://youtu.be/wb9qyIQKsYU?t=360) They're charging 134% for a market that obviously only has 100% right cuz 100% of the time it either goes over or under.
+- [9:05](https://youtu.be/wb9qyIQKsYU?t=545) Now, when I bet this earlier, it was even more than 3650, but the thing that you need to realize and something that I am coming around to the idea
 
 ## 8rainbets®
 
-3 uploads in the window (feed holds the last 15).
+4 uploads in the window (feed holds the last 15).
 
-### [Sports Gambling: Insider Insights & Speed Advantages #shorts](https://youtu.be/bIDkmaLGIMg) (2026-10-17)
+### [SPOOKY! Advantage Sports Betting LIVE with 8rainbets®](https://youtu.be/KvBGTGbk0fw) (2026-10-31)
 
-287 words, 1.5 min, 0 of 15 sentences flagged.
+9,769 words, 51.8 min, 5 of 598 sentences flagged.
+
+- [8:43](https://youtu.be/KvBGTGbk0fw?t=523) I I I won like a ridiculous It was like 70% return on on NFL.
+- [30:09](https://youtu.be/KvBGTGbk0fw?t=1809) So you get, um, 30% off your very first purchase at A Train Station.
+- [30:51](https://youtu.be/KvBGTGbk0fw?t=1851) So, the key to this, so I'm looking for the max I want to pay is minus 150 and I want it to have at least a 40% chance of
+- [31:55](https://youtu.be/KvBGTGbk0fw?t=1915) So, we don't want to be betting into 5% lines, but what we do have is the ability to take what traditional top-down plays would have, they would never be
+- [38:58](https://youtu.be/KvBGTGbk0fw?t=2338) Um but anyway, so there's shit tons of things going in my head that I would choose down to 2% or -2% edge.
+
+### [8rain Station® Help Video - Home](https://youtu.be/3x24onXKG6w) (2026-10-31)
+
+1,183 words, 6.4 min, 0 of 58 sentences flagged.
 
 
-### [Find Betting Edge: Your Strategy for Bankroll Growth #shorts](https://youtu.be/_alyVGTI888) (2026-10-16)
+### [8rain Station® Help Video - Search Page](https://youtu.be/jDq9aRBXQTo) (2026-10-31)
 
-No transcript: IpBlocked: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=_alyVGTI888! This is most likely caused b
+3,193 words, 16.7 min, 5 of 174 sentences flagged.
 
-### [Find Your Edge: Unlocking Market Inefficiencies #shorts](https://youtu.be/VMOT5cWGqgk) (2026-10-15)
+- [4:24](https://youtu.be/jDq9aRBXQTo?t=264) So if I think it's, you know, 45%likely to occur, but it's actually 48%likely to occur, that's an edge of three.
+- [4:35](https://youtu.be/jDq9aRBXQTo?t=275) That's a 3%edge based on the pricing that the market is giving me.
+- [5:32](https://youtu.be/jDq9aRBXQTo?t=332) it's giving us minus 300 to 300, that's a reasonable edge, 0.75.
+- [5:37](https://youtu.be/jDq9aRBXQTo?t=337) So you can start there and then you just go in, say, you know what, I really only want edge when it's 2%or more.
+- [7:01](https://youtu.be/jDq9aRBXQTo?t=421) So, we might say blank to 5%, which means ignore for the purposes of of bringing back positive EV plays ignore anything that has a hold percent above 5%, which
 
-No transcript: IpBlocked: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=VMOT5cWGqgk! This is most likely caused b
+### [8rain Station® Help Video - Plays Page](https://youtu.be/K7p3d99XH6U) (2026-10-31)
+
+4,520 words, 21.0 min, 1 of 268 sentences flagged.
+
+- [5:17](https://youtu.be/K7p3d99XH6U?t=317) I don't want to play any of these plays that are below 2 and 1/2% so I'm going to take these three.
 
 ## RebelBetting - Turn sports betting into investing
 

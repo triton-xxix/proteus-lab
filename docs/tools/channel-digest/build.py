@@ -23,6 +23,71 @@ def mmss(t):
     return "%d:%02d" % (t // 60, t % 60)
 
 
+# The blind test of the flags (RULE.md, score.py). Exits rather than draw a test of a different run.
+T = json.load(open(os.path.join(HERE, "flag-test.json")))
+if T["strata"]["flagged"]["population"] != flags or len(T["flagged_lines"]) != flags:
+    raise SystemExit("flag-test.json is not a test of this digest: %d flagged lines v %d" % (T["strata"]["flagged"]["population"], flags))
+MARK = {(x["video"], x["t"], x["text"]): x for x in T["flagged_lines"]}
+for v in got:
+    for f in v["flags"]:
+        if (v["id"], f["t"], f["text"]) not in MARK:
+            raise SystemExit("flagged line missing from the test: %s %d" % (v["id"], f["t"]))
+
+
+def pct(x, dp=0):
+    return "%.*f%%" % (dp, 100 * x)
+
+
+SCALE = 0.6  # the bars run 0 to 60%
+TEST_CSS = """<style>
+.test{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;margin:18px 0}
+.test h2{margin:0 0 6px;font-size:22px}.verdict{color:var(--acc)}
+.row{display:grid;grid-template-columns:minmax(92px,150px) 1fr 58px;gap:8px;align-items:center;margin:14px 0;font:14px system-ui,sans-serif}
+.track{position:relative;height:22px;background:var(--line);border-radius:3px}
+.bar{position:absolute;left:0;top:0;bottom:0;background:var(--acc);border-radius:3px 0 0 3px;opacity:.85}
+.ci{position:absolute;top:9px;height:4px;background:var(--fg)}
+.called{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--fg)}
+.num{text-align:right;font-weight:600}
+.reach{display:flex;height:26px;border-radius:3px;overflow:hidden;margin:8px 0}
+.reach i{display:block}.seg1{background:var(--acc)}.seg2{background:var(--dim)}.seg3{background:var(--line)}
+table{border-collapse:collapse;width:100%;font:14px system-ui,sans-serif;margin:8px 0}
+th,td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:right}th:first-child,td:first-child{text-align:left}
+.mk{font:600 11px system-ui,sans-serif;border-radius:3px;padding:1px 5px;margin-right:4px;white-space:nowrap}
+.yes{background:var(--acc);color:var(--bg)}.no{background:var(--line);color:var(--dim)}
+</style>"""
+S = T["strata"]
+lift = S["flagged"]["rate_me"] / S["below"]["rate_me"]
+lo, hi = [round(S["below"]["population"] * x) for x in S["below"]["ci_me"]]
+rows_html = ""
+for key, label in (("flagged", "Flagged"), ("cut", "Scored 3+, cut by the top-five limit"), ("below", "Not flagged, scored under 3")):
+    s = S[key]
+    a, b = s["ci_me"]
+    b = min(b, SCALE)
+    rows_html += ('<div class="row"><span>%s<br><span class="dim">%d of %d</span></span><div class="track">'
+                  '<div class="bar" style="width:%.1f%%"></div><div class="ci" style="left:%.1f%%;width:%.1f%%"></div>'
+                  '<div class="called" style="left:%.1f%%" title="called before marking"></div></div><span class="num">%s</span></div>') % (
+        label, s["me"], s["n"], 100 * s["rate_me"] / SCALE, 100 * a / SCALE, 100 * (b - a) / SCALE,
+        100 * T["called"][key] / SCALE, pct(s["rate_me"]))
+R = T["reach_me"]
+seg = R["by_stratum"]
+tot = sum(seg.values())
+fe = "".join("<tr><td>%s</td><td>%d</td><td>%d</td><td>%d</td></tr>" % (E(x["feature"]), x["n"], x["me"], x["child"]) for x in T["feature"])
+test = TEST_CSS + f"""<section class="test">
+<h2>Is the flag any good? <span class="verdict">{E(T["verdict"].capitalize())}.</span></h2>
+<p>I wrote the <a href="RULE.md">rule</a> and committed it, then drew {T["n"]} lines from this run with their scores hidden and marked each one: could someone test this line against data or a record, and could it turn out false? A Sonnet child marked the same sheet alone.</p>
+<p><b>{S["flagged"]["me"]} of {S["flagged"]["n"]} flagged lines were checkable, {pct(S["flagged"]["rate_me"])}.</b> Lines not flagged came in at {pct(S["below"]["rate_me"], 1)}, so a flag is about {lift:.1f} times better than a random line, but {pct(S["flagged"]["rate_me"])} is barely over the 30% at which I had said it goes. I called {pct(T["called"]["flagged"])} for flagged and {pct(T["called"]["below"])} for the rest; I was too generous to my own heuristic.</p>
+{rows_html}
+<p class="dim">Share of lines marked checkable (my marks). Black bar: 95% interval. Tall tick: what I called before marking. Scale runs to 60%. The child gave {S["flagged"]["child"]} of {S["flagged"]["n"]}, {S["cut"]["child"]} of {S["cut"]["n"]}, {S["below"]["child"]} of {S["below"]["n"]}. We agreed on {T["agree"]} of {T["n"]} lines (kappa {T["kappa"]}). My marks say {E(T["verdict_me"])}, the child's say {E(T["verdict_child"])}.</p>
+<h3>What it misses matters more</h3>
+<p>Scaling the sample up, this run holds about {R["estimated_checkable"]} checkable lines. The five-per-video list shows {pct(R["share_flagged"], 1)} of them.</p>
+<div class="reach"><i class="seg1" style="width:{100 * seg["flagged"] / tot:.1f}%"></i><i class="seg2" style="width:{100 * seg["cut"] / tot:.1f}%"></i><i class="seg3" style="width:{100 * seg["below"] / tot:.1f}%"></i></div>
+<p class="dim">Orange: flagged, {seg["flagged"]:.0f} lines. Grey: scored 3+ but cut, {seg["cut"]:.0f}. Pale: never scored high enough, about {seg["below"]:.0f}, and that is the shaky number: {S["below"]["me"]} checkable in {S["below"]["n"]} sampled from {S["below"]["population"]:,}, so anywhere from about {lo} to {hi}.</p>
+<h3>Which signal does the work</h3>
+<table><tr><th>Line contains</th><th>lines</th><th>checkable, me</th><th>checkable, child</th></tr>{fe}</table>
+<p class="dim">Each line can count in more than one row. Percentages carry the flag. The comparison word, worth 2 points, picked up {T["feature"][2]["me"]} of {T["feature"][2]["n"]}. The biggest group of misses is a speaker setting a threshold on a screen ("a minimum of a 1% edge"), which has a percentage in it and asserts nothing. Read the marks on the lines below.</p>
+</section>"""
+
+
 cards = []
 for c in chs:
     full = c.get("in_window") == c.get("feed_count")
@@ -33,8 +98,10 @@ for c in chs:
         if v.get("error"):
             rows.append('<div class="vid">%s<p class="bad">No transcript: %s</p></div>' % (head, E(v["error"].split(":")[0])))
             continue
-        li = "".join('<li><a class="ts" href="https://youtu.be/%s?t=%d">%s</a> %s</li>' % (
-            E(v["id"]), f["t"], mmss(f["t"]), E(f["text"])) for f in v["flags"])
+        li = "".join('<li><a class="ts" href="https://youtu.be/%s?t=%d">%s</a> %s%s</li>' % (
+            E(v["id"]), f["t"], mmss(f["t"]),
+            '<span class="mk yes">checkable</span>' if MARK[(v["id"], f["t"], f["text"])]["me"] else '<span class="mk no">not</span>',
+            E(f["text"])) for f in v["flags"])
         meta = '<p class="dim">%s words, %s min, %d of %d sentences flagged</p>' % (
             f"{v['words']:,}", v["minutes"], len(v["flags"]), v["sentences"])
         rows.append('<div class="vid">%s%s%s</div>' % (head, meta, "<ul>%s</ul>" % li if li else ""))
@@ -74,15 +141,17 @@ nav{font:14px system-ui,sans-serif;margin-bottom:18px}
 <div class="tile"><b>%(words)s</b><span>words read</span></div>
 <div class="tile"><b>%(flags)d of %(sents)s</b><span>sentences flagged</span></div>
 </div>
-<p class="dim">A flag is not a check. A sentence scores for a percentage, a number, a comparison or an absolute word, and the top five per video are listed so a person can go and test them. %(nb)d fetch(es) hit YouTube's IP block on this run; the tool reports them rather than retrying.</p>
+<p class="dim">A flag is not a check. A sentence scores for a percentage, a number, a comparison or an absolute word, and the top five per video are listed so a person can go and test them. %(nb)d fetch(es) failed on this run. The tool waits 4 seconds between caption fetches and, if YouTube blocks one, stops and reports the rest rather than retrying.</p>
+%(test)s
 %(cards)s
 <h2>Run it</h2>
 <p><code>python3 digest.py @Unabated eFd_LWmH2bQ --days 7 --max 5</code></p>
-<p class="dim">A channel is a handle, a channel id, a channel URL, or any video from the channel. Needs <code>pip install youtube-transcript-api</code>. Writes <code>digest.json</code> and <code>digest.md</code>. Source: <a href="digest.py">digest.py</a>, <a href="README.md">README</a>, this run as <a href="digest.md">markdown</a>.</p>
-<p class="dim">Step one of a fortnight's build (26 Oct to 8 Nov). Next: score the flags by hand on a sample, so the heuristic earns its place or goes.</p>
+<p class="dim">A channel is a handle, a channel id, a channel URL, or any video from the channel. Needs <code>pip install youtube-transcript-api</code>. Writes <code>digest.json</code> and <code>digest.md</code>. Source: <a href="digest.py">digest.py</a>, <a href="README.md">README</a>, this run as <a href="digest.md">markdown</a>, the test as <a href="flag-test.json">flag-test.json</a> with <a href="score.py">score.py</a>.</p>
+<p class="dim">Step two of a fortnight's build (26 Oct to 8 Nov). A snapshot of this run; nothing rebuilds it yet. Next: drop the comparison word, screen out thresholds set on a screen, and test that on a fresh sample, because tuning it on these {n} lines would prove nothing.</p>
 </main></body></html>
 """ % {"days": d["days"], "built": E(d["built"]), "nch": len(chs), "inw": in_window, "got": len(got), "nv": len(vids),
-       "words": f"{words:,}", "flags": flags, "sents": f"{sents:,}", "nb": len(blocked), "cards": "\n".join(cards)}
+       "words": f"{words:,}", "flags": flags, "sents": f"{sents:,}", "nb": len(blocked), "cards": "\n".join(cards), "test": test}
+page = page.replace("{n} lines", "%d lines" % T["n"])
 
 open(os.path.join(HERE, "index.html"), "w").write(page)
 print("built index.html | channels", len(chs), "| in window", in_window, "| transcripts", len(got), "of", len(vids),
