@@ -1,0 +1,51 @@
+{
+ "obs_days": 61,
+ "leads": {
+  "0": {
+   "days": 61,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ],
+   "ukmo_days_alone": 61,
+   "icon_days_alone": 61,
+   "ukmo": {
+    "mean_obs_minus_forecast": 1.23,
+    "sd": 0.69,
+    "se": 0.09,
+    "mae": 1.28
+   },
+   "icon": {
+    "mean_obs_minus_forecast": 1.29,
+    "sd": 0.75,
+    "se": 0.1,
+    "mae": 1.37
+   },
+   "days_ukmo_closer": 35,
+   "days_icon_closer": 20
+  },
+  "1": {
+   "days": 61,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ],
+   "ukmo_days_alone": 61,
+   "icon_days_alone": 61,
+   "ukmo": {
+    "mean_obs_minus_forecast": 1.45,
+    "sd": 1.19,
+    "se": 0.15,
+    "mae": 1.66
+   },
+   "icon": {
+    "mean_obs_minus_forecast": 1.26,
+    "sd": 1.24,
+    "se": 0.16,
+    "mae": 1.53
+   },
+   "days_ukmo_closer": 23,
+   "days_icon_closer": 33
+  }
+ }
+}

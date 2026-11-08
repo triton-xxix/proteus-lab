@@ -9306,22 +9306,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T23:38:14+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T23:38:45+0000",
+   "note": "Measured at Heathrow, 61 days Sep to Oct: UKMO lead-1 observed minus forecast +1.45 C (sd 1.19), lead-0 +1.23, beside ICON +1.26 and +1.29 on the same days, which reproduce P-0323 exactly. Shot said about +0.6 and smaller than ICON: wrong on both. Two independently built models share the offset within 0.2 C, so it is the site, grid cell or observation and not an ICON habit; this does not say which. UKMO is not better at lead 1, MAE 1.66 against 1.53. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-08-P-0373"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "UKMO lead-1 mean obs minus forecast at Heathrow about +0.6 C, smaller than ICON's +1.26",
-    "at": "2026-11-08T23:38:18+0000"
+    "at": "2026-11-08T23:38:18+0000",
+    "hit": true
    }
   }
  ]
