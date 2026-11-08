@@ -9248,22 +9248,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T23:34:53+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T23:36:33+0000",
+   "note": "Measured on 30 repos: o200k over cl100k median 1.0041 (0.985 to 1.044), tokens per word 2.545 against 2.544, and 2.51 holds within 15% on 27 of 30 under both. Shot said 0.97 and 2.45: right verdict, wrong direction, a vocabulary twice the size does not shorten code. Java moves most, pooled +2.9%; Python and Go about 0. Caveat: both are OpenAI encodings, says nothing about what Claude counts. Next: close (2.5 stands for either encoding).",
+   "artefacts": [
+    "experiments/2026-11-08-P-0371"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "o200k over cl100k token ratio on code, median about 0.97 across 30 repos; factor about 2.45",
-    "at": "2026-11-08T23:34:58+0000"
+    "at": "2026-11-08T23:34:58+0000",
+    "hit": true
    }
   }
  ]

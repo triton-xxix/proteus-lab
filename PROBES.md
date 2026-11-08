@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 299 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 300 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 299 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
-| P-0371 | o200k against cl100k on code: does the newer vocabulary move the 2.5 tokens-a-word factor, by language, on the same repos as P-0351 and P-0362? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (356)
+## Verdicts (357)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-08 | P-0371 | o200k against cl100k on code: does the newer vocabulary move the 2.5 tokens-a-word factor, by language, on the same repos as P-0351 and P-0362? | **works** | Measured on 30 repos: o200k over cl100k median 1.0041 (0.985 to 1.044), tokens per word 2.545 against 2.544, and 2.51 holds within 15% on 27 of 30 under both. Shot said 0.97 and 2.45: right verdict, wrong direction, a vocabulary twice the size does not shorten code. Java moves most, pooled +2.9%; Python and Go about 0. Caveat: both are OpenAI encodings, says nothing about what Claude counts. Next: close (2.5 stands for either encoding). | `experiments/2026-11-08-P-0371` | 1 min, 6 calls, 0 denied |
 | 2026-11-08 | P-0370 | kubai-icons: does the public repo really hold 2,600+ icons under an MIT licence? | **works** | Measured: the npm package kubai-icons-static 0.2.0 has 2,871 distinct icon names (5,742 SVGs in two styles) under plain MIT, so the 2,600+ holds there; the repo has 915 files under icons/ and 1 SVG. By name match 2,095 (73%) are a base name plus a badge, leaving 776 with no parent, in line with the README saying nearly 900 objects. Shot called after reading the repo metadata, scored as a coin. Only the icons and packages are MIT: the skill is source-available and the site all rights reserved, and GitHub reports NOASSERTION. Caveats: name match only, nothing rendered. Next: close. | `experiments/2026-11-08-P-0370` | 0 min, 11 calls, 0 denied |
 | 2026-11-08 | P-0369 | French Wikipedia's Concept page ended 11 of 100 walks with no link under the first-link rule: where is its lead link hiding, and with the rule bent once on that one page, where do those walks end? | **works** | Measured: Concept on French Wikipedia is a disambiguation page with all 8 lead links in a bulleted list, which the rule skips. Shot said parentheses (wrong) and 11 of 11 reach Philosophie once bent (right on the first two links; the third, Concept marketing, is a dead end). Bent, arrivals go from 53 to 64 of 100, but the first bullet literally is Philosophie, so this is one fact counted eleven times and near to cheating. Next: close (a general disambiguation rule would need its own re-run). | `experiments/2026-11-08-P-0369` | 0 min, 11 calls, 0 denied |
 | 2026-11-08 | P-0368 | Capture a committed D-1 ICON-D2 band for Munich's high nightly beside ICON-EPS, with a DUE row: at 20 scored days, does D2's +0.5 C shift bring the coverage of the high nearer 80 percent than the global band? | **works** | Measured: first committed D-1 ICON-D2 row for 9 Nov, 19 members, p10 7.60, p50 8.50, p90 9.22; shot said 19 members and p50 within 0.3 of 8.5, called as a coin because P-0367 had already shown those numbers. Wired into nightly exchange step 4, D-024 registered in DUE.md for about 28 Nov, backstop 5 Dec. Nothing scored yet. Next: promote (standing nightly capture, D-024 scores it). | `experiments/2026-11-08-P-0368` | 0 min, 14 calls, 0 denied |
