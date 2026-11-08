@@ -1,0 +1,208 @@
+{
+ "summary": {
+  "book_non_weather_markets": 10,
+  "calls_on_them": 12,
+  "reported": 4,
+  "errors": 0,
+  "reported_share": 0.4,
+  "under_threshold": 0,
+  "threshold": 100,
+  "median_volume": 2401.0,
+  "min_volume": 100,
+  "max_volume": 3919,
+  "open_markets": 4,
+  "open_reported": 4,
+  "open_detail": [
+   {
+    "calls": [
+     "X-0005"
+    ],
+    "event": "UK Annual GDP Growth 2026",
+    "market": "UK Annual GDP Growth 2026",
+    "reported": true,
+    "volume": 3919
+   },
+   {
+    "calls": [
+     "X-0006"
+    ],
+    "event": "Global Temperature",
+    "market": "Where will 2026 rank among the hottest years on record?",
+    "reported": true,
+    "volume": 3854
+   },
+   {
+    "calls": [
+     "X-0049"
+    ],
+    "event": "General Election 2026",
+    "market": "Winning Party",
+    "reported": true,
+    "volume": 948
+   },
+   {
+    "calls": [
+     "X-0052"
+    ],
+    "event": "Victorian State Election 2026",
+    "market": "Winning Party",
+    "reported": true,
+    "volume": 100
+   }
+  ],
+  "smallest": [
+   {
+    "calls": [
+     "X-0052"
+    ],
+    "event": "Victorian State Election 2026",
+    "volume": 100
+   },
+   {
+    "calls": [
+     "X-0049"
+    ],
+    "event": "General Election 2026",
+    "volume": 948
+   },
+   {
+    "calls": [
+     "X-0006"
+    ],
+    "event": "Global Temperature",
+    "volume": 3854
+   },
+   {
+    "calls": [
+     "X-0005"
+    ],
+    "event": "UK Annual GDP Growth 2026",
+    "volume": 3919
+   }
+  ]
+ },
+ "rows": [
+  {
+   "market_id": "151999604",
+   "event": "Quebec General Election",
+   "market": "Quebec General Election Winner",
+   "calls": [
+    "X-0001",
+    "X-0002"
+   ],
+   "open": false,
+   "reported": false,
+   "volume": null,
+   "error": null
+  },
+  {
+   "market_id": "142909169",
+   "event": "Brazil Presidential Election",
+   "market": "Next President of Brazil",
+   "calls": [
+    "X-0003"
+   ],
+   "open": false,
+   "reported": false,
+   "volume": null,
+   "error": null
+  },
+  {
+   "market_id": "161916191",
+   "event": "Holborn and St Pancras By-Election - Winner",
+   "market": "Holborn and St Pancras By-Election - Winner",
+   "calls": [
+    "X-0004",
+    "X-0007"
+   ],
+   "open": false,
+   "reported": false,
+   "volume": null,
+   "error": null
+  },
+  {
+   "market_id": "135642618",
+   "event": "UK Annual GDP Growth 2026",
+   "market": "UK Annual GDP Growth 2026",
+   "calls": [
+    "X-0005"
+   ],
+   "open": true,
+   "reported": true,
+   "volume": 3919,
+   "error": null
+  },
+  {
+   "market_id": "138290279",
+   "event": "Global Temperature",
+   "market": "Where will 2026 rank among the hottest years on record?",
+   "calls": [
+    "X-0006"
+   ],
+   "open": true,
+   "reported": true,
+   "volume": 3854,
+   "error": null
+  },
+  {
+   "market_id": "167409481",
+   "event": "Anthropic IPO Date",
+   "market": "Anthropic IPO By October 31 2026",
+   "calls": [
+    "X-0008"
+   ],
+   "open": false,
+   "reported": false,
+   "volume": null,
+   "error": null
+  },
+  {
+   "market_id": "91689009",
+   "event": "Which party will control the House after the midterm elections?",
+   "market": "Which party will control the House after the midterm elections?",
+   "calls": [
+    "X-0043"
+   ],
+   "open": false,
+   "reported": false,
+   "volume": null,
+   "error": null
+  },
+  {
+   "market_id": "123220809",
+   "event": "Which party will control the Senate after the midterm elections?",
+   "market": "Which party will control the Senate after the midterm elections?",
+   "calls": [
+    "X-0044"
+   ],
+   "open": false,
+   "reported": false,
+   "volume": null,
+   "error": null
+  },
+  {
+   "market_id": "125954699",
+   "event": "General Election 2026",
+   "market": "Winning Party",
+   "calls": [
+    "X-0049"
+   ],
+   "open": true,
+   "reported": true,
+   "volume": 948,
+   "error": null
+  },
+  {
+   "market_id": "125951266",
+   "event": "Victorian State Election 2026",
+   "market": "Winning Party",
+   "calls": [
+    "X-0052"
+   ],
+   "open": true,
+   "reported": true,
+   "volume": 100,
+   "error": null
+  }
+ ]
+}

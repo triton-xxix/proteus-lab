@@ -9335,22 +9335,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T23:39:13+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T23:39:48+0000",
+   "note": "Measured: of 10 non-weather book markets, 4 report volume and they are exactly the 4 still open (3,919; 3,854; 948; 100), 0 errors; the 6 settled ones are gone, the retention P-0365 saw. Shot said about a third and 1 in 4 under 100: 40 percent, and none under though X-0052 Victoria sits exactly on 100. Politics anchors trade far more than Munich at 2 units, so read the book in two halves, and tonight 0.93 Victoria anchor is thin. Caveats: n 4, unit undocumented, settled rows unmeasurable. Next: deepen (extend volumes_log.py to the open politics markets so the rows exist before settlement).",
+   "artefacts": [
+    "experiments/2026-11-08-P-0374"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "about a third of non-weather book markets still report volume; about 1 in 4 of those under 100 traded",
-    "at": "2026-11-08T23:39:17+0000"
+    "at": "2026-11-08T23:39:17+0000",
+    "hit": true
    }
   }
  ]
