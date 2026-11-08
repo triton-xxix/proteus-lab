@@ -1,5 +1,5 @@
 {
- "next_id": 368,
+ "next_id": 369,
  "items": [
   {
    "id": "P-0001",
@@ -9148,6 +9148,32 @@
     "number": "ICON-D2 median about 0.5 C warmer than the global ICON-EPS median, on only 3 or 4 past days the API still holds",
     "at": "2026-11-08T12:39:31+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0368",
+   "title": "Capture a committed D-1 ICON-D2 band for Munich's high nightly beside ICON-EPS, with a DUE row: at 20 scored days, does D2's +0.5 C shift bring the coverage of the high nearer 80 percent than the global band?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T12:40:11+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "first committed row for 9 Nov with 19 members and p50 within 0.3 of 8.5 C",
+    "at": "2026-11-08T12:40:16+0000"
    }
   }
  ]
