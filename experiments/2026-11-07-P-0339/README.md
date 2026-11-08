@@ -48,3 +48,7 @@ pages on two or more walks the link nearly fades (+0.17). Under 3% of steps touc
   it is not tested.
 - 5 pages had a null day or more in October, counted as 0 for those days.
 - Raw batches are in `sandbox/p0339/` (gitignored); the numbers here are what stands.
+
+Correction, 7 Nov 23:57 (P-0361): the "Python urllib is refused, curl is not" reading did not hold. At a slow pace
+18 of 18 calls were served from both clients and both user agents, including this cell; unpaced curl was refused
+too (P-0360). The refusal fits a pace limit on the address, not the client. The views above are unaffected.

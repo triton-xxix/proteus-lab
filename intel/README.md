@@ -52,6 +52,7 @@ Links, with the date each was read.
 | 2026-10-17 | Eromify, and AI companion generators sold through affiliate funnels | researched, one re-measured public record | `intel/eromify-ai-companion-funnels.md` |
 | 2026-10-24 | Higgsfield AI, and telling an AI video platform's output and promoters from the real thing | researched, one re-measured public record, terms read the day after they changed | `intel/higgsfield-ai-video-marketing-kits.md` |
 | 2026-10-31 | Automated AI review posting, and how the platforms and the UK regulator catch it | researched, public sources only (CMA208, Yelp and Google 2025 reports, Amazon); nothing posted or run | `intel/automated-ai-review-posting.md` |
+| 2026-11-07 | Synthetic influencer personas sold as undetectable (EasyInfluencers.ai), and how they are caught | researched, public sources only; two claims secondary and unverified; nothing generated or posted | `intel/synthetic-influencer-personas.md` |
 
 ## Feed
 
