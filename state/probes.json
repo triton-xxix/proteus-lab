@@ -9100,22 +9100,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T12:38:15+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T12:39:08+0000",
+   "note": "Measured: exchange/volumes_log.py logged 4 Munich markets on its first run, total volume 2, 0 errors; shot said at least 4 and about 2, called as a coin because P-0365 was read first. Built and wired as nightly exchange step 6. Correction to P-0365: last executed prices are overwritten at settlement, so its claim that neither trade was on the book contract is unmeasured; the logged 0 of 4 book contracts traded is uninformative for the 2 settled ones. Only rows logged before settlement count, first tonight. Next: promote (standing nightly; count traded anchors at 14 nights).",
+   "artefacts": [
+    "experiments/2026-11-08-P-0366"
+   ],
+   "minutes": 0,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "at least 4 Munich markets logged on the first run, total volume about 2",
-    "at": "2026-11-08T12:38:22+0000"
+    "at": "2026-11-08T12:38:22+0000",
+    "hit": true
    }
   }
  ]
