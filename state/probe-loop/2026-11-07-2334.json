@@ -16,7 +16,7 @@
   "P-0362",
   "P-0363"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-08T00:00:49+0000",
+ "stop_reason": "122 of 150 calls used after 6 probes; stopping to keep the rest for the close, kill check and team record",
  "refills": 6
 }
