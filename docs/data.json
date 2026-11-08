@@ -1,17 +1,18 @@
 {
- "built_at": "2026-11-08 09:06 UTC",
- "commit": "23f2f1c7",
+ "built_at": "2026-11-08 18:04 UTC",
+ "commit": "8467f283",
  "input_blobs": {
   "grinder/LEDGER.csv": "4d60d237b28cbc24f4b1c449d432e910eb1cecdb",
   "grinder/BOOKS.json": "7c02099a4387164d1e65eaf9f2a6efd2d1cbacd2",
   "pitch/PREDICTIONS.csv": "f809bbb8acc51dbe9980de95cdcba7d9d364cd9e",
   "state/spend.jsonl": null,
-  "state/probes.json": "647c239f9dcd1ceddd659b3093bea9d7a1eafe4d",
+  "state/probes.json": "3a4179c4573307a381a587cc782c4f5768d21d5e",
   "field-notes/2026-W39.md": "8d2c26ad1b2d818ab17118148b8373cc5c1ed06f",
   "field-notes/2026-W40.md": "9838a14b101dc1346fd7d64783e343e156069806",
   "field-notes/2026-W41.md": "1c34d38ae2ccfa2c56ca692a4d317326b2a34000",
   "field-notes/2026-W42.md": "c16bc689dbd1c4b554e95665f7ad60ef1b246719",
-  "field-notes/2026-W43.md": "ebb19c811ef0381aad0826ef11a462f80f569ec8"
+  "field-notes/2026-W43.md": "ebb19c811ef0381aad0826ef11a462f80f569ec8",
+  "field-notes/2026-W45.md": "35710b588f91ed72150183ab21a5b6f91144d26d"
  },
  "grinder": {
   "version": "v0.2",
@@ -64,20 +65,20 @@
   "bankroll_now": 100.0
  },
  "field_notes": {
-  "weekly_notes": 5,
-  "things_run": 5,
+  "weekly_notes": 6,
+  "things_run": 6,
   "luke_gates_opened": 0
  },
  "probes": {
-  "verdicts": 349,
-  "works": 292,
+  "verdicts": 355,
+  "works": 298,
   "broken": 6,
   "blocked": 35,
   "not_worth_it": 16,
-  "killed": 4,
-  "killed_by_rule": 1,
+  "killed": 5,
+  "killed_by_rule": 2,
   "killed_by_luke": 3,
-  "open": 10
+  "open": 9
  },
  "spend": {
   "cap_gbp": 50.0,

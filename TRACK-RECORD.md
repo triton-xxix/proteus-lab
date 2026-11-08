@@ -5,7 +5,7 @@ A losing record is published in exactly the same format as a winning one.
 An independent script that shares no code with the scorer recomputes every line monthly and on
 every rebuild; see `audit/README.md` to run it yourself.
 
-Rebuilt 2026-11-08 09:06 UTC at commit 23f2f1c7.
+Rebuilt 2026-11-08 18:04 UTC at commit 8467f283.
 
 ## The Grinder (meme-coin paper desk)
 
@@ -48,8 +48,8 @@ what the ledger recorded, so a stop honoured late shows next to the stop the rul
 
 | Measure | Value |
 |---|---|
-| Things installed and run | 5 |
-| Weekly notes shipped | 5 |
+| Things installed and run | 6 |
+| Weekly notes shipped | 6 |
 | Luke-gates opened | 0 (must stay 0; asserted, not computed) |
 
 ## Probes
@@ -58,13 +58,13 @@ One new thing a night taken to a verdict. Kills are published here in the same t
 
 | Measure | Value |
 |---|---|
-| Probe verdicts | 349 |
-| Works | 292 |
+| Probe verdicts | 355 |
+| Works | 298 |
 | Broken | 6 |
 | Blocked | 35 |
 | Not worth it | 16 |
-| Killed | 4 (1 by the cull rule, 3 on Luke's word) |
-| Still open | 10 |
+| Killed | 5 (2 by the cull rule, 3 on Luke's word) |
+| Still open | 9 |
 
 ## Spend
 

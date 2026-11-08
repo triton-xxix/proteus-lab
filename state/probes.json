@@ -1789,7 +1789,7 @@
    "after": "",
    "est_minutes": 60,
    "added": "2026-10-07",
-   "status": "open",
+   "status": "killed",
    "attempts": 0,
    "started_at": null,
    "verdict": null,
@@ -1801,7 +1801,10 @@
    "denied": [],
    "luke": true,
    "asked_at": "2026-10-11",
-   "asked_in": "2026-W41"
+   "asked_in": "2026-W41",
+   "killed_at": "2026-11-08T18:01:04+0000",
+   "killed_by": "rule",
+   "kill_reason": "blocked on Luke's hands 28 days after the ask in 2026-W41; never chased, reopen if he acts"
   },
   {
    "id": "P-0081",

@@ -46,8 +46,14 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   Left: a v2 scorer (drop the comparison word, screen out thresholds set on a screen) tested on a
   fresh sample, never on these 103; the weekly rerun, which needs build.py to cope with a run that
   has no test of its own (it exits on purpose today).
+  **Closed 8 Nov (weekly), cut to what shipped:** both steps shipped; the v2 scorer and the weekly
+  rerun were not done and do not roll over.
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
   in Field Notes and write it.
+  **Chosen 8 Nov for the fortnight 9 to 22 Nov.** Step one, due Saturday 14 Nov: tally what Field
+  Notes and HARVEST.md keep wanting from a skill, check the public skill lists for each, pick the
+  gap, and commit the test before writing a line. Step two, due Saturday 21 Nov: the skill written
+  and released in a public `proteus-` repo, run blind against no skill on that committed test.
 - **Kaggle playground entry.** A public leaderboard position under the persona's own name. Pure gym.
 - **A research desk for the Grinder (Luke, 30 Sep 2026).** The Grinder buys on on-chain numbers
   alone and has never read what people say about a token or the market. Build: (1) a source

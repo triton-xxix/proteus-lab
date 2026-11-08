@@ -7,15 +7,14 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 298 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 298 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
 | P-0025 | Vim/Neovim undo files: does opening a vim undofile in neovim really destroy it for vim as claimed? | harvest | vim and neovim binaries (brew install if not already present, no accounts) |  | 0 | 25 min |
 | P-0045 | oMLX: does the SSD prefix cache cut time to first token on a repeated 4k prompt after a restart by 2x? | harvest | A small free model download from Hugging Face; Apple silicon |  | 0 | 30 min |
-| P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | persona | a Metaculus bot account made at metaculus.com/futureeval/participate, and the free OpenRouter credits form (asked once, 2026-W41; killed 2026-11-08 if still waiting) |  | 0 | 60 min |
 | P-0212 | vvv: does describe plus validate run keyless on a template and list its photo slots and copy fields? | harvest | Node.js 26 per the README, which may need installing |  | 0 | 25 min |
 | P-0226 | Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny and dull days by DWD SDK sunshine; is the town bias -0.5 or -1.0, and should the exchange book's +1C shrink? | desk | none | 2026-11-12 | 0 | 20 min |
 | P-0233 | ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or only the +0.5C band, and should exchange calls on Munich use the shifted band in place of the +1C rule? | desk | none | 2026-11-18 | 0 | 20 min |
@@ -431,13 +430,14 @@ Verdicts so far: 298 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | 2026-09-24 | P-0002 | Grinder: leave-one-out on the latest snapshot to find the next binding gate after age (is the $10k 1h volume gate it) | **works** | Not the volume gate. On the fixed feed (24 Sep, 72 in-window rows) the next binding gate is top-10 share at 30 percent: 11 of 72 pass it, dropping it alone lifts entries 8 to 11, three rows fail on it alone. Dropping vol1h gives 9 and one row fails on it alone. Before the feed fix nothing passed liquidity so no gate was next. | `experiments/2026-09-24-P-0002` | 0 min |
 | 2026-09-24 | P-0001 | Grinder: rugcheck insider flags (graphInsidersDetected, insider holders) on the latest snapshot: how many gate-passers carry them, and would the flag have changed G-0001 to G-0004 | **works** | graphInsidersDetected is populated on 6 of 8 gate-passers (median 5, max 37) and 16 of 30 non-passers, but the per-holder insider flag and insider risks are empty on all 38 reports, and the count grows with token age (BOME 2483). Measurable, not yet a gate: it would have excluded NPC (15) and FUNKOS (5) at zero-only. Rule unchanged. | `experiments/2026-09-24-P-0001` | 1 min |
 
-## Kills (4)
+## Kills (5)
 
 Published in the same format as live work. A kill can be reopened with a new probe if the
 reason goes away.
 
 | date | id | what | killed by | reason |
 |---|---|---|---|---|
+| 2026-11-08 | P-0080 | FutureEval entry: fork the Metaculus bot template under triton-xxix, run it in the bot-testing area, then enter the Fall 2026 bot tournament | the cull rule | blocked on Luke's hands 28 days after the ask in 2026-W41; never chased, reopen if he acts |
 | 2026-10-02 | P-0052 | Lichess bot v0: accept a challenge from Luke's account only, play legal moves from a local engine, log the game; does a full game complete with no errors? | Luke's word | Luke 2 Oct: bot against bot is fine; replaced by P-0053 (no human opponent needed) |
 | 2026-10-01 | P-0050 | Score P-0049, the pump.fun poller v3 (24h from 1 Oct 22:55 UTC, launchd com.proteus.p0049): graduation rate by token address, missed-lookup share, minute-five profile of graduates v the rest | the cull rule | entry error: added without --after, so it could run before the job it scores has finished; re-added with --after 2026-10-03 |
 | 2026-09-27 | P-0016 | Anonymised MOT results 2023: miles per year and first-test failure rate by make and age, from the 3.66 GB CSV | Luke's word | No car purchase ahead and any lease would be new; neither makes nor saves money. |
