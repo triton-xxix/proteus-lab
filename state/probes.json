@@ -9219,9 +9219,9 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-11-08",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T23:33:43+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -9229,7 +9229,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "at least 2600 distinct icon files; licence text mixed, not plain MIT",
+    "at": "2026-11-08T23:33:52+0000"
+   }
   }
  ]
 }
