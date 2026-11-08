@@ -1,5 +1,5 @@
 {
- "next_id": 375,
+ "next_id": 376,
  "items": [
   {
    "id": "P-0001",
@@ -9354,6 +9354,32 @@
     "number": "about a third of non-weather book markets still report volume; about 1 in 4 of those under 100 traded",
     "at": "2026-11-08T23:39:17+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0375",
+   "title": "Wikipedia pageview decay for four Nolan films: does the day-7 to day-30 ratio from three films predict the fourth's day 30 within 25 percent?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T23:40:15+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "leave-one-out day-30 prediction from day 7 within 25 percent on 3 of 4 films; day 30 about 12 percent of peak",
+    "at": "2026-11-08T23:40:17+0000"
    }
   }
  ]
