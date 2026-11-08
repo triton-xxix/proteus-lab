@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 302 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
 
-## Queue (9 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,7 @@ Verdicts so far: 302 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
+| P-0374 | Smarkets traded volume on the exchange book: how many of the book's non-weather markets still report volume, and how many sit under 100 traded? | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (359)
 
