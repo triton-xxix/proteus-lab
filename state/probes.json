@@ -1,5 +1,5 @@
 {
- "next_id": 373,
+ "next_id": 374,
  "items": [
   {
    "id": "P-0001",
@@ -9296,6 +9296,32 @@
     "number": "about 6 of 60 new pools at or over 10000 USD one-hour volume; median under 1000 USD",
     "at": "2026-11-08T23:36:53+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0373",
+   "title": "UKMO seamless at Heathrow: does the Met Office model carry the +1.26 C offset P-0323 found for ICON at London, from Open-Meteo previous runs against the Ogimet station highs?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T23:38:14+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "UKMO lead-1 mean obs minus forecast at Heathrow about +0.6 C, smaller than ICON's +1.26",
+    "at": "2026-11-08T23:38:18+0000"
    }
   }
  ]
