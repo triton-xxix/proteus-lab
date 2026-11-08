@@ -1,0 +1,163 @@
+{
+ "truncated": false,
+ "files": 1181,
+ "by_ext": [
+  [
+   ".js",
+   958
+  ],
+  [
+   ".tsx",
+   110
+  ],
+  [
+   ".ts",
+   27
+  ],
+  [
+   ".md",
+   22
+  ],
+  [
+   ".mjs",
+   14
+  ],
+  [
+   ".json",
+   12
+  ],
+  [
+   ".yml",
+   11
+  ],
+  [
+   "",
+   9
+  ],
+  [
+   ".png",
+   6
+  ],
+  [
+   ".html",
+   5
+  ],
+  [
+   ".webp",
+   3
+  ],
+  [
+   ".txt",
+   1
+  ]
+ ],
+ "by_top": [
+  [
+   "icons",
+   915
+  ],
+  [
+   "site",
+   143
+  ],
+  [
+   "packages",
+   33
+  ],
+  [
+   "badges",
+   20
+  ],
+  [
+   ".github",
+   13
+  ],
+  [
+   "tools",
+   12
+  ],
+  [
+   "assets",
+   6
+  ],
+  [
+   "tests",
+   6
+  ],
+  [
+   "history",
+   4
+  ],
+  [
+   "scripts",
+   4
+  ],
+  [
+   ".changeset",
+   3
+  ],
+  [
+   "src",
+   3
+  ],
+  [
+   ".editorconfig",
+   1
+  ],
+  [
+   ".gitattributes",
+   1
+  ],
+  [
+   ".gitignore",
+   1
+  ]
+ ],
+ "svg_files": 1,
+ "svg_distinct_stems": 1,
+ "svg_top_dirs": [
+  [
+   "site/src/app",
+   1
+  ]
+ ],
+ "licence_files": [
+  "LICENSE",
+  "LICENSE-ICONS",
+  "LICENSE-SITE",
+  "site/src/app/(content)/license/page.tsx",
+  "site/src/app/zh/(content)/license/page.tsx"
+ ],
+ "readme_lines": [
+  "<h1 align=\"center\">Kubai Icons</h1>",
+  "  <strong>An agent skill that draws animated icons in one consistent style.</strong><br />",
+  "  Plus 2,800+ open-source icons drawn with it, for React, Vue and the web.",
+  "  <a href=\"https://icons.kubai.design/icons/\">Browse the icons</a> \u00b7",
+  "  <a href=\"#use-the-icons\">Use them in code</a> \u00b7",
+  "  <a href=\"https://icons.kubai.design/docs/\">Docs</a>",
+  "  <img src=\"assets/hover.webp\" alt=\"Sixteen icons opening one after another on hover: a folder opens, an envelope unseals, a calendar turns a page, a lock springs open, a gear turns\" />",
+  "| **Agent skill** | The rules, engine and self-check that draw every icon in one hand. Give Claude Code, Codex or another coding agent a product, and it draws the icons that product needs. |",
+  "| **Icon library** | 2,800+ icons: nearly 900 objects, plus badged and slashed \"off\" versions. For React, Vue, plain JavaScript, web components and static SVG. MIT licensed. |",
+  "| **Website** | [icons.kubai.design](https://icons.kubai.design/), in English and Chinese. Search every icon by name, shape or meaning, recolor it, copy its code or a prompt for your agent, download it as SVG or PNG, and save a collection as a ZIP. |",
+  "Install the Kubai Icons skill for me:",
+  "clone https://github.com/kubai087/kubai-icons into your skills folder as kubai-icons",
+  "git clone https://github.com/kubai087/kubai-icons.git ~/.claude/skills/kubai-icons",
+  "Or download `kubai-icons-v*.zip` from the [latest release](https://github.com/kubai087/kubai-icons/releases/latest) and unzip it there:",
+  "unzip kubai-icons-v*.zip -d ~/.claude/skills/",
+  "Publishing to a skill marketplace that asks for a version and display names in `SKILL.md`? Upload `kubai-icons-v*-platform.zip` from the same release. It carries those fields at the top of the frontmatter.",
+  "## Ask for icons",
+  "Describe what you need in plain words. The skill triggers on requests about icons, so you don't need to name it.",
+  "- \"Read this repository and draw dynamic icons for its main features.\"",
+  "3. Runs the self-check beside existing icons, compares sizes, outlines, layers and colors, and repeats until every item on the checklist passes.",
+  "  <img src=\"assets/skill.webp\" alt=\"Six icons on hover: an alarm clock rings, a notebook opens, a scan line sweeps a QR code, a door opens to an exit arrow, a calculator key presses, a compass needle settles north\" />",
+  "## Use the icons",
+  "| [`kubai-icons-react`](packages/react) | React 18+ and Next.js, server rendering included |",
+  "| [`kubai-icons-vue`](packages/vue) | Vue 3 and Nuxt |",
+  "| [`kubai-icons`](packages/core) | Any page: a framework-free API and the `<kubai-icon>` web component |",
+  "| [`kubai-icons-static`](packages/static) | Standalone SVG files for `<img>`, design tools, native apps and CDNs |",
+  "npm i kubai-icons-react",
+  "import { Folder, CalendarCheck } from \"kubai-icons-react\";",
+  "<script type=\"module\" src=\"https://cdn.jsdelivr.net/npm/kubai-icons@0/dist/element.js\"></script>",
+  "- **One accent, every color.** Gradients, outlines, marks and shadows derive from one color through CSS, so icons follow `currentColor` and recolor without script."
+ ]
+}

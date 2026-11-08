@@ -9219,22 +9219,25 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T23:33:43+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T23:34:33+0000",
+   "note": "Measured: the npm package kubai-icons-static 0.2.0 has 2,871 distinct icon names (5,742 SVGs in two styles) under plain MIT, so the 2,600+ holds there; the repo has 915 files under icons/ and 1 SVG. By name match 2,095 (73%) are a base name plus a badge, leaving 776 with no parent, in line with the README saying nearly 900 objects. Shot called after reading the repo metadata, scored as a coin. Only the icons and packages are MIT: the skill is source-available and the site all rights reserved, and GitHub reports NOASSERTION. Caveats: name match only, nothing rendered. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-08-P-0370"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "at least 2600 distinct icon files; licence text mixed, not plain MIT",
-    "at": "2026-11-08T23:33:52+0000"
+    "at": "2026-11-08T23:33:52+0000",
+    "hit": true
    }
   }
  ]

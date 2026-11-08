@@ -1,0 +1,138 @@
+{
+ "version": "0.2.0",
+ "licence": "MIT",
+ "tarball_bytes": 985895,
+ "files": 5747,
+ "svg_files": 5742,
+ "svg_distinct_stems": 2871,
+ "svg_dirs": [
+  [
+   "package/svg-soft",
+   2871
+  ],
+  [
+   "package/svg",
+   2871
+  ]
+ ],
+ "stems_with_a_parent_stem": 2095,
+ "stems_without_a_parent": 776,
+ "off_variants": 69,
+ "top_suffixes": [
+  [
+   "check",
+   308
+  ],
+  [
+   "plus",
+   252
+  ],
+  [
+   "x",
+   217
+  ],
+  [
+   "clock",
+   136
+  ],
+  [
+   "alert",
+   119
+  ],
+  [
+   "heart",
+   112
+  ],
+  [
+   "lock",
+   112
+  ],
+  [
+   "search",
+   108
+  ],
+  [
+   "star",
+   97
+  ],
+  [
+   "cog",
+   78
+  ],
+  [
+   "sparkle",
+   73
+  ],
+  [
+   "off",
+   69
+  ],
+  [
+   "minus",
+   66
+  ],
+  [
+   "sync",
+   63
+  ],
+  [
+   "down",
+   58
+  ],
+  [
+   "up",
+   47
+  ],
+  [
+   "right",
+   29
+  ],
+  [
+   "bolt",
+   27
+  ],
+  [
+   "info",
+   24
+  ],
+  [
+   "open",
+   4
+  ],
+  [
+   "round",
+   3
+  ],
+  [
+   "left",
+   2
+  ],
+  [
+   "text",
+   2
+  ],
+  [
+   "view",
+   2
+  ],
+  [
+   "call",
+   2
+  ]
+ ],
+ "licence_files": {
+  "package/LICENSE": "MIT License\n\nCopyright (c) 2026 Kubai087 and the Kubai Icons contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation fi"
+ },
+ "sample": [
+  "abacus",
+  "accessibility",
+  "accordion",
+  "activity",
+  "activity-alert",
+  "activity-check",
+  "activity-plus",
+  "activity-search",
+  "air-purifier",
+  "air-purifier-check"
+ ]
+}
