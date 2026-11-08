@@ -1,5 +1,5 @@
 {
- "next_id": 366,
+ "next_id": 367,
  "items": [
   {
    "id": "P-0001",
@@ -9090,6 +9090,32 @@
     "number": "median about GBP 50 traded per Munich market, and under GBP 20 on the contract the book priced",
     "at": "2026-11-08T12:36:52+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0366",
+   "title": "Log Smarkets volume and last non-settlement trade nightly for every open Munich daily-high market into exchange/, before the API drops them about three days after close, so the weather book can say how many of its anchors were ever traded",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T12:38:15+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "at least 4 Munich markets logged on the first run, total volume about 2",
+    "at": "2026-11-08T12:38:22+0000"
    }
   }
  ]
