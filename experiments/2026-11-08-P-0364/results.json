@@ -1,0 +1,311 @@
+{
+ "rules_in_file": 222,
+ "rules_compiled": 221,
+ "rules_without_keywords": 0,
+ "failed_rules": [],
+ "stats": {
+  "blobs_total": 16247,
+  "blobs_head": 3700,
+  "path_allowlisted": 557,
+  "blobs_scanned": 7826,
+  "skipped_big": 116,
+  "skipped_binary": 25,
+  "not_blob": 7723,
+  "lines_distinct": 642483,
+  "bytes_read": 486115512,
+  "long_lines_windowed": 603,
+  "finished": true,
+  "seconds": 69.4
+ },
+ "unique_hits": 29,
+ "by_rule": {
+  "generic-api-key": 20,
+  "gcp-api-key": 9
+ },
+ "hits_in_head": 29,
+ "hits_my_12_shapes_also_caught": 9,
+ "my_12_shapes_distinct_lines": {
+  "google_key": 3
+ },
+ "hits": [
+  {
+   "rule": "generic-api-key",
+   "path": "docs/tools/bias-check/bias_check.py",
+   "line": 45,
+   "len": 28,
+   "entropy": 3.82,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-09-27-P-0027/page2.lightpanda.html",
+   "line": 5,
+   "len": 36,
+   "entropy": 3.81,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-09-27-P-0027/page3.lightpanda.html",
+   "line": 330,
+   "len": 64,
+   "entropy": 3.82,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-09-27-P-0027/page3.lightpanda.html",
+   "line": 989,
+   "len": 86,
+   "entropy": 5.34,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-09-30-P-0042/observe.py",
+   "line": 28,
+   "len": 43,
+   "entropy": 4.79,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 663,
+   "len": 43,
+   "entropy": 4.93,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 664,
+   "len": 44,
+   "entropy": 4.74,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 685,
+   "len": 44,
+   "entropy": 4.85,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 795,
+   "len": 44,
+   "entropy": 4.99,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 828,
+   "len": 44,
+   "entropy": 4.96,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 829,
+   "len": 44,
+   "entropy": 4.83,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-09-P-0099/results.json",
+   "line": 905,
+   "len": 44,
+   "entropy": 4.99,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-13-F-0011/out/cache/snapshots-2026-10-13.jsonl",
+   "line": 5,
+   "len": 44,
+   "entropy": 4.57,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "experiments/2026-10-13-F-0011/out/cache/snapshots-2026-10-13.jsonl",
+   "line": 6,
+   "len": 44,
+   "entropy": 4.54,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.53,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.84,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.84,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.63,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.98,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.7,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.7,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.8,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "gcp-api-key",
+   "path": "experiments/2026-10-28-P-0246/deprecations.html",
+   "line": 3541,
+   "len": 39,
+   "entropy": 4.59,
+   "in_head": true,
+   "mine_caught": [
+    "google_key"
+   ]
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "field-notes/REFILL-SOURCES.md",
+   "line": 77,
+   "len": 32,
+   "entropy": 3.87,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "sandbox/x402-discovery.json",
+   "line": 1,
+   "len": 46,
+   "entropy": 4.21,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "sandbox/x402-discovery.json",
+   "line": 1,
+   "len": 42,
+   "entropy": 4.19,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "sandbox/x402-discovery.json",
+   "line": 1,
+   "len": 42,
+   "entropy": 3.98,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "sandbox/x402-discovery.json",
+   "line": 1,
+   "len": 42,
+   "entropy": 3.83,
+   "in_head": true,
+   "mine_caught": []
+  },
+  {
+   "rule": "generic-api-key",
+   "path": "sandbox/x402-discovery.json",
+   "line": 1,
+   "len": 42,
+   "entropy": 3.88,
+   "in_head": true,
+   "mine_caught": []
+  }
+ ]
+}
