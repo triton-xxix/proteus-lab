@@ -1,0 +1,155 @@
+[
+ {
+  "day": "2026-11-01",
+  "obs": 9.9,
+  "committed_p90": 7.92,
+  "icon_d2": {
+   "n": 0
+  },
+  "icon_seamless": {
+   "n": 0
+  },
+  "d2_minus_global_p50": null
+ },
+ {
+  "day": "2026-11-02",
+  "obs": 7.9,
+  "committed_p90": 6.7,
+  "icon_d2": {
+   "n": 0
+  },
+  "icon_seamless": {
+   "n": 0
+  },
+  "d2_minus_global_p50": null
+ },
+ {
+  "day": "2026-11-03",
+  "obs": 5.5,
+  "committed_p90": 6.22,
+  "icon_d2": {
+   "n": 0
+  },
+  "icon_seamless": {
+   "n": 0
+  },
+  "d2_minus_global_p50": null
+ },
+ {
+  "day": "2026-11-04",
+  "obs": 6.5,
+  "committed_p90": 6.92,
+  "icon_d2": {
+   "n": 0
+  },
+  "icon_seamless": {
+   "n": 0
+  },
+  "d2_minus_global_p50": null
+ },
+ {
+  "day": "2026-11-05",
+  "obs": 8.3,
+  "committed_p90": null,
+  "icon_d2": {
+   "n": 19,
+   "p10": 7.28,
+   "p50": 7.7,
+   "p90": 8.2
+  },
+  "icon_seamless": {
+   "n": 39,
+   "p10": 6.36,
+   "p50": 7.2,
+   "p90": 8.02
+  },
+  "d2_minus_global_p50": 0.5
+ },
+ {
+  "day": "2026-11-06",
+  "obs": 4.5,
+  "committed_p90": 4.7,
+  "icon_d2": {
+   "n": 19,
+   "p10": 3.5,
+   "p50": 3.8,
+   "p90": 4.12
+  },
+  "icon_seamless": {
+   "n": 39,
+   "p10": 3.0,
+   "p50": 3.4,
+   "p90": 3.66
+  },
+  "d2_minus_global_p50": 0.4
+ },
+ {
+  "day": "2026-11-07",
+  "obs": 8.5,
+  "committed_p90": 8.32,
+  "icon_d2": {
+   "n": 19,
+   "p10": 7.58,
+   "p50": 7.9,
+   "p90": 8.2
+  },
+  "icon_seamless": {
+   "n": 39,
+   "p10": 6.7,
+   "p50": 7.1,
+   "p90": 7.6
+  },
+  "d2_minus_global_p50": 0.8
+ },
+ {
+  "day": "2026-11-08",
+  "obs": null,
+  "committed_p90": 10.2,
+  "icon_d2": {
+   "n": 19,
+   "p10": 9.24,
+   "p50": 9.8,
+   "p90": 10.22
+  },
+  "icon_seamless": {
+   "n": 39,
+   "p10": 9.08,
+   "p50": 9.6,
+   "p90": 10.3
+  },
+  "d2_minus_global_p50": 0.2
+ },
+ {
+  "day": "2026-11-09",
+  "obs": null,
+  "committed_p90": null,
+  "icon_d2": {
+   "n": 19,
+   "p10": 7.6,
+   "p50": 8.5,
+   "p90": 9.22
+  },
+  "icon_seamless": {
+   "n": 39,
+   "p10": 7.08,
+   "p50": 7.9,
+   "p90": 9.9
+  },
+  "d2_minus_global_p50": 0.6
+ },
+ {
+  "day": "2026-11-10",
+  "obs": null,
+  "committed_p90": null,
+  "icon_d2": {
+   "n": 0
+  },
+  "icon_seamless": {
+   "n": 39,
+   "p10": 9.18,
+   "p50": 9.8,
+   "p90": 10.94
+  },
+  "d2_minus_global_p50": null
+ }
+]

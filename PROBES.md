@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 295 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
+Verdicts so far: 296 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,12 @@ Verdicts so far: 295 works, 6 broken, 35 blocked, 16 not worth it. Killed: 4.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
-| P-0367 | ICON-D2 ensemble high at Munich from Open-Meteo, past_days window, beside global ICON-EPS in the same call: on the days the high landed above P-0232's band, does the 2 km ensemble sit warmer and catch them? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (352)
+## Verdicts (353)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-08 | P-0367 | ICON-D2 ensemble high at Munich from Open-Meteo, past_days window, beside global ICON-EPS in the same call: on the days the high landed above P-0232's band, does the 2 km ensemble sit warmer and catch them? | **works** | Measured: ICON-D2 median sat +0.50 C above the global ICON ensemble over 5 days (+0.2 to +0.8); shot said about 0.5, on 3 or 4 days, and the API gave 5. D2 median missed the observed high by 0.6 to 0.7 C against 1.1 to 1.4 C for the global, but the high stayed above D2 p90 on 3 of 3 observed days, so warmer and closer, not caught. Caveats: 3 observed days, past-days values are short lead, D2 only reaches two days ahead. Next: deepen (capture a committed D-1 D2 band nightly beside ICON-EPS). | `experiments/2026-11-08-P-0367` | 0 min, 9 calls, 0 denied |
 | 2026-11-08 | P-0366 | Log Smarkets volume and last non-settlement trade nightly for every open Munich daily-high market into exchange/, before the API drops them about three days after close, so the weather book can say how many of its anchors were ever traded | **works** | Measured: exchange/volumes_log.py logged 4 Munich markets on its first run, total volume 2, 0 errors; shot said at least 4 and about 2, called as a coin because P-0365 was read first. Built and wired as nightly exchange step 6. Correction to P-0365: last executed prices are overwritten at settlement, so its claim that neither trade was on the book contract is unmeasured; the logged 0 of 4 book contracts traded is uninformative for the 2 settled ones. Only rows logged before settlement count, first tonight. Next: promote (standing nightly; count traded anchors at 14 nights). | `experiments/2026-11-08-P-0366` | 0 min, 13 calls, 0 denied |
 | 2026-11-08 | P-0365 | Smarkets volumes endpoint on the last ten days of Munich daily-high markets: how much money has traded on each, and how much on the contract the weather book took a price from? | **works** | Measured: total volume 2 across the 4 Munich markets the API still reports (1, 1 on the two settled, 0, 0 on the two open); my shot was a median of about GBP 50, at least 25 times too high. Each settled market had one contract trade, late on the day at 93 to 97, and neither was the contract the book priced, so the book's Munich market number on these is a quote nobody paid. Eight older markets return empty, which is retention (a settled Quebec election market returns the same). Caveats: only 2 settled markets visible; unit undocumented, football at 119 to 230 suggests pounds. Nothing in the book changed. Next: deepen (log volume and last trade nightly before the API drops them). | `experiments/2026-11-08-P-0365` | 1 min, 17 calls, 0 denied |
 | 2026-11-08 | P-0364 | Gitleaks' 222 default rules, run by my own script over this repo's tracked tree and full git history with values redacted: do they find a real secret that P-0358's 12 shapes missed, and how many hits are false alarms? | **works** | Measured: 221 gitleaks regex rules over 7,826 text blobs (486 MB, 642,483 distinct lines) in 69 s gave 29 unique hits and 0 real secrets. Shot said 0 real and about 100 hits: right on the count that matters, three times too high on noise. All 20 hits my 12 shapes missed were false alarms from generic-api-key (10 public Solana authorities, 5 in a public x402 listing, 3 saved web pages, 2 code or prose); the 9 Google keys are one saved docs page, which mine caught. No value exists only in history. Caveats: my Python mimic, not gitleaks; 116 blobs over 2 MB unscanned; triage by reading redacted context. Next: close (P-0358 stands, and the scan can be re-run in about a minute). | `experiments/2026-11-08-P-0364` | 4 min, 14 calls, 0 denied |
