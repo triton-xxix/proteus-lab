@@ -1,0 +1,571 @@
+{
+ "summary": {
+  "pulled_at": "2026-11-08T23:37:06.607731+00:00",
+  "pools": 60,
+  "age_h_min": 0.018,
+  "age_h_max": 0.048,
+  "age_h_median": 0.025,
+  "vol_h1_median": 124.29454045995001,
+  "vol_h1_p90": 5125.6816209321,
+  "vol_h1_max": 50361.1627304281,
+  "vol_h1_zero": 0,
+  "clear_vol_h1": 3,
+  "clear_within_half_of_line": 3,
+  "in_age_window": 0,
+  "liq_ok": 5,
+  "clear_all_four_feed_gates": 0,
+  "gate_failures_of_those_clearing_vol": {
+   "age": 3,
+   "liq": 2,
+   "vol_h24": 3
+  },
+  "top": [
+   {
+    "pool": "solana_6dmChmA2RHEeyChQkru3TsK87LyD7Z62KvxoVnbtKw6P",
+    "name": "Wuntermut / SOL",
+    "age_h": 0.024,
+    "vol_h1": 50361.1627304281,
+    "vol_h24": 50361.1627304281,
+    "liq": 18495.6531
+   },
+   {
+    "pool": "solana_DiuL5CuogHuNauvuk5pm6xa7Pq9N5fGPeBn8fWg2cNXj",
+    "name": "OTC / SOL",
+    "age_h": 0.025,
+    "vol_h1": 13127.174881156,
+    "vol_h24": 13127.174881156,
+    "liq": 5052.1878
+   },
+   {
+    "pool": "solana_2vXb2btw51BX8aPZQcCW6eZH2P3m2UWxSoBNJfBnH7tK",
+    "name": "S&amp;P500 / SOL",
+    "age_h": 0.019,
+    "vol_h1": 12547.8042031497,
+    "vol_h24": 12547.8042031497,
+    "liq": 33028.8348
+   },
+   {
+    "pool": "solana_AnPzzToj19Ms6keJesgjas9XuQH9XMjje1DZLJo7arna",
+    "name": "BLEP / RDDT",
+    "age_h": 0.047,
+    "vol_h1": 7366.3966266804,
+    "vol_h24": 7366.3966266804,
+    "liq": 4270.1281
+   },
+   {
+    "pool": "solana_9TTYfWhteEnD3AuEZzcqYfXGBAumee1fVF6ziHxBRKuZ",
+    "name": "BLEP / SOL",
+    "age_h": 0.023,
+    "vol_h1": 5416.9060981845,
+    "vol_h24": 5416.9060981845,
+    "liq": 15726.5598
+   },
+   {
+    "pool": "solana_FZnYUSYvzma2H1SWXF7VBQXdatba8Ub2gvLkAi8FJ9EX",
+    "name": "S&amp;P500 / SOL",
+    "age_h": 0.024,
+    "vol_h1": 5125.6816209321,
+    "vol_h24": 5125.6816209321,
+    "liq": 2231.7203
+   },
+   {
+    "pool": "solana_DiuL5CuogHuNauvuk5pm6xa7Pq9N5fGPeBn8fWg2cNXj",
+    "name": "OTC / SOL",
+    "age_h": 0.025,
+    "vol_h1": 4884.1545877623,
+    "vol_h24": 4884.1545877623,
+    "liq": 4295.0764
+   },
+   {
+    "pool": "solana_6dmChmA2RHEeyChQkru3TsK87LyD7Z62KvxoVnbtKw6P",
+    "name": "Wuntermut / SOL",
+    "age_h": 0.024,
+    "vol_h1": 4210.0364293096,
+    "vol_h24": 4210.0364293096,
+    "liq": 15458.6116
+   }
+  ]
+ },
+ "rows": [
+  {
+   "pool": "solana_TYitJ721N3bBwmRFmkEXHFydDaQS7NfvWwvp4sd4JRE",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.02,
+   "vol_h1": 2.2702659173,
+   "vol_h24": 2.2702659173,
+   "liq": 0.0
+  },
+  {
+   "pool": "solana_HT9agfZ6QoKLwwT6FNxbicthqNXYcFJX1EtM9d3TsetQ",
+   "name": "cachorro / SOL",
+   "age_h": 0.02,
+   "vol_h1": 1.9553110489,
+   "vol_h24": 1.9553110489,
+   "liq": 0.0
+  },
+  {
+   "pool": "solana_H5ZjatsjaQW8VPmnuqTVb1wTJdK98svseKvmYdjA6Cgm",
+   "name": "ALLPAD / SOL",
+   "age_h": 0.021,
+   "vol_h1": 175.9647794185,
+   "vol_h24": 175.9647794185,
+   "liq": 0.0
+  },
+  {
+   "pool": "solana_9TTYfWhteEnD3AuEZzcqYfXGBAumee1fVF6ziHxBRKuZ",
+   "name": "BLEP / SOL",
+   "age_h": 0.023,
+   "vol_h1": 752.5859195757,
+   "vol_h24": 752.5859195757,
+   "liq": 24849.5937
+  },
+  {
+   "pool": "solana_DFYF4xVpXTeC8jhj8HJGTvifV6ScBKG1CLswpwDYeFUN",
+   "name": "$BULLMEAT / PUMP",
+   "age_h": 0.023,
+   "vol_h1": 16.8866645295,
+   "vol_h24": 16.8866645295,
+   "liq": 2439.33088951933
+  },
+  {
+   "pool": "solana_3qNW6UEypgJGCPiUc9DG8QM7yEz5dpkroBZikckRD9H5",
+   "name": "SpongeBob / S&amp;P500",
+   "age_h": 0.024,
+   "vol_h1": 84.7694201195,
+   "vol_h24": 84.7694201195,
+   "liq": 1456.6008
+  },
+  {
+   "pool": "solana_FZnYUSYvzma2H1SWXF7VBQXdatba8Ub2gvLkAi8FJ9EX",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.024,
+   "vol_h1": 2966.0896645743,
+   "vol_h24": 2966.0896645743,
+   "liq": 2252.5608
+  },
+  {
+   "pool": "solana_6dmChmA2RHEeyChQkru3TsK87LyD7Z62KvxoVnbtKw6P",
+   "name": "Wuntermut / SOL",
+   "age_h": 0.024,
+   "vol_h1": 4210.0364293096,
+   "vol_h24": 4210.0364293096,
+   "liq": 15458.6116
+  },
+  {
+   "pool": "solana_DHqTCVtoZevw4jBtjo1WnCRw9wLEb9Y65Qv9LY6giBcB",
+   "name": "kittylick / SOL",
+   "age_h": 0.024,
+   "vol_h1": 21.2883587501,
+   "vol_h24": 21.2883587501,
+   "liq": 1214.89205771881
+  },
+  {
+   "pool": "solana_DiuL5CuogHuNauvuk5pm6xa7Pq9N5fGPeBn8fWg2cNXj",
+   "name": "OTC / SOL",
+   "age_h": 0.025,
+   "vol_h1": 4884.1545877623,
+   "vol_h24": 4884.1545877623,
+   "liq": 4295.0764
+  },
+  {
+   "pool": "solana_2APu28qdmB8Swp2vxnhouxh5rSgvg5o22hy586Zy1bzH",
+   "name": "cachorro / SOL",
+   "age_h": 0.025,
+   "vol_h1": 0.05865601686,
+   "vol_h24": 0.05865601686,
+   "liq": 0.0087
+  },
+  {
+   "pool": "solana_4XCApuyUcW34uMVWAMtWv5NcMYnB2B3FFNXqt31xQ5Xt",
+   "name": "LaMisery / SOL",
+   "age_h": 0.025,
+   "vol_h1": 151.8918447981,
+   "vol_h24": 151.8918447981,
+   "liq": 2427.639
+  },
+  {
+   "pool": "solana_omgaookhdHGnBBYdH8G7SUaid75MvhbJqR6qgZPkavD",
+   "name": "cachorro / SOL",
+   "age_h": 0.025,
+   "vol_h1": 0.0008691742597,
+   "vol_h24": 0.0008691742597,
+   "liq": 0.00346765681902458
+  },
+  {
+   "pool": "solana_2qEPAzF2LdjWiP94eyJMXK6vhZTYjp8thoh5pXyPAVPT",
+   "name": "SpongeBob / S&amp;P500",
+   "age_h": 0.026,
+   "vol_h1": 705.0243993495,
+   "vol_h24": 705.0243993495,
+   "liq": 1694.5187
+  },
+  {
+   "pool": "solana_8DJyV2ymbSWqo5nGRSRWRdo8eMQYamBiyk5Tf3CCdBCi",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.026,
+   "vol_h1": 0.01392770359,
+   "vol_h24": 0.01392770359,
+   "liq": 0.0174
+  },
+  {
+   "pool": "solana_sfcsWra7rYByGjPDydaowx844KSJNWe8HWZKCXjihgW",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.026,
+   "vol_h1": 0.0008691742587,
+   "vol_h24": 0.0008691742587,
+   "liq": 0.0
+  },
+  {
+   "pool": "solana_A7scBA4spKAsRxK1S1dfkQe3eimqSkUuX86FFFvMQvXU",
+   "name": "SHDW / SOL",
+   "age_h": 0.026,
+   "vol_h1": 196.1365124388,
+   "vol_h24": 196.1365124388,
+   "liq": 333.6708
+  },
+  {
+   "pool": "solana_BqiYE96sNycbYypn9QB9Xsi3ZkSho7Wcjo2Gskd8o8xF",
+   "name": "butcards / CARDS",
+   "age_h": 0.026,
+   "vol_h1": 1.7192957246,
+   "vol_h24": 1.7192957246,
+   "liq": 17682.5607960667
+  },
+  {
+   "pool": "solana_CbemGQGYdKh2WtW3TuHAA2Ta311y6Ms3BAYk5rW2wmCc",
+   "name": "JUAN / USDC",
+   "age_h": 0.027,
+   "vol_h1": 358.4042653456,
+   "vol_h24": 358.4042653456,
+   "liq": 3459.9821
+  },
+  {
+   "pool": "solana_AcyBikdD7HZKLhEp1Y9mMqzuFrDkFpKwZrJjAgJaYiex",
+   "name": "poke / SOL",
+   "age_h": 0.029,
+   "vol_h1": 489.9502725602,
+   "vol_h24": 489.9502725602,
+   "liq": 1047.8555
+  },
+  {
+   "pool": "solana_FxFaQikLUaadwB6BPjdwU1K64CHzZou5J9DbfCKkC1ER",
+   "name": "TOWEL / SOL",
+   "age_h": 0.018,
+   "vol_h1": 0.9881609452,
+   "vol_h24": 0.9881609452,
+   "liq": 1932.88127454705
+  },
+  {
+   "pool": "solana_AEpgtMmayc6e1f2zoNHKF3TsX9VzDCoSXkqV92YvYfDG",
+   "name": "GTA6 / SOL",
+   "age_h": 0.019,
+   "vol_h1": 11.8666343528,
+   "vol_h24": 11.8666343528,
+   "liq": 1933.3973
+  },
+  {
+   "pool": "solana_2vXb2btw51BX8aPZQcCW6eZH2P3m2UWxSoBNJfBnH7tK",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.019,
+   "vol_h1": 12547.8042031497,
+   "vol_h24": 12547.8042031497,
+   "liq": 33028.8348
+  },
+  {
+   "pool": "solana_6H9bFvFXnotm1DohRKn7sqBkAmFVjucMxXKfnZTBkZ36",
+   "name": "SHDW / SOL",
+   "age_h": 0.019,
+   "vol_h1": 326.9098808919,
+   "vol_h24": 326.9098808919,
+   "liq": 685.578
+  },
+  {
+   "pool": "solana_TYitJ721N3bBwmRFmkEXHFydDaQS7NfvWwvp4sd4JRE",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.02,
+   "vol_h1": 41.2813127649,
+   "vol_h24": 41.2813127649,
+   "liq": 29557.46
+  },
+  {
+   "pool": "solana_HT9agfZ6QoKLwwT6FNxbicthqNXYcFJX1EtM9d3TsetQ",
+   "name": "cachorro / SOL",
+   "age_h": 0.02,
+   "vol_h1": 40.3695656885,
+   "vol_h24": 40.3695656885,
+   "liq": 14904.6681
+  },
+  {
+   "pool": "solana_GRrCaWXbxsgmaui4SVKfR6Nvg6UVr6c84fcea7LSoheH",
+   "name": "STONK / SOL",
+   "age_h": 0.021,
+   "vol_h1": 5.7602178919,
+   "vol_h24": 5.7602178919,
+   "liq": 0.0
+  },
+  {
+   "pool": "solana_H5ZjatsjaQW8VPmnuqTVb1wTJdK98svseKvmYdjA6Cgm",
+   "name": "ALLPAD / SOL",
+   "age_h": 0.021,
+   "vol_h1": 580.4635733146,
+   "vol_h24": 580.4635733146,
+   "liq": 2708.2827
+  },
+  {
+   "pool": "solana_9TTYfWhteEnD3AuEZzcqYfXGBAumee1fVF6ziHxBRKuZ",
+   "name": "BLEP / SOL",
+   "age_h": 0.023,
+   "vol_h1": 5416.9060981845,
+   "vol_h24": 5416.9060981845,
+   "liq": 15726.5598
+  },
+  {
+   "pool": "solana_DFYF4xVpXTeC8jhj8HJGTvifV6ScBKG1CLswpwDYeFUN",
+   "name": "$BULLMEAT / PUMP",
+   "age_h": 0.023,
+   "vol_h1": 24.517856193,
+   "vol_h24": 24.517856193,
+   "liq": 2437.6463
+  },
+  {
+   "pool": "solana_3qNW6UEypgJGCPiUc9DG8QM7yEz5dpkroBZikckRD9H5",
+   "name": "SpongeBob / S&amp;P500",
+   "age_h": 0.024,
+   "vol_h1": 84.7694201195,
+   "vol_h24": 84.7694201195,
+   "liq": 1456.6008
+  },
+  {
+   "pool": "solana_FZnYUSYvzma2H1SWXF7VBQXdatba8Ub2gvLkAi8FJ9EX",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.024,
+   "vol_h1": 5125.6816209321,
+   "vol_h24": 5125.6816209321,
+   "liq": 2231.7203
+  },
+  {
+   "pool": "solana_6dmChmA2RHEeyChQkru3TsK87LyD7Z62KvxoVnbtKw6P",
+   "name": "Wuntermut / SOL",
+   "age_h": 0.024,
+   "vol_h1": 50361.1627304281,
+   "vol_h24": 50361.1627304281,
+   "liq": 18495.6531
+  },
+  {
+   "pool": "solana_DHqTCVtoZevw4jBtjo1WnCRw9wLEb9Y65Qv9LY6giBcB",
+   "name": "kittylick / SOL",
+   "age_h": 0.024,
+   "vol_h1": 130.8355230484,
+   "vol_h24": 130.8355230484,
+   "liq": 109.5153
+  },
+  {
+   "pool": "solana_DiuL5CuogHuNauvuk5pm6xa7Pq9N5fGPeBn8fWg2cNXj",
+   "name": "OTC / SOL",
+   "age_h": 0.025,
+   "vol_h1": 13127.174881156,
+   "vol_h24": 13127.174881156,
+   "liq": 5052.1878
+  },
+  {
+   "pool": "solana_2APu28qdmB8Swp2vxnhouxh5rSgvg5o22hy586Zy1bzH",
+   "name": "cachorro / SOL",
+   "age_h": 0.025,
+   "vol_h1": 0.06300765461,
+   "vol_h24": 0.06300765461,
+   "liq": 0.0087
+  },
+  {
+   "pool": "solana_4XCApuyUcW34uMVWAMtWv5NcMYnB2B3FFNXqt31xQ5Xt",
+   "name": "LaMisery / SOL",
+   "age_h": 0.025,
+   "vol_h1": 219.2044248403,
+   "vol_h24": 219.2044248403,
+   "liq": 414.6139
+  },
+  {
+   "pool": "solana_omgaookhdHGnBBYdH8G7SUaid75MvhbJqR6qgZPkavD",
+   "name": "cachorro / SOL",
+   "age_h": 0.025,
+   "vol_h1": 0.0008691742597,
+   "vol_h24": 0.0008691742597,
+   "liq": 0.0
+  },
+  {
+   "pool": "solana_2qEPAzF2LdjWiP94eyJMXK6vhZTYjp8thoh5pXyPAVPT",
+   "name": "SpongeBob / S&amp;P500",
+   "age_h": 0.026,
+   "vol_h1": 1111.6613279596,
+   "vol_h24": 1111.6613279596,
+   "liq": 1693.2146
+  },
+  {
+   "pool": "solana_8DJyV2ymbSWqo5nGRSRWRdo8eMQYamBiyk5Tf3CCdBCi",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.026,
+   "vol_h1": 0.07313018576,
+   "vol_h24": 0.07313018576,
+   "liq": 0.0784
+  },
+  {
+   "pool": "solana_CSwcasXfJ8ZnPwqzMi2Nr4vfj5pckJNgP5wvKRnQJVuF",
+   "name": "$AURA / SOL",
+   "age_h": 0.034,
+   "vol_h1": 112.4881163868,
+   "vol_h24": 112.4881163868,
+   "liq": 2566.57313132342
+  },
+  {
+   "pool": "solana_FHJA5GJaPjpavydcqi2HbYYegWRKEwc7J8JNQk6VqN8H",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.035,
+   "vol_h1": 2048.9945938702,
+   "vol_h24": 2048.9945938702,
+   "liq": 34751.7111
+  },
+  {
+   "pool": "solana_AuM5D9dYXtwJ41MryvPNQjRCiVZ3oxWVz2UgLYi788Ck",
+   "name": "SHDW / SOL",
+   "age_h": 0.037,
+   "vol_h1": 82.3207259043,
+   "vol_h24": 82.3207259043,
+   "liq": 372.0571
+  },
+  {
+   "pool": "solana_7zZ4mr8vhKHrgQjcWgxoqUhtYyrU4jWbXK3qbKe3Seo8",
+   "name": "wApe / SOL",
+   "age_h": 0.039,
+   "vol_h1": 23.0857524294,
+   "vol_h24": 23.0857524294,
+   "liq": 1956.375
+  },
+  {
+   "pool": "solana_4Ld9diPbfFsnv8varDh14L1W9LPRtmPDa82ziDxK53QP",
+   "name": "mmrich / SOL",
+   "age_h": 0.041,
+   "vol_h1": 91.9175540877,
+   "vol_h24": 91.9175540877,
+   "liq": 2803.2386
+  },
+  {
+   "pool": "solana_32m7s4cet4PcYA1aoFjD3YuoqYLfsWNHnhdbTff52eTJ",
+   "name": "ANGRY / USDC",
+   "age_h": 0.042,
+   "vol_h1": 144.6075238644,
+   "vol_h24": 144.6075238644,
+   "liq": 151.2762
+  },
+  {
+   "pool": "solana_7Ewpy9qcbj4NxgdmyQUHPjjyrQBWYuHJCKLFiWFCEWfu",
+   "name": "18 / SOL",
+   "age_h": 0.042,
+   "vol_h1": 475.7871013955,
+   "vol_h24": 475.7871013955,
+   "liq": 9.1738
+  },
+  {
+   "pool": "solana_3VQYhbj8yKYpxrBFCkAkik8RPUt8rTgv7arsGXQQ2gjZ",
+   "name": "SATINU / SOL",
+   "age_h": 0.042,
+   "vol_h1": 117.7535578715,
+   "vol_h24": 117.7535578715,
+   "liq": 102.8024
+  },
+  {
+   "pool": "solana_Cfy3UjuA34f3uUzKPduhVQYZEm33ppQc3haPkAqFHq81",
+   "name": "BLEP / SOL",
+   "age_h": 0.042,
+   "vol_h1": 0.08728572139,
+   "vol_h24": 0.08728572139,
+   "liq": 17835.0499802559
+  },
+  {
+   "pool": "solana_FCYhrnVbWukmbyBE5yzAoWs1ytUfm7MWg8fNZmfzkS6s",
+   "name": "S&amp;P500 / SOL",
+   "age_h": 0.043,
+   "vol_h1": 1195.6641314989,
+   "vol_h24": 1195.6641314989,
+   "liq": 34639.3059
+  },
+  {
+   "pool": "solana_9jjN7wnmy7e7oQjbpqZiHitmLynod627L7S7wBdKojgH",
+   "name": "vrl / SOL",
+   "age_h": 0.043,
+   "vol_h1": 136.0570004174,
+   "vol_h24": 136.0570004174,
+   "liq": 2120.8332
+  },
+  {
+   "pool": "solana_4KB49Csh6XjibbjY1zQdwWvBUhR3aDSpi2Mu1onKWcSm",
+   "name": "SHDW / SOL",
+   "age_h": 0.044,
+   "vol_h1": 93.9509786194,
+   "vol_h24": 93.9509786194,
+   "liq": 507.9066
+  },
+  {
+   "pool": "solana_77WB9FaBF35NgHnavemUq4GaTWs4U5Qaj1cGuBZMEdwA",
+   "name": "Owo / SOL",
+   "age_h": 0.044,
+   "vol_h1": 233.8321937024,
+   "vol_h24": 233.8321937024,
+   "liq": 844.2361
+  },
+  {
+   "pool": "solana_6yhUW9AZiUWYzrGxpXK48eQEevp52jZ8vDA7GtPGMhXm",
+   "name": "XMR / SOL",
+   "age_h": 0.047,
+   "vol_h1": 80.7104273634,
+   "vol_h24": 80.7104273634,
+   "liq": 14984.5394
+  },
+  {
+   "pool": "solana_EGJHX6RPZncYqDejjkvvYes6m4SMsvtrCSUrowhR8a9Q",
+   "name": "DIAMOND / SOL",
+   "age_h": 0.047,
+   "vol_h1": 414.1869437541,
+   "vol_h24": 414.1869437541,
+   "liq": 57.4822
+  },
+  {
+   "pool": "solana_AnPzzToj19Ms6keJesgjas9XuQH9XMjje1DZLJo7arna",
+   "name": "BLEP / RDDT",
+   "age_h": 0.047,
+   "vol_h1": 7366.3966266804,
+   "vol_h24": 7366.3966266804,
+   "liq": 4270.1281
+  },
+  {
+   "pool": "solana_CXNcJKuqtPqXEJkA62QFR5VTYPynBWruHatyqKoFg9RA",
+   "name": "XMR / SOL",
+   "age_h": 0.047,
+   "vol_h1": 0.07355139282,
+   "vol_h24": 0.07355139282,
+   "liq": 0.1135
+  },
+  {
+   "pool": "solana_DF1uuiJsVF89wewCjtFEwK8k9MdWGfXdg1E7agzEkHUm",
+   "name": "HOOD / SOL",
+   "age_h": 0.047,
+   "vol_h1": 799.6217520401,
+   "vol_h24": 799.6217520401,
+   "liq": 2144.7511
+  },
+  {
+   "pool": "solana_51RaLwznSKZmv7MojsePYMG3S3BTwfhbCdSF6ZX6xA6u",
+   "name": "DLSS / NVDAx",
+   "age_h": 0.047,
+   "vol_h1": 1300.2797137367,
+   "vol_h24": 1300.2797137367,
+   "liq": 2688.5192
+  },
+  {
+   "pool": "solana_5JM9mdbCYd2acGREDqZBcZoBAztSDjPdPe7hywJ4X5C1",
+   "name": "$SOL / SOL",
+   "age_h": 0.048,
+   "vol_h1": 34.4061291618,
+   "vol_h24": 34.4061291618,
+   "liq": 1682.8115
+  }
+ ]
+}

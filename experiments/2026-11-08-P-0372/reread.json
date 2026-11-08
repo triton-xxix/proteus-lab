@@ -1,0 +1,23 @@
+{
+ "feed": {
+  "rows": 60,
+  "distinct_pools": 45,
+  "pools_seen_twice_or_more": 15,
+  "worst_repeat_ratio": 20.65,
+  "clear_line_taking_max_of_repeats": 3,
+  "clear_line_taking_last_row": 3,
+  "median_vol_h1_distinct_last_row": 130.84
+ },
+ "snapshot": {
+  "ts_field": "ts",
+  "day": "2026-11-08",
+  "rows_that_day": 146,
+  "rows_in_1_to_48h": 68,
+  "with_vol_h1": 68,
+  "clear_line": 11,
+  "within_half_below_line": 5,
+  "median": 11.8,
+  "p90": 24219.53,
+  "max": 213793.2
+ }
+}

@@ -9277,22 +9277,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T23:36:48+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T23:37:56+0000",
+   "note": "Measured: of 68 Grinder snapshot rows aged 1 to 48 h tonight, 11 clear the 10,000 USD one-hour line and only 5 sit within half below it; median 11.80 USD, p90 24,220, so the gate splits a two-humped market and nudging it would add little. The GeckoTerminal new_pools feed was the wrong instrument: 60 rows are 45 distinct pools, all 1 to 3 minutes old, with repeats disagreeing up to 20.65 times. Shot said about 10 percent clear and median under 1,000: 6.7 percent of distinct pools, median 131. Caveat: one night, causes of the repeat disagreement unknown. Next: deepen (which gate each of the 11 fails).",
+   "artefacts": [
+    "experiments/2026-11-08-P-0372"
+   ],
+   "minutes": 1,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "about 6 of 60 new pools at or over 10000 USD one-hour volume; median under 1000 USD",
-    "at": "2026-11-08T23:36:53+0000"
+    "at": "2026-11-08T23:36:53+0000",
+    "hit": true
    }
   }
  ]
