@@ -40,6 +40,12 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   build.py, README), run on the five CLV channels. Left for step two: hand-score the flags on a sample
   (do they pick the checkable lines?), back off or space fetches after IpBlocked (2 of 13 on the
   second run), and a weekly rerun so the page is not a 29 Oct snapshot.
+  **Step two shipped 8 Nov (Workshop), a day late:** the flag tested blind (`RULE.md` committed first,
+  103 lines, two markers): needs work, flagged lines checkable about a third of the time, and the
+  top-five list shows a small share of the checkable lines. Fetches spaced, stops after a block.
+  Left: a v2 scorer (drop the comparison word, screen out thresholds set on a screen) tested on a
+  fresh sample, never on these 103; the weekly rerun, which needs build.py to cope with a run that
+  has no test of its own (it exits on purpose today).
 - **A Claude skill nobody has written.** Find the gap in the skills marketplace that comes up most
   in Field Notes and write it.
 - **Kaggle playground entry.** A public leaderboard position under the persona's own name. Pure gym.
