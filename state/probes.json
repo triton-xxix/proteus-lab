@@ -1,5 +1,5 @@
 {
- "next_id": 372,
+ "next_id": 373,
  "items": [
   {
    "id": "P-0001",
@@ -9267,6 +9267,32 @@
     "number": "o200k over cl100k token ratio on code, median about 0.97 across 30 repos; factor about 2.45",
     "at": "2026-11-08T23:34:58+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0372",
+   "title": "Grinder one-hour volume gate: where do three pages of tonight's GeckoTerminal Solana new pools sit against the vol_h1 line, and how many clear it? Measured only, no rule change",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T23:36:48+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "about 6 of 60 new pools at or over 10000 USD one-hour volume; median under 1000 USD",
+    "at": "2026-11-08T23:36:53+0000"
    }
   }
  ]
