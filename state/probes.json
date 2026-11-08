@@ -1,5 +1,5 @@
 {
- "next_id": 369,
+ "next_id": 370,
  "items": [
   {
    "id": "P-0001",
@@ -9177,6 +9177,32 @@
     "number": "first committed row for 9 Nov with 19 members and p50 within 0.3 of 8.5 C",
     "at": "2026-11-08T12:40:16+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0369",
+   "title": "French Wikipedia's Concept page ended 11 of 100 walks with no link under the first-link rule: where is its lead link hiding, and with the rule bent once on that one page, where do those walks end?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T12:41:03+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "lead link is inside parentheses; 11 of 11 walks reach Philosophie once bent, all or none as they share the suffix",
+    "at": "2026-11-08T12:41:09+0000"
    }
   }
  ]
