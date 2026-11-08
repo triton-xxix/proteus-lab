@@ -6,15 +6,22 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-565 judged over 39 harvest days, 371 kept, 116 testable, 111 queued as probes, 105 with a probe verdict.
+579 judged over 40 harvest days, 378 kept, 117 testable, 112 queued as probes, 106 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0576 | 2026-11-08 | vault | [Account boosting and grey-market sale of game accounts and in-game items]() (intel) | mechanism | game-bots | no: The game is not out until 19 Nov 2026 and the trade breaches |  |
+| H-0574 | 2026-11-08 | arxiv | [tok: a textual concrete syntax of BPMN and DMN for humans and AI agents](https://arxiv.org/abs/2611.07945) | mechanism | tools-for-strangers | no: The brief gives no repository or tool link, so the checker c |  |
+| H-0573 | 2026-11-08 | github | [kubai087/kubai-icons: An agent skill that draws animated icons in one consistent style, fo](https://github.com/kubai087/kubai-icons) | mechanism | tools-for-strangers | yes | P-0370 |
+| H-0571 | 2026-11-08 | vault | [Free trading community paid per lot its members trade through an offshore introducing-brok](https://www.instagram.com/p/DdgEcsPsrpe/) (intel) | mechanism | mechanism-hunting | no: Checking it would mean opening a broker account, and the num |  |
+| H-0569 | 2026-11-08 | arxiv | [ChemE-as-Code: An Open-Source Platform for Agentic AI in Chemical Engineering](https://arxiv.org/abs/2611.07947) | mechanism | mechanism-hunting | no: The slice would need the paper's repository and chemical eng |  |
+| H-0568 | 2026-11-08 | github | [shanselman/sandbox-mcp: Fresh, throwaway Windows machines for testing your apps: an MCP se](https://github.com/shanselman/sandbox-mcp) | mechanism | tools-for-strangers | no: It needs Windows 11 with the Windows Sandbox feature, and th |  |
+| H-0566 | 2026-11-08 | vault | [Anonymous trading account demos an unnamed app so viewers must DM to learn what it is](https://www.instagram.com/reel/DdUmxThJ5k2/) (intel) | mechanism | mechanism-hunting | no: Testing it means engaging the funnel, which is out of bounds |  |
 | H-0565 | 2026-11-07 | hn | [ChatGPT silently passes data between connectors and the bounty wants an ID card](https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053) | mechanism | tech | no: Reproducing it needs a ChatGPT account with connectors, and  |  |
 | H-0564 | 2026-11-07 | github | [AkaraChen/cc-remote: Claude Code with the model on a remote host and the tools on your mac](https://github.com/AkaraChen/cc-remote) | mechanism | tech | no: It needs a remote host running a logged-in claude over ssh,  |  |
-| H-0563 | 2026-11-07 | hn | [Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again) | mechanism | tools-for-strangers | yes | P-0358 |
+| H-0563 | 2026-11-07 | hn | [Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again) | mechanism | tools-for-strangers | yes | P-0358 **works** |
 | H-0562 | 2026-11-07 | vault | [How account farms and antidetect cloud phones work and how platforms detect them]() (intel) | mechanism | mechanism-hunting | no: The tool is an evasion service and needs accounts and paid d |  |
 | H-0561 | 2026-11-07 | arxiv | [TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research](https://arxiv.org/abs/2611.07962) | mechanism | mechanism-hunting | no: Running the tasks needs model answers and there is no local  |  |
 | H-0559 | 2026-11-07 | hn | [Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3](https://github.com/rivet-dev/rivet) | both | tools-for-strangers | yes | P-0357 |
@@ -385,6 +392,89 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0576 Account boosting and grey-market sale of game accounts and in-game items
+2026-11-08, vault, 
+
+- **Mechanism:** Sellers advertise levelling a buyer's game account or selling accounts and in-game items for real money. Boosting needs the buyer's login handed over, so someone else plays the account, and items are moved by trading. Publishers detect it through login location and device changes, sudden progression, and trade-pattern analysis, and ban accounts or sue marketplaces for breaching terms.
+- **Claim:** Four ways to earn from a huge game launch, including account boosting and selling accounts and items.
+- **Testable:** no. The game is not out until 19 Nov 2026 and the trade breaches publisher terms and needs real accounts.
+- **Idea on its own:** unsound. It breaches the game's terms, needs a customer's credentials, and the buyer's account is the thing most likely to be banned.
+- **How it would be done:** As intel, the useful work is a note on how publishers detect it: location and device mismatches, abnormal progression speed, and trade-graph analysis, plus the lawsuits against resale marketplaces. A reader could pull the public court filings and ban announcements to see which signals publishers name. Nothing here is to be operated, and a legal route would be content and search positioning before launch, which needs a human writer or presenter.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline
+- **Field Notes line:** Game-account boosting and item resale needs handed-over logins, and publishers catch it by login and trade pattern, not by the sale.
+
+### H-0574 tok: a textual concrete syntax of BPMN and DMN for humans and AI agents
+2026-11-08, arxiv, https://arxiv.org/abs/2611.07945
+
+- **Mechanism:** tok is a compact text notation for BPMN process models and DMN decisions. One engine validates a document against both standards, compiles it to XML with an automatic diagram, and serves language-model apps over MCP. Because the notation is short, models spend fewer tokens writing it, and the checker returns errors the model can fix in a loop.
+- **Claim:** tok takes 2.2 times fewer tokens than the smallest BPMN XML and the checker signals 98.2% of 1,411 injected faults.
+- **Testable:** no. The brief gives no repository or tool link, so the checker cannot be run tonight.
+- **Idea on its own:** sound. A compact notation with a strict checker gives a model a cheap write-validate-fix loop, a pattern that fits any verbose XML format.
+- **How it would be done:** To reuse the pattern: pick a verbose format, design a short text syntax that maps to it, write a compiler and a validator that returns line-numbered errors, then expose the validator as a tool. Test it by planting faults in known-good files and counting how many the checker signals. A person who knows the target standard is needed to define what counts as valid.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** The tok engine's repository link, which the brief does not carry.
+- **Field Notes line:** A paper swaps verbose process-diagram XML for a short text notation plus a checker, cutting model tokens by about half and catching 98% of planted faults.
+
+### H-0573 kubai087/kubai-icons: An agent skill that draws animated icons in one consistent style, for Claude Code, Codex and other
+2026-11-08, github, https://github.com/kubai087/kubai-icons
+
+- **Mechanism:** An agent skill holds style rules, a drawing engine and a self-check checklist. The agent writes one line per icon (an object and its hover action), draws it after the closest existing icon, renders screenshots, and compares size, outline, layers and colour against neighbours, repeating until the checklist passes. It was refined by blind tests in which a fresh session had only the skill files and a prompt.
+- **Claim:** A skill draws animated icons in one consistent style, shipped with 2,800+ MIT-licensed icons (the README also says 2,600+ in the repo description).
+- **Testable:** yes. Does the public repo contain at least 2,600 icon files, and are they under an MIT licence file? Queued as P-0370.
+- **Idea on its own:** needs-a-run. The render, compare, repeat loop is sound, but whether the style stays consistent across many icons is only known from running it.
+- **How it would be done:** Clone the repo into a sandbox folder and count icon files by type to check the headline number. Read SKILL.md to see how the checklist and screenshots are wired. To test the loop, ask a capable image-reading model to draw three new icons and see whether they pass the checklist unaided. A designer would be hired only to judge whether the set looks coherent, which no checklist settles.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** kubai-icons https://github.com/kubai087/kubai-icons (The skill and the icon library itself.)
+- **Field Notes line:** An agent skill keeps icons in one style by making the model screenshot its own drawings and compare them to neighbours until a checklist passes.
+
+### H-0571 Free trading community paid per lot its members trade through an offshore introducing-broker rebate
+2026-11-08, vault, https://www.instagram.com/p/DdgEcsPsrpe/
+
+- **Mechanism:** A community is free to join, and its operator is paid by an offshore broker as an introducing broker, receiving a rebate for every lot its members trade. Members are nudged to open accounts through the operator's link, and a required first trade triggers commission. The operator's income rises with member trading volume, not member profit, so the incentive runs against the members, and regulators list such firms on warning lists.
+- **Claim:** A free trading community whose income comes from broker rebates per lot traded.
+- **Testable:** no. Checking it would mean opening a broker account, and the numbers sit behind a private broker agreement.
+- **Idea on its own:** unsound. Pay per lot traded rewards churn over member profit, and the broker's own disclosure says most retail accounts lose.
+- **How it would be done:** As intel, the useful artefact is an incentive map: who pays whom, per what unit, and what that rewards. A reader could cross-check a community's named broker against the FCA warning list and the broker's published loss-rate disclosure. A person would need to read the terms and the rebate disclosure by hand, since these differ per broker. Nothing here is to be operated.
+- **Missing:** A public list of introducing-broker rebate schemes and their rates.
+- **Field Notes line:** Free trading groups can be paid per lot their members trade, so the owner earns more the more you trade, win or lose.
+
+### H-0569 ChemE-as-Code: An Open-Source Platform for Agentic AI in Chemical Engineering
+2026-11-08, arxiv, https://arxiv.org/abs/2611.07947
+
+- **Mechanism:** Engineering work is held as linked, machine-readable files in Git, with calculation tools run outside the language model so numbers are computed, not generated. Each value records its origin, and automated checks flag inconsistent or out-of-date results by file and line. Skills tell a general agent which tool to call, and the checks guide human review, not replace it.
+- **Claim:** Agents produced a preliminary basic-engineering package for an ammonia plant for USD 224 of API cost, with no independent engineer review.
+- **Testable:** no. The slice would need the paper's repository and chemical engineering tools, and no repo link is given in the brief.
+- **Idea on its own:** sound. Keeping computation outside the model and tracking where each value came from is the right way to make agent output checkable.
+- **How it would be done:** The pattern carries over to the desks here: store each forecast input and result as a versioned file, compute every number with a script, record the source and timestamp of each value, and run a checker that flags any result older than its inputs. Steps are a schema for the files, a provenance field on every value, a stale-result check run nightly, and a report by file and line. A human reviewer would still read the flagged items, as the paper itself says.
+- **Stack already covers:** Claude Code with skills and sub-agents, football-data and a Dixon-Coles paper desk (the Pitch)
+- **Missing:** The paper's repository link, to read the provenance and staleness checks directly.
+- **Field Notes line:** A paper has agents build a plant design where every number comes from an outside calculator with its origin recorded, and stale or inconsistent values get flagged by file and line.
+
+### H-0568 shanselman/sandbox-mcp: Fresh, throwaway Windows machines for testing your apps: an MCP server and CLI that automate Win
+2026-11-08, github, https://github.com/shanselman/sandbox-mcp
+
+- **Mechanism:** A CLI and optional MCP server drive Windows Sandbox, the built-in disposable Windows 11 VM. It boots a fresh guest, copies the app in, and uses UI Automation to inspect and click controls. It checks missing runtime dependencies from exit codes and returns screenshots, recordings and crash events as evidence, with guest networking set to off, firewalled or on.
+- **Claim:** A fresh Windows PC is booted, tested and destroyed in roughly 40 to 50 seconds, with a missing VC++ runtime caught in 29.8 seconds.
+- **Testable:** no. It needs Windows 11 with the Windows Sandbox feature, and this is a Mac. Needs: A Windows 11 Pro machine with Windows Sandbox enabled..
+- **Idea on its own:** sound. A disposable clean machine with scripted UI driving is a proven way to catch works-on-my-machine bugs.
+- **How it would be done:** The same pattern on a Mac would be a throwaway VM (Tart or UTM) restored from a clean snapshot, with the app copied in and driven by the macOS accessibility API. The steps are: restore the snapshot, copy the build in, launch, run scripted accessibility actions, capture screenshots and exit codes, then discard the VM. For Windows targets, a hired person with a Windows box would be needed to run this one as-is.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** sandbox-mcp https://github.com/shanselman/sandbox-mcp (Reference implementation, runs on a Windows host only.); Tart https://github.com/cirruslabs/tart (Disposable macOS VMs for the same clean-machine loop on this Mac.)
+- **Missing:** A Windows 11 host to run it on.
+- **Field Notes line:** A new tool lets an agent boot a throwaway Windows 11 PC, drive the app by UI Automation, keep screenshots, then delete the machine, all in under a minute.
+
+### H-0566 Anonymous trading account demos an unnamed app so viewers must DM to learn what it is
+2026-11-08, vault, https://www.instagram.com/reel/DdUmxThJ5k2/
+
+- **Mechanism:** A new anonymous social account posts clips of trading wins with the app name left out, so interested viewers have to message the account to find out what it is. The conversation is then moved to a private chat app, where a sales pitch for a broker or paid signal group follows. The pattern is documented by security firms, and platforms catch it through account age, reposted media matching, and clusters of identical DM replies.
+- **Claim:** Shows an unnamed trading app earning money, with the name only given out by direct message.
+- **Testable:** no. Testing it means engaging the funnel, which is out of bounds, and the account gives no public endpoint to check.
+- **Idea on its own:** unsound. The funnel's only product is the handover to a pitch, and hiding the name removes any way to check the claim.
+- **How it would be done:** As intel, the useful work is a checklist of tells: account age, reposted clips, no company name, a DM-only call to action, a chat-app handover. A reader could build a small scorer over public profile fields and compare it with the warning lists the FCA and similar regulators publish. A person would be needed to judge borderline accounts, since no script can tell a shy small trader from a funnel. Nothing here is to be operated, only recognised.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline
+- **Missing:** A public dataset of confirmed funnel accounts to score a detector against.
+- **Field Notes line:** Unnamed-app trading reels are a DM funnel: hide the name, collect the message, move the chat to Telegram, then sell a broker link.
 
 ### H-0565 ChatGPT silently passes data between connectors and the bounty wants an ID card
 2026-11-07, hn, https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053
@@ -4744,6 +4834,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0576 | 2026-11-08 | Account boosting and grey-market sale of game accounts and in-game items | intel | unsound | no |  |
+| H-0571 | 2026-11-08 | Free trading community paid per lot its members trade through an offshore introducing-brok | intel | unsound | no |  |
+| H-0566 | 2026-11-08 | Anonymous trading account demos an unnamed app so viewers must DM to learn what it is | intel | unsound | no |  |
 | H-0562 | 2026-11-07 | How account farms and antidetect cloud phones work and how platforms detect them | intel | unsound | no |  |
 | H-0558 | 2026-11-07 | Keyword comment auto-DM funnels pushing affiliate products with no ad label and implied in | intel | sound | no |  |
 | H-0553 | 2026-11-07 | AI model courses titled for OnlyFans but guaranteed against Fanvue | intel | needs-a-run | no |  |
@@ -4866,6 +4959,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0331 | 2026-11-08 | [kubai-icons](https://github.com/kubai087/kubai-icons) | The skill and the icon library itself. | H-0573 (kubai087/kubai-icons: An agent skill that draws an) | shelf |
+| T-0330 | 2026-11-08 | [Tart](https://github.com/cirruslabs/tart) | Disposable macOS VMs for the same clean-machine loop on this Mac. | H-0568 (shanselman/sandbox-mcp: Fresh, throwaway Windows m) | shelf |
+| T-0329 | 2026-11-08 | [sandbox-mcp](https://github.com/shanselman/sandbox-mcp) | Reference implementation, runs on a Windows host only. | H-0568 (shanselman/sandbox-mcp: Fresh, throwaway Windows m) | shelf |
 | T-0328 | 2026-11-07 | [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | The upstream adapter that cc-remote modifies. | H-0564 (AkaraChen/cc-remote: Claude Code with the model on) | shelf |
 | T-0327 | 2026-11-07 | [cc-remote](https://github.com/AkaraChen/cc-remote) | The ACP bridge itself. | H-0564 (AkaraChen/cc-remote: Claude Code with the model on) | shelf |
 | T-0326 | 2026-11-07 | [Rivet](https://github.com/rivet-dev/rivet) | Open-source actor orchestrator, self-hostable. | H-0559 (Launch HN: Rivet (YC W23) – Scale and Orchestrate ) | shelf |
@@ -5199,6 +5295,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0579 | 2026-11-08 | youtube | [Build Anything With a CUSTOM MCP Server - Python Tutorial](https://www.youtube.com/watch?v=-8k9lGpGQ6g) | No transcript available and a generic tutorial with no stated mechanism. |
+| H-0578 | 2026-11-08 | github | [artemchuikin/youtube-skills: YouTube transcript skills for Claude Code, Cursor a](https://github.com/artemchuikin/youtube-skills) | Thin skill files that call one vendor's paid API behind an email-verified key, and the stack already has a keyless trans |
+| H-0577 | 2026-11-08 | hn | [GrapheneOS accuses YC of funding surveillance and enabling HN harassment](https://twitter.com/GrapheneOS/status/2118490356958597210) | A dispute between a project and a forum with no mechanism to record. |
+| H-0575 | 2026-11-08 | youtube | [Fixing This Pass Map 👇 #soccer #datascience #data #dataanalytics #sports #sports](https://www.youtube.com/watch?v=QgfOCmyhpHc) | No transcript available and a short with no stated mechanism. |
+| H-0572 | 2026-11-08 | hn | [Show HN: An offline desktop companion to help maintain a healthy blink rhythm](https://eyesrhythm.com/) | A closed-source blink-rate webcam app with no new mechanism and no link to any desk. |
+| H-0570 | 2026-11-08 | youtube | [Football Goals probability calculator #learnpython  #football #soccer #pythonfor](https://www.youtube.com/watch?v=uXlw9dVxVxg) | No transcript available and a beginner short with no stated mechanism. |
+| H-0567 | 2026-11-08 | hn | [Goldman Sachs is pulling Claude Code from its bankers and traders](https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers) | Generic news about a bank restricting a coding tool, from a secondary site, with no mechanism. |
 | H-0560 | 2026-11-07 | github | [duyunzhoudyz/dyz-med-paper-skills: 医学论文写作与科研助手：面向中国医生和医学研究生的 32 个 Agent Skills，适](https://github.com/duyunzhoudyz/dyz-med-paper-skills) | A bundle of writing prompts for medical papers; the only moving part is PubMed search, which is a public API already kno |
 | H-0557 | 2026-11-07 | youtube | [First-Year Car Depreciation: About 20% Gone](https://www.youtube.com/watch?v=4g2MEpcwqv0) | A generic depreciation claim with no mechanism, data source or method behind the 20% figure. |
 | H-0556 | 2026-11-07 | arxiv | [Building Barricades: Red-Teaming Agentic Biosynthesis Planning](https://arxiv.org/abs/2611.08218) | A red-team of toxin biosynthesis planning; no part of the mechanism is worth recording or running here. |

@@ -759,6 +759,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-11-07 · ASA June 2026 guidance on AI-generated content and deepfakes, with the October 2026 CAP and CMA influencer guidance** (paper): no AI labelling rule in the CAP Code; the existing rules apply in full and DMCC practice 25 (trader posing as consumer) is the lever against fake influencers; read through law-firm summaries, not the primary texts. Read-it W45, `intel/synthetic-influencer-personas.md`.
 - **2026-11-07 · Synthetic influencer personas sold as undetectable (EasyInfluencers.ai), detection side** (intel): consistency of face is itself a tell; C2PA metadata strips on re-encode; account behaviour over a 30-day window catches the farm better than the face. Two claims secondary and unverified. Intelligence W45, `intel/synthetic-influencer-personas.md`.
 - 2026-11-07, harvested: 13 judged, 10 kept (H-0553 to H-0565), 3 queued as probes (P-0356, P-0357, P-0358). Register: `field-notes/HARVEST.md`.
+- 2026-11-08, harvested: 14 judged, 7 kept (H-0566 to H-0579), 1 queued as probes (P-0370). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
