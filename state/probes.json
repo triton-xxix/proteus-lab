@@ -1,5 +1,5 @@
 {
- "next_id": 365,
+ "next_id": 366,
  "items": [
   {
    "id": "P-0001",
@@ -9061,6 +9061,32 @@
     "number": "0 real secrets beyond the Google docs key; about 100 raw hits, nearly all generic-api-key false alarms",
     "at": "2026-11-08T12:32:41+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0365",
+   "title": "Smarkets volumes endpoint on the last ten days of Munich daily-high markets: how much money has traded on each, and how much on the contract the weather book took a price from?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-08",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-08T12:36:45+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "median about GBP 50 traded per Munich market, and under GBP 20 on the contract the book priced",
+    "at": "2026-11-08T12:36:52+0000"
    }
   }
  ]
