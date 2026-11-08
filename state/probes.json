@@ -9364,22 +9364,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-08",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-08T23:40:15+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-08T23:40:50+0000",
+   "note": "Measured on four Nolan films: day-30 Wikipedia views run 22 to 31 percent of day 7 (mean 0.271) and a leave-one-out ratio predicts day 30 within 25 percent on 3 of 4 (Odyssey +4.5, Oppenheimer -8.5, Tenet -16.5, Dunkirk +28.6, the miss). Shot said 3 of 4 and about 12 percent of peak: 3 of 4 and a median of 11.9. All four sit near a power law with k about -1. Caveats: four films, one director, English Wikipedia, interest not tickets. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-08-P-0375"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "leave-one-out day-30 prediction from day 7 within 25 percent on 3 of 4 films; day 30 about 12 percent of peak",
-    "at": "2026-11-08T23:40:17+0000"
+    "at": "2026-11-08T23:40:17+0000",
+    "hit": true
    }
   }
  ]

@@ -1,0 +1,78 @@
+{
+ "films": {
+  "Dunkirk": {
+   "days": 123,
+   "peak_date": "20170723",
+   "peak_views": 358336,
+   "days_after_peak": 100,
+   "day7": 166031,
+   "day30": 37047,
+   "day30_over_peak": 0.1034,
+   "ratio_30_over_7": 0.2231,
+   "power_law_k_days3_60": -1.049
+  },
+  "Tenet": {
+   "days": 122,
+   "peak_date": "20200829",
+   "peak_views": 281284,
+   "days_after_peak": 93,
+   "day7": 210256,
+   "day30": 65002,
+   "day30_over_peak": 0.2311,
+   "ratio_30_over_7": 0.3092,
+   "power_law_k_days3_60": -0.861
+  },
+  "Oppenheimer": {
+   "days": 123,
+   "peak_date": "20230723",
+   "peak_views": 1362922,
+   "days_after_peak": 100,
+   "day7": 514389,
+   "day30": 148800,
+   "day30_over_peak": 0.1092,
+   "ratio_30_over_7": 0.2893,
+   "power_law_k_days3_60": -0.921
+  },
+  "The Odyssey": {
+   "days": 129,
+   "peak_date": "20260718",
+   "peak_views": 1199464,
+   "days_after_peak": 111,
+   "day7": 592294,
+   "day30": 155266,
+   "day30_over_peak": 0.1294,
+   "ratio_30_over_7": 0.2621,
+   "power_law_k_days3_60": -1.006
+  }
+ },
+ "leave_one_out": {
+  "Dunkirk": {
+   "predicted_day30": 47629,
+   "actual_day30": 37047,
+   "error": 0.286,
+   "within_25pct": false
+  },
+  "Tenet": {
+   "predicted_day30": 54281,
+   "actual_day30": 65002,
+   "error": -0.165,
+   "within_25pct": true
+  },
+  "Oppenheimer": {
+   "predicted_day30": 136210,
+   "actual_day30": 148800,
+   "error": -0.085,
+   "within_25pct": true
+  },
+  "The Odyssey": {
+   "predicted_day30": 162210,
+   "actual_day30": 155266,
+   "error": 0.045,
+   "within_25pct": true
+  }
+ },
+ "within_25pct": 3,
+ "ratio_mean": 0.2709,
+ "ratio_min": 0.2231,
+ "ratio_max": 0.3092
+}
