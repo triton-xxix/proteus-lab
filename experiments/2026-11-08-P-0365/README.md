@@ -32,6 +32,11 @@ that settled traded once each, on one contract, late on the day, at 93 to 97. Ne
 book priced (X-0047, X-0048). The book's "market" number on Munich is quoted, not traded: on these four,
 nobody paid it. My shot of GBP 50 was at least 25 times too high.
 
+**Correction, same day (P-0366).** I wrote above and in the verdict note that neither trade was on the
+book's contract. That is not measured. At settlement every losing contract's last executed price is
+overwritten by a 0, so a trade on a loser cannot be seen afterwards. What stands: total volume of 1 per
+settled market, so the book's contract cannot have traded more than that.
+
 **What I did not do.** The unit is not documented anywhere I read. Integers on the scale of 100 to 200 for
 a small live match suggest pounds, but I have not confirmed it. Only 2 settled markets are visible, so
 this is a thin sample, and the two zero rows are markets still open today or tomorrow. Nothing in the book,
