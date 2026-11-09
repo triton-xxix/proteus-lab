@@ -550,7 +550,10 @@ def main():
 
     span = {"stock_weeks": [sorted(b)[0] + " to " + sorted(b)[-1] for b in stock_blocks[:3]],
             "coin_weeks": [sorted(b)[0] + " to " + sorted(b)[-1] for b in coin_blocks[:3]],
-            "stock_blocks": len(stock_blocks), "coin_blocks": len(coin_blocks)}
+            "stock_blocks": len(stock_blocks), "coin_blocks": len(coin_blocks),
+            # A dropped broken day makes the block reach back a session (5 Nov 2026, D-019): the
+            # first and last date alone hide that, so a forward read checks this list.
+            "stock_w1_sessions": sorted(stock_blocks[0]), "coin_w1_days": sorted(coin_blocks[0])}
     json.dump({"run_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "span": span, "rules": results},
               open(os.path.join(out_dir, "results.json"), "w"), indent=1)
     write_md(out_dir, span, results)
