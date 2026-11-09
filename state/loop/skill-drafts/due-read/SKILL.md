@@ -62,4 +62,8 @@ never a sentence in the README alone.
 - duecheck read only the backstop date until 24 Oct (F-0049), so D-012 landed at 65 not 40; a count
   trigger it does not parse still waits for a reader. Check the count yourself when the cell names one.
 - A `$` inside double quotes is denied by the hook; single-quote the note.
+- A scan's W1 is the last 5 sessions it kept, not a calendar week. On D-019 and D-021 (9 Nov 2026) 5 Nov
+  fell under the 70-bar floor and W1 reached back to 30 Oct, a day the row had excluded on purpose. The
+  first and last date hide that: check `span.stock_w1_sessions` in `results.json` against the row's
+  sessions, and if they differ say so and read the registered sessions as well.
 - The verdict word and the reason can part company (D-018). Write both; move neither line.
