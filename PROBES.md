@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 304 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 304 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 304 works, 6 broken, 35 blocked, 16 not worth it. Killed: 5.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
-| P-0376 | mempool.space fastest fee: does the recommended next-block fee clear the next blocks mined over 20 minutes tonight, and by how many sat/vB does it overpay the block median? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (361)
+## Verdicts (362)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-09 | P-0376 | mempool.space fastest fee: does the recommended next-block fee clear the next blocks mined over 20 minutes tonight, and by how many sat/vB does it overpay the block median? | **blocked** | Measured nothing on the question: fees.py watched 1,211 s, 40 polls, 0 errors, and 0 blocks arrived. tipcheck.py confirms the chain itself was quiet, tip 975,113 at 23:39:25 and nothing after it for over 22 minutes, about a 13 percent event. Shot said works and overpays by about 1 sat/vB: a miss. Look-back only, not the test: recommendation 3 sat/vB beside the last eight block medians of 0.12 to 4. Next: re-run with a window of at least 30 minutes. | `experiments/2026-11-08-P-0376` | 20 min, 17 calls, 0 denied |
 | 2026-11-08 | P-0375 | Wikipedia pageview decay for four Nolan films: does the day-7 to day-30 ratio from three films predict the fourth's day 30 within 25 percent? | **works** | Measured on four Nolan films: day-30 Wikipedia views run 22 to 31 percent of day 7 (mean 0.271) and a leave-one-out ratio predicts day 30 within 25 percent on 3 of 4 (Odyssey +4.5, Oppenheimer -8.5, Tenet -16.5, Dunkirk +28.6, the miss). Shot said 3 of 4 and about 12 percent of peak: 3 of 4 and a median of 11.9. All four sit near a power law with k about -1. Caveats: four films, one director, English Wikipedia, interest not tickets. Next: close. | `experiments/2026-11-08-P-0375` | 0 min, 5 calls, 0 denied |
 | 2026-11-08 | P-0374 | Smarkets traded volume on the exchange book: how many of the book's non-weather markets still report volume, and how many sit under 100 traded? | **works** | Measured: of 10 non-weather book markets, 4 report volume and they are exactly the 4 still open (3,919; 3,854; 948; 100), 0 errors; the 6 settled ones are gone, the retention P-0365 saw. Shot said about a third and 1 in 4 under 100: 40 percent, and none under though X-0052 Victoria sits exactly on 100. Politics anchors trade far more than Munich at 2 units, so read the book in two halves, and tonight 0.93 Victoria anchor is thin. Caveats: n 4, unit undocumented, settled rows unmeasurable. Next: deepen (extend volumes_log.py to the open politics markets so the rows exist before settlement). | `experiments/2026-11-08-P-0374` | 0 min, 7 calls, 0 denied |
 | 2026-11-08 | P-0373 | UKMO seamless at Heathrow: does the Met Office model carry the +1.26 C offset P-0323 found for ICON at London, from Open-Meteo previous runs against the Ogimet station highs? | **works** | Measured at Heathrow, 61 days Sep to Oct: UKMO lead-1 observed minus forecast +1.45 C (sd 1.19), lead-0 +1.23, beside ICON +1.26 and +1.29 on the same days, which reproduce P-0323 exactly. Shot said about +0.6 and smaller than ICON: wrong on both. Two independently built models share the offset within 0.2 C, so it is the site, grid cell or observation and not an ICON habit; this does not say which. UKMO is not better at lead 1, MAE 1.66 against 1.53. Next: close. | `experiments/2026-11-08-P-0373` | 0 min, 6 calls, 0 denied |

@@ -1,0 +1,16 @@
+{
+ "seconds": 1211,
+ "polls": 40,
+ "errors": 0,
+ "blocks": 0,
+ "fastest_cleared_min": 0,
+ "mean_overpay_vs_median": null,
+ "last_recommended": {
+  "fastestFee": 3,
+  "halfHourFee": 1,
+  "hourFee": 1,
+  "economyFee": 1,
+  "minimumFee": 1
+ },
+ "rows": []
+}
