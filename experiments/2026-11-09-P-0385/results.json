@@ -1,0 +1,590 @@
+{
+ "start": "2026-11-02T23:54:21Z",
+ "end": "2026-11-09T23:54:21Z",
+ "rows": [
+  {
+   "city": "Munich",
+   "sat": "sentinel-2a",
+   "t": 75890.0,
+   "nadir_km": 108.4,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2a",
+   "t": 210190.0,
+   "nadir_km": 92.9,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2a",
+   "t": 335690.0,
+   "nadir_km": 72.9,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2a",
+   "t": 469990.0,
+   "nadir_km": 88.9,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2b",
+   "t": 335085.0,
+   "nadir_km": 107.2,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2b",
+   "t": 469385.0,
+   "nadir_km": 93.3,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2b",
+   "t": 594885.0,
+   "nadir_km": 74.3,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2c",
+   "t": 37380.0,
+   "nadir_km": 93.9,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2c",
+   "t": 162880.0,
+   "nadir_km": 73.9,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Munich",
+   "sat": "sentinel-2c",
+   "t": 297180.0,
+   "nadir_km": 87.0,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2a",
+   "t": 40955.0,
+   "nadir_km": 43.3,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2a",
+   "t": 251165.0,
+   "nadir_km": 110.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2a",
+   "t": 510965.0,
+   "nadir_km": 57.9,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2b",
+   "t": 40350.0,
+   "nadir_km": 126.2,
+   "dir": "desc",
+   "imaged": false
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2b",
+   "t": 300150.0,
+   "nadir_km": 42.7,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2b",
+   "t": 510360.0,
+   "nadir_km": 109.4,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2c",
+   "t": 78355.0,
+   "nadir_km": 110.0,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2c",
+   "t": 338155.0,
+   "nadir_km": 58.0,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "London",
+   "sat": "sentinel-2c",
+   "t": 472345.0,
+   "nadir_km": 127.7,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Madrid",
+   "sat": "sentinel-2a",
+   "t": 41140.0,
+   "nadir_km": 115.4,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Madrid",
+   "sat": "sentinel-2a",
+   "t": 426185.0,
+   "nadir_km": 43.5,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Madrid",
+   "sat": "sentinel-2b",
+   "t": 40540.0,
+   "nadir_km": 91.9,
+   "dir": "desc",
+   "imaged": false
+  },
+  {
+   "city": "Madrid",
+   "sat": "sentinel-2b",
+   "t": 300335.0,
+   "nadir_km": 114.9,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Madrid",
+   "sat": "sentinel-2c",
+   "t": 253375.0,
+   "nadir_km": 41.6,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Madrid",
+   "sat": "sentinel-2c",
+   "t": 472535.0,
+   "nadir_km": 93.1,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2a",
+   "t": 125400.0,
+   "nadir_km": 42.2,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2a",
+   "t": 385195.0,
+   "nadir_km": 91.0,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2a",
+   "t": 420485.0,
+   "nadir_km": 59.4,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2b",
+   "t": 75480.0,
+   "nadir_km": 75.9,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2b",
+   "t": 384595.0,
+   "nadir_km": 43.4,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2c",
+   "t": 212385.0,
+   "nadir_km": 88.6,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2c",
+   "t": 247675.0,
+   "nadir_km": 58.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Oslo",
+   "sat": "sentinel-2c",
+   "t": 507475.0,
+   "nadir_km": 74.5,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Cairo",
+   "sat": "sentinel-2a",
+   "t": 204460.0,
+   "nadir_km": 77.8,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Cairo",
+   "sat": "sentinel-2a",
+   "t": 504560.0,
+   "nadir_km": 38.6,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Cairo",
+   "sat": "sentinel-2b",
+   "t": 463655.0,
+   "nadir_km": 78.8,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Cairo",
+   "sat": "sentinel-2c",
+   "t": 31645.0,
+   "nadir_km": 80.4,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Cairo",
+   "sat": "sentinel-2c",
+   "t": 331750.0,
+   "nadir_km": 39.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Nairobi",
+   "sat": "sentinel-2b",
+   "t": 29165.0,
+   "nadir_km": 47.6,
+   "dir": "desc",
+   "imaged": false
+  },
+  {
+   "city": "Nairobi",
+   "sat": "sentinel-2b",
+   "t": 159025.0,
+   "nadir_km": 34.4,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Nairobi",
+   "sat": "sentinel-2c",
+   "t": 461160.0,
+   "nadir_km": 46.9,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Nairobi",
+   "sat": "sentinel-2c",
+   "t": 591020.0,
+   "nadir_km": 30.9,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Delhi",
+   "sat": "sentinel-2a",
+   "t": 148060.0,
+   "nadir_km": 18.8,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Delhi",
+   "sat": "sentinel-2b",
+   "t": 107200.0,
+   "nadir_km": 23.3,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Delhi",
+   "sat": "sentinel-2b",
+   "t": 407255.0,
+   "nadir_km": 19.8,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Delhi",
+   "sat": "sentinel-2c",
+   "t": 539195.0,
+   "nadir_km": 19.7,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2a",
+   "t": 305270.0,
+   "nadir_km": 101.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2a",
+   "t": 524585.0,
+   "nadir_km": 26.9,
+   "dir": "desc",
+   "imaged": false
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2a",
+   "t": 565070.0,
+   "nadir_km": 121.2,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2b",
+   "t": 564465.0,
+   "nadir_km": 100.6,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2c",
+   "t": 132460.0,
+   "nadir_km": 101.5,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2c",
+   "t": 351775.0,
+   "nadir_km": 24.8,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Tokyo",
+   "sat": "sentinel-2c",
+   "t": 392260.0,
+   "nadir_km": 120.5,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2a",
+   "t": 120.0,
+   "nadir_km": 131.7,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2a",
+   "t": 219495.0,
+   "nadir_km": 92.1,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2a",
+   "t": 259915.0,
+   "nadir_km": 94.9,
+   "dir": "desc",
+   "imaged": false
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2b",
+   "t": 218895.0,
+   "nadir_km": 134.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2b",
+   "t": 259315.0,
+   "nadir_km": 130.5,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2b",
+   "t": 478690.0,
+   "nadir_km": 91.3,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2b",
+   "t": 519110.0,
+   "nadir_km": 95.3,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2c",
+   "t": 46685.0,
+   "nadir_km": 89.8,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Sydney",
+   "sat": "sentinel-2c",
+   "t": 87105.0,
+   "nadir_km": 93.7,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Sao Paulo",
+   "sat": "sentinel-2a",
+   "t": 48275.0,
+   "nadir_km": 69.4,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Sao Paulo",
+   "sat": "sentinel-2a",
+   "t": 352600.0,
+   "nadir_km": 21.0,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Sao Paulo",
+   "sat": "sentinel-2b",
+   "t": 307470.0,
+   "nadir_km": 68.5,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Sao Paulo",
+   "sat": "sentinel-2c",
+   "t": 179790.0,
+   "nadir_km": 26.3,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Mexico City",
+   "sat": "sentinel-2a",
+   "t": 450000.0,
+   "nadir_km": 5.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Mexico City",
+   "sat": "sentinel-2a",
+   "t": 494650.0,
+   "nadir_km": 9.9,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Mexico City",
+   "sat": "sentinel-2c",
+   "t": 277190.0,
+   "nadir_km": 8.9,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Mexico City",
+   "sat": "sentinel-2c",
+   "t": 321840.0,
+   "nadir_km": 11.8,
+   "dir": "desc",
+   "imaged": true
+  },
+  {
+   "city": "Chicago",
+   "sat": "sentinel-2a",
+   "t": 359750.0,
+   "nadir_km": 16.7,
+   "dir": "asc",
+   "imaged": false
+  },
+  {
+   "city": "Chicago",
+   "sat": "sentinel-2b",
+   "t": 233855.0,
+   "nadir_km": 7.6,
+   "dir": "desc",
+   "imaged": false
+  },
+  {
+   "city": "Chicago",
+   "sat": "sentinel-2c",
+   "t": 186940.0,
+   "nadir_km": 12.2,
+   "dir": "asc",
+   "imaged": false
+  }
+ ]
+}

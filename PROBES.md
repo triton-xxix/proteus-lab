@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 309 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 310 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 309 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 
-## Verdicts (369)
+## Verdicts (370)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-09 | P-0385 | Sentinel-2 duty cycle: of predicted swath passes over twelve cities in seven days, what share of descending and of ascending passes have a real scene? | **works** | Over 12 cities and 7 days with Sentinel-2A, 2B and 2C, 30 of 36 descending swath passes had a real scene on Earth Search and 0 of 37 ascending, a hard zero on the night side. Of the 6 descending misses, 3 line up on 2B about 3 Nov, unconfirmed as an outage; land cities only, one week, one catalogue. | `experiments/2026-11-09-P-0385` | 2 min, 7 calls, 0 denied |
 | 2026-11-09 | P-0384 | GeckoTerminal feed lag: on new Solana pools, how far does one-hour volume on the new_pools page sit from the single-pool endpoint read seconds later, in ratio? | **works** | On 12 Solana pools a minute old, the single endpoint read 23 to 154 s after the page had one-hour volume above the page on 10 and equal on 2, never lower, median 3.76 times, max 83.8. 19 rate-limit waits made the gap too long to separate cache age from real first-minute trading, so the answer to P-0372 is partial; the age gate keeps pools this young out of the Grinder anyway. | `experiments/2026-11-09-P-0384` | 9 min, 9 calls, 0 denied |
 | 2026-11-09 | P-0383 | Gatwick SYNOP check: is ICON's cold bias on the day's high at a second UK airport the same size as Heathrow's, on the same 61 days? | **works** | Answered on METAR only, Ogimet returned nothing for block 03776: ICON lead-1 METAR minus forecast is +0.58 at Gatwick and +0.41 at Heathrow on 61 days, difference +0.17 se 0.11, so the same within noise. Heathrow reads about +0.4 against METAR but +1.26 against SYNOP TX on the same days, so about two thirds of that cold bias is the observation used. | `experiments/2026-11-09-P-0383` | 1 min, 14 calls, 0 denied |
 | 2026-11-09 | P-0382 | Heathrow grid cells: does ICON's +1.26 C lead-1 offset stay the same at four grid points around the airport, or shift with the cell? | **works** | The ICON cold offset against Heathrow SYNOP is not one bad cell: at lead 1 it reads +1.26 at the airport and +1.41, +1.22, +1.28, +1.01 at points 11 km N, S, W and E, 61 days, se about 0.16. Moving a cell shifts it by at most 0.3 C of 1.3, so the observation, region or surface physics are left; this does not say which. | `experiments/2026-11-09-P-0382` | 0 min, 4 calls, 0 denied |

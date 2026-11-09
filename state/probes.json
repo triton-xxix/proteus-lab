@@ -1,5 +1,5 @@
 {
- "next_id": 385,
+ "next_id": 386,
  "items": [
   {
    "id": "P-0001",
@@ -9594,6 +9594,28 @@
    ],
    "minutes": 9,
    "calls": 9,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0385",
+   "title": "Sentinel-2 duty cycle: of predicted swath passes over twelve cities in seven days, what share of descending and of ascending passes have a real scene?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-09T23:54:19+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-09T23:57:03+0000",
+   "note": "Over 12 cities and 7 days with Sentinel-2A, 2B and 2C, 30 of 36 descending swath passes had a real scene on Earth Search and 0 of 37 ascending, a hard zero on the night side. Of the 6 descending misses, 3 line up on 2B about 3 Nov, unconfirmed as an outage; land cities only, one week, one catalogue.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0385"
+   ],
+   "minutes": 2,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
