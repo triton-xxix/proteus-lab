@@ -9422,22 +9422,27 @@
    "after": "",
    "est_minutes": 35,
    "added": "2026-11-09",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-09T12:31:42+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-11-09T13:02:48+0000",
+   "note": "Measured over 1,815 s, 60 polls, 0 errors, 2 blocks: the fastest fee, 1 sat/vB before each block, cleared both block minimums (0.124 and 0.110) and sat -0.098 and +0.864 against the medians, mean +0.383. Shot said clears every block and about +1: clearing hit, size out by more than half. Caveats: n 2, one quiet half-hour with every tier at 1, a minimum eight to nine times below the fee is a weak test, and no transaction was sent. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0377"
+   ],
+   "minutes": 31,
+   "calls": 17,
+   "denied": [
+    "ScheduleWakeup ``"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "fastest fee clears the minimum of every block seen, mean overpay against block median about +1 sat/vB",
-    "at": "2026-11-09T12:32:00+0000"
+    "at": "2026-11-09T12:32:00+0000",
+    "hit": true
    }
   }
  ]

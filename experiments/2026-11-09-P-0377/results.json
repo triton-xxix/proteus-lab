@@ -1,0 +1,74 @@
+{
+ "seconds": 1815,
+ "polls": 60,
+ "errors": 0,
+ "blocks": 2,
+ "fastest_cleared_min": 2,
+ "fastest_at_or_above_median": 1,
+ "mean_overpay_vs_median": 0.383,
+ "last_recommended": {
+  "fastestFee": 2,
+  "halfHourFee": 1,
+  "hourFee": 1,
+  "economyFee": 1,
+  "minimumFee": 1
+ },
+ "rows": [
+  {
+   "height": 975177,
+   "tx_count": 4127,
+   "block_time": 1794227925,
+   "rec_seen_s_before": 30.1,
+   "rec": {
+    "fastestFee": 1,
+    "halfHourFee": 1,
+    "hourFee": 1,
+    "economyFee": 1,
+    "minimumFee": 1
+   },
+   "block_range": [
+    0.12433862433862433,
+    0.12452173913043478,
+    0.12452173913043478,
+    0.13003452243958574,
+    1.2668329177057356,
+    3.008720930232558,
+    76.21348314606742
+   ],
+   "block_min": 0.12433862433862433,
+   "block_median": 1.09812881812497,
+   "block_max": 76.21348314606742,
+   "fastest_clears_min": true,
+   "fastest_at_or_above_median": false,
+   "overpay_vs_median": -0.098
+  },
+  {
+   "height": 975178,
+   "tx_count": 5640,
+   "block_time": 1794228394,
+   "rec_seen_s_before": 30.1,
+   "rec": {
+    "fastestFee": 1,
+    "halfHourFee": 1,
+    "hourFee": 1,
+    "economyFee": 1,
+    "minimumFee": 1
+   },
+   "block_range": [
+    0.10983981693363844,
+    0.1247805967767672,
+    0.12487025948103793,
+    0.12487025948103793,
+    1.00355871886121,
+    2.2959001782531194,
+    477.45358090185675
+   ],
+   "block_min": 0.10983981693363844,
+   "block_median": 0.13634033828805744,
+   "block_max": 477.45358090185675,
+   "fastest_clears_min": true,
+   "fastest_at_or_above_median": true,
+   "overpay_vs_median": 0.864
+  }
+ ]
+}

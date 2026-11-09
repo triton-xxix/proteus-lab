@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 304 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 305 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,13 @@ Verdicts so far: 304 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
-| P-0377 | mempool.space fastest fee, longer watch: re-run P-0376's fees.py for at least 30 minutes; does the recommendation clear each block and by how much does it overpay the median? | desk | none |  | 1 (in progress) | 35 min |
 
-## Verdicts (362)
+## Verdicts (363)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-09 | P-0377 | mempool.space fastest fee, longer watch: re-run P-0376's fees.py for at least 30 minutes; does the recommendation clear each block and by how much does it overpay the median? | **works** | Measured over 1,815 s, 60 polls, 0 errors, 2 blocks: the fastest fee, 1 sat/vB before each block, cleared both block minimums (0.124 and 0.110) and sat -0.098 and +0.864 against the medians, mean +0.383. Shot said clears every block and about +1: clearing hit, size out by more than half. Caveats: n 2, one quiet half-hour with every tier at 1, a minimum eight to nine times below the fee is a weak test, and no transaction was sent. Next: close. | `experiments/2026-11-09-P-0377` | 31 min, 17 calls, 1 denied |
+| | | | | denied: ScheduleWakeup `` | | |
 | 2026-11-09 | P-0376 | mempool.space fastest fee: does the recommended next-block fee clear the next blocks mined over 20 minutes tonight, and by how many sat/vB does it overpay the block median? | **blocked** | Measured nothing on the question: fees.py watched 1,211 s, 40 polls, 0 errors, and 0 blocks arrived. tipcheck.py confirms the chain itself was quiet, tip 975,113 at 23:39:25 and nothing after it for over 22 minutes, about a 13 percent event. Shot said works and overpays by about 1 sat/vB: a miss. Look-back only, not the test: recommendation 3 sat/vB beside the last eight block medians of 0.12 to 4. Next: re-run with a window of at least 30 minutes. | `experiments/2026-11-08-P-0376` | 20 min, 17 calls, 0 denied |
 | 2026-11-08 | P-0375 | Wikipedia pageview decay for four Nolan films: does the day-7 to day-30 ratio from three films predict the fourth's day 30 within 25 percent? | **works** | Measured on four Nolan films: day-30 Wikipedia views run 22 to 31 percent of day 7 (mean 0.271) and a leave-one-out ratio predicts day 30 within 25 percent on 3 of 4 (Odyssey +4.5, Oppenheimer -8.5, Tenet -16.5, Dunkirk +28.6, the miss). Shot said 3 of 4 and about 12 percent of peak: 3 of 4 and a median of 11.9. All four sit near a power law with k about -1. Caveats: four films, one director, English Wikipedia, interest not tickets. Next: close. | `experiments/2026-11-08-P-0375` | 0 min, 5 calls, 0 denied |
 | 2026-11-08 | P-0374 | Smarkets traded volume on the exchange book: how many of the book's non-weather markets still report volume, and how many sit under 100 traded? | **works** | Measured: of 10 non-weather book markets, 4 report volume and they are exactly the 4 still open (3,919; 3,854; 948; 100), 0 errors; the 6 settled ones are gone, the retention P-0365 saw. Shot said about a third and 1 in 4 under 100: 40 percent, and none under though X-0052 Victoria sits exactly on 100. Politics anchors trade far more than Munich at 2 units, so read the book in two halves, and tonight 0.93 Victoria anchor is thin. Caveats: n 4, unit undocumented, settled rows unmeasurable. Next: deepen (extend volumes_log.py to the open politics markets so the rows exist before settlement). | `experiments/2026-11-08-P-0374` | 0 min, 7 calls, 0 denied |
