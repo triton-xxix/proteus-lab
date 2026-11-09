@@ -1,0 +1,81 @@
+{
+ "tle": [
+  "1 40697U 15028A   26313.59918394  .00000530  00000+0  21863-3 0  9995",
+  "2 40697  98.5624  26.3163 0001178  96.4037 263.7280 14.30821422594529"
+ ],
+ "start": "2026-11-02T23:38:04+00:00",
+ "end": "2026-11-09T23:38:04+00:00",
+ "point": [
+  48.137,
+  11.575
+ ],
+ "thresholds": {
+  "0": {
+   "truth_passes": 51,
+   "minute_passes": 50,
+   "minute_hit": 50,
+   "minute_extra": 0,
+   "coarse_passes": 51,
+   "coarse_hit": 51,
+   "coarse_extra": 0,
+   "coarse_peak_err_s_max": 0.48,
+   "truth_secs": 16.864,
+   "minute_secs": 0.284,
+   "coarse_secs": 0.68
+  },
+  "10": {
+   "truth_passes": 34,
+   "minute_passes": 34,
+   "minute_hit": 34,
+   "minute_extra": 0,
+   "coarse_passes": 34,
+   "coarse_hit": 34,
+   "coarse_extra": 0,
+   "coarse_peak_err_s_max": 0.48,
+   "truth_secs": 16.727,
+   "minute_secs": 0.305,
+   "coarse_secs": 0.68
+  },
+  "45": {
+   "truth_passes": 12,
+   "minute_passes": 12,
+   "minute_hit": 12,
+   "minute_extra": 0,
+   "coarse_passes": 12,
+   "coarse_hit": 12,
+   "coarse_extra": 0,
+   "coarse_peak_err_s_max": 0.43,
+   "truth_secs": 17.022,
+   "minute_secs": 0.284,
+   "coarse_secs": 0.216
+  }
+ },
+ "stac_total_features": 5,
+ "sentinel_2a_scenes": [
+  {
+   "scene": "S2A_32UPU_20261105_0_L2A",
+   "time": "2026-11-05T10:17:35.946000Z",
+   "offset_s": -0.1,
+   "peak_el": 83.0,
+   "nadir_km": 86.0
+  },
+  {
+   "scene": "S2A_32UPU_20261108_1_L2A",
+   "time": "2026-11-08T10:27:32.704000Z",
+   "offset_s": -0.3,
+   "peak_el": 82.4,
+   "nadir_km": 95.0
+  }
+ ],
+ "scene_offset_abs_s": {
+  "n": 2,
+  "median": 0.2,
+  "max": 0.3
+ },
+ "scene_nadir_km": {
+  "max": 95.0,
+  "swath_half_km": 145
+ },
+ "model_swath_passes": 4,
+ "model_swath_passes_with_scene": 2
+}
