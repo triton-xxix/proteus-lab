@@ -16,6 +16,7 @@ const { renderMemento } = require('./lib/memento.cjs');
 const { renderInception } = require('./lib/inception.cjs');
 const { renderDunkirk } = require('./lib/dunkirk.cjs');
 const { renderInterstellar } = require('./lib/interstellar.cjs');
+const { renderPrestige } = require('./lib/prestige.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -152,6 +153,14 @@ function build() {
     copy(path.join(ROOT, 'src', 'interstellar.css'), path.join(OUT, 'shared', 'interstellar.css'));
     write(OUT, 'interstellar/index.html', renderInterstellar('../'));
     copy(isClocks, path.join(OUT, 'data', 'interstellar-clocks.json'));
+  }
+  // prestige deep page, once its layers research exists (borrows the braid and list styles from memento.css)
+  const prLayers = path.join(ROOT, 'the-prestige', 'research', 'layers.json');
+  if (fs.existsSync(prLayers)) {
+    copy(path.join(ROOT, 'src', 'memento.css'), path.join(OUT, 'shared', 'memento.css'));
+    copy(path.join(ROOT, 'src', 'prestige.css'), path.join(OUT, 'shared', 'prestige.css'));
+    write(OUT, 'the-prestige/index.html', renderPrestige('../'));
+    copy(prLayers, path.join(OUT, 'data', 'the-prestige-layers.json'));
   }
   copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
   write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));
