@@ -1,5 +1,5 @@
 {
- "next_id": 386,
+ "next_id": 387,
  "items": [
   {
    "id": "P-0001",
@@ -9616,6 +9616,28 @@
    ],
    "minutes": 2,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0386",
+   "title": "New GitHub repos with stars: of those created in the last three days with 50 or more stars, how many are tiny and route installs to a paste-site or binary?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-09T23:57:28+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-09T23:58:50+0000",
+   "note": "Of 152 GitHub repos created since 6 Nov with 50 or more stars, 38 are under 50 KB, and 10 of those carry both a paste-site link and a run-exe, inject or antivirus phrase; paste links sit in 11 of 38 tiny repos against 3 of 114 larger. Regex counts, matches not audited, no repo named or run, so none is shown to be malicious.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0386"
+   ],
+   "minutes": 1,
+   "calls": 4,
    "denied": [],
    "luke": false
   }
