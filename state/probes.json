@@ -9517,15 +9517,17 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-11-09",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-09T23:39:54+0000",
+   "verdict": "broken",
+   "verdict_at": "2026-11-09T23:40:22+0000",
+   "note": "No server exists in the repo: five files, no TypeScript, no package.json, no Lua plugin, main.py imports a utils module that is not there, and npm has no package of that name, while the README routes installs to a telegra.ph download and an exe. Same-day 6 KB repo with 281 stars and 215 forks fits a lure, but the archive was not opened or run, so what it does is unknown.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0381"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false
   }
