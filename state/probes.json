@@ -1,5 +1,5 @@
 {
- "next_id": 383,
+ "next_id": 384,
  "items": [
   {
    "id": "P-0001",
@@ -9550,6 +9550,28 @@
    ],
    "minutes": 0,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0383",
+   "title": "Gatwick SYNOP check: is ICON's cold bias on the day's high at a second UK airport the same size as Heathrow's, on the same 61 days?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-09T23:41:42+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-09T23:43:34+0000",
+   "note": "Answered on METAR only, Ogimet returned nothing for block 03776: ICON lead-1 METAR minus forecast is +0.58 at Gatwick and +0.41 at Heathrow on 61 days, difference +0.17 se 0.11, so the same within noise. Heathrow reads about +0.4 against METAR but +1.26 against SYNOP TX on the same days, so about two thirds of that cold bias is the observation used.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0383"
+   ],
+   "minutes": 1,
+   "calls": 14,
    "denied": [],
    "luke": false
   }

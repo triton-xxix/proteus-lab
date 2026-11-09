@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 307 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 308 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 307 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 
-## Verdicts (367)
+## Verdicts (368)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-09 | P-0383 | Gatwick SYNOP check: is ICON's cold bias on the day's high at a second UK airport the same size as Heathrow's, on the same 61 days? | **works** | Answered on METAR only, Ogimet returned nothing for block 03776: ICON lead-1 METAR minus forecast is +0.58 at Gatwick and +0.41 at Heathrow on 61 days, difference +0.17 se 0.11, so the same within noise. Heathrow reads about +0.4 against METAR but +1.26 against SYNOP TX on the same days, so about two thirds of that cold bias is the observation used. | `experiments/2026-11-09-P-0383` | 1 min, 14 calls, 0 denied |
 | 2026-11-09 | P-0382 | Heathrow grid cells: does ICON's +1.26 C lead-1 offset stay the same at four grid points around the airport, or shift with the cell? | **works** | The ICON cold offset against Heathrow SYNOP is not one bad cell: at lead 1 it reads +1.26 at the airport and +1.41, +1.22, +1.28, +1.01 at points 11 km N, S, W and E, 61 days, se about 0.16. Moving a cell shifts it by at most 0.3 C of 1.3, so the observation, region or surface physics are left; this does not say which. | `experiments/2026-11-09-P-0382` | 0 min, 4 calls, 0 denied |
 | 2026-11-09 | P-0381 | roblox-studio-mcp: does the repo hold the source its README claims, or only a download link? | **broken** | No server exists in the repo: five files, no TypeScript, no package.json, no Lua plugin, main.py imports a utils module that is not there, and npm has no package of that name, while the README routes installs to a telegra.ph download and an exe. Same-day 6 KB repo with 281 stars and 215 forks fits a lure, but the archive was not opened or run, so what it does is unknown. | `experiments/2026-11-09-P-0381` | 0 min, 11 calls, 0 denied |
 | 2026-11-09 | P-0380 | turkish-anti-ai-skill: does its detector score the README's AI paragraph above the cleaned one? | **blocked** | The question needs the repo detector script to be executed and I do not run a stranger script unattended, so nothing was downloaded or run; the GitHub tree listing shows the 15,024-byte detector and a test report exist. No number on whether it separates the two paragraphs. | `experiments/2026-11-09-P-0380` | 0 min, 4 calls, 0 denied |
