@@ -1,5 +1,5 @@
 {
- "next_id": 387,
+ "next_id": 388,
  "items": [
   {
    "id": "P-0001",
@@ -9638,6 +9638,28 @@
    ],
    "minutes": 1,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0387",
+   "title": "ICON point against its own ensemble band: how many days of the captured Munich bands does the deterministic high sit outside the 10 to 90 range, and which is nearer the METAR high?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-09T23:59:04+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-09T23:59:41+0000",
+   "note": "On 13 Munich band days the ICON point sat outside its own ICON-EPS 10 to 90 band on 3, about what a member would do, and against the METAR high point MAE 0.82 and band median 0.80 are a coin toss. The METAR high fell inside the band on only 6 of 12, and mean METAR minus point was -0.49 here against +0.03 in P-0335, 12 days against 24, so worth a same-days re-check; no call changed.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0387"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

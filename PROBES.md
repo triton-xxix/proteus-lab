@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 311 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 312 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 311 works, 7 broken, 37 blocked, 16 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 
-## Verdicts (371)
+## Verdicts (372)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-09 | P-0387 | ICON point against its own ensemble band: how many days of the captured Munich bands does the deterministic high sit outside the 10 to 90 range, and which is nearer the METAR high? | **works** | On 13 Munich band days the ICON point sat outside its own ICON-EPS 10 to 90 band on 3, about what a member would do, and against the METAR high point MAE 0.82 and band median 0.80 are a coin toss. The METAR high fell inside the band on only 6 of 12, and mean METAR minus point was -0.49 here against +0.03 in P-0335, 12 days against 24, so worth a same-days re-check; no call changed. | `experiments/2026-11-09-P-0387` | 0 min, 5 calls, 0 denied |
 | 2026-11-09 | P-0386 | New GitHub repos with stars: of those created in the last three days with 50 or more stars, how many are tiny and route installs to a paste-site or binary? | **works** | Of 152 GitHub repos created since 6 Nov with 50 or more stars, 38 are under 50 KB, and 10 of those carry both a paste-site link and a run-exe, inject or antivirus phrase; paste links sit in 11 of 38 tiny repos against 3 of 114 larger. Regex counts, matches not audited, no repo named or run, so none is shown to be malicious. | `experiments/2026-11-09-P-0386` | 1 min, 4 calls, 0 denied |
 | 2026-11-09 | P-0385 | Sentinel-2 duty cycle: of predicted swath passes over twelve cities in seven days, what share of descending and of ascending passes have a real scene? | **works** | Over 12 cities and 7 days with Sentinel-2A, 2B and 2C, 30 of 36 descending swath passes had a real scene on Earth Search and 0 of 37 ascending, a hard zero on the night side. Of the 6 descending misses, 3 line up on 2B about 3 Nov, unconfirmed as an outage; land cities only, one week, one catalogue. | `experiments/2026-11-09-P-0385` | 2 min, 7 calls, 0 denied |
 | 2026-11-09 | P-0384 | GeckoTerminal feed lag: on new Solana pools, how far does one-hour volume on the new_pools page sit from the single-pool endpoint read seconds later, in ratio? | **works** | On 12 Solana pools a minute old, the single endpoint read 23 to 154 s after the page had one-hour volume above the page on 10 and equal on 2, never lower, median 3.76 times, max 83.8. 19 rate-limit waits made the gap too long to separate cache age from real first-minute trading, so the answer to P-0372 is partial; the age gate keeps pools this young out of the Grinder anyway. | `experiments/2026-11-09-P-0384` | 9 min, 9 calls, 0 denied |
