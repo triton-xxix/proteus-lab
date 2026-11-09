@@ -1,5 +1,5 @@
 {
- "next_id": 377,
+ "next_id": 378,
  "items": [
   {
    "id": "P-0001",
@@ -9412,6 +9412,32 @@
     "number": "fastest fee clears every block's minimum seen in 20 minutes; overpays the block median by about 1 sat/vB",
     "at": "2026-11-08T23:41:21+0000",
     "hit": false
+   }
+  },
+  {
+   "id": "P-0377",
+   "title": "mempool.space fastest fee, longer watch: re-run P-0376's fees.py for at least 30 minutes; does the recommendation clear each block and by how much does it overpay the median?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 35,
+   "added": "2026-11-09",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-09T12:31:42+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "number": "fastest fee clears the minimum of every block seen, mean overpay against block median about +1 sat/vB",
+    "at": "2026-11-09T12:32:00+0000"
    }
   }
  ]
