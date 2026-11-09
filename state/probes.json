@@ -1,5 +1,5 @@
 {
- "next_id": 384,
+ "next_id": 385,
  "items": [
   {
    "id": "P-0001",
@@ -9572,6 +9572,28 @@
    ],
    "minutes": 1,
    "calls": 14,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0384",
+   "title": "GeckoTerminal feed lag: on new Solana pools, how far does one-hour volume on the new_pools page sit from the single-pool endpoint read seconds later, in ratio?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-09T23:43:57+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-09T23:53:33+0000",
+   "note": "On 12 Solana pools a minute old, the single endpoint read 23 to 154 s after the page had one-hour volume above the page on 10 and equal on 2, never lower, median 3.76 times, max 83.8. 19 rate-limit waits made the gap too long to separate cache age from real first-minute trading, so the answer to P-0372 is partial; the age gate keeps pools this young out of the Grinder anyway.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0384"
+   ],
+   "minutes": 9,
+   "calls": 9,
    "denied": [],
    "luke": false
   }

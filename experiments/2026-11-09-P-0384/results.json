@@ -1,0 +1,515 @@
+[
+ {
+  "round": 0,
+  "at": 1794267906.0083468,
+  "page_size": 20,
+  "pools": [
+   {
+    "address": "c8UMnbuS5cexTGBZJ99NKpdT6dCPnVBNX6NmHBfbw6D",
+    "on_page": true,
+    "page": {
+     "h1": 482.1954314436,
+     "reserve": 2970.3739030469,
+     "created": "2026-11-09T23:44:07Z",
+     "name": "PERPULATOR / SOL"
+    },
+    "single": {
+     "h1": 2163.4461201927,
+     "reserve": 2077.7895,
+     "created": "2026-11-09T23:44:07Z",
+     "name": "PERPULATOR / SOL"
+    },
+    "secs_after_page": 23.1
+   },
+   {
+    "address": "J1HqCMauvQfW69LzzXEfv1MsZeHSKRQz3C9veRzk3AK5",
+    "on_page": true,
+    "page": {
+     "h1": 89.774105673,
+     "reserve": 2052.13330290606,
+     "created": "2026-11-09T23:44:06Z",
+     "name": "BYX / SOL"
+    },
+    "single": {
+     "h1": 181.1588564221,
+     "reserve": 1974.5541,
+     "created": "2026-11-09T23:44:06Z",
+     "name": "BYX / SOL"
+    },
+    "secs_after_page": 26.0
+   },
+   {
+    "address": "FiDM6ZakkDfdmPZ5Gfq4hJYsx5xf9ZHCRXDWzHZuTkNq",
+    "on_page": true,
+    "page": {
+     "h1": 19.0071854987,
+     "reserve": 2002.34914910563,
+     "created": "2026-11-09T23:44:05Z",
+     "name": "MCH / SOL"
+    },
+    "single": {
+     "h1": 68.6917332925,
+     "reserve": 746.4586,
+     "created": "2026-11-09T23:44:05Z",
+     "name": "MCH / SOL"
+    },
+    "secs_after_page": 48.7
+   },
+   {
+    "address": "Fb5Kuncir5qhWkYEKRSr2PRrbcTLy9kyteB2kxPK79i1",
+    "on_page": true,
+    "page": {
+     "h1": 5.524842073,
+     "reserve": 1070.76060418205,
+     "created": "2026-11-09T23:44:04Z",
+     "name": "Donkey / SOL"
+    },
+    "single": {
+     "h1": 52.1211113857,
+     "reserve": 1506.0042,
+     "created": "2026-11-09T23:44:04Z",
+     "name": "Donkey / SOL"
+    },
+    "secs_after_page": 51.4
+   },
+   {
+    "address": "6HT3y7GhLBHCsLox42h8NaQEMN9mCtuUhgQF2C2z1R1v",
+    "on_page": true,
+    "page": {
+     "h1": 0.884241198,
+     "reserve": 2262.11395310681,
+     "created": "2026-11-09T23:44:02Z",
+     "name": "SATINU / SOL"
+    },
+    "single": {
+     "h1": 74.1004166901,
+     "reserve": 2677.5387,
+     "created": "2026-11-09T23:44:02Z",
+     "name": "SATINU / SOL"
+    },
+    "secs_after_page": 74.2
+   },
+   {
+    "address": "EeMTdnn2YTHu5A5NZKUckBq7JaY1ay6uzsovtXzvNwhv",
+    "on_page": true,
+    "page": {
+     "h1": 86.5655602154,
+     "reserve": 17320.8503313579,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "YIBAO / SOL"
+    },
+    "single": {
+     "h1": 86.5655602154,
+     "reserve": 17320.8503313579,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "YIBAO / SOL"
+    },
+    "secs_after_page": 76.9
+   },
+   {
+    "address": "DktQ6RYzEn8UarT6BF6pUR7QiSzc1kqWPz1jAVxNg2Se",
+    "on_page": true,
+    "page": {
+     "h1": 1725.0754338914,
+     "reserve": 5875.3907,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "Runcore / SOL"
+    },
+    "single": {
+     "h1": 4447.9247643063,
+     "reserve": 3315.8232,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "Runcore / SOL"
+    },
+    "secs_after_page": 79.5
+   },
+   {
+    "address": "2KtV4KatJWBwhb2NNNzNK9D6vArHt7Yd5W2TjYAFc5Cb",
+    "on_page": true,
+    "page": {
+     "h1": 1394.1731857151,
+     "reserve": 14715.9692,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "DRILLING / SOL"
+    },
+    "single": {
+     "h1": 5456.8784594224,
+     "reserve": 0.0086,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "DRILLING / SOL"
+    },
+    "secs_after_page": 102.3
+   },
+   {
+    "address": "Eh3LMm7NgfpUaFpwhwFYiXm6Ao9ioVxNdFL42fzunTEX",
+    "on_page": true,
+    "page": {
+     "h1": 541.3157972059,
+     "reserve": 34632.6598,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "Rockstar / SOL"
+    },
+    "single": {
+     "h1": 16341.9464347485,
+     "reserve": 37255.9328,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "Rockstar / SOL"
+    },
+    "secs_after_page": 105.1
+   },
+   {
+    "address": "6dH3khq9qyYDke6LYV3uKXx9JMyNUeroYy37ZtojQRGj",
+    "on_page": true,
+    "page": {
+     "h1": 5.9847813529,
+     "reserve": 1923.95302467025,
+     "created": "2026-11-09T23:43:52Z",
+     "name": "CZTX / SOL"
+    },
+    "single": {
+     "h1": 5.9847813529,
+     "reserve": 1923.95302467025,
+     "created": "2026-11-09T23:43:52Z",
+     "name": "CZTX / SOL"
+    },
+    "secs_after_page": 128.0
+   },
+   {
+    "address": "2QRd8eoFt17eiPuVYmqhePwuhQXNpY31uK32xDghCPF4",
+    "on_page": true,
+    "page": {
+     "h1": 1234.5816313378,
+     "reserve": 2673.6924,
+     "created": "2026-11-09T23:43:51Z",
+     "name": "CLOWN / SOL"
+    },
+    "single": {
+     "h1": 1302.7486448913,
+     "reserve": 2692.8804,
+     "created": "2026-11-09T23:43:51Z",
+     "name": "CLOWN / SOL"
+    },
+    "secs_after_page": 130.8
+   },
+   {
+    "address": "FDxURVK2MrfMX1gUXMsFPa7CU7G9Qqn6Q7C9qFgc9NZJ",
+    "on_page": true,
+    "page": {
+     "h1": 227.7977904972,
+     "reserve": 2781.4175,
+     "created": "2026-11-09T23:43:49Z",
+     "name": "RAM / SOL"
+    },
+    "single": {
+     "h1": 1449.0856568319,
+     "reserve": 3245.1805,
+     "created": "2026-11-09T23:43:49Z",
+     "name": "RAM / SOL"
+    },
+    "secs_after_page": 153.7
+   }
+  ]
+ },
+ {
+  "round": 1,
+  "at": 1794268059.663268,
+  "page_size": 20,
+  "pools": [
+   {
+    "address": "c8UMnbuS5cexTGBZJ99NKpdT6dCPnVBNX6NmHBfbw6D",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 2196.4683374405,
+     "reserve": 2017.2261,
+     "created": "2026-11-09T23:44:07Z",
+     "name": "PERPULATOR / SOL"
+    },
+    "secs_after_page": 23.2
+   },
+   {
+    "address": "J1HqCMauvQfW69LzzXEfv1MsZeHSKRQz3C9veRzk3AK5",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 181.1588564221,
+     "reserve": 1974.5541,
+     "created": "2026-11-09T23:44:06Z",
+     "name": "BYX / SOL"
+    },
+    "secs_after_page": 26.0
+   },
+   {
+    "address": "FiDM6ZakkDfdmPZ5Gfq4hJYsx5xf9ZHCRXDWzHZuTkNq",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 68.6917332925,
+     "reserve": 746.4586,
+     "created": "2026-11-09T23:44:05Z",
+     "name": "MCH / SOL"
+    },
+    "secs_after_page": 48.9
+   },
+   {
+    "address": "Fb5Kuncir5qhWkYEKRSr2PRrbcTLy9kyteB2kxPK79i1",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 52.1211113857,
+     "reserve": 1506.0042,
+     "created": "2026-11-09T23:44:04Z",
+     "name": "Donkey / SOL"
+    },
+    "secs_after_page": 51.6
+   },
+   {
+    "address": "6HT3y7GhLBHCsLox42h8NaQEMN9mCtuUhgQF2C2z1R1v",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 256.4162724422,
+     "reserve": 1100.8329,
+     "created": "2026-11-09T23:44:02Z",
+     "name": "SATINU / SOL"
+    },
+    "secs_after_page": 74.4
+   },
+   {
+    "address": "EeMTdnn2YTHu5A5NZKUckBq7JaY1ay6uzsovtXzvNwhv",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 180.0040425879,
+     "reserve": 17240.7388,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "YIBAO / SOL"
+    },
+    "secs_after_page": 97.3
+   },
+   {
+    "address": "DktQ6RYzEn8UarT6BF6pUR7QiSzc1kqWPz1jAVxNg2Se",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 5194.9870629161,
+     "reserve": 2658.4188,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "Runcore / SOL"
+    },
+    "secs_after_page": 100.1
+   },
+   {
+    "address": "2KtV4KatJWBwhb2NNNzNK9D6vArHt7Yd5W2TjYAFc5Cb",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 5456.8784594224,
+     "reserve": 0.0086,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "DRILLING / SOL"
+    },
+    "secs_after_page": 123.2
+   },
+   {
+    "address": "Eh3LMm7NgfpUaFpwhwFYiXm6Ao9ioVxNdFL42fzunTEX",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 91740.7023931208,
+     "reserve": 0.0173,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "Rockstar / SOL"
+    },
+    "secs_after_page": 126.0
+   },
+   {
+    "address": "6dH3khq9qyYDke6LYV3uKXx9JMyNUeroYy37ZtojQRGj",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 5.9847813529,
+     "reserve": 1922.1998,
+     "created": "2026-11-09T23:43:52Z",
+     "name": "CZTX / SOL"
+    },
+    "secs_after_page": 149.0
+   },
+   {
+    "address": "2QRd8eoFt17eiPuVYmqhePwuhQXNpY31uK32xDghCPF4",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 1843.9484269542,
+     "reserve": 1923.6639,
+     "created": "2026-11-09T23:43:51Z",
+     "name": "CLOWN / SOL"
+    },
+    "secs_after_page": 151.8
+   },
+   {
+    "address": "FDxURVK2MrfMX1gUXMsFPa7CU7G9Qqn6Q7C9qFgc9NZJ",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 1583.4583761181,
+     "reserve": 764.5538,
+     "created": "2026-11-09T23:43:49Z",
+     "name": "RAM / SOL"
+    },
+    "secs_after_page": 174.7
+   }
+  ]
+ },
+ {
+  "round": 2,
+  "at": 1794268234.338134,
+  "page_size": 20,
+  "pools": [
+   {
+    "address": "c8UMnbuS5cexTGBZJ99NKpdT6dCPnVBNX6NmHBfbw6D",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 2249.0478658026,
+     "reserve": 1985.9247,
+     "created": "2026-11-09T23:44:07Z",
+     "name": "PERPULATOR / SOL"
+    },
+    "secs_after_page": 22.7
+   },
+   {
+    "address": "J1HqCMauvQfW69LzzXEfv1MsZeHSKRQz3C9veRzk3AK5",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 181.1588564221,
+     "reserve": 1974.6021,
+     "created": "2026-11-09T23:44:06Z",
+     "name": "BYX / SOL"
+    },
+    "secs_after_page": 45.5
+   },
+   {
+    "address": "FiDM6ZakkDfdmPZ5Gfq4hJYsx5xf9ZHCRXDWzHZuTkNq",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 68.6917332925,
+     "reserve": 746.3623,
+     "created": "2026-11-09T23:44:05Z",
+     "name": "MCH / SOL"
+    },
+    "secs_after_page": 48.4
+   },
+   {
+    "address": "Fb5Kuncir5qhWkYEKRSr2PRrbcTLy9kyteB2kxPK79i1",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 52.1211113857,
+     "reserve": 1505.81,
+     "created": "2026-11-09T23:44:04Z",
+     "name": "Donkey / SOL"
+    },
+    "secs_after_page": 51.2
+   },
+   {
+    "address": "6HT3y7GhLBHCsLox42h8NaQEMN9mCtuUhgQF2C2z1R1v",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 256.4162724422,
+     "reserve": 1100.8329,
+     "created": "2026-11-09T23:44:02Z",
+     "name": "SATINU / SOL"
+    },
+    "secs_after_page": 74.1
+   },
+   {
+    "address": "EeMTdnn2YTHu5A5NZKUckBq7JaY1ay6uzsovtXzvNwhv",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 180.0040425879,
+     "reserve": 17240.7388,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "YIBAO / SOL"
+    },
+    "secs_after_page": 76.8
+   },
+   {
+    "address": "DktQ6RYzEn8UarT6BF6pUR7QiSzc1kqWPz1jAVxNg2Se",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 5194.9870629161,
+     "reserve": 2658.4188,
+     "created": "2026-11-09T23:43:58Z",
+     "name": "Runcore / SOL"
+    },
+    "secs_after_page": 99.4
+   },
+   {
+    "address": "2KtV4KatJWBwhb2NNNzNK9D6vArHt7Yd5W2TjYAFc5Cb",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 5456.8784594224,
+     "reserve": 0.0086,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "DRILLING / SOL"
+    },
+    "secs_after_page": 102.3
+   },
+   {
+    "address": "Eh3LMm7NgfpUaFpwhwFYiXm6Ao9ioVxNdFL42fzunTEX",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 91740.7023931208,
+     "reserve": 0.0173,
+     "created": "2026-11-09T23:43:56Z",
+     "name": "Rockstar / SOL"
+    },
+    "secs_after_page": 125.2
+   },
+   {
+    "address": "6dH3khq9qyYDke6LYV3uKXx9JMyNUeroYy37ZtojQRGj",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 5.9847813529,
+     "reserve": 1922.1998,
+     "created": "2026-11-09T23:43:52Z",
+     "name": "CZTX / SOL"
+    },
+    "secs_after_page": 128.1
+   },
+   {
+    "address": "2QRd8eoFt17eiPuVYmqhePwuhQXNpY31uK32xDghCPF4",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 1843.9484269542,
+     "reserve": 1923.6639,
+     "created": "2026-11-09T23:43:51Z",
+     "name": "CLOWN / SOL"
+    },
+    "secs_after_page": 151.1
+   },
+   {
+    "address": "FDxURVK2MrfMX1gUXMsFPa7CU7G9Qqn6Q7C9qFgc9NZJ",
+    "on_page": false,
+    "page": null,
+    "single": {
+     "h1": 1659.279395062,
+     "reserve": 64.9987,
+     "created": "2026-11-09T23:43:49Z",
+     "name": "RAM / SOL"
+    },
+    "secs_after_page": 154.0
+   }
+  ]
+ }
+]
