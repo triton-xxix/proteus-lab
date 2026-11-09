@@ -1,0 +1,41 @@
+{
+ "reports": 240,
+ "skipped": 0,
+ "first": "2026-11-04",
+ "last": "2026-11-08",
+ "rules": {
+  "utc_day": {
+   "rows": 4,
+   "agree": 4,
+   "wrong": []
+  },
+  "local_day": {
+   "rows": 4,
+   "agree": 4,
+   "wrong": []
+  }
+ },
+ "unsettled": [
+  {
+   "id": "X-0050",
+   "day": "2026-11-08",
+   "contract": "9°C or higher",
+   "p": "0.45",
+   "metar_high_local_day": 8
+  },
+  {
+   "id": "X-0051",
+   "day": "2026-11-09",
+   "contract": "11°C",
+   "p": "0.25",
+   "metar_high_local_day": -1
+  },
+  {
+   "id": "X-0053",
+   "day": "2026-11-10",
+   "contract": "10°C",
+   "p": "0.22",
+   "metar_high_local_day": null
+  }
+ ]
+}

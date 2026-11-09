@@ -62,3 +62,9 @@ executor on its own. On KILL calls stop and the book is published as it stands.
 
 `exchange.py` (all commands), `SNAPSHOTS.csv` (nightly prices for every open market, the history
 nobody else keeps in public), `BOOK.csv` (the calls).
+
+**9 Nov 2026, D-023: KEEP.** The Munich market reads as the highest EDDM METAR temperature: X-0046,
+X-0047 and X-0048 all settled as that rule said (METAR highs 10, 4 and 7), and only X-0046 separated
+it from the city station. Inferred from settlements, the market's own text is empty. The nightly's
+Munich correction moved from +1 C to none, as the row registered. Read in
+`experiments/2026-11-09-D-023/README.md`.
