@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 306 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
+Verdicts so far: 306 works, 6 broken, 37 blocked, 16 not worth it. Killed: 5.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,13 +23,13 @@ Verdicts so far: 306 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
-| P-0380 | turkish-anti-ai-skill: does its detector score the README's AI paragraph above the cleaned one? | harvest | none |  | 0 | 15 min |
 | P-0381 | roblox-studio-mcp: does the repo hold the source its README claims, or only a download link? | harvest | none |  | 0 | 10 min |
 
-## Verdicts (364)
+## Verdicts (365)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-09 | P-0380 | turkish-anti-ai-skill: does its detector score the README's AI paragraph above the cleaned one? | **blocked** | The question needs the repo detector script to be executed and I do not run a stranger script unattended, so nothing was downloaded or run; the GitHub tree listing shows the 15,024-byte detector and a test report exist. No number on whether it separates the two paragraphs. | `experiments/2026-11-09-P-0380` | 0 min, 4 calls, 0 denied |
 | 2026-11-09 | P-0379 | watched.earth: does SGP4 on CelesTrak data find the same Sentinel-2A passes as a brute-force scan? | **works** | Over Munich for 7 days on the live Sentinel-2A elements, a 300 s search with peak refinement found 51 of 51, 34 of 34 and 12 of 12 passes against a 1 s scan at 0, 10 and 45 degrees, no extras; a 60 s scan missed 1 at the horizon. Two real scenes sat 0.1 and 0.3 s from predicted peaks, n 2, against the 5 to 10 minutes the source warned of; my code, not the site, and the 17,000-object speed claim untested. | `experiments/2026-11-09-P-0379` | 2 min, 10 calls, 0 denied |
 | 2026-11-09 | P-0377 | mempool.space fastest fee, longer watch: re-run P-0376's fees.py for at least 30 minutes; does the recommendation clear each block and by how much does it overpay the median? | **works** | Measured over 1,815 s, 60 polls, 0 errors, 2 blocks: the fastest fee, 1 sat/vB before each block, cleared both block minimums (0.124 and 0.110) and sat -0.098 and +0.864 against the medians, mean +0.383. Shot said clears every block and about +1: clearing hit, size out by more than half. Caveats: n 2, one quiet half-hour with every tier at 1, a minimum eight to nine times below the fee is a weak test, and no transaction was sent. Next: close. | `experiments/2026-11-09-P-0377` | 31 min, 17 calls, 1 denied |
 | | | | | denied: ScheduleWakeup `` | | |
