@@ -6,15 +6,25 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-579 judged over 40 harvest days, 378 kept, 117 testable, 112 queued as probes, 106 with a probe verdict.
+593 judged over 41 harvest days, 388 kept, 121 testable, 116 queued as probes, 107 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0592 | 2026-11-09 | github | [Nanoutrolley/roblox-studio-mcp: Model Context Protocol (MCP) server for Roblox Studio. Con](https://github.com/Nanoutrolley/roblox-studio-mcp) (intel) | mechanism | tools-for-strangers | yes | P-0381 |
+| H-0590 | 2026-11-09 | vault | [income-claim ads](https://www.instagram.com/p/DfZo4rOsFRL/) (intel) | mechanism | none | no: It is a regulatory and compliance question, with nothing to  |  |
+| H-0588 | 2026-11-09 | arxiv | [Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data](https://arxiv.org/abs/2611.09372) | mechanism | tech | no: It needs a local LLM, which this Mac does not have, and the  |  |
+| H-0587 | 2026-11-09 | github | [yucezerey/turkish-anti-ai-skill: Türkçe metinlerdeki yapay zeka izlerini (AI slop, transla](https://github.com/yucezerey/turkish-anti-ai-skill) | mechanism | tools-for-strangers | yes | P-0380 |
+| H-0586 | 2026-11-09 | hn | [Show HN: Every satellite that passed over any place this week, and its photos](https://www.watched.earth) | mechanism | open-data | yes | P-0379 |
+| H-0585 | 2026-11-09 | vault | [free live session, no replay, paid offer behind](https://www.instagram.com/p/DfZo4rOsFRL/) | mechanism | none | no: Testing it needs real registrants and a live session, which  |  |
+| H-0584 | 2026-11-09 | youtube | [This Chess AI Predicts Your Mistakes](https://www.youtube.com/watch?v=8uKW6cIusLA) | mechanism | game-bots | no: It needs an lc0 engine build and the weight files, neither o |  |
+| H-0583 | 2026-11-09 | arxiv | [Tracybot: Preserving Developer Intent by Tracing Agent-Generated Code to Prompts](https://arxiv.org/abs/2611.09395) | mechanism | tools-for-strangers | no: It is a VS Code extension and needs a GUI editor session wit |  |
+| H-0581 | 2026-11-09 | github | [drost-ai/tinker-ai-skill: Agent Skill for fine-tuning an agentic model on your own Claude ](https://github.com/drost-ai/tinker-ai-skill) | mechanism | tools-for-strangers | yes | P-0378 |
+| H-0580 | 2026-11-09 | vault | [testimonial-first hook with one number](https://www.instagram.com/p/DfZo4rOsFRL/) | mechanism | none | no: Judging a hook needs live ad impressions and an audience, wh |  |
 | H-0576 | 2026-11-08 | vault | [Account boosting and grey-market sale of game accounts and in-game items]() (intel) | mechanism | game-bots | no: The game is not out until 19 Nov 2026 and the trade breaches |  |
 | H-0574 | 2026-11-08 | arxiv | [tok: a textual concrete syntax of BPMN and DMN for humans and AI agents](https://arxiv.org/abs/2611.07945) | mechanism | tools-for-strangers | no: The brief gives no repository or tool link, so the checker c |  |
-| H-0573 | 2026-11-08 | github | [kubai087/kubai-icons: An agent skill that draws animated icons in one consistent style, fo](https://github.com/kubai087/kubai-icons) | mechanism | tools-for-strangers | yes | P-0370 |
+| H-0573 | 2026-11-08 | github | [kubai087/kubai-icons: An agent skill that draws animated icons in one consistent style, fo](https://github.com/kubai087/kubai-icons) | mechanism | tools-for-strangers | yes | P-0370 **works** |
 | H-0571 | 2026-11-08 | vault | [Free trading community paid per lot its members trade through an offshore introducing-brok](https://www.instagram.com/p/DdgEcsPsrpe/) (intel) | mechanism | mechanism-hunting | no: Checking it would mean opening a broker account, and the num |  |
 | H-0569 | 2026-11-08 | arxiv | [ChemE-as-Code: An Open-Source Platform for Agentic AI in Chemical Engineering](https://arxiv.org/abs/2611.07947) | mechanism | mechanism-hunting | no: The slice would need the paper's repository and chemical eng |  |
 | H-0568 | 2026-11-08 | github | [shanselman/sandbox-mcp: Fresh, throwaway Windows machines for testing your apps: an MCP se](https://github.com/shanselman/sandbox-mcp) | mechanism | tools-for-strangers | no: It needs Windows 11 with the Windows Sandbox feature, and th |  |
@@ -392,6 +402,129 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0592 Nanoutrolley/roblox-studio-mcp: Model Context Protocol (MCP) server for Roblox Studio. Connect AI assistants (Claude, Cu
+2026-11-09, github, https://github.com/Nanoutrolley/roblox-studio-mcp. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** The README presents an MCP server for Roblox Studio but its install path is to download a 'Core_Update_Pack' archive, run 'ProjectFiles.exe' and 'inject the script', not the npx command it also shows. The text is inconsistent: the repo language is Python while the README claims Node and TypeScript, and the repo is days old with 281 stars. That pattern matches a lure repo that uses a popular tool name to distribute a Windows executable. Platforms and researchers catch these through the star burst on new repos, the language mismatch, the binary download, and sandbox detonation of the archive.
+- **Claim:** An MCP server that lets Claude or Cursor read the Roblox object tree, edit Lua and run playtests.
+- **Testable:** yes. Does the repo's file tree contain the TypeScript source the README describes, and does the npm package 'roblox-studio-mcp' exist with a matching repository field? Queued as P-0381.
+- **Idea on its own:** unsound. A genuine MCP server needs no executable download, so the install path as written is the warning sign, even though the underlying MCP-to-Studio idea is sound.
+- **How it would be done:** Read the repo tree and the npm registry entry through their public APIs only, without downloading or running the archive. Compare file languages, the presence of package.json and TypeScript source, commit history and the star timeline. The real bridge idea is a WebSocket server plus a Studio plugin written in Lua, which a person could build from the documented MCP SDK. Anyone wanting it should use only a source-visible build.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** MCP TypeScript SDK https://github.com/modelcontextprotocol/typescript-sdk (The base for building a trustworthy MCP server instead.)
+- **Field Notes line:** A fresh MCP repo with 281 stars tells you to run an .exe, not the npx package it also shows: the shape of a malware lure.
+
+### H-0590 income-claim ads
+2026-11-09, vault, https://www.instagram.com/p/DfZo4rOsFRL/
+
+- **Mechanism:** Income-claim ads put a specific earnings figure from a client or the advertiser in front of a cold audience as proof the offer works. In the UK these are covered by CAP Code rules on substantiation and on testimonials, and the ASA investigates complaints, can require withdrawal and names repeat offenders. Platforms also review ad copy for earnings claims, and complaints from the public are the usual trigger.
+- **Claim:** The ad leans on an income result to sell a webinar, which draws ASA and CAP scrutiny in the UK.
+- **Testable:** no. It is a regulatory and compliance question, with nothing to run.
+- **Idea on its own:** sound. As intelligence, understanding how these claims are policed is useful for keeping our own ad copy within the rules.
+- **How it would be done:** Read the ASA rulings archive and the CAP Code sections on testimonials and substantiation, and list the wording the ASA has upheld complaints against. Turn that into a short checklist for our own ad copy: every number backed by documents, any result marked as not typical, and no earnings promise. A person with compliance knowledge, or the CAP Copy Advice service, would be the check on real ads. No script covers the judgement call on borderline wording.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** ASA rulings archive https://www.asa.org.uk/codes-and-rulings/rulings.html (Public record of what was upheld and why.); CAP Copy Advice https://www.asa.org.uk/advice-and-resources/bespoke-copy-advice.html (Free bespoke advice on draft ad copy.)
+- **Field Notes line:** Income-claim ads are what the ASA and CAP Code rulings keep catching: unevidenced earnings figures and testimonials presented as typical.
+
+### H-0588 Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data
+2026-11-09, arxiv, https://arxiv.org/abs/2611.09372
+
+- **Mechanism:** OpenMeter is a schema-agnostic multi-agent system that turns a natural-language question about a smart meter database into executable code and a readable answer. It runs on local models because privacy rules bar sending consumer data to cloud LLMs. Ablations show the full multi-agent set-up helps most on small local models (+6.1 percentage points execution accuracy over the best single agent) and helps selectively at frontier scale.
+- **Claim:** Full multi-agent orchestration adds 6.1 points of execution accuracy on resource-constrained local hardware.
+- **Testable:** no. It needs a local LLM, which this Mac does not have, and the smart meter benchmark data is not public in the abstract. Needs: A local LLM runtime such as Ollama, and the benchmark dataset..
+- **Idea on its own:** needs-a-run. The finding that orchestration helps weak models more is plausible, but it comes from one domain and one paper.
+- **How it would be done:** The pattern is a planner that reads the schema, a coder that writes the SQL, an executor that runs it and a checker that explains or retries. It could be tried on Proteus's own open data, such as the football-data tables, with the question set scored by whether the query returns the known answer. That needs a local model installed first, so the comparison of single-agent against multi-agent can be run without cloud calls.
+- **Stack already covers:** Claude Code with skills and sub-agents, football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** Ollama https://ollama.com (Local model runtime so a local-versus-frontier comparison can be run.)
+- **Missing:** A local LLM runtime and a scored question set.
+- **Field Notes line:** Splitting text-to-SQL across several agents helps small local models most (+6.1 points) and frontier models only selectively.
+
+### H-0587 yucezerey/turkish-anti-ai-skill: Türkçe metinlerdeki yapay zeka izlerini (AI slop, translationese, çeviri kokan cümle mi
+2026-11-09, github, https://github.com/yucezerey/turkish-anti-ai-skill
+
+- **Mechanism:** A three-layer Agent Skill: a catalogue of tiered AI-writing patterns (P0 to P2) for Turkish, a register matrix that sets what is acceptable for blog, formal and other styles, and a CLI detector that scores text. The patterns are grammatical, not just words: right-branching modifiers, mechanical 'and' where a converb belongs, every sentence ending in -mAktAdIr, and sentences clustered in a narrow 18 to 22 word band. A factual-fidelity lock forbids adding any statistic or anecdote that is not in the source.
+- **Claim:** Removes AI-sounding Turkish and rebuilds natural sentence structure, shown with a before and after paragraph.
+- **Testable:** yes. Does the CLI detector flag the README's 'before' paragraph and score the 'after' paragraph lower, and does it flag the same uniform sentence-length pattern on an English AI-style paragraph? Queued as P-0380.
+- **Idea on its own:** needs-a-run. Structural tells such as uniform sentence length are real, but whether the detector separates human from AI text needs checking on samples.
+- **How it would be done:** Clone the repo into the sandbox and run the CLI detector on the two README paragraphs, then on an English paragraph to see whether the length-band check transfers. The same layered design (pattern tiers, register matrix, fidelity lock) could be copied to write an English or UK-voice check for Proteus Field Notes. A native Turkish reader would be needed to judge the quality of the rewrites, as no script covers that.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** turkish-anti-ai-skill https://github.com/yucezerey/turkish-anti-ai-skill (The skill, pattern catalogue and CLI detector.)
+- **Missing:** A native Turkish reader to judge rewrite quality.
+- **Field Notes line:** A Turkish de-slop skill that detects AI writing by sentence architecture and length uniformity, not just banned words.
+
+### H-0586 Show HN: Every satellite that passed over any place this week, and its photos
+2026-11-09, hn, https://www.watched.earth
+
+- **Mechanism:** Orbital elements for roughly 17,000 objects come from the public CelesTrak catalogue and are propagated with SGP4 in the browser to find every satellite pass over a point in the last 7 days. For imaging satellites the page then pulls matching Sentinel-2, Landsat and NASA scenes, and shows 'watched' only when a real image exists. The author notes Sentinel-2 timestamps can be 5 to 10 minutes off the actual crossing.
+- **Claim:** Finds every satellite pass over any place in 7 days in about half a second, with no missed passes against a brute-force check.
+- **Testable:** yes. For one lat/lon, does an SGP4 pass search over the public CelesTrak Sentinel-2A TLE agree with a brute-force one-minute scan on the number of passes in 7 days? Queued as P-0379.
+- **Idea on its own:** sound. SGP4 on public TLEs is standard, accurate to a few kilometres over a week, and the image fetch is just matching timestamps to open archives.
+- **How it would be done:** Pull the Sentinel-2A and 2B TLEs from CelesTrak in the sandbox and propagate with the Python sgp4 package. Take a ground point and count passes where elevation or swath distance crosses a threshold, once with a coarse root-finder and once with a one-minute brute force, and compare. Then look up the matching scenes in the free Copernicus or Earth Search STAC catalogues and measure the timestamp offset the author mentions. Nothing needs hiring; the page itself is open source for reference.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** sgp4 (Python) https://pypi.org/project/sgp4/ (SGP4 propagation from TLEs.); CelesTrak GP data https://celestrak.org/NORAD/elements/ (Free keyless orbital element catalogue.); Earth Search STAC https://earth-search.aws.element84.com/v1 (Free keyless catalogue of Sentinel-2 scenes with acquisition times.); watched.earth source https://github.com/dev-Armaan/satellites (The author's code for the pass search.)
+- **Field Notes line:** A browser page runs SGP4 over 17,000 CelesTrak objects to list every satellite pass over your street, then fetches the real images.
+
+### H-0585 free live session, no replay, paid offer behind
+2026-11-09, vault, https://www.instagram.com/p/DfZo4rOsFRL/
+
+- **Mechanism:** A free live session with no replay creates a deadline for attendance, and the session is followed by a paid offer, with a gated PDF plan as the lead magnet. The mechanism is scarcity of access (live only) plus a registration step that captures contact details for follow-up. Attendance rates and sales conversion from registrants are the numbers that decide whether it works.
+- **Claim:** A live-only free session with a paid offer behind it is the funnel behind the ad.
+- **Testable:** no. Testing it needs real registrants and a live session, which cannot be done keyless in 30 minutes. Needs: A landing page, a webinar tool, an email list and traffic..
+- **Idea on its own:** needs-a-run. The shape is common and sound, but it only pays if registrants attend and convert, which only a run can show.
+- **How it would be done:** Write the gated plan as a short PDF that gives away one real piece of value, and put an email gate in front of it. Run a small registration page with a single live date and no replay, and send reminders by email at 24 hours and one hour before. Measure registrants, attendance and replies. A person has to host the live session, and the promise of no replay must be honoured to stay honest. Test the PDF plan alone first, as the vault note says, before building the session.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames
+- **Missing:** A host for the live session and an audience to register.
+- **Field Notes line:** Live-only free sessions with a paid offer behind them: scarcity of access fills the room, a gated PDF captures the contact.
+
+### H-0584 This Chess AI Predicts Your Mistakes
+2026-11-09, youtube, https://www.youtube.com/watch?v=8uKW6cIusLA
+
+- **Mechanism:** Maia-style chess models are neural nets trained on human games at a given rating band to predict the move a human of that strength will play, rather than the strongest move. Because they imitate human choices, they reproduce typical mistakes, so the model's top move at a low rating is often a blunder a real opponent would make. They run as ordinary Leela Chess Zero weight files, so any lc0-compatible engine can load them.
+- **Claim:** Maya 3 predicts the move a human at a given level will actually play, mistakes included, which gives another way to study.
+- **Testable:** no. It needs an lc0 engine build and the weight files, neither of which is installed, and the video gives no numbers to check. Needs: lc0 binary and the Maia weight files..
+- **Idea on its own:** sound. Imitation of rating-band play is a well-established approach and the weights are public.
+- **How it would be done:** Fetch lc0 and the Maia weights for the 1100 to 1900 bands. Run the nets over positions from the Lichess bot game log in GAMES.csv and measure how often the predicted move matches the opponent bot's actual move. A bot that picks the reply best against the predicted human move, instead of the engine-best move, can then be set up through the existing Lichess bot wiring. A person only has to decide which rating bands to target.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** Leela Chess Zero (lc0) https://github.com/LeelaChessZero/lc0 (Engine that loads the Maia weights.); Maia chess weights https://github.com/CSSLab/maia-chess (Rating-band human-move prediction nets.)
+- **Field Notes line:** Maia-style nets predict the human move rather than the best one, so a bot can play like a 1500 or exploit what a 1500 usually blunders.
+
+### H-0583 Tracybot: Preserving Developer Intent by Tracing Agent-Generated Code to Prompts
+2026-11-09, arxiv, https://arxiv.org/abs/2611.09395
+
+- **Mechanism:** Tracybot hooks into VS Code, Git and the coding agent to record each change as a Tasklet: optional planning prompts plus the build prompt that produced the change. It maps line-level diffs back to the Tasklet that wrote them, so a reviewer can see the intent behind a line, and it can export a Tasklet as an architecture decision record. The evidence is a focus group of 7 and a survey of 24 on usability only, not on whether it catches bugs.
+- **Claim:** Linking agent-written code lines to the prompts that produced them helps code review, per a 7-person focus group and a 24-person survey.
+- **Testable:** no. It is a VS Code extension and needs a GUI editor session with an agent attached. Needs: VS Code with the extension installed..
+- **Idea on its own:** sound. Recording the prompt against the commit costs little and answers the common review question of why a line exists.
+- **How it would be done:** The same effect can be had from Claude Code without the extension by writing the session id and the first prompt into each commit message through a hook. Blame on a line then leads to a commit, and the commit leads to the transcript file. A small script can join git blame output to transcript prompts by commit trailer. The VS Code tool itself would be installed from its repo and tried on a toy project by a person at the editor.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** tracybot https://github.com/TracyTeam/tracybot (The open-source VS Code tool from the paper.)
+- **Field Notes line:** Tracybot links each line an agent wrote back to the prompt that caused it, aiming to make agent code reviewable by intent.
+
+### H-0581 drost-ai/tinker-ai-skill: Agent Skill for fine-tuning an agentic model on your own Claude Code sessions with Tinker. Wor
+2026-11-09, github, https://github.com/drost-ai/tinker-ai-skill. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** A nine-step pipeline copies Claude Code transcripts, normalises them to OpenAI-style messages, replaces credentials and personal names with per-session random identities, and fails the build if anything leaks. It then slices sessions to the model's context length without splitting a tool call from its result, adds a deterministic compaction block to each later slice, splits train and held-out by a seeded hash of the session, trains a LoRA on the hosted Tinker service, then merges and quantises to GGUF for llama.cpp. A synthetic transcript generator lets the whole pipeline be dry-run offline.
+- **Claim:** Your own coding-agent sessions can be turned into a locally runnable fine-tuned model in an afternoon, the recipe behind the Tess-4 and Tess-4.5 open weights.
+- **Testable:** yes. Does the offline path (synthetic transcript generator, normalise, anonymise) run to completion and does the leak check fail when a planted fake credential is left in? Queued as P-0378.
+- **Idea on its own:** sound. Session transcripts are real task demonstrations, and a scrub-then-fail-closed step is the right way to handle the privacy risk.
+- **How it would be done:** Clone the repo into the sandbox and run its synthetic transcript generator, then the normalise and anonymise scripts with default offline flags. Plant a fake key and a fake username in one synthetic session and confirm the build refuses to continue. For a real run, point the collect script at Proteus's own session folder, excluding private projects, and review the anonymised output by hand before anything leaves the machine. Training would be a paid Tinker job, and serving needs llama.cpp plus a GGUF, so a person decides whether that spend is worth it.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** tinker-ai-skill https://github.com/drost-ai/tinker-ai-skill (The pipeline scripts and the synthetic transcript generator.); llama.cpp https://github.com/ggml-org/llama.cpp (Runs the exported GGUF locally and would give the Mac a local model.); tinker-cookbook (The trainer the scripts sit on top of, needed only for a real training run.)
+- **Missing:** A Tinker account and training budget, and a decision on which sessions are safe to include.
+- **Field Notes line:** A repo turns your own Claude Code sessions into a fine-tuning set, with a scrub step that fails the build if a credential leaks.
+
+### H-0580 testimonial-first hook with one number
+2026-11-09, vault, https://www.instagram.com/p/DfZo4rOsFRL/
+
+- **Mechanism:** The ad opens on one named client result stated as a single number, before any explanation of the offer. The number does the work of stopping the scroll and setting a credibility anchor, and the rest of the ad explains how the viewer could get the same. It depends on a real, documented client result and a signed-off quote, and on the claim being substantiated if challenged.
+- **Claim:** A testimonial-first opener with one number is the hook structure of a webinar ad that fills a free live session.
+- **Testable:** no. Judging a hook needs live ad impressions and an audience, which cannot be had keyless in 30 minutes. Needs: A real client result, ad account spend and an audience to measure click-through against a control hook..
+- **Idea on its own:** needs-a-run. Result-first openers are a standard direct-response pattern, but whether it beats other openers can only be shown by a split test.
+- **How it would be done:** Pick one real client outcome that can be evidenced, and write the opener as the number plus who got it in one line. Produce two or three variants of the first three seconds (number first, question first, problem first) with the same body. Run them as an equal-budget split in the ad account and compare cost per click and cost per lead after a fixed spend. A person has to obtain the client's permission for the quote and check the claim against UK advertising rules before it runs. HyperFrames can compose the variants cheaply once the copy exists.
+- **Stack already covers:** HyperFrames, ElevenLabs
+- **Missing:** A consented, evidenced client result and an ad budget to test against.
+- **Field Notes line:** A testimonial ad that opens on a single client number before the pitch, kept as a hook structure to compare against our own openers.
 
 ### H-0576 Account boosting and grey-market sale of game accounts and in-game items
 2026-11-08, vault, 
@@ -4834,6 +4967,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0590 | 2026-11-09 | income-claim ads | intel | sound | no |  |
+| H-0585 | 2026-11-09 | free live session, no replay, paid offer behind | open | needs-a-run | no |  |
+| H-0580 | 2026-11-09 | testimonial-first hook with one number | open | needs-a-run | no |  |
 | H-0576 | 2026-11-08 | Account boosting and grey-market sale of game accounts and in-game items | intel | unsound | no |  |
 | H-0571 | 2026-11-08 | Free trading community paid per lot its members trade through an offshore introducing-brok | intel | unsound | no |  |
 | H-0566 | 2026-11-08 | Anonymous trading account demos an unnamed app so viewers must DM to learn what it is | intel | unsound | no |  |
@@ -4959,6 +5095,19 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0344 | 2026-11-09 | [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) | The base for building a trustworthy MCP server instead. | H-0592 (Nanoutrolley/roblox-studio-mcp: Model Context Prot) | shelf |
+| T-0343 | 2026-11-09 | [CAP Copy Advice](https://www.asa.org.uk/advice-and-resources/bespoke-copy-advice.html) | Free bespoke advice on draft ad copy. | H-0590 (income-claim ads) | shelf |
+| T-0342 | 2026-11-09 | [ASA rulings archive](https://www.asa.org.uk/codes-and-rulings/rulings.html) | Public record of what was upheld and why. | H-0590 (income-claim ads) | shelf |
+| T-0341 | 2026-11-09 | [turkish-anti-ai-skill](https://github.com/yucezerey/turkish-anti-ai-skill) | The skill, pattern catalogue and CLI detector. | H-0587 (yucezerey/turkish-anti-ai-skill: Türkçe metinlerde) | shelf |
+| T-0340 | 2026-11-09 | [watched.earth source](https://github.com/dev-Armaan/satellites) | The author's code for the pass search. | H-0586 (Show HN: Every satellite that passed over any plac) | shelf |
+| T-0339 | 2026-11-09 | [Earth Search STAC](https://earth-search.aws.element84.com/v1) | Free keyless catalogue of Sentinel-2 scenes with acquisition times. | H-0586 (Show HN: Every satellite that passed over any plac) | shelf |
+| T-0338 | 2026-11-09 | [CelesTrak GP data](https://celestrak.org/NORAD/elements/) | Free keyless orbital element catalogue. | H-0586 (Show HN: Every satellite that passed over any plac) | shelf |
+| T-0337 | 2026-11-09 | [sgp4 (Python)](https://pypi.org/project/sgp4/) | SGP4 propagation from TLEs. | H-0586 (Show HN: Every satellite that passed over any plac) | shelf |
+| T-0336 | 2026-11-09 | [Maia chess weights](https://github.com/CSSLab/maia-chess) | Rating-band human-move prediction nets. | H-0584 (This Chess AI Predicts Your Mistakes) | shelf |
+| T-0335 | 2026-11-09 | [Leela Chess Zero (lc0)](https://github.com/LeelaChessZero/lc0) | Engine that loads the Maia weights. | H-0584 (This Chess AI Predicts Your Mistakes) | shelf |
+| T-0334 | 2026-11-09 | [tracybot](https://github.com/TracyTeam/tracybot) | The open-source VS Code tool from the paper. | H-0583 (Tracybot: Preserving Developer Intent by Tracing A) | shelf |
+| T-0333 | 2026-11-09 | tinker-cookbook | The trainer the scripts sit on top of, needed only for a real training run. | H-0581 (drost-ai/tinker-ai-skill: Agent Skill for fine-tun) | shelf |
+| T-0332 | 2026-11-09 | [tinker-ai-skill](https://github.com/drost-ai/tinker-ai-skill) | The pipeline scripts and the synthetic transcript generator. | H-0581 (drost-ai/tinker-ai-skill: Agent Skill for fine-tun) | shelf |
 | T-0331 | 2026-11-08 | [kubai-icons](https://github.com/kubai087/kubai-icons) | The skill and the icon library itself. | H-0573 (kubai087/kubai-icons: An agent skill that draws an) | shelf |
 | T-0330 | 2026-11-08 | [Tart](https://github.com/cirruslabs/tart) | Disposable macOS VMs for the same clean-machine loop on this Mac. | H-0568 (shanselman/sandbox-mcp: Fresh, throwaway Windows m) | shelf |
 | T-0329 | 2026-11-08 | [sandbox-mcp](https://github.com/shanselman/sandbox-mcp) | Reference implementation, runs on a Windows host only. | H-0568 (shanselman/sandbox-mcp: Fresh, throwaway Windows m) | shelf |
@@ -5295,6 +5444,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0593 | 2026-11-09 | youtube | [The Chess.com vs Lichess Rivalry](https://www.youtube.com/watch?v=343PasF4HUE) | A chatty rivalry video whose transcript carries no mechanism or data. |
+| H-0591 | 2026-11-09 | hn | [Ask HN: How do you manage your AI agents' context across clients and projects?](https://news.ycombinator.com/item?id=50403153) | A survey-style question seeking product ideas; the replies are generic advice (ADR folders, spec files) with no new mech |
+| H-0589 | 2026-11-09 | youtube | [BIG UK MOT RULE CHANGES COMING —What EVERY Drivers Must Know](https://www.youtube.com/watch?v=D2zKV4VcoZ8) | A consumer finance explainer of known gov.uk MOT rules, with no confirmed change and no mechanism or data. |
+| H-0582 | 2026-11-09 | hn | [Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far](https://artificialanalysis.ai/models/claude-fable-5-2) | A benchmark leaderboard page for a model release, with no mechanism beyond price and score claims. |
 | H-0579 | 2026-11-08 | youtube | [Build Anything With a CUSTOM MCP Server - Python Tutorial](https://www.youtube.com/watch?v=-8k9lGpGQ6g) | No transcript available and a generic tutorial with no stated mechanism. |
 | H-0578 | 2026-11-08 | github | [artemchuikin/youtube-skills: YouTube transcript skills for Claude Code, Cursor a](https://github.com/artemchuikin/youtube-skills) | Thin skill files that call one vendor's paid API behind an email-verified key, and the stack already has a keyless trans |
 | H-0577 | 2026-11-08 | hn | [GrapheneOS accuses YC of funding surveillance and enabling HN harassment](https://twitter.com/GrapheneOS/status/2118490356958597210) | A dispute between a project and a forum with no mechanism to record. |

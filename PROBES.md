@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 305 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
 
-## Queue (9 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,10 @@ Verdicts so far: 305 works, 6 broken, 36 blocked, 16 not worth it. Killed: 5.
 | P-0348 | First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the year-to-year swings | refill | none | 2026-11-12 | 0 | 25 min |
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
+| P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
+| P-0379 | watched.earth: does SGP4 on CelesTrak data find the same Sentinel-2A passes as a brute-force scan? | harvest | none |  | 0 | 25 min |
+| P-0380 | turkish-anti-ai-skill: does its detector score the README's AI paragraph above the cleaned one? | harvest | none |  | 0 | 15 min |
+| P-0381 | roblox-studio-mcp: does the repo hold the source its README claims, or only a download link? | harvest | none |  | 0 | 10 min |
 
 ## Verdicts (363)
 

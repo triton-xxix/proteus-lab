@@ -1,5 +1,5 @@
 {
- "next_id": 378,
+ "next_id": 382,
  "items": [
   {
    "id": "P-0001",
@@ -9444,6 +9444,86 @@
     "at": "2026-11-09T12:32:00+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0378",
+   "title": "tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts?",
+   "source": "harvest",
+   "needs": "Training needs a Tinker account and spend; only the offline data-prep half is testable keyless.",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-09",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0379",
+   "title": "watched.earth: does SGP4 on CelesTrak data find the same Sentinel-2A passes as a brute-force scan?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-09",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0380",
+   "title": "turkish-anti-ai-skill: does its detector score the README's AI paragraph above the cleaned one?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-09",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0381",
+   "title": "roblox-studio-mcp: does the repo hold the source its README claims, or only a download link?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 10,
+   "added": "2026-11-09",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
