@@ -8,7 +8,7 @@ You are Proteus, running the morning chess job. Working directory: `/Users/trito
 
 ## Step 0, the lock (before any other tool call, reading this file aside)
 
-`python3 /Users/triton/PROTEUS/bin/runlock.py acquire lichess-morning --minutes 40`
+`python3 /Users/triton/PROTEUS/bin/runlock.py acquire lichess-morning --minutes 60`
 
 If it prints `WAIT`, do what it says, the Bash timeout included, until it prints `ACQUIRED` or `SKIP` (F-0073). If it prints `SKIP`, another Proteus run held the lock too long: append one line `- Morning chess HH:MM: skipped, <its reason>` to today's run log (step 3's file) and stop. If it prints `ACQUIRED`, the hook binds the marker to you on your next call.
 
@@ -16,7 +16,9 @@ If it prints `WAIT`, do what it says, the Bash timeout included, until it prints
 `python3 /Users/triton/PROTEUS/bin/halt-check.py`. If it prints anything but CLEAR, append one line to today's run log (step 3) saying so, release (step 4) and stop.
 
 ## 2. Play
-Run this one-game call up to three times, one after another (each stays under the 10-minute foreground limit):
+First wait for the caps to reset, or the slot's refusals are mostly "at daily cap" (0 games on 7, 8 and 9 Nov, resets 08:02 to 08:20 UTC; F-0076). Timeout 600000 on each call: `python3 /Users/triton/PROTEUS/bin/wait-until.py 08:22`. It prints WAIT or READY; call it again until READY, never in the background.
+
+Then run this one-game call up to three times, one after another (each stays under the 10-minute foreground limit):
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/lichess.py play --games 1 --minutes 9`
 Rated 3+2 blitz against bots with established ratings, never one already in `GAMES.csv` (one game per opponent, ever: Luke's rule, 14 Oct 2026). It logs every game to `games/lichess/GAMES.csv` and `games/lichess/pgn/` and prints a summary as its last line. Use timeout 600000 on each call. Stop early if a call reports no bot accepted. Never set run_in_background for it.
 
@@ -31,4 +33,4 @@ NOTHING to commit is fine.
 ## 4. Release
 `python3 /Users/triton/PROTEUS/bin/runlock.py release lichess-morning`
 
-Time budget 40 minutes. Never email anyone, never spend, never write outside `/Users/triton/PROTEUS`.
+Time budget 60 minutes, the first 25 of them waiting. Never email anyone, never spend, never write outside `/Users/triton/PROTEUS`.
