@@ -1,0 +1,140 @@
+{
+ "obs_days": 61,
+ "points": {
+  "heathrow": {
+   "asked": [
+    51.47,
+    -0.4543
+   ],
+   "got": [
+    51.462517,
+    -0.4617219
+   ],
+   "elevation_m": 26.0
+  },
+  "north": {
+   "asked": [
+    51.57,
+    -0.4543
+   ],
+   "got": [
+    51.562794,
+    -0.46226358
+   ],
+   "elevation_m": 41.0
+  },
+  "south": {
+   "asked": [
+    51.37,
+    -0.4543
+   ],
+   "got": [
+    51.3622,
+    -0.46118596
+   ],
+   "elevation_m": 25.0
+  },
+  "west": {
+   "asked": [
+    51.47,
+    -0.6143
+   ],
+   "got": [
+    51.47022,
+    -0.6227992
+   ],
+   "elevation_m": 24.0
+  },
+  "east": {
+   "asked": [
+    51.47,
+    -0.2943
+   ],
+   "got": [
+    51.471004,
+    -0.30070016
+   ],
+   "elevation_m": 13.0
+  }
+ },
+ "leads": {
+  "0": {
+   "days": 61,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ],
+   "heathrow": {
+    "mean_obs_minus_forecast": 1.29,
+    "sd": 0.75,
+    "se": 0.1
+   },
+   "north": {
+    "mean_obs_minus_forecast": 1.47,
+    "sd": 0.76,
+    "se": 0.1
+   },
+   "south": {
+    "mean_obs_minus_forecast": 1.19,
+    "sd": 0.84,
+    "se": 0.11
+   },
+   "west": {
+    "mean_obs_minus_forecast": 1.28,
+    "sd": 0.8,
+    "se": 0.1
+   },
+   "east": {
+    "mean_obs_minus_forecast": 1.01,
+    "sd": 0.75,
+    "se": 0.1
+   },
+   "cell_minus_heathrow_mean": {
+    "heathrow": 0.0,
+    "north": -0.18,
+    "south": 0.1,
+    "west": 0.02,
+    "east": 0.29
+   }
+  },
+  "1": {
+   "days": 61,
+   "first_last": [
+    "2026-09-01",
+    "2026-10-31"
+   ],
+   "heathrow": {
+    "mean_obs_minus_forecast": 1.26,
+    "sd": 1.24,
+    "se": 0.16
+   },
+   "north": {
+    "mean_obs_minus_forecast": 1.41,
+    "sd": 1.22,
+    "se": 0.16
+   },
+   "south": {
+    "mean_obs_minus_forecast": 1.22,
+    "sd": 1.28,
+    "se": 0.16
+   },
+   "west": {
+    "mean_obs_minus_forecast": 1.28,
+    "sd": 1.22,
+    "se": 0.16
+   },
+   "east": {
+    "mean_obs_minus_forecast": 1.01,
+    "sd": 1.24,
+    "se": 0.16
+   },
+   "cell_minus_heathrow_mean": {
+    "heathrow": 0.0,
+    "north": -0.15,
+    "south": 0.04,
+    "west": -0.02,
+    "east": 0.25
+   }
+  }
+ }
+}
