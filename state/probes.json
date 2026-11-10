@@ -1,5 +1,5 @@
 {
- "next_id": 394,
+ "next_id": 395,
  "items": [
   {
    "id": "P-0001",
@@ -9828,6 +9828,32 @@
     "number": "2B on 3 Nov within 20 pct of its own 14-day median, no outage",
     "at": "2026-11-10T12:42:01+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0394",
+   "title": "GitHub tiny paste-link baseline: rerun P-0386's count.py on today's 3-day window and save the matching repos' numeric ids to sandbox/ only (counts in the artefact, no names), so a 48-hour takedown recheck has something to match; does the tiny-paste-and-run count land near 9 Nov's 10?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-10",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T12:44:00+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "tiny paste-and-run matches between 6 and 14 (9 Nov: 10)",
+    "at": "2026-11-10T12:44:05+0000"
    }
   }
  ]
