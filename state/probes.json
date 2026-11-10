@@ -9689,26 +9689,29 @@
    "id": "P-0389",
    "title": "Grinder insider-zero shadow filter: on the next 20 G and R01 entries after 20 Oct, kept (graph_insiders over 0 (DUE.md D-016): probe P-0185, method experiments/2026-10-20-P-0184/age.py",
    "source": "desk",
-   "needs": "",
+   "needs": "Grinder G or R01 entries to resume; the gate has passed 0 tokens since 20 Oct",
    "after": "",
    "est_minutes": 40,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T12:32:31+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-10T12:33:33+0000",
+   "note": "Measured 0 G or R01 entries after 20 Oct at the D-016 backstop (shot: 0, blocked at 0.50, hit; shot after looking at the morning kill-check line, R01 still 29 closed). Last R01 entries R-0027 to R-0029 20 Oct 22:38Z, G last G-0092 16 Oct; insider snapshots land nightly to 9 Nov, so input exists, trades do not. n 0 of 20, D-016 unscorable; forward.py reruns unchanged when entries return.",
+   "artefacts": [
+    "experiments/2026-11-10-P-0389"
+   ],
+   "minutes": 1,
+   "calls": 14,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.5,
     "number": "0 G or R01 entries after 20 Oct",
-    "at": "2026-11-10T12:32:48+0000"
+    "at": "2026-11-10T12:32:48+0000",
+    "hit": true
    }
   }
  ]
