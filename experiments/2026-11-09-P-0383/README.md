@@ -11,6 +11,8 @@ What I measured instead, in `metar.py`: Iowa State's keyless METAR archive for E
 
 The two airports read the same within noise, so whatever this offset is, it is not Heathrow alone. Errors correlate 0.57 at lead 1, 0.20 at lead 0.
 
-The more interesting number is Heathrow's own. Against METAR it is about +0.4 C; against the SYNOP TX (P-0323, P-0373, P-0382) it is about +1.3 C on the same days. So roughly two thirds of the "ICON is 1.3 C cold at Heathrow" reading comes from which observation is scoring it, a whole-degree half-hourly sample versus a TX maximum. That fits P-0382, where moving the grid cell did not remove it, and P-0346's METAR against SYNOP gap work. It is one more reason to name the settlement observation before quoting a model bias.
+Correction, same night: the observation gap in the next paragraph was already measured by P-0346 and split by P-0352 to P-0354. This probe's new content is only the second airport.
+
+Heathrow's own number. Against METAR it is about +0.4 C; against the SYNOP TX (P-0323, P-0373, P-0382) it is about +1.3 C on the same days. So roughly two thirds of the "ICON is 1.3 C cold at Heathrow" reading comes from which observation is scoring it, a whole-degree half-hourly sample versus a TX maximum. That fits P-0382, where moving the grid cell did not remove it, and P-0346's METAR against SYNOP gap work. It is one more reason to name the settlement observation before quoting a model bias.
 
 Limits: Gatwick's SYNOP offset is unmeasured, so the second-airport question is answered only on METAR. Forecast days are Europe/London and METAR days UTC, under an hour apart for a high. One autumn. ICON only at Gatwick.

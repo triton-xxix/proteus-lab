@@ -1,0 +1,866 @@
+[
+ {
+  "clip": "flat",
+  "encoder": "pillow c256 none",
+  "colors": 256,
+  "bytes": 62890,
+  "psnr": 49.72,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c256 fs",
+  "colors": 256,
+  "bytes": 85547,
+  "psnr": 49.91,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c256 none diff=none",
+  "colors": 256,
+  "bytes": 62911,
+  "psnr": 62.32,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c256 none diff=rectangle",
+  "colors": 256,
+  "bytes": 62911,
+  "psnr": 62.32,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c256 bayer:bayer_scale=3 diff=none",
+  "colors": 256,
+  "bytes": 71182,
+  "psnr": 41.22,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c256 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 256,
+  "bytes": 71182,
+  "psnr": 41.22,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c256 sierra2_4a diff=none",
+  "colors": 256,
+  "bytes": 62986,
+  "psnr": 62.13,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c256 sierra2_4a diff=rectangle",
+  "colors": 256,
+  "bytes": 62986,
+  "psnr": 62.13,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c128 none",
+  "colors": 128,
+  "bytes": 55013,
+  "psnr": 47.6,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c128 fs",
+  "colors": 128,
+  "bytes": 78076,
+  "psnr": 47.19,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c128 none diff=none",
+  "colors": 128,
+  "bytes": 55562,
+  "psnr": 54.52,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c128 none diff=rectangle",
+  "colors": 128,
+  "bytes": 55562,
+  "psnr": 54.52,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c128 bayer:bayer_scale=3 diff=none",
+  "colors": 128,
+  "bytes": 62796,
+  "psnr": 41.32,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c128 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 128,
+  "bytes": 62796,
+  "psnr": 41.32,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c128 sierra2_4a diff=none",
+  "colors": 128,
+  "bytes": 55614,
+  "psnr": 54.0,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c128 sierra2_4a diff=rectangle",
+  "colors": 128,
+  "bytes": 55614,
+  "psnr": 54.0,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c64 none",
+  "colors": 64,
+  "bytes": 46786,
+  "psnr": 44.98,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c64 fs",
+  "colors": 64,
+  "bytes": 72317,
+  "psnr": 44.37,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c64 none diff=none",
+  "colors": 64,
+  "bytes": 48291,
+  "psnr": 48.51,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c64 none diff=rectangle",
+  "colors": 64,
+  "bytes": 48291,
+  "psnr": 48.51,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c64 bayer:bayer_scale=3 diff=none",
+  "colors": 64,
+  "bytes": 53942,
+  "psnr": 39.82,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c64 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 64,
+  "bytes": 53942,
+  "psnr": 39.82,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c64 sierra2_4a diff=none",
+  "colors": 64,
+  "bytes": 48393,
+  "psnr": 47.97,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c64 sierra2_4a diff=rectangle",
+  "colors": 64,
+  "bytes": 48393,
+  "psnr": 47.97,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c32 none",
+  "colors": 32,
+  "bytes": 40977,
+  "psnr": 41.22,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "pillow c32 fs",
+  "colors": 32,
+  "bytes": 64462,
+  "psnr": 40.3,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c32 none diff=none",
+  "colors": 32,
+  "bytes": 40735,
+  "psnr": 44.9,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c32 none diff=rectangle",
+  "colors": 32,
+  "bytes": 40735,
+  "psnr": 44.9,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c32 bayer:bayer_scale=3 diff=none",
+  "colors": 32,
+  "bytes": 44410,
+  "psnr": 42.65,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c32 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 32,
+  "bytes": 44410,
+  "psnr": 42.65,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c32 sierra2_4a diff=none",
+  "colors": 32,
+  "bytes": 42269,
+  "psnr": 44.23,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "flat",
+  "encoder": "ffmpeg c32 sierra2_4a diff=rectangle",
+  "colors": 32,
+  "bytes": 42269,
+  "psnr": 44.23,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c256 none",
+  "colors": 256,
+  "bytes": 589536,
+  "psnr": 38.63,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c256 fs",
+  "colors": 256,
+  "bytes": 620133,
+  "psnr": 38.72,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c256 none diff=none",
+  "colors": 256,
+  "bytes": 561753,
+  "psnr": 41.86,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c256 none diff=rectangle",
+  "colors": 256,
+  "bytes": 561753,
+  "psnr": 41.86,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c256 bayer:bayer_scale=3 diff=none",
+  "colors": 256,
+  "bytes": 609640,
+  "psnr": 38.5,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c256 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 256,
+  "bytes": 609640,
+  "psnr": 38.5,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c256 sierra2_4a diff=none",
+  "colors": 256,
+  "bytes": 575268,
+  "psnr": 41.35,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c256 sierra2_4a diff=rectangle",
+  "colors": 256,
+  "bytes": 575268,
+  "psnr": 41.35,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c128 none",
+  "colors": 128,
+  "bytes": 488577,
+  "psnr": 37.09,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c128 fs",
+  "colors": 128,
+  "bytes": 514646,
+  "psnr": 36.89,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c128 none diff=none",
+  "colors": 128,
+  "bytes": 415522,
+  "psnr": 39.97,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c128 none diff=rectangle",
+  "colors": 128,
+  "bytes": 415522,
+  "psnr": 39.97,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c128 bayer:bayer_scale=3 diff=none",
+  "colors": 128,
+  "bytes": 449090,
+  "psnr": 37.61,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c128 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 128,
+  "bytes": 449090,
+  "psnr": 37.61,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c128 sierra2_4a diff=none",
+  "colors": 128,
+  "bytes": 431012,
+  "psnr": 39.51,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c128 sierra2_4a diff=rectangle",
+  "colors": 128,
+  "bytes": 431012,
+  "psnr": 39.51,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c64 none",
+  "colors": 64,
+  "bytes": 371599,
+  "psnr": 35.83,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c64 fs",
+  "colors": 64,
+  "bytes": 396337,
+  "psnr": 35.36,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c64 none diff=none",
+  "colors": 64,
+  "bytes": 295881,
+  "psnr": 38.03,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c64 none diff=rectangle",
+  "colors": 64,
+  "bytes": 295881,
+  "psnr": 38.03,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c64 bayer:bayer_scale=3 diff=none",
+  "colors": 64,
+  "bytes": 317418,
+  "psnr": 36.4,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c64 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 64,
+  "bytes": 317418,
+  "psnr": 36.4,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c64 sierra2_4a diff=none",
+  "colors": 64,
+  "bytes": 314465,
+  "psnr": 37.5,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c64 sierra2_4a diff=rectangle",
+  "colors": 64,
+  "bytes": 314465,
+  "psnr": 37.5,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c32 none",
+  "colors": 32,
+  "bytes": 266512,
+  "psnr": 33.1,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "pillow c32 fs",
+  "colors": 32,
+  "bytes": 290250,
+  "psnr": 31.78,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c32 none diff=none",
+  "colors": 32,
+  "bytes": 200409,
+  "psnr": 35.75,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c32 none diff=rectangle",
+  "colors": 32,
+  "bytes": 200409,
+  "psnr": 35.75,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c32 bayer:bayer_scale=3 diff=none",
+  "colors": 32,
+  "bytes": 212782,
+  "psnr": 34.74,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c32 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 32,
+  "bytes": 212782,
+  "psnr": 34.74,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c32 sierra2_4a diff=none",
+  "colors": 32,
+  "bytes": 219256,
+  "psnr": 35.03,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fixed_grain",
+  "encoder": "ffmpeg c32 sierra2_4a diff=rectangle",
+  "colors": 32,
+  "bytes": 219256,
+  "psnr": 35.03,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c256 none",
+  "colors": 256,
+  "bytes": 656463,
+  "psnr": 38.38,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c256 fs",
+  "colors": 256,
+  "bytes": 667295,
+  "psnr": 38.36,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c256 none diff=none",
+  "colors": 256,
+  "bytes": 618005,
+  "psnr": 41.77,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c256 none diff=rectangle",
+  "colors": 256,
+  "bytes": 618005,
+  "psnr": 41.77,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c256 bayer:bayer_scale=3 diff=none",
+  "colors": 256,
+  "bytes": 676130,
+  "psnr": 38.46,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c256 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 256,
+  "bytes": 676130,
+  "psnr": 38.46,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c256 sierra2_4a diff=none",
+  "colors": 256,
+  "bytes": 622843,
+  "psnr": 41.26,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c256 sierra2_4a diff=rectangle",
+  "colors": 256,
+  "bytes": 622843,
+  "psnr": 41.26,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c128 none",
+  "colors": 128,
+  "bytes": 544178,
+  "psnr": 36.91,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c128 fs",
+  "colors": 128,
+  "bytes": 556517,
+  "psnr": 36.6,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c128 none diff=none",
+  "colors": 128,
+  "bytes": 475291,
+  "psnr": 40.04,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c128 none diff=rectangle",
+  "colors": 128,
+  "bytes": 475291,
+  "psnr": 40.04,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c128 bayer:bayer_scale=3 diff=none",
+  "colors": 128,
+  "bytes": 516836,
+  "psnr": 37.63,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c128 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 128,
+  "bytes": 516836,
+  "psnr": 37.63,
+  "frames": 12,
+  "under_limit": false
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c128 sierra2_4a diff=none",
+  "colors": 128,
+  "bytes": 481387,
+  "psnr": 39.53,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c128 sierra2_4a diff=rectangle",
+  "colors": 128,
+  "bytes": 481387,
+  "psnr": 39.53,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c64 none",
+  "colors": 64,
+  "bytes": 415296,
+  "psnr": 34.48,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c64 fs",
+  "colors": 64,
+  "bytes": 429718,
+  "psnr": 33.98,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c64 none diff=none",
+  "colors": 64,
+  "bytes": 337936,
+  "psnr": 37.98,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c64 none diff=rectangle",
+  "colors": 64,
+  "bytes": 337936,
+  "psnr": 37.98,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c64 bayer:bayer_scale=3 diff=none",
+  "colors": 64,
+  "bytes": 362680,
+  "psnr": 36.37,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c64 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 64,
+  "bytes": 362680,
+  "psnr": 36.37,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c64 sierra2_4a diff=none",
+  "colors": 64,
+  "bytes": 346527,
+  "psnr": 37.46,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c64 sierra2_4a diff=rectangle",
+  "colors": 64,
+  "bytes": 346527,
+  "psnr": 37.46,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c32 none",
+  "colors": 32,
+  "bytes": 302260,
+  "psnr": 33.61,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "pillow c32 fs",
+  "colors": 32,
+  "bytes": 321361,
+  "psnr": 32.67,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c32 none diff=none",
+  "colors": 32,
+  "bytes": 235194,
+  "psnr": 35.68,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c32 none diff=rectangle",
+  "colors": 32,
+  "bytes": 235194,
+  "psnr": 35.68,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c32 bayer:bayer_scale=3 diff=none",
+  "colors": 32,
+  "bytes": 249251,
+  "psnr": 34.7,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c32 bayer:bayer_scale=3 diff=rectangle",
+  "colors": 32,
+  "bytes": 249251,
+  "psnr": 34.7,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c32 sierra2_4a diff=none",
+  "colors": 32,
+  "bytes": 250085,
+  "psnr": 34.95,
+  "frames": 12,
+  "under_limit": true
+ },
+ {
+  "clip": "shaded_fresh_grain",
+  "encoder": "ffmpeg c32 sierra2_4a diff=rectangle",
+  "colors": 32,
+  "bytes": 250085,
+  "psnr": 34.95,
+  "frames": 12,
+  "under_limit": true
+ }
+]
