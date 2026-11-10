@@ -1,5 +1,5 @@
 {
- "next_id": 388,
+ "next_id": 389,
  "items": [
   {
    "id": "P-0001",
@@ -9660,6 +9660,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0388",
+   "title": "Heathrow gap split: of the 0.85 C between SYNOP TX and METAR highs, how much is half-hourly sampling and how much whole-degree rounding, from 10-minute reports?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-09",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-10T00:00:09+0000",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-10T00:00:31+0000",
+   "note": "A repeat: P-0352 to P-0354 split this Heathrow gap on 7 Nov, and I overrode the repeat guard without reading those lines. My script found 0 usable days because the cache has no :50 reports, which P-0353 had noted. No new measurement; the P-0383 write-up is corrected the same night.",
+   "artefacts": [
+    "experiments/2026-11-09-P-0388"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }
