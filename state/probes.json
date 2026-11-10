@@ -10003,9 +10003,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-10",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T23:36:36+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -10013,7 +10013,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "between 3 and 12 named paths missing, out of roughly 120 path mentions",
+    "at": "2026-11-10T23:36:38+0000"
+   }
   }
  ]
 }
