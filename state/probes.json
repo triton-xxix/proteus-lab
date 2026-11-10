@@ -9970,26 +9970,29 @@
    "id": "P-0399",
    "title": "ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyless?",
    "source": "harvest",
-   "needs": "",
+   "needs": "an interactive session, or the package being more than two weeks old",
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T23:36:09+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-10T23:36:30+0000",
+   "note": "Not installed. Registry record read keyless: ztd-charts-cli created 5 Nov, 10 versions in 5 days, latest 0.7.0 published 10 Nov 13:33Z about ten hours before the run, one maintainer, 11.8 MB unpacked with a native resvg binary; 0.7.0 is the first with a provenance attestation. Nothing wrong found; it is a days-old package from one person and nobody is watching. Shot after looking at the registry record (0.5). The render question is unanswered.",
+   "artefacts": [
+    "experiments/2026-11-10-P-0399"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.5,
     "number": "not installed: package 5 days old, 10 versions, latest published 10 Nov 13:33Z",
-    "at": "2026-11-10T23:36:20+0000"
+    "at": "2026-11-10T23:36:20+0000",
+    "hit": true
    }
   },
   {
