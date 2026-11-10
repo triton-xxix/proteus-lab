@@ -1,0 +1,396 @@
+{
+ "window": [
+  "2026-10-21",
+  "2026-11-10"
+ ],
+ "nights": 19,
+ "rows": 2821,
+ "passers": 156,
+ "fails_by_gate": {
+  "vol_h1": 1923,
+  "vol_h24": 1618,
+  "liq": 1458,
+  "age": 1428,
+  "top10": 713,
+  "lp": 479,
+  "holders": 388,
+  "mint_auth": 306,
+  "freeze_auth": 165
+ },
+ "top_gate_by_night": {
+  "vol_h1": 19
+ },
+ "rows_by_gates_failed_capped_5": {
+  "0": 156,
+  "1": 286,
+  "2": 425,
+  "3": 1017,
+  "4": 588,
+  "5": 349
+ },
+ "one_gate_away_by_gate": {
+  "age": 193,
+  "vol_h1": 28,
+  "liq": 25,
+  "top10": 22,
+  "vol_h24": 9,
+  "lp": 8,
+  "mint_auth": 1
+ },
+ "pass_if_that_gate_eased_25pct": {
+  "age": 21,
+  "vol_h1": 12,
+  "top10": 7,
+  "liq": 5,
+  "vol_h24": 4
+ },
+ "per_night": [
+  {
+   "day": "2026-10-22",
+   "rows": 151,
+   "pass": 13,
+   "top_gate": "vol_h1",
+   "top_fails": 97,
+   "one_gate_away": 13,
+   "one_gate_by": {
+    "top10": 2,
+    "age": 6,
+    "mint_auth": 1,
+    "liq": 2,
+    "vol_h1": 2
+   },
+   "pass_if_eased": {
+    "liq": 2,
+    "vol_h1": 1
+   }
+  },
+  {
+   "day": "2026-10-23",
+   "rows": 152,
+   "pass": 13,
+   "top_gate": "vol_h1",
+   "top_fails": 102,
+   "one_gate_away": 13,
+   "one_gate_by": {
+    "age": 8,
+    "lp": 2,
+    "liq": 3
+   },
+   "pass_if_eased": {
+    "liq": 1,
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-10-24",
+   "rows": 150,
+   "pass": 11,
+   "top_gate": "vol_h1",
+   "top_fails": 101,
+   "one_gate_away": 13,
+   "one_gate_by": {
+    "age": 8,
+    "top10": 1,
+    "liq": 3,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-10-25",
+   "rows": 150,
+   "pass": 8,
+   "top_gate": "vol_h1",
+   "top_fails": 113,
+   "one_gate_away": 12,
+   "one_gate_by": {
+    "age": 9,
+    "top10": 1,
+    "vol_h1": 1,
+    "vol_h24": 1
+   },
+   "pass_if_eased": {
+    "age": 2,
+    "top10": 1,
+    "vol_h24": 1
+   }
+  },
+  {
+   "day": "2026-10-26",
+   "rows": 153,
+   "pass": 4,
+   "top_gate": "vol_h1",
+   "top_fails": 107,
+   "one_gate_away": 15,
+   "one_gate_by": {
+    "age": 8,
+    "lp": 1,
+    "vol_h24": 1,
+    "liq": 3,
+    "top10": 1,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "liq": 1,
+    "top10": 1,
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-10-27",
+   "rows": 153,
+   "pass": 14,
+   "top_gate": "vol_h1",
+   "top_fails": 112,
+   "one_gate_away": 11,
+   "one_gate_by": {
+    "age": 7,
+    "top10": 1,
+    "vol_h24": 1,
+    "liq": 1,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "top10": 1,
+    "vol_h24": 1
+   }
+  },
+  {
+   "day": "2026-10-28",
+   "rows": 144,
+   "pass": 10,
+   "top_gate": "vol_h1",
+   "top_fails": 95,
+   "one_gate_away": 14,
+   "one_gate_by": {
+    "age": 7,
+    "liq": 2,
+    "vol_h1": 3,
+    "vol_h24": 1,
+    "top10": 1
+   },
+   "pass_if_eased": {
+    "vol_h1": 3,
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-10-29",
+   "rows": 142,
+   "pass": 7,
+   "top_gate": "vol_h1",
+   "top_fails": 86,
+   "one_gate_away": 18,
+   "one_gate_by": {
+    "age": 14,
+    "top10": 2,
+    "vol_h1": 1,
+    "liq": 1
+   },
+   "pass_if_eased": {
+    "age": 2,
+    "top10": 1,
+    "vol_h1": 1
+   }
+  },
+  {
+   "day": "2026-10-30",
+   "rows": 147,
+   "pass": 5,
+   "top_gate": "vol_h1",
+   "top_fails": 99,
+   "one_gate_away": 16,
+   "one_gate_by": {
+    "liq": 1,
+    "age": 12,
+    "vol_h24": 2,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "vol_h24": 1
+   }
+  },
+  {
+   "day": "2026-10-31",
+   "rows": 144,
+   "pass": 9,
+   "top_gate": "vol_h1",
+   "top_fails": 106,
+   "one_gate_away": 12,
+   "one_gate_by": {
+    "age": 7,
+    "top10": 1,
+    "vol_h1": 3,
+    "liq": 1
+   },
+   "pass_if_eased": {
+    "liq": 1
+   }
+  },
+  {
+   "day": "2026-11-01",
+   "rows": 151,
+   "pass": 10,
+   "top_gate": "vol_h1",
+   "top_fails": 111,
+   "one_gate_away": 15,
+   "one_gate_by": {
+    "age": 9,
+    "top10": 1,
+    "lp": 1,
+    "vol_h1": 4
+   },
+   "pass_if_eased": {
+    "age": 2,
+    "vol_h1": 1
+   }
+  },
+  {
+   "day": "2026-11-02",
+   "rows": 148,
+   "pass": 7,
+   "top_gate": "vol_h1",
+   "top_fails": 92,
+   "one_gate_away": 19,
+   "one_gate_by": {
+    "age": 11,
+    "lp": 1,
+    "top10": 3,
+    "liq": 3,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "top10": 1,
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-11-03",
+   "rows": 145,
+   "pass": 9,
+   "top_gate": "vol_h1",
+   "top_fails": 91,
+   "one_gate_away": 15,
+   "one_gate_by": {
+    "age": 10,
+    "top10": 2,
+    "lp": 1,
+    "vol_h24": 1,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "age": 1,
+    "vol_h1": 1
+   }
+  },
+  {
+   "day": "2026-11-05",
+   "rows": 151,
+   "pass": 9,
+   "top_gate": "vol_h1",
+   "top_fails": 99,
+   "one_gate_away": 15,
+   "one_gate_by": {
+    "age": 9,
+    "vol_h1": 2,
+    "lp": 1,
+    "top10": 1,
+    "liq": 2
+   },
+   "pass_if_eased": {
+    "vol_h1": 1
+   }
+  },
+  {
+   "day": "2026-11-06",
+   "rows": 147,
+   "pass": 7,
+   "top_gate": "vol_h1",
+   "top_fails": 109,
+   "one_gate_away": 16,
+   "one_gate_by": {
+    "age": 11,
+    "lp": 1,
+    "top10": 1,
+    "liq": 1,
+    "vol_h1": 1,
+    "vol_h24": 1
+   },
+   "pass_if_eased": {
+    "age": 2,
+    "vol_h1": 1
+   }
+  },
+  {
+   "day": "2026-11-07",
+   "rows": 150,
+   "pass": 5,
+   "top_gate": "vol_h1",
+   "top_fails": 111,
+   "one_gate_away": 18,
+   "one_gate_by": {
+    "age": 15,
+    "top10": 1,
+    "vol_h1": 1,
+    "vol_h24": 1
+   },
+   "pass_if_eased": {
+    "age": 4,
+    "vol_h1": 1,
+    "vol_h24": 1
+   }
+  },
+  {
+   "day": "2026-11-08",
+   "rows": 146,
+   "pass": 9,
+   "top_gate": "vol_h1",
+   "top_fails": 90,
+   "one_gate_away": 18,
+   "one_gate_by": {
+    "age": 17,
+    "vol_h1": 1
+   },
+   "pass_if_eased": {
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-11-09",
+   "rows": 145,
+   "pass": 2,
+   "top_gate": "vol_h1",
+   "top_fails": 96,
+   "one_gate_away": 15,
+   "one_gate_by": {
+    "top10": 2,
+    "age": 11,
+    "liq": 2
+   },
+   "pass_if_eased": {
+    "top10": 1,
+    "age": 1
+   }
+  },
+  {
+   "day": "2026-11-10",
+   "rows": 152,
+   "pass": 4,
+   "top_gate": "vol_h1",
+   "top_fails": 106,
+   "one_gate_away": 18,
+   "one_gate_by": {
+    "age": 14,
+    "top10": 1,
+    "vol_h1": 3
+   },
+   "pass_if_eased": {
+    "top10": 1,
+    "vol_h1": 2,
+    "age": 1
+   }
+  }
+ ]
+}

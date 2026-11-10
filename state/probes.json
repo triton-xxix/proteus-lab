@@ -10061,22 +10061,27 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T23:40:39+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-11-10T23:41:23+0000",
+   "note": "Measured 156 rows passing every gate over 19 nights (2 to 14 a night, 4 tonight), so the gate is not why the Grinder is quiet: open_book only looks for candidates when bankroll is at least the stake, and v0.2 sits at 11.33 GBP against a 100 GBP stake (TRACK-RECORD figure, not recomputed). The binding-constraints line it prints counts gate fails and never mentions money; three weeks of run logs and this morning Inspector line repeated it as the cause. Census: vol_h1 top gate 19 of 19 nights (shot hit), 286 rows one gate away (shot said under 10), 49 would pass with a quarter eased (shot 0 to 3). Held-mint skips and the R01 path not checked. Next: deepen (queued).",
+   "artefacts": [
+    "experiments/2026-11-10-gate-census"
+   ],
+   "minutes": 0,
+   "calls": 10,
+   "denied": [
+    "Bash `grep -n -E \"^if __name__|^main\\(|^[a-z_]+\\(\\)$\" /Users/triton/PROTEUS/grinder/paper.py`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "vol_h1 the top gate on most nights; fewer than 10 rows one gate away in the window; 0 to 3 would pass with a quarter eased",
-    "at": "2026-11-10T23:40:43+0000"
+    "at": "2026-11-10T23:40:43+0000",
+    "hit": true
    }
   }
  ]
