@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 312 works, 7 broken, 37 blocked, 17 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Verdicts so far: 312 works, 7 broken, 37 blocked, 17 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
+| P-0389 | Grinder insider-zero shadow filter: on the next 20 G and R01 entries after 20 Oct, kept (graph_insiders over 0 (DUE.md D-016): probe P-0185, method experiments/2026-10-20-P-0184/age.py | desk | none |  | 1 (in progress) | 40 min |
 
 ## Verdicts (373)
 

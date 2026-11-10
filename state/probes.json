@@ -1,5 +1,5 @@
 {
- "next_id": 389,
+ "next_id": 390,
  "items": [
   {
    "id": "P-0001",
@@ -9684,6 +9684,32 @@
    "calls": 6,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0389",
+   "title": "Grinder insider-zero shadow filter: on the next 20 G and R01 entries after 20 Oct, kept (graph_insiders over 0 (DUE.md D-016): probe P-0185, method experiments/2026-10-20-P-0184/age.py",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 40,
+   "added": "2026-11-10",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T12:32:31+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.5,
+    "number": "0 G or R01 entries after 20 Oct",
+    "at": "2026-11-10T12:32:48+0000"
+   }
   }
  ]
 }
