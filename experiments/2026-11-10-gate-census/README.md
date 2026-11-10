@@ -6,7 +6,17 @@ gate-passers". Question: which gate does the rejecting, and how close do the nea
 Method: `census.py` imports the desk's own `GATES` and `RULES` from `grinder/paper.py` (read-only, no
 rule touched) and runs them over the last snapshot of each night. 19 nights, 2,821 rows.
 
-## The finding I was not looking for
+## Correction, same night
+
+Everything under the next heading was already known. P-0318 on 3 Nov found exactly this (128 passers
+in 14 nights, bankroll £11.33 under a £100 stake, the binding-constraints line blaming gates), and the
+W45 Field Notes carried it. The repeat guard showed me P-0372 and P-0002 when I queued this probe, not
+P-0318, and I did not search further. I then wrote the run-log desk line tonight ("no gate-passer
+again") without having read it either. So this is a second measurement of a known thing, a week on,
+with 156 passers in place of 128. What is new is only that the misleading line was still unfixed.
+P-0403 fixes it.
+
+## The finding I was not looking for (see the correction above)
 
 **156 rows passed every gate.** Between 2 and 14 a night, 4 tonight. The gate is not why the book is
 quiet.
