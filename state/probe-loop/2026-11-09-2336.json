@@ -20,7 +20,7 @@
   "P-0387",
   "P-0388"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-10T00:00:35+0000",
+ "stop_reason": "probe cap of 10 reached",
  "refills": 8
 }
