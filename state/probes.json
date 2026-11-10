@@ -9912,26 +9912,29 @@
    "id": "P-0397",
    "title": "auto-ontology-mcp: does its deterministic validator flag a bad integer-overlap join on a public SQLite DB?",
    "source": "harvest",
-   "needs": "",
+   "needs": "an interactive session (running a four-day-old stranger's repo is not for an unattended run)",
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T23:33:48+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-10T23:34:39+0000",
+   "note": "Tool not run. The slice underneath, my own script on Chinook: of 218 integer column to key candidates, 110 overlap fully and 100 of those are accidents, so value overlap alone is right 9 pct of the time (shot said under 20, a hit); 45 of 90 key-to-key pairs overlap just because ids start at 1. Same column name gets 9 of 10 declared keys with no false alarm and misses the role-named one (SupportRepId). One clean teaching database; says nothing about their validator.",
+   "artefacts": [
+    "experiments/2026-11-10-P-0397"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.8,
     "number": "repo not run unattended; on Chinook, value-overlap alone marks true foreign keys with precision under 20 pct",
-    "at": "2026-11-10T23:34:05+0000"
+    "at": "2026-11-10T23:34:05+0000",
+    "hit": true
    }
   },
   {

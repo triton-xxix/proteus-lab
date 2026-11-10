@@ -1,0 +1,391 @@
+{
+ "db": "Chinook_Sqlite.sqlite (lerocha/chinook-database)",
+ "tables": 11,
+ "integer_columns": 24,
+ "single_column_integer_keys": 10,
+ "candidate_pairs": 218,
+ "declared_fks_in_pairs": 10,
+ "declared_fks_total": 11,
+ "accidental_full_overlap": 100,
+ "key_to_key_pairs": 90,
+ "key_to_key_full_overlap": 45,
+ "rules": [
+  {
+   "rule": "containment 1.0 only",
+   "flagged": 110,
+   "true": 10,
+   "false": 100,
+   "missed": 0,
+   "precision": 0.091,
+   "recall": 1.0
+  },
+  {
+   "rule": "containment >= 0.9",
+   "flagged": 110,
+   "true": 10,
+   "false": 100,
+   "missed": 0,
+   "precision": 0.091,
+   "recall": 1.0
+  },
+  {
+   "rule": "containment 1.0 and child is not its own table's key",
+   "flagged": 65,
+   "true": 10,
+   "false": 55,
+   "missed": 0,
+   "precision": 0.154,
+   "recall": 1.0
+  },
+  {
+   "rule": "containment 1.0 and same column name",
+   "flagged": 9,
+   "true": 9,
+   "false": 0,
+   "missed": 1,
+   "precision": 1.0,
+   "recall": 0.9
+  },
+  {
+   "rule": "same column name only",
+   "flagged": 9,
+   "true": 9,
+   "false": 0,
+   "missed": 1,
+   "precision": 1.0,
+   "recall": 0.9
+  }
+ ],
+ "accidents": [
+  {
+   "child": "Album.AlbumId",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Album.AlbumId",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Album.AlbumId",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Album.ArtistId",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Album.ArtistId",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Album.ArtistId",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Artist.ArtistId",
+   "parent": "Album.AlbumId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Artist.ArtistId",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Artist.ArtistId",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Artist.ArtistId",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.CustomerId",
+   "parent": "Album.AlbumId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.CustomerId",
+   "parent": "Artist.ArtistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.CustomerId",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.CustomerId",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.CustomerId",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Album.AlbumId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Artist.ArtistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Genre.GenreId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "MediaType.MediaTypeId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Playlist.PlaylistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Album.AlbumId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Artist.ArtistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Customer.CustomerId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Genre.GenreId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Playlist.PlaylistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.EmployeeId",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Album.AlbumId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Artist.ArtistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Customer.CustomerId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Genre.GenreId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Invoice.InvoiceId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "InvoiceLine.InvoiceLineId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Playlist.PlaylistId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Employee.ReportsTo",
+   "parent": "Track.TrackId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": false
+  },
+  {
+   "child": "Genre.GenreId",
+   "parent": "Album.AlbumId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": true,
+   "true_fk": false
+  }
+ ],
+ "missed_by_name_rule": [
+  {
+   "child": "Customer.SupportRepId",
+   "parent": "Employee.EmployeeId",
+   "containment": 1.0,
+   "name_match": false,
+   "child_is_own_pk": false,
+   "true_fk": true
+  }
+ ]
+}
