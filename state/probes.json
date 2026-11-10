@@ -1,5 +1,5 @@
 {
- "next_id": 391,
+ "next_id": 392,
  "items": [
   {
    "id": "P-0001",
@@ -9741,6 +9741,32 @@
     "number": "single above page on 6 of 9 reads, median ratio about 2",
     "at": "2026-11-10T12:34:26+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0391",
+   "title": "ICON lead-1 METAR-high bias at four continental airports: EDDM, EHAM, LFPG, LEMD, Sep and Oct 2026, Iowa State METAR against icon_seamless previous-runs at each airport; is it the UK +0.4 to +0.6 or Munich's P-0387 -0.49, and does any sit outside 2 se of zero?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-10",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T12:38:05+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "median of the four lead-1 METAR minus ICON biases about +0.3 C, two of four outside 2 se",
+    "at": "2026-11-10T12:38:13+0000"
    }
   }
  ]
