@@ -10092,22 +10092,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T23:42:04+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-10T23:42:57+0000",
+   "note": "Recomputed from the ledgers: v0.2 realised -988.67 GBP on 83 closed, bankroll 11.33, below one 100 GBP stake since 17 Oct 00:18Z; R01 realised -1093.83 on 29 closed, bankroll -93.83, below since 20 Oct 23:10Z; neither has entered since, and all 4 of tonight gate-passers are mints never held. Correction: P-0318 found the cause on 3 Nov and P-0402 rediscovered it. D-016 could never have reached n above 0 and R01 cannot reach its 40 mark. Fixed in 1f367705: paper.py prints the bankroll line first when money binds (print only). Shot after reading P-0318 (0.5). Next: close; what to do with two bust books is a rules call for an attended session.",
+   "artefacts": [
+    "experiments/2026-11-10-P-0403"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "v0.2 bankroll 11.33 GBP from the ledger and R01 bankroll below zero; shot after reading P-0318 and the kill-check line",
-    "at": "2026-11-10T23:42:08+0000"
+    "at": "2026-11-10T23:42:08+0000",
+    "hit": true
    }
   }
  ]

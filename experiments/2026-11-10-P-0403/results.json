@@ -1,0 +1,31 @@
+{
+ "v0.2": {
+  "rows": 83,
+  "closed": 83,
+  "open": 0,
+  "start": 1000.0,
+  "realised": -988.67,
+  "bankroll_now": 11.33,
+  "stake": 100.0,
+  "first_below_stake_at": "2026-10-17T00:18:00Z",
+  "last_entry": "2026-10-16T22:28:02Z",
+  "entries_after_first_below": 0
+ },
+ "R01": {
+  "rows": 29,
+  "closed": 29,
+  "open": 0,
+  "start": 1000.0,
+  "realised": -1093.83,
+  "bankroll_now": -93.83,
+  "stake": 100.0,
+  "first_below_stake_at": "2026-10-20T23:10:00Z",
+  "last_entry": "2026-10-20T22:38:37Z",
+  "entries_after_first_below": 0
+ },
+ "tonight": {
+  "snapshot_rows": 152,
+  "pass_every_gate": 4,
+  "of_those_never_held": 4
+ }
+}

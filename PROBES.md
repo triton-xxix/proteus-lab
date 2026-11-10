@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 322 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 323 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,12 +24,12 @@ Verdicts so far: 322 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
-| P-0403 | Grinder v0.2 and R01 bankroll from the ledgers: realised total, bankroll against the 100 GBP stake, the date it first fell below, and how many all-gate passers since were new mints? | desk | none |  | 1 (in progress) | 15 min |
 
-## Verdicts (386)
+## Verdicts (387)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-10 | P-0403 | Grinder v0.2 and R01 bankroll from the ledgers: realised total, bankroll against the 100 GBP stake, the date it first fell below, and how many all-gate passers since were new mints? | **works** | Recomputed from the ledgers: v0.2 realised -988.67 GBP on 83 closed, bankroll 11.33, below one 100 GBP stake since 17 Oct 00:18Z; R01 realised -1093.83 on 29 closed, bankroll -93.83, below since 20 Oct 23:10Z; neither has entered since, and all 4 of tonight gate-passers are mints never held. Correction: P-0318 found the cause on 3 Nov and P-0402 rediscovered it. D-016 could never have reached n above 0 and R01 cannot reach its 40 mark. Fixed in 1f367705: paper.py prints the bankroll line first when money binds (print only). Shot after reading P-0318 (0.5). Next: close; what to do with two bust books is a rules call for an attended session. | `experiments/2026-11-10-P-0403` | 0 min, 8 calls, 0 denied |
 | 2026-11-10 | P-0402 | Grinder gate census 21 Oct to 10 Nov: per night, which gate rejects most, how many rows fail exactly one gate, and how many would pass with that gate eased by a quarter? | **works** | Measured 156 rows passing every gate over 19 nights (2 to 14 a night, 4 tonight), so the gate is not why the Grinder is quiet: open_book only looks for candidates when bankroll is at least the stake, and v0.2 sits at 11.33 GBP against a 100 GBP stake (TRACK-RECORD figure, not recomputed). The binding-constraints line it prints counts gate fails and never mentions money; three weeks of run logs and this morning Inspector line repeated it as the cause. Census: vol_h1 top gate 19 of 19 nights (shot hit), 286 rows one gate away (shot said under 10), 49 would pass with a quarter eased (shot 0 to 3). Held-mint skips and the R01 path not checked. Next: deepen (queued). | `experiments/2026-11-10-gate-census` | 0 min, 10 calls, 1 denied |
 | | | | | denied: Bash `grep -n -E "^if __name__/^main\(/^[a-z_]+\(\)$" /Users/triton/PROTEUS/grinder/paper.py` | | |
 | 2026-11-10 | P-0401 | GeckoTerminal single-pool lag: on one new Solana pool read at 0, 10, 30, 60 and 120 s, how far does the pool endpoint's h1 transaction count trail the trades list's own count? | **works** | Measured the single-pool endpoint frozen across 4 of 5 reads on a 1.4-minute-old pool trading about six times a second: 663 h1 transactions and a price identical to 60 digits at 0, 10, 30 and 60 s, then 924 at 120 s (shot said unchanged on at least 3 of 5, a hit). The trades list is cached too, one response served at 0, 10 and 30 s, and its 300 rows cover only 47 s, so the hour count cannot be checked from it. The page said 332 a minute before the single said 663. Cache bracketed at 60 to 120 s, one pool. Next: close (the age gate keeps such pools out). | `experiments/2026-11-10-gt-single-lag` | 2 min, 4 calls, 0 denied |
