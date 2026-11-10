@@ -18,7 +18,7 @@
   "P-0402",
   "P-0403"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-10T23:43:14+0000",
+ "stop_reason": "8 probes done with time on the clock: this session's context is long after two oversized tool outputs, and the kill check, run log and close must not be put at risk; three source rows added for tomorrow",
  "refills": 2
 }
