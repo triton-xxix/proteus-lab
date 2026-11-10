@@ -9838,22 +9838,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T12:44:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-10T12:45:33+0000",
+   "note": "Measured 7 tiny paste-and-run matches among 119 repos created since 7 Nov with 50+ stars (35 tiny; paste links 8 of 35 tiny v 2 of 84 larger), against 10 on 9 Nov; shot said 6 to 14, a hit. Ids, stars and README hashes of all 35 tiny repos saved to sandbox/ only, no names committed. Regex counts, not audited. Next: deepen (queued 12 Nov recheck: gone, README changed, stars moved by id).",
+   "artefacts": [
+    "experiments/2026-11-10-P-0394"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "tiny paste-and-run matches between 6 and 14 (9 Nov: 10)",
-    "at": "2026-11-10T12:44:05+0000"
+    "at": "2026-11-10T12:44:05+0000",
+    "hit": true
    }
   }
  ]
