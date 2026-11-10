@@ -1,0 +1,73 @@
+{
+ "pool": "Ck4bWcZxk9wqPuJbwaQxPQQugpQw9oD7Zq8KfMrTE3Pt",
+ "name": "ELYSION / SOL",
+ "page_h1_tx": 332,
+ "age_min_at_page_read": 1.4,
+ "reads": [
+  {
+   "t": 0,
+   "at": "2026-11-10T23:37:43+00:00",
+   "single_h1_tx": 663,
+   "single_m5_tx": 663,
+   "single_h1_vol": "20400.2841624576",
+   "single_price": "0.0000119595708545004780821367023093792070925950813732585851594260384",
+   "trades_listed": 300,
+   "trades_last_hour": 300,
+   "trades_last_5m": 300,
+   "newest_trade_age_s": 2.9,
+   "oldest_listed_age_s": 49.9
+  },
+  {
+   "t": 10,
+   "at": "2026-11-10T23:37:54+00:00",
+   "single_h1_tx": 663,
+   "single_m5_tx": 663,
+   "single_h1_vol": "20400.2841624576",
+   "single_price": "0.0000119595708545004780821367023093792070925950813732585851594260384",
+   "trades_listed": 300,
+   "trades_last_hour": 300,
+   "trades_last_5m": 300,
+   "newest_trade_age_s": 13.1,
+   "oldest_listed_age_s": 60.1
+  },
+  {
+   "t": 30,
+   "at": "2026-11-10T23:38:14+00:00",
+   "single_h1_tx": 663,
+   "single_m5_tx": 663,
+   "single_h1_vol": "20400.2841624576",
+   "single_price": "0.0000119595708545004780821367023093792070925950813732585851594260384",
+   "trades_listed": 300,
+   "trades_last_hour": 300,
+   "trades_last_5m": 300,
+   "newest_trade_age_s": 33.0,
+   "oldest_listed_age_s": 80.0
+  },
+  {
+   "t": 60,
+   "at": "2026-11-10T23:38:44+00:00",
+   "single_h1_tx": 663,
+   "single_m5_tx": 663,
+   "single_h1_vol": "20400.2841624576",
+   "single_price": "0.0000119595708545004780821367023093792070925950813732585851594260384",
+   "trades_listed": 300,
+   "trades_last_hour": 300,
+   "trades_last_5m": 300,
+   "newest_trade_age_s": 29.1,
+   "oldest_listed_age_s": 97.1
+  },
+  {
+   "t": 120,
+   "at": "2026-11-10T23:39:44+00:00",
+   "single_h1_tx": 924,
+   "single_m5_tx": 924,
+   "single_h1_vol": "26162.0992706187",
+   "single_price": "0.0000127967162369479259268754539977999180758831839572577457180960122",
+   "trades_listed": 300,
+   "trades_last_hour": 300,
+   "trades_last_5m": 300,
+   "newest_trade_age_s": 5.2,
+   "oldest_listed_age_s": 134.2
+  }
+ ]
+}

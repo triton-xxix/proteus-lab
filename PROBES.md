@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 320 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 321 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,12 +24,12 @@ Verdicts so far: 320 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
-| P-0401 | GeckoTerminal single-pool lag: on one new Solana pool read at 0, 10, 30, 60 and 120 s, how far does the pool endpoint's h1 transaction count trail the trades list's own count? | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (384)
+## Verdicts (385)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-10 | P-0401 | GeckoTerminal single-pool lag: on one new Solana pool read at 0, 10, 30, 60 and 120 s, how far does the pool endpoint's h1 transaction count trail the trades list's own count? | **works** | Measured the single-pool endpoint frozen across 4 of 5 reads on a 1.4-minute-old pool trading about six times a second: 663 h1 transactions and a price identical to 60 digits at 0, 10, 30 and 60 s, then 924 at 120 s (shot said unchanged on at least 3 of 5, a hit). The trades list is cached too, one response served at 0, 10 and 30 s, and its 300 rows cover only 47 s, so the hour count cannot be checked from it. The page said 332 a minute before the single said 663. Cache bracketed at 60 to 120 s, one pool. Next: close (the age gate keeps such pools out). | `experiments/2026-11-10-gt-single-lag` | 2 min, 4 calls, 0 denied |
 | 2026-11-10 | P-0400 | Memory files' repo paths: how many file, script or folder paths named inside the 47 Proteus memories no longer exist under /Users/triton/PROTEUS? | **works** | Measured 136 distinct repo paths named across 48 memory files: 116 exist as written, 6 placeholders, 7 bare names found in the sub-folder the memory names, 7 flagged missing and all 7 false alarms on reading (3 date patterns, 1 function call, 2 files the memory places outside the repo, 1 script named as not yet built). 0 stale paths against a shot of 3 to 12: verdict hit, number missed. A path existing does not make the memory true; behaviour claims are the part that rots and this does not test them. Next: close. | `experiments/2026-11-10-P-0400` | 0 min, 7 calls, 0 denied |
 | 2026-11-10 | P-0399 | ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyless? | **blocked** | Not installed. Registry record read keyless: ztd-charts-cli created 5 Nov, 10 versions in 5 days, latest 0.7.0 published 10 Nov 13:33Z about ten hours before the run, one maintainer, 11.8 MB unpacked with a native resvg binary; 0.7.0 is the first with a provenance attestation. Nothing wrong found; it is a days-old package from one person and nobody is watching. Shot after looking at the registry record (0.5). The render question is unanswered. | `experiments/2026-11-10-P-0399` | 0 min, 7 calls, 0 denied |
 | 2026-11-10 | P-0398 | modern-web-guidance legacy-scan: is precision on five public repos near the claimed 92 percent? | **works** | Measured 47 of 47 flags meeting the tool own keep and drop rubric on Bootstrap 3.4.1 (progress 32, password autocomplete 12, scrollspy 3), against 92 pct claimed and my shot of 70 to 95: verdict hit, number missed high. But only 3 of 35 rules fired, all 47 sit in docs and demo markup (half are repeated code samples), the default scan of Bootstrap source found 0, HTML5 Boilerplate and my lab site 0, and 38 lines of hand-built modal markup went unflagged. One labeller, three targets not five. High precision from narrow rules; recall is the open number. Next: close. | `experiments/2026-11-10-P-0398` | 1 min, 19 calls, 0 denied |
