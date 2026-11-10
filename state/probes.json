@@ -9780,22 +9780,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T12:40:02+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-10T12:41:10+0000",
+   "note": "Measured METAR minus city-point ICON lead 1 by week: +0.04, -0.13, +0.13, then -0.87 (se 0.57) for 3 to 9 Nov (shot: last week below -0.3, first above 0, a hit). P-0335 +0.03 and P-0387 -0.49 both reproduce to the hundredth on their own days, so the gap is the day set; 9 Nov alone at -3.6 carries it, without it P-0387 days read -0.21. Not a drift: three flat weeks, one cold week under 2 se; all 28 days -0.21 se 0.21. Next: close (D-023 scores the correction).",
+   "artefacts": [
+    "experiments/2026-11-10-P-0392"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "week from 3 Nov METAR minus city point below -0.3 C, week from 13 Oct above 0",
-    "at": "2026-11-10T12:40:08+0000"
+    "at": "2026-11-10T12:40:08+0000",
+    "hit": true
    }
   }
  ]
