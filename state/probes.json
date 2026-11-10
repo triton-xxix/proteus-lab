@@ -9887,22 +9887,25 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-10T23:33:05+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-10T23:33:40+0000",
+   "note": "Measured 0 missing and 0 empty of 46 index links (shot 0 of about 45, a hit), but the reverse check found 1 file on disk the index never named: feedback_short_window_edges.md, the 19 Oct instruction behind the edge desk, unindexed for 22 days; index line added tonight. Also 15 wiki-link uses of 9 slugs match no memory name exactly; 3 checked by hand are short forms of real memories, 6 unchecked. Forward links were never the risk, orphans were. Next: deepen (queued: do the repo paths the memories name still exist).",
+   "artefacts": [
+    "experiments/2026-11-10-P-0396"
+   ],
+   "minutes": 0,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "0 missing and 0 empty of about 45 index links",
-    "at": "2026-11-10T23:33:11+0000"
+    "at": "2026-11-10T23:33:11+0000",
+    "hit": true
    }
   },
   {

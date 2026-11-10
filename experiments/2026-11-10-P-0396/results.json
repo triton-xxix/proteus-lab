@@ -1,0 +1,49 @@
+{
+ "index_links": 46,
+ "files_on_disk": 47,
+ "missing": [],
+ "empty": [],
+ "no_frontmatter": [],
+ "orphans_not_in_index": [
+  "feedback_short_window_edges.md"
+ ],
+ "duplicate_targets": [],
+ "index_lines_without_a_link": [],
+ "wiki_links": 81,
+ "wiki_links_to_nothing": {
+  "autonomy-over-guardrails": [
+   "feedback_empty_queue_is_not_done.md",
+   "project_etoro_demo_copy_test.md"
+  ],
+  "not-built-around-luke": [
+   "feedback_empty_queue_is_not_done.md"
+  ],
+  "probe-loop": [
+   "feedback_empty_queue_is_not_done.md",
+   "project_harvester.md",
+   "project_in_folder_python312.md",
+   "project_op_hangs_use_sdk.md"
+  ],
+  "reading-on-lesser-models": [
+   "feedback_empty_queue_is_not_done.md"
+  ],
+  "persona-interests": [
+   "feedback_judge_the_idea_not_the_vendor.md"
+  ],
+  "usage-from-transcripts": [
+   "project_case_insensitive_fs.md"
+  ],
+  "charter-is-the-rules": [
+   "project_decisions_log_mixes_test_lines.md",
+   "project_live_task_prompts_drift.md",
+   "project_subagent_hook_inheritance.md"
+  ],
+  "live-task-prompts-are-pointers": [
+   "project_scheduler_one_session_per_task.md"
+  ],
+  "skool-pull-transcribe-read-jobs": [
+   "project_vimeo_turnstile_block.md"
+  ]
+ },
+ "index_chars": 9393
+}

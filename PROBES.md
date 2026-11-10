@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 317 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 318 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,15 +24,15 @@ Verdicts so far: 317 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
-| P-0396 | Memory-map path check: how many index links in Proteus MEMORY.md point at a missing or empty file? | vault | none |  | 1 (in progress) | 10 min |
 | P-0397 | auto-ontology-mcp: does its deterministic validator flag a bad integer-overlap join on a public SQLite DB? | harvest | none |  | 0 | 30 min |
 | P-0398 | modern-web-guidance legacy-scan: is precision on five public repos near the claimed 92 percent? | harvest | none |  | 0 | 30 min |
 | P-0399 | ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyless? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (379)
+## Verdicts (380)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-10 | P-0396 | Memory-map path check: how many index links in Proteus MEMORY.md point at a missing or empty file? | **works** | Measured 0 missing and 0 empty of 46 index links (shot 0 of about 45, a hit), but the reverse check found 1 file on disk the index never named: feedback_short_window_edges.md, the 19 Oct instruction behind the edge desk, unindexed for 22 days; index line added tonight. Also 15 wiki-link uses of 9 slugs match no memory name exactly; 3 checked by hand are short forms of real memories, 6 unchecked. Forward links were never the risk, orphans were. Next: deepen (queued: do the repo paths the memories name still exist). | `experiments/2026-11-10-P-0396` | 0 min, 10 calls, 0 denied |
 | 2026-11-10 | P-0394 | GitHub tiny paste-link baseline: rerun P-0386's count.py on today's 3-day window and save the matching repos' numeric ids to sandbox/ only (counts in the artefact, no names), so a 48-hour takedown recheck has something to match; does the tiny-paste-and-run count land near 9 Nov's 10? | **works** | Measured 7 tiny paste-and-run matches among 119 repos created since 7 Nov with 50+ stars (35 tiny; paste links 8 of 35 tiny v 2 of 84 larger), against 10 on 9 Nov; shot said 6 to 14, a hit. Ids, stars and README hashes of all 35 tiny repos saved to sandbox/ only, no names committed. Regex counts, not audited. Next: deepen (queued 12 Nov recheck: gone, README changed, stars moved by id). | `experiments/2026-11-10-P-0394` | 1 min, 6 calls, 0 denied |
 | 2026-11-10 | P-0393 | Sentinel-2 daily scene counts: Earth Search numberMatched for sentinel-2a, 2b and 2c each UTC day 27 Oct to 9 Nov (one POST each, limit 1); is 2B's 3 Nov count a real drop below its own 14-day median, or were P-0385's three misses only those cities? | **works** | Measured 2B 5,108 scenes on 3 Nov against a 14-day median of 5,962, 0.86, its lowest day but inside its own low-day group (5,108 to 5,383, alternating with 6.0 to 6.7k); shot said within 20 pct, a hit, called at 0.5 after seeing the 3 Nov count. 2A 0.82 and 2C 1.04 that day; no platform below half its median on any of 14 days. No worldwide 2B outage, so P-0385 misses are local. Next: close. | `experiments/2026-11-10-P-0393` | 1 min, 6 calls, 0 denied |
 | 2026-11-10 | P-0392 | Munich METAR sign by week: city-point ICON lead-1 high (Europe/Berlin) against the EDDM METAR high, every day 13 Oct to 9 Nov, split into P-0335's days, P-0387's band days and by week; is -0.49 v +0.03 the day set or a drift colder into November? | **works** | Measured METAR minus city-point ICON lead 1 by week: +0.04, -0.13, +0.13, then -0.87 (se 0.57) for 3 to 9 Nov (shot: last week below -0.3, first above 0, a hit). P-0335 +0.03 and P-0387 -0.49 both reproduce to the hundredth on their own days, so the gap is the day set; 9 Nov alone at -3.6 carries it, without it P-0387 days read -0.21. Not a drift: three flat weeks, one cold week under 2 se; all 28 days -0.21 se 0.21. Next: close (D-023 scores the correction). | `experiments/2026-11-10-P-0392` | 1 min, 9 calls, 0 denied |
