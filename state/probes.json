@@ -1,5 +1,5 @@
 {
- "next_id": 395,
+ "next_id": 396,
  "items": [
   {
    "id": "P-0001",
@@ -9858,6 +9858,26 @@
     "at": "2026-11-10T12:44:05+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0395",
+   "title": "GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-12",
+   "est_minutes": 15,
+   "added": "2026-11-10",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
