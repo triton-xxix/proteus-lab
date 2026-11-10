@@ -1,5 +1,5 @@
 {
- "next_id": 402,
+ "next_id": 403,
  "items": [
   {
    "id": "P-0001",
@@ -10051,6 +10051,32 @@
     "number": "single endpoint h1 count unchanged across at least 3 of 5 reads while the trades list gains trades",
     "at": "2026-11-10T23:37:41+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0402",
+   "title": "Grinder gate census 21 Oct to 10 Nov: per night, which gate rejects most, how many rows fail exactly one gate, and how many would pass with that gate eased by a quarter?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-10",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T23:40:39+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "vol_h1 the top gate on most nights; fewer than 10 rows one gate away in the window; 0 to 3 would pass with a quarter eased",
+    "at": "2026-11-10T23:40:43+0000"
    }
   }
  ]
