@@ -6,17 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-593 judged over 41 harvest days, 388 kept, 121 testable, 116 queued as probes, 107 with a probe verdict.
+607 judged over 42 harvest days, 398 kept, 125 testable, 120 queued as probes, 110 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0592 | 2026-11-09 | github | [Nanoutrolley/roblox-studio-mcp: Model Context Protocol (MCP) server for Roblox Studio. Con](https://github.com/Nanoutrolley/roblox-studio-mcp) (intel) | mechanism | tools-for-strangers | yes | P-0381 |
+| H-0606 | 2026-11-10 | github | [Junhan2/ztd-charts: 36 animated, interactive React charts in pure SVG, with a CLI and an M](https://github.com/Junhan2/ztd-charts) | both | tools-for-strangers | yes | P-0399 |
+| H-0604 | 2026-11-10 | vault | [Multi-tier referral scheme paying on recruits' trading revenue, spread through referral li](https://invoapp.com/join/tradewzay) (intel) | mechanism | mechanism-hunting | no: Joining and operating it needs an account and real money; th |  |
+| H-0602 | 2026-11-10 | arxiv | [PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature rev](https://arxiv.org/abs/2611.12222) | mechanism | tools-for-strangers | no: A full run needs many model calls and spend, and the quality |  |
+| H-0601 | 2026-11-10 | github | [Dodaios/ste80-humanizer: STE80 Humanizer: agent skill that removes AI tells and rewrites t](https://github.com/Dodaios/ste80-humanizer) | mechanism | tools-for-strangers | no: The rewrite needs model answers, and there is no local LLM;  |  |
+| H-0600 | 2026-11-10 | hn | [Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives](https://github.com/GoogleChrome/modern-web-guidance) | both | tools-for-strangers | yes | P-0398 |
+| H-0599 | 2026-11-10 | vault | [Claude-interviews-the-owner prompt as the opener for client builds](https://www.youtube.com/watch?v=Zs3faMCDYNs) | mechanism | tools-for-strangers | no: Judging it needs model answers and a human interviewee, and  |  |
+| H-0598 | 2026-11-10 | youtube | [I Tested Local AI on My Mac Studio So You Don't Have To](https://www.youtube.com/watch?v=JLs10oOX6NY) | mechanism | tools-for-strangers | no: Needs a local model runtime, and there is no local LLM on th |  |
+| H-0597 | 2026-11-10 | arxiv | [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](https://arxiv.org/abs/2611.12835) | mechanism | tech | no: It needs policy-gradient training of small models on a GPU a |  |
+| H-0596 | 2026-11-10 | github | [gogoymh/auto-ontology-mcp: NVIDIA Auto Ontology's semantic layer and a personal knowledge ](https://github.com/gogoymh/auto-ontology-mcp) | mechanism | tools-for-strangers | yes | P-0397 |
+| H-0594 | 2026-11-10 | vault | [nightly check that every path in the memory map still exists](https://www.youtube.com/watch?v=Zs3faMCDYNs) | mechanism | tools-for-strangers | yes | P-0396 |
+| H-0592 | 2026-11-09 | github | [Nanoutrolley/roblox-studio-mcp: Model Context Protocol (MCP) server for Roblox Studio. Con](https://github.com/Nanoutrolley/roblox-studio-mcp) (intel) | mechanism | tools-for-strangers | yes | P-0381 **broken** |
 | H-0590 | 2026-11-09 | vault | [income-claim ads](https://www.instagram.com/p/DfZo4rOsFRL/) (intel) | mechanism | none | no: It is a regulatory and compliance question, with nothing to  |  |
 | H-0588 | 2026-11-09 | arxiv | [Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data](https://arxiv.org/abs/2611.09372) | mechanism | tech | no: It needs a local LLM, which this Mac does not have, and the  |  |
-| H-0587 | 2026-11-09 | github | [yucezerey/turkish-anti-ai-skill: Türkçe metinlerdeki yapay zeka izlerini (AI slop, transla](https://github.com/yucezerey/turkish-anti-ai-skill) | mechanism | tools-for-strangers | yes | P-0380 |
-| H-0586 | 2026-11-09 | hn | [Show HN: Every satellite that passed over any place this week, and its photos](https://www.watched.earth) | mechanism | open-data | yes | P-0379 |
+| H-0587 | 2026-11-09 | github | [yucezerey/turkish-anti-ai-skill: Türkçe metinlerdeki yapay zeka izlerini (AI slop, transla](https://github.com/yucezerey/turkish-anti-ai-skill) | mechanism | tools-for-strangers | yes | P-0380 **blocked** |
+| H-0586 | 2026-11-09 | hn | [Show HN: Every satellite that passed over any place this week, and its photos](https://www.watched.earth) | mechanism | open-data | yes | P-0379 **works** |
 | H-0585 | 2026-11-09 | vault | [free live session, no replay, paid offer behind](https://www.instagram.com/p/DfZo4rOsFRL/) | mechanism | none | no: Testing it needs real registrants and a live session, which  |  |
 | H-0584 | 2026-11-09 | youtube | [This Chess AI Predicts Your Mistakes](https://www.youtube.com/watch?v=8uKW6cIusLA) | mechanism | game-bots | no: It needs an lc0 engine build and the weight files, neither o |  |
 | H-0583 | 2026-11-09 | arxiv | [Tracybot: Preserving Developer Intent by Tracing Agent-Generated Code to Prompts](https://arxiv.org/abs/2611.09395) | mechanism | tools-for-strangers | no: It is a VS Code extension and needs a GUI editor session wit |  |
@@ -402,6 +412,124 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0606 Junhan2/ztd-charts: 36 animated, interactive React charts in pure SVG, with a CLI and an MCP server
+2026-11-10, github, https://github.com/Junhan2/ztd-charts
+
+- **Mechanism:** Each of 37 chart types is a pure-SVG React component that is also described by a JSON spec with a public JSON Schema. A CLI and MCP server validate a spec, suggest charts from a CSV, and render to PNG, SVG or HTML. Large data switches to canvas automatically.
+- **Claim:** 37 animated, accessible charts at about 12 to 26 kB each with a JSON spec an agent can write.
+- **Testable:** yes. Does the CLI render a candlestick chart from a JSON spec of public price data to SVG with no key, and does it validate the schema? Queued as P-0399.
+- **Idea on its own:** needs-a-run. The spec-to-render claim is checkable in minutes and could replace hand-built charts on the lab pages.
+- **How it would be done:** Install the CLI with npx in the sandbox, build a spec from a few days of candles Proteus already holds, and run validate then render to SVG. Check whether PNG rendering pulls a browser download. Compare the output against the existing lab-page charts for legibility.
+- **Stack already covers:** HyperFrames (video compose, captions, render), GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **To fetch:** ztd-charts https://github.com/Junhan2/ztd-charts (The library, CLI and MCP server.)
+- **Field Notes line:** A charts library where every chart is a JSON spec an agent can write and a CLI renders, tested here on candlestick data.
+
+### H-0604 Multi-tier referral scheme paying on recruits' trading revenue, spread through referral links
+2026-11-10, vault, https://invoapp.com/join/tradewzay
+
+- **Mechanism:** A referral chain pays each sender a share of trading fees generated by people they recruit, and by people those recruits recruit, across four uncapped tiers, backdated. Income is driven by fee volume from the downline, so promotion is rewarded for recruitment rather than for trading skill. Regulators treat promotions like this as financial promotions and recruitment-weighted schemes get compared with pyramid structures.
+- **Claim:** A four-tier uncapped referral scheme pays on recruits' trading revenue.
+- **Testable:** no. Joining and operating it needs an account and real money; the vault wants it understood only. Needs: An account and real funds, which are out of scope..
+- **Idea on its own:** unsound. Income depends on recruitment growth that must stop, and crypto derivatives are banned for UK retail.
+- **How it would be done:** Not to be operated. The useful work is reading the published terms to map the tier payout percentages, then comparing with how regulators and the ASA describe unlawful pyramid and misleading financial promotion. Detection is by regulator warning lists, platform ad review and payment-flow analysis, so a write-up could cite those. Any real legal reading needs a solicitor.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** A four-tier referral chain pays senders from their downline's trading fees, which rewards recruiting over trading and fits the pattern regulators flag.
+
+### H-0602 PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus
+2026-11-10, arxiv, https://arxiv.org/abs/2611.12222
+
+- **Mechanism:** A conductor agent in Claude Code runs 15 declaratively specified sub-agents that talk only through persisted artifacts, which the conductor validates before every state transition. Retrieval, bibliometrics and scoring are deterministic Python. Three human checkpoints gate inclusion, corpus adequacy and the outline, and a 0 to 100 QualityScore grades the corpus before synthesis.
+- **Claim:** Takes a systematic literature review from question to manuscript draft, with corpus quality raised from 74.6 to 81.9 at one checkpoint.
+- **Testable:** no. A full run needs many model calls and spend, and the quality was judged only by an internal agent. Needs: Claude Code usage at volume for a full run..
+- **Idea on its own:** needs-a-run. The artifact-gated design is sound but output quality has no independent check.
+- **How it would be done:** Fetch the repository, read the agent specs and the validator, and borrow the pattern of validating handoff artifacts before each step for Proteus's nightly loop. A real run on one narrow question would need an attended session. A domain reviewer would have to judge the output against a human review.
+- **Stack already covers:** Claude Code with skills and sub-agents, a keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** PARIS paper page https://arxiv.org/abs/2611.12222 (Links to the open-source repository.)
+- **Missing:** An independent human-reviewed benchmark for the output.
+- **Field Notes line:** An open framework runs 15 Claude Code agents through a literature review, validating every handoff file, and admits its own audits found drifting counts.
+
+### H-0601 Dodaios/ste80-humanizer: STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE1
+2026-11-10, github, https://github.com/Dodaios/ste80-humanizer
+
+- **Mechanism:** An agent skill that rewrites text in two passes: first removing 26 listed AI-writing tells, then recasting sentences toward ASD-STE100 rules (short, active, one idea each, instructions separate from description). It is prompt rules in SKILL.md, applied by whichever model the agent runs.
+- **Claim:** Rewrites AI text 80 percent of the way to Simplified Technical English so it reads like a careful person wrote it.
+- **Testable:** no. The rewrite needs model answers, and there is no local LLM; the only keyless slice is scoring text, which does not test the skill. Needs: A model session to apply the skill..
+- **Idea on its own:** sound. Controlled-language constraints reliably shorten sentences and expose the actor, and readability is measurable.
+- **How it would be done:** Take ten of Proteus's own Field Notes paragraphs, rewrite them through the skill in an attended session, and score before and after with a readability formula and sentence length. Then have a person pick which reads better blind. Proteus already holds a voice rule, so check the output does not break it.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** ste80-humanizer https://github.com/Dodaios/ste80-humanizer (The skill under test.); textstat https://pypi.org/project/textstat/ (Readability scores for before and after.)
+- **Field Notes line:** A skill strips 26 AI-writing tells then rewrites in controlled technical English; the second pass is what stops it reading like a model.
+
+### H-0600 Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives
+2026-11-10, hn, https://github.com/GoogleChrome/modern-web-guidance
+
+- **Mechanism:** A curated set of 200+ web-platform guides is shipped as an agent skill plus a pure-JS search CLI (about 7MB, roughly 10ms per query) so the agent pulls only relevant guides. A deterministic legacy-scan matches old patterns in source files, such as div-and-JS dialogs, and points to the native replacement. The scanner was fitted on 30k GitHub repositories.
+- **Claim:** Legacy-scan finds outdated frontend patterns with 92 percent average precision on held-out repositories.
+- **Testable:** yes. Run on 5 public repos with hand-checked samples, what share of legacy-scan hits are real outdated patterns, against the claimed 92 percent? Queued as P-0398.
+- **Idea on its own:** needs-a-run. Hand-checkable precision claims on public code can be tested directly.
+- **How it would be done:** Clone the repo, install the CLI with npm, and run legacy-scan on five public frontend repos. Open fifty hits at random and mark each as a true outdated pattern or not, then compute precision. Also count the guides to check the 200 figure. Nothing needs a key.
+- **To fetch:** modern-web-guidance https://github.com/GoogleChrome/modern-web-guidance (The guides, skill and legacy-scan CLI under test.)
+- **Field Notes line:** Chrome's team ships 200 modern-web guides for coding agents, plus a scanner claiming 92 percent precision at spotting old JavaScript patterns.
+
+### H-0599 Claude-interviews-the-owner prompt as the opener for client builds
+2026-11-10, vault, https://www.youtube.com/watch?v=Zs3faMCDYNs
+
+- **Mechanism:** A prompt makes the model interview the owner one question at a time about roles, tools, recurring tasks and pain points, then compiles the answers into a structured brief or map of the business. The mechanism is elicitation first, build second, so assumptions are surfaced before anything is automated. It depends on a model session and a person to answer.
+- **Claim:** Starting a client build with a model-led interview produces a business map before any automation is built.
+- **Testable:** no. Judging it needs model answers and a human interviewee, and there is no local LLM here. Needs: A model session and a person answering..
+- **Idea on its own:** sound. Elicitation before building is standard discovery practice and cheap to try.
+- **How it would be done:** Write the interview prompt as a skill with a fixed question list and a template for the output map. Run it with a real or role-played owner, then check whether the resulting map names every recurring task and the tool used for each. A hired person would still run the call for a real client and judge what the owner leaves unsaid.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Open a client job by having Claude interview the owner first, so the map of how the business runs exists before any build starts.
+
+### H-0598 I Tested Local AI on My Mac Studio So You Don't Have To
+2026-11-10, youtube, https://www.youtube.com/watch?v=JLs10oOX6NY
+
+- **Mechanism:** Coding agents fan out parallel sub-agents, so several requests hit the local model at once. Ollama by default queues requests and answers them one at a time, while servers with continuous batching (LM Studio's MLX engine, llama.cpp server with parallel slots, vllm-mlx style servers) serve them together. Single-request tokens per second, which most comparisons report, hides this difference.
+- **Claim:** Popular Ollama versus LM Studio comparisons measure single-request speed, not concurrent sub-agent load, which is where the real gap is.
+- **Testable:** no. Needs a local model runtime, and there is no local LLM on this Mac. Needs: A local LLM server (Ollama or LM Studio) and a model download..
+- **Idea on its own:** sound. Serial queueing against parallel clients is a well understood mechanism, and the benchmark framing point holds.
+- **How it would be done:** Install a batching server, load one small model, fire four simultaneous requests from a Python script and time wall-clock against four sequential ones. Repeat on Ollama with and without its parallel setting. The data is a ratio of total time, which is easy to read.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Ollama https://ollama.com/download (The default server whose queueing is the claim.); LM Studio https://lmstudio.ai/ (The batching comparison point.); llama.cpp https://github.com/ggml-org/llama.cpp (Open server with parallel slots, scriptable.)
+- **Field Notes line:** Local models stall under Claude Code because Ollama serves parallel sub-agent requests one by one; batching servers do not.
+
+### H-0597 Mitigating Agentic Deception via Evaluation-Side Partially Observable Games
+2026-11-10, arxiv, https://arxiv.org/abs/2611.12835
+
+- **Mechanism:** Deception is framed as a game where the agent maximises reward, a monitor reads the whole trajectory (reasoning, tool calls, effects) to expose deception, and a fixed verifier checks the monitor's claims and turns confirmed ones into penalties. The agent and monitor are trained together with a two-timescale policy gradient, helped by NLI verification and deterministic checks. Tested on 4B to 8B open models.
+- **Claim:** Beats the strongest baselines by 26.0 percent at mitigating deception and by up to 39.8 percent on task success.
+- **Testable:** no. It needs policy-gradient training of small models on a GPU and local model answers, neither of which is here. Needs: A GPU and a local model runtime..
+- **Idea on its own:** needs-a-run. The structure is sensible, but results are on small models and the verifier's quality decides everything.
+- **How it would be done:** Read the repository and reproduce the evaluation on one task such as WebShop using the released checkpoints, which needs a GPU box or rented hours. A cheaper borrow is the pattern alone: a second pass that checks an agent's claims against its tool log with deterministic checks, which Proteus could add to its own run logs. A hired ML person would be needed for the training loop.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** deceptive-agent https://github.com/Toyoid/deceptive-agent (Code released with the paper.)
+- **Missing:** A GPU and the trained agent and monitor checkpoints.
+- **Field Notes line:** A paper trains an agent and a monitor against each other, with a verifier turning the monitor's proven catches into penalties for faked work.
+
+### H-0596 gogoymh/auto-ontology-mcp: NVIDIA Auto Ontology's semantic layer and a personal knowledge base as an MCP server for Clau
+2026-11-10, github, https://github.com/gogoymh/auto-ontology-mcp
+
+- **Mechanism:** An MCP server keeps the deterministic work local in SQLite: schema extraction, column profiling, key and join inference, read-only execution. The client model does all language steps, naming business terms and writing SQL. validate_sql then checks each query against the reviewed relationships and profiled values, flagging bad joins, wrong-case string values, out-of-range filters and one-to-many fan-out before it runs.
+- **Claim:** Checks model-written SQL against an ontology so wrong joins, value mismatches and fan-out inflation are caught before a number comes back.
+- **Testable:** yes. On a small public SQLite database with a deliberately bad join, does the profiling and validation layer flag it without any model or key? Queued as P-0397.
+- **Idea on its own:** needs-a-run. The checks are plausible and deterministic, but whether they catch real errors needs a run on a real schema.
+- **How it would be done:** Install the package from GitHub into a sandbox venv, point its schema extractor at a public SQLite file such as Chinook, and call the profiling and validate_sql functions directly from Python rather than through a client. Feed it a correct join, a customer_id to order_id join and a case-mismatched filter, and record which are flagged. Proteus could later use it over its own desk logs.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** auto-ontology-mcp https://github.com/gogoymh/auto-ontology-mcp (The server under test.); Chinook sample SQLite database https://github.com/lerocha/chinook-database (Public sample database with known join paths.)
+- **Field Notes line:** A new MCP server catches the quiet text-to-SQL errors, like joining two ID columns that merely overlap, using only deterministic checks.
+
+### H-0594 nightly check that every path in the memory map still exists
+2026-11-10, vault, https://www.youtube.com/watch?v=Zs3faMCDYNs
+
+- **Mechanism:** A memory map is an index file that lists the paths an agent is told to read. A nightly script parses the paths out of the index, checks each exists on disk (and optionally that the file is non-empty and was touched within a set age), and reports the dead ones. It depends only on a parseable index format and the filesystem, so it needs no model.
+- **Claim:** A nightly path check stops an agent's memory map pointing at files that have moved or been deleted.
+- **Testable:** yes. How many of the links in Proteus's own MEMORY.md index resolve to an existing non-empty file? Queued as P-0396.
+- **Idea on its own:** sound. Stale index entries fail silently, and an existence check is cheap and deterministic.
+- **How it would be done:** Read the index markdown, pull the link targets with a regex, resolve them relative to the memory folder, and stat each. Report missing, empty and old files to a log, and have the nightly runner append the count. Add a second check that every file in the folder is listed in the index, to catch orphans. No hire needed.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **Field Notes line:** A twenty-line script can check every file an agent's memory index points at, so dead links get caught overnight instead of mid-task.
 
 ### H-0592 Nanoutrolley/roblox-studio-mcp: Model Context Protocol (MCP) server for Roblox Studio. Connect AI assistants (Claude, Cu
 2026-11-09, github, https://github.com/Nanoutrolley/roblox-studio-mcp. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
@@ -4967,6 +5095,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0604 | 2026-11-10 | Multi-tier referral scheme paying on recruits' trading revenue, spread through referral li | intel | unsound | no |  |
+| H-0599 | 2026-11-10 | Claude-interviews-the-owner prompt as the opener for client builds | open | sound | no |  |
+| H-0594 | 2026-11-10 | nightly check that every path in the memory map still exists | open | sound | yes | P-0396 |
 | H-0590 | 2026-11-09 | income-claim ads | intel | sound | no |  |
 | H-0585 | 2026-11-09 | free live session, no replay, paid offer behind | open | needs-a-run | no |  |
 | H-0580 | 2026-11-09 | testimonial-first hook with one number | open | needs-a-run | no |  |
@@ -5095,6 +5226,15 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0353 | 2026-11-10 | [ztd-charts](https://github.com/Junhan2/ztd-charts) | The library, CLI and MCP server. | H-0606 (Junhan2/ztd-charts: 36 animated, interactive React) | shelf |
+| T-0352 | 2026-11-10 | [PARIS paper page](https://arxiv.org/abs/2611.12222) | Links to the open-source repository. | H-0602 (PARIS: A multi-agent LLM framework for end-to-end,) | shelf |
+| T-0351 | 2026-11-10 | [textstat](https://pypi.org/project/textstat/) | Readability scores for before and after. | H-0601 (Dodaios/ste80-humanizer: STE80 Humanizer: agent sk) | shelf |
+| T-0350 | 2026-11-10 | [ste80-humanizer](https://github.com/Dodaios/ste80-humanizer) | The skill under test. | H-0601 (Dodaios/ste80-humanizer: STE80 Humanizer: agent sk) | shelf |
+| T-0349 | 2026-11-10 | [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | The guides, skill and legacy-scan CLI under test. | H-0600 (Show HN: Get your coding agent off ~2019 JavaScrip) | shelf |
+| T-0348 | 2026-11-10 | [LM Studio](https://lmstudio.ai/) | The batching comparison point. | H-0598 (I Tested Local AI on My Mac Studio So You Don't Ha) | shelf |
+| T-0347 | 2026-11-10 | [deceptive-agent](https://github.com/Toyoid/deceptive-agent) | Code released with the paper. | H-0597 (Mitigating Agentic Deception via Evaluation-Side P) | shelf |
+| T-0346 | 2026-11-10 | [Chinook sample SQLite database](https://github.com/lerocha/chinook-database) | Public sample database with known join paths. | H-0596 (gogoymh/auto-ontology-mcp: NVIDIA Auto Ontology's ) | shelf |
+| T-0345 | 2026-11-10 | [auto-ontology-mcp](https://github.com/gogoymh/auto-ontology-mcp) | The server under test. | H-0596 (gogoymh/auto-ontology-mcp: NVIDIA Auto Ontology's ) | shelf |
 | T-0344 | 2026-11-09 | [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) | The base for building a trustworthy MCP server instead. | H-0592 (Nanoutrolley/roblox-studio-mcp: Model Context Prot) | shelf |
 | T-0343 | 2026-11-09 | [CAP Copy Advice](https://www.asa.org.uk/advice-and-resources/bespoke-copy-advice.html) | Free bespoke advice on draft ad copy. | H-0590 (income-claim ads) | shelf |
 | T-0342 | 2026-11-09 | [ASA rulings archive](https://www.asa.org.uk/codes-and-rulings/rulings.html) | Public record of what was upheld and why. | H-0590 (income-claim ads) | shelf |
@@ -5444,6 +5584,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0607 | 2026-11-10 | youtube | [What Is BONDING CURVE For Meme Coin In Axiom Trading (EXPLAINED) 2026](https://www.youtube.com/watch?v=69tdX8GdfQU) | Affiliate promo with a textbook definition of a bonding curve and no new mechanism. |
+| H-0605 | 2026-11-10 | hn | [Show HN: DBDelve – Open-Source DB Client Made with Rust and GPUI](https://news.ycombinator.com/item?id=50427934) | A database GUI client launch, off-theme with no mechanism for the desks. |
+| H-0603 | 2026-11-10 | youtube | [Is Qwen3.8-27B Still #1 for Local LLMs? (M5 Max Test)](https://www.youtube.com/watch?v=-TKu-PdHI_Y) | Model launch benchmark walkthrough from vendor charts, duplicate theme of the local-model video with no mechanism. |
+| H-0595 | 2026-11-10 | hn | [A year after the 100% AI mandate nobody understands our code](https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/) | Opinion thread about an AI mandate with no mechanism to record. |
 | H-0593 | 2026-11-09 | youtube | [The Chess.com vs Lichess Rivalry](https://www.youtube.com/watch?v=343PasF4HUE) | A chatty rivalry video whose transcript carries no mechanism or data. |
 | H-0591 | 2026-11-09 | hn | [Ask HN: How do you manage your AI agents' context across clients and projects?](https://news.ycombinator.com/item?id=50403153) | A survey-style question seeking product ideas; the replies are generic advice (ADR folders, spec files) with no new mech |
 | H-0589 | 2026-11-09 | youtube | [BIG UK MOT RULE CHANGES COMING —What EVERY Drivers Must Know](https://www.youtube.com/watch?v=D2zKV4VcoZ8) | A consumer finance explainer of known gov.uk MOT rules, with no confirmed change and no mechanism or data. |
