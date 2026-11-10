@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 318 works, 7 broken, 39 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 319 works, 7 broken, 39 blocked, 17 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,14 +24,14 @@ Verdicts so far: 318 works, 7 broken, 39 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
-| P-0398 | modern-web-guidance legacy-scan: is precision on five public repos near the claimed 92 percent? | harvest | none |  | 1 (in progress) | 30 min |
 | P-0399 | ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyless? | harvest | none |  | 0 | 20 min |
 | P-0400 | Memory files' repo paths: how many file, script or folder paths named inside the 47 Proteus memories no longer exist under /Users/triton/PROTEUS? | desk | none |  | 0 | 15 min |
 
-## Verdicts (381)
+## Verdicts (382)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-10 | P-0398 | modern-web-guidance legacy-scan: is precision on five public repos near the claimed 92 percent? | **works** | Measured 47 of 47 flags meeting the tool own keep and drop rubric on Bootstrap 3.4.1 (progress 32, password autocomplete 12, scrollspy 3), against 92 pct claimed and my shot of 70 to 95: verdict hit, number missed high. But only 3 of 35 rules fired, all 47 sit in docs and demo markup (half are repeated code samples), the default scan of Bootstrap source found 0, HTML5 Boilerplate and my lab site 0, and 38 lines of hand-built modal markup went unflagged. One labeller, three targets not five. High precision from narrow rules; recall is the open number. Next: close. | `experiments/2026-11-10-P-0398` | 1 min, 19 calls, 0 denied |
 | 2026-11-10 | P-0397 | auto-ontology-mcp: does its deterministic validator flag a bad integer-overlap join on a public SQLite DB? | **blocked** | Tool not run. The slice underneath, my own script on Chinook: of 218 integer column to key candidates, 110 overlap fully and 100 of those are accidents, so value overlap alone is right 9 pct of the time (shot said under 20, a hit); 45 of 90 key-to-key pairs overlap just because ids start at 1. Same column name gets 9 of 10 declared keys with no false alarm and misses the role-named one (SupportRepId). One clean teaching database; says nothing about their validator. | `experiments/2026-11-10-P-0397` | 0 min, 11 calls, 0 denied |
 | 2026-11-10 | P-0396 | Memory-map path check: how many index links in Proteus MEMORY.md point at a missing or empty file? | **works** | Measured 0 missing and 0 empty of 46 index links (shot 0 of about 45, a hit), but the reverse check found 1 file on disk the index never named: feedback_short_window_edges.md, the 19 Oct instruction behind the edge desk, unindexed for 22 days; index line added tonight. Also 15 wiki-link uses of 9 slugs match no memory name exactly; 3 checked by hand are short forms of real memories, 6 unchecked. Forward links were never the risk, orphans were. Next: deepen (queued: do the repo paths the memories name still exist). | `experiments/2026-11-10-P-0396` | 0 min, 10 calls, 0 denied |
 | 2026-11-10 | P-0394 | GitHub tiny paste-link baseline: rerun P-0386's count.py on today's 3-day window and save the matching repos' numeric ids to sandbox/ only (counts in the artefact, no names), so a 48-hour takedown recheck has something to match; does the tiny-paste-and-run count land near 9 Nov's 10? | **works** | Measured 7 tiny paste-and-run matches among 119 repos created since 7 Nov with 50+ stars (35 tiny; paste links 8 of 35 tiny v 2 of 84 larger), against 10 on 9 Nov; shot said 6 to 14, a hit. Ids, stars and README hashes of all 35 tiny repos saved to sandbox/ only, no names committed. Regex counts, not audited. Next: deepen (queued 12 Nov recheck: gone, README changed, stars moved by id). | `experiments/2026-11-10-P-0394` | 1 min, 6 calls, 0 denied |
