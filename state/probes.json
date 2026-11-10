@@ -9945,9 +9945,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-10",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T23:34:44+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -9955,7 +9955,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "precision on a hand-labelled sample of about 25 flags between 70 and 95 pct",
+    "at": "2026-11-10T23:34:51+0000"
+   }
   },
   {
    "id": "P-0399",
