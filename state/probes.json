@@ -1,5 +1,5 @@
 {
- "next_id": 393,
+ "next_id": 394,
  "items": [
   {
    "id": "P-0001",
@@ -9799,6 +9799,32 @@
     "number": "week from 3 Nov METAR minus city point below -0.3 C, week from 13 Oct above 0",
     "at": "2026-11-10T12:40:08+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0393",
+   "title": "Sentinel-2 daily scene counts: Earth Search numberMatched for sentinel-2a, 2b and 2c each UTC day 27 Oct to 9 Nov (one POST each, limit 1); is 2B's 3 Nov count a real drop below its own 14-day median, or were P-0385's three misses only those cities?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-10",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-10T12:41:52+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "2B on 3 Nov within 20 pct of its own 14-day median, no outage",
+    "at": "2026-11-10T12:42:01+0000"
    }
   }
  ]
