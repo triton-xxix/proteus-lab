@@ -1,19 +1,19 @@
 {
  "summary": {
-  "n": 150,
+  "n": 151,
   "waiting": 0,
-  "hits": 138,
-  "hit_rate": 0.92,
-  "mean_p": 0.661,
-  "brier": 0.144,
-  "brier_at_hit_rate": 0.074,
-  "called_works": 139,
-  "called_works_hits": 132,
+  "hits": 139,
+  "hit_rate": 0.921,
+  "mean_p": 0.663,
+  "brier": 0.143,
+  "brier_at_hit_rate": 0.073,
+  "called_works": 140,
+  "called_works_hits": 133,
   "called_other": 11,
   "called_other_hits": 6,
-  "verdict_works": 137,
+  "verdict_works": 138,
   "first": "2026-10-12",
-  "last": "2026-11-08"
+  "last": "2026-11-09"
  },
  "bins": [
   {
@@ -42,9 +42,9 @@
   },
   {
    "label": "80% and up",
-   "n": 19,
-   "mean_p": 0.826,
-   "hit_rate": 0.947
+   "n": 20,
+   "mean_p": 0.828,
+   "hit_rate": 0.95
   }
  ],
  "rows": [
@@ -1547,6 +1547,16 @@
    "hit": 0,
    "number": "fastest fee clears every block's minimum seen in 20 minutes; overpays the block median by about 1 sat/vB",
    "at": "2026-11-08T23:41:21+0000"
+  },
+  {
+   "id": "P-0377",
+   "title": "mempool.space fastest fee, longer watch: re-run P-0376's fees.py for at least 30 minutes; does the recommendation clear each block and by ho",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "fastest fee clears the minimum of every block seen, mean overpay against block median about +1 sat/vB",
+   "at": "2026-11-09T12:32:00+0000"
   }
  ]
 }

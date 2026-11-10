@@ -1,44 +1,44 @@
 {
  "summary": {
-  "games": 71,
-  "wins": 53,
+  "games": 73,
+  "wins": 54,
   "draws": 17,
-  "losses": 1,
-  "score": 0.866,
+  "losses": 2,
+  "score": 0.856,
   "rating_start": 3000,
-  "rating_now": 3018,
+  "rating_now": 2997,
   "rating_peak": 3129,
   "strongest_beaten": 2876,
   "strongest_faced": 3019,
   "median_opp": 2200,
   "first": "2026-10-03",
-  "last": "2026-11-06",
-  "challenges": 1249,
-  "accepted": 60,
-  "declined": 732,
-  "no_answer": 119,
+  "last": "2026-11-10",
+  "challenges": 1266,
+  "accepted": 62,
+  "declined": 740,
+  "no_answer": 126,
   "refused_400": 324,
   "refused_429": 14,
-  "accept_rate": 0.048,
-  "bots_asked": 125,
-  "bots_played": 56,
+  "accept_rate": 0.049,
+  "bots_asked": 127,
+  "bots_played": 58,
   "bots_never": 75,
   "median_rating_accepted_bots": 1887,
   "median_rating_refusing_bots": 1866,
   "challenge_first": "2026-10-09",
-  "challenge_last": "2026-11-09",
+  "challenge_last": "2026-11-10",
   "declined_reasons": [
    [
     "nobot",
-    403
+    404
    ],
    [
     "generic",
-    213
+    218
    ],
    [
     "casual",
-    104
+    106
    ],
    [
     "tooslow",
@@ -53,8 +53,8 @@
  "bands": [
   {
    "label": "under 1500",
-   "n": 16,
-   "wins": 16,
+   "n": 17,
+   "wins": 17,
    "draws": 0,
    "losses": 0,
    "score": 1.0
@@ -77,11 +77,11 @@
   },
   {
    "label": "2500 and up",
-   "n": 28,
+   "n": 29,
    "wins": 11,
    "draws": 16,
-   "losses": 1,
-   "score": 0.679
+   "losses": 2,
+   "score": 0.655
   }
  ],
  "days": [
@@ -239,25 +239,30 @@
    "date": "2026-11-09",
    "asked": 24,
    "accepted": 0
+  },
+  {
+   "date": "2026-11-10",
+   "asked": 17,
+   "accepted": 2
   }
  ],
  "decliners": [
   {
    "bot": "resolutebot",
    "rating": 2945,
-   "asked": 61,
+   "asked": 62,
    "how": "declined"
   },
   {
    "bot": "leelarogue",
-   "rating": 2304,
-   "asked": 50,
+   "rating": 2259,
+   "asked": 51,
    "how": "declined"
   },
   {
    "bot": "patriciabot",
-   "rating": 2752,
-   "asked": 50,
+   "rating": 2756,
+   "asked": 51,
    "how": "declined"
   },
   {
@@ -267,14 +272,14 @@
    "how": "refused 400"
   },
   {
-   "bot": "leelaalien",
-   "rating": 2445,
-   "asked": 40,
+   "bot": "stockfishlowdepth",
+   "rating": 1990,
+   "asked": 41,
    "how": "declined"
   },
   {
-   "bot": "stockfishlowdepth",
-   "rating": 1990,
+   "bot": "leelaalien",
+   "rating": 2445,
    "asked": 40,
    "how": "declined"
   },
@@ -291,14 +296,14 @@
    "how": "declined"
   },
   {
-   "bot": "elmichess",
-   "rating": 2073,
-   "asked": 34,
+   "bot": "darkonweakbot",
+   "rating": 1754,
+   "asked": 35,
    "how": "declined"
   },
   {
-   "bot": "darkonweakbot",
-   "rating": 1754,
+   "bot": "elmichess",
+   "rating": 2073,
    "asked": 34,
    "how": "declined"
   },
@@ -310,8 +315,8 @@
   },
   {
    "bot": "littlepatricia",
-   "rating": 1883,
-   "asked": 32,
+   "rating": 1885,
+   "asked": 33,
    "how": "declined"
   },
   {
@@ -322,8 +327,8 @@
   },
   {
    "bot": "mochi_bot",
-   "rating": 1682,
-   "asked": 29,
+   "rating": 1705,
+   "asked": 30,
    "how": "declined"
   },
   {
@@ -1469,6 +1474,38 @@
    "url": "https://lichess.org/SBOhb8we",
    "think": "1.0",
    "refusals": 2
+  },
+  {
+   "date": "2026-11-10",
+   "at": "2026-11-10T08:32:26Z",
+   "id": "STzIvdru",
+   "opponent": "pzchessbot",
+   "opp": 2954,
+   "before": 3018,
+   "after": 2997,
+   "colour": "black",
+   "result": "loss",
+   "status": "resigned at time cap",
+   "moves": 37,
+   "url": "https://lichess.org/STzIvdru",
+   "think": "1.0",
+   "refusals": 2
+  },
+  {
+   "date": "2026-11-10",
+   "at": "2026-11-10T08:35:59Z",
+   "id": "RW9j1G4U",
+   "opponent": "trainer-bot",
+   "opp": 1317,
+   "before": 2997,
+   "after": 2997,
+   "colour": "white",
+   "result": "win",
+   "status": "mate",
+   "moves": 20,
+   "url": "https://lichess.org/RW9j1G4U",
+   "think": "1.0",
+   "refusals": 13
   }
  ]
 }
