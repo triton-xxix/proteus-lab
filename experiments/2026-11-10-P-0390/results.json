@@ -1,0 +1,122 @@
+{
+ "reads": 9,
+ "single_above": 5,
+ "equal": 4,
+ "single_below": 0,
+ "tx_differ": 5,
+ "median_ratio": 1.56,
+ "max_ratio": 116.805,
+ "median_gap_s": 17.2,
+ "max_gap_s": 36.8,
+ "rate_limit_waits": 4,
+ "rows": [
+  {
+   "round": 0,
+   "pool": "9HHMCH7P1kd5N8qWeVYbJor1Gbro1EFHRJQD3bqGTuFs",
+   "name": "TOAD / SOL",
+   "created": "2026-11-10T12:34:18Z",
+   "gap_s": 2.5,
+   "page_vol_h1": 8.2457308156,
+   "single_vol_h1": 175.0249528603,
+   "page_tx_h1": 1,
+   "single_tx_h1": 17,
+   "ratio": 21.226
+  },
+  {
+   "round": 0,
+   "pool": "FcL18CVqu3P7EwiCVeukSNmUntX5TZZtmgAoRS4jqfbm",
+   "name": "SPSC / SOL",
+   "created": "2026-11-10T12:34:18Z",
+   "gap_s": 5.1,
+   "page_vol_h1": 0.0008467279556,
+   "single_vol_h1": 0.0008467279556,
+   "page_tx_h1": 1,
+   "single_tx_h1": 1,
+   "ratio": 1.0
+  },
+  {
+   "round": 0,
+   "pool": "5UZQNvXxQ9b1vxW1hCDzfGFMKGHvEWSQfF7tuSqj3prY",
+   "name": "UODF / SOL",
+   "created": "2026-11-10T12:34:13Z",
+   "gap_s": 7.7,
+   "page_vol_h1": 1410.899565638,
+   "single_vol_h1": 1410.899565638,
+   "page_tx_h1": 9,
+   "single_tx_h1": 9,
+   "ratio": 1.0
+  },
+  {
+   "round": 1,
+   "pool": "9HHMCH7P1kd5N8qWeVYbJor1Gbro1EFHRJQD3bqGTuFs",
+   "name": "TOAD / SOL",
+   "created": "2026-11-10T12:34:18Z",
+   "gap_s": 2.1,
+   "page_vol_h1": 8.2457308156,
+   "single_vol_h1": 175.0249528603,
+   "page_tx_h1": 1,
+   "single_tx_h1": 17,
+   "ratio": 21.226
+  },
+  {
+   "round": 1,
+   "pool": "FcL18CVqu3P7EwiCVeukSNmUntX5TZZtmgAoRS4jqfbm",
+   "name": "SPSC / SOL",
+   "created": "2026-11-10T12:34:18Z",
+   "gap_s": 19.3,
+   "page_vol_h1": 0.0008467279556,
+   "single_vol_h1": 0.0008467279556,
+   "page_tx_h1": 1,
+   "single_tx_h1": 1,
+   "ratio": 1.0
+  },
+  {
+   "round": 1,
+   "pool": "5UZQNvXxQ9b1vxW1hCDzfGFMKGHvEWSQfF7tuSqj3prY",
+   "name": "UODF / SOL",
+   "created": "2026-11-10T12:34:13Z",
+   "gap_s": 36.6,
+   "page_vol_h1": 1410.899565638,
+   "single_vol_h1": 1410.899565638,
+   "page_tx_h1": 9,
+   "single_tx_h1": 9,
+   "ratio": 1.0
+  },
+  {
+   "round": 2,
+   "pool": "JEApmpWXUG4QgHTmSAf6kHQVU12oy9qn6SmQo2c4XCTN",
+   "name": "Suits / SOL",
+   "created": "2026-11-10T12:35:01Z",
+   "gap_s": 17.2,
+   "page_vol_h1": 6.6794378426,
+   "single_vol_h1": 515.4700620109,
+   "page_tx_h1": 1,
+   "single_tx_h1": 71,
+   "ratio": 77.173
+  },
+  {
+   "round": 2,
+   "pool": "Az3r6pNkmHfDx3B9Xi68bEoK7vanbL7PQwXDbqq79LMS",
+   "name": "TITTIES / SOL",
+   "created": "2026-11-10T12:34:55Z",
+   "gap_s": 34.5,
+   "page_vol_h1": 5.0096102343,
+   "single_vol_h1": 585.1451514668,
+   "page_tx_h1": 1,
+   "single_tx_h1": 112,
+   "ratio": 116.805
+  },
+  {
+   "round": 2,
+   "pool": "A94o4pL2gCNYxeFLpcvzgbU3ToyWVZJjBNN7Qsscb4Ls",
+   "name": "CHAROC / SOL",
+   "created": "2026-11-10T12:34:53Z",
+   "gap_s": 36.8,
+   "page_vol_h1": 23.117805686,
+   "single_vol_h1": 36.0529086405,
+   "page_tx_h1": 2,
+   "single_tx_h1": 6,
+   "ratio": 1.56
+  }
+ ]
+}

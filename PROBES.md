@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 312 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 313 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,12 @@ Verdicts so far: 312 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
-| P-0390 | GeckoTerminal two-second gap: on 3 new Solana pools, page one-hour volume then /pools/ADDRESS two seconds later, three rounds; does the single endpoint still read above the page (P-0384 median 3.76x at 23 to 154 s), which would mean cache not trading? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (374)
+## Verdicts (375)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-10 | P-0390 | GeckoTerminal two-second gap: on 3 new Solana pools, page one-hour volume then /pools/ADDRESS two seconds later, three rounds; does the single endpoint still read above the page (P-0384 median 3.76x at 23 to 154 s), which would mean cache not trading? | **works** | Measured single above page on 5 of 9 reads, equal 4, never below, median ratio 1.56 (shot: 6 of 9, about 2). At a 2.5 s gap TOAD read 1 trade on the page v 17 on the single endpoint, and the page repeated the same 1-trade row 25 s later for all three pools: the page row is frozen at first trade, so it is cache, not trading. Caveat: 9 reads, 4 rate-limit waits pushed gaps to 2 to 37 s, single may be cached too. Next: close (age gate keeps these pools out of the Grinder). | `experiments/2026-11-10-P-0390` | 2 min, 6 calls, 0 denied |
 | 2026-11-10 | P-0389 | Grinder insider-zero shadow filter: on the next 20 G and R01 entries after 20 Oct, kept (graph_insiders over 0 (DUE.md D-016): probe P-0185, method experiments/2026-10-20-P-0184/age.py | **blocked** | Measured 0 G or R01 entries after 20 Oct at the D-016 backstop (shot: 0, blocked at 0.50, hit; shot after looking at the morning kill-check line, R01 still 29 closed). Last R01 entries R-0027 to R-0029 20 Oct 22:38Z, G last G-0092 16 Oct; insider snapshots land nightly to 9 Nov, so input exists, trades do not. n 0 of 20, D-016 unscorable; forward.py reruns unchanged when entries return. | `experiments/2026-11-10-P-0389` | 1 min, 14 calls, 0 denied |
 | 2026-11-10 | P-0388 | Heathrow gap split: of the 0.85 C between SYNOP TX and METAR highs, how much is half-hourly sampling and how much whole-degree rounding, from 10-minute reports? | **not-worth-it** | A repeat: P-0352 to P-0354 split this Heathrow gap on 7 Nov, and I overrode the repeat guard without reading those lines. My script found 0 usable days because the cache has no :50 reports, which P-0353 had noted. No new measurement; the P-0383 write-up is corrected the same night. | `experiments/2026-11-09-P-0388` | 0 min, 6 calls, 0 denied |
 | 2026-11-09 | P-0387 | ICON point against its own ensemble band: how many days of the captured Munich bands does the deterministic high sit outside the 10 to 90 range, and which is nearer the METAR high? | **works** | On 13 Munich band days the ICON point sat outside its own ICON-EPS 10 to 90 band on 3, about what a member would do, and against the METAR high point MAE 0.82 and band median 0.80 are a coin toss. The METAR high fell inside the band on only 6 of 12, and mean METAR minus point was -0.49 here against +0.03 in P-0335, 12 days against 24, so worth a same-days re-check; no call changed. | `experiments/2026-11-09-P-0387` | 0 min, 5 calls, 0 denied |
