@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 314 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Verdicts so far: 314 works, 7 broken, 38 blocked, 17 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
+| P-0392 | Munich METAR sign by week: city-point ICON lead-1 high (Europe/Berlin) against the EDDM METAR high, every day 13 Oct to 9 Nov, split into P-0335's days, P-0387's band days and by week; is -0.49 v +0.03 the day set or a drift colder into November? | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (376)
 
