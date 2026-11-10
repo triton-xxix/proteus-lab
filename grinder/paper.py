@@ -270,6 +270,15 @@ def apply_rules():
     recs = paths.write_paths(ledger, t.timestamp())
     print("paths", len(recs), "rows,", sum(1 for x in recs if x.get("status") == "no-candles"), "without candles")
     if opened == 0:
+        # P-0318 (3 Nov 2026) and P-0402 (10 Nov): the gate line below was read for three weeks as the
+        # reason for no entries while the real one was money. Say the money first when it binds.
+        book = [r for r in ledger if r.get("rule_version") == RULES["version"]]
+        still = [r for r in book if not r.get("exit_at")]
+        bank = RULES["bankroll_gbp"] + sum(fnum(r["pnl_gbp"]) or 0 for r in book if r.get("pnl_gbp")) - RULES["size_gbp"] * len(still)
+        if bank < RULES["size_gbp"]:
+            snap_now = latest_snapshot() or []
+            print("binding constraint: bankroll GBP %.2f is below the GBP %.0f stake, so %s cannot enter; %d of %d rows passed every gate"
+                  % (bank, RULES["size_gbp"], RULES["version"], sum(1 for s in snap_now if passes(s)), len(snap_now)))
         print("binding constraints:", binding(latest_snapshot()))
 
 
