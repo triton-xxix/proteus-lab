@@ -1,0 +1,121 @@
+{
+ "distinct_paths": 136,
+ "exist": 116,
+ "placeholders": 6,
+ "root_name_found_in_a_subfolder": [
+  {
+   "path": "FINGERPRINTS.md",
+   "in": [
+    "project_sixteen_nights_record.md"
+   ],
+   "found_at": [
+    "sites/FINGERPRINTS.md"
+   ]
+  },
+  {
+   "path": "HARVEST.md",
+   "in": [
+    "project_harvester.md"
+   ],
+   "found_at": [
+    "field-notes/HARVEST.md"
+   ]
+  },
+  {
+   "path": "PLAN.md",
+   "in": [
+    "MEMORY.md"
+   ],
+   "found_at": [
+    "experiments/2026-10-20-own-coin/PLAN.md"
+   ]
+  },
+  {
+   "path": "RESEARCH.md",
+   "in": [
+    "project_prelisting_tracker.md"
+   ],
+   "found_at": [
+    "experiments/2026-10-09-prelisting/RESEARCH.md"
+   ]
+  },
+  {
+   "path": "RULES.md",
+   "in": [
+    "project_prelisting_tracker.md"
+   ],
+   "found_at": [
+    "pitch/RULES.md",
+    "grinder/RULES.md",
+    "exchange/RULES.md"
+   ]
+  },
+  {
+   "path": "SKILL.md",
+   "in": [
+    "project_live_task_prompts_drift.md",
+    "project_outbound_email_skill.md"
+   ],
+   "found_at": [
+    "scheduled-tasks/proteus-inspector/SKILL.md",
+    "scheduled-tasks/proteus-trials/SKILL.md",
+    "scheduled-tasks/proteus-workshop/SKILL.md"
+   ]
+  },
+  {
+   "path": "SOURCES.md",
+   "in": [
+    "feedback_not_built_around_luke.md"
+   ],
+   "found_at": [
+    "pitch/SOURCES.md",
+    "field-notes/SOURCES.md",
+    "grinder/research/SOURCES.md"
+   ]
+  }
+ ],
+ "missing": [
+  {
+   "path": "DISCORD.md",
+   "in": [
+    "project_discord_channel.md"
+   ]
+  },
+  {
+   "path": "SKOOL-TALLY.md",
+   "in": [
+    "MEMORY.md"
+   ]
+  },
+  {
+   "path": "bin/secrets.get",
+   "in": [
+    "project_op_hangs_use_sdk.md"
+   ]
+  },
+  {
+   "path": "bin/site-verify.sh",
+   "in": [
+    "project_nolan_site_and_dashboard.md"
+   ]
+  },
+  {
+   "path": "state/agents/DATE/harvest.json",
+   "in": [
+    "project_harvester.md"
+   ]
+  },
+  {
+   "path": "state/harvest/DATE/child-prompt.md",
+   "in": [
+    "project_harvester.md"
+   ]
+  },
+  {
+   "path": "state/probe-loop/DATE-HHMM.json",
+   "in": [
+    "project_probe_loop.md"
+   ]
+  }
+ ]
+}
