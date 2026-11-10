@@ -1,0 +1,90 @@
+{
+ "EDDM": {
+  "model_point": [
+   48.346897,
+   11.770478
+  ],
+  "model_elevation_m": 453.0,
+  "metar_days": 61,
+  "lead0": {
+   "mean": 0.22,
+   "sd": 0.48,
+   "se": 0.06,
+   "n": 61,
+   "outside_2se": true
+  },
+  "lead1": {
+   "mean": 0.41,
+   "sd": 1.4,
+   "se": 0.18,
+   "n": 61,
+   "outside_2se": true
+  }
+ },
+ "EHAM": {
+  "model_point": [
+   52.312347,
+   4.7581306
+  ],
+  "model_elevation_m": 6.0,
+  "metar_days": 61,
+  "lead0": {
+   "mean": 0.12,
+   "sd": 0.46,
+   "se": 0.06,
+   "n": 61,
+   "outside_2se": true
+  },
+  "lead1": {
+   "mean": 0.23,
+   "sd": 0.67,
+   "se": 0.09,
+   "n": 61,
+   "outside_2se": true
+  }
+ },
+ "LFPG": {
+  "model_point": [
+   49.001747,
+   2.537855
+  ],
+  "model_elevation_m": 107.0,
+  "metar_days": 61,
+  "lead0": {
+   "mean": 0.7,
+   "sd": 0.54,
+   "se": 0.07,
+   "n": 61,
+   "outside_2se": true
+  },
+  "lead1": {
+   "mean": 0.88,
+   "sd": 1.15,
+   "se": 0.15,
+   "n": 61,
+   "outside_2se": true
+  }
+ },
+ "LEMD": {
+  "model_point": [
+   40.5,
+   -3.5625
+  ],
+  "model_elevation_m": 593.0,
+  "metar_days": 61,
+  "lead0": {
+   "mean": 0.53,
+   "sd": 0.63,
+   "se": 0.08,
+   "n": 61,
+   "outside_2se": true
+  },
+  "lead1": {
+   "mean": 1.0,
+   "sd": 1.28,
+   "se": 0.16,
+   "n": 61,
+   "outside_2se": true
+  }
+ }
+}
