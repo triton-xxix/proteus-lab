@@ -69,6 +69,32 @@ def main():
     decliners = [{"bot": k, "rating": v["rating"], "asked": v["asked"], "how": v["verdicts"].most_common(1)[0][0]}
                  for k, v in never[:15]]
     declined_reasons = Counter((c["detail"] or "").split(":")[0].strip()[:40] for c in chall if c["verdict"] == "declined")
+    # who accepts at what strength (Workshop, 10 Nov 2026): every challenge by the opponent's rating
+    # when asked, and by its gap to mine, split by verdict. "Sent" excludes Lichess's own 400/429
+    # refusals, which never reached the bot.
+    VERD = ["accepted", "declined", "no answer", "refused 400", "refused 429"]
+    def outcome_rows(edges, key):
+        out = []
+        for lo, hi, label in edges:
+            cs = [c for c in chall if c["opp_rating"] and lo <= key(c) < hi]
+            vc = Counter(c["verdict"] for c in cs)
+            sent = sum(vc[v] for v in ("accepted", "declined", "no answer"))
+            out.append({"label": label, "asked": len(cs), "bots": len({c["opponent"] for c in cs}),
+                        **{v: vc.get(v, 0) for v in VERD},
+                        "other": len(cs) - sum(vc.get(v, 0) for v in VERD),
+                        "sent": sent, "accept_of_sent": round(vc["accepted"] / sent, 4) if sent else None})
+        return out
+    STR = [(0, 2000, "under 2000"), (2000, 2400, "2000 to 2399"), (2400, 2700, "2400 to 2699"),
+           (2700, 2900, "2700 to 2899"), (2900, 3000, "2900 to 2999"), (3000, 9999, "3000 and up")]
+    GAP = [(-9999, -500, "500+ below me"), (-500, -200, "200 to 499 below"), (-200, -50, "50 to 199 below"),
+           (-50, 9999, "within 50, or above")]
+    by_strength = outcome_rows(STR, lambda c: int(c["opp_rating"]))
+    by_gap = outcome_rows(GAP, lambda c: int(c["opp_rating"]) - int(c["my_rating"] or c["opp_rating"]))
+    rated = sum(1 for c in chall if c["opp_rating"])
+    if sum(r["asked"] for r in by_strength) != rated or sum(r["asked"] for r in by_gap) != rated:
+        sys.exit("ladder-page: strength or gap bands do not cover every rated challenge")
+    if sum(r["accepted"] for r in by_strength) != sum(1 for c in chall if c["opp_rating"] and c["verdict"] == "accepted"):
+        sys.exit("ladder-page: strength bands lose an accepted challenge")
     bots_asked = len(by_bot)
     bots_played = len({r["opponent"] for r in rows})
     accepted_bot_ratings = [v["rating"] for v in by_bot.values() if v["accepted"]]
@@ -101,7 +127,8 @@ def main():
         sys.exit("ladder-page: disagrees with lichess.py status\n  mine: %s\n  lichess.py: %s" % (want, out.strip()))
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
-        json.dump({"summary": summary, "bands": bands, "days": days, "decliners": decliners, "games": rows}, f, indent=1)
+        json.dump({"summary": summary, "bands": bands, "days": days, "decliners": decliners,
+                   "by_strength": by_strength, "by_gap": by_gap, "challenges_rated": rated, "games": rows}, f, indent=1)
     print("ladder-page: %d games (%dW %dD %dL), rating %d, %d challenges, %d accepted (%.1f%%), %d bots asked, %d never said yes; agrees with lichess.py; wrote %s"
           % (n, wins, draws, losses, summary["rating_now"], len(chall), summary["accepted"], 100 * summary["accept_rate"],
              bots_asked, len(never), OUT))

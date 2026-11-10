@@ -166,6 +166,9 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   a snapshot through P-0338. Next: `probe.py verdict` could take a number score when the verdict lands, so new
   shots are scored by the run that measured them and the page stops being a snapshot; change it with a
   DECISIONS line, since the number score then becomes a self-report.
+  **10 Nov (Workshop):** the ladder's challenge-outcome slice shipped (by strength and by gap, rebuilt with
+  the page). Next: split Lichess's `refused 400` by its detail text (daily cap v closed to bots), so
+  the chooser in lichess.py can skip closed bots and retry capped ones the next day.
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's

@@ -28,6 +28,20 @@ const S = d.summary;
 if (S.wins + S.draws + S.losses !== S.games) errs.push('result split does not sum to games');
 if (d.games.length !== S.games) errs.push('games array length differs from summary');
 if (S.accepted + S.declined + S.no_answer + S.refused_400 + S.refused_429 !== S.challenges) errs.push('challenge verdicts do not sum');
+// the strength section's prose makes claims in words; fail when the data stops supporting them (10 Nov 2026)
+for (const [name, B] of [['by_strength', d.by_strength], ['by_gap', d.by_gap]]) {
+  const tot = k => B.reduce((a, r) => a + r[k], 0);
+  if (tot('asked') !== d.challenges_rated) errs.push(`${name} asked ${tot('asked')} != ${d.challenges_rated}`);
+  B.forEach(r => { if (r.accepted + r.declined + r['no answer'] + r['refused 400'] + r['refused 429'] + r.other !== r.asked) errs.push(`${name} ${r.label} does not sum`); });
+}
+{
+  const SB = d.by_strength, top = SB[SB.length - 1], rate = (r, k) => r[k] / r.asked;
+  if (!SB.every(r => r === top || (r.accept_of_sent ?? 0) <= top.accept_of_sent)) errs.push('prose: 3000+ is no longer the likeliest yes');
+  if (!SB.every(r => r === top || rate(r, 'declined') >= rate(top, 'declined'))) errs.push('prose: 3000+ no longer declines least');
+  if (top['refused 400'] + top['refused 429'] + top['no answer'] <= top.declined) errs.push('prose: 3000+ non-games are no longer mostly refusals and silence');
+  const G = d.by_gap, near = G[G.length - 1], far = G[0];
+  if (!(near.accept_of_sent > far.accept_of_sent)) errs.push('prose: near-rated bots no longer likelier to say yes');
+}
 
 const els = {};
 const el = id => els[id] || (els[id] = {id, innerHTML: '', textContent: '', clientWidth: 0, style: {}, attrs: {},
@@ -42,9 +56,9 @@ for (const w of [860, 375]) {
   for (const k in els) delete els[k];
   try { vm.runInNewContext(script, ctx); } catch (e) { errs.push(`script threw at ${w}px: ${e.message}`); }
   await new Promise(r => setTimeout(r, 50));
-  for (const id of ['stats', 'ladder', 'bands', 'asks', 'no', 'meaning', 'games'])
+  for (const id of ['stats', 'ladder', 'bands', 'asks', 'no', 'meaning', 'games', 'str', 'gap', 'outcomes'])
     if (!el(id).innerHTML || /undefined|NaN/.test(el(id).innerHTML)) errs.push(`#${id} empty or undefined/NaN at ${w}px`);
-  for (const id of ['h1', 'kicker', 'laddernote', 'bandnote', 'asknote', 'nonote'])
+  for (const id of ['h1', 'kicker', 'laddernote', 'bandnote', 'asknote', 'nonote', 'strnote', 'gapnote', 'meaningh'])
     if (!el(id).textContent || /undefined|NaN/.test(el(id).textContent)) errs.push(`#${id} bad at ${w}px`);
   if (!el('h1').textContent.includes(`${S.games} games`) || !el('h1').textContent.includes(`${S.losses} lost`)) errs.push('headline numbers missing');
   const rows = (el('games').innerHTML.match(/<tr /g) || []).length;
@@ -54,7 +68,7 @@ for (const w of [860, 375]) {
   const vb = el('ladder').attrs.viewBox || '';
   if (+vb.split(' ')[2] < 300) errs.push(`ladder viewBox ${vb} at ${w}px`);
   if (!el('meaning').innerHTML.includes(String(S.strongest_beaten))) errs.push('strongest beaten missing from the meaning paragraph');
-  if (w === 860) { console.log('h1:', el('h1').textContent); console.log('bandnote:', el('bandnote').textContent); }
+  if (w === 860) { console.log('h1:', el('h1').textContent); console.log('bandnote:', el('bandnote').textContent); console.log('strnote:', el('strnote').textContent); console.log('gapnote:', el('gapnote').textContent); }
 }
   errs.forEach(e => console.log('FAIL', e));
   console.log('check ladder', errs.length ? `${errs.length} problems` : 'OK', '| bytes', html.length, '| games', S.games, '| challenges', S.challenges);

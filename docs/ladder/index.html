@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Ladder</title>
-<meta name="description" content="Every rated game my Lichess bot has played and every challenge it sent, drawn from the committed logs. Who plays, who says no, and what a 3035 means when nobody above you will answer.">
+<meta name="description" content="Every rated game my Lichess bot has played and every challenge it sent, drawn from the committed logs. Who plays, who says no at what strength, and what a provisional rating means when the pool decides it.">
 <style>
 :root{
   --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
@@ -82,7 +82,20 @@ code{font-size:13px}
 <p class="note" id="nonote"></p>
 <div class="chart"><svg id="no" role="img" aria-label="The bots asked most often that never accepted"></svg></div>
 
-<h2>What the 3035 means</h2>
+<h2>Who says yes, at what strength</h2>
+<p class="note" id="strnote"></p>
+<div class="chart"><svg id="str" role="img" aria-label="Every challenge by the opponent's rating when asked, split by what happened to it"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>accepted</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>declined</span>
+ <span><i class="sw" style="background:var(--ghost)"></i>no answer</span>
+ <span><i class="sw" style="background:var(--rule)"></i>refused by Lichess, never reached the bot</span>
+</div></div>
+<p class="note" id="gapnote"></p>
+<div class="chart"><svg id="gap" role="img" aria-label="Every challenge by the opponent's rating minus mine, split by what happened to it"></svg></div>
+<div class="tw"><table id="outcomes"><thead><tr><th>Their rating</th><th class="n">Asked</th><th class="n">Bots</th><th class="n">Refused by Lichess</th><th class="n">Sent</th><th class="n">Accepted</th><th class="n">Declined</th><th class="n">No answer</th><th class="n">Yes, of sent</th></tr></thead><tbody></tbody></table></div>
+
+<h2 id="meaningh">What the rating means</h2>
 <p id="meaning"></p>
 
 <h2>Every game</h2>
@@ -107,11 +120,22 @@ fetch('data.json').then(r=>r.json()).then(d=>{
     +stat(S.strongest_beaten,'strongest opponent beaten','hot')
     +stat(pc(S.accept_rate),`of ${fmt(S.challenges)} challenges accepted since ${S.challenge_first}`);
   $('#laddernote').textContent=`One dot per game, left to right in the order played, at the opponent's rating. The line is my rating after each game. It jumped to ${S.rating_peak} on game one (a ${G[0].opp} beaten) and has drifted down since: against the field that actually accepts, median ${fmt(S.median_opp)}, a win moves it by almost nothing and a draw costs.`;
-  $('#bandnote').textContent=`Below 2500 I have not dropped a half point: ${uW} of ${uN} won. At 2500 and up it is ${top.wins} won, ${top.draws} drawn, ${top.losses} lost, a score of ${pc(top.score)}. The draws are all up there, and so is the only loss.`;
+  const uD=under.reduce((a,b)=>a+b.draws,0), uL=under.reduce((a,b)=>a+b.losses,0);
+  const pl=(n,w)=>`${n} ${w}${n===1?'':'s'}`;
+  $('#bandnote').textContent=`Below 2500: ${uW} of ${uN} won, ${pl(uD,'draw')}, ${pl(uL,'loss').replace('losss','losses')}. At 2500 and up it is ${top.wins} won, ${top.draws} drawn, ${top.losses} lost, a score of ${pc(top.score)}. ${top.draws} of the ${S.draws} draws are up there, and ${top.losses} of the ${S.losses} ${S.losses===1?'loss':'losses'}.`;
+  $('#meaningh').textContent=`What the ${S.rating_now} means`;
+  // who says yes, by strength and by gap
+  const SB=d.by_strength, GB=d.by_gap, sum=(a,k)=>a.reduce((x,r)=>x+r[k],0);
+  const lo=SB[0], hiB=SB[SB.length-1], near=GB[GB.length-1], far=GB[0];
+  const ofs=r=>`${r.accepted} of ${r.sent}`;
+  $('#strnote').textContent=`All ${fmt(d.challenges_rated)} challenges, grouped by the opponent's rating when I asked. Of the ones Lichess let through, bots under 2000 said yes ${ofs(lo)} times (${pc(lo.accept_of_sent)}); bots at 3000 and up ${ofs(hiB)} (${pc(hiB.accept_of_sent)}). The strongest bots are not the ones saying no: they decline least (${hiB.declined} of ${hiB.asked} asks), and when they do not play it is mostly Lichess refusing before the ask reached them (${hiB['refused 400']} of ${hiB.asked}: daily game caps, rate limits, a bot closed to challenges) or no answer (${hiB['no answer']}). Below 3000, declining is the normal answer: ${(()=>{const r=SB.slice(0,-1).map(b=>b.declined/b.asked);return pc(Math.min(...r))+' to '+pc(Math.max(...r));})()} of asks in every band. The few named bots above that never accept are real, but as a group the top of the pool is busy, not unwilling.`;
+  $('#gapnote').textContent=`The same asks by their rating minus mine. Within 50 points of me, or above, it is ${ofs(near)} sent (${pc(near.accept_of_sent)}); 500 or more below, ${ofs(far)} (${pc(far.accept_of_sent)}), from ${far.bots} different bots. A near-rated bot is about ${Math.round(near.accept_of_sent/far.accept_of_sent*10)/10} times as likely to say yes, and there are only ${near.bots} of them. Bands overlap in bots, since ratings move between asks.`;
+  $('#outcomes tbody').innerHTML=SB.map(r=>`<tr><td>${r.label}</td><td class="n">${r.asked}</td><td class="n">${r.bots}</td><td class="n">${r['refused 400']+r['refused 429']}</td><td class="n">${r.sent}</td><td class="n">${r.accepted}</td><td class="n">${r.declined}</td><td class="n">${r['no answer']}</td><td class="n">${r.accept_of_sent==null?'none sent':pc(r.accept_of_sent)}</td></tr>`).join('')
+    +`<tr><td><b>all</b></td><td class="n"><b>${sum(SB,'asked')}</b></td><td class="n"></td><td class="n"><b>${sum(SB,'refused 400')+sum(SB,'refused 429')}</b></td><td class="n"><b>${sum(SB,'sent')}</b></td><td class="n"><b>${sum(SB,'accepted')}</b></td><td class="n"><b>${sum(SB,'declined')}</b></td><td class="n"><b>${sum(SB,'no answer')}</b></td><td class="n"><b>${pc(sum(SB,'accepted')/sum(SB,'sent'))}</b></td></tr>`;
   const lost=S.challenges-S.accepted;
   $('#asknote').textContent=`${fmt(S.challenges)} challenges sent over ${d.days.length} days: ${S.accepted} accepted, ${S.declined} declined (${S.declined_reasons[0][1]} as "${S.declined_reasons[0][0]}", bots that will not play bots), ${S.refused_400} refused by Lichess before they were sent (daily caps, rate limits), ${S.no_answer} never answered. ${S.bots_asked} different bots asked, ${S.bots_played} played.`;
   $('#nonote').textContent=`${S.bots_never} of the ${S.bots_asked} bots asked have never accepted. These are the ones asked most, with their rating. The same names decline every morning, and they are the ones who would test the number.`;
-  $('#meaning').innerHTML=`A Lichess rating is earned from whoever will play you. Mine is ${S.rating_now} because Stockfish does not lose to 2000-rated bots, not because it has beaten anything rated ${S.rating_now}; the strongest opponent beaten is ${S.strongest_beaten}, the strongest faced ${S.strongest_faced}. The bots that could pull the number down (${d.decliners.slice(0,3).map(x=>esc(x.bot)+' at '+x.rating).join(', ')}) decline bot challenges outright. The median rating of a bot that said yes is ${fmt(S.median_rating_accepted_bots)}; of one that never did, ${fmt(S.median_rating_refusing_bots)}. So the number is a measure of the pool, not the engine, and it stays provisional. The honest claim is narrower: ${S.wins} wins, ${S.draws} draws and ${S.losses} loss in ${S.games} games, every one linked below.`;
+  $('#meaning').innerHTML=`A Lichess rating is earned from whoever will play you. Mine is ${S.rating_now} because Stockfish does not lose to 2000-rated bots, not because it has beaten anything rated ${S.rating_now}; the strongest opponent beaten is ${S.strongest_beaten}, the strongest faced ${S.strongest_faced}. The bots that could pull the number down (${d.decliners.slice(0,3).map(x=>esc(x.bot)+' at '+x.rating).join(', ')}) decline bot challenges outright. The median rating of a bot that said yes is ${fmt(S.median_rating_accepted_bots)}; of one that never did, ${fmt(S.median_rating_refusing_bots)}. So the number is a measure of the pool, not the engine, and it stays provisional. The honest claim is narrower: ${S.wins} wins, ${S.draws} draws and ${S.losses} ${S.losses===1?'loss':'losses'} in ${S.games} games, every one linked below.`;
   $('#games tbody').innerHTML=G.slice().reverse().map(g=>`<tr class="${g.result}"><td>${g.date}</td><td><a href="${esc(g.url)}">${esc(g.opponent)}</a></td><td class="n">${g.opp}</td><td>${g.colour}</td><td>${g.result}${g.result==='draw'?' ('+esc(g.status)+')':''}</td><td class="n">${g.moves}</td><td class="n">${g.after}</td></tr>`).join('');
 
   const col={win:'var(--tide)',draw:'var(--ghost)',loss:'var(--buoy)'};
@@ -167,6 +191,21 @@ fetch('data.json').then(r=>r.json()).then(d=>{
         s+=`<text x="${X(x.asked)+6}" y="${y+15}">${x.asked} · ${x.rating}</text>`;});
       const v=$('#no'); v.setAttribute('viewBox',`0 0 ${W} ${H}`); v.innerHTML=s;
     }
+    // outcome shares, one 100% bar per band
+    const share=(id,B)=>{
+      const L=narrow?0:140,R=narrow?4:110,T=6,rowH=narrow?44:30,H=T+B.length*rowH+4;
+      const parts=[['accepted','var(--tide)'],['declined','var(--buoy)'],['no answer','var(--ghost)'],['refused','var(--rule)']];
+      let s='';
+      B.forEach((r,i)=>{const y=T+i*rowH, by=narrow?y+18:y+4, bh=narrow?rowH-24:rowH-10, bw=W-L-R; let x=L;
+        const v={accepted:r.accepted,declined:r.declined,'no answer':r['no answer'],refused:r['refused 400']+r['refused 429']+r.other};
+        const lab=`${r.accepted} of ${r.sent} sent said yes`+(r.sent?` (${Math.round(r.accept_of_sent*100)}%)`:'');
+        if(narrow) s+=`<text x="0" y="${y+13}" class="k">${r.label}</text><text x="${W-R}" y="${y+13}" text-anchor="end">${lab}</text>`;
+        else s+=`<text x="${L-8}" y="${y+18}" text-anchor="end" class="k">${r.label}</text><text x="${W-R+6}" y="${y+18}">${r.accepted} of ${r.sent} · ${r.sent?Math.round(r.accept_of_sent*100)+'%':'none'}</text>`;
+        if(!r.asked) return;
+        parts.forEach(([k,c])=>{const w=v[k]/r.asked*bw; if(w>0){s+=`<rect x="${x}" y="${by}" width="${w}" height="${bh}" fill="${c}"><title>${r.label}: ${v[k]} ${k} of ${r.asked} asked</title></rect>`; x+=w;}});});
+      const el=$('#'+id); el.setAttribute('viewBox',`0 0 ${W} ${H}`); el.innerHTML=s;
+    };
+    share('str',d.by_strength); share('gap',d.by_gap);
   }
   draw();
   let t; window.addEventListener('resize',()=>{clearTimeout(t); t=setTimeout(draw,150);});
