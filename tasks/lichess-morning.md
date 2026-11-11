@@ -20,7 +20,9 @@ First wait for the caps to reset, or the slot's refusals are mostly "at daily ca
 
 Then run this one-game call up to three times, one after another (each stays under the 10-minute foreground limit):
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/lichess.py play --games 1 --minutes 9`
-Rated 3+2 blitz against bots with established ratings, never one already in `GAMES.csv` (one game per opponent, ever: Luke's rule, 14 Oct 2026). It logs every game to `games/lichess/GAMES.csv` and `games/lichess/pgn/` and prints a summary as its last line. Use timeout 600000 on each call. Stop early if a call reports no bot accepted. Never set run_in_background for it.
+Rated 3+2 blitz against bots with established ratings, never one already in `GAMES.csv` (one game per opponent, ever: Luke's rule, 14 Oct 2026). It logs every game to `games/lichess/GAMES.csv` and `games/lichess/pgn/` and prints a summary as its last line. Use timeout 600000 on each call. Never set run_in_background for it.
+
+If the FIRST call reports no bot accepted, the caps may not have reset yet: they move from day to day (08:02 to 08:20 UTC on 7 to 9 Nov, 08:28 to 08:38 on 11 Nov, when the 08:22 wait gave 0 games and 14 refusals at daily cap; F-0085). Wait once more, `python3 /Users/triton/PROTEUS/bin/wait-until.py 08:40` (timeout 600000, call again until READY), then run the one-game call once more and stop whatever it reports. If a later call reports no bot accepted, stop. Never start a call that would end after the lock deadline printed at Step 0.
 
 ## 3. Log and commit
 Append one line to `/Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md` (today's local date; create the file if missing) with the Edit or Write tool:
