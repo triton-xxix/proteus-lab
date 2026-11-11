@@ -1,0 +1,662 @@
+{
+ "EDDM|airport|winter": {
+  "model_point": [
+   48.346897,
+   11.770478
+  ],
+  "model_elevation_m": 453.0,
+  "lead0": {
+   "all": {
+    "mean": 0.6,
+    "sd": 0.71,
+    "se": 0.06,
+    "n": 151,
+    "outside_2se": true,
+    "mae": 0.7,
+    "exact_degree": 0.424
+   },
+   "dec_to_feb": {
+    "mean": 0.59,
+    "sd": 0.81,
+    "se": 0.09,
+    "n": 90,
+    "outside_2se": true,
+    "mae": 0.72,
+    "exact_degree": 0.444
+   },
+   "2025-11": {
+    "mean": 0.71,
+    "sd": 0.6,
+    "se": 0.11,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 0.74,
+    "exact_degree": 0.333
+   },
+   "2025-12": {
+    "mean": 0.63,
+    "sd": 0.97,
+    "se": 0.18,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.77,
+    "exact_degree": 0.452
+   },
+   "2026-01": {
+    "mean": 0.48,
+    "sd": 0.74,
+    "se": 0.13,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.64,
+    "exact_degree": 0.452
+   },
+   "2026-02": {
+    "mean": 0.65,
+    "sd": 0.69,
+    "se": 0.13,
+    "n": 28,
+    "outside_2se": true,
+    "mae": 0.76,
+    "exact_degree": 0.429
+   },
+   "2026-03": {
+    "mean": 0.56,
+    "sd": 0.48,
+    "se": 0.09,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.61,
+    "exact_degree": 0.452
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.6,
+    "sd": 1.42,
+    "se": 0.12,
+    "n": 151,
+    "outside_2se": true,
+    "mae": 1.16,
+    "exact_degree": 0.272
+   },
+   "dec_to_feb": {
+    "mean": 0.64,
+    "sd": 1.63,
+    "se": 0.17,
+    "n": 90,
+    "outside_2se": true,
+    "mae": 1.28,
+    "exact_degree": 0.267
+   },
+   "2025-11": {
+    "mean": 0.5,
+    "sd": 1.13,
+    "se": 0.21,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 1.03,
+    "exact_degree": 0.267
+   },
+   "2025-12": {
+    "mean": 0.48,
+    "sd": 2.08,
+    "se": 0.37,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 1.35,
+    "exact_degree": 0.323
+   },
+   "2026-01": {
+    "mean": 0.75,
+    "sd": 1.48,
+    "se": 0.27,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 1.31,
+    "exact_degree": 0.258
+   },
+   "2026-02": {
+    "mean": 0.7,
+    "sd": 1.22,
+    "se": 0.23,
+    "n": 28,
+    "outside_2se": true,
+    "mae": 1.15,
+    "exact_degree": 0.214
+   },
+   "2026-03": {
+    "mean": 0.55,
+    "sd": 0.97,
+    "se": 0.17,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.93,
+    "exact_degree": 0.29
+   }
+  }
+ },
+ "EDDM|city_point_the_book_uses|winter": {
+  "model_point": [
+   48.12743,
+   11.576928
+  ],
+  "model_elevation_m": 524.0,
+  "lead0": {
+   "all": {
+    "mean": -0.21,
+    "sd": 1.3,
+    "se": 0.11,
+    "n": 151,
+    "outside_2se": false,
+    "mae": 0.99,
+    "exact_degree": 0.245
+   },
+   "dec_to_feb": {
+    "mean": -0.3,
+    "sd": 1.25,
+    "se": 0.13,
+    "n": 90,
+    "outside_2se": true,
+    "mae": 1.0,
+    "exact_degree": 0.211
+   },
+   "2025-11": {
+    "mean": -0.61,
+    "sd": 1.6,
+    "se": 0.29,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 1.18,
+    "exact_degree": 0.3
+   },
+   "2025-12": {
+    "mean": -0.06,
+    "sd": 1.15,
+    "se": 0.21,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 0.87,
+    "exact_degree": 0.226
+   },
+   "2026-01": {
+    "mean": -0.56,
+    "sd": 1.39,
+    "se": 0.25,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 1.16,
+    "exact_degree": 0.194
+   },
+   "2026-02": {
+    "mean": -0.29,
+    "sd": 1.17,
+    "se": 0.22,
+    "n": 28,
+    "outside_2se": false,
+    "mae": 0.95,
+    "exact_degree": 0.214
+   },
+   "2026-03": {
+    "mean": 0.47,
+    "sd": 0.82,
+    "se": 0.15,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.81,
+    "exact_degree": 0.29
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": -0.23,
+    "sd": 1.56,
+    "se": 0.13,
+    "n": 151,
+    "outside_2se": false,
+    "mae": 1.2,
+    "exact_degree": 0.225
+   },
+   "dec_to_feb": {
+    "mean": -0.37,
+    "sd": 1.54,
+    "se": 0.16,
+    "n": 90,
+    "outside_2se": true,
+    "mae": 1.19,
+    "exact_degree": 0.256
+   },
+   "2025-11": {
+    "mean": -0.74,
+    "sd": 1.69,
+    "se": 0.31,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 1.34,
+    "exact_degree": 0.2
+   },
+   "2025-12": {
+    "mean": -0.3,
+    "sd": 1.41,
+    "se": 0.25,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 1.1,
+    "exact_degree": 0.323
+   },
+   "2026-01": {
+    "mean": -0.51,
+    "sd": 1.77,
+    "se": 0.32,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 1.31,
+    "exact_degree": 0.226
+   },
+   "2026-02": {
+    "mean": -0.29,
+    "sd": 1.44,
+    "se": 0.27,
+    "n": 28,
+    "outside_2se": false,
+    "mae": 1.17,
+    "exact_degree": 0.214
+   },
+   "2026-03": {
+    "mean": 0.66,
+    "sd": 1.12,
+    "se": 0.2,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 1.1,
+    "exact_degree": 0.161
+   }
+  }
+ },
+ "EGLL|airport|winter": {
+  "model_point": [
+   51.462517,
+   -0.4617219
+  ],
+  "model_elevation_m": 26.0,
+  "lead0": {
+   "all": {
+    "mean": 0.21,
+    "sd": 0.52,
+    "se": 0.04,
+    "n": 151,
+    "outside_2se": true,
+    "mae": 0.45,
+    "exact_degree": 0.57
+   },
+   "dec_to_feb": {
+    "mean": 0.23,
+    "sd": 0.49,
+    "se": 0.05,
+    "n": 90,
+    "outside_2se": true,
+    "mae": 0.44,
+    "exact_degree": 0.533
+   },
+   "2025-11": {
+    "mean": 0.29,
+    "sd": 0.57,
+    "se": 0.1,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 0.52,
+    "exact_degree": 0.6
+   },
+   "2025-12": {
+    "mean": 0.2,
+    "sd": 0.42,
+    "se": 0.08,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.37,
+    "exact_degree": 0.645
+   },
+   "2026-01": {
+    "mean": 0.28,
+    "sd": 0.54,
+    "se": 0.1,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.49,
+    "exact_degree": 0.452
+   },
+   "2026-02": {
+    "mean": 0.2,
+    "sd": 0.53,
+    "se": 0.1,
+    "n": 28,
+    "outside_2se": false,
+    "mae": 0.46,
+    "exact_degree": 0.5
+   },
+   "2026-03": {
+    "mean": 0.09,
+    "sd": 0.54,
+    "se": 0.1,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 0.4,
+    "exact_degree": 0.645
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.2,
+    "sd": 0.92,
+    "se": 0.08,
+    "n": 151,
+    "outside_2se": true,
+    "mae": 0.72,
+    "exact_degree": 0.404
+   },
+   "dec_to_feb": {
+    "mean": 0.26,
+    "sd": 0.82,
+    "se": 0.09,
+    "n": 90,
+    "outside_2se": true,
+    "mae": 0.66,
+    "exact_degree": 0.433
+   },
+   "2025-11": {
+    "mean": 0.26,
+    "sd": 0.78,
+    "se": 0.14,
+    "n": 30,
+    "outside_2se": false,
+    "mae": 0.67,
+    "exact_degree": 0.433
+   },
+   "2025-12": {
+    "mean": 0.22,
+    "sd": 0.77,
+    "se": 0.14,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 0.59,
+    "exact_degree": 0.516
+   },
+   "2026-01": {
+    "mean": 0.41,
+    "sd": 0.86,
+    "se": 0.15,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.76,
+    "exact_degree": 0.323
+   },
+   "2026-02": {
+    "mean": 0.13,
+    "sd": 0.84,
+    "se": 0.16,
+    "n": 28,
+    "outside_2se": false,
+    "mae": 0.64,
+    "exact_degree": 0.464
+   },
+   "2026-03": {
+    "mean": -0.04,
+    "sd": 1.27,
+    "se": 0.23,
+    "n": 31,
+    "outside_2se": false,
+    "mae": 0.94,
+    "exact_degree": 0.29
+   }
+  }
+ },
+ "EDDM|airport|summer": {
+  "model_point": [
+   48.346897,
+   11.770478
+  ],
+  "model_elevation_m": 453.0,
+  "lead0": {
+   "all": {
+    "mean": 0.37,
+    "sd": 0.61,
+    "se": 0.06,
+    "n": 92,
+    "outside_2se": true,
+    "mae": 0.55,
+    "exact_degree": 0.543
+   },
+   "2026-06": {
+    "mean": 0.38,
+    "sd": 0.62,
+    "se": 0.11,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 0.55,
+    "exact_degree": 0.533
+   },
+   "2026-07": {
+    "mean": 0.21,
+    "sd": 0.56,
+    "se": 0.1,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.45,
+    "exact_degree": 0.645
+   },
+   "2026-08": {
+    "mean": 0.51,
+    "sd": 0.62,
+    "se": 0.11,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.66,
+    "exact_degree": 0.452
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.5,
+    "sd": 1.38,
+    "se": 0.14,
+    "n": 92,
+    "outside_2se": true,
+    "mae": 1.12,
+    "exact_degree": 0.163
+   },
+   "2026-06": {
+    "mean": 0.32,
+    "sd": 1.35,
+    "se": 0.25,
+    "n": 30,
+    "outside_2se": false,
+    "mae": 1.06,
+    "exact_degree": 0.233
+   },
+   "2026-07": {
+    "mean": 0.49,
+    "sd": 0.91,
+    "se": 0.16,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.88,
+    "exact_degree": 0.161
+   },
+   "2026-08": {
+    "mean": 0.68,
+    "sd": 1.77,
+    "se": 0.32,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 1.41,
+    "exact_degree": 0.097
+   }
+  }
+ },
+ "EDDM|city_point_the_book_uses|summer": {
+  "model_point": [
+   48.12743,
+   11.576928
+  ],
+  "model_elevation_m": 524.0,
+  "lead0": {
+   "all": {
+    "mean": 0.41,
+    "sd": 0.78,
+    "se": 0.08,
+    "n": 92,
+    "outside_2se": true,
+    "mae": 0.69,
+    "exact_degree": 0.402
+   },
+   "2026-06": {
+    "mean": 0.29,
+    "sd": 0.67,
+    "se": 0.12,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 0.6,
+    "exact_degree": 0.367
+   },
+   "2026-07": {
+    "mean": 0.45,
+    "sd": 0.73,
+    "se": 0.13,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.64,
+    "exact_degree": 0.516
+   },
+   "2026-08": {
+    "mean": 0.48,
+    "sd": 0.92,
+    "se": 0.17,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.82,
+    "exact_degree": 0.323
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.57,
+    "sd": 1.45,
+    "se": 0.15,
+    "n": 92,
+    "outside_2se": true,
+    "mae": 1.13,
+    "exact_degree": 0.261
+   },
+   "2026-06": {
+    "mean": 0.24,
+    "sd": 1.18,
+    "se": 0.22,
+    "n": 30,
+    "outside_2se": false,
+    "mae": 0.91,
+    "exact_degree": 0.433
+   },
+   "2026-07": {
+    "mean": 0.62,
+    "sd": 0.76,
+    "se": 0.14,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.83,
+    "exact_degree": 0.258
+   },
+   "2026-08": {
+    "mean": 0.84,
+    "sd": 2.06,
+    "se": 0.37,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 1.63,
+    "exact_degree": 0.097
+   }
+  }
+ },
+ "EGLL|airport|summer": {
+  "model_point": [
+   51.462517,
+   -0.4617219
+  ],
+  "model_elevation_m": 26.0,
+  "lead0": {
+   "all": {
+    "mean": 0.45,
+    "sd": 0.64,
+    "se": 0.07,
+    "n": 92,
+    "outside_2se": true,
+    "mae": 0.64,
+    "exact_degree": 0.37
+   },
+   "2026-06": {
+    "mean": 0.39,
+    "sd": 0.8,
+    "se": 0.15,
+    "n": 30,
+    "outside_2se": true,
+    "mae": 0.69,
+    "exact_degree": 0.367
+   },
+   "2026-07": {
+    "mean": 0.59,
+    "sd": 0.45,
+    "se": 0.08,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.65,
+    "exact_degree": 0.258
+   },
+   "2026-08": {
+    "mean": 0.38,
+    "sd": 0.63,
+    "se": 0.11,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.58,
+    "exact_degree": 0.484
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.42,
+    "sd": 1.02,
+    "se": 0.11,
+    "n": 92,
+    "outside_2se": true,
+    "mae": 0.91,
+    "exact_degree": 0.272
+   },
+   "2026-06": {
+    "mean": 0.29,
+    "sd": 1.33,
+    "se": 0.24,
+    "n": 30,
+    "outside_2se": false,
+    "mae": 1.15,
+    "exact_degree": 0.233
+   },
+   "2026-07": {
+    "mean": 0.5,
+    "sd": 0.76,
+    "se": 0.14,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.74,
+    "exact_degree": 0.355
+   },
+   "2026-08": {
+    "mean": 0.46,
+    "sd": 0.9,
+    "se": 0.16,
+    "n": 31,
+    "outside_2se": true,
+    "mae": 0.83,
+    "exact_degree": 0.226
+   }
+  }
+ }
+}

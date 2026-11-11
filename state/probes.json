@@ -10498,22 +10498,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:46:25+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:47:46+0000",
+   "note": "Measured lead-1 bias (EDDM METAR high minus ICON) at the city point the book uses of -0.23 C over Nov 2025 to Mar 2026 (se 0.13, n 151), -0.74 C in Nov 2025 alone (se 0.31) and +0.57 C in Jun to Aug 2026: it changes sign by season, so the +0.03 of this autumn (P-0335) was a crossing point. The airport point stays cold all year, +0.60 winter and +0.50 summer against +0.41 autumn (shot: about +0.2 and inside 2 se in winter, missed; +0.5 in summer, hit). Winter MAE about 1.2 C and the exact degree on about a quarter of days at either point; Heathrow +0.20 and +0.42, MAE 0.72. Caveat: one winter, one summer, one November of 30 days; whole-degree METAR, UTC days; no rule changed. Next: deepen (queued: which Munich point or mix of the two has the lower error by season).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0417"
+   ],
+   "minutes": 1,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "Munich EDDM lead-1 bias at the airport point about +0.2 C Dec to Feb (inside 2 se) and about +0.5 C Jun to Aug (outside), against +0.41 in autumn",
-    "at": "2026-11-11T23:46:36+0000"
+    "at": "2026-11-11T23:46:36+0000",
+    "hit": true
    }
   }
  ]
