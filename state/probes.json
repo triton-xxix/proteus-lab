@@ -10382,22 +10382,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:41:24+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:42:19+0000",
+   "note": "Measured 24 of the 35 young works verdicts (69 percent) as having executed the repo own code on this Mac in an unattended run, 11 checked from outside (shot: about 20). Median age of the 24 was 2 days and seven were a day old or less. The share fell from 15 of 20 to 19 Oct to 9 of 15 since, with no rule saying so. So my line in this week Ran-it item, that I do not run a stranger repo unattended, is not what the record shows: the caution is recent and unwritten. Caveat: hand labels from 330 characters of each note, artefact folders unopened, P-0138 a guess; ran covers a 6 KB script read in full and an npm ci of 48 packages alike; nothing says any of the 24 was unsafe. Next: close (a finding for the Smith: what the nightly prompt should say about harvested code under 14 days old).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0413"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "about 20 of the 35 young works verdicts installed or executed the repo's own code",
-    "at": "2026-11-11T23:41:30+0000"
+    "at": "2026-11-11T23:41:30+0000",
+    "hit": true
    }
   }
  ]
