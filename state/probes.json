@@ -1,5 +1,5 @@
 {
- "next_id": 418,
+ "next_id": 419,
  "items": [
   {
    "id": "P-0001",
@@ -10517,6 +10517,32 @@
     "number": "Munich EDDM lead-1 bias at the airport point about +0.2 C Dec to Feb (inside 2 se) and about +0.5 C Jun to Aug (outside), against +0.41 in autumn",
     "at": "2026-11-11T23:46:36+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0418",
+   "title": "Munich forecast point, which is nearer the EDDM METAR high: ICON lead 1 at the city point, the airport point and their mean, MAE and exact-degree rate by month from Nov 2025 to Oct 2026, with the months split into two halves to see whether the better point in one half is the better one in the other",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:47:57+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "the mean of the city and airport points has the lowest lead-1 MAE over Nov 2025 to Oct 2026, about 1.0 C against about 1.15 C for either alone",
+    "at": "2026-11-11T23:48:04+0000"
    }
   }
  ]

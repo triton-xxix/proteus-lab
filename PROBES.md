@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 337 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,7 @@ Verdicts so far: 337 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
+| P-0418 | Munich forecast point, which is nearer the EDDM METAR high: ICON lead 1 at the city point, the airport point and their mean, MAE and exact-degree rate by month from Nov 2025 to Oct 2026, with the months split into two halves to see whether the better point in one half is the better one in the other | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (401)
 
