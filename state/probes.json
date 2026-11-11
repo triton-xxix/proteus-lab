@@ -1,5 +1,5 @@
 {
- "next_id": 409,
+ "next_id": 410,
  "items": [
   {
    "id": "P-0001",
@@ -10256,6 +10256,32 @@
     "number": "full value overlap precision under 20 percent on both databases; same-column-name recall at least 0.8 on both, with at least one false positive by name on Sakila",
     "at": "2026-11-11T12:44:44+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0409",
+   "title": "What real gap-and-go videos state: YouTube search for the exact phrase \"gap and go\" with strategy and backtest, keep only videos of five minutes or more whose captions say gap and go, at most five transcripts. How many state a win rate, how many state a trade count beside it, and what are the numbers, against E-017's 121 trades?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 12,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T12:46:01+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "at least 3 real gap-and-go videos kept; 2 state a win rate, 1 at most states a trade count beside it, none as many as 121 trades",
+    "at": "2026-11-11T12:46:06+0000"
    }
   }
  ]
