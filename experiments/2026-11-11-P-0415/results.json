@@ -1,0 +1,198 @@
+{
+ "rows": 89,
+ "lines": [
+  {
+   "guard": "none",
+   "skipped": 0,
+   "kept": 89,
+   "skipped_ledger_total": 0,
+   "skipped_candle_total": 0,
+   "skipped_winners_ledger": 0,
+   "kept_ledger_total": -1205.65,
+   "kept_candle_total": -1094.43,
+   "kept_ledger_mean": -13.55,
+   "skipped_ledger_mean": null,
+   "skipped_ids": []
+  },
+  {
+   "guard": "gap over 5% either way",
+   "skipped": 38,
+   "kept": 51,
+   "skipped_ledger_total": 24.18,
+   "skipped_candle_total": 133.73,
+   "skipped_winners_ledger": 15,
+   "kept_ledger_total": -1229.83,
+   "kept_candle_total": -1228.16,
+   "kept_ledger_mean": -24.11,
+   "skipped_ledger_mean": 0.64,
+   "skipped_ids": null
+  },
+  {
+   "guard": "entry over 5% above the candle",
+   "skipped": 26,
+   "kept": 63,
+   "skipped_ledger_total": -481.29,
+   "skipped_candle_total": -15.94,
+   "skipped_winners_ledger": 7,
+   "kept_ledger_total": -724.36,
+   "kept_candle_total": -1078.49,
+   "kept_ledger_mean": -11.5,
+   "skipped_ledger_mean": -18.51,
+   "skipped_ids": null
+  },
+  {
+   "guard": "gap over 10% either way",
+   "skipped": 22,
+   "kept": 67,
+   "skipped_ledger_total": -504.25,
+   "skipped_candle_total": -615.35,
+   "skipped_winners_ledger": 5,
+   "kept_ledger_total": -701.4,
+   "kept_candle_total": -479.08,
+   "kept_ledger_mean": -10.47,
+   "skipped_ledger_mean": -22.92,
+   "skipped_ids": null
+  },
+  {
+   "guard": "entry over 10% above the candle",
+   "skipped": 15,
+   "kept": 74,
+   "skipped_ledger_total": -549.86,
+   "skipped_candle_total": -305.16,
+   "skipped_winners_ledger": 2,
+   "kept_ledger_total": -655.79,
+   "kept_candle_total": -789.27,
+   "kept_ledger_mean": -8.86,
+   "skipped_ledger_mean": -36.66,
+   "skipped_ids": [
+    "G-0003",
+    "G-0008",
+    "G-0009",
+    "G-0010",
+    "G-0020",
+    "G-0024",
+    "G-0043",
+    "G-0050",
+    "G-0064",
+    "G-0065",
+    "G-0071",
+    "G-0078",
+    "G-0079",
+    "G-0086",
+    "G-0092"
+   ]
+  },
+  {
+   "guard": "gap over 20% either way",
+   "skipped": 10,
+   "kept": 79,
+   "skipped_ledger_total": -256.85,
+   "skipped_candle_total": -329.92,
+   "skipped_winners_ledger": 2,
+   "kept_ledger_total": -948.8,
+   "kept_candle_total": -764.51,
+   "kept_ledger_mean": -12.01,
+   "skipped_ledger_mean": -25.69,
+   "skipped_ids": [
+    "G-0008",
+    "G-0009",
+    "G-0010",
+    "G-0012",
+    "G-0043",
+    "G-0055",
+    "G-0072",
+    "G-0078",
+    "G-0079",
+    "G-0086"
+   ]
+  },
+  {
+   "guard": "entry over 20% above the candle",
+   "skipped": 7,
+   "kept": 82,
+   "skipped_ledger_total": -416.04,
+   "skipped_candle_total": -171.34,
+   "skipped_winners_ledger": 0,
+   "kept_ledger_total": -789.61,
+   "kept_candle_total": -923.09,
+   "kept_ledger_mean": -9.63,
+   "skipped_ledger_mean": -59.43,
+   "skipped_ids": [
+    "G-0008",
+    "G-0009",
+    "G-0010",
+    "G-0043",
+    "G-0078",
+    "G-0079",
+    "G-0086"
+   ]
+  },
+  {
+   "guard": "snapshot over 6 min old",
+   "skipped": 12,
+   "kept": 77,
+   "skipped_ledger_total": 5.4,
+   "skipped_candle_total": 249.63,
+   "skipped_winners_ledger": 5,
+   "kept_ledger_total": -1211.05,
+   "kept_candle_total": -1344.06,
+   "kept_ledger_mean": -15.73,
+   "skipped_ledger_mean": 0.45,
+   "skipped_ids": [
+    "G-0043",
+    "G-0044",
+    "G-0045",
+    "G-0046",
+    "G-0047",
+    "G-0048",
+    "G-0049",
+    "G-0050",
+    "G-0078",
+    "G-0079",
+    "G-0080",
+    "G-0081"
+   ]
+  },
+  {
+   "guard": "snapshot over 10 min old",
+   "skipped": 4,
+   "kept": 85,
+   "skipped_ledger_total": -256.8,
+   "skipped_candle_total": -157.38,
+   "skipped_winners_ledger": 0,
+   "kept_ledger_total": -948.85,
+   "kept_candle_total": -937.05,
+   "kept_ledger_mean": -11.16,
+   "skipped_ledger_mean": -64.2,
+   "skipped_ids": [
+    "G-0078",
+    "G-0079",
+    "G-0080",
+    "G-0081"
+   ]
+  },
+  {
+   "guard": "snapshot over 15 min old",
+   "skipped": 4,
+   "kept": 85,
+   "skipped_ledger_total": -256.8,
+   "skipped_candle_total": -157.38,
+   "skipped_winners_ledger": 0,
+   "kept_ledger_total": -948.85,
+   "kept_candle_total": -937.05,
+   "kept_ledger_mean": -11.16,
+   "skipped_ledger_mean": -64.2,
+   "skipped_ids": [
+    "G-0078",
+    "G-0079",
+    "G-0080",
+    "G-0081"
+   ]
+  }
+ ],
+ "sign_check_G-0078": {
+  "gap_pct": 7859.526,
+  "entry_ledger": 0.0001699,
+  "entry_candle": 2.1345493054598826e-06
+ }
+}

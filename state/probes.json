@@ -10440,22 +10440,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:44:11+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:44:56+0000",
+   "note": "Measured the 10-minute snapshot guard skipping 4 of 89 trades, all losers, worth -256.80 pounds between them, leaving -948.85 against -1,205.65 (shot: about 9 trades and nothing above -1,000; both missed, six of nine lines leave more than -1,000). The 6-minute line skips 12 that broke even. The best of nine lines, skipping entries over 10 percent above the live price, removes 15 trades and 549.86 of loss and still leaves -8.86 a trade over 74. Stale prices are a fifth to a half of the loss depending on the line; the rest is the rule. Caveat: lines chosen after seeing the trades, P-0405 walks not published totals, gap guards need a live price the Grinder never fetched, 16 v 12 rows over 6 minutes unreconciled. Next: close (both books are stopped under F-0084; the guard is a one-line change for whoever restarts them).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0415"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "no guard line lifts the ledger-entry total above -1,000 pounds; the 10-minute age guard drops about 9 of 89 trades",
-    "at": "2026-11-11T23:44:18+0000"
+    "at": "2026-11-11T23:44:18+0000",
+    "hit": true
    }
   }
  ]
