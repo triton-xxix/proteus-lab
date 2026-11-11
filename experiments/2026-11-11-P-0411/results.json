@@ -1,0 +1,344 @@
+{
+ "source": "alexeyw/lot-map hooks/map.ts at 6370bf4314149e43594bf162aa47db1616f9c092, read as text, ported, not executed",
+ "readme": {
+  "n": 21,
+  "ok": 21,
+  "first13_ok": 13,
+  "rows": [
+   {
+    "command": "cat notes.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "Files row"
+   },
+   {
+    "command": "grep -rn TODO src",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "Files row"
+   },
+   {
+    "command": "mv a.txt b.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "Files row"
+   },
+   {
+    "command": "sed -i 's/a/b/' file.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "Files row"
+   },
+   {
+    "command": "tee out.log",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "Files row"
+   },
+   {
+    "command": "find . -name '*.tmp' -delete",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "Files row"
+   },
+   {
+    "command": "curl -s https://example.com",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "gh pr list",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "ssh host uptime",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "rsync -a src/ host:dst/",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "git push origin main",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "npm install",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "docker pull alpine",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "Network row"
+   },
+   {
+    "command": "echo $(curl -s https://example.com)",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "also inside $(...)"
+   },
+   {
+    "command": "Get-Content notes.txt",
+    "powershell": true,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "PowerShell"
+   },
+   {
+    "command": "Select-String -Pattern TODO -Path src",
+    "powershell": true,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "PowerShell"
+   },
+   {
+    "command": "Invoke-WebRequest https://example.com",
+    "powershell": true,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "PowerShell"
+   },
+   {
+    "command": "/usr/bin/curl -s https://example.com",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "full path"
+   },
+   {
+    "command": "& \"C:\\Program Files\\Git\\cmd\\git.exe\" push",
+    "powershell": true,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "quoted path with a space"
+   },
+   {
+    "command": "CURL.EXE -s https://example.com",
+    "powershell": true,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "CURL.EXE is curl"
+   },
+   {
+    "command": "python -c \"import urllib.request\"",
+    "powershell": false,
+    "expected": "shell",
+    "got": "shell",
+    "ok": true,
+    "why": "goes by name, not by what it does"
+   }
+  ]
+ },
+ "mine": {
+  "n": 20,
+  "ok": 8,
+  "rows": [
+   {
+    "command": "grep -E 'foo|bar' notes.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "shell",
+    "ok": false,
+    "why": "a pipe inside quotes"
+   },
+   {
+    "command": "grep \"a;b\" notes.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "shell",
+    "ok": false,
+    "why": "a semicolon inside quotes"
+   },
+   {
+    "command": "awk '{print $1}' data.csv | sort | uniq -c",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "a file-only pipeline"
+   },
+   {
+    "command": "rm old.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "shell",
+    "ok": false,
+    "why": "the row says delete"
+   },
+   {
+    "command": "rm -rf build",
+    "powershell": false,
+    "expected": "files",
+    "got": "shell",
+    "ok": false,
+    "why": "the row says delete"
+   },
+   {
+    "command": "cp -r a b && chmod +x b/run.sh",
+    "powershell": false,
+    "expected": "files",
+    "got": "shell",
+    "ok": false,
+    "why": "chmod works on a file and nothing else"
+   },
+   {
+    "command": "cat a.txt > b.txt",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "redirection"
+   },
+   {
+    "command": "echo \"run git push later\"",
+    "powershell": false,
+    "expected": "shell",
+    "got": "shell",
+    "ok": true,
+    "why": "network words inside a quoted string"
+   },
+   {
+    "command": "echo \"first; curl is a tool\"",
+    "powershell": false,
+    "expected": "shell",
+    "got": "network",
+    "ok": false,
+    "why": "a semicolon and a network word inside quotes"
+   },
+   {
+    "command": "git -C repo push",
+    "powershell": false,
+    "expected": "network",
+    "got": "shell",
+    "ok": false,
+    "why": "an option before the subcommand"
+   },
+   {
+    "command": "npm --prefix web install",
+    "powershell": false,
+    "expected": "network",
+    "got": "shell",
+    "ok": false,
+    "why": "an option before the subcommand"
+   },
+   {
+    "command": "sudo curl -s https://example.com",
+    "powershell": false,
+    "expected": "network",
+    "got": "shell",
+    "ok": false,
+    "why": "a wrapper before the command"
+   },
+   {
+    "command": "env TOKEN=x curl -s https://example.com",
+    "powershell": false,
+    "expected": "network",
+    "got": "shell",
+    "ok": false,
+    "why": "a wrapper before the command"
+   },
+   {
+    "command": "find . -name '*.url' -exec curl {} +",
+    "powershell": false,
+    "expected": "network",
+    "got": "files",
+    "ok": false,
+    "why": "a network command run by find"
+   },
+   {
+    "command": "xargs curl < urls.txt",
+    "powershell": false,
+    "expected": "network",
+    "got": "shell",
+    "ok": false,
+    "why": "a network command run by xargs"
+   },
+   {
+    "command": "git status",
+    "powershell": false,
+    "expected": "shell",
+    "got": "shell",
+    "ok": true,
+    "why": "a git subcommand that stays local"
+   },
+   {
+    "command": "wget https://example.com/file",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "the and-the-like list"
+   },
+   {
+    "command": "pip install requests",
+    "powershell": false,
+    "expected": "network",
+    "got": "network",
+    "ok": true,
+    "why": "the and-the-like list"
+   },
+   {
+    "command": "python3 fetch.py",
+    "powershell": false,
+    "expected": "shell",
+    "got": "shell",
+    "ok": true,
+    "why": "goes by name"
+   },
+   {
+    "command": "ls -la",
+    "powershell": false,
+    "expected": "files",
+    "got": "files",
+    "ok": true,
+    "why": "reads a folder"
+   }
+  ]
+ }
+}

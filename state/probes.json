@@ -10315,22 +10315,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:36:23+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:38:00+0000",
+   "note": "Measured 21 of 21 README example commands landing on the station the README names, 13 of 13 on the shot (source read as text and ported to Python, plugin not run). On 20 everyday commands of my own it got 8: the line is split at pipes and semicolons before quotes are read, so grep with a quoted foo|bar lands on Shell and an echo of a quoted curl on Network; rm and chmod are not file words though the README says delete; an option before a subcommand (git -C x push) and a wrapper (sudo curl) hide the network call. Caveat: a port, my 20 cases were written after reading the source, so 8 of 20 is holes found, not an error rate. Next: close (nothing to install; the quote-blind split is the one finding worth a line).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0411"
+   ],
+   "minutes": 1,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "13 of 13 README example commands found in the source tables for the station the README names; source read as text, not executed",
-    "at": "2026-11-11T23:36:38+0000"
+    "at": "2026-11-11T23:36:38+0000",
+    "hit": true
    }
   }
  ]
