@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 329 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (12 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,6 +25,7 @@ Verdicts so far: 329 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
 | P-0410 | E-017 gap and go with its best three trades removed: from the edge scan's own trade list for E-017 (121 trades), total and mean return with the best 3 and best 5 trades taken out, and the share of total profit the top three carry, beside the 92 percent a 537-trade gap-and-go video reported (P-0409). | desk | none |  | 0 | 15 min |
+| P-0411 | lot-map: does its shell-command classifier assign README example commands to the stations the README claims? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (393)
 

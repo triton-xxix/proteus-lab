@@ -6,22 +6,32 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-607 judged over 42 harvest days, 398 kept, 125 testable, 120 queued as probes, 110 with a probe verdict.
+621 judged over 43 harvest days, 408 kept, 126 testable, 121 queued as probes, 114 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0606 | 2026-11-10 | github | [Junhan2/ztd-charts: 36 animated, interactive React charts in pure SVG, with a CLI and an M](https://github.com/Junhan2/ztd-charts) | both | tools-for-strangers | yes | P-0399 |
+| H-0619 | 2026-11-11 | hn | [Show HN: Klad, a paint app your coding agent can drive (source-available)](https://github.com/klad-app/klad) | mechanism | tools-for-strangers | no: It needs a Rust build of a GUI app and a drawing session, wh |  |
+| H-0618 | 2026-11-11 | vault | [comment-for-DM-link funnel (same poster as the NVIDIA free models post)](https://www.instagram.com/p/DfmyrUTgSmi/) (intel) | mechanism | none | no: It needs a social account and the platform's messaging API,  |  |
+| H-0616 | 2026-11-11 | arxiv | [Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File O](https://arxiv.org/abs/2611.14009) | mechanism | mechanism-hunting | no: It needs GPU training of a language model, which this Mac ca |  |
+| H-0615 | 2026-11-11 | github | [vzroslieigry/maxagent: Experience for AI agents: hooks that make Claude Code, Codex, Antig](https://github.com/vzroslieigry/maxagent) | mechanism | tools-for-strangers | no: Its setup wizard edits global agent rules and hook files, wh |  |
+| H-0614 | 2026-11-11 | hn | [Show HN: Black Ops II statically recompiled to native ARM64 macOS](https://github.com/adrbn/bo2-mac) | mechanism | tech | no: It needs a licensed copy of the game and an Apple Silicon Ma |  |
+| H-0613 | 2026-11-11 | vault | [pain-first hook plus five-bullet outcome list for a niche community](https://www.instagram.com/p/Den4ud4sOgC/) | mechanism | tools-for-strangers | no: A test needs a live audience and a posting account, which ca |  |
+| H-0611 | 2026-11-11 | arxiv | [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](https://arxiv.org/abs/2611.14492) | mechanism | mechanism-hunting | no: The method needs model calls and the authors' production pro |  |
+| H-0610 | 2026-11-11 | github | [alexeyw/lot-map: A live map beside the chat that shows what Claude Code is doing: tool cal](https://github.com/alexeyw/lot-map) | mechanism | tools-for-strangers | yes | P-0411 |
+| H-0609 | 2026-11-11 | hn | [Show HN: Yogurt – Free, private, open-source alternative to Granola](https://github.com/FrigadeHQ/yogurt) | both | tools-for-strangers | no: It needs a built desktop app, local language model weights a |  |
+| H-0608 | 2026-11-11 | vault | [parallel tasks plus one-prompt CRM and dashboard builds](https://www.instagram.com/p/DfmyrUTgSmi/) | mechanism | tools-for-strangers | no: The hosted product needs an account and credits, and the pro |  |
+| H-0606 | 2026-11-10 | github | [Junhan2/ztd-charts: 36 animated, interactive React charts in pure SVG, with a CLI and an M](https://github.com/Junhan2/ztd-charts) | both | tools-for-strangers | yes | P-0399 **blocked** |
 | H-0604 | 2026-11-10 | vault | [Multi-tier referral scheme paying on recruits' trading revenue, spread through referral li](https://invoapp.com/join/tradewzay) (intel) | mechanism | mechanism-hunting | no: Joining and operating it needs an account and real money; th |  |
 | H-0602 | 2026-11-10 | arxiv | [PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature rev](https://arxiv.org/abs/2611.12222) | mechanism | tools-for-strangers | no: A full run needs many model calls and spend, and the quality |  |
 | H-0601 | 2026-11-10 | github | [Dodaios/ste80-humanizer: STE80 Humanizer: agent skill that removes AI tells and rewrites t](https://github.com/Dodaios/ste80-humanizer) | mechanism | tools-for-strangers | no: The rewrite needs model answers, and there is no local LLM;  |  |
-| H-0600 | 2026-11-10 | hn | [Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives](https://github.com/GoogleChrome/modern-web-guidance) | both | tools-for-strangers | yes | P-0398 |
+| H-0600 | 2026-11-10 | hn | [Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives](https://github.com/GoogleChrome/modern-web-guidance) | both | tools-for-strangers | yes | P-0398 **works** |
 | H-0599 | 2026-11-10 | vault | [Claude-interviews-the-owner prompt as the opener for client builds](https://www.youtube.com/watch?v=Zs3faMCDYNs) | mechanism | tools-for-strangers | no: Judging it needs model answers and a human interviewee, and  |  |
 | H-0598 | 2026-11-10 | youtube | [I Tested Local AI on My Mac Studio So You Don't Have To](https://www.youtube.com/watch?v=JLs10oOX6NY) | mechanism | tools-for-strangers | no: Needs a local model runtime, and there is no local LLM on th |  |
 | H-0597 | 2026-11-10 | arxiv | [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](https://arxiv.org/abs/2611.12835) | mechanism | tech | no: It needs policy-gradient training of small models on a GPU a |  |
-| H-0596 | 2026-11-10 | github | [gogoymh/auto-ontology-mcp: NVIDIA Auto Ontology's semantic layer and a personal knowledge ](https://github.com/gogoymh/auto-ontology-mcp) | mechanism | tools-for-strangers | yes | P-0397 |
-| H-0594 | 2026-11-10 | vault | [nightly check that every path in the memory map still exists](https://www.youtube.com/watch?v=Zs3faMCDYNs) | mechanism | tools-for-strangers | yes | P-0396 |
+| H-0596 | 2026-11-10 | github | [gogoymh/auto-ontology-mcp: NVIDIA Auto Ontology's semantic layer and a personal knowledge ](https://github.com/gogoymh/auto-ontology-mcp) | mechanism | tools-for-strangers | yes | P-0397 **blocked** |
+| H-0594 | 2026-11-10 | vault | [nightly check that every path in the memory map still exists](https://www.youtube.com/watch?v=Zs3faMCDYNs) | mechanism | tools-for-strangers | yes | P-0396 **works** |
 | H-0592 | 2026-11-09 | github | [Nanoutrolley/roblox-studio-mcp: Model Context Protocol (MCP) server for Roblox Studio. Con](https://github.com/Nanoutrolley/roblox-studio-mcp) (intel) | mechanism | tools-for-strangers | yes | P-0381 **broken** |
 | H-0590 | 2026-11-09 | vault | [income-claim ads](https://www.instagram.com/p/DfZo4rOsFRL/) (intel) | mechanism | none | no: It is a regulatory and compliance question, with nothing to  |  |
 | H-0588 | 2026-11-09 | arxiv | [Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data](https://arxiv.org/abs/2611.09372) | mechanism | tech | no: It needs a local LLM, which this Mac does not have, and the  |  |
@@ -412,6 +422,128 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0619 Show HN: Klad, a paint app your coding agent can drive (source-available)
+2026-11-11, hn, https://github.com/klad-app/klad
+
+- **Mechanism:** A Rust paint program stores art as editable brush strokes and layers rather than flat pixels, and exposes every function through a command-line interface. An agent calls CLI commands to draw strokes, add layers and animate frames, and a human can then edit each stroke in the GUI. Undo history is saved in the file.
+- **Claim:** A paint app an AI agent can drive through a CLI, with every stroke and layer still editable afterwards.
+- **Testable:** no. It needs a Rust build of a GUI app and a drawing session, which will not reliably finish in 30 minutes keyless. Needs: A Rust toolchain and a display..
+- **Idea on its own:** needs-a-run. Stroke-level editability is a real gain over image models, but whether an agent draws anything usable with it is unproven.
+- **How it would be done:** Clone the repo, build with cargo, and give Claude Code the CLI help text. Ask it to draw a simple sprite and export it. Judge the output and count how many stroke edits a person needs. If it works, wire it into a HyperFrames scene as a still source.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** Klad https://github.com/klad-app/klad (The app and its agent CLI.); Rust toolchain (rustup) https://rustup.rs (Needed to build Klad.)
+- **Field Notes line:** Klad stores art as editable strokes and exposes drawing through a CLI, so Claude can sketch and a human can fix each stroke.
+
+### H-0618 comment-for-DM-link funnel (same poster as the NVIDIA free models post)
+2026-11-11, vault, https://www.instagram.com/p/DfmyrUTgSmi/
+
+- **Mechanism:** A post asks viewers to comment a keyword. A third-party automation service watches the post's comments through the platform's business messaging API and sends each commenter an automatic direct message with a link. It raises engagement counts and builds a contact list. Platforms limit this with API rate limits, requiring a business account and a prior comment, and they flag accounts that send repetitive messages or inflate comments.
+- **Claim:** Comment a keyword and get the link by DM.
+- **Testable:** no. It needs a social account and the platform's messaging API, and the vault says understand only, never operate. Needs: A business social account and an automation service subscription..
+- **Idea on its own:** sound. As a lead-capture trigger it is legitimate when the commenter asked for the link, but it is easily abused for engagement inflation.
+- **How it would be done:** Understand it only. Read the platform's public documentation for private replies to comments and note the limits: one private reply per comment, a short window, and a business account. Record what the platform says about spam and repeated messaging. No operation is planned. A person would be needed for any real account setup.
+- **Field Notes line:** Comment-for-DM funnels use a keyword trigger and an auto-reply API; platforms limit them by rate caps and flag repetitive messaging.
+
+### H-0616 Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tas
+2026-11-11, arxiv, https://arxiv.org/abs/2611.14009
+
+- **Mechanism:** A student model is trained with reinforcement learning in five long-horizon environments where it uses ordinary bash and files as its memory across context resets. A frozen teacher that already knows file operations gives token-level guidance via on-policy distillation. The training runs asynchronously across all environments with one shared policy.
+- **Claim:** CAMP-II obtains 2.97 times the gain of the strongest on-policy distillation baseline and transfers to Terminal-Bench 2.1 and SWE-Bench Pro V2.
+- **Testable:** no. It needs GPU training of a language model, which this Mac cannot do. Needs: GPUs and model weights..
+- **Idea on its own:** sound. Using ordinary files as memory fits what models already know, which matches how Claude Code memory folders work today.
+- **How it would be done:** The training itself is out of reach here. The usable part is the design lesson: give an agent a persistent workspace and ordinary file tools rather than special memory tools. Proteus already does this with its memory folder, so the practical step is to log how often runs read and write it. A person would be needed only to run training on rented hardware.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** GPU training capacity and the CAMG-II environments.
+- **Field Notes line:** Agents can learn to use plain files as long-term memory when the teacher already knows file tools; a trained student gains 2.97 times the baseline.
+
+### H-0615 vzroslieigry/maxagent: Experience for AI agents: hooks that make Claude Code, Codex, Antigravity and OpenClaw recall and
+2026-11-11, github, https://github.com/vzroslieigry/maxagent
+
+- **Mechanism:** A set of hooks runs on each user message, before a command and after an error, looks up short recipe files called atoms in a local folder, and injects the best matches into the agent's context. Lookup is by words, optionally by a local embedding model. Agents write new atoms as they work, in a fixed spec, so the base grows with use.
+- **Claim:** Hooks make Claude Code, Codex and others recall and record what worked, so they stop re-solving the same problem.
+- **Testable:** no. Its setup wizard edits global agent rules and hook files, which should not be run from the sandbox.
+- **Idea on its own:** sound. Surfacing a checked recipe on an error is the same idea as a memory index, applied at hook time.
+- **How it would be done:** Read the repo's hook scripts and atom spec without running the wizard. Copy five of Proteus's real fixes from BACKLOG.md into the atom format in the sandbox. Run the lookup function by itself against ten error strings and count correct hits. Wiring it live needs a hook edit that Luke approves.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** maxagent https://github.com/vzroslieigry/maxagent (Source for the hook and lookup code.); multilingual-e5-small https://huggingface.co/intfloat/multilingual-e5-small (Small embedding model it uses for meaning search.)
+- **Field Notes line:** maxagent uses hooks to inject short recipe files into Claude Code at the moment of an error or command, so the agent reuses a known fix.
+
+### H-0614 Show HN: Black Ops II statically recompiled to native ARM64 macOS
+2026-11-11, hn, https://github.com/adrbn/bo2-mac
+
+- **Mechanism:** The game's compiled machine code is translated ahead of time into native ARM64 code, with the old console-style system calls and graphics calls mapped to macOS equivalents such as Metal. A coding agent wrote the lifting and glue code, and the user supplies their own game files from Steam. Nothing is emulated at run time, which is why speed is close to native.
+- **Claim:** Black Ops II runs at about 60fps on a Mac with no emulator, by static recompilation.
+- **Testable:** no. It needs a licensed copy of the game and an Apple Silicon Mac, and this is an Intel Mac. Needs: A Steam copy of the game and an ARM64 Mac..
+- **Idea on its own:** needs-a-run. Static recompilation is a proven technique, but how much of the work the agent really did is unclear from the post.
+- **How it would be done:** Start with a tiny binary, disassemble it with an open tool, lift instructions to an intermediate form and emit ARM64. Map each system and graphics call to a shim and test against known outputs. A real game needs a person to resolve the many ambiguous cases and to settle licensing, since only the user's own copy may be converted.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** bo2-mac https://github.com/adrbn/bo2-mac (The source, to see how the recompiler is structured.); Ghidra https://ghidra-sre.org (Free disassembler and decompiler for the lifting step.)
+- **Missing:** An ARM64 Mac and a licensed game copy to test with.
+- **Field Notes line:** A Mac port of Black Ops II built by static recompilation with an AI agent, with no emulator and about 60fps.
+
+### H-0613 pain-first hook plus five-bullet outcome list for a niche community
+2026-11-11, vault, https://www.instagram.com/p/Den4ud4sOgC/
+
+- **Mechanism:** A short-form post opens with a pain the target group recognises, then lists five concrete outcomes as bullets, then points to a paid community. The structure works by qualifying the audience in the first line and making the offer scannable. The numbers come from comments, follows and sign-ups from that post, measured against a similar post without the structure.
+- **Claim:** A pain-first hook with a five-bullet outcome list sells a niche community.
+- **Testable:** no. A test needs a live audience and a posting account, which cannot be run keyless in a sandbox. Needs: An audience and a posting account..
+- **Idea on its own:** needs-a-run. The structure is common copywriting, but whether it beats other openers for a given niche needs a split test.
+- **How it would be done:** Write two versions of the same post, one pain-first with five bullets and one plain description. Post both to the same audience on different days and record comments, clicks and joins per thousand views. The copy can be drafted with Claude Code and the outbound-email skill's rules, but a person must post and approve it. Compare after a fixed window.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** An audience and a posting account to run the split test.
+- **Field Notes line:** Pain-first hook plus five outcome bullets is a template for niche community posts; its effect is untested without an audience.
+
+### H-0611 ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows
+2026-11-11, arxiv, https://arxiv.org/abs/2611.14492
+
+- **Mechanism:** An agent follows a written procedure on a few runs while logging its tool calls and the reason it gives for each. A model reads those logs to extract the condition behind each step, merges conditions across runs into a rule document, and generates an executable workflow where plain code picks the next step. Failures on training runs are fed back for repair rounds.
+- **Claim:** Distilled workflows reach 93.8 percent completion versus 96.8 percent for the agent at 24 percent lower cost, and run in 1.3s instead of 170s on tau2-Bench.
+- **Testable:** no. The method needs model calls and the authors' production procedures, and there is no local LLM. Needs: Model API calls and a set of logged agent runs..
+- **Idea on its own:** sound. Turning repeated agent behaviour into deterministic code is how repeated jobs get cheap, and the repair loop is a known pattern.
+- **How it would be done:** Pick one repeated Proteus nightly step that a sub-agent currently drives. Log three runs with the stated reason for each tool call. Ask a model to write the if-then rules behind each step, merge them, and generate a small Python script. Run the script against held-out nights and count agreements with the agent. A person is only needed to review the rules for errors.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** tau2-bench https://github.com/sierra-research/tau2-bench (Public benchmark the paper reports against.)
+- **Missing:** A set of logged agent runs with reasons attached, for one repeated job.
+- **Field Notes line:** ReTrace compiles a few logged agent runs into plain code that picks the next step, cutting a 170 second task to 1.3 seconds for a small accuracy loss.
+
+### H-0610 alexeyw/lot-map: A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills
+2026-11-11, github, https://github.com/alexeyw/lot-map
+
+- **Mechanism:** A Claude Code plugin registers hooks on tool calls, model steps, skills and subagents. Each hook event is classified into a station (files, shell, network and so on) by reading the tool name and, for shell, the command's first word, then pushed to a pane that animates pulses. Worn spokes and a route line are just counters and a short history of the last stations.
+- **Claim:** A live local map beside the chat showing what Claude Code is doing, with refusals and errors in red.
+- **Testable:** yes. Does the repo's command-to-station classifier put the README's own examples (cat, grep, curl, git push, python -c) in the stations the README says, out of 10 checked? Queued as P-0411.
+- **Idea on its own:** sound. Hooks already carry the tool name and input, so a station map is a cheap and honest view of where agent work goes.
+- **How it would be done:** Clone the repo into the sandbox without installing it as a plugin, since that would edit live hook settings. Find the classifier module, feed it a list of ten shell commands taken from the README, and compare its outputs to the README table. A second step could replay one of the Proteus run logs through the classifier to see the station mix. Wiring it live would need a hook-file edit, which Luke has to approve.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** lot-map https://github.com/alexeyw/lot-map (The plugin source to read and test.)
+- **Field Notes line:** lot-map turns Claude Code hook events into a live pulse map, classifying shell commands by their first word, which it admits misses python -c network calls.
+
+### H-0609 Show HN: Yogurt – Free, private, open-source alternative to Granola
+2026-11-11, hn, https://github.com/FrigadeHQ/yogurt
+
+- **Mechanism:** A desktop app records system and microphone audio without joining the call, transcribes it locally with a small speech model, and summarises and answers questions with a small on-device language model. Notes are stored locally and exposed to outside assistants through a local MCP server. It depends on local model weights, calendar access for meeting titles, and enough CPU or GPU for near-real-time inference.
+- **Claim:** A free MIT-licensed, private alternative to Granola that transcribes and summarises meetings entirely on device.
+- **Testable:** no. It needs a built desktop app, local language model weights and audio capture permission, and there is no local LLM on this Mac. Needs: A local LLM runtime and microphone and system-audio permission..
+- **Idea on its own:** sound. Local transcription plus a small summariser is enough for meeting notes, and a local MCP server is a clean way to share them.
+- **How it would be done:** Capture audio with a loopback device, transcribe in chunks with a local Whisper build (already on the Mac), then summarise with a small model once one is installed. Store transcripts as markdown files and serve them through a read-only MCP server so Claude Code can query them. The calendar link only supplies titles and attendees, so it can be skipped. A person is needed only for consent from other call participants.
+- **Stack already covers:** local transcription, Claude Code with skills and sub-agents
+- **To fetch:** Yogurt https://github.com/FrigadeHQ/yogurt (The open-source app itself, to read its MCP server and model choices.); Ollama https://ollama.com (Local model runtime for the summary step.); BlackHole https://existential.audio/blackhole/ (Free loopback audio driver to capture system sound.)
+- **Missing:** A local language model installed on the Mac.
+- **Field Notes line:** Yogurt records meetings without a bot, summarises with an on-device model, and hands notes to Claude through a local MCP server.
+
+### H-0608 parallel tasks plus one-prompt CRM and dashboard builds
+2026-11-11, vault, https://www.instagram.com/p/DfmyrUTgSmi/
+
+- **Mechanism:** A hosted agent takes one natural-language prompt, splits it into sub-tasks, runs several of them in parallel in a cloud sandbox, and returns a generated app such as a CRM or dashboard with a database and front end. The moving parts are an LLM planner, code-writing workers, a managed runtime and a hosting step. The quality depends on the planner's decomposition and on whatever data connectors the prompt names.
+- **Claim:** One prompt builds a working CRM or dashboard, with tasks running in parallel.
+- **Testable:** no. The hosted product needs an account and credits, and the promo gives no specific claim to check. Needs: An account on the vendor's agent product..
+- **Idea on its own:** needs-a-run. Parallel decomposition of a build prompt is sound, but whether the output beats a Claude Code build is an empirical question nobody has run.
+- **How it would be done:** Write one brief for a small CRM (contacts, pipeline stages, a dashboard of counts). Have a parent Claude Code session split it into schema, API, UI and seed-data tasks and run them as parallel sub-agents in separate folders. Wire the pieces with a single SQLite file and a static front end. Time it and count manual fixes, then compare to the vendor's own demo output if someone with an account runs it. A hired person would only be needed to judge whether the result is usable by a real client.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** SQLite https://www.sqlite.org (Single-file database for the generated CRM.)
+- **Missing:** A like-for-like prompt and scoring sheet to compare the hosted agent with a Claude Code build.
+- **Field Notes line:** A one-prompt CRM and dashboard builder runs sub-tasks in parallel; the idea is the same fan-out Claude Code sub-agents already do.
 
 ### H-0606 Junhan2/ztd-charts: 36 animated, interactive React charts in pure SVG, with a CLI and an MCP server
 2026-11-10, github, https://github.com/Junhan2/ztd-charts
@@ -5095,9 +5227,12 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0618 | 2026-11-11 | comment-for-DM-link funnel (same poster as the NVIDIA free models post) | intel | sound | no |  |
+| H-0613 | 2026-11-11 | pain-first hook plus five-bullet outcome list for a niche community | open | needs-a-run | no |  |
+| H-0608 | 2026-11-11 | parallel tasks plus one-prompt CRM and dashboard builds | open | needs-a-run | no |  |
 | H-0604 | 2026-11-10 | Multi-tier referral scheme paying on recruits' trading revenue, spread through referral li | intel | unsound | no |  |
 | H-0599 | 2026-11-10 | Claude-interviews-the-owner prompt as the opener for client builds | open | sound | no |  |
-| H-0594 | 2026-11-10 | nightly check that every path in the memory map still exists | open | sound | yes | P-0396 |
+| H-0594 | 2026-11-10 | nightly check that every path in the memory map still exists | open | sound | yes | P-0396 **works** |
 | H-0590 | 2026-11-09 | income-claim ads | intel | sound | no |  |
 | H-0585 | 2026-11-09 | free live session, no replay, paid offer behind | open | needs-a-run | no |  |
 | H-0580 | 2026-11-09 | testimonial-first hook with one number | open | needs-a-run | no |  |
@@ -5226,6 +5361,15 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0362 | 2026-11-11 | [Klad](https://github.com/klad-app/klad) | The app and its agent CLI. | H-0619 (Show HN: Klad, a paint app your coding agent can d) | shelf |
+| T-0361 | 2026-11-11 | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | Small embedding model it uses for meaning search. | H-0615 (vzroslieigry/maxagent: Experience for AI agents: h) | shelf |
+| T-0360 | 2026-11-11 | [maxagent](https://github.com/vzroslieigry/maxagent) | Source for the hook and lookup code. | H-0615 (vzroslieigry/maxagent: Experience for AI agents: h) | shelf |
+| T-0359 | 2026-11-11 | [Ghidra](https://ghidra-sre.org) | Free disassembler and decompiler for the lifting step. | H-0614 (Show HN: Black Ops II statically recompiled to nat) | shelf |
+| T-0358 | 2026-11-11 | [bo2-mac](https://github.com/adrbn/bo2-mac) | The source, to see how the recompiler is structured. | H-0614 (Show HN: Black Ops II statically recompiled to nat) | shelf |
+| T-0357 | 2026-11-11 | [lot-map](https://github.com/alexeyw/lot-map) | The plugin source to read and test. | H-0610 (alexeyw/lot-map: A live map beside the chat that s) | shelf |
+| T-0356 | 2026-11-11 | [BlackHole](https://existential.audio/blackhole/) | Free loopback audio driver to capture system sound. | H-0609 (Show HN: Yogurt – Free, private, open-source alter) | shelf |
+| T-0355 | 2026-11-11 | [Yogurt](https://github.com/FrigadeHQ/yogurt) | The open-source app itself, to read its MCP server and model choices. | H-0609 (Show HN: Yogurt – Free, private, open-source alter) | shelf |
+| T-0354 | 2026-11-11 | [SQLite](https://www.sqlite.org) | Single-file database for the generated CRM. | H-0608 (parallel tasks plus one-prompt CRM and dashboard b) | shelf |
 | T-0353 | 2026-11-10 | [ztd-charts](https://github.com/Junhan2/ztd-charts) | The library, CLI and MCP server. | H-0606 (Junhan2/ztd-charts: 36 animated, interactive React) | shelf |
 | T-0352 | 2026-11-10 | [PARIS paper page](https://arxiv.org/abs/2611.12222) | Links to the open-source repository. | H-0602 (PARIS: A multi-agent LLM framework for end-to-end,) | shelf |
 | T-0351 | 2026-11-10 | [textstat](https://pypi.org/project/textstat/) | Readability scores for before and after. | H-0601 (Dodaios/ste80-humanizer: STE80 Humanizer: agent sk) | shelf |
@@ -5584,6 +5728,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0621 | 2026-11-11 | youtube | [Why Does Your Car Lose Value Every Year? 🚗 / Depreciation Explained](https://www.youtube.com/watch?v=baChlHk8HQw) | Transcript unavailable and the title is a generic explainer with no mechanism visible. |
+| H-0620 | 2026-11-11 | github | [nishant-Tiwari24/cracked: Skills for getting hired. Company-wise mock interviews](https://github.com/nishant-Tiwari24/cracked) | A bundle of interview-prep prompts with no new mechanism beyond running code against tests. |
+| H-0617 | 2026-11-11 | youtube | [The Truth About Luxury Car Depreciation and Personal Finance](https://www.youtube.com/watch?v=t6QTmKIV4J8) | Transcript unavailable and the title is a generic claim with no mechanism visible. |
+| H-0612 | 2026-11-11 | youtube | [EV Depreciation Is Unbelievable Right Now 😮](https://www.youtube.com/watch?v=1ZUZEYi5538) | Transcript unavailable and the title is a generic claim with no mechanism visible. |
 | H-0607 | 2026-11-10 | youtube | [What Is BONDING CURVE For Meme Coin In Axiom Trading (EXPLAINED) 2026](https://www.youtube.com/watch?v=69tdX8GdfQU) | Affiliate promo with a textbook definition of a bonding curve and no new mechanism. |
 | H-0605 | 2026-11-10 | hn | [Show HN: DBDelve – Open-Source DB Client Made with Rust and GPUI](https://news.ycombinator.com/item?id=50427934) | A database GUI client launch, off-theme with no mechanism for the desks. |
 | H-0603 | 2026-11-10 | youtube | [Is Qwen3.8-27B Still #1 for Local LLMs? (M5 Max Test)](https://www.youtube.com/watch?v=-TKu-PdHI_Y) | Model launch benchmark walkthrough from vendor charts, duplicate theme of the local-model video with no mechanism. |
