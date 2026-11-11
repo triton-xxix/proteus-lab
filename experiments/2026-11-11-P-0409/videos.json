@@ -1,0 +1,197 @@
+{
+ "query": "\"gap and go\" strategy backtest",
+ "ids_found": 45,
+ "tried": 19,
+ "blocked": true,
+ "kept": [
+  {
+   "id": "uPnqUdkI7Cs",
+   "title": "LIVE: Backtesting Gap Trading Strategies in Python (SPY)",
+   "channel": "Trading Steady",
+   "words": 6874,
+   "minutes": 67.2,
+   "gap_and_go_mentions": 1,
+   "win_lines": 2,
+   "count_lines": 3,
+   "win_claims": [
+    {
+     "at_s": 1226,
+     "text": "two. So what if I divide that by the sum 55% of the time? So I've done it as a sum. I don't know if that will give me"
+    },
+    {
+     "at_s": 2773,
+     "text": "500. And it was just it had an amazing win rate, great um great return, like great take-profit. And I thought, okay,"
+    }
+   ],
+   "count_claims": [
+    {
+     "at_s": 1884,
+     "text": "that out of 2,85 gaps down, 1,500 of them had a positive day"
+    },
+    {
+     "at_s": 2148,
+     "text": "25 years of data. So 304 divided by 25 12 trades a year or not even trades. This is"
+    },
+    {
+     "at_s": 2151,
+     "text": "This is 12 12 gaps that meet that requirement per year. So an average one a month."
+    }
+   ]
+  },
+  {
+   "id": "iMEHzkSbxWU",
+   "title": "$12,889 Win! How This Trader Nailed a Halt and Gap-and-Go | Josh S \ud83d\udcc8 200K FLEX",
+   "channel": "Trade The Pool",
+   "words": 6614,
+   "minutes": 26.8,
+   "gap_and_go_mentions": 3,
+   "win_lines": 0,
+   "count_lines": 0,
+   "win_claims": [],
+   "count_claims": []
+  }
+ ],
+ "dropped": [
+  {
+   "id": "6PLI1Wvn3fE",
+   "title": "Increase Your Day Trading Profits with the Gap and Go Strategy",
+   "channel": "NetPicks Smart Trading Made Simple",
+   "words": 513,
+   "minutes": 2.8,
+   "gap_and_go_mentions": 1,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "VsF0W2FuQOM",
+   "title": "Gap and Go Trading Strategy Taught in LESS THAN 5 MINS!",
+   "channel": "TradeLikeGates",
+   "words": 929,
+   "minutes": 4.4,
+   "gap_and_go_mentions": 2,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "V1m9mHwTtPI",
+   "title": "5 Minute GAP AND GO Trading Strategy for BIG Profits!",
+   "channel": "Estrategia Zona 65",
+   "dropped": "no transcript: NoTranscriptFound"
+  },
+  {
+   "id": "WCuEgMPvKwc",
+   "title": "Gap-and-Go Strategy: Ride the Momentum in Penny Stocks",
+   "channel": "Profit Potential",
+   "words": 227,
+   "minutes": 1.4,
+   "gap_and_go_mentions": 2,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "_maZenj_cZ8",
+   "title": "Stop Trading Every Fiar Value Gap (here's why)",
+   "channel": "Davian Silva",
+   "words": 79,
+   "minutes": 0.3,
+   "gap_and_go_mentions": 0,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "sEpI4T4UvhU",
+   "title": "Can we apply your Gap and Go rules to gap downs?",
+   "channel": "Christopher Uhl - OVTLYR",
+   "words": 215,
+   "minutes": 1.0,
+   "gap_and_go_mentions": 4,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "uqPMS_tBFlY",
+   "title": "Gaps in stocks, explained: Max vs Wick #9: The overnight gap #shorts",
+   "channel": "Backtestd \u00b7 Trading strategies, tested",
+   "words": 102,
+   "minutes": 0.5,
+   "gap_and_go_mentions": 0,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "n-SEsjdZaMo",
+   "title": "GAP UP TRADING STRATEGY - Golden Setup To Become Profitable",
+   "channel": "Humbled Trader",
+   "words": 4276,
+   "minutes": 25.2,
+   "gap_and_go_mentions": 0,
+   "dropped": "captions never say gap and go"
+  },
+  {
+   "id": "d9mDpbN4zFI",
+   "title": "Gap and Go | Day Trading Recap by Ross Cameron",
+   "channel": "Ross Cameron - Warrior Trading",
+   "words": 1422,
+   "minutes": 7.2,
+   "gap_and_go_mentions": 0,
+   "dropped": "captions never say gap and go"
+  },
+  {
+   "id": "9Y4x-QKkZqU",
+   "title": "VWAP Gap and Go Strategy: Pre-Open Squeeze Explained!",
+   "channel": "Elite Trading",
+   "words": 213,
+   "minutes": 1.5,
+   "gap_and_go_mentions": 2,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "sqDobXhF1Ek",
+   "title": "Your Best Backtest Is Probably Luck (1,000 Coin-Flip Strategies)",
+   "channel": "Risk Math",
+   "words": 146,
+   "minutes": 0.9,
+   "gap_and_go_mentions": 0,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "eRg0fbBW57k",
+   "title": "You're Fading the Wrong Gaps. Big Gaps Fill Only 8% of the Time.",
+   "channel": "YuRa Trading",
+   "dropped": "no transcript: NoTranscriptFound"
+  },
+  {
+   "id": "ieCrXvKLq3g",
+   "title": "85% Winrate Trading Strategy | Gap Fill Trading",
+   "channel": "Nitro Trades",
+   "words": 75,
+   "minutes": 0.3,
+   "gap_and_go_mentions": 0,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "gxO4oT02QGg",
+   "title": "The Only Gap Strategy You Need (Works Everyday)",
+   "channel": "Jesse Rogers | Casper Trading",
+   "words": 231,
+   "minutes": 1.1,
+   "gap_and_go_mentions": 0,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "JdigleomaWo",
+   "title": "Gap up and Gap Down strategy #stockmarket #trading #optionstrading #shorts",
+   "channel": "Trading Guruji",
+   "dropped": "no transcript: NoTranscriptFound"
+  },
+  {
+   "id": "Z8cIkwmpJE4",
+   "title": "Overnight Gaps: Stop Loss Risks Explained for Traders",
+   "channel": "SharePlanner",
+   "words": 123,
+   "minutes": 0.5,
+   "gap_and_go_mentions": 0,
+   "dropped": "under five minutes"
+  },
+  {
+   "id": "M__Zbbq016Y",
+   "title": "Algorithmic Trading Strategies: The Fair Value Gap  #trading #algotrading #python #backtestea",
+   "channel": "CodeTrading",
+   "dropped": "no transcript: IpBlocked"
+  }
+ ]
+}
