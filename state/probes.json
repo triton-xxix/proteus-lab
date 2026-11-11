@@ -10295,9 +10295,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-11",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:38:09+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -10305,7 +10305,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "top three trades carry about 35 percent of E-017 total net profit, and the total stays above zero with the best five removed",
+    "at": "2026-11-11T23:38:16+0000"
+   }
   },
   {
    "id": "P-0411",
