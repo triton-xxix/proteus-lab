@@ -10315,9 +10315,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:36:23+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -10325,7 +10325,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "13 of 13 README example commands found in the source tables for the station the README names; source read as text, not executed",
+    "at": "2026-11-11T23:36:38+0000"
+   }
   }
  ]
 }
