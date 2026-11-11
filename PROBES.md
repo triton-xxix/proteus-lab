@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 324 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,7 @@ Verdicts so far: 324 works, 7 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0395 | GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyless; how many are gone, how many READMEs changed by sha256, and do the 7 paste-and-run matches go faster than the other 28? | desk | none | 2026-11-12 | 0 | 15 min |
+| P-0405 | Entry price noise on the v0.2 Grinder book: for the 92 rows of grinder/LEDGER.csv, gap between ledger entry price and the first saved candle open, split by snapshot age, and the book's total P and L re-walked with paths.walk from the candle price instead of the snapshot price. How many exits flip and by how many pounds does the total move? | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (388)
 

@@ -1,5 +1,5 @@
 {
- "next_id": 405,
+ "next_id": 406,
  "items": [
   {
    "id": "P-0001",
@@ -10140,6 +10140,32 @@
     "number": "median absolute gap to the entry-minute close under 1 percent, 3 of 29 beyond 5 percent",
     "at": "2026-11-11T12:32:45+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0405",
+   "title": "Entry price noise on the v0.2 Grinder book: for the 92 rows of grinder/LEDGER.csv, gap between ledger entry price and the first saved candle open, split by snapshot age, and the book's total P and L re-walked with paths.walk from the candle price instead of the snapshot price. How many exits flip and by how many pounds does the total move?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T12:39:50+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "median absolute gap about 3 percent, 8 of 92 exit reasons flip, book total moves by under 150 pounds",
+    "at": "2026-11-11T12:39:56+0000"
    }
   }
  ]
