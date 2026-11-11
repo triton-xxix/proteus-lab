@@ -1,5 +1,5 @@
 {
- "next_id": 417,
+ "next_id": 418,
  "items": [
   {
    "id": "P-0001",
@@ -10488,6 +10488,32 @@
     "number": "the lead-1 ICON day high differs between UTC and Berlin days on about 12 percent of Nov to Feb days and at most 1 of 31 July days",
     "at": "2026-11-11T23:45:27+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0417",
+   "title": "ICON lead-1 bias on the METAR day high by season at Munich EDDM and Heathrow EGLL: Nov 2025 to Mar 2026 and Jun to Aug 2026 by month, P-0406 method; does Munich keep its autumn bias like Paris or lose it like Madrid",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:46:25+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "Munich EDDM lead-1 bias at the airport point about +0.2 C Dec to Feb (inside 2 se) and about +0.5 C Jun to Aug (outside), against +0.41 in autumn",
+    "at": "2026-11-11T23:46:36+0000"
    }
   }
  ]
