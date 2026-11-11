@@ -1,5 +1,5 @@
 {
- "next_id": 419,
+ "next_id": 420,
  "items": [
   {
    "id": "P-0001",
@@ -10546,6 +10546,32 @@
     "number": "the mean of the city and airport points has the lowest lead-1 MAE over Nov 2025 to Oct 2026, about 1.0 C against about 1.15 C for either alone",
     "at": "2026-11-11T23:48:04+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0419",
+   "title": "The three voided Grinder trades (G-0075, G-0076, G-0077, entered off a 24-hour-old snapshot on 12 Oct): the gap between the voided entry price and the first candle, and what each would have made under v0.2 rules walked from both prices, beside P-0415's four oldest-snapshot losers",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:49:30+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "at least two of the three voided trades lose from the stale price, about -150 pounds between them, and the median gap to the first candle is over 20 percent",
+    "at": "2026-11-11T23:49:35+0000"
    }
   }
  ]
