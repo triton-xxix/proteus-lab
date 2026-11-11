@@ -1,5 +1,5 @@
 {
- "next_id": 406,
+ "next_id": 407,
  "items": [
   {
    "id": "P-0001",
@@ -10169,6 +10169,32 @@
     "number": "median absolute gap about 3 percent, 8 of 92 exit reasons flip, book total moves by under 150 pounds",
     "at": "2026-11-11T12:39:56+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0406",
+   "title": "ICON lead-1 bias on the METAR high in winter: at LFPG and LEMD from 1 Nov 2025 to 31 Mar 2026 (the previous-runs archive does reach Nov 2025, checked), P-0391's four.py method, METAR minus icon_seamless by month. Is the autumn +0.88 and +1.00 cold bias still there in December to February, and is any month inside 2 se of zero?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T12:41:28+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "Dec to Feb lead-1 bias about +0.4 C at both airports, smaller than autumn but still outside 2 se; 2 of 10 airport-months inside 2 se",
+    "at": "2026-11-11T12:41:33+0000"
    }
   }
  ]
