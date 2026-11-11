@@ -10527,22 +10527,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:47:57+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:49:01+0000",
+   "note": "Measured lead-1 MAE against the EDDM METAR high over 365 days, Nov 2025 to Oct 2026: city point 1.048 C, airport point 1.049, mean of the two 0.977; exact degree 27.7, 30.1 and 30.7 percent (shot: mean best, about 1.0 v 1.15; right on direction, the gap is 0.07 not 0.15). The two points take turns: the first-half winner of a month is the second-half winner in 5 of 12, following it scores 1.02 and carrying last month winner 1.04, against the mean at 0.97 and 0.98. The nightly prompt quotes MAE 0.67 from 24 autumn days; the year is 1.05. Caveat: fitted on the days it is scored on, one year, UTC days, an airport sensor change at 19 Apr inside the window (MAE 1.19 before, 0.92 after). Next: promote (register the two-point mean for Munich calls in a daytime slot, with forward days to score it; not changed tonight).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0418"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "the mean of the city and airport points has the lowest lead-1 MAE over Nov 2025 to Oct 2026, about 1.0 C against about 1.15 C for either alone",
-    "at": "2026-11-11T23:48:04+0000"
+    "at": "2026-11-11T23:48:04+0000",
+    "hit": true
    }
   }
  ]

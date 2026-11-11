@@ -1,0 +1,435 @@
+{
+ "days": 365,
+ "year": {
+  "city": {
+   "n": 365,
+   "bias": 0.17,
+   "mae": 1.048,
+   "exact_degree": 0.277,
+   "within_1": 0.764
+  },
+  "airport": {
+   "n": 365,
+   "bias": 0.5,
+   "mae": 1.049,
+   "exact_degree": 0.301,
+   "within_1": 0.773
+  },
+  "mean": {
+   "n": 365,
+   "bias": 0.33,
+   "mae": 0.977,
+   "exact_degree": 0.307,
+   "within_1": 0.814
+  }
+ },
+ "months": {
+  "2025-11": {
+   "city": {
+    "n": 30,
+    "bias": -0.74,
+    "mae": 1.34,
+    "exact_degree": 0.2,
+    "within_1": 0.733
+   },
+   "airport": {
+    "n": 30,
+    "bias": 0.5,
+    "mae": 1.033,
+    "exact_degree": 0.267,
+    "within_1": 0.833
+   },
+   "mean": {
+    "n": 30,
+    "bias": -0.12,
+    "mae": 0.937,
+    "exact_degree": 0.367,
+    "within_1": 0.767
+   },
+   "nearest_first_half": "mean",
+   "nearest_second_half": "airport"
+  },
+  "2025-12": {
+   "city": {
+    "n": 31,
+    "bias": -0.3,
+    "mae": 1.097,
+    "exact_degree": 0.323,
+    "within_1": 0.774
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.48,
+    "mae": 1.355,
+    "exact_degree": 0.323,
+    "within_1": 0.677
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.09,
+    "mae": 1.168,
+    "exact_degree": 0.29,
+    "within_1": 0.774
+   },
+   "nearest_first_half": "city",
+   "nearest_second_half": "city"
+  },
+  "2026-01": {
+   "city": {
+    "n": 31,
+    "bias": -0.51,
+    "mae": 1.306,
+    "exact_degree": 0.226,
+    "within_1": 0.677
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.75,
+    "mae": 1.313,
+    "exact_degree": 0.258,
+    "within_1": 0.613
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.12,
+    "mae": 1.119,
+    "exact_degree": 0.258,
+    "within_1": 0.806
+   },
+   "nearest_first_half": "city",
+   "nearest_second_half": "airport"
+  },
+  "2026-02": {
+   "city": {
+    "n": 28,
+    "bias": -0.29,
+    "mae": 1.168,
+    "exact_degree": 0.214,
+    "within_1": 0.714
+   },
+   "airport": {
+    "n": 28,
+    "bias": 0.7,
+    "mae": 1.146,
+    "exact_degree": 0.214,
+    "within_1": 0.679
+   },
+   "mean": {
+    "n": 28,
+    "bias": 0.21,
+    "mae": 0.993,
+    "exact_degree": 0.25,
+    "within_1": 0.786
+   },
+   "nearest_first_half": "airport",
+   "nearest_second_half": "city"
+  },
+  "2026-03": {
+   "city": {
+    "n": 31,
+    "bias": 0.66,
+    "mae": 1.097,
+    "exact_degree": 0.161,
+    "within_1": 0.677
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.55,
+    "mae": 0.932,
+    "exact_degree": 0.29,
+    "within_1": 0.742
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.6,
+    "mae": 0.998,
+    "exact_degree": 0.258,
+    "within_1": 0.71
+   },
+   "nearest_first_half": "airport",
+   "nearest_second_half": "airport"
+  },
+  "2026-04": {
+   "city": {
+    "n": 30,
+    "bias": 0.42,
+    "mae": 0.937,
+    "exact_degree": 0.3,
+    "within_1": 0.8
+   },
+   "airport": {
+    "n": 30,
+    "bias": 0.39,
+    "mae": 1.04,
+    "exact_degree": 0.333,
+    "within_1": 0.733
+   },
+   "mean": {
+    "n": 30,
+    "bias": 0.41,
+    "mae": 0.968,
+    "exact_degree": 0.3,
+    "within_1": 0.8
+   },
+   "nearest_first_half": "city",
+   "nearest_second_half": "airport"
+  },
+  "2026-05": {
+   "city": {
+    "n": 31,
+    "bias": 0.6,
+    "mae": 0.832,
+    "exact_degree": 0.29,
+    "within_1": 0.839
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.26,
+    "mae": 0.59,
+    "exact_degree": 0.581,
+    "within_1": 0.935
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.43,
+    "mae": 0.702,
+    "exact_degree": 0.387,
+    "within_1": 0.935
+   },
+   "nearest_first_half": "airport",
+   "nearest_second_half": "airport"
+  },
+  "2026-06": {
+   "city": {
+    "n": 30,
+    "bias": 0.24,
+    "mae": 0.913,
+    "exact_degree": 0.433,
+    "within_1": 0.733
+   },
+   "airport": {
+    "n": 30,
+    "bias": 0.32,
+    "mae": 1.063,
+    "exact_degree": 0.233,
+    "within_1": 0.767
+   },
+   "mean": {
+    "n": 30,
+    "bias": 0.28,
+    "mae": 0.928,
+    "exact_degree": 0.4,
+    "within_1": 0.767
+   },
+   "nearest_first_half": "mean",
+   "nearest_second_half": "city"
+  },
+  "2026-07": {
+   "city": {
+    "n": 31,
+    "bias": 0.62,
+    "mae": 0.832,
+    "exact_degree": 0.258,
+    "within_1": 0.871
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.49,
+    "mae": 0.884,
+    "exact_degree": 0.161,
+    "within_1": 0.903
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.55,
+    "mae": 0.826,
+    "exact_degree": 0.194,
+    "within_1": 0.935
+   },
+   "nearest_first_half": "city",
+   "nearest_second_half": "airport"
+  },
+  "2026-08": {
+   "city": {
+    "n": 31,
+    "bias": 0.84,
+    "mae": 1.626,
+    "exact_degree": 0.097,
+    "within_1": 0.548
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.68,
+    "mae": 1.406,
+    "exact_degree": 0.097,
+    "within_1": 0.677
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.76,
+    "mae": 1.516,
+    "exact_degree": 0.065,
+    "within_1": 0.677
+   },
+   "nearest_first_half": "airport",
+   "nearest_second_half": "airport"
+  },
+  "2026-09": {
+   "city": {
+    "n": 30,
+    "bias": 0.39,
+    "mae": 0.673,
+    "exact_degree": 0.533,
+    "within_1": 0.933
+   },
+   "airport": {
+    "n": 30,
+    "bias": 0.6,
+    "mae": 0.757,
+    "exact_degree": 0.533,
+    "within_1": 0.933
+   },
+   "mean": {
+    "n": 30,
+    "bias": 0.5,
+    "mae": 0.672,
+    "exact_degree": 0.533,
+    "within_1": 0.933
+   },
+   "nearest_first_half": "city",
+   "nearest_second_half": "mean"
+  },
+  "2026-10": {
+   "city": {
+    "n": 31,
+    "bias": 0.08,
+    "mae": 0.755,
+    "exact_degree": 0.29,
+    "within_1": 0.871
+   },
+   "airport": {
+    "n": 31,
+    "bias": 0.23,
+    "mae": 1.071,
+    "exact_degree": 0.323,
+    "within_1": 0.774
+   },
+   "mean": {
+    "n": 31,
+    "bias": 0.15,
+    "mae": 0.884,
+    "exact_degree": 0.387,
+    "within_1": 0.871
+   },
+   "nearest_first_half": "city",
+   "nearest_second_half": "city"
+  }
+ },
+ "first_half_winner_is_second_half_winner": "5 of 12 months",
+ "second_halves": {
+  "follow_the_first_half_winner": {
+   "n": 185,
+   "bias": 0.17,
+   "mae": 1.021,
+   "exact_degree": 0.335,
+   "within_1": 0.762
+  },
+  "always_city": {
+   "n": 185,
+   "bias": 0.12,
+   "mae": 1.052,
+   "exact_degree": 0.286,
+   "within_1": 0.768
+  },
+  "always_airport": {
+   "n": 185,
+   "bias": 0.35,
+   "mae": 1.004,
+   "exact_degree": 0.351,
+   "within_1": 0.789
+  },
+  "always_mean": {
+   "n": 185,
+   "bias": 0.24,
+   "mae": 0.968,
+   "exact_degree": 0.341,
+   "within_1": 0.811
+  }
+ },
+ "carry_last_months_winner": {
+  "carried": {
+   "n": 335,
+   "bias": 0.35,
+   "mae": 1.037,
+   "exact_degree": 0.284,
+   "within_1": 0.785
+  },
+  "always_city": {
+   "n": 335,
+   "bias": 0.26,
+   "mae": 1.022,
+   "exact_degree": 0.284,
+   "within_1": 0.767
+  },
+  "always_airport": {
+   "n": 335,
+   "bias": 0.5,
+   "mae": 1.051,
+   "exact_degree": 0.304,
+   "within_1": 0.767
+  },
+  "always_mean": {
+   "n": 335,
+   "bias": 0.38,
+   "mae": 0.98,
+   "exact_degree": 0.301,
+   "within_1": 0.818
+  }
+ },
+ "to_2026-04-19": {
+  "city": {
+   "n": 170,
+   "bias": -0.17,
+   "mae": 1.194,
+   "exact_degree": 0.229,
+   "within_1": 0.712
+  },
+  "airport": {
+   "n": 170,
+   "bias": 0.58,
+   "mae": 1.185,
+   "exact_degree": 0.265,
+   "within_1": 0.694
+  },
+  "mean": {
+   "n": 170,
+   "bias": 0.21,
+   "mae": 1.07,
+   "exact_degree": 0.276,
+   "within_1": 0.759
+  }
+ },
+ "from_2026-04-20": {
+  "city": {
+   "n": 195,
+   "bias": 0.47,
+   "mae": 0.921,
+   "exact_degree": 0.318,
+   "within_1": 0.81
+  },
+  "airport": {
+   "n": 195,
+   "bias": 0.42,
+   "mae": 0.931,
+   "exact_degree": 0.333,
+   "within_1": 0.841
+  },
+  "mean": {
+   "n": 195,
+   "bias": 0.45,
+   "mae": 0.896,
+   "exact_degree": 0.333,
+   "within_1": 0.862
+  }
+ }
+}
