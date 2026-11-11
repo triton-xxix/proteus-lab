@@ -10179,22 +10179,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T12:41:28+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T12:42:21+0000",
+   "note": "Measured Dec to Feb lead-1 bias (METAR high minus ICON) +0.58 C at Paris CDG (se 0.10, n 90) and +0.09 C at Madrid (se 0.13, n 90), against +0.88 and +1.00 in autumn 2026 (shot: about +0.4 at both and 2 of 10 airport-months inside 2 se; measured 6 of 10 inside, right on Paris, wrong on Madrid). Paris keeps about two thirds of its cold bias, outside 2 se in 4 of 5 months; Madrid is inside 2 se in all 5 and slightly warm at lead 0 (-0.16). A flat per-airport correction would have cost about 0.9 C at Madrid in winter. Caveat: one winter, whole-degree METAR, UTC days, and the winter is 2025-26 against an autumn 2026 baseline. Next: close (the lesson is per airport and per season; any book change is a desk call).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0406"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "Dec to Feb lead-1 bias about +0.4 C at both airports, smaller than autumn but still outside 2 se; 2 of 10 airport-months inside 2 se",
-    "at": "2026-11-11T12:41:33+0000"
+    "at": "2026-11-11T12:41:33+0000",
+    "hit": true
    }
   }
  ]

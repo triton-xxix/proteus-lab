@@ -1,0 +1,222 @@
+{
+ "LFPG": {
+  "model_point": [
+   49.001747,
+   2.537855
+  ],
+  "model_elevation_m": 107.0,
+  "metar_days": 151,
+  "lead0": {
+   "all": {
+    "mean": 0.35,
+    "sd": 0.54,
+    "se": 0.04,
+    "n": 151,
+    "outside_2se": true
+   },
+   "dec_to_feb": {
+    "mean": 0.39,
+    "sd": 0.56,
+    "se": 0.06,
+    "n": 90,
+    "outside_2se": true
+   },
+   "2025-11": {
+    "mean": 0.19,
+    "sd": 0.51,
+    "se": 0.09,
+    "n": 30,
+    "outside_2se": true
+   },
+   "2025-12": {
+    "mean": 0.36,
+    "sd": 0.49,
+    "se": 0.09,
+    "n": 31,
+    "outside_2se": true
+   },
+   "2026-01": {
+    "mean": 0.34,
+    "sd": 0.56,
+    "se": 0.1,
+    "n": 31,
+    "outside_2se": true
+   },
+   "2026-02": {
+    "mean": 0.49,
+    "sd": 0.63,
+    "se": 0.12,
+    "n": 28,
+    "outside_2se": true
+   },
+   "2026-03": {
+    "mean": 0.39,
+    "sd": 0.49,
+    "se": 0.09,
+    "n": 31,
+    "outside_2se": true
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.5,
+    "sd": 0.98,
+    "se": 0.08,
+    "n": 151,
+    "outside_2se": true
+   },
+   "dec_to_feb": {
+    "mean": 0.58,
+    "sd": 0.99,
+    "se": 0.1,
+    "n": 90,
+    "outside_2se": true
+   },
+   "2025-11": {
+    "mean": 0.25,
+    "sd": 1.11,
+    "se": 0.2,
+    "n": 30,
+    "outside_2se": false
+   },
+   "2025-12": {
+    "mean": 0.63,
+    "sd": 0.87,
+    "se": 0.16,
+    "n": 31,
+    "outside_2se": true
+   },
+   "2026-01": {
+    "mean": 0.55,
+    "sd": 0.96,
+    "se": 0.17,
+    "n": 31,
+    "outside_2se": true
+   },
+   "2026-02": {
+    "mean": 0.57,
+    "sd": 1.15,
+    "se": 0.22,
+    "n": 28,
+    "outside_2se": true
+   },
+   "2026-03": {
+    "mean": 0.5,
+    "sd": 0.78,
+    "se": 0.14,
+    "n": 31,
+    "outside_2se": true
+   }
+  }
+ },
+ "LEMD": {
+  "model_point": [
+   40.5,
+   -3.5625
+  ],
+  "model_elevation_m": 593.0,
+  "metar_days": 151,
+  "lead0": {
+   "all": {
+    "mean": -0.16,
+    "sd": 0.73,
+    "se": 0.06,
+    "n": 151,
+    "outside_2se": true
+   },
+   "dec_to_feb": {
+    "mean": -0.15,
+    "sd": 0.74,
+    "se": 0.08,
+    "n": 90,
+    "outside_2se": false
+   },
+   "2025-11": {
+    "mean": -0.12,
+    "sd": 0.63,
+    "se": 0.12,
+    "n": 30,
+    "outside_2se": false
+   },
+   "2025-12": {
+    "mean": -0.27,
+    "sd": 0.78,
+    "se": 0.14,
+    "n": 31,
+    "outside_2se": false
+   },
+   "2026-01": {
+    "mean": 0.06,
+    "sd": 0.76,
+    "se": 0.14,
+    "n": 31,
+    "outside_2se": false
+   },
+   "2026-02": {
+    "mean": -0.24,
+    "sd": 0.66,
+    "se": 0.12,
+    "n": 28,
+    "outside_2se": false
+   },
+   "2026-03": {
+    "mean": -0.24,
+    "sd": 0.81,
+    "se": 0.15,
+    "n": 31,
+    "outside_2se": false
+   }
+  },
+  "lead1": {
+   "all": {
+    "mean": 0.04,
+    "sd": 1.21,
+    "se": 0.1,
+    "n": 151,
+    "outside_2se": false
+   },
+   "dec_to_feb": {
+    "mean": 0.09,
+    "sd": 1.2,
+    "se": 0.13,
+    "n": 90,
+    "outside_2se": false
+   },
+   "2025-11": {
+    "mean": 0.02,
+    "sd": 1.15,
+    "se": 0.21,
+    "n": 30,
+    "outside_2se": false
+   },
+   "2025-12": {
+    "mean": -0.11,
+    "sd": 1.04,
+    "se": 0.19,
+    "n": 31,
+    "outside_2se": false
+   },
+   "2026-01": {
+    "mean": 0.11,
+    "sd": 1.46,
+    "se": 0.26,
+    "n": 31,
+    "outside_2se": false
+   },
+   "2026-02": {
+    "mean": 0.27,
+    "sd": 1.04,
+    "se": 0.2,
+    "n": 28,
+    "outside_2se": false
+   },
+   "2026-03": {
+    "mean": -0.1,
+    "sd": 1.3,
+    "se": 0.23,
+    "n": 31,
+    "outside_2se": false
+   }
+  }
+ }
+}
