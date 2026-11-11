@@ -10208,22 +10208,25 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T12:42:40+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T12:43:25+0000",
+   "note": "Measured: the previous-runs endpoint honours timezone. Offsets reported 0, 3600 and 50400 s; the Berlin and Kiritimati hourly series equal the UTC pull at shifts of 1 and 14 slots on 167 of 167 and 154 of 154 values, lead 1 included; day max differs from UTC days on 0 of 7 Berlin days and 7 of 7 Kiritimati days, by up to 4.7 C (shot: same offsets and shifts, 6 of 7 and 0 of 7). So P-0392 identical UTC and Berlin highs were real, not an ignored parameter, and the day-max scripts since P-0281 ran on the days they asked for. Caveat: one point, one week of November, hourly variables only; a one hour shift could still move a daily low. Next: close (nothing to fix).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0407"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "timezone is honoured: offsets 0, 3600 and 50400 seconds, series line up at 1 and 14 slots, day max differs on 6 of 7 Kiritimati days and 0 of 7 Berlin days",
-    "at": "2026-11-11T12:42:46+0000"
+    "at": "2026-11-11T12:42:46+0000",
+    "hit": true
    }
   }
  ]

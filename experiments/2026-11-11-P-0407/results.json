@@ -1,0 +1,142 @@
+{
+ "probe": "P-0407",
+ "zones": {
+  "UTC": {
+   "utc_offset_seconds": 0,
+   "timezone": "GMT",
+   "abbreviation": "GMT",
+   "first_time": "2026-11-01T00:00",
+   "last_time": "2026-11-07T23:00",
+   "slots": 168,
+   "first_slot_as_utc": "2026-11-01T00:00",
+   "temperature_2m": {
+    "full_days": 7,
+    "day_max": {
+     "2026-11-01": 7.5,
+     "2026-11-02": 6.7,
+     "2026-11-03": 4.9,
+     "2026-11-04": 6.1,
+     "2026-11-05": 7.7,
+     "2026-11-06": 4.1,
+     "2026-11-07": 8.0
+    },
+    "days_compared_with_utc": 7,
+    "day_max_differs_from_utc_days": 0,
+    "largest_difference_c": 0.0
+   },
+   "temperature_2m_previous_day1": {
+    "full_days": 7,
+    "day_max": {
+     "2026-11-01": 7.6,
+     "2026-11-02": 6.4,
+     "2026-11-03": 6.6,
+     "2026-11-04": 7.1,
+     "2026-11-05": 8.8,
+     "2026-11-06": 4.1,
+     "2026-11-07": 8.2
+    },
+    "days_compared_with_utc": 7,
+    "day_max_differs_from_utc_days": 0,
+    "largest_difference_c": 0.0
+   }
+  },
+  "Europe/Berlin": {
+   "utc_offset_seconds": 3600,
+   "timezone": "Europe/Berlin",
+   "abbreviation": "GMT+1",
+   "first_time": "2026-11-01T00:00",
+   "last_time": "2026-11-07T23:00",
+   "slots": 168,
+   "first_slot_as_utc": "2026-10-31T23:00",
+   "temperature_2m": {
+    "against_utc_pull": {
+     "shift_slots": 1,
+     "equal": 167,
+     "compared": 167
+    },
+    "full_days": 7,
+    "day_max": {
+     "2026-11-01": 7.5,
+     "2026-11-02": 6.7,
+     "2026-11-03": 4.9,
+     "2026-11-04": 6.1,
+     "2026-11-05": 7.7,
+     "2026-11-06": 4.1,
+     "2026-11-07": 8.0
+    },
+    "days_compared_with_utc": 7,
+    "day_max_differs_from_utc_days": 0,
+    "largest_difference_c": 0.0
+   },
+   "temperature_2m_previous_day1": {
+    "against_utc_pull": {
+     "shift_slots": 1,
+     "equal": 167,
+     "compared": 167
+    },
+    "full_days": 7,
+    "day_max": {
+     "2026-11-01": 7.6,
+     "2026-11-02": 6.4,
+     "2026-11-03": 6.6,
+     "2026-11-04": 7.1,
+     "2026-11-05": 8.8,
+     "2026-11-06": 4.1,
+     "2026-11-07": 8.2
+    },
+    "days_compared_with_utc": 7,
+    "day_max_differs_from_utc_days": 0,
+    "largest_difference_c": 0.0
+   }
+  },
+  "Pacific/Kiritimati": {
+   "utc_offset_seconds": 50400,
+   "timezone": "Pacific/Kiritimati",
+   "abbreviation": "GMT+14",
+   "first_time": "2026-11-01T00:00",
+   "last_time": "2026-11-07T23:00",
+   "slots": 168,
+   "first_slot_as_utc": "2026-10-31T10:00",
+   "temperature_2m": {
+    "against_utc_pull": {
+     "shift_slots": 14,
+     "equal": 154,
+     "compared": 154
+    },
+    "full_days": 7,
+    "day_max": {
+     "2026-11-01": 9.1,
+     "2026-11-02": 7.5,
+     "2026-11-03": 6.7,
+     "2026-11-04": 4.9,
+     "2026-11-05": 6.1,
+     "2026-11-06": 7.7,
+     "2026-11-07": 5.9
+    },
+    "days_compared_with_utc": 7,
+    "day_max_differs_from_utc_days": 7,
+    "largest_difference_c": 3.6
+   },
+   "temperature_2m_previous_day1": {
+    "against_utc_pull": {
+     "shift_slots": 14,
+     "equal": 154,
+     "compared": 154
+    },
+    "full_days": 7,
+    "day_max": {
+     "2026-11-01": 9.1,
+     "2026-11-02": 7.6,
+     "2026-11-03": 6.4,
+     "2026-11-04": 6.6,
+     "2026-11-05": 7.1,
+     "2026-11-06": 8.8,
+     "2026-11-07": 5.7
+    },
+    "days_compared_with_utc": 7,
+    "day_max_differs_from_utc_days": 7,
+    "largest_difference_c": 4.7
+   }
+  }
+ }
+}
