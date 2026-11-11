@@ -1,5 +1,5 @@
 {
- "next_id": 412,
+ "next_id": 413,
  "items": [
   {
    "id": "P-0001",
@@ -10343,6 +10343,32 @@
     "number": "13 of 13 README example commands found in the source tables for the station the README names; source read as text, not executed",
     "at": "2026-11-11T23:36:38+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0412",
+   "title": "Harvest probe code age at queue time: for every harvest.jsonl row with a probe_id, the repo's age in days when queued (meta.created for GitHub rows, GitHub API for repo links in other rows), the share under 14 days, and how those probes' verdicts split against older ones",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:39:57+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "about 60 percent of queued harvest probes with a GitHub repo were under 14 days old when queued",
+    "at": "2026-11-11T23:40:02+0000"
    }
   }
  ]
