@@ -10150,22 +10150,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T12:39:50+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T12:40:59+0000",
+   "note": "Measured median absolute gap 4.34 percent between ledger entry price and the first candle open on 89 rows (the ledger has 89, not 92), 7 exit reasons flip, total at 100 pounds a trade moves from -1205.65 to -1094.43, by +111.22 (shot: about 3 percent, 8 flips, under 150 pounds; gap not blind after P-0404, flips and pounds were). One row is +99.42 of that: G-0078 was bought off a 15.7 minute old snapshot at a price 98.7 percent above the market. The other 88 move the total by +11.80, about 13p a trade. Gap grows with snapshot age: 3.87 percent under 6 min (73 rows), 6.44 at 6 to 15 (12), 33.8 at 15 plus (4). Entry noise is real but nets to nothing; it is not why the book lost. Caveat: both walks under v0.2 rules and costs, so these are not the published totals. Next: close (the guard worth having is one line, skip a snapshot over 10 minutes old, and the book is stopped anyway under F-0084).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0405"
+   ],
+   "minutes": 1,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "median absolute gap about 3 percent, 8 of 92 exit reasons flip, book total moves by under 150 pounds",
-    "at": "2026-11-11T12:39:56+0000"
+    "at": "2026-11-11T12:39:56+0000",
+    "hit": true
    }
   }
  ]
