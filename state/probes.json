@@ -1,5 +1,5 @@
 {
- "next_id": 416,
+ "next_id": 417,
  "items": [
   {
    "id": "P-0001",
@@ -10459,6 +10459,32 @@
     "number": "no guard line lifts the ledger-entry total above -1,000 pounds; the 10-minute age guard drops about 9 of 89 trades",
     "at": "2026-11-11T23:44:18+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0416",
+   "title": "UTC day against Berlin day for Munich's ICON day high and low: July 2026 (two hours apart) and Nov 2025 to Feb 2026 (one hour), on how many days do they differ and by how much; tonight's 13 Nov forecast has its high at local midnight behind a front",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T23:45:15+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "the lead-1 ICON day high differs between UTC and Berlin days on about 12 percent of Nov to Feb days and at most 1 of 31 July days",
+    "at": "2026-11-11T23:45:27+0000"
    }
   }
  ]
