@@ -1,5 +1,5 @@
 {
- "next_id": 410,
+ "next_id": 411,
  "items": [
   {
    "id": "P-0001",
@@ -10286,6 +10286,26 @@
     "at": "2026-11-11T12:46:06+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0410",
+   "title": "E-017 gap and go with its best three trades removed: from the edge scan's own trade list for E-017 (121 trades), total and mean return with the best 3 and best 5 trades taken out, and the share of total profit the top three carry, beside the 92 percent a 537-trade gap-and-go video reported (P-0409).",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-11",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
