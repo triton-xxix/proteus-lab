@@ -1,5 +1,5 @@
 {
- "next_id": 408,
+ "next_id": 409,
  "items": [
   {
    "id": "P-0001",
@@ -10227,6 +10227,32 @@
     "number": "timezone is honoured: offsets 0, 3600 and 50400 seconds, series line up at 1 and 14 slots, day max differs on 6 of 7 Kiritimati days and 0 of 7 Berlin days",
     "at": "2026-11-11T12:42:46+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0408",
+   "title": "Key discovery by value overlap v column name on two more SQLite samples: Northwind (jpwhite3/northwind-SQLite3) and Sakila (bradleygrant/sakila-sqlite3), opened read-only with P-0397's overlap rules. Precision of full value overlap and recall of the same-column-name rule against the declared foreign keys, beside Chinook's 9 percent and 9 of 10.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-11",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-11T12:44:40+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "full value overlap precision under 20 percent on both databases; same-column-name recall at least 0.8 on both, with at least one false positive by name on Sakila",
+    "at": "2026-11-11T12:44:44+0000"
    }
   }
  ]
