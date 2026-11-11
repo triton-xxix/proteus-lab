@@ -1,32 +1,32 @@
 {
  "summary": {
-  "n": 151,
+  "n": 165,
   "waiting": 0,
-  "hits": 139,
-  "hit_rate": 0.921,
+  "hits": 153,
+  "hit_rate": 0.927,
   "mean_p": 0.663,
-  "brier": 0.143,
-  "brier_at_hit_rate": 0.073,
-  "called_works": 140,
-  "called_works_hits": 133,
-  "called_other": 11,
-  "called_other_hits": 6,
-  "verdict_works": 138,
+  "brier": 0.142,
+  "brier_at_hit_rate": 0.067,
+  "called_works": 151,
+  "called_works_hits": 144,
+  "called_other": 14,
+  "called_other_hits": 9,
+  "verdict_works": 149,
   "first": "2026-10-12",
-  "last": "2026-11-09"
+  "last": "2026-11-10"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 18,
-   "mean_p": 0.494,
-   "hit_rate": 0.889
+   "n": 22,
+   "mean_p": 0.495,
+   "hit_rate": 0.909
   },
   {
    "label": "55%",
-   "n": 14,
+   "n": 15,
    "mean_p": 0.55,
-   "hit_rate": 0.786
+   "hit_rate": 0.8
   },
   {
    "label": "60 to 65%",
@@ -36,15 +36,15 @@
   },
   {
    "label": "70 to 75%",
-   "n": 56,
-   "mean_p": 0.722,
-   "hit_rate": 0.946
+   "n": 62,
+   "mean_p": 0.723,
+   "hit_rate": 0.952
   },
   {
    "label": "80% and up",
-   "n": 20,
-   "mean_p": 0.828,
-   "hit_rate": 0.95
+   "n": 23,
+   "mean_p": 0.824,
+   "hit_rate": 0.957
   }
  ],
  "rows": [
@@ -1557,6 +1557,146 @@
    "hit": 1,
    "number": "fastest fee clears the minimum of every block seen, mean overpay against block median about +1 sat/vB",
    "at": "2026-11-09T12:32:00+0000"
+  },
+  {
+   "id": "P-0389",
+   "title": "Grinder insider-zero shadow filter: on the next 20 G and R01 entries after 20 Oct, kept (graph_insiders over 0 (DUE.md D-016): probe P-0185,",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.5,
+   "hit": 1,
+   "number": "0 G or R01 entries after 20 Oct",
+   "at": "2026-11-10T12:32:48+0000"
+  },
+  {
+   "id": "P-0390",
+   "title": "GeckoTerminal two-second gap: on 3 new Solana pools, page one-hour volume then /pools/ADDRESS two seconds later, three rounds; does the sing",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "single above page on 6 of 9 reads, median ratio about 2",
+   "at": "2026-11-10T12:34:26+0000"
+  },
+  {
+   "id": "P-0391",
+   "title": "ICON lead-1 METAR-high bias at four continental airports: EDDM, EHAM, LFPG, LEMD, Sep and Oct 2026, Iowa State METAR against icon_seamless p",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "median of the four lead-1 METAR minus ICON biases about +0.3 C, two of four outside 2 se",
+   "at": "2026-11-10T12:38:13+0000"
+  },
+  {
+   "id": "P-0392",
+   "title": "Munich METAR sign by week: city-point ICON lead-1 high (Europe/Berlin) against the EDDM METAR high, every day 13 Oct to 9 Nov, split into P-",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "week from 3 Nov METAR minus city point below -0.3 C, week from 13 Oct above 0",
+   "at": "2026-11-10T12:40:08+0000"
+  },
+  {
+   "id": "P-0393",
+   "title": "Sentinel-2 daily scene counts: Earth Search numberMatched for sentinel-2a, 2b and 2c each UTC day 27 Oct to 9 Nov (one POST each, limit 1); ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "2B on 3 Nov within 20 pct of its own 14-day median, no outage",
+   "at": "2026-11-10T12:42:01+0000"
+  },
+  {
+   "id": "P-0394",
+   "title": "GitHub tiny paste-link baseline: rerun P-0386's count.py on today's 3-day window and save the matching repos' numeric ids to sandbox/ only (",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "tiny paste-and-run matches between 6 and 14 (9 Nov: 10)",
+   "at": "2026-11-10T12:44:05+0000"
+  },
+  {
+   "id": "P-0396",
+   "title": "Memory-map path check: how many index links in Proteus MEMORY.md point at a missing or empty file?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "0 missing and 0 empty of about 45 index links",
+   "at": "2026-11-10T23:33:11+0000"
+  },
+  {
+   "id": "P-0397",
+   "title": "auto-ontology-mcp: does its deterministic validator flag a bad integer-overlap join on a public SQLite DB?",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.8,
+   "hit": 1,
+   "number": "repo not run unattended; on Chinook, value-overlap alone marks true foreign keys with precision under 20 pct",
+   "at": "2026-11-10T23:34:05+0000"
+  },
+  {
+   "id": "P-0398",
+   "title": "modern-web-guidance legacy-scan: is precision on five public repos near the claimed 92 percent?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "precision on a hand-labelled sample of about 25 flags between 70 and 95 pct",
+   "at": "2026-11-10T23:34:51+0000"
+  },
+  {
+   "id": "P-0399",
+   "title": "ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyless?",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.5,
+   "hit": 1,
+   "number": "not installed: package 5 days old, 10 versions, latest published 10 Nov 13:33Z",
+   "at": "2026-11-10T23:36:20+0000"
+  },
+  {
+   "id": "P-0400",
+   "title": "Memory files' repo paths: how many file, script or folder paths named inside the 47 Proteus memories no longer exist under /Users/triton/PRO",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "between 3 and 12 named paths missing, out of roughly 120 path mentions",
+   "at": "2026-11-10T23:36:38+0000"
+  },
+  {
+   "id": "P-0401",
+   "title": "GeckoTerminal single-pool lag: on one new Solana pool read at 0, 10, 30, 60 and 120 s, how far does the pool endpoint's h1 transaction count",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "single endpoint h1 count unchanged across at least 3 of 5 reads while the trades list gains trades",
+   "at": "2026-11-10T23:37:41+0000"
+  },
+  {
+   "id": "P-0402",
+   "title": "Grinder gate census 21 Oct to 10 Nov: per night, which gate rejects most, how many rows fail exactly one gate, and how many would pass with ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "vol_h1 the top gate on most nights; fewer than 10 rows one gate away in the window; 0 to 3 would pass with a quarter eased",
+   "at": "2026-11-10T23:40:43+0000"
+  },
+  {
+   "id": "P-0403",
+   "title": "Grinder v0.2 and R01 bankroll from the ledgers: realised total, bankroll against the 100 GBP stake, the date it first fell below, and how ma",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "v0.2 bankroll 11.33 GBP from the ledger and R01 bankroll below zero; shot after reading P-0318 and the kill-check line",
+   "at": "2026-11-10T23:42:08+0000"
   }
  ]
 }

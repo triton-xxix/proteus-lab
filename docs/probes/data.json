@@ -1,17 +1,17 @@
 {
  "summary": {
-  "n": 373,
+  "n": 387,
   "by_verdict": {
-   "works": 312,
+   "works": 323,
    "not-worth-it": 17,
-   "blocked": 37,
+   "blocked": 40,
    "broken": 7
   },
   "open": 11,
   "killed": 5,
-  "minutes_total": 622,
+  "minutes_total": 632,
   "minutes_median": 1,
-  "calls_total": 4157,
+  "calls_total": 4280,
   "pages": 7,
   "first": "2026-09-24",
   "last": "2026-11-10"
@@ -19,32 +19,32 @@
  "by_source": [
   {
    "source": "refill",
-   "n": 134,
-   "works": 125,
+   "n": 141,
+   "works": 132,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 0
   },
   {
    "source": "harvest",
-   "n": 88,
-   "works": 69,
+   "n": 91,
+   "works": 70,
    "not-worth-it": 2,
-   "blocked": 11,
+   "blocked": 13,
    "broken": 6
   },
   {
    "source": "desk",
-   "n": 86,
-   "works": 71,
+   "n": 89,
+   "works": 73,
    "not-worth-it": 5,
-   "blocked": 9,
+   "blocked": 10,
    "broken": 1
   },
   {
    "source": "vault",
-   "n": 22,
-   "works": 12,
+   "n": 23,
+   "works": 13,
    "not-worth-it": 4,
    "blocked": 6,
    "broken": 0
@@ -126,9 +126,9 @@
   },
   {
    "week": "2026-11-09",
-   "works": 8,
+   "works": 19,
    "not-worth-it": 1,
-   "blocked": 2,
+   "blocked": 5,
    "broken": 1
   }
  ],
@@ -5585,6 +5585,244 @@
    "artefact": "experiments/2026-11-09-P-0388",
    "page": false,
    "shot": null
+  },
+  {
+   "id": "P-0389",
+   "title": "Grinder insider-zero shadow filter: on the next 20 G and R01 entries after 20 Oct, kept (graph_insiders over 0 (DUE.md D-016): probe P-0185, method experiments/2026-10-2…",
+   "source": "desk",
+   "verdict": "blocked",
+   "at": "2026-11-10T12:33:33+0000",
+   "minutes": 1,
+   "calls": 14,
+   "note": "Measured 0 G or R01 entries after 20 Oct at the D-016 backstop (shot: 0, blocked at 0.50, hit; shot after looking at the morning kill-check line, R01 still 29 closed). Last R01 entries R-0027 to R-0029 20 Oct 22:38Z, G last G-0092 16 Oct; insider snapshots land nightly to 9 Nov, so input exists, trades do not. n 0 of…",
+   "artefact": "experiments/2026-11-10-P-0389",
+   "page": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0390",
+   "title": "GeckoTerminal two-second gap: on 3 new Solana pools, page one-hour volume then /pools/ADDRESS two seconds later, three rounds; does the single endpoint still read above…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T12:36:56+0000",
+   "minutes": 2,
+   "calls": 6,
+   "note": "Measured single above page on 5 of 9 reads, equal 4, never below, median ratio 1.56 (shot: 6 of 9, about 2). At a 2.5 s gap TOAD read 1 trade on the page v 17 on the single endpoint, and the page repeated the same 1-trade row 25 s later for all three pools: the page row is frozen at first trade, so it is cache, not tr…",
+   "artefact": "experiments/2026-11-10-P-0390",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0391",
+   "title": "ICON lead-1 METAR-high bias at four continental airports: EDDM, EHAM, LFPG, LEMD, Sep and Oct 2026, Iowa State METAR against icon_seamless previous-runs at each airport;…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T12:39:12+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Measured ICON lead-1 METAR minus forecast on 61 days: EDDM +0.41 (se 0.18), EHAM +0.23 (0.09), LFPG +0.88 (0.15), LEMD +1.00 (0.16), all four outside 2 se; median +0.65 v shot +0.3, two outside, a miss on both numbers. ICON is cold on the METAR high everywhere, like the UK +0.41 and +0.58. Munich airport point reads +…",
+   "artefact": "experiments/2026-11-10-P-0391",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0392",
+   "title": "Munich METAR sign by week: city-point ICON lead-1 high (Europe/Berlin) against the EDDM METAR high, every day 13 Oct to 9 Nov, split into P-0335's days, P-0387's band da…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T12:41:10+0000",
+   "minutes": 1,
+   "calls": 9,
+   "note": "Measured METAR minus city-point ICON lead 1 by week: +0.04, -0.13, +0.13, then -0.87 (se 0.57) for 3 to 9 Nov (shot: last week below -0.3, first above 0, a hit). P-0335 +0.03 and P-0387 -0.49 both reproduce to the hundredth on their own days, so the gap is the day set; 9 Nov alone at -3.6 carries it, without it P-0387…",
+   "artefact": "experiments/2026-11-10-P-0392",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0393",
+   "title": "Sentinel-2 daily scene counts: Earth Search numberMatched for sentinel-2a, 2b and 2c each UTC day 27 Oct to 9 Nov (one POST each, limit 1); is 2B's 3 Nov count a real dr…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T12:43:18+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Measured 2B 5,108 scenes on 3 Nov against a 14-day median of 5,962, 0.86, its lowest day but inside its own low-day group (5,108 to 5,383, alternating with 6.0 to 6.7k); shot said within 20 pct, a hit, called at 0.5 after seeing the 3 Nov count. 2A 0.82 and 2C 1.04 that day; no platform below half its median on any of…",
+   "artefact": "experiments/2026-11-10-P-0393",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0394",
+   "title": "GitHub tiny paste-link baseline: rerun P-0386's count.py on today's 3-day window and save the matching repos' numeric ids to sandbox/ only (counts in the artefact, no na…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T12:45:33+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Measured 7 tiny paste-and-run matches among 119 repos created since 7 Nov with 50+ stars (35 tiny; paste links 8 of 35 tiny v 2 of 84 larger), against 10 on 9 Nov; shot said 6 to 14, a hit. Ids, stars and README hashes of all 35 tiny repos saved to sandbox/ only, no names committed. Regex counts, not audited. Next: de…",
+   "artefact": "experiments/2026-11-10-P-0394",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0396",
+   "title": "Memory-map path check: how many index links in Proteus MEMORY.md point at a missing or empty file?",
+   "source": "vault",
+   "verdict": "works",
+   "at": "2026-11-10T23:33:40+0000",
+   "minutes": 0,
+   "calls": 10,
+   "note": "Measured 0 missing and 0 empty of 46 index links (shot 0 of about 45, a hit), but the reverse check found 1 file on disk the index never named: feedback_short_window_edges.md, the 19 Oct instruction behind the edge desk, unindexed for 22 days; index line added tonight. Also 15 wiki-link uses of 9 slugs match no memory…",
+   "artefact": "experiments/2026-11-10-P-0396",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0397",
+   "title": "auto-ontology-mcp: does its deterministic validator flag a bad integer-overlap join on a public SQLite DB?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-10T23:34:39+0000",
+   "minutes": 0,
+   "calls": 11,
+   "note": "Tool not run. The slice underneath, my own script on Chinook: of 218 integer column to key candidates, 110 overlap fully and 100 of those are accidents, so value overlap alone is right 9 pct of the time (shot said under 20, a hit); 45 of 90 key-to-key pairs overlap just because ids start at 1. Same column name gets 9…",
+   "artefact": "experiments/2026-11-10-P-0397",
+   "page": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0398",
+   "title": "modern-web-guidance legacy-scan: is precision on five public repos near the claimed 92 percent?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-10T23:36:03+0000",
+   "minutes": 1,
+   "calls": 19,
+   "note": "Measured 47 of 47 flags meeting the tool own keep and drop rubric on Bootstrap 3.4.1 (progress 32, password autocomplete 12, scrollspy 3), against 92 pct claimed and my shot of 70 to 95: verdict hit, number missed high. But only 3 of 35 rules fired, all 47 sit in docs and demo markup (half are repeated code samples),…",
+   "artefact": "experiments/2026-11-10-P-0398",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0399",
+   "title": "ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyless?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-10T23:36:30+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Not installed. Registry record read keyless: ztd-charts-cli created 5 Nov, 10 versions in 5 days, latest 0.7.0 published 10 Nov 13:33Z about ten hours before the run, one maintainer, 11.8 MB unpacked with a native resvg binary; 0.7.0 is the first with a provenance attestation. Nothing wrong found; it is a days-old pac…",
+   "artefact": "experiments/2026-11-10-P-0399",
+   "page": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0400",
+   "title": "Memory files' repo paths: how many file, script or folder paths named inside the 47 Proteus memories no longer exist under /Users/triton/PROTEUS?",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-10T23:37:06+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Measured 136 distinct repo paths named across 48 memory files: 116 exist as written, 6 placeholders, 7 bare names found in the sub-folder the memory names, 7 flagged missing and all 7 false alarms on reading (3 date patterns, 1 function call, 2 files the memory places outside the repo, 1 script named as not yet built)…",
+   "artefact": "experiments/2026-11-10-P-0400",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0401",
+   "title": "GeckoTerminal single-pool lag: on one new Solana pool read at 0, 10, 30, 60 and 120 s, how far does the pool endpoint's h1 transaction count trail the trades list's own…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T23:40:02+0000",
+   "minutes": 2,
+   "calls": 4,
+   "note": "Measured the single-pool endpoint frozen across 4 of 5 reads on a 1.4-minute-old pool trading about six times a second: 663 h1 transactions and a price identical to 60 digits at 0, 10, 30 and 60 s, then 924 at 120 s (shot said unchanged on at least 3 of 5, a hit). The trades list is cached too, one response served at…",
+   "artefact": "experiments/2026-11-10-gt-single-lag",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0402",
+   "title": "Grinder gate census 21 Oct to 10 Nov: per night, which gate rejects most, how many rows fail exactly one gate, and how many would pass with that gate eased by a quarter?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-10T23:41:23+0000",
+   "minutes": 0,
+   "calls": 10,
+   "note": "Measured 156 rows passing every gate over 19 nights (2 to 14 a night, 4 tonight), so the gate is not why the Grinder is quiet: open_book only looks for candidates when bankroll is at least the stake, and v0.2 sits at 11.33 GBP against a 100 GBP stake (TRACK-RECORD figure, not recomputed). The binding-constraints line…",
+   "artefact": "experiments/2026-11-10-gate-census",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0403",
+   "title": "Grinder v0.2 and R01 bankroll from the ledgers: realised total, bankroll against the 100 GBP stake, the date it first fell below, and how many all-gate passers since wer…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-10T23:42:57+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Recomputed from the ledgers: v0.2 realised -988.67 GBP on 83 closed, bankroll 11.33, below one 100 GBP stake since 17 Oct 00:18Z; R01 realised -1093.83 on 29 closed, bankroll -93.83, below since 20 Oct 23:10Z; neither has entered since, and all 4 of tonight gate-passers are mints never held. Correction: P-0318 found t…",
+   "artefact": "experiments/2026-11-10-P-0403",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
   }
  ]
 }
