@@ -10237,22 +10237,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T12:44:40+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T12:45:16+0000",
+   "note": "Measured full value overlap precision 0.195 on Northwind (8 true of 41 flagged) and 0.085 on Sakila (20 of 236), same-column-name recall 7 of 8 and 19 of 20, with 4 false positives by name on Sakila (film_id against the empty film_text table); Chinook was 0.09 and 9 of 10 (shot: under 20 percent on both, recall at least 0.8 on both, at least one Sakila false positive; all three held, Northwind by half a point). Every name miss on three databases is a role name (ShipVia, manager_staff_id, SupportRepId); overlap and name together were 100 percent precise on all three. Caveat: integer single-column keys only, which leaves out 5 of 13 declared Northwind keys (text ids, composite, same-table); one Sakila key outside the candidates is unexplained. Next: close (three samples agree; the tool itself stays blocked on an attended session).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0408"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "full value overlap precision under 20 percent on both databases; same-column-name recall at least 0.8 on both, with at least one false positive by name on Sakila",
-    "at": "2026-11-11T12:44:44+0000"
+    "at": "2026-11-11T12:44:44+0000",
+    "hit": true
    }
   }
  ]

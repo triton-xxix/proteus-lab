@@ -1,0 +1,168 @@
+{
+ "northwind": {
+  "db": "northwind",
+  "tables": 13,
+  "integer_columns": 20,
+  "single_column_integer_keys": 7,
+  "candidate_pairs": 125,
+  "declared_fks_total": 13,
+  "declared_fks_in_pairs": 8,
+  "declared_fks_outside_pairs": [
+   "CustomerCustomerDemo.CustomerID -> Customers.CustomerID",
+   "CustomerCustomerDemo.CustomerTypeID -> CustomerDemographics.CustomerTypeID",
+   "EmployeeTerritories.TerritoryID -> Territories.TerritoryID",
+   "Employees.ReportsTo -> Employees.EmployeeID",
+   "Orders.CustomerID -> Customers.CustomerID"
+  ],
+  "full_overlap": 41,
+  "accidental_full_overlap": 33,
+  "rules": [
+   {
+    "rule": "containment 1.0 only",
+    "flagged": 41,
+    "true": 8,
+    "false": 33,
+    "missed": 0,
+    "precision": 0.195,
+    "recall": 1.0
+   },
+   {
+    "rule": "containment 1.0 and child is not its own table's key",
+    "flagged": 26,
+    "true": 8,
+    "false": 18,
+    "missed": 0,
+    "precision": 0.308,
+    "recall": 1.0
+   },
+   {
+    "rule": "containment 1.0 and same column name",
+    "flagged": 7,
+    "true": 7,
+    "false": 0,
+    "missed": 1,
+    "precision": 1.0,
+    "recall": 0.875
+   },
+   {
+    "rule": "same column name only",
+    "flagged": 7,
+    "true": 7,
+    "false": 0,
+    "missed": 1,
+    "precision": 1.0,
+    "recall": 0.875
+   }
+  ],
+  "true_fk_below_full_overlap": [],
+  "missed_by_name_rule": [
+   {
+    "child": "Orders.ShipVia",
+    "parent": "Shippers.ShipperID",
+    "containment": 1.0,
+    "name_match": false,
+    "child_is_own_pk": false,
+    "true_fk": true
+   }
+  ],
+  "false_by_name_rule": []
+ },
+ "sakila": {
+  "db": "sakila",
+  "tables": 16,
+  "integer_columns": 38,
+  "single_column_integer_keys": 13,
+  "candidate_pairs": 436,
+  "declared_fks_total": 22,
+  "declared_fks_in_pairs": 20,
+  "declared_fks_outside_pairs": [
+   "film.original_language_id -> language.language_id",
+   "film_actor.actor_id -> actor.actor_id"
+  ],
+  "full_overlap": 236,
+  "accidental_full_overlap": 216,
+  "rules": [
+   {
+    "rule": "containment 1.0 only",
+    "flagged": 236,
+    "true": 20,
+    "false": 216,
+    "missed": 0,
+    "precision": 0.085,
+    "recall": 1.0
+   },
+   {
+    "rule": "containment 1.0 and child is not its own table's key",
+    "flagged": 174,
+    "true": 20,
+    "false": 154,
+    "missed": 0,
+    "precision": 0.115,
+    "recall": 1.0
+   },
+   {
+    "rule": "containment 1.0 and same column name",
+    "flagged": 19,
+    "true": 19,
+    "false": 0,
+    "missed": 1,
+    "precision": 1.0,
+    "recall": 0.95
+   },
+   {
+    "rule": "same column name only",
+    "flagged": 23,
+    "true": 19,
+    "false": 4,
+    "missed": 1,
+    "precision": 0.826,
+    "recall": 0.95
+   }
+  ],
+  "true_fk_below_full_overlap": [],
+  "missed_by_name_rule": [
+   {
+    "child": "store.manager_staff_id",
+    "parent": "staff.staff_id",
+    "containment": 1.0,
+    "name_match": false,
+    "child_is_own_pk": false,
+    "true_fk": true
+   }
+  ],
+  "false_by_name_rule": [
+   {
+    "child": "film.film_id",
+    "parent": "film_text.film_id",
+    "containment": 0.0,
+    "name_match": true,
+    "child_is_own_pk": true,
+    "true_fk": false
+   },
+   {
+    "child": "film_actor.film_id",
+    "parent": "film_text.film_id",
+    "containment": 0.0,
+    "name_match": true,
+    "child_is_own_pk": false,
+    "true_fk": false
+   },
+   {
+    "child": "film_category.film_id",
+    "parent": "film_text.film_id",
+    "containment": 0.0,
+    "name_match": true,
+    "child_is_own_pk": false,
+    "true_fk": false
+   },
+   {
+    "child": "inventory.film_id",
+    "parent": "film_text.film_id",
+    "containment": 0.0,
+    "name_match": true,
+    "child_is_own_pk": false,
+    "true_fk": false
+   }
+  ]
+ }
+}
