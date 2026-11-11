@@ -10295,22 +10295,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:38:09+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:39:28+0000",
+   "note": "Measured the top three trades carrying 44.2 percent of E-017 total on its 121 admission trades (rebuilt at +36.90 percent, matching the register), total +20.58 with the best 3 removed, +13.73 with the best 5, and -0.31 with the best 10: ten trades are the whole profit (shot: about 35 percent and above zero at five removed; right on the second, 9 points low on the first). The video said 92 percent from three of 537. Not asked for: on all 393 trades in the 60-day feed the rule made +19.80 percent, mean 0.050 a trade, and -1.95 with the best three out, so the 272 trades outside the admission weeks lost about 17 percent. Caveat: a description of a sample already seen, E-017 forward week and pass line untouched; the 60-day pull was not checked by hand for the 11 Nov session. Next: close (D-026 on 17 Nov is the test).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0410"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "top three trades carry about 35 percent of E-017 total net profit, and the total stays above zero with the best five removed",
-    "at": "2026-11-11T23:38:16+0000"
+    "at": "2026-11-11T23:38:16+0000",
+    "hit": true
    }
   },
   {

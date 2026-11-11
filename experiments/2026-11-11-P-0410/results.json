@@ -1,0 +1,321 @@
+{
+ "cost_round_trip": 0.0003,
+ "admission_sessions": [
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22",
+  "2026-10-23",
+  "2026-10-26",
+  "2026-10-27",
+  "2026-10-28",
+  "2026-10-29",
+  "2026-10-30",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-06",
+  "2026-11-09"
+ ],
+ "thresholds": {
+  "0.5%": {
+   "admission": {
+    "n": 121,
+    "total_pct": 36.896,
+    "mean_pct": 0.3049,
+    "win_pct": 54.5,
+    "gross_wins_pct": 97.228,
+    "best1_removed_total_pct": 29.401,
+    "best1_removed_mean_pct": 0.245,
+    "best1_share_of_total": 0.203,
+    "best1_share_of_gross_wins": 0.077,
+    "best3_removed_total_pct": 20.579,
+    "best3_removed_mean_pct": 0.1744,
+    "best3_share_of_total": 0.442,
+    "best3_share_of_gross_wins": 0.168,
+    "best5_removed_total_pct": 13.725,
+    "best5_removed_mean_pct": 0.1183,
+    "best5_share_of_total": 0.628,
+    "best5_share_of_gross_wins": 0.238,
+    "best10_removed_total_pct": -0.306,
+    "best10_removed_mean_pct": -0.0028,
+    "best10_share_of_total": 1.008,
+    "best10_share_of_gross_wins": 0.383,
+    "best_removed_to_reach_zero": 10,
+    "worst3_removed_total_pct": 52.212
+   },
+   "all_sessions_in_feed": {
+    "n": 393,
+    "total_pct": 19.797,
+    "mean_pct": 0.0504,
+    "win_pct": 46.1,
+    "gross_wins_pct": 245.258,
+    "best1_removed_total_pct": 10.898,
+    "best1_removed_mean_pct": 0.0278,
+    "best1_share_of_total": 0.45,
+    "best1_share_of_gross_wins": 0.036,
+    "best3_removed_total_pct": -1.947,
+    "best3_removed_mean_pct": -0.005,
+    "best3_share_of_total": 1.098,
+    "best3_share_of_gross_wins": 0.089,
+    "best5_removed_total_pct": -11.575,
+    "best5_removed_mean_pct": -0.0298,
+    "best5_share_of_total": 1.585,
+    "best5_share_of_gross_wins": 0.128,
+    "best10_removed_total_pct": -30.013,
+    "best10_removed_mean_pct": -0.0784,
+    "best10_share_of_total": 2.516,
+    "best10_share_of_gross_wins": 0.203,
+    "best_removed_to_reach_zero": 3,
+    "worst3_removed_total_pct": 38.043
+   },
+   "sessions_in_feed": 57
+  },
+  "1%": {
+   "admission": {
+    "n": 78,
+    "total_pct": 25.739,
+    "mean_pct": 0.33,
+    "win_pct": 56.4,
+    "gross_wins_pct": 70.364,
+    "best1_removed_total_pct": 18.245,
+    "best1_removed_mean_pct": 0.2369,
+    "best1_share_of_total": 0.291,
+    "best1_share_of_gross_wins": 0.107,
+    "best3_removed_total_pct": 10.442,
+    "best3_removed_mean_pct": 0.1392,
+    "best3_share_of_total": 0.594,
+    "best3_share_of_gross_wins": 0.217,
+    "best5_removed_total_pct": 4.515,
+    "best5_removed_mean_pct": 0.0618,
+    "best5_share_of_total": 0.825,
+    "best5_share_of_gross_wins": 0.302,
+    "best10_removed_total_pct": -8.374,
+    "best10_removed_mean_pct": -0.1231,
+    "best10_share_of_total": 1.325,
+    "best10_share_of_gross_wins": 0.485,
+    "best_removed_to_reach_zero": 7,
+    "worst3_removed_total_pct": 41.056
+   },
+   "all_sessions_in_feed": {
+    "n": 216,
+    "total_pct": 23.82,
+    "mean_pct": 0.1103,
+    "win_pct": 48.1,
+    "gross_wins_pct": 162.919,
+    "best1_removed_total_pct": 14.921,
+    "best1_removed_mean_pct": 0.0694,
+    "best1_share_of_total": 0.374,
+    "best1_share_of_gross_wins": 0.055,
+    "best3_removed_total_pct": 2.076,
+    "best3_removed_mean_pct": 0.0097,
+    "best3_share_of_total": 0.913,
+    "best3_share_of_gross_wins": 0.133,
+    "best5_removed_total_pct": -5.727,
+    "best5_removed_mean_pct": -0.0271,
+    "best5_share_of_total": 1.24,
+    "best5_share_of_gross_wins": 0.181,
+    "best10_removed_total_pct": -22.854,
+    "best10_removed_mean_pct": -0.1109,
+    "best10_share_of_total": 1.959,
+    "best10_share_of_gross_wins": 0.286,
+    "best_removed_to_reach_zero": 4,
+    "worst3_removed_total_pct": 42.066
+   },
+   "sessions_in_feed": 55
+  },
+  "2%": {
+   "admission": {
+    "n": 37,
+    "total_pct": 13.702,
+    "mean_pct": 0.3703,
+    "win_pct": 59.5,
+    "gross_wins_pct": 37.913,
+    "best1_removed_total_pct": 6.208,
+    "best1_removed_mean_pct": 0.1724,
+    "best1_share_of_total": 0.547,
+    "best1_share_of_gross_wins": 0.198,
+    "best3_removed_total_pct": -0.739,
+    "best3_removed_mean_pct": -0.0217,
+    "best3_share_of_total": 1.054,
+    "best3_share_of_gross_wins": 0.381,
+    "best5_removed_total_pct": -5.801,
+    "best5_removed_mean_pct": -0.1813,
+    "best5_share_of_total": 1.423,
+    "best5_share_of_gross_wins": 0.514,
+    "best10_removed_total_pct": -15.766,
+    "best10_removed_mean_pct": -0.5839,
+    "best10_share_of_total": 2.151,
+    "best10_share_of_gross_wins": 0.777,
+    "best_removed_to_reach_zero": 3,
+    "worst3_removed_total_pct": 22.994
+   },
+   "all_sessions_in_feed": {
+    "n": 76,
+    "total_pct": 21.729,
+    "mean_pct": 0.2859,
+    "win_pct": 52.6,
+    "gross_wins_pct": 80.705,
+    "best1_removed_total_pct": 12.83,
+    "best1_removed_mean_pct": 0.1711,
+    "best1_share_of_total": 0.41,
+    "best1_share_of_gross_wins": 0.11,
+    "best3_removed_total_pct": -0.015,
+    "best3_removed_mean_pct": -0.0002,
+    "best3_share_of_total": 1.001,
+    "best3_share_of_gross_wins": 0.269,
+    "best5_removed_total_pct": -7.5,
+    "best5_removed_mean_pct": -0.1056,
+    "best5_share_of_total": 1.345,
+    "best5_share_of_gross_wins": 0.362,
+    "best10_removed_total_pct": -22.828,
+    "best10_removed_mean_pct": -0.3459,
+    "best10_share_of_total": 2.051,
+    "best10_share_of_gross_wins": 0.552,
+    "best_removed_to_reach_zero": 3,
+    "worst3_removed_total_pct": 35.548
+   },
+   "sessions_in_feed": 36
+  }
+ },
+ "top10_admission_trades": [
+  {
+   "sym": "AMD",
+   "date": "2026-11-09",
+   "side": 1,
+   "gap_pct": 5.425,
+   "net_pct": 7.4945
+  },
+  {
+   "sym": "TSLA",
+   "date": "2026-11-09",
+   "side": 1,
+   "gap_pct": 0.571,
+   "net_pct": 4.8749
+  },
+  {
+   "sym": "META",
+   "date": "2026-10-22",
+   "side": -1,
+   "gap_pct": -3.242,
+   "net_pct": 3.9476
+  },
+  {
+   "sym": "AMD",
+   "date": "2026-10-27",
+   "side": 1,
+   "gap_pct": 1.509,
+   "net_pct": 3.8552
+  },
+  {
+   "sym": "AMD",
+   "date": "2026-10-22",
+   "side": -1,
+   "gap_pct": -5.261,
+   "net_pct": 2.9989
+  },
+  {
+   "sym": "TSLA",
+   "date": "2026-10-19",
+   "side": 1,
+   "gap_pct": 0.794,
+   "net_pct": 2.9366
+  },
+  {
+   "sym": "AMZN",
+   "date": "2026-10-22",
+   "side": -1,
+   "gap_pct": -1.584,
+   "net_pct": 2.9282
+  },
+  {
+   "sym": "NFLX",
+   "date": "2026-11-04",
+   "side": 1,
+   "gap_pct": 1.878,
+   "net_pct": 2.7964
+  },
+  {
+   "sym": "AMZN",
+   "date": "2026-10-19",
+   "side": 1,
+   "gap_pct": 2.161,
+   "net_pct": 2.7389
+  },
+  {
+   "sym": "TSLA",
+   "date": "2026-11-06",
+   "side": 1,
+   "gap_pct": 1.557,
+   "net_pct": 2.6311
+  }
+ ],
+ "worst5_admission_trades": [
+  {
+   "sym": "AMD",
+   "date": "2026-11-02",
+   "side": 1,
+   "gap_pct": 1.083,
+   "net_pct": -8.6288
+  },
+  {
+   "sym": "AMZN",
+   "date": "2026-10-30",
+   "side": -1,
+   "gap_pct": -4.791,
+   "net_pct": -3.4446
+  },
+  {
+   "sym": "NVDA",
+   "date": "2026-11-09",
+   "side": -1,
+   "gap_pct": -7.307,
+   "net_pct": -3.2431
+  },
+  {
+   "sym": "NVDA",
+   "date": "2026-11-02",
+   "side": 1,
+   "gap_pct": 1.357,
+   "net_pct": -2.6265
+  },
+  {
+   "sym": "AMD",
+   "date": "2026-10-19",
+   "side": 1,
+   "gap_pct": 4.391,
+   "net_pct": -2.6044
+  }
+ ],
+ "by_sym": {
+  "SPY": 2.63,
+  "QQQ": 2.452,
+  "IWM": 0.468,
+  "TSLA": 8.815,
+  "NVDA": -4.956,
+  "META": 7.338,
+  "AMD": 7.058,
+  "AAPL": 1.766,
+  "AMZN": 5.341,
+  "MSFT": -1.504,
+  "GOOGL": 2.961,
+  "NFLX": 4.533
+ },
+ "by_day": {
+  "2026-10-19": 1.685,
+  "2026-10-22": 14.518,
+  "2026-10-23": -2.073,
+  "2026-10-30": 0.376,
+  "2026-11-04": 8.164,
+  "2026-11-09": 15.662,
+  "2026-10-21": -2.011,
+  "2026-10-29": -0.256,
+  "2026-11-02": -13.609,
+  "2026-11-06": -0.735,
+  "2026-10-20": -0.904,
+  "2026-10-26": 8.704,
+  "2026-10-27": 9.568,
+  "2026-10-28": -2.031,
+  "2026-11-03": -0.157
+ }
+}
