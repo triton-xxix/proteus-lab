@@ -12,8 +12,68 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 334,
+  "count": 340,
   "threads": [
+    {
+      "date": "2026-11-11",
+      "subject": "Abacus AI Agent (agent.abacus.ai)",
+      "kind": "tool",
+      "status": "dead",
+      "theme": "switching build tool",
+      "note": "Claude Code already covers build, fix, deploy here",
+      "where": "TRITON-CORE/Research/links/2026-11-11-abacus-ai-agent-promo.md",
+      "url": "https://www.instagram.com/p/DfmyrUTgSmi/"
+    },
+    {
+      "date": "2026-11-11",
+      "subject": "Abacus AI Agent (agent.abacus.ai)",
+      "kind": "tool",
+      "status": "intel",
+      "theme": "comment-for-DM-link funnel (same poster as the NVIDIA free models post)",
+      "note": "understand it, never operate it",
+      "where": "TRITON-CORE/Research/links/2026-11-11-abacus-ai-agent-promo.md",
+      "url": "https://www.instagram.com/p/DfmyrUTgSmi/"
+    },
+    {
+      "date": "2026-11-11",
+      "subject": "Abacus AI Agent (agent.abacus.ai)",
+      "kind": "tool",
+      "status": "open",
+      "theme": "parallel tasks plus one-prompt CRM and dashboard builds",
+      "note": "check if any claim beats current builds, only if slide 7 shows something specific",
+      "where": "TRITON-CORE/Research/links/2026-11-11-abacus-ai-agent-promo.md",
+      "url": "https://www.instagram.com/p/DfmyrUTgSmi/"
+    },
+    {
+      "date": "2026-11-11",
+      "subject": "Skool: Claude Code Club promo",
+      "kind": "service",
+      "status": "adopted",
+      "theme": "Skool community build",
+      "note": "vault has the skool-community framework already",
+      "where": "TRITON-CORE/Research/links/2026-11-11-skool-claude-code-club.md",
+      "url": "https://www.instagram.com/p/Den4ud4sOgC/"
+    },
+    {
+      "date": "2026-11-11",
+      "subject": "Skool: Claude Code Club promo",
+      "kind": "service",
+      "status": "open",
+      "theme": "pain-first hook plus five-bullet outcome list for a niche community",
+      "note": "test on a Neptune community offer",
+      "where": "TRITON-CORE/Research/links/2026-11-11-skool-claude-code-club.md",
+      "url": "https://www.instagram.com/p/Den4ud4sOgC/"
+    },
+    {
+      "date": "2026-11-11",
+      "subject": "Skool: Claude Code Club promo",
+      "kind": "service",
+      "status": "intel",
+      "theme": "comment-count lead trigger (186 comments)",
+      "note": "understand how it is run, never operate it",
+      "where": "TRITON-CORE/Research/links/2026-11-11-skool-claude-code-club.md",
+      "url": "https://www.instagram.com/p/Den4ud4sOgC/"
+    },
     {
       "date": "2026-11-10",
       "subject": "Automation Orbit AI OS (MAPS framework)",
@@ -3280,8 +3340,28 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 78,
+  "links_count": 80,
   "links": [
+    {
+      "date": "2026-11-11",
+      "subject": "Abacus AI Agent (agent.abacus.ai)",
+      "kind": "tool",
+      "where": "TRITON-CORE/Research/links/2026-11-11-abacus-ai-agent-promo.md",
+      "url": "https://www.instagram.com/p/DfmyrUTgSmi/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-11-11-abacus-ai-agent-promo.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Caption (via /embed/captioned, poster futurewalt.ai, carousel; link pointed at slide 7; slides not viewed):\nComment \"agent\" and get the link in your DM.\nWith Abacus AI Agent, you can build full-stack web apps, mobile apps, SaaS products, CRMs, dashboards, databases, and more - all from a simple prompt.\nFrom building and fixing your product to running tasks in parallel and getting it ready to deploy, Abacus AI Agent handles the heavy lifting.\nFrom idea -> build -> fix -> deploy.\nVisit now: agent.abacus.ai\n(15 comments)"
+    },
+    {
+      "date": "2026-11-11",
+      "subject": "Skool: Claude Code Club promo",
+      "kind": "service",
+      "where": "TRITON-CORE/Research/links/2026-11-11-skool-claude-code-club.md",
+      "url": "https://www.instagram.com/p/Den4ud4sOgC/",
+      "transcript_file": "TRITON-CORE/Research/links/2026-11-11-skool-claude-code-club.transcript.txt",
+      "transcript_state": "ok",
+      "transcript": "Caption (via /embed/captioned, poster skool_com, no speech captured; post is a Skool ad/promo):\nFor people who want to build with Claude Code but keep getting stuck in tutorials that go nowhere, Claude Code Club helps members set up Claude Code the right way and build real tools with AI, without writing code.\nWatching one tutorial after another without a clear next step leaves most of that learning unused. It stays hard to know where to start, what to build, or how it fits into real work.\nInside this private Skool community, members get: Guidance to set up Claude Code the right way; Ready-made skills and prompts; Clear direction on what to build next; Weekly updates and tips; Active builders in their corner.\nStop watching tutorials that go nowhere. Start building real tools with Claude Code.\n(186 comments)"
+    },
     {
       "date": "2026-11-10",
       "subject": "Automation Orbit AI OS (MAPS framework)",
