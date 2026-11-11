@@ -10556,22 +10556,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:49:30+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "broken",
+   "verdict_at": "2026-11-11T23:50:08+0000",
+   "note": "Measured 0, 1 and 0 candles in the three voided trades candle files: G-0075 and G-0077 are a header only, G-0076 has one bar 36 seconds after entry, so none can be walked (shot: works, two of three losing about 150 pounds; missed, the data is not there). The one number is G-0076 voided entry price 42.3 percent above that bar open, off a snapshot 24.5 hours old. The files are empty because the trades were voided the night after entry and the path fetch never ran for them; P-0405 counted 92 files, not 92 paths. Fix: one GeckoTerminal pull of the three pools minute candles for 12 to 14 Oct, if it still serves them; not tried tonight.",
+   "artefacts": [
+    "experiments/2026-11-11-P-0419"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "at least two of the three voided trades lose from the stale price, about -150 pounds between them, and the median gap to the first candle is over 20 percent",
-    "at": "2026-11-11T23:49:35+0000"
+    "at": "2026-11-11T23:49:35+0000",
+    "hit": false
    }
   }
  ]

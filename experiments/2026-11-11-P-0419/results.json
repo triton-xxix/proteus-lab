@@ -1,0 +1,41 @@
+{
+ "probe": "P-0419",
+ "rows": [
+  {
+   "id": "G-0075",
+   "skipped": "no saved candles"
+  },
+  {
+   "id": "G-0076",
+   "token": "TM",
+   "entered_at": "2026-10-12T22:54:22Z",
+   "candles": 1,
+   "snapshot_ts": "2026-10-11T22:23:37Z",
+   "snapshot_age_hours": 24.5,
+   "snapshot_price_is_entry": true,
+   "first_candle_lag_min": 0.6,
+   "entry_voided": 0.0005622,
+   "entry_candle": 0.0003951758554880827,
+   "gap_pct": 42.266,
+   "voided_reason": "time_stop",
+   "voided_exit_at": "2026-10-12T22:55:00Z",
+   "voided_hours_held": 0.0,
+   "voided_pnl_100": -31.39,
+   "candle_reason": "time_stop",
+   "candle_exit_at": "2026-10-12T22:55:00Z",
+   "candle_hours_held": 0.0,
+   "candle_pnl_100": -2.42
+  },
+  {
+   "id": "G-0077",
+   "skipped": "no saved candles"
+  }
+ ],
+ "total_from_voided_price": -31.39,
+ "total_from_candle_price": -2.42,
+ "p0415_four_oldest_snapshot_rows": {
+  "n": 4,
+  "ledger_total": -256.8,
+  "mean": -64.2
+ }
+}
