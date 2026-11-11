@@ -1,0 +1,46 @@
+{
+ "built_from": [
+  "experiments/2026-11-11-P-0404/results.json",
+  "experiments/2026-11-11-P-0405/results.json"
+ ],
+ "main_rows": 89,
+ "median_abs_gap_pct": 4.34,
+ "beyond_5pct": 38,
+ "flips": 7,
+ "total_ledger": -1205.65,
+ "total_candle": -1094.43,
+ "move": 111.22,
+ "worst_id": "G-0078",
+ "worst_move": 99.42,
+ "rest_move": 11.8,
+ "rest_per_trade_pence": 13,
+ "flip_net": 109.7,
+ "nonflip_move": 1.52,
+ "flips_up": 4,
+ "flips_down": 3,
+ "bands": {
+  "under_6_min": {
+   "n": 73,
+   "median": 3.87
+  },
+  "6_to_15_min": {
+   "n": 12,
+   "median": 6.44
+  },
+  "15_min_plus": {
+   "n": 4,
+   "median": 33.77
+  }
+ },
+ "r01_rows": 29,
+ "r01_median_abs_gap_pct": 4.2,
+ "r01_inside_candle": 8,
+ "r01_young": {
+  "n": 15,
+  "median": 2.35
+ },
+ "r01_old": {
+  "n": 14,
+  "median": 9.48
+ }
+}
