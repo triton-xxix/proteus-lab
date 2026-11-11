@@ -10411,22 +10411,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-11",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-11T23:42:58+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-11T23:43:50+0000",
+   "note": "Measured Jun to Aug 2026 lead-1 bias (METAR high minus ICON) +0.71 C at Madrid (se 0.09, n 92) and +0.37 C at Paris CDG (se 0.13, n 92), against +1.00 and +0.88 in autumn and +0.09 and +0.58 in winter (shot: about +1.3 and +0.9, both missed; larger than autumn, wrong). Madrid is outside 2 se in all three months and worse on days of 35 C or more (+0.84 v +0.53); Paris is inside 2 se in June and July. Autumn is the largest season at both airports, so the sun-driven reading fails and a one-season correction is off by up to 0.9 C in another. Caveat: one summer and a hot one at Paris, whole-degree METAR, UTC days, seasons from two different years, no Munich data. Next: close (it backs the nightly adding nothing to ICON; any book change is a desk call).",
+   "artefacts": [
+    "experiments/2026-11-11-P-0414"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "Madrid Jun to Aug lead-1 bias about +1.3 C, larger than autumn, and Paris about +0.9 C, both outside 2 se",
-    "at": "2026-11-11T23:43:04+0000"
+    "at": "2026-11-11T23:43:04+0000",
+    "hit": true
    }
   }
  ]
