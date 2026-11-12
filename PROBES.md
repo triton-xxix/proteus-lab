@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 347 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (8 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,7 @@ Verdicts so far: 347 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
+| P-0426 | Munich forecast points out of sample: on 1 to 11 Nov 2026, which of the city point, the airport point and their mean has the lowest MAE against the EDDM METAR high, and is the city point warm as in Nov 2025? | refill | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (412)
 
