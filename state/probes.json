@@ -1,5 +1,5 @@
 {
- "next_id": 420,
+ "next_id": 421,
  "items": [
   {
    "id": "P-0001",
@@ -8664,9 +8664,9 @@
    "after": "2026-11-12",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T12:33:36+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -8674,7 +8674,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "at most 5 of the 100 starts change outcome class in a week; Philosophy arrivals 46 to 50 against 48",
+    "at": "2026-11-12T12:34:10+0000"
+   }
   },
   {
    "id": "P-0349",
@@ -10585,6 +10591,26 @@
     "at": "2026-11-11T23:49:35+0000",
     "hit": false
    }
+  },
+  {
+   "id": "P-0420",
+   "title": "Munich ICON town bias by FORECAST sky: take day-ahead cloud_cover or sunshine_duration from the Open-Meteo previous-runs API for 15 Aug to 11 Nov, fit a correction on 15 Aug to 12 Oct, score it on 13 Oct to 11 Nov against flat +0.5 (MAE 1.09) and the observed-sun bound (0.98) from experiments/2026-11-12-P-0226",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-12",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
