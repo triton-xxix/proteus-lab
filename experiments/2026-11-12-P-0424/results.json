@@ -1,0 +1,50 @@
+{
+ "book_all": {
+  "n": 41,
+  "my_brier": 0.1772,
+  "market_brier": 0.1176,
+  "gap": 0.0596,
+  "ratio": 1.51
+ },
+ "book_munich": {
+  "n": 35,
+  "my_brier": 0.1848,
+  "market_brier": 0.1163,
+  "gap": 0.0685,
+  "ratio": 1.59
+ },
+ "book_other": {
+  "n": 6,
+  "my_brier": 0.1327,
+  "market_brier": 0.1249,
+  "gap": 0.0078,
+  "ratio": 1.06
+ },
+ "forecast_dojo": {
+  "scale": "multi-option Brier, uniform forecast 0.771",
+  "market": 0.498,
+  "best_model": 0.546,
+  "best_paired_gap": 0.05,
+  "best_ratio": 1.1,
+  "no_tools_mean": 0.769,
+  "no_tools_ratio": 1.54
+ },
+ "llm_crowds": {
+  "scale": "binary Brier, 208 Manifold items",
+  "final_market": 0.098,
+  "best_model": 0.273,
+  "local_models": [
+   0.362,
+   0.413
+  ],
+  "ratio_at_cutoff_range": [
+   1.61,
+   2.64
+  ],
+  "ratio_at_cutoff_mean": 1.95,
+  "clean_items_ratio_range": [
+   1.4,
+   2.68
+  ]
+ }
+}

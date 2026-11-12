@@ -10728,22 +10728,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:41:35+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:42:14+0000",
+   "note": "Forecast-Dojo prints market Brier 0.498 against its best model 0.546, a paired gap of 0.050 (shot said 0.01 to 0.03, missed), ratio 1.10; with no tools its models sit at 0.769, ratio 1.54. LLM Crowds prints single models 1.61 to 2.64 times the market at their cutoff. My book: 1.51 on 41 rows (0.1772 v 0.1176), Munich 1.59 on 35, non-Munich 1.06 on 6. So my gap is wider than their best model (hit) and the book as a whole sits at the no-tools level; the six searched calls sit beside the best with tools. Caveat: different Brier definitions and question sets, six rows, text and tables read not data. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0424"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "Forecast-Dojo's best model trails the market by 0.01 to 0.03 Brier, and my book's +0.06 is a wider gap than their best model's",
-    "at": "2026-11-12T23:41:39+0000"
+    "at": "2026-11-12T23:41:39+0000",
+    "hit": true
    }
   }
  ]

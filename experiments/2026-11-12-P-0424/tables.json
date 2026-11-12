@@ -1,0 +1,2549 @@
+{
+ "2609.28876": {
+  "abs_error": null,
+  "abstract": "Abstract: Forecasting requires large language model (LLM) agents to gather evolving evidence, revise their beliefs, and make calibrated predictions over time. Yet evaluating and improving these capabilities is challenging because real-world events unfold continuously and outcomes may take months to resolve. We introduce Forecast-Dojo, a replayable environment that reconstructs resolved prediction-market events as sequences of dated forecasting steps, enabling reproducible evaluation, longitudinal analysis, and training from agent interactions. It comprises 1,568 Polymarket events split temporally into training and evaluation sets, alongside 18.8 million dated news articles. Across 12 models, research tools consistently improve forecasting performance, and greater capture of new evidence is associated with larger improvements over time. Nevertheless, all models trail historical market forecasts, while carrying a belief notebook across dates reduces research costs without consistently improving forecast quality. We supervise fine-tuned Qwen3-30B-A3B-Thinking-2507 on collected trajectories from Qwen3-235B-A22B-Thinking-2507 to demonstrate the environment's training utility. The student's accuracy is improved from 34.8% to 42.8% on the evaluation set.",
+  "title": "[2609.28876] Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents",
+  "html_error": null,
+  "html_chars": 892175,
+  "tables": [
+   [
+    [
+     "Benchmark",
+     "Dated replay",
+     "Agent research",
+     "Aligned evaluation",
+     "Agent memory",
+     "Market belief",
+     "Train/eval split"
+    ],
+    [
+     "ForecastQA ( Jin et al., 2021 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Autocast ( Zou et al., 2022 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "MIRAI ( Ye et al., 2024 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "ForecastBench ( Karger et al., 2025 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "FutureX ( Zeng et al., 2025 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Prophet Arena ( Yang et al., 2025b )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "EvolveCast ( Yuan et al., 2025 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "BTF-2 ( Liptay et al., 2026 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "FutureSim ( Goel et al., 2026 )",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Forecast-Dojo",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ],
+   [
+    [
+     "",
+     "",
+     "",
+     "(1)"
+    ]
+   ],
+   [
+    [
+     "",
+     "No tools",
+     "Tools, memory-free",
+     "Tools, memory-on"
+    ],
+    [
+     "Model",
+     "Brier",
+     "Acc.",
+     "Info-",
+     "Brier",
+     "Acc.",
+     "Info-",
+     "Brier",
+     "Acc.",
+     "Info-"
+    ],
+    [
+     "Proprietary"
+    ],
+    [
+     "GPT-5.6 Sol",
+     ""
+    ],
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.5"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.006"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.008"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.9"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.023"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.3"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.017"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.001"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.6"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.008"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.7"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.010"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.005"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.0"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.013"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.8"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.015"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.4"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.006"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.005"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.0"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.021"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.8"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.006"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.8"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.023"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.008"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.1"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.019"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.5"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.007"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.003"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.9"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.008"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.5"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.006"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.006"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.6"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.016"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.0"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.024"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.4"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.017"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.005"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.7"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.021"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.2"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.007"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.010"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.9"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.027"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.002"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.8"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.011"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.010"
+    ]
+   ],
+   [
+    [
+     "\u00b1 2.2"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.024"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.009"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.7"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.005"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.005"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.9"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.011"
+    ]
+   ],
+   [
+    [
+     "\u2021"
+    ],
+    [
+     "\u00b1 0.012"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.7"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.031"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.007"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.6"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.022"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.0"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.017"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.012"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.9"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.042"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.019"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.5"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.064"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.004"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.5"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.023"
+    ]
+   ],
+   [
+    [
+     "\u2021"
+    ],
+    [
+     "\u00b1 0.010"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.6"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.020"
+    ]
+   ],
+   [
+    [
+     "\u00a7"
+    ],
+    [
+     "\u00b1 0.012"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.7"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.052"
+    ]
+   ],
+   [
+    [
+     "\u2020"
+    ],
+    [
+     "\u00b1 0.006"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.5"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.021"
+    ]
+   ],
+   [
+    [
+     "\u2021"
+    ],
+    [
+     "\u00b1 0.011"
+    ]
+   ],
+   [
+    [
+     "\u00b1 1.2"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.038"
+    ]
+   ],
+   [
+    [
+     "\u00a7"
+    ],
+    [
+     "\u00b1 0.019"
+    ]
+   ],
+   [
+    [
+     "\u00b1 2.7"
+    ]
+   ],
+   [
+    [
+     "\u00b1 0.031"
+    ]
+   ],
+   [
+    [
+     "",
+     "Brier",
+     "Acc.",
+     "Tool calls"
+    ],
+    [
+     "",
+     "All",
+     "Binary",
+     "Multi-option",
+     "(%)",
+     "/ forecast"
+    ],
+    [
+     "Uniform",
+     "0.771",
+     "0.500",
+     "0.832",
+     "22.9",
+     "\u2013"
+    ],
+    [
+     "Student (base)",
+     "0.924",
+     "0.704",
+     "0.975",
+     "34.8",
+     "1.4"
+    ],
+    [
+     "+ Dojo SFT",
+     "0.749",
+     "0.539",
+     "0.797",
+     "42.8",
+     "3.7"
+    ],
+    [
+     "Paired",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ],
+   [
+    [
+     "Stage",
+     "Deployed criterion"
+    ],
+    [
+     "1. Cleaning",
+     "Normalize whitespace and inline URLs; drop documents with an empty cleaned title or body."
+    ],
+    [
+     "2. Language",
+     "Keep documents that fastText identifies as English with confidence ."
+    ],
+    [
+     "3. Gopher repetition",
+     "Apply duplicate-line, duplicate-paragraph, and repeated -gram checks."
+    ],
+    [
+     "4. Gopher quality",
+     "Require 50\u2013100,000 non-symbol tokens, mean word length in , bounded symbol, bullet, and ellipsis ratios, alphabetic-word ratio , and at least two stop-word occurrences."
+    ],
+    [
+     "5. C4 quality",
+     "Apply C4 line and document cleanup and require at least five sentences."
+    ],
+    [
+     "6. FineWeb quality",
+     "Require at least of lines to end with terminal punctuation and at most short lines."
+    ],
+    [
+     "7a. URL deduplication",
+     "Remove documents whose canonicalized URL has already been seen."
+    ],
+    [
+     "7b. Title deduplication",
+     "Suppress identical normalized titles appearing within a seven-day window, retaining the earliest-published document."
+    ],
+    [
+     "7c. MinHash deduplication",
+     "Apply MinHash-LSH over word 5-grams and retain the earliest-published representative of each near-duplicate component."
+    ],
+    [
+     "8. Serving-date window",
+     "Retain documents whose resolved publication date falls within March 1, 2025 through May 31, 2026."
+    ]
+   ],
+   [
+    [
+     "Criterion",
+     "Binary",
+     "Multi-option"
+    ],
+    [
+     "Forecasting horizon",
+     "days",
+     "days"
+    ],
+    [
+     "Active day",
+     "trades, shares",
+     "trades, shares"
+    ],
+    [
+     "Active-day coverage",
+     "",
+     ""
+    ],
+    [
+     "Max. inactive run",
+     "",
+     ""
+    ],
+    [
+     "Residual uncertainty",
+     "",
+     ""
+    ],
+    [
+     "Temporal signal",
+     "and"
+    ]
+   ],
+   [
+    [
+     "Stage",
+     "Removed",
+     "Remaining"
+    ],
+    [
+     "Stages 1\u20136",
+     "\u2013",
+     "26,533,747"
+    ],
+    [
+     "Stage 7a",
+     "194,940",
+     "26,338,807"
+    ],
+    [
+     "Stage 7b",
+     "5,563,879",
+     "20,774,928"
+    ],
+    [
+     "Stage 7c",
+     "1,124,734",
+     "19,650,194"
+    ],
+    [
+     "Stage 8",
+     "823,254",
+     "18,826,940"
+    ]
+   ],
+   [
+    [
+     "Stage",
+     "Train",
+     "Eval"
+    ],
+    [
+     "Temporal split pool",
+     "13,671",
+     "13,920"
+    ],
+    [
+     "Forecasting horizon",
+     "9,051",
+     "7,590"
+    ],
+    [
+     "Market activity",
+     "1,965",
+     "423"
+    ],
+    [
+     "Task nontriviality",
+     "1,777",
+     "378"
+    ],
+    [
+     "Evidence sufficiency & judge",
+     "1,338",
+     "230"
+    ]
+   ],
+   [
+    [
+     "Tool",
+     "Semantics and permissions"
+    ],
+    [
+     "search",
+     "Dense retrieval over the assigned-date window, with default . Returns article IDs, titles, URLs, assigned dates, similarity scores, and short snippets. Candidate dates are restricted before ranking."
+    ],
+    [
+     "scrape",
+     "Returns the article body for an ID returned by search in the same forecast step, after rechecking the date boundary. Bodies are truncated to 8,000 tokens."
+    ],
+    [
+     "python",
+     "Executes code for numerical analysis in an isolated runtime with networking disabled and no access to benchmark data files, including the task files, news corpus, and retrieval index."
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Date",
+     "Basis"
+    ],
+    [
+     "Proprietary"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "2026-02-16",
+     "Cutoff"
+    ],
+    [
+     "GPT-5.5",
+     "2025-12-01",
+     "Cutoff"
+    ],
+    [
+     "GPT-5.4",
+     "2025-08-31",
+     "Cutoff"
+    ],
+    [
+     "Claude Opus 4.8",
+     "2026-01",
+     "Cutoff"
+    ],
+    [
+     "Claude Opus 4.6",
+     "2025-05",
+     "Cutoff"
+    ],
+    [
+     "Open-weight"
+    ],
+    [
+     "GLM-5",
+     "2026-02-11",
+     "Release"
+    ],
+    [
+     "Qwen3.5-397B",
+     "2026-02-16",
+     "Release"
+    ],
+    [
+     "Kimi K2.5",
+     "2026-01-27",
+     "Release"
+    ],
+    [
+     "MiniMax M2.5",
+     "2026-02-12",
+     "Release"
+    ],
+    [
+     "DeepSeek-V3.2",
+     "2025-12-01",
+     "Release"
+    ],
+    [
+     "gpt-oss-120b",
+     "2024-06-01",
+     "Cutoff"
+    ],
+    [
+     "Nemotron 3 Super",
+     "2026-02",
+     "Post-train"
+    ]
+   ],
+   [
+    [
+     "",
+     "",
+     "Max output tokens",
+     "Temperature / top- / top-",
+     "Tool budget"
+    ],
+    [
+     "Model",
+     "Reasoning",
+     "Tools",
+     "No tools",
+     "Tools",
+     "No tools",
+     "iters / calls"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "max",
+     "32,768",
+     "65,536",
+     "default",
+     "default",
+     "120 / 400"
+    ],
+    [
+     "GPT-5.5",
+     "xhigh",
+     "32,768",
+     "65,536",
+     "default",
+     "default",
+     "120 / 400"
+    ],
+    [
+     "GPT-5.4",
+     "xhigh",
+     "32,768",
+     "65,536",
+     "default",
+     "default",
+     "120 / 400"
+    ],
+    [
+     "Opus 4.8",
+     "max",
+     "32,768",
+     "65,536",
+     "default",
+     "default",
+     "120 / 400"
+    ],
+    [
+     "Opus 4.6",
+     "max",
+     "32,768",
+     "65,536",
+     "default",
+     "default",
+     "120 / 400"
+    ],
+    [
+     "GLM-5",
+     "high",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ],
+    [
+     "Kimi K2.5",
+     "high",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ],
+    [
+     "DeepSeek V3.2",
+     "high",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ],
+    [
+     "MiniMax M2.5",
+     "native a",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ],
+    [
+     "Nemotron 3 Super",
+     "high",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ],
+    [
+     "gpt-oss-120b",
+     "high",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ],
+    [
+     "Qwen3.5-397B",
+     "native a",
+     "32,768",
+     "65,536",
+     "1.0 / 1.0 / default",
+     "1.0 / 1.0 / default",
+     "120 / 400"
+    ]
+   ],
+   [
+    [
+     "",
+     "No tools",
+     "Memory-free",
+     "Memory-on"
+    ],
+    [
+     "Model",
+     "Early",
+     "Format",
+     "Total",
+     "Early",
+     "Format",
+     "Total",
+     "Early",
+     "Format",
+     "Total"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "0.00",
+     "0.03",
+     "0.03",
+     "4.49",
+     "0.00",
+     "4.49",
+     "0.41",
+     "0.00",
+     "0.53"
+    ],
+    [
+     "GPT-5.5",
+     "0.00",
+     "0.06",
+     "0.06",
+     "0.16",
+     "0.09",
+     "0.25",
+     "0.00",
+     "0.03",
+     "0.03"
+    ],
+    [
+     "GPT-5.4",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.09",
+     "0.00",
+     "0.09",
+     "0.00",
+     "0.00",
+     "0.00"
+    ],
+    [
+     "Claude Opus 4.8",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00"
+    ],
+    [
+     "Claude Opus 4.6",
+     "0.38",
+     "0.00",
+     "0.38",
+     "0.00",
+     "0.03",
+     "0.03",
+     "0.00",
+     "0.00",
+     "0.00"
+    ],
+    [
+     "GLM-5",
+     "0.00",
+     "0.28",
+     "0.28",
+     "0.00",
+     "1.47",
+     "1.47",
+     "0.00",
+     "1.13",
+     "1.13"
+    ],
+    [
+     "Kimi K2.5",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.03",
+     "2.13",
+     "2.16",
+     "0.00",
+     "2.45",
+     "2.45"
+    ],
+    [
+     "DeepSeek V3.2",
+     "0.00",
+     "0.25",
+     "0.25",
+     "0.03",
+     "1.73",
+     "1.76",
+     "0.00",
+     "1.88",
+     "1.88"
+    ],
+    [
+     "MiniMax M2.5",
+     "0.00",
+     "0.63",
+     "0.63",
+     "0.03",
+     "5.49",
+     "5.52",
+     "0.00",
+     "1.85",
+     "1.85"
+    ],
+    [
+     "Nemotron 3 Super",
+     "0.00",
+     "9.16",
+     "9.16",
+     "10.35",
+     "7.72",
+     "18.07",
+     "2.37",
+     "8.52",
+     "11.39"
+    ],
+    [
+     "gpt-oss-120b",
+     "0.00",
+     "0.00",
+     "0.00",
+     "0.00",
+     "19.45",
+     "19.45",
+     "0.00",
+     "13.64",
+     "13.64"
+    ],
+    [
+     "Qwen3.5-397B",
+     "0.00",
+     "0.03",
+     "0.03",
+     "0.00",
+     "1.10",
+     "1.10",
+     "0.00",
+     "1.16",
+     "1.16"
+    ]
+   ],
+   [
+    [
+     "Quartile",
+     "No tools",
+     "Memory-free",
+     "Memory-on",
+     "Market",
+     "Events"
+    ],
+    [
+     "Q1",
+     ""
+    ],
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "[ , ]"
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Parsed (%)",
+     "Entries",
+     "Capture",
+     "Episode gain"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "99.6",
+     "17",
+     "",
+     ""
+    ],
+    [
+     "GPT-5.5",
+     "99.8",
+     "16",
+     "",
+     ""
+    ],
+    [
+     "GPT-5.4",
+     "100.0",
+     "15",
+     "",
+     ""
+    ],
+    [
+     "Claude Opus 4.8",
+     "99.9",
+     "9",
+     "",
+     ""
+    ],
+    [
+     "Claude Opus 4.6",
+     "100.0",
+     "15",
+     "",
+     ""
+    ],
+    [
+     "GLM-5",
+     "94.1",
+     "12",
+     "",
+     ""
+    ],
+    [
+     "Qwen3.5-397B",
+     "97.1",
+     "9",
+     "",
+     ""
+    ],
+    [
+     "Kimi K2.5",
+     "95.2",
+     "10",
+     "",
+     ""
+    ],
+    [
+     "MiniMax M2.5",
+     "95.1",
+     "8",
+     "",
+     ""
+    ],
+    [
+     "DeepSeek-V3.2",
+     "97.6",
+     "12",
+     "",
+     ""
+    ],
+    [
+     "gpt-oss-120b",
+     "86.7",
+     "9",
+     "",
+     ""
+    ],
+    [
+     "Nemotron 3 Super",
+     "80.4",
+     "7",
+     "",
+     ""
+    ]
+   ],
+   [
+    [
+     "",
+     "Research Tools",
+     "Cross-Date Memory"
+    ],
+    [
+     "Model",
+     "Brier",
+     "Acc. (pp)",
+     "Brier (All)",
+     "Brier (Usable)"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "GPT-5.5",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "GPT-5.4",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Claude Opus 4.8",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Claude Opus 4.6",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "GLM-5",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Qwen3.5-397B",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Kimi K2.5",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "MiniMax M2.5",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "DeepSeek-V3.2",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "gpt-oss-120b",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Nemotron 3 Super",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ],
+   [
+    [
+     "",
+     "No tools",
+     "Memory-free",
+     "Memory-on"
+    ],
+    [
+     "Model",
+     "Worst-case",
+     "Usable-only",
+     "Worst-case",
+     "Usable-only",
+     "Worst-case",
+     "Usable-only"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "0.000",
+     "0.000",
+     "+0.052",
+     "-0.013",
+     "+0.005",
+     "-0.001"
+    ],
+    [
+     "GPT-5.5",
+     "+0.001",
+     "0.000",
+     "+0.003",
+     "-0.001",
+     "+0.001",
+     "0.000"
+    ],
+    [
+     "GPT-5.4",
+     "0.000",
+     "0.000",
+     "+0.001",
+     "0.000",
+     "0.000",
+     "0.000"
+    ],
+    [
+     "Claude Opus 4.8",
+     "0.000",
+     "0.000",
+     "0.000",
+     "0.000",
+     "0.000",
+     "0.000"
+    ],
+    [
+     "Claude Opus 4.6",
+     "+0.005",
+     "0.000",
+     "0.000",
+     "0.000",
+     "0.000",
+     "0.000"
+    ],
+    [
+     "GLM-5",
+     "+0.004",
+     "+0.001",
+     "+0.018",
+     "-0.003",
+     "+0.014",
+     "-0.002"
+    ],
+    [
+     "Qwen3.5-397B",
+     "+0.001",
+     "0.000",
+     "+0.014",
+     "-0.001",
+     "+0.014",
+     "-0.002"
+    ],
+    [
+     "Kimi K2.5",
+     "0.000",
+     "0.000",
+     "+0.026",
+     "-0.004",
+     "+0.029",
+     "-0.004"
+    ],
+    [
+     "MiniMax M2.5",
+     "+0.007",
+     "-0.001",
+     "+0.065",
+     "-0.010",
+     "+0.022",
+     "-0.003"
+    ],
+    [
+     "DeepSeek-V3.2",
+     "+0.003",
+     "0.000",
+     "+0.021",
+     "-0.003",
+     "+0.023",
+     "-0.003"
+    ],
+    [
+     "gpt-oss-120b",
+     "0.000",
+     "0.000",
+     "+0.242",
+     "-0.014",
+     "+0.168",
+     "-0.012"
+    ],
+    [
+     "Nemotron 3 Super",
+     "+0.109",
+     "+0.007",
+     "+0.224",
+     "-0.015",
+     "+0.135",
+     "-0.009"
+    ]
+   ],
+   [
+    [
+     "",
+     "ECE",
+     "Memory-free"
+    ],
+    [
+     "Model",
+     "No tools",
+     "Memory-free",
+     "Memory-on",
+     "Gap (pp)"
+    ],
+    [
+     "GPT-5.6 Sol",
+     "0.038",
+     "0.059",
+     "0.055",
+     ""
+    ],
+    [
+     "GPT-5.5",
+     "0.081",
+     "0.085",
+     "0.095",
+     ""
+    ],
+    [
+     "GPT-5.4",
+     "0.050",
+     "0.052",
+     "0.043",
+     ""
+    ],
+    [
+     "Claude Opus 4.8",
+     "0.063",
+     "0.054",
+     "0.054",
+     ""
+    ],
+    [
+     "Claude Opus 4.6",
+     "0.111",
+     "0.070",
+     "0.068",
+     ""
+    ],
+    [
+     "GLM-5",
+     "0.071",
+     "0.051",
+     "0.063",
+     ""
+    ],
+    [
+     "Qwen3.5-397B",
+     "0.099",
+     "0.049",
+     "0.045",
+     ""
+    ],
+    [
+     "Kimi K2.5",
+     "0.085",
+     "0.051",
+     "0.054",
+     ""
+    ],
+    [
+     "MiniMax M2.5",
+     "0.087",
+     "0.045",
+     "0.045",
+     ""
+    ],
+    [
+     "DeepSeek-V3.2",
+     "0.121",
+     "0.056",
+     "0.074",
+     ""
+    ],
+    [
+     "gpt-oss-120b",
+     "0.204",
+     "0.077",
+     "0.094",
+     ""
+    ],
+    [
+     "Nemotron 3 Super",
+     "0.191",
+     "0.083",
+     "0.076",
+     ""
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Brier",
+     "",
+     "Shrunk Brier",
+     "Accuracy (%)"
+    ],
+    [
+     "Uniform reference",
+     "0.771",
+     "\u2013",
+     "\u2013",
+     "22.9"
+    ],
+    [
+     "Student (base)",
+     "0.924",
+     "0.75",
+     "0.752",
+     "34.8"
+    ],
+    [
+     "+ Dojo SFT",
+     "0.749",
+     "0.45",
+     "0.705",
+     "42.8"
+    ]
+   ],
+   [
+    [
+     "Setting",
+     "Value"
+    ],
+    [
+     "Student initialization",
+     "Qwen3-30B-A3B-Thinking-2507"
+    ],
+    [
+     "Optimizer",
+     "Adam with , , , and decoupled weight decay 0.1"
+    ],
+    [
+     "Learning rate",
+     "Peak with warmup over the first 10% of training, then cosine decay to"
+    ],
+    [
+     "Gradient clipping",
+     "Global gradient norm 1.0"
+    ],
+    [
+     "Batch size",
+     "32"
+    ],
+    [
+     "Precision",
+     "BF16 parameters with FP32 gradient accumulation"
+    ],
+    [
+     "Dropout",
+     "0"
+    ],
+    [
+     "Epochs",
+     "3"
+    ]
+   ]
+  ],
+  "captions": [
+   "Figure 1: Forecasting performance on Forecast-Dojo . Accuracy and Brier score of 12 models on 230 held-out events. Both settings use research tools: (a) memory-free starts with a fresh context at each forecast date, while (b) memory-on carries a belief notebook across dates. Lower right is better; d",
+   "Table 1: Summary of existing forecasting benchmarks. The criteria target the capabilities used to construct and study Forecast-Dojo. Aligned evaluation indicates that the same forecasting task is evaluated at a pre-specified sequence of forecast dates or evidence states shared across models. Market ",
+   "Figure 2: Overview of Forecast-Dojo. Top: resolved Polymarket events are filtered and split by time into training and evaluation events, and CC-News articles are cleaned, dated, and indexed. Middle left: each question is forecast at a fixed sequence of dates as the visible corpus grows, with an opti",
+   "Figure 3: Composition of the training and evaluation splits. (a) Primary domain of each event; slices under 5% are unlabeled. (b) Number of offered outcomes per event; binary events have . (c) Forecast horizon , the number of days from a forecast date to the recorded close, over all forecast steps (",
+   "Table 2: Main Results. Values average recorded forecasts; denotes the SD across four rollout means. Paired event-bootstrap 95% CIs are discussed in Appendix C.1 . Unusable forecasts receive uniform fallback; accuracy is reported in percent, and Information- requires available market probabilities. B",
+   "Figure 4: Forecast improvements track newly recorded evidence. (a) Brier across early, middle, and late thirds of each event trajectory, with equal event weighting; shading shows the range of model means. (b) Consecutive-step Brier change by new-evidence quartile, using leave-one-model-out evidence ",
+   "Figure 5: Memory lowers research cost, mostly after the first forecast. (a) Mean API cost per forecast step across five proprietary models; later steps cover fewer events (67/230 at step 4; 25/230 at step 5). (b) Consecutive-step Brier changes across quartiles of the leave-one-model-out new-evidence",
+   "Table 3: Supervised fine-tuning results. Paired SFT base differences ( ) are computed before rounding; event-level bootstrap 95% CIs exclude zero for Brier ( ) and accuracy ( ). Unusable forecasts (0% base, 0.5% SFT) receive the uniform fallback.",
+   "Table 4: Corpus filtering pipeline. The aggregate post-quality count is reported in Table 6(a) .",
+   "Table 5: Market-side event-selection criteria.",
+   "Table 6: Construction waterfalls for the deployed news corpus and forecasting events. Event counts use the final June\u2013March training and March\u2013June evaluation splits.",
+   "(a) Corpus construction",
+   "(b) Event selection",
+   "Table 7: Tools details.",
+   "Table 8: Knowledge and release dates of evaluated models. We report an official knowledge or training-data cutoff when available; otherwise, we use the public checkpoint release date.",
+   "Table 9: Model Evaluation Configurations. Max output tokens is the cap per model call and includes reasoning tokens. default denotes the provider\u2019s default value. Tool budgets are per forecast step and identical in memory-free and memory-on mode; no-tool runs disable all tools.",
+   "Table 10: Forecast failure rates and causes across evaluation settings (%). Early denotes termination before a final answer due to context, token, or tool limits; Format denotes an unscorable final report. Total includes missing or unusable forecasts, including invalid probability mass, over 3,188 s",
+   "Figure 6: Inference cost and research tool usage across models. (a) Average provider-estimated inference cost per recorded forecast under no-tools, memory-free, and memory-on settings for five proprietary models with available pricing. (b) Average research calls per recorded forecast, decomposed int",
+   "Table 11: Consecutive-step Brier change by new-evidence quartile. Values correspond to Figure 4 (b). Quartile thresholds are 1.49, 2.45, and 3.98 newly dated entries. Brackets indicate 95% event-level bootstrap confidence intervals; negative values indicate improvement. The final column reports the ",
+   "Table 12: Belief notebooks and evidence capture in the memory-on setting. Parsed denotes the percentage of forecasts with a parsed notebook, and Entries the median number of ledger entries per notebook. Capture measures relative evidence recording, while episode gain measures first-to-last Brier imp",
+   "Table 13: Paired effects of research tools and cross-date memory. Values report Brier and accuracy differences with 95% event-bootstrap CIs (gray). Tool effects compare memory-free against no-tools forecasts, paired by event\u2013date after averaging rollouts. Memory effects compare memory-on against mem",
+   "Table 14: Sensitivity of Brier scores to unusable-forecast handling. Values show changes relative to the primary uniform-fallback convention (Table 2 ). Worst-case assigns Brier 2 to unusable reports, while usable-only excludes them. Positive values indicate higher Brier scores. Missing records are ",
+   "Table 15: Top-label calibration on usable forecasts. ECE uses 15 equal-width confidence bins. The memory-free confidence gap is top-label accuracy minus mean top-label probability (pp); positive values indicate aggregate underconfidence.",
+   "Figure 7: Longitudinal Brier changes conditional on market improvement. Events are grouped by whether mean market Brier decreases from the early to the late stage. Points show late-minus-early stage-mean Brier differences with 95% event-bootstrap CIs; negative values indicate improvement. Group size",
+   "Figure 8: SFT training and calibration diagnostics. (a) Brier scores before and after shrinking forecasts toward uniform, . The shrinkage weight is optimized on the evaluation set, yielding optimistic recalibration estimates; top-1 accuracy is unchanged. (b) Assistant-token cross-entropy during fine",
+   "Table 16: Optimization settings for supervised fine-tuning.",
+   "Figure 9: No-tools forecasting-agent system prompt.",
+   "Figure 10: Memory-free forecasting-agent system prompt.",
+   "Figure 11: Memory-on forecasting-agent system prompt.",
+   "Figure 12: Query-decomposition prompt used for corpus-side evidence retrieval.",
+   "Figure 13: Evidence-sufficiency and leakage judge prompt used for corpus-side filtering."
+  ],
+  "sentences": [
+   "It comprises 1,568 Polymarket events split temporally into training and evaluation sets, alongside 18.8 million dated news articles.",
+   "The student\u2019s accuracy is improved from 34.8% to 42.8% on the evaluation set.",
+   "Research tools lower Brier for all 12 models, and memory-free Brier falls from 0.670 in the first third of an event to 0.606 in the last third, while forecasts without tools stay flat.",
+   "Every model still trails the historical market forecasts in Brier and accuracy, with the best Brier at 0.546 against 0.498 for the market.",
+   "However, it lowers Brier scores for only 6 of the 12 evaluated models, with none of these improvements statistically significant (Section 5.2 ).",
+   "It covers 1,568 Polymarket events with 6,122 forecast steps, split by time into 1,338 training and 230 evaluation events, with evidence from 18.8M dated CC-News articles.",
+   "4.1 Forecasting Events We construct our candidate pool from resolved Polymarket 1 1 1 https://polymarket.com/ binary and mutually exclusive multi-option events whose full lifetimes fall between June 2025 and June 2026.",
+   "GPT-5.5, for example, improves from 0.698 to 0.564 in Brier and from 43.85% to 57.69% in accuracy, and the open-weight DeepSeek-V3.2 improves from 0.805 to 0.655 and from 34.34% to 47.73%.",
+   "GPT-5.6 Sol achieves the lowest Brier without and with memory (0.554 and 0.546), and its lead over GPT-5.5 is significant only with memory (Appendix C.1 ).",
+   "GPT-5.5 has the highest memory-free accuracy (57.69%) but is underconfident.",
+   "GPT-5.6 Sol is slightly less accurate (56.36%; the paired accuracy-difference CI includes zero), partly because 4.49% of its memory-free runs stop before a final answer, yet it has lower Brier (0.554 versus 0.564) and higher Information- ( versus ).",
+   "None of the six improvements has a 95% CI that excludes zero, whereas memory significantly raises Brier for Claude Opus 4.8 ( , ) and Kimi K2.5 ( , ) on all recorded pairs (Table 13 ).",
+   "For GPT-5.6 Sol, the share of forecasts without a usable answer falls from 4.49% to 0.53% with memory, yet on forecasts usable in both settings the paired Brier difference is only .",
+   "The market achieves Brier 0.498 and accuracy 64.55%, against the best model scores of 0.546 and 57.69%.",
+   "Paired on the same event\u2013dates, the Brier gap of the best configuration is 0.050 (95% CI ), and every configuration has a strictly positive paired Brier-gap CI.",
+   "Mean Brier decreases from 0.670 to 0.606 with memory-free research and from 0.671 to 0.612 with memory-on research.",
+   "In contrast, the no-tools baseline remains nearly unchanged near 0.769.",
+   "The market improves more sharply, from 0.597 to 0.438.",
+   "GPT-5.5, for example, costs $3.90 instead of $5.85 per forecast, while its paired Brier difference of has a CI that includes zero.",
+   "Brier decreases from 0.924 to 0.749, with gains on both binary and multi-choice forecasts, while accuracy rises from 34.8% to 42.8%.",
+   "Rescaling the base model\u2019s probabilities reduces its Brier to 0.752, nearly matching the unadjusted SFT score of 0.749.",
+   "Tool calls All Binary Multi-option (%) / forecast Uniform 0.771 0.500 0.832 22.9 \u2013 Student (base) 0.924 0.704 0.975 34.8 1.4 + Dojo SFT 0.749 0.539 0.797 42.8 3.7 Paired 6 Conclusion We introduce Forecast-Dojo , a replayable environment that transforms resolved prediction-market events into temporally grounded, multi-step forecasting episodes.",
+   "Beyond evaluation, Forecast-Dojo supports learning from recorded agent interactions: supervised fine-tuning improves student accuracy from 34.8% to 42.8% on temporally held-out events.",
+   "For each event surviving the market-side filters, we use Claude Opus 4.8 with maximum reasoning effort ( Anthropic, 2026b ) to generate 4\u20137 predictive-evidence queries and 4\u20137 background/reference-class queries.",
+   "The market favorite was wrong on 35.4% of evaluation dates.",
+   "On these dates, no-tools accuracy ranged from 11.4% to 16.9% across the 12 models, below the 19.1% accuracy of a uniform forecast, compared with 41.5% to 63.3% when the market favorite was correct.",
+   "Appendix C Additional Results C.1 Statistical Uncertainty and Model Comparisons Event-level uncertainty is substantially larger than the rollout variation reported in Table 2 , with marginal Brier 95% confidence intervals having half-widths of roughly 0.05\u20130.07.",
+   "(pp) Brier (All) Brier (Usable) GPT-5.6 Sol GPT-5.5 GPT-5.4 Claude Opus 4.8 Claude Opus 4.6 GLM-5 Qwen3.5-397B Kimi K2.5 MiniMax M2.5 DeepSeek-V3.2 gpt-oss-120b Nemotron 3 Super Table 14: Sensitivity of Brier scores to unusable-forecast handling.",
+   "Memory effects are less consistent: among jointly usable forecasts, four models improve in Brier, none significantly, while Claude Opus 4.8 deteriorates significantly.",
+   "GPT-5.6 Sol significantly outperforms GPT-5.5 in Brier only with memory (paired difference , 95% CI ), while their memory-free accuracy difference is not significant (GPT-5.5 minus GPT-5.6 Sol: percentage points, 95% CI ).",
+   "The market consistently outperforms all 36 configurations, with strictly positive paired Brier-gap CIs (minimum lower bound 0.019) and strictly negative Information- CIs (maximum upper bound ).",
+   "ECE Memory-free Model No tools Memory-free Memory-on Gap (pp) GPT-5.6 Sol 0.038 0.059 0.055 GPT-5.5 0.081 0.085 0.095 GPT-5.4 0.050 0.052 0.043 Claude Opus 4.8 0.063 0.054 0.054 Claude Opus 4.6 0.111 0.070 0.068 GLM-5 0.071 0.051 0.063 Qwen3.5-397B 0.099 0.049 0.045 Kimi K2.5 0.085 0.051 0.054 MiniMax M2.5 0.087 0.045 0.045 DeepSeek-V3.2 0.121 0.056 0.074 gpt-oss-120b 0.204 0.077 0.094 Nemotron 3 Super 0.191 0.083 0.076 Figure 7: Longitudinal Brier changes conditional on market improvement.",
+   "Notably, gpt-oss-120b\u2019s memory-free Brier rises from 0.699 under uniform fallback to 0.941 under worst-case scoring, exceeding its no-tools score of 0.896.",
+   "(a) Calibration diagnostic Model Brier Shrunk Brier Accuracy (%) Uniform reference 0.771 \u2013 \u2013 22.9 Student (base) 0.924 0.75 0.752 34.8 + Dojo SFT 0.749 0.45 0.705 42.8 (b) Training loss Figure 8: SFT training and calibration diagnostics.",
+   "The base student performs worse than uniform forecasting in both Brier (0.924 versus 0.771) and log loss (2.74 versus 1.74), motivating an examination of predictive confidence.",
+   "Shrinkage reduces the base Brier to 0.752, nearly matching the unadjusted SFT score of 0.749, while further reducing the SFT score to 0.705.",
+   "Because uniform shrinkage preserves outcome rankings, the accuracy improvement from 34.8% to 42.8% remains unchanged."
+  ]
+ },
+ "2607.18269": {
+  "abs_error": null,
+  "abstract": "Abstract: The wisdom of crowds -- the finding that aggregating judgments across individuals often outperforms the best individual -- has been extensively studied with human forecasters. Whether the same phenomenon emerges when the ``crowd'' consists of large language models (LLMs) is an open question with both theoretical and practical implications. We elicited probability estimates from 15 LLMs on 254 binary prediction market questions and evaluated classical and learned aggregation methods. Learned aggregators -- a multilayer perceptron and a logistic regression -- outperformed all individual models and classical methods. The logistic regression was found to match the neural network, suggesting that the benefit of learned aggregation derives from learning a linear combination of diverse model outputs rather than from nonlinear interactions. Symbolic regression applied to the neural network's learned mapping recovered a pure model-disagreement signal as the lowest-complexity useful formula on the Pareto frontier, further supporting this interpretation. Training cutoff contamination proved a pervasive confound: the apparent capability gap between frontier cloud models and smaller local models collapsed from 35.8% to 8.9% on a clean subset of questions resolving after all models' training cutoffs, and individual model rankings showed only moderate stability. Even when the prediction market is evaluated at each model's training cutoff, LLMs remained substantially less accurate, indicating a genuine gap in collective information aggregation. These findings suggest that LLM crowds can exhibit wisdom-of-crowds effects, but that contamination-free evaluation is essential for reliable assessment.",
+  "title": "[2607.18269] Wisdom of LLM Crowds: Aggregation and Contamination in Language Model Ensembles",
+  "html_error": null,
+  "html_chars": 259283,
+  "tables": [
+   [
+    [
+     "Model",
+     "Provider",
+     "Approx. size",
+     "Training cutoff"
+    ],
+    [
+     "Mistral 7B",
+     "Ollama/Mistral AI",
+     "7B",
+     "March 2023"
+    ],
+    [
+     "LLaMA 3.1 8B",
+     "Ollama/Meta",
+     "8B",
+     "December 2023"
+    ],
+    [
+     "Gemma 2 9B",
+     "Ollama/Google",
+     "9B",
+     "June 2024"
+    ],
+    [
+     "Phi-4 14B",
+     "Ollama/Microsoft",
+     "14B",
+     "June 2024"
+    ],
+    [
+     "Qwen 2.5 7B",
+     "Ollama/Alibaba",
+     "7B",
+     "September 2024"
+    ],
+    [
+     "GPT-5.4 Mini",
+     "OpenAI",
+     "\u2014",
+     "September 2024"
+    ],
+    [
+     "GPT-5.2",
+     "OpenAI",
+     "\u2014",
+     "September 2024"
+    ],
+    [
+     "GPT-5.4",
+     "OpenAI",
+     "\u2014",
+     "September 2024"
+    ],
+    [
+     "DeepSeek-chat",
+     "DeepSeek",
+     "\u2014",
+     "November 2024"
+    ],
+    [
+     "Gemini Flash-Lite",
+     "Google",
+     "\u2014",
+     "January 2025"
+    ],
+    [
+     "Gemini Flash",
+     "Google",
+     "\u2014",
+     "January 2025"
+    ],
+    [
+     "Gemini Pro",
+     "Google",
+     "\u2014",
+     "January 2025"
+    ],
+    [
+     "Claude Haiku 4.5",
+     "Anthropic",
+     "\u2014",
+     "July 2025"
+    ],
+    [
+     "Claude Sonnet 4.6",
+     "Anthropic",
+     "\u2014",
+     "August 2025"
+    ],
+    [
+     "Claude Opus 4.6",
+     "Anthropic",
+     "\u2014",
+     "August 2025"
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Group",
+     "Brier",
+     "Accuracy",
+     "AUC"
+    ],
+    [
+     "Claude Sonnet 4.6",
+     "Cloud",
+     "0.273",
+     "0.635",
+     "0.677"
+    ],
+    [
+     "Claude Opus 4.6",
+     "Cloud",
+     "0.284",
+     "0.615",
+     "0.668"
+    ],
+    [
+     "Gemini Flash",
+     "Cloud",
+     "0.286",
+     "0.630",
+     "0.640"
+    ],
+    [
+     "Gemini Pro",
+     "Cloud",
+     "0.292",
+     "0.635",
+     "0.693"
+    ],
+    [
+     "Claude Haiku 4.5",
+     "Cloud",
+     "0.311",
+     "0.524",
+     "0.532"
+    ],
+    [
+     "GPT-5.4 Mini",
+     "Cloud",
+     "0.328",
+     "0.587",
+     "0.632"
+    ],
+    [
+     "GPT-5.2",
+     "Cloud",
+     "0.338",
+     "0.548",
+     "0.534"
+    ],
+    [
+     "GPT-5.4",
+     "Cloud",
+     "0.347",
+     "0.553",
+     "0.538"
+    ],
+    [
+     "DeepSeek-chat",
+     "Cloud",
+     "0.361",
+     "0.524",
+     "0.515"
+    ],
+    [
+     "Gemini Flash-Lite",
+     "Cloud",
+     "0.377",
+     "0.580",
+     "0.584"
+    ],
+    [
+     "Gemma 2 9B",
+     "Local",
+     "0.362",
+     "0.502",
+     "0.450"
+    ],
+    [
+     "Phi-4 14B",
+     "Local",
+     "0.381",
+     "0.447",
+     "0.391"
+    ],
+    [
+     "Qwen 2.5 7B",
+     "Local",
+     "0.389",
+     "0.418",
+     "0.431"
+    ],
+    [
+     "LLaMA 3.1 8B",
+     "Local",
+     "0.394",
+     "0.427",
+     "0.430"
+    ],
+    [
+     "Mistral 7B",
+     "Local",
+     "0.413",
+     "0.469",
+     "0.452"
+    ]
+   ],
+   [
+    [
+     "",
+     "Full dataset (208 items)",
+     "Clean subset (94 items)"
+    ],
+    [
+     "Method",
+     "Local",
+     "Cloud",
+     "Diff (%)",
+     "Local",
+     "Cloud",
+     "Diff (%)"
+    ],
+    [
+     "Arithmetic mean",
+     "0.345",
+     "0.254",
+     "+35.8",
+     "0.340",
+     "0.312",
+     "+8.9"
+    ],
+    [
+     "Median",
+     "0.368",
+     "0.275",
+     "+33.6",
+     "0.354",
+     "0.343",
+     "+3.1"
+    ],
+    [
+     "Geometric/log-odds mean",
+     "0.399",
+     "0.287",
+     "+39.3",
+     "0.378",
+     "0.360",
+     "+4.9"
+    ],
+    [
+     "Harmonic mean",
+     "0.407",
+     "0.366",
+     "+11.1",
+     "0.368",
+     "0.378",
+     "2.7"
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Cutoff",
+     "",
+     "Acc",
+     "",
+     "Acc",
+     "Acc"
+    ],
+    [
+     "Qwen 2.5 7B",
+     "Sep 2024",
+     "27",
+     "0.556",
+     "181",
+     "0.398",
+     ""
+    ],
+    [
+     "GPT-5.4 Mini",
+     "Sep 2024",
+     "27",
+     "0.630",
+     "181",
+     "0.580",
+     ""
+    ],
+    [
+     "GPT-5.2",
+     "Sep 2024",
+     "27",
+     "0.778",
+     "181",
+     "0.514",
+     ""
+    ],
+    [
+     "GPT-5.4",
+     "Sep 2024",
+     "27",
+     "0.741",
+     "181",
+     "0.525",
+     ""
+    ],
+    [
+     "DeepSeek-chat",
+     "Nov 2024",
+     "44",
+     "0.568",
+     "164",
+     "0.512",
+     ""
+    ],
+    [
+     "Gemini Flash-Lite",
+     "Jan 2025",
+     "91",
+     "0.637",
+     "116",
+     "0.535",
+     ""
+    ],
+    [
+     "Gemini Flash",
+     "Jan 2025",
+     "92",
+     "0.728",
+     "116",
+     "0.552",
+     "\u2217"
+    ],
+    [
+     "Gemini Pro",
+     "Jan 2025",
+     "91",
+     "0.747",
+     "112",
+     "0.545",
+     "\u2217"
+    ],
+    [
+     "Claude Haiku 4.5",
+     "Jul 2025",
+     "153",
+     "0.575",
+     "55",
+     "0.382",
+     ""
+    ],
+    [
+     "Claude Sonnet 4.6",
+     "Aug 2025",
+     "156",
+     "0.699",
+     "52",
+     "0.442",
+     ""
+    ],
+    [
+     "Claude Opus 4.6",
+     "Aug 2025",
+     "155",
+     "0.652",
+     "50",
+     "0.500",
+     ""
+    ],
+    [
+     "\u2217 Significantly elevated extremity on within-cutoff items ( )."
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Selection (%)",
+     "Brier rank"
+    ],
+    [
+     "Claude Sonnet 4.6",
+     "100",
+     "1"
+    ],
+    [
+     "Claude Opus 4.6",
+     "100",
+     "2"
+    ],
+    [
+     "Gemini Flash",
+     "100",
+     "3"
+    ],
+    [
+     "Gemini Pro",
+     "100",
+     "4"
+    ],
+    [
+     "GPT-5.4 Mini",
+     "100",
+     "6"
+    ],
+    [
+     "Qwen 2.5 7B",
+     "100",
+     "13"
+    ],
+    [
+     "LLaMA 3.1 8B",
+     "100",
+     "14"
+    ],
+    [
+     "Phi-4 14B",
+     "100",
+     "12"
+    ],
+    [
+     "Claude Haiku 4.5",
+     "98",
+     "5"
+    ],
+    [
+     "Gemini Flash-Lite",
+     "68",
+     "11"
+    ],
+    [
+     "GPT-5.2",
+     "54",
+     "7"
+    ],
+    [
+     "Mistral 7B",
+     "46",
+     "15"
+    ],
+    [
+     "DeepSeek-chat",
+     "28",
+     "9"
+    ],
+    [
+     "GPT-5.4",
+     "16",
+     "8"
+    ],
+    [
+     "Gemma 2 9B",
+     "0",
+     "10"
+    ]
+   ],
+   [
+    [
+     "Model",
+     "Cutoff",
+     "LLM BS",
+     "Market@cutoff",
+     "Ratio"
+    ],
+    [
+     "Claude Sonnet 4.6",
+     "Aug 2025",
+     "0.273",
+     "0.132",
+     "2.06"
+    ],
+    [
+     "Claude Opus 4.6",
+     "Aug 2025",
+     "0.284",
+     "0.133",
+     "2.14"
+    ],
+    [
+     "Claude Haiku 4.5",
+     "Jul 2025",
+     "0.311",
+     "0.125",
+     "2.48"
+    ],
+    [
+     "Gemini Flash",
+     "Jan 2025",
+     "0.286",
+     "0.142",
+     "2.01"
+    ],
+    [
+     "Gemini Pro",
+     "Jan 2025",
+     "0.292",
+     "0.142",
+     "2.05"
+    ],
+    [
+     "Gemini Flash-Lite",
+     "Jan 2025",
+     "0.377",
+     "0.143",
+     "2.64"
+    ],
+    [
+     "DeepSeek-chat",
+     "Nov 2024",
+     "0.361",
+     "0.165",
+     "2.19"
+    ],
+    [
+     "GPT-5.4 Mini",
+     "Sep 2024",
+     "0.328",
+     "0.204",
+     "1.61"
+    ],
+    [
+     "GPT-5.2",
+     "Sep 2024",
+     "0.338",
+     "0.204",
+     "1.66"
+    ],
+    [
+     "GPT-5.4",
+     "Sep 2024",
+     "0.347",
+     "0.204",
+     "1.71"
+    ],
+    [
+     "Qwen 2.5 7B",
+     "Sep 2024",
+     "0.389",
+     "0.204",
+     "1.91"
+    ],
+    [
+     "Gemma 2 9B",
+     "Jun 2024",
+     "0.362",
+     "0.222",
+     "1.63"
+    ],
+    [
+     "Phi-4 14B",
+     "Jun 2024",
+     "0.381",
+     "0.221",
+     "1.73"
+    ],
+    [
+     "LLaMA 3.1 8B",
+     "Dec 2023",
+     "0.394",
+     "0.232",
+     "1.70"
+    ],
+    [
+     "Mistral 7B",
+     "Mar 2023",
+     "0.413",
+     "0.230",
+     "1.80"
+    ],
+    [
+     "Arithmetic mean",
+     "\u2014",
+     "0.266",
+     "0.132 \u2020",
+     "2.01"
+    ],
+    [
+     "\u2020 Market at August 2025, the latest model cutoff in the ensemble."
+    ]
+   ]
+  ],
+  "captions": [
+   "Table 1. Language models included in the study. Training cutoffs are approximate and drawn from official documentation where available. Model sizes for cloud-hosted models are not publicly disclosed.",
+   "Table 2. Individual model performance on the initial 208-item dataset. Models per category (cloud/local) sorted by Brier score.",
+   "Figure 1. Brier scores on the 94-item clean subset for the 15 models and the aggregators (sorted by Brier score). Both learned aggregator scores are from temporal transfer (trained on 160 non-clean items, tested on all 94 clean items), making them comparable to the all-data estimates for classical a",
+   "Table 3. Crowd-split analysis: Brier scores for the local-only crowd (5 models) and the cloud-only crowd (10 models) under each aggregation method, on the full 208-item dataset and on the 94-item clean subset. Diff is the percentage by which the local crowd\u2019s Brier score exceeds the cloud crowd\u2019s, t",
+   "Table 4. Contamination check: model accuracy on within-cutoff items (resolving before the model\u2019s training cutoff) versus outside-cutoff items. Models with zero within-cutoff items in the dataset are omitted. Asterisks mark models showing significantly greater extremity, , on within-cutoff items acc",
+   "Figure 2. Individual model Brier scores on the initial 208-item dataset (left) and the 94-item clean subset (right), sorted by Brier score within each panel. Bars are colored by model family. The dashed line marks the best individual model in each panel; the solid red line in the right panel marks t",
+   "Table 5. Symbolic regression model selection frequencies across 50 independent runs (ranked by selection frequency). Brier rank refers to rank on the full 208-item dataset.",
+   "Table 6. LLM Brier scores versus Manifold market probability at each model\u2019s training cutoff date (208-item dataset). Both the LLM and the market-at-cutoff Brier scores are computed over each model\u2019s non-missing items (Sect. 2.3 ), which is why the market column can differ slightly between models sh"
+  ],
+  "sentences": [
+   "The mean community probability at market close was 0.53 ( ).",
+   "As secondary metrics we report classification accuracy\u2014the proportion of items on which the model\u2019s prediction exceeds 0.5 precisely if the statement resolved true\u2014and the familiar area under the receiver operating characteristic curve (AUC), which measures the model\u2019s ability to rank true statements above false ones regardless of the absolute probability values.",
+   "When a market had received no bets before a model\u2019s training cutoff\u2014either because the market was created after that date or because it had not yet attracted any traders\u2014we fell back to the market\u2019s initial probability (the initialProbability field from the market endpoint), which on Manifold is set by the market creator at opening and defaults to 0.5.",
+   "This fallback occurred for approximately 55 markets (26% of the dataset) for the four models with the earliest cutoffs (Mistral 7B, LLaMA 3.1 8B, Gemma 2 9B, and Phi-4 14B, all with cutoffs in 2023 or June 2024); for models with later cutoffs the fallback rate was substantially lower, though it did not vanish entirely: approximately 13 items (6.3%) still required the fallback at the latest (August 2025) cutoff.",
+   "The market\u2019s advantage persists for every model, with ratios ranging from 1.40 to 2.68 (mean: 1.94; versus 1.61\u20132.64 and 1.95 on all items); as expected, the largest reductions occur for the earliest-cutoff models (e.g., Mistral 7B: ).",
+   "We see that Claude Sonnet 4.6 achieved the lowest Brier score among individual models (BS = 0.273), followed by Claude Opus 4.6 (BS = 0.284) and Gemini Flash (BS = 0.286).",
+   "Local models showed substantially worse performance (Brier scores 0.362\u20130.413).",
+   "The two learned aggregators showed complementary strengths: logistic regression achieved a lower Brier score (BS = 0.241 vs.",
+   "0.633) and threshold-level accuracy (0.606 vs.",
+   "Both substantially outperformed the arithmetic mean on all three metrics (Brier: 0.313; accuracy: 0.511; AUC: 0.498).",
+   "(2024) \u2014achieved a Brier score of 0.343, outperforming the geometric/log-odds and harmonic means but falling below the arithmetic mean (0.313).",
+   "All models with sufficient within-cutoff items showed substantially higher accuracy on those items than on out-of-window items (Table 4 ), with accuracy differentials ranging from (GPT-5.4 Mini) to (Claude Sonnet).",
+   "Under both perturbations, the cloud\u2013local gap remained large on the full dataset ( ) and collapsed similarly on the nested clean items ( ), mean accuracy differentials were stable (mean ), and Spearman rank correlations between full-dataset and out-of-window rankings remained around 0.5.",
+   "Model Selection (%) Brier rank Claude Sonnet 4.6 100 1 Claude Opus 4.6 100 2 Gemini Flash 100 3 Gemini Pro 100 4 GPT-5.4 Mini 100 6 Qwen 2.5 7B 100 13 LLaMA 3.1 8B 100 14 Phi-4 14B 100 12 Claude Haiku 4.5 98 5 Gemini Flash-Lite 68 11 GPT-5.2 54 7 Mistral 7B 46 15 DeepSeek-chat 28 9 GPT-5.4 16 8 Gemma 2 9B 0 10 To quantify how much of the learned aggregation benefit this minimal formula captures, we evaluated directly as an aggregator, scoring it against the actual resolutions.",
+   "On the full 208-item dataset, the final market probability achieved BS = 0.098, compared to 0.266 for the LLM arithmetic mean, which is a factor of 2.72.",
+   "2.3 ), which is why the market column can differ slightly between models sharing a cutoff date.",
+   "Final market BS = 0.098 (same for all models).",
+   "Even after this temporal matching, every individual LLM remained substantially less accurate than the market at the same point in time, with LLM Brier scores 1.61\u20132.64 times worse than the corresponding market probability (mean ratio: 1.95 ).",
+   "For the LLM arithmetic mean compared to the market at the latest model cutoff in the ensemble (August 2025), the ratio was 2.01 .",
+   "That said, LLM crowd wisdom is not yet at the level of human crowd wisdom, at least as measured against a continuously updated prediction market: even when the market probability is evaluated at the same point in time as each model\u2019s training cutoff\u2014neutralizing the market\u2019s informational advantage\u2014the market outperforms every LLM by a factor of 1.6\u20132.6.",
+   "All models with sufficient within-cutoff items showed meaningfully higher accuracy on those items, with differentials up to 0.26."
+  ]
+ }
+}
