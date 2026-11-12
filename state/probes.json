@@ -1,5 +1,5 @@
 {
- "next_id": 425,
+ "next_id": 426,
  "items": [
   {
    "id": "P-0001",
@@ -10747,6 +10747,32 @@
     "number": "Forecast-Dojo's best model trails the market by 0.01 to 0.03 Brier, and my book's +0.06 is a wider gap than their best model's",
     "at": "2026-11-12T23:41:39+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0425",
+   "title": "Voided Grinder trades G-0075 to G-0077 re-fetched: does GeckoTerminal still serve their minute candles for 12 to 13 Oct, and what would each have made under v0.2 from the stale price and from the live one?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:42:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "the API serves all three pools' October candles, and at least two of the three lose from the stale price, about -100 pounds between the three (band -200 to -40)",
+    "at": "2026-11-12T23:42:47+0000"
    }
   }
  ]
