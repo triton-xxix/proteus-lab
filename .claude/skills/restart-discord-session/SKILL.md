@@ -7,10 +7,8 @@ description: Restart or health-check the Proteus Discord channel session (the pr
 
 Drafted 31 Oct 2026 by Smith after the restart was done by hand twice that day (11:17 for the
 Neptune rooms in the persona, 18:21 for the model flag) and each time cost a dozen calls of
-rediscovery. A scheduled run cannot write under `.claude/skills/`, so this sits here until an
-interactive session copies it:
-`cp -R /Users/triton/PROTEUS/state/loop/skill-drafts/restart-discord-session /Users/triton/PROTEUS/.claude/skills/restart-discord-session`
-and deletes the draft.
+rediscovery. Drafted under `state/loop/skill-drafts/` because a scheduled run cannot write under `.claude/skills/`;
+installed here on 12 Nov 2026 in a session with Luke.
 
 ## What runs where
 

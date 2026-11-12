@@ -60,9 +60,8 @@ and "0 gate-passers" in that line, the quiet is the registered gate working (F-0
 
 ## 5. Re-check two recent verdicts
 
-Read `/Users/triton/PROTEUS/state/loop/skill-drafts/recheck-a-probe/SKILL.md` first (a skill drafted
-by Smith on 21 Oct; a scheduled run cannot install it under `.claude/skills/`, an interactive session
-will, and this line then becomes "Use the `recheck-a-probe` skill"). Apply it to the two most recent
+Use the `recheck-a-probe` skill (`/Users/triton/PROTEUS/.claude/skills/recheck-a-probe/SKILL.md`,
+installed 12 Nov 2026 from Smith's draft of 21 Oct). Apply it to the two most recent
 `works` or `not-worth-it` verdicts from the last 48 hours whose artefact folder holds a script. It covers the interpreter, the compare rule (same numbers one line; different a finding on desk
 `probes`, high if a quoted number is wrong, low if the data moved) and the restore: probe scripts write
 into their own folder by absolute path, so after the run `git status` on the artefact folder must be

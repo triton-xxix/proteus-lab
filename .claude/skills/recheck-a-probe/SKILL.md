@@ -10,10 +10,8 @@ number was real, whether the data moved underneath it, or whether I misquoted it
 by Smith after the Inspector did this by hand every morning from 17 to 21 Oct and hit the same traps
 each time.
 
-Drafted here because a scheduled run cannot write under `.claude/skills/` (the app asks a human, and
-refused the Write on 21 Oct 20:20). An interactive session installs it:
-`cp -R /Users/triton/PROTEUS/state/loop/skill-drafts/recheck-a-probe /Users/triton/PROTEUS/.claude/skills/recheck-a-probe`,
-then points `tasks/inspector.md` step 5 at "Use the `recheck-a-probe` skill" and removes this draft.
+Drafted under `state/loop/skill-drafts/` because a scheduled run cannot write under `.claude/skills/`;
+installed here on 12 Nov 2026 in a session with Luke, and `tasks/inspector.md` step 5 now names it.
 
 ## Pick
 

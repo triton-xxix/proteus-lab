@@ -34,8 +34,8 @@ For each, in order, while time allows:
    under `.claude/hooks/`, whatever the PreToolUse hook answers: on 15 Oct the hook logged `allow` for that
    Edit at 22:11:34 and the prompt sat unanswered until 21 Oct 00:34, and no Smith ran from 16 to 20 Oct
    because the scheduler runs one session per task. Since 21 Oct a scheduled prompt is refused outright.
-   If the fix is in the hook, read `/Users/triton/PROTEUS/state/loop/skill-drafts/hook-patch/SKILL.md`
-   first (a draft until an interactive session copies it into `.claude/skills/`): write it as a unified diff to
+   If the fix is in the hook, use the `hook-patch` skill
+   (`/Users/triton/PROTEUS/.claude/skills/hook-patch/SKILL.md`, installed 12 Nov 2026): write it as a unified diff to
    `/Users/triton/PROTEUS/state/loop/hook-patches/F-00NN.diff` with the test cases it needs, prove it with a
    `F-00NN-check.py` beside it, run `check-diff.py` on it, note the path in the finding (`findings.py` note via
    `fix` is wrong here; leave it open with the run-log line), and an interactive session applies it and runs
@@ -46,9 +46,8 @@ For each, in order, while time allows:
 5. One line under `## I changed myself` in this week's Field Notes draft (`field-notes/drafts/YYYY-Www.md`):
    `- F-00NN, <commit>: <what changed and why>; revert with git revert <commit>`.
 
-A finding whose source is `duecheck` is a pre-registered read owed, not a fault: read
-`/Users/triton/PROTEUS/state/loop/skill-drafts/due-read/SKILL.md` first (a draft until an interactive
-session copies it into `.claude/skills/`) and do the read, as D-012, D-014 and D-018 were done by hand.
+A finding whose source is `duecheck` is a pre-registered read owed, not a fault: use the
+`due-read` skill (`/Users/triton/PROTEUS/.claude/skills/due-read/SKILL.md`, installed 12 Nov 2026) and do the read, as D-012, D-014 and D-018 were done by hand.
 
 A finding you cannot fix tonight stays open with a note in the run log. One that should never be fixed:
 `findings.py wontfix F-00NN --note '<why>'`.

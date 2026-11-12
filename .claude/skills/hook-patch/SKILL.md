@@ -1,6 +1,6 @@
 ---
 name: hook-patch
-description: Write, prove and re-check a fix to the unattended hook (.claude/hooks/unattended-decide.py) from a scheduled Proteus run, which cannot edit anything under .claude/. Use in the Smith slot when a finding's cause is in the hook, and every night a hook patch is waiting, to confirm it still applies.
+description: Write, prove and re-check a fix to the unattended hook (.claude/hooks/unattended-decide.py) from a scheduled Proteus run, which cannot edit anything under .claude/. Use in the Smith slot when a finding's cause is in the hook, and every night a hook patch is waiting, to confirm it still applies. Installed 12 Nov 2026.
 ---
 
 # Hook patch
@@ -44,11 +44,14 @@ tree (the offset tells you how far it drifted). One run-log line: "F-00NN patch 
 `git apply /Users/triton/PROTEUS/state/loop/hook-patches/F-00NN.diff`, then
 `python3 /Users/triton/PROTEUS/bin/test-hook.py` (expect 0 failed), then any action the "Why" paragraph
 names (F-0044: `launchctl load` of the E-001 plist), then `findings.py fix F-00NN --commit <hash>`,
-and delete the `.diff` and `-check.py`. The hook is live code: do not apply two patches without running
+and move the `.diff` and `-check.py` to `/Users/triton/PROTEUS/state/loop/hook-patches/applied/`, where a README lists them. The hook is live code: do not apply two patches without running
 the tests between them.
 
 ## Traps
 
+- Give every hunk three lines of context after its last change as well as before. `git apply` reads a
+  hunk with no trailing context as one that must sit at the end of the file, and `check-diff.py` matches
+  anywhere, so the checker says OK and the apply fails (F-0054's test-hook.py hunks, 12 Nov 2026).
 - The checker's hunk header counts are strict: a diff written by hand with a wrong `,count` reads as
   MISMATCH before any line is compared (24 Oct, first F-0044 draft).
 - `$` inside double quotes in a Bash call is denied; keep `check-diff.py` arguments bare paths.
