@@ -1,5 +1,5 @@
 {
- "next_id": 431,
+ "next_id": 432,
  "items": [
   {
    "id": "P-0001",
@@ -10912,6 +10912,32 @@
     "number": "for at least 6 of the 9 rules the best-ten share of gross wins sits inside the random lists' 10th to 90th percentile band, so the concentration is what random entries show too",
     "at": "2026-11-12T23:46:58+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0431",
+   "title": "Systems book RSI(5) simple after eight closes: which trades are they, and how likely are 3 or fewer winners in 8 if the backtest's 75% win rate were true?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 10,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:48:38+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "3 winners in 8 has under a 5 percent chance at a true 75 percent win rate; shot after reading the desk's own 38 percent line",
+    "at": "2026-11-12T23:48:40+0000"
    }
   }
  ]
