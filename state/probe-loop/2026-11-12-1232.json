@@ -1,0 +1,16 @@
+{
+ "key": "2026-11-12-1232",
+ "date": "2026-11-12",
+ "started_at": "2026-11-12T12:32:06+0000",
+ "deadline": "2026-11-12T13:04:06+0000",
+ "deadline_how": "--minutes 32",
+ "max_calls": 150,
+ "max_probes": 6,
+ "session": "4a5021d4",
+ "run_log": "/Users/triton/PROTEUS/state/runs/2026-11-12.md",
+ "probes": [
+  "P-0226"
+ ],
+ "stopped_at": null,
+ "stop_reason": null
+}
