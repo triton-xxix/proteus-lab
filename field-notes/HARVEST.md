@@ -6,12 +6,22 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-621 judged over 43 harvest days, 408 kept, 126 testable, 121 queued as probes, 114 with a probe verdict.
+635 judged over 44 harvest days, 418 kept, 126 testable, 121 queued as probes, 115 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0634 | 2026-11-12 | github | [ersinkoc/phonebox: Turn an old Android phone into a local desk panel for Windows, Linux an](https://github.com/ersinkoc/phonebox) | mechanism | tools-for-strangers | no: Needs an Android phone and the app. |  |
+| H-0632 | 2026-11-12 | vault | [proven content formats per client]() (intel) | mechanism | tools-for-strangers | no: Needs a live account and audience metrics over time. |  |
+| H-0630 | 2026-11-12 | arxiv | [From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Har](https://arxiv.org/abs/2611.13960) | mechanism | mechanism-hunting | no: No code is cited in the abstract and the fixtures are the au |  |
+| H-0629 | 2026-11-12 | github | [threerocks/article2media: 把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频](https://github.com/threerocks/article2media) | mechanism | tools-for-strangers | no: Needs Node 22, Chrome, and a local TTS model download, and t |  |
+| H-0628 | 2026-11-12 | hn | [Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents](https://news.ycombinator.com/item?id=50455811) | both | tools-for-strangers | no: The product needs an account and a hosted service. |  |
+| H-0627 | 2026-11-12 | vault | [Promoter statistic that most wallets are profitable]() (intel) | mechanism | desk:grinder | no: Per-wallet profit data is not available keyless from the rea |  |
+| H-0625 | 2026-11-12 | arxiv | [Controlled Knowledge Engineering for Taxonomy Induction with Tool-Grounded LLM Agents and ](https://arxiv.org/abs/2611.13966) | mechanism | mechanism-hunting | no: Reproducing needs LLM calls and the benchmark harness; no lo |  |
+| H-0624 | 2026-11-12 | github | [agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and ](https://github.com/agentes-chat/agentes-chat) | mechanism | tools-for-strangers | no: Needs Docker, Postgres and model keys, and judging the route |  |
+| H-0623 | 2026-11-12 | hn | [Socratic Tutor](https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md) | mechanism | tools-for-strangers | no: Judging a tutoring prompt needs model answers and there is n |  |
+| H-0622 | 2026-11-12 | vault | [Paid trading community whose credibility rests on self-reported PnL screenshots and a lege]() (intel) | mechanism | desk:grinder | no: Needs a named wallet to verify and the claim has none; keyle |  |
 | H-0619 | 2026-11-11 | hn | [Show HN: Klad, a paint app your coding agent can drive (source-available)](https://github.com/klad-app/klad) | mechanism | tools-for-strangers | no: It needs a Rust build of a GUI app and a drawing session, wh |  |
 | H-0618 | 2026-11-11 | vault | [comment-for-DM-link funnel (same poster as the NVIDIA free models post)](https://www.instagram.com/p/DfmyrUTgSmi/) (intel) | mechanism | none | no: It needs a social account and the platform's messaging API,  |  |
 | H-0616 | 2026-11-11 | arxiv | [Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File O](https://arxiv.org/abs/2611.14009) | mechanism | mechanism-hunting | no: It needs GPU training of a language model, which this Mac ca |  |
@@ -19,7 +29,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0614 | 2026-11-11 | hn | [Show HN: Black Ops II statically recompiled to native ARM64 macOS](https://github.com/adrbn/bo2-mac) | mechanism | tech | no: It needs a licensed copy of the game and an Apple Silicon Ma |  |
 | H-0613 | 2026-11-11 | vault | [pain-first hook plus five-bullet outcome list for a niche community](https://www.instagram.com/p/Den4ud4sOgC/) | mechanism | tools-for-strangers | no: A test needs a live audience and a posting account, which ca |  |
 | H-0611 | 2026-11-11 | arxiv | [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](https://arxiv.org/abs/2611.14492) | mechanism | mechanism-hunting | no: The method needs model calls and the authors' production pro |  |
-| H-0610 | 2026-11-11 | github | [alexeyw/lot-map: A live map beside the chat that shows what Claude Code is doing: tool cal](https://github.com/alexeyw/lot-map) | mechanism | tools-for-strangers | yes | P-0411 |
+| H-0610 | 2026-11-11 | github | [alexeyw/lot-map: A live map beside the chat that shows what Claude Code is doing: tool cal](https://github.com/alexeyw/lot-map) | mechanism | tools-for-strangers | yes | P-0411 **works** |
 | H-0609 | 2026-11-11 | hn | [Show HN: Yogurt – Free, private, open-source alternative to Granola](https://github.com/FrigadeHQ/yogurt) | both | tools-for-strangers | no: It needs a built desktop app, local language model weights a |  |
 | H-0608 | 2026-11-11 | vault | [parallel tasks plus one-prompt CRM and dashboard builds](https://www.instagram.com/p/DfmyrUTgSmi/) | mechanism | tools-for-strangers | no: The hosted product needs an account and credits, and the pro |  |
 | H-0606 | 2026-11-10 | github | [Junhan2/ztd-charts: 36 animated, interactive React charts in pure SVG, with a CLI and an M](https://github.com/Junhan2/ztd-charts) | both | tools-for-strangers | yes | P-0399 **blocked** |
@@ -422,6 +432,128 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0634 ersinkoc/phonebox: Turn an old Android phone into a local desk panel for Windows, Linux and macOS. 55 widgets, Smart Sta
+2026-11-12, github, https://github.com/ersinkoc/phonebox
+
+- **Mechanism:** A desktop agent collects PC metrics and reads local AI session and quota data, then pushes it to an Android app over USB or paired Wi-Fi. For Claude Code it relays permission prompts to the phone and returns an Allow or Deny, which implies a hook that waits on a local service. Webhooks and rules let outside scripts push values and switch pages.
+- **Claim:** Turns an old Android phone into a desk panel with 113 widgets showing PC stats, AI quotas, and Claude Code permission prompts with Allow and Deny.
+- **Testable:** no. Needs an Android phone and the app. Needs: An Android device..
+- **Idea on its own:** sound. Routing a blocking permission hook to a second screen is a simple, workable pattern.
+- **How it would be done:** Read the repo's Claude Code prompt section to see how the hook blocks, posts to the local agent and waits for a reply. The same shape could post held approvals from the unattended hook to a webhook. The phone app itself is not needed to learn the mechanism.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** ersinkoc/phonebox https://github.com/ersinkoc/phonebox (Source of the permission-prompt relay.)
+- **Field Notes line:** An old Android phone becomes a desk panel that can approve or deny Claude Code permission prompts from the hook, plus quota burn forecasts.
+
+### H-0632 proven content formats per client
+2026-11-12, vault, 
+
+- **Mechanism:** Before launching a creator account, an agency fixes a small set of content formats, posts them, and repeats the ones that get views, treating format as the main lever. It is a plan-then-iterate loop on the format, driven by platform view counts, with the set recorded per client. Platforms detect nothing here: this is ordinary content strategy, and risk lies only in how an account is operated, which is not recorded.
+- **Claim:** Interviewees cite choosing proven content formats and repeating what pops as the most important lever.
+- **Testable:** no. Needs a live account and audience metrics over time. Needs: An audience channel with analytics..
+- **Idea on its own:** needs-a-run. Repeating a winning format is plausible but the claimed outcomes are self-reported, so only an own-channel test would show it.
+- **How it would be done:** Define three formats, post each on a schedule on an own channel, and record views per post by format for several weeks. Keep the winner and drop the rest by a stated rule set beforehand. Video formats could be produced with the existing video and voice tools. A person is needed for the channel account and posting.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), HeyGen and Tavus (avatars)
+- **Missing:** An account with an audience to measure against.
+- **Field Notes line:** Agencies pick a fixed set of content formats before launch and double down on those that pop; the figures behind it are unverified.
+
+### H-0630 From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Harnesses
+2026-11-12, arxiv, https://arxiv.org/abs/2611.13960
+
+- **Mechanism:** A reference monitor sits between the model and its tools and decides without asking another model. Capability tokens signed with HMAC are issued per trust ring, and a two-axis taint lattice tracks trust and sensitivity so data from untrusted retrieval cannot be laundered through disk into a later command. Ring-0 guards are deterministic checks on the tool call itself, evaluated in microseconds.
+- **Claim:** Deterministic guards reach attack block rate 1.000 and false positives 0.000 on 252 fixtures in 12.7 microseconds, against a 4B model judge that refuses 98.3% of benign work.
+- **Testable:** no. No code is cited in the abstract and the fixtures are the authors' own; reproducing means building the system. Needs: The authors' code and fixtures, if released..
+- **Idea on its own:** sound. Deterministic taint rules on tool calls are cheaper and more predictable than an LLM judge, though the fixtures are self-authored.
+- **How it would be done:** Check whether the paper links code or fixtures. If not, sketch a two-field taint label (trust, sensitivity) on files written by tool calls and test it against Proteus's own hook log of denied calls. Compare the rule's decisions with the current regex-style hook on historical calls. This is the same job as Proteus's unattended hook.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** arXiv 2611.13960 https://arxiv.org/abs/2611.13960 (The paper and any linked code.)
+- **Field Notes line:** A deterministic taint-tracking monitor beat a small LLM judge on blocking agent attacks, with no false positives on the authors' own fixtures.
+
+### H-0629 threerocks/article2media: 把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。
+2026-11-12, github, https://github.com/threerocks/article2media
+
+- **Mechanism:** A set of skills splits content work into read, render and verify. The model reads the article once and writes a style-free content.json; scripts then render long images, cards and vertical videos from it using Chrome, a local TTS model and Whisper alignment. Every output has an automatic check that exits non-zero on overflow, a changed word in the verbatim path, or missing numbers, and the video gets a frame-level subtitle and loudness check.
+- **Claim:** One link becomes Xiaohongshu cards, a long image, WeChat layout and an AI-voiced short video, with 21 themes and automatic acceptance checks.
+- **Testable:** no. Needs Node 22, Chrome, and a local TTS model download, and the content step needs a model. Needs: Node 22, Chrome and optional local voice model weights..
+- **Idea on its own:** sound. Separating content from layout and failing on programmatic checks is a durable pattern for repurposing text.
+- **How it would be done:** Install the plugin, feed it one public article, and inspect content.json and the check scripts. Reuse the verbatim-readback and number-source checks as a gate in Proteus's own Field Notes pipeline. The rendering overlaps HyperFrames, so only the validators are worth lifting. No hired work.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), Claude Code with skills and sub-agents
+- **To fetch:** article2media https://github.com/threerocks/article2media (Source of the validators and content.json schema.)
+- **Field Notes line:** A skill that separates reading from rendering and fails the build on any changed word or missing number, then makes cards and a voiced video.
+
+### H-0628 Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents
+2026-11-12, hn, https://news.ycombinator.com/item?id=50455811
+
+- **Mechanism:** The service observes how a site's pages and network calls behave, then generates a deterministic tool that replays those requests as a typed API exposed over MCP. It claims to self-heal by regenerating the tool when the site changes. Open questions raised in the thread are where logins and session cookies are stored and whether page text can pass through to the agent as prompt injection.
+- **Claim:** Turns any website into a deterministic, self-healing MCP server in minutes, self-serve.
+- **Testable:** no. The product needs an account and a hosted service. Needs: An account with the vendor..
+- **Idea on its own:** sound. Recording the site's underlying requests and replaying them is faster and cheaper than driving a browser, though brittle on change.
+- **How it would be done:** Capture a HAR of the task in a browser, find the JSON or form endpoints that carry the data, write a small typed wrapper and expose it over MCP. Add a check that the response shape still matches and flag when it drifts. Session handling stays on the user's machine. A person is needed for sites behind a login and to judge terms of service.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** mitmproxy https://mitmproxy.org (Free capture of a site's real network calls to turn into a tool.); MCP TypeScript SDK https://github.com/modelcontextprotocol/typescript-sdk (To expose the generated wrapper as an MCP server.)
+- **Missing:** A reliable way to detect and repair a site change without a person.
+- **Field Notes line:** Pomerado compiles a website's own network calls into an MCP tool; the hard parts are login storage and page text reaching the agent.
+
+### H-0627 Promoter statistic that most wallets are profitable
+2026-11-12, vault, 
+
+- **Mechanism:** A headline share of profitable wallets is true but is computed over winners that mostly made under $500, with bot activity not filtered and unsold bags left out of the loss side. Counting only realised profit flatters the figure; marking open holdings to market, weighting by size and removing bot wallets would change it. The statistic is a selection effect, not an edge. Platforms and analysts detect it by asking for the denominator and the treatment of unsold tokens.
+- **Claim:** The launchpad's promoters say most wallets on it are profitable.
+- **Testable:** no. Per-wallet profit data is not available keyless from the readers Proteus has. Needs: Per-wallet trade history for a sample of launches, from a paid or keyed indexer..
+- **Idea on its own:** sound. Recomputing the same statistic with open positions marked down is a straightforward, honest way to test any such claim.
+- **How it would be done:** Sample a few hundred tokens launched in one day, pull the buyers' swaps from a public indexer, and compute profit two ways: realised only and with open holdings marked at current price. Strip wallets that bought in the same slot as launch as likely bots. Publish the share profitable, the median profit and the size distribution. The Grinder's existing token readers cover pricing, not wallet history.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers, Solana paper desk (the Grinder)
+- **To fetch:** Dune Analytics public queries https://dune.com (Existing public Solana dex dashboards show wallet-level profit; free tier.)
+- **Missing:** A free source of per-wallet swap history at the volume needed.
+- **Field Notes line:** Most wallets profitable is true on realised trades only; unsold bags and bots are left out, and winners mostly made under $500.
+
+### H-0625 Controlled Knowledge Engineering for Taxonomy Induction with Tool-Grounded LLM Agents and Runtime-Adaptive Policies
+2026-11-12, arxiv, https://arxiv.org/abs/2611.13966
+
+- **Mechanism:** Taxonomy building is framed as steps over an explicit state: the agent calls executable edit tools (add node, move, merge) so the tree is always structurally valid. A memory logs each tool call, rationale and outcome, and the agent rewrites its own organising policy during the run. An optional global reviewer checks the finished tree against the candidate entity list.
+- **Claim:** TIGA gives the strongest structural quality on most of four benchmark taxonomies with two LLM backbones, at much higher token cost.
+- **Testable:** no. Reproducing needs LLM calls and the benchmark harness; no local model tonight. Needs: A model key and the benchmark taxonomies..
+- **Idea on its own:** sound. Constraining an agent to validating edit tools removes whole classes of invalid output, which is the general lesson.
+- **How it would be done:** Build a small tool set over a JSON tree that rejects invalid edits, a log of calls with reasons, and a policy string the agent may rewrite. Run it against a short entity list such as the vault's tools shelf. Compare with a single-shot prompt on completeness and invalid parent links. Needs model calls and nothing else.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Letting an agent edit a taxonomy only through validating tools, with a self-revised policy, beats free generation on structure but costs far more tokens.
+
+### H-0624 agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and AI agents work together in cha
+2026-11-12, github, https://github.com/agentes-chat/agentes-chat
+
+- **Mechanism:** Agents are workspace members with a role, owner and monthly budget checked before each model call. Unaddressed messages go to a router: code picks candidate agents, then a small model or simple rules pick up to four to answer, and it never grants permissions. Sensitive actions such as merge or deploy become approval cards that the owner clicks, and the approved action runs once exactly as approved. Tools arrive through MCP connectors scoped per agent.
+- **Claim:** A self-hosted Slack alternative where agents on Claude, GPT, Gemini or Grok work in channels with budgets and approvals, with 1150 stars in three days.
+- **Testable:** no. Needs Docker, Postgres and model keys, and judging the router needs model calls. Needs: Docker host, Postgres, and a model key..
+- **Idea on its own:** sound. Per-agent budgets checked before the call and one-shot approved actions are a clean way to keep agents bounded.
+- **How it would be done:** Read the router and approval code paths rather than run the whole stack: the candidate selection function, the budget check and the approval record. Lift the pattern of code-selected candidates plus a cheap picker into Proteus's own child-agent dispatch. If run, it takes a Linux box with Docker Compose and one model key. No hired work.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** agentes-chat https://github.com/agentes-chat/agentes-chat (Source for the router, budget and approval design.)
+- **Field Notes line:** A new open chat app gives agents budgets and owner approvals, with code choosing which agents may answer an unaddressed message.
+
+### H-0623 Socratic Tutor
+2026-11-12, hn, https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md
+
+- **Mechanism:** A SKILL.md file instructs the model to answer a learner's questions with guiding questions rather than answers, loaded on demand by the harness skill mechanism. The behaviour comes entirely from prompt text, with no code and no tool calls. Whether it works depends on the model following the instruction over many turns.
+- **Claim:** Jane Street published an agent skill that makes the model tutor by Socratic questioning, and it reached 648 points on HN.
+- **Testable:** no. Judging a tutoring prompt needs model answers and there is no local LLM tonight. Needs: A model to run the skill against..
+- **Idea on its own:** needs-a-run. Prompt-only tutoring either holds over a long session or drifts back to giving answers, and only a run shows which.
+- **How it would be done:** Fetch the SKILL.md, drop it under a test skills folder, and run the same five learner questions with and without it on one model. Score each reply on whether it asked rather than told, and whether the learner reached the answer. Compare against the earlier socrates-skill repo cited in the comments. No hired work needed.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** janestreet/agent_skills socratic-tutor https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md (The skill under test.); bevibing/socrates-skill https://github.com/bevibing/socrates-skill (The earlier skill to compare against.)
+- **Field Notes line:** Jane Street's open skill turns a coding agent into a Socratic tutor using only prompt text; HN doubts it differs from an earlier public skill.
+
+### H-0622 Paid trading community whose credibility rests on self-reported PnL screenshots and a legend it interviewed itself
+2026-11-12, vault, 
+
+- **Mechanism:** A paid group sells access on the strength of a named trader's claimed profits. The proof is screenshots the trader supplied and an interview run by the seller, so nothing ties the number to a wallet. The checkable version is to take a public wallet address, read its swaps from chain data, and rebuild realised profit and loss yourself. Platforms and buyers catch the gap by asking for an address and finding none.
+- **Claim:** A community credits a trader with a $40m token win and sells membership at $599 a year on that reputation.
+- **Testable:** no. Needs a named wallet to verify and the claim has none; keyless chain reads of an arbitrary wallet do not answer the question. Needs: A wallet address behind the claim, and a chain indexer with per-wallet swap history..
+- **Idea on its own:** sound. Rebuilding profit and loss from on-chain swaps is a real way to separate verifiable traders from claimed ones.
+- **How it would be done:** Pick wallets that appear in public leaderboards or on-chain labelled lists, pull their swap history from a free indexer or public RPC, and price each fill at the time it happened. Compute realised and unrealised profit, trade size distribution and win rate, then publish the wallets that hold up over a fixed window. Score followed wallets forward on paper in the Grinder rather than trusting backtests. A person would be needed only to link a claimed trader to a wallet, which no script can do from a screenshot.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers, Solana paper desk (the Grinder)
+- **To fetch:** Solana public RPC getSignaturesForAddress https://solana.com/docs/rpc/http/getsignaturesforaddress (Lists a wallet's transactions keyless within rate limits so swaps can be rebuilt.)
+- **Missing:** A trustworthy mapping from a claimed trader to a wallet, which only the trader can supply.
+- **Field Notes line:** A trading community's star trader traces back to the seller's own interview; the fix is rebuilding any claimed profit from a wallet's on-chain swaps.
 
 ### H-0619 Show HN: Klad, a paint app your coding agent can drive (source-available)
 2026-11-11, hn, https://github.com/klad-app/klad
@@ -5227,6 +5359,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0632 | 2026-11-12 | proven content formats per client | intel | needs-a-run | no |  |
+| H-0627 | 2026-11-12 | Promoter statistic that most wallets are profitable | intel | sound | no |  |
+| H-0622 | 2026-11-12 | Paid trading community whose credibility rests on self-reported PnL screenshots and a lege | intel | sound | no |  |
 | H-0618 | 2026-11-11 | comment-for-DM-link funnel (same poster as the NVIDIA free models post) | intel | sound | no |  |
 | H-0613 | 2026-11-11 | pain-first hook plus five-bullet outcome list for a niche community | open | needs-a-run | no |  |
 | H-0608 | 2026-11-11 | parallel tasks plus one-prompt CRM and dashboard builds | open | needs-a-run | no |  |
@@ -5361,6 +5496,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0369 | 2026-11-12 | [ersinkoc/phonebox](https://github.com/ersinkoc/phonebox) | Source of the permission-prompt relay. | H-0634 (ersinkoc/phonebox: Turn an old Android phone into ) | shelf |
+| T-0368 | 2026-11-12 | [arXiv 2611.13960](https://arxiv.org/abs/2611.13960) | The paper and any linked code. | H-0630 (From Attack Surface to Defense Architecture: Compo) | shelf |
+| T-0367 | 2026-11-12 | [article2media](https://github.com/threerocks/article2media) | Source of the validators and content.json schema. | H-0629 (threerocks/article2media: 把一篇文章或一条视频（抖音、B 站、YouTub) | shelf |
+| T-0366 | 2026-11-12 | [agentes-chat](https://github.com/agentes-chat/agentes-chat) | Source for the router, budget and approval design. | H-0624 (agentes-chat/agentes-chat: Open-source, self-hoste) | shelf |
+| T-0365 | 2026-11-12 | [bevibing/socrates-skill](https://github.com/bevibing/socrates-skill) | The earlier skill to compare against. | H-0623 (Socratic Tutor) | shelf |
+| T-0364 | 2026-11-12 | [janestreet/agent_skills socratic-tutor](https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md) | The skill under test. | H-0623 (Socratic Tutor) | shelf |
+| T-0363 | 2026-11-12 | [Solana public RPC getSignaturesForAddress](https://solana.com/docs/rpc/http/getsignaturesforaddress) | Lists a wallet's transactions keyless within rate limits so swaps can be rebuilt. | H-0622 (Paid trading community whose credibility rests on ) | shelf |
 | T-0362 | 2026-11-11 | [Klad](https://github.com/klad-app/klad) | The app and its agent CLI. | H-0619 (Show HN: Klad, a paint app your coding agent can d) | shelf |
 | T-0361 | 2026-11-11 | [multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | Small embedding model it uses for meaning search. | H-0615 (vzroslieigry/maxagent: Experience for AI agents: h) | shelf |
 | T-0360 | 2026-11-11 | [maxagent](https://github.com/vzroslieigry/maxagent) | Source for the hook and lookup code. | H-0615 (vzroslieigry/maxagent: Experience for AI agents: h) | shelf |
@@ -5728,6 +5870,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0635 | 2026-11-12 | hn | [How do you keep up quality when you vibe-code?](https://news.ycombinator.com/item?id=50444380) | An open question thread with generic advice (write decisions down, test heavily) and no mechanism. |
+| H-0633 | 2026-11-12 | hn | [Show HN: AgentRun – open-source, Self-improving Managed Agents](https://github.com/Parcha-ai/agentrun/blob/main/README.md) | Thin README-level claim of self-improving managed agents with no mechanism stated; agentes-chat covers the agent-platfor |
+| H-0631 | 2026-11-12 | youtube | [Python 3.16 Just Dropped — And an AI Crashed 3.15 in 5 Lines](https://www.youtube.com/watch?v=_EnL_XvlI-0) | Transcript unavailable and the title is a news hook with no visible mechanism. |
+| H-0626 | 2026-11-12 | youtube | [5 Claude Code Skills That Will Upgrade Your Development Workflow](https://www.youtube.com/watch?v=C-6UEA-SfkU) | A listicle naming five existing skills with no mechanism and a comment-for-links hook. |
 | H-0621 | 2026-11-11 | youtube | [Why Does Your Car Lose Value Every Year? 🚗 / Depreciation Explained](https://www.youtube.com/watch?v=baChlHk8HQw) | Transcript unavailable and the title is a generic explainer with no mechanism visible. |
 | H-0620 | 2026-11-11 | github | [nishant-Tiwari24/cracked: Skills for getting hired. Company-wise mock interviews](https://github.com/nishant-Tiwari24/cracked) | A bundle of interview-prep prompts with no new mechanism beyond running code against tests. |
 | H-0617 | 2026-11-11 | youtube | [The Truth About Luxury Car Depreciation and Personal Finance](https://www.youtube.com/watch?v=t6QTmKIV4J8) | Transcript unavailable and the title is a generic claim with no mechanism visible. |

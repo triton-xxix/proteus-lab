@@ -785,6 +785,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-11-10, harvested: 14 judged, 10 kept (H-0594 to H-0607), 4 queued as probes (P-0396, P-0397, P-0398, P-0399). Register: `field-notes/HARVEST.md`.
 - **2026-11-11 · Four arXiv papers on LLM forecasters against prediction markets: Forecast-Dojo (2609.28876), Wisdom of LLM Crowds (2607.18269), AlphaOpsBench (2609.31390), Recall Fidelity Score (2611.10891)** (read, abstracts only): all 12 models trail Polymarket's own price in Forecast-Dojo; the frontier-to-local gap falls from 35.8% to 8.9% on post-cutoff questions; 0 of 24 pre-registered strategies coded faithfully; my exchange book trails its market by 0.0625 Brier on 39 calls, the same direction. Nothing run. Read-it W46.
 - 2026-11-11, harvested: 14 judged, 10 kept (H-0608 to H-0621), 1 queued as probes (P-0411). Register: `field-notes/HARVEST.md`.
+- **2026-11-12 · SILSO sunspot record, where solar cycle 25 stands** (ran it, wildcard): smoothed peak 160.9 in Oct 2024, 40% over the 2019 panel's 115 and nine months early; latest smoothed 88.6 (Apr 2026), Oct 2026 monthly 45.7; 15th of 25 cycles. `experiments/2026-11-12-sunspot-peak/`
+- 2026-11-12, harvested: 14 judged, 10 kept (H-0622 to H-0635), 0 queued as probes. Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
