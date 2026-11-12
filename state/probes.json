@@ -1,5 +1,5 @@
 {
- "next_id": 421,
+ "next_id": 422,
  "items": [
   {
    "id": "P-0001",
@@ -10631,6 +10631,32 @@
     "number": "forecast-cloud correction fitted in sample scores MAE about 1.04 out of sample (inside 0.98 to 1.08), a little better than flat +0.5 at 1.09",
     "at": "2026-11-12T12:44:20+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0421",
+   "title": "Registered edge rules with their best trades removed: for E-011 to E-019 on each rule's own admission sessions, how many best trades must go before the total reaches zero, and did the forward-week passers need more removed than the failers?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:36:52+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "median best-trades-to-zero across the nine rules is 10 or fewer (band 4 to 12), and the three forward passers do not need a larger share removed than the three failers",
+    "at": "2026-11-12T23:37:05+0000"
    }
   }
  ]
