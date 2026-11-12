@@ -8664,22 +8664,25 @@
    "after": "2026-11-12",
    "est_minutes": 25,
    "added": "2026-11-06",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T12:33:36+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T12:42:21+0000",
+   "note": "0 of 100 starts changed outcome class one week on (shot: at most 5), and Philosophy arrivals are 48 against 48 (shot 46 to 50): hit. Loops 41 and dead ends 11, both unchanged; no end page moved. Only 2 of 100 paths changed, both still arriving, from 2 first-link edits among 504 pages (Betty Todd, Indo-Aryan peoples), about 0.4 percent of pages a week and neither a hub. So the 5 to 85 percent yearly swings in P-0332 are rare single hub edits, not drift. Caveat: one week, one sample; it cannot say how often a hub flips. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0348"
+   ],
+   "minutes": 8,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "at most 5 of the 100 starts change outcome class in a week; Philosophy arrivals 46 to 50 against 48",
-    "at": "2026-11-12T12:34:10+0000"
+    "at": "2026-11-12T12:34:10+0000",
+    "hit": true
    }
   },
   {
