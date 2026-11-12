@@ -39,7 +39,7 @@ For each, in order, while time allows:
    `/Users/triton/PROTEUS/state/loop/hook-patches/F-00NN.diff` with the test cases it needs, prove it with a
    `F-00NN-check.py` beside it, run `check-diff.py` on it, note the path in the finding (`findings.py` note via
    `fix` is wrong here; leave it open with the run-log line), and an interactive session applies it and runs
-   `bin/test-hook.py`. While any patch waits, re-run `check-diff.py` on it each night and log the result.
+   `bin/test-hook.py`. Give every hunk three lines of context after its last change as well as before: `git apply` reads a hunk with no trailing context as one that must sit at the end of the file, and `check-diff.py` does not catch that (F-0054's test-hook.py hunks, 12 Nov 2026). While any patch waits, re-run `check-diff.py` on it each night and log the result; once applied it moves to `hook-patches/applied/`.
 2. Test it: re-run the thing that failed.
 3. Commit just that change: `python3 /Users/triton/PROTEUS/bin/commit.py -m "smith: F-00NN <what>" <paths>`
 4. `python3 /Users/triton/PROTEUS/bin/findings.py fix F-00NN --commit <hash> --note '<what changed>'`

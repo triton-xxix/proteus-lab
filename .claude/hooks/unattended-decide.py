@@ -24,6 +24,8 @@ Differences from the vault hook, all deliberate:
   - ffmpeg/ffprobe, cp and one npm form (added 2026-10-07, see media_ok/cp_ok/npm_ok): every path
     inside the folder, cp only between write roots, npm only into a sandbox/ prefix with
     --ignore-scripts and a sandbox/ cache.
+  - launchctl (F-0044, 24 Oct 2026, see launchctl_ok): load/unload/bootstrap/bootout of a plist
+    inside the folder or a com.proteus.*.plist under ~/Library/LaunchAgents; list and print read-only.
   - The vault's protect-vaults.py does not run here; the write roots make the vault unreachable.
 
 Test: python3 /Users/triton/PROTEUS/bin/test-hook.py
@@ -458,6 +460,48 @@ def npm_ok(parts):
     return None
 
 
+LAUNCHCTL_READ = ("list", "print")
+LAUNCHCTL_LOAD = ("load", "unload", "bootstrap", "bootout")
+LAUNCH_AGENTS = os.path.expanduser("~/Library/LaunchAgents/")
+
+
+def launchctl_ok(parts):
+    """launchctl: list/print read-only; load/unload/bootstrap/bootout of a Proteus plist only.
+
+    The plist decides what runs, so the fence is where the plist lives: inside the folder, or a
+    com.proteus.*.plist under ~/Library/LaunchAgents (the 14 Oct 2026 amendment installs the
+    graduation watcher there so it survives reboots). Domain targets are gui/<uid>[/label] only.
+    F-0044: the E-001 watcher sat unloaded from 22 Oct 2026 because launchctl was off the list.
+    """
+    args = parts[1:]
+    if not args:
+        return "launchctl needs a subcommand."
+    verb = args[0]
+    if verb in LAUNCHCTL_READ:
+        return None
+    if verb not in LAUNCHCTL_LOAD:
+        return "launchctl %s is not allowed unattended (allowed: %s)." % (verb, ", ".join(LAUNCHCTL_READ + LAUNCHCTL_LOAD))
+    flags = [a for a in args[1:] if a.startswith("-") and a != "-w"]
+    if flags:
+        return "launchctl flag(s) %s not allowed unattended (only -w)." % " ".join(flags)
+    rest = [a for a in args[1:] if not a.startswith("-")]
+    labels = [a for a in rest if re.fullmatch(r"gui/\d+(/com\.proteus\.[A-Za-z0-9._-]+)?", a)]
+    plists = [a for a in rest if a not in labels]
+    if verb == "bootout" and not plists:
+        if labels and all("/com.proteus." in a for a in labels):
+            return None
+        return "launchctl bootout needs gui/<uid>/com.proteus.<label> or a Proteus plist."
+    if not plists:
+        return "launchctl %s needs a plist path." % verb
+    for p in plists:
+        if not p.endswith(".plist"):
+            return "launchctl %s: %s is not a .plist (a domain target must be gui/<uid>/com.proteus.<label>)." % (verb, p)
+        agent = _under(p, LAUNCH_AGENTS) and os.path.basename(p).startswith("com.proteus.")
+        if not (_under_root(p) or agent):
+            return "launchctl %s: %s must be a plist inside %s or a com.proteus.*.plist under %s." % (verb, p, PROTEUS_ROOT, LAUNCH_AGENTS)
+    return None
+
+
 def bash_ok(cmd):
     """Return None if the command is safe to auto-allow, else the reason it is not."""
     segs, why = _scan(cmd)
@@ -479,6 +523,12 @@ def bash_ok(cmd):
             # plain python3, so a script under the folder may carry it (F-0007, 15 Oct 2026).
             if head in ("python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 2 and parts[1] == "-I":
                 parts = [head] + parts[2:]
+            # F-0054 (3 Nov 2026): node's TypeScript flag is stripped like -I, so the script must still
+            # be under the folder; --version only prints. Each cost a probe one denied call.
+            if head == "node" and len(parts) > 2 and parts[1] == "--experimental-strip-types":
+                parts = [head] + parts[2:]
+            if head == "node" and len(parts) == 2 and parts[1] in ("--version", "-v"):
+                continue
             if len(parts) > 1 and _under_root(parts[1]):
                 continue
             if head == "node" and len(parts) > 1 and parts[1] == "-e":
@@ -522,6 +572,11 @@ def bash_ok(cmd):
             if why is not None:
                 return why
             continue
+        if head == "launchctl":
+            why = launchctl_ok(parts)
+            if why is not None:
+                return why
+            continue
         if head in SAFE_CMDS:
             if head == "sed" and "-i" in parts:
                 return "sed -i edits in place; use the Edit tool."
@@ -546,8 +601,12 @@ def fanout_enabled():
 def _agent_allows():
     """(session, ts) for every allowed Agent call in yesterday's and today's decisions logs."""
     out = []
-    for day in (time.time() - 86400, time.time()):
-        path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d", time.localtime(day)) + ".jsonl"
+    # F-0056: on 25 Oct 2026 (BST ended) now minus 86400 s at 23:31 GMT was 00:31 BST the same
+    # date, so today's log was read twice and 2 allows counted as 4. Step back a calendar day.
+    now = time.localtime()
+    yday = time.localtime(time.mktime((now.tm_year, now.tm_mon, now.tm_mday - 1, 12, 0, 0, 0, 0, -1)))
+    for day in (yday, now):
+        path = LOG_DIR + "unattended-decisions-" + time.strftime("%Y-%m-%d", day) + ".jsonl"
         try:
             with open(path) as fh:
                 for line in fh:
@@ -657,6 +716,8 @@ def child_bash_extra(cmd):
             continue
         script = None
         if head in ("python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 2 and parts[1] == "-I":
+            parts = [head] + parts[2:]
+        if head == "node" and len(parts) > 2 and parts[1] == "--experimental-strip-types":
             parts = [head] + parts[2:]
         if _under_root(head):
             script = head

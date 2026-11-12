@@ -44,6 +44,10 @@ CASES = [
     ("Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "allow"),
     ("Bash", {"command": "python3 " + ROOT + "bin/dash.py --commit"}, "allow"),
     ("Bash", {"command": "node " + ROOT + "bin/dash-seal.cjs " + ROOT + "state/dash.key " + ROOT + "docs/dash/payload.json"}, "allow"),
+    ("Bash", {"command": "node --version"}, "allow"),
+    ("Bash", {"command": "node --version --eval x"}, "deny"),
+    ("Bash", {"command": "node --experimental-strip-types " + ROOT + "sandbox/x.ts"}, "allow"),
+    ("Bash", {"command": "node --experimental-strip-types /Users/triton/OBSIDIAN/x.ts"}, "deny"),
     ("Bash", {"command": "/usr/bin/python3 " + ROOT + "bin/dash.py"}, "deny"),
     ("Bash", {"command": "bash " + ROOT + "bin/mirror-vault.sh"}, "allow"),
     ("Bash", {"command": "git -C " + ROOT + " add -A"}, "allow"),
@@ -159,6 +163,18 @@ CASES = [
     ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x ci --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache left-pad"}, "deny"),
     ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x run build"}, "deny"),
     ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/x exec --ignore-scripts --cache " + ROOT + "sandbox/.npm-cache x"}, "deny"),
+    ("Bash", {"command": "launchctl load " + ROOT + "edges/E-001/com.proteus.e001.plist"}, "allow"),
+    ("Bash", {"command": "launchctl bootstrap gui/501 " + ROOT + "edges/E-001/com.proteus.e001.plist"}, "allow"),
+    ("Bash", {"command": "launchctl bootstrap gui/501 /Users/triton/Library/LaunchAgents/com.proteus.graduates.plist"}, "allow"),
+    ("Bash", {"command": "launchctl bootout gui/501/com.proteus.e001"}, "allow"),
+    ("Bash", {"command": "launchctl list"}, "allow"),
+    ("Bash", {"command": "launchctl print gui/501/com.proteus.e001"}, "allow"),
+    ("Bash", {"command": "launchctl load /Users/triton/Library/LaunchAgents/com.triton.flywheel-poller.plist"}, "deny"),   # not a Proteus plist
+    ("Bash", {"command": "launchctl bootstrap gui/501 /Library/LaunchDaemons/x.plist"}, "deny"),
+    ("Bash", {"command": "launchctl load " + ROOT + "edges/E-001/watcher.py"}, "deny"),                                     # not a .plist
+    ("Bash", {"command": "launchctl kickstart -k gui/501/com.proteus.e001"}, "deny"),
+    ("Bash", {"command": "launchctl setenv X 1"}, "deny"),
+    ("Bash", {"command": "launchctl bootout gui/501/com.triton.flywheel-poller"}, "deny"),
     ("Bash", {"command": "npx -y some-tool"}, "deny"),
 ]
 
@@ -211,6 +227,8 @@ FANOUT_CASES = [
     (CHILD, "Bash", {"command": "bash " + ROOT + "bin/send-field-notes.sh"}, "deny"),
     (CHILD, "Bash", {"command": ROOT + "bin/run-nightly.sh"}, "deny"),
     (CHILD, "Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "deny"),
+    (CHILD, "Bash", {"command": "node --experimental-strip-types " + ROOT + "bin/x.ts"}, "deny"),
+    (CHILD, "Bash", {"command": "node --experimental-strip-types " + ROOT + "sandbox/x.ts"}, "allow"),
     (CHILD, "Bash", {"command": "curl -s https://api.dexscreener.com/latest/dex/search?q=pump"}, "allow"),
     (CHILD, "Bash", {"command": "cat " + ROOT + "CHARTER.md"}, "allow"),
     (CHILD, "Bash", {"command": "mkdir -p " + ROOT + "sandbox/probe"}, "allow"),
