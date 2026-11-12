@@ -29,6 +29,10 @@ The share missed: it is 60% (21 of 35). The direction hit.
 - So the forecast is not the weak part. I pick the market's favourite degree most nights and then state
   half its confidence, and on the nights I pick a different degree the market is right.
 
+**Corrected the same night by P-0428.** The third bullet over-reads. My degree won 8 of 38 settled
+single-degree calls, so the best flat p is 0.21 and no cap closes the gap; the market is ahead because it
+knows which nights, not because my number is too low on average. See `experiments/2026-11-12-P-0428/`.
+
 **Caveats.** 35 rows, five weeks, one city. The anchor is read minutes after the call, so it cannot be
 used to make the call: the book is blind by rule and this does not change that. Early rows (to 6 Nov)
 carried the +1 C city-station correction, which explains some of the wrong-degree picks. Nothing in the

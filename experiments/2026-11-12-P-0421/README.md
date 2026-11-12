@@ -37,6 +37,10 @@ windows are the right ones.
 - E-017 is the sturdiest on this measure (10 trades, 8.3%) and its forward week is still open (D-026,
   17 Nov). E-019 is among the thinnest (3).
 
+**Corrected the same night by P-0430.** The first bullet reads too much into it. Random-entry lists of
+the same size die faster with their best trades gone, and no rule is more concentrated than its control.
+See `experiments/2026-11-12-P-0430/`.
+
 **Caveats.** Three against three; the difference could be nothing. A bigger admission total mechanically
 needs more trades removed, and the failers had the bigger totals, so the measure partly restates the
 total. The forward weeks are one week each. No rule, kill line or register row was changed.

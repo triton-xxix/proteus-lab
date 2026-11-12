@@ -23,7 +23,7 @@ the city point ran 0.47 C warm.
   0.74 warm, so this is the second November running. The nightly prompt says "nothing added"; on these
   days taking half a degree off would have helped.
 - One day carries a lot of it: 9 Nov, METAR 5.0 against a city forecast of 8.6. Without it the city
-  bias is -0.19 and its MAE 0.73.
+  bias is -0.18 and its MAE 0.73 (the verdict note says -0.19, a rounding slip of mine).
 - The city point hit the exact degree on 4 of 12, the same as the airport, and was the nearest of the
   three on 6 days.
 
