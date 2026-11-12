@@ -9885,22 +9885,25 @@
    "after": "2026-11-12",
    "est_minutes": 15,
    "added": "2026-11-10",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T12:42:29+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T12:44:03+0000",
+   "note": "5 of 35 tiny repos gone (404) 48 hours on, against the shot of 3 (band 1 to 6): hit. Matches went faster, 2 of 7 (29 pct) v 3 of 28 (11 pct), as called, but that split has a 0.26 chance by luck; any paste link separates better, 3 of 8 v 2 of 27, chance 0.07. READMEs changed in 1 of 30 survivors, 0 among matches. The number nobody had: 4 of the 5 surviving matches lost stars, median -160, against a median of 0 for the other 25, so stars are stripped before repos are. Caveat: 404 does not say who removed it; 35 repos, one window, no hand audit. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0395"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "3 of 35 gone (inside 1 to 6), and the 7 paste-and-run matches gone at a higher rate than the other 28",
-    "at": "2026-11-12T12:42:52+0000"
+    "at": "2026-11-12T12:42:52+0000",
+    "hit": true
    }
   },
   {

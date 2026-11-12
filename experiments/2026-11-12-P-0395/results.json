@@ -1,0 +1,85 @@
+{
+ "baseline_at": "2026-11-10T12:44:23+00:00",
+ "run_at": "2026-11-12T12:43:40+00:00",
+ "rate_limited": 0,
+ "all": {
+  "n": 35,
+  "gone": 5,
+  "gone_codes": [
+   "gone 404",
+   "gone 404",
+   "gone 404",
+   "gone 404",
+   "gone 404"
+  ],
+  "up": 30,
+  "readme_changed": 1,
+  "readme_missing_now": 0,
+  "archived": 0,
+  "stars_fell": 9,
+  "stars_rose": 5,
+  "median_star_move": 0
+ },
+ "paste_and_run_matches": {
+  "n": 7,
+  "gone": 2,
+  "gone_codes": [
+   "gone 404",
+   "gone 404"
+  ],
+  "up": 5,
+  "readme_changed": 0,
+  "readme_missing_now": 0,
+  "archived": 0,
+  "stars_fell": 4,
+  "stars_rose": 1,
+  "median_star_move": -160
+ },
+ "others": {
+  "n": 28,
+  "gone": 3,
+  "gone_codes": [
+   "gone 404",
+   "gone 404",
+   "gone 404"
+  ],
+  "up": 25,
+  "readme_changed": 1,
+  "readme_missing_now": 0,
+  "archived": 0,
+  "stars_fell": 5,
+  "stars_rose": 4,
+  "median_star_move": 0
+ },
+ "paste_link_any": {
+  "n": 8,
+  "gone": 3,
+  "gone_codes": [
+   "gone 404",
+   "gone 404",
+   "gone 404"
+  ],
+  "up": 5,
+  "readme_changed": 0,
+  "readme_missing_now": 0,
+  "archived": 0,
+  "stars_fell": 4,
+  "stars_rose": 1,
+  "median_star_move": -160
+ },
+ "no_paste_link": {
+  "n": 27,
+  "gone": 2,
+  "gone_codes": [
+   "gone 404",
+   "gone 404"
+  ],
+  "up": 25,
+  "readme_changed": 1,
+  "readme_missing_now": 0,
+  "archived": 0,
+  "stars_fell": 5,
+  "stars_rose": 4,
+  "median_star_move": 0
+ }
+}
