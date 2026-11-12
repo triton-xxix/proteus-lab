@@ -1,0 +1,251 @@
+{
+ "rows": [
+  {
+   "id": "E-011",
+   "rule": "Morning direction into the afternoon",
+   "kind": "stock",
+   "window": [
+    "2026-10-02",
+    "2026-10-22"
+   ],
+   "sessions": 15,
+   "registered_n": 179,
+   "forward": "FAIL",
+   "n": 179,
+   "total_pct": 10.026,
+   "win_pct": 51.4,
+   "best_removed_to_reach_zero": 5,
+   "share_of_trades_removed": 0.0279,
+   "best3_removed_total_pct": 3.185,
+   "best10_removed_total_pct": -6.907,
+   "best10_share_of_gross_wins": 0.377,
+   "median_pct": 0.0063,
+   "worst3_removed_total_pct": 14.565,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-012",
+   "rule": "ORB 30m, target 1R",
+   "kind": "stock",
+   "window": [
+    "2026-10-02",
+    "2026-10-22"
+   ],
+   "sessions": 15,
+   "registered_n": 157,
+   "forward": "FAIL",
+   "n": 157,
+   "total_pct": 16.962,
+   "win_pct": 54.1,
+   "best_removed_to_reach_zero": 9,
+   "share_of_trades_removed": 0.0573,
+   "best3_removed_total_pct": 10.682,
+   "best10_removed_total_pct": -1.564,
+   "best10_share_of_gross_wins": 0.306,
+   "median_pct": 0.0855,
+   "worst3_removed_total_pct": 24.201,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-013",
+   "rule": "VWAP cross after 11:00, hold to close",
+   "kind": "stock",
+   "window": [
+    "2026-10-07",
+    "2026-10-27"
+   ],
+   "sessions": 15,
+   "registered_n": 124,
+   "forward": "PASS",
+   "n": 124,
+   "total_pct": 9.385,
+   "win_pct": 54.8,
+   "best_removed_to_reach_zero": 4,
+   "share_of_trades_removed": 0.0323,
+   "best3_removed_total_pct": 0.608,
+   "best10_removed_total_pct": -10.795,
+   "best10_share_of_gross_wins": 0.436,
+   "median_pct": 0.0608,
+   "worst3_removed_total_pct": 16.905,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-014",
+   "rule": "ORB 15m fade (failed break)",
+   "kind": "stock",
+   "window": [
+    "2026-10-07",
+    "2026-10-27"
+   ],
+   "sessions": 15,
+   "registered_n": 157,
+   "forward": "PASS",
+   "n": 157,
+   "total_pct": 5.781,
+   "win_pct": 31.2,
+   "best_removed_to_reach_zero": 3,
+   "share_of_trades_removed": 0.0191,
+   "best3_removed_total_pct": -0.261,
+   "best10_removed_total_pct": -8.161,
+   "best10_share_of_gross_wins": 0.436,
+   "median_pct": -0.1267,
+   "worst3_removed_total_pct": 8.344,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-015",
+   "rule": "ORB NY open 30m, target 1R",
+   "kind": "crypto",
+   "window": [
+    "2026-10-09",
+    "2026-10-29"
+   ],
+   "sessions": 21,
+   "registered_n": 126,
+   "forward": "FAIL",
+   "n": 126,
+   "total_pct": 8.566,
+   "win_pct": 60.3,
+   "best_removed_to_reach_zero": 7,
+   "share_of_trades_removed": 0.0556,
+   "best3_removed_total_pct": 4.163,
+   "best10_removed_total_pct": -4.081,
+   "best10_share_of_gross_wins": 0.273,
+   "median_pct": 0.2154,
+   "worst3_removed_total_pct": 12.929,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-016",
+   "rule": "Opening drive: first bar direction to 11:00",
+   "kind": "stock",
+   "window": [
+    "2026-10-09",
+    "2026-10-29"
+   ],
+   "sessions": 15,
+   "registered_n": 179,
+   "forward": "PASS",
+   "n": 179,
+   "total_pct": 7.82,
+   "win_pct": 51.4,
+   "best_removed_to_reach_zero": 3,
+   "share_of_trades_removed": 0.0168,
+   "best3_removed_total_pct": -1.471,
+   "best10_removed_total_pct": -14.895,
+   "best10_share_of_gross_wins": 0.325,
+   "median_pct": 0.0481,
+   "worst3_removed_total_pct": 15.324,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-017",
+   "rule": "Gap and go 0.5%",
+   "kind": "stock",
+   "window": [
+    "2026-10-19",
+    "2026-11-09"
+   ],
+   "sessions": 15,
+   "registered_n": 121,
+   "forward": "pending",
+   "n": 121,
+   "total_pct": 36.895,
+   "win_pct": 54.5,
+   "best_removed_to_reach_zero": 10,
+   "share_of_trades_removed": 0.0826,
+   "best3_removed_total_pct": 20.579,
+   "best10_removed_total_pct": -0.307,
+   "best10_share_of_gross_wins": 0.383,
+   "median_pct": 0.2231,
+   "worst3_removed_total_pct": 52.212,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-018",
+   "rule": "Opening reversal: fade first 30m to 13:00",
+   "kind": "stock",
+   "window": [
+    "2026-10-19",
+    "2026-11-09"
+   ],
+   "sessions": 15,
+   "registered_n": 180,
+   "forward": "pending",
+   "n": 180,
+   "total_pct": 17.112,
+   "win_pct": 52.2,
+   "best_removed_to_reach_zero": 6,
+   "share_of_trades_removed": 0.0333,
+   "best3_removed_total_pct": 6.161,
+   "best10_removed_total_pct": -10.513,
+   "best10_share_of_gross_wins": 0.352,
+   "median_pct": 0.0532,
+   "worst3_removed_total_pct": 26.727,
+   "n_matches_register": true
+  },
+  {
+   "id": "E-019",
+   "rule": "ORB 30m fade (failed break)",
+   "kind": "stock",
+   "window": [
+    "2026-10-20",
+    "2026-11-10"
+   ],
+   "sessions": 15,
+   "registered_n": 145,
+   "forward": "pending",
+   "n": 145,
+   "total_pct": 8.722,
+   "win_pct": 24.8,
+   "best_removed_to_reach_zero": 3,
+   "share_of_trades_removed": 0.0207,
+   "best3_removed_total_pct": -0.169,
+   "best10_removed_total_pct": -11.678,
+   "best10_share_of_gross_wins": 0.571,
+   "median_pct": -0.144,
+   "worst3_removed_total_pct": 10.731,
+   "n_matches_register": true
+  }
+ ],
+ "median_to_zero": 5,
+ "PASS": {
+  "to_zero": [
+   4,
+   3,
+   3
+  ],
+  "share": [
+   0.0323,
+   0.0191,
+   0.0168
+  ],
+  "mean_share": 0.0227
+ },
+ "FAIL": {
+  "to_zero": [
+   5,
+   9,
+   7
+  ],
+  "share": [
+   0.0279,
+   0.0573,
+   0.0556
+  ],
+  "mean_share": 0.0469
+ },
+ "pending": {
+  "to_zero": [
+   10,
+   6,
+   3
+  ],
+  "share": [
+   0.0826,
+   0.0333,
+   0.0207
+  ],
+  "mean_share": 0.0455
+ }
+}

@@ -10641,22 +10641,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:36:52+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:38:33+0000",
+   "note": "All nine registered edge rules are under water with their best ten admission trades gone; the median rule needs 5 of about 150 removed (shot: 10 or fewer, hit). Trade counts matched the register on all nine. Forward passers E-013, E-014, E-016 needed fewer removed (4, 3, 3; 2.3 percent of trades) than failers E-011, E-012, E-015 (5, 9, 7; 4.7 percent), so the measure did not pick the passers (shot hit). E-017 is sturdiest at 10. Caveat: three against three, and a bigger total needs more removed by construction. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0421"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "median best-trades-to-zero across the nine rules is 10 or fewer (band 4 to 12), and the three forward passers do not need a larger share removed than the three failers",
-    "at": "2026-11-12T23:37:05+0000"
+    "at": "2026-11-12T23:37:05+0000",
+    "hit": true
    }
   }
  ]
