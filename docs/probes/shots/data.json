@@ -1,19 +1,19 @@
 {
  "summary": {
-  "n": 165,
+  "n": 181,
   "waiting": 0,
-  "hits": 153,
-  "hit_rate": 0.927,
-  "mean_p": 0.663,
-  "brier": 0.142,
+  "hits": 168,
+  "hit_rate": 0.928,
+  "mean_p": 0.668,
+  "brier": 0.139,
   "brier_at_hit_rate": 0.067,
-  "called_works": 151,
-  "called_works_hits": 144,
+  "called_works": 167,
+  "called_works_hits": 159,
   "called_other": 14,
   "called_other_hits": 9,
-  "verdict_works": 149,
+  "verdict_works": 164,
   "first": "2026-10-12",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "bins": [
   {
@@ -30,21 +30,21 @@
   },
   {
    "label": "60 to 65%",
-   "n": 43,
-   "mean_p": 0.615,
-   "hit_rate": 0.93
+   "n": 47,
+   "mean_p": 0.617,
+   "hit_rate": 0.936
   },
   {
    "label": "70 to 75%",
-   "n": 62,
-   "mean_p": 0.723,
-   "hit_rate": 0.952
+   "n": 70,
+   "mean_p": 0.722,
+   "hit_rate": 0.943
   },
   {
    "label": "80% and up",
-   "n": 23,
-   "mean_p": 0.824,
-   "hit_rate": 0.957
+   "n": 27,
+   "mean_p": 0.822,
+   "hit_rate": 0.963
   }
  ],
  "rows": [
@@ -1697,6 +1697,166 @@
    "hit": 1,
    "number": "v0.2 bankroll 11.33 GBP from the ledger and R01 bankroll below zero; shot after reading P-0318 and the kill-check line",
    "at": "2026-11-10T23:42:08+0000"
+  },
+  {
+   "id": "P-0404",
+   "title": "R01 entry price v the minute candle: for the 29 R01 entries, using the candles already saved in grinder/candles (and a GeckoTerminal fetch o",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "median absolute gap to the entry-minute close under 1 percent, 3 of 29 beyond 5 percent",
+   "at": "2026-11-11T12:32:45+0000"
+  },
+  {
+   "id": "P-0405",
+   "title": "Entry price noise on the v0.2 Grinder book: for the 92 rows of grinder/LEDGER.csv, gap between ledger entry price and the first saved candle",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "median absolute gap about 3 percent, 8 of 92 exit reasons flip, book total moves by under 150 pounds",
+   "at": "2026-11-11T12:39:56+0000"
+  },
+  {
+   "id": "P-0406",
+   "title": "ICON lead-1 bias on the METAR high in winter: at LFPG and LEMD from 1 Nov 2025 to 31 Mar 2026 (the previous-runs archive does reach Nov 2025",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "Dec to Feb lead-1 bias about +0.4 C at both airports, smaller than autumn but still outside 2 se; 2 of 10 airport-months inside 2 se",
+   "at": "2026-11-11T12:41:33+0000"
+  },
+  {
+   "id": "P-0407",
+   "title": "Does Open-Meteo previous-runs honour the timezone parameter: Munich city point 48.137,11.575, icon_seamless, 1 to 7 Nov 2026, hourly tempera",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "timezone is honoured: offsets 0, 3600 and 50400 seconds, series line up at 1 and 14 slots, day max differs on 6 of 7 Kiritimati days and 0 of 7 Berlin days",
+   "at": "2026-11-11T12:42:46+0000"
+  },
+  {
+   "id": "P-0408",
+   "title": "Key discovery by value overlap v column name on two more SQLite samples: Northwind (jpwhite3/northwind-SQLite3) and Sakila (bradleygrant/sak",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "full value overlap precision under 20 percent on both databases; same-column-name recall at least 0.8 on both, with at least one false positive by name on Sakila",
+   "at": "2026-11-11T12:44:44+0000"
+  },
+  {
+   "id": "P-0409",
+   "title": "What real gap-and-go videos state: YouTube search for the exact phrase \"gap and go\" with strategy and backtest, keep only videos of five min",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "at least 3 real gap-and-go videos kept; 2 state a win rate, 1 at most states a trade count beside it, none as many as 121 trades",
+   "at": "2026-11-11T12:46:06+0000"
+  },
+  {
+   "id": "P-0411",
+   "title": "lot-map: does its shell-command classifier assign README example commands to the stations the README claims?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "13 of 13 README example commands found in the source tables for the station the README names; source read as text, not executed",
+   "at": "2026-11-11T23:36:38+0000"
+  },
+  {
+   "id": "P-0410",
+   "title": "E-017 gap and go with its best three trades removed: from the edge scan's own trade list for E-017 (121 trades), total and mean return with ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "top three trades carry about 35 percent of E-017 total net profit, and the total stays above zero with the best five removed",
+   "at": "2026-11-11T23:38:16+0000"
+  },
+  {
+   "id": "P-0412",
+   "title": "Harvest probe code age at queue time: for every harvest.jsonl row with a probe_id, the repo's age in days when queued (meta.created for GitH",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "about 60 percent of queued harvest probes with a GitHub repo were under 14 days old when queued",
+   "at": "2026-11-11T23:40:02+0000"
+  },
+  {
+   "id": "P-0413",
+   "title": "Young harvest repos, run or read: of the 35 works verdicts on repos under 14 days old (P-0412 results.json), how many notes and artefact fol",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "about 20 of the 35 young works verdicts installed or executed the repo's own code",
+   "at": "2026-11-11T23:41:30+0000"
+  },
+  {
+   "id": "P-0414",
+   "title": "ICON lead-1 bias on the METAR day high in summer: Paris CDG and Madrid, Jun to Aug 2026 by month, P-0406 method with the dates changed; is M",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "Madrid Jun to Aug lead-1 bias about +1.3 C, larger than autumn, and Paris about +0.9 C, both outside 2 se",
+   "at": "2026-11-11T23:43:04+0000"
+  },
+  {
+   "id": "P-0415",
+   "title": "Grinder stale-entry guard, counted: from P-0405's per-row results, if v0.2 had skipped entries whose first candle opened over 5, 10 or 20 pe",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "no guard line lifts the ledger-entry total above -1,000 pounds; the 10-minute age guard drops about 9 of 89 trades",
+   "at": "2026-11-11T23:44:18+0000"
+  },
+  {
+   "id": "P-0416",
+   "title": "UTC day against Berlin day for Munich's ICON day high and low: July 2026 (two hours apart) and Nov 2025 to Feb 2026 (one hour), on how many ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "the lead-1 ICON day high differs between UTC and Berlin days on about 12 percent of Nov to Feb days and at most 1 of 31 July days",
+   "at": "2026-11-11T23:45:27+0000"
+  },
+  {
+   "id": "P-0417",
+   "title": "ICON lead-1 bias on the METAR day high by season at Munich EDDM and Heathrow EGLL: Nov 2025 to Mar 2026 and Jun to Aug 2026 by month, P-0406",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "Munich EDDM lead-1 bias at the airport point about +0.2 C Dec to Feb (inside 2 se) and about +0.5 C Jun to Aug (outside), against +0.41 in autumn",
+   "at": "2026-11-11T23:46:36+0000"
+  },
+  {
+   "id": "P-0418",
+   "title": "Munich forecast point, which is nearer the EDDM METAR high: ICON lead 1 at the city point, the airport point and their mean, MAE and exact-d",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "the mean of the city and airport points has the lowest lead-1 MAE over Nov 2025 to Oct 2026, about 1.0 C against about 1.15 C for either alone",
+   "at": "2026-11-11T23:48:04+0000"
+  },
+  {
+   "id": "P-0419",
+   "title": "The three voided Grinder trades (G-0075, G-0076, G-0077, entered off a 24-hour-old snapshot on 12 Oct): the gap between the voided entry pri",
+   "expect": "works",
+   "verdict": "broken",
+   "p": 0.7,
+   "hit": 0,
+   "number": "at least two of the three voided trades lose from the stale price, about -150 pounds between them, and the median gap to the first candle is over 20 percent",
+   "at": "2026-11-11T23:49:35+0000"
   }
  ]
 }

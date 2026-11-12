@@ -1,10 +1,10 @@
 {
  "summary": {
-  "games": 73,
-  "wins": 54,
+  "games": 74,
+  "wins": 55,
   "draws": 17,
   "losses": 2,
-  "score": 0.856,
+  "score": 0.858,
   "rating_start": 3000,
   "rating_now": 2997,
   "rating_peak": 3129,
@@ -12,21 +12,21 @@
   "strongest_faced": 3019,
   "median_opp": 2200,
   "first": "2026-10-03",
-  "last": "2026-11-10",
-  "challenges": 1288,
-  "accepted": 62,
-  "declined": 745,
-  "no_answer": 129,
-  "refused_400": 338,
+  "last": "2026-11-12",
+  "challenges": 1314,
+  "accepted": 63,
+  "declined": 751,
+  "no_answer": 132,
+  "refused_400": 354,
   "refused_429": 14,
-  "accept_rate": 0.0481,
-  "bots_asked": 127,
-  "bots_played": 58,
+  "accept_rate": 0.0479,
+  "bots_asked": 128,
+  "bots_played": 59,
   "bots_never": 75,
   "median_rating_accepted_bots": 1887,
   "median_rating_refusing_bots": 1866,
   "challenge_first": "2026-10-09",
-  "challenge_last": "2026-11-11",
+  "challenge_last": "2026-11-12",
   "declined_reasons": [
    [
     "nobot",
@@ -34,11 +34,11 @@
    ],
    [
     "generic",
-    221
+    225
    ],
    [
     "casual",
-    108
+    110
    ],
    [
     "tooslow",
@@ -69,11 +69,11 @@
   },
   {
    "label": "2000 to 2499",
-   "n": 11,
-   "wins": 10,
+   "n": 12,
+   "wins": 11,
    "draws": 1,
    "losses": 0,
-   "score": 0.955
+   "score": 0.958
   },
   {
    "label": "2500 and up",
@@ -249,19 +249,24 @@
    "date": "2026-11-11",
    "asked": 22,
    "accepted": 0
+  },
+  {
+   "date": "2026-11-12",
+   "asked": 26,
+   "accepted": 1
   }
  ],
  "decliners": [
   {
    "bot": "resolutebot",
    "rating": 2945,
-   "asked": 63,
+   "asked": 65,
    "how": "declined"
   },
   {
    "bot": "leelarogue",
-   "rating": 2286,
-   "asked": 52,
+   "rating": 2279,
+   "asked": 54,
    "how": "declined"
   },
   {
@@ -279,7 +284,7 @@
   {
    "bot": "stockfishlowdepth",
    "rating": 1990,
-   "asked": 42,
+   "asked": 43,
    "how": "declined"
   },
   {
@@ -296,13 +301,19 @@
   },
   {
    "bot": "darkonweakbot",
-   "rating": 1763,
-   "asked": 36,
+   "rating": 1762,
+   "asked": 37,
    "how": "declined"
   },
   {
    "bot": "catriever",
    "rating": 2118,
+   "asked": 35,
+   "how": "declined"
+  },
+  {
+   "bot": "littlepatricia",
+   "rating": 1892,
    "asked": 35,
    "how": "declined"
   },
@@ -313,26 +324,20 @@
    "how": "declined"
   },
   {
-   "bot": "littlepatricia",
-   "rating": 1897,
-   "asked": 34,
-   "how": "declined"
-  },
-  {
    "bot": "panic-fish",
    "rating": 2220,
    "asked": 33,
    "how": "declined"
   },
   {
-   "bot": "hummus-bot",
-   "rating": 2051,
-   "asked": 31,
+   "bot": "mochi_bot",
+   "rating": 1678,
+   "asked": 32,
    "how": "declined"
   },
   {
-   "bot": "mochi_bot",
-   "rating": 1683,
+   "bot": "hummus-bot",
+   "rating": 2051,
    "asked": 31,
    "how": "declined"
   },
@@ -346,29 +351,29 @@
  "by_strength": [
   {
    "label": "under 2000",
-   "asked": 501,
+   "asked": 519,
    "bots": 74,
    "accepted": 29,
-   "declined": 306,
-   "no answer": 28,
-   "refused 400": 124,
+   "declined": 310,
+   "no answer": 30,
+   "refused 400": 136,
    "refused 429": 14,
    "other": 0,
-   "sent": 363,
-   "accept_of_sent": 0.0799
+   "sent": 369,
+   "accept_of_sent": 0.0786
   },
   {
    "label": "2000 to 2399",
-   "asked": 371,
-   "bots": 23,
-   "accepted": 8,
-   "declined": 230,
-   "no answer": 33,
+   "asked": 375,
+   "bots": 24,
+   "accepted": 9,
+   "declined": 232,
+   "no answer": 34,
    "refused 400": 100,
    "refused 429": 0,
    "other": 0,
-   "sent": 271,
-   "accept_of_sent": 0.0295
+   "sent": 275,
+   "accept_of_sent": 0.0327
   },
   {
    "label": "2400 to 2699",
@@ -398,12 +403,12 @@
   },
   {
    "label": "2900 to 2999",
-   "asked": 125,
+   "asked": 129,
    "bots": 8,
    "accepted": 2,
    "declined": 62,
    "no answer": 12,
-   "refused 400": 49,
+   "refused 400": 53,
    "refused 429": 0,
    "other": 0,
    "sent": 76,
@@ -426,16 +431,16 @@
  "by_gap": [
   {
    "label": "500+ below me",
-   "asked": 961,
-   "bots": 101,
-   "accepted": 39,
-   "declined": 617,
-   "no answer": 63,
-   "refused 400": 228,
+   "asked": 983,
+   "bots": 102,
+   "accepted": 40,
+   "declined": 623,
+   "no answer": 66,
+   "refused 400": 240,
    "refused 429": 14,
    "other": 0,
-   "sent": 719,
-   "accept_of_sent": 0.0542
+   "sent": 729,
+   "accept_of_sent": 0.0549
   },
   {
    "label": "200 to 499 below",
@@ -452,12 +457,12 @@
   },
   {
    "label": "50 to 199 below",
-   "asked": 119,
+   "asked": 121,
    "bots": 4,
    "accepted": 4,
    "declined": 62,
    "no answer": 7,
-   "refused 400": 46,
+   "refused 400": 48,
    "refused 429": 0,
    "other": 0,
    "sent": 73,
@@ -465,19 +470,19 @@
   },
   {
    "label": "within 50, or above",
-   "asked": 105,
+   "asked": 107,
    "bots": 15,
    "accepted": 11,
    "declined": 10,
    "no answer": 35,
-   "refused 400": 49,
+   "refused 400": 51,
    "refused 429": 0,
    "other": 0,
    "sent": 56,
    "accept_of_sent": 0.1964
   }
  ],
- "challenges_rated": 1288,
+ "challenges_rated": 1314,
  "games": [
   {
    "date": "2026-10-03",
@@ -1646,6 +1651,22 @@
    "url": "https://lichess.org/RW9j1G4U",
    "think": "1.0",
    "refusals": 13
+  },
+  {
+   "date": "2026-11-12",
+   "at": "2026-11-12T08:46:11Z",
+   "id": "iMTOMRVe",
+   "opponent": "fornax-engine",
+   "opp": 2150,
+   "before": 2997,
+   "after": 2997,
+   "colour": "black",
+   "result": "win",
+   "status": "mate",
+   "moves": 57,
+   "url": "https://lichess.org/iMTOMRVe",
+   "think": "1.0",
+   "refusals": 3
   }
  ]
 }

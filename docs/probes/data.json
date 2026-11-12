@@ -1,45 +1,45 @@
 {
  "summary": {
-  "n": 387,
+  "n": 403,
   "by_verdict": {
-   "works": 323,
+   "works": 338,
    "not-worth-it": 17,
    "blocked": 40,
-   "broken": 7
+   "broken": 8
   },
   "open": 11,
   "killed": 5,
-  "minutes_total": 632,
+  "minutes_total": 646,
   "minutes_median": 1,
-  "calls_total": 4280,
-  "pages": 7,
+  "calls_total": 4411,
+  "pages": 8,
   "first": "2026-09-24",
-  "last": "2026-11-10"
+  "last": "2026-11-11"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 141,
-   "works": 132,
+   "n": 152,
+   "works": 142,
    "not-worth-it": 3,
    "blocked": 6,
-   "broken": 0
-  },
-  {
-   "source": "harvest",
-   "n": 91,
-   "works": 70,
-   "not-worth-it": 2,
-   "blocked": 13,
-   "broken": 6
+   "broken": 1
   },
   {
    "source": "desk",
-   "n": 89,
-   "works": 73,
+   "n": 93,
+   "works": 77,
    "not-worth-it": 5,
    "blocked": 10,
    "broken": 1
+  },
+  {
+   "source": "harvest",
+   "n": 92,
+   "works": 71,
+   "not-worth-it": 2,
+   "blocked": 13,
+   "broken": 6
   },
   {
    "source": "vault",
@@ -126,10 +126,10 @@
   },
   {
    "week": "2026-11-09",
-   "works": 19,
+   "works": 34,
    "not-worth-it": 1,
    "blocked": 5,
-   "broken": 1
+   "broken": 2
   }
  ],
  "rows": [
@@ -5822,6 +5822,278 @@
     "expect": "works",
     "p": 0.5,
     "hit": 1
+   }
+  },
+  {
+   "id": "P-0404",
+   "title": "R01 entry price v the minute candle: for the 29 R01 entries, using the candles already saved in grinder/candles (and a GeckoTerminal fetch of the entry minute where the…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T12:39:38+0000",
+   "minutes": 6,
+   "calls": 12,
+   "note": "Measured median absolute gap 4.20 percent between the R01 ledger entry price and the entry-minute candle close, worst 69.3 percent (R-0023), 11 of 29 beyond 5 percent, entry inside the candle range on only 8 of 29 (shot: under 1 percent and 3 of 29, a miss on the number, made after seeing R-0001 alone). Cause is mine,…",
+   "artefact": "experiments/2026-11-11-P-0404",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0405",
+   "title": "Entry price noise on the v0.2 Grinder book: for the 92 rows of grinder/LEDGER.csv, gap between ledger entry price and the first saved candle open, split by snapshot age,…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-11T12:40:59+0000",
+   "minutes": 1,
+   "calls": 11,
+   "note": "Measured median absolute gap 4.34 percent between ledger entry price and the first candle open on 89 rows (the ledger has 89, not 92), 7 exit reasons flip, total at 100 pounds a trade moves from -1205.65 to -1094.43, by +111.22 (shot: about 3 percent, 8 flips, under 150 pounds; gap not blind after P-0404, flips and po…",
+   "artefact": "experiments/2026-11-11-P-0405",
+   "page": true,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0406",
+   "title": "ICON lead-1 bias on the METAR high in winter: at LFPG and LEMD from 1 Nov 2025 to 31 Mar 2026 (the previous-runs archive does reach Nov 2025, checked), P-0391's four.py…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T12:42:21+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Measured Dec to Feb lead-1 bias (METAR high minus ICON) +0.58 C at Paris CDG (se 0.10, n 90) and +0.09 C at Madrid (se 0.13, n 90), against +0.88 and +1.00 in autumn 2026 (shot: about +0.4 at both and 2 of 10 airport-months inside 2 se; measured 6 of 10 inside, right on Paris, wrong on Madrid). Paris keeps about two t…",
+   "artefact": "experiments/2026-11-11-P-0406",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0407",
+   "title": "Does Open-Meteo previous-runs honour the timezone parameter: Munich city point 48.137,11.575, icon_seamless, 1 to 7 Nov 2026, hourly temperature_2m and previous_day1 pul…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T12:43:25+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Measured: the previous-runs endpoint honours timezone. Offsets reported 0, 3600 and 50400 s; the Berlin and Kiritimati hourly series equal the UTC pull at shifts of 1 and 14 slots on 167 of 167 and 154 of 154 values, lead 1 included; day max differs from UTC days on 0 of 7 Berlin days and 7 of 7 Kiritimati days, by up…",
+   "artefact": "experiments/2026-11-11-P-0407",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0408",
+   "title": "Key discovery by value overlap v column name on two more SQLite samples: Northwind (jpwhite3/northwind-SQLite3) and Sakila (bradleygrant/sakila-sqlite3), opened read-onl…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T12:45:16+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Measured full value overlap precision 0.195 on Northwind (8 true of 41 flagged) and 0.085 on Sakila (20 of 236), same-column-name recall 7 of 8 and 19 of 20, with 4 false positives by name on Sakila (film_id against the empty film_text table); Chinook was 0.09 and 9 of 10 (shot: under 20 percent on both, recall at lea…",
+   "artefact": "experiments/2026-11-11-P-0408",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0409",
+   "title": "What real gap-and-go videos state: YouTube search for the exact phrase \"gap and go\" with strategy and backtest, keep only videos of five minutes or more whose captions s…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T12:48:13+0000",
+   "minutes": 2,
+   "calls": 10,
+   "note": "Measured 3 real gap-and-go videos of five minutes or more kept from about 26 tried over two runs; 0 of 3 state a win rate for a gap-and-go rule with a trade count beside it; the one sample stated is 537 trades in seven months, with three trades making 92 percent of the profit, against 121 trades in E-017 (shot: at lea…",
+   "artefact": "experiments/2026-11-11-P-0409",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0411",
+   "title": "lot-map: does its shell-command classifier assign README example commands to the stations the README claims?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-11T23:38:00+0000",
+   "minutes": 1,
+   "calls": 12,
+   "note": "Measured 21 of 21 README example commands landing on the station the README names, 13 of 13 on the shot (source read as text and ported to Python, plugin not run). On 20 everyday commands of my own it got 8: the line is split at pipes and semicolons before quotes are read, so grep with a quoted foo|bar lands on Shell…",
+   "artefact": "experiments/2026-11-11-P-0411",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0410",
+   "title": "E-017 gap and go with its best three trades removed: from the edge scan's own trade list for E-017 (121 trades), total and mean return with the best 3 and best 5 trades…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-11T23:39:28+0000",
+   "minutes": 1,
+   "calls": 13,
+   "note": "Measured the top three trades carrying 44.2 percent of E-017 total on its 121 admission trades (rebuilt at +36.90 percent, matching the register), total +20.58 with the best 3 removed, +13.73 with the best 5, and -0.31 with the best 10: ten trades are the whole profit (shot: about 35 percent and above zero at five rem…",
+   "artefact": "experiments/2026-11-11-P-0410",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0412",
+   "title": "Harvest probe code age at queue time: for every harvest.jsonl row with a probe_id, the repo's age in days when queued (meta.created for GitHub rows, GitHub API for repo…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T23:41:10+0000",
+   "minutes": 1,
+   "calls": 7,
+   "note": "Measured 52 of 73 queued harvest probes with a dated GitHub repo under 14 days old on the night they were queued, 71.2 percent, and 48 under 7 days; median age 4 days (shot: about 60 percent). Of all 121 queued since 26 Sep it is 43 percent; 48 have no repo. Young code ended blocked on 10 of 49 verdicts against 2 of 2…",
+   "artefact": "experiments/2026-11-11-P-0412",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0413",
+   "title": "Young harvest repos, run or read: of the 35 works verdicts on repos under 14 days old (P-0412 results.json), how many notes and artefact folders show the repo's own code…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-11T23:42:19+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Measured 24 of the 35 young works verdicts (69 percent) as having executed the repo own code on this Mac in an unattended run, 11 checked from outside (shot: about 20). Median age of the 24 was 2 days and seven were a day old or less. The share fell from 15 of 20 to 19 Oct to 9 of 15 since, with no rule saying so. So…",
+   "artefact": "experiments/2026-11-11-P-0413",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0414",
+   "title": "ICON lead-1 bias on the METAR day high in summer: Paris CDG and Madrid, Jun to Aug 2026 by month, P-0406 method with the dates changed; is Madrid's cold bias larger than…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T23:43:50+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Measured Jun to Aug 2026 lead-1 bias (METAR high minus ICON) +0.71 C at Madrid (se 0.09, n 92) and +0.37 C at Paris CDG (se 0.13, n 92), against +1.00 and +0.88 in autumn and +0.09 and +0.58 in winter (shot: about +1.3 and +0.9, both missed; larger than autumn, wrong). Madrid is outside 2 se in all three months and wo…",
+   "artefact": "experiments/2026-11-11-P-0414",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0415",
+   "title": "Grinder stale-entry guard, counted: from P-0405's per-row results, if v0.2 had skipped entries whose first candle opened over 5, 10 or 20 percent from the snapshot price…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T23:44:56+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Measured the 10-minute snapshot guard skipping 4 of 89 trades, all losers, worth -256.80 pounds between them, leaving -948.85 against -1,205.65 (shot: about 9 trades and nothing above -1,000; both missed, six of nine lines leave more than -1,000). The 6-minute line skips 12 that broke even. The best of nine lines, ski…",
+   "artefact": "experiments/2026-11-11-P-0415",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0416",
+   "title": "UTC day against Berlin day for Munich's ICON day high and low: July 2026 (two hours apart) and Nov 2025 to Feb 2026 (one hour), on how many days do they differ and by ho…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T23:46:00+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Measured the lead-1 ICON day high differing between UTC and Berlin days on 14 of 120 Nov to Feb days (11.7 percent) and 1 of 31 July days (shot: about 12 percent and at most 1; both hit). The winter gap averages 0.25 C, at most 0.7, and moves the whole degree on 3 of 120 days, about one in forty; the one July day is 2…",
+   "artefact": "experiments/2026-11-11-P-0416",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0417",
+   "title": "ICON lead-1 bias on the METAR day high by season at Munich EDDM and Heathrow EGLL: Nov 2025 to Mar 2026 and Jun to Aug 2026 by month, P-0406 method; does Munich keep its…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-11T23:47:46+0000",
+   "minutes": 1,
+   "calls": 7,
+   "note": "Measured lead-1 bias (EDDM METAR high minus ICON) at the city point the book uses of -0.23 C over Nov 2025 to Mar 2026 (se 0.13, n 151), -0.74 C in Nov 2025 alone (se 0.31) and +0.57 C in Jun to Aug 2026: it changes sign by season, so the +0.03 of this autumn (P-0335) was a crossing point. The airport point stays cold…",
+   "artefact": "experiments/2026-11-11-P-0417",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0418",
+   "title": "Munich forecast point, which is nearer the EDDM METAR high: ICON lead 1 at the city point, the airport point and their mean, MAE and exact-degree rate by month from Nov…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-11T23:49:01+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Measured lead-1 MAE against the EDDM METAR high over 365 days, Nov 2025 to Oct 2026: city point 1.048 C, airport point 1.049, mean of the two 0.977; exact degree 27.7, 30.1 and 30.7 percent (shot: mean best, about 1.0 v 1.15; right on direction, the gap is 0.07 not 0.15). The two points take turns: the first-half winn…",
+   "artefact": "experiments/2026-11-11-P-0418",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0419",
+   "title": "The three voided Grinder trades (G-0075, G-0076, G-0077, entered off a 24-hour-old snapshot on 12 Oct): the gap between the voided entry price and the first candle, and…",
+   "source": "refill",
+   "verdict": "broken",
+   "at": "2026-11-11T23:50:08+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Measured 0, 1 and 0 candles in the three voided trades candle files: G-0075 and G-0077 are a header only, G-0076 has one bar 36 seconds after entry, so none can be walked (shot: works, two of three losing about 150 pounds; missed, the data is not there). The one number is G-0076 voided entry price 42.3 percent above t…",
+   "artefact": "experiments/2026-11-11-P-0419",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 0
    }
   }
  ]
