@@ -1,5 +1,5 @@
 {
- "next_id": 429,
+ "next_id": 430,
  "items": [
   {
    "id": "P-0001",
@@ -10854,6 +10854,32 @@
     "number": "the best flat p is within 0.05 of the 0.25 cap (about 0.22), and the EPS band is not clearly narrower on winning nights; shot after looking at P-0422's 7 winners in 32",
     "at": "2026-11-12T23:44:31+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0429",
+   "title": "NOAA SWPC solar-cycle files against tonight's sunspot item: do they confirm the observed peak, do they still hold the 2019 panel forecast I quoted from memory (115, July 2025), and what does NOAA forecast now?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:45:57+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "NOAA's 2019 page confirms a peak of 115 in July 2025 plus or minus 8 months; shot after seeing the JSON files, which confirm the observed 160.9 and hold no 2019 forecast",
+    "at": "2026-11-12T23:45:58+0000"
    }
   }
  ]
