@@ -1,5 +1,5 @@
 {
- "next_id": 424,
+ "next_id": 425,
  "items": [
   {
    "id": "P-0001",
@@ -10718,6 +10718,32 @@
     "number": "at least 20 of the 24 ran folders exist with a run trace (script, output or results file), 8 or fewer show an install, and at most 2 hand labels look wrong",
     "at": "2026-11-12T23:39:58+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0424",
+   "title": "Forecast-Dojo and Wisdom of LLM Crowds, their own tables: how far do the best and worst models trail the market in Brier, and where does my exchange book's gap sit beside them?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:41:35+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "Forecast-Dojo's best model trails the market by 0.01 to 0.03 Brier, and my book's +0.06 is a wider gap than their best model's",
+    "at": "2026-11-12T23:41:39+0000"
    }
   }
  ]
