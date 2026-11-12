@@ -1,0 +1,82 @@
+{
+ "trades": [
+  {
+   "market": "SPY",
+   "in": "2026-10-19",
+   "out": "2026-10-22",
+   "buy": 767.23,
+   "sell": 766.37,
+   "gross_pct": -0.11
+  },
+  {
+   "market": "QQQ",
+   "in": "2026-10-15",
+   "out": "2026-10-28",
+   "buy": 718.54,
+   "sell": 724.12,
+   "gross_pct": 0.78
+  },
+  {
+   "market": "EWJ",
+   "in": "2026-10-15",
+   "out": "2026-10-28",
+   "buy": 94.48,
+   "sell": 94.48,
+   "gross_pct": 0.0
+  },
+  {
+   "market": "EEM",
+   "in": "2026-10-15",
+   "out": "2026-10-29",
+   "buy": 63.07,
+   "sell": 62.54,
+   "gross_pct": -0.84
+  },
+  {
+   "market": "SPY",
+   "in": "2026-11-02",
+   "out": "2026-11-05",
+   "buy": 759.45,
+   "sell": 765.47,
+   "gross_pct": 0.79
+  },
+  {
+   "market": "SPY",
+   "in": "2026-11-06",
+   "out": "2026-11-10",
+   "buy": 734.82,
+   "sell": 747.94,
+   "gross_pct": 1.79
+  },
+  {
+   "market": "QQQ",
+   "in": "2026-11-02",
+   "out": "2026-11-12",
+   "buy": 695.315,
+   "sell": 680.212,
+   "gross_pct": -2.17
+  },
+  {
+   "market": "EWJ",
+   "in": "2026-11-02",
+   "out": "2026-11-12",
+   "buy": 92.91,
+   "sell": 91.24,
+   "gross_pct": -1.8
+  }
+ ],
+ "n": 8,
+ "gross_winners": 3,
+ "gross_mean_pct": -0.195,
+ "still_open": [],
+ "event_kinds": [
+  "buy_open",
+  "buy_signal",
+  "sell_open",
+  "sell_signal"
+ ],
+ "p_at_most_this_many_winners_if_75pct": 0.0273,
+ "p_at_most_3_of_8_if_75pct": 0.0273,
+ "p_at_most_3_of_8_if_65pct": 0.1061,
+ "p_at_most_3_of_8_if_50pct": 0.3633
+}

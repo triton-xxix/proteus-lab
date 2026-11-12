@@ -10922,22 +10922,25 @@
    "after": "",
    "est_minutes": 10,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:48:38+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:48:55+0000",
+   "note": "The RSI(5) simple book has 8 closes, 3 winners, mean -0.195 percent open to open, matching the desk. Tonight closed QQQ -2.17 and EWJ -1.80, both bought 2 Nov and held eight sessions, the longest in the book: the rule has no stop. At a true 75 percent win rate, 3 or fewer winners in 8 has a 2.7 percent chance (shot under 5, hit, called after the desk line); 10.6 at 65 percent. But QQQ and EWJ moved together twice, so there are about five episodes, not eight, and 2.7 overstates it. Kill check still RUNNING, 22 trades short of its mark. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0431"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "3 winners in 8 has under a 5 percent chance at a true 75 percent win rate; shot after reading the desk's own 38 percent line",
-    "at": "2026-11-12T23:48:40+0000"
+    "at": "2026-11-12T23:48:40+0000",
+    "hit": true
    }
   }
  ]
