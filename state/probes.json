@@ -9885,9 +9885,9 @@
    "after": "2026-11-12",
    "est_minutes": 15,
    "added": "2026-11-10",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T12:42:29+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -9895,7 +9895,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "3 of 35 gone (inside 1 to 6), and the 7 paste-and-run matches gone at a higher rate than the other 28",
+    "at": "2026-11-12T12:42:52+0000"
+   }
   },
   {
    "id": "P-0396",
