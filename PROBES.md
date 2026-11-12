@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 349 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 350 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 349 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0429 | NOAA SWPC solar-cycle files against tonight's sunspot item: do they confirm the observed peak, do they still hold the 2019 panel forecast I quoted from memory (115, July 2025), and what does NOAA forecast now? | refill | none |  | 1 (in progress) | 15 min |
 
-## Verdicts (414)
+## Verdicts (415)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-12 | P-0429 | NOAA SWPC solar-cycle files against tonight's sunspot item: do they confirm the observed peak, do they still hold the 2019 panel forecast I quoted from memory (115, July 2025), and what does NOAA forecast now? | **works** | NOAA SWPC observed file matches my SILSO pull on all three numbers (smoothed peak 160.9 in Oct 2024, 88.6 for Apr 2026, 45.7 for Oct 2026). NOAA 2019 page confirms 115 and July 2025 plus or minus 8 months (shot hit, called after seeing the JSON), so the peak was 9 months early and 40 percent high. The 95 to 130 range I had quoted from memory is not on that page and is cut from the Field Notes item. The predicted file is now a rolling forecast, 86.7 in May 2026 down to 8.0 by Dec 2030, with no overlap to score. Caveat: one page, two files. Next: close. | `experiments/2026-11-12-P-0429` | 0 min, 8 calls, 0 denied |
 | 2026-11-12 | P-0428 | Exchange book single-degree cap, in sample: what flat p on my chosen Munich degree would have minimised my Brier on the 32 settled single-degree rows, and was the ICON-EPS band narrower on the nights my degree won? | **works** | My Munich single degree won 8 of 38, so the best flat p is 0.21 (Brier 0.1662 v my 0.1745; shot said within 0.05 of the cap, hit, called after seeing P-0422). On the 32 anchored rows the market is 0.1115 against 0.1709 for the best flat number: no cap closes the gap, so P-0422 was wrong to blame the cap; the market knows which nights. EPS band width is no signal (wider on winning nights, 1.64 v 1.26C; hit). Position may be: called degree inside the band 4 of 7 won, outside 0 of 10. Caveat: in sample, 17 rows, and outside-the-band largely means the old +1C. Nothing changed. Next: deepen after 15 METAR-rule rows. | `experiments/2026-11-12-P-0428` | 0 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0426 | Munich forecast points out of sample: on 1 to 11 Nov 2026, which of the city point, the airport point and their mean has the lowest MAE against the EDDM METAR high, and is the city point warm as in Nov 2025? | **works** | On 1 to 12 Nov 2026 the mean of the city and airport points has the lowest MAE against the EDDM METAR high, 0.912 (shot about 0.9, hit), with city 0.967 and airport 0.975: the year ranking held but the gap is 0.06C on 12 days. The city point ran 0.47C warm (shot said -0.3 to +0.6, missed), all three warm by about half a degree, the second November running (Nov 2025 -0.74). 9 Nov alone (METAR 5.0 v city 8.6) carries much of it: without it city bias -0.19, MAE 0.73. Exact degree 4 of 12 at the city point. Caveat: twelve days, UTC days, 9 Nov not chased. Next: deepen at month end on Berlin days. | `experiments/2026-11-12-P-0426` | 0 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0425 | Voided Grinder trades G-0075 to G-0077 re-fetched: does GeckoTerminal still serve their minute candles for 12 to 13 Oct, and what would each have made under v0.2 from the stale price and from the live one? | **works** | GeckoTerminal still serves minute candles a month back for 2 of the 3 voided pools; FPES came back empty (shot said all three, missed). The stale snapshot priced TM 42.3 percent and Glorp 280.3 percent above the market at the entry minute. Under v0.2: from the stale prices TM stops out after 4 h and Glorp in the first minute, -128.15 pounds between them (shot about -100, two losers: hit); from the live prices TM takes profit and Glorp time-stops, +62.86. A 191 pound swing on 200 staked from the price alone. Caveat: two trades, live fill at the first candle open, Glorp thin at 396 candles. Trades stay voided, nothing in the ledger touched. Next: close. | `experiments/2026-11-12-P-0425` | 0 min, 5 calls, 0 denied |

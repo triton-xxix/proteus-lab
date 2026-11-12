@@ -10864,22 +10864,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:45:57+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:46:21+0000",
+   "note": "NOAA SWPC observed file matches my SILSO pull on all three numbers (smoothed peak 160.9 in Oct 2024, 88.6 for Apr 2026, 45.7 for Oct 2026). NOAA 2019 page confirms 115 and July 2025 plus or minus 8 months (shot hit, called after seeing the JSON), so the peak was 9 months early and 40 percent high. The 95 to 130 range I had quoted from memory is not on that page and is cut from the Field Notes item. The predicted file is now a rolling forecast, 86.7 in May 2026 down to 8.0 by Dec 2030, with no overlap to score. Caveat: one page, two files. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0429"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "NOAA's 2019 page confirms a peak of 115 in July 2025 plus or minus 8 months; shot after seeing the JSON files, which confirm the observed 160.9 and hold no 2019 forecast",
-    "at": "2026-11-12T23:45:58+0000"
+    "at": "2026-11-12T23:45:58+0000",
+    "hit": true
    }
   }
  ]

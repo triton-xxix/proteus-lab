@@ -1,0 +1,147 @@
+{
+ "predicted-solar-cycle.json": {
+  "rows": 56,
+  "keys": [
+   "high25_f10.7",
+   "high25_ssn",
+   "high75_f10.7",
+   "high75_ssn",
+   "high_f10.7",
+   "high_ssn",
+   "low25_f10.7",
+   "low25_ssn",
+   "low75_f10.7",
+   "low75_ssn",
+   "low_f10.7",
+   "low_ssn",
+   "predicted_f10.7",
+   "predicted_ssn",
+   "time-tag"
+  ],
+  "first": {
+   "time-tag": "2026-05",
+   "predicted_ssn": 86.7,
+   "high25_ssn": 92.2,
+   "high_ssn": 95.3,
+   "high75_ssn": 99.9,
+   "low25_ssn": 82.2,
+   "low_ssn": 77.6,
+   "low75_ssn": 72.9,
+   "predicted_f10.7": 130.8,
+   "high25_f10.7": 135.0,
+   "high_f10.7": 137.3,
+   "high75_f10.7": 140.8,
+   "low25_f10.7": 127.4,
+   "low_f10.7": 124.1,
+   "low75_f10.7": 120.5
+  },
+  "last": {
+   "time-tag": "2030-12",
+   "predicted_ssn": 8.0,
+   "high25_ssn": 12.0,
+   "high_ssn": 13.5,
+   "high75_ssn": 20.1,
+   "low25_ssn": 0.0,
+   "low_ssn": 0.0,
+   "low75_ssn": 0.0,
+   "predicted_f10.7": 70.3,
+   "high25_f10.7": 72.1,
+   "high_f10.7": 72.7,
+   "high75_f10.7": 75.9,
+   "low25_f10.7": 67.8,
+   "low_f10.7": 67.8,
+   "low75_f10.7": 67.8
+  }
+ },
+ "observed-solar-cycle-indices.json": {
+  "rows": 3334,
+  "keys": [
+   "f10.7",
+   "observed_swpc_ssn",
+   "smoothed_f10.7",
+   "smoothed_ssn",
+   "smoothed_swpc_ssn",
+   "ssn",
+   "time-tag"
+  ],
+  "first": {
+   "time-tag": "1749-01",
+   "ssn": 96.7,
+   "smoothed_ssn": -1.0,
+   "observed_swpc_ssn": -1.0,
+   "smoothed_swpc_ssn": -1.0,
+   "f10.7": -1.0,
+   "smoothed_f10.7": -1.0
+  },
+  "last": {
+   "time-tag": "2026-10",
+   "ssn": 45.7,
+   "smoothed_ssn": -1.0,
+   "observed_swpc_ssn": 61.71,
+   "smoothed_swpc_ssn": -1.0,
+   "f10.7": 108.47,
+   "smoothed_f10.7": -1.0
+  }
+ },
+ "predicted_peak_in_file": {
+  "time-tag": "2026-06",
+  "predicted_ssn": 86.9,
+  "high25_ssn": 92.5,
+  "high_ssn": 95.3,
+  "high75_ssn": 100.1,
+  "low25_ssn": 82.0,
+  "low_ssn": 76.8,
+  "low75_ssn": 72.0,
+  "predicted_f10.7": 129.7,
+  "high25_f10.7": 134.0,
+  "high_f10.7": 136.1,
+  "high75_f10.7": 139.7,
+  "low25_f10.7": 126.1,
+  "low_f10.7": 122.2,
+  "low75_f10.7": 118.7
+ },
+ "predicted_span": [
+  "2026-05",
+  "2030-12"
+ ],
+ "observed_smoothed_peak": {
+  "time-tag": "2024-10",
+  "ssn": 165.8,
+  "smoothed_ssn": 160.9,
+  "observed_swpc_ssn": 159.45,
+  "smoothed_swpc_ssn": 153.6,
+  "f10.7": 222.62,
+  "smoothed_f10.7": 194.5
+ },
+ "observed_last_smoothed": {
+  "time-tag": "2026-04",
+  "ssn": 79.0,
+  "smoothed_ssn": 88.6,
+  "observed_swpc_ssn": 91.6,
+  "smoothed_swpc_ssn": 91.7,
+  "f10.7": 120.01,
+  "smoothed_f10.7": 132.1
+ },
+ "observed_last_monthly": {
+  "time-tag": "2026-10",
+  "ssn": 45.7
+ },
+ "overlap_months": 0,
+ "silso": {
+  "smoothed_peak": [
+   2024,
+   10,
+   160.9
+  ],
+  "last_smoothed": [
+   2026,
+   4,
+   88.6
+  ],
+  "last_monthly": [
+   2026,
+   10,
+   45.7
+  ]
+ }
+}
