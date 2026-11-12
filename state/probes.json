@@ -5541,9 +5541,9 @@
    "after": "2026-11-12",
    "est_minutes": 20,
    "added": "2026-10-26",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T12:32:10+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -5551,7 +5551,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "ICON Stadt bias 13 Oct to 11 Nov about -0.4C (inside -0.65 to -0.15), sunny days at least 0.5C colder-biased than dull days",
+    "at": "2026-11-12T12:32:22+0000"
+   }
   },
   {
    "id": "P-0227",
