@@ -1,0 +1,74 @@
+{
+ "notes": {},
+ "n_in": 59,
+ "n_out": 30,
+ "in_sample": {
+  "bias": -0.95,
+  "mae_raw": 1.385
+ },
+ "out_of_sample": {
+  "bias": -0.52,
+  "mae_raw": 1.167,
+  "mae_flat_plus_0.5": 1.087,
+  "mae_flat_plus_1.0": 1.18,
+  "p0226_observed_sun_bound": 0.984
+ },
+ "predictors": {
+  "cloud_cover_pct": {
+   "n_in": 59,
+   "n_out": 30,
+   "in_sample_fit": {
+    "intercept": -0.973,
+    "slope": 0.0004,
+    "r": 0.01
+   },
+   "out_of_sample_own_fit_for_reference": {
+    "intercept": -2.356,
+    "slope": 0.0224,
+    "r": 0.36
+   },
+   "mae_out_linear_from_in_sample": 1.162,
+   "mae_out_linear_refit_out_of_sample_cheating": 1.036,
+   "two_bin": {
+    "cut": 72.4,
+    "in_bias_below": -1.09,
+    "in_bias_at_or_above": -0.81,
+    "out_n_below": 6,
+    "out_n_at_or_above": 24,
+    "out_bias_below": -1.18,
+    "out_bias_at_or_above": -0.35,
+    "mae_out": 1.148
+   },
+   "out_mean": 82.09,
+   "in_mean": 62.09
+  },
+  "sunshine_hours": {
+   "n_in": 59,
+   "n_out": 30,
+   "in_sample_fit": {
+    "intercept": -0.939,
+    "slope": -0.001,
+    "r": -0.0
+   },
+   "out_of_sample_own_fit_for_reference": {
+    "intercept": 0.015,
+    "slope": -0.1311,
+    "r": -0.31
+   },
+   "mae_out_linear_from_in_sample": 1.164,
+   "mae_out_linear_refit_out_of_sample_cheating": 1.021,
+   "two_bin": {
+    "cut": 9.96,
+    "in_bias_below": -0.91,
+    "in_bias_at_or_above": -0.99,
+    "out_n_below": 29,
+    "out_n_at_or_above": 1,
+    "out_bias_below": -0.52,
+    "out_bias_at_or_above": -0.5,
+    "mae_out": 1.158
+   },
+   "out_mean": 4.08,
+   "in_mean": 8.63
+  }
+ }
+}
