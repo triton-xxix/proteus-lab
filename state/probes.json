@@ -1,5 +1,5 @@
 {
- "next_id": 427,
+ "next_id": 429,
  "items": [
   {
    "id": "P-0001",
@@ -10805,6 +10805,52 @@
     "number": "the mean of the two points has the lowest MAE on the November days (about 0.9, band 0.6 to 1.2) and the city point bias is between -0.3 and +0.6, not warm as in Nov 2025",
     "at": "2026-11-12T23:43:47+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0427",
+   "title": "Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-12-01",
+   "est_minutes": 20,
+   "added": "2026-11-12",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0428",
+   "title": "Exchange book single-degree cap, in sample: what flat p on my chosen Munich degree would have minimised my Brier on the 32 settled single-degree rows, and was the ICON-EPS band narrower on the nights my degree won?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:44:31+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "the best flat p is within 0.05 of the 0.25 cap (about 0.22), and the EPS band is not clearly narrower on winning nights; shot after looking at P-0422's 7 winners in 32",
+    "at": "2026-11-12T23:44:31+0000"
    }
   }
  ]

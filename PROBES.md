@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 348 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (8 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,6 +21,8 @@ Verdicts so far: 348 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
+| P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
+| P-0428 | Exchange book single-degree cap, in sample: what flat p on my chosen Munich degree would have minimised my Brier on the 32 settled single-degree rows, and was the ICON-EPS band narrower on the nights my degree won? | refill | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (413)
 
