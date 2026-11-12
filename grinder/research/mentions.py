@@ -300,6 +300,7 @@ def dex_paid(mint, asof):
 
 def run(tokens, x_cap):
     have = done_keys(); rows = []; x_used = 0; spent = 0.0
+    t0 = datetime.now()
     for t in tokens:
         mint, sym, night = t["mint"], t["symbol"], t["ts"]
         asof = ts(night)
@@ -323,7 +324,12 @@ def run(tokens, x_cap):
             row.update(base); row["pulled_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             rows.append(row); append([row])
             print("%s %-10s %-7s count=%s authors=%s %s" % (night[:10], sym[:10], src, row.get("count"), row.get("authors"), row.get("detail", "")[:60]), flush=True)
-    line = "rows %d, x calls %d, x spend $%.2f" % (len(rows), x_used, spent)
+    # F-0087 (12 Nov 2026): the 11 Nov run log said this sat 20 minutes on Telegram; the rows' own
+    # pulled_at stamps say the whole pull took 6 min 19 s. The line now carries its own clock.
+    t1 = datetime.now()
+    line = "rows %d, x calls %d, x spend $%.2f, %s to %s (%d min %02d s)" % (
+        len(rows), x_used, spent, t0.strftime("%H:%M:%S"), t1.strftime("%H:%M:%S"),
+        (t1 - t0).seconds // 60, (t1 - t0).seconds % 60)
     print(line)
     # The run log carries the spend too: on 1 Oct the pull outran the 10-minute Bash timeout, finished in
     # the background, and its printed spend was lost.
