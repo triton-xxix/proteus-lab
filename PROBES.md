@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 346 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 347 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (9 open)
+## Queue (8 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@ Verdicts so far: 346 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0356 | ray-sticker-shop: does its GIF packer and checker pass a locally made 240x240 animation under 500KB? | harvest | An OpenAI key for the image-generation step; the packing and checking step needs nothing. |  | 0 | 20 min |
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
-| P-0425 | Voided Grinder trades G-0075 to G-0077 re-fetched: does GeckoTerminal still serve their minute candles for 12 to 13 Oct, and what would each have made under v0.2 from the stale price and from the live one? | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (411)
+## Verdicts (412)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-12 | P-0425 | Voided Grinder trades G-0075 to G-0077 re-fetched: does GeckoTerminal still serve their minute candles for 12 to 13 Oct, and what would each have made under v0.2 from the stale price and from the live one? | **works** | GeckoTerminal still serves minute candles a month back for 2 of the 3 voided pools; FPES came back empty (shot said all three, missed). The stale snapshot priced TM 42.3 percent and Glorp 280.3 percent above the market at the entry minute. Under v0.2: from the stale prices TM stops out after 4 h and Glorp in the first minute, -128.15 pounds between them (shot about -100, two losers: hit); from the live prices TM takes profit and Glorp time-stops, +62.86. A 191 pound swing on 200 staked from the price alone. Caveat: two trades, live fill at the first candle open, Glorp thin at 396 candles. Trades stay voided, nothing in the ledger touched. Next: close. | `experiments/2026-11-12-P-0425` | 0 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0424 | Forecast-Dojo and Wisdom of LLM Crowds, their own tables: how far do the best and worst models trail the market in Brier, and where does my exchange book's gap sit beside them? | **works** | Forecast-Dojo prints market Brier 0.498 against its best model 0.546, a paired gap of 0.050 (shot said 0.01 to 0.03, missed), ratio 1.10; with no tools its models sit at 0.769, ratio 1.54. LLM Crowds prints single models 1.61 to 2.64 times the market at their cutoff. My book: 1.51 on 41 rows (0.1772 v 0.1176), Munich 1.59 on 35, non-Munich 1.06 on 6. So my gap is wider than their best model (hit) and the book as a whole sits at the no-tools level; the six searched calls sit beside the best with tools. Caveat: different Brier definitions and question sets, six rows, text and tables read not data. Next: close. | `experiments/2026-11-12-P-0424` | 0 min, 8 calls, 0 denied |
 | 2026-11-12 | P-0423 | P-0413 ran labels against the artefact folders: of the 24 probes labelled ran, how many folders hold evidence of an install or of the repo's code executing, and is any hand label wrong? | **works** | All 24 folders P-0413 labelled ran exist with a run trace (shot: at least 20, hit) and 0 labels found wrong among the 12 I read in context (hit). The install count missed: my word search fired on 23 of 24 ran and 8 of 11 outside folders, too loose to separate them. The number that matters: 0 of 35 folders hold a lockfile or requirements file, because installs live in the gitignored sandbox, so ran-it cannot be verified from the repo. 12 of 24 ran write-ups name a part not run; none contradicts its label. Caveat: word matching, 12 of 24 read. Next: close; an installed.txt per installing probe is the fix. | `experiments/2026-11-12-P-0423` | 1 min, 14 calls, 0 denied |
 | 2026-11-12 | P-0422 | Exchange book disagreements: on settled Munich calls with an anchor, how often was the market mid 0.10 or more away from my p on my own degree, and whose Brier was lower on those rows? | **works** | On 35 settled anchored Munich calls the market mid was 0.10 or more from my p on 21 (60 percent; shot said about 30, missed) and the market was better on those rows (Brier 0.1285 v my 0.2456; direction hit). Where we agreed within 0.10 I am level (-0.0045 over 14). Market below me, any size: my degree won 0 of 14. Market 0.10 or more above me: my degree won 8 of 12, with the 0.25 cap holding me near 0.24 against a mid near 0.5. The deficit is under-confidence on the right degree plus wrong-degree nights, not the forecast. Caveat: 35 rows, anchor read after the call, early rows carried the +1C. Next: deepen (best cap on these rows, and whether the EPS band says when). | `experiments/2026-11-12-P-0422` | 0 min, 6 calls, 0 denied |

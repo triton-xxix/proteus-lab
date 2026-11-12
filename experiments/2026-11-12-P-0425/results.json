@@ -1,0 +1,82 @@
+{
+ "rows": [
+  {
+   "id": "G-0075",
+   "token": "FPES",
+   "pool": "6ZWXXub42SzS8o3JnoXGVSSqiaecbj3ghPv5crJ4MnrK",
+   "dex": "pumpswap",
+   "stale_entry": 0.4202,
+   "entry_liq_usd": 1813773.88,
+   "candles": 0,
+   "candles_after_entry": 0,
+   "status": "served, but no candle after entry"
+  },
+  {
+   "id": "G-0076",
+   "token": "TM",
+   "pool": "ARcvd2GiVSmz7oR2ozpe3KzVBadsVrEav5DdnVJ8sjhK",
+   "dex": "pumpswap",
+   "stale_entry": 0.0005622,
+   "entry_liq_usd": 78042.56,
+   "candles": 1326,
+   "candles_after_entry": 1318,
+   "first_candle_at": "2026-10-12T22:55:00Z",
+   "live_entry": 0.0003951758554880827,
+   "stale_over_live_pct": 42.27,
+   "high_pct_of_live": 104.6,
+   "low_pct_of_live": -39.4,
+   "stale": {
+    "exit_at": "2026-10-13T02:55:00Z",
+    "exit_price": 0.0002811,
+    "reason": "stop_loss",
+    "move_pct": -50.0,
+    "hours_held": 4.01,
+    "pnl_gbp": -52.79
+   },
+   "live": {
+    "exit_at": "2026-10-13T15:39:00Z",
+    "exit_price": 0.0007903517109761654,
+    "reason": "take_profit",
+    "move_pct": 100.0,
+    "hours_held": 16.74,
+    "pnl_gbp": 92.42
+   },
+   "status": "walked"
+  },
+  {
+   "id": "G-0077",
+   "token": "Glorp",
+   "pool": "EdV32pDiDmuFSsEbA9DB97VziSfSRXDdUQ7WCPRJwzEP",
+   "dex": "pumpswap",
+   "stale_entry": 0.0001156,
+   "entry_liq_usd": 30983.76,
+   "candles": 402,
+   "candles_after_entry": 396,
+   "first_candle_at": "2026-10-12T22:56:00Z",
+   "live_entry": 3.040012868275049e-05,
+   "stale_over_live_pct": 280.26,
+   "high_pct_of_live": 1.1,
+   "low_pct_of_live": -45.3,
+   "stale": {
+    "exit_at": "2026-10-12T22:56:00Z",
+    "exit_price": 3.040012868275049e-05,
+    "reason": "stop_loss",
+    "move_pct": -73.7,
+    "hours_held": 0.03,
+    "pnl_gbp": -75.36
+   },
+   "live": {
+    "exit_at": "2026-10-13T22:52:00Z",
+    "exit_price": 2.2431196223027833e-05,
+    "reason": "time_stop",
+    "move_pct": -26.21,
+    "hours_held": 23.96,
+    "pnl_gbp": -29.56
+   },
+   "status": "walked"
+  }
+ ],
+ "walked": 2,
+ "total_stale_gbp": -128.15,
+ "total_live_gbp": 62.86
+}

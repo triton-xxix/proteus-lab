@@ -10757,22 +10757,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:42:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:43:17+0000",
+   "note": "GeckoTerminal still serves minute candles a month back for 2 of the 3 voided pools; FPES came back empty (shot said all three, missed). The stale snapshot priced TM 42.3 percent and Glorp 280.3 percent above the market at the entry minute. Under v0.2: from the stale prices TM stops out after 4 h and Glorp in the first minute, -128.15 pounds between them (shot about -100, two losers: hit); from the live prices TM takes profit and Glorp time-stops, +62.86. A 191 pound swing on 200 staked from the price alone. Caveat: two trades, live fill at the first candle open, Glorp thin at 396 candles. Trades stay voided, nothing in the ledger touched. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0425"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "the API serves all three pools' October candles, and at least two of the three lose from the stale price, about -100 pounds between the three (band -200 to -40)",
-    "at": "2026-11-12T23:42:47+0000"
+    "at": "2026-11-12T23:42:47+0000",
+    "hit": true
    }
   }
  ]
