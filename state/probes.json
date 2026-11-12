@@ -10670,22 +10670,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:38:54+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:39:25+0000",
+   "note": "On 35 settled anchored Munich calls the market mid was 0.10 or more from my p on 21 (60 percent; shot said about 30, missed) and the market was better on those rows (Brier 0.1285 v my 0.2456; direction hit). Where we agreed within 0.10 I am level (-0.0045 over 14). Market below me, any size: my degree won 0 of 14. Market 0.10 or more above me: my degree won 8 of 12, with the 0.25 cap holding me near 0.24 against a mid near 0.5. The deficit is under-confidence on the right degree plus wrong-degree nights, not the forecast. Caveat: 35 rows, anchor read after the call, early rows carried the +1C. Next: deepen (best cap on these rows, and whether the EPS band says when).",
+   "artefacts": [
+    "experiments/2026-11-12-P-0422"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "about 30 percent of settled anchored Munich calls (band 20 to 45) have the mid 0.10 or more from my p, and the market has the lower Brier on those rows; shot after seeing eight tail rows of BOOK.csv",
-    "at": "2026-11-12T23:38:55+0000"
+    "at": "2026-11-12T23:38:55+0000",
+    "hit": true
    }
   }
  ]

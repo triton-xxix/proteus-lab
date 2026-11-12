@@ -1,0 +1,310 @@
+{
+ "skipped": {
+  "not_munich": 12,
+  "unsettled": 3,
+  "no_anchor": 8
+ },
+ "all": {
+  "n": 35,
+  "winners": 9,
+  "my_brier": 0.1848,
+  "market_brier": 0.1163,
+  "me_minus_market": 0.0685,
+  "mean_p": 0.262,
+  "mean_mid": 0.294,
+  "rows_i_was_nearer": 12
+ },
+ "gap_010_or_more": {
+  "n": 21,
+  "winners": 8,
+  "my_brier": 0.2456,
+  "market_brier": 0.1285,
+  "me_minus_market": 0.1171,
+  "mean_p": 0.283,
+  "mean_mid": 0.33,
+  "rows_i_was_nearer": 4
+ },
+ "gap_under_010": {
+  "n": 14,
+  "winners": 1,
+  "my_brier": 0.0937,
+  "market_brier": 0.0981,
+  "me_minus_market": -0.0045,
+  "mean_p": 0.231,
+  "mean_mid": 0.24,
+  "rows_i_was_nearer": 8
+ },
+ "market_above_me_by_010": {
+  "n": 12,
+  "winners": 8,
+  "my_brier": 0.3743,
+  "market_brier": 0.219,
+  "me_minus_market": 0.1553,
+  "mean_p": 0.293,
+  "mean_mid": 0.516,
+  "rows_i_was_nearer": 4
+ },
+ "market_below_me_by_010": {
+  "n": 9,
+  "winners": 0,
+  "my_brier": 0.074,
+  "market_brier": 0.0077,
+  "me_minus_market": 0.0662,
+  "mean_p": 0.269,
+  "mean_mid": 0.083,
+  "rows_i_was_nearer": 0
+ },
+ "share_big": 0.6,
+ "single_degree": {
+  "n": 32,
+  "winners": 7,
+  "my_brier": 0.1769,
+  "market_brier": 0.1115,
+  "me_minus_market": 0.0654,
+  "mean_p": 0.244,
+  "mean_mid": 0.259,
+  "rows_i_was_nearer": 11
+ },
+ "open_ended": {
+  "n": 3,
+  "winners": 2,
+  "my_brier": 0.2692,
+  "market_brier": 0.1681,
+  "me_minus_market": 0.101,
+  "mean_p": 0.45,
+  "mean_mid": 0.666,
+  "rows_i_was_nearer": 1
+ },
+ "big_rows": [
+  {
+   "id": "X-0016",
+   "event": "October 15th, 2026",
+   "contract": "18\u00b0C or higher",
+   "p": 0.45,
+   "mid": 0.8186,
+   "y": 1,
+   "open_ended": true,
+   "gap": 0.3686
+  },
+  {
+   "id": "X-0010",
+   "event": "October 10th, 2026",
+   "contract": "15\u00b0C",
+   "p": 0.36,
+   "mid": 0.0478,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.3122
+  },
+  {
+   "id": "X-0027",
+   "event": "October 24th, 2026",
+   "contract": "11\u00b0C",
+   "p": 0.25,
+   "mid": 0.5392,
+   "y": 1,
+   "open_ended": false,
+   "gap": 0.2892
+  },
+  {
+   "id": "X-0039",
+   "event": "November 1st, 2026",
+   "contract": "8\u00b0C",
+   "p": 0.22,
+   "mid": 0.4914,
+   "y": 1,
+   "open_ended": false,
+   "gap": 0.2714
+  },
+  {
+   "id": "X-0033",
+   "event": "October 28th, 2026",
+   "contract": "12\u00b0C",
+   "p": 0.22,
+   "mid": 0.483,
+   "y": 1,
+   "open_ended": false,
+   "gap": 0.263
+  },
+  {
+   "id": "X-0031",
+   "event": "October 26th, 2026",
+   "contract": "12\u00b0C",
+   "p": 0.25,
+   "mid": 0.5012,
+   "y": 1,
+   "open_ended": false,
+   "gap": 0.2512
+  },
+  {
+   "id": "X-0036",
+   "event": "October 30th, 2026",
+   "contract": "11\u00b0C",
+   "p": 0.24,
+   "mid": 0.4871,
+   "y": 1,
+   "open_ended": false,
+   "gap": 0.2471
+  },
+  {
+   "id": "X-0011",
+   "event": "October 11th, 2026",
+   "contract": "15\u00b0C",
+   "p": 0.3,
+   "mid": 0.0548,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.2452
+  },
+  {
+   "id": "X-0014",
+   "event": "October 14th, 2026",
+   "contract": "16\u00b0C",
+   "p": 0.3,
+   "mid": 0.0559,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.2441
+  },
+  {
+   "id": "X-0035",
+   "event": "October 29th, 2026",
+   "contract": "12\u00b0C",
+   "p": 0.25,
+   "mid": 0.4535,
+   "y": 0,
+   "open_ended": false,
+   "gap": 0.2035
+  },
+  {
+   "id": "X-0029",
+   "event": "October 25th, 2026",
+   "contract": "14\u00b0C",
+   "p": 0.24,
+   "mid": 0.42,
+   "y": 1,
+   "open_ended": false,
+   "gap": 0.18
+  },
+  {
+   "id": "X-0034",
+   "event": "October 29th, 2026",
+   "contract": "11\u00b0C",
+   "p": 0.25,
+   "mid": 0.4237,
+   "y": 0,
+   "open_ended": false,
+   "gap": 0.1737
+  },
+  {
+   "id": "X-0018",
+   "event": "October 17th, 2026",
+   "contract": "17\u00b0C",
+   "p": 0.25,
+   "mid": 0.0783,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.1717
+  },
+  {
+   "id": "X-0042",
+   "event": "November 3rd, 2026",
+   "contract": "8\u00b0C",
+   "p": 0.22,
+   "mid": 0.0541,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.1659
+  },
+  {
+   "id": "X-0015",
+   "event": "October 15th, 2026",
+   "contract": "18\u00b0C or higher",
+   "p": 0.45,
+   "mid": 0.6123,
+   "y": 1,
+   "open_ended": true,
+   "gap": 0.1623
+  },
+  {
+   "id": "X-0025",
+   "event": "October 22nd, 2026",
+   "contract": "14\u00b0C",
+   "p": 0.25,
+   "mid": 0.0932,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.1568
+  },
+  {
+   "id": "X-0045",
+   "event": "November 4th, 2026",
+   "contract": "8\u00b0C",
+   "p": 0.25,
+   "mid": 0.3898,
+   "y": 0,
+   "open_ended": false,
+   "gap": 0.1398
+  },
+  {
+   "id": "X-0023",
+   "event": "October 21st, 2026",
+   "contract": "13\u00b0C",
+   "p": 0.24,
+   "mid": 0.1036,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.1364
+  },
+  {
+   "id": "X-0047",
+   "event": "November 6th, 2026",
+   "contract": "7\u00b0C",
+   "p": 0.25,
+   "mid": 0.1162,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.1338
+  },
+  {
+   "id": "X-0050",
+   "event": "November 8th, 2026",
+   "contract": "9\u00b0C or higher",
+   "p": 0.45,
+   "mid": 0.5667,
+   "y": 0,
+   "open_ended": true,
+   "gap": 0.1167
+  },
+  {
+   "id": "X-0028",
+   "event": "October 25th, 2026",
+   "contract": "15\u00b0C",
+   "p": 0.25,
+   "mid": 0.1391,
+   "y": 0,
+   "open_ended": false,
+   "gap": -0.1109
+  }
+ ],
+ "market_above_me_any": {
+  "n": 21,
+  "winners": 9,
+  "my_brier": 0.2626,
+  "market_brier": 0.1804,
+  "me_minus_market": 0.0822,
+  "mean_p": 0.264,
+  "mean_mid": 0.406,
+  "rows_i_was_nearer": 12
+ },
+ "market_below_me_any": {
+  "n": 14,
+  "winners": 0,
+  "my_brier": 0.0682,
+  "market_brier": 0.0202,
+  "me_minus_market": 0.048,
+  "mean_p": 0.259,
+  "mean_mid": 0.126,
+  "rows_i_was_nearer": 0
+ }
+}
