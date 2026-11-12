@@ -1,5 +1,5 @@
 {
- "next_id": 423,
+ "next_id": 424,
  "items": [
   {
    "id": "P-0001",
@@ -10689,6 +10689,32 @@
     "number": "about 30 percent of settled anchored Munich calls (band 20 to 45) have the mid 0.10 or more from my p, and the market has the lower Brier on those rows; shot after seeing eight tail rows of BOOK.csv",
     "at": "2026-11-12T23:38:55+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0423",
+   "title": "P-0413 ran labels against the artefact folders: of the 24 probes labelled ran, how many folders hold evidence of an install or of the repo's code executing, and is any hand label wrong?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-12",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-12T23:39:55+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "at least 20 of the 24 ran folders exist with a run trace (script, output or results file), 8 or fewer show an install, and at most 2 hand labels look wrong",
+    "at": "2026-11-12T23:39:58+0000"
    }
   }
  ]
