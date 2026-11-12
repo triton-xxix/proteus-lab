@@ -532,7 +532,12 @@ def next_refill_source():
 
 
 def unused_refill_rows(txt=None):
-    """Every row of REFILL-SOURCES.md not struck through and with an empty `used`, in order."""
+    """Every row of REFILL-SOURCES.md not struck through and with an empty `used`, in order.
+
+    A `used` cell that starts `hold YYYY-MM-DD` skips the row on that day only and leaves it unused
+    after it (12 Nov 2026: row 152 needs YouTube, the IP was blocked, and `next` offered it twice
+    because nothing but a date in `used` could move past it, which would have burnt the row)."""
+    today = now().strftime("%Y-%m-%d")
     if txt is None:
         try:
             txt = open(REFILL_SOURCES).read()
@@ -545,7 +550,8 @@ def unused_refill_rows(txt=None):
             continue
         if cells[1].startswith("~~"):
             continue
-        if not cells[4]:
+        held = re.match(r"hold (\d{4}-\d{2}-\d{2})", cells[4])
+        if not cells[4] or (held and held.group(1) != today):
             out.append(cells[:4])
     return out
 
@@ -589,6 +595,7 @@ def cmd_next(a):
         print("do: learn one thing in under ten minutes, then queue ONE build you can finish tonight:")
         print("    python3 %sbin/probe.py add \"...\" --source refill --est 25" % ROOT)
         print("    write today's date in row %s's `used` column of %s, then run `probe.py next` again." % (src[0], REFILL_SOURCES))
+        print("    if the source cannot be reached today (blocked, down): write `hold %s: <why>` in `used` instead and run `probe.py next` again; the row comes back tomorrow." % now().strftime("%Y-%m-%d"))
         # F-0043 (23 Oct 2026): the list ran dry on 22 Oct with 51 min left and nobody had been warned.
         if spare < REFILL_LOW_ROWS:
             print("LOW: %d unused source(s) after this one, under %d; add rows to %s before this run ends, or the next REFILL is refused at the reserve of %d." % (

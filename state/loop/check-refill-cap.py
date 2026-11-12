@@ -44,7 +44,7 @@ CASES = [
     ("LOW printed when under 6 rows remain after this one", dict(left=40, unused_n=5), "LOW: 4 unused", "STOP"),
     ("at the reserve: SOURCES, not STOP", dict(left=53, unused_n=3), "SOURCES:", "STOP"),
     ("list dry: SOURCES, not STOP", dict(left=53, unused_n=0), "has 0 unused row(s)", "STOP"),
-    ("under the 25-minute floor: STOP as before", dict(left=20, unused_n=7), "under the 25 needed", "REFILL"),
+    ("under the 15-minute floor (25 until 31 Oct): STOP as before", dict(left=12, unused_n=7), "under the 15 needed", "REFILL"),
     ("--no-refill: STOP as before", dict(left=53, unused_n=7, no_refill=True), "STOP: nothing runnable", "refill"),
 ]
 
