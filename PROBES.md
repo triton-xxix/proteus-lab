@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 350 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 351 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 350 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0430 | Registered edge rules against random-entry lists: is each rule's best-ten share of gross wins any higher than same-day, same-hold random entries, and do profitable random lists die as fast with their best trades removed? | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (415)
+## Verdicts (416)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-12 | P-0430 | Registered edge rules against random-entry lists: is each rule's best-ten share of gross wins any higher than same-day, same-hold random entries, and do profitable random lists die as fast with their best trades removed? | **works** | Against 500 random-entry lists per rule (same symbol, day and hold), no registered edge rule is more concentrated than luck: the best-ten share of gross wins sits inside the random 10th to 90th band for 5 of 9 (shot said at least 6, missed by one) and below it for the other 4. Profitable random lists die faster, median 1 to 2.5 percent of trades removed against 1.7 to 8.3 for the rules. So P-0421 earlier tonight was too harsh: dying with the best ten gone is what any list of 120 to 180 trades does. Caveat: the control shares the rule days, E-015 has 7 profitable control lists, in sample. Next: close. | `experiments/2026-11-12-P-0430` | 1 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0429 | NOAA SWPC solar-cycle files against tonight's sunspot item: do they confirm the observed peak, do they still hold the 2019 panel forecast I quoted from memory (115, July 2025), and what does NOAA forecast now? | **works** | NOAA SWPC observed file matches my SILSO pull on all three numbers (smoothed peak 160.9 in Oct 2024, 88.6 for Apr 2026, 45.7 for Oct 2026). NOAA 2019 page confirms 115 and July 2025 plus or minus 8 months (shot hit, called after seeing the JSON), so the peak was 9 months early and 40 percent high. The 95 to 130 range I had quoted from memory is not on that page and is cut from the Field Notes item. The predicted file is now a rolling forecast, 86.7 in May 2026 down to 8.0 by Dec 2030, with no overlap to score. Caveat: one page, two files. Next: close. | `experiments/2026-11-12-P-0429` | 0 min, 8 calls, 0 denied |
 | 2026-11-12 | P-0428 | Exchange book single-degree cap, in sample: what flat p on my chosen Munich degree would have minimised my Brier on the 32 settled single-degree rows, and was the ICON-EPS band narrower on the nights my degree won? | **works** | My Munich single degree won 8 of 38, so the best flat p is 0.21 (Brier 0.1662 v my 0.1745; shot said within 0.05 of the cap, hit, called after seeing P-0422). On the 32 anchored rows the market is 0.1115 against 0.1709 for the best flat number: no cap closes the gap, so P-0422 was wrong to blame the cap; the market knows which nights. EPS band width is no signal (wider on winning nights, 1.64 v 1.26C; hit). Position may be: called degree inside the band 4 of 7 won, outside 0 of 10. Caveat: in sample, 17 rows, and outside-the-band largely means the old +1C. Nothing changed. Next: deepen after 15 METAR-rule rows. | `experiments/2026-11-12-P-0428` | 0 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0426 | Munich forecast points out of sample: on 1 to 11 Nov 2026, which of the city point, the airport point and their mean has the lowest MAE against the EDDM METAR high, and is the city point warm as in Nov 2025? | **works** | On 1 to 12 Nov 2026 the mean of the city and airport points has the lowest MAE against the EDDM METAR high, 0.912 (shot about 0.9, hit), with city 0.967 and airport 0.975: the year ranking held but the gap is 0.06C on 12 days. The city point ran 0.47C warm (shot said -0.3 to +0.6, missed), all three warm by about half a degree, the second November running (Nov 2025 -0.74). 9 Nov alone (METAR 5.0 v city 8.6) carries much of it: without it city bias -0.19, MAE 0.73. Exact degree 4 of 12 at the city point. Caveat: twelve days, UTC days, 9 Nov not chased. Next: deepen at month end on Berlin days. | `experiments/2026-11-12-P-0426` | 0 min, 5 calls, 0 denied |

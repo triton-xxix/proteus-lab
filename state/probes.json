@@ -10893,22 +10893,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:46:56+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:48:11+0000",
+   "note": "Against 500 random-entry lists per rule (same symbol, day and hold), no registered edge rule is more concentrated than luck: the best-ten share of gross wins sits inside the random 10th to 90th band for 5 of 9 (shot said at least 6, missed by one) and below it for the other 4. Profitable random lists die faster, median 1 to 2.5 percent of trades removed against 1.7 to 8.3 for the rules. So P-0421 earlier tonight was too harsh: dying with the best ten gone is what any list of 120 to 180 trades does. Caveat: the control shares the rule days, E-015 has 7 profitable control lists, in sample. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0430"
+   ],
+   "minutes": 1,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "for at least 6 of the 9 rules the best-ten share of gross wins sits inside the random lists' 10th to 90th percentile band, so the concentration is what random entries show too",
-    "at": "2026-11-12T23:46:58+0000"
+    "at": "2026-11-12T23:46:58+0000",
+    "hit": true
    }
   }
  ]

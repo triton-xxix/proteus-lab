@@ -1,0 +1,194 @@
+{
+ "n_random_lists": 500,
+ "rows": [
+  {
+   "id": "E-011",
+   "rule": "Morning direction into the afternoon",
+   "n": 179,
+   "matches_register": true,
+   "forward": "FAIL",
+   "rule_total_pct": 10.03,
+   "rule_top10_share_of_gross_wins": 0.377,
+   "random_top10_share_median": 0.354,
+   "random_top10_share_p10_p90": [
+    0.315,
+    0.398
+   ],
+   "share_of_random_lists_more_concentrated": 0.228,
+   "rule_to_zero_share": 0.0279,
+   "random_lists_above_zero": 170,
+   "random_to_zero_share_median": 0.0112,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.259,
+   "random_total_pct_median": -5.1,
+   "share_of_random_totals_at_or_above_rule": 0.106
+  },
+  {
+   "id": "E-012",
+   "rule": "ORB 30m, target 1R",
+   "n": 157,
+   "matches_register": true,
+   "forward": "FAIL",
+   "rule_total_pct": 16.96,
+   "rule_top10_share_of_gross_wins": 0.306,
+   "random_top10_share_median": 0.391,
+   "random_top10_share_p10_p90": [
+    0.35,
+    0.445
+   ],
+   "share_of_random_lists_more_concentrated": 1.0,
+   "rule_to_zero_share": 0.0573,
+   "random_lists_above_zero": 183,
+   "random_to_zero_share_median": 0.0127,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.066,
+   "random_total_pct_median": -3.87,
+   "share_of_random_totals_at_or_above_rule": 0.03
+  },
+  {
+   "id": "E-013",
+   "rule": "VWAP cross after 11:00, hold to close",
+   "n": 124,
+   "matches_register": true,
+   "forward": "PASS",
+   "rule_total_pct": 9.38,
+   "rule_top10_share_of_gross_wins": 0.436,
+   "random_top10_share_median": 0.481,
+   "random_top10_share_p10_p90": [
+    0.43,
+    0.543
+   ],
+   "share_of_random_lists_more_concentrated": 0.846,
+   "rule_to_zero_share": 0.0323,
+   "random_lists_above_zero": 179,
+   "random_to_zero_share_median": 0.0242,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.318,
+   "random_total_pct_median": -3.72,
+   "share_of_random_totals_at_or_above_rule": 0.12
+  },
+  {
+   "id": "E-014",
+   "rule": "ORB 15m fade (failed break)",
+   "n": 157,
+   "matches_register": true,
+   "forward": "PASS",
+   "rule_total_pct": 5.78,
+   "rule_top10_share_of_gross_wins": 0.436,
+   "random_top10_share_median": 0.525,
+   "random_top10_share_p10_p90": [
+    0.468,
+    0.593
+   ],
+   "share_of_random_lists_more_concentrated": 0.978,
+   "rule_to_zero_share": 0.0191,
+   "random_lists_above_zero": 83,
+   "random_to_zero_share_median": 0.0127,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.301,
+   "random_total_pct_median": -4.5,
+   "share_of_random_totals_at_or_above_rule": 0.018
+  },
+  {
+   "id": "E-015",
+   "rule": "ORB NY open 30m, target 1R",
+   "n": 126,
+   "matches_register": true,
+   "forward": "FAIL",
+   "rule_total_pct": 8.57,
+   "rule_top10_share_of_gross_wins": 0.273,
+   "random_top10_share_median": 0.653,
+   "random_top10_share_p10_p90": [
+    0.577,
+    0.734
+   ],
+   "share_of_random_lists_more_concentrated": 1.0,
+   "rule_to_zero_share": 0.0556,
+   "random_lists_above_zero": 7,
+   "random_to_zero_share_median": 0.0079,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.0,
+   "random_total_pct_median": -14.95,
+   "share_of_random_totals_at_or_above_rule": 0.0
+  },
+  {
+   "id": "E-016",
+   "rule": "Opening drive: first bar direction to 11:00",
+   "n": 179,
+   "matches_register": true,
+   "forward": "PASS",
+   "rule_total_pct": 7.82,
+   "rule_top10_share_of_gross_wins": 0.325,
+   "random_top10_share_median": 0.38,
+   "random_top10_share_p10_p90": [
+    0.327,
+    0.435
+   ],
+   "share_of_random_lists_more_concentrated": 0.914,
+   "rule_to_zero_share": 0.0168,
+   "random_lists_above_zero": 84,
+   "random_to_zero_share_median": 0.0112,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.452,
+   "random_total_pct_median": -6.55,
+   "share_of_random_totals_at_or_above_rule": 0.038
+  },
+  {
+   "id": "E-017",
+   "rule": "Gap and go 0.5%",
+   "n": 121,
+   "matches_register": true,
+   "forward": "pending",
+   "rule_total_pct": 36.9,
+   "rule_top10_share_of_gross_wins": 0.383,
+   "random_top10_share_median": 0.45,
+   "random_top10_share_p10_p90": [
+    0.395,
+    0.497
+   ],
+   "share_of_random_lists_more_concentrated": 0.958,
+   "rule_to_zero_share": 0.0826,
+   "random_lists_above_zero": 221,
+   "random_to_zero_share_median": 0.0248,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.05,
+   "random_total_pct_median": -3.42,
+   "share_of_random_totals_at_or_above_rule": 0.024
+  },
+  {
+   "id": "E-018",
+   "rule": "Opening reversal: fade first 30m to 13:00",
+   "n": 180,
+   "matches_register": true,
+   "forward": "pending",
+   "rule_total_pct": 17.11,
+   "rule_top10_share_of_gross_wins": 0.352,
+   "random_top10_share_median": 0.37,
+   "random_top10_share_p10_p90": [
+    0.326,
+    0.421
+   ],
+   "share_of_random_lists_more_concentrated": 0.68,
+   "rule_to_zero_share": 0.0333,
+   "random_lists_above_zero": 178,
+   "random_to_zero_share_median": 0.0111,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.135,
+   "random_total_pct_median": -5.01,
+   "share_of_random_totals_at_or_above_rule": 0.026
+  },
+  {
+   "id": "E-019",
+   "rule": "ORB 30m fade (failed break)",
+   "n": 145,
+   "matches_register": true,
+   "forward": "pending",
+   "rule_total_pct": 8.72,
+   "rule_top10_share_of_gross_wins": 0.571,
+   "random_top10_share_median": 0.569,
+   "random_top10_share_p10_p90": [
+    0.5,
+    0.642
+   ],
+   "share_of_random_lists_more_concentrated": 0.49,
+   "rule_to_zero_share": 0.0207,
+   "random_lists_above_zero": 118,
+   "random_to_zero_share_median": 0.0138,
+   "share_of_positive_random_lists_at_least_as_sturdy": 0.288,
+   "random_total_pct_median": -4.59,
+   "share_of_random_totals_at_or_above_rule": 0.03
+  }
+ ]
+}
