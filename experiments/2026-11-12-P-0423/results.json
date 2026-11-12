@@ -1,0 +1,766 @@
+{
+ "rows": [
+  {
+   "id": "P-0022",
+   "label": "ran",
+   "why": "its Go edit package, Go fetched to sandbox",
+   "folders": [
+    "experiments/2026-09-26-P-0022"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 22,
+   "lockfiles": [],
+   "outputs": 12,
+   "scripts": 0,
+   "install_words": [
+    "installed",
+    "tarball"
+   ],
+   "run_words": 27,
+   "not_run_phrases": [
+    "did not run",
+    "not install"
+   ]
+  },
+  {
+   "id": "P-0023",
+   "label": "ran",
+   "why": "the CLI in a fake HOME",
+   "folders": [
+    "experiments/2026-09-26-P-0023"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 2,
+   "scripts": 0,
+   "install_words": [
+    "installed"
+   ],
+   "run_words": 81,
+   "not_run_phrases": [
+    "not install"
+   ]
+  },
+  {
+   "id": "P-0038",
+   "label": "ran",
+   "why": "example clip rendered twice",
+   "folders": [
+    "experiments/2026-09-29-P-0038"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 4,
+   "lockfiles": [],
+   "outputs": 2,
+   "scripts": 1,
+   "install_words": [
+    "installed"
+   ],
+   "run_words": 19,
+   "not_run_phrases": [
+    "did not run"
+   ]
+  },
+  {
+   "id": "P-0044",
+   "label": "ran",
+   "why": "its two shell scripts on a test video",
+   "folders": [
+    "experiments/2026-09-30-P-0044"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 1,
+   "lockfiles": [],
+   "outputs": 0,
+   "scripts": 0,
+   "install_words": [
+    "tarball"
+   ],
+   "run_words": 3,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0059",
+   "label": "ran",
+   "why": "bundled am.mjs",
+   "folders": [
+    "experiments/2026-10-04-P-0059"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 8,
+   "lockfiles": [],
+   "outputs": 4,
+   "scripts": 2,
+   "install_words": [
+    "npm install",
+    "tarball"
+   ],
+   "run_words": 5,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0060",
+   "label": "ran",
+   "why": "render.py and check_frames.py",
+   "folders": [
+    "experiments/2026-10-04-P-0060"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 8,
+   "lockfiles": [],
+   "outputs": 6,
+   "scripts": 1,
+   "install_words": [
+    "tarball",
+    "venv"
+   ],
+   "run_words": 18,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0063",
+   "label": "outside",
+   "why": "my own Open-Meteo call and sun calc",
+   "folders": [
+    "experiments/2026-10-05-P-0063"
+   ],
+   "install_evidence": false,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [],
+   "run_words": 8,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0067",
+   "label": "outside",
+   "why": "server not run, its endpoints called directly",
+   "folders": [
+    "experiments/2026-10-07-P-0067"
+   ],
+   "install_evidence": false,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [],
+   "run_words": 6,
+   "not_run_phrases": [
+    "not run",
+    "was not run"
+   ]
+  },
+  {
+   "id": "P-0092",
+   "label": "ran",
+   "why": "npm ci --ignore-scripts, demo run",
+   "folders": [
+    "experiments/2026-10-07-P-0092"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 2,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 0,
+   "install_words": [
+    "installed",
+    "npm ci",
+    "tarball"
+   ],
+   "run_words": 6,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0098",
+   "label": "ran",
+   "why": "demo built and exported, three-line patch",
+   "folders": [
+    "experiments/2026-10-09-P-0098"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 4,
+   "lockfiles": [],
+   "outputs": 2,
+   "scripts": 1,
+   "install_words": [
+    "downloaded",
+    "installed",
+    "tarball",
+    "unpacked"
+   ],
+   "run_words": 2,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0115",
+   "label": "ran",
+   "why": "unit_economics.py, read in full first",
+   "folders": [
+    "experiments/2026-10-09-P-0115"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "tarball",
+    "unpacked"
+   ],
+   "run_words": 4,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0122",
+   "label": "ran",
+   "why": "pages rebuilt with plain Node",
+   "folders": [
+    "experiments/2026-10-10-P-0122"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 0,
+   "scripts": 2,
+   "install_words": [
+    "installed",
+    "node_modules",
+    "npm install",
+    "tarball"
+   ],
+   "run_words": 5,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0138",
+   "label": "outside",
+   "why": "its dedupe rule read from server.js and applied in my script; unsure, the note does not say the server ran",
+   "folders": [
+    "experiments/2026-10-13-P-0138"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "installed"
+   ],
+   "run_words": 6,
+   "not_run_phrases": [
+    "did not run"
+   ]
+  },
+  {
+   "id": "P-0142",
+   "label": "outside",
+   "why": "my own GitHub query",
+   "folders": [
+    "experiments/2026-10-13-P-0142"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "wheel"
+   ],
+   "run_words": 25,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0156",
+   "label": "ran",
+   "why": "npm ci, 303 tests",
+   "folders": [
+    "experiments/2026-10-14-P-0156"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 4,
+   "lockfiles": [],
+   "outputs": 0,
+   "scripts": 3,
+   "install_words": [
+    "npm ci",
+    "tarball"
+   ],
+   "run_words": 5,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0160",
+   "label": "ran",
+   "why": "selftest and optimizer.py",
+   "folders": [
+    "experiments/2026-10-15-P-0160"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 1,
+   "lockfiles": [],
+   "outputs": 0,
+   "scripts": 0,
+   "install_words": [
+    "tarball"
+   ],
+   "run_words": 2,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0164",
+   "label": "outside",
+   "why": "table recomputed from its results.csv",
+   "folders": [
+    "experiments/2026-10-16-P-0164"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 4,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 2,
+   "install_words": [
+    "tarball"
+   ],
+   "run_words": 6,
+   "not_run_phrases": [
+    "did not run"
+   ]
+  },
+  {
+   "id": "P-0165",
+   "label": "ran",
+   "why": "earshot measure on CPU",
+   "folders": [
+    "experiments/2026-10-16-P-0165"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 2,
+   "lockfiles": [],
+   "outputs": 0,
+   "scripts": 1,
+   "install_words": [
+    "installed",
+    "tarball",
+    "venv",
+    "wheel"
+   ],
+   "run_words": 2,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0173",
+   "label": "ran",
+   "why": "its page in headless Chrome",
+   "folders": [
+    "experiments/2026-10-17-P-0173",
+    "experiments/2026-10-18-P-0173"
+   ],
+   "install_evidence": false,
+   "run_trace": true,
+   "files": 10,
+   "lockfiles": [],
+   "outputs": 6,
+   "scripts": 2,
+   "install_words": [],
+   "run_words": 9,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0181",
+   "label": "ran",
+   "why": "report.py --check on 8 variants",
+   "folders": [
+    "experiments/2026-10-19-P-0181"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 4,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 2,
+   "install_words": [
+    "tarball"
+   ],
+   "run_words": 12,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0201",
+   "label": "outside",
+   "why": "librosa pYIN, not the repo",
+   "folders": [
+    "experiments/2026-10-23-P-0201"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "venv"
+   ],
+   "run_words": 1,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0202",
+   "label": "outside",
+   "why": "the hosted endpoint",
+   "folders": [
+    "experiments/2026-10-23-P-0202"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "npm install",
+    "venv"
+   ],
+   "run_words": 9,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0203",
+   "label": "ran",
+   "why": "track_edges.py",
+   "folders": [
+    "experiments/2026-10-23-P-0203"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 5,
+   "lockfiles": [],
+   "outputs": 3,
+   "scripts": 1,
+   "install_words": [
+    "downloaded",
+    "venv"
+   ],
+   "run_words": 7,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0219",
+   "label": "ran",
+   "why": "repo tests and audit script",
+   "folders": [
+    "experiments/2026-10-25-P-0219"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 5,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 3,
+   "install_words": [
+    "tarball"
+   ],
+   "run_words": 7,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0272",
+   "label": "ran",
+   "why": "render.mjs on three effects",
+   "folders": [
+    "experiments/2026-10-31-P-0272"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 4,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 2,
+   "install_words": [
+    "installed",
+    "npm install",
+    "tarball"
+   ],
+   "run_words": 7,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0285",
+   "label": "ran",
+   "why": "built with NASM, training run",
+   "folders": [
+    "experiments/2026-11-01-P-0285"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "venv"
+   ],
+   "run_words": 4,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0286",
+   "label": "ran",
+   "why": "example built, loaded headless",
+   "folders": [
+    "experiments/2026-11-01-P-0286"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 6,
+   "lockfiles": [],
+   "outputs": 3,
+   "scripts": 2,
+   "install_words": [
+    "installed",
+    "npm install",
+    "tarball",
+    "venv"
+   ],
+   "run_words": 10,
+   "not_run_phrases": [
+    "not install"
+   ]
+  },
+  {
+   "id": "P-0287",
+   "label": "ran",
+   "why": "capture.ts on a public page",
+   "folders": [
+    "experiments/2026-11-01-P-0287"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 6,
+   "lockfiles": [],
+   "outputs": 4,
+   "scripts": 1,
+   "install_words": [
+    "node_modules",
+    "npm install",
+    "tarball"
+   ],
+   "run_words": 10,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0288",
+   "label": "outside",
+   "why": "records and files counted",
+   "folders": [
+    "experiments/2026-11-01-P-0288"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "fetched to sandbox"
+   ],
+   "run_words": 0,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0299",
+   "label": "ran",
+   "why": "build and render",
+   "folders": [
+    "experiments/2026-11-02-P-0299"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 9,
+   "lockfiles": [],
+   "outputs": 5,
+   "scripts": 3,
+   "install_words": [
+    "installed",
+    "tarball"
+   ],
+   "run_words": 7,
+   "not_run_phrases": [
+    "not install"
+   ]
+  },
+  {
+   "id": "P-0300",
+   "label": "ran",
+   "why": "index and search CLI",
+   "folders": [
+    "experiments/2026-11-02-P-0300"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 0,
+   "scripts": 2,
+   "install_words": [
+    "node_modules"
+   ],
+   "run_words": 3,
+   "not_run_phrases": [
+    "not run"
+   ]
+  },
+  {
+   "id": "P-0301",
+   "label": "outside",
+   "why": "prompt-only repo, no code to run",
+   "folders": [
+    "experiments/2026-11-02-P-0301"
+   ],
+   "install_evidence": false,
+   "run_trace": true,
+   "files": 6,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [],
+   "run_words": 0,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0340",
+   "label": "ran",
+   "why": "build.py to mp4",
+   "folders": [
+    "experiments/2026-11-06-P-0340"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 28,
+   "lockfiles": [],
+   "outputs": 9,
+   "scripts": 4,
+   "install_words": [
+    "npm install",
+    "tarball"
+   ],
+   "run_words": 12,
+   "not_run_phrases": []
+  },
+  {
+   "id": "P-0370",
+   "label": "outside",
+   "why": "package contents counted",
+   "folders": [
+    "experiments/2026-11-08-P-0370"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 10,
+   "lockfiles": [],
+   "outputs": 7,
+   "scripts": 2,
+   "install_words": [
+    "installed",
+    "tarball"
+   ],
+   "run_words": 10,
+   "not_run_phrases": [
+    "did not install"
+   ]
+  },
+  {
+   "id": "P-0411",
+   "label": "outside",
+   "why": "source ported, plugin not run",
+   "folders": [
+    "experiments/2026-11-11-P-0411"
+   ],
+   "install_evidence": true,
+   "run_trace": true,
+   "files": 3,
+   "lockfiles": [],
+   "outputs": 1,
+   "scripts": 1,
+   "install_words": [
+    "npm install",
+    "pip install"
+   ],
+   "run_words": 19,
+   "not_run_phrases": [
+    "did not install",
+    "never execut",
+    "not execut"
+   ]
+  }
+ ],
+ "ran": {
+  "n": 24,
+  "with_folder": 24,
+  "run_trace": 24,
+  "install_evidence": 23,
+  "lockfile": 0,
+  "not_run_phrase": [
+   "P-0022",
+   "P-0023",
+   "P-0038",
+   "P-0092",
+   "P-0098",
+   "P-0156",
+   "P-0160",
+   "P-0285",
+   "P-0286",
+   "P-0287",
+   "P-0299",
+   "P-0300"
+  ],
+  "no_folder": []
+ },
+ "outside": {
+  "n": 11,
+  "with_folder": 11,
+  "run_trace": 11,
+  "install_evidence": 8,
+  "lockfile": 0,
+  "not_run_phrase": [
+   "P-0067",
+   "P-0138",
+   "P-0164",
+   "P-0370",
+   "P-0411"
+  ],
+  "no_folder": []
+ }
+}
