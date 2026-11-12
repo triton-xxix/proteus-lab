@@ -1,0 +1,208 @@
+{
+ "n": 38,
+ "winners": 8,
+ "hit_rate": 0.211,
+ "my_brier": 0.1745,
+ "mean_p": 0.246,
+ "flat_p_grid": {
+  "0.10": 0.1784,
+  "0.15": 0.1699,
+  "0.20": 0.1663,
+  "0.25": 0.1678,
+  "0.30": 0.1742,
+  "0.35": 0.1857,
+  "0.40": 0.2021,
+  "0.45": 0.2236,
+  "0.50": 0.25,
+  "0.55": 0.2814,
+  "0.60": 0.3179
+ },
+ "best_flat_p": 0.211,
+ "best_flat_brier": 0.1662,
+ "anchored": {
+  "n": 32,
+  "market_brier": 0.1115,
+  "my_brier": 0.1769,
+  "flat_at_hit_rate": 0.1709
+ },
+ "lead_1": {
+  "n": 15,
+  "winners": 2
+ },
+ "lead_2_plus": {
+  "n": 23,
+  "winners": 6
+ },
+ "with_plus_1C_to_10_Nov": {
+  "n": 36,
+  "winners": 7
+ },
+ "metar_rule_from_11_Nov": {
+  "n": 2,
+  "winners": 1
+ },
+ "eps": {
+  "rows_with_band": 17,
+  "won": 4,
+  "lost": 13,
+  "mean_width_won": 1.64,
+  "mean_width_lost": 1.26,
+  "narrow_half_hit": "1 of 8",
+  "rows": [
+   {
+    "id": "X-0033",
+    "day": "2026-10-28",
+    "degree": 12,
+    "p": 0.22,
+    "y": 1,
+    "width": 2.24,
+    "in_band": true
+   },
+   {
+    "id": "X-0034",
+    "day": "2026-10-29",
+    "degree": 11,
+    "p": 0.25,
+    "y": 0,
+    "width": 1.26,
+    "in_band": true
+   },
+   {
+    "id": "X-0035",
+    "day": "2026-10-29",
+    "degree": 12,
+    "p": 0.25,
+    "y": 0,
+    "width": 1.26,
+    "in_band": false
+   },
+   {
+    "id": "X-0036",
+    "day": "2026-10-30",
+    "degree": 11,
+    "p": 0.24,
+    "y": 1,
+    "width": 1.42,
+    "in_band": true
+   },
+   {
+    "id": "X-0037",
+    "day": "2026-10-31",
+    "degree": 10,
+    "p": 0.25,
+    "y": 0,
+    "width": 1.22,
+    "in_band": true
+   },
+   {
+    "id": "X-0038",
+    "day": "2026-10-31",
+    "degree": 11,
+    "p": 0.24,
+    "y": 0,
+    "width": 1.22,
+    "in_band": false
+   },
+   {
+    "id": "X-0039",
+    "day": "2026-11-01",
+    "degree": 8,
+    "p": 0.22,
+    "y": 1,
+    "width": 0.84,
+    "in_band": true
+   },
+   {
+    "id": "X-0040",
+    "day": "2026-11-01",
+    "degree": 9,
+    "p": 0.24,
+    "y": 0,
+    "width": 0.84,
+    "in_band": false
+   },
+   {
+    "id": "X-0041",
+    "day": "2026-11-02",
+    "degree": 8,
+    "p": 0.24,
+    "y": 0,
+    "width": 1.0,
+    "in_band": false
+   },
+   {
+    "id": "X-0042",
+    "day": "2026-11-03",
+    "degree": 8,
+    "p": 0.22,
+    "y": 0,
+    "width": 0.54,
+    "in_band": false
+   },
+   {
+    "id": "X-0045",
+    "day": "2026-11-04",
+    "degree": 8,
+    "p": 0.25,
+    "y": 0,
+    "width": 1.12,
+    "in_band": false
+   },
+   {
+    "id": "X-0047",
+    "day": "2026-11-06",
+    "degree": 7,
+    "p": 0.25,
+    "y": 0,
+    "width": 1.22,
+    "in_band": false
+   },
+   {
+    "id": "X-0048",
+    "day": "2026-11-07",
+    "degree": 10,
+    "p": 0.22,
+    "y": 0,
+    "width": 1.52,
+    "in_band": false
+   },
+   {
+    "id": "X-0051",
+    "day": "2026-11-09",
+    "degree": 11,
+    "p": 0.25,
+    "y": 0,
+    "width": 1.88,
+    "in_band": false
+   },
+   {
+    "id": "X-0053",
+    "day": "2026-11-10",
+    "degree": 10,
+    "p": 0.22,
+    "y": 0,
+    "width": 1.24,
+    "in_band": true
+   },
+   {
+    "id": "X-0054",
+    "day": "2026-11-11",
+    "degree": 14,
+    "p": 0.2,
+    "y": 0,
+    "width": 2.04,
+    "in_band": true
+   },
+   {
+    "id": "X-0055",
+    "day": "2026-11-11",
+    "degree": 13,
+    "p": 0.22,
+    "y": 1,
+    "width": 2.04,
+    "in_band": true
+   }
+  ],
+  "wide_half_hit": "3 of 9"
+ }
+}

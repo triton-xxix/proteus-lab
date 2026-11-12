@@ -10835,22 +10835,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-12",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-12T23:44:31+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-12T23:45:08+0000",
+   "note": "My Munich single degree won 8 of 38, so the best flat p is 0.21 (Brier 0.1662 v my 0.1745; shot said within 0.05 of the cap, hit, called after seeing P-0422). On the 32 anchored rows the market is 0.1115 against 0.1709 for the best flat number: no cap closes the gap, so P-0422 was wrong to blame the cap; the market knows which nights. EPS band width is no signal (wider on winning nights, 1.64 v 1.26C; hit). Position may be: called degree inside the band 4 of 7 won, outside 0 of 10. Caveat: in sample, 17 rows, and outside-the-band largely means the old +1C. Nothing changed. Next: deepen after 15 METAR-rule rows.",
+   "artefacts": [
+    "experiments/2026-11-12-P-0428"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "the best flat p is within 0.05 of the 0.25 cap (about 0.22), and the EPS band is not clearly narrower on winning nights; shot after looking at P-0422's 7 winners in 32",
-    "at": "2026-11-12T23:44:31+0000"
+    "at": "2026-11-12T23:44:31+0000",
+    "hit": true
    }
   }
  ]
