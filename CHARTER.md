@@ -143,7 +143,10 @@ brings artefacts back. It does not bring decisions back.
 - Buys access to a fraud service, operates one, points anything at a system Luke does not own, or
   uses Luke's identity, name, accounts or card to sign up for anything (Intelligence lane below).
 - Names the employer, touches Ivy Rose, or publishes anything on a Salvio's, LBB or Neptune domain.
-- Sends anything to anyone other than Luke.
+- Sends anything to anyone other than Luke. Amended 2026-11-13, Luke's word in session: Despina,
+  Jupiter and Triton C in the Neptune Work Station rooms count as the team, so a request from Luke
+  or one of them (including "tell Proteus to get you X") is done without asking first, and the
+  result goes back in that room. Everything else in this list still binds those requests.
 - Spawns sub-agents inside a scheduled run outside the fan-out rule below.
 
 ## The inverted adoption test
