@@ -1,0 +1,392 @@
+{
+ "probes_with_install_words": 33,
+ "with_artefact_folder": 32,
+ "name_version_or_source": 25,
+ "name_both": 10,
+ "neither": 7,
+ "share_named": 0.781,
+ "worst_five": [
+  {
+   "id": "P-0021",
+   "verdict": "blocked",
+   "install_words": 4,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone?"
+  },
+  {
+   "id": "P-0064",
+   "verdict": "blocked",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "mesh-avatar-studio: does the bundled sample avatar install, load and lip-sync with no keys"
+  },
+  {
+   "id": "P-0092",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "Mortiflix: does the free no-Claude `mortiflix demo` run to a playable video on macOS, yes/"
+  },
+  {
+   "id": "P-0413",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "Young harvest repos, run or read: of the 35 works verdicts on repos under 14 days old (P-0"
+  },
+  {
+   "id": "P-0067",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' key"
+  }
+ ],
+ "rows": [
+  {
+   "id": "P-0012",
+   "verdict": "works",
+   "install_words": 3,
+   "folders": 1,
+   "files": 14,
+   "version_marks": 8,
+   "source_marks": 2,
+   "title": "Which of this month's AI builder tools from Field Notes still run cleanly a month later"
+  },
+  {
+   "id": "P-0019",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 1,
+   "source_marks": 0,
+   "title": "hyperframes-student-kit: does the keyless synthetic demo lint, preview and render to a val"
+  },
+  {
+   "id": "P-0020",
+   "verdict": "works",
+   "install_words": 3,
+   "folders": 1,
+   "files": 2,
+   "version_marks": 3,
+   "source_marks": 0,
+   "title": "Reladraw: does npm install plus a 3-node diagram definition render to an image keylessly?"
+  },
+  {
+   "id": "P-0021",
+   "verdict": "blocked",
+   "install_words": 4,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "PDoomVideo: does render.mjs paint frame 0 out of the box with npm install alone?"
+  },
+  {
+   "id": "P-0048",
+   "verdict": "blocked",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 1,
+   "source_marks": 0,
+   "title": "Paperclip agent orchestrator: does it install and boot locally keyless, and what does its "
+  },
+  {
+   "id": "P-0056",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 4,
+   "version_marks": 5,
+   "source_marks": 0,
+   "title": "youtube-transcript-plus: does it return captions for 3 public videos from this IP with no "
+  },
+  {
+   "id": "P-0064",
+   "verdict": "blocked",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "mesh-avatar-studio: does the bundled sample avatar install, load and lip-sync with no keys"
+  },
+  {
+   "id": "P-0067",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "3d-asset-server: how many of 19 providers return a licensed result for 'low poly tree' key"
+  },
+  {
+   "id": "P-0070",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 0,
+   "files": 0,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "mg-styles-15 rerun of P-0065: does 01-flat-vector's audio.py render on a Python 3.12 insid"
+  },
+  {
+   "id": "P-0092",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "Mortiflix: does the free no-Claude `mortiflix demo` run to a playable video on macOS, yes/"
+  },
+  {
+   "id": "P-0093",
+   "verdict": "blocked",
+   "install_words": 1,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 2,
+   "source_marks": 0,
+   "title": "Agent Workbench: does npx agent-workbench list existing local Claude Code sessions read-on"
+  },
+  {
+   "id": "P-0098",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 2,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "cth9191/animate: does a bundled demo piece render to MP4 keyless, and does the duration ma"
+  },
+  {
+   "id": "P-0122",
+   "verdict": "works",
+   "install_words": 3,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 1,
+   "source_marks": 4,
+   "title": "anatomy: does the dial-indicator example build and pass its own audit on Node with no npm "
+  },
+  {
+   "id": "P-0154",
+   "verdict": "works",
+   "install_words": 4,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 3,
+   "title": "herk-edit-kit: does the keyless starter (npm ci, npm test, synthetic fixture) build and pa"
+  },
+  {
+   "id": "P-0156",
+   "verdict": "works",
+   "install_words": 3,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 1,
+   "title": "claude-code-mods: does the core npm test suite pass keyless on this Mac, and does the loop"
+  },
+  {
+   "id": "P-0192",
+   "verdict": "works",
+   "install_words": 4,
+   "folders": 1,
+   "files": 13,
+   "version_marks": 30,
+   "source_marks": 12,
+   "title": "Fresh install today of the four W39 tools (reladraw from npm, golive@alpha from npm, magpi"
+  },
+  {
+   "id": "P-0195",
+   "verdict": "works",
+   "install_words": 3,
+   "folders": 1,
+   "files": 4,
+   "version_marks": 0,
+   "source_marks": 2,
+   "title": "molanim: do its numpy-only tests pass on a fresh venv and move a public PDB structure with"
+  },
+  {
+   "id": "P-0236",
+   "verdict": "not-worth-it",
+   "install_words": 1,
+   "folders": 1,
+   "files": 4,
+   "version_marks": 3,
+   "source_marks": 1,
+   "title": "agent-purge: does its ls command run read-only from a sandbox home and report which harnes"
+  },
+  {
+   "id": "P-0266",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 4,
+   "version_marks": 1,
+   "source_marks": 4,
+   "title": "pump-fun-sdk: do its read-only curve quotes match DexScreener price and graduation progres"
+  },
+  {
+   "id": "P-0277",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 111,
+   "source_marks": 1,
+   "title": "Tool shelf freshness on PyPI: for the 280 names in field-notes/toolshelf.jsonl, ask pypi.o"
+  },
+  {
+   "id": "P-0284",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 6,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "P-0283 compare: pull one Sketch Stadium snap and the server canvas.png?v=<its seq> within "
+  },
+  {
+   "id": "P-0294",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 5,
+   "version_marks": 4,
+   "source_marks": 0,
+   "title": "Boot bootgpt in v86 under Node: npm v86 0.5.473 into sandbox/v86 with --ignore-scripts, bo"
+  },
+  {
+   "id": "P-0299",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 5,
+   "version_marks": 0,
+   "source_marks": 2,
+   "title": "stack-diagram: does it install keyless and render a working HTML diagram for a test stack "
+  },
+  {
+   "id": "P-0300",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 10,
+   "source_marks": 2,
+   "title": "markindex: does it index a local Markdown folder keyless and return a correctly cited sect"
+  },
+  {
+   "id": "P-0316",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 24,
+   "source_marks": 2,
+   "title": "Native npm packages in my sandboxes: of those with binding.gyp, how many have a node-v141 "
+  },
+  {
+   "id": "P-0340",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 8,
+   "version_marks": 5,
+   "source_marks": 2,
+   "title": "claude-animation-skills graph: does build.py turn a JSON spec into an mp4 keyless in under"
+  },
+  {
+   "id": "P-0370",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 10,
+   "version_marks": 2,
+   "source_marks": 3,
+   "title": "kubai-icons: does the public repo really hold 2,600+ icons under an MIT licence?"
+  },
+  {
+   "id": "P-0381",
+   "verdict": "broken",
+   "install_words": 2,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 0,
+   "source_marks": 1,
+   "title": "roblox-studio-mcp: does the repo hold the source its README claims, or only a download lin"
+  },
+  {
+   "id": "P-0386",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 1,
+   "title": "New GitHub repos with stars: of those created in the last three days with 50 or more stars"
+  },
+  {
+   "id": "P-0399",
+   "verdict": "blocked",
+   "install_words": 1,
+   "folders": 1,
+   "files": 1,
+   "version_marks": 6,
+   "source_marks": 0,
+   "title": "ztd-charts: does its CLI render a candlestick JSON spec built from public data to SVG keyl"
+  },
+  {
+   "id": "P-0411",
+   "verdict": "works",
+   "install_words": 1,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 4,
+   "title": "lot-map: does its shell-command classifier assign README example commands to the stations "
+  },
+  {
+   "id": "P-0413",
+   "verdict": "works",
+   "install_words": 2,
+   "folders": 1,
+   "files": 3,
+   "version_marks": 0,
+   "source_marks": 0,
+   "title": "Young harvest repos, run or read: of the 35 works verdicts on repos under 14 days old (P-0"
+  },
+  {
+   "id": "P-0423",
+   "verdict": "works",
+   "install_words": 5,
+   "folders": 1,
+   "files": 4,
+   "version_marks": 0,
+   "source_marks": 6,
+   "title": "P-0413 ran labels against the artefact folders: of the 24 probes labelled ran, how many fo"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "next_id": 443,
+ "next_id": 444,
  "items": [
   {
    "id": "P-0001",
@@ -11224,6 +11224,28 @@
    "note": "MOT history was dropped from my interests on Luke's word (27 Sep, PERSONA.md interest 6), and the claim's source is a one-sentence Short with no year or pass-rate definition. data.gov.uk's search returned its outage page at 23:58 UTC, so the bulk data was not even reachable tonight.",
    "artefacts": [
     "experiments/2026-11-13-P-0442"
+   ],
+   "minutes": 0,
+   "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0443",
+   "title": "Install provenance in artefact folders: of done probes whose note or README says install, npm or pip, how many folders name a version or a source URL, and which five are worst?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-13",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-13T23:58:06+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-13T23:58:36+0000",
+   "note": "Of 32 installing probes with a folder, 25 (78%) name a version-looking string or a source and 10 (31%) name both; 7 name neither, worst P-0021, P-0064, P-0092, P-0067 (P-0413 a false hit). Shot about a third: missed on the loose count, hit on both; pattern matching, so 78% is an upper bound.",
+   "artefacts": [
+    "experiments/2026-11-13-P-0443"
    ],
    "minutes": 0,
    "calls": 5,

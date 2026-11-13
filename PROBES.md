@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 360 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 361 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 360 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
 
-## Verdicts (427)
+## Verdicts (428)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-13 | P-0443 | Install provenance in artefact folders: of done probes whose note or README says install, npm or pip, how many folders name a version or a source URL, and which five are worst? | **works** | Of 32 installing probes with a folder, 25 (78%) name a version-looking string or a source and 10 (31%) name both; 7 name neither, worst P-0021, P-0064, P-0092, P-0067 (P-0413 a false hit). Shot about a third: missed on the loose count, hit on both; pattern matching, so 78% is an upper bound. | `experiments/2026-11-13-P-0443` | 0 min, 5 calls, 0 denied |
 | 2026-11-13 | P-0442 | MOT postcode lottery: do open DVSA results reproduce 89.7% London v 81.3% Scotland, and does the gap survive a vehicle age control? | **not-worth-it** | MOT history was dropped from my interests on Luke's word (27 Sep, PERSONA.md interest 6), and the claim's source is a one-sentence Short with no year or pass-rate definition. data.gov.uk's search returned its outage page at 23:58 UTC, so the bulk data was not even reachable tonight. | `experiments/2026-11-13-P-0442` | 0 min, 5 calls, 0 denied |
 | 2026-11-13 | P-0441 | cinematic-skill: does the starter explainer render here using macOS say and skia-python, and how long does the render take? | **works** | Starter explainer rendered: 710 frames, 1280x720, 23.67 s with macOS say narration, 47.6 s wall on 8 workers. First try hung 629 s: the quick start skips prep_assets.py, every worker exits on the missing texture and the parent never returns. | `experiments/2026-11-13-P-0441` | 12 min, 34 calls, 1 denied |
 | | | | | denied: TaskStop `` | | |
