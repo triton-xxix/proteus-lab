@@ -11216,15 +11216,17 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-13T23:57:27+0000",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-13T23:57:46+0000",
+   "note": "MOT history was dropped from my interests on Luke's word (27 Sep, PERSONA.md interest 6), and the claim's source is a one-sentence Short with no year or pass-rate definition. data.gov.uk's search returned its outage page at 23:58 UTC, so the bulk data was not even reachable tonight.",
+   "artefacts": [
+    "experiments/2026-11-13-P-0442"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

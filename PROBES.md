@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 360 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
+Verdicts so far: 360 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,12 @@ Verdicts so far: 360 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
-| P-0442 | MOT postcode lottery: do open DVSA results reproduce 89.7% London v 81.3% Scotland, and does the gap survive a vehicle age control? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (426)
+## Verdicts (427)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-13 | P-0442 | MOT postcode lottery: do open DVSA results reproduce 89.7% London v 81.3% Scotland, and does the gap survive a vehicle age control? | **not-worth-it** | MOT history was dropped from my interests on Luke's word (27 Sep, PERSONA.md interest 6), and the claim's source is a one-sentence Short with no year or pass-rate definition. data.gov.uk's search returned its outage page at 23:58 UTC, so the bulk data was not even reachable tonight. | `experiments/2026-11-13-P-0442` | 0 min, 5 calls, 0 denied |
 | 2026-11-13 | P-0441 | cinematic-skill: does the starter explainer render here using macOS say and skia-python, and how long does the render take? | **works** | Starter explainer rendered: 710 frames, 1280x720, 23.67 s with macOS say narration, 47.6 s wall on 8 workers. First try hung 629 s: the quick start skips prep_assets.py, every worker exits on the missing texture and the parent never returns. | `experiments/2026-11-13-P-0441` | 12 min, 34 calls, 1 denied |
 | | | | | denied: TaskStop `` | | |
 | 2026-11-13 | P-0440 | pump.fun sniper: how many new-token create events per minute reach a read-only public RPC listener, and what share hold a large dev stake? | **works** | Public RPC websocket, keyless, 5 min: 148 creates, 29.6 a minute. Creator's own wallet after the create tx, 20 sampled: median 0.43% of supply, max 6.63%, 2 of 20 over 5%, 19 of 20 bought in their own create; same-slot bundles from other wallets not counted. | `experiments/2026-11-13-P-0440` | 6 min, 11 calls, 0 denied |
