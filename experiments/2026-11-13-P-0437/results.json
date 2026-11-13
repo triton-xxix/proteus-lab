@@ -1,0 +1,717 @@
+{
+ "summary": {
+  "fpes": {
+   "vols": [
+    21657,
+    19585,
+    19668,
+    19596,
+    18908,
+    19463
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 19813,
+   "cv": 0.044,
+   "max_over_min": 1.15
+  },
+  "picked": 36,
+  "tried": 25,
+  "ok": 25,
+  "ledger": {
+   "rows": 89,
+   "losers": 61,
+   "winners": 27
+  },
+  "loser": {
+   "n": 13,
+   "median_cv": 1.009,
+   "min_cv": 0.149,
+   "six_full_hours": 7,
+   "median_cv_six_full": 0.377,
+   "median_max_over_min_six_full": 3.36,
+   "cv_under_0.3": 1,
+   "cv_under_0.5": 4
+  },
+  "winner": {
+   "n": 12,
+   "median_cv": 0.95,
+   "min_cv": 0.368,
+   "six_full_hours": 7,
+   "median_cv_six_full": 0.732,
+   "median_max_over_min_six_full": 14.91,
+   "cv_under_0.3": 0,
+   "cv_under_0.5": 1
+  },
+  "rugged_flag_ok": [
+   {
+    "id": "G-0091",
+    "cv": 0.744
+   },
+   {
+    "id": "G-0090",
+    "cv": 0.149
+   },
+   {
+    "id": "G-0088",
+    "cv": 1.469
+   },
+   {
+    "id": "G-0083",
+    "cv": 1.657
+   },
+   {
+    "id": "G-0078",
+    "cv": 1.869
+   }
+  ],
+  "flattest_five": [
+   {
+    "id": "G-0090",
+    "kind": "loser",
+    "exit": "rug",
+    "cv": 0.149,
+    "vols": [
+     111102,
+     132057,
+     86847,
+     111882,
+     109165,
+     86463
+    ]
+   },
+   {
+    "id": "G-0080",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "cv": 0.336,
+    "vols": [
+     170184,
+     284125,
+     257607,
+     126033,
+     386139,
+     291251
+    ]
+   },
+   {
+    "id": "G-0079",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "cv": 0.348,
+    "vols": [
+     130563,
+     102027,
+     147160,
+     231612,
+     275734,
+     153395
+    ]
+   },
+   {
+    "id": "G-0050",
+    "kind": "winner",
+    "exit": "take_profit",
+    "cv": 0.368,
+    "vols": [
+     259924,
+     187482,
+     175252,
+     62094,
+     157714,
+     131022
+    ]
+   },
+   {
+    "id": "G-0084",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "cv": 0.377,
+    "vols": [
+     101425,
+     93498,
+     78660,
+     49566,
+     149805,
+     166534
+    ]
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "G-0092",
+   "kind": "loser",
+   "token": "Glow",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.06",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "entry_liq_usd": "38174.14",
+   "vols": [
+    0,
+    74128,
+    1940066,
+    684852,
+    352720,
+    124329
+   ],
+   "hours_with_trades": 5,
+   "mean_usd": 529349,
+   "cv": 1.267,
+   "max_over_min": 26.17,
+   "status": "ok"
+  },
+  {
+   "id": "G-0082",
+   "kind": "winner",
+   "token": "CFLARE",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "92.55",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "entry_liq_usd": "85279.21",
+   "vols": [
+    0,
+    0,
+    0,
+    2607751,
+    4462575,
+    2924870
+   ],
+   "hours_with_trades": 3,
+   "mean_usd": 1665866,
+   "cv": 1.057,
+   "max_over_min": 1.71,
+   "status": "ok"
+  },
+  {
+   "id": "G-0091",
+   "kind": "loser",
+   "token": "FTC",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-99.16",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "entry_liq_usd": "44527.75",
+   "vols": [
+    31483,
+    438701,
+    213004,
+    242630,
+    69215,
+    105651
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 183447,
+   "cv": 0.744,
+   "max_over_min": 13.93,
+   "status": "ok"
+  },
+  {
+   "id": "G-0074",
+   "kind": "winner",
+   "token": "Normie",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "89.94",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "entry_liq_usd": "29393.33",
+   "vols": [
+    5353,
+    79790,
+    37000,
+    35001,
+    31876,
+    36114
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 37522,
+   "cv": 0.582,
+   "max_over_min": 14.91,
+   "status": "ok"
+  },
+  {
+   "id": "G-0090",
+   "kind": "loser",
+   "token": "SR",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-99.49",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "entry_liq_usd": "53157.2",
+   "vols": [
+    111102,
+    132057,
+    86847,
+    111882,
+    109165,
+    86463
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 106253,
+   "cv": 0.149,
+   "max_over_min": 1.53,
+   "status": "ok"
+  },
+  {
+   "id": "G-0073",
+   "kind": "winner",
+   "token": "Nuts",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "90.76",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "entry_liq_usd": "37159.2",
+   "vols": [
+    0,
+    514581,
+    1172748,
+    422598,
+    263651,
+    127760
+   ],
+   "hours_with_trades": 5,
+   "mean_usd": 416890,
+   "cv": 0.909,
+   "max_over_min": 9.18,
+   "status": "ok"
+  },
+  {
+   "id": "G-0089",
+   "kind": "loser",
+   "token": "NUBI",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.69",
+   "entered_at": "2026-10-16T22:28:02Z",
+   "entry_liq_usd": "120813.73",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    1893234,
+    1179004
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 512040,
+   "cv": 1.47,
+   "max_over_min": 1.61,
+   "status": "ok"
+  },
+  {
+   "id": "G-0072",
+   "kind": "winner",
+   "token": "trenchcat",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "118.61",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "entry_liq_usd": "29883.61",
+   "vols": [
+    8712,
+    1261,
+    448,
+    339,
+    1358,
+    124266
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 22730,
+   "cv": 2.002,
+   "max_over_min": 366.72,
+   "status": "ok"
+  },
+  {
+   "id": "G-0088",
+   "kind": "loser",
+   "token": "Starman",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-99.68",
+   "entered_at": "2026-10-15T22:28:31Z",
+   "entry_liq_usd": "70857.44",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    312006,
+    195409
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 84569,
+   "cv": 1.469,
+   "max_over_min": 1.6,
+   "status": "ok"
+  },
+  {
+   "id": "G-0053",
+   "kind": "winner",
+   "token": "MINER",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "90.82",
+   "entered_at": "2026-10-06T22:29:35Z",
+   "entry_liq_usd": "37819.8",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    71894,
+    287057
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 59825,
+   "cv": 1.754,
+   "max_over_min": 3.99,
+   "status": "ok"
+  },
+  {
+   "id": "G-0087",
+   "kind": "loser",
+   "token": "STREAM",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.57",
+   "entered_at": "2026-10-15T22:28:31Z",
+   "entry_liq_usd": "452479.1",
+   "vols": [
+    658153,
+    754575,
+    562243,
+    216280,
+    155341,
+    176271
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 420477,
+   "cv": 0.582,
+   "max_over_min": 4.86,
+   "status": "ok"
+  },
+  {
+   "id": "G-0051",
+   "kind": "winner",
+   "token": "TWEETCRAFT",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "92.06",
+   "entered_at": "2026-10-06T22:29:35Z",
+   "entry_liq_usd": "63195.32",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    3644624,
+    778042
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 737111,
+   "cv": 1.806,
+   "max_over_min": 4.68,
+   "status": "ok"
+  },
+  {
+   "id": "G-0086",
+   "kind": "loser",
+   "token": "OWLDACITY",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.77",
+   "entered_at": "2026-10-15T22:28:31Z",
+   "entry_liq_usd": "82919.53",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    406949,
+    486219
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 148861,
+   "cv": 1.423,
+   "max_over_min": 1.19,
+   "status": "ok"
+  },
+  {
+   "id": "G-0050",
+   "kind": "winner",
+   "token": "swordcali",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "91.72",
+   "entered_at": "2026-10-05T22:32:17Z",
+   "entry_liq_usd": "53390.15",
+   "vols": [
+    259924,
+    187482,
+    175252,
+    62094,
+    157714,
+    131022
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 162248,
+   "cv": 0.368,
+   "max_over_min": 4.19,
+   "status": "ok"
+  },
+  {
+   "id": "G-0084",
+   "kind": "loser",
+   "token": "VEILTRUMP",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-54.37",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "entry_liq_usd": "96683.43",
+   "vols": [
+    101425,
+    93498,
+    78660,
+    49566,
+    149805,
+    166534
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 106581,
+   "cv": 0.377,
+   "max_over_min": 3.36,
+   "status": "ok"
+  },
+  {
+   "id": "G-0049",
+   "kind": "winner",
+   "token": "HIGGS",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "93.35",
+   "entered_at": "2026-10-05T22:32:17Z",
+   "entry_liq_usd": "199471.2",
+   "vols": [
+    109255,
+    55405,
+    60168,
+    46070,
+    1541634,
+    408688
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 370203,
+   "cv": 1.456,
+   "max_over_min": 33.46,
+   "status": "ok"
+  },
+  {
+   "id": "G-0083",
+   "kind": "loser",
+   "token": "smol",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-99.22",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "entry_liq_usd": "62560.81",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    520177,
+    1553170
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 345558,
+   "cv": 1.657,
+   "max_over_min": 2.99,
+   "status": "ok"
+  },
+  {
+   "id": "G-0047",
+   "kind": "winner",
+   "token": "MINTRO",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "93.01",
+   "entered_at": "2026-10-05T22:32:17Z",
+   "entry_liq_usd": "128221.2",
+   "vols": [
+    0,
+    0,
+    439733,
+    292681,
+    516148,
+    586166
+   ],
+   "hours_with_trades": 4,
+   "mean_usd": 305788,
+   "cv": 0.765,
+   "max_over_min": 2.0,
+   "status": "ok"
+  },
+  {
+   "id": "G-0081",
+   "kind": "loser",
+   "token": "SEALS",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.73",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "entry_liq_usd": "100488.14",
+   "vols": [
+    270712,
+    188222,
+    207114,
+    2140174,
+    887397,
+    421959
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 685930,
+   "cv": 1.009,
+   "max_over_min": 11.37,
+   "status": "ok"
+  },
+  {
+   "id": "G-0046",
+   "kind": "winner",
+   "token": "AGENTCAT",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "93.66",
+   "entered_at": "2026-10-04T22:30:51Z",
+   "entry_liq_usd": "411907.63",
+   "vols": [
+    156537,
+    168887,
+    684541,
+    169303,
+    239668,
+    149925
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 261477,
+   "cv": 0.732,
+   "max_over_min": 4.57,
+   "status": "ok"
+  },
+  {
+   "id": "G-0080",
+   "kind": "loser",
+   "token": "CRAWLER",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.57",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "entry_liq_usd": "417246.17",
+   "vols": [
+    170184,
+    284125,
+    257607,
+    126033,
+    386139,
+    291251
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 252556,
+   "cv": 0.336,
+   "max_over_min": 3.06,
+   "status": "ok"
+  },
+  {
+   "id": "G-0044",
+   "kind": "winner",
+   "token": "Ash",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "92.71",
+   "entered_at": "2026-10-04T22:30:51Z",
+   "entry_liq_usd": "96383.01",
+   "vols": [
+    1846840,
+    1364144,
+    349836,
+    263035,
+    155523,
+    100508
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 679981,
+   "cv": 0.991,
+   "max_over_min": 18.37,
+   "status": "ok"
+  },
+  {
+   "id": "G-0079",
+   "kind": "loser",
+   "token": "HUMPH",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.65",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "entry_liq_usd": "165168",
+   "vols": [
+    130563,
+    102027,
+    147160,
+    231612,
+    275734,
+    153395
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 173415,
+   "cv": 0.348,
+   "max_over_min": 2.7,
+   "status": "ok"
+  },
+  {
+   "id": "G-0042",
+   "kind": "winner",
+   "token": "PURRSWORD",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "92.12",
+   "entered_at": "2026-10-03T22:28:05Z",
+   "entry_liq_usd": "65117.79",
+   "vols": [
+    468712,
+    124234,
+    177941,
+    98412,
+    478149,
+    341356
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 281467,
+   "cv": 0.555,
+   "max_over_min": 4.86,
+   "status": "ok"
+  },
+  {
+   "id": "G-0078",
+   "kind": "loser",
+   "token": "NEIL",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-98.85",
+   "entered_at": "2026-10-13T22:39:25Z",
+   "entry_liq_usd": "35529.13",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    98024,
+    567945
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 110995,
+   "cv": 1.869,
+   "max_over_min": 5.79,
+   "status": "ok"
+  }
+ ]
+}
