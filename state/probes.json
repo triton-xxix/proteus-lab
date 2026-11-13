@@ -1,5 +1,5 @@
 {
- "next_id": 434,
+ "next_id": 435,
  "items": [
   {
    "id": "P-0001",
@@ -10999,6 +10999,32 @@
     "number": "SPY same-day gap fill about 65% over all gaps; under 0.25% gaps fill 85% or more, over 1% gaps 40% or less; fading every gap to the prior close makes a mean within 0.05% of zero per trade, not distinguishable from luck",
     "at": "2026-11-13T12:34:19+0000",
     "hit": false
+   }
+  },
+  {
+   "id": "P-0434",
+   "title": "Smarkets Munich favourite on the night before: from exchange/SNAPSHOTS.csv take each Munich highest-temperature market's last priced snapshot before its day, name the contract with the highest mid, join to munich_outcomes.jsonl (24 settled): how often did the favourite win, what was its mean price on winning v losing nights, and the Brier of the favourite price against always saying the hit rate",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-13",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-13T12:36:52+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "about 20 markets joined; the night-before favourite wins 45% (40 to 50); mean favourite price 0.50 on winning nights v 0.38 on losing; favourite-price Brier below the flat hit-rate Brier",
+    "at": "2026-11-13T12:36:57+0000"
    }
   }
  ]

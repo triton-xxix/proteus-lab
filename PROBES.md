@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 353 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 
-## Queue (9 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,7 @@ Verdicts so far: 353 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
+| P-0434 | Smarkets Munich favourite on the night before: from exchange/SNAPSHOTS.csv take each Munich highest-temperature market's last priced snapshot before its day, name the contract with the highest mid, join to munich_outcomes.jsonl (24 settled): how often did the favourite win, what was its mean price on winning v losing nights, and the Brier of the favourite price against always saying the hit rate | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (419)
 
