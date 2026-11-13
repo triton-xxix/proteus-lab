@@ -1,0 +1,33 @@
+{
+ "built_from": "experiments/2026-11-13-P-0433/results.json",
+ "claim_pct": 85.0,
+ "spy_all": {
+  "gaps": 7572,
+  "same": 64.3,
+  "d5": 83.7,
+  "d20": 91.7
+ },
+ "pooled_2009": {
+  "gaps": 37362,
+  "same": 47.8,
+  "mirror": 45.1,
+  "d5": 76.4,
+  "d20": 88.1,
+  "fade_win": 62.4,
+  "fade_mean": -0.009,
+  "p_v_coin": 0.075,
+  "t": -2.39
+ },
+ "pull_points": 2.7,
+ "symbols_negative": 7,
+ "symbols": 9,
+ "spy_2009": {
+  "fade_mean": 0.029,
+  "t": 2.85,
+  "p_v_coin": 0.011,
+  "hold_open_to_close": 0.025
+ },
+ "slices_reaching_claim_same_day": 0,
+ "bucket_rows": 5,
+ "symbol_bars": 10
+}

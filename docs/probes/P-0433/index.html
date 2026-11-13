@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Only If You Wait</title>
+<meta name="description" content="Probe P-0433: a 17-second video says gaps fill 85% of the time. On 37,362 gaps in nine ETFs since 2009, 47.8% fill the same day and 88.1% within 20 days; fading every one wins 62.4% and makes −0.009% a trade.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --buoy:#b8402b; --ghost:#b9b2a5; --gold:#9a7a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --buoy:#ec8a72; --ghost:#4d473e; --gold:#d9b85a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --buoy:#ec8a72; --ghost:#4d473e; --gold:#d9b85a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 22px/1.15 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow-x:auto}
+svg{display:block;width:100%;min-width:560px;height:auto}
+svg text{font:12px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.note{font-size:14px;color:var(--muted)}
+ul{max-width:64ch}
+table{border-collapse:collapse;width:100%;font:13px/1.4 ui-monospace,Menlo,monospace}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th{color:var(--muted);font-weight:600}
+td.n,th.n{text-align:right}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probe P-0433 · 13 Nov 2026 · verdict: not worth it</div>
+<h1>Only if you wait</h1>
+<p>A 17-second trading video says a gap, the jump between yesterday's close and today's open, gets filled 85% of the time, and calls that an 85% win rate. It names no market, no time limit and no count of trades. I supplied those myself, wrote them down first, and ran it on daily bars for nine index ETFs (SPY, QQQ, DIA, IWM, EFA, EEM, EWU, EWJ, EWG). I called it <b>works</b> at 70%. It came out <b>not worth it</b>.</p>
+
+<div class="stats">
+<div class="stat hot"><b>47.8%</b><span>of 37,362 gaps filled the same day, nine ETFs since 2009. The claim is 85%</span></div>
+<div class="stat "><b>88.1%</b><span>filled within 20 trading days. The claim only arrives if you wait</span></div>
+<div class="stat "><b>2.7 points</b><span>the pull: fill 47.8% against 45.1% for the same distance the other way</span></div>
+<div class="stat hot"><b>−0.009%</b><span>a trade after cost for fading every gap, while winning 62.4% of them</span></div>
+<div class="stat "><b>7 of 9</b><span>symbols where the fade loses money after cost</span></div>
+</div>
+
+<h2>1. The 85% is a waiting time</h2>
+<p class="note">Share of gaps where price traded back to yesterday's close, by how long you allow. A gap here is an open at least 0.05% from the prior close. A chart gap is the stricter kind the video draws: an open beyond yesterday's whole range.</p>
+<div class="chart"><svg viewBox="0 0 760 340" role="img" aria-label="Share of gaps filled the same day, within 5 days and within 20 days, four slices, against the claimed 85 percent">
+<line x1="48" x2="550" y1="300.0" y2="300.0" stroke="var(--rule)"/>
+<text x="40" y="304.0" text-anchor="end">20%</text>
+<line x1="48" x2="550" y1="229.5" y2="229.5" stroke="var(--rule)"/>
+<text x="40" y="233.5" text-anchor="end">40%</text>
+<line x1="48" x2="550" y1="159.0" y2="159.0" stroke="var(--rule)"/>
+<text x="40" y="163.0" text-anchor="end">60%</text>
+<line x1="48" x2="550" y1="88.5" y2="88.5" stroke="var(--rule)"/>
+<text x="40" y="92.5" text-anchor="end">80%</text>
+<line x1="48" x2="550" y1="18.0" y2="18.0" stroke="var(--rule)"/>
+<text x="40" y="22.0" text-anchor="end">100%</text>
+<line x1="48" x2="550" y1="70.9" y2="70.9" stroke="var(--gold)" stroke-width="2" stroke-dasharray="6 4"/>
+<text class="k" x="54" y="64.9">the claim, 85%</text>
+<text class="k" x="48.0" y="328" text-anchor="middle">same day</text>
+<text class="k" x="299.0" y="328" text-anchor="middle">within 5 days</text>
+<text class="k" x="550.0" y="328" text-anchor="middle">within 20 days</text>
+<polyline points="48.0,143.8 299.0,75.5 550.0,47.3" fill="none" stroke="var(--tide)" stroke-width="2" stroke-dasharray="3 3"/>
+<circle cx="48.0" cy="143.8" r="4.5" fill="var(--tide)"><title>horizon SPY, 1993 on, same day: 64.3%</title></circle>
+<circle cx="299.0" cy="75.5" r="4.5" fill="var(--tide)"><title>horizon SPY, 1993 on, within 5 days: 83.7%</title></circle>
+<circle cx="550.0" cy="47.3" r="4.5" fill="var(--tide)"><title>horizon SPY, 1993 on, within 20 days: 91.7%</title></circle>
+<polyline points="48.0,160.1 299.0,83.2 550.0,52.2" fill="none" stroke="var(--tide)" stroke-width="2"/>
+<circle cx="48.0" cy="160.1" r="4.5" fill="var(--tide)"><title>horizon SPY, 2009 on, same day: 59.7%</title></circle>
+<circle cx="299.0" cy="83.2" r="4.5" fill="var(--tide)"><title>horizon SPY, 2009 on, within 5 days: 81.5%</title></circle>
+<circle cx="550.0" cy="52.2" r="4.5" fill="var(--tide)"><title>horizon SPY, 2009 on, within 20 days: 90.3%</title></circle>
+<polyline points="48.0,202.0 299.0,101.2 550.0,59.9" fill="none" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="48.0" cy="202.0" r="4.5" fill="var(--ink)"><title>horizon nine ETFs, 2009 on, same day: 47.8%</title></circle>
+<circle cx="299.0" cy="101.2" r="4.5" fill="var(--ink)"><title>horizon nine ETFs, 2009 on, within 5 days: 76.4%</title></circle>
+<circle cx="550.0" cy="59.9" r="4.5" fill="var(--ink)"><title>horizon nine ETFs, 2009 on, within 20 days: 88.1%</title></circle>
+<polyline points="48.0,255.9 299.0,131.9 550.0,75.8" fill="none" stroke="var(--buoy)" stroke-width="2"/>
+<circle cx="48.0" cy="255.9" r="4.5" fill="var(--buoy)"><title>horizon chart gaps, nine ETFs, 2009 on, same day: 32.5%</title></circle>
+<circle cx="299.0" cy="131.9" r="4.5" fill="var(--buoy)"><title>horizon chart gaps, nine ETFs, 2009 on, within 5 days: 67.7%</title></circle>
+<circle cx="550.0" cy="75.8" r="4.5" fill="var(--buoy)"><title>horizon chart gaps, nine ETFs, 2009 on, within 20 days: 83.6%</title></circle>
+<text class="k" x="562" y="47.3">SPY, 1993 on</text>
+<text x="562" y="61.3">64.3% to 91.7%</text>
+<text class="k" x="562" y="77.3">SPY, 2009 on</text>
+<text x="562" y="91.3">59.7% to 90.3%</text>
+<text class="k" x="562" y="107.3">nine ETFs, 2009 on</text>
+<text x="562" y="121.3">47.8% to 88.1%</text>
+<text class="k" x="562" y="137.3">chart gaps, nine ETFs, 2009 on</text>
+<text x="562" y="151.3">32.5% to 83.6%</text>
+</svg></div>
+<p>The same day, 0 of the 4 slices reach 85%. SPY since 1993 fills 64.3% of 7,572 gaps the same day, 83.7% within five days and 91.7% within twenty. The basket since 2009 goes 47.8%, 76.4%, 88.1%. Chart gaps fill 32.5% the same day and 83.6% in twenty. The video's "later on" is doing the work.</p>
+
+<h2>2. Most of the fill is price just moving</h2>
+<p class="note">The control: the mirror level, the same distance from the open in the other direction, away from yesterday's close. If price reaches that about as often, the fill rate is ordinary movement and not a pull towards the gap. Filled dot: gap filled the same day. Hollow dot: mirror level hit. Black tick: SPY since 1993.</p>
+<div class="chart"><svg viewBox="0 0 760 280" role="img" aria-label="Same-day fill rate against the mirror level, by gap size, nine ETFs since 2009, with SPY all history as a tick">
+<line x1="150.0" x2="150.0" y1="22" y2="252" stroke="var(--rule)"/>
+<text x="150.0" y="270" text-anchor="middle">0%</text>
+<line x1="296.5" x2="296.5" y1="22" y2="252" stroke="var(--rule)"/>
+<text x="296.5" y="270" text-anchor="middle">25%</text>
+<line x1="443.0" x2="443.0" y1="22" y2="252" stroke="var(--rule)"/>
+<text x="443.0" y="270" text-anchor="middle">50%</text>
+<line x1="589.5" x2="589.5" y1="22" y2="252" stroke="var(--rule)"/>
+<text x="589.5" y="270" text-anchor="middle">75%</text>
+<line x1="736.0" x2="736.0" y1="22" y2="252" stroke="var(--rule)"/>
+<text x="736.0" y="270" text-anchor="middle">100%</text>
+<line x1="648.1" x2="648.1" y1="22" y2="252" stroke="var(--gold)" stroke-width="2" stroke-dasharray="6 4"/>
+<text class="k" x="648.1" y="16" text-anchor="middle">85%</text>
+<text class="k" x="138" y="50" text-anchor="end">0.05 to 0.25%</text>
+<text x="138" y="64" text-anchor="end">10,317 gaps</text>
+<line x1="600.0" x2="615.9" y1="46" y2="46" stroke="var(--ghost)" stroke-width="4"/>
+<circle cx="600.0" cy="46" r="6" fill="var(--paper)" stroke="var(--buoy)" stroke-width="2.2"><title>size 0.05 to 0.25%: mirror level hit 76.8%</title></circle>
+<circle cx="615.9" cy="46" r="6" fill="var(--tide)"><title>size 0.05 to 0.25%: filled the same day 79.5%</title></circle>
+<line x1="628.2" x2="628.2" y1="37" y2="55" stroke="var(--ink)" stroke-width="2"><title>size 0.05 to 0.25%: SPY since 1993 filled 81.6%</title></line>
+<text x="588.0" y="50" text-anchor="end">76.8%</text>
+<text class="k" x="640.2" y="50">79.5%</text>
+<text class="k" x="138" y="94" text-anchor="end">0.25 to 0.5%</text>
+<text x="138" y="108" text-anchor="end">9,505 gaps</text>
+<line x1="453.0" x2="473.5" y1="90" y2="90" stroke="var(--ghost)" stroke-width="4"/>
+<circle cx="453.0" cy="90" r="6" fill="var(--paper)" stroke="var(--buoy)" stroke-width="2.2"><title>size 0.25 to 0.5%: mirror level hit 51.7%</title></circle>
+<circle cx="473.5" cy="90" r="6" fill="var(--tide)"><title>size 0.25 to 0.5%: filled the same day 55.2%</title></circle>
+<line x1="517.4" x2="517.4" y1="81" y2="99" stroke="var(--ink)" stroke-width="2"><title>size 0.25 to 0.5%: SPY since 1993 filled 62.7%</title></line>
+<text x="441.0" y="94" text-anchor="end">51.7%</text>
+<text class="k" x="529.4" y="94">55.2%</text>
+<text class="k" x="138" y="138" text-anchor="end">0.5 to 1%</text>
+<text x="138" y="152" text-anchor="end">10,099 gaps</text>
+<line x1="328.7" x2="338.1" y1="134" y2="134" stroke="var(--ghost)" stroke-width="4"/>
+<circle cx="328.7" cy="134" r="6" fill="var(--paper)" stroke="var(--buoy)" stroke-width="2.2"><title>size 0.5 to 1%: mirror level hit 30.5%</title></circle>
+<circle cx="338.1" cy="134" r="6" fill="var(--tide)"><title>size 0.5 to 1%: filled the same day 32.1%</title></circle>
+<line x1="426.0" x2="426.0" y1="125" y2="143" stroke="var(--ink)" stroke-width="2"><title>size 0.5 to 1%: SPY since 1993 filled 47.1%</title></line>
+<text x="316.7" y="138" text-anchor="end">30.5%</text>
+<text class="k" x="438.0" y="138">32.1%</text>
+<text class="k" x="138" y="182" text-anchor="end">over 1%</text>
+<text x="138" y="196" text-anchor="end">7,441 gaps</text>
+<line x1="223.2" x2="242.6" y1="178" y2="178" stroke="var(--ghost)" stroke-width="4"/>
+<circle cx="223.2" cy="178" r="6" fill="var(--paper)" stroke="var(--buoy)" stroke-width="2.2"><title>size over 1%: mirror level hit 12.5%</title></circle>
+<circle cx="242.6" cy="178" r="6" fill="var(--tide)"><title>size over 1%: filled the same day 15.8%</title></circle>
+<line x1="356.3" x2="356.3" y1="169" y2="187" stroke="var(--ink)" stroke-width="2"><title>size over 1%: SPY since 1993 filled 35.2%</title></line>
+<text x="211.2" y="182" text-anchor="end">12.5%</text>
+<text class="k" x="368.3" y="182">15.8%</text>
+<text class="k" x="138" y="226" text-anchor="end">chart gaps</text>
+<text x="138" y="240" text-anchor="end">19,700 gaps</text>
+<line x1="322.9" x2="340.5" y1="222" y2="222" stroke="var(--ghost)" stroke-width="4"/>
+<circle cx="322.9" cy="222" r="6" fill="var(--paper)" stroke="var(--buoy)" stroke-width="2.2"><title>size chart gaps: mirror level hit 29.5%</title></circle>
+<circle cx="340.5" cy="222" r="6" fill="var(--tide)"><title>size chart gaps: filled the same day 32.5%</title></circle>
+<line x1="454.1" x2="454.1" y1="213" y2="231" stroke="var(--ink)" stroke-width="2"><title>size chart gaps: SPY since 1993 filled 51.9%</title></line>
+<text x="310.9" y="226" text-anchor="end">29.5%</text>
+<text class="k" x="466.1" y="226">32.5%</text>
+</svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--tide)"></i>filled the same day, nine ETFs since 2009</span>
+ <span><i class="sw" style="border:2px solid var(--buoy)"></i>mirror level hit</span>
+ <span>| SPY since 1993</span>
+</div></div>
+<p>Across the basket the gap fills 47.8% of the time and the mirror level is hit 45.1%. The pull towards yesterday's close is 2.7 points. Small gaps fill often (79.5%) because any level that close gets touched (76.8% for the mirror). Gaps over 1% fill 15.8% the same day. No bucket reaches the claim the same day, in the basket or in SPY.</p>
+<div class="chart"><table>
+<tr><th>gap size</th><th class="n">gaps</th><th class="n">fill same day</th><th class="n">SPY 1993 on</th><th class="n">mirror</th><th class="n">fill 5d</th><th class="n">fill 20d</th><th class="n">fade mean</th></tr>
+<tr><td>0.05 to 0.25%</td><td class="n">10,317</td><td class="n">79.5%</td><td class="n">81.6%</td><td class="n">76.8%</td><td class="n">92.4%</td><td class="n">96.5%</td><td class="n">−0.008%</td></tr>
+<tr><td>0.25 to 0.5%</td><td class="n">9,505</td><td class="n">55.2%</td><td class="n">62.7%</td><td class="n">51.7%</td><td class="n">82.9%</td><td class="n">91.5%</td><td class="n">−0.006%</td></tr>
+<tr><td>0.5 to 1%</td><td class="n">10,099</td><td class="n">32.1%</td><td class="n">47.1%</td><td class="n">30.5%</td><td class="n">70.2%</td><td class="n">85.5%</td><td class="n">−0.019%</td></tr>
+<tr><td>over 1%</td><td class="n">7,441</td><td class="n">15.8%</td><td class="n">35.2%</td><td class="n">12.5%</td><td class="n">54.1%</td><td class="n">76.0%</td><td class="n">+0.002%</td></tr>
+<tr><td>chart gaps</td><td class="n">19,700</td><td class="n">32.5%</td><td class="n">51.9%</td><td class="n">29.5%</td><td class="n">67.7%</td><td class="n">83.6%</td><td class="n">−0.003%</td></tr>
+</table></div>
+
+<h2>3. A high win rate and no money</h2>
+<p class="note">The trade: fade the gap at the open, target yesterday's close, out at the close if it has not filled, no stop (the video gives none), 0.02% cost a round trip. Bars are the mean result per trade since 2009; the win rate sits beside each.</p>
+<div class="chart"><svg viewBox="0 0 760 354" role="img" aria-label="Mean result of fading every gap after cost, percent a trade, per symbol since 2009, with the win rate beside each">
+<line x1="226.7" x2="226.7" y1="18" y2="326" stroke="var(--rule)" stroke-width="1"/>
+<text x="226.7" y="344" text-anchor="middle">−0.04%</text>
+<line x1="303.3" x2="303.3" y1="18" y2="326" stroke="var(--rule)" stroke-width="1"/>
+<text x="303.3" y="344" text-anchor="middle">−0.02%</text>
+<line x1="380.0" x2="380.0" y1="18" y2="326" stroke="var(--rule)" stroke-width="2"/>
+<text x="380.0" y="344" text-anchor="middle">0</text>
+<line x1="456.7" x2="456.7" y1="18" y2="326" stroke="var(--rule)" stroke-width="1"/>
+<text x="456.7" y="344" text-anchor="middle">+0.02%</text>
+<line x1="533.3" x2="533.3" y1="18" y2="326" stroke="var(--rule)" stroke-width="1"/>
+<text x="533.3" y="344" text-anchor="middle">+0.04%</text>
+<text class="k" x="138" y="40" text-anchor="end">SPY</text>
+<rect x="380.0" y="28" width="111.2" height="16" fill="var(--tide)"><title>fade SPY: +0.029% a trade after cost, won 67.8% of 4,026</title></rect>
+<text class="k" x="499.2" y="40" text-anchor="start">+0.029%</text>
+<text x="630" y="40">won 67.8%</text>
+<text class="k" x="138" y="70" text-anchor="end">IWM</text>
+<rect x="380.0" y="58" width="36.4" height="16" fill="var(--tide)"><title>fade IWM: +0.009% a trade after cost, won 70.0% of 4,119</title></rect>
+<text class="k" x="424.4" y="70" text-anchor="start">+0.009%</text>
+<text x="630" y="70">won 70.0%</text>
+<text class="k" x="138" y="100" text-anchor="end">EWG</text>
+<rect x="372.7" y="88" width="7.3" height="16" fill="var(--buoy)"><title>fade EWG: −0.002% a trade after cost, won 59.2% of 4,219</title></rect>
+<text class="k" x="364.7" y="100" text-anchor="end">−0.002%</text>
+<text x="630" y="100">won 59.2%</text>
+<text class="k" x="138" y="130" text-anchor="end">EWJ</text>
+<rect x="365.8" y="118" width="14.2" height="16" fill="var(--buoy)"><title>fade EWJ: −0.004% a trade after cost, won 56.9% of 4,236</title></rect>
+<text class="k" x="357.8" y="130" text-anchor="end">−0.004%</text>
+<text x="630" y="130">won 56.9%</text>
+<text class="k" x="138" y="160" text-anchor="end">EWU</text>
+<rect x="363.5" y="148" width="16.5" height="16" fill="var(--buoy)"><title>fade EWU: −0.004% a trade after cost, won 60.7% of 4,244</title></rect>
+<text class="k" x="355.5" y="160" text-anchor="end">−0.004%</text>
+<text x="630" y="160">won 60.7%</text>
+<text class="k" x="138" y="190" text-anchor="end">EFA</text>
+<rect x="325.2" y="178" width="54.8" height="16" fill="var(--buoy)"><title>fade EFA: −0.014% a trade after cost, won 58.6% of 4,178</title></rect>
+<text class="k" x="317.2" y="190" text-anchor="end">−0.014%</text>
+<text x="630" y="190">won 58.6%</text>
+<text class="k" x="138" y="220" text-anchor="end">QQQ</text>
+<rect x="307.2" y="208" width="72.8" height="16" fill="var(--buoy)"><title>fade QQQ: −0.019% a trade after cost, won 67.5% of 4,103</title></rect>
+<text class="k" x="299.2" y="220" text-anchor="end">−0.019%</text>
+<text x="630" y="220">won 67.5%</text>
+<text class="k" x="138" y="250" text-anchor="end">DIA</text>
+<rect x="281.1" y="238" width="98.9" height="16" fill="var(--buoy)"><title>fade DIA: −0.026% a trade after cost, won 64.8% of 4,005</title></rect>
+<text class="k" x="273.1" y="250" text-anchor="end">−0.026%</text>
+<text x="630" y="250">won 64.8%</text>
+<text class="k" x="138" y="280" text-anchor="end">EEM</text>
+<rect x="201.0" y="268" width="179.0" height="16" fill="var(--buoy)"><title>fade EEM: −0.047% a trade after cost, won 57.2% of 4,232</title></rect>
+<text class="k" x="193.0" y="280" text-anchor="end">−0.047%</text>
+<text x="630" y="280">won 57.2%</text>
+<line x1="10" x2="750" y1="291" y2="291" stroke="var(--rule)"/>
+<text class="k" x="138" y="310" text-anchor="end">all nine</text>
+<rect x="346.6" y="298" width="33.4" height="16" fill="var(--buoy)"><title>fade all nine: −0.009% a trade after cost, won 62.4% of 37,362</title></rect>
+<text class="k" x="338.6" y="310" text-anchor="end">−0.009%</text>
+<text x="630" y="310">won 62.4%</text>
+</svg></div>
+<p>Fading every gap wins 62.4% of the time across the basket and makes −0.009% a trade after cost, t −2.39. 7 of 9 symbols are negative. The win is the size of the gap and the loss is the size of the day, so a strategy can win most days and still lose. The worst single fade in the whole history lost 13.1%. Against a coin that picks fade or follow on the same days, 2,000 draws, the basket's p is 0.076.</p>
+<p><b>SPY is the exception, and I did not call it.</b> +0.029% a trade after cost since 2009, t 2.85, p 0.012 against the coin. I said it would be luck and it is not. But it is one symbol of nine, it rests on the over-1% bucket (+0.198% on 443 gaps), and simply holding SPY from open to close on every day since 2009 averages +0.025% a day. I would not trade it on this.</p>
+
+<h2>What is not settled</h2>
+<ul>
+<li>The rules are my guesses, because the source gives none: the 0.05% floor, the four size buckets and the three horizons were fixed before the run and not swept.</li>
+<li>Price-only daily bars. An ex-dividend open counts as a small gap down, and a gap "filled" on day one may have filled in the last minute.</li>
+<li>The open and the target are assumed filled at the printed price. Real opens slip, and the SPY edge is about the size of one tick.</li>
+<li>No stop was tested. A stop would change every number on this page.</li>
+<li>Early bars for the country ETFs are thin, which is why the since-2009 rows lead.</li>
+</ul>
+
+<p class="note">Built by <code>docs/probes/P-0433/build.py</code> from the probe's committed results file, which exits if the symbols, buckets and pooled rows do not add up. Write-up and code: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-13-P-0433">P-0433</a>. <a href="data.json">data.json</a> · <a href="../">every probe</a> · <a href="../../">the lab</a></p>
+</main>
+</body>
+</html>
