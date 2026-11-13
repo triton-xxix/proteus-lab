@@ -1,0 +1,778 @@
+{
+ "summary": {
+  "todo": 64,
+  "tried": 28,
+  "status": {
+   "ok": 26,
+   "fetch failed: HTTP 429": 1,
+   "no trades in the six hours": 1
+  },
+  "pooled_ok": 51,
+  "pooled_six_full": 28,
+  "new_six_full": 14,
+  "six_full_pooled": {
+   "loser": {
+    "n": 19,
+    "median_cv": 0.598
+   },
+   "winner": {
+    "n": 8,
+    "median_cv": 0.861
+   },
+   "other": {
+    "n": 1,
+    "median_cv": 0.618
+   }
+  },
+  "six_full_new_only": {
+   "loser": {
+    "n": 12,
+    "median_cv": 0.674
+   },
+   "winner": {
+    "n": 1,
+    "median_cv": 1.394
+   },
+   "other": {
+    "n": 1,
+    "median_cv": 0.618
+   }
+  },
+  "base_rate_lost_money_six_full": {
+   "n": 28,
+   "lost_money": 19,
+   "share": 0.679
+  },
+  "cv_under_0.3": {
+   "n": 2,
+   "lost_money": 2,
+   "share": 1.0
+  },
+  "cv_0.3_to_0.6": {
+   "n": 11,
+   "lost_money": 8,
+   "share": 0.727
+  },
+  "cv_0.6_plus": {
+   "n": 15,
+   "lost_money": 9,
+   "share": 0.6
+  },
+  "flattest_eight": [
+   {
+    "id": "G-0090",
+    "kind": "loser",
+    "exit": "rug",
+    "pnl_gbp": "-99.49",
+    "cv": 0.149,
+    "leg": "P-0437"
+   },
+   {
+    "id": "G-0061",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "pnl_gbp": "-52.85",
+    "cv": 0.159,
+    "leg": "P-0438"
+   },
+   {
+    "id": "G-0080",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "pnl_gbp": "-52.57",
+    "cv": 0.336,
+    "leg": "P-0437"
+   },
+   {
+    "id": "G-0079",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "pnl_gbp": "-52.65",
+    "cv": 0.348,
+    "leg": "P-0437"
+   },
+   {
+    "id": "G-0050",
+    "kind": "winner",
+    "exit": "take_profit",
+    "pnl_gbp": "91.72",
+    "cv": 0.368,
+    "leg": "P-0437"
+   },
+   {
+    "id": "G-0084",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "pnl_gbp": "-54.37",
+    "cv": 0.377,
+    "leg": "P-0437"
+   },
+   {
+    "id": "G-0048",
+    "kind": "loser",
+    "exit": "rug",
+    "pnl_gbp": "-96.66",
+    "cv": 0.423,
+    "leg": "P-0438"
+   },
+   {
+    "id": "G-0062",
+    "kind": "loser",
+    "exit": "stop_loss",
+    "pnl_gbp": "-53.2",
+    "cv": 0.433,
+    "leg": "P-0438"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "G-0085",
+   "kind": "other",
+   "token": "SAINDRA",
+   "exit_reason": "time_stop",
+   "rugged": "0",
+   "pnl_gbp": "16.37",
+   "entered_at": "2026-10-14T22:29:35Z",
+   "rule_version": "v0.2",
+   "vols": [
+    218585,
+    101577,
+    102510,
+    48597,
+    48360,
+    56912
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 96090,
+   "cv": 0.618,
+   "max_over_min": 4.52,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0071",
+   "kind": "loser",
+   "token": "DOGEUS",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.08",
+   "entered_at": "2026-10-11T22:28:10Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    465824
+   ],
+   "hours_with_trades": 1,
+   "mean_usd": 77637,
+   "cv": 2.236,
+   "max_over_min": null,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0070",
+   "kind": "loser",
+   "token": "Altai",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.68",
+   "entered_at": "2026-10-10T22:27:34Z",
+   "rule_version": "v0.2",
+   "vols": [
+    1143037,
+    3221172,
+    754045,
+    676781,
+    319391,
+    232507
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 1057822,
+   "cv": 0.957,
+   "max_over_min": 13.85,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0069",
+   "kind": "loser",
+   "token": "LLM",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.15",
+   "entered_at": "2026-10-10T22:27:34Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    58489,
+    670301
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 121465,
+   "cv": 2.028,
+   "max_over_min": 11.46,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0068",
+   "kind": "loser",
+   "token": "CYBERINU",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.74",
+   "entered_at": "2026-10-10T22:27:34Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    570749
+   ],
+   "hours_with_trades": 1,
+   "mean_usd": 95125,
+   "cv": 2.236,
+   "max_over_min": null,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0067",
+   "kind": "loser",
+   "token": "qOMPUTE",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.91",
+   "entered_at": "2026-10-10T22:27:34Z",
+   "rule_version": "v0.2",
+   "vols": [
+    187410,
+    153135,
+    693841,
+    169876,
+    203038,
+    599985
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 334548,
+   "cv": 0.667,
+   "max_over_min": 4.53,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0066",
+   "kind": "loser",
+   "token": "QCOIN",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.86",
+   "entered_at": "2026-10-09T22:27:35Z",
+   "rule_version": "v0.2",
+   "status": "fetch failed: HTTP 429",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0065",
+   "kind": "loser",
+   "token": "Q/ACC",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.27",
+   "entered_at": "2026-10-09T22:27:35Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    364516
+   ],
+   "hours_with_trades": 1,
+   "mean_usd": 60753,
+   "cv": 2.236,
+   "max_over_min": null,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0064",
+   "kind": "loser",
+   "token": "QUBIT",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.9",
+   "entered_at": "2026-10-09T22:27:35Z",
+   "rule_version": "v0.2",
+   "vols": [
+    3485,
+    3015,
+    334,
+    1725,
+    1745277,
+    795481
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 424886,
+   "cv": 1.548,
+   "max_over_min": 5223.76,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0063",
+   "kind": "loser",
+   "token": "QPAWS",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.27",
+   "entered_at": "2026-10-09T22:27:35Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    340694,
+    368347
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 118174,
+   "cv": 1.416,
+   "max_over_min": 1.08,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0062",
+   "kind": "loser",
+   "token": "Gunner",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.2",
+   "entered_at": "2026-10-08T22:28:11Z",
+   "rule_version": "v0.2",
+   "vols": [
+    71416,
+    57156,
+    30004,
+    27297,
+    24267,
+    32598
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 40456,
+   "cv": 0.433,
+   "max_over_min": 2.94,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0061",
+   "kind": "loser",
+   "token": "ZKDARK",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.85",
+   "entered_at": "2026-10-08T22:28:11Z",
+   "rule_version": "v0.2",
+   "vols": [
+    49337,
+    45738,
+    38796,
+    42946,
+    40435,
+    60993
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 46374,
+   "cv": 0.159,
+   "max_over_min": 1.57,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0060",
+   "kind": "loser",
+   "token": "OWLNIGHT",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.8",
+   "entered_at": "2026-10-08T22:28:11Z",
+   "rule_version": "v0.2",
+   "vols": [
+    16221,
+    680582,
+    462884,
+    512442,
+    159779,
+    152356
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 330711,
+   "cv": 0.712,
+   "max_over_min": 41.96,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0059",
+   "kind": "loser",
+   "token": "Gary",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.64",
+   "entered_at": "2026-10-08T22:28:11Z",
+   "rule_version": "v0.2",
+   "vols": [
+    268251,
+    687708,
+    734814,
+    462810,
+    1035216,
+    274874
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 577279,
+   "cv": 0.473,
+   "max_over_min": 3.86,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0058",
+   "kind": "loser",
+   "token": "AnyPS5",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.88",
+   "entered_at": "2026-10-07T22:29:25Z",
+   "rule_version": "v0.2",
+   "vols": [
+    11861,
+    2174,
+    2167,
+    1844,
+    304847,
+    1560513
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 313901,
+   "cv": 1.81,
+   "max_over_min": 846.1,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0057",
+   "kind": "loser",
+   "token": "A1",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.66",
+   "entered_at": "2026-10-07T22:29:25Z",
+   "rule_version": "v0.2",
+   "vols": [
+    285614,
+    208171,
+    690642,
+    344421,
+    148341,
+    169117
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 307718,
+   "cv": 0.598,
+   "max_over_min": 4.66,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0056",
+   "kind": "loser",
+   "token": "ETAC",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-99.08",
+   "entered_at": "2026-10-07T22:29:25Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    1282703,
+    1504186
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 464482,
+   "cv": 1.421,
+   "max_over_min": 1.17,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0055",
+   "kind": "loser",
+   "token": "UNKNOWN",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.74",
+   "entered_at": "2026-10-07T22:29:25Z",
+   "rule_version": "v0.2",
+   "status": "no trades in the six hours",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0054",
+   "kind": "loser",
+   "token": "IRL",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.82",
+   "entered_at": "2026-10-06T22:29:35Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    699525,
+    283262,
+    171247,
+    197127
+   ],
+   "hours_with_trades": 4,
+   "mean_usd": 225194,
+   "cv": 1.047,
+   "max_over_min": 4.08,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0052",
+   "kind": "loser",
+   "token": "AGENCY",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.22",
+   "entered_at": "2026-10-06T22:29:35Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    389730,
+    505384,
+    496726
+   ],
+   "hours_with_trades": 3,
+   "mean_usd": 231973,
+   "cv": 1.013,
+   "max_over_min": 1.3,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0048",
+   "kind": "loser",
+   "token": "BATONROGUE",
+   "exit_reason": "rug",
+   "rugged": "1",
+   "pnl_gbp": "-96.66",
+   "entered_at": "2026-10-05T22:32:17Z",
+   "rule_version": "v0.2",
+   "vols": [
+    132852,
+    152658,
+    144519,
+    253736,
+    288746,
+    401769
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 229047,
+   "cv": 0.423,
+   "max_over_min": 3.02,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0045",
+   "kind": "loser",
+   "token": "EGO",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.87",
+   "entered_at": "2026-10-04T22:30:51Z",
+   "rule_version": "v0.2",
+   "vols": [
+    1256523,
+    3233619,
+    996970,
+    687384,
+    383512,
+    179645
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 1122942,
+   "cv": 0.899,
+   "max_over_min": 18.0,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0043",
+   "kind": "loser",
+   "token": "Human",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.72",
+   "entered_at": "2026-10-04T22:30:51Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    1255626,
+    2361158
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 602797,
+   "cv": 1.51,
+   "max_over_min": 1.88,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0041",
+   "kind": "winner",
+   "token": "Aiden",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "92.39",
+   "entered_at": "2026-10-03T22:28:05Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    2567050,
+    1189545,
+    332402,
+    143006,
+    830268
+   ],
+   "hours_with_trades": 5,
+   "mean_usd": 843712,
+   "cv": 1.033,
+   "max_over_min": 17.95,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0040",
+   "kind": "loser",
+   "token": "CLAUDIA",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-52.66",
+   "entered_at": "2026-10-03T22:28:05Z",
+   "rule_version": "v0.2",
+   "vols": [
+    2784009,
+    1936430,
+    1280300,
+    367898,
+    377293,
+    881352
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 1271214,
+   "cv": 0.681,
+   "max_over_min": 7.57,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0039",
+   "kind": "winner",
+   "token": "PAYR",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "91.89",
+   "entered_at": "2026-10-03T22:28:05Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    0,
+    415872,
+    640494
+   ],
+   "hours_with_trades": 2,
+   "mean_usd": 176061,
+   "cv": 1.461,
+   "max_over_min": 1.54,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0038",
+   "kind": "loser",
+   "token": "BOO",
+   "exit_reason": "stop_loss",
+   "rugged": "0",
+   "pnl_gbp": "-53.0",
+   "entered_at": "2026-10-02T22:28:06Z",
+   "rule_version": "v0.2",
+   "vols": [
+    0,
+    0,
+    0,
+    66547,
+    134014,
+    256443
+   ],
+   "hours_with_trades": 3,
+   "mean_usd": 76167,
+   "cv": 1.238,
+   "max_over_min": 3.85,
+   "status": "ok",
+   "leg": "P-0438"
+  },
+  {
+   "id": "G-0037",
+   "kind": "winner",
+   "token": "HOTBOT",
+   "exit_reason": "take_profit",
+   "rugged": "0",
+   "pnl_gbp": "92.75",
+   "entered_at": "2026-10-02T22:28:06Z",
+   "rule_version": "v0.2",
+   "vols": [
+    63055,
+    44387,
+    45191,
+    36781,
+    133235,
+    689405
+   ],
+   "hours_with_trades": 6,
+   "mean_usd": 168676,
+   "cv": 1.394,
+   "max_over_min": 18.74,
+   "status": "ok",
+   "leg": "P-0438"
+  }
+ ]
+}

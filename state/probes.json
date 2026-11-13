@@ -11116,22 +11116,25 @@
    "after": "",
    "est_minutes": 12,
    "added": "2026-11-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-13T12:46:36+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-13T12:52:52+0000",
+   "note": "Pooled 28 trades with volume in all six pre-entry hours: losers median CV 0.598 (n 19) v take-profits 0.861 (n 8), 0.26 apart (shot within 0.2, miss: the hint faded less than called). Loss share 2 of 2 under CV 0.3, 8 of 11 at 0.3 to 0.6, 9 of 15 above, against 68% for all 28; 7 of the 8 flattest lost, chance about 0.22 at that base rate. 28 six-full, not the 30 called; 2 under 0.3 (shot under 6, hit). Reached 28 of 64 rows before the cap, 1 refused 429; 36 older rows unreached. A lean with a mechanism and no weight; it would not have changed a Grinder entry. Shot after seeing the first 14. Nothing in grinder written. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-13-P-0438"
+   ],
+   "minutes": 6,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "the hint fades: pooled medians for six-full-hour trades within 0.2 of each other (losers about 0.50, winners about 0.65); at least 30 six-full trades pooled; fewer than 6 trades under CV 0.3. Shot after seeing the first 14",
-    "at": "2026-11-13T12:46:41+0000"
+    "at": "2026-11-13T12:46:41+0000",
+    "hit": true
    }
   }
  ]
