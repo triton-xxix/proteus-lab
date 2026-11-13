@@ -1,5 +1,5 @@
 {
- "next_id": 435,
+ "next_id": 437,
  "items": [
   {
    "id": "P-0001",
@@ -11028,6 +11028,52 @@
     "number": "about 20 markets joined; the night-before favourite wins 45% (40 to 50); mean favourite price 0.50 on winning nights v 0.38 on losing; favourite-price Brier below the flat hit-rate Brier",
     "at": "2026-11-13T12:36:57+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0435",
+   "title": "Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-12-08",
+   "est_minutes": 15,
+   "added": "2026-11-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0436",
+   "title": "FPES (voided G-0075) from its other pools: GeckoTerminal lists two pools for the mint today (pumpswap 6ZWXXub4, reserve 1,900 dollars, and the pump-fun curve DF5dbQwJ, reserve 0); fetch minute candles for both across 12 to 13 Oct, say which pool the 11 Oct snapshot named and where the 1.8m dollars of liquidity went, and walk the trade under v0.2 from the stale 0.4202 and from the live price if any pool serves the hours",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-13",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-13T12:38:41+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "daily candles show FPES fell more than 99% from 0.42 before the 12 Oct 22:54Z entry; 0 minute candles in the 24 h after entry from either pool, so the trade still cannot be walked. Shot after seeing the pool list (price 0.0000017, reserve 1,900 dollars) but no candles",
+    "at": "2026-11-13T12:38:48+0000"
    }
   }
  ]

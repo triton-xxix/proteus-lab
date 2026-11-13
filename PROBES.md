@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 354 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 
-## Queue (9 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,8 @@ Verdicts so far: 354 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
+| P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0436 | FPES (voided G-0075) from its other pools: GeckoTerminal lists two pools for the mint today (pumpswap 6ZWXXub4, reserve 1,900 dollars, and the pump-fun curve DF5dbQwJ, reserve 0); fetch minute candles for both across 12 to 13 Oct, say which pool the 11 Oct snapshot named and where the 1.8m dollars of liquidity went, and walk the trade under v0.2 from the stale 0.4202 and from the live price if any pool serves the hours | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (420)
 
