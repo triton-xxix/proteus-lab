@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 355 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Verdicts so far: 355 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0437 | Metronome before the rug: for the Grinder ledger's rug and stop-loss exits and an equal number of take-profit exits, fetch the six hourly GeckoTerminal candles before each entry and compute the spread of hourly volume (max over min, and coefficient of variation); FPES showed 19k to 22k dollars every hour for six hours before a 99.999% fall. Does a flat pre-entry tape separate losers from winners? | desk | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (421)
 

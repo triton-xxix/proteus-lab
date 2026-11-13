@@ -1,5 +1,5 @@
 {
- "next_id": 437,
+ "next_id": 438,
  "items": [
   {
    "id": "P-0001",
@@ -11077,6 +11077,32 @@
     "number": "daily candles show FPES fell more than 99% from 0.42 before the 12 Oct 22:54Z entry; 0 minute candles in the 24 h after entry from either pool, so the trade still cannot be walked. Shot after seeing the pool list (price 0.0000017, reserve 1,900 dollars) but no candles",
     "at": "2026-11-13T12:38:48+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0437",
+   "title": "Metronome before the rug: for the Grinder ledger's rug and stop-loss exits and an equal number of take-profit exits, fetch the six hourly GeckoTerminal candles before each entry and compute the spread of hourly volume (max over min, and coefficient of variation); FPES showed 19k to 22k dollars every hour for six hours before a 99.999% fall. Does a flat pre-entry tape separate losers from winners?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-13",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-13T12:40:14+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "no separation: median coefficient of variation of the six pre-entry hourly volumes for losers within 0.2 of the winners median; FPES (about 0.05) flatter than every ledger trade measured; at least 30 trades fetched",
+    "at": "2026-11-13T12:40:20+0000"
    }
   }
  ]
