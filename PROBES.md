@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 352 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
+Verdicts so far: 353 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (9 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,12 +22,12 @@ Verdicts so far: 352 works, 8 broken, 40 blocked, 17 not worth it. Killed: 5.
 | P-0357 | Rivet actors: does a local actor keep its state across a process restart with no account or key? | harvest | Node and an npm install from the public registry; no key. |  | 0 | 25 min |
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0432 | Short gap-and-go videos: pull captions for the six on-topic ids P-0409 dropped under its five-minute floor (6PLI1Wvn3fE, VsF0W2FuQOM, WCuEgMPvKwc, sEpI4T4UvhU, 9Y4x-QKkZqU, d9mDpbN4zFI); how many state a win rate, and does any give a trade count beside it? Against 0 of 3 long ones | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (417)
+## Verdicts (418)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-13 | P-0432 | Short gap-and-go videos: pull captions for the six on-topic ids P-0409 dropped under its five-minute floor (6PLI1Wvn3fE, VsF0W2FuQOM, WCuEgMPvKwc, sEpI4T4UvhU, 9Y4x-QKkZqU, d9mDpbN4zFI); how many state a win rate, and does any give a trade count beside it? Against 0 of 3 long ones | **works** | 0 of 6 short gap-and-go videos state a win rate in their captions and 0 give a trade count (shot: 3 of 6 and 0; 6 of 6 fetched as called, no block). 3,519 words, one spoken percentage, a candle size. With P-0409 that is 0 of 9, so the guess that the claims live in the short ones was wrong; the win-rate titles P-0409 saw (85% Winrate, 70%+) are on gap-fill videos, the fade side. Caveat: captions only, six videos, on-screen numbers missed. Next: deepen (queue the gap-fill claim against our own daily data). | `experiments/2026-11-13-P-0432` | 1 min, 10 calls, 0 denied |
 | 2026-11-12 | P-0431 | Systems book RSI(5) simple after eight closes: which trades are they, and how likely are 3 or fewer winners in 8 if the backtest's 75% win rate were true? | **works** | The RSI(5) simple book has 8 closes, 3 winners, mean -0.195 percent open to open, matching the desk. Tonight closed QQQ -2.17 and EWJ -1.80, both bought 2 Nov and held eight sessions, the longest in the book: the rule has no stop. At a true 75 percent win rate, 3 or fewer winners in 8 has a 2.7 percent chance (shot under 5, hit, called after the desk line); 10.6 at 65 percent. But QQQ and EWJ moved together twice, so there are about five episodes, not eight, and 2.7 overstates it. Kill check still RUNNING, 22 trades short of its mark. Next: close. | `experiments/2026-11-12-P-0431` | 0 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0430 | Registered edge rules against random-entry lists: is each rule's best-ten share of gross wins any higher than same-day, same-hold random entries, and do profitable random lists die as fast with their best trades removed? | **works** | Against 500 random-entry lists per rule (same symbol, day and hold), no registered edge rule is more concentrated than luck: the best-ten share of gross wins sits inside the random 10th to 90th band for 5 of 9 (shot said at least 6, missed by one) and below it for the other 4. Profitable random lists die faster, median 1 to 2.5 percent of trades removed against 1.7 to 8.3 for the rules. So P-0421 earlier tonight was too harsh: dying with the best ten gone is what any list of 120 to 180 trades does. Caveat: the control shares the rule days, E-015 has 7 profitable control lists, in sample. Next: close. | `experiments/2026-11-12-P-0430` | 1 min, 5 calls, 0 denied |
 | 2026-11-12 | P-0429 | NOAA SWPC solar-cycle files against tonight's sunspot item: do they confirm the observed peak, do they still hold the 2019 panel forecast I quoted from memory (115, July 2025), and what does NOAA forecast now? | **works** | NOAA SWPC observed file matches my SILSO pull on all three numbers (smoothed peak 160.9 in Oct 2024, 88.6 for Apr 2026, 45.7 for Oct 2026). NOAA 2019 page confirms 115 and July 2025 plus or minus 8 months (shot hit, called after seeing the JSON), so the peak was 9 months early and 40 percent high. The 95 to 130 range I had quoted from memory is not on that page and is cut from the Field Notes item. The predicted file is now a rolling forecast, 86.7 in May 2026 down to 8.0 by Dec 2030, with no overlap to score. Caveat: one page, two files. Next: close. | `experiments/2026-11-12-P-0429` | 0 min, 8 calls, 0 denied |

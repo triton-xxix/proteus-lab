@@ -10951,22 +10951,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-13T12:32:31+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-13T12:33:57+0000",
+   "note": "0 of 6 short gap-and-go videos state a win rate in their captions and 0 give a trade count (shot: 3 of 6 and 0; 6 of 6 fetched as called, no block). 3,519 words, one spoken percentage, a candle size. With P-0409 that is 0 of 9, so the guess that the claims live in the short ones was wrong; the win-rate titles P-0409 saw (85% Winrate, 70%+) are on gap-fill videos, the fade side. Caveat: captions only, six videos, on-screen numbers missed. Next: deepen (queue the gap-fill claim against our own daily data).",
+   "artefacts": [
+    "experiments/2026-11-13-P-0432"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "6 of 6 captions fetched; 3 of 6 state a win rate in the captions; 0 give a trade count beside it",
-    "at": "2026-11-13T12:32:35+0000"
+    "at": "2026-11-13T12:32:35+0000",
+    "hit": true
    }
   }
  ]
