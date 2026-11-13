@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-11-12 09:06.
+Rebuilt 2026-11-13 09:07.
 
 ## By month
 
@@ -20,8 +20,8 @@ Rebuilt 2026-11-12 09:06.
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
 | 2026-10 | scheduled runs | 4.16M | 950.29M | 23.51M | 49.4k |
 | 2026-10 | Luke's sessions | 3.17M | 670.37M | 19.03M | 22.6k |
-| 2026-11 | scheduled runs | 2.07M | 448.66M | 10.19M | 8.6k |
-| 2026-11 | Luke's sessions | 0 | 0 | 0 | 0 |
+| 2026-11 | scheduled runs | 2.26M | 492.57M | 11.15M | 9.1k |
+| 2026-11 | Luke's sessions | 45.6k | 6.02M | 217.2k | 838 |
 
 ## Scheduled output by ISO week
 
@@ -37,7 +37,7 @@ Field Notes with the step that caused it.
 | 2026-W43 | 42 | 1.20M | 548.9k | YES |
 | 2026-W44 | 42 | 1.34M | 793.6k | no |
 | 2026-W45 | 43 | 1.31M | 1.02M | no |
-| 2026-W46 | 20 | 600.4k | 1.19M | no |
+| 2026-W46 | 26 | 790.4k | 1.19M | no |
 
 ## By session
 
@@ -504,4 +504,13 @@ Field Notes with the step that caused it.
 | 2026-11-11 23:34 | nightly, child ab0a9011 | sonnet-5-5 | 8.8k | 163.0k | 97.3k | 6 | 1 min | 9eee6eb7 |
 | 2026-11-11 23:34 | nightly, child a1b70f09 | sonnet-5-5 | 2.0k | 289.1k | 56.1k | 8 | 0 min | 9eee6eb7 |
 | 2026-11-12 07:54 | lichess-morning | fable-5-2 | 4.1k | 1.59M | 57.6k | 34 | 52 min | 00f27914 |
-| 2026-11-12 09:06 | inspector | fable-5-2 | 1.5k | 334.8k | 44.9k | 8 | 0 min | 4d7b78c1 |
+| 2026-11-12 09:06 | inspector | fable-5-2 | 9.6k | 2.05M | 85.5k | 36 | 2 min | 4d7b78c1 |
+| 2026-11-12 12:31 | trials | fable-5-2 | 29.1k | 5.29M | 121.2k | 80 | 14 min | 4a5021d4 |
+| 2026-11-12 16:36 | workshop | fable-5-2 | 28.3k | 4.66M | 127.8k | 64 | 12 min | dc32ea75 |
+| 2026-11-12 20:05 | smith | fable-5-2 | 17.2k | 3.91M | 111.7k | 62 | 4 min | 099b2b09 |
+| 2026-11-12 21:59 | interactive (Luke) | fable-5-1 | 45.6k | 6.02M | 217.2k | 838 | 28 min | 62d87031 |
+| 2026-11-12 23:23 | nightly | fable-5-2 | 90.4k | 25.85M | 296.3k | 232 | 27 min | 23f2b075 |
+| 2026-11-12 23:32 | nightly, child ad958438 | sonnet-5-5 | 8.9k | 166.9k | 101.2k | 6 | 1 min | 23f2b075 |
+| 2026-11-12 23:33 | nightly, child ac56e452 | sonnet-5-5 | 1.6k | 289.9k | 55.9k | 8 | 0 min | 23f2b075 |
+| 2026-11-13 07:54 | lichess-morning | fable-5-2 | 4.3k | 1.59M | 58.3k | 34 | 38 min | 9d79c155 |
+| 2026-11-13 09:06 | inspector | fable-5-2 | 2.0k | 432.3k | 52.7k | 10 | 0 min | d89d7c93 |
