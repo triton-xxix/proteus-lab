@@ -1,0 +1,61 @@
+{
+ "pulled": "2026-11-13T23:28:48.653734Z",
+ "window": [
+  "2026-07-16T23:00:00",
+  "2026-11-13T23:00:00"
+ ],
+ "mainshocks": [
+  {
+   "place": "66 km NNW of Ende, Indonesia",
+   "mag": 7.8,
+   "time": "2026-08-14T21:58:21.561000Z",
+   "radius_km": 238,
+   "n_after_M4.5": 222,
+   "K": 31.01,
+   "c_days": 0.0264,
+   "p": 0.826,
+   "early_n": 81,
+   "early_p": 0.772,
+   "pred_day2_30": 98.7,
+   "seen_day2_30": 141,
+   "share_first_day": 0.279
+  },
+  {
+   "place": "10 km WSW of Pitaloza Arriba, Panama",
+   "mag": 7.7,
+   "time": "2026-10-09T17:56:05.537000Z",
+   "radius_km": 212,
+   "n_after_M4.5": 107,
+   "K": 14.47,
+   "c_days": 0.0304,
+   "p": 1.28,
+   "early_n": 80,
+   "early_p": 1.518,
+   "pred_day2_30": 11.5,
+   "seen_day2_30": 27,
+   "share_first_day": 0.71
+  },
+  {
+   "place": "4 km SSW of San Jos\u00e9 del Palmar, Colombia",
+   "mag": 7.4,
+   "time": "2026-08-10T12:34:28.828000Z",
+   "radius_km": 150,
+   "n_after_M4.5": 5
+  },
+  {
+   "place": "60 km WSW of Puerto Madero, Mexico",
+   "mag": 7.3,
+   "time": "2026-07-17T14:48:39.881000Z",
+   "radius_km": 134,
+   "n_after_M4.5": 68,
+   "K": 8.96,
+   "c_days": 0.01,
+   "p": 1.084,
+   "early_n": 46,
+   "early_p": 1.228,
+   "pred_day2_30": 13.1,
+   "seen_day2_30": 22,
+   "share_first_day": 0.574
+  }
+ ]
+}
