@@ -1,0 +1,58 @@
+{
+ "html_bytes": 1233434,
+ "asset_keys": 9,
+ "keys": [
+  "assets/props/grid.glb",
+  "assets/chars.json",
+  "assets/props.json",
+  "assets/tex/ground.jpg",
+  "assets/fx/ink.jpg",
+  "assets/ui/btn.png",
+  "assets/ui/title.png",
+  "assets/sfx/hit.mp3",
+  "assets/music/theme.mp3"
+ ],
+ "loads": [
+  {
+   "u": "assets/props/grid.glb",
+   "route": "fetch",
+   "in_bundle": true,
+   "network": 0
+  },
+  {
+   "u": "assets/sfx/hit.mp3",
+   "route": "fetch",
+   "in_bundle": true,
+   "network": 0
+  },
+  {
+   "u": "assets/chars.json",
+   "route": "fetch",
+   "in_bundle": true,
+   "network": 0
+  },
+  {
+   "u": "assets/tex/ground.jpg",
+   "route": "img",
+   "in_bundle": true,
+   "network": 1,
+   "why": "the shim wraps fetch only; an element src is requested as written"
+  },
+  {
+   "u": "assets/music/theme.mp3",
+   "route": "audio",
+   "in_bundle": true,
+   "network": 1,
+   "why": "the shim wraps fetch only; an element src is requested as written"
+  }
+ ],
+ "stray_src": [],
+ "js_asset_strings": [
+  "assets/props/grid.glb",
+  "assets/tex/ground.jpg",
+  "assets/sfx/hit.mp3",
+  "assets/music/theme.mp3",
+  "assets/chars.json"
+ ],
+ "bundle_imageloader_uses_img": false
+}

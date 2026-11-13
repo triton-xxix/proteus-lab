@@ -11145,16 +11145,21 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-13",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-13T23:36:08+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-13T23:38:09+0000",
+   "note": "Packager ran unchanged on a toy three.js game in 1.5 s: 1,233,434-byte HTML holding all 9 assets; the 3 fetch loads hit data URLs with 0 network calls. The shim wraps fetch only, so TextureLoader's img and new Audio() still request their paths (read from the bundle, not seen in a browser).",
+   "artefacts": [
+    "experiments/2026-11-13-P-0439"
+   ],
+   "minutes": 2,
+   "calls": 24,
+   "denied": [
+    "Bash `tar -tzf /Users/triton/PROTEUS/sandbox/p0439/repo.tar.gz`",
+    "Bash `/usr/local/bin/node --version`"
+   ],
    "luke": false
   },
   {
