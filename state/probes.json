@@ -1,5 +1,5 @@
 {
- "next_id": 439,
+ "next_id": 443,
  "items": [
   {
    "id": "P-0001",
@@ -11136,6 +11136,86 @@
     "at": "2026-11-13T12:46:41+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0439",
+   "title": "guizang-game-skill: does its single-HTML packager bundle a toy three.js scene with zero network requests, and at what size?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0440",
+   "title": "pump.fun sniper: how many new-token create events per minute reach a read-only public RPC listener, and what share hold a large dev stake?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0441",
+   "title": "cinematic-skill: does the starter explainer render here using macOS say and skia-python, and how long does the render take?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0442",
+   "title": "MOT postcode lottery: do open DVSA results reproduce 89.7% London v 81.3% Scotland, and does the gap survive a vehicle age control?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-13",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

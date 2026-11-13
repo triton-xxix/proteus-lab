@@ -6,12 +6,21 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-635 judged over 44 harvest days, 418 kept, 126 testable, 121 queued as probes, 115 with a probe verdict.
+649 judged over 45 harvest days, 427 kept, 130 testable, 125 queued as probes, 115 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0649 | 2026-11-13 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=V3ngobSPgqE) | mechanism | open-data | yes | P-0442 |
+| H-0646 | 2026-11-13 | vault | [client tiering and concentration]() | mechanism | none | no: It needs real client revenue data, which Proteus does not ho |  |
+| H-0643 | 2026-11-13 | github | [Moh4696/cinematic-skill: Agent skill for narrated cinematic films built entirely from code](https://github.com/Moh4696/cinematic-skill) | mechanism | tools-for-strangers | yes | P-0441 |
+| H-0642 | 2026-11-13 | hn | [Show HN: Kapso – Iterative learning from enterprise data](https://news.ycombinator.com/item?id=50471281) | mechanism | mechanism-hunting | no: The loop needs an LLM to propose experiments and there is no |  |
+| H-0641 | 2026-11-13 | vault | [outbound with follow-ups]() (intel) | mechanism | tools-for-strangers | no: A real test means sending messages to real prospects, which  |  |
+| H-0640 | 2026-11-13 | youtube | [PumpFun Sniper Bot Guide! / How to Use Solana Sniper Bot! / Solana Trading Crypto](https://www.youtube.com/watch?v=7uUo9g318sc) (intel) | mechanism | desk:grinder | yes | P-0440 |
+| H-0639 | 2026-11-13 | arxiv | [CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Se](https://arxiv.org/abs/2611.17115) | mechanism | tools-for-strangers | no: Reproducing it needs model answers from open-weight models a |  |
+| H-0638 | 2026-11-13 | github | [op7418/guizang-game-skill: 歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill](https://github.com/op7418/guizang-game-skill) | mechanism | game-bots | yes | P-0439 |
+| H-0636 | 2026-11-13 | vault | [Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human fa]() | mechanism | tools-for-strangers | no: Checking the gates needs paid accounts and uploads to the ve |  |
 | H-0634 | 2026-11-12 | github | [ersinkoc/phonebox: Turn an old Android phone into a local desk panel for Windows, Linux an](https://github.com/ersinkoc/phonebox) | mechanism | tools-for-strangers | no: Needs an Android phone and the app. |  |
 | H-0632 | 2026-11-12 | vault | [proven content formats per client]() (intel) | mechanism | tools-for-strangers | no: Needs a live account and audience metrics over time. |  |
 | H-0630 | 2026-11-12 | arxiv | [From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Har](https://arxiv.org/abs/2611.13960) | mechanism | mechanism-hunting | no: No code is cited in the abstract and the fixtures are the au |  |
@@ -432,6 +441,117 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0649 The UK MOT postcode lottery: 8.4 points between best and worst
+2026-11-13, youtube, https://www.youtube.com/watch?v=V3ngobSPgqE
+
+- **Mechanism:** The claim is a pass rate by region computed from MOT test results: London 89.7 percent against Scotland 81.3 percent, an 8.4 point gap. DVSA publishes anonymised MOT test results as open data, which can be grouped by test station postcode area. The video text is thin and the framing (same test, same testers) ignores vehicle age and mix, which drive pass rates.
+- **Claim:** UK MOT pass rates range from 89.7 percent in London to 81.3 percent in Scotland, a gap of 8.4 points.
+- **Testable:** yes. Using one month of DVSA open MOT results, what are the London and Scotland pass rates, and does the gap shrink below 4 points once vehicle age band is held fixed? Queued as P-0442.
+- **Idea on its own:** needs-a-run. The gap may be real, but without controlling for vehicle age the 'lottery' reading is probably wrong.
+- **How it would be done:** Download one month of the DVSA open MOT test result files from gov.uk, load them with pandas or DuckDB, and group by test station postcode area to get pass rates. Then bucket by first-use year and recompute the gap within each age band. Publish the result as a small chart. A person is only needed if a cleaner story is wanted for a car audience.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** DVSA MOT testing data https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b5e/anonymised-mot-tests-and-results (Open anonymised MOT test results to recompute the rates.); DuckDB https://duckdb.org/ (Fast local queries over large CSV files.)
+- **Field Notes line:** A video claims an 8.4 point MOT pass-rate gap between London and Scotland; the open DVSA results can test it, including whether car age explains it.
+
+### H-0646 client tiering and concentration
+2026-11-13, vault, 
+
+- **Mechanism:** Clients are ranked into tiers by value and each client's share of revenue is tracked, with a limit on how much any one client or any one staff member's relationships can carry. The warning cases are two agencies that failed when one client was 80 percent of revenue or one staffer held every relationship. The mechanism is a concentration measure plus a rule to act when a share crosses a line.
+- **Claim:** Interviewees say tier clients by value, since one client at 80 percent of revenue or one person holding all relationships sank two agencies.
+- **Testable:** no. It needs real client revenue data, which Proteus does not hold, and the stories are anecdotes. Needs: A client revenue table..
+- **Idea on its own:** sound. Revenue concentration risk is well understood, and a share-of-revenue alarm is a cheap guard.
+- **How it would be done:** Keep a monthly table of revenue by client and compute the largest share and a Herfindahl index. Set a threshold such as 40 percent that triggers a flag, and list for each client who owns the relationship so a single point of failure shows. This is a spreadsheet job. A person would decide what to do when a flag fires.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Agency survival rule: tier clients by value and watch the single-client revenue share, because two agencies failed at 80 percent on one client.
+
+### H-0643 Moh4696/cinematic-skill: Agent skill for narrated cinematic films built entirely from code: one continuous camera over p
+2026-11-13, github, https://github.com/Moh4696/cinematic-skill
+
+- **Mechanism:** Every frame is drawn in code with Skia in Python, with one continuous camera move over a single designed canvas of photos, maps and cards. A scratch voice from macOS say or espeak-ng times the film first, then a real voice replaces it and the whole film re-times itself from the word timings. Effects such as stamps, highlighter swipes and rolling numbers fire on the exact narrated word. Public-domain photos are sourced with their licences recorded.
+- **Claim:** Ask an agent for a 90 second documentary and it writes, voices and renders a deterministic film from code, with no generated video.
+- **Testable:** yes. Does the repo's starter explainer render end to end on this Mac with the macOS say voice, and how long does it take for how many seconds of film? Queued as P-0441.
+- **Idea on its own:** sound. Deterministic code-drawn frames with voice-driven timing make revisions cheap, the opposite of generated video.
+- **How it would be done:** Clone the repo into the sandbox, install skia-python, numpy and pillow in the in-folder Python venv, and run check_setup.py then the starter render. Compare the output with a HyperFrames composition for the same script. If it works, swap the scratch voice for ElevenLabs and feed it Field Notes material. A person would still pick the story and check facts and photo licences.
+- **Stack already covers:** Claude Code with skills and sub-agents, ElevenLabs (voice), HyperFrames (video compose, captions, render), local transcription
+- **To fetch:** cinematic-skill https://github.com/Moh4696/cinematic-skill (The skill, scripts and worked example.); skia-python https://github.com/kyamagu/skia-python (The drawing library it renders with.)
+- **Field Notes line:** A Skia-in-Python film maker draws every frame in code and re-times the whole film when the narrator's voice changes, so edits cost almost nothing.
+
+### H-0642 Show HN: Kapso – Iterative learning from enterprise data
+2026-11-13, hn, https://news.ycombinator.com/item?id=50471281
+
+- **Mechanism:** Kapso is an open-source loop that runs an investigate, hypothesise, experiment, evaluate cycle with an LLM, deploys the best solution and stores what each run taught in a knowledge base so the next investigation starts with it. The pitch is about enterprise data estates, where context is learned from repos, dbt models and the data itself rather than meetings. One user comment says it tuned hyperparameters on 21 structured-data tasks, beating TabPFN on most of the larger ones.
+- **Claim:** An engine that runs experiments, deploys the best result and learns from each run, with a user reporting it beat TabPFN on most larger tasks using about 1% of the parameters.
+- **Testable:** no. The loop needs an LLM to propose experiments and there is no local model or key tonight. Needs: An LLM API key or local model..
+- **Idea on its own:** needs-a-run. The loop is what Proteus already does by hand, but the benefit of the lesson store is only a testimonial so far.
+- **How it would be done:** Clone the repo and read how it stores lessons and picks the next experiment. Point it at a small public tabular task with a known score and compare its best result and cost with a plain hyperparameter search. The comparison is the evidence the claim lacks. A person would set the task and judge whether the stored lessons are real or boilerplate.
+- **Stack already covers:** Claude Code with skills and sub-agents, freqtrade
+- **To fetch:** Kapso https://github.com/Leeroo-AI/kapso (The engine itself.); OpenML https://www.openml.org/ (Free public tabular tasks with known baselines.)
+- **Missing:** A model to drive it.
+- **Field Notes line:** Kapso loops hypothesis, experiment and stored lessons for data work; one user says it tuned a small model past TabPFN on most large tasks.
+
+### H-0641 outbound with follow-ups
+2026-11-13, vault, 
+
+- **Mechanism:** Outbound is run as a tracked daily quota of first messages, with a sequence of follow-ups so that a prospect can be touched up to about ten times before a reply. A sheet or CRM stores each prospect, touch number, date and outcome so the next action is mechanical. The note's point is that referrals alone are too thin a source of leads.
+- **Claim:** The interviewees say agencies should do daily tracked outreach with up to ten touches before a reply and never rely on referrals alone.
+- **Testable:** no. A real test means sending messages to real prospects, which needs accounts and consent for each send. Needs: Sending accounts and approval for each outbound send..
+- **Idea on its own:** sound. Multiple follow-ups with a tracking log are standard, effective sales practice, provided volume and consent follow the law.
+- **How it would be done:** Build a prospect table with columns for touch count, last touch date, channel and result, and a daily view of who is due. Write the follow-up sequence in a file so each touch adds something new rather than repeating. For UK B2B email, follow the existing outbound skill for rules and drafts only. A person is needed to send, reply and judge fit.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A reply-tracking loop that reads inbox results back into the table.
+- **Field Notes line:** Agency outreach as a daily tracked quota with up to ten follow-up touches, so the next action is a sheet lookup rather than a decision.
+
+### H-0640 PumpFun Sniper Bot Guide! / How to Use Solana Sniper Bot! / Solana Trading Crypto
+2026-11-13, youtube, https://www.youtube.com/watch?v=7uUo9g318sc
+
+- **Mechanism:** A pump.fun sniper watches the Solana chain for new token creation events on the pump.fun program, then submits a buy in the same or next slot, using priority fees or bundles to land early, and sells on a take profit, stop loss or developer-holding rule. The video's numbers (100,000 trades, under 10 ms, 4.9 rating) are unverified site claims and the format, connect a wallet to a hosted dashboard, matches how wallet-drainer promotions are run. The safety filters it names (rug and honeypot checks) are the same checks rugcheck-style readers do.
+- **Claim:** A hosted sniper bot that auto-buys new pump.fun tokens in under 10 ms and filters scams with AI, shown with green trades.
+- **Testable:** yes. Reading pump.fun create events read-only from a public Solana RPC websocket for 15 minutes, how many arrive per minute and what share have the creator holding over 20% at creation? Queued as P-0440.
+- **Idea on its own:** needs-a-run. The listener is real and measurable, but any edge from being first is unproven and likely goes to bots with private infrastructure.
+- **How it would be done:** Subscribe to program logs for the pump.fun program on a public Solana RPC and decode create events. Record time from creation to first trade and the creator's initial stake, using the existing GeckoTerminal and rugcheck readers for follow-up. Feed the events into the Grinder paper desk as a new entry rule and score it on paper only. Never connect a wallet to the hosted bot in the video.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder), launchd long-running pollers
+- **To fetch:** solders https://github.com/kevinheavey/solders (Decode Solana transactions and logs in Python.); pump.fun IDL https://github.com/pump-fun/pump-public-docs (Public program docs for decoding create events.)
+- **Missing:** A fast private RPC if latency to the first trade ever matters.
+- **Field Notes line:** Pump.fun sniper bots are a listener on the create event plus a fast buy; the promo video's speed and win claims are unverified and the wallet-connect pitch looks like bait.
+
+### H-0639 CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts
+2026-11-13, arxiv, https://arxiv.org/abs/2611.17115
+
+- **Mechanism:** CapLite does not ask the agent's model to write a security policy. It derives the policy from the tool schemas, commits the planned write calls before any tool output is read, and admits a write only if every argument that decides the recipient, amount, object or destination appears in the user's own request. Injected text in tool results therefore cannot add a write or redirect one. It is evaluated on AgentDojo with 15 small open-weight models.
+- **Claim:** No attack succeeds in 13,935 attacked AgentDojo episodes, with utility under attack of 29.0% against CaMeL's 27.2% at 18% of its tokens.
+- **Testable:** no. Reproducing it needs model answers from open-weight models and AgentDojo runs, and there is no local LLM here. Needs: A local or hosted open-weight model..
+- **Idea on its own:** sound. Checking write arguments against the user's own words is a simple, auditable rule that does not rely on the model behaving.
+- **How it would be done:** Read the paper and its code if released. The idea can be copied cheaply into any Proteus agent that sends or posts: list the write tools, mark which arguments decide the target, and refuse a call unless those values appear in the original task text. A later night could run it against AgentDojo once a model is available. No hired work is needed beyond a security reviewer if it protected real money.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** AgentDojo https://github.com/ethz-spylab/agentdojo (The injection benchmark the paper uses.)
+- **Missing:** A local model to run the benchmark.
+- **Field Notes line:** A prompt-injection defence that lets a write happen only when every recipient and amount is stated in the user's own request, with no model-written policy.
+
+### H-0638 op7418/guizang-game-skill: 歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that 
+2026-11-13, github, https://github.com/op7418/guizang-game-skill
+
+- **Mechanism:** An agent skill that front-loads questions about references and available asset tools, then builds a three.js game with a self-test harness: frame stepping, a URL parameter that jumps to a level, and an F3 diagnostics panel so the agent can screenshot and verify without the user. Assets go image first (concept art) then image-to-3D with rigging, which the author says beat text-to-3D. Packaging scripts squeeze the models into a single HTML file, a static site that loads after first render, and a size-limited container build.
+- **Claim:** A skill that lets an agent build a playable browser 3D action game, with a demo of about 33MB as one HTML file made in about 6 hours and 450 million tokens.
+- **Testable:** yes. Does the repo's single-file packager turn a small three.js scene into one HTML file with zero network requests, and how many MB does it come to? Queued as P-0439.
+- **Idea on its own:** sound. Giving the agent deterministic test hooks and a checklist of past mistakes is a proven way to cut rework, whatever the game.
+- **How it would be done:** Clone the repo and read SKILL.md, the pitfalls list and the packaging reference. Build a tiny three.js scene with free models and run the single-file script on it, then check for network requests in a headless browser. Borrow the test-hook pattern (step frames, jump by URL, diagnostics overlay) for any browser tool Proteus builds. A hired person would only be needed for game design judgement and art, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills), ElevenLabs (voice)
+- **To fetch:** guizang-game-skill https://github.com/op7418/guizang-game-skill (The skill and its packaging scripts.); three.js https://threejs.org/ (Renderer the skill builds on.)
+- **Missing:** Tripo and Jimeng accounts for image-to-3D, which this stack lacks.
+- **Field Notes line:** A Claude skill for browser 3D games leans on frame-step and URL-jump test hooks so the agent can check its own work, plus a packager to one HTML file.
+
+### H-0636 Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human faces
+2026-11-13, vault, 
+
+- **Mechanism:** Hosted video-generation tools gate features by account region and by what the input contains. Gemini Omni is said to refuse edits of uploaded video for UK accounts, and Seedance runs a face check on reference images and rejects real human faces. The gates sit server side, so the only routes are to pick a tool whose policy allows the job or to use a purpose-built avatar service that holds the person's consent.
+- **Claim:** The vault's stack check says Gemini Omni cannot edit uploaded video from the UK and Seedance refuses real faces, so a real person on screen is a HeyGen job.
+- **Testable:** no. Checking the gates needs paid accounts and uploads to the vendors, and the answer depends on region. Needs: Accounts on Gemini Omni and Seedance, and a UK or non-UK exit to compare..
+- **Idea on its own:** sound. Routing each video job to the tool whose policy allows it is just sensible tool selection, and a dated table of what each tool refuses is useful to keep.
+- **How it would be done:** Keep a small table of video tools by job (text to video, image to video, edit uploaded clip, real person, voice) with the refusal or region limit noted and a check date. For each new job, choose a draft route on the cheap API and a final route on the allowed tool. Re-check the refusals monthly by reading vendor policy pages, since they change. A person would only be needed to run the region-specific checks from a non-UK connection and to hold consent records for any real face.
+- **Stack already covers:** Gemini (stills), HeyGen and Tavus (avatars), ElevenLabs (voice), HyperFrames (video compose, captions, render)
+- **Missing:** Nobody holds a maintained, dated refusal table for these tools.
+- **Field Notes line:** Some AI video tools now block uploaded-video edits by region and refuse real faces, so the route for a real person on screen is an avatar service.
 
 ### H-0634 ersinkoc/phonebox: Turn an old Android phone into a local desk panel for Windows, Linux and macOS. 55 widgets, Smart Sta
 2026-11-12, github, https://github.com/ersinkoc/phonebox
@@ -5359,6 +5479,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0646 | 2026-11-13 | client tiering and concentration | intel | sound | no |  |
+| H-0641 | 2026-11-13 | outbound with follow-ups | intel | sound | no |  |
+| H-0636 | 2026-11-13 | Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human fa | intel | sound | no |  |
 | H-0632 | 2026-11-12 | proven content formats per client | intel | needs-a-run | no |  |
 | H-0627 | 2026-11-12 | Promoter statistic that most wallets are profitable | intel | sound | no |  |
 | H-0622 | 2026-11-12 | Paid trading community whose credibility rests on self-reported PnL screenshots and a lege | intel | sound | no |  |
@@ -5496,6 +5619,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0377 | 2026-11-13 | [DVSA MOT testing data](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b5e/anonymised-mot-tests-and-results) | Open anonymised MOT test results to recompute the rates. | H-0649 (The UK MOT postcode lottery: 8.4 points between be) | shelf |
+| T-0376 | 2026-11-13 | [skia-python](https://github.com/kyamagu/skia-python) | The drawing library it renders with. | H-0643 (Moh4696/cinematic-skill: Agent skill for narrated ) | shelf |
+| T-0375 | 2026-11-13 | [cinematic-skill](https://github.com/Moh4696/cinematic-skill) | The skill, scripts and worked example. | H-0643 (Moh4696/cinematic-skill: Agent skill for narrated ) | shelf |
+| T-0374 | 2026-11-13 | [OpenML](https://www.openml.org/) | Free public tabular tasks with known baselines. | H-0642 (Show HN: Kapso – Iterative learning from enterpris) | shelf |
+| T-0373 | 2026-11-13 | [Kapso](https://github.com/Leeroo-AI/kapso) | The engine itself. | H-0642 (Show HN: Kapso – Iterative learning from enterpris) | shelf |
+| T-0372 | 2026-11-13 | [pump.fun IDL](https://github.com/pump-fun/pump-public-docs) | Public program docs for decoding create events. | H-0640 (PumpFun Sniper Bot Guide! / How to Use Solana Snip) | shelf |
+| T-0371 | 2026-11-13 | [solders](https://github.com/kevinheavey/solders) | Decode Solana transactions and logs in Python. | H-0640 (PumpFun Sniper Bot Guide! / How to Use Solana Snip) | shelf |
+| T-0370 | 2026-11-13 | [guizang-game-skill](https://github.com/op7418/guizang-game-skill) | The skill and its packaging scripts. | H-0638 (op7418/guizang-game-skill: 歸藏 Game Skill：让 AI 从零做出) | shelf |
 | T-0369 | 2026-11-12 | [ersinkoc/phonebox](https://github.com/ersinkoc/phonebox) | Source of the permission-prompt relay. | H-0634 (ersinkoc/phonebox: Turn an old Android phone into ) | shelf |
 | T-0368 | 2026-11-12 | [arXiv 2611.13960](https://arxiv.org/abs/2611.13960) | The paper and any linked code. | H-0630 (From Attack Surface to Defense Architecture: Compo) | shelf |
 | T-0367 | 2026-11-12 | [article2media](https://github.com/threerocks/article2media) | Source of the validators and content.json schema. | H-0629 (threerocks/article2media: 把一篇文章或一条视频（抖音、B 站、YouTub) | shelf |
@@ -5870,6 +6001,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0648 | 2026-11-13 | github | [hitkeeen/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual c](https://github.com/hitkeeen/blender-ai-mcp-addon) | The vault has already judged this vendor and the manager, worker, reviewer chain is a common pattern, not a new mechanis |
+| H-0647 | 2026-11-13 | hn | [Ask HN: Can anyone name anything new that AI has done?](https://news.ycombinator.com/item?id=50484426) | A discussion question with no mechanism to record. |
+| H-0645 | 2026-11-13 | youtube | [PROPOSED 2027 MOT LAWS EXPLAINED 🦾](https://www.youtube.com/watch?v=d4XbDwboeCg) | A garage owner's opinion on proposed MOT rules, with no mechanism or number. |
+| H-0644 | 2026-11-13 | arxiv | [AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of A](https://arxiv.org/abs/2611.17015) | A biology review about model knowledge limits, with no mechanism Proteus can use. |
+| H-0637 | 2026-11-13 | hn | [Elevated errors on claude.ai, Claude Code, and platform.claude.com](https://status.claude.com/incidents/nn11wk485zfn) | A status page for a one-morning outage with no mechanism to record. |
 | H-0635 | 2026-11-12 | hn | [How do you keep up quality when you vibe-code?](https://news.ycombinator.com/item?id=50444380) | An open question thread with generic advice (write decisions down, test heavily) and no mechanism. |
 | H-0633 | 2026-11-12 | hn | [Show HN: AgentRun – open-source, Self-improving Managed Agents](https://github.com/Parcha-ai/agentrun/blob/main/README.md) | Thin README-level claim of self-improving managed agents with no mechanism stated; agentes-chat covers the agent-platfor |
 | H-0631 | 2026-11-12 | youtube | [Python 3.16 Just Dropped — And an AI Crashed 3.15 in 5 Lines](https://www.youtube.com/watch?v=_EnL_XvlI-0) | Transcript unavailable and the title is a news hook with no visible mechanism. |

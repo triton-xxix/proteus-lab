@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 357 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,10 @@ Verdicts so far: 357 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0439 | guizang-game-skill: does its single-HTML packager bundle a toy three.js scene with zero network requests, and at what size? | harvest | none |  | 0 | 25 min |
+| P-0440 | pump.fun sniper: how many new-token create events per minute reach a read-only public RPC listener, and what share hold a large dev stake? | harvest | none |  | 0 | 25 min |
+| P-0441 | cinematic-skill: does the starter explainer render here using macOS say and skia-python, and how long does the render take? | harvest | none |  | 0 | 30 min |
+| P-0442 | MOT postcode lottery: do open DVSA results reproduce 89.7% London v 81.3% Scotland, and does the gap survive a vehicle age control? | harvest | none |  | 0 | 30 min |
 
 ## Verdicts (423)
 

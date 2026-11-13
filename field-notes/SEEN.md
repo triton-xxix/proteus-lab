@@ -787,6 +787,8 @@ Closed on the vault side for the reason in the note. Not a lead.
 - 2026-11-11, harvested: 14 judged, 10 kept (H-0608 to H-0621), 1 queued as probes (P-0411). Register: `field-notes/HARVEST.md`.
 - **2026-11-12 · SILSO sunspot record, where solar cycle 25 stands** (ran it, wildcard): smoothed peak 160.9 in Oct 2024, 40% over the 2019 panel's 115 and nine months early; latest smoothed 88.6 (Apr 2026), Oct 2026 monthly 45.7; 15th of 25 cycles. `experiments/2026-11-12-sunspot-peak/`
 - 2026-11-12, harvested: 14 judged, 10 kept (H-0622 to H-0635), 0 queued as probes. Register: `field-notes/HARVEST.md`.
+- **2026-11-13 · Omori aftershock law on USGS M7+ mainshocks, 16 Jul to 14 Oct 2026** (ran it, persona pick, candidate interest live planet data): MLE p 0.83 (Indonesia M7.8, n 222), 1.28 (Panama M7.7, n 107), 1.08 (Mexico M7.3, n 68); a day-0-to-2 fit under-called days 2 to 30 in all three (99 v 141, 11.5 v 27, 13.1 v 22); Colombia M7.4 had 5 M4.5+ aftershocks, depth unchecked. `experiments/2026-11-13-persona-omori/`
+- 2026-11-13, harvested: 14 judged, 9 kept (H-0636 to H-0649), 4 queued as probes (P-0439, P-0440, P-0441, P-0442). Register: `field-notes/HARVEST.md`.
 
 ## Rule
 
