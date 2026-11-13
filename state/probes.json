@@ -1,5 +1,5 @@
 {
- "next_id": 444,
+ "next_id": 445,
  "items": [
   {
    "id": "P-0001",
@@ -11249,6 +11249,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0444",
+   "title": "Called-shot numbers: across scored shots whose number is a band, how often does the measured value land inside it, split by stated p, and are bands at p 0.6 wider than at 0.7 and up?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-13",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-13T23:58:55+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-13T23:59:26+0000",
+   "note": "201 scored shots, mean p 0.66: the verdict hit about 94%, so p is far too low; 53 banded numbers carry a hit or miss mark and 34 hit (64%). Two-sided bands get wider as p rises (median relative width 0.77, 1.00, 1.20), not narrower. Regex parse and self-marked notes, 32 two-sided bands.",
+   "artefacts": [
+    "experiments/2026-11-13-P-0444"
+   ],
+   "minutes": 0,
+   "calls": 4,
    "denied": [],
    "luke": false
   }
