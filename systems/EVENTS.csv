@@ -154,3 +154,6 @@ date,market,strategy,event,price,logged_utc
 2026-11-12,EWJ,rsi5_simple,sell_open,91.2400,2026-11-12T23:25:48Z
 2026-11-12,EWJ,rsi5_triple,sell_open,91.2400,2026-11-12T23:25:48Z
 2026-11-12,EWG,ibs_gated,buy_signal,42.8100,2026-11-12T23:25:48Z
+2026-11-13,DIA,ibs_gated,buy_open,524.8300,2026-11-13T23:25:59Z
+2026-11-13,IWM,ibs_gated,buy_open,278.9500,2026-11-13T23:25:59Z
+2026-11-13,EWG,ibs_gated,buy_open,42.8600,2026-11-13T23:25:59Z
