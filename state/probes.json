@@ -1,5 +1,5 @@
 {
- "next_id": 432,
+ "next_id": 433,
  "items": [
   {
    "id": "P-0001",
@@ -10941,6 +10941,32 @@
     "number": "3 winners in 8 has under a 5 percent chance at a true 75 percent win rate; shot after reading the desk's own 38 percent line",
     "at": "2026-11-12T23:48:40+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0432",
+   "title": "Short gap-and-go videos: pull captions for the six on-topic ids P-0409 dropped under its five-minute floor (6PLI1Wvn3fE, VsF0W2FuQOM, WCuEgMPvKwc, sEpI4T4UvhU, 9Y4x-QKkZqU, d9mDpbN4zFI); how many state a win rate, and does any give a trade count beside it? Against 0 of 3 long ones",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-13",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-13T12:32:31+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "6 of 6 captions fetched; 3 of 6 state a win rate in the captions; 0 give a trade count beside it",
+    "at": "2026-11-13T12:32:35+0000"
    }
   }
  ]
