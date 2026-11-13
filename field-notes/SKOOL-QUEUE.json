@@ -757,9 +757,12 @@
    "track": 9,
    "title": "Title and opening triage of the 272 YouTube lessons (vault rooms and 15 Oct pulls)",
    "model": "haiku",
-   "status": "needs-pull",
-   "files": [],
-   "why": "Waits on sandbox/yt_retry.py (YouTube IP block, 15 Oct). Once transcribed, build a digest of title plus first 150 words per video and have one Haiku reader flag the few worth a full read, against the framework gaps in Luke's frameworks index."
+   "status": "queued",
+   "files": [
+    "field-notes/skool/digest-S-39-titles.md"
+   ],
+   "why": "Waits on sandbox/yt_retry.py (YouTube IP block, 15 Oct). Once transcribed, build a digest of title plus first 150 words per video and have one Haiku reader flag the few worth a full read, against the framework gaps in Luke's frameworks index.",
+   "note": "digest built 13 Nov 2026 from 239 local transcripts; the raw transcripts are in field-notes/skool/transcripts/"
   },
   {
    "id": "S-40",
@@ -1156,9 +1159,12 @@
    "track": 10,
    "title": "What Is Skool? videos: title-and-opening triage once the transcribe queue has them (240)",
    "model": "haiku",
-   "status": "needs-pull",
-   "files": [],
-   "why": "240 videos linked in Jenna's posts, queued in state/skool-transcribe/. Once transcribed, build a digest of title plus first 150 words per video (as S-39) and have one Haiku reader pick the few worth a full read."
+   "status": "queued",
+   "files": [
+    "field-notes/skool/digest-S-55-titles.md"
+   ],
+   "why": "240 videos linked in Jenna's posts, queued in state/skool-transcribe/. Once transcribed, build a digest of title plus first 150 words per video (as S-39) and have one Haiku reader pick the few worth a full read.",
+   "note": "digest built 13 Nov 2026 from 238 local transcripts (237 entries, 1 under 20 words skipped); the raw transcripts are in field-notes/skool/transcripts/"
   },
   {
    "id": "S-56",
