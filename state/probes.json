@@ -10980,22 +10980,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-13T12:34:13+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-13T12:36:20+0000",
+   "note": "Gaps fill 85% only if you wait: SPY same-day fill 64.3% of 7,572 gaps (shot 65%), 83.7% in 5 days, 91.7% in 20; nine ETFs since 2009 47.8% same day, and the mirror level the other way is hit 45.1%, so the pull is 3 points. Under 0.25% gaps 81.6% (shot 85+, miss), over 1% 35.2% (shot 40 or less). Fading every gap wins 62% and makes -0.009% a trade after cost on 37,362 gaps since 2009, 7 of 9 symbols negative, p 0.076 v coin. SPY alone +0.029%, t 2.85, p 0.012: I called it luck and it is not, but it is one tick of slippage and no better than holding the session (+0.025% a day). The Short states no instrument, horizon or count. Shot called works; replicates only at a 20-day horizon and fails luck on the basket.",
+   "artefacts": [
+    "experiments/2026-11-13-P-0433"
+   ],
+   "minutes": 2,
+   "calls": 21,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "SPY same-day gap fill about 65% over all gaps; under 0.25% gaps fill 85% or more, over 1% gaps 40% or less; fading every gap to the prior close makes a mean within 0.05% of zero per trade, not distinguishable from luck",
-    "at": "2026-11-13T12:34:19+0000"
+    "at": "2026-11-13T12:34:19+0000",
+    "hit": false
    }
   }
  ]
