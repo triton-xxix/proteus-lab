@@ -11058,22 +11058,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-13",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-13T12:38:41+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-13T12:39:56+0000",
+   "note": "FPES fell 99.999% (0.42 to 0.0000028) inside the 23:00Z hour of 11 Oct, at most 97 minutes after the stale snapshot and 23 h before the paper entry (shot: over 99% before entry, hit). At entry the stale 0.4202 was about 119,000 times the last trade; 0 minute candles in the 24 h after, next trade 24 h 6 min later (shot 0, hit), so G-0075 still cannot be walked and the void stands. Two pools: the pumpswap one the snapshot named (reserve 1,901 dollars now) and the launch curve (one daily candle, 10 Oct; its hourly and minute calls 429). New: the six hours before the rug rose 1% an hour on 19k to 22k dollars every hour, a metronome the v0.2 gate passed. Caveat: one token, shot after seeing the pool list. Next: deepen (queued: is that flat pre-entry volume visible in the ledger rugs).",
+   "artefacts": [
+    "experiments/2026-11-13-P-0436"
+   ],
+   "minutes": 1,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "daily candles show FPES fell more than 99% from 0.42 before the 12 Oct 22:54Z entry; 0 minute candles in the 24 h after entry from either pool, so the trade still cannot be walked. Shot after seeing the pool list (price 0.0000017, reserve 1,900 dollars) but no candles",
-    "at": "2026-11-13T12:38:48+0000"
+    "at": "2026-11-13T12:38:48+0000",
+    "hit": true
    }
   }
  ]
