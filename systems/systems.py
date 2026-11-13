@@ -189,9 +189,12 @@ def cmd_update():
         append(SIGNALS, SIG_FIELDS, new_sig)
         append(SIGNALS2, SIG2_FIELDS, new_sig2)
         last = new_sig[-1] if new_sig else None
+        last2 = new_sig2[-1] if new_sig2 else None
+        # book 2 beside book 1 (12 Nov 2026: the desk line missed book 2's buys because only book 1 printed)
         print(f"{mkt}: {len(new_sig)} new day(s), {n_ev} event(s)" +
               (f"; {last['date']} close {last['close']}, RSI(5) {last['rsi5']}, SMA200 {last['sma200']}, "
-               f"simple {last['rsi5_simple']}, triple {last['rsi5_triple']}" if last else ""))
+               f"simple {last['rsi5_simple']}, triple {last['rsi5_triple']}" if last else "") +
+              (f", IBS {last2['ibs'] or '-'} ibs_gated {last2['ibs_gated']}" if last2 else ""))
         time.sleep(0.5)
 
 
