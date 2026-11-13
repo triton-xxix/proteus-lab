@@ -63,14 +63,15 @@ def main():
     }
     # agreement with probe.py's own tally
     out = subprocess.run([sys.executable, os.path.join(ROOT, "bin", "probe.py"), "shots"], capture_output=True, text=True).stdout
-    want = "%d scored, %d waiting; hit rate %.2f; mean stated p %.2f; Brier %.3f" % (n, waiting, hit_rate, summary["mean_p"], summary["brier"])
+    # raw values, not the 3-place summary ones: rounding twice printed 0.67 against probe.py's 0.66 (F-0090)
+    want = "%d scored, %d waiting; hit rate %.2f; mean stated p %.2f; Brier %.3f" % (n, waiting, hit_rate, sum(ps) / n, brier(ps, hits))
     if want not in out:
         sys.exit("shots-page: disagrees with probe.py shots\n  mine: %s\n  probe.py: %s" % (want, out.strip()))
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump({"summary": summary, "bins": bins, "rows": rows}, f, indent=1)
     print("shots-page: %d shots, hit rate %.2f against stated %.2f, Brier %.3f; agrees with probe.py; wrote %s"
-          % (n, hit_rate, summary["mean_p"], summary["brier"], OUT))
+          % (n, hit_rate, sum(ps) / n, brier(ps, hits), OUT))
 
 
 if __name__ == "__main__":

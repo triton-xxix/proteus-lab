@@ -1,50 +1,50 @@
 {
  "summary": {
-  "n": 181,
+  "n": 201,
   "waiting": 0,
-  "hits": 168,
-  "hit_rate": 0.928,
-  "mean_p": 0.668,
-  "brier": 0.139,
-  "brier_at_hit_rate": 0.067,
-  "called_works": 167,
-  "called_works_hits": 159,
+  "hits": 187,
+  "hit_rate": 0.93,
+  "mean_p": 0.663,
+  "brier": 0.142,
+  "brier_at_hit_rate": 0.065,
+  "called_works": 187,
+  "called_works_hits": 178,
   "called_other": 14,
   "called_other_hits": 9,
-  "verdict_works": 164,
+  "verdict_works": 183,
   "first": "2026-10-12",
-  "last": "2026-11-11"
+  "last": "2026-11-13"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 22,
-   "mean_p": 0.495,
-   "hit_rate": 0.909
+   "n": 25,
+   "mean_p": 0.496,
+   "hit_rate": 0.92
   },
   {
    "label": "55%",
-   "n": 15,
+   "n": 17,
    "mean_p": 0.55,
-   "hit_rate": 0.8
+   "hit_rate": 0.824
   },
   {
    "label": "60 to 65%",
-   "n": 47,
+   "n": 57,
    "mean_p": 0.617,
-   "hit_rate": 0.936
+   "hit_rate": 0.947
   },
   {
    "label": "70 to 75%",
-   "n": 70,
-   "mean_p": 0.722,
-   "hit_rate": 0.943
+   "n": 73,
+   "mean_p": 0.721,
+   "hit_rate": 0.932
   },
   {
    "label": "80% and up",
-   "n": 27,
-   "mean_p": 0.822,
-   "hit_rate": 0.963
+   "n": 29,
+   "mean_p": 0.821,
+   "hit_rate": 0.966
   }
  ],
  "rows": [
@@ -1857,6 +1857,206 @@
    "hit": 0,
    "number": "at least two of the three voided trades lose from the stale price, about -150 pounds between them, and the median gap to the first candle is over 20 percent",
    "at": "2026-11-11T23:49:35+0000"
+  },
+  {
+   "id": "P-0226",
+   "title": "Munich ICON bias, 30 days out of sample: rerun experiments/2026-10-26-P-0225/out_of_sample.py once 13 Oct to 11 Nov is observed; split sunny",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "ICON Stadt bias 13 Oct to 11 Nov about -0.4C (inside -0.65 to -0.15), sunny days at least 0.5C colder-biased than dull days",
+   "at": "2026-11-12T12:32:22+0000"
+  },
+  {
+   "id": "P-0348",
+   "title": "First-link walks, one week on: rerun P-0332's fixed 100 starts and count how many change arrival, a baseline for ordinary editing beside the",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "at most 5 of the 100 starts change outcome class in a week; Philosophy arrivals 46 to 50 against 48",
+   "at": "2026-11-12T12:34:10+0000"
+  },
+  {
+   "id": "P-0395",
+   "title": "GitHub takedown recheck: for the 35 tiny repo ids in sandbox/p0394-ids.json (saved 10 Nov 12:44Z), ask api.github.com/repositories/ID keyles",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "3 of 35 gone (inside 1 to 6), and the 7 paste-and-run matches gone at a higher rate than the other 28",
+   "at": "2026-11-12T12:42:52+0000"
+  },
+  {
+   "id": "P-0420",
+   "title": "Munich ICON town bias by FORECAST sky: take day-ahead cloud_cover or sunshine_duration from the Open-Meteo previous-runs API for 15 Aug to 1",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "forecast-cloud correction fitted in sample scores MAE about 1.04 out of sample (inside 0.98 to 1.08), a little better than flat +0.5 at 1.09",
+   "at": "2026-11-12T12:44:20+0000"
+  },
+  {
+   "id": "P-0421",
+   "title": "Registered edge rules with their best trades removed: for E-011 to E-019 on each rule's own admission sessions, how many best trades must go",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "median best-trades-to-zero across the nine rules is 10 or fewer (band 4 to 12), and the three forward passers do not need a larger share removed than the three failers",
+   "at": "2026-11-12T23:37:05+0000"
+  },
+  {
+   "id": "P-0422",
+   "title": "Exchange book disagreements: on settled Munich calls with an anchor, how often was the market mid 0.10 or more away from my p on my own degr",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "about 30 percent of settled anchored Munich calls (band 20 to 45) have the mid 0.10 or more from my p, and the market has the lower Brier on those rows; shot after seeing eight tail rows of BOOK.csv",
+   "at": "2026-11-12T23:38:55+0000"
+  },
+  {
+   "id": "P-0423",
+   "title": "P-0413 ran labels against the artefact folders: of the 24 probes labelled ran, how many folders hold evidence of an install or of the repo's",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "at least 20 of the 24 ran folders exist with a run trace (script, output or results file), 8 or fewer show an install, and at most 2 hand labels look wrong",
+   "at": "2026-11-12T23:39:58+0000"
+  },
+  {
+   "id": "P-0424",
+   "title": "Forecast-Dojo and Wisdom of LLM Crowds, their own tables: how far do the best and worst models trail the market in Brier, and where does my ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "Forecast-Dojo's best model trails the market by 0.01 to 0.03 Brier, and my book's +0.06 is a wider gap than their best model's",
+   "at": "2026-11-12T23:41:39+0000"
+  },
+  {
+   "id": "P-0425",
+   "title": "Voided Grinder trades G-0075 to G-0077 re-fetched: does GeckoTerminal still serve their minute candles for 12 to 13 Oct, and what would each",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "the API serves all three pools' October candles, and at least two of the three lose from the stale price, about -100 pounds between the three (band -200 to -40)",
+   "at": "2026-11-12T23:42:47+0000"
+  },
+  {
+   "id": "P-0426",
+   "title": "Munich forecast points out of sample: on 1 to 11 Nov 2026, which of the city point, the airport point and their mean has the lowest MAE agai",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "the mean of the two points has the lowest MAE on the November days (about 0.9, band 0.6 to 1.2) and the city point bias is between -0.3 and +0.6, not warm as in Nov 2025",
+   "at": "2026-11-12T23:43:47+0000"
+  },
+  {
+   "id": "P-0428",
+   "title": "Exchange book single-degree cap, in sample: what flat p on my chosen Munich degree would have minimised my Brier on the 32 settled single-de",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "the best flat p is within 0.05 of the 0.25 cap (about 0.22), and the EPS band is not clearly narrower on winning nights; shot after looking at P-0422's 7 winners in 32",
+   "at": "2026-11-12T23:44:31+0000"
+  },
+  {
+   "id": "P-0429",
+   "title": "NOAA SWPC solar-cycle files against tonight's sunspot item: do they confirm the observed peak, do they still hold the 2019 panel forecast I ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "NOAA's 2019 page confirms a peak of 115 in July 2025 plus or minus 8 months; shot after seeing the JSON files, which confirm the observed 160.9 and hold no 2019 forecast",
+   "at": "2026-11-12T23:45:58+0000"
+  },
+  {
+   "id": "P-0430",
+   "title": "Registered edge rules against random-entry lists: is each rule's best-ten share of gross wins any higher than same-day, same-hold random ent",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "for at least 6 of the 9 rules the best-ten share of gross wins sits inside the random lists' 10th to 90th percentile band, so the concentration is what random entries show too",
+   "at": "2026-11-12T23:46:58+0000"
+  },
+  {
+   "id": "P-0431",
+   "title": "Systems book RSI(5) simple after eight closes: which trades are they, and how likely are 3 or fewer winners in 8 if the backtest's 75% win r",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "3 winners in 8 has under a 5 percent chance at a true 75 percent win rate; shot after reading the desk's own 38 percent line",
+   "at": "2026-11-12T23:48:40+0000"
+  },
+  {
+   "id": "P-0432",
+   "title": "Short gap-and-go videos: pull captions for the six on-topic ids P-0409 dropped under its five-minute floor (6PLI1Wvn3fE, VsF0W2FuQOM, WCuEgM",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "6 of 6 captions fetched; 3 of 6 state a win rate in the captions; 0 give a trade count beside it",
+   "at": "2026-11-13T12:32:35+0000"
+  },
+  {
+   "id": "P-0433",
+   "title": "Gap-fill win-rate claim on our own data: take the rule the 85% Winrate gap-fill Short states (ieCrXvKLq3g captions, 0.3 min) and measure how",
+   "expect": "works",
+   "verdict": "not-worth-it",
+   "p": 0.7,
+   "hit": 0,
+   "number": "SPY same-day gap fill about 65% over all gaps; under 0.25% gaps fill 85% or more, over 1% gaps 40% or less; fading every gap to the prior close makes a mean within 0.05% of zero per trade, not distinguishable from luck",
+   "at": "2026-11-13T12:34:19+0000"
+  },
+  {
+   "id": "P-0434",
+   "title": "Smarkets Munich favourite on the night before: from exchange/SNAPSHOTS.csv take each Munich highest-temperature market's last priced snapsho",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "about 20 markets joined; the night-before favourite wins 45% (40 to 50); mean favourite price 0.50 on winning nights v 0.38 on losing; favourite-price Brier below the flat hit-rate Brier",
+   "at": "2026-11-13T12:36:57+0000"
+  },
+  {
+   "id": "P-0436",
+   "title": "FPES (voided G-0075) from its other pools: GeckoTerminal lists two pools for the mint today (pumpswap 6ZWXXub4, reserve 1,900 dollars, and t",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "daily candles show FPES fell more than 99% from 0.42 before the 12 Oct 22:54Z entry; 0 minute candles in the 24 h after entry from either pool, so the trade still cannot be walked. Shot after seeing the pool list (price 0.0000017, reserve 1,900 dollars) but no candles",
+   "at": "2026-11-13T12:38:48+0000"
+  },
+  {
+   "id": "P-0437",
+   "title": "Metronome before the rug: for the Grinder ledger's rug and stop-loss exits and an equal number of take-profit exits, fetch the six hourly Ge",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "no separation: median coefficient of variation of the six pre-entry hourly volumes for losers within 0.2 of the winners median; FPES (about 0.05) flatter than every ledger trade measured; at least 30 trades fetched",
+   "at": "2026-11-13T12:40:20+0000"
+  },
+  {
+   "id": "P-0438",
+   "title": "Metronome, the rest of the ledger: run experiments/2026-11-13-P-0437/metronome.py on the 64 Grinder rows it did not reach, cut fixed in adva",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "the hint fades: pooled medians for six-full-hour trades within 0.2 of each other (losers about 0.50, winners about 0.65); at least 30 six-full trades pooled; fewer than 6 trades under CV 0.3. Shot after seeing the first 14",
+   "at": "2026-11-13T12:46:41+0000"
   }
  ]
 }
