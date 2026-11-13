@@ -1,0 +1,159 @@
+{
+ "listened_min": 5.0,
+ "log_messages": 158,
+ "creates": 148,
+ "creates_per_min": 29.6,
+ "sampled": 20,
+ "with_mint": 20,
+ "creator_share_median": 0.0043,
+ "creator_share_max": 0.0663,
+ "buckets": {
+  "0": 1,
+  "under 1%": 14,
+  "1 to 5%": 3,
+  "5 to 10%": 2
+ },
+ "creators_distinct": 19,
+ "rows": [
+  {
+   "sig": "rge3tTfwCMVghM9zwUko8oCP3NLxFtcSrvDBHYTo3HkLUKFQw78HFLniKGh4MDgJNCiRA9BX8wGZNCzMnjNh4xM",
+   "mint": "FgNUkSav82MNc4mCJf4t6xWGri7Dz18wFTuRzL7wpump",
+   "creator": "5gGYQrV59YF9x5LdVoCQxZH9mm5rUCXsPdHRr99esTjM",
+   "creator_tokens": 0,
+   "share": 0.0
+  },
+  {
+   "sig": "2NNNnLSdNC5oUs2nC7Lj9hPFUYe4mCazfFF4cYEUDFzxkR9YjP7CcNS79VLUgvSe5p3BkSWinH4HD7cJ7zk1zMKY",
+   "mint": "88df9VfAc1s4mXzumGzXamN15Ps8Ui3McTQmxzezpump",
+   "creator": "Ce7gsVXJVPHbXSNziGyzniE7NJvpnaCwCX7yQgyzySG7",
+   "creator_tokens": 5611031.393931,
+   "share": 0.005611031393931
+  },
+  {
+   "sig": "38JttjDAEkUjQCXfuy1TWfNhXTALSDVKCHiZwQuRXCrjAVqbRdX7KuiffRCv892VtwADmYZmyCYHNHvVjdEaZEv8",
+   "mint": "DvZ2mMF8rkr3aB2MJGKySVaaSVd5Tr9cYUeRnei5pump",
+   "creator": "BuSVfzErsPNWrZ9uZ7CnnVKmHxPQTcnQFex27SuYfshg",
+   "creator_tokens": 2111106.17304,
+   "share": 0.0021111061730399996
+  },
+  {
+   "sig": "KSXon8ECGHw8WGq2WvuLprFkvMBmQEeG6YmbUdeuMczWb7bs9esxpQM3RTNUj1JWehntjywoJCcMM9uPVTffnAN",
+   "mint": "7PsgeRLnjZV3jtpS9SQPhHKdCovC8J93sD9Rnj1tpump",
+   "creator": "Hzc6DqRmupyVkA4BrfcAKL3gYiyg8WFSPwmiuoyUgTqe",
+   "creator_tokens": 33709688.509677,
+   "share": 0.033709688509677004
+  },
+  {
+   "sig": "23Y6Xip6du7nkzCn9TR2WtgJ5oZDrKRDbo16KzzzdgqRCx54BDaBfQYMEhL1YCWDKaG8L7g8tZHV2MzWxQvYg7pZ",
+   "mint": "B7F2dQXL7Lp4tCLxxEp3RrvLxpMNrR2pmrKEDGvEpump",
+   "creator": "EJ44g4nYp6E9nogEjAskCQhtJZAeW5fvnF1gApQXg9w5",
+   "creator_tokens": 3163515.76486,
+   "share": 0.00316351576486
+  },
+  {
+   "sig": "4DpXkGVWN8St5WHrKt6VsipWf6fjD1vfty6tVi5zdMMKUN8chu1VWaR1rLyQJSYmhsDYAsDMcsS3PEgtbu6ZqRmL",
+   "mint": "3AqFv1fkbnWC5yWZrdGo5Hg7Yj9KNhwjpA3jyxo5pump",
+   "creator": "F4FoYzbdeqJ8tkzS1mkjwP36M6SvxD2z8T3pEcY9d1YK",
+   "creator_tokens": 2467071.716458,
+   "share": 0.0024670717164579996
+  },
+  {
+   "sig": "WbmhvMN6EfR8nsWbdwtrgZ5oZer3VmJgoQ15AuX2rKUEkpM1JCzsH4td8TuM98c4D49idCwty4TFhQ9qs5Euzh8",
+   "mint": "EzKbHpKAbonAy4R3BP5x4waFrQTjKKvrASqVifDbpump",
+   "creator": "247S5Wx8tz1Vf5GqKTB7ECjC1E8cZ3eu44Ktgxm9PPWF",
+   "creator_tokens": 66285714.223523,
+   "share": 0.066285714223523
+  },
+  {
+   "sig": "41uhCbrCgRr3oVbq1LRJ5hgcjdjBhQMk8QBBZK16UsLAxQnzsf4YKVNb3KcCTPY8GiGCKEBjFkG7ZHGyXgLAKNzj",
+   "mint": "6KsdmhU5QBv6vXJpNwJ1bVFy5HcAbvVAAy5Qgzuspump",
+   "creator": "5VRxdU4B1PY1nrFsK6H9SMEguhfY8M392kuV4CvNPNsL",
+   "creator_tokens": 40329.721499,
+   "share": 4.0329721498999996e-05
+  },
+  {
+   "sig": "mCkKtGzNskBByfwrzWTKg9xGRU9zMWZfQoDyPEq8Y58uU8SGzi61N1J6pk94GCaApL5Ra3ZBEpY3Qx4zC6B4pz7",
+   "mint": "3cuDmrZyQmaMTecTVTuRBoQSfQwnoSPBQpofnSSPpump",
+   "creator": "ALpmFN6ofy8dSc49PmuTEeX3rET95a8FWa4PEoFMzVXR",
+   "creator_tokens": 58884365.149458,
+   "share": 0.058884365149457996
+  },
+  {
+   "sig": "4CBhmHqStpFeeWYQdZy8qX9AtpuVJj6qTo4BpboJccNikperzFro3M4igyXuJVQdYMCpDQADT7NEzjFKTJMyTruG",
+   "mint": "7RRCQ1czxpWyL7j3CVi28PqFutzQgvYMmvuLMwHMpump",
+   "creator": "2TBT8fyfPidczxwXsfawh2uRivbH84W5i9ohdVy1rfYL",
+   "creator_tokens": 4222331.475873,
+   "share": 0.004222331475873
+  },
+  {
+   "sig": "Qh583MtZ1BJJPCJzQMKyiuoGN88fcFmjWnz7vDSHpPeb87sg6EAtnbMGeirHEmQ7TJdiSYMddzBpqJz6RNoLiNF",
+   "mint": "D1AUDG4XKC1Md8PkcBnBJwJadYzKQbLCzLCfAdGZpump",
+   "creator": "2B89uAAEudrpc6hY3yMiJ4XVjYV38nqXPtw3tCRDgxHn",
+   "creator_tokens": 3471812.24557,
+   "share": 0.00347181224557
+  },
+  {
+   "sig": "4MT5UAgAnKDbxMyzXKcjzYWrXbc2m2NEvL3PDXvELMBWcCBAkQZpMR6EzY2NUEVrgzmAaz5ZRAdisZCFBHZh6eGh",
+   "mint": "C8JYaeQdoUx8urS6yo8nfNZstxTknmvLB4W1YZMppump",
+   "creator": "FLF5njoRhNyEnJ87Xb1rEZntRGjv226SafZeZ4KdfGhU",
+   "creator_tokens": 3470075.086473,
+   "share": 0.0034700750864729998
+  },
+  {
+   "sig": "2R5AHPRjjuaqevWvUnzdrbZ8PsWLoJ5bnbUBm5cEpPgYJkQH8A7GqsprCBw6xugFgzPSwaQKQRkdCgPh3mTCXKbg",
+   "mint": "27qn3JMaCJo5n8A3sqgNziSJDqJ22anczppqeqhapump",
+   "creator": "G8kiCZzXnQLR1tafZCSx8hZ8jWfVjDYQjYybzAnGZ6So",
+   "creator_tokens": 7017716.698402,
+   "share": 0.007017716698402
+  },
+  {
+   "sig": "3mT37r7njPcBWm88AJiRfRepNvCJ8iNUXpooBCi32JcL5PMWNCtyrRgfNoHNyBj98F3Yrd33inq778mtJxgDFtFT",
+   "mint": "CSF2SGMgBknwYEWMbepDLfVstcmUCqz6sEVP4C1opump",
+   "creator": "5TPLRm9LeizVQvw9FrqotcKajRtM8UjnSErjMQfgBTqj",
+   "creator_tokens": 4851765.479414,
+   "share": 0.004851765479414
+  },
+  {
+   "sig": "3cqMQoqEceAB979bCLUMwUyL6dVSV2pU2MkGuAzaDr8JyJ4uVgL4BkRWVLMPzVrYyUHLxJsLEzirmDfZR3Hcp5G4",
+   "mint": "2fXWVd6NGmu2pjZSBtDFXWWiRvcNcCBMG47sB3XPpump",
+   "creator": "AuoFhRNUNhSiocs5crzXiaasioxCvfMjLun2EQECVMLd",
+   "creator_tokens": 34612903.225806,
+   "share": 0.034612903225806
+  },
+  {
+   "sig": "4XA8aPkMQphj5xDQairMXHvvgKgEfphPpMW1yVxY2FPV61jLPALceQQo4nHpvm94WzJwUjZ2wSZkAyHunyLon2jT",
+   "mint": "9tKnBSLKYpZzRwWu7C1QaGKGhauZYkGWPKbPGqkjpump",
+   "creator": "2fJfM9ZDsGNMEzKJpx98i82pAK5g3VfVt6rRV9HaLpLD",
+   "creator_tokens": 34199203.120618,
+   "share": 0.034199203120618
+  },
+  {
+   "sig": "5MzGUkB4uwHurUq7R2ubWqHadfTS4QsLXxUBtQKbxBuUjTwqtA3pyqNRqqopfE7jR3Bqt5ecFp9ocJXMxWg2DY8C",
+   "mint": "6Looni4vbzLraaCZPh7hrivNm1o7316ATcT4XpCUpump",
+   "creator": "D5NqqauhvqXLviLReJGxRkj5TyV6Pz8hrbYm7NpsGDVj",
+   "creator_tokens": 8741264.595445,
+   "share": 0.008741264595445
+  },
+  {
+   "sig": "21W7iCZgN4H2nnxiu67T61ZKwSrHsCJq2U9SR7Ra9bsBMrjhpV7pwgB8JRA6Ypn4w8E8uRD1FrUojdS1PkUCNHhf",
+   "mint": "3kDNDwGefTocqhhH3RNRLV1VpGTCpoWCoZBjcySzpump",
+   "creator": "4cXK7qHivb8zo3eRVdkJJvKGeJx1FYRX54JJdLAphybk",
+   "creator_tokens": 3470075.086473,
+   "share": 0.0034700750864729998
+  },
+  {
+   "sig": "2Gca9Bn5hfvDh1P1q6aybum4nLLvE1d2zB5wRnie3WnJht337rfVMT87oyZZvSaFyjo4afq9aEqzxg65kfoBWcnA",
+   "mint": "2qACQcEvjeDZ4UANWhp1DnjFkH8HrmKJeRVXira1pump",
+   "creator": "5TPLRm9LeizVQvw9FrqotcKajRtM8UjnSErjMQfgBTqj",
+   "creator_tokens": 4292615.574701,
+   "share": 0.004292615574701
+  },
+  {
+   "sig": "2fa4MvoNTFPpA59c6cqiAd5rV1AkpjpijAPnNo7ixk1xDrrsoKz3XdPByiqca7KZq8TWQqV2kNw2UdKwjGPYebTc",
+   "mint": "CeKPUoLRYrGuX4uMU46773aE6obDcs66oWRXQLf9pump",
+   "creator": "2TtjkpojGuJonZCkUivQdnwP4wobWCAgjYq3rtvzhc4N",
+   "creator_tokens": 2084769.123643,
+   "share": 0.002084769123643
+  }
+ ]
+}

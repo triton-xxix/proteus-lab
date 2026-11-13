@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 358 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
+Verdicts so far: 359 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 
-## Queue (13 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,14 +23,14 @@ Verdicts so far: 358 works, 8 broken, 40 blocked, 18 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
-| P-0440 | pump.fun sniper: how many new-token create events per minute reach a read-only public RPC listener, and what share hold a large dev stake? | harvest | none |  | 0 | 25 min |
 | P-0441 | cinematic-skill: does the starter explainer render here using macOS say and skia-python, and how long does the render take? | harvest | none |  | 0 | 30 min |
 | P-0442 | MOT postcode lottery: do open DVSA results reproduce 89.7% London v 81.3% Scotland, and does the gap survive a vehicle age control? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (424)
+## Verdicts (425)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-13 | P-0440 | pump.fun sniper: how many new-token create events per minute reach a read-only public RPC listener, and what share hold a large dev stake? | **works** | Public RPC websocket, keyless, 5 min: 148 creates, 29.6 a minute. Creator's own wallet after the create tx, 20 sampled: median 0.43% of supply, max 6.63%, 2 of 20 over 5%, 19 of 20 bought in their own create; same-slot bundles from other wallets not counted. | `experiments/2026-11-13-P-0440` | 6 min, 11 calls, 0 denied |
 | 2026-11-13 | P-0439 | guizang-game-skill: does its single-HTML packager bundle a toy three.js scene with zero network requests, and at what size? | **works** | Packager ran unchanged on a toy three.js game in 1.5 s: 1,233,434-byte HTML holding all 9 assets; the 3 fetch loads hit data URLs with 0 network calls. The shim wraps fetch only, so TextureLoader's img and new Audio() still request their paths (read from the bundle, not seen in a browser). | `experiments/2026-11-13-P-0439` | 2 min, 24 calls, 2 denied |
 | | | | | denied: Bash `tar -tzf /Users/triton/PROTEUS/sandbox/p0439/repo.tar.gz`; Bash `/usr/local/bin/node --version` | | |
 | 2026-11-13 | P-0438 | Metronome, the rest of the ledger: run experiments/2026-11-13-P-0437/metronome.py on the 64 Grinder rows it did not reach, cut fixed in advance (only trades with volume in all six pre-entry hours), and pool with the first 14: is the losers median CV still well under the winners (0.377 v 0.732 on 7 v 7), and what share of trades with CV under 0.3 lost against the ledger base rate? | **works** | Pooled 28 trades with volume in all six pre-entry hours: losers median CV 0.598 (n 19) v take-profits 0.861 (n 8), 0.26 apart (shot within 0.2, miss: the hint faded less than called). Loss share 2 of 2 under CV 0.3, 8 of 11 at 0.3 to 0.6, 9 of 15 above, against 68% for all 28; 7 of the 8 flattest lost, chance about 0.22 at that base rate. 28 six-full, not the 30 called; 2 under 0.3 (shot under 6, hit). Reached 28 of 64 rows before the cap, 1 refused 429; 36 older rows unreached. A lean with a mechanism and no weight; it would not have changed a Grinder entry. Shot after seeing the first 14. Nothing in grinder written. Next: close. | `experiments/2026-11-13-P-0438` | 6 min, 6 calls, 0 denied |
