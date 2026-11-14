@@ -1,5 +1,5 @@
 {
- "next_id": 449,
+ "next_id": 450,
  "items": [
   {
    "id": "P-0001",
@@ -11388,6 +11388,32 @@
     "number": "5-session time stop moves the backtest mean per trade by about -0.05 points (no help) and the win rate from about 75% to about 70%",
     "at": "2026-11-14T12:36:32+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0449",
+   "title": "SPY gap fade with a stop: P-0433's fade of SPY gaps over 1% since 2009 (443 gaps, +0.198% a trade after its cost). Add 0.05% slippage at the open and a stop at twice the gap; daily bars cannot order stop and fill, so report both the worst case (stop first when both touched) and the best case, and the mean by prior-20-day realised-vol tercile. Refill 170: by year, 2020 plus 2022 are 27% of the total, 2009 plus 2011 another 36%, 13 of 18 years positive; the extra slippage alone leaves +0.148%.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-14",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-14T12:38:00+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "worst-case mean per trade with slippage and a 2x-gap stop: +0.05%, best case about +0.17%",
+    "at": "2026-11-14T12:38:07+0000"
    }
   }
  ]

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 366 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Verdicts so far: 366 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0449 | SPY gap fade with a stop: P-0433's fade of SPY gaps over 1% since 2009 (443 gaps, +0.198% a trade after its cost). Add 0.05% slippage at the open and a stop at twice the gap; daily bars cannot order stop and fill, so report both the worst case (stop first when both touched) and the best case, and the mean by prior-20-day realised-vol tercile. Refill 170: by year, 2020 plus 2022 are 27% of the total, 2009 plus 2011 another 36%, 13 of 18 years positive; the extra slippage alone leaves +0.148%. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (433)
 
