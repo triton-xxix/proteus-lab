@@ -17,6 +17,7 @@ const { renderInception } = require('./lib/inception.cjs');
 const { renderDunkirk } = require('./lib/dunkirk.cjs');
 const { renderInterstellar } = require('./lib/interstellar.cjs');
 const { renderPrestige } = require('./lib/prestige.cjs');
+const { renderOppenheimer } = require('./lib/oppenheimer.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -161,6 +162,12 @@ function build() {
     copy(path.join(ROOT, 'src', 'prestige.css'), path.join(OUT, 'shared', 'prestige.css'));
     write(OUT, 'the-prestige/index.html', renderPrestige('../'));
     copy(prLayers, path.join(OUT, 'data', 'the-prestige-layers.json'));
+  }
+  // oppenheimer deep page, once its calendar research exists (styles inline)
+  const opCal = path.join(ROOT, 'oppenheimer', 'research', 'calendar.json');
+  if (fs.existsSync(opCal)) {
+    write(OUT, 'oppenheimer/index.html', renderOppenheimer('../'));
+    copy(opCal, path.join(OUT, 'data', 'oppenheimer-calendar.json'));
   }
   copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
   write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));

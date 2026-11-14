@@ -262,6 +262,10 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   the first child digest (Memento, 7 Oct night) for theme vocabulary drift and still captions, which
   the child writes blind. (6) The hook's `READ_ROOTS` is all of `/Users/triton/`: the dashboard's
   privacy rests on the key never entering a commit (`.gitignore`), not on the hook.
+  (7) Oppenheimer step two (queued 14 Nov 2026 Workshop): the deep page is a calendar only. Add film
+  order, which scene the film shows first and how long each of the three strands holds the screen, as a
+  braid like Memento's; needs a research child with scene timestamps from a fetched source, more than one
+  Workshop slot. Data goes in `sites/nolan/oppenheimer/research/`, page in `lib/oppenheimer.cjs`.
 
 - **2026-10-15 · YouTube caption block on this Mac.** A burst of caption fetches at 06:30 got the IP
   blocked (IpBlocked on youtube_transcript_api, yt-dlp subs and the watch page). `sandbox/yt_retry.py`
