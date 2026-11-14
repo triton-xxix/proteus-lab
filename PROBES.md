@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 362 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Verdicts so far: 362 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0445 | Munich fog flag: over P-0418's year of EDDM days, do days with FG or FZFG in any METAR 00Z to 09Z show a warmer icon_seamless lead-1 city forecast error (METAR high minus forecast) than days without? Refill 168 found 9 Nov: freezing fog 21Z to 07Z, stratus 100 to 500 ft till 12Z, METAR high 5.0 v forecast 8.5 at 14Z; the 8.6 was at 20Z, UTC v Berlin day cut changes nothing. Report mean error both groups, n, and a permutation p. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (429)
 

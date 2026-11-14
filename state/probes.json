@@ -1,5 +1,5 @@
 {
- "next_id": 445,
+ "next_id": 446,
  "items": [
   {
    "id": "P-0001",
@@ -11273,6 +11273,32 @@
    "calls": 4,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0445",
+   "title": "Munich fog flag: over P-0418's year of EDDM days, do days with FG or FZFG in any METAR 00Z to 09Z show a warmer icon_seamless lead-1 city forecast error (METAR high minus forecast) than days without? Refill 168 found 9 Nov: freezing fog 21Z to 07Z, stratus 100 to 500 ft till 12Z, METAR high 5.0 v forecast 8.5 at 14Z; the 8.6 was at 20Z, UTC v Berlin day cut changes nothing. Report mean error both groups, n, and a permutation p.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-14",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-14T12:32:25+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "fog-day mean error minus clear-day mean error: -1.5 C (forecast warmer on fog days)",
+    "at": "2026-11-14T12:32:30+0000"
+   }
   }
  ]
 }
