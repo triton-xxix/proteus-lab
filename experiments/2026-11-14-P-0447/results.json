@@ -1,0 +1,35 @@
+{
+ "EGLL": {
+  "days": 365,
+  "flag_n": 48,
+  "flag_mean": -0.14,
+  "other_mean": 0.315,
+  "gap": -0.454,
+  "perm_p": 0.0032,
+  "warm_misses_2p5": 4,
+  "caught": 2,
+  "flag_share_of_days": 0.132
+ },
+ "LFPG": {
+  "days": 365,
+  "flag_n": 58,
+  "flag_mean": 0.124,
+  "other_mean": 0.591,
+  "gap": -0.467,
+  "perm_p": 0.0001,
+  "warm_misses_2p5": 3,
+  "caught": 1,
+  "flag_share_of_days": 0.159
+ },
+ "EDDM": {
+  "days": 365,
+  "flag_n": 67,
+  "flag_mean": -0.696,
+  "other_mean": 0.369,
+  "gap": -1.064,
+  "perm_p": 0.001,
+  "warm_misses_2p5": 17,
+  "caught": 9,
+  "flag_share_of_days": 0.184
+ }
+}

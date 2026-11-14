@@ -11340,22 +11340,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-14T12:34:31+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-14T12:35:38+0000",
+   "note": "Low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) gap on ICON lead-1 day high, Nov 2025 to Oct 2026: EGLL -0.45 C (48 days, perm p 0.0032), LFPG -0.47 (58, p 0.0001), EDDM -1.06 (67, p 0.0010). Shot said EGLL -0.6, both negative under p 0.05: hit, number a bit wide. Big warm misses caught: EGLL 2 of 4, LFPG 1 of 3, EDDM 9 of 17; the flag matters most where ICON is worst. In-sample for the two new stations, cut-offs set from one Munich day. Next: close (it generalises at half size; whether it pays needs a priced bucket market, no desk here prices one).",
+   "artefacts": [
+    "experiments/2026-11-14-P-0447"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "low-cloud gap at EGLL: -0.6 C, both stations negative with permutation p under 0.05",
-    "at": "2026-11-14T12:34:36+0000"
+    "at": "2026-11-14T12:34:36+0000",
+    "hit": true
    }
   }
  ]
