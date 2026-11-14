@@ -1,0 +1,40 @@
+{
+ "gaps": 443,
+ "replicate_p0433_cost_only": 0.1976,
+ "nostop_with_slip": 0.1476,
+ "stop_worst": 0.03,
+ "stop_best": 0.1598,
+ "stop_touched": 82,
+ "both_touched": 19,
+ "win_worst": 0.467,
+ "t_worst": 0.5,
+ "coin_worst_mean": -0.1322,
+ "p_worst_v_coin": 0.002,
+ "vol_cuts_annualised": [
+  0.172,
+  0.269
+ ],
+ "by_vol": {
+  "low": {
+   "n": 147,
+   "nostop": 0.1347,
+   "worst": 0.0963,
+   "best": 0.1294
+  },
+  "mid": {
+   "n": 148,
+   "nostop": 0.1201,
+   "worst": 0.0094,
+   "best": 0.1059
+  },
+  "high": {
+   "n": 148,
+   "nostop": 0.188,
+   "worst": -0.0154,
+   "best": 0.2437
+  }
+ },
+ "years_positive_worst": 12,
+ "years": 18,
+ "share_2020_2022_worst": 0.736
+}

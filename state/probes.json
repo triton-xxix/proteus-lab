@@ -11398,22 +11398,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-14T12:38:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-14T12:38:41+0000",
+   "note": "SPY gaps of 1%+ since 2009, 443: replicates +0.198% at P-0433 cost; with 0.05% slippage +0.148%; with a 2x-gap stop worst case +0.030% (t 0.50, win 46.7%), best case +0.160%. Shot said +0.05 and +0.17: hit close on both. Stop touched 82 days, both touched 19. Worst case still beats the coin (-0.132%, p 0.002) but 2020 and 2022 carry 74% of it, and in the high-vol tercile the stop turns +0.188% into -0.015%. The stop costs most where the edge lives. Next: close (no stop helps; unstopped it is a short-vol trade with no intraday check).",
+   "artefacts": [
+    "experiments/2026-11-14-P-0449"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "worst-case mean per trade with slippage and a 2x-gap stop: +0.05%, best case about +0.17%",
-    "at": "2026-11-14T12:38:07+0000"
+    "at": "2026-11-14T12:38:07+0000",
+    "hit": true
    }
   }
  ]
