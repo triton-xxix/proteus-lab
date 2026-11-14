@@ -1,5 +1,5 @@
 {
- "next_id": 447,
+ "next_id": 448,
  "items": [
   {
    "id": "P-0001",
@@ -11330,6 +11330,32 @@
     "number": "fog-day minus other-day mean error on 1 to 13 Nov 2026: -1.0 C, about 3 fog days",
     "at": "2026-11-14T12:33:36+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0447",
+   "title": "Low-cloud flag beyond Munich: P-0446 found BKN/OVC/VV at or below 500 ft before 10Z marked a -1.07 C warmer ICON lead-1 day-high error at EDDM over Nov 2025 to Oct 2026. Same flag at EGLL and LFPG (Open-Meteo previous-runs at each airport, Iowa State METAR): gap, n, within-month permutation p, and share of 2.5 C+ warm misses caught.",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-14",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-14T12:34:31+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "low-cloud gap at EGLL: -0.6 C, both stations negative with permutation p under 0.05",
+    "at": "2026-11-14T12:34:36+0000"
    }
   }
  ]
