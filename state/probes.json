@@ -11427,22 +11427,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-14T12:39:09+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-14T12:40:02+0000",
+   "note": "Two open Munich markets at 12:39 UTC: stake on the favourite best offer 16.92 and 43.43 GBP, 101.93 and 139.23 across all offers; a 10 GBP back fills at the best offer on both (90.09 and 25.32, no slippage). Shot said under 20 on most and 2+ points of slippage: size split 1 of 2, slippage missed (0). Cost is the spread (6.1 and 4.5 points), which P-0434 already paid. GBP assumes quantity/1e4 x price/1e4, unchecked; one moment, not the 14 nights. Next: promote (log best-offer stake at the favourite in exchange/volumes_log.py each night so the book can be priced at real size).",
+   "artefacts": [
+    "experiments/2026-11-14-P-0450"
+   ],
+   "minutes": 0,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "best offer at the favourite degree holds under 20 units on most open Munich markets; a 10-unit back moves the average price by 2 or more points",
-    "at": "2026-11-14T12:39:14+0000"
+    "at": "2026-11-14T12:39:14+0000",
+    "hit": true
    }
   }
  ]

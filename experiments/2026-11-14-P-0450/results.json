@@ -1,0 +1,69 @@
+{
+ "pulled_utc": "2026-11-14T12:39:44Z",
+ "markets": [
+  {
+   "market_id": "178102907",
+   "event": "November 14th, 2026",
+   "contracts": 11,
+   "favourite": "490911160",
+   "best_bid_pct": 84.03,
+   "offer_levels": [
+    {
+     "price_pct": 90.09,
+     "quantity": 187807,
+     "stake_gbp": 16.92
+    },
+    {
+     "price_pct": 90.91,
+     "quantity": 99911,
+     "stake_gbp": 9.08
+    },
+    {
+     "price_pct": 95.24,
+     "quantity": 797295,
+     "stake_gbp": 75.93
+    }
+   ],
+   "offer_levels_total": 3,
+   "stake_on_best_offer_gbp": 16.92,
+   "stake_on_all_offers_gbp": 101.93,
+   "ten_gbp_back": {
+    "filled_gbp": 10.0,
+    "avg_price_pct": 90.09,
+    "best_offer_pct": 90.09
+   }
+  },
+  {
+   "market_id": "178312814",
+   "event": "November 15th, 2026",
+   "contracts": 11,
+   "favourite": "491433692",
+   "best_bid_pct": 20.83,
+   "offer_levels": [
+    {
+     "price_pct": 25.32,
+     "quantity": 1715291,
+     "stake_gbp": 43.43
+    },
+    {
+     "price_pct": 27.03,
+     "quantity": 1440587,
+     "stake_gbp": 38.94
+    },
+    {
+     "price_pct": 27.4,
+     "quantity": 984809,
+     "stake_gbp": 26.98
+    }
+   ],
+   "offer_levels_total": 5,
+   "stake_on_best_offer_gbp": 43.43,
+   "stake_on_all_offers_gbp": 139.23,
+   "ten_gbp_back": {
+    "filled_gbp": 10.0,
+    "avg_price_pct": 25.32,
+    "best_offer_pct": 25.32
+   }
+  }
+ ]
+}
