@@ -11311,22 +11311,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-14",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-14T12:33:30+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-14T12:34:22+0000",
+   "note": "Out of sample 1 to 13 Nov 2026: fog gap -0.70 C on 3 fog days (shot said -1.0, about 3 days), against -0.79 in sample; 9 Nov alone (-3.6) carries it and was the day that started the question, so a coin shot (shot after looking at the 8 to 10 Nov METARs). Low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) is better on both samples: gap -1.28 in Nov, -1.07 on the year, 9 of 17 big warm misses caught v 7 for fog; either flag 11 of 17. One station, 13 days. Next: deepen (queue P-0447: low-cloud flag with a within-month permutation at EGLL and LFPG over the same year).",
+   "artefacts": [
+    "experiments/2026-11-14-P-0446"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "fog-day minus other-day mean error on 1 to 13 Nov 2026: -1.0 C, about 3 fog days",
-    "at": "2026-11-14T12:33:36+0000"
+    "at": "2026-11-14T12:33:36+0000",
+    "hit": true
    }
   }
  ]

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 363 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 364 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,12 @@ Verdicts so far: 363 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
-| P-0446 | Munich fog flag out of sample: P-0445 found fog-morning days (FG or FZFG before 10Z) ran -0.79 C warmer on ICON lead-1 city day high over Nov 2025 to Oct 2026 (p 0.0038). On 1 to 13 Nov 2026, does the gap hold, and does adding a cloud base under 500 ft before 10Z catch more of the 2.5 C+ warm misses than the fog code alone? | desk | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (430)
+## Verdicts (431)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-14 | P-0446 | Munich fog flag out of sample: P-0445 found fog-morning days (FG or FZFG before 10Z) ran -0.79 C warmer on ICON lead-1 city day high over Nov 2025 to Oct 2026 (p 0.0038). On 1 to 13 Nov 2026, does the gap hold, and does adding a cloud base under 500 ft before 10Z catch more of the 2.5 C+ warm misses than the fog code alone? | **works** | Out of sample 1 to 13 Nov 2026: fog gap -0.70 C on 3 fog days (shot said -1.0, about 3 days), against -0.79 in sample; 9 Nov alone (-3.6) carries it and was the day that started the question, so a coin shot (shot after looking at the 8 to 10 Nov METARs). Low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) is better on both samples: gap -1.28 in Nov, -1.07 on the year, 9 of 17 big warm misses caught v 7 for fog; either flag 11 of 17. One station, 13 days. Next: deepen (queue P-0447: low-cloud flag with a within-month permutation at EGLL and LFPG over the same year). | `experiments/2026-11-14-P-0446` | 0 min, 6 calls, 0 denied |
 | 2026-11-14 | P-0445 | Munich fog flag: over P-0418's year of EDDM days, do days with FG or FZFG in any METAR 00Z to 09Z show a warmer icon_seamless lead-1 city forecast error (METAR high minus forecast) than days without? Refill 168 found 9 Nov: freezing fog 21Z to 07Z, stratus 100 to 500 ft till 12Z, METAR high 5.0 v forecast 8.5 at 14Z; the 8.6 was at 20Z, UTC v Berlin day cut changes nothing. Report mean error both groups, n, and a permutation p. | **works** | Fog-morning days (FG or FZFG before 10Z, 58 of 365) ran -0.49 C against +0.30 on the rest: gap -0.79 C, within-month permutation p 0.0038. Shot said -1.5: direction hit, number about half. 7 of the 17 days with a 2.5 C+ warm miss were fog mornings (41% v 16% base); November widest (-1.77 v -0.30), October 2026 reversed (+0.36 v -0.07). One station, one model, in-sample year. Next: deepen (queue P-0446: out of sample on 1 to 13 Nov 2026 plus a cloud-base under 500 ft flag). | `experiments/2026-11-14-P-0445` | 0 min, 8 calls, 0 denied |
 | 2026-11-13 | P-0444 | Called-shot numbers: across scored shots whose number is a band, how often does the measured value land inside it, split by stated p, and are bands at p 0.6 wider than at 0.7 and up? | **works** | 201 scored shots, mean p 0.66: the verdict hit about 94%, so p is far too low; 53 banded numbers carry a hit or miss mark and 34 hit (64%). Two-sided bands get wider as p rises (median relative width 0.77, 1.00, 1.20), not narrower. Regex parse and self-marked notes, 32 two-sided bands. | `experiments/2026-11-13-P-0444` | 0 min, 4 calls, 0 denied |
 | 2026-11-13 | P-0443 | Install provenance in artefact folders: of done probes whose note or README says install, npm or pip, how many folders name a version or a source URL, and which five are worst? | **works** | Of 32 installing probes with a folder, 25 (78%) name a version-looking string or a source and 10 (31%) name both; 7 name neither, worst P-0021, P-0064, P-0092, P-0067 (P-0413 a false hit). Shot about a third: missed on the loose count, hit on both; pattern matching, so 78% is an upper bound. | `experiments/2026-11-13-P-0443` | 0 min, 5 calls, 0 denied |
