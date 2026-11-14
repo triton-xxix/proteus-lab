@@ -1,0 +1,55 @@
+{
+ "rows": 22946,
+ "snapshots": 35,
+ "latest": "2026-11-06T23:25:36Z",
+ "full_books": 4408,
+ "kinds": {
+  "other": {
+   "books": 4408,
+   "markets": 183,
+   "median_contracts": 2.0,
+   "median_back_all": 102.6,
+   "median_lay_all": 97.34,
+   "median_width": 5.3,
+   "back_below_100": 162,
+   "lay_above_100": 39
+  }
+ },
+ "lay_locks": {
+  "books": 39,
+  "markets": 16,
+  "largest_pct_points": 2.1
+ },
+ "lay_lock_examples_closed": [
+  {
+   "snap": "2026-11-02T23:25:57Z",
+   "market": "Texas Senate Election Winner",
+   "lay_all": 102.1
+  },
+  {
+   "snap": "2026-10-31T23:27:23Z",
+   "market": "Georgia Gubernatorial Election Winner",
+   "lay_all": 101.56
+  },
+  {
+   "snap": "2026-10-20T22:26:19Z",
+   "market": "Michigan Gubernatorial Election Winner",
+   "lay_all": 101.49
+  },
+  {
+   "snap": "2026-10-16T22:25:15Z",
+   "market": "Iowa Senate Election Winner",
+   "lay_all": 100.98
+  },
+  {
+   "snap": "2026-10-17T22:25:28Z",
+   "market": "Iowa Senate Election Winner",
+   "lay_all": 100.98
+  }
+ ],
+ "tonight": {
+  "full_books": 55,
+  "median_back_all": 104.91,
+  "median_lay_all": 95.26
+ }
+}

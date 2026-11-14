@@ -1,0 +1,513 @@
+{
+ "nights": 14,
+ "from": "2026-10-23",
+ "to": "2026-11-06",
+ "totals": {
+  "cand": {
+   "vault": 3833,
+   "hn": 128,
+   "gh": 547,
+   "arxiv": 328,
+   "yt": 168
+  },
+  "drop": {
+   "vault": 2973,
+   "hn": 51,
+   "gh": 226,
+   "yt": 118,
+   "arxiv": 16
+  },
+  "short": {
+   "vault": 42,
+   "hn": 40,
+   "gh": 45,
+   "arxiv": 28,
+   "yt": 32
+  },
+  "kept": {
+   "vault": 42,
+   "hn": 19,
+   "gh": 31,
+   "arxiv": 22,
+   "yt": 6
+  },
+  "testable": {
+   "hn": 6,
+   "gh": 19,
+   "yt": 5,
+   "vault": 8,
+   "arxiv": 2
+  }
+ },
+ "by_night": [
+  {
+   "date": "2026-10-23",
+   "cand": {
+    "vault": 261,
+    "hn": 8,
+    "gh": 47,
+    "arxiv": 23,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 182,
+    "hn": 2,
+    "gh": 16,
+    "yt": 10
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 4,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 2,
+    "gh": 4,
+    "arxiv": 2
+   },
+   "testable": {
+    "hn": 1,
+    "gh": 3
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "cand": {
+    "vault": 266,
+    "hn": 8,
+    "gh": 40,
+    "arxiv": 23,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 185,
+    "hn": 2,
+    "gh": 17,
+    "arxiv": 2,
+    "yt": 8
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 3
+   },
+   "kept": {
+    "vault": 3,
+    "gh": 2,
+    "arxiv": 2,
+    "hn": 1
+   },
+   "testable": {
+    "gh": 1,
+    "hn": 1
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "cand": {
+    "vault": 272,
+    "hn": 7,
+    "gh": 39,
+    "arxiv": 22,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 190,
+    "hn": 3,
+    "gh": 14,
+    "arxiv": 4,
+    "yt": 6
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 3
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 2,
+    "arxiv": 1,
+    "gh": 1,
+    "yt": 1
+   },
+   "testable": {
+    "hn": 1,
+    "gh": 1,
+    "yt": 1,
+    "vault": 1
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "cand": {
+    "vault": 272,
+    "hn": 5,
+    "gh": 40,
+    "arxiv": 23,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 197,
+    "hn": 3,
+    "gh": 15,
+    "yt": 10
+   },
+   "short": {
+    "vault": 3,
+    "hn": 2,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 1,
+    "gh": 2,
+    "arxiv": 1
+   },
+   "testable": {
+    "arxiv": 1,
+    "vault": 2
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "cand": {
+    "vault": 272,
+    "hn": 3,
+    "gh": 39,
+    "arxiv": 23,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 200,
+    "hn": 2,
+    "gh": 14,
+    "yt": 12
+   },
+   "short": {
+    "vault": 3,
+    "hn": 1,
+    "gh": 3,
+    "arxiv": 2
+   },
+   "kept": {
+    "vault": 3,
+    "gh": 1,
+    "arxiv": 1
+   },
+   "testable": {
+    "gh": 1,
+    "vault": 1
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "cand": {
+    "vault": 272,
+    "hn": 3,
+    "gh": 38,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 206,
+    "hn": 2,
+    "gh": 16,
+    "arxiv": 1,
+    "yt": 6
+   },
+   "short": {
+    "vault": 3,
+    "hn": 1,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 3
+   },
+   "kept": {
+    "vault": 3,
+    "gh": 2,
+    "arxiv": 2,
+    "yt": 1
+   },
+   "testable": {
+    "vault": 1,
+    "yt": 1
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "cand": {
+    "vault": 276,
+    "hn": 6,
+    "gh": 36,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 210,
+    "hn": 2,
+    "gh": 17,
+    "arxiv": 3,
+    "yt": 8
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 3
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 2,
+    "gh": 1,
+    "arxiv": 1
+   },
+   "testable": {
+    "gh": 1,
+    "arxiv": 1
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "cand": {
+    "vault": 276,
+    "hn": 11,
+    "gh": 39,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 215,
+    "hn": 4,
+    "gh": 17,
+    "yt": 9
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 3
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 1,
+    "gh": 3,
+    "yt": 1,
+    "arxiv": 1
+   },
+   "testable": {
+    "vault": 3,
+    "gh": 2
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "cand": {
+    "vault": 276,
+    "hn": 14,
+    "gh": 38,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 221,
+    "hn": 6,
+    "gh": 17,
+    "arxiv": 2,
+    "yt": 10
+   },
+   "short": {
+    "vault": 3,
+    "hn": 4,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "gh": 2,
+    "arxiv": 2,
+    "hn": 2
+   },
+   "testable": {
+    "gh": 1,
+    "hn": 1
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "cand": {
+    "vault": 276,
+    "hn": 13,
+    "gh": 38,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 227,
+    "hn": 7,
+    "gh": 15,
+    "arxiv": 4,
+    "yt": 10
+   },
+   "short": {
+    "vault": 3,
+    "hn": 4,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 1,
+    "gh": 3,
+    "arxiv": 2
+   },
+   "testable": {
+    "hn": 1,
+    "gh": 3
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "cand": {
+    "vault": 276,
+    "hn": 9,
+    "gh": 36,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 230,
+    "hn": 5,
+    "gh": 17,
+    "yt": 8
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 4,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 4,
+    "arxiv": 2
+   },
+   "testable": {
+    "gh": 3
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "cand": {
+    "vault": 276,
+    "hn": 11,
+    "gh": 38,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 233,
+    "hn": 5,
+    "gh": 19,
+    "yt": 10
+   },
+   "short": {
+    "vault": 3,
+    "hn": 4,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 2,
+    "gh": 2,
+    "arxiv": 2
+   },
+   "testable": {
+    "gh": 1,
+    "hn": 1
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "cand": {
+    "vault": 276,
+    "hn": 15,
+    "gh": 39,
+    "arxiv": 24,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 236,
+    "hn": 5,
+    "gh": 17,
+    "yt": 4
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 3
+   },
+   "kept": {
+    "vault": 3,
+    "gh": 1,
+    "arxiv": 1,
+    "yt": 1
+   },
+   "testable": {
+    "yt": 1
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "cand": {
+    "vault": 286,
+    "hn": 15,
+    "gh": 40,
+    "arxiv": 22,
+    "yt": 12
+   },
+   "drop": {
+    "vault": 241,
+    "hn": 3,
+    "gh": 15,
+    "yt": 7
+   },
+   "short": {
+    "vault": 3,
+    "hn": 3,
+    "gh": 4,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "kept": {
+    "vault": 3,
+    "hn": 2,
+    "gh": 3,
+    "arxiv": 2,
+    "yt": 2
+   },
+   "testable": {
+    "gh": 2,
+    "yt": 2
+   }
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+  "node": "v25.6.0",
+  "cli": "/Users/triton/PROTEUS/sandbox/bla/node_modules/bla-agents/dist/cli.js",
+  "plain_out": "ABCD-1234-1105=ok\nWXYZ-9999-3549=ok\nABCD-1234-0000=fail:checksum\nbad=fail:shape\nok_count=2\nhash_of_report=8962db2b\nfib39=63245986\nsalted=2778144320\n",
+  "plain_bytes": 1590,
+  "stages": [
+    {
+      "args": [
+        "harden",
+        "."
+      ],
+      "status": 1,
+      "ms": 537,
+      "stdout": "",
+      "stderr": "Unknown command: harden. Run \"bla --help\" for available commands.\n"
+    },
+    {
+      "args": [
+        "protect",
+        "dist/app.js"
+      ],
+      "status": 0,
+      "ms": 764,
+      "stdout": "\u001b[1m\u001b[36m╔══════════════════════════════════════════════════════════════════════════════╗\u001b[0m\n\u001b[1m\u001b[36m║  🛡️  BLA: Blind LLM Agents (bla-agents v1.1.0)                             ║\u001b[0m\n\u001b[1m\u001b[36m║  \u001b[33mPoison -> Exhaust -> Hallucinate. Make Reverse Engineering Bankrupt Again.\u001b[36m  ║\u001b[0m\n\u001b[1m\u001b[36m╚══════════════════════════════════════════════════════════════════════════════╝\u001b[0m\n\n\u001b[1m\u001b[32m🛡️  BLA Adversarial Shield Successfully Injected!\u001b[0m (249 ms)\n\n  \u001b[1mInput Target:\u001b[0m      /Users/triton/PROTEUS/sandbox/bla/work/hard/dist/app.js\n  \u001b[1mProtected Output:\u001b[0m  \u001b[36m/Users/triton/PROTEUS/sandbox/bla/work/hard/dist/app.shielded.js\u001b[0m\n  \u001b[1mFormat / Preset:\u001b[0m   javascript / \u001b[35mbalanced\u001b[0m (seed: bla-shield-seed-v1)\n\n\u001b[1m\u001b[33m── Counter-REA Defense Metrics ─────────────────────────────────────────────────\u001b[0m\n  • Decoy Tarpit Functions Injected:    \u001b[1m44\u001b[0m (150 fake cross-references)\n  • Primitive Candidate Branches:       \u001b[1m512\u001b[0m (> REA's 256 candidate limit)\n  • Alias Selection States:             \u001b[1m4,194,304\u001b[0m (> REA's 512 state limit)\n  • IPC Ambiguity Sites / Decoy Routes: \u001b[1m26\u001b[0m IPC sites / \u001b[1m12\u001b[0m decoy routes\n  • Enclave Chaff Manifests Embedded:   \u001b[1m8\u001b[0m\n\n\u001b[1m\u001b[36m── Before vs. After BLA Impact (Claude Opus 4 / REA Loop) ──────────────────────\u001b[0m\n  • REA Exposure Score:       \u001b[31m93/100 (UNPROTECTED)\u001b[0m  -->  \u001b[32m\u001b[1m2/100 (BLA_PROTECTED)\u001b[0m\n  • REA Examination Status:   \u001b[31mCOMPLETE\u001b[0m                   -->  \u001b[32m\u001b[1mLIMITED (alias-selections, primitive-candidates, primitive-bytes, getter-expansion)\u001b[0m\n  • Obligation Graph Nodes:   4 nodes                    -->  \u001b[1m108 nodes\u001b[0m\n  • Attacker Token Burn:      6,578 tokens                -->  \u001b[33m\u001b[1m4,938,931 tokens (750.8x amplification)\u001b[0m\n  • Attacker API Bill:        $0.26                      -->  \u001b[33m\u001b[1m$80.47 (309.5x bankruptcy multiplier)\u001b[0m\n  • Agent Verdict:            \u001b[31mTRIVIAL_CLONE\u001b[0m              -->  \u001b[32m\u001b[1mAGENT_HALLUCINATION_AND_BANKRUPTCY\u001b[0m\n",
+      "stderr": ""
+    }
+  ],
+  "hard_files": [
+    {
+      "file": "hard/dist/app.js",
+      "bytes": 1590
+    },
+    {
+      "file": "hard/dist/app.shielded.js",
+      "bytes": 53697
+    }
+  ],
+  "hard_bytes": 1590,
+  "size_multiple": 1,
+  "hard_status": 0,
+  "hard_out": "ABCD-1234-1105=ok\nWXYZ-9999-3549=ok\nABCD-1234-0000=fail:checksum\nbad=fail:shape\nok_count=2\nhash_of_report=8962db2b\nfib39=63245986\nsalted=2778144320\n",
+  "hard_stderr": "",
+  "identical": true
+}
