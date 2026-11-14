@@ -57,6 +57,9 @@ commits in seven days is a med finding even when it is not SILENT (the Pitch mod
 `grinder-ledger` is not a nightly desk: it gains rows only when the gate passes a token. Its low `7d` is a
 finding only if `grinder-snapshot` is also low or the nightly Grinder line is missing; with snapshots landing
 and "0 gate-passers" in that line, the quiet is the registered gate working (F-0058, 27 Oct), not a fault.
+Any desk whose state reads `quiet: ...` (gate, no fixtures) is not a `7d` finding either: `pitch-model` reads
+`quiet: no fixtures` when no league in its nine calendars kicks off in the window, as in an international
+break (F-0091, F-0094, 14 Nov). Once fixtures return and it reads `ok` or SILENT, the `7d` rule applies again.
 
 ## 5. Re-check two recent verdicts
 

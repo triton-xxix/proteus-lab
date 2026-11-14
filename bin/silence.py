@@ -10,11 +10,12 @@ intel lane nothing since 3 Oct, and no step had noticed any of it. "Last new row
 the newest commit that ADDED lines to the desk's file (or any file under its folder), so a script
 that rewrites a file without adding to it does not count as activity. Read-only apart from --findings.
 """
+import json
 import os
 import subprocess
 import sys
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 ROOT = "/Users/triton/PROTEUS"
 # desk, path, days allowed without a new row, why the threshold
@@ -43,6 +44,31 @@ DESKS = [
 # quiet is the gate working, not a fault (F-0058, F-0064 28 Oct). The Inspector still reads the
 # gate-passer count from the nightly line; this only stops the tool re-adding F-0063 every few days.
 GATED = {"grinder-ledger": "grinder-snapshot"}
+# A fixture-gated desk has nothing to predict when no league plays (F-0091, F-0094, 14 Nov 2026: the
+# international break, no kickoff in any of the nine calendars from 10 to 19 Nov). Quiet is "no
+# fixtures" when the cached fixturedownload calendars hold no kickoff from `limit` days back to
+# FIXTURE_AHEAD days on; a missing or unreadable calendar keeps the desk SILENT.
+FIXTURE_GATED = {"pitch-model": ("E0", "E1", "SP1", "D1", "I1", "F1", "N1", "P1", "SC0")}
+FIXTURE_AHEAD = 2
+
+
+def kickoffs_between(divs, lo, hi):
+    """Kickoffs (unix) in the fixturedownload caches between lo and hi, or None if a calendar is missing."""
+    n = 0
+    for div in divs:
+        try:
+            with open("%s/pitch/cache/fixturedownload-%s.json" % (ROOT, div)) as fh:
+                rows = json.load(fh)
+        except (OSError, ValueError):
+            return None
+        for m in rows:
+            try:
+                t = datetime.fromisoformat(m["DateUtc"].replace("Z", "").strip()).replace(tzinfo=timezone.utc).timestamp()
+            except (KeyError, ValueError, AttributeError):
+                continue
+            if lo <= t <= hi:
+                n += 1
+    return n
 
 
 def adding_commits(path):
@@ -104,6 +130,10 @@ def main():
             state = "never" if t is None else ("SILENT" if days > limit else "ok")
         if state == "SILENT" and states.get(GATED.get(desk)) == "ok":
             state = "quiet: gate, %s ok" % GATED[desk]
+        if state == "SILENT" and desk in FIXTURE_GATED:
+            k = kickoffs_between(FIXTURE_GATED[desk], now - limit * 86400, now + FIXTURE_AHEAD * 86400)
+            if k == 0:
+                state = "quiet: no fixtures, %dd back to %dd ahead" % (limit, FIXTURE_AHEAD)
         states[desk] = state
         print("%-18s %-34s %6s %4s %4d  %s" % (desk, path, "-" if days is None else "%.1f" % days,
                                               "-" if limit is None else limit, week, state))
