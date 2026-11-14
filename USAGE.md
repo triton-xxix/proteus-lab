@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-11-13 09:07.
+Rebuilt 2026-11-14 09:06.
 
 ## By month
 
@@ -20,8 +20,8 @@ Rebuilt 2026-11-13 09:07.
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
 | 2026-10 | scheduled runs | 4.16M | 950.29M | 23.51M | 49.4k |
 | 2026-10 | Luke's sessions | 3.17M | 670.37M | 19.03M | 22.6k |
-| 2026-11 | scheduled runs | 2.26M | 492.57M | 11.15M | 9.1k |
-| 2026-11 | Luke's sessions | 45.6k | 6.02M | 217.2k | 838 |
+| 2026-11 | scheduled runs | 2.47M | 542.56M | 12.38M | 9.7k |
+| 2026-11 | Luke's sessions | 168.5k | 28.44M | 899.6k | 1.8k |
 
 ## Scheduled output by ISO week
 
@@ -37,7 +37,7 @@ Field Notes with the step that caused it.
 | 2026-W43 | 42 | 1.20M | 548.9k | YES |
 | 2026-W44 | 42 | 1.34M | 793.6k | no |
 | 2026-W45 | 43 | 1.31M | 1.02M | no |
-| 2026-W46 | 26 | 790.4k | 1.19M | no |
+| 2026-W46 | 32 | 999.0k | 1.19M | no |
 
 ## By session
 
@@ -508,9 +508,23 @@ Field Notes with the step that caused it.
 | 2026-11-12 12:31 | trials | fable-5-2 | 29.1k | 5.29M | 121.2k | 80 | 14 min | 4a5021d4 |
 | 2026-11-12 16:36 | workshop | fable-5-2 | 28.3k | 4.66M | 127.8k | 64 | 12 min | dc32ea75 |
 | 2026-11-12 20:05 | smith | fable-5-2 | 17.2k | 3.91M | 111.7k | 62 | 4 min | 099b2b09 |
-| 2026-11-12 21:59 | interactive (Luke) | fable-5-1 | 45.6k | 6.02M | 217.2k | 838 | 28 min | 62d87031 |
+| 2026-11-12 21:59 | interactive (Luke) | fable-5-1 | 75.2k | 14.49M | 512.2k | 1.6k | 58 min | 62d87031 |
 | 2026-11-12 23:23 | nightly | fable-5-2 | 90.4k | 25.85M | 296.3k | 232 | 27 min | 23f2b075 |
 | 2026-11-12 23:32 | nightly, child ad958438 | sonnet-5-5 | 8.9k | 166.9k | 101.2k | 6 | 1 min | 23f2b075 |
 | 2026-11-12 23:33 | nightly, child ac56e452 | sonnet-5-5 | 1.6k | 289.9k | 55.9k | 8 | 0 min | 23f2b075 |
 | 2026-11-13 07:54 | lichess-morning | fable-5-2 | 4.3k | 1.59M | 58.3k | 34 | 38 min | 9d79c155 |
-| 2026-11-13 09:06 | inspector | fable-5-2 | 2.0k | 432.3k | 52.7k | 10 | 0 min | d89d7c93 |
+| 2026-11-13 09:06 | inspector | fable-5-2 | 11.0k | 1.94M | 84.7k | 34 | 2 min | d89d7c93 |
+| 2026-11-13 12:31 | trials | fable-5-2 | 57.3k | 10.48M | 169.9k | 142 | 21 min | 41e68b97 |
+| 2026-11-13 15:28 | interactive (Luke) | sonnet-5-5 | 53.9k | 6.91M | 187.1k | 86 | 8 min | 3ce5f78d |
+| 2026-11-13 15:35 | interactive (Luke) | sonnet-5-5 | 16.4k | 2.26M | 70.8k | 40 | 2 min | 5d2f0a43 |
+| 2026-11-13 16:36 | workshop | fable-5-2 | 24.9k | 3.75M | 121.3k | 54 | 5 min | d732978f |
+| 2026-11-13 20:05 | smith | opus-5-5 | 7.1k | 2.05M | 69.2k | 40 | 1 min | 3638dabb |
+| 2026-11-13 20:46 | interactive (Luke) | opus-5-5 | 1.6k | 66.8k | 39.0k | 4 | 0 min | 76895989 |
+| 2026-11-13 20:49 | interactive (Luke) | opus-5-5 | 21.4k | 4.72M | 90.5k | 92 | 12 min | 74659555 |
+| 2026-11-13 23:24 | nightly | opus-5-5 | 68.3k | 27.98M | 242.8k | 282 | 36 min | f5c7bafa |
+| 2026-11-13 23:30 | nightly, child a1a7b0c8 | sonnet-5-5 | 10.7k | 168.5k | 104.1k | 6 | 1 min | f5c7bafa |
+| 2026-11-13 23:30 | nightly, child a293901d | haiku-5-5 | 12.2k | 712.2k | 215.9k | 12 | 1 min | f5c7bafa |
+| 2026-11-13 23:31 | nightly, child adb60f6d | haiku-5-5 | 12.6k | 1.07M | 117.2k | 18 | 1 min | f5c7bafa |
+| 2026-11-13 23:35 | nightly, child a2786b16 | sonnet-5-5 | 1.5k | 287.8k | 54.1k | 8 | 0 min | f5c7bafa |
+| 2026-11-14 07:54 | lichess-morning | opus-5-5 | 3.3k | 1.57M | 54.8k | 34 | 47 min | 2e261d52 |
+| 2026-11-14 09:06 | inspector | opus-5-5 | 1.7k | 427.9k | 45.7k | 10 | 0 min | b20d9255 |
