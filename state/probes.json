@@ -1,5 +1,5 @@
 {
- "next_id": 450,
+ "next_id": 451,
  "items": [
   {
    "id": "P-0001",
@@ -11417,6 +11417,32 @@
     "number": "worst-case mean per trade with slippage and a 2x-gap stop: +0.05%, best case about +0.17%",
     "at": "2026-11-14T12:38:07+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0450",
+   "title": "Munich market depth at the favourite: refill 171 found exchange/SNAPSHOTS.csv has no size columns and munich_volumes.jsonl (from 8 Nov) shows 0 to 23 units traded per Munich day market in 1 or 2 trades. Pull Smarkets v3 quotes (keyless) for every open Munich temperature market now: quantity on the best offer and the next two levels at the favourite degree, and how much a 10-unit back would move the average price. Can P-0434's paper fills be had at any size?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-14",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-14T12:39:09+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "best offer at the favourite degree holds under 20 units on most open Munich markets; a 10-unit back moves the average price by 2 or more points",
+    "at": "2026-11-14T12:39:14+0000"
    }
   }
  ]

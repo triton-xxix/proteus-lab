@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 367 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ Verdicts so far: 367 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0450 | Munich market depth at the favourite: refill 171 found exchange/SNAPSHOTS.csv has no size columns and munich_volumes.jsonl (from 8 Nov) shows 0 to 23 units traded per Munich day market in 1 or 2 trades. Pull Smarkets v3 quotes (keyless) for every open Munich temperature market now: quantity on the best offer and the next two levels at the favourite degree, and how much a 10-unit back would move the average price. Can P-0434's paper fills be had at any size? | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (434)
 
