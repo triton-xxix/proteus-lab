@@ -1,0 +1,60 @@
+{
+ "base": {
+  "n": 927,
+  "mean_pct": 0.651,
+  "win": 0.749
+ },
+ "backtest_quoted": {
+  "mean_pct": 0.63,
+  "win": 0.75
+ },
+ "by_hold": {
+  "1-3": {
+   "n": 361,
+   "mean_pct": 1.53,
+   "win": 0.939
+  },
+  "4-5": {
+   "n": 212,
+   "mean_pct": 1.475,
+   "win": 0.92
+  },
+  "6-9": {
+   "n": 240,
+   "mean_pct": 0.255,
+   "win": 0.604
+  },
+  "10+": {
+   "n": 114,
+   "mean_pct": -2.834,
+   "win": 0.132
+  }
+ },
+ "stop3": {
+  "n": 1192,
+  "mean_pct": 0.294,
+  "win": 0.612
+ },
+ "stop5": {
+  "n": 1038,
+  "mean_pct": 0.452,
+  "win": 0.679
+ },
+ "stop7": {
+  "n": 974,
+  "mean_pct": 0.48,
+  "win": 0.716
+ },
+ "paired_stop5": {
+  "common_entries": 927,
+  "changed": 353,
+  "mean_diff_pct_per_trade": -0.2335,
+  "mean_diff_on_changed": -0.613,
+  "signflip_p_stop_better": 1.0
+ },
+ "random_entry_stop5": {
+  "draws": 500,
+  "random_mean_pct": 0.099,
+  "p": 0.002
+ }
+}
