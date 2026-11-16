@@ -1,0 +1,55 @@
+Why (Smith, 16 Nov 2026): P-0154 and P-0156 (14 Oct) each lost a call to the hook denying
+`node --test` and `npm --prefix sandbox/x test`, and both worked round with a runner script. This
+allows node's own test runner on named, absolute test-file paths under sandbox/ (a child may too,
+its scripts live there already). A bare `node --test` stays off because it globs the working
+directory, and so does any flag after --test. `npm test` stays off on purpose: it runs whatever
+string package.json holds, which would step round every shell rule here. Test cases ride in the
+same diff. Apply in an interactive session, then run bin/test-hook.py.
+
+--- a/.claude/hooks/unattended-decide.py
++++ b/.claude/hooks/unattended-decide.py
+@@ -529,6 +529,13 @@
+                 parts = [head] + parts[2:]
+             if head == "node" and len(parts) == 2 and parts[1] in ("--version", "-v"):
+                 continue
++            # F-0023 (16 Nov 2026): node's own test runner, on named test files under sandbox/ only. A bare
++            # --test globs the working directory, so it stays off; so does npm test, which runs whatever
++            # string package.json holds. Both cost P-0154 and P-0156 a denied call (14 Oct).
++            if head == "node" and len(parts) > 2 and parts[1] == "--test":
++                if all(not p.startswith("-") and _under(p, SANDBOX) for p in parts[2:]):
++                    continue
++                return "node --test is allowed only on absolute test-file paths under %s." % SANDBOX
+             if len(parts) > 1 and _under_root(parts[1]):
+                 continue
+             if head == "node" and len(parts) > 1 and parts[1] == "-e":
+@@ -719,6 +726,8 @@
+             parts = [head] + parts[2:]
+         if head == "node" and len(parts) > 2 and parts[1] == "--experimental-strip-types":
+             parts = [head] + parts[2:]
++        if head == "node" and len(parts) > 2 and parts[1] == "--test":
++            parts = [head] + parts[2:]
+         if _under_root(head):
+             script = head
+         elif head in ("node", "bash", "sh", "python3", "python", VENV_PY, VENV_PY_ALT) and len(parts) > 1 and _under_root(parts[1]):
+--- a/bin/test-hook.py
++++ b/bin/test-hook.py
+@@ -48,6 +48,11 @@
+     ("Bash", {"command": "node --version --eval x"}, "deny"),
+     ("Bash", {"command": "node --experimental-strip-types " + ROOT + "sandbox/x.ts"}, "allow"),
+     ("Bash", {"command": "node --experimental-strip-types /Users/triton/OBSIDIAN/x.ts"}, "deny"),
++    ("Bash", {"command": "node --test " + ROOT + "sandbox/p0154-herk/test.mjs"}, "allow"),
++    ("Bash", {"command": "node --test " + ROOT + "bin/x.test.js"}, "deny"),
++    ("Bash", {"command": "node --test"}, "deny"),
++    ("Bash", {"command": "node --test --eval x " + ROOT + "sandbox/a.mjs"}, "deny"),
++    ("Bash", {"command": "npm --prefix " + ROOT + "sandbox/p0154-herk test"}, "deny"),
+     ("Bash", {"command": "/usr/bin/python3 " + ROOT + "bin/dash.py"}, "deny"),
+     ("Bash", {"command": "bash " + ROOT + "bin/mirror-vault.sh"}, "allow"),
+     ("Bash", {"command": "git -C " + ROOT + " add -A"}, "allow"),
+@@ -229,6 +234,7 @@
+     (CHILD, "Bash", {"command": "node " + ROOT + "bin/build-lab.cjs"}, "deny"),
+     (CHILD, "Bash", {"command": "node --experimental-strip-types " + ROOT + "bin/x.ts"}, "deny"),
+     (CHILD, "Bash", {"command": "node --experimental-strip-types " + ROOT + "sandbox/x.ts"}, "allow"),
++    (CHILD, "Bash", {"command": "node --test " + ROOT + "sandbox/x.test.mjs"}, "allow"),
+     (CHILD, "Bash", {"command": "curl -s https://api.dexscreener.com/latest/dex/search?q=pump"}, "allow"),
+     (CHILD, "Bash", {"command": "cat " + ROOT + "CHARTER.md"}, "allow"),
+     (CHILD, "Bash", {"command": "mkdir -p " + ROOT + "sandbox/probe"}, "allow"),
