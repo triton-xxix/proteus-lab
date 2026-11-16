@@ -1,0 +1,189 @@
+{
+ "listened_min": 1.5,
+ "creates_heard": 49,
+ "sampled": 20,
+ "read": 7,
+ "with_same_slot_buyer": 1,
+ "median_creator_share": 0.007,
+ "median_creator_plus_bundle": 0.007,
+ "max_creator_plus_bundle": 0.0801,
+ "over_10pct": 0,
+ "median_bundle_share_where_bundled": 0.0015,
+ "rows": [
+  {
+   "sig": "42JepthT5qJAv87pDucojdrEUmetDERuuUuFP8ngGTEc6GyJxDihMHeydNX11bYRhao5sFUkBtH6U9xAzaQ7APgt",
+   "status": "no-balances"
+  },
+  {
+   "sig": "fJthySEhkVX1nCLaxjjY8thoWUonduQgvojEBtnMJDtfHUZs8Tg5fsc1g2gyjpy4tY4fvBjAbQX6XcemjjpUFrA",
+   "status": "no-balances"
+  },
+  {
+   "sig": "42r58rwVjb5NkSFWVFcoLWcQ2vsVTai3v67B2j48tFMubWbv7Vadg6dCCZStz5w4zbyUGpshDYio1oX7PNzw1ZUb",
+   "mint": "NvDqeyhxFZFexsoazLVKp8aTPymtmvJLFnm5vwBpump",
+   "slot": 470321412,
+   "same_slot_txs": 1,
+   "read_txs": 1,
+   "creator_share": 0.00208581414194,
+   "bundle_wallets": 0,
+   "bundle_share": 0.0,
+   "creator_plus_bundle_share": 0.00208581414194,
+   "curve_share_left": 1.0,
+   "curve_like_owners": 2,
+   "holders": {
+    "BwWK17cb": 1.0,
+    "7kn5gCon": 0.9979,
+    "7NYTaXZ2": 0.0021
+   }
+  },
+  {
+   "sig": "hatC8oDaeNryAEAZSeEVZA7eYN37ocWUHLUWkPxKD2uoVs88NSoVPCU5mV2L6UqPza7WGGX3ECFM8dz5zNVibS7",
+   "mint": "7TwobvCZG9WekUjDC5s4k7ZD4buHjB1AmcksK2wZpump",
+   "slot": 470321413,
+   "same_slot_txs": 1,
+   "read_txs": 1,
+   "creator_share": 0.0070045395218479994,
+   "bundle_wallets": 0,
+   "bundle_share": 0.0,
+   "creator_plus_bundle_share": 0.0070045395218479994,
+   "curve_share_left": 1.0,
+   "curve_like_owners": 2,
+   "holders": {
+    "BwWK17cb": 1.0,
+    "7TvXiKZL": 0.993,
+    "6YGkTJSe": 0.007
+   }
+  },
+  {
+   "sig": "2j8by3NeCVFFkDJdcUnzVoPkN8GGUR9LcmP3bVsAUsRYz18oHhYjiHubM6PEMJNGNfBNXif2m43Fx98pSvB4Hf5U",
+   "status": "no-balances"
+  },
+  {
+   "sig": "5wKSzsmCnQA3UCnyr4pu5QzBp1DaRux5cMKMfVXdu41Fb7JkEe4R9E8XwwkCzAtpqB3WPQZXUbbAKyNhhGbMKPka",
+   "status": "no-balances"
+  },
+  {
+   "sig": "2yP73pDec6ULc2n8Vo7gdT8HoqmQ9eWEswU1GR9Gijdpg564pBY3j9GcSxfo5xEGEGp13AKWoXjHsSs93uNtyXpW",
+   "mint": "3mVyXfxVG9dhsJuAmwS7a8FRQGSVamBfRoPTHhQbHx56",
+   "slot": 470321453,
+   "same_slot_txs": 1,
+   "read_txs": 1,
+   "creator_share": 0.0,
+   "bundle_wallets": 0,
+   "bundle_share": 0.0,
+   "creator_plus_bundle_share": 0.0,
+   "curve_share_left": 1.0,
+   "curve_like_owners": 1,
+   "holders": {
+    "3QNPwjk2": 1.0
+   }
+  },
+  {
+   "sig": "5PUhLAh318P99sAadRpwgGAnssS6BALdLHo3JPfKJFXDq5v9aZExgUmiAxrZH9BGCxyUW632MpfQLo9zZZMPBzW4",
+   "mint": "9Wpe89jhz15aPX6pTtD4iYnAoLzrU91uxWK8Vyqrpump",
+   "slot": 470321467,
+   "same_slot_txs": 1,
+   "read_txs": 1,
+   "creator_share": 0.026793579353187,
+   "bundle_wallets": 0,
+   "bundle_share": 0.0,
+   "creator_plus_bundle_share": 0.026793579353187,
+   "curve_share_left": 0.9732064206468131,
+   "curve_like_owners": 1,
+   "holders": {
+    "GPhRyXpq": 0.9732,
+    "6xWU3R2d": 0.0268
+   }
+  },
+  {
+   "sig": "4GXHqyHJ62286AJt4eBBx7tiS78BGG5sggdA1qA7btdsrKJLsodtPJ755heaHHeRjEHUCwun322ggszMACn8qZAj",
+   "status": "no-balances"
+  },
+  {
+   "sig": "5axMX4Y9UfHatVceEsrhReTc7FLq7NBQrsi6NdRcyTkKWkwgXM7wdCMxP24Kk5Cv5dh5dL9Z1svFqECT1z5XuvSn",
+   "mint": "35fp9U8zsBC2nCS29rZhLaNeszLWVmqy7JfT32njpump",
+   "slot": 470321491,
+   "same_slot_txs": 1,
+   "read_txs": 1,
+   "creator_share": 0.000888400836057,
+   "bundle_wallets": 0,
+   "bundle_share": 0.0,
+   "creator_plus_bundle_share": 0.000888400836057,
+   "curve_share_left": 0.9991115991639431,
+   "curve_like_owners": 1,
+   "holders": {
+    "CuuGUMVa": 0.9991,
+    "CJeJirxB": 0.0009
+   }
+  },
+  {
+   "sig": "XmDpkhWy4wqCFh9khPE4vWMH9A3WiTrAbUMsEAnmfYG1k2vVvyNwtNRUAzrWpeeTNwP8zxeci6Jxqpxtf5v58Cd",
+   "status": "no-balances"
+  },
+  {
+   "sig": "3THyoova4i4YByeXk6NvkAoDDywuHzWmnpD7pq5LVe1ew46eSuLKtnGHtM4ZfhoyHtYwgB3BkAjZnQA5AtKWDwwA",
+   "status": "no-balances"
+  },
+  {
+   "sig": "2otfPD8YKNbBNeCuFAhCQ62GaYpV35UcaL8c1wLU7o7ncRJ9DirNNVAu73jtS7TrNRrJmuZyn7eZWiRkEnMCJhyR",
+   "status": "no-balances"
+  },
+  {
+   "sig": "3vmqDCVp14DdKNYRpVbnKkM8pF8xzT9NM2ZbX148YnTxEme8sA43pTGgNfaKXGtT1NMco3QFrktGKVavxb1quDYm",
+   "status": "no-balances"
+  },
+  {
+   "sig": "oSC2BqH323YcSLkZhfKxi6M3743ZshMvy8LRStbPvELUJ4goRe348ZXSdq84jVw5FvRFN9bqdvdMcxsuogwVwSZ",
+   "status": "no-balances"
+  },
+  {
+   "sig": "2Hf3WgyRnf2HU6PVyXH5QE8qyNrbV1XSvdGDY9WKYswQYy3fAN6C7VDN4qn2YsTeThM5Jpdn9ajZA67UTbNAK6rw",
+   "mint": "BJM9V22SKSqkvMCGaiBQEZC3UP49nmEiqpo5PZv4pump",
+   "slot": 470321613,
+   "same_slot_txs": 2,
+   "read_txs": 2,
+   "creator_share": 0.078572082337764,
+   "bundle_wallets": 1,
+   "bundle_share": 0.001514741624521,
+   "creator_plus_bundle_share": 0.080086823962285,
+   "curve_share_left": 1.0,
+   "curve_like_owners": 2,
+   "holders": {
+    "BwWK17cb": 1.0,
+    "8xEEtpTu": 0.9214,
+    "39WgDrVw": 0.0786,
+    "CjrQxkzA": 0.0015
+   }
+  },
+  {
+   "sig": "2iYPTQxTndE84Ks9KiZdWNNW5vhGzDWA4gL7zSxLB6bqwFTqwfukBcgMAoHHkzoKtFLNr4PUk6uwjRVj9hmtwCsD",
+   "status": "no-balances"
+  },
+  {
+   "sig": "JsUEXS643qspaALTXDpw4cbSnSArmYCisbBeEtSE3DZgmjjymknfzHyBXGhvahp5MzsbEUt6JcBfdEuueS7kX98",
+   "mint": "EnFmvry2AS7ogXMzKaBJKfwG48Wt8UxRCiXnNbxqpump",
+   "slot": 470321635,
+   "same_slot_txs": 1,
+   "read_txs": 1,
+   "creator_share": 0.012190169681216,
+   "bundle_wallets": 0,
+   "bundle_share": 0.0,
+   "creator_plus_bundle_share": 0.012190169681216,
+   "curve_share_left": 1.0,
+   "curve_like_owners": 2,
+   "holders": {
+    "BwWK17cb": 1.0,
+    "FvbnGFpG": 0.9878,
+    "Doh8PzmN": 0.0122
+   }
+  },
+  {
+   "sig": "4zzuxzjVSYdaiYsS55ERbBqByTvQqCxuEhLKj47S3ef6SokrCw8ixipRhVMiYhTtQJJdt2wiJADrVu4JqPgpSwjs",
+   "status": "no-balances"
+  },
+  {
+   "sig": "gHU7GY4f6nL5L3nE5HpC1wNz8ckUJGiQTCSngyQn7qz878MW98Kyq14TVA6KE2tdmiFW2sFvy7N6W3DytTg33Jn",
+   "status": "no-balances"
+  }
+ ]
+}

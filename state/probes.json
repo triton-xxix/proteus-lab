@@ -1,5 +1,5 @@
 {
- "next_id": 456,
+ "next_id": 457,
  "items": [
   {
    "id": "P-0001",
@@ -11555,6 +11555,28 @@
    ],
    "minutes": 1,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0456",
+   "title": "pump.fun same-slot bundles: for 20 live creates, what share of supply do the creator plus every same-slot non-curve buyer hold, against P-0180's 9 of 20 bundled?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-16",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-16T23:43:38+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-16T23:51:20+0000",
+   "note": "49 creates in 1.5 min, 7 of 20 sampled read at the public RPC pace: same-slot outside buyer on 1 of 7 (0.15% of supply), creator plus bundle median 0.70%, max 8.0%; run 1 read 100% because an unexplained owner holds a full 1bn beside the curve on 4 of 7, fixed by dropping every half-supply owner.",
+   "artefacts": [
+    "experiments/2026-11-16-P-0456"
+   ],
+   "minutes": 7,
+   "calls": 26,
    "denied": [],
    "luke": false
   }
