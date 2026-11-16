@@ -95,6 +95,15 @@ code{font-size:13px}
 <div class="chart"><svg id="gap" role="img" aria-label="Every challenge by the opponent's rating minus mine, split by what happened to it"></svg></div>
 <div class="tw"><table id="outcomes"><thead><tr><th>Their rating</th><th class="n">Asked</th><th class="n">Bots</th><th class="n">Refused by Lichess</th><th class="n">Sent</th><th class="n">Accepted</th><th class="n">Declined</th><th class="n">No answer</th><th class="n">Yes, of sent</th></tr></thead><tbody></tbody></table></div>
 
+<h2>Why Lichess said no</h2>
+<p class="note" id="refnote"></p>
+<div class="chart"><svg id="ref" role="img" aria-label="Lichess's own refusals by the reason it gave, with re-asks before a stated reset marked"></svg>
+<div class="legend">
+ <span><i class="sw" style="background:var(--rule)"></i>refused</span>
+ <span><i class="sw" style="background:var(--buoy)"></i>asked again before the reset Lichess had already named</span>
+</div></div>
+<div class="tw"><table id="refusals"><thead><tr><th>Reason Lichess gave</th><th class="n">Asks</th><th class="n">Bots</th><th>First</th><th>Last</th><th>Asked most</th></tr></thead><tbody></tbody></table></div>
+
 <h2 id="meaningh">What the rating means</h2>
 <p id="meaning"></p>
 
@@ -132,6 +141,12 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   $('#gapnote').textContent=`The same asks by their rating minus mine. Within 50 points of me, or above, it is ${ofs(near)} sent (${pc(near.accept_of_sent)}); 500 or more below, ${ofs(far)} (${pc(far.accept_of_sent)}), from ${far.bots} different bots. A near-rated bot is about ${Math.round(near.accept_of_sent/far.accept_of_sent*10)/10} times as likely to say yes, and there are only ${near.bots} of them. Bands overlap in bots, since ratings move between asks.`;
   $('#outcomes tbody').innerHTML=SB.map(r=>`<tr><td>${r.label}</td><td class="n">${r.asked}</td><td class="n">${r.bots}</td><td class="n">${r['refused 400']+r['refused 429']}</td><td class="n">${r.sent}</td><td class="n">${r.accepted}</td><td class="n">${r.declined}</td><td class="n">${r['no answer']}</td><td class="n">${r.accept_of_sent==null?'none sent':pc(r.accept_of_sent)}</td></tr>`).join('')
     +`<tr><td><b>all</b></td><td class="n"><b>${sum(SB,'asked')}</b></td><td class="n"></td><td class="n"><b>${sum(SB,'refused 400')+sum(SB,'refused 429')}</b></td><td class="n"><b>${sum(SB,'sent')}</b></td><td class="n"><b>${sum(SB,'accepted')}</b></td><td class="n"><b>${sum(SB,'declined')}</b></td><td class="n"><b>${sum(SB,'no answer')}</b></td><td class="n"><b>${pc(sum(SB,'accepted')/sum(SB,'sent'))}</b></td></tr>`;
+  // why Lichess said no (Workshop, 16 Nov 2026)
+  const RF=d.refusals, RK=Object.fromEntries(RF.kinds.map(k=>[k.kind,k])), cap=RK.cap, shut=RK.closed;
+  const capN=Object.keys(RF.cap_games_stated).join(' or ');
+  $('#refnote').textContent=`${RF.total} asks never reached the bot, and the reason text says why. ${cap.asks} (${pc(cap.asks/RF.total)}) were a bot's daily cap: "played ${capN} games against other bots today", with a reset time named, a median ${RF.cap_wait_hours_median} hours away. ${cap.bots} bots hit it, and ${RF.capped_bots_later_yes} of them said yes to a later ask, so a cap is "not yet", not "no". ${RF.cap_wasted} of the cap refusals came from asking the same bot again before the reset Lichess had already given. ${shut.asks} went to ${shut.bots===1?'one bot, '+esc(shut.top[0][0])+',':shut.bots+' bots'} that does not accept challenges at all, asked from ${shut.first} to ${shut.last} and not since. ${RK.rate.asks} were Lichess rate-limiting my own account (429), and ${RK.friends.asks} a bot that plays friends only.`;
+  $('#refusals tbody').innerHTML=RF.kinds.map(k=>`<tr><td>${esc(k.label)}</td><td class="n">${k.asks}</td><td class="n">${k.bots}</td><td>${k.first||''}</td><td>${k.last||''}</td><td>${k.top.slice(0,3).map(t=>esc(t[0])+' '+t[1]).join(', ')}</td></tr>`).join('')
+    +`<tr><td><b>all</b></td><td class="n"><b>${sum(RF.kinds,'asks')}</b></td><td class="n"></td><td></td><td></td><td></td></tr>`;
   const lost=S.challenges-S.accepted;
   $('#asknote').textContent=`${fmt(S.challenges)} challenges sent over ${d.days.length} days: ${S.accepted} accepted, ${S.declined} declined (${S.declined_reasons[0][1]} as "${S.declined_reasons[0][0]}", bots that will not play bots), ${S.refused_400} refused by Lichess before they were sent (daily caps, rate limits), ${S.no_answer} never answered. ${S.bots_asked} different bots asked, ${S.bots_played} played.`;
   $('#nonote').textContent=`${S.bots_never} of the ${S.bots_asked} bots asked have never accepted. These are the ones asked most, with their rating. The same names decline every morning, and they are the ones who would test the number.`;
@@ -206,6 +221,19 @@ fetch('data.json').then(r=>r.json()).then(d=>{
       const el=$('#'+id); el.setAttribute('viewBox',`0 0 ${W} ${H}`); el.innerHTML=s;
     };
     share('str',d.by_strength); share('gap',d.by_gap);
+    // refusals by reason
+    {
+      const K=d.refusals.kinds, L=narrow?0:200,R=narrow?4:60,T=6,rowH=narrow?42:30,H=T+K.length*rowH+4;
+      const mx=Math.max(...K.map(k=>k.asks)), bw=W-L-R, X=v=>v/mx*bw;
+      let s='';
+      K.forEach((k,i)=>{const y=T+i*rowH, by=narrow?y+18:y+4, bh=narrow?rowH-24:rowH-10;
+        if(narrow) s+=`<text x="0" y="${y+13}" class="k">${esc(k.label)}</text><text x="${W-R}" y="${y+13}" text-anchor="end">${k.asks}</text>`;
+        else s+=`<text x="${L-8}" y="${y+18}" text-anchor="end" class="k">${esc(k.label)}</text><text x="${L+X(k.asks)+6}" y="${y+18}">${k.asks}</text>`;
+        const wasted=k.kind==='cap'?d.refusals.cap_wasted:0;
+        s+=`<rect x="${L}" y="${by}" width="${Math.max(X(k.asks-wasted),1)}" height="${bh}" fill="var(--rule)"><title>${esc(k.label)}: ${k.asks} asks, ${k.bots} bots</title></rect>`;
+        if(wasted) s+=`<rect x="${L+X(k.asks-wasted)}" y="${by}" width="${X(wasted)}" height="${bh}" fill="var(--buoy)"><title>${wasted} asked again before the stated reset</title></rect>`;});
+      const el=$('#ref'); el.setAttribute('viewBox',`0 0 ${W} ${H}`); el.innerHTML=s;
+    }
   }
   draw();
   let t; window.addEventListener('resize',()=>{clearTimeout(t); t=setTimeout(draw,150);});

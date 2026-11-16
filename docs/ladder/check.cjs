@@ -42,6 +42,16 @@ for (const [name, B] of [['by_strength', d.by_strength], ['by_gap', d.by_gap]]) 
   const G = d.by_gap, near = G[G.length - 1], far = G[0];
   if (!(near.accept_of_sent > far.accept_of_sent)) errs.push('prose: near-rated bots no longer likelier to say yes');
 }
+// the refusal section (16 Nov 2026): kinds sum to Lichess's refusals, and the prose's claims still hold
+{
+  const RF = d.refusals, K = Object.fromEntries(RF.kinds.map(k => [k.kind, k]));
+  if (RF.kinds.reduce((a, k) => a + k.asks, 0) !== RF.total) errs.push('refusal kinds do not sum to total');
+  if (RF.total !== S.refused_400 + S.refused_429) errs.push(`refusals ${RF.total} != refused 400 + 429`);
+  if (K.rate.asks !== S.refused_429) errs.push('rate-limit kind is not the 429 count');
+  if (!(K.cap.asks > RF.total / 2)) errs.push('prose: the cap is no longer most refusals');
+  if (!(RF.cap_wasted <= K.cap.asks)) errs.push('wasted re-asks exceed cap refusals');
+  if (K.closed.bots === 1 && K.closed.top[0][1] !== K.closed.asks) errs.push('closed kind: one bot but asks differ');
+}
 
 const els = {};
 const el = id => els[id] || (els[id] = {id, innerHTML: '', textContent: '', clientWidth: 0, style: {}, attrs: {},
@@ -56,9 +66,9 @@ for (const w of [860, 375]) {
   for (const k in els) delete els[k];
   try { vm.runInNewContext(script, ctx); } catch (e) { errs.push(`script threw at ${w}px: ${e.message}`); }
   await new Promise(r => setTimeout(r, 50));
-  for (const id of ['stats', 'ladder', 'bands', 'asks', 'no', 'meaning', 'games', 'str', 'gap', 'outcomes'])
+  for (const id of ['stats', 'ladder', 'bands', 'asks', 'no', 'meaning', 'games', 'str', 'gap', 'outcomes', 'ref', 'refusals'])
     if (!el(id).innerHTML || /undefined|NaN/.test(el(id).innerHTML)) errs.push(`#${id} empty or undefined/NaN at ${w}px`);
-  for (const id of ['h1', 'kicker', 'laddernote', 'bandnote', 'asknote', 'nonote', 'strnote', 'gapnote', 'meaningh'])
+  for (const id of ['h1', 'kicker', 'laddernote', 'bandnote', 'asknote', 'nonote', 'strnote', 'gapnote', 'meaningh', 'refnote'])
     if (!el(id).textContent || /undefined|NaN/.test(el(id).textContent)) errs.push(`#${id} bad at ${w}px`);
   if (!el('h1').textContent.includes(`${S.games} games`) || !el('h1').textContent.includes(`${S.losses} lost`)) errs.push('headline numbers missing');
   const rows = (el('games').innerHTML.match(/<tr /g) || []).length;
@@ -68,7 +78,9 @@ for (const w of [860, 375]) {
   const vb = el('ladder').attrs.viewBox || '';
   if (+vb.split(' ')[2] < 300) errs.push(`ladder viewBox ${vb} at ${w}px`);
   if (!el('meaning').innerHTML.includes(String(S.strongest_beaten))) errs.push('strongest beaten missing from the meaning paragraph');
-  if (w === 860) { console.log('h1:', el('h1').textContent); console.log('bandnote:', el('bandnote').textContent); console.log('strnote:', el('strnote').textContent); console.log('gapnote:', el('gapnote').textContent); }
+  if (w === 860) { console.log('h1:', el('h1').textContent); console.log('bandnote:', el('bandnote').textContent); console.log('strnote:', el('strnote').textContent); console.log('gapnote:', el('gapnote').textContent); console.log('refnote:', el('refnote').textContent); }
+  if ((el('ref').innerHTML.match(/<rect/g) || []).length !== d.refusals.kinds.length + (d.refusals.cap_wasted ? 1 : 0)) errs.push(`refusal chart bar count wrong at ${w}px`);
+  if (!el('refnote').textContent.includes(`${d.refusals.cap_wasted} of the cap refusals`)) errs.push('refnote missing the wasted count');
 }
   errs.forEach(e => console.log('FAIL', e));
   console.log('check ladder', errs.length ? `${errs.length} problems` : 'OK', '| bytes', html.length, '| games', S.games, '| challenges', S.challenges);

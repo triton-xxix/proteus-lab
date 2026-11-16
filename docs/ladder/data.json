@@ -493,6 +493,141 @@
   }
  ],
  "challenges_rated": 1389,
+ "refusals": {
+  "total": 412,
+  "kinds": [
+   {
+    "kind": "cap",
+    "label": "daily bot-game cap",
+    "asks": 351,
+    "bots": 57,
+    "first": "2026-10-09",
+    "last": "2026-11-14",
+    "top": [
+     [
+      "sf_bot1nok",
+      17
+     ],
+     [
+      "fataliibot",
+      12
+     ],
+     [
+      "ravenengine",
+      12
+     ],
+     [
+      "likeawizard-bot",
+      12
+     ],
+     [
+      "halcyonbot",
+      12
+     ]
+    ]
+   },
+   {
+    "kind": "closed",
+    "label": "does not accept challenges",
+    "asks": 46,
+    "bots": 1,
+    "first": "2026-10-09",
+    "last": "2026-11-02",
+    "top": [
+     [
+      "newchessengine-ai",
+      46
+     ]
+    ]
+   },
+   {
+    "kind": "friends",
+    "label": "only accepts friends",
+    "asks": 1,
+    "bots": 1,
+    "first": "2026-10-26",
+    "last": "2026-10-26",
+    "top": [
+     [
+      "classic_bot-v2",
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "rate",
+    "label": "rate limit on my account (429)",
+    "asks": 14,
+    "bots": 11,
+    "first": "2026-10-09",
+    "last": "2026-11-02",
+    "top": [
+     [
+      "garbobot",
+      2
+     ],
+     [
+      "darkonweakbot",
+      2
+     ],
+     [
+      "maia3-79m_1200",
+      2
+     ],
+     [
+      "chesschildren",
+      1
+     ],
+     [
+      "maia9_30n",
+      1
+     ]
+    ]
+   }
+  ],
+  "cap_games_stated": {
+   "100": 351
+  },
+  "cap_wait_hours_median": 1.5,
+  "cap_wasted": 85,
+  "capped_bots": 57,
+  "capped_bots_later_yes": 33,
+  "capped_bots_later_yes_names": [
+   "bernstein-4ply",
+   "bot1e",
+   "bot5551",
+   "bottios",
+   "c0kval",
+   "duchessai",
+   "eubos",
+   "fataliibot",
+   "felipe_bot_53",
+   "garbobot",
+   "goldfish-engine",
+   "halcyonbot",
+   "jangine",
+   "jibbby",
+   "joshsbot",
+   "likeawizard-bot",
+   "maia1",
+   "maia5",
+   "maia9",
+   "melsh_bot",
+   "raspfish",
+   "ravenengine",
+   "sargon-1ply",
+   "sargon-3ply",
+   "sargon-4ply",
+   "schnecken_bot",
+   "sf_bot1nok",
+   "simbelmyne-bot",
+   "simpleeval",
+   "sybbot",
+   "trainer-bot",
+   "turkjs",
+   "turochamp-2ply"
+  ]
+ },
  "games": [
   {
    "date": "2026-10-03",

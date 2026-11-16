@@ -169,6 +169,11 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   **10 Nov (Workshop):** the ladder's challenge-outcome slice shipped (by strength and by gap, rebuilt with
   the page). Next: split Lichess's `refused 400` by its detail text (daily cap v closed to bots), so
   the chooser in lichess.py can skip closed bots and retry capped ones the next day.
+  **16 Nov (Workshop):** the split shipped on the ladder page (`refusal_split` in ladder-page.py): of 412
+  refusals, 351 are the 100-games-a-day cap with a reset time in the text (median 1.5 h away), 46 one closed
+  bot, 14 my own 429s, 1 friends-only. 85 cap refusals were re-asks before the stated reset. Next, in
+  lichess.py: parse the reset time and skip that bot until it passes; skip "does not accept" bots for good
+  (newchessengine-ai stopped being asked after 2 Nov, check why before adding a rule).
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's

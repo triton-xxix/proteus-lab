@@ -7,7 +7,9 @@ rating and strongest opponent beaten are checked against `lichess.py status`; ex
 they ever disagree.
 """
 import csv
+import datetime
 import json
+import re
 import os
 import subprocess
 import sys
@@ -20,6 +22,69 @@ OUT = os.path.join(ROOT, "docs", "ladder", "data.json")
 VENV = os.path.join(ROOT, ".venv", "bin", "python3")
 BANDS = [(0, 1500, "under 1500"), (1500, 2000, "1500 to 1999"), (2000, 2500, "2000 to 2499"), (2500, 9999, "2500 and up")]
 SCORE = {"win": 1.0, "draw": 0.5, "loss": 0.0}
+
+
+REFUSAL_KINDS = [
+    ("cap", "daily bot-game cap", re.compile(r"played (\d+) games against other bots today, please wait until (\d{4}-\d\d-\d\dT[\d:.]+Z)")),
+    ("closed", "does not accept challenges", re.compile(r"does not accept challenges")),
+    ("friends", "only accepts friends", re.compile(r"only accepts challenges from friends")),
+    ("rate", "rate limit on my account (429)", re.compile(r"[Tt]oo many requests")),
+]
+
+
+def ts(s):
+    return datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def refusal_split(chall):
+    """Split Lichess's own refusals by the reason text (Workshop, 16 Nov 2026, BACKLOG ladder item).
+
+    A cap refusal names the reset time, so a later ask to the same bot before that time was always
+    going to be refused: those are counted as `wasted`. Exits if any refusal fits no kind or two."""
+    refused = [c for c in chall if c["verdict"].startswith("refused")]
+    kinds = {k: {"kind": k, "label": lab, "asks": 0, "bots": set(), "per_bot": Counter()} for k, lab, _ in REFUSAL_KINDS}
+    cap_games, waits, resets = [], [], defaultdict(list)
+    for c in refused:
+        hits = [(k, rx.search(c["detail"] or "")) for k, _, rx in REFUSAL_KINDS]
+        hits = [(k, m) for k, m in hits if m]
+        if len(hits) != 1:
+            sys.exit("ladder-page: refusal fits %d kinds: %s %s" % (len(hits), c["utc"], (c["detail"] or "")[:80]))
+        k, m = hits[0]
+        K = kinds[k]
+        K["asks"] += 1
+        K["bots"].add(c["opponent"])
+        K["per_bot"][c["opponent"]] += 1
+        if k == "cap":
+            cap_games.append(int(m.group(1)))
+            at, until = ts(c["utc"]), ts(m.group(2))
+            waits.append((until - at).total_seconds() / 3600)
+            resets[c["opponent"]].append((at, until))
+    # asks to a capped bot after a cap refusal and before its stated reset
+    wasted = 0
+    for c in refused:
+        if c["opponent"] in resets and c["verdict"] == "refused 400":
+            at = ts(c["utc"])
+            if any(a < at < u for a, u in resets[c["opponent"]]):
+                wasted += 1
+    capped = kinds["cap"]["bots"]
+    later_yes = {c["opponent"] for c in chall if c["opponent"] in capped and c["verdict"] == "accepted"
+                 and any(a < ts(c["utc"]) for a, _ in resets[c["opponent"]])}
+    out = []
+    for k, _, _ in REFUSAL_KINDS:
+        K = kinds[k]
+        days = sorted(c["utc"][:10] for c in refused if c["opponent"] in K["bots"] and [
+            kk for kk, _, rx in REFUSAL_KINDS if rx.search(c["detail"] or "")] == [k])
+        out.append({"kind": k, "label": K["label"], "asks": K["asks"], "bots": len(K["bots"]),
+                    "first": days[0] if days else None, "last": days[-1] if days else None,
+                    "top": [[b, n] for b, n in K["per_bot"].most_common(5)]})
+    if sum(r["asks"] for r in out) != len(refused):
+        sys.exit("ladder-page: refusal kinds do not sum to the refusals")
+    med = lambda xs: sorted(xs)[len(xs) // 2] if xs else None
+    return {"total": len(refused), "kinds": out,
+            "cap_games_stated": dict(Counter(cap_games).most_common()),
+            "cap_wait_hours_median": round(med(waits), 1) if waits else None,
+            "cap_wasted": wasted, "capped_bots": len(capped), "capped_bots_later_yes": len(later_yes),
+            "capped_bots_later_yes_names": sorted(later_yes)}
 
 
 def main():
@@ -95,6 +160,7 @@ def main():
         sys.exit("ladder-page: strength or gap bands do not cover every rated challenge")
     if sum(r["accepted"] for r in by_strength) != sum(1 for c in chall if c["opp_rating"] and c["verdict"] == "accepted"):
         sys.exit("ladder-page: strength bands lose an accepted challenge")
+    refusals = refusal_split(chall)
     bots_asked = len(by_bot)
     bots_played = len({r["opponent"] for r in rows})
     accepted_bot_ratings = [v["rating"] for v in by_bot.values() if v["accepted"]]
@@ -128,7 +194,8 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump({"summary": summary, "bands": bands, "days": days, "decliners": decliners,
-                   "by_strength": by_strength, "by_gap": by_gap, "challenges_rated": rated, "games": rows}, f, indent=1)
+                   "by_strength": by_strength, "by_gap": by_gap, "challenges_rated": rated,
+                   "refusals": refusals, "games": rows}, f, indent=1)
     print("ladder-page: %d games (%dW %dD %dL), rating %d, %d challenges, %d accepted (%.1f%%), %d bots asked, %d never said yes; agrees with lichess.py; wrote %s"
           % (n, wins, draws, losses, summary["rating_now"], len(chall), summary["accepted"], 100 * summary["accept_rate"],
              bots_asked, len(never), OUT))
