@@ -11500,15 +11500,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-16",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-16T23:39:16+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-16T23:39:57+0000",
+   "note": "Public MCP answers keyless on Base mainnet: 22 services (0.01 to 35 USDC), 9 agents all unverified; top listing by evidence has 0 distinct settled buyers and 0 USDC settled in 90 days, and 0 completed orders across every agent.",
+   "artefacts": [
+    "experiments/2026-11-16-P-0453"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
