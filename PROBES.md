@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 368 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,9 @@ Verdicts so far: 368 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0451 | Release-day filter: are BTC daily moves on FOMC and CPI days bigger than on ordinary days since 2023? | vault | none |  | 0 | 20 min |
+| P-0452 | Insider clusters: in the latest EDGAR Form 4 quarter, what is the median 21-day return minus SPY for 3+ buyer clusters? | vault | none |  | 0 | 30 min |
+| P-0453 | Agoreum public MCP: how many listed services have at least one distinct buyer who settled through escrow? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (435)
 

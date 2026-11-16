@@ -6,20 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-649 judged over 45 harvest days, 427 kept, 130 testable, 125 queued as probes, 115 with a probe verdict.
+663 judged over 46 harvest days, 434 kept, 133 testable, 128 queued as probes, 119 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0649 | 2026-11-13 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=V3ngobSPgqE) | mechanism | open-data | yes | P-0442 |
+| H-0662 | 2026-11-16 | vault | [spend everything you have]() | mechanism | none | no: It is an unverified testimonial with no data or procedure to |  |
+| H-0661 | 2026-11-16 | awesome | [agoreums/agoreum-mcp (new in awesome-mcp-servers)](https://github.com/agoreums/agoreum-mcp) | mechanism | mechanism-hunting | yes | P-0453 |
+| H-0659 | 2026-11-16 | arxiv | [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Elem](https://arxiv.org/abs/2611.18514) | mechanism | tech | no: Needs a 7B model run locally and no local LLM or GPU is avai |  |
+| H-0656 | 2026-11-16 | vault | [Trading insider clusters with real money at retail size]() | mechanism | mechanism-hunting | yes | P-0452 |
+| H-0655 | 2026-11-16 | awesome | [aelethion/agentsocks (new in awesome-mcp-servers)](https://github.com/aelethion/agentsocks) | mechanism | tools-for-strangers | no: Install rewrites Claude Code and Codex config files and need |  |
+| H-0652 | 2026-11-16 | github | [BigPizzaV3/ClaudeMom: 不用 Claude 账号！把 API Key 变成登录模式，Claude 桌面版全功能解锁（汉化 / 语音 / 电脑控制）](https://github.com/BigPizzaV3/ClaudeMom) (intel) | mechanism | tech | no: Needs the Claude Desktop app, trusting a local root certific |  |
+| H-0650 | 2026-11-16 | vault | [News filter on a daily-bar trend follower]() | mechanism | mechanism-hunting | yes | P-0451 |
+| H-0649 | 2026-11-13 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=V3ngobSPgqE) | mechanism | open-data | yes | P-0442 **not-worth-it** |
 | H-0646 | 2026-11-13 | vault | [client tiering and concentration]() | mechanism | none | no: It needs real client revenue data, which Proteus does not ho |  |
-| H-0643 | 2026-11-13 | github | [Moh4696/cinematic-skill: Agent skill for narrated cinematic films built entirely from code](https://github.com/Moh4696/cinematic-skill) | mechanism | tools-for-strangers | yes | P-0441 |
+| H-0643 | 2026-11-13 | github | [Moh4696/cinematic-skill: Agent skill for narrated cinematic films built entirely from code](https://github.com/Moh4696/cinematic-skill) | mechanism | tools-for-strangers | yes | P-0441 **works** |
 | H-0642 | 2026-11-13 | hn | [Show HN: Kapso – Iterative learning from enterprise data](https://news.ycombinator.com/item?id=50471281) | mechanism | mechanism-hunting | no: The loop needs an LLM to propose experiments and there is no |  |
 | H-0641 | 2026-11-13 | vault | [outbound with follow-ups]() (intel) | mechanism | tools-for-strangers | no: A real test means sending messages to real prospects, which  |  |
-| H-0640 | 2026-11-13 | youtube | [PumpFun Sniper Bot Guide! / How to Use Solana Sniper Bot! / Solana Trading Crypto](https://www.youtube.com/watch?v=7uUo9g318sc) (intel) | mechanism | desk:grinder | yes | P-0440 |
+| H-0640 | 2026-11-13 | youtube | [PumpFun Sniper Bot Guide! / How to Use Solana Sniper Bot! / Solana Trading Crypto](https://www.youtube.com/watch?v=7uUo9g318sc) (intel) | mechanism | desk:grinder | yes | P-0440 **works** |
 | H-0639 | 2026-11-13 | arxiv | [CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Se](https://arxiv.org/abs/2611.17115) | mechanism | tools-for-strangers | no: Reproducing it needs model answers from open-weight models a |  |
-| H-0638 | 2026-11-13 | github | [op7418/guizang-game-skill: 歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill](https://github.com/op7418/guizang-game-skill) | mechanism | game-bots | yes | P-0439 |
+| H-0638 | 2026-11-13 | github | [op7418/guizang-game-skill: 歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill](https://github.com/op7418/guizang-game-skill) | mechanism | game-bots | yes | P-0439 **works** |
 | H-0636 | 2026-11-13 | vault | [Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human fa]() | mechanism | tools-for-strangers | no: Checking the gates needs paid accounts and uploads to the ve |  |
 | H-0634 | 2026-11-12 | github | [ersinkoc/phonebox: Turn an old Android phone into a local desk panel for Windows, Linux an](https://github.com/ersinkoc/phonebox) | mechanism | tools-for-strangers | no: Needs an Android phone and the app. |  |
 | H-0632 | 2026-11-12 | vault | [proven content formats per client]() (intel) | mechanism | tools-for-strangers | no: Needs a live account and audience metrics over time. |  |
@@ -441,6 +448,88 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0662 spend everything you have
+2026-11-16, vault, 
+
+- **Mechanism:** The theme is a funnel narrative: interviewees say they put all their savings into ad spend and tools and so forced a result. The mechanism is commitment and survivorship, not a method: figures are unverified gross inflow and only winners are interviewed. Nothing in it is a measurable edge.
+- **Claim:** Several six and seven figure operators say they succeeded by spending everything they had.
+- **Testable:** no. It is an unverified testimonial with no data or procedure to run.
+- **Idea on its own:** unsound. Interviewing only survivors makes all-in spending look like strategy when the failures are invisible.
+- **How it would be done:** The only measurable piece would be how many people who joined such a funnel reach the stated income, which needs data nobody publishes. A person could survey members of the community, but the base rate is the real question and no script covers it. The useful part for Proteus is the survivorship pattern itself.
+- **Missing:** A base rate of how many entrants reach the stated results.
+- **Field Notes line:** Winners say they spent their last savings; with only winners interviewed, the stories cannot show the move is wise.
+
+### H-0661 agoreums/agoreum-mcp (new in awesome-mcp-servers)
+2026-11-16, awesome, https://github.com/agoreums/agoreum-mcp
+
+- **Mechanism:** A marketplace where AI agents list services and buyers pay in USDC on Base through a non-custodial escrow contract, released on delivery or after an auto-release window. Calls can also be paid per call over x402, the HTTP 402 Payment Required scheme where the server returns price and payment details and the client signs and retries. A public MCP endpoint lets anyone search and read without an account, ranking by distinct buyers who settled.
+- **Claim:** Agents can find, buy from and pay other agents in USDC with escrow and per-call x402 checks.
+- **Testable:** yes. How many services does the public Agoreum search endpoint list, and how many have at least one distinct settled buyer? Queued as P-0453.
+- **Idea on its own:** needs-a-run. Escrow and 402 payment are real mechanisms, but whether anyone settles through them is an empirical count.
+- **How it would be done:** Call the public no-account MCP endpoint over JSON-RPC with initialize, tools/list and the search tool sorted by evidence, read only. Count listings, those with settled buyers and the price range, and record the 402 response shape for a priced call without paying. Buying or selling needs a wallet and USDC, which is out of scope.
+- **Stack already covers:** keyless readers
+- **To fetch:** Agoreum public MCP https://agoreum.xyz/api/v1/mcp/public (No-account read of the marketplace); x402 protocol https://www.x402.org/ (Spec for the 402 payment handshake)
+- **Field Notes line:** An agent marketplace with USDC escrow and x402 pay-per-call; its own public search shows how many services anyone has actually bought.
+
+### H-0659 Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination
+2026-11-16, arxiv, https://arxiv.org/abs/2611.18514
+
+- **Mechanism:** A linear probe is trained on the hidden state of the last prompt token of Qwen2.5-7B-Instruct to predict, before any output, whether a web agent will name an action that is not on the page. Adding the probe direction to the residual stream (steering) fixes about 85 percent of hallucinations and breaks 7 percent of valid actions. The direction shifts when the action list is formatted differently, so it does not explain the failure.
+- **Claim:** A probe predicts web-agent hallucinated actions with 0.80 AUC before generation and steering corrects 85 percent of them.
+- **Testable:** no. Needs a 7B model run locally and no local LLM or GPU is available. Needs: a local 7B model and its activations.
+- **Idea on its own:** needs-a-run. The numbers are plausible, and the format sensitivity finding warns against trusting probes across prompt changes.
+- **How it would be done:** Run Qwen2.5-7B-Instruct on a rented or local GPU, collect last-token activations over page snapshots with and without a real action, fit logistic regression and measure AUC on a held-out site. Then repeat with a reformatted action list. Needs a machine that can hold the model.
+- **To fetch:** Qwen2.5-7B-Instruct https://huggingface.co/Qwen/Qwen2.5-7B-Instruct (The model under test)
+- **Missing:** A machine able to run a 7B model with hidden-state access.
+- **Field Notes line:** A simple probe on one hidden state flags a web agent about to invent a button, but it stops working when the prompt format changes.
+
+### H-0656 Trading insider clusters with real money at retail size
+2026-11-16, vault, 
+
+- **Mechanism:** SEC Form 4 filings list open-market purchases by officers and directors with a two-business-day filing lag. A cluster is three or more distinct insiders buying the same stock within a short window; the signal is the forward excess return against random same-size stocks or SPY. The numbers come from EDGAR's public Form 4 data sets and a price history source.
+- **Claim:** Clusters of three or more insider buys beat random stocks by about 1.3 percent per 21 days before costs.
+- **Testable:** yes. How many 3-or-more-insider open-market buy clusters appear in the latest EDGAR quarterly Form 4 data set, and what is their median 21-day return minus SPY? Queued as P-0452.
+- **Idea on its own:** needs-a-run. The vault's result was a lean no on costs, but a fresh out-of-sample quarter is cheap and keyless.
+- **How it would be done:** Download the SEC Form 4 data set for the latest closed quarter, keep code P transactions, group by issuer over rolling 10-day windows, and flag clusters of three or more distinct insiders. Fetch prices from a free source for the cluster date plus one trading day and 21 days later, and subtract SPY. Report the count, median and share positive. Costs and UK access are a separate question for the edge desk.
+- **Stack already covers:** open-data readers, local pollers
+- **To fetch:** SEC Form 4 data sets https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets (Keyless quarterly insider transaction files); Stooq daily prices https://stooq.com/ (Free daily closes without a key)
+- **Field Notes line:** Insider cluster buys looked like a 1.3 percent edge before costs; one more public quarter of SEC filings tells us if it is still there.
+
+### H-0655 aelethion/agentsocks (new in awesome-mcp-servers)
+2026-11-16, awesome, https://github.com/aelethion/agentsocks
+
+- **Mechanism:** agentsocks installs hooks and an MCP server into each agent's own config so a message to a named session is delivered through that agent's native channel: Claude Code's cross-session inbox, Codex's hooks before the next tool call. A local store tracks who is running; it routes FYIs as a digest and holds floods until a turn ends, and it types nothing into terminals. Tasks carry an owner, a state and a result.
+- **Claim:** Claude Code and Codex sessions on one machine can message each other, ask up to 16 sessions a question and hand over tracked tasks.
+- **Testable:** no. Install rewrites Claude Code and Codex config files and needs Codex CLI, which is not here, and the hook file is guarded. Needs: Codex CLI and permission to edit agent config.
+- **Idea on its own:** sound. Delivering through each agent's native hook and inbox channel is safer than injecting keystrokes.
+- **How it would be done:** Install the package with the dry-run flag first to read exactly which files it would edit, then try it between two Claude Code sessions in a scratch folder. Wire it to the existing sub-agent pattern as a lighter alternative to the board for live hand-offs. A person would be needed to judge whether the permission-prompt protections hold.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agentsocks https://github.com/aelethion/agentsocks (Read the guide and run install with the dry-run flag)
+- **Field Notes line:** Agentsocks lets Claude Code and Codex sessions message each other through each tool's own inbox and hooks, with no keystrokes faked into a terminal.
+
+### H-0652 BigPizzaV3/ClaudeMom: 不用 Claude 账号！把 API Key 变成登录模式，Claude 桌面版全功能解锁（汉化 / 语音 / 电脑控制）
+2026-11-16, github, https://github.com/BigPizzaV3/ClaudeMom
+
+- **Mechanism:** A local compatibility service sits between the official Claude Desktop app and the network: a locally trusted certificate lets it answer the app's account and feature-flag requests as if a signed-in account existed, while chat requests are forwarded to a user-supplied base URL and key. It is a Tauri and Rust app with a Node runtime. Platforms in this space catch it by checking certificate pinning failures, account-state mismatches on the server and unusual client-to-endpoint patterns; this is recorded as what it is, not how to use it.
+- **Claim:** Unlocks the full logged-in Claude Desktop feature set, including voice and computer control, with only an API key and no Claude account.
+- **Testable:** no. Needs the Claude Desktop app, trusting a local root certificate (a system security setting) and an upstream key. Needs: Claude Desktop, a trusted local CA, an upstream API key.
+- **Idea on its own:** unsound. It works by impersonating account state to a vendor client and requires trusting a local CA, which breaks the client's security model and is likely against the terms.
+- **How it would be done:** The steps would be: generate a local CA, trust it, start a local server that answers the app's account and flag endpoints with canned logged-in responses, and proxy chat calls to a configured upstream. Nothing here is worth building; the lesson is that desktop clients trust server-supplied feature flags. Detection and policy are vendor matters.
+- **To fetch:** ClaudeMom https://github.com/BigPizzaV3/ClaudeMom (Source to read only; not to be installed)
+- **Field Notes line:** A local proxy that fakes a signed-in account for Claude Desktop and sends the model calls to your own key; 535 stars in four days, and a grey area on terms.
+
+### H-0650 News filter on a daily-bar trend follower
+2026-11-16, vault, 
+
+- **Mechanism:** A calendar of scheduled high-impact US releases (CPI, FOMC, NFP) is used either to skip new entries on release days or to flatten open positions beforehand. It depends on a dated release calendar and daily bars, and the test is whether release days show larger moves or worse trend-follower outcomes than ordinary days. The vault's own test found one affected trade, so the open question is whether release days differ in size at all.
+- **Claim:** Skipping entries or flattening around US macro releases protects a daily crypto trend bot from news whipsaws.
+- **Testable:** yes. Is the mean absolute daily BTC return on FOMC and CPI release days more than 1.25 times the mean on all other days since 2023? Queued as P-0451.
+- **Idea on its own:** needs-a-run. The vault tested the bot's trades, which were too few; the underlying size effect on release days can be measured directly on all days.
+- **How it would be done:** Pull daily BTC candles from a public exchange endpoint and list FOMC, CPI and NFP dates from the official Fed and BLS calendars. Compute mean absolute return and the share of days above 2 percent on release days against all other days, with a simple bootstrap for the gap. If the ratio is near one, the filter has no basis; if it is large, test it on the systems desk's own trades. A hired person would only be needed to keep the calendar clean, which a script can do.
+- **Stack already covers:** freqtrade, launchd long-running pollers
+- **To fetch:** Fed FOMC calendar https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm (Official meeting dates for the release list); BLS release schedule https://www.bls.gov/schedule/news_release/ (CPI and employment release dates)
+- **Field Notes line:** Do US macro release days actually move bitcoin more than other days? One ratio from public daily bars settles whether a news filter has anything to filter.
 
 ### H-0649 The UK MOT postcode lottery: 8.4 points between best and worst
 2026-11-13, youtube, https://www.youtube.com/watch?v=V3ngobSPgqE
@@ -5479,6 +5568,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0662 | 2026-11-16 | spend everything you have | dead | unsound | no |  |
+| H-0656 | 2026-11-16 | Trading insider clusters with real money at retail size | dead | needs-a-run | yes | P-0452 |
+| H-0650 | 2026-11-16 | News filter on a daily-bar trend follower | dead | needs-a-run | yes | P-0451 |
 | H-0646 | 2026-11-13 | client tiering and concentration | intel | sound | no |  |
 | H-0641 | 2026-11-13 | outbound with follow-ups | intel | sound | no |  |
 | H-0636 | 2026-11-13 | Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human fa | intel | sound | no |  |
@@ -5619,6 +5711,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0383 | 2026-11-16 | [x402 protocol](https://www.x402.org/) | Spec for the 402 payment handshake | H-0661 (agoreums/agoreum-mcp (new in awesome-mcp-servers)) | shelf |
+| T-0382 | 2026-11-16 | [Agoreum public MCP](https://agoreum.xyz/api/v1/mcp/public) | No-account read of the marketplace | H-0661 (agoreums/agoreum-mcp (new in awesome-mcp-servers)) | shelf |
+| T-0381 | 2026-11-16 | [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) | The model under test | H-0659 (Can Mechanistic Interpretability Help Explain LLM ) | shelf |
+| T-0380 | 2026-11-16 | [SEC Form 4 data sets](https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets) | Keyless quarterly insider transaction files | H-0656 (Trading insider clusters with real money at retail) | shelf |
+| T-0379 | 2026-11-16 | [agentsocks](https://github.com/aelethion/agentsocks) | Read the guide and run install with the dry-run flag | H-0655 (aelethion/agentsocks (new in awesome-mcp-servers)) | shelf |
+| T-0378 | 2026-11-16 | [ClaudeMom](https://github.com/BigPizzaV3/ClaudeMom) | Source to read only; not to be installed | H-0652 (BigPizzaV3/ClaudeMom: 不用 Claude 账号！把 API Key 变成登录模) | shelf |
 | T-0377 | 2026-11-13 | [DVSA MOT testing data](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b5e/anonymised-mot-tests-and-results) | Open anonymised MOT test results to recompute the rates. | H-0649 (The UK MOT postcode lottery: 8.4 points between be) | shelf |
 | T-0376 | 2026-11-13 | [skia-python](https://github.com/kyamagu/skia-python) | The drawing library it renders with. | H-0643 (Moh4696/cinematic-skill: Agent skill for narrated ) | shelf |
 | T-0375 | 2026-11-13 | [cinematic-skill](https://github.com/Moh4696/cinematic-skill) | The skill, scripts and worked example. | H-0643 (Moh4696/cinematic-skill: Agent skill for narrated ) | shelf |
@@ -6001,6 +6099,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0663 | 2026-11-16 | hn | [Anthropic upgrades Claude Code Projects to run parallel AI workers](https://claude.com/resources/articles/projects-redesigned) | Product-announcement news; the brief holds only comments and no mechanism detail. |
+| H-0660 | 2026-11-16 | youtube | [The 7 fastest growing Claude skills (all free)](https://www.youtube.com/watch?v=94DrtNz-Coc) | A one-minute listicle that sells an install line behind a comment. |
+| H-0658 | 2026-11-16 | github | [credoksopho1984/blender-ai-copilot-studio: An AI copilot and MCP server for Blen](https://github.com/credoksopho1984/blender-ai-copilot-studio) | Another Blender MCP wrapper with an LLM chat panel; the README is mostly marketing and needs a model key and Blender. |
+| H-0657 | 2026-11-16 | hn | [Show HN: A terminal-native idle factory game, written in Rust with ratatui](https://gitlab.com/snipedbywifi/terminactory) | A cozy terminal game; the agent-message-into-game hook is a novelty, not a mechanism worth recording. |
+| H-0654 | 2026-11-16 | youtube | [Predict Football Match Winners With Machine Learning And Python](https://www.youtube.com/watch?v=0irmDBWLrco) | Generic random-forest tutorial on Premier League data; the Pitch desk already runs a stronger Dixon-Coles model. |
+| H-0653 | 2026-11-16 | arxiv | [OpenLayout: An Open and Agentic-Driven Platform for Holistic VLSI Physical Desig](https://arxiv.org/abs/2611.18517) | Multi-agent LLM loop for chip layout needing commercial EDA tools and advanced-node data; no keyless slice and far from  |
+| H-0651 | 2026-11-16 | hn | [Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence](https://news.ycombinator.com/item?id=50510042) | A single merchant anecdote about a payment processor closing an account; the useful pattern sits in a comment, not a mec |
 | H-0648 | 2026-11-13 | github | [hitkeeen/blender-ai-mcp-addon: AI assistant and MCP server for Blender: visual c](https://github.com/hitkeeen/blender-ai-mcp-addon) | The vault has already judged this vendor and the manager, worker, reviewer chain is a common pattern, not a new mechanis |
 | H-0647 | 2026-11-13 | hn | [Ask HN: Can anyone name anything new that AI has done?](https://news.ycombinator.com/item?id=50484426) | A discussion question with no mechanism to record. |
 | H-0645 | 2026-11-13 | youtube | [PROPOSED 2027 MOT LAWS EXPLAINED 🦾](https://www.youtube.com/watch?v=d4XbDwboeCg) | A garage owner's opinion on proposed MOT rules, with no mechanism or number. |
