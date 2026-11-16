@@ -17,12 +17,14 @@ game cap, or at the minute cap (an unfinished game is played out to its end, at 
 The token comes from 1Password through bin/secrets.py and is never printed.
 """
 import argparse
+import calendar
 import csv
 import importlib.util
 import json
 import os
 import queue
 import random
+import re
 import threading
 import time
 import urllib.error
@@ -131,6 +133,28 @@ def refuse_bots():
                 if r.get("detail") == "nobot" or (r.get("verdict") == "refused 400" and "does not accept" in r.get("detail", ""))}
 
 
+CAP_RE = re.compile(r"games against other bots today, please wait until (\d{4}-\d\d-\d\dT[\d:]+)")
+
+
+def capped_now(now=None):
+    """Bots whose last cap refusal names a reset time still in the future. 85 of 351 cap refusals to
+    16 Nov were re-asks before the stated reset (ladder page), and the 08:40 retry re-asked bots the
+    08:22 try had seen capped until 10:00 (F-0085). They are skipped this run, not for good: 33 of 57
+    capped bots said yes later."""
+    if not os.path.exists(CHALLENGES):
+        return {}
+    now = now or time.time()
+    out = {}
+    with open(CHALLENGES, newline="") as f:
+        for r in csv.DictReader(f):
+            m = CAP_RE.search(r.get("detail", ""))
+            if m and calendar.timegm(time.strptime(r["utc"], "%Y-%m-%dT%H:%M:%SZ")) < now:
+                until = calendar.timegm(time.strptime(m.group(1), "%Y-%m-%dT%H:%M:%S"))
+                if until > now:
+                    out[r["opponent"]] = max(until, out.get(r["opponent"], 0))
+    return out
+
+
 def candidates(my_id, my_rating, tried):
     out = []
     for line in req("/api/bot/online?nb=100", accept="application/x-ndjson"):
@@ -217,6 +241,9 @@ def cmd_play(a):
     never = refuse_bots() - tried
     tried |= never
     print(f"{len(never)} more skipped: they refuse bot challenges (nobot or 400)")
+    capped = set(capped_now()) - tried
+    tried |= capped
+    print(f"{len(capped)} more skipped this run: at their daily bot-game cap until a stated reset still to come")
     stop_at, played, refused = time.time() + a.minutes * 60, 0, 0
     new = not os.path.exists(LOG)
     with open(LOG, "a", newline="") as f:
@@ -305,6 +332,10 @@ def cmd_status(a):
     print(f"Lichess: {len(rows)} rated games, {wins} won, {draws} drawn, {len(rows) - wins - draws} lost; "
           f"blitz rating {last.get('my_rating_after')}; strongest opponent beaten "
           f"{max([int(r['opp_rating']) for r in rows if r['result'] == 'win'] or [0])}")
+    cap = capped_now()
+    if cap:
+        last_reset = time.strftime("%H:%M UTC", time.gmtime(max(cap.values())))
+        print(f"{len(cap)} bots at their daily cap right now, the last reset at {last_reset}")
 
 
 def main():
