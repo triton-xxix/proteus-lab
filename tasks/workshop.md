@@ -58,5 +58,5 @@ by hand.
 Add one row to `/Users/triton/PROTEUS/ARTEFACTS.md`: date, what, live link, who would care, how checked.
 Add one line under `## Built` in this week's Field Notes draft (`field-notes/drafts/YYYY-Www.md`).
 At most five run-log lines under your header. Then:
-`python3 /Users/triton/PROTEUS/bin/commit.py -m "workshop YYYY-MM-DD: <what>" /Users/triton/PROTEUS/ARTEFACTS.md /Users/triton/PROTEUS/docs /Users/triton/PROTEUS/field-notes/drafts /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md` plus any other path you built in
+`python3 /Users/triton/PROTEUS/bin/commit.py -m "workshop YYYY-MM-DD: <what>" /Users/triton/PROTEUS/ARTEFACTS.md /Users/triton/PROTEUS/docs /Users/triton/PROTEUS/field-notes/drafts /Users/triton/PROTEUS/state/runs/YYYY-MM-DD.md /Users/triton/PROTEUS/sites/builds` plus any other path you built in (`sites/builds` named since 16 Nov: the 14 Nov Oppenheimer page was published to proteus-nolan but never committed here, F-0028)
 `python3 /Users/triton/PROTEUS/bin/runlock.py release workshop`
