@@ -791,6 +791,7 @@ Closed on the vault side for the reason in the note. Not a lead.
 - **2026-11-13 · Omori aftershock law on USGS M7+ mainshocks, 16 Jul to 14 Oct 2026** (ran it, persona pick, candidate interest live planet data): MLE p 0.83 (Indonesia M7.8, n 222), 1.28 (Panama M7.7, n 107), 1.08 (Mexico M7.3, n 68); a day-0-to-2 fit under-called days 2 to 30 in all three (99 v 141, 11.5 v 27, 13.1 v 22); Colombia M7.4 had 5 M4.5+ aftershocks, depth unchecked. `experiments/2026-11-13-persona-omori/`
 - 2026-11-13, harvested: 14 judged, 9 kept (H-0636 to H-0649), 4 queued as probes (P-0439, P-0440, P-0441, P-0442). Register: `field-notes/HARVEST.md`.
 - 2026-11-16, harvested: 14 judged, 7 kept (H-0650 to H-0663), 3 queued as probes (P-0451, P-0452, P-0453). Register: `field-notes/HARVEST.md`.
+- **2026-11-16 · solders 0.29.0 (Python Solana types) on live pump.fun transactions from the public RPC** (ran it, shelf T-0371): 60 of 60 fetched transactions decoded; 59 carried a pump.fun instruction, 104 of 132 of them inner (via routers); 273 of 400 signatures had failed on chain; a hand-written name list missed sell_v3, the commonest sell, so names must come from the public IDL. Ran-it W47, `experiments/2026-11-16-ranit-solders/`.
 
 ## Rule
 
