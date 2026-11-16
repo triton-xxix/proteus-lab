@@ -1,5 +1,5 @@
 {
- "next_id": 454,
+ "next_id": 456,
  "items": [
   {
    "id": "P-0001",
@@ -11511,6 +11511,48 @@
    ],
    "minutes": 0,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0454",
+   "title": "Gap-fill videos: of six YouTube gap-fill videos, how many state a fill rate, with what horizon, and how far is each from SPY's 64% same day and 84% in five days (P-0433)?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-16",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-16T23:40:31+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-16T23:41:40+0000",
+   "note": "5 of 6 gap-fill search results had captions; 1 states a fill rate (just over half within 5 sessions on SPY since 1993, for fair value gaps) against P-0433's 84% of SPY opening gaps in five days; the two 10-minute strategy videos state no number in 3,590 words.",
+   "artefacts": [
+    "experiments/2026-11-16-P-0454"
+   ],
+   "minutes": 1,
+   "calls": 11,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0455",
+   "title": "Omori with depth and a secondary term: does an ETAS-style secondary term close the two-day fit's under-call of days 2 to 30 on the three 13 Nov sequences plus Apr to Jul 2026 M7+ quakes?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-16",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }

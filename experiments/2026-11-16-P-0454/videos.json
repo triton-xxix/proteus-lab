@@ -1,0 +1,97 @@
+{
+ "ids": [
+  "oL7mWVSETuQ",
+  "hUwkg6zLk5k",
+  "dyqyDgIfbTQ",
+  "Il6U9lArZs8",
+  "qkChxbuUqvU",
+  "96iPFDpXEcU"
+ ],
+ "blocked": false,
+ "videos": [
+  {
+   "id": "oL7mWVSETuQ",
+   "title": "Gaps 101: Why \"Always Fill\" Is a Myth",
+   "channel": "GAP IT ",
+   "error": "TranscriptsDisabled"
+  },
+  {
+   "id": "hUwkg6zLk5k",
+   "title": "1-Hour Fair Value Gaps on Your 5-Minute Chart",
+   "channel": "Edgewise Labs",
+   "words": 89,
+   "minutes": 0.6,
+   "fill_rate_lines": 0,
+   "horizon_lines": 0,
+   "count_lines": 0,
+   "fill_rate_claims": [],
+   "horizon_claims": [],
+   "count_claims": [],
+   "title_pct": []
+  },
+  {
+   "id": "dyqyDgIfbTQ",
+   "title": "I Tested ICT Fair Value Gaps On 10 Years Of Gold (M15)",
+   "channel": "Backtest Busters | Trading Strategies Tested",
+   "words": 62,
+   "minutes": 0.4,
+   "fill_rate_lines": 0,
+   "horizon_lines": 0,
+   "count_lines": 0,
+   "fill_rate_claims": [],
+   "horizon_claims": [],
+   "count_claims": [],
+   "title_pct": []
+  },
+  {
+   "id": "Il6U9lArZs8",
+   "title": "Does Price ALWAYS Fill the Gap? Fair Value Gaps (FVG) with Real SPY Data #PriceAction",
+   "channel": "Miggy Capital",
+   "words": 151,
+   "minutes": 0.7,
+   "fill_rate_lines": 1,
+   "horizon_lines": 0,
+   "count_lines": 0,
+   "fill_rate_claims": [
+    {
+     "at_s": 28,
+     "pct": [
+      "15"
+     ],
+     "text": "My math since 1993: just over half get filled within 5 sessions\u2026 and 15% are still open 3 months later. My take: it's a zone to watch, not an order."
+    }
+   ],
+   "horizon_claims": [],
+   "count_claims": [],
+   "title_pct": []
+  },
+  {
+   "id": "qkChxbuUqvU",
+   "title": "This Gap Trading Strategy Prints You Money (Gap Up, Gap Down, Gap Fill)",
+   "channel": "Wysetrade",
+   "words": 1759,
+   "minutes": 9.7,
+   "fill_rate_lines": 0,
+   "horizon_lines": 0,
+   "count_lines": 0,
+   "fill_rate_claims": [],
+   "horizon_claims": [],
+   "count_claims": [],
+   "title_pct": []
+  },
+  {
+   "id": "96iPFDpXEcU",
+   "title": "Gap Trading: World Champion explains the BEST trading strategy in detail!",
+   "channel": "Tom Vorwald EN",
+   "words": 1831,
+   "minutes": 10.4,
+   "fill_rate_lines": 0,
+   "horizon_lines": 0,
+   "count_lines": 0,
+   "fill_rate_claims": [],
+   "horizon_claims": [],
+   "count_claims": [],
+   "title_pct": []
+  }
+ ]
+}
