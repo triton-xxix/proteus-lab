@@ -1,0 +1,199 @@
+{
+ "pulled": "2026-11-16T23:42:41.178485+00:00",
+ "summary": {
+  "mainshocks": 9,
+  "fitted": 6,
+  "etas_nearer": 1,
+  "omori_under": 5,
+  "etas_under": 0,
+  "observed_inside_etas_p10_p90": 3
+ },
+ "rows": [
+  {
+   "place": "129 km ESE of Bitung, Indonesia",
+   "mag": 7.4,
+   "depth_km": 35,
+   "time": "2026-04-01T22:48:13.063000Z",
+   "n_early": 101,
+   "seen_day2_30": 46,
+   "omori": {
+    "p": 0.68,
+    "c": 0.001,
+    "pred_day2_30": 171.7
+   },
+   "etas": {
+    "K": 0.0383,
+    "p": 1.1,
+    "alpha": 0.8,
+    "branching_ratio_30d": 1.673,
+    "pred_day2_30": {
+     "mean": 4114.3,
+     "median": 5001,
+     "p10": 499,
+     "p90": 5087,
+     "capped_runs": 295
+    }
+   },
+   "etas_nearer": false
+  },
+  {
+   "place": "102 km ENE of Miyako, Japan",
+   "mag": 7.4,
+   "depth_km": 25,
+   "time": "2026-04-20T07:52:58.908000Z",
+   "n_early": 18,
+   "seen_day2_30": 20,
+   "omori": {
+    "p": 1.08,
+    "c": 0.001,
+    "pred_day2_30": 6.8
+   },
+   "etas": {
+    "K": 0.0009,
+    "p": 1.18,
+    "alpha": 1.2,
+    "branching_ratio_30d": "inf",
+    "pred_day2_30": {
+     "mean": 23.6,
+     "median": 6,
+     "p10": 3,
+     "p90": 10,
+     "capped_runs": 1
+    }
+   },
+   "etas_nearer": true
+  },
+  {
+   "place": "25 km SW of Kablalan, Philippines",
+   "mag": 7.8,
+   "depth_km": 57.0,
+   "time": "2026-06-07T23:37:41.970000Z",
+   "n_early": 105,
+   "seen_day2_30": 80,
+   "omori": {
+    "p": 1.32,
+    "c": 0.2,
+    "pred_day2_30": 53.2
+   },
+   "etas": {
+    "K": 0.0381,
+    "p": 0.9,
+    "alpha": 0.8,
+    "branching_ratio_30d": 1.475,
+    "pred_day2_30": {
+     "mean": 1856.2,
+     "median": 945,
+     "p10": 356,
+     "p90": 5001,
+     "capped_runs": 47
+    }
+   },
+   "etas_nearer": false
+  },
+  {
+   "place": "20 km E of San Felipe, Venezuela",
+   "mag": 7.2,
+   "depth_km": 10,
+   "time": "2026-06-24T22:04:31.806000Z",
+   "n_early": 0,
+   "seen_day2_30": 4
+  },
+  {
+   "place": "20 km W of Catia La Mar, Venezuela",
+   "mag": 7.5,
+   "depth_km": 10,
+   "time": "2026-06-24T22:05:04.053000Z",
+   "n_early": 2,
+   "seen_day2_30": 5
+  },
+  {
+   "place": "60 km WSW of Puerto Madero, Mexico",
+   "mag": 7.3,
+   "depth_km": 22,
+   "time": "2026-07-17T14:48:39.881000Z",
+   "n_early": 46,
+   "seen_day2_30": 22,
+   "omori": {
+    "p": 1.22,
+    "c": 0.02,
+    "pred_day2_30": 13.5
+   },
+   "etas": {
+    "K": 0.0028,
+    "p": 1.16,
+    "alpha": 1.2,
+    "branching_ratio_30d": "inf",
+    "pred_day2_30": {
+     "mean": 45.3,
+     "median": 18,
+     "p10": 11,
+     "p90": 35,
+     "capped_runs": 1
+    }
+   },
+   "etas_nearer": false
+  },
+  {
+   "place": "4 km SSW of San Jos\u00e9 del Palmar, Colombia",
+   "mag": 7.4,
+   "depth_km": 116.1,
+   "time": "2026-08-10T12:34:28.828000Z",
+   "n_early": 1,
+   "seen_day2_30": 4
+  },
+  {
+   "place": "66 km NNW of Ende, Indonesia",
+   "mag": 7.8,
+   "depth_km": 10,
+   "time": "2026-08-14T21:58:21.561000Z",
+   "n_early": 81,
+   "seen_day2_30": 141,
+   "omori": {
+    "p": 0.78,
+    "c": 0.001,
+    "pred_day2_30": 96.7
+   },
+   "etas": {
+    "K": 0.028,
+    "p": 0.98,
+    "alpha": 0.8,
+    "branching_ratio_30d": 1.108,
+    "pred_day2_30": {
+     "mean": 365.7,
+     "median": 188,
+     "p10": 99,
+     "p90": 666,
+     "capped_runs": 3
+    }
+   },
+   "etas_nearer": false
+  },
+  {
+   "place": "10 km WSW of Pitaloza Arriba, Panama",
+   "mag": 7.7,
+   "depth_km": 10,
+   "time": "2026-10-09T17:56:05.537000Z",
+   "n_early": 80,
+   "seen_day2_30": 27,
+   "omori": {
+    "p": 1.52,
+    "c": 0.05,
+    "pred_day2_30": 11.4
+   },
+   "etas": {
+    "K": 0.0016,
+    "p": 1.2,
+    "alpha": 1.2,
+    "branching_ratio_30d": "inf",
+    "pred_day2_30": {
+     "mean": 81.0,
+     "median": 25,
+     "p10": 18,
+     "p90": 38,
+     "capped_runs": 1
+    }
+   },
+   "etas_nearer": false
+  }
+ ]
+}

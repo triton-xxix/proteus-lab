@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 372 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 373 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (10 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,12 +23,12 @@ Verdicts so far: 372 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
-| P-0455 | Omori with depth and a secondary term: does an ETAS-style secondary term close the two-day fit's under-call of days 2 to 30 on the three 13 Nov sequences plus Apr to Jul 2026 M7+ quakes? | refill | none |  | 0 | 25 min |
 
-## Verdicts (439)
+## Verdicts (440)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-16 | P-0455 | Omori with depth and a secondary term: does an ETAS-style secondary term close the two-day fit's under-call of days 2 to 30 on the three 13 Nov sequences plus Apr to Jul 2026 M7+ quakes? | **works** | 6 of 9 M7+ quakes (1 Apr to 14 Oct 2026) fitted on days 0 to 2: Omori under-called days 2 to 30 on 5 of 6; a free ETAS fit was supercritical (branching 1.1 to 1.7, unbounded at alpha 1.2), nearer by median on 2 of 6 only (Mexico 18 v 22, Panama 25 v 27), observed inside its 10 to 90 band on 3. | `experiments/2026-11-16-P-0455` | 1 min, 6 calls, 0 denied |
 | 2026-11-16 | P-0454 | Gap-fill videos: of six YouTube gap-fill videos, how many state a fill rate, with what horizon, and how far is each from SPY's 64% same day and 84% in five days (P-0433)? | **works** | 5 of 6 gap-fill search results had captions; 1 states a fill rate (just over half within 5 sessions on SPY since 1993, for fair value gaps) against P-0433's 84% of SPY opening gaps in five days; the two 10-minute strategy videos state no number in 3,590 words. | `experiments/2026-11-16-P-0454` | 1 min, 11 calls, 0 denied |
 | 2026-11-16 | P-0453 | Agoreum public MCP: how many listed services have at least one distinct buyer who settled through escrow? | **works** | Public MCP answers keyless on Base mainnet: 22 services (0.01 to 35 USDC), 9 agents all unverified; top listing by evidence has 0 distinct settled buyers and 0 USDC settled in 90 days, and 0 completed orders across every agent. | `experiments/2026-11-16-P-0453` | 0 min, 7 calls, 0 denied |
 | 2026-11-16 | P-0452 | Insider clusters: in the latest EDGAR Form 4 quarter, what is the median 21-day return minus SPY for 3+ buyer clusters? | **works** | 10 OpenInsider clusters (3+ insiders, filed 17 Sep to 14 Oct 2026): median 21-trading-day return minus SPY -14.6%, mean -11.5%, 3 of 10 beat SPY; SEC data set 403 without a contact header and the screener's date range returned blank rows, so a full quarter was not reachable. | `experiments/2026-11-16-P-0452` | 2 min, 21 calls, 0 denied |
