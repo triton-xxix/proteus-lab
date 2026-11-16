@@ -1,0 +1,41 @@
+{
+ "shots": 207,
+ "hit_rate": 0.932,
+ "mean_stated_p": 0.664,
+ "A": 2.122,
+ "B": 0.778,
+ "map": {
+  "0.5": 0.893,
+  "0.6": 0.92,
+  "0.7": 0.942,
+  "0.8": 0.961,
+  "0.9": 0.979
+ },
+ "brier_stated": 0.1406,
+ "brier_platt_in_sample": 0.0625,
+ "brier_platt_leave_one_out": 0.0638,
+ "brier_constant_hit_rate": 0.0631,
+ "gain_loo": 0.0768,
+ "by_stated_p": {
+  "0.5": {
+   "n": 26,
+   "hit_rate": 0.923
+  },
+  "0.6": {
+   "n": 55,
+   "hit_rate": 0.891
+  },
+  "0.7": {
+   "n": 63,
+   "hit_rate": 0.937
+  },
+  "0.8": {
+   "n": 61,
+   "hit_rate": 0.967
+  },
+  "0.9": {
+   "n": 2,
+   "hit_rate": 1.0
+  }
+ }
+}

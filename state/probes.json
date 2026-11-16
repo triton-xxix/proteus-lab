@@ -1,5 +1,5 @@
 {
- "next_id": 457,
+ "next_id": 458,
  "items": [
   {
    "id": "P-0001",
@@ -11577,6 +11577,28 @@
    ],
    "minutes": 7,
    "calls": 26,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0457",
+   "title": "Called-shot calibration: Platt-scale my stated verdict p on every scored shot in state/probes.json; what should a 0.6 and a 0.7 shot have been, and does the Brier move by more than 0.05?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-16",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-16T23:51:39+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-16T23:52:24+0000",
+   "note": "207 scored shots hit 93.2% against mean stated p 0.664; Platt maps 0.6 to 0.92 and 0.7 to 0.94, leave-one-out Brier 0.141 to 0.064, but a constant 0.93 scores 0.063, so the stated p sorts almost nothing (0.6 hit 89%, 0.8 hit 97%).",
+   "artefacts": [
+    "experiments/2026-11-16-P-0457"
+   ],
+   "minutes": 0,
+   "calls": 10,
    "denied": [],
    "luke": false
   }

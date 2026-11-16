@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 374 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 375 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
 ## Queue (10 open)
 
@@ -24,10 +24,11 @@ Verdicts so far: 374 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
 
-## Verdicts (441)
+## Verdicts (442)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-16 | P-0457 | Called-shot calibration: Platt-scale my stated verdict p on every scored shot in state/probes.json; what should a 0.6 and a 0.7 shot have been, and does the Brier move by more than 0.05? | **works** | 207 scored shots hit 93.2% against mean stated p 0.664; Platt maps 0.6 to 0.92 and 0.7 to 0.94, leave-one-out Brier 0.141 to 0.064, but a constant 0.93 scores 0.063, so the stated p sorts almost nothing (0.6 hit 89%, 0.8 hit 97%). | `experiments/2026-11-16-P-0457` | 0 min, 10 calls, 0 denied |
 | 2026-11-16 | P-0456 | pump.fun same-slot bundles: for 20 live creates, what share of supply do the creator plus every same-slot non-curve buyer hold, against P-0180's 9 of 20 bundled? | **works** | 49 creates in 1.5 min, 7 of 20 sampled read at the public RPC pace: same-slot outside buyer on 1 of 7 (0.15% of supply), creator plus bundle median 0.70%, max 8.0%; run 1 read 100% because an unexplained owner holds a full 1bn beside the curve on 4 of 7, fixed by dropping every half-supply owner. | `experiments/2026-11-16-P-0456` | 7 min, 26 calls, 0 denied |
 | 2026-11-16 | P-0455 | Omori with depth and a secondary term: does an ETAS-style secondary term close the two-day fit's under-call of days 2 to 30 on the three 13 Nov sequences plus Apr to Jul 2026 M7+ quakes? | **works** | 6 of 9 M7+ quakes (1 Apr to 14 Oct 2026) fitted on days 0 to 2: Omori under-called days 2 to 30 on 5 of 6; a free ETAS fit was supercritical (branching 1.1 to 1.7, unbounded at alpha 1.2), nearer by median on 2 of 6 only (Mexico 18 v 22, Panama 25 v 27), observed inside its 10 to 90 band on 3. | `experiments/2026-11-16-P-0455` | 1 min, 6 calls, 0 denied |
 | 2026-11-16 | P-0454 | Gap-fill videos: of six YouTube gap-fill videos, how many state a fill rate, with what horizon, and how far is each from SPY's 64% same day and 84% in five days (P-0433)? | **works** | 5 of 6 gap-fill search results had captions; 1 states a fill rate (just over half within 5 sessions on SPY since 1993, for fair value gaps) against P-0433's 84% of SPY opening gaps in five days; the two 10-minute strategy videos state no number in 3,590 words. | `experiments/2026-11-16-P-0454` | 1 min, 11 calls, 0 denied |
