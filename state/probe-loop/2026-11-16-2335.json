@@ -17,7 +17,7 @@
   "P-0456",
   "P-0457"
  ],
- "stopped_at": null,
- "stop_reason": null,
- "refills": 5
+ "stopped_at": "2026-11-16T23:52:36+0000",
+ "stop_reason": "7 probes done, 126 of 150 calls used: row 176 (low-cloud Munich market check) needs about 15 calls with its METAR pull, left unused for tomorrow rather than cut off by the call cap",
+ "refills": 6
 }
