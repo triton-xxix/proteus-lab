@@ -1,0 +1,19 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "signatures": 60,
+  "secs": 18.0,
+  "stats": {
+    "fetch_failed": 4,
+    "failed_on_chain": 45,
+    "fetched": 11,
+    "decoded": 11,
+    "pump_only_inner_or_cpi": 9
+  },
+  "instruction_kinds": {
+    "unknown": 2
+  },
+  "unknown_discriminators": {
+    "1c92de7726c469d5": 2
+  },
+  "creates": []
+}

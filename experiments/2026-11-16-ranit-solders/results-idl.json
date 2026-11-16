@@ -1,0 +1,32 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "signatures": 400,
+  "secs": 151.2,
+  "stats": {
+    "failed_on_chain": 273,
+    "fetch_failed": 40,
+    "fetched": 60,
+    "decoded": 60,
+    "pump_ix_top": 28,
+    "pump_ix_inner": 104,
+    "no_pump_ix_found": 1
+  },
+  "instruction_kinds": {
+    "buy_v3": 1,
+    "unknown": 65,
+    "sell_v3": 16,
+    "sell": 11,
+    "buy": 24,
+    "collect_creator_fee": 2,
+    "sweep_creator_fee": 5,
+    "collect_creator_fee_v2": 2,
+    "buy_exact_sol_in": 1,
+    "close_user_volume_accumulator": 3,
+    "buy_exact_quote_in_v3": 1,
+    "claim_cashback_v2": 1
+  },
+  "unknown_discriminators": {
+    "e445a52e51cb9a1d": 65
+  },
+  "creates": []
+}
