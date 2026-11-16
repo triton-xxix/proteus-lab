@@ -1,0 +1,102 @@
+{
+ "source_rows": 10,
+ "scored": 10,
+ "failed": 0,
+ "median_excess_pct": -14.62,
+ "mean_excess_pct": -11.46,
+ "share_beating_spy": 0.3,
+ "mean_excess_trimmed_5pct": null,
+ "results": [
+  {
+   "ticker": "GME",
+   "filed": "2026-10-13",
+   "insiders": "5",
+   "value": "+$99,078,947",
+   "ret": -5.64,
+   "spy": -1.62,
+   "excess": -4.01
+  },
+  {
+   "ticker": "ACCV",
+   "filed": "2026-10-05",
+   "insiders": "5",
+   "value": "+$4,098,600",
+   "ret": -28.66,
+   "spy": -1.58,
+   "excess": -27.08
+  },
+  {
+   "ticker": "HELP",
+   "filed": "2026-10-01",
+   "insiders": "4",
+   "value": "+$6,327,730",
+   "ret": -24.79,
+   "spy": -2.28,
+   "excess": -22.51
+  },
+  {
+   "ticker": "PRHI",
+   "filed": "2026-10-01",
+   "insiders": "5",
+   "value": "+$248,878",
+   "ret": 4.66,
+   "spy": -2.28,
+   "excess": 6.94
+  },
+  {
+   "ticker": "DKS",
+   "filed": "2026-10-01",
+   "insiders": "7",
+   "value": "+$5,588,663",
+   "ret": 4.53,
+   "spy": -2.28,
+   "excess": 6.81
+  },
+  {
+   "ticker": "BBD",
+   "filed": "2026-09-30",
+   "insiders": "22",
+   "value": "+$27,962,071",
+   "ret": -25.97,
+   "spy": -1.08,
+   "excess": -24.88
+  },
+  {
+   "ticker": "DY",
+   "filed": "2026-09-24",
+   "insiders": "3",
+   "value": "+$551,307",
+   "ret": -15.83,
+   "spy": -0.78,
+   "excess": -15.06
+  },
+  {
+   "ticker": "ADC",
+   "filed": "2026-09-23",
+   "insiders": "3",
+   "value": "+$4,142,871",
+   "ret": -0.32,
+   "spy": -0.94,
+   "excess": 0.62
+  },
+  {
+   "ticker": "RWT",
+   "filed": "2026-09-18",
+   "insiders": "4",
+   "value": "+$1,312,178",
+   "ret": -21.82,
+   "spy": -0.58,
+   "excess": -21.25
+  },
+  {
+   "ticker": "SBLK",
+   "filed": "2026-09-17",
+   "insiders": "8",
+   "value": "+$6,920,496",
+   "ret": -13.55,
+   "spy": 0.63,
+   "excess": -14.18
+  }
+ ],
+ "fails": []
+}

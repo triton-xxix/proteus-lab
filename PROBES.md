@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 369 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 370 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (12 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,13 +23,13 @@ Verdicts so far: 369 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
-| P-0452 | Insider clusters: in the latest EDGAR Form 4 quarter, what is the median 21-day return minus SPY for 3+ buyer clusters? | vault | none |  | 0 | 30 min |
 | P-0453 | Agoreum public MCP: how many listed services have at least one distinct buyer who settled through escrow? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (436)
+## Verdicts (437)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-16 | P-0452 | Insider clusters: in the latest EDGAR Form 4 quarter, what is the median 21-day return minus SPY for 3+ buyer clusters? | **works** | 10 OpenInsider clusters (3+ insiders, filed 17 Sep to 14 Oct 2026): median 21-trading-day return minus SPY -14.6%, mean -11.5%, 3 of 10 beat SPY; SEC data set 403 without a contact header and the screener's date range returned blank rows, so a full quarter was not reachable. | `experiments/2026-11-16-P-0452` | 2 min, 21 calls, 0 denied |
 | 2026-11-16 | P-0451 | Release-day filter: are BTC daily moves on FOMC and CPI days bigger than on ordinary days since 2023? | **works** | BTC UTC-day moves 2023 to 15 Nov 2026: release days 1.89% mean abs v 1.67% ordinary (1.13x, n 75, perm p 0.15); FOMC 1.19x p 0.16, CPI 1.08x p 0.31, and FOMC days moved less than ordinary days in 2025 and 2026. | `experiments/2026-11-16-P-0451` | 1 min, 20 calls, 0 denied |
 | 2026-11-14 | P-0450 | Munich market depth at the favourite: refill 171 found exchange/SNAPSHOTS.csv has no size columns and munich_volumes.jsonl (from 8 Nov) shows 0 to 23 units traded per Munich day market in 1 or 2 trades. Pull Smarkets v3 quotes (keyless) for every open Munich temperature market now: quantity on the best offer and the next two levels at the favourite degree, and how much a 10-unit back would move the average price. Can P-0434's paper fills be had at any size? | **works** | Two open Munich markets at 12:39 UTC: stake on the favourite best offer 16.92 and 43.43 GBP, 101.93 and 139.23 across all offers; a 10 GBP back fills at the best offer on both (90.09 and 25.32, no slippage). Shot said under 20 on most and 2+ points of slippage: size split 1 of 2, slippage missed (0). Cost is the spread (6.1 and 4.5 points), which P-0434 already paid. GBP assumes quantity/1e4 x price/1e4, unchecked; one moment, not the 14 nights. Next: promote (log best-offer stake at the favourite in exchange/volumes_log.py each night so the book can be priced at real size). | `experiments/2026-11-14-P-0450` | 0 min, 11 calls, 0 denied |
 | 2026-11-14 | P-0449 | SPY gap fade with a stop: P-0433's fade of SPY gaps over 1% since 2009 (443 gaps, +0.198% a trade after its cost). Add 0.05% slippage at the open and a stop at twice the gap; daily bars cannot order stop and fill, so report both the worst case (stop first when both touched) and the best case, and the mean by prior-20-day realised-vol tercile. Refill 170: by year, 2020 plus 2022 are 27% of the total, 2009 plus 2011 another 36%, 13 of 18 years positive; the extra slippage alone leaves +0.148%. | **works** | SPY gaps of 1%+ since 2009, 443: replicates +0.198% at P-0433 cost; with 0.05% slippage +0.148%; with a 2x-gap stop worst case +0.030% (t 0.50, win 46.7%), best case +0.160%. Shot said +0.05 and +0.17: hit close on both. Stop touched 82 days, both touched 19. Worst case still beats the coin (-0.132%, p 0.002) but 2020 and 2022 carry 74% of it, and in the high-vol tercile the stop turns +0.188% into -0.015%. The stop costs most where the edge lives. Next: close (no stop helps; unstopped it is a short-vol trade with no intraday check). | `experiments/2026-11-14-P-0449` | 0 min, 6 calls, 0 denied |
