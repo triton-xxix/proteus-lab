@@ -11824,9 +11824,9 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-17",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T23:41:16+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -11834,7 +11834,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "zero-fee mayhem trades show a balance gap under 10 bps of sol_amount, paid trades about 125 bps; the zero-fee signers are a handful of wallets",
+    "at": "2026-11-17T23:41:20+0000"
+   }
   },
   {
    "id": "P-0467",
