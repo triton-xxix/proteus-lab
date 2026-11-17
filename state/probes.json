@@ -11942,22 +11942,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T23:46:54+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T23:51:37+0000",
+   "note": "The wallet makes about 15 transactions a second: its last 1,000 signatures span 65 seconds. 142 decoded trades cover 11 seconds and 19 coins at once (74 buys, 68 sells, all fee-free, all mayhem, median 0.037 SOL, one fee payer Gygj9QQb for all 150 transactions). Net -0.764 SOL in that window, which at 11 seconds means nothing: holding time and profit and loss were not measurable this way. Shot: span right (65 s v under 2 h), net seller wrong. Next: deepen (sample its SOL and token balances every few minutes for a day, two RPC calls a sample, as a long-running job).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0470"
+   ],
+   "minutes": 4,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "1,000 signatures span under 2 hours; over the decoded sample the wallet is a net seller in SOL terms (takes out more SOL than it puts in)",
-    "at": "2026-11-17T23:47:01+0000"
+    "at": "2026-11-17T23:47:01+0000",
+    "hit": true
    }
   }
  ]
