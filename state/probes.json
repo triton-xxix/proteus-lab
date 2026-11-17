@@ -1,5 +1,5 @@
 {
- "next_id": 471,
+ "next_id": 472,
  "items": [
   {
    "id": "P-0001",
@@ -11961,6 +11961,32 @@
     "number": "1,000 signatures span under 2 hours; over the decoded sample the wallet is a net seller in SOL terms (takes out more SOL than it puts in)",
     "at": "2026-11-17T23:47:01+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0471",
+   "title": "Mayhem agent balance sampler: a two-call poller (getBalance, getTokenAccountsByOwner) on the fee-free wallet every 5 minutes for 24 hours as a long-running job; number is its SOL profit and loss over the day",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T23:51:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "both calls answer keyless; over a 20 minute test run the wallet SOL balance moves by under 5 percent; the 24 hour job itself cannot be loaded from this run",
+    "at": "2026-11-17T23:51:57+0000"
    }
   }
  ]
