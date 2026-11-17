@@ -138,7 +138,7 @@ Below the cut and worth a look:
 |---|---|---|---|---|
 | sdetclub (sdetclub-6250) | 3,935 | 6 / 34 / 156 | free | QA engineers: names DeepEval and RAGAS LLM evaluation, plus agents for test automation (a pick) |
 | AI Agent Developer Academy (ai-agent-developer-academy-1789) | 3,032 | 1 / 9 / 775 | free | Delivering a first agent to a real client; weekly Q&A calls |
-| The Chatbot Challenge (chatbot-challenge) | 1,602 | 17 / 198 / 449 | free | VoiceAI and chatbot training with GoHighLevel; names home services as a niche (a pick) |
+| The Chatbot Challenge (chatbot-challenge) | 1,602 | 17 / 198 / 449 | free to join; 2 courses sold separately ($497 and $67), found 17 Nov | VoiceAI and chatbot training with GoHighLevel; names home services as a niche (a pick) |
 | Thoughtly (thoughtly) | 604 | 6 / 67 / 342 | free | One voice AI platform's user room |
 
 ## The shortlist: five rooms
@@ -152,7 +152,7 @@ thing. If it is not there, leave.
 | 1 | **Million Dollar Plumber** (1,236 members, 29 courses, 456 modules, 1,097 posts; free, no paid tier; page updated today) | Plumbing is the first trade Luke named for Triton's M1 lane on 8 Oct, and this is a plumbing owner's own curriculum on leads, customers and team, so it fills the `sales-and-offers` gap on what a trade owner will actually buy and gives the M1 sales-team diagnostic the owner's own words. | Is there a module on how calls are booked or how the office team is measured? If it is all start-up and mindset, leave. |
 | 2 | **The Trades Lab** (151 members, 7 courses, 69 modules; free + paid tier, free layer only) | `sales-calls` says "no trades call" (every call in that framework is general B2B), and this room says it archives mastermind calls with real HVAC, plumbing and electrical owners, which is the other trade Luke named. | Are the archived calls in the free layer, and are they sales or booking calls? If they sit behind the paid tier, leave. |
 | 3 | **Trade Accelerator** (13 members, 5 courses, 33 modules; free; started April 2026) | `facebook-ads` admits its UK trade benchmarks come from one client, and `sales-and-offers` has no UK figures; this is a UK programme for trade firms doing £200k to £500k, with its own Meta ads numbers to check ours against. | Look for cost per lead and close rates in pounds. Its headline claim (£932k of pipeline in four weeks) is the room's own and is not evidence. Thirteen members means no feed to learn from: the classroom is all of it. |
-| 4 | **The Chatbot Challenge** (1,602 members, 17 courses, 198 modules, 449 posts; free, no paid tier) | `ai-automation-builds` lists voice platform running costs and a voice demo line's monthly cost as "not covered anywhere", and this room has 50+ hours of VoiceAI training that names home services as a niche. | Find a running-cost or per-minute lesson, and whether UK numbers or accents come up at all. It teaches GoHighLevel, so it may not cover Retell. |
+| 4 | **The Chatbot Challenge** (1,602 members, 17 courses, 198 modules, 449 posts; free to join, but two of the 17 courses are locked behind one-time unlocks of $497 and $67, which the about page did not show) | `ai-automation-builds` lists voice platform running costs and a voice demo line's monthly cost as "not covered anywhere", and this room has 50+ hours of VoiceAI training that names home services as a niche. | Find a running-cost or per-minute lesson, and whether UK numbers or accents come up at all. It teaches GoHighLevel, so it may not cover Retell. |
 | 5 | **sdetclub** (3,935 members, 6 courses, 34 modules; free) | `ai-automation-builds` has no way to evaluate an agent beyond one accuracy check, and this room names DeepEval and RAGAS LLM evaluation, which is also what the harvester's single Sonnet judge needs (the harvester is a scored line in `PASS-MARKS.md`). | Find the LLM evaluation course. The rest is QA career material; ignore it. |
 
 Order if Luke only joins some: 1 and 2 first (the trades he named, both about the buyer), then 4, then 3 and 5.
@@ -173,7 +173,7 @@ pending joins already: SalesGlider (9 members) and Leverage AI (29). Nothing to 
   layer gives the mechanism and the paid layer gives more examples of it. Clief Notes was looked at on 6 Oct and
   left because it is the same AI-workflow ground.
 - **Voice AI Bootcamp:** nine courses and a big feed, but the about page promises "clarity" and names no
-  mechanism, and it has a paid tier. The Chatbot Challenge has more modules, no paid tier and a stated niche.
+  mechanism, and it has a paid tier. The Chatbot Challenge has more modules and a stated niche, though two of its courses are sold separately.
 - **AI Freelancers, Thoughtly:** AI Freelancers builds a receptionist but is a freelancer funnel with a paid tier;
   Thoughtly is one vendor's user room, so its answers would be about that product.
 - **AI Agent Developer Academy:** closest miss. It might help with hand-over and maintenance pricing (`ai-automation-builds`
@@ -198,6 +198,34 @@ pending joins already: SalesGlider (9 members) and Leverage AI (29). Nothing to 
 - Joining is Luke's click, from either login. Joining puts a room on his profile. I did not join, post or sign in.
 - Nothing here changes the 15 Oct decision to pay for nothing. If any of the five turns out to be worth a paid
   tier, it comes back as its own line with a goal.
+
+## Joins and first look, 17 Nov 2026
+
+Luke said to get joined up. Chrome was already signed in as luke-boyd-4592 (the main login), and he chose
+Triton's agent address for any email field. No phone number, revenue figure or role statement was entered.
+
+| Room | State | What happened |
+|---|---|---|
+| Trade Accelerator | Request pending | No questions asked; the admin approves by email. Nothing to read until then |
+| The Chatbot Challenge | Request pending | Answered "A little..." to chatbot experience and gave Triton's address. Public group, so the classroom list and feed are readable before approval (below) |
+| sdetclub | Request pending | No questions asked, no email given |
+| Million Dollar Plumber | **Not joined** | The form will not submit without the "leave your number" field, which asks for a phone number so their team can ring. I stopped rather than make one up or type a dodge |
+| The Trades Lab | **Not joined** | The form requires an annual revenue range and a statement of role and goals. Its plan page also shows the free tier (Standard, $0: core concepts, community, occasional Q&A) apart from Premium ($40 a month: full systems, training videos, tools and monthly mastermind calls). The archived owner calls that earned the pick are most likely Premium, so the goal line probably fails on the free tier |
+
+**The Chatbot Challenge, read from outside** (classroom list, 17 courses, nothing opened):
+
+- Passes on home services: a 4-day Painter Challenge (a home-services bot that answers leads, qualifies, estimates and
+  books a calendar), a 3-day Roofing Agency Challenge, and a 1-hour VoiceBot Challenge (a Vapi voice bot, an ElevenLabs
+  voice, buying a phone number, demoed on solar).
+- A bonus fit I had not listed: **The DBR Challenge**, an AI database reactivation campaign with a revenue calculator,
+  which bears on the `database-reactivation` gap about prompts and templates not captured.
+- Fails or is unproven on the original goal line: no lesson title is about running cost per month, and nothing names UK
+  numbers or accents. That stays unanswered until the lessons can be opened.
+- Locked: Agency-in-a-Box ($497, a GoHighLevel and Assistable snapshot) and The AI Masterclasses ($67). Neither is on
+  the table; the 15 Oct decision to pay for nothing stands. The pinned post is a sales post for the $497 one.
+
+Next, once the three pending rooms approve: classroom and feed pull for the ones that pass the ten-minute check, per
+`project_skool_pull_and_read_jobs`.
 
 Raw pull: all 2,698 free-filter rooms with members, counts and descriptions sit in the browser pane's page data
 only; I did not save them to disk, since the lists above are what I used. The same three URLs re-run the scan.
