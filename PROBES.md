@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 377 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (10 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,8 @@ Verdicts so far: 377 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
 | P-0458 | Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent | desk | none | 2026-11-28 | 0 | 20 min |
+| P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
+| P-0461 | Low-cloud miss, model or weather: at EDDM over Nov 2025 to Oct 2026, the P-0446 low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) against lead-1 day-high error for ecmwf_ifs025 and gfs_seamless from the Open-Meteo previous-runs API (keyless, both checked serving 1 Nov 2025 today), reusing experiments/2026-11-14-P-0447/stations.py; number is each model's gap with a 10,000-shuffle permutation p, beside icon_seamless -1.07 C | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (444)
 

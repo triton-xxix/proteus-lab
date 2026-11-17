@@ -1,5 +1,5 @@
 {
- "next_id": 460,
+ "next_id": 462,
  "items": [
   {
    "id": "P-0001",
@@ -11658,6 +11658,52 @@
     "number": "market implied-mean error gap on low-cloud mornings about -0.4 C, smaller than ICON -1.07",
     "at": "2026-11-17T12:34:01+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0460",
+   "title": "Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-12-10",
+   "est_minutes": 20,
+   "added": "2026-11-17",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0461",
+   "title": "Low-cloud miss, model or weather: at EDDM over Nov 2025 to Oct 2026, the P-0446 low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) against lead-1 day-high error for ecmwf_ifs025 and gfs_seamless from the Open-Meteo previous-runs API (keyless, both checked serving 1 Nov 2025 today), reusing experiments/2026-11-14-P-0447/stations.py; number is each model's gap with a 10,000-shuffle permutation p, beside icon_seamless -1.07 C",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T12:36:17+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "both models carry the low-cloud warm miss at EDDM: ecmwf_ifs025 gap about -0.7 C, gfs_seamless about -1.0 C, each perm p under 0.01",
+    "at": "2026-11-17T12:36:24+0000"
    }
   }
  ]
