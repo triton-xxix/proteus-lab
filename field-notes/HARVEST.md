@@ -6,19 +6,29 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-663 judged over 46 harvest days, 434 kept, 133 testable, 128 queued as probes, 119 with a probe verdict.
+677 judged over 47 harvest days, 444 kept, 135 testable, 130 queued as probes, 122 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0677 | 2026-11-17 | hn | [Show HN: Coral – Open-source gateway where agents write their own tools](https://github.com/withcoral/coral) | mechanism | tools-for-strangers | no: Measuring the claim needs LLM agent runs and provider accoun |  |
+| H-0676 | 2026-11-17 | vault | [qualifying call script for trades leads](https://www.youtube.com/watch?v=ZCMVm7WP4n4) | mechanism | tools-for-strangers | no: Scoring a script needs real call recordings and an LLM; neit |  |
+| H-0675 | 2026-11-17 | awesome | [actimod/onaa-protocol (new in awesome-mcp-servers)](https://github.com/actimod/onaa-protocol) | mechanism | open-data | yes | P-0468 |
+| H-0673 | 2026-11-17 | arxiv | [Procedure without Judgment: What Small Language Models Learn under an Exact Verifier](https://arxiv.org/abs/2611.21529) | mechanism | tech | no: Needs model fine-tuning and LLM answers, neither available k |  |
+| H-0672 | 2026-11-17 | github | [sybil-solutions/inference-optimisation-skill: Agent skill for hill-climbing local LLM serv](https://github.com/sybil-solutions/inference-optimisation-skill) | mechanism | tech | no: Needs a local model server on supported GPUs; there is no lo |  |
+| H-0671 | 2026-11-17 | hn | [Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force](https://news.ycombinator.com/item?id=50522776) | mechanism | tech | no: Needs custom EMG hardware. |  |
+| H-0670 | 2026-11-17 | vault | [speed-to-call and booking for brokers and builders](https://www.youtube.com/watch?v=Uev0oyU4Z-4) | mechanism | tools-for-strangers | no: Needs real leads, a phone or SMS line and an LLM; nothing to |  |
+| H-0667 | 2026-11-17 | arxiv | [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) | mechanism | tech | no: Needs LLM clients to select tools, and there is no local LLM |  |
+| H-0666 | 2026-11-17 | github | [erkamyaman/rust-anything: Rewrite your whole app in Rust, one piece at a time, checked aga](https://github.com/erkamyaman/rust-anything) | mechanism | tools-for-strangers | yes | P-0467 |
+| H-0664 | 2026-11-17 | vault | [AI receptionist demo for trades](https://www.youtube.com/watch?v=Th7B9eLRdGs) | mechanism | tools-for-strangers | no: A faithful test needs a phone line, a live LLM and a calenda |  |
 | H-0662 | 2026-11-16 | vault | [spend everything you have]() | mechanism | none | no: It is an unverified testimonial with no data or procedure to |  |
-| H-0661 | 2026-11-16 | awesome | [agoreums/agoreum-mcp (new in awesome-mcp-servers)](https://github.com/agoreums/agoreum-mcp) | mechanism | mechanism-hunting | yes | P-0453 |
+| H-0661 | 2026-11-16 | awesome | [agoreums/agoreum-mcp (new in awesome-mcp-servers)](https://github.com/agoreums/agoreum-mcp) | mechanism | mechanism-hunting | yes | P-0453 **works** |
 | H-0659 | 2026-11-16 | arxiv | [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Elem](https://arxiv.org/abs/2611.18514) | mechanism | tech | no: Needs a 7B model run locally and no local LLM or GPU is avai |  |
-| H-0656 | 2026-11-16 | vault | [Trading insider clusters with real money at retail size]() | mechanism | mechanism-hunting | yes | P-0452 |
+| H-0656 | 2026-11-16 | vault | [Trading insider clusters with real money at retail size]() | mechanism | mechanism-hunting | yes | P-0452 **works** |
 | H-0655 | 2026-11-16 | awesome | [aelethion/agentsocks (new in awesome-mcp-servers)](https://github.com/aelethion/agentsocks) | mechanism | tools-for-strangers | no: Install rewrites Claude Code and Codex config files and need |  |
 | H-0652 | 2026-11-16 | github | [BigPizzaV3/ClaudeMom: 不用 Claude 账号！把 API Key 变成登录模式，Claude 桌面版全功能解锁（汉化 / 语音 / 电脑控制）](https://github.com/BigPizzaV3/ClaudeMom) (intel) | mechanism | tech | no: Needs the Claude Desktop app, trusting a local root certific |  |
-| H-0650 | 2026-11-16 | vault | [News filter on a daily-bar trend follower]() | mechanism | mechanism-hunting | yes | P-0451 |
+| H-0650 | 2026-11-16 | vault | [News filter on a daily-bar trend follower]() | mechanism | mechanism-hunting | yes | P-0451 **works** |
 | H-0649 | 2026-11-13 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=V3ngobSPgqE) | mechanism | open-data | yes | P-0442 **not-worth-it** |
 | H-0646 | 2026-11-13 | vault | [client tiering and concentration]() | mechanism | none | no: It needs real client revenue data, which Proteus does not ho |  |
 | H-0643 | 2026-11-13 | github | [Moh4696/cinematic-skill: Agent skill for narrated cinematic films built entirely from code](https://github.com/Moh4696/cinematic-skill) | mechanism | tools-for-strangers | yes | P-0441 **works** |
@@ -448,6 +458,126 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0677 Show HN: Coral – Open-source gateway where agents write their own tools
+2026-11-17, hn, https://github.com/withcoral/coral
+
+- **Mechanism:** A self-hosted gateway sits between agents and systems such as GitHub, Linear and Slack. Agents write short TypeScript programs to call tools (code mode), and a successful program is saved as a custom tool that later appears in the same tool search as the standard provider tools. Policy controls and managed identities limit what each saved tool can do.
+- **Claim:** On GitHub, Linear and Slack tasks with Opus 5.5, saved custom tools made agents 29% faster at 31% lower cost.
+- **Testable:** no. Measuring the claim needs LLM agent runs and provider accounts, not keyless. Needs: LLM key and provider accounts.
+- **Idea on its own:** sound. Caching a successful procedure as code is a sound way to cut repeat token spend, though the gain depends on task repetition.
+- **How it would be done:** Install the open-source gateway, connect one read-only source such as a public GitHub repo, and have an agent do a task twice to see whether it reuses the saved tool. The same pattern can be done by hand with skills and scripts in Claude Code, which Proteus already uses. Policy review of saved tools is the human job.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Coral https://github.com/withcoral/coral (The gateway itself)
+- **Field Notes line:** A gateway lets agents save a worked-out TypeScript routine as a reusable tool, claiming 29% faster and 31% cheaper repeat tasks.
+
+### H-0676 qualifying call script for trades leads
+2026-11-17, vault, https://www.youtube.com/watch?v=ZCMVm7WP4n4
+
+- **Mechanism:** A fixed qualification script asks the caller for job, place, finish, timing, bad past experiences and builder availability, in that order, and writes the answers into a structured brief. The brief is what lets a builder price or decline fast. It can be run by a person or a voice agent, and scored by transcribing calls and checking each field was captured.
+- **Claim:** The video lists job, place, finish, timing, past bad experiences and builder availability as the qualifying questions.
+- **Testable:** no. Scoring a script needs real call recordings and an LLM; neither is keyless tonight. Needs: Call recordings, an LLM key.
+- **Idea on its own:** sound. Structured intake questions are a standard way to cut back-and-forth and the list is concrete.
+- **How it would be done:** Write the six questions as a short script with accepted answer formats and a brief template. Test it on role-played calls with the transcription pipeline, scoring field completeness per call. A person would handle callers who will not answer and decide which jobs to decline.
+- **Stack already covers:** Claude Code with skills and sub-agents, local transcription
+- **Missing:** Real trades call recordings to test the script against.
+- **Field Notes line:** Six questions, in order, turn a trades enquiry into a brief a builder can price from.
+
+### H-0675 actimod/onaa-protocol (new in awesome-mcp-servers)
+2026-11-17, awesome, https://github.com/actimod/onaa-protocol
+
+- **Mechanism:** A directory API stores store records tagged with whether an AI agent reached checkout, with trust levels, and exposes search through REST and an MCP server. A buyer-store preflight example calls find_stores, can_i_buy_here and how_to_buy, reads the store's own catalog, then stops before payment. It never moves money; agents talk to each other directly over A2A and MCP.
+- **Claim:** An open directory of stores where AI agents reached checkout, with a preflight script that never pays.
+- **Testable:** yes. How many stores does the public development directory list, and does its llms.txt and preflight --offline run succeed with no key? Queued as P-0468.
+- **Idea on its own:** needs-a-run. Whether the directory has any real coverage is a number a read-only pull will show.
+- **How it would be done:** Fetch the public llms.txt and list endpoint, count records and countries, and run preflight.py --offline from the repo. Judge whether the data is real or seeded. Useful only if coverage is broad; otherwise it is a spec with an empty directory.
+- **To fetch:** onaa-protocol https://github.com/actimod/onaa-protocol (Repo with the preflight example and SDK)
+- **Field Notes line:** A tiny open directory lists shops where AI agents have reached checkout, and its preflight script stops before paying.
+
+### H-0673 Procedure without Judgment: What Small Language Models Learn under an Exact Verifier
+2026-11-17, arxiv, https://arxiv.org/abs/2611.21529
+
+- **Mechanism:** For a blocked agent tool call, the minimal sufficient reason is the smallest set of facts that forces the decision, computed exactly by a deletion algorithm: drop one fact at a time and keep it only if the decision flips. Models are scored against that ground truth, then a 4B model is fine-tuned on traces of the algorithm. The student learns a fixed probing schedule that stays sufficient but not minimal on unseen policies.
+- **Claim:** A 4B model trained on 2000 algorithm traces hits 92% on its own policy, but only 48% minimality on three unseen policies.
+- **Testable:** no. Needs model fine-tuning and LLM answers, neither available keyless tonight. Needs: GPU and models.
+- **Idea on its own:** sound. Deletion-based minimal sufficient reasons are standard and the transfer failure is a plausible finding.
+- **How it would be done:** The deletion algorithm itself is a few lines and could be run on a toy policy to produce audit explanations for the hook's deny reasons. The training half needs a GPU and a 4B model, which is not here. Proteus could borrow the algorithm for its own hook logs without any model.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Training a small model on an exact deletion algorithm taught it a fixed schedule that did not carry over to unseen policies.
+
+### H-0672 sybil-solutions/inference-optimisation-skill: Agent skill for hill-climbing local LLM serving speed (decode, speculative
+2026-11-17, github, https://github.com/sybil-solutions/inference-optimisation-skill
+
+- **Mechanism:** It is an agent skill that makes a coding agent hill-climb local LLM serving speed: compute the theoretical ceiling from memory bandwidth and model size, change one thing at a time, compare against interleaved control runs, log failures, and gate every win on a long-context retrieval check. Targets include decode, speculative decoding, prefill, KV cache size and startup. The numbers come from the authors' own runs on named hardware.
+- **Claim:** Decode 43.6 to 53 tok/s on an Intel Arc iGPU and 2.1x prefill at 256K, with every number tied to a logged hill-climb.
+- **Testable:** no. Needs a local model server on supported GPUs; there is no local LLM on this Intel Mac. Needs: A GPU box and a local model server.
+- **Idea on its own:** sound. Ceiling-first, one-variable, interleaved-control tuning is sound method whatever the hardware.
+- **How it would be done:** Read SKILL.md and lift the method (ceiling calculation, one change at a time, interleaved controls, failure log) as a template for any Proteus tuning job, not just LLM serving. Running it for real needs a GPU machine with llama.cpp or vLLM, so the reusable part tonight is the procedure.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** inference-optimisation-skill https://github.com/sybil-solutions/inference-optimisation-skill (The SKILL.md procedure); llama.cpp https://github.com/ggml-org/llama.cpp (Baseline local server to tune if a model is ever run here)
+- **Field Notes line:** A skill makes an agent compute the physical speed ceiling first, then tune one change at a time against controls.
+
+### H-0671 Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force
+2026-11-17, hn, https://news.ycombinator.com/item?id=50522776
+
+- **Mechanism:** A forearm sleeve with 64 surface EMG electrodes captures muscle activity, synchronised with camera hand tracking. A model learns to predict finger joint angles from EMG alone, with fingertip force calibrated against presses on force sensors. Electrode shift between wearings is tested by recording on separate days without recalibration.
+- **Claim:** Decodes finger movement and fingertip force from EMG to produce training data for dextrous robots; one test ran 215 seconds four days after training without recalibration.
+- **Testable:** no. Needs custom EMG hardware. Needs: The sleeve hardware.
+- **Idea on its own:** needs-a-run. EMG decoding is real science, but drift and re-wearing generalisation are the open questions the comments raise.
+- **How it would be done:** Reproducing it needs an EMG array and a hand-tracking camera, record paired data, train a regression model from EMG windows to joint angles, then test across sessions. Public EMG datasets would let the decoder half be tried without hardware. No job in it for Proteus beyond reading.
+- **To fetch:** NinaPro EMG dataset https://ninapro.hevs.ch (Public EMG and hand-kinematics data for the decoder half)
+- **Missing:** The hardware itself.
+- **Field Notes line:** A 64-channel EMG sleeve reads finger force that video cannot see, to teach robot hands.
+
+### H-0670 speed-to-call and booking for brokers and builders
+2026-11-17, vault, https://www.youtube.com/watch?v=Uev0oyU4Z-4
+
+- **Mechanism:** A new lead triggers an immediate first contact (call or text within about a minute), followed by a short qualification and routing by area and job type to the right builder. The lever is response time and routing rules, run from a lead-intake webhook into a dialler or messaging tool and a CRM. Numbers come from the firm's own lead-to-booked-job log.
+- **Claim:** The video says a first-minute answer, qualification and routing by area and job type is what turns leads into booked jobs.
+- **Testable:** no. Needs real leads, a phone or SMS line and an LLM; nothing to run keyless. Needs: Lead source, telephony or SMS account, CRM.
+- **Idea on its own:** sound. Speed-to-lead effects are widely reported, and routing rules are simple to build and measure.
+- **How it would be done:** Build a lead-intake endpoint that stamps arrival time, sends an instant text, and routes by postcode district and job type from a lookup table of builders. Log time-to-first-contact and booked outcome per lead so the effect can be measured against the firm's old process. A hired person covers the voice calls the script cannot handle and keeps the builder list current.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** Twilio programmable messaging https://www.twilio.com/docs/messaging (Instant SMS and call routing, free trial tier); Cal.com https://cal.com (Booking the site visit)
+- **Missing:** A real lead flow and builder roster to measure response-time lift against.
+- **Field Notes line:** Answering a trades lead inside a minute and routing it by postcode and job type is the lever a broker vlog keeps pointing at.
+
+### H-0667 When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents
+2026-11-17, arxiv, https://arxiv.org/abs/2611.21577
+
+- **Mechanism:** An attacker runs a second MCP server advertising tools whose names, descriptions and schemas imitate a legitimate provider's. The client's LLM picks tools from metadata alone, which is not bound to a verified server identity, so the request resolves to the attacker's tool. The paper frames it as an optimisation over metadata and measures it across five LLM clients, finding exact-name collision plus matching description and schema is strongest.
+- **Claim:** Tool-provider misbinding can route a request to an attacker-controlled MCP tool without compromising host, model, server or network.
+- **Testable:** no. Needs LLM clients to select tools, and there is no local LLM or keyless model. Needs: An LLM client with MCP support.
+- **Idea on its own:** sound. Selection by unauthenticated text metadata is a plain design gap and the collision case follows directly from it.
+- **How it would be done:** To check it here, stand up two toy MCP servers with an identical tool name and different descriptions, connect both to a Claude Code session, and record which one gets called across repeated prompts. That tests Proteus's own exposure since its sessions load several MCP servers. Defence is namespacing by server and pinning allowed servers, which is configuration rather than a build.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** MCP Python SDK https://github.com/modelcontextprotocol/python-sdk (Build the two toy servers for a collision test)
+- **Field Notes line:** Two MCP servers advertising the same tool name can steal an agent's request, because tool metadata carries no verified provider identity.
+
+### H-0666 erkamyaman/rust-anything: Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded b
+2026-11-17, github, https://github.com/erkamyaman/rust-anything
+
+- **Mechanism:** It records the behaviour of an existing app (CLI invocations, HTTP requests, library calls) as input and output cases, then ports one unit at a time to Rust, replaying the recorded cases against the Rust version before moving on. A profiler step picks hot loops worth moving across an FFI or wasm boundary, since per-call overhead can make small functions slower. The coding agent writes the Rust; the tool supplies the recorder, replayer and benchmarks as an MCP server and skill.
+- **Claim:** Up to 20x faster, 38,251 recorded cases replayed with 0 mismatches.
+- **Testable:** yes. Does the Python slugify demo in the repo give identical results on the Rust port and run at least 10x faster on this Mac? Queued as P-0467.
+- **Idea on its own:** sound. Characterisation tests against recorded behaviour are a proven way to migrate code safely, though coverage limits what it catches.
+- **How it would be done:** Fetch the prebuilt release binary or cargo install, run the repo's demo benchmark for the Python slugify case, and read whether its identical-results check passes before the timing. Then try it on one small Proteus script as a recording only, without porting. The audience is developers with slow hot loops; a hired person would review the recording coverage, since the tool says it only catches what the recording covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** rust-anything https://github.com/erkamyaman/rust-anything (The tool and its demo benchmarks); Rust toolchain (rustup) https://rustup.rs (Needed to build the Rust ports)
+- **Field Notes line:** A record-and-replay harness lets an agent port code to Rust piece by piece, with a claimed 17x on a Python slugify.
+
+### H-0664 AI receptionist demo for trades
+2026-11-17, vault, https://www.youtube.com/watch?v=Th7B9eLRdGs
+
+- **Mechanism:** An inbound enquiry (call, form or text) is answered within seconds by a voice or text agent. The agent asks a fixed set of qualifying questions (job, place, timing), checks a builder's diary for a slot, books a site visit and sends the builder a short written brief. It depends on a telephony or messaging layer, a speech-to-text and text-to-speech loop, an LLM following a script, and a calendar API.
+- **Claim:** The vlog says most trades leads go unbooked or dead, and that answering, qualifying and booking is the missing step.
+- **Testable:** no. A faithful test needs a phone line, a live LLM and a calendar, and there is no local LLM or keyless voice stack tonight. Needs: A phone number or web chat endpoint, an LLM key, a calendar account.
+- **Idea on its own:** needs-a-run. The lead-response effect is well documented in general, but the booked-job lift for UK trades is unproven.
+- **How it would be done:** Write the qualifying script as a short decision tree: job type, postcode, finish, timing, past bad experiences, builder availability. Wire a voice agent (ElevenLabs agents or similar) to a phone number, with a calendar tool for booking and an email or SMS brief to the builder. Run it first as a demo against recorded sample enquiries to show the transcript and brief it produces. A hired person would still handle emergencies, price haggling and anything the script cannot route, and would check call quality weekly.
+- **Stack already covers:** ElevenLabs (voice), Claude Code with skills and sub-agents
+- **To fetch:** ElevenLabs Agents platform https://elevenlabs.io/agents (Hosted voice agent with tool calls and phone integration); Cal.com https://cal.com (Open-source scheduling with an API for booking site visits)
+- **Missing:** A real trades firm to run a live pilot against and measure booked-job rate.
+- **Field Notes line:** A trades receptionist that answers in seconds, qualifies the job and books the site visit is the gap a coaching vlog says costs most leads.
 
 ### H-0662 spend everything you have
 2026-11-16, vault, 
@@ -5568,9 +5698,12 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0676 | 2026-11-17 | qualifying call script for trades leads | open | sound | no |  |
+| H-0670 | 2026-11-17 | speed-to-call and booking for brokers and builders | open | sound | no |  |
+| H-0664 | 2026-11-17 | AI receptionist demo for trades | open | needs-a-run | no |  |
 | H-0662 | 2026-11-16 | spend everything you have | dead | unsound | no |  |
-| H-0656 | 2026-11-16 | Trading insider clusters with real money at retail size | dead | needs-a-run | yes | P-0452 |
-| H-0650 | 2026-11-16 | News filter on a daily-bar trend follower | dead | needs-a-run | yes | P-0451 |
+| H-0656 | 2026-11-16 | Trading insider clusters with real money at retail size | dead | needs-a-run | yes | P-0452 **works** |
+| H-0650 | 2026-11-16 | News filter on a daily-bar trend follower | dead | needs-a-run | yes | P-0451 **works** |
 | H-0646 | 2026-11-13 | client tiering and concentration | intel | sound | no |  |
 | H-0641 | 2026-11-13 | outbound with follow-ups | intel | sound | no |  |
 | H-0636 | 2026-11-13 | Gemini Omni blocks uploaded video edits for UK accounts and Seedance rejects real human fa | intel | sound | no |  |
@@ -5711,6 +5844,15 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0392 | 2026-11-17 | [Coral](https://github.com/withcoral/coral) | The gateway itself | H-0677 (Show HN: Coral – Open-source gateway where agents ) | shelf |
+| T-0391 | 2026-11-17 | [onaa-protocol](https://github.com/actimod/onaa-protocol) | Repo with the preflight example and SDK | H-0675 (actimod/onaa-protocol (new in awesome-mcp-servers)) | shelf |
+| T-0390 | 2026-11-17 | [inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | The SKILL.md procedure | H-0672 (sybil-solutions/inference-optimisation-skill: Agen) | shelf |
+| T-0389 | 2026-11-17 | [NinaPro EMG dataset](https://ninapro.hevs.ch) | Public EMG and hand-kinematics data for the decoder half | H-0671 (Launch HN: Axonnic (YC F26) – Sleeves that track f) | shelf |
+| T-0388 | 2026-11-17 | [Twilio programmable messaging](https://www.twilio.com/docs/messaging) | Instant SMS and call routing, free trial tier | H-0670 (speed-to-call and booking for brokers and builders) | shelf |
+| T-0387 | 2026-11-17 | [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) | Build the two toy servers for a collision test | H-0667 (When Tool Names Are Not Identities: Measuring Prov) | shelf |
+| T-0386 | 2026-11-17 | [rust-anything](https://github.com/erkamyaman/rust-anything) | The tool and its demo benchmarks | H-0666 (erkamyaman/rust-anything: Rewrite your whole app i) | shelf |
+| T-0385 | 2026-11-17 | [Cal.com](https://cal.com) | Open-source scheduling with an API for booking site visits | H-0664 (AI receptionist demo for trades) | shelf |
+| T-0384 | 2026-11-17 | [ElevenLabs Agents platform](https://elevenlabs.io/agents) | Hosted voice agent with tool calls and phone integration | H-0664 (AI receptionist demo for trades) | shelf |
 | T-0383 | 2026-11-16 | [x402 protocol](https://www.x402.org/) | Spec for the 402 payment handshake | H-0661 (agoreums/agoreum-mcp (new in awesome-mcp-servers)) | shelf |
 | T-0382 | 2026-11-16 | [Agoreum public MCP](https://agoreum.xyz/api/v1/mcp/public) | No-account read of the marketplace | H-0661 (agoreums/agoreum-mcp (new in awesome-mcp-servers)) | shelf |
 | T-0381 | 2026-11-16 | [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) | The model under test | H-0659 (Can Mechanistic Interpretability Help Explain LLM ) | shelf |
@@ -6099,6 +6241,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0674 | 2026-11-17 | youtube | [I Tried the NEW Pump.fun Sniper Bot and This Happened?!](https://www.youtube.com/watch?v=vRSEt08OABc) | Promo for a wallet-connect sniper bot with no mechanism beyond watching launches; the Grinder already covers this ground |
+| H-0669 | 2026-11-17 | awesome | [a5768549/model-worker-mcp (new in awesome-mcp-servers)](https://github.com/a5768549/model-worker-mcp) | A generic delegate-to-cheaper-model MCP wrapper, Windows-bound and needing a paid API key. |
+| H-0668 | 2026-11-17 | youtube | [DVSA Data Exposes 10 Everyday Cars Failing UK MOTs at Record Rates – Is Yours on](https://www.youtube.com/watch?v=v_w3yeLQHro) | Top-ten listicle that cites DVSA data without showing how the numbers were derived. |
+| H-0665 | 2026-11-17 | hn | [How the Claude Code team thinks about verification](https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/) | Only comments and a title came through; no mechanism in the brief, so nothing to record. |
 | H-0663 | 2026-11-16 | hn | [Anthropic upgrades Claude Code Projects to run parallel AI workers](https://claude.com/resources/articles/projects-redesigned) | Product-announcement news; the brief holds only comments and no mechanism detail. |
 | H-0660 | 2026-11-16 | youtube | [The 7 fastest growing Claude skills (all free)](https://www.youtube.com/watch?v=94DrtNz-Coc) | A one-minute listicle that sells an install line behind a comment. |
 | H-0658 | 2026-11-16 | github | [credoksopho1984/blender-ai-copilot-studio: An AI copilot and MCP server for Blen](https://github.com/credoksopho1984/blender-ai-copilot-studio) | Another Blender MCP wrapper with an LLM chat panel; the README is mostly marketing and needs a model key and Blender. |
