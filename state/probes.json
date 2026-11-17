@@ -11824,22 +11824,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T23:41:16+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T23:46:16+0000",
+   "note": "The zero-fee class pays nothing and is one wallet: 25 of 25 zero-fee mayhem trades over two runs came from BwWK17cb...de6s (11 buys, 14 sells, up to 17 mints, never the fee payer); its SOL balance moved by exactly sol_amount on 5 of 5 measured (gap 0.0 bps). 9 paid mayhem trades were 8 ordinary wallets. Shot said under 10 bps and a handful of wallets: right, and it is one. Paid-trade gaps are noise (125 to 3,900 bps: rent, tips), so the method says zero or not, not a fee size. Run 1 missed the balance because the wallet sits in the loaded address table. Next: deepen (track that wallet for an hour: trades per coin, holding time, profit and loss).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0466"
+   ],
+   "minutes": 5,
+   "calls": 12,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "zero-fee mayhem trades show a balance gap under 10 bps of sol_amount, paid trades about 125 bps; the zero-fee signers are a handful of wallets",
-    "at": "2026-11-17T23:41:20+0000"
+    "at": "2026-11-17T23:41:20+0000",
+    "hit": true
    }
   },
   {
