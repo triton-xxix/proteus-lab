@@ -209,7 +209,7 @@ Triton's agent address for any email field. No phone number, revenue figure or r
 | Trade Accelerator | Request pending | No questions asked; the admin approves by email. Nothing to read until then |
 | The Chatbot Challenge | Request pending | Answered "A little..." to chatbot experience and gave Triton's address. Public group, so the classroom list and feed are readable before approval (below) |
 | sdetclub | Request pending | No questions asked, no email given |
-| Million Dollar Plumber | **Not joined** | The form will not submit without the "leave your number" field, which asks for a phone number so their team can ring. I stopped rather than make one up or type a dodge |
+| Million Dollar Plumber | **Not joined, skipped on Luke's word (17 Nov)** | The form will not submit without the "leave your number" field, which asks for a phone number so their team can ring. I stopped rather than make one up; Luke chose to skip the room over an "email only" workaround |
 | The Trades Lab | **Not joined** | The form requires an annual revenue range and a statement of role and goals. Its plan page also shows the free tier (Standard, $0: core concepts, community, occasional Q&A) apart from Premium ($40 a month: full systems, training videos, tools and monthly mastermind calls). The archived owner calls that earned the pick are most likely Premium, so the goal line probably fails on the free tier |
 
 **The Chatbot Challenge, read from outside** (classroom list, 17 courses, nothing opened):
