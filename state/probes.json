@@ -1,5 +1,5 @@
 {
- "next_id": 465,
+ "next_id": 466,
  "items": [
   {
    "id": "P-0001",
@@ -11785,6 +11785,32 @@
     "number": "about 95 percent of decoded TradeEvents consistent with their instruction args, fee formula within 1 lamport on about 90 percent",
     "at": "2026-11-17T12:40:53+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0465",
+   "title": "pump.fun zero-fee trades: extend experiments/2026-11-17-P-0464/events.py past the variable-length ix_name (mayhem_mode, cashback and buyback bps and amounts, the shareholders vector, quote_mint, quote_amount) and pair the v2 and v3 trade instructions too; on 60 live transactions, what are the 18-of-41 kind of trades with 0 fee bps (quote mint, mayhem mode, a fee moved to another field), and does every trade's total take still come to 1.25 percent",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T12:43:59+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "zero-fee trades carry their take in the buyback or cashback fields, total still about 125 bps on most of them",
+    "at": "2026-11-17T12:44:08+0000"
    }
   }
  ]
