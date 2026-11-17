@@ -1,0 +1,53 @@
+{
+ "total_listed": 32306,
+ "reachability_counts": {
+  "reachable": 30281,
+  "unknown": 2025,
+  "unreachable": 0
+ },
+ "sample": 500,
+ "source": {
+  "ucp_manifest": 497,
+  "catalog_search_only": 1,
+  "agent_channel": 2
+ },
+ "checkout_probe_status": {
+  "checkout_ready": 261,
+  "buyer_step_required": 187,
+  "auth_required": 33,
+  "failed": 12,
+  "no_checkout": 5,
+  "not_checked_yet": 2
+ },
+ "protocol": {
+  "ucp-mcp": 497,
+  "null": 2,
+  "shop-mcp/mcp-2026-07-28": 1
+ },
+ "verdict": {
+  "yes": 261,
+  "yes_buyer_finishes": 187,
+  "no": 38,
+  "unknown": 14
+ },
+ "payment_tested": {
+  "False": 500
+ },
+ "first_seen_day": {
+  "2026-11-14": 500
+ },
+ "probed_only_once": 497,
+ "payment_route": {
+  "shop_pay": 245,
+  "none_offered": 106,
+  "other": 149
+ },
+ "top_tlds": {
+  "com": 335,
+  "au": 16,
+  "in": 15,
+  "jp": 11,
+  "uk": 11,
+  "de": 7
+ }
+}

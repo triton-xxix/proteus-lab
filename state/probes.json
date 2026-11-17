@@ -11875,22 +11875,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T23:37:39+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T23:41:09+0000",
+   "note": "api.onaa.net lists 32,306 stores keyless (30,281 reachable, 2,025 unknown). In the first 500: 497 from a UCP manifest, all first seen 14 Nov, 497 probed once; checkout ready 261 (52%), buyer step required 187, payment tested 0. One crawl, three days old, on a slow server (one 503, two timeouts). Shot said under 20 stores: verdict right, number off by three orders. Offline preflight read by grep (stdlib, two fixtures), not run unattended. Next: close (a count nobody had; running their preflight is for an interactive session).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0468"
+   ],
+   "minutes": 3,
+   "calls": 23,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "the directory answers keyless and lists under 20 stores; the preflight is not run because it means executing their code",
-    "at": "2026-11-17T23:37:43+0000"
+    "at": "2026-11-17T23:37:43+0000",
+    "hit": true
    }
   },
   {

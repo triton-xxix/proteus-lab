@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 381 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 382 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,13 +26,13 @@ Verdicts so far: 381 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0466 | Mayhem-mode fee by balance: for 60 live pump.fun trades decoded with experiments/2026-11-17-P-0465/tail.py, compare the trader's SOL balance change (meta preBalances and postBalances, less the network fee) with the event's sol_amount; number is the gap in bps for zero-fee mayhem trades v paid trades, to say whether the zero-fee class truly pays nothing | desk | none |  | 0 | 20 min |
-| P-0468 | ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run? | harvest | none |  | 1 (in progress) | 15 min |
 | P-0469 | pump.fun mayhem agent: are the zero-fee mayhem trades in experiments/2026-11-17-P-0465 all signed by one or a few wallets (the platform agent), and does a mayhem mint show a 2 billion supply on getTokenSupply? | desk | none |  | 0 | 20 min |
 
-## Verdicts (449)
+## Verdicts (450)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-17 | P-0468 | ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run? | **works** | api.onaa.net lists 32,306 stores keyless (30,281 reachable, 2,025 unknown). In the first 500: 497 from a UCP manifest, all first seen 14 Nov, 497 probed once; checkout ready 261 (52%), buyer step required 187, payment tested 0. One crawl, three days old, on a slow server (one 503, two timeouts). Shot said under 20 stores: verdict right, number off by three orders. Offline preflight read by grep (stdlib, two fixtures), not run unattended. Next: close (a count nobody had; running their preflight is for an interactive session). | `experiments/2026-11-17-P-0468` | 3 min, 23 calls, 0 denied |
 | 2026-11-17 | P-0467 | rust-anything: does its Python slugify demo match the original and run 10x+ faster here? | **blocked** | No cargo or rustc on this Mac and the Python fixture ships source only, so the Rust port and its 17x were not run. The half that needs no Rust: 706 of 706 recorded results replay identically on the original Python and 79 of 79 recorded errors raise (159 skipped on an argument encoding I did not decode, 200 class cases are Rust-side); baseline 118.2 ms median for 20,000 slugs v the README 98 ms. Shot said works at 0.5: missed. | `experiments/2026-11-17-P-0467` | 1 min, 22 calls, 1 denied |
 | | | | | denied: Bash `jq -r ".tree[] / select(.path / test(\"^demo/[^/]*(/[^/]*)?$\")) / \"\(.type) \(.size // 0` | | |
 | 2026-11-17 | P-0465 | pump.fun zero-fee trades: extend experiments/2026-11-17-P-0464/events.py past the variable-length ix_name (mayhem_mode, cashback and buyback bps and amounts, the shareholders vector, quote_mint, quote_amount) and pair the v2 and v3 trade instructions too; on 60 live transactions, what are the 18-of-41 kind of trades with 0 fee bps (quote mint, mayhem mode, a fee moved to another field), and does every trade's total take still come to 1.25 percent | **works** | Past ix_name on 19 live TradeEvents: the 10 zero-fee trades are all mayhem mode, SOL quote, and 0 in every fee field (fee, creator, cashback, buyback, holder rewards), so the take did not move inside the event. But 4 of 9 paid trades are mayhem mode too, so mayhem alone is not the rule. 2 paid trades use a non-SOL quote mint. Shot said take moved to buyback or cashback, about 125 bps: missed. My total_bps sum is wrong where buyback bps is 5000 (a share of the fee, not the trade); said so in the README. Next: deepen (SOL balance deltas of zero-fee mayhem trades to see a fee the event does not record). | `experiments/2026-11-17-P-0465` | 3 min, 7 calls, 0 denied |
