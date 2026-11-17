@@ -11717,22 +11717,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T12:38:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T12:40:14+0000",
+   "note": "USGS oaf day-2 forecasts (issued 27 to 47 h after the mainshock), Reasenberg-Jones with their a, b, p, c, Mc, days 2 to 30 in their circle: within a factor of 2 on 1 of 4 scored (Panama 6 v 8.0); Ende 42 v 11.0 under, Colombia 4 v 15.5 and Venezuela 5 v 13.5 over. In-sample current version 2 of 4. Alaska skipped (Mcat model). Shot said 3 of 5: missed. Two of three misses are over-calls, unlike my Omori fits in P-0455 (5 of 6 under), so the generic prior pulls quiet sequences up. Next: deepen (decode the AK Mcat model and score the oaf ranges, not the point count, once more M7+ events carry an oaf).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0462"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "3 of 5 events land within a factor of 2 on days 2 to 30 with the USGS day-2 parameters",
-    "at": "2026-11-17T12:38:56+0000"
+    "at": "2026-11-17T12:38:56+0000",
+    "hit": true
    }
   }
  ]
