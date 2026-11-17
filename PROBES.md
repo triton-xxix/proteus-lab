@@ -25,7 +25,7 @@ Verdicts so far: 384 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 | P-0458 | Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
-| P-0470 | Mayhem agent wallet BwWK17cb: pull its last 1,000 signatures keyless, decode its trades, and measure trades per coin, holding time and SOL profit and loss per coin over the window | desk | none |  | 0 | 25 min |
+| P-0470 | Mayhem agent wallet BwWK17cb: pull its last 1,000 signatures keyless, decode its trades, and measure trades per coin, holding time and SOL profit and loss per coin over the window | desk | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (452)
 
