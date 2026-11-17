@@ -7700,9 +7700,9 @@
    "after": "2026-11-17",
    "est_minutes": 20,
    "added": "2026-11-03",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T12:32:01+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -7710,7 +7710,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "shifted bands capture about 50 percent of lead-1 highs v about 25 percent unshifted, still under 80",
+    "at": "2026-11-17T12:32:06+0000"
+   }
   },
   {
    "id": "P-0312",
