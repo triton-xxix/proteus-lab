@@ -1,5 +1,5 @@
 {
- "next_id": 458,
+ "next_id": 460,
  "items": [
   {
    "id": "P-0001",
@@ -11610,6 +11610,52 @@
    "calls": 10,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0458",
+   "title": "Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-28",
+   "est_minutes": 20,
+   "added": "2026-11-17",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0459",
+   "title": "Munich low-cloud market test: for each Polymarket highest-temperature-in-munich-on-<month>-<day>-2026 event 1 to 16 Nov (gamma-api events?slug=, keyless), read each bucket's CLOB prices-history price at 09Z (clob.polymarket.com/prices-history?market=<clobTokenId>), take the market's implied mean high, and compare its error v the EDDM METAR resolution on low-cloud mornings (BKN/OVC/VV at or below 500 ft before 10Z, flag from experiments/2026-11-14-P-0446/oos.py) v others; number is the gap in market error, set beside ICON's -1.07 C, so we see if the shift was there to take",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T12:33:55+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "market implied-mean error gap on low-cloud mornings about -0.4 C, smaller than ICON -1.07",
+    "at": "2026-11-17T12:34:01+0000"
+   }
   }
  ]
 }

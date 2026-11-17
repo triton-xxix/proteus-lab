@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 376 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (9 open)
+## Queue (11 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -22,6 +22,8 @@ Verdicts so far: 376 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0378 | tinker-ai-skill: does its offline anonymise step catch a planted fake key in synthetic transcripts? | harvest | Training needs a Tinker account and spend; only the offline data-prep half is testable keyless. |  | 0 | 25 min |
 | P-0427 | Munich November warm bias on Berlin days: city, airport and mean points against the EDDM METAR high for 1 to 30 Nov 2026, and would a November-only -0.5C have improved the exchange book's calls? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
+| P-0458 | Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent | desk | none | 2026-11-28 | 0 | 20 min |
+| P-0459 | Munich low-cloud market test: for each Polymarket highest-temperature-in-munich-on-<month>-<day>-2026 event 1 to 16 Nov (gamma-api events?slug=, keyless), read each bucket's CLOB prices-history price at 09Z (clob.polymarket.com/prices-history?market=<clobTokenId>), take the market's implied mean high, and compare its error v the EDDM METAR resolution on low-cloud mornings (BKN/OVC/VV at or below 500 ft before 10Z, flag from experiments/2026-11-14-P-0446/oos.py) v others; number is the gap in market error, set beside ICON's -1.07 C, so we see if the shift was there to take | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (443)
 
