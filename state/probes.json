@@ -1,5 +1,5 @@
 {
- "next_id": 466,
+ "next_id": 467,
  "items": [
   {
    "id": "P-0001",
@@ -11815,6 +11815,26 @@
     "at": "2026-11-17T12:44:08+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0466",
+   "title": "Mayhem-mode fee by balance: for 60 live pump.fun trades decoded with experiments/2026-11-17-P-0465/tail.py, compare the trader's SOL balance change (meta preBalances and postBalances, less the network fee) with the event's sol_amount; number is the gap in bps for zero-fee mayhem trades v paid trades, to say whether the zero-fee class truly pays nothing",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-17",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
