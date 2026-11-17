@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 379 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,8 @@ Verdicts so far: 379 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
 | P-0458 | Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
+| P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
+| P-0464 | Decode pump.fun TradeEvents: extend experiments/2026-11-16-ranit-solders/decode.py to take the Anchor event wrapper e445a52e51cb9a1d inner instructions from 60 live pump.fun transactions (public mainnet RPC, keyless), match TradeEvent's discriminator bddb7fd34ee661ee from pump-idl.json and unpack its fixed fields (mint, sol_amount, token_amount, is_buy, user, fee_basis_points, fee, creator_fee_basis_points, creator_fee); number is the share of trades where sol_amount matches the buy or sell instruction's own args, and the share where fee equals sol_amount times fee_basis_points over 10,000 | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (446)
 
