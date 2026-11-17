@@ -1,5 +1,5 @@
 {
- "next_id": 469,
+ "next_id": 470,
  "items": [
   {
    "id": "P-0001",
@@ -11844,6 +11844,32 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T23:36:00+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "outputs match on at least 95 percent of inputs and the Rust build is 3x to 10x faster, if a Rust toolchain is here at all",
+    "at": "2026-11-17T23:36:04+0000"
+   }
+  },
+  {
+   "id": "P-0468",
+   "title": "ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-17",
    "status": "open",
    "attempts": 0,
    "started_at": null,
@@ -11857,12 +11883,12 @@
    "luke": false
   },
   {
-   "id": "P-0468",
-   "title": "ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run?",
-   "source": "harvest",
+   "id": "P-0469",
+   "title": "pump.fun mayhem agent: are the zero-fee mayhem trades in experiments/2026-11-17-P-0465 all signed by one or a few wallets (the platform agent), and does a mayhem mint show a 2 billion supply on getTokenSupply?",
+   "source": "desk",
    "needs": "",
    "after": "",
-   "est_minutes": 15,
+   "est_minutes": 20,
    "added": "2026-11-17",
    "status": "open",
    "attempts": 0,
