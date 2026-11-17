@@ -11688,22 +11688,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T12:36:17+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T12:37:10+0000",
+   "note": "EDDM low-cloud gap on 365 common days: icon_seamless -1.06 C (p 0.001), ecmwf_ifs025 -1.63 (p 0.0001), gfs_seamless -2.96 (p 0.0001; 28 of its 35 big warm misses are flagged days), mean of three -1.88. Shot said ECMWF about -0.7, GFS about -1.0, p under 0.01: direction and p right, sizes well under. So it is the weather, every model burns the stratus off too early; ICON is the least bad. ECMWF runs +1.04 cold on all days, which hides it on flagged days (-0.29). P-0459 market gap only -0.24, so the market already leans off the models. Next: close (the model question is answered; the money question sits with P-0460).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0461"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "both models carry the low-cloud warm miss at EDDM: ecmwf_ifs025 gap about -0.7 C, gfs_seamless about -1.0 C, each perm p under 0.01",
-    "at": "2026-11-17T12:36:24+0000"
+    "at": "2026-11-17T12:36:24+0000",
+    "hit": true
    }
   }
  ]

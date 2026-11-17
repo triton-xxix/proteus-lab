@@ -1,0 +1,52 @@
+{
+ "days_common": 365,
+ "models": {
+  "icon_seamless": {
+   "days": 365,
+   "flag_n": 67,
+   "flag_mean": -0.696,
+   "other_mean": 0.369,
+   "gap": -1.064,
+   "perm_p": 0.001,
+   "warm_misses_2p5": 17,
+   "caught": 9,
+   "flag_share_of_days": 0.184,
+   "mean_err_all": 0.173
+  },
+  "ecmwf_ifs025": {
+   "days": 365,
+   "flag_n": 67,
+   "flag_mean": -0.288,
+   "other_mean": 1.338,
+   "gap": -1.626,
+   "perm_p": 0.0001,
+   "warm_misses_2p5": 17,
+   "caught": 9,
+   "flag_share_of_days": 0.184,
+   "mean_err_all": 1.039
+  },
+  "gfs_seamless": {
+   "days": 365,
+   "flag_n": 67,
+   "flag_mean": -1.901,
+   "other_mean": 1.058,
+   "gap": -2.96,
+   "perm_p": 0.0001,
+   "warm_misses_2p5": 35,
+   "caught": 28,
+   "flag_share_of_days": 0.184,
+   "mean_err_all": 0.515
+  },
+  "mean_of_three": {
+   "days": 365,
+   "flag_n": 67,
+   "flag_mean": -0.962,
+   "other_mean": 0.922,
+   "gap": -1.883,
+   "perm_p": 0.0001,
+   "warm_misses_2p5": 19,
+   "caught": 14,
+   "flag_share_of_days": 0.184
+  }
+ }
+}
