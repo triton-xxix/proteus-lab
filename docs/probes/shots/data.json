@@ -1,26 +1,26 @@
 {
  "summary": {
-  "n": 201,
+  "n": 207,
   "waiting": 0,
-  "hits": 187,
-  "hit_rate": 0.93,
-  "mean_p": 0.663,
-  "brier": 0.142,
-  "brier_at_hit_rate": 0.065,
-  "called_works": 187,
-  "called_works_hits": 178,
+  "hits": 193,
+  "hit_rate": 0.932,
+  "mean_p": 0.664,
+  "brier": 0.141,
+  "brier_at_hit_rate": 0.063,
+  "called_works": 193,
+  "called_works_hits": 184,
   "called_other": 14,
   "called_other_hits": 9,
-  "verdict_works": 183,
+  "verdict_works": 189,
   "first": "2026-10-12",
-  "last": "2026-11-13"
+  "last": "2026-11-14"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 25,
+   "n": 26,
    "mean_p": 0.496,
-   "hit_rate": 0.92
+   "hit_rate": 0.923
   },
   {
    "label": "55%",
@@ -30,21 +30,21 @@
   },
   {
    "label": "60 to 65%",
-   "n": 57,
+   "n": 58,
    "mean_p": 0.617,
-   "hit_rate": 0.947
+   "hit_rate": 0.948
   },
   {
    "label": "70 to 75%",
-   "n": 73,
-   "mean_p": 0.721,
-   "hit_rate": 0.932
+   "n": 76,
+   "mean_p": 0.722,
+   "hit_rate": 0.934
   },
   {
    "label": "80% and up",
-   "n": 29,
-   "mean_p": 0.821,
-   "hit_rate": 0.966
+   "n": 30,
+   "mean_p": 0.82,
+   "hit_rate": 0.967
   }
  ],
  "rows": [
@@ -2057,6 +2057,66 @@
    "hit": 1,
    "number": "the hint fades: pooled medians for six-full-hour trades within 0.2 of each other (losers about 0.50, winners about 0.65); at least 30 six-full trades pooled; fewer than 6 trades under CV 0.3. Shot after seeing the first 14",
    "at": "2026-11-13T12:46:41+0000"
+  },
+  {
+   "id": "P-0445",
+   "title": "Munich fog flag: over P-0418's year of EDDM days, do days with FG or FZFG in any METAR 00Z to 09Z show a warmer icon_seamless lead-1 city fo",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "fog-day mean error minus clear-day mean error: -1.5 C (forecast warmer on fog days)",
+   "at": "2026-11-14T12:32:30+0000"
+  },
+  {
+   "id": "P-0446",
+   "title": "Munich fog flag out of sample: P-0445 found fog-morning days (FG or FZFG before 10Z) ran -0.79 C warmer on ICON lead-1 city day high over No",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "fog-day minus other-day mean error on 1 to 13 Nov 2026: -1.0 C, about 3 fog days",
+   "at": "2026-11-14T12:33:36+0000"
+  },
+  {
+   "id": "P-0447",
+   "title": "Low-cloud flag beyond Munich: P-0446 found BKN/OVC/VV at or below 500 ft before 10Z marked a -1.07 C warmer ICON lead-1 day-high error at ED",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "low-cloud gap at EGLL: -0.6 C, both stations negative with permutation p under 0.05",
+   "at": "2026-11-14T12:34:36+0000"
+  },
+  {
+   "id": "P-0448",
+   "title": "RSI(5) time stop in the backtest: book 1's rule (close above SMA200, RSI5 under 30 in, RSI5 over 50 out, next-open fills, 9 ETFs, Yahoo dail",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "5-session time stop moves the backtest mean per trade by about -0.05 points (no help) and the win rate from about 75% to about 70%",
+   "at": "2026-11-14T12:36:32+0000"
+  },
+  {
+   "id": "P-0449",
+   "title": "SPY gap fade with a stop: P-0433's fade of SPY gaps over 1% since 2009 (443 gaps, +0.198% a trade after its cost). Add 0.05% slippage at the",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "worst-case mean per trade with slippage and a 2x-gap stop: +0.05%, best case about +0.17%",
+   "at": "2026-11-14T12:38:07+0000"
+  },
+  {
+   "id": "P-0450",
+   "title": "Munich market depth at the favourite: refill 171 found exchange/SNAPSHOTS.csv has no size columns and munich_volumes.jsonl (from 8 Nov) show",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "best offer at the favourite degree holds under 20 units on most open Munich markets; a 10-unit back moves the average price by 2 or more points",
+   "at": "2026-11-14T12:39:14+0000"
   }
  ]
 }

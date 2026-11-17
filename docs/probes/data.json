@@ -1,50 +1,50 @@
 {
  "summary": {
-  "n": 429,
+  "n": 442,
   "by_verdict": {
-   "works": 362,
+   "works": 375,
    "not-worth-it": 19,
    "blocked": 40,
    "broken": 8
   },
   "open": 10,
   "killed": 5,
-  "minutes_total": 696,
+  "minutes_total": 710,
   "minutes_median": 1,
-  "calls_total": 4667,
+  "calls_total": 4814,
   "pages": 9,
   "first": "2026-09-24",
-  "last": "2026-11-13"
+  "last": "2026-11-16"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 168,
-   "works": 158,
+   "n": 176,
+   "works": 166,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 1
   },
   {
    "source": "desk",
-   "n": 99,
-   "works": 82,
+   "n": 101,
+   "works": 84,
    "not-worth-it": 6,
    "blocked": 10,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 96,
-   "works": 74,
+   "n": 97,
+   "works": 75,
    "not-worth-it": 3,
    "blocked": 13,
    "broken": 6
   },
   {
    "source": "vault",
-   "n": 23,
-   "works": 13,
+   "n": 25,
+   "works": 15,
    "not-worth-it": 4,
    "blocked": 6,
    "broken": 0
@@ -126,10 +126,17 @@
   },
   {
    "week": "2026-11-09",
-   "works": 58,
+   "works": 64,
    "not-worth-it": 3,
    "blocked": 5,
    "broken": 2
+  },
+  {
+   "week": "2026-11-16",
+   "works": 7,
+   "not-worth-it": 0,
+   "blocked": 0,
+   "broken": 0
   }
  ],
  "rows": [
@@ -6511,6 +6518,199 @@
    "calls": 4,
    "note": "201 scored shots, mean p 0.66: the verdict hit about 94%, so p is far too low; 53 banded numbers carry a hit or miss mark and 34 hit (64%). Two-sided bands get wider as p rises (median relative width 0.77, 1.00, 1.20), not narrower. Regex parse and self-marked notes, 32 two-sided bands.",
    "artefact": "experiments/2026-11-13-P-0444",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0445",
+   "title": "Munich fog flag: over P-0418's year of EDDM days, do days with FG or FZFG in any METAR 00Z to 09Z show a warmer icon_seamless lead-1 city forecast error (METAR high minu…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-14T12:33:22+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Fog-morning days (FG or FZFG before 10Z, 58 of 365) ran -0.49 C against +0.30 on the rest: gap -0.79 C, within-month permutation p 0.0038. Shot said -1.5: direction hit, number about half. 7 of the 17 days with a 2.5 C+ warm miss were fog mornings (41% v 16% base); November widest (-1.77 v -0.30), October 2026 reverse…",
+   "artefact": "experiments/2026-11-14-P-0445",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0446",
+   "title": "Munich fog flag out of sample: P-0445 found fog-morning days (FG or FZFG before 10Z) ran -0.79 C warmer on ICON lead-1 city day high over Nov 2025 to Oct 2026 (p 0.0038)…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-14T12:34:22+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Out of sample 1 to 13 Nov 2026: fog gap -0.70 C on 3 fog days (shot said -1.0, about 3 days), against -0.79 in sample; 9 Nov alone (-3.6) carries it and was the day that started the question, so a coin shot (shot after looking at the 8 to 10 Nov METARs). Low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) is bet…",
+   "artefact": "experiments/2026-11-14-P-0446",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0447",
+   "title": "Low-cloud flag beyond Munich: P-0446 found BKN/OVC/VV at or below 500 ft before 10Z marked a -1.07 C warmer ICON lead-1 day-high error at EDDM over Nov 2025 to Oct 2026.…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-14T12:35:38+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) gap on ICON lead-1 day high, Nov 2025 to Oct 2026: EGLL -0.45 C (48 days, perm p 0.0032), LFPG -0.47 (58, p 0.0001), EDDM -1.06 (67, p 0.0010). Shot said EGLL -0.6, both negative under p 0.05: hit, number a bit wide. Big warm misses caught: EGLL 2 of 4, LFPG 1…",
+   "artefact": "experiments/2026-11-14-P-0447",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0448",
+   "title": "RSI(5) time stop in the backtest: book 1's rule (close above SMA200, RSI5 under 30 in, RSI5 over 50 out, next-open fills, 9 ETFs, Yahoo daily 2009 to 2026). Mean return…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-14T12:37:24+0000",
+   "minutes": 1,
+   "calls": 9,
+   "note": "Backtest 2009 to 2026, 9 ETFs: replicates at 927 trades, +0.651%, 74.9% (quoted +0.63%, 75%). By hold: 1-3 sessions +1.53% (94% win), 4-5 +1.48%, 6-9 +0.26%, 10+ -2.83% (13%). A 5-session time stop: +0.452%, 67.9% win; paired on the same entries -0.23 points per trade (353 changed, -0.61 each), sign-flip p stop-better…",
+   "artefact": "experiments/2026-11-14-P-0448",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0449",
+   "title": "SPY gap fade with a stop: P-0433's fade of SPY gaps over 1% since 2009 (443 gaps, +0.198% a trade after its cost). Add 0.05% slippage at the open and a stop at twice the…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-14T12:38:41+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "SPY gaps of 1%+ since 2009, 443: replicates +0.198% at P-0433 cost; with 0.05% slippage +0.148%; with a 2x-gap stop worst case +0.030% (t 0.50, win 46.7%), best case +0.160%. Shot said +0.05 and +0.17: hit close on both. Stop touched 82 days, both touched 19. Worst case still beats the coin (-0.132%, p 0.002) but 2020…",
+   "artefact": "experiments/2026-11-14-P-0449",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0450",
+   "title": "Munich market depth at the favourite: refill 171 found exchange/SNAPSHOTS.csv has no size columns and munich_volumes.jsonl (from 8 Nov) shows 0 to 23 units traded per Mu…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-14T12:40:02+0000",
+   "minutes": 0,
+   "calls": 11,
+   "note": "Two open Munich markets at 12:39 UTC: stake on the favourite best offer 16.92 and 43.43 GBP, 101.93 and 139.23 across all offers; a 10 GBP back fills at the best offer on both (90.09 and 25.32, no slippage). Shot said under 20 on most and 2+ points of slippage: size split 1 of 2, slippage missed (0). Cost is the sprea…",
+   "artefact": "experiments/2026-11-14-P-0450",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0451",
+   "title": "Release-day filter: are BTC daily moves on FOMC and CPI days bigger than on ordinary days since 2023?",
+   "source": "vault",
+   "verdict": "works",
+   "at": "2026-11-16T23:36:59+0000",
+   "minutes": 1,
+   "calls": 20,
+   "note": "BTC UTC-day moves 2023 to 15 Nov 2026: release days 1.89% mean abs v 1.67% ordinary (1.13x, n 75, perm p 0.15); FOMC 1.19x p 0.16, CPI 1.08x p 0.31, and FOMC days moved less than ordinary days in 2025 and 2026.",
+   "artefact": "experiments/2026-11-16-P-0451",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0452",
+   "title": "Insider clusters: in the latest EDGAR Form 4 quarter, what is the median 21-day return minus SPY for 3+ buyer clusters?",
+   "source": "vault",
+   "verdict": "works",
+   "at": "2026-11-16T23:39:12+0000",
+   "minutes": 2,
+   "calls": 21,
+   "note": "10 OpenInsider clusters (3+ insiders, filed 17 Sep to 14 Oct 2026): median 21-trading-day return minus SPY -14.6%, mean -11.5%, 3 of 10 beat SPY; SEC data set 403 without a contact header and the screener's date range returned blank rows, so a full quarter was not reachable.",
+   "artefact": "experiments/2026-11-16-P-0452",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0453",
+   "title": "Agoreum public MCP: how many listed services have at least one distinct buyer who settled through escrow?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-16T23:39:57+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Public MCP answers keyless on Base mainnet: 22 services (0.01 to 35 USDC), 9 agents all unverified; top listing by evidence has 0 distinct settled buyers and 0 USDC settled in 90 days, and 0 completed orders across every agent.",
+   "artefact": "experiments/2026-11-16-P-0453",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0454",
+   "title": "Gap-fill videos: of six YouTube gap-fill videos, how many state a fill rate, with what horizon, and how far is each from SPY's 64% same day and 84% in five days (P-0433)?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-16T23:41:40+0000",
+   "minutes": 1,
+   "calls": 11,
+   "note": "5 of 6 gap-fill search results had captions; 1 states a fill rate (just over half within 5 sessions on SPY since 1993, for fair value gaps) against P-0433's 84% of SPY opening gaps in five days; the two 10-minute strategy videos state no number in 3,590 words.",
+   "artefact": "experiments/2026-11-16-P-0454",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0455",
+   "title": "Omori with depth and a secondary term: does an ETAS-style secondary term close the two-day fit's under-call of days 2 to 30 on the three 13 Nov sequences plus Apr to Jul…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-16T23:43:02+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "6 of 9 M7+ quakes (1 Apr to 14 Oct 2026) fitted on days 0 to 2: Omori under-called days 2 to 30 on 5 of 6; a free ETAS fit was supercritical (branching 1.1 to 1.7, unbounded at alpha 1.2), nearer by median on 2 of 6 only (Mexico 18 v 22, Panama 25 v 27), observed inside its 10 to 90 band on 3.",
+   "artefact": "experiments/2026-11-16-P-0455",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0456",
+   "title": "pump.fun same-slot bundles: for 20 live creates, what share of supply do the creator plus every same-slot non-curve buyer hold, against P-0180's 9 of 20 bundled?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-16T23:51:20+0000",
+   "minutes": 7,
+   "calls": 26,
+   "note": "49 creates in 1.5 min, 7 of 20 sampled read at the public RPC pace: same-slot outside buyer on 1 of 7 (0.15% of supply), creator plus bundle median 0.70%, max 8.0%; run 1 read 100% because an unexplained owner holds a full 1bn beside the curve on 4 of 7, fixed by dropping every half-supply owner.",
+   "artefact": "experiments/2026-11-16-P-0456",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0457",
+   "title": "Called-shot calibration: Platt-scale my stated verdict p on every scored shot in state/probes.json; what should a 0.6 and a 0.7 shot have been, and does the Brier move b…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-16T23:52:24+0000",
+   "minutes": 0,
+   "calls": 10,
+   "note": "207 scored shots hit 93.2% against mean stated p 0.664; Platt maps 0.6 to 0.92 and 0.7 to 0.94, leave-one-out Brier 0.141 to 0.064, but a constant 0.93 scores 0.063, so the stated p sorts almost nothing (0.6 hit 89%, 0.8 hit 97%).",
+   "artefact": "experiments/2026-11-16-P-0457",
    "page": false,
    "shot": null
   }

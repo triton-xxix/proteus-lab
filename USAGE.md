@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-11-14 09:06.
+Rebuilt 2026-11-17 09:07.
 
 ## By month
 
@@ -20,8 +20,8 @@ Rebuilt 2026-11-14 09:06.
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
 | 2026-10 | scheduled runs | 4.16M | 950.29M | 23.51M | 49.4k |
 | 2026-10 | Luke's sessions | 3.17M | 670.37M | 19.03M | 22.6k |
-| 2026-11 | scheduled runs | 2.47M | 542.56M | 12.38M | 9.7k |
-| 2026-11 | Luke's sessions | 168.5k | 28.44M | 899.6k | 1.8k |
+| 2026-11 | scheduled runs | 2.69M | 603.94M | 13.50M | 10.5k |
+| 2026-11 | Luke's sessions | 180.8k | 30.21M | 1.05M | 1.8k |
 
 ## Scheduled output by ISO week
 
@@ -37,7 +37,8 @@ Field Notes with the step that caused it.
 | 2026-W43 | 42 | 1.20M | 548.9k | YES |
 | 2026-W44 | 42 | 1.34M | 793.6k | no |
 | 2026-W45 | 43 | 1.31M | 1.02M | no |
-| 2026-W46 | 32 | 999.0k | 1.19M | no |
+| 2026-W46 | 35 | 1.09M | 1.19M | no |
+| 2026-W47 | 5 | 133.9k | 1.24M | no |
 
 ## By session
 
@@ -527,4 +528,15 @@ Field Notes with the step that caused it.
 | 2026-11-13 23:31 | nightly, child adb60f6d | haiku-5-5 | 12.6k | 1.07M | 117.2k | 18 | 1 min | f5c7bafa |
 | 2026-11-13 23:35 | nightly, child a2786b16 | sonnet-5-5 | 1.5k | 287.8k | 54.1k | 8 | 0 min | f5c7bafa |
 | 2026-11-14 07:54 | lichess-morning | opus-5-5 | 3.3k | 1.57M | 54.8k | 34 | 47 min | 2e261d52 |
-| 2026-11-14 09:06 | inspector | opus-5-5 | 1.7k | 427.9k | 45.7k | 10 | 0 min | b20d9255 |
+| 2026-11-14 09:06 | inspector | opus-5-5 | 14.7k | 3.07M | 84.2k | 54 | 2 min | b20d9255 |
+| 2026-11-14 12:25 | interactive (Luke) | opus-5-5 | 12.3k | 1.77M | 155.1k | 36 | 13 min | cdadb222 |
+| 2026-11-14 12:31 | trials | opus-5-5 | 42.1k | 9.16M | 147.6k | 128 | 9 min | e4dad001 |
+| 2026-11-14 16:36 | workshop | opus-5-5 | 23.8k | 5.22M | 118.3k | 76 | 4 min | bfb41925 |
+| 2026-11-14 20:04 | smith | opus-5-5 | 12.1k | 3.36M | 85.4k | 60 | 2 min | 61abe37d |
+| 2026-11-16 16:36 | workshop | opus-5-5 | 18.6k | 5.17M | 114.0k | 78 | 4 min | e13b585c |
+| 2026-11-16 20:05 | smith | opus-5-5 | 23.0k | 5.92M | 105.3k | 98 | 6 min | c16a36bf |
+| 2026-11-16 23:23 | nightly | opus-5-5 | 77.0k | 27.63M | 257.3k | 276 | 30 min | e089f561 |
+| 2026-11-16 23:29 | nightly, child a6adfa5c | sonnet-5-5 | 8.3k | 169.9k | 102.3k | 6 | 1 min | e089f561 |
+| 2026-11-16 23:34 | nightly, child a42c5dec | sonnet-5-5 | 1.8k | 201.2k | 53.3k | 6 | 0 min | e089f561 |
+| 2026-11-17 07:54 | lichess-morning | opus-5-5 | 3.5k | 1.48M | 53.6k | 32 | 37 min | a8e6c1ab |
+| 2026-11-17 09:06 | inspector | opus-5-5 | 1.6k | 431.2k | 47.3k | 10 | 0 min | 7d9084d0 |
