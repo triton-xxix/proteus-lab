@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pump Trades</title>
+<meta name="description" content="Decode every pump.fun trade event from the public Solana RPC, keyless, and check each fee. One standard-library Python file.">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1c1a;--mut:#6b675f;--line:#dedad2;--a:#2a6f97;--pd:#2a6f97;--p2:#7b5ea7;--nf:#c4622d;--ring:#1d1c1a;--card:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151513;--fg:#ecebe6;--mut:#a29e95;--line:#34322e;--a:#6fb3d9;--pd:#6fb3d9;--p2:#b79be0;--nf:#e8935f;--ring:#ecebe6;--card:#1d1c1a}}
+:root[data-theme="dark"]{--bg:#151513;--fg:#ecebe6;--mut:#a29e95;--line:#34322e;--a:#6fb3d9;--pd:#6fb3d9;--p2:#b79be0;--nf:#e8935f;--ring:#ecebe6;--card:#1d1c1a}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,sans-serif;margin:0}
+main{max-width:820px;margin:0 auto;padding:24px 16px 60px}
+a{color:var(--a)} h1{font-size:1.9rem;line-height:1.2;margin:.4em 0} h2{font-size:1.2rem;margin-top:2em}
+.mut{color:var(--mut)} .big{font-size:1.15rem}
+.pd{background:var(--pd)} .p2{background:var(--p2)} .nf{background:var(--nf)}
+.sq{display:grid;grid-template-columns:repeat(19,1fr);gap:4px;margin:12px 0}
+.sq i{display:block;aspect-ratio:1;border-radius:3px}
+.sq i.my{box-shadow:inset 0 0 0 2px var(--ring)}
+.key i{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:-1px;margin:0 5px 0 12px}
+.key i:first-child{margin-left:0} .key i.my{background:transparent;box-shadow:inset 0 0 0 2px var(--ring)}
+.row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:14px}
+.nm{flex:0 0 32%;min-width:0;overflow-wrap:anywhere} .tr{flex:1;display:flex;height:16px;min-width:0}
+.tr b{display:block;height:100%} .ct{flex:0 0 3em;text-align:right;font-variant-numeric:tabular-nums}
+pre{background:var(--card);border:1px solid var(--line);padding:12px;overflow-x:auto;font-size:13.5px}
+code{overflow-wrap:anywhere}
+</style></head><body><main>
+<p class="mut"><a href="../../index.html">Proteus lab</a> / tools / pump-trades</p>
+<h1>Every pump.fun trade logs its own receipt. Here is how to read it.</h1>
+<p class="big">Each trade on pump.fun writes an event into the transaction: what was paid, what came back, the fee in basis points and in lamports. This one file pulls the latest transactions from Solana's public RPC, no key, decodes every event, and checks each fee against the amount. On 2026-11-17 at 16:40 UTC, 49 transactions held 38 trades across 19 tokens, and 18 of the 38 paid no fee at all.</p>
+
+<div class="sq" role="img" aria-label="38 trades: 20 paid a fee, 18 paid none; 23 in mayhem mode"><i class="nf my" title="sell 0.0226 SOL, no fee, mayhem"></i><i class="nf my" title="sell 19643278 quote units, no fee, mayhem, non-SOL quote"></i><i class="nf my" title="buy 0.0255 SOL, no fee, mayhem"></i><i class="nf my" title="sell 3045692 quote units, no fee, mayhem, non-SOL quote"></i><i class="nf my" title="buy 0.2960 SOL, no fee, mayhem"></i><i class="nf my" title="buy 0.0090 SOL, no fee, mayhem"></i><i class="nf my" title="sell 0.1321 SOL, no fee, mayhem"></i><i class="nf my" title="buy 0.0061 SOL, no fee, mayhem"></i><i class="nf my" title="buy 0.0391 SOL, no fee, mayhem"></i><i class="nf my" title="sell 0.3364 SOL, no fee, mayhem"></i><i class="nf my" title="buy 1409317 quote units, no fee, mayhem, non-SOL quote"></i><i class="nf my" title="buy 0.0141 SOL, no fee, mayhem"></i><i class="nf my" title="sell 0.0193 SOL, no fee, mayhem"></i><i class="nf my" title="sell 0.0565 SOL, no fee, mayhem"></i><i class="nf my" title="buy 0.0490 SOL, no fee, mayhem"></i><i class="nf my" title="sell 0.0275 SOL, no fee, mayhem"></i><i class="nf my" title="sell 0.0768 SOL, no fee, mayhem"></i><i class="nf my" title="buy 0.0281 SOL, no fee, mayhem"></i><i class="p2" title="sell 275690 quote units, 95 + 50 bps, normal, non-SOL quote"></i><i class="pd my" title="sell 0.0034 SOL, 95 + 30 bps, mayhem"></i><i class="pd my" title="buy_exact_quote_in 0.0036 SOL, 95 + 30 bps, mayhem"></i><i class="pd my" title="sell 0.0080 SOL, 95 + 30 bps, mayhem"></i><i class="pd my" title="sell 0.0050 SOL, 95 + 30 bps, mayhem"></i><i class="pd my" title="sell 0.0058 SOL, 95 + 30 bps, mayhem"></i><i class="pd" title="buy 0.3097 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.3432 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.0059 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.2003 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.4456 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.0129 SOL, 95 + 30 bps, normal"></i><i class="pd" title="buy 0.3259 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.0019 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.2257 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.2060 SOL, 95 + 30 bps, normal"></i><i class="pd" title="buy_exact_quote_in 0.3951 SOL, 95 + 30 bps, normal"></i><i class="pd" title="buy_exact_quote_in 0.2173 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.3492 SOL, 95 + 30 bps, normal"></i><i class="pd" title="sell 0.0628 SOL, 95 + 30 bps, normal"></i></div>
+<p class="key mut"><i class="pd"></i>paid 95 + 30 bps<i class="p2"></i>paid another split<i class="nf"></i>no fee<i class="my"></i>mayhem mode</p>
+<p class="mut">One square per trade. Hover for the instruction, the size and the fee. Fee classes: 95 + 30 bps 19, no fee 18, 95 + 50 bps 1. Instructions: sell 24, buy 11, buy_exact_quote_in 3.</p>
+
+<h2>The free trades are all in mayhem mode</h2>
+<p>18 of the 18 no-fee trades carry the event's <code>mayhem_mode</code> flag, every one. But mayhem mode does not mean free: 5 of the 23 mayhem trades paid the normal fee. So the flag is necessary on this sample, not sufficient.</p>
+<div class="row"><span class="nm">Mayhem mode</span><span class="tr"><b class="nf" style="width:78.3%" title="no fee 18"></b><b class="pd" style="width:21.7%" title="paid 5"></b></span><span class="ct">23</span></div><div class="row"><span class="nm">Normal</span><span class="tr"><b class="nf" style="width:0.0%" title="no fee 0"></b><b class="pd" style="width:100.0%" title="paid 15"></b></span><span class="ct">15</span></div>
+<p class="key mut"><i class="nf"></i>no fee<i class="pd"></i>paid</p>
+<p>The probe that found it, a few hours earlier on a smaller sample, saw the same shape:</p>
+<div class="row"><span class="nm">P-0465 mayhem</span><span class="tr"><b class="nf" style="width:71.4%" title="no fee 10"></b><b class="pd" style="width:28.6%" title="paid 4"></b></span><span class="ct">14</span></div><div class="row"><span class="nm">P-0465 normal</span><span class="tr"><b class="nf" style="width:0.0%" title="no fee 0"></b><b class="pd" style="width:100.0%" title="paid 5"></b></span><span class="ct">5</span></div>
+<p class="mut">The first probe (P-0464) saw 18 zero-fee trades out of 41 and could not say why; the second (P-0465) decoded past the instruction name and found the mayhem flag. Neither the event nor this tool can say whether the fee is truly waived or taken somewhere the event does not report. The SOL balance changes of those transactions would tell, and that is the next probe, not this page.</p>
+
+<h2>The fee check</h2>
+<p>For every trade that paid, the tool checks <code>fee</code> against amount × <code>fee_basis_points</code> / 10,000 and the creator fee the same way, to within one unit. 20 of 20 agree.</p>
+<p>One thing the first run caught. 4 of 38 trades are quoted in a token other than SOL, so <code>sol_amount</code> is 0 and the fee cannot be a share of it. On the paid one the fee is 2,620 and 95 bps of its <code>quote_amount</code> (275,690) is 2,619: the fee is charged in the quote token. The tool now checks it that way, and 20 of 20 paid fees agree to the unit.</p>
+<p>4.27 SOL traded on the SOL-quoted trades in the sample, 0.0391 SOL of it fees. 42 of the transactions the RPC listed could not be fetched (the public node drops recent ones and rate-limits); the tool skips them and says how many.</p>
+
+<h2>Use it</h2>
+<pre>python3 pump_trades.py
+python3 pump_trades.py --n 300 --out run.json --csv trades.csv
+python3 pump_trades.py --rpc https://your.rpc/ --n 1000
+python3 pump_trades.py --from run.json</pre>
+<p>Standard library only, no key. About a quarter of a second per transaction on the public RPC; give it your own RPC for more. <code>--from</code> re-scores a saved run without fetching. Every field is kept raw: the buyback field can read 5000 bps, which is a share of the fee and not half the trade, so the tool never adds the bps fields into one total.</p>
+<p><a href="pump_trades.py">pump_trades.py</a> · <a href="run-2026-11-17.json">today's 38 trades</a> · <a href="README.md">README</a> · <a href="build.py">how this page is built</a></p>
+<p class="mut">Checked: the page does not build unless the run's rows agree with its own summary, every event decoded to the end, and every paid fee checks. The layout is pump.fun's public IDL, read by probes P-0464 and P-0465. 38 trades from one minute is a small sample. Not yet checked at phone width in a real browser. A snapshot of 2026-11-17; nothing rebuilds it yet.</p>
+</main></body></html>
