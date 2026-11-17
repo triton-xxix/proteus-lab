@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 383 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
+Verdicts so far: 384 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,13 +25,13 @@ Verdicts so far: 383 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 | P-0458 | Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
-| P-0469 | pump.fun mayhem agent: are the zero-fee mayhem trades in experiments/2026-11-17-P-0465 all signed by one or a few wallets (the platform agent), and does a mayhem mint show a 2 billion supply on getTokenSupply? | desk | none |  | 1 (in progress) | 20 min |
 | P-0470 | Mayhem agent wallet BwWK17cb: pull its last 1,000 signatures keyless, decode its trades, and measure trades per coin, holding time and SOL profit and loss per coin over the window | desk | none |  | 0 | 25 min |
 
-## Verdicts (451)
+## Verdicts (452)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-17 | P-0469 | pump.fun mayhem agent: are the zero-fee mayhem trades in experiments/2026-11-17-P-0465 all signed by one or a few wallets (the platform agent), and does a mayhem mint show a 2 billion supply on getTokenSupply? | **works** | 43 of 43 fee-free mayhem trades across three samples seven hours apart (18 in the 16:40 Workshop run, 20 and 5 in P-0466) are one wallet, BwWK17cb...de6s; the afternoon run was saved before the idea existed. 8 of 8 mayhem mints show a 2,000,000,000 supply, 7 of 7 plain mints about 1,000,000,000. Shot after looking at P-0466 results, scored as a coin. The label "pump.fun agent" is my inference. Next: deepen (P-0470 follows the wallet). | `experiments/2026-11-17-P-0469` | 0 min, 6 calls, 0 denied |
 | 2026-11-17 | P-0466 | Mayhem-mode fee by balance: for 60 live pump.fun trades decoded with experiments/2026-11-17-P-0465/tail.py, compare the trader's SOL balance change (meta preBalances and postBalances, less the network fee) with the event's sol_amount; number is the gap in bps for zero-fee mayhem trades v paid trades, to say whether the zero-fee class truly pays nothing | **works** | The zero-fee class pays nothing and is one wallet: 25 of 25 zero-fee mayhem trades over two runs came from BwWK17cb...de6s (11 buys, 14 sells, up to 17 mints, never the fee payer); its SOL balance moved by exactly sol_amount on 5 of 5 measured (gap 0.0 bps). 9 paid mayhem trades were 8 ordinary wallets. Shot said under 10 bps and a handful of wallets: right, and it is one. Paid-trade gaps are noise (125 to 3,900 bps: rent, tips), so the method says zero or not, not a fee size. Run 1 missed the balance because the wallet sits in the loaded address table. Next: deepen (track that wallet for an hour: trades per coin, holding time, profit and loss). | `experiments/2026-11-17-P-0466` | 5 min, 12 calls, 0 denied |
 | 2026-11-17 | P-0468 | ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run? | **works** | api.onaa.net lists 32,306 stores keyless (30,281 reachable, 2,025 unknown). In the first 500: 497 from a UCP manifest, all first seen 14 Nov, 497 probed once; checkout ready 261 (52%), buyer step required 187, payment tested 0. One crawl, three days old, on a slow server (one 503, two timeouts). Shot said under 20 stores: verdict right, number off by three orders. Offline preflight read by grep (stdlib, two fixtures), not run unattended. Next: close (a count nobody had; running their preflight is for an interactive session). | `experiments/2026-11-17-P-0468` | 3 min, 23 calls, 0 denied |
 | 2026-11-17 | P-0467 | rust-anything: does its Python slugify demo match the original and run 10x+ faster here? | **blocked** | No cargo or rustc on this Mac and the Python fixture ships source only, so the Rust port and its 17x were not run. The half that needs no Rust: 706 of 706 recorded results replay identically on the original Python and 79 of 79 recorded errors raise (159 skipped on an argument encoding I did not decode, 200 class cases are Rust-side); baseline 118.2 ms median for 20,000 slugs v the README 98 ms. Shot said works at 0.5: missed. | `experiments/2026-11-17-P-0467` | 1 min, 22 calls, 1 denied |

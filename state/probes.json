@@ -11913,22 +11913,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T23:46:25+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T23:46:44+0000",
+   "note": "43 of 43 fee-free mayhem trades across three samples seven hours apart (18 in the 16:40 Workshop run, 20 and 5 in P-0466) are one wallet, BwWK17cb...de6s; the afternoon run was saved before the idea existed. 8 of 8 mayhem mints show a 2,000,000,000 supply, 7 of 7 plain mints about 1,000,000,000. Shot after looking at P-0466 results, scored as a coin. The label \"pump.fun agent\" is my inference. Next: deepen (P-0470 follows the wallet).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0469"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "one wallet and 2 billion; shot after looking at P-0466 results, which measured both tonight",
-    "at": "2026-11-17T23:46:29+0000"
+    "at": "2026-11-17T23:46:29+0000",
+    "hit": true
    }
   },
   {
