@@ -11840,26 +11840,31 @@
    "id": "P-0467",
    "title": "rust-anything: does its Python slugify demo match the original and run 10x+ faster here?",
    "source": "harvest",
-   "needs": "",
+   "needs": "a Rust toolchain installed inside sandbox/ (rustup with CARGO_HOME there), an interactive install",
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T23:36:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "blocked",
+   "verdict_at": "2026-11-17T23:37:31+0000",
+   "note": "No cargo or rustc on this Mac and the Python fixture ships source only, so the Rust port and its 17x were not run. The half that needs no Rust: 706 of 706 recorded results replay identically on the original Python and 79 of 79 recorded errors raise (159 skipped on an argument encoding I did not decode, 200 class cases are Rust-side); baseline 118.2 ms median for 20,000 slugs v the README 98 ms. Shot said works at 0.5: missed.",
+   "artefacts": [
+    "experiments/2026-11-17-P-0467"
+   ],
+   "minutes": 1,
+   "calls": 22,
+   "denied": [
+    "Bash `jq -r \".tree[] | select(.path | test(\\\"^demo/[^/]*(/[^/]*)?$\\\")) | \\\"\\(.type) \\(.size // 0`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "outputs match on at least 95 percent of inputs and the Rust build is 3x to 10x faster, if a Rust toolchain is here at all",
-    "at": "2026-11-17T23:36:04+0000"
+    "at": "2026-11-17T23:36:04+0000",
+    "hit": false
    }
   },
   {

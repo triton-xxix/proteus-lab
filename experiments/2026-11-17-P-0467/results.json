@@ -1,0 +1,92 @@
+{
+ "python": "3.14.6",
+ "machine": "x86_64",
+ "cases": 1144,
+ "row_keys": {
+  "fn": 944,
+  "args": 944,
+  "kwargs": 200,
+  "ok": 865,
+  "error": 79,
+  "class": 200,
+  "ctor": 200,
+  "calls": 200,
+  "results": 200
+ },
+ "by_fn": {
+  "slugify": {
+   "cases": 200,
+   "replayed": 155,
+   "match": 155,
+   "mismatch": 0,
+   "skipped_encoding": 45,
+   "skipped_unknown_fn": 0,
+   "error_cases": 0,
+   "error_raised": 0,
+   "examples": []
+  },
+  "word_counts": {
+   "cases": 200,
+   "replayed": 174,
+   "match": 174,
+   "mismatch": 0,
+   "skipped_encoding": 26,
+   "skipped_unknown_fn": 0,
+   "error_cases": 0,
+   "error_raised": 0,
+   "examples": []
+  },
+  "chunk": {
+   "cases": 200,
+   "replayed": 134,
+   "match": 134,
+   "mismatch": 0,
+   "skipped_encoding": 0,
+   "skipped_unknown_fn": 0,
+   "error_cases": 66,
+   "error_raised": 66,
+   "examples": []
+  },
+  "page_count": {
+   "cases": 144,
+   "replayed": 132,
+   "match": 132,
+   "mismatch": 0,
+   "skipped_encoding": 0,
+   "skipped_unknown_fn": 0,
+   "error_cases": 12,
+   "error_raised": 12,
+   "examples": []
+  },
+  "mean": {
+   "cases": 200,
+   "replayed": 111,
+   "match": 111,
+   "mismatch": 0,
+   "skipped_encoding": 88,
+   "skipped_unknown_fn": 0,
+   "error_cases": 1,
+   "error_raised": 1,
+   "examples": []
+  },
+  "null": {
+   "cases": 200,
+   "replayed": 0,
+   "match": 0,
+   "mismatch": 0,
+   "skipped_encoding": 0,
+   "skipped_unknown_fn": 200,
+   "error_cases": 0,
+   "error_raised": 0,
+   "examples": []
+  }
+ },
+ "slugify_20000_ms": {
+  "median": 118.2,
+  "min": 116.5,
+  "max": 151.9,
+  "runs": 15
+ },
+ "readme_baseline_ms": 98,
+ "readme_speedup": 17
+}
