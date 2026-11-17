@@ -1,0 +1,1136 @@
+{
+ "summary": {
+  "days_scored": 16,
+  "low_n": 5,
+  "low_mean_err": -0.322,
+  "other_n": 11,
+  "other_mean_err": -0.078,
+  "gap": -0.244,
+  "fav_hit": 5,
+  "fav_hit_low": 1,
+  "mean_abs_err": 0.704,
+  "skipped": []
+ },
+ "rows": [
+  {
+   "date": "2026-11-01",
+   "truth": 8,
+   "implied_mean": 8.39,
+   "sum_p": 1.024,
+   "fav": 8,
+   "fav_p": 0.475,
+   "fav_hit": true,
+   "err": -0.39,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "2\u00b0C or below",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.0085
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.06
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.475
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.47
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0075
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "12\u00b0C or higher",
+     "deg": 12,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-02",
+   "truth": 7,
+   "implied_mean": 7.69,
+   "sum_p": 0.99,
+   "fav": 8,
+   "fav_p": 0.57,
+   "fav_hit": false,
+   "err": -0.69,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "2\u00b0C or below",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.009
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.051
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.27
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.57
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.083
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0045
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.001
+    },
+    {
+     "bucket": "12\u00b0C or higher",
+     "deg": 12,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-03",
+   "truth": 6,
+   "implied_mean": 6.83,
+   "sum_p": 1.023,
+   "fav": 7,
+   "fav_p": 0.6,
+   "fav_hit": false,
+   "err": -0.83,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "2\u00b0C or below",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.004
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.295
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.6
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.1145
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.0065
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "12\u00b0C or higher",
+     "deg": 12,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-04",
+   "truth": 7,
+   "implied_mean": 7.45,
+   "sum_p": 1.019,
+   "fav": 8,
+   "fav_p": 0.435,
+   "fav_hit": false,
+   "err": -0.45,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "3\u00b0C or below",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.0115
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.0985
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.405
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.435
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.0565
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.01
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "13\u00b0C or higher",
+     "deg": 13,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-05",
+   "truth": 10,
+   "implied_mean": 9.42,
+   "sum_p": 1.057,
+   "fav": 9,
+   "fav_p": 0.4,
+   "fav_hit": false,
+   "err": 0.58,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "4\u00b0C or below",
+     "deg": 4,
+     "p09z": 0.0015
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.007
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.0145
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.15
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.4
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.345
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.115
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.018
+    },
+    {
+     "bucket": "13\u00b0C",
+     "deg": 13,
+     "p09z": 0.005
+    },
+    {
+     "bucket": "14\u00b0C or higher",
+     "deg": 14,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-06",
+   "truth": 4,
+   "implied_mean": 5.11,
+   "sum_p": 1.089,
+   "fav": 5,
+   "fav_p": 0.31,
+   "fav_hit": false,
+   "err": -1.11,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "0\u00b0C or below",
+     "deg": 0,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "1\u00b0C",
+     "deg": 1,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "2\u00b0C",
+     "deg": 2,
+     "p09z": 0.009
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.088
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.305
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.31
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.19
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.125
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.05
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.01
+    },
+    {
+     "bucket": "10\u00b0C or higher",
+     "deg": 10,
+     "p09z": 0.0015
+    }
+   ],
+   "low": true
+  },
+  {
+   "date": "2026-11-07",
+   "truth": 7,
+   "implied_mean": 7.53,
+   "sum_p": 1.069,
+   "fav": 8,
+   "fav_p": 0.41,
+   "fav_hit": false,
+   "err": -0.53,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "3\u00b0C or below",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.0265
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.155
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.315
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.41
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.135
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.02
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0035
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.0015
+    },
+    {
+     "bucket": "13\u00b0C or higher",
+     "deg": 13,
+     "p09z": 0.002
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-08",
+   "truth": 8,
+   "implied_mean": 8.38,
+   "sum_p": 1.024,
+   "fav": 9,
+   "fav_p": 0.57,
+   "fav_hit": false,
+   "err": -0.38,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "-1\u00b0C or below",
+     "deg": -1,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "0\u00b0C",
+     "deg": 0,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "1\u00b0C",
+     "deg": 1,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "2\u00b0C",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.0025
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.024
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.105
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.32
+    },
+    {
+     "bucket": "9\u00b0C or higher",
+     "deg": 9,
+     "p09z": 0.57
+    }
+   ],
+   "low": true
+  },
+  {
+   "date": "2026-11-09",
+   "truth": 5,
+   "implied_mean": 6.53,
+   "sum_p": 1.1,
+   "fav": 6,
+   "fav_p": 0.415,
+   "fav_hit": false,
+   "err": -1.53,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "2\u00b0C or below",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0015
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.036
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.135
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.415
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.34
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.105
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.04
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.016
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0085
+    },
+    {
+     "bucket": "12\u00b0C or higher",
+     "deg": 12,
+     "p09z": 0.0025
+    }
+   ],
+   "low": true
+  },
+  {
+   "date": "2026-11-10",
+   "truth": 8,
+   "implied_mean": 8.09,
+   "sum_p": 1.02,
+   "fav": 8,
+   "fav_p": 0.595,
+   "fav_hit": true,
+   "err": -0.09,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "4\u00b0C or below",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.013
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.159
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.595
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.235
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0115
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.003
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.0015
+    },
+    {
+     "bucket": "13\u00b0C",
+     "deg": 13,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "14\u00b0C or higher",
+     "deg": 14,
+     "p09z": 0.0005
+    }
+   ],
+   "low": true
+  },
+  {
+   "date": "2026-11-11",
+   "truth": 13,
+   "implied_mean": 11.5,
+   "sum_p": 1.026,
+   "fav": 11,
+   "fav_p": 0.4,
+   "fav_hit": false,
+   "err": 1.5,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "8\u00b0C or below",
+     "deg": 8,
+     "p09z": 0.006
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.004
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.123
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.4
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.36
+    },
+    {
+     "bucket": "13\u00b0C",
+     "deg": 13,
+     "p09z": 0.109
+    },
+    {
+     "bucket": "14\u00b0C",
+     "deg": 14,
+     "p09z": 0.02
+    },
+    {
+     "bucket": "15\u00b0C",
+     "deg": 15,
+     "p09z": 0.0025
+    },
+    {
+     "bucket": "16\u00b0C",
+     "deg": 16,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "17\u00b0C",
+     "deg": 17,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "18\u00b0C or higher",
+     "deg": 18,
+     "p09z": 0.0005
+    }
+   ],
+   "low": true
+  },
+  {
+   "date": "2026-11-12",
+   "truth": 12,
+   "implied_mean": 12.24,
+   "sum_p": 0.999,
+   "fav": 12,
+   "fav_p": 0.485,
+   "fav_hit": true,
+   "err": -0.24,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "5\u00b0C or below",
+     "deg": 5,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.15
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.485
+    },
+    {
+     "bucket": "13\u00b0C",
+     "deg": 13,
+     "p09z": 0.315
+    },
+    {
+     "bucket": "14\u00b0C",
+     "deg": 14,
+     "p09z": 0.045
+    },
+    {
+     "bucket": "15\u00b0C or higher",
+     "deg": 15,
+     "p09z": 0.001
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-13",
+   "truth": 6,
+   "implied_mean": 6.33,
+   "sum_p": 0.997,
+   "fav": 6,
+   "fav_p": 0.505,
+   "fav_hit": true,
+   "err": -0.33,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "2\u00b0C or below",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.1
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.505
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.355
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.03
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.0045
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "12\u00b0C or higher",
+     "deg": 12,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-14",
+   "truth": 6,
+   "implied_mean": 6.3,
+   "sum_p": 0.976,
+   "fav": 6,
+   "fav_p": 0.52,
+   "fav_hit": true,
+   "err": -0.3,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "2\u00b0C or below",
+     "deg": 2,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "3\u00b0C",
+     "deg": 3,
+     "p09z": 0.0035
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0055
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.082
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.52
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.3325
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.0295
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.001
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "12\u00b0C or higher",
+     "deg": 12,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-15",
+   "truth": 9,
+   "implied_mean": 7.22,
+   "sum_p": 1.044,
+   "fav": 7,
+   "fav_p": 0.355,
+   "fav_hit": false,
+   "err": 1.78,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "3\u00b0C or below",
+     "deg": 3,
+     "p09z": 0.0015
+    },
+    {
+     "bucket": "4\u00b0C",
+     "deg": 4,
+     "p09z": 0.0065
+    },
+    {
+     "bucket": "5\u00b0C",
+     "deg": 5,
+     "p09z": 0.063
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.21
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.355
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.265
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.115
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.0225
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.0045
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "13\u00b0C or higher",
+     "deg": 13,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  },
+  {
+   "date": "2026-11-16",
+   "truth": 12,
+   "implied_mean": 11.46,
+   "sum_p": 1.048,
+   "fav": 11,
+   "fav_p": 0.4915,
+   "fav_hit": false,
+   "err": 0.54,
+   "priced": 11,
+   "n_buckets": 11,
+   "buckets": [
+    {
+     "bucket": "5\u00b0C or below",
+     "deg": 5,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "6\u00b0C",
+     "deg": 6,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "7\u00b0C",
+     "deg": 7,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "8\u00b0C",
+     "deg": 8,
+     "p09z": 0.0005
+    },
+    {
+     "bucket": "9\u00b0C",
+     "deg": 9,
+     "p09z": 0.003
+    },
+    {
+     "bucket": "10\u00b0C",
+     "deg": 10,
+     "p09z": 0.06
+    },
+    {
+     "bucket": "11\u00b0C",
+     "deg": 11,
+     "p09z": 0.4915
+    },
+    {
+     "bucket": "12\u00b0C",
+     "deg": 12,
+     "p09z": 0.43
+    },
+    {
+     "bucket": "13\u00b0C",
+     "deg": 13,
+     "p09z": 0.058
+    },
+    {
+     "bucket": "14\u00b0C",
+     "deg": 14,
+     "p09z": 0.003
+    },
+    {
+     "bucket": "15\u00b0C or higher",
+     "deg": 15,
+     "p09z": 0.0005
+    }
+   ],
+   "low": false
+  }
+ ]
+}

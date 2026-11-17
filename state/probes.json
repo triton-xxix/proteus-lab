@@ -11639,22 +11639,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T12:33:55+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T12:35:53+0000",
+   "note": "Polymarket Munich high, 09Z implied mean v EDDM resolution, 1 to 16 Nov: low-cloud mornings -0.32 C (5 days) v others -0.08 C (11), gap -0.24 C against ICON -1.07 (year) and -1.28 (Nov). Shot said about -0.4, smaller than ICON: direction and comparison right, size 0.16 off. 11 Nov flagged but +1.5; without it flagged mean -0.78. Favourite hit 5 of 16. The market already prices most of the miss; what is left is a lean on 5 days. SNAPSHOTS.csv had one Munich day with no prices, so Polymarket gamma and clob used, keyless. Next: deepen (rerun at 40 market days with a permutation p, and the 06Z price beside 09Z).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0459"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "market implied-mean error gap on low-cloud mornings about -0.4 C, smaller than ICON -1.07",
-    "at": "2026-11-17T12:34:01+0000"
+    "at": "2026-11-17T12:34:01+0000",
+    "hit": true
    }
   }
  ]
