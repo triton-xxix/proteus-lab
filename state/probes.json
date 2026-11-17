@@ -11766,22 +11766,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T12:40:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-17T12:43:48+0000",
+   "note": "Decoded 47 live pump.fun TradeEvents with the IDL layout; 41 paired with buy, buy_exact_sol_in and sell: args consistent 41 of 41, fee and creator fee within 1 lamport of sol_amount x bps 41 of 41. Shot said about 95 and 90 percent: measured 100 and 100. Caveat: 18 of 41 trades carry 0 fee bps and pass trivially; the real fee check is 23 of 23 at 95 + 30 bps (1.25 percent). The zero-fee class is new and unexplained (fields after ix_name not decoded). Next: deepen (decode past ix_name: cashback, buyback, shareholders, quote mint, and say what the zero-fee trades are).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0464"
+   ],
+   "minutes": 3,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "about 95 percent of decoded TradeEvents consistent with their instruction args, fee formula within 1 lamport on about 90 percent",
-    "at": "2026-11-17T12:40:53+0000"
+    "at": "2026-11-17T12:40:53+0000",
+    "hit": true
    }
   }
  ]
