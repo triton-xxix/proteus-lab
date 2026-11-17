@@ -1,5 +1,5 @@
 {
- "next_id": 462,
+ "next_id": 463,
  "items": [
   {
    "id": "P-0001",
@@ -11707,6 +11707,32 @@
     "number": "both models carry the low-cloud warm miss at EDDM: ecmwf_ifs025 gap about -0.7 C, gfs_seamless about -1.0 C, each perm p under 0.01",
     "at": "2026-11-17T12:36:24+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0462",
+   "title": "USGS aftershock parameters v my fits: for the 5 M7+ events since Nov 2025 with an oaf product (fdsnws query producttype=oaf, then each detail's oaf forecast.json, model.parameters a, b, p, c, Mc, region radius; keyless), integrate the Reasenberg-Jones rate with those fixed parameters for days 2 to 30 above Mc inside the region, count what the catalogue saw, and set it beside P-0455's Omori and ETAS predictions where the event overlaps; number is how many of the 5 land within a factor of 2",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-17",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-17T12:38:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "3 of 5 events land within a factor of 2 on days 2 to 30 with the USGS day-2 parameters",
+    "at": "2026-11-17T12:38:56+0000"
    }
   }
  ]

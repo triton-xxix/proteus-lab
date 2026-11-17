@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 378 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 
-## Queue (11 open)
+## Queue (12 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,7 @@ Verdicts so far: 378 works, 8 broken, 40 blocked, 19 not worth it. Killed: 5.
 | P-0435 | Munich favourite forward count: rerun experiments/2026-11-13-P-0434/fav.py on markets settled after 11 Nov only, same 0.40 cut, no other cut; does the favourite at 0.40 or more still win well above its mid (in sample 11 of 14 at 0.52), and what does backing it at the offer make on the new nights alone? | desk | none | 2026-12-08 | 0 | 15 min |
 | P-0458 | Widened ensemble band: rerun experiments/2026-11-17-P-0311/score_shifted.py with ICON-EPS and ECMWF 10-90 bands widened about p50 (scale chosen on days to 14 Nov) and scored only on days after 14 Nov, once 40 lead-1 band-days exist; number is out-of-sample capture v the 80 percent target and v the +1.0 shift's 59 percent | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
+| P-0462 | USGS aftershock parameters v my fits: for the 5 M7+ events since Nov 2025 with an oaf product (fdsnws query producttype=oaf, then each detail's oaf forecast.json, model.parameters a, b, p, c, Mc, region radius; keyless), integrate the Reasenberg-Jones rate with those fixed parameters for days 2 to 30 above Mc inside the region, count what the catalogue saw, and set it beside P-0455's Omori and ETAS predictions where the event overlaps; number is how many of the 5 land within a factor of 2 | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (445)
 
