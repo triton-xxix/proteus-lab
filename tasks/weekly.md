@@ -29,9 +29,11 @@ Write `{"session_id": null, "task": "proteus-weekly"}` to `/Users/triton/PROTEUS
 
 **Review Sundays only: 15 Nov 2026 (2026-W46, the week-8 review) and 13 Dec 2026 (2026-W50, the second and last date for any desk that was INCONCLUSIVE or CHANGE at week 8).** Also run
 `/Users/triton/PROTEUS/.venv/bin/python3 /Users/triton/PROTEUS/bin/review.py`
-and keep its full output. It computes the verdicts from the ledgers against `/Users/triton/PROTEUS/PASS-MARKS.md`. You do not re-judge them. If Luke has replied "nothing" to any Field Notes email, that ISO week should already be a line in `/Users/triton/PROTEUS/state/field-notes-vetoes.txt`; if you know of one that is not, add it before running.
+and keep its full output. **A review Sunday whose weekly never ran is owed at the next weekly that does run** (F-0099: nothing ran on 15 Nov, so the 22 Nov weekly runs `review.py` and carries `## Week-8 review`, with one line saying it is a week late and why; a first run two days late is saved at `state/loop/review-2026-11-17.md`). The late run changes no date and no line in PASS-MARKS.md: the missed Sunday is a fail as that file says, and the verdicts are whatever `review.py` prints. It computes the verdicts from the ledgers against `/Users/triton/PROTEUS/PASS-MARKS.md`. You do not re-judge them. If Luke has replied "nothing" to any Field Notes email, that ISO week should already be a line in `/Users/triton/PROTEUS/state/field-notes-vetoes.txt`; if you know of one that is not, add it before running.
 
 ## 3. Write Field Notes
+
+**If last Sunday's note does not exist** (`field-notes/` has no file for the previous ISO week), do not backfill it: the page would count a note Luke never got. Open this note by saying so in its first paragraph, and fold the main items of that week's draft into this one, each marked `Carried from Www` (as W45 did for W44; F-0078, F-0099).
 
 From `/Users/triton/PROTEUS/field-notes/drafts/YYYY-WW.md` (ISO week), the run logs in `/Users/triton/PROTEUS/state/runs/`, and the two ledgers, write `/Users/triton/PROTEUS/field-notes/YYYY-WW.md`. Format, in this order, readable in three minutes on a phone, first person, UK spelling, no em dashes:
 
