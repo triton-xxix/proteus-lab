@@ -759,6 +759,17 @@ def cmd_add(a):
         if a.source not in ("harvest", "vault") and not a.repeat_ok:
             print("not added: looks like a repeat. Re-run with --repeat-ok \"why it is new\" if it is not.")
             sys.exit(1)
+        # 18 Nov 2026 (P-0481): --repeat-ok was passed without reading the lines above, twice in one
+        # night, and one of the two was a plain repeat of P-0428; the same slip as P-0388 on 9 Nov.
+        # The reason must now name every probe id the guard showed, which cannot be done unread.
+        if a.source not in ("harvest", "vault"):
+            import re
+            shown = sorted(set(re.findall(r"P-\d{4}", "\n".join(report))))
+            missing = [p for p in shown if p not in a.repeat_ok]
+            if missing:
+                print("not added: the --repeat-ok reason must name each probe shown above and say how this "
+                      "differs from it. Not named: %s" % ", ".join(missing))
+                sys.exit(1)
     st = load_state()
     pid = "P-%04d" % st["next_id"]
     st["next_id"] += 1

@@ -52,6 +52,11 @@ probabilities above are backed out of mean Brier scores, not read from the ancho
 and 0.25 as rough. Ten settled rows have no anchor and are not counted. Nothing in the book or its
 rules was changed: the cap is in the nightly prompt and the kill line (+0.020) is out of reach.
 
-Next: deepen. Read the anchors directly: for each Munich call, my p and the market mid, and whether
+**Correction, same night.** The winner and loser table restates P-0422 and P-0428 (12 Nov), which
+I had not re-read: they found the same thing on 35 and 38 rows, and P-0428 already tested the band
+width (no signal, wider on winning nights). Only the model-against-search line is new here. The
+"Next" below is void; see `experiments/2026-11-18-P-0481/README.md`.
+
+~~Next~~: deepen. Read the anchors directly: for each Munich call, my p and the market mid, and whether
 the nights the market was above 0.40 could have been told apart beforehand from the ensemble band
 width captured the same night.
