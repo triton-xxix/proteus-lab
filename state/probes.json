@@ -1,5 +1,5 @@
 {
- "next_id": 472,
+ "next_id": 473,
  "items": [
   {
    "id": "P-0001",
@@ -11999,6 +11999,32 @@
     "number": "both calls answer keyless; over a 20 minute test run the wallet SOL balance moves by under 5 percent; the 24 hour job itself cannot be loaded from this run",
     "at": "2026-11-17T23:51:57+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0472",
+   "title": "Agoreum open requests: how many open buyer requests does the public MCP list, with what budgets and quote counts, against the 22 listings P-0453 found?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-18",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-18T00:13:24+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "fewer than 10 open requests, and fewer than half have a quote",
+    "at": "2026-11-18T00:13:29+0000"
    }
   }
  ]
