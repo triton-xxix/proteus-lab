@@ -1288,21 +1288,24 @@
    "track": 11,
    "title": "Rank Expand: the Microsite Playbook, AI Directories and the Backlink Rolodex (rank-and-rent and directory sites)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/rankexpand-05-the-microsite-playbook.md",
     "field-notes/skool/rankexpand-07-ai-directories.md",
     "field-notes/skool/rankexpand-08-the-backlink-rolodex.md"
    ],
    "why": "The side of the room the frameworks do not have at all (called shot line 4: at least two new mechanisms, line 7: TRY expected). What is the microsite method step by step, what does a directory site need, what the Rolodex's 6 open modules actually give against the '815 sites' premium claim. Goal line (Luke, 18 Nov 2026: 'I think that will be important'): Rank Expand sells AI SEO as a service, Neptune's own line of work. The frameworks index has Local SEO (Automatable, Review Harvest) and nothing on rank-and-rent microsites, directory sites or an Upwork path. Judge the mechanism, not the pitch; say what is new against the frameworks, what repeats them with more examples, and what is pointed at the locked premium courses. Called shot committed before the pull: field-notes/SKOOL-RANK-EXPAND-2026-11-18.md. Pulled on the 7-day trial; the readers' verdicts decide keep or cancel before day 7 (25 Nov).",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-11-18",
+   "verdict": "TRY",
+   "digest": "state/agents/skool/2026-11-18-S-59.md"
   },
   {
    "id": "S-60",
    "track": 11,
    "title": "Rank Expand: Local SEO Innovation, How To Dominate AI Search, Off-Page SEO, Measure What Matters, SEO for Beginners, Basic and Advanced courses",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/rankexpand-11-basic-courses.md",
     "field-notes/skool/rankexpand-12-advanced-courses.md",
@@ -1329,7 +1332,10 @@
     "field-notes/skool/transcripts/rankexpand-off-page-seo-backlinks-your-turn-to-make-it-happen.txt"
    ],
    "why": "Read against Triton's Local SEO framework (profile first, honest reviews engine, service and town pages, audit and fix the site, productised offer). Name each mechanism as new, same-with-examples, or contradicts; AI Overviews and 'semantic' claims need the test they propose, not the slogan. Goal line (Luke, 18 Nov 2026: 'I think that will be important'): Rank Expand sells AI SEO as a service, Neptune's own line of work. The frameworks index has Local SEO (Automatable, Review Harvest) and nothing on rank-and-rent microsites, directory sites or an Upwork path. Judge the mechanism, not the pitch; say what is new against the frameworks, what repeats them with more examples, and what is pointed at the locked premium courses. Called shot committed before the pull: field-notes/SKOOL-RANK-EXPAND-2026-11-18.md. Pulled on the 7-day trial; the readers' verdicts decide keep or cancel before day 7 (25 Nov).",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-11-18",
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-11-18-S-60.md"
   },
   {
    "id": "S-61",
