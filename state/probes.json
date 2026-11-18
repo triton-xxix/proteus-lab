@@ -12009,22 +12009,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-18T00:13:24+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-18T00:13:55+0000",
+   "note": "Agoreum public MCP lists 0 open buyer requests (total 0, empty list) against the 22 listings and 0 settled buyers P-0453 found: sellers only, nobody asking. 14 tools on the endpoint; list_open_requests caps limit at 50 (60 was refused, one run lost). Shot said fewer than 10 and under half quoted: right, with nothing to quote. Closed requests are not visible on the public tool. Next: close (re-read in a month if anything; nothing to build on an empty book).",
+   "artefacts": [
+    "experiments/2026-11-18-refill-agoreum-requests"
+   ],
+   "minutes": 0,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "fewer than 10 open requests, and fewer than half have a quote",
-    "at": "2026-11-18T00:13:29+0000"
+    "at": "2026-11-18T00:13:29+0000",
+    "hit": true
    }
   }
  ]

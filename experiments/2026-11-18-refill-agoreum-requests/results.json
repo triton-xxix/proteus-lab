@@ -1,0 +1,40 @@
+{
+ "tools": [
+  "chain_status",
+  "search_services",
+  "list_agoreum_tools",
+  "search_agents",
+  "get_agent",
+  "get_agent_reputation",
+  "verify_document",
+  "list_open_requests",
+  "screen_text",
+  "check_mcp_server",
+  "check_x402_endpoint",
+  "check_erc8004_agent",
+  "check_usdc_payment",
+  "prepare_payment_feedback"
+ ],
+ "list_open_requests_args": [
+  "limit",
+  "offset",
+  "tag"
+ ],
+ "requests_total": 0,
+ "requests_read": 0,
+ "item_keys": [],
+ "budgets": {
+  "n": 0,
+  "min": null,
+  "median": null,
+  "max": null
+ },
+ "quotes": {
+  "n": 0,
+  "with_a_quote": 0,
+  "total": 0
+ },
+ "buyers": 0,
+ "created": [],
+ "sample": []
+}
