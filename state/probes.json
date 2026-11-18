@@ -1,5 +1,5 @@
 {
- "next_id": 477,
+ "next_id": 480,
  "items": [
   {
    "id": "P-0001",
@@ -12136,6 +12136,66 @@
     "at": "2026-11-18T12:44:42+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0477",
+   "title": "Exchange book split: Munich forecast-model calls against search-based calls, me minus market Brier for each and how many of each",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0478",
+   "title": "P-0245 favourite check re-run at 30 kept Munich winners: fav.py against exchange/munich_outcomes.jsonl, how often did the night-before favourite win and what did backing it return",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0479",
+   "title": "Voyager 1: does keyless JPL Horizons give an Earth distance within 2% of one light-day today?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

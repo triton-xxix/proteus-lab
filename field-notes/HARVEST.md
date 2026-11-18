@@ -6,21 +6,30 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-677 judged over 47 harvest days, 444 kept, 135 testable, 130 queued as probes, 122 with a probe verdict.
+691 judged over 48 harvest days, 453 kept, 136 testable, 131 queued as probes, 124 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0689 | 2026-11-18 | hn | [Show HN: Mastra Factory, the open-source software factory we use to build Mastra](https://news.ycombinator.com/item?id=50548660) | both | tools-for-strangers | no: It needs a cloud sandbox, model keys and a Slack workspace. |  |
+| H-0688 | 2026-11-18 | vault | [hiding third-party badges under a gradient]() (intel) | mechanism | tools-for-strangers | no: It would breach a vendor's terms and needs an account on the |  |
+| H-0686 | 2026-11-18 | arxiv | [Evolution Under Fire: Evolving Agent Safety Harnesses with Adaptive Injection Stressors](https://arxiv.org/abs/2611.22583) | mechanism | mechanism-hunting | no: It needs model calls and the benchmarks, and no local model  |  |
+| H-0685 | 2026-11-18 | github | [racdeufindurch198812/Blender-AI-MCP-Studio: Blender AI MCP Studio is an AI assistant and b](https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio) (intel) | both | tools-for-strangers | no: The only way to run it is to download an unvetted zip, which |  |
+| H-0684 | 2026-11-18 | hn | [Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos](https://news.ycombinator.com/item?id=50536468) | both | tools-for-strangers | no: It is a paid hosted service that needs an account and a repo |  |
+| H-0683 | 2026-11-18 | vault | [medical billing](https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD) (intel) | mechanism | none | no: It is regulatory and commercial structure, not software that |  |
+| H-0681 | 2026-11-18 | arxiv | [Visual Harness Scales General VLMs to Medical Images](https://arxiv.org/abs/2611.22815) | mechanism | tech | no: It needs a vision model and medical imaging data, and there  |  |
+| H-0679 | 2026-11-18 | hn | [Show HN: Take Voyager 1 apart, down to a single memory chip](https://rshekhar.com/voyager/) | mechanism | open-data | yes | P-0479 |
+| H-0678 | 2026-11-18 | vault | [partnership](https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD) | mechanism | none | no: It is a commercial arrangement with named parties missing, s |  |
 | H-0677 | 2026-11-17 | hn | [Show HN: Coral – Open-source gateway where agents write their own tools](https://github.com/withcoral/coral) | mechanism | tools-for-strangers | no: Measuring the claim needs LLM agent runs and provider accoun |  |
 | H-0676 | 2026-11-17 | vault | [qualifying call script for trades leads](https://www.youtube.com/watch?v=ZCMVm7WP4n4) | mechanism | tools-for-strangers | no: Scoring a script needs real call recordings and an LLM; neit |  |
-| H-0675 | 2026-11-17 | awesome | [actimod/onaa-protocol (new in awesome-mcp-servers)](https://github.com/actimod/onaa-protocol) | mechanism | open-data | yes | P-0468 |
+| H-0675 | 2026-11-17 | awesome | [actimod/onaa-protocol (new in awesome-mcp-servers)](https://github.com/actimod/onaa-protocol) | mechanism | open-data | yes | P-0468 **works** |
 | H-0673 | 2026-11-17 | arxiv | [Procedure without Judgment: What Small Language Models Learn under an Exact Verifier](https://arxiv.org/abs/2611.21529) | mechanism | tech | no: Needs model fine-tuning and LLM answers, neither available k |  |
 | H-0672 | 2026-11-17 | github | [sybil-solutions/inference-optimisation-skill: Agent skill for hill-climbing local LLM serv](https://github.com/sybil-solutions/inference-optimisation-skill) | mechanism | tech | no: Needs a local model server on supported GPUs; there is no lo |  |
 | H-0671 | 2026-11-17 | hn | [Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force](https://news.ycombinator.com/item?id=50522776) | mechanism | tech | no: Needs custom EMG hardware. |  |
 | H-0670 | 2026-11-17 | vault | [speed-to-call and booking for brokers and builders](https://www.youtube.com/watch?v=Uev0oyU4Z-4) | mechanism | tools-for-strangers | no: Needs real leads, a phone or SMS line and an LLM; nothing to |  |
 | H-0667 | 2026-11-17 | arxiv | [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577) | mechanism | tech | no: Needs LLM clients to select tools, and there is no local LLM |  |
-| H-0666 | 2026-11-17 | github | [erkamyaman/rust-anything: Rewrite your whole app in Rust, one piece at a time, checked aga](https://github.com/erkamyaman/rust-anything) | mechanism | tools-for-strangers | yes | P-0467 |
+| H-0666 | 2026-11-17 | github | [erkamyaman/rust-anything: Rewrite your whole app in Rust, one piece at a time, checked aga](https://github.com/erkamyaman/rust-anything) | mechanism | tools-for-strangers | yes | P-0467 **blocked** |
 | H-0664 | 2026-11-17 | vault | [AI receptionist demo for trades](https://www.youtube.com/watch?v=Th7B9eLRdGs) | mechanism | tools-for-strangers | no: A faithful test needs a phone line, a live LLM and a calenda |  |
 | H-0662 | 2026-11-16 | vault | [spend everything you have]() | mechanism | none | no: It is an unverified testimonial with no data or procedure to |  |
 | H-0661 | 2026-11-16 | awesome | [agoreums/agoreum-mcp (new in awesome-mcp-servers)](https://github.com/agoreums/agoreum-mcp) | mechanism | mechanism-hunting | yes | P-0453 **works** |
@@ -458,6 +467,114 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0689 Show HN: Mastra Factory, the open-source software factory we use to build Mastra
+2026-11-18, hn, https://news.ycombinator.com/item?id=50548660
+
+- **Mechanism:** An open-source agentic kanban board, taggable from Slack, whose cards move through triage, plan, build, review and shipped. Under it sit durable agent sessions, a conversation memory, a cited markdown wiki, PR-comment subscriptions that feed sessions, and a cloud sandbox with a coding harness. Output is PRs merged by humans.
+- **Claim:** Factory merged 238 PRs last week alongside 630 from humans at Mastra.
+- **Testable:** no. It needs a cloud sandbox, model keys and a Slack workspace. Needs: Model keys, a sandbox and Slack..
+- **Idea on its own:** sound. A staged board with memory and human review at the merge step is how agent PR volume is actually handled.
+- **How it would be done:** Clone the template, point it at a small repo, and run it on issues for a week, counting PRs merged against rejected. The wiki with source citations is the reusable piece. A human reviewer is the real gate and no script replaces that.
+- **Stack already covers:** Claude Code with skills and sub-agents, launchd long-running pollers
+- **To fetch:** Mastra template-factory https://github.com/mastra-ai/template-factory (The open-source Factory template.)
+- **Field Notes line:** Mastra open-sourced the kanban-plus-Slack agent factory behind 238 merged PRs a week, with a cited wiki feeding every session.
+
+### H-0688 hiding third-party badges under a gradient
+2026-11-18, vault, 
+
+- **Mechanism:** A site builder's free tier injects a vendor badge into the page. The idea is to cover it with a styled overlay such as a gradient layer. It is a licence workaround rather than a build technique, and vendors detect it through the badge element staying in the DOM, checks on its visibility, and terms that allow removal of the site.
+- **Claim:** The lesson suggests covering a third-party badge with a gradient instead of paying to remove it.
+- **Testable:** no. It would breach a vendor's terms and needs an account on their platform. Needs: An account on the site builder..
+- **Idea on its own:** unsound. It breaches the vendor's terms and risks the site being pulled, while the clean alternative is cheap.
+- **How it would be done:** The honest route is a site with no vendor badge at all: hand-built HTML with Three.js for the hero effect, hosted statically. That uses the Site Studio framework already adopted. A person would only be needed for client sign-off.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Three.js https://threejs.org/ (Free 3D hero effects with no vendor badge.)
+- **Field Notes line:** Hiding a site builder's free-tier badge under a gradient is a terms breach vendors catch by checking the badge element, not a design trick.
+
+### H-0686 Evolution Under Fire: Evolving Agent Safety Harnesses with Adaptive Injection Stressors
+2026-11-18, arxiv, https://arxiv.org/abs/2611.22583
+
+- **Mechanism:** Searches over executable safety harnesses (code wrapped around an agent that filters tool inputs and outputs) using tree search that must keep task utility. A second loop evolves attack prompts that still let the task succeed, and those attacks drive the next round of harness evolution. Task model, tools and benchmark stay fixed.
+- **Claim:** On AgentDyn with GPT-4o-mini, attack success falls from 50.4 percent to 3.0 percent.
+- **Testable:** no. It needs model calls and the benchmarks, and no local model is installed. Needs: A model API and the AgentDyn benchmark..
+- **Idea on its own:** needs-a-run. Co-evolving defences and attacks is sound, but gains on small models and fixed benchmarks may not carry to open-ended work.
+- **How it would be done:** Take the Proteus hook and a set of injection strings from public benchmarks, then score how many get through. Let an agent propose hook changes, accept only those that keep normal task pass rate, and repeat. Every change would need human review because the hook is a security boundary.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** An evolved safety wrapper cut prompt-injection success from 50.4 to 3.0 percent by training against its own best attacks.
+
+### H-0685 racdeufindurch198812/Blender-AI-MCP-Studio: Blender AI MCP Studio is an AI assistant and built-in Model Context Protocol
+2026-11-18, github, https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio
+
+- **Mechanism:** A Blender extension with a built-in local MCP server that exposes scene inspection and edit tools, with approval per step and viewport screenshots for a vision model to check its work. The repo owner name looks random, the README points to a zip on Releases, and a second repo with a near-identical README and the same zip name appeared the same week. That pattern is common for star-padded repos that distribute unvetted binaries.
+- **Claim:** Turns plain-language briefs into inspected, approved, reversible 3D scene operations with multi-agent teams.
+- **Testable:** no. The only way to run it is to download an unvetted zip, which is not allowed tonight. Needs: Blender and a trusted source for the extension..
+- **Idea on its own:** sound. Approval-gated scene tools with screenshot feedback is a good design for any visual agent, whoever ships it.
+- **How it would be done:** The trustworthy route is an established open Blender MCP server from a known maintainer, installed from source, with Claude Code as the client. Build tool calls for inspect, create and render, and screenshot each step for a vision check. Platforms and users spot the fake kind by account age, random owner names, duplicate READMEs and release-only binaries with no source.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** blender-mcp (ahujasid) https://github.com/ahujasid/blender-mcp (Established open Blender MCP server with readable source.)
+- **Field Notes line:** A Blender MCP extension with per-step approval is a sound pattern, but the repos pushing it look like star-padded clones with an unvetted zip.
+
+### H-0684 Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos
+2026-11-18, hn, https://news.ycombinator.com/item?id=50536468
+
+- **Mechanism:** GitHub Actions compatible runners where each job gets an ephemeral sandbox on fast hardware with local NVMe, billed per second. A harness runs an agent loop over your repo and CI logs, then opens PRs that cut test and workflow time, such as caching or fixing slow tests. Speed comes from hardware and disk plus the agent PRs, per the founders.
+- **Claim:** Mastra's slowest workflow dropped from 29m 56s to 5m 06s (5.87x), and a better-auth test job ran 5.4x faster.
+- **Testable:** no. It is a paid hosted service that needs an account and a repo with CI. Needs: A StarSling account and a repo..
+- **Idea on its own:** sound. Profiling CI logs and opening small speed-up PRs is a plain, checkable job for an agent.
+- **How it would be done:** A home-built version reads GitHub Actions run timings through the public API, finds the slowest steps, and has an agent propose caching or test-splitting PRs that a human reviews. Faster hardware is simply a purchase. The verification step is re-timing the workflow before and after, which a script can do.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** GitHub Actions API https://docs.github.com/en/rest/actions/workflow-runs (Public run timing data to find slow steps.)
+- **Field Notes line:** StarSling pairs fast per-second CI runners with an agent that opens PRs to cut your build time, claiming 5.87x on one workflow.
+
+### H-0683 medical billing
+2026-11-18, vault, https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD
+
+- **Mechanism:** UK private medical billing runs through recognition bodies and clearing houses. CCSD recognition is the gate for insurer billing by clinicians, and Healthcode is the electronic claims switch between providers and insurers. Offshore staff handling patient data need an international data transfer agreement (IDTA) under UK GDPR. Insurers and regulators police this through recognition checks and audit of data flows.
+- **Claim:** The vault note lists CCSD, Healthcode, insurer recognition and IDTA as the requirements for offshore billing work.
+- **Testable:** no. It is regulatory and commercial structure, not software that can be run. Needs: Insurer recognition, a Healthcode account and a signed IDTA..
+- **Idea on its own:** sound. The gating requirements are real and explain why the market is hard to enter without a recognised partner.
+- **How it would be done:** Understanding it means mapping the claim path: clinician, biller, Healthcode, insurer, remittance. The compliance pieces are public documents from the insurers and the ICO, which a research pass can summarise. Any live work needs a hired data protection adviser and a recognised billing partner, because no script can grant recognition.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** ICO international transfers guidance https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/ (Public text on IDTA and transfer risk assessments.)
+- **Missing:** Recognition status and a data protection adviser.
+- **Field Notes line:** UK private medical billing is gated by CCSD recognition, the Healthcode claims switch and an IDTA for offshore staff.
+
+### H-0681 Visual Harness Scales General VLMs to Medical Images
+2026-11-18, arxiv, https://arxiv.org/abs/2611.22815
+
+- **Mechanism:** A harness around a general vision-language model gives it interactive image tools (zoom, measure, search slices) and a lossless evidence memory. After a first answer a critic step lists omissions and unreliable findings, which drives more inspection and a revised answer in a loop. The base model is unchanged; the gains come from the tool loop and the memory.
+- **Claim:** Spleen measurement rises from 63.3 to 98.3 percent and pulmonary nodule detection from 0.0 to 28.2 percent with the harness.
+- **Testable:** no. It needs a vision model and medical imaging data, and there is no local model on this Mac. Needs: A vision-capable model and licensed medical imaging sets..
+- **Idea on its own:** sound. Tool use plus an iterative critique with stored evidence is a well-founded way to lift a fixed model, though the model names suggest the paper needs a careful read.
+- **How it would be done:** The pattern ports to any perception task: give the model crop, zoom and measure tools, log every finding to a memory file, and have a second pass list gaps before the answer is final. For Proteus the practical version is a chart or screenshot reader. Medical use would need clinical validation by a hired specialist, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Clinical validation and imaging data access.
+- **Field Notes line:** A tool loop with evidence memory and a self-critique pass lifts general vision models on medical scans, with no retraining.
+
+### H-0679 Show HN: Take Voyager 1 apart, down to a single memory chip
+2026-11-18, hn, https://rshekhar.com/voyager/
+
+- **Mechanism:** An interactive explainer site that stitches static teardown scenes of Voyager 1 hardware to live positional data and a live view of which Deep Space Network dish is talking to it. Positions come from ephemeris data and the dish status from the public DSN Now feed. The hardware detail is hand-assembled, and one commenter questions whether it was checked against an authoritative source.
+- **Claim:** Shows where both Voyagers are now, as Voyager 1 reaches one light-day from Earth, and which dish is listening live.
+- **Testable:** yes. Does the keyless JPL Horizons API return a Voyager 1 distance from Earth within 2 percent of one light-day (about 25.9 billion km)? Queued as P-0479.
+- **Idea on its own:** sound. Live public ephemeris and DSN feeds are an honest basis for a visual explainer, and the claim is checkable against a number.
+- **How it would be done:** Pull Voyager 1 vectors from the JPL Horizons API (spacecraft id -31) for today, compute distance in km and light-time, and compare with 86,400 light-seconds. Separately fetch the DSN Now XML feed and look for a Voyager target. A visual version would render positions in a small page with HyperFrames or plain HTML. No hired person needed.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** JPL Horizons API https://ssd-api.jpl.nasa.gov/doc/horizons.html (Keyless ephemeris for Voyager 1 and 2.); DSN Now data feed https://eyes.nasa.gov/dsn/dsn.html (Live dish and spacecraft link status.)
+- **Field Notes line:** Voyager 1 hit one light-day from Earth today, and the live position and dish data behind a new explainer site are public and keyless.
+
+### H-0678 partnership
+2026-11-18, vault, https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD
+
+- **Mechanism:** A UK private medical billing outfit proposes a partnership where a third party brings in clinics or consultants and the biller collects insurer and self-pay claims for a cut. The moving parts are claim submission to insurers, remittance reconciliation and chasing underpaid claims. Value depends on insurer recognition and on who holds the patient data, which is a data protection question.
+- **Claim:** The deck says a partner can sit on a recurring revenue share from private medical billing.
+- **Testable:** no. It is a commercial arrangement with named parties missing, so there is nothing to run keyless. Needs: A named counterparty, price and client list; none are in the deck..
+- **Idea on its own:** needs-a-run. Medical billing is a real recurring-revenue service, but the offer cannot be judged until names, terms and data roles are filled in.
+- **How it would be done:** Ask the counterparty for the missing facts first: who the clients are, the fee per claim or percentage, which insurers they are recognised by, and who is data controller. Then the partner role is lead generation: build a list of private clinics and consultants, send compliant outbound, and hand over warm leads on paid terms. A person would need to take the call, check the contract and have data protection terms reviewed. No script covers the relationship or the compliance sign-off.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A signed counterparty with real terms and a data protection agreement.
+- **Field Notes line:** A UK private medical billing partnership deck is a real market wrapped in an unfilled template, with no names, prices or clients.
 
 ### H-0677 Show HN: Coral – Open-source gateway where agents write their own tools
 2026-11-17, hn, https://github.com/withcoral/coral
@@ -5698,6 +5815,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0688 | 2026-11-18 | hiding third-party badges under a gradient | dead | unsound | no |  |
+| H-0683 | 2026-11-18 | medical billing | intel | sound | no |  |
+| H-0678 | 2026-11-18 | partnership | open | needs-a-run | no |  |
 | H-0676 | 2026-11-17 | qualifying call script for trades leads | open | sound | no |  |
 | H-0670 | 2026-11-17 | speed-to-call and booking for brokers and builders | open | sound | no |  |
 | H-0664 | 2026-11-17 | AI receptionist demo for trades | open | needs-a-run | no |  |
@@ -5844,6 +5964,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0398 | 2026-11-18 | [Mastra template-factory](https://github.com/mastra-ai/template-factory) | The open-source Factory template. | H-0689 (Show HN: Mastra Factory, the open-source software ) | shelf |
+| T-0397 | 2026-11-18 | [blender-mcp (ahujasid)](https://github.com/ahujasid/blender-mcp) | Established open Blender MCP server with readable source. | H-0685 (racdeufindurch198812/Blender-AI-MCP-Studio: Blende) | shelf |
+| T-0396 | 2026-11-18 | [GitHub Actions API](https://docs.github.com/en/rest/actions/workflow-runs) | Public run timing data to find slow steps. | H-0684 (Launch HN: StarSling (YC P25) – Self-improving CI ) | shelf |
+| T-0395 | 2026-11-18 | [ICO international transfers guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/) | Public text on IDTA and transfer risk assessments. | H-0683 (medical billing) | shelf |
+| T-0394 | 2026-11-18 | [DSN Now data feed](https://eyes.nasa.gov/dsn/dsn.html) | Live dish and spacecraft link status. | H-0679 (Show HN: Take Voyager 1 apart, down to a single me) | shelf |
+| T-0393 | 2026-11-18 | [JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) | Keyless ephemeris for Voyager 1 and 2. | H-0679 (Show HN: Take Voyager 1 apart, down to a single me) | shelf |
 | T-0392 | 2026-11-17 | [Coral](https://github.com/withcoral/coral) | The gateway itself | H-0677 (Show HN: Coral – Open-source gateway where agents ) | shelf |
 | T-0391 | 2026-11-17 | [onaa-protocol](https://github.com/actimod/onaa-protocol) | Repo with the preflight example and SDK | H-0675 (actimod/onaa-protocol (new in awesome-mcp-servers)) | shelf |
 | T-0390 | 2026-11-17 | [inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | The SKILL.md procedure | H-0672 (sybil-solutions/inference-optimisation-skill: Agen) | shelf |
@@ -6241,6 +6367,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0691 | 2026-11-18 | hn | [Show HN: Fakemetrics.com – "build in public" like a superstar](https://fakemetrics.com/) | Its product is faked revenue screenshots to pass off as real traction, which is a fake-records service; the cloning tech |
+| H-0690 | 2026-11-18 | github | [tiobeharxi1987/blender-ai-copilot-flow: A controlled AI workflow for Blender: ev](https://github.com/tiobeharxi1987/blender-ai-copilot-flow) | Near-identical clone of the other Blender MCP repo (same zip name, same week); the better entry is kept. |
+| H-0687 | 2026-11-18 | youtube | [Beware of Rug Pulls: Can Bonding Curves Protect Your Investments / TON Learn #20](https://www.youtube.com/watch?v=XqsU1ZZZ5-8) | A two-minute generic explainer of bonding curves that adds nothing the Grinder does not already read. |
+| H-0682 | 2026-11-18 | youtube | [Why Soccer Teams Use Expected Goals (xG)](https://www.youtube.com/watch?v=o9ZnGpaVdg4) | A 30-second generic xG explainer with no mechanism beyond what the Pitch desk already uses. |
+| H-0680 | 2026-11-18 | github | [boringmarketer/boring-marketing-skills: 32 free marketing skills for your AI age](https://github.com/boringmarketer/boring-marketing-skills) | A pack of 32 marketing prompt skills with no new mechanism beyond reading a site and writing brand files. |
 | H-0674 | 2026-11-17 | youtube | [I Tried the NEW Pump.fun Sniper Bot and This Happened?!](https://www.youtube.com/watch?v=vRSEt08OABc) | Promo for a wallet-connect sniper bot with no mechanism beyond watching launches; the Grinder already covers this ground |
 | H-0669 | 2026-11-17 | awesome | [a5768549/model-worker-mcp (new in awesome-mcp-servers)](https://github.com/a5768549/model-worker-mcp) | A generic delegate-to-cheaper-model MCP wrapper, Windows-bound and needing a paid API key. |
 | H-0668 | 2026-11-17 | youtube | [DVSA Data Exposes 10 Everyday Cars Failing UK MOTs at Record Rates – Is Yours on](https://www.youtube.com/watch?v=v_w3yeLQHro) | Top-ten listicle that cites DVSA data without showing how the numbers were derived. |
