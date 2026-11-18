@@ -1,5 +1,5 @@
 {
- "next_id": 474,
+ "next_id": 475,
  "items": [
   {
    "id": "P-0001",
@@ -12038,9 +12038,38 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-18T12:32:33+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T12:34:53+0000",
+   "note": "Mint filter answers 19 of 19 keyless (the 413 is only the unfiltered listing). Wallet holds a median 1,002.3 million a coin, 50.1% of supply, non-zero in all 19 (one is 54 tokens), 11 above the 1 billion it was handed; shot said 19 answer, 15+ non-zero, median about 1.0 billion. Not in the shot: all 19 coins were born inside 5 minutes (12.8 h before the run) and 18 were dead within about 35 minutes, none traded in the last hour; 13 hours on the agent still sits on what it was handed in 16 of 19. Caveats: no prices so no P and L, pump.fun age endpoint 403 so age is from first signature, shot called after seeing one of the 19 in the refill step. Next: deepen (P-0474 queued, re-read after the 24-hour burn mark).",
+   "artefacts": [
+    "experiments/2026-11-18-P-0473"
+   ],
+   "minutes": 2,
+   "calls": 9,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "all 19 mint-filter calls answer; wallet still holds a non-zero balance in at least 15 of 19, median holding about 1.0 billion (50% of a 2 billion supply)",
+    "at": "2026-11-18T12:32:42+0000",
+    "hit": true
+   }
+  },
+  {
+   "id": "P-0474",
+   "title": "Mayhem 24-hour burn check: re-run experiments/2026-11-18-P-0473/inventory.py on the same 19 mints once they are past 24 hours old (born about 23:45 UK 17 Nov). Are the wallet's 16.99 billion leftover tokens gone and has each supply dropped by what it held?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-19",
+   "est_minutes": 20,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12048,13 +12077,7 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false,
-   "shot": {
-    "expect": "works",
-    "p": 0.75,
-    "number": "all 19 mint-filter calls answer; wallet still holds a non-zero balance in at least 15 of 19, median holding about 1.0 billion (50% of a 2 billion supply)",
-    "at": "2026-11-18T12:32:42+0000"
-   }
+   "luke": false
   }
  ]
 }
