@@ -8,7 +8,8 @@ DUMP.txt is a saved javascript_tool result whose text is the JSON of one room:
 Writes PREFIX-NN-course.md, transcripts/PREFIX-*.txt, PREFIX-posts-owner.md, PREFIX-posts-members.md,
 PREFIX-index.md, and appends external videos to the transcribe queue.
 """
-import json, os, re, subprocess, sys
+import json, os, re, subprocess, sys, time
+DATE = os.environ.get("SKOOL_PULL_DATE") or time.strftime("%-d %b %Y")
 
 dump, prefix, title, slug = sys.argv[1:5]
 F = "/Users/triton/PROTEUS/field-notes/skool/"
@@ -18,7 +19,7 @@ sl = lambda s: re.sub(r"[^a-z0-9]+", "-", (s or "x").lower()).strip("-")[:60]
 files = []
 for i, md in enumerate(R.get("courses", []), 1):
     name = "%s-%02d-%s.md" % (prefix, i, sl(md.splitlines()[0].lstrip("# ")))
-    open(F + name, "w").write("<!-- skool.com/%s classroom, pulled 19 Oct 2026 -->\n%s" % (slug, md))
+    open(F + name, "w").write("<!-- skool.com/%s classroom, pulled %s -->\n%s" % (slug, DATE, md))
     files.append((name, len(md.split())))
 caps_words = 0
 for t, body in R.get("caps", []):
@@ -30,7 +31,7 @@ own = [p for p in posts if p.get("own")]
 oth = [p for p in posts if not p.get("own")]
 if own:
     with open(F + prefix + "-posts-owner.md", "w") as fh:
-        fh.write("# %s: owner posts, pulled 19 Oct 2026\n\n%d of %d posts saved are the owner's. Oldest first.\n\n" % (title, len(own), len(posts)))
+        fh.write("# %s: owner posts, pulled %s\n\n%d of %d posts saved are the owner's. Oldest first.\n\n" % (title, DATE, len(own), len(posts)))
         for p in own:
             fh.write("## %s · %s · %s\n" % (p["d"], p["by"], p["t"]))
             if p["v"]:
@@ -50,7 +51,7 @@ open(qf, "w").write("".join("%s\t%s\n" % r for r in ext))
 add = subprocess.run(["python3", "/Users/triton/PROTEUS/bin/skool-transcribe-queue.py", "add", qf], capture_output=True, text=True).stdout.strip()
 ow = sum(len((p["c"] or "").split()) for p in own)
 with open(F + prefix + "-index.md", "w") as fh:
-    fh.write("# %s, pull index (19 Oct 2026)\n\nskool.com/%s, pulled through the browser pane (luke-boyd-4592) by the 19 Oct pull job.\n\n" % (title, slug))
+    fh.write("# %s, pull index (%s)\n\nskool.com/%s, pulled through the browser pane (luke-boyd-4592) by the pull job (sandbox/skool_pull_job.js).\n\n" % (title, DATE, slug))
     fh.write("- Classroom: %d open course(s): %s\n" % (len(files), ", ".join("`%s` (%d words)" % f for f in files) or "none"))
     fh.write("- Locked: %s\n" % (", ".join(R.get("locked", [])) or "none"))
     fh.write("- Skool-hosted videos captioned: %d (%d words), `transcripts/%s-*`\n" % (len(R.get("caps", [])), caps_words, prefix))

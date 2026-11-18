@@ -18,6 +18,7 @@ OUT = ROOT + "state/skool-dash/"
 
 # Theme per room, by slug. Rooms not named here fall back to "Other".
 THEME = {
+    "rank-expand-academy": "SEO",
     "ai-automation-society": "AI and automation", "automatable-free": "AI and automation", "brendan": "AI and automation",
     "agent-j": "AI and automation", "ai-automation-agency": "AI agency and sales", "join-dlag": "AI and automation",
     "viral-ads": "Marketing", "aivideobootcamp": "AI video", "ai-for-brands-6110": "Fashion",
@@ -36,7 +37,8 @@ COST = {
 }
 
 # What the nightly reading groups were drawn from.
-READ_ROOM = {**{s: "ai-automation-society" for s in ("S-01", "S-02", "S-03", "S-04", "S-05", "S-14", "S-15", "S-17")},
+READ_ROOM = {**{s: "rank-expand-academy" for s in ("S-59", "S-60", "S-61", "S-62", "S-63", "S-64")},
+             **{s: "ai-automation-society" for s in ("S-01", "S-02", "S-03", "S-04", "S-05", "S-14", "S-15", "S-17")},
              **{s: "agent-j" for s in ("S-06", "S-16", "S-18", "S-19")},
              **{s: "automatable-free" for s in ("S-07", "S-09", "S-10", "S-20")},
              **{s: "brendan" for s in ("S-08", "S-11", "S-12", "S-13")},
@@ -54,6 +56,38 @@ CAPTURED_15OCT = {"stevekeen-free", "bettrnation-3016", "3-hour-youtube-leads-27
 
 # My own pulls on 14 Oct, not in Luke's log: (room, slug, extracted, courses as (name, lessons, status)).
 MINE = [
+    ("AI SEO: Rank Expand Academy", "rank-expand-academy", "2026-11-18", [
+        ('Start Here', 10, 'done'),
+        ('Paths to $1,000', 7, 'done'),
+        ('Gear Up', 7, 'done'),
+        ('The Upwork Playbook', 30, 'done'),
+        ('The Microsite Playbook', 19, 'done'),
+        ('The Offer Library', 15, 'done'),
+        ('AI Directories', 11, 'done'),
+        ('Microsite Empire', 49, 'locked'),
+        ('Agency Engine', 40, 'locked'),
+        ('Owner OS (coming soon)', 14, 'locked'),
+        ('The Backlink Rolodex', 6, 'done'),
+        ("The Wisdom's In The Calls", 10, 'locked'),
+        ('The Call Vault', 73, 'locked'),
+        ('Community Builds & Wins', 45, 'done'),
+        ('Community Challenges', 3, 'done'),
+        ('Basic Courses', 7, 'done'),
+        ('Advanced Courses', 13, 'done'),
+        ('AI Tools & Workflows', 28, 'done'),
+        ('Chat With Your Keyword Data', 7, 'done'),
+        ('Automation Accelerator', 22, 'locked'),
+        ('Claude Code Building', 10, 'locked'),
+        ('SEO for Beginners - Resources', 19, 'done'),
+        ('Ranking in AI Overviews', 5, 'locked'),
+        ('How To Dominate AI Search', 20, 'done'),
+        ('Semantic Branching Foundations', 7, 'locked'),
+        ('Local SEO Innovation', 10, 'done'),
+        ('Semantic Site Audit & Tools', 10, 'locked'),
+        ('Measure What Matters', 10, 'done'),
+        ('Off-Page SEO & Backlinks', 5, 'done'),
+        ('Technical SEO Mastery', 12, 'locked'),
+    ]),  # 7-day trial from 18 Nov 2026; 7 of the 11 locked are premium-tier (annual) only
     ("Matt Ryder F The GuRUs", "mattryder", "2026-10-14", [
         ("Onboarding calls", 17, "done"), ("1. Start your education here", 37, "done"), ("2. Sales Fundamentals", 29, "done"),
         ("3. Objection Handling", 37, "done"), ("4. Scripting", 26, "done"), ("5. Mastering Tonality", 9, "locked"),
