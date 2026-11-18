@@ -12233,15 +12233,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-18",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:40:21+0000",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-18T23:40:41+0000",
+   "note": "Not run: it repeats P-0428 (12 Nov), which already read the band width against winning nights on 17 rows (wider, not narrower: 1.64C v 1.26C) and set a wait for 15 METAR-rule rows; P-0422 read the anchors row by row. I queued this by passing --repeat-ok without reading the lines the guard showed, the P-0388 mistake again. It also means the winner and loser table in P-0477 restates those two; only its model-against-search line is new. Correction written into both READMEs. Next: close; try making --repeat-ok require the probe ids it was shown.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0481"
+   ],
+   "minutes": 0,
+   "calls": 4,
    "denied": [],
    "luke": false
   }
