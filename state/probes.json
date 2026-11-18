@@ -1,5 +1,5 @@
 {
- "next_id": 475,
+ "next_id": 476,
  "items": [
   {
    "id": "P-0001",
@@ -12078,6 +12078,32 @@
    "calls": null,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0475",
+   "title": "Mayhem fee payer cost: Gygj9QQb...BUpA holds 1,859.6 SOL at 12:38 on 18 Nov. Fee per transaction from 60 of its newest transactions (meta.fee), its transaction rate from the span of 1,000 signatures, and its balance drift over ten minutes. What does it pay a day in network fees, and how many days of runway is 1,859 SOL?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-18",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-18T12:35:16+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "median fee about 0.00002 SOL a transaction (two signatures plus a small priority fee), 10 to 60 SOL a day in fees, runway 30 to 180 days",
+    "at": "2026-11-18T12:35:23+0000"
+   }
   }
  ]
 }

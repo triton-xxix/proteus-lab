@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 389 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 
-## Queue (12 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,6 +25,7 @@ Verdicts so far: 389 works, 8 broken, 41 blocked, 19 not worth it. Killed: 5.
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0474 | Mayhem 24-hour burn check: re-run experiments/2026-11-18-P-0473/inventory.py on the same 19 mints once they are past 24 hours old (born about 23:45 UK 17 Nov). Are the wallet's 16.99 billion leftover tokens gone and has each supply dropped by what it held? | desk | none | 2026-11-19 | 0 | 20 min |
+| P-0475 | Mayhem fee payer cost: Gygj9QQb...BUpA holds 1,859.6 SOL at 12:38 on 18 Nov. Fee per transaction from 60 of its newest transactions (meta.fee), its transaction rate from the span of 1,000 signatures, and its balance drift over ten minutes. What does it pay a day in network fees, and how many days of runway is 1,859 SOL? | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (457)
 
