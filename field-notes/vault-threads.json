@@ -12,8 +12,28 @@
     "refused": "held back by the public-output guard",
     "missing": "file not found in the vault"
   },
-  "count": 350,
+  "count": 352,
   "threads": [
+    {
+      "date": "2026-11-18",
+      "subject": "UK private medical billing partnership deck",
+      "kind": "idea",
+      "status": "open",
+      "theme": "partnership",
+      "note": "take the 18 Nov call, commit to nothing",
+      "where": "TRITON-CORE/Research/links/2026-11-18-mozzam-medical-billing-deck.md",
+      "url": "https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD"
+    },
+    {
+      "date": "2026-11-18",
+      "subject": "UK private medical billing partnership deck",
+      "kind": "idea",
+      "status": "intel",
+      "theme": "medical billing",
+      "note": "CCSD, Healthcode, insurer recognition, IDTA for offshore access",
+      "where": "TRITON-CORE/Research/links/2026-11-18-mozzam-medical-billing-deck.md",
+      "url": "https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD"
+    },
     {
       "date": "2026-11-17",
       "subject": "Construction broker vlog (YouTube, SETH Coaching)",
@@ -3440,8 +3460,18 @@
       "url": "https://sideshift.app/"
     }
   ],
-  "links_count": 83,
+  "links_count": 84,
   "links": [
+    {
+      "date": "2026-11-18",
+      "subject": "UK private medical billing partnership deck",
+      "kind": "idea",
+      "where": "TRITON-CORE/Research/links/2026-11-18-mozzam-medical-billing-deck.md",
+      "url": "https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD",
+      "transcript_file": null,
+      "transcript_state": null,
+      "transcript": null
+    },
     {
       "date": "2026-11-17",
       "subject": "Construction broker vlog (YouTube, SETH Coaching)",
