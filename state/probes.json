@@ -1,5 +1,5 @@
 {
- "next_id": 473,
+ "next_id": 474,
  "items": [
   {
    "id": "P-0001",
@@ -12028,6 +12028,32 @@
     "number": "fewer than 10 open requests, and fewer than half have a quote",
     "at": "2026-11-18T00:13:29+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0473",
+   "title": "Mayhem wallet inventory by mint: getTokenAccountsByOwner with a mint filter (answers keyless where the full Token-2022 listing gave 413) for the 19 coins in experiments/2026-11-17-P-0470/results.json, plus each mint's supply and first-signature age. How much of each coin's supply does the wallet hold, how many are above the 1 billion it was handed, and how old are they?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-18",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-18T12:32:33+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "all 19 mint-filter calls answer; wallet still holds a non-zero balance in at least 15 of 19, median holding about 1.0 billion (50% of a 2 billion supply)",
+    "at": "2026-11-18T12:32:42+0000"
    }
   }
  ]
