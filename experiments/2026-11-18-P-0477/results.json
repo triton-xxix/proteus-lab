@@ -1,0 +1,100 @@
+{
+ "book": "/Users/triton/PROTEUS/exchange/BOOK.csv",
+ "uncounted_rows": {
+  "model": 11,
+  "search": 6
+ },
+ "model": {
+  "n": 39,
+  "mean_me_minus_market": 0.0739,
+  "se": 0.0219,
+  "worse_than_market": 26,
+  "mean_without_worst_row": 0.0666,
+  "my_brier": 0.2135,
+  "market_brier": 0.1396,
+  "worst_rows": [
+   {
+    "id": "X-0027",
+    "event": "October 24th, 2026",
+    "contract": "11\u00b0C",
+    "p": 0.25,
+    "outcome": "winner",
+    "diff": 0.3502
+   },
+   {
+    "id": "X-0039",
+    "event": "November 1st, 2026",
+    "contract": "8\u00b0C",
+    "p": 0.22,
+    "outcome": "winner",
+    "diff": 0.3497
+   },
+   {
+    "id": "X-0033",
+    "event": "October 28th, 2026",
+    "contract": "12\u00b0C",
+    "p": 0.22,
+    "outcome": "winner",
+    "diff": 0.3411
+   }
+  ]
+ },
+ "search": {
+  "n": 6,
+  "mean_me_minus_market": 0.0078,
+  "se": 0.0777,
+  "worse_than_market": 5,
+  "mean_without_worst_row": -0.0306,
+  "my_brier": 0.1327,
+  "market_brier": 0.1249,
+  "worst_rows": [
+   {
+    "id": "X-0004",
+    "event": "Holborn and St Pancras By-Election - Winner",
+    "contract": "Labour",
+    "p": 0.55,
+    "outcome": "winner",
+    "diff": 0.1998
+   },
+   {
+    "id": "X-0007",
+    "event": "Holborn and St Pancras By-Election - Winner",
+    "contract": "Labour",
+    "p": 0.65,
+    "outcome": "winner",
+    "diff": 0.1198
+   },
+   {
+    "id": "X-0044",
+    "event": "Which party will control the Senate after the midterm elections?",
+    "contract": "Democratic Party",
+    "p": 0.68,
+    "outcome": "winner",
+    "diff": 0.0495
+   }
+  ]
+ },
+ "all": {
+  "n": 45,
+  "mean_me_minus_market": 0.0651,
+  "se": 0.0215,
+  "worse_than_market": 31,
+  "mean_without_worst_row": 0.0586
+ },
+ "model_winner": {
+  "n": 12,
+  "mean_me_minus_market": 0.2377,
+  "se": 0.0322,
+  "worse_than_market": 12,
+  "mean_without_worst_row": 0.2275,
+  "mean_my_p": 0.268
+ },
+ "model_loser": {
+  "n": 27,
+  "mean_me_minus_market": 0.0011,
+  "se": 0.0125,
+  "worse_than_market": 14,
+  "mean_without_worst_row": -0.0037,
+  "mean_my_p": 0.254
+ }
+}
