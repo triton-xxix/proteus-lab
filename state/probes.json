@@ -12116,9 +12116,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-18",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-18T12:44:28+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12126,7 +12126,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.65,
+    "number": "0 top-ups seen (the public RPC only pages 1,000 signatures, about 97 seconds, at a time, so a day back is about 890 pages); trading wallet found in loaded addresses in at least 18 of 20",
+    "at": "2026-11-18T12:44:42+0000"
+   }
   }
  ]
 }
