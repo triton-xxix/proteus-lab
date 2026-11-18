@@ -1,5 +1,5 @@
 {
- "next_id": 486,
+ "next_id": 488,
  "items": [
   {
    "id": "P-0001",
@@ -12327,6 +12327,48 @@
    "note": "ICON lead-1 against the market bucket on the same 17 days (METAR high matched the bucket on 34 of 34): mean abs error 0.69 C at EGLC and 0.87 C at LFPB, against the 09Z market at 0.47 and 0.65. At London City ICON was +0.66 C cold on 8 low-cloud mornings and -0.50 C warm on the other 9, a gap of +1.16 C, the opposite sign to Munich (-1.07, P-0446); the market gap there is +0.52, so the price removes about half, the same shape as Munich. Rounded ICON degree right 6 and 7 of 17 against the favourite at 11 and 7. Shot: market better hit; the London gap sign missed (called -0.3 to -1.0); degree hits missed. Caveats: 17 days, 09Z price against a day-before forecast, no permutation. Next: re-run on 30 days at month end.",
    "artefacts": [
     "experiments/2026-11-18-P-0485"
+   ],
+   "minutes": 0,
+   "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0486",
+   "title": "London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-12-01",
+   "est_minutes": 20,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0487",
+   "title": "Munich low-cloud flag the night before: icon_seamless lead-1 low cloud is not archived (all null), so does lead-1 total cloud cover 06Z to 09Z, or the latest run's low cloud, find the METAR low-cloud mornings over the year, and how big is the ICON error gap on days it flags?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-18",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:49:41+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:50:24+0000",
+   "note": "Lead-1 low cloud is null on all 8,760 hours for icon_seamless, so the direct test cannot run. Over 365 days with 67 METAR low-cloud mornings (real flag gap -1.065 C, replicating P-0446): the usable stand-in, lead-1 total cloud 95 percent or more at 06Z to 09Z, fires on 145 days (40 percent), catches 48 of 67, is right on 33 percent of its days and carries a gap of only -0.40 C; in November to February it fires on 62 percent of days and the gap changes sign (+0.16). The latest-run low cloud at 90 percent, an upper bound not usable the night before, gets precision 50 percent, recall 51 percent, gap -0.79. So no night-before flag here. Shot hit on five of six numbers. Winter days ran 0.4 to 0.6 C warm flagged or not. Nothing changed in the recipe. Next: deepen (ICON lead-1 v EDDM METAR high, 1 to 17 Nov 2026).",
+   "artefacts": [
+    "experiments/2026-11-18-P-0487"
    ],
    "minutes": 0,
    "calls": 4,
