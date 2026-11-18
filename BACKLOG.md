@@ -92,6 +92,19 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   a hand-checked sample before it goes anywhere. Hand over through the graduation shelf and the vault
   mirror, not as a nightly feed.
 
+## Hand-overs owed to Triton (Skool reading is Proteus's; the use is Neptune's)
+
+- **Rank Expand Academy** (trial from 18 Nov 2026, Luke: "I think that will be important"). Once S-59 to
+  S-64 are read (two a night from 18 Nov), write `TRITON-CORE/Proteus/handovers/rank-expand/HANDOVER.md`
+  in the shape of `handovers/outbound-email/HANDOVER.md`: what the room adds to the Local SEO framework
+  (mechanism by mechanism, new v same-with-examples), the nine offers as a table, the microsite and
+  directory method if the readers mark it TRY, what is premium-only, and the keep-or-cancel reading for
+  the trial. Due with the 22 Nov Field Notes. Luke asked on 18 Nov whether this belongs with a Neptune
+  agent: yes, through this note; Proteus reads and tests, Triton folds it into the frameworks.
+- **The 15 and 19 Oct hand-over notes** (`handovers/skool-courses/HANDOVER.md`, eight candidates) have no
+  visible answer from the Triton side as of 18 Nov: the frameworks index still shows all 11 frameworks as
+  "drafted", none run on a real job. Not Proteus's to chase; recorded so the next tally says it.
+
 ## Weekly slots to seed
 
 - Car lease deal radar (LeaseLoco and Leasing.com hot deals, ranked by total cost of contract).
