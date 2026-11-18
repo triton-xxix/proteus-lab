@@ -1,44 +1,44 @@
 {
  "summary": {
-  "n": 442,
+  "n": 456,
   "by_verdict": {
-   "works": 375,
+   "works": 388,
    "not-worth-it": 19,
-   "blocked": 40,
+   "blocked": 41,
    "broken": 8
   },
-  "open": 10,
+  "open": 11,
   "killed": 5,
-  "minutes_total": 710,
+  "minutes_total": 751,
   "minutes_median": 1,
-  "calls_total": 4814,
+  "calls_total": 4985,
   "pages": 9,
   "first": "2026-09-24",
-  "last": "2026-11-16"
+  "last": "2026-11-18"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 176,
-   "works": 166,
+   "n": 181,
+   "works": 171,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 1
   },
   {
    "source": "desk",
-   "n": 101,
-   "works": 84,
+   "n": 108,
+   "works": 91,
    "not-worth-it": 6,
    "blocked": 10,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 97,
-   "works": 75,
+   "n": 99,
+   "works": 76,
    "not-worth-it": 3,
-   "blocked": 13,
+   "blocked": 14,
    "broken": 6
   },
   {
@@ -133,9 +133,9 @@
   },
   {
    "week": "2026-11-16",
-   "works": 7,
+   "works": 20,
    "not-worth-it": 0,
-   "blocked": 0,
+   "blocked": 1,
    "broken": 0
   }
  ],
@@ -6713,6 +6713,244 @@
    "artefact": "experiments/2026-11-16-P-0457",
    "page": false,
    "shot": null
+  },
+  {
+   "id": "P-0311",
+   "title": "Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 lead-1 days are scored (from ab…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-17T12:32:47+0000",
+   "minutes": 0,
+   "calls": 9,
+   "note": "Shifted +1.0 C: 19 of 33 band-days inside (58%) v 15 of 33 unshifted (45%); out of sample from 3 Nov 13 of 22 (59%) v 12 of 22 (55%), with 0 misses above and 9 below, so the shift overcorrects as the warm bias eased (ECMWF median obs-p50 +0.6 from 3 Nov). Shot said about 50 v 25, under 80: shifted and under-80 right,…",
+   "artefact": "experiments/2026-11-17-P-0311",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0459",
+   "title": "Munich low-cloud market test: for each Polymarket highest-temperature-in-munich-on-<month>-<day>-2026 event 1 to 16 Nov (gamma-api events?slug=, keyless), read each buck…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-17T12:35:53+0000",
+   "minutes": 1,
+   "calls": 8,
+   "note": "Polymarket Munich high, 09Z implied mean v EDDM resolution, 1 to 16 Nov: low-cloud mornings -0.32 C (5 days) v others -0.08 C (11), gap -0.24 C against ICON -1.07 (year) and -1.28 (Nov). Shot said about -0.4, smaller than ICON: direction and comparison right, size 0.16 off. 11 Nov flagged but +1.5; without it flagged…",
+   "artefact": "experiments/2026-11-17-P-0459",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0461",
+   "title": "Low-cloud miss, model or weather: at EDDM over Nov 2025 to Oct 2026, the P-0446 low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) against lead-1 day-high error f…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-17T12:37:10+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "EDDM low-cloud gap on 365 common days: icon_seamless -1.06 C (p 0.001), ecmwf_ifs025 -1.63 (p 0.0001), gfs_seamless -2.96 (p 0.0001; 28 of its 35 big warm misses are flagged days), mean of three -1.88. Shot said ECMWF about -0.7, GFS about -1.0, p under 0.01: direction and p right, sizes well under. So it is the weath…",
+   "artefact": "experiments/2026-11-17-P-0461",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0462",
+   "title": "USGS aftershock parameters v my fits: for the 5 M7+ events since Nov 2025 with an oaf product (fdsnws query producttype=oaf, then each detail's oaf forecast.json, model.…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-17T12:40:14+0000",
+   "minutes": 1,
+   "calls": 10,
+   "note": "USGS oaf day-2 forecasts (issued 27 to 47 h after the mainshock), Reasenberg-Jones with their a, b, p, c, Mc, days 2 to 30 in their circle: within a factor of 2 on 1 of 4 scored (Panama 6 v 8.0); Ende 42 v 11.0 under, Colombia 4 v 15.5 and Venezuela 5 v 13.5 over. In-sample current version 2 of 4. Alaska skipped (Mcat…",
+   "artefact": "experiments/2026-11-17-P-0462",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0464",
+   "title": "Decode pump.fun TradeEvents: extend experiments/2026-11-16-ranit-solders/decode.py to take the Anchor event wrapper e445a52e51cb9a1d inner instructions from 60 live pump…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-17T12:43:48+0000",
+   "minutes": 3,
+   "calls": 6,
+   "note": "Decoded 47 live pump.fun TradeEvents with the IDL layout; 41 paired with buy, buy_exact_sol_in and sell: args consistent 41 of 41, fee and creator fee within 1 lamport of sol_amount x bps 41 of 41. Shot said about 95 and 90 percent: measured 100 and 100. Caveat: 18 of 41 trades carry 0 fee bps and pass trivially; the…",
+   "artefact": "experiments/2026-11-17-P-0464",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0465",
+   "title": "pump.fun zero-fee trades: extend experiments/2026-11-17-P-0464/events.py past the variable-length ix_name (mayhem_mode, cashback and buyback bps and amounts, the shareho…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-17T12:47:12+0000",
+   "minutes": 3,
+   "calls": 7,
+   "note": "Past ix_name on 19 live TradeEvents: the 10 zero-fee trades are all mayhem mode, SOL quote, and 0 in every fee field (fee, creator, cashback, buyback, holder rewards), so the take did not move inside the event. But 4 of 9 paid trades are mayhem mode too, so mayhem alone is not the rule. 2 paid trades use a non-SOL quo…",
+   "artefact": "experiments/2026-11-17-P-0465",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0467",
+   "title": "rust-anything: does its Python slugify demo match the original and run 10x+ faster here?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-17T23:37:31+0000",
+   "minutes": 1,
+   "calls": 22,
+   "note": "No cargo or rustc on this Mac and the Python fixture ships source only, so the Rust port and its 17x were not run. The half that needs no Rust: 706 of 706 recorded results replay identically on the original Python and 79 of 79 recorded errors raise (159 skipped on an argument encoding I did not decode, 200 class cases…",
+   "artefact": "experiments/2026-11-17-P-0467",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0468",
+   "title": "ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-17T23:41:09+0000",
+   "minutes": 3,
+   "calls": 23,
+   "note": "api.onaa.net lists 32,306 stores keyless (30,281 reachable, 2,025 unknown). In the first 500: 497 from a UCP manifest, all first seen 14 Nov, 497 probed once; checkout ready 261 (52%), buyer step required 187, payment tested 0. One crawl, three days old, on a slow server (one 503, two timeouts). Shot said under 20 sto…",
+   "artefact": "experiments/2026-11-17-P-0468",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0466",
+   "title": "Mayhem-mode fee by balance: for 60 live pump.fun trades decoded with experiments/2026-11-17-P-0465/tail.py, compare the trader's SOL balance change (meta preBalances and…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-17T23:46:16+0000",
+   "minutes": 5,
+   "calls": 12,
+   "note": "The zero-fee class pays nothing and is one wallet: 25 of 25 zero-fee mayhem trades over two runs came from BwWK17cb...de6s (11 buys, 14 sells, up to 17 mints, never the fee payer); its SOL balance moved by exactly sol_amount on 5 of 5 measured (gap 0.0 bps). 9 paid mayhem trades were 8 ordinary wallets. Shot said unde…",
+   "artefact": "experiments/2026-11-17-P-0466",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0469",
+   "title": "pump.fun mayhem agent: are the zero-fee mayhem trades in experiments/2026-11-17-P-0465 all signed by one or a few wallets (the platform agent), and does a mayhem mint sh…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-17T23:46:44+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "43 of 43 fee-free mayhem trades across three samples seven hours apart (18 in the 16:40 Workshop run, 20 and 5 in P-0466) are one wallet, BwWK17cb...de6s; the afternoon run was saved before the idea existed. 8 of 8 mayhem mints show a 2,000,000,000 supply, 7 of 7 plain mints about 1,000,000,000. Shot after looking at…",
+   "artefact": "experiments/2026-11-17-P-0469",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0470",
+   "title": "Mayhem agent wallet BwWK17cb: pull its last 1,000 signatures keyless, decode its trades, and measure trades per coin, holding time and SOL profit and loss per coin over…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-17T23:51:37+0000",
+   "minutes": 4,
+   "calls": 6,
+   "note": "The wallet makes about 15 transactions a second: its last 1,000 signatures span 65 seconds. 142 decoded trades cover 11 seconds and 19 coins at once (74 buys, 68 sells, all fee-free, all mayhem, median 0.037 SOL, one fee payer Gygj9QQb for all 150 transactions). Net -0.764 SOL in that window, which at 11 seconds means…",
+   "artefact": "experiments/2026-11-17-P-0470",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0471",
+   "title": "Mayhem agent balance sampler: a two-call poller (getBalance, getTokenAccountsByOwner) on the fee-free wallet every 5 minutes for 24 hours as a long-running job; number i…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-18T00:12:18+0000",
+   "minutes": 20,
+   "calls": 41,
+   "note": "The wallet holds about 71,300 SOL and gained 20.6 SOL (0.029%) over 20 minutes of sampling, up in five of six three-minute steps. getBalance answers keyless; the Token-2022 account listing is refused HTTP 413 (too many accounts), classic listing 44 accounts, so inventory is unseen and this is SOL flow, not profit and…",
+   "artefact": "experiments/2026-11-17-P-0471",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0233",
+   "title": "ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold about 80% of DWD Stadt highs, or…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-18T00:12:49+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "At 17 of 20 scored days the ICON-EPS 10 to 90 band holds 9 raw (53%) and 8 shifted +0.5C (47%), 6 misses above; with three days left the most either can reach is 12 of 20 (60%), so the answer is fixed early: it is about a 50% band, not 80%, and the shift does not help. Do not size Munich calls from it; the caps stay.…",
+   "artefact": "experiments/2026-11-17-P-0233",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0472",
+   "title": "Agoreum open requests: how many open buyer requests does the public MCP list, with what budgets and quote counts, against the 22 listings P-0453 found?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-18T00:13:55+0000",
+   "minutes": 0,
+   "calls": 10,
+   "note": "Agoreum public MCP lists 0 open buyer requests (total 0, empty list) against the 22 listings and 0 settled buyers P-0453 found: sellers only, nobody asking. 14 tools on the endpoint; list_open_requests caps limit at 50 (60 was refused, one run lost). Shot said fewer than 10 and under half quoted: right, with nothing t…",
+   "artefact": "experiments/2026-11-18-refill-agoreum-requests",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
   }
  ]
 }

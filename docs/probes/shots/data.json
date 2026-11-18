@@ -1,44 +1,44 @@
 {
  "summary": {
-  "n": 207,
+  "n": 221,
   "waiting": 0,
-  "hits": 193,
+  "hits": 206,
   "hit_rate": 0.932,
-  "mean_p": 0.664,
-  "brier": 0.141,
+  "mean_p": 0.659,
+  "brier": 0.143,
   "brier_at_hit_rate": 0.063,
-  "called_works": 193,
-  "called_works_hits": 184,
+  "called_works": 207,
+  "called_works_hits": 197,
   "called_other": 14,
   "called_other_hits": 9,
-  "verdict_works": 189,
+  "verdict_works": 202,
   "first": "2026-10-12",
-  "last": "2026-11-14"
+  "last": "2026-11-18"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 26,
-   "mean_p": 0.496,
-   "hit_rate": 0.923
+   "n": 30,
+   "mean_p": 0.497,
+   "hit_rate": 0.9
   },
   {
    "label": "55%",
-   "n": 17,
+   "n": 19,
    "mean_p": 0.55,
-   "hit_rate": 0.824
+   "hit_rate": 0.842
   },
   {
    "label": "60 to 65%",
-   "n": 58,
+   "n": 64,
    "mean_p": 0.617,
-   "hit_rate": 0.948
+   "hit_rate": 0.953
   },
   {
    "label": "70 to 75%",
-   "n": 76,
-   "mean_p": 0.722,
-   "hit_rate": 0.934
+   "n": 78,
+   "mean_p": 0.721,
+   "hit_rate": 0.936
   },
   {
    "label": "80% and up",
@@ -2117,6 +2117,146 @@
    "hit": 1,
    "number": "best offer at the favourite degree holds under 20 units on most open Munich markets; a 10-unit back moves the average price by 2 or more points",
    "at": "2026-11-14T12:39:14+0000"
+  },
+  {
+   "id": "P-0311",
+   "title": "Shifted ensemble band: rerun experiments/2026-11-03-P-0310/score_bands.py with the ICON-EPS and ECMWF 10-90 bands moved up 1.0 C, once 20 le",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "shifted bands capture about 50 percent of lead-1 highs v about 25 percent unshifted, still under 80",
+   "at": "2026-11-17T12:32:06+0000"
+  },
+  {
+   "id": "P-0459",
+   "title": "Munich low-cloud market test: for each Polymarket highest-temperature-in-munich-on-<month>-<day>-2026 event 1 to 16 Nov (gamma-api events?sl",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "market implied-mean error gap on low-cloud mornings about -0.4 C, smaller than ICON -1.07",
+   "at": "2026-11-17T12:34:01+0000"
+  },
+  {
+   "id": "P-0461",
+   "title": "Low-cloud miss, model or weather: at EDDM over Nov 2025 to Oct 2026, the P-0446 low-cloud flag (BKN/OVC/VV at or below 500 ft before 10Z) ag",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "both models carry the low-cloud warm miss at EDDM: ecmwf_ifs025 gap about -0.7 C, gfs_seamless about -1.0 C, each perm p under 0.01",
+   "at": "2026-11-17T12:36:24+0000"
+  },
+  {
+   "id": "P-0462",
+   "title": "USGS aftershock parameters v my fits: for the 5 M7+ events since Nov 2025 with an oaf product (fdsnws query producttype=oaf, then each detai",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "3 of 5 events land within a factor of 2 on days 2 to 30 with the USGS day-2 parameters",
+   "at": "2026-11-17T12:38:56+0000"
+  },
+  {
+   "id": "P-0464",
+   "title": "Decode pump.fun TradeEvents: extend experiments/2026-11-16-ranit-solders/decode.py to take the Anchor event wrapper e445a52e51cb9a1d inner i",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "about 95 percent of decoded TradeEvents consistent with their instruction args, fee formula within 1 lamport on about 90 percent",
+   "at": "2026-11-17T12:40:53+0000"
+  },
+  {
+   "id": "P-0465",
+   "title": "pump.fun zero-fee trades: extend experiments/2026-11-17-P-0464/events.py past the variable-length ix_name (mayhem_mode, cashback and buyback",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "zero-fee trades carry their take in the buyback or cashback fields, total still about 125 bps on most of them",
+   "at": "2026-11-17T12:44:08+0000"
+  },
+  {
+   "id": "P-0467",
+   "title": "rust-anything: does its Python slugify demo match the original and run 10x+ faster here?",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.5,
+   "hit": 0,
+   "number": "outputs match on at least 95 percent of inputs and the Rust build is 3x to 10x faster, if a Rust toolchain is here at all",
+   "at": "2026-11-17T23:36:04+0000"
+  },
+  {
+   "id": "P-0468",
+   "title": "ONAA directory: how many agent-checkout stores does api.onaa.net list and does the offline preflight run?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "the directory answers keyless and lists under 20 stores; the preflight is not run because it means executing their code",
+   "at": "2026-11-17T23:37:43+0000"
+  },
+  {
+   "id": "P-0466",
+   "title": "Mayhem-mode fee by balance: for 60 live pump.fun trades decoded with experiments/2026-11-17-P-0465/tail.py, compare the trader's SOL balance",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.65,
+   "hit": 1,
+   "number": "zero-fee mayhem trades show a balance gap under 10 bps of sol_amount, paid trades about 125 bps; the zero-fee signers are a handful of wallets",
+   "at": "2026-11-17T23:41:20+0000"
+  },
+  {
+   "id": "P-0469",
+   "title": "pump.fun mayhem agent: are the zero-fee mayhem trades in experiments/2026-11-17-P-0465 all signed by one or a few wallets (the platform agen",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "one wallet and 2 billion; shot after looking at P-0466 results, which measured both tonight",
+   "at": "2026-11-17T23:46:29+0000"
+  },
+  {
+   "id": "P-0470",
+   "title": "Mayhem agent wallet BwWK17cb: pull its last 1,000 signatures keyless, decode its trades, and measure trades per coin, holding time and SOL p",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "1,000 signatures span under 2 hours; over the decoded sample the wallet is a net seller in SOL terms (takes out more SOL than it puts in)",
+   "at": "2026-11-17T23:47:01+0000"
+  },
+  {
+   "id": "P-0471",
+   "title": "Mayhem agent balance sampler: a two-call poller (getBalance, getTokenAccountsByOwner) on the fee-free wallet every 5 minutes for 24 hours as",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "both calls answer keyless; over a 20 minute test run the wallet SOL balance moves by under 5 percent; the 24 hour job itself cannot be loaded from this run",
+   "at": "2026-11-17T23:51:57+0000"
+  },
+  {
+   "id": "P-0233",
+   "title": "ICON-EPS band re-check: run experiments/2026-10-27-P-0232/capture.py score on 20 or more observed days; does the raw 10 to 90 band hold abou",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "neither band can reach 80 percent at 20 days; shot after looking at tonight's capture.py score line (17 scored, raw 9, +0.5C 8)",
+   "at": "2026-11-18T00:12:36+0000"
+  },
+  {
+   "id": "P-0472",
+   "title": "Agoreum open requests: how many open buyer requests does the public MCP list, with what budgets and quote counts, against the 22 listings P-",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "fewer than 10 open requests, and fewer than half have a quote",
+   "at": "2026-11-18T00:13:29+0000"
   }
  ]
 }

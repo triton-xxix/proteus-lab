@@ -1,10 +1,10 @@
 {
  "summary": {
-  "games": 79,
-  "wins": 59,
-  "draws": 18,
+  "games": 82,
+  "wins": 61,
+  "draws": 19,
   "losses": 2,
-  "score": 0.861,
+  "score": 0.86,
   "rating_start": 3000,
   "rating_now": 2983,
   "rating_peak": 3129,
@@ -12,21 +12,21 @@
   "strongest_faced": 3019,
   "median_opp": 2149,
   "first": "2026-10-03",
-  "last": "2026-11-17",
-  "challenges": 1425,
-  "accepted": 68,
-  "declined": 795,
+  "last": "2026-11-18",
+  "challenges": 1442,
+  "accepted": 71,
+  "declined": 809,
   "no_answer": 150,
   "refused_400": 398,
   "refused_429": 14,
-  "accept_rate": 0.0477,
+  "accept_rate": 0.0492,
   "bots_asked": 131,
-  "bots_played": 64,
-  "bots_never": 73,
-  "median_rating_accepted_bots": 1887,
-  "median_rating_refusing_bots": 1882,
+  "bots_played": 67,
+  "bots_never": 70,
+  "median_rating_accepted_bots": 1757,
+  "median_rating_refusing_bots": 1893,
   "challenge_first": "2026-10-09",
-  "challenge_last": "2026-11-17",
+  "challenge_last": "2026-11-18",
   "declined_reasons": [
    [
     "nobot",
@@ -34,11 +34,11 @@
    ],
    [
     "generic",
-    252
+    262
    ],
    [
     "casual",
-    125
+    129
    ],
    [
     "tooslow",
@@ -53,8 +53,8 @@
  "bands": [
   {
    "label": "under 1500",
-   "n": 20,
-   "wins": 20,
+   "n": 22,
+   "wins": 22,
    "draws": 0,
    "losses": 0,
    "score": 1.0
@@ -77,11 +77,11 @@
   },
   {
    "label": "2500 and up",
-   "n": 30,
+   "n": 31,
    "wins": 11,
-   "draws": 17,
+   "draws": 18,
    "losses": 2,
-   "score": 0.65
+   "score": 0.645
   }
  ],
  "days": [
@@ -269,31 +269,36 @@
    "date": "2026-11-17",
    "asked": 36,
    "accepted": 3
+  },
+  {
+   "date": "2026-11-18",
+   "asked": 17,
+   "accepted": 3
   }
  ],
  "decliners": [
   {
    "bot": "resolutebot",
    "rating": 2945,
-   "asked": 73,
+   "asked": 75,
    "how": "declined"
   },
   {
    "bot": "leelarogue",
    "rating": 2317,
-   "asked": 61,
+   "asked": 63,
+   "how": "declined"
+  },
+  {
+   "bot": "stockfishlowdepth",
+   "rating": 2014,
+   "asked": 52,
    "how": "declined"
   },
   {
    "bot": "patriciabot",
    "rating": 2756,
    "asked": 51,
-   "how": "declined"
-  },
-  {
-   "bot": "stockfishlowdepth",
-   "rating": 1992,
-   "asked": 50,
    "how": "declined"
   },
   {
@@ -304,14 +309,14 @@
   },
   {
    "bot": "darkonweakbot",
-   "rating": 1784,
-   "asked": 43,
+   "rating": 1765,
+   "asked": 45,
    "how": "declined"
   },
   {
    "bot": "littlepatricia",
-   "rating": 1910,
-   "asked": 41,
+   "rating": 1929,
+   "asked": 43,
    "how": "declined"
   },
   {
@@ -321,15 +326,15 @@
    "how": "declined"
   },
   {
-   "bot": "leelajester",
-   "rating": 2421,
-   "asked": 39,
+   "bot": "mochi_bot",
+   "rating": 1708,
+   "asked": 40,
    "how": "declined"
   },
   {
-   "bot": "mochi_bot",
-   "rating": 1713,
-   "asked": 38,
+   "bot": "leelajester",
+   "rating": 2421,
+   "asked": 39,
    "how": "declined"
   },
   {
@@ -358,37 +363,37 @@
   },
   {
    "bot": "notropis",
-   "rating": 1690,
-   "asked": 26,
+   "rating": 1679,
+   "asked": 28,
    "how": "declined"
   }
  ],
  "by_strength": [
   {
    "label": "under 2000",
-   "asked": 602,
+   "asked": 612,
    "bots": 77,
-   "accepted": 33,
-   "declined": 339,
+   "accepted": 35,
+   "declined": 347,
    "no answer": 44,
    "refused 400": 172,
    "refused 429": 14,
    "other": 0,
-   "sent": 416,
-   "accept_of_sent": 0.0793
+   "sent": 426,
+   "accept_of_sent": 0.0822
   },
   {
    "label": "2000 to 2399",
-   "asked": 385,
-   "bots": 25,
+   "asked": 389,
+   "bots": 26,
    "accepted": 9,
-   "declined": 242,
+   "declined": 246,
    "no answer": 34,
    "refused 400": 100,
    "refused 429": 0,
    "other": 0,
-   "sent": 285,
-   "accept_of_sent": 0.0316
+   "sent": 289,
+   "accept_of_sent": 0.0311
   },
   {
    "label": "2400 to 2699",
@@ -418,16 +423,16 @@
   },
   {
    "label": "2900 to 2999",
-   "asked": 142,
+   "asked": 145,
    "bots": 8,
-   "accepted": 2,
-   "declined": 67,
+   "accepted": 3,
+   "declined": 69,
    "no answer": 15,
    "refused 400": 58,
    "refused 429": 0,
    "other": 0,
-   "sent": 84,
-   "accept_of_sent": 0.0238
+   "sent": 87,
+   "accept_of_sent": 0.0345
   },
   {
    "label": "3000 and up",
@@ -446,16 +451,16 @@
  "by_gap": [
   {
    "label": "500+ below me",
-   "asked": 1076,
+   "asked": 1090,
    "bots": 105,
-   "accepted": 44,
-   "declined": 662,
+   "accepted": 46,
+   "declined": 674,
    "no answer": 80,
    "refused 400": 276,
    "refused 429": 14,
    "other": 0,
-   "sent": 786,
-   "accept_of_sent": 0.056
+   "sent": 800,
+   "accept_of_sent": 0.0575
   },
   {
    "label": "200 to 499 below",
@@ -485,19 +490,19 @@
   },
   {
    "label": "within 50, or above",
-   "asked": 123,
+   "asked": 126,
    "bots": 16,
-   "accepted": 11,
-   "declined": 15,
+   "accepted": 12,
+   "declined": 17,
    "no answer": 39,
    "refused 400": 58,
    "refused 429": 0,
    "other": 0,
-   "sent": 65,
-   "accept_of_sent": 0.1692
+   "sent": 68,
+   "accept_of_sent": 0.1765
   }
  ],
- "challenges_rated": 1425,
+ "challenges_rated": 1442,
  "refusals": {
   "total": 412,
   "kinds": [
@@ -596,14 +601,16 @@
   "cap_wait_hours_median": 1.5,
   "cap_wasted": 85,
   "capped_bots": 57,
-  "capped_bots_later_yes": 36,
+  "capped_bots_later_yes": 39,
   "capped_bots_later_yes_names": [
+   "bernstein-2ply",
    "bernstein-4ply",
    "bot1e",
    "bot5551",
    "bottios",
    "c0kval",
    "dala-1300",
+   "darkonbot",
    "duchessai",
    "eubos",
    "fataliibot",
@@ -619,6 +626,7 @@
    "maia5",
    "maia9",
    "melsh_bot",
+   "nexastrat",
    "raspfish",
    "ravenengine",
    "sargon-1ply",
@@ -1900,6 +1908,54 @@
    "url": "https://lichess.org/Pyy177vp",
    "think": "1.0",
    "refusals": 10
+  },
+  {
+   "date": "2026-11-18",
+   "at": "2026-11-18T08:27:08Z",
+   "id": "XxMAP4iL",
+   "opponent": "darkonbot",
+   "opp": 2976,
+   "before": 2983,
+   "after": 2983,
+   "colour": "black",
+   "result": "draw",
+   "status": "draw",
+   "moves": 60,
+   "url": "https://lichess.org/XxMAP4iL",
+   "think": "1.0",
+   "refusals": 0
+  },
+  {
+   "date": "2026-11-18",
+   "at": "2026-11-18T08:29:01Z",
+   "id": "S6iqYPOd",
+   "opponent": "nexastrat",
+   "opp": 1138,
+   "before": 2983,
+   "after": 2983,
+   "colour": "black",
+   "result": "win",
+   "status": "mate",
+   "moves": 34,
+   "url": "https://lichess.org/S6iqYPOd",
+   "think": "1.0",
+   "refusals": 7
+  },
+  {
+   "date": "2026-11-18",
+   "at": "2026-11-18T08:29:40Z",
+   "id": "Q2yzKzFi",
+   "opponent": "bernstein-2ply",
+   "opp": 1130,
+   "before": 2983,
+   "after": 2983,
+   "colour": "black",
+   "result": "win",
+   "status": "mate",
+   "moves": 17,
+   "url": "https://lichess.org/Q2yzKzFi",
+   "think": "1.0",
+   "refusals": 7
   }
  ]
 }
