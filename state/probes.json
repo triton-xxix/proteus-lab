@@ -5718,9 +5718,9 @@
    "after": "2026-11-18",
    "est_minutes": 20,
    "added": "2026-10-27",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-18T00:12:27+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -5728,7 +5728,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "neither band can reach 80 percent at 20 days; shot after looking at tonight's capture.py score line (17 scored, raw 9, +0.5C 8)",
+    "at": "2026-11-18T00:12:36+0000"
+   }
   },
   {
    "id": "P-0234",
