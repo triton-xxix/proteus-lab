@@ -11971,22 +11971,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-17",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-17T23:51:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-18T00:12:18+0000",
+   "note": "The wallet holds about 71,300 SOL and gained 20.6 SOL (0.029%) over 20 minutes of sampling, up in five of six three-minute steps. getBalance answers keyless; the Token-2022 account listing is refused HTTP 413 (too many accounts), classic listing 44 accounts, so inventory is unseen and this is SOL flow, not profit and loss: a rising balance is what selling free inventory looks like. Shot half right (move under 5%, but one token call never answers). The 24 hour job was not started: launchctl is off the safe list. Next: deepen (a daytime slot loads a SOL-only 24 hour sampler, with per-mint token balances for coins seen trading).",
+   "artefacts": [
+    "experiments/2026-11-17-P-0471"
+   ],
+   "minutes": 20,
+   "calls": 41,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "both calls answer keyless; over a 20 minute test run the wallet SOL balance moves by under 5 percent; the 24 hour job itself cannot be loaded from this run",
-    "at": "2026-11-17T23:51:57+0000"
+    "at": "2026-11-17T23:51:57+0000",
+    "hit": true
    }
   }
  ]
