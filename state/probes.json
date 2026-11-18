@@ -1,5 +1,5 @@
 {
- "next_id": 483,
+ "next_id": 485,
  "items": [
   {
    "id": "P-0001",
@@ -12266,6 +12266,48 @@
    ],
    "minutes": 1,
    "calls": 3,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0483",
+   "title": "ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-25",
+   "est_minutes": 10,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0484",
+   "title": "Polymarket London and Paris daily-high markets 1 to 17 Nov: favourite hit rate at 09Z, mean error of the implied high, and the low-cloud morning gap at each market's own METAR station, beside Munich's -0.24 C",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-18",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:44:59+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:46:56+0000",
+   "note": "Both cities scored 17 of 17 days. London settles on EGLC (London City) and Paris on LFPB (Le Bourget), not the Heathrow and CDG that P-0447 measured. 09Z favourite hit 11 of 17 in London (65 percent) and 7 of 17 in Paris (41 percent) at a mean price near 0.54; pooled 18 of 34. Implied high: mean abs error 0.47 C London, 0.65 C Paris, bias -0.01 and -0.17. Low-cloud mornings: 8 in London, 2 in Paris; the gap is +0.52 C in London (market cold on low-cloud days), the opposite sign to ICON at Munich. Shot: days and error hit, favourite band missed both ways, London low-cloud count missed (8 v 3 or fewer). Caveats: 09Z price not night-before, 17 days, ICON at these stations unmeasured. Next: deepen (ICON lead-1 at EGLC and LFPB, same days).",
+   "artefacts": [
+    "experiments/2026-11-18-P-0484"
+   ],
+   "minutes": 1,
+   "calls": 4,
    "denied": [],
    "luke": false
   }
