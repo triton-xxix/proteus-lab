@@ -1,0 +1,325 @@
+{
+ "spec_bytes": 156936,
+ "spec_version": "0.1.0",
+ "paths_in_spec": 84,
+ "with_get": 47,
+ "asked": 31,
+ "status_counts": {
+  "200": 19,
+  "404": 7,
+  "422": 3,
+  "401": 1,
+  "503": 1
+ },
+ "not_found": [
+  "/.well-known/onaa/issuer-jwks.json",
+  "/stores.csv",
+  "/stores.json",
+  "/v1/buying/check",
+  "/v1/buying/stores",
+  "/v1/stores",
+  "/v1/stores/check"
+ ],
+ "ok": [
+  "/.well-known/onaa-registry.json",
+  "/agent/ucp-profile.json",
+  "/llms-full.txt",
+  "/llms.txt",
+  "/v1",
+  "/v1/agents",
+  "/v1/health",
+  "/v1/incidents",
+  "/v1/policy/rules",
+  "/v1/services",
+  "/v1/specs",
+  "/v1/stats/usage",
+  "/v1/stats/usage/hourly",
+  "/v1/stats/usage/weekly",
+  "/v1/terms",
+  "/v1/terms.md",
+  "/v1/transparency/entries",
+  "/v1/vocabulary",
+  "/v1/vocabulary/proposals"
+ ],
+ "rows": [
+  {
+   "path": "/.well-known/onaa-registry.json",
+   "status": 200,
+   "bytes": 4738,
+   "type": "application/json",
+   "secs": 0.12,
+   "spec_says_auth": false,
+   "summary": "ONAA's own discovery metadata (project convention, NOT an A2A standard document)"
+  },
+  {
+   "path": "/.well-known/onaa/issuer-jwks.json",
+   "status": 404,
+   "bytes": 59,
+   "type": "application/json",
+   "secs": 0.22,
+   "spec_says_auth": false,
+   "summary": "Root-signed issuer key manifest (pin the root key, not this URL)"
+  },
+  {
+   "path": "/agent/ucp-profile.json",
+   "status": 200,
+   "bytes": 808,
+   "type": "application/json",
+   "secs": 0.12,
+   "spec_says_auth": false,
+   "summary": "ONAA's UCP platform (agent) profile, sent as UCP-Agent when the checkout checker"
+  },
+  {
+   "path": "/llms-full.txt",
+   "status": 200,
+   "bytes": 8968,
+   "type": "text/plain",
+   "secs": 0.22,
+   "spec_says_auth": false,
+   "summary": "llms.txt plus every listed store and its tested checkout, in one plain-text file"
+  },
+  {
+   "path": "/llms.txt",
+   "status": 200,
+   "bytes": 8968,
+   "type": "text/plain",
+   "secs": 0.22,
+   "spec_says_auth": false,
+   "summary": "Plain-text onboarding for LLM agents"
+  },
+  {
+   "path": "/stores.csv",
+   "status": 404,
+   "bytes": 22,
+   "type": "application/json",
+   "secs": 0.21,
+   "spec_says_auth": false,
+   "summary": "All stores as CSV (one row per store)"
+  },
+  {
+   "path": "/stores.json",
+   "status": 404,
+   "bytes": 22,
+   "type": "application/json",
+   "secs": 0.17,
+   "spec_says_auth": false,
+   "summary": "All stores probed for AI agent checkout, with checkout requirements (one file)"
+  },
+  {
+   "path": "/v1",
+   "status": 200,
+   "bytes": 1066,
+   "type": "application/json",
+   "secs": 0.2,
+   "spec_says_auth": false,
+   "summary": "Api Index"
+  },
+  {
+   "path": "/v1/agents",
+   "status": 200,
+   "bytes": 46189,
+   "type": "application/json",
+   "secs": 0.48,
+   "spec_says_auth": false,
+   "summary": "Search agents"
+  },
+  {
+   "path": "/v1/attestations",
+   "status": 422,
+   "bytes": 96,
+   "type": "application/json",
+   "secs": 0.17,
+   "spec_says_auth": false,
+   "summary": "Attestations for a subject, any status (TEST-ONLY in staging)"
+  },
+  {
+   "path": "/v1/buying/check",
+   "status": 404,
+   "bytes": 22,
+   "type": "application/json",
+   "secs": 0.18,
+   "spec_says_auth": false,
+   "summary": "Can I reach checkout at these stores, and how? (ids, domains or product URLs, up"
+  },
+  {
+   "path": "/v1/buying/stores",
+   "status": 404,
+   "bytes": 22,
+   "type": "application/json",
+   "secs": 0.13,
+   "spec_says_auth": false,
+   "summary": "Stores where an agent can reach checkout under your conditions (ship-to, payment"
+  },
+  {
+   "path": "/v1/health",
+   "status": 200,
+   "bytes": 33,
+   "type": "application/json",
+   "secs": 0.13,
+   "spec_says_auth": false,
+   "summary": "Health"
+  },
+  {
+   "path": "/v1/incidents",
+   "status": 200,
+   "bytes": 12,
+   "type": "application/json",
+   "secs": 0.15,
+   "spec_says_auth": false,
+   "summary": "Operational incident history (health records, not sanctions)"
+  },
+  {
+   "path": "/v1/operators/me",
+   "status": 401,
+   "bytes": 38,
+   "type": "application/json",
+   "secs": 0.12,
+   "spec_says_auth": true,
+   "summary": "Me"
+  },
+  {
+   "path": "/v1/policy/rules",
+   "status": 200,
+   "bytes": 476,
+   "type": "application/json",
+   "secs": 0.2,
+   "spec_says_auth": false,
+   "summary": "What the steward may do alone, what needs approval"
+  },
+  {
+   "path": "/v1/services",
+   "status": 200,
+   "bytes": 36338,
+   "type": "application/json",
+   "secs": 0.34,
+   "spec_says_auth": false,
+   "summary": "Search services"
+  },
+  {
+   "path": "/v1/specs",
+   "status": 200,
+   "bytes": 275,
+   "type": "application/json",
+   "secs": 0.18,
+   "spec_says_auth": false,
+   "summary": "Specs"
+  },
+  {
+   "path": "/v1/stats/usage",
+   "status": 200,
+   "bytes": 10568,
+   "type": "application/json",
+   "secs": 0.27,
+   "spec_says_auth": false,
+   "summary": "Anonymous daily usage counts split into external, ours and probes, by agent clas"
+  },
+  {
+   "path": "/v1/stats/usage/hourly",
+   "status": 200,
+   "bytes": 55358,
+   "type": "application/json",
+   "secs": 0.32,
+   "spec_says_auth": false,
+   "summary": "The same anonymous counts per UTC hour (last 30 days at most)"
+  },
+  {
+   "path": "/v1/stats/usage/weekly",
+   "status": 200,
+   "bytes": 3958,
+   "type": "application/json",
+   "secs": 0.3,
+   "spec_says_auth": false,
+   "summary": "Third-party use per week with running totals: crawlers, store data fetched, MCP "
+  },
+  {
+   "path": "/v1/stores",
+   "status": 404,
+   "bytes": 22,
+   "type": "application/json",
+   "secs": 0.15,
+   "spec_says_auth": false,
+   "summary": "Find stores where an AI agent can reach checkout (filter: ship-to, pay-alone, .."
+  },
+  {
+   "path": "/v1/stores/check",
+   "status": 404,
+   "bytes": 22,
+   "type": "application/json",
+   "secs": 0.12,
+   "spec_says_auth": false,
+   "summary": "Can an AI agent reach checkout here? Any product URL, store domain or svc_ id"
+  },
+  {
+   "path": "/v1/terms",
+   "status": 200,
+   "bytes": 10453,
+   "type": "application/json",
+   "secs": 0.13,
+   "spec_says_auth": false,
+   "summary": "Current directory terms: version, SHA-256 and full text"
+  },
+  {
+   "path": "/v1/terms.md",
+   "status": 200,
+   "bytes": 9261,
+   "type": "text/markdown",
+   "secs": 0.13,
+   "spec_says_auth": false,
+   "summary": "Current directory terms text"
+  },
+  {
+   "path": "/v1/transparency/checkpoint",
+   "status": 503,
+   "bytes": 42,
+   "type": "application/json",
+   "secs": 0.15,
+   "spec_says_auth": false,
+   "summary": "Signed tree head of the attestation transparency log"
+  },
+  {
+   "path": "/v1/transparency/entries",
+   "status": 200,
+   "bytes": 28,
+   "type": "application/json",
+   "secs": 0.2,
+   "spec_says_auth": false,
+   "summary": "Log entries by index range or by attestation id"
+  },
+  {
+   "path": "/v1/transparency/proof/consistency",
+   "status": 422,
+   "bytes": 171,
+   "type": "application/json",
+   "secs": 0.18,
+   "spec_says_auth": false,
+   "summary": "Merkle consistency proof (RFC 9162 section 2.1.4)"
+  },
+  {
+   "path": "/v1/transparency/proof/inclusion",
+   "status": 422,
+   "bytes": 174,
+   "type": "application/json",
+   "secs": 0.2,
+   "spec_says_auth": false,
+   "summary": "Merkle inclusion proof (RFC 9162 section 2.1.3)"
+  },
+  {
+   "path": "/v1/vocabulary",
+   "status": 200,
+   "bytes": 3440,
+   "type": "application/json",
+   "secs": 0.53,
+   "spec_says_auth": false,
+   "summary": "Vocabulary in use: canonical values, top tokens, extension keys, proposals"
+  },
+  {
+   "path": "/v1/vocabulary/proposals",
+   "status": 200,
+   "bytes": 2,
+   "type": "application/json",
+   "secs": 0.16,
+   "spec_says_auth": false,
+   "summary": "List Proposals"
+  }
+ ]
+}

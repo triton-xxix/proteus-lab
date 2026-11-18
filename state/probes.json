@@ -1,5 +1,5 @@
 {
- "next_id": 482,
+ "next_id": 483,
  "items": [
   {
    "id": "P-0001",
@@ -12244,6 +12244,28 @@
    ],
    "minutes": 0,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0482",
+   "title": "api.onaa.net a day after P-0468: /v1/stores and stores.csv now answer 404 while health says ok; of the parameter-free public GET paths in its openapi.json (admin left out), how many answer 200?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-18",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:42:30+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:43:45+0000",
+   "note": "Of 31 parameter-free non-admin GET paths in the spec (84 paths, 47 with GET), 19 answer 200, 7 are 404, 3 are 422, 1 is 401, 1 is 503. Six of the seven 404s are the store and buying block (stores.csv, stores.json, /v1/stores, /v1/stores/check, /v1/buying/stores, /v1/buying/check), all the same 22-byte body in under 0.25 s: the route is not mounted, a day after P-0468 read 32,306 stores from it, while the spec still lists it and agents, services, stats and health answer. Shot (about 30 paths, about half 200, a block of five or six) hit, three 404s seen beforehand. Caveat: one request a path, one moment, cause unknown. Next: recheck in a week.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0482"
+   ],
+   "minutes": 1,
+   "calls": 3,
    "denied": [],
    "luke": false
   }
