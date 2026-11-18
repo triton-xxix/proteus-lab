@@ -12112,26 +12112,29 @@
    "id": "P-0476",
    "title": "Mayhem fee payer top-ups: Gygj9QQb spends about 195 SOL a day from 1,858 SOL, under ten days of runway. Find inbound SOL transfers to it (sample its signatures back in time by paging with before=, or check getTransaction pre and post balances for rises), who sends them, how big and how often; and read meta.loadedAddresses on 20 of its transactions to confirm the trading wallet BwWK17cb is in them.",
    "source": "desk",
-   "needs": "",
+   "needs": "an indexed transaction API that filters transfers (keyed), or a five-minute balance sampler on the payer for a few days started from an attended session",
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-18T12:44:28+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-18T12:50:47+0000",
+   "note": "Top-ups: 0 seen in 13 balance readings over 301 s (every step down, -170 SOL a day), and paging cannot reach them: 3,000 signatures cover 207 s, so a day back is about 1,250 pages; shot said 0 seen and about 890 pages. The link half is answered: trading wallet in 20 of 20 transactions through one lookup table (Hyif6eWb), shot said 18+; all 20 call one program, MAyhSmzX, with the fee payer the only signer, so the wallet does not sign its own trades. Not done: lookup table contents, program authority.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0476"
+   ],
+   "minutes": 6,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "blocked",
     "p": 0.65,
     "number": "0 top-ups seen (the public RPC only pages 1,000 signatures, about 97 seconds, at a time, so a day back is about 890 pages); trading wallet found in loaded addresses in at least 18 of 20",
-    "at": "2026-11-18T12:44:42+0000"
+    "at": "2026-11-18T12:44:42+0000",
+    "hit": true
    }
   }
  ]

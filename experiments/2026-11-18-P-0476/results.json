@@ -1,0 +1,324 @@
+{
+ "summary": {
+  "at": "2026-11-18T12:45:01Z",
+  "payer": "Gygj9QQby4j2jryqyqBHvLP7ctv2SaANgh4sCb69BUpA",
+  "pages": 3,
+  "signatures_paged": 3000,
+  "reach_s": 207,
+  "pages_for_24h": 1252,
+  "fetched": 20,
+  "wallet_static": 0,
+  "wallet_loaded": 20,
+  "wallet_anywhere": 20,
+  "lookup_tables": [
+   "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+  ],
+  "programs": {
+   "ComputeBudget111111111111111111111111111111": 40,
+   "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e": 20
+  },
+  "balance_samples": 13,
+  "watch_s": 301.4,
+  "rises": 0,
+  "largest_rise_sol": -0.014853,
+  "balance_first": 1858.189380312,
+  "balance_last": 1857.595334502,
+  "sol_per_day": -170.3
+ },
+ "rows": [
+  {
+   "sig": "4gQTE3s3WbqM2Rrs",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "wmg4jkBF7Jc9t6PD",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "2DTS7WMnaYXSr7HX",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "4y3s83vC4Hn9yVqL",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "4Xoj4i1UL88vZtxN",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "2EbaNkdbRWYX5sXv",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "4FhDkfHLcc1AwbCU",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "34ticEBirYD6xewp",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "5MmkXd7d9bGDH59m",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "5rD5KAMsrjzG6yMv",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "4fR8AorbUxgDwAsu",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "5YZyD7LZZnSkBpL6",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "2BcuXut4zu2Mt1ru",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "2qJZtRcGGZAJfxCa",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "3vr2r1DcpnuUbsGV",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "24D8Ji1fFvyzWYB5",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "49DdH6HufHQgHFqi",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "5by8GGqFnEZWmzCk",
+   "version": 0,
+   "static_keys": 15,
+   "loaded": 17,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "39vmbxsYXaJmpJ54",
+   "version": 0,
+   "static_keys": 11,
+   "loaded": 13,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  },
+  {
+   "sig": "21HDkZeSBmH5TUHR",
+   "version": 0,
+   "static_keys": 10,
+   "loaded": 12,
+   "wallet_static": false,
+   "wallet_loaded_writable": true,
+   "wallet_loaded_readonly": false,
+   "lookup_tables": [
+    "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP"
+   ]
+  }
+ ],
+ "samples": [
+  {
+   "t": 1795005926.7,
+   "sol": 1858.189380312
+  },
+  {
+   "t": 1795005951.9,
+   "sol": 1858.131638967
+  },
+  {
+   "t": 1795005977.0,
+   "sol": 1858.041192848
+  },
+  {
+   "t": 1795006002.2,
+   "sol": 1857.986757757
+  },
+  {
+   "t": 1795006027.3,
+   "sol": 1857.971904672
+  },
+  {
+   "t": 1795006052.5,
+   "sol": 1857.943756656
+  },
+  {
+   "t": 1795006077.6,
+   "sol": 1857.883979354
+  },
+  {
+   "t": 1795006102.6,
+   "sol": 1857.814725774
+  },
+  {
+   "t": 1795006127.7,
+   "sol": 1857.759064401
+  },
+  {
+   "t": 1795006152.8,
+   "sol": 1857.711442291
+  },
+  {
+   "t": 1795006177.9,
+   "sol": 1857.675896892
+  },
+  {
+   "t": 1795006203.0,
+   "sol": 1857.626360009
+  },
+  {
+   "t": 1795006228.1,
+   "sol": 1857.595334502
+  }
+ ]
+}
