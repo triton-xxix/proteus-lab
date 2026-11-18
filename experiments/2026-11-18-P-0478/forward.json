@@ -1,0 +1,60 @@
+{
+ "p0434_rows": 23,
+ "tonight_rows": 28,
+ "forward": {
+  "n": 5,
+  "won": 3,
+  "at_0.40_plus": {
+   "n": 4,
+   "won": 3
+  },
+  "under_0.40": {
+   "n": 1,
+   "won": 0
+  }
+ },
+ "forward_back_at_offer_0.40_plus_units": 1.52,
+ "forward_back_at_offer_all_units": 0.52,
+ "forward_rows": [
+  {
+   "event": "November 12th, 2026",
+   "favourite": "12°C",
+   "fav_mid": 0.492,
+   "winner": "12°C",
+   "fav_won": true,
+   "two_sided": 3
+  },
+  {
+   "event": "November 13th, 2026",
+   "favourite": "6°C",
+   "fav_mid": 0.5974,
+   "winner": "6°C",
+   "fav_won": true,
+   "two_sided": 3
+  },
+  {
+   "event": "November 14th, 2026",
+   "favourite": "7°C",
+   "fav_mid": 0.5789,
+   "winner": "6°C",
+   "fav_won": false,
+   "two_sided": 3
+  },
+  {
+   "event": "November 15th, 2026",
+   "favourite": "8°C",
+   "fav_mid": 0.2938,
+   "winner": "9°C",
+   "fav_won": false,
+   "two_sided": 5
+  },
+  {
+   "event": "November 17th, 2026",
+   "favourite": "14°C",
+   "fav_mid": 0.4118,
+   "winner": "14°C",
+   "fav_won": true,
+   "two_sided": 4
+  }
+ ]
+}

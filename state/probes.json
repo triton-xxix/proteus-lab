@@ -1,5 +1,5 @@
 {
- "next_id": 481,
+ "next_id": 482,
  "items": [
   {
    "id": "P-0001",
@@ -12167,15 +12167,17 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-18",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:39:08+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:40:10+0000",
+   "note": "At 30 kept winners, 28 joined: the night-before Smarkets favourite won 15 (53.6 percent), Brier 0.2132 v 0.2487 flat. The 0.40 cut: 14 of 18 above it won (mean mid 0.52, +7.34 paper units at the offer), 1 of 10 below (-7.65). On the 5 markets settled since P-0434, the only rows the cut had not seen, 3 of 4 above won and the 1 below lost (+1.52 units above the cut). Shot (29 joined, 6 forward, 2 of 3 above) close on every count. Caveats: 5 forward rows, 15 Nov read from a snapshot two nights early, almost nothing trades. Nothing changed in the book. Next: keep counting to 15 forward rows above the cut.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0478"
+   ],
+   "minutes": 1,
+   "calls": 12,
    "denied": [],
    "luke": false
   },
@@ -12220,6 +12222,26 @@
    ],
    "minutes": 1,
    "calls": 14,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0481",
+   "title": "Munich anchors read directly: for each counted Munich call, my p, the anchor mid and the ICON-EPS band width captured that night; does a narrow band mark the nights the market was above 0.40 on my degree?",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
