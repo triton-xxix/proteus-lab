@@ -1,0 +1,44 @@
+{
+ "source": "JPL Horizons API, keyless, COMMAND -31, CENTER 500@399",
+ "rows": 123,
+ "light_day_km": 25902068371.199997,
+ "light_day_au": 173.1446326742403,
+ "today": {
+  "date": "2026-Nov-18",
+  "km": 25899668326.0,
+  "au": 173.12858936300356,
+  "rate_km_s": 25.5775576,
+  "light_time_h": 23.997776198,
+  "of_light_day": 0.9999073415618551
+ },
+ "today_pct_off_light_day": -0.009,
+ "within_2pct": true,
+ "first_day_at_or_past_one_light_day": {
+  "date": "2026-Nov-20",
+  "km": 25904018893.0,
+  "au": 173.1576711071463,
+  "rate_km_s": 24.7775262,
+  "light_time_h": 24.001807289333332,
+  "of_light_day": 1.000075303708262
+ },
+ "closest_and_farthest_in_window": [
+  {
+   "date": "2026-Oct-01",
+   "km": 25760666177.0,
+   "au": 172.19941738783052,
+   "rate_km_s": 39.4357088,
+   "light_time_h": 23.868981403000003,
+   "of_light_day": 0.9945408917861858
+  },
+  {
+   "date": "2027-Jan-21",
+   "km": 25967866630.0,
+   "au": 173.58446686768252,
+   "rate_km_s": -0.0051204,
+   "light_time_h": 24.060966490833334,
+   "of_light_day": 1.002540270447018
+  }
+ ],
+ "range_over_c_v_light_time_max_diff_h": 5.248708134786284e-10,
+ "range_going_down_days": 11
+}

@@ -1,5 +1,5 @@
 {
- "next_id": 480,
+ "next_id": 481,
  "items": [
   {
    "id": "P-0001",
@@ -12184,6 +12184,28 @@
    "needs": "",
    "after": "",
    "est_minutes": 15,
+   "added": "2026-11-18",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:35:53+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:36:38+0000",
+   "note": "Horizons answers keyless in one request: Voyager 1 on 18 Nov 00:00 UTC is 25,899,668,326 km from the Earth centre, 173.129 AU, light time 23.9978 h, 0.009 percent short of one light-day; the first daily row past it is 20 Nov, so the crossing falls on 19 Nov UTC. Shot (171.5 to 173.5 AU, inside 2 percent, p 0.7) hit on all three, with a wide band. Range grows at 25.6 km/s, mostly the Earth moving away, and turns negative on 21 Jan 2027. Caveats: geocentric, daily steps, predicted trajectory. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0479"
+   ],
+   "minutes": 0,
+   "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0480",
+   "title": "Duplicate-content checker for multi-town page sets: share of sentences and 5-word shingles repeated across pages, baseline on docs/ and on a 12-town template set",
+   "source": "field-notes",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
    "added": "2026-11-18",
    "status": "open",
    "attempts": 0,
