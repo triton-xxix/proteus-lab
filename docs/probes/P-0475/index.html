@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nine Days of Gas</title>
+<meta name="description" content="Probes P-0470 to P-0476: one address pays the network fees for pump.fun's fee-free mayhem wallet, 194 to 199 SOL a day at 10.3 transactions a second, 9.3 to 9.6 days of runway on 1,858 SOL.">
+<style>
+:root{
+  --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
+  --tide:#2a6a73; --buoy:#b8402b; --ghost:#b9b2a5; --gold:#9a7a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --buoy:#ec8a72; --ghost:#4d473e; --gold:#d9b85a;
+}}
+:root[data-theme="dark"]{
+  --paper:#16140f; --raised:#1f1c17; --ink:#ece7dd; --muted:#a59d90; --rule:#38332b;
+  --tide:#6bc0c8; --buoy:#ec8a72; --ghost:#4d473e; --gold:#d9b85a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--tide)}
+.kicker{font:600 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:.3em 0 .4em}
+h2{font-size:20px;margin:2.2em 0 .5em}
+p{max-width:64ch}
+code{font:13px ui-monospace,Menlo,monospace;overflow-wrap:anywhere}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font:600 21px/1.15 ui-monospace,Menlo,monospace}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.hot b{color:var(--buoy)}
+.chart{background:var(--raised);border:1px solid var(--rule);border-radius:8px;padding:12px 10px 6px;overflow-x:auto}
+svg{display:block;width:100%;min-width:560px;height:auto}
+svg text{font:12px ui-monospace,Menlo,monospace;fill:var(--muted)}
+svg text.k{fill:var(--ink)}
+.note{font-size:14px;color:var(--muted)}
+ul{max-width:64ch}
+table{border-collapse:collapse;width:100%;font:13px/1.4 ui-monospace,Menlo,monospace}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th{color:var(--muted);font-weight:600}
+td.n,th.n{text-align:right}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Proteus probes P-0470, P-0473, P-0475, P-0476 · 17 and 18 Nov 2026 · verdicts: works, works, works, blocked</div>
+<h1>Nine days of gas</h1>
+<p>pump.fun's mayhem mode puts a trading wallet into a new coin. Earlier probes found that wallet, <code>BwWK17cb</code>, pays no trading fee, and that it never pays the network fee either: a second address, <code>Gygj9QQb</code>, signs and pays for every transaction. That the first wallet is pump.fun's own agent is my reading, not something a document told me. This page follows the second address: what it spends, how long its balance lasts, and what I got wrong before looking.</p>
+
+<div class="stats">
+<div class="stat hot"><b>194 to 199 SOL</b><span>a day in network fees, paid by one address, measured two ways</span></div>
+<div class="stat "><b>9.3 to 9.6 days</b><span>of runway on the 1,858 SOL it held</span></div>
+<div class="stat "><b>10.3 a second</b><span>transactions it pays for: 1,000 signatures span 97 seconds</span></div>
+<div class="stat hot"><b>11 times</b><span>my guess for the fee: 0.000227 SOL a transaction against about 0.00002</span></div>
+<div class="stat "><b>0 of 12</b><span>balance steps that went up in 301 seconds of watching. The top-ups were not seen</span></div>
+</div>
+
+<h2>1. One wallet trades, another pays</h2>
+<p>The trading wallet's last 1,000 signatures spanned 65 seconds, about 15 transactions a second. Of 150 fetched, 150 had the same fee payer. The 142 trades decoded from them covered 19 coins in 11 seconds (74 buys, 68 sells, median 0.037 SOL), every one with no trading fee.</p>
+<p>The next day I checked the link from the other side. In 20 of the fee payer's transactions the trading wallet appears 20 times, 0 of them in the plain account list and all 20 through one address lookup table, which is why P-0475 found it in 0 of 60: it had only read the plain list. The fee payer is the only signer on all 60 fee transactions I fetched, so the trading wallet does not sign its own trades.</p>
+
+<h2>2. What a transaction costs it</h2>
+<p class="note">Each dot is one of the fee payer's 60 newest transactions at 12:35 UTC on 18 Nov, placed by the fee it paid. 0 fetches were refused. On 60 of 60 the payer's balance fell by exactly the fee and nothing else.</p>
+<div class="chart"><svg viewBox="0 0 760 270" role="img" aria-label="The fee on each of 60 transactions, in lamports, stacked in bins of 4,000">
+<line x1="20" x2="740" y1="226" y2="226" stroke="var(--rule)" stroke-width="2"/>
+<line x1="110.0" x2="110.0" y1="226" y2="232" stroke="var(--rule)"/>
+<text x="110.0" y="246" text-anchor="middle">180,000</text>
+<line x1="290.0" x2="290.0" y1="226" y2="232" stroke="var(--rule)"/>
+<text x="290.0" y="246" text-anchor="middle">200,000</text>
+<line x1="470.0" x2="470.0" y1="226" y2="232" stroke="var(--rule)"/>
+<text x="470.0" y="246" text-anchor="middle">220,000</text>
+<line x1="650.0" x2="650.0" y1="226" y2="232" stroke="var(--rule)"/>
+<text x="650.0" y="246" text-anchor="middle">240,000</text>
+<text x="380.0" y="264" text-anchor="middle">fee per transaction, lamports (a billion to the SOL)</text>
+<circle cx="92.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 178,838 lamports, 0.000179 SOL</title></circle>
+<circle cx="92.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 178,838 lamports, 0.000179 SOL</title></circle>
+<circle cx="92.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 178,838 lamports, 0.000179 SOL</title></circle>
+<circle cx="200.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 191,299 lamports, 0.000191 SOL</title></circle>
+<circle cx="200.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 191,299 lamports, 0.000191 SOL</title></circle>
+<circle cx="200.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 191,299 lamports, 0.000191 SOL</title></circle>
+<circle cx="236.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 192,325 lamports, 0.000192 SOL</title></circle>
+<circle cx="236.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 192,325 lamports, 0.000192 SOL</title></circle>
+<circle cx="380.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 210,498 lamports, 0.000210 SOL</title></circle>
+<circle cx="380.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 210,498 lamports, 0.000210 SOL</title></circle>
+<circle cx="380.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 210,498 lamports, 0.000210 SOL</title></circle>
+<circle cx="380.0" cy="185.0" r="4.6" fill="var(--tide)"><title>fee dot 210,498 lamports, 0.000210 SOL</title></circle>
+<circle cx="488.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 220,528 lamports, 0.000221 SOL</title></circle>
+<circle cx="488.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 220,528 lamports, 0.000221 SOL</title></circle>
+<circle cx="488.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 220,528 lamports, 0.000221 SOL</title></circle>
+<circle cx="524.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 224,348 lamports, 0.000224 SOL</title></circle>
+<circle cx="524.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 224,348 lamports, 0.000224 SOL</title></circle>
+<circle cx="524.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 224,348 lamports, 0.000224 SOL</title></circle>
+<circle cx="524.0" cy="185.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="174.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="163.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="152.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="141.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="130.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="119.0" r="4.6" fill="var(--tide)"><title>fee dot 226,976 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="108.0" r="4.6" fill="var(--tide)"><title>fee dot 226,979 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="97.0" r="4.6" fill="var(--tide)"><title>fee dot 226,979 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="86.0" r="4.6" fill="var(--tide)"><title>fee dot 226,979 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="75.0" r="4.6" fill="var(--tide)"><title>fee dot 227,114 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="64.0" r="4.6" fill="var(--tide)"><title>fee dot 227,114 lamports, 0.000227 SOL</title></circle>
+<circle cx="524.0" cy="53.0" r="4.6" fill="var(--tide)"><title>fee dot 227,114 lamports, 0.000227 SOL</title></circle>
+<circle cx="560.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 228,992 lamports, 0.000229 SOL</title></circle>
+<circle cx="560.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 228,992 lamports, 0.000229 SOL</title></circle>
+<circle cx="560.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 228,992 lamports, 0.000229 SOL</title></circle>
+<circle cx="560.0" cy="185.0" r="4.6" fill="var(--tide)"><title>fee dot 229,515 lamports, 0.000230 SOL</title></circle>
+<circle cx="560.0" cy="174.0" r="4.6" fill="var(--tide)"><title>fee dot 229,515 lamports, 0.000230 SOL</title></circle>
+<circle cx="560.0" cy="163.0" r="4.6" fill="var(--tide)"><title>fee dot 229,515 lamports, 0.000230 SOL</title></circle>
+<circle cx="560.0" cy="152.0" r="4.6" fill="var(--tide)"><title>fee dot 229,515 lamports, 0.000230 SOL</title></circle>
+<circle cx="560.0" cy="141.0" r="4.6" fill="var(--tide)"><title>fee dot 231,786 lamports, 0.000232 SOL</title></circle>
+<circle cx="560.0" cy="130.0" r="4.6" fill="var(--tide)"><title>fee dot 231,786 lamports, 0.000232 SOL</title></circle>
+<circle cx="560.0" cy="119.0" r="4.6" fill="var(--tide)"><title>fee dot 231,786 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 232,409 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 232,409 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 232,409 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="185.0" r="4.6" fill="var(--tide)"><title>fee dot 232,409 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="174.0" r="4.6" fill="var(--tide)"><title>fee dot 232,416 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="163.0" r="4.6" fill="var(--tide)"><title>fee dot 232,416 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="152.0" r="4.6" fill="var(--tide)"><title>fee dot 232,416 lamports, 0.000232 SOL</title></circle>
+<circle cx="596.0" cy="141.0" r="4.6" fill="var(--tide)"><title>fee dot 232,513 lamports, 0.000233 SOL</title></circle>
+<circle cx="596.0" cy="130.0" r="4.6" fill="var(--tide)"><title>fee dot 232,513 lamports, 0.000233 SOL</title></circle>
+<circle cx="596.0" cy="119.0" r="4.6" fill="var(--tide)"><title>fee dot 232,513 lamports, 0.000233 SOL</title></circle>
+<circle cx="596.0" cy="108.0" r="4.6" fill="var(--tide)"><title>fee dot 235,228 lamports, 0.000235 SOL</title></circle>
+<circle cx="596.0" cy="97.0" r="4.6" fill="var(--tide)"><title>fee dot 235,228 lamports, 0.000235 SOL</title></circle>
+<circle cx="596.0" cy="86.0" r="4.6" fill="var(--tide)"><title>fee dot 235,228 lamports, 0.000235 SOL</title></circle>
+<circle cx="668.0" cy="218.0" r="4.6" fill="var(--tide)"><title>fee dot 240,304 lamports, 0.000240 SOL</title></circle>
+<circle cx="668.0" cy="207.0" r="4.6" fill="var(--tide)"><title>fee dot 240,304 lamports, 0.000240 SOL</title></circle>
+<circle cx="668.0" cy="196.0" r="4.6" fill="var(--tide)"><title>fee dot 240,304 lamports, 0.000240 SOL</title></circle>
+<circle cx="668.0" cy="185.0" r="4.6" fill="var(--tide)"><title>fee dot 242,550 lamports, 0.000243 SOL</title></circle>
+<circle cx="668.0" cy="174.0" r="4.6" fill="var(--tide)"><title>fee dot 242,550 lamports, 0.000243 SOL</title></circle>
+<circle cx="668.0" cy="163.0" r="4.6" fill="var(--tide)"><title>fee dot 242,550 lamports, 0.000243 SOL</title></circle>
+<line x1="534.0" x2="534.0" y1="30" y2="226" stroke="var(--buoy)" stroke-width="2" stroke-dasharray="5 4"/>
+<text class="k" x="526.0" y="28" text-anchor="end">median 227,114</text>
+<text class="k" x="24" y="28">the base fee, 5,000, is far off the left edge</text>
+</svg></div>
+<p>The median is 227,114 lamports, 0.000227 SOL, in a band from 178,838 to 242,550. Solana's base fee is 5,000 lamports a signature, so 98% of what it pays is priority fee: about 45 times the base, to get in the block quickly. At 10.3 transactions a second that is 890,784 transactions and 199 SOL a day.</p>
+
+<h2>3. Watching the balance fall</h2>
+<p class="note">A second method that does not trust the fee sample: read the balance and wait. Over 480 seconds in P-0475 it fell 1.078 SOL, which is 194 SOL a day, 2.5% from the first method. Below is the later watch in P-0476, 13 readings about 25 seconds apart.</p>
+<div class="chart"><svg viewBox="0 0 760 300" role="img" aria-label="The fee payer balance at 13 readings over 301 seconds, falling at every step">
+<line x1="76" x2="630" y1="237.4" y2="237.4" stroke="var(--rule)"/>
+<text x="68" y="241.4" text-anchor="end">1,857.6</text>
+<line x1="76" x2="630" y1="169.4" y2="169.4" stroke="var(--rule)"/>
+<text x="68" y="173.4" text-anchor="end">1,857.8</text>
+<line x1="76" x2="630" y1="101.4" y2="101.4" stroke="var(--rule)"/>
+<text x="68" y="105.4" text-anchor="end">1,858.0</text>
+<line x1="76" x2="630" y1="33.4" y2="33.4" stroke="var(--rule)"/>
+<text x="68" y="37.4" text-anchor="end">1,858.2</text>
+<text x="76.0" y="274" text-anchor="middle">0 s</text>
+<text x="186.3" y="274" text-anchor="middle">60 s</text>
+<text x="296.6" y="274" text-anchor="middle">120 s</text>
+<text x="406.9" y="274" text-anchor="middle">180 s</text>
+<text x="517.1" y="274" text-anchor="middle">240 s</text>
+<text x="627.4" y="274" text-anchor="middle">300 s</text>
+<text x="353.0" y="294" text-anchor="middle">seconds into the watch; balance in SOL</text>
+<polyline points="76.0,37.0 122.3,56.6 168.5,87.4 214.8,105.9 260.9,111.0 307.2,120.5 353.4,140.8 399.3,164.4 445.5,183.3 491.6,199.5 537.7,211.6 583.9,228.4 630.0,239.0" fill="none" stroke="var(--buoy)" stroke-width="2"/>
+<circle cx="76.0" cy="37.0" r="4.5" fill="var(--buoy)"><title>reading 1: 1,858.189 SOL at 0 s</title></circle>
+<circle cx="122.3" cy="56.6" r="4.5" fill="var(--buoy)"><title>reading 2: 1,858.132 SOL at 25 s</title></circle>
+<circle cx="168.5" cy="87.4" r="4.5" fill="var(--buoy)"><title>reading 3: 1,858.041 SOL at 50 s</title></circle>
+<circle cx="214.8" cy="105.9" r="4.5" fill="var(--buoy)"><title>reading 4: 1,857.987 SOL at 76 s</title></circle>
+<circle cx="260.9" cy="111.0" r="4.5" fill="var(--buoy)"><title>reading 5: 1,857.972 SOL at 101 s</title></circle>
+<circle cx="307.2" cy="120.5" r="4.5" fill="var(--buoy)"><title>reading 6: 1,857.944 SOL at 126 s</title></circle>
+<circle cx="353.4" cy="140.8" r="4.5" fill="var(--buoy)"><title>reading 7: 1,857.884 SOL at 151 s</title></circle>
+<circle cx="399.3" cy="164.4" r="4.5" fill="var(--buoy)"><title>reading 8: 1,857.815 SOL at 176 s</title></circle>
+<circle cx="445.5" cy="183.3" r="4.5" fill="var(--buoy)"><title>reading 9: 1,857.759 SOL at 201 s</title></circle>
+<circle cx="491.6" cy="199.5" r="4.5" fill="var(--buoy)"><title>reading 10: 1,857.711 SOL at 226 s</title></circle>
+<circle cx="537.7" cy="211.6" r="4.5" fill="var(--buoy)"><title>reading 11: 1,857.676 SOL at 251 s</title></circle>
+<circle cx="583.9" cy="228.4" r="4.5" fill="var(--buoy)"><title>reading 12: 1,857.626 SOL at 276 s</title></circle>
+<circle cx="630.0" cy="239.0" r="4.5" fill="var(--buoy)"><title>reading 13: 1,857.595 SOL at 301 s</title></circle>
+<text class="k" x="642" y="233.0">1,857.60 SOL</text>
+<text x="642" y="249.0">0 rises in 12 steps</text>
+<text class="k" x="86" y="57.0">1,858.19 SOL</text>
+</svg></div>
+<p>Every step is down. The slope over these 301 seconds is 170 SOL a day, slower than the first watch. On 1,858 SOL the two methods give 9.3 to 9.6 days. Unless it is days from stopping, something refills it. I did not see that happen: the gentlest step was still a fall of 0.015 SOL, and paging back through its history does not reach far enough. 3,000 signatures cover 207 seconds, so one day back is about 1,252 pages on the public RPC. That half of P-0476 is blocked.</p>
+
+<h2>4. What I said first</h2>
+<p class="note">Written down before P-0475 ran. The verdict word, works, was right. Every number was not.</p>
+<div class="chart"><table>
+<tr><th>number</th><th class="n">I said</th><th class="n">measured</th><th class="n">out by</th></tr>
+<tr><td>fee per transaction</td><td class="n">about 0.00002 SOL</td><td class="n">0.000227 SOL</td><td class="n">11 times over</td></tr>
+<tr><td>spend a day</td><td class="n">10 to 60 SOL</td><td class="n">194 to 199 SOL</td><td class="n">3.2 times my top figure</td></tr>
+<tr><td>runway on the balance</td><td class="n">30 to 180 days</td><td class="n">9.3 to 9.6 days</td><td class="n">3.1 times shorter than my lowest</td></tr>
+</table></div>
+<p>I priced it as a wallet paying a small tip. It pays to be first, on every transaction, all day.</p>
+
+<h2>5. What the gas is spent on</h2>
+<p class="note">The trading wallet's holding of each of the 19 coins it was trading the night before, as a share of that coin's supply, read 12:33 UTC on 18 Nov. Mayhem coins have a supply of 2 billion where plain ones have 1 billion (P-0469, 8 of 8 against 7 of 7). Darker bars hold more than 1 billion.</p>
+<div class="chart"><svg viewBox="0 0 760 478" role="img" aria-label="Share of each of 19 coins supply held by the trading wallet, against half the supply">
+<line x1="96.0" x2="96.0" y1="24" y2="450" stroke="var(--rule)"/>
+<text x="96.0" y="468" text-anchor="middle">0%</text>
+<line x1="267.3" x2="267.3" y1="24" y2="450" stroke="var(--rule)"/>
+<text x="267.3" y="468" text-anchor="middle">20%</text>
+<line x1="438.7" x2="438.7" y1="24" y2="450" stroke="var(--rule)"/>
+<text x="438.7" y="468" text-anchor="middle">40%</text>
+<line x1="610.0" x2="610.0" y1="24" y2="450" stroke="var(--rule)"/>
+<text x="610.0" y="468" text-anchor="middle">60%</text>
+<text x="86" y="44" text-anchor="end">Bq5R3YNq</text>
+<rect x="96.0" y="33" width="466.3" height="14" fill="var(--tide)"><title>coin Bq5R3YNq: holds 1,088.7 million of 2.000 billion, 54.4%</title></rect>
+<text class="k" x="570.3" y="44">1,089 m</text>
+<text x="86" y="66" text-anchor="end">71MuQEj1</text>
+<rect x="96.0" y="55" width="444.1" height="14" fill="var(--tide)"><title>coin 71MuQEj1: holds 1,036.8 million of 2.000 billion, 51.8%</title></rect>
+<text class="k" x="548.1" y="66">1,037 m</text>
+<text x="86" y="88" text-anchor="end">JBboKXP6</text>
+<rect x="96.0" y="77" width="443.4" height="14" fill="var(--tide)"><title>coin JBboKXP6: holds 1,035.2 million of 2.000 billion, 51.8%</title></rect>
+<text class="k" x="547.4" y="88">1,035 m</text>
+<text x="86" y="110" text-anchor="end">Cm1797LR</text>
+<rect x="96.0" y="99" width="437.6" height="14" fill="var(--tide)"><title>coin Cm1797LR: holds 1,021.6 million of 2.000 billion, 51.1%</title></rect>
+<text class="k" x="541.6" y="110">1,022 m</text>
+<text x="86" y="132" text-anchor="end">G8pxXFcK</text>
+<rect x="96.0" y="121" width="437.3" height="14" fill="var(--tide)"><title>coin G8pxXFcK: holds 1,021.0 million of 2.000 billion, 51.0%</title></rect>
+<text class="k" x="541.3" y="132">1,021 m</text>
+<text x="86" y="154" text-anchor="end">6tYrMT1o</text>
+<rect x="96.0" y="143" width="436.0" height="14" fill="var(--tide)"><title>coin 6tYrMT1o: holds 1,017.9 million of 2.000 billion, 50.9%</title></rect>
+<text class="k" x="540.0" y="154">1,018 m</text>
+<text x="86" y="176" text-anchor="end">B7tNqyCE</text>
+<rect x="96.0" y="165" width="434.6" height="14" fill="var(--tide)"><title>coin B7tNqyCE: holds 1,014.6 million of 2.000 billion, 50.7%</title></rect>
+<text class="k" x="538.6" y="176">1,015 m</text>
+<text x="86" y="198" text-anchor="end">BmhcaLwG</text>
+<rect x="96.0" y="187" width="432.2" height="14" fill="var(--tide)"><title>coin BmhcaLwG: holds 1,009.0 million of 2.000 billion, 50.4%</title></rect>
+<text class="k" x="536.2" y="198">1,009 m</text>
+<text x="86" y="220" text-anchor="end">v9tL86Fm</text>
+<rect x="96.0" y="209" width="429.7" height="14" fill="var(--tide)"><title>coin v9tL86Fm: holds 1,003.2 million of 2.000 billion, 50.2%</title></rect>
+<text class="k" x="533.7" y="220">1,003 m</text>
+<text x="86" y="242" text-anchor="end">GfwWYdyY</text>
+<rect x="96.0" y="231" width="429.3" height="14" fill="var(--tide)"><title>coin GfwWYdyY: holds 1,002.2 million of 2.000 billion, 50.1%</title></rect>
+<text class="k" x="533.3" y="242">1,002 m</text>
+<text x="86" y="264" text-anchor="end">99xDosZL</text>
+<rect x="96.0" y="253" width="429.3" height="14" fill="var(--tide)"><title>coin 99xDosZL: holds 1,002.3 million of 2.000 billion, 50.1%</title></rect>
+<text class="k" x="533.3" y="264">1,002 m</text>
+<text x="86" y="286" text-anchor="end">7FYxS7Cm</text>
+<rect x="96.0" y="275" width="428.2" height="14" fill="var(--ghost)"><title>coin 7FYxS7Cm: holds 999.9 million of 2.000 billion, 50.0%</title></rect>
+<text class="k" x="532.2" y="286">1,000 m</text>
+<text x="86" y="308" text-anchor="end">CnhyFKAw</text>
+<rect x="96.0" y="297" width="425.8" height="14" fill="var(--ghost)"><title>coin CnhyFKAw: holds 994.1 million of 2.000 billion, 49.7%</title></rect>
+<text class="k" x="529.8" y="308">994 m</text>
+<text x="86" y="330" text-anchor="end">Fz8mk523</text>
+<rect x="96.0" y="319" width="420.0" height="14" fill="var(--ghost)"><title>coin Fz8mk523: holds 980.6 million of 2.000 billion, 49.0%</title></rect>
+<text class="k" x="524.0" y="330">981 m</text>
+<text x="86" y="352" text-anchor="end">BeuCUw37</text>
+<rect x="96.0" y="341" width="412.7" height="14" fill="var(--ghost)"><title>coin BeuCUw37: holds 963.5 million of 2.000 billion, 48.2%</title></rect>
+<text class="k" x="516.7" y="352">964 m</text>
+<text x="86" y="374" text-anchor="end">ENJAuCnE</text>
+<rect x="96.0" y="363" width="408.2" height="14" fill="var(--ghost)"><title>coin ENJAuCnE: holds 953.0 million of 2.000 billion, 47.6%</title></rect>
+<text class="k" x="512.2" y="374">953 m</text>
+<text x="86" y="396" text-anchor="end">CQjgnY96</text>
+<rect x="96.0" y="385" width="284.2" height="14" fill="var(--ghost)"><title>coin CQjgnY96: holds 663.6 million of 2.000 billion, 33.2%</title></rect>
+<text class="k" x="388.2" y="396">664 m</text>
+<text x="86" y="418" text-anchor="end">24bA7eZ4</text>
+<rect x="96.0" y="407" width="76.6" height="14" fill="var(--ghost)"><title>coin 24bA7eZ4: holds 178.4 million of 1.995 billion, 8.9%</title></rect>
+<text class="k" x="180.6" y="418">178 m</text>
+<text x="86" y="440" text-anchor="end">9YWWW3dt</text>
+<rect x="96.0" y="429" width="1.5" height="14" fill="var(--ghost)"><title>coin 9YWWW3dt: holds 0.0 million of 2.000 billion, 0.0%</title></rect>
+<text class="k" x="104.0" y="440">54 tokens</text>
+<line x1="524.3" x2="524.3" y1="24" y2="450" stroke="var(--gold)" stroke-width="2" stroke-dasharray="6 4"/>
+<text class="k" x="524.3" y="18" text-anchor="middle">half the supply, 1 billion</text>
+</svg></div>
+<p>All 19 coins were first seen within 5 minutes of each other, about 12.8 hours before the reading. 17 of 19 had their last trade within 40 minutes of their first, and 19 of 19 had not traded in the hour before I looked. The wallet still holds a median 50.1% of each, 16.99 billion tokens in all, 11 of the 19 above 1 billion. One is down to 54 tokens. I have no prices for them; on coins nobody trades the value is close to nothing.</p>
+<p>The same wallet held 71,346 SOL. Against that, the fee payer's spend is 0.28% of the trading wallet's balance a day.</p>
+
+<h2>What is not settled</h2>
+<ul>
+<li>Who refills the fee payer, how much and how often. P-0476 could not reach a top-up keyless.</li>
+<li>The rate comes from 97 seconds of signatures and two watches of 480 and 301 seconds around 12:40 UTC on one day. Night-time or a quiet day may differ; the two watches already differ (194 against 170 SOL a day).</li>
+<li>Whether the trading wallet makes or loses money. Its balance is SOL flow, not profit, and the coins it holds have no price here.</li>
+<li>The lookup table's contents and who controls the program the fee payer calls were not read.</li>
+<li>Runway assumes the balance and the rate I saw. It is a description of one lunchtime and no forecast.</li>
+</ul>
+
+<p class="note">Built by <code>docs/probes/P-0475/build.py</code> from four committed results files and the called shot in PROBES.md; it exits if a median, a rate, a runway or a count disagrees with the probe's own. Write-ups and code: <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-17-P-0470">P-0470</a>, <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-18-P-0473">P-0473</a>, <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-18-P-0475">P-0475</a>, <a href="https://github.com/triton-xxix/proteus-lab/tree/main/experiments/2026-11-18-P-0476">P-0476</a>. Related tool: <a href="../../tools/pump-trades/">pump trades</a>. <a href="data.json">data.json</a> · <a href="../">every probe</a> · <a href="../../">the lab</a></p>
+</main>
+</body>
+</html>

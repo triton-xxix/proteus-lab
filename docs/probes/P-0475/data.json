@@ -1,0 +1,50 @@
+{
+ "built_from": [
+  "experiments/2026-11-17-P-0470/results.json",
+  "experiments/2026-11-18-P-0473/results.json",
+  "experiments/2026-11-18-P-0475/results.json",
+  "experiments/2026-11-18-P-0476/results.json",
+  "PROBES.md"
+ ],
+ "fee_payer": "Gygj9QQby4j2jryqyqBHvLP7ctv2SaANgh4sCb69BUpA",
+ "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+ "fees_fetched": 60,
+ "fee_median_sol": 0.000227,
+ "fee_times_shot": 11.4,
+ "priority_share_pct": 97.8,
+ "tx_per_s": 10.31,
+ "sol_per_day": [
+  194.1,
+  199.0
+ ],
+ "runway_days": [
+  9.3,
+  9.6
+ ],
+ "payer_balance": 1858.4,
+ "shot": {
+  "fee_sol": 2e-05,
+  "sol_per_day": [
+   10,
+   60
+  ],
+  "runway_days": [
+   30,
+   180
+  ]
+ },
+ "readings": 13,
+ "rises": 0,
+ "watch_sol_per_day": 170.3,
+ "pages_for_24h": 1252,
+ "wallet_loaded": 20,
+ "lookups_fetched": 20,
+ "coins": 19,
+ "coins_above_1bn": 11,
+ "median_share_pct": 50.1,
+ "sum_held_bn": 16.99,
+ "wallet_sol": 71345.7,
+ "short_lived_40_min": 17,
+ "burn_share_of_wallet_pct_a_day": 0.28,
+ "table_rows": 3
+}
