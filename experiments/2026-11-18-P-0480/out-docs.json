@@ -1,0 +1,198 @@
+{
+ "folder": "/Users/triton/PROTEUS/docs",
+ "pages": 27,
+ "sentences": 2080,
+ "sentence_repeat": 0.0183,
+ "shingles": 18090,
+ "shingle_repeat": 0.0152,
+ "most_repeated": [
+  {
+   "on_pages": 11,
+   "sentence": "back to the lab"
+  },
+  {
+   "on_pages": 4,
+   "sentence": "what this does not answer"
+  },
+  {
+   "on_pages": 4,
+   "sentence": "what is not settled"
+  },
+  {
+   "on_pages": 4,
+   "sentence": "data json every probe the lab"
+  },
+  {
+   "on_pages": 3,
+   "sentence": "not yet checked at phone width in a real browser"
+  },
+  {
+   "on_pages": 2,
+   "sentence": "the word and the number"
+  }
+ ],
+ "per_page": {
+  "index.html": {
+   "sentences": 1012,
+   "sentence_repeat": 0.003,
+   "shingles": 8729,
+   "shingle_repeat": 0.0038
+  },
+  "bootgpt/index.html": {
+   "sentences": 43,
+   "sentence_repeat": 0.0,
+   "shingles": 232,
+   "shingle_repeat": 0.0
+  },
+  "tools/first-link/index.html": {
+   "sentences": 44,
+   "sentence_repeat": 0.0227,
+   "shingles": 352,
+   "shingle_repeat": 0.0426
+  },
+  "tools/synop-highs/index.html": {
+   "sentences": 32,
+   "sentence_repeat": 0.0312,
+   "shingles": 328,
+   "shingle_repeat": 0.0366
+  },
+  "tools/channel-digest/index.html": {
+   "sentences": 117,
+   "sentence_repeat": 0.0,
+   "shingles": 1223,
+   "shingle_repeat": 0.0016
+  },
+  "tools/pacf-check/index.html": {
+   "sentences": 34,
+   "sentence_repeat": 0.0,
+   "shingles": 299,
+   "shingle_repeat": 0.0167
+  },
+  "tools/webgpu-check/index.html": {
+   "sentences": 44,
+   "sentence_repeat": 0.0,
+   "shingles": 287,
+   "shingle_repeat": 0.0035
+  },
+  "tools/luck-test/index.html": {
+   "sentences": 34,
+   "sentence_repeat": 0.0,
+   "shingles": 158,
+   "shingle_repeat": 0.0127
+  },
+  "tools/bias-check/index.html": {
+   "sentences": 40,
+   "sentence_repeat": 0.0,
+   "shingles": 280,
+   "shingle_repeat": 0.0357
+  },
+  "tools/pump-trades/index.html": {
+   "sentences": 41,
+   "sentence_repeat": 0.0244,
+   "shingles": 454,
+   "shingle_repeat": 0.0308
+  },
+  "probes/index.html": {
+   "sentences": 16,
+   "sentence_repeat": 0.125,
+   "shingles": 168,
+   "shingle_repeat": 0.1131
+  },
+  "probes/numbers/index.html": {
+   "sentences": 24,
+   "sentence_repeat": 0.0833,
+   "shingles": 194,
+   "shingle_repeat": 0.0052
+  },
+  "probes/P-0237/index.html": {
+   "sentences": 32,
+   "sentence_repeat": 0.0938,
+   "shingles": 327,
+   "shingle_repeat": 0.0673
+  },
+  "probes/P-0200/index.html": {
+   "sentences": 29,
+   "sentence_repeat": 0.069,
+   "shingles": 229,
+   "shingle_repeat": 0.0524
+  },
+  "probes/P-0405/index.html": {
+   "sentences": 60,
+   "sentence_repeat": 0.0333,
+   "shingles": 636,
+   "shingle_repeat": 0.0173
+  },
+  "probes/P-0433/index.html": {
+   "sentences": 64,
+   "sentence_repeat": 0.0312,
+   "shingles": 575,
+   "shingle_repeat": 0.0087
+  },
+  "probes/P-0475/index.html": {
+   "sentences": 77,
+   "sentence_repeat": 0.026,
+   "shingles": 730,
+   "shingle_repeat": 0.0082
+  },
+  "probes/P-0128/index.html": {
+   "sentences": 23,
+   "sentence_repeat": 0.087,
+   "shingles": 234,
+   "shingle_repeat": 0.0128
+  },
+  "probes/P-0180/index.html": {
+   "sentences": 37,
+   "sentence_repeat": 0.0541,
+   "shingles": 386,
+   "shingle_repeat": 0.013
+  },
+  "probes/P-0234/index.html": {
+   "sentences": 31,
+   "sentence_repeat": 0.0968,
+   "shingles": 376,
+   "shingle_repeat": 0.0665
+  },
+  "probes/P-0158/index.html": {
+   "sentences": 29,
+   "sentence_repeat": 0.069,
+   "shingles": 279,
+   "shingle_repeat": 0.0143
+  },
+  "probes/shots/index.html": {
+   "sentences": 25,
+   "sentence_repeat": 0.08,
+   "shingles": 187,
+   "shingle_repeat": 0.107
+  },
+  "probes/P-0354/index.html": {
+   "sentences": 57,
+   "sentence_repeat": 0.0351,
+   "shingles": 565,
+   "shingle_repeat": 0.0212
+  },
+  "record/index.html": {
+   "sentences": 51,
+   "sentence_repeat": 0.0392,
+   "shingles": 297,
+   "shingle_repeat": 0.064
+  },
+  "calibration/index.html": {
+   "sentences": 62,
+   "sentence_repeat": 0.0161,
+   "shingles": 412,
+   "shingle_repeat": 0.0146
+  },
+  "ladder/index.html": {
+   "sentences": 20,
+   "sentence_repeat": 0.05,
+   "shingles": 140,
+   "shingle_repeat": 0.0786
+  },
+  "dash/index.html": {
+   "sentences": 2,
+   "sentence_repeat": 0.0,
+   "shingles": 13,
+   "shingle_repeat": 0.0
+  }
+ }
+}

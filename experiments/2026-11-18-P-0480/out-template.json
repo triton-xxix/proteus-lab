@@ -1,0 +1,104 @@
+{
+ "folder": "/Users/triton/PROTEUS/experiments/2026-11-18-P-0480/sets/template",
+ "pages": 12,
+ "sentences": 144,
+ "sentence_repeat": 0.6667,
+ "shingles": 1080,
+ "shingle_repeat": 0.8111,
+ "most_repeated": [
+  {
+   "on_pages": 12,
+   "sentence": "we fix leaks blocked drains failed boilers and frozen pipes"
+  },
+  {
+   "on_pages": 12,
+   "sentence": "every job is priced before we start with no call out fee"
+  },
+  {
+   "on_pages": 12,
+   "sentence": "all our engineers are gas safe registered and fully insured"
+  },
+  {
+   "on_pages": 12,
+   "sentence": "we carry the common parts on the van so most repairs are done in one visit"
+  },
+  {
+   "on_pages": 12,
+   "sentence": "call us any time of day or night including bank holidays"
+  }
+ ],
+ "per_page": {
+  "barnsley.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "bradford.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "doncaster.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "halifax.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "harrogate.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "huddersfield.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "hull.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "leeds.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "rotherham.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "sheffield.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "wakefield.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  },
+  "york.html": {
+   "sentences": 12,
+   "sentence_repeat": 0.6667,
+   "shingles": 90,
+   "shingle_repeat": 0.8111
+  }
+ }
+}

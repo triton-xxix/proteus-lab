@@ -12207,15 +12207,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-18",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:36:45+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:37:59+0000",
+   "note": "dupcheck.py (standard library) reads the planted sets exactly: true shared shares 0, 22.7, 45.5, 68.2, 90.9 percent returned to the decimal; my shot missed at 75 and 100 because my set builder added two unique lines a page. The 12-town name-swap template scores 66.7 percent by sentence and 81.1 percent by five-word shingle, so a sentence-only checker passes a third of a pure template as unique. docs/ scores 1.8 percent (shot said 10 to 35), 27 pages with text, JSON-drawn pages under-counted. Not done: a fact-sheet-first town set, so no pass mark. Next: deepen when a real client page set exists.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0480"
+   ],
+   "minutes": 1,
+   "calls": 14,
    "denied": [],
    "luke": false
   }
