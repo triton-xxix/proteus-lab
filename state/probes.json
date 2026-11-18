@@ -1,5 +1,5 @@
 {
- "next_id": 485,
+ "next_id": 486,
  "items": [
   {
    "id": "P-0001",
@@ -12307,6 +12307,28 @@
     "experiments/2026-11-18-P-0484"
    ],
    "minutes": 1,
+   "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0485",
+   "title": "ICON lead-1 day-high error at EGLC and LFPB, 1 to 17 Nov, low-cloud mornings against the rest, beside the Polymarket gaps of +0.52 C and +0.34 C from P-0484",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-18",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-18T23:47:42+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T23:48:21+0000",
+   "note": "ICON lead-1 against the market bucket on the same 17 days (METAR high matched the bucket on 34 of 34): mean abs error 0.69 C at EGLC and 0.87 C at LFPB, against the 09Z market at 0.47 and 0.65. At London City ICON was +0.66 C cold on 8 low-cloud mornings and -0.50 C warm on the other 9, a gap of +1.16 C, the opposite sign to Munich (-1.07, P-0446); the market gap there is +0.52, so the price removes about half, the same shape as Munich. Rounded ICON degree right 6 and 7 of 17 against the favourite at 11 and 7. Shot: market better hit; the London gap sign missed (called -0.3 to -1.0); degree hits missed. Caveats: 17 days, 09Z price against a day-before forecast, no permutation. Next: re-run on 30 days at month end.",
+   "artefacts": [
+    "experiments/2026-11-18-P-0485"
+   ],
+   "minutes": 0,
    "calls": 4,
    "denied": [],
    "luke": false
