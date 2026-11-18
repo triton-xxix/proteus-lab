@@ -18,7 +18,7 @@
   "P-0233",
   "P-0472"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-18T00:14:03+0000",
+ "stop_reason": "8 probes done, 17 calls left under the cap and step 7 still to run; a ninth would not finish cleanly",
  "refills": 1
 }
