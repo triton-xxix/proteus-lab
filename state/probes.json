@@ -1,5 +1,5 @@
 {
- "next_id": 476,
+ "next_id": 477,
  "items": [
   {
    "id": "P-0001",
@@ -12087,9 +12087,38 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-18T12:35:16+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-18T12:44:21+0000",
+   "note": "Fee payer spends 194 to 199 SOL a day: median fee 0.000227 SOL a transaction (60 fetched, 0 refused, 98% of it priority fee), 10.3 transactions a second, and a balance drift of 1.078 SOL in 480 s; two methods 2.5% apart. Runway on 1,858 SOL is 9.3 to 9.6 days, so it is being topped up. Shot said about 0.00002 SOL a transaction, 10 to 60 SOL a day, runway 30 to 180 days: verdict right, fee 11 times my guess, every number missed. Caveats: 8 minutes at lunchtime; the trading wallet is not in the static keys of the 60 (lookup tables not read), so the link rests on P-0470. Next: deepen (P-0476 queued, who tops it up and the lookup-table check).",
+   "artefacts": [
+    "experiments/2026-11-18-P-0475"
+   ],
+   "minutes": 9,
+   "calls": 11,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "median fee about 0.00002 SOL a transaction (two signatures plus a small priority fee), 10 to 60 SOL a day in fees, runway 30 to 180 days",
+    "at": "2026-11-18T12:35:23+0000",
+    "hit": true
+   }
+  },
+  {
+   "id": "P-0476",
+   "title": "Mayhem fee payer top-ups: Gygj9QQb spends about 195 SOL a day from 1,858 SOL, under ten days of runway. Find inbound SOL transfers to it (sample its signatures back in time by paging with before=, or check getTransaction pre and post balances for rises), who sends them, how big and how often; and read meta.loadedAddresses on 20 of its transactions to confirm the trading wallet BwWK17cb is in them.",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-18",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12097,13 +12126,7 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false,
-   "shot": {
-    "expect": "works",
-    "p": 0.7,
-    "number": "median fee about 0.00002 SOL a transaction (two signatures plus a small priority fee), 10 to 60 SOL a day in fees, runway 30 to 180 days",
-    "at": "2026-11-18T12:35:23+0000"
-   }
+   "luke": false
   }
  ]
 }

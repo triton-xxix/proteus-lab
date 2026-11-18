@@ -1,0 +1,636 @@
+{
+ "summary": {
+  "at": "2026-11-18T12:35:48Z",
+  "payer": "Gygj9QQby4j2jryqyqBHvLP7ctv2SaANgh4sCb69BUpA",
+  "balance_start": 1859.494453567,
+  "signatures": 1000,
+  "failed": 15,
+  "span_s": 97,
+  "newest_age_s": 0.9,
+  "tx_per_s": 10.31,
+  "fetched": 60,
+  "refused": 0,
+  "fee_lamports_median": 227114.0,
+  "fee_lamports_mean": 223364.2,
+  "fee_lamports_min": 178838,
+  "fee_lamports_max": 242550,
+  "n_sigs_counts": {
+   "1": 60
+  },
+  "payer_is_first": 60,
+  "wallet_in_tx": 0,
+  "payer_delta_mean_lamports": -223364.2,
+  "payer_delta_equals_minus_fee": 60,
+  "cu_median": 121265.0,
+  "tx_per_day": 890784,
+  "fees_sol_per_day_from_rate": 198.97,
+  "balance_end": 1858.416061362,
+  "drift_s": 480.1,
+  "drift_sol": -1.078392,
+  "drift_sol_per_day": -194.07,
+  "runway_days_from_drift": 9.6,
+  "runway_days_from_rate": 9.3
+ },
+ "rows": [
+  {
+   "sig": "546UT3YJ8R1izqxR",
+   "fee": 191299,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -191299,
+   "wallet_in_tx": false,
+   "cu": 123814,
+   "err": false
+  },
+  {
+   "sig": "errLG9qNRLrkKXJ8",
+   "fee": 191299,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -191299,
+   "wallet_in_tx": false,
+   "cu": 135945,
+   "err": false
+  },
+  {
+   "sig": "2Lpy4EL4DVBcydKA",
+   "fee": 191299,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -191299,
+   "wallet_in_tx": false,
+   "cu": 136810,
+   "err": false
+  },
+  {
+   "sig": "2tcpu32Kjq8CD7LL",
+   "fee": 192325,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -192325,
+   "wallet_in_tx": false,
+   "cu": 120831,
+   "err": false
+  },
+  {
+   "sig": "VrvGKoi9gS7kVeCH",
+   "fee": 192325,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -192325,
+   "wallet_in_tx": false,
+   "cu": 136853,
+   "err": false
+  },
+  {
+   "sig": "QpNDzsWZvxVjLjfi",
+   "fee": 235228,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -235228,
+   "wallet_in_tx": false,
+   "cu": 138841,
+   "err": false
+  },
+  {
+   "sig": "2Tqw2oZXLznqKtEp",
+   "fee": 235228,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -235228,
+   "wallet_in_tx": false,
+   "cu": 117419,
+   "err": false
+  },
+  {
+   "sig": "2dVQv7fcigGFzXqc",
+   "fee": 235228,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -235228,
+   "wallet_in_tx": false,
+   "cu": 135814,
+   "err": false
+  },
+  {
+   "sig": "5zTG23CqH2SNXw8P",
+   "fee": 227114,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -227114,
+   "wallet_in_tx": false,
+   "cu": 120141,
+   "err": false
+  },
+  {
+   "sig": "3ER5UVwW6G5TbdtE",
+   "fee": 227114,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -227114,
+   "wallet_in_tx": false,
+   "cu": 120198,
+   "err": false
+  },
+  {
+   "sig": "4VHiziZY5jG2hZxx",
+   "fee": 227114,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -227114,
+   "wallet_in_tx": false,
+   "cu": 132828,
+   "err": false
+  },
+  {
+   "sig": "5s7jicswMY1ruvKK",
+   "fee": 228992,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -228992,
+   "wallet_in_tx": false,
+   "cu": 132866,
+   "err": false
+  },
+  {
+   "sig": "3G2TkC3mB4aZr3GB",
+   "fee": 228992,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -228992,
+   "wallet_in_tx": false,
+   "cu": 124627,
+   "err": false
+  },
+  {
+   "sig": "66bqJdiVuVi1gbfj",
+   "fee": 228992,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -228992,
+   "wallet_in_tx": false,
+   "cu": 109047,
+   "err": false
+  },
+  {
+   "sig": "3zycgJT6Y3EL4Eu1",
+   "fee": 224348,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -224348,
+   "wallet_in_tx": false,
+   "cu": 142745,
+   "err": false
+  },
+  {
+   "sig": "35yfHVWBPRA3cLSJ",
+   "fee": 224348,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -224348,
+   "wallet_in_tx": false,
+   "cu": 124630,
+   "err": false
+  },
+  {
+   "sig": "4f6ndbpGnHpNc9yo",
+   "fee": 224348,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -224348,
+   "wallet_in_tx": false,
+   "cu": 124629,
+   "err": false
+  },
+  {
+   "sig": "26PXY43Kogm4GRmv",
+   "fee": 220528,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -220528,
+   "wallet_in_tx": false,
+   "cu": 126104,
+   "err": false
+  },
+  {
+   "sig": "4phDgqt8h8SY6bu6",
+   "fee": 220528,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -220528,
+   "wallet_in_tx": false,
+   "cu": 123889,
+   "err": false
+  },
+  {
+   "sig": "2zpGsDFZGb1Fqk92",
+   "fee": 220528,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -220528,
+   "wallet_in_tx": false,
+   "cu": 117919,
+   "err": false
+  },
+  {
+   "sig": "2nmsSExuBci1iX8u",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 123894,
+   "err": false
+  },
+  {
+   "sig": "4HcKkpcmHsEXPfYv",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 106593,
+   "err": false
+  },
+  {
+   "sig": "rBgMCSGiRR6NzhL6",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 142797,
+   "err": false
+  },
+  {
+   "sig": "4Cyn8rbgW2iWW7VX",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 127730,
+   "err": false
+  },
+  {
+   "sig": "62UzrXfmtKzcmCN6",
+   "fee": 226979,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226979,
+   "wallet_in_tx": false,
+   "cu": 142771,
+   "err": false
+  },
+  {
+   "sig": "2RirmefJv16fyrFJ",
+   "fee": 226979,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226979,
+   "wallet_in_tx": false,
+   "cu": 109689,
+   "err": false
+  },
+  {
+   "sig": "3q34RV8RkXHNdE7E",
+   "fee": 226979,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226979,
+   "wallet_in_tx": false,
+   "cu": 142805,
+   "err": false
+  },
+  {
+   "sig": "4gNpXYVvnrpZa3q2",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 109569,
+   "err": false
+  },
+  {
+   "sig": "5bGffkr9BjL4Kj45",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 106577,
+   "err": false
+  },
+  {
+   "sig": "2oezB6qzsP3SWJdq",
+   "fee": 226976,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -226976,
+   "wallet_in_tx": false,
+   "cu": 131488,
+   "err": false
+  },
+  {
+   "sig": "Mj4vHvkjYj9XTUAM",
+   "fee": 232416,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232416,
+   "wallet_in_tx": false,
+   "cu": 112555,
+   "err": false
+  },
+  {
+   "sig": "9Zbva3vTH39djQGK",
+   "fee": 232416,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232416,
+   "wallet_in_tx": false,
+   "cu": 120885,
+   "err": false
+  },
+  {
+   "sig": "4iJcaXpaZ4pb9YdX",
+   "fee": 232416,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232416,
+   "wallet_in_tx": false,
+   "cu": 109674,
+   "err": false
+  },
+  {
+   "sig": "4thWT48WUZkpTRB9",
+   "fee": 232513,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232513,
+   "wallet_in_tx": false,
+   "cu": 123812,
+   "err": false
+  },
+  {
+   "sig": "PvHpG32PcS7PGY5p",
+   "fee": 232513,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232513,
+   "wallet_in_tx": false,
+   "cu": 135841,
+   "err": false
+  },
+  {
+   "sig": "4HvNC77Jeoy4JC35",
+   "fee": 232513,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232513,
+   "wallet_in_tx": false,
+   "cu": 110570,
+   "err": false
+  },
+  {
+   "sig": "2SUtoNMpWnCS3NtP",
+   "fee": 240304,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -240304,
+   "wallet_in_tx": false,
+   "cu": 124603,
+   "err": false
+  },
+  {
+   "sig": "4mFd1DhkTL2D35Hz",
+   "fee": 240304,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -240304,
+   "wallet_in_tx": false,
+   "cu": 110518,
+   "err": false
+  },
+  {
+   "sig": "JuneEBfB7obExBZh",
+   "fee": 240304,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -240304,
+   "wallet_in_tx": false,
+   "cu": 131543,
+   "err": false
+  },
+  {
+   "sig": "5zGm5jKUzrTTLyJL",
+   "fee": 242550,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -242550,
+   "wallet_in_tx": false,
+   "cu": 117149,
+   "err": false
+  },
+  {
+   "sig": "4pnhwVjb4Bj6wNUo",
+   "fee": 242550,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -242550,
+   "wallet_in_tx": false,
+   "cu": 112134,
+   "err": false
+  },
+  {
+   "sig": "5e2aMvShXzpVWACm",
+   "fee": 242550,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -242550,
+   "wallet_in_tx": false,
+   "cu": 121645,
+   "err": false
+  },
+  {
+   "sig": "2dAgpXqK1ZS8vkyg",
+   "fee": 232409,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232409,
+   "wallet_in_tx": false,
+   "cu": 124654,
+   "err": false
+  },
+  {
+   "sig": "475w1yNQDqRcEzDp",
+   "fee": 232409,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232409,
+   "wallet_in_tx": false,
+   "cu": 110491,
+   "err": false
+  },
+  {
+   "sig": "4vTcSM2t9Nc6FDUQ",
+   "fee": 232409,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232409,
+   "wallet_in_tx": false,
+   "cu": 117322,
+   "err": false
+  },
+  {
+   "sig": "4DYi6YE7KS8ZF4fh",
+   "fee": 232409,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -232409,
+   "wallet_in_tx": false,
+   "cu": 117304,
+   "err": false
+  },
+  {
+   "sig": "3BVqr3KVhGvc8CNF",
+   "fee": 231786,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -231786,
+   "wallet_in_tx": false,
+   "cu": 78887,
+   "err": true
+  },
+  {
+   "sig": "5KkYUmjoPqftyrrA",
+   "fee": 231786,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -231786,
+   "wallet_in_tx": false,
+   "cu": 112629,
+   "err": false
+  },
+  {
+   "sig": "4pv4BAdZsrGD8hBm",
+   "fee": 231786,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -231786,
+   "wallet_in_tx": false,
+   "cu": 109702,
+   "err": false
+  },
+  {
+   "sig": "MZsBUjyF6CGWyafb",
+   "fee": 229515,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -229515,
+   "wallet_in_tx": false,
+   "cu": 142779,
+   "err": false
+  },
+  {
+   "sig": "5pJVfMdViw4PHhVd",
+   "fee": 229515,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -229515,
+   "wallet_in_tx": false,
+   "cu": 120675,
+   "err": false
+  },
+  {
+   "sig": "34zDnbMiSiCPf43S",
+   "fee": 229515,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -229515,
+   "wallet_in_tx": false,
+   "cu": 135760,
+   "err": false
+  },
+  {
+   "sig": "2y6T6u2cbXrn2afR",
+   "fee": 229515,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -229515,
+   "wallet_in_tx": false,
+   "cu": 128368,
+   "err": false
+  },
+  {
+   "sig": "519zLJ1mmr33uu8N",
+   "fee": 210498,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -210498,
+   "wallet_in_tx": false,
+   "cu": 115269,
+   "err": false
+  },
+  {
+   "sig": "5X5VhoK5JQ5YqHkm",
+   "fee": 210498,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -210498,
+   "wallet_in_tx": false,
+   "cu": 106540,
+   "err": false
+  },
+  {
+   "sig": "2q8QMsc3MUnPMqWe",
+   "fee": 210498,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -210498,
+   "wallet_in_tx": false,
+   "cu": 115233,
+   "err": false
+  },
+  {
+   "sig": "2hYqsTojUxDD6wBn",
+   "fee": 210498,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -210498,
+   "wallet_in_tx": false,
+   "cu": 115560,
+   "err": false
+  },
+  {
+   "sig": "2NY3UBrZRarTjfTJ",
+   "fee": 178838,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -178838,
+   "wallet_in_tx": false,
+   "cu": 124699,
+   "err": false
+  },
+  {
+   "sig": "78NFzhxXwWKcZG9d",
+   "fee": 178838,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -178838,
+   "wallet_in_tx": false,
+   "cu": 117833,
+   "err": false
+  },
+  {
+   "sig": "4WhCNQ7CwAmh9uFF",
+   "fee": 178838,
+   "n_sigs": 1,
+   "payer_is_first": true,
+   "payer_delta": -178838,
+   "wallet_in_tx": false,
+   "cu": 117096,
+   "err": false
+  }
+ ]
+}
