@@ -1342,7 +1342,7 @@
    "track": 11,
    "title": "Rank Expand: Start Here, Paths to $1,000, Gear Up and the Offer Library (the nine offers, what a client buys)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/rankexpand-01-start-here.md",
     "field-notes/skool/transcripts/rankexpand-start-here-suggested-path.txt",
@@ -1352,14 +1352,17 @@
     "field-notes/skool/rankexpand-06-the-offer-library.md"
    ],
    "why": "The sales-and-offers gap: what the room says to sell first, at what price, to whom, and how it gets the first client in 90 days. Pull out the nine offers as a table with price and delivery. Mark anything that only works with the locked Agency Engine. Goal line (Luke, 18 Nov 2026: 'I think that will be important'): Rank Expand sells AI SEO as a service, Neptune's own line of work. The frameworks index has Local SEO (Automatable, Review Harvest) and nothing on rank-and-rent microsites, directory sites or an Upwork path. Judge the mechanism, not the pitch; say what is new against the frameworks, what repeats them with more examples, and what is pointed at the locked premium courses. Called shot committed before the pull: field-notes/SKOOL-RANK-EXPAND-2026-11-18.md. Pulled on the 7-day trial; the readers' verdicts decide keep or cancel before day 7 (25 Nov).",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-11-19",
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-11-19-S-61.md"
   },
   {
    "id": "S-62",
    "track": 11,
    "title": "Rank Expand: the Upwork Playbook (30 modules, 23 videos, the 90-day path)",
    "model": "haiku",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/rankexpand-04-the-upwork-playbook.md",
     "field-notes/skool/transcripts/rankexpand-the-upwork-playbook-1-choose-your-agency-name.txt",
@@ -1387,7 +1390,10 @@
     "field-notes/skool/transcripts/rankexpand-the-upwork-playbook-welcome-to-90-days-to-freedom-using-ai.txt"
    ],
    "why": "Called shot line 8 expects PARK: a freelancer path Luke does not need. Read the titles and openings first, then only the modules that carry a method (applications, profile, niche). Say in one line whether anything transfers to agency outbound. Goal line (Luke, 18 Nov 2026: 'I think that will be important'): Rank Expand sells AI SEO as a service, Neptune's own line of work. The frameworks index has Local SEO (Automatable, Review Harvest) and nothing on rank-and-rent microsites, directory sites or an Upwork path. Judge the mechanism, not the pitch; say what is new against the frameworks, what repeats them with more examples, and what is pointed at the locked premium courses. Called shot committed before the pull: field-notes/SKOOL-RANK-EXPAND-2026-11-18.md. Pulled on the 7-day trial; the readers' verdicts decide keep or cancel before day 7 (25 Nov).",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-11-19",
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-11-19-S-62.md"
   },
   {
    "id": "S-63",
