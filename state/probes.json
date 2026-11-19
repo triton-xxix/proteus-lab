@@ -12561,9 +12561,9 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-19",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T23:36:50+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12571,7 +12571,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "2 of 5 loudness peaks within 15 s of a most-replayed peak",
+    "at": "2026-11-19T23:36:59+0000"
+   }
   },
   {
    "id": "P-0495",
