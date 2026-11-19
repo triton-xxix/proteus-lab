@@ -1,5 +1,5 @@
 {
- "next_id": 491,
+ "next_id": 492,
  "items": [
   {
    "id": "P-0001",
@@ -12464,6 +12464,32 @@
     "number": "agent account in about 55 percent of the mint signatures (median of three coins); agent account first touched in the birth transaction itself or within 5 seconds of it",
     "at": "2026-11-19T12:37:14+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0491",
+   "title": "Mayhem coins alive at lunchtime and how fast they are born: fetch 60 of the mayhem wallet's newest transactions with getTransaction, list the distinct mints in its post token balances, and read each mint's first signature for a birth time. How many coins is the agent working at once at about 12:45 UK against 19 at 23:47, how old are they (median and oldest), and what birth rate an hour does live count over median age imply?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-19",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T12:38:56+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "about 15 distinct coins in 60 transactions (19 at midnight), median age about 6 minutes, oldest about 30",
+    "at": "2026-11-19T12:39:02+0000"
    }
   }
  ]

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 402 works, 8 broken, 42 blocked, 20 not worth it. Killed: 5.
 
-## Queue (13 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,7 @@ Verdicts so far: 402 works, 8 broken, 42 blocked, 20 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
+| P-0491 | Mayhem coins alive at lunchtime and how fast they are born: fetch 60 of the mayhem wallet's newest transactions with getTransaction, list the distinct mints in its post token balances, and read each mint's first signature for a birth time. How many coins is the agent working at once at about 12:45 UK against 19 at 23:47, how old are they (median and oldest), and what birth rate an hour does live count over median age imply? | refill | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (472)
 
