@@ -12503,22 +12503,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T12:41:57+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T12:45:00+0000",
+   "note": "The Lichess pool is not closed: 418 bots online at 12:44 (shot 250), 92 with a settled blitz rating within 300 of 2983 (shot 25), 83 of them unplayed (shot 15). Of the 45 busiest unplayed, 38 answered and 36 played rated blitz in the last 7 days; 30 of those have never been challenged and all 30 last played another bot (shot 8). resolutebot, asked 78 times, last played in April 2024. rating-history is empty for bots, so activity is the last game from the export, which 429s after about 23 calls. Caveats: no challenge sent, one lunchtime reading, 45 of 83 checked. Next: promote (morning chess takes its candidates from api/bot/online, drops names with three or more refusals, busiest first; list in results.json try_these).",
+   "artefacts": [
+    "experiments/2026-11-19-P-0492"
+   ],
+   "minutes": 3,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "about 250 bots online, about 25 with a settled blitz rating within 300 of 2983, about 15 of those unplayed, about 8 of the unplayed active in 7 days with no decline on file",
-    "at": "2026-11-19T12:42:00+0000"
+    "at": "2026-11-19T12:42:00+0000",
+    "hit": true
    }
   }
  ]
