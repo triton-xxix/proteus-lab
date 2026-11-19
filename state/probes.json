@@ -1,5 +1,5 @@
 {
- "next_id": 503,
+ "next_id": 504,
  "items": [
   {
    "id": "P-0001",
@@ -12807,6 +12807,32 @@
     "number": "10 of 12 co-burned coins were under 30 minutes past 24 hours, so a rolling sweep",
     "at": "2026-11-19T23:58:39+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0503",
+   "title": "Wikipedia 3 to 4 Nov turnover: which articles entered the top 1,000 on 4 Nov, do they share a subject, and did 5 Nov go back to the 2 Nov list?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-19",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T23:59:49+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "at least 100 of the 4 Nov entrants carry an election word in the title (US midterms, 3 Nov)",
+    "at": "2026-11-19T23:59:52+0000"
    }
   }
  ]
