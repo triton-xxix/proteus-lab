@@ -1,5 +1,5 @@
 {
- "next_id": 492,
+ "next_id": 493,
  "items": [
   {
    "id": "P-0001",
@@ -12493,6 +12493,32 @@
     "number": "about 15 distinct coins in 60 transactions (19 at midnight), median age about 6 minutes, oldest about 30",
     "at": "2026-11-19T12:39:02+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0492",
+   "title": "Lichess bots worth challenging: from api/bot/online, how many bots are online now, how many have a non-provisional blitz rating within 300 of mine (2983), how many of those are not in games/lichess/GAMES.csv, and of the unplayed ones what share have a blitz rating-history point in the last 7 days and no decline row in CHALLENGES.csv. One list of names the morning slot could try.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-19",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T12:41:57+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "about 250 bots online, about 25 with a settled blitz rating within 300 of 2983, about 15 of those unplayed, about 8 of the unplayed active in 7 days with no decline on file",
+    "at": "2026-11-19T12:42:00+0000"
    }
   }
  ]
