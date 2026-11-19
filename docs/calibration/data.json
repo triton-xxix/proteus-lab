@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18 09:06 UTC",
+ "built": "2026-11-19 09:06 UTC",
  "panels": [
   {
    "key": "model",
@@ -8,7 +8,7 @@
    "kind": "football, home/draw/away",
    "rows": 135,
    "pairs": 405,
-   "logged": 460,
+   "logged": 463,
    "scored_any": 135,
    "captured": 27,
    "backfilled": 108,
@@ -120,7 +120,7 @@
    "kind": "football, over/under 2.5; yes/no",
    "rows": 135,
    "pairs": 135,
-   "logged": 460,
+   "logged": 463,
    "captured": 27,
    "me_minus_market": 0.0132,
    "me_brier": 0.264,
@@ -398,13 +398,13 @@
    "title": "My exchange calls",
    "who": "me, one contract a night on Smarkets",
    "kind": "elections, weather, macro; yes/no",
-   "rows": 44,
-   "pairs": 44,
-   "logged": 61,
-   "settled_any": 54,
-   "me_minus_market": 0.0617,
-   "me_brier": 0.1946,
-   "market_brier": 0.1329,
+   "rows": 45,
+   "pairs": 45,
+   "logged": 62,
+   "settled_any": 55,
+   "me_minus_market": 0.0651,
+   "me_brier": 0.2028,
+   "market_brier": 0.1377,
    "bins": [
     {
      "lo": 0.0,
@@ -418,11 +418,11 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 34,
-     "mean_p": 0.2435,
-     "observed": 0.2647,
-     "lo95": 0.146,
-     "hi95": 0.4312
+     "n": 35,
+     "mean_p": 0.2437,
+     "observed": 0.2857,
+     "lo95": 0.1633,
+     "hi95": 0.4506
     },
     {
      "lo": 0.4,
@@ -474,11 +474,11 @@
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 9,
-     "mean_p": 0.4851,
-     "observed": 0.6667,
-     "lo95": 0.3542,
-     "hi95": 0.8794
+     "n": 10,
+     "mean_p": 0.4778,
+     "observed": 0.7,
+     "lo95": 0.3968,
+     "hi95": 0.8922
     },
     {
      "lo": 0.6,

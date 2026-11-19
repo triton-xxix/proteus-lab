@@ -1,42 +1,42 @@
 {
  "summary": {
-  "n": 456,
+  "n": 469,
   "by_verdict": {
-   "works": 388,
-   "not-worth-it": 19,
-   "blocked": 41,
+   "works": 399,
+   "not-worth-it": 20,
+   "blocked": 42,
    "broken": 8
   },
-  "open": 11,
+  "open": 14,
   "killed": 5,
-  "minutes_total": 751,
+  "minutes_total": 772,
   "minutes_median": 1,
-  "calls_total": 4985,
-  "pages": 9,
+  "calls_total": 5075,
+  "pages": 10,
   "first": "2026-09-24",
   "last": "2026-11-18"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 181,
-   "works": 171,
+   "n": 186,
+   "works": 176,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 1
   },
   {
    "source": "desk",
-   "n": 108,
-   "works": 91,
-   "not-worth-it": 6,
-   "blocked": 10,
+   "n": 114,
+   "works": 95,
+   "not-worth-it": 7,
+   "blocked": 11,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 99,
-   "works": 76,
+   "n": 100,
+   "works": 77,
    "not-worth-it": 3,
    "blocked": 14,
    "broken": 6
@@ -59,8 +59,8 @@
   },
   {
    "source": "field-notes",
-   "n": 17,
-   "works": 14,
+   "n": 18,
+   "works": 15,
    "not-worth-it": 1,
    "blocked": 2,
    "broken": 0
@@ -133,9 +133,9 @@
   },
   {
    "week": "2026-11-16",
-   "works": 20,
-   "not-worth-it": 0,
-   "blocked": 1,
+   "works": 31,
+   "not-worth-it": 1,
+   "blocked": 2,
    "broken": 0
   }
  ],
@@ -6951,6 +6951,187 @@
     "p": 0.7,
     "hit": 1
    }
+  },
+  {
+   "id": "P-0473",
+   "title": "Mayhem wallet inventory by mint: getTokenAccountsByOwner with a mint filter (answers keyless where the full Token-2022 listing gave 413) for the 19 coins in experiments/…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-18T12:34:53+0000",
+   "minutes": 2,
+   "calls": 9,
+   "note": "Mint filter answers 19 of 19 keyless (the 413 is only the unfiltered listing). Wallet holds a median 1,002.3 million a coin, 50.1% of supply, non-zero in all 19 (one is 54 tokens), 11 above the 1 billion it was handed; shot said 19 answer, 15+ non-zero, median about 1.0 billion. Not in the shot: all 19 coins were born…",
+   "artefact": "experiments/2026-11-18-P-0473",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0475",
+   "title": "Mayhem fee payer cost: Gygj9QQb...BUpA holds 1,859.6 SOL at 12:38 on 18 Nov. Fee per transaction from 60 of its newest transactions (meta.fee), its transaction rate from…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-18T12:44:21+0000",
+   "minutes": 9,
+   "calls": 11,
+   "note": "Fee payer spends 194 to 199 SOL a day: median fee 0.000227 SOL a transaction (60 fetched, 0 refused, 98% of it priority fee), 10.3 transactions a second, and a balance drift of 1.078 SOL in 480 s; two methods 2.5% apart. Runway on 1,858 SOL is 9.3 to 9.6 days, so it is being topped up. Shot said about 0.00002 SOL a tr…",
+   "artefact": "experiments/2026-11-18-P-0475",
+   "page": true,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0476",
+   "title": "Mayhem fee payer top-ups: Gygj9QQb spends about 195 SOL a day from 1,858 SOL, under ten days of runway. Find inbound SOL transfers to it (sample its signatures back in t…",
+   "source": "desk",
+   "verdict": "blocked",
+   "at": "2026-11-18T12:50:47+0000",
+   "minutes": 6,
+   "calls": 6,
+   "note": "Top-ups: 0 seen in 13 balance readings over 301 s (every step down, -170 SOL a day), and paging cannot reach them: 3,000 signatures cover 207 s, so a day back is about 1,250 pages; shot said 0 seen and about 890 pages. The link half is answered: trading wallet in 20 of 20 transactions through one lookup table (Hyif6eW…",
+   "artefact": "experiments/2026-11-18-P-0476",
+   "page": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0479",
+   "title": "Voyager 1: does keyless JPL Horizons give an Earth distance within 2% of one light-day today?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-18T23:36:38+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Horizons answers keyless in one request: Voyager 1 on 18 Nov 00:00 UTC is 25,899,668,326 km from the Earth centre, 173.129 AU, light time 23.9978 h, 0.009 percent short of one light-day; the first daily row past it is 20 Nov, so the crossing falls on 19 Nov UTC. Shot (171.5 to 173.5 AU, inside 2 percent, p 0.7) hit on…",
+   "artefact": "experiments/2026-11-18-P-0479",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0480",
+   "title": "Duplicate-content checker for multi-town page sets: share of sentences and 5-word shingles repeated across pages, baseline on docs/ and on a 12-town template set",
+   "source": "field-notes",
+   "verdict": "works",
+   "at": "2026-11-18T23:37:59+0000",
+   "minutes": 1,
+   "calls": 14,
+   "note": "dupcheck.py (standard library) reads the planted sets exactly: true shared shares 0, 22.7, 45.5, 68.2, 90.9 percent returned to the decimal; my shot missed at 75 and 100 because my set builder added two unique lines a page. The 12-town name-swap template scores 66.7 percent by sentence and 81.1 percent by five-word sh…",
+   "artefact": "experiments/2026-11-18-P-0480",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0477",
+   "title": "Exchange book split: Munich forecast-model calls against search-based calls, me minus market Brier for each and how many of each",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-18T23:38:58+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "The exchange book gap is in the half with no search: 39 Munich model calls at +0.0739 (se 0.022) against 6 search calls at +0.0078 (se 0.078). Inside Munich, all of it is on the 12 days my degree won (+0.2377 a row, 12 of 12 worse than the market); on the 27 losers I am level (+0.0011). Backed out of the Brier means,…",
+   "artefact": "experiments/2026-11-18-P-0477",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0478",
+   "title": "P-0245 favourite check re-run at 30 kept Munich winners: fav.py against exchange/munich_outcomes.jsonl, how often did the night-before favourite win and what did backing…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-18T23:40:10+0000",
+   "minutes": 1,
+   "calls": 12,
+   "note": "At 30 kept winners, 28 joined: the night-before Smarkets favourite won 15 (53.6 percent), Brier 0.2132 v 0.2487 flat. The 0.40 cut: 14 of 18 above it won (mean mid 0.52, +7.34 paper units at the offer), 1 of 10 below (-7.65). On the 5 markets settled since P-0434, the only rows the cut had not seen, 3 of 4 above won a…",
+   "artefact": "experiments/2026-11-18-P-0478",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0481",
+   "title": "Munich anchors read directly: for each counted Munich call, my p, the anchor mid and the ICON-EPS band width captured that night; does a narrow band mark the nights the…",
+   "source": "desk",
+   "verdict": "not-worth-it",
+   "at": "2026-11-18T23:40:41+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "Not run: it repeats P-0428 (12 Nov), which already read the band width against winning nights on 17 rows (wider, not narrower: 1.64C v 1.26C) and set a wait for 15 METAR-rule rows; P-0422 read the anchors row by row. I queued this by passing --repeat-ok without reading the lines the guard showed, the P-0388 mistake ag…",
+   "artefact": "experiments/2026-11-18-P-0481",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0482",
+   "title": "api.onaa.net a day after P-0468: /v1/stores and stores.csv now answer 404 while health says ok; of the parameter-free public GET paths in its openapi.json (admin left ou…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-18T23:43:45+0000",
+   "minutes": 1,
+   "calls": 3,
+   "note": "Of 31 parameter-free non-admin GET paths in the spec (84 paths, 47 with GET), 19 answer 200, 7 are 404, 3 are 422, 1 is 401, 1 is 503. Six of the seven 404s are the store and buying block (stores.csv, stores.json, /v1/stores, /v1/stores/check, /v1/buying/stores, /v1/buying/check), all the same 22-byte body in under 0.…",
+   "artefact": "experiments/2026-11-18-P-0482",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0484",
+   "title": "Polymarket London and Paris daily-high markets 1 to 17 Nov: favourite hit rate at 09Z, mean error of the implied high, and the low-cloud morning gap at each market's own…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-18T23:46:56+0000",
+   "minutes": 1,
+   "calls": 4,
+   "note": "Both cities scored 17 of 17 days. London settles on EGLC (London City) and Paris on LFPB (Le Bourget), not the Heathrow and CDG that P-0447 measured. 09Z favourite hit 11 of 17 in London (65 percent) and 7 of 17 in Paris (41 percent) at a mean price near 0.54; pooled 18 of 34. Implied high: mean abs error 0.47 C Londo…",
+   "artefact": "experiments/2026-11-18-P-0484",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0485",
+   "title": "ICON lead-1 day-high error at EGLC and LFPB, 1 to 17 Nov, low-cloud mornings against the rest, beside the Polymarket gaps of +0.52 C and +0.34 C from P-0484",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-18T23:48:21+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "ICON lead-1 against the market bucket on the same 17 days (METAR high matched the bucket on 34 of 34): mean abs error 0.69 C at EGLC and 0.87 C at LFPB, against the 09Z market at 0.47 and 0.65. At London City ICON was +0.66 C cold on 8 low-cloud mornings and -0.50 C warm on the other 9, a gap of +1.16 C, the opposite…",
+   "artefact": "experiments/2026-11-18-P-0485",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0487",
+   "title": "Munich low-cloud flag the night before: icon_seamless lead-1 low cloud is not archived (all null), so does lead-1 total cloud cover 06Z to 09Z, or the latest run's low c…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-18T23:50:24+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "Lead-1 low cloud is null on all 8,760 hours for icon_seamless, so the direct test cannot run. Over 365 days with 67 METAR low-cloud mornings (real flag gap -1.065 C, replicating P-0446): the usable stand-in, lead-1 total cloud 95 percent or more at 06Z to 09Z, fires on 145 days (40 percent), catches 48 of 67, is right…",
+   "artefact": "experiments/2026-11-18-P-0487",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0488",
+   "title": "ICON seamless lead-1 against the EDDM METAR day high, 1 to 17 Nov 2026, Europe/Berlin days at the city point: bias, mean absolute error and exact-degree hits on days the…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-18T23:51:35+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "The Munich recipe on 1 to 17 Nov 2026 against the EDDM METAR high: lead 1 bias -0.33 C (se 0.31), mean abs error 0.92 C, exact degree 7 of 17, within one degree 14; without 9 Nov (forecast 8.6, airport 5) the bias is about -0.13. Taking 0.5 C off leaves 7 hits, taking 1.0 C off leaves 4, so nothing to add or subtract.…",
+   "artefact": "experiments/2026-11-18-P-0488",
+   "page": false,
+   "shot": null
   }
  ]
 }

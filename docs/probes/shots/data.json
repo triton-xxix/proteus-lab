@@ -1,17 +1,17 @@
 {
  "summary": {
-  "n": 221,
+  "n": 224,
   "waiting": 0,
-  "hits": 206,
-  "hit_rate": 0.932,
-  "mean_p": 0.659,
-  "brier": 0.143,
-  "brier_at_hit_rate": 0.063,
-  "called_works": 207,
-  "called_works_hits": 197,
-  "called_other": 14,
-  "called_other_hits": 9,
-  "verdict_works": 202,
+  "hits": 209,
+  "hit_rate": 0.933,
+  "mean_p": 0.66,
+  "brier": 0.142,
+  "brier_at_hit_rate": 0.062,
+  "called_works": 209,
+  "called_works_hits": 199,
+  "called_other": 15,
+  "called_other_hits": 10,
+  "verdict_works": 204,
   "first": "2026-10-12",
   "last": "2026-11-18"
  },
@@ -30,15 +30,15 @@
   },
   {
    "label": "60 to 65%",
-   "n": 64,
-   "mean_p": 0.617,
-   "hit_rate": 0.953
+   "n": 65,
+   "mean_p": 0.618,
+   "hit_rate": 0.954
   },
   {
    "label": "70 to 75%",
-   "n": 78,
+   "n": 80,
    "mean_p": 0.721,
-   "hit_rate": 0.936
+   "hit_rate": 0.938
   },
   {
    "label": "80% and up",
@@ -2257,6 +2257,36 @@
    "hit": 1,
    "number": "fewer than 10 open requests, and fewer than half have a quote",
    "at": "2026-11-18T00:13:29+0000"
+  },
+  {
+   "id": "P-0473",
+   "title": "Mayhem wallet inventory by mint: getTokenAccountsByOwner with a mint filter (answers keyless where the full Token-2022 listing gave 413) for",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "all 19 mint-filter calls answer; wallet still holds a non-zero balance in at least 15 of 19, median holding about 1.0 billion (50% of a 2 billion supply)",
+   "at": "2026-11-18T12:32:42+0000"
+  },
+  {
+   "id": "P-0475",
+   "title": "Mayhem fee payer cost: Gygj9QQb...BUpA holds 1,859.6 SOL at 12:38 on 18 Nov. Fee per transaction from 60 of its newest transactions (meta.fe",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "median fee about 0.00002 SOL a transaction (two signatures plus a small priority fee), 10 to 60 SOL a day in fees, runway 30 to 180 days",
+   "at": "2026-11-18T12:35:23+0000"
+  },
+  {
+   "id": "P-0476",
+   "title": "Mayhem fee payer top-ups: Gygj9QQb spends about 195 SOL a day from 1,858 SOL, under ten days of runway. Find inbound SOL transfers to it (sa",
+   "expect": "blocked",
+   "verdict": "blocked",
+   "p": 0.65,
+   "hit": 1,
+   "number": "0 top-ups seen (the public RPC only pages 1,000 signatures, about 97 seconds, at a time, so a day back is about 890 pages); trading wallet found in loaded addresses in at least 18 of 20",
+   "at": "2026-11-18T12:44:42+0000"
   }
  ]
 }
