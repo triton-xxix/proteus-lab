@@ -12445,22 +12445,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T12:37:07+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T12:38:05+0000",
+   "note": "The mayhem agent is 58.0 percent of all signatures on its three busiest coins (49.2, 69.0, 58.0; shot 55), 63.2 percent of the ones that did not fail. Its token account is touched in the birth slot on 3 of 3 (shot: at birth or within 5 seconds); the first signature without it comes 4 seconds later on two coins and shares the birth slot on the third. Zero agent signatures fall outside the mint list, so both lists are complete. The coin the agent sold out of had 29 percent failed transactions against 6 and 9. Caveat: counts not decoded trades, three busiest coins of one night. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0490"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "agent account in about 55 percent of the mint signatures (median of three coins); agent account first touched in the birth transaction itself or within 5 seconds of it",
-    "at": "2026-11-19T12:37:14+0000"
+    "at": "2026-11-19T12:37:14+0000",
+    "hit": true
    }
   }
  ]

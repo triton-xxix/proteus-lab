@@ -1,0 +1,105 @@
+{
+ "summary": {
+  "at": "2026-11-19T12:37:46Z",
+  "coins": 3,
+  "scored": 3,
+  "median_agent_share": 0.5797,
+  "agent_shares": [
+   0.4923,
+   0.6903,
+   0.5797
+  ],
+  "agent_first_after_birth_s": [
+   0,
+   0,
+   0
+  ],
+  "birth_touches_agent": [
+   true,
+   true,
+   false
+  ],
+  "sigs_before_agent_first": [
+   0,
+   0,
+   0
+  ]
+ },
+ "rows": [
+  {
+   "mint": "9YWWW3dtH4k2EVCu1UJzwx9paUDEwb4KaNCsdoWvpump",
+   "sigs_on_18_nov": 780,
+   "agent_token_account": "Et5YtpPVzZyPWTirTNJ7QvRpcQ24WqgSZwh3odvW83bR",
+   "mint_sigs": 782,
+   "mint_complete": true,
+   "agent_account_sigs": 385,
+   "agent_complete": true,
+   "agent_sigs_not_on_mint": 0,
+   "both": 385,
+   "agent_share": 0.4923,
+   "mint_sigs_ok": 553,
+   "mint_sigs_failed": 229,
+   "agent_share_of_ok": 0.5335,
+   "first_hour_sigs": 779,
+   "agent_share_first_hour": 0.4929,
+   "birth_time": 1794959174,
+   "birth_touches_agent": true,
+   "agent_first_after_birth_s": 0,
+   "agent_first_slots_after_birth": 0,
+   "other_first_after_birth_s": 4,
+   "other_first_slots_after_birth": 18,
+   "sigs_before_agent_first": 0,
+   "last_sig_h_after_birth": 31.93
+  },
+  {
+   "mint": "Bq5R3YNq1VK3bYtH1GaEXvBpPepjzJC3T65yFq85pump",
+   "sigs_on_18_nov": 464,
+   "agent_token_account": "DJF9poJPLjYLjDjV3UgvEX5pVp8J5GasasX5M7WgbSxB",
+   "mint_sigs": 465,
+   "mint_complete": true,
+   "agent_account_sigs": 321,
+   "agent_complete": true,
+   "agent_sigs_not_on_mint": 0,
+   "both": 321,
+   "agent_share": 0.6903,
+   "mint_sigs_ok": 439,
+   "mint_sigs_failed": 26,
+   "agent_share_of_ok": 0.7312,
+   "first_hour_sigs": 464,
+   "agent_share_first_hour": 0.6897,
+   "birth_time": 1794959197,
+   "birth_touches_agent": true,
+   "agent_first_after_birth_s": 0,
+   "agent_first_slots_after_birth": 0,
+   "other_first_after_birth_s": 4,
+   "other_first_slots_after_birth": 21,
+   "sigs_before_agent_first": 0,
+   "last_sig_h_after_birth": 24.29
+  },
+  {
+   "mint": "24bA7eZ4Ho4SmYC2eC5AE2QXM4nV5hUjb96vfyePpump",
+   "sigs_on_18_nov": 394,
+   "agent_token_account": "AZMe9aSy8tBwW7TGEr53dcixumvYM85ZuRSoTMwLDPDa",
+   "mint_sigs": 395,
+   "mint_complete": true,
+   "agent_account_sigs": 229,
+   "agent_complete": true,
+   "agent_sigs_not_on_mint": 0,
+   "both": 229,
+   "agent_share": 0.5797,
+   "mint_sigs_ok": 361,
+   "mint_sigs_failed": 34,
+   "agent_share_of_ok": 0.6316,
+   "first_hour_sigs": 394,
+   "agent_share_first_hour": 0.5787,
+   "birth_time": 1794959214,
+   "birth_touches_agent": false,
+   "agent_first_after_birth_s": 0,
+   "agent_first_slots_after_birth": 0,
+   "other_first_after_birth_s": 0,
+   "other_first_slots_after_birth": 0,
+   "sigs_before_agent_first": 0,
+   "last_sig_h_after_birth": 24.3
+  }
+ ]
+}
