@@ -12474,22 +12474,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T12:38:56+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T12:41:25+0000",
+   "note": "At 12:39 UK the mayhem agent was working 20 coins in a 60-transaction sample (shot 15; 19 at midnight), median age 2.6 minutes (shot 6), oldest 52.5 (shot 30); 17 of 20 born in the last five minutes, all 20 births seen. Wallet rate 13.9 transactions a second against 15.4 at midnight, 4 of 1,000 failed. Birth rate about 200 an hour as a floor, about 465 from live count over median age. One extra mint in the sample was USDC, left out. Caveats: one 72-second window, birth rate is an estimate not a count, 20 is a floor. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0491"
+   ],
+   "minutes": 2,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "about 15 distinct coins in 60 transactions (19 at midnight), median age about 6 minutes, oldest about 30",
-    "at": "2026-11-19T12:39:02+0000"
+    "at": "2026-11-19T12:39:02+0000",
+    "hit": true
    }
   }
  ]

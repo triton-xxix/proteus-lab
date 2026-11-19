@@ -1,0 +1,195 @@
+{
+ "summary": {
+  "at": "2026-11-19T12:39:21Z",
+  "wallet_sigs": 1000,
+  "span_s": 72,
+  "tx_per_s": 13.89,
+  "failed_of_1000": 4,
+  "sampled": 60,
+  "fetched": 60,
+  "refused": 0,
+  "fetched_without_wallet_token_balance": 0,
+  "distinct_mints": 21,
+  "ages_known": 20,
+  "ages_lower_bound_only": 1,
+  "median_age_min": 2.58,
+  "min_age_min": 1.49,
+  "max_age_min": 52.46,
+  "born_in_last_10_min": 19,
+  "born_in_last_60_min": 20,
+  "lower_bounds_min": [
+   -0.12
+  ],
+  "implied_births_per_hour_live_over_median_age": 488.4
+ },
+ "rows": [
+  {
+   "mint": "ACauvLCsZatb9CqnVAszPskY9yw6Y4K3dE6qJpQMpump",
+   "sample_txs": 12,
+   "sigs": 383,
+   "birth_seen": true,
+   "oldest_min_ago": 2.53,
+   "newest_s_ago": 67.6
+  },
+  {
+   "mint": "6MvtQdiv33TP7pPF51um8nxCW3dbdZdzSdC8egNCpump",
+   "sample_txs": 9,
+   "sigs": 340,
+   "birth_seen": true,
+   "oldest_min_ago": 2.41,
+   "newest_s_ago": 5.6
+  },
+  {
+   "mint": "tZccyT7QExQByA9E8arwpPyRNzGfcpayQBfpAGrpump",
+   "sample_txs": 5,
+   "sigs": 362,
+   "birth_seen": true,
+   "oldest_min_ago": 3.14,
+   "newest_s_ago": 122.6
+  },
+  {
+   "mint": "2RGFecxBZH9QGc5wqqD8h5FYTq4qZm9QtW16avqqpump",
+   "sample_txs": 4,
+   "sigs": 109,
+   "birth_seen": true,
+   "oldest_min_ago": 1.83,
+   "newest_s_ago": 58.6
+  },
+  {
+   "mint": "EP95KMV7skhaEazFMaMxNQR5c1Uxuk4EwebQZFkspump",
+   "sample_txs": 4,
+   "sigs": 47,
+   "birth_seen": true,
+   "oldest_min_ago": 1.84,
+   "newest_s_ago": 76.6
+  },
+  {
+   "mint": "95dc47cFMBU6DBMRGTMMEMeDRfL4fYMUJW7bqsKbpump",
+   "sample_txs": 4,
+   "sigs": 297,
+   "birth_seen": true,
+   "oldest_min_ago": 3.16,
+   "newest_s_ago": 29.6
+  },
+  {
+   "mint": "GdCEERdykDcHoQaGdjmQhqPR488eHu2Pk6ydmDyHpump",
+   "sample_txs": 3,
+   "sigs": 379,
+   "birth_seen": true,
+   "oldest_min_ago": 7.18,
+   "newest_s_ago": 10.6
+  },
+  {
+   "mint": "AFX7Wxudaf79fVMoyJxB3WkCVomDoQ39p2JSreFVpump",
+   "sample_txs": 2,
+   "sigs": 179,
+   "birth_seen": true,
+   "oldest_min_ago": 1.93,
+   "newest_s_ago": -4.4
+  },
+  {
+   "mint": "HA5Urve7BCL2xm8wV84cmWNH7r6Z79NG6AvJGSgipump",
+   "sample_txs": 2,
+   "sigs": 109,
+   "birth_seen": true,
+   "oldest_min_ago": 5.94,
+   "newest_s_ago": 82.6
+  },
+  {
+   "mint": "EEHCTh3CsLwucov4AZrNodnLgvaFqr5XAADwmLaZpump",
+   "sample_txs": 2,
+   "sigs": 50,
+   "birth_seen": true,
+   "oldest_min_ago": 2.24,
+   "newest_s_ago": 93.6
+  },
+  {
+   "mint": "7rFqvFLLS3wpYyJhrhxJktd85c6Z3QfyWBJaRMHnpump",
+   "sample_txs": 2,
+   "sigs": 56,
+   "birth_seen": true,
+   "oldest_min_ago": 2.38,
+   "newest_s_ago": 41.6
+  },
+  {
+   "mint": "DhC5FLFsVUUGVseZD3aqfHU6vkjNXmbAu6xKnPiapump",
+   "sample_txs": 2,
+   "sigs": 168,
+   "birth_seen": true,
+   "oldest_min_ago": 4.98,
+   "newest_s_ago": 115.6
+  },
+  {
+   "mint": "DAZZNz46ATfF6sF6ptfC3dCxkQHXZZdf6VpvZ8A7pump",
+   "sample_txs": 2,
+   "sigs": 56,
+   "birth_seen": true,
+   "oldest_min_ago": 2.36,
+   "newest_s_ago": -7.4
+  },
+  {
+   "mint": "AW5K6QFU5XD3Qx4ruTRepeBWU9neeLZr5wn648UApump",
+   "sample_txs": 1,
+   "sigs": 33,
+   "birth_seen": true,
+   "oldest_min_ago": 1.49,
+   "newest_s_ago": 11.6
+  },
+  {
+   "mint": "7km9zgFSSVrsbsvE2zTCewz9rNVXdwn1icrqpvhHpump",
+   "sample_txs": 1,
+   "sigs": 127,
+   "birth_seen": true,
+   "oldest_min_ago": 2.21,
+   "newest_s_ago": 69.6
+  },
+  {
+   "mint": "6MJ1A2fh3YGRVSyRSvdzypzeuGDVkf8h8m5Kg1G6pump",
+   "sample_txs": 1,
+   "sigs": 428,
+   "birth_seen": true,
+   "oldest_min_ago": 3.81,
+   "newest_s_ago": 85.6
+  },
+  {
+   "mint": "HXgTg5UbPmxG8njnvZP5gw76Vd8woF7VYzuQmorVpump",
+   "sample_txs": 1,
+   "sigs": 300,
+   "birth_seen": true,
+   "oldest_min_ago": 52.46,
+   "newest_s_ago": 6.6
+  },
+  {
+   "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "sample_txs": 1,
+   "sigs": 1000,
+   "birth_seen": false,
+   "oldest_min_ago": -0.12,
+   "newest_s_ago": -17.4
+  },
+  {
+   "mint": "GgTGkC5Xb2rqY1jMm5rbJG6roUtmzs91byKrU6KQpump",
+   "sample_txs": 1,
+   "sigs": 23,
+   "birth_seen": true,
+   "oldest_min_ago": 2.63,
+   "newest_s_ago": 118.6
+  },
+  {
+   "mint": "Fszpxn44fuEsZc5bthoLd2FjP8oncogh6SzQgkaypump",
+   "sample_txs": 1,
+   "sigs": 131,
+   "birth_seen": true,
+   "oldest_min_ago": 4.66,
+   "newest_s_ago": 131.6
+  },
+  {
+   "mint": "7JuGNnHPeARPEP4szseebv6yybAmnYiz8YvqhFrfpump",
+   "sample_txs": 1,
+   "sigs": 341,
+   "birth_seen": true,
+   "oldest_min_ago": 4.34,
+   "newest_s_ago": -19.4
+  }
+ ]
+}
