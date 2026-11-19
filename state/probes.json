@@ -12067,22 +12067,25 @@
    "after": "2026-11-19",
    "est_minutes": 20,
    "added": "2026-11-18",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T12:31:23+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T12:32:55+0000",
+   "note": "Mayhem 24-hour burn is real and exact: 19 of 19 wallet holdings now zero (shot: at least 17), sum held 16.986 billion to 0.000 (shot: under 0.2), median supply 2.000 to 0.998 billion (shot: near 1.0). Supply fell by exactly the 12.8-hour holding on all 18 real holdings (ratio 1.0000), so burned not sold; last signature on 18 mints about 00:05 UK 19 Nov, 24.3 hours after birth. Wallet SOL down 219 in the day (71,345.73 to 71,126.40), unexplained. Caveat: burn inferred from supply, instruction not decoded; one batch of 19. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0474"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "at least 17 of 19 holdings at zero, sum held under 0.2 billion (was 16.99), median supply near 1.0 billion (was 2.0)",
-    "at": "2026-11-19T12:31:32+0000"
+    "at": "2026-11-19T12:31:32+0000",
+    "hit": true
    }
   },
   {
