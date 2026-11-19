@@ -1,0 +1,140 @@
+{
+ "rows": [
+  {
+   "mint": "2bgKsGrzN9D9kEkLrZEAPp4KGuywe3BdMQrRUYhKpump",
+   "batch": "qBwrJwYG",
+   "burn_blockTime": 1795046632,
+   "birth_blockTime": 1794957145,
+   "signatures": 52,
+   "birth_complete": true,
+   "seconds_past_24h": 3087,
+   "age_hours_at_burn": 24.858
+  },
+  {
+   "mint": "3ysaChEvuxwhs9jtvGsJsGhjh5Tj2T1xhwCzJzbSpump",
+   "batch": "qBwrJwYG",
+   "burn_blockTime": 1795046632,
+   "birth_blockTime": 1794958992,
+   "signatures": 42,
+   "birth_complete": true,
+   "seconds_past_24h": 1240,
+   "age_hours_at_burn": 24.344
+  },
+  {
+   "mint": "7FVWFdYtjvaJugACASU7gB48JVkXC8g4JcPu2gtapump",
+   "batch": "qBwrJwYG",
+   "burn_blockTime": 1795046632,
+   "birth_blockTime": 1794958746,
+   "signatures": 29,
+   "birth_complete": true,
+   "seconds_past_24h": 1486,
+   "age_hours_at_burn": 24.413
+  },
+  {
+   "mint": "89nzURVv35dEmZh6RiRKiuLsDbeeKskGPSBxEtE5pump",
+   "batch": "qBwrJwYG",
+   "burn_blockTime": 1795046632,
+   "birth_blockTime": 1794958309,
+   "signatures": 487,
+   "birth_complete": true,
+   "seconds_past_24h": 1923,
+   "age_hours_at_burn": 24.534
+  },
+  {
+   "mint": "4THxWxkWMBjcaUdxXygdEUR6EVSJcTnKmFDuTZTipump",
+   "batch": "3G9WhVZc",
+   "burn_blockTime": 1795046695,
+   "birth_blockTime": 1794959250,
+   "signatures": 54,
+   "birth_complete": true,
+   "seconds_past_24h": 1045,
+   "age_hours_at_burn": 24.29
+  },
+  {
+   "mint": "5Ew2BfjfBxhGZW8Fi4MwHhzdAUfFkTHssXEpKDaHpump",
+   "batch": "3G9WhVZc",
+   "burn_blockTime": 1795046695,
+   "birth_blockTime": 1794957678,
+   "signatures": 5,
+   "birth_complete": true,
+   "seconds_past_24h": 2617,
+   "age_hours_at_burn": 24.727
+  },
+  {
+   "mint": "8wK9t1JRRLdJekFqnv4BJ6sQ1iGn4T4n7Hysjecupump",
+   "batch": "3G9WhVZc",
+   "burn_blockTime": 1795046695,
+   "birth_blockTime": 1794959089,
+   "signatures": 70,
+   "birth_complete": true,
+   "seconds_past_24h": 1206,
+   "age_hours_at_burn": 24.335
+  },
+  {
+   "mint": "HyKsZWYF7hxpniMkZ5ws5zga7KNTYsEAo32i5KARpump",
+   "batch": "3G9WhVZc",
+   "burn_blockTime": 1795046695,
+   "birth_blockTime": 1794959858,
+   "signatures": 153,
+   "birth_complete": true,
+   "seconds_past_24h": 437,
+   "age_hours_at_burn": 24.121
+  },
+  {
+   "mint": "2nErEmZ4eE6xUPacL5U4UdiW3MQGrTsdBPPvBGJYpump",
+   "batch": "DB4qemYy",
+   "burn_blockTime": 1795046721,
+   "birth_blockTime": 1794960211,
+   "signatures": 23,
+   "birth_complete": true,
+   "seconds_past_24h": 110,
+   "age_hours_at_burn": 24.031
+  },
+  {
+   "mint": "4fknJqA9Ab6LhMELhntddwSy24GNwSmiad2ugLL1pump",
+   "batch": "DB4qemYy",
+   "burn_blockTime": 1795046721,
+   "birth_blockTime": 1794960035,
+   "signatures": 75,
+   "birth_complete": true,
+   "seconds_past_24h": 286,
+   "age_hours_at_burn": 24.079
+  },
+  {
+   "mint": "Ava7fYK1Yirooxxqq6zmuaQgnxSSFaa5Vk5eXrA7pump",
+   "batch": "DB4qemYy",
+   "burn_blockTime": 1795046721,
+   "birth_blockTime": 1794958602,
+   "signatures": 52,
+   "birth_complete": true,
+   "seconds_past_24h": 1719,
+   "age_hours_at_burn": 24.477
+  },
+  {
+   "mint": "EKxQ9FkzDpdNqrsqHByQsrN6JKi3ArQccMCzLE6Tpump",
+   "batch": "DB4qemYy",
+   "burn_blockTime": 1795046721,
+   "birth_blockTime": 1794959633,
+   "signatures": 24,
+   "birth_complete": true,
+   "seconds_past_24h": 688,
+   "age_hours_at_burn": 24.191
+  }
+ ],
+ "summary": {
+  "timed": 12,
+  "incomplete": 0,
+  "min_s": 110,
+  "max_s": 3087,
+  "median_s": 1223.0,
+  "under_30_min_past": 9,
+  "over_1_hour_past": 0,
+  "p0496_five": [
+   1035,
+   1081,
+   1291,
+   1068,
+   1162
+  ]
+ }
+}

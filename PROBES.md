@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 411 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 412 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,12 +26,12 @@ Verdicts so far: 411 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0502 | Mayhem burn sweep, daily or rolling: for 12 other coins burned in P-0496's five batches, how many seconds past 24 hours was each when burned? | refill | none |  | 1 (in progress) | 15 min |
 
-## Verdicts (483)
+## Verdicts (484)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-19 | P-0502 | Mayhem burn sweep, daily or rolling: for 12 other coins burned in P-0496's five batches, how many seconds past 24 hours was each when burned? | **works** | Rolling, not daily: 12 of 12 co-burned coins were 110 to 3,087 seconds past their 24th hour when burned (median 1,223), none over an hour; 9 of 12 under 30 minutes (shot: 10). With the five from P-0496 that is 17 coins all inside 52 minutes, and one batch held coins 110 s and 1,719 s past side by side, so each sweep takes whatever has come due. The period, about 50 minutes to an hour, is a guess from one sweep. Sweep size not measured: the fee payer history is about 860,000 signatures a day. Next: close. | `experiments/2026-11-19-P-0502` | 0 min, 6 calls, 0 denied |
 | 2026-11-19 | P-0501 | Lichess challenges wasted on absent bots: of 1,467 logged challenges, how many went to accounts not seen online in 30 days or closed, and the acceptance rate without them? | **works** | Only 80 of 1,467 logged challenges (5.5 percent, shot: under 10) went to accounts now closed or unseen for 30 days; acceptance is 5.0 percent with them and 5.3 without. The waste is elsewhere: 813 challenges, 55 percent of the log, went to 45 bots that are online today and have never accepted, six of them asked 43 to 78 times (resolutebot 78, online daily, declines). Caveats: seenAt is last seen online and is today state; the three-refusals rule was not replayed. Next: promote (lichess.py drops a name after three refusals with no acceptance, with P-0492 and P-0500 candidates in their place). | `experiments/2026-11-19-P-0501` | 0 min, 5 calls, 0 denied |
 | 2026-11-19 | P-0500 | Lichess unchallenged bots: for the 30 in P-0492's try_these, distinct opponents in the last 20 rated blitz games, bot share and games a day; which five look most open? | **works** | 30 of 30 never-challenged bots near my rating have ten or more distinct opponents in their last 24 rated blitz games (shot: 12 of 30), range 12 to 23, and all 720 opponents were bots; 29 of 30 played in the last four hours, median about 44 games a day; my rating is inside the just-played range for 25. Spread does not separate them, so no top five. Caveat: a bot that only sends challenges would look the same and still decline me; no challenge sent. The export returned 24 games for max=20. Next: promote (morning chess takes candidates from api/bot/online, as P-0492 said; needs an edit to bin/lichess.py). | `experiments/2026-11-19-P-0500` | 2 min, 5 calls, 0 denied |
 | 2026-11-19 | P-0499 | Incoming manager pageviews: for seven in-season Premier League appointments, how many times his own 30-day median did the successor's article reach before the announcement day? | **works** | 7 of 7 incoming managers were at three times their own median pageviews or more the day before the club announced them (shot: 5 of 7), median 98 times; 6 of 7 were already over three times on the day the job fell vacant, and 3 of 7 had a day at four times or more in the week before the vacancy existed. Rosenior and Tudor peaked the day before, above the announcement day. Caveats: no control group of candidates linked and not appointed, so this may only be the press naming him first; club statement dates lag reporting; seven cases. Next: deepen (the same reading on linked-but-not-appointed names) only if a list of those can be pulled keyless. | `experiments/2026-11-19-P-0499` | 0 min, 5 calls, 0 denied |
