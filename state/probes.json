@@ -12701,22 +12701,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T23:52:45+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T23:53:32+0000",
+   "note": "7 of 7 incoming managers were at three times their own median pageviews or more the day before the club announced them (shot: 5 of 7), median 98 times; 6 of 7 were already over three times on the day the job fell vacant, and 3 of 7 had a day at four times or more in the week before the vacancy existed. Rosenior and Tudor peaked the day before, above the announcement day. Caveats: no control group of candidates linked and not appointed, so this may only be the press naming him first; club statement dates lag reporting; seven cases. Next: deepen (the same reading on linked-but-not-appointed names) only if a list of those can be pulled keyless.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0499"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "5 of 7 successors at 3 times their median or more on the day before the announcement",
-    "at": "2026-11-19T23:52:46+0000"
+    "at": "2026-11-19T23:52:46+0000",
+    "hit": true
    }
   }
  ]

@@ -1,0 +1,175 @@
+{
+ "rows": [
+  {
+   "name": "Sean Dyche",
+   "title": "Sean_Dyche",
+   "club": "Nottingham Forest",
+   "vacancy": "2025-10-18",
+   "appointed": "2025-10-21",
+   "gap_days": 3,
+   "base_median": 959.5,
+   "week_before_vacancy_max_x": 4.25,
+   "week_before_vacancy_median_x": 1.1,
+   "gap_views": [
+    11717,
+    9038,
+    36043
+   ],
+   "gap_max_x": 37.56,
+   "day_before_x": 37.56,
+   "vacancy_day_x": 12.21,
+   "appointment_day_x": 64.57,
+   "first_gap_day_over_3x": 0
+  },
+  {
+   "name": "Rob Edwards",
+   "title": "Rob_Edwards_(footballer,_born_1982)",
+   "club": "Wolverhampton Wanderers",
+   "vacancy": "2025-11-02",
+   "appointed": "2025-11-12",
+   "gap_days": 10,
+   "base_median": 954.5,
+   "week_before_vacancy_max_x": 1.34,
+   "week_before_vacancy_median_x": 0.62,
+   "gap_views": [
+    5691,
+    5352,
+    4663,
+    1772,
+    13221,
+    17129,
+    44231,
+    26458,
+    19294,
+    10967
+   ],
+   "gap_max_x": 46.34,
+   "day_before_x": 11.49,
+   "vacancy_day_x": 5.96,
+   "appointment_day_x": 40.93,
+   "first_gap_day_over_3x": 0
+  },
+  {
+   "name": "Liam Rosenior",
+   "title": "Liam_Rosenior",
+   "club": "Chelsea",
+   "vacancy": "2026-01-01",
+   "appointed": "2026-01-08",
+   "gap_days": 7,
+   "base_median": 549.5,
+   "week_before_vacancy_max_x": 4.65,
+   "week_before_vacancy_median_x": 0.73,
+   "gap_views": [
+    183721,
+    150482,
+    76823,
+    70110,
+    87234,
+    413395,
+    163178
+   ],
+   "gap_max_x": 752.31,
+   "day_before_x": 296.96,
+   "vacancy_day_x": 334.34,
+   "appointment_day_x": 95.39,
+   "first_gap_day_over_3x": 0
+  },
+  {
+   "name": "Michael Carrick",
+   "title": "Michael_Carrick",
+   "club": "Manchester United",
+   "vacancy": "2026-01-05",
+   "appointed": "2026-01-13",
+   "gap_days": 8,
+   "base_median": 1046.5,
+   "week_before_vacancy_max_x": 1.99,
+   "week_before_vacancy_median_x": 1.26,
+   "gap_views": [
+    20820,
+    22217,
+    22560,
+    9566,
+    7038,
+    6275,
+    7636,
+    103111
+   ],
+   "gap_max_x": 98.53,
+   "day_before_x": 98.53,
+   "vacancy_day_x": 19.89,
+   "appointment_day_x": 131.67,
+   "first_gap_day_over_3x": 0
+  },
+  {
+   "name": "Igor Tudor",
+   "title": "Igor_Tudor",
+   "club": "Tottenham Hotspur",
+   "vacancy": "2026-02-11",
+   "appointed": "2026-02-14",
+   "gap_days": 3,
+   "base_median": 237.0,
+   "week_before_vacancy_max_x": 1.15,
+   "week_before_vacancy_median_x": 0.73,
+   "gap_views": [
+    377,
+    614,
+    286945
+   ],
+   "gap_max_x": 1210.74,
+   "day_before_x": 1210.74,
+   "vacancy_day_x": 1.59,
+   "appointment_day_x": 416.35,
+   "first_gap_day_over_3x": 2
+  },
+  {
+   "name": "Vitor Pereira",
+   "title": "V\u00edtor_Pereira_(footballer,_born_1968)",
+   "club": "Nottingham Forest",
+   "vacancy": "2026-02-12",
+   "appointed": "2026-02-15",
+   "gap_days": 3,
+   "base_median": 191.5,
+   "week_before_vacancy_max_x": 1.63,
+   "week_before_vacancy_median_x": 0.99,
+   "gap_views": [
+    55300,
+    17274,
+    6877
+   ],
+   "gap_max_x": 288.77,
+   "day_before_x": 35.91,
+   "vacancy_day_x": 288.77,
+   "appointment_day_x": 63.19,
+   "first_gap_day_over_3x": 0
+  },
+  {
+   "name": "Roberto De Zerbi",
+   "title": "Roberto_De_Zerbi",
+   "club": "Tottenham Hotspur",
+   "vacancy": "2026-03-29",
+   "appointed": "2026-03-31",
+   "gap_days": 2,
+   "base_median": 778.0,
+   "week_before_vacancy_max_x": 7.09,
+   "week_before_vacancy_median_x": 1.79,
+   "gap_views": [
+    12727,
+    76045
+   ],
+   "gap_max_x": 97.74,
+   "day_before_x": 97.74,
+   "vacancy_day_x": 16.36,
+   "appointment_day_x": 157.81,
+   "first_gap_day_over_3x": 0
+  }
+ ],
+ "summary": {
+  "n": 7,
+  "day_before_x_median": 97.74,
+  "day_before_over_3x": 7,
+  "gap_max_over_3x": 7,
+  "vacancy_day_over_3x": 6,
+  "week_before_vacancy_over_2x": 3,
+  "appointment_day_x_median": 95.39
+ }
+}

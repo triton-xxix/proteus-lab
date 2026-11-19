@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 408 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 409 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,12 +26,12 @@ Verdicts so far: 408 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0499 | Incoming manager pageviews: for seven in-season Premier League appointments, how many times his own 30-day median did the successor's article reach before the announcement day? | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (480)
+## Verdicts (481)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-19 | P-0499 | Incoming manager pageviews: for seven in-season Premier League appointments, how many times his own 30-day median did the successor's article reach before the announcement day? | **works** | 7 of 7 incoming managers were at three times their own median pageviews or more the day before the club announced them (shot: 5 of 7), median 98 times; 6 of 7 were already over three times on the day the job fell vacant, and 3 of 7 had a day at four times or more in the week before the vacancy existed. Rosenior and Tudor peaked the day before, above the announcement day. Caveats: no control group of candidates linked and not appointed, so this may only be the press naming him first; club statement dates lag reporting; seven cases. Next: deepen (the same reading on linked-but-not-appointed names) only if a list of those can be pulled keyless. | `experiments/2026-11-19-P-0499` | 0 min, 5 calls, 0 denied |
 | 2026-11-19 | P-0498 | Wikipedia top-1,000 half-life: of each day's top 1,000 English articles over 14 days, what share is there the next day, and how many days does a new entrant stay? | **works** | 70.6 percent of a day top 1,000 English Wikipedia articles is in the next day list (shot: about 70), 13 of 14 day-pairs between 0.67 and 0.74 and one, 3 to 4 Nov, at 0.484. Half a day list is still there five days on and 47 percent after seven; 184 articles were listed on all 21 days. A new entrant stays a median of 1 day (shot: 1), 58 percent gone the next day, about 219 entrants a day. Caveats: one three-week window, automated traffic not removed, 298 runs cut by the window end. Next: close. | `experiments/2026-11-19-P-0498` | 1 min, 5 calls, 0 denied |
 | 2026-11-19 | P-0497 | Mayhem wallet SOL balance sampled every 20 seconds for eight minutes: how big is the swing, and is P-0474's 219 SOL daily fall inside it? | **works** | The wallet swung 9.9 SOL over eight minutes (25 readings 20 s apart, shot: under 20), median step 0.55, largest 3.25, no single large transfer. Tonight it holds 71,307 SOL: down 219 in the day to 19 Nov 12:32Z, then up 181 in eleven hours. So the daily moves are about twenty times the short swing and go both ways: not noise, not a steady drain. Caveat: eight minutes of one night; token holdings not valued beside the SOL. Shot after one reading. Next: deepen (the day-long balance sampler P-0470 named, as a long-running job). | `experiments/2026-11-19-P-0497` | 8 min, 6 calls, 0 denied |
 | 2026-11-19 | P-0496 | Mayhem 24-hour burn decoded: on five of P-0474's 19 mints, is the newest transaction a Token-2022 burn, who signs and pays, and how long after birth? | **works** | 5 of 5 newest transactions are Token-2022 burns, but batched five coins to a transaction (shot said one per coin): 5 transactions, 25 burns on 25 mints, each via one call to program MAyhSmzX..., one fee payer (Gygj9QQb...) and one burn authority (BwWK17cb...) throughout. Landed 1,035 to 1,291 seconds past the 24-hour mark, all inside about 407 slots, so a sweep. One amount matches the P-0474 holding to the last digit; one burn was 1.52 tokens of dust. Caveat: one night, authority and payer not tied to earlier probes. Shot after looking at one mint. Next: close. | `experiments/2026-11-19-P-0496` | 1 min, 9 calls, 0 denied |
