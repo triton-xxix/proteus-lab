@@ -135,6 +135,11 @@ def main():
             if k == 0:
                 state = "quiet: no fixtures, %dd back to %dd ahead" % (limit, FIXTURE_AHEAD)
         states[desk] = state
+        # F-0101, 19 Nov 2026: once fixtures return the desk reads ok, but its 7d count still covers
+        # the break. If no league kicked off in the last 7 days, a low 7d is the break, not a fault.
+        if state == "ok" and desk in FIXTURE_GATED and week <= 2:
+            if kickoffs_between(FIXTURE_GATED[desk], now - 7 * 86400, now) == 0:
+                state = "ok (7d waived: no kickoff in last 7d)"
         print("%-18s %-34s %6s %4s %4d  %s" % (desk, path, "-" if days is None else "%.1f" % days,
                                               "-" if limit is None else limit, week, state))
         if state in ("never", "SILENT"):

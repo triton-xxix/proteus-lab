@@ -59,7 +59,8 @@ finding only if `grinder-snapshot` is also low or the nightly Grinder line is mi
 and "0 gate-passers" in that line, the quiet is the registered gate working (F-0058, 27 Oct), not a fault.
 Any desk whose state reads `quiet: ...` (gate, no fixtures) is not a `7d` finding either: `pitch-model` reads
 `quiet: no fixtures` when no league in its nine calendars kicks off in the window, as in an international
-break (F-0091, F-0094, 14 Nov). Once fixtures return and it reads `ok` or SILENT, the `7d` rule applies again.
+break (F-0091, F-0094, 14 Nov). Once fixtures return and it reads `ok` or SILENT, the `7d` rule applies again,
+except while it reads `ok (7d waived: ...)`: no league kicked off in the last seven days, so the low count is the break (F-0101).
 
 ## 5. Re-check two recent verdicts
 
