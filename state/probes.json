@@ -12561,22 +12561,27 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T23:36:50+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-19T23:39:25+0000",
+   "note": "Loudness peaks landed within 15 s of a most-replayed peak on 6 of 20 across four videos (1, 3, 1, 1 of 5), against 5.28 expected by chance; the first video alone gave 1 of 5 (shot: 2). Loudness alone does not find the replayed moments. 10 of 17 searched videos had no heatmap at all. Caveats: four videos, two genres, RMS only.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0494"
+   ],
+   "minutes": 2,
+   "calls": 22,
+   "denied": [
+    "Bash `/Users/triton/PROTEUS/sandbox/skool-venv/bin/python /Users/triton/PROTEUS/experiments/2026`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.55,
     "number": "2 of 5 loudness peaks within 15 s of a most-replayed peak",
-    "at": "2026-11-19T23:36:59+0000"
+    "at": "2026-11-19T23:36:59+0000",
+    "hit": false
    }
   },
   {

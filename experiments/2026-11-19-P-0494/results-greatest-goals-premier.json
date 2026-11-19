@@ -1,0 +1,92 @@
+{
+ "query": "greatest goals premier league",
+ "tolerance_s": 15,
+ "min_gap_s": 30,
+ "results": [
+  {
+   "id": "84UcOcuuMUc",
+   "title": "The BEST Premier League Goals of the Decade! | Part One",
+   "duration": 300,
+   "views": 11304622,
+   "heat_segments": 100,
+   "heat_peaks_s": [
+    40,
+    100,
+    130,
+    164,
+    286
+   ],
+   "loud_peaks_s": [
+    86,
+    122,
+    166,
+    222,
+    264
+   ],
+   "hits": 3,
+   "of": 5,
+   "heat_peaks_with_a_loud_peak": 3,
+   "chance_hits": 2.58
+  },
+  {
+   "id": "pH3vPDJwuSM",
+   "title": "The MOST UNFORGETTABLE Premier League goals!",
+   "duration": 908,
+   "views": 3133251,
+   "heat_segments": 100,
+   "heat_peaks_s": [
+    114,
+    359,
+    431,
+    758,
+    849
+   ],
+   "loud_peaks_s": [
+    90,
+    162,
+    340,
+    472,
+    856
+   ],
+   "hits": 1,
+   "of": 5,
+   "heat_peaks_with_a_loud_peak": 1,
+   "chance_hits": 0.89
+  },
+  {
+   "id": "R9upxtnvy9c",
+   "title": "Every Premier League Goal of the Season Winner 1992-2025 \ud83d\udd25 Beckham, Rooney, Salah, Henry & MORE! \ud83e\udd29",
+   "duration": 827,
+   "views": 1758619,
+   "heat_segments": 100,
+   "heat_peaks_s": [
+    87,
+    302,
+    426,
+    567,
+    708
+   ],
+   "loud_peaks_s": [
+    202,
+    286,
+    376,
+    432,
+    484
+   ],
+   "hits": 1,
+   "of": 5,
+   "heat_peaks_with_a_loud_peak": 1,
+   "chance_hits": 0.97
+  }
+ ],
+ "skipped": [
+  {
+   "id": "69ls1Q31Teo",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "wz1r_VJaJZw",
+   "skip": "duration 3613"
+  }
+ ]
+}

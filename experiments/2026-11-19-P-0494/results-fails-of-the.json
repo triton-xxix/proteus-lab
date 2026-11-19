@@ -1,0 +1,78 @@
+{
+ "query": "fails of the week compilation",
+ "tolerance_s": 15,
+ "min_gap_s": 30,
+ "results": [
+  {
+   "id": "oWEQ3nQHNYM",
+   "title": "Best Fails of the Week | 100% Disgraced and Humiliated",
+   "duration": 946,
+   "views": 980315,
+   "heat_segments": 100,
+   "heat_peaks_s": [
+    147,
+    194,
+    241,
+    279,
+    714
+   ],
+   "loud_peaks_s": [
+    80,
+    162,
+    366,
+    588,
+    786
+   ],
+   "hits": 1,
+   "of": 5,
+   "heat_peaks_with_a_loud_peak": 1,
+   "chance_hits": 0.84
+  }
+ ],
+ "skipped": [
+  {
+   "id": "4t3K_QLR-KE",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "YqrnwUKcQIY",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "1djgg0PDXkE",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "hsJz_bwYSDI",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "TFJOdDq4KQ4",
+   "skip": "duration 1733"
+  },
+  {
+   "id": "Y8_M2mJ1qpE",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "ia5FxNSVslw",
+   "skip": "duration 1762"
+  },
+  {
+   "id": "W7xYyoKrNUI",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "flnqKBgUfUg",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "YtCgO3pObbI",
+   "skip": "no heatmap"
+  },
+  {
+   "id": "j5zDIilCWhI",
+   "skip": "duration 2039"
+  }
+ ]
+}
