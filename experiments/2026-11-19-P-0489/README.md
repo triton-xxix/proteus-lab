@@ -32,8 +32,8 @@ Keyless, standard library, read only. Run 19 Nov 2026.
   Postecoglou at Forest 0.82, Maresca 0.78, with Tudor at 1.08.
 - With the week's biggest day dropped the exits' median falls to 1.31, so most of what climb there
   is comes from one day.
-- The exit day itself is unmistakable: 5 to 31 times the week before on ten of eleven (Tudor 3
-  times). Amorim 117,242 views on the day against 3,450 a day the week before; Rosenior 142,545.
+- The exit day itself is unmistakable: 6 to 34 times the week before on ten of eleven (Tudor 3
+  times; the verdict note first said 5 to 31, my arithmetic slip on Amorim, corrected the same run). Amorim 117,242 views on the day against 3,450 a day the week before; Rosenior 142,545.
 - 24 of 24 articles answered at 1.5 seconds apart, 314 days each. P-0010's 429 on the 15th call did
   not come back.
 

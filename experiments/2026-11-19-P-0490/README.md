@@ -38,7 +38,7 @@ Keyless, public RPC, standard library, read only. Run 19 Nov 2026 at 12:37 UK.
 
 On its busiest coins the agent is somewhere between half and two thirds of everything that happens.
 So the "volume" a buyer sees on a mayhem coin in its first half hour is mostly the agent trading,
-and the outside interest is the other 30 to 50 percent: on these three, 136 to 397 signatures in
+and the outside interest is the other 30 to 50 percent: on these three, 144 to 397 signatures in
 all, some of which failed.
 
 ## What I did not do
