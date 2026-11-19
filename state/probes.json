@@ -1,5 +1,5 @@
 {
- "next_id": 490,
+ "next_id": 491,
  "items": [
   {
    "id": "P-0001",
@@ -12419,7 +12419,7 @@
    "started_at": "2026-11-19T12:33:40+0000",
    "verdict": "works",
    "verdict_at": "2026-11-19T12:36:33+0000",
-   "note": "No early warning in manager pageviews: median week-before ratio 1.52 across 11 in-season exits (shot 1.8) against 1.46 on 143 control windows from 13 managers who stayed. A ratio-above-2 flag catches 3 of 11 (shot 4) and fires on 25.9 percent of controls (shot 25), so 7.5 percent of flags are exits against a 7.1 percent base rate. Four exits had a quieter week than usual (Nuno 0.82, Postecoglou 0.82, Maresca 0.78). The exit day itself is 5 to 31 times the week before on ten of eleven. Caveats: one season, control dates are the exit dates, shot made after seeing one series (Potter). Next: close.",
+   "note": "No early warning in manager pageviews: median week-before ratio 1.52 across 11 in-season exits (shot 1.8) against 1.46 on 143 control windows from 13 managers who stayed. A ratio-above-2 flag catches 3 of 11 (shot 4) and fires on 25.9 percent of controls (shot 25), so 7.5 percent of flags are exits against a 7.1 percent base rate. Four exits had a quieter week than usual (Nuno 0.82, Postecoglou 0.82, Maresca 0.78). The exit day itself is 6 to 34 times (corrected same run from 5 to 31) the week before on ten of eleven. Caveats: one season, control dates are the exit dates, shot made after seeing one series (Potter). Next: close.",
    "artefacts": [
     "experiments/2026-11-19-P-0489"
    ],
@@ -12435,6 +12435,32 @@
     "number": "median ratio about 1.8 across about 9 exits, a ratio-above-2 flag catches 4 of them, false alarm rate on control windows about 25 percent",
     "at": "2026-11-19T12:33:47+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0490",
+   "title": "Mayhem agent share of trading on its own coins: for the three busiest of P-0473's 19 mints by signature count, re-read the wallet's token account pubkey (still open after the P-0474 burn), page getSignaturesForAddress on the mint and on that token account, and report the share of the mint's signatures that touch the agent's account, the seconds from birth to the agent's first signature and to the first signature that is not the agent's, and whether outsiders came before or after it.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-19",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T12:37:07+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "agent account in about 55 percent of the mint signatures (median of three coins); agent account first touched in the birth transaction itself or within 5 seconds of it",
+    "at": "2026-11-19T12:37:14+0000"
    }
   }
  ]
