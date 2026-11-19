@@ -12672,22 +12672,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T23:50:36+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T23:51:38+0000",
+   "note": "70.6 percent of a day top 1,000 English Wikipedia articles is in the next day list (shot: about 70), 13 of 14 day-pairs between 0.67 and 0.74 and one, 3 to 4 Nov, at 0.484. Half a day list is still there five days on and 47 percent after seven; 184 articles were listed on all 21 days. A new entrant stays a median of 1 day (shot: 1), 58 percent gone the next day, about 219 entrants a day. Caveats: one three-week window, automated traffic not removed, 298 runs cut by the window end. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0498"
+   ],
+   "minutes": 1,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "about 70 percent of a day's top 1,000 is there the next day; median new entrant stays 1 day",
-    "at": "2026-11-19T23:50:37+0000"
+    "at": "2026-11-19T23:50:37+0000",
+    "hit": true
    }
   }
  ]
