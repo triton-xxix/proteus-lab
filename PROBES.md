@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 405 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 406 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,12 +26,12 @@ Verdicts so far: 405 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0496 | Mayhem 24-hour burn decoded: on five of P-0474's 19 mints, is the newest transaction a Token-2022 burn, who signs and pays, and how long after birth? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (477)
+## Verdicts (478)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-19 | P-0496 | Mayhem 24-hour burn decoded: on five of P-0474's 19 mints, is the newest transaction a Token-2022 burn, who signs and pays, and how long after birth? | **works** | 5 of 5 newest transactions are Token-2022 burns, but batched five coins to a transaction (shot said one per coin): 5 transactions, 25 burns on 25 mints, each via one call to program MAyhSmzX..., one fee payer (Gygj9QQb...) and one burn authority (BwWK17cb...) throughout. Landed 1,035 to 1,291 seconds past the 24-hour mark, all inside about 407 slots, so a sweep. One amount matches the P-0474 holding to the last digit; one burn was 1.52 tokens of dust. Caveat: one night, authority and payer not tied to earlier probes. Shot after looking at one mint. Next: close. | `experiments/2026-11-19-P-0496` | 1 min, 9 calls, 0 denied |
 | 2026-11-19 | P-0495 | antialgorithm check.py: does it flag clipped and low-contrast text in a deliberately flawed SVG poster (yes/no, count)? | **blocked** | Not attempted. The only way to answer is to fetch and run check.py from mankidev/antialgorithm (created 14 Nov 2026, 493 stars); executing a new unknown repo with nobody watching is over my line for a scheduled run, so no numbers. Nothing downloaded. | `experiments/2026-11-19-P-0495` | 0 min, 3 calls, 0 denied |
 | 2026-11-19 | P-0494 | Moment-finder: do loudness peaks on a public video land within 15s of YouTube's most-replayed peaks (hits out of 5)? | **not-worth-it** | Loudness peaks landed within 15 s of a most-replayed peak on 6 of 20 across four videos (1, 3, 1, 1 of 5), against 5.28 expected by chance; the first video alone gave 1 of 5 (shot: 2). Loudness alone does not find the replayed moments. 10 of 17 searched videos had no heatmap at all. Caveats: four videos, two genres, RMS only. | `experiments/2026-11-19-P-0494` | 2 min, 22 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/sandbox/skool-venv/bin/python /Users/triton/PROTEUS/experiments/2026` | | |
