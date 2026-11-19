@@ -1,0 +1,1605 @@
+{
+ "summary": {
+  "exits": 11,
+  "exits_scored": 11,
+  "median_ratio": 1.52,
+  "min_ratio": 0.781,
+  "max_ratio": 4.698,
+  "median_ratio_ex_max": 1.311,
+  "control_managers": 13,
+  "control_windows": 143,
+  "control_median_ratio": 1.463,
+  "flags": {
+   "1.5": {
+    "caught": 6,
+    "of": 11,
+    "false_alarms": 66,
+    "control_windows": 143,
+    "false_alarm_rate": 0.462,
+    "share_of_flags_that_were_exits": 0.083
+   },
+   "2.0": {
+    "caught": 3,
+    "of": 11,
+    "false_alarms": 37,
+    "control_windows": 143,
+    "false_alarm_rate": 0.259,
+    "share_of_flags_that_were_exits": 0.075
+   },
+   "3.0": {
+    "caught": 2,
+    "of": 11,
+    "false_alarms": 18,
+    "control_windows": 143,
+    "false_alarm_rate": 0.126,
+    "share_of_flags_that_were_exits": 0.1
+   }
+  }
+ },
+ "exits": [
+  {
+   "manager": "Nuno_Espírito_Santo",
+   "club": "Nottingham Forest",
+   "date": "2025-09-08",
+   "manner": "Sacked",
+   "week_mean": 914.7,
+   "base_median": 1115.0,
+   "ratio": 0.82,
+   "week_max": 1431,
+   "exit_day": 5253,
+   "ratio_ex_max": 0.743
+  },
+  {
+   "manager": "Graham_Potter",
+   "club": "West Ham United",
+   "date": "2025-09-27",
+   "manner": "Sacked",
+   "week_mean": 2882,
+   "base_median": 1492.0,
+   "ratio": 1.932,
+   "week_max": 5752,
+   "exit_day": 30889,
+   "ratio_ex_max": 1.611
+  },
+  {
+   "manager": "Ange_Postecoglou",
+   "club": "Nottingham Forest",
+   "date": "2025-10-18",
+   "manner": "Sacked",
+   "week_mean": 2952.3,
+   "base_median": 3593.0,
+   "ratio": 0.822,
+   "week_max": 5211,
+   "exit_day": 74186,
+   "ratio_ex_max": 0.717
+  },
+  {
+   "manager": "Vítor_Pereira_(footballer,_born_1968)",
+   "club": "Wolverhampton Wanderers",
+   "date": "2025-11-02",
+   "manner": "Sacked",
+   "week_mean": 2266.9,
+   "base_median": 482.5,
+   "ratio": 4.698,
+   "week_max": 4456,
+   "exit_day": 14811,
+   "ratio_ex_max": 3.942
+  },
+  {
+   "manager": "Enzo_Maresca",
+   "club": "Chelsea",
+   "date": "2026-01-01",
+   "manner": "Resigned",
+   "week_mean": 2324,
+   "base_median": 2977.5,
+   "ratio": 0.781,
+   "week_max": 4303,
+   "exit_day": 71547,
+   "ratio_ex_max": 0.67
+  },
+  {
+   "manager": "Ruben_Amorim",
+   "club": "Manchester United",
+   "date": "2026-01-05",
+   "manner": "Sacked",
+   "week_mean": 3450.1,
+   "base_median": 2107.0,
+   "ratio": 1.637,
+   "week_max": 7581,
+   "exit_day": 117242,
+   "ratio_ex_max": 1.311
+  },
+  {
+   "manager": "Thomas_Frank_(football_manager)",
+   "club": "Tottenham Hotspur",
+   "date": "2026-02-11",
+   "manner": "Sacked",
+   "week_mean": 3116.9,
+   "base_median": 2215.0,
+   "ratio": 1.407,
+   "week_max": 8195,
+   "exit_day": 48811,
+   "ratio_ex_max": 1.025
+  },
+  {
+   "manager": "Sean_Dyche",
+   "club": "Nottingham Forest",
+   "date": "2026-02-12",
+   "manner": "Sacked",
+   "week_mean": 1721,
+   "base_median": 1132.5,
+   "ratio": 1.52,
+   "week_max": 3109,
+   "exit_day": 31100,
+   "ratio_ex_max": 1.315
+  },
+  {
+   "manager": "Igor_Tudor",
+   "club": "Tottenham Hotspur",
+   "date": "2026-03-29",
+   "manner": "Mutual consent",
+   "week_mean": 10508.7,
+   "base_median": 9730.0,
+   "ratio": 1.08,
+   "week_max": 21728,
+   "exit_day": 33758,
+   "ratio_ex_max": 0.888
+  },
+  {
+   "manager": "Liam_Rosenior",
+   "club": "Chelsea",
+   "date": "2026-04-22",
+   "manner": "Sacked",
+   "week_mean": 12882.6,
+   "base_median": 3553.0,
+   "ratio": 3.626,
+   "week_max": 39834,
+   "exit_day": 142545,
+   "ratio_ex_max": 2.362
+  },
+  {
+   "manager": "Scott_Parker",
+   "club": "Burnley",
+   "date": "2026-04-30",
+   "manner": "Mutual consent",
+   "week_mean": 1421.6,
+   "base_median": 595.0,
+   "ratio": 2.389,
+   "week_max": 3588,
+   "exit_day": 16719,
+   "ratio_ex_max": 1.782
+  }
+ ],
+ "controls": [
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2025-09-08",
+   "week_mean": 2859,
+   "base_median": 3010.5,
+   "ratio": 0.95,
+   "week_max": 5481,
+   "exit_day": 1729,
+   "ratio_ex_max": 0.805
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2025-09-27",
+   "week_mean": 4951.9,
+   "base_median": 3177.0,
+   "ratio": 1.559,
+   "week_max": 13680,
+   "exit_day": 3141,
+   "ratio_ex_max": 1.101
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2025-10-18",
+   "week_mean": 1846,
+   "base_median": 3883.0,
+   "ratio": 0.475,
+   "week_max": 2414,
+   "exit_day": 4483,
+   "ratio_ex_max": 0.451
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2025-11-02",
+   "week_mean": 4327.4,
+   "base_median": 3508.0,
+   "ratio": 1.234,
+   "week_max": 5907,
+   "exit_day": 3962,
+   "ratio_ex_max": 1.159
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-01-01",
+   "week_mean": 3652.1,
+   "base_median": 3244.5,
+   "ratio": 1.126,
+   "week_max": 6623,
+   "exit_day": 4674,
+   "ratio_ex_max": 0.973
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-01-05",
+   "week_mean": 5203.9,
+   "base_median": 3141.0,
+   "ratio": 1.657,
+   "week_max": 7613,
+   "exit_day": 8935,
+   "ratio_ex_max": 1.529
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-02-11",
+   "week_mean": 5669.4,
+   "base_median": 5398.5,
+   "ratio": 1.05,
+   "week_max": 8260,
+   "exit_day": 3745,
+   "ratio_ex_max": 0.97
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-02-12",
+   "week_mean": 5024.4,
+   "base_median": 5398.5,
+   "ratio": 0.931,
+   "week_max": 6539,
+   "exit_day": 4935,
+   "ratio_ex_max": 0.884
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-03-29",
+   "week_mean": 6741.4,
+   "base_median": 3925.5,
+   "ratio": 1.717,
+   "week_max": 23048,
+   "exit_day": 1644,
+   "ratio_ex_max": 1.025
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-04-22",
+   "week_mean": 8924.1,
+   "base_median": 4010.0,
+   "ratio": 2.225,
+   "week_max": 21390,
+   "exit_day": 6020,
+   "ratio_ex_max": 1.707
+  },
+  {
+   "manager": "Mikel_Arteta",
+   "date": "2026-04-30",
+   "week_mean": 8298.9,
+   "base_median": 4331.0,
+   "ratio": 1.916,
+   "week_max": 15974,
+   "exit_day": 6052,
+   "ratio_ex_max": 1.621
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2025-09-08",
+   "week_mean": 3916.6,
+   "base_median": 3240.0,
+   "ratio": 1.209,
+   "week_max": 5295,
+   "exit_day": 3332,
+   "ratio_ex_max": 1.138
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2025-09-27",
+   "week_mean": 5490.4,
+   "base_median": 3659.5,
+   "ratio": 1.5,
+   "week_max": 11765,
+   "exit_day": 4486,
+   "ratio_ex_max": 1.215
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2025-10-18",
+   "week_mean": 2533.7,
+   "base_median": 4128.5,
+   "ratio": 0.614,
+   "week_max": 2896,
+   "exit_day": 3961,
+   "ratio_ex_max": 0.599
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2025-11-02",
+   "week_mean": 3368.3,
+   "base_median": 3312.5,
+   "ratio": 1.017,
+   "week_max": 5299,
+   "exit_day": 5643,
+   "ratio_ex_max": 0.92
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-01-01",
+   "week_mean": 3835.6,
+   "base_median": 3767.5,
+   "ratio": 1.018,
+   "week_max": 6678,
+   "exit_day": 7859,
+   "ratio_ex_max": 0.892
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-01-05",
+   "week_mean": 5589.6,
+   "base_median": 3767.5,
+   "ratio": 1.484,
+   "week_max": 8220,
+   "exit_day": 7720,
+   "ratio_ex_max": 1.367
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-02-11",
+   "week_mean": 7087.1,
+   "base_median": 5635.0,
+   "ratio": 1.258,
+   "week_max": 10711,
+   "exit_day": 5102,
+   "ratio_ex_max": 1.151
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-02-12",
+   "week_mean": 6343.1,
+   "base_median": 5635.0,
+   "ratio": 1.126,
+   "week_max": 10711,
+   "exit_day": 4271,
+   "ratio_ex_max": 0.996
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-03-29",
+   "week_mean": 10845,
+   "base_median": 4190.5,
+   "ratio": 2.588,
+   "week_max": 32510,
+   "exit_day": 3406,
+   "ratio_ex_max": 1.726
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-04-22",
+   "week_mean": 8948.9,
+   "base_median": 4655.0,
+   "ratio": 1.922,
+   "week_max": 20600,
+   "exit_day": 11437,
+   "ratio_ex_max": 1.505
+  },
+  {
+   "manager": "Pep_Guardiola",
+   "date": "2026-04-30",
+   "week_mean": 9067.6,
+   "base_median": 4948.5,
+   "ratio": 1.832,
+   "week_max": 12260,
+   "exit_day": 5042,
+   "ratio_ex_max": 1.725
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2025-09-08",
+   "week_mean": 3131.6,
+   "base_median": 1827.5,
+   "ratio": 1.714,
+   "week_max": 6613,
+   "exit_day": 1500,
+   "ratio_ex_max": 1.396
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2025-09-27",
+   "week_mean": 5687.3,
+   "base_median": 2429.0,
+   "ratio": 2.341,
+   "week_max": 11147,
+   "exit_day": 4449,
+   "ratio_ex_max": 1.967
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2025-10-18",
+   "week_mean": 858.4,
+   "base_median": 3415.5,
+   "ratio": 0.251,
+   "week_max": 1038,
+   "exit_day": 1123,
+   "ratio_ex_max": 0.243
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2025-11-02",
+   "week_mean": 6106.9,
+   "base_median": 2192.5,
+   "ratio": 2.785,
+   "week_max": 11480,
+   "exit_day": 2536,
+   "ratio_ex_max": 2.377
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-01-01",
+   "week_mean": 1144.9,
+   "base_median": 2846.5,
+   "ratio": 0.402,
+   "week_max": 1795,
+   "exit_day": 3225,
+   "ratio_ex_max": 0.364
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-01-05",
+   "week_mean": 1796.3,
+   "base_median": 2086.0,
+   "ratio": 0.861,
+   "week_max": 3225,
+   "exit_day": 4369,
+   "ratio_ex_max": 0.747
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-02-11",
+   "week_mean": 2098.7,
+   "base_median": 2320.0,
+   "ratio": 0.905,
+   "week_max": 5159,
+   "exit_day": 2891,
+   "ratio_ex_max": 0.685
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-02-12",
+   "week_mean": 2363.9,
+   "base_median": 2224.0,
+   "ratio": 1.063,
+   "week_max": 5159,
+   "exit_day": 2148,
+   "ratio_ex_max": 0.853
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-03-29",
+   "week_mean": 1785.6,
+   "base_median": 1182.0,
+   "ratio": 1.511,
+   "week_max": 2910,
+   "exit_day": 1088,
+   "ratio_ex_max": 1.352
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-04-22",
+   "week_mean": 2065.9,
+   "base_median": 2068.0,
+   "ratio": 0.999,
+   "week_max": 4131,
+   "exit_day": 1683,
+   "ratio_ex_max": 0.833
+  },
+  {
+   "manager": "Arne_Slot",
+   "date": "2026-04-30",
+   "week_mean": 1201.7,
+   "base_median": 1658.5,
+   "ratio": 0.725,
+   "week_max": 1598,
+   "exit_day": 852,
+   "ratio_ex_max": 0.685
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2025-09-08",
+   "week_mean": 1356,
+   "base_median": 996.5,
+   "ratio": 1.361,
+   "week_max": 3569,
+   "exit_day": 592,
+   "ratio_ex_max": 0.991
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2025-09-27",
+   "week_mean": 2133.6,
+   "base_median": 1207.0,
+   "ratio": 1.768,
+   "week_max": 3157,
+   "exit_day": 1371,
+   "ratio_ex_max": 1.626
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2025-10-18",
+   "week_mean": 555.6,
+   "base_median": 1367.0,
+   "ratio": 0.406,
+   "week_max": 674,
+   "exit_day": 792,
+   "ratio_ex_max": 0.392
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2025-11-02",
+   "week_mean": 2240.6,
+   "base_median": 1047.0,
+   "ratio": 2.14,
+   "week_max": 6165,
+   "exit_day": 2046,
+   "ratio_ex_max": 1.515
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-01-01",
+   "week_mean": 9055.4,
+   "base_median": 2235.5,
+   "ratio": 4.051,
+   "week_max": 16852,
+   "exit_day": 4241,
+   "ratio_ex_max": 3.469
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-01-05",
+   "week_mean": 6792.9,
+   "base_median": 2428.0,
+   "ratio": 2.798,
+   "week_max": 14608,
+   "exit_day": 8408,
+   "ratio_ex_max": 2.261
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-02-11",
+   "week_mean": 1357.7,
+   "base_median": 2828.0,
+   "ratio": 0.48,
+   "week_max": 1919,
+   "exit_day": 2130,
+   "ratio_ex_max": 0.447
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-02-12",
+   "week_mean": 1480.9,
+   "base_median": 2735.0,
+   "ratio": 0.541,
+   "week_max": 2130,
+   "exit_day": 2054,
+   "ratio_ex_max": 0.502
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-03-29",
+   "week_mean": 1211,
+   "base_median": 1380.5,
+   "ratio": 0.877,
+   "week_max": 2452,
+   "exit_day": 766,
+   "ratio_ex_max": 0.727
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-04-22",
+   "week_mean": 3422,
+   "base_median": 1156.0,
+   "ratio": 2.96,
+   "week_max": 5736,
+   "exit_day": 2032,
+   "ratio_ex_max": 2.627
+  },
+  {
+   "manager": "Unai_Emery",
+   "date": "2026-04-30",
+   "week_mean": 1812,
+   "base_median": 1156.0,
+   "ratio": 1.567,
+   "week_max": 3244,
+   "exit_day": 6953,
+   "ratio_ex_max": 1.361
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2025-09-08",
+   "week_mean": 1069.6,
+   "base_median": 1313.5,
+   "ratio": 0.814,
+   "week_max": 1466,
+   "exit_day": 628,
+   "ratio_ex_max": 0.764
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2025-09-27",
+   "week_mean": 1575.1,
+   "base_median": 1131.5,
+   "ratio": 1.392,
+   "week_max": 4498,
+   "exit_day": 1001,
+   "ratio_ex_max": 0.962
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2025-10-18",
+   "week_mean": 523,
+   "base_median": 1074.5,
+   "ratio": 0.487,
+   "week_max": 608,
+   "exit_day": 1221,
+   "ratio_ex_max": 0.474
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2025-11-02",
+   "week_mean": 1278.3,
+   "base_median": 1003.0,
+   "ratio": 1.274,
+   "week_max": 2309,
+   "exit_day": 3040,
+   "ratio_ex_max": 1.103
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-01-01",
+   "week_mean": 1590.6,
+   "base_median": 691.0,
+   "ratio": 2.302,
+   "week_max": 4475,
+   "exit_day": 634,
+   "ratio_ex_max": 1.606
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-01-05",
+   "week_mean": 1075.3,
+   "base_median": 735.5,
+   "ratio": 1.462,
+   "week_max": 1907,
+   "exit_day": 2215,
+   "ratio_ex_max": 1.274
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-02-11",
+   "week_mean": 1812.9,
+   "base_median": 1151.0,
+   "ratio": 1.575,
+   "week_max": 2664,
+   "exit_day": 1348,
+   "ratio_ex_max": 1.452
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-02-12",
+   "week_mean": 1665.1,
+   "base_median": 1151.0,
+   "ratio": 1.447,
+   "week_max": 2664,
+   "exit_day": 1378,
+   "ratio_ex_max": 1.302
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-03-29",
+   "week_mean": 1219.1,
+   "base_median": 979.5,
+   "ratio": 1.245,
+   "week_max": 3290,
+   "exit_day": 376,
+   "ratio_ex_max": 0.892
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-04-22",
+   "week_mean": 1355.9,
+   "base_median": 657.5,
+   "ratio": 2.062,
+   "week_max": 2839,
+   "exit_day": 1300,
+   "ratio_ex_max": 1.686
+  },
+  {
+   "manager": "Eddie_Howe",
+   "date": "2026-04-30",
+   "week_mean": 1086.3,
+   "base_median": 678.5,
+   "ratio": 1.601,
+   "week_max": 2182,
+   "exit_day": 599,
+   "ratio_ex_max": 1.332
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2025-09-08",
+   "week_mean": 4953.7,
+   "base_median": 1986.5,
+   "ratio": 2.494,
+   "week_max": 14524,
+   "exit_day": 939,
+   "ratio_ex_max": 1.691
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2025-09-27",
+   "week_mean": 1511.1,
+   "base_median": 1920.0,
+   "ratio": 0.787,
+   "week_max": 2766,
+   "exit_day": 24279,
+   "ratio_ex_max": 0.678
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2025-10-18",
+   "week_mean": 921.7,
+   "base_median": 2242.5,
+   "ratio": 0.411,
+   "week_max": 1333,
+   "exit_day": 2125,
+   "ratio_ex_max": 0.38
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2025-11-02",
+   "week_mean": 2396.6,
+   "base_median": 1524.5,
+   "ratio": 1.572,
+   "week_max": 4575,
+   "exit_day": 1356,
+   "ratio_ex_max": 1.334
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-01-01",
+   "week_mean": 1846.7,
+   "base_median": 1436.5,
+   "ratio": 1.286,
+   "week_max": 4864,
+   "exit_day": 5050,
+   "ratio_ex_max": 0.935
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-01-05",
+   "week_mean": 2134.9,
+   "base_median": 1455.5,
+   "ratio": 1.467,
+   "week_max": 5050,
+   "exit_day": 35103,
+   "ratio_ex_max": 1.133
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-02-11",
+   "week_mean": 767.1,
+   "base_median": 1774.5,
+   "ratio": 0.432,
+   "week_max": 1883,
+   "exit_day": 1896,
+   "ratio_ex_max": 0.328
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-02-12",
+   "week_mean": 968,
+   "base_median": 1586.5,
+   "ratio": 0.61,
+   "week_max": 1896,
+   "exit_day": 1284,
+   "ratio_ex_max": 0.513
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-03-29",
+   "week_mean": 420,
+   "base_median": 644.5,
+   "ratio": 0.652,
+   "week_max": 533,
+   "exit_day": 366,
+   "ratio_ex_max": 0.622
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-04-22",
+   "week_mean": 1218.6,
+   "base_median": 424.0,
+   "ratio": 2.874,
+   "week_max": 2495,
+   "exit_day": 1222,
+   "ratio_ex_max": 2.372
+  },
+  {
+   "manager": "Oliver_Glasner",
+   "date": "2026-04-30",
+   "week_mean": 1024.3,
+   "base_median": 555.5,
+   "ratio": 1.844,
+   "week_max": 1855,
+   "exit_day": 2420,
+   "ratio_ex_max": 1.595
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2025-09-08",
+   "week_mean": 1276.1,
+   "base_median": 974.5,
+   "ratio": 1.31,
+   "week_max": 2085,
+   "exit_day": 767,
+   "ratio_ex_max": 1.171
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2025-09-27",
+   "week_mean": 1660.7,
+   "base_median": 1343.5,
+   "ratio": 1.236,
+   "week_max": 4016,
+   "exit_day": 6295,
+   "ratio_ex_max": 0.944
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2025-10-18",
+   "week_mean": 588,
+   "base_median": 1784.5,
+   "ratio": 0.33,
+   "week_max": 997,
+   "exit_day": 4464,
+   "ratio_ex_max": 0.291
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2025-11-02",
+   "week_mean": 3399.4,
+   "base_median": 1308.0,
+   "ratio": 2.599,
+   "week_max": 6238,
+   "exit_day": 11890,
+   "ratio_ex_max": 2.237
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-01-01",
+   "week_mean": 816.4,
+   "base_median": 638.5,
+   "ratio": 1.279,
+   "week_max": 1782,
+   "exit_day": 2433,
+   "ratio_ex_max": 1.027
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-01-05",
+   "week_mean": 2353.7,
+   "base_median": 606.0,
+   "ratio": 3.884,
+   "week_max": 6851,
+   "exit_day": 7481,
+   "ratio_ex_max": 2.647
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-02-11",
+   "week_mean": 761.7,
+   "base_median": 915.0,
+   "ratio": 0.832,
+   "week_max": 1263,
+   "exit_day": 1594,
+   "ratio_ex_max": 0.741
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-02-12",
+   "week_mean": 931.6,
+   "base_median": 859.5,
+   "ratio": 1.084,
+   "week_max": 1594,
+   "exit_day": 1221,
+   "ratio_ex_max": 0.955
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-03-29",
+   "week_mean": 753.7,
+   "base_median": 521.5,
+   "ratio": 1.445,
+   "week_max": 1524,
+   "exit_day": 351,
+   "ratio_ex_max": 1.199
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-04-22",
+   "week_mean": 7728.9,
+   "base_median": 564.0,
+   "ratio": 13.704,
+   "week_max": 15024,
+   "exit_day": 14083,
+   "ratio_ex_max": 11.548
+  },
+  {
+   "manager": "Andoni_Iraola",
+   "date": "2026-04-30",
+   "week_mean": 5273.7,
+   "base_median": 605.5,
+   "ratio": 8.71,
+   "week_max": 12195,
+   "exit_day": 6152,
+   "ratio_ex_max": 6.805
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2025-09-08",
+   "week_mean": 500.1,
+   "base_median": 472.5,
+   "ratio": 1.059,
+   "week_max": 823,
+   "exit_day": 493,
+   "ratio_ex_max": 0.945
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2025-09-27",
+   "week_mean": 927.9,
+   "base_median": 665.0,
+   "ratio": 1.395,
+   "week_max": 2849,
+   "exit_day": 816,
+   "ratio_ex_max": 0.914
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2025-10-18",
+   "week_mean": 316.9,
+   "base_median": 695.0,
+   "ratio": 0.456,
+   "week_max": 466,
+   "exit_day": 6175,
+   "ratio_ex_max": 0.42
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2025-11-02",
+   "week_mean": 557,
+   "base_median": 658.5,
+   "ratio": 0.846,
+   "week_max": 888,
+   "exit_day": 768,
+   "ratio_ex_max": 0.762
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-01-01",
+   "week_mean": 468,
+   "base_median": 370.5,
+   "ratio": 1.263,
+   "week_max": 946,
+   "exit_day": 1415,
+   "ratio_ex_max": 1.048
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-01-05",
+   "week_mean": 1041,
+   "base_median": 518.5,
+   "ratio": 2.008,
+   "week_max": 3132,
+   "exit_day": 2367,
+   "ratio_ex_max": 1.336
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-02-11",
+   "week_mean": 600,
+   "base_median": 590.0,
+   "ratio": 1.017,
+   "week_max": 1132,
+   "exit_day": 2132,
+   "ratio_ex_max": 0.867
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-02-12",
+   "week_mean": 849.4,
+   "base_median": 580.5,
+   "ratio": 1.463,
+   "week_max": 2132,
+   "exit_day": 1624,
+   "ratio_ex_max": 1.095
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-03-29",
+   "week_mean": 349,
+   "base_median": 363.0,
+   "ratio": 0.961,
+   "week_max": 610,
+   "exit_day": 386,
+   "ratio_ex_max": 0.842
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-04-22",
+   "week_mean": 508.3,
+   "base_median": 290.5,
+   "ratio": 1.75,
+   "week_max": 1378,
+   "exit_day": 1726,
+   "ratio_ex_max": 1.251
+  },
+  {
+   "manager": "Marco_Silva",
+   "date": "2026-04-30",
+   "week_mean": 1947.7,
+   "base_median": 316.0,
+   "ratio": 6.164,
+   "week_max": 3315,
+   "exit_day": 1070,
+   "ratio_ex_max": 5.443
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2025-09-08",
+   "week_mean": 1915.7,
+   "base_median": 969.0,
+   "ratio": 1.977,
+   "week_max": 5585,
+   "exit_day": 530,
+   "ratio_ex_max": 1.346
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2025-09-27",
+   "week_mean": 1815,
+   "base_median": 1000.5,
+   "ratio": 1.814,
+   "week_max": 6999,
+   "exit_day": 3237,
+   "ratio_ex_max": 0.951
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2025-10-18",
+   "week_mean": 382,
+   "base_median": 736.0,
+   "ratio": 0.519,
+   "week_max": 600,
+   "exit_day": 2340,
+   "ratio_ex_max": 0.47
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2025-11-02",
+   "week_mean": 1935.7,
+   "base_median": 645.0,
+   "ratio": 3.001,
+   "week_max": 3579,
+   "exit_day": 1864,
+   "ratio_ex_max": 2.576
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-01-01",
+   "week_mean": 1132.4,
+   "base_median": 584.5,
+   "ratio": 1.937,
+   "week_max": 3192,
+   "exit_day": 902,
+   "ratio_ex_max": 1.35
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-01-05",
+   "week_mean": 1057,
+   "base_median": 634.0,
+   "ratio": 1.667,
+   "week_max": 1725,
+   "exit_day": 1430,
+   "ratio_ex_max": 1.492
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-02-11",
+   "week_mean": 1187.6,
+   "base_median": 854.0,
+   "ratio": 1.391,
+   "week_max": 4451,
+   "exit_day": 2132,
+   "ratio_ex_max": 0.754
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-02-12",
+   "week_mean": 1449.6,
+   "base_median": 822.5,
+   "ratio": 1.762,
+   "week_max": 4451,
+   "exit_day": 1470,
+   "ratio_ex_max": 1.154
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-03-29",
+   "week_mean": 869.3,
+   "base_median": 538.5,
+   "ratio": 1.614,
+   "week_max": 1553,
+   "exit_day": 419,
+   "ratio_ex_max": 1.403
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-04-22",
+   "week_mean": 2264.7,
+   "base_median": 560.5,
+   "ratio": 4.041,
+   "week_max": 6165,
+   "exit_day": 3945,
+   "ratio_ex_max": 2.881
+  },
+  {
+   "manager": "Fabian_Hürzeler",
+   "date": "2026-04-30",
+   "week_mean": 1329.3,
+   "base_median": 577.0,
+   "ratio": 2.304,
+   "week_max": 3333,
+   "exit_day": 544,
+   "ratio_ex_max": 1.725
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2025-09-08",
+   "week_mean": 1905.7,
+   "base_median": 2474.5,
+   "ratio": 0.77,
+   "week_max": 4023,
+   "exit_day": 1146,
+   "ratio_ex_max": 0.628
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2025-09-27",
+   "week_mean": 2907.9,
+   "base_median": 1948.5,
+   "ratio": 1.492,
+   "week_max": 11249,
+   "exit_day": 3368,
+   "ratio_ex_max": 0.779
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2025-10-18",
+   "week_mean": 1069.4,
+   "base_median": 1521.5,
+   "ratio": 0.703,
+   "week_max": 1425,
+   "exit_day": 3762,
+   "ratio_ex_max": 0.664
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2025-11-02",
+   "week_mean": 1902.3,
+   "base_median": 1625.0,
+   "ratio": 1.171,
+   "week_max": 5289,
+   "exit_day": 2041,
+   "ratio_ex_max": 0.823
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-01-01",
+   "week_mean": 1435.1,
+   "base_median": 1390.5,
+   "ratio": 1.032,
+   "week_max": 2074,
+   "exit_day": 1305,
+   "ratio_ex_max": 0.956
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-01-05",
+   "week_mean": 1747.3,
+   "base_median": 1084.0,
+   "ratio": 1.612,
+   "week_max": 2695,
+   "exit_day": 4480,
+   "ratio_ex_max": 1.466
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-02-11",
+   "week_mean": 1828.6,
+   "base_median": 1545.0,
+   "ratio": 1.184,
+   "week_max": 2765,
+   "exit_day": 1875,
+   "ratio_ex_max": 1.083
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-02-12",
+   "week_mean": 1924.6,
+   "base_median": 1473.0,
+   "ratio": 1.307,
+   "week_max": 2765,
+   "exit_day": 2031,
+   "ratio_ex_max": 1.211
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-03-29",
+   "week_mean": 1867.3,
+   "base_median": 1098.5,
+   "ratio": 1.7,
+   "week_max": 5164,
+   "exit_day": 962,
+   "ratio_ex_max": 1.2
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-04-22",
+   "week_mean": 1785.9,
+   "base_median": 975.5,
+   "ratio": 1.831,
+   "week_max": 5672,
+   "exit_day": 1203,
+   "ratio_ex_max": 1.167
+  },
+  {
+   "manager": "David_Moyes",
+   "date": "2026-04-30",
+   "week_mean": 1349.9,
+   "base_median": 972.5,
+   "ratio": 1.388,
+   "week_max": 3149,
+   "exit_day": 765,
+   "ratio_ex_max": 1.08
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2025-09-08",
+   "week_mean": 725.1,
+   "base_median": 2568.0,
+   "ratio": 0.282,
+   "week_max": 1441,
+   "exit_day": 432,
+   "ratio_ex_max": 0.236
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2025-09-27",
+   "week_mean": 2039.9,
+   "base_median": 1370.0,
+   "ratio": 1.489,
+   "week_max": 7287,
+   "exit_day": 27437,
+   "ratio_ex_max": 0.851
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2025-10-18",
+   "week_mean": 343.9,
+   "base_median": 1116.5,
+   "ratio": 0.308,
+   "week_max": 379,
+   "exit_day": 654,
+   "ratio_ex_max": 0.303
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2025-11-02",
+   "week_mean": 5441.4,
+   "base_median": 958.5,
+   "ratio": 5.677,
+   "week_max": 19320,
+   "exit_day": 1619,
+   "ratio_ex_max": 3.264
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-01-01",
+   "week_mean": 1295.1,
+   "base_median": 657.5,
+   "ratio": 1.97,
+   "week_max": 3324,
+   "exit_day": 2768,
+   "ratio_ex_max": 1.456
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-01-05",
+   "week_mean": 1711.1,
+   "base_median": 820.5,
+   "ratio": 2.085,
+   "week_max": 4939,
+   "exit_day": 3544,
+   "ratio_ex_max": 1.43
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-02-11",
+   "week_mean": 3069.9,
+   "base_median": 984.0,
+   "ratio": 3.12,
+   "week_max": 11312,
+   "exit_day": 4063,
+   "ratio_ex_max": 1.724
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-02-12",
+   "week_mean": 3576,
+   "base_median": 961.5,
+   "ratio": 3.719,
+   "week_max": 11312,
+   "exit_day": 21105,
+   "ratio_ex_max": 2.378
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-03-29",
+   "week_mean": 512.3,
+   "base_median": 764.0,
+   "ratio": 0.671,
+   "week_max": 1294,
+   "exit_day": 309,
+   "ratio_ex_max": 0.5
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-04-22",
+   "week_mean": 1259.3,
+   "base_median": 381.5,
+   "ratio": 3.301,
+   "week_max": 4118,
+   "exit_day": 757,
+   "ratio_ex_max": 2.052
+  },
+  {
+   "manager": "Keith_Andrews_(footballer)",
+   "date": "2026-04-30",
+   "week_mean": 2591.4,
+   "base_median": 381.5,
+   "ratio": 6.793,
+   "week_max": 11220,
+   "exit_day": 739,
+   "ratio_ex_max": 3.023
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2025-09-08",
+   "week_mean": 928.7,
+   "base_median": 1860.0,
+   "ratio": 0.499,
+   "week_max": 1362,
+   "exit_day": 583,
+   "ratio_ex_max": 0.46
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2025-09-27",
+   "week_mean": 907.4,
+   "base_median": 944.5,
+   "ratio": 0.961,
+   "week_max": 2204,
+   "exit_day": 1465,
+   "ratio_ex_max": 0.732
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2025-10-18",
+   "week_mean": 304.1,
+   "base_median": 572.5,
+   "ratio": 0.531,
+   "week_max": 343,
+   "exit_day": 952,
+   "ratio_ex_max": 0.52
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2025-11-02",
+   "week_mean": 886.3,
+   "base_median": 503.0,
+   "ratio": 1.762,
+   "week_max": 1309,
+   "exit_day": 1069,
+   "ratio_ex_max": 1.622
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-01-01",
+   "week_mean": 1104.7,
+   "base_median": 918.0,
+   "ratio": 1.203,
+   "week_max": 4241,
+   "exit_day": 5055,
+   "ratio_ex_max": 0.634
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-01-05",
+   "week_mean": 2793,
+   "base_median": 732.0,
+   "ratio": 3.816,
+   "week_max": 9328,
+   "exit_day": 1983,
+   "ratio_ex_max": 2.328
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-02-11",
+   "week_mean": 1899.7,
+   "base_median": 719.5,
+   "ratio": 2.64,
+   "week_max": 4306,
+   "exit_day": 1374,
+   "ratio_ex_max": 2.083
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-02-12",
+   "week_mean": 1917.9,
+   "base_median": 719.5,
+   "ratio": 2.666,
+   "week_max": 4306,
+   "exit_day": 917,
+   "ratio_ex_max": 2.112
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-03-29",
+   "week_mean": 423.3,
+   "base_median": 726.0,
+   "ratio": 0.583,
+   "week_max": 800,
+   "exit_day": 333,
+   "ratio_ex_max": 0.497
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-04-22",
+   "week_mean": 1131.4,
+   "base_median": 338.5,
+   "ratio": 3.342,
+   "week_max": 2746,
+   "exit_day": 1812,
+   "ratio_ex_max": 2.548
+  },
+  {
+   "manager": "Daniel_Farke",
+   "date": "2026-04-30",
+   "week_mean": 1609.9,
+   "base_median": 401.0,
+   "ratio": 4.015,
+   "week_max": 6258,
+   "exit_day": 529,
+   "ratio_ex_max": 2.083
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2025-09-08",
+   "week_mean": 915.7,
+   "base_median": 1328.0,
+   "ratio": 0.69,
+   "week_max": 1428,
+   "exit_day": 387,
+   "ratio_ex_max": 0.625
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2025-09-27",
+   "week_mean": 1062.9,
+   "base_median": 687.0,
+   "ratio": 1.547,
+   "week_max": 3781,
+   "exit_day": 5614,
+   "ratio_ex_max": 0.888
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2025-10-18",
+   "week_mean": 285.9,
+   "base_median": 663.5,
+   "ratio": 0.431,
+   "week_max": 350,
+   "exit_day": 2216,
+   "ratio_ex_max": 0.415
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2025-11-02",
+   "week_mean": 3637.9,
+   "base_median": 748.0,
+   "ratio": 4.863,
+   "week_max": 10568,
+   "exit_day": 1752,
+   "ratio_ex_max": 3.319
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-01-01",
+   "week_mean": 1185.7,
+   "base_median": 903.0,
+   "ratio": 1.313,
+   "week_max": 4428,
+   "exit_day": 10229,
+   "ratio_ex_max": 0.715
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-01-05",
+   "week_mean": 3132.1,
+   "base_median": 968.5,
+   "ratio": 3.234,
+   "week_max": 10229,
+   "exit_day": 1871,
+   "ratio_ex_max": 2.013
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-02-11",
+   "week_mean": 843.6,
+   "base_median": 525.0,
+   "ratio": 1.607,
+   "week_max": 2315,
+   "exit_day": 3551,
+   "ratio_ex_max": 1.14
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-02-12",
+   "week_mean": 1275.7,
+   "base_median": 525.0,
+   "ratio": 2.43,
+   "week_max": 3551,
+   "exit_day": 1028,
+   "ratio_ex_max": 1.708
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-03-29",
+   "week_mean": 1048.3,
+   "base_median": 280.5,
+   "ratio": 3.737,
+   "week_max": 3905,
+   "exit_day": 227,
+   "ratio_ex_max": 2.04
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-04-22",
+   "week_mean": 442.6,
+   "base_median": 248.5,
+   "ratio": 1.781,
+   "week_max": 925,
+   "exit_day": 816,
+   "ratio_ex_max": 1.457
+  },
+  {
+   "manager": "Régis_Le_Bris",
+   "date": "2026-04-30",
+   "week_mean": 717.3,
+   "base_median": 262.0,
+   "ratio": 2.738,
+   "week_max": 1726,
+   "exit_day": 274,
+   "ratio_ex_max": 2.096
+  }
+ ]
+}
