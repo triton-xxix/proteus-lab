@@ -1,5 +1,5 @@
 {
- "next_id": 494,
+ "next_id": 496,
  "items": [
   {
    "id": "P-0001",
@@ -12552,6 +12552,46 @@
     "at": "2026-11-19T12:45:48+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0494",
+   "title": "Moment-finder: do loudness peaks on a public video land within 15s of YouTube's most-replayed peaks (hits out of 5)?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-19",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0495",
+   "title": "antialgorithm check.py: does it flag clipped and low-contrast text in a deliberately flawed SVG poster (yes/no, count)?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-19",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

@@ -6,12 +6,19 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-691 judged over 48 harvest days, 453 kept, 136 testable, 131 queued as probes, 124 with a probe verdict.
+704 judged over 49 harvest days, 460 kept, 139 testable, 133 queued as probes, 125 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0704 | 2026-11-19 | hn | [Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests](https://springcraft-ai.github.io/springrep/) | mechanism | mechanism-hunting | no: Needs a Rust toolchain and building a kernel plus adapters,  |  |
+| H-0701 | 2026-11-19 | vault | [Selling database reactivation cold to small local businesses that have no list]() | mechanism | tools-for-strangers | no: Needs a client's list, a sending account and consent; nothin |  |
+| H-0699 | 2026-11-19 | github | [mankidev/antialgorithm: Claude Code skill that steers the model away from its first, most ](https://github.com/mankidev/antialgorithm) | mechanism | tools-for-strangers | yes | P-0495 |
+| H-0697 | 2026-11-19 | vault | [agent reads Reddit threads]() | mechanism | open-data | yes |  |
+| H-0695 | 2026-11-19 | arxiv | [Ground, Iterate, Trace: Decomposing AI Research Ideation](https://arxiv.org/abs/2611.24887) | mechanism | tech | no: Needs model answers and there is no local LLM, so it is not  |  |
+| H-0694 | 2026-11-19 | github | [Bodila51/gtavi-claudecode: Claude Code plugin that turns GTA 6 streams into paid vertical ](https://github.com/Bodila51/gtavi-claudecode) | mechanism | mechanism-hunting | yes | P-0494 |
+| H-0693 | 2026-11-19 | hn | [Launch HN: Onlook (YC W25) – An open-source developer tool for designers](https://github.com/onlook-dev/onlook/) | mechanism | tools-for-strangers | no: It is a desktop app that needs an installed coding agent and |  |
 | H-0689 | 2026-11-18 | hn | [Show HN: Mastra Factory, the open-source software factory we use to build Mastra](https://news.ycombinator.com/item?id=50548660) | both | tools-for-strangers | no: It needs a cloud sandbox, model keys and a Slack workspace. |  |
 | H-0688 | 2026-11-18 | vault | [hiding third-party badges under a gradient]() (intel) | mechanism | tools-for-strangers | no: It would breach a vendor's terms and needs an account on the |  |
 | H-0686 | 2026-11-18 | arxiv | [Evolution Under Fire: Evolving Agent Safety Harnesses with Adaptive Injection Stressors](https://arxiv.org/abs/2611.22583) | mechanism | mechanism-hunting | no: It needs model calls and the benchmarks, and no local model  |  |
@@ -19,7 +26,7 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0684 | 2026-11-18 | hn | [Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos](https://news.ycombinator.com/item?id=50536468) | both | tools-for-strangers | no: It is a paid hosted service that needs an account and a repo |  |
 | H-0683 | 2026-11-18 | vault | [medical billing](https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD) (intel) | mechanism | none | no: It is regulatory and commercial structure, not software that |  |
 | H-0681 | 2026-11-18 | arxiv | [Visual Harness Scales General VLMs to Medical Images](https://arxiv.org/abs/2611.22815) | mechanism | tech | no: It needs a vision model and medical imaging data, and there  |  |
-| H-0679 | 2026-11-18 | hn | [Show HN: Take Voyager 1 apart, down to a single memory chip](https://rshekhar.com/voyager/) | mechanism | open-data | yes | P-0479 |
+| H-0679 | 2026-11-18 | hn | [Show HN: Take Voyager 1 apart, down to a single memory chip](https://rshekhar.com/voyager/) | mechanism | open-data | yes | P-0479 **works** |
 | H-0678 | 2026-11-18 | vault | [partnership](https://claude.ai/artifact/8UThvX6bzSaQLzrAAUBkaD) | mechanism | none | no: It is a commercial arrangement with named parties missing, s |  |
 | H-0677 | 2026-11-17 | hn | [Show HN: Coral – Open-source gateway where agents write their own tools](https://github.com/withcoral/coral) | mechanism | tools-for-strangers | no: Measuring the claim needs LLM agent runs and provider accoun |  |
 | H-0676 | 2026-11-17 | vault | [qualifying call script for trades leads](https://www.youtube.com/watch?v=ZCMVm7WP4n4) | mechanism | tools-for-strangers | no: Scoring a script needs real call recordings and an LLM; neit |  |
@@ -467,6 +474,93 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0704 Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests
+2026-11-19, hn, https://springcraft-ai.github.io/springrep/
+
+- **Mechanism:** A kernel-agnostic conformance suite of 3,487 geometry cases checks B-rep modelling operations (booleans, fillets, shells, sweeps, lofts, STEP, queries) against expected answers from closed forms and exact geometry, such as the volume of a known solid. Each kernel is wrapped in an adapter, so the same cases run on any of them. The oracle is mathematics, not another kernel's output, so it does not inherit another kernel's bugs. The kernel itself, springrep, is safe Rust written with Claude Code and tuned against that suite.
+- **Claim:** A new Rust B-rep kernel passes 3,487 conformance cases that caught hundreds of bugs its own tests missed.
+- **Testable:** no. Needs a Rust toolchain and building a kernel plus adapters, which is unlikely to fit 30 minutes keyless. Needs: A Rust toolchain..
+- **Idea on its own:** sound. Test oracles from exact maths are independent of the code under test, which is the right guard against machine-written code.
+- **How it would be done:** Clone the conformance suite, read a handful of case definitions to see how expected values are derived, and recompute two by hand (a cylinder volume, a sphere with a fillet). The same pattern, closed-form oracles checked against an LLM-built implementation, could be reused for the Pitch and Grinder maths. A CAD specialist would write adapters for kernels.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** brep-conformance https://springcraft-ai.github.io/brep-conformance/ (The suite and its case definitions.); springrep https://github.com/springcraft-ai/springrep (The Rust kernel.)
+- **Field Notes line:** An LLM-written CAD kernel was hardened by a separate suite whose expected answers come from closed-form geometry, not from another kernel.
+
+### H-0701 Selling database reactivation cold to small local businesses that have no list
+2026-11-19, vault, 
+
+- **Mechanism:** Database reactivation sends a timed sequence of SMS or email to a business's old leads or lapsed customers, offering a reason to come back and routing replies to a booking link or a person. It needs a client list with a lawful basis for contact (UK PECR consent or soft opt-in for existing customers), a sender number or domain, and reply handling. Revenue comes from bookings recovered, so list size and recency set the ceiling.
+- **Claim:** Reactivating dormant leads books appointments; the community says it works but the results are owner-reported.
+- **Testable:** no. Needs a client's list, a sending account and consent; nothing can be run keyless. Needs: A client with a consented list and an SMS or email sending account..
+- **Idea on its own:** sound. Contacting past customers converts better than cold prospects, provided consent is clean and the list is recent.
+- **How it would be done:** Take a client's lead export, filter to contacts with consent and recent activity, then draft a three-message sequence with an opt-out in each. Send through an SMS or email platform, route replies to a booking link, and report bookings against messages sent. A person must confirm the consent basis and handle live replies.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A client with a usable list and a confirmed UK consent position.
+- **Field Notes line:** Reactivating old leads by SMS is a real mechanism, but it only works where a client has a large recent consented list.
+
+### H-0699 mankidev/antialgorithm: Claude Code skill that steers the model away from its first, most average pick in creative work:
+2026-11-19, github, https://github.com/mankidev/antialgorithm
+
+- **Mechanism:** A skill that forces the model to name its first, most average answer and then move away from it for a project-specific reason. Scripts support it: seed.py draws random starting constraints from system randomness and a history file to avoid repeats, moves.py logs which move worked, rough.py perturbs SVG geometry to look hand-made, and check.py renders an SVG at two sizes to flag overflowing, low-contrast or tiny text.
+- **Claim:** Steers Claude away from generic output in names, posters and UI, shown by comparing six plain runs against a picked bottom row.
+- **Testable:** yes. Does check.py flag at least one real defect (clipped or low-contrast text) in a deliberately flawed 400x600 SVG, yes or no? Queued as P-0495.
+- **Idea on its own:** sound. Forcing a named default and a random seed is a cheap, mechanical way to widen output, and the SVG lint is a plain deterministic check.
+- **How it would be done:** Clone into the sandbox, run seed.py a few times and confirm seeds differ and history is respected. Hand-write a flawed SVG and run check.py to count flagged issues. Judging whether the output is actually less generic needs a person comparing batches, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills)
+- **To fetch:** antialgorithm https://github.com/mankidev/antialgorithm (The skill and its scripts.); cairosvg https://github.com/Kozea/CairoSVG (SVG rendering if rsvg-convert is absent.)
+- **Field Notes line:** A creative skill makes Claude name its most average answer first, then rolls random constraints to leave it; the SVG checker is the testable part.
+
+### H-0697 agent reads Reddit threads
+2026-11-19, vault, 
+
+- **Mechanism:** Reading a Reddit thread without an API key means fetching its public page or the same URL with .json appended, over plain HTTP from a script, rather than through an agent browser that refuses the domain. It depends on Reddit not rate-limiting or blocking anonymous requests with a plain user agent. The returned JSON holds post and nested comments, which can then be summarised.
+- **Claim:** Agent browser routes (built-in pane, Chrome extension, WebFetch) all refuse reddit.com, so threads cannot be read by an agent.
+- **Testable:** yes. Does a plain curl to a public thread's .json endpoint return HTTP 200 with comments, or a block: which status code? Not queued (daily cap).
+- **Idea on its own:** needs-a-run. Whether anonymous script access still works is an empirical question that one request answers.
+- **How it would be done:** Send three or four polite, spaced requests for public thread .json URLs with a descriptive user agent, record status codes and comment counts, and stop at the first block. If open, wrap it in a poller that fetches threads matching keyword alerts and hands text to a summariser. If blocked, the fallback is Reddit's official API with a registered app, which needs an account a person must create.
+- **Stack already covers:** launchd long-running pollers, Claude Code with skills and sub-agents
+- **To fetch:** Reddit API https://www.reddit.com/dev/api/ (Official route if anonymous access is blocked.)
+- **Missing:** A registered Reddit app if the anonymous route is closed.
+- **Field Notes line:** Agent browsers refuse Reddit, but a plain script may still read a public thread as JSON; tonight's probe checks whether that door is open.
+
+### H-0695 Ground, Iterate, Trace: Decomposing AI Research Ideation
+2026-11-19, arxiv, https://arxiv.org/abs/2611.24887
+
+- **Mechanism:** CAR builds a semantic knowledge graph from retrieved papers and gives an ideation agent graph-retrieval tools plus four operators: bisociation, analogy, exploration and elaboration. Each operator call must pass a structural acceptance check and is logged, which yields a trace of steps and declared sources. Output is judged against single-shot prompting and other agents on novelty and feasibility.
+- **Claim:** Higher methodological novelty than single-shot prompting and The AI Scientist, but no ablation contrast survives multiple-comparison correction.
+- **Testable:** no. Needs model answers and there is no local LLM, so it is not keyless tonight. Needs: An LLM backbone..
+- **Idea on its own:** unsound. The authors' own ablation shows no corrected benefit from the explicit operators; only the traceability is a real gain.
+- **How it would be done:** Retrieve abstracts on a topic through arXiv's open API, extract concept pairs into a graph, and prompt an agent to propose ideas with a log line per operator. Compare against a plain iterate-and-refine baseline and judge both blind. The judging needs a person or a second model; the trace log is the useful piece to reuse for probe writing.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** arXiv API https://info.arxiv.org/help/api/index.html (Keyless literature retrieval.)
+- **Missing:** The authors' code is not named in the abstract.
+- **Field Notes line:** An ideation agent with logged 'operators' beats one-shot prompts on novelty, but its own ablation says the operators add nothing over free iteration.
+
+### H-0694 Bodila51/gtavi-claudecode: Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trendin
+2026-11-19, github, https://github.com/Bodila51/gtavi-claudecode
+
+- **Mechanism:** A Claude Code plugin chains yt-dlp, ffmpeg and faster-whisper. It scores candidate clip moments from loudness spikes, hype words in the transcript, YouTube's 'most replayed' heatmap and live chat message-rate spikes, then crops to 1080x1920 with captions. Campaign discovery reads pay-per-1,000-views listings on a clipping marketplace. Platforms do not pay for plain reposts, so the money depends on campaign rules, not on the clipping.
+- **Claim:** Turns GTA 6 streams into paid vertical clips; campaigns pay around $1 per 1,000 views, with no income promised.
+- **Testable:** yes. On one public video, do the top 5 audio-loudness peaks fall within 15 seconds of a peak in YouTube's most-replayed heatmap: how many of 5? Queued as P-0494.
+- **Idea on its own:** needs-a-run. Loudness plus replay-heatmap is a plausible highlight signal, but agreement between the two has not been measured here.
+- **How it would be done:** Pick one public video with a most-replayed graph, pull audio with yt-dlp, compute loudness peaks with ffmpeg, and read the heatmap markers from the page data. Compare peak times and count matches. The next step would be a transcript hype-word score from the local transcription pipeline. A human would still pick hooks and read campaign rules, since no script covers rule compliance.
+- **Stack already covers:** Keyless YouTube search, oEmbed and transcript pipeline, Local transcription, HyperFrames (captions, render)
+- **To fetch:** yt-dlp https://github.com/yt-dlp/yt-dlp (Audio and metadata pull.); ffmpeg https://ffmpeg.org/ (Loudness analysis and 9:16 crops.); gtavi-claudecode https://github.com/Bodila51/gtavi-claudecode (moment-finder script to read.)
+- **Missing:** Nobody has verified the payout claim; campaign rates are owner-reported.
+- **Field Notes line:** A GTA 6 clipping plugin picks clip moments from loudness spikes and 'most replayed' data; the question is whether those two signals agree.
+
+### H-0693 Launch HN: Onlook (YC W25) – An open-source developer tool for designers
+2026-11-19, hn, https://github.com/onlook-dev/onlook/
+
+- **Mechanism:** Onlook is a desktop app that renders a canvas over a locally running app and lets a designer edit visually. Each design session runs in its own git worktree against the real codebase, an existing coding agent makes the code changes, and every result lands as a pull request that can be reviewed or discarded. The canvas is a live view of the real app, not a mockup, so the source of truth stays the code.
+- **Claim:** A canvas on top of your real codebase with parallel worktrees, each change landing as a PR, rebuilt as an open-source agentic design tool.
+- **Testable:** no. It is a desktop app that needs an installed coding agent and a project to point at, so no honest keyless 30-minute slice exists. Needs: A desktop install and a logged-in coding agent..
+- **Idea on its own:** sound. Worktree-per-variant with PR as the unit of review is a clean way to let non-engineers explore without breaking the main branch.
+- **How it would be done:** Clone the repo, run it against a small local site, and open two worktrees with different design variants. Each variant is edited visually, the agent writes the code diff, and the diff is reviewed as a PR. A hired designer would do the judging between variants, since nothing here picks the better design.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Onlook https://github.com/onlook-dev/onlook/ (The tool itself, open source.)
+- **Field Notes line:** Onlook puts a design canvas over a live local app, one git worktree per idea, every change returning as a reviewable pull request.
 
 ### H-0689 Show HN: Mastra Factory, the open-source software factory we use to build Mastra
 2026-11-18, hn, https://news.ycombinator.com/item?id=50548660
@@ -5815,6 +5909,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0701 | 2026-11-19 | Selling database reactivation cold to small local businesses that have no list | dead | sound | no |  |
+| H-0697 | 2026-11-19 | agent reads Reddit threads | dead | needs-a-run | yes |  |
+| H-0692 | 2026-11-19 | review gating | dead | skipped: Review gating (public stars for happy customers, private fee | no |  |
 | H-0688 | 2026-11-18 | hiding third-party badges under a gradient | dead | unsound | no |  |
 | H-0683 | 2026-11-18 | medical billing | intel | sound | no |  |
 | H-0678 | 2026-11-18 | partnership | open | needs-a-run | no |  |
@@ -5964,6 +6061,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0406 | 2026-11-19 | [springrep](https://github.com/springcraft-ai/springrep) | The Rust kernel. | H-0704 (Show HN: Robotics needs better CAD, so I wrote a B) | shelf |
+| T-0405 | 2026-11-19 | [brep-conformance](https://springcraft-ai.github.io/brep-conformance/) | The suite and its case definitions. | H-0704 (Show HN: Robotics needs better CAD, so I wrote a B) | shelf |
+| T-0404 | 2026-11-19 | [cairosvg](https://github.com/Kozea/CairoSVG) | SVG rendering if rsvg-convert is absent. | H-0699 (mankidev/antialgorithm: Claude Code skill that ste) | shelf |
+| T-0403 | 2026-11-19 | [antialgorithm](https://github.com/mankidev/antialgorithm) | The skill and its scripts. | H-0699 (mankidev/antialgorithm: Claude Code skill that ste) | shelf |
+| T-0402 | 2026-11-19 | [Reddit API](https://www.reddit.com/dev/api/) | Official route if anonymous access is blocked. | H-0697 (agent reads Reddit threads) | shelf |
+| T-0401 | 2026-11-19 | [arXiv API](https://info.arxiv.org/help/api/index.html) | Keyless literature retrieval. | H-0695 (Ground, Iterate, Trace: Decomposing AI Research Id) | shelf |
+| T-0400 | 2026-11-19 | [gtavi-claudecode](https://github.com/Bodila51/gtavi-claudecode) | moment-finder script to read. | H-0694 (Bodila51/gtavi-claudecode: Claude Code plugin that) | shelf |
+| T-0399 | 2026-11-19 | [Onlook](https://github.com/onlook-dev/onlook/) | The tool itself, open source. | H-0693 (Launch HN: Onlook (YC W25) – An open-source develo) | shelf |
 | T-0398 | 2026-11-18 | [Mastra template-factory](https://github.com/mastra-ai/template-factory) | The open-source Factory template. | H-0689 (Show HN: Mastra Factory, the open-source software ) | shelf |
 | T-0397 | 2026-11-18 | [blender-mcp (ahujasid)](https://github.com/ahujasid/blender-mcp) | Established open Blender MCP server with readable source. | H-0685 (racdeufindurch198812/Blender-AI-MCP-Studio: Blende) | shelf |
 | T-0396 | 2026-11-18 | [GitHub Actions API](https://docs.github.com/en/rest/actions/workflow-runs) | Public run timing data to find slow steps. | H-0684 (Launch HN: StarSling (YC P25) – Self-improving CI ) | shelf |
@@ -6367,6 +6472,12 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0703 | 2026-11-19 | github | [bookwjitchieni1986/blender-ai-mcp-addon: AI assistant and MCP server for Blender](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) | A Blender MCP bridge with a manager, worker, reviewer chain is a known pattern; nothing new in the mechanism, and the re |
+| H-0702 | 2026-11-19 | hn | [Tokendoctor – See what your Claude Code use overpays](https://github.com/localixai/tokendoctor) | Body gives only comments and no mechanism for how overpay is detected; Proteus already builds usage reports from transcr |
+| H-0700 | 2026-11-19 | arxiv | [Large Language Models or AI Agents for English to Arabic Translation? An assessm](https://arxiv.org/abs/2611.24588) | Generic translation benchmark on a paid model; the self-assessment loop is standard and the dataset is not in hand. |
+| H-0698 | 2026-11-19 | hn | [Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium](https://github.com/RunanywhereAI/trnrt) | Needs AWS Trainium hardware; the number is a vendor benchmark on a chip nobody here has. |
+| H-0696 | 2026-11-19 | youtube | [How to quickly calculate car depreciation](https://www.youtube.com/watch?v=XRfyME2hCX4) | A flat 15 per cent a year rule of thumb with no data source; a claim with no mechanism. |
+| H-0692 | 2026-11-19 | vault | [review gating]() | Review gating (public stars for happy customers, private feedback for unhappy) breaches Google policy and UK fake-review |
 | H-0691 | 2026-11-18 | hn | [Show HN: Fakemetrics.com – "build in public" like a superstar](https://fakemetrics.com/) | Its product is faked revenue screenshots to pass off as real traction, which is a fake-records service; the cloning tech |
 | H-0690 | 2026-11-18 | github | [tiobeharxi1987/blender-ai-copilot-flow: A controlled AI workflow for Blender: ev](https://github.com/tiobeharxi1987/blender-ai-copilot-flow) | Near-identical clone of the other Blender MCP repo (same zip name, same week); the better entry is kept. |
 | H-0687 | 2026-11-18 | youtube | [Beware of Rug Pulls: Can Bonding Curves Protect Your Investments / TON Learn #20](https://www.youtube.com/watch?v=XqsU1ZZZ5-8) | A two-minute generic explainer of bonding curves that adds nothing the Grinder does not already read. |
