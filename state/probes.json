@@ -1,5 +1,5 @@
 {
- "next_id": 496,
+ "next_id": 497,
  "items": [
   {
    "id": "P-0001",
@@ -12605,6 +12605,32 @@
    "calls": 3,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0496",
+   "title": "Mayhem 24-hour burn decoded: on five of P-0474's 19 mints, is the newest transaction a Token-2022 burn, who signs and pays, and how long after birth?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-19",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T23:40:02+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "5 of 5 newest transactions carry a Token-2022 burn, one per coin; shot after looking at one mint's three newest signature times",
+    "at": "2026-11-19T23:40:09+0000"
+   }
   }
  ]
 }
