@@ -12759,22 +12759,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T23:57:41+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T23:57:59+0000",
+   "note": "Only 80 of 1,467 logged challenges (5.5 percent, shot: under 10) went to accounts now closed or unseen for 30 days; acceptance is 5.0 percent with them and 5.3 without. The waste is elsewhere: 813 challenges, 55 percent of the log, went to 45 bots that are online today and have never accepted, six of them asked 43 to 78 times (resolutebot 78, online daily, declines). Caveats: seenAt is last seen online and is today state; the three-refusals rule was not replayed. Next: promote (lichess.py drops a name after three refusals with no acceptance, with P-0492 and P-0500 candidates in their place).",
+   "artefacts": [
+    "experiments/2026-11-19-P-0501"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "under 10 percent of challenges went to accounts closed or unseen for 30 days",
-    "at": "2026-11-19T23:57:43+0000"
+    "at": "2026-11-19T23:57:43+0000",
+    "hit": true
    }
   }
  ]
