@@ -1,0 +1,511 @@
+{
+ "summary": {
+  "at": "2026-11-19T12:46:03Z",
+  "search_total": 17457,
+  "repos": 50,
+  "answered": 50,
+  "skipped_or_error": 0,
+  "release_in_30_days": 37,
+  "release_in_7_days": 24,
+  "release_older_than_30_days": 8,
+  "no_release": 5,
+  "median_days_since_latest": 6.3,
+  "max_days_since_latest": 409.0,
+  "stars_min": 8758,
+  "stars_max": 211379,
+  "median_stars_with_release_30d": 19262,
+  "median_stars_no_release": 11342
+ },
+ "rows": [
+  {
+   "repo": "n8n-io/n8n",
+   "stars": 211379,
+   "pushed_at": "2026-11-19T12:45:44Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "n8n@2.48.6",
+   "published_at": "2026-11-19T08:29:57Z",
+   "days_since": 0.2
+  },
+  {
+   "repo": "google-gemini/gemini-cli",
+   "stars": 108940,
+   "pushed_at": "2026-11-19T09:25:07Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v0.69.0",
+   "published_at": "2026-11-19T01:45:47Z",
+   "days_since": 0.5
+  },
+  {
+   "repo": "D4Vinci/Scrapling",
+   "stars": 104314,
+   "pushed_at": "2026-11-17T09:51:33Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v0.5.1",
+   "published_at": "2026-11-04T20:29:16Z",
+   "days_since": 14.7
+  },
+  {
+   "repo": "koala73/worldmonitor",
+   "stars": 90934,
+   "pushed_at": "2026-11-19T12:36:29Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v2.11.8",
+   "published_at": "2026-11-04T19:23:59Z",
+   "days_since": 14.7
+  },
+  {
+   "repo": "ruvnet/ruflo",
+   "stars": 82077,
+   "pushed_at": "2026-11-19T07:32:46Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v3.78.0",
+   "published_at": "2026-11-19T07:14:43Z",
+   "days_since": 0.2
+  },
+  {
+   "repo": "upstash/context7",
+   "stars": 65107,
+   "pushed_at": "2026-11-19T12:41:09Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "@upstash/context7-opencode@0.2.2",
+   "published_at": "2026-11-17T13:51:10Z",
+   "days_since": 2.0
+  },
+  {
+   "repo": "sansan0/TrendRadar",
+   "stars": 63740,
+   "pushed_at": "2026-11-15T13:32:07Z",
+   "archived": false,
+   "language": "Python",
+   "no_release": true
+  },
+  {
+   "repo": "ChromeDevTools/chrome-devtools-mcp",
+   "stars": 58301,
+   "pushed_at": "2026-11-19T11:53:00Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "chrome-devtools-mcp-v1.13.0",
+   "published_at": "2026-11-11T12:40:09Z",
+   "days_since": 8.0
+  },
+  {
+   "repo": "DeusData/codebase-memory-mcp",
+   "stars": 48859,
+   "pushed_at": "2026-11-19T01:37:03Z",
+   "archived": false,
+   "language": "C",
+   "latest_release": "v0.12.1",
+   "published_at": "2026-10-16T23:35:48Z",
+   "days_since": 33.5
+  },
+  {
+   "repo": "reactive-resume/reactive-resume",
+   "stars": 45915,
+   "pushed_at": "2026-11-19T03:31:46Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v6.1.1",
+   "published_at": "2026-11-13T14:12:51Z",
+   "days_since": 5.9
+  },
+  {
+   "repo": "DayuanJiang/next-ai-draw-io",
+   "stars": 37072,
+   "pushed_at": "2026-11-19T06:50:47Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v0.5.1",
+   "published_at": "2026-10-31T02:25:35Z",
+   "days_since": 19.4
+  },
+  {
+   "repo": "github/github-mcp-server",
+   "stars": 34581,
+   "pushed_at": "2026-11-19T05:48:59Z",
+   "archived": false,
+   "language": "Go",
+   "latest_release": "v2.2.0",
+   "published_at": "2026-11-16T23:30:46Z",
+   "days_since": 2.6
+  },
+  {
+   "repo": "mksglu/context-mode",
+   "stars": 34293,
+   "pushed_at": "2026-11-19T03:26:39Z",
+   "archived": false,
+   "language": "JavaScript",
+   "latest_release": "v2.2.1",
+   "published_at": "2026-11-17T17:11:43Z",
+   "days_since": 1.8
+  },
+  {
+   "repo": "oraios/serena",
+   "stars": 31528,
+   "pushed_at": "2026-11-19T10:22:04Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v2.1.0",
+   "published_at": "2026-10-19T17:30:43Z",
+   "days_since": 30.8
+  },
+  {
+   "repo": "assafelovic/gpt-researcher",
+   "stars": 30783,
+   "pushed_at": "2026-11-12T19:34:46Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v3.8.0",
+   "published_at": "2026-11-09T15:12:43Z",
+   "days_since": 9.9
+  },
+  {
+   "repo": "yikart/AiToEarn",
+   "stars": 28402,
+   "pushed_at": "2026-11-16T10:34:40Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v2.5.0",
+   "published_at": "2026-06-24T05:13:17Z",
+   "days_since": 148.3
+  },
+  {
+   "repo": "activepieces/activepieces",
+   "stars": 25619,
+   "pushed_at": "2026-11-19T12:33:45Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "0.93.0",
+   "published_at": "2026-11-08T14:30:22Z",
+   "days_since": 10.9
+  },
+  {
+   "repo": "pascalorg/editor",
+   "stars": 25617,
+   "pushed_at": "2026-11-18T23:35:50Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "@pascal-app/cli@1.1.6",
+   "published_at": "2026-11-17T18:56:45Z",
+   "days_since": 1.7
+  },
+  {
+   "repo": "modelcontextprotocol/python-sdk",
+   "stars": 24903,
+   "pushed_at": "2026-11-17T09:38:48Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v2.3.0",
+   "published_at": "2026-10-02T22:02:27Z",
+   "days_since": 47.6
+  },
+  {
+   "repo": "czlonkowski/n8n-mcp",
+   "stars": 23283,
+   "pushed_at": "2026-11-19T07:33:11Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v2.103.2",
+   "published_at": "2026-11-19T07:33:13Z",
+   "days_since": 0.2
+  },
+  {
+   "repo": "1Panel-dev/MaxKB",
+   "stars": 23174,
+   "pushed_at": "2026-11-19T11:48:34Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v2.10.9-lts",
+   "published_at": "2026-11-19T08:58:42Z",
+   "days_since": 0.2
+  },
+  {
+   "repo": "Evil0ctal/Douyin_TikTok_Download_API",
+   "stars": 21492,
+   "pushed_at": "2026-11-14T05:41:25Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v5.1.11",
+   "published_at": "2026-11-08T07:42:00Z",
+   "days_since": 11.2
+  },
+  {
+   "repo": "modelscope/FunASR",
+   "stars": 21073,
+   "pushed_at": "2026-11-19T09:56:28Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v1.4.27",
+   "published_at": "2026-11-17T05:48:37Z",
+   "days_since": 2.3
+  },
+  {
+   "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+   "stars": 19461,
+   "pushed_at": "2026-11-19T10:40:49Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v0.4.28",
+   "published_at": "2026-09-28T09:38:59Z",
+   "days_since": 52.1
+  },
+  {
+   "repo": "xerj-org/xerj",
+   "stars": 19262,
+   "pushed_at": "2026-11-19T12:33:17Z",
+   "archived": false,
+   "language": "Rust",
+   "latest_release": "v1.0.0-rc.104",
+   "published_at": "2026-11-19T00:34:18Z",
+   "days_since": 0.5
+  },
+  {
+   "repo": "nukeop/nuclear",
+   "stars": 18970,
+   "pushed_at": "2026-11-19T03:03:35Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "player@1.56.4",
+   "published_at": "2026-11-19T02:08:30Z",
+   "days_since": 0.4
+  },
+  {
+   "repo": "microsoft/mcp-for-beginners",
+   "stars": 17683,
+   "pushed_at": "2026-11-13T14:58:19Z",
+   "archived": false,
+   "language": "Jupyter Notebook",
+   "no_release": true
+  },
+  {
+   "repo": "xpzouying/xiaohongshu-mcp",
+   "stars": 17212,
+   "pushed_at": "2026-11-16T04:43:40Z",
+   "archived": false,
+   "language": "Go",
+   "latest_release": "v2.7.4",
+   "published_at": "2026-11-10T17:46:52Z",
+   "days_since": 8.8
+  },
+  {
+   "repo": "apify/apify-mcp-server",
+   "stars": 16988,
+   "pushed_at": "2026-11-19T12:25:37Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v0.21.12",
+   "published_at": "2026-11-17T07:43:58Z",
+   "days_since": 2.2
+  },
+  {
+   "repo": "triggerdotdev/trigger.dev",
+   "stars": 16783,
+   "pushed_at": "2026-11-18T13:33:52Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v4.8.6",
+   "published_at": "2026-11-18T13:16:57Z",
+   "days_since": 1.0
+  },
+  {
+   "repo": "budtmo/docker-android",
+   "stars": 16164,
+   "pushed_at": "2026-11-18T06:53:27Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v3.9.0-p2",
+   "published_at": "2026-11-10T15:59:37Z",
+   "days_since": 8.9
+  },
+  {
+   "repo": "open-metadata/OpenMetadata",
+   "stars": 15816,
+   "pushed_at": "2026-11-19T12:38:13Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "2.0.8-release",
+   "published_at": "2026-11-13T05:02:47Z",
+   "days_since": 6.3
+  },
+  {
+   "repo": "liketrek/TREK",
+   "stars": 15813,
+   "pushed_at": "2026-11-18T23:02:10Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v5.1.4",
+   "published_at": "2026-11-12T19:56:12Z",
+   "days_since": 6.7
+  },
+  {
+   "repo": "yusufkaraaslan/Skill_Seekers",
+   "stars": 15343,
+   "pushed_at": "2026-11-16T12:58:52Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v3.10.0",
+   "published_at": "2026-09-30T18:53:11Z",
+   "days_since": 49.7
+  },
+  {
+   "repo": "tonhowtf/omniget",
+   "stars": 14503,
+   "pushed_at": "2026-11-19T12:41:15Z",
+   "archived": false,
+   "language": "Rust",
+   "latest_release": "v1.0.1",
+   "published_at": "2026-11-18T18:32:19Z",
+   "days_since": 0.8
+  },
+  {
+   "repo": "OpenByteInc/QuantDinger",
+   "stars": 13867,
+   "pushed_at": "2026-11-19T12:45:37Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v5.9.1",
+   "published_at": "2026-11-19T12:45:37Z",
+   "days_since": 0.0
+  },
+  {
+   "repo": "modelcontextprotocol/typescript-sdk",
+   "stars": 13786,
+   "pushed_at": "2026-11-19T12:09:05Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "v2.4.0",
+   "published_at": "2026-10-23T18:32:25Z",
+   "days_since": 26.8
+  },
+  {
+   "repo": "mrexodia/ida-pro-mcp",
+   "stars": 13527,
+   "pushed_at": "2026-11-12T11:01:58Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "1.4.0",
+   "published_at": "2025-10-06T13:28:26Z",
+   "days_since": 409.0
+  },
+  {
+   "repo": "ccfos/nightingale",
+   "stars": 13506,
+   "pushed_at": "2026-11-19T07:02:51Z",
+   "archived": false,
+   "language": "Go",
+   "latest_release": "v9.3.0",
+   "published_at": "2026-10-21T08:10:51Z",
+   "days_since": 29.2
+  },
+  {
+   "repo": "JoeanAmier/XHS-Downloader",
+   "stars": 13335,
+   "pushed_at": "2026-11-16T10:45:05Z",
+   "archived": false,
+   "language": "JavaScript",
+   "latest_release": "2.8",
+   "published_at": "2026-09-12T14:00:19Z",
+   "days_since": 67.9
+  },
+  {
+   "repo": "0xJacky/nginx-ui",
+   "stars": 11801,
+   "pushed_at": "2026-11-19T07:18:52Z",
+   "archived": false,
+   "language": "Go",
+   "latest_release": "v3.0.6",
+   "published_at": "2026-11-19T04:33:33Z",
+   "days_since": 0.3
+  },
+  {
+   "repo": "xinnan-tech/xiaozhi-esp32-server",
+   "stars": 11344,
+   "pushed_at": "2026-11-19T09:15:53Z",
+   "archived": false,
+   "language": "JavaScript",
+   "latest_release": "v0.9.8",
+   "published_at": "2026-10-23T10:54:47Z",
+   "days_since": 27.1
+  },
+  {
+   "repo": "trailhq/Trail-Code",
+   "stars": 11342,
+   "pushed_at": "2026-11-19T12:33:25Z",
+   "archived": false,
+   "language": "TypeScript",
+   "no_release": true
+  },
+  {
+   "repo": "mcp-use/mcp-use",
+   "stars": 10993,
+   "pushed_at": "2026-11-19T08:09:43Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "mcp-use@2.12.9",
+   "published_at": "2026-11-19T08:09:46Z",
+   "days_since": 0.2
+  },
+  {
+   "repo": "Agents365-ai/drawio-skill",
+   "stars": 10865,
+   "pushed_at": "2026-11-10T08:11:10Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v3.4.4",
+   "published_at": "2026-11-06T03:55:46Z",
+   "days_since": 13.4
+  },
+  {
+   "repo": "mobile-next/mobile-mcp",
+   "stars": 10715,
+   "pushed_at": "2026-11-18T11:54:15Z",
+   "archived": false,
+   "language": "TypeScript",
+   "latest_release": "1.0.18",
+   "published_at": "2026-11-18T11:29:52Z",
+   "days_since": 1.1
+  },
+  {
+   "repo": "awslabs/mcp",
+   "stars": 9934,
+   "pushed_at": "2026-11-19T02:47:47Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "2026.11.20261117195521",
+   "published_at": "2026-11-17T23:54:53Z",
+   "days_since": 1.5
+  },
+  {
+   "repo": "openstatusHQ/openstatus",
+   "stars": 9276,
+   "pushed_at": "2026-11-18T13:43:18Z",
+   "archived": false,
+   "language": "TypeScript",
+   "no_release": true
+  },
+  {
+   "repo": "homarr-labs/dashboard-icons",
+   "stars": 9124,
+   "pushed_at": "2026-11-16T18:42:19Z",
+   "archived": false,
+   "language": "TypeScript",
+   "no_release": true
+  },
+  {
+   "repo": "firerpa/lamda",
+   "stars": 8758,
+   "pushed_at": "2026-11-15T11:32:41Z",
+   "archived": false,
+   "language": "Python",
+   "latest_release": "v10.12",
+   "published_at": "2026-11-15T11:41:37Z",
+   "days_since": 4.0
+  }
+ ]
+}
