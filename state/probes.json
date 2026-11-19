@@ -12643,22 +12643,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T23:41:39+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-19T23:50:04+0000",
+   "note": "The wallet swung 9.9 SOL over eight minutes (25 readings 20 s apart, shot: under 20), median step 0.55, largest 3.25, no single large transfer. Tonight it holds 71,307 SOL: down 219 in the day to 19 Nov 12:32Z, then up 181 in eleven hours. So the daily moves are about twenty times the short swing and go both ways: not noise, not a steady drain. Caveat: eight minutes of one night; token holdings not valued beside the SOL. Shot after one reading. Next: deepen (the day-long balance sampler P-0470 named, as a long-running job).",
+   "artefacts": [
+    "experiments/2026-11-19-P-0497"
+   ],
+   "minutes": 8,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "range under 20 SOL over eight minutes, so 219 a day is outside eight minutes of swing; shot after seeing one balance reading (71,304.79)",
-    "at": "2026-11-19T23:41:49+0000"
+    "at": "2026-11-19T23:41:49+0000",
+    "hit": true
    }
   }
  ]
