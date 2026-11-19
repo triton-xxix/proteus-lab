@@ -12067,9 +12067,9 @@
    "after": "2026-11-19",
    "est_minutes": 20,
    "added": "2026-11-18",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-19T12:31:23+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12077,7 +12077,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "at least 17 of 19 holdings at zero, sum held under 0.2 billion (was 16.99), median supply near 1.0 billion (was 2.0)",
+    "at": "2026-11-19T12:31:32+0000"
+   }
   },
   {
    "id": "P-0475",
