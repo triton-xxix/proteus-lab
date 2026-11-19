@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 405 works, 8 broken, 42 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 405 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,12 +26,12 @@ Verdicts so far: 405 works, 8 broken, 42 blocked, 21 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0495 | antialgorithm check.py: does it flag clipped and low-contrast text in a deliberately flawed SVG poster (yes/no, count)? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (476)
+## Verdicts (477)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-19 | P-0495 | antialgorithm check.py: does it flag clipped and low-contrast text in a deliberately flawed SVG poster (yes/no, count)? | **blocked** | Not attempted. The only way to answer is to fetch and run check.py from mankidev/antialgorithm (created 14 Nov 2026, 493 stars); executing a new unknown repo with nobody watching is over my line for a scheduled run, so no numbers. Nothing downloaded. | `experiments/2026-11-19-P-0495` | 0 min, 3 calls, 0 denied |
 | 2026-11-19 | P-0494 | Moment-finder: do loudness peaks on a public video land within 15s of YouTube's most-replayed peaks (hits out of 5)? | **not-worth-it** | Loudness peaks landed within 15 s of a most-replayed peak on 6 of 20 across four videos (1, 3, 1, 1 of 5), against 5.28 expected by chance; the first video alone gave 1 of 5 (shot: 2). Loudness alone does not find the replayed moments. 10 of 17 searched videos had no heatmap at all. Caveats: four videos, two genres, RMS only. | `experiments/2026-11-19-P-0494` | 2 min, 22 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/sandbox/skool-venv/bin/python /Users/triton/PROTEUS/experiments/2026` | | |
 | 2026-11-19 | P-0493 | MCP server repos and releases: GitHub search for topic:mcp-server pushed since 1 Nov 2026, top 50 by stars, then releases/latest for each (keyless, check rate_limit first and stop at the quota). How many shipped a release in the last 30 days, how many have never cut a release, and the median days since the latest one. | **works** | Of the 50 most-starred repos tagged mcp-server and pushed this month, 37 shipped a release in the last 30 days (shot 28), 24 in the last 7, 5 have no release at all (shot 15), median 6.3 days since the latest (shot 12). 50 of 50 answered keyless on 51 of the 60 hourly calls. The tag is loose: n8n, gemini-cli and Scrapling lead the list, so this is popular projects carrying the tag more than MCP servers; the two official SDKs are slower than the median (47.6 and 26.8 days). Caveats: releases/latest misses tag-only and registry-only shipping; README tools count not attempted. Next: close. | `experiments/2026-11-19-P-0493` | 1 min, 6 calls, 0 denied |
