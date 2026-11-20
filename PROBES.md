@@ -28,7 +28,7 @@ Verdicts so far: 416 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | desk | none |  | 0 | 15 min |
-| P-0509 | HippoMaps query parser: does it turn 15 plain-English place queries into Overpass QL that returns results? | harvest | none |  | 0 | 30 min |
+| P-0509 | HippoMaps query parser: does it turn 15 plain-English place queries into Overpass QL that returns results? | harvest | none |  | 1 (in progress) | 30 min |
 | P-0510 | International-results model: does Elo plus Poisson beat uniform on 2022 World Cup match Brier score? | harvest | none |  | 0 | 30 min |
 
 ## Verdicts (488)

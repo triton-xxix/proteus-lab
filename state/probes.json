@@ -12973,9 +12973,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-20T23:34:45+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12983,7 +12983,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "10 of 15 queries return results",
+    "at": "2026-11-20T23:35:04+0000"
+   }
   },
   {
    "id": "P-0510",
