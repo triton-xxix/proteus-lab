@@ -1,5 +1,5 @@
 {
- "next_id": 511,
+ "next_id": 512,
  "items": [
   {
    "id": "P-0001",
@@ -12953,9 +12953,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-20T23:47:16+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12963,7 +12963,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "17 or more of 19 burned in one sweep at about 00:04Z on 21 Nov, none between 14:00 and 23:59Z on 20 Nov",
+    "at": "2026-11-20T23:47:34+0000"
+   }
   },
   {
    "id": "P-0509",
@@ -13024,6 +13030,26 @@
     "at": "2026-11-20T23:46:21+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0511",
+   "title": "P-0510 model on the judgement book: rerun experiments/2026-11-20-P-0510/model.py frozen before each pitch/JUDGEMENT.csv match date and score it on the 57 scored rows against my blind column and the market",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-20",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

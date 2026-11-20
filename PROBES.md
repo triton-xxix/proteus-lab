@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 418 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,7 +27,8 @@ Verdicts so far: 418 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | desk | none |  | 0 | 15 min |
+| P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | desk | none |  | 1 (in progress) | 15 min |
+| P-0511 | P-0510 model on the judgement book: rerun experiments/2026-11-20-P-0510/model.py frozen before each pitch/JUDGEMENT.csv match date and score it on the 57 scored rows against my blind column and the market | desk | none |  | 0 | 20 min |
 
 ## Verdicts (490)
 
