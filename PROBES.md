@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 414 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 415 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,12 @@ Verdicts so far: 414 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0506 | What decides whether a YouTube video carries a most-replayed heatmap: views, age or length? yt-dlp -J (no download) on 30 videos from three unrelated searches; heatmap present against view count, upload date and duration; the lowest view count with one and the highest without. | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (486)
+## Verdicts (487)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-20 | P-0506 | What decides whether a YouTube video carries a most-replayed heatmap: views, age or length? yt-dlp -J (no download) on 30 videos from three unrelated searches; heatmap present against view count, upload date and duration; the lowest view count with one and the highest without. | **works** | Views decide it: 22 of 30 have a heatmap, lowest views with one 58,618 (shot said about 30,000); seven of eight without sit at 4,860 to 38,676, so the line is between 39k and 59k. Shot missed on none above 100,000 without: a Feb 2013 video at 339,919 views has none, while other 2013 to 2015 uploads with 211k to 4.6m do. Length does not decide it (79 to 3,555 s either side). Untested guess: the graph wants recent views. 30 videos, 3 English searches. Next: close (rule for the moment-finder is skip under about 50k views; nothing more to learn without a recent-views figure). | `experiments/2026-11-20-P-0506` | 2 min, 5 calls, 0 denied |
 | 2026-11-20 | P-0504 | Mayhem coin lifetimes, a day on: re-read the 20 mints P-0491 caught (2026-11-19 12:39Z) with keyless Solana RPC getSignaturesForAddress, paging to birth; lifetime = birth to last signature; share dead inside 10 minutes, median lifetime, and whether the 52-minute survivor is still trading. Set beside P-0473's 35 minutes. | **works** | Median lifetime 9.75 minutes birth to last signature across 20 mints (shot said 20); 10 of 20 dead inside 10 minutes, 13 inside 15; 16 of 20 quiet over 12 hours (shot 18). Four long ones end on a lone call after a 4 to 19 hour gap, so by trading life 17 of 20 were done inside 15 minutes; P-0473s 35 minutes was a loose upper bound. The 52-minute survivor kept going: 1,658 signatures, last at 24.3 hours, possibly the burn. Not fetched: what the lone late calls were. The 21st P-0491 row is USDC, left out. Next: close (lifetime answered; what the late calls are is a transactions read, not worth a probe on its own). | `experiments/2026-11-20-P-0504` | 1 min, 8 calls, 0 denied |
 | 2026-11-20 | P-0503 | Wikipedia 3 to 4 Nov turnover: which articles entered the top 1,000 on 4 Nov, do they share a subject, and did 5 Nov go back to the 2 Nov list? | **works** | The 48 percent day was US midterm results day: 508 articles entered the top 1,000 on 4 Nov, 154 with an election word in the title (shot: at least 100; a floor, as candidates names carry none), led by Dan Osborn at rank 14 with 273,151 views. The list total views doubled, 18.6 million to 38.1 million, then 24.1 and 21.1. It did not snap back: 5 and 6 Nov each share 47 percent with 2 Nov against the usual 56 and 53. Caveats: title words only, one event. Next: close. | `experiments/2026-11-19-P-0503` | 0 min, 5 calls, 0 denied |
 | 2026-11-19 | P-0502 | Mayhem burn sweep, daily or rolling: for 12 other coins burned in P-0496's five batches, how many seconds past 24 hours was each when burned? | **works** | Rolling, not daily: 12 of 12 co-burned coins were 110 to 3,087 seconds past their 24th hour when burned (median 1,223), none over an hour; 9 of 12 under 30 minutes (shot: 10). With the five from P-0496 that is 17 coins all inside 52 minutes, and one batch held coins 110 s and 1,719 s past side by side, so each sweep takes whatever has come due. The period, about 50 minutes to an hour, is a guess from one sweep. Sweep size not measured: the fee payer history is about 860,000 signatures a day. Next: close. | `experiments/2026-11-19-P-0502` | 0 min, 6 calls, 0 denied |

@@ -1,0 +1,368 @@
+{
+ "summary": {
+  "at": "2026-11-20T12:38:33Z",
+  "videos": 30,
+  "read": 30,
+  "errors": 0,
+  "with_heatmap": 22,
+  "without": 8,
+  "lowest_views_with": 58618,
+  "highest_views_without": 339919,
+  "views_with_sorted": [
+   58618,
+   84302,
+   142017,
+   209787,
+   211321,
+   303935,
+   373788,
+   478498,
+   521817,
+   529068,
+   595509,
+   607605,
+   690032,
+   703774,
+   1003882,
+   1038782,
+   1128591,
+   2703610,
+   3032159,
+   3352612,
+   4591347,
+   8913331
+  ],
+  "views_without_sorted": [
+   4860,
+   15314,
+   15744,
+   16274,
+   19613,
+   33466,
+   38676,
+   339919
+  ],
+  "durations_without": [
+   79,
+   255,
+   283,
+   530,
+   584,
+   682,
+   738,
+   754
+  ],
+  "uploads_without": [
+   "20130213",
+   "20190613",
+   "20191129",
+   "20210825",
+   "20231126",
+   "20240121",
+   "20240125",
+   "20240502"
+  ]
+ },
+ "rows": [
+  {
+   "q": "sourdough starter beginner",
+   "id": "-9Osn7JsP1Y",
+   "heatmap": true,
+   "views": 3352612,
+   "upload": "20240301",
+   "duration": 482,
+   "likes": 70401,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "cODwTSqHmIE",
+   "heatmap": true,
+   "views": 521817,
+   "upload": "20220411",
+   "duration": 435,
+   "likes": 12944,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "ZHm1aKxAsIs",
+   "heatmap": true,
+   "views": 2703610,
+   "upload": "20210204",
+   "duration": 496,
+   "likes": 70455,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "sTAiDki7AQA",
+   "heatmap": true,
+   "views": 8913331,
+   "upload": "20180701",
+   "duration": 538,
+   "likes": 189320,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "s8dQ2hnYqp0",
+   "heatmap": true,
+   "views": 1003882,
+   "upload": "20250405",
+   "duration": 729,
+   "likes": 24738,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "9Yz0MyzDqvU",
+   "heatmap": true,
+   "views": 478498,
+   "upload": "20151013",
+   "duration": 131,
+   "likes": 5751,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "6xV3hvnKYPM",
+   "heatmap": true,
+   "views": 58618,
+   "upload": "20251029",
+   "duration": 1143,
+   "likes": 1634,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "o9R79a4s-BI",
+   "heatmap": true,
+   "views": 595509,
+   "upload": "20231115",
+   "duration": 3555,
+   "likes": 21019,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "0OeCjbXlPoA",
+   "heatmap": true,
+   "views": 529068,
+   "upload": "20260818",
+   "duration": 689,
+   "likes": 12639,
+   "live": false
+  },
+  {
+   "q": "sourdough starter beginner",
+   "id": "CTuGXdyrWUo",
+   "heatmap": true,
+   "views": 1128591,
+   "upload": "20250328",
+   "duration": 721,
+   "likes": 17956,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "HpUCCrgugQE",
+   "heatmap": true,
+   "views": 1038782,
+   "upload": "20170217",
+   "duration": 463,
+   "likes": 11222,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "rWchudX-Tqs",
+   "heatmap": true,
+   "views": 4591347,
+   "upload": "20150601",
+   "duration": 410,
+   "likes": 32424,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "Hs-isl_zfyQ",
+   "heatmap": false,
+   "views": 16274,
+   "upload": "20190613",
+   "duration": 79,
+   "likes": 51,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "i03ef_6SWe4",
+   "heatmap": true,
+   "views": 690032,
+   "upload": "20230529",
+   "duration": 468,
+   "likes": 5461,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "VdUQKVMPF5I",
+   "heatmap": true,
+   "views": 3032159,
+   "upload": "20170217",
+   "duration": 530,
+   "likes": 25132,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "KlDcxogZdLM",
+   "heatmap": true,
+   "views": 142017,
+   "upload": "20190715",
+   "duration": 396,
+   "likes": 3043,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "S_CnUWA7pWQ",
+   "heatmap": false,
+   "views": 33466,
+   "upload": "20210825",
+   "duration": 255,
+   "likes": 498,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "suJXnTcoLNo",
+   "heatmap": true,
+   "views": 373788,
+   "upload": "20171215",
+   "duration": 444,
+   "likes": 3087,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "xaT4wdwnTtQ",
+   "heatmap": true,
+   "views": 211321,
+   "upload": "20131216",
+   "duration": 169,
+   "likes": 1244,
+   "live": false
+  },
+  {
+   "q": "bicycle chain repair",
+   "id": "DPF-qU1bOkg",
+   "heatmap": true,
+   "views": 607605,
+   "upload": "20230610",
+   "duration": 91,
+   "likes": 3943,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "GnAZloK7P88",
+   "heatmap": true,
+   "views": 703774,
+   "upload": "20150916",
+   "duration": 2131,
+   "likes": 9324,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "JL19uKj7UD0",
+   "heatmap": false,
+   "views": 15314,
+   "upload": "20240502",
+   "duration": 530,
+   "likes": 376,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "1qcW_x_5rL0",
+   "heatmap": true,
+   "views": 84302,
+   "upload": "20230519",
+   "duration": 1242,
+   "likes": 2583,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "vv-nYYJO_5k",
+   "heatmap": false,
+   "views": 339919,
+   "upload": "20130213",
+   "duration": 283,
+   "likes": 3906,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "HwoPcG6dQjA",
+   "heatmap": true,
+   "views": 303935,
+   "upload": "20180528",
+   "duration": 734,
+   "likes": 7717,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "4UHNg9EGhDo",
+   "heatmap": true,
+   "views": 209787,
+   "upload": "20240925",
+   "duration": 865,
+   "likes": 5882,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "PGsgZp8UV9s",
+   "heatmap": false,
+   "views": 38676,
+   "upload": "20191129",
+   "duration": 584,
+   "likes": 1162,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "DhmHeO3MtZY",
+   "heatmap": false,
+   "views": 15744,
+   "upload": "20240125",
+   "duration": 682,
+   "likes": 623,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "I3Wiv5dRT3Q",
+   "heatmap": false,
+   "views": 4860,
+   "upload": "20240121",
+   "duration": 754,
+   "likes": 207,
+   "live": false
+  },
+  {
+   "q": "banjo lesson clawhammer",
+   "id": "HKlKpGikeI0",
+   "heatmap": false,
+   "views": 19613,
+   "upload": "20231126",
+   "duration": 738,
+   "likes": 374,
+   "live": false
+  }
+ ]
+}

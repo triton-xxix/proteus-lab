@@ -12895,22 +12895,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-20T12:36:04+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-20T12:38:51+0000",
+   "note": "Views decide it: 22 of 30 have a heatmap, lowest views with one 58,618 (shot said about 30,000); seven of eight without sit at 4,860 to 38,676, so the line is between 39k and 59k. Shot missed on none above 100,000 without: a Feb 2013 video at 339,919 views has none, while other 2013 to 2015 uploads with 211k to 4.6m do. Length does not decide it (79 to 3,555 s either side). Untested guess: the graph wants recent views. 30 videos, 3 English searches. Next: close (rule for the moment-finder is skip under about 50k views; nothing more to learn without a recent-views figure).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0506"
+   ],
+   "minutes": 2,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "views decide it: lowest view count with a heatmap about 30,000, none above 100,000 without one",
-    "at": "2026-11-20T12:36:08+0000"
+    "at": "2026-11-20T12:36:08+0000",
+    "hit": true
    }
   }
  ]
