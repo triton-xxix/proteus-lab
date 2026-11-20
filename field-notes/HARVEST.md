@@ -6,18 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-704 judged over 49 harvest days, 460 kept, 139 testable, 133 queued as probes, 125 with a probe verdict.
+717 judged over 50 harvest days, 469 kept, 141 testable, 135 queued as probes, 127 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0716 | 2026-11-20 | github | [JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / Break down any short drama with AI: why ](https://github.com/JuneYaooo/rea-toon) | mechanism | tools-for-strangers | no: It needs vision model calls over frame grids, and a drama to |  |
+| H-0714 | 2026-11-20 | vault | [Scraped-list cold voice, SMS and email blueprints for UK prospects]() (intel) | mechanism | mechanism-hunting | no: It means contacting real people, which Proteus does not do,  |  |
+| H-0713 | 2026-11-20 | arxiv | [Seer: Guiding Small Deep-Research Agents with Shared Decision Models](https://arxiv.org/abs/2611.26423) | mechanism | tech | no: It needs trained models and a local language model, and neit |  |
+| H-0711 | 2026-11-20 | hn | [Show HN: OpenComputer – an open source alternative to Devin](https://github.com/diggerhq/opencomputer) | both | tools-for-strangers | no: Running it needs a cloud account or VM and the benchmark nee |  |
+| H-0710 | 2026-11-20 | vault | [Promptwise as our platform]() | mechanism | tools-for-strangers | no: It has no public API and needs a logged-in account. |  |
+| H-0709 | 2026-11-20 | youtube | [I Built A World Cup Prediction Model. Here's How It Compares To Opta](https://www.youtube.com/watch?v=S3ZZoYwl8xg) | mechanism | desk:pitch | yes | P-0510 |
+| H-0708 | 2026-11-20 | arxiv | [Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)](https://arxiv.org/abs/2611.26553) | mechanism | tech | no: It needs model answers across several agents and there is no |  |
+| H-0706 | 2026-11-20 | hn | [Show HN: Fast deterministic natural language search for OpenStreetMap data](https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935) | mechanism | open-data | yes | P-0509 |
+| H-0705 | 2026-11-20 | vault | [Generated creators posing as customers, watermark removal and engagement pods]() (intel) | mechanism | mechanism-hunting | no: It is a set of deceptive-marketing tactics, and nothing runn |  |
 | H-0704 | 2026-11-19 | hn | [Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests](https://springcraft-ai.github.io/springrep/) | mechanism | mechanism-hunting | no: Needs a Rust toolchain and building a kernel plus adapters,  |  |
 | H-0701 | 2026-11-19 | vault | [Selling database reactivation cold to small local businesses that have no list]() | mechanism | tools-for-strangers | no: Needs a client's list, a sending account and consent; nothin |  |
-| H-0699 | 2026-11-19 | github | [mankidev/antialgorithm: Claude Code skill that steers the model away from its first, most ](https://github.com/mankidev/antialgorithm) | mechanism | tools-for-strangers | yes | P-0495 |
+| H-0699 | 2026-11-19 | github | [mankidev/antialgorithm: Claude Code skill that steers the model away from its first, most ](https://github.com/mankidev/antialgorithm) | mechanism | tools-for-strangers | yes | P-0495 **blocked** |
 | H-0697 | 2026-11-19 | vault | [agent reads Reddit threads]() | mechanism | open-data | yes |  |
 | H-0695 | 2026-11-19 | arxiv | [Ground, Iterate, Trace: Decomposing AI Research Ideation](https://arxiv.org/abs/2611.24887) | mechanism | tech | no: Needs model answers and there is no local LLM, so it is not  |  |
-| H-0694 | 2026-11-19 | github | [Bodila51/gtavi-claudecode: Claude Code plugin that turns GTA 6 streams into paid vertical ](https://github.com/Bodila51/gtavi-claudecode) | mechanism | mechanism-hunting | yes | P-0494 |
+| H-0694 | 2026-11-19 | github | [Bodila51/gtavi-claudecode: Claude Code plugin that turns GTA 6 streams into paid vertical ](https://github.com/Bodila51/gtavi-claudecode) | mechanism | mechanism-hunting | yes | P-0494 **not-worth-it** |
 | H-0693 | 2026-11-19 | hn | [Launch HN: Onlook (YC W25) – An open-source developer tool for designers](https://github.com/onlook-dev/onlook/) | mechanism | tools-for-strangers | no: It is a desktop app that needs an installed coding agent and |  |
 | H-0689 | 2026-11-18 | hn | [Show HN: Mastra Factory, the open-source software factory we use to build Mastra](https://news.ycombinator.com/item?id=50548660) | both | tools-for-strangers | no: It needs a cloud sandbox, model keys and a Slack workspace. |  |
 | H-0688 | 2026-11-18 | vault | [hiding third-party badges under a gradient]() (intel) | mechanism | tools-for-strangers | no: It would breach a vendor's terms and needs an account on the |  |
@@ -474,6 +483,120 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0716 JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / Break down any short drama with AI: why it works, the script, every sh
+2026-11-20, github, https://github.com/JuneYaooo/rea-toon
+
+- **Mechanism:** ffmpeg cuts each episode into shots and tiles frames into grids, and a vision-capable agent or an OpenAI-compatible vision model reads about 30 grids per episode. Its notes are structured into an emotion ledger, information gaps, pacing curve, script and shot list. The output is written both as HTML pages and as a layered VIDEO.md file for later agent queries.
+- **Claim:** Breaks down any short drama into why it went viral, a script and a per-shot breakdown.
+- **Testable:** no. It needs vision model calls over frame grids, and a drama to feed it that would not be ours to copy. Needs: A vision model run over frame grids, plus footage we have the right to analyse..
+- **Idea on its own:** sound. Shot detection plus frame grids read by a vision model is a workable way to structure video for an agent.
+- **How it would be done:** Install the CLI, cut one short licensed or own-made clip with ffmpeg scene detection, tile the frames and have a vision model write per-shot notes. Compare the notes to a human read of the same clip. The VIDEO.md format could also feed the Bootcamp edit stage. A person would choose the footage and judge the breakdown.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render), local transcription
+- **To fetch:** rea-toon https://github.com/JuneYaooo/rea-toon (The breakdown CLI and skill.); VIDEO.md format https://videomd.github.io/videomd/ (The open format the output is written in.); PySceneDetect https://github.com/Breakthrough/PySceneDetect (Free shot-boundary detection to feed the frame grids.)
+- **Missing:** A vision model budget for long series.
+- **Field Notes line:** rea-toon tiles video frames into grids for a vision model and writes a shot script, emotion ledger and pacing curve, plus a VIDEO.md an agent can query.
+
+### H-0714 Scraped-list cold voice, SMS and email blueprints for UK prospects
+2026-11-20, vault, 
+
+- **Mechanism:** Business contacts are scraped from public listings into a list. Automation then sends a cold email, SMS or AI voice call in sequence and routes replies to a human. In the UK, SMS and calls to individuals need consent under PECR, and calls must be screened against the TPS register. Cold email to a limited company is allowed with an opt-out, but a sole trader counts as an individual.
+- **Claim:** Blueprints for scraped-list cold voice, SMS and email outreach to UK prospects.
+- **Testable:** no. It means contacting real people, which Proteus does not do, and the legal question is not a runnable test. Needs: Sending infrastructure and consent, neither of which Proteus uses..
+- **Idea on its own:** unsound. Only the B2B email slice is lawful in the UK without prior consent, and the rest invites complaints and fines.
+- **How it would be done:** The lawful slice is B2B email to corporate addresses with an honest opt-out: build a lead list from a public registry, check each address type, write a short relevant message, send in small volumes and log replies. Calls and texts need either consent or a TPS and corporate-subscriber check. A hired person would handle replies and qualification calls.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Companies House API https://developer.company-information.service.gov.uk (A public registry that can seed a UK company list lawfully.)
+- **Missing:** Nothing worth building beyond the compliant email slice.
+- **Field Notes line:** Scraped-list cold voice, SMS and email stacks are mapped as intelligence: the parts are simple, and UK consent rules cut off most of the SMS and voice routes.
+
+### H-0713 Seer: Guiding Small Deep-Research Agents with Shared Decision Models
+2026-11-20, arxiv, https://arxiv.org/abs/2611.26423
+
+- **Mechanism:** A small agent proposes several candidate next actions. Two separately trained models then judge them: a simulator that predicts what the tool would return, and a value estimator trained on trajectories labelled by whether the final answer was right. Only the chosen action is executed for real, so rejected candidates cost no tool calls.
+- **Claim:** GAIA accuracy rises from 13.6% to 41.7% for Qwen3.5-4B and from 22.3% to 50.5% for Qwen3.5-9B.
+- **Testable:** no. It needs trained models and a local language model, and neither is available tonight. Needs: Local model hosting and the trained simulator and value models..
+- **Idea on its own:** needs-a-run. The design is coherent, but the gains are the authors' own on one benchmark family.
+- **How it would be done:** Collect real search-and-read trajectories with final correctness labels, train a response predictor and a value scorer offline, then wrap a small model so it proposes several actions and only runs the top scored one. The trajectory corpus is the part that needs building or hiring. A cheap proxy is to ask a frontier model to score proposed steps before executing them.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** GAIA benchmark https://huggingface.co/datasets/gaia-benchmark/GAIA (The public benchmark the result is measured on.)
+- **Missing:** A trajectory corpus and the compute to train the two models.
+- **Field Notes line:** Seer lets a small research agent imagine tool results with a trained simulator and score them before acting, lifting GAIA from 13.6% to 41.7%.
+
+### H-0711 Show HN: OpenComputer – an open source alternative to Devin
+2026-11-20, hn, https://github.com/diggerhq/opencomputer
+
+- **Mechanism:** The agent loop and its sandbox run on the same long-lived VM per team, so there is no remote sandbox call per step. Sessions are isolated as git worktrees on that VM, and session files are pushed to a repo after every turn so another VM can resume them. The cost claim is a break-even: above about 640 session-hours a month, one always-on 4 vCPU VM is cheaper than per-session sandboxes.
+- **Claim:** First commit in 24 seconds against 53 to 72 seconds for alternatives, and cheaper past about 640 session-hours a month.
+- **Testable:** no. Running it needs a cloud account or VM and the benchmark needs a model key. Needs: A cloud account and a model API key..
+- **Idea on its own:** sound. Co-locating the agent and its sandbox removes network hops, and git-backed state makes sessions portable.
+- **How it would be done:** Self-host on one VM, point it at a repo, and time the first commit on a fixed small task against the same task run locally. Separately, the cost claim can be checked on paper: compare a monthly VM price with the per-hour price of a sandbox service at a given usage. A person would set up the cloud account and the Slack or Discord wiring.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** OpenComputer https://github.com/diggerhq/opencomputer (The open-source agent harness and sandbox.)
+- **Missing:** A cloud VM and agent model key to run the benchmark.
+- **Field Notes line:** An open-source cloud coding agent puts the harness and sandbox on one durable VM and backs sessions up to git, and says it beats per-session sandboxes past 640 hours.
+
+### H-0710 Promptwise as our platform
+2026-11-20, vault, . Vault verdict on the vendor exists (vault verdict: Promptwise); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** Per the vault, it is a web-only front end where one account reaches several image and video models through a credit balance, with no public API. The method taught does not need it, because the same models can be reached directly by API on keys already held. The value is one place to compare outputs side by side.
+- **Claim:** Use it as the single platform for AI video generation, per the course.
+- **Testable:** no. It has no public API and needs a logged-in account. Needs: An account; no public API..
+- **Idea on its own:** unsound. A web-only reseller layer adds no capability over direct API access and cannot be automated.
+- **How it would be done:** For each video job, route by API: stills through Gemini, voice through ElevenLabs, avatars through HeyGen, edit in HyperFrames. A web-only aggregator would only matter when a model has no API, which a person would drive by hand and drop the files into the project folder.
+- **Stack already covers:** Gemini (stills), ElevenLabs (voice), HeyGen and Tavus (avatars), HyperFrames (video compose, captions, render)
+- **Missing:** Nothing.
+- **Field Notes line:** A multi-model video front end with no API: the vault says the same models are reachable direct on keys we already hold.
+
+### H-0709 I Built A World Cup Prediction Model. Here's How It Compares To Opta
+2026-11-20, youtube, https://www.youtube.com/watch?v=S3ZZoYwl8xg
+
+- **Mechanism:** A model is fitted on public international results since 1872, trimmed to the five years before 2022, then simulated through the tournament. It is scored on top-team hit rate, group-winner hit rate and Brier score against Opta's published 2022 forecast. The method is a match-level goals model whose outputs are rolled up by simulation.
+- **Claim:** A model on public data only is compared with Opta's pre-tournament forecast on 2022 using three scores.
+- **Testable:** yes. Using the public international results CSV, does a simple Elo-plus-Poisson model fitted to the five years before the 2022 World Cup beat a uniform baseline on match Brier score across the 64 matches? Queued as P-0510.
+- **Idea on its own:** sound. Pre-registered scoring against a public benchmark is the right test, and the data are free.
+- **How it would be done:** Pull the public international results CSV on GitHub, cut to the five years before November 2022, fit team strengths, and predict each 2022 match. Score with Brier against a uniform baseline and report group-winner hits. The same scorer can then be pointed at the Pitch desk's club predictions. Opta's tournament odds are published, so a comparison of outright probabilities is also possible from the page.
+- **Stack already covers:** football-data and a Dixon-Coles paper desk (the Pitch)
+- **To fetch:** International football results 1872 to date https://github.com/martj42/international_results (The public match data the video uses.)
+- **Missing:** Nothing; Opta's 2022 numbers would have to be copied by hand from their page.
+- **Field Notes line:** A YouTuber scores a public-data World Cup model against Opta on Brier, group winners and top eight, a ready template for grading our Pitch desk.
+
+### H-0708 Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)
+2026-11-20, arxiv, https://arxiv.org/abs/2611.26553
+
+- **Mechanism:** For each reported agent incident, the framework rebuilds the scene offline and builds a matched control that lacks only the blamed cause. Agents then run on both versions, so the cause is tested by the difference in how often the mistake happens. A warning after each tool output that names the hazard and its consequence was tested against a same-length note that did not name it.
+- **Claim:** Reproduced the reported harm in 89% of 108 incidents; five models made the mistake in 18% to 33% of runs against at most 1% in controls.
+- **Testable:** no. It needs model answers across several agents and there is no local LLM tonight. Needs: A model runner for repeated agent trials..
+- **Idea on its own:** needs-a-run. The matched-control design is sound, but the effect size comes from the authors' own replications.
+- **How it would be done:** Take an incident report, write the environment as a small sandbox (a database shared with the live site, say), and write a twin with the cause removed. Run an agent on both a number of times and compare the mistake rates. Then add the hazard-naming warning after tool output and measure again. A person would do the incident-to-sandbox rebuild, which is the hard part to script.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** The authors' replication set, if released, and a budget for repeated model runs.
+- **Field Notes line:** A paper rebuilds real agent disasters with and without the blamed cause: most had no attacker, and a warning naming the hazard cut harm.
+
+### H-0706 Show HN: Fast deterministic natural language search for OpenStreetMap data
+2026-11-20, hn, https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935
+
+- **Mechanism:** A query string is split into tokens. A word list of brands, sports and OSM tag names decides what to search for, and a geocoder (Photon) decides where. Relations like near, between, along and 100 m from are then compiled into Overpass QL and run on a custom Overpass engine. No language model is involved, so the same query always gives the same result.
+- **Claim:** Deterministic natural-language search over OpenStreetMap that handles stacked queries such as bridges over the Danube 50 km from Novi Sad.
+- **Testable:** yes. Of 15 plain-English place queries, how many does the HippoMaps parser (GPL, public repo) turn into valid Overpass QL that returns at least one result from a public Overpass endpoint? Queued as P-0509.
+- **Idea on its own:** sound. A tag word list plus a geocoder is a well-bounded way to turn natural language into structured queries without a model.
+- **How it would be done:** Clone the public repo and find the query parser module. Feed it a fixed list of 15 queries of rising complexity, capture the Overpass QL it emits, and run each against a public Overpass endpoint. Score each as valid, empty or error. The Photon geocoder is also public and keyless. Anyone using this later would extend the word list for a new domain such as car-related POIs or open data sets.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** HippoMaps https://github.com/cdutsov/hippomaps (The parser under test.); Overpass API public instance https://overpass-api.de (Runs the generated queries.); Photon geocoder https://photon.komoot.io (The where half of the parser.)
+- **Missing:** Nothing; a query set and a scoring script would need writing.
+- **Field Notes line:** HippoMaps turns plain-English place searches into OpenStreetMap queries with a word list and a geocoder, no language model, so the answer is repeatable.
+
+### H-0705 Generated creators posing as customers, watermark removal and engagement pods
+2026-11-20, vault, 
+
+- **Mechanism:** Synthetic presenters (avatar or generated-video tools) are scripted to speak as if they were ordinary customers, so an ad reads as a testimonial. Watermark removal strips provenance marks from generated clips, and engagement pods are groups that like and comment on each other's posts to lift ranking. Platforms and regulators catch these through AI-content labels and provenance metadata, ad-review classifiers, coordinated-behaviour detection on engagement graphs, and UK rules on fake reviews and endorsements.
+- **Claim:** The course teaches generated creators speaking as customers, watermark removal and engagement tricks as growth tactics.
+- **Testable:** no. It is a set of deceptive-marketing tactics, and nothing runnable keyless would give a verdict on it.
+- **Idea on its own:** unsound. It depends on deceiving viewers and breaks UK endorsement and platform rules, and detection keeps improving.
+- **How it would be done:** Nothing to build. The useful work is the detection side: list how platforms label AI content (C2PA credentials, visible AI tags), how the ASA and CMA treat undisclosed or fabricated testimonials, and how coordinated-engagement detection works. A hired person would be a compliance reviewer, not an operator. Proteus would only write this up as a short intel note on what gets accounts and advertisers into trouble.
+- **To fetch:** C2PA content credentials tool (c2patool) https://github.com/contentauth/c2patool (Reads provenance manifests on media, which shows how generated-content marking is checked.)
+- **Missing:** Nothing; this is not something to build.
+- **Field Notes line:** Fake-customer AI presenters, watermark stripping and engagement pods are recorded as intelligence only: what they are and how platforms and UK ad rules catch them.
 
 ### H-0704 Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests
 2026-11-19, hn, https://springcraft-ai.github.io/springrep/
@@ -5909,6 +6032,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0714 | 2026-11-20 | Scraped-list cold voice, SMS and email blueprints for UK prospects | dead | unsound | no |  |
+| H-0710 | 2026-11-20 | Promptwise as our platform | dead | unsound | no |  |
+| H-0705 | 2026-11-20 | Generated creators posing as customers, watermark removal and engagement pods | dead | unsound | no |  |
 | H-0701 | 2026-11-19 | Selling database reactivation cold to small local businesses that have no list | dead | sound | no |  |
 | H-0697 | 2026-11-19 | agent reads Reddit threads | dead | needs-a-run | yes |  |
 | H-0692 | 2026-11-19 | review gating | dead | skipped: Review gating (public stars for happy customers, private fee | no |  |
@@ -6061,6 +6187,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0414 | 2026-11-20 | [PySceneDetect](https://github.com/Breakthrough/PySceneDetect) | Free shot-boundary detection to feed the frame grids. | H-0716 (JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / ) | shelf |
+| T-0413 | 2026-11-20 | [VIDEO.md format](https://videomd.github.io/videomd/) | The open format the output is written in. | H-0716 (JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / ) | shelf |
+| T-0412 | 2026-11-20 | [rea-toon](https://github.com/JuneYaooo/rea-toon) | The breakdown CLI and skill. | H-0716 (JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / ) | shelf |
+| T-0411 | 2026-11-20 | [GAIA benchmark](https://huggingface.co/datasets/gaia-benchmark/GAIA) | The public benchmark the result is measured on. | H-0713 (Seer: Guiding Small Deep-Research Agents with Shar) | shelf |
+| T-0410 | 2026-11-20 | [OpenComputer](https://github.com/diggerhq/opencomputer) | The open-source agent harness and sandbox. | H-0711 (Show HN: OpenComputer – an open source alternative) | shelf |
+| T-0409 | 2026-11-20 | [International football results 1872 to date](https://github.com/martj42/international_results) | The public match data the video uses. | H-0709 (I Built A World Cup Prediction Model. Here's How I) | shelf |
+| T-0408 | 2026-11-20 | [Photon geocoder](https://photon.komoot.io) | The where half of the parser. | H-0706 (Show HN: Fast deterministic natural language searc) | shelf |
+| T-0407 | 2026-11-20 | [HippoMaps](https://github.com/cdutsov/hippomaps) | The parser under test. | H-0706 (Show HN: Fast deterministic natural language searc) | shelf |
 | T-0406 | 2026-11-19 | [springrep](https://github.com/springcraft-ai/springrep) | The Rust kernel. | H-0704 (Show HN: Robotics needs better CAD, so I wrote a B) | shelf |
 | T-0405 | 2026-11-19 | [brep-conformance](https://springcraft-ai.github.io/brep-conformance/) | The suite and its case definitions. | H-0704 (Show HN: Robotics needs better CAD, so I wrote a B) | shelf |
 | T-0404 | 2026-11-19 | [cairosvg](https://github.com/Kozea/CairoSVG) | SVG rendering if rsvg-convert is absent. | H-0699 (mankidev/antialgorithm: Claude Code skill that ste) | shelf |
@@ -6472,6 +6606,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0717 | 2026-11-20 | hn | [Claude Gets Hella Paranoid](https://news.ycombinator.com/item?id=50543947) | A single anecdote about Claude asking for proof of identity, with no mechanism to test. |
+| H-0715 | 2026-11-20 | hn | [Ask HN: Where do you see Software in 5 years?](https://news.ycombinator.com/item?id=50565484) | Opinion thread with no mechanism. |
+| H-0712 | 2026-11-20 | github | [diego3g/craft: Design skills for AI agents: /craft-setup writes your design brie](https://github.com/diego3g/craft) | A bundle of design-skill prompts routed by a session hook, with no new mechanism beyond the skills pattern the stack alr |
+| H-0707 | 2026-11-20 | github | [vaibhav-space/my-ai-coding-workflow: Production-grade AI coding instructions, cu](https://github.com/vaibhav-space/my-ai-coding-workflow) | A set of prompt files for plan, critique and audit with no public project or measurement behind it, and Proteus already  |
 | H-0703 | 2026-11-19 | github | [bookwjitchieni1986/blender-ai-mcp-addon: AI assistant and MCP server for Blender](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) | A Blender MCP bridge with a manager, worker, reviewer chain is a known pattern; nothing new in the mechanism, and the re |
 | H-0702 | 2026-11-19 | hn | [Tokendoctor – See what your Claude Code use overpays](https://github.com/localixai/tokendoctor) | Body gives only comments and no mechanism for how overpay is detected; Proteus already builds usage reports from transcr |
 | H-0700 | 2026-11-19 | arxiv | [Large Language Models or AI Agents for English to Arabic Translation? An assessm](https://arxiv.org/abs/2611.24588) | Generic translation benchmark on a paid model; the self-assessment loop is standard and the dataset is not in hand. |
