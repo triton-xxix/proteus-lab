@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 413 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 414 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,12 +26,12 @@ Verdicts so far: 413 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0504 | Mayhem coin lifetimes, a day on: re-read the 20 mints P-0491 caught (2026-11-19 12:39Z) with keyless Solana RPC getSignaturesForAddress, paging to birth; lifetime = birth to last signature; share dead inside 10 minutes, median lifetime, and whether the 52-minute survivor is still trading. Set beside P-0473's 35 minutes. | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (485)
+## Verdicts (486)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-20 | P-0504 | Mayhem coin lifetimes, a day on: re-read the 20 mints P-0491 caught (2026-11-19 12:39Z) with keyless Solana RPC getSignaturesForAddress, paging to birth; lifetime = birth to last signature; share dead inside 10 minutes, median lifetime, and whether the 52-minute survivor is still trading. Set beside P-0473's 35 minutes. | **works** | Median lifetime 9.75 minutes birth to last signature across 20 mints (shot said 20); 10 of 20 dead inside 10 minutes, 13 inside 15; 16 of 20 quiet over 12 hours (shot 18). Four long ones end on a lone call after a 4 to 19 hour gap, so by trading life 17 of 20 were done inside 15 minutes; P-0473s 35 minutes was a loose upper bound. The 52-minute survivor kept going: 1,658 signatures, last at 24.3 hours, possibly the burn. Not fetched: what the lone late calls were. The 21st P-0491 row is USDC, left out. Next: close (lifetime answered; what the late calls are is a transactions read, not worth a probe on its own). | `experiments/2026-11-20-P-0504` | 1 min, 8 calls, 0 denied |
 | 2026-11-20 | P-0503 | Wikipedia 3 to 4 Nov turnover: which articles entered the top 1,000 on 4 Nov, do they share a subject, and did 5 Nov go back to the 2 Nov list? | **works** | The 48 percent day was US midterm results day: 508 articles entered the top 1,000 on 4 Nov, 154 with an election word in the title (shot: at least 100; a floor, as candidates names carry none), led by Dan Osborn at rank 14 with 273,151 views. The list total views doubled, 18.6 million to 38.1 million, then 24.1 and 21.1. It did not snap back: 5 and 6 Nov each share 47 percent with 2 Nov against the usual 56 and 53. Caveats: title words only, one event. Next: close. | `experiments/2026-11-19-P-0503` | 0 min, 5 calls, 0 denied |
 | 2026-11-19 | P-0502 | Mayhem burn sweep, daily or rolling: for 12 other coins burned in P-0496's five batches, how many seconds past 24 hours was each when burned? | **works** | Rolling, not daily: 12 of 12 co-burned coins were 110 to 3,087 seconds past their 24th hour when burned (median 1,223), none over an hour; 9 of 12 under 30 minutes (shot: 10). With the five from P-0496 that is 17 coins all inside 52 minutes, and one batch held coins 110 s and 1,719 s past side by side, so each sweep takes whatever has come due. The period, about 50 minutes to an hour, is a guess from one sweep. Sweep size not measured: the fee payer history is about 860,000 signatures a day. Next: close. | `experiments/2026-11-19-P-0502` | 0 min, 6 calls, 0 denied |
 | 2026-11-19 | P-0501 | Lichess challenges wasted on absent bots: of 1,467 logged challenges, how many went to accounts not seen online in 30 days or closed, and the acceptance rate without them? | **works** | Only 80 of 1,467 logged challenges (5.5 percent, shot: under 10) went to accounts now closed or unseen for 30 days; acceptance is 5.0 percent with them and 5.3 without. The waste is elsewhere: 813 challenges, 55 percent of the log, went to 45 bots that are online today and have never accepted, six of them asked 43 to 78 times (resolutebot 78, online daily, declines). Caveats: seenAt is last seen online and is today state; the three-refusals rule was not replayed. Next: promote (lichess.py drops a name after three refusals with no acceptance, with P-0492 and P-0500 candidates in their place). | `experiments/2026-11-19-P-0501` | 0 min, 5 calls, 0 denied |

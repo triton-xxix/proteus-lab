@@ -1,0 +1,398 @@
+{
+ "summary": {
+  "at": "2026-11-20T12:33:10Z",
+  "mints": 21,
+  "complete": 20,
+  "median_lifetime_min": 9.75,
+  "min_lifetime_min": 3.05,
+  "max_lifetime_min": 1456.93,
+  "dead_inside_10_min": 10,
+  "dead_inside_35_min": 13,
+  "dead_inside_60_min": 13,
+  "quiet_over_12h": 16,
+  "quiet_under_1h": 1,
+  "median_sigs": 194.5,
+  "lifetimes_min": [
+   3.05,
+   4.7,
+   7.78,
+   8.07,
+   8.12,
+   8.22,
+   8.53,
+   8.6,
+   9.38,
+   9.43,
+   10.07,
+   12.17,
+   13.4,
+   87.28,
+   116.22,
+   246.93,
+   731.03,
+   775.1,
+   1148.88,
+   1456.93
+  ]
+ },
+ "rows": [
+  {
+   "mint": "ACauvLCsZatb9CqnVAszPskY9yw6Y4K3dE6qJpQMpump",
+   "sigs_total": 388,
+   "sigs_ok": 295,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:10Z",
+   "lifetime_min": 246.93,
+   "quiet_h": 19.8,
+   "age_at_catch_min": 1.18,
+   "sigs_after_catch": 39,
+   "last5_gaps_min": [
+    1.55,
+    0.0,
+    4.68,
+    238.15
+   ]
+  },
+  {
+   "mint": "6MvtQdiv33TP7pPF51um8nxCW3dbdZdzSdC8egNCpump",
+   "sigs_total": 344,
+   "sigs_ok": 303,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:17Z",
+   "lifetime_min": 87.28,
+   "quiet_h": 22.46,
+   "age_at_catch_min": 1.07,
+   "sigs_after_catch": 162,
+   "last5_gaps_min": [
+    1.43,
+    4.92,
+    37.42,
+    41.2
+   ]
+  },
+  {
+   "mint": "tZccyT7QExQByA9E8arwpPyRNzGfcpayQBfpAGrpump",
+   "sigs_total": 363,
+   "sigs_ok": 269,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:37:33Z",
+   "lifetime_min": 9.43,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 1.8,
+   "sigs_after_catch": 1,
+   "last5_gaps_min": [
+    0.0,
+    0.0,
+    0.02,
+    8.33
+   ]
+  },
+  {
+   "mint": "2RGFecxBZH9QGc5wqqD8h5FYTq4qZm9QtW16avqqpump",
+   "sigs_total": 110,
+   "sigs_ok": 86,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:52Z",
+   "lifetime_min": 8.12,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 0.48,
+   "sigs_after_catch": 36,
+   "last5_gaps_min": [
+    0.0,
+    0.03,
+    0.13,
+    7.27
+   ]
+  },
+  {
+   "mint": "EP95KMV7skhaEazFMaMxNQR5c1Uxuk4EwebQZFkspump",
+   "sigs_total": 48,
+   "sigs_ok": 45,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:51Z",
+   "lifetime_min": 8.07,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 0.5,
+   "sigs_after_catch": 3,
+   "last5_gaps_min": [
+    0.02,
+    0.03,
+    0.05,
+    7.5
+   ]
+  },
+  {
+   "mint": "95dc47cFMBU6DBMRGTMMEMeDRfL4fYMUJW7bqsKbpump",
+   "sigs_total": 690,
+   "sigs_ok": 600,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:37:32Z",
+   "lifetime_min": 9.38,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 1.82,
+   "sigs_after_catch": 409,
+   "last5_gaps_min": [
+    0.0,
+    0.1,
+    0.52,
+    1.28
+   ]
+  },
+  {
+   "mint": "GdCEERdykDcHoQaGdjmQhqPR488eHu2Pk6ydmDyHpump",
+   "sigs_total": 381,
+   "sigs_ok": 331,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:33:31Z",
+   "lifetime_min": 13.4,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 5.83,
+   "sigs_after_catch": 71,
+   "last5_gaps_min": [
+    0.03,
+    0.03,
+    6.13,
+    0.27
+   ]
+  },
+  {
+   "mint": "AFX7Wxudaf79fVMoyJxB3WkCVomDoQ39p2JSreFVpump",
+   "sigs_total": 221,
+   "sigs_ok": 215,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:46Z",
+   "lifetime_min": 8.22,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 0.58,
+   "sigs_after_catch": 120,
+   "last5_gaps_min": [
+    0.17,
+    0.1,
+    0.12,
+    3.38
+   ]
+  },
+  {
+   "mint": "HA5Urve7BCL2xm8wV84cmWNH7r6Z79NG6AvJGSgipump",
+   "sigs_total": 111,
+   "sigs_ok": 111,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:34:45Z",
+   "lifetime_min": 12.17,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 4.6,
+   "sigs_after_catch": 2,
+   "last5_gaps_min": [
+    0.02,
+    0.08,
+    3.08,
+    4.52
+   ]
+  },
+  {
+   "mint": "EEHCTh3CsLwucov4AZrNodnLgvaFqr5XAADwmLaZpump",
+   "sigs_total": 51,
+   "sigs_ok": 48,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:27Z",
+   "lifetime_min": 8.53,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 0.9,
+   "sigs_after_catch": 1,
+   "last5_gaps_min": [
+    0.02,
+    0.0,
+    0.08,
+    7.85
+   ]
+  },
+  {
+   "mint": "7rFqvFLLS3wpYyJhrhxJktd85c6Z3QfyWBJaRMHnpump",
+   "sigs_total": 58,
+   "sigs_ok": 56,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:19Z",
+   "lifetime_min": 8.6,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 1.03,
+   "sigs_after_catch": 3,
+   "last5_gaps_min": [
+    0.07,
+    1.12,
+    1.07,
+    5.85
+   ]
+  },
+  {
+   "mint": "DhC5FLFsVUUGVseZD3aqfHU6vkjNXmbAu6xKnPiapump",
+   "sigs_total": 168,
+   "sigs_ok": 166,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:35:43Z",
+   "lifetime_min": 3.05,
+   "quiet_h": 23.91,
+   "age_at_catch_min": 3.63,
+   "sigs_after_catch": 0,
+   "last5_gaps_min": [
+    0.0,
+    0.02,
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "mint": "DAZZNz46ATfF6sF6ptfC3dCxkQHXZZdf6VpvZ8A7pump",
+   "sigs_total": 69,
+   "sigs_ok": 69,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:20Z",
+   "lifetime_min": 4.7,
+   "quiet_h": 23.84,
+   "age_at_catch_min": 1.02,
+   "sigs_after_catch": 38,
+   "last5_gaps_min": [
+    0.07,
+    0.1,
+    0.53,
+    0.28
+   ]
+  },
+  {
+   "mint": "AW5K6QFU5XD3Qx4ruTRepeBWU9neeLZr5wn648UApump",
+   "sigs_total": 34,
+   "sigs_ok": 34,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:39:12Z",
+   "lifetime_min": 7.78,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 0.15,
+   "sigs_after_catch": 21,
+   "last5_gaps_min": [
+    0.17,
+    0.05,
+    0.03,
+    6.48
+   ]
+  },
+  {
+   "mint": "7km9zgFSSVrsbsvE2zTCewz9rNVXdwn1icrqpvhHpump",
+   "sigs_total": 129,
+   "sigs_ok": 128,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:29Z",
+   "lifetime_min": 1148.88,
+   "quiet_h": 4.76,
+   "age_at_catch_min": 0.87,
+   "sigs_after_catch": 7,
+   "last5_gaps_min": [
+    0.0,
+    0.15,
+    7.45,
+    1140.38
+   ]
+  },
+  {
+   "mint": "6MJ1A2fh3YGRVSyRSvdzypzeuGDVkf8h8m5Kg1G6pump",
+   "sigs_total": 429,
+   "sigs_ok": 233,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:36:53Z",
+   "lifetime_min": 10.07,
+   "quiet_h": 23.77,
+   "age_at_catch_min": 2.47,
+   "sigs_after_catch": 1,
+   "last5_gaps_min": [
+    0.02,
+    0.1,
+    0.33,
+    7.68
+   ]
+  },
+  {
+   "mint": "HXgTg5UbPmxG8njnvZP5gw76Vd8woF7VYzuQmorVpump",
+   "sigs_total": 1658,
+   "sigs_ok": 1211,
+   "complete": true,
+   "birth_utc": "2026-11-19T11:48:14Z",
+   "lifetime_min": 1456.93,
+   "quiet_h": 0.47,
+   "age_at_catch_min": 51.12,
+   "sigs_after_catch": 924,
+   "last5_gaps_min": [
+    19.18,
+    132.73,
+    406.97,
+    204.65
+   ]
+  },
+  {
+   "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "sigs_total": 8000,
+   "sigs_ok": 4784,
+   "complete": false,
+   "error": "page cap",
+   "birth_utc": "2026-11-20T12:32:32Z",
+   "lifetime_min": 0.97,
+   "quiet_h": -0.01,
+   "age_at_catch_min": -1433.18,
+   "sigs_after_catch": 4784,
+   "last5_gaps_min": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "mint": "GgTGkC5Xb2rqY1jMm5rbJG6roUtmzs91byKrU6KQpump",
+   "sigs_total": 25,
+   "sigs_ok": 25,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:38:04Z",
+   "lifetime_min": 775.1,
+   "quiet_h": 11.0,
+   "age_at_catch_min": 1.28,
+   "sigs_after_catch": 2,
+   "last5_gaps_min": [
+    0.02,
+    0.05,
+    8.23,
+    766.22
+   ]
+  },
+  {
+   "mint": "Fszpxn44fuEsZc5bthoLd2FjP8oncogh6SzQgkaypump",
+   "sigs_total": 365,
+   "sigs_ok": 279,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:36:02Z",
+   "lifetime_min": 731.03,
+   "quiet_h": 11.77,
+   "age_at_catch_min": 3.32,
+   "sigs_after_catch": 179,
+   "last5_gaps_min": [
+    0.03,
+    0.03,
+    0.08,
+    9.8
+   ]
+  },
+  {
+   "mint": "7JuGNnHPeARPEP4szseebv6yybAmnYiz8YvqhFrfpump",
+   "sigs_total": 411,
+   "sigs_ok": 372,
+   "complete": true,
+   "birth_utc": "2026-11-19T12:36:21Z",
+   "lifetime_min": 116.22,
+   "quiet_h": 22.01,
+   "age_at_catch_min": 3.0,
+   "sigs_after_catch": 261,
+   "last5_gaps_min": [
+    2.63,
+    24.1,
+    2.58,
+    78.9
+   ]
+  }
+ ]
+}

@@ -12846,22 +12846,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-20T12:32:35+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-20T12:34:10+0000",
+   "note": "Median lifetime 9.75 minutes birth to last signature across 20 mints (shot said 20); 10 of 20 dead inside 10 minutes, 13 inside 15; 16 of 20 quiet over 12 hours (shot 18). Four long ones end on a lone call after a 4 to 19 hour gap, so by trading life 17 of 20 were done inside 15 minutes; P-0473s 35 minutes was a loose upper bound. The 52-minute survivor kept going: 1,658 signatures, last at 24.3 hours, possibly the burn. Not fetched: what the lone late calls were. The 21st P-0491 row is USDC, left out. Next: close (lifetime answered; what the late calls are is a transactions read, not worth a probe on its own).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0504"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "median lifetime 20 minutes (birth to last signature), 18 of 20 quiet for over 12 hours",
-    "at": "2026-11-20T12:32:41+0000"
+    "at": "2026-11-20T12:32:41+0000",
+    "hit": true
    }
   }
  ]
