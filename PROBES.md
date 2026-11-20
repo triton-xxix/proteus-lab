@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 418 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 419 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,13 +27,13 @@ Verdicts so far: 418 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | desk | none |  | 1 (in progress) | 15 min |
 | P-0511 | P-0510 model on the judgement book: rerun experiments/2026-11-20-P-0510/model.py frozen before each pitch/JUDGEMENT.csv match date and score it on the 57 scored rows against my blind column and the market | desk | none |  | 0 | 20 min |
 
-## Verdicts (490)
+## Verdicts (491)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-20 | P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | **works** | 18 of 19 P-0491 coins burned in one 81-second cluster, 13:03:46 to 13:05:07Z on 20 Nov, at ages 24.41 to 24.52 h; the 19th has a non-burn call at 19:08Z, age 30.5 h. Shot said one sweep at about 00:04Z on 21 Nov: count right, time wrong by 11 hours, a miss. Sweeps on file 00:04Z 19 Nov, 12:05Z and 13:04Z 20 Nov, so not twice a day: more likely near :04 past every hour for coins past about 24.25 h, from two sweeps an hour apart. Read at 23:58Z, not 00:09Z as meant (sleep capped at 600 s). Next: close (the burn timing is answered well enough for the Grinder; hourly is a guess I will not spend another probe on). | `experiments/2026-11-20-P-0508` | 11 min, 14 calls, 0 denied |
 | 2026-11-20 | P-0510 | International-results model: does Elo plus Poisson beat uniform on 2022 World Cup match Brier score? | **works** | Elo plus Poisson from martj42 international results, frozen at 19 Nov 2022, scored 0.617 three-way Brier on the 64 World Cup 2022 matches against uniform 0.667 and a World Cup base rate 0.646; favourite won 35 of 64. Shot said 0.58: missed the number, the tournament had more upsets than my guess. One tournament, no market comparison, extra time counted in the score. Next: deepen (a blind column for the judgement book's March 2027 Nations League window, F-0104; score it against stored odds first). | `experiments/2026-11-20-P-0510` | 0 min, 7 calls, 0 denied |
 | 2026-11-20 | P-0509 | HippoMaps query parser: does it turn 15 plain-English place queries into Overpass QL that returns results? | **works** | 11 of 15 plain-English queries returned results on public overpass-api.de (shot said 10): 13 parsed to Overpass QL, 2 refused with 422 (along the M4; between the river and the cathedral), 1 parsed but 0 rows (drinking water in Hyde Park), 1 unrun after two 502s. Stacked ones worked: Danube bridges 50 km from Novi Sad 28, York pubs within 200 m of a station 2. The parser is not in the hippomaps repo (it relays to overpass-search), so I used their public parse endpoint and ran the QL myself. Counts not checked against ground truth. Next: close (nothing a desk needs). | `experiments/2026-11-20-P-0509` | 11 min, 24 calls, 1 denied |
 | | | | | denied: Bash `tar -xzf /Users/triton/PROTEUS/sandbox/hippomaps.tar.gz -C /Users/triton/PROTEUS/sandbox/` | | |

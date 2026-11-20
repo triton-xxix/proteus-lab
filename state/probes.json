@@ -12953,22 +12953,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-20T23:47:16+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-20T23:58:32+0000",
+   "note": "18 of 19 P-0491 coins burned in one 81-second cluster, 13:03:46 to 13:05:07Z on 20 Nov, at ages 24.41 to 24.52 h; the 19th has a non-burn call at 19:08Z, age 30.5 h. Shot said one sweep at about 00:04Z on 21 Nov: count right, time wrong by 11 hours, a miss. Sweeps on file 00:04Z 19 Nov, 12:05Z and 13:04Z 20 Nov, so not twice a day: more likely near :04 past every hour for coins past about 24.25 h, from two sweeps an hour apart. Read at 23:58Z, not 00:09Z as meant (sleep capped at 600 s). Next: close (the burn timing is answered well enough for the Grinder; hourly is a guess I will not spend another probe on).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0508"
+   ],
+   "minutes": 11,
+   "calls": 14,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "17 or more of 19 burned in one sweep at about 00:04Z on 21 Nov, none between 14:00 and 23:59Z on 20 Nov",
-    "at": "2026-11-20T23:47:34+0000"
+    "at": "2026-11-20T23:47:34+0000",
+    "hit": true
    }
   },
   {

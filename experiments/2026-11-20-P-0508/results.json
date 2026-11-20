@@ -1,0 +1,223 @@
+{
+ "summary": {
+  "at": "2026-11-20T23:58:04Z",
+  "mints": 19,
+  "burned": 18,
+  "changed_since_1258": 19,
+  "first_burn_utc": "2026-11-20 13:03:46",
+  "last_burn_utc": "2026-11-20 13:05:07",
+  "spread_s": 81,
+  "ages_h": [
+   24.413,
+   24.422,
+   24.426,
+   24.428,
+   24.432,
+   24.433,
+   24.433,
+   24.433,
+   24.434,
+   24.437,
+   24.447,
+   24.45,
+   24.451,
+   24.46,
+   24.466,
+   24.474,
+   24.486,
+   24.524
+  ]
+ },
+ "rows": [
+  {
+   "mint": "ACauvLCsZatb9CqnVAszPskY9yw6Y4K3dE6qJpQMpump",
+   "birth": 1795091890.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179848,
+   "newest_utc": "2026-11-20 13:04:08",
+   "is_burn": true,
+   "age_h": 24.433,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "6MvtQdiv33TP7pPF51um8nxCW3dbdZdzSdC8egNCpump",
+   "birth": 1795091897.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179831,
+   "newest_utc": "2026-11-20 13:03:51",
+   "is_burn": true,
+   "age_h": 24.426,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "tZccyT7QExQByA9E8arwpPyRNzGfcpayQBfpAGrpump",
+   "birth": 1795091853.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179826,
+   "newest_utc": "2026-11-20 13:03:46",
+   "is_burn": true,
+   "age_h": 24.437,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "2RGFecxBZH9QGc5wqqD8h5FYTq4qZm9QtW16avqqpump",
+   "birth": 1795091932.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179850,
+   "newest_utc": "2026-11-20 13:04:10",
+   "is_burn": true,
+   "age_h": 24.422,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "EP95KMV7skhaEazFMaMxNQR5c1Uxuk4EwebQZFkspump",
+   "birth": 1795091931.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179873,
+   "newest_utc": "2026-11-20 13:04:33",
+   "is_burn": true,
+   "age_h": 24.428,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "95dc47cFMBU6DBMRGTMMEMeDRfL4fYMUJW7bqsKbpump",
+   "birth": 1795091852.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179874,
+   "newest_utc": "2026-11-20 13:04:34",
+   "is_burn": true,
+   "age_h": 24.451,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "GdCEERdykDcHoQaGdjmQhqPR488eHu2Pk6ydmDyHpump",
+   "birth": 1795091611.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179899,
+   "newest_utc": "2026-11-20 13:04:59",
+   "is_burn": true,
+   "age_h": 24.524,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "AFX7Wxudaf79fVMoyJxB3WkCVomDoQ39p2JSreFVpump",
+   "birth": 1795091926.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179885,
+   "newest_utc": "2026-11-20 13:04:45",
+   "is_burn": true,
+   "age_h": 24.433,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "HA5Urve7BCL2xm8wV84cmWNH7r6Z79NG6AvJGSgipump",
+   "birth": 1795091685.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179836,
+   "newest_utc": "2026-11-20 13:03:56",
+   "is_burn": true,
+   "age_h": 24.486,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "EEHCTh3CsLwucov4AZrNodnLgvaFqr5XAADwmLaZpump",
+   "birth": 1795091907.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179862,
+   "newest_utc": "2026-11-20 13:04:22",
+   "is_burn": true,
+   "age_h": 24.432,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "7rFqvFLLS3wpYyJhrhxJktd85c6Z3QfyWBJaRMHnpump",
+   "birth": 1795091899.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179907,
+   "newest_utc": "2026-11-20 13:05:07",
+   "is_burn": true,
+   "age_h": 24.447,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "DhC5FLFsVUUGVseZD3aqfHU6vkjNXmbAu6xKnPiapump",
+   "birth": 1795091743.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179851,
+   "newest_utc": "2026-11-20 13:04:11",
+   "is_burn": true,
+   "age_h": 24.474,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "DAZZNz46ATfF6sF6ptfC3dCxkQHXZZdf6VpvZ8A7pump",
+   "birth": 1795091900.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179858,
+   "newest_utc": "2026-11-20 13:04:18",
+   "is_burn": true,
+   "age_h": 24.433,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "AW5K6QFU5XD3Qx4ruTRepeBWU9neeLZr5wn648UApump",
+   "birth": 1795091952.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179839,
+   "newest_utc": "2026-11-20 13:03:59",
+   "is_burn": true,
+   "age_h": 24.413,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "7km9zgFSSVrsbsvE2zTCewz9rNVXdwn1icrqpvhHpump",
+   "birth": 1795091909.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179870,
+   "newest_utc": "2026-11-20 13:04:30",
+   "is_burn": true,
+   "age_h": 24.434,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "6MJ1A2fh3YGRVSyRSvdzypzeuGDVkf8h8m5Kg1G6pump",
+   "birth": 1795091813.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179869,
+   "newest_utc": "2026-11-20 13:04:29",
+   "is_burn": true,
+   "age_h": 24.46,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "GgTGkC5Xb2rqY1jMm5rbJG6roUtmzs91byKrU6KQpump",
+   "birth": 1795091884.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179905,
+   "newest_utc": "2026-11-20 13:05:05",
+   "is_burn": true,
+   "age_h": 24.45,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "Fszpxn44fuEsZc5bthoLd2FjP8oncogh6SzQgkaypump",
+   "birth": 1795091762.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795201722,
+   "newest_utc": "2026-11-20 19:08:42",
+   "is_burn": false,
+   "age_h": 30.544,
+   "changed_since_1258": true
+  },
+  {
+   "mint": "7JuGNnHPeARPEP4szseebv6yybAmnYiz8YvqhFrfpump",
+   "birth": 1795091781.0,
+   "sigs_seen": 5,
+   "newest_blockTime": 1795179858,
+   "newest_utc": "2026-11-20 13:04:18",
+   "is_burn": true,
+   "age_h": 24.466,
+   "changed_since_1258": true
+  }
+ ]
+}
