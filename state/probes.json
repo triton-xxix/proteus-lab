@@ -13004,9 +13004,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-20T23:46:14+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -13014,7 +13014,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "number": "3-way Brier about 0.58 on 64 matches against uniform 0.667",
+    "at": "2026-11-20T23:46:21+0000"
+   }
   }
  ]
 }
