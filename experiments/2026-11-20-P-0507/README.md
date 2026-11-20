@@ -28,3 +28,10 @@ If the burn is a sweep that takes coins at about 24.28 hours or more, the other 
 (born 12:33:31 to 12:39:12Z) burn **between 12:50 and 13:00Z today, in one cluster under three
 minutes.** Re-read at about 12:58Z with `recheck.py`. A miss is any of the 19 burned before 12:50 or
 still unburned at the re-read.
+
+## Re-read, 12:58 to 13:00Z: the forecast missed
+
+**0 of 19 burned** (`recheck.json`), at ages 24.3 to 24.4 hours. So the burn is not "at 24.28 hours".
+Two sweeps are on file: 00:03:52Z on 19 Nov (coins 24.28 to 24.86 hours old) and 12:05:10Z today
+(`HXgTg5...`, 24.28). Coins born 12:33 to 12:39Z wait for a later sweep. Its time is the open
+question, and a read after 14:00Z answers it.

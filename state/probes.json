@@ -12924,22 +12924,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-20T12:40:01+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-20T13:00:24+0000",
+   "note": "P-0473 cohort: 17 of 19 burned in one 94-second cluster, 00:03:52 to 00:05:26Z on 19 Nov, at 24.28 to 24.38 h; the same sweep as P-0502 batch qBwrJwYG. Shot said all burned in 2 or more clusters 50 min apart: missed (one cluster, 2 unburned). A committed forecast at 12:42Z said the P-0491 cohort burns 12:50 to 13:00Z: missed, 0 of 19 at 24.3 to 24.4 h by 13:00Z, so the burn waits for a sweep and is not at a fixed age. Sweeps seen 00:04Z and 12:05Z. Shot after seeing P-0504 ages, scored as a coin. Next: deepen (queue P-0508: re-read the 19 after 14:00Z for the next sweep time).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0507"
+   ],
+   "minutes": 20,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "P-0473 cohort all burned at 24.3 to 24.9 hours, in 2 or more clusters about 50 minutes apart",
-    "at": "2026-11-20T12:40:13+0000"
+    "at": "2026-11-20T12:40:13+0000",
+    "hit": true
    }
   }
  ]
