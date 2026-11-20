@@ -13042,15 +13042,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-20T23:58:39+0000",
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-20T23:59:30+0000",
+   "note": "On 55 of the judgement book's 57 scored rows the frozen Elo plus Poisson scored 0.581 three-way Brier against the market's 0.538 and my anchored 0.546; on the 32 blind rows 0.586 against my blind 0.561 and the market 0.552. So it is 0.043 behind the market and 0.025 behind my hand calls: not worth adding as a blind column. Two rows lost to the Bosnia name spelling. No called shot (unshot).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0511"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }

@@ -1,0 +1,741 @@
+{
+ "summary": {
+  "scored_rows": 57,
+  "used": 55,
+  "missing_team": [
+   "J-0013 Romania v Bosnia & Herzegovina",
+   "J-0041 Bosnia & Herzegovina v Sweden"
+  ],
+  "brier_model": 0.5806,
+  "brier_anchored": 0.5461,
+  "brier_market": 0.5379,
+  "model_minus_market": 0.0426,
+  "blind_rows": 32,
+  "on_blind_rows": {
+   "model": 0.5861,
+   "blind": 0.5608,
+   "market": 0.552
+  },
+  "poisson_a_b": [
+   0.1919,
+   0.7506
+  ]
+ },
+ "rows": [
+  {
+   "id": "J-0001",
+   "match": "Lithuania v Azerbaijan",
+   "result": "D",
+   "model": [
+    0.411,
+    0.273,
+    0.316
+   ],
+   "b_model": 0.7975,
+   "b_me": 0.7166,
+   "b_market": 0.7135
+  },
+  {
+   "id": "J-0002",
+   "match": "Gibraltar v Andorra",
+   "result": "D",
+   "model": [
+    0.471,
+    0.265,
+    0.264
+   ],
+   "b_model": 0.8328,
+   "b_me": 0.645,
+   "b_market": 0.6624
+  },
+  {
+   "id": "J-0003",
+   "match": "Austria v Kosovo",
+   "result": "H",
+   "model": [
+    0.595,
+    0.231,
+    0.174
+   ],
+   "b_model": 0.2482,
+   "b_me": 0.3192,
+   "b_market": 0.2288
+  },
+  {
+   "id": "J-0004",
+   "match": "Denmark v Wales",
+   "result": "H",
+   "model": [
+    0.69,
+    0.193,
+    0.117
+   ],
+   "b_model": 0.1469,
+   "b_me": 0.3062,
+   "b_market": 0.1882
+  },
+  {
+   "id": "J-0005",
+   "match": "Serbia v Netherlands",
+   "result": "A",
+   "model": [
+    0.211,
+    0.248,
+    0.541
+   ],
+   "b_model": 0.3173,
+   "b_me": 0.1976,
+   "b_market": 0.1661
+  },
+  {
+   "id": "J-0006",
+   "match": "Germany v Greece",
+   "result": "A",
+   "model": [
+    0.652,
+    0.21,
+    0.139
+   ],
+   "b_model": 1.2109,
+   "b_me": 1.1018,
+   "b_market": 1.2409
+  },
+  {
+   "id": "J-0007",
+   "match": "Israel v Republic of Ireland",
+   "result": "A",
+   "model": [
+    0.421,
+    0.272,
+    0.307
+   ],
+   "b_model": 0.7315,
+   "b_me": 0.5774,
+   "b_market": 0.6569
+  },
+  {
+   "id": "J-0008",
+   "match": "Norway v Portugal",
+   "result": "A",
+   "model": [
+    0.438,
+    0.27,
+    0.292
+   ],
+   "b_model": 0.7667,
+   "b_me": 0.7136,
+   "b_market": 0.6127
+  },
+  {
+   "id": "J-0009",
+   "match": "Armenia v Montenegro",
+   "result": "A",
+   "model": [
+    0.37,
+    0.275,
+    0.355
+   ],
+   "b_model": 0.6281,
+   "b_me": 0.5958,
+   "b_market": 0.6298
+  },
+  {
+   "id": "J-0010",
+   "match": "Latvia v Cyprus",
+   "result": "D",
+   "model": [
+    0.409,
+    0.273,
+    0.318
+   ],
+   "b_model": 0.797,
+   "b_me": 0.7146,
+   "b_market": 0.7429
+  },
+  {
+   "id": "J-0011",
+   "match": "Georgia v Ukraine",
+   "result": "D",
+   "model": [
+    0.272,
+    0.266,
+    0.461
+   ],
+   "b_model": 0.8252,
+   "b_me": 0.7794,
+   "b_market": 0.7626
+  },
+  {
+   "id": "J-0012",
+   "match": "Belgium v France",
+   "result": "A",
+   "model": [
+    0.361,
+    0.275,
+    0.364
+   ],
+   "b_model": 0.61,
+   "b_me": 0.5064,
+   "b_market": 0.3737
+  },
+  {
+   "id": "J-0014",
+   "match": "Northern Ireland v Hungary",
+   "result": "D",
+   "model": [
+    0.434,
+    0.27,
+    0.296
+   ],
+   "b_model": 0.8078,
+   "b_me": 0.7368,
+   "b_market": 0.71
+  },
+  {
+   "id": "J-0015",
+   "match": "Turkey v Italy",
+   "result": "A",
+   "model": [
+    0.493,
+    0.26,
+    0.247
+   ],
+   "b_model": 0.8786,
+   "b_me": 0.6818,
+   "b_market": 0.581
+  },
+  {
+   "id": "J-0016",
+   "match": "Sweden v Poland",
+   "result": "H",
+   "model": [
+    0.55,
+    0.246,
+    0.204
+   ],
+   "b_model": 0.3049,
+   "b_me": 0.375,
+   "b_market": 0.3963
+  },
+  {
+   "id": "J-0017",
+   "match": "Spain v Croatia",
+   "result": "H",
+   "model": [
+    0.87,
+    0.094,
+    0.035
+   ],
+   "b_model": 0.027,
+   "b_me": 0.0962,
+   "b_market": 0.0881
+  },
+  {
+   "id": "J-0018",
+   "match": "Czech Republic v England",
+   "result": "A",
+   "model": [
+    0.088,
+    0.166,
+    0.747
+   ],
+   "b_model": 0.0992,
+   "b_me": 0.2198,
+   "b_market": 0.1831
+  },
+  {
+   "id": "J-0019",
+   "match": "Slovenia v North Macedonia",
+   "result": "H",
+   "model": [
+    0.598,
+    0.23,
+    0.172
+   ],
+   "b_model": 0.2447,
+   "b_me": 0.3488,
+   "b_market": 0.3
+  },
+  {
+   "id": "J-0020",
+   "match": "Scotland v Switzerland",
+   "result": "A",
+   "model": [
+    0.27,
+    0.266,
+    0.464
+   ],
+   "b_model": 0.4311,
+   "b_me": 0.5408,
+   "b_market": 0.4456
+  },
+  {
+   "id": "J-0021",
+   "match": "Denmark v Portugal",
+   "result": "A",
+   "model": [
+    0.293,
+    0.27,
+    0.437
+   ],
+   "b_model": 0.4758,
+   "b_me": 0.5234,
+   "b_market": 0.4554
+  },
+  {
+   "id": "J-0022",
+   "match": "Germany v Serbia",
+   "result": "H",
+   "model": [
+    0.697,
+    0.19,
+    0.113
+   ],
+   "b_model": 0.1408,
+   "b_me": 0.1368,
+   "b_market": 0.1244
+  },
+  {
+   "id": "J-0023",
+   "match": "Greece v Netherlands",
+   "result": "D",
+   "model": [
+    0.298,
+    0.271,
+    0.432
+   ],
+   "b_model": 0.8068,
+   "b_me": 0.8078,
+   "b_market": 0.8103
+  },
+  {
+   "id": "J-0024",
+   "match": "Wales v Norway",
+   "result": "H",
+   "model": [
+    0.187,
+    0.238,
+    0.574
+   ],
+   "b_model": 1.0468,
+   "b_me": 0.8258,
+   "b_market": 0.8508
+  },
+  {
+   "id": "J-0025",
+   "match": "Finland v Belarus",
+   "result": "D",
+   "model": [
+    0.505,
+    0.258,
+    0.237
+   ],
+   "b_model": 0.8629,
+   "b_me": 0.8474,
+   "b_market": 0.9316
+  },
+  {
+   "id": "J-0026",
+   "match": "Moldova v Faroe Islands",
+   "result": "D",
+   "model": [
+    0.34,
+    0.275,
+    0.386
+   ],
+   "b_model": 0.7905,
+   "b_me": 0.7154,
+   "b_market": 0.6943
+  },
+  {
+   "id": "J-0027",
+   "match": "San Marino v Albania",
+   "result": "A",
+   "model": [
+    0.007,
+    0.029,
+    0.964
+   ],
+   "b_model": 0.0022,
+   "b_me": 0.0194,
+   "b_market": 0.0145
+  },
+  {
+   "id": "J-0028",
+   "match": "Bulgaria v Estonia",
+   "result": "D",
+   "model": [
+    0.539,
+    0.249,
+    0.212
+   ],
+   "b_model": 0.9002,
+   "b_me": 0.8474,
+   "b_market": 0.8816
+  },
+  {
+   "id": "J-0029",
+   "match": "Luxembourg v Iceland",
+   "result": "A",
+   "model": [
+    0.344,
+    0.275,
+    0.382
+   ],
+   "b_model": 0.5757,
+   "b_me": 0.4704,
+   "b_market": 0.4857
+  },
+  {
+   "id": "J-0030",
+   "match": "Slovakia v Kazakhstan",
+   "result": "H",
+   "model": [
+    0.725,
+    0.177,
+    0.099
+   ],
+   "b_model": 0.1168,
+   "b_me": 0.1608,
+   "b_market": 0.1051
+  },
+  {
+   "id": "J-0031",
+   "match": "Azerbaijan v Liechtenstein",
+   "result": "D",
+   "model": [
+    0.915,
+    0.064,
+    0.021
+   ],
+   "b_model": 1.7131,
+   "b_me": 1.3358,
+   "b_market": 1.4196
+  },
+  {
+   "id": "J-0032",
+   "match": "Republic of Ireland v Austria",
+   "result": "D",
+   "model": [
+    0.326,
+    0.274,
+    0.401
+   ],
+   "b_model": 0.7941,
+   "b_me": 0.7448,
+   "b_market": 0.7655
+  },
+  {
+   "id": "J-0033",
+   "match": "Malta v Gibraltar",
+   "result": "D",
+   "model": [
+    0.763,
+    0.157,
+    0.08
+   ],
+   "b_model": 1.2978,
+   "b_me": 1.0298,
+   "b_market": 1.1775
+  },
+  {
+   "id": "J-0034",
+   "match": "Israel v Kosovo",
+   "result": "D",
+   "model": [
+    0.339,
+    0.275,
+    0.386
+   ],
+   "b_model": 0.7906,
+   "b_me": 0.7848,
+   "b_market": 0.7812
+  },
+  {
+   "id": "J-0035",
+   "match": "Kazakhstan v Moldova",
+   "result": "A",
+   "model": [
+    0.678,
+    0.199,
+    0.124
+   ],
+   "b_model": 1.2666,
+   "b_me": 0.9158,
+   "b_market": 0.9541
+  },
+  {
+   "id": "J-0036",
+   "match": "Latvia v Montenegro",
+   "result": "A",
+   "model": [
+    0.212,
+    0.249,
+    0.539
+   ],
+   "b_model": 0.3196,
+   "b_me": 0.4074,
+   "b_market": 0.3621
+  },
+  {
+   "id": "J-0037",
+   "match": "Belgium v Turkey",
+   "result": "H",
+   "model": [
+    0.688,
+    0.194,
+    0.118
+   ],
+   "b_model": 0.1488,
+   "b_me": 0.2648,
+   "b_market": 0.2151
+  },
+  {
+   "id": "J-0038",
+   "match": "Wales v Denmark",
+   "result": "A",
+   "model": [
+    0.318,
+    0.273,
+    0.409
+   ],
+   "b_model": 0.5248,
+   "b_me": 0.4706,
+   "b_market": 0.406
+  },
+  {
+   "id": "J-0039",
+   "match": "Greece v Germany",
+   "result": "D",
+   "model": [
+    0.389,
+    0.274,
+    0.337
+   ],
+   "b_model": 0.791,
+   "b_me": 0.8106,
+   "b_market": 0.8253
+  },
+  {
+   "id": "J-0040",
+   "match": "Cyprus v Armenia",
+   "result": "H",
+   "model": [
+    0.426,
+    0.271,
+    0.303
+   ],
+   "b_model": 0.4954,
+   "b_me": 0.54,
+   "b_market": 0.5294
+  },
+  {
+   "id": "J-0042",
+   "match": "Faroe Islands v Slovakia",
+   "result": "D",
+   "model": [
+    0.184,
+    0.237,
+    0.579
+   ],
+   "b_model": 0.9515,
+   "b_me": 0.9096,
+   "b_market": 0.9281
+  },
+  {
+   "id": "J-0043",
+   "match": "France v Italy",
+   "result": "D",
+   "model": [
+    0.74,
+    0.169,
+    0.091
+   ],
+   "b_model": 1.2474,
+   "b_me": 1.0374,
+   "b_market": 1.1221
+  },
+  {
+   "id": "J-0044",
+   "match": "Hungary v Georgia",
+   "result": "H",
+   "model": [
+    0.541,
+    0.248,
+    0.211
+   ],
+   "b_model": 0.3166,
+   "b_me": 0.4382,
+   "b_market": 0.4419
+  },
+  {
+   "id": "J-0045",
+   "match": "Poland v Romania",
+   "result": "H",
+   "model": [
+    0.581,
+    0.236,
+    0.183
+   ],
+   "b_model": 0.2645,
+   "b_me": 0.2534,
+   "b_market": 0.2259
+  },
+  {
+   "id": "J-0046",
+   "match": "Ukraine v Northern Ireland",
+   "result": "A",
+   "model": [
+    0.67,
+    0.202,
+    0.128
+   ],
+   "b_model": 1.2501,
+   "b_me": 0.9326,
+   "b_market": 0.9338
+  },
+  {
+   "id": "J-0047",
+   "match": "Finland v Albania",
+   "result": "H",
+   "model": [
+    0.349,
+    0.275,
+    0.376
+   ],
+   "b_model": 0.6415,
+   "b_me": 0.5768,
+   "b_market": 0.5571
+  },
+  {
+   "id": "J-0048",
+   "match": "Belarus v San Marino",
+   "result": "H",
+   "model": [
+    0.982,
+    0.015,
+    0.003
+   ],
+   "b_model": 0.0005,
+   "b_me": 0.0362,
+   "b_market": 0.0332
+  },
+  {
+   "id": "J-0049",
+   "match": "Croatia v England",
+   "result": "A",
+   "model": [
+    0.237,
+    0.258,
+    0.505
+   ],
+   "b_model": 0.3674,
+   "b_me": 0.3902,
+   "b_market": 0.3551
+  },
+  {
+   "id": "J-0050",
+   "match": "Estonia v Luxembourg",
+   "result": "H",
+   "model": [
+    0.484,
+    0.262,
+    0.254
+   ],
+   "b_model": 0.3993,
+   "b_me": 0.6542,
+   "b_market": 0.6879
+  },
+  {
+   "id": "J-0051",
+   "match": "Iceland v Bulgaria",
+   "result": "H",
+   "model": [
+    0.665,
+    0.204,
+    0.131
+   ],
+   "b_model": 0.1706,
+   "b_me": 0.1976,
+   "b_market": 0.1749
+  },
+  {
+   "id": "J-0052",
+   "match": "North Macedonia v Scotland",
+   "result": "A",
+   "model": [
+    0.279,
+    0.268,
+    0.453
+   ],
+   "b_model": 0.4484,
+   "b_me": 0.3768,
+   "b_market": 0.3294
+  },
+  {
+   "id": "J-0053",
+   "match": "Spain v Czech Republic",
+   "result": "H",
+   "model": [
+    0.976,
+    0.02,
+    0.004
+   ],
+   "b_model": 0.001,
+   "b_me": 0.0266,
+   "b_market": 0.0232
+  },
+  {
+   "id": "J-0054",
+   "match": "Switzerland v Slovenia",
+   "result": "H",
+   "model": [
+    0.801,
+    0.136,
+    0.063
+   ],
+   "b_model": 0.0623,
+   "b_me": 0.1586,
+   "b_market": 0.1368
+  },
+  {
+   "id": "J-0055",
+   "match": "Netherlands v Serbia",
+   "result": "H",
+   "model": [
+    0.796,
+    0.139,
+    0.065
+   ],
+   "b_model": 0.0654,
+   "b_me": 0.0882,
+   "b_market": 0.0642
+  },
+  {
+   "id": "J-0056",
+   "match": "Portugal v Norway",
+   "result": "H",
+   "model": [
+    0.663,
+    0.205,
+    0.132
+   ],
+   "b_model": 0.173,
+   "b_me": 0.2904,
+   "b_market": 0.2891
+  },
+  {
+   "id": "J-0057",
+   "match": "Republic of Ireland v Israel",
+   "result": "D",
+   "model": [
+    0.615,
+    0.224,
+    0.161
+   ],
+   "b_model": 1.0059,
+   "b_me": 0.8358,
+   "b_market": 0.8112
+  }
+ ]
+}
