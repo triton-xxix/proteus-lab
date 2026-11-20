@@ -1,0 +1,876 @@
+{
+ "summary": {
+  "matches": 64,
+  "brier_model": 0.6169,
+  "brier_uniform": 0.6667,
+  "brier_base_rate": 0.6461,
+  "base_rate_HDA": [
+   0.438,
+   0.24,
+   0.323
+  ],
+  "logloss_model": 1.0535,
+  "favourite_hit": 35,
+  "poisson_a_b": [
+   0.1869,
+   0.769
+  ],
+  "fit_rows": 16104,
+  "top5_elo": [
+   [
+    2231,
+    "Brazil"
+   ],
+   [
+    2196,
+    "Argentina"
+   ],
+   [
+    2110,
+    "Netherlands"
+   ],
+   [
+    2105,
+    "Spain"
+   ],
+   [
+    2066,
+    "Italy"
+   ]
+  ]
+ },
+ "matches": [
+  {
+   "date": "2022-11-20",
+   "home": "Qatar",
+   "away": "Ecuador",
+   "score": "0-2",
+   "dr": -21,
+   "p": [
+    0.339,
+    0.275,
+    0.385
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-21",
+   "home": "Senegal",
+   "away": "Netherlands",
+   "score": "0-2",
+   "dr": -297,
+   "p": [
+    0.106,
+    0.184,
+    0.71
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-21",
+   "home": "England",
+   "away": "Iran",
+   "score": "6-2",
+   "dr": 52,
+   "p": [
+    0.422,
+    0.273,
+    0.306
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-21",
+   "home": "United States",
+   "away": "Wales",
+   "score": "1-1",
+   "dr": 75,
+   "p": [
+    0.449,
+    0.269,
+    0.282
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-22",
+   "home": "Argentina",
+   "away": "Saudi Arabia",
+   "score": "1-2",
+   "dr": 447,
+   "p": [
+    0.85,
+    0.107,
+    0.043
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-22",
+   "home": "Mexico",
+   "away": "Poland",
+   "score": "0-0",
+   "dr": 45,
+   "p": [
+    0.414,
+    0.273,
+    0.313
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-22",
+   "home": "Denmark",
+   "away": "Tunisia",
+   "score": "0-0",
+   "dr": 214,
+   "p": [
+    0.616,
+    0.224,
+    0.16
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-22",
+   "home": "France",
+   "away": "Australia",
+   "score": "4-1",
+   "dr": 207,
+   "p": [
+    0.607,
+    0.227,
+    0.165
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-23",
+   "home": "Germany",
+   "away": "Japan",
+   "score": "1-2",
+   "dr": 120,
+   "p": [
+    0.503,
+    0.259,
+    0.238
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-23",
+   "home": "Spain",
+   "away": "Costa Rica",
+   "score": "7-0",
+   "dr": 243,
+   "p": [
+    0.65,
+    0.211,
+    0.139
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-23",
+   "home": "Morocco",
+   "away": "Croatia",
+   "score": "0-0",
+   "dr": -129,
+   "p": [
+    0.23,
+    0.256,
+    0.514
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-23",
+   "home": "Belgium",
+   "away": "Canada",
+   "score": "1-0",
+   "dr": 161,
+   "p": [
+    0.553,
+    0.246,
+    0.202
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-24",
+   "home": "Switzerland",
+   "away": "Cameroon",
+   "score": "1-0",
+   "dr": 254,
+   "p": [
+    0.662,
+    0.206,
+    0.132
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-24",
+   "home": "Brazil",
+   "away": "Serbia",
+   "score": "2-0",
+   "dr": 270,
+   "p": [
+    0.68,
+    0.198,
+    0.122
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-24",
+   "home": "Uruguay",
+   "away": "South Korea",
+   "score": "0-0",
+   "dr": 123,
+   "p": [
+    0.507,
+    0.258,
+    0.236
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-24",
+   "home": "Portugal",
+   "away": "Ghana",
+   "score": "3-2",
+   "dr": 384,
+   "p": [
+    0.797,
+    0.139,
+    0.064
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-25",
+   "home": "Qatar",
+   "away": "Senegal",
+   "score": "1-3",
+   "dr": 71,
+   "p": [
+    0.445,
+    0.27,
+    0.286
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-25",
+   "home": "Netherlands",
+   "away": "Ecuador",
+   "score": "1-1",
+   "dr": 205,
+   "p": [
+    0.606,
+    0.228,
+    0.166
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-25",
+   "home": "Wales",
+   "away": "Iran",
+   "score": "0-2",
+   "dr": -73,
+   "p": [
+    0.284,
+    0.269,
+    0.447
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-25",
+   "home": "England",
+   "away": "United States",
+   "score": "0-0",
+   "dr": 50,
+   "p": [
+    0.42,
+    0.273,
+    0.307
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-26",
+   "home": "Poland",
+   "away": "Saudi Arabia",
+   "score": "2-0",
+   "dr": 116,
+   "p": [
+    0.498,
+    0.26,
+    0.242
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-26",
+   "home": "Argentina",
+   "away": "Mexico",
+   "score": "2-0",
+   "dr": 286,
+   "p": [
+    0.698,
+    0.19,
+    0.112
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-26",
+   "home": "Tunisia",
+   "away": "Australia",
+   "score": "0-1",
+   "dr": -13,
+   "p": [
+    0.348,
+    0.276,
+    0.377
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-26",
+   "home": "France",
+   "away": "Denmark",
+   "score": "2-1",
+   "dr": 5,
+   "p": [
+    0.368,
+    0.276,
+    0.356
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-27",
+   "home": "Japan",
+   "away": "Costa Rica",
+   "score": "0-1",
+   "dr": 31,
+   "p": [
+    0.398,
+    0.275,
+    0.328
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-27",
+   "home": "Spain",
+   "away": "Germany",
+   "score": "1-1",
+   "dr": 92,
+   "p": [
+    0.469,
+    0.266,
+    0.265
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-27",
+   "home": "Belgium",
+   "away": "Morocco",
+   "score": "0-2",
+   "dr": 195,
+   "p": [
+    0.593,
+    0.233,
+    0.174
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-27",
+   "home": "Croatia",
+   "away": "Canada",
+   "score": "4-1",
+   "dr": 96,
+   "p": [
+    0.474,
+    0.265,
+    0.261
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-28",
+   "home": "Cameroon",
+   "away": "Serbia",
+   "score": "3-3",
+   "dr": -243,
+   "p": [
+    0.139,
+    0.211,
+    0.649
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-11-28",
+   "home": "Brazil",
+   "away": "Switzerland",
+   "score": "1-0",
+   "dr": 259,
+   "p": [
+    0.668,
+    0.203,
+    0.129
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-28",
+   "home": "South Korea",
+   "away": "Ghana",
+   "score": "2-3",
+   "dr": 206,
+   "p": [
+    0.606,
+    0.228,
+    0.166
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-28",
+   "home": "Portugal",
+   "away": "Uruguay",
+   "score": "2-0",
+   "dr": 55,
+   "p": [
+    0.426,
+    0.272,
+    0.302
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-29",
+   "home": "Ecuador",
+   "away": "Senegal",
+   "score": "1-2",
+   "dr": 92,
+   "p": [
+    0.469,
+    0.266,
+    0.265
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-29",
+   "home": "Qatar",
+   "away": "Netherlands",
+   "score": "0-2",
+   "dr": -226,
+   "p": [
+    0.151,
+    0.219,
+    0.63
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-29",
+   "home": "Wales",
+   "away": "England",
+   "score": "0-3",
+   "dr": -125,
+   "p": [
+    0.234,
+    0.257,
+    0.509
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-29",
+   "home": "Iran",
+   "away": "United States",
+   "score": "0-1",
+   "dr": -2,
+   "p": [
+    0.36,
+    0.276,
+    0.364
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-30",
+   "home": "Poland",
+   "away": "Argentina",
+   "score": "0-2",
+   "dr": -331,
+   "p": [
+    0.088,
+    0.167,
+    0.746
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-30",
+   "home": "Saudi Arabia",
+   "away": "Mexico",
+   "score": "1-2",
+   "dr": -161,
+   "p": [
+    0.202,
+    0.246,
+    0.552
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-11-30",
+   "home": "Australia",
+   "away": "Denmark",
+   "score": "1-0",
+   "dr": -201,
+   "p": [
+    0.169,
+    0.23,
+    0.601
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-11-30",
+   "home": "Tunisia",
+   "away": "France",
+   "score": "1-0",
+   "dr": -220,
+   "p": [
+    0.156,
+    0.222,
+    0.623
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-01",
+   "home": "Japan",
+   "away": "Spain",
+   "score": "2-1",
+   "dr": -212,
+   "p": [
+    0.161,
+    0.225,
+    0.613
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-01",
+   "home": "Costa Rica",
+   "away": "Germany",
+   "score": "2-4",
+   "dr": -151,
+   "p": [
+    0.21,
+    0.249,
+    0.541
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-12-01",
+   "home": "Croatia",
+   "away": "Belgium",
+   "score": "0-0",
+   "dr": -65,
+   "p": [
+    0.292,
+    0.271,
+    0.438
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-12-01",
+   "home": "Canada",
+   "away": "Morocco",
+   "score": "1-2",
+   "dr": 34,
+   "p": [
+    0.4,
+    0.274,
+    0.325
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-12-02",
+   "home": "Serbia",
+   "away": "Switzerland",
+   "score": "2-3",
+   "dr": -11,
+   "p": [
+    0.35,
+    0.276,
+    0.374
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-12-02",
+   "home": "Cameroon",
+   "away": "Brazil",
+   "score": "1-0",
+   "dr": -512,
+   "p": [
+    0.027,
+    0.078,
+    0.896
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-02",
+   "home": "Ghana",
+   "away": "Uruguay",
+   "score": "0-2",
+   "dr": -329,
+   "p": [
+    0.089,
+    0.168,
+    0.743
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-12-02",
+   "home": "South Korea",
+   "away": "Portugal",
+   "score": "2-1",
+   "dr": -178,
+   "p": [
+    0.188,
+    0.239,
+    0.573
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-03",
+   "home": "Netherlands",
+   "away": "United States",
+   "score": "3-1",
+   "dr": 210,
+   "p": [
+    0.612,
+    0.226,
+    0.162
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-03",
+   "home": "Argentina",
+   "away": "Australia",
+   "score": "2-1",
+   "dr": 368,
+   "p": [
+    0.782,
+    0.147,
+    0.071
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-04",
+   "home": "France",
+   "away": "Poland",
+   "score": "3-1",
+   "dr": 170,
+   "p": [
+    0.563,
+    0.242,
+    0.194
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-04",
+   "home": "England",
+   "away": "Senegal",
+   "score": "3-0",
+   "dr": 137,
+   "p": [
+    0.524,
+    0.254,
+    0.223
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-05",
+   "home": "Japan",
+   "away": "Croatia",
+   "score": "1-1",
+   "dr": -95,
+   "p": [
+    0.262,
+    0.265,
+    0.473
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-12-05",
+   "home": "Brazil",
+   "away": "South Korea",
+   "score": "4-1",
+   "dr": 346,
+   "p": [
+    0.761,
+    0.159,
+    0.081
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-06",
+   "home": "Morocco",
+   "away": "Spain",
+   "score": "0-0",
+   "dr": -246,
+   "p": [
+    0.137,
+    0.21,
+    0.653
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-12-06",
+   "home": "Portugal",
+   "away": "Switzerland",
+   "score": "6-1",
+   "dr": 91,
+   "p": [
+    0.468,
+    0.266,
+    0.266
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-09",
+   "home": "Croatia",
+   "away": "Brazil",
+   "score": "1-1",
+   "dr": -242,
+   "p": [
+    0.14,
+    0.211,
+    0.649
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-12-09",
+   "home": "Netherlands",
+   "away": "Argentina",
+   "score": "2-2",
+   "dr": -86,
+   "p": [
+    0.27,
+    0.267,
+    0.463
+   ],
+   "outcome": "D"
+  },
+  {
+   "date": "2022-12-10",
+   "home": "Morocco",
+   "away": "Portugal",
+   "score": "1-0",
+   "dr": -204,
+   "p": [
+    0.167,
+    0.229,
+    0.604
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-10",
+   "home": "England",
+   "away": "France",
+   "score": "1-2",
+   "dr": -85,
+   "p": [
+    0.272,
+    0.267,
+    0.461
+   ],
+   "outcome": "A"
+  },
+  {
+   "date": "2022-12-13",
+   "home": "Argentina",
+   "away": "Croatia",
+   "score": "3-0",
+   "dr": 208,
+   "p": [
+    0.609,
+    0.227,
+    0.164
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-14",
+   "home": "France",
+   "away": "Morocco",
+   "score": "2-0",
+   "dr": 176,
+   "p": [
+    0.571,
+    0.24,
+    0.189
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-17",
+   "home": "Croatia",
+   "away": "Morocco",
+   "score": "2-1",
+   "dr": 129,
+   "p": [
+    0.514,
+    0.256,
+    0.23
+   ],
+   "outcome": "H"
+  },
+  {
+   "date": "2022-12-18",
+   "home": "Argentina",
+   "away": "France",
+   "score": "3-3",
+   "dr": 161,
+   "p": [
+    0.553,
+    0.246,
+    0.202
+   ],
+   "outcome": "D"
+  }
+ ]
+}

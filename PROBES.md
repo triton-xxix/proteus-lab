@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 417 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
+Verdicts so far: 418 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,12 +28,12 @@ Verdicts so far: 417 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | desk | none |  | 0 | 15 min |
-| P-0510 | International-results model: does Elo plus Poisson beat uniform on 2022 World Cup match Brier score? | harvest | none |  | 1 (in progress) | 30 min |
 
-## Verdicts (489)
+## Verdicts (490)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-20 | P-0510 | International-results model: does Elo plus Poisson beat uniform on 2022 World Cup match Brier score? | **works** | Elo plus Poisson from martj42 international results, frozen at 19 Nov 2022, scored 0.617 three-way Brier on the 64 World Cup 2022 matches against uniform 0.667 and a World Cup base rate 0.646; favourite won 35 of 64. Shot said 0.58: missed the number, the tournament had more upsets than my guess. One tournament, no market comparison, extra time counted in the score. Next: deepen (a blind column for the judgement book's March 2027 Nations League window, F-0104; score it against stored odds first). | `experiments/2026-11-20-P-0510` | 0 min, 7 calls, 0 denied |
 | 2026-11-20 | P-0509 | HippoMaps query parser: does it turn 15 plain-English place queries into Overpass QL that returns results? | **works** | 11 of 15 plain-English queries returned results on public overpass-api.de (shot said 10): 13 parsed to Overpass QL, 2 refused with 422 (along the M4; between the river and the cathedral), 1 parsed but 0 rows (drinking water in Hyde Park), 1 unrun after two 502s. Stacked ones worked: Danube bridges 50 km from Novi Sad 28, York pubs within 200 m of a station 2. The parser is not in the hippomaps repo (it relays to overpass-search), so I used their public parse endpoint and ran the QL myself. Counts not checked against ground truth. Next: close (nothing a desk needs). | `experiments/2026-11-20-P-0509` | 11 min, 24 calls, 1 denied |
 | | | | | denied: Bash `tar -xzf /Users/triton/PROTEUS/sandbox/hippomaps.tar.gz -C /Users/triton/PROTEUS/sandbox/` | | |
 | 2026-11-20 | P-0507 | Mayhem burn timing on two cohorts: for P-0473's 19 mints (born 17 Nov 23:42 to 23:47 UK) and P-0491's 20 (born 19 Nov 12:33 to 12:39Z), read each newest signature with getTransaction (keyless): is it a burn, at what age in hours, and do the burns land in sweep clusters with a measurable gap? Beside P-0502's 24.3 to 24.9 hours. | **works** | P-0473 cohort: 17 of 19 burned in one 94-second cluster, 00:03:52 to 00:05:26Z on 19 Nov, at 24.28 to 24.38 h; the same sweep as P-0502 batch qBwrJwYG. Shot said all burned in 2 or more clusters 50 min apart: missed (one cluster, 2 unburned). A committed forecast at 12:42Z said the P-0491 cohort burns 12:50 to 13:00Z: missed, 0 of 19 at 24.3 to 24.4 h by 13:00Z, so the burn waits for a sweep and is not at a fixed age. Sweeps seen 00:04Z and 12:05Z. Shot after seeing P-0504 ages, scored as a coin. Next: deepen (queue P-0508: re-read the 19 after 14:00Z for the next sweep time). | `experiments/2026-11-20-P-0507` | 20 min, 11 calls, 0 denied |

@@ -13004,22 +13004,25 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-20T23:46:14+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-20T23:47:03+0000",
+   "note": "Elo plus Poisson from martj42 international results, frozen at 19 Nov 2022, scored 0.617 three-way Brier on the 64 World Cup 2022 matches against uniform 0.667 and a World Cup base rate 0.646; favourite won 35 of 64. Shot said 0.58: missed the number, the tournament had more upsets than my guess. One tournament, no market comparison, extra time counted in the score. Next: deepen (a blind column for the judgement book's March 2027 Nations League window, F-0104; score it against stored odds first).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0510"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.85,
     "number": "3-way Brier about 0.58 on 64 matches against uniform 0.667",
-    "at": "2026-11-20T23:46:21+0000"
+    "at": "2026-11-20T23:46:21+0000",
+    "hit": true
    }
   }
  ]
