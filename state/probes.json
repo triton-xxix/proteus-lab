@@ -1,5 +1,5 @@
 {
- "next_id": 507,
+ "next_id": 508,
  "items": [
   {
    "id": "P-0001",
@@ -12914,6 +12914,32 @@
     "number": "views decide it: lowest view count with a heatmap about 30,000, none above 100,000 without one",
     "at": "2026-11-20T12:36:08+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0507",
+   "title": "Mayhem burn timing on two cohorts: for P-0473's 19 mints (born 17 Nov 23:42 to 23:47 UK) and P-0491's 20 (born 19 Nov 12:33 to 12:39Z), read each newest signature with getTransaction (keyless): is it a burn, at what age in hours, and do the burns land in sweep clusters with a measurable gap? Beside P-0502's 24.3 to 24.9 hours.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-20",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-20T12:40:01+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "P-0473 cohort all burned at 24.3 to 24.9 hours, in 2 or more clusters about 50 minutes apart",
+    "at": "2026-11-20T12:40:13+0000"
    }
   }
  ]

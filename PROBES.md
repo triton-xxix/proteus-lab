@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 415 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Verdicts so far: 415 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
+| P-0507 | Mayhem burn timing on two cohorts: for P-0473's 19 mints (born 17 Nov 23:42 to 23:47 UK) and P-0491's 20 (born 19 Nov 12:33 to 12:39Z), read each newest signature with getTransaction (keyless): is it a burn, at what age in hours, and do the burns land in sweep clusters with a measurable gap? Beside P-0502's 24.3 to 24.9 hours. | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (487)
 
