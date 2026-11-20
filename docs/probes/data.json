@@ -1,44 +1,44 @@
 {
  "summary": {
-  "n": 469,
+  "n": 485,
   "by_verdict": {
-   "works": 399,
-   "not-worth-it": 20,
-   "blocked": 42,
+   "works": 413,
+   "not-worth-it": 21,
+   "blocked": 43,
    "broken": 8
   },
-  "open": 14,
+  "open": 13,
   "killed": 5,
-  "minutes_total": 772,
+  "minutes_total": 795,
   "minutes_median": 1,
-  "calls_total": 5075,
+  "calls_total": 5195,
   "pages": 10,
   "first": "2026-09-24",
-  "last": "2026-11-18"
+  "last": "2026-11-20"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 186,
-   "works": 176,
+   "n": 199,
+   "works": 189,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 1
   },
   {
    "source": "desk",
-   "n": 114,
-   "works": 95,
+   "n": 115,
+   "works": 96,
    "not-worth-it": 7,
    "blocked": 11,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 100,
+   "n": 102,
    "works": 77,
-   "not-worth-it": 3,
-   "blocked": 14,
+   "not-worth-it": 4,
+   "blocked": 15,
    "broken": 6
   },
   {
@@ -50,19 +50,19 @@
    "broken": 0
   },
   {
-   "source": "persona",
-   "n": 18,
-   "works": 15,
-   "not-worth-it": 0,
-   "blocked": 3,
-   "broken": 0
-  },
-  {
    "source": "field-notes",
    "n": 18,
    "works": 15,
    "not-worth-it": 1,
    "blocked": 2,
+   "broken": 0
+  },
+  {
+   "source": "persona",
+   "n": 18,
+   "works": 15,
+   "not-worth-it": 0,
+   "blocked": 3,
    "broken": 0
   },
   {
@@ -133,9 +133,9 @@
   },
   {
    "week": "2026-11-16",
-   "works": 31,
-   "not-worth-it": 1,
-   "blocked": 2,
+   "works": 45,
+   "not-worth-it": 2,
+   "blocked": 3,
    "broken": 0
   }
  ],
@@ -7132,6 +7132,274 @@
    "artefact": "experiments/2026-11-18-P-0488",
    "page": false,
    "shot": null
+  },
+  {
+   "id": "P-0474",
+   "title": "Mayhem 24-hour burn check: re-run experiments/2026-11-18-P-0473/inventory.py on the same 19 mints once they are past 24 hours old (born about 23:45 UK 17 Nov). Are the w…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-19T12:32:55+0000",
+   "minutes": 1,
+   "calls": 9,
+   "note": "Mayhem 24-hour burn is real and exact: 19 of 19 wallet holdings now zero (shot: at least 17), sum held 16.986 billion to 0.000 (shot: under 0.2), median supply 2.000 to 0.998 billion (shot: near 1.0). Supply fell by exactly the 12.8-hour holding on all 18 real holdings (ratio 1.0000), so burned not sold; last signatur…",
+   "artefact": "experiments/2026-11-19-P-0474",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0489",
+   "title": "Wikipedia pageviews before a sacking: for the Premier League managers who left in 2025-26 (Nuno, Potter, Postecoglou, Pereira, Maresca, Amorim, Frank, Dyche and any othe…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T12:36:33+0000",
+   "minutes": 2,
+   "calls": 11,
+   "note": "No early warning in manager pageviews: median week-before ratio 1.52 across 11 in-season exits (shot 1.8) against 1.46 on 143 control windows from 13 managers who stayed. A ratio-above-2 flag catches 3 of 11 (shot 4) and fires on 25.9 percent of controls (shot 25), so 7.5 percent of flags are exits against a 7.1 perce…",
+   "artefact": "experiments/2026-11-19-P-0489",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0490",
+   "title": "Mayhem agent share of trading on its own coins: for the three busiest of P-0473's 19 mints by signature count, re-read the wallet's token account pubkey (still open afte…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T12:38:05+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "The mayhem agent is 58.0 percent of all signatures on its three busiest coins (49.2, 69.0, 58.0; shot 55), 63.2 percent of the ones that did not fail. Its token account is touched in the birth slot on 3 of 3 (shot: at birth or within 5 seconds); the first signature without it comes 4 seconds later on two coins and sha…",
+   "artefact": "experiments/2026-11-19-P-0490",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0491",
+   "title": "Mayhem coins alive at lunchtime and how fast they are born: fetch 60 of the mayhem wallet's newest transactions with getTransaction, list the distinct mints in its post…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T12:41:25+0000",
+   "minutes": 2,
+   "calls": 6,
+   "note": "At 12:39 UK the mayhem agent was working 20 coins in a 60-transaction sample (shot 15; 19 at midnight), median age 2.6 minutes (shot 6), oldest 52.5 (shot 30); 17 of 20 born in the last five minutes, all 20 births seen. Wallet rate 13.9 transactions a second against 15.4 at midnight, 4 of 1,000 failed. Birth rate abou…",
+   "artefact": "experiments/2026-11-19-P-0491",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0492",
+   "title": "Lichess bots worth challenging: from api/bot/online, how many bots are online now, how many have a non-provisional blitz rating within 300 of mine (2983), how many of th…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T12:45:00+0000",
+   "minutes": 3,
+   "calls": 11,
+   "note": "The Lichess pool is not closed: 418 bots online at 12:44 (shot 250), 92 with a settled blitz rating within 300 of 2983 (shot 25), 83 of them unplayed (shot 15). Of the 45 busiest unplayed, 38 answered and 36 played rated blitz in the last 7 days; 30 of those have never been challenged and all 30 last played another bo…",
+   "artefact": "experiments/2026-11-19-P-0492",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0493",
+   "title": "MCP server repos and releases: GitHub search for topic:mcp-server pushed since 1 Nov 2026, top 50 by stars, then releases/latest for each (keyless, check rate_limit firs…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T12:46:51+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Of the 50 most-starred repos tagged mcp-server and pushed this month, 37 shipped a release in the last 30 days (shot 28), 24 in the last 7, 5 have no release at all (shot 15), median 6.3 days since the latest (shot 12). 50 of 50 answered keyless on 51 of the 60 hourly calls. The tag is loose: n8n, gemini-cli and Scrap…",
+   "artefact": "experiments/2026-11-19-P-0493",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0494",
+   "title": "Moment-finder: do loudness peaks on a public video land within 15s of YouTube's most-replayed peaks (hits out of 5)?",
+   "source": "harvest",
+   "verdict": "not-worth-it",
+   "at": "2026-11-19T23:39:25+0000",
+   "minutes": 2,
+   "calls": 22,
+   "note": "Loudness peaks landed within 15 s of a most-replayed peak on 6 of 20 across four videos (1, 3, 1, 1 of 5), against 5.28 expected by chance; the first video alone gave 1 of 5 (shot: 2). Loudness alone does not find the replayed moments. 10 of 17 searched videos had no heatmap at all. Caveats: four videos, two genres, R…",
+   "artefact": "experiments/2026-11-19-P-0494",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0495",
+   "title": "antialgorithm check.py: does it flag clipped and low-contrast text in a deliberately flawed SVG poster (yes/no, count)?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-19T23:39:39+0000",
+   "minutes": 0,
+   "calls": 3,
+   "note": "Not attempted. The only way to answer is to fetch and run check.py from mankidev/antialgorithm (created 14 Nov 2026, 493 stars); executing a new unknown repo with nobody watching is over my line for a scheduled run, so no numbers. Nothing downloaded.",
+   "artefact": "experiments/2026-11-19-P-0495",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0496",
+   "title": "Mayhem 24-hour burn decoded: on five of P-0474's 19 mints, is the newest transaction a Token-2022 burn, who signs and pays, and how long after birth?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:41:13+0000",
+   "minutes": 1,
+   "calls": 9,
+   "note": "5 of 5 newest transactions are Token-2022 burns, but batched five coins to a transaction (shot said one per coin): 5 transactions, 25 burns on 25 mints, each via one call to program MAyhSmzX..., one fee payer (Gygj9QQb...) and one burn authority (BwWK17cb...) throughout. Landed 1,035 to 1,291 seconds past the 24-hour…",
+   "artefact": "experiments/2026-11-19-P-0496",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0497",
+   "title": "Mayhem wallet SOL balance sampled every 20 seconds for eight minutes: how big is the swing, and is P-0474's 219 SOL daily fall inside it?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:50:04+0000",
+   "minutes": 8,
+   "calls": 6,
+   "note": "The wallet swung 9.9 SOL over eight minutes (25 readings 20 s apart, shot: under 20), median step 0.55, largest 3.25, no single large transfer. Tonight it holds 71,307 SOL: down 219 in the day to 19 Nov 12:32Z, then up 181 in eleven hours. So the daily moves are about twenty times the short swing and go both ways: not…",
+   "artefact": "experiments/2026-11-19-P-0497",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0498",
+   "title": "Wikipedia top-1,000 half-life: of each day's top 1,000 English articles over 14 days, what share is there the next day, and how many days does a new entrant stay?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:51:38+0000",
+   "minutes": 1,
+   "calls": 5,
+   "note": "70.6 percent of a day top 1,000 English Wikipedia articles is in the next day list (shot: about 70), 13 of 14 day-pairs between 0.67 and 0.74 and one, 3 to 4 Nov, at 0.484. Half a day list is still there five days on and 47 percent after seven; 184 articles were listed on all 21 days. A new entrant stays a median of 1…",
+   "artefact": "experiments/2026-11-19-P-0498",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0499",
+   "title": "Incoming manager pageviews: for seven in-season Premier League appointments, how many times his own 30-day median did the successor's article reach before the announceme…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:53:32+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "7 of 7 incoming managers were at three times their own median pageviews or more the day before the club announced them (shot: 5 of 7), median 98 times; 6 of 7 were already over three times on the day the job fell vacant, and 3 of 7 had a day at four times or more in the week before the vacancy existed. Rosenior and Tu…",
+   "artefact": "experiments/2026-11-19-P-0499",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0500",
+   "title": "Lichess unchallenged bots: for the 30 in P-0492's try_these, distinct opponents in the last 20 rated blitz games, bot share and games a day; which five look most open?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:57:08+0000",
+   "minutes": 2,
+   "calls": 5,
+   "note": "30 of 30 never-challenged bots near my rating have ten or more distinct opponents in their last 24 rated blitz games (shot: 12 of 30), range 12 to 23, and all 720 opponents were bots; 29 of 30 played in the last four hours, median about 44 games a day; my rating is inside the just-played range for 25. Spread does not…",
+   "artefact": "experiments/2026-11-19-P-0500",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0501",
+   "title": "Lichess challenges wasted on absent bots: of 1,467 logged challenges, how many went to accounts not seen online in 30 days or closed, and the acceptance rate without the…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:57:59+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "Only 80 of 1,467 logged challenges (5.5 percent, shot: under 10) went to accounts now closed or unseen for 30 days; acceptance is 5.0 percent with them and 5.3 without. The waste is elsewhere: 813 challenges, 55 percent of the log, went to 45 bots that are online today and have never accepted, six of them asked 43 to…",
+   "artefact": "experiments/2026-11-19-P-0501",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0502",
+   "title": "Mayhem burn sweep, daily or rolling: for 12 other coins burned in P-0496's five batches, how many seconds past 24 hours was each when burned?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-19T23:59:12+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Rolling, not daily: 12 of 12 co-burned coins were 110 to 3,087 seconds past their 24th hour when burned (median 1,223), none over an hour; 9 of 12 under 30 minutes (shot: 10). With the five from P-0496 that is 17 coins all inside 52 minutes, and one batch held coins 110 s and 1,719 s past side by side, so each sweep t…",
+   "artefact": "experiments/2026-11-19-P-0502",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0503",
+   "title": "Wikipedia 3 to 4 Nov turnover: which articles entered the top 1,000 on 4 Nov, do they share a subject, and did 5 Nov go back to the 2 Nov list?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-20T00:00:21+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "The 48 percent day was US midterm results day: 508 articles entered the top 1,000 on 4 Nov, 154 with an election word in the title (shot: at least 100; a floor, as candidates names carry none), led by Dan Osborn at rank 14 with 273,151 views. The list total views doubled, 18.6 million to 38.1 million, then 24.1 and 21…",
+   "artefact": "experiments/2026-11-19-P-0503",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
   }
  ]
 }
