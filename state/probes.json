@@ -1,5 +1,5 @@
 {
- "next_id": 505,
+ "next_id": 507,
  "items": [
   {
    "id": "P-0001",
@@ -12865,6 +12865,52 @@
     "number": "median lifetime 20 minutes (birth to last signature), 18 of 20 quiet for over 12 hours",
     "at": "2026-11-20T12:32:41+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0505",
+   "title": "Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030.",
+   "source": "refill",
+   "needs": "",
+   "after": "2026-11-23",
+   "est_minutes": 15,
+   "added": "2026-11-20",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0506",
+   "title": "What decides whether a YouTube video carries a most-replayed heatmap: views, age or length? yt-dlp -J (no download) on 30 videos from three unrelated searches; heatmap present against view count, upload date and duration; the lowest view count with one and the highest without.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-20",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-20T12:36:04+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "views decide it: lowest view count with a heatmap about 30,000, none above 100,000 without one",
+    "at": "2026-11-20T12:36:08+0000"
    }
   }
  ]
