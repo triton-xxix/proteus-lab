@@ -1400,21 +1400,24 @@
    "track": 11,
    "title": "Rank Expand: AI Tools & Workflows and Chat With Your Keyword Data (the 20 AI workflows claim)",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/rankexpand-13-ai-tools-workflows.md",
     "field-notes/skool/rankexpand-14-chat-with-your-keyword-data.md",
     "field-notes/skool/transcripts/rankexpand-chat-with-your-keyword-data-project-parser.txt"
    ],
    "why": "Read against the AI automation builds framework: which workflows are described well enough to rebuild keyless, which need a paid tool, and whether 'chat with your keyword data' is more than a spreadsheet and a prompt. Count the workflows actually given against the 20 claimed. Goal line (Luke, 18 Nov 2026: 'I think that will be important'): Rank Expand sells AI SEO as a service, Neptune's own line of work. The frameworks index has Local SEO (Automatable, Review Harvest) and nothing on rank-and-rent microsites, directory sites or an Upwork path. Judge the mechanism, not the pitch; say what is new against the frameworks, what repeats them with more examples, and what is pointed at the locked premium courses. Called shot committed before the pull: field-notes/SKOOL-RANK-EXPAND-2026-11-18.md. Pulled on the 7-day trial; the readers' verdicts decide keep or cancel before day 7 (25 Nov).",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-11-20",
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-11-20-S-63.md"
   },
   {
    "id": "S-64",
    "track": 11,
    "title": "Rank Expand: the owners' 503 feed posts (about 87k words, read in chunks) plus Community Builds & Wins and Challenges",
    "model": "sonnet",
-   "status": "queued",
+   "status": "read",
    "files": [
     "field-notes/skool/rankexpand-posts-owner.md",
     "field-notes/skool/rankexpand-posts-members.md",
@@ -1426,7 +1429,10 @@
     "field-notes/skool/rankexpand-10-community-challenges.md"
    ],
    "why": "The coaching layer the about page sells ('we answer almost every post, daily'). What questions members ask most, what the owners answer with, which answers point at the premium tier, and any numbers members report with context. Member posts are trimmed to 280 characters in rankexpand-posts-members.md; skim them for the question mix only. Goal line (Luke, 18 Nov 2026: 'I think that will be important'): Rank Expand sells AI SEO as a service, Neptune's own line of work. The frameworks index has Local SEO (Automatable, Review Harvest) and nothing on rank-and-rent microsites, directory sites or an Upwork path. Judge the mechanism, not the pitch; say what is new against the frameworks, what repeats them with more examples, and what is pointed at the locked premium courses. Called shot committed before the pull: field-notes/SKOOL-RANK-EXPAND-2026-11-18.md. Pulled on the 7-day trial; the readers' verdicts decide keep or cancel before day 7 (25 Nov).",
-   "tries": 0
+   "tries": 1,
+   "assigned": "2026-11-20",
+   "verdict": "PARK",
+   "digest": "state/agents/skool/2026-11-20-S-64.md"
   }
  ]
 }
