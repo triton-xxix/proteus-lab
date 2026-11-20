@@ -1,0 +1,137 @@
+{
+ "summary": {
+  "queries": 15,
+  "parsed_to_ql": 13,
+  "exact": 10,
+  "ran_ok": 9,
+  "returned_results": 8,
+  "run_errors": 4
+ },
+ "rows": [
+  {
+   "q": "pubs in Bristol",
+   "understood": "Pub, inside the boundary of Bristol",
+   "exact": true,
+   "ql_len": 152,
+   "has_ql": true,
+   "run_error": "HTTP Error 502: Bad Gateway",
+   "run_s": 0.1
+  },
+  {
+   "q": "cafés near a bus stop in Zurich",
+   "understood": "Cafe, within 300 m of a bus stop, inside the boundary of Zurich",
+   "exact": true,
+   "ql_len": 259,
+   "has_ql": true,
+   "elements": 319,
+   "run_s": 26.5
+  },
+  {
+   "q": "pharmacies in Leeds",
+   "understood": "Pharmacies, inside the boundary of Leeds",
+   "exact": true,
+   "ql_len": 163,
+   "has_ql": true,
+   "elements": 152,
+   "run_s": 25.3
+  },
+  {
+   "q": "petrol stations along the M4",
+   "parse_error": "HTTP Error 422: Unprocessable Entity"
+  },
+  {
+   "q": "bridges over the Danube 50 km from Novi Sad",
+   "understood": "Bridges, within 50 km of Novi Sad, over Danube (within 15 m)",
+   "exact": true,
+   "ql_len": 369,
+   "has_ql": true,
+   "run_error": "HTTP Error 502: Bad Gateway",
+   "run_s": 0.1
+  },
+  {
+   "q": "playgrounds near a school in Manchester",
+   "understood": "Playground, within 300 m of a school, inside the boundary of Manchester",
+   "exact": false,
+   "ql_len": 382,
+   "has_ql": true,
+   "run_error": "HTTP Error 504: Gateway Timeout",
+   "run_s": 49.2
+  },
+  {
+   "q": "pubs within 200 m of a railway station in York",
+   "understood": "Pub, within 200 m of a railway station, inside the boundary of York",
+   "exact": true,
+   "ql_len": 318,
+   "has_ql": true,
+   "elements": 2,
+   "run_s": 35.8
+  },
+  {
+   "q": "museums in Edinburgh",
+   "understood": "Museum, inside the boundary of Edinburgh",
+   "exact": true,
+   "ql_len": 162,
+   "has_ql": true,
+   "run_error": "HTTP Error 502: Bad Gateway",
+   "run_s": 0.1
+  },
+  {
+   "q": "Tesco in Cardiff",
+   "understood": "chain “Tesco”, inside the boundary of Cardiff",
+   "exact": true,
+   "ql_len": 543,
+   "has_ql": true,
+   "elements": 31,
+   "run_s": 39.0
+  },
+  {
+   "q": "campsites near a lake in Cumbria",
+   "understood": "Camp sites, within 300 m of a lake, inside the boundary of Cumbria",
+   "exact": false,
+   "ql_len": 794,
+   "has_ql": true,
+   "elements": 356,
+   "run_s": 35.0
+  },
+  {
+   "q": "drinking water in Hyde Park",
+   "understood": "Drinking Water, inside the boundary of Hyde Park",
+   "exact": true,
+   "ql_len": 176,
+   "has_ql": true,
+   "elements": 0,
+   "run_s": 39.0
+  },
+  {
+   "q": "EV charging stations in Brighton",
+   "understood": "Charging Station, inside the boundary of Brighton and Hove",
+   "exact": true,
+   "ql_len": 189,
+   "has_ql": true,
+   "elements": 68,
+   "run_s": 25.0
+  },
+  {
+   "q": "castles in Wales",
+   "understood": "Castle, inside the boundary of Wales",
+   "exact": true,
+   "ql_len": 157,
+   "has_ql": true,
+   "elements": 148,
+   "run_s": 36.9
+  },
+  {
+   "q": "restaurants between the river and the cathedral in Durham",
+   "parse_error": "HTTP Error 422: Unprocessable Entity"
+  },
+  {
+   "q": "bike shops far from a motorway in Oxford",
+   "understood": "Bicycle Shop, more than 300 m from a motorway, inside the boundary of Oxford",
+   "exact": false,
+   "ql_len": 324,
+   "has_ql": true,
+   "elements": 9,
+   "run_s": 37.4
+  }
+ ]
+}

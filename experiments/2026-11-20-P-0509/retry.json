@@ -1,0 +1,22 @@
+[
+ {
+  "q": "pubs in Bristol",
+  "elements": 293,
+  "run_s": 26.8
+ },
+ {
+  "q": "bridges over the Danube 50 km from Novi Sad",
+  "elements": 28,
+  "run_s": 44.8
+ },
+ {
+  "q": "playgrounds near a school in Manchester",
+  "elements": 178,
+  "run_s": 33.9
+ },
+ {
+  "q": "museums in Edinburgh",
+  "run_error": "HTTP Error 502: Bad Gateway",
+  "run_s": 0.3
+ }
+]
