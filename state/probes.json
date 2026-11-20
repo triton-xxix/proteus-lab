@@ -12817,22 +12817,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-19",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-19T23:59:49+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-20T00:00:21+0000",
+   "note": "The 48 percent day was US midterm results day: 508 articles entered the top 1,000 on 4 Nov, 154 with an election word in the title (shot: at least 100; a floor, as candidates names carry none), led by Dan Osborn at rank 14 with 273,151 views. The list total views doubled, 18.6 million to 38.1 million, then 24.1 and 21.1. It did not snap back: 5 and 6 Nov each share 47 percent with 2 Nov against the usual 56 and 53. Caveats: title words only, one event. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-19-P-0503"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "at least 100 of the 4 Nov entrants carry an election word in the title (US midterms, 3 Nov)",
-    "at": "2026-11-19T23:59:52+0000"
+    "at": "2026-11-19T23:59:52+0000",
+    "hit": true
    }
   }
  ]
