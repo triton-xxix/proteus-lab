@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 413 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 
-## Queue (13 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,7 @@ Verdicts so far: 413 works, 8 broken, 43 blocked, 21 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
+| P-0504 | Mayhem coin lifetimes, a day on: re-read the 20 mints P-0491 caught (2026-11-19 12:39Z) with keyless Solana RPC getSignaturesForAddress, paging to birth; lifetime = birth to last signature; share dead inside 10 minutes, median lifetime, and whether the 52-minute survivor is still trading. Set beside P-0473's 35 minutes. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (485)
 
