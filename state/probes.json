@@ -13151,22 +13151,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-21",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T12:31:56+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-21T12:35:13+0000",
+   "note": "Line at about 52,000 views: pooled with P-0506 (55 videos), none with a graph at 51,496 or below, all with one from 52,257 up, one crossover (52,222 without, a 55-min video). Shot said lowest-with 40k to 50k; measured 51,534, a near miss. Age: old (pre Nov 2021) and new videos share the same line on 7 v 18, so my old-needs-more call missed; the 2013 outlier at 339,919 stays unexplained. Next: close (filter rule for a moment-finder is skip under 52k).",
+   "artefacts": [
+    "experiments/2026-11-21-P-0515"
+   ],
+   "minutes": 3,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "line near 45,000 views: lowest with a heatmap 40k to 50k, and over-five-year videos without one at higher views than new ones",
-    "at": "2026-11-21T12:32:03+0000"
+    "at": "2026-11-21T12:32:03+0000",
+    "hit": true
    }
   }
  ]

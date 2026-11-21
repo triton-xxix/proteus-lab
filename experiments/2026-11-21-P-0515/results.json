@@ -1,0 +1,318 @@
+{
+ "summary": {
+  "at": "2026-11-21T12:34:49Z",
+  "candidates": 46,
+  "read": 25,
+  "errors": 0,
+  "all": {
+   "n": 25,
+   "with": 7,
+   "without": 18,
+   "lowest_with": 51534,
+   "highest_without": 52222,
+   "views_with": [
+    51534,
+    52257,
+    58271,
+    62307,
+    62838,
+    69989,
+    78308
+   ],
+   "views_without": [
+    30378,
+    30906,
+    31021,
+    31303,
+    33431,
+    35649,
+    39326,
+    40983,
+    41116,
+    43207,
+    43344,
+    45136,
+    46221,
+    46600,
+    47016,
+    47382,
+    51496,
+    52222
+   ]
+  },
+  "over_5y": {
+   "n": 7,
+   "with": 3,
+   "without": 4,
+   "lowest_with": 58271,
+   "highest_without": 51496,
+   "views_with": [
+    58271,
+    62307,
+    69989
+   ],
+   "views_without": [
+    45136,
+    46600,
+    47382,
+    51496
+   ]
+  },
+  "under_5y": {
+   "n": 18,
+   "with": 4,
+   "without": 14,
+   "lowest_with": 51534,
+   "highest_without": 52222,
+   "views_with": [
+    51534,
+    52257,
+    62838,
+    78308
+   ],
+   "views_without": [
+    30378,
+    30906,
+    31021,
+    31303,
+    33431,
+    35649,
+    39326,
+    40983,
+    41116,
+    43207,
+    43344,
+    46221,
+    47016,
+    52222
+   ]
+  }
+ },
+ "rows": [
+  {
+   "q": "how to sharpen a chisel",
+   "id": "jcSr-w05GLk",
+   "heatmap": false,
+   "views": 39326,
+   "upload": "20221223",
+   "duration": 418,
+   "live": false
+  },
+  {
+   "q": "how to sharpen a chisel",
+   "id": "a21fuNfo21g",
+   "heatmap": false,
+   "views": 47382,
+   "upload": "20141225",
+   "duration": 222,
+   "live": false
+  },
+  {
+   "q": "how to sharpen a chisel",
+   "id": "A-hYk4Slb-0",
+   "heatmap": true,
+   "views": 62307,
+   "upload": "20211104",
+   "duration": 685,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "QSjJo6FX4e8",
+   "heatmap": false,
+   "views": 40983,
+   "upload": "20260318",
+   "duration": 256,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "u598tJku_r8",
+   "heatmap": false,
+   "views": 41116,
+   "upload": "20220726",
+   "duration": 442,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "le7Uxvl2cKM",
+   "heatmap": false,
+   "views": 30378,
+   "upload": "20230928",
+   "duration": 453,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "bdrmzVEzRMM",
+   "heatmap": false,
+   "views": 45136,
+   "upload": "20110116",
+   "duration": 64,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "QwLNRS_Q_HI",
+   "heatmap": false,
+   "views": 46600,
+   "upload": "20210217",
+   "duration": 1738,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "rMyK2YhJgBo",
+   "heatmap": false,
+   "views": 51496,
+   "upload": "20201005",
+   "duration": 345,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "JanZ1xp5o_s",
+   "heatmap": true,
+   "views": 62838,
+   "upload": "20230731",
+   "duration": 2129,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "EIl2Pzby3zA",
+   "heatmap": false,
+   "views": 35649,
+   "upload": "20240314",
+   "duration": 1718,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "LkUPwpGv2k4",
+   "heatmap": true,
+   "views": 78308,
+   "upload": "20230527",
+   "duration": 120,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "QZ0RMzh0T3I",
+   "heatmap": false,
+   "views": 31021,
+   "upload": "20260208",
+   "duration": 524,
+   "live": false
+  },
+  {
+   "q": "fly tying tutorial",
+   "id": "_fvTp23avB0",
+   "heatmap": false,
+   "views": 30906,
+   "upload": "20260308",
+   "duration": 651,
+   "live": false
+  },
+  {
+   "q": "knitting cable stitch",
+   "id": "M0jdatFbMWo",
+   "heatmap": true,
+   "views": 58271,
+   "upload": "20210415",
+   "duration": 626,
+   "live": false
+  },
+  {
+   "q": "knitting cable stitch",
+   "id": "aO_jXCBSZPU",
+   "heatmap": false,
+   "views": 43207,
+   "upload": "20230902",
+   "duration": 378,
+   "live": false
+  },
+  {
+   "q": "knitting cable stitch",
+   "id": "sdEOuvkeOBs",
+   "heatmap": false,
+   "views": 47016,
+   "upload": "20241013",
+   "duration": 3444,
+   "live": false
+  },
+  {
+   "q": "knitting cable stitch",
+   "id": "96ZNp2fDLh4",
+   "heatmap": false,
+   "views": 52222,
+   "upload": "20230715",
+   "duration": 3308,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "wuKYyWqGG4k",
+   "heatmap": false,
+   "views": 31303,
+   "upload": "20250408",
+   "duration": 127,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "3LknkKIDqCE",
+   "heatmap": true,
+   "views": 69989,
+   "upload": "20170305",
+   "duration": 231,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "vlqb8vzk5uE",
+   "heatmap": false,
+   "views": 33431,
+   "upload": "20250729",
+   "duration": 607,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "whwef8B99a4",
+   "heatmap": false,
+   "views": 46221,
+   "upload": "20220628",
+   "duration": 553,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "E-kRk6_9fXg",
+   "heatmap": false,
+   "views": 43344,
+   "upload": "20211126",
+   "duration": 698,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "3iFbxSayrA8",
+   "heatmap": true,
+   "views": 52257,
+   "upload": "20230608",
+   "duration": 531,
+   "live": false
+  },
+  {
+   "q": "ukulele strumming pattern",
+   "id": "PayrVIkMfI4",
+   "heatmap": true,
+   "views": 51534,
+   "upload": "20211201",
+   "duration": 929,
+   "live": false
+  }
+ ]
+}
