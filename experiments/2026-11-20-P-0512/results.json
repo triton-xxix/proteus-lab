@@ -1,0 +1,99 @@
+{
+ "rows": 1493,
+ "accepted": 76,
+ "by_N": {
+  "1": {
+   "asks_dropped": 1037,
+   "refusals_saved": 1012,
+   "acceptances_lost": 25,
+   "bots_dropped": 64,
+   "bots_lost": [
+    "aggressivestockfish",
+    "ai-con",
+    "arasanx",
+    "bot1e",
+    "bot5551",
+    "bot_adario",
+    "caissa-x",
+    "darkonbot",
+    "edwardkillick",
+    "eubos",
+    "fornax-engine",
+    "jangine",
+    "maia5",
+    "odonata-bot",
+    "pawn_git",
+    "pzchessbot",
+    "raspfish",
+    "sf_bot1nok",
+    "stupidchessrobot",
+    "sunfish-engine"
+   ]
+  },
+  "2": {
+   "asks_dropped": 936,
+   "refusals_saved": 921,
+   "acceptances_lost": 15,
+   "bots_dropped": 49,
+   "bots_lost": [
+    "aggressivestockfish",
+    "bot_adario",
+    "caissa-x",
+    "darkonbot",
+    "eubos",
+    "jangine",
+    "odonata-bot",
+    "pawn_git",
+    "raspfish",
+    "sf_bot1nok",
+    "stupidchessrobot",
+    "sunfish-engine"
+   ]
+  },
+  "3": {
+   "asks_dropped": 864,
+   "refusals_saved": 849,
+   "acceptances_lost": 15,
+   "bots_dropped": 47,
+   "bots_lost": [
+    "aggressivestockfish",
+    "bot_adario",
+    "caissa-x",
+    "darkonbot",
+    "eubos",
+    "jangine",
+    "odonata-bot",
+    "pawn_git",
+    "raspfish",
+    "sf_bot1nok",
+    "stupidchessrobot",
+    "sunfish-engine"
+   ]
+  },
+  "5": {
+   "asks_dropped": 757,
+   "refusals_saved": 750,
+   "acceptances_lost": 7,
+   "bots_dropped": 36,
+   "bots_lost": [
+    "bot_adario",
+    "darkonbot",
+    "eubos",
+    "jangine",
+    "pawn_git",
+    "raspfish"
+   ]
+  },
+  "8": {
+   "asks_dropped": 649,
+   "refusals_saved": 646,
+   "acceptances_lost": 3,
+   "bots_dropped": 29,
+   "bots_lost": [
+    "eubos",
+    "jangine",
+    "pawn_git"
+   ]
+  }
+ }
+}

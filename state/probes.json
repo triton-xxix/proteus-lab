@@ -13064,22 +13064,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-20",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T00:00:04+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-21T00:00:32+0000",
+   "note": "Replayed 1,493 logged challenges (76 accepted): dropping a bot after N declines or no-answers with no acceptance saves 864 asks and loses 15 acceptances at N=3, 757 and 7 at N=5, 649 and 3 at N=8. Shot said N=3 saves about 500 and loses 5 or fewer: missed both. One acceptance in five came after three or more refusals, so P-0501s N=3 is too tight; N=8 still drops 43 percent of the log. Cap and rate-limit refusals counted neutral. Next: promote (lichess.py drops a name after 8 refusals with no acceptance, in a daytime slot).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0512"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "N=3 saves about 500 asks and loses 5 or fewer of the acceptances",
-    "at": "2026-11-21T00:00:09+0000"
+    "at": "2026-11-21T00:00:09+0000",
+    "hit": true
    }
   }
  ]
