@@ -1,5 +1,5 @@
 {
- "next_id": 514,
+ "next_id": 515,
  "items": [
   {
    "id": "P-0001",
@@ -13112,6 +13112,32 @@
     "number": "at most 6 of 42 not-appointed manager-vacancy pairs at 3x their own median the day before the appointment, against 7 of 7 appointees",
     "at": "2026-11-21T00:01:29+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0514",
+   "title": "Munich lead 1 v lead 2: for each kept outcome in exchange/munich_outcomes.jsonl, the ICON day-1 and day-2 previous-run highs from Open-Meteo, rounded: how often do they differ, and which wins when they do?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-21T00:02:53+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "lead 1 and lead 2 rounded degrees differ on about 12 of 32 days; lead 1 wins about 6 of those, lead 2 about 3",
+    "at": "2026-11-21T00:03:00+0000"
    }
   }
  ]
