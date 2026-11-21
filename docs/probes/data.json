@@ -1,42 +1,42 @@
 {
  "summary": {
-  "n": 485,
+  "n": 495,
   "by_verdict": {
-   "works": 413,
-   "not-worth-it": 21,
+   "works": 422,
+   "not-worth-it": 22,
    "blocked": 43,
    "broken": 8
   },
-  "open": 13,
+  "open": 14,
   "killed": 5,
-  "minutes_total": 795,
+  "minutes_total": 840,
   "minutes_median": 1,
-  "calls_total": 5195,
+  "calls_total": 5292,
   "pages": 10,
   "first": "2026-09-24",
-  "last": "2026-11-20"
+  "last": "2026-11-21"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 199,
-   "works": 189,
+   "n": 205,
+   "works": 195,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 1
   },
   {
    "source": "desk",
-   "n": 115,
-   "works": 96,
-   "not-worth-it": 7,
+   "n": 117,
+   "works": 97,
+   "not-worth-it": 8,
    "blocked": 11,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 102,
-   "works": 77,
+   "n": 104,
+   "works": 79,
    "not-worth-it": 4,
    "blocked": 15,
    "broken": 6
@@ -50,19 +50,19 @@
    "broken": 0
   },
   {
-   "source": "field-notes",
-   "n": 18,
-   "works": 15,
-   "not-worth-it": 1,
-   "blocked": 2,
-   "broken": 0
-  },
-  {
    "source": "persona",
    "n": 18,
    "works": 15,
    "not-worth-it": 0,
    "blocked": 3,
+   "broken": 0
+  },
+  {
+   "source": "field-notes",
+   "n": 18,
+   "works": 15,
+   "not-worth-it": 1,
+   "blocked": 2,
    "broken": 0
   },
   {
@@ -133,8 +133,8 @@
   },
   {
    "week": "2026-11-16",
-   "works": 45,
-   "not-worth-it": 2,
+   "works": 54,
+   "not-worth-it": 3,
    "blocked": 3,
    "broken": 0
   }
@@ -7394,6 +7394,172 @@
    "calls": 5,
    "note": "The 48 percent day was US midterm results day: 508 articles entered the top 1,000 on 4 Nov, 154 with an election word in the title (shot: at least 100; a floor, as candidates names carry none), led by Dan Osborn at rank 14 with 273,151 views. The list total views doubled, 18.6 million to 38.1 million, then 24.1 and 21…",
    "artefact": "experiments/2026-11-19-P-0503",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0504",
+   "title": "Mayhem coin lifetimes, a day on: re-read the 20 mints P-0491 caught (2026-11-19 12:39Z) with keyless Solana RPC getSignaturesForAddress, paging to birth; lifetime = birt…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-20T12:34:10+0000",
+   "minutes": 1,
+   "calls": 8,
+   "note": "Median lifetime 9.75 minutes birth to last signature across 20 mints (shot said 20); 10 of 20 dead inside 10 minutes, 13 inside 15; 16 of 20 quiet over 12 hours (shot 18). Four long ones end on a lone call after a 4 to 19 hour gap, so by trading life 17 of 20 were done inside 15 minutes; P-0473s 35 minutes was a loose…",
+   "artefact": "experiments/2026-11-20-P-0504",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0506",
+   "title": "What decides whether a YouTube video carries a most-replayed heatmap: views, age or length? yt-dlp -J (no download) on 30 videos from three unrelated searches; heatmap p…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-20T12:38:51+0000",
+   "minutes": 2,
+   "calls": 5,
+   "note": "Views decide it: 22 of 30 have a heatmap, lowest views with one 58,618 (shot said about 30,000); seven of eight without sit at 4,860 to 38,676, so the line is between 39k and 59k. Shot missed on none above 100,000 without: a Feb 2013 video at 339,919 views has none, while other 2013 to 2015 uploads with 211k to 4.6m d…",
+   "artefact": "experiments/2026-11-20-P-0506",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0507",
+   "title": "Mayhem burn timing on two cohorts: for P-0473's 19 mints (born 17 Nov 23:42 to 23:47 UK) and P-0491's 20 (born 19 Nov 12:33 to 12:39Z), read each newest signature with g…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-20T13:00:24+0000",
+   "minutes": 20,
+   "calls": 11,
+   "note": "P-0473 cohort: 17 of 19 burned in one 94-second cluster, 00:03:52 to 00:05:26Z on 19 Nov, at 24.28 to 24.38 h; the same sweep as P-0502 batch qBwrJwYG. Shot said all burned in 2 or more clusters 50 min apart: missed (one cluster, 2 unburned). A committed forecast at 12:42Z said the P-0491 cohort burns 12:50 to 13:00Z:…",
+   "artefact": "experiments/2026-11-20-P-0507",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0509",
+   "title": "HippoMaps query parser: does it turn 15 plain-English place queries into Overpass QL that returns results?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-20T23:46:05+0000",
+   "minutes": 11,
+   "calls": 24,
+   "note": "11 of 15 plain-English queries returned results on public overpass-api.de (shot said 10): 13 parsed to Overpass QL, 2 refused with 422 (along the M4; between the river and the cathedral), 1 parsed but 0 rows (drinking water in Hyde Park), 1 unrun after two 502s. Stacked ones worked: Danube bridges 50 km from Novi Sad…",
+   "artefact": "experiments/2026-11-20-P-0509",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0510",
+   "title": "International-results model: does Elo plus Poisson beat uniform on 2022 World Cup match Brier score?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-20T23:47:03+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Elo plus Poisson from martj42 international results, frozen at 19 Nov 2022, scored 0.617 three-way Brier on the 64 World Cup 2022 matches against uniform 0.667 and a World Cup base rate 0.646; favourite won 35 of 64. Shot said 0.58: missed the number, the tournament had more upsets than my guess. One tournament, no ma…",
+   "artefact": "experiments/2026-11-20-P-0510",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.85,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0508",
+   "title": "Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 1…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-20T23:58:32+0000",
+   "minutes": 11,
+   "calls": 14,
+   "note": "18 of 19 P-0491 coins burned in one 81-second cluster, 13:03:46 to 13:05:07Z on 20 Nov, at ages 24.41 to 24.52 h; the 19th has a non-burn call at 19:08Z, age 30.5 h. Shot said one sweep at about 00:04Z on 21 Nov: count right, time wrong by 11 hours, a miss. Sweeps on file 00:04Z 19 Nov, 12:05Z and 13:04Z 20 Nov, so no…",
+   "artefact": "experiments/2026-11-20-P-0508",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0511",
+   "title": "P-0510 model on the judgement book: rerun experiments/2026-11-20-P-0510/model.py frozen before each pitch/JUDGEMENT.csv match date and score it on the 57 scored rows aga…",
+   "source": "desk",
+   "verdict": "not-worth-it",
+   "at": "2026-11-20T23:59:30+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "On 55 of the judgement book's 57 scored rows the frozen Elo plus Poisson scored 0.581 three-way Brier against the market's 0.538 and my anchored 0.546; on the 32 blind rows 0.586 against my blind 0.561 and the market 0.552. So it is 0.043 behind the market and 0.025 behind my hand calls: not worth adding as a blind co…",
+   "artefact": "experiments/2026-11-20-P-0511",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0512",
+   "title": "Lichess drop rule replay: on games/lichess/CHALLENGES.csv, drop a bot after N non-cap refusals with no acceptance, N 2 3 5 8: asks saved and acceptances lost, the N for…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T00:00:32+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Replayed 1,493 logged challenges (76 accepted): dropping a bot after N declines or no-answers with no acceptance saves 864 asks and loses 15 acceptances at N=3, 757 and 7 at N=5, 649 and 3 at N=8. Shot said N=3 saves about 500 and loses 5 or fewer: missed both. One acceptance in five came after three or more refusals,…",
+   "artefact": "experiments/2026-11-20-P-0512",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0513",
+   "title": "Pageview control for P-0499: for its 7 vacancies, do other managers linked in each club's 2025-26 season article spike 3x on the day before the appointment as the appoin…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T00:02:18+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Read on the other six vacancies, P-0499s appointees passed 3x their own median the day before someone else was announced on 7 of 42 pairs (shot: at most 6), median 1.26x, against 7 of 7 and median 98x when it was their own job. Four of the seven were the manager's own appointment week (Tudor 420x on Forest's day); wit…",
+   "artefact": "experiments/2026-11-20-P-0513",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0514",
+   "title": "Munich lead 1 v lead 2: for each kept outcome in exchange/munich_outcomes.jsonl, the ICON day-1 and day-2 previous-run highs from Open-Meteo, rounded: how often do they…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T00:03:26+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "On the 32 kept Munich winners (19 Oct to 19 Nov), ICON rounded with nothing added hit the winning bin 12 times issued a day ahead and 9 times two days ahead; the two leads' degrees differed on 19 days (shot 12), lead 1 winning 6 of those and lead 2 3 (shot 6 and 3), neither 10. Waiting a night buys about three winners…",
+   "artefact": "experiments/2026-11-20-P-0514",
    "page": false,
    "shot": {
     "expect": "works",

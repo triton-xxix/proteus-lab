@@ -1,0 +1,371 @@
+{
+ "summary": {
+  "outcomes": 32,
+  "with_both_leads": 32,
+  "hit_lead1": 12,
+  "hit_lead2": 9,
+  "differ": 19,
+  "differ_lead1_won": 6,
+  "differ_lead2_won": 3,
+  "differ_neither": 10,
+  "mean_abs_lead_gap": 0.78,
+  "days": [
+   "2026-10-19",
+   "2026-11-19"
+  ]
+ },
+ "rows": [
+  {
+   "day": "2026-10-19",
+   "winner": "14°C",
+   "lead1": 14.9,
+   "lead2": 15.0,
+   "deg1": 15,
+   "deg2": 15,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-10-20",
+   "winner": "9°C",
+   "lead1": 11.5,
+   "lead2": 15.4,
+   "deg1": 12,
+   "deg2": 15,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-21",
+   "winner": "11°C",
+   "lead1": 11.3,
+   "lead2": 11.8,
+   "deg1": 11,
+   "deg2": 12,
+   "hit1": true,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-22",
+   "winner": "13°C",
+   "lead1": 12.8,
+   "lead2": 12.7,
+   "deg1": 13,
+   "deg2": 13,
+   "hit1": true,
+   "hit2": true,
+   "differ": false
+  },
+  {
+   "day": "2026-10-23",
+   "winner": "11°C",
+   "lead1": 10.9,
+   "lead2": 11.3,
+   "deg1": 11,
+   "deg2": 11,
+   "hit1": true,
+   "hit2": true,
+   "differ": false
+  },
+  {
+   "day": "2026-10-24",
+   "winner": "11°C",
+   "lead1": 9.4,
+   "lead2": 10.3,
+   "deg1": 9,
+   "deg2": 10,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-25",
+   "winner": "14°C",
+   "lead1": 14.8,
+   "lead2": 13.4,
+   "deg1": 15,
+   "deg2": 13,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-26",
+   "winner": "12°C",
+   "lead1": 11.2,
+   "lead2": 11.1,
+   "deg1": 11,
+   "deg2": 11,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-10-27",
+   "winner": "16°C",
+   "lead1": 16.5,
+   "lead2": 17.3,
+   "deg1": 17,
+   "deg2": 17,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-10-29",
+   "winner": "10°C",
+   "lead1": 9.0,
+   "lead2": 10.8,
+   "deg1": 9,
+   "deg2": 11,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-30",
+   "winner": "11°C",
+   "lead1": 11.0,
+   "lead2": 10.4,
+   "deg1": 11,
+   "deg2": 10,
+   "hit1": true,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-28",
+   "winner": "12°C",
+   "lead1": 12.5,
+   "lead2": 11.3,
+   "deg1": 13,
+   "deg2": 11,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-10-31",
+   "winner": "9°C",
+   "lead1": 9.1,
+   "lead2": 9.3,
+   "deg1": 9,
+   "deg2": 9,
+   "hit1": true,
+   "hit2": true,
+   "differ": false
+  },
+  {
+   "day": "2026-11-01",
+   "winner": "8°C",
+   "lead1": 7.6,
+   "lead2": 7.2,
+   "deg1": 8,
+   "deg2": 7,
+   "hit1": true,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-02",
+   "winner": "7°C",
+   "lead1": 6.4,
+   "lead2": 6.2,
+   "deg1": 6,
+   "deg2": 6,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-11-03",
+   "winner": "6°C",
+   "lead1": 6.6,
+   "lead2": 6.3,
+   "deg1": 7,
+   "deg2": 6,
+   "hit1": false,
+   "hit2": true,
+   "differ": true
+  },
+  {
+   "day": "2026-11-04",
+   "winner": "7°C",
+   "lead1": 7.1,
+   "lead2": 6.4,
+   "deg1": 7,
+   "deg2": 6,
+   "hit1": true,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-05",
+   "winner": "10°C",
+   "lead1": 8.8,
+   "lead2": 6.8,
+   "deg1": 9,
+   "deg2": 7,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-06",
+   "winner": "4°C",
+   "lead1": 4.1,
+   "lead2": 4.2,
+   "deg1": 4,
+   "deg2": 4,
+   "hit1": true,
+   "hit2": true,
+   "differ": false
+  },
+  {
+   "day": "2026-11-07",
+   "winner": "7°C",
+   "lead1": 8.2,
+   "lead2": 8.6,
+   "deg1": 8,
+   "deg2": 9,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-08",
+   "winner": "8°C",
+   "lead1": 9.7,
+   "lead2": 9.9,
+   "deg1": 10,
+   "deg2": 10,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-11-09",
+   "winner": "5°C",
+   "lead1": 8.6,
+   "lead2": 9.3,
+   "deg1": 9,
+   "deg2": 9,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-11-10",
+   "winner": "8°C",
+   "lead1": 9.3,
+   "lead2": 9.5,
+   "deg1": 9,
+   "deg2": 10,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-11",
+   "winner": "13°C",
+   "lead1": 12.2,
+   "lead2": 13.7,
+   "deg1": 12,
+   "deg2": 14,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-12",
+   "winner": "12°C",
+   "lead1": 12.0,
+   "lead2": 12.2,
+   "deg1": 12,
+   "deg2": 12,
+   "hit1": true,
+   "hit2": true,
+   "differ": false
+  },
+  {
+   "day": "2026-11-13",
+   "winner": "6°C",
+   "lead1": 6.2,
+   "lead2": 8.2,
+   "deg1": 6,
+   "deg2": 8,
+   "hit1": true,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-14",
+   "winner": "6°C",
+   "lead1": 6.3,
+   "lead2": 5.7,
+   "deg1": 6,
+   "deg2": 6,
+   "hit1": true,
+   "hit2": true,
+   "differ": false
+  },
+  {
+   "day": "2026-11-15",
+   "winner": "9°C",
+   "lead1": 10.3,
+   "lead2": 9.1,
+   "deg1": 10,
+   "deg2": 9,
+   "hit1": false,
+   "hit2": true,
+   "differ": true
+  },
+  {
+   "day": "2026-11-16",
+   "winner": "12°C",
+   "lead1": 10.0,
+   "lead2": 9.5,
+   "deg1": 10,
+   "deg2": 10,
+   "hit1": false,
+   "hit2": false,
+   "differ": false
+  },
+  {
+   "day": "2026-11-17",
+   "winner": "14°C",
+   "lead1": 14.2,
+   "lead2": 14.5,
+   "deg1": 14,
+   "deg2": 15,
+   "hit1": true,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-18",
+   "winner": "13°C",
+   "lead1": 11.5,
+   "lead2": 11.2,
+   "deg1": 12,
+   "deg2": 11,
+   "hit1": false,
+   "hit2": false,
+   "differ": true
+  },
+  {
+   "day": "2026-11-19",
+   "winner": "9°C",
+   "lead1": 9.9,
+   "lead2": 8.9,
+   "deg1": 10,
+   "deg2": 9,
+   "hit1": false,
+   "hit2": true,
+   "differ": true
+  }
+ ]
+}

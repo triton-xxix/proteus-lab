@@ -1,50 +1,50 @@
 {
  "summary": {
-  "n": 239,
+  "n": 248,
   "waiting": 0,
-  "hits": 223,
-  "hit_rate": 0.933,
-  "mean_p": 0.66,
+  "hits": 232,
+  "hit_rate": 0.935,
+  "mean_p": 0.659,
   "brier": 0.141,
-  "brier_at_hit_rate": 0.062,
-  "called_works": 224,
-  "called_works_hits": 213,
+  "brier_at_hit_rate": 0.06,
+  "called_works": 233,
+  "called_works_hits": 222,
   "called_other": 15,
   "called_other_hits": 10,
-  "verdict_works": 218,
+  "verdict_works": 227,
   "first": "2026-10-12",
-  "last": "2026-11-19"
+  "last": "2026-11-21"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 32,
+   "n": 34,
    "mean_p": 0.497,
-   "hit_rate": 0.906
+   "hit_rate": 0.912
   },
   {
    "label": "55%",
-   "n": 20,
+   "n": 21,
    "mean_p": 0.55,
-   "hit_rate": 0.8
+   "hit_rate": 0.81
   },
   {
    "label": "60 to 65%",
-   "n": 68,
+   "n": 71,
    "mean_p": 0.618,
-   "hit_rate": 0.956
+   "hit_rate": 0.958
   },
   {
    "label": "70 to 75%",
-   "n": 88,
-   "mean_p": 0.722,
-   "hit_rate": 0.943
+   "n": 89,
+   "mean_p": 0.721,
+   "hit_rate": 0.944
   },
   {
    "label": "80% and up",
-   "n": 31,
-   "mean_p": 0.819,
-   "hit_rate": 0.968
+   "n": 33,
+   "mean_p": 0.82,
+   "hit_rate": 0.97
   }
  ],
  "rows": [
@@ -2437,6 +2437,96 @@
    "hit": 1,
    "number": "at least 100 of the 4 Nov entrants carry an election word in the title (US midterms, 3 Nov)",
    "at": "2026-11-19T23:59:52+0000"
+  },
+  {
+   "id": "P-0504",
+   "title": "Mayhem coin lifetimes, a day on: re-read the 20 mints P-0491 caught (2026-11-19 12:39Z) with keyless Solana RPC getSignaturesForAddress, pag",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.8,
+   "hit": 1,
+   "number": "median lifetime 20 minutes (birth to last signature), 18 of 20 quiet for over 12 hours",
+   "at": "2026-11-20T12:32:41+0000"
+  },
+  {
+   "id": "P-0506",
+   "title": "What decides whether a YouTube video carries a most-replayed heatmap: views, age or length? yt-dlp -J (no download) on 30 videos from three ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.7,
+   "hit": 1,
+   "number": "views decide it: lowest view count with a heatmap about 30,000, none above 100,000 without one",
+   "at": "2026-11-20T12:36:08+0000"
+  },
+  {
+   "id": "P-0507",
+   "title": "Mayhem burn timing on two cohorts: for P-0473's 19 mints (born 17 Nov 23:42 to 23:47 UK) and P-0491's 20 (born 19 Nov 12:33 to 12:39Z), read",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "P-0473 cohort all burned at 24.3 to 24.9 hours, in 2 or more clusters about 50 minutes apart",
+   "at": "2026-11-20T12:40:13+0000"
+  },
+  {
+   "id": "P-0509",
+   "title": "HippoMaps query parser: does it turn 15 plain-English place queries into Overpass QL that returns results?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "10 of 15 queries return results",
+   "at": "2026-11-20T23:35:04+0000"
+  },
+  {
+   "id": "P-0510",
+   "title": "International-results model: does Elo plus Poisson beat uniform on 2022 World Cup match Brier score?",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.85,
+   "hit": 1,
+   "number": "3-way Brier about 0.58 on 64 matches against uniform 0.667",
+   "at": "2026-11-20T23:46:21+0000"
+  },
+  {
+   "id": "P-0508",
+   "title": "Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's chec",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "17 or more of 19 burned in one sweep at about 00:04Z on 21 Nov, none between 14:00 and 23:59Z on 20 Nov",
+   "at": "2026-11-20T23:47:34+0000"
+  },
+  {
+   "id": "P-0512",
+   "title": "Lichess drop rule replay: on games/lichess/CHALLENGES.csv, drop a bot after N non-cap refusals with no acceptance, N 2 3 5 8: asks saved and",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "N=3 saves about 500 asks and loses 5 or fewer of the acceptances",
+   "at": "2026-11-21T00:00:09+0000"
+  },
+  {
+   "id": "P-0513",
+   "title": "Pageview control for P-0499: for its 7 vacancies, do other managers linked in each club's 2025-26 season article spike 3x on the day before ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "at most 6 of 42 not-appointed manager-vacancy pairs at 3x their own median the day before the appointment, against 7 of 7 appointees",
+   "at": "2026-11-21T00:01:29+0000"
+  },
+  {
+   "id": "P-0514",
+   "title": "Munich lead 1 v lead 2: for each kept outcome in exchange/munich_outcomes.jsonl, the ICON day-1 and day-2 previous-run highs from Open-Meteo",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "lead 1 and lead 2 rounded degrees differ on about 12 of 32 days; lead 1 wins about 6 of those, lead 2 about 3",
+   "at": "2026-11-21T00:03:00+0000"
   }
  ]
 }
