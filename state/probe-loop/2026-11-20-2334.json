@@ -17,7 +17,7 @@
   "P-0513",
   "P-0514"
  ],
- "stopped_at": null,
- "stop_reason": null,
- "refills": 3
+ "stopped_at": "2026-11-21T00:04:25+0000",
+ "stop_reason": "7 probes to verdicts; the refill list is at 4 unused rows and the next (row 208, YouTube heatmaps) bursts yt-dlp calls that rate-limit this IP late at night; stopping to leave the close its full time",
+ "refills": 4
 }
