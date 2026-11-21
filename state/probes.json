@@ -13267,22 +13267,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-21",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T12:42:55+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "not-worth-it",
+   "verdict_at": "2026-11-21T12:43:45+0000",
+   "note": "0 of 68 e-petitions commits from Nov 2021 to Mar 2022 name constituencies, postcodes, ONS or boundaries; the one candidate (0fb8db0fa0, 2 Mar 2022) validates the country code, not the seat. Shot said no plain commit, at 0.45: hit. The step is likely data-side (seat lookup table outside git) or the Feb to Mar 2022 anonymisation run, whose diffs I did not read; nothing rides on it, so I stop here.",
+   "artefacts": [
+    "experiments/2026-11-21-P-0519"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "not-worth-it",
     "p": 0.45,
     "number": "no commit in Dec 2021 to Mar 2022 names constituencies, postcodes or ONS data plainly; under 1 in 3 chance one does",
-    "at": "2026-11-21T12:42:59+0000"
+    "at": "2026-11-21T12:42:59+0000",
+    "hit": true
    }
   }
  ]

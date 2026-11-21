@@ -1,0 +1,420 @@
+{
+ "at": "2026-11-21T12:43:13Z",
+ "window": [
+  "2021-11-01T00:00:00Z",
+  "2022-04-01T00:00:00Z"
+ ],
+ "commits": 68,
+ "flagged": 16,
+ "ratelimit_left": "57",
+ "rows": [
+  {
+   "sha": "c104f7e740",
+   "date": "2022-03-31",
+   "first": "Merge pull request #835 from alphagov/dependabot/bundler/puma-4.3.12",
+   "flag": false
+  },
+  {
+   "sha": "62c74b40e8",
+   "date": "2022-03-31",
+   "first": "Bump puma from 4.3.11 to 4.3.12",
+   "flag": false
+  },
+  {
+   "sha": "7d14687e55",
+   "date": "2022-03-19",
+   "first": "Merge pull request #834 from alphagov/increase-subject-size-on-emails-and-mailshots",
+   "flag": false
+  },
+  {
+   "sha": "1fd0e481af",
+   "date": "2022-03-19",
+   "first": "Increase the allowed subject length for emails/mailshots",
+   "flag": false
+  },
+  {
+   "sha": "9843d45bc4",
+   "date": "2022-03-09",
+   "first": "Merge pull request #833 from alphagov/update-rails-6-1-4-7",
+   "flag": false
+  },
+  {
+   "sha": "2ed7f9eee1",
+   "date": "2022-03-09",
+   "first": "Update Rails to 6.1.4.7 to address CVE-2022-21831",
+   "flag": false
+  },
+  {
+   "sha": "1816eb6b8c",
+   "date": "2022-03-06",
+   "first": "Merge pull request #832 from alphagov/optimize-anonimization-jobs",
+   "flag": false
+  },
+  {
+   "sha": "2ba6492a06",
+   "date": "2022-03-06",
+   "first": "Remove unnecessary signature lock",
+   "flag": false
+  },
+  {
+   "sha": "6b7b9be6ca",
+   "date": "2022-03-06",
+   "first": "Optimize performance of anonymization jobs",
+   "flag": false
+  },
+  {
+   "sha": "a40d2dfeee",
+   "date": "2022-03-05",
+   "first": "Merge pull request #831 from alphagov/lower-anonymization-priority",
+   "flag": false
+  },
+  {
+   "sha": "4b12a40e5f",
+   "date": "2022-03-05",
+   "first": "Lower priority on anonymization job",
+   "flag": false
+  },
+  {
+   "sha": "9cd6502ff6",
+   "date": "2022-03-04",
+   "first": "Merge pull request #830 from alphagov/fix-build",
+   "flag": false
+  },
+  {
+   "sha": "c5f12edbf9",
+   "date": "2022-03-04",
+   "first": "Use absolute path for hashFiles",
+   "flag": true
+  },
+  {
+   "sha": "94efae6ef7",
+   "date": "2022-03-03",
+   "first": "Merge pull request #829 from alphagov/fix-anonymize-petitions-button",
+   "flag": true
+  },
+  {
+   "sha": "636d71421f",
+   "date": "2022-03-03",
+   "first": "Correct cucumber feature for new data retention policy",
+   "flag": true
+  },
+  {
+   "sha": "4a3df5e915",
+   "date": "2022-03-03",
+   "first": "Show alert when parliament fails to save",
+   "flag": false
+  },
+  {
+   "sha": "73f4db0134",
+   "date": "2022-03-03",
+   "first": "Update logic for displaying 'Anonymize Petitions' button",
+   "flag": true
+  },
+  {
+   "sha": "33a2699ef4",
+   "date": "2022-03-02",
+   "first": "Merge pull request #828 from alphagov/anonymize-fixes",
+   "flag": false
+  },
+  {
+   "sha": "c49661ae1f",
+   "date": "2022-03-02",
+   "first": "Add stopped petitions to the automatic process",
+   "flag": true
+  },
+  {
+   "sha": "3a8198d9a1",
+   "date": "2022-03-02",
+   "first": "Allow autocorrect on the petition creator's email address",
+   "flag": false
+  },
+  {
+   "sha": "0fb8db0fa0",
+   "date": "2022-03-02",
+   "first": "Ensure location_code is valid",
+   "flag": true
+  },
+  {
+   "sha": "a889c697fb",
+   "date": "2022-03-02",
+   "first": "Hide the creator when a petition has been anonymized",
+   "flag": false
+  },
+  {
+   "sha": "704d18ab2c",
+   "date": "2022-03-02",
+   "first": "Copy across the anonymized_at timestamp when archiving signatures",
+   "flag": false
+  },
+  {
+   "sha": "5d594a5d82",
+   "date": "2022-03-02",
+   "first": "Copy across the anonymized_at timestamp when archiving petitions",
+   "flag": true
+  },
+  {
+   "sha": "bf8e94a9c7",
+   "date": "2022-03-02",
+   "first": "Merge pull request #827 from alphagov/dependabot/bundler/image_processing-1.12.2",
+   "flag": false
+  },
+  {
+   "sha": "3e8e574fcd",
+   "date": "2022-03-01",
+   "first": "Bump image_processing from 1.12.1 to 1.12.2",
+   "flag": false
+  },
+  {
+   "sha": "c0f5108aea",
+   "date": "2022-02-28",
+   "first": "Final privacy policy amends",
+   "flag": false
+  },
+  {
+   "sha": "d6829d15d3",
+   "date": "2022-02-28",
+   "first": "Merge pull request #826 from unboxed/kg-privacy-notice-amentments",
+   "flag": false
+  },
+  {
+   "sha": "c9457c8377",
+   "date": "2022-02-28",
+   "first": "Make amendments to text of Privay Notice",
+   "flag": false
+  },
+  {
+   "sha": "36c50b8114",
+   "date": "2022-02-26",
+   "first": "Merge pull request #825 from unboxed/kg-privacy-update-email-fixes",
+   "flag": true
+  },
+  {
+   "sha": "7b61d00356",
+   "date": "2022-02-25",
+   "first": "Update PrivacyNotification petitions scope",
+   "flag": true
+  },
+  {
+   "sha": "6ad5f7eced",
+   "date": "2022-02-25",
+   "first": "Merge pull request #824 from unboxed/add-space-to-email",
+   "flag": false
+  },
+  {
+   "sha": "52e9aa1e0f",
+   "date": "2022-02-25",
+   "first": "Add space to privacy notice email",
+   "flag": false
+  },
+  {
+   "sha": "bd1e915986",
+   "date": "2022-02-25",
+   "first": "Merge pull request #823 from unboxed/its-2022",
+   "flag": false
+  },
+  {
+   "sha": "cae04deabd",
+   "date": "2022-02-25",
+   "first": "Merge pull request #822 from unboxed/update-cookie-banner-link",
+   "flag": false
+  },
+  {
+   "sha": "5d6b48761d",
+   "date": "2022-02-25",
+   "first": "It's 2022, not 2021",
+   "flag": false
+  },
+  {
+   "sha": "ca90850b3d",
+   "date": "2022-02-25",
+   "first": "Ensure cookies banner links to cookies page",
+   "flag": false
+  },
+  {
+   "sha": "97556f5c54",
+   "date": "2022-02-25",
+   "first": "Merge pull request #808 from unboxed/privacy-changes",
+   "flag": false
+  },
+  {
+   "sha": "162721b171",
+   "date": "2022-02-24",
+   "first": "Fix spec failures (#19)",
+   "flag": false
+  },
+  {
+   "sha": "600721cbf1",
+   "date": "2022-02-24",
+   "first": "Job to send new privacy policy email (#15)",
+   "flag": false
+  },
+  {
+   "sha": "838ac130d8",
+   "date": "2022-02-24",
+   "first": "Add cookies page (#18)",
+   "flag": false
+  },
+  {
+   "sha": "dd1ccf370d",
+   "date": "2022-02-24",
+   "first": "Update privacy notice (#17)",
+   "flag": false
+  },
+  {
+   "sha": "6e97f5a538",
+   "date": "2021-11-09",
+   "first": "Allow admins to anonymize archived petitions",
+   "flag": true
+  },
+  {
+   "sha": "742b97e9a4",
+   "date": "2021-11-05",
+   "first": "Allow admins to decide whether to anonymize petitions",
+   "flag": true
+  },
+  {
+   "sha": "7d2e510755",
+   "date": "2021-11-08",
+   "first": "Update anonymisation task to include rejected and hidden petitions (#13)",
+   "flag": true
+  },
+  {
+   "sha": "23705c0762",
+   "date": "2022-02-23",
+   "first": "Merge pull request #821 from alphagov/update-nokogiri",
+   "flag": false
+  },
+  {
+   "sha": "d310deb913",
+   "date": "2022-02-23",
+   "first": "Update nokogiri gem to address CVE-2021-30560",
+   "flag": false
+  },
+  {
+   "sha": "d23aff7bda",
+   "date": "2022-02-23",
+   "first": "Update Appsignal to be compatible with M1 Macs",
+   "flag": false
+  },
+  {
+   "sha": "fbb051bb13",
+   "date": "2022-02-11",
+   "first": "Merge pull request #819 from alphagov/dependabot/bundler/puma-4.3.11",
+   "flag": false
+  },
+  {
+   "sha": "766c6d221e",
+   "date": "2022-02-11",
+   "first": "Bump puma from 4.3.9 to 4.3.11",
+   "flag": false
+  },
+  {
+   "sha": "ea1b3c672b",
+   "date": "2022-02-11",
+   "first": "Merge pull request #818 from alphagov/update-to-rails-6-1-4-6",
+   "flag": false
+  },
+  {
+   "sha": "c911550994",
+   "date": "2022-02-11",
+   "first": "Update to Rails 6.1.4.6 to address CVE-2022-23633",
+   "flag": false
+  },
+  {
+   "sha": "09cf517b0e",
+   "date": "2022-02-01",
+   "first": "Merge pull request #816 from alphagov/add-petition-mailshot-infrastructure",
+   "flag": false
+  },
+  {
+   "sha": "74395695f5",
+   "date": "2022-01-31",
+   "first": "Add models, mailers and jobs for petition mailshots",
+   "flag": true
+  },
+  {
+   "sha": "8d756fc383",
+   "date": "2022-01-11",
+   "first": "Merge pull request #815 from alphagov/ensure-correct-debate-state",
+   "flag": false
+  },
+  {
+   "sha": "273b18158f",
+   "date": "2022-01-11",
+   "first": "Ensure correct state when decrementing signature count",
+   "flag": true
+  },
+  {
+   "sha": "ea7461e72f",
+   "date": "2022-01-11",
+   "first": "Ensure correct state when incrementing signature count",
+   "flag": true
+  },
+  {
+   "sha": "fc9ce4cd0c",
+   "date": "2022-01-11",
+   "first": "Ensure correct state when clearing scheduled date",
+   "flag": false
+  },
+  {
+   "sha": "2209f4b231",
+   "date": "2021-12-19",
+   "first": "Merge pull request #814 from alphagov/upgrade-rails-to-6-1-4-4",
+   "flag": false
+  },
+  {
+   "sha": "f91125a334",
+   "date": "2021-12-18",
+   "first": "Ignore drive-by requests looking to exploit WordPress bugs",
+   "flag": false
+  },
+  {
+   "sha": "4102ebbbed",
+   "date": "2021-12-18",
+   "first": "Update to Rails 6.1.4.4 to address CVE-2021-44528",
+   "flag": false
+  },
+  {
+   "sha": "13032960ff",
+   "date": "2021-11-27",
+   "first": "Merge pull request #812 from alphagov/prevent-double-click-on-sponsor-threshold",
+   "flag": false
+  },
+  {
+   "sha": "819f514617",
+   "date": "2021-11-27",
+   "first": "Prevent multiple emails when on sponsor threshold",
+   "flag": true
+  },
+  {
+   "sha": "4cb41731ba",
+   "date": "2021-11-26",
+   "first": "Merge pull request #811 from alphagov/restore-cookie-banner",
+   "flag": false
+  },
+  {
+   "sha": "765ffb8508",
+   "date": "2021-11-26",
+   "first": "Restore cookie banner for essential cookies",
+   "flag": false
+  },
+  {
+   "sha": "824e06db7f",
+   "date": "2021-11-24",
+   "first": "Merge pull request #810 from unboxed/remove-ga-cookies-from-privacy-notice",
+   "flag": false
+  },
+  {
+   "sha": "957b3f024a",
+   "date": "2021-11-24",
+   "first": "Remove mention of GA cookies from privacy notice",
+   "flag": false
+  },
+  {
+   "sha": "34250f8da9",
+   "date": "2021-11-05",
+   "first": "Remove Google Analytics and cookie banner",
+   "flag": false
+  }
+ ]
+}
