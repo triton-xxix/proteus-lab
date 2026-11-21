@@ -1,0 +1,205 @@
+{
+ "zip_bytes": 1531265132,
+ "members": [
+  [
+   "MOT testing data results (2024)/",
+   0
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202408.csv",
+   618359557
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202408.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202409.csv",
+   697962876
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202409.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202407.csv",
+   643735116
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202407.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202412.csv",
+   461414007
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202412.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202406.csv",
+   589975953
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202406.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202410.csv",
+   738264492
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202410.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202404.csv",
+   585781764
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202404.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202405.csv",
+   573877268
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202405.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202411.csv",
+   639520725
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202411.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202401.csv",
+   701850612
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202401.csv",
+   232
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202402.csv",
+   670508209
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202402.csv",
+   176
+  ],
+  [
+   "MOT testing data results (2024)/test_result_202403.csv",
+   746398297
+  ],
+  [
+   "__MACOSX/MOT testing data results (2024)/._test_result_202403.csv",
+   176
+  ]
+ ],
+ "sampled": [
+  "MOT testing data results (2024)/test_result_202408.csv",
+  "MOT testing data results (2024)/test_result_202406.csv",
+  "MOT testing data results (2024)/test_result_202411.csv"
+ ],
+ "mb_per_member": 40,
+ "header": [
+  "test_id",
+  "vehicle_id",
+  "test_date",
+  "test_class_id",
+  "test_type",
+  "test_result",
+  "test_mileage",
+  "postcode_area",
+  "make",
+  "model",
+  "colour",
+  "fuel_type",
+  "cylinder_capacity",
+  "first_use_date",
+  "completed_date"
+ ],
+ "rows_read": 5402420,
+ "regions": {
+  "ALL": {
+   "n": 1600254,
+   "P": 1300510,
+   "F": 238795,
+   "PRS": 60949,
+   "other": {
+    "ABR": 6678,
+    "ABA": 478,
+    "ABRVE": 1
+   },
+   "pass_P_only": 81.27,
+   "pass_incl_PRS": 85.08
+  },
+  "London": {
+   "n": 61037,
+   "P": 51232,
+   "F": 6422,
+   "PRS": 3383,
+   "other": {
+    "ABR": 361,
+    "ABA": 29
+   },
+   "pass_P_only": 83.94,
+   "pass_incl_PRS": 89.48
+  },
+  "North East": {
+   "n": 69218,
+   "P": 55598,
+   "F": 10963,
+   "PRS": 2657,
+   "other": {
+    "ABR": 300,
+    "ABA": 23
+   },
+   "pass_P_only": 80.32,
+   "pass_incl_PRS": 84.16
+  },
+  "Scotland": {
+   "n": 164342,
+   "P": 126566,
+   "F": 33016,
+   "PRS": 4760,
+   "other": {
+    "ABR": 722,
+    "ABA": 54
+   },
+   "pass_P_only": 77.01,
+   "pass_incl_PRS": 79.91
+  },
+  "Wales": {
+   "n": 82187,
+   "P": 64894,
+   "F": 13905,
+   "PRS": 3388,
+   "other": {
+    "ABR": 334,
+    "ABA": 12
+   },
+   "pass_P_only": 78.96,
+   "pass_incl_PRS": 83.08
+  },
+  "rest of England": {
+   "n": 1223470,
+   "P": 1002220,
+   "F": 174489,
+   "PRS": 46761,
+   "other": {
+    "ABR": 4961,
+    "ABA": 360,
+    "ABRVE": 1
+   },
+   "pass_P_only": 81.92,
+   "pass_incl_PRS": 85.74
+  }
+ }
+}
