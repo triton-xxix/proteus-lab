@@ -13391,15 +13391,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-21",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-21T23:38:01+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-21T23:38:42+0000",
+   "note": "@zpup/core 0.4.1: a 20 px box at each corner of a 300x300 floor, four turns each: box painted after the floor in 16 of 16 renders (8 on the far half), no script in 17 SVGs, turning file 14,955 bytes of SMIL. Zdog side not run by me.",
+   "artefacts": [
+    "experiments/2026-11-21-P-0524"
+   ],
+   "minutes": 0,
+   "calls": 13,
    "denied": [],
    "luke": false
   }
