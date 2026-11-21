@@ -1,5 +1,5 @@
 {
- "next_id": 517,
+ "next_id": 519,
  "items": [
   {
    "id": "P-0001",
@@ -13200,6 +13200,52 @@
     "at": "2026-11-21T12:36:22+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0517",
+   "title": "Petitions hole, leg two of P-0516: every archived parliament-4 petition over 10,000 signatures (all list pages), unplaced UK share against signature count and opening month, to test whether the 2020-21 peak tracks petition size (load) or the calendar",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-21T12:38:30+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "calendar wins: within the same size band, 2020-21 petitions run at least twice the unplaced share of 2022-24 ones; size alone shows little slope",
+    "at": "2026-11-21T12:38:38+0000"
+   }
+  },
+  {
+   "id": "P-0518",
+   "title": "Draw bump on P-0511's model: fit one draw multiplier on 2010-2022 non-friendly internationals by log-likelihood (sandbox/intl-results.csv), fix the Bosnia alias, rescore the judgement book's scored rows; how much of the 0.043 Brier gap to the market does it close",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }

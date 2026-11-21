@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 424 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,8 @@ Verdicts so far: 424 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
+| P-0517 | Petitions hole, leg two of P-0516: every archived parliament-4 petition over 10,000 signatures (all list pages), unplaced UK share against signature count and opening month, to test whether the 2020-21 peak tracks petition size (load) or the calendar | desk | none |  | 1 (in progress) | 20 min |
+| P-0518 | Draw bump on P-0511's model: fit one draw multiplier on 2010-2022 non-friendly internationals by log-likelihood (sandbox/intl-results.csv), fix the Bosnia alias, rescore the judgement book's scored rows; how much of the 0.043 Brier gap to the market does it close | refill | none |  | 0 | 20 min |
 
 ## Verdicts (497)
 
