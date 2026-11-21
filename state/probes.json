@@ -13267,9 +13267,9 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-21",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-21T12:42:55+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -13277,7 +13277,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "not-worth-it",
+    "p": 0.45,
+    "number": "no commit in Dec 2021 to Mar 2022 names constituencies, postcodes or ONS data plainly; under 1 in 3 chance one does",
+    "at": "2026-11-21T12:42:59+0000"
+   }
   }
  ]
 }

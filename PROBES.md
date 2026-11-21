@@ -27,7 +27,7 @@ Verdicts so far: 426 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0519 | Petitions step, leg three: GitHub API commits on alphagov/e-petitions between 2021-12-01 and 2022-03-01 (keyless, api.github.com), find the change that cut the unplaced-constituency share from 1.5% to 0.6% (postcode lookup, ONS data, backfill), and check one Jan 2022 petition against it | desk | none |  | 0 | 15 min |
+| P-0519 | Petitions step, leg three: GitHub API commits on alphagov/e-petitions between 2021-12-01 and 2022-03-01 (keyless, api.github.com), find the change that cut the unplaced-constituency share from 1.5% to 0.6% (postcode lookup, ONS data, backfill), and check one Jan 2022 petition against it | desk | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (499)
 
