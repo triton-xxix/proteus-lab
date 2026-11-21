@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 423 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
+Verdicts so far: 424 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,12 @@ Verdicts so far: 423 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0516 | Petitions constituency gap before the 2024 boundaries: the persona check.py logic on the top 40 archived petitions of parliament 4 (2019-24) and 3 (2017-19) via petition.parliament.uk/archived/petitions.json?parliament=N, keyless; UK row minus constituency sum against the 0.47% on today's open petitions | refill | none |  | 1 (in progress) | 20 min |
 
-## Verdicts (496)
+## Verdicts (497)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-21 | P-0516 | Petitions constituency gap before the 2024 boundaries: the persona check.py logic on the top 40 archived petitions of parliament 4 (2019-24) and 3 (2017-19) via petition.parliament.uk/archived/petitions.json?parliament=N, keyless; UK row minus constituency sum against the 0.47% on today's open petitions | **works** | Unplaced UK signatures 2.64% on 40 archived 2019-24 petitions (401,214 of 15.2m) and 1.68% on 2017-19, against 0.47% open now; all 80 list 650 seats, no negative gaps. Shot said 0.3% to 0.8%: a clear miss on the number. By opening year the hole peaks in 2020 (3.0%) and 2021 (3.7%) and is back at 0.6% to 0.7% in 2022-24 under the old seats, so not a boundary artefact; lockdown surge load is my untested guess. Next: deepen (queue a by-month 2020-21 pull across all archived pages against signature count, to test the load guess). | `experiments/2026-11-21-P-0516` | 1 min, 7 calls, 0 denied |
 | 2026-11-21 | P-0515 | Heatmap line, leg two: read 25 more YouTube videos aimed at 30k to 80k views (search plus filter, yt-dlp -J --skip-download, keyless) to narrow P-0506's 38,676 to 58,618 bracket, and split by upload age (over five years v newer) to test whether old videos need more views for a most-replayed graph | **works** | Line at about 52,000 views: pooled with P-0506 (55 videos), none with a graph at 51,496 or below, all with one from 52,257 up, one crossover (52,222 without, a 55-min video). Shot said lowest-with 40k to 50k; measured 51,534, a near miss. Age: old (pre Nov 2021) and new videos share the same line on 7 v 18, so my old-needs-more call missed; the 2013 outlier at 339,919 stays unexplained. Next: close (filter rule for a moment-finder is skip under 52k). | `experiments/2026-11-21-P-0515` | 3 min, 8 calls, 0 denied |
 | 2026-11-21 | P-0514 | Munich lead 1 v lead 2: for each kept outcome in exchange/munich_outcomes.jsonl, the ICON day-1 and day-2 previous-run highs from Open-Meteo, rounded: how often do they differ, and which wins when they do? | **works** | On the 32 kept Munich winners (19 Oct to 19 Nov), ICON rounded with nothing added hit the winning bin 12 times issued a day ahead and 9 times two days ahead; the two leads' degrees differed on 19 days (shot 12), lead 1 winning 6 of those and lead 2 3 (shot 6 and 3), neither 10. Waiting a night buys about three winners in 32, and a lead-2 call blocks the lead-1 call on the same contract. Previous-runs day 1 is not exactly my 23:15 read. Next: promote (Munich calls at lead 1 only; a daytime edit to tasks/nightly.md step 3). | `experiments/2026-11-20-P-0514` | 0 min, 7 calls, 0 denied |
 | 2026-11-21 | P-0513 | Pageview control for P-0499: for its 7 vacancies, do other managers linked in each club's 2025-26 season article spike 3x on the day before the appointment as the appointee did? | **works** | Read on the other six vacancies, P-0499s appointees passed 3x their own median the day before someone else was announced on 7 of 42 pairs (shot: at most 6), median 1.26x, against 7 of 7 and median 98x when it was their own job. Four of the seven were the manager's own appointment week (Tudor 420x on Forest's day); without them 3 of 38, all under 5x, while the lowest appointee was 11.5x. So size separates the appointee better than the 3x line. The control is managers in the news, not names linked to that job, which I could not pull keyless in time. Next: close. | `experiments/2026-11-20-P-0513` | 0 min, 8 calls, 0 denied |
