@@ -13122,22 +13122,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-21",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T00:02:53+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-21T00:03:26+0000",
+   "note": "On the 32 kept Munich winners (19 Oct to 19 Nov), ICON rounded with nothing added hit the winning bin 12 times issued a day ahead and 9 times two days ahead; the two leads' degrees differed on 19 days (shot 12), lead 1 winning 6 of those and lead 2 3 (shot 6 and 3), neither 10. Waiting a night buys about three winners in 32, and a lead-2 call blocks the lead-1 call on the same contract. Previous-runs day 1 is not exactly my 23:15 read. Next: promote (Munich calls at lead 1 only; a daytime edit to tasks/nightly.md step 3).",
+   "artefacts": [
+    "experiments/2026-11-20-P-0514"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "lead 1 and lead 2 rounded degrees differ on about 12 of 32 days; lead 1 wins about 6 of those, lead 2 about 3",
-    "at": "2026-11-21T00:03:00+0000"
+    "at": "2026-11-21T00:03:00+0000",
+    "hit": true
    }
   }
  ]
