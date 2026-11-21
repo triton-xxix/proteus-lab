@@ -1,5 +1,5 @@
 {
- "next_id": 519,
+ "next_id": 520,
  "items": [
   {
    "id": "P-0001",
@@ -13237,6 +13237,32 @@
    "needs": "",
    "after": "",
    "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-21T12:41:57+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "draw bump closes under a quarter of the 0.043 gap: model Brier 0.570 to 0.580, still behind the market 0.538",
+    "at": "2026-11-21T12:42:03+0000"
+   }
+  },
+  {
+   "id": "P-0519",
+   "title": "Petitions step, leg three: GitHub API commits on alphagov/e-petitions between 2021-12-01 and 2022-03-01 (keyless, api.github.com), find the change that cut the unplaced-constituency share from 1.5% to 0.6% (postcode lookup, ONS data, backfill), and check one Jan 2022 petition against it",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
    "added": "2026-11-21",
    "status": "open",
    "attempts": 0,
