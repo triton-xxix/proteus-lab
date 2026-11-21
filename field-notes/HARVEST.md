@@ -6,20 +6,31 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-717 judged over 50 harvest days, 469 kept, 141 testable, 135 queued as probes, 127 with a probe verdict.
+731 judged over 51 harvest days, 480 kept, 145 testable, 139 queued as probes, 129 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0730 | 2026-11-21 | github | [staryone/motlab: Video as code: canvas scenes rendered with WebCodecs in headless Chrome, ](https://github.com/staryone/motlab) | mechanism | tools-for-strangers | no: The speed claim depends on a GPU and it needs Node 24 and a  |  |
+| H-0729 | 2026-11-21 | hn | [Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle](https://github.com/rxolve/zpup) | mechanism | tools-for-strangers | yes | P-0524 |
+| H-0728 | 2026-11-21 | vault | [repurpose one piece into reels, shorts, threads and LinkedIn](https://www.instagram.com/p/DftKkuIjiJn/) | mechanism | tools-for-strangers | no: A test needs model answers and there is no local LLM on this |  |
+| H-0726 | 2026-11-21 | arxiv | [ResVision: Spectrum-Matched Resizing and Context-Preserving Inspection for Visual Reasonin](https://arxiv.org/abs/2611.26318) | mechanism | tech | no: Needs vision-language model answers and there is no local LL |  |
+| H-0725 | 2026-11-21 | github | [danielwh2/sprite-stacking: Agent skill: turn four pixel art views into fake-3D sprites you](https://github.com/danielwh2/sprite-stacking) | mechanism | tools-for-strangers | yes | P-0523 |
+| H-0724 | 2026-11-21 | hn | [Show HN: AgentMall – Let your AI agent buy groceries](https://getagentmall.com) (intel) | mechanism | tools-for-strangers | no: Needs an account and API key, and a real checkout flow on re |  |
+| H-0723 | 2026-11-21 | vault | [Hook, Problem, Solution, Proof, CTA audit pass and the generic-opener ban list](https://www.instagram.com/p/DfO05yDle-w/) | mechanism | tools-for-strangers | no: A test needs model answers and there is no local LLM on this |  |
+| H-0722 | 2026-11-21 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=mdzIXanauYk) | mechanism | open-data | yes | P-0522 |
+| H-0721 | 2026-11-21 | arxiv | [ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain](https://arxiv.org/abs/2611.26414) | mechanism | tech | no: Needs a VLM, a simulator and RL training, none of which are  |  |
+| H-0720 | 2026-11-21 | github | [kimtaeyoon83/mcp-server-youtube-transcript: This is an MCP server that allows you to direc](https://github.com/kimtaeyoon83/mcp-server-youtube-transcript) | mechanism | tools-for-strangers | yes | P-0521 |
+| H-0718 | 2026-11-21 | vault | [ten free or cheap AI video generators](https://www.instagram.com/p/Df7PXm4H9rr/) | mechanism | tools-for-strangers | no: The tool names are only on unseen slides and every generator |  |
 | H-0716 | 2026-11-20 | github | [JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / Break down any short drama with AI: why ](https://github.com/JuneYaooo/rea-toon) | mechanism | tools-for-strangers | no: It needs vision model calls over frame grids, and a drama to |  |
 | H-0714 | 2026-11-20 | vault | [Scraped-list cold voice, SMS and email blueprints for UK prospects]() (intel) | mechanism | mechanism-hunting | no: It means contacting real people, which Proteus does not do,  |  |
 | H-0713 | 2026-11-20 | arxiv | [Seer: Guiding Small Deep-Research Agents with Shared Decision Models](https://arxiv.org/abs/2611.26423) | mechanism | tech | no: It needs trained models and a local language model, and neit |  |
 | H-0711 | 2026-11-20 | hn | [Show HN: OpenComputer – an open source alternative to Devin](https://github.com/diggerhq/opencomputer) | both | tools-for-strangers | no: Running it needs a cloud account or VM and the benchmark nee |  |
 | H-0710 | 2026-11-20 | vault | [Promptwise as our platform]() | mechanism | tools-for-strangers | no: It has no public API and needs a logged-in account. |  |
-| H-0709 | 2026-11-20 | youtube | [I Built A World Cup Prediction Model. Here's How It Compares To Opta](https://www.youtube.com/watch?v=S3ZZoYwl8xg) | mechanism | desk:pitch | yes | P-0510 |
+| H-0709 | 2026-11-20 | youtube | [I Built A World Cup Prediction Model. Here's How It Compares To Opta](https://www.youtube.com/watch?v=S3ZZoYwl8xg) | mechanism | desk:pitch | yes | P-0510 **works** |
 | H-0708 | 2026-11-20 | arxiv | [Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)](https://arxiv.org/abs/2611.26553) | mechanism | tech | no: It needs model answers across several agents and there is no |  |
-| H-0706 | 2026-11-20 | hn | [Show HN: Fast deterministic natural language search for OpenStreetMap data](https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935) | mechanism | open-data | yes | P-0509 |
+| H-0706 | 2026-11-20 | hn | [Show HN: Fast deterministic natural language search for OpenStreetMap data](https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935) | mechanism | open-data | yes | P-0509 **works** |
 | H-0705 | 2026-11-20 | vault | [Generated creators posing as customers, watermark removal and engagement pods]() (intel) | mechanism | mechanism-hunting | no: It is a set of deceptive-marketing tactics, and nothing runn |  |
 | H-0704 | 2026-11-19 | hn | [Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests](https://springcraft-ai.github.io/springrep/) | mechanism | mechanism-hunting | no: Needs a Rust toolchain and building a kernel plus adapters,  |  |
 | H-0701 | 2026-11-19 | vault | [Selling database reactivation cold to small local businesses that have no list]() | mechanism | tools-for-strangers | no: Needs a client's list, a sending account and consent; nothin |  |
@@ -483,6 +494,140 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0730 staryone/motlab: Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent ski
+2026-11-21, github, https://github.com/staryone/motlab
+
+- **Mechanism:** Each scene is a canvas page exposing one function, renderAt(t), that draws the frame at time t. Headless Chrome plays the pages and encodes frames with WebCodecs inside the page, so frames never leave the browser as images, then ffmpeg mixes audio and transitions into MP4. A web viewer lets a reviewer mark frames, boxes or time ranges with notes written to selection.json, which the agent reads and works through. No AI image or video model is used.
+- **Claim:** Video as code that renders 2 to 4 times faster than Remotion and HyperFrames on a GPU, with a 12-scene 4K project going from 93 to 53 seconds.
+- **Testable:** no. The speed claim depends on a GPU and it needs Node 24 and a full install, which is not confirmed on this Mac inside 30 minutes. Needs: Node 24 or newer and a GPU to check the speed claim..
+- **Idea on its own:** sound. Deterministic per-frame scene functions and in-page encoding are a sound design, and frame-pinned review notes suit agent revision loops.
+- **How it would be done:** Install the CLI with Node 24, Chrome and ffmpeg, run its sample project and time a render against the same scene in HyperFrames on this machine. The review viewer with pinned notes is the part HyperFrames lacks and could be copied as an idea. A person still supplies the references, the direction and the final taste judgement.
+- **Stack already covers:** HyperFrames (video compose, captions, render), Claude Code with skills and sub-agents, ElevenLabs (voice)
+- **To fetch:** motlab https://github.com/staryone/motlab (The video engine and its agent skills.); ffmpeg https://ffmpeg.org/download.html (Required for audio mixing and muxing.)
+- **Missing:** An independent benchmark of render speed on this Mac's hardware.
+- **Field Notes line:** A video engine where each scene is a canvas function of time, encoded by WebCodecs inside Chrome, with a note-on-frame review loop for the agent.
+
+### H-0729 Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle
+2026-11-21, hn, https://github.com/rxolve/zpup
+
+- **Mechanism:** A small library that reads a 3D scene written in JSON and emits a flat SVG from any camera angle, with no JavaScript inside the file so it works in an img tag. Its depth sorting compares overlapping shapes pairwise, where Zdog sorts each shape by a single point and so lets a small object on a big floor get covered when turned. It has no canvas renderer or text shape and is at version 0.2.
+- **Claim:** Zdog-style 3D scenes in JSON rendered to script-free SVG with correct overlap ordering from any angle.
+- **Testable:** yes. Does Zpup render a small object on a large floor in correct front-to-back order at four rotation angles, and is the SVG free of script tags? Queued as P-0524.
+- **Idea on its own:** sound. Pairwise overlap sorting is a known painter's-algorithm fix and static SVG output is safe to embed anywhere.
+- **How it would be done:** Fetch the repo, write a scene with a large flat floor and a small cube on it, and render it at four rotations. Check each SVG for script tags and look at the draw order for the cube against the floor. Then compare with a one-point sort to see whether the claimed bug appears. A person would judge whether the visual style suits a project.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** zpup https://github.com/rxolve/zpup (The library under test, with a playground at rxolve.github.io/zpup.)
+- **Field Notes line:** Zpup draws JSON 3D scenes as plain SVG and sorts overlapping shapes pairwise, fixing a Zdog bug where small things vanish behind big floors.
+
+### H-0728 repurpose one piece into reels, shorts, threads and LinkedIn
+2026-11-21, vault, https://www.instagram.com/p/DftKkuIjiJn/
+
+- **Mechanism:** One long piece of content is passed to a model with per-platform instructions that split it into a reel script, a short, a thread and a LinkedIn post, each with its own length, hook style and format. In the source carousel it is one step in a chain of four prompt roles: hook, value, repurpose and schedule. Nothing external is called until a scheduler posts the output.
+- **Claim:** A four-agent content team where one step repurposes a single piece into reels, shorts, threads and LinkedIn posts.
+- **Testable:** no. A test needs model answers and there is no local LLM on this Mac. Needs: A hosted model call and, to publish, platform accounts..
+- **Idea on its own:** sound. Rewriting one source into platform-shaped formats is ordinary prompt work and plainly doable.
+- **How it would be done:** Write one prompt per target format with length, structure and tone rules, and feed each a transcript from the existing transcript pipeline. Review the outputs by hand against the originals. Video formats then go through HyperFrames for captions and render. A person still checks facts and approves anything posted, and the existing social engine should be checked first for this step.
+- **Stack already covers:** Claude Code with skills and sub-agents, keyless YouTube search, oEmbed and transcript pipeline, HyperFrames (video compose, captions, render)
+- **Missing:** A judge of whether the repurposed pieces are any good, which only audience results can supply.
+- **Field Notes line:** Repurposing is one source piece pushed through per-platform prompts for reel, short, thread and LinkedIn; the chain around it is mostly branding.
+
+### H-0726 ResVision: Spectrum-Matched Resizing and Context-Preserving Inspection for Visual Reasoning
+2026-11-21, arxiv, https://arxiv.org/abs/2611.26318
+
+- **Mechanism:** Two additions to agentic image reasoning. Spectrum-Matched Resizing estimates how much high-frequency detail an image has and picks a global resize scale, spending more visual tokens only on detail-rich images. Context-Preserving Inspection returns each zoomed crop together with the full working view, so the model keeps local detail and global position across tool turns.
+- **Claim:** Gains of 3.36 to 4.94 points over direct prompting and 1.87 to 2.94 over a plain agentic baseline across 29 benchmarks and four frontier VLMs.
+- **Testable:** no. Needs vision-language model answers and there is no local LLM on this Mac. Needs: A hosted VLM and the benchmark suites..
+- **Idea on its own:** needs-a-run. Keeping the full view beside each crop is sensible, but the gains are benchmark averages from the authors.
+- **How it would be done:** The crop-with-context part is easy to copy: a tool that returns the crop plus the full image with a box drawn on it. The adaptive resize needs a complexity measure such as frequency-energy of the image. Testing it means running a hosted VLM on a visual question set with and without the two changes and comparing accuracy.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Code release from the authors, not confirmed in the abstract.
+- **Field Notes line:** Zoom-and-crop agents do better when each crop comes back with the whole image and the resize scale is chosen by how much fine detail there is.
+
+### H-0725 danielwh2/sprite-stacking: Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude C
+2026-11-21, github, https://github.com/danielwh2/sprite-stacking. Vault verdict on the vendor exists (vault: tools and repos); mechanism recorded, vendor not re-judged.
+
+- **Mechanism:** Takes one image holding four orthographic views (top, side, front, back) and keeps a voxel only where all four silhouettes cover it, which is a visual-hull carve in NumPy. The solid is cut into N flat layers, then each layer is rotated, squashed for pitch and lifted one pixel to fake 3D in a turntable. It also writes normal-map and emissive strips and a standalone HTML viewer.
+- **Claim:** Four pixel-art views become a spinnable fake-3D sprite, with a viewer, lighting and a 16-direction sprite sheet export.
+- **Testable:** yes. Does views_to_slices.py run on a synthetic four-view sheet with Pillow and NumPy and produce a slice strip and viewer with the requested layer count? Queued as P-0523.
+- **Idea on its own:** sound. Intersecting orthographic silhouettes is an established way to build a rough solid, and sprite stacking is a known technique.
+- **How it would be done:** Draw four views of a simple shape in a short Python script, join them in one row, and run the slicer with 36 slices and the HTML viewer flag. Count the output layers and confirm the carved volume matches the intersection of the views. The skill's real use is letting an agent draw the views and wire the sprite into a game, which a game-bot or Godot project would do.
+- **Stack already covers:** Gemini (stills), Claude Code with skills and sub-agents
+- **To fetch:** sprite-stacking https://github.com/danielwh2/sprite-stacking (The slicer script and viewer under test.); Pillow and NumPy https://pypi.org/project/pillow/ (The only Python requirements for the slicer.)
+- **Field Notes line:** Four flat pixel-art views are intersected into a voxel solid and sliced into layers, giving a spinnable fake-3D sprite from pure NumPy.
+
+### H-0724 Show HN: AgentMall – Let your AI agent buy groceries
+2026-11-21, hn, https://getagentmall.com
+
+- **Mechanism:** A hosted service that exposes grocery checkout as an API for AI agents. Behind it sit scripted browser automations per retailer that handle logins, one-time codes and changing checkout pages, with test keys that run the flow without placing an order. The authors say about 70 percent of checkouts succeed across seven sites. Retailers detect this kind of automation through bot-management scoring, device and behaviour fingerprints and account risk checks, and they change checkout structure to break it.
+- **Claim:** Reliable agent checkout at grocery merchants with about 70 percent success, aiming for 90 percent.
+- **Testable:** no. Needs an account and API key, and a real checkout flow on retailer sites. Needs: An AgentMall account and test key..
+- **Idea on its own:** needs-a-run. Per-site checkout automation works but is brittle, and the 70 percent figure is self-reported.
+- **How it would be done:** The service is a maintained set of per-retailer browser scripts behind one API. Checking the claim would need a test key and repeated dry-run checkouts to measure success rate per retailer. The ongoing work is maintenance when a retailer changes its pages, which is a staffed job rather than something a script covers. Payment and card handling is the part users are right to distrust.
+- **To fetch:** AgentMall quickstart https://docs.getagentmall.com/quickstart (Documents test keys that run the checkout flow without placing an order.)
+- **Missing:** An independent measure of checkout success rate.
+- **Field Notes line:** A start-up sells agent checkout at grocers through per-site automations at about 70 percent success; the hard part is fragile pages and bot defences.
+
+### H-0723 Hook, Problem, Solution, Proof, CTA audit pass and the generic-opener ban list
+2026-11-21, vault, https://www.instagram.com/p/DfO05yDle-w/
+
+- **Mechanism:** A scoring checklist applied by a model to a draft reel script: does it have a hook, problem, solution, proof and call to action, and does the opener match a banned list of generic phrases. Failing items are flagged and the model rewrites them. It is a prompt-level audit with no external data or calls.
+- **Claim:** Three Claude skills for reel writing, including an audit pass and a generic-opener ban list.
+- **Testable:** no. A test needs model answers and there is no local LLM on this Mac. Needs: A hosted model call to score scripts..
+- **Idea on its own:** sound. A structural checklist and a banned-phrase list are simple, reviewable checks that cost almost nothing to add.
+- **How it would be done:** Write the five-part structure and the banned openers into a skill file. Run it over a handful of existing scripts and see which fail. Adding a plain string check for the ban list means part of it needs no model at all. The slides are unread, so the real ban list and exact criteria would need copying from them.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** The actual ban list, which sits on slides nobody has read.
+- **Field Notes line:** A reel-script audit is a checklist plus a banned-opener list run by a model; cheap to bolt onto an existing script step.
+
+### H-0722 The UK MOT postcode lottery: 8.4 points between best and worst
+2026-11-21, youtube, https://www.youtube.com/watch?v=mdzIXanauYk
+
+- **Mechanism:** Aggregate government MOT test records by region and compare pass rates for a fixed vehicle cohort, here cars built 2015 to 2019. The numbers come from the DVSA open MOT dataset, which lists every test with its result, vehicle age and test-station postcode area. The video states regional pass rates of 81.4 percent in Scotland and 89.8 percent in London.
+- **Claim:** MOT pass rates for 2015 to 2019 cars run from 81.4 percent in Scotland to 89.8 percent in London, an 8.4 point gap.
+- **Testable:** yes. Does the DVSA open MOT data reproduce a regional pass-rate gap of about 8.4 points for 2015 to 2019 cars? Queued as P-0522.
+- **Idea on its own:** needs-a-run. The claim is checkable on public data, but station mix and test type could explain a regional gap.
+- **How it would be done:** Pull one year of the DVSA anonymised MOT test results from the government open-data page. Filter to first-use years 2015 to 2019 and test type normal. Group by test-station postcode area, mapped to region, and compute pass share. Compare against the quoted 81.4 and 89.8 figures. Note whether the gap holds after splitting by fuel type, since that changes pass rates.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** DVSA MOT testing data https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b5f/anonymised-mot-tests-and-results (Open dataset of every MOT test with result and vehicle details.)
+- **Field Notes line:** A small MOT site claims an 8.4 point regional pass-rate gap for same-age cars, and the open DVSA data can confirm or sink it.
+
+### H-0721 ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain
+2026-11-21, arxiv, https://arxiv.org/abs/2611.26414
+
+- **Mechanism:** A frozen vision-language model acts as a slow planner that emits movement requests in natural language through a tool-calling interface. A separate fast action expert is trained to turn those requests into continuous motion. Both are then improved together with closed-loop reinforcement learning in simulated navigation episodes, so the VLM's weights barely change.
+- **Claim:** Beats SFT-based hierarchical navigation methods on VLN-CE benchmarks without fine-tuning the VLM on navigation data.
+- **Testable:** no. Needs a VLM, a simulator and RL training, none of which are on this Mac. Needs: GPU training, a navigation simulator and a hosted VLM..
+- **Idea on its own:** needs-a-run. Splitting a frozen planner from a trained executor over a language interface is plausible, but the gain is only shown on benchmarks.
+- **How it would be done:** Read the paper and note the tool-call vocabulary between brain and action expert. A reproduction needs the VLN-CE benchmark, a simulator and RL compute, which is a research job rather than a script. The transferable pattern is a frozen model that calls a small trained policy through named tools, which could be tried on game-bot work.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** VLN-CE benchmark https://github.com/jacobkrantz/VLN-CE (The continuous navigation benchmark the paper evaluates on.)
+- **Missing:** Training compute and a simulator setup to reproduce the result.
+- **Field Notes line:** A frozen vision model talks to a small trained motor controller in plain-language tool calls, and navigation improves without touching the big model's weights.
+
+### H-0720 kimtaeyoon83/mcp-server-youtube-transcript: This is an MCP server that allows you to directly download transcripts of Yo
+2026-11-21, github, https://github.com/kimtaeyoon83/mcp-server-youtube-transcript
+
+- **Mechanism:** An MCP server in TypeScript that takes a YouTube URL, Short or video ID, fetches the video's caption track directly from YouTube with no third-party dependency, and returns plain text or timestamped lines. It falls back to another language if the requested one is missing. The strip_ads option uses the video's chapter markers to cut sponsorship segments. An optional analyze_video tool sends a direct video URL to the TwelveLabs Pegasus model, which needs a key.
+- **Claim:** Downloads YouTube transcripts for an agent, with language fallback, timestamps and ad stripping, from 609 stars.
+- **Testable:** yes. Does get_transcript return a full-length transcript for a public video without a key, and does its word count land within 10 percent of the existing keyless pipeline's? Queued as P-0521.
+- **Idea on its own:** sound. Reading the caption track and using chapter markers to drop ads is a simple, well-understood approach.
+- **How it would be done:** Fetch the package with npm into the sandbox, call its transcript function on two or three public videos and save the output. Run the existing transcript pipeline on the same videos and compare word counts and gaps. Check the strip_ads claim on a video whose chapters mark a sponsor. Where captions are disabled, nothing here helps and the local transcription route still does the job.
+- **Stack already covers:** keyless YouTube search, oEmbed and transcript pipeline, local transcription
+- **To fetch:** mcp-server-youtube-transcript https://github.com/kimtaeyoon83/mcp-server-youtube-transcript (The package under test, installable with npm and no key for the transcript tool.)
+- **Field Notes line:** A 609-star MCP server fetches YouTube captions with no dependencies and cuts sponsor segments using chapter markers; worth comparing against our own transcript pipeline.
+
+### H-0718 ten free or cheap AI video generators
+2026-11-21, vault, https://www.instagram.com/p/Df7PXm4H9rr/
+
+- **Mechanism:** Hosted text-to-video and image-to-video diffusion models sold with a free daily credit allowance or a watermarked free tier. The user submits a prompt or a still, the vendor's GPU queue renders a few seconds of clip, and the credit meter limits volume. The tool names are on carousel slides nobody has read, so the specific products are unknown.
+- **Claim:** Ten AI video generators that are free or cheap, listed as a carousel.
+- **Testable:** no. The tool names are only on unseen slides and every generator needs an account or credits. Needs: Screenshots of the slides to learn the ten tool names, then an account per tool..
+- **Idea on its own:** needs-a-run. Free-tier generators are a real way to compare clip quality against Kling and Veo, but the list itself is unread.
+- **How it would be done:** Read the carousel slides (screenshot or OCR) to get the ten names. For each, record free allowance, watermark, clip length and resolution from its public pricing page. Generate one fixed prompt per tool and put the clips in a contact sheet beside what Kling, Seedance and Veo gave for the same prompt. Gemini stills can supply a shared starting frame for the image-to-video tools. A person has to create the accounts and pass any signup checks.
+- **Stack already covers:** Gemini (stills), HyperFrames (video compose, captions, render)
+- **Missing:** Nobody has read the slides, so the actual tool list does not exist yet.
+- **Field Notes line:** A carousel of ten free-tier AI video generators; the names sit on slides we have not read, so the first job is just reading them.
 
 ### H-0716 JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / Break down any short drama with AI: why it works, the script, every sh
 2026-11-20, github, https://github.com/JuneYaooo/rea-toon
@@ -6032,6 +6177,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0728 | 2026-11-21 | repurpose one piece into reels, shorts, threads and LinkedIn | open | sound | no |  |
+| H-0723 | 2026-11-21 | Hook, Problem, Solution, Proof, CTA audit pass and the generic-opener ban list | open | sound | no |  |
+| H-0718 | 2026-11-21 | ten free or cheap AI video generators | open | needs-a-run | no |  |
 | H-0714 | 2026-11-20 | Scraped-list cold voice, SMS and email blueprints for UK prospects | dead | unsound | no |  |
 | H-0710 | 2026-11-20 | Promptwise as our platform | dead | unsound | no |  |
 | H-0705 | 2026-11-20 | Generated creators posing as customers, watermark removal and engagement pods | dead | unsound | no |  |
@@ -6187,6 +6335,14 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0422 | 2026-11-21 | [motlab](https://github.com/staryone/motlab) | The video engine and its agent skills. | H-0730 (staryone/motlab: Video as code: canvas scenes rend) | shelf |
+| T-0421 | 2026-11-21 | [zpup](https://github.com/rxolve/zpup) | The library under test, with a playground at rxolve.github.io/zpup. | H-0729 (Show HN: Zpup – Zdog style 3D scenes in JSON, SVG ) | shelf |
+| T-0420 | 2026-11-21 | [Pillow and NumPy](https://pypi.org/project/pillow/) | The only Python requirements for the slicer. | H-0725 (danielwh2/sprite-stacking: Agent skill: turn four ) | shelf |
+| T-0419 | 2026-11-21 | [sprite-stacking](https://github.com/danielwh2/sprite-stacking) | The slicer script and viewer under test. | H-0725 (danielwh2/sprite-stacking: Agent skill: turn four ) | shelf |
+| T-0418 | 2026-11-21 | [AgentMall quickstart](https://docs.getagentmall.com/quickstart) | Documents test keys that run the checkout flow without placing an order. | H-0724 (Show HN: AgentMall – Let your AI agent buy groceri) | shelf |
+| T-0417 | 2026-11-21 | [DVSA MOT testing data](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b5f/anonymised-mot-tests-and-results) | Open dataset of every MOT test with result and vehicle details. | H-0722 (The UK MOT postcode lottery: 8.4 points between be) | shelf |
+| T-0416 | 2026-11-21 | [VLN-CE benchmark](https://github.com/jacobkrantz/VLN-CE) | The continuous navigation benchmark the paper evaluates on. | H-0721 (ZeroVLN: Learning to Navigate without Supervised F) | shelf |
+| T-0415 | 2026-11-21 | [mcp-server-youtube-transcript](https://github.com/kimtaeyoon83/mcp-server-youtube-transcript) | The package under test, installable with npm and no key for the transcript tool. | H-0720 (kimtaeyoon83/mcp-server-youtube-transcript: This i) | shelf |
 | T-0414 | 2026-11-20 | [PySceneDetect](https://github.com/Breakthrough/PySceneDetect) | Free shot-boundary detection to feed the frame grids. | H-0716 (JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / ) | shelf |
 | T-0413 | 2026-11-20 | [VIDEO.md format](https://videomd.github.io/videomd/) | The open format the output is written in. | H-0716 (JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / ) | shelf |
 | T-0412 | 2026-11-20 | [rea-toon](https://github.com/JuneYaooo/rea-toon) | The breakdown CLI and skill. | H-0716 (JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / ) | shelf |
@@ -6606,6 +6762,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0731 | 2026-11-21 | youtube | [Which car fails its MOT the least? (UK 2025) #shorts](https://www.youtube.com/watch?v=odRxggAh3G8) | Transcript unavailable and it covers the same MOT theme as the better item. |
+| H-0727 | 2026-11-21 | youtube | [Martin Has Beaten The Worst Lichess Bot?](https://www.youtube.com/watch?v=co33P6bb0eg) | Entertainment clip of a bot match with no mechanism. |
+| H-0719 | 2026-11-21 | hn | [Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?](https://news.ycombinator.com/item?id=50583761) | Personal job-search advice thread with no mechanism to record. |
 | H-0717 | 2026-11-20 | hn | [Claude Gets Hella Paranoid](https://news.ycombinator.com/item?id=50543947) | A single anecdote about Claude asking for proof of identity, with no mechanism to test. |
 | H-0715 | 2026-11-20 | hn | [Ask HN: Where do you see Software in 5 years?](https://news.ycombinator.com/item?id=50565484) | Opinion thread with no mechanism. |
 | H-0712 | 2026-11-20 | github | [diego3g/craft: Design skills for AI agents: /craft-setup writes your design brie](https://github.com/diego3g/craft) | A bundle of design-skill prompts routed by a session hook, with no new mechanism beyond the skills pattern the stack alr |

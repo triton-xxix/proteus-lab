@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 426 works, 9 broken, 43 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (18 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,10 @@ Verdicts so far: 426 works, 9 broken, 43 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
+| P-0521 | mcp-server-youtube-transcript: does it return a full transcript keyless, within 10% of our pipeline's word count? | harvest | none |  | 0 | 20 min |
+| P-0522 | MOT regional gap: does DVSA open data give an 8.4 point pass-rate spread for 2015 to 2019 cars? | harvest | none |  | 0 | 30 min |
+| P-0523 | sprite-stacking: does the slicer turn a synthetic four-view sheet into a 36-layer strip and viewer? | harvest | none |  | 0 | 15 min |
+| P-0524 | Zpup: does it keep a small object visible on a big floor at four angles, with no script in the SVG? | harvest | none |  | 0 | 20 min |
 
 ## Verdicts (501)
 

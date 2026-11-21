@@ -1,5 +1,5 @@
 {
- "next_id": 521,
+ "next_id": 525,
  "items": [
   {
    "id": "P-0001",
@@ -13316,6 +13316,86 @@
     "at": "2026-11-21T12:44:29+0000",
     "hit": false
    }
+  },
+  {
+   "id": "P-0521",
+   "title": "mcp-server-youtube-transcript: does it return a full transcript keyless, within 10% of our pipeline's word count?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0522",
+   "title": "MOT regional gap: does DVSA open data give an 8.4 point pass-rate spread for 2015 to 2019 cars?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-21",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0523",
+   "title": "sprite-stacking: does the slicer turn a synthetic four-view sheet into a 36-layer strip and viewer?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-21",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0524",
+   "title": "Zpup: does it keep a small object visible on a big floor at four angles, with no script in the SVG?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
