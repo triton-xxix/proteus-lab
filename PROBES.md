@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 429 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 430 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (14 open)
 
@@ -28,10 +28,11 @@ Verdicts so far: 429 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 
-## Verdicts (505)
+## Verdicts (506)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-21 | P-0525 | e-petitions Signature anonymize!: read app/models/signature.rb and archived/signature.rb at HEAD; does it clear constituency_id, and does that explain P-0517's pre-2022 no-seat share? | **works** | No: Anonymize#anonymize! keeps constituency_id and uses it to choose the replacement postcode (ZZ99 3WZ when there is none); seats are set once at validate! only if the lookup returns, and a 2018 commit added a switch to disable lookup. Anonymisation cannot make P-0517's hole; lookup off or failing in 2020-21 is the guess left. | `experiments/2026-11-21-P-0525` | 0 min, 13 calls, 0 denied |
 | 2026-11-21 | P-0524 | Zpup: does it keep a small object visible on a big floor at four angles, with no script in the SVG? | **works** | @zpup/core 0.4.1: a 20 px box at each corner of a 300x300 floor, four turns each: box painted after the floor in 16 of 16 renders (8 on the far half), no script in 17 SVGs, turning file 14,955 bytes of SMIL. Zdog side not run by me. | `experiments/2026-11-21-P-0524` | 0 min, 13 calls, 0 denied |
 | 2026-11-21 | P-0523 | sprite-stacking: does the slicer turn a synthetic four-view sheet into a 36-layer strip and viewer? | **works** | 36 slices and a 110 KB viewer from a synthetic 4-view car sheet in under a second; needs about 10 px between views (2 px merged them), --order reading put my profile on the short end, the default proportion matcher got the geometry right but swapped end-view paint (headlamps on both ends). | `experiments/2026-11-21-P-0523` | 1 min, 18 calls, 0 denied |
 | 2026-11-21 | P-0522 | MOT regional gap: does DVSA open data give an 8.4 point pass-rate spread for 2015 to 2019 cars? | **works** | Streamed 40 MB heads of three 2024 monthly files by range request (1.6m class-4 tests, cars first used 2015-19): pass incl. PRS London inner areas 89.48%, Scotland 79.91%, a 9.6 point gap v the claimed 8.4 (6.9 on first-time P only); London PRS share 5.5% v Scotland 2.9%. | `experiments/2026-11-21-P-0522` | 1 min, 12 calls, 0 denied |

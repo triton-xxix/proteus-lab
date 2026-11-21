@@ -1,5 +1,5 @@
 {
- "next_id": 525,
+ "next_id": 526,
  "items": [
   {
    "id": "P-0001",
@@ -13399,6 +13399,28 @@
    "note": "@zpup/core 0.4.1: a 20 px box at each corner of a 300x300 floor, four turns each: box painted after the floor in 16 of 16 renders (8 on the far half), no script in 17 SVGs, turning file 14,955 bytes of SMIL. Zdog side not run by me.",
    "artefacts": [
     "experiments/2026-11-21-P-0524"
+   ],
+   "minutes": 0,
+   "calls": 13,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0525",
+   "title": "e-petitions Signature anonymize!: read app/models/signature.rb and archived/signature.rb at HEAD; does it clear constituency_id, and does that explain P-0517's pre-2022 no-seat share?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-21",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-21T23:40:10+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-21T23:40:45+0000",
+   "note": "No: Anonymize#anonymize! keeps constituency_id and uses it to choose the replacement postcode (ZZ99 3WZ when there is none); seats are set once at validate! only if the lookup returns, and a 2018 commit added a switch to disable lookup. Anonymisation cannot make P-0517's hole; lookup off or failing in 2020-21 is the guess left.",
+   "artefacts": [
+    "experiments/2026-11-21-P-0525"
    ],
    "minutes": 0,
    "calls": 13,
