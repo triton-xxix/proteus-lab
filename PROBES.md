@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 425 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
+Verdicts so far: 426 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,13 +27,13 @@ Verdicts so far: 425 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0518 | Draw bump on P-0511's model: fit one draw multiplier on 2010-2022 non-friendly internationals by log-likelihood (sandbox/intl-results.csv), fix the Bosnia alias, rescore the judgement book's scored rows; how much of the 0.043 Brier gap to the market does it close | refill | none |  | 1 (in progress) | 20 min |
 | P-0519 | Petitions step, leg three: GitHub API commits on alphagov/e-petitions between 2021-12-01 and 2022-03-01 (keyless, api.github.com), find the change that cut the unplaced-constituency share from 1.5% to 0.6% (postcode lookup, ONS data, backfill), and check one Jan 2022 petition against it | desk | none |  | 0 | 15 min |
 
-## Verdicts (498)
+## Verdicts (499)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-21 | P-0518 | Draw bump on P-0511's model: fit one draw multiplier on 2010-2022 non-friendly internationals by log-likelihood (sandbox/intl-results.csv), fix the Bosnia alias, rescore the judgement book's scored rows; how much of the 0.043 Brier gap to the market does it close | **works** | Draw bump closes 4.8% of the gap: fitted multiplier 1.04 on 8,132 non-friendly matches 2010-22 (Poisson calls 21.3% draws, actual 21.9%), Brier 0.5889 to 0.5869 on 57 rows (alias fixed, was 55) v market 0.5469. Shot said under a quarter closed (hit) at 0.570 to 0.580 (miss, base model is 0.589 with the two rows back). The book has 18 draws in 57, 32%, which no history-fitted bump sees. Next: close (the gap is ratings, not draw shape). | `experiments/2026-11-21-P-0518` | 0 min, 7 calls, 0 denied |
 | 2026-11-21 | P-0517 | Petitions hole, leg two of P-0516: every archived parliament-4 petition over 10,000 signatures (all list pages), unplaced UK share against signature count and opening month, to test whether the 2020-21 peak tracks petition size (load) or the calendar | **works** | Calendar, not size: on the 400 largest 2019-24 petitions the unplaced UK share is 2.7% to 3.1% in every size band for Mar 2020 to Jun 2021, 0.7% to 0.8% for 2023-24, and it drops as a step, Jan 2022 1.51% to Feb 2022 0.62%, flat after. Shot said 2x or more in each band with no size slope; measured 3.7x to 4.6x, flat. Hit, and it overturns my P-0516 load guess. Next: deepen (queue a read of alphagov/e-petitions commits Jan to Feb 2022 for the change that closed it). | `experiments/2026-11-21-P-0517` | 3 min, 6 calls, 0 denied |
 | 2026-11-21 | P-0516 | Petitions constituency gap before the 2024 boundaries: the persona check.py logic on the top 40 archived petitions of parliament 4 (2019-24) and 3 (2017-19) via petition.parliament.uk/archived/petitions.json?parliament=N, keyless; UK row minus constituency sum against the 0.47% on today's open petitions | **works** | Unplaced UK signatures 2.64% on 40 archived 2019-24 petitions (401,214 of 15.2m) and 1.68% on 2017-19, against 0.47% open now; all 80 list 650 seats, no negative gaps. Shot said 0.3% to 0.8%: a clear miss on the number. By opening year the hole peaks in 2020 (3.0%) and 2021 (3.7%) and is back at 0.6% to 0.7% in 2022-24 under the old seats, so not a boundary artefact; lockdown surge load is my untested guess. Next: deepen (queue a by-month 2020-21 pull across all archived pages against signature count, to test the load guess). | `experiments/2026-11-21-P-0516` | 1 min, 7 calls, 0 denied |
 | 2026-11-21 | P-0515 | Heatmap line, leg two: read 25 more YouTube videos aimed at 30k to 80k views (search plus filter, yt-dlp -J --skip-download, keyless) to narrow P-0506's 38,676 to 58,618 bracket, and split by upload age (over five years v newer) to test whether old videos need more views for a most-replayed graph | **works** | Line at about 52,000 views: pooled with P-0506 (55 videos), none with a graph at 51,496 or below, all with one from 52,257 up, one crossover (52,222 without, a 55-min video). Shot said lowest-with 40k to 50k; measured 51,534, a near miss. Age: old (pre Nov 2021) and new videos share the same line on 7 v 18, so my old-needs-more call missed; the 2013 outlier at 339,919 stays unexplained. Next: close (filter rule for a moment-finder is skip under 52k). | `experiments/2026-11-21-P-0515` | 3 min, 8 calls, 0 denied |
