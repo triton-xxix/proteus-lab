@@ -54,6 +54,7 @@ Links, with the date each was read.
 | 2026-10-31 | Automated AI review posting, and how the platforms and the UK regulator catch it | researched, public sources only (CMA208, Yelp and Google 2025 reports, Amazon); nothing posted or run | `intel/automated-ai-review-posting.md` |
 | 2026-11-07 | Synthetic influencer personas sold as undetectable (EasyInfluencers.ai), and how they are caught | researched, public sources only; two claims secondary and unverified; nothing generated or posted | `intel/synthetic-influencer-personas.md` |
 | 2026-11-18 | Zupria, and courses that teach an "AI OnlyFans model" (owed from 14 Nov, F-0100) | researched, public sources only, search summaries not primary pages for the platform rules; nothing bought, generated or posted | `intel/zupria-ai-model-course.md` |
+| 2026-11-21 | SEAR, and whether audio deepfake detectors can show the acoustic evidence for a verdict | researched, paper read in full, repo and dataset confirmed public; no audio run | `intel/sear-audio-deepfake-evidence.md` |
 
 ## Feed
 
