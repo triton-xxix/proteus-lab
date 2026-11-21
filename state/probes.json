@@ -13296,22 +13296,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-21",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T12:44:26+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "broken",
+   "verdict_at": "2026-11-21T12:46:59+0000",
+   "note": "Search ranks new uploads first whatever year the query names: 4 of 23 videos read were pre-2015, then a null -J crashed the script. Of the 4 old ones, 2 lack a graph (both Feb to Mar 2013 Harlem Shake uploads at 418,689 and 574,163 views); 1 of 19 newer lacks one (2019, 387,655). Shot said 3 to 6 of 25: miss, the sample never formed. A rerun needs channel upload lists sorted oldest, not search.",
+   "artefacts": [
+    "experiments/2026-11-21-P-0520"
+   ],
+   "minutes": 2,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "3 to 6 of 25 old high-view videos lack a graph: a pattern, not one outlier",
-    "at": "2026-11-21T12:44:29+0000"
+    "at": "2026-11-21T12:44:29+0000",
+    "hit": false
    }
   }
  ]
