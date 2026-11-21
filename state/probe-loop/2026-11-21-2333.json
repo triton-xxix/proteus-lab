@@ -17,7 +17,7 @@
   "P-0526",
   "P-0527"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-21T23:45:10+0000",
+ "stop_reason": "queue empty and the sources list is at its reserve of 3 (rows 218 to 220 added tonight are for the next night), 126 of 150 calls used",
  "refills": 5
 }
