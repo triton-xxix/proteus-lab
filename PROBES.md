@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 426 works, 9 broken, 43 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 426 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,15 +27,15 @@ Verdicts so far: 426 works, 9 broken, 43 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0521 | mcp-server-youtube-transcript: does it return a full transcript keyless, within 10% of our pipeline's word count? | harvest | none |  | 0 | 20 min |
 | P-0522 | MOT regional gap: does DVSA open data give an 8.4 point pass-rate spread for 2015 to 2019 cars? | harvest | none |  | 0 | 30 min |
 | P-0523 | sprite-stacking: does the slicer turn a synthetic four-view sheet into a 36-layer strip and viewer? | harvest | none |  | 0 | 15 min |
 | P-0524 | Zpup: does it keep a small object visible on a big floor at four angles, with no script in the SVG? | harvest | none |  | 0 | 20 min |
 
-## Verdicts (501)
+## Verdicts (502)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-21 | P-0521 | mcp-server-youtube-transcript: does it return a full transcript keyless, within 10% of our pipeline's word count? | **broken** | npm latest is 0.1.1 (Nov 2024), not the README's version; on 4 videos our pipeline transcribed (39 to 487 words) it returned success with 0 words every time, so 0 of 4 within 10%; both agreed on the one captions-off video. Silent empty success. | `experiments/2026-11-21-P-0521` | 1 min, 15 calls, 0 denied |
 | 2026-11-21 | P-0520 | Old high-view videos and the heatmap: 25 pre-2015 YouTube uploads at 150k to 1m views (yt-dlp flat search filtered on views, -J --skip-download, keep upload before 2015), count how many lack a most-replayed graph, testing whether P-0506's 2013 outlier is one video or a pattern | **broken** | Search ranks new uploads first whatever year the query names: 4 of 23 videos read were pre-2015, then a null -J crashed the script. Of the 4 old ones, 2 lack a graph (both Feb to Mar 2013 Harlem Shake uploads at 418,689 and 574,163 views); 1 of 19 newer lacks one (2019, 387,655). Shot said 3 to 6 of 25: miss, the sample never formed. A rerun needs channel upload lists sorted oldest, not search. | `experiments/2026-11-21-P-0520` | 2 min, 6 calls, 0 denied |
 | 2026-11-21 | P-0519 | Petitions step, leg three: GitHub API commits on alphagov/e-petitions between 2021-12-01 and 2022-03-01 (keyless, api.github.com), find the change that cut the unplaced-constituency share from 1.5% to 0.6% (postcode lookup, ONS data, backfill), and check one Jan 2022 petition against it | **not-worth-it** | 0 of 68 e-petitions commits from Nov 2021 to Mar 2022 name constituencies, postcodes, ONS or boundaries; the one candidate (0fb8db0fa0, 2 Mar 2022) validates the country code, not the seat. Shot said no plain commit, at 0.45: hit. The step is likely data-side (seat lookup table outside git) or the Feb to Mar 2022 anonymisation run, whose diffs I did not read; nothing rides on it, so I stop here. | `experiments/2026-11-21-P-0519` | 0 min, 8 calls, 0 denied |
 | 2026-11-21 | P-0518 | Draw bump on P-0511's model: fit one draw multiplier on 2010-2022 non-friendly internationals by log-likelihood (sandbox/intl-results.csv), fix the Bosnia alias, rescore the judgement book's scored rows; how much of the 0.043 Brier gap to the market does it close | **works** | Draw bump closes 4.8% of the gap: fitted multiplier 1.04 on 8,132 non-friendly matches 2010-22 (Poisson calls 21.3% draws, actual 21.9%), Brier 0.5889 to 0.5869 on 57 rows (alias fixed, was 55) v market 0.5469. Shot said under a quarter closed (hit) at 0.570 to 0.580 (miss, base model is 0.589 with the two rows back). The book has 18 draws in 57, 32%, which no history-fitted bump sees. Next: close (the gap is ratings, not draw shape). | `experiments/2026-11-21-P-0518` | 0 min, 7 calls, 0 denied |

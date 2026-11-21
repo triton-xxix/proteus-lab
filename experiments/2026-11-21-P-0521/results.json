@@ -1,0 +1,91 @@
+{
+ "server": "npm @kimtaeyoon83/mcp-server-youtube-transcript 0.1.1",
+ "server_info": {
+  "name": "mcp-servers-youtube-transcript",
+  "version": "0.1.0"
+ },
+ "tools": [
+  "get_transcript"
+ ],
+ "tool_args": [
+  [
+   "url",
+   "lang"
+  ]
+ ],
+ "rows": [
+  {
+   "video": "co33P6bb0eg",
+   "mcp": {
+    "secs": 0.75,
+    "ok": true,
+    "words": 0,
+    "chars": 0
+   },
+   "ours": {
+    "ok": true,
+    "words": 52,
+    "segments": 8
+   },
+   "ratio": 0.0
+  },
+  {
+   "video": "mdzIXanauYk",
+   "mcp": {
+    "secs": 0.61,
+    "ok": true,
+    "words": 0,
+    "chars": 0
+   },
+   "ours": {
+    "ok": true,
+    "words": 64,
+    "segments": 10
+   },
+   "ratio": 0.0
+  },
+  {
+   "video": "odRxggAh3G8",
+   "mcp": {
+    "secs": 0.57,
+    "ok": false,
+    "error": "{'code': -32603, 'message': 'MCP error -32603: Failed to retrieve transcript: Could not find captions for video: odRxggAh3G8'}"
+   },
+   "ours": {
+    "ok": false,
+    "error": "TranscriptsDisabled: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=odRxggAh3G8! This is most likely caused by:\n\nSubtitles are disabled for this vide"
+   },
+   "ratio": null
+  },
+  {
+   "video": "dQw4w9WgXcQ",
+   "mcp": {
+    "secs": 0.61,
+    "ok": true,
+    "words": 0,
+    "chars": 0
+   },
+   "ours": {
+    "ok": true,
+    "words": 487,
+    "segments": 61
+   },
+   "ratio": 0.0
+  },
+  {
+   "video": "jNQXAC9IVRw",
+   "mcp": {
+    "secs": 0.76,
+    "ok": true,
+    "words": 0,
+    "chars": 0
+   },
+   "ours": {
+    "ok": true,
+    "words": 39,
+    "segments": 6
+   },
+   "ratio": 0.0
+  }
+ ]
+}

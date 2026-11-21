@@ -1,0 +1,16 @@
+{
+ "key": "2026-11-21-2333",
+ "date": "2026-11-21",
+ "started_at": "2026-11-21T23:33:13+0000",
+ "deadline": "2026-11-22T00:33:13+0000",
+ "deadline_how": "nightly preflight 23:24 plus 80 min, capped at the loop's own 60 min",
+ "max_calls": 150,
+ "max_probes": 10,
+ "session": "44dd8d9b",
+ "run_log": "/Users/triton/PROTEUS/state/runs/2026-11-21.md",
+ "probes": [
+  "P-0521"
+ ],
+ "stopped_at": null,
+ "stop_reason": null
+}
