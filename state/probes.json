@@ -13093,22 +13093,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-21",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T00:01:25+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-21T00:02:18+0000",
+   "note": "Read on the other six vacancies, P-0499s appointees passed 3x their own median the day before someone else was announced on 7 of 42 pairs (shot: at most 6), median 1.26x, against 7 of 7 and median 98x when it was their own job. Four of the seven were the manager's own appointment week (Tudor 420x on Forest's day); without them 3 of 38, all under 5x, while the lowest appointee was 11.5x. So size separates the appointee better than the 3x line. The control is managers in the news, not names linked to that job, which I could not pull keyless in time. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-20-P-0513"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "at most 6 of 42 not-appointed manager-vacancy pairs at 3x their own median the day before the appointment, against 7 of 7 appointees",
-    "at": "2026-11-21T00:01:29+0000"
+    "at": "2026-11-21T00:01:29+0000",
+    "hit": true
    }
   }
  ]

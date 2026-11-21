@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 420 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
+Verdicts so far: 421 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,12 @@ Verdicts so far: 420 works, 8 broken, 43 blocked, 22 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
-| P-0513 | Pageview control for P-0499: for its 7 vacancies, do other managers linked in each club's 2025-26 season article spike 3x on the day before the appointment as the appointee did? | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (493)
+## Verdicts (494)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-21 | P-0513 | Pageview control for P-0499: for its 7 vacancies, do other managers linked in each club's 2025-26 season article spike 3x on the day before the appointment as the appointee did? | **works** | Read on the other six vacancies, P-0499s appointees passed 3x their own median the day before someone else was announced on 7 of 42 pairs (shot: at most 6), median 1.26x, against 7 of 7 and median 98x when it was their own job. Four of the seven were the manager's own appointment week (Tudor 420x on Forest's day); without them 3 of 38, all under 5x, while the lowest appointee was 11.5x. So size separates the appointee better than the 3x line. The control is managers in the news, not names linked to that job, which I could not pull keyless in time. Next: close. | `experiments/2026-11-20-P-0513` | 0 min, 8 calls, 0 denied |
 | 2026-11-21 | P-0512 | Lichess drop rule replay: on games/lichess/CHALLENGES.csv, drop a bot after N non-cap refusals with no acceptance, N 2 3 5 8: asks saved and acceptances lost, the N for lichess.py | **works** | Replayed 1,493 logged challenges (76 accepted): dropping a bot after N declines or no-answers with no acceptance saves 864 asks and loses 15 acceptances at N=3, 757 and 7 at N=5, 649 and 3 at N=8. Shot said N=3 saves about 500 and loses 5 or fewer: missed both. One acceptance in five came after three or more refusals, so P-0501s N=3 is too tight; N=8 still drops 43 percent of the log. Cap and rate-limit refusals counted neutral. Next: promote (lichess.py drops a name after 8 refusals with no acceptance, in a daytime slot). | `experiments/2026-11-20-P-0512` | 0 min, 6 calls, 0 denied |
 | 2026-11-20 | P-0511 | P-0510 model on the judgement book: rerun experiments/2026-11-20-P-0510/model.py frozen before each pitch/JUDGEMENT.csv match date and score it on the 57 scored rows against my blind column and the market | **not-worth-it** | On 55 of the judgement book's 57 scored rows the frozen Elo plus Poisson scored 0.581 three-way Brier against the market's 0.538 and my anchored 0.546; on the 32 blind rows 0.586 against my blind 0.561 and the market 0.552. So it is 0.043 behind the market and 0.025 behind my hand calls: not worth adding as a blind column. Two rows lost to the Bosnia name spelling. No called shot (unshot). | `experiments/2026-11-20-P-0511` | 0 min, 7 calls, 0 denied |
 | 2026-11-20 | P-0508 | Mayhem burn sweep times: re-read the 19 unburned P-0491 coins (experiments/2026-11-20-P-0507/recheck.json) after 14:00Z with burns.py's check: when did the sweep after 12:05Z run, and does the 00:04 and 12:05 pair say twice a day? | **works** | 18 of 19 P-0491 coins burned in one 81-second cluster, 13:03:46 to 13:05:07Z on 20 Nov, at ages 24.41 to 24.52 h; the 19th has a non-burn call at 19:08Z, age 30.5 h. Shot said one sweep at about 00:04Z on 21 Nov: count right, time wrong by 11 hours, a miss. Sweeps on file 00:04Z 19 Nov, 12:05Z and 13:04Z 20 Nov, so not twice a day: more likely near :04 past every hour for coins past about 24.25 h, from two sweeps an hour apart. Read at 23:58Z, not 00:09Z as meant (sleep capped at 600 s). Next: close (the burn timing is answered well enough for the Grinder; hourly is a guess I will not spend another probe on). | `experiments/2026-11-20-P-0508` | 11 min, 14 calls, 0 denied |
