@@ -1,5 +1,5 @@
 {
- "next_id": 527,
+ "next_id": 528,
  "items": [
   {
    "id": "P-0001",
@@ -13446,6 +13446,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0527",
+   "title": "YouTube Shorts heatmap: of 25 Shorts above 100,000 views read with yt-dlp -J, how many carry a most-replayed heatmap, beside P-0515's 52,000-view line for normal videos?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-21",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-21T23:42:05+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-21T23:45:02+0000",
+   "note": "20 of 25 short videos at 130k to 48m views carry a heatmap; of the 12 true Shorts (uploaded Nov 2020 on) 10 do, the two without at 281k and 22m views, so no view line as P-0515 found for long-form (every one above 52k). 13 of the 25 predate Shorts; search mixes them in.",
+   "artefacts": [
+    "experiments/2026-11-21-P-0527"
+   ],
+   "minutes": 2,
+   "calls": 10,
    "denied": [],
    "luke": false
   }
