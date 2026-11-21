@@ -13209,22 +13209,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-21",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-21T12:38:30+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-21T12:41:47+0000",
+   "note": "Calendar, not size: on the 400 largest 2019-24 petitions the unplaced UK share is 2.7% to 3.1% in every size band for Mar 2020 to Jun 2021, 0.7% to 0.8% for 2023-24, and it drops as a step, Jan 2022 1.51% to Feb 2022 0.62%, flat after. Shot said 2x or more in each band with no size slope; measured 3.7x to 4.6x, flat. Hit, and it overturns my P-0516 load guess. Next: deepen (queue a read of alphagov/e-petitions commits Jan to Feb 2022 for the change that closed it).",
+   "artefacts": [
+    "experiments/2026-11-21-P-0517"
+   ],
+   "minutes": 3,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "calendar wins: within the same size band, 2020-21 petitions run at least twice the unplaced share of 2022-24 ones; size alone shows little slope",
-    "at": "2026-11-21T12:38:38+0000"
+    "at": "2026-11-21T12:38:38+0000",
+    "hit": true
    }
   },
   {
