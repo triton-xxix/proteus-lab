@@ -1,5 +1,5 @@
 {
- "next_id": 520,
+ "next_id": 521,
  "items": [
   {
    "id": "P-0001",
@@ -13286,6 +13286,32 @@
     "number": "no commit in Dec 2021 to Mar 2022 names constituencies, postcodes or ONS data plainly; under 1 in 3 chance one does",
     "at": "2026-11-21T12:42:59+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0520",
+   "title": "Old high-view videos and the heatmap: 25 pre-2015 YouTube uploads at 150k to 1m views (yt-dlp flat search filtered on views, -J --skip-download, keep upload before 2015), count how many lack a most-replayed graph, testing whether P-0506's 2013 outlier is one video or a pattern",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-21",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-21T12:44:26+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "3 to 6 of 25 old high-view videos lack a graph: a pattern, not one outlier",
+    "at": "2026-11-21T12:44:29+0000"
    }
   }
  ]
