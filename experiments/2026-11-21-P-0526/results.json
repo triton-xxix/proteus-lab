@@ -1,0 +1,90 @@
+{
+ "source": "/Users/triton/PROTEUS/sandbox/intl-results.csv",
+ "last_date": "2026-11-17",
+ "table": {
+  "NL group stage 2018-26": {
+   "n": 768,
+   "draws": 194,
+   "rate": 25.3,
+   "se_pts": 1.6
+  },
+  "NL last matchday (either side's last)": {
+   "n": 144,
+   "draws": 40,
+   "rate": 27.8,
+   "se_pts": 3.7
+  },
+  "NL earlier matchdays": {
+   "n": 624,
+   "draws": 154,
+   "rate": 24.7,
+   "se_pts": 1.7
+  },
+  "NL matchday 1": {
+   "n": 145,
+   "draws": 33,
+   "rate": 22.8,
+   "se_pts": 3.5
+  },
+  "NL matchday 2": {
+   "n": 128,
+   "draws": 29,
+   "rate": 22.7,
+   "se_pts": 3.7
+  },
+  "NL matchday 3": {
+   "n": 144,
+   "draws": 42,
+   "rate": 29.2,
+   "se_pts": 3.8
+  },
+  "NL matchday 4": {
+   "n": 127,
+   "draws": 39,
+   "rate": 30.7,
+   "se_pts": 4.1
+  },
+  "NL matchday 5": {
+   "n": 112,
+   "draws": 22,
+   "rate": 19.6,
+   "se_pts": 3.8
+  },
+  "NL matchday 6": {
+   "n": 112,
+   "draws": 29,
+   "rate": 25.9,
+   "se_pts": 4.1
+  },
+  "NL finals and play-offs": {
+   "n": 46,
+   "draws": 9,
+   "rate": 19.6,
+   "se_pts": 5.8
+  },
+  "World Cup qualifiers, UEFA v UEFA 2018-26": {
+   "n": 462,
+   "draws": 88,
+   "rate": 19.0,
+   "se_pts": 1.8
+  },
+  "Euro qualifiers 2018-26": {
+   "n": 501,
+   "draws": 85,
+   "rate": 17.0,
+   "se_pts": 1.7
+  },
+  "Friendlies, UEFA v UEFA 2018-26": {
+   "n": 479,
+   "draws": 126,
+   "rate": 26.3,
+   "se_pts": 2.0
+  },
+  "All internationals 2010-22 (P-0518 base)": {
+   "n": 8132,
+   "draws": 1780,
+   "rate": 21.9,
+   "se_pts": 0.5
+  }
+ }
+}

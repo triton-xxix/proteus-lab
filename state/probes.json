@@ -1,5 +1,5 @@
 {
- "next_id": 526,
+ "next_id": 527,
  "items": [
   {
    "id": "P-0001",
@@ -13424,6 +13424,28 @@
    ],
    "minutes": 0,
    "calls": 13,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0526",
+   "title": "Nations League draw rate: from sandbox/intl-results.csv, draws in UEFA Nations League 2018-26 v World Cup and Euro qualifiers in the same years, and NL last group matchday v earlier; one table",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-21",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-21T23:41:06+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-21T23:41:38+0000",
+   "note": "NL group stage 2018-26 draws 25.3% (194 of 768) v UEFA-only World Cup qualifiers 19.0% and Euro qualifiers 17.0%, about friendlies' 26.3%; last matchday 27.8% v earlier 24.7%, under one se, no end-of-group rise. Explains part of the judgement book's 32% against P-0518's 21.9% base.",
+   "artefacts": [
+    "experiments/2026-11-21-P-0526"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }
