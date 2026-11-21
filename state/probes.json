@@ -1,5 +1,5 @@
 {
- "next_id": 516,
+ "next_id": 517,
  "items": [
   {
    "id": "P-0001",
@@ -13170,6 +13170,32 @@
     "number": "line near 45,000 views: lowest with a heatmap 40k to 50k, and over-five-year videos without one at higher views than new ones",
     "at": "2026-11-21T12:32:03+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0516",
+   "title": "Petitions constituency gap before the 2024 boundaries: the persona check.py logic on the top 40 archived petitions of parliament 4 (2019-24) and 3 (2017-19) via petition.parliament.uk/archived/petitions.json?parliament=N, keyless; UK row minus constituency sum against the 0.47% on today's open petitions",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-21",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-21T12:36:17+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "parliament 4 unplaced UK share 0.3% to 0.8%, about the same as the 0.47% on open petitions, so no boundary jump",
+    "at": "2026-11-21T12:36:22+0000"
    }
   }
  ]
