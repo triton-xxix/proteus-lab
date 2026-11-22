@@ -1,5 +1,5 @@
 {
- "next_id": 534,
+ "next_id": 535,
  "items": [
   {
    "id": "P-0001",
@@ -13634,6 +13634,32 @@
     "number": "either-article spikes catch 19 of 28 Kp 7+ days, with 5 more calm-day spikes than Aurora alone",
     "at": "2026-11-22T12:44:35+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0534",
+   "title": "MOT gap matched on miles: P-0530's sample (DVSA 2024 zip, three months, 40 MB heads, keyless), class 4 cars first used 2015 to 2019, binned by test_mileage per year of age (under 5k, 5 to 8k, 8 to 11k, 11 to 14k, 14k and over); London minus Scotland pass rate within each bin and reweighted to Scotland's bin mix. How much of P-0530's 8.3 points is left?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-22",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-22T12:45:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "number": "mileage-matched London minus Scotland gap about 7 points incl PRS, against 9.6 raw",
+    "at": "2026-11-22T12:45:50+0000"
    }
   }
  ]
