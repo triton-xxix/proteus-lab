@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 446 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 447 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (15 open)
 
@@ -29,10 +29,11 @@ Verdicts so far: 446 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | desk | none | 2026-11-23 | 0 | 20 min |
 
-## Verdicts (523)
+## Verdicts (524)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-22 | P-0544 | Comet C/2023 A3 pageviews under its 2024 title: weeks of lead and a one-day half-life like the eclipses, or a late long tail like the storms? | **works** | Under its 2024 title C/2023 A3 (Tsuchinshan-ATLAS) the comet page sat above 2x baseline for 46 days before 12 Oct, peaked 3 days late on 15 Oct at 78k (289x), halved in 3 days and stayed above 2x for 31: scheduled lead, news-like tail. The current title 404s for 2024. | `experiments/2026-11-22-P-0544` | 0 min, 5 calls, 0 denied |
 | 2026-11-22 | P-0543 | skill-distill extract_session.py patched: with both leak fixes, how many system-text marker lines survive across five Proteus transcripts, before and after? | **works** | With both fixes, marker lines across five Proteus transcripts fall from 14 to 0 (raw 140). New edge: stripping the wrapper leaves the task empty on 4 of 5 scheduled sessions and makes a task-notification the task on the fifth; 1 email shape and 2 ~/.claude paths stay inside tool text. | `experiments/2026-11-22-P-0543` | 0 min, 5 calls, 0 denied |
 | 2026-11-22 | P-0542 | PumpSwap curve graduates over seven nights of Grinder snapshots: share of pump-suffix mints reading 99%+ LP locked, and any that fell after graduation | **works** | Across seven nights (16 to 22 Nov) 378 of 378 PumpSwap rows for pump-suffix mints read 99%+ LP locked, 235 mints; none of the 44 seen twice ever fell. The low readings on PumpSwap are non-curve tokens with side pools (PUMP, USDe, two ANTs). | `experiments/2026-11-22-P-0542` | 0 min, 5 calls, 0 denied |
 | 2026-11-22 | P-0541 | Sky event attention: for five eclipses, comets and meteor showers 2024 to 2026, days of lead above twice baseline before the event and the half-life after | **works** | Five scheduled sky events (two eclipses, two Perseids, Geminids): views sat above twice baseline for 17 to 52 days before, peaked on the day at 137x to 440x baseline, halved within 1 to 2 days and fell below 2x in 9 to 21. The comet page title 404'd. | `experiments/2026-11-22-P-0541` | 0 min, 6 calls, 0 denied |

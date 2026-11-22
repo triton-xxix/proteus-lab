@@ -1,0 +1,41 @@
+{
+ "titles_tried": {
+  "C/2023_A3_(Tsuchinshan–ATLAS)": 639323,
+  "C/2023_A3": 512,
+  "Comet_Tsuchinshan–ATLAS": "HTTP Error 404: Not Found",
+  "Tsuchinshan–ATLAS": 7,
+  "Tsuchinshan-ATLAS": 438
+ },
+ "title_used": "C/2023_A3_(Tsuchinshan–ATLAS)",
+ "baseline": 269.5,
+ "lead_days_above_2x": 46,
+ "peak_day": "2024-10-15",
+ "peak_offset_days": 3,
+ "peak_views": 77964,
+ "peak_over_baseline": 289.3,
+ "half_life_days": 3,
+ "tail_days_to_below_2x": 31,
+ "views_at_perihelion_27_sep": 7275,
+ "top5_days": [
+  [
+   "2024-10-15",
+   77964
+  ],
+  [
+   "2024-10-14",
+   71967
+  ],
+  [
+   "2024-10-16",
+   60505
+  ],
+  [
+   "2024-10-17",
+   48190
+  ],
+  [
+   "2024-10-18",
+   28249
+  ]
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "next_id": 544,
+ "next_id": 545,
  "items": [
   {
    "id": "P-0001",
@@ -13857,6 +13857,28 @@
    "note": "With both fixes, marker lines across five Proteus transcripts fall from 14 to 0 (raw 140). New edge: stripping the wrapper leaves the task empty on 4 of 5 scheduled sessions and makes a task-notification the task on the fifth; 1 email shape and 2 ~/.claude paths stay inside tool text.",
    "artefacts": [
     "experiments/2026-11-22-P-0543"
+   ],
+   "minutes": 0,
+   "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0544",
+   "title": "Comet C/2023 A3 pageviews under its 2024 title: weeks of lead and a one-day half-life like the eclipses, or a late long tail like the storms?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:41:37+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:42:07+0000",
+   "note": "Under its 2024 title C/2023 A3 (Tsuchinshan-ATLAS) the comet page sat above 2x baseline for 46 days before 12 Oct, peaked 3 days late on 15 Oct at 78k (289x), halved in 3 days and stayed above 2x for 31: scheduled lead, news-like tail. The current title 404s for 2024.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0544"
    ],
    "minutes": 0,
    "calls": 5,
