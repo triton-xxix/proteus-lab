@@ -1,0 +1,72 @@
+[
+ {
+  "page": "Solar_eclipse_of_April_8,_2024",
+  "event": "2024-04-08",
+  "baseline": 3031.5,
+  "lead_days_above_2x": 52,
+  "peak_day_offset": 0,
+  "peak_views": 1335210,
+  "peak_over_baseline": 440.4,
+  "half_life_days": 1,
+  "tail_days_to_below_2x": 9,
+  "views_7d_before": 69660,
+  "views_7d_after": 13973
+ },
+ {
+  "page": "Comet_Tsuchinshan–ATLAS",
+  "event": "2024-10-12",
+  "error": "HTTP Error 404: Not Found"
+ },
+ {
+  "page": "Perseids",
+  "event": "2024-08-12",
+  "baseline": 200.0,
+  "lead_days_above_2x": 29,
+  "peak_day_offset": 0,
+  "peak_views": 44019,
+  "peak_over_baseline": 220.1,
+  "half_life_days": 1,
+  "tail_days_to_below_2x": 18,
+  "views_7d_before": 2105,
+  "views_7d_after": 1036
+ },
+ {
+  "page": "Perseids",
+  "event": "2025-08-12",
+  "baseline": 125.0,
+  "lead_days_above_2x": 32,
+  "peak_day_offset": 0,
+  "peak_views": 26123,
+  "peak_over_baseline": 209.0,
+  "half_life_days": 2,
+  "tail_days_to_below_2x": 21,
+  "views_7d_before": 1595,
+  "views_7d_after": 1210
+ },
+ {
+  "page": "Solar_eclipse_of_August_12,_2026",
+  "event": "2026-08-12",
+  "baseline": 1611.5,
+  "lead_days_above_2x": 33,
+  "peak_day_offset": 0,
+  "peak_views": 221060,
+  "peak_over_baseline": 137.2,
+  "half_life_days": 1,
+  "tail_days_to_below_2x": 14,
+  "views_7d_before": 17540,
+  "views_7d_after": 8357
+ },
+ {
+  "page": "Geminids",
+  "event": "2025-12-14",
+  "baseline": 53.5,
+  "lead_days_above_2x": 17,
+  "peak_day_offset": -1,
+  "peak_views": 8810,
+  "peak_over_baseline": 164.7,
+  "half_life_days": 2,
+  "tail_days_to_below_2x": 13,
+  "views_7d_before": 557,
+  "views_7d_after": 271
+ }
+]

@@ -1,5 +1,5 @@
 {
- "next_id": 541,
+ "next_id": 542,
  "items": [
   {
    "id": "P-0001",
@@ -13794,6 +13794,28 @@
    ],
    "minutes": 1,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0541",
+   "title": "Sky event attention: for five eclipses, comets and meteor showers 2024 to 2026, days of lead above twice baseline before the event and the half-life after",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:37:43+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:38:16+0000",
+   "note": "Five scheduled sky events (two eclipses, two Perseids, Geminids): views sat above twice baseline for 17 to 52 days before, peaked on the day at 137x to 440x baseline, halved within 1 to 2 days and fell below 2x in 9 to 21. The comet page title 404'd.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0541"
+   ],
+   "minutes": 0,
+   "calls": 6,
    "denied": [],
    "luke": false
   }
