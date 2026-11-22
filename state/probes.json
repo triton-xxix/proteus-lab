@@ -1,5 +1,5 @@
 {
- "next_id": 538,
+ "next_id": 539,
  "items": [
   {
    "id": "P-0001",
@@ -13728,6 +13728,28 @@
    ],
    "minutes": 0,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0538",
+   "title": "ASVspoof 2019 dummy zip on Hugging Face: how many real LA dev flacs does it hold, and how many match SEAR file_ids?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:33:35+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:34:15+0000",
+   "note": "The ungated LanceaKing mirror's 3.75 MB dummy zip is a real cut-down LA.zip: 45 flacs, of which 5 train, 10 dev and 10 eval countermeasure clips, and all 15 train and dev ids are in SEAR t1. 15 is far short of the 200 refill 218 needs, so that row stays held.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0538"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false
   }

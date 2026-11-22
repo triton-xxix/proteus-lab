@@ -1,0 +1,175 @@
+{
+  "zip_bytes": 3753314,
+  "entries": 76,
+  "flacs": 45,
+  "flac_ids_by_split": {
+    "T": 5,
+    "D": 10,
+    "E": 10
+  },
+  "flac_bytes_min_median_max": [
+    35035,
+    70363,
+    182513
+  ],
+  "protocol_files": {
+    "dummy_data/LA.zip/LA/README.LA.txt": {
+      "lines": 114,
+      "first": [
+        "=====================================================================================================",
+        "ASVspoof 2019: The 3rd Automatic Speaker Verification Spoofing and Countermeasures Challenge database"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.dev.female.trl.txt": {
+      "lines": 5,
+      "first": [
+        "LA_0072 LA_D_4356541 bonafide target",
+        "LA_0072 LA_D_5939593 bonafide nontarget"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.dev.female.trn.txt": {
+      "lines": 1,
+      "first": [
+        "LA_0072 LA_D_A1046944,LA_D_A1519783,LA_D_A1839254,LA_D_A1981362,LA_D_A2156760"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.dev.gi.trl.txt": {
+      "lines": 10,
+      "first": [
+        "LA_0073 LA_D_4004968 bonafide target",
+        "LA_0073 LA_D_7127063 bonafide nontarget"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.dev.male.trl.txt": {
+      "lines": 5,
+      "first": [
+        "LA_0073 LA_D_4004968 bonafide target",
+        "LA_0073 LA_D_7127063 bonafide nontarget"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.dev.male.trn.txt": {
+      "lines": 1,
+      "first": [
+        "LA_0073 LA_D_A1225110,LA_D_A1425742,LA_D_A2486210,LA_D_A2940120,LA_D_A4011660"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.eval.female.trl.txt": {
+      "lines": 5,
+      "first": [
+        "LA_0026 LA_E_4346303 bonafide target",
+        "LA_0026 LA_E_9395014 bonafide nontarget"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.eval.female.trn.txt": {
+      "lines": 1,
+      "first": [
+        "LA_0026 LA_E_A6067886,LA_E_A6399397,LA_E_A7328076,LA_E_A7522472,LA_E_A8382737"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.eval.gi.trl.txt": {
+      "lines": 10,
+      "first": [
+        "LA_0007 LA_E_9750172 bonafide target",
+        "LA_0007 LA_E_5013670 bonafide nontarget"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.eval.male.trl.txt": {
+      "lines": 5,
+      "first": [
+        "LA_0007 LA_E_9750172 bonafide target",
+        "LA_0007 LA_E_5013670 bonafide nontarget"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_protocols/ASVspoof2019.LA.asv.eval.male.trn.txt": {
+      "lines": 1,
+      "first": [
+        "LA_0007 LA_E_A1579796,LA_E_A1669549,LA_E_A2092700,LA_E_A2287839,LA_E_A3734175"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_scores/ASVspoof2019.LA.asv.dev.gi.trl.scores.txt": {
+      "lines": 10,
+      "first": [
+        "bonafide target 18.20527",
+        "bonafide nontarget -43.15674"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_asv_scores/ASVspoof2019.LA.asv.eval.gi.trl.scores.txt": {
+      "lines": 10,
+      "first": [
+        "bonafide target 47.720580",
+        "bonafide nontarget -13.065620"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_cm_protocols/ASVspoof2019.LA.cm.dev.trl.txt": {
+      "lines": 10,
+      "first": [
+        "LA_0072 LA_D_4356541 - - bonafide",
+        "LA_0073 LA_D_4004968 - - bonafide"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_cm_protocols/ASVspoof2019.LA.cm.eval.trl.txt": {
+      "lines": 10,
+      "first": [
+        "LA_0026 LA_E_4346303 - - bonafide",
+        "LA_0026 LA_E_8574729 - A14 spoof"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_cm_protocols/ASVspoof2019.LA.cm.train.trn.txt": {
+      "lines": 5,
+      "first": [
+        "LA_0079 LA_T_1138215 - - bonafide",
+        "LA_0080 LA_T_1078395 - - bonafide"
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_dev/LICENSE.txt": {
+      "lines": 426,
+      "first": [
+        "### Preamble",
+        ""
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_eval/LICENSE.txt": {
+      "lines": 426,
+      "first": [
+        "### Preamble",
+        ""
+      ]
+    },
+    "dummy_data/LA.zip/LA/ASVspoof2019_LA_train/LICENSE.txt": {
+      "lines": 426,
+      "first": [
+        "### Preamble",
+        ""
+      ]
+    }
+  },
+  "sear": {
+    "dev": {
+      "sear_ids": 24844,
+      "in_zip": 10,
+      "matched": [
+        "LA_D_2340770",
+        "LA_D_4004968",
+        "LA_D_4067937",
+        "LA_D_4356541",
+        "LA_D_5939593",
+        "LA_D_6383686",
+        "LA_D_7127063",
+        "LA_D_7383133",
+        "LA_D_8058106",
+        "LA_D_9835448"
+      ]
+    },
+    "train": {
+      "sear_ids": 25380,
+      "in_zip": 5,
+      "matched": [
+        "LA_T_1004644",
+        "LA_T_1007914",
+        "LA_T_1078395",
+        "LA_T_1107524",
+        "LA_T_1138215"
+      ]
+    }
+  }
+}
