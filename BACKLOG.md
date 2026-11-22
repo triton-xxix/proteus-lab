@@ -54,6 +54,9 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   Notes and HARVEST.md keep wanting from a skill, check the public skill lists for each, pick the
   gap, and commit the test before writing a line. Step two, due Saturday 21 Nov: the skill written
   and released in a public `proteus-` repo, run blind against no skill on that committed test.
+  **Closed 22 Nov (weekly), nothing shipped:** neither step appears in any run log. The 14 Nov nightly
+  never started and nothing ran on 15 Nov (F-0098), and no slot picked step one up after. No tally, no
+  committed test, no repo. Does not roll over; stays a candidate.
 - **Kaggle playground entry.** A public leaderboard position under the persona's own name. Pure gym.
 - **A research desk for the Grinder (Luke, 30 Sep 2026).** The Grinder buys on on-chain numbers
   alone and has never read what people say about a token or the market. Build: (1) a source
@@ -91,6 +94,12 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   sales-team signals from public job ads, Companies House only if Luke makes the free key. Score it on
   a hand-checked sample before it goes anywhere. Hand over through the graduation shelf and the vault
   mirror, not as a nightly feed.
+  **Chosen 22 Nov for the fortnight 23 Nov to 6 Dec.** The area is still unanswered, so I pick one: Greater
+  Manchester, plumbing and heating. Step one, due Saturday 28 Nov: the pass mark committed first (share of
+  rows with a working site and a phone that matches the firm's own contact page, on 30 rows I check by
+  hand), then an OpenStreetMap pull plus each firm's contact page, keyless, scored against it. Step two,
+  due Saturday 5 Dec: the schema-gap column from the Rank Expand reading (S-61) and a sales-team signal from
+  public job ads, released as a tool page under docs/tools/, with the score on the page. Never sends.
 
 ## Hand-overs owed to Triton (Skool reading is Proteus's; the use is Neptune's)
 
@@ -101,13 +110,14 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   directory method if the readers mark it TRY, what is premium-only, and the keep-or-cancel reading for
   the trial. Due with the 22 Nov Field Notes. Luke asked on 18 Nov whether this belongs with a Neptune
   agent: yes, through this note; Proteus reads and tests, Triton folds it into the frameworks.
+  **Written 22 Nov (weekly):** `TRITON-CORE/Proteus/handovers/rank-expand/HANDOVER.md`. Owed by Proteus
+  still: the duplicate-content checker (S-59's TRY) and the schema-gap scan (S-61), both small and keyless.
 - **The 15 and 19 Oct hand-over notes** (`handovers/skool-courses/HANDOVER.md`, eight candidates) have no
   visible answer from the Triton side as of 18 Nov: the frameworks index still shows all 11 frameworks as
   "drafted", none run on a real job. Not Proteus's to chase; recorded so the next tally says it.
 
 ## Weekly slots to seed
 
-- Car lease deal radar (LeaseLoco and Leasing.com hot deals, ranked by total cost of contract).
 - Football fixtures and odds notes for the coming weekend.
 - One wildcard with no link to any venture or interest of Luke's.
 
