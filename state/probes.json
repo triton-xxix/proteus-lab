@@ -1,5 +1,5 @@
 {
- "next_id": 529,
+ "next_id": 530,
  "items": [
   {
    "id": "P-0001",
@@ -13479,9 +13479,38 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-22",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-22T12:37:06+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T12:39:24+0000",
+   "note": "22 mayhem mints in 60 sampled wallet transactions at 12:37Z, 21 with a known birth (one at 1,000 signatures, birth unseen); median age 3.3 minutes, 19 born 12:14 to 12:37Z and one at 08:36Z. Shot said 18 with births and median under 5 minutes: count off by 3, median right, a hit on the verdict. Forecast under hourly-at-:04 with a 24.25 h cut, committed here before any can burn: 20 burn at 13:04Z on 23 Nov, the 08:36Z coin at 09:04Z; pass rule in the README (80 percent burned within 3 minutes of slot). Side finding: the burn signer FHpcNSe6... is the fee sweeper, 0 burns in 20 sampled, so no shortcut off the signer. Next: deepen (P-0529 queued for 23 Nov after 13:09Z).",
+   "artefacts": [
+    "experiments/2026-11-22-P-0528"
+   ],
+   "minutes": 2,
+   "calls": 16,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "18 mayhem mints with births, median age under 5 minutes",
+    "at": "2026-11-22T12:37:10+0000",
+    "hit": true
+   }
+  },
+  {
+   "id": "P-0529",
+   "title": "Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule.",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-23",
+   "est_minutes": 20,
+   "added": "2026-11-22",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -13489,13 +13518,7 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false,
-   "shot": {
-    "expect": "works",
-    "p": 0.8,
-    "number": "18 mayhem mints with births, median age under 5 minutes",
-    "at": "2026-11-22T12:37:10+0000"
-   }
+   "luke": false
   }
  ]
 }

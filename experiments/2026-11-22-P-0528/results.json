@@ -1,0 +1,212 @@
+{
+ "summary": {
+  "at": "2026-11-22T12:37:31Z",
+  "fetched": 60,
+  "distinct_mints": 22,
+  "births_known": 21,
+  "median_age_min": 3.33,
+  "oldest_birth_utc": "2026-11-22T08:35:55Z",
+  "newest_birth_utc": "2026-11-22T12:37:07Z",
+  "forecast_burn_slots": {
+   "2026-11-23T13:04:00Z": 20,
+   "2026-11-23T09:04:00Z": 1
+  },
+  "hypothesis": "hourly sweep at about HH:04, age cut 24.25 h (P-0508)"
+ },
+ "rows": [
+  {
+   "mint": "3VdZKQL9e5rmw7RfKKZonwQf1AvHi8iFhzjagGJZpump",
+   "sigs": 210,
+   "birth_seen": true,
+   "birth": 1795350930,
+   "birth_utc": "2026-11-22T12:35:30Z",
+   "age_min": 3.33,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "12VzECCsitPMJTc5kNdGfGoG2UXU9K3oahJamFHApump",
+   "sigs": 1000,
+   "birth_seen": false
+  },
+  {
+   "mint": "7fqgbmJmCCX3wZKmkx1S9adrGGtYiRYQEZhgC9XBpump",
+   "sigs": 281,
+   "birth_seen": true,
+   "birth": 1795350002,
+   "birth_utc": "2026-11-22T12:20:02Z",
+   "age_min": 18.83,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "6eYijCJvAREAuuzaC5utYyv6pApG9vsDA8adiECEpump",
+   "sigs": 365,
+   "birth_seen": true,
+   "birth": 1795350459,
+   "birth_utc": "2026-11-22T12:27:39Z",
+   "age_min": 11.23,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "HUEaXctvfrTxGN6oKtgdziafeH9FrUdmaEZULZA8pump",
+   "sigs": 243,
+   "birth_seen": true,
+   "birth": 1795350886,
+   "birth_utc": "2026-11-22T12:34:46Z",
+   "age_min": 4.13,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "4fzjVwdmaJxVJDZx39V2LnLMsBtYmUxZRHZqfKRDpump",
+   "sigs": 203,
+   "birth_seen": true,
+   "birth": 1795351012,
+   "birth_utc": "2026-11-22T12:36:52Z",
+   "age_min": 2.04,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "7uCHUGjkYjhQfsTCdDiKZD6ATGy8LHV8k1fQpZHspump",
+   "sigs": 66,
+   "birth_seen": true,
+   "birth": 1795351000,
+   "birth_utc": "2026-11-22T12:36:40Z",
+   "age_min": 2.26,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "AUcLu1HnVb7tiLDJ7pS16YcGiRNugaBYsb4igDbopump",
+   "sigs": 183,
+   "birth_seen": true,
+   "birth": 1795350994,
+   "birth_utc": "2026-11-22T12:36:34Z",
+   "age_min": 2.38,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "HQZZ1q4BiARWmRmxLEUVxE6W2LVLWeHQ5sk61o4npump",
+   "sigs": 35,
+   "birth_seen": true,
+   "birth": 1795351027,
+   "birth_utc": "2026-11-22T12:37:07Z",
+   "age_min": 1.85,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "8U67CXoeMwYFPEtpFvWuc3mSEXVuT48hGi7kUE2Qpump",
+   "sigs": 232,
+   "birth_seen": true,
+   "birth": 1795351007,
+   "birth_utc": "2026-11-22T12:36:47Z",
+   "age_min": 2.2,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "wX8LWBYj31X8vhoabuxcvS5qf5jNEcdcJo6Y5Skpump",
+   "sigs": 133,
+   "birth_seen": true,
+   "birth": 1795350975,
+   "birth_utc": "2026-11-22T12:36:15Z",
+   "age_min": 2.75,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "8zMULquwGhgLb1P6SpE8tvJ8pEZUUPRMtHd6QY4Jpump",
+   "sigs": 177,
+   "birth_seen": true,
+   "birth": 1795350928,
+   "birth_utc": "2026-11-22T12:35:28Z",
+   "age_min": 3.55,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "45LTzFQyGqfFbnf44Pd5tqHwZMb5Q2FFkmrEEZDmpump",
+   "sigs": 169,
+   "birth_seen": true,
+   "birth": 1795350556,
+   "birth_utc": "2026-11-22T12:29:16Z",
+   "age_min": 9.77,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "G4RtGkAUYRPusWMh6STGVJ3Bs7uJdZR8Ta1VUqZKpump",
+   "sigs": 19,
+   "birth_seen": true,
+   "birth": 1795351010,
+   "birth_utc": "2026-11-22T12:36:50Z",
+   "age_min": 2.22,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "DqmEeZKKddPWGEWKwsD1KPPsLwbFsdFyzV3eJat3pump",
+   "sigs": 107,
+   "birth_seen": true,
+   "birth": 1795349641,
+   "birth_utc": "2026-11-22T12:14:01Z",
+   "age_min": 25.06,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "4Qta1R53nFdRM5e8hnHMDWHszrkDna3PX7sHGe9ipump",
+   "sigs": 438,
+   "birth_seen": true,
+   "birth": 1795350608,
+   "birth_utc": "2026-11-22T12:30:08Z",
+   "age_min": 8.96,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "EvEo6NGk7uDLcvZa3tUigiu5svFsEkpzbbdimK2spump",
+   "sigs": 208,
+   "birth_seen": true,
+   "birth": 1795336555,
+   "birth_utc": "2026-11-22T08:35:55Z",
+   "age_min": 243.19,
+   "forecast_burn_utc": "2026-11-23T09:04:00Z"
+  },
+  {
+   "mint": "42B5YSM2a4Se9FEJhVPX9U3asaFJ2HQEoRkeRJoKpump",
+   "sigs": 157,
+   "birth_seen": true,
+   "birth": 1795350951,
+   "birth_utc": "2026-11-22T12:35:51Z",
+   "age_min": 3.28,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "LDnQnWcz6Ms1hDWVwgECenvk2gNDaZ6z7CemHv3pump",
+   "sigs": 55,
+   "birth_seen": true,
+   "birth": 1795350974,
+   "birth_utc": "2026-11-22T12:36:14Z",
+   "age_min": 2.91,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "J46U3WxvWLgpvWwEXMFobmwi8p9f11ew2tSrbjNPpump",
+   "sigs": 144,
+   "birth_seen": true,
+   "birth": 1795350806,
+   "birth_utc": "2026-11-22T12:33:26Z",
+   "age_min": 5.73,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "BgQZ4jRGdjYc7YuukVXRHicdZGeus94RMEvewieapump",
+   "sigs": 25,
+   "birth_seen": true,
+   "birth": 1795350957,
+   "birth_utc": "2026-11-22T12:35:57Z",
+   "age_min": 3.23,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  },
+  {
+   "mint": "CXJchSYZX9WicQxKoxFbp9yDRAy1gt6aRq6Dt2Uqpump",
+   "sigs": 154,
+   "birth_seen": true,
+   "birth": 1795350563,
+   "birth_utc": "2026-11-22T12:29:23Z",
+   "age_min": 9.82,
+   "forecast_burn_utc": "2026-11-23T13:04:00Z"
+  }
+ ]
+}
