@@ -1,5 +1,5 @@
 {
- "next_id": 542,
+ "next_id": 543,
  "items": [
   {
    "id": "P-0001",
@@ -13816,6 +13816,28 @@
    ],
    "minutes": 0,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0542",
+   "title": "PumpSwap curve graduates over seven nights of Grinder snapshots: share of pump-suffix mints reading 99%+ LP locked, and any that fell after graduation",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:38:27+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:38:52+0000",
+   "note": "Across seven nights (16 to 22 Nov) 378 of 378 PumpSwap rows for pump-suffix mints read 99%+ LP locked, 235 mints; none of the 44 seen twice ever fell. The low readings on PumpSwap are non-curve tokens with side pools (PUMP, USDe, two ANTs).",
+   "artefacts": [
+    "experiments/2026-11-22-P-0542"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

@@ -1,0 +1,195 @@
+{
+ "nights": [
+  {
+   "night": "2026-11-16",
+   "pumpswap": 75,
+   "curve": 60,
+   "lp_known": 60,
+   "lp_99_plus": 60,
+   "under_99": []
+  },
+  {
+   "night": "2026-11-17",
+   "pumpswap": 62,
+   "curve": 53,
+   "lp_known": 53,
+   "lp_99_plus": 53,
+   "under_99": []
+  },
+  {
+   "night": "2026-11-18",
+   "pumpswap": 57,
+   "curve": 49,
+   "lp_known": 49,
+   "lp_99_plus": 49,
+   "under_99": []
+  },
+  {
+   "night": "2026-11-19",
+   "pumpswap": 62,
+   "curve": 56,
+   "lp_known": 56,
+   "lp_99_plus": 56,
+   "under_99": []
+  },
+  {
+   "night": "2026-11-20",
+   "pumpswap": 70,
+   "curve": 62,
+   "lp_known": 62,
+   "lp_99_plus": 62,
+   "under_99": []
+  },
+  {
+   "night": "2026-11-21",
+   "pumpswap": 57,
+   "curve": 49,
+   "lp_known": 49,
+   "lp_99_plus": 49,
+   "under_99": []
+  },
+  {
+   "night": "2026-11-22",
+   "pumpswap": 59,
+   "curve": 49,
+   "lp_known": 49,
+   "lp_99_plus": 49,
+   "under_99": []
+  }
+ ],
+ "distinct_curve_mints": 235,
+ "seen_2plus_nights": 44,
+ "fell_below_99_after_99": {},
+ "non_curve_on_pumpswap": {
+  "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": [
+   "PUMP",
+   2.1256242813613116e-06
+  ],
+  "roCk2KJE2R267MKbEAB6nZNAAKY7oePdjhLPGWgStAr": [
+   "Rockstar",
+   100.0
+  ],
+  "GTmcN7QJTRx8vjbPHJKgyv5bASQ2HVEqghmQcMLsGUms": [
+   "Zelleinu",
+   100.0
+  ],
+  "3EDLvS4PMWXmN5oj7aGWwR16yC3zgZSdWL2BeVK8sent": [
+   "SENT",
+   100.0
+  ],
+  "FVH8uVyBqNiJ8PJPJJ8TqfiPp2VUscM9w9QqH2uHC8Tm": [
+   "Minimoon",
+   100.0
+  ],
+  "9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi": [
+   "Neil",
+   100.0
+  ],
+  "ELR9i6Z7uhtZMWqkySYNnDhviSuSMA7nnyZ1BocKkEK": [
+   "ANT",
+   1.4720833260874994e-10
+  ],
+  "DnBQkKNCJ9oaHuRbmkGazb21rCp8MWrAUj94EkX97Pac": [
+   "Marvin",
+   100.0
+  ],
+  "4VUthuSXJfoR6FAjK5ZHbABZtVVi9SNXNy7b898KWoAx": [
+   "mihao",
+   100.0
+  ],
+  "FsFqQGxCNd7dbFuimCW4hMiFRdvvM8PoLyp4WZrxAUnN": [
+   "Lemon",
+   100.0
+  ],
+  "Fww6zaNKcjpJaB33JayvUzsofBUobX5JaHiuQBN1Jf9g": [
+   "XRL",
+   100.0
+  ],
+  "3jXeQDkmM1N7gAS3iubWwmZTaAS4hdMDJ5e5B2uswWaK": [
+   "MONKAI",
+   100.0
+  ],
+  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": [
+   "TROLL",
+   99.99828794872178
+  ],
+  "9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1": [
+   "SOLCAT",
+   100.0
+  ],
+  "7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV": [
+   "ASTEROID",
+   100.0
+  ],
+  "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": [
+   "CLAUDIA",
+   100.0
+  ],
+  "ANoNMkrVz1qquE7TUpsLmHCjRK9ccjU9zcADFJubAh3R": [
+   "Anon",
+   100.0
+  ],
+  "4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu": [
+   "REFU",
+   100.0
+  ],
+  "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": [
+   "CJ",
+   100.0
+  ],
+  "6TcFqnzyxFE6bZPqNL7MimUsvggheDQrjwKUhGUKJFXY": [
+   "Rufo",
+   100.0
+  ],
+  "3e9DFhi6UpojRf9novvBrchvZoxzZuoM5v32hwAhLmS9": [
+   "GTAVI",
+   100.0
+  ],
+  "8J2VUcwne16c5LeYCSGBagPf32tDSFeGDzmD5B7nfmkY": [
+   "ANT",
+   3.218653195387278e-10
+  ],
+  "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": [
+   "PUMP",
+   null
+  ],
+  "fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M": [
+   "SIM",
+   100.0
+  ],
+  "CkuA615mQA6ZDXncmXJLrTR5kDkZCaKqJmuf758zPZY6": [
+   "ANT",
+   100.0
+  ],
+  "5kqi4kDq56H9UfHq14jXtmy189zpyxaYdXCQ4qHvDtHW": [
+   "CoT",
+   100.0
+  ],
+  "CJsKL1cL5pCVxjQdkKhtiXn2AfCMBeVsnsN8R9PaXFx2": [
+   "\u72d7",
+   100.0
+  ],
+  "DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT": [
+   "USDe",
+   2.555023038290467e-10
+  ],
+  "UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL": [
+   "ZOL",
+   100.0
+  ],
+  "HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM": [
+   "Heliogram",
+   100.0
+  ],
+  "89DKn95R7QvjAcGSeqHvmj3pq7TJFbJcckURqjvuHsHp": [
+   "PRIVI",
+   100.0
+  ],
+  "7htmi1ohL8vgAxmdLtvyXR2Z4As6bj6dXEx5wRh78VJG": [
+   "Inu",
+   100.0
+  ]
+ },
+ "all_curve_rows": 378,
+ "all_curve_99_plus": 378
+}
