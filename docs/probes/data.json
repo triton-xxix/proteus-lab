@@ -1,17 +1,17 @@
 {
  "summary": {
-  "n": 495,
+  "n": 508,
   "by_verdict": {
-   "works": 422,
-   "not-worth-it": 22,
+   "works": 432,
+   "not-worth-it": 23,
    "blocked": 43,
-   "broken": 8
+   "broken": 10
   },
   "open": 14,
   "killed": 5,
-  "minutes_total": 840,
+  "minutes_total": 854,
   "minutes_median": 1,
-  "calls_total": 5292,
+  "calls_total": 5420,
   "pages": 10,
   "first": "2026-09-24",
   "last": "2026-11-21"
@@ -19,27 +19,27 @@
  "by_source": [
   {
    "source": "refill",
-   "n": 205,
-   "works": 195,
+   "n": 212,
+   "works": 201,
    "not-worth-it": 3,
    "blocked": 6,
-   "broken": 1
+   "broken": 2
   },
   {
    "source": "desk",
-   "n": 117,
-   "works": 97,
-   "not-worth-it": 8,
+   "n": 119,
+   "works": 98,
+   "not-worth-it": 9,
    "blocked": 11,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 104,
-   "works": 79,
+   "n": 108,
+   "works": 82,
    "not-worth-it": 4,
    "blocked": 15,
-   "broken": 6
+   "broken": 7
   },
   {
    "source": "vault",
@@ -133,10 +133,10 @@
   },
   {
    "week": "2026-11-16",
-   "works": 54,
-   "not-worth-it": 3,
+   "works": 64,
+   "not-worth-it": 4,
    "blocked": 3,
-   "broken": 0
+   "broken": 2
   }
  ],
  "rows": [
@@ -7566,6 +7566,199 @@
     "p": 0.6,
     "hit": 1
    }
+  },
+  {
+   "id": "P-0515",
+   "title": "Heatmap line, leg two: read 25 more YouTube videos aimed at 30k to 80k views (search plus filter, yt-dlp -J --skip-download, keyless) to narrow P-0506's 38,676 to 58,618…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T12:35:13+0000",
+   "minutes": 3,
+   "calls": 8,
+   "note": "Line at about 52,000 views: pooled with P-0506 (55 videos), none with a graph at 51,496 or below, all with one from 52,257 up, one crossover (52,222 without, a 55-min video). Shot said lowest-with 40k to 50k; measured 51,534, a near miss. Age: old (pre Nov 2021) and new videos share the same line on 7 v 18, so my old-…",
+   "artefact": "experiments/2026-11-21-P-0515",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0516",
+   "title": "Petitions constituency gap before the 2024 boundaries: the persona check.py logic on the top 40 archived petitions of parliament 4 (2019-24) and 3 (2017-19) via petition…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T12:37:55+0000",
+   "minutes": 1,
+   "calls": 7,
+   "note": "Unplaced UK signatures 2.64% on 40 archived 2019-24 petitions (401,214 of 15.2m) and 1.68% on 2017-19, against 0.47% open now; all 80 list 650 seats, no negative gaps. Shot said 0.3% to 0.8%: a clear miss on the number. By opening year the hole peaks in 2020 (3.0%) and 2021 (3.7%) and is back at 0.6% to 0.7% in 2022-2…",
+   "artefact": "experiments/2026-11-21-P-0516",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0517",
+   "title": "Petitions hole, leg two of P-0516: every archived parliament-4 petition over 10,000 signatures (all list pages), unplaced UK share against signature count and opening mo…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-21T12:41:47+0000",
+   "minutes": 3,
+   "calls": 6,
+   "note": "Calendar, not size: on the 400 largest 2019-24 petitions the unplaced UK share is 2.7% to 3.1% in every size band for Mar 2020 to Jun 2021, 0.7% to 0.8% for 2023-24, and it drops as a step, Jan 2022 1.51% to Feb 2022 0.62%, flat after. Shot said 2x or more in each band with no size slope; measured 3.7x to 4.6x, flat.…",
+   "artefact": "experiments/2026-11-21-P-0517",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0518",
+   "title": "Draw bump on P-0511's model: fit one draw multiplier on 2010-2022 non-friendly internationals by log-likelihood (sandbox/intl-results.csv), fix the Bosnia alias, rescore…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T12:42:48+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Draw bump closes 4.8% of the gap: fitted multiplier 1.04 on 8,132 non-friendly matches 2010-22 (Poisson calls 21.3% draws, actual 21.9%), Brier 0.5889 to 0.5869 on 57 rows (alias fixed, was 55) v market 0.5469. Shot said under a quarter closed (hit) at 0.570 to 0.580 (miss, base model is 0.589 with the two rows back).…",
+   "artefact": "experiments/2026-11-21-P-0518",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0519",
+   "title": "Petitions step, leg three: GitHub API commits on alphagov/e-petitions between 2021-12-01 and 2022-03-01 (keyless, api.github.com), find the change that cut the unplaced-…",
+   "source": "desk",
+   "verdict": "not-worth-it",
+   "at": "2026-11-21T12:43:45+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "0 of 68 e-petitions commits from Nov 2021 to Mar 2022 name constituencies, postcodes, ONS or boundaries; the one candidate (0fb8db0fa0, 2 Mar 2022) validates the country code, not the seat. Shot said no plain commit, at 0.45: hit. The step is likely data-side (seat lookup table outside git) or the Feb to Mar 2022 anon…",
+   "artefact": "experiments/2026-11-21-P-0519",
+   "page": false,
+   "shot": {
+    "expect": "not-worth-it",
+    "p": 0.45,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0520",
+   "title": "Old high-view videos and the heatmap: 25 pre-2015 YouTube uploads at 150k to 1m views (yt-dlp flat search filtered on views, -J --skip-download, keep upload before 2015)…",
+   "source": "refill",
+   "verdict": "broken",
+   "at": "2026-11-21T12:46:59+0000",
+   "minutes": 2,
+   "calls": 6,
+   "note": "Search ranks new uploads first whatever year the query names: 4 of 23 videos read were pre-2015, then a null -J crashed the script. Of the 4 old ones, 2 lack a graph (both Feb to Mar 2013 Harlem Shake uploads at 418,689 and 574,163 views); 1 of 19 newer lacks one (2019, 387,655). Shot said 3 to 6 of 25: miss, the samp…",
+   "artefact": "experiments/2026-11-21-P-0520",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0521",
+   "title": "mcp-server-youtube-transcript: does it return a full transcript keyless, within 10% of our pipeline's word count?",
+   "source": "harvest",
+   "verdict": "broken",
+   "at": "2026-11-21T23:34:32+0000",
+   "minutes": 1,
+   "calls": 15,
+   "note": "npm latest is 0.1.1 (Nov 2024), not the README's version; on 4 videos our pipeline transcribed (39 to 487 words) it returned success with 0 words every time, so 0 of 4 within 10%; both agreed on the one captions-off video. Silent empty success.",
+   "artefact": "experiments/2026-11-21-P-0521",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0522",
+   "title": "MOT regional gap: does DVSA open data give an 8.4 point pass-rate spread for 2015 to 2019 cars?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-21T23:36:35+0000",
+   "minutes": 1,
+   "calls": 12,
+   "note": "Streamed 40 MB heads of three 2024 monthly files by range request (1.6m class-4 tests, cars first used 2015-19): pass incl. PRS London inner areas 89.48%, Scotland 79.91%, a 9.6 point gap v the claimed 8.4 (6.9 on first-time P only); London PRS share 5.5% v Scotland 2.9%.",
+   "artefact": "experiments/2026-11-21-P-0522",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0523",
+   "title": "sprite-stacking: does the slicer turn a synthetic four-view sheet into a 36-layer strip and viewer?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-21T23:37:56+0000",
+   "minutes": 1,
+   "calls": 18,
+   "note": "36 slices and a 110 KB viewer from a synthetic 4-view car sheet in under a second; needs about 10 px between views (2 px merged them), --order reading put my profile on the short end, the default proportion matcher got the geometry right but swapped end-view paint (headlamps on both ends).",
+   "artefact": "experiments/2026-11-21-P-0523",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0524",
+   "title": "Zpup: does it keep a small object visible on a big floor at four angles, with no script in the SVG?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-21T23:38:42+0000",
+   "minutes": 0,
+   "calls": 13,
+   "note": "@zpup/core 0.4.1: a 20 px box at each corner of a 300x300 floor, four turns each: box painted after the floor in 16 of 16 renders (8 on the far half), no script in 17 SVGs, turning file 14,955 bytes of SMIL. Zdog side not run by me.",
+   "artefact": "experiments/2026-11-21-P-0524",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0525",
+   "title": "e-petitions Signature anonymize!: read app/models/signature.rb and archived/signature.rb at HEAD; does it clear constituency_id, and does that explain P-0517's pre-2022…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T23:40:45+0000",
+   "minutes": 0,
+   "calls": 13,
+   "note": "No: Anonymize#anonymize! keeps constituency_id and uses it to choose the replacement postcode (ZZ99 3WZ when there is none); seats are set once at validate! only if the lookup returns, and a 2018 commit added a switch to disable lookup. Anonymisation cannot make P-0517's hole; lookup off or failing in 2020-21 is the g…",
+   "artefact": "experiments/2026-11-21-P-0525",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0526",
+   "title": "Nations League draw rate: from sandbox/intl-results.csv, draws in UEFA Nations League 2018-26 v World Cup and Euro qualifiers in the same years, and NL last group matchd…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T23:41:38+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "NL group stage 2018-26 draws 25.3% (194 of 768) v UEFA-only World Cup qualifiers 19.0% and Euro qualifiers 17.0%, about friendlies' 26.3%; last matchday 27.8% v earlier 24.7%, under one se, no end-of-group rise. Explains part of the judgement book's 32% against P-0518's 21.9% base.",
+   "artefact": "experiments/2026-11-21-P-0526",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0527",
+   "title": "YouTube Shorts heatmap: of 25 Shorts above 100,000 views read with yt-dlp -J, how many carry a most-replayed heatmap, beside P-0515's 52,000-view line for normal videos?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-21T23:45:02+0000",
+   "minutes": 2,
+   "calls": 10,
+   "note": "20 of 25 short videos at 130k to 48m views carry a heatmap; of the 12 true Shorts (uploaded Nov 2020 on) 10 do, the two without at 281k and 22m views, so no view line as P-0515 found for long-form (every one above 52k). 13 of the 25 predate Shorts; search mixes them in.",
+   "artefact": "experiments/2026-11-21-P-0527",
+   "page": false,
+   "shot": null
   }
  ]
 }
