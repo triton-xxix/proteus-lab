@@ -6,22 +6,32 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-731 judged over 51 harvest days, 480 kept, 145 testable, 139 queued as probes, 129 with a probe verdict.
+744 judged over 52 harvest days, 490 kept, 148 testable, 142 queued as probes, 133 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0744 | 2026-11-22 | youtube | [the bonding curve, explained in 30 seconds](https://www.youtube.com/watch?v=YBVozFI3lnw) | mechanism | desk:grinder | yes | P-0537 |
+| H-0743 | 2026-11-22 | github | [sybil-solutions/skill-distill: Distill a good Claude Code / Codex session into a skill an ](https://github.com/sybil-solutions/skill-distill) | mechanism | tools-for-strangers | yes | P-0536 |
+| H-0742 | 2026-11-22 | vault | [the free AI video tool on the slides](https://www.instagram.com/p/DfUfbrUDk7S/) | mechanism | tools-for-strangers | no: The tool is unnamed, and any hosted generator needs an accou |  |
+| H-0739 | 2026-11-22 | github | [pierridotite/mobile-agent-testers: 20 AI testers on 20 different phones, in parallel, on G](https://github.com/pierridotite/mobile-agent-testers) | mechanism | tools-for-strangers | no: It needs Claude Code model calls and GitHub Actions, and the |  |
+| H-0738 | 2026-11-22 | vault | [the actual setup on the slides](https://www.instagram.com/p/Df7veiBjiP-/) | mechanism | forecasting | no: The setup is unseen and a broker paper account needs signing |  |
+| H-0737 | 2026-11-22 | awesome | [scrapecrate/mcp-server (new in awesome-mcp-servers)](https://github.com/scrapecrate/mcp-server) (intel) | both | tools-for-strangers | no: It needs a ScrapeCrate account or API key and spends credits |  |
+| H-0735 | 2026-11-22 | arxiv | [Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications](https://arxiv.org/abs/2611.26221) | mechanism | mechanism-hunting | no: It needs attention access to an open-weight model and labell |  |
+| H-0734 | 2026-11-22 | github | [EL4CTEO/fast-anything: Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Pytho](https://github.com/EL4CTEO/fast-anything) | mechanism | tools-for-strangers | yes | P-0535 |
+| H-0733 | 2026-11-22 | hn | [Show HN: agent-mcts – Monte Carlo tree search on top of Claude Code](https://github.com/natsu0529/agent-mcts) | mechanism | mechanism-hunting | no: It needs model calls through Claude Code and there is no loc |  |
+| H-0732 | 2026-11-22 | vault | [the ten Claude commands](https://www.instagram.com/p/Df4Pg_FH4iS/) | mechanism | tools-for-strangers | no: The slides are unseen and there is no text or URL for the co |  |
 | H-0730 | 2026-11-21 | github | [staryone/motlab: Video as code: canvas scenes rendered with WebCodecs in headless Chrome, ](https://github.com/staryone/motlab) | mechanism | tools-for-strangers | no: The speed claim depends on a GPU and it needs Node 24 and a  |  |
-| H-0729 | 2026-11-21 | hn | [Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle](https://github.com/rxolve/zpup) | mechanism | tools-for-strangers | yes | P-0524 |
+| H-0729 | 2026-11-21 | hn | [Show HN: Zpup – Zdog style 3D scenes in JSON, SVG from any angle](https://github.com/rxolve/zpup) | mechanism | tools-for-strangers | yes | P-0524 **works** |
 | H-0728 | 2026-11-21 | vault | [repurpose one piece into reels, shorts, threads and LinkedIn](https://www.instagram.com/p/DftKkuIjiJn/) | mechanism | tools-for-strangers | no: A test needs model answers and there is no local LLM on this |  |
 | H-0726 | 2026-11-21 | arxiv | [ResVision: Spectrum-Matched Resizing and Context-Preserving Inspection for Visual Reasonin](https://arxiv.org/abs/2611.26318) | mechanism | tech | no: Needs vision-language model answers and there is no local LL |  |
-| H-0725 | 2026-11-21 | github | [danielwh2/sprite-stacking: Agent skill: turn four pixel art views into fake-3D sprites you](https://github.com/danielwh2/sprite-stacking) | mechanism | tools-for-strangers | yes | P-0523 |
+| H-0725 | 2026-11-21 | github | [danielwh2/sprite-stacking: Agent skill: turn four pixel art views into fake-3D sprites you](https://github.com/danielwh2/sprite-stacking) | mechanism | tools-for-strangers | yes | P-0523 **works** |
 | H-0724 | 2026-11-21 | hn | [Show HN: AgentMall – Let your AI agent buy groceries](https://getagentmall.com) (intel) | mechanism | tools-for-strangers | no: Needs an account and API key, and a real checkout flow on re |  |
 | H-0723 | 2026-11-21 | vault | [Hook, Problem, Solution, Proof, CTA audit pass and the generic-opener ban list](https://www.instagram.com/p/DfO05yDle-w/) | mechanism | tools-for-strangers | no: A test needs model answers and there is no local LLM on this |  |
-| H-0722 | 2026-11-21 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=mdzIXanauYk) | mechanism | open-data | yes | P-0522 |
+| H-0722 | 2026-11-21 | youtube | [The UK MOT postcode lottery: 8.4 points between best and worst](https://www.youtube.com/watch?v=mdzIXanauYk) | mechanism | open-data | yes | P-0522 **works** |
 | H-0721 | 2026-11-21 | arxiv | [ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain](https://arxiv.org/abs/2611.26414) | mechanism | tech | no: Needs a VLM, a simulator and RL training, none of which are  |  |
-| H-0720 | 2026-11-21 | github | [kimtaeyoon83/mcp-server-youtube-transcript: This is an MCP server that allows you to direc](https://github.com/kimtaeyoon83/mcp-server-youtube-transcript) | mechanism | tools-for-strangers | yes | P-0521 |
+| H-0720 | 2026-11-21 | github | [kimtaeyoon83/mcp-server-youtube-transcript: This is an MCP server that allows you to direc](https://github.com/kimtaeyoon83/mcp-server-youtube-transcript) | mechanism | tools-for-strangers | yes | P-0521 **broken** |
 | H-0718 | 2026-11-21 | vault | [ten free or cheap AI video generators](https://www.instagram.com/p/Df7PXm4H9rr/) | mechanism | tools-for-strangers | no: The tool names are only on unseen slides and every generator |  |
 | H-0716 | 2026-11-20 | github | [JuneYaooo/rea-toon: AI 拆解学习短剧：为什么火、剧本怎么写、每一镜怎么拍 / Break down any short drama with AI: why ](https://github.com/JuneYaooo/rea-toon) | mechanism | tools-for-strangers | no: It needs vision model calls over frame grids, and a drama to |  |
 | H-0714 | 2026-11-20 | vault | [Scraped-list cold voice, SMS and email blueprints for UK prospects]() (intel) | mechanism | mechanism-hunting | no: It means contacting real people, which Proteus does not do,  |  |
@@ -494,6 +504,131 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0744 the bonding curve, explained in 30 seconds
+2026-11-22, youtube, https://www.youtube.com/watch?v=YBVozFI3lnw
+
+- **Mechanism:** A pump.fun style launch uses a bonding curve, a deterministic price function of tokens sold, so each buy raises the next price and each sell lowers it. The curve has a cap, quoted as 85 SOL, and once filled the coin graduates to a normal AMM pool. The video's claim that the pool cannot be pulled depends on whether liquidity tokens are burned or locked at graduation, which is checkable on chain, though the video is also an ad for one platform.
+- **Claim:** Price rises with each buy along a curve capped at 85 SOL, then the coin graduates into a pool that a platform locks so nobody can pull it.
+- **Testable:** yes. Of the 30 most recently graduated Solana pump.fun-style tokens on GeckoTerminal, what share show liquidity locked or burned at or above 99% on the rugcheck reader? Queued as P-0537.
+- **Idea on its own:** sound. A fixed curve with a graduation threshold is real and simple, and LP lock status is a public number the Grinder can read before it paper-buys.
+- **How it would be done:** Pull the newest pools from GeckoTerminal, keep those on the graduation DEX, query the rugcheck reader for each token's LP lock and burn share, and count how many pass. Feed the share, and each token's outcome after graduation, to the Grinder as a filter to test on paper. No person is needed; the platform's marketing claim just sets the question.
+- **Stack already covers:** GeckoTerminal, DexScreener and rugcheck readers and a Solana paper desk (the Grinder)
+- **Field Notes line:** The Solana bonding curve is a price ladder capped near 85 SOL; the useful check is how many graduated coins really have their liquidity locked.
+
+### H-0743 sybil-solutions/skill-distill: Distill a good Claude Code / Codex session into a skill an open-weight model can follow t
+2026-11-22, github, https://github.com/sybil-solutions/skill-distill
+
+- **Mechanism:** A teacher agent (Claude Code or Codex) reads a finished good session, writes a skill, then launches a student agent on a weaker open-weight model in tmux on a clean copy of the start state with the original prompt plus the skill. It compares the student's output with the reference, finds the first divergence, edits the skill there, and repeats with three trials per version until a human accepts. extract_session.py turns session logs into a readable reference with system text removed.
+- **Claim:** Turns a good frontier-model session into a skill an open-weight model can follow to reproduce the task.
+- **Testable:** yes. Does extract_session.py turn a real local Claude Code session log into a readable reference with system and CLAUDE.md text dropped (yes/no), and how many lines does it keep? Queued as P-0536.
+- **Idea on its own:** sound. Fixing the skill at the first point the student diverges, with repeated trials and a held reference, is a sensible way to transfer a procedure.
+- **How it would be done:** Clone the repo into the sandbox and run extract_session.py on one session log from the local Claude Code projects folder, then check the output for leaked system or CLAUDE.md text. The full loop needs a student harness and a model, so on this Mac it would need a hosted open-weight model on a free tier. A person would decide whether the student's output matches, since the final accept is manual.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** skill-distill https://github.com/sybil-solutions/skill-distill (The teacher skill, run bookkeeping and session extractor.); tmux https://github.com/tmux/tmux (Required by the student runner.); oh-my-pi (omp) (The tested student harness; the repo names it but gives no link.)
+- **Missing:** A student model that runs here without a key; none is installed.
+- **Field Notes line:** skill-distill has a strong model write a skill, then loops a weaker model against it three trials at a time until it reproduces the task.
+
+### H-0742 the free AI video tool on the slides
+2026-11-22, vault, https://www.instagram.com/p/DfUfbrUDk7S/
+
+- **Mechanism:** A carousel promoting an unnamed free AI video generator. Free tiers of this type usually run a text-to-video or image-to-video model behind a daily credit cap and a watermark, so the real mechanism is a credit allowance per account. The tool name is on the slides, which are unseen.
+- **Claim:** Make AI videos for free, tool unnamed in the caption.
+- **Testable:** no. The tool is unnamed, and any hosted generator needs an account. Needs: The slides naming the tool, and an account on it..
+- **Idea on its own:** needs-a-run. Free-tier generators exist, but quality, cap and watermark are unknown until the tool is named.
+- **How it would be done:** Capture the slides, extract the tool name, then compare it in one pass with the ten-command list. For the video itself, the current stack already covers it: Gemini stills, ElevenLabs voice, HeyGen or Tavus avatars and HyperFrames to compose and caption. A person would need to check the free tier's licence terms before any output is used publicly.
+- **Stack already covers:** HyperFrames (video compose, captions, render), ElevenLabs (voice), HeyGen and Tavus (avatars), Gemini (stills)
+- **Missing:** The slides naming the tool.
+- **Field Notes line:** A carousel promises free AI video without naming the tool; free tiers usually mean a daily credit cap and a watermark.
+
+### H-0739 pierridotite/mobile-agent-testers: 20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude C
+2026-11-22, github, https://github.com/pierridotite/mobile-agent-testers
+
+- **Mechanism:** A GitHub Actions matrix starts 20 jobs, each with an iOS Simulator or Android emulator in a given language, text size and device. In each job a Claude Code agent is given a persona and a goal, drives the device through screenshots and taps, and writes a bug report with numbered screenshots. Cost is the model tokens, quoted at $0.15 to $0.55 per phone, since public-repo runners are free.
+- **Claim:** 20 AI testers on 20 phones in parallel found 46 distinct bugs in LocalSend in 69 minutes for $4.62.
+- **Testable:** no. It needs Claude Code model calls and GitHub Actions, and there is no local LLM to stand in. Needs: Claude credit or API key and a GitHub repo with Actions..
+- **Idea on its own:** sound. Persona-driven exploratory testing across device and language variants catches layout bugs that scripted tests miss, and the cost is low.
+- **How it would be done:** Fork the repo, point it at an open-source mobile app, set the persona list and brief, and run the workflow with a cheap model for one or two phones first. Compare the reported bugs against the project's issue tracker to count how many are real and new. A person would triage the reports, since agents over-report cosmetic issues.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** mobile-agent-testers https://github.com/pierridotite/mobile-agent-testers (The workflow, personas and briefs.)
+- **Missing:** Independent counts of how many reported bugs are real and previously unknown.
+- **Field Notes line:** Twenty Claude agents each drive a different simulated phone on free GitHub runners and file bug reports; one run found 46 bugs for $4.62.
+
+### H-0738 the actual setup on the slides
+2026-11-22, vault, https://www.instagram.com/p/Df7veiBjiP-/
+
+- **Mechanism:** The usual shape of an LLM stock-trading agent: a scheduled loop pulls prices and news, asks the model for a decision under written risk rules, and sends orders through a broker API, often a paper account first. The decision step is the model; the edge, if any, comes from the data feed and the risk limits, not from the model. The slides are unseen so the actual broker, feed and rules are unknown.
+- **Claim:** Claude trades stocks 24/7, per a carousel whose caption gives no method or results.
+- **Testable:** no. The setup is unseen and a broker paper account needs signing up, which is an account. Needs: The slides, and a broker paper-trading account such as Alpaca..
+- **Idea on its own:** needs-a-run. The plumbing is simple, but whether an LLM picker beats holding is unproven and needs a pre-registered paper run.
+- **How it would be done:** Pre-register a rule set, then run a scheduled job that pulls daily bars and headlines, asks Claude for a long, flat or skip call with a one-line reason, and logs it to a paper book with commit timestamps. Score it against buy-and-hold and a coin flip over several weeks, the same way the Pitch and Grinder desks are scored. Order routing would use a paper broker API, so no real money is involved.
+- **Stack already covers:** launchd long-running pollers, Claude Code with skills and sub-agents, freqtrade
+- **To fetch:** Alpaca paper trading API https://alpaca.markets/docs/trading/paper-trading/ (Free paper broker for logging orders, needs a free account.); yfinance https://github.com/ranaroussi/yfinance (Keyless daily price pull for a paper book.)
+- **Missing:** The actual slides naming the broker, feed and risk rules.
+- **Field Notes line:** An LLM trading agent is a scheduler, a data feed, written risk rules and a broker API; the model only picks, and the edge sits elsewhere.
+
+### H-0737 scrapecrate/mcp-server (new in awesome-mcp-servers)
+2026-11-22, awesome, https://github.com/scrapecrate/mcp-server
+
+- **Mechanism:** A thin MCP server that exposes one tool per endpoint of a paid scraping API: YouTube transcripts and comments, Google Maps places and reviews, Trustpilot, app store reviews and the Meta Ad Library. The server itself holds no scraping logic; it forwards tool calls to api.scrapecrate.com and bills credits to the signed-in account or an API key. Platforms detect this class of service through rate and IP patterns, terms of service enforcement and login walls, and the Meta Ad Library has an official public API for the same data.
+- **Claim:** Gives Claude and other MCP clients every ScrapeCrate endpoint as a tool, billed per call, failed calls free.
+- **Testable:** no. It needs a ScrapeCrate account or API key and spends credits. Needs: A ScrapeCrate account or API key..
+- **Idea on its own:** sound. Wrapping an HTTP API as one-tool-per-endpoint MCP is standard and works; the only question is the data source and price.
+- **How it would be done:** Add the hosted server to Claude Code with claude mcp add, sign in, and call one cheap endpoint to see the shape of the response and the credit cost. For the free version of the same job, use the official Meta Ad Library API and the keyless YouTube transcript pipeline already here, and wrap those as a local MCP server. A person would only be needed to accept the service terms and fund the account.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline, Claude Code with skills and sub-agents
+- **To fetch:** scrapecrate mcp-server https://github.com/scrapecrate/mcp-server (The MCP wrapper, if a paid trial is ever wanted.); Meta Ad Library API https://www.facebook.com/ads/library/api (The official source for ad library data, as a free alternative.)
+- **Missing:** Any independent check of coverage, accuracy and legality of what the service returns.
+- **Field Notes line:** ScrapeCrate wraps a paid scraping API as an MCP server, so an agent can pull reviews, ad library entries and transcripts as tool calls.
+
+### H-0735 Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications
+2026-11-22, arxiv, https://arxiv.org/abs/2611.26221
+
+- **Mechanism:** For a program that calls an LLM, Sightline reads the model's attention weights from one forward pass of a recorded call to see which prompt placeholders the output actually read. A small learned classifier turns reads into 'used' or 'not used', and conformal calibration sets the pruning threshold so at most a chosen fraction alpha of true flows is missed. The result prunes spurious taint flows in information-flow analysis of LLM agents.
+- **Claim:** At alpha of 1% it misses about 1% of true flows and prunes 43.9 to 65.6% of spurious flows, 1.6 to 2.6 times the best baseline.
+- **Testable:** no. It needs attention access to an open-weight model and labelled call sites, and there is no local LLM on this Mac. Needs: An open-weight model with attention outputs and a labelled set of LLM call sites..
+- **Idea on its own:** needs-a-run. The attention-as-reading argument is proved in Lean and benchmarked, but it has not been checked outside the authors' collections.
+- **How it would be done:** Load a small open model through transformers with attention output enabled, run a set of prompts with several placeholders, and measure attention mass from output tokens to each placeholder span. Compare against whether deleting that span changes the output, to see how often reading and use agree. Calibration needs a labelled set, which a person would have to build for any real codebase.
+- **To fetch:** Hugging Face transformers https://github.com/huggingface/transformers (Read attention weights from an open model.); Qwen small instruct model https://huggingface.co/Qwen (A small open model that fits on this Mac for an attention check.)
+- **Missing:** A labelled set of LLM call sites and the Sightline code, if released.
+- **Field Notes line:** Attention weights can tell you which prompt inputs a model output actually read, letting taint analysis of LLM agents drop about half its false alarms.
+
+### H-0734 EL4CTEO/fast-anything: Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the
+2026-11-22, github, https://github.com/EL4CTEO/fast-anything
+
+- **Mechanism:** It profiles a running app to rank functions by time multiplied by how portable they are, records up to 500 real calls of the chosen function, then hands a TASK.md to a coding agent to write a one-function Rust crate. A verify step replays the recorded calls plus derived edge cases (NaN, infinities, non-ASCII, empty and larger inputs) and refuses to enable the port unless every output matches and the port is faster. Enabling inserts one marked block that is removed byte for byte on disable.
+- **Claim:** Port only the slow 5% of a Python, Node or Ruby app to Rust and prove equivalence; fuzzy dedupe in Python went from 4.91s to 42ms (116 times).
+- **Testable:** yes. Does fast-anything scan rank the known hot function first for a small Python script with one obvious CPU-bound loop (yes/no), and how many seconds does it take? Queued as P-0535.
+- **Idea on its own:** sound. Record-and-replay equivalence checking on real calls is a sound guard for agent-written ports.
+- **How it would be done:** Install the npm package in the sandbox, write a small Python script with a planted slow function (a Levenshtein dedupe) and run scan on it to see the ranking. For the full loop, run port and hand TASK.md to Claude Code, then verify and bench. Needs a Rust toolchain via rustup, which is free. A person is only needed to judge whether a port is worth the maintenance cost.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** fast-anything https://github.com/EL4CTEO/fast-anything (The scan, port, verify and bench CLI.); rustup https://rustup.rs (Rust toolchain the ports compile with.)
+- **Missing:** Independent reproduction of the headline speedups; the numbers are from the author's own machine.
+- **Field Notes line:** fast-anything ports only the slowest functions to Rust and refuses to switch on unless recorded real calls and edge cases all match.
+
+### H-0733 Show HN: agent-mcts – Monte Carlo tree search on top of Claude Code
+2026-11-22, hn, https://github.com/natsu0529/agent-mcts
+
+- **Mechanism:** agent-mcts wraps Claude Code in a Monte Carlo tree search: each node is a state of the working tree, children are alternative next edits proposed by the agent, and an evaluator score is backed up the tree to choose which branch to expand. It depends on a scoring oracle (tests, a metric) for each rollout and on many model calls per step. The one comment thread raises the right objection, that token cost grows with branching and only pays off when an oracle exists.
+- **Claim:** Monte Carlo tree search on top of Claude Code to explore several solution branches instead of one linear chain.
+- **Testable:** no. It needs model calls through Claude Code and there is no local LLM, so no keyless run is possible tonight. Needs: Claude Code model calls (spend) and a task with a cheap automatic oracle..
+- **Idea on its own:** needs-a-run. Search over agent branches helps when an oracle scores cheaply, but no evidence yet beats a single guided run at equal token cost.
+- **How it would be done:** Pick one task with a numeric oracle, such as making a failing test suite pass or lowering a benchmark time. Run the repo's search with a fixed token budget and a plain linear run with the same budget, three trials each, and compare success rate per token. Needs the repo cloned and Claude Code credit; no human beyond choosing the task.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agent-mcts https://github.com/natsu0529/agent-mcts (The tree-search wrapper itself.)
+- **Missing:** A paired comparison against a linear run at equal token spend.
+- **Field Notes line:** agent-mcts runs tree search over Claude Code edits; it only makes sense where a cheap automatic score exists, otherwise it burns tokens.
+
+### H-0732 the ten Claude commands
+2026-11-22, vault, https://www.instagram.com/p/Df4Pg_FH4iS/
+
+- **Mechanism:** A listicle of ten Claude (Code) slash commands or prompt shortcuts, names only on carousel slides that nobody has read yet. Whatever the commands are, they are saved prompts or skills that Claude Code loads on demand. The only moving part worth recording is which of them the existing setup lacks.
+- **Claim:** Ten Claude commands, named on Instagram slides, are presented as worth knowing.
+- **Testable:** no. The slides are unseen and there is no text or URL for the commands, so there is nothing to run. Needs: Screenshots of the slides or a transcript of the carousel text..
+- **Idea on its own:** needs-a-run. The idea of a curated command list is sound but the content is unknown until the slides are read.
+- **How it would be done:** Get the slide images (screenshot or save from the post), run them through a vision read to extract the ten names, then diff each against the skills and slash commands already in the Claude Code setup. Keep only the ones with a new mechanism and write each as a skill if it earns its place. A person would only be needed to capture the slides if the post blocks automated fetching.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** The slide content itself.
+- **Field Notes line:** A ten-command Claude carousel sits unread in the vault; once the slides are captured, only the commands we lack are worth keeping.
 
 ### H-0730 staryone/motlab: Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent ski
 2026-11-21, github, https://github.com/staryone/motlab
@@ -6177,6 +6312,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0742 | 2026-11-22 | the free AI video tool on the slides | open | needs-a-run | no |  |
+| H-0738 | 2026-11-22 | the actual setup on the slides | open | needs-a-run | no |  |
+| H-0732 | 2026-11-22 | the ten Claude commands | open | needs-a-run | no |  |
 | H-0728 | 2026-11-21 | repurpose one piece into reels, shorts, threads and LinkedIn | open | sound | no |  |
 | H-0723 | 2026-11-21 | Hook, Problem, Solution, Proof, CTA audit pass and the generic-opener ban list | open | sound | no |  |
 | H-0718 | 2026-11-21 | ten free or cheap AI video generators | open | needs-a-run | no |  |
@@ -6335,6 +6473,16 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0432 | 2026-11-22 | oh-my-pi (omp) | The tested student harness; the repo names it but gives no link. | H-0743 (sybil-solutions/skill-distill: Distill a good Clau) | shelf |
+| T-0431 | 2026-11-22 | [skill-distill](https://github.com/sybil-solutions/skill-distill) | The teacher skill, run bookkeeping and session extractor. | H-0743 (sybil-solutions/skill-distill: Distill a good Clau) | shelf |
+| T-0430 | 2026-11-22 | [mobile-agent-testers](https://github.com/pierridotite/mobile-agent-testers) | The workflow, personas and briefs. | H-0739 (pierridotite/mobile-agent-testers: 20 AI testers o) | shelf |
+| T-0429 | 2026-11-22 | [Alpaca paper trading API](https://alpaca.markets/docs/trading/paper-trading/) | Free paper broker for logging orders, needs a free account. | H-0738 (the actual setup on the slides) | shelf |
+| T-0428 | 2026-11-22 | [Meta Ad Library API](https://www.facebook.com/ads/library/api) | The official source for ad library data, as a free alternative. | H-0737 (scrapecrate/mcp-server (new in awesome-mcp-servers) | shelf |
+| T-0427 | 2026-11-22 | [scrapecrate mcp-server](https://github.com/scrapecrate/mcp-server) | The MCP wrapper, if a paid trial is ever wanted. | H-0737 (scrapecrate/mcp-server (new in awesome-mcp-servers) | shelf |
+| T-0426 | 2026-11-22 | [Qwen small instruct model](https://huggingface.co/Qwen) | A small open model that fits on this Mac for an attention check. | H-0735 (Sightline: Calibrated Data-Flow Summaries for LLM-) | shelf |
+| T-0425 | 2026-11-22 | [Hugging Face transformers](https://github.com/huggingface/transformers) | Read attention weights from an open model. | H-0735 (Sightline: Calibrated Data-Flow Summaries for LLM-) | shelf |
+| T-0424 | 2026-11-22 | [fast-anything](https://github.com/EL4CTEO/fast-anything) | The scan, port, verify and bench CLI. | H-0734 (EL4CTEO/fast-anything: Don't rewrite it in Rust. R) | shelf |
+| T-0423 | 2026-11-22 | [agent-mcts](https://github.com/natsu0529/agent-mcts) | The tree-search wrapper itself. | H-0733 (Show HN: agent-mcts – Monte Carlo tree search on t) | shelf |
 | T-0422 | 2026-11-21 | [motlab](https://github.com/staryone/motlab) | The video engine and its agent skills. | H-0730 (staryone/motlab: Video as code: canvas scenes rend) | shelf |
 | T-0421 | 2026-11-21 | [zpup](https://github.com/rxolve/zpup) | The library under test, with a playground at rxolve.github.io/zpup. | H-0729 (Show HN: Zpup – Zdog style 3D scenes in JSON, SVG ) | shelf |
 | T-0420 | 2026-11-21 | [Pillow and NumPy](https://pypi.org/project/pillow/) | The only Python requirements for the slicer. | H-0725 (danielwh2/sprite-stacking: Agent skill: turn four ) | shelf |
@@ -6762,6 +6910,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0741 | 2026-11-22 | youtube | [🚨 Apple just changed local AI with the M5 Max MacBook Pro 🤖💻](https://www.youtube.com/watch?v=ZCa2B0Re36Q) | Comment-for-link hype with an unsupported claim and no mechanism or measurement. |
+| H-0740 | 2026-11-22 | arxiv | [EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL](https://arxiv.org/abs/2611.26196) | A robot-control post-training recipe (distil, SFT, RL on LIBERO) with no use for any desk here and a standard recipe oth |
+| H-0736 | 2026-11-22 | youtube | [Apple messed up the M5 Ultra 😂](https://www.youtube.com/watch?v=Jx6dw1Yu6rk) | A hardware banter clip whose only content is an Apple logo size joke, with no mechanism or number. |
 | H-0731 | 2026-11-21 | youtube | [Which car fails its MOT the least? (UK 2025) #shorts](https://www.youtube.com/watch?v=odRxggAh3G8) | Transcript unavailable and it covers the same MOT theme as the better item. |
 | H-0727 | 2026-11-21 | youtube | [Martin Has Beaten The Worst Lichess Bot?](https://www.youtube.com/watch?v=co33P6bb0eg) | Entertainment clip of a bot match with no mechanism. |
 | H-0719 | 2026-11-21 | hn | [Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?](https://news.ycombinator.com/item?id=50583761) | Personal job-search advice thread with no mechanism to record. |
