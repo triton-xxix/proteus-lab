@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 438 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 439 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
 
-## Queue (17 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,13 +28,13 @@ Verdicts so far: 438 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | desk | none | 2026-11-23 | 0 | 20 min |
-| P-0536 | skill-distill extract_session.py: does it strip system text from a real Claude Code session log? | harvest | none |  | 0 | 15 min |
 | P-0537 | Bonding-curve graduation: what share of 30 recent graduated Solana tokens have 99%+ LP locked or burned? | harvest | none |  | 0 | 25 min |
 
-## Verdicts (515)
+## Verdicts (516)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-22 | P-0536 | skill-distill extract_session.py: does it strip system text from a real Claude Code session log? | **works** | On a 124-call Claude Code transcript it cut 40 system-text marker lines to 6: CLAUDE.md, memory, email and git-status blocks all gone. Two leaks: the scheduled-task wrapper becomes the task, and system-reminders inside tool results pass through (4 lines); both one-line fixes. | `experiments/2026-11-22-P-0536` | 0 min, 13 calls, 0 denied |
 | 2026-11-22 | P-0535 | fast-anything scan: does the profiler rank the planted hot function first in a 40-line Python script? | **blocked** | Not run: the npm package is an 11 KB JS shim over a prebuilt native binary per platform (0.7.0), and the repo is one day old, so executing it unattended is running an untrusted file. Test script design is in the README. | `experiments/2026-11-22-P-0535` | 0 min, 4 calls, 0 denied |
 | 2026-11-22 | P-0534 | MOT gap matched on miles: P-0530's sample (DVSA 2024 zip, three months, 40 MB heads, keyless), class 4 cars first used 2015 to 2019, binned by test_mileage per year of age (under 5k, 5 to 8k, 8 to 11k, 11 to 14k, 14k and over); London minus Scotland pass rate within each bin and reweighted to Scotland's bin mix. How much of P-0530's 8.3 points is left? | **works** | Matched on miles a year the London minus Scotland gap is 9.3 points incl PRS (6.9 P only), against 9.6 raw: mileage explains almost none. Shot said about 7: a miss by 2.3. London cars run further (13.3 percent at 14k a year or more against 4.9) and the gap grows with mileage, 5.2 points under 5k to 16.6 at 14k and over, so high-mileage London cars (likely private hire, kept up) pass far more than high-mileage Scottish ones. Caveat: 40 MB heads of three months, no private-hire flag. Next: close (neither the car nor the miles explains the gap; the region does). | `experiments/2026-11-22-P-0534` | 1 min, 8 calls, 0 denied |
 | 2026-11-22 | P-0533 | Aurora detector, deepen: from experiments/2026-11-22-P-0532/results.json, name the 11 Aurora view spikes on calm days (Wikimedia top-articles and news of those dates, keyless), and add en Geomagnetic_storm daily views as a second signal: does either-article-spikes lift the 16 of 28 Kp 7+ days caught, and at what cost in calm-day spikes? | **works** | en Geomagnetic_storm view spikes catch 22 of 28 Kp 7+ days against Aurora 16; either article catches the same 22. Cost: 38 calm-day spikes against Aurora 11, so 43 for either. Shot said 19 caught and 5 more calm spikes: caught too low by 3, calm cost far too low (32 more, not 5). 7 of the 8 named calm Aurora spikes are tails within five days of a Kp 8+ storm (May 2024, Oct 2024, Nov 2025), so Aurora false alarms are mostly late readers, not other news; 3 dates refused with HTTP 429. Next: close (Aurora for precision, Geomagnetic_storm for recall; nothing a desk needs). | `experiments/2026-11-22-P-0533` | 0 min, 6 calls, 0 denied |
