@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 441 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 442 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,11 +28,13 @@ Verdicts so far: 441 works, 10 broken, 44 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | desk | none | 2026-11-23 | 0 | 20 min |
+| P-0540 | MOT high-mileage London cars: are the 14k-a-year fleet Toyota hybrids, and how much of the London minus Scotland gap goes without them? | refill | none |  | 0 | 20 min |
 
-## Verdicts (518)
+## Verdicts (519)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-22 | P-0539 | Lichess bot pool: is the fall in acceptance since week 41 the same bots declining more, or new never-yes bots joining the ask list? | **works** | Neither: the one-game-per-opponent rule drains every yes-sayer, so asks to never-yes bots rose from 62% of answerable asks in week 41 to 84-93% since; the 22 bots asked across 3+ weeks gave 2 yeses in 628. Newcomers still accept 11.6 and 14.5% in weeks 46 and 47. | `experiments/2026-11-22-P-0539` | 0 min, 6 calls, 0 denied |
 | 2026-11-22 | P-0538 | ASVspoof 2019 dummy zip on Hugging Face: how many real LA dev flacs does it hold, and how many match SEAR file_ids? | **works** | The ungated LanceaKing mirror's 3.75 MB dummy zip is a real cut-down LA.zip: 45 flacs, of which 5 train, 10 dev and 10 eval countermeasure clips, and all 15 train and dev ids are in SEAR t1. 15 is far short of the 200 refill 218 needs, so that row stays held. | `experiments/2026-11-22-P-0538` | 0 min, 8 calls, 0 denied |
 | 2026-11-22 | P-0537 | Bonding-curve graduation: what share of 30 recent graduated Solana tokens have 99%+ LP locked or burned? | **works** | In tonight's 142-token Grinder snapshot, 57 of 59 PumpSwap graduates and 20 of 20 on-curve pump.fun tokens read 99%+ LP locked or burned (30 of 30 youngest), against 28 of 43 Meteora and 7 of 13 Raydium: locked-at-graduation is pump.fun's default, not one launchpad's feature. | `experiments/2026-11-22-P-0537` | 0 min, 7 calls, 0 denied |
 | 2026-11-22 | P-0536 | skill-distill extract_session.py: does it strip system text from a real Claude Code session log? | **works** | On a 124-call Claude Code transcript it cut 40 system-text marker lines to 6: CLAUDE.md, memory, email and git-status blocks all gone. Two leaks: the scheduled-task wrapper becomes the task, and system-reminders inside tool results pass through (4 lines); both one-line fixes. | `experiments/2026-11-22-P-0536` | 0 min, 13 calls, 0 denied |

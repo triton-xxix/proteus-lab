@@ -1,5 +1,5 @@
 {
- "next_id": 539,
+ "next_id": 541,
  "items": [
   {
    "id": "P-0001",
@@ -13750,6 +13750,48 @@
    ],
    "minutes": 0,
    "calls": 8,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0539",
+   "title": "Lichess bot pool: is the fall in acceptance since week 41 the same bots declining more, or new never-yes bots joining the ask list?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:35:24+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:35:57+0000",
+   "note": "Neither: the one-game-per-opponent rule drains every yes-sayer, so asks to never-yes bots rose from 62% of answerable asks in week 41 to 84-93% since; the 22 bots asked across 3+ weeks gave 2 yeses in 628. Newcomers still accept 11.6 and 14.5% in weeks 46 and 47.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0539"
+   ],
+   "minutes": 0,
+   "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0540",
+   "title": "MOT high-mileage London cars: are the 14k-a-year fleet Toyota hybrids, and how much of the London minus Scotland gap goes without them?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-22",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }

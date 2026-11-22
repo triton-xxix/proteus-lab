@@ -1,0 +1,161 @@
+{
+ "rows": 1531,
+ "bots": 133,
+ "ever_yes_bots": 67,
+ "weeks": [
+  {
+   "week": 41,
+   "all": {
+    "asks": 102,
+    "acc": 12,
+    "rate": 11.8
+   },
+   "veteran": {
+    "asks": 102,
+    "acc": 12,
+    "rate": 11.8
+   },
+   "newcomer": {
+    "asks": 0,
+    "acc": 0,
+    "rate": null
+   },
+   "never_yes_share": 61.8,
+   "distinct_bots": 47
+  },
+  {
+   "week": 42,
+   "all": {
+    "asks": 112,
+    "acc": 10,
+    "rate": 8.9
+   },
+   "veteran": {
+    "asks": 94,
+    "acc": 6,
+    "rate": 6.4
+   },
+   "newcomer": {
+    "asks": 18,
+    "acc": 4,
+    "rate": 22.2
+   },
+   "never_yes_share": 78.6,
+   "distinct_bots": 35
+  },
+  {
+   "week": 43,
+   "all": {
+    "asks": 287,
+    "acc": 20,
+    "rate": 7.0
+   },
+   "veteran": {
+    "asks": 208,
+    "acc": 13,
+    "rate": 6.2
+   },
+   "newcomer": {
+    "asks": 79,
+    "acc": 7,
+    "rate": 8.9
+   },
+   "never_yes_share": 76.7,
+   "distinct_bots": 50
+  },
+  {
+   "week": 44,
+   "all": {
+    "asks": 282,
+    "acc": 9,
+    "rate": 3.2
+   },
+   "veteran": {
+    "asks": 203,
+    "acc": 6,
+    "rate": 3.0
+   },
+   "newcomer": {
+    "asks": 79,
+    "acc": 3,
+    "rate": 3.8
+   },
+   "never_yes_share": 92.6,
+   "distinct_bots": 39
+  },
+  {
+   "week": 45,
+   "all": {
+    "asks": 118,
+    "acc": 9,
+    "rate": 7.6
+   },
+   "veteran": {
+    "asks": 69,
+    "acc": 6,
+    "rate": 8.7
+   },
+   "newcomer": {
+    "asks": 49,
+    "acc": 3,
+    "rate": 6.1
+   },
+   "never_yes_share": 86.4,
+   "distinct_bots": 39
+  },
+  {
+   "week": 46,
+   "all": {
+    "asks": 76,
+    "acc": 5,
+    "rate": 6.6
+   },
+   "veteran": {
+    "asks": 33,
+    "acc": 0,
+    "rate": 0.0
+   },
+   "newcomer": {
+    "asks": 43,
+    "acc": 5,
+    "rate": 11.6
+   },
+   "never_yes_share": 84.2,
+   "distinct_bots": 21
+  },
+  {
+   "week": 47,
+   "all": {
+    "asks": 135,
+    "acc": 12,
+    "rate": 8.9
+   },
+   "veteran": {
+    "asks": 80,
+    "acc": 4,
+    "rate": 5.0
+   },
+   "newcomer": {
+    "asks": 55,
+    "acc": 8,
+    "rate": 14.5
+   },
+   "never_yes_share": 88.9,
+   "distinct_bots": 27
+  }
+ ],
+ "bots_asked_3plus_weeks": 29,
+ "same_bots_both_sides_of_wk41": {
+  "n_bots": 22,
+  "wk41_or_earlier": {
+   "acc": 0,
+   "asks": 46,
+   "rate": 0.0
+  },
+  "after_wk41": {
+   "acc": 2,
+   "asks": 628,
+   "rate": 0.3
+  }
+ }
+}
