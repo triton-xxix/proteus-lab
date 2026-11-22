@@ -21,5 +21,9 @@ articles filtered for sky words.
 
 ## What I did not do
 
+Correction, 22 Nov Workshop: "7 of the 8 named" above is 6 of 8 counted from P-0532's rows. 19 May
+2024 is 8 days after the 11 May Kp 9 day, not within five; 30 Jan 2026 is 11 days after 19 Jan's
+Kp 8.7. The drawn page (docs/probes/P-0532/) carries 6.
+
 The three 429 dates were not retried. No news search. The calm rule counts a day calm if Kp stayed
 under 5 that day and the day before, which marks storm tails as false alarms.

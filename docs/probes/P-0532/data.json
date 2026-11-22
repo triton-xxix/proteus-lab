@@ -1,0 +1,48 @@
+{
+ "built_from": [
+  "experiments/2026-11-22-P-0532/results.json",
+  "experiments/2026-11-22-P-0533/results.json",
+  "PROBES.md"
+ ],
+ "days": 1056,
+ "first": "2024-01-01",
+ "last": "2026-11-21",
+ "kp7_days": 28,
+ "kp7_caught_aurora": 16,
+ "kp7_caught_pct": 57.1,
+ "kp5_days": 142,
+ "kp5_caught": 25,
+ "spike_days": 39,
+ "spikes_near_kp5": 28,
+ "calm_spikes": 11,
+ "corr_next_day": 0.22,
+ "top_day": "2024-05-11",
+ "top_views": 341117,
+ "top_ratio": 102.5,
+ "geomagnetic": {
+  "caught": 22,
+  "calm": 38
+ },
+ "either": {
+  "caught": 22,
+  "calm": 43
+ },
+ "named_calm": 8,
+ "tails_within_5_days": 6,
+ "refused_429": [
+  "2026-08-05",
+  "2026-08-21",
+  "2026-08-26"
+ ],
+ "shots": {
+  "P-0532": {
+   "pct": 70,
+   "corr": 0.5
+  },
+  "P-0533": {
+   "caught": 19,
+   "more_calm": 5
+  }
+ },
+ "storm_rows": 28
+}
