@@ -10,9 +10,10 @@
  "run_log": "/Users/triton/PROTEUS/state/runs/2026-11-22.md",
  "probes": [
   "P-0528",
-  "P-0530"
+  "P-0530",
+  "P-0531"
  ],
  "stopped_at": null,
  "stop_reason": null,
- "refills": 3
+ "refills": 4
 }

@@ -1,0 +1,168 @@
+{
+ "rows": 1531,
+ "verdict_first_words": {
+  "refused": 419,
+  "no": 160,
+  "declined": 875,
+  "accepted": 77
+ },
+ "by_hour": {
+  "6": {
+   "asks": 252,
+   "accepted": 15,
+   "rate": 6.0
+  },
+  "7": {
+   "asks": 681,
+   "accepted": 28,
+   "rate": 4.1
+  },
+  "8": {
+   "asks": 426,
+   "accepted": 24,
+   "rate": 5.6
+  },
+  "11": {
+   "asks": 25,
+   "accepted": 3,
+   "rate": 12.0
+  },
+  "22": {
+   "asks": 139,
+   "accepted": 6,
+   "rate": 4.3
+  },
+  "23": {
+   "asks": 8,
+   "accepted": 1,
+   "rate": 12.5
+  }
+ },
+ "by_weekday": {
+  "Fri": {
+   "asks": 282,
+   "accepted": 14,
+   "rate": 5.0
+  },
+  "Mon": {
+   "asks": 225,
+   "accepted": 9,
+   "rate": 4.0
+  },
+  "Sat": {
+   "asks": 245,
+   "accepted": 9,
+   "rate": 3.7
+  },
+  "Sun": {
+   "asks": 266,
+   "accepted": 9,
+   "rate": 3.4
+  },
+  "Thu": {
+   "asks": 156,
+   "accepted": 10,
+   "rate": 6.4
+  },
+  "Tue": {
+   "asks": 205,
+   "accepted": 13,
+   "rate": 6.3
+  },
+  "Wed": {
+   "asks": 152,
+   "accepted": 13,
+   "rate": 8.6
+  }
+ },
+ "by_week_hour": {
+  "2026-W41 h06": {
+   "asks": 16,
+   "accepted": 3,
+   "rate": 18.8
+  },
+  "2026-W41 h07": {
+   "asks": 22,
+   "accepted": 3,
+   "rate": 13.6
+  },
+  "2026-W41 h22": {
+   "asks": 139,
+   "accepted": 6,
+   "rate": 4.3
+  },
+  "2026-W42 h06": {
+   "asks": 151,
+   "accepted": 6,
+   "rate": 4.0
+  },
+  "2026-W42 h07": {
+   "asks": 67,
+   "accepted": 3,
+   "rate": 4.5
+  },
+  "2026-W42 h23": {
+   "asks": 8,
+   "accepted": 1,
+   "rate": 12.5
+  },
+  "2026-W43 h06": {
+   "asks": 85,
+   "accepted": 6,
+   "rate": 7.1
+  },
+  "2026-W43 h07": {
+   "asks": 234,
+   "accepted": 12,
+   "rate": 5.1
+  },
+  "2026-W43 h08": {
+   "asks": 48,
+   "accepted": 2,
+   "rate": 4.2
+  },
+  "2026-W44 h07": {
+   "asks": 215,
+   "accepted": 5,
+   "rate": 2.3
+  },
+  "2026-W44 h08": {
+   "asks": 89,
+   "accepted": 4,
+   "rate": 4.5
+  },
+  "2026-W45 h07": {
+   "asks": 119,
+   "accepted": 5,
+   "rate": 4.2
+  },
+  "2026-W45 h08": {
+   "asks": 7,
+   "accepted": 1,
+   "rate": 14.3
+  },
+  "2026-W45 h11": {
+   "asks": 25,
+   "accepted": 3,
+   "rate": 12.0
+  },
+  "2026-W46 h07": {
+   "asks": 24,
+   "accepted": 0,
+   "rate": 0.0
+  },
+  "2026-W46 h08": {
+   "asks": 140,
+   "accepted": 5,
+   "rate": 3.6
+  },
+  "2026-W47 h08": {
+   "asks": 142,
+   "accepted": 12,
+   "rate": 8.5
+  }
+ },
+ "first": "2026-10-09T22:41:37Z",
+ "last": "2026-11-22T08:41:10Z",
+ "hours_10_points_above_08": []
+}
