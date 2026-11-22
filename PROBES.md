@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 434 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,6 +28,7 @@ Verdicts so far: 434 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | desk | none | 2026-11-23 | 0 | 20 min |
+| P-0531 | Lichess acceptance by hour: from games/lichess/CHALLENGES.csv (1,531 rows, on disk), acceptance rate by UTC hour and by weekday, with the date held fixed where two hours share a week, since nightly calls stopped on 12 Oct and mornings began then. Is any hour with 50+ asks above the 08:00 to 09:00 rate by 10 points or more? | refill | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (510)
 
