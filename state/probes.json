@@ -13644,22 +13644,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-22",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-22T12:45:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-22T12:47:37+0000",
+   "note": "Matched on miles a year the London minus Scotland gap is 9.3 points incl PRS (6.9 P only), against 9.6 raw: mileage explains almost none. Shot said about 7: a miss by 2.3. London cars run further (13.3 percent at 14k a year or more against 4.9) and the gap grows with mileage, 5.2 points under 5k to 16.6 at 14k and over, so high-mileage London cars (likely private hire, kept up) pass far more than high-mileage Scottish ones. Caveat: 40 MB heads of three months, no private-hire flag. Next: close (neither the car nor the miles explains the gap; the region does).",
+   "artefacts": [
+    "experiments/2026-11-22-P-0534"
+   ],
+   "minutes": 1,
+   "calls": 8,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.65,
     "number": "mileage-matched London minus Scotland gap about 7 points incl PRS, against 9.6 raw",
-    "at": "2026-11-22T12:45:50+0000"
+    "at": "2026-11-22T12:45:50+0000",
+    "hit": true
    }
   }
  ]

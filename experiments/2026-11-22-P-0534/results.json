@@ -1,0 +1,65 @@
+{
+ "skipped_no_mileage": 197,
+ "bins": [
+  {
+   "bin": "<5k",
+   "london_n": 15731,
+   "scotland_n": 36262,
+   "london_share": 25.8,
+   "gap_incl_PRS": 5.21,
+   "gap_P_only": 3.75,
+   "scotland_share": 22.1
+  },
+  {
+   "bin": "5-8k",
+   "london_n": 18733,
+   "scotland_n": 61758,
+   "london_share": 30.7,
+   "gap_incl_PRS": 8.51,
+   "gap_P_only": 6.34,
+   "scotland_share": 37.6
+  },
+  {
+   "bin": "8-11k",
+   "london_n": 12544,
+   "scotland_n": 43033,
+   "london_share": 20.6,
+   "gap_incl_PRS": 10.79,
+   "gap_P_only": 7.9,
+   "scotland_share": 26.2
+  },
+  {
+   "bin": "11-14k",
+   "london_n": 5844,
+   "scotland_n": 15097,
+   "london_share": 9.6,
+   "gap_incl_PRS": 14.45,
+   "gap_P_only": 11.09,
+   "scotland_share": 9.2
+  },
+  {
+   "bin": "14k+",
+   "london_n": 8101,
+   "scotland_n": 8079,
+   "london_share": 13.3,
+   "gap_incl_PRS": 16.6,
+   "gap_P_only": 11.94,
+   "scotland_share": 4.9
+  },
+  {
+   "bin": "ALL",
+   "london_n": 60953,
+   "scotland_n": 164229,
+   "london_share": 100.0,
+   "gap_incl_PRS": 9.56,
+   "gap_P_only": 6.91,
+   "scotland_share": 100.0
+  }
+ ],
+ "adjusted": {
+  "P_only": 6.89,
+  "incl_PRS": 9.32
+ },
+ "raw_P_only": 6.91,
+ "raw_incl_PRS": 9.56
+}
