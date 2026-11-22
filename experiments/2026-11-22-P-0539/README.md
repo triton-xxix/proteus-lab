@@ -28,5 +28,7 @@ Neither of the two framings: it is the house rule. Since 14 Oct a bot that accep
 again (one game per opponent), so every yes leaves the pool and the asks pile onto bots that always
 say no: 62% of answerable asks went to never-yes bots in week 41, 84 to 93% since. The repeat asks are
 almost pure waste (2 yeses in 628). Newcomers still accept at about 10 to 15% in weeks 46 and 47.
-So acceptance is set by how many new bots appear, not by bots changing their minds; skipping bots
-that have declined, say, five times would cut most of the wasted asks without touching the rule.
+So acceptance is set by how many new bots appear, not by bots changing their minds. The fix for the
+wasted asks is already measured: P-0512 (21 Nov) replayed a drop-after-N rule (N=8 saves 649 asks and
+loses 3 acceptances) and proposed it for `lichess.py` in a daytime slot. Correction written the same
+night: an earlier draft of this paragraph suggested that replay as new.

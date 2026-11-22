@@ -1,0 +1,42 @@
+{
+ "trades": 3943,
+ "len_sessions": {
+  "median": 4.0,
+  "p90": 8.0,
+  "max": 20
+ },
+ "mae": {
+  "median": -0.004,
+  "p10": -0.0378,
+  "p1": -0.1002
+ },
+ "ever_under_water": 0.646,
+ "under_3plus_sessions": 0.347,
+ "won_after_3plus_under": 0.233,
+ "by_depth": [
+  {
+   "mae_band": "0% to -1%",
+   "n": 1223,
+   "won": 0.706,
+   "mean_final": 0.0075
+  },
+  {
+   "mae_band": "-1% to -2%",
+   "n": 528,
+   "won": 0.473,
+   "mean_final": 0.0014
+  },
+  {
+   "mae_band": "-2% to -4%",
+   "n": 492,
+   "won": 0.181,
+   "mean_final": -0.011
+  },
+  {
+   "mae_band": "-4% to -100%",
+   "n": 347,
+   "won": 0.035,
+   "mean_final": -0.0451
+  }
+ ]
+}
