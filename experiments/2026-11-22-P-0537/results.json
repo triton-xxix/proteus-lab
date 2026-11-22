@@ -1,0 +1,91 @@
+{
+  "snapshot_hour": "2026-11-22T23",
+  "tokens": 142,
+  "by_dex": {
+    "pumpswap": {
+      "n": 59,
+      "lp_known": 59,
+      "lp_99_plus": 57,
+      "lp_under_50": 2,
+      "median_lp": 100.0,
+      "median_age_h": 67.4
+    },
+    "meteora": {
+      "n": 43,
+      "lp_known": 43,
+      "lp_99_plus": 28,
+      "lp_under_50": 12,
+      "median_lp": 100.0,
+      "median_age_h": 21.5
+    },
+    "pumpfun": {
+      "n": 20,
+      "lp_known": 20,
+      "lp_99_plus": 20,
+      "lp_under_50": 0,
+      "median_lp": 100.0,
+      "median_age_h": 14.1
+    },
+    "raydium": {
+      "n": 13,
+      "lp_known": 13,
+      "lp_99_plus": 7,
+      "lp_under_50": 6,
+      "median_lp": 99.26,
+      "median_age_h": 1564.2
+    },
+    "orca": {
+      "n": 6,
+      "lp_known": 6,
+      "lp_99_plus": 0,
+      "lp_under_50": 6,
+      "median_lp": 0.0,
+      "median_age_h": 13275.8
+    },
+    "meteoradbc": {
+      "n": 1,
+      "lp_known": 0,
+      "lp_99_plus": 0,
+      "lp_under_50": 0,
+      "median_lp": null,
+      "median_age_h": 2.5
+    }
+  },
+  "youngest_30_pump": {
+    "n": 30,
+    "lp_known": 30,
+    "lp_99_plus": 30,
+    "values": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ]
+  }
+}

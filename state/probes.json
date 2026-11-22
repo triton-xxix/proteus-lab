@@ -13717,15 +13717,17 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-22",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:32:26+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:32:58+0000",
+   "note": "In tonight's 142-token Grinder snapshot, 57 of 59 PumpSwap graduates and 20 of 20 on-curve pump.fun tokens read 99%+ LP locked or burned (30 of 30 youngest), against 28 of 43 Meteora and 7 of 13 Raydium: locked-at-graduation is pump.fun's default, not one launchpad's feature.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0537"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false
   }
