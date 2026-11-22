@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 436 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,6 +28,7 @@ Verdicts so far: 436 works, 10 broken, 43 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | refill | none | 2026-11-23 | 0 | 15 min |
 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | desk | none | 2026-11-23 | 0 | 20 min |
+| P-0533 | Aurora detector, deepen: from experiments/2026-11-22-P-0532/results.json, name the 11 Aurora view spikes on calm days (Wikimedia top-articles and news of those dates, keyless), and add en Geomagnetic_storm daily views as a second signal: does either-article-spikes lift the 16 of 28 Kp 7+ days caught, and at what cost in calm-day spikes? | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (512)
 
