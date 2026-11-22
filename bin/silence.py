@@ -50,6 +50,39 @@ GATED = {"grinder-ledger": "grinder-snapshot"}
 # FIXTURE_AHEAD days on; a missing or unreadable calendar keeps the desk SILENT.
 FIXTURE_GATED = {"pitch-model": ("E0", "E1", "SP1", "D1", "I1", "F1", "N1", "P1", "SC0")}
 FIXTURE_AHEAD = 2
+# A window-gated desk only has something to call during an international window (F-0104, 22 Nov 2026:
+# the judgement book flagged daily after the 10 to 19 Nov break and would have until March 2027).
+# Windows are not guessed: a window is a run of WINDOW_MIN_DAYS or more UTC days with no kickoff in
+# any of the nine club calendars, which is when leagues stop for internationals. The desk is SILENT
+# only when such a break ended after its last row and within the last WINDOW_GRACE days; otherwise
+# its quiet is the gap between windows. A missing calendar keeps the old days-only rule.
+WINDOW_GATED = {"judgement-book": FIXTURE_GATED["pitch-model"]}
+WINDOW_MIN_DAYS = 7
+WINDOW_GRACE = 7
+
+
+def club_breaks(divs):
+    """(start, end) unix of each run of WINDOW_MIN_DAYS+ kickoff-free UTC days, or None if a calendar is missing."""
+    days = set()
+    for div in divs:
+        try:
+            with open("%s/pitch/cache/fixturedownload-%s.json" % (ROOT, div)) as fh:
+                rows = json.load(fh)
+        except (OSError, ValueError):
+            return None
+        for m in rows:
+            try:
+                days.add(datetime.fromisoformat(m["DateUtc"].replace("Z", "").strip()).date())
+            except (KeyError, ValueError, AttributeError):
+                continue
+    out, prev = [], None
+    for d in sorted(days):
+        if prev is not None and (d - prev).days - 1 >= WINDOW_MIN_DAYS:
+            lo = datetime(prev.year, prev.month, prev.day, tzinfo=timezone.utc) + timedelta(days=1)
+            hi = datetime(d.year, d.month, d.day, tzinfo=timezone.utc)
+            out.append((lo.timestamp(), hi.timestamp()))
+        prev = d
+    return out
 
 
 def kickoffs_between(divs, lo, hi):
@@ -134,6 +167,10 @@ def main():
             k = kickoffs_between(FIXTURE_GATED[desk], now - limit * 86400, now + FIXTURE_AHEAD * 86400)
             if k == 0:
                 state = "quiet: no fixtures, %dd back to %dd ahead" % (limit, FIXTURE_AHEAD)
+        if state == "SILENT" and desk in WINDOW_GATED:
+            br = club_breaks(WINDOW_GATED[desk])
+            if br is not None and not any(hi > t and now - WINDOW_GRACE * 86400 <= hi <= now for lo, hi in br):
+                state = "quiet: no window ended in last %dd" % WINDOW_GRACE
         states[desk] = state
         # F-0101, 19 Nov 2026: once fixtures return the desk reads ok, but its 7d count still covers
         # the break. If no league kicked off in the last 7 days, a low 7d is the break, not a fault.
