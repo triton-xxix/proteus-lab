@@ -1,0 +1,343 @@
+{
+ "bins": [
+  {
+   "bin": "<5k",
+   "London": {
+    "n": 15731,
+    "hybrid_pct": 5.0,
+    "toyota_hybrid_pct": 0.8,
+    "top_hybrid_makes": [
+     [
+      "BMW",
+      197
+     ],
+     [
+      "LEXUS",
+      155
+     ],
+     [
+      "TOYOTA",
+      125
+     ]
+    ]
+   },
+   "Scotland": {
+    "n": 36262,
+    "hybrid_pct": 1.3,
+    "toyota_hybrid_pct": 0.3,
+    "top_hybrid_makes": [
+     [
+      "TOYOTA",
+      114
+     ],
+     [
+      "KIA",
+      71
+     ],
+     [
+      "BMW",
+      67
+     ]
+    ]
+   },
+   "gap_all": {
+    "incl_PRS": 5.21,
+    "P_only": 3.75,
+    "london_n": 15731,
+    "scotland_n": 36262
+   },
+   "gap_no_hybrid": {
+    "incl_PRS": 5.25,
+    "P_only": 3.78,
+    "london_n": 14941,
+    "scotland_n": 35794
+   },
+   "gap_hybrid": {
+    "incl_PRS": -2.16,
+    "P_only": -3.34,
+    "london_n": 790,
+    "scotland_n": 468
+   }
+  },
+  {
+   "bin": "5-8k",
+   "London": {
+    "n": 18733,
+    "hybrid_pct": 5.7,
+    "toyota_hybrid_pct": 0.8,
+    "top_hybrid_makes": [
+     [
+      "LEXUS",
+      213
+     ],
+     [
+      "BMW",
+      205
+     ],
+     [
+      "KIA",
+      194
+     ]
+    ]
+   },
+   "Scotland": {
+    "n": 61758,
+    "hybrid_pct": 1.7,
+    "toyota_hybrid_pct": 0.4,
+    "top_hybrid_makes": [
+     [
+      "TOYOTA",
+      262
+     ],
+     [
+      "BMW",
+      211
+     ],
+     [
+      "LEXUS",
+      141
+     ]
+    ]
+   },
+   "gap_all": {
+    "incl_PRS": 8.51,
+    "P_only": 6.34,
+    "london_n": 18733,
+    "scotland_n": 61758
+   },
+   "gap_no_hybrid": {
+    "incl_PRS": 8.47,
+    "P_only": 6.34,
+    "london_n": 17673,
+    "scotland_n": 60711
+   },
+   "gap_hybrid": {
+    "incl_PRS": 1.91,
+    "P_only": -2.04,
+    "london_n": 1060,
+    "scotland_n": 1047
+   }
+  },
+  {
+   "bin": "8-11k",
+   "London": {
+    "n": 12544,
+    "hybrid_pct": 8.1,
+    "toyota_hybrid_pct": 1.5,
+    "top_hybrid_makes": [
+     [
+      "BMW",
+      302
+     ],
+     [
+      "TOYOTA",
+      193
+     ],
+     [
+      "KIA",
+      186
+     ]
+    ]
+   },
+   "Scotland": {
+    "n": 43033,
+    "hybrid_pct": 1.8,
+    "toyota_hybrid_pct": 0.3,
+    "top_hybrid_makes": [
+     [
+      "BMW",
+      178
+     ],
+     [
+      "TOYOTA",
+      145
+     ],
+     [
+      "KIA",
+      114
+     ]
+    ]
+   },
+   "gap_all": {
+    "incl_PRS": 10.79,
+    "P_only": 7.9,
+    "london_n": 12544,
+    "scotland_n": 43033
+   },
+   "gap_no_hybrid": {
+    "incl_PRS": 10.74,
+    "P_only": 7.91,
+    "london_n": 11528,
+    "scotland_n": 42247
+   },
+   "gap_hybrid": {
+    "incl_PRS": 2.73,
+    "P_only": -0.21,
+    "london_n": 1016,
+    "scotland_n": 786
+   }
+  },
+  {
+   "bin": "11-14k",
+   "London": {
+    "n": 5844,
+    "hybrid_pct": 13.3,
+    "toyota_hybrid_pct": 1.8,
+    "top_hybrid_makes": [
+     [
+      "BMW",
+      274
+     ],
+     [
+      "KIA",
+      189
+     ],
+     [
+      "TOYOTA",
+      108
+     ]
+    ]
+   },
+   "Scotland": {
+    "n": 15097,
+    "hybrid_pct": 2.3,
+    "toyota_hybrid_pct": 0.4,
+    "top_hybrid_makes": [
+     [
+      "BMW",
+      97
+     ],
+     [
+      "TOYOTA",
+      64
+     ],
+     [
+      "KIA",
+      43
+     ]
+    ]
+   },
+   "gap_all": {
+    "incl_PRS": 14.45,
+    "P_only": 11.09,
+    "london_n": 5844,
+    "scotland_n": 15097
+   },
+   "gap_no_hybrid": {
+    "incl_PRS": 14.05,
+    "P_only": 10.48,
+    "london_n": 5064,
+    "scotland_n": 14752
+   },
+   "gap_hybrid": {
+    "incl_PRS": 12.24,
+    "P_only": 8.56,
+    "london_n": 780,
+    "scotland_n": 345
+   }
+  },
+  {
+   "bin": "14k+",
+   "London": {
+    "n": 8101,
+    "hybrid_pct": 25.9,
+    "toyota_hybrid_pct": 8.1,
+    "top_hybrid_makes": [
+     [
+      "TOYOTA",
+      659
+     ],
+     [
+      "KIA",
+      651
+     ],
+     [
+      "BMW",
+      441
+     ]
+    ]
+   },
+   "Scotland": {
+    "n": 8079,
+    "hybrid_pct": 3.4,
+    "toyota_hybrid_pct": 1.2,
+    "top_hybrid_makes": [
+     [
+      "TOYOTA",
+      94
+     ],
+     [
+      "BMW",
+      66
+     ],
+     [
+      "LAND ROVER",
+      30
+     ]
+    ]
+   },
+   "gap_all": {
+    "incl_PRS": 16.6,
+    "P_only": 11.94,
+    "london_n": 8101,
+    "scotland_n": 8079
+   },
+   "gap_no_hybrid": {
+    "incl_PRS": 16.05,
+    "P_only": 11.13,
+    "london_n": 6006,
+    "scotland_n": 7801
+   },
+   "gap_hybrid": {
+    "incl_PRS": 11.69,
+    "P_only": 5.42,
+    "london_n": 2095,
+    "scotland_n": 278
+   }
+  },
+  {
+   "bin": "ALL",
+   "London": {
+    "n": 60953,
+    "hybrid_pct": 9.4,
+    "toyota_hybrid_pct": 0.0,
+    "top_hybrid_makes": []
+   },
+   "Scotland": {
+    "n": 164229,
+    "hybrid_pct": 1.8,
+    "toyota_hybrid_pct": 0.0,
+    "top_hybrid_makes": []
+   },
+   "gap_all": {
+    "incl_PRS": 9.56,
+    "P_only": 6.91,
+    "london_n": 60953,
+    "scotland_n": 164229
+   },
+   "gap_no_hybrid": {
+    "incl_PRS": 9.4,
+    "P_only": 6.82,
+    "london_n": 55212,
+    "scotland_n": 161305
+   },
+   "gap_hybrid": {
+    "incl_PRS": 3.95,
+    "P_only": 0.08,
+    "london_n": 5741,
+    "scotland_n": 2924
+   }
+  }
+ ],
+ "fuel_codes_seen": [
+  "DI",
+  "ED",
+  "EL",
+  "ELECTRIC",
+  "HY",
+  "HYBRID ELECTRIC (CLEAN)",
+  "LP",
+  "OT",
+  "PE"
+ ]
+}

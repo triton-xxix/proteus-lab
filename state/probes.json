@@ -13783,15 +13783,17 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-22",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:36:01+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:37:10+0000",
+   "note": "London's 14k+ miles-a-year cars are 25.9% hybrid (Toyota 8.1%) against Scotland's 3.4%, but removing all hybrids moves that bin's gap only from 16.6 to 16.05 points (overall 9.56 to 9.40). Shot was private-hire hybrids: wrong; the region carries it.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0540"
+   ],
+   "minutes": 1,
+   "calls": 4,
    "denied": [],
    "luke": false
   }
