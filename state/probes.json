@@ -1,5 +1,5 @@
 {
- "next_id": 528,
+ "next_id": 529,
  "items": [
   {
    "id": "P-0001",
@@ -13470,6 +13470,32 @@
    "calls": 10,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0528",
+   "title": "Mayhem sweep clock, part one: collect a fresh cohort now with a copy of P-0491's alive.py (keyless), births of every mint, and commit the forecast: if the sweep is hourly at about :04 with a 24.25 h cut, every coin born before 12:49Z today is burned by 13:05Z on 23 Nov and none before 12:04Z. Part two reads it in the 23 Nov Trials.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-22",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-22T12:37:06+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "18 mayhem mints with births, median age under 5 minutes",
+    "at": "2026-11-22T12:37:10+0000"
+   }
   }
  ]
 }
