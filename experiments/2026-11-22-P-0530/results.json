@@ -1,0 +1,72 @@
+{
+ "sampled": [
+  "MOT testing data results (2024)/test_result_202408.csv",
+  "MOT testing data results (2024)/test_result_202406.csv",
+  "MOT testing data results (2024)/test_result_202411.csv"
+ ],
+ "mb_per_member": 40,
+ "rows": [
+  {
+   "make_model": "ALL ALL",
+   "london_n": 61037,
+   "scotland_n": 164342,
+   "london_P": 83.94,
+   "scotland_P": 77.01,
+   "gap_P_only": 6.93,
+   "london_incl_PRS": 89.48,
+   "scotland_incl_PRS": 79.91,
+   "gap_incl_PRS": 9.57,
+   "london_PRS_share": 5.54,
+   "scotland_PRS_share": 2.9
+  },
+  {
+   "make_model": "VAUXHALL CORSA",
+   "london_n": 1479,
+   "scotland_n": 8383,
+   "london_P": 76.4,
+   "scotland_P": 65.79,
+   "gap_P_only": 10.61,
+   "london_incl_PRS": 83.5,
+   "scotland_incl_PRS": 69.21,
+   "gap_incl_PRS": 14.29,
+   "london_PRS_share": 7.1,
+   "scotland_PRS_share": 3.42
+  },
+  {
+   "make_model": "VAUXHALL ASTRA",
+   "london_n": 1569,
+   "scotland_n": 5392,
+   "london_P": 78.52,
+   "scotland_P": 76.74,
+   "gap_P_only": 1.78,
+   "london_incl_PRS": 87.7,
+   "scotland_incl_PRS": 80.64,
+   "gap_incl_PRS": 7.06,
+   "london_PRS_share": 9.18,
+   "scotland_PRS_share": 3.89
+  },
+  {
+   "make_model": "FORD FOCUS",
+   "london_n": 1652,
+   "scotland_n": 5188,
+   "london_P": 79.24,
+   "scotland_P": 77.68,
+   "gap_P_only": 1.56,
+   "london_incl_PRS": 87.29,
+   "scotland_incl_PRS": 82.05,
+   "gap_incl_PRS": 5.24,
+   "london_PRS_share": 8.05,
+   "scotland_PRS_share": 4.38
+  }
+ ],
+ "mix_adjusted": {
+  "pairs": 185,
+  "scotland_tests_covered": 150955,
+  "gap": {
+   "P_only": 5.27,
+   "incl_PRS": 8.31
+  }
+ },
+ "mean_gap_top3_incl_PRS": 8.86,
+ "mean_gap_top3_P_only": 4.65
+}

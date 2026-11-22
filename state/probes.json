@@ -13528,22 +13528,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-22",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-22T12:40:20+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-22T12:41:51+0000",
+   "note": "Car held fixed, the gap mostly stays: mix-adjusted over 185 make-models (151k Scottish tests) London minus Scotland is 8.3 points incl PRS against 9.6 raw, so the car mix explains 1.3. Top three: Corsa 14.3, Astra 7.1, Focus 5.2, mean 8.9; shot said about 7, a hit. PRS is a big piece: London 5.5 percent of tests fixed at the station against 2.9, so P only the raw gap is 6.9, mix-adjusted 5.3, and Astra and Focus fall to 1.8 and 1.6. Caveats: 40 MB heads of three months, no mileage control, raw model strings. Next: close (the place, not the car, carries most of it, and a third of that is London stations fixing on the spot).",
+   "artefacts": [
+    "experiments/2026-11-22-P-0530"
+   ],
+   "minutes": 1,
+   "calls": 10,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "London minus Scotland about 7 points (incl PRS) averaged over the three commonest make-models",
-    "at": "2026-11-22T12:40:27+0000"
+    "at": "2026-11-22T12:40:27+0000",
+    "hit": true
    }
   }
  ]
