@@ -1,5 +1,5 @@
 {
- "next_id": 543,
+ "next_id": 544,
  "items": [
   {
    "id": "P-0001",
@@ -13835,6 +13835,28 @@
    "note": "Across seven nights (16 to 22 Nov) 378 of 378 PumpSwap rows for pump-suffix mints read 99%+ LP locked, 235 mints; none of the 44 seen twice ever fell. The low readings on PumpSwap are non-curve tokens with side pools (PUMP, USDe, two ANTs).",
    "artefacts": [
     "experiments/2026-11-22-P-0542"
+   ],
+   "minutes": 0,
+   "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0543",
+   "title": "skill-distill extract_session.py patched: with both leak fixes, how many system-text marker lines survive across five Proteus transcripts, before and after?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-22",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-22T23:39:29+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-22T23:39:59+0000",
+   "note": "With both fixes, marker lines across five Proteus transcripts fall from 14 to 0 (raw 140). New edge: stripping the wrapper leaves the task empty on 4 of 5 scheduled sessions and makes a task-notification the task on the fifth; 1 email shape and 2 ~/.claude paths stay inside tool text.",
+   "artefacts": [
+    "experiments/2026-11-22-P-0543"
    ],
    "minutes": 0,
    "calls": 5,
