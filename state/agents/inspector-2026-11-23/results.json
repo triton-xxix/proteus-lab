@@ -1,0 +1,93 @@
+{
+ "transcripts": [
+  {
+   "session": "1c91d4f8",
+   "raw_marker_lines": 20,
+   "task_head": "",
+   "original": {
+    "lines": 291,
+    "marker_lines": 2,
+    "email_shapes": 0,
+    "claude_paths": 1
+   },
+   "patched": {
+    "lines": 285,
+    "marker_lines": 0,
+    "email_shapes": 0,
+    "claude_paths": 0
+   }
+  },
+  {
+   "session": "bc122616",
+   "raw_marker_lines": 20,
+   "task_head": "",
+   "original": {
+    "lines": 108,
+    "marker_lines": 2,
+    "email_shapes": 0,
+    "claude_paths": 1
+   },
+   "patched": {
+    "lines": 102,
+    "marker_lines": 0,
+    "email_shapes": 0,
+    "claude_paths": 0
+   }
+  },
+  {
+   "session": "44dd8d9b",
+   "raw_marker_lines": 38,
+   "task_head": "",
+   "original": {
+    "lines": 1263,
+    "marker_lines": 2,
+    "email_shapes": 1,
+    "claude_paths": 2
+   },
+   "patched": {
+    "lines": 1257,
+    "marker_lines": 0,
+    "email_shapes": 1,
+    "claude_paths": 1
+   }
+  },
+  {
+   "session": "90608d49",
+   "raw_marker_lines": 19,
+   "task_head": "",
+   "original": {
+    "lines": 99,
+    "marker_lines": 2,
+    "email_shapes": 0,
+    "claude_paths": 1
+   },
+   "patched": {
+    "lines": 93,
+    "marker_lines": 0,
+    "email_shapes": 0,
+    "claude_paths": 0
+   }
+  },
+  {
+   "session": "c286a533",
+   "raw_marker_lines": 22,
+   "task_head": "",
+   "original": {
+    "lines": 163,
+    "marker_lines": 3,
+    "email_shapes": 0,
+    "claude_paths": 1
+   },
+   "patched": {
+    "lines": 157,
+    "marker_lines": 1,
+    "email_shapes": 0,
+    "claude_paths": 0
+   }
+  }
+ ],
+ "marker_lines_total": {
+  "original": 11,
+  "patched": 1
+ }
+}

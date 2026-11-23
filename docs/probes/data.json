@@ -1,44 +1,44 @@
 {
  "summary": {
-  "n": 508,
+  "n": 524,
   "by_verdict": {
-   "works": 432,
+   "works": 447,
    "not-worth-it": 23,
-   "blocked": 43,
+   "blocked": 44,
    "broken": 10
   },
-  "open": 14,
+  "open": 15,
   "killed": 5,
-  "minutes_total": 854,
+  "minutes_total": 859,
   "minutes_median": 1,
-  "calls_total": 5420,
-  "pages": 10,
+  "calls_total": 5536,
+  "pages": 11,
   "first": "2026-09-24",
-  "last": "2026-11-21"
+  "last": "2026-11-22"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 212,
-   "works": 201,
+   "n": 224,
+   "works": 213,
    "not-worth-it": 3,
    "blocked": 6,
    "broken": 2
   },
   {
    "source": "desk",
-   "n": 119,
-   "works": 98,
+   "n": 120,
+   "works": 99,
    "not-worth-it": 9,
    "blocked": 11,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 108,
-   "works": 82,
+   "n": 111,
+   "works": 84,
    "not-worth-it": 4,
-   "blocked": 15,
+   "blocked": 16,
    "broken": 7
   },
   {
@@ -50,19 +50,19 @@
    "broken": 0
   },
   {
-   "source": "persona",
-   "n": 18,
-   "works": 15,
-   "not-worth-it": 0,
-   "blocked": 3,
-   "broken": 0
-  },
-  {
    "source": "field-notes",
    "n": 18,
    "works": 15,
    "not-worth-it": 1,
    "blocked": 2,
+   "broken": 0
+  },
+  {
+   "source": "persona",
+   "n": 18,
+   "works": 15,
+   "not-worth-it": 0,
+   "blocked": 3,
    "broken": 0
   },
   {
@@ -133,9 +133,9 @@
   },
   {
    "week": "2026-11-16",
-   "works": 64,
+   "works": 79,
    "not-worth-it": 4,
-   "blocked": 3,
+   "blocked": 4,
    "broken": 2
   }
  ],
@@ -7757,6 +7757,238 @@
    "calls": 10,
    "note": "20 of 25 short videos at 130k to 48m views carry a heatmap; of the 12 true Shorts (uploaded Nov 2020 on) 10 do, the two without at 281k and 22m views, so no view line as P-0515 found for long-form (every one above 52k). 13 of the 25 predate Shorts; search mixes them in.",
    "artefact": "experiments/2026-11-21-P-0527",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0528",
+   "title": "Mayhem sweep clock, part one: collect a fresh cohort now with a copy of P-0491's alive.py (keyless), births of every mint, and commit the forecast: if the sweep is hourl…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T12:39:24+0000",
+   "minutes": 2,
+   "calls": 16,
+   "note": "22 mayhem mints in 60 sampled wallet transactions at 12:37Z, 21 with a known birth (one at 1,000 signatures, birth unseen); median age 3.3 minutes, 19 born 12:14 to 12:37Z and one at 08:36Z. Shot said 18 with births and median under 5 minutes: count off by 3, median right, a hit on the verdict. Forecast under hourly-a…",
+   "artefact": "experiments/2026-11-22-P-0528",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0530",
+   "title": "MOT pass gap with the car held fixed: rerun P-0522's range reads of the DVSA 2024 zip (same three months, 40 MB each, keyless), class 4 cars first used 2015 to 2019, and…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T12:41:51+0000",
+   "minutes": 1,
+   "calls": 10,
+   "note": "Car held fixed, the gap mostly stays: mix-adjusted over 185 make-models (151k Scottish tests) London minus Scotland is 8.3 points incl PRS against 9.6 raw, so the car mix explains 1.3. Top three: Corsa 14.3, Astra 7.1, Focus 5.2, mean 8.9; shot said about 7, a hit. PRS is a big piece: London 5.5 percent of tests fixed…",
+   "artefact": "experiments/2026-11-22-P-0530",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0531",
+   "title": "Lichess acceptance by hour: from games/lichess/CHALLENGES.csv (1,531 rows, on disk), acceptance rate by UTC hour and by weekday, with the date held fixed where two hours…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T12:42:59+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "No hour with 50+ asks beats 08:00 UTC by 10 points: 08h accepts 5.6 percent of 426, 06h 6.0 of 252, 07h 4.1 of 681, 22h 4.3 of 139; only 11h (25 asks) and 23h (8) are higher. Shot said 08h about 5 percent (right) and the old 22h nightly 15 points higher (wrong, it was 1.3 lower). The real pattern is the date: week 41…",
+   "artefact": "experiments/2026-11-22-P-0531",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0532",
+   "title": "Aurora pageviews as a storm detector: GFZ Potsdam keyless Kp (kp.gfz.de/app/json) daily max for 1 Jan 2024 to 21 Nov 2026 beside Wikimedia daily views of en Aurora, same…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T12:44:19+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "Of 28 days with Kp 7 or more (GFZ, Jan 2024 to Nov 2026), 16 had en Aurora views above twice the 30-day median that day or next (57 percent); Kp 5+: 25 of 142. As a detector: 39 spike days, 28 within a day of Kp 5+ (72 percent), 11 on calm days. Correlation of daily max Kp with next-day views 0.22. Shot said 70 percen…",
+   "artefact": "experiments/2026-11-22-P-0532",
+   "page": true,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0533",
+   "title": "Aurora detector, deepen: from experiments/2026-11-22-P-0532/results.json, name the 11 Aurora view spikes on calm days (Wikimedia top-articles and news of those dates, ke…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-22T12:45:10+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "en Geomagnetic_storm view spikes catch 22 of 28 Kp 7+ days against Aurora 16; either article catches the same 22. Cost: 38 calm-day spikes against Aurora 11, so 43 for either. Shot said 19 caught and 5 more calm spikes: caught too low by 3, calm cost far too low (32 more, not 5). 7 of the 8 named calm Aurora spikes ar…",
+   "artefact": "experiments/2026-11-22-P-0533",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0534",
+   "title": "MOT gap matched on miles: P-0530's sample (DVSA 2024 zip, three months, 40 MB heads, keyless), class 4 cars first used 2015 to 2019, binned by test_mileage per year of a…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T12:47:37+0000",
+   "minutes": 1,
+   "calls": 8,
+   "note": "Matched on miles a year the London minus Scotland gap is 9.3 points incl PRS (6.9 P only), against 9.6 raw: mileage explains almost none. Shot said about 7: a miss by 2.3. London cars run further (13.3 percent at 14k a year or more against 4.9) and the gap grows with mileage, 5.2 points under 5k to 16.6 at 14k and ove…",
+   "artefact": "experiments/2026-11-22-P-0534",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.65,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0535",
+   "title": "fast-anything scan: does the profiler rank the planted hot function first in a 40-line Python script?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-22T23:31:23+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "Not run: the npm package is an 11 KB JS shim over a prebuilt native binary per platform (0.7.0), and the repo is one day old, so executing it unattended is running an untrusted file. Test script design is in the README.",
+   "artefact": "experiments/2026-11-22-P-0535",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0536",
+   "title": "skill-distill extract_session.py: does it strip system text from a real Claude Code session log?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-22T23:32:19+0000",
+   "minutes": 0,
+   "calls": 13,
+   "note": "On a 124-call Claude Code transcript it cut 40 system-text marker lines to 6: CLAUDE.md, memory, email and git-status blocks all gone. Two leaks: the scheduled-task wrapper becomes the task, and system-reminders inside tool results pass through (4 lines); both one-line fixes.",
+   "artefact": "experiments/2026-11-22-P-0536",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0537",
+   "title": "Bonding-curve graduation: what share of 30 recent graduated Solana tokens have 99%+ LP locked or burned?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-22T23:32:58+0000",
+   "minutes": 0,
+   "calls": 7,
+   "note": "In tonight's 142-token Grinder snapshot, 57 of 59 PumpSwap graduates and 20 of 20 on-curve pump.fun tokens read 99%+ LP locked or burned (30 of 30 youngest), against 28 of 43 Meteora and 7 of 13 Raydium: locked-at-graduation is pump.fun's default, not one launchpad's feature.",
+   "artefact": "experiments/2026-11-22-P-0537",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0538",
+   "title": "ASVspoof 2019 dummy zip on Hugging Face: how many real LA dev flacs does it hold, and how many match SEAR file_ids?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:34:15+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "The ungated LanceaKing mirror's 3.75 MB dummy zip is a real cut-down LA.zip: 45 flacs, of which 5 train, 10 dev and 10 eval countermeasure clips, and all 15 train and dev ids are in SEAR t1. 15 is far short of the 200 refill 218 needs, so that row stays held.",
+   "artefact": "experiments/2026-11-22-P-0538",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0539",
+   "title": "Lichess bot pool: is the fall in acceptance since week 41 the same bots declining more, or new never-yes bots joining the ask list?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:35:57+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Neither: the one-game-per-opponent rule drains every yes-sayer, so asks to never-yes bots rose from 62% of answerable asks in week 41 to 84-93% since; the 22 bots asked across 3+ weeks gave 2 yeses in 628. Newcomers still accept 11.6 and 14.5% in weeks 46 and 47.",
+   "artefact": "experiments/2026-11-22-P-0539",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0540",
+   "title": "MOT high-mileage London cars: are the 14k-a-year fleet Toyota hybrids, and how much of the London minus Scotland gap goes without them?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:37:10+0000",
+   "minutes": 1,
+   "calls": 4,
+   "note": "London's 14k+ miles-a-year cars are 25.9% hybrid (Toyota 8.1%) against Scotland's 3.4%, but removing all hybrids moves that bin's gap only from 16.6 to 16.05 points (overall 9.56 to 9.40). Shot was private-hire hybrids: wrong; the region carries it.",
+   "artefact": "experiments/2026-11-22-P-0540",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0541",
+   "title": "Sky event attention: for five eclipses, comets and meteor showers 2024 to 2026, days of lead above twice baseline before the event and the half-life after",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:38:16+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Five scheduled sky events (two eclipses, two Perseids, Geminids): views sat above twice baseline for 17 to 52 days before, peaked on the day at 137x to 440x baseline, halved within 1 to 2 days and fell below 2x in 9 to 21. The comet page title 404'd.",
+   "artefact": "experiments/2026-11-22-P-0541",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0542",
+   "title": "PumpSwap curve graduates over seven nights of Grinder snapshots: share of pump-suffix mints reading 99%+ LP locked, and any that fell after graduation",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:38:52+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "Across seven nights (16 to 22 Nov) 378 of 378 PumpSwap rows for pump-suffix mints read 99%+ LP locked, 235 mints; none of the 44 seen twice ever fell. The low readings on PumpSwap are non-curve tokens with side pools (PUMP, USDe, two ANTs).",
+   "artefact": "experiments/2026-11-22-P-0542",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0543",
+   "title": "skill-distill extract_session.py patched: with both leak fixes, how many system-text marker lines survive across five Proteus transcripts, before and after?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:39:59+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "With both fixes, marker lines across five Proteus transcripts fall from 14 to 0 (raw 140). New edge: stripping the wrapper leaves the task empty on 4 of 5 scheduled sessions and makes a task-notification the task on the fifth; 1 email shape and 2 ~/.claude paths stay inside tool text.",
+   "artefact": "experiments/2026-11-22-P-0543",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0544",
+   "title": "Comet C/2023 A3 pageviews under its 2024 title: weeks of lead and a one-day half-life like the eclipses, or a late long tail like the storms?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-22T23:42:07+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "Under its 2024 title C/2023 A3 (Tsuchinshan-ATLAS) the comet page sat above 2x baseline for 46 days before 12 Oct, peaked 3 days late on 15 Oct at 78k (289x), halved in 3 days and stayed above 2x for 31: scheduled lead, news-like tail. The current title 404s for 2024.",
+   "artefact": "experiments/2026-11-22-P-0544",
    "page": false,
    "shot": null
   }
