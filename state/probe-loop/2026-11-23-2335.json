@@ -17,7 +17,7 @@
   "P-0555",
   "P-0556"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-23T23:45:21+0000",
+ "stop_reason": "118 of 150 calls used after 7 probes; keeping the rest for the kill check, run log, close and board rows",
  "refills": 4
 }
