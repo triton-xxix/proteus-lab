@@ -1,0 +1,33 @@
+{
+ "server": {
+  "name": "hermitcrm",
+  "version": "1.1.0"
+ },
+ "protocol": "2025-06-18",
+ "n_tools": 18,
+ "tools": [
+  "list_pipeline",
+  "show_company",
+  "search_companies",
+  "digest",
+  "report",
+  "followups",
+  "keep_in_touch",
+  "brief",
+  "add_company",
+  "add_contact",
+  "add_interaction",
+  "adjust_help",
+  "adjust_read",
+  "adjust_write",
+  "adjust_config",
+  "bulk_preview",
+  "bulk_apply",
+  "undo"
+ ],
+ "readonly_hint": [],
+ "called": "list_pipeline",
+ "call_is_error": null,
+ "call_text_head": "{\"jsonrpc\": \"2.0\", \"id\": 3, \"result\": {\"content\": [{\"type\": \"text\", \"text\": \"# Pipeline  (generated 2026-11-23 23:36, do not edit)\\n\\n## offer (1, 4,000 EUR/month)\\n- northwind-robotics | Northwind Robotics | in stage 6d | last: email in 2026-11-21 (jonas-brandt) | next: Follow up on the proposal, due 2026-11-26\\n\\n## discovery (1, 1,500 EUR/month)\\n- bluefin-analytics | Bluefin Analytics | in stage 20d | last: call out 2026-11-03 (joris-veldkamp) | next: Send case study, due 2026-11-21\\n\\n## engaged (1)\\n- copperleaf-studio | Copperleaf Studio | in stage 5d | last: linkedin out 2026-11-18 (camille-martin) | next: Follow up if no reply, due 2026-11-28\\n\\n## prospect (6)\\n- tallpine-software | Tallpine Software | in stage 39d | last: none | next: Check LinkedIn insights for growth, due 2026-11-23\\n- kestrel-metrics | Kestrel Metrics | in stage 19d | last: none | next: none\\n- lindenhof-data | Lindenhof Data | in stage 20d | last: none | next: none\\n- ravenmoor-systems | Ravenmoor Systems | in stage 16d | last: none | next: none\\n- saltmarsh-labs | Saltmarsh Labs | in stage 18d | last: none | next: none\\n- saltmarsh-labs-ai | Saltmarsh Labs AI | in stage 17d | last: none | next: none\\n\\n## Overdue next steps (1)\\n- bluefin-analytics | discovery | due 2026-11-21 | Send case study\\n\\n## Silent for 14+ days, not closed (7)\\n- tallpine-software | prospect | last touch none (39d)\\n- bluefin-analytics | discovery | last touch 2026-11-03 (20d)\\n- lindenhof-data | prospect | last touch",
+ "seconds": 0.32
+}
