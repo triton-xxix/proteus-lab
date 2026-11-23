@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 450 works, 11 broken, 47 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 450 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,12 @@ Verdicts so far: 450 works, 11 broken, 47 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
-| P-0551 | open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account? | harvest | none |  | 0 | 30 min |
 
-## Verdicts (531)
+## Verdicts (532)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-23 | P-0551 | open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account? | **blocked** | Not run: the daemon is an unpublished npm workspace that must be built (npm run build with esbuild's install script), neither allowed in an unattended run, and the repo is six days old (17 Nov). PDF export likely needs a browser the nightly cannot drive. | `experiments/2026-11-23-P-0551` | 0 min, 6 calls, 0 denied |
 | 2026-11-23 | P-0550 | safe-anything: how many real findings does an offline scan of PROTEUS and its agent settings produce? | **blocked** | Not run: the only quick path is a prebuilt binary from a repo created 22 Nov (release v1.0.2 the same evening, 481 stars); executing an unreviewed day-old binary on this Mac is running an untrusted file. No Rust toolchain to build from source. | `experiments/2026-11-23-P-0550` | 0 min, 4 calls, 0 denied |
 | 2026-11-23 | P-0549 | Hermit CRM: does the CLI and MCP server run on macOS and list tools from a plain Markdown store? | **works** | Installed from the source tarball on macOS; hermitcrm mcp 1.1.0 listed 18 tools over stdio in 0.32 s and list_pipeline answered without error on the 13-company demo folder (check: no problems). Web app, LinkedIn import and sending not run. | `experiments/2026-11-23-P-0549` | 1 min, 18 calls, 0 denied |
 | 2026-11-23 | P-0548 | Fee sweeper hour: page getSignaturesForAddress for FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT back one hour (peek 23 Nov: 1,000 signatures in 388 s, 84 failed), getTransaction jsonParsed with commitment confirmed on 100 spread successes (the peek's 5 newest came back null, so skip the newest minute and retry), sum the SOL balance changes per receiving account, count distinct mints, and compare the creator-fee to protocol-fee ratio with the published split. | **blocked** | Measured: the sweeper signs about 2.9 transactions a second (10,000 signatures over 3,407 s, 5.3% failed), not the 5 a second refill 211 saw. Only 6 of 40 getTransaction reads came back, so the 1,908 SOL an hour extrapolation is not a result, and receivers appear in equal pairs (likely native and wrapped SOL counted twice). Shot: works, about 30 SOL an hour from about 300 mints; no verdict-grade number to score. | `experiments/2026-11-23-P-0548` | 9 min, 6 calls, 0 denied |
