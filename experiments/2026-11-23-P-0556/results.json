@@ -1,0 +1,47 @@
+{
+ "transcripts": [
+  {
+   "session": "db860632",
+   "scheduled_task": null,
+   "task_head": "prompt file: /Users/triton/PROTEUS/tasks/workshop.md",
+   "via": "first tasks/*.md Read",
+   "prompt_stem": "workshop",
+   "ok": true
+  },
+  {
+   "session": "5253b5e6",
+   "scheduled_task": null,
+   "task_head": "prompt file: /Users/triton/PROTEUS/tasks/trials.md",
+   "via": "first tasks/*.md Read",
+   "prompt_stem": "trials",
+   "ok": true
+  },
+  {
+   "session": "c286a533",
+   "scheduled_task": null,
+   "task_head": "prompt file: /Users/triton/PROTEUS/tasks/inspector.md",
+   "via": "first tasks/*.md Read",
+   "prompt_stem": "inspector",
+   "ok": true
+  },
+  {
+   "session": "90608d49",
+   "scheduled_task": null,
+   "task_head": "prompt file: /Users/triton/PROTEUS/tasks/lichess-morning.md",
+   "via": "first tasks/*.md Read",
+   "prompt_stem": "lichess-morning",
+   "ok": true
+  },
+  {
+   "session": "c585a15d",
+   "scheduled_task": null,
+   "task_head": "prompt file: /Users/triton/PROTEUS/tasks/nightly.md",
+   "via": "first tasks/*.md Read",
+   "prompt_stem": "nightly",
+   "ok": true
+  }
+ ],
+ "non_empty": 5,
+ "right_prompt": 5,
+ "n": 5
+}

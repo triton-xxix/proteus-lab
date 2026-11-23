@@ -1,5 +1,5 @@
 {
- "next_id": 556,
+ "next_id": 557,
  "items": [
   {
    "id": "P-0001",
@@ -14152,6 +14152,28 @@
    ],
    "minutes": 0,
    "calls": 5,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0556",
+   "title": "skill-distill task fallback: with task-notification stripped and the first tasks/*.md Read as the task, do all five recent Proteus transcripts get a task naming the right prompt file?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-23T23:45:01+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-23T23:45:13+0000",
+   "note": "With task-notification stripped and the first tasks/*.md Read as fallback, 5 of 5 recent transcripts got a non-empty task (workshop, trials, inspector, lichess-morning, nightly), all via the fallback. Only 1 of 5 checked independently (trials, session 5253b5e6, matches the run log); my wrapper-name check regex missed escaped quotes.",
+   "artefacts": [
+    "experiments/2026-11-23-P-0556"
+   ],
+   "minutes": 0,
+   "calls": 3,
    "denied": [],
    "luke": false
   }
