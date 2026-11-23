@@ -1,5 +1,5 @@
 {
- "next_id": 554,
+ "next_id": 556,
  "items": [
   {
    "id": "P-0001",
@@ -14110,6 +14110,48 @@
    ],
    "minutes": 2,
    "calls": 26,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0554",
+   "title": "Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market?",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-26",
+   "est_minutes": 15,
+   "added": "2026-11-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0555",
+   "title": "Grinder same-ticker copycats: in grinder/SNAPSHOTS.csv how many tickers sit on 2+ mints, and is a later mint's 24h price change worse than the first's?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-23T23:43:37+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-23T23:44:04+0000",
+   "note": "668 of 3,586 tickers sit on 2+ of 5,028 mints (2,110 mints, 42%). Later mints of a shared ticker: median chg_h24 -17.5%, rug_score 31, liquidity 2,836 USD, seen again 9.5%, against the first mint's +0.5%, 1, 13,169, 16.5%. Read at first sighting, not a forward test. The two Anthropic Coin ANT mints fell from about 118k and 145k to 12.56 and 0.55 USD liquidity.",
+   "artefacts": [
+    "experiments/2026-11-23-P-0555"
+   ],
+   "minutes": 0,
+   "calls": 5,
    "denied": [],
    "luke": false
   }

@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 452 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 453 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,11 +27,13 @@ Verdicts so far: 452 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
+| P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
 
-## Verdicts (534)
+## Verdicts (535)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-23 | P-0555 | Grinder same-ticker copycats: in grinder/SNAPSHOTS.csv how many tickers sit on 2+ mints, and is a later mint's 24h price change worse than the first's? | **works** | 668 of 3,586 tickers sit on 2+ of 5,028 mints (2,110 mints, 42%). Later mints of a shared ticker: median chg_h24 -17.5%, rug_score 31, liquidity 2,836 USD, seen again 9.5%, against the first mint's +0.5%, 1, 13,169, 16.5%. Read at first sighting, not a forward test. The two Anthropic Coin ANT mints fell from about 118k and 145k to 12.56 and 0.55 USD liquidity. | `experiments/2026-11-23-P-0555` | 0 min, 5 calls, 0 denied |
 | 2026-11-23 | P-0553 | Munich ladder gaps: how many Munich daily-high ladders in SNAPSHOTS.csv skip a whole degree inside their range, and did a skipped degree ever win? | **works** | Settled 15 to 22 Nov ladders: 8 of 8 whole (11 contracts). Open 23, 24, 25 Nov ladders straddle zero and miss 1, 2 and 2 degrees: Smarkets slugs drop the minus sign (-1C is 1degc), and every missing degree is the sign-twin of a listed one. No gappy ladder settled yet; 24 Nov has no 1C contract beside my 2C call. | `experiments/2026-11-23-P-0553` | 2 min, 26 calls, 0 denied |
 | 2026-11-23 | P-0552 | Geminids 2026 pageviews: pre-register the peak day, peak views and first day above 10x the November median from the 2023 to 2025 curves, DUE row, score 16 Dec | **works** | Pre-registered from 2023 to 2025 Wikipedia curves (peaks 15,626, 8,650, 8,810 on 14, 14, 13 Dec; first day over 10x the November median 11, 10, 10 Dec): 2026 peak 14 Dec at 0.55, 11,000 views (7,000 to 17,000), first 10x day 10 Dec at 0.45. Twice baseline is useless, crossed on 1 Dec every year. DUE D-033, score 16 Dec. | `experiments/2026-11-23-P-0552` | 0 min, 8 calls, 0 denied |
 | 2026-11-23 | P-0551 | open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account? | **blocked** | Not run: the daemon is an unpublished npm workspace that must be built (npm run build with esbuild's install script), neither allowed in an unattended run, and the repo is six days old (17 Nov). PDF export likely needs a browser the nightly cannot drive. | `experiments/2026-11-23-P-0551` | 0 min, 6 calls, 0 denied |
