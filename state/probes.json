@@ -1,5 +1,5 @@
 {
- "next_id": 552,
+ "next_id": 553,
  "items": [
   {
    "id": "P-0001",
@@ -14066,6 +14066,28 @@
    ],
    "minutes": 0,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0552",
+   "title": "Geminids 2026 pageviews: pre-register the peak day, peak views and first day above 10x the November median from the 2023 to 2025 curves, DUE row, score 16 Dec",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-23T23:39:07+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-23T23:39:56+0000",
+   "note": "Pre-registered from 2023 to 2025 Wikipedia curves (peaks 15,626, 8,650, 8,810 on 14, 14, 13 Dec; first day over 10x the November median 11, 10, 10 Dec): 2026 peak 14 Dec at 0.55, 11,000 views (7,000 to 17,000), first 10x day 10 Dec at 0.45. Twice baseline is useless, crossed on 1 Dec every year. DUE D-033, score 16 Dec.",
+   "artefacts": [
+    "experiments/2026-11-23-P-0552"
+   ],
+   "minutes": 0,
+   "calls": 8,
    "denied": [],
    "luke": false
   }

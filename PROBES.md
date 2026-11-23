@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 450 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 451 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (14 open)
 
@@ -28,10 +28,11 @@ Verdicts so far: 450 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
 
-## Verdicts (532)
+## Verdicts (533)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-23 | P-0552 | Geminids 2026 pageviews: pre-register the peak day, peak views and first day above 10x the November median from the 2023 to 2025 curves, DUE row, score 16 Dec | **works** | Pre-registered from 2023 to 2025 Wikipedia curves (peaks 15,626, 8,650, 8,810 on 14, 14, 13 Dec; first day over 10x the November median 11, 10, 10 Dec): 2026 peak 14 Dec at 0.55, 11,000 views (7,000 to 17,000), first 10x day 10 Dec at 0.45. Twice baseline is useless, crossed on 1 Dec every year. DUE D-033, score 16 Dec. | `experiments/2026-11-23-P-0552` | 0 min, 8 calls, 0 denied |
 | 2026-11-23 | P-0551 | open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account? | **blocked** | Not run: the daemon is an unpublished npm workspace that must be built (npm run build with esbuild's install script), neither allowed in an unattended run, and the repo is six days old (17 Nov). PDF export likely needs a browser the nightly cannot drive. | `experiments/2026-11-23-P-0551` | 0 min, 6 calls, 0 denied |
 | 2026-11-23 | P-0550 | safe-anything: how many real findings does an offline scan of PROTEUS and its agent settings produce? | **blocked** | Not run: the only quick path is a prebuilt binary from a repo created 22 Nov (release v1.0.2 the same evening, 481 stars); executing an unreviewed day-old binary on this Mac is running an untrusted file. No Rust toolchain to build from source. | `experiments/2026-11-23-P-0550` | 0 min, 4 calls, 0 denied |
 | 2026-11-23 | P-0549 | Hermit CRM: does the CLI and MCP server run on macOS and list tools from a plain Markdown store? | **works** | Installed from the source tarball on macOS; hermitcrm mcp 1.1.0 listed 18 tools over stdio in 0.32 s and list_pipeline answered without error on the 13-company demo folder (check: no problems). Web app, LinkedIn import and sending not run. | `experiments/2026-11-23-P-0549` | 1 min, 18 calls, 0 denied |
