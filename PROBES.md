@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 447 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 
-## Queue (13 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,8 @@ Verdicts so far: 447 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
+| P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
+| P-0546 | SEAR tools-only baseline on real audio: pull one shard (data/test-00000-of-00009.parquet, 486 MB, keyless) of the HF mirror SpeechAntiSpoofingBenchmarks/ASVspoof2019_LA (LA eval, labels.parquet beside it), take 100 bonafide and 100 spoof clips, compute librosa features in the sandbox venv, score each clip by median and MAD distance fitted on half the genuine clips only, report EER against SEAR's claimed 17.65% and the three features that deviate most on spoof. Detection side only. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (526)
 

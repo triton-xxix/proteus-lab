@@ -1,5 +1,5 @@
 {
- "next_id": 545,
+ "next_id": 547,
  "items": [
   {
    "id": "P-0001",
@@ -13895,6 +13895,52 @@
    "calls": 5,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0545",
+   "title": "Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early).",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-24",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0546",
+   "title": "SEAR tools-only baseline on real audio: pull one shard (data/test-00000-of-00009.parquet, 486 MB, keyless) of the HF mirror SpeechAntiSpoofingBenchmarks/ASVspoof2019_LA (LA eval, labels.parquet beside it), take 100 bonafide and 100 spoof clips, compute librosa features in the sandbox venv, score each clip by median and MAD distance fitted on half the genuine clips only, report EER against SEAR's claimed 17.65% and the three features that deviate most on spoof. Detection side only.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-23",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-23T12:35:24+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "EER about 25% on 100 bonafide and 100 spoof, worse than the 17.65% claimed",
+    "at": "2026-11-23T12:35:36+0000"
+   }
   }
  ]
 }
