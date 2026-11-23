@@ -1,0 +1,274 @@
+{
+ "meta": {
+  "area": "53.33,-2.73,53.69,-1.91",
+  "admin_level": "bbox",
+  "crafts": [
+   "plumber",
+   "hvac",
+   "heating_engineer",
+   "gas_fitter"
+  ],
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "osm_timestamp": "2026-11-23T16:41:19Z",
+  "pulled_utc": "2026-11-23T16:42:34Z",
+  "seconds": 43.5
+ },
+ "summary": {
+  "firms": 20,
+  "with_website": 3,
+  "with_phone": 1,
+  "with_both": 1,
+  "with_name": 20,
+  "with_postcode": 13,
+  "leads": 3,
+  "by_craft": {
+   "plumber": {
+    "firms": 11,
+    "website": 1,
+    "phone": 0
+   },
+   "hvac": {
+    "firms": 8,
+    "website": 2,
+    "phone": 1
+   },
+   "heating_engineer": {
+    "firms": 1,
+    "website": 0,
+    "phone": 0
+   }
+  },
+  "by_postcode_area": {
+   "none": 7,
+   "OL": 5,
+   "SK": 3,
+   "WA": 1,
+   "PR": 1,
+   "M": 1,
+   "BL": 1,
+   "WN": 1
+  }
+ },
+ "rows": [
+  {
+   "osm": "node/10053244743",
+   "name": "Jibson & Son",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.4232291,
+   "lon": -2.3275129
+  },
+  {
+   "osm": "node/10577720724",
+   "name": "Druggit & Harding Ltd",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "OL1 3NJ",
+   "area": "OL",
+   "lat": 53.5459504,
+   "lon": -2.0943465
+  },
+  {
+   "osm": "node/10599630917",
+   "name": "Smith Brothers Stores Ltd",
+   "craft": "hvac",
+   "website": "",
+   "phone": "",
+   "postcode": "OL1 4AS",
+   "area": "OL",
+   "lat": 53.5486592,
+   "lon": -2.091949
+  },
+  {
+   "osm": "node/11153601320",
+   "name": "Ventilation Design Service Ltd",
+   "craft": "hvac",
+   "website": "",
+   "phone": "",
+   "postcode": "OL8 4PQ",
+   "area": "OL",
+   "lat": 53.5270724,
+   "lon": -2.1346989
+  },
+  {
+   "osm": "node/12571113584",
+   "name": "Premier Gas Care",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.5353189,
+   "lon": -2.6672812
+  },
+  {
+   "osm": "node/13154186421",
+   "name": "LAC Air Conditioning",
+   "craft": "hvac",
+   "website": "https://lac-ac.uk/",
+   "phone": "+441612871227",
+   "postcode": "OL1 3JY",
+   "area": "OL",
+   "lat": 53.5537187,
+   "lon": -2.1061556
+  },
+  {
+   "osm": "node/13312254409",
+   "name": "The Jordon Group",
+   "craft": "hvac",
+   "website": "https://jordon.co.uk/",
+   "phone": "",
+   "postcode": "OL9 6QL",
+   "area": "OL",
+   "lat": 53.546965,
+   "lon": -2.1287374
+  },
+  {
+   "osm": "node/14131384801",
+   "name": "Westside NW Ltd",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "WA9 3AT",
+   "area": "WA",
+   "lat": 53.4483905,
+   "lon": -2.7230173
+  },
+  {
+   "osm": "node/4721922714",
+   "name": "Plumbase",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.3968247,
+   "lon": -2.3640187
+  },
+  {
+   "osm": "node/7399137232",
+   "name": "Unit Two Systems",
+   "craft": "hvac",
+   "website": "",
+   "phone": "",
+   "postcode": "PR6 0AY",
+   "area": "PR",
+   "lat": 53.6576535,
+   "lon": -2.6203586
+  },
+  {
+   "osm": "node/8946798508",
+   "name": "Poynton Refrigerations",
+   "craft": "hvac",
+   "website": "",
+   "phone": "",
+   "postcode": "SK3 0BR",
+   "area": "SK",
+   "lat": 53.4083748,
+   "lon": -2.1701459
+  },
+  {
+   "osm": "node/9188461061",
+   "name": "Toshiba Carrier UK",
+   "craft": "hvac",
+   "website": "",
+   "phone": "",
+   "postcode": "SK1 2AE",
+   "area": "SK",
+   "lat": 53.4201523,
+   "lon": -2.1450904
+  },
+  {
+   "osm": "node/9188461143",
+   "name": "Longworth & Sons",
+   "craft": "heating_engineer",
+   "website": "",
+   "phone": "",
+   "postcode": "SK1 2AF",
+   "area": "SK",
+   "lat": 53.4191998,
+   "lon": -2.1447016
+  },
+  {
+   "osm": "node/9611814857",
+   "name": "Bluesky Plumbing",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.5027215,
+   "lon": -2.6420016
+  },
+  {
+   "osm": "node/9627299602",
+   "name": "Refrigeration Solutions Ltd",
+   "craft": "hvac",
+   "website": "",
+   "phone": "",
+   "postcode": "M3 1EZ",
+   "area": "M",
+   "lat": 53.491777,
+   "lon": -2.2447275
+  },
+  {
+   "osm": "way/666972684",
+   "name": "M&R Plumbing & Heating Ltd",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "BL6 5NY",
+   "area": "BL",
+   "lat": 53.5930306,
+   "lon": -2.5431595
+  },
+  {
+   "osm": "way/673312078",
+   "name": "Golita & Sons",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.5472721,
+   "lon": -2.3925972
+  },
+  {
+   "osm": "way/722681238",
+   "name": "Daubhill Plumbing & Heating",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.5659143,
+   "lon": -2.4461749
+  },
+  {
+   "osm": "way/963181592",
+   "name": "Leigh Plumbing Supplies",
+   "craft": "plumber",
+   "website": "https://www.heritagebathrooms.com/find-a-showroom/leigh-plumbing-merchants-ltd-leigh",
+   "phone": "",
+   "postcode": "WN7 2DA",
+   "area": "WN",
+   "lat": 53.4943,
+   "lon": -2.5057322
+  },
+  {
+   "osm": "way/987096875",
+   "name": "Ashton Water Solutions",
+   "craft": "plumber",
+   "website": "",
+   "phone": "",
+   "postcode": "",
+   "area": "",
+   "lat": 53.4865336,
+   "lon": -2.6388089
+  }
+ ]
+}
