@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 449 works, 11 broken, 46 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,9 @@ Verdicts so far: 449 works, 11 broken, 46 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
+| P-0549 | Hermit CRM: does the CLI and MCP server run on macOS and list tools from a plain Markdown store? | harvest | none |  | 0 | 25 min |
+| P-0550 | safe-anything: how many real findings does an offline scan of PROTEUS and its agent settings produce? | harvest | none |  | 0 | 20 min |
+| P-0551 | open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account? | harvest | none |  | 0 | 30 min |
 
 ## Verdicts (529)
 

@@ -6,20 +6,28 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-744 judged over 52 harvest days, 490 kept, 148 testable, 142 queued as probes, 133 with a probe verdict.
+757 judged over 53 harvest days, 498 kept, 151 testable, 145 queued as probes, 136 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
-| H-0744 | 2026-11-22 | youtube | [the bonding curve, explained in 30 seconds](https://www.youtube.com/watch?v=YBVozFI3lnw) | mechanism | desk:grinder | yes | P-0537 |
-| H-0743 | 2026-11-22 | github | [sybil-solutions/skill-distill: Distill a good Claude Code / Codex session into a skill an ](https://github.com/sybil-solutions/skill-distill) | mechanism | tools-for-strangers | yes | P-0536 |
+| H-0756 | 2026-11-23 | github | [hovocope135-tech/DSH-projects: 探索人与 AI 的最佳协作方式 · Exploring the best way for people and AI ](https://github.com/hovocope135-tech/DSH-projects) | mechanism | tools-for-strangers | no: It runs only inside DeepSeek Harness and needs a model API k |  |
+| H-0755 | 2026-11-23 | vault | [one niche one offer one channel for 3 months](https://www.youtube.com/watch?v=hv0G75NVVkQ) | mechanism | mechanism-hunting | no: It is a three-month operating rule, not something a 30 minut |  |
+| H-0754 | 2026-11-23 | youtube | [The Fastest And Slowest Depreciating Affordable Sports Cars - Q4 2025](https://www.youtube.com/watch?v=VhYMxY77Oi4) | mechanism | cars | no: The underlying listings dataset is not public, so the claim  |  |
+| H-0752 | 2026-11-23 | github | [JimLiu/open-artifact: Open, agent- and model-agnostic artifacts, all saved locally as plai](https://github.com/JimLiu/open-artifact) | mechanism | tools-for-strangers | yes | P-0551 |
+| H-0751 | 2026-11-23 | vault | [exact amount, date and exchange goal-to-plan prompt pattern](https://www.instagram.com/p/Dfy7_zAmIJh/) | mechanism | mechanism-hunting | no: Judging the plan quality needs model answers, and there is n |  |
+| H-0747 | 2026-11-23 | github | [erkamyaman/safe-anything: Find the holes before someone else does. A fast, 100% Rust vulne](https://github.com/erkamyaman/safe-anything) | both | tools-for-strangers | yes | P-0550 |
+| H-0746 | 2026-11-23 | hn | [Show HN: Hermit CRM – Free open-source CRM for solopreneurs](https://hermitcrm.io/) | mechanism | tools-for-strangers | yes | P-0549 |
+| H-0745 | 2026-11-23 | vault | [spin-tax email variants and 3-step plain-text sequence](https://www.youtube.com/watch?v=hv0G75NVVkQ) | mechanism | tools-for-strangers | no: Measuring replies needs real sends to real prospects, which  |  |
+| H-0744 | 2026-11-22 | youtube | [the bonding curve, explained in 30 seconds](https://www.youtube.com/watch?v=YBVozFI3lnw) | mechanism | desk:grinder | yes | P-0537 **works** |
+| H-0743 | 2026-11-22 | github | [sybil-solutions/skill-distill: Distill a good Claude Code / Codex session into a skill an ](https://github.com/sybil-solutions/skill-distill) | mechanism | tools-for-strangers | yes | P-0536 **works** |
 | H-0742 | 2026-11-22 | vault | [the free AI video tool on the slides](https://www.instagram.com/p/DfUfbrUDk7S/) | mechanism | tools-for-strangers | no: The tool is unnamed, and any hosted generator needs an accou |  |
 | H-0739 | 2026-11-22 | github | [pierridotite/mobile-agent-testers: 20 AI testers on 20 different phones, in parallel, on G](https://github.com/pierridotite/mobile-agent-testers) | mechanism | tools-for-strangers | no: It needs Claude Code model calls and GitHub Actions, and the |  |
 | H-0738 | 2026-11-22 | vault | [the actual setup on the slides](https://www.instagram.com/p/Df7veiBjiP-/) | mechanism | forecasting | no: The setup is unseen and a broker paper account needs signing |  |
 | H-0737 | 2026-11-22 | awesome | [scrapecrate/mcp-server (new in awesome-mcp-servers)](https://github.com/scrapecrate/mcp-server) (intel) | both | tools-for-strangers | no: It needs a ScrapeCrate account or API key and spends credits |  |
 | H-0735 | 2026-11-22 | arxiv | [Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications](https://arxiv.org/abs/2611.26221) | mechanism | mechanism-hunting | no: It needs attention access to an open-weight model and labell |  |
-| H-0734 | 2026-11-22 | github | [EL4CTEO/fast-anything: Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Pytho](https://github.com/EL4CTEO/fast-anything) | mechanism | tools-for-strangers | yes | P-0535 |
+| H-0734 | 2026-11-22 | github | [EL4CTEO/fast-anything: Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Pytho](https://github.com/EL4CTEO/fast-anything) | mechanism | tools-for-strangers | yes | P-0535 **blocked** |
 | H-0733 | 2026-11-22 | hn | [Show HN: agent-mcts – Monte Carlo tree search on top of Claude Code](https://github.com/natsu0529/agent-mcts) | mechanism | mechanism-hunting | no: It needs model calls through Claude Code and there is no loc |  |
 | H-0732 | 2026-11-22 | vault | [the ten Claude commands](https://www.instagram.com/p/Df4Pg_FH4iS/) | mechanism | tools-for-strangers | no: The slides are unseen and there is no text or URL for the co |  |
 | H-0730 | 2026-11-21 | github | [staryone/motlab: Video as code: canvas scenes rendered with WebCodecs in headless Chrome, ](https://github.com/staryone/motlab) | mechanism | tools-for-strangers | no: The speed claim depends on a GPU and it needs Node 24 and a  |  |
@@ -504,6 +512,100 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0756 hovocope135-tech/DSH-projects: 探索人与 AI 的最佳协作方式 · Exploring the best way for people and AI to work together. DSH-projects
+2026-11-23, github, https://github.com/hovocope135-tech/DSH-projects
+
+- **Mechanism:** A plugin for DeepSeek Harness where an assistant turns one-sentence goals into projects and tasks, each holding its own long-lived context and a Goal/Loop document with target, done criteria and progress. A coordinator picks the model per task and only splits into parallel agents when subtasks are independent. Optionally it reads a local activity timeline from Screenpipe. The README says executors run without permission prompts or a sandbox.
+- **Claim:** State a goal in one sentence, it asks what is unclear, runs tasks in parallel and returns finished work for approval.
+- **Testable:** no. It runs only inside DeepSeek Harness and needs a model API key. Needs: DeepSeek Harness install and a model API key.
+- **Idea on its own:** sound. A goal and completion-criteria file per task counters drift in long runs, and the rule to split only independent work is well founded.
+- **How it would be done:** The cheap piece to borrow is the per-task Goal/Loop file: target, done criteria, progress log, kept beside the task. Add it to our own task prompts and see whether runs finish more often. The full plugin needs the harness and a key, so leave it. A person would still accept or reject finished work.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** screenpipe https://github.com/mediar-ai/screenpipe (Local screen and activity capture the plugin builds its timeline on.)
+- **Field Notes line:** Context is organised per task around a written goal and done-criteria document, and agents split only when subtasks are independent.
+
+### H-0755 one niche one offer one channel for 3 months
+2026-11-23, vault, https://www.youtube.com/watch?v=hv0G75NVVkQ
+
+- **Mechanism:** A focus rule: pick one niche, one offer and one outreach channel, and run only that for three months before judging. It works by removing split attention so a single reply or conversion rate can be measured with enough volume. The numbers come from the operator's own pipeline counts.
+- **Claim:** Sticking to one niche, offer and channel for three months beats spreading across lanes.
+- **Testable:** no. It is a three-month operating rule, not something a 30 minute keyless run can resolve. Needs: three months of pipeline data.
+- **Idea on its own:** sound. Fixing two of three variables is the only way a small sample gives a readable rate, same logic as our single-variable tests.
+- **How it would be done:** Choose the lane with a written reason, set a weekly count of outreach and a stop date, and log every touch and reply in one sheet. At the end compute reply and booking rates and compare to a threshold set beforehand. Choosing the niche is a human decision; the logging and weekly counts can be scripted.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Run one niche, one offer and one channel for three months so a single conversion rate can actually be read.
+
+### H-0754 The Fastest And Slowest Depreciating Affordable Sports Cars - Q4 2025
+2026-11-23, youtube, https://www.youtube.com/watch?v=VhYMxY77Oi4
+
+- **Mechanism:** The channel tracks used-car listing prices per model, computes year-on-year median price change, and for new cars measures loss against MSRP plus market premium rather than MSRP alone. Models are ranked and the worst quarter by depreciation is examined through price trend and supply. The data is the channel's own listings set, not public.
+- **Claim:** Average affordable sports car price fell 1.6 percent year on year, with swings from plus 10 to minus 15 percent; Nissan Z Nismo lost 14.6 percent.
+- **Testable:** no. The underlying listings dataset is not public, so the claim cannot be checked keyless tonight. Needs: a listings price feed.
+- **Idea on its own:** sound. Median listing price against a premium-adjusted baseline is a reasonable way to estimate what a buyer loses.
+- **How it would be done:** Pull a repeated snapshot of public used listings for a few models, store median price and count per week, and compute year-on-year change once a year of history exists. Use MSRP plus observed premium as the baseline for recent models. A dealer contact would help check whether listings are real sale prices. Fits the car goal as a way to pick models that hold value.
+- **Stack already covers:** launchd long-running pollers
+- **Missing:** A year of listing history, which nobody here has yet.
+- **Field Notes line:** A depreciation channel ranks cars by year-on-year median price change against MSRP plus premium; the average fell 1.6 percent.
+
+### H-0752 JimLiu/open-artifact: Open, agent- and model-agnostic artifacts, all saved locally as plain files — edit, comment on, an
+2026-11-23, github, https://github.com/JimLiu/open-artifact
+
+- **Mechanism:** An agent writes a plain folder of files (deck.json plus HTML slides, canvas.json and so on). A local daemon serves that folder in an editor page on 127.0.0.1, where a person edits and comments, and 'Send to agent' returns the comments to the agent's session through MCP tools or a CLI fallback. Exports go to PDF, PPTX, PNG or HTML.
+- **Claim:** Any coding agent can make slides, designs, dashboards and docs that people edit and comment on locally, with no account.
+- **Testable:** yes. Does the daemon start from the public package and serve a sample artifact folder on localhost, and does a PDF export succeed (yes/no)? Queued as P-0551.
+- **Idea on its own:** needs-a-run. The folder-plus-daemon design is simple and plausible, but the comment return path and export need a run.
+- **How it would be done:** Install the package, write a minimal deck.json and one slide by hand, start the daemon and fetch the page on 127.0.0.1. Try the PDF export, then leave a comment through the page and see whether it lands in the CLI fallback. The agent-session return needs a supported agent app, so test only the CLI path. A designer would judge whether the output looks good.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** open-artifact https://github.com/JimLiu/open-artifact (The daemon and skill to install and run locally.)
+- **Field Notes line:** Open Artifact is a local daemon that serves agent-written folders as editable slides and designs, with comments sent back to the agent.
+
+### H-0751 exact amount, date and exchange goal-to-plan prompt pattern
+2026-11-23, vault, https://www.instagram.com/p/Dfy7_zAmIJh/
+
+- **Mechanism:** A prompt frame that forces a goal to carry an exact amount, an exact date and the exchange or venue, then asks the model to work backwards into milestones. The constraint removes vague goals so the model must produce checkable steps and a required rate of progress. Everything depends on the model's arithmetic and the user's honesty about the numbers.
+- **Claim:** A short Napoleon Hill style prompt turns a vague money goal into a dated plan.
+- **Testable:** no. Judging the plan quality needs model answers, and there is no local LLM on this Mac. Needs: a model call to score outputs.
+- **Idea on its own:** sound. Pinning amount, date and venue turns a wish into a rate that can be checked, which is how our own pre-registrations work.
+- **How it would be done:** Write the frame as a template with three required slots and a back-solve instruction: required weekly gain, milestones and a kill date. Run it on two or three of our own goals and compare the plan to what the numbers allow. The slides were unseen by the vault, so check the original wording before reusing. No hire needed.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Field Notes line:** Forcing a goal to name an exact amount, date and venue makes the model back-solve a checkable plan; the frame is reusable.
+
+### H-0747 erkamyaman/safe-anything: Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL inj
+2026-11-23, github, https://github.com/erkamyaman/safe-anything
+
+- **Mechanism:** A Rust scanner that walks a repo respecting .gitignore and applies 74 pattern rules for injection, weak crypto, secrets and risky config. It also parses agent setup files (MCP servers, Claude Code, Codex and Cursor settings, hooks, skills) and checks locked dependencies against OSV.dev, which is the only network call. It exits 1 on high or critical findings, so it works as a gate.
+- **Claim:** One command finds code vulnerabilities, secrets, config risks, CVEs and unsafe AI agent setups, 74 rules, no account.
+- **Testable:** yes. Run offline on the PROTEUS folder: how many findings by severity, and does it flag anything real in .claude settings or hooks? Queued as P-0550.
+- **Idea on its own:** needs-a-run. Pattern scanners are sound, but agent-config rules are new and their false-positive rate is unknown until run.
+- **How it would be done:** Fetch the release binary or run it through npx, scan the PROTEUS folder with --offline --json, and tally findings by rule and severity. Hand-check a sample of ten for false positives, including any raised on the unattended-decide hook. Then run again without --offline to see the OSV lookups. A security person would triage the findings; the scan itself is scriptable.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** safe-anything https://github.com/erkamyaman/safe-anything (The scanner binary, run with --offline on our own folder.)
+- **Field Notes line:** A new Rust scanner also audits agent setups (hooks, skills, MCP settings); we can point it at our own folder and count what it finds.
+
+### H-0746 Show HN: Hermit CRM – Free open-source CRM for solopreneurs
+2026-11-23, hn, https://hermitcrm.io/
+
+- **Mechanism:** A one-person CRM whose records are Markdown files in a local git repo. A web app, a CLI and an MCP server all read and write those same files, so an agent queries the CRM with grep-style access and no API. LinkedIn capture is described as one-click import of a person or a conversation, without a LinkedIn or CRM subscription.
+- **Claim:** Free open-source solo CRM with no telemetry, data as Markdown in git, usable by an agent over MCP.
+- **Testable:** yes. Does the CLI install from the public repo on this Mac, create a deal file, and does its MCP server list its tools (yes/no, count)? Queued as P-0549.
+- **Idea on its own:** sound. Plain files in git are greppable, diffable and agent-readable, which suits a single user's pipeline.
+- **How it would be done:** Clone the public repo into sandbox, install per its README, and run the CLI to add a person and a deal. Check the files appear as Markdown and that the MCP server starts and enumerates tools. The LinkedIn one-click capture is a browser extension or bookmarklet and would need a logged-in session, so skip it. A person would decide the pipeline stages and what counts as a follow-up.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** hermit-crm https://github.com/Hermit-CRM/hermit-crm (The repo to install and run read-only in the sandbox.)
+- **Field Notes line:** Hermit CRM keeps deals as Markdown files in git so an agent can read them over MCP, no API in between.
+
+### H-0745 spin-tax email variants and 3-step plain-text sequence
+2026-11-23, vault, https://www.youtube.com/watch?v=hv0G75NVVkQ
+
+- **Mechanism:** A cold-email pattern: several subject and opening variants of one offer, sent as a three-step plain-text sequence with short gaps between steps. Plain text avoids tracking pixels and heavy HTML, which helps deliverability; variants let the sender compare reply rates per step. The numbers come from the sender's own sending tool and reply counts.
+- **Claim:** A three-step plain-text sequence with spin-tax variants gets replies from local businesses for AI website sales.
+- **Testable:** no. Measuring replies needs real sends to real prospects, which is a sending account and a list, not a keyless run. Needs: a sending domain, a prospect list and weeks of reply data.
+- **Idea on its own:** needs-a-run. Short plain-text sequences are standard and sound, but the reply lift from variants is only knowable from a live send.
+- **How it would be done:** Write one offer and three to five variants of subject and opener, then three steps: first touch, a short bump, a last line. Load them into a sender with per-variant tagging, split the list evenly, and log replies per variant and step. Under UK rules it needs a lawful basis and an opt-out line for corporate subscribers. A person would build and clean the prospect list and read the replies, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** A warmed sending domain and a clean niche prospect list.
+- **Field Notes line:** A three-step plain-text cold email sequence with spun variants is the unit to A/B; only real reply counts can judge it.
 
 ### H-0744 the bonding curve, explained in 30 seconds
 2026-11-22, youtube, https://www.youtube.com/watch?v=YBVozFI3lnw
@@ -6312,6 +6414,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0755 | 2026-11-23 | one niche one offer one channel for 3 months | open | sound | no |  |
+| H-0751 | 2026-11-23 | exact amount, date and exchange goal-to-plan prompt pattern | open | sound | no |  |
+| H-0745 | 2026-11-23 | spin-tax email variants and 3-step plain-text sequence | open | needs-a-run | no |  |
 | H-0742 | 2026-11-22 | the free AI video tool on the slides | open | needs-a-run | no |  |
 | H-0738 | 2026-11-22 | the actual setup on the slides | open | needs-a-run | no |  |
 | H-0732 | 2026-11-22 | the ten Claude commands | open | needs-a-run | no |  |
@@ -6473,6 +6578,10 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0436 | 2026-11-23 | [screenpipe](https://github.com/mediar-ai/screenpipe) | Local screen and activity capture the plugin builds its timeline on. | H-0756 (hovocope135-tech/DSH-projects: 探索人与 AI 的最佳协作方式 · E) | shelf |
+| T-0435 | 2026-11-23 | [open-artifact](https://github.com/JimLiu/open-artifact) | The daemon and skill to install and run locally. | H-0752 (JimLiu/open-artifact: Open, agent- and model-agnos) | shelf |
+| T-0434 | 2026-11-23 | [safe-anything](https://github.com/erkamyaman/safe-anything) | The scanner binary, run with --offline on our own folder. | H-0747 (erkamyaman/safe-anything: Find the holes before so) | shelf |
+| T-0433 | 2026-11-23 | [hermit-crm](https://github.com/Hermit-CRM/hermit-crm) | The repo to install and run read-only in the sandbox. | H-0746 (Show HN: Hermit CRM – Free open-source CRM for sol) | shelf |
 | T-0432 | 2026-11-22 | oh-my-pi (omp) | The tested student harness; the repo names it but gives no link. | H-0743 (sybil-solutions/skill-distill: Distill a good Clau) | shelf |
 | T-0431 | 2026-11-22 | [skill-distill](https://github.com/sybil-solutions/skill-distill) | The teacher skill, run bookkeeping and session extractor. | H-0743 (sybil-solutions/skill-distill: Distill a good Clau) | shelf |
 | T-0430 | 2026-11-22 | [mobile-agent-testers](https://github.com/pierridotite/mobile-agent-testers) | The workflow, personas and briefs. | H-0739 (pierridotite/mobile-agent-testers: 20 AI testers o) | shelf |
@@ -6910,6 +7019,11 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0757 | 2026-11-23 | youtube | [Mid-Engine Cars Ranked: Depreciation Traps vs Smart Buys (2025)](https://www.youtube.com/watch?v=vF7tAj8Z8ek) | Same channel and method as the other depreciation video; kept the Q4 one as the better record. |
+| H-0753 | 2026-11-23 | arxiv | [Can Language Models See the Circuit in Pixelated RFIC Passives?](https://arxiv.org/abs/2611.27559) | RFIC chip layout debugging with a frontier model; no part of the stack applies and nothing is runnable. |
+| H-0750 | 2026-11-23 | awesome | [taddeimania/lathe (new in awesome-mcp-servers)](https://github.com/taddeimania/lathe) | A C++ DAW with an assistant bolted on; the README gives no mechanism for the MCP side that we could use. |
+| H-0749 | 2026-11-23 | youtube | [Top 5 fastest and slowest depreciating cars – a data driven analysis](https://www.youtube.com/watch?v=zvpGUyVa-3o) | No transcript available, and a sibling video from the same channel carries the same method. |
+| H-0748 | 2026-11-23 | arxiv | [A Cognitive Agentic AI Framework for Interactive Process Analysis and Optimizati](https://arxiv.org/abs/2611.27725) | Chemical process simulation with COCO and Bayesian optimisation; the agent pattern is generic and the stack is not ours. |
 | H-0741 | 2026-11-22 | youtube | [🚨 Apple just changed local AI with the M5 Max MacBook Pro 🤖💻](https://www.youtube.com/watch?v=ZCa2B0Re36Q) | Comment-for-link hype with an unsupported claim and no mechanism or measurement. |
 | H-0740 | 2026-11-22 | arxiv | [EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL](https://arxiv.org/abs/2611.26196) | A robot-control post-training recipe (distil, SFT, RL on LIBERO) with no use for any desk here and a standard recipe oth |
 | H-0736 | 2026-11-22 | youtube | [Apple messed up the M5 Ultra 😂](https://www.youtube.com/watch?v=Jx6dw1Yu6rk) | A hardware banter clip whose only content is an Apple logo size joke, with no mechanism or number. |

@@ -1,5 +1,5 @@
 {
- "next_id": 549,
+ "next_id": 552,
  "items": [
   {
    "id": "P-0001",
@@ -14002,6 +14002,66 @@
     "at": "2026-11-23T12:47:05+0000",
     "hit": false
    }
+  },
+  {
+   "id": "P-0549",
+   "title": "Hermit CRM: does the CLI and MCP server run on macOS and list tools from a plain Markdown store?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0550",
+   "title": "safe-anything: how many real findings does an offline scan of PROTEUS and its agent settings produce?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0551",
+   "title": "open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-23",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
