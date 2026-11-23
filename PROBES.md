@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 448 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Verdicts so far: 448 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
+| P-0547 | Deepen P-0546 (SEAR no-model baseline, EER 14.0% on 200 clips): rerun experiments/2026-11-23-P-0546/sear_baseline.py on 1,000 LA eval clips (300 bonafide) via the HF datasets-server rows API, report EER with 95% bootstrap interval, per-attack EER (A07 to A19 from the notes field or labels.parquet), and EER again with the energy and silence features (rms, dyn_range, noise_floor, mfcc0) dropped to test the silence shortcut. | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (527)
 

@@ -1,5 +1,5 @@
 {
- "next_id": 547,
+ "next_id": 548,
  "items": [
   {
    "id": "P-0001",
@@ -13943,6 +13943,32 @@
     "number": "EER about 25% on 100 bonafide and 100 spoof, worse than the 17.65% claimed",
     "at": "2026-11-23T12:35:36+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0547",
+   "title": "Deepen P-0546 (SEAR no-model baseline, EER 14.0% on 200 clips): rerun experiments/2026-11-23-P-0546/sear_baseline.py on 1,000 LA eval clips (300 bonafide) via the HF datasets-server rows API, report EER with 95% bootstrap interval, per-attack EER (A07 to A19 from the notes field or labels.parquet), and EER again with the energy and silence features (rms, dyn_range, noise_floor, mfcc0) dropped to test the silence shortcut.",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-23T12:41:00+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "full-feature EER about 17% on the bigger sample, rising to about 25% with the energy and silence features dropped",
+    "at": "2026-11-23T12:41:06+0000"
    }
   }
  ]
