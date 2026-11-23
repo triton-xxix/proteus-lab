@@ -1,0 +1,28 @@
+{
+ "clips": 600,
+ "fit_bonafide": 150,
+ "test_bonafide": 150,
+ "test_spoof": 300,
+ "features": 44,
+ "dropped": [
+  "rms_mean",
+  "rms_std",
+  "dyn_range_db",
+  "noise_floor_db",
+  "mfcc0_mean",
+  "mfcc0_std"
+ ],
+ "eer_full": 0.16,
+ "eer_full_ci95": [
+  0.1317,
+  0.1933
+ ],
+ "eer_without_energy": 0.1867,
+ "eer_without_energy_ci95": [
+  0.1467,
+  0.2234
+ ],
+ "held_bonafide_with_speaker_in_fit": 127,
+ "per_attack": "not done: notes field carries utterance, speaker and subset only; labels.parquet needs pyarrow, absent from the venv",
+ "seconds": 240
+}

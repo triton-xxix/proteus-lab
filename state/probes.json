@@ -13953,22 +13953,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-23T12:41:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-23T12:45:40+0000",
+   "note": "EER 16.0% (95% bootstrap 13.2 to 19.3%) on 150 held-out bonafide plus 300 spoof, ASVspoof 2019 LA eval, 44 librosa features, median and MAD from 150 bonafide: SEAR claim 17.65% sits inside. Energy and silence features dropped: 18.7% (14.7 to 22.3%), so the silence shortcut is not carrying it. Shot: about 17% then about 25%; first close, second wrong. Per-attack not done (no attack ids in notes, no pyarrow). 127 of 150 test bonafide share a speaker with the fit half. Next: close (claim reproduced keyless; nothing to promote without a desk for audio).",
+   "artefacts": [
+    "experiments/2026-11-23-P-0547"
+   ],
+   "minutes": 4,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "full-feature EER about 17% on the bigger sample, rising to about 25% with the energy and silence features dropped",
-    "at": "2026-11-23T12:41:06+0000"
+    "at": "2026-11-23T12:41:06+0000",
+    "hit": true
    }
   }
  ]
