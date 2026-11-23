@@ -31,6 +31,10 @@ DESKS = [
     ("judgement-book", "pitch/JUDGEMENT.csv", 45, "interactive calls, one Nations League window a month"),
     ("exchange-book", "exchange/BOOK.csv", 4, "up to two blind calls a night"),
     ("systems-book", "systems/SIGNALS.csv", 5, "a row per close"),
+    # The asking half (F-0110, 23 Nov 2026): one game per opponent (Luke, 14 Oct) leaves a pool of
+    # unplayed bots online that may all refuse (eight on 22-23 Nov, P-0539). Games are gated on this,
+    # which must come first in the list: a gate is read from states already computed.
+    ("lichess-asks", "games/lichess/CHALLENGES.csv", 2, "morning job asks daily"),
     ("lichess", "games/lichess/GAMES.csv", 2, "morning job, daily"),
     # None since 28 Oct (F-0060): nolan.py prints STOP from 23 Oct, every film researched or parked.
     # Deep pages come from the Workshop, not this folder. Restore 4 if a new film is added.
@@ -43,7 +47,7 @@ DESKS = [
 # A gated desk gains rows only when a filter passes something; while the desk it waits on is ok, its
 # quiet is the gate working, not a fault (F-0058, F-0064 28 Oct). The Inspector still reads the
 # gate-passer count from the nightly line; this only stops the tool re-adding F-0063 every few days.
-GATED = {"grinder-ledger": "grinder-snapshot"}
+GATED = {"grinder-ledger": "grinder-snapshot", "lichess": "lichess-asks"}
 # A fixture-gated desk has nothing to predict when no league plays (F-0091, F-0094, 14 Nov 2026: the
 # international break, no kickoff in any of the nine calendars from 10 to 19 Nov). Quiet is "no
 # fixtures" when the cached fixturedownload calendars hold no kickoff from `limit` days back to
