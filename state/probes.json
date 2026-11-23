@@ -13978,26 +13978,29 @@
    "id": "P-0548",
    "title": "Fee sweeper hour: page getSignaturesForAddress for FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT back one hour (peek 23 Nov: 1,000 signatures in 388 s, 84 failed), getTransaction jsonParsed with commitment confirmed on 100 spread successes (the peek's 5 newest came back null, so skip the newest minute and retry), sum the SOL balance changes per receiving account, count distinct mints, and compare the creator-fee to protocol-fee ratio with the published split.",
    "source": "refill",
-   "needs": "",
+   "needs": "about 100 successful getTransaction reads: the public RPC returned 6 of 40 in 9 minutes; a nightly paced at one call per 2 to 3 s, or a keyed RPC, and the native plus wrapped SOL double count fixed",
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-23T12:47:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "blocked",
+   "verdict_at": "2026-11-23T12:56:57+0000",
+   "note": "Measured: the sweeper signs about 2.9 transactions a second (10,000 signatures over 3,407 s, 5.3% failed), not the 5 a second refill 211 saw. Only 6 of 40 getTransaction reads came back, so the 1,908 SOL an hour extrapolation is not a result, and receivers appear in equal pairs (likely native and wrapped SOL counted twice). Shot: works, about 30 SOL an hour from about 300 mints; no verdict-grade number to score.",
+   "artefacts": [
+    "experiments/2026-11-23-P-0548"
+   ],
+   "minutes": 9,
+   "calls": 6,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.45,
     "number": "about 30 SOL swept an hour, extrapolated from 100 sampled sweeps, from about 300 distinct mints",
-    "at": "2026-11-23T12:47:05+0000"
+    "at": "2026-11-23T12:47:05+0000",
+    "hit": false
    }
   }
  ]
