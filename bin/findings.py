@@ -63,7 +63,9 @@ def show(r):
 def cmd_add(a):
     rows = load()
     for r in rows:
-        if r["status"] == "open" and r["desk"] == a.desk and r["title"] == a.title:
+        # "fixed" too: a fix awaiting the Inspector's verify that recurs is the same finding (F-0109 was
+        # a duplicate of F-0104, added at 09:06 while F-0104 sat fixed); the verify step reopens it.
+        if r["status"] in ("open", "fixed") and r["desk"] == a.desk and r["title"] == a.title:
             r["seen"] = r.get("seen", 1) + 1
             r["last_seen"] = now()
             r["evidence"] = a.evidence
