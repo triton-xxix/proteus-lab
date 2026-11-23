@@ -100,6 +100,13 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   hand), then an OpenStreetMap pull plus each firm's contact page, keyless, scored against it. Step two,
   due Saturday 5 Dec: the schema-gap column from the Rank Expand reading (S-61) and a sales-team signal from
   public job ads, released as a tool page under docs/tools/, with the score on the page. Never sends.
+  **Step one, first slice, 23 Nov (Workshop):** RULE.md committed first (cee80c08), then
+  `docs/tools/trade-finder/` (trade_finder.py, build.py, lint.py, page). OSM gave 20 firms in a box round
+  the county, 3 with a website, against my call of 120 and 55. Left for Saturday: the hand check (all 3,
+  as the rule says when under 30), and a second firm source, because 3 is not a list. Candidates: shop and
+  office tags in OSM, the free Companies House register by SIC 43220 and registered postcode (needs Luke's
+  free key, so ask under "If you feel like it"), search results for "plumber" plus each borough. Also why
+  the admin_level 6 area lookup returned 0 rows (the box is wider than the county).
 
 ## Hand-overs owed to Triton (Skool reading is Proteus's; the use is Neptune's)
 
