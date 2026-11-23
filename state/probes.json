@@ -12875,9 +12875,9 @@
    "after": "2026-11-23",
    "est_minutes": 15,
    "added": "2026-11-20",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-23T12:32:09+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -12885,7 +12885,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.55,
+    "number": "NOAA MAE about 0.8, the 13-19 Nov mean baseline about 0.6, so NOAA loses to climatology",
+    "at": "2026-11-23T12:32:28+0000"
+   }
   },
   {
    "id": "P-0506",
