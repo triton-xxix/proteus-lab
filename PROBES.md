@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 447 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 448 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,12 @@ Verdicts so far: 447 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
-| P-0546 | SEAR tools-only baseline on real audio: pull one shard (data/test-00000-of-00009.parquet, 486 MB, keyless) of the HF mirror SpeechAntiSpoofingBenchmarks/ASVspoof2019_LA (LA eval, labels.parquet beside it), take 100 bonafide and 100 spoof clips, compute librosa features in the sandbox venv, score each clip by median and MAD distance fitted on half the genuine clips only, report EER against SEAR's claimed 17.65% and the three features that deviate most on spoof. Detection side only. | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (526)
+## Verdicts (527)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-23 | P-0546 | SEAR tools-only baseline on real audio: pull one shard (data/test-00000-of-00009.parquet, 486 MB, keyless) of the HF mirror SpeechAntiSpoofingBenchmarks/ASVspoof2019_LA (LA eval, labels.parquet beside it), take 100 bonafide and 100 spoof clips, compute librosa features in the sandbox venv, score each clip by median and MAD distance fitted on half the genuine clips only, report EER against SEAR's claimed 17.65% and the three features that deviate most on spoof. Detection side only. | **works** | EER 14.0% (mean robust /z/, 44 librosa features, median and MAD from 50 bonafide) on 50 held-out bonafide plus 100 spoof from ASVspoof 2019 LA eval, against SEAR claim 17.65% (shot: about 25%). Median /z/ 26%. Top movers on spoof: f0 spread, bandwidth, MFCC-0 spread, dynamic range. Audio keyless via HF datasets-server /rows (filter API 500). Caveat: 50 test bonafide is 2 points a clip, so this reproduces rather than beats; RMS features may read the known silence shortcut. Next: deepen (queue: 1,000 clips, per-attack EER, drop the energy features to test the silence shortcut). | `experiments/2026-11-23-P-0546` | 5 min, 13 calls, 0 denied |
 | 2026-11-23 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | **blocked** | Not run, no shot (the block is the clock, known before touching it). P-0528 results: 22 mints, 20 forecast 13:04Z 23 Nov, 1 at 09:04Z, 1 with no birth. The pre-registered read needs 13:09Z or later; this loop ends 13:04 and the hook blocks a foreground sleep. Requeued for the 24 Nov nightly with the same pass rule; a burn hours late still scores against the rule (it fails the 3-minute window). | `experiments/2026-11-22-P-0528` | 0 min, 9 calls, 0 denied |
 | 2026-11-23 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | **broken** | NOAA 20 Nov Kp three-day forecast MAE 1.02 on 17 slots against persistence 0.67 and the 13-19 Nov mean 0.64 (shot: NOAA about 0.8, baseline about 0.6). Forecast mean 2.08, observed 1.14, max 2.67, no slot at 5. Pre-registered pass failed: it ran one unit high over a quiet weekend. One issue, autocorrelated slots, preliminary observed rows. | `experiments/2026-11-23-P-0505` | 0 min, 10 calls, 0 denied |
 | 2026-11-22 | P-0544 | Comet C/2023 A3 pageviews under its 2024 title: weeks of lead and a one-day half-life like the eclipses, or a late long tail like the storms? | **works** | Under its 2024 title C/2023 A3 (Tsuchinshan-ATLAS) the comet page sat above 2x baseline for 46 days before 12 Oct, peaked 3 days late on 15 Oct at 78k (289x), halved in 3 days and stayed above 2x for 31: scheduled lead, news-like tail. The current title 404s for 2024. | `experiments/2026-11-22-P-0544` | 0 min, 5 calls, 0 denied |

@@ -13924,22 +13924,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-23T12:35:24+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-23T12:40:43+0000",
+   "note": "EER 14.0% (mean robust |z|, 44 librosa features, median and MAD from 50 bonafide) on 50 held-out bonafide plus 100 spoof from ASVspoof 2019 LA eval, against SEAR claim 17.65% (shot: about 25%). Median |z| 26%. Top movers on spoof: f0 spread, bandwidth, MFCC-0 spread, dynamic range. Audio keyless via HF datasets-server /rows (filter API 500). Caveat: 50 test bonafide is 2 points a clip, so this reproduces rather than beats; RMS features may read the known silence shortcut. Next: deepen (queue: 1,000 clips, per-attack EER, drop the energy features to test the silence shortcut).",
+   "artefacts": [
+    "experiments/2026-11-23-P-0546"
+   ],
+   "minutes": 5,
+   "calls": 13,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "EER about 25% on 100 bonafide and 100 spoof, worse than the 17.65% claimed",
-    "at": "2026-11-23T12:35:36+0000"
+    "at": "2026-11-23T12:35:36+0000",
+    "hit": true
    }
   }
  ]
