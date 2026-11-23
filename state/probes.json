@@ -1,5 +1,5 @@
 {
- "next_id": 548,
+ "next_id": 549,
  "items": [
   {
    "id": "P-0001",
@@ -13972,6 +13972,32 @@
     "number": "full-feature EER about 17% on the bigger sample, rising to about 25% with the energy and silence features dropped",
     "at": "2026-11-23T12:41:06+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0548",
+   "title": "Fee sweeper hour: page getSignaturesForAddress for FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT back one hour (peek 23 Nov: 1,000 signatures in 388 s, 84 failed), getTransaction jsonParsed with commitment confirmed on 100 spread successes (the peek's 5 newest came back null, so skip the newest minute and retry), sum the SOL balance changes per receiving account, count distinct mints, and compare the creator-fee to protocol-fee ratio with the published split.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-23",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-23T12:47:00+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.45,
+    "number": "about 30 SOL swept an hour, extrapolated from 100 sampled sweeps, from about 300 distinct mints",
+    "at": "2026-11-23T12:47:05+0000"
    }
   }
  ]

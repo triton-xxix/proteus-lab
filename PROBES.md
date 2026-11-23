@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 449 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Verdicts so far: 449 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0545 | Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time after 13:09Z 23 Nov: share burned, each burn's blockTime distance from its forecast HH:04 slot, and score the P-0528 README's pre-registered pass rule (80% burned within 3 min, none over an hour early). | desk | none | 2026-11-24 | 0 | 20 min |
+| P-0548 | Fee sweeper hour: page getSignaturesForAddress for FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT back one hour (peek 23 Nov: 1,000 signatures in 388 s, 84 failed), getTransaction jsonParsed with commitment confirmed on 100 spread successes (the peek's 5 newest came back null, so skip the newest minute and retry), sum the SOL balance changes per receiving account, count distinct mints, and compare the creator-fee to protocol-fee ratio with the published split. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (528)
 
