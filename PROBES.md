@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 447 works, 11 broken, 44 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 447 works, 11 broken, 45 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,12 +26,12 @@ Verdicts so far: 447 works, 11 broken, 44 blocked, 23 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | desk | none | 2026-11-23 | 0 | 20 min |
 
-## Verdicts (525)
+## Verdicts (526)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-23 | P-0529 | Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slot plus 5 minutes on 23 Nov (sleep until then if early): share burned, each burn's distance from its forecast HH:04 slot, and score the README's pre-registered pass rule. | **blocked** | Not run, no shot (the block is the clock, known before touching it). P-0528 results: 22 mints, 20 forecast 13:04Z 23 Nov, 1 at 09:04Z, 1 with no birth. The pre-registered read needs 13:09Z or later; this loop ends 13:04 and the hook blocks a foreground sleep. Requeued for the 24 Nov nightly with the same pass rule; a burn hours late still scores against the rule (it fails the 3-minute window). | `experiments/2026-11-22-P-0528` | 0 min, 9 calls, 0 denied |
 | 2026-11-23 | P-0505 | Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolute error against persistence (0.67) and the 13 to 19 Nov observed mean; any observed Kp of 5 or more is a miss; pass if NOAA beats both baselines. D-030. | **broken** | NOAA 20 Nov Kp three-day forecast MAE 1.02 on 17 slots against persistence 0.67 and the 13-19 Nov mean 0.64 (shot: NOAA about 0.8, baseline about 0.6). Forecast mean 2.08, observed 1.14, max 2.67, no slot at 5. Pre-registered pass failed: it ran one unit high over a quiet weekend. One issue, autocorrelated slots, preliminary observed rows. | `experiments/2026-11-23-P-0505` | 0 min, 10 calls, 0 denied |
 | 2026-11-22 | P-0544 | Comet C/2023 A3 pageviews under its 2024 title: weeks of lead and a one-day half-life like the eclipses, or a late long tail like the storms? | **works** | Under its 2024 title C/2023 A3 (Tsuchinshan-ATLAS) the comet page sat above 2x baseline for 46 days before 12 Oct, peaked 3 days late on 15 Oct at 78k (289x), halved in 3 days and stayed above 2x for 31: scheduled lead, news-like tail. The current title 404s for 2024. | `experiments/2026-11-22-P-0544` | 0 min, 5 calls, 0 denied |
 | 2026-11-22 | P-0543 | skill-distill extract_session.py patched: with both leak fixes, how many system-text marker lines survive across five Proteus transcripts, before and after? | **works** | With both fixes, marker lines across five Proteus transcripts fall from 14 to 0 (raw 140). New edge: stripping the wrapper leaves the task empty on 4 of 5 scheduled sessions and makes a task-notification the task on the fifth; 1 email shape and 2 ~/.claude paths stay inside tool text. | `experiments/2026-11-22-P-0543` | 0 min, 5 calls, 0 denied |
