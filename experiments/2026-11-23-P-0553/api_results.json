@@ -1,0 +1,90 @@
+[
+ {
+  "market_id": "178312814",
+  "event": "November 15th, 2026",
+  "n_contracts": 11,
+  "low_bin": 3,
+  "high_bin": 13,
+  "missing": [],
+  "winner": "9°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "178538430",
+  "event": "November 16th, 2026",
+  "n_contracts": 11,
+  "low_bin": 5,
+  "high_bin": 15,
+  "missing": [],
+  "winner": "12°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "178794300",
+  "event": "November 17th, 2026",
+  "n_contracts": 11,
+  "low_bin": 7,
+  "high_bin": 17,
+  "missing": [],
+  "winner": "14°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "179043659",
+  "event": "November 18th, 2026",
+  "n_contracts": 11,
+  "low_bin": 7,
+  "high_bin": 17,
+  "missing": [],
+  "winner": "13°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "179253482",
+  "event": "November 19th, 2026",
+  "n_contracts": 11,
+  "low_bin": 5,
+  "high_bin": 15,
+  "missing": [],
+  "winner": "9°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "179502059",
+  "event": "November 20th, 2026",
+  "n_contracts": 11,
+  "low_bin": 5,
+  "high_bin": 15,
+  "missing": [],
+  "winner": "10°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "179747150",
+  "event": "November 21st, 2026",
+  "n_contracts": 11,
+  "low_bin": 3,
+  "high_bin": 13,
+  "missing": [],
+  "winner": "9°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "179933696",
+  "event": "November 22nd, 2026",
+  "n_contracts": 11,
+  "low_bin": -1,
+  "high_bin": 9,
+  "missing": [],
+  "winner": "4°C",
+  "winner_in_gap": false,
+  "winner_at_open_end": false
+ }
+]

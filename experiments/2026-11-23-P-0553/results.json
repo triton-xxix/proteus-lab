@@ -1,0 +1,47 @@
+{
+ "ladders": 4,
+ "with_gap": 3,
+ "winners_known": 1,
+ "gappy_with_winner": 0,
+ "winner_in_gap": [],
+ "gappy": [
+  {
+   "market_id": "180152672",
+   "market": "Highest Temperature in Munich on November 23rd",
+   "low_bin": -2,
+   "high_bin": 8,
+   "n_exact": 8,
+   "missing": [
+    1
+   ],
+   "winner": null,
+   "winner_in_gap": null
+  },
+  {
+   "market_id": "180443002",
+   "market": "Highest Temperature in Munich on November 24th",
+   "low_bin": -3,
+   "high_bin": 7,
+   "n_exact": 7,
+   "missing": [
+    -2,
+    1
+   ],
+   "winner": null,
+   "winner_in_gap": null
+  },
+  {
+   "market_id": "180722282",
+   "market": "Highest Temperature in Munich on November 25th",
+   "low_bin": -3,
+   "high_bin": 7,
+   "n_exact": 7,
+   "missing": [
+    -2,
+    -1
+   ],
+   "winner": null,
+   "winner_in_gap": null
+  }
+ ]
+}

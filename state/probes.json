@@ -1,5 +1,5 @@
 {
- "next_id": 553,
+ "next_id": 554,
  "items": [
   {
    "id": "P-0001",
@@ -14088,6 +14088,28 @@
    ],
    "minutes": 0,
    "calls": 8,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0553",
+   "title": "Munich ladder gaps: how many Munich daily-high ladders in SNAPSHOTS.csv skip a whole degree inside their range, and did a skipped degree ever win?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-23",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-23T23:40:38+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-23T23:42:39+0000",
+   "note": "Settled 15 to 22 Nov ladders: 8 of 8 whole (11 contracts). Open 23, 24, 25 Nov ladders straddle zero and miss 1, 2 and 2 degrees: Smarkets slugs drop the minus sign (-1C is 1degc), and every missing degree is the sign-twin of a listed one. No gappy ladder settled yet; 24 Nov has no 1C contract beside my 2C call.",
+   "artefacts": [
+    "experiments/2026-11-23-P-0553"
+   ],
+   "minutes": 2,
+   "calls": 26,
    "denied": [],
    "luke": false
   }

@@ -1,0 +1,30 @@
+[
+ {
+  "market_id": "180443002",
+  "event": null,
+  "n_contracts": 9,
+  "low_bin": -3,
+  "high_bin": 7,
+  "missing": [
+   -2,
+   1
+  ],
+  "winner": null,
+  "winner_in_gap": null,
+  "winner_at_open_end": false
+ },
+ {
+  "market_id": "180722282",
+  "event": null,
+  "n_contracts": 9,
+  "low_bin": -3,
+  "high_bin": 7,
+  "missing": [
+   -2,
+   -1
+  ],
+  "winner": null,
+  "winner_in_gap": null,
+  "winner_at_open_end": false
+ }
+]
