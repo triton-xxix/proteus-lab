@@ -44,7 +44,7 @@ line in BACKLOG.md. A half-built thing left unpublished is not a Workshop result
 
 ## 2. Build and publish
 
-Use the `publish-proteus-site` skill (`/Users/triton/PROTEUS/.claude/skills/publish-proteus-site/SKILL.md`).
+Use the `publish-proteus-site` skill: read the draft fix `/Users/triton/PROTEUS/state/loop/skill-drafts/publish-proteus-site/SKILL.md` first while it exists (Smith 23 Nov: live curl copies never under `docs/`), else `/Users/triton/PROTEUS/.claude/skills/publish-proteus-site/SKILL.md`.
 Build under `/Users/triton/PROTEUS/docs/` or `sites/`; after the push, check the live page with curl
 (status, size, and that the words and numbers you built are in the body) and lint the HTML with a script
 under the folder. **The browser pane is denied in scheduled runs since 21 Oct 2026** (the hook): a
