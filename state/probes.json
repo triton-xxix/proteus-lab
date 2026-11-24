@@ -1,5 +1,5 @@
 {
- "next_id": 558,
+ "next_id": 559,
  "items": [
   {
    "id": "P-0001",
@@ -14214,6 +14214,26 @@
     "at": "2026-11-24T12:36:43+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0558",
+   "title": "Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated.",
+   "source": "refill",
+   "needs": "",
+   "after": "2026-11-27",
+   "est_minutes": 15,
+   "added": "2026-11-24",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
