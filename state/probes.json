@@ -13904,9 +13904,9 @@
    "after": "2026-11-24",
    "est_minutes": 20,
    "added": "2026-11-23",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-24T12:32:23+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -13914,7 +13914,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.55,
+    "number": "under 80 percent of P-0528 mints burned within 3 min of their HH:04 slot, about 50 percent",
+    "at": "2026-11-24T12:32:50+0000"
+   }
   },
   {
    "id": "P-0546",
