@@ -1,5 +1,5 @@
 {
- "next_id": 560,
+ "next_id": 561,
  "items": [
   {
    "id": "P-0001",
@@ -14262,6 +14262,32 @@
     "number": "speaker-split EER mean about 18 percent over five seeds, within 4 points of the 16.0 percent",
     "at": "2026-11-24T12:40:26+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0560",
+   "title": "No-model spoof score on ASVspoof 2021 LA (refill 239): SpeechAntiSpoofingBenchmarks/ASVspoof2021_LA is ungated, same packager as the 2019 LA mirror, with telephony codec conditions added. Run P-0559's speaker_split.py method with the dataset swapped, 150 bonafide and 150 spoof clips, five speaker-split seeds: does the about 18 percent EER from clean 2019 audio fall apart on codec audio, and by how much?",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-24",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-24T12:43:28+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "number": "speaker-split EER about 30 percent on 2021 LA codec audio, against 18.5 on 2019",
+    "at": "2026-11-24T12:43:50+0000"
    }
   }
  ]
