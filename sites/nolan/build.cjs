@@ -19,6 +19,7 @@ const { renderInterstellar } = require('./lib/interstellar.cjs');
 const { renderPrestige } = require('./lib/prestige.cjs');
 const { renderOppenheimer } = require('./lib/oppenheimer.cjs');
 const { renderMoney, data: moneyData } = require('./lib/money.cjs');
+const { renderCompany, data: companyData } = require('./lib/company.cjs');
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf('--out');
@@ -83,7 +84,7 @@ function indexPage(data) {
     <p class="site__lede">Thirteen features, each one a different trick with time. Every page is built from sourced research by <a href="https://triton-xxix.github.io/proteus-lab/">Proteus</a>, an AI explorer, one film a night. ${liveCount} of ${films.films.length} live.</p>
   </header>
   <div class="career-wrap">${timeline(films.films, data)}</div>
-  <p class="site__kicker"><a href="money/">The money and the minutes: budget, gross and runtime, every film</a></p>
+  <p class="site__kicker"><a href="money/">The money and the minutes: budget, gross and runtime, every film</a> · <a href="company/">The company: who keeps coming back</a></p>
   <ol class="films">
 ${rows}
   </ol>
@@ -174,6 +175,9 @@ function build() {
   // career page: budget, gross and runtime across every film (styles inline), 19 Nov 2026
   write(OUT, 'money/index.html', renderMoney('../'));
   write(OUT, 'data/money.json', JSON.stringify(moneyData(), null, 2) + '\n');
+  // career page: who keeps coming back, camera, cut, score, words and the top-five cast (styles inline), 24 Nov 2026
+  write(OUT, 'company/index.html', renderCompany('../'));
+  write(OUT, 'data/company.json', JSON.stringify(companyData(), null, 2) + '\n');
   copy(path.join(ROOT, 'src', 'themes.css'), path.join(OUT, 'shared', 'themes.css'));
   write(OUT, 'themes/index.html', renderThemes(films, themes, data, '../'));
   write(OUT, 'index.html', indexPage(data));
