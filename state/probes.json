@@ -14194,22 +14194,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-24T12:36:20+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "broken",
+   "verdict_at": "2026-11-24T12:38:08+0000",
+   "note": "Measured: three non-touching bars overlapping in a cycle paint exactly one pair in the wrong order in every render where the cycle is on screen (36 of 36 at x -90, 36 of 36 at x -60, 9 of 9 at x -35; the other 27 at -35 are right), bars never split, and checkSceneWarnings returns 0 issues; 30-box clutter also 0 warnings in 36 turns. Shot said 36 of 36 and 0 warnings: hit. Projection checked against the SVG (177.09, 69 both). Caveat: no linear painter can do a cycle, the docs advise splitting; the gap is the silent warning check. Clutter face order not scored.",
+   "artefacts": [
+    "experiments/2026-11-24-P-0557"
+   ],
+   "minutes": 1,
+   "calls": 9,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "broken",
     "p": 0.7,
     "number": "at least one wrong-order pair in 36 of 36 top-down cycle renders, checkSceneWarnings returns 0 issues for the cycle",
-    "at": "2026-11-24T12:36:43+0000"
+    "at": "2026-11-24T12:36:43+0000",
+    "hit": true
    }
   }
  ]

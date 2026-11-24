@@ -1,0 +1,1963 @@
+{
+ "summary": {
+  "version": "0.4.1",
+  "projCheck": {
+   "mine_first_corner_screen": [
+    177.09174596234192,
+    68.99991199774126
+   ],
+   "svg_first_piece": "<path d=\"m104.35 309l242.91 69l229.05 61l90.49 301z\" fill=\"#2ad25a\"/>"
+  },
+  "cycle": {
+   "-90": {
+    "renders": 36,
+    "renders_with_all3_overlaps": 36,
+    "renders_wrong": 36,
+    "wrong_pairs_total": 36,
+    "mixed_pairs_total": 0,
+    "max_pieces_per_bar": 1
+   },
+   "-60": {
+    "renders": 36,
+    "renders_with_all3_overlaps": 36,
+    "renders_wrong": 36,
+    "wrong_pairs_total": 36,
+    "mixed_pairs_total": 0,
+    "max_pieces_per_bar": 1
+   },
+   "-35": {
+    "renders": 36,
+    "renders_with_all3_overlaps": 9,
+    "renders_wrong": 9,
+    "wrong_pairs_total": 9,
+    "mixed_pairs_total": 0,
+    "max_pieces_per_bar": 1
+   }
+  },
+  "cycleWarnings": [],
+  "clutter": {
+   "boxes": 30,
+   "renders": 36,
+   "warnings_or_invalid": []
+  }
+ },
+ "results": [
+  {
+   "tilt": -90,
+   "turn": 0,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 10,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 20,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 30,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 40,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 50,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 60,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 70,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 80,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 90,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 100,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 110,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 120,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 130,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 140,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 150,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 160,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 170,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 180,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 190,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 200,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 210,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 220,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 230,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 240,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 250,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 260,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 270,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 280,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 290,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 300,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 310,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 320,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 330,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 340,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -90,
+   "turn": 350,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 0,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 10,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 20,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 30,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 40,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 50,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 60,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 70,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 80,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 90,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 100,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 110,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 120,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 130,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 140,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 150,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 160,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 170,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 180,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 190,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 200,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 210,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 220,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 230,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 240,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 250,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 260,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 270,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 280,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 290,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 300,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 310,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 320,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 330,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 340,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -60,
+   "turn": 350,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 0,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 10,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 20,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 30,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 40,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 50,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 60,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 70,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 80,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 90,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 100,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 110,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 120,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 130,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 140,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 150,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 160,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 170,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 180,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 190,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 200,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "WRONG",
+    "01": "ok",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 210,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 220,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 230,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 240,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 250,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 260,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 270,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 280,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 290,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 300,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 310,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "01": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 320,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 330,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "ok",
+    "02": "WRONG"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 340,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 3,
+   "mixed": 0,
+   "wrong": 1,
+   "pairs": {
+    "12": "ok",
+    "01": "WRONG",
+    "02": "ok"
+   }
+  },
+  {
+   "tilt": -35,
+   "turn": 350,
+   "pieces": 3,
+   "perBar": [
+    1,
+    1,
+    1
+   ],
+   "overlaps": 2,
+   "mixed": 0,
+   "wrong": 0,
+   "pairs": {
+    "12": "ok",
+    "02": "ok"
+   }
+  }
+ ]
+}
