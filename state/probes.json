@@ -1,5 +1,5 @@
 {
- "next_id": 557,
+ "next_id": 558,
  "items": [
   {
    "id": "P-0001",
@@ -14185,6 +14185,32 @@
    "calls": 3,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0557",
+   "title": "Zpup cyclic overlap (refill 220, from P-0524): with @zpup/core 0.4.1 in sandbox/p0524/inst, build three thin flat bars that overlap in a cycle without touching (A over B over C over A, the classic three-stick case) plus a 30-box cluttered scene, 36 turns each. Read paint order from the SVG and count renders where an overlapping pair paints in the wrong order (computed from each pair's real depth where they overlap on screen), and whether checkSceneWarnings returns anything. Docs say intersecting shapes cannot be drawn and warn on pass-through; they are silent on non-touching cycles.",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-24",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-24T12:36:20+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.7,
+    "number": "at least one wrong-order pair in 36 of 36 top-down cycle renders, checkSceneWarnings returns 0 issues for the cycle",
+    "at": "2026-11-24T12:36:43+0000"
+   }
   }
  ]
 }

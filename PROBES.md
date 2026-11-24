@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 455 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Verdicts so far: 455 works, 11 broken, 48 blocked, 23 not worth it. Killed: 5.
 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | desk | none | 2026-11-25 | 0 | 10 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
+| P-0557 | Zpup cyclic overlap (refill 220, from P-0524): with @zpup/core 0.4.1 in sandbox/p0524/inst, build three thin flat bars that overlap in a cycle without touching (A over B over C over A, the classic three-stick case) plus a 30-box cluttered scene, 36 turns each. Read paint order from the SVG and count renders where an overlapping pair paints in the wrong order (computed from each pair's real depth where they overlap on screen), and whether checkSceneWarnings returns anything. Docs say intersecting shapes cannot be drawn and warn on pass-through; they are silent on non-touching cycles. | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (537)
 
