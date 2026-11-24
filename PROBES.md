@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 455 works, 12 broken, 48 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,6 +28,7 @@ Verdicts so far: 455 works, 12 broken, 48 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
+| P-0559 | ASVspoof speaker split (refill 238, deepen of P-0547): reuse P-0547's 300 bonafide and 300 spoof LA eval clips (audio cached, speaker_id in the notes field), fit the median and MAD profile on bonafide from half the speakers and test on bonafide from the other half plus all spoof, five speaker-split seeds. Does the 16.0 percent EER hold, or was speaker overlap (127 of 150 held-out sharing a speaker) flattering the genuine side? | refill | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (538)
 
