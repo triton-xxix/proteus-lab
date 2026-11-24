@@ -1,0 +1,182 @@
+{
+ "mints": 5028,
+ "tickers": 3586,
+ "tickers_on_2plus_mints": 668,
+ "mints_on_shared_tickers": 2110,
+ "singles": {
+  "n": 2918,
+  "median_chg_h24": -4.8,
+  "median_rug_score": 1.0,
+  "median_liq_usd": 4651.68,
+  "seen_again_pct": 10.2
+ },
+ "first_of_shared": {
+  "n": 668,
+  "median_chg_h24": 0.505,
+  "median_rug_score": 1.0,
+  "median_liq_usd": 13168.73,
+  "seen_again_pct": 16.5
+ },
+ "later_of_shared": {
+  "n": 1442,
+  "median_chg_h24": -17.505,
+  "median_rug_score": 31.0,
+  "median_liq_usd": 2835.955,
+  "seen_again_pct": 9.5
+ },
+ "top": [
+  {
+   "symbol": "si",
+   "mints": 32,
+   "names": [
+    "Sexy Inu",
+    "Shiba Inu",
+    "Shitter Intelligence",
+    "Silicon Inu",
+    "Slop Inu"
+   ]
+  },
+  {
+   "symbol": "fomo",
+   "mints": 26,
+   "names": [
+    "FOMO",
+    "Fear Of McDonald's Outfit",
+    "Fomo",
+    "Fomo Coin",
+    "Fomo Family"
+   ]
+  },
+  {
+   "symbol": "trump",
+   "mints": 16,
+   "names": [
+    "American Patriot",
+    "MAGA (Wormhole)",
+    "OFFER TRUTH",
+    "OFFICIAL TRUMP",
+    "Official Donald Trump Coin"
+   ]
+  },
+  {
+   "symbol": "xto",
+   "mints": 15,
+   "names": [
+    "XTO"
+   ]
+  },
+  {
+   "symbol": "inu",
+   "mints": 14,
+   "names": [
+    "01001001 01101110 01110101",
+    "I am Now Utility ",
+    "INU",
+    "Im now useless",
+    "Inu"
+   ]
+  },
+  {
+   "symbol": "openai",
+   "mints": 14,
+   "names": [
+    "ChatGPT",
+    "ChatGPT-6",
+    "ChatGPT| Offical Team",
+    "OpenAI",
+    "OpenAI PreStocks"
+   ]
+  },
+  {
+   "symbol": "gta",
+   "mints": 14,
+   "names": [
+    "GTA",
+    "GTA memes",
+    "Giga Titty Ass",
+    "Going To Ape",
+    "Grab That Ass"
+   ]
+  },
+  {
+   "symbol": "rockstar",
+   "mints": 14,
+   "names": [
+    "Rockstar Games",
+    "Rockstar Leek",
+    "rockstar"
+   ]
+  },
+  {
+   "symbol": "ai",
+   "mints": 13,
+   "names": [
+    "Actual Imagination",
+    "Affair Inu",
+    "Agentic Inu",
+    "Almost Intelligent",
+    "Amish Inu"
+   ]
+  },
+  {
+   "symbol": "usdf",
+   "mints": 13,
+   "names": [
+    "USDF",
+    "United States Dividend Fund",
+    "United States Dividend Fund ",
+    "United States Dividend Fund🚀"
+   ]
+  },
+  {
+   "symbol": "speed",
+   "mints": 12,
+   "names": [
+    "I Show Speed",
+    "IShowSpeed",
+    "Speed's Coin"
+   ]
+  },
+  {
+   "symbol": "mrbeast",
+   "mints": 12,
+   "names": [
+    "MR BEAST",
+    "MrBeast",
+    "MrBeast Coin",
+    "MrBeast official"
+   ]
+  },
+  {
+   "symbol": "meme",
+   "mints": 11,
+   "names": [
+    "A Meme Coin",
+    "MEMEcoin",
+    "Machiavelli",
+    "Meme",
+    "Meme Industries"
+   ]
+  },
+  {
+   "symbol": "nvidia",
+   "mints": 11,
+   "names": [
+    "NVIDIA",
+    "NVIDIA AI Infrastructure",
+    "NVIDIA MEME Token"
+   ]
+  },
+  {
+   "symbol": "sol",
+   "mints": 11,
+   "names": [
+    "Sexy Onchain Lady",
+    "Silicone on Leverage",
+    "Sol",
+    "Sol Coin",
+    "Speed of Light"
+   ]
+  }
+ ]
+}

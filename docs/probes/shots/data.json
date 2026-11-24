@@ -1,37 +1,37 @@
 {
  "summary": {
-  "n": 260,
+  "n": 264,
   "waiting": 0,
-  "hits": 243,
-  "hit_rate": 0.935,
-  "mean_p": 0.659,
-  "brier": 0.141,
-  "brier_at_hit_rate": 0.061,
-  "called_works": 244,
-  "called_works_hits": 232,
-  "called_other": 16,
-  "called_other_hits": 11,
-  "verdict_works": 237,
+  "hits": 246,
+  "hit_rate": 0.932,
+  "mean_p": 0.657,
+  "brier": 0.142,
+  "brier_at_hit_rate": 0.064,
+  "called_works": 247,
+  "called_works_hits": 234,
+  "called_other": 17,
+  "called_other_hits": 12,
+  "verdict_works": 239,
   "first": "2026-10-12",
-  "last": "2026-11-22"
+  "last": "2026-11-23"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 35,
-   "mean_p": 0.496,
-   "hit_rate": 0.914
+   "n": 37,
+   "mean_p": 0.495,
+   "hit_rate": 0.892
   },
   {
    "label": "55%",
-   "n": 21,
+   "n": 22,
    "mean_p": 0.55,
-   "hit_rate": 0.81
+   "hit_rate": 0.818
   },
   {
    "label": "60 to 65%",
-   "n": 78,
-   "mean_p": 0.619,
+   "n": 79,
+   "mean_p": 0.618,
    "hit_rate": 0.949
   },
   {
@@ -2647,6 +2647,46 @@
    "hit": 1,
    "number": "mileage-matched London minus Scotland gap about 7 points incl PRS, against 9.6 raw",
    "at": "2026-11-22T12:45:50+0000"
+  },
+  {
+   "id": "P-0505",
+   "title": "Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) agains",
+   "expect": "broken",
+   "verdict": "broken",
+   "p": 0.55,
+   "hit": 1,
+   "number": "NOAA MAE about 0.8, the 13-19 Nov mean baseline about 0.6, so NOAA loses to climatology",
+   "at": "2026-11-23T12:32:28+0000"
+  },
+  {
+   "id": "P-0546",
+   "title": "SEAR tools-only baseline on real audio: pull one shard (data/test-00000-of-00009.parquet, 486 MB, keyless) of the HF mirror SpeechAntiSpoofi",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "EER about 25% on 100 bonafide and 100 spoof, worse than the 17.65% claimed",
+   "at": "2026-11-23T12:35:36+0000"
+  },
+  {
+   "id": "P-0547",
+   "title": "Deepen P-0546 (SEAR no-model baseline, EER 14.0% on 200 clips): rerun experiments/2026-11-23-P-0546/sear_baseline.py on 1,000 LA eval clips ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "full-feature EER about 17% on the bigger sample, rising to about 25% with the energy and silence features dropped",
+   "at": "2026-11-23T12:41:06+0000"
+  },
+  {
+   "id": "P-0548",
+   "title": "Fee sweeper hour: page getSignaturesForAddress for FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT back one hour (peek 23 Nov: 1,000 signatures",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.45,
+   "hit": 0,
+   "number": "about 30 SOL swept an hour, extrapolated from 100 sampled sweeps, from about 300 distinct mints",
+   "at": "2026-11-23T12:47:05+0000"
   }
  ]
 }

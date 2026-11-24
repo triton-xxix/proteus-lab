@@ -1,44 +1,44 @@
 {
  "summary": {
-  "n": 524,
+  "n": 536,
   "by_verdict": {
-   "works": 447,
+   "works": 454,
    "not-worth-it": 23,
-   "blocked": 44,
-   "broken": 10
+   "blocked": 48,
+   "broken": 11
   },
   "open": 15,
   "killed": 5,
-  "minutes_total": 859,
+  "minutes_total": 880,
   "minutes_median": 1,
-  "calls_total": 5536,
+  "calls_total": 5650,
   "pages": 11,
   "first": "2026-09-24",
-  "last": "2026-11-22"
+  "last": "2026-11-23"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 224,
-   "works": 213,
+   "n": 231,
+   "works": 218,
    "not-worth-it": 3,
-   "blocked": 6,
-   "broken": 2
+   "blocked": 7,
+   "broken": 3
   },
   {
    "source": "desk",
-   "n": 120,
-   "works": 99,
+   "n": 122,
+   "works": 100,
    "not-worth-it": 9,
-   "blocked": 11,
+   "blocked": 12,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 111,
-   "works": 84,
+   "n": 114,
+   "works": 85,
    "not-worth-it": 4,
-   "blocked": 16,
+   "blocked": 18,
    "broken": 7
   },
   {
@@ -50,19 +50,19 @@
    "broken": 0
   },
   {
-   "source": "field-notes",
-   "n": 18,
-   "works": 15,
-   "not-worth-it": 1,
-   "blocked": 2,
-   "broken": 0
-  },
-  {
    "source": "persona",
    "n": 18,
    "works": 15,
    "not-worth-it": 0,
    "blocked": 3,
+   "broken": 0
+  },
+  {
+   "source": "field-notes",
+   "n": 18,
+   "works": 15,
+   "not-worth-it": 1,
+   "blocked": 2,
    "broken": 0
   },
   {
@@ -137,6 +137,13 @@
    "not-worth-it": 4,
    "blocked": 4,
    "broken": 2
+  },
+  {
+   "week": "2026-11-23",
+   "works": 7,
+   "not-worth-it": 0,
+   "blocked": 4,
+   "broken": 1
   }
  ],
  "rows": [
@@ -7989,6 +7996,178 @@
    "calls": 5,
    "note": "Under its 2024 title C/2023 A3 (Tsuchinshan-ATLAS) the comet page sat above 2x baseline for 46 days before 12 Oct, peaked 3 days late on 15 Oct at 78k (289x), halved in 3 days and stayed above 2x for 31: scheduled lead, news-like tail. The current title 404s for 2024.",
    "artefact": "experiments/2026-11-22-P-0544",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0505",
+   "title": "Score the saved NOAA Kp three-day forecast (experiments/2026-11-20-kp-forecast-snapshot, 17 predicted slots 21 Nov 00Z to 23 Nov 00Z) against observed rows: mean absolut…",
+   "source": "refill",
+   "verdict": "broken",
+   "at": "2026-11-23T12:33:04+0000",
+   "minutes": 0,
+   "calls": 10,
+   "note": "NOAA 20 Nov Kp three-day forecast MAE 1.02 on 17 slots against persistence 0.67 and the 13-19 Nov mean 0.64 (shot: NOAA about 0.8, baseline about 0.6). Forecast mean 2.08, observed 1.14, max 2.67, no slot at 5. Pre-registered pass failed: it ran one unit high over a quiet weekend. One issue, autocorrelated slots, prel…",
+   "artefact": "experiments/2026-11-23-P-0505",
+   "page": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.55,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0529",
+   "title": "Mayhem sweep clock, part two: re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, after the latest forecast_burn_utc slo…",
+   "source": "desk",
+   "verdict": "blocked",
+   "at": "2026-11-23T12:33:56+0000",
+   "minutes": 0,
+   "calls": 9,
+   "note": "Not run, no shot (the block is the clock, known before touching it). P-0528 results: 22 mints, 20 forecast 13:04Z 23 Nov, 1 at 09:04Z, 1 with no birth. The pre-registered read needs 13:09Z or later; this loop ends 13:04 and the hook blocks a foreground sleep. Requeued for the 24 Nov nightly with the same pass rule; a…",
+   "artefact": "experiments/2026-11-22-P-0528",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0546",
+   "title": "SEAR tools-only baseline on real audio: pull one shard (data/test-00000-of-00009.parquet, 486 MB, keyless) of the HF mirror SpeechAntiSpoofingBenchmarks/ASVspoof2019_LA…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-23T12:40:43+0000",
+   "minutes": 5,
+   "calls": 13,
+   "note": "EER 14.0% (mean robust |z|, 44 librosa features, median and MAD from 50 bonafide) on 50 held-out bonafide plus 100 spoof from ASVspoof 2019 LA eval, against SEAR claim 17.65% (shot: about 25%). Median |z| 26%. Top movers on spoof: f0 spread, bandwidth, MFCC-0 spread, dynamic range. Audio keyless via HF datasets-server…",
+   "artefact": "experiments/2026-11-23-P-0546",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0547",
+   "title": "Deepen P-0546 (SEAR no-model baseline, EER 14.0% on 200 clips): rerun experiments/2026-11-23-P-0546/sear_baseline.py on 1,000 LA eval clips (300 bonafide) via the HF dat…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-23T12:45:40+0000",
+   "minutes": 4,
+   "calls": 6,
+   "note": "EER 16.0% (95% bootstrap 13.2 to 19.3%) on 150 held-out bonafide plus 300 spoof, ASVspoof 2019 LA eval, 44 librosa features, median and MAD from 150 bonafide: SEAR claim 17.65% sits inside. Energy and silence features dropped: 18.7% (14.7 to 22.3%), so the silence shortcut is not carrying it. Shot: about 17% then abou…",
+   "artefact": "experiments/2026-11-23-P-0547",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0548",
+   "title": "Fee sweeper hour: page getSignaturesForAddress for FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT back one hour (peek 23 Nov: 1,000 signatures in 388 s, 84 failed), getTra…",
+   "source": "refill",
+   "verdict": "blocked",
+   "at": "2026-11-23T12:56:57+0000",
+   "minutes": 9,
+   "calls": 6,
+   "note": "Measured: the sweeper signs about 2.9 transactions a second (10,000 signatures over 3,407 s, 5.3% failed), not the 5 a second refill 211 saw. Only 6 of 40 getTransaction reads came back, so the 1,908 SOL an hour extrapolation is not a result, and receivers appear in equal pairs (likely native and wrapped SOL counted t…",
+   "artefact": "experiments/2026-11-23-P-0548",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.45,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0549",
+   "title": "Hermit CRM: does the CLI and MCP server run on macOS and list tools from a plain Markdown store?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-23T23:37:08+0000",
+   "minutes": 1,
+   "calls": 18,
+   "note": "Installed from the source tarball on macOS; hermitcrm mcp 1.1.0 listed 18 tools over stdio in 0.32 s and list_pipeline answered without error on the 13-company demo folder (check: no problems). Web app, LinkedIn import and sending not run.",
+   "artefact": "experiments/2026-11-23-P-0549",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0550",
+   "title": "safe-anything: how many real findings does an offline scan of PROTEUS and its agent settings produce?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-23T23:37:37+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "Not run: the only quick path is a prebuilt binary from a repo created 22 Nov (release v1.0.2 the same evening, 481 stars); executing an unreviewed day-old binary on this Mac is running an untrusted file. No Rust toolchain to build from source.",
+   "artefact": "experiments/2026-11-23-P-0550",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0551",
+   "title": "open-artifact: does the local daemon serve a hand-written deck folder and export it to PDF without an account?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-23T23:38:21+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "Not run: the daemon is an unpublished npm workspace that must be built (npm run build with esbuild's install script), neither allowed in an unattended run, and the repo is six days old (17 Nov). PDF export likely needs a browser the nightly cannot drive.",
+   "artefact": "experiments/2026-11-23-P-0551",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0552",
+   "title": "Geminids 2026 pageviews: pre-register the peak day, peak views and first day above 10x the November median from the 2023 to 2025 curves, DUE row, score 16 Dec",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-23T23:39:56+0000",
+   "minutes": 0,
+   "calls": 8,
+   "note": "Pre-registered from 2023 to 2025 Wikipedia curves (peaks 15,626, 8,650, 8,810 on 14, 14, 13 Dec; first day over 10x the November median 11, 10, 10 Dec): 2026 peak 14 Dec at 0.55, 11,000 views (7,000 to 17,000), first 10x day 10 Dec at 0.45. Twice baseline is useless, crossed on 1 Dec every year. DUE D-033, score 16 De…",
+   "artefact": "experiments/2026-11-23-P-0552",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0553",
+   "title": "Munich ladder gaps: how many Munich daily-high ladders in SNAPSHOTS.csv skip a whole degree inside their range, and did a skipped degree ever win?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-23T23:42:39+0000",
+   "minutes": 2,
+   "calls": 26,
+   "note": "Settled 15 to 22 Nov ladders: 8 of 8 whole (11 contracts). Open 23, 24, 25 Nov ladders straddle zero and miss 1, 2 and 2 degrees: Smarkets slugs drop the minus sign (-1C is 1degc), and every missing degree is the sign-twin of a listed one. No gappy ladder settled yet; 24 Nov has no 1C contract beside my 2C call.",
+   "artefact": "experiments/2026-11-23-P-0553",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0555",
+   "title": "Grinder same-ticker copycats: in grinder/SNAPSHOTS.csv how many tickers sit on 2+ mints, and is a later mint's 24h price change worse than the first's?",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-23T23:44:04+0000",
+   "minutes": 0,
+   "calls": 5,
+   "note": "668 of 3,586 tickers sit on 2+ of 5,028 mints (2,110 mints, 42%). Later mints of a shared ticker: median chg_h24 -17.5%, rug_score 31, liquidity 2,836 USD, seen again 9.5%, against the first mint's +0.5%, 1, 13,169, 16.5%. Read at first sighting, not a forward test. The two Anthropic Coin ANT mints fell from about 118…",
+   "artefact": "experiments/2026-11-23-P-0555",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0556",
+   "title": "skill-distill task fallback: with task-notification stripped and the first tasks/*.md Read as the task, do all five recent Proteus transcripts get a task naming the righ…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-23T23:45:13+0000",
+   "minutes": 0,
+   "calls": 3,
+   "note": "With task-notification stripped and the first tasks/*.md Read as fallback, 5 of 5 recent transcripts got a non-empty task (workshop, trials, inspector, lichess-morning, nightly), all via the fallback. Only 1 of 5 checked independently (trials, session 5253b5e6, matches the run log); my wrapper-name check regex missed…",
+   "artefact": "experiments/2026-11-23-P-0556",
    "page": false,
    "shot": null
   }
