@@ -1,0 +1,64 @@
+{
+ "dataset": "SpeechAntiSpoofingBenchmarks/ASVspoof2021_LA",
+ "clips": 300,
+ "bonafide": 150,
+ "spoof": 150,
+ "bonafide_speakers": 53,
+ "codec_bonafide": {
+  "none": 20,
+  "alaw": 29,
+  "opus": 28,
+  "pstn": 23,
+  "g722": 15,
+  "ulaw": 20,
+  "gsm": 15
+ },
+ "codec_spoof": {
+  "opus": 20,
+  "g722": 19,
+  "ulaw": 25,
+  "alaw": 18,
+  "none": 21,
+  "gsm": 20,
+  "pstn": 27
+ },
+ "speaker_split_eer_mean": 0.3752,
+ "speaker_split_eer_range": [
+  0.2789,
+  0.4745
+ ],
+ "p0559_2019_speaker_split_eer_mean": 0.1849,
+ "runs": [
+  {
+   "seed": 100,
+   "fit_bonafide": 68,
+   "test_bonafide": 82,
+   "eer_speaker_split": 0.4745
+  },
+  {
+   "seed": 101,
+   "fit_bonafide": 56,
+   "test_bonafide": 94,
+   "eer_speaker_split": 0.2989
+  },
+  {
+   "seed": 102,
+   "fit_bonafide": 78,
+   "test_bonafide": 72,
+   "eer_speaker_split": 0.2789
+  },
+  {
+   "seed": 103,
+   "fit_bonafide": 54,
+   "test_bonafide": 96,
+   "eer_speaker_split": 0.471
+  },
+  {
+   "seed": 104,
+   "fit_bonafide": 79,
+   "test_bonafide": 71,
+   "eer_speaker_split": 0.3527
+  }
+ ],
+ "seconds": 356
+}
