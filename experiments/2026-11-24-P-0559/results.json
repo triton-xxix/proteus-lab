@@ -1,0 +1,61 @@
+{
+ "clips": 600,
+ "bonafide_speakers": 66,
+ "spoof_speakers": 48,
+ "spoof_speakers_also_bonafide": 47,
+ "clip_split_seed23_eer": 0.16,
+ "p0547_eer_full": 0.16,
+ "speaker_split_eer_mean": 0.1849,
+ "speaker_split_eer_range": [
+  0.1715,
+  0.1977
+ ],
+ "clip_split_eer_mean": 0.1772,
+ "clip_split_eer_range": [
+  0.1728,
+  0.1913
+ ],
+ "runs": [
+  {
+   "seed": 100,
+   "fit_speakers": 33,
+   "fit_bonafide": 145,
+   "test_bonafide": 155,
+   "eer_speaker_split": 0.1869,
+   "eer_clip_split_same_sizes": 0.1738
+  },
+  {
+   "seed": 101,
+   "fit_speakers": 33,
+   "fit_bonafide": 149,
+   "test_bonafide": 151,
+   "eer_speaker_split": 0.1977,
+   "eer_clip_split_same_sizes": 0.1728
+  },
+  {
+   "seed": 102,
+   "fit_speakers": 33,
+   "fit_bonafide": 167,
+   "test_bonafide": 133,
+   "eer_speaker_split": 0.1715,
+   "eer_clip_split_same_sizes": 0.1748
+  },
+  {
+   "seed": 103,
+   "fit_speakers": 33,
+   "fit_bonafide": 165,
+   "test_bonafide": 135,
+   "eer_speaker_split": 0.1843,
+   "eer_clip_split_same_sizes": 0.1913
+  },
+  {
+   "seed": 104,
+   "fit_speakers": 33,
+   "fit_bonafide": 138,
+   "test_bonafide": 162,
+   "eer_speaker_split": 0.1843,
+   "eer_clip_split_same_sizes": 0.1731
+  }
+ ],
+ "seconds": 84
+}

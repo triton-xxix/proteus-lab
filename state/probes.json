@@ -14243,22 +14243,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-24T12:40:18+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-24T12:42:43+0000",
+   "note": "Measured: speaker-split EER 18.5 percent mean over 5 seeds (17.2 to 19.8) against 17.7 percent for same-size clip splits on the same seeds and 16.0 for P-0547 (seed 23 reproduced exactly, so same 600 clips). Speaker overlap is worth about 0.8 points; the bigger gap is that 16.0 was a kind split seed, below all five others. Shot said about 18: hit. Caveat: 47 of 48 spoof speakers are bonafide speakers too, so only the genuine side could be split. Next: close (the baseline is about 18 percent; quote that, not 16).",
+   "artefacts": [
+    "experiments/2026-11-24-P-0559"
+   ],
+   "minutes": 2,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "speaker-split EER mean about 18 percent over five seeds, within 4 points of the 16.0 percent",
-    "at": "2026-11-24T12:40:26+0000"
+    "at": "2026-11-24T12:40:26+0000",
+    "hit": true
    }
   }
  ]
