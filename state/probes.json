@@ -1,5 +1,5 @@
 {
- "next_id": 565,
+ "next_id": 566,
  "items": [
   {
    "id": "P-0001",
@@ -14391,6 +14391,28 @@
    ],
    "minutes": 4,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0565",
+   "title": "Munich straddle ladders settled: for the 23 to 25 Nov ladders P-0553 found missing sign-twin degrees, what did the EDDM METAR high say, was that degree listed, and what won (exchange/munich_outcomes.jsonl); plus which degrees tonight's 26 and 27 Nov ladders miss against ICON's point",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-25T23:38:29+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-25T23:39:27+0000",
+   "note": "Both settled gappy ladders (23 and 24 Nov) had a METAR high of 3C, a listed degree, and 3C won both; 25 Nov's 1C high is listed too, so no missing degree has won yet. Tonight 26 Nov misses -4, -2, 1, 3 and 27 Nov misses 1 to 4, and 1C is within 1.5C of ICON's point both days (27 Nov now +0.5C), so a missing degree could win for the first time.",
+   "artefacts": [
+    "experiments/2026-11-25-P-0565"
+   ],
+   "minutes": 0,
+   "calls": 13,
    "denied": [],
    "luke": false
   }
