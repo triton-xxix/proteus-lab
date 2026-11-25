@@ -1,21 +1,21 @@
 {
- "built": "2026-11-24 09:07 UTC",
+ "built": "2026-11-25 09:06 UTC",
  "panels": [
   {
    "key": "model",
    "title": "The Pitch's model",
    "who": "Dixon-Coles model",
    "kind": "football, home/draw/away",
-   "rows": 156,
-   "pairs": 468,
+   "rows": 157,
+   "pairs": 471,
    "logged": 550,
-   "scored_any": 156,
-   "captured": 30,
+   "scored_any": 157,
+   "captured": 31,
    "backfilled": 126,
-   "captured_me_minus_market": 0.0265,
-   "me_minus_market": 0.0181,
-   "me_brier": 0.622,
-   "market_brier": 0.6039,
+   "captured_me_minus_market": 0.0224,
+   "me_minus_market": 0.0174,
+   "me_brier": 0.6204,
+   "market_brier": 0.603,
    "bins": [
     {
      "lo": 0.0,
@@ -29,20 +29,20 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 287,
-     "mean_p": 0.2842,
-     "observed": 0.2822,
-     "lo95": 0.2333,
-     "hi95": 0.3369
+     "n": 289,
+     "mean_p": 0.2839,
+     "observed": 0.2803,
+     "lo95": 0.2316,
+     "hi95": 0.3347
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 95,
-     "mean_p": 0.482,
-     "observed": 0.5053,
-     "lo95": 0.4065,
-     "hi95": 0.6036
+     "n": 96,
+     "mean_p": 0.4823,
+     "observed": 0.5104,
+     "lo95": 0.412,
+     "hi95": 0.6081
     },
     {
      "lo": 0.6,
@@ -76,20 +76,20 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 295,
+     "n": 297,
      "mean_p": 0.2837,
-     "observed": 0.2746,
-     "lo95": 0.2268,
-     "hi95": 0.3282
+     "observed": 0.2727,
+     "lo95": 0.2252,
+     "hi95": 0.326
     },
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 99,
-     "mean_p": 0.4913,
-     "observed": 0.5152,
-     "lo95": 0.418,
-     "hi95": 0.6112
+     "n": 100,
+     "mean_p": 0.4908,
+     "observed": 0.52,
+     "lo95": 0.4232,
+     "hi95": 0.6154
     },
     {
      "lo": 0.6,
@@ -118,13 +118,13 @@
    "title": "The model on over 2.5 goals",
    "who": "Dixon-Coles model",
    "kind": "football, over/under 2.5; yes/no",
-   "rows": 156,
-   "pairs": 156,
+   "rows": 157,
+   "pairs": 157,
    "logged": 550,
-   "captured": 30,
-   "me_minus_market": 0.0126,
-   "me_brier": 0.2653,
-   "market_brier": 0.2527,
+   "captured": 31,
+   "me_minus_market": 0.0133,
+   "me_brier": 0.2657,
+   "market_brier": 0.2524,
    "bins": [
     {
      "lo": 0.2,
@@ -138,11 +138,11 @@
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 106,
-     "mean_p": 0.5032,
-     "observed": 0.5377,
-     "lo95": 0.4432,
-     "hi95": 0.6297
+     "n": 107,
+     "mean_p": 0.5025,
+     "observed": 0.5421,
+     "lo95": 0.4478,
+     "hi95": 0.6334
     },
     {
      "lo": 0.6,
@@ -167,11 +167,11 @@
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 119,
-     "mean_p": 0.5285,
-     "observed": 0.4958,
-     "lo95": 0.4075,
-     "hi95": 0.5843
+     "n": 120,
+     "mean_p": 0.5287,
+     "observed": 0.5,
+     "lo95": 0.4119,
+     "hi95": 0.5881
     },
     {
      "lo": 0.6,
@@ -407,13 +407,13 @@
    "title": "My exchange calls",
    "who": "me, one contract a night on Smarkets",
    "kind": "elections, weather, macro; yes/no",
-   "rows": 51,
-   "pairs": 51,
-   "logged": 68,
-   "settled_any": 61,
-   "me_minus_market": 0.0536,
-   "me_brier": 0.1944,
-   "market_brier": 0.1408,
+   "rows": 52,
+   "pairs": 52,
+   "logged": 70,
+   "settled_any": 63,
+   "me_minus_market": 0.0472,
+   "me_brier": 0.1918,
+   "market_brier": 0.1446,
    "bins": [
     {
      "lo": 0.0,
@@ -427,11 +427,11 @@
     {
      "lo": 0.2,
      "hi": 0.4,
-     "n": 41,
-     "mean_p": 0.24,
-     "observed": 0.2683,
-     "lo95": 0.1569,
-     "hi95": 0.4193
+     "n": 42,
+     "mean_p": 0.2402,
+     "observed": 0.2619,
+     "lo95": 0.153,
+     "hi95": 0.4107
     },
     {
      "lo": 0.4,
@@ -483,11 +483,11 @@
     {
      "lo": 0.4,
      "hi": 0.6,
-     "n": 14,
-     "mean_p": 0.4798,
-     "observed": 0.5714,
-     "lo95": 0.3259,
-     "hi95": 0.7862
+     "n": 15,
+     "mean_p": 0.4866,
+     "observed": 0.5333,
+     "lo95": 0.3012,
+     "hi95": 0.7519
     },
     {
      "lo": 0.6,

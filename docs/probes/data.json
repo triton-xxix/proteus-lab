@@ -1,34 +1,34 @@
 {
  "summary": {
-  "n": 536,
+  "n": 540,
   "by_verdict": {
-   "works": 454,
+   "works": 457,
    "not-worth-it": 23,
    "blocked": 48,
-   "broken": 11
+   "broken": 12
   },
-  "open": 15,
+  "open": 19,
   "killed": 5,
-  "minutes_total": 880,
+  "minutes_total": 893,
   "minutes_median": 1,
-  "calls_total": 5650,
+  "calls_total": 5687,
   "pages": 11,
   "first": "2026-09-24",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 231,
-   "works": 218,
+   "n": 234,
+   "works": 220,
    "not-worth-it": 3,
    "blocked": 7,
-   "broken": 3
+   "broken": 4
   },
   {
    "source": "desk",
-   "n": 122,
-   "works": 100,
+   "n": 123,
+   "works": 101,
    "not-worth-it": 9,
    "blocked": 12,
    "broken": 1
@@ -140,10 +140,10 @@
   },
   {
    "week": "2026-11-23",
-   "works": 7,
+   "works": 10,
    "not-worth-it": 0,
    "blocked": 4,
-   "broken": 1
+   "broken": 2
   }
  ],
  "rows": [
@@ -8170,6 +8170,74 @@
    "artefact": "experiments/2026-11-23-P-0556",
    "page": false,
    "shot": null
+  },
+  {
+   "id": "P-0545",
+   "title": "Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-0507's burns.py check, any time…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-24T12:35:17+0000",
+   "minutes": 2,
+   "calls": 11,
+   "note": "Measured: 21 of 21 dated P-0528 mints burned 0.00 to +1.35 min after their forecast HH:04 (median +0.88), none early; strict newest-tx-is-burn 18 of 21 = 86 percent, so the P-0528 pre-registered rule (80 percent within 3 min) passes. Two slots seen (09:04 and 13:04Z 23 Nov), age at burn 24.46 to 24.83 h. Shot said bro…",
+   "artefact": "experiments/2026-11-24-P-0545",
+   "page": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.55,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0557",
+   "title": "Zpup cyclic overlap (refill 220, from P-0524): with @zpup/core 0.4.1 in sandbox/p0524/inst, build three thin flat bars that overlap in a cycle without touching (A over B…",
+   "source": "refill",
+   "verdict": "broken",
+   "at": "2026-11-24T12:38:08+0000",
+   "minutes": 1,
+   "calls": 9,
+   "note": "Measured: three non-touching bars overlapping in a cycle paint exactly one pair in the wrong order in every render where the cycle is on screen (36 of 36 at x -90, 36 of 36 at x -60, 9 of 9 at x -35; the other 27 at -35 are right), bars never split, and checkSceneWarnings returns 0 issues; 30-box clutter also 0 warnin…",
+   "artefact": "experiments/2026-11-24-P-0557",
+   "page": false,
+   "shot": {
+    "expect": "broken",
+    "p": 0.7,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0559",
+   "title": "ASVspoof speaker split (refill 238, deepen of P-0547): reuse P-0547's 300 bonafide and 300 spoof LA eval clips (audio cached, speaker_id in the notes field), fit the med…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-24T12:42:43+0000",
+   "minutes": 2,
+   "calls": 7,
+   "note": "Measured: speaker-split EER 18.5 percent mean over 5 seeds (17.2 to 19.8) against 17.7 percent for same-size clip splits on the same seeds and 16.0 for P-0547 (seed 23 reproduced exactly, so same 600 clips). Speaker overlap is worth about 0.8 points; the bigger gap is that 16.0 was a kind split seed, below all five ot…",
+   "artefact": "experiments/2026-11-24-P-0559",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0560",
+   "title": "No-model spoof score on ASVspoof 2021 LA (refill 239): SpeechAntiSpoofingBenchmarks/ASVspoof2021_LA is ungated, same packager as the 2019 LA mirror, with telephony codec…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-24T12:51:45+0000",
+   "minutes": 8,
+   "calls": 10,
+   "note": "Measured: speaker-split EER 37.5 percent mean (27.9 to 47.5, five seeds) on 300 ASVspoof 2021 LA clips with seven codec channels, against 18.5 on clean 2019 LA (P-0559): it about doubles, two seeds near a coin flip. Shot said about 30: verdict hit, number 7.5 points short. Caveat: fit sets 54 to 79 clips, half P-0559…",
+   "artefact": "experiments/2026-11-24-P-0560",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.55,
+    "hit": 1
+   }
   }
  ]
 }

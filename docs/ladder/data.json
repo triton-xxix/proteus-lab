@@ -13,20 +13,20 @@
   "median_opp": 1980,
   "first": "2026-10-03",
   "last": "2026-11-21",
-  "challenges": 1562,
+  "challenges": 1579,
   "accepted": 77,
-  "declined": 901,
-  "no_answer": 164,
-  "refused_400": 406,
+  "declined": 914,
+  "no_answer": 166,
+  "refused_400": 408,
   "refused_429": 14,
-  "accept_rate": 0.0493,
-  "bots_asked": 133,
+  "accept_rate": 0.0488,
+  "bots_asked": 134,
   "bots_played": 73,
-  "bots_never": 66,
+  "bots_never": 67,
   "median_rating_accepted_bots": 1700,
-  "median_rating_refusing_bots": 1965,
+  "median_rating_refusing_bots": 1931,
   "challenge_first": "2026-10-09",
-  "challenge_last": "2026-11-24",
+  "challenge_last": "2026-11-25",
   "declined_reasons": [
    [
     "nobot",
@@ -34,11 +34,11 @@
    ],
    [
     "generic",
-    326
+    335
    ],
    [
     "casual",
-    157
+    161
    ],
    [
     "tooslow",
@@ -304,43 +304,48 @@
    "date": "2026-11-24",
    "asked": 15,
    "accepted": 0
+  },
+  {
+   "date": "2026-11-25",
+   "asked": 17,
+   "accepted": 0
   }
  ],
  "decliners": [
   {
    "bot": "resolutebot",
    "rating": 2945,
-   "asked": 89,
+   "asked": 91,
    "how": "declined"
   },
   {
    "bot": "leelarogue",
    "rating": 2317,
-   "asked": 77,
+   "asked": 79,
    "how": "declined"
   },
   {
    "bot": "stockfishlowdepth",
    "rating": 1973,
-   "asked": 66,
+   "asked": 68,
    "how": "declined"
   },
   {
    "bot": "darkonweakbot",
    "rating": 1766,
-   "asked": 59,
+   "asked": 61,
    "how": "declined"
   },
   {
    "bot": "littlepatricia",
-   "rating": 1934,
-   "asked": 57,
+   "rating": 1931,
+   "asked": 59,
    "how": "declined"
   },
   {
    "bot": "mochi_bot",
-   "rating": 1685,
-   "asked": 52,
+   "rating": 1698,
+   "asked": 54,
    "how": "declined"
   },
   {
@@ -386,44 +391,44 @@
    "how": "declined"
   },
   {
-   "bot": "hummus-bot",
-   "rating": 2051,
+   "bot": "boris-trapsky",
+   "rating": 2168,
    "asked": 31,
    "how": "declined"
   },
   {
-   "bot": "boris-trapsky",
-   "rating": 2168,
-   "asked": 29,
+   "bot": "hummus-bot",
+   "rating": 2051,
+   "asked": 31,
    "how": "declined"
   }
  ],
  "by_strength": [
   {
    "label": "under 2000",
-   "asked": 680,
-   "bots": 79,
+   "asked": 691,
+   "bots": 80,
    "accepted": 41,
-   "declined": 387,
-   "no answer": 58,
-   "refused 400": 180,
+   "declined": 394,
+   "no answer": 60,
+   "refused 400": 182,
    "refused 429": 14,
    "other": 0,
-   "sent": 486,
-   "accept_of_sent": 0.0844
+   "sent": 495,
+   "accept_of_sent": 0.0828
   },
   {
    "label": "2000 to 2399",
-   "asked": 427,
+   "asked": 431,
    "bots": 26,
    "accepted": 9,
-   "declined": 284,
+   "declined": 288,
    "no answer": 34,
    "refused 400": 100,
    "refused 429": 0,
    "other": 0,
-   "sent": 327,
-   "accept_of_sent": 0.0275
+   "sent": 331,
+   "accept_of_sent": 0.0272
   },
   {
    "label": "2400 to 2699",
@@ -453,16 +458,16 @@
   },
   {
    "label": "2900 to 2999",
-   "asked": 159,
+   "asked": 161,
    "bots": 8,
    "accepted": 3,
-   "declined": 83,
+   "declined": 85,
    "no answer": 15,
    "refused 400": 58,
    "refused 429": 0,
    "other": 0,
-   "sent": 101,
-   "accept_of_sent": 0.0297
+   "sent": 103,
+   "accept_of_sent": 0.0291
   },
   {
    "label": "3000 and up",
@@ -481,16 +486,16 @@
  "by_gap": [
   {
    "label": "500+ below me",
-   "asked": 1196,
-   "bots": 107,
+   "asked": 1211,
+   "bots": 108,
    "accepted": 52,
-   "declined": 752,
-   "no answer": 94,
-   "refused 400": 284,
+   "declined": 763,
+   "no answer": 96,
+   "refused 400": 286,
    "refused 429": 14,
    "other": 0,
-   "sent": 898,
-   "accept_of_sent": 0.0579
+   "sent": 911,
+   "accept_of_sent": 0.0571
   },
   {
    "label": "200 to 499 below",
@@ -520,29 +525,29 @@
   },
   {
    "label": "within 50, or above",
-   "asked": 140,
+   "asked": 142,
    "bots": 16,
    "accepted": 12,
-   "declined": 31,
+   "declined": 33,
    "no answer": 39,
    "refused 400": 58,
    "refused 429": 0,
    "other": 0,
-   "sent": 82,
-   "accept_of_sent": 0.1463
+   "sent": 84,
+   "accept_of_sent": 0.1429
   }
  ],
- "challenges_rated": 1562,
+ "challenges_rated": 1579,
  "refusals": {
-  "total": 420,
+  "total": 422,
   "kinds": [
    {
     "kind": "cap",
     "label": "daily bot-game cap",
-    "asks": 358,
-    "bots": 58,
+    "asks": 360,
+    "bots": 59,
     "first": "2026-10-09",
-    "last": "2026-11-24",
+    "last": "2026-11-25",
     "top": [
      [
       "sf_bot1nok",
@@ -550,7 +555,7 @@
      ],
      [
       "mochi_bot",
-      15
+      16
      ],
      [
       "fataliibot",
@@ -630,11 +635,11 @@
    }
   ],
   "cap_games_stated": {
-   "100": 358
+   "100": 360
   },
   "cap_wait_hours_median": 1.5,
   "cap_wasted": 85,
-  "capped_bots": 58,
+  "capped_bots": 59,
   "capped_bots_later_yes": 45,
   "capped_bots_later_yes_names": [
    "bernstein-2ply",

@@ -1,19 +1,19 @@
 {
  "summary": {
-  "n": 264,
+  "n": 268,
   "waiting": 0,
-  "hits": 246,
-  "hit_rate": 0.932,
-  "mean_p": 0.657,
-  "brier": 0.142,
-  "brier_at_hit_rate": 0.064,
-  "called_works": 247,
-  "called_works_hits": 234,
-  "called_other": 17,
-  "called_other_hits": 12,
-  "verdict_works": 239,
+  "hits": 249,
+  "hit_rate": 0.929,
+  "mean_p": 0.656,
+  "brier": 0.143,
+  "brier_at_hit_rate": 0.066,
+  "called_works": 249,
+  "called_works_hits": 236,
+  "called_other": 19,
+  "called_other_hits": 13,
+  "verdict_works": 242,
   "first": "2026-10-12",
-  "last": "2026-11-23"
+  "last": "2026-11-24"
  },
  "bins": [
   {
@@ -24,19 +24,19 @@
   },
   {
    "label": "55%",
-   "n": 22,
+   "n": 24,
    "mean_p": 0.55,
-   "hit_rate": 0.818
+   "hit_rate": 0.792
   },
   {
    "label": "60 to 65%",
-   "n": 79,
+   "n": 80,
    "mean_p": 0.618,
-   "hit_rate": 0.949
+   "hit_rate": 0.95
   },
   {
    "label": "70 to 75%",
-   "n": 92,
+   "n": 93,
    "mean_p": 0.722,
    "hit_rate": 0.946
   },
@@ -2687,6 +2687,46 @@
    "hit": 0,
    "number": "about 30 SOL swept an hour, extrapolated from 100 sampled sweeps, from about 300 distinct mints",
    "at": "2026-11-23T12:47:05+0000"
+  },
+  {
+   "id": "P-0545",
+   "title": "Mayhem sweep clock, part two (P-0529 blocked on the clock): re-read every P-0528 mint (experiments/2026-11-22-P-0528/results.json) with P-05",
+   "expect": "broken",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 0,
+   "number": "under 80 percent of P-0528 mints burned within 3 min of their HH:04 slot, about 50 percent",
+   "at": "2026-11-24T12:32:50+0000"
+  },
+  {
+   "id": "P-0557",
+   "title": "Zpup cyclic overlap (refill 220, from P-0524): with @zpup/core 0.4.1 in sandbox/p0524/inst, build three thin flat bars that overlap in a cyc",
+   "expect": "broken",
+   "verdict": "broken",
+   "p": 0.7,
+   "hit": 1,
+   "number": "at least one wrong-order pair in 36 of 36 top-down cycle renders, checkSceneWarnings returns 0 issues for the cycle",
+   "at": "2026-11-24T12:36:43+0000"
+  },
+  {
+   "id": "P-0559",
+   "title": "ASVspoof speaker split (refill 238, deepen of P-0547): reuse P-0547's 300 bonafide and 300 spoof LA eval clips (audio cached, speaker_id in ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "speaker-split EER mean about 18 percent over five seeds, within 4 points of the 16.0 percent",
+   "at": "2026-11-24T12:40:26+0000"
+  },
+  {
+   "id": "P-0560",
+   "title": "No-model spoof score on ASVspoof 2021 LA (refill 239): SpeechAntiSpoofingBenchmarks/ASVspoof2021_LA is ungated, same packager as the 2019 LA",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.55,
+   "hit": 1,
+   "number": "speaker-split EER about 30 percent on 2021 LA codec audio, against 18.5 on 2019",
+   "at": "2026-11-24T12:43:50+0000"
   }
  ]
 }
