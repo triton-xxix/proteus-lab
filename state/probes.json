@@ -1,5 +1,5 @@
 {
- "next_id": 566,
+ "next_id": 567,
  "items": [
   {
    "id": "P-0001",
@@ -14413,6 +14413,28 @@
    ],
    "minutes": 0,
    "calls": 13,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0566",
+   "title": "Copycat ticker forward check: from grinder/SNAPSHOTS.csv take 20 later mints of shared tickers and 20 single-ticker mints first seen on the same nights at least 7 days ago; pull today's liquidity (DexScreener tokens, keyless) and rugcheck summary score; how many of each are under 100 USD liquidity now",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-25T23:39:58+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-25T23:41:32+0000",
+   "note": "20 later mints of shared tickers, first seen 7 to 45 days ago, against 20 single-ticker mints from the same nights: 15 v 13 under 100 USD liquidity today (all of them with no DexScreener pair left), rugcheck median 33 v 32, paired split 6 v 4 (sign test p about 0.75); the copycat flag does not separate outcomes a week on.",
+   "artefacts": [
+    "experiments/2026-11-25-P-0566"
+   ],
+   "minutes": 1,
+   "calls": 7,
    "denied": [],
    "luke": false
   }

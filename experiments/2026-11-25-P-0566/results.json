@@ -1,0 +1,370 @@
+{
+ "pool": {
+  "later_mints_7_to_45d": 931,
+  "days_with_singles": 33
+ },
+ "pairs": 20,
+ "later": {
+  "n": 20,
+  "under_100_now": 15,
+  "zero_pairs_or_0": 15,
+  "median_liq_now": 0.0,
+  "median_rug_now": 33.0,
+  "rug_answered": 20
+ },
+ "single": {
+  "n": 20,
+  "under_100_now": 13,
+  "zero_pairs_or_0": 13,
+  "median_liq_now": 0.0,
+  "median_rug_now": 32.0,
+  "rug_answered": 20
+ },
+ "paired_under_100": {
+  "both": 9,
+  "later_only": 6,
+  "single_only": 4
+ },
+ "rows": [
+  {
+   "symbol": "starman",
+   "first_seen": "2026-10-16T22:23:44Z",
+   "later": {
+    "mint": "D6LNVbB64fQaDmFP4gcF9eMukBgi1Ggvjtm4dcoKpump",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 32
+   },
+   "single": {
+    "mint": "7GCMYJcykHZ3qJH3e5vQi4J9qAPdb3Xninkgk6sYpump",
+    "symbol": "LOOM",
+    "liq_then": "25672.74",
+    "liq_now": 0.0,
+    "rug_now": 30
+   }
+  },
+  {
+   "symbol": "si",
+   "first_seen": "2026-10-11T22:23:37Z",
+   "later": {
+    "mint": "G5Dgtfzqa65n7vpEfeRfYUCJSESduRzbiynu63SVpump",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 1
+   },
+   "single": {
+    "mint": "MWVv4ahMFAhfAeJqtC5rdtGhHMuVBMLS2r3KjKTpump",
+    "symbol": "Fuwa",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 1
+   }
+  },
+  {
+   "symbol": "privacy",
+   "first_seen": "2026-10-24T22:24:11Z",
+   "later": {
+    "mint": "9daaq4QBFia2C9BcAEwMP2RfWqseDsTYudqM4Lfmpump",
+    "liq_then": "14420.77",
+    "liq_now": 0.0,
+    "rug_now": 32
+   },
+   "single": {
+    "mint": "J9WL4zQVCFvLTydjtHoMGcLasjhRMZomnVmp4Y2cpump",
+    "symbol": "Moustache",
+    "liq_then": "49757.71",
+    "liq_now": 5229.63,
+    "rug_now": 20
+   }
+  },
+  {
+   "symbol": "xten",
+   "first_seen": "2026-11-10T23:23:40Z",
+   "later": {
+    "mint": "3MnvpVcush15XgEm3h26TQ3NR6C41ogYpiZF2oyUxmhv",
+    "liq_then": "0.01",
+    "liq_now": 0.0,
+    "rug_now": 55
+   },
+   "single": {
+    "mint": "JBUe4NZu4rm4Ej5AsLZECZLHvnWpFRmhn9oPLXCVpump",
+    "symbol": "MUBBO",
+    "liq_then": "2183.59",
+    "liq_now": 1738.96,
+    "rug_now": 33
+   }
+  },
+  {
+   "symbol": "securititty",
+   "first_seen": "2026-11-13T23:24:26Z",
+   "later": {
+    "mint": "EHVpQJ76sEKqm7VvtZzW5UGg362q9B8HcpQBNps7pump",
+    "liq_then": "1528.58",
+    "liq_now": 0.0,
+    "rug_now": 33
+   },
+   "single": {
+    "mint": "FibMHnUpDLQGtg51rWZotvRX2yp45SewAU4KrCNcpump",
+    "symbol": "42",
+    "liq_then": "0.31",
+    "liq_now": 6959.37,
+    "rug_now": 12
+   }
+  },
+  {
+   "symbol": "4chan",
+   "first_seen": "2026-11-08T23:23:56Z",
+   "later": {
+    "mint": "5bpoWwTbLzTSqRtfgBgMJPGN8j8RTa29VX63KB9dpump",
+    "liq_then": "6033.14",
+    "liq_now": 2087.57,
+    "rug_now": 32
+   },
+   "single": {
+    "mint": "GAHurYcsKYZ7srApNPPfFeQxzKdyRTbRhKJwqt5Lpump",
+    "symbol": "WarInu",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 1
+   }
+  },
+  {
+   "symbol": "meme",
+   "first_seen": "2026-11-06T23:23:45Z",
+   "later": {
+    "mint": "4AN9uwPTNFfFCFzR4n9KaVk3JyLmMACewf3aXV6Zpump",
+    "liq_then": "",
+    "liq_now": 3070.39,
+    "rug_now": 42
+   },
+   "single": {
+    "mint": "tyeDUtGkWr9emUAx5UdjBVezdKEj9SzAXGVAqvXJZS8",
+    "symbol": "Libtard",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 1
+   }
+  },
+  {
+   "symbol": "allox",
+   "first_seen": "2026-10-11T22:23:37Z",
+   "later": {
+    "mint": "9vHb8cc3hSF4NHorFpXVfqPb4PxHUhbHcAGtJEPeT2e9",
+    "liq_then": "0.13",
+    "liq_now": 0.0,
+    "rug_now": 55
+   },
+   "single": {
+    "mint": "eARR6bhEnvqZMiXRTj79U2nC9S28PoKf94V4C62pump",
+    "symbol": "NYT Coin",
+    "liq_then": "2008.25",
+    "liq_now": 0.0,
+    "rug_now": 34
+   }
+  },
+  {
+   "symbol": "max",
+   "first_seen": "2026-11-12T23:23:59Z",
+   "later": {
+    "mint": "8Gug6wcw7FacmrSNBGcquKi84ZrAvzJRzap9WuBqbkwA",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 29
+   },
+   "single": {
+    "mint": "87e8w4G33sB6Nsmi8aSUUsYSYBXXAof8h38dKahNpump",
+    "symbol": "NekoNano",
+    "liq_then": "5730.9",
+    "liq_now": 0.0,
+    "rug_now": 33
+   }
+  },
+  {
+   "symbol": "allox",
+   "first_seen": "2026-10-22T22:23:54Z",
+   "later": {
+    "mint": "nB41BqzvvFoRAus2x3WCv55jpvyvpWLwV4GRGRMWwdw",
+    "liq_then": "356160.97",
+    "liq_now": 0.0,
+    "rug_now": 55
+   },
+   "single": {
+    "mint": "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea",
+    "symbol": "PANGEA",
+    "liq_then": "130677.98",
+    "liq_now": 31731.96,
+    "rug_now": 71
+   }
+  },
+  {
+   "symbol": "katt",
+   "first_seen": "2026-10-29T23:24:04Z",
+   "later": {
+    "mint": "3L5svTNje1iNnYJEXLxgiZqaCkYQZ87FTXCt2JRFZyS7",
+    "liq_then": "2333.7",
+    "liq_now": 0.0,
+    "rug_now": 33
+   },
+   "single": {
+    "mint": "43Mi4KHYAE7EHWZPqrjaSdqEicY8dqqf1f6cJn5Qpump",
+    "symbol": "BINHACK",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 1
+   }
+  },
+  {
+   "symbol": "ber",
+   "first_seen": "2026-11-05T17:05:44Z",
+   "later": {
+    "mint": "CqpUBhhSxHsXbq6AGPKnbxDpWgECUXAVy3BCrwhGpump",
+    "liq_then": "32086",
+    "liq_now": 44147.21,
+    "rug_now": 1
+   },
+   "single": {
+    "mint": "BqaYdwqUUhuMJWYi8x4uExXFEmYDtAx17SpLj7Popump",
+    "symbol": "BART",
+    "liq_then": "30.92",
+    "liq_now": 0.0,
+    "rug_now": 34
+   }
+  },
+  {
+   "symbol": "speed",
+   "first_seen": "2026-10-26T23:24:30Z",
+   "later": {
+    "mint": "2YYzGp6eU6FvAkf8oud5JXqLiVcWeKxhhQbTw1cUpump",
+    "liq_then": "1819.07",
+    "liq_now": 0.0,
+    "rug_now": 34
+   },
+   "single": {
+    "mint": "3p77MbyiytccvhYKpx1KXF6ZKv6xcURpSKEEy4Khpump",
+    "symbol": "BABYDOPE",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 45
+   }
+  },
+  {
+   "symbol": "vi",
+   "first_seen": "2026-11-16T23:24:29Z",
+   "later": {
+    "mint": "3yjHj9s9MukEHr7b7qhMiUfH5fSUz97Eb5J8SRjdpump",
+    "liq_then": "14972.53",
+    "liq_now": 1919.25,
+    "rug_now": 32
+   },
+   "single": {
+    "mint": "FwVsiYsWBDCs4QifGcDRGGxQ3xh6CYLnWWFLUDiupump",
+    "symbol": "N\u0435il",
+    "liq_then": "4676.51",
+    "liq_now": 2569.34,
+    "rug_now": 31
+   }
+  },
+  {
+   "symbol": "ansem",
+   "first_seen": "2026-11-01T23:24:15Z",
+   "later": {
+    "mint": "3E9UnxE8xcE1xG2pdtUf7dk1ZnoK3F39JyjKNfvTpump",
+    "liq_then": "3.38",
+    "liq_now": 0.0,
+    "rug_now": 55
+   },
+   "single": {
+    "mint": "BnkbF7fcJtrbWRqw3Rec8CBnkj2aRLR3Bs9WEfvVpump",
+    "symbol": "Jcat",
+    "liq_then": "5234.63",
+    "liq_now": 0.0,
+    "rug_now": 33
+   }
+  },
+  {
+   "symbol": "adtf",
+   "first_seen": "2026-10-14T22:23:39Z",
+   "later": {
+    "mint": "3R88QYET1R567tMSpNGQKFRCnoehgxjxyWTxzSo6pump",
+    "liq_then": "1677326.96",
+    "liq_now": 0.0,
+    "rug_now": 33
+   },
+   "single": {
+    "mint": "FvSE99EkoiTY8Wv34V2RpWVNxnrLe7o9gyKnd4HddtjQ",
+    "symbol": "SDR",
+    "liq_then": "20238.84",
+    "liq_now": 2806.95,
+    "rug_now": 30
+   }
+  },
+  {
+   "symbol": "chatgpt",
+   "first_seen": "2026-10-25T23:24:40Z",
+   "later": {
+    "mint": "6RYVmnUQKjVmHpzY6KqGDgPDbZkxEaPmr9m8Uejmpump",
+    "liq_then": "1851.74",
+    "liq_now": 0.0,
+    "rug_now": 34
+   },
+   "single": {
+    "mint": "AjopaDD9cxEptNR8s1vgVrcjmXWboA6n9qkewSH5pump",
+    "symbol": "SATH",
+    "liq_then": "0.01",
+    "liq_now": 0.0,
+    "rug_now": 33
+   }
+  },
+  {
+   "symbol": "movember",
+   "first_seen": "2026-10-24T22:24:11Z",
+   "later": {
+    "mint": "FQZn3AikRWqpKWzSFJAdDNcT6BEMCwGKjcGoKMCapump",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 33
+   },
+   "single": {
+    "mint": "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump",
+    "symbol": "\u2588\u2588\u2588",
+    "liq_then": "65787.21",
+    "liq_now": 24072.98,
+    "rug_now": 1
+   }
+  },
+  {
+   "symbol": "anthropic",
+   "first_seen": "2026-11-06T23:23:45Z",
+   "later": {
+    "mint": "4D35EPY2Pbihp5QvQH4ohpUCrVXNRhinHoWLqix2pump",
+    "liq_then": "1648.79",
+    "liq_now": 0.0,
+    "rug_now": 40
+   },
+   "single": {
+    "mint": "AnDQPGonTwufBrqXSDZNo4czEsedUaaNX3j6LW4Lpump",
+    "symbol": "Vutomi",
+    "liq_then": "2412.85",
+    "liq_now": 0.0,
+    "rug_now": 33
+   }
+  },
+  {
+   "symbol": "onlycats",
+   "first_seen": "2026-11-10T23:23:40Z",
+   "later": {
+    "mint": "BAftaSb1HVqBn5723w72WLcXU7YASSgmVxQxJJAJpump",
+    "liq_then": "3165.98",
+    "liq_now": 1683.36,
+    "rug_now": 33
+   },
+   "single": {
+    "mint": "AsdFcM5a7CWLYVfLypktYYVNs1PB4dFRXGbHv28npump",
+    "symbol": "IMC",
+    "liq_then": "",
+    "liq_now": 0.0,
+    "rug_now": 34
+   }
+  }
+ ]
+}
