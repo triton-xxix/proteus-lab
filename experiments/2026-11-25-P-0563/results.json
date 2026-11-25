@@ -1,0 +1,40 @@
+{
+ "spr_version": "0.2.0",
+ "vectors": {
+  "passed": 80,
+  "failed": 0
+ },
+ "seal_seconds": 0.009,
+ "records_sealed": 3,
+ "verify_record": [
+  true,
+  true,
+  true
+ ],
+ "package_files": [
+  "intents.jsonl",
+  "keys.jsonl",
+  "manifest.json",
+  "records.jsonl"
+ ],
+ "clean": {
+  "ok": true,
+  "trust": "expected-key",
+  "passed": 18,
+  "failed": 0
+ },
+ "one_byte_edits": {
+  "tried": 200,
+  "verify_failed": 156,
+  "verify_passed": 0,
+  "checker_raised": 44,
+  "miss_examples": []
+ },
+ "amount_plus_one": {
+  "ok": false,
+  "failures": [
+   "records.jsonl is the file the manifest names: its SHA-256 differs",
+   "record LR-X402-72264BFEA8-v1 is sealed: the payload's hash is not the sealed hash"
+  ]
+ }
+}

@@ -14352,16 +14352,20 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-25",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-25T23:28:42+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-25T23:30:02+0000",
+   "note": "spr-sdk 0.2.0: 80 of 80 shipped vectors pass; a local book sealed 3 payments that verify at expected-key trust; 0 of 200 seeded one-byte edits to records.jsonl verified (156 clean failures, 44 raised JSONDecodeError instead of returning a failure), and amount_minor plus one fails on both the manifest hash and the payload hash.",
+   "artefacts": [
+    "experiments/2026-11-25-P-0563"
+   ],
+   "minutes": 1,
+   "calls": 14,
+   "denied": [
+    "Bash `/Users/triton/PROTEUS/sandbox/p0563-venv/bin/python3 /Users/triton/PROTEUS/experiments/202`"
+   ],
    "luke": false
   },
   {

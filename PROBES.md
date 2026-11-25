@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 457 works, 12 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 458 works, 12 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (18 open)
+## Queue (17 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -29,13 +29,14 @@ Verdicts so far: 457 works, 12 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
 | P-0561 | Bias-correct then pool the Munich ICON-EPS and ECMWF 10 to 90 bands (arXiv 2610.42130's order: calibrate each source, blend, recalibrate): on the scored days in exchange/icon_eps_band.jsonl and ecmwf_ens_band.jsonl, leave-one-out shift each band by its own past mean miss, take the union or mean of the shifted bands, and count days inside against 80% | desk | none |  | 0 | 20 min |
-| P-0563 | spr-sdk (PyPI): does a sealed payment record verify, and fail verification after a one-byte edit? | harvest | none |  | 0 | 20 min |
 | P-0564 | NEOMA P-CAM telemetry: do repeated public GETs return varying measured_us consistent with the 0.011 ms claim? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (541)
+## Verdicts (542)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-25 | P-0563 | spr-sdk (PyPI): does a sealed payment record verify, and fail verification after a one-byte edit? | **works** | spr-sdk 0.2.0: 80 of 80 shipped vectors pass; a local book sealed 3 payments that verify at expected-key trust; 0 of 200 seeded one-byte edits to records.jsonl verified (156 clean failures, 44 raised JSONDecodeError instead of returning a failure), and amount_minor plus one fails on both the manifest hash and the payload hash. | `experiments/2026-11-25-P-0563` | 1 min, 14 calls, 1 denied |
+| | | | | denied: Bash `/Users/triton/PROTEUS/sandbox/p0563-venv/bin/python3 /Users/triton/PROTEUS/experiments/202` | | |
 | 2026-11-25 | P-0562 | DVSA MOT open data: does it reproduce the Golf at 17.9% first-time fail for 10-year-old cars? | **blocked** | Cannot reproduce the 17.9% claim: public bulk data ends at 2023. Analogue measured instead (2013 cars at age 10, tested 2023): Golf 22.80% first-attempt fail on 55,784 tests (shot was 17.9 +/- 1.5 on ~38,000 for the 2015 cohort, a miss), all cars 31.71% on 2.14m (video says about 3 in 10, agrees). Golf ranks 24 of 155 models. The 2023 zip is Deflate64; read with inflate64 in sandbox/py312-venv because bsdtar was denied. The parse took 28 min, which is why the loop ran past its deadline. | `experiments/2026-11-25-P-0562` | 31 min, 27 calls, 1 denied |
 | | | | | denied: Bash `/usr/bin/bsdtar -xf /Users/triton/PROTEUS/sandbox/p0562/res2023.zip -C /Users/triton/PROTE` | | |
 | 2026-11-24 | P-0560 | No-model spoof score on ASVspoof 2021 LA (refill 239): SpeechAntiSpoofingBenchmarks/ASVspoof2021_LA is ungated, same packager as the 2019 LA mirror, with telephony codec conditions added. Run P-0559's speaker_split.py method with the dataset swapped, 150 bonafide and 150 spoof clips, five speaker-split seeds: does the about 18 percent EER from clean 2019 audio fall apart on codec audio, and by how much? | **works** | Measured: speaker-split EER 37.5 percent mean (27.9 to 47.5, five seeds) on 300 ASVspoof 2021 LA clips with seven codec channels, against 18.5 on clean 2019 LA (P-0559): it about doubles, two seeds near a coin flip. Shot said about 30: verdict hit, number 7.5 points short. Caveat: fit sets 54 to 79 clips, half P-0559 size; HF rows answered 429 three times, paced retry got all pages. Next: close (the no-model baseline does not survive codec audio; a per-codec read needs about 5x the clips). | `experiments/2026-11-24-P-0560` | 8 min, 10 calls, 0 denied |
