@@ -192,6 +192,10 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   so none of the three goes stale; the ladder's own next slice is a challenge-outcome table by
   opponent rating (who accepts at what strength), which the data already holds.
   **6 Nov (Workshop):** the three snapshot pages now rebuild in the Inspector's step 2 (`tasks/inspector.md`).
+  **25 Nov (Workshop):** `docs/systems/` (the two books) went false in five sessions: +0.94% on 25 to -0.23%
+  on 33. Rebuilt by hand with a then-and-now section and `docs/systems/history/`. Next: add
+  `python3 /Users/triton/PROTEUS/docs/systems/build.py` and its check.py to the Inspector's step 2, weekly
+  at most (each build writes a history file, so daily would clutter section 0's table).
   `docs/probes/numbers/` scores the number in every shot under a committed RULE.md, read by one Sonnet child;
   a snapshot through P-0338. Next: `probe.py verdict` could take a number score when the verdict lands, so new
   shots are scored by the run that measured them and the page stops being a snapshot; change it with a
