@@ -102,6 +102,7 @@ REFILL_SOURCES = ROOT + "field-notes/REFILL-SOURCES.md"
 INTERACTIVE_MINUTES = 45      # default when no nightly preflight header is found
 NIGHTLY_LENGTH_MIN = 90
 NIGHTLY_RESERVE_MIN = 10      # kept back for the run log and the marker release
+LATE_FLOOR_MIN = 20           # F-0113: a nightly whose desk steps ate the window still gets this much loop
 MAX_ATTEMPTS = 3
 ASK_EXPIRY_DAYS = 28          # a probe blocked on Luke's hands this long after the ask is killed
 LOOP_STALE_H = 3              # a loop older than this without a stop is a dead run
@@ -420,6 +421,18 @@ def stop_loop(lp, reason, st=None):
     print("commit: " + res)
 
 
+def apply_late_floor(dl, n, how):
+    """F-0113 (25 Nov 2026): the nightly fired at 05:21, its desk steps ran to 07:04, and the
+    preflight-plus-80 deadline (06:41) was already past at start, so the loop got nothing and the
+    run log only said `no open loop`. When the nightly deadline leaves less than MIN_PROBE_MINUTES,
+    the loop gets LATE_FLOOR_MIN from now instead. Only the preflight-derived deadline is floored;
+    --until and --minutes are taken as given."""
+    if dl - n < timedelta(minutes=MIN_PROBE_MINUTES):
+        return n + timedelta(minutes=LATE_FLOOR_MIN), how + ", already past or under %d min at start (%s), floor %d min" % (
+            MIN_PROBE_MINUTES, hm(dl), LATE_FLOOR_MIN)
+    return dl, how
+
+
 def cmd_start(a):
     lp = current_loop()
     if lp:
@@ -458,6 +471,7 @@ def cmd_start(a):
         if dl is None:
             dl = n + timedelta(minutes=INTERACTIVE_MINUTES)
             how = "no nightly preflight header found, interactive default %d min" % INTERACTIVE_MINUTES
+        dl, how = apply_late_floor(dl, n, how)
     cap = n + timedelta(minutes=DEFAULT_MAX_MINUTES)
     if dl > cap:
         dl, how = cap, how + ", capped at the loop's own %d min" % DEFAULT_MAX_MINUTES
