@@ -18,7 +18,7 @@
   "P-0567",
   "P-0568"
  ],
- "stopped_at": null,
- "stop_reason": null,
+ "stopped_at": "2026-11-25T23:45:22+0000",
+ "stop_reason": "137 of 150 calls used after 8 probes; a refill plus a probe needs about 15, so stopping rather than hitting the call cap mid-probe",
  "refills": 4
 }
