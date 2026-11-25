@@ -14317,26 +14317,31 @@
    "id": "P-0562",
    "title": "DVSA MOT open data: does it reproduce the Golf at 17.9% first-time fail for 10-year-old cars?",
    "source": "harvest",
-   "needs": "",
+   "needs": "the 2024 or 2025 DVSA bulk results file; data.gov.uk stops at 2023 (2024 zip is 404 on 25 Nov 2026)",
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-25",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-25T12:31:35+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "blocked",
+   "verdict_at": "2026-11-25T13:03:30+0000",
+   "note": "Cannot reproduce the 17.9% claim: public bulk data ends at 2023. Analogue measured instead (2013 cars at age 10, tested 2023): Golf 22.80% first-attempt fail on 55,784 tests (shot was 17.9 +/- 1.5 on ~38,000 for the 2015 cohort, a miss), all cars 31.71% on 2.14m (video says about 3 in 10, agrees). Golf ranks 24 of 155 models. The 2023 zip is Deflate64; read with inflate64 in sandbox/py312-venv because bsdtar was denied. The parse took 28 min, which is why the loop ran past its deadline.",
+   "artefacts": [
+    "experiments/2026-11-25-P-0562"
+   ],
+   "minutes": 31,
+   "calls": 27,
+   "denied": [
+    "Bash `/usr/bin/bsdtar -xf /Users/triton/PROTEUS/sandbox/p0562/res2023.zip -C /Users/triton/PROTE`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.45,
     "number": "Golf first used 2015, first-attempt fail rate 17.9% plus or minus 1.5 points on about 38,000 tests",
-    "at": "2026-11-25T12:32:04+0000"
+    "at": "2026-11-25T12:32:04+0000",
+    "hit": false
    }
   },
   {
