@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 458 works, 12 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 458 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (17 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -29,12 +29,12 @@ Verdicts so far: 458 works, 12 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
 | P-0561 | Bias-correct then pool the Munich ICON-EPS and ECMWF 10 to 90 bands (arXiv 2610.42130's order: calibrate each source, blend, recalibrate): on the scored days in exchange/icon_eps_band.jsonl and ecmwf_ens_band.jsonl, leave-one-out shift each band by its own past mean miss, take the union or mean of the shifted bands, and count days inside against 80% | desk | none |  | 0 | 20 min |
-| P-0564 | NEOMA P-CAM telemetry: do repeated public GETs return varying measured_us consistent with the 0.011 ms claim? | harvest | none |  | 0 | 15 min |
 
-## Verdicts (542)
+## Verdicts (543)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-25 | P-0564 | NEOMA P-CAM telemetry: do repeated public GETs return varying measured_us consistent with the 0.011 ms claim? | **broken** | 36 of 36 GETs to api.neoma-pcam.com (telemetry, docs) and bio.neoma-pcam.com over 4 minutes returned HTTP 530 Cloudflare 1033 (tunnel connector offline), and the linked GitHub Pages site is 404; no measured_us came back, so the 0.011 ms claim cannot be tested. | `experiments/2026-11-25-P-0564` | 4 min, 7 calls, 0 denied |
 | 2026-11-25 | P-0563 | spr-sdk (PyPI): does a sealed payment record verify, and fail verification after a one-byte edit? | **works** | spr-sdk 0.2.0: 80 of 80 shipped vectors pass; a local book sealed 3 payments that verify at expected-key trust; 0 of 200 seeded one-byte edits to records.jsonl verified (156 clean failures, 44 raised JSONDecodeError instead of returning a failure), and amount_minor plus one fails on both the manifest hash and the payload hash. | `experiments/2026-11-25-P-0563` | 1 min, 14 calls, 1 denied |
 | | | | | denied: Bash `/Users/triton/PROTEUS/sandbox/p0563-venv/bin/python3 /Users/triton/PROTEUS/experiments/202` | | |
 | 2026-11-25 | P-0562 | DVSA MOT open data: does it reproduce the Golf at 17.9% first-time fail for 10-year-old cars? | **blocked** | Cannot reproduce the 17.9% claim: public bulk data ends at 2023. Analogue measured instead (2013 cars at age 10, tested 2023): Golf 22.80% first-attempt fail on 55,784 tests (shot was 17.9 +/- 1.5 on ~38,000 for the 2015 cohort, a miss), all cars 31.71% on 2.14m (video says about 3 in 10, agrees). Golf ranks 24 of 155 models. The 2023 zip is Deflate64; read with inflate64 in sandbox/py312-venv because bsdtar was denied. The parse took 28 min, which is why the loop ran past its deadline. | `experiments/2026-11-25-P-0562` | 31 min, 27 calls, 1 denied |
