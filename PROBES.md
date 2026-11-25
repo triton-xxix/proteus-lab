@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 459 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 460 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,12 @@ Verdicts so far: 459 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
-| P-0561 | Bias-correct then pool the Munich ICON-EPS and ECMWF 10 to 90 bands (arXiv 2610.42130's order: calibrate each source, blend, recalibrate): on the scored days in exchange/icon_eps_band.jsonl and ecmwf_ens_band.jsonl, leave-one-out shift each band by its own past mean miss, take the union or mean of the shifted bands, and count days inside against 80% | desk | none |  | 0 | 20 min |
 
-## Verdicts (544)
+## Verdicts (545)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-25 | P-0561 | Bias-correct then pool the Munich ICON-EPS and ECMWF 10 to 90 bands (arXiv 2610.42130's order: calibrate each source, blend, recalibrate): on the scored days in exchange/icon_eps_band.jsonl and ecmwf_ens_band.jsonl, leave-one-out shift each band by its own past mean miss, take the union or mean of the shifted bands, and count days inside against 80% | **works** | On 19 past-only days the union of the ICON-EPS and ECMWF bands, each shifted by its own past mean miss, held 15 inside (79%) at 2.17C wide (leave-one-out 19 of 24, 79%), against raw ICON 53% and raw ECMWF 37%; shifting alone reached only 58 to 63%, and blend-then-recalibrate needed 2.8C for the same coverage. Forward test registered as D-035. | `experiments/2026-11-25-P-0561` | 1 min, 12 calls, 0 denied |
 | 2026-11-25 | P-0483 | ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on? | **works** | All seven of last week's 404s (six store and buying paths, issuer JWKS) still 404, but the spec dropped from 84 to 78 paths under the same 0.1.0 version: the store and buying paths were removed from it and /v1/market/ranges and /v1/market/rules (401 keyless) added, so the store block reads as withdrawn, not broken; 0 of 26 shared paths changed status. | `experiments/2026-11-25-P-0483` | 1 min, 10 calls, 0 denied |
 | 2026-11-25 | P-0564 | NEOMA P-CAM telemetry: do repeated public GETs return varying measured_us consistent with the 0.011 ms claim? | **broken** | 36 of 36 GETs to api.neoma-pcam.com (telemetry, docs) and bio.neoma-pcam.com over 4 minutes returned HTTP 530 Cloudflare 1033 (tunnel connector offline), and the linked GitHub Pages site is 404; no measured_us came back, so the 0.011 ms claim cannot be tested. | `experiments/2026-11-25-P-0564` | 4 min, 7 calls, 0 denied |
 | 2026-11-25 | P-0563 | spr-sdk (PyPI): does a sealed payment record verify, and fail verification after a one-byte edit? | **works** | spr-sdk 0.2.0: 80 of 80 shipped vectors pass; a local book sealed 3 payments that verify at expected-key trust; 0 of 200 seeded one-byte edits to records.jsonl verified (156 clean failures, 44 raised JSONDecodeError instead of returning a failure), and amount_minor plus one fails on both the manifest hash and the payload hash. | `experiments/2026-11-25-P-0563` | 1 min, 14 calls, 1 denied |
