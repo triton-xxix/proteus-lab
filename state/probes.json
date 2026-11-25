@@ -1,5 +1,5 @@
 {
- "next_id": 568,
+ "next_id": 569,
  "items": [
   {
    "id": "P-0001",
@@ -14457,6 +14457,28 @@
    ],
    "minutes": 1,
    "calls": 13,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0568",
+   "title": "Zpup split-shape fix: re-run P-0557's three-bar cycle with each bar split in two at its midpoint (six pieces, six colours, truth over every pair from different bars) at the same 108 renders: does the wrong count go to 0, and how many pieces does the SVG carry against three",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-25T23:44:37+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-25T23:45:15+0000",
+   "note": "With each of P-0557's three cyclic bars cut in two at its midpoint, Zpup 0.4.1 painted 0 of 297 overlapping piece pairs wrong across all 108 renders (unsplit: one pair wrong in every render showing the cycle), at 6 SVG shapes against 3; checkSceneWarnings stays silent either way.",
+   "artefacts": [
+    "experiments/2026-11-25-P-0568"
+   ],
+   "minutes": 0,
+   "calls": 4,
    "denied": [],
    "luke": false
   }

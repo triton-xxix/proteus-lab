@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 463 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 464 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (14 open)
 
@@ -28,10 +28,11 @@ Verdicts so far: 463 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 0 | 15 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
 
-## Verdicts (548)
+## Verdicts (549)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-25 | P-0568 | Zpup split-shape fix: re-run P-0557's three-bar cycle with each bar split in two at its midpoint (six pieces, six colours, truth over every pair from different bars) at the same 108 renders: does the wrong count go to 0, and how many pieces does the SVG carry against three | **works** | With each of P-0557's three cyclic bars cut in two at its midpoint, Zpup 0.4.1 painted 0 of 297 overlapping piece pairs wrong across all 108 renders (unsplit: one pair wrong in every render showing the cycle), at 6 SVG shapes against 3; checkSceneWarnings stays silent either way. | `experiments/2026-11-25-P-0568` | 0 min, 4 calls, 0 denied |
 | 2026-11-25 | P-0567 | Hermit CRM lead import: turn the 20 OSM firms in experiments/2026-11-23-lead-finder/run-2026-11-23.json into a CSV, init a fresh Hermit data folder in sandbox, dry-run then apply hermitcrm import, then check and report: does a lead list land cleanly in one command, how many rows and fields map, what does check flag (counts only in the artefact, no firm names) | **works** | Hermit CRM imported the 20 OSM firms in one command (dry run, then --apply: 20 created, 0 failed), a second import skipped all 20 as up to date, and check said no problems; but only name and website mapped to fields, and phone, postcode and craft all went into a free-text note. | `experiments/2026-11-25-P-0567` | 1 min, 13 calls, 0 denied |
 | 2026-11-25 | P-0566 | Copycat ticker forward check: from grinder/SNAPSHOTS.csv take 20 later mints of shared tickers and 20 single-ticker mints first seen on the same nights at least 7 days ago; pull today's liquidity (DexScreener tokens, keyless) and rugcheck summary score; how many of each are under 100 USD liquidity now | **works** | 20 later mints of shared tickers, first seen 7 to 45 days ago, against 20 single-ticker mints from the same nights: 15 v 13 under 100 USD liquidity today (all of them with no DexScreener pair left), rugcheck median 33 v 32, paired split 6 v 4 (sign test p about 0.75); the copycat flag does not separate outcomes a week on. | `experiments/2026-11-25-P-0566` | 1 min, 7 calls, 0 denied |
 | 2026-11-25 | P-0565 | Munich straddle ladders settled: for the 23 to 25 Nov ladders P-0553 found missing sign-twin degrees, what did the EDDM METAR high say, was that degree listed, and what won (exchange/munich_outcomes.jsonl); plus which degrees tonight's 26 and 27 Nov ladders miss against ICON's point | **works** | Both settled gappy ladders (23 and 24 Nov) had a METAR high of 3C, a listed degree, and 3C won both; 25 Nov's 1C high is listed too, so no missing degree has won yet. Tonight 26 Nov misses -4, -2, 1, 3 and 27 Nov misses 1 to 4, and 1C is within 1.5C of ICON's point both days (27 Nov now +0.5C), so a missing degree could win for the first time. | `experiments/2026-11-25-P-0565` | 0 min, 13 calls, 0 denied |
