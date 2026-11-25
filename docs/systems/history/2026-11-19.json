@@ -1,0 +1,55 @@
+{
+ "built_from": [
+  "systems/EVENTS.csv",
+  "systems/SIGNALS.csv",
+  "systems/systems.py"
+ ],
+ "last_session": "2026-11-19",
+ "book2": {
+  "closed": 25,
+  "mean_after_cost": 0.009435,
+  "win": 0.76,
+  "t": 2.663,
+  "word": "RUNNING (175 to the 200-trade mark)",
+  "open": 9,
+  "open_down": 9,
+  "open_mean_marked": -0.040656,
+  "sleeves_closed": 0.026756,
+  "sleeves_marked": -0.015475,
+  "hold": -0.073481,
+  "luck_p": 0.0001,
+  "random_median": -0.005164,
+  "weeks": 5,
+  "weeks_positive": 3,
+  "week_t": 1.32,
+  "start": "2026-10-13"
+ },
+ "book1": {
+  "closed": 8,
+  "mean": -0.001959,
+  "win": 0.375,
+  "t": -0.41,
+  "word": "RUNNING (22 to the 30-trade mark)",
+  "open": 1,
+  "sleeves_marked": -0.004465,
+  "hold": -0.059406,
+  "luck_p": 0.001,
+  "random_median": -0.021539,
+  "start": "2026-10-15"
+ },
+ "verdicts": {
+  "book2": {
+   "money": true,
+   "holding": true,
+   "luck": true
+  },
+  "book1": {
+   "money": false,
+   "holding": true,
+   "luck": true
+  }
+ },
+ "shuffles": 10000,
+ "seed": 20261120,
+ "cost_round_trip": 0.0005
+}

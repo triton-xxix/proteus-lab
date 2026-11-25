@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Two Books</title>
-<meta name="description" content="Two paper books on nine index ETFs since October 2026. Book 2 (IBS below 0.2): 25 closed trades, +0.94% a trade after cost, 76% winners; held against the market and against 10,000 random books.">
+<meta name="description" content="Two paper books on nine index ETFs since October 2026. Book 2 (IBS below 0.2): 33 closed trades, -0.23% a trade after cost, 58% winners; held against the market and against 10,000 random books.">
 <style>
 :root{
   --paper:#ece9e2; --raised:#f6f4ef; --ink:#1d1a16; --muted:#625b51; --rule:#d2ccc0;
@@ -49,75 +49,143 @@ details summary{cursor:pointer;color:var(--tide);margin:10px 0}
 </head>
 <body>
 <main>
-<div class="kicker">Proteus systems book · paper only · nine index ETFs · last session 2026-11-19</div>
+<div class="kicker">Proteus systems book · paper only · nine index ETFs · last session 2026-11-24</div>
 <h1>The two books</h1>
 <p>On 7 Oct I put two dip-buying rules on paper, on nine index funds (SPY, QQQ, DIA, IWM, EFA, EEM, EWU, EWJ, EWG), with the pass marks written down before the first trade. Every signal is appended to a file and committed before the next open, so none of it can be fitted after the fact. Book 1 buys an RSI(5) dip inside an uptrend. Book 2 buys when a day closes in its bottom fifth (IBS below 0.2) and book 1 is flat, and sells when a close beats the day before's high. This page asks each the three questions: does it make money, does it beat holding, does it beat luck.</p>
 
 <div class="stats">
-<div class="stat hot"><b>25 closed</b><span>book 2 trades since 2026-10-13; 175 more before its first kill line</span></div>
-<div class="stat hot"><b>+0.94%</b><span>mean trade after a 0.05% round trip, 76% winners (backtest +0.22% after cost)</span></div>
-<div class="stat "><b>t 2.66</b><span>on trades; 1.32 on its 5 weekly means, which is the fairer figure</span></div>
-<div class="stat "><b>9 of 9</b><span>open trades under water at the 2026-11-19 close, mean -4.07%</span></div>
-<div class="stat "><b>0 of 10,000</b><span>random-entry books in the same weeks that did as well (median -0.52%)</span></div>
+<div class="stat hot"><b>33 closed</b><span>book 2 trades since 2026-10-13; 167 more before its first kill line</span></div>
+<div class="stat hot"><b>-0.23%</b><span>mean trade after a 0.05% round trip, 58% winners (backtest +0.22% after cost)</span></div>
+<div class="stat "><b>t -0.48</b><span>on trades; 0.05 on its 6 weekly means, which is the fairer figure</span></div>
+<div class="stat "><b>1 of 1</b><span>open trades under water at the 2026-11-24 close, mean -4.28%</span></div>
+<div class="stat "><b>545 of 10,000</b><span>random-entry books in the same weeks that did as well (median -0.72%)</span></div>
 </div>
 
 <div class="chart"><table>
 <tr><th>book</th><th>makes money</th><th>beats holding</th><th>beats luck</th></tr>
-<tr><td>2: IBS below 0.2</td><td class="v up">yes</td><td class="v up">yes</td><td class="v up">yes</td></tr>
+<tr><td>2: IBS below 0.2</td><td class="v dn">no</td><td class="v up">yes</td><td class="v dn">no</td></tr>
 <tr><td>1: RSI(5) dip</td><td class="v dn">no</td><td class="v up">yes</td><td class="v up">yes</td></tr>
 </table></div>
-<p class="note">Money: mean closed trade above zero (book 2 after cost). Holding: nine equal sleeves, open trades marked at the last close, against holding all nine from the book's first fill. Luck: fewer than 5% of 10,000 random books did as well. None of these is the pre-registered verdict. That is the kill check's word, tonight: book 2 <b>RUNNING (175 to the 200-trade mark)</b>, book 1 <b>RUNNING (22 to the 30-trade mark)</b>.</p>
+<p class="note">Money: mean closed trade above zero (book 2 after cost). Holding: nine equal sleeves, open trades marked at the last close, against holding all nine from the book's first fill. Luck: fewer than 5% of 10,000 random books did as well. None of these is the pre-registered verdict. That is the kill check's word, tonight: book 2 <b>RUNNING (167 to the 200-trade mark)</b>, book 1 <b>RUNNING (22 to the 30-trade mark)</b>.</p>
+
+<h2>0. Then and now</h2>
+<p class="note">This page was first built on the 2026-11-19 close. Each build keeps its headline in <a href="https://github.com/triton-xxix/proteus-lab/tree/main/docs/systems/history">history/</a>; the circles mark where each build stood. Every point is re-derived from today's trade file, and the build stops if an old page's figures no longer come out of it.</p>
+<div class="chart"><svg viewBox="0 0 760 280" role="img" aria-label="Book 2 mean trade after cost as each of 33 trades closed, with the page builds marked">
+<line x1="54" x2="740" y1="218.7" y2="218.7" stroke="var(--rule)"/>
+<text x="46" y="222.7" text-anchor="end">-1%</text>
+<line x1="54" x2="740" y1="134.7" y2="134.7" stroke="var(--rule)" stroke-width="2"/>
+<text x="46" y="138.7" text-anchor="end">+0%</text>
+<line x1="54" x2="740" y1="50.8" y2="50.8" stroke="var(--rule)"/>
+<text x="46" y="54.8" text-anchor="end">+1%</text>
+<line x1="54" x2="740" y1="116.3" y2="116.3" stroke="var(--gold)" stroke-dasharray="5 4"/>
+<text x="740" y="110.3" text-anchor="end">backtest +0.22%</text>
+<polyline points="54.0,200.4 75.4,181.9 96.9,127.0 118.3,148.5 139.8,119.3 161.2,110.3 182.6,90.4 204.1,87.4 225.5,75.9 246.9,108.4 268.4,109.6 289.8,106.4 311.2,127.4 332.7,123.5 354.1,104.1 375.6,112.2 397.0,107.7 418.4,107.0 439.9,102.5 461.3,93.8 482.8,87.8 504.2,78.0 525.6,67.9 547.1,62.1 568.5,55.6 589.9,78.0 611.4,87.5 632.8,98.4 654.2,119.2 675.7,126.9 697.1,136.8 718.6,145.9 740.0,153.7" fill="none" stroke="var(--tide)" stroke-width="2.4"/>
+<circle class="rm" cx="54.0" cy="200.4" r="2.6" fill="var(--tide)"><title>after trade 1 (EFA out 2026-10-14): mean -0.78%</title></circle>
+<circle class="rm" cx="75.4" cy="181.9" r="2.6" fill="var(--tide)"><title>after trade 2 (EWG out 2026-10-14): mean -0.56%</title></circle>
+<circle class="rm" cx="96.9" cy="127.0" r="2.6" fill="var(--tide)"><title>after trade 3 (DIA out 2026-10-16): mean +0.09%</title></circle>
+<circle class="rm" cx="118.3" cy="148.5" r="2.6" fill="var(--tide)"><title>after trade 4 (IWM out 2026-10-16): mean -0.16%</title></circle>
+<circle class="rm" cx="139.8" cy="119.3" r="2.6" fill="var(--tide)"><title>after trade 5 (DIA out 2026-10-21): mean +0.18%</title></circle>
+<circle class="rm" cx="161.2" cy="110.3" r="2.6" fill="var(--tide)"><title>after trade 6 (EFA out 2026-10-21): mean +0.29%</title></circle>
+<circle class="rm" cx="182.6" cy="90.4" r="2.6" fill="var(--tide)"><title>after trade 7 (EWG out 2026-10-21): mean +0.53%</title></circle>
+<circle class="rm" cx="204.1" cy="87.4" r="2.6" fill="var(--tide)"><title>after trade 8 (EWU out 2026-10-21): mean +0.56%</title></circle>
+<circle class="rm" cx="225.5" cy="75.9" r="2.6" fill="var(--tide)"><title>after trade 9 (IWM out 2026-10-21): mean +0.70%</title></circle>
+<circle class="rm" cx="246.9" cy="108.4" r="2.6" fill="var(--tide)"><title>after trade 10 (EEM out 2026-10-28): mean +0.31%</title></circle>
+<circle class="rm" cx="268.4" cy="109.6" r="2.6" fill="var(--tide)"><title>after trade 11 (EFA out 2026-10-28): mean +0.30%</title></circle>
+<circle class="rm" cx="289.8" cy="106.4" r="2.6" fill="var(--tide)"><title>after trade 12 (EWG out 2026-10-28): mean +0.34%</title></circle>
+<circle class="rm" cx="311.2" cy="127.4" r="2.6" fill="var(--tide)"><title>after trade 13 (EWJ out 2026-10-28): mean +0.09%</title></circle>
+<circle class="rm" cx="332.7" cy="123.5" r="2.6" fill="var(--tide)"><title>after trade 14 (EWU out 2026-10-29): mean +0.13%</title></circle>
+<circle class="rm" cx="354.1" cy="104.1" r="2.6" fill="var(--tide)"><title>after trade 15 (DIA out 2026-11-05): mean +0.37%</title></circle>
+<circle class="rm" cx="375.6" cy="112.2" r="2.6" fill="var(--tide)"><title>after trade 16 (EEM out 2026-11-05): mean +0.27%</title></circle>
+<circle class="rm" cx="397.0" cy="107.7" r="2.6" fill="var(--tide)"><title>after trade 17 (EFA out 2026-11-05): mean +0.32%</title></circle>
+<circle class="rm" cx="418.4" cy="107.0" r="2.6" fill="var(--tide)"><title>after trade 18 (EWU out 2026-11-05): mean +0.33%</title></circle>
+<circle class="rm" cx="439.9" cy="102.5" r="2.6" fill="var(--tide)"><title>after trade 19 (IWM out 2026-11-05): mean +0.38%</title></circle>
+<circle class="rm" cx="461.3" cy="93.8" r="2.6" fill="var(--tide)"><title>after trade 20 (DIA out 2026-11-10): mean +0.49%</title></circle>
+<circle class="rm" cx="482.8" cy="87.8" r="2.6" fill="var(--tide)"><title>after trade 21 (EEM out 2026-11-10): mean +0.56%</title></circle>
+<circle class="rm" cx="504.2" cy="78.0" r="2.6" fill="var(--tide)"><title>after trade 22 (EFA out 2026-11-10): mean +0.68%</title></circle>
+<circle class="rm" cx="525.6" cy="67.9" r="2.6" fill="var(--tide)"><title>after trade 23 (EWG out 2026-11-10): mean +0.80%</title></circle>
+<circle class="rm" cx="547.1" cy="62.1" r="2.6" fill="var(--tide)"><title>after trade 24 (EWU out 2026-11-10): mean +0.87%</title></circle>
+<circle class="rm" cx="568.5" cy="55.6" r="2.6" fill="var(--tide)"><title>after trade 25 (IWM out 2026-11-10): mean +0.94%</title></circle>
+<circle class="rm" cx="589.9" cy="78.0" r="2.6" fill="var(--tide)"><title>after trade 26 (DIA out 2026-11-24): mean +0.68%</title></circle>
+<circle class="rm" cx="611.4" cy="87.5" r="2.6" fill="var(--tide)"><title>after trade 27 (EEM out 2026-11-24): mean +0.56%</title></circle>
+<circle class="rm" cx="632.8" cy="98.4" r="2.6" fill="var(--tide)"><title>after trade 28 (EFA out 2026-11-24): mean +0.43%</title></circle>
+<circle class="rm" cx="654.2" cy="119.2" r="2.6" fill="var(--tide)"><title>after trade 29 (EWG out 2026-11-24): mean +0.19%</title></circle>
+<circle class="rm" cx="675.7" cy="126.9" r="2.6" fill="var(--tide)"><title>after trade 30 (EWJ out 2026-11-24): mean +0.09%</title></circle>
+<circle class="rm" cx="697.1" cy="136.8" r="2.6" fill="var(--tide)"><title>after trade 31 (EWU out 2026-11-24): mean -0.02%</title></circle>
+<circle class="rm" cx="718.6" cy="145.9" r="2.6" fill="var(--tide)"><title>after trade 32 (QQQ out 2026-11-24): mean -0.13%</title></circle>
+<circle class="rm" cx="740.0" cy="153.7" r="2.6" fill="var(--tide)"><title>after trade 33 (SPY out 2026-11-24): mean -0.23%</title></circle>
+<circle class="snap" cx="568.5" cy="55.6" r="7" fill="none" stroke="var(--buoy)" stroke-width="2.2"/>
+<text class="k" x="568.5" y="43.6" text-anchor="middle">page of 2026-11-19: +0.94%</text>
+<circle class="snap" cx="740.0" cy="153.7" r="7" fill="none" stroke="var(--buoy)" stroke-width="2.2"/>
+<text class="k" x="740.0" y="175.7" text-anchor="end">page of 2026-11-24: -0.23%</text>
+<text x="54" y="256">trade 1</text>
+<text x="740" y="256" text-anchor="end">trade 33</text>
+<text x="397.0" y="274" text-anchor="middle">mean of all closed trades so far, after cost, as each one was sold</text>
+</svg></div>
+<p>The 8 trades closed since the 2026-11-19 page averaged -3.88% (0 of 8 winners), and moved the book's mean from +0.94% to -0.23%, -1.17 points. A mean over a few dozen trades that sit in the same few weeks swings this much; that is why the first kill line is at 200 trades and not at the first good fortnight.</p>
+<div class="chart"><table>
+<tr><th>page of</th><th class="n">closed</th><th class="n">mean after cost</th><th class="n">winners</th><th class="n">t</th><th class="n">sleeves v hold</th><th class="n">luck p</th></tr>
+<tr><td>2026-11-19</td><td class="n">25</td><td class="n up">+0.94%</td><td class="n">76%</td><td class="n">2.66</td><td class="n">-1.55% v -7.35%</td><td class="n">0.0001</td></tr>
+<tr><td>2026-11-24</td><td class="n">33</td><td class="n dn">-0.23%</td><td class="n">58%</td><td class="n">-0.48</td><td class="n">-1.40% v -7.08%</td><td class="n">0.0546</td></tr>
+</table></div>
 
 <h2>1. Book 2, trade by trade</h2>
-<p class="note">25 closed trades, each after the 0.05% round-trip cost, in the order they were sold. The gold line is the running sum.</p>
-<div class="chart"><svg viewBox="0 0 760 300" role="img" aria-label="Each of 25 closed book 2 trades after cost, in exit order, with the running sum">
-<line x1="54" x2="740" y1="240.8" y2="240.8" stroke="var(--rule)"/>
-<text x="46" y="244.8" text-anchor="end">-2%</text>
-<line x1="54" x2="740" y1="207.3" y2="207.3" stroke="var(--rule)"/>
-<text x="46" y="211.3" text-anchor="end">+2%</text>
-<line x1="54" x2="740" y1="173.8" y2="173.8" stroke="var(--rule)"/>
-<text x="46" y="177.8" text-anchor="end">+6%</text>
-<line x1="54" x2="740" y1="140.2" y2="140.2" stroke="var(--rule)"/>
-<text x="46" y="144.2" text-anchor="end">+10%</text>
-<line x1="54" x2="740" y1="106.7" y2="106.7" stroke="var(--rule)"/>
-<text x="46" y="110.7" text-anchor="end">+14%</text>
-<line x1="54" x2="740" y1="73.2" y2="73.2" stroke="var(--rule)"/>
-<text x="46" y="77.2" text-anchor="end">+18%</text>
-<line x1="54" x2="740" y1="39.7" y2="39.7" stroke="var(--rule)"/>
-<text x="46" y="43.7" text-anchor="end">+22%</text>
-<rect class="bar" x="58.1" y="224.0" width="19.2" height="6.6" fill="var(--buoy)"><title>EFA in 2026-10-13 out 2026-10-14: -0.78% after cost</title></rect>
-<rect class="bar" x="85.6" y="224.0" width="19.2" height="2.9" fill="var(--buoy)"><title>EWG in 2026-10-13 out 2026-10-14: -0.34% after cost</title></rect>
-<rect class="bar" x="113.0" y="212.3" width="19.2" height="11.7" fill="var(--tide)"><title>DIA in 2026-10-14 out 2026-10-16: +1.40% after cost</title></rect>
-<rect class="bar" x="140.4" y="224.0" width="19.2" height="7.8" fill="var(--buoy)"><title>IWM in 2026-10-13 out 2026-10-16: -0.93% after cost</title></rect>
-<rect class="bar" x="167.9" y="210.8" width="19.2" height="13.2" fill="var(--tide)"><title>DIA in 2026-10-19 out 2026-10-21: +1.58% after cost</title></rect>
-<rect class="bar" x="195.3" y="217.1" width="19.2" height="6.9" fill="var(--tide)"><title>EFA in 2026-10-19 out 2026-10-21: +0.83% after cost</title></rect>
-<rect class="bar" x="222.8" y="207.7" width="19.2" height="16.3" fill="var(--tide)"><title>EWG in 2026-10-20 out 2026-10-21: +1.95% after cost</title></rect>
-<rect class="bar" x="250.2" y="217.2" width="19.2" height="6.8" fill="var(--tide)"><title>EWU in 2026-10-20 out 2026-10-21: +0.81% after cost</title></rect>
-<rect class="bar" x="277.6" y="208.9" width="19.2" height="15.1" fill="var(--tide)"><title>IWM in 2026-10-19 out 2026-10-21: +1.80% after cost</title></rect>
-<rect class="bar" x="305.1" y="224.0" width="19.2" height="26.6" fill="var(--buoy)"><title>EEM in 2026-10-13 out 2026-10-28: -3.18% after cost</title></rect>
-<rect class="bar" x="332.5" y="222.7" width="19.2" height="1.5" fill="var(--tide)"><title>EFA in 2026-10-27 out 2026-10-28: +0.16% after cost</title></rect>
-<rect class="bar" x="360.0" y="217.7" width="19.2" height="6.3" fill="var(--tide)"><title>EWG in 2026-10-27 out 2026-10-28: +0.75% after cost</title></rect>
-<rect class="bar" x="387.4" y="224.0" width="19.2" height="24.4" fill="var(--buoy)"><title>EWJ in 2026-10-13 out 2026-10-28: -2.91% after cost</title></rect>
-<rect class="bar" x="414.8" y="217.9" width="19.2" height="6.2" fill="var(--tide)"><title>EWU in 2026-10-27 out 2026-10-29: +0.73% after cost</title></rect>
-<rect class="bar" x="442.3" y="193.8" width="19.2" height="30.2" fill="var(--tide)"><title>DIA in 2026-11-03 out 2026-11-05: +3.60% after cost</title></rect>
-<rect class="bar" x="469.7" y="224.0" width="19.2" height="9.9" fill="var(--buoy)"><title>EEM in 2026-11-03 out 2026-11-05: -1.18% after cost</title></rect>
-<rect class="bar" x="497.2" y="214.2" width="19.2" height="9.8" fill="var(--tide)"><title>EFA in 2026-11-03 out 2026-11-05: +1.17% after cost</title></rect>
-<rect class="bar" x="524.6" y="220.1" width="19.2" height="3.9" fill="var(--tide)"><title>EWU in 2026-11-04 out 2026-11-05: +0.46% after cost</title></rect>
-<rect class="bar" x="552.0" y="212.7" width="19.2" height="11.3" fill="var(--tide)"><title>IWM in 2026-11-03 out 2026-11-05: +1.35% after cost</title></rect>
-<rect class="bar" x="579.5" y="203.4" width="19.2" height="20.6" fill="var(--tide)"><title>DIA in 2026-11-06 out 2026-11-10: +2.46% after cost</title></rect>
-<rect class="bar" x="606.9" y="207.4" width="19.2" height="16.6" fill="var(--tide)"><title>EEM in 2026-11-06 out 2026-11-10: +1.99% after cost</title></rect>
-<rect class="bar" x="634.4" y="197.7" width="19.2" height="26.3" fill="var(--tide)"><title>EFA in 2026-11-06 out 2026-11-10: +3.14% after cost</title></rect>
-<rect class="bar" x="661.8" y="195.2" width="19.2" height="28.9" fill="var(--tide)"><title>EWG in 2026-11-06 out 2026-11-10: +3.44% after cost</title></rect>
-<rect class="bar" x="689.2" y="203.6" width="19.2" height="20.5" fill="var(--tide)"><title>EWU in 2026-11-06 out 2026-11-10: +2.44% after cost</title></rect>
-<rect class="bar" x="716.7" y="200.4" width="19.2" height="23.6" fill="var(--tide)"><title>IWM in 2026-11-06 out 2026-11-10: +2.82% after cost</title></rect>
-<polyline points="67.7,230.6 95.2,233.5 122.6,221.7 150.0,229.5 177.5,216.3 204.9,209.4 232.4,193.0 259.8,186.2 287.2,171.1 314.7,197.7 342.1,196.4 369.6,190.1 397.0,214.5 424.4,208.3 451.9,178.1 479.3,188.0 506.8,178.1 534.2,174.2 561.6,162.9 589.1,142.3 616.5,125.7 644.0,99.4 671.4,70.5 698.8,50.0 726.3,26.4" fill="none" stroke="var(--gold)" stroke-width="2.4"/>
-<text class="k" x="720.3" y="18.4" text-anchor="end">running sum +23.6%</text>
+<p class="note">33 closed trades, each after the 0.05% round-trip cost, in the order they were sold. The gold line is the running sum.</p>
+<div class="chart"><svg viewBox="0 0 760 300" role="img" aria-label="Each of 33 closed book 2 trades after cost, in exit order, with the running sum">
+<line x1="54" x2="740" y1="215.7" y2="215.7" stroke="var(--rule)"/>
+<text x="46" y="219.7" text-anchor="end">-2%</text>
+<line x1="54" x2="740" y1="186.0" y2="186.0" stroke="var(--rule)"/>
+<text x="46" y="190.0" text-anchor="end">+2%</text>
+<line x1="54" x2="740" y1="156.2" y2="156.2" stroke="var(--rule)"/>
+<text x="46" y="160.2" text-anchor="end">+6%</text>
+<line x1="54" x2="740" y1="126.5" y2="126.5" stroke="var(--rule)"/>
+<text x="46" y="130.5" text-anchor="end">+10%</text>
+<line x1="54" x2="740" y1="96.7" y2="96.7" stroke="var(--rule)"/>
+<text x="46" y="100.7" text-anchor="end">+14%</text>
+<line x1="54" x2="740" y1="67.0" y2="67.0" stroke="var(--rule)"/>
+<text x="46" y="71.0" text-anchor="end">+18%</text>
+<line x1="54" x2="740" y1="37.2" y2="37.2" stroke="var(--rule)"/>
+<text x="46" y="41.2" text-anchor="end">+22%</text>
+<rect class="bar" x="57.1" y="200.9" width="14.6" height="5.8" fill="var(--buoy)"><title>EFA in 2026-10-13 out 2026-10-14: -0.78% after cost</title></rect>
+<rect class="bar" x="77.9" y="200.9" width="14.6" height="2.5" fill="var(--buoy)"><title>EWG in 2026-10-13 out 2026-10-14: -0.34% after cost</title></rect>
+<rect class="bar" x="98.7" y="190.4" width="14.6" height="10.4" fill="var(--tide)"><title>DIA in 2026-10-14 out 2026-10-16: +1.40% after cost</title></rect>
+<rect class="bar" x="119.5" y="200.9" width="14.6" height="7.0" fill="var(--buoy)"><title>IWM in 2026-10-13 out 2026-10-16: -0.93% after cost</title></rect>
+<rect class="bar" x="140.3" y="189.1" width="14.6" height="11.7" fill="var(--tide)"><title>DIA in 2026-10-19 out 2026-10-21: +1.58% after cost</title></rect>
+<rect class="bar" x="161.1" y="194.7" width="14.6" height="6.2" fill="var(--tide)"><title>EFA in 2026-10-19 out 2026-10-21: +0.83% after cost</title></rect>
+<rect class="bar" x="181.8" y="186.4" width="14.6" height="14.5" fill="var(--tide)"><title>EWG in 2026-10-20 out 2026-10-21: +1.95% after cost</title></rect>
+<rect class="bar" x="202.6" y="194.8" width="14.6" height="6.0" fill="var(--tide)"><title>EWU in 2026-10-20 out 2026-10-21: +0.81% after cost</title></rect>
+<rect class="bar" x="223.4" y="187.4" width="14.6" height="13.4" fill="var(--tide)"><title>IWM in 2026-10-19 out 2026-10-21: +1.80% after cost</title></rect>
+<rect class="bar" x="244.2" y="200.9" width="14.6" height="23.6" fill="var(--buoy)"><title>EEM in 2026-10-13 out 2026-10-28: -3.18% after cost</title></rect>
+<rect class="bar" x="265.0" y="199.6" width="14.6" height="1.5" fill="var(--tide)"><title>EFA in 2026-10-27 out 2026-10-28: +0.16% after cost</title></rect>
+<rect class="bar" x="285.8" y="195.3" width="14.6" height="5.6" fill="var(--tide)"><title>EWG in 2026-10-27 out 2026-10-28: +0.75% after cost</title></rect>
+<rect class="bar" x="306.6" y="200.9" width="14.6" height="21.6" fill="var(--buoy)"><title>EWJ in 2026-10-13 out 2026-10-28: -2.91% after cost</title></rect>
+<rect class="bar" x="327.4" y="195.4" width="14.6" height="5.5" fill="var(--tide)"><title>EWU in 2026-10-27 out 2026-10-29: +0.73% after cost</title></rect>
+<rect class="bar" x="348.1" y="174.1" width="14.6" height="26.8" fill="var(--tide)"><title>DIA in 2026-11-03 out 2026-11-05: +3.60% after cost</title></rect>
+<rect class="bar" x="368.9" y="200.9" width="14.6" height="8.7" fill="var(--buoy)"><title>EEM in 2026-11-03 out 2026-11-05: -1.18% after cost</title></rect>
+<rect class="bar" x="389.7" y="192.1" width="14.6" height="8.7" fill="var(--tide)"><title>EFA in 2026-11-03 out 2026-11-05: +1.17% after cost</title></rect>
+<rect class="bar" x="410.5" y="197.4" width="14.6" height="3.5" fill="var(--tide)"><title>EWU in 2026-11-04 out 2026-11-05: +0.46% after cost</title></rect>
+<rect class="bar" x="431.3" y="190.8" width="14.6" height="10.0" fill="var(--tide)"><title>IWM in 2026-11-03 out 2026-11-05: +1.35% after cost</title></rect>
+<rect class="bar" x="452.1" y="182.5" width="14.6" height="18.3" fill="var(--tide)"><title>DIA in 2026-11-06 out 2026-11-10: +2.46% after cost</title></rect>
+<rect class="bar" x="472.9" y="186.1" width="14.6" height="14.8" fill="var(--tide)"><title>EEM in 2026-11-06 out 2026-11-10: +1.99% after cost</title></rect>
+<rect class="bar" x="493.7" y="177.5" width="14.6" height="23.3" fill="var(--tide)"><title>EFA in 2026-11-06 out 2026-11-10: +3.14% after cost</title></rect>
+<rect class="bar" x="514.5" y="175.2" width="14.6" height="25.6" fill="var(--tide)"><title>EWG in 2026-11-06 out 2026-11-10: +3.44% after cost</title></rect>
+<rect class="bar" x="535.2" y="182.7" width="14.6" height="18.2" fill="var(--tide)"><title>EWU in 2026-11-06 out 2026-11-10: +2.44% after cost</title></rect>
+<rect class="bar" x="556.0" y="179.9" width="14.6" height="21.0" fill="var(--tide)"><title>IWM in 2026-11-06 out 2026-11-10: +2.82% after cost</title></rect>
+<rect class="bar" x="576.8" y="200.9" width="14.6" height="44.7" fill="var(--buoy)"><title>DIA in 2026-11-13 out 2026-11-24: -6.01% after cost</title></rect>
+<rect class="bar" x="597.6" y="200.9" width="14.6" height="17.6" fill="var(--buoy)"><title>EEM in 2026-11-17 out 2026-11-24: -2.37% after cost</title></rect>
+<rect class="bar" x="618.4" y="200.9" width="14.6" height="22.9" fill="var(--buoy)"><title>EFA in 2026-11-17 out 2026-11-24: -3.07% after cost</title></rect>
+<rect class="bar" x="639.2" y="200.9" width="14.6" height="50.2" fill="var(--buoy)"><title>EWG in 2026-11-13 out 2026-11-24: -6.75% after cost</title></rect>
+<rect class="bar" x="660.0" y="200.9" width="14.6" height="19.3" fill="var(--buoy)"><title>EWJ in 2026-11-17 out 2026-11-24: -2.59% after cost</title></rect>
+<rect class="bar" x="680.8" y="200.9" width="14.6" height="26.3" fill="var(--buoy)"><title>EWU in 2026-11-17 out 2026-11-24: -3.54% after cost</title></rect>
+<rect class="bar" x="701.5" y="200.9" width="14.6" height="26.2" fill="var(--buoy)"><title>QQQ in 2026-11-17 out 2026-11-24: -3.52% after cost</title></rect>
+<rect class="bar" x="722.3" y="200.9" width="14.6" height="23.8" fill="var(--buoy)"><title>SPY in 2026-11-17 out 2026-11-24: -3.20% after cost</title></rect>
+<polyline points="64.4,206.7 85.2,209.2 106.0,198.8 126.8,205.7 147.5,194.0 168.3,187.9 189.1,173.4 209.9,167.3 230.7,153.9 251.5,177.5 272.3,176.3 293.1,170.7 313.8,192.4 334.6,186.9 355.4,160.1 376.2,168.8 397.0,160.1 417.8,156.7 438.6,146.6 459.4,128.3 480.2,113.6 500.9,90.2 521.7,64.6 542.5,46.4 563.3,25.4 584.1,70.1 604.9,87.8 625.7,110.7 646.5,160.8 667.2,180.1 688.0,206.5 708.8,232.6 729.6,256.4" fill="none" stroke="var(--gold)" stroke-width="2.4"/>
+<text class="k" x="723.6" y="248.4" text-anchor="end">running sum -7.5%</text>
 <text x="54" y="276">2026-10-14</text>
-<text x="740" y="276" text-anchor="end">2026-11-10</text>
+<text x="740" y="276" text-anchor="end">2026-11-24</text>
 <text x="397.0" y="294" text-anchor="middle">closed trades in the order they were sold; each bar after the 0.05% cost</text>
 </svg></div>
-<p>The mean trade is +0.94% after cost against a backtest of about +0.22%, so it is running at 4.3 times what 2009 to 2026 says to expect. That alone says luck is doing some of the work. The best was DIA +3.60% (2026-11-03 to 2026-11-05), the worst EEM -3.18%. A trade lasts 2.5 sessions on average. The four US funds gave 8 trades at +1.76%, the five overseas 17 at +0.56%; in the backtest only the US carried it.</p>
-<details><summary>All 25 closed trades and the 9 still open</summary>
+<p>The mean trade is -0.23% after cost against a backtest of about +0.22%, so it is below zero and below what 2009 to 2026 says to expect, by 0.45 points a trade. The best was DIA +3.60% (2026-11-03 to 2026-11-05), the worst EWG -6.75%. A trade lasts 3.2 sessions on average. The four US funds gave 11 trades at +0.12%, the five overseas 22 at -0.40%; in the backtest only the US carried it.</p>
+<details><summary>All 33 closed trades and the 1 still open</summary>
 <div class="chart"><table>
 <tr><th>market</th><th>bought</th><th>sold</th><th class="n">sessions</th><th class="n">after cost</th></tr>
 <tr><td>EFA</td><td>2026-10-13</td><td>2026-10-14</td><td class="n">1</td><td class="n dn">-0.78%</td></tr>
@@ -145,151 +213,151 @@ details summary{cursor:pointer;color:var(--tide);margin:10px 0}
 <tr><td>EWG</td><td>2026-11-06</td><td>2026-11-10</td><td class="n">2</td><td class="n up">+3.44%</td></tr>
 <tr><td>EWU</td><td>2026-11-06</td><td>2026-11-10</td><td class="n">2</td><td class="n up">+2.44%</td></tr>
 <tr><td>IWM</td><td>2026-11-06</td><td>2026-11-10</td><td class="n">2</td><td class="n up">+2.82%</td></tr>
-<tr><td>DIA</td><td>2026-11-13</td><td>still open</td><td class="n">4</td><td class="n dn">-6.54% marked</td></tr>
-<tr><td>EEM</td><td>2026-11-17</td><td>still open</td><td class="n">2</td><td class="n dn">-3.11% marked</td></tr>
-<tr><td>EFA</td><td>2026-11-17</td><td>still open</td><td class="n">2</td><td class="n dn">-3.07% marked</td></tr>
-<tr><td>EWG</td><td>2026-11-13</td><td>still open</td><td class="n">4</td><td class="n dn">-6.28% marked</td></tr>
-<tr><td>EWJ</td><td>2026-11-17</td><td>still open</td><td class="n">2</td><td class="n dn">-2.54% marked</td></tr>
-<tr><td>EWU</td><td>2026-11-17</td><td>still open</td><td class="n">2</td><td class="n dn">-3.86% marked</td></tr>
-<tr><td>IWM</td><td>2026-11-13</td><td>still open</td><td class="n">4</td><td class="n dn">-5.33% marked</td></tr>
-<tr><td>QQQ</td><td>2026-11-17</td><td>still open</td><td class="n">2</td><td class="n dn">-2.77% marked</td></tr>
-<tr><td>SPY</td><td>2026-11-17</td><td>still open</td><td class="n">2</td><td class="n dn">-3.10% marked</td></tr>
+<tr><td>DIA</td><td>2026-11-13</td><td>2026-11-24</td><td class="n">7</td><td class="n dn">-6.01%</td></tr>
+<tr><td>EEM</td><td>2026-11-17</td><td>2026-11-24</td><td class="n">5</td><td class="n dn">-2.37%</td></tr>
+<tr><td>EFA</td><td>2026-11-17</td><td>2026-11-24</td><td class="n">5</td><td class="n dn">-3.07%</td></tr>
+<tr><td>EWG</td><td>2026-11-13</td><td>2026-11-24</td><td class="n">7</td><td class="n dn">-6.75%</td></tr>
+<tr><td>EWJ</td><td>2026-11-17</td><td>2026-11-24</td><td class="n">5</td><td class="n dn">-2.59%</td></tr>
+<tr><td>EWU</td><td>2026-11-17</td><td>2026-11-24</td><td class="n">5</td><td class="n dn">-3.54%</td></tr>
+<tr><td>QQQ</td><td>2026-11-17</td><td>2026-11-24</td><td class="n">5</td><td class="n dn">-3.52%</td></tr>
+<tr><td>SPY</td><td>2026-11-17</td><td>2026-11-24</td><td class="n">5</td><td class="n dn">-3.20%</td></tr>
+<tr><td>IWM</td><td>2026-11-13</td><td>still open</td><td class="n">7</td><td class="n dn">-4.28% marked</td></tr>
 </table></div>
 </details>
 
 <h2>2. Against holding</h2>
-<p class="note">For each market: the book compounded over its trades, with the open ones marked at the 2026-11-19 close, against simply holding that fund from the 2026-10-13 open.</p>
+<p class="note">For each market: the book compounded over its trades, with the open ones marked at the 2026-11-24 close, against simply holding that fund from the 2026-10-13 open.</p>
 <div class="chart"><svg viewBox="0 0 760 318" role="img" aria-label="For each of nine markets, book 2 with open trades marked against holding the market over the same weeks">
-<line x1="61.0" x2="61.0" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="61.0" y="300" text-anchor="middle">-14%</text>
-<line x1="131.8" x2="131.8" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="131.8" y="300" text-anchor="middle">-12%</text>
-<line x1="202.6" x2="202.6" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="202.6" y="300" text-anchor="middle">-10%</text>
-<line x1="273.5" x2="273.5" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="273.5" y="300" text-anchor="middle">-8%</text>
-<line x1="344.3" x2="344.3" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="344.3" y="300" text-anchor="middle">-6%</text>
-<line x1="415.2" x2="415.2" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="415.2" y="300" text-anchor="middle">-4%</text>
-<line x1="486.0" x2="486.0" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="486.0" y="300" text-anchor="middle">-2%</text>
-<line x1="556.9" x2="556.9" y1="18" y2="284" stroke="var(--rule)" stroke-width="2"/>
-<text x="556.9" y="300" text-anchor="middle">+0%</text>
-<line x1="627.7" x2="627.7" y1="18" y2="284" stroke="var(--rule)"/>
-<text x="627.7" y="300" text-anchor="middle">+2%</text>
+<line x1="83.6" x2="83.6" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="83.6" y="300" text-anchor="middle">-14%</text>
+<line x1="149.6" x2="149.6" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="149.6" y="300" text-anchor="middle">-12%</text>
+<line x1="215.6" x2="215.6" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="215.6" y="300" text-anchor="middle">-10%</text>
+<line x1="281.6" x2="281.6" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="281.6" y="300" text-anchor="middle">-8%</text>
+<line x1="347.6" x2="347.6" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="347.6" y="300" text-anchor="middle">-6%</text>
+<line x1="413.7" x2="413.7" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="413.7" y="300" text-anchor="middle">-4%</text>
+<line x1="479.7" x2="479.7" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="479.7" y="300" text-anchor="middle">-2%</text>
+<line x1="545.7" x2="545.7" y1="18" y2="284" stroke="var(--rule)" stroke-width="2"/>
+<text x="545.7" y="300" text-anchor="middle">+0%</text>
+<line x1="611.7" x2="611.7" y1="18" y2="284" stroke="var(--rule)"/>
+<text x="611.7" y="300" text-anchor="middle">+2%</text>
 <text x="50" y="38" text-anchor="end">SPY</text>
-<line x1="276.7" x2="447.1" y1="34" y2="34" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="276.7" cy="34" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>SPY held: -7.91%</title></circle>
-<circle class="mark" cx="447.1" cy="34" r="6" fill="var(--tide)"><title>SPY book 2, open trades marked: -3.10% (closed only +0.00%)</title></circle>
-<text class="k" x="680" y="38">+4.8 pts</text>
+<line x1="297.0" x2="440.1" y1="34" y2="34" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="297.0" cy="34" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>SPY held: -7.53%</title></circle>
+<circle class="mark" cx="440.1" cy="34" r="6" fill="var(--tide)"><title>SPY book 2, open trades marked: -3.20% (closed only -3.20%)</title></circle>
+<text class="k" x="680" y="38">+4.3 pts</text>
 <text x="50" y="66" text-anchor="end">QQQ</text>
-<line x1="104.3" x2="458.9" y1="62" y2="62" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="104.3" cy="62" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>QQQ held: -12.78%</title></circle>
-<circle class="mark" cx="458.9" cy="62" r="6" fill="var(--tide)"><title>QQQ book 2, open trades marked: -2.77% (closed only +0.00%)</title></circle>
-<text class="k" x="680" y="66">+10.0 pts</text>
+<line x1="93.0" x2="429.5" y1="62" y2="62" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="93.0" cy="62" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>QQQ held: -13.72%</title></circle>
+<circle class="mark" cx="429.5" cy="62" r="6" fill="var(--tide)"><title>QQQ book 2, open trades marked: -3.52% (closed only -3.52%)</title></circle>
+<text class="k" x="680" y="66">+10.2 pts</text>
 <text x="50" y="94" text-anchor="end">DIA</text>
-<line x1="340.4" x2="634.6" y1="90" y2="90" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="340.4" cy="90" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>DIA held: -6.11%</title></circle>
-<circle class="mark" cx="634.6" cy="90" r="6" fill="var(--tide)"><title>DIA book 2, open trades marked: +2.19% (closed only +9.34%)</title></circle>
-<text class="k" x="680" y="94">+8.3 pts</text>
+<line x1="400.5" x2="637.0" y1="90" y2="90" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="400.5" cy="90" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>DIA held: -4.40%</title></circle>
+<circle class="mark" cx="637.0" cy="90" r="6" fill="var(--tide)"><title>DIA book 2, open trades marked: +2.77% (closed only +2.77%)</title></circle>
+<text class="k" x="680" y="94">+7.2 pts</text>
 <text x="50" y="122" text-anchor="end">IWM</text>
-<line x1="381.5" x2="538.9" y1="118" y2="118" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="381.5" cy="118" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>IWM held: -4.95%</title></circle>
-<circle class="mark" cx="538.9" cy="118" r="6" fill="var(--tide)"><title>IWM book 2, open trades marked: -0.51% (closed only +5.09%)</title></circle>
-<text class="k" x="680" y="122">+4.4 pts</text>
+<line x1="417.0" x2="565.2" y1="118" y2="118" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="417.0" cy="118" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>IWM held: -3.90%</title></circle>
+<circle class="mark" cx="565.2" cy="118" r="6" fill="var(--tide)"><title>IWM book 2, open trades marked: +0.59% (closed only +5.09%)</title></circle>
+<text class="k" x="680" y="122">+4.5 pts</text>
 <text x="50" y="150" text-anchor="end">EFA</text>
-<line x1="388.8" x2="604.6" y1="146" y2="146" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="388.8" cy="146" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EFA held: -4.74%</title></circle>
-<circle class="mark" cx="604.6" cy="146" r="6" fill="var(--tide)"><title>EFA book 2, open trades marked: +1.35% (closed only +4.56%)</title></circle>
-<text class="k" x="680" y="150">+6.1 pts</text>
+<line x1="392.3" x2="590.1" y1="146" y2="146" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="392.3" cy="146" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EFA held: -4.65%</title></circle>
+<circle class="mark" cx="590.1" cy="146" r="6" fill="var(--tide)"><title>EFA book 2, open trades marked: +1.35% (closed only +1.35%)</title></circle>
+<text class="k" x="680" y="150">+6.0 pts</text>
 <text x="50" y="178" text-anchor="end">EEM</text>
-<line x1="95.4" x2="363.9" y1="174" y2="174" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="95.4" cy="174" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EEM held: -13.03%</title></circle>
-<circle class="mark" cx="363.9" cy="174" r="6" fill="var(--tide)"><title>EEM book 2, open trades marked: -5.45% (closed only -2.42%)</title></circle>
-<text class="k" x="680" y="178">+7.6 pts</text>
+<line x1="112.7" x2="389.5" y1="174" y2="174" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="112.7" cy="174" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EEM held: -13.12%</title></circle>
+<circle class="mark" cx="389.5" cy="174" r="6" fill="var(--tide)"><title>EEM book 2, open trades marked: -4.73% (closed only -4.73%)</title></circle>
+<text class="k" x="680" y="178">+8.4 pts</text>
 <text x="50" y="206" text-anchor="end">EWU</text>
-<line x1="428.4" x2="574.0" y1="202" y2="202" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="428.4" cy="202" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EWU held: -3.63%</title></circle>
-<circle class="mark" cx="574.0" cy="202" r="6" fill="var(--tide)"><title>EWU book 2, open trades marked: +0.49% (closed only +4.52%)</title></circle>
-<text class="k" x="680" y="206">+4.1 pts</text>
+<line x1="454.7" x2="572.6" y1="202" y2="202" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="454.7" cy="202" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EWU held: -2.76%</title></circle>
+<circle class="mark" cx="572.6" cy="202" r="6" fill="var(--tide)"><title>EWU book 2, open trades marked: +0.82% (closed only +0.82%)</title></circle>
+<text class="k" x="680" y="206">+3.6 pts</text>
 <text x="50" y="234" text-anchor="end">EWJ</text>
-<line x1="183.6" x2="366.6" y1="230" y2="230" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="183.6" cy="230" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EWJ held: -10.54%</title></circle>
-<circle class="mark" cx="366.6" cy="230" r="6" fill="var(--tide)"><title>EWJ book 2, open trades marked: -5.37% (closed only -2.91%)</title></circle>
-<text class="k" x="680" y="234">+5.2 pts</text>
+<line x1="185.3" x2="366.6" y1="230" y2="230" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="185.3" cy="230" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EWJ held: -10.92%</title></circle>
+<circle class="mark" cx="366.6" cy="230" r="6" fill="var(--tide)"><title>EWJ book 2, open trades marked: -5.43% (closed only -5.43%)</title></circle>
+<text class="k" x="680" y="234">+5.5 pts</text>
 <text x="50" y="262" text-anchor="end">EWG</text>
-<line x1="470.0" x2="529.9" y1="258" y2="258" stroke="var(--ghost)" stroke-width="3"/>
-<circle class="hold" cx="470.0" cy="258" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EWG held: -2.45%</title></circle>
-<circle class="mark" cx="529.9" cy="258" r="6" fill="var(--tide)"><title>EWG book 2, open trades marked: -0.76% (closed only +5.89%)</title></circle>
-<text class="k" x="680" y="262">+1.7 pts</text>
-<text x="365.0" y="316" text-anchor="middle">grey: held from the 2026-10-13 open; blue: the book, open trades marked at the 2026-11-19 close</text>
+<line x1="455.1" x2="504.3" y1="258" y2="258" stroke="var(--ghost)" stroke-width="3"/>
+<circle class="hold" cx="455.1" cy="258" r="6" fill="var(--ghost)" stroke="var(--muted)"><title>EWG held: -2.74%</title></circle>
+<circle class="mark" cx="504.3" cy="258" r="6" fill="var(--tide)"><title>EWG book 2, open trades marked: -1.25% (closed only -1.25%)</title></circle>
+<text class="k" x="680" y="262">+1.5 pts</text>
+<text x="365.0" y="316" text-anchor="middle">grey: held from the 2026-10-13 open; blue: the book, open trades marked at the 2026-11-24 close</text>
 </svg></div>
-<p>Averaged over the nine, the book is -1.55% with its open trades marked (+2.68% on closed trades only); holding is -7.35%. The book is in the market a fraction of the time, so in a falling stretch it has less to lose, and in a rising one it lags. Right now all 9 sleeves hold a position bought on the way down, 9 of them under water. That is the rule working as written, not a fault, but those trades are not in the scored mean until they close.</p>
+<p>Averaged over the nine, the book is -1.40% with its open trades marked (-0.90% on closed trades only); holding is -7.08%. The book is in the market a fraction of the time, so in a falling stretch it has less to lose, and in a rising one it lags. Right now 1 of the nine sleeves hold a position, 1 of them under water at the 2026-11-24 close (mean -4.28% marked). Those trades are not in the scored mean until they close.</p>
 
 <h2>3. Against luck</h2>
 <p class="note">Each random book keeps every real trade's market and length in sessions and moves its entry to a random session in the same weeks (10,000 books, fixed seed 20261120, same cost).</p>
 <div class="chart"><svg viewBox="0 0 760 230" role="img" aria-label="10,000 random books with the same markets and holding lengths, against the real book">
 <rect class="bin" x="20.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
-<rect class="bin" x="35.5" y="185.6" width="14.0" height="0.4" fill="var(--ghost)"/>
-<rect class="bin" x="50.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
+<rect class="bin" x="35.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
+<rect class="bin" x="50.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
 <rect class="bin" x="65.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
-<rect class="bin" x="80.5" y="185.6" width="14.0" height="0.4" fill="var(--ghost)"/>
-<rect class="bin" x="95.5" y="184.4" width="14.0" height="1.6" fill="var(--ghost)"/>
-<rect class="bin" x="110.5" y="183.8" width="14.0" height="2.2" fill="var(--ghost)"/>
-<rect class="bin" x="125.5" y="180.9" width="14.0" height="5.1" fill="var(--ghost)"/>
-<rect class="bin" x="140.5" y="178.0" width="14.0" height="8.0" fill="var(--ghost)"/>
-<rect class="bin" x="155.5" y="169.2" width="14.0" height="16.8" fill="var(--ghost)"/>
-<rect class="bin" x="170.5" y="168.8" width="14.0" height="17.2" fill="var(--ghost)"/>
-<rect class="bin" x="185.5" y="156.6" width="14.0" height="29.4" fill="var(--ghost)"/>
-<rect class="bin" x="200.5" y="144.1" width="14.0" height="41.9" fill="var(--ghost)"/>
-<rect class="bin" x="215.5" y="139.8" width="14.0" height="46.2" fill="var(--ghost)"/>
-<rect class="bin" x="230.5" y="110.6" width="14.0" height="75.4" fill="var(--ghost)"/>
-<rect class="bin" x="245.5" y="93.0" width="14.0" height="93.0" fill="var(--ghost)"/>
-<rect class="bin" x="260.5" y="74.3" width="14.0" height="111.7" fill="var(--ghost)"/>
-<rect class="bin" x="275.5" y="53.6" width="14.0" height="132.4" fill="var(--ghost)"/>
-<rect class="bin" x="290.5" y="39.5" width="14.0" height="146.5" fill="var(--ghost)"/>
-<rect class="bin" x="305.5" y="31.6" width="14.0" height="154.4" fill="var(--ghost)"/>
-<rect class="bin" x="320.5" y="39.3" width="14.0" height="146.7" fill="var(--ghost)"/>
-<rect class="bin" x="335.5" y="27.1" width="14.0" height="158.9" fill="var(--ghost)"/>
-<rect class="bin" x="350.5" y="24.0" width="14.0" height="162.0" fill="var(--ghost)"/>
-<rect class="bin" x="365.5" y="43.8" width="14.0" height="142.2" fill="var(--ghost)"/>
-<rect class="bin" x="380.5" y="56.5" width="14.0" height="129.5" fill="var(--ghost)"/>
-<rect class="bin" x="395.5" y="77.5" width="14.0" height="108.5" fill="var(--ghost)"/>
-<rect class="bin" x="410.5" y="94.7" width="14.0" height="91.3" fill="var(--ghost)"/>
-<rect class="bin" x="425.5" y="120.2" width="14.0" height="65.8" fill="var(--ghost)"/>
-<rect class="bin" x="440.5" y="130.4" width="14.0" height="55.6" fill="var(--ghost)"/>
-<rect class="bin" x="455.5" y="149.2" width="14.0" height="36.8" fill="var(--ghost)"/>
-<rect class="bin" x="470.5" y="161.9" width="14.0" height="24.1" fill="var(--ghost)"/>
-<rect class="bin" x="485.5" y="169.9" width="14.0" height="16.1" fill="var(--ghost)"/>
-<rect class="bin" x="500.5" y="176.4" width="14.0" height="9.6" fill="var(--ghost)"/>
-<rect class="bin" x="515.5" y="179.9" width="14.0" height="6.1" fill="var(--ghost)"/>
-<rect class="bin" x="530.5" y="182.5" width="14.0" height="3.5" fill="var(--ghost)"/>
-<rect class="bin" x="545.5" y="184.4" width="14.0" height="1.6" fill="var(--ghost)"/>
-<rect class="bin" x="560.5" y="185.0" width="14.0" height="1.0" fill="var(--ghost)"/>
-<rect class="bin" x="575.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
-<rect class="bin" x="590.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
-<rect class="bin" x="605.5" y="185.6" width="14.0" height="0.4" fill="var(--ghost)"/>
-<rect class="bin" x="620.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
-<rect class="bin" x="635.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
-<rect class="bin" x="650.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
-<rect class="bin" x="665.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
-<rect class="bin" x="680.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
+<rect class="bin" x="80.5" y="185.5" width="14.0" height="0.5" fill="var(--ghost)"/>
+<rect class="bin" x="95.5" y="185.1" width="14.0" height="0.9" fill="var(--ghost)"/>
+<rect class="bin" x="110.5" y="184.2" width="14.0" height="1.8" fill="var(--ghost)"/>
+<rect class="bin" x="125.5" y="184.2" width="14.0" height="1.8" fill="var(--ghost)"/>
+<rect class="bin" x="140.5" y="182.2" width="14.0" height="3.8" fill="var(--ghost)"/>
+<rect class="bin" x="155.5" y="179.2" width="14.0" height="6.8" fill="var(--ghost)"/>
+<rect class="bin" x="170.5" y="173.6" width="14.0" height="12.4" fill="var(--ghost)"/>
+<rect class="bin" x="185.5" y="170.9" width="14.0" height="15.1" fill="var(--ghost)"/>
+<rect class="bin" x="200.5" y="162.5" width="14.0" height="23.5" fill="var(--ghost)"/>
+<rect class="bin" x="215.5" y="158.9" width="14.0" height="27.1" fill="var(--ghost)"/>
+<rect class="bin" x="230.5" y="147.6" width="14.0" height="38.4" fill="var(--ghost)"/>
+<rect class="bin" x="245.5" y="130.3" width="14.0" height="55.7" fill="var(--ghost)"/>
+<rect class="bin" x="260.5" y="119.4" width="14.0" height="66.6" fill="var(--ghost)"/>
+<rect class="bin" x="275.5" y="103.2" width="14.0" height="82.8" fill="var(--ghost)"/>
+<rect class="bin" x="290.5" y="81.8" width="14.0" height="104.2" fill="var(--ghost)"/>
+<rect class="bin" x="305.5" y="69.4" width="14.0" height="116.6" fill="var(--ghost)"/>
+<rect class="bin" x="320.5" y="50.2" width="14.0" height="135.8" fill="var(--ghost)"/>
+<rect class="bin" x="335.5" y="36.9" width="14.0" height="149.1" fill="var(--ghost)"/>
+<rect class="bin" x="350.5" y="32.1" width="14.0" height="153.9" fill="var(--ghost)"/>
+<rect class="bin" x="365.5" y="28.7" width="14.0" height="157.3" fill="var(--ghost)"/>
+<rect class="bin" x="380.5" y="24.0" width="14.0" height="162.0" fill="var(--ghost)"/>
+<rect class="bin" x="395.5" y="29.2" width="14.0" height="156.8" fill="var(--ghost)"/>
+<rect class="bin" x="410.5" y="37.5" width="14.0" height="148.5" fill="var(--ghost)"/>
+<rect class="bin" x="425.5" y="53.8" width="14.0" height="132.2" fill="var(--ghost)"/>
+<rect class="bin" x="440.5" y="73.9" width="14.0" height="112.1" fill="var(--ghost)"/>
+<rect class="bin" x="455.5" y="94.6" width="14.0" height="91.4" fill="var(--ghost)"/>
+<rect class="bin" x="470.5" y="103.9" width="14.0" height="82.1" fill="var(--ghost)"/>
+<rect class="bin" x="485.5" y="130.0" width="14.0" height="56.0" fill="var(--ghost)"/>
+<rect class="bin" x="500.5" y="136.1" width="14.0" height="49.9" fill="var(--ghost)"/>
+<rect class="bin" x="515.5" y="147.6" width="14.0" height="38.4" fill="var(--ghost)"/>
+<rect class="bin" x="530.5" y="165.2" width="14.0" height="20.8" fill="var(--ghost)"/>
+<rect class="bin" x="545.5" y="165.7" width="14.0" height="20.3" fill="var(--ghost)"/>
+<rect class="bin" x="560.5" y="171.8" width="14.0" height="14.2" fill="var(--ghost)"/>
+<rect class="bin" x="575.5" y="178.8" width="14.0" height="7.2" fill="var(--ghost)"/>
+<rect class="bin" x="590.5" y="181.9" width="14.0" height="4.1" fill="var(--ghost)"/>
+<rect class="bin" x="605.5" y="182.8" width="14.0" height="3.2" fill="var(--ghost)"/>
+<rect class="bin" x="620.5" y="185.3" width="14.0" height="0.7" fill="var(--ghost)"/>
+<rect class="bin" x="635.5" y="185.5" width="14.0" height="0.5" fill="var(--ghost)"/>
+<rect class="bin" x="650.5" y="185.1" width="14.0" height="0.9" fill="var(--ghost)"/>
+<rect class="bin" x="665.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
+<rect class="bin" x="680.5" y="185.8" width="14.0" height="0.2" fill="var(--ghost)"/>
 <rect class="bin" x="695.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
 <rect class="bin" x="710.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
 <rect class="bin" x="725.5" y="186.0" width="14.0" height="0.0" fill="var(--ghost)"/>
 <line x1="20" x2="740" y1="186" y2="186" stroke="var(--rule)" stroke-width="2"/>
-<text x="93.9" y="204" text-anchor="middle">-2%</text>
-<text x="216.1" y="204" text-anchor="middle">-1%</text>
-<text x="338.3" y="204" text-anchor="middle">-0%</text>
-<text x="460.5" y="204" text-anchor="middle">+0%</text>
-<text x="582.7" y="204" text-anchor="middle">+0%</text>
-<text x="704.9" y="204" text-anchor="middle">+1%</text>
-<line x1="691.1" x2="691.1" y1="24" y2="186" stroke="var(--buoy)" stroke-width="2.4"/>
-<text class="k" x="683.1" y="36" text-anchor="end">the real book +0.94%</text>
+<text x="34.1" y="204" text-anchor="middle">-2%</text>
+<text x="168.6" y="204" text-anchor="middle">-2%</text>
+<text x="303.1" y="204" text-anchor="middle">-1%</text>
+<text x="437.5" y="204" text-anchor="middle">-0%</text>
+<text x="572.0" y="204" text-anchor="middle">+0%</text>
+<text x="706.5" y="204" text-anchor="middle">+0%</text>
+<line x1="511.1" x2="511.1" y1="24" y2="186" stroke="var(--buoy)" stroke-width="2.4"/>
+<text class="k" x="503.1" y="36" text-anchor="end">the real book -0.23%</text>
 <text x="380.0" y="224" text-anchor="middle">mean trade after cost, 10,000 books of random entry days</text>
 </svg></div>
-<p>0 of 10,000 random books matched +0.94%, p 0.0001; the random median is -0.52%, because these were falling weeks. The nine funds move together, so the 25 trades are not 25 independent tries. Grouped by the week they closed, 3 of 5 weeks were positive and t falls from 2.66 to 1.32. Book 1's 8 trades give p 0.0010 against a random median of -2.15%: it beats random entries in the same falling weeks while still losing money, which is why the three questions are asked separately.</p>
+<p>545 of 10,000 random books matched -0.23%, p 0.0546; the random median is -0.72%, because these were falling weeks. The nine funds move together, so the 33 trades are not 33 independent tries. Grouped by the week they closed, 3 of 6 weeks were positive and t falls from -0.48 to 0.05. Book 1's 8 trades give p 0.0003 against a random median of -2.29%: it beats random entries in the same falling weeks while still losing money, which is why the three questions are asked separately.</p>
 <details><summary>Book 2 by week of exit</summary>
 <div class="chart"><table>
 <tr><th>week</th><th class="n">trades</th><th class="n">mean after cost</th></tr>
@@ -298,15 +366,16 @@ details summary{cursor:pointer;color:var(--tide);margin:10px 0}
 <tr><td>2026-W44</td><td class="n">5</td><td class="n dn">-0.89%</td></tr>
 <tr><td>2026-W45</td><td class="n">5</td><td class="n up">+1.08%</td></tr>
 <tr><td>2026-W46</td><td class="n">6</td><td class="n up">+2.72%</td></tr>
+<tr><td>2026-W48</td><td class="n">8</td><td class="n dn">-3.88%</td></tr>
 </table></div>
 </details>
 
 <h2>4. Book 1, the one I started with</h2>
-<p>8 closed trades, mean -0.20%, 38% winners, t -0.41, against a backtest of +0.63% and 75%. 1 open. Its sleeves are -0.45% marked against -5.94% for holding from 2026-10-15. It needs 22 more closed trades before its first kill line; at that point a mean below zero kills it. Eight trades say very little either way.</p>
+<p>8 closed trades, mean -0.20%, 38% winners, t -0.41, against a backtest of +0.63% and 75%. 1 open. Its sleeves are -0.40% marked against -5.67% for holding from 2026-10-15. It needs 22 more closed trades before its first kill line; at that point a mean below zero kills it. 8 trades say very little either way.</p>
 
 <h2>What is not settled</h2>
 <ul>
-<li>Five weeks of closed trades is not a verdict. Book 2's pre-registered marks are 200 closed trades for the first kill line and 500 for the answer, about eleven months and two and a third years.</li>
+<li>6 weeks of closed trades is not a verdict; section 0 shows how far the mean moved between two builds of this page. Book 2's pre-registered marks are 200 closed trades for the first kill line and 500 for the answer, about eleven months and two and a third years.</li>
 <li>The random books use the same weeks, so they control for the market's drift in that window but not for this being a good window for dip-buying.</li>
 <li>Prices are as traded, not dividend-adjusted, and fills are the next open with no slippage beyond the 0.05% cost.</li>
 <li>Paper only. No account and no stake, by charter.</li>

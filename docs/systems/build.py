@@ -181,6 +181,30 @@ data = {
 with open(os.path.join(HERE, "data.json"), "w") as f:
     json.dump(data, f, indent=1)
     f.write("\n")
+HIST = os.path.join(HERE, "history")
+os.makedirs(HIST, exist_ok=True)
+with open(os.path.join(HIST, f"{last_date}.json"), "w") as f:
+    json.dump(data, f, indent=1)
+    f.write("\n")
+
+# ---------- then and now: every earlier build's headline, re-derived from today's trades ----------
+SNAPS = []
+for fn in sorted(os.listdir(HIST)):
+    if not fn.endswith(".json"):
+        continue
+    sd = json.load(open(os.path.join(HIST, fn)))
+    sub = [x["r"] for x in B2 if x["out"] <= sd["last_session"]]
+    sn, sm, sw, st = S.summary(sub)
+    b = sd["book2"]
+    if sn != b["closed"] or round(sm, 6) != b["mean_after_cost"] or round(sw, 4) != b["win"]:
+        print("DISAGREE", f"snapshot {fn}: page said {b['closed']} {b['mean_after_cost']} {b['win']}, trades now give {sn} {sm:.6f} {sw:.4f}")
+        sys.exit(1)
+    SNAPS.append({"session": sd["last_session"], "closed": sn, "mean": sm, "win": sw, "t": st,
+                  "sleeves": b["sleeves_marked"], "hold": b["hold"], "luck_p": b["luck_p"]})
+SNAP0 = SNAPS[0]
+since = [x for x in B2 if x["out"] > SNAP0["session"]]
+since_mean = statistics.mean(x["r"] for x in since) if since else float("nan")
+since_win = sum(1 for x in since if x["r"] > 0)
 
 MCOL = {"SPY": "--tide", "QQQ": "--tide", "DIA": "--tide", "IWM": "--tide"}
 
@@ -215,6 +239,45 @@ def chart_trades():
     out.append(f'<text x="{L}" y="{H-24}">{rows[0]["out"]}</text>')
     out.append(f'<text x="{W-R}" y="{H-24}" text-anchor="end">{rows[-1]["out"]}</text>')
     out.append(f'<text x="{(L+W-R)/2:.1f}" y="{H-6}" text-anchor="middle">closed trades in the order they were sold; each bar after the 0.05% cost</text>')
+    out.append("</svg>")
+    return "\n".join(out)
+
+
+# ---------- chart 0: the running mean, with each page build marked ----------
+def chart_mean():
+    rows = sorted(B2, key=lambda x: (x["out"], x["market"]))
+    W, H, L, R, T, B = 760, 280, 54, 20, 22, 46
+    rm, s = [], 0.0
+    for i, x in enumerate(rows):
+        s += x["r"]
+        rm.append(s / (i + 1))
+    lo = min(min(rm), 0, 0.0022) - 0.004
+    hi = max(max(rm), 0.0022) + 0.004
+    step = (W - L - R) / max(len(rows) - 1, 1)
+    xx = lambda i: L + i * step
+    y = lambda v: T + (hi - v) / (hi - lo) * (H - T - B)
+    out = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Book 2 mean trade after cost as each of {len(rows)} trades closed, with the page builds marked">']
+    g = round(lo * 100) / 100
+    while g <= hi:
+        if g >= lo:
+            out.append(f'<line x1="{L}" x2="{W-R}" y1="{y(g):.1f}" y2="{y(g):.1f}" stroke="var(--rule)"{" stroke-width=\"2\"" if abs(g) < 1e-9 else ""}/>')
+            out.append(f'<text x="{L-8}" y="{y(g)+4:.1f}" text-anchor="end">{g*100:+.0f}%</text>')
+        g = round(g + 0.01, 4)
+    out.append(f'<line x1="{L}" x2="{W-R}" y1="{y(0.0022):.1f}" y2="{y(0.0022):.1f}" stroke="var(--gold)" stroke-dasharray="5 4"/>')
+    out.append(f'<text x="{W-R}" y="{y(0.0022)-6:.1f}" text-anchor="end">backtest +0.22%</text>')
+    pts = " ".join(f"{xx(i):.1f},{y(v):.1f}" for i, v in enumerate(rm))
+    out.append(f'<polyline points="{pts}" fill="none" stroke="var(--tide)" stroke-width="2.4"/>')
+    for i, v in enumerate(rm):
+        out.append(f'<circle class="rm" cx="{xx(i):.1f}" cy="{y(v):.1f}" r="2.6" fill="var(--tide)"><title>after trade {i+1} ({rows[i]["market"]} out {rows[i]["out"]}): mean {pc(v)}</title></circle>')
+    for j, sp in enumerate(SNAPS):
+        i = sp["closed"] - 1
+        anchor = "end" if i >= len(rows) - 3 else "middle"
+        dy = -12 if j % 2 == 0 else 22
+        out.append(f'<circle class="snap" cx="{xx(i):.1f}" cy="{y(rm[i]):.1f}" r="7" fill="none" stroke="var(--buoy)" stroke-width="2.2"/>')
+        out.append(f'<text class="k" x="{xx(i):.1f}" y="{y(rm[i])+dy:.1f}" text-anchor="{anchor}">page of {sp["session"]}: {pc(sp["mean"])}</text>')
+    out.append(f'<text x="{L}" y="{H-24}">trade 1</text>')
+    out.append(f'<text x="{W-R}" y="{H-24}" text-anchor="end">trade {len(rows)}</text>')
+    out.append(f'<text x="{(L+W-R)/2:.1f}" y="{H-6}" text-anchor="middle">mean of all closed trades so far, after cost, as each one was sold</text>')
     out.append("</svg>")
     return "\n".join(out)
 
@@ -282,6 +345,31 @@ open_rows = "\n".join(
     f'<tr><td>{x["market"]}</td><td>{x["in"]}</td><td>still open</td><td class="n">{x["days"]}</td><td class="n {"up" if x["r_marked"] > 0 else "dn"}">{pc(x["r_marked"])} marked</td></tr>'
     for x in B2_OPEN)
 week_rows = "\n".join(f'<tr><td>{k}</td><td class="n">{n}</td><td class="n {"up" if m > 0 else "dn"}">{pc(m)}</td></tr>' for k, (n, m) in W2.items())
+
+
+if m2 > 0.0022 * 1.5:
+    pace = f", so it is running at {m2/0.0022:.1f} times what 2009 to 2026 says to expect, which says luck is doing some of the work"
+elif m2 > 0:
+    pace = ", so it is in the backtest's range"
+else:
+    pace = f", so it is below zero and below what 2009 to 2026 says to expect, by {(0.0022-m2)*100:.2f} points a trade"
+if B2_OPEN:
+    open_line = (f"Right now {len(B2_OPEN)} of the nine sleeves hold a position, {open2_down} of them under water at the {last_date} close "
+                 f"(mean {pc(open2_mean)} marked). Those trades are not in the scored mean until they close.")
+else:
+    open_line = f"Right now no sleeve holds a position; every trade is closed and scored."
+fall = ", because these were falling weeks" if L2["random_median"] < 0 else ""
+d_mean = m2 - SNAP0["mean"]
+then_now = []
+for sp in SNAPS:
+    then_now.append(f'<tr><td>{sp["session"]}</td><td class="n">{sp["closed"]}</td><td class="n {"up" if sp["mean"] > 0 else "dn"}">{pc(sp["mean"])}</td>'
+                    f'<td class="n">{sp["win"]:.0%}</td><td class="n">{sp["t"]:.2f}</td><td class="n">{pc(sp["sleeves"])} v {pc(sp["hold"])}</td><td class="n">{sp["luck_p"]:.4f}</td></tr>')
+then_now = "\n".join(then_now)
+if since:
+    since_line = (f"The {len(since)} trades closed since the {SNAP0['session']} page averaged {pc(since_mean)} ({since_win} of {len(since)} winners), "
+                  f"and moved the book's mean from {pc(SNAP0['mean'])} to {pc(m2)}, {d_mean*100:+.2f} points.")
+else:
+    since_line = f"No trade has closed since the {SNAP0['session']} page."
 
 
 def cell(b):
@@ -371,10 +459,19 @@ page = f"""<!doctype html>
 </table></div>
 <p class="note">Money: mean closed trade above zero (book 2 after cost). Holding: nine equal sleeves, open trades marked at the last close, against holding all nine from the book's first fill. Luck: fewer than 5% of {SHUFFLES:,} random books did as well. None of these is the pre-registered verdict. That is the kill check's word, tonight: book 2 <b>{WORD2}</b>, book 1 <b>{WORD1}</b>.</p>
 
+<h2>0. Then and now</h2>
+<p class="note">This page was first built on the {SNAP0['session']} close. Each build keeps its headline in <a href="https://github.com/triton-xxix/proteus-lab/tree/main/docs/systems/history">history/</a>; the circles mark where each build stood. Every point is re-derived from today's trade file, and the build stops if an old page's figures no longer come out of it.</p>
+<div class="chart">{chart_mean()}</div>
+<p>{since_line} A mean over a few dozen trades that sit in the same few weeks swings this much; that is why the first kill line is at {S.B2_KILL_FROM} trades and not at the first good fortnight.</p>
+<div class="chart"><table>
+<tr><th>page of</th><th class="n">closed</th><th class="n">mean after cost</th><th class="n">winners</th><th class="n">t</th><th class="n">sleeves v hold</th><th class="n">luck p</th></tr>
+{then_now}
+</table></div>
+
 <h2>1. Book 2, trade by trade</h2>
 <p class="note">{n2} closed trades, each after the 0.05% round-trip cost, in the order they were sold. The gold line is the running sum.</p>
 <div class="chart">{chart_trades()}</div>
-<p>The mean trade is {pc(m2)} after cost against a backtest of about +0.22%, so it is running at {m2/0.0022:.1f} times what 2009 to 2026 says to expect. That alone says luck is doing some of the work. The best was {best['market']} {pc(best['r'])} ({best['in']} to {best['out']}), the worst {worst['market']} {pc(worst['r'])}. A trade lasts {mean_k:.1f} sessions on average. The four US funds gave {len(us)} trades at {pc(statistics.mean(us)) if us else 'none'}, the five overseas {len(ex)} at {pc(statistics.mean(ex)) if ex else 'none'}; in the backtest only the US carried it.</p>
+<p>The mean trade is {pc(m2)} after cost against a backtest of about +0.22%{pace}. The best was {best['market']} {pc(best['r'])} ({best['in']} to {best['out']}), the worst {worst['market']} {pc(worst['r'])}. A trade lasts {mean_k:.1f} sessions on average. The four US funds gave {len(us)} trades at {pc(statistics.mean(us)) if us else 'none'}, the five overseas {len(ex)} at {pc(statistics.mean(ex)) if ex else 'none'}; in the backtest only the US carried it.</p>
 <details><summary>All {n2} closed trades and the {len(B2_OPEN)} still open</summary>
 <div class="chart"><table>
 <tr><th>market</th><th>bought</th><th>sold</th><th class="n">sessions</th><th class="n">after cost</th></tr>
@@ -386,12 +483,12 @@ page = f"""<!doctype html>
 <h2>2. Against holding</h2>
 <p class="note">For each market: the book compounded over its trades, with the open ones marked at the {last_date} close, against simply holding that fund from the {START2} open.</p>
 <div class="chart">{chart_holding()}</div>
-<p>Averaged over the nine, the book is {pc(book2_marked)} with its open trades marked ({pc(book2_closed)} on closed trades only); holding is {pc(hold2)}. The book is in the market a fraction of the time, so in a falling stretch it has less to lose, and in a rising one it lags. Right now all {len(B2_OPEN)} sleeves hold a position bought on the way down, {open2_down} of them under water. That is the rule working as written, not a fault, but those trades are not in the scored mean until they close.</p>
+<p>Averaged over the nine, the book is {pc(book2_marked)} with its open trades marked ({pc(book2_closed)} on closed trades only); holding is {pc(hold2)}. The book is in the market a fraction of the time, so in a falling stretch it has less to lose, and in a rising one it lags. {open_line}</p>
 
 <h2>3. Against luck</h2>
 <p class="note">Each random book keeps every real trade's market and length in sessions and moves its entry to a random session in the same weeks ({SHUFFLES:,} books, fixed seed {SEED}, same cost).</p>
 <div class="chart">{chart_luck()}</div>
-<p>{L2['ge']:,} of {SHUFFLES:,} random books matched {pc(L2['observed'])}, p {L2['p']:.4f}; the random median is {pc(L2['random_median'])}, because these were falling weeks. The nine funds move together, so the {n2} trades are not {n2} independent tries. Grouped by the week they closed, {wk_pos} of {len(W2)} weeks were positive and t falls from {t2:.2f} to {wk_t:.2f}. Book 1's {n1} trades give p {L1['p']:.4f} against a random median of {pc(L1['random_median'])}: it beats random entries in the same falling weeks while still losing money, which is why the three questions are asked separately.</p>
+<p>{L2['ge']:,} of {SHUFFLES:,} random books matched {pc(L2['observed'])}, p {L2['p']:.4f}; the random median is {pc(L2['random_median'])}{fall}. The nine funds move together, so the {n2} trades are not {n2} independent tries. Grouped by the week they closed, {wk_pos} of {len(W2)} weeks were positive and t falls from {t2:.2f} to {wk_t:.2f}. Book 1's {n1} trades give p {L1['p']:.4f} against a random median of {pc(L1['random_median'])}: it beats random entries in the same falling weeks while still losing money, which is why the three questions are asked separately.</p>
 <details><summary>Book 2 by week of exit</summary>
 <div class="chart"><table>
 <tr><th>week</th><th class="n">trades</th><th class="n">mean after cost</th></tr>
@@ -400,11 +497,11 @@ page = f"""<!doctype html>
 </details>
 
 <h2>4. Book 1, the one I started with</h2>
-<p>{n1} closed trades, mean {pc(m1)}, {w1:.0%} winners, t {t1:.2f}, against a backtest of +0.63% and 75%. {len(B1_OPEN)} open. Its sleeves are {pc(book1_marked)} marked against {pc(hold1)} for holding from {START1}. It needs {S.KILL_FROM - n1} more closed trades before its first kill line; at that point a mean below zero kills it. Eight trades say very little either way.</p>
+<p>{n1} closed trades, mean {pc(m1)}, {w1:.0%} winners, t {t1:.2f}, against a backtest of +0.63% and 75%. {len(B1_OPEN)} open. Its sleeves are {pc(book1_marked)} marked against {pc(hold1)} for holding from {START1}. It needs {S.KILL_FROM - n1} more closed trades before its first kill line; at that point a mean below zero kills it. {n1} trades say very little either way.</p>
 
 <h2>What is not settled</h2>
 <ul>
-<li>Five weeks of closed trades is not a verdict. Book 2's pre-registered marks are 200 closed trades for the first kill line and 500 for the answer, about eleven months and two and a third years.</li>
+<li>{len(W2)} weeks of closed trades is not a verdict; section 0 shows how far the mean moved between two builds of this page. Book 2's pre-registered marks are 200 closed trades for the first kill line and 500 for the answer, about eleven months and two and a third years.</li>
 <li>The random books use the same weeks, so they control for the market's drift in that window but not for this being a good window for dip-buying.</li>
 <li>Prices are as traded, not dividend-adjusted, and fills are the next open with no slippage beyond the 0.05% cost.</li>
 <li>Paper only. No account and no stake, by charter.</li>

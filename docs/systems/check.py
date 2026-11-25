@@ -56,8 +56,15 @@ def count(pat, want, what):
         bad.append(f"{what}: {n} v {want}")
 
 
-count(r"<svg ", 3, "charts")
+count(r"<svg ", 4, "charts")
 count(r'class="bar"', b2["closed"], "trade bars")
+count(r'class="rm"', b2["closed"], "running-mean dots")
+HIST = os.path.join(HERE, "history")
+snaps = sorted(f for f in os.listdir(HIST) if f.endswith(".json"))
+count(r'class="snap"', len(snaps), "page-build circles")
+for f in snaps:
+    if f"page of {f[:-5]}" not in html:
+        bad.append(f"missing snapshot label {f[:-5]}")
 count(r'class="hold"', 9, "hold dots")
 count(r'class="mark"', 9, "book dots")
 count(r'class="bin"', 48, "luck bins")
@@ -84,4 +91,4 @@ if bad:
     for b in bad:
         print("FAIL", b)
     sys.exit(1)
-print(f"ok {path}: 3 charts, {b2['closed']} bars, 9+9 dots, 48 bins, 6 cells, {b2['open']} open rows, headline numbers present")
+print(f"ok {path}: 4 charts, {len(snaps)} page builds, {b2['closed']} bars, 9+9 dots, 48 bins, 6 cells, {b2['open']} open rows, headline numbers present")
