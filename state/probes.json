@@ -1,5 +1,5 @@
 {
- "next_id": 567,
+ "next_id": 568,
  "items": [
   {
    "id": "P-0001",
@@ -14435,6 +14435,28 @@
    ],
    "minutes": 1,
    "calls": 7,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0567",
+   "title": "Hermit CRM lead import: turn the 20 OSM firms in experiments/2026-11-23-lead-finder/run-2026-11-23.json into a CSV, init a fresh Hermit data folder in sandbox, dry-run then apply hermitcrm import, then check and report: does a lead list land cleanly in one command, how many rows and fields map, what does check flag (counts only in the artefact, no firm names)",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-25",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-25T23:43:07+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-25T23:44:09+0000",
+   "note": "Hermit CRM imported the 20 OSM firms in one command (dry run, then --apply: 20 created, 0 failed), a second import skipped all 20 as up to date, and check said no problems; but only name and website mapped to fields, and phone, postcode and craft all went into a free-text note.",
+   "artefacts": [
+    "experiments/2026-11-25-P-0567"
+   ],
+   "minutes": 1,
+   "calls": 13,
    "denied": [],
    "luke": false
   }

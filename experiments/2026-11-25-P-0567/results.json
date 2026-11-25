@@ -1,0 +1,43 @@
+{
+ "rows_in": 20,
+ "named": 20,
+ "with_website": 3,
+ "with_phone": 1,
+ "init": {
+  "rc": 0,
+  "out": "Created a Hermit CRM data folder in /Users/triton/PROTEUS/sandbox/p0567/data.\nStart the web app: hermitcrm --data /Users/triton/PROTEUS/sandbox/p0567/data serve\n",
+  "err": ""
+ },
+ "dry_run": {
+  "cmd": "import /Users/triton/PROTEUS/sandbox/p0567/leads.csv",
+  "rc": 0,
+  "out": "Mode: companies | columns: name -> name, website -> website, phone -> notes, postcode -> notes, industry -> notes, source -> source\n20 companies to create, 0 to update, 0 rows skipped, 0 contacts to create\n2: <firm> | create | source=list\n3: <firm> | create | source=list\n4: <firm> | create | source=list\n5: <firm> | create | source=list\n6: <firm> | create | source=list\n7: <firm> | create | website=<site>, source=list\n8: <firm> | create | website=<site>, source=list\n9: <firm> | create | source=list\n10: <firm> | create | source=list\n11: <firm> | create | source=list\n12: <firm> | create | source=list\n13: <firm> | create | source=list\n14: <firm> | create | source=list\n15: <firm> | create | source=list\n16: <firm> | create | source=list\n17: <firm> | create | source=list\n18: <firm> | create | source=list\n19: <firm> | create | source=list\n20: <firm> | create | website=<site>, source=list\n21: <firm> | create | source=list\nDry run; add --apply to write.\n",
+  "err": ""
+ },
+ "apply": {
+  "cmd": "import /Users/triton/PROTEUS/sandbox/p0567/leads.csv --apply",
+  "rc": 0,
+  "out": "Mode: companies | columns: name -> name, website -> website, phone -> notes, postcode -> notes, industry -> notes, source -> source\n20 companies to create, 0 to update, 0 rows skipped, 0 contacts to create\n2: <firm> | create | source=list\n3: <firm> | create | source=list\n4: <firm> | create | source=list\n5: <firm> | create | source=list\n6: <firm> | create | source=list\n7: <firm> | create | website=<site>, source=list\n8: <firm> | create | website=<site>, source=list\n9: <firm> | create | source=list\n10: <firm> | create | source=list\n11: <firm> | create | source=list\n12: <firm> | create | source=list\n13: <firm> | create | source=list\n14: <firm> | create | source=list\n15: <firm> | create | source=list\n16: <firm> | create | source=list\n17: <firm> | create | source=list\n18: <firm> | create | source=list\n19: <firm> | create | source=list\n20: <firm> | create | website=<site>, source=list\n21: <firm> | create | source=list\nImported: 20 created, 0 updated, 0 contacts, 0 skipped, 0 failed\n",
+  "err": ""
+ },
+ "reimport_dry_run": {
+  "cmd": "import /Users/triton/PROTEUS/sandbox/p0567/leads.csv --mode companies",
+  "rc": 0,
+  "out": "Mode: companies | columns: name -> name, website -> website, phone -> notes, postcode -> notes, industry -> notes, source -> source\n0 companies to create, 0 to update, 20 rows skipped, 0 contacts to create\n2: <firm> | skip | already up to date\n3: <firm> | skip | already up to date\n4: <firm> | skip | already up to date\n5: <firm> | skip | already up to date\n6: <firm> | skip | already up to date\n7: <firm> | skip | already up to date\n8: <firm> | skip | already up to date\n9: <firm> | skip | already up to date\n10: <firm> | skip | already up to date\n11: <firm> | skip | already up to date\n12: <firm> | skip | already up to date\n13: <firm> | skip | already up to date\n14: <firm> | skip | already up to date\n15: <firm> | skip | already up to date\n16: <firm> | skip | already up to date\n17: <firm> | skip | already up to date\n18: <firm> | skip | already up to date\n19: <firm> | skip | already up to date\n20: <firm> | skip | already up to date\n21: <firm> | skip | already up to date\nDry run; add --apply to write.\n",
+  "err": ""
+ },
+ "mapping_line": "Mode: companies | columns: name -> name, website -> website, phone -> notes, postcode -> notes, industry -> notes, source -> source",
+ "check": {
+  "cmd": "check",
+  "rc": 0,
+  "out": "OK: 20 companies, 0 contacts, 20 interactions, no problems\n",
+  "err": ""
+ },
+ "report": {
+  "cmd": "report",
+  "rc": 0,
+  "out": "Report 2026-10-27 to 2026-11-25 (30d; previous 2026-09-27 to 2026-10-26)\n\nActivity\n\nmetric             period  previous  delta\ninteractions       0       0         \u00b10\ncompanies touched  0       0         \u00b10\nnew companies      20      0         +20\nnew contacts       0       0         \u00b10\n\nweek      email out  email in  li out  li in  call out  call in  wa out  wa in  meeting out  meeting in  total\n2026-W44  0          0         0       0      0         0        0       0      0            0           0\n2026-W45  0          0         0       0      0         0        0       0      0            0           0\n2026-W46  0          0         0       0      0         0        0       0      0            0           0\n2026-W47  0          0         0       0      0         0        0       0      0            0           0\n2026-W48  0          0         0       0      0         0        0       0      0            0           0\n\nFunnel\n\nstage              entered  previous  delta\nprospect           20       0         +20\nengaged            0        0         \u00b10\ndiscovery          0        0         \u00b10\noffer              0        0         \u00b10\nwon                0        0         \u00b10\nlost               0        0         \u00b10\ndisqualified       0        0         \u00b10\ntemp-disqualified  0        0         \u00b10\n\nfrom       to         reached from  reached to  conversion\nprospect   engaged    20            0           0%\nengaged    discovery  0             0           -\ndiscovery  offer      0             0           -\noffer      won        0             0           -\n\nstage     companies  median days\nprospect  20         0\n\npipeline stage  companies  EUR/month\nprospect        20         0\nengaged         0          0\ndiscovery       0          0\noffer           0          0\n\nOutcomes\n\nstage         count  EUR/month  previous  delta\nwon           0      0          0         \u00b10\nlost          0      0          0         \u00b10\ndisqualified  0      0          0         \u00b10\n\nwin rate: - (previous -)\n\nlost reason  count\n-\n\nMessages\n\nsent: 0 (previous 0, \u00b10) | successful 0 | interested 0 | unsuccessful 0 | unknown 0 | successful rate - (window 14d)\n\nlanguage  sent  successful  interested  unsuccessful  unknown  rate\n-\n\nchannel  sent  successful  interested  unsuccessful  unknown  rate\n-\n\nreused text  uses  successful rate\n-\n\nSources\n\nsource  created  won\nlist    20       0\n\nHygiene\n\noverdue next steps (0)  stage  due  next step\n-\n\nsilent 14+ days (0)  stage  days\n-\n\ncontacts without email (0)  company\n-\n",
+  "err": ""
+ },
+ "company_files": 40
+}
