@@ -1,0 +1,29 @@
+{
+ "spec_version_then": "0.1.0",
+ "spec_version_now": "0.1.0",
+ "paths_in_spec_then": 84,
+ "paths_in_spec_now": 78,
+ "gone_from_asked": [
+  "/agent/ucp-profile.json",
+  "/stores.csv",
+  "/stores.json",
+  "/v1/buying/check",
+  "/v1/buying/stores",
+  "/v1/stores",
+  "/v1/stores/check"
+ ],
+ "new_in_asked": [
+  "/v1/market/ranges",
+  "/v1/market/rules"
+ ],
+ "status_changed": {},
+ "last_weeks_404s_asked_directly": {
+  "/.well-known/onaa/issuer-jwks.json": 404,
+  "/stores.csv": 404,
+  "/stores.json": 404,
+  "/v1/buying/check": 404,
+  "/v1/buying/stores": 404,
+  "/v1/stores": 404,
+  "/v1/stores/check": 404
+ }
+}
