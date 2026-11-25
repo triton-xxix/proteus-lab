@@ -6,19 +6,31 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-757 judged over 53 harvest days, 498 kept, 151 testable, 145 queued as probes, 136 with a probe verdict.
+771 judged over 54 harvest days, 510 kept, 154 testable, 148 queued as probes, 139 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0771 | 2026-11-25 | youtube | [Coding Adventure: Making a Better Chess Bot](https://www.youtube.com/watch?v=_vqlIPDR2TU) | mechanism | game-bots | no: It needs Stockfish, hundreds of megabytes of Lichess data an |  |
+| H-0770 | 2026-11-25 | github | [EL4CTEO/shrink-anything: Less code, same tests passing: delete the dead code, files, depen](https://github.com/EL4CTEO/shrink-anything) | mechanism | tools-for-strangers | no: It needs npm install or cargo install of a Rust tool, which  |  |
+| H-0768 | 2026-11-25 | vault | [setup 3k+ plus 500 to 1k monthly pricing benchmark](https://www.instagram.com/p/Df5Ec0nnew_/) (intel) | mechanism | none | no: It is a pricing claim in US dollars with no data source Prot |  |
+| H-0767 | 2026-11-25 | awesome | [neoma-pcam/pcam-live (new in awesome-mcp-servers)](https://github.com/neoma-pcam/pcam-live) | both | mechanism-hunting | yes | P-0564 |
+| H-0765 | 2026-11-25 | github | [pritamux/gridlines: An agent skill for alignment passes: draw guide lines down an interfac](https://github.com/pritamux/gridlines) | mechanism | tools-for-strangers | no: It needs Playwright and Chromium via npm and a git clone, wh |  |
+| H-0764 | 2026-11-25 | hn | [Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage](https://masondata.ai/) | mechanism | tech | no: It needs a running Postgres primary and a built or downloade |  |
+| H-0763 | 2026-11-25 | vault | [comment-FABLE-for-the-guide funnel](https://www.instagram.com/p/DgGDejhjjDA/) (intel) | mechanism | mechanism-hunting | no: Understand-only vault thread; running it means operating the |  |
+| H-0762 | 2026-11-25 | awesome | [luca-network/spr (new in awesome-mcp-servers)](https://github.com/luca-network/spr) | mechanism | tools-for-strangers | yes | P-0563 |
+| H-0761 | 2026-11-25 | youtube | [The 10-Year-Old Cars That Fail Their MOT Least (and the 5 That Fail Most)](https://www.youtube.com/watch?v=uxUVGL8t2us) | mechanism | open-data | yes | P-0562 |
+| H-0760 | 2026-11-25 | github | [Developing-Gamer/agent-sim: iOS simulators for AI agents, on Linux. The agent layer for x8](https://github.com/Developing-Gamer/agent-sim) | mechanism | tech | no: It needs an Ubuntu x86-64 VM, an 8 GB Apple runtime download |  |
+| H-0759 | 2026-11-25 | hn | [Launch HN: Versine (YC F26) – MCP to send and receive money](https://news.ycombinator.com/item?id=50634426) | both | tools-for-strangers | no: It needs a Versine account, a funded wallet and a phone pass |  |
+| H-0758 | 2026-11-25 | vault | [seven-prompt path from empty chat to a shippable game](https://www.instagram.com/p/DgGDejhjjDA/) | mechanism | tools-for-strangers | no: No local LLM is installed and the seven prompts are on unsee |  |
 | H-0756 | 2026-11-23 | github | [hovocope135-tech/DSH-projects: 探索人与 AI 的最佳协作方式 · Exploring the best way for people and AI ](https://github.com/hovocope135-tech/DSH-projects) | mechanism | tools-for-strangers | no: It runs only inside DeepSeek Harness and needs a model API k |  |
 | H-0755 | 2026-11-23 | vault | [one niche one offer one channel for 3 months](https://www.youtube.com/watch?v=hv0G75NVVkQ) | mechanism | mechanism-hunting | no: It is a three-month operating rule, not something a 30 minut |  |
 | H-0754 | 2026-11-23 | youtube | [The Fastest And Slowest Depreciating Affordable Sports Cars - Q4 2025](https://www.youtube.com/watch?v=VhYMxY77Oi4) | mechanism | cars | no: The underlying listings dataset is not public, so the claim  |  |
-| H-0752 | 2026-11-23 | github | [JimLiu/open-artifact: Open, agent- and model-agnostic artifacts, all saved locally as plai](https://github.com/JimLiu/open-artifact) | mechanism | tools-for-strangers | yes | P-0551 |
+| H-0752 | 2026-11-23 | github | [JimLiu/open-artifact: Open, agent- and model-agnostic artifacts, all saved locally as plai](https://github.com/JimLiu/open-artifact) | mechanism | tools-for-strangers | yes | P-0551 **blocked** |
 | H-0751 | 2026-11-23 | vault | [exact amount, date and exchange goal-to-plan prompt pattern](https://www.instagram.com/p/Dfy7_zAmIJh/) | mechanism | mechanism-hunting | no: Judging the plan quality needs model answers, and there is n |  |
-| H-0747 | 2026-11-23 | github | [erkamyaman/safe-anything: Find the holes before someone else does. A fast, 100% Rust vulne](https://github.com/erkamyaman/safe-anything) | both | tools-for-strangers | yes | P-0550 |
-| H-0746 | 2026-11-23 | hn | [Show HN: Hermit CRM – Free open-source CRM for solopreneurs](https://hermitcrm.io/) | mechanism | tools-for-strangers | yes | P-0549 |
+| H-0747 | 2026-11-23 | github | [erkamyaman/safe-anything: Find the holes before someone else does. A fast, 100% Rust vulne](https://github.com/erkamyaman/safe-anything) | both | tools-for-strangers | yes | P-0550 **blocked** |
+| H-0746 | 2026-11-23 | hn | [Show HN: Hermit CRM – Free open-source CRM for solopreneurs](https://hermitcrm.io/) | mechanism | tools-for-strangers | yes | P-0549 **works** |
 | H-0745 | 2026-11-23 | vault | [spin-tax email variants and 3-step plain-text sequence](https://www.youtube.com/watch?v=hv0G75NVVkQ) | mechanism | tools-for-strangers | no: Measuring replies needs real sends to real prospects, which  |  |
 | H-0744 | 2026-11-22 | youtube | [the bonding curve, explained in 30 seconds](https://www.youtube.com/watch?v=YBVozFI3lnw) | mechanism | desk:grinder | yes | P-0537 **works** |
 | H-0743 | 2026-11-22 | github | [sybil-solutions/skill-distill: Distill a good Claude Code / Codex session into a skill an ](https://github.com/sybil-solutions/skill-distill) | mechanism | tools-for-strangers | yes | P-0536 **works** |
@@ -512,6 +524,147 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0771 Coding Adventure: Making a Better Chess Bot
+2026-11-25, youtube, https://www.youtube.com/watch?v=_vqlIPDR2TU
+
+- **Mechanism:** A match manager plays two versions of a chess engine against each other from random starting positions. Positions come from a month of the Lichess games database, taken from mid-game with many pieces left, then filtered by Stockfish to keep roughly equal ones. Each position is played from both sides, and engine changes such as iterative deepening are kept only if the match score improves.
+- **Claim:** A 1,000-game self-match of version 1 against version 1 ended 347 wins to 355, showing the test setup is fair before changing the engine.
+- **Testable:** no. It needs Stockfish, hundreds of megabytes of Lichess data and hours of games, none of which fit a keyless 30-minute pip-only run. Needs: Stockfish and a Lichess monthly game file.
+- **Idea on its own:** sound. Paired games from balanced positions with both colours is the standard, low-noise way to test an engine change.
+- **How it would be done:** Download one small month of the Lichess database, extract mid-game FENs with python-chess, filter by Stockfish evaluation near zero, then run the old and new bot over each position as both colours. Report wins, draws and losses with a confidence interval so a change is accepted only when it clears noise. This slots in front of the existing Lichess bot work.
+- **Stack already covers:** launchd long-running pollers
+- **To fetch:** python-chess https://github.com/niklasf/python-chess (Parse PGN and drive engines); Stockfish https://stockfishchess.org/download/ (Filter positions and act as a reference opponent); Lichess open database https://database.lichess.org/ (Source of random starting positions)
+- **Field Notes line:** A chess bot is improved by playing old against new from Stockfish-filtered equal positions, both colours, so the match result is the only judge.
+
+### H-0770 EL4CTEO/shrink-anything: Less code, same tests passing: delete the dead code, files, dependencies and assets in any code
+2026-11-25, github, https://github.com/EL4CTEO/shrink-anything
+
+- **Mechanism:** It finds candidate dead code, files, dependencies and assets by name-mention analysis (a name only mentioned in its own definition is dead), deletes them in a batch and runs the user's own test command. If the check fails, the batch is bisected until the breaking cut is found and restored, and tests must not fall in count. Edited files are parsed first, and ambiguous cases go to an agent.
+- **Claim:** Deletes dead code and keeps each cut only if your tests still pass; 46% fewer tokens to read on its demo app.
+- **Testable:** no. It needs npm install or cargo install of a Rust tool, which an unattended run will not build or run. Needs: npm or cargo and a project with tests.
+- **Idea on its own:** sound. Delete-then-test with bisection is a safe way to prune, though it is only as strong as the test suite.
+- **How it would be done:** Install it, run scan on a Proteus sub-project that has tests, then cut with that project's test command. Count lines removed, tests before and after and whether any removed item was actually used. The same loop could be written in about eighty lines of Python for sandbox scripts as a cheaper alternative.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** shrink-anything https://github.com/EL4CTEO/shrink-anything (The CLI to run on a repo with tests)
+- **Field Notes line:** Shrink-anything deletes dead code in batches and bisects on test failure, so only cuts your own tests accept survive.
+
+### H-0768 setup 3k+ plus 500 to 1k monthly pricing benchmark
+2026-11-25, vault, https://www.instagram.com/p/Df5Ec0nnew_/
+
+- **Mechanism:** A pricing structure for AI automation agencies: a one-off setup fee of about 3,000 dollars plus 500 to 1,000 dollars a month retainer for maintenance and changes. The setup covers building workflows and the retainer covers hosting, monitoring and tweaks. The figures are claims from a carousel with no sample of real contracts.
+- **Claim:** Charge 3k+ setup plus 500 to 1k monthly for AI automation work.
+- **Testable:** no. It is a pricing claim in US dollars with no data source Proteus can pull and run keyless.
+- **Idea on its own:** needs-a-run. Setup plus retainer is a common structure, but the numbers come from a promotional post and need market quotes to check.
+- **How it would be done:** To check the figures, collect public price pages from a dozen UK and US automation agencies and freelancer listings and tabulate setup versus monthly fees. Public sources only. Hiring a person who has sold such contracts would give the real close rates that no script covers.
+- **Missing:** Real contract prices from agencies that have actually sold these.
+- **Field Notes line:** An automation-agency carousel quotes a 3k setup plus 500 to 1k monthly retainer; it is a claim, not data.
+
+### H-0767 neoma-pcam/pcam-live (new in awesome-mcp-servers)
+2026-11-25, awesome, https://github.com/neoma-pcam/pcam-live
+
+- **Mechanism:** A public HTTP and MCP gateway that says each request drives a five-node analog hardware cluster and returns a measured settling time and voltage, sealed with a hardware signature. It returns 503 when hardware cannot measure. The claim is that physical measurements ground a model; the README itself says it does not verify the model's use of them. The telemetry endpoint is public and keyless.
+- **Claim:** Sub-0.03 ms physical reflex core with real analog hardware in the loop and a measured 0.011 ms solve latency.
+- **Testable:** yes. Does a keyless GET of the public telemetry endpoint return varying measured_us values, and is the reported latency consistent with the measured round-trip time? Queued as P-0564.
+- **Idea on its own:** needs-a-run. The claim is checkable from outside only in part: varying values and sane timing are necessary but cannot prove hardware.
+- **How it would be done:** Send ten read-only GETs to the telemetry endpoint spaced a few seconds apart, log measured_us, any seal field and my own round-trip time. Check the values vary, the seals change, and the claimed settle time is below the network round-trip as it must be. Do not call the solve endpoints. Verdict is plausible, static or fabricated looking, with the limit that hardware cannot be proven remotely.
+- **To fetch:** P-CAM live telemetry https://api.neoma-pcam.com/v1/telemetry (Public keyless endpoint to sample)
+- **Field Notes line:** A hobby API claims real analog hardware sits behind every answer; I will hit its public telemetry endpoint and see whether the numbers vary like measurements.
+
+### H-0765 pritamux/gridlines: An agent skill for alignment passes: draw guide lines down an interface, find every item that misses
+2026-11-25, github, https://github.com/pritamux/gridlines
+
+- **Mechanism:** A probe script injected into a page measures the ink edges of text, icons and controls, groups them into shared vertical lines, draws guides and lists every item off its line by pixels. A Playwright wrapper loads the page headless and saves a 2x capture plus a JSON report. The agent skill then edits the padding to fix each miss.
+- **Claim:** Draws guide lines down an interface, finds every item that misses its line, and fixes the padding; 234 stars.
+- **Testable:** no. It needs Playwright and Chromium via npm and a git clone, which an unattended run does not do. Needs: Node, Playwright and a Chromium download.
+- **Idea on its own:** sound. Measuring rendered edges and reporting numeric misses is a deterministic check an agent can act on.
+- **How it would be done:** Clone the repo, install Playwright, run the audit on the included sidebar example and check it reports the four planted misses. Then point it at one of the Proteus static pages and see whether the misses are real. The same probe could run as a pre-publish check on the docs site.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** gridlines https://github.com/pritamux/gridlines (Probe script and agent skill); Playwright https://playwright.dev (Headless Chromium for the audit script)
+- **Field Notes line:** Gridlines finds misaligned UI items by measuring ink edges and reporting pixel misses, then fixes the padding.
+
+### H-0764 Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage
+2026-11-25, hn, https://masondata.ai/
+
+- **Mechanism:** A Postgres-wire-compatible read replica that follows the primary and stores data columnar, answering analytic queries with DuckDB's engine. It claims to give both fresh data and fast scans, which they found pg_duckdb could not, and it avoids needing query shapes upfront like Materialize or Readyset. Comments ask what it adds over DuckDB plus ADBC attached to Postgres.
+- **Claim:** An open-source drop-in Postgres read replica on DuckDB's columnar engine, very fast for ad-hoc analytics.
+- **Testable:** no. It needs a running Postgres primary and a built or downloaded server, neither available keyless in a pip-only sandbox. Needs: A Postgres instance and the Mason server.
+- **Idea on its own:** needs-a-run. The design is credible, but freshness plus speed on ad-hoc queries is exactly the claim that needs benchmarking.
+- **How it would be done:** Stand up Postgres with a sample dataset, run Mason against it and time five analytic queries on the primary, on Mason and on plain DuckDB with the postgres scanner. Check lag by writing rows and polling for them on the replica. A person who runs databases would judge operational fit.
+- **To fetch:** Mason https://masondata.ai/ (The project page and repo link); DuckDB postgres scanner https://duckdb.org/docs/extensions/postgres (The baseline the comments compare against)
+- **Field Notes line:** Mason puts DuckDB behind a Postgres wire protocol as a read replica; the open question is what it adds over DuckDB attached to Postgres.
+
+### H-0763 comment-FABLE-for-the-guide funnel
+2026-11-25, vault, https://www.instagram.com/p/DgGDejhjjDA/
+
+- **Mechanism:** A comment-to-DM funnel: a post asks viewers to comment a keyword, a bot or automation tool detects the comment and sends a DM with the guide link, usually collecting an email on the way. The platform sees a burst of identical keyword comments and automated DMs. Platforms detect it through DM rate limits, repeated templated messages and the approved-partner API rules for messaging.
+- **Claim:** Comment a keyword on the post to receive the prompt guide.
+- **Testable:** no. Understand-only vault thread; running it means operating the automation on a live platform.
+- **Idea on its own:** sound. The mechanism works as lead capture, and platforms treat the official messaging API as the permitted route.
+- **How it would be done:** Understand it only. The parts are a comment webhook or poller, a keyword match, a templated DM through the platform's official messaging API, and an email capture page. Detection signals are volume per account, identical text and the DM-after-comment timing. Nothing here should be operated.
+- **Field Notes line:** The comment-a-keyword funnel is a trigger bot that DMs a link; platforms catch it through message rate limits and templated-DM patterns.
+
+### H-0762 luca-network/spr (new in awesome-mcp-servers)
+2026-11-25, awesome, https://github.com/luca-network/spr
+
+- **Mechanism:** An agent calls record_intent before paying (purpose, spend cap, expiry), check_payment against that declaration, then record_settlement afterwards. Each record is sealed with the company's own key locally, so anyone can verify the seals without trusting a service. For x402 payments the payer signs a fingerprint of the sealed intent as the on-chain nonce, tying the payment to its declaration.
+- **Claim:** Open, Apache-2.0 format and SDKs for sealed accounting records of AI agent payments, verifiable by anyone.
+- **Testable:** yes. Does the Python spr-sdk from PyPI seal a record that verifies, and does editing one byte of the sealed file make verification fail? Queued as P-0563.
+- **Idea on its own:** sound. Signed intent before spend plus signed settlement is a simple, verifiable audit trail for agent payments.
+- **How it would be done:** Pip install the Python SDK into the sandbox venv, create a book in a temp folder, record an intent and a settlement, then run the verifier. Flip one byte in a record and run it again. Compare the record fields to SPEC.md. If the PyPI package name does not resolve, the verdict is blocked, since the JavaScript path needs npx.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** spr https://github.com/luca-network/spr (Spec, test vectors and Python SDK)
+- **Field Notes line:** SPR seals an agent's payment intent and settlement with the owner's key so an auditor can verify them; I will tamper one byte and see.
+
+### H-0761 The 10-Year-Old Cars That Fail Their MOT Least (and the 5 That Fail Most)
+2026-11-25, youtube, https://www.youtube.com/watch?v=uxUVGL8t2us
+
+- **Mechanism:** The DVSA publishes a record of every MOT test in Great Britain. A research site groups first-attempt results by make and model for cars first used in 2015, keeps models with at least 2,500 tests and excludes vans, then ranks failure rates. A second analysis is used as a cross-check and agrees within half a point.
+- **Claim:** At age 10, cars range from about 1 in 7 to over 4 in 10 failing first time; the Mini fails 18%, the Citroen C4 38.8%, against about 30% overall.
+- **Testable:** yes. Does the public DVSA MOT results data, filtered to first-use 2015 cars with 2,500+ tests, reproduce a Golf first-time failure rate within one point of 17.9%? Queued as P-0562.
+- **Idea on its own:** sound. Group-by on a complete public test register with a minimum sample size is a sound, checkable method.
+- **How it would be done:** Download the DVSA open MOT results file for one year from data.gov.uk, filter to tests of first-use year 2015 and first-attempt tests, group by make and model and keep groups of 2,500 or more. Compute the fail rate and compare with the video's list. The same table could feed a used-car lookup page. If the bulk file is unreachable keyless, the verdict is blocked.
+- **Stack already covers:** a keyless YouTube search, oEmbed and transcript pipeline
+- **To fetch:** DVSA MOT testing data https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b3b/anonymised-mot-tests-and-results (The open test-level results the video's numbers come from)
+- **Field Notes line:** A video ranks 10-year-old cars by MOT failure from the DVSA's public test record; the Golf at 17.9% is a number anyone can recheck.
+
+### H-0760 Developing-Gamer/agent-sim: iOS simulators for AI agents, on Linux. The agent layer for x86Sim.
+2026-11-25, github, https://github.com/Developing-Gamer/agent-sim
+
+- **Mechanism:** x86Sim runs Apple's iOS simulator runtime on an x86-64 Linux VM; agent-sim wraps it in a Rust CLI and MCP server. It reads the accessibility tree as text with element refs (@e1), and tap, type, scroll and swipe actions return the next screen, so an agent can drive apps without pixels. Setup downloads Apple's 8 GB iOS runtime.
+- **Claim:** iOS simulators for AI agents on ordinary Linux machines, no Mac, with 575 stars and a snapshot-as-text interface.
+- **Testable:** no. It needs an Ubuntu x86-64 VM, an 8 GB Apple runtime download and a curl-pipe-bash or cargo build, and this Mac is not Linux. Needs: An x86-64 Ubuntu 24.04 VM with 16 GB RAM and 60 GB disk.
+- **Idea on its own:** needs-a-run. Text snapshots of the accessibility tree are a good agent interface, but running Apple's runtime on Linux has licensing and stability doubts.
+- **How it would be done:** Install the CLI on a Linux VM, run setup to fetch x86Sim and the iOS runtime, then register the MCP server over SSH from this Mac. Test by installing a simple .ipa and checking that snapshot lists the elements the app declares. The copy of Apple's runtime on non-Apple hardware is the part to read the licence on. The same text-snapshot idea can be copied on a Mac using the Xcode simulator's accessibility APIs.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** agent-sim https://github.com/Developing-Gamer/agent-sim (The CLI and MCP server); x86Sim https://github.com/x86sim/x86sim (The simulator layer underneath)
+- **Missing:** An x86-64 Linux VM to run it on.
+- **Field Notes line:** Agent-sim exposes an iOS simulator to agents as an accessibility tree in text, so tapping @e2 replaces screenshots and a Mac.
+
+### H-0759 Launch HN: Versine (YC F26) – MCP to send and receive money
+2026-11-25, hn, https://news.ycombinator.com/item?id=50634426
+
+- **Mechanism:** An MCP server sits in front of a custodial wallet holding a balance. The agent calls tools to send or request money; each send needs a passkey approval in the company's app unless the payee is on a trusted-contact list, which allows approval-free payment. Recipients without an account get a claim link and cash out to their bank, so the firm runs the ledger and payout rails.
+- **Claim:** Send and request money to up to 100 people through your AI agent via MCP, with passkey approval or trusted-contact auto-pay.
+- **Testable:** no. It needs a Versine account, a funded wallet and a phone passkey, none of which are keyless. Needs: A Versine account, wallet funds and a passkey device.
+- **Idea on its own:** sound. A permissioned wallet with human approval and an allow-list for autopay is the standard safe shape for agent payments.
+- **How it would be done:** The pattern is an MCP tool layer over a ledger: tools for balance, send, request and split, a policy engine that decides auto-approve versus passkey challenge, and a payout partner for non-users. Reproducing it needs a licensed money-movement provider, so the build is the policy and approval layer on a sandbox of a payment API. A hired compliance person would cover the licensing no script covers. Read the tool schema first to see how split amounts and approval limits are expressed.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** Versine https://versine.com (Read the published MCP tool list and approval policy)
+- **Missing:** A licensed money-movement and payout provider.
+- **Field Notes line:** Versine is an MCP wallet where agents move money; the design choice to watch is the trusted-contact list that skips passkey approval.
+
+### H-0758 seven-prompt path from empty chat to a shippable game
+2026-11-25, vault, https://www.instagram.com/p/DgGDejhjjDA/
+
+- **Mechanism:** A staged prompt ladder: an LLM is given seven sequential prompts (concept, rules, data model, core loop, UI, balance, polish) so each reply becomes the context for the next, ending in a runnable browser game. The moving parts are the model, a single-file HTML/JS target and a human who plays each build and feeds back what broke. The slides themselves are unseen, so the actual seven prompts are unknown.
+- **Claim:** Seven prompts take you from an empty chat to a shippable dragon game.
+- **Testable:** no. No local LLM is installed and the seven prompts are on unseen slides, so nothing can be run keyless tonight. Needs: The slide text, and a model to answer the prompts.
+- **Idea on its own:** needs-a-run. Staged prompting to a single-file game is plausible and well known, but whether seven prompts reach shippable is only answered by running them.
+- **How it would be done:** Get the slide text (screenshots read by a vision model or the carousel images saved by hand). Run each prompt in order in Claude Code with a single index.html target, playing the build after each step. Log which prompt first produces a broken build and how many fix turns each stage needed. Compare against the 5 Nov 24-hour game link before deciding on a game lane. A person is needed only to play and judge fun, which no script covers.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills)
+- **Missing:** The seven prompts themselves, and a human playtester.
+- **Field Notes line:** A seven-prompt ladder from empty chat to a playable browser game: the idea is staged context, but the actual prompts are still unseen.
 
 ### H-0756 hovocope135-tech/DSH-projects: 探索人与 AI 的最佳协作方式 · Exploring the best way for people and AI to work together. DSH-projects
 2026-11-23, github, https://github.com/hovocope135-tech/DSH-projects
@@ -6414,6 +6567,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0768 | 2026-11-25 | setup 3k+ plus 500 to 1k monthly pricing benchmark | intel | needs-a-run | no |  |
+| H-0763 | 2026-11-25 | comment-FABLE-for-the-guide funnel | intel | sound | no |  |
+| H-0758 | 2026-11-25 | seven-prompt path from empty chat to a shippable game | open | needs-a-run | no |  |
 | H-0755 | 2026-11-23 | one niche one offer one channel for 3 months | open | sound | no |  |
 | H-0751 | 2026-11-23 | exact amount, date and exchange goal-to-plan prompt pattern | open | sound | no |  |
 | H-0745 | 2026-11-23 | spin-tax email variants and 3-step plain-text sequence | open | needs-a-run | no |  |
@@ -6578,6 +6734,18 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0448 | 2026-11-25 | [Lichess open database](https://database.lichess.org/) | Source of random starting positions | H-0771 (Coding Adventure: Making a Better Chess Bot) | shelf |
+| T-0447 | 2026-11-25 | [Stockfish](https://stockfishchess.org/download/) | Filter positions and act as a reference opponent | H-0771 (Coding Adventure: Making a Better Chess Bot) | shelf |
+| T-0446 | 2026-11-25 | [shrink-anything](https://github.com/EL4CTEO/shrink-anything) | The CLI to run on a repo with tests | H-0770 (EL4CTEO/shrink-anything: Less code, same tests pas) | shelf |
+| T-0445 | 2026-11-25 | [P-CAM live telemetry](https://api.neoma-pcam.com/v1/telemetry) | Public keyless endpoint to sample | H-0767 (neoma-pcam/pcam-live (new in awesome-mcp-servers)) | shelf |
+| T-0444 | 2026-11-25 | [gridlines](https://github.com/pritamux/gridlines) | Probe script and agent skill | H-0765 (pritamux/gridlines: An agent skill for alignment p) | shelf |
+| T-0443 | 2026-11-25 | [DuckDB postgres scanner](https://duckdb.org/docs/extensions/postgres) | The baseline the comments compare against | H-0764 (Show HN: Mason – A lightweight Postgres read-repli) | shelf |
+| T-0442 | 2026-11-25 | [Mason](https://masondata.ai/) | The project page and repo link | H-0764 (Show HN: Mason – A lightweight Postgres read-repli) | shelf |
+| T-0441 | 2026-11-25 | [spr](https://github.com/luca-network/spr) | Spec, test vectors and Python SDK | H-0762 (luca-network/spr (new in awesome-mcp-servers)) | shelf |
+| T-0440 | 2026-11-25 | [DVSA MOT testing data](https://www.data.gov.uk/dataset/e3939ef8-30c7-4ca8-9c7c-ad9475fc9b3b/anonymised-mot-tests-and-results) | The open test-level results the video's numbers come from | H-0761 (The 10-Year-Old Cars That Fail Their MOT Least (an) | shelf |
+| T-0439 | 2026-11-25 | [x86Sim](https://github.com/x86sim/x86sim) | The simulator layer underneath | H-0760 (Developing-Gamer/agent-sim: iOS simulators for AI ) | shelf |
+| T-0438 | 2026-11-25 | [agent-sim](https://github.com/Developing-Gamer/agent-sim) | The CLI and MCP server | H-0760 (Developing-Gamer/agent-sim: iOS simulators for AI ) | shelf |
+| T-0437 | 2026-11-25 | [Versine](https://versine.com) | Read the published MCP tool list and approval policy | H-0759 (Launch HN: Versine (YC F26) – MCP to send and rece) | shelf |
 | T-0436 | 2026-11-23 | [screenpipe](https://github.com/mediar-ai/screenpipe) | Local screen and activity capture the plugin builds its timeline on. | H-0756 (hovocope135-tech/DSH-projects: 探索人与 AI 的最佳协作方式 · E) | shelf |
 | T-0435 | 2026-11-23 | [open-artifact](https://github.com/JimLiu/open-artifact) | The daemon and skill to install and run locally. | H-0752 (JimLiu/open-artifact: Open, agent- and model-agnos) | shelf |
 | T-0434 | 2026-11-23 | [safe-anything](https://github.com/erkamyaman/safe-anything) | The scanner binary, run with --offline on our own folder. | H-0747 (erkamyaman/safe-anything: Find the holes before so) | shelf |
@@ -7019,6 +7187,8 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0769 | 2026-11-25 | hn | [Anthropic and OpenAI employees fear unreleased AI models too unsafe to release](https://tech.yahoo.com/ai/claude/articles/scoop-anthropic-openai-employees-fear-104505580.html) | Anonymous-source news story about model safety debates, no mechanism to record or run. |
+| H-0766 | 2026-11-25 | youtube | [Failed your MOT? Can you drive it, the free retest, and what the repair costs](https://www.youtube.com/watch?v=HewpPDuJ4KI) | Consumer advice on retest rules and repair prices with no mechanism, and the MOT data video above covers the data angle. |
 | H-0757 | 2026-11-23 | youtube | [Mid-Engine Cars Ranked: Depreciation Traps vs Smart Buys (2025)](https://www.youtube.com/watch?v=vF7tAj8Z8ek) | Same channel and method as the other depreciation video; kept the Q4 one as the better record. |
 | H-0753 | 2026-11-23 | arxiv | [Can Language Models See the Circuit in Pixelated RFIC Passives?](https://arxiv.org/abs/2611.27559) | RFIC chip layout debugging with a frontier model; no part of the stack applies and nothing is runnable. |
 | H-0750 | 2026-11-23 | awesome | [taddeimania/lathe (new in awesome-mcp-servers)](https://github.com/taddeimania/lathe) | A C++ DAW with an assistant bolted on; the README gives no mechanism for the MCP side that we could use. |

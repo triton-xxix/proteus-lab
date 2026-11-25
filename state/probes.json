@@ -1,5 +1,5 @@
 {
- "next_id": 561,
+ "next_id": 565,
  "items": [
   {
    "id": "P-0001",
@@ -14292,6 +14292,86 @@
     "at": "2026-11-24T12:43:50+0000",
     "hit": true
    }
+  },
+  {
+   "id": "P-0561",
+   "title": "Bias-correct then pool the Munich ICON-EPS and ECMWF 10 to 90 bands (arXiv 2610.42130's order: calibrate each source, blend, recalibrate): on the scored days in exchange/icon_eps_band.jsonl and ecmwf_ens_band.jsonl, leave-one-out shift each band by its own past mean miss, take the union or mean of the shifted bands, and count days inside against 80%",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0562",
+   "title": "DVSA MOT open data: does it reproduce the Golf at 17.9% first-time fail for 10-year-old cars?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 30,
+   "added": "2026-11-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0563",
+   "title": "spr-sdk (PyPI): does a sealed payment record verify, and fail verification after a one-byte edit?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0564",
+   "title": "NEOMA P-CAM telemetry: do repeated public GETs return varying measured_us consistent with the 0.011 ms claim?",
+   "source": "harvest",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-25",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
   }
  ]
 }
