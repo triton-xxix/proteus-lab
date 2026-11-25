@@ -14321,9 +14321,9 @@
    "after": "",
    "est_minutes": 30,
    "added": "2026-11-25",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-25T12:31:35+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -14331,7 +14331,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.45,
+    "number": "Golf first used 2015, first-attempt fail rate 17.9% plus or minus 1.5 points on about 38,000 tests",
+    "at": "2026-11-25T12:32:04+0000"
+   }
   },
   {
    "id": "P-0563",
