@@ -1,5 +1,5 @@
 {
- "next_id": 575,
+ "next_id": 576,
  "items": [
   {
    "id": "P-0001",
@@ -14630,6 +14630,28 @@
    "artefacts": [],
    "minutes": null,
    "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0575",
+   "title": "AIFS and GEFS Munich band capture: script appending tomorrow's 10 to 90 high band from ecmwf_aifs025 and ncep_gefs_seamless to a jsonl, run once, with a 20-day scoring row",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-26T23:36:48+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-26T23:37:37+0000",
+   "note": "Open-Meteo keeps AIFS and GEFS ensemble runs only from 23 Nov, so no past-only fit; built a forward capture instead, wired into the nightly with D-036 at 20 days. First rows for 27 Nov: AIFS p10 -1.40 p90 0.11, GEFS -0.90 to 0.11, both colder than ICON-EPS (-0.22 to 0.40), which already runs cold.",
+   "artefacts": [
+    "experiments/2026-11-26-P-0575"
+   ],
+   "minutes": 0,
+   "calls": 12,
    "denied": [],
    "luke": false
   }
