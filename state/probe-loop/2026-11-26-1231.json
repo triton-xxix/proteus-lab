@@ -13,7 +13,7 @@
   "P-0570",
   "P-0571"
  ],
- "stopped_at": null,
- "stop_reason": null,
- "refills": 2
+ "stopped_at": "2026-11-26T12:49:05+0000",
+ "stop_reason": "nothing runnable: 6 need something I do not have (P-0025: vim and neovim binaries (brew install if not already present, no accounts); P-0045: A small free model download from Hugging Face; Apple silicon; P-0212: Node.js 26 per the README, which may need installing; P-0356: An OpenAI key for the image-generation step; the packing and checking step needs nothing.; P-0357: Node and an npm install from the public registry; no key.; P-0378: Training needs a Tinker account and spend; only the offline data-prep half is testable keyless.); 9 wait on a date (P-0427 after 2026-12-01; P-0435 after 2026-12-08; P-0458 after 2026-11-28; P-0460 after 2026-12-10; P-0463 after 2027-01-15; P-0486 after 2026-12-01; P-0558 after 2026-11-27; P-0569 after 2026-11-28; P-0572 after 2026-11-27); no refill: 14 min left, under the 15 needed for a refill",
+ "refills": 3
 }
