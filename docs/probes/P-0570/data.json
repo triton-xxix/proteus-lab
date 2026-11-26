@@ -1,0 +1,135 @@
+{
+ "built_from": [
+  "experiments/2026-11-23-P-0546/results.json",
+  "experiments/2026-11-23-P-0547/results.json",
+  "experiments/2026-11-24-P-0559/results.json",
+  "experiments/2026-11-24-P-0560/results.json",
+  "experiments/2026-11-26-P-0570/results.json",
+  "PROBES.md"
+ ],
+ "clips": 600,
+ "seeds": 50,
+ "features": 44,
+ "clip": {
+  "median": 0.18,
+  "p5": 0.1623,
+  "p95": 0.1933,
+  "min": 0.1533,
+  "max": 0.195,
+  "mean": 0.1782,
+  "sd": 0.0095
+ },
+ "speaker": {
+  "median": 0.1812,
+  "p5": 0.1607,
+  "p95": 0.2011,
+  "min": 0.1509,
+  "max": 0.2036,
+  "mean": 0.1805,
+  "sd": 0.0124
+ },
+ "p0547": 0.16,
+ "sear": 0.1765,
+ "p0547_rank": 6,
+ "sear_rank_clip": 36,
+ "sear_rank_speaker": 38,
+ "clip_swing_pts": 4.2,
+ "codec_mean": 0.3752,
+ "codec_lo": 0.2789,
+ "codec_hi": 0.4745,
+ "codecs": [
+  "alaw",
+  "g722",
+  "gsm",
+  "opus",
+  "pstn",
+  "ulaw"
+ ],
+ "chain": [
+  {
+   "id": "P-0546",
+   "day": "23 Nov",
+   "what": "first try, 200 clips, one split",
+   "eer": 0.14,
+   "lo": null,
+   "hi": null,
+   "band": "one split"
+  },
+  {
+   "id": "P-0547",
+   "day": "23 Nov",
+   "what": "600 clips, one split (seed 23)",
+   "eer": 0.16,
+   "lo": 0.1317,
+   "hi": 0.1933,
+   "band": "95% bootstrap"
+  },
+  {
+   "id": "P-0559",
+   "day": "24 Nov",
+   "what": "same clips, 5 clip splits",
+   "eer": 0.1772,
+   "lo": 0.1728,
+   "hi": 0.1913,
+   "band": "mean, min to max"
+  },
+  {
+   "id": "P-0559",
+   "day": "24 Nov",
+   "what": "same clips, 5 speaker splits",
+   "eer": 0.1849,
+   "lo": 0.1715,
+   "hi": 0.1977,
+   "band": "mean, min to max"
+  },
+  {
+   "id": "P-0570",
+   "day": "26 Nov",
+   "what": "same clips, 50 clip splits",
+   "eer": 0.18,
+   "lo": 0.1623,
+   "hi": 0.1933,
+   "band": "median, 5th to 95th"
+  },
+  {
+   "id": "P-0570",
+   "day": "26 Nov",
+   "what": "same clips, 50 speaker splits",
+   "eer": 0.1812,
+   "lo": 0.1607,
+   "hi": 0.2011,
+   "band": "median, 5th to 95th"
+  },
+  {
+   "id": "P-0560",
+   "day": "24 Nov",
+   "what": "2021 LA phone codecs, 300 clips, 5 speaker splits",
+   "eer": 0.3752,
+   "lo": 0.2789,
+   "hi": 0.4745,
+   "band": "mean, min to max"
+  }
+ ],
+ "shots": {
+  "P-0547": [
+   "17",
+   "25"
+  ],
+  "P-0559": [
+   "18",
+   "hit"
+  ],
+  "P-0560": [
+   "30",
+   "hit",
+   "7.5"
+  ],
+  "P-0570": [
+   "17.8",
+   "16",
+   "19.5",
+   "hit"
+  ]
+ },
+ "seconds": 62
+}
