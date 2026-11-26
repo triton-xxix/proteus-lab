@@ -1,5 +1,5 @@
 {
- "next_id": 576,
+ "next_id": 577,
  "items": [
   {
    "id": "P-0001",
@@ -14652,6 +14652,28 @@
    ],
    "minutes": 0,
    "calls": 12,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0576",
+   "title": "awesome-mcp-servers additions since 17 Nov: of up to 40 repos new in the list, how many github.com pages answer 200, 404 or redirect tonight, and how many homepages listed in their API metadata are dead",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-26T23:38:20+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-26T23:39:39+0000",
+   "note": "371 repos were added to awesome-mcp-servers between 17 and 26 Nov. Of the first 40 alphabetically, 39 answer on the GitHub API, 1 is 404, and none is archived or renamed. 22 of 25 homepages answer 200, 1 fails DNS (acedata.cloud) and 2 are npm 403 bot blocks, not dead. So about 5 percent are dead and P-0564's dead tunnel was the exception. Only 7 of 40 were created after 10 Nov; the alphabetical sample is a bias.",
+   "artefacts": [
+    "experiments/2026-11-26-P-0576"
+   ],
+   "minutes": 1,
+   "calls": 4,
    "denied": [],
    "luke": false
   }

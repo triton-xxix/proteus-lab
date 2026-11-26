@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 469 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 470 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (16 open)
 
@@ -30,10 +30,11 @@ Verdicts so far: 469 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0572 | Mayhem age cut, leg two: after 14:14Z 27 Nov read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z, and the age cut to the minute | desk | none | 2026-11-27 | 0 | 15 min |
 | P-0574 | Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-27 | 0 | 15 min |
 
-## Verdicts (554)
+## Verdicts (555)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-26 | P-0576 | awesome-mcp-servers additions since 17 Nov: of up to 40 repos new in the list, how many github.com pages answer 200, 404 or redirect tonight, and how many homepages listed in their API metadata are dead | **works** | 371 repos were added to awesome-mcp-servers between 17 and 26 Nov. Of the first 40 alphabetically, 39 answer on the GitHub API, 1 is 404, and none is archived or renamed. 22 of 25 homepages answer 200, 1 fails DNS (acedata.cloud) and 2 are npm 403 bot blocks, not dead. So about 5 percent are dead and P-0564's dead tunnel was the exception. Only 7 of 40 were created after 10 Nov; the alphabetical sample is a bias. | `experiments/2026-11-26-P-0576` | 1 min, 4 calls, 0 denied |
 | 2026-11-26 | P-0575 | AIFS and GEFS Munich band capture: script appending tomorrow's 10 to 90 high band from ecmwf_aifs025 and ncep_gefs_seamless to a jsonl, run once, with a 20-day scoring row | **works** | Open-Meteo keeps AIFS and GEFS ensemble runs only from 23 Nov, so no past-only fit; built a forward capture instead, wired into the nightly with D-036 at 20 days. First rows for 27 Nov: AIFS p10 -1.40 p90 0.11, GEFS -0.90 to 0.11, both colder than ICON-EPS (-0.22 to 0.40), which already runs cold. | `experiments/2026-11-26-P-0575` | 0 min, 12 calls, 0 denied |
 | 2026-11-26 | P-0573 | Yahoo 5-minute bar revisions, leg one: pull v8 chart range=60d interval=5m for the 12 symbols in edges/scan/scan.py and save the raw JSON under one experiment folder with the pull time; pre-register a leg-two diff 24 h later (bars changed in the last five sessions v older than a week) | **works** | Pulled 12 of 12 symbols raw, 4,681 bars each (60 sessions, 2 Sep to 25 Nov). Every symbol has the same 80-minute null hole on 5 Nov 17:15 to 18:30Z (16 bars), plus 3 nulls of its own, so every scan ladder using 5 Nov ran short there. Leg two queued as P-0574 after 27 Nov. | `experiments/2026-11-26-P-0573` | 1 min, 12 calls, 0 denied |
 | 2026-11-26 | P-0571 | Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min before a :04) to a cohort file with birth times, and pre-register the cut each candidate (24.25, 24.33, 24.40 h) predicts per mint; leg two after 24.5 h reads the burns with P-0545 sweep.py | **works** | Measured 20 of 22 dated mints discriminate in the 12:46Z cohort (12 split 24.25 v 24.33 h, 8 split 24.33 v 24.40 h); shot was about 3 of 20, a miss on the number. First run at 12:37Z: 0 of 15, because the wallet history reaches back only 4 to 18 min of births, so a straddling cohort must be pulled at about HH:46. Slots pre-registered for 13:04Z and 14:04Z 27 Nov. Next: deepen (leg two P-0572 reads the burns after 14:14Z 27 Nov). | `experiments/2026-11-26-P-0571` | 11 min, 13 calls, 1 denied |
