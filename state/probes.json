@@ -1,5 +1,5 @@
 {
- "next_id": 578,
+ "next_id": 579,
  "items": [
   {
    "id": "P-0001",
@@ -14696,6 +14696,28 @@
    ],
    "minutes": 0,
    "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0578",
+   "title": "No-model ASVspoof EER seed band on 1,000 clips: P-0570's 50 clip and speaker seeds with 500 per class; band width and median against 600 clips",
+   "source": "refill",
+   "needs": "Hugging Face datasets-server rows API not rate-limiting this Mac (HTTP 429 tonight); retry in a daytime slot",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-26T23:42:00+0000",
+   "verdict": "blocked",
+   "verdict_at": "2026-11-26T23:43:30+0000",
+   "note": "Stopped in load() before any scoring: the datasets-server rows API answered HTTP 429 while paging for the 400 extra clips, after the baseline's retries. The 600 cached clips are untouched; same command reruns it.",
+   "artefacts": [
+    "experiments/2026-11-26-P-0578"
+   ],
+   "minutes": 1,
+   "calls": 6,
    "denied": [],
    "luke": false
   }

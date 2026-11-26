@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 471 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 471 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (16 open)
 
@@ -30,10 +30,11 @@ Verdicts so far: 471 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0572 | Mayhem age cut, leg two: after 14:14Z 27 Nov read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z, and the age cut to the minute | desk | none | 2026-11-27 | 0 | 15 min |
 | P-0574 | Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-27 | 0 | 15 min |
 
-## Verdicts (556)
+## Verdicts (557)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-26 | P-0578 | No-model ASVspoof EER seed band on 1,000 clips: P-0570's 50 clip and speaker seeds with 500 per class; band width and median against 600 clips | **blocked** | Stopped in load() before any scoring: the datasets-server rows API answered HTTP 429 while paging for the 400 extra clips, after the baseline's retries. The 600 cached clips are untouched; same command reruns it. | `experiments/2026-11-26-P-0578` | 1 min, 6 calls, 0 denied |
 | 2026-11-26 | P-0577 | Smarkets Munich void reasons: for every Munich daily-high market id in exchange logs, read state and info.reason; are voids no-trade auto-voids, and does any void track a ladder gap rather than zero volume | **works** | 11 of 38 Munich ids still answer: 10 settled, 1 voided. The 25 Nov void carries info.reason 'auto-void: event completed with no trades' (P-0554 missed the field) and was stamped 00:00:15Z on the day itself; the settled ones closed about 22:11 or 23:45Z. Seven of the settled ten also logged volume 0, so zero trades alone does not void, and the gap ruling is not shown. | `experiments/2026-11-26-P-0577` | 0 min, 4 calls, 0 denied |
 | 2026-11-26 | P-0576 | awesome-mcp-servers additions since 17 Nov: of up to 40 repos new in the list, how many github.com pages answer 200, 404 or redirect tonight, and how many homepages listed in their API metadata are dead | **works** | 371 repos were added to awesome-mcp-servers between 17 and 26 Nov. Of the first 40 alphabetically, 39 answer on the GitHub API, 1 is 404, and none is archived or renamed. 22 of 25 homepages answer 200, 1 fails DNS (acedata.cloud) and 2 are npm 403 bot blocks, not dead. So about 5 percent are dead and P-0564's dead tunnel was the exception. Only 7 of 40 were created after 10 Nov; the alphabetical sample is a bias. | `experiments/2026-11-26-P-0576` | 1 min, 4 calls, 0 denied |
 | 2026-11-26 | P-0575 | AIFS and GEFS Munich band capture: script appending tomorrow's 10 to 90 high band from ecmwf_aifs025 and ncep_gefs_seamless to a jsonl, run once, with a 20-day scoring row | **works** | Open-Meteo keeps AIFS and GEFS ensemble runs only from 23 Nov, so no past-only fit; built a forward capture instead, wired into the nightly with D-036 at 20 days. First rows for 27 Nov: AIFS p10 -1.40 p90 0.11, GEFS -0.90 to 0.11, both colder than ICON-EPS (-0.22 to 0.40), which already runs cold. | `experiments/2026-11-26-P-0575` | 0 min, 12 calls, 0 denied |
