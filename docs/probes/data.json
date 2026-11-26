@@ -1,45 +1,45 @@
 {
  "summary": {
-  "n": 540,
+  "n": 549,
   "by_verdict": {
-   "works": 457,
+   "works": 464,
    "not-worth-it": 23,
-   "blocked": 48,
-   "broken": 12
+   "blocked": 49,
+   "broken": 13
   },
-  "open": 19,
+  "open": 14,
   "killed": 5,
-  "minutes_total": 893,
+  "minutes_total": 933,
   "minutes_median": 1,
-  "calls_total": 5687,
+  "calls_total": 5794,
   "pages": 11,
   "first": "2026-09-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 234,
-   "works": 220,
+   "n": 238,
+   "works": 224,
    "not-worth-it": 3,
    "blocked": 7,
    "broken": 4
   },
   {
    "source": "desk",
-   "n": 123,
-   "works": 101,
+   "n": 125,
+   "works": 103,
    "not-worth-it": 9,
    "blocked": 12,
    "broken": 1
   },
   {
    "source": "harvest",
-   "n": 114,
-   "works": 85,
+   "n": 117,
+   "works": 86,
    "not-worth-it": 4,
-   "blocked": 18,
-   "broken": 7
+   "blocked": 19,
+   "broken": 8
   },
   {
    "source": "vault",
@@ -140,10 +140,10 @@
   },
   {
    "week": "2026-11-23",
-   "works": 10,
+   "works": 17,
    "not-worth-it": 0,
-   "blocked": 4,
-   "broken": 2
+   "blocked": 5,
+   "broken": 3
   }
  ],
  "rows": [
@@ -8238,6 +8238,127 @@
     "p": 0.55,
     "hit": 1
    }
+  },
+  {
+   "id": "P-0562",
+   "title": "DVSA MOT open data: does it reproduce the Golf at 17.9% first-time fail for 10-year-old cars?",
+   "source": "harvest",
+   "verdict": "blocked",
+   "at": "2026-11-25T13:03:30+0000",
+   "minutes": 31,
+   "calls": 27,
+   "note": "Cannot reproduce the 17.9% claim: public bulk data ends at 2023. Analogue measured instead (2013 cars at age 10, tested 2023): Golf 22.80% first-attempt fail on 55,784 tests (shot was 17.9 +/- 1.5 on ~38,000 for the 2015 cohort, a miss), all cars 31.71% on 2.14m (video says about 3 in 10, agrees). Golf ranks 24 of 155…",
+   "artefact": "experiments/2026-11-25-P-0562",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.45,
+    "hit": 0
+   }
+  },
+  {
+   "id": "P-0563",
+   "title": "spr-sdk (PyPI): does a sealed payment record verify, and fail verification after a one-byte edit?",
+   "source": "harvest",
+   "verdict": "works",
+   "at": "2026-11-25T23:30:02+0000",
+   "minutes": 1,
+   "calls": 14,
+   "note": "spr-sdk 0.2.0: 80 of 80 shipped vectors pass; a local book sealed 3 payments that verify at expected-key trust; 0 of 200 seeded one-byte edits to records.jsonl verified (156 clean failures, 44 raised JSONDecodeError instead of returning a failure), and amount_minor plus one fails on both the manifest hash and the payl…",
+   "artefact": "experiments/2026-11-25-P-0563",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0564",
+   "title": "NEOMA P-CAM telemetry: do repeated public GETs return varying measured_us consistent with the 0.011 ms claim?",
+   "source": "harvest",
+   "verdict": "broken",
+   "at": "2026-11-25T23:34:29+0000",
+   "minutes": 4,
+   "calls": 7,
+   "note": "36 of 36 GETs to api.neoma-pcam.com (telemetry, docs) and bio.neoma-pcam.com over 4 minutes returned HTTP 530 Cloudflare 1033 (tunnel connector offline), and the linked GitHub Pages site is 404; no measured_us came back, so the 0.011 ms claim cannot be tested.",
+   "artefact": "experiments/2026-11-25-P-0564",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0483",
+   "title": "ONAA store block recheck: re-run experiments/2026-11-18-P-0482/paths.py; are the six store and buying paths still 404 a week on?",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-25T23:36:12+0000",
+   "minutes": 1,
+   "calls": 10,
+   "note": "All seven of last week's 404s (six store and buying paths, issuer JWKS) still 404, but the spec dropped from 84 to 78 paths under the same 0.1.0 version: the store and buying paths were removed from it and /v1/market/ranges and /v1/market/rules (401 keyless) added, so the store block reads as withdrawn, not broken; 0…",
+   "artefact": "experiments/2026-11-25-P-0483",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0561",
+   "title": "Bias-correct then pool the Munich ICON-EPS and ECMWF 10 to 90 bands (arXiv 2610.42130's order: calibrate each source, blend, recalibrate): on the scored days in exchange…",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-25T23:37:22+0000",
+   "minutes": 1,
+   "calls": 12,
+   "note": "On 19 past-only days the union of the ICON-EPS and ECMWF bands, each shifted by its own past mean miss, held 15 inside (79%) at 2.17C wide (leave-one-out 19 of 24, 79%), against raw ICON 53% and raw ECMWF 37%; shifting alone reached only 58 to 63%, and blend-then-recalibrate needed 2.8C for the same coverage. Forward…",
+   "artefact": "experiments/2026-11-25-P-0561",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0565",
+   "title": "Munich straddle ladders settled: for the 23 to 25 Nov ladders P-0553 found missing sign-twin degrees, what did the EDDM METAR high say, was that degree listed, and what…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-25T23:39:27+0000",
+   "minutes": 0,
+   "calls": 13,
+   "note": "Both settled gappy ladders (23 and 24 Nov) had a METAR high of 3C, a listed degree, and 3C won both; 25 Nov's 1C high is listed too, so no missing degree has won yet. Tonight 26 Nov misses -4, -2, 1, 3 and 27 Nov misses 1 to 4, and 1C is within 1.5C of ICON's point both days (27 Nov now +0.5C), so a missing degree cou…",
+   "artefact": "experiments/2026-11-25-P-0565",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0566",
+   "title": "Copycat ticker forward check: from grinder/SNAPSHOTS.csv take 20 later mints of shared tickers and 20 single-ticker mints first seen on the same nights at least 7 days a…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-25T23:41:32+0000",
+   "minutes": 1,
+   "calls": 7,
+   "note": "20 later mints of shared tickers, first seen 7 to 45 days ago, against 20 single-ticker mints from the same nights: 15 v 13 under 100 USD liquidity today (all of them with no DexScreener pair left), rugcheck median 33 v 32, paired split 6 v 4 (sign test p about 0.75); the copycat flag does not separate outcomes a week…",
+   "artefact": "experiments/2026-11-25-P-0566",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0567",
+   "title": "Hermit CRM lead import: turn the 20 OSM firms in experiments/2026-11-23-lead-finder/run-2026-11-23.json into a CSV, init a fresh Hermit data folder in sandbox, dry-run t…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-25T23:44:09+0000",
+   "minutes": 1,
+   "calls": 13,
+   "note": "Hermit CRM imported the 20 OSM firms in one command (dry run, then --apply: 20 created, 0 failed), a second import skipped all 20 as up to date, and check said no problems; but only name and website mapped to fields, and phone, postcode and craft all went into a free-text note.",
+   "artefact": "experiments/2026-11-25-P-0567",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0568",
+   "title": "Zpup split-shape fix: re-run P-0557's three-bar cycle with each bar split in two at its midpoint (six pieces, six colours, truth over every pair from different bars) at…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-25T23:45:15+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "With each of P-0557's three cyclic bars cut in two at its midpoint, Zpup 0.4.1 painted 0 of 297 overlapping piece pairs wrong across all 108 renders (unsplit: one pair wrong in every render showing the cycle), at 6 SVG shapes against 3; checkSceneWarnings stays silent either way.",
+   "artefact": "experiments/2026-11-25-P-0568",
+   "page": false,
+   "shot": null
   }
  ]
 }

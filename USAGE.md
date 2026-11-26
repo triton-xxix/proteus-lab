@@ -10,7 +10,7 @@ split at each prompt, so one transcript can be two rows. Wall time is active tim
 capped at 10 minutes. Times and weeks are UTC. No pounds figure yet: it waits until list
 prices are checked, not remembered.
 
-Rebuilt 2026-11-25 09:06.
+Rebuilt 2026-11-26 09:06.
 
 ## By month
 
@@ -20,7 +20,7 @@ Rebuilt 2026-11-25 09:06.
 | 2026-09 | Luke's sessions | 1.52M | 263.86M | 6.81M | 20.7k |
 | 2026-10 | scheduled runs | 4.16M | 950.29M | 23.51M | 49.4k |
 | 2026-10 | Luke's sessions | 3.15M | 665.58M | 18.85M | 20.9k |
-| 2026-11 | scheduled runs | 4.14M | 1024.62M | 21.90M | 15.6k |
+| 2026-11 | scheduled runs | 4.27M | 1066.39M | 22.59M | 16.1k |
 | 2026-11 | Luke's sessions | 336.0k | 71.11M | 2.47M | 3.4k |
 
 ## Scheduled output by ISO week
@@ -39,7 +39,7 @@ Field Notes with the step that caused it.
 | 2026-W45 | 43 | 1.31M | 1.02M | no |
 | 2026-W46 | 35 | 1.09M | 1.19M | no |
 | 2026-W47 | 40 | 1.30M | 1.24M | no |
-| 2026-W48 | 14 | 283.6k | 1.26M | no |
+| 2026-W48 | 20 | 405.8k | 1.26M | no |
 
 ## By session
 
@@ -611,4 +611,10 @@ Field Notes with the step that caused it.
 | 2026-11-25 07:01 | nightly, child a5d35284 | sonnet-5-5 | 10.0k | 183.8k | 112.7k | 6 | 1 min | 17127d58 |
 | 2026-11-25 07:04 | nightly, child ace5914c | sonnet-5-5 | 2.1k | 312.0k | 62.7k | 8 | 0 min | 17127d58 |
 | 2026-11-25 07:54 | lichess-morning | opus-5-5 | 3.2k | 1.64M | 63.4k | 34 | 47 min | 17883411 |
-| 2026-11-25 09:05 | inspector | opus-5-5 | 1.4k | 550.0k | 56.1k | 12 | 0 min | 21d93c3a |
+| 2026-11-25 09:05 | inspector | opus-5-5 | 11.6k | 3.97M | 91.6k | 66 | 7 min | 21d93c3a |
+| 2026-11-25 12:31 | trials | opus-5-5 | 13.1k | 4.02M | 88.5k | 76 | 15 min | dcaf2c6a |
+| 2026-11-25 16:36 | workshop | opus-5-5 | 17.8k | 4.65M | 118.9k | 68 | 4 min | 956891b4 |
+| 2026-11-25 20:04 | smith | opus-5-5 | 9.4k | 2.56M | 82.2k | 46 | 2 min | 1cd70a99 |
+| 2026-11-25 23:23 | nightly | opus-5-5 | 66.6k | 24.96M | 254.0k | 246 | 23 min | 18261df4 |
+| 2026-11-26 07:54 | lichess-morning | opus-5-5 | 3.2k | 1.63M | 60.2k | 34 | 46 min | 463f5970 |
+| 2026-11-26 09:06 | inspector | opus-5-5 | 1.8k | 543.9k | 55.0k | 12 | 0 min | 45f9b5b7 |

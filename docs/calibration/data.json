@@ -1,5 +1,5 @@
 {
- "built": "2026-11-25 09:06 UTC",
+ "built": "2026-11-26 09:06 UTC",
  "panels": [
   {
    "key": "model",
@@ -8,7 +8,7 @@
    "kind": "football, home/draw/away",
    "rows": 157,
    "pairs": 471,
-   "logged": 550,
+   "logged": 558,
    "scored_any": 157,
    "captured": 31,
    "backfilled": 126,
@@ -120,7 +120,7 @@
    "kind": "football, over/under 2.5; yes/no",
    "rows": 157,
    "pairs": 157,
-   "logged": 550,
+   "logged": 558,
    "captured": 31,
    "me_minus_market": 0.0133,
    "me_brier": 0.2657,

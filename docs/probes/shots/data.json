@@ -1,26 +1,26 @@
 {
  "summary": {
-  "n": 268,
+  "n": 269,
   "waiting": 0,
   "hits": 249,
-  "hit_rate": 0.929,
+  "hit_rate": 0.926,
   "mean_p": 0.656,
   "brier": 0.143,
-  "brier_at_hit_rate": 0.066,
-  "called_works": 249,
+  "brier_at_hit_rate": 0.069,
+  "called_works": 250,
   "called_works_hits": 236,
   "called_other": 19,
   "called_other_hits": 13,
   "verdict_works": 242,
   "first": "2026-10-12",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 37,
-   "mean_p": 0.495,
-   "hit_rate": 0.892
+   "n": 38,
+   "mean_p": 0.493,
+   "hit_rate": 0.868
   },
   {
    "label": "55%",
@@ -2727,6 +2727,16 @@
    "hit": 1,
    "number": "speaker-split EER about 30 percent on 2021 LA codec audio, against 18.5 on 2019",
    "at": "2026-11-24T12:43:50+0000"
+  },
+  {
+   "id": "P-0562",
+   "title": "DVSA MOT open data: does it reproduce the Golf at 17.9% first-time fail for 10-year-old cars?",
+   "expect": "works",
+   "verdict": "blocked",
+   "p": 0.45,
+   "hit": 0,
+   "number": "Golf first used 2015, first-attempt fail rate 17.9% plus or minus 1.5 points on about 38,000 tests",
+   "at": "2026-11-25T12:32:04+0000"
   }
  ]
 }
