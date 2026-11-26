@@ -14132,9 +14132,9 @@
    "after": "2026-11-26",
    "est_minutes": 15,
    "added": "2026-11-23",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-26T12:31:55+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -14142,7 +14142,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "number": "0 of 3 settled highs on a missing degree (shot after looking at P-0565)",
+    "at": "2026-11-26T12:32:10+0000"
+   }
   },
   {
    "id": "P-0555",
