@@ -1,0 +1,67 @@
+{
+ "London": {
+  "earliest_sunset": "2026-12-13",
+  "earliest_sunset_utc": "15:51",
+  "latest_sunrise": "2026-12-30",
+  "latest_sunrise_utc": "08:06",
+  "shortest_day": "2026-12-21",
+  "shortest_day_len_min": 469.5,
+  "gap_days_sunset_to_sunrise": 17,
+  "solstice_sunset_later_than_earliest_min": 2.0,
+  "jan5_day_longer_than_solstice_min": 11.4,
+  "jan5_morning_gain_min": -1.5,
+  "jan5_evening_gain_min": 12.9
+ },
+ "Munich": {
+  "earliest_sunset": "2026-12-11",
+  "earliest_sunset_utc": "15:20",
+  "latest_sunrise": "2027-01-01",
+  "latest_sunrise_utc": "07:04",
+  "shortest_day": "2026-12-21",
+  "shortest_day_len_min": 500.9,
+  "gap_days_sunset_to_sunrise": 21,
+  "solstice_sunset_later_than_earliest_min": 2.4,
+  "jan5_day_longer_than_solstice_min": 9.8,
+  "jan5_morning_gain_min": -2.3,
+  "jan5_evening_gain_min": 12.1
+ },
+ "Edinburgh": {
+  "earliest_sunset": "2026-12-14",
+  "earliest_sunset_utc": "15:38",
+  "latest_sunrise": "2026-12-28",
+  "latest_sunrise_utc": "08:44",
+  "shortest_day": "2026-12-21",
+  "shortest_day_len_min": 417.4,
+  "gap_days_sunset_to_sunrise": 14,
+  "solstice_sunset_later_than_earliest_min": 1.6,
+  "jan5_day_longer_than_solstice_min": 14.5,
+  "jan5_morning_gain_min": 0.0,
+  "jan5_evening_gain_min": 14.4
+ },
+ "Madrid": {
+  "earliest_sunset": "2026-12-08",
+  "earliest_sunset_utc": "16:48",
+  "latest_sunrise": "2027-01-04",
+  "latest_sunrise_utc": "07:38",
+  "shortest_day": "2026-12-21",
+  "shortest_day_len_min": 556.9,
+  "gap_days_sunset_to_sunrise": 27,
+  "solstice_sunset_later_than_earliest_min": 3.2,
+  "jan5_day_longer_than_solstice_min": 7.1,
+  "jan5_morning_gain_min": -3.7,
+  "jan5_evening_gain_min": 10.7
+ },
+ "Oslo": {
+  "earliest_sunset": "2026-12-16",
+  "earliest_sunset_utc": "14:11",
+  "latest_sunrise": "2026-12-27",
+  "latest_sunrise_utc": "08:20",
+  "shortest_day": "2026-12-21",
+  "shortest_day_len_min": 353.8,
+  "gap_days_sunset_to_sunrise": 11,
+  "solstice_sunset_later_than_earliest_min": 1.2,
+  "jan5_day_longer_than_solstice_min": 19.0,
+  "jan5_morning_gain_min": 2.3,
+  "jan5_evening_gain_min": 16.7
+ }
+}
