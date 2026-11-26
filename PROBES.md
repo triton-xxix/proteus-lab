@@ -7,7 +7,7 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 472 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 473 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
 
 ## Queue (16 open)
 
@@ -30,10 +30,11 @@ Verdicts so far: 472 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
 | P-0572 | Mayhem age cut, leg two: after 14:14Z 27 Nov read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z, and the age cut to the minute | desk | none | 2026-11-27 | 0 | 15 min |
 | P-0574 | Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-27 | 0 | 15 min |
 
-## Verdicts (558)
+## Verdicts (559)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-26 | P-0580 | NOAA sunset script v Open-Meteo: largest sunrise and sunset gap in minutes per city, 26 Nov to 11 Dec, five cities | **works** | The NOAA-equation script agrees with Open-Meteo's sunrise and sunset to within 1.0 to 1.3 minutes on all 16 days, 26 Nov to 11 Dec, in all five cities (Open-Meteo rounds to the minute). Near the minimum sunset holds a minute for about a week (London 15:51 from 8 Dec), so the earliest-sunset date is only good to a few days. | `experiments/2026-11-26-P-0580` | 0 min, 6 calls, 0 denied |
 | 2026-11-26 | P-0579 | Mayhem wallet signature paging: 5 pages of 1,000 with before; minutes of wallet history each page adds and whether a 30-minute cohort window is reachable at any hour | **works** | 5 pages of 1,000 wallet signatures reach back only 4.5 minutes tonight (0.8 to 1.1 min a page, about 1,100 transactions a minute, 23 to 151 failed per page). A 30-minute window would need about 33 pages, about 35 RPC calls, so paging can reach any hour but at roughly 7 times P-0571's call count; the HH:46 timing stays cheaper. | `experiments/2026-11-26-P-0579` | 0 min, 3 calls, 0 denied |
 | 2026-11-26 | P-0578 | No-model ASVspoof EER seed band on 1,000 clips: P-0570's 50 clip and speaker seeds with 500 per class; band width and median against 600 clips | **blocked** | Stopped in load() before any scoring: the datasets-server rows API answered HTTP 429 while paging for the 400 extra clips, after the baseline's retries. The 600 cached clips are untouched; same command reruns it. | `experiments/2026-11-26-P-0578` | 1 min, 6 calls, 0 denied |
 | 2026-11-26 | P-0577 | Smarkets Munich void reasons: for every Munich daily-high market id in exchange logs, read state and info.reason; are voids no-trade auto-voids, and does any void track a ladder gap rather than zero volume | **works** | 11 of 38 Munich ids still answer: 10 settled, 1 voided. The 25 Nov void carries info.reason 'auto-void: event completed with no trades' (P-0554 missed the field) and was stamped 00:00:15Z on the day itself; the settled ones closed about 22:11 or 23:45Z. Seven of the settled ten also logged volume 0, so zero trades alone does not void, and the gap ruling is not shown. | `experiments/2026-11-26-P-0577` | 0 min, 4 calls, 0 denied |

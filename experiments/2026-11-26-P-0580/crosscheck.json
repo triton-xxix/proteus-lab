@@ -1,0 +1,457 @@
+{
+ "London": {
+  "days": 16,
+  "max_abs_gap_min": 1.2,
+  "om_point": [
+   51.5074,
+   -0.1278
+  ],
+  "open_meteo_earliest_sunset_in_window": "2026-12-08T15:51",
+  "gaps": [
+   {
+    "day": "2026-11-26",
+    "sunrise_gap": 0.69,
+    "sunset_gap": 0.9
+   },
+   {
+    "day": "2026-11-27",
+    "sunrise_gap": 1.2,
+    "sunset_gap": 0.04
+   },
+   {
+    "day": "2026-11-28",
+    "sunrise_gap": 0.69,
+    "sunset_gap": 0.22
+   },
+   {
+    "day": "2026-11-29",
+    "sunrise_gap": 1.16,
+    "sunset_gap": 0.46
+   },
+   {
+    "day": "2026-11-30",
+    "sunrise_gap": 0.59,
+    "sunset_gap": 0.74
+   },
+   {
+    "day": "2026-12-01",
+    "sunrise_gap": 1.0,
+    "sunset_gap": 0.08
+   },
+   {
+    "day": "2026-12-02",
+    "sunrise_gap": 0.37,
+    "sunset_gap": 0.47
+   },
+   {
+    "day": "2026-12-03",
+    "sunrise_gap": 0.72,
+    "sunset_gap": 0.91
+   },
+   {
+    "day": "2026-12-04",
+    "sunrise_gap": 1.02,
+    "sunset_gap": 0.4
+   },
+   {
+    "day": "2026-12-05",
+    "sunrise_gap": 0.3,
+    "sunset_gap": 0.95
+   },
+   {
+    "day": "2026-12-06",
+    "sunrise_gap": 0.53,
+    "sunset_gap": 0.56
+   },
+   {
+    "day": "2026-12-07",
+    "sunrise_gap": 0.73,
+    "sunset_gap": 0.21
+   },
+   {
+    "day": "2026-12-08",
+    "sunrise_gap": 0.89,
+    "sunset_gap": 0.93
+   },
+   {
+    "day": "2026-12-09",
+    "sunrise_gap": 1.01,
+    "sunset_gap": 0.7
+   },
+   {
+    "day": "2026-12-10",
+    "sunrise_gap": 1.09,
+    "sunset_gap": 0.52
+   },
+   {
+    "day": "2026-12-11",
+    "sunrise_gap": 1.12,
+    "sunset_gap": 0.4
+   }
+  ]
+ },
+ "Munich": {
+  "days": 16,
+  "max_abs_gap_min": 1.19,
+  "om_point": [
+   48.137,
+   11.575
+  ],
+  "open_meteo_earliest_sunset_in_window": "2026-12-09T15:19",
+  "gaps": [
+   {
+    "day": "2026-11-26",
+    "sunrise_gap": 0.51,
+    "sunset_gap": 0.46
+   },
+   {
+    "day": "2026-11-27",
+    "sunrise_gap": 0.86,
+    "sunset_gap": 0.76
+   },
+   {
+    "day": "2026-11-28",
+    "sunrise_gap": 1.19,
+    "sunset_gap": 0.1
+   },
+   {
+    "day": "2026-11-29",
+    "sunrise_gap": 0.5,
+    "sunset_gap": 0.49
+   },
+   {
+    "day": "2026-11-30",
+    "sunrise_gap": 0.78,
+    "sunset_gap": 0.93
+   },
+   {
+    "day": "2026-12-01",
+    "sunrise_gap": 1.05,
+    "sunset_gap": 0.41
+   },
+   {
+    "day": "2026-12-02",
+    "sunrise_gap": 0.28,
+    "sunset_gap": 0.94
+   },
+   {
+    "day": "2026-12-03",
+    "sunrise_gap": 0.49,
+    "sunset_gap": 0.51
+   },
+   {
+    "day": "2026-12-04",
+    "sunrise_gap": 0.67,
+    "sunset_gap": 0.13
+   },
+   {
+    "day": "2026-12-05",
+    "sunrise_gap": 0.82,
+    "sunset_gap": 0.81
+   },
+   {
+    "day": "2026-12-06",
+    "sunrise_gap": 0.94,
+    "sunset_gap": 0.53
+   },
+   {
+    "day": "2026-12-07",
+    "sunrise_gap": 1.03,
+    "sunset_gap": 0.29
+   },
+   {
+    "day": "2026-12-08",
+    "sunrise_gap": 1.09,
+    "sunset_gap": 0.11
+   },
+   {
+    "day": "2026-12-09",
+    "sunrise_gap": 1.11,
+    "sunset_gap": 0.98
+   },
+   {
+    "day": "2026-12-10",
+    "sunrise_gap": 1.09,
+    "sunset_gap": 0.89
+   },
+   {
+    "day": "2026-12-11",
+    "sunrise_gap": 1.04,
+    "sunset_gap": 0.86
+   }
+  ]
+ },
+ "Edinburgh": {
+  "days": 16,
+  "max_abs_gap_min": 1.21,
+  "om_point": [
+   55.9533,
+   -3.1883
+  ],
+  "open_meteo_earliest_sunset_in_window": "2026-12-09T15:38",
+  "gaps": [
+   {
+    "day": "2026-11-26",
+    "sunrise_gap": 0.78,
+    "sunset_gap": 0.3
+   },
+   {
+    "day": "2026-11-27",
+    "sunrise_gap": 0.58,
+    "sunset_gap": 0.14
+   },
+   {
+    "day": "2026-11-28",
+    "sunrise_gap": 0.36,
+    "sunset_gap": 1.04
+   },
+   {
+    "day": "2026-11-29",
+    "sunrise_gap": 1.1,
+    "sunset_gap": 1.0
+   },
+   {
+    "day": "2026-11-30",
+    "sunrise_gap": 0.8,
+    "sunset_gap": 1.02
+   },
+   {
+    "day": "2026-12-01",
+    "sunrise_gap": 0.47,
+    "sunset_gap": 1.09
+   },
+   {
+    "day": "2026-12-02",
+    "sunrise_gap": 1.09,
+    "sunset_gap": 0.23
+   },
+   {
+    "day": "2026-12-03",
+    "sunrise_gap": 0.68,
+    "sunset_gap": 0.43
+   },
+   {
+    "day": "2026-12-04",
+    "sunrise_gap": 0.22,
+    "sunset_gap": 0.69
+   },
+   {
+    "day": "2026-12-05",
+    "sunrise_gap": 0.72,
+    "sunset_gap": 1.02
+   },
+   {
+    "day": "2026-12-06",
+    "sunrise_gap": 1.17,
+    "sunset_gap": 0.41
+   },
+   {
+    "day": "2026-12-07",
+    "sunrise_gap": 0.57,
+    "sunset_gap": 0.86
+   },
+   {
+    "day": "2026-12-08",
+    "sunrise_gap": 0.92,
+    "sunset_gap": 0.39
+   },
+   {
+    "day": "2026-12-09",
+    "sunrise_gap": 1.21,
+    "sunset_gap": 0.98
+   },
+   {
+    "day": "2026-12-10",
+    "sunrise_gap": 0.46,
+    "sunset_gap": 0.64
+   },
+   {
+    "day": "2026-12-11",
+    "sunrise_gap": 0.64,
+    "sunset_gap": 0.36
+   }
+  ]
+ },
+ "Madrid": {
+  "days": 16,
+  "max_abs_gap_min": 1.02,
+  "om_point": [
+   40.4168,
+   -3.7038
+  ],
+  "open_meteo_earliest_sunset_in_window": "2026-12-02T16:48",
+  "gaps": [
+   {
+    "day": "2026-11-26",
+    "sunrise_gap": 0.44,
+    "sunset_gap": 0.76
+   },
+   {
+    "day": "2026-11-27",
+    "sunrise_gap": 0.52,
+    "sunset_gap": 0.33
+   },
+   {
+    "day": "2026-11-28",
+    "sunrise_gap": 0.58,
+    "sunset_gap": -0.06
+   },
+   {
+    "day": "2026-11-29",
+    "sunrise_gap": 0.63,
+    "sunset_gap": 0.59
+   },
+   {
+    "day": "2026-11-30",
+    "sunrise_gap": 0.66,
+    "sunset_gap": 0.28
+   },
+   {
+    "day": "2026-12-01",
+    "sunrise_gap": 0.69,
+    "sunset_gap": -0.0
+   },
+   {
+    "day": "2026-12-02",
+    "sunrise_gap": 0.69,
+    "sunset_gap": 0.76
+   },
+   {
+    "day": "2026-12-03",
+    "sunrise_gap": 0.68,
+    "sunset_gap": 0.56
+   },
+   {
+    "day": "2026-12-04",
+    "sunrise_gap": 0.64,
+    "sunset_gap": 0.39
+   },
+   {
+    "day": "2026-12-05",
+    "sunrise_gap": 0.59,
+    "sunset_gap": 0.27
+   },
+   {
+    "day": "2026-12-06",
+    "sunrise_gap": 0.52,
+    "sunset_gap": 0.18
+   },
+   {
+    "day": "2026-12-07",
+    "sunrise_gap": 0.43,
+    "sunset_gap": 0.13
+   },
+   {
+    "day": "2026-12-08",
+    "sunrise_gap": 0.31,
+    "sunset_gap": 0.11
+   },
+   {
+    "day": "2026-12-09",
+    "sunrise_gap": 0.18,
+    "sunset_gap": 0.14
+   },
+   {
+    "day": "2026-12-10",
+    "sunrise_gap": 1.02,
+    "sunset_gap": 0.2
+   },
+   {
+    "day": "2026-12-11",
+    "sunrise_gap": 0.83,
+    "sunset_gap": 0.3
+   }
+  ]
+ },
+ "Oslo": {
+  "days": 16,
+  "max_abs_gap_min": 1.31,
+  "om_point": [
+   59.9139,
+   10.7522
+  ],
+  "open_meteo_earliest_sunset_in_window": "2026-12-11T14:11",
+  "gaps": [
+   {
+    "day": "2026-11-26",
+    "sunrise_gap": 0.83,
+    "sunset_gap": 0.72
+   },
+   {
+    "day": "2026-11-27",
+    "sunrise_gap": 1.03,
+    "sunset_gap": 0.17
+   },
+   {
+    "day": "2026-11-28",
+    "sunrise_gap": 1.19,
+    "sunset_gap": 0.68
+   },
+   {
+    "day": "2026-11-29",
+    "sunrise_gap": 1.31,
+    "sunset_gap": 0.26
+   },
+   {
+    "day": "2026-11-30",
+    "sunrise_gap": 0.39,
+    "sunset_gap": 0.9
+   },
+   {
+    "day": "2026-12-01",
+    "sunrise_gap": 0.42,
+    "sunset_gap": 0.62
+   },
+   {
+    "day": "2026-12-02",
+    "sunrise_gap": 0.4,
+    "sunset_gap": 0.4
+   },
+   {
+    "day": "2026-12-03",
+    "sunrise_gap": 0.33,
+    "sunset_gap": 0.26
+   },
+   {
+    "day": "2026-12-04",
+    "sunrise_gap": 1.2,
+    "sunset_gap": 0.19
+   },
+   {
+    "day": "2026-12-05",
+    "sunrise_gap": 1.01,
+    "sunset_gap": 0.2
+   },
+   {
+    "day": "2026-12-06",
+    "sunrise_gap": 0.77,
+    "sunset_gap": 0.28
+   },
+   {
+    "day": "2026-12-07",
+    "sunrise_gap": 0.46,
+    "sunset_gap": 0.45
+   },
+   {
+    "day": "2026-12-08",
+    "sunrise_gap": 1.08,
+    "sunset_gap": 0.7
+   },
+   {
+    "day": "2026-12-09",
+    "sunrise_gap": 0.64,
+    "sunset_gap": 1.03
+   },
+   {
+    "day": "2026-12-10",
+    "sunrise_gap": 1.12,
+    "sunset_gap": 0.44
+   },
+   {
+    "day": "2026-12-11",
+    "sunrise_gap": 0.54,
+    "sunset_gap": 0.95
+   }
+  ]
+ }
+}
