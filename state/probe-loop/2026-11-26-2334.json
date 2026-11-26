@@ -17,7 +17,7 @@
   "P-0579",
   "P-0580"
  ],
- "stopped_at": null,
- "stop_reason": null,
- "refills": 6
+ "stopped_at": "2026-11-26T23:45:52+0000",
+ "stop_reason": "7 probes done; refill 253 needs a scan.py harness that reads P-0573's saved bars without overwriting tonight's edges/scan/2026-11-26 ladder, better built in a daytime slot; row left unused for Trials",
+ "refills": 7
 }
