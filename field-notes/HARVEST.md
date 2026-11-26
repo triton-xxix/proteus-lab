@@ -6,21 +6,27 @@ source says), whether it is **testable** keyless tonight, and since 29 Sep a **b
 what tools it takes; testable ones are queued in `PROBES.md` with source `harvest` (or `vault` for Luke's links).
 A vault verdict on a vendor does not stop the mechanism being recorded; the lens column says which is on record.
 
-771 judged over 54 harvest days, 510 kept, 154 testable, 148 queued as probes, 139 with a probe verdict.
+784 judged over 55 harvest days, 516 kept, 154 testable, 148 queued as probes, 142 with a probe verdict.
 
 ## Kept
 
 | id | date | source | what | lens | interest | testable | probe |
 |---|---|---|---|---|---|---|---|
+| H-0784 | 2026-11-26 | vault | [voice notes to long-form posts with a follow-up question pass](https://www.youtube.com/watch?v=hk9wTQAWhFY) | mechanism | tools-for-strangers | no: The question pass needs a model and there is no local LLM on |  |
+| H-0780 | 2026-11-26 | github | [nexu-io/opengame: The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral](https://github.com/nexu-io/opengame) | mechanism | tools-for-strangers | no: It needs a git clone with LFS, an npm install on Node 22 and |  |
+| H-0778 | 2026-11-26 | vault | [Zernio, one API posting to all social channels](https://www.instagram.com/reel/DgGhbe7jQE8/) | mechanism | tools-for-strangers | no: Every use needs an account with the service and connected so |  |
+| H-0777 | 2026-11-26 | awesome | [2848823170/docuclean-ledger-mcp (new in awesome-mcp-servers)](https://github.com/2848823170/docuclean-ledger-mcp) | mechanism | tools-for-strangers | no: It runs through npx from GitHub (Node install of an unvetted |  |
+| H-0775 | 2026-11-26 | arxiv | [Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents](https://arxiv.org/abs/2611.34778) | mechanism | tech | no: It needs robot simulators, GPUs and VLM/VLA checkpoints, non |  |
+| H-0772 | 2026-11-26 | vault | [free-website post in a town Facebook group, 19 rejected commenters get a discount](https://www.youtube.com/watch?v=JOCR2pL6kTI) | mechanism | tools-for-strangers | no: It needs a Facebook account, a real group and real people, a |  |
 | H-0771 | 2026-11-25 | youtube | [Coding Adventure: Making a Better Chess Bot](https://www.youtube.com/watch?v=_vqlIPDR2TU) | mechanism | game-bots | no: It needs Stockfish, hundreds of megabytes of Lichess data an |  |
 | H-0770 | 2026-11-25 | github | [EL4CTEO/shrink-anything: Less code, same tests passing: delete the dead code, files, depen](https://github.com/EL4CTEO/shrink-anything) | mechanism | tools-for-strangers | no: It needs npm install or cargo install of a Rust tool, which  |  |
 | H-0768 | 2026-11-25 | vault | [setup 3k+ plus 500 to 1k monthly pricing benchmark](https://www.instagram.com/p/Df5Ec0nnew_/) (intel) | mechanism | none | no: It is a pricing claim in US dollars with no data source Prot |  |
-| H-0767 | 2026-11-25 | awesome | [neoma-pcam/pcam-live (new in awesome-mcp-servers)](https://github.com/neoma-pcam/pcam-live) | both | mechanism-hunting | yes | P-0564 |
+| H-0767 | 2026-11-25 | awesome | [neoma-pcam/pcam-live (new in awesome-mcp-servers)](https://github.com/neoma-pcam/pcam-live) | both | mechanism-hunting | yes | P-0564 **broken** |
 | H-0765 | 2026-11-25 | github | [pritamux/gridlines: An agent skill for alignment passes: draw guide lines down an interfac](https://github.com/pritamux/gridlines) | mechanism | tools-for-strangers | no: It needs Playwright and Chromium via npm and a git clone, wh |  |
 | H-0764 | 2026-11-25 | hn | [Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage](https://masondata.ai/) | mechanism | tech | no: It needs a running Postgres primary and a built or downloade |  |
 | H-0763 | 2026-11-25 | vault | [comment-FABLE-for-the-guide funnel](https://www.instagram.com/p/DgGDejhjjDA/) (intel) | mechanism | mechanism-hunting | no: Understand-only vault thread; running it means operating the |  |
-| H-0762 | 2026-11-25 | awesome | [luca-network/spr (new in awesome-mcp-servers)](https://github.com/luca-network/spr) | mechanism | tools-for-strangers | yes | P-0563 |
-| H-0761 | 2026-11-25 | youtube | [The 10-Year-Old Cars That Fail Their MOT Least (and the 5 That Fail Most)](https://www.youtube.com/watch?v=uxUVGL8t2us) | mechanism | open-data | yes | P-0562 |
+| H-0762 | 2026-11-25 | awesome | [luca-network/spr (new in awesome-mcp-servers)](https://github.com/luca-network/spr) | mechanism | tools-for-strangers | yes | P-0563 **works** |
+| H-0761 | 2026-11-25 | youtube | [The 10-Year-Old Cars That Fail Their MOT Least (and the 5 That Fail Most)](https://www.youtube.com/watch?v=uxUVGL8t2us) | mechanism | open-data | yes | P-0562 **blocked** |
 | H-0760 | 2026-11-25 | github | [Developing-Gamer/agent-sim: iOS simulators for AI agents, on Linux. The agent layer for x8](https://github.com/Developing-Gamer/agent-sim) | mechanism | tech | no: It needs an Ubuntu x86-64 VM, an 8 GB Apple runtime download |  |
 | H-0759 | 2026-11-25 | hn | [Launch HN: Versine (YC F26) – MCP to send and receive money](https://news.ycombinator.com/item?id=50634426) | both | tools-for-strangers | no: It needs a Versine account, a funded wallet and a phone pass |  |
 | H-0758 | 2026-11-25 | vault | [seven-prompt path from empty chat to a shippable game](https://www.instagram.com/p/DgGDejhjjDA/) | mechanism | tools-for-strangers | no: No local LLM is installed and the seven prompts are on unsee |  |
@@ -524,6 +530,81 @@ A vault verdict on a vendor does not stop the mechanism being recorded; the lens
 | H-0001 | 2026-09-26 | hn | [Show HN: Make cursed fonts like Times New Bastard](https://bastardica.mitpit.com) | mechanism | tools-for-strangers | no: It is judged by visual appearance in a browser, not by a hea |  |
 
 ## Entries
+
+### H-0784 voice notes to long-form posts with a follow-up question pass
+2026-11-26, vault, https://www.youtube.com/watch?v=hk9wTQAWhFY
+
+- **Mechanism:** Audio is transcribed, then a model plays interviewer and asks about 15 follow-up questions to draw out detail, specifics and a point of view that the voice note lacked. The answers and the original transcript are then merged into one long-form first-person post. The result is posted to written platforms (Substack, Beehiiv, LinkedIn, X). The questioning pass is what separates it from plain transcript cleaning.
+- **Claim:** Camera-shy operators can turn voice notes into long-form posts through a question-asking writer pass, then post to four written platforms.
+- **Testable:** no. The question pass needs a model and there is no local LLM on this Mac, so it is not keyless tonight. Needs: A model for the interviewer and writer steps, and accounts on the target platforms..
+- **Idea on its own:** sound. An interview pass that pulls in specifics fixes the usual thinness of transcript-to-article tools.
+- **How it would be done:** Transcribe the voice note locally, then run a Claude Code skill that reads it and lists the gaps as questions. The person answers by voice again, and a second pass drafts the post in their own voice using a style guide. The draft is read and edited by the person before it goes anywhere. Posting to each platform stays manual or goes through a posting API. Someone must supply the real stories and opinions, since nothing in the pipeline can.
+- **Stack already covers:** Claude Code with skills and sub-agents, local transcription, ElevenLabs (voice)
+- **Missing:** Nobody has a voice style guide or a test run showing the output reads as the person and not as generic filler.
+- **Field Notes line:** A voice note goes in, a model asks about fifteen follow-up questions, and a first-person long-form post comes out for four written platforms.
+
+### H-0780 nexu-io/opengame: The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ codi
+2026-11-26, github, https://github.com/nexu-io/opengame
+
+- **Mechanism:** It packages game-building as an agent skill plus 12 MCP tools that a coding agent calls: a template gallery of playable games to remix, automated logic checks, balance simulation and headless playtesting, then export as web links or 9:16 playable ads. The loop is generate, verify with simulation, then publish. It relies on a local coding agent, the user's own model keys, and Git LFS asset downloads.
+- **Claim:** A skill and MCP toolset turns coding agents into a game studio with 25 remixable templates and one-click publishing paths.
+- **Testable:** no. It needs a git clone with LFS, an npm install on Node 22 and a coding agent with model keys, which unattended runs will not do. Needs: Node 22.18, Git LFS and model API keys..
+- **Idea on its own:** needs-a-run. The verify-by-headless-playtest step is the interesting part, but the README is promotional and gives no results.
+- **How it would be done:** Install the skill, pick a template, and have the agent change art and mechanics while the headless playtest and balance simulation run as checks. Export the result as a web link. The audience would come from where the games are posted, which no script covers. A person would judge whether the games are fun, since the checks only test that they run.
+- **Stack already covers:** Claude Code with skills and sub-agents, Gemini (stills), ElevenLabs (voice)
+- **To fetch:** opengame https://github.com/nexu-io/opengame (The repo itself, to read how its headless playtest check is wired.)
+- **Missing:** Nobody has evidence that the generated games hold players.
+- **Field Notes line:** A skill plus 12 MCP tools lets a coding agent remix playable game templates and check them by headless playtest before publishing.
+
+### H-0778 Zernio, one API posting to all social channels
+2026-11-26, vault, https://www.instagram.com/reel/DgGhbe7jQE8/
+
+- **Mechanism:** A single hosted API holds the OAuth connections to each social platform and forwards one post payload to each platform's own publishing API. The caller authenticates once to the aggregator rather than to every platform. It depends on each platform's official posting API and its approval and rate rules, and the aggregator carries the token storage and refresh. Evidence for coverage or reliability was not given in the source.
+- **Claim:** One API posts to all social channels, replacing per-platform logins.
+- **Testable:** no. Every use needs an account with the service and connected social accounts, and no keyless slice exists. Needs: An account with the aggregator and connected social accounts..
+- **Idea on its own:** sound. Aggregating official posting APIs behind one call is how scheduling tools already work; the open questions are coverage and reliability.
+- **How it would be done:** The steps are to connect each social account through the aggregator's OAuth flow, build the post payload (text, media, per-platform variants) and call the one endpoint. Scheduling, retries and a log of what posted where would sit in a small wrapper. The alternative is to call each platform's official API directly, which means more setup per platform. A person would approve the first posts and handle platform account reviews.
+- **Stack already covers:** Claude Code with skills and sub-agents, HyperFrames (video compose, captions, render)
+- **To fetch:** Zernio (The service named in the reel; no URL was given in the source.)
+- **Missing:** Nobody has run it to see which platforms it really covers or what it costs.
+- **Field Notes line:** A single posting API fronts every social platform's own publishing endpoint, so one payload and one login replace a login per channel.
+
+### H-0777 2848823170/docuclean-ledger-mcp (new in awesome-mcp-servers)
+2026-11-26, awesome, https://github.com/2848823170/docuclean-ledger-mcp
+
+- **Mechanism:** It reconciles bank or payment statements against invoices using integer micro-unit arithmetic (BigInt) so no float rounding or model arithmetic is involved. Matching runs in layers: order ID, counterparty alias plus a date window, cross-currency spread, then a bounded subset-sum search for several charges against one consolidated invoice. The same server repairs mis-encoded CJK CSVs and writes spreadsheets that stop formula injection by storing cells as inline strings. It is exposed as MCP tools and billed per call through Apify.
+- **Claim:** Three deterministic MCP tools reconcile statements to invoices for $0.02 a run with no external LLM call.
+- **Testable:** no. It runs through npx from GitHub (Node install of an unvetted repo) and its main use is Chinese payment data Proteus does not have. Needs: Node 20 and real statement and invoice data to test against..
+- **Idea on its own:** sound. Keeping arithmetic and matching out of the model and in deterministic code is the right split for reconciliation.
+- **How it would be done:** The same idea can be built in Python: parse statements into integer pence, match on reference first, then on amount and date window, then run a capped subset-sum for one-to-many cases. Output a report of matched, unmatched and ambiguous lines for a human to check. The data is the hard part: a bookkeeper or the client would supply sample statements. A hired person would review the ambiguous matches that no rule resolves.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **To fetch:** docuclean-ledger-mcp https://github.com/2848823170/docuclean-ledger-mcp (Reference implementation of the layered matching to read before writing a Python version.)
+- **Missing:** Nobody has real UK statement and invoice samples to measure match rates against.
+- **Field Notes line:** An MCP server does bank-to-invoice matching in integer arithmetic, including a bounded subset-sum pass for lumped invoices, so the model never does the sums.
+
+### H-0775 Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents
+2026-11-26, arxiv, https://arxiv.org/abs/2611.34778
+
+- **Mechanism:** A vision-language model writes policy code and calls tools, while a vision-language-action or world-action model does the precise motor control. The harness decides what structure the VLM's code must have, which manipulation steps get tool or code help, and when the VLM is consulted at test time. The authors ran over 470,000 simulated rollouts across eight benchmarks, six VLMs and 15 VLA/WAM checkpoints to find which designs transfer. Their X-Harness recipe combines the findings without any weight updates.
+- **Claim:** A harness recipe, X-Harness, lifts base robot policies by up to 42.8 points across memory, reasoning and domain-shift tasks without retraining.
+- **Testable:** no. It needs robot simulators, GPUs and VLM/VLA checkpoints, none of which run keyless in 30 minutes. Needs: Robot simulation benchmarks, GPU time and model API access..
+- **Idea on its own:** sound. Splitting slow reasoning from fast control and measuring the harness separately from the model is a well-supported design pattern.
+- **How it would be done:** For Proteus the transferable piece is the method, not the robots. Treat any agent desk as model plus harness and vary the harness in controlled studies with the model fixed. That means writing the harness variants as config, running each over the same task set, and logging one success number per variant. Reading the paper's seven studies could suggest which harness variables matter most. No hired person is needed for the reading.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Nobody has the simulators or compute to reproduce the robot results.
+- **Field Notes line:** A robotics paper shows the scaffolding around a model moves success by tens of points with the same models, tested over 470,000 rollouts.
+
+### H-0772 free-website post in a town Facebook group, 19 rejected commenters get a discount
+2026-11-26, vault, https://www.youtube.com/watch?v=JOCR2pL6kTI
+
+- **Mechanism:** An agency owner posts in a town Facebook group offering one free website to a local business. Many people comment, one is chosen, and the rejected commenters are offered a discount, which turns a single giveaway into several paying clients. It depends on the group's membership, the admin allowing the post, and the owner building a site quickly enough to make the giveaway credible. The numbers (3 clients per post, 5 to 6 runs) are self-reported by the speaker.
+- **Claim:** A free-website giveaway post in a local Facebook group, followed by a discount for rejected commenters, brings about 3 clients per post over 5 to 6 runs.
+- **Testable:** no. It needs a Facebook account, a real group and real people, and the only evidence is the speaker's own account. Needs: A Facebook account, membership of a local group with admin consent, and a site builder to deliver the free site..
+- **Idea on its own:** needs-a-run. The give-first, proximity-based mechanism is plausible and cheap, but the conversion numbers are self-reported and untested outside the speaker's market.
+- **How it would be done:** Pick a town group where local traders are active and read its rules on promotion. Post the offer, collect commenters over a few days, and choose one on a stated basis. Build the winner's site with Claude Code and a template, then message every other commenter with a time-limited discount. Track replies and closes in a simple sheet. A person would be needed to handle the Facebook posting and the conversations, since no script should do that for them.
+- **Stack already covers:** Claude Code with skills and sub-agents
+- **Missing:** Nobody has a Facebook group presence or a record of how often this converts in a UK town.
+- **Field Notes line:** A free-website giveaway in a town Facebook group turns the losing commenters into discounted clients, so one post is said to yield three.
 
 ### H-0771 Coding Adventure: Making a Better Chess Bot
 2026-11-25, youtube, https://www.youtube.com/watch?v=_vqlIPDR2TU
@@ -6567,6 +6648,9 @@ is what its side decided about the vendor or Luke's time; the idea column is thi
 
 | id | date | theme | vault said | idea | testable | probe |
 |---|---|---|---|---|---|---|
+| H-0784 | 2026-11-26 | voice notes to long-form posts with a follow-up question pass | open | sound | no |  |
+| H-0778 | 2026-11-26 | Zernio, one API posting to all social channels | open | sound | no |  |
+| H-0772 | 2026-11-26 | free-website post in a town Facebook group, 19 rejected commenters get a discount | open | needs-a-run | no |  |
 | H-0768 | 2026-11-25 | setup 3k+ plus 500 to 1k monthly pricing benchmark | intel | needs-a-run | no |  |
 | H-0763 | 2026-11-25 | comment-FABLE-for-the-guide funnel | intel | sound | no |  |
 | H-0758 | 2026-11-25 | seven-prompt path from empty chat to a shippable game | open | needs-a-run | no |  |
@@ -6734,6 +6818,9 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | tool | why | from | status |
 |---|---|---|---|---|---|
+| T-0451 | 2026-11-26 | [opengame](https://github.com/nexu-io/opengame) | The repo itself, to read how its headless playtest check is wired. | H-0780 (nexu-io/opengame: The Super Game Agent — the Unity) | shelf |
+| T-0450 | 2026-11-26 | Zernio | The service named in the reel; no URL was given in the source. | H-0778 (Zernio, one API posting to all social channels) | shelf |
+| T-0449 | 2026-11-26 | [docuclean-ledger-mcp](https://github.com/2848823170/docuclean-ledger-mcp) | Reference implementation of the layered matching to read before writing a Python version. | H-0777 (2848823170/docuclean-ledger-mcp (new in awesome-mc) | shelf |
 | T-0448 | 2026-11-25 | [Lichess open database](https://database.lichess.org/) | Source of random starting positions | H-0771 (Coding Adventure: Making a Better Chess Bot) | shelf |
 | T-0447 | 2026-11-25 | [Stockfish](https://stockfishchess.org/download/) | Filter positions and act as a reference opponent | H-0771 (Coding Adventure: Making a Better Chess Bot) | shelf |
 | T-0446 | 2026-11-25 | [shrink-anything](https://github.com/EL4CTEO/shrink-anything) | The CLI to run on a repo with tests | H-0770 (EL4CTEO/shrink-anything: Less code, same tests pas) | shelf |
@@ -7187,6 +7274,13 @@ for a ran-it night: install it in `sandbox/`, run it, write the verdict.
 
 | id | date | source | what | why |
 |---|---|---|---|---|
+| H-0783 | 2026-11-26 | awesome | [acedatacloud/fishmcp (new in awesome-mcp-servers)](https://github.com/acedatacloud/fishmcp) | A thin MCP wrapper over a paid text-to-speech API that needs an account; ElevenLabs already covers voice here. |
+| H-0782 | 2026-11-26 | youtube | [Don’t Buy a $10,000 Mac Studio for Local AI. Do the Math First.](https://www.youtube.com/watch?v=jd7sX61N3Rg) | Short opinion piece on buying hardware; the claims are cited headlines with no mechanism. |
+| H-0781 | 2026-11-26 | arxiv | [ADClaw: A Programmable Visual Agent for Industrial Anomaly Detection and Underst](https://arxiv.org/abs/2611.34591) | Industrial vision agent; same code-writing-agent pattern as the harness paper kept above, and no use here. |
+| H-0779 | 2026-11-26 | hn | [Show HN: Rchive – Every drive I've owned since the 90s, searchable in one window](https://www.rchive.computer/) | A desktop file-cataloguing app; no mechanism that bears on Proteus, and it matched the query only by accident. |
+| H-0776 | 2026-11-26 | youtube | [This MacBook Pro Makes Me Feel Stupid](https://www.youtube.com/watch?v=TYtuV-QO9tU) | Hardware review of MacBook chips; no mechanism, and it is not relevant to Proteus's own Intel Mac. |
+| H-0774 | 2026-11-26 | github | [qianyiai/KuroCat: KuroCat — Free open-source 3D/2D desktop typing cat & AI codin](https://github.com/qianyiai/KuroCat) | A desktop typing-cat toy with an MCP face editor; no mechanism worth recording and it needs a Rust and Tauri build or bi |
+| H-0773 | 2026-11-26 | hn | [Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email](https://techstackups.com/articles/google-workspace-ai-agents-mcp/) | Generic news about Google's MCP policy; the one mechanism fact (Gmail MCP cannot send) is a limit, not a method. |
 | H-0769 | 2026-11-25 | hn | [Anthropic and OpenAI employees fear unreleased AI models too unsafe to release](https://tech.yahoo.com/ai/claude/articles/scoop-anthropic-openai-employees-fear-104505580.html) | Anonymous-source news story about model safety debates, no mechanism to record or run. |
 | H-0766 | 2026-11-25 | youtube | [Failed your MOT? Can you drive it, the free retest, and what the repair costs](https://www.youtube.com/watch?v=HewpPDuJ4KI) | Consumer advice on retest rules and repair prices with no mechanism, and the MOT data video above covers the data angle. |
 | H-0757 | 2026-11-23 | youtube | [Mid-Engine Cars Ranked: Depreciation Traps vs Smart Buys (2025)](https://www.youtube.com/watch?v=vF7tAj8Z8ek) | Same channel and method as the other depreciation video; kept the Q4 one as the better record. |
