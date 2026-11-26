@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 466 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@ Verdicts so far: 466 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
+| P-0571 | Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min before a :04) to a cohort file with birth times, and pre-register the cut each candidate (24.25, 24.33, 24.40 h) predicts per mint; leg two after 24.5 h reads the burns with P-0545 sweep.py | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (551)
 

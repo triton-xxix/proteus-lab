@@ -1,5 +1,5 @@
 {
- "next_id": 571,
+ "next_id": 572,
  "items": [
   {
    "id": "P-0001",
@@ -14538,6 +14538,32 @@
     "number": "clip-split median EER about 17.8%, 5-95 band about 16 to 19.5, so 16.0 at the low edge and 17.65 inside",
     "at": "2026-11-26T12:34:27+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0571",
+   "title": "Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min before a :04) to a cohort file with birth times, and pre-register the cut each candidate (24.25, 24.33, 24.40 h) predicts per mint; leg two after 24.5 h reads the burns with P-0545 sweep.py",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-26",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-26T12:36:46+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "number": "about 3 of about 20 dated mints whose burn slot differs between a 24.25 h and a 24.40 h cut",
+    "at": "2026-11-26T12:37:04+0000"
    }
   }
  ]
