@@ -1,0 +1,12 @@
+{
+  "probe": "P-0554",
+  "checked_at": "2026-11-26T12:40Z",
+  "ladders": [
+    {"day": "2026-11-23", "market_id": "180152672", "missing": [1], "metar_high": 3, "state": "settled", "winner": "3°C", "high_on_missing": false},
+    {"day": "2026-11-24", "market_id": "180443002", "missing": [-2, 1], "metar_high": 3, "state": "settled", "winner": "3°C", "high_on_missing": false},
+    {"day": "2026-11-25", "market_id": "180722282", "missing": [-2, -1], "metar_high": 1, "state": "voided", "winner": null, "contracts_voided": 9, "high_on_missing": false}
+  ],
+  "highs_on_missing_degree": 0,
+  "ladders_voided": 1,
+  "source": "Smarkets keyless /v3/markets/<ids>/ and /v3/markets/<id>/contracts/; METAR highs from P-0565 results.json"
+}

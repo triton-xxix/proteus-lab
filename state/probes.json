@@ -14132,22 +14132,25 @@
    "after": "2026-11-26",
    "est_minutes": 15,
    "added": "2026-11-23",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-26T12:31:55+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-26T12:33:18+0000",
+   "note": "Measured 0 of 3 settled highs on a missing degree (shot: 0 of 3, called after reading P-0565, a coin). New: the 25 Nov ladder (missing -2 and -1, METAR high 1C) was VOIDED whole, all 9 contracts; 23 and 24 Nov, highs clear of the gap, settled normally. Cause unknown from the API (no reason field). outcomes.py records winners only, so a void is invisible to munich_outcomes.jsonl. Next: deepen (queue a check of the 27 Nov ladder state plus voided-market capture in outcomes.py).",
+   "artefacts": [
+    "experiments/2026-11-26-P-0554"
+   ],
+   "minutes": 1,
+   "calls": 18,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.5,
     "number": "0 of 3 settled highs on a missing degree (shot after looking at P-0565)",
-    "at": "2026-11-26T12:32:10+0000"
+    "at": "2026-11-26T12:32:10+0000",
+    "hit": true
    }
   },
   {

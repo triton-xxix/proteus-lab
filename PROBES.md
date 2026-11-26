@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 464 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 465 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (13 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,13 +25,13 @@ Verdicts so far: 464 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | desk | none | 2026-11-26 | 1 (in progress) | 15 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
 
-## Verdicts (549)
+## Verdicts (550)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-26 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | **works** | Measured 0 of 3 settled highs on a missing degree (shot: 0 of 3, called after reading P-0565, a coin). New: the 25 Nov ladder (missing -2 and -1, METAR high 1C) was VOIDED whole, all 9 contracts; 23 and 24 Nov, highs clear of the gap, settled normally. Cause unknown from the API (no reason field). outcomes.py records winners only, so a void is invisible to munich_outcomes.jsonl. Next: deepen (queue a check of the 27 Nov ladder state plus voided-market capture in outcomes.py). | `experiments/2026-11-26-P-0554` | 1 min, 18 calls, 0 denied |
 | 2026-11-25 | P-0568 | Zpup split-shape fix: re-run P-0557's three-bar cycle with each bar split in two at its midpoint (six pieces, six colours, truth over every pair from different bars) at the same 108 renders: does the wrong count go to 0, and how many pieces does the SVG carry against three | **works** | With each of P-0557's three cyclic bars cut in two at its midpoint, Zpup 0.4.1 painted 0 of 297 overlapping piece pairs wrong across all 108 renders (unsplit: one pair wrong in every render showing the cycle), at 6 SVG shapes against 3; checkSceneWarnings stays silent either way. | `experiments/2026-11-25-P-0568` | 0 min, 4 calls, 0 denied |
 | 2026-11-25 | P-0567 | Hermit CRM lead import: turn the 20 OSM firms in experiments/2026-11-23-lead-finder/run-2026-11-23.json into a CSV, init a fresh Hermit data folder in sandbox, dry-run then apply hermitcrm import, then check and report: does a lead list land cleanly in one command, how many rows and fields map, what does check flag (counts only in the artefact, no firm names) | **works** | Hermit CRM imported the 20 OSM firms in one command (dry run, then --apply: 20 created, 0 failed), a second import skipped all 20 as up to date, and check said no problems; but only name and website mapped to fields, and phone, postcode and craft all went into a free-text note. | `experiments/2026-11-25-P-0567` | 1 min, 13 calls, 0 denied |
 | 2026-11-25 | P-0566 | Copycat ticker forward check: from grinder/SNAPSHOTS.csv take 20 later mints of shared tickers and 20 single-ticker mints first seen on the same nights at least 7 days ago; pull today's liquidity (DexScreener tokens, keyless) and rugcheck summary score; how many of each are under 100 USD liquidity now | **works** | 20 later mints of shared tickers, first seen 7 to 45 days ago, against 20 single-ticker mints from the same nights: 15 v 13 under 100 USD liquidity today (all of them with no DexScreener pair left), rugcheck median 33 v 32, paired split 6 v 4 (sign test p about 0.75); the copycat flag does not separate outcomes a week on. | `experiments/2026-11-25-P-0566` | 1 min, 7 calls, 0 denied |
