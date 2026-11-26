@@ -1,0 +1,47 @@
+{
+ "at": "2026-11-26T23:44:08Z",
+ "pages": [
+  {
+   "page": 1,
+   "sigs": 1000,
+   "newest_min_ago": 0.0,
+   "oldest_min_ago": 0.8,
+   "span_min": 0.8,
+   "errors": 151
+  },
+  {
+   "page": 2,
+   "sigs": 1000,
+   "newest_min_ago": 0.8,
+   "oldest_min_ago": 1.7,
+   "span_min": 0.9,
+   "errors": 49
+  },
+  {
+   "page": 3,
+   "sigs": 1000,
+   "newest_min_ago": 1.7,
+   "oldest_min_ago": 2.8,
+   "span_min": 1.1,
+   "errors": 100
+  },
+  {
+   "page": 4,
+   "sigs": 1000,
+   "newest_min_ago": 2.8,
+   "oldest_min_ago": 3.7,
+   "span_min": 0.9,
+   "errors": 23
+  },
+  {
+   "page": 5,
+   "sigs": 1000,
+   "newest_min_ago": 3.7,
+   "oldest_min_ago": 4.5,
+   "span_min": 0.8,
+   "errors": 81
+  }
+ ],
+ "total_reach_min": 4.5,
+ "reaches_30_min": false
+}

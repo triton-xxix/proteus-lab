@@ -1,5 +1,5 @@
 {
- "next_id": 579,
+ "next_id": 580,
  "items": [
   {
    "id": "P-0001",
@@ -14718,6 +14718,28 @@
    ],
    "minutes": 1,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0579",
+   "title": "Mayhem wallet signature paging: 5 pages of 1,000 with before; minutes of wallet history each page adds and whether a 30-minute cohort window is reachable at any hour",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-26T23:44:04+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-26T23:44:21+0000",
+   "note": "5 pages of 1,000 wallet signatures reach back only 4.5 minutes tonight (0.8 to 1.1 min a page, about 1,100 transactions a minute, 23 to 151 failed per page). A 30-minute window would need about 33 pages, about 35 RPC calls, so paging can reach any hour but at roughly 7 times P-0571's call count; the HH:46 timing stays cheaper.",
+   "artefacts": [
+    "experiments/2026-11-26-P-0579"
+   ],
+   "minutes": 0,
+   "calls": 3,
    "denied": [],
    "luke": false
   }
