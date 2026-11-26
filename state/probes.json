@@ -1,5 +1,5 @@
 {
- "next_id": 577,
+ "next_id": 578,
  "items": [
   {
    "id": "P-0001",
@@ -14673,6 +14673,28 @@
     "experiments/2026-11-26-P-0576"
    ],
    "minutes": 1,
+   "calls": 4,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0577",
+   "title": "Smarkets Munich void reasons: for every Munich daily-high market id in exchange logs, read state and info.reason; are voids no-trade auto-voids, and does any void track a ladder gap rather than zero volume",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-26T23:40:36+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-26T23:40:57+0000",
+   "note": "11 of 38 Munich ids still answer: 10 settled, 1 voided. The 25 Nov void carries info.reason 'auto-void: event completed with no trades' (P-0554 missed the field) and was stamped 00:00:15Z on the day itself; the settled ones closed about 22:11 or 23:45Z. Seven of the settled ten also logged volume 0, so zero trades alone does not void, and the gap ruling is not shown.",
+   "artefacts": [
+    "experiments/2026-11-26-P-0577"
+   ],
+   "minutes": 0,
    "calls": 4,
    "denied": [],
    "luke": false
