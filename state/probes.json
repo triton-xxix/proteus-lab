@@ -1,5 +1,5 @@
 {
- "next_id": 569,
+ "next_id": 571,
  "items": [
   {
    "id": "P-0001",
@@ -14490,6 +14490,52 @@
    "calls": 4,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0569",
+   "title": "Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-28",
+   "est_minutes": 20,
+   "added": "2026-11-26",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0570",
+   "title": "ASVspoof no-model EER seed spread: rerun P-0559 speaker_split.py on its cached 600 clips with 50 clip-split and 50 speaker-split seeds; report median, 5th to 95th percentile, where P-0547's 16.0 and SEAR's 17.65 sit",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-26",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-26T12:34:21+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "clip-split median EER about 17.8%, 5-95 band about 16 to 19.5, so 16.0 at the low edge and 17.65 inside",
+    "at": "2026-11-26T12:34:27+0000"
+   }
   }
  ]
 }

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 465 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (13 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,8 @@ Verdicts so far: 465 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
+| P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
+| P-0570 | ASVspoof no-model EER seed spread: rerun P-0559 speaker_split.py on its cached 600 clips with 50 clip-split and 50 speaker-split seeds; report median, 5th to 95th percentile, where P-0547's 16.0 and SEAR's 17.65 sit | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (550)
 
