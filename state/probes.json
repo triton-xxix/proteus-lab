@@ -1,5 +1,5 @@
 {
- "next_id": 574,
+ "next_id": 575,
  "items": [
   {
    "id": "P-0001",
@@ -14597,6 +14597,28 @@
    "source": "refill",
    "needs": "",
    "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-26",
+   "status": "done",
+   "attempts": 1,
+   "started_at": "2026-11-26T23:35:02+0000",
+   "verdict": "works",
+   "verdict_at": "2026-11-26T23:36:12+0000",
+   "note": "Pulled 12 of 12 symbols raw, 4,681 bars each (60 sessions, 2 Sep to 25 Nov). Every symbol has the same 80-minute null hole on 5 Nov 17:15 to 18:30Z (16 bars), plus 3 nulls of its own, so every scan ladder using 5 Nov ran short there. Leg two queued as P-0574 after 27 Nov.",
+   "artefacts": [
+    "experiments/2026-11-26-P-0573"
+   ],
+   "minutes": 1,
+   "calls": 12,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0574",
+   "title": "Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-27",
    "est_minutes": 15,
    "added": "2026-11-26",
    "status": "open",
