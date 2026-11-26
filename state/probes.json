@@ -14548,22 +14548,27 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-26",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-26T12:36:46+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
-   "denied": [],
+   "verdict": "works",
+   "verdict_at": "2026-11-26T12:48:15+0000",
+   "note": "Measured 20 of 22 dated mints discriminate in the 12:46Z cohort (12 split 24.25 v 24.33 h, 8 split 24.33 v 24.40 h); shot was about 3 of 20, a miss on the number. First run at 12:37Z: 0 of 15, because the wallet history reaches back only 4 to 18 min of births, so a straddling cohort must be pulled at about HH:46. Slots pre-registered for 13:04Z and 14:04Z 27 Nov. Next: deepen (leg two P-0572 reads the burns after 14:14Z 27 Nov).",
+   "artefacts": [
+    "experiments/2026-11-26-P-0571"
+   ],
+   "minutes": 11,
+   "calls": 13,
+   "denied": [
+    "Bash `mv /Users/triton/PROTEUS/experiments/2026-11-26-P-0571/results.json /Users/triton/PROTEUS/`"
+   ],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.6,
     "number": "about 3 of about 20 dated mints whose burn slot differs between a 24.25 h and a 24.40 h cut",
-    "at": "2026-11-26T12:37:04+0000"
+    "at": "2026-11-26T12:37:04+0000",
+    "hit": true
    }
   }
  ]

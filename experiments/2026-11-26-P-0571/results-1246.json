@@ -1,0 +1,327 @@
+{
+ "summary": {
+  "at": "2026-11-26T12:46:00Z",
+  "fetched": 58,
+  "distinct_mints": 22,
+  "births_known": 22,
+  "discriminating": 20,
+  "cuts_h": [
+   24.25,
+   24.33,
+   24.4
+  ],
+  "already_past_all_cuts": 0,
+  "earliest_leg_two_utc": "2026-11-27T14:14:00Z",
+  "rule": "leg two: a discriminating mint's burn within 3 min of one cut's slot names that cut; the cut is the smallest candidate consistent with every discriminating burn"
+ },
+ "rows": [
+  {
+   "mint": "ESPkoUt4WSi2D1tvN4cmZAvm9Fipnuq3fR9VveUjpump",
+   "sigs": 47,
+   "birth_seen": true,
+   "birth": 1795697141,
+   "birth_utc": "2026-11-26T12:45:41Z",
+   "age_h_now": 0.031,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "6Saw1ZfrYZF8z1piN1NETJoxoDfUFSb9oB6xZvBXpump",
+   "sigs": 12,
+   "birth_seen": true,
+   "birth": 1795697153,
+   "birth_utc": "2026-11-26T12:45:53Z",
+   "age_h_now": 0.028,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "9Qk8BQKs65zuQ2nQFYUVBjkg5YL7ABGwXxyfkHpspump",
+   "sigs": 72,
+   "birth_seen": true,
+   "birth": 1795697107,
+   "birth_utc": "2026-11-26T12:45:07Z",
+   "age_h_now": 0.041,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "DEQewaBDyWqgoJPcyjiVvBRuUBwCu7w44jRmyeFnpump",
+   "sigs": 436,
+   "birth_seen": true,
+   "birth": 1795697124,
+   "birth_utc": "2026-11-26T12:45:24Z",
+   "age_h_now": 0.036,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "2cWXDwwXAczReKiDLQTekFn4pfD1tF5RQ9fjFNQRpump",
+   "sigs": 407,
+   "birth_seen": true,
+   "birth": 1795697088,
+   "birth_utc": "2026-11-26T12:44:48Z",
+   "age_h_now": 0.047,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "4THygFCnquMU6bWAs7bRL7n6T7FBStrUbvGTLgpvpump",
+   "sigs": 277,
+   "birth_seen": true,
+   "birth": 1795696534,
+   "birth_utc": "2026-11-26T12:35:34Z",
+   "age_h_now": 0.201,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T13:04:00Z"
+   },
+   "discriminating": false
+  },
+  {
+   "mint": "66kJi1uVar4funU5FDSj3puX4AQyy5Td4SatMyFgpump",
+   "sigs": 121,
+   "birth_seen": true,
+   "birth": 1795697099,
+   "birth_utc": "2026-11-26T12:44:59Z",
+   "age_h_now": 0.044,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "5TvhTqanmoRaGCCE4JnReWsuY5w8DvyspCqFgyNJpump",
+   "sigs": 152,
+   "birth_seen": true,
+   "birth": 1795697091,
+   "birth_utc": "2026-11-26T12:44:51Z",
+   "age_h_now": 0.047,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "ASWUCPV1Yn6CpU3w5NeGggBL3hwrmQ6WGzkdRAK1pump",
+   "sigs": 36,
+   "birth_seen": true,
+   "birth": 1795697107,
+   "birth_utc": "2026-11-26T12:45:07Z",
+   "age_h_now": 0.043,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "9CZTmDu9Xym6dVEEiLhunzf5ZFpfcyrifGFwu1FMpump",
+   "sigs": 253,
+   "birth_seen": true,
+   "birth": 1795697067,
+   "birth_utc": "2026-11-26T12:44:27Z",
+   "age_h_now": 0.054,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "4k3apVhCDVw4bxMAQh7BAAfRdBSd5xNpAqHWq564pump",
+   "sigs": 27,
+   "birth_seen": true,
+   "birth": 1795697104,
+   "birth_utc": "2026-11-26T12:45:04Z",
+   "age_h_now": 0.044,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "9XJu4ndyw3XpX3T2qPEJEAGNwGVygRFteh1rWG9wpump",
+   "sigs": 44,
+   "birth_seen": true,
+   "birth": 1795697072,
+   "birth_utc": "2026-11-26T12:44:32Z",
+   "age_h_now": 0.053,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "JqKvkqupKPjWCSCmH9gQMMkkpKy52AY4Y1B2KWPpump",
+   "sigs": 183,
+   "birth_seen": true,
+   "birth": 1795696876,
+   "birth_utc": "2026-11-26T12:41:16Z",
+   "age_h_now": 0.108,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "2LgpVZkTGqX9QJ9rGNxszCG9yHbA3TWWwYBMiq56pump",
+   "sigs": 685,
+   "birth_seen": true,
+   "birth": 1795696103,
+   "birth_utc": "2026-11-26T12:28:23Z",
+   "age_h_now": 0.323,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T13:04:00Z"
+   },
+   "discriminating": false
+  },
+  {
+   "mint": "F2b1Q1zknGkw3gqszoa4RmbUe7y9QBVHjEH1F7qfpump",
+   "sigs": 170,
+   "birth_seen": true,
+   "birth": 1795697057,
+   "birth_utc": "2026-11-26T12:44:17Z",
+   "age_h_now": 0.059,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T14:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "8Wm5p3ucVNwXss2FwKYVQLC24bb4o9SPSCCyn9ZPpump",
+   "sigs": 366,
+   "birth_seen": true,
+   "birth": 1795696948,
+   "birth_utc": "2026-11-26T12:42:28Z",
+   "age_h_now": 0.089,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "3KK5Y4WMARCvBgXHDMKjERrm7mk8w7QkyZn9Mmz6pump",
+   "sigs": 208,
+   "birth_seen": true,
+   "birth": 1795696916,
+   "birth_utc": "2026-11-26T12:41:56Z",
+   "age_h_now": 0.098,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "G2HFeByRTgus3QXXiVfurvuci6ygSViWYbz9EsPzpump",
+   "sigs": 82,
+   "birth_seen": true,
+   "birth": 1795697044,
+   "birth_utc": "2026-11-26T12:44:04Z",
+   "age_h_now": 0.063,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "8xJKZ3D9aShxMJW8FDAaEa2t7UpiSbTGNjTvPzAMpump",
+   "sigs": 377,
+   "birth_seen": true,
+   "birth": 1795696838,
+   "birth_utc": "2026-11-26T12:40:38Z",
+   "age_h_now": 0.121,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "HxziyCprdrAxBugT5rXHVofAPaUxVpA36SBJygSdpump",
+   "sigs": 160,
+   "birth_seen": true,
+   "birth": 1795697043,
+   "birth_utc": "2026-11-26T12:44:03Z",
+   "age_h_now": 0.064,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "tXGDQMACdYPQRFJ3dNJk5v36NZsJG75b8jWx6Zhpump",
+   "sigs": 37,
+   "birth_seen": true,
+   "birth": 1795697033,
+   "birth_utc": "2026-11-26T12:43:53Z",
+   "age_h_now": 0.067,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  },
+  {
+   "mint": "aJP4dDVjNER81nbfS2ErJt76uLTNSP947eFABHSpump",
+   "sigs": 88,
+   "birth_seen": true,
+   "birth": 1795696971,
+   "birth_utc": "2026-11-26T12:42:51Z",
+   "age_h_now": 0.085,
+   "slot_by_cut": {
+    "24.25": "2026-11-27T13:04:00Z",
+    "24.33": "2026-11-27T13:04:00Z",
+    "24.4": "2026-11-27T14:04:00Z"
+   },
+   "discriminating": true
+  }
+ ]
+}

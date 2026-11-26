@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 466 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 467 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,12 +27,13 @@ Verdicts so far: 466 works, 13 broken, 49 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 0 | 15 min |
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
-| P-0571 | Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min before a :04) to a cohort file with birth times, and pre-register the cut each candidate (24.25, 24.33, 24.40 h) predicts per mint; leg two after 24.5 h reads the burns with P-0545 sweep.py | refill | none |  | 1 (in progress) | 25 min |
 
-## Verdicts (551)
+## Verdicts (552)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-26 | P-0571 | Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min before a :04) to a cohort file with birth times, and pre-register the cut each candidate (24.25, 24.33, 24.40 h) predicts per mint; leg two after 24.5 h reads the burns with P-0545 sweep.py | **works** | Measured 20 of 22 dated mints discriminate in the 12:46Z cohort (12 split 24.25 v 24.33 h, 8 split 24.33 v 24.40 h); shot was about 3 of 20, a miss on the number. First run at 12:37Z: 0 of 15, because the wallet history reaches back only 4 to 18 min of births, so a straddling cohort must be pulled at about HH:46. Slots pre-registered for 13:04Z and 14:04Z 27 Nov. Next: deepen (leg two P-0572 reads the burns after 14:14Z 27 Nov). | `experiments/2026-11-26-P-0571` | 11 min, 13 calls, 1 denied |
+| | | | | denied: Bash `mv /Users/triton/PROTEUS/experiments/2026-11-26-P-0571/results.json /Users/triton/PROTEUS/` | | |
 | 2026-11-26 | P-0570 | ASVspoof no-model EER seed spread: rerun P-0559 speaker_split.py on its cached 600 clips with 50 clip-split and 50 speaker-split seeds; report median, 5th to 95th percentile, where P-0547's 16.0 and SEAR's 17.65 sit | **works** | Measured clip-split median EER 18.0%, 5-95 band 16.2 to 19.3 over 50 seeds (shot: 17.8%, 16 to 19.5, hit); speaker split 18.1%, 16.1 to 20.1. P-0547 16.0% sits at the 6th percentile, SEAR 17.65% at the 36th. Split seed alone is worth about 1.5 points either way on 600 clips. Next: close (the baseline number is now 18%, 16 to 19). | `experiments/2026-11-26-P-0570` | 1 min, 6 calls, 0 denied |
 | 2026-11-26 | P-0554 | Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market? | **works** | Measured 0 of 3 settled highs on a missing degree (shot: 0 of 3, called after reading P-0565, a coin). New: the 25 Nov ladder (missing -2 and -1, METAR high 1C) was VOIDED whole, all 9 contracts; 23 and 24 Nov, highs clear of the gap, settled normally. Cause unknown from the API (no reason field). outcomes.py records winners only, so a void is invisible to munich_outcomes.jsonl. Next: deepen (queue a check of the 27 Nov ladder state plus voided-market capture in outcomes.py). | `experiments/2026-11-26-P-0554` | 1 min, 18 calls, 0 denied |
 | 2026-11-25 | P-0568 | Zpup split-shape fix: re-run P-0557's three-bar cycle with each bar split in two at its midpoint (six pieces, six colours, truth over every pair from different bars) at the same 108 renders: does the wrong count go to 0, and how many pieces does the SVG carry against three | **works** | With each of P-0557's three cyclic bars cut in two at its midpoint, Zpup 0.4.1 painted 0 of 297 overlapping piece pairs wrong across all 108 renders (unsplit: one pair wrong in every render showing the cycle), at 6 SVG shapes against 3; checkSceneWarnings stays silent either way. | `experiments/2026-11-25-P-0568` | 0 min, 4 calls, 0 denied |
