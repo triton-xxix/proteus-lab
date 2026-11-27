@@ -1,0 +1,92 @@
+{
+ "tally": {
+  "renamed": 6
+ },
+ "live_with_commit_after_17_nov": 0,
+ "rows": [
+  {
+   "listed": "dot-realitytest/obsidian-codex-mcp",
+   "status": 200,
+   "full_name": "aka-kika/kika-obsidian-mcp",
+   "renamed": true,
+   "archived": false,
+   "created": "2026-05-19T12:25:05Z",
+   "pushed": "2026-11-06T19:26:33Z",
+   "stars": 20,
+   "fork": false,
+   "private": false,
+   "last_commit": "2026-11-06T19:26:13Z",
+   "class": "renamed"
+  },
+  {
+   "listed": "goyohan0611-png/graph-mind",
+   "status": 200,
+   "full_name": "goyohan0611-png/turnbook",
+   "renamed": true,
+   "archived": false,
+   "created": "2026-10-08T02:43:03Z",
+   "pushed": "2026-11-03T02:49:59Z",
+   "stars": 15,
+   "fork": false,
+   "private": false,
+   "last_commit": "2026-11-03T02:49:51Z",
+   "class": "renamed"
+  },
+  {
+   "listed": "i4ctime/quantum_ring",
+   "status": 200,
+   "full_name": "I4cTime/q-ring",
+   "renamed": true,
+   "archived": false,
+   "created": "2026-03-19T09:24:11Z",
+   "pushed": "2026-11-14T20:25:43Z",
+   "stars": 6,
+   "fork": false,
+   "private": false,
+   "last_commit": "2026-11-14T20:21:45Z",
+   "class": "renamed"
+  },
+  {
+   "listed": "j0hanz/filesystem-context-mcp-server",
+   "status": 200,
+   "full_name": "j0hanz/filesystem-mcp",
+   "renamed": true,
+   "archived": false,
+   "created": "2025-12-12T09:26:27Z",
+   "pushed": "2026-11-26T06:54:31Z",
+   "stars": 36,
+   "fork": false,
+   "private": false,
+   "last_commit": "2026-11-26T06:54:26Z",
+   "class": "renamed"
+  },
+  {
+   "listed": "msaad00/agent-bom",
+   "status": 200,
+   "full_name": "koda-ai-studio/agent-bom",
+   "renamed": true,
+   "archived": false,
+   "created": "2026-02-22T21:38:37Z",
+   "pushed": "2026-11-27T03:19:17Z",
+   "stars": 38,
+   "fork": false,
+   "private": false,
+   "last_commit": "2026-11-26T18:28:02Z",
+   "class": "renamed"
+  },
+  {
+   "listed": "tsouth89/toolport",
+   "status": 200,
+   "full_name": "btsouth/toolport",
+   "renamed": true,
+   "archived": false,
+   "created": "2026-06-19T19:42:40Z",
+   "pushed": "2026-11-27T04:34:46Z",
+   "stars": 247,
+   "fork": false,
+   "private": false,
+   "last_commit": "2026-11-27T04:34:45Z",
+   "class": "renamed"
+  }
+ ]
+}

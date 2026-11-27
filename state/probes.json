@@ -14894,22 +14894,25 @@
    "after": "",
    "est_minutes": 15,
    "added": "2026-11-27",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-27T12:41:51+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-27T12:42:31+0000",
+   "note": "All 6 repos P-0576 saw removed from awesome-mcp-servers answer 200 under a new full name (shot: 3 deleted, 1 renamed, 2 live): 4 moved owner, 2 renamed the repo, 0 deleted, 0 archived, and all 6 new names are in the current list. True removals 0 of 6; the diff counted link updates as removals, and so as at least 6 of P-0576s 371 additions. Caveat: other renames among the 371 not checked. Next: close (a URL diff of an awesome list needs a redirect check before any churn number).",
+   "artefacts": [
+    "experiments/2026-11-27-P-0585"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.75,
     "number": "3 of 6 deleted (404), 1 renamed, 2 still live; none archived",
-    "at": "2026-11-27T12:41:56+0000"
+    "at": "2026-11-27T12:41:56+0000",
+    "hit": true
    }
   }
  ]
