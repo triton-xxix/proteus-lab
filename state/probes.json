@@ -1,5 +1,5 @@
 {
- "next_id": 585,
+ "next_id": 586,
  "items": [
   {
    "id": "P-0001",
@@ -14884,6 +14884,32 @@
     "number": "about 8 committed run dates held 4 Nov in W2 or W3; at least one of the four ORB rules at rung 2 or more in one",
     "at": "2026-11-27T12:40:12+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0585",
+   "title": "Why a list drops an entry (refill 254): for the 6 repos removed from awesome-mcp-servers 17 to 26 Nov (experiments/2026-11-26-P-0576/results.json removed), keyless GitHub API repos/NAME and commits?per_page=1: count deleted (404), renamed (301 or a different full_name), archived, and still live with a commit after 17 Nov",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 15,
+   "added": "2026-11-27",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-27T12:41:51+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "number": "3 of 6 deleted (404), 1 renamed, 2 still live; none archived",
+    "at": "2026-11-27T12:41:56+0000"
    }
   }
  ]

@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 476 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,6 +28,7 @@ Verdicts so far: 476 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0581 | Mayhem age cut, leg two (re-run of P-0572, blocked on the clock in Trials 27 Nov): read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z on 27 Nov, and the age cut to the minute | desk | none | 2026-11-28 | 0 | 15 min |
 | P-0582 | Yahoo 5-minute bar revisions, leg two (re-run of P-0574, blocked on the clock in Trials 27 Nov): run experiments/2026-11-26-P-0573/pull.py into a leg2 folder, diff bars by timestamp against leg1, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-28 | 0 | 15 min |
+| P-0585 | Why a list drops an entry (refill 254): for the 6 repos removed from awesome-mcp-servers 17 to 26 Nov (experiments/2026-11-26-P-0576/results.json removed), keyless GitHub API repos/NAME and commits?per_page=1: count deleted (404), renamed (301 or a different full_name), archived, and still live with a commit after 17 Nov | refill | none |  | 1 (in progress) | 15 min |
 
 ## Verdicts (564)
 
