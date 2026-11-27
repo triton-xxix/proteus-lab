@@ -39,3 +39,11 @@ is the build: a `select_r01()` beside the v0.2 selection, the Telegram look-up f
 `research/MENTIONS.csv` (which runs before the commit in step 2), and the shadow ledger
 `grinder/LEDGER-R01.csv`. Until it is wired, every night's snapshot and mentions rows are enough
 to score R01 after the fact from candles, so no night is lost. DUE.md row D-007 holds the date.
+
+## Closed, 27 Nov 2026
+
+Closed unjudged at 29 of 40 R01 positions when the Grinder took its week-8 KILL (accepted by Luke
+27 Nov 2026, `grinder/RULES.md`). Reading at the close, from `bin/killcheck.py`: R01 29 closed,
+expectancy £-37.72, best three removed £-52.67, rugs 10%; v0.2 on the same nights 28 closed,
+£-35.53, rugs 14%. Below v0.2 on expectancy and short of half its rug rate, so it sat on the KILL
+side of both lines, but 40 was never reached and no verdict is claimed. `LEDGER-R01.csv` is frozen.

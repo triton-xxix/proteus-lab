@@ -1,5 +1,10 @@
 # Proteus Trials, 12:30 (task prompt)
 
+> **Paused 27 Nov 2026** (Luke, WF-0518, the quota diet). The scheduled task is switched off, not
+> deleted, and this file stays in place for the record. Do not run it from another task. If it is ever
+> switched back on, re-read `tasks/nightly.md` first: the Grinder and the Pitch are closed (week-8
+> KILLs accepted) and the chess, Nolan, sunspot and petition side quests are stopped.
+
 The worker of the daytime loop: more probes taken to verdicts, each one called in advance. The nightly's
 probe loop ended on its cap, not its clock, every night it had work (7 and 8 Oct); this is the rest of
 the queue, by day.

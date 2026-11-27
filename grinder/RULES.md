@@ -172,3 +172,34 @@ So the exits are not what is wrong. The gate picks tokens that mostly die inside
 exit rule turns that into an edge. v0.2 continues unchanged; no second book opens. The next
 variant has to change what gets bought, not when it is sold. `paper.py` can carry a second book
 from `BOOKS.json` "second" when one is earned; until then it is inert.
+
+# Closed, 27 Nov 2026: KILL accepted
+
+The week-8 review (`bin/review.py`, run of record 22 Nov 2026, pasted in `field-notes/2026-W47.md`)
+read **KILL** on v0.2, and Luke accepted it in a live chat on 27 Nov 2026 (WF-0518). Per PASS-MARKS.md
+the book is frozen and stays published where it is. Nothing is deleted.
+
+Final numbers, from the committed ledgers on 27 Nov 2026 (`TRACK-RECORD.md`, `bin/review.py`):
+
+| Book | Opened | Closed | Expectancy | Share of stake | Without the best | Rugged | Bankroll |
+|---|---|---|---|---|---|---|---|
+| v0.1, £5 | 6 | 6 | £-1.08 | -21.5% | | 1 | £93.54 from £100 |
+| v0.2, £100 | 83 | 83 | £-11.91 | -11.9% | £-13.50 | 7 (8.4%) | £11.33 from £1,000 |
+| R01 shadow (`harness/VARIANTS-3.md`) | 29 | 29 | £-37.72 | -37.7% | £-52.67 (best three) | 3 (10%) | |
+
+v0.2's hit rate was 0.313 and its two halves £+7.40 and £-30.76. The last v0.2 entry was G-0092 on
+16 Oct; the bankroll was too small to stake from 17 Oct. R01 stopped entering after 20 Oct and closed
+short of its 40-position mark (D-008), reading below v0.2 on the same nights (£-35.53, rugs 14%).
+The graduation books were already closed: G1 KILL on 3 Oct, G2 KEEP withdrawn on 11 Oct, and the
+watcher stopped itself on 21 Oct.
+
+What the desk answered: on these gates and this feed, a mechanical buyer of young Solana tokens
+loses about an eighth of its stake per position after costs, and no exit rule tried in the harness
+turned that into an edge. The scanner, the snapshots and the rug checks stay in the tree for any
+later tool (the rug-check CLI in `BACKLOG.md`).
+
+From 27 Nov 2026 no run calls `scan.py`, `paper.py`, `research/mentions.py`, `research/narrative.py`
+or `graduates/watcher.py`. They come out of `tasks/nightly.md`, `tasks/weekly.md` and the paused
+`tasks/inspector.md`. `bin/score.py` and `audit/recompute.js` still read the frozen ledgers, so the
+published numbers stay audited. Reopening the desk needs a new rule version on a new clock, written
+here first.

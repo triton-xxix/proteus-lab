@@ -3,6 +3,12 @@
 Written by Proteus, for Proteus. Luke does not maintain this and is not asked to. One item a month
 becomes the Big Expedition. Items are ideas, not commitments; anything can be dropped.
 
+**27 Nov 2026 (Luke, WF-0518, the quota diet).** The nightly runs Wednesday and Saturday only and the
+daytime slots are paused. The Grinder and the Pitch are closed on their week-8 KILLs, so every Grinder
+and Pitch item below is history, not work. The Lichess, Nolan, sunspot and petition side quests are
+stopped (section "Stopped 27 Nov 2026" at the end). The remit stays broad: general R&D, Skool and
+course teardowns, tool vetting, real quant and crypto edge research. Nothing here is deleted.
+
 ## Big Expedition candidates
 
 - **Rug-check CLI, released.** Take the Grinder's checks (mint and freeze authority, LP status,
@@ -12,6 +18,8 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   write-ups). What exists: P-0099 (mint and freeze authority is live on 0 of 40 pump.fun mints, so
   that check says almost nothing there; rugcheck's authority fields were blank on 1,573 of 1,575
   snapshots) and P-0105 (scan.py now keeps rugcheck's insider graph). Stays a candidate.
+  27 Nov 2026: the Grinder is closed; the scanner and its checks stay in the tree, so this is still
+  buildable as a tool, but it is no longer fed by a live desk.
 - **Live calibration page.** The Pitch's predictions plotted against outcomes, updated nightly,
   with the market's line beside it. A page that tells the truth about whether a model has an edge.
   **Chosen 11 Oct for the fortnight 12 to 25 Oct.** Step one, due Saturday 17 Oct: `docs/calibration/`
@@ -30,6 +38,7 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   DECISIONS line, it is a scored desk.
   **Closed 25 Oct (weekly), cut to what shipped:** both steps shipped; the predict.py odds re-read
   and the phone check were not done and do not roll over.
+  27 Nov 2026: the Pitch is closed, so `docs/calibration/` stays as last built and is not rebuilt.
 - **Channel digest tool.** Give it a YouTube channel, get a weekly digest of what changed, with
   transcripts and the claims that were checkable. Built on the transcript tool.
   **Chosen 25 Oct for the fortnight 26 Oct to 8 Nov** (youtube-transcript-api passed 5 of 5, P-0187).
@@ -70,6 +79,8 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   that reads the pull and writes a dated digest; (5) mentions joined to the snapshot so a mention
   count becomes a column the replay harness can test as an entry gate. The test is the Grinder's
   own: does a mention signal move replay expectancy, pre-registered in `harness/VARIANTS.md`.
+  **Closed 27 Nov 2026 with the Grinder.** `mentions.py` and `narrative.py` come out of the nightly; the
+  digests stay in `grinder/research/digests/`.
 
 - **Our own coin, as an observed experiment (Luke, 30 Sep 2026: "i would be interested in minting our
   own at some point").** Not now. When he wants it: Luke holds the wallet and signs (charter and
@@ -107,6 +118,10 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
   office tags in OSM, the free Companies House register by SIC 43220 and registered postcode (needs Luke's
   free key, so ask under "If you feel like it"), search results for "plumber" plus each borough. Also why
   the admin_level 6 area lookup returned 0 rows (the box is wider than the county).
+  **27 Nov 2026: first priority of the nightly** (Luke, WF-0518). `tasks/nightly.md` step 1b runs it
+  first, up to 45 minutes, on Sat 28 Nov (step one: the hand check and a second firm source) and Sat 5 Dec
+  (step two: the schema-gap and sales-team columns, the scored page and the hand-over note), with the
+  Wednesday 2 Dec run on whatever is left. Candidate second sources are named there.
 
 ## Hand-overs owed to Triton (Skool reading is Proteus's; the use is Neptune's)
 
@@ -125,13 +140,14 @@ becomes the Big Expedition. Items are ideas, not commitments; anything can be dr
 
 ## Weekly slots to seed
 
-- Football fixtures and odds notes for the coming weekend.
+- Football fixtures and odds notes for the coming weekend. (Stopped 27 Nov 2026: the Pitch is closed.)
 - One wildcard with no link to any venture or interest of Luke's.
 
 ## Fixes the nightly run has earned
 
 Found by running, 2026-09-22. None of these change a pre-registered rule; they are fidelity and
 plumbing fixes, and anything that does move a rule gets its own dated note first.
+(27 Nov 2026: the Grinder and Pitch items in this section are closed with their desks and do not roll over.)
 
 - **Grinder: the age gate is the whole story.** Leave-one-out on the 94-row snapshot says dropping
   `age 1-48h` takes entries from 0 to 9, and dropping any other single gate leaves it at 0. Only
@@ -208,6 +224,8 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   bot, 14 my own 429s, 1 friends-only. 85 cap refusals were re-asks before the stated reset. Next, in
   lichess.py: parse the reset time and skip that bot until it passes; skip "does not accept" bots for good
   (newchessengine-ai stopped being asked after 2 Nov, check why before adding a rule).
+  **Lichess stopped 27 Nov 2026** (Luke, WF-0518): the lichess.py next steps and the ladder page's
+  rebuild do not roll over; `docs/ladder/` stays as last built.
 
 - **Pre-register commit swept interactive work (fixed 2026-10-07).** Steps 4 and 7 ran
   `git add -A`. On 6 Oct the pre-register commit eac33b0 carried an evening session's
@@ -305,6 +323,10 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   order, which scene the film shows first and how long each of the three strands holds the screen, as a
   braid like Memento's; needs a research child with scene timestamps from a fetched source, more than one
   Workshop slot. Data goes in `sites/nolan/oppenheimer/research/`, page in `lib/oppenheimer.cjs`.
+  **Nolan stopped 27 Nov 2026** (Luke, WF-0518): step 5f is out of the nightly and the Workshop menu, no
+  more films or pages, and open items (1), (2), (3), (5) and (7) do not roll over. The site stays
+  published at triton-xxix.github.io/proteus-nolan as it is. The dashboard items (4) and (6) are not Nolan
+  work and stay open.
 
 - **2026-10-15 · YouTube caption block on this Mac.** A burst of caption fetches at 06:30 got the IP
   blocked (IpBlocked on youtube_transcript_api, yt-dlp subs and the watch page). `sandbox/yt_retry.py`
@@ -330,3 +352,19 @@ plumbing fixes, and anything that does move a rule gets its own dated note first
   fit report with proposed tables is `exchange/RECORD-FIT-2026-10-30.md`.
 
 - **2026-10-23 · Keep testing edges as they turn up (Luke, standing).** Every new strategy found (videos, harvest, Skool, probes) goes into `edges/REGISTER.csv` as a candidate the same day and gets a recent-window admission test per `edges/RULES.md` within a week. Rejected edges get retested on a fresh window about monthly; E-003, E-004, E-006 all failed on 23 Oct (`edges/recent-2026-10-23/`), E-008 to E-010 came from three trading videos (`experiments/2026-10-23-trading-videos/NOTES.md`) and wait for a test. **Next:** E-008 (5-minute ORB, Yahoo 60-day intraday, keyless) first.
+
+## Stopped 27 Nov 2026 (Luke, WF-0518)
+
+Taken out of the nightly and every task file the same day. Nothing deleted or unpublished; each one's
+work stays where it is, and none of them is queued, refilled or picked as a Field Notes item again.
+
+- **Lichess.** The morning chess job is paused and the nightly has not played since 12 Oct. Games and
+  challenges in `games/lichess/`, the ladder page at `docs/ladder/`, D-010 closed. One open note above.
+- **Nolan.** The fan site and the Tenet timeline stay live; `bin/nolan.py` and step 5f stop. Note above.
+- **Sunspot and space weather.** The solar-cycle peak check (`experiments/2026-11-12-sunspot-peak/`,
+  P-0429), the NOAA Kp forecast scores (P-0505 and P-0558: the three-day forecast lost to persistence on
+  both issues, running about +0.6 high), the aurora pageviews reads (P-0532, P-0533) and the saved 27-day
+  outlook (D-032, closed unscored). Refill row 259 is marked stopped.
+- **Petitions.** The persona pick on UK petition signatures with no constituency
+  (`experiments/2026-11-20-persona-petitions/`) and its follow-ups P-0516, P-0517, P-0519 and P-0525;
+  the tool `docs/tools/seatless/` stays published. Never had a DUE row.

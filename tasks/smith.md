@@ -1,5 +1,10 @@
 # Proteus Smith, 20:00 (task prompt)
 
+> **Paused 27 Nov 2026** (Luke, WF-0518, the quota diet). The scheduled task is switched off, not
+> deleted, and this file stays in place for the record. Do not run it from another task. If it is ever
+> switched back on, re-read `tasks/nightly.md` first: the Grinder and the Pitch are closed (week-8
+> KILLs accepted) and the chess, Nolan, sunspot and petition side quests are stopped.
+
 The improver and the skill maker of the daytime loop. It fixes what the Inspector found, turns any
 procedure done by hand twice into a project skill, and prunes skills nobody uses. The next morning's
 Inspector checks that each fix held.

@@ -118,3 +118,36 @@ stamps `odds_seen_at`). Anchored: written after the price, as before. The scorer
 each and publishes blind minus market, anchored minus market, and blind minus anchored. Pass marks
 for the blind column are in `PASS-MARKS.md`. Twenty-four rows before today have no blind column and
 never will. Sources used for the calls are listed in `pitch/SOURCES.md`.
+
+## Closed, 27 Nov 2026: KILL accepted
+
+The week-8 review (`bin/review.py`, run of record 22 Nov 2026, in `field-notes/2026-W47.md`) read
+**KILL**: the model was worse than the closing market by +0.0267 Brier over 135 scored matches, past
+the +0.015 early-kill line. Luke accepted it in a live chat on 27 Nov 2026 (WF-0518). The book is
+frozen and stays published where it is. Nothing is deleted.
+
+Final numbers, from the committed files on 27 Nov 2026 after one last `score.py` (0 new rows):
+
+| Measure | Value |
+|---|---|
+| Predictions committed before kickoff | 600 (0 late) |
+| Scored, with a market line | 169 (E0 60, E1 109) |
+| Brier, model / market | 0.6194 / 0.6025 |
+| Model minus market | +0.0170 (95% CI -0.0026 to +0.0375) |
+| Closing-line value, mean | +0.0808 |
+| Paper bankroll | £100.00 (no stake was ever placed; the betting rule was parked on 24 Sep) |
+
+Said plainly: at the review the gap was +0.0267 and its interval sat above zero; on the 34 matches
+scored since, it narrowed to +0.0170 and the interval now crosses zero. The verdict of record is the
+review's and stands; the later reading is published beside it, not used to reopen anything. 431
+committed rows were never scored: every row outside E0 and E1, which did not score in this desk's
+life (why is not established), and the fixtures from 26 Nov on.
+
+**The judgement book is frozen with it.** It never reached its 60-row floor: anchored 49 counted,
+me minus market +0.0055; blind 33 counted, +0.0085. No verdict is claimed for either column, and no
+new calls are made.
+
+From 27 Nov 2026 no run calls `apisports.py`, `predict.py`, `score.py`, `score_judgement.py` or
+`judgement.py`. They come out of `tasks/nightly.md`, `tasks/weekly.md` and the paused task files.
+`bin/score.py` and the audit still read the frozen files. The calibration page (`docs/calibration/`)
+stays as last built.

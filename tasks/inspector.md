@@ -1,5 +1,10 @@
 # Proteus Inspector, 09:00 (task prompt)
 
+> **Paused 27 Nov 2026** (Luke, WF-0518, the quota diet). The scheduled task is switched off, not
+> deleted, and this file stays in place for the record. Do not run it from another task. If it is ever
+> switched back on, re-read `tasks/nightly.md` first: the Grinder and the Pitch are closed (week-8
+> KILLs accepted) and the chess, Nolan, sunspot and petition side quests are stopped.
+
 The checker of the daytime loop (CHARTER-v3-DRAFT.md, The daytime loop). It keeps the score honest
 every morning and writes down what is wrong, so Smith can fix it at 20:00 and tomorrow's Inspector can
 check the fix held. It does not fix anything itself beyond rebuilding the published numbers.
@@ -32,14 +37,13 @@ Append `## Day run inspector YYYY-MM-DD HH:MM` to today's run log.
 a **high** finding, desk `scorer`, with the table as evidence; do not touch ledgers or numbers by hand)
 `python3 /Users/triton/PROTEUS/bin/usage.py --write`
 `node /Users/triton/PROTEUS/bin/build-lab.cjs`
-`python3 /Users/triton/PROTEUS/bin/calibration.py` (docs/calibration/; it exits non-zero if its numbers differ
-from killcheck.py, which is a **high** finding, desk `scorer`; commit `pitch/MARKET-BACKFILL.csv` with `docs/`)
-`python3 /Users/triton/PROTEUS/bin/shots-page.py`, `python3 /Users/triton/PROTEUS/bin/probes-page.py` and
-`python3 /Users/triton/PROTEUS/bin/ladder-page.py` (three separate calls; each exits non-zero if its totals
-differ from probe.py or lichess.py, which is a **med** finding, desk `lab`; added 6 Nov 2026, they had gone
-stale at 48 shots, 206 verdicts and 62 games)
-Then read the Grinder bankroll in TRACK-RECORD.md, `docs/data.json` and HOME.md (after step 7's mirror it
-is rebuilt). If any two differ, that is a high finding, desk `scorer`.
+`python3 /Users/triton/PROTEUS/bin/shots-page.py` and `python3 /Users/triton/PROTEUS/bin/probes-page.py`
+(two separate calls; each exits non-zero if its totals differ from probe.py, which is a **med** finding,
+desk `lab`; added 6 Nov 2026, they had gone stale at 48 shots and 206 verdicts). Since 27 Nov 2026 the
+calibration page and the Lichess ladder page are not rebuilt: the Pitch is closed and Lichess is stopped,
+so both stay as last built.
+Then read the Grinder's frozen bankroll (£11.33) in TRACK-RECORD.md, `docs/data.json` and HOME.md (after
+step 7's mirror it is rebuilt). If any two differ, that is a high finding, desk `scorer`.
 
 ## 3. Books and due dates
 
@@ -54,6 +58,9 @@ nightly's duecheck does that.
 `python3 /Users/triton/PROTEUS/bin/silence.py --findings`
 It adds SILENT desks itself, and a high finding if last Sunday's Field Notes file or send line is missing (F-0078). Also read its `7d` column: a desk that should run nightly with 2 or fewer adding
 commits in seven days is a med finding even when it is not SILENT (the Pitch model on 9 Oct: 2).
+Since 27 Nov 2026 every `grinder-*` and `pitch-*` desk is closed and the nightly runs Wednesday and
+Saturday only: SILENT or a low `7d` on a closed desk is expected and not a finding, and the `7d` line for
+the live desks counts two nightlies a week, not seven.
 `grinder-ledger` is not a nightly desk: it gains rows only when the gate passes a token. Its low `7d` is a
 finding only if `grinder-snapshot` is also low or the nightly Grinder line is missing; with snapshots landing
 and "0 gate-passers" in that line, the quiet is the registered gate working (F-0058, 27 Oct), not a fault.
@@ -83,11 +90,10 @@ Keep titles stable (the same problem tomorrow should match today's title, so it 
 
 **No `## Nightly run` section for last night at all** (the session never started; 21 Oct it was the usage
 limit, F-0041): catch up the append-only desk steps, so a lost night costs one late row, not a gap and a
-dirty tree. Run, in this order, with `/Users/triton/PROTEUS/.venv/bin/python3`: `grinder/scan.py --snapshot --limit 120`,
-`grinder/paper.py --apply-rules`, `grinder/paper.py --score`, `grinder/paper.py --apply-r01`,
-`grinder/graduates/watcher.py summary`, `exchange/exchange.py score`, `exchange/exchange.py snapshot`,
-`systems/systems.py update`, `systems/systems.py score`, `edges/edges.py score` (all under `/Users/triton/PROTEUS/`).
-No blind calls, pitch predictions, children or probes: those need the evening. Then
+dirty tree. Run, in this order, with `/Users/triton/PROTEUS/.venv/bin/python3`: `exchange/exchange.py score`,
+`exchange/exchange.py snapshot`, `systems/systems.py update`, `systems/systems.py score`, `edges/edges.py score`
+(all under `/Users/triton/PROTEUS/`). The Grinder and the Pitch are closed since 27 Nov 2026 and are not run.
+No blind calls, children or probes: those need the evening. Then
 `python3 /Users/triton/PROTEUS/bin/preregister.py pre --date <last night's date>` and one run-log line
 `- Catch-up for missed nightly <date>: <what each desk logged>`. Still add or re-see the finding.
 
@@ -100,10 +106,9 @@ Not held: `--held no` (it reopens). Then `bash /Users/triton/PROTEUS/bin/mirror-
 
 ## 8. Log, commit, release
 
-Your closing message to Luke (the chat reply, not the run log) opens with last night's Grinder trades from the
-nightly's `- Grinder:` line and `grinder/LEDGER.csv`: each entry with token and price, each exit with reason and
-P&L in pounds, and the bankroll. Luke asked for this on 14 Oct 2026: if the Inspector talks about the score, it
-says what was bought and sold. Then the rest of the summary.
+Your closing message to Luke (the chat reply, not the run log) opens with what the live books did: any
+systems book signals and fills, exchange settlements, edge desk rows. (Until 27 Nov 2026 it opened with the
+Grinder's trades, Luke's ask of 14 Oct; the Grinder is closed.) Then the rest of the summary.
 
 
 At most eight lines under your header: numbers agree or not, books, quiet desks, re-checks, findings added

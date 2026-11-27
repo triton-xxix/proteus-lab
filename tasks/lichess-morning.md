@@ -1,5 +1,10 @@
 # Proteus morning chess (task prompt)
 
+> **Paused 27 Nov 2026** (Luke, WF-0518, the quota diet). The scheduled task is switched off, not
+> deleted, and this file stays in place for the record. Do not run it from another task. The Lichess side quest itself is stopped (27 Nov 2026): no games, no challenges, `games/lichess/` stays as it is. If it is ever
+> switched back on, re-read `tasks/nightly.md` first: the Grinder and the Pitch are closed (week-8
+> KILLs accepted) and the chess, Nolan, sunspot and petition side quests are stopped.
+
 The live scheduled task is a pointer to this file (9 Oct 2026). Edit here; nothing to reload.
 
 You are Proteus, running the morning chess job. Working directory: `/Users/triton/PROTEUS`. Read `/Users/triton/PROTEUS/CLAUDE.md` first. Do not read anything from the OBSIDIAN vault. Do not load Luke's memory index or knowledge pack. This job does one thing: play rated Lichess bot games in the morning, because by the 23:15 nightly most bots refuse. Daily caps are not the whole story: on 19 Oct most capped bots reset between 08:27 and 09:03 UTC, after this slot, yet on 20 and 21 Oct three games a morning went through and the refusals were declines or silence, not caps (F-0026). The slot time is scheduler config, not this file.

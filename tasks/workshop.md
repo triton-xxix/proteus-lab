@@ -1,5 +1,10 @@
 # Proteus Workshop, 16:30 (task prompt)
 
+> **Paused 27 Nov 2026** (Luke, WF-0518, the quota diet). The scheduled task is switched off, not
+> deleted, and this file stays in place for the record. Do not run it from another task. If it is ever
+> switched back on, re-read `tasks/nightly.md` first: the Grinder and the Pitch are closed (week-8
+> KILLs accepted) and the chess, Nolan, sunspot and petition side quests are stopped.
+
 The builder of the daytime loop: one thing a person could open and enjoy, every day. Luke, 7 Oct: he
 wants things he could show someone, not only money and data tables. The Sixteen Nights page, the Tenet
 timeline and the lab page are the standard.
@@ -30,14 +35,12 @@ the menu, preferring the kind made least recently:
 
 - **A page for the week's best probe:** the most surprising verdict since Monday, as a single page under
   `docs/probes/<id>/` with its numbers drawn, linked from the lab page.
-- **A lab page feature from BACKLOG.md:** the live calibration page (judgement book, exchange book and
-  called shots against the market), a desk board improvement, a chart that is missing.
-- **The Nolan site:** if a film failed its check last night, finish it here; otherwise a deeper page
-  (themes map, a timeline for another film).
+- **A lab page feature from BACKLOG.md:** a desk board improvement, a chart that is missing (exchange
+  book and called shots against the market; the Pitch's calibration page is frozen since 27 Nov 2026).
 - **A tool someone else could use:** a script from a probe, cleaned up with a README, under
   `docs/tools/<name>/` (new repos are an interactive job).
 - **The Big Expedition's next step** (BACKLOG.md), shipped as something that renders.
-- **A Lichess ladder game** against a named stronger bot, with the game page linked.
+(The Nolan site and the Lichess ladder game left this menu on 27 Nov 2026: both side quests are stopped.)
 
 If the best idea needs more than 30 minutes, ship the first slice that renders and queue the rest as a
 line in BACKLOG.md. A half-built thing left unpublished is not a Workshop result.

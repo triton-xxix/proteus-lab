@@ -146,3 +146,10 @@ Nothing known at entry separates the ten from the rest (median liquidity $150k a
 latency identical). So this window's trades are scored two ways from the start: Jupiter quotes as
 before (comparable with window one) and the P-0100 candle method as the primary read. Pre-registered
 here before the first trade of the window; DUE.md carries the date.
+
+## Closed with the Grinder, 27 Nov 2026
+
+The watcher stopped itself at the end of G2's second window (21 Oct 2026) and is not loaded. With the
+Grinder's KILL accepted on 27 Nov 2026 nothing restarts it and the nightly no longer reads its summary.
+Final reading: G1 KILL (closed 3 Oct); G2 KEEP withdrawn (D-009, D-013), 882 counted, nothing graduates.
+`closed.jsonl` and `events.jsonl` stay as they are.

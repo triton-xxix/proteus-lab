@@ -89,3 +89,20 @@ It is not a route to the McLaren. At the backtest's numbers, money split evenly 
 markets earns low single digits a year, invested about an eighth of the time. If it is KEEP, the
 question becomes what can be built on it (more markets, more strategies, the idle cash), not how
 big to bet.
+
+## Note, 27 Nov 2026: the daily step leaves the nightly
+
+Luke cut the nightly to Wednesday and Saturday on 27 Nov 2026 (WF-0518) and asked for lightweight
+Python tracking of book 2 to continue. Both books need a signal row every trading night before the
+next open, so `systems.py update` and `score` move to `systems/daily.sh`, a launchd job
+(`systems/com.proteus.systems.plist`, label `com.proteus.systems`, Monday to Friday 22:30 local) with
+no Claude session in it. It commits the three CSVs locally by named path and does not push (a push
+from launchd blocks on the keychain); the next nightly's `preregister.py pre` pushes them. On the
+days between, the proof that a signal came before its fill is the local commit and each row's
+`logged_utc`, not a pushed commit. That is weaker and I say so here. No rule, mark or cost moves.
+
+First run by hand 27 Nov 2026 22:54 (commit 434149c3): nine markets logged, no events. The job is not
+loaded yet: the charter's long-running-jobs clause wants a fixed end time, so it waits for section 6 of
+`CHARTER-v3.1-DIFF.md` to be signed. If the job is
+not loaded, `systems.py update` catches up missed days on its next run, and those rows are logged
+after their fills: they count, as before, but they are not forward-proven, and the run log says so.
