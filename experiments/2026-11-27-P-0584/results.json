@@ -1,0 +1,558 @@
+{
+ "runs": 31,
+ "runs_with_5nov_dropped_in_W1_W3": 15,
+ "orb4_at_rung2plus_in_those": [
+  [
+   "2026-11-21",
+   "ORB 15m, target 2R",
+   2
+  ],
+  [
+   "2026-11-21",
+   "ORB 15m, target close",
+   2
+  ],
+  [
+   "2026-11-21",
+   "ORB 30m, target 1R",
+   2
+  ],
+  [
+   "2026-11-22",
+   "ORB 15m, target 2R",
+   2
+  ],
+  [
+   "2026-11-22",
+   "ORB 15m, target close",
+   2
+  ],
+  [
+   "2026-11-22",
+   "ORB 30m, target 1R",
+   2
+  ],
+  [
+   "2026-11-23",
+   "ORB 15m, target 2R",
+   2
+  ],
+  [
+   "2026-11-23",
+   "ORB 15m, target close",
+   2
+  ],
+  [
+   "2026-11-23",
+   "ORB 30m, target 1R",
+   2
+  ],
+  [
+   "2026-11-25",
+   "ORB 15m, target 2R",
+   2
+  ],
+  [
+   "2026-11-25",
+   "ORB 15m, target close",
+   2
+  ],
+  [
+   "2026-11-25",
+   "ORB 30m, target 1R",
+   2
+  ],
+  [
+   "2026-11-25",
+   "ORB 30m, target 2R",
+   2
+  ],
+  [
+   "2026-11-26",
+   "ORB 15m, target 2R",
+   2
+  ],
+  [
+   "2026-11-26",
+   "ORB 15m, target close",
+   2
+  ],
+  [
+   "2026-11-26",
+   "ORB 30m, target 1R",
+   2
+  ],
+  [
+   "2026-11-26",
+   "ORB 30m, target 2R",
+   2
+  ]
+ ],
+ "rows": [
+  {
+   "run": "2026-10-23",
+   "weeks": [
+    "2026-10-16 to 2026-10-22",
+    "2026-10-09 to 2026-10-15",
+    "2026-10-02 to 2026-10-08"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 2,
+    "ORB 30m, target 2R": 2
+   }
+  },
+  {
+   "run": "2026-10-24",
+   "weeks": [
+    "2026-10-19 to 2026-10-23",
+    "2026-10-12 to 2026-10-16",
+    "2026-10-05 to 2026-10-09"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-25",
+   "weeks": [
+    "2026-10-19 to 2026-10-23",
+    "2026-10-12 to 2026-10-16",
+    "2026-10-05 to 2026-10-09"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-26",
+   "weeks": [
+    "2026-10-19 to 2026-10-23",
+    "2026-10-12 to 2026-10-16",
+    "2026-10-05 to 2026-10-09"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-27",
+   "weeks": [
+    "2026-10-20 to 2026-10-26",
+    "2026-10-13 to 2026-10-19",
+    "2026-10-06 to 2026-10-12"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-28",
+   "weeks": [
+    "2026-10-21 to 2026-10-27",
+    "2026-10-14 to 2026-10-20",
+    "2026-10-07 to 2026-10-13"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-29",
+   "weeks": [
+    "2026-10-22 to 2026-10-28",
+    "2026-10-15 to 2026-10-21",
+    "2026-10-08 to 2026-10-14"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-30",
+   "weeks": [
+    "2026-10-23 to 2026-10-29",
+    "2026-10-16 to 2026-10-22",
+    "2026-10-09 to 2026-10-15"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-10-31",
+   "weeks": [
+    "2026-10-26 to 2026-10-30",
+    "2026-10-19 to 2026-10-23",
+    "2026-10-12 to 2026-10-16"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-01",
+   "weeks": [
+    "2026-10-26 to 2026-10-30",
+    "2026-10-19 to 2026-10-23",
+    "2026-10-12 to 2026-10-16"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-02",
+   "weeks": [
+    "2026-10-26 to 2026-10-30",
+    "2026-10-19 to 2026-10-23",
+    "2026-10-12 to 2026-10-16"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-03",
+   "weeks": [
+    "2026-10-27 to 2026-11-02",
+    "2026-10-20 to 2026-10-26",
+    "2026-10-13 to 2026-10-19"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-05",
+   "weeks": [
+    "2026-10-29 to 2026-11-04",
+    "2026-10-22 to 2026-10-28",
+    "2026-10-15 to 2026-10-21"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-06",
+   "weeks": [
+    "2026-10-29 to 2026-11-04",
+    "2026-10-22 to 2026-10-28",
+    "2026-10-15 to 2026-10-21"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-07",
+   "weeks": [
+    "2026-10-30 to 2026-11-06",
+    "2026-10-23 to 2026-10-29",
+    "2026-10-16 to 2026-10-22"
+   ],
+   "dropped_5nov_week": "W1 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-08",
+   "weeks": [
+    "2026-10-30 to 2026-11-06",
+    "2026-10-23 to 2026-10-29",
+    "2026-10-16 to 2026-10-22"
+   ],
+   "dropped_5nov_week": "W1 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-09",
+   "weeks": [
+    "2026-10-30 to 2026-11-06",
+    "2026-10-23 to 2026-10-29",
+    "2026-10-16 to 2026-10-22"
+   ],
+   "dropped_5nov_week": "W1 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-10",
+   "weeks": [
+    "2026-11-02 to 2026-11-09",
+    "2026-10-26 to 2026-10-30",
+    "2026-10-19 to 2026-10-23"
+   ],
+   "dropped_5nov_week": "W1 2026-11-02 to 2026-11-09",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-11",
+   "weeks": [
+    "2026-11-03 to 2026-11-10",
+    "2026-10-27 to 2026-11-02",
+    "2026-10-20 to 2026-10-26"
+   ],
+   "dropped_5nov_week": "W1 2026-11-03 to 2026-11-10",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-12",
+   "weeks": [
+    "2026-11-04 to 2026-11-11",
+    "2026-10-28 to 2026-11-03",
+    "2026-10-21 to 2026-10-27"
+   ],
+   "dropped_5nov_week": "W1 2026-11-04 to 2026-11-11",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-13",
+   "weeks": [
+    "2026-11-06 to 2026-11-12",
+    "2026-10-29 to 2026-11-04",
+    "2026-10-22 to 2026-10-28"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 0,
+    "ORB 15m, target close": 0,
+    "ORB 30m, target 1R": 0,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-16",
+   "weeks": [
+    "2026-11-09 to 2026-11-13",
+    "2026-10-30 to 2026-11-06",
+    "2026-10-23 to 2026-10-29"
+   ],
+   "dropped_5nov_week": "W2 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 1,
+    "ORB 15m, target close": 1,
+    "ORB 30m, target 1R": 1,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-17",
+   "weeks": [
+    "2026-11-10 to 2026-11-16",
+    "2026-11-02 to 2026-11-09",
+    "2026-10-26 to 2026-10-30"
+   ],
+   "dropped_5nov_week": "W2 2026-11-02 to 2026-11-09",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 1,
+    "ORB 15m, target close": 1,
+    "ORB 30m, target 1R": 1,
+    "ORB 30m, target 2R": 0
+   }
+  },
+  {
+   "run": "2026-11-18",
+   "weeks": [
+    "2026-11-11 to 2026-11-17",
+    "2026-11-03 to 2026-11-10",
+    "2026-10-27 to 2026-11-02"
+   ],
+   "dropped_5nov_week": "W2 2026-11-03 to 2026-11-10",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 1,
+    "ORB 15m, target close": 1,
+    "ORB 30m, target 1R": 1,
+    "ORB 30m, target 2R": 1
+   }
+  },
+  {
+   "run": "2026-11-19",
+   "weeks": [
+    "2026-11-12 to 2026-11-18",
+    "2026-11-04 to 2026-11-11",
+    "2026-10-28 to 2026-11-03"
+   ],
+   "dropped_5nov_week": "W2 2026-11-04 to 2026-11-11",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 1,
+    "ORB 15m, target close": 1,
+    "ORB 30m, target 1R": 1,
+    "ORB 30m, target 2R": 1
+   }
+  },
+  {
+   "run": "2026-11-20",
+   "weeks": [
+    "2026-11-13 to 2026-11-19",
+    "2026-11-06 to 2026-11-12",
+    "2026-10-29 to 2026-11-04"
+   ],
+   "dropped_5nov_week": null,
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 1,
+    "ORB 15m, target close": 1,
+    "ORB 30m, target 1R": 1,
+    "ORB 30m, target 2R": 1
+   }
+  },
+  {
+   "run": "2026-11-21",
+   "weeks": [
+    "2026-11-16 to 2026-11-20",
+    "2026-11-09 to 2026-11-13",
+    "2026-10-30 to 2026-11-06"
+   ],
+   "dropped_5nov_week": "W3 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 2,
+    "ORB 15m, target close": 2,
+    "ORB 30m, target 1R": 2,
+    "ORB 30m, target 2R": 1
+   }
+  },
+  {
+   "run": "2026-11-22",
+   "weeks": [
+    "2026-11-16 to 2026-11-20",
+    "2026-11-09 to 2026-11-13",
+    "2026-10-30 to 2026-11-06"
+   ],
+   "dropped_5nov_week": "W3 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 2,
+    "ORB 15m, target close": 2,
+    "ORB 30m, target 1R": 2,
+    "ORB 30m, target 2R": 1
+   }
+  },
+  {
+   "run": "2026-11-23",
+   "weeks": [
+    "2026-11-16 to 2026-11-20",
+    "2026-11-09 to 2026-11-13",
+    "2026-10-30 to 2026-11-06"
+   ],
+   "dropped_5nov_week": "W3 2026-10-30 to 2026-11-06",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 2,
+    "ORB 15m, target close": 2,
+    "ORB 30m, target 1R": 2,
+    "ORB 30m, target 2R": 1
+   }
+  },
+  {
+   "run": "2026-11-25",
+   "weeks": [
+    "2026-11-18 to 2026-11-24",
+    "2026-11-11 to 2026-11-17",
+    "2026-11-03 to 2026-11-10"
+   ],
+   "dropped_5nov_week": "W3 2026-11-03 to 2026-11-10",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 2,
+    "ORB 15m, target close": 2,
+    "ORB 30m, target 1R": 2,
+    "ORB 30m, target 2R": 2
+   }
+  },
+  {
+   "run": "2026-11-26",
+   "weeks": [
+    "2026-11-19 to 2026-11-25",
+    "2026-11-12 to 2026-11-18",
+    "2026-11-04 to 2026-11-11"
+   ],
+   "dropped_5nov_week": "W3 2026-11-04 to 2026-11-11",
+   "orb4_rungs": {
+    "ORB 15m, target 2R": 2,
+    "ORB 15m, target close": 2,
+    "ORB 30m, target 1R": 2,
+    "ORB 30m, target 2R": 2
+   }
+  }
+ ]
+}

@@ -14865,22 +14865,25 @@
    "after": "",
    "est_minutes": 20,
    "added": "2026-11-27",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-27T12:40:05+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-27T12:40:53+0000",
+   "note": "15 of 31 committed scan runs had the dropped 5 Nov inside W1 to W3 (shot: about 8): W1 7 to 12 Nov, W2 16 to 19 Nov, W3 21 to 26 Nov. In the five W3 runs (21 to 26 Nov) 3 or 4 of P-0583s four ORB rules sat at rung 2, 17 rule-runs, none at rung 3, one week short on exactly the week the hole moved; before 16 Nov they were rung 0, so the hole did not matter there. Caveat: only the 26 Nov window was re-run with 5 Nov kept (P-0583); 21 to 25 Nov pulls were not saved raw. Next: close (the floor is a desk choice; the finding goes in the Field Notes edge section).",
+   "artefacts": [
+    "experiments/2026-11-27-P-0584"
+   ],
+   "minutes": 0,
+   "calls": 7,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "about 8 committed run dates held 4 Nov in W2 or W3; at least one of the four ORB rules at rung 2 or more in one",
-    "at": "2026-11-27T12:40:12+0000"
+    "at": "2026-11-27T12:40:12+0000",
+    "hit": true
    }
   }
  ]
