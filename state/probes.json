@@ -14234,9 +14234,9 @@
    "after": "2026-11-27",
    "est_minutes": 15,
    "added": "2026-11-24",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-27T12:32:00+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -14244,7 +14244,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.8,
+    "number": "NOAA MAE about 1.0 on 17 slots, loses to the 23 Nov mean 0.792 baseline",
+    "at": "2026-11-27T12:32:24+0000"
+   }
   },
   {
    "id": "P-0559",
