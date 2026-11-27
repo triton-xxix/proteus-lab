@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 474 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 
-## Queue (14 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,8 @@ Verdicts so far: 474 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0581 | Mayhem age cut, leg two (re-run of P-0572, blocked on the clock in Trials 27 Nov): read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z on 27 Nov, and the age cut to the minute | desk | none | 2026-11-28 | 0 | 15 min |
+| P-0582 | Yahoo 5-minute bar revisions, leg two (re-run of P-0574, blocked on the clock in Trials 27 Nov): run experiments/2026-11-26-P-0573/pull.py into a leg2 folder, diff bars by timestamp against leg1, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-28 | 0 | 15 min |
+| P-0583 | Feed hole, keep v drop (refill 253): scan.py prepare() drops stock days under 70 bars, so the 5 Nov Yahoo hole (16 bars, 17:15-18:30Z) already removes that session and shifts every 5-session block back one. Over experiments/2026-11-26-P-0573/leg1 offline, run the 12 stock rules twice, as-is and with the bar floor at 60 so 5 Nov stays: how many rules change rung count, and how many W1 to W3 totals move by more than 1 point | refill | none |  | 1 (in progress) | 25 min |
 
 ## Verdicts (562)
 

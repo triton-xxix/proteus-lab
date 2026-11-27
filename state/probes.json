@@ -1,5 +1,5 @@
 {
- "next_id": 582,
+ "next_id": 584,
  "items": [
   {
    "id": "P-0001",
@@ -14807,6 +14807,52 @@
    "calls": null,
    "denied": [],
    "luke": false
+  },
+  {
+   "id": "P-0582",
+   "title": "Yahoo 5-minute bar revisions, leg two (re-run of P-0574, blocked on the clock in Trials 27 Nov): run experiments/2026-11-26-P-0573/pull.py into a leg2 folder, diff bars by timestamp against leg1, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-28",
+   "est_minutes": 15,
+   "added": "2026-11-27",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0583",
+   "title": "Feed hole, keep v drop (refill 253): scan.py prepare() drops stock days under 70 bars, so the 5 Nov Yahoo hole (16 bars, 17:15-18:30Z) already removes that session and shifts every 5-session block back one. Over experiments/2026-11-26-P-0573/leg1 offline, run the 12 stock rules twice, as-is and with the bar floor at 60 so 5 Nov stays: how many rules change rung count, and how many W1 to W3 totals move by more than 1 point",
+   "source": "refill",
+   "needs": "",
+   "after": "",
+   "est_minutes": 25,
+   "added": "2026-11-27",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-27T12:38:04+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "2 stock rules change rung count; only W3 differs (one session swapped)",
+    "at": "2026-11-27T12:38:13+0000"
+   }
   }
  ]
 }
