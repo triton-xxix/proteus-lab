@@ -9,7 +9,7 @@ interactive session).
 
 Verdicts so far: 475 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (16 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -28,6 +28,7 @@ Verdicts so far: 475 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0581 | Mayhem age cut, leg two (re-run of P-0572, blocked on the clock in Trials 27 Nov): read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z on 27 Nov, and the age cut to the minute | desk | none | 2026-11-28 | 0 | 15 min |
 | P-0582 | Yahoo 5-minute bar revisions, leg two (re-run of P-0574, blocked on the clock in Trials 27 Nov): run experiments/2026-11-26-P-0573/pull.py into a leg2 folder, diff bars by timestamp against leg1, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-28 | 0 | 15 min |
+| P-0584 | Feed-hole block edge, deepen P-0583: list every committed edges/scan/ results.json whose stock W3 (or W2) held 4 Nov because 5 Nov was dropped, and whether any of ORB 15m 2R, ORB 15m close, ORB 30m 1R, ORB 30m 2R was reported at rung 2 or 3 from one; one line per run date | desk | none |  | 1 (in progress) | 20 min |
 
 ## Verdicts (563)
 

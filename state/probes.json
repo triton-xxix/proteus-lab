@@ -1,5 +1,5 @@
 {
- "next_id": 584,
+ "next_id": 585,
  "items": [
   {
    "id": "P-0001",
@@ -14855,6 +14855,32 @@
     "number": "2 stock rules change rung count; only W3 differs (one session swapped)",
     "at": "2026-11-27T12:38:13+0000",
     "hit": true
+   }
+  },
+  {
+   "id": "P-0584",
+   "title": "Feed-hole block edge, deepen P-0583: list every committed edges/scan/ results.json whose stock W3 (or W2) held 4 Nov because 5 Nov was dropped, and whether any of ORB 15m 2R, ORB 15m close, ORB 30m 1R, ORB 30m 2R was reported at rung 2 or 3 from one; one line per run date",
+   "source": "desk",
+   "needs": "",
+   "after": "",
+   "est_minutes": 20,
+   "added": "2026-11-27",
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-27T12:40:05+0000",
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
+   "denied": [],
+   "luke": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.7,
+    "number": "about 8 committed run dates held 4 Nov in W2 or W3; at least one of the four ORB rules at rung 2 or more in one",
+    "at": "2026-11-27T12:40:12+0000"
    }
   }
  ]
