@@ -191,3 +191,5 @@ date,market,strategy,event,price,logged_utc
 2026-11-24,EWJ,ibs_gated,sell_open,86.9600,2026-11-25T06:02:16Z
 2026-11-24,EWG,ibs_gated,sell_open,39.9900,2026-11-25T06:02:16Z
 2026-11-25,IWM,ibs_gated,sell_open,263.2300,2026-11-25T23:25:24Z
+2026-11-27,SPY,rsi5_simple,sell_signal,728.3200,2026-11-27T22:54:01Z
+2026-11-27,SPY,rsi5_triple,sell_signal,728.3200,2026-11-27T22:54:01Z
