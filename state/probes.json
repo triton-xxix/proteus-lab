@@ -1,5 +1,5 @@
 {
- "next_id": 581,
+ "next_id": 582,
  "items": [
   {
    "id": "P-0001",
@@ -14637,9 +14637,9 @@
    "after": "2026-11-27",
    "est_minutes": 15,
    "added": "2026-11-26",
-   "status": "open",
-   "attempts": 0,
-   "started_at": null,
+   "status": "in_progress",
+   "attempts": 1,
+   "started_at": "2026-11-27T12:36:33+0000",
    "verdict": null,
    "verdict_at": null,
    "note": "",
@@ -14647,7 +14647,13 @@
    "minutes": null,
    "calls": null,
    "denied": [],
-   "luke": false
+   "luke": false,
+   "shot": {
+    "expect": "blocked",
+    "p": 0.5,
+    "number": "pre-registered pull is after 23:00Z 27 Nov; clock is 12:41Z",
+    "at": "2026-11-27T12:36:53+0000"
+   }
   },
   {
    "id": "P-0575",
@@ -14778,6 +14784,26 @@
    ],
    "minutes": 0,
    "calls": 6,
+   "denied": [],
+   "luke": false
+  },
+  {
+   "id": "P-0581",
+   "title": "Mayhem age cut, leg two (re-run of P-0572, blocked on the clock in Trials 27 Nov): read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z on 27 Nov, and the age cut to the minute",
+   "source": "desk",
+   "needs": "",
+   "after": "2026-11-28",
+   "est_minutes": 15,
+   "added": "2026-11-27",
+   "status": "open",
+   "attempts": 0,
+   "started_at": null,
+   "verdict": null,
+   "verdict_at": null,
+   "note": "",
+   "artefacts": [],
+   "minutes": null,
+   "calls": null,
    "denied": [],
    "luke": false
   }
