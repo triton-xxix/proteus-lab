@@ -3,8 +3,8 @@
 Until then I had never looked for anything to build.
 
     wishes.py pull [--days 7]   Hacker News posts and comments asking for a tool, keyless, plus
-                                r/isthereatoolthat and r/SomebodyMakeThis feeds (about one request
-                                a minute is all Reddit allows keyless, measured in P-0055). Writes
+                                r/SomebodyMakeThis and r/isthereatoolthat posts through the Arctic
+                                Shift archive (reddit.com feeds 404 keyless since Nov, F-0107). Writes
                                 state/wishes/YYYY-MM-DD.md and appends field-notes/WISHES.md.
 
 The nightly reads the week's file on Thursday and queues at most one wish as a probe
@@ -26,8 +26,12 @@ PHRASES = ["is there a tool", "i wish there was a tool", "is there an app that",
            "looking for a tool that", "is there a script", "is there a cli"]
 # Two subreddits that exist for exactly this, found by the first pull on 3 Oct; their feeds beat a
 # site-wide phrase search, which returned more noise than wishes.
-REDDIT = ["https://www.reddit.com/r/isthereatoolthat/new/.rss", "https://www.reddit.com/r/SomebodyMakeThis/new/.rss"]
+REDDIT = ["SomebodyMakeThis", "isthereatoolthat"]
 # r/iWishThereWasAnApp answered 403 on 3 Oct, so it is out.
+# F-0107 (27 Nov): both reddit.com RSS feeds 404 keyless since about 19 Nov, so posts come from the
+# Arctic Shift archive instead (BACKLOG, Grinder research desk). It needs an `after` bound or it
+# times out, and `permalink` is not a valid field. r/isthereatoolthat has had one spam post since Sep.
+ARCTIC = "https://arctic-shift.photon-reddit.com/api/posts/search?"
 UA = {"User-Agent": "proteus-wishes/0.1 (github triton-xxix)"}
 
 
@@ -66,21 +70,22 @@ def hn(days):
 def reddit(days):
     out = {}
     cutoff = (date.today() - timedelta(days=days)).isoformat()
-    for n, feed in enumerate(REDDIT):
+    for n, sub in enumerate(REDDIT):
         if n:
-            time.sleep(65)
+            time.sleep(5)
+        q = urllib.parse.urlencode({"subreddit": sub, "after": cutoff, "limit": 100,
+                                    "fields": "id,title,created_utc"})
         try:
-            body = get(feed).decode()
+            d = json.loads(get(ARCTIC + q))
         except Exception as e:
-            print(f"reddit {feed}: {e}")
+            print(f"reddit {sub}: {e}")
             continue
-        for entry in re.findall(r"<entry>(.*?)</entry>", body, re.S):
-            link = re.search(r'<link href="([^"]+)"', entry)
-            title = re.search(r"<title>(.*?)</title>", entry, re.S)
-            when = re.search(r"<updated>(.*?)</updated>", entry)
-            if link and title and "/comments/" in link.group(1) and (when.group(1) if when else "9") >= cutoff:
-                out[link.group(1)] = {"src": "Reddit", "url": link.group(1), "when": (when.group(1) if when else "")[:10],
-                                      "text": clean(title.group(1))[:300]}
+        if d.get("error"):
+            print(f"reddit {sub}: {d['error']}")
+        for p in d.get("data") or []:
+            url = f"https://www.reddit.com/r/{sub}/comments/{p['id']}/"
+            when = datetime.fromtimestamp(p.get("created_utc", 0), timezone.utc).date().isoformat()
+            out[url] = {"src": "Reddit", "url": url, "when": when, "text": clean(p.get("title"))[:300]}
     return out
 
 
