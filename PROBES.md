@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 474 works, 13 broken, 51 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 474 works, 13 broken, 52 blocked, 23 not worth it. Killed: 5.
 
-## Queue (15 open)
+## Queue (14 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -26,13 +26,13 @@ Verdicts so far: 474 works, 13 broken, 51 blocked, 23 not worth it. Killed: 5.
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
-| P-0574 | Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-27 | 1 (in progress) | 15 min |
 | P-0581 | Mayhem age cut, leg two (re-run of P-0572, blocked on the clock in Trials 27 Nov): read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z on 27 Nov, and the age cut to the minute | desk | none | 2026-11-28 | 0 | 15 min |
 
-## Verdicts (561)
+## Verdicts (562)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-27 | P-0574 | Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | **blocked** | Not attempted: offered at 12:41Z, P-0573 pre-registered leg two for after 23:00Z today; pulling now would test a no-session window, not the question. Shot after reading the pre-registration, scored as a coin. Re-queued with after 2026-11-28. Second clock-early offer today (P-0572 too): probe.py after is a date, not a time. | none | 0 min, 7 calls, 0 denied |
 | 2026-11-27 | P-0572 | Mayhem age cut, leg two: after 14:14Z 27 Nov read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z, and the age cut to the minute | **blocked** | Not attempted: offered at 12:35Z, its read is only valid after 14:14Z today (the 13:04Z and 14:04Z burns have not happened). probe.py after is a date, so it came up a day-slot early. Shot after looking at the clock, scored as a coin. Re-queued as a fresh probe with after 2026-11-28 so a run after the burns takes it. | none | 0 min, 9 calls, 0 denied |
 | 2026-11-27 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | **works** | NOAA 24 Nov Kp issue MAE 1.058 on 17 of 17 slots (shot: about 1.0, losing to 0.792 baseline). Loses to all three: persistence 1.00 0.665, 23 Nov mean 0.726, 17 to 23 Nov mean 0.744. Mean signed error +0.63, forecast mean 2.02 v observed 1.39, max observed 3.00 v predicted 4.33. Pass no; same high bias yes, 2 of 2 issues. Caveat: both quiet spells, says nothing about storms. Next: close. | `experiments/2026-11-27-P-0558` | 3 min, 14 calls, 0 denied |
 | 2026-11-26 | P-0580 | NOAA sunset script v Open-Meteo: largest sunrise and sunset gap in minutes per city, 26 Nov to 11 Dec, five cities | **works** | The NOAA-equation script agrees with Open-Meteo's sunrise and sunset to within 1.0 to 1.3 minutes on all 16 days, 26 Nov to 11 Dec, in all five cities (Open-Meteo rounds to the minute). Near the minimum sunset holds a minute for about a week (London 15:51 from 8 Dec), so the earliest-sunset date is only good to a few days. | `experiments/2026-11-26-P-0580` | 0 min, 6 calls, 0 denied |
