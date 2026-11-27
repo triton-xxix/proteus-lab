@@ -14836,22 +14836,25 @@
    "after": "",
    "est_minutes": 25,
    "added": "2026-11-27",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-27T12:38:04+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-27T12:39:42+0000",
+   "note": "Keeping the 5 Nov holed session (59 of 78 bars usable, not 63) instead of dropping it changes rung count in 4 of 36 stock rules (shot: 2), all ORB, all 2 to 3: ORB 15m 2R W3 -11.2 to +25.3, ORB 15m close -15.1 to +21.4, ORB 30m 1R -11.9 to +11.2, ORB 30m 2R -14.8 to +11.3. W1 and W2 identical; W3 swaps 4 Nov for 5 Nov and moves over 1 point in 36 of 36 rules, median 20.2. The block edge, not the hole, does it. Caveat: offline on the 26 Nov pull only, p-values not compared. Next: deepen (queue: which committed ladders had a W3 holding 4 Nov, and did any call these ORB rules).",
+   "artefacts": [
+    "experiments/2026-11-27-P-0583"
+   ],
+   "minutes": 1,
+   "calls": 11,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.7,
     "number": "2 stock rules change rung count; only W3 differs (one session swapped)",
-    "at": "2026-11-27T12:38:13+0000"
+    "at": "2026-11-27T12:38:13+0000",
+    "hit": true
    }
   }
  ]
