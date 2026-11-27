@@ -14234,22 +14234,25 @@
    "after": "2026-11-27",
    "est_minutes": 15,
    "added": "2026-11-24",
-   "status": "in_progress",
+   "status": "done",
    "attempts": 1,
    "started_at": "2026-11-27T12:32:00+0000",
-   "verdict": null,
-   "verdict_at": null,
-   "note": "",
-   "artefacts": [],
-   "minutes": null,
-   "calls": null,
+   "verdict": "works",
+   "verdict_at": "2026-11-27T12:35:17+0000",
+   "note": "NOAA 24 Nov Kp issue MAE 1.058 on 17 of 17 slots (shot: about 1.0, losing to 0.792 baseline). Loses to all three: persistence 1.00 0.665, 23 Nov mean 0.726, 17 to 23 Nov mean 0.744. Mean signed error +0.63, forecast mean 2.02 v observed 1.39, max observed 3.00 v predicted 4.33. Pass no; same high bias yes, 2 of 2 issues. Caveat: both quiet spells, says nothing about storms. Next: close.",
+   "artefacts": [
+    "experiments/2026-11-27-P-0558"
+   ],
+   "minutes": 3,
+   "calls": 14,
    "denied": [],
    "luke": false,
    "shot": {
     "expect": "works",
     "p": 0.8,
     "number": "NOAA MAE about 1.0 on 17 slots, loses to the 23 Nov mean 0.792 baseline",
-    "at": "2026-11-27T12:32:24+0000"
+    "at": "2026-11-27T12:32:24+0000",
+    "hit": true
    }
   },
   {

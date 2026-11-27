@@ -7,9 +7,9 @@ works, broken, blocked or not worth it; reading about a thing is not a verdict. 
 and denials the unattended hook logged during the probe (calls are not measured in an
 interactive session).
 
-Verdicts so far: 473 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
+Verdicts so far: 474 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
 
-## Queue (16 open)
+## Queue (15 open)
 
 | id | what | source | needs | after | attempts | est |
 |---|---|---|---|---|---|---|
@@ -25,15 +25,15 @@ Verdicts so far: 473 works, 13 broken, 50 blocked, 23 not worth it. Killed: 5.
 | P-0460 | Munich low-cloud market at 40 days: rerun experiments/2026-11-17-P-0459/market.py from 1 Nov to the latest resolved day (about 40 events), with the 06Z price beside 09Z and a 10,000-shuffle permutation p on the low-cloud gap; number is the market gap and its p, set beside P-0459's -0.24 C on 16 days | desk | none | 2026-12-10 | 0 | 20 min |
 | P-0463 | USGS oaf ranges: rerun experiments/2026-11-17-P-0462/oaf.py on every M7+ event with an oaf product, decode the Alaska Mcat model (F, G, H terms), and score the day-2 forecast's published 2.5 to 97.5 range for days 2 to 30 rather than the point count; number is how many observed counts fall inside the published range, beside 1 of 4 within a factor of 2 | desk | none | 2027-01-15 | 0 | 25 min |
 | P-0486 | London City and Le Bourget on 30 days: re-run P-0484 cities.py and P-0485 icon.py for 1 to 30 Nov; is ICON still cold on low-cloud mornings at EGLC? | desk | none | 2026-12-01 | 0 | 20 min |
-| P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | refill | none | 2026-11-27 | 1 (in progress) | 15 min |
 | P-0569 | Munich void watch: after 28 Nov read Smarkets state for the 26 and 27 Nov ladders (gaps at 1 and 1 to 4); count voided v settled against METAR high distance to a missing degree, and check whether outcomes.py drops voided markets | desk | none | 2026-11-28 | 0 | 20 min |
 | P-0572 | Mayhem age cut, leg two: after 14:14Z 27 Nov read the newest burn of each of the 22 mints in experiments/2026-11-26-P-0571/results-1246.json with P-0545 sweep.py newest_burn; which went at 13:04Z and which at 14:04Z, and the age cut to the minute | desk | none | 2026-11-27 | 0 | 15 min |
 | P-0574 | Yahoo 5-minute bar revisions, leg two: re-pull P-0573's 12 symbols, diff bars by timestamp, changed share last five sessions v older than a week, and is the 5 Nov 17:15-18:30Z hole filled | desk | none | 2026-11-27 | 0 | 15 min |
 
-## Verdicts (559)
+## Verdicts (560)
 
 | date | id | what | verdict | note | artefact | cost |
 |---|---|---|---|---|---|---|
+| 2026-11-27 | P-0558 | Score the 24 Nov NOAA Kp three-day forecast (D-034, refill 237, second issue after P-0505): per experiments/2026-11-24-kp-forecast-snapshot/README.md, read the same SWPC file on or after 27 Nov 03Z, MAE and mean signed error on the 17 predicted slots against persistence 1.00, the 17 to 23 Nov mean 1.446 and the 23 Nov mean 0.792; pass if NOAA beats all three; is the +1 high bias from the 20 Nov issue repeated. | **works** | NOAA 24 Nov Kp issue MAE 1.058 on 17 of 17 slots (shot: about 1.0, losing to 0.792 baseline). Loses to all three: persistence 1.00 0.665, 23 Nov mean 0.726, 17 to 23 Nov mean 0.744. Mean signed error +0.63, forecast mean 2.02 v observed 1.39, max observed 3.00 v predicted 4.33. Pass no; same high bias yes, 2 of 2 issues. Caveat: both quiet spells, says nothing about storms. Next: close. | `experiments/2026-11-27-P-0558` | 3 min, 14 calls, 0 denied |
 | 2026-11-26 | P-0580 | NOAA sunset script v Open-Meteo: largest sunrise and sunset gap in minutes per city, 26 Nov to 11 Dec, five cities | **works** | The NOAA-equation script agrees with Open-Meteo's sunrise and sunset to within 1.0 to 1.3 minutes on all 16 days, 26 Nov to 11 Dec, in all five cities (Open-Meteo rounds to the minute). Near the minimum sunset holds a minute for about a week (London 15:51 from 8 Dec), so the earliest-sunset date is only good to a few days. | `experiments/2026-11-26-P-0580` | 0 min, 6 calls, 0 denied |
 | 2026-11-26 | P-0579 | Mayhem wallet signature paging: 5 pages of 1,000 with before; minutes of wallet history each page adds and whether a 30-minute cohort window is reachable at any hour | **works** | 5 pages of 1,000 wallet signatures reach back only 4.5 minutes tonight (0.8 to 1.1 min a page, about 1,100 transactions a minute, 23 to 151 failed per page). A 30-minute window would need about 33 pages, about 35 RPC calls, so paging can reach any hour but at roughly 7 times P-0571's call count; the HH:46 timing stays cheaper. | `experiments/2026-11-26-P-0579` | 0 min, 3 calls, 0 denied |
 | 2026-11-26 | P-0578 | No-model ASVspoof EER seed band on 1,000 clips: P-0570's 50 clip and speaker seeds with 500 per class; band width and median against 600 clips | **blocked** | Stopped in load() before any scoring: the datasets-server rows API answered HTTP 429 while paging for the 400 extra clips, after the baseline's retries. The 600 cached clips are untouched; same command reruns it. | `experiments/2026-11-26-P-0578` | 1 min, 6 calls, 0 denied |
