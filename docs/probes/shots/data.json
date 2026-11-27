@@ -1,26 +1,26 @@
 {
  "summary": {
-  "n": 269,
+  "n": 272,
   "waiting": 0,
-  "hits": 249,
+  "hits": 252,
   "hit_rate": 0.926,
-  "mean_p": 0.656,
+  "mean_p": 0.655,
   "brier": 0.143,
-  "brier_at_hit_rate": 0.069,
-  "called_works": 250,
-  "called_works_hits": 236,
+  "brier_at_hit_rate": 0.068,
+  "called_works": 253,
+  "called_works_hits": 239,
   "called_other": 19,
   "called_other_hits": 13,
-  "verdict_works": 242,
+  "verdict_works": 245,
   "first": "2026-10-12",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "bins": [
   {
    "label": "under 55%",
-   "n": 38,
-   "mean_p": 0.493,
-   "hit_rate": 0.868
+   "n": 39,
+   "mean_p": 0.494,
+   "hit_rate": 0.872
   },
   {
    "label": "55%",
@@ -30,15 +30,15 @@
   },
   {
    "label": "60 to 65%",
-   "n": 80,
+   "n": 81,
    "mean_p": 0.618,
-   "hit_rate": 0.95
+   "hit_rate": 0.951
   },
   {
    "label": "70 to 75%",
-   "n": 93,
+   "n": 94,
    "mean_p": 0.722,
-   "hit_rate": 0.946
+   "hit_rate": 0.947
   },
   {
    "label": "80% and up",
@@ -2737,6 +2737,36 @@
    "hit": 0,
    "number": "Golf first used 2015, first-attempt fail rate 17.9% plus or minus 1.5 points on about 38,000 tests",
    "at": "2026-11-25T12:32:04+0000"
+  },
+  {
+   "id": "P-0554",
+   "title": "Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets sett",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.5,
+   "hit": 1,
+   "number": "0 of 3 settled highs on a missing degree (shot after looking at P-0565)",
+   "at": "2026-11-26T12:32:10+0000"
+  },
+  {
+   "id": "P-0570",
+   "title": "ASVspoof no-model EER seed spread: rerun P-0559 speaker_split.py on its cached 600 clips with 50 clip-split and 50 speaker-split seeds; repo",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.75,
+   "hit": 1,
+   "number": "clip-split median EER about 17.8%, 5-95 band about 16 to 19.5, so 16.0 at the low edge and 17.65 inside",
+   "at": "2026-11-26T12:34:27+0000"
+  },
+  {
+   "id": "P-0571",
+   "title": "Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min ",
+   "expect": "works",
+   "verdict": "works",
+   "p": 0.6,
+   "hit": 1,
+   "number": "about 3 of about 20 dated mints whose burn slot differs between a 24.25 h and a 24.40 h cut",
+   "at": "2026-11-26T12:37:04+0000"
   }
  ]
 }

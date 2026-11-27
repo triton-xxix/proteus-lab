@@ -1,34 +1,34 @@
 {
  "summary": {
-  "n": 549,
+  "n": 559,
   "by_verdict": {
-   "works": 464,
+   "works": 473,
    "not-worth-it": 23,
-   "blocked": 49,
+   "blocked": 50,
    "broken": 13
   },
-  "open": 14,
+  "open": 16,
   "killed": 5,
-  "minutes_total": 933,
+  "minutes_total": 949,
   "minutes_median": 1,
-  "calls_total": 5794,
-  "pages": 11,
+  "calls_total": 5878,
+  "pages": 12,
   "first": "2026-09-24",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "by_source": [
   {
    "source": "refill",
-   "n": 238,
-   "works": 224,
+   "n": 247,
+   "works": 232,
    "not-worth-it": 3,
-   "blocked": 7,
+   "blocked": 8,
    "broken": 4
   },
   {
    "source": "desk",
-   "n": 125,
-   "works": 103,
+   "n": 126,
+   "works": 104,
    "not-worth-it": 9,
    "blocked": 12,
    "broken": 1
@@ -50,19 +50,19 @@
    "broken": 0
   },
   {
-   "source": "persona",
-   "n": 18,
-   "works": 15,
-   "not-worth-it": 0,
-   "blocked": 3,
-   "broken": 0
-  },
-  {
    "source": "field-notes",
    "n": 18,
    "works": 15,
    "not-worth-it": 1,
    "blocked": 2,
+   "broken": 0
+  },
+  {
+   "source": "persona",
+   "n": 18,
+   "works": 15,
+   "not-worth-it": 0,
+   "blocked": 3,
    "broken": 0
   },
   {
@@ -140,9 +140,9 @@
   },
   {
    "week": "2026-11-23",
-   "works": 17,
+   "works": 26,
    "not-worth-it": 0,
-   "blocked": 5,
+   "blocked": 6,
    "broken": 3
   }
  ],
@@ -8357,6 +8357,148 @@
    "calls": 4,
    "note": "With each of P-0557's three cyclic bars cut in two at its midpoint, Zpup 0.4.1 painted 0 of 297 overlapping piece pairs wrong across all 108 renders (unsplit: one pair wrong in every render showing the cycle), at 6 SVG shapes against 3; checkSceneWarnings stays silent either way.",
    "artefact": "experiments/2026-11-25-P-0568",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0554",
+   "title": "Munich sign-twin gap settlement: when the 23, 24 and 25 Nov ladders settle, did the high land on a missing degree, and how did Smarkets settle that market?",
+   "source": "desk",
+   "verdict": "works",
+   "at": "2026-11-26T12:33:18+0000",
+   "minutes": 1,
+   "calls": 18,
+   "note": "Measured 0 of 3 settled highs on a missing degree (shot: 0 of 3, called after reading P-0565, a coin). New: the 25 Nov ladder (missing -2 and -1, METAR high 1C) was VOIDED whole, all 9 contracts; 23 and 24 Nov, highs clear of the gap, settled normally. Cause unknown from the API (no reason field). outcomes.py records…",
+   "artefact": "experiments/2026-11-26-P-0554",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.5,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0570",
+   "title": "ASVspoof no-model EER seed spread: rerun P-0559 speaker_split.py on its cached 600 clips with 50 clip-split and 50 speaker-split seeds; report median, 5th to 95th percen…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T12:36:04+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Measured clip-split median EER 18.0%, 5-95 band 16.2 to 19.3 over 50 seeds (shot: 17.8%, 16 to 19.5, hit); speaker split 18.1%, 16.1 to 20.1. P-0547 16.0% sits at the 6th percentile, SEAR 17.65% at the 36th. Split seed alone is worth about 1.5 points either way on 600 clips. Next: close (the baseline number is now 18%…",
+   "artefact": "experiments/2026-11-26-P-0570",
+   "page": true,
+   "shot": {
+    "expect": "works",
+    "p": 0.75,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0571",
+   "title": "Mayhem age cut, leg one: with P-0528's collection method, save every mayhem mint born in one 30-minute window (births spanning 20 to 50 min before a :04) to a cohort fil…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T12:48:15+0000",
+   "minutes": 11,
+   "calls": 13,
+   "note": "Measured 20 of 22 dated mints discriminate in the 12:46Z cohort (12 split 24.25 v 24.33 h, 8 split 24.33 v 24.40 h); shot was about 3 of 20, a miss on the number. First run at 12:37Z: 0 of 15, because the wallet history reaches back only 4 to 18 min of births, so a straddling cohort must be pulled at about HH:46. Slot…",
+   "artefact": "experiments/2026-11-26-P-0571",
+   "page": false,
+   "shot": {
+    "expect": "works",
+    "p": 0.6,
+    "hit": 1
+   }
+  },
+  {
+   "id": "P-0573",
+   "title": "Yahoo 5-minute bar revisions, leg one: pull v8 chart range=60d interval=5m for the 12 symbols in edges/scan/scan.py and save the raw JSON under one experiment folder wit…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T23:36:12+0000",
+   "minutes": 1,
+   "calls": 12,
+   "note": "Pulled 12 of 12 symbols raw, 4,681 bars each (60 sessions, 2 Sep to 25 Nov). Every symbol has the same 80-minute null hole on 5 Nov 17:15 to 18:30Z (16 bars), plus 3 nulls of its own, so every scan ladder using 5 Nov ran short there. Leg two queued as P-0574 after 27 Nov.",
+   "artefact": "experiments/2026-11-26-P-0573",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0575",
+   "title": "AIFS and GEFS Munich band capture: script appending tomorrow's 10 to 90 high band from ecmwf_aifs025 and ncep_gefs_seamless to a jsonl, run once, with a 20-day scoring r…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T23:37:37+0000",
+   "minutes": 0,
+   "calls": 12,
+   "note": "Open-Meteo keeps AIFS and GEFS ensemble runs only from 23 Nov, so no past-only fit; built a forward capture instead, wired into the nightly with D-036 at 20 days. First rows for 27 Nov: AIFS p10 -1.40 p90 0.11, GEFS -0.90 to 0.11, both colder than ICON-EPS (-0.22 to 0.40), which already runs cold.",
+   "artefact": "experiments/2026-11-26-P-0575",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0576",
+   "title": "awesome-mcp-servers additions since 17 Nov: of up to 40 repos new in the list, how many github.com pages answer 200, 404 or redirect tonight, and how many homepages list…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T23:39:39+0000",
+   "minutes": 1,
+   "calls": 4,
+   "note": "371 repos were added to awesome-mcp-servers between 17 and 26 Nov. Of the first 40 alphabetically, 39 answer on the GitHub API, 1 is 404, and none is archived or renamed. 22 of 25 homepages answer 200, 1 fails DNS (acedata.cloud) and 2 are npm 403 bot blocks, not dead. So about 5 percent are dead and P-0564's dead tun…",
+   "artefact": "experiments/2026-11-26-P-0576",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0577",
+   "title": "Smarkets Munich void reasons: for every Munich daily-high market id in exchange logs, read state and info.reason; are voids no-trade auto-voids, and does any void track…",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T23:40:57+0000",
+   "minutes": 0,
+   "calls": 4,
+   "note": "11 of 38 Munich ids still answer: 10 settled, 1 voided. The 25 Nov void carries info.reason 'auto-void: event completed with no trades' (P-0554 missed the field) and was stamped 00:00:15Z on the day itself; the settled ones closed about 22:11 or 23:45Z. Seven of the settled ten also logged volume 0, so zero trades alo…",
+   "artefact": "experiments/2026-11-26-P-0577",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0578",
+   "title": "No-model ASVspoof EER seed band on 1,000 clips: P-0570's 50 clip and speaker seeds with 500 per class; band width and median against 600 clips",
+   "source": "refill",
+   "verdict": "blocked",
+   "at": "2026-11-26T23:43:30+0000",
+   "minutes": 1,
+   "calls": 6,
+   "note": "Stopped in load() before any scoring: the datasets-server rows API answered HTTP 429 while paging for the 400 extra clips, after the baseline's retries. The 600 cached clips are untouched; same command reruns it.",
+   "artefact": "experiments/2026-11-26-P-0578",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0579",
+   "title": "Mayhem wallet signature paging: 5 pages of 1,000 with before; minutes of wallet history each page adds and whether a 30-minute cohort window is reachable at any hour",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T23:44:21+0000",
+   "minutes": 0,
+   "calls": 3,
+   "note": "5 pages of 1,000 wallet signatures reach back only 4.5 minutes tonight (0.8 to 1.1 min a page, about 1,100 transactions a minute, 23 to 151 failed per page). A 30-minute window would need about 33 pages, about 35 RPC calls, so paging can reach any hour but at roughly 7 times P-0571's call count; the HH:46 timing stays…",
+   "artefact": "experiments/2026-11-26-P-0579",
+   "page": false,
+   "shot": null
+  },
+  {
+   "id": "P-0580",
+   "title": "NOAA sunset script v Open-Meteo: largest sunrise and sunset gap in minutes per city, 26 Nov to 11 Dec, five cities",
+   "source": "refill",
+   "verdict": "works",
+   "at": "2026-11-26T23:45:28+0000",
+   "minutes": 0,
+   "calls": 6,
+   "note": "The NOAA-equation script agrees with Open-Meteo's sunrise and sunset to within 1.0 to 1.3 minutes on all 16 days, 26 Nov to 11 Dec, in all five cities (Open-Meteo rounds to the minute). Near the minimum sunset holds a minute for about a week (London 15:51 from 8 Dec), so the earliest-sunset date is only good to a few…",
+   "artefact": "experiments/2026-11-26-P-0580",
    "page": false,
    "shot": null
   }
