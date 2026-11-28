@@ -132,7 +132,12 @@ brings artefacts back. It does not bring decisions back.
   engine, never the OBSIDIAN memory index. One exception, Luke's word on 30 Oct 2026: Proteus
   writes its own rows to the team record on the one-team board (`log_work`, project `proteus`),
   one row per finished thing. A row is a line in a shared record, not a Flywheel card, and nothing
-  on the record changes what this charter allows (see `CLAUDE.md`, "The team record").
+  on the record changes what this charter allows (see `CLAUDE.md`, "The team record"). Amended
+  2026-11-28, Luke's word in session (WF-0518 follow-up): a board row handed to Proteus that carries
+  a trading or crypto spec (Roxy's teardowns or Friday hunt, via Despina or Triton C) is picked up
+  by id, backtested or paper-tested inside this folder, and reported on that row with a note and
+  status doing or done. Never blocked, never handed on, never a new row: no approval item for Luke
+  comes out of it. Paper only; the Money rules and the stake ladder below still bind every spec.
 - Reads `ledger.yaml`, the Flywheel briefs, or the OBSIDIAN project's MEMORY.md. Separate memory is
   the point.
 - Puts real money into any market. Both market desks are paper desks with public records. If a desk
