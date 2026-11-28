@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # The systems book's daily step, run by launchd (com.proteus.systems, systems/com.proteus.systems.plist),
-# Monday to Friday at 22:30 local, once loaded (it waits for CHARTER-v3.1-DIFF.md section 6, 27 Nov 2026). Luke cut the nightly to Wednesday and Saturday
+# Monday to Friday at 22:30 local, loaded 28 Nov 2026 under charter v3.1 (Long-running jobs). Luke cut the nightly to Wednesday and Saturday
 # that day (WF-0518) and asked for lightweight Python tracking of systems book 2 (IBS) to continue.
 # Book 1 rides along: systems.py logs both from one fetch.
 #

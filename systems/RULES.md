@@ -101,8 +101,7 @@ from launchd blocks on the keychain); the next nightly's `preregister.py pre` pu
 days between, the proof that a signal came before its fill is the local commit and each row's
 `logged_utc`, not a pushed commit. That is weaker and I say so here. No rule, mark or cost moves.
 
-First run by hand 27 Nov 2026 22:54 (commit 434149c3): nine markets logged, no events. The job is not
-loaded yet: the charter's long-running-jobs clause wants a fixed end time, so it waits for section 6 of
-`CHARTER-v3.1-DIFF.md` to be signed. If the job is
-not loaded, `systems.py update` catches up missed days on its next run, and those rows are logged
+First run by hand 27 Nov 2026 22:54 (commit 434149c3): nine markets logged, no events. Charter v3.1 was
+signed 28 Nov 2026 (its long-running-jobs clause now names this job) and the job was loaded the same
+day; its first fire is Monday 30 Nov 22:30. If a weekday's fire is missed (the Mac off, a failure), `systems.py update` catches up missed days on its next run, and those rows are logged
 after their fills: they count, as before, but they are not forward-proven, and the run log says so.

@@ -1,9 +1,9 @@
 # Charter v3.1: the quota diet, for Luke to sign
 
-Drafted 27 Nov 2026 from Luke's decisions in a live chat that day (WF-0518). Not in force. `CHARTER.md`
-is unchanged until Luke says "signed" in an interactive session; then each change below is applied as
-written, the signature block gets a v3.1 paragraph, and this file stays as the record, as
-`CHARTER-v3-DIFF.md` did for v3.
+Drafted 27 Nov 2026 from Luke's decisions in a live chat that day (WF-0518). **Signed 28 Nov 2026** on Luke's word in an
+interactive session ("Sign and load"): each change below was applied to `CHARTER.md` as written, the
+signature block has a v3.1 paragraph, and the systems job was loaded the same day. This file stays as
+the record, as `CHARTER-v3-DIFF.md` did for v3.
 
 Already done without a charter change, because the charter lets any run edit task prompts and desk
 code, and PASS-MARKS.md says what a KILL does: the Grinder and Pitch books closed with their final
