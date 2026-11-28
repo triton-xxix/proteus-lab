@@ -76,7 +76,7 @@ a line under "If you feel like it" because of a spec. A spec I cannot test is cl
    Verdict with `probe.py verdict` as usual; the artefact folder is the report.
 5. **Report on the row, in step 7** (with the other board writes): a B-row gets `update_task` with
    `status: "done"` and a note under 500 characters, `Proteus YYYY-MM-DD: <works|broken|blocked|not-worth-it>, <the number against the luck figure or the claim>, <artefact link>`;
-   a log-row spec gets one `log_work` row, project `proteus`, kind `done`, title `<row id> spec tested: <verdict and number>`,
+   a log-row spec gets one `log_work` row, `agent: "proteus"` (CLAUDE.md, every board write), project `proteus`, kind `done`, title `<row id> spec tested: <verdict and number>`,
    key `proteus|YYYY-MM-DD|spec-<row id>|done`, link the artefact on GitHub. Then set `reported` in
    `edges/board-specs.jsonl`. One run-log line for the step: rows read, specs found, queued, tested,
    reported, and any denial. A spec that fails says so in the same words as one that works.

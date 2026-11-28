@@ -61,6 +61,13 @@ Proteus writes its own rows to the team record on the one-team board. The `board
 this project carries your own token (local scope, in `~/.claude.json`, never in this repo), so rows
 land as `proteus`. Tools: `log_work` to write, `list_log` and `list_projects` to read.
 
+**Always pass `agent: "proteus"` on every board write** (`log_work`, `set_routine`, `set_handoff`,
+`set_row`; since 28 Nov 2026, Luke's word "fix the board seat"). Attended desktop sessions here
+connect the user-scope `board` (claude's token) instead of the local one, and a write without the
+field lands as `claude`. With the field it lands as `proteus` from either seat (tested 28 Nov: L-2725,
+`created_by: proteus`, through the user-scope server). Scheduled runs connect the local server, where
+the field is a no-op. Never write a row without it.
+
 - When: one row per thing finished (a probe to a verdict, a desk's weekly result, an artefact
   shipped, a field note published), at the end of the session or the run. Not one per step.
 - Shape: `project: "proteus"`, `kind` done or note, a plain title under 140 characters, `link` to
