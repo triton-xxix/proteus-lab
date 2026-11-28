@@ -6,7 +6,7 @@
     python3 /Users/triton/PROTEUS/bin/probe.py verdict P-0007 --verdict works|broken|blocked|not-worth-it \
                                               --note "..." [--artefact PATH ...]
     python3 /Users/triton/PROTEUS/bin/probe.py stop --reason "..."
-    python3 /Users/triton/PROTEUS/bin/probe.py add "title" [--source backlog|intel|persona|desk|field-notes|harvest]
+    python3 /Users/triton/PROTEUS/bin/probe.py add "title" [--source board|backlog|intel|persona|desk|field-notes|harvest]
                                               [--needs "..."] [--after YYYY-MM-DD] [--est MINUTES]
     python3 /Users/triton/PROTEUS/bin/probe.py kill P-0015 --by rule|luke --reason "..."
     python3 /Users/triton/PROTEUS/bin/probe.py ask P-0011 --week YYYY-WW
@@ -70,7 +70,9 @@ DECISIONS = ROOT + "state/unattended-decisions-%s.jsonl"
 NO_GIT = os.environ.get("PROBE_NO_GIT") == "1"
 
 VERDICTS = ("works", "broken", "blocked", "not-worth-it")
-SOURCE_RANK = {"backlog": 1, "intel": 2, "vault": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4, "refill": 4}
+SOURCE_RANK = {"board": 0, "backlog": 1, "intel": 2, "vault": 2, "persona": 3, "field-notes": 3, "harvest": 3, "desk": 4, "refill": 4}
+# board: a trading or crypto spec handed to Proteus on the board (Luke, 28 Nov 2026), tested before
+# anything else and reported on its row; tasks/nightly.md step 1a.
 # vault: threads the vault split out of links Luke sent it, judged by the harvest child (2026-09-29). His own
 # links rank with the intelligence lane, above the automated harvest, below the backlog's own questions.
 DEFAULT_MAX_MINUTES = 60      # the loop's own ceiling, whatever the night's deadline says

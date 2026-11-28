@@ -1,0 +1,61 @@
+diff --git a/.claude/hooks/unattended-decide.py b/.claude/hooks/unattended-decide.py
+index 1f69a7d..d33246c 100755
+--- a/.claude/hooks/unattended-decide.py
++++ b/.claude/hooks/unattended-decide.py
+@@ -817,8 +817,24 @@ def main():
+         # parent only, since a child's work is the parent's to record; the task board (claim, hand,
+         # update) stays out, because the charter never opens a card or a decision item for anyone.
+         if tool in ("mcp__board__list_log", "mcp__board__list_projects", "mcp__board__list_routines",
+-                    "mcp__board__list_handoffs"):
++                    "mcp__board__list_handoffs", "mcp__board__list_tasks"):
+             decide("allow", "The team record: a read.")
++        # 28 Nov 2026, Luke (WF-0518 follow-up): the nightly picks up trading or crypto spec rows handed
++        # to Proteus, paper-tests them and reports on the row. Parent only; pick up by id only (a title
++        # would create a row); status doing or done only, so no row becomes a blocker or an ask for Luke.
++        if tool == "mcp__board__claim_task":
++            if child:
++                deny("A sub-agent does not touch board rows; the parent reports on them.")
++            if not ti.get("id") or ti.get("title") or ti.get("take"):
++                deny("claim_task only picks up a row handed to Proteus, by id: no title (that opens a row), no take.")
++            decide("allow", "Picking up a row handed to Proteus.")
++        if tool == "mcp__board__update_task":
++            if child:
++                deny("A sub-agent does not touch board rows; the parent reports on them.")
++            if ti.get("status") not in (None, "doing", "done") or ti.get("blocked_on"):
++                deny("update_task: a note, and status doing or done only. A blocked or handed status reads as an "
++                     "ask; say 'can't, because' in the note and close it done.")
++            decide("allow", "Reporting on a row handed to Proteus.")
+         if tool in ("mcp__board__log_work", "mcp__board__set_routine", "mcp__board__set_handoff",
+                     "mcp__board__set_row"):
+             if child:
+diff --git a/bin/test-hook.py b/bin/test-hook.py
+index 46b1c4a..608aae2 100755
+--- a/bin/test-hook.py
++++ b/bin/test-hook.py
+@@ -79,7 +79,16 @@ CASES = [
+     ("mcp__board__list_routines", {}, "allow"),
+     ("mcp__board__claim_task", {"title": "x"}, "deny"),
+     ("mcp__board__post_handoff", {"to": "luke", "note": "please"}, "deny"),
+-    ("mcp__board__update_task", {"id": "B-0001", "status": "done"}, "deny"),
++    # 28 Nov 2026, Luke: rows handed to Proteus are read, picked up by id and reported on (doing or done)
++    ("mcp__board__list_tasks", {"for": "proteus"}, "allow"),
++    ("mcp__board__claim_task", {"id": "B-0001"}, "allow"),
++    ("mcp__board__claim_task", {"id": "B-0001", "take": True}, "deny"),
++    ("mcp__board__claim_task", {"id": "B-0001", "title": "x"}, "deny"),
++    ("mcp__board__update_task", {"id": "B-0001", "status": "done", "note": "Proteus: tested"}, "allow"),
++    ("mcp__board__update_task", {"id": "B-0001", "note": "Proteus: running"}, "allow"),
++    ("mcp__board__update_task", {"id": "B-0001", "status": "blocked", "blocked_on": "Luke"}, "deny"),
++    ("mcp__board__update_task", {"id": "B-0001", "status": "handed"}, "deny"),
++    ("mcp__board__card_action", {"id": "WF-0001"}, "deny"),
+     ("Agent", {"prompt": "x"}, "deny"),
+     # found by the first nightly run, 2026-09-22
+     ("Bash", {"command": "git -C /Users/triton/PROTEUS status --short"}, "allow"),
+@@ -250,6 +259,8 @@ FANOUT_CASES = [
+     (CHILD, "mcp__board__list_log", {"project": "proteus"}, "allow"),
+     (CHILD, "mcp__board__log_work", {"project": "proteus", "title": "x"}, "deny"),
+     (CHILD, "mcp__board__set_row", {"table": "services", "row": {"name": "x"}}, "deny"),
++    (CHILD, "mcp__board__update_task", {"id": "B-0001", "status": "done"}, "deny"),
++    (CHILD, "mcp__board__claim_task", {"id": "B-0001"}, "deny"),
+     # the spawn cap: two allowed above, two more here, the fifth is denied
+     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "haiku", "prompt": "x"}, "allow"),   # 3
+     (PARENT, "Agent", {"subagent_type": "general-purpose", "model": "sonnet", "prompt": "x"}, "allow"),  # 4
